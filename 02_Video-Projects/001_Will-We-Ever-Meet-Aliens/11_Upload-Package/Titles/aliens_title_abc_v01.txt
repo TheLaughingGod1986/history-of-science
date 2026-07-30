@@ -1,0 +1,15 @@
+# Title ABC — Video 001 (vidIQ scored 2026-07-30)
+
+## A — LOCK (97 · better search)
+Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey
+
+## B — previous CTR title (97)
+Will We Ever Meet Aliens? The Answer May Already Be Here
+
+## C — short curiosity (92)
+Will We Ever Meet Aliens?
+
+## Notes
+- Exact phrase "will we ever meet aliens" ≈ 0 search volume
+- Lead search terms: are we alone in the universe (~20.6K/mo) · fermi paradox explained (~8.7K/mo)
+- Brand suffix matches V002/V003 pattern

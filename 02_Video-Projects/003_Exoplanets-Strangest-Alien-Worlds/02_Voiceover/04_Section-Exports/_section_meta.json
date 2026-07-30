@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "01_hook-exoplanet",
+    "label": "Scenes 01\u201302",
+    "scenes": [
+      1,
+      2
+    ],
+    "words": 392,
+    "chars": 2199,
+    "path": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/_section_texts/exoplanets_vo_section-01_hook-exoplanet.txt"
+  },
+  {
+    "slug": "02_detection",
+    "label": "Scene 03",
+    "scenes": [
+      3
+    ],
+    "words": 325,
+    "chars": 1848,
+    "path": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/_section_texts/exoplanets_vo_section-02_detection.txt"
+  },
+  {
+    "slug": "03_diamond-glass",
+    "label": "Scenes 04\u201305",
+    "scenes": [
+      4,
+      5
+    ],
+    "words": 599,
+    "chars": 3547,
+    "path": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/_section_texts/exoplanets_vo_section-03_diamond-glass.txt"
+  },
+  {
+    "slug": "04_suns-jupiter",
+    "label": "Scenes 06\u201307",
+    "scenes": [
+      6,
+      7
+    ],
+    "words": 553,
+    "chars": 3208,
+    "path": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/_section_texts/exoplanets_vo_section-04_suns-jupiter.txt"
+  },
+  {
+    "slug": "05_eyeball-close",
+    "label": "Scenes 08\u201311",
+    "scenes": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "words": 893,
+    "chars": 5104,
+    "path": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/_section_texts/exoplanets_vo_section-05_eyeball-close.txt"
+  }
+]

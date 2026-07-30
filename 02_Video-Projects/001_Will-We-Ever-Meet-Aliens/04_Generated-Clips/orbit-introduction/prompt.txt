@@ -1,0 +1,29 @@
+CLIP: Introduction
+DURATION: 8 seconds
+ASPECT RATIO: 16:9 landscape
+REFERENCE IMAGE: reference.png (orbit-seedance-reference-v01.png)
+
+--- PROMPT (paste into Seedance) ---
+
+Use the uploaded Orbit character sheet as the only character reference.
+
+Orbit floats gently through deep space. A soft nebula, distant stars and a faint galaxy are visible behind him.
+
+Orbit hovers naturally in zero gravity, blinks once, looks around with curiosity and then notices the camera. He turns slightly toward the viewer and gives a small friendly wave.
+
+The motion is subtle, smooth and premium. His antenna light glows softly.
+
+The camera performs a very slow cinematic push-in.
+
+Warm rim lighting, soft volumetric light and high-quality animated-film rendering.
+
+Preserve Orbit exactly. No redesign, extra limbs, text, logos or watermark.
+
+--- MANDATORY CONSISTENCY BLOCK (append to every generation) ---
+
+Preserve Orbit exactly as shown in the uploaded reference image. Maintain the same rounded orange body, black faceplate, cream expressive eyes, single glowing antenna, side arms, proportions, materials and warm animated-film visual style. Do not redesign the character. Do not add limbs, fingers, facial features, clothing, text, logos or accessories.
+
+--- GENERATION SETTINGS ---
+- Use the uploaded reference image as the ONLY canonical character reference.
+- Prefer subtle, controlled movement over exaggerated animation.
+- Generate at least two versions when credits permit.

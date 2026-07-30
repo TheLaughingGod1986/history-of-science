@@ -1,0 +1,181 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model LongFormVideo {
+  id                 String      @id @default(cuid())
+  title              String
+  workingTitle       String?
+  slug               String      @unique
+  topic              String
+  category           String?
+  status             String      @default("idea")
+  script             String?
+  summary            String?
+  youtubeUrl         String?
+  youtubeVideoId     String?
+  thumbnailPath      String?
+  finalVideoPath     String?
+  durationSeconds    Int?
+  publicationDate    DateTime?
+  primaryKeyword     String?
+  secondaryKeywords  String? // JSON array string
+  targetAudience     String?
+  projectFolder      String?
+  createdAt          DateTime    @default(now())
+  updatedAt          DateTime    @updatedAt
+  clips              ShortClip[]
+}
+
+model ShortClip {
+  id                    String         @id @default(cuid())
+  longFormVideoId       String
+  longFormVideo         LongFormVideo  @relation(fields: [longFormVideoId], references: [id], onDelete: Cascade)
+  clipNumber            Int
+  workingTitle          String
+  hook                  String?
+  hookCategory          String?
+  transcript            String?
+  sourceStartTime       String?
+  sourceEndTime         String?
+  targetDurationSeconds Int?
+  visualDirection       String?
+  onScreenText          String?
+  endingLine            String?
+  callToAction          String?
+  whyItWorks            String?
+  exportPath            String?
+  thumbnailPath         String?
+  fileChecksum          String?
+  status                String         @default("proposed")
+  qualityScore          Int?
+  qualityBreakdown      String? // JSON
+  sortOrder             Int            @default(0)
+  createdAt             DateTime       @default(now())
+  updatedAt             DateTime       @updatedAt
+  posts                 PlatformPost[]
+
+  @@unique([longFormVideoId, clipNumber])
+}
+
+model PlatformPost {
+  id                String              @id @default(cuid())
+  shortClipId       String
+  shortClip         ShortClip           @relation(fields: [shortClipId], references: [id], onDelete: Cascade)
+  platform          String
+  title             String?
+  caption           String?
+  hashtags          String? // JSON array
+  callToAction      String?
+  scheduledAt       DateTime?
+  publishedAt       DateTime?
+  platformPostId    String?
+  platformUrl       String?
+  uploadStatus      String              @default("draft")
+  publishingMethod  String              @default("manual")
+  notes             String?
+  pinnedComment     String?
+  coverText         String?
+  storyCaption      String?
+  commentPrompt     String?
+  repostReason      String?
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  metrics           PerformanceMetric[]
+
+  @@index([platform, uploadStatus])
+  @@index([scheduledAt])
+}
+
+model PerformanceMetric {
+  id                       String       @id @default(cuid())
+  platformPostId           String
+  platformPost             PlatformPost @relation(fields: [platformPostId], references: [id], onDelete: Cascade)
+  recordedAt               DateTime     @default(now())
+  views                    Int?
+  impressions              Int?
+  likes                    Int?
+  comments                 Int?
+  shares                   Int?
+  saves                    Int?
+  averageWatchTime         Float?
+  averagePercentageViewed  Float?
+  completionRate           Float?
+  profileVisits            Int?
+  linkClicks               Int?
+  subscribersGained        Int?
+  followersGained          Int?
+  engagementRate           Float?
+  importSource             String?
+  importBatchId            String?
+  createdAt                DateTime     @default(now())
+
+  @@index([platformPostId, recordedAt])
+  @@index([importBatchId])
+}
+
+model ContentInsight {
+  id                 String   @id @default(cuid())
+  type               String
+  topic              String?
+  platform           String?
+  finding            String
+  evidence           String?
+  confidence         Float?
+  recommendedAction  String?
+  sampleSize         Int?
+  createdAt          DateTime @default(now())
+}
+
+model PlatformSettings {
+  id                    String    @id @default(cuid())
+  platform              String    @unique
+  enabled               Boolean   @default(true)
+  accountDisplayName    String?
+  profileUrl            String?
+  defaultHashtags       String? // JSON
+  defaultCallToAction   String?
+  publishingMethod      String    @default("manual")
+  postingTimesJson      String?
+  connectionStatus      String    @default("manual_only")
+  tokenStatus           String    @default("not_configured")
+  lastSuccessfulPublish DateTime?
+  defaultVisibility     String    @default("public")
+  analyticsImportNotes  String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+}
+
+model ContentTemplate {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  name      String
+  platform  String?
+  body      String
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+}
+
+model AnalyticsImport {
+  id           String   @id @default(cuid())
+  platform     String
+  filename     String
+  importedAt   DateTime @default(now())
+  rowCount     Int
+  successCount Int
+  errorCount   Int
+  errorsJson   String?
+  notes        String?
+}
+
+model AppSetting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String
+  updatedAt DateTime @updatedAt
+}

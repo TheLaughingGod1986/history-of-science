@@ -1,0 +1,160 @@
+{
+  "channel": "Orbit with Ben",
+  "handle": "@OrbitWithBen",
+  "cadence": {
+    "long_form_per_week": 1,
+    "long_form_per_month": 4,
+    "shorts_per_week": "5-7",
+    "shorts_per_month": "20-28",
+    "shorts_per_long": "5-7",
+    "long_day": "Thursday",
+    "long_time_uk": "19:00",
+    "long_window_uk": "18:00-20:00",
+    "short_day1_time_uk": "21:00",
+    "shorts_days_2_to_7_time_uk": "12:30",
+    "pattern": "long first → Short#1 after 1-3h → one Short/day Days 2-7",
+    "long_form_minutes_now": "8-15",
+    "long_form_minutes_later": "20-40",
+    "strategy": "PUBLISHING_AND_SHORTS_STRATEGY.md",
+    "schedule": "OPTIMAL_PUBLISH_SCHEDULE.json",
+    "scale_up_target": "2 long / week after months 6-9 if quality holds"
+  },
+  "pillars": [
+    "Cosmic Mysteries",
+    "Future Humanity",
+    "Alien Civilisations",
+    "Space Stories"
+  ],
+  "videos": [
+    {
+      "id": "001",
+      "working_title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
+      "alt_title": "Will We Ever Meet Aliens? The Answer May Already Be Here",
+      "brand_suffix": "Orbit's Cosmic Journey",
+      "title_score": 97,
+      "pillar": "Alien Civilisations",
+      "status": "published",
+      "youtube_id": "Mo93x0fxB1Q",
+      "youtube_url": "https://youtu.be/Mo93x0fxB1Q",
+      "folder": "02_Video-Projects/001_Will-We-Ever-Meet-Aliens",
+      "ranking": "11_Upload-Package/RANKING_STRATEGY_v01.md",
+      "primary_keywords": [
+        "are we alone in the universe",
+        "fermi paradox explained",
+        "fermi paradox",
+        "space documentary"
+      ],
+      "shorts_cluster": "10_Shorts (S01–S05 scripted — pillar-first publish order)"
+    },
+    {
+      "id": "002",
+      "working_title": "What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey",
+      "alt_titles": [
+        "Black Holes Explained: What Would Happen If Orbit Fell Into One?",
+        "What If Orbit Fell Into A Black Hole? (Spaghettification Explained)"
+      ],
+      "title_score": 98,
+      "pillar": "Cosmic Mysteries",
+      "status": "scripting",
+      "folder": "02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole",
+      "format": "full_cg_orbit_in_peril",
+      "angle": "Put Orbit in peril — horizon, time dilation, spaghettification through his fall",
+      "target_minutes": "18-20",
+      "primary_keywords": [
+        "what happens if you fall into a black hole",
+        "black holes explained"
+      ],
+      "secondary_keywords": [
+        "event horizon explained",
+        "inside a black hole",
+        "supermassive black hole",
+        "black hole facts"
+      ],
+      "script": "01_Script/blackhole_script_master_v01.md",
+      "ranking": "11_Upload-Package/RANKING_STRATEGY_v01.md"
+    },
+    {
+      "id": "003",
+      "working_title": "Alien Worlds: The Strangest Planets We've Ever Found",
+      "alt_title": "The Most Bizarre Exoplanets We've Ever Discovered",
+      "brand_suffix": "Orbit's Cosmic Journey",
+      "title_score": 97,
+      "pillar": "Alien Civilisations",
+      "status": "in_production",
+      "folder": "02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds",
+      "format": "full_cg_orbit_travelogue",
+      "angle": "Orbit visits strange exoplanets — travelogue; one wonder per beat",
+      "target_minutes": "18-20",
+      "script": "01_Script/exoplanets_script_master_v01.md",
+      "vo_master": "02_Voiceover/05_Master/exoplanets_voiceover_v01_ivc_kDch_master.wav",
+      "vo_duration_min": 21.35,
+      "prompts": "03_Animation-Prompts/02_Individual-Prompts/",
+      "next_step": "CG gen hero worlds → VO-locked edit",
+      "primary_keywords": [
+        "alien worlds",
+        "strangest planets in the universe",
+        "exoplanets",
+        "exoplanets explained"
+      ],
+      "ranking": "11_Upload-Package/RANKING_STRATEGY_v01.md",
+      "scheduled": "2026-08-21T19:00:00+01:00",
+      "next_after": "004 JWST discoveries"
+    },
+    {
+      "id": "004",
+      "working_title": "What the James Webb Telescope Discovered That Changes Everything",
+      "pillar": "Cosmic Mysteries",
+      "status": "backlog",
+      "angle": "Orbit as curious learner — galaxies too old, black holes too big; wonder not clickbait"
+    },
+    {
+      "id": "005",
+      "working_title": "The Last Star In The Universe",
+      "pillar": "Space Stories",
+      "status": "backlog"
+    },
+    {
+      "id": "006",
+      "working_title": "Could Life Exist Under The Ice Of Europa?",
+      "pillar": "Cosmic Mysteries",
+      "status": "backlog"
+    },
+    {
+      "id": "007",
+      "working_title": "Are We Living Inside A Simulation?",
+      "pillar": "Cosmic Mysteries",
+      "status": "backlog"
+    },
+    {
+      "id": "008",
+      "working_title": "What Will Humans Become In 1,000 Years?",
+      "pillar": "Future Humanity",
+      "status": "backlog"
+    },
+    {
+      "id": "009",
+      "working_title": "The Day The Sun Dies",
+      "pillar": "Space Stories",
+      "status": "backlog"
+    },
+    {
+      "id": "010",
+      "working_title": "Could AI Help Humanity Reach The Stars?",
+      "pillar": "Future Humanity",
+      "status": "backlog"
+    },
+    {
+      "id": "011",
+      "working_title": "The Most Dangerous Place In The Universe",
+      "pillar": "Space Stories",
+      "status": "backlog"
+    },
+    {
+      "id": "012",
+      "working_title": "The Great Filter: Why Haven't We Found Aliens?",
+      "pillar": "Alien Civilisations",
+      "status": "backlog",
+      "note": "Deferred — V001 already covered filter; do not lead soon after aliens film"
+    }
+  ]
+}

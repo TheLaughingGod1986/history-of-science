@@ -1,0 +1,93 @@
+{
+  "related": [
+    {
+      "id": "01",
+      "video_id": "z-DLqoSoEBo",
+      "ok": true,
+      "click": {
+        "ok": true,
+        "via": "card",
+        "t": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey"
+      },
+      "chunk_before_save": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles",
+      "saved": true,
+      "related_chunk": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles"
+    },
+    {
+      "id": "02",
+      "video_id": "UWwNKYf_aU8",
+      "ok": true,
+      "click": {
+        "ok": true,
+        "via": "card",
+        "t": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey"
+      },
+      "chunk_before_save": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles",
+      "saved": true,
+      "related_chunk": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles"
+    },
+    {
+      "id": "03",
+      "video_id": "MO19iXYCu0c",
+      "ok": true,
+      "click": {
+        "ok": true,
+        "via": "card",
+        "t": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey"
+      },
+      "chunk_before_save": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles",
+      "saved": true,
+      "related_chunk": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles"
+    },
+    {
+      "id": "04",
+      "video_id": "--CxhjNqtSY",
+      "ok": true,
+      "click": {
+        "ok": true,
+        "via": "card",
+        "t": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey"
+      },
+      "chunk_before_save": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles",
+      "saved": true,
+      "related_chunk": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles"
+    }
+  ],
+  "pin": {
+    "ok": false,
+    "via": "orbit_owner_pins_oppti",
+    "switched": "Orbit with Ben",
+    "menu": {
+      "ok": true,
+      "author": "@OpptiAI"
+    },
+    "items": [
+      "Top Show featured comments",
+      "Newest Show recent comments, including potential spam",
+      "Top Show featured comments",
+      "Newest Show recent comments, including potential spam",
+      "Edit",
+      "Delete"
+    ],
+    "error": "no_pin_option",
+    "studio_menu_sel": "ytcp-icon-button[aria-label*='Action']",
+    "studio_items": [
+      "Details",
+      "Analytics",
+      "Editor",
+      "Comments",
+      "Subtitles",
+      "Claims",
+      "Clips",
+      "Brainstorm video ideas",
+      "Brainstorm video ideas",
+      "Find similar comments",
+      "Find similar comments",
+      "Edit",
+      "Edit",
+      "Delete",
+      "Delete"
+    ]
+  },
+  "ok": false
+}

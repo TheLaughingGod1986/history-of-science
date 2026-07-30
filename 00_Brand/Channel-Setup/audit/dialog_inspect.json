@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "inputs": [],
+  "buttons": [
+    {
+      "text": "Cancel",
+      "disabled": false
+    },
+    {
+      "text": "Confirm",
+      "disabled": false
+    }
+  ],
+  "html": "<div class=\"ytp-mdx-popup-dialog\" role=\"dialog\" data-layer=\"4\" style=\"display: none;\"><div class=\"ytp-mdx-popup-dialog-inner-content\"><div class=\"ytp-mdx-popup-title\">You're signed out</div><div class=\"ytp-mdx-popup-description\">Videos that you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer.</div><div class=\"ytp-mdx-privacy-popup-buttons\"><button class=\"ytp-button ytp-mdx-privacy-popup-cancel\">Cancel</button><button class=\"ytp-button ytp-mdx-privacy-popup-confirm\">Confirm</button></div></div></div>"
+}

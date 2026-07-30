@@ -1,0 +1,66 @@
+seq,scene_id,section,est_duration_sec,type,visual,orbit_marker,preferred_asset,prompt_file,status,notes
+1,aliens_scene-001,hook,6,broll,Night sky wide — dense Milky Way,,04_Generated-Clips/03_Polished/broll/aliens_scene-001_v01.mp4,aliens_scene-001_night-sky.txt,ready,No Orbit; EL Seedance 1.5 Pro text-only (no start frame)
+2,aliens_scene-002,hook,5,broll,Slow push into starfield,,04_Generated-Clips/03_Polished/broll/aliens_scene-002_v01.mp4,aliens_scene-002_starfield-push.txt,ready,; EL Seedance 1.5 Pro text-only (no start frame)
+3,aliens_scene-003,hook,4,title,Title card: Will We Ever Meet Aliens?,,,,edit_only,CapCut titles
+4,aliens_scene-004,intro,8,orbit,Orbit intro wave,intro_wave,MISSING orbit_intro_wave,orbit-introduction-prompt.txt,needs_generation,Ask before Seedance spend
+5,aliens_scene-005,intro,6,orbit,Orbit explaining bed under channel intro,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+6,aliens_scene-006,intro,5,broll,Galaxy rotate subtle,,04_Generated-Clips/03_Polished/broll/aliens_scene-006_v01.mp4,aliens_scene-006_galaxy-rotate.txt,ready,; EL Seedance 1.5 Pro text-only (no start frame)
+7,aliens_scene-007,intro,5,orbit,Orbit continue explaining,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,Loop/trim
+8,aliens_scene-008,intro,4,broll,Earth from space night side,,04_Generated-Clips/03_Polished/broll/aliens_scene-008_v01.mp4,aliens_scene-008_earth-night.txt,ready,; EL Seedance 1.5 Pro text-only (no start frame)
+9,aliens_scene-009,scale,6,orbit,Orbit explaining distances,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+10,aliens_scene-010,scale,5,graphic,Alpha Centauri distance graphic,,,,edit_only,
+11,aliens_scene-011,scale,6,broll,Spacecraft tiny against stars,,04_Generated-Clips/03_Polished/broll/aliens_scene-011_v01.mp4,aliens_scene-011_tiny-probe.txt,ready,EL Seedance 1.5 Pro text-only (no start frame)
+12,aliens_scene-012,scale,5,broll,Milky Way top-down stylised,,04_Generated-Clips/03_Polished/broll/aliens_scene-012_v01.mp4,aliens_scene-012_milkyway-top.txt,ready,EL Seedance 1.5 Pro text-only (no start frame)
+13,aliens_scene-013,scale,5,broll,Exoplanet transit silhouette,,04_Generated-Clips/03_Polished/broll/aliens_scene-013_v01.mp4,aliens_scene-013_transit.txt,ready,EL Seedance 1.5 Pro text-only (no start frame)
+14,aliens_scene-014,scale,5,graphic,Habitable zone diagram,,,,edit_only,
+15,aliens_scene-015,scale,6,orbit,Orbit explaining Drake setup,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+16,aliens_scene-016,scale,5,graphic,Drake equation terms appear one by one,,,,edit_only,
+17,aliens_scene-017,scale,5,broll,Optimistic vs empty galaxy split,,04_Generated-Clips/03_Polished/broll/aliens_scene-017_v01.mp4,aliens_scene-017_busy-vs-empty.txt,ready,EL Seedance 1.5 Pro text-only (no start frame)
+18,aliens_scene-018,scale,6,orbit,Orbit thinking — time/candles beat,thinking,MISSING orbit_thinking,orbit-thinking-prompt.txt,needs_generation,Ask before spend
+19,aliens_scene-019,fermi,6,orbit,Orbit thinking Fermi question,thinking,MISSING,orbit-thinking-prompt.txt,needs_generation,
+20,aliens_scene-020,fermi,5,broll,Empty radio silence visual — waveform flat,,04_Generated-Clips/03_Polished/broll/aliens_scene-020_v01.mp4,aliens_scene-020_silence-wave.txt,ready,EL Seedance 1.5 Pro text-only (no start frame)
+21,aliens_scene-021,fermi,5,broll,No megastructures — clean starfield,,04_Generated-Clips/03_Polished/broll/aliens_scene-021_v01.mp4,aliens_scene-021_clean-stars.txt,ready,EL Seedance 1.5 Pro text-only (no start frame)
+22,aliens_scene-022,fermi,6,orbit,Orbit explaining rare intelligence,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+23,aliens_scene-023,fermi,5,graphic,Earth life timeline (microbes→radios),,,,edit_only,
+24,aliens_scene-024,fermi,5,broll,Civilisation lights flicker then fade (tasteful),,04_Generated-Clips/03_Polished/broll/aliens_scene-024_v01.mp4,aliens_scene-024_lights-fade.txt,ready,Keep non-catastrophic; EL Seedance 1.5 Pro text-only (no start frame)
+25,aliens_scene-025,fermi,5,broll,Zoo hypothesis — distant observers abstract,,04_Generated-Clips/03_Polished/broll/aliens_scene-025_v01.mp4,aliens_scene-025_zoo-abstract.txt,ready,EL Seedance 1.5 Pro text-only (no start frame)
+26,aliens_scene-026,fermi,5,orbit,Orbit explaining early universe,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+27,aliens_scene-027,fermi,5,broll,Cosmic timeline glow,,,aliens_scene-027_cosmic-timeline.txt,needs_generation,REMOVED from active: prior batch had Eiffel start-frame leak; regenerating text-only with strip-guard. No Eiffel in Video 001.
+28,aliens_scene-028,fermi,5,orbit,Orbit surprised — distance logistics,surprised,orbit_surprised_reaction_v01_polished.mp4,,ready,
+29,aliens_scene-029,distance,5,graphic,1000 ly delay clock,,,,edit_only,
+30,aliens_scene-030,distance,6,broll,Slow ship crossing void,,04_Generated-Clips/03_Polished/broll/aliens_scene-030_v01.mp4,aliens_scene-030_slow-ship.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+31,aliens_scene-031,distance,5,broll,Spectrum / chemical fingerprint abstract,,04_Generated-Clips/03_Polished/broll/aliens_scene-031_v01.mp4,aliens_scene-031_spectrum.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+32,aliens_scene-032,distance,5,orbit,Orbit explaining meeting-as-data,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+33,aliens_scene-033,search,6,broll,Radio telescope array at dusk,,04_Generated-Clips/03_Polished/broll/aliens_scene-033_v01.mp4,aliens_scene-033_telescopes.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+34,aliens_scene-034,search,5,graphic,SETI scan schematic,,,,edit_only,
+35,aliens_scene-035,search,5,broll,Wow! signal stylised chart (non-logo),,04_Generated-Clips/03_Polished/broll/aliens_scene-035_v01.mp4,aliens_scene-035_wow-chart.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+36,aliens_scene-036,search,5,orbit,Orbit explaining incomplete listening,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+37,aliens_scene-037,biosig,5,broll,Exoplanet atmosphere limb glow,,04_Generated-Clips/03_Polished/broll/aliens_scene-037_v01.mp4,aliens_scene-037_atmosphere.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+38,aliens_scene-038,biosig,5,broll,Telescope mirror catching starlight,,04_Generated-Clips/03_Polished/broll/aliens_scene-038_v01.mp4,aliens_scene-038_mirror.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+39,aliens_scene-039,biosig,5,graphic,Biosignature gas icons,,,,edit_only,
+40,aliens_scene-040,biosig,6,orbit,Orbit explaining biosignatures,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+41,aliens_scene-041,biosig,5,broll,Data as first contact — graph glow,,04_Generated-Clips/03_Polished/broll/aliens_scene-041_v01.mp4,aliens_scene-041_data-glow.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+42,aliens_scene-042,biosig,5,broll,Mars landscape aerial,,04_Generated-Clips/03_Polished/broll/aliens_scene-042_v01.mp4,aliens_scene-042_mars.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+43,aliens_scene-043,biosig,5,broll,Icy moon ocean under crust,,04_Generated-Clips/03_Polished/broll/aliens_scene-043_v01.mp4,aliens_scene-043_icy-moon.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+44,aliens_scene-044,biosig,5,orbit,Orbit thinking — microbe vs starship,thinking,MISSING,orbit-thinking-prompt.txt,needs_generation,
+45,aliens_scene-045,odds,6,orbit,Orbit thinking honest uncertainty,thinking,MISSING,orbit-thinking-prompt.txt,needs_generation,
+46,aliens_scene-046,odds,5,broll,Interstellar void — lonely probe,,04_Generated-Clips/03_Polished/broll/aliens_scene-046_v01.mp4,aliens_scene-046_lonely-probe.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+47,aliens_scene-047,odds,5,orbit,Orbit explaining measurement window,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+48,aliens_scene-048,odds,5,broll,Growing exoplanet catalogue montage,,04_Generated-Clips/03_Polished/broll/aliens_scene-048_v01.mp4,aliens_scene-048_catalogue.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+49,aliens_scene-049,lesson,6,orbit,Orbit explaining Fermi lesson about us,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+50,aliens_scene-050,lesson,5,broll,Earth city lights → pull to stars,,04_Generated-Clips/03_Polished/broll/aliens_scene-050_v01.mp4,aliens_scene-050_earth-to-stars.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+51,aliens_scene-051,lesson,5,broll,Ambiguous signal caution visual,,04_Generated-Clips/03_Polished/broll/aliens_scene-051_v01.mp4,aliens_scene-051_caution-signal.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+52,aliens_scene-052,outro,6,orbit,Orbit ending wave,ending,orbit_ending_goodbye_v01_polished.mp4,,ready,
+53,aliens_scene-053,outro,5,broll,Maybe signal / biosignature / never — triptych stills,,,,edit_only,
+54,aliens_scene-054,outro,6,orbit,Orbit fly-away silhouette,ending,orbit_ending_goodbye_v01_polished.mp4,,ready,Use latter half
+55,aliens_scene-055,outro,5,broll,Quiet invitation starfield,,04_Generated-Clips/03_Polished/broll/aliens_scene-055_v01.mp4,aliens_scene-055_invitation-stars.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+56,aliens_scene-056,outro,5,orbit,Orbit CTA smile/wave hold,ending,orbit_ending_goodbye_v01_polished.mp4,,ready,
+57,aliens_scene-057,outro,4,title,End card subscribe,,,,edit_only,
+58,aliens_scene-058,outro,4,broll,Logo lockup over nebula,,,,edit_only,
+59,aliens_scene-059,buffer,5,orbit,Explaining loop spare for VO slip,explaining,orbit_explaining_talk_v01_polished.mp4,,ready,
+60,aliens_scene-060,buffer,5,broll,Spare galaxy beauty shot,,04_Generated-Clips/03_Polished/broll/aliens_scene-060_v01.mp4,aliens_scene-060_beauty-galaxy.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+61,aliens_scene-061,scale,4,broll,Habitable zone planet beauty,,04_Generated-Clips/03_Polished/broll/aliens_scene-061_v01.mp4,aliens_scene-061_hz-planet.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+62,aliens_scene-062,fermi,4,broll,Abstract overlapping radio eras,,04_Generated-Clips/03_Polished/broll/aliens_scene-062_v01.mp4,aliens_scene-062_radio-eras.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+63,aliens_scene-063,search,4,broll,Optical SETI laser pulse abstract,,04_Generated-Clips/03_Polished/broll/aliens_scene-063_v01.mp4,aliens_scene-063_optical-seti.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+64,aliens_scene-064,biosig,4,broll,Ice grain microbe concept (tasteful),,04_Generated-Clips/03_Polished/broll/aliens_scene-064_v01.mp4,aliens_scene-064_ice-grain.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)
+65,aliens_scene-065,outro,4,broll,Final quiet stars hold,,04_Generated-Clips/03_Polished/broll/aliens_scene-065_v01.mp4,aliens_scene-065_final-hold.txt,ready,EL Seedance 1.5 Pro text-only (no start frame; strip-guard)

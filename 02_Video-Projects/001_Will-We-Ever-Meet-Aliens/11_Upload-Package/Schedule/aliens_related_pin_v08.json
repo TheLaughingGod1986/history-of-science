@@ -1,0 +1,201 @@
+{
+  "related": [
+    {
+      "id": "01",
+      "video_id": "z-DLqoSoEBo",
+      "ok": false,
+      "click": {
+        "ok": true,
+        "via": "card",
+        "t": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey"
+      },
+      "confirm": "no_btn",
+      "confirm2": "Select",
+      "chunk_before_save": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles\nNo playlists available\nCreate playlist\nDone",
+      "saved": true,
+      "related_chunk": "\nNone\nSubtitles"
+    },
+    {
+      "id": "02",
+      "video_id": "UWwNKYf_aU8",
+      "ok": false,
+      "click": {
+        "ok": true,
+        "via": "card",
+        "t": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey"
+      },
+      "confirm": "no_btn",
+      "confirm2": "Select",
+      "chunk_before_save": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles\nNo playlists available\nCreate playlist\nDone",
+      "saved": true,
+      "related_chunk": "\nNone\nSubtitles"
+    },
+    {
+      "id": "03",
+      "video_id": "MO19iXYCu0c",
+      "ok": false,
+      "click": {
+        "ok": true,
+        "via": "card",
+        "t": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey"
+      },
+      "confirm": "no_btn",
+      "confirm2": "Select",
+      "chunk_before_save": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles\nNo playlists available\nCreate playlist\nDone",
+      "saved": true,
+      "related_chunk": "\nNone\nSubtitles"
+    },
+    {
+      "id": "04",
+      "video_id": "--CxhjNqtSY",
+      "ok": false,
+      "click": {
+        "ok": true,
+        "via": "card",
+        "t": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey"
+      },
+      "confirm": "no_btn",
+      "confirm2": "Select",
+      "chunk_before_save": "\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\nSubtitles\nNo playlists available\nCreate playlist\nDone",
+      "saved": true,
+      "related_chunk": "\nNone\nSubtitles"
+    }
+  ],
+  "pin": {
+    "ok": false,
+    "via": "oppti_comment_then_pin",
+    "identity": "@OpptiAI",
+    "posted": true,
+    "menu": {
+      "ok": true,
+      "author": "@OpptiAI"
+    },
+    "items": [
+      "Top Show featured comments",
+      "Newest Show recent comments, including potential spam",
+      "Top Show featured comments",
+      "Newest Show recent comments, including potential spam",
+      "Edit",
+      "Delete"
+    ],
+    "error": "still_no_pin",
+    "studio_dom": [
+      {
+        "tag": "YTCP-COMMENT",
+        "text": "@OpptiAI  \u2022 44 seconds ago\nIf the universe is full of life, what do you think best explains the silence: distance, rarit",
+        "buttons": [
+          {
+            "al": "Select comment for batch",
+            "t": ""
+          },
+          {
+            "al": "Select comment for batch",
+            "t": ""
+          },
+          {
+            "al": "\u2026Read more",
+            "t": "\u2026Read more"
+          },
+          {
+            "al": "Reply",
+            "t": "Reply"
+          },
+          {
+            "al": "0 replies",
+            "t": "0 replies"
+          },
+          {
+            "al": "Like",
+            "t": ""
+          },
+          {
+            "al": "Dislike",
+            "t": ""
+          },
+          {
+            "al": "Heart, disabled",
+            "t": ""
+          }
+        ]
+      },
+      {
+        "tag": "YTCP-COMMENT",
+        "text": "@OpptiAI  \u2022 17 minutes ago\nIf the universe is full of life, what do you think best explains the silence: distance, rarit",
+        "buttons": [
+          {
+            "al": "Select comment for batch",
+            "t": ""
+          },
+          {
+            "al": "Select comment for batch",
+            "t": ""
+          },
+          {
+            "al": "\u2026Read more",
+            "t": "\n          \u2026Read more\n      "
+          },
+          {
+            "al": "Reply",
+            "t": "Reply"
+          },
+          {
+            "al": "0 replies",
+            "t": "0 replies"
+          },
+          {
+            "al": "Like",
+            "t": ""
+          },
+          {
+            "al": "Dislike",
+            "t": ""
+          },
+          {
+            "al": "Heart, disabled",
+            "t": ""
+          }
+        ]
+      },
+      {
+        "tag": "YTCP-COMMENT",
+        "text": "@OpptiAI  \u2022 9 minutes ago\nIf the universe is full of life, what do you think best explains the silence: distance, rarity",
+        "buttons": [
+          {
+            "al": "Select comment for batch",
+            "t": ""
+          },
+          {
+            "al": "Select comment for batch",
+            "t": ""
+          },
+          {
+            "al": "\u2026Read more",
+            "t": "\n          \u2026Read more\n      "
+          },
+          {
+            "al": "Reply",
+            "t": "Reply"
+          },
+          {
+            "al": "0 replies",
+            "t": "0 replies"
+          },
+          {
+            "al": "Like",
+            "t": ""
+          },
+          {
+            "al": "Dislike",
+            "t": ""
+          },
+          {
+            "al": "Heart, disabled",
+            "t": ""
+          }
+        ]
+      }
+    ]
+  },
+  "ok": false,
+  "net": []
+}

@@ -1,0 +1,74 @@
+{
+  "cluster": "001_aliens_fermi_funnel",
+  "long_form": "001_Will-We-Ever-Meet-Aliens",
+  "channel": "@OrbitWithBen",
+  "strategy": "pillar_first",
+  "long_publish": {
+    "day": "Thursday",
+    "time_uk": "19:00",
+    "window_uk": "18:00-20:00"
+  },
+  "shorts": [
+    {
+      "id": "S01",
+      "title": "Why Haven't Aliens Said Hello?",
+      "duration_s": "45-50",
+      "status": "scripted",
+      "folder": "S01_Fermi_Lunch",
+      "role": "strongest_hook",
+      "ship": { "day_offset": 0, "time_uk": "21:00" }
+    },
+    {
+      "id": "S04",
+      "title": "Why Meeting Aliens Takes Forever",
+      "duration_s": "38-45",
+      "status": "scripted",
+      "folder": "S04_Thousand_Years",
+      "role": "scale",
+      "ship": { "day_offset": 1, "time_uk": "12:30" }
+    },
+    {
+      "id": "S02",
+      "title": "The Signal That Never Repeated",
+      "duration_s": "40-48",
+      "status": "scripted",
+      "folder": "S02_Wow_Signal",
+      "role": "named_mystery",
+      "ship": { "day_offset": 2, "time_uk": "12:30" }
+    },
+    {
+      "id": "S03",
+      "title": "What If Aliens Are Watching Us?",
+      "duration_s": "42-50",
+      "status": "scripted",
+      "folder": "S03_Zoo_Hypothesis",
+      "role": "theory",
+      "ship": { "day_offset": 3, "time_uk": "12:30" }
+    },
+    {
+      "id": "S05",
+      "title": "The Silence Isn't Empty",
+      "duration_s": "40-48",
+      "status": "scripted",
+      "folder": "S05_Silence_Invitation",
+      "role": "wonder",
+      "ship": { "day_offset": 4, "time_uk": "12:30" }
+    }
+  ],
+  "publish_order": ["S01", "S04", "S02", "S03", "S05"],
+  "rules": [
+    "Long-form publishes before any Short",
+    "Short #1 ships 1-3 hours after long (21:00 UK)",
+    "One Short per day Days 2-7",
+    "Each Short is a standalone mini-documentary",
+    "Soft curiosity CTA only — never an ad"
+  ],
+  "next_production_steps": [
+    "ElevenLabs VO for S01-S05 from 02_Voiceover/*_vo_read_v01.txt",
+    "Seedance vertical clips per scene prompts",
+    "CapCut 9:16 edit + captions + end cards",
+    "Schedule long Thu 19:00 → Shorts per ship slots",
+    "Related to long-form when long is live",
+    "Fill 11_Distribution/CONTENT_FLYWHEEL.md"
+  ]
+}

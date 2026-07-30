@@ -1,0 +1,106 @@
+{
+  "steps": [
+    {
+      "tab": "Published",
+      "has_oppti": true,
+      "has_needle": true,
+      "snip": "Community\nSkip navigation\nCreate\nYour channel\nOrbit with Ben\nDashboard\nContent\nAnalytics\nCommunity\nSubtitles\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nCommunity\nComments\nMentions\nPublished\nMost relevant\nSearch\nResponse status: Unresponded\nContent type: Videos, Shorts + 1 more\nComment\nContent\n@OpptiAI  \u2022 25 minutes ago\nIf the universe is full of life, what do you thi"
+    },
+    {
+      "tab": "Held for review",
+      "err": "Locator.click: Timeout 2000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Held for review\", exact=True).first\n"
+    },
+    {
+      "tab": "Likely spam",
+      "err": "Locator.click: Timeout 2000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Likely spam\", exact=True).first\n"
+    }
+  ],
+  "ok": false,
+  "inbox_snip": "Community\nSkip navigation\nCreate\nYour channel\nOrbit with Ben\nDashboard\nContent\nAnalytics\nCommunity\nSubtitles\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nCommunity\nComments\nMentions\nPublished\nMost relevant\nSearch\nResponse status: Unresponded\nContent type: Videos, Shorts + 1 more\nComment\nContent\n@OpptiAI  \u2022 25 minutes ago\nIf the universe is full of life, what do you think best explains the silence: distance, rarity, timing, deliberate quiet\u2014or a possibility we have not imagined yet?\n\nI\u2019ll be reading the theories below. The strongest idea may shape Orbit\u2019s next film. \n\n(Orbit pinned CTA)\n\u2026Read more\nReply\n0 replies\nWhy Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey\n@OpptiAI  \u2022 41 minutes ago\nIf the universe is full of life, what ",
+  "inbox_deleted": [
+    {
+      "deleted": false
+    },
+    {
+      "deleted": false
+    },
+    {
+      "deleted": false
+    },
+    {
+      "deleted": false
+    },
+    {
+      "deleted": false
+    },
+    {
+      "deleted": false
+    },
+    {
+      "deleted": false
+    },
+    {
+      "deleted": false
+    },
+    {
+      "deleted": false
+    },
+    {
+      "deleted": false
+    }
+  ],
+  "switched": "Orbit with Ben",
+  "watch_deleted": [
+    {
+      "items": [
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Edit",
+        "Delete"
+      ],
+      "i": 0
+    },
+    {
+      "items": [
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Edit",
+        "Delete"
+      ],
+      "i": 0
+    },
+    {
+      "items": [
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Edit",
+        "Delete"
+      ],
+      "i": 0
+    },
+    {
+      "items": [
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Edit",
+        "Delete"
+      ],
+      "i": 0
+    }
+  ],
+  "watch_has_oppti": false,
+  "watch_has_needle": false,
+  "posted": true,
+  "final_has_oppti": true,
+  "final_authors": [
+    "@OpptiAI"
+  ]
+}

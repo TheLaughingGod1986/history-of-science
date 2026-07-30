@@ -1,0 +1,1410 @@
+{
+  "long_id": "Mo93x0fxB1Q",
+  "long_public": {
+    "id": "Mo93x0fxB1Q",
+    "public": true,
+    "chip": "Visibility Public"
+  },
+  "related": [
+    {
+      "id": "01",
+      "video_id": "z-DLqoSoEBo",
+      "ok": false,
+      "opened": "shorts_picker",
+      "dump_open": {
+        "exists": true,
+        "text": "Choose specific video",
+        "tags": [
+          {
+            "n": "ytcp-dialog",
+            "id": "inner-dialog",
+            "al": "",
+            "t": "Choose specific video",
+            "w": 872,
+            "h": 1004
+          },
+          {
+            "n": "tp-yt-paper-dialog",
+            "id": "dialog",
+            "al": "Choose specific video",
+            "t": "Choose specific video",
+            "w": 960,
+            "h": 760
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "close",
+            "al": "Close",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-tabs",
+            "id": "tabs",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContainer",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContent",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "tp-yt-paper-tab",
+            "id": "search-yours-tab",
+            "al": "",
+            "t": "",
+            "w": 961,
+            "h": 48
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "input",
+            "id": "search-yours",
+            "al": "",
+            "t": "",
+            "w": 888,
+            "h": 40
+          },
+          {
+            "n": "div",
+            "id": "videos",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 646
+          },
+          {
+            "n": "ytcp-video-pick-dialog-contents",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 912,
+            "h": 630
+          },
+          {
+            "n": "ytcp-toast-manager",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 1440,
+            "h": 1100
+          }
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "id": "search-yours",
+            "ph": "Search your videos",
+            "val": "",
+            "w": 888,
+            "h": 40
+          },
+          {
+            "tag": "INPUT",
+            "id": "search-any",
+            "ph": "Search videos from other channels",
+            "val": "",
+            "w": 0,
+            "h": 0
+          }
+        ]
+      },
+      "cell_count": 0,
+      "searches": [
+        {
+          "q": "Haven't We Found",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Fermi Paradox Explained",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Mo93x0fxB1Q",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Aliens",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Orbit",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        }
+      ],
+      "error": "not_found",
+      "dump_fail": {
+        "exists": true,
+        "text": "Choose specific video\nNo matching results. Please try again.",
+        "tags": [
+          {
+            "n": "ytcp-dialog",
+            "id": "inner-dialog",
+            "al": "",
+            "t": "Choose specific video No matching results. Please try again.",
+            "w": 872,
+            "h": 1004
+          },
+          {
+            "n": "tp-yt-paper-dialog",
+            "id": "dialog",
+            "al": "Choose specific video",
+            "t": "Choose specific video No matching results. Please try again.",
+            "w": 960,
+            "h": 760
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "close",
+            "al": "Close",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-tabs",
+            "id": "tabs",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContainer",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContent",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "tp-yt-paper-tab",
+            "id": "search-yours-tab",
+            "al": "",
+            "t": "",
+            "w": 961,
+            "h": 48
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "input",
+            "id": "search-yours",
+            "al": "",
+            "t": "",
+            "w": 856,
+            "h": 40
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "clear",
+            "al": "Clear",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-ripple",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "background",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "waves",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "videos",
+            "al": "",
+            "t": "No matching results. Please try again.",
+            "w": 960,
+            "h": 646
+          },
+          {
+            "n": "ytcp-video-pick-dialog-contents",
+            "id": "",
+            "al": "",
+            "t": "No matching results. Please try again.",
+            "w": 912,
+            "h": 630
+          },
+          {
+            "n": "ytcp-toast-manager",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 1440,
+            "h": 1100
+          }
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "id": "search-yours",
+            "ph": "Search your videos",
+            "val": "Why Haven",
+            "w": 856,
+            "h": 40
+          },
+          {
+            "tag": "INPUT",
+            "id": "search-any",
+            "ph": "Search videos from other channels",
+            "val": "",
+            "w": 0,
+            "h": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "02",
+      "video_id": "UWwNKYf_aU8",
+      "ok": false,
+      "opened": "shorts_picker",
+      "dump_open": {
+        "exists": true,
+        "text": "Choose specific video",
+        "tags": [
+          {
+            "n": "ytcp-dialog",
+            "id": "inner-dialog",
+            "al": "",
+            "t": "Choose specific video",
+            "w": 872,
+            "h": 1004
+          },
+          {
+            "n": "tp-yt-paper-dialog",
+            "id": "dialog",
+            "al": "Choose specific video",
+            "t": "Choose specific video",
+            "w": 960,
+            "h": 760
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "close",
+            "al": "Close",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-tabs",
+            "id": "tabs",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContainer",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContent",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "tp-yt-paper-tab",
+            "id": "search-yours-tab",
+            "al": "",
+            "t": "",
+            "w": 961,
+            "h": 48
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "input",
+            "id": "search-yours",
+            "al": "",
+            "t": "",
+            "w": 888,
+            "h": 40
+          },
+          {
+            "n": "div",
+            "id": "videos",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 646
+          },
+          {
+            "n": "ytcp-video-pick-dialog-contents",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 912,
+            "h": 630
+          },
+          {
+            "n": "ytcp-toast-manager",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 1440,
+            "h": 1100
+          }
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "id": "search-yours",
+            "ph": "Search your videos",
+            "val": "",
+            "w": 888,
+            "h": 40
+          },
+          {
+            "tag": "INPUT",
+            "id": "search-any",
+            "ph": "Search videos from other channels",
+            "val": "",
+            "w": 0,
+            "h": 0
+          }
+        ]
+      },
+      "cell_count": 0,
+      "searches": [
+        {
+          "q": "Haven't We Found",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Fermi Paradox Explained",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Mo93x0fxB1Q",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Aliens",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Orbit",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        }
+      ],
+      "error": "not_found",
+      "dump_fail": {
+        "exists": true,
+        "text": "Choose specific video\nNo matching results. Please try again.",
+        "tags": [
+          {
+            "n": "ytcp-dialog",
+            "id": "inner-dialog",
+            "al": "",
+            "t": "Choose specific video No matching results. Please try again.",
+            "w": 872,
+            "h": 1004
+          },
+          {
+            "n": "tp-yt-paper-dialog",
+            "id": "dialog",
+            "al": "Choose specific video",
+            "t": "Choose specific video No matching results. Please try again.",
+            "w": 960,
+            "h": 760
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "close",
+            "al": "Close",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-tabs",
+            "id": "tabs",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContainer",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContent",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "tp-yt-paper-tab",
+            "id": "search-yours-tab",
+            "al": "",
+            "t": "",
+            "w": 961,
+            "h": 48
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "input",
+            "id": "search-yours",
+            "al": "",
+            "t": "",
+            "w": 856,
+            "h": 40
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "clear",
+            "al": "Clear",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-ripple",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "background",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "waves",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "videos",
+            "al": "",
+            "t": "No matching results. Please try again.",
+            "w": 960,
+            "h": 646
+          },
+          {
+            "n": "ytcp-video-pick-dialog-contents",
+            "id": "",
+            "al": "",
+            "t": "No matching results. Please try again.",
+            "w": 912,
+            "h": 630
+          },
+          {
+            "n": "ytcp-toast-manager",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 1440,
+            "h": 1100
+          }
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "id": "search-yours",
+            "ph": "Search your videos",
+            "val": "Why Haven",
+            "w": 856,
+            "h": 40
+          },
+          {
+            "tag": "INPUT",
+            "id": "search-any",
+            "ph": "Search videos from other channels",
+            "val": "",
+            "w": 0,
+            "h": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "video_id": "MO19iXYCu0c",
+      "ok": false,
+      "opened": "shorts_picker",
+      "dump_open": {
+        "exists": true,
+        "text": "Choose specific video",
+        "tags": [
+          {
+            "n": "ytcp-dialog",
+            "id": "inner-dialog",
+            "al": "",
+            "t": "Choose specific video",
+            "w": 872,
+            "h": 1004
+          },
+          {
+            "n": "tp-yt-paper-dialog",
+            "id": "dialog",
+            "al": "Choose specific video",
+            "t": "Choose specific video",
+            "w": 960,
+            "h": 760
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "close",
+            "al": "Close",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-tabs",
+            "id": "tabs",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContainer",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContent",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "tp-yt-paper-tab",
+            "id": "search-yours-tab",
+            "al": "",
+            "t": "",
+            "w": 961,
+            "h": 48
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "input",
+            "id": "search-yours",
+            "al": "",
+            "t": "",
+            "w": 888,
+            "h": 40
+          },
+          {
+            "n": "div",
+            "id": "videos",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 646
+          },
+          {
+            "n": "ytcp-video-pick-dialog-contents",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 912,
+            "h": 630
+          },
+          {
+            "n": "ytcp-toast-manager",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 1440,
+            "h": 1100
+          }
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "id": "search-yours",
+            "ph": "Search your videos",
+            "val": "",
+            "w": 888,
+            "h": 40
+          },
+          {
+            "tag": "INPUT",
+            "id": "search-any",
+            "ph": "Search videos from other channels",
+            "val": "",
+            "w": 0,
+            "h": 0
+          }
+        ]
+      },
+      "cell_count": 0,
+      "searches": [
+        {
+          "q": "Haven't We Found",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Fermi Paradox Explained",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Mo93x0fxB1Q",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Aliens",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Orbit",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        }
+      ],
+      "error": "not_found",
+      "dump_fail": {
+        "exists": true,
+        "text": "Choose specific video\nNo matching results. Please try again.",
+        "tags": [
+          {
+            "n": "ytcp-dialog",
+            "id": "inner-dialog",
+            "al": "",
+            "t": "Choose specific video No matching results. Please try again.",
+            "w": 872,
+            "h": 1004
+          },
+          {
+            "n": "tp-yt-paper-dialog",
+            "id": "dialog",
+            "al": "Choose specific video",
+            "t": "Choose specific video No matching results. Please try again.",
+            "w": 960,
+            "h": 760
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "close",
+            "al": "Close",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-tabs",
+            "id": "tabs",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContainer",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContent",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "tp-yt-paper-tab",
+            "id": "search-yours-tab",
+            "al": "",
+            "t": "",
+            "w": 961,
+            "h": 48
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "input",
+            "id": "search-yours",
+            "al": "",
+            "t": "",
+            "w": 856,
+            "h": 40
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "clear",
+            "al": "Clear",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-ripple",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "background",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "waves",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "videos",
+            "al": "",
+            "t": "No matching results. Please try again.",
+            "w": 960,
+            "h": 646
+          },
+          {
+            "n": "ytcp-video-pick-dialog-contents",
+            "id": "",
+            "al": "",
+            "t": "No matching results. Please try again.",
+            "w": 912,
+            "h": 630
+          },
+          {
+            "n": "ytcp-toast-manager",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 1440,
+            "h": 1100
+          }
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "id": "search-yours",
+            "ph": "Search your videos",
+            "val": "Why Haven",
+            "w": 856,
+            "h": 40
+          },
+          {
+            "tag": "INPUT",
+            "id": "search-any",
+            "ph": "Search videos from other channels",
+            "val": "",
+            "w": 0,
+            "h": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "video_id": "--CxhjNqtSY",
+      "ok": false,
+      "opened": "shorts_picker",
+      "dump_open": {
+        "exists": true,
+        "text": "Choose specific video",
+        "tags": [
+          {
+            "n": "ytcp-dialog",
+            "id": "inner-dialog",
+            "al": "",
+            "t": "Choose specific video",
+            "w": 872,
+            "h": 1004
+          },
+          {
+            "n": "tp-yt-paper-dialog",
+            "id": "dialog",
+            "al": "Choose specific video",
+            "t": "Choose specific video",
+            "w": 960,
+            "h": 760
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "close",
+            "al": "Close",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-tabs",
+            "id": "tabs",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContainer",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContent",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "tp-yt-paper-tab",
+            "id": "search-yours-tab",
+            "al": "",
+            "t": "",
+            "w": 961,
+            "h": 48
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "input",
+            "id": "search-yours",
+            "al": "",
+            "t": "",
+            "w": 888,
+            "h": 40
+          },
+          {
+            "n": "div",
+            "id": "videos",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 646
+          },
+          {
+            "n": "ytcp-video-pick-dialog-contents",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 912,
+            "h": 630
+          },
+          {
+            "n": "ytcp-toast-manager",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 1440,
+            "h": 1100
+          }
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "id": "search-yours",
+            "ph": "Search your videos",
+            "val": "",
+            "w": 888,
+            "h": 40
+          },
+          {
+            "tag": "INPUT",
+            "id": "search-any",
+            "ph": "Search videos from other channels",
+            "val": "",
+            "w": 0,
+            "h": 0
+          }
+        ]
+      },
+      "cell_count": 0,
+      "searches": [
+        {
+          "q": "Haven't We Found",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Fermi Paradox Explained",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Mo93x0fxB1Q",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Aliens",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Orbit",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        },
+        {
+          "q": "Why Haven",
+          "method": "kb+host",
+          "snip": "Choose specific video\nNo matching results. Please try again."
+        }
+      ],
+      "error": "not_found",
+      "dump_fail": {
+        "exists": true,
+        "text": "Choose specific video\nNo matching results. Please try again.",
+        "tags": [
+          {
+            "n": "ytcp-dialog",
+            "id": "inner-dialog",
+            "al": "",
+            "t": "Choose specific video No matching results. Please try again.",
+            "w": 872,
+            "h": 1004
+          },
+          {
+            "n": "tp-yt-paper-dialog",
+            "id": "dialog",
+            "al": "Choose specific video",
+            "t": "Choose specific video No matching results. Please try again.",
+            "w": 960,
+            "h": 760
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "close",
+            "al": "Close",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-tabs",
+            "id": "tabs",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContainer",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "tabsContent",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "tp-yt-paper-tab",
+            "id": "search-yours-tab",
+            "al": "",
+            "t": "",
+            "w": 961,
+            "h": 48
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "input",
+            "id": "search-yours",
+            "al": "",
+            "t": "",
+            "w": 856,
+            "h": 40
+          },
+          {
+            "n": "ytcp-icon-button",
+            "id": "clear",
+            "al": "Clear",
+            "t": "",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "n": "yt-icon",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 24,
+            "h": 24
+          },
+          {
+            "n": "tp-yt-paper-ripple",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "background",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "waves",
+            "al": "",
+            "t": "",
+            "w": 960,
+            "h": 48
+          },
+          {
+            "n": "div",
+            "id": "videos",
+            "al": "",
+            "t": "No matching results. Please try again.",
+            "w": 960,
+            "h": 646
+          },
+          {
+            "n": "ytcp-video-pick-dialog-contents",
+            "id": "",
+            "al": "",
+            "t": "No matching results. Please try again.",
+            "w": 912,
+            "h": 630
+          },
+          {
+            "n": "ytcp-toast-manager",
+            "id": "",
+            "al": "",
+            "t": "",
+            "w": 1440,
+            "h": 1100
+          }
+        ],
+        "inputs": [
+          {
+            "tag": "INPUT",
+            "id": "search-yours",
+            "ph": "Search your videos",
+            "val": "Why Haven",
+            "w": 856,
+            "h": 40
+          },
+          {
+            "tag": "INPUT",
+            "id": "search-any",
+            "ph": "Search videos from other channels",
+            "val": "",
+            "w": 0,
+            "h": 0
+          }
+        ]
+      }
+    }
+  ],
+  "pin": {
+    "ok": true,
+    "via": "watch",
+    "activated": "#simplebox-placeholder",
+    "typed": true,
+    "submitted": "dom",
+    "comment_count": 1,
+    "pin_err": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"menuitem\", name=re.compile(r\"Pin\", re.IGNORECASE)).first\n",
+    "posted": true,
+    "studio_comments": {
+      "ok": false,
+      "via": "studio_comments",
+      "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"Pin\", re.IGNORECASE)).first\n"
+    }
+  },
+  "ok": false
+}

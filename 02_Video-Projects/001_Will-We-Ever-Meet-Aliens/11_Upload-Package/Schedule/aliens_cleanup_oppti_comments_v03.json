@@ -1,0 +1,94 @@
+{
+  "ok": false,
+  "actions": [
+    {
+      "round": 0,
+      "selected": 22
+    },
+    {
+      "delete_btn": null
+    },
+    {
+      "round": 1,
+      "selected": 22
+    },
+    {
+      "delete_btn": null
+    },
+    {
+      "round": 2,
+      "selected": 22
+    },
+    {
+      "delete_btn": null
+    },
+    {
+      "round": 3,
+      "selected": 22
+    },
+    {
+      "delete_btn": null
+    },
+    {
+      "round": 4,
+      "selected": 22
+    },
+    {
+      "delete_btn": null
+    },
+    {
+      "round": 5,
+      "selected": 22
+    },
+    {
+      "delete_btn": null
+    },
+    {
+      "round": 6,
+      "selected": 22
+    },
+    {
+      "delete_btn": null
+    },
+    {
+      "round": 7,
+      "selected": 22
+    },
+    {
+      "delete_btn": null
+    },
+    {
+      "row_delete": "Action menu"
+    },
+    {
+      "row_delete": "Action menu"
+    },
+    {
+      "row_delete": "Action menu"
+    },
+    {
+      "row_delete": "Action menu"
+    },
+    {
+      "row_delete": "Action menu"
+    },
+    {
+      "row_delete": "Action menu"
+    },
+    {
+      "row_delete": "Action menu"
+    },
+    {
+      "row_delete": "Action menu"
+    },
+    {
+      "row_delete": "Action menu"
+    },
+    {
+      "row_delete": "Action menu"
+    }
+  ],
+  "inbox_has_oppti": true,
+  "watch_has_oppti": true,
+  "watch_has_needle": true
+}

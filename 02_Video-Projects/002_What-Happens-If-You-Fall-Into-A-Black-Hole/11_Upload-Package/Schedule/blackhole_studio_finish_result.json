@@ -1,0 +1,216 @@
+{
+  "long_id": "n7CbJrOCnU0",
+  "long_url": "https://youtu.be/n7CbJrOCnU0",
+  "long_schedule": {
+    "id": "n7CbJrOCnU0",
+    "ok": true,
+    "tag": "long",
+    "target": "6 Aug 2026 19:00",
+    "opened": true,
+    "day_click": {
+      "ok": false
+    },
+    "date_typed": "6 August 2026",
+    "time": "19:00",
+    "confirm": {
+      "x": 1131.09375,
+      "y": 918,
+      "score": 900089.8125
+    },
+    "still_draft": false,
+    "chip_scheduled": true,
+    "body_snip": [
+      "Scheduled"
+    ]
+  },
+  "shorts": [
+    {
+      "id": "01",
+      "title": "Cross This Line and You Never Come Back",
+      "ok": true,
+      "schedule_iso": "2026-08-06T21:00:00+01:00",
+      "save_coords": {
+        "x": 1144.85546875,
+        "y": 918,
+        "score": 900062.2890625
+      },
+      "video_id": "eZGAhF8dN7w",
+      "url": "https://youtu.be/eZGAhF8dN7w",
+      "schedule": {
+        "id": "eZGAhF8dN7w",
+        "ok": false,
+        "tag": "s01",
+        "target": "6 Aug 2026 21:00",
+        "opened": true,
+        "day_click": {
+          "ok": false
+        },
+        "date_typed": "6 August 2026",
+        "time": "21:00",
+        "confirm": "done",
+        "still_draft": false,
+        "chip_scheduled": false,
+        "body_snip": [
+          "Private"
+        ]
+      }
+    },
+    {
+      "id": "02",
+      "title": "Falling In Wouldn't Feel Like Falling",
+      "ok": true,
+      "schedule_iso": "2026-08-07T12:30:00+01:00",
+      "save_coords": {
+        "x": 1144.85546875,
+        "y": 918,
+        "score": 900062.2890625
+      },
+      "video_id": "C4GuFEFGySI",
+      "url": "https://youtu.be/C4GuFEFGySI",
+      "schedule": {
+        "id": "C4GuFEFGySI",
+        "ok": false,
+        "tag": "s02",
+        "target": "7 Aug 2026 12:30",
+        "opened": true,
+        "day_click": {
+          "ok": false
+        },
+        "date_typed": "7 August 2026",
+        "time": "12:30",
+        "confirm": "done",
+        "still_draft": false,
+        "chip_scheduled": false,
+        "body_snip": [
+          "Private"
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "title": "Time Stops at the Edge \u2014 For Them",
+      "ok": true,
+      "schedule_iso": "2026-08-08T12:30:00+01:00",
+      "save_coords": {
+        "x": 1144.85546875,
+        "y": 918,
+        "score": 900062.2890625
+      },
+      "video_id": "hdlr1soUwNA",
+      "url": "https://youtu.be/hdlr1soUwNA",
+      "schedule": {
+        "id": "hdlr1soUwNA",
+        "ok": false,
+        "tag": "s03",
+        "target": "8 Aug 2026 12:30",
+        "opened": true,
+        "day_click": {
+          "ok": false
+        },
+        "date_typed": "8 August 2026",
+        "time": "12:30",
+        "confirm": "done",
+        "still_draft": false,
+        "chip_scheduled": false,
+        "body_snip": [
+          "Private"
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "title": "Would You Look Back?",
+      "ok": true,
+      "schedule_iso": "2026-08-09T12:30:00+01:00",
+      "save_coords": {
+        "x": 1144.85546875,
+        "y": 918,
+        "score": 900062.2890625
+      },
+      "video_id": "80S5E-AWFhA",
+      "url": "https://youtu.be/80S5E-AWFhA",
+      "schedule": {
+        "id": "80S5E-AWFhA",
+        "ok": false,
+        "tag": "s04",
+        "target": "9 Aug 2026 12:30",
+        "opened": true,
+        "day_click": {
+          "ok": false
+        },
+        "date_typed": "9 August 2026",
+        "time": "12:30",
+        "confirm": "done",
+        "still_draft": false,
+        "chip_scheduled": false,
+        "body_snip": [
+          "Private"
+        ]
+      }
+    },
+    {
+      "id": "05",
+      "title": "What Your Eyes Would See",
+      "ok": true,
+      "schedule_iso": "2026-08-10T12:30:00+01:00",
+      "save_coords": {
+        "x": 1144.85546875,
+        "y": 918,
+        "score": 900062.2890625
+      },
+      "video_id": "olnaYqeOtFs",
+      "url": "https://youtu.be/olnaYqeOtFs",
+      "schedule": {
+        "id": "olnaYqeOtFs",
+        "ok": false,
+        "tag": "s05",
+        "target": "10 Aug 2026 12:30",
+        "opened": true,
+        "day_click": {
+          "ok": false
+        },
+        "date_typed": "10 August 2026",
+        "time": "12:30",
+        "confirm": "done",
+        "still_draft": false,
+        "chip_scheduled": false,
+        "body_snip": [
+          "Private"
+        ]
+      }
+    },
+    {
+      "id": "06",
+      "title": "The Point of No Return Explained",
+      "ok": true,
+      "schedule_iso": "2026-08-11T12:30:00+01:00",
+      "save_coords": {
+        "x": 1144.85546875,
+        "y": 918,
+        "score": 900062.2890625
+      },
+      "video_id": "5nMieBeymKU",
+      "url": "https://youtu.be/5nMieBeymKU",
+      "schedule": {
+        "id": "5nMieBeymKU",
+        "ok": false,
+        "tag": "s06",
+        "target": "11 Aug 2026 12:30",
+        "opened": true,
+        "day_click": {
+          "ok": false
+        },
+        "date_typed": "11 August 2026",
+        "time": "12:30",
+        "confirm": "done",
+        "still_draft": false,
+        "chip_scheduled": false,
+        "body_snip": [
+          "Private"
+        ]
+      }
+    }
+  ],
+  "ok": true,
+  "shorts_scheduled": 0
+}

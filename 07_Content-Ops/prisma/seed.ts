@@ -1,0 +1,320 @@
+import { PrismaClient } from "@prisma/client";
+import fs from "fs";
+import path from "path";
+import { ALL_PLATFORM_IDS, CHANNEL_NAME, PLATFORMS } from "../src/config/platforms";
+import { CONTENT_RULES } from "../src/config/content-rules";
+import { scoreClipQuality } from "../src/lib/content/quality-score";
+import { generatePlatformCopy } from "../src/lib/platforms/generate-platform-copy";
+import { scheduleClipAcrossPlatforms, londonDateTime } from "../src/lib/publishing/schedule";
+
+const prisma = new PrismaClient();
+
+const SCRIPT_CANDIDATES = [
+  path.resolve(
+    __dirname,
+    "../../02_Video-Projects/001_Will-We-Ever-Meet-Aliens/01_Script/aliens_script_master_v01.md",
+  ),
+  path.resolve(
+    __dirname,
+    "../../02_Video-Projects/001_Will-We-Ever-Meet-Aliens/01_Script/aliens_script_v01.md",
+  ),
+];
+
+function loadScript(): string {
+  for (const p of SCRIPT_CANDIDATES) {
+    if (fs.existsSync(p)) return fs.readFileSync(p, "utf8");
+  }
+  return `Will We Ever Meet Aliens?\n\nWhere is everybody?\nThe Great Filter may explain the silence.\nSignals travel slowly across light-years.\nFirst contact may arrive as data, not a landing.`;
+}
+
+async function main() {
+  await prisma.performanceMetric.deleteMany();
+  await prisma.platformPost.deleteMany();
+  await prisma.shortClip.deleteMany();
+  await prisma.longFormVideo.deleteMany();
+  await prisma.contentInsight.deleteMany();
+  await prisma.platformSettings.deleteMany();
+  await prisma.contentTemplate.deleteMany();
+  await prisma.analyticsImport.deleteMany();
+
+  const script = loadScript();
+  const youtubeUrl = "https://youtu.be/Mo93x0fxB1Q";
+
+  const video = await prisma.longFormVideo.create({
+    data: {
+      title: "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
+      workingTitle: "Will We Ever Meet Aliens?",
+      slug: "2026-08-will-we-ever-meet-aliens",
+      topic: "Alien Civilisations",
+      category: "Space Documentary",
+      status: "published",
+      script,
+      summary:
+        "A calm look at the Fermi Paradox, cosmic distances, the Great Filter, and what first contact might actually look like.",
+      youtubeUrl,
+      youtubeVideoId: "Mo93x0fxB1Q",
+      finalVideoPath:
+        "02_Video-Projects/001_Will-We-Ever-Meet-Aliens/09_Final-Export",
+      projectFolder: "02_Video-Projects/001_Will-We-Ever-Meet-Aliens",
+      durationSeconds: 540,
+      publicationDate: londonDateTime("2026-08-07", "19:00"),
+      primaryKeyword: "fermi paradox explained",
+      secondaryKeywords: JSON.stringify([
+        "are we alone",
+        "great filter",
+        "alien contact",
+      ]),
+      targetAudience: "Curious learners who enjoy calm science storytelling",
+    },
+  });
+
+  const clipSeeds = [
+    {
+      clipNumber: 1,
+      workingTitle: "The Great Filter",
+      hook: "The universe may be hiding something from us.",
+      hookCategory: "mystery",
+      transcript:
+        "Some thinkers call this kind of barrier a Great Filter — a stage so difficult that almost no civilisation crosses it. We do not know if that filter is behind us… or still ahead.",
+      sourceStartTime: "03:20",
+      sourceEndTime: "04:00",
+      targetDurationSeconds: 40,
+      visualDirection: "Cosmic timeline + Orbit thoughtful PiP",
+      onScreenText: "The Great Filter?",
+      endingLine: "We do not know if that filter is behind us — or still ahead.",
+      status: "approved",
+    },
+    {
+      clipNumber: 2,
+      workingTitle: "Why the Universe Seems Silent",
+      hook: "If the universe should be full of life… why is it so quiet?",
+      hookCategory: "direct_question",
+      transcript:
+        "If alien civilisations are common… where are they? No radio greetings. No obvious megastructures. Just silence — or at least, silence as far as we can tell.",
+      sourceStartTime: "01:40",
+      sourceEndTime: "02:25",
+      targetDurationSeconds: 45,
+      visualDirection: "Quiet starfield, telescope arrays, Orbit reaction",
+      onScreenText: "Where is everybody?",
+      endingLine: "That silence has inspired dozens of explanations — most incomplete.",
+      status: "editing",
+    },
+    {
+      clipNumber: 3,
+      workingTitle: "How Far an Alien Signal Could Travel",
+      hook: "This is why we may never reach another star.",
+      hookCategory: "scale_comparison",
+      transcript:
+        "Our nearest star system, Alpha Centauri, is about four light-years away. Light itself takes four years to cross that gap. Our fastest spacecraft would need tens of thousands of years.",
+      sourceStartTime: "00:50",
+      sourceEndTime: "01:35",
+      targetDurationSeconds: 38,
+      visualDirection: "Distance scale Earth to Alpha Centauri",
+      onScreenText: "4 light-years",
+      endingLine: "And that is the close one.",
+      status: "exported",
+    },
+    {
+      clipNumber: 4,
+      workingTitle: "What First Contact Might Actually Look Like",
+      hook: "First contact may not look how you imagine.",
+      hookCategory: "scientific_reveal",
+      transcript:
+        "Meeting may not mean a handshake. It might mean a radio whisper, a chemical imbalance in an atmosphere, or a pattern we finally learn how to read.",
+      sourceStartTime: "06:10",
+      sourceEndTime: "06:55",
+      targetDurationSeconds: 42,
+      visualDirection: "Biosignature spectrum + archive motif",
+      onScreenText: "Not a landing",
+      endingLine: "The first hello may already be waiting in the data.",
+      status: "proposed",
+    },
+  ];
+
+  const shortSlots = [
+    londonDateTime("2026-08-07", "21:00"),
+    londonDateTime("2026-08-08", "12:30"),
+    londonDateTime("2026-08-09", "12:30"),
+    londonDateTime("2026-08-10", "12:30"),
+  ];
+
+  for (const [i, seed] of clipSeeds.entries()) {
+    const quality = scoreClipQuality({
+      ...seed,
+      callToAction: CONTENT_RULES.softCtas[0],
+      whyItWorks: seed.workingTitle,
+    });
+    const clip = await prisma.shortClip.create({
+      data: {
+        longFormVideoId: video.id,
+        clipNumber: seed.clipNumber,
+        workingTitle: seed.workingTitle,
+        hook: seed.hook,
+        hookCategory: seed.hookCategory,
+        transcript: seed.transcript,
+        sourceStartTime: seed.sourceStartTime,
+        sourceEndTime: seed.sourceEndTime,
+        targetDurationSeconds: seed.targetDurationSeconds,
+        visualDirection: seed.visualDirection,
+        onScreenText: seed.onScreenText,
+        endingLine: seed.endingLine,
+        callToAction: CONTENT_RULES.softCtas[0],
+        status: seed.status,
+        qualityScore: quality.total,
+        qualityBreakdown: JSON.stringify(quality),
+        sortOrder: seed.clipNumber,
+      },
+    });
+
+    const copies = generatePlatformCopy({
+      shortTitle: seed.workingTitle,
+      hook: seed.hook,
+      topic: video.topic,
+      transcript: seed.transcript,
+      youtubeUrl,
+      longTitle: video.title,
+      callToAction: CONTENT_RULES.softCtas[0],
+    });
+
+    const schedule = scheduleClipAcrossPlatforms({
+      youtubeShortAt: shortSlots[i],
+      includeTextPlatforms: seed.clipNumber <= 3,
+    });
+
+    for (const copy of copies) {
+      if (copy.platform === "x" && seed.clipNumber > 3) continue;
+      if (copy.platform === "threads" && seed.clipNumber > 2) continue;
+
+      const slot = schedule.find((s) => s.platform === copy.platform);
+      await prisma.platformPost.create({
+        data: {
+          shortClipId: clip.id,
+          platform: copy.platform,
+          title: copy.title,
+          caption: copy.caption,
+          hashtags: JSON.stringify(copy.hashtags),
+          callToAction: copy.callToAction,
+          scheduledAt: slot?.scheduledAt,
+          uploadStatus:
+            seed.status === "exported" && copy.platform === "youtube_shorts"
+              ? "ready"
+              : seed.status === "proposed"
+                ? "draft"
+                : "ready",
+          publishingMethod: "manual",
+          pinnedComment: copy.pinnedComment,
+          coverText: copy.coverText,
+          storyCaption: copy.storyCaption,
+          commentPrompt: copy.commentPrompt,
+          notes: "Placeholder — not published. Record URL after manual upload.",
+          platformUrl: null,
+          platformPostId: null,
+        },
+      });
+    }
+  }
+
+  for (const id of ALL_PLATFORM_IDS) {
+    await prisma.platformSettings.create({
+      data: {
+        platform: id,
+        enabled: true,
+        accountDisplayName: CHANNEL_NAME,
+        profileUrl:
+          id === "youtube_shorts"
+            ? "https://www.youtube.com/@OrbitWithBen"
+            : null,
+        defaultHashtags: JSON.stringify(["OrbitWithBen", "Space", "Astronomy"]),
+        defaultCallToAction: CONTENT_RULES.softCtas[0],
+        publishingMethod: "manual",
+        connectionStatus: PLATFORMS[id].connectionStatus,
+        tokenStatus: "not_configured",
+        defaultVisibility: "public",
+        analyticsImportNotes: `Use sample CSV templates in content/samples/csv for ${id}`,
+      },
+    });
+  }
+
+  const templates: { key: string; name: string; platform?: string; body: string }[] = [
+    {
+      key: "youtube_shorts_title",
+      name: "YouTube Shorts title",
+      platform: "youtube_shorts",
+      body: "{{hook}}",
+    },
+    {
+      key: "tiktok_caption",
+      name: "TikTok caption",
+      platform: "tiktok",
+      body: "{{hook}}\n\n{{call_to_action}}\n\n#OrbitWithBen #Space",
+    },
+    {
+      key: "instagram_reel_caption",
+      name: "Instagram Reel caption",
+      platform: "instagram_reels",
+      body: "{{hook}}\n\n{{call_to_action}}\n\nSave this if you love big questions.",
+    },
+    {
+      key: "facebook_reel_caption",
+      name: "Facebook Reel caption",
+      platform: "facebook_reels",
+      body: "{{hook}}\n\nWhat do you think?\n\n{{youtube_url}}",
+    },
+    {
+      key: "x_post",
+      name: "X post",
+      platform: "x",
+      body: "{{hook}} {{youtube_url}}",
+    },
+    {
+      key: "threads_post",
+      name: "Threads post",
+      platform: "threads",
+      body: "{{hook}}\n\nFull documentary on YouTube — {{channel_name}}.",
+    },
+    {
+      key: "youtube_pinned_comment",
+      name: "Pinned YouTube comment",
+      platform: "youtube_shorts",
+      body: "Full documentary: {{youtube_url}}",
+    },
+    {
+      key: "instagram_story",
+      name: "Instagram Story text",
+      platform: "instagram_reels",
+      body: "{{hook}} — full film on YouTube.",
+    },
+    {
+      key: "upload_checklist",
+      name: "Upload checklist",
+      body: "Upload clean vertical MP4 for {{short_title}} ({{topic}}). Never reuse watermarked downloads.",
+    },
+  ];
+
+  for (const t of templates) {
+    await prisma.contentTemplate.create({ data: t });
+  }
+
+  await prisma.contentInsight.create({
+    data: {
+      type: "system",
+      finding:
+        "More performance data is needed before this recommendation is reliable.",
+      evidence: "Seed database has no imported metrics yet.",
+      confidence: 0,
+      recommendedAction: "Import CSV analytics after the first Shorts week.",
+      sampleSize: 0,
+    },
+  });
+
+  console.log("Seeded Orbit content ops with Will We Ever Meet Aliens? + 4 clips");
+}
+
+main()
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

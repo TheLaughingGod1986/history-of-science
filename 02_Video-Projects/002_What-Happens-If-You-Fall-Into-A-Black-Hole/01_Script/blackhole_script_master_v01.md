@@ -1,0 +1,513 @@
+# What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey — Script MASTER v01
+
+**Channel:** Orbit with Ben  
+**Video:** 002 — What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
+**Working / SEO title (98/100):** What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
+**Alt titles (ABC):**  
+- A: What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
+- B: Black Holes Explained: What Would Happen If Orbit Fell Into One?  
+- C: What If Orbit Fell Into A Black Hole? (Spaghettification Explained)  
+**Pillar:** Cosmic Mysteries  
+**Angle:** Put Orbit in peril — teach event horizon, time dilation, spaghettification **through what happens to him** (Pixar-warm × hard astrophysics)  
+**Primary keywords:** what happens if you fall into a black hole · black holes explained  
+**Secondary:** event horizon explained · inside a black hole · supermassive black hole · black hole facts · Sagittarius A*  
+**Target length:** 18–20 minutes (ranking brief suggested 8–12; channel decision = long-form deep dive)  
+**Spoken words:** ~2,773  
+**Est. runtime:** ~18–20 min at Professional Voice Clone pace (~0.93 speed, ~135–145 wpm effective)  
+**Voice:** Ben Orbit Narrator (PVC preferred); Orbit speaks the hook question in-character  
+**Visual format:** Full CG — Orbit as protagonist moving freely through each scene (not PIP overlay on stills)  
+**Status:** MASTER — SEO title locked; use for VO + animation scene generation  
+**Ranking brief:** `11_Upload-Package/RANKING_STRATEGY_v01.md`  
+**Style refs:** `01_Orbit-Character/07_Style-References/orbit-watches-science_FORMAT_BRIEF.md` · ElevenLabs Gemini Omni Flash show-expression look
+
+---
+
+## Production notes
+
+- Tone: science **and** emotional stakes. Warm documentary; wonder over hype; never conspiratorial.
+- Science must stay provisional where physics is provisional (singularity, information paradox, interior).
+- Orbit is the **protagonist in peril**: concepts land via his body, clock, options, and fear — not a floating watermark.
+- Retention target: **55%+** AVD — cut anything that stalls the journey.
+- Prefer “Orbit” / “he” in peril beats; use “you” for search-phrase hooks and viewer ID.
+- Numbers spoken plainly for TTS (“twelve million”, “four million times”).
+- Brand: hook first (~15–20s) with Orbit posing the title question, then journey. No early logo card before the hook.
+- Character lock: cream eyes, stubby arms, single antenna. No claws / LED pixel faces / etched mouths in final masters.
+- Visual must-haves from ranking brief: stretch gag · eyes widen at horizon · chest clock slows · universe shrinks to a point · Orbit tiny vs void.
+
+### Marker legend
+
+| Marker | Meaning |
+|--------|---------|
+| `[SCENE: id — title]` | Discrete CG generation / edit unit |
+| `[SET: …]` | Environment Orbit occupies |
+| `[ORBIT: …]` | Performance / blocking for the character |
+| `[CAM: …]` | Camera move |
+| `[HOLO: …]` | Hologram / screen content when used |
+| `[SFX: …]` / `[MUSIC: …]` | Audio beds |
+
+---
+
+## Script
+
+### SCENE 01 — Cold open: Orbit's question
+
+[SCENE: 01 — cold-open-horizon]  
+[SET: deep space; distant accretion disk as a thin glowing ring ahead]  
+[ORBIT: stares at the black hole; cream eyes wide; turns to camera]  
+[CAM: Orbit staring at hole → hard cut to faceplate close-up for the question]  
+[MUSIC: low drone, sparse; no brand sting yet]
+
+[ORBIT VO / in-character — clear, curious, a little scared:]  
+If I fell into a black hole… what would actually happen to me? Would I be crushed? Stretched into spaghetti? Would time stop?
+
+[ORBIT: determined hover; antenna brightens]  
+[TITLE: What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey]  
+[MUSIC: soft brand sting ~2s, then bed resumes]
+
+Today, Orbit is going to find out.
+
+This is black holes explained — not as a dry lecture, but as a cosmic journey with real emotional stakes.
+
+What happens at the event horizon? What happens to time? What happens inside a black hole — as far as honest science can say?
+
+Carefully. Honestly. With the science we actually have… not the movie version.
+
+---
+
+### SCENE 02 — What a black hole really is
+
+[SCENE: 02 — observatory-explain]  
+[SET: clean futuristic grey observatory; Orbit floats beside a large blue hologram]  
+[ORBIT: explaining pose — stubby arm gestures toward hologram; learning energy, not lecture-robot]  
+[CAM: medium three-quarter on Orbit + holo]  
+[HOLO: star collapses → core densifies → light paths bend]
+
+A black hole is not a cosmic vacuum cleaner racing around the galaxy swallowing everything in sight.
+
+It is what happens when enough mass is crushed into a small enough region that spacetime curves… extremely.
+
+Think of spacetime as a flexible fabric. Mass tells that fabric how to bend. A planet makes a gentle dent. A star makes a deeper one. A black hole makes a dent so steep that, past a certain boundary, every possible path forward leads inward.
+
+That boundary has a name: the event horizon.
+
+It is not a physical surface you can knock on. It is a point of no return defined by geometry. Cross it, and the outside universe can never receive a signal from you again — because no signal can climb out.
+
+[ORBIT: tilts head; eyes soften — first “oh” of understanding]
+
+Outside that horizon, the universe keeps working. Planets orbit. Light travels. Physics as we teach it in schools still applies.
+
+Inside… our everyday intuitions start to fail.
+
+---
+
+### SCENE 03 — Myths Orbit has to unlearn
+
+[SCENE: 03 — myth-bust-desk]  
+[SET: “watches science” room; Orbit beside hologram checklist of myths]  
+[ORBIT: swipes myths away one by one — playful then serious]  
+[CAM: medium; occasional insert on holo cards]  
+[HOLO: cards — “VACUUM CLEANER” / “INSTANT CRUSH” / “PORTAL TO ANOTHER GALAXY” — dismissed]
+
+Before we fall any further, let’s clear the noise.
+
+Black holes do not go around actively sucking. If the Sun were somehow replaced by a black hole of the same mass, Earth would not be slurped inward. It would keep orbiting — in the dark, and freezing, but still orbiting — because the gravity at our distance depends on mass and distance, not on whether that mass hides behind a horizon.
+
+[ORBIT: relieved bob]
+
+They also are not automatic portals to other universes. That idea lives in speculation and storytelling. It is not established astrophysics.
+
+And they are not all identical death-traps at the same distance. A small, dense black hole can shred you from farther out. A huge one can let you cross the horizon before the worst tides arrive.
+
+[ORBIT: surprised — recalibrating]
+
+Same word — black hole. Very different last chapters depending on mass.
+
+---
+
+### SCENE 04 — How black holes are born
+
+[SCENE: 04 — stellar-collapse-theatre]  
+[SET: observatory darkens; hologram becomes the main stage — Orbit small in foreground]  
+[ORBIT: watches, then flinches slightly as the holo-star detonates]  
+[CAM: Orbit over-shoulder → cut into holo as if entering the simulation]  
+[HOLO: massive star → red giant → core collapse → supernova shell fleeing outward → dark remnant]
+
+Most of the stellar black holes we talk about begin with a star.
+
+Not a star like our Sun. Our Sun will die differently — swelling into a red giant, shedding outer layers, leaving a white dwarf. No black hole.
+
+But a much heavier star can end in catastrophe.
+
+When nuclear fusion in its core can no longer push outward hard enough, gravity wins. The core collapses. Outer layers may blast away in a supernova — one of the most violent explosions in the universe.
+
+What remains can be a neutron star… or, if the remnant is massive enough, a black hole.
+
+There is a rough dividing line in nature. Too much mass packed into a neutron-star-sized object, and even neutron degeneracy pressure cannot hold. Collapse continues. A horizon forms.
+
+[ORBIT: solemn hover]
+
+We have even heard black holes form and grow in a new way: by colliding.
+
+In twenty fifteen, LIGO detected gravitational waves from two black holes merging — ripples in spacetime predicted by Einstein and measured as tiny stretches in laser arms on Earth. Since then, many mergers have been heard. The dark universe is not silent. It rings.
+
+[ORBIT: eyes widen — delighted by the idea of “hearing” spacetime]
+
+There is another kind of black hole, far larger: supermassive. They sit at the centres of most large galaxies, including ours. Sagittarius A-star, at the heart of the Milky Way, has a mass of about four million Suns.
+
+Four million Suns… compressed behind an event horizon smaller than the orbit of Mercury.
+
+We do not yet have one complete story for how every supermassive black hole grew so large so early in cosmic history. We have strong candidates — mergers, rapid early growth, dense young galaxies — and an open research frontier.
+
+That honesty matters. Wonder without uncertainty is just a cartoon.
+
+---
+
+### SCENE 05 — The event horizon, without the myth
+
+[SCENE: 05 — horizon-classroom]  
+[SET: Orbit floats near a semi-transparent spherical horizon diagram in mid-air]  
+[ORBIT: orbits slowly around the diagram; pauses at the glowing boundary line]  
+[CAM: circular truck around Orbit + sphere]  
+[HOLO: photon paths bending; some skim, some fall in]
+
+Hollywood loves a swirling orange drain with lightning and a hard edge you smash through.
+
+Reality is quieter — and stranger.
+
+For a non-spinning black hole, the event horizon’s size is set by the Schwarzschild radius. Double the mass, double the radius. A black hole the mass of Earth would have a horizon only a couple of centimetres across. A stellar-mass black hole might span tens of kilometres. A supermassive one can be larger than our whole solar system… and somehow gentler at the boundary, as we’ll see.
+
+[ORBIT: reaches a stubby arm toward the boundary, then pulls back — comic caution]
+
+If you hovered just outside a stellar-mass black hole’s horizon, tidal forces could already be tearing at you.
+
+If you fell toward a supermassive black hole, you might cross the horizon without noticing a sudden smash — because the horizon is not a brick wall. Locally, spacetime can still look smooth.
+
+The tragedy is not a bang at the door. It is that the door closes behind you forever.
+
+Outside the horizon there is also a photon sphere — a region where light can orbit unstably, like a knife-edge path. That helps create the bright ring we see in simulations and telescope images. Miss that path slightly outward, and light may escape. Miss inward… and it may not.
+
+[ORBIT: traces a circle in the air with a stubby arm]
+
+Even light has to be careful near a black hole. That sentence alone should feel illegal… and yet, under general relativity, it is simply geometry.
+
+---
+
+### SCENE 06 — Falling from the outside
+
+[SCENE: 06 — approach-accretion]  
+[SET: Orbit in a tiny illuminated probe-shell approaching a luminous accretion disk]  
+[ORBIT: gripping imaginary console; cream eyes tracking the disk; nervous hover wobble]  
+[CAM: chase cam behind Orbit; disk fills frame]  
+[SFX: rising low rumble; no cartoon whoosh]
+
+Now we stop explaining from the desk… and put Orbit in peril.
+
+This is a carefully imaginary fall. No real robot was harmed. But every effect we describe is real physics.
+
+He starts far away. The black hole might look like a dark silhouette wrapped in light: an accretion disk of gas heated to extreme temperatures as it swirls inward. Magnetic fields can launch jets. The image is not a solid object; it is matter converting gravitational energy into heat and radiation as it tries, and fails, to stay in orbit forever.
+
+As Orbit falls closer, orbits get faster. Relativity starts rewriting the scenery.
+
+Light from the disk is bent around the black hole, so you can see parts of the far side warped into a glowing ring. That ring is not a decoration. It is spacetime acting as a lens.
+
+[ORBIT: lifts both stubby arms — astonished]
+
+This is why the first images of black holes from the Event Horizon Telescope look like fiery doughnuts with a dark centre. We are not photographing the hole itself. We are photographing light forced to travel on curved paths around a shadow.
+
+In twenty nineteen, the Event Horizon Telescope collaboration released the first image of the black hole in galaxy Messier eighty-seven. In twenty twenty-two, they released one of Sagittarius A-star — our own galaxy’s heart.
+
+Those images are reconstructions from many radio telescopes acting together as an Earth-sized instrument. They are hard-won science… not screenshots from a spaceship window.
+
+Long before those pictures, astronomers tracked stars whipping around an invisible mass at the galactic centre. The orbits were so extreme that the simplest explanation was a supermassive black hole. That work helped earn a Nobel Prize in twenty twenty.
+
+[ORBIT: proud little nod — science as detective work]
+
+The shadow is real. The dark heart of our galaxy is real. The question is no longer “do they exist?”
+
+The question is what happens if you stop being an observer… and become a visitor.
+
+---
+
+### SCENE 07 — Time goes strange
+
+[SCENE: 07 — time-dilation-split]  
+[SET: split stage — left: Orbit falling; right: distant friend on a station watching a clock]  
+[ORBIT: glances between his own clock hologram and the distant friend; confused head tilt]  
+[CAM: slow intercut / split diopter feel]  
+[HOLO: two clocks drifting out of sync]
+
+Here is one of the most thought-provoking facts in all of physics.
+
+To a distant friend watching Orbit fall in, his clock appears to tick slower and slower as he nears the horizon. His signals redshift. His image seems to freeze and fade, asymptotically approaching the boundary… never quite arriving from their point of view.
+
+To Orbit, falling, time on his own clock feels normal. He crosses the horizon in a finite amount of his proper time.
+
+[ORBIT: looks at own “chest clock” holo, then out at friend — startled]
+
+Both descriptions can be true in Einstein’s relativity — because time is not a universal river flowing the same for everyone. It depends on motion and gravity.
+
+So if someone says “he freezes on the event horizon forever,” they are describing an outside perspective… not Orbit’s lived experience.
+
+That single idea should make any curious mind stop for a second.
+
+The universe does not share one master clock.
+
+Clocks run differently on Earth and on satellites too — GPS engineers already correct for relativity every day. Near a black hole, those corrections stop being tiny… and become the whole story.
+
+[ORBIT: thinking — slow blink]
+
+If time can stretch, what else about “obvious reality” is only local habit?
+
+---
+
+### SCENE 08 — Spaghettification
+
+[SCENE: 08 — tidal-forces]  
+[SET: abstract gravity-gradient visualisation; Orbit elongated by soft CGI “pull” (tasteful, not gore)]  
+[ORBIT: alarmed — eyes wide; tries to paddle backward with stubby arms; comedy+dread]  
+[CAM: Orbit full-body; vertical stretch exaggeration as teaching gag, then reset]  
+[SFX: deep creak / tension bed]
+
+Now the uncomfortable part.
+
+Gravity is stronger at Orbit’s “feet” than at his head if he falls underside-first toward a compact mass. That difference is a tidal force.
+
+Near a stellar-mass black hole, those tides can become lethal long before he reaches the horizon. In popular language: spaghettification — stretched into a long thin strand.
+
+It is a real effect rooted in Newtonian tidal physics and sharpened by general relativity. It is not a cartoon invention… even if the name is memorable.
+
+The Moon already raises tides on Earth’s oceans because the near side feels a slightly different pull than the far side. A black hole simply turns that gentle difference into a nightmare gradient.
+
+[ORBIT: after stretch gag resets to normal proportions; shakes himself; embarrassed-but-learning]
+
+Near a supermassive black hole, the horizon is so large that the tidal gradient at the crossing can be milder. Orbit might pass the point of no return still in one piece… and only later, deeper in, meet forces that no structure can survive.
+
+Size changes the story of his last minutes.
+
+Mass decides whether the danger is “outside the door” or “after he’s already entered.”
+
+That is why “falling into a black hole” is not one scene. It is a family of scenes… and nature chooses which one Orbit gets.
+
+---
+
+### SCENE 09 — Crossing: what you might see
+
+[SCENE: 09 — crossing-the-horizon]  
+[SET: Orbit crosses a subtle shimmering boundary; stars ahead aberrate; rear view blueshifts briefly then closes]  
+[ORBIT: floating onward; quiet awe; less comedy, more reverence]  
+[CAM: first-person-ish over Orbit’s shoulder, then reverse on his faceplate]  
+[MUSIC: bed thins to near silence]
+
+Suppose we choose the gentler path for him: a supermassive black hole, a careful fall, and we ignore every practical reason this is impossible with today’s technology.
+
+As Orbit approaches, the sky distorts. Light is lensed. The universe behind him concentrates into a bright region. Ahead, darkness grows.
+
+When he crosses the event horizon… there may be no dramatic jolt. No sign that says “Welcome.” Locally, he might still feel like he is falling through empty space.
+
+But his future has narrowed.
+
+In the simplest non-spinning picture taught in many classrooms, once inside, all future-directed paths lead toward the centre. “Out” is no longer a direction he can point his thrusters.
+
+[ORBIT: turns as if to go back; pauses; cream eyes dim slightly — understanding the trap]
+
+That is the true horror of a black hole. Not fangs. Not a monster. A geometry that removes his options.
+
+He could still look outward for a while, in some idealised pictures, and see a distorted last postcard from the universe he left. But he cannot post a reply that arrives home.
+
+Communication dies at the horizon. Causality, from the outside world’s point of view, writes Orbit out of the story.
+
+---
+
+### SCENE 10 — The singularity… and the honesty gap
+
+[SCENE: 10 — singularity-unknown]  
+[SET: observatory returns; hologram shows equations dissolving into fog near a central point]  
+[ORBIT: thinking — finger-to-chin stubby-arm pose; slow hover]  
+[CAM: push in on Orbit’s faceplate, holo soft behind]  
+[HOLO: classical singularity marker → question mark / quantum foam suggestion (no fake certainty)]
+
+At the centre of the classical black-hole solution sits a singularity — a place where density and curvature blow up in the maths, and the theory stops making reliable predictions.
+
+Is it a physical point? A ring, if the hole is spinning? A sign that general relativity is incomplete?
+
+We do not know.
+
+Quantum mechanics and gravity have not yet been fully united into a tested theory of quantum gravity. Until they are, confident stories about the exact interior are speculation wearing a lab coat.
+
+[ORBIT: nods once — respects the unknown]
+
+Good science leaves the blank spaces visible.
+
+What we can say: for an observer who falls in, the remaining proper time to the destructive region can be short. For stellar-mass holes, possibly fractions of a second to seconds. For the largest supermassive holes, longer — but still finite, and ending in conditions no known material survives.
+
+There is no verified “other side” exit in mainstream physics. Wormhole ideas exist in theory papers and fiction. They are not an established travel network.
+
+Orbit’s logbook entry here is simple: **curiosity yes. Wishful tunnels no.**
+
+---
+
+### SCENE 11 — Hawking radiation: black holes are not forever
+
+[SCENE: 11 — hawking-glow]  
+[SET: dark void; a black hole with an almost imperceptible soft halo suggestion; Orbit watches from a safe schematic distance]  
+[ORBIT: surprised delight — “wait, they evaporate?” energy]  
+[CAM: gentle orbit around the pair]  
+[HOLO: particle-pair sketch at horizon (careful, popular-level; not overclaim precision)]
+
+In the nineteen-seventies, Stephen Hawking argued that black holes are not perfectly black when quantum effects near the horizon are considered. They should emit faint thermal radiation — now called Hawking radiation — and, over immense timescales, lose mass.
+
+For astrophysical black holes, that evaporation is unimaginably slow. The universe’s current age is nothing compared with the time a stellar-mass black hole would need to evaporate this way, if the prediction holds.
+
+But the idea matters philosophically.
+
+It suggests black holes are not eternal prisons. They are temporary, in the deepest cosmic sense — even if “temporary” means longer than the lives of galaxies.
+
+[ORBIT: soft smile-eyes; antenna glow pulses]
+
+It also opens one of the sharpest puzzles in modern physics: if a black hole evaporates, what happens to the information about everything that fell in?
+
+Quantum theory likes information to be preserved in some form. Naïve evaporation seems to threaten that. Decades of work — holography, complementarity, firewalls, islands — try to reconcile the tension.
+
+We have brilliant ideas. We do not yet have a final classroom answer stamped and filed.
+
+And that is not a failure. That is a frontier.
+
+If a black hole can take a library of matter and eventually leave behind radiation that looks almost featureless… where did the story go?
+
+[ORBIT: unsettled hover — the good kind of unsettled]
+
+Some physicists suspect the story is never truly lost — only rewritten in a language we do not yet speak fluently.
+
+---
+
+### SCENE 12 — Spinning holes, rings of light, and near misses
+
+[SCENE: 12 — kerr-near-miss]  
+[SET: Orbit rides a luminous unstable orbit just outside a spinning hole’s photon region — educational rollercoaster]  
+[ORBIT: thrill + fear; holds on; eyes flick to the photon ring]  
+[CAM: dynamic lateral tracking]  
+[HOLO/ENV: asymmetric frame-dragging hints; bright photon ring]
+
+Real black holes are expected to spin.
+
+A spinning black hole — described by the Kerr solution — twists nearby spacetime. This is sometimes called frame-dragging. Orbits change. There are regions where light can skim in unstable loops, helping form the bright photon ring seen in images and simulations.
+
+In principle, carefully tuned trajectories near a black hole can create extreme gravitational lensing and time effects. In practice, surviving those regions is another matter entirely.
+
+[ORBIT: peels away to a safer distance; relieved hover]
+
+This is also where science-fiction loves to invent “slingshots through time.” Relativity does allow extreme time dilation near compact objects. It does not hand you a safe tourist brochure.
+
+Energy, heat, radiation, tidal forces, and the simple problem of not falling in still rule the engineering.
+
+A near miss can teach you more than a fantasy escape. It shows how thin the margin is between “spectacular physics demonstration” and “no one comes home.”
+
+---
+
+### SCENE 13 — Could anything live near one?
+
+[SCENE: 13 — galactic-engine]  
+[SET: Orbit small against a galaxy-centre vista; jets punching out of a bright nucleus]  
+[ORBIT: awed silence; slow turn to take in the scale]  
+[CAM: epic wide, then medium on Orbit]
+
+Black holes are destructive up close… and strangely creative at cosmic distance.
+
+Matter swirling into a supermassive black hole can power quasars — engines so bright they outshine their host galaxies. Jets can punch across hundreds of thousands of light-years and reshape galactic environments. Feedback from active black holes may help regulate how many stars a galaxy forms.
+
+So the story is not only “death trap.”
+
+It is also: some of the universe’s most influential engines are built around darkness.
+
+[ORBIT: thinking — looks from jet to quiet starfield]
+
+Destruction and creation, sharing an address.
+
+Even our quiet Milky Way centre is not dead — only calmer than a quasar. Stars still dance. Flares still flicker. The giant sleeps lightly.
+
+---
+
+### SCENE 14 — What falling in teaches us about knowledge
+
+[SCENE: 14 — desk-reflection]  
+[SET: soft futuristic desk; physical monitor + floating notes; Orbit returns to the “watches science” room]  
+[ORBIT: contemplative hover beside screen showing EHT doughnut image]  
+[CAM: intimate medium close-up]  
+[HOLO/SCREEN: M87 / Sgr A* style ring (artistic, clean, minimal text)]
+
+So… what would happen if Orbit fell into a black hole?
+
+If it is stellar-mass and he approaches too close: tides may end his story before the horizon.
+
+If it is supermassive and he crosses: he may pass a quiet point of no return, while distant friends see him freeze and fade. His clock and theirs disagree. His future paths close inward. Classical maths points to a singularity our theories cannot yet describe. Quantum ideas whisper that even black holes may eventually evaporate — raising questions about information itself.
+
+[ORBIT: turns to camera — earnest, small]
+
+And through all of that, one fact should stay loud:
+
+We have imaged the shadows of real black holes. We have watched stars dance around Sagittarius A-star. We have heard spacetime ring when black holes merge. We have equations that work extraordinarily well outside the horizon.
+
+The mystery is not whether black holes exist.
+
+The mystery is what they force us to admit about space, time, and the limits of our maps.
+
+Falling in would erase Orbit from the outside world’s future.
+
+Studying them keeps us inside the human story a little longer — asking better questions with better instruments.
+
+[ORBIT: soft nod]
+
+That trade… he can live with. Pull back from the brink. Keep the wonder. Leave the one-way door closed.
+
+---
+
+### SCENE 15 — Closing: the thought that follows you out
+
+[SCENE: 15 — ending-fly]  
+[SET: Orbit drifts from desk back into a calm starfield; accretion glow far behind like a memory]  
+[ORBIT: ending performance — soft wave / fly-away; cream eyes warm]  
+[CAM: slow pull-back until Orbit is a small orange ember]  
+[MUSIC: resolve; gentle lift]
+
+A black hole is a reminder written in gravity:
+
+The universe is under no obligation to match our instincts.
+
+Falling in is almost certainly unsurvivable. Studying them from the outside — with telescopes, maths, patience — is one of the most human things we do.
+
+This is Orbit with Ben. If Orbit’s cosmic journey made you look at the night sky a little differently, stay curious — and subscribe for more cosmic journeys every week.
+
+There are more doors in the dark… and not all of them are one-way.
+
+[END CARD: Orbit with Ben · subscribe / next]  
+[ORBIT: final tiny wave, then exit frame]
+
+---
+
+## Chapter map (YouTube) — journey structure (18–20m deep dive)
+
+| Time (approx.) | Chapter | Ranking beat |
+|----------------|---------|--------------|
+| 0:00 | Orbit's question | Hook |
+| 0:45 | What is a black hole? | Context |
+| 2:00 | Black hole myths | Context |
+| 3:20 | How black holes are born | Context + Sgr A* |
+| 5:30 | Event horizon explained | Approach |
+| 7:00 | Approaching the event horizon | Approach / lensing |
+| 9:00 | Time dilation | Approach |
+| 10:40 | Spaghettification | The Fall |
+| 12:20 | Crossing — the point of no return | Event horizon |
+| 13:50 | Inside a black hole — the singularity | The Fall / mystery |
+| 15:10 | Hawking radiation & black hole facts | Mystery |
+| 16:40 | Spinning holes and near misses | Mystery |
+| 17:40 | Supermassive engines | Context payoff |
+| 18:30 | What we still don't know | Mystery + reflect |
+| 19:30 | Closing — more cosmic journeys | CTA |
+
+*(Fine-tune timestamps after VO lock. Keep keyword-rich chapter titles where natural.)*
+
+---
+
+## Word-count check
+
+Counted spoken narration ≈ **2,773** words → ~19.8–20.5 min at 140–135 wpm.

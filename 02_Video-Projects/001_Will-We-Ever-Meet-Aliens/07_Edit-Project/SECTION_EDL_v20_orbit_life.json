@@ -1,0 +1,1429 @@
+{
+  "rules": [
+    "retention_v18",
+    "mystery_first_hook",
+    "wonder_ending",
+    "ken_burns_broll",
+    "orbit_bottom_left_companion",
+    "chapter_cards_between_sections",
+    "hq_broll_only"
+  ],
+  "markers": [
+    {
+      "kind": "lead",
+      "start_s": 0.0,
+      "duration_s": 0.75,
+      "hook_s": 0.0,
+      "brand_s": 0.75,
+      "chapter_s": 0.0
+    },
+    {
+      "kind": "vo",
+      "section": "01_cold-open",
+      "start_s": 0.75,
+      "duration_s": 38.730884
+    },
+    {
+      "kind": "chapter_gap",
+      "section": "02_galaxy-scale",
+      "start_s": 39.480884,
+      "duration_s": 2.5
+    },
+    {
+      "kind": "vo",
+      "section": "02_galaxy-scale",
+      "start_s": 41.980884,
+      "duration_s": 44.117914
+    },
+    {
+      "kind": "chapter_gap",
+      "section": "03_exoplanets",
+      "start_s": 86.098798,
+      "duration_s": 2.5
+    },
+    {
+      "kind": "vo",
+      "section": "03_exoplanets",
+      "start_s": 88.598798,
+      "duration_s": 78.576327
+    },
+    {
+      "kind": "chapter_gap",
+      "section": "04_fermi-paradox",
+      "start_s": 167.175125,
+      "duration_s": 2.5
+    },
+    {
+      "kind": "vo",
+      "section": "04_fermi-paradox",
+      "start_s": 169.675125,
+      "duration_s": 38.684444
+    },
+    {
+      "kind": "chapter_gap",
+      "section": "05_great-filter",
+      "start_s": 208.35956900000002,
+      "duration_s": 2.5
+    },
+    {
+      "kind": "vo",
+      "section": "05_great-filter",
+      "start_s": 210.85956900000002,
+      "duration_s": 74.396735
+    },
+    {
+      "kind": "chapter_gap",
+      "section": "06_explanations",
+      "start_s": 285.256304,
+      "duration_s": 2.5
+    },
+    {
+      "kind": "vo",
+      "section": "06_explanations",
+      "start_s": 287.756304,
+      "duration_s": 97.848889
+    },
+    {
+      "kind": "chapter_gap",
+      "section": "07_detection",
+      "start_s": 385.605193,
+      "duration_s": 2.5
+    },
+    {
+      "kind": "vo",
+      "section": "07_detection",
+      "start_s": 388.105193,
+      "duration_s": 77.972608
+    },
+    {
+      "kind": "chapter_gap",
+      "section": "08_first-contact",
+      "start_s": 466.07780099999997,
+      "duration_s": 2.5
+    },
+    {
+      "kind": "vo",
+      "section": "08_first-contact",
+      "start_s": 468.57780099999997,
+      "duration_s": 86.98195
+    },
+    {
+      "kind": "chapter_gap",
+      "section": "09_conclusion",
+      "start_s": 555.559751,
+      "duration_s": 2.5
+    },
+    {
+      "kind": "vo",
+      "section": "09_conclusion",
+      "start_s": 558.059751,
+      "duration_s": 67.523628
+    },
+    {
+      "kind": "cta",
+      "section": "cta",
+      "start_s": 625.583379,
+      "duration_s": 9.891701
+    }
+  ],
+  "vo": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/02_Voiceover/05_Master/aliens_voiceover_master_storyteller_v04.wav",
+  "shots": [
+    {
+      "kind": "brand_intro",
+      "clip": "orbit_brand_intro_v01.mp4",
+      "section": "brand",
+      "start_s": 0.0,
+      "duration_s": 0.75,
+      "orbit": null
+    },
+    {
+      "kind": "card",
+      "clip": "card_hook_mystery_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 0.75,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-city_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 4.85,
+      "duration_s": 2.872,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_where_everybody_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 7.722,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-fleet_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 11.822,
+      "duration_s": 2.872,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_hook_crowded_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 14.693,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-megastructure_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 18.793,
+      "duration_s": 2.097,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_hook_promise_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 20.89,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-silence-void_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 24.99,
+      "duration_s": 3.646,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_real_question_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 28.636,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_vibrant-001_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 32.736,
+      "duration_s": 2.097,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_look_up_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 34.833,
+      "duration_s": 4.648,
+      "orbit": "curious"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_02_02_galaxy-scale_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 39.481,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "card",
+      "clip": "card_rudely_big_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 41.981,
+      "duration_s": 4.1,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_vibrant-002_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 46.081,
+      "duration_s": 5.606,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "card",
+      "clip": "card_alpha_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 51.687,
+      "duration_s": 4.1,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A1_exoplanet-city-lights_v01_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 55.787,
+      "duration_s": 3.841,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "card",
+      "clip": "card_lightyears_explain_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 59.628,
+      "duration_s": 4.1,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A1_exoplanet-city-lights_v02_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 63.728,
+      "duration_s": 5.606,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "card",
+      "clip": "card_milky_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 69.334,
+      "duration_s": 4.0,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A2_empty-nightside_v01_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 73.334,
+      "duration_s": 4.824,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "card",
+      "clip": "card_habitable_zone_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 78.158,
+      "duration_s": 4.1,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A3_megastructure_v01_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 82.258,
+      "duration_s": 3.841,
+      "orbit": "wonder"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_03_03_exoplanets_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 86.099,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A3_megastructure_v02_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 88.599,
+      "duration_s": 3.143,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_drake_blackboard_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 91.742,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A4_visiting-fleet_v01_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 95.842,
+      "duration_s": 4.2,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A4_visiting-fleet_v02_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 100.042,
+      "duration_s": 4.2,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A5_silence-void_v01_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 104.242,
+      "duration_s": 4.2,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-011_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 108.442,
+      "duration_s": 5.301,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_buzz_or_alone_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 113.743,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-013_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 117.843,
+      "duration_s": 4.2,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-017_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 122.043,
+      "duration_s": 4.2,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-020_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 126.243,
+      "duration_s": 3.215,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_brief_candles_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 129.458,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-024_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 133.558,
+      "duration_s": 4.2,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-025_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 137.758,
+      "duration_s": 4.2,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-030_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 141.958,
+      "duration_s": 3.215,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_candles_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 145.174,
+      "duration_s": 3.0,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-031_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 148.174,
+      "duration_s": 4.2,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-033_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 152.374,
+      "duration_s": 5.372,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_scale_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 157.746,
+      "duration_s": 4.0,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-035_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 161.746,
+      "duration_s": 5.429,
+      "orbit": "curious"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_04_04_fermi-paradox_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 167.175,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "card",
+      "clip": "card_fermi_lunch_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 169.675,
+      "duration_s": 4.1,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-037_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 173.775,
+      "duration_s": 4.411,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "card",
+      "clip": "card_no_city_lights_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 178.186,
+      "duration_s": 4.642,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-038_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 182.828,
+      "duration_s": 5.416,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "card",
+      "clip": "card_no_megastructures_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 188.244,
+      "duration_s": 3.868,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-041_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 192.112,
+      "duration_s": 4.642,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "card",
+      "clip": "card_no_fleets_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 196.754,
+      "duration_s": 3.868,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-042_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 200.623,
+      "duration_s": 3.868,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "card",
+      "clip": "card_silence_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 204.491,
+      "duration_s": 3.868,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_05_05_great-filter_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 208.36,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "card",
+      "clip": "card_chemistry_curiosity_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 210.86,
+      "duration_s": 4.1,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-043_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 214.96,
+      "duration_s": 4.2,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-046_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 219.16,
+      "duration_s": 5.042,
+      "orbit": "deep"
+    },
+    {
+      "kind": "card",
+      "clip": "card_rare_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 224.201,
+      "duration_s": 3.0,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-048_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 227.201,
+      "duration_s": 4.2,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-050_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 231.401,
+      "duration_s": 4.2,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-051_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 235.601,
+      "duration_s": 2.041,
+      "orbit": "deep"
+    },
+    {
+      "kind": "card",
+      "clip": "card_burn_bright_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 237.642,
+      "duration_s": 4.1,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-061_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 241.742,
+      "duration_s": 4.042,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-062_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 245.784,
+      "duration_s": 4.042,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-063_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 249.826,
+      "duration_s": 1.952,
+      "orbit": "deep"
+    },
+    {
+      "kind": "card",
+      "clip": "card_do_not_disturb_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 251.778,
+      "duration_s": 4.1,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-064_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 255.878,
+      "duration_s": 4.042,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-city_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 259.919,
+      "duration_s": 3.018,
+      "orbit": "deep"
+    },
+    {
+      "kind": "card",
+      "clip": "card_zoo_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 262.937,
+      "duration_s": 4.0,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-fleet_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 266.937,
+      "duration_s": 4.5,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-megastructure_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 271.437,
+      "duration_s": 2.66,
+      "orbit": "deep"
+    },
+    {
+      "kind": "card",
+      "clip": "card_party_early_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 274.097,
+      "duration_s": 4.1,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-silence-void_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 278.197,
+      "duration_s": 4.5,
+      "orbit": "deep"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_vibrant-001_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 282.697,
+      "duration_s": 2.56,
+      "orbit": "deep"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_06_06_explanations_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 285.256,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "card",
+      "clip": "card_thousand_years_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 287.756,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_vibrant-002_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 291.856,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A1_exoplanet-city-lights_v01_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 296.356,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A1_exoplanet-city-lights_v02_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 300.856,
+      "duration_s": 2.556,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_distance_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 303.412,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A2_empty-nightside_v01_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 307.512,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A3_megastructure_v01_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 312.012,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A3_megastructure_v02_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 316.512,
+      "duration_s": 2.556,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_not_handshake_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 319.068,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A4_visiting-fleet_v01_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 323.168,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A4_visiting-fleet_v02_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 327.668,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A5_silence-void_v01_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 332.168,
+      "duration_s": 2.556,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_spectrum_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 334.724,
+      "duration_s": 3.0,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-011_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 337.724,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-013_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 342.224,
+      "duration_s": 6.199,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_seti_listen_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 348.423,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-017_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 352.523,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-020_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 357.023,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-024_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 361.523,
+      "duration_s": 2.556,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_wow_1977_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 364.078,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-025_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 368.178,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-030_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 372.678,
+      "duration_s": 3.142,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_cosmic_blink_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 375.82,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-031_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 379.92,
+      "duration_s": 5.685,
+      "orbit": "curious"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_07_07_detection_v01.mp4",
+      "section": "07_detection",
+      "start_s": 385.605,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "card",
+      "clip": "card_exo_v01.mp4",
+      "section": "07_detection",
+      "start_s": 388.105,
+      "duration_s": 3.0,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-033_v01.mp4",
+      "section": "07_detection",
+      "start_s": 391.105,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-035_v01.mp4",
+      "section": "07_detection",
+      "start_s": 395.605,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-037_v01.mp4",
+      "section": "07_detection",
+      "start_s": 400.105,
+      "duration_s": 2.035,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_biosignature_v01.mp4",
+      "section": "07_detection",
+      "start_s": 402.14,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-038_v01.mp4",
+      "section": "07_detection",
+      "start_s": 406.24,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-041_v01.mp4",
+      "section": "07_detection",
+      "start_s": 410.74,
+      "duration_s": 3.876,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_bio_v01.mp4",
+      "section": "07_detection",
+      "start_s": 414.616,
+      "duration_s": 3.0,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-042_v01.mp4",
+      "section": "07_detection",
+      "start_s": 417.616,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-043_v01.mp4",
+      "section": "07_detection",
+      "start_s": 422.116,
+      "duration_s": 4.976,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_line_on_graph_v01.mp4",
+      "section": "07_detection",
+      "start_s": 427.091,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-046_v01.mp4",
+      "section": "07_detection",
+      "start_s": 431.191,
+      "duration_s": 5.257,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_graph_v01.mp4",
+      "section": "07_detection",
+      "start_s": 436.448,
+      "duration_s": 3.0,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-048_v01.mp4",
+      "section": "07_detection",
+      "start_s": 439.448,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-050_v01.mp4",
+      "section": "07_detection",
+      "start_s": 443.948,
+      "duration_s": 1.857,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_mars_v01.mp4",
+      "section": "07_detection",
+      "start_s": 445.805,
+      "duration_s": 3.0,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-051_v01.mp4",
+      "section": "07_detection",
+      "start_s": 448.805,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-061_v01.mp4",
+      "section": "07_detection",
+      "start_s": 453.305,
+      "duration_s": 1.857,
+      "orbit": "curious"
+    },
+    {
+      "kind": "card",
+      "clip": "card_ice_grain_v01.mp4",
+      "section": "07_detection",
+      "start_s": 455.162,
+      "duration_s": 4.1,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-062_v01.mp4",
+      "section": "07_detection",
+      "start_s": 459.262,
+      "duration_s": 4.5,
+      "orbit": "curious"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-063_v01.mp4",
+      "section": "07_detection",
+      "start_s": 463.762,
+      "duration_s": 2.316,
+      "orbit": "curious"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_08_08_first-contact_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 466.078,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "card",
+      "clip": "card_faceplate_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 468.578,
+      "duration_s": 4.1,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-064_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 472.678,
+      "duration_s": 4.5,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-city_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 477.178,
+      "duration_s": 4.5,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-fleet_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 481.678,
+      "duration_s": 2.557,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "card",
+      "clip": "card_odds_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 484.235,
+      "duration_s": 3.0,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-megastructure_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 487.235,
+      "duration_s": 4.5,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_mystery-silence-void_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 491.735,
+      "duration_s": 4.5,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_vibrant-001_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 496.235,
+      "duration_s": 5.396,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "card",
+      "clip": "card_this_century_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 501.631,
+      "duration_s": 4.1,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_vibrant-002_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 505.731,
+      "duration_s": 4.5,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A1_exoplanet-city-lights_v01_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 510.231,
+      "duration_s": 6.187,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "card",
+      "clip": "card_honest_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 516.418,
+      "duration_s": 4.0,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A1_exoplanet-city-lights_v02_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 520.418,
+      "duration_s": 4.5,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A2_empty-nightside_v01_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 524.918,
+      "duration_s": 6.287,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "card",
+      "clip": "card_silence_us_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 531.205,
+      "duration_s": 4.1,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A3_megastructure_v01_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 535.305,
+      "duration_s": 4.5,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A3_megastructure_v02_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 539.805,
+      "duration_s": 5.317,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "card",
+      "clip": "card_lesson_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 545.122,
+      "duration_s": 3.0,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A4_visiting-fleet_v01_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 548.122,
+      "duration_s": 4.5,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A4_visiting-fleet_v02_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 552.622,
+      "duration_s": 2.938,
+      "orbit": "surprise"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_09_09_conclusion_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 555.56,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "card",
+      "clip": "card_maybe_signal_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 558.06,
+      "duration_s": 4.1,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "mystery_A5_silence-void_v01_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 562.16,
+      "duration_s": 4.5,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-011_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 566.66,
+      "duration_s": 6.255,
+      "orbit": "warm"
+    },
+    {
+      "kind": "card",
+      "clip": "card_end_wonder_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 572.915,
+      "duration_s": 4.1,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-013_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 577.015,
+      "duration_s": 4.5,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-017_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 581.515,
+      "duration_s": 4.905,
+      "orbit": "warm"
+    },
+    {
+      "kind": "card",
+      "clip": "card_end_perspective_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 586.42,
+      "duration_s": 4.1,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-020_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 590.52,
+      "duration_s": 4.5,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-024_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 595.02,
+      "duration_s": 4.905,
+      "orbit": "warm"
+    },
+    {
+      "kind": "card",
+      "clip": "card_end_invitation_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 599.924,
+      "duration_s": 4.1,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-025_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 604.024,
+      "duration_s": 4.5,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-030_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 608.524,
+      "duration_s": 2.204,
+      "orbit": "warm"
+    },
+    {
+      "kind": "card",
+      "clip": "card_invitation_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 610.728,
+      "duration_s": 4.1,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-031_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 614.828,
+      "duration_s": 4.003,
+      "orbit": "warm"
+    },
+    {
+      "kind": "card",
+      "clip": "card_end_subscribe_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 618.831,
+      "duration_s": 4.1,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-033_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 622.931,
+      "duration_s": 3.147,
+      "orbit": "warm"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-035_v01.mp4",
+      "section": "cta",
+      "start_s": 626.078,
+      "duration_s": 4.946,
+      "orbit": "invite"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-037_v01.mp4",
+      "section": "cta",
+      "start_s": 631.024,
+      "duration_s": 4.451,
+      "orbit": "invite"
+    },
+    {
+      "kind": "brand_outro",
+      "clip": "orbit_brand_outro_subscribe_v01.mp4",
+      "section": "outro",
+      "start_s": 635.475,
+      "duration_s": 8.0,
+      "orbit": null
+    }
+  ],
+  "out": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/09_Final-Export/aliens_broadcast_v20_orbit_life.mp4"
+}

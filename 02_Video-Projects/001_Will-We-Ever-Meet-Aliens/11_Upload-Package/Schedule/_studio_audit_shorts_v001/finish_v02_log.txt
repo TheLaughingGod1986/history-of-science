@@ -1,0 +1,47 @@
+META 01 z-DLqoSoEBo…
+  → {'id': '01', 'video_id': 'z-DLqoSoEBo', 'ok': True, 'title': True, 'desc': True, 'tags': True, 'saved': True}
+META 02 UWwNKYf_aU8…
+  → {'id': '02', 'video_id': 'UWwNKYf_aU8', 'ok': True, 'title': True, 'desc': True, 'tags': True, 'saved': True}
+META 03 MO19iXYCu0c…
+  → {'id': '03', 'video_id': 'MO19iXYCu0c', 'ok': True, 'title': True, 'desc': True, 'tags': True, 'saved': True}
+META 04 --CxhjNqtSY…
+  → {'id': '04', 'video_id': '--CxhjNqtSY', 'ok': True, 'title': True, 'desc': True, 'tags': True, 'saved': True}
+SCHEDULE 01 → 2026-08-07T21:00:00+01:00…
+  → ok=True 
+Scheduled
+Related video
+None
+Subtitles
+Changes saved
+SCHEDULE 02 → 2026-08-08T12:30:00+01:00…
+  → ok=True 
+Scheduled
+Related video
+None
+Subtitles
+Changes saved
+SCHEDULE 03 → 2026-08-09T12:30:00+01:00…
+  → ok=True 
+Scheduled
+Related video
+None
+Subtitles
+Changes saved
+SCHEDULE 04 → 2026-08-10T12:30:00+01:00…
+  → ok=True 
+Scheduled
+Related video
+None
+Subtitles
+Changes saved
+RELATED 01 → Mo93x0fxB1Q…
+  → ok=False not_found
+RELATED 02 → Mo93x0fxB1Q…
+  → ok=False not_found
+RELATED 03 → Mo93x0fxB1Q…
+  → ok=False not_found
+RELATED 04 → Mo93x0fxB1Q…
+  → ok=False not_found
+PIN comment…
+  → {'ok': False, 'via': 'watch', 'error': 'Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role("textbox", name=re.compile(r"Add a comment|comment", re.IGNORECASE)).first\n'}
+RESULT /Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/11_Upload-Package/Schedule/aliens_shorts_finish_result_v02.json ok= False

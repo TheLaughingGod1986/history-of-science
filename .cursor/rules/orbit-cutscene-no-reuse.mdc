@@ -1,0 +1,19 @@
+---
+description: Orbit cutscenes — never reuse or loop scenery in one video
+alwaysApply: true
+---
+
+# Orbit YouTube — cutscene rules
+
+When editing or assembling any Orbit episode:
+
+1. **Never reuse a cutscene** in a single video. Each B-roll / card / fill plate filename appears at most once.
+2. **Never loop cutscenes.** Play once at native duration. Do not use `stream_loop`, ping-pong, or freeze-extend to stretch scenery — including Seedance / animated board beds.
+3. If VO/picture time is longer than the clip: play the animated bed **once**, then continue with that scene’s **unique still board** (smooth pan) for the remainder. Never restart the same motion clip.
+4. If picture time is short elsewhere, add **new unique** plates — never loop existing ones.
+5. **Exception:** Orbit character PiP may loop (character bed only).
+6. Prefer vibrant, distinct scenery (planets, surfaces, telescopes, atmospheres). Avoid empty distant-galaxy / static starfield plates.
+7. Include Orbit **brand intro** (~1s) and **like/subscribe outro** (arrows on LIKE / SUBSCRIBE) plus matching VO CTA.
+8. **Never animate text plates** with zoompan/Ken Burns. Title cards and brand stings must be locked stills — geometric filters make glyphs vibrate.
+
+Builders: `07_Edit-Project/_build_broadcast_noloop_v02.py`, `CUTSCENE_RULES.md`, Bold Explainer `_build_bold_explainer_v10_music_chapters.py`.

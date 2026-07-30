@@ -1,0 +1,25 @@
+CLIP: Thinking
+DURATION: 6 seconds
+ASPECT RATIO: 16:9 landscape
+REFERENCE IMAGE: reference.png (orbit-seedance-reference-v01.png)
+
+--- PROMPT (paste into Seedance) ---
+
+Use the uploaded Orbit character sheet as the only character reference.
+
+Orbit hovers quietly in deep space and looks upward toward a field of stars. His eyes move slowly from left to right as if considering a difficult question.
+
+He tilts his head slightly. A small, tasteful glowing question-mark hologram appears beside him briefly and fades away.
+
+Subtle floating motion, restrained expression and mostly static camera.
+
+Preserve Orbit exactly. No redesign, extra limbs, text, logos or watermark.
+
+--- MANDATORY CONSISTENCY BLOCK (append to every generation) ---
+
+Preserve Orbit exactly as shown in the uploaded reference image. Maintain the same rounded orange body, black faceplate, cream expressive eyes, single glowing antenna, side arms, proportions, materials and warm animated-film visual style. Do not redesign the character. Do not add limbs, fingers, facial features, clothing, text, logos or accessories.
+
+--- GENERATION SETTINGS ---
+- Use the uploaded reference image as the ONLY canonical character reference.
+- Prefer subtle, controlled movement over exaggerated animation.
+- Generate at least two versions when credits permit.

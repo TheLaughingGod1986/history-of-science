@@ -1,0 +1,186 @@
+import { prisma } from "@/lib/storage/prisma";
+import { CONTENT_RULES } from "@/config/content-rules";
+import { PUBLISHING_SCHEDULE } from "@/config/publishing-schedule";
+import Link from "next/link";
+import { startOfMonth, endOfMonth } from "date-fns";
+
+export const dynamic = "force-dynamic";
+
+async function getOverview() {
+  const now = new Date();
+  const monthStart = startOfMonth(now);
+  const monthEnd = endOfMonth(now);
+
+  const [
+    longInProduction,
+    longPublishedMonth,
+    shortsPlanned,
+    shortsAwaitingEdit,
+    shortsReady,
+    postsScheduled,
+    postsPublishedMonth,
+    metrics,
+    bestClip,
+    pendingApprovals,
+    missingAnalytics,
+  ] = await Promise.all([
+    prisma.longFormVideo.count({
+      where: { status: { in: ["idea", "scripting", "production", "editing", "ready"] } },
+    }),
+    prisma.longFormVideo.count({
+      where: {
+        status: "published",
+        publicationDate: { gte: monthStart, lte: monthEnd },
+      },
+    }),
+    prisma.shortClip.count({ where: { status: { in: ["proposed", "approved"] } } }),
+    prisma.shortClip.count({ where: { status: { in: ["approved", "editing"] } } }),
+    prisma.shortClip.count({ where: { status: { in: ["exported", "scheduled"] } } }),
+    prisma.platformPost.count({ where: { uploadStatus: "scheduled" } }),
+    prisma.platformPost.count({
+      where: {
+        uploadStatus: "published",
+        publishedAt: { gte: monthStart, lte: monthEnd },
+      },
+    }),
+    prisma.performanceMetric.aggregate({
+      _sum: { views: true, subscribersGained: true },
+    }),
+    prisma.shortClip.findFirst({
+      orderBy: { qualityScore: "desc" },
+      include: { longFormVideo: true },
+    }),
+    prisma.shortClip.count({ where: { status: "proposed" } }),
+    prisma.platformPost.count({
+      where: {
+        uploadStatus: "published",
+        metrics: { none: {} },
+      },
+    }),
+  ]);
+
+  const nextActions: string[] = [];
+  if (pendingApprovals > 0) nextActions.push(`Approve ${pendingApprovals} proposed clip${pendingApprovals === 1 ? "" : "s"}.`);
+  if (shortsAwaitingEdit > 0) nextActions.push(`Move ${shortsAwaitingEdit} clip(s) through editing / export.`);
+  if (postsScheduled === 0) nextActions.push("Schedule this week’s cross-platform posts.");
+  if (missingAnalytics > 0) nextActions.push(`Import analytics for ${missingAnalytics} published post(s).`);
+  if (!nextActions.length) nextActions.push("Pipeline looks clear — register the next long-form video.");
+
+  return {
+    longInProduction,
+    longPublishedMonth,
+    shortsPlanned,
+    shortsAwaitingEdit,
+    shortsReady,
+    postsScheduled,
+    postsPublishedMonth,
+    totalViews: metrics._sum.views ?? 0,
+    subsGained: metrics._sum.subscribersGained ?? 0,
+    bestClip,
+    nextActions,
+    cadence: PUBLISHING_SCHEDULE.cadenceMonthlyTargets,
+  };
+}
+
+function StatCard({ label, value, hint }: { label: string; value: string | number; hint?: string }) {
+  return (
+    <div className="card-panel p-5">
+      <div className="text-xs uppercase tracking-[0.18em] text-[#5A6E82]">{label}</div>
+      <div className="mt-3 font-[family-name:var(--font-orbit-display)] text-3xl text-[#F5E8D2]">
+        {value}
+      </div>
+      {hint ? <div className="mt-2 text-xs text-[#F5E8D2]/45">{hint}</div> : null}
+    </div>
+  );
+}
+
+export default async function HomePage() {
+  const data = await getOverview();
+
+  return (
+    <div className="space-y-8">
+      <section className="relative overflow-hidden rounded-3xl border border-white/5 bg-[#0d1018]/70 p-8 md:p-10">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,122,36,0.2),transparent_40%)]" />
+        <p className="text-xs uppercase tracking-[0.28em] text-[#FF7A24]">Orbit with Ben</p>
+        <h1 className="mt-3 max-w-2xl font-[family-name:var(--font-orbit-display)] text-4xl leading-tight text-[#F5E8D2] md:text-5xl">
+          Content operations studio
+        </h1>
+        <p className="mt-4 max-w-xl text-[#F5E8D2]/70">
+          One long-form pillar becomes a reusable short-form flywheel across YouTube,
+          TikTok, Instagram, Facebook, X and Threads — without rebuilding the production system.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link
+            href="/videos"
+            className="rounded-full bg-[#FF7A24] px-5 py-2.5 text-sm font-medium text-[#0A0C12]"
+          >
+            Open long-form library
+          </Link>
+          <Link
+            href="/pipeline"
+            className="rounded-full border border-white/10 px-5 py-2.5 text-sm text-[#F5E8D2]"
+          >
+            View pipeline
+          </Link>
+        </div>
+      </section>
+
+      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <StatCard label="Long in production" value={data.longInProduction} />
+        <StatCard label="Long published (month)" value={data.longPublishedMonth} hint={`Target ${data.cadence.longForm}/mo`} />
+        <StatCard label="Shorts planned" value={data.shortsPlanned} />
+        <StatCard label="Awaiting editing" value={data.shortsAwaitingEdit} />
+        <StatCard label="Ready to publish" value={data.shortsReady} />
+        <StatCard label="Posts scheduled" value={data.postsScheduled} />
+        <StatCard label="Posts published (month)" value={data.postsPublishedMonth} />
+        <StatCard label="Cross-platform views" value={data.totalViews} />
+        <StatCard label="YT subs gained (tracked)" value={data.subsGained} />
+        <StatCard
+          label="Best-scoring clip"
+          value={data.bestClip?.workingTitle ?? "—"}
+          hint={data.bestClip ? `Score ${data.bestClip.qualityScore}/100` : undefined}
+        />
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="card-panel p-6">
+          <h2 className="font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2]">
+            Pipeline
+          </h2>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {CONTENT_RULES.pipelineStages.map((stage, i) => (
+              <div key={stage} className="flex items-center gap-2">
+                <span className="pipeline-step rounded-full px-3 py-1.5 text-xs text-[#F5E8D2]/80">
+                  {stage}
+                </span>
+                {i < CONTENT_RULES.pipelineStages.length - 1 ? (
+                  <span className="text-[#FF7A24]/60">→</span>
+                ) : null}
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-sm text-[#F5E8D2]/55">
+            Canonical schedule preserved: long-form Thursday 19:00 UK · Short #1 at 21:00 ·
+            Days 2–7 at 12:30 · cross-platform staggered within 24 hours.
+          </p>
+        </div>
+
+        <div className="card-panel p-6">
+          <h2 className="font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2]">
+            Next action
+          </h2>
+          <ul className="mt-4 space-y-3">
+            {data.nextActions.map((action) => (
+              <li
+                key={action}
+                className="rounded-xl border border-[#FF7A24]/25 bg-[#FF7A24]/10 px-4 py-3 text-sm text-[#F5E8D2]"
+              >
+                {action}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </div>
+  );
+}

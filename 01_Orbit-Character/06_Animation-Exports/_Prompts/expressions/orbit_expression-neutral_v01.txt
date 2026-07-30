@@ -1,0 +1,11 @@
+Create a single transparent PNG still of Orbit for a YouTube mascot expression library.
+
+Subject: Front-facing Orbit, calm neutral cream eyes, centered, soft space lighting.
+
+Framing: Orbit centered, mid-shot, transparent background (alpha) if supported; otherwise clean solid deep-space black that can be keyed.
+Style: premium animated-film, soft rim light, same materials as reference.
+
+Preserve Orbit exactly as shown in the uploaded reference image. Maintain the same rounded orange body, black faceplate, cream expressive eyes, single glowing antenna, side arms, proportions, materials and warm animated-film visual style. Do not redesign the character. Do not add limbs, fingers, facial features, clothing, text, logos or accessories.
+
+No text, no logos, no watermark, no extra props.
+Filename target: orbit_expression-neutral_v01.png

@@ -1,0 +1,13 @@
+{
+  "project": "Orbit - 001 Will We Ever Meet Aliens",
+  "draft_id": "ECC8762D-44A1-4B5A-85EC-9D5EEC87CAC3",
+  "edl": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/07_Edit-Project/SECTION_EDL_v06_hq.json",
+  "vo": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/02_Voiceover/05_Master/aliens_voiceover_master_storyteller_v03.wav",
+  "shots": 185,
+  "unique_clips": 185,
+  "rules": [
+    "no_reuse",
+    "no_loop_cutscenes"
+  ],
+  "updated": 1785183040
+}

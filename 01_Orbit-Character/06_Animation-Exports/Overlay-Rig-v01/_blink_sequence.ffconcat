@@ -1,0 +1,12 @@
+ffconcat version 1.0
+file '/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v01/orbit_overlay_neutral_clean_v01.png'
+duration 3.100000
+file '/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v01/orbit_overlay_blink-half_v01.png'
+duration 0.067000
+file '/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v01/orbit_overlay_blink-closed_v01.png'
+duration 0.100000
+file '/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v01/orbit_overlay_blink-half_v01.png'
+duration 0.067000
+file '/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v01/orbit_overlay_neutral_clean_v01.png'
+duration 2.666000
+file '/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v01/orbit_overlay_neutral_clean_v01.png'

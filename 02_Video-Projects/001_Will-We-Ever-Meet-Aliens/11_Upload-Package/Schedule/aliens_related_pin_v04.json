@@ -1,0 +1,153 @@
+{
+  "api": [
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_channels?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_channels?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_playlists?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_communications?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_channels?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/get_creator_social_suggestions?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"CSI\",\n        \"params\": [\n          {\n            \"key\": \"c\",\n            \"value\": \"WEB_CREATOR\"\n          },\n          {\n            \"key\": \"cver\",\n            \"value\": \"1.20260728.03.00\"\n          },\n          {\n            \"key\": \"yt_li\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"GetC"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/get_creator_social_suggestions?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"CSI\",\n        \"params\": [\n          {\n            \"key\": \"c\",\n            \"value\": \"WEB_CREATOR\"\n          },\n          {\n            \"key\": \"cver\",\n            \"value\": \"1.20260728.03.00\"\n          },\n          {\n            \"key\": \"yt_li\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"GetC"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/post/list_creator_posts?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_videos?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_channels?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_communications?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_channels?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_channels?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_communications?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_playlists?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_channels?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/get_creator_social_suggestions?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"CSI\",\n        \"params\": [\n          {\n            \"key\": \"c\",\n            \"value\": \"WEB_CREATOR\"\n          },\n          {\n            \"key\": \"cver\",\n            \"value\": \"1.20260728.03.00\"\n          },\n          {\n            \"key\": \"yt_li\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"GetC"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/get_creator_social_suggestions?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"CSI\",\n        \"params\": [\n          {\n            \"key\": \"c\",\n            \"value\": \"WEB_CREATOR\"\n          },\n          {\n            \"key\": \"cver\",\n            \"value\": \"1.20260728.03.00\"\n          },\n          {\n            \"key\": \"yt_li\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"GetC"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/post/list_creator_posts?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    },
+    {
+      "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_channels?alt=json",
+      "status": 200,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n            \"key\": \"e\",\n            \"value\": \"23804"
+    }
+  ],
+  "pin": {
+    "ok": false,
+    "via": "watch_v04",
+    "found": 0,
+    "error": "comment_missing",
+    "body_has": false
+  },
+  "related": null,
+  "content_has_long": true,
+  "content_snip": "Channel content\nSkip navigation\nCreate\nYour channel\nOrbit with Ben\nDashboard\nContent\nAnalytics\nCommunity\nSubtitles\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel content\nInspiration\nVideos\nShorts\nLive\nPosts\nPlaylists\nPodcasts\nCourses\nPromotions\nCollaborations\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n19:50\nWhat Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey\nWhat happens if you fall into a black hole? Join Orbit \u2014 a small orange exploration rob",
+  "tabs": [
+    {
+      "id": "search-yours-tab",
+      "t": "",
+      "al": "",
+      "selected": "true"
+    },
+    {
+      "id": "search-any-tab",
+      "t": "",
+      "al": "",
+      "selected": "false"
+    }
+  ],
+  "tab_clicks": {
+    "search-yours-tab": true,
+    "search-any-tab": true,
+    "search-playlist-tab": false
+  },
+  "after_why": "Choose specific video",
+  "after_url": "Choose specific video",
+  "any_err": "Locator.click: Element is not visible\nCall log:\n  - waiting for locator(\"#search-any\").first\n    - locator resolved to <input id=\"search-any\" autocomplete=\"off\" class=\"style-scope ytcp-video-pick-dial",
+  "videos_dom": {
+    "html": "\n    <ytcp-video-pick-dialog-contents class=\"style-scope ytcp-video-pick-dialog\"><!--css-build:shady--><!--css_build_scope:ytcp-video-pick-dialog-contents--><div class=\"container style-scope ytcp-video-pick-dialog-contents\"><div class=\"style-scope ytcp-video-pick-dialog-contents\"><dom-if class=\"style-scope ytcp-video-pick-dialog-contents\"></dom-if><div class=\"videos style-scope ytcp-video-pick-dialog-contents\" role=\"listbox\"><dom-repeat as=\"video\" class=\"style-scope ytcp-video-pick-dialog-contents\"></dom-repeat></div><dom-if class=\"style-scope ytcp-video-pick-dialog-contents\"></dom-if></div><dom-if restamp=\"\" class=\"style-scope ytcp-video-pick-dialog-contents\"></dom-if><dom-if restamp=\"\" class=\"style-scope ytcp-video-pick-dialog-contents\"></dom-if><dom-if restamp=\"\" class=\"style-scope ytcp",
+    "text": "",
+    "childCount": 1,
+    "tags": [
+      "YTCP-VIDEO-PICK-DIALOG-CONTENTS",
+      "DIV",
+      "DIV",
+      "DOM-IF",
+      "DIV",
+      "DOM-REPEAT",
+      "DOM-IF",
+      "DOM-IF",
+      "DOM-IF",
+      "DOM-IF"
+    ]
+  }
+}

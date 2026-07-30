@@ -1,0 +1,16 @@
+[Parsed_ebur128_0 @ 0xa48c6ca80] Summary:
+
+  Integrated loudness:
+    I:         -16.5 LUFS
+    Threshold: -27.2 LUFS
+
+  Loudness range:
+    LRA:         6.4 LU
+    Threshold: -37.2 LUFS
+    LRA low:   -20.3 LUFS
+    LRA high:  -13.9 LUFS
+
+  True peak:
+    Peak:       -1.2 dBFS
+[out#0/null @ 0xa48c6c300] video:0KiB audio:212060KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:18:50.98 bitrate=N/A speed= 288x elapsed=0:00:03.92    

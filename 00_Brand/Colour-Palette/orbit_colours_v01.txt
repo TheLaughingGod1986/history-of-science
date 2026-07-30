@@ -1,0 +1,7 @@
+Orbit colour palette
+Primary Orange   #FF7A24
+Soft Terracotta  #C47A4E
+Cream            #F5E8D2
+Deep Space       #0A0C12
+Muted Blue       #5A6E82
+Antenna Gold     #FFC85A

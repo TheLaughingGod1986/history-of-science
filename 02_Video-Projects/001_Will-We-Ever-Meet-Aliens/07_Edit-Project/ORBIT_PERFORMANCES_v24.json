@@ -1,0 +1,218 @@
+{
+  "version": 24,
+  "rule": "hook first; delayed brand sting; frequent interactive lower-right host",
+  "timeline_seconds": 635.475,
+  "event_count": 28,
+  "visible_seconds": 188.713,
+  "visible_percent": 29.7,
+  "pose_library": {
+    "neutral-left": "/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v02/loops/orbit_neutral-left_performance-loop_6s_v01.mov",
+    "present-left": "/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v02/loops/orbit_present-left_performance-loop_6s_v01.mov",
+    "thinking-left": "/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v02/loops/orbit_thinking-left_performance-loop_6s_v01.mov",
+    "amazed": "/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v02/loops/orbit_amazed_performance-loop_6s_v01.mov",
+    "wave-camera": "/Users/ben/code/Orbit-YouTube/01_Orbit-Character/06_Animation-Exports/Overlay-Rig-v02/loops/orbit_wave-camera_performance-loop_6s_v01.mov"
+  },
+  "events": [
+    {
+      "section": "01_cold-open",
+      "start": 24.99,
+      "end": 28.636,
+      "pattern": "present",
+      "purpose": "introduce the question"
+    },
+    {
+      "section": "02_galaxy-scale",
+      "start": 46.081,
+      "end": 51.687,
+      "pattern": "watch",
+      "purpose": "watch the scale visual"
+    },
+    {
+      "section": "02_galaxy-scale",
+      "start": 63.728,
+      "end": 69.334,
+      "pattern": "react",
+      "purpose": "react to cosmic scale"
+    },
+    {
+      "section": "02_galaxy-scale",
+      "start": 73.334,
+      "end": 78.158,
+      "pattern": "watch",
+      "purpose": "stay with the habitable-world visual"
+    },
+    {
+      "section": "03_exoplanets",
+      "start": 95.842,
+      "end": 103.842,
+      "pattern": "think",
+      "purpose": "consider other worlds"
+    },
+    {
+      "section": "03_exoplanets",
+      "start": 117.843,
+      "end": 125.843,
+      "pattern": "present",
+      "purpose": "guide the viewer through evidence"
+    },
+    {
+      "section": "03_exoplanets",
+      "start": 133.558,
+      "end": 141.558,
+      "pattern": "react",
+      "purpose": "react to the Drake possibilities"
+    },
+    {
+      "section": "03_exoplanets",
+      "start": 148.174,
+      "end": 155.746,
+      "pattern": "watch",
+      "purpose": "follow the telescope search"
+    },
+    {
+      "section": "04_fermi-paradox",
+      "start": 173.9,
+      "end": 176.7,
+      "pattern": "react",
+      "purpose": "register the silence"
+    },
+    {
+      "section": "04_fermi-paradox",
+      "start": 182.828,
+      "end": 186.828,
+      "pattern": "think",
+      "purpose": "consider the paradox"
+    },
+    {
+      "section": "05_great-filter",
+      "start": 214.96,
+      "end": 222.96,
+      "pattern": "think",
+      "purpose": "reflect on the filter"
+    },
+    {
+      "section": "05_great-filter",
+      "start": 241.742,
+      "end": 249.742,
+      "pattern": "present",
+      "purpose": "explain branching outcomes"
+    },
+    {
+      "section": "05_great-filter",
+      "start": 255.878,
+      "end": 262.937,
+      "pattern": "think",
+      "purpose": "weigh the filter's timing"
+    },
+    {
+      "section": "05_great-filter",
+      "start": 278.197,
+      "end": 285.197,
+      "pattern": "react",
+      "purpose": "react to the stakes"
+    },
+    {
+      "section": "06_explanations",
+      "start": 291.856,
+      "end": 299.856,
+      "pattern": "present",
+      "purpose": "introduce possible explanations"
+    },
+    {
+      "section": "06_explanations",
+      "start": 323.168,
+      "end": 331.168,
+      "pattern": "think",
+      "purpose": "weigh another theory"
+    },
+    {
+      "section": "06_explanations",
+      "start": 337.724,
+      "end": 345.724,
+      "pattern": "watch",
+      "purpose": "follow the quiet-civilisation theory"
+    },
+    {
+      "section": "06_explanations",
+      "start": 352.523,
+      "end": 360.523,
+      "pattern": "present",
+      "purpose": "point to the signal"
+    },
+    {
+      "section": "07_detection",
+      "start": 391.105,
+      "end": 399.105,
+      "pattern": "react",
+      "purpose": "discovery reaction"
+    },
+    {
+      "section": "07_detection",
+      "start": 417.616,
+      "end": 425.616,
+      "pattern": "think",
+      "purpose": "consider microbial evidence"
+    },
+    {
+      "section": "07_detection",
+      "start": 431.191,
+      "end": 439.191,
+      "pattern": "present",
+      "purpose": "guide the search methods"
+    },
+    {
+      "section": "08_first-contact",
+      "start": 472.678,
+      "end": 480.678,
+      "pattern": "react",
+      "purpose": "first-contact reaction"
+    },
+    {
+      "section": "08_first-contact",
+      "start": 487.235,
+      "end": 495.235,
+      "pattern": "present",
+      "purpose": "connect contact to humanity"
+    },
+    {
+      "section": "08_first-contact",
+      "start": 513.0,
+      "end": 519.0,
+      "pattern": "watch",
+      "purpose": "watch the implications unfold"
+    },
+    {
+      "section": "08_first-contact",
+      "start": 539.0,
+      "end": 546.0,
+      "pattern": "react",
+      "purpose": "react to possible first evidence"
+    },
+    {
+      "section": "09_conclusion",
+      "start": 566.66,
+      "end": 574.66,
+      "pattern": "think",
+      "purpose": "reflect on what the silence says about us"
+    },
+    {
+      "section": "09_conclusion",
+      "start": 595.5,
+      "end": 599.5,
+      "pattern": "watch",
+      "purpose": "quiet reflective beat"
+    },
+    {
+      "section": "09_conclusion",
+      "start": 614.9,
+      "end": 618.5,
+      "pattern": "wave",
+      "purpose": "personal sign-off before end screen"
+    }
+  ],
+  "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/09_Final-Export/aliens_broadcast_v24_hook-first_frequent-orbit.mp4",
+  "hook_first": true,
+  "brand_sting_start_seconds": 11.072,
+  "brand_sting_duration_seconds": 0.75,
+  "source_version_preserved": 23
+}

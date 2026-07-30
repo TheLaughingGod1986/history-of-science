@@ -1,0 +1,17 @@
+{
+  "banner": "/Users/ben/code/Orbit-YouTube/00_Brand/Logos/orbit_youtube-banner_2560x1440_v05_deep.png",
+  "slogan": "BIG QUESTIONS. DEEP UNIVERSE.",
+  "bytes": 3509505,
+  "uploaded": true,
+  "crop_confirm": "Done",
+  "published": true,
+  "banner_imgs": [
+    {
+      "src": "https://yt3.googleusercontent.com/NPQluN9B3uCjD067vbl-BzlNhwmWJ8POBf4_Fs8BSbMIzqVHW-OlmqoFbupymNeAP1gSDjNvaYs=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+      "w": 1070,
+      "h": 172
+    }
+  ],
+  "status": "ok",
+  "version": "v05_deep"
+}

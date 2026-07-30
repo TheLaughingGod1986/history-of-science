@@ -1,0 +1,262 @@
+{
+  "videos": [
+    {
+      "tag": "long",
+      "id": "n7CbJrOCnU0",
+      "title": "What happens if you fall into a black hole? Join Orbit \u2014 a small orange exploration robot \u2014 on a black holes explained c",
+      "chips": [
+        "what happens if you fall into a black hole",
+        "black holes explained",
+        "event horizon explained",
+        "inside a black hole",
+        "supermassive black hole",
+        "spaghettification",
+        "black hole documentary",
+        "space documentary",
+        "black hole facts",
+        "sagittarius a",
+        "astronomy for beginners",
+        "orbit with ben",
+        "falling into a black hole",
+        "what is a black hole",
+        "time dilation",
+        "black hole singularity",
+        "hawking radiation",
+        "event horizon telescope",
+        "gravitational waves",
+        "photon sphere"
+      ],
+      "counter": "459/500",
+      "hasInput": true,
+      "chars": 459,
+      "samples": {
+        "black holes explained": true,
+        "event horizon": true,
+        "spaghettification": true,
+        "orbit with ben": true,
+        "photon sphere": true,
+        "time dilation": true,
+        "point of no return": true
+      },
+      "has_tags": true,
+      "weak": false
+    },
+    {
+      "tag": "s01",
+      "id": "eZGAhF8dN7w",
+      "title": "Cross This Line and You Never Come Back",
+      "chips": [
+        "event horizon",
+        "point of no return",
+        "black hole shorts",
+        "black holes explained",
+        "space shorts",
+        "orbit with ben",
+        "astronomy shorts",
+        "what happens if you fall into a black hole"
+      ],
+      "chip_count": 8,
+      "counter": "176/500",
+      "chars": 176,
+      "has_tags": true,
+      "weak": false
+    },
+    {
+      "tag": "s02",
+      "id": "C4GuFEFGySI",
+      "title": "Falling In Wouldn't Feel Like Falling",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "s03",
+      "id": "hdlr1soUwNA",
+      "err": "Page.wait_for_timeout: Page crashed"
+    },
+    {
+      "tag": "s04",
+      "id": "80S5E-AWFhA",
+      "title": "Would You Look Back?",
+      "chips": [
+        "look back black hole",
+        "event horizon",
+        "falling into a black hole",
+        "black hole shorts",
+        "space shorts",
+        "orbit with ben",
+        "astronomy shorts",
+        "black holes explained"
+      ],
+      "chip_count": 8,
+      "counter": "161/500",
+      "chars": 161,
+      "has_tags": true,
+      "weak": false
+    },
+    {
+      "tag": "s05",
+      "id": "olnaYqeOtFs",
+      "title": "What Your Eyes Would See",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "s06",
+      "id": "5nMieBeymKU",
+      "title": "The Point of No Return Explained",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "extra_a",
+      "id": "--CxhjNqtSY",
+      "title": "What If the First Alien Clue Is Already Here?",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "extra_b",
+      "id": "MO19iXYCu0c",
+      "title": "What If Aliens Are Watching Us?",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "extra_c",
+      "id": "Mo93x0fxB1Q",
+      "title": "Will We Ever Meet Aliens? The Answer May Already Be Here",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "extra_d",
+      "id": "UWwNKYf_aU8",
+      "err": "Page.wait_for_timeout: Target page, context or browser has been closed"
+    },
+    {
+      "tag": "extra_e",
+      "id": "z-DLqoSoEBo",
+      "title": "Where Is Everybody? The Fermi Paradox",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    }
+  ],
+  "missing_or_weak": [
+    {
+      "tag": "s02",
+      "id": "C4GuFEFGySI",
+      "title": "Falling In Wouldn't Feel Like Falling",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "s03",
+      "id": "hdlr1soUwNA",
+      "err": "Page.wait_for_timeout: Page crashed"
+    },
+    {
+      "tag": "s05",
+      "id": "olnaYqeOtFs",
+      "title": "What Your Eyes Would See",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "s06",
+      "id": "5nMieBeymKU",
+      "title": "The Point of No Return Explained",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "extra_a",
+      "id": "--CxhjNqtSY",
+      "title": "What If the First Alien Clue Is Already Here?",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "extra_b",
+      "id": "MO19iXYCu0c",
+      "title": "What If Aliens Are Watching Us?",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "extra_c",
+      "id": "Mo93x0fxB1Q",
+      "title": "Will We Ever Meet Aliens? The Answer May Already Be Here",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    },
+    {
+      "tag": "extra_d",
+      "id": "UWwNKYf_aU8",
+      "err": "Page.wait_for_timeout: Target page, context or browser has been closed"
+    },
+    {
+      "tag": "extra_e",
+      "id": "z-DLqoSoEBo",
+      "title": "Where Is Everybody? The Fermi Paradox",
+      "chips": [],
+      "chip_count": 0,
+      "counter": "0/500",
+      "chars": 0,
+      "has_tags": false,
+      "weak": true
+    }
+  ],
+  "ok": false
+}

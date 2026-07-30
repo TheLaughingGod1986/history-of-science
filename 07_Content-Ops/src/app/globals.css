@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --orbit-orange: #ff7a24;
+  --orbit-cream: #f5e8d2;
+  --orbit-space: #0a0c12;
+  --orbit-space-2: #12151f;
+  --orbit-gold: #ffc85a;
+  --orbit-blue: #5a6e82;
+  --orbit-terracotta: #c47a4e;
+  --background: var(--orbit-space);
+  --foreground: var(--orbit-cream);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-orbit-orange: var(--orbit-orange);
+  --color-orbit-cream: var(--orbit-cream);
+  --color-orbit-space: var(--orbit-space);
+  --color-orbit-gold: var(--orbit-gold);
+  --color-orbit-blue: var(--orbit-blue);
+  --font-sans: var(--font-orbit-sans);
+  --font-display: var(--font-orbit-display);
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(255, 122, 36, 0.18), transparent 55%),
+    radial-gradient(900px 500px at 90% 0%, rgba(255, 200, 90, 0.1), transparent 50%),
+    linear-gradient(180deg, #0a0c12 0%, #10131c 45%, #0a0c12 100%);
+  color: var(--foreground);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-panel {
+  background: linear-gradient(180deg, rgba(18, 21, 31, 0.92), rgba(10, 12, 18, 0.88));
+  border: 1px solid rgba(245, 232, 210, 0.08);
+  border-radius: 1rem;
+}
+
+.pipeline-step {
+  border: 1px solid rgba(245, 232, 210, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+}

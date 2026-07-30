@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.venv*/
+**/.venv*/
+
+# Next / Prisma
+07_Content-Ops/.next/
+07_Content-Ops/out/
+07_Content-Ops/prisma/*.db
+07_Content-Ops/prisma/*.db-journal
+07_Content-Ops/exports/
+*.env
+*.env.local
+.env
+.env.*
+!.env.example
+07_Content-Ops/.env
+!07_Content-Ops/.env.example
+
+# OS / editor
+.DS_Store
+*.log
+
+# Large / generated media (keep structure; ignore binaries)
+**/*.mp4
+**/*.mov
+**/*.wav
+**/*.mp3
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.webp
+!**/*.md
+!07_Content-Ops/public/**
+
+# Playwright / caches
+**/playwright-report/
+**/test-results/
+**/__pycache__/

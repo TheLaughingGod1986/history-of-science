@@ -1,0 +1,70 @@
+export const CONTENT_RULES = {
+  shortDuration: {
+    minSeconds: 20,
+    maxSeconds: 55,
+    preferredMin: 31,
+    preferredMax: 42,
+  },
+  format: {
+    aspectRatio: "9:16",
+    width: 1080,
+    height: 1920,
+  },
+  structure: {
+    hookSeconds: 1.5,
+    setupEndSeconds: 10,
+    revealEndSeconds: 40,
+    ctaTailSeconds: { min: 3, max: 7 },
+  },
+  captions: {
+    maxLines: 2,
+    safeMarginPercent: 12,
+    highlightScientificTerms: true,
+  },
+  qualityWeights: {
+    hookStrength: 20,
+    standaloneClarity: 15,
+    curiosity: 15,
+    scientificAccuracy: 15,
+    pacing: 10,
+    visualPotential: 10,
+    payoff: 10,
+    ctaSubtlety: 5,
+  },
+  avoidPhrases: [
+    "hey guys",
+    "smash that like",
+    "like and subscribe",
+    "you won't believe",
+    "gone wrong",
+  ],
+  softCtas: [
+    "Watch the full story on Orbit with Ben.",
+    "The full explanation is on the channel.",
+    "See the full journey in the latest Orbit video.",
+  ],
+  hookCategories: [
+    "mystery",
+    "surprising_fact",
+    "direct_question",
+    "scale_comparison",
+    "future_scenario",
+    "existential_idea",
+    "contrarian_statement",
+    "scientific_reveal",
+  ] as const,
+  clipProposalCount: { min: 4, max: 8 },
+  pipelineStages: [
+    "Long Video",
+    "Clip Ideas",
+    "Approved Clips",
+    "Editing",
+    "Exported",
+    "Platform Copy",
+    "Scheduled",
+    "Published",
+    "Analysed",
+  ] as const,
+} as const;
+
+export type HookCategory = (typeof CONTENT_RULES.hookCategories)[number];

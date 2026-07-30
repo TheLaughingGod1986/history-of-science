@@ -1,0 +1,221 @@
+{
+  "results": [
+    {
+      "label": "bh_s01",
+      "id": "eZGAhF8dN7w",
+      "tag_chars": 338,
+      "title": "Cross This Line and You Never Come Back",
+      "tags": {
+        "ok": true,
+        "cleared": 8,
+        "counter_after_paste": "370/500",
+        "via": "paste",
+        "counter": "370/500",
+        "chars": 370
+      },
+      "saved": true,
+      "verify_counter": "370/500",
+      "verify_chars": 370,
+      "verify_sample": true,
+      "ok": true
+    },
+    {
+      "label": "bh_s02",
+      "id": "C4GuFEFGySI",
+      "tag_chars": 312,
+      "title": "Falling In Wouldn't Feel Like Falling",
+      "tags": {
+        "ok": true,
+        "cleared": 15,
+        "counter_after_paste": "340/500",
+        "via": "paste",
+        "counter": "340/500",
+        "chars": 340
+      },
+      "saved": false,
+      "verify_counter": "340/500",
+      "verify_chars": 340,
+      "verify_sample": true,
+      "ok": true,
+      "saved_note": "Save disabled \u2014 tags already persisted from smoke test; verified 340/500"
+    },
+    {
+      "label": "bh_s03",
+      "id": "hdlr1soUwNA",
+      "tag_chars": 300,
+      "title": "Time Stops at the Edge \u2014 For Them",
+      "tags": {
+        "ok": true,
+        "cleared": 0,
+        "counter_after_paste": "330/500",
+        "via": "paste",
+        "counter": "330/500",
+        "chars": 330
+      },
+      "saved": true,
+      "verify_counter": "330/500",
+      "verify_chars": 330,
+      "verify_sample": true,
+      "ok": true
+    },
+    {
+      "label": "bh_s04",
+      "id": "80S5E-AWFhA",
+      "tag_chars": 297,
+      "title": "Would You Look Back?",
+      "tags": {
+        "ok": true,
+        "cleared": 8,
+        "counter_after_paste": "325/500",
+        "via": "paste",
+        "counter": "325/500",
+        "chars": 325
+      },
+      "saved": true,
+      "verify_counter": "325/500",
+      "verify_chars": 325,
+      "verify_sample": true,
+      "ok": true
+    },
+    {
+      "label": "bh_s05",
+      "id": "olnaYqeOtFs",
+      "tag_chars": 313,
+      "title": "What Your Eyes Would See",
+      "tags": {
+        "ok": true,
+        "cleared": 0,
+        "counter_after_paste": "343/500",
+        "via": "paste",
+        "counter": "343/500",
+        "chars": 343
+      },
+      "saved": true,
+      "verify_counter": "343/500",
+      "verify_chars": 343,
+      "verify_sample": true,
+      "ok": true
+    },
+    {
+      "label": "bh_s06",
+      "id": "5nMieBeymKU",
+      "tag_chars": 314,
+      "title": "The Point of No Return Explained",
+      "tags": {
+        "ok": true,
+        "cleared": 0,
+        "counter_after_paste": "344/500",
+        "via": "paste",
+        "counter": "344/500",
+        "chars": 344
+      },
+      "saved": true,
+      "verify_counter": "344/500",
+      "verify_chars": 344,
+      "verify_sample": true,
+      "ok": true
+    },
+    {
+      "label": "aliens_long",
+      "id": "Mo93x0fxB1Q",
+      "tag_chars": 341,
+      "title": "Will We Ever Meet Aliens? The Answer May Already Be Here",
+      "tags": {
+        "ok": true,
+        "cleared": 0,
+        "counter_after_paste": "371/500",
+        "via": "paste",
+        "counter": "371/500",
+        "chars": 371
+      },
+      "saved": true,
+      "verify_counter": "371/500",
+      "verify_chars": 371,
+      "verify_sample": true,
+      "ok": true
+    },
+    {
+      "label": "aliens_s01",
+      "id": "UWwNKYf_aU8",
+      "tag_chars": 267,
+      "title": "Space Is Rude About Distance",
+      "tags": {
+        "ok": true,
+        "cleared": 0,
+        "counter_after_paste": "295/500",
+        "via": "paste",
+        "counter": "295/500",
+        "chars": 295
+      },
+      "saved": true,
+      "verify_counter": "295/500",
+      "verify_chars": 295,
+      "verify_sample": true,
+      "ok": true
+    },
+    {
+      "label": "aliens_s02",
+      "id": "z-DLqoSoEBo",
+      "tag_chars": 243,
+      "title": "Where Is Everybody? The Fermi Paradox",
+      "tags": {
+        "ok": true,
+        "cleared": 0,
+        "counter_after_paste": "271/500",
+        "via": "paste",
+        "counter": "271/500",
+        "chars": 271
+      },
+      "saved": true,
+      "verify_counter": "271/500",
+      "verify_chars": 271,
+      "verify_sample": true,
+      "ok": true
+    },
+    {
+      "label": "aliens_s03",
+      "id": "MO19iXYCu0c",
+      "tag_chars": 247,
+      "title": "What If Aliens Are Watching Us?",
+      "tags": {
+        "ok": true,
+        "cleared": 0,
+        "counter_after_paste": "273/500",
+        "via": "paste",
+        "counter": "273/500",
+        "chars": 273
+      },
+      "saved": true,
+      "verify_counter": "273/500",
+      "verify_chars": 273,
+      "verify_sample": true,
+      "ok": true
+    },
+    {
+      "label": "aliens_s04",
+      "id": "--CxhjNqtSY",
+      "tag_chars": 257,
+      "title": "What If the First Alien Clue Is Already Here?",
+      "tags": {
+        "ok": true,
+        "cleared": 0,
+        "counter_after_paste": "281/500",
+        "via": "paste",
+        "counter": "281/500",
+        "chars": 281
+      },
+      "saved": true,
+      "verify_counter": "281/500",
+      "verify_chars": 281,
+      "verify_sample": true,
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "failed": [],
+  "summary": {
+    "blackhole_long": "already had 20 SEO tags (459/500) \u2014 left unchanged",
+    "blackhole_shorts": "all 6 now have dense SEO tags (325\u2013370/500)",
+    "aliens_drafts": "long + 4 shorts tagged (271\u2013371/500)"
+  }
+}

@@ -1,0 +1,47 @@
+And they are not all identical death-traps at the same distance. A small, dense black hole can shred you from farther out. A huge one can let you cross the horizon before the worst tides arrive.
+
+[dramatic] Same word — black hole. Very different last chapters depending on mass.
+
+Most of the stellar black holes we talk about begin with a star.
+
+Not a star like our Sun. Our Sun will die differently — swelling into a red giant, shedding outer layers, leaving a white dwarf. No black hole.
+
+[excited] But a much heavier star can end in catastrophe.
+
+When nuclear fusion in its core can no longer push outward hard enough, gravity wins. The core collapses. Outer layers may blast away in a supernova — one of the most violent explosions in the universe.
+
+What remains can be a neutron star… or, if the remnant is massive enough, a black hole.
+
+There is a rough dividing line in nature. Too much mass packed into a neutron-star-sized object, and even neutron degeneracy pressure cannot hold. Collapse continues. A horizon forms.
+
+[curious] We have even heard black holes form and grow in a new way: by colliding.
+
+In twenty fifteen, LIGO detected gravitational waves from two black holes merging — ripples in spacetime predicted by Einstein and measured as tiny stretches in laser arms on Earth. Since then, many mergers have been heard. [dramatic] The dark universe is not silent. It rings.
+
+There is another kind of black hole, far larger: supermassive. They sit at the centres of most large galaxies, including ours. Sagittarius A-star, at the heart of the Milky Way, has a mass of about four million Suns.
+
+[awed] Four million Suns… compressed behind an event horizon smaller than the orbit of Mercury.
+
+[thoughtful] We do not yet have one complete story for how every supermassive black hole grew so large so early in cosmic history. We have strong candidates — mergers, rapid early growth, dense young galaxies — and an open research frontier.
+
+[earnest] That honesty matters. Wonder without uncertainty is just a cartoon.
+
+Hollywood loves a swirling orange drain with lightning and a hard edge you smash through.
+
+[earnest] Reality is quieter — and stranger.
+
+For a non-spinning black hole, the event horizon’s size is set by the Schwarzschild radius. Double the mass, double the radius. A black hole the mass of Earth would have a horizon only a couple of centimetres across. A stellar-mass black hole might span tens of kilometres. A supermassive one can be larger than our whole solar system… and somehow gentler at the boundary, as we’ll see.
+
+[serious] If you hovered just outside a stellar-mass black hole’s horizon, tidal forces could already be tearing at you.
+
+If you fell toward a supermassive black hole, you might cross the horizon without noticing a sudden smash — because the horizon is not a brick wall. Locally, spacetime can still look smooth.
+
+[dramatic] The tragedy is not a bang at the door. It is that the door closes behind you forever.
+
+Outside the horizon there is also a photon sphere — a region where light can orbit unstably, like a knife-edge path. That helps create the bright ring we see in simulations and telescope images. Miss that path slightly outward, and light may escape. Miss inward… and it may not.
+
+[curious] Even light has to be careful near a black hole. That sentence alone should feel illegal… and yet, under general relativity, it is simply geometry.
+
+[excited] Now we stop explaining from the desk… and put Orbit in peril.
+
+This is a carefully imaginary fall. No real robot was harmed. But every effect we describe is real physics.

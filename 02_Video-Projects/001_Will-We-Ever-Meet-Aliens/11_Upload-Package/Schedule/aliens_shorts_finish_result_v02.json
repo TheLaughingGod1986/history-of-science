@@ -1,0 +1,127 @@
+{
+  "long_id": "Mo93x0fxB1Q",
+  "meta": [
+    {
+      "id": "01",
+      "video_id": "z-DLqoSoEBo",
+      "ok": true,
+      "title": true,
+      "desc": true,
+      "tags": true,
+      "saved": true
+    },
+    {
+      "id": "02",
+      "video_id": "UWwNKYf_aU8",
+      "ok": true,
+      "title": true,
+      "desc": true,
+      "tags": true,
+      "saved": true
+    },
+    {
+      "id": "03",
+      "video_id": "MO19iXYCu0c",
+      "ok": true,
+      "title": true,
+      "desc": true,
+      "tags": true,
+      "saved": true
+    },
+    {
+      "id": "04",
+      "video_id": "--CxhjNqtSY",
+      "ok": true,
+      "title": true,
+      "desc": true,
+      "tags": true,
+      "saved": true
+    }
+  ],
+  "schedules": [
+    {
+      "id": "01",
+      "video_id": "z-DLqoSoEBo",
+      "ok": true,
+      "target": "2026-08-07T21:00:00+01:00",
+      "expand": {
+        "via": "already_expanded"
+      },
+      "date": "7 August 2026",
+      "time": "21:00",
+      "saved": true,
+      "visibility_snip": "\nScheduled\nRelated video\nNone\nSubtitles\nChanges saved"
+    },
+    {
+      "id": "02",
+      "video_id": "UWwNKYf_aU8",
+      "ok": true,
+      "target": "2026-08-08T12:30:00+01:00",
+      "expand": {
+        "via": "expand"
+      },
+      "date": "8 August 2026",
+      "time": "12:30",
+      "saved": true,
+      "visibility_snip": "\nScheduled\nRelated video\nNone\nSubtitles\nChanges saved"
+    },
+    {
+      "id": "03",
+      "video_id": "MO19iXYCu0c",
+      "ok": true,
+      "target": "2026-08-09T12:30:00+01:00",
+      "expand": {
+        "via": "already_expanded"
+      },
+      "date": "9 August 2026",
+      "time": "12:30",
+      "saved": true,
+      "visibility_snip": "\nScheduled\nRelated video\nNone\nSubtitles\nChanges saved"
+    },
+    {
+      "id": "04",
+      "video_id": "--CxhjNqtSY",
+      "ok": true,
+      "target": "2026-08-10T12:30:00+01:00",
+      "expand": {
+        "via": "already_expanded"
+      },
+      "date": "10 August 2026",
+      "time": "12:30",
+      "saved": true,
+      "visibility_snip": "\nScheduled\nRelated video\nNone\nSubtitles\nChanges saved"
+    }
+  ],
+  "related": [
+    {
+      "id": "01",
+      "video_id": "z-DLqoSoEBo",
+      "ok": false,
+      "error": "not_found"
+    },
+    {
+      "id": "02",
+      "video_id": "UWwNKYf_aU8",
+      "ok": false,
+      "error": "not_found"
+    },
+    {
+      "id": "03",
+      "video_id": "MO19iXYCu0c",
+      "ok": false,
+      "error": "not_found"
+    },
+    {
+      "id": "04",
+      "video_id": "--CxhjNqtSY",
+      "ok": false,
+      "error": "not_found"
+    }
+  ],
+  "pin": {
+    "ok": false,
+    "via": "watch",
+    "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"textbox\", name=re.compile(r\"Add a comment|comment\", re.IGNORECASE)).first\n"
+  },
+  "ok": false
+}

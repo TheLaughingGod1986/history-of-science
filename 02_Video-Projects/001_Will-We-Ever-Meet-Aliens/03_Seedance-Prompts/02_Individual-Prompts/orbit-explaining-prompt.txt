@@ -1,0 +1,27 @@
+CLIP: Explaining
+DURATION: 8 seconds
+ASPECT RATIO: 16:9 landscape
+REFERENCE IMAGE: reference.png (orbit-seedance-reference-v01.png)
+
+--- PROMPT (paste into Seedance) ---
+
+Use the uploaded Orbit character sheet as the only character reference.
+
+Orbit faces the camera while hovering gently. He makes small, natural explanatory gestures with his side arms, alternating between one arm and the other.
+
+His eyes remain friendly and confident. His body rocks almost imperceptibly in zero gravity.
+
+Use a slow cinematic camera push-in and a clean deep-space background.
+
+The movement must feel controlled and suitable for repeated use beneath narration.
+
+Preserve Orbit exactly. No redesign, extra limbs, text, logos or watermark.
+
+--- MANDATORY CONSISTENCY BLOCK (append to every generation) ---
+
+Preserve Orbit exactly as shown in the uploaded reference image. Maintain the same rounded orange body, black faceplate, cream expressive eyes, single glowing antenna, side arms, proportions, materials and warm animated-film visual style. Do not redesign the character. Do not add limbs, fingers, facial features, clothing, text, logos or accessories.
+
+--- GENERATION SETTINGS ---
+- Use the uploaded reference image as the ONLY canonical character reference.
+- Prefer subtle, controlled movement over exaggerated animation.
+- Generate at least two versions when credits permit.

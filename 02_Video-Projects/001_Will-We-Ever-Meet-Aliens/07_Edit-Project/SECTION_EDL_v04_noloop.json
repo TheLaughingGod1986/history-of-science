@@ -1,0 +1,1321 @@
+{
+  "rules": [
+    "no_reuse",
+    "no_loop_cutscenes",
+    "orbit_pip_ok_to_loop",
+    "hook_then_brand",
+    "chapter_progress_cards",
+    "cta_vo"
+  ],
+  "structure": "cinematic_hook(~8s) \u2192 orbit_brand_sting \u2192 chapters(title+progress \u2192 broll under VO) \u2192 subscribe_outro",
+  "vo": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/02_Voiceover/05_Master/aliens_voiceover_master_smooth_v02.wav",
+  "vo_duration_s": 588.658,
+  "unique_clips": 164,
+  "shots": [
+    {
+      "kind": "broll",
+      "clip": "aliens_vibrant-001_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 0.0,
+      "duration_s": 4.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_vibrant-002_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 4.042,
+      "duration_s": 4.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "brand_intro",
+      "clip": "orbit_brand_intro_v01.mp4",
+      "section": "brand",
+      "start_s": 8.083,
+      "duration_s": 1.2,
+      "orbit": null
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_01_01_cold-open_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 9.283,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-011_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 11.783,
+      "duration_s": 6.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-013_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 17.825,
+      "duration_s": 6.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_where_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 23.867,
+      "duration_s": 3.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-017_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 26.867,
+      "duration_s": 6.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-020_v01.mp4",
+      "section": "01_cold-open",
+      "start_s": 32.908,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_02_02_galaxy-scale_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 37.95,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-024_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 40.45,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-025_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 45.492,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-030_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 50.533,
+      "duration_s": 6.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-031_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 56.575,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_alpha_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 61.617,
+      "duration_s": 3.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-033_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 64.617,
+      "duration_s": 6.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-035_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 70.658,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-037_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 75.7,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-038_v01.mp4",
+      "section": "02_galaxy-scale",
+      "start_s": 80.742,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_03_03_exoplanets_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 85.783,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-041_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 88.283,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-042_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 93.325,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-043_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 98.367,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-046_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 103.408,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-048_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 108.45,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-050_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 113.492,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-051_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 118.533,
+      "duration_s": 5.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_drake_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 123.575,
+      "duration_s": 3.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-061_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 126.575,
+      "duration_s": 4.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-062_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 130.617,
+      "duration_s": 4.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-063_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 134.658,
+      "duration_s": 4.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "aliens_scene-064_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 138.7,
+      "duration_s": 4.042,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_001_teal_bio_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 142.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_002_rust_dusk_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 146.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_003_ice_giant_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 150.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_004_observatory_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 154.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_005_aurora_v01.mp4",
+      "section": "03_exoplanets",
+      "start_s": 158.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_04_04_fermi-paradox_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 162.742,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_007_volcano_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 165.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_008_crystal_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 169.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_009_pulsar_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 173.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_010_ion_trail_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 177.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_silence_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 181.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_011_earth_gold_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 184.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_012_spectrum_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 188.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_013_habitable_v01.mp4",
+      "section": "04_fermi-paradox",
+      "start_s": 192.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_05_05_great-filter_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 196.242,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_014_mars_canyon_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 198.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_015_geyser_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 202.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_016_seti_blue_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 206.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_017_wow_pulse_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 210.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_018_binary_dusk_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 214.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_019_microbe_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 218.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_020_mirror_gold_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 222.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_021_nebula_hot_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 226.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_022_bio_forest_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 230.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_zoo_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 234.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_023_comet_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 237.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_024_accretion_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 241.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_025_supernova_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 245.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_026_invite_star_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 249.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_027_amber_beacon_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 253.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_028_worlds_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 257.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_029_array_blink_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 261.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_030_solar_arch_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 265.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_031_europa_blue_v01.mp4",
+      "section": "05_great-filter",
+      "start_s": 269.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_06_06_explanations_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 273.742,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_032_titan_haze_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 276.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_033_magnetic_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 280.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_034_aurora_ice_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 284.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_035_antenna_field_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 288.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_036_ring_glitter_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 292.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_037_laser_green_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 296.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_038_limb_aurora_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 300.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_039_ice_shaft_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 304.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_040_probe_blue_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 308.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_041_x041_ember_ring_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 312.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_distance_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 316.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_042_x042_cyan_cliff_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 319.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_043_x043_violet_dune_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 323.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_044_x044_jade_mist_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 327.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_045_x045_copper_storm_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 331.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_046_x046_indigo_pulse_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 335.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_047_x047_snow_flare_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 339.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_048_x048_moss_orbit_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 343.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_049_x049_ruby_void_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 347.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_050_x050_amber_lake_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 351.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_051_x051_ember_ring_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 355.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_052_x052_cyan_cliff_v01.mp4",
+      "section": "06_explanations",
+      "start_s": 359.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_07_07_detection_v01.mp4",
+      "section": "07_detection",
+      "start_s": 363.242,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_053_x053_violet_dune_v01.mp4",
+      "section": "07_detection",
+      "start_s": 365.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_054_x054_jade_mist_v01.mp4",
+      "section": "07_detection",
+      "start_s": 369.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_055_x055_copper_storm_v01.mp4",
+      "section": "07_detection",
+      "start_s": 373.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_056_x056_indigo_pulse_v01.mp4",
+      "section": "07_detection",
+      "start_s": 377.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_057_x057_snow_flare_v01.mp4",
+      "section": "07_detection",
+      "start_s": 381.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_058_x058_moss_orbit_v01.mp4",
+      "section": "07_detection",
+      "start_s": 385.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_059_x059_ruby_void_v01.mp4",
+      "section": "07_detection",
+      "start_s": 389.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_060_x060_amber_lake_v01.mp4",
+      "section": "07_detection",
+      "start_s": 393.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_061_x061_ember_ring_v01.mp4",
+      "section": "07_detection",
+      "start_s": 397.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_wow_v01.mp4",
+      "section": "07_detection",
+      "start_s": 401.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_062_x062_cyan_cliff_v01.mp4",
+      "section": "07_detection",
+      "start_s": 404.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_063_x063_violet_dune_v01.mp4",
+      "section": "07_detection",
+      "start_s": 408.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_064_x064_jade_mist_v01.mp4",
+      "section": "07_detection",
+      "start_s": 412.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_065_x065_copper_storm_v01.mp4",
+      "section": "07_detection",
+      "start_s": 416.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_066_x066_indigo_pulse_v01.mp4",
+      "section": "07_detection",
+      "start_s": 420.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_067_x067_snow_flare_v01.mp4",
+      "section": "07_detection",
+      "start_s": 424.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_068_x068_moss_orbit_v01.mp4",
+      "section": "07_detection",
+      "start_s": 428.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_069_x069_ruby_void_v01.mp4",
+      "section": "07_detection",
+      "start_s": 432.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_070_x070_amber_lake_v01.mp4",
+      "section": "07_detection",
+      "start_s": 436.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_071_x071_ember_ring_v01.mp4",
+      "section": "07_detection",
+      "start_s": 440.742,
+      "duration_s": 4.0,
+      "orbit": "orbit_explaining_talk_v01_polished.mp4"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_08_08_first-contact_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 444.742,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_072_x072_cyan_cliff_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 447.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_073_x073_violet_dune_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 451.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_074_x074_jade_mist_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 455.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_075_x075_copper_storm_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 459.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_076_x076_indigo_pulse_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 463.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_077_x077_snow_flare_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 467.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_078_x078_moss_orbit_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 471.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_079_x079_ruby_void_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 475.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "broll",
+      "clip": "fill_plate_080_x080_amber_lake_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 479.242,
+      "duration_s": 4.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_100_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 483.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_101_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 486.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_honest_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 489.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_102_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 492.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_103_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 495.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_104_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 498.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_105_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 501.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_106_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 504.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_107_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 507.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_108_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 510.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_109_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 513.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_110_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 516.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_111_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 519.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_112_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 522.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_113_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 525.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_114_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 528.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_115_v01.mp4",
+      "section": "08_first-contact",
+      "start_s": 531.242,
+      "duration_s": 3.0,
+      "orbit": "orbit_surprised_reaction_v01_polished.mp4"
+    },
+    {
+      "kind": "chapter",
+      "clip": "chapter_09_09_conclusion_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 534.242,
+      "duration_s": 2.5,
+      "orbit": null
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_116_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 536.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_117_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 539.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_118_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 542.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_119_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 545.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_120_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 548.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_121_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 551.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_122_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 554.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_123_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 557.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_124_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 560.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_125_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 563.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_maybe_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 566.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_126_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 569.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_127_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 572.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_128_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 575.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_129_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 578.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_130_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 581.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_131_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 584.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_132_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 587.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_133_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 590.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_134_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 593.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_135_v01.mp4",
+      "section": "09_conclusion",
+      "start_s": 596.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_136_v01.mp4",
+      "section": "cta",
+      "start_s": 599.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_137_v01.mp4",
+      "section": "cta",
+      "start_s": 602.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "card",
+      "clip": "card_beat_138_v01.mp4",
+      "section": "cta",
+      "start_s": 605.742,
+      "duration_s": 3.0,
+      "orbit": "orbit_ending_goodbye_v01_polished.mp4"
+    },
+    {
+      "kind": "brand_outro",
+      "clip": "orbit_brand_outro_subscribe_v01.mp4",
+      "section": "outro",
+      "start_s": 608.742,
+      "duration_s": 8.0,
+      "orbit": null
+    }
+  ],
+  "out": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/09_Final-Export/aliens_broadcast_v04.mp4"
+}

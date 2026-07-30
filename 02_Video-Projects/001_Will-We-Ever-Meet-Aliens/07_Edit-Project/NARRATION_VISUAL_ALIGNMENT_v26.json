@@ -1,0 +1,1302 @@
+{
+  "version": 26,
+  "method": "sentence-level semantic picture selection using timed narration anchors",
+  "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/07_Edit-Project/_render_cache_v26/picture_bed_semantic_v26.mp4",
+  "approved_elements_preserved": {
+    "orbit_performance_v25": true,
+    "hook_before_brand": true,
+    "brand_hold_seconds": 2.0,
+    "information_cards_retained": [
+      "card_drake_blackboard_v01.mp4",
+      "card_end_invitation_v01.mp4",
+      "card_fermi_lunch_v01.mp4",
+      "card_honest_v01.mp4",
+      "card_hook_mystery_v01.mp4",
+      "card_wow_1977_v01.mp4"
+    ],
+    "chapter_cards_retained": 8
+  },
+  "semantic_change_points": 74,
+  "alignments": [
+    {
+      "start": 0.0,
+      "end": 4.1,
+      "source_timeline_asset": "card_hook_mystery_v01.mp4",
+      "selected_visual": "card_hook_mystery_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 4.1,
+      "end": 6.9719999999999995,
+      "source_timeline_asset": "aliens_mystery-city_v01.mp4",
+      "selected_visual": "aliens_scene-002_v01.mp4",
+      "reason": "stars beyond the visible sky",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 6.972,
+      "end": 11.072,
+      "source_timeline_asset": "card_where_everybody_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "where is everybody / radio silence",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 11.822,
+      "end": 14.693999999999999,
+      "source_timeline_asset": "aliens_mystery-fleet_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "where is everybody / radio silence",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 14.693,
+      "end": 18.793,
+      "source_timeline_asset": "card_hook_crowded_v01.mp4",
+      "selected_visual": "aliens_scene-012_v01.mp4",
+      "reason": "whole galaxies in the dark",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 18.793,
+      "end": 20.89,
+      "source_timeline_asset": "aliens_mystery-megastructure_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "why has nobody answered",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 20.89,
+      "end": 24.990000000000002,
+      "source_timeline_asset": "card_hook_promise_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "why has nobody answered",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 24.99,
+      "end": 28.636,
+      "source_timeline_asset": "aliens_mystery-silence-void_v01.mp4",
+      "selected_visual": "aliens_scene-008_v01.mp4",
+      "reason": "the real human question",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 28.636,
+      "end": 32.736,
+      "source_timeline_asset": "card_real_question_v01.mp4",
+      "selected_visual": "aliens_scene-008_v01.mp4",
+      "reason": "the real human question",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 32.736,
+      "end": 34.833,
+      "source_timeline_asset": "aliens_vibrant-001_v01.mp4",
+      "selected_visual": "aliens_scene-001_v01.mp4",
+      "reason": "look up at the Milky Way",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 34.833,
+      "end": 39.480999999999995,
+      "source_timeline_asset": "card_look_up_v01.mp4",
+      "selected_visual": "aliens_scene-001_v01.mp4",
+      "reason": "look up at the Milky Way",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 39.481,
+      "end": 41.981,
+      "source_timeline_asset": "chapter_02_02_galaxy-scale_v01.mp4",
+      "selected_visual": "chapter_02_02_galaxy-scale_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 41.981,
+      "end": 46.081,
+      "source_timeline_asset": "card_rudely_big_v01.mp4",
+      "selected_visual": "aliens_scene-001_v01.mp4",
+      "reason": "space is enormously big",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 46.081,
+      "end": 51.687000000000005,
+      "source_timeline_asset": "aliens_vibrant-002_v01.mp4",
+      "selected_visual": "aliens_scene-012_v01.mp4",
+      "reason": "galactic scale",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 51.687,
+      "end": 55.787,
+      "source_timeline_asset": "card_alpha_v01.mp4",
+      "selected_visual": "aliens_scene-002_v01.mp4",
+      "reason": "nearest star system",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 55.787,
+      "end": 59.628,
+      "source_timeline_asset": "mystery_A1_exoplanet-city-lights_v01_v01.mp4",
+      "selected_visual": "aliens_scene-011_v01.mp4",
+      "reason": "spacecraft crossing the gap",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 59.628,
+      "end": 63.728,
+      "source_timeline_asset": "card_lightyears_explain_v01.mp4",
+      "selected_visual": "aliens_scene-011_v01.mp4",
+      "reason": "spacecraft crossing the gap",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 63.728,
+      "end": 69.334,
+      "source_timeline_asset": "mystery_A1_exoplanet-city-lights_v02_v01.mp4",
+      "selected_visual": "aliens_scene-011_v01.mp4",
+      "reason": "spacecraft crossing the gap",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 69.334,
+      "end": 73.334,
+      "source_timeline_asset": "card_milky_v01.mp4",
+      "selected_visual": "aliens_scene-012_v01.mp4",
+      "reason": "hundreds of billions of stars",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 73.334,
+      "end": 78.158,
+      "source_timeline_asset": "mystery_A2_empty-nightside_v01_v01.mp4",
+      "selected_visual": "aliens_scene-012_v01.mp4",
+      "reason": "hundreds of billions of stars",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 78.158,
+      "end": 82.258,
+      "source_timeline_asset": "card_habitable_zone_v01.mp4",
+      "selected_visual": "aliens_scene-061_v01.mp4",
+      "reason": "habitable-zone world",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 82.258,
+      "end": 86.09899999999999,
+      "source_timeline_asset": "mystery_A3_megastructure_v01_v01.mp4",
+      "selected_visual": "aliens_scene-013_v01.mp4",
+      "reason": "planet orbit and transit",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 86.099,
+      "end": 88.599,
+      "source_timeline_asset": "chapter_03_03_exoplanets_v01.mp4",
+      "selected_visual": "chapter_03_03_exoplanets_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 88.599,
+      "end": 91.742,
+      "source_timeline_asset": "mystery_A3_megastructure_v02_v01.mp4",
+      "selected_visual": "aliens_scene-013_v01.mp4",
+      "reason": "planet orbit and transit",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 91.742,
+      "end": 95.842,
+      "source_timeline_asset": "card_drake_blackboard_v01.mp4",
+      "selected_visual": "card_drake_blackboard_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 95.842,
+      "end": 100.042,
+      "source_timeline_asset": "mystery_A4_visiting-fleet_v01_v01.mp4",
+      "selected_visual": "aliens_scene-013_v01.mp4",
+      "reason": "planets behind the Drake Equation",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 100.042,
+      "end": 104.242,
+      "source_timeline_asset": "mystery_A4_visiting-fleet_v02_v01.mp4",
+      "selected_visual": "aliens_scene-013_v01.mp4",
+      "reason": "planets behind the Drake Equation",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 104.242,
+      "end": 108.44200000000001,
+      "source_timeline_asset": "mystery_A5_silence-void_v01_v01.mp4",
+      "selected_visual": "aliens_scene-017_v01.mp4",
+      "reason": "possible crowded galaxy",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 108.442,
+      "end": 113.743,
+      "source_timeline_asset": "aliens_scene-011_v01.mp4",
+      "selected_visual": "aliens_scene-017_v01.mp4",
+      "reason": "possible crowded galaxy",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 113.743,
+      "end": 117.84299999999999,
+      "source_timeline_asset": "card_buzz_or_alone_v01.mp4",
+      "selected_visual": "aliens_scene-017_v01.mp4",
+      "reason": "buzzing galaxy versus solitude",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 117.843,
+      "end": 122.043,
+      "source_timeline_asset": "aliens_scene-013_v01.mp4",
+      "selected_visual": "aliens_scene-017_v01.mp4",
+      "reason": "buzzing galaxy versus solitude",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 122.043,
+      "end": 126.24300000000001,
+      "source_timeline_asset": "aliens_scene-017_v01.mp4",
+      "selected_visual": "aliens_scene-062_v01.mp4",
+      "reason": "overlapping technological eras",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 126.243,
+      "end": 129.458,
+      "source_timeline_asset": "aliens_scene-020_v01.mp4",
+      "selected_visual": "aliens_scene-062_v01.mp4",
+      "reason": "overlapping technological eras",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 129.458,
+      "end": 133.558,
+      "source_timeline_asset": "card_brief_candles_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "brief technological candles",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 133.558,
+      "end": 137.75799999999998,
+      "source_timeline_asset": "aliens_scene-024_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "brief technological candles",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 137.758,
+      "end": 141.958,
+      "source_timeline_asset": "aliens_scene-025_v01.mp4",
+      "selected_visual": "aliens_scene-062_v01.mp4",
+      "reason": "radio eras missing each other",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 141.958,
+      "end": 145.173,
+      "source_timeline_asset": "aliens_scene-030_v01.mp4",
+      "selected_visual": "aliens_scene-062_v01.mp4",
+      "reason": "radio eras missing each other",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 145.174,
+      "end": 148.174,
+      "source_timeline_asset": "card_candles_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "civilisation light fading",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 148.174,
+      "end": 152.374,
+      "source_timeline_asset": "aliens_scene-031_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "civilisation light fading",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 152.374,
+      "end": 157.74599999999998,
+      "source_timeline_asset": "aliens_scene-033_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "lonely sky",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 157.746,
+      "end": 161.746,
+      "source_timeline_asset": "card_scale_v01.mp4",
+      "selected_visual": "aliens_scene-012_v01.mp4",
+      "reason": "galactic timescale",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 161.746,
+      "end": 167.175,
+      "source_timeline_asset": "aliens_scene-035_v01.mp4",
+      "selected_visual": "aliens_scene-012_v01.mp4",
+      "reason": "galactic timescale",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 167.175,
+      "end": 169.675,
+      "source_timeline_asset": "chapter_04_04_fermi-paradox_v01.mp4",
+      "selected_visual": "chapter_04_04_fermi-paradox_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 169.675,
+      "end": 173.775,
+      "source_timeline_asset": "card_fermi_lunch_v01.mp4",
+      "selected_visual": "card_fermi_lunch_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 173.775,
+      "end": 178.186,
+      "source_timeline_asset": "aliens_scene-037_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "Fermi question and silence",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 178.186,
+      "end": 182.828,
+      "source_timeline_asset": "card_no_city_lights_v01.mp4",
+      "selected_visual": "aliens_scene-050_v01.mp4",
+      "reason": "city lights",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 182.828,
+      "end": 188.244,
+      "source_timeline_asset": "aliens_scene-038_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "no detected city lights",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 188.244,
+      "end": 192.112,
+      "source_timeline_asset": "card_no_megastructures_v01.mp4",
+      "selected_visual": "aliens_scene-021_v01.mp4",
+      "reason": "no obvious megastructures",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 192.112,
+      "end": 196.754,
+      "source_timeline_asset": "aliens_scene-041_v01.mp4",
+      "selected_visual": "aliens_scene-021_v01.mp4",
+      "reason": "no obvious megastructures",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 196.754,
+      "end": 200.62199999999999,
+      "source_timeline_asset": "card_no_fleets_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "no visiting fleets",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 200.623,
+      "end": 204.49099999999999,
+      "source_timeline_asset": "aliens_scene-042_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "no visiting fleets",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 204.491,
+      "end": 208.359,
+      "source_timeline_asset": "card_silence_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "silence at the story's heart",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 208.36,
+      "end": 210.86,
+      "source_timeline_asset": "chapter_05_05_great-filter_v01.mp4",
+      "selected_visual": "chapter_05_05_great-filter_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 210.86,
+      "end": 214.96,
+      "source_timeline_asset": "card_chemistry_curiosity_v01.mp4",
+      "selected_visual": "aliens_scene-064_v01.mp4",
+      "reason": "chemistry becoming life",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 214.96,
+      "end": 219.16,
+      "source_timeline_asset": "aliens_scene-043_v01.mp4",
+      "selected_visual": "aliens_scene-064_v01.mp4",
+      "reason": "chemistry becoming life",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 219.16,
+      "end": 224.202,
+      "source_timeline_asset": "aliens_scene-046_v01.mp4",
+      "selected_visual": "aliens_scene-064_v01.mp4",
+      "reason": "chemistry becoming life",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 224.201,
+      "end": 227.201,
+      "source_timeline_asset": "card_rare_v01.mp4",
+      "selected_visual": "aliens_scene-043_v01.mp4",
+      "reason": "simple life may be common",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 227.201,
+      "end": 231.40099999999998,
+      "source_timeline_asset": "aliens_scene-048_v01.mp4",
+      "selected_visual": "aliens_scene-043_v01.mp4",
+      "reason": "simple life may be common",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 231.401,
+      "end": 235.601,
+      "source_timeline_asset": "aliens_scene-050_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "technology may be brief",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 235.601,
+      "end": 237.642,
+      "source_timeline_asset": "aliens_scene-051_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "technology may be brief",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 237.642,
+      "end": 241.742,
+      "source_timeline_asset": "card_burn_bright_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "civilisations burn bright and short",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 241.742,
+      "end": 245.784,
+      "source_timeline_asset": "aliens_scene-061_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "civilisations burn bright and short",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 245.784,
+      "end": 249.826,
+      "source_timeline_asset": "aliens_scene-062_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "civilisations burn bright and short",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 249.826,
+      "end": 251.778,
+      "source_timeline_asset": "aliens_scene-063_v01.mp4",
+      "selected_visual": "aliens_scene-024_v01.mp4",
+      "reason": "civilisations burn bright and short",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 251.778,
+      "end": 255.878,
+      "source_timeline_asset": "card_do_not_disturb_v01.mp4",
+      "selected_visual": "aliens_scene-025_v01.mp4",
+      "reason": "do-not-disturb zoo hypothesis",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 255.878,
+      "end": 259.91999999999996,
+      "source_timeline_asset": "aliens_scene-064_v01.mp4",
+      "selected_visual": "aliens_scene-025_v01.mp4",
+      "reason": "do-not-disturb zoo hypothesis",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 259.919,
+      "end": 262.93699999999995,
+      "source_timeline_asset": "aliens_mystery-city_v01.mp4",
+      "selected_visual": "aliens_scene-025_v01.mp4",
+      "reason": "do-not-disturb zoo hypothesis",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 262.937,
+      "end": 266.937,
+      "source_timeline_asset": "card_zoo_v01.mp4",
+      "selected_visual": "aliens_scene-025_v01.mp4",
+      "reason": "distant observers",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 266.937,
+      "end": 271.437,
+      "source_timeline_asset": "aliens_mystery-fleet_v01.mp4",
+      "selected_visual": "aliens_scene-025_v01.mp4",
+      "reason": "distant observers",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 271.437,
+      "end": 274.09700000000004,
+      "source_timeline_asset": "aliens_mystery-megastructure_v01.mp4",
+      "selected_visual": "aliens_scene-025_v01.mp4",
+      "reason": "distant observers",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 274.097,
+      "end": 278.197,
+      "source_timeline_asset": "card_party_early_v01.mp4",
+      "selected_visual": "aliens_scene-060_v01.mp4",
+      "reason": "perhaps humanity is early",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 278.197,
+      "end": 282.697,
+      "source_timeline_asset": "aliens_mystery-silence-void_v01.mp4",
+      "selected_visual": "aliens_scene-060_v01.mp4",
+      "reason": "perhaps humanity is early",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 282.697,
+      "end": 285.257,
+      "source_timeline_asset": "aliens_vibrant-001_v01.mp4",
+      "selected_visual": "aliens_scene-012_v01.mp4",
+      "reason": "cosmic timeline",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 285.256,
+      "end": 287.756,
+      "source_timeline_asset": "chapter_06_06_explanations_v01.mp4",
+      "selected_visual": "chapter_06_06_explanations_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 287.756,
+      "end": 291.856,
+      "source_timeline_asset": "card_thousand_years_v01.mp4",
+      "selected_visual": "aliens_scene-030_v01.mp4",
+      "reason": "thousand-light-year journey",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 291.856,
+      "end": 296.356,
+      "source_timeline_asset": "aliens_vibrant-002_v01.mp4",
+      "selected_visual": "aliens_scene-030_v01.mp4",
+      "reason": "thousand-light-year journey",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 296.356,
+      "end": 300.856,
+      "source_timeline_asset": "mystery_A1_exoplanet-city-lights_v01_v01.mp4",
+      "selected_visual": "aliens_scene-030_v01.mp4",
+      "reason": "thousand-light-year journey",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 300.856,
+      "end": 303.412,
+      "source_timeline_asset": "mystery_A1_exoplanet-city-lights_v02_v01.mp4",
+      "selected_visual": "aliens_scene-030_v01.mp4",
+      "reason": "thousand-light-year journey",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 303.412,
+      "end": 307.512,
+      "source_timeline_asset": "card_distance_v01.mp4",
+      "selected_visual": "aliens_scene-030_v01.mp4",
+      "reason": "distance as logistics",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 307.512,
+      "end": 312.012,
+      "source_timeline_asset": "mystery_A2_empty-nightside_v01_v01.mp4",
+      "selected_visual": "aliens_scene-030_v01.mp4",
+      "reason": "distance as logistics",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 312.012,
+      "end": 316.512,
+      "source_timeline_asset": "mystery_A3_megastructure_v01_v01.mp4",
+      "selected_visual": "aliens_scene-030_v01.mp4",
+      "reason": "distance as logistics",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 316.512,
+      "end": 319.068,
+      "source_timeline_asset": "mystery_A3_megastructure_v02_v01.mp4",
+      "selected_visual": "aliens_scene-030_v01.mp4",
+      "reason": "distance as logistics",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 319.068,
+      "end": 323.168,
+      "source_timeline_asset": "card_not_handshake_v01.mp4",
+      "selected_visual": "aliens_scene-031_v01.mp4",
+      "reason": "meeting as a chemical fingerprint",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 323.168,
+      "end": 327.668,
+      "source_timeline_asset": "mystery_A4_visiting-fleet_v01_v01.mp4",
+      "selected_visual": "aliens_scene-031_v01.mp4",
+      "reason": "meeting as a chemical fingerprint",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 327.668,
+      "end": 332.168,
+      "source_timeline_asset": "mystery_A4_visiting-fleet_v02_v01.mp4",
+      "selected_visual": "aliens_scene-031_v01.mp4",
+      "reason": "meeting as a chemical fingerprint",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 332.168,
+      "end": 334.724,
+      "source_timeline_asset": "mystery_A5_silence-void_v01_v01.mp4",
+      "selected_visual": "aliens_scene-031_v01.mp4",
+      "reason": "meeting as a chemical fingerprint",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 334.724,
+      "end": 337.724,
+      "source_timeline_asset": "card_spectrum_v01.mp4",
+      "selected_visual": "aliens_scene-031_v01.mp4",
+      "reason": "spectrum and patterned signal",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 337.724,
+      "end": 342.224,
+      "source_timeline_asset": "aliens_scene-011_v01.mp4",
+      "selected_visual": "aliens_scene-031_v01.mp4",
+      "reason": "spectrum and patterned signal",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 342.224,
+      "end": 348.423,
+      "source_timeline_asset": "aliens_scene-013_v01.mp4",
+      "selected_visual": "aliens_scene-033_v01.mp4",
+      "reason": "modern search instruments",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 348.423,
+      "end": 352.523,
+      "source_timeline_asset": "card_seti_listen_v01.mp4",
+      "selected_visual": "aliens_scene-033_v01.mp4",
+      "reason": "SETI listening",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 352.523,
+      "end": 357.023,
+      "source_timeline_asset": "aliens_scene-017_v01.mp4",
+      "selected_visual": "aliens_scene-033_v01.mp4",
+      "reason": "SETI listening",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 357.023,
+      "end": 361.523,
+      "source_timeline_asset": "aliens_scene-020_v01.mp4",
+      "selected_visual": "aliens_scene-063_v01.mp4",
+      "reason": "radio and optical searches",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 361.523,
+      "end": 364.079,
+      "source_timeline_asset": "aliens_scene-024_v01.mp4",
+      "selected_visual": "aliens_scene-063_v01.mp4",
+      "reason": "radio and optical searches",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 364.078,
+      "end": 368.178,
+      "source_timeline_asset": "card_wow_1977_v01.mp4",
+      "selected_visual": "card_wow_1977_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 368.178,
+      "end": 372.678,
+      "source_timeline_asset": "aliens_scene-025_v01.mp4",
+      "selected_visual": "aliens_scene-035_v01.mp4",
+      "reason": "the Wow signal",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 372.678,
+      "end": 375.82,
+      "source_timeline_asset": "aliens_scene-030_v01.mp4",
+      "selected_visual": "aliens_scene-035_v01.mp4",
+      "reason": "the Wow signal",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 375.82,
+      "end": 379.92,
+      "source_timeline_asset": "card_cosmic_blink_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "listening for a cosmic blink",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 379.92,
+      "end": 385.605,
+      "source_timeline_asset": "aliens_scene-031_v01.mp4",
+      "selected_visual": "aliens_scene-020_v01.mp4",
+      "reason": "listening for a cosmic blink",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 385.605,
+      "end": 388.105,
+      "source_timeline_asset": "chapter_07_07_detection_v01.mp4",
+      "selected_visual": "chapter_07_07_detection_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 388.105,
+      "end": 391.105,
+      "source_timeline_asset": "card_exo_v01.mp4",
+      "selected_visual": "aliens_scene-037_v01.mp4",
+      "reason": "exoplanet atmospheres",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 391.105,
+      "end": 395.605,
+      "source_timeline_asset": "aliens_scene-033_v01.mp4",
+      "selected_visual": "aliens_scene-037_v01.mp4",
+      "reason": "exoplanet atmospheres",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 395.605,
+      "end": 400.105,
+      "source_timeline_asset": "aliens_scene-035_v01.mp4",
+      "selected_visual": "aliens_scene-038_v01.mp4",
+      "reason": "telescopes measuring worlds",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 400.105,
+      "end": 402.14000000000004,
+      "source_timeline_asset": "aliens_scene-037_v01.mp4",
+      "selected_visual": "aliens_scene-038_v01.mp4",
+      "reason": "telescopes measuring worlds",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 402.14,
+      "end": 406.24,
+      "source_timeline_asset": "card_biosignature_v01.mp4",
+      "selected_visual": "aliens_scene-037_v01.mp4",
+      "reason": "biosignature atmosphere",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 406.24,
+      "end": 410.74,
+      "source_timeline_asset": "aliens_scene-038_v01.mp4",
+      "selected_visual": "aliens_scene-037_v01.mp4",
+      "reason": "biosignature atmosphere",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 410.74,
+      "end": 414.616,
+      "source_timeline_asset": "aliens_scene-041_v01.mp4",
+      "selected_visual": "aliens_scene-041_v01.mp4",
+      "reason": "chemical evidence as data",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 414.616,
+      "end": 417.616,
+      "source_timeline_asset": "card_bio_v01.mp4",
+      "selected_visual": "aliens_scene-041_v01.mp4",
+      "reason": "chemical evidence as data",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 417.616,
+      "end": 422.116,
+      "source_timeline_asset": "aliens_scene-042_v01.mp4",
+      "selected_visual": "aliens_scene-041_v01.mp4",
+      "reason": "chemical evidence as data",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 422.116,
+      "end": 427.092,
+      "source_timeline_asset": "aliens_scene-043_v01.mp4",
+      "selected_visual": "aliens_scene-041_v01.mp4",
+      "reason": "chemical evidence as data",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 427.091,
+      "end": 431.19100000000003,
+      "source_timeline_asset": "card_line_on_graph_v01.mp4",
+      "selected_visual": "aliens_scene-041_v01.mp4",
+      "reason": "first contact as a graph",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 431.191,
+      "end": 436.448,
+      "source_timeline_asset": "aliens_scene-046_v01.mp4",
+      "selected_visual": "aliens_scene-041_v01.mp4",
+      "reason": "first contact as a graph",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 436.448,
+      "end": 439.448,
+      "source_timeline_asset": "card_graph_v01.mp4",
+      "selected_visual": "aliens_scene-041_v01.mp4",
+      "reason": "first contact as a graph",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 439.448,
+      "end": 443.948,
+      "source_timeline_asset": "aliens_scene-048_v01.mp4",
+      "selected_visual": "aliens_scene-042_v01.mp4",
+      "reason": "searching Mars",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 443.948,
+      "end": 445.805,
+      "source_timeline_asset": "aliens_scene-050_v01.mp4",
+      "selected_visual": "aliens_scene-042_v01.mp4",
+      "reason": "searching Mars",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 445.805,
+      "end": 448.805,
+      "source_timeline_asset": "card_mars_v01.mp4",
+      "selected_visual": "aliens_scene-042_v01.mp4",
+      "reason": "searching Mars",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 448.805,
+      "end": 453.305,
+      "source_timeline_asset": "aliens_scene-051_v01.mp4",
+      "selected_visual": "aliens_scene-043_v01.mp4",
+      "reason": "icy moons and subsurface oceans",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 453.305,
+      "end": 455.16200000000003,
+      "source_timeline_asset": "aliens_scene-061_v01.mp4",
+      "selected_visual": "aliens_scene-043_v01.mp4",
+      "reason": "icy moons and subsurface oceans",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 455.162,
+      "end": 459.262,
+      "source_timeline_asset": "card_ice_grain_v01.mp4",
+      "selected_visual": "aliens_scene-064_v01.mp4",
+      "reason": "microbe in an ice grain",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 459.262,
+      "end": 463.762,
+      "source_timeline_asset": "aliens_scene-062_v01.mp4",
+      "selected_visual": "aliens_scene-064_v01.mp4",
+      "reason": "microbe in an ice grain",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 463.762,
+      "end": 466.078,
+      "source_timeline_asset": "aliens_scene-063_v01.mp4",
+      "selected_visual": "aliens_scene-043_v01.mp4",
+      "reason": "life without radios",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 466.078,
+      "end": 468.578,
+      "source_timeline_asset": "chapter_08_08_first-contact_v01.mp4",
+      "selected_visual": "chapter_08_08_first-contact_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 468.578,
+      "end": 472.678,
+      "source_timeline_asset": "card_faceplate_v01.mp4",
+      "selected_visual": "aliens_scene-043_v01.mp4",
+      "reason": "life without radios",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 472.678,
+      "end": 477.178,
+      "source_timeline_asset": "aliens_scene-064_v01.mp4",
+      "selected_visual": "aliens_scene-046_v01.mp4",
+      "reason": "physical interstellar encounter",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 477.178,
+      "end": 481.678,
+      "source_timeline_asset": "aliens_mystery-city_v01.mp4",
+      "selected_visual": "aliens_scene-046_v01.mp4",
+      "reason": "physical interstellar encounter",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 481.678,
+      "end": 484.235,
+      "source_timeline_asset": "aliens_mystery-fleet_v01.mp4",
+      "selected_visual": "aliens_scene-046_v01.mp4",
+      "reason": "physical interstellar encounter",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 484.235,
+      "end": 487.235,
+      "source_timeline_asset": "card_odds_v01.mp4",
+      "selected_visual": "aliens_scene-046_v01.mp4",
+      "reason": "long physical-contact odds",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 487.235,
+      "end": 491.735,
+      "source_timeline_asset": "aliens_mystery-megastructure_v01.mp4",
+      "selected_visual": "aliens_scene-046_v01.mp4",
+      "reason": "long physical-contact odds",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 491.735,
+      "end": 496.235,
+      "source_timeline_asset": "aliens_mystery-silence-void_v01.mp4",
+      "selected_visual": "aliens_scene-046_v01.mp4",
+      "reason": "long physical-contact odds",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 496.235,
+      "end": 501.63100000000003,
+      "source_timeline_asset": "aliens_vibrant-001_v01.mp4",
+      "selected_visual": "aliens_scene-030_v01.mp4",
+      "reason": "brutal travel timescales",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 501.631,
+      "end": 505.731,
+      "source_timeline_asset": "card_this_century_v01.mp4",
+      "selected_visual": "aliens_scene-048_v01.mp4",
+      "reason": "this century's growing catalogue",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 505.731,
+      "end": 510.231,
+      "source_timeline_asset": "aliens_vibrant-002_v01.mp4",
+      "selected_visual": "aliens_scene-048_v01.mp4",
+      "reason": "this century's growing catalogue",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 510.231,
+      "end": 516.418,
+      "source_timeline_asset": "mystery_A1_exoplanet-city-lights_v01_v01.mp4",
+      "selected_visual": "aliens_scene-038_v01.mp4",
+      "reason": "instruments getting sharper",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 516.418,
+      "end": 520.418,
+      "source_timeline_asset": "card_honest_v01.mp4",
+      "selected_visual": "card_honest_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 520.418,
+      "end": 524.918,
+      "source_timeline_asset": "mystery_A1_exoplanet-city-lights_v02_v01.mp4",
+      "selected_visual": "aliens_scene-046_v01.mp4",
+      "reason": "careful uncertainty",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 524.918,
+      "end": 531.205,
+      "source_timeline_asset": "mystery_A2_empty-nightside_v01_v01.mp4",
+      "selected_visual": "aliens_scene-046_v01.mp4",
+      "reason": "careful uncertainty",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 531.205,
+      "end": 535.3050000000001,
+      "source_timeline_asset": "card_silence_us_v01.mp4",
+      "selected_visual": "aliens_scene-050_v01.mp4",
+      "reason": "the silence is also about us",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 535.305,
+      "end": 539.805,
+      "source_timeline_asset": "mystery_A3_megastructure_v01_v01.mp4",
+      "selected_visual": "aliens_scene-050_v01.mp4",
+      "reason": "the silence is also about us",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 539.805,
+      "end": 545.122,
+      "source_timeline_asset": "mystery_A3_megastructure_v02_v01.mp4",
+      "selected_visual": "aliens_scene-050_v01.mp4",
+      "reason": "the silence is also about us",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 545.122,
+      "end": 548.122,
+      "source_timeline_asset": "card_lesson_v01.mp4",
+      "selected_visual": "aliens_scene-050_v01.mp4",
+      "reason": "lesson about technological life",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 548.122,
+      "end": 552.622,
+      "source_timeline_asset": "mystery_A4_visiting-fleet_v01_v01.mp4",
+      "selected_visual": "aliens_scene-050_v01.mp4",
+      "reason": "lesson about technological life",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 552.622,
+      "end": 555.56,
+      "source_timeline_asset": "mystery_A4_visiting-fleet_v02_v01.mp4",
+      "selected_visual": "aliens_scene-051_v01.mp4",
+      "reason": "interpreting ambiguous signals",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 555.56,
+      "end": 558.06,
+      "source_timeline_asset": "chapter_09_09_conclusion_v01.mp4",
+      "selected_visual": "chapter_09_09_conclusion_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 558.06,
+      "end": 562.16,
+      "source_timeline_asset": "card_maybe_signal_v01.mp4",
+      "selected_visual": "aliens_scene-035_v01.mp4",
+      "reason": "maybe a signal",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 562.16,
+      "end": 566.66,
+      "source_timeline_asset": "mystery_A5_silence-void_v01_v01.mp4",
+      "selected_visual": "aliens_scene-035_v01.mp4",
+      "reason": "maybe a signal",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 566.66,
+      "end": 572.915,
+      "source_timeline_asset": "aliens_scene-011_v01.mp4",
+      "selected_visual": "aliens_scene-055_v01.mp4",
+      "reason": "human hope and fear",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 572.915,
+      "end": 577.015,
+      "source_timeline_asset": "card_end_wonder_v01.mp4",
+      "selected_visual": "aliens_scene-050_v01.mp4",
+      "reason": "understanding life on Earth",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 577.015,
+      "end": 581.515,
+      "source_timeline_asset": "aliens_scene-013_v01.mp4",
+      "selected_visual": "aliens_scene-050_v01.mp4",
+      "reason": "understanding life on Earth",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 581.515,
+      "end": 586.42,
+      "source_timeline_asset": "aliens_scene-017_v01.mp4",
+      "selected_visual": "aliens_scene-055_v01.mp4",
+      "reason": "quiet cosmos",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 586.42,
+      "end": 590.52,
+      "source_timeline_asset": "card_end_perspective_v01.mp4",
+      "selected_visual": "aliens_scene-050_v01.mp4",
+      "reason": "our precious noisy planet",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 590.52,
+      "end": 595.02,
+      "source_timeline_asset": "aliens_scene-020_v01.mp4",
+      "selected_visual": "aliens_scene-055_v01.mp4",
+      "reason": "the rest of the sky stays quiet",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 595.02,
+      "end": 599.925,
+      "source_timeline_asset": "aliens_scene-024_v01.mp4",
+      "selected_visual": "aliens_scene-055_v01.mp4",
+      "reason": "the rest of the sky stays quiet",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 599.924,
+      "end": 604.024,
+      "source_timeline_asset": "card_end_invitation_v01.mp4",
+      "selected_visual": "card_end_invitation_v01.mp4",
+      "reason": "retained high-value information frame",
+      "retained_card_or_chapter": true
+    },
+    {
+      "start": 604.024,
+      "end": 608.524,
+      "source_timeline_asset": "aliens_scene-025_v01.mp4",
+      "selected_visual": "aliens_scene-055_v01.mp4",
+      "reason": "invitation to keep listening",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 608.524,
+      "end": 610.728,
+      "source_timeline_asset": "aliens_scene-030_v01.mp4",
+      "selected_visual": "aliens_scene-055_v01.mp4",
+      "reason": "invitation to keep listening",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 610.728,
+      "end": 614.828,
+      "source_timeline_asset": "card_invitation_v01.mp4",
+      "selected_visual": "aliens_scene-055_v01.mp4",
+      "reason": "invitation to keep listening",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 614.828,
+      "end": 618.831,
+      "source_timeline_asset": "aliens_scene-031_v01.mp4",
+      "selected_visual": "aliens_scene-065_v01.mp4",
+      "reason": "final reflective stars",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 618.831,
+      "end": 622.931,
+      "source_timeline_asset": "card_end_subscribe_v01.mp4",
+      "selected_visual": "aliens_scene-065_v01.mp4",
+      "reason": "final reflective stars",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 622.931,
+      "end": 626.0780000000001,
+      "source_timeline_asset": "aliens_scene-033_v01.mp4",
+      "selected_visual": "aliens_scene-065_v01.mp4",
+      "reason": "final reflective stars",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 626.078,
+      "end": 631.024,
+      "source_timeline_asset": "aliens_scene-035_v01.mp4",
+      "selected_visual": "aliens_scene-065_v01.mp4",
+      "reason": "final reflective stars",
+      "retained_card_or_chapter": false
+    },
+    {
+      "start": 631.024,
+      "end": 635.475,
+      "source_timeline_asset": "aliens_scene-037_v01.mp4",
+      "selected_visual": "aliens_scene-065_v01.mp4",
+      "reason": "final reflective stars",
+      "retained_card_or_chapter": false
+    }
+  ]
+}

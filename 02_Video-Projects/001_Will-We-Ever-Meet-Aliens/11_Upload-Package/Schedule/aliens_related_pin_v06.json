@@ -1,0 +1,91 @@
+{
+  "related": [
+    {
+      "id": "01",
+      "video_id": "z-DLqoSoEBo",
+      "ok": false,
+      "nav": "channel_scoped",
+      "url": "https://studio.youtube.com/channel/UC_esArsDKd3GJvOkeO0DUog/video/z-DLqoSoEBo/edit",
+      "error": "no_picker"
+    },
+    {
+      "id": "02",
+      "video_id": "UWwNKYf_aU8",
+      "ok": false,
+      "nav": "channel_scoped",
+      "url": "https://studio.youtube.com/channel/UC_esArsDKd3GJvOkeO0DUog/video/UWwNKYf_aU8/edit",
+      "error": "no_picker"
+    },
+    {
+      "id": "03",
+      "video_id": "MO19iXYCu0c",
+      "ok": false,
+      "nav": "channel_scoped",
+      "url": "https://studio.youtube.com/channel/UC_esArsDKd3GJvOkeO0DUog/video/MO19iXYCu0c/edit",
+      "error": "no_picker"
+    },
+    {
+      "id": "04",
+      "video_id": "--CxhjNqtSY",
+      "ok": false,
+      "nav": "channel_scoped",
+      "url": "https://studio.youtube.com/channel/UC_esArsDKd3GJvOkeO0DUog/video/--CxhjNqtSY/edit",
+      "error": "no_picker"
+    }
+  ],
+  "pin": {
+    "ok": false,
+    "via": "studio_comments",
+    "has_needle": true,
+    "menu_open": "\u2026Read more",
+    "menu_items": [
+      "Channel content",
+      "Details",
+      "Details",
+      "Analytics",
+      "Analytics",
+      "Editor",
+      "Editor",
+      "Comments",
+      "Comments",
+      "Subtitles",
+      "Subtitles",
+      "Claims",
+      "Claims",
+      "Clips",
+      "Clips",
+      "Settings",
+      "Send feedback",
+      "Comment"
+    ],
+    "pin_click": null,
+    "error": "no_pin_in_studio_menu",
+    "watch": {
+      "ok": false,
+      "via": "watch",
+      "menu": "#action-menu button",
+      "items": [
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Top Show featured comments",
+        "Newest Show recent comments, including potential spam",
+        "Edit",
+        "Delete"
+      ]
+    }
+  },
+  "list_calls": [],
+  "ok": false,
+  "list_tail": [
+    {
+      "ids": [
+        "n7CbJrOCnU0",
+        "Mo93x0fxB1Q"
+      ],
+      "has_long": true,
+      "snip": "{\n  \"responseContext\": {\n    \"serviceTrackingParams\": [\n      {\n        \"service\": \"GFEEDBACK\",\n        \"params\": [\n          {\n            \"key\": \"serializedDelegationContext\",\n            \"value\": \"EhhVQ19lc0Fyc0RLZDNHSnZPa2VPMERVb2cqAggI\"\n          },\n          {\n            \"key\": \"logged_in\",\n            \"value\": \"1\"\n          },\n          {\n ",
+      "deleg_orbit": true,
+      "deleg_oppti": false
+    }
+  ]
+}

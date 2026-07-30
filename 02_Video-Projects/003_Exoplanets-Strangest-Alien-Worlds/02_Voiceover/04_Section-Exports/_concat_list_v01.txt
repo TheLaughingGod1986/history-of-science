@@ -1,0 +1,5 @@
+file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/exoplanets_vo_section-01_hook-exoplanet_ivc_kDch_v01.mp3'
+file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/exoplanets_vo_section-02_detection_ivc_kDch_v01.mp3'
+file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/exoplanets_vo_section-03_diamond-glass_ivc_kDch_v01.mp3'
+file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/exoplanets_vo_section-04_suns-jupiter_ivc_kDch_v01.mp3'
+file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/02_Voiceover/04_Section-Exports/exoplanets_vo_section-05_eyeball-close_ivc_kDch_v01.mp3'

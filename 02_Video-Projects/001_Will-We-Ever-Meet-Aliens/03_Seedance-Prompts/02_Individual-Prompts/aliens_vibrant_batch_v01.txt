@@ -1,0 +1,83 @@
+# Vibrant unique B-roll prompts for Video 001 — one shot each, never reuse.
+# Style suffix appended by generator.
+
+aliens_vibrant-001|5s|Low flight over an alien ocean world with teal water, glowing bioluminescent blooms, twin moons above, cinematic color
+aliens_vibrant-002|5s|Close flyover of a rust-red desert planet with blue sunset, long rover tracks, heat haze, vivid sci-fi landscape
+aliens_vibrant-003|5s|Gas giant filling the sky from an icy moon surface, swirling orange storms, sharp ice cliffs, dramatic light
+aliens_vibrant-004|5s|Radio telescope dish tilting upward at dusk, warm orange sky to deep blue, dish lattice catching last light
+aliens_vibrant-005|5s|Bright green optical laser pulse shooting into starry night from a mountain observatory dome, cinematic
+aliens_vibrant-006|5s|Exoplanet atmosphere limb with vivid aurora ribbons green and magenta wrapping a blue world, orbital camera
+aliens_vibrant-007|5s|Under-ice alien ocean: cracks of light through thick ice, dark water below, soft volumetric shafts
+aliens_vibrant-008|5s|Hydrothermal vent chimneys glowing orange underwater, mineral clouds, mysterious deep-sea alien vibe
+aliens_vibrant-009|5s|Close approach to a volcanic exoplanet: lava rivers, ash plumes, dramatic red-black contrast
+aliens_vibrant-010|5s|Crystal canyon on an asteroid: amethyst and cyan facets reflecting starlight, slow camera glide
+aliens_vibrant-011|5s|Pulsar beams sweeping like cosmic lighthouses through colorful nebula dust, energetic motion
+aliens_vibrant-012|5s|Probe with blue ion trail skimming above a ringed planet, rings glittering ice, high detail
+aliens_vibrant-013|5s|City lights of Earth at night morphing into a pull-back revealing deep space, vibrant electric gold
+aliens_vibrant-014|5s|Abstract but vivid chemical spectrum ribbons: neon magenta cyan gold waves, scientific beauty not charts
+aliens_vibrant-015|5s|Habitable-zone world with turquoise seas and white clouds, bright sun flare, hopeful cinematic color
+aliens_vibrant-016|5s|Mars canyon aerial: rich terracotta cliffs, dust devil, sharp morning light
+aliens_vibrant-017|5s|Icy geyser erupting on a moon into black space, sparkling crystals, Saturn-like rings distant
+aliens_vibrant-018|5s|SETI control-room glow: soft blue screens reflecting on glass, no readable text, moody tech
+aliens_vibrant-019|5s|Wow-signal style pulse: single bright spike of light racing across a dark instrument panel abstract
+aliens_vibrant-020|5s|Binary star sunset over purple dunes, long shadows, rich saturated color palette
+aliens_vibrant-021|5s|Microscopic ice grain with tiny glowing microbe-like spark (tasteful, not horror), scientific wonder
+aliens_vibrant-022|5s|Orbiting space telescope mirror catching a brilliant star, golden reflections, precise motion
+aliens_vibrant-023|5s|Dense colorful nebula fly-through with cyan pink gold clouds, stars as sparkles, energetic camera
+aliens_vibrant-024|5s|Alien rainforest canopy from above at night, bioluminescent canopy lights like a living city
+aliens_vibrant-025|5s|Comet nucleus close pass: jets of vapor, rocky ice, dramatic side lighting
+aliens_vibrant-026|5s|Black hole accretion disk stylised cinematic gold and teal spiral, safe tasteful science aesthetic
+aliens_vibrant-027|5s|Supernova remnant shell expanding in vivid reds and blues, volumetric dust, epic scale
+aliens_vibrant-028|5s|Quiet invitation: single bright star pulsing gently, soft colorful lens blooms, emotional close frame
+aliens_vibrant-029|5s|Caution signal: amber beacon light sweeping across dark space station silhouette, tense but clean
+aliens_vibrant-030|5s|Catalogue of worlds montage energy: rapid but smooth passes of differently colored planets (no text)
+aliens_vibrant-031|5s|Docking lights of a deep-space array blinking in sequence against nebula backdrop
+aliens_vibrant-032|5s|Solar flare arching off the Sun in extreme close detail, plasma loops, intense orange white
+aliens_vibrant-033|5s|Europa-style ice cracks forming glowing blue lines from below, aerial push-in
+aliens_vibrant-034|5s|Titan-like orange haze atmosphere with distant lakes of dark liquid, mysterious mood
+aliens_vibrant-035|5s|Neutron star surface conceptual: magnetic arcs, extreme contrast, sci-fi documentary look
+aliens_vibrant-036|5s|Aurora curtain dancing over an icy exoplanet night side, electric greens and violets
+aliens_vibrant-037|5s|Ancient radio antenna field in desert at blue hour, dishes facing different directions
+aliens_vibrant-038|5s|Light-echo rings expanding around a bright stellar event, colorful ripples
+aliens_vibrant-039|5s|Cave of glowing fungi-like flora on alien world, warm bioluminescence, wonder not horror
+aliens_vibrant-040|5s|Starship engine burn silhouette against a vivid magenta nebula, scale and power
+aliens_vibrant-041|5s|Planet rise over a cratered moon, crisp terminator light, saturated blue and gold
+aliens_vibrant-042|5s|Data becoming first contact: glowing particle constellation assembling into a face-like abstract (no logos)
+aliens_vibrant-043|5s|Ocean world storm eye from orbit, swirling white clouds, deep turquoise, dynamic rotation
+aliens_vibrant-044|5s|Laser grid mapping an asteroid in colorful scanning light, tech documentary style
+aliens_vibrant-045|5s|Quiet Earth from far away as a pale blue dot, then slight push revealing surrounding colorful cosmos
+aliens_vibrant-046|5s|Ice cliff collapse into black alien sea, spray catching sunlight, dramatic nature-doc energy
+aliens_vibrant-047|5s|Magnetic field lines visualised as luminous threads around a blue planet, elegant science art
+aliens_vibrant-048|5s|Dawn on a tidally locked world: razor terminator between fire and ice, extreme color contrast
+aliens_vibrant-049|5s|Array of optical telescopes on a high plateau under milky colorful sky, time-lapse energy without looping feel
+aliens_vibrant-050|5s|Particle fountain from a young star, pink and blue jets, cosmic nursery vibrancy
+aliens_vibrant-051|5s|Subsurface lake revealed by radar-style glow under ice crust, cyan revelation moment
+aliens_vibrant-052|5s|Ring plane crossing: camera flies through glittering ice ring particles, high detail sparkle
+aliens_vibrant-053|5s|Alien megastructure hint as distant geometric glints only (subtle, not Star Trek), mysterious
+aliens_vibrant-054|5s|Lightning storms on a gas giant night side, purple flashes across cloud bands
+aliens_vibrant-055|5s|Greenhouse exoplanet with thick golden clouds and brief clearings to alien surface glow
+aliens_vibrant-056|5s|Dust devil alley on Mars-like plain, long golden hour shadows, kinetic sand
+aliens_vibrant-057|5s|Cryovolcano plume catching rainbow refraction in ice crystals, magical science
+aliens_vibrant-058|5s|Deep field of colorful galaxies but with strong depth parallax motion (not a static wallpaper)
+aliens_vibrant-059|5s|Human hand silhouette reaching toward a holographic planet (tasteful, no logos), wonder of discovery
+aliens_vibrant-060|5s|Final emotional wide: bright spiral arm with vivid blue star-forming regions, slow majestic push
+aliens_vibrant-061|5s|Close crystalline microbe colony on rock in droplet of water, scientific beauty macro
+aliens_vibrant-062|5s|Orbital sunrise over cloud tops with intense god-rays, hopeful cinematic grade
+aliens_vibrant-063|5s|Radio wave ripples visualised as expanding luminous rings from Earth into dark, poetic
+aliens_vibrant-064|5s|Shattered comet fragments streaming past camera, ice glitter, dynamic fly-through
+aliens_vibrant-065|5s|Alien coral reef under thin ice, neon flora, gentle current motion
+aliens_vibrant-066|5s|Control laser painting a constellation path across the dome of night, vivid green line
+aliens_vibrant-067|5s|Molten exoplanet nightside with glowing cracks like veins of fire, intense
+aliens_vibrant-068|5s|Soft rain on an alien ocean under green sky, intimate and strange
+aliens_vibrant-069|5s|Telescope dome opening at night revealing a bright colorful instrument laser path
+aliens_vibrant-070|5s|Crowded star-forming region with pink pillars and blue young stars, Hubble-like vibrancy animated
+aliens_vibrant-071|5s|Probe descending through amber haze toward a lake of hydrocarbons, landing lights on
+aliens_vibrant-072|5s|Time-slice of overlapping radio eras as layered translucent colorful shells (abstract, no text)
+aliens_vibrant-073|5s|Ice grain rotating in microgravity with internal sparkle, macro scientific beauty
+aliens_vibrant-074|5s|Earth city grid dissolving into star points, poetic transition energy
+aliens_vibrant-075|5s|Like a cosmic invitation: warm golden corridor of light through nebula toward a distant world
+aliens_vibrant-076|5s|Subscribe-energy finale sky: bright hopeful sunrise over Earth limb from orbit, clean and epic
+aliens_vibrant-077|5s|Arrow-of-attention visual: glowing chevrons of light pointing downward in dark UI-free space art
+aliens_vibrant-078|5s|Orbit channel energy: orange accent light orb drifting through cyan nebula (NO robot character)
+aliens_vibrant-079|5s|Vibrant planetary rings edge-on becoming face-on, color shift gold to ice blue
+aliens_vibrant-080|5s|Closing quiet: single lighthouse beam from a lonely outpost moon across colorful clouds

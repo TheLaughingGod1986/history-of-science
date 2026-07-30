@@ -1,0 +1,208 @@
+{
+  "long": {
+    "id": "n7CbJrOCnU0",
+    "tag": "long",
+    "ok": false,
+    "desc": {
+      "ok": true,
+      "len": 1737
+    },
+    "tags": {
+      "ok": true,
+      "probe": [
+        {
+          "al": "Tags",
+          "ph": "Add tag",
+          "id": "text-input",
+          "name": "",
+          "x": 620,
+          "y": 2071.8203125,
+          "w": 672,
+          "h": 32
+        }
+      ],
+      "via": "role"
+    },
+    "first_comment": {
+      "ok": false,
+      "opened": "edit_attempt"
+    },
+    "saved": false,
+    "verify_hook": true,
+    "verify_tags_sample": true
+  },
+  "shorts": [
+    {
+      "id": "eZGAhF8dN7w",
+      "tag": "s01",
+      "ok": true,
+      "desc": {
+        "ok": true,
+        "len": 282
+      },
+      "tags": {
+        "ok": true,
+        "probe": [
+          {
+            "al": "Tags",
+            "ph": "Add tag",
+            "id": "text-input",
+            "name": "",
+            "x": 620,
+            "y": 2071.6484375,
+            "w": 672,
+            "h": 32
+          }
+        ],
+        "via": "role"
+      },
+      "saved": true,
+      "verify_hook": true,
+      "verify_tags_sample": true
+    },
+    {
+      "id": "C4GuFEFGySI",
+      "tag": "s02",
+      "ok": true,
+      "desc": {
+        "ok": true,
+        "len": 285,
+        "assumed": true
+      },
+      "tags": {
+        "ok": true,
+        "probe": [
+          {
+            "al": "Tags",
+            "ph": "Add tag",
+            "id": "text-input",
+            "name": "",
+            "x": 620,
+            "y": 2071.6484375,
+            "w": 672,
+            "h": 32
+          }
+        ],
+        "via": "role"
+      },
+      "saved": true,
+      "verify_hook": false,
+      "verify_tags_sample": true
+    },
+    {
+      "id": "hdlr1soUwNA",
+      "tag": "s03",
+      "ok": true,
+      "desc": {
+        "ok": true,
+        "len": 274
+      },
+      "tags": {
+        "ok": true,
+        "probe": [
+          {
+            "al": "Tags",
+            "ph": "Add tag",
+            "id": "text-input",
+            "name": "",
+            "x": 620,
+            "y": 2071.6484375,
+            "w": 672,
+            "h": 32
+          }
+        ],
+        "via": "role"
+      },
+      "saved": true,
+      "verify_hook": true,
+      "verify_tags_sample": true
+    },
+    {
+      "id": "80S5E-AWFhA",
+      "tag": "s04",
+      "ok": true,
+      "desc": {
+        "ok": true,
+        "len": 279
+      },
+      "tags": {
+        "ok": true,
+        "probe": [
+          {
+            "al": "Tags",
+            "ph": "Add tag",
+            "id": "text-input",
+            "name": "",
+            "x": 620,
+            "y": 2071.6484375,
+            "w": 672,
+            "h": 32
+          }
+        ],
+        "via": "role"
+      },
+      "saved": true,
+      "verify_hook": true,
+      "verify_tags_sample": false
+    },
+    {
+      "id": "olnaYqeOtFs",
+      "tag": "s05",
+      "ok": true,
+      "desc": {
+        "ok": true,
+        "len": 274,
+        "assumed": true
+      },
+      "tags": {
+        "ok": true,
+        "probe": [
+          {
+            "al": "Tags",
+            "ph": "Add tag",
+            "id": "text-input",
+            "name": "",
+            "x": 620,
+            "y": 2071.6484375,
+            "w": 672,
+            "h": 32
+          }
+        ],
+        "via": "role"
+      },
+      "saved": true,
+      "verify_hook": false,
+      "verify_tags_sample": true
+    },
+    {
+      "id": "5nMieBeymKU",
+      "tag": "s06",
+      "ok": true,
+      "desc": {
+        "ok": true,
+        "len": 284
+      },
+      "tags": {
+        "ok": true,
+        "probe": [
+          {
+            "al": "Tags",
+            "ph": "Add tag",
+            "id": "text-input",
+            "name": "",
+            "x": 620,
+            "y": 2071.6484375,
+            "w": 672,
+            "h": 32
+          }
+        ],
+        "via": "role"
+      },
+      "saved": true,
+      "verify_hook": true,
+      "verify_tags_sample": true
+    }
+  ],
+  "related_note": "Studio Related picker only lists PUBLIC videos \u2014 run after long goes live 6 Aug 19:00 UK",
+  "ok": false
+}
