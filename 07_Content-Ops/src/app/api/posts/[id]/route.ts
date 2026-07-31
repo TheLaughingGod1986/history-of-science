@@ -98,6 +98,14 @@ export async function PATCH(
       repostReason: body.repostReason ?? post.repostReason,
       title: body.title ?? post.title,
       caption: body.caption ?? post.caption,
+      approvedForPublish:
+        body.approvedForPublish !== undefined ? Boolean(body.approvedForPublish) : post.approvedForPublish,
+      privacyStatus: body.privacyStatus !== undefined ? body.privacyStatus : post.privacyStatus,
+      madeForKids: body.madeForKids !== undefined ? body.madeForKids : post.madeForKids,
+      containsSyntheticMedia:
+        body.containsSyntheticMedia !== undefined
+          ? body.containsSyntheticMedia
+          : post.containsSyntheticMedia,
     },
   });
 

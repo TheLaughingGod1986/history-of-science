@@ -113,7 +113,15 @@ export default async function ClipPage({
                   {post.scheduledAt ? ` · ${formatLondon(post.scheduledAt)}` : ""}
                 </div>
               </div>
-              <PostStatusForm postId={post.id} status={post.uploadStatus} url={post.platformUrl} />
+              <PostStatusForm
+                postId={post.id}
+                status={post.uploadStatus}
+                url={post.platformUrl}
+                approvedForPublish={post.approvedForPublish}
+                privacyStatus={post.privacyStatus}
+                madeForKids={post.madeForKids}
+                platform={post.platform}
+              />
             </div>
             {post.title ? (
               <p className="mt-3 text-sm font-medium text-[#F5E8D2]">{post.title}</p>

@@ -64,29 +64,36 @@ model ShortClip {
 }
 
 model PlatformPost {
-  id                String              @id @default(cuid())
-  shortClipId       String
-  shortClip         ShortClip           @relation(fields: [shortClipId], references: [id], onDelete: Cascade)
-  platform          String
-  title             String?
-  caption           String?
-  hashtags          String? // JSON array
-  callToAction      String?
-  scheduledAt       DateTime?
-  publishedAt       DateTime?
-  platformPostId    String?
-  platformUrl       String?
-  uploadStatus      String              @default("draft")
-  publishingMethod  String              @default("manual")
-  notes             String?
-  pinnedComment     String?
-  coverText         String?
-  storyCaption      String?
-  commentPrompt     String?
-  repostReason      String?
-  createdAt         DateTime            @default(now())
-  updatedAt         DateTime            @updatedAt
-  metrics           PerformanceMetric[]
+  id                    String           @id @default(cuid())
+  shortClipId           String
+  shortClip             ShortClip        @relation(fields: [shortClipId], references: [id], onDelete: Cascade)
+  platform              String
+  title                 String?
+  caption               String?
+  hashtags              String? // JSON array
+  callToAction          String?
+  scheduledAt           DateTime?
+  publishedAt           DateTime?
+  platformPostId        String?
+  platformUrl           String?
+  uploadStatus          String           @default("draft")
+  publishingMethod      String           @default("manual")
+  notes                 String?
+  pinnedComment         String?
+  coverText             String?
+  storyCaption          String?
+  commentPrompt         String?
+  repostReason          String?
+  approvedForPublish    Boolean          @default(false)
+  privacyStatus         String?
+  madeForKids           Boolean?
+  containsSyntheticMedia Boolean?
+  mediaChecksum         String?
+  mediaFilePath         String?
+  createdAt             DateTime         @default(now())
+  updatedAt             DateTime         @updatedAt
+  metrics               PerformanceMetric[]
+  publishingJobs        PublishingJob[]
 
   @@index([platform, uploadStatus])
   @@index([scheduledAt])
@@ -178,4 +185,116 @@ model AppSetting {
   key       String   @unique
   value     String
   updatedAt DateTime @updatedAt
+}
+
+model PlatformConnection {
+  id                          String          @id @default(cuid())
+  platform                    String
+  accountId                   String?
+  accountName                 String?
+  accountUsername             String?
+  accountType                 String?
+  profileUrl                  String?
+  avatarUrl                   String?
+  channelId                   String?
+  pageId                      String?
+  instagramBusinessAccountId  String?
+  externalUserId              String?
+  connectionStatus            String          @default("pending")
+  grantedScopes               String? // JSON array
+  capabilitiesJson            String?
+  accessTokenEncrypted        String?
+  refreshTokenEncrypted       String?
+  accessTokenExpiresAt        DateTime?
+  refreshTokenExpiresAt       DateTime?
+  lastValidatedAt             DateTime?
+  lastRefreshAt               DateTime?
+  lastSuccessfulPublishAt     DateTime?
+  lastConnectionError         String?
+  metadataJson                String?
+  createdAt                   DateTime        @default(now())
+  updatedAt                   DateTime        @updatedAt
+  disconnectedAt              DateTime?
+  jobs                        PublishingJob[]
+
+  @@index([platform, connectionStatus])
+  @@unique([platform, externalUserId])
+}
+
+model PublishingJob {
+  id                    String              @id @default(cuid())
+  platformPostId        String
+  platformPost          PlatformPost        @relation(fields: [platformPostId], references: [id], onDelete: Cascade)
+  platformConnectionId  String?
+  platformConnection    PlatformConnection? @relation(fields: [platformConnectionId], references: [id], onDelete: SetNull)
+  status                String              @default("pending")
+  scheduledAt           DateTime?
+  startedAt             DateTime?
+  completedAt           DateTime?
+  nextAttemptAt         DateTime?
+  attemptCount          Int                 @default(0)
+  maxAttempts           Int                 @default(5)
+  lockedAt              DateTime?
+  lockedBy              String?
+  idempotencyKey        String              @unique
+  lastErrorCode         String?
+  lastErrorMessage      String?
+  lastErrorRetryable    Boolean?
+  externalUploadId      String?
+  externalPostId        String?
+  externalPostUrl       String?
+  requestSummary        String?
+  responseSummary       String?
+  dryRun                Boolean             @default(false)
+  createdAt             DateTime            @default(now())
+  updatedAt             DateTime            @updatedAt
+  attempts              PublishingAttempt[]
+
+  @@index([status, nextAttemptAt])
+  @@index([scheduledAt])
+  @@index([lockedAt])
+}
+
+model PublishingAttempt {
+  id                 String        @id @default(cuid())
+  publishingJobId    String
+  publishingJob      PublishingJob @relation(fields: [publishingJobId], references: [id], onDelete: Cascade)
+  attemptNumber      Int
+  startedAt          DateTime      @default(now())
+  completedAt        DateTime?
+  status             String
+  requestId          String?
+  httpStatus         Int?
+  externalErrorCode  String?
+  errorCategory      String?
+  errorMessage       String?
+  retryable          Boolean       @default(false)
+  responseSummary    String?
+  createdAt          DateTime      @default(now())
+
+  @@index([publishingJobId, attemptNumber])
+}
+
+model OAuthState {
+  id                     String    @id @default(cuid())
+  platform               String
+  stateHash              String    @unique
+  codeVerifierEncrypted  String?
+  redirectPath           String?
+  expiresAt              DateTime
+  usedAt                 DateTime?
+  createdAt              DateTime  @default(now())
+
+  @@index([expiresAt])
+}
+
+model WorkerHeartbeat {
+  id               String   @id @default(cuid())
+  workerId         String   @unique
+  lastHeartbeatAt  DateTime
+  lastJobId        String?
+  status           String   @default("online")
+  metadataJson     String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
 }

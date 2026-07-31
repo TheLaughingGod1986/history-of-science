@@ -14,7 +14,7 @@ export default async function SettingsPage() {
   const connectionStatuses = await Promise.all(
     settings.map(async (s) => {
       const adapter = getAdapterForPlatform(s.platform);
-      const status = await adapter.getStatus(s.id);
+      const status = await adapter.getStatus();
       return { platform: s.platform, status };
     }),
   );
@@ -24,7 +24,10 @@ export default async function SettingsPage() {
       <div>
         <h1 className="font-[family-name:var(--font-orbit-display)] text-3xl">Platform settings</h1>
         <p className="mt-2 text-[#F5E8D2]/60">
-          Secrets stay in environment variables. Tokens are never shown in the browser.
+          Secrets stay in environment variables. Tokens are never shown in the browser.{" "}
+          <a href="/settings/connections" className="text-[#FF7A24]">
+            Manage OAuth connections →
+          </a>
         </p>
       </div>
 

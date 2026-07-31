@@ -29,6 +29,8 @@ function loadScript(): string {
 
 async function main() {
   await prisma.performanceMetric.deleteMany();
+  await prisma.publishingAttempt.deleteMany();
+  await prisma.publishingJob.deleteMany();
   await prisma.platformPost.deleteMany();
   await prisma.shortClip.deleteMany();
   await prisma.longFormVideo.deleteMany();
@@ -36,6 +38,17 @@ async function main() {
   await prisma.platformSettings.deleteMany();
   await prisma.contentTemplate.deleteMany();
   await prisma.analyticsImport.deleteMany();
+
+  await prisma.appSetting.upsert({
+    where: { key: "publishing_mode" },
+    create: { key: "publishing_mode", value: "approve_each_post" },
+    update: { value: "approve_each_post" },
+  });
+  await prisma.appSetting.upsert({
+    where: { key: "publishing_defaults_privacy" },
+    create: { key: "publishing_defaults_privacy", value: "private" },
+    update: {},
+  });
 
   const script = loadScript();
   const youtubeUrl = "https://youtu.be/Mo93x0fxB1Q";

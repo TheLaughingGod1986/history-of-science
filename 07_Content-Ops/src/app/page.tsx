@@ -3,6 +3,7 @@ import { CONTENT_RULES } from "@/config/content-rules";
 import { PUBLISHING_SCHEDULE } from "@/config/publishing-schedule";
 import Link from "next/link";
 import { startOfMonth, endOfMonth } from "date-fns";
+import { isDryRun } from "@/lib/env";
 
 export const dynamic = "force-dynamic";
 
@@ -23,6 +24,9 @@ async function getOverview() {
     bestClip,
     pendingApprovals,
     missingAnalytics,
+    heartbeat,
+    nextJob,
+    recentJobs,
   ] = await Promise.all([
     prisma.longFormVideo.count({
       where: { status: { in: ["idea", "scripting", "production", "editing", "ready"] } },
@@ -57,13 +61,32 @@ async function getOverview() {
         metrics: { none: {} },
       },
     }),
+    prisma.workerHeartbeat.findFirst({ orderBy: { lastHeartbeatAt: "desc" } }),
+    prisma.publishingJob.findFirst({
+      where: { status: { in: ["pending", "scheduled", "failed_retryable"] } },
+      orderBy: { nextAttemptAt: "asc" },
+    }),
+    prisma.publishingJob.findMany({
+      orderBy: { updatedAt: "desc" },
+      take: 5,
+      include: { platformPost: true },
+    }),
   ]);
 
   const nextActions: string[] = [];
-  if (pendingApprovals > 0) nextActions.push(`Approve ${pendingApprovals} proposed clip${pendingApprovals === 1 ? "" : "s"}.`);
-  if (shortsAwaitingEdit > 0) nextActions.push(`Move ${shortsAwaitingEdit} clip(s) through editing / export.`);
+  if (pendingApprovals > 0) {
+    nextActions.push(`Approve ${pendingApprovals} proposed clip${pendingApprovals === 1 ? "" : "s"}.`);
+  }
+  if (shortsAwaitingEdit > 0) {
+    nextActions.push(`Move ${shortsAwaitingEdit} clip(s) through editing / export.`);
+  }
   if (postsScheduled === 0) nextActions.push("Schedule this week’s cross-platform posts.");
-  if (missingAnalytics > 0) nextActions.push(`Import analytics for ${missingAnalytics} published post(s).`);
+  if (missingAnalytics > 0) {
+    nextActions.push(`Import analytics for ${missingAnalytics} published post(s).`);
+  }
+  if (!heartbeat || Date.now() - heartbeat.lastHeartbeatAt.getTime() > 30_000) {
+    nextActions.push("Start the publishing worker (`npm run worker`) for scheduled API posts.");
+  }
   if (!nextActions.length) nextActions.push("Pipeline looks clear — register the next long-form video.");
 
   return {
@@ -79,6 +102,10 @@ async function getOverview() {
     bestClip,
     nextActions,
     cadence: PUBLISHING_SCHEDULE.cadenceMonthlyTargets,
+    heartbeat,
+    nextJob,
+    recentJobs,
+    dryRun: isDryRun(),
   };
 }
 
@@ -96,6 +123,8 @@ function StatCard({ label, value, hint }: { label: string; value: string | numbe
 
 export default async function HomePage() {
   const data = await getOverview();
+  const workerOnline =
+    data.heartbeat && Date.now() - data.heartbeat.lastHeartbeatAt.getTime() < 30_000;
 
   return (
     <div className="space-y-8">
@@ -117,17 +146,57 @@ export default async function HomePage() {
             Open long-form library
           </Link>
           <Link
-            href="/pipeline"
+            href="/settings/connections"
             className="rounded-full border border-white/10 px-5 py-2.5 text-sm text-[#F5E8D2]"
           >
-            View pipeline
+            Connect accounts
           </Link>
         </div>
       </section>
 
+      <section className="card-panel p-5">
+        <h2 className="font-[family-name:var(--font-orbit-display)] text-xl text-[#F5E8D2]">
+          Publishing worker
+        </h2>
+        <p className="mt-2 text-sm text-[#F5E8D2]/7">
+          Status: {workerOnline ? "Worker online" : "Worker offline"}
+          {data.heartbeat
+            ? ` · last heartbeat ${data.heartbeat.lastHeartbeatAt.toISOString()}`
+            : ""}
+          {data.heartbeat?.lastJobId ? ` · last job ${data.heartbeat.lastJobId}` : ""}
+        </p>
+        <p className="mt-1 text-sm text-[#F5E8D2]/55">
+          Next scheduled job:{" "}
+          {data.nextJob
+            ? `${data.nextJob.id} · ${data.nextJob.nextAttemptAt?.toISOString() || "due"}`
+            : "none"}
+        </p>
+        <p className="mt-2 text-xs text-[#5A6E82]">
+          Local scheduling is not cloud-reliable. Keep `npm run worker` running; laptop sleep stops
+          publishes.
+          {data.dryRun ? " Dry-run mode is active." : ""}
+        </p>
+        {data.recentJobs.length ? (
+          <ul className="mt-3 space-y-1 text-xs text-[#F5E8D2]/6">
+            {data.recentJobs.map((j) => (
+              <li key={j.id}>
+                <Link href={`/publishing/${j.id}`} className="text-[#FF7A24]">
+                  {j.platformPost.platform}
+                </Link>{" "}
+                · {j.status}
+              </li>
+            ))}
+          </ul>
+        ) : null}
+      </section>
+
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         <StatCard label="Long in production" value={data.longInProduction} />
-        <StatCard label="Long published (month)" value={data.longPublishedMonth} hint={`Target ${data.cadence.longForm}/mo`} />
+        <StatCard
+          label="Long published (month)"
+          value={data.longPublishedMonth}
+          hint={`Target ${data.cadence.longForm}/mo`}
+        />
         <StatCard label="Shorts planned" value={data.shortsPlanned} />
         <StatCard label="Awaiting editing" value={data.shortsAwaitingEdit} />
         <StatCard label="Ready to publish" value={data.shortsReady} />
@@ -160,8 +229,8 @@ export default async function HomePage() {
             ))}
           </div>
           <p className="mt-4 text-sm text-[#F5E8D2]/55">
-            Canonical schedule preserved: long-form Thursday 19:00 UK · Short #1 at 21:00 ·
-            Days 2–7 at 12:30 · cross-platform staggered within 24 hours.
+            Canonical schedule preserved: long-form Thursday 19:00 UK · Short #1 at 21:00 · Days 2–7
+            at 12:30 · cross-platform staggered within 24 hours.
           </p>
         </div>
 

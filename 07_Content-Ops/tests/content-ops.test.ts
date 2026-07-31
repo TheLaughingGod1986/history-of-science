@@ -176,12 +176,12 @@ describe("publishing adapters", () => {
       uploadStatus: "ready",
     });
     expect(result.success).toBe(false);
-    expect(result.message).toMatch(/Manual upload required/);
+    expect(result.message).toMatch(/connected account|Manual upload required/i);
   });
 
   it("reports unsupported platform via manual adapter", async () => {
     const adapter = getAdapterForPlatform("unknown_platform");
-    const status = await adapter.getStatus("x");
+    const status = await adapter.getStatus();
     expect(status.connection).toBe("manual_upload_required");
   });
 });

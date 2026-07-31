@@ -6,6 +6,7 @@ const NAV = [
   { href: "/videos", label: "Long-form" },
   { href: "/calendar", label: "Calendar" },
   { href: "/analytics", label: "Analytics" },
+  { href: "/settings/connections", label: "Connections" },
   { href: "/settings", label: "Settings" },
 ];
 

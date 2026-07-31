@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { AppShell } from "@/components/AppShell";
+import { DryRunBanner } from "@/components/DryRunBanner";
 
 const display = Fraunces({
   variable: "--font-orbit-display",
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${display.variable} ${sans.variable} antialiased font-sans`}>
+        <DryRunBanner />
         <AppShell>{children}</AppShell>
       </body>
     </html>

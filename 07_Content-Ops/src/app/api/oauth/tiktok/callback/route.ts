@@ -1,0 +1,69 @@
+import { NextRequest, NextResponse } from "next/server";
+import { getEnv } from "@/lib/env";
+import { consumeOAuthState } from "@/lib/oauth/state";
+import { encryptSecret } from "@/lib/security/token-crypto";
+import { prisma } from "@/lib/storage/prisma";
+
+export async function GET(req: NextRequest) {
+  const env = getEnv();
+  const base = env.APP_BASE_URL;
+  const url = new URL(req.url);
+  const code = url.searchParams.get("code");
+  const state = url.searchParams.get("state");
+  if (!code || !state) return NextResponse.redirect(`${base}/settings/connections?error=missing_code`);
+  const consumed = await consumeOAuthState({ platform: "tiktok", state });
+  if (!consumed.ok) {
+    return NextResponse.redirect(`${base}/settings/connections?error=${encodeURIComponent(consumed.error)}`);
+  }
+  if (!env.ORBIT_TOKEN_ENCRYPTION_KEY) {
+    return NextResponse.redirect(`${base}/settings/connections?error=encryption_key_required`);
+  }
+
+  const redirectUri = env.TIKTOK_REDIRECT_URI || `${env.APP_BASE_URL}/api/oauth/tiktok/callback`;
+  const tokenRes = await fetch("https://open.tiktokapis.com/v2/oauth/token/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      client_key: env.TIKTOK_CLIENT_KEY!,
+      client_secret: env.TIKTOK_CLIENT_SECRET!,
+      code,
+      grant_type: "authorization_code",
+      redirect_uri: redirectUri,
+      ...(consumed.codeVerifier ? { code_verifier: consumed.codeVerifier } : {}),
+    }),
+  });
+  const tokenBody = await tokenRes.json();
+  const access = tokenBody.access_token || tokenBody?.data?.access_token;
+  const openId = tokenBody.open_id || tokenBody?.data?.open_id || "unknown";
+  const refresh = tokenBody.refresh_token || tokenBody?.data?.refresh_token;
+  const scope = tokenBody.scope || tokenBody?.data?.scope || "";
+  if (!tokenRes.ok || !access) {
+    return NextResponse.redirect(`${base}/settings/connections?error=token_exchange_failed`);
+  }
+
+  await prisma.platformConnection.upsert({
+    where: { platform_externalUserId: { platform: "tiktok", externalUserId: String(openId) } },
+    create: {
+      platform: "tiktok",
+      externalUserId: String(openId),
+      accountId: String(openId),
+      accountType: "tiktok_user",
+      connectionStatus: "connected",
+      grantedScopes: JSON.stringify(String(scope).split(",").filter(Boolean)),
+      accessTokenEncrypted: encryptSecret(access),
+      refreshTokenEncrypted: refresh ? encryptSecret(refresh) : null,
+      accessTokenExpiresAt: new Date(Date.now() + Number(tokenBody.expires_in || 86400) * 1000),
+      lastValidatedAt: new Date(),
+    },
+    update: {
+      connectionStatus: "connected",
+      grantedScopes: JSON.stringify(String(scope).split(",").filter(Boolean)),
+      accessTokenEncrypted: encryptSecret(access),
+      refreshTokenEncrypted: refresh ? encryptSecret(refresh) : undefined,
+      lastValidatedAt: new Date(),
+      disconnectedAt: null,
+    },
+  });
+
+  return NextResponse.redirect(`${base}/settings/connections?connected=tiktok`);
+}
