@@ -37,3 +37,10 @@ node_modules/
 **/playwright-report/
 **/test-results/
 **/__pycache__/
+
+# TikTok local secrets / audit dumps
+00_Brand/Channel-Setup/TikTok/.tiktok_password_local.txt
+00_Brand/Channel-Setup/TikTok/audit/
+00_Brand/Channel-Setup/TikTok/demo/raw/
+00_Brand/Channel-Setup/TikTok/_chrome_*.js
+00_Brand/Channel-Setup/TikTok/*.scpt.txt

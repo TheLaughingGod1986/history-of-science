@@ -1,7 +1,7 @@
 {
   "channel": "Orbit with Ben",
   "handle": "@OrbitWithBen",
-  "updated": "2026-07-28",
+  "updated": "2026-07-31",
   "timezone": "Europe/London",
   "strategy": "PUBLISHING_AND_SHORTS_STRATEGY.md",
   "capacity": {
@@ -45,7 +45,8 @@
   "launch": {
     "first_long_date": "2026-08-07",
     "alternate_if_ready": "2026-07-31",
-    "note": "Pull entire grid -7 days if V001 master ready for 31 Jul"
+    "note": "V001 long public. Short #1 moved to Fri 31 Jul 17:00 UK; remaining daily @ 12:30 from 1 Aug.",
+    "shorts_cluster_started": "2026-07-31T17:00:00+01:00"
   },
   "items": [
     {
@@ -69,15 +70,18 @@
       "key": "s001_1",
       "type": "short",
       "source_long": "001",
-      "title": "Why Haven't Aliens Said Hello?",
-      "hook": "Why Haven't Aliens Said Hello?",
+      "title": "Where Is Everybody? The Fermi Paradox",
+      "hook": "Where Is Everybody? The Fermi Paradox",
       "purpose": "strongest_hook",
-      "note": "Fermi paradox in 45s",
-      "date": "7 Aug 2026",
-      "date_iso": "2026-08-07",
-      "time": "21:00",
-      "iso": "2026-08-07T21:00:00+01:00",
-      "status": "planned"
+      "note": "Published Public now via Studio",
+      "date": "31 Jul 2026",
+      "date_iso": "2026-07-31",
+      "time": "17:00",
+      "iso": "2026-07-31T17:00:00+01:00",
+      "status": "published",
+      "youtube_id": "z-DLqoSoEBo",
+      "visibility": "public",
+      "published_at": "2026-07-31T17:50:00+01:00"
     },
     {
       "key": "s001_2",
@@ -87,11 +91,11 @@
       "hook": "Why Meeting Aliens Takes Forever",
       "purpose": "scale",
       "note": "Distance as logistics",
-      "date": "8 Aug 2026",
-      "date_iso": "2026-08-08",
+      "date": "1 Aug 2026",
+      "date_iso": "2026-08-01",
       "time": "12:30",
-      "iso": "2026-08-08T12:30:00+01:00",
-      "status": "planned"
+      "iso": "2026-08-01T12:30:00+01:00",
+      "status": "scheduled"
     },
     {
       "key": "s001_3",
@@ -101,11 +105,11 @@
       "hook": "The Signal That Never Repeated",
       "purpose": "named_mystery",
       "note": "Wow! signal",
-      "date": "9 Aug 2026",
-      "date_iso": "2026-08-09",
+      "date": "2 Aug 2026",
+      "date_iso": "2026-08-02",
       "time": "12:30",
-      "iso": "2026-08-09T12:30:00+01:00",
-      "status": "planned"
+      "iso": "2026-08-02T12:30:00+01:00",
+      "status": "scheduled"
     },
     {
       "key": "s001_4",
@@ -115,11 +119,11 @@
       "hook": "What If Aliens Are Watching Us?",
       "purpose": "theory",
       "note": "Zoo hypothesis as science",
-      "date": "10 Aug 2026",
-      "date_iso": "2026-08-10",
+      "date": "3 Aug 2026",
+      "date_iso": "2026-08-03",
       "time": "12:30",
-      "iso": "2026-08-10T12:30:00+01:00",
-      "status": "planned"
+      "iso": "2026-08-03T12:30:00+01:00",
+      "status": "scheduled"
     },
     {
       "key": "s001_5",
@@ -129,11 +133,11 @@
       "hook": "The Silence Isn't Empty",
       "purpose": "wonder",
       "note": "Silence as invitation",
-      "date": "11 Aug 2026",
-      "date_iso": "2026-08-11",
+      "date": "4 Aug 2026",
+      "date_iso": "2026-08-04",
       "time": "12:30",
-      "iso": "2026-08-11T12:30:00+01:00",
-      "status": "planned"
+      "iso": "2026-08-04T12:30:00+01:00",
+      "status": "scheduled"
     },
     {
       "key": "s001_6",
@@ -143,11 +147,11 @@
       "hook": "Could We Have Missed the Evidence?",
       "purpose": "deeper_cut",
       "note": "Listening windows",
-      "date": "12 Aug 2026",
-      "date_iso": "2026-08-12",
+      "date": "5 Aug 2026",
+      "date_iso": "2026-08-05",
       "time": "12:30",
-      "iso": "2026-08-12T12:30:00+01:00",
-      "status": "planned"
+      "iso": "2026-08-05T12:30:00+01:00",
+      "status": "scheduled"
     },
     {
       "key": "v002",
@@ -258,7 +262,7 @@
       "time": "19:00",
       "iso": "2026-08-21T19:00:00+01:00",
       "thumbnail_concept": "Orbit tiny against glass-rain or diamond exoplanet sky; text STRANGEST PLANETS or ALIEN WORLDS",
-      "goal": "Travelogue sequel — Orbit visits concrete alien worlds",
+      "goal": "Travelogue sequel \u2014 Orbit visits concrete alien worlds",
       "format": "full_cg_orbit_travelogue",
       "folder": "02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds",
       "brand_suffix": "Orbit's Cosmic Journey",
@@ -272,7 +276,7 @@
       "title": "The Planet Where It Rains Glass Sideways",
       "hook": "The Planet Where It Rains Glass Sideways",
       "purpose": "strongest_hook",
-      "note": "HD 189733 b–style glass rain",
+      "note": "HD 189733 b\u2013style glass rain",
       "date": "21 Aug 2026",
       "date_iso": "2026-08-21",
       "time": "21:00",
@@ -360,7 +364,7 @@
       "time": "19:00",
       "iso": "2026-08-28T19:00:00+01:00",
       "thumbnail_concept": "Orbit facing JWST golden mirrors + impossible galaxy",
-      "goal": "Curious-learner format — wonder not clickbait",
+      "goal": "Curious-learner format \u2014 wonder not clickbait",
       "status": "planned"
     },
     {
@@ -440,7 +444,7 @@
       "title": "The Discovery That Doesn't Add Up",
       "hook": "The Discovery That Doesn't Add Up",
       "purpose": "deeper_cut",
-      "note": "Wonder close — not clickbait",
+      "note": "Wonder close \u2014 not clickbait",
       "date": "2 Sep 2026",
       "date_iso": "2026-09-02",
       "time": "12:30",

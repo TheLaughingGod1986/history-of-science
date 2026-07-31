@@ -1,0 +1,13 @@
+{
+  "status": "credentials_in_env",
+  "redirect": "http://localhost:3000/api/oauth/tiktok/callback",
+  "env_written": true,
+  "notes": "Client key/secret live in 07_Content-Ops/.env (not committed). Verify oppti.dev URL properties in TikTok Developer Portal, then Login Kit redirect + Connect in Content Ops.",
+  "next": [
+    "URL properties → verify oppti.dev",
+    "ToS https://oppti.dev/terms · Privacy https://oppti.dev/privacy · Web https://oppti.dev",
+    "Login Kit redirect: http://localhost:3000/api/oauth/tiktok/callback",
+    "Add Content Posting API if missing",
+    "Restart Content Ops → /settings/connections → Connect TikTok"
+  ]
+}

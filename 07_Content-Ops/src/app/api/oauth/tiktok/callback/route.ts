@@ -41,6 +41,28 @@ export async function GET(req: NextRequest) {
     return NextResponse.redirect(`${base}/settings/connections?error=token_exchange_failed`);
   }
 
+  // Fetch basic profile for display + Orbit profile URL
+  let accountName: string | null = "OrbitWithBen";
+  let accountUsername: string | null = "orbitwithben";
+  let profileUrl: string | null = "https://www.tiktok.com/@orbitwithben";
+  try {
+    const userRes = await fetch(
+      "https://open.tiktokapis.com/v2/user/info/?fields=open_id,union_id,avatar_url,display_name,username",
+      { headers: { Authorization: `Bearer ${access}` } },
+    );
+    if (userRes.ok) {
+      const userBody = await userRes.json();
+      const user = userBody?.data?.user || userBody?.user || userBody?.data || {};
+      if (user.display_name) accountName = String(user.display_name);
+      if (user.username) {
+        accountUsername = String(user.username).replace(/^@/, "");
+        profileUrl = `https://www.tiktok.com/@${accountUsername}`;
+      }
+    }
+  } catch {
+    // Keep Orbit defaults when user.info is unavailable
+  }
+
   await prisma.platformConnection.upsert({
     where: { platform_externalUserId: { platform: "tiktok", externalUserId: String(openId) } },
     create: {
@@ -48,6 +70,9 @@ export async function GET(req: NextRequest) {
       externalUserId: String(openId),
       accountId: String(openId),
       accountType: "tiktok_user",
+      accountName,
+      accountUsername,
+      profileUrl,
       connectionStatus: "connected",
       grantedScopes: JSON.stringify(String(scope).split(",").filter(Boolean)),
       accessTokenEncrypted: encryptSecret(access),
@@ -57,11 +82,37 @@ export async function GET(req: NextRequest) {
     },
     update: {
       connectionStatus: "connected",
+      accountName,
+      accountUsername,
+      profileUrl,
       grantedScopes: JSON.stringify(String(scope).split(",").filter(Boolean)),
       accessTokenEncrypted: encryptSecret(access),
       refreshTokenEncrypted: refresh ? encryptSecret(refresh) : undefined,
       lastValidatedAt: new Date(),
       disconnectedAt: null,
+    },
+  });
+
+  await prisma.platformSettings.upsert({
+    where: { platform: "tiktok" },
+    create: {
+      platform: "tiktok",
+      enabled: true,
+      accountDisplayName: accountName || "OrbitWithBen",
+      profileUrl: profileUrl || "https://www.tiktok.com/@orbitwithben",
+      defaultHashtags: JSON.stringify(["OrbitWithBen", "Space", "Astronomy"]),
+      defaultCallToAction: "Watch the full story on Orbit with Ben.",
+      publishingMethod: "api",
+      connectionStatus: "connected",
+      tokenStatus: "valid",
+      defaultVisibility: "public",
+    },
+    update: {
+      accountDisplayName: accountName || "OrbitWithBen",
+      profileUrl: profileUrl || "https://www.tiktok.com/@orbitwithben",
+      publishingMethod: "api",
+      connectionStatus: "connected",
+      tokenStatus: "valid",
     },
   });
 

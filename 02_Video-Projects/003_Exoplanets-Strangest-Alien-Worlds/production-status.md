@@ -1,6 +1,26 @@
 # Video 003 — Exoplanets: The Strangest Alien Worlds We've Found (So Far)
 
-**Status:** VO v01 locked · individual prompts ready · next = CG generation  
+**Status:** Upload-ready master locked · next = thumbs + Shorts + YouTube polish  
+
+## Edit masters
+
+| Asset | Path |
+|-------|------|
+| Spot-check | `07_Edit-Project/_spotcheck/spotcheck_report_v01.json` (32/32 ok) |
+| Selected | `04_Generated-Clips/02_Selected/` |
+| VO-locked proof | `07_Edit-Project/01_Masters/exoplanets_v01_vo-locked_proof.mp4` (~21.5 min) |
+| **Upload-ready** | `09_Final-Export/exoplanets_v02_UPLOAD_READY_MASTER.mp4` |
+| Timeline | `07_Edit-Project/exoplanets_v0{1,2}_timeline.json` |
+
+## CG progress
+
+| Scene | Status |
+|------:|--------|
+| 01–11 (all beats) | **Done** — raw + selected |
+
+**Gen script:** `07_Edit-Project/_generate_omni_v01.py`  
+**Builders:** `_build_exoplanets_v01_master.py` · `_build_exoplanets_v02_upload_ready.py`  
+**Queue:** all `[x]` in `03_Animation-Prompts/03_Generation-Logs/exoplanets_generation_queue_v01.md`  
 **Folder:** `02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds`  
 **Scheduled slot:** Thu 21 Aug 2026 · 19:00 UK  
 **Format:** Full CG · Orbit travelogue (same Pixar-warm × hard astrophysics as V002)

@@ -37,18 +37,17 @@ Default ops volume: **6 Shorts / long** (acceptable range **5–7**).
 
 ---
 
-## Launch window (planned)
+## Launch window (live)
 
 | When | Asset | Status |
 |------|-------|--------|
-| **Thu 7 Aug 2026 · 19:00** | **V001 — Why Haven't We Found Aliens Yet? (Fermi)** | Metadata locked · upload when Intermediate enabled |
-| Thu 7 Aug · 21:00 | Short — Why Haven't Aliens Said Hello? (S01) | Planned |
-| Fri 8 Aug · 12:30 | Short — Why Meeting Aliens Takes Forever (S04) | Planned |
-| Sat 9 Aug · 12:30 | Short — The Signal That Never Repeated (S02) | Planned |
-| Sun 10 Aug · 12:30 | Short — What If Aliens Are Watching Us? (S03) | Planned |
-| Mon 11 Aug · 12:30 | Short — The Silence Isn't Empty (S05) | Planned |
+| **Live** | **V001 — Why Haven't We Found Aliens Yet?** | Public · `Mo93x0fxB1Q` |
+| **Fri 31 Jul 2026 · 17:00** | **Short #1 — Where Is Everybody? The Fermi Paradox** | Move up today · `z-DLqoSoEBo` |
+| Sat 1 Aug · 12:30 | Short #2 — Space Is Rude About Distance | Scheduled |
+| Sun 2 Aug · 12:30 | Short #3 — What If Aliens Are Watching Us? | Scheduled |
+| Mon 3 Aug · 12:30 | Short #4 — What If the First Alien Clue Is Already Here? | Scheduled |
 
-If V001 is ready earlier, pull the grid to **Thu 31 Jul 2026 · 19:00** (−7 days). Confirm every schedule on Studio `/video/{id}/edit`.
+Confirm every schedule on Studio `/video/{id}/edit`. Normal Day-1 slot remains **21:00** after future Thursdays; today is a catch-up because the long is already public.
 
 ---
 

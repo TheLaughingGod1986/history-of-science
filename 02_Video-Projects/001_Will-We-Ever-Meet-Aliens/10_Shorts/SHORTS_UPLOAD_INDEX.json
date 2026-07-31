@@ -7,23 +7,27 @@
       "id": "01",
       "file": "10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v01.mp4",
       "title": "Where Is Everybody? The Fermi Paradox",
-      "schedule_iso": "2026-08-07T21:00:00+01:00",
-      "day": 7,
-      "month": 8,
-      "time": "21:00",
+      "schedule_iso": "2026-07-31T17:50:00+01:00",
+      "day": 31,
+      "month": 7,
+      "time": "17:00",
       "description": "Are we alone in the universe? The Fermi Paradox explained in under a minute \u2014 countless stars, no clear hello.\n\nFull film:\nhttps://youtu.be/Mo93x0fxB1Q\n\n#FermiParadox #AreWeAlone #Space #Shorts #OrbitWithBen",
       "tags": "fermi paradox,where is everybody,fermi paradox explained,alien life,extraterrestrial life,space shorts,orbit with ben,astronomy shorts,are we alone,SETI,great filter,will we ever meet aliens,space documentary,drake equation,astronomy explained",
       "video_id": "z-DLqoSoEBo",
       "url": "https://youtu.be/z-DLqoSoEBo",
       "related": "Mo93x0fxB1Q",
-      "related_ok": true
+      "related_ok": true,
+      "visibility": "public",
+      "published_now": true,
+      "note": "Public \u00b7 Related\u2192long \u00b7 pinned Full film comment \u00b7 end card WATCH THE FULL STORY",
+      "pinned_fullfilm_cta": true
     },
     {
       "id": "02",
       "file": "10_Shorts/06_Final-Exports/aliens_short-01_distance_v01.mp4",
       "title": "Space Is Rude About Distance",
-      "schedule_iso": "2026-08-08T12:30:00+01:00",
-      "day": 8,
+      "schedule_iso": "2026-08-01T12:30:00+01:00",
+      "day": 1,
       "month": 8,
       "time": "12:30",
       "description": "Even if another civilisation answered immediately, a conversation across the stars could take generations. Why meeting aliens takes forever.\n\nFull film:\nhttps://youtu.be/Mo93x0fxB1Q\n\n#Space #Aliens #FermiParadox #Shorts #OrbitWithBen",
@@ -31,14 +35,17 @@
       "video_id": "UWwNKYf_aU8",
       "url": "https://youtu.be/UWwNKYf_aU8",
       "related": "Mo93x0fxB1Q",
-      "related_ok": true
+      "related_ok": true,
+      "visibility": "scheduled",
+      "published_now": false,
+      "note": "Day 2 \u00b7 12:30 UK"
     },
     {
       "id": "03",
       "file": "10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v01.mp4",
       "title": "What If Aliens Are Watching Us?",
-      "schedule_iso": "2026-08-09T12:30:00+01:00",
-      "day": 9,
+      "schedule_iso": "2026-08-02T12:30:00+01:00",
+      "day": 2,
       "month": 8,
       "time": "12:30",
       "description": "The zoo hypothesis imagines advanced civilisations observing younger worlds while deliberately avoiding contact \u2014 science, not fearbait.\n\nFull film:\nhttps://youtu.be/Mo93x0fxB1Q\n\n#Aliens #SpaceMystery #FermiParadox #Shorts #OrbitWithBen",
@@ -46,14 +53,17 @@
       "video_id": "MO19iXYCu0c",
       "url": "https://youtu.be/MO19iXYCu0c",
       "related": "Mo93x0fxB1Q",
-      "related_ok": true
+      "related_ok": true,
+      "visibility": "scheduled",
+      "published_now": false,
+      "note": "Day 3 \u00b7 12:30 UK"
     },
     {
       "id": "04",
       "file": "10_Shorts/06_Final-Exports/aliens_short-04_hidden-clues_v01.mp4",
       "title": "What If the First Alien Clue Is Already Here?",
-      "schedule_iso": "2026-08-10T12:30:00+01:00",
-      "day": 10,
+      "schedule_iso": "2026-08-03T12:30:00+01:00",
+      "day": 3,
       "month": 8,
       "time": "12:30",
       "description": "The first real sign of alien life may already be in an archive: a chemical imbalance, a strange pulse, or a pattern we did not yet know how to read.\n\nFull film:\nhttps://youtu.be/Mo93x0fxB1Q\n\n#Aliens #Astronomy #AreWeAlone #Shorts #OrbitWithBen",
@@ -61,11 +71,16 @@
       "video_id": "--CxhjNqtSY",
       "url": "https://youtu.be/--CxhjNqtSY",
       "related": "Mo93x0fxB1Q",
-      "related_ok": true
+      "related_ok": true,
+      "visibility": "scheduled",
+      "published_now": false,
+      "note": "Day 4 \u00b7 12:30 UK"
     }
   ],
   "related_to_long": "Mo93x0fxB1Q",
   "related_set_at": "2026-07-30",
   "related_ok": true,
-  "pin_status": "comment_posted_pin_manual"
+  "pin_status": "comment_posted_pin_manual",
+  "cluster_start": "2026-07-31T17:00:00+01:00",
+  "updated": "2026-07-31"
 }

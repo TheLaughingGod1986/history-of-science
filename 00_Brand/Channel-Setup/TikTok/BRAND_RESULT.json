@@ -1,0 +1,49 @@
+{
+  "avatar_changed": false,
+  "srcs": [
+    "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/6f17b4fb049a83b2f1eae0ddf7dbfdb9~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=065c0268&x-expires=1785704400&x-signature=EpD2F3T%2B8lDQU%2F96Mci1gFAlgPE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+    "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/6f17b4fb049a83b2f1eae0ddf7dbfdb9~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=0d3f661d&x-expires=1785704400&x-signature=%2FQNLIszwJZ3xI1A3ksDGt%2FsRiT4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a"
+  ],
+  "api": [
+    [
+      200,
+      "https://www.tiktok.com/api/update/profile/",
+      ""
+    ],
+    [
+      200,
+      "https://www.tiktok.com/api/update/profile/?WebIdLastTime=1784041594&aid=1988&app_language=en-GB&app_",
+      "{\"log_pb\":{\"impr_id\":\"2026073121421718DB21FA162ED3214A2C\"},\"status_code\":3002284,\"status_msg\":\"Slow down, you are editing too fast.\"}"
+    ],
+    [
+      200,
+      "https://sf16-website-login.neutral.tiktokcdn-eu.com/obj/tiktok_web_login_static_eu/tiktok/webapp/mai",
+      "\"use strict\";(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[\"10998\"],{767355:function(e,n,t){t.d(n,{N:function(){return r}});var r=function(e){var n=e.uniqueId,t=e.nickname;return e.shouldUseNickname&&t||n}},816043:function(e,n,t){t.r(n),t.d(n,{AvatarType:function(){ret"
+    ],
+    [
+      200,
+      "https://www.tiktok.com/tiktok/v1/app_open_times/upload/?WebIdLastTime=1784041594&aid=1988&app_langua",
+      "{\"status_code\":0,\"status_msg\":\"\",\"extra\":{\"fatal_item_ids\":[],\"logid\":\"202607312142249840BE9343BAFE195F7F\",\"now\":1785534144000},\"log_pb\":{\"impr_id\":\"202607312142249840BE9343BAFE195F7F\"}}\n"
+    ],
+    [
+      200,
+      "https://www.tiktok.com/tiktok/v1/screen_time/upload/?WebIdLastTime=1784041594&aid=1988&app_language=",
+      "{\"status_code\":0,\"status_msg\":\"\",\"time_usage_today\":0,\"extra\":{\"now\":1785534145000,\"fatal_item_ids\":[],\"logid\":\"20260731214225FE006A76CB42C00C37C1\"},\"log_pb\":{\"impr_id\":\"20260731214225FE006A76CB42C00C37C1\"}}\n"
+    ],
+    [
+      200,
+      "https://sf16-website-login.neutral.tiktokcdn-eu.com/obj/tiktok_web_login_static_eu/tiktok/webapp/mai",
+      "\"use strict\";(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[\"10998\"],{767355:function(e,n,t){t.d(n,{N:function(){return r}});var r=function(e){var n=e.uniqueId,t=e.nickname;return e.shouldUseNickname&&t||n}},816043:function(e,n,t){t.r(n),t.d(n,{AvatarType:function(){ret"
+    ],
+    [
+      200,
+      "https://www.tiktok.com/tiktok/v1/app_open_times/upload/?WebIdLastTime=1784041594&aid=1988&app_langua",
+      "{\"status_code\":0,\"status_msg\":\"\",\"extra\":{\"now\":1785534148000,\"fatal_item_ids\":[],\"logid\":\"20260731214228693C24CD0A847717ABD2\"},\"log_pb\":{\"impr_id\":\"20260731214228693C24CD0A847717ABD2\"}}\n"
+    ],
+    [
+      200,
+      "https://www.tiktok.com/tiktok/v1/screen_time/upload/?WebIdLastTime=1784041594&aid=1988&app_language=",
+      "{\"status_code\":0,\"status_msg\":\"\",\"time_usage_today\":0,\"extra\":{\"fatal_item_ids\":[],\"logid\":\"20260731214228693C24CD0A847717ABEE\",\"now\":1785534148000},\"log_pb\":{\"impr_id\":\"20260731214228693C24CD0A847717ABEE\"}}\n"
+    ]
+  ]
+}

@@ -1,0 +1,6 @@
+file 'cards/01.mp4'
+file 'cards/02.mp4'
+file 'walkthrough.mp4'
+file 'cards/03.mp4'
+file 'cards/04.mp4'
+file 'cards/05.mp4'
