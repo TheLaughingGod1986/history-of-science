@@ -1,7 +1,7 @@
 {
   "channel": "Orbit with Ben",
   "handle": "@OrbitWithBen",
-  "updated": "2026-07-31",
+  "updated": "2026-08-01",
   "timezone": "Europe/London",
   "strategy": "PUBLISHING_AND_SHORTS_STRATEGY.md",
   "capacity": {
@@ -43,10 +43,10 @@
     "US_Pacific": "11:00"
   },
   "launch": {
-    "first_long_date": "2026-08-07",
-    "alternate_if_ready": "2026-07-31",
-    "note": "V001 long public. Short #1 moved to Fri 31 Jul 17:00 UK; remaining daily @ 12:30 from 1 Aug.",
-    "shorts_cluster_started": "2026-07-31T17:00:00+01:00"
+    "first_long_date": "2026-07-30",
+    "note": "V001 long + Short#1 public. Shorts 02-04 scheduled 1-3 Aug. V002+V003 longs+Shorts scheduled in Studio. GAP: no Studio Shorts 4-5 Aug.",
+    "shorts_cluster_started": "2026-07-31T17:50:00+01:00",
+    "audit": "2026-08-01_PM"
   },
   "items": [
     {
@@ -64,16 +64,18 @@
       "brand_suffix": "Orbit's Cosmic Journey",
       "title_score": 97,
       "youtube_id": "Mo93x0fxB1Q",
-      "status": "published"
+      "status": "published",
+      "views_vidiq_2026_08_01": 5,
+      "views_vidiq_2026_08_01_pm": 5
     },
     {
       "key": "s001_1",
       "type": "short",
       "source_long": "001",
-      "title": "Where Is Everybody? The Fermi Paradox",
+      "title": "Where Is Everybody? The Fermi Paradox #Space #Shorts",
       "hook": "Where Is Everybody? The Fermi Paradox",
       "purpose": "strongest_hook",
-      "note": "Published Public now via Studio",
+      "note": "Public \u00b7 100 views (vidIQ PM) \u00b7 wonder title locked \u00b7 score 94",
       "date": "31 Jul 2026",
       "date_iso": "2026-07-31",
       "time": "17:00",
@@ -81,49 +83,53 @@
       "status": "published",
       "youtube_id": "z-DLqoSoEBo",
       "visibility": "public",
-      "published_at": "2026-07-31T17:50:00+01:00"
+      "published_at": "2026-07-31T17:50:00+01:00",
+      "views_vidiq_2026_08_01_pm": 100
     },
     {
       "key": "s001_2",
       "type": "short",
       "source_long": "001",
-      "title": "Why Meeting Aliens Takes Forever",
+      "title": "Space Is Rude About Distance",
       "hook": "Why Meeting Aliens Takes Forever",
       "purpose": "scale",
-      "note": "Distance as logistics",
+      "note": "Studio verified 1 Aug 12:30",
       "date": "1 Aug 2026",
       "date_iso": "2026-08-01",
       "time": "12:30",
       "iso": "2026-08-01T12:30:00+01:00",
-      "status": "scheduled"
+      "status": "scheduled",
+      "youtube_id": "UWwNKYf_aU8"
     },
     {
       "key": "s001_3",
       "type": "short",
       "source_long": "001",
-      "title": "The Signal That Never Repeated",
+      "title": "What If Aliens Are Watching Us?",
       "hook": "The Signal That Never Repeated",
       "purpose": "named_mystery",
-      "note": "Wow! signal",
+      "note": "Studio verified 2 Aug 12:30",
       "date": "2 Aug 2026",
       "date_iso": "2026-08-02",
       "time": "12:30",
       "iso": "2026-08-02T12:30:00+01:00",
-      "status": "scheduled"
+      "status": "scheduled",
+      "youtube_id": "MO19iXYCu0c"
     },
     {
       "key": "s001_4",
       "type": "short",
       "source_long": "001",
-      "title": "What If Aliens Are Watching Us?",
+      "title": "What If the First Alien Clue Is Already Here?",
       "hook": "What If Aliens Are Watching Us?",
       "purpose": "theory",
-      "note": "Zoo hypothesis as science",
+      "note": "Studio verified 3 Aug 12:30",
       "date": "3 Aug 2026",
       "date_iso": "2026-08-03",
       "time": "12:30",
       "iso": "2026-08-03T12:30:00+01:00",
-      "status": "scheduled"
+      "status": "scheduled",
+      "youtube_id": "--CxhjNqtSY"
     },
     {
       "key": "s001_5",
@@ -132,12 +138,12 @@
       "title": "The Silence Isn't Empty",
       "hook": "The Silence Isn't Empty",
       "purpose": "wonder",
-      "note": "Silence as invitation",
+      "note": "P0 gap \u2014 listed locally but NOT present in Studio schedule as of 2026-08-01 PM audit",
       "date": "4 Aug 2026",
       "date_iso": "2026-08-04",
       "time": "12:30",
       "iso": "2026-08-04T12:30:00+01:00",
-      "status": "scheduled"
+      "status": "missing_in_studio"
     },
     {
       "key": "s001_6",
@@ -146,12 +152,12 @@
       "title": "Could We Have Missed the Evidence?",
       "hook": "Could We Have Missed the Evidence?",
       "purpose": "deeper_cut",
-      "note": "Listening windows",
+      "note": "P0 gap \u2014 listed locally but NOT present in Studio schedule as of 2026-08-01 PM audit",
       "date": "5 Aug 2026",
       "date_iso": "2026-08-05",
       "time": "12:30",
       "iso": "2026-08-05T12:30:00+01:00",
-      "status": "scheduled"
+      "status": "missing_in_studio"
     },
     {
       "key": "v002",
@@ -165,7 +171,10 @@
       "iso": "2026-08-06T19:00:00+01:00",
       "thumbnail_concept": "Light streak into void + Orbit falling",
       "goal": "Evergreen search; CTR baseline",
-      "status": "upload_ready"
+      "status": "scheduled",
+      "priority_reason": "vidIQ keyword black hole ~574K/mo \u00b7 title score 98 \u00b7 Studio scheduled",
+      "title_score": 98,
+      "youtube_id": "n7CbJrOCnU0"
     },
     {
       "key": "s002_1",
@@ -179,7 +188,8 @@
       "date_iso": "2026-08-06",
       "time": "21:00",
       "iso": "2026-08-06T21:00:00+01:00",
-      "status": "export_ready"
+      "status": "scheduled",
+      "youtube_id": "eZGAhF8dN7w"
     },
     {
       "key": "s002_2",
@@ -193,21 +203,23 @@
       "date_iso": "2026-08-07",
       "time": "12:30",
       "iso": "2026-08-07T12:30:00+01:00",
-      "status": "export_ready"
+      "status": "scheduled",
+      "youtube_id": "C4GuFEFGySI"
     },
     {
       "key": "s002_3",
       "type": "short",
       "source_long": "002",
-      "title": "Time Stops at the Edge \u2014 For You",
-      "hook": "Time Stops at the Edge \u2014 For You",
+      "title": "Time Stops at the Edge \u2014 For Them",
+      "hook": "Time Stops at the Edge \u2014 For Them",
       "purpose": "scale",
       "note": "Time dilation",
       "date": "8 Aug 2026",
       "date_iso": "2026-08-08",
       "time": "12:30",
       "iso": "2026-08-08T12:30:00+01:00",
-      "status": "export_ready"
+      "status": "scheduled",
+      "youtube_id": "hdlr1soUwNA"
     },
     {
       "key": "s002_4",
@@ -221,7 +233,8 @@
       "date_iso": "2026-08-09",
       "time": "12:30",
       "iso": "2026-08-09T12:30:00+01:00",
-      "status": "export_ready"
+      "status": "scheduled",
+      "youtube_id": "80S5E-AWFhA"
     },
     {
       "key": "s002_5",
@@ -235,7 +248,8 @@
       "date_iso": "2026-08-10",
       "time": "12:30",
       "iso": "2026-08-10T12:30:00+01:00",
-      "status": "export_ready"
+      "status": "scheduled",
+      "youtube_id": "olnaYqeOtFs"
     },
     {
       "key": "s002_6",
@@ -249,7 +263,8 @@
       "date_iso": "2026-08-11",
       "time": "12:30",
       "iso": "2026-08-11T12:30:00+01:00",
-      "status": "export_ready"
+      "status": "scheduled",
+      "youtube_id": "5nMieBeymKU"
     },
     {
       "key": "v003",
@@ -267,13 +282,14 @@
       "folder": "02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds",
       "brand_suffix": "Orbit's Cosmic Journey",
       "title_score": 97,
-      "status": "scripting"
+      "status": "scheduled",
+      "youtube_id": "b8-X_FyJnHM"
     },
     {
       "key": "s003_1",
       "type": "short",
       "source_long": "003",
-      "title": "The Planet Where It Rains Glass Sideways",
+      "title": "It Rains Glass Sideways on This Alien World",
       "hook": "The Planet Where It Rains Glass Sideways",
       "purpose": "strongest_hook",
       "note": "HD 189733 b\u2013style glass rain",
@@ -281,13 +297,14 @@
       "date_iso": "2026-08-21",
       "time": "21:00",
       "iso": "2026-08-21T21:00:00+01:00",
-      "status": "planned"
+      "status": "scheduled",
+      "youtube_id": "aX_7Qg_qzyo"
     },
     {
       "key": "s003_2",
       "type": "short",
       "source_long": "003",
-      "title": "A World Made of Diamond?",
+      "title": "We Found Planets Made of Diamond",
       "hook": "A World Made of Diamond?",
       "purpose": "wonder",
       "note": "Carbon / diamond planet",
@@ -295,13 +312,14 @@
       "date_iso": "2026-08-22",
       "time": "12:30",
       "iso": "2026-08-22T12:30:00+01:00",
-      "status": "planned"
+      "status": "scheduled",
+      "youtube_id": "niqnBlzqaFs"
     },
     {
       "key": "s003_3",
       "type": "short",
       "source_long": "003",
-      "title": "Three Suns in the Sky",
+      "title": "Three Suns in the Sky \u2014 Real Alien Worlds",
       "hook": "Three Suns in the Sky",
       "purpose": "fact",
       "note": "Multi-star system",
@@ -309,7 +327,8 @@
       "date_iso": "2026-08-23",
       "time": "12:30",
       "iso": "2026-08-23T12:30:00+01:00",
-      "status": "planned"
+      "status": "scheduled",
+      "youtube_id": "PYhQ0x9HcPM"
     },
     {
       "key": "s003_4",
@@ -323,7 +342,8 @@
       "date_iso": "2026-08-24",
       "time": "12:30",
       "iso": "2026-08-24T12:30:00+01:00",
-      "status": "planned"
+      "status": "scheduled",
+      "youtube_id": "e8-rKGv37o4"
     },
     {
       "key": "s003_5",
@@ -337,13 +357,14 @@
       "date_iso": "2026-08-25",
       "time": "12:30",
       "iso": "2026-08-25T12:30:00+01:00",
-      "status": "planned"
+      "status": "scheduled",
+      "youtube_id": "LQtNmzXJW4w"
     },
     {
       "key": "s003_6",
       "type": "short",
       "source_long": "003",
-      "title": "Could Any of These Host Life?",
+      "title": "Could Any of These Alien Worlds Host Life?",
       "hook": "Could Any of These Host Life?",
       "purpose": "deeper_cut",
       "note": "Habitability close",
@@ -351,7 +372,8 @@
       "date_iso": "2026-08-26",
       "time": "12:30",
       "iso": "2026-08-26T12:30:00+01:00",
-      "status": "planned"
+      "status": "scheduled",
+      "youtube_id": "i18OD5Ab748"
     },
     {
       "key": "v004",
@@ -1333,5 +1355,35 @@
       "iso": "2026-11-04T12:30:00+00:00",
       "status": "planned"
     }
-  ]
+  ],
+  "latest_audit": "audits/CHANNEL_AUDIT_2026-08-01_PM.md",
+  "cold_start": {
+    "active": true,
+    "until": "500_views_or_20_subs",
+    "findings_2026_08_01": {
+      "long_views": 5,
+      "short01_views": 99,
+      "short01_peak_vph": 53,
+      "subscribers": 0,
+      "best_time_data": null
+    },
+    "rules": [
+      "zero_short_gaps",
+      "shorts_judge_topics",
+      "next_pillar_black_hole_keyword_volume",
+      "no_fearbait_titles",
+      "keep_thu_1900_until_audience_histogram"
+    ]
+  },
+  "audit_notes_2026_08_01_pm": {
+    "short1_views": 100,
+    "long1_views": 5,
+    "gap_dates": [
+      "2026-08-04",
+      "2026-08-05"
+    ],
+    "v002_youtube_id": "n7CbJrOCnU0",
+    "v003_youtube_id": "b8-X_FyJnHM",
+    "credits_after": 1435
+  }
 }

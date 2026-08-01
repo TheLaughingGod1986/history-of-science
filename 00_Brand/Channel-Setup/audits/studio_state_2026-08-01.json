@@ -1,0 +1,67 @@
+{
+  "title_scores": [
+    {
+      "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "title": "Why haven't we found aliens yet? The answer is terrifying",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "title": "Where Is Everybody? The Fermi Paradox",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "title": "What Happens If You Fall Into a Black Hole? | Orbit's Cosmic Journey",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "title": "Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "studio": {
+    "long": {
+      "id": "Mo93x0fxB1Q",
+      "visibility": "Visibility Public",
+      "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+      "related_snip": "",
+      "has_scheduled": false,
+      "is_public": true
+    },
+    "s01": {
+      "id": "z-DLqoSoEBo",
+      "visibility": "Visibility Public",
+      "title": "Why haven't we found aliens yet? The answer is terrifying #FermiParadox #Space #Shorts",
+      "related_snip": "",
+      "has_scheduled": false,
+      "is_public": true
+    },
+    "s02": {
+      "id": "UWwNKYf_aU8",
+      "visibility": "Visibility Scheduled",
+      "title": "Space Is Rude About Distance",
+      "related_snip": "",
+      "has_scheduled": true,
+      "is_public": false
+    },
+    "s03": {
+      "id": "MO19iXYCu0c",
+      "visibility": "Visibility Scheduled",
+      "title": "What If Aliens Are Watching Us?",
+      "related_snip": "",
+      "has_scheduled": true,
+      "is_public": false
+    },
+    "s04": {
+      "id": "--CxhjNqtSY",
+      "visibility": "Visibility Scheduled",
+      "title": "What If the First Alien Clue Is Already Here?",
+      "related_snip": "",
+      "has_scheduled": true,
+      "is_public": false
+    },
+    "shorts_tab_snip": "Improve your experience | You are using an unsupported browser or an old browser version that may cause YouTube Studio to be slow or unreliable. Please update your browser or try the latest version of one of these instead. | Firefox | Mozilla | Chrome | Google | Opera | Opera Software | Edge | Microsoft | Safari | Apple | SKIP TO YOUTUBE STUDIO"
+  }
+}

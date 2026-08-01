@@ -3,8 +3,8 @@
 Timezone: **Europe/London**  
 Canonical strategy: `PUBLISHING_AND_SHORTS_STRATEGY.md`  
 Source of truth: `OPTIMAL_PUBLISH_SCHEDULE.json`  
-Latest audit: `audits/CHANNEL_AUDIT_2026-08-01.md`  
-Updated: **2026-08-01**
+Latest audit: `audits/CHANNEL_AUDIT_2026-08-01_PM.md`  
+Updated: **2026-08-01 PM**
 
 ## Cadence rule
 
@@ -23,8 +23,10 @@ Never use fearbait titles (even if vidIQ scores them higher).
 
 ## Cold-start override (until ≥500 views or ≥20 subs)
 
-From audit 2026-08-01: Shorts **~99 views / peak VPH ~53** vs long **5 views**.  
-→ **Zero Short gaps.** Judge topics by Short velocity. Next pillar = **black hole** (kw ~586K · title score 98).
+From audit **2026-08-01 PM**: Shorts **~100 views / peak VPH ~53** vs long **5 views**.  
+→ **Zero Short gaps.** Judge topics by Short velocity. Next pillar = **black hole** (kw ~574K · title score 98) — already Scheduled **Thu 6 Aug 19:00** (`n7CbJrOCnU0`).
+
+**P0:** Studio has **no Shorts on 4–5 Aug** between Fermi #4 (3 Aug) and V002 cluster (6 Aug). Fill before the hole hits.
 
 Re-run `vidiq_subscriber_insights` before moving clocks.
 
@@ -47,17 +49,22 @@ Default ops volume: **6 Shorts / long** (acceptable range **5–7**).
 
 ---
 
-## Launch window (live · audited 2026-08-01)
+## Launch window (live · audited 2026-08-01 PM)
 
 | When | Asset | Status |
 |------|-------|--------|
-| **Live** | **V001 — Why Haven't We Found Aliens Yet?** | Public · `Mo93x0fxB1Q` · 5 views |
-| **Live** | **Short #1 — Where Is Everybody? The Fermi Paradox** | Public · `z-DLqoSoEBo` · ~99 views · wonder title locked |
+| **Live** | **V001 — Why Haven't We Found Aliens Yet?** | Public · `Mo93x0fxB1Q` · **5** views |
+| **Live** | **Short #1 — Where Is Everybody? The Fermi Paradox** | Public · `z-DLqoSoEBo` · **100** views · wonder title locked (score 94) |
 | **Sat 1 Aug 2026 · 12:30** | Short #2 — Space Is Rude About Distance | Scheduled · `UWwNKYf_aU8` |
 | **Sun 2 Aug · 12:30** | Short #3 — What If Aliens Are Watching Us? | Scheduled · `MO19iXYCu0c` |
 | **Mon 3 Aug · 12:30** | Short #4 — What If the First Alien Clue Is Already Here? | Scheduled · `--CxhjNqtSY` |
+| **Tue 4 / Wed 5 Aug · 12:30** | Fermi Shorts #5–6 | **MISSING in Studio — fill gap** |
+| **Thu 6 Aug · 19:00** | **V002 — Black Hole long** | Scheduled · `n7CbJrOCnU0` |
+| **6 Aug 21:00 → 11 Aug 12:30** | V002 Shorts ×6 | Scheduled (`eZGAhF8dN7w` … `5nMieBeymKU`) |
+| **Thu 21 Aug · 19:00** | **V003 — Alien Worlds long** | Scheduled · `b8-X_FyJnHM` |
+| **21–26 Aug · 12:30** | V003 Shorts ×6 | Scheduled (`aX_7Qg_qzyo` … `i18OD5Ab748`) |
 
-Confirm every schedule on Studio `/video/{id}/edit`. Every Short: Related → long + pin full-film comment before public.
+Confirm every schedule on Studio `/video/{id}/edit`. Every Short: Related → public long + pin full-film comment before public.
 
 ---
 

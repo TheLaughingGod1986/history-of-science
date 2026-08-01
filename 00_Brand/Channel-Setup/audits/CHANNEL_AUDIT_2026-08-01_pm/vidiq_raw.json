@@ -1,0 +1,6874 @@
+{
+  "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+  "pulled_at": "2026-08-01T11:03:48.839995+00:00",
+  "source": "vidiq MCP HTTP direct",
+  "balance": {
+    "type": "limited",
+    "totalCredits": 1670,
+    "renewableCredits": 1600,
+    "maxRenewableCredits": 2000,
+    "renewableResetsAt": "2026-08-30T22:23:46Z",
+    "addOnCredits": 70,
+    "maxAddOnCredits": 70
+  },
+  "channel_stats": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "title": "Orbit with Ben",
+    "thumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s240-c-k-c0x00ffffff-no-rj",
+    "country": "GB",
+    "defaultLanguage": null,
+    "publishedAt": "2026-07-27T15:26:33.192Z",
+    "topics": [],
+    "currentStats": {
+      "subscribers": 0,
+      "views": 5,
+      "videos": 2
+    },
+    "growth": {
+      "subscribersGained": 0,
+      "viewsGained": 5,
+      "videosPublished": 2
+    },
+    "dailyStats": [
+      {
+        "date": "2026-07-29",
+        "subscribers": 0,
+        "views": 0,
+        "videos": 0
+      },
+      {
+        "date": "2026-07-30",
+        "subscribers": 0,
+        "views": 0,
+        "videos": 1
+      },
+      {
+        "date": "2026-07-31",
+        "subscribers": 0,
+        "views": 5,
+        "videos": 2
+      },
+      {
+        "date": "2026-08-01",
+        "subscribers": 0,
+        "views": 5,
+        "videos": 2
+      }
+    ]
+  },
+  "long_recent": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelTitle": "Orbit with Ben",
+    "channelThumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s800-c-k-c0x00ffffff-no-rj",
+    "videoFormat": "long",
+    "popular": false,
+    "videos": [
+      {
+        "videoId": "Mo93x0fxB1Q",
+        "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+        "publishedAt": "2026-07-30T17:00:09Z",
+        "thumbnail": "https://i.ytimg.com/vi/Mo93x0fxB1Q/maxresdefault.jpg",
+        "viewCount": 5,
+        "likeCount": 0,
+        "commentCount": 1,
+        "duration": "PT18M32S",
+        "vph": 0.11904761904761904,
+        "breakoutScore": null
+      }
+    ]
+  },
+  "short_recent": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelTitle": "Orbit with Ben",
+    "channelThumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s800-c-k-c0x00ffffff-no-rj",
+    "videoFormat": "short",
+    "popular": false,
+    "videos": [
+      {
+        "videoId": "z-DLqoSoEBo",
+        "title": "Where Is Everybody? The Fermi Paradox #Space #Shorts",
+        "publishedAt": "2026-07-31T00:09:58Z",
+        "thumbnail": "https://i.ytimg.com/vi/z-DLqoSoEBo/maxresdefault.jpg",
+        "viewCount": 99,
+        "likeCount": 1,
+        "commentCount": 1,
+        "duration": "PT44S",
+        "vph": 2.9411764705882355,
+        "breakoutScore": null
+      }
+    ]
+  },
+  "long_popular": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelTitle": "Orbit with Ben",
+    "channelThumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s800-c-k-c0x00ffffff-no-rj",
+    "videoFormat": "long",
+    "popular": true,
+    "videos": [
+      {
+        "videoId": "Mo93x0fxB1Q",
+        "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+        "publishedAt": "2026-07-30T17:00:09Z",
+        "thumbnail": "https://i.ytimg.com/vi/Mo93x0fxB1Q/maxresdefault.jpg",
+        "viewCount": 5,
+        "likeCount": 0,
+        "commentCount": 1,
+        "duration": "PT18M32S",
+        "vph": 0.11904761904761904,
+        "breakoutScore": null
+      }
+    ]
+  },
+  "short_popular": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelTitle": null,
+    "channelThumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s800-c-k-c0x00ffffff-no-rj",
+    "videoFormat": "short",
+    "popular": true,
+    "videos": []
+  },
+  "top_videos": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "startDate": "2026-07-27",
+    "endDate": "2026-08-01",
+    "columnHeaders": [
+      {
+        "name": "video",
+        "dataType": "STRING",
+        "columnType": "DIMENSION"
+      },
+      {
+        "name": "views",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "estimatedMinutesWatched",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "averageViewDuration",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "likes",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "comments",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      }
+    ],
+    "rows": [
+      [
+        "--CxhjNqtSY",
+        4,
+        1,
+        47,
+        0,
+        0
+      ],
+      [
+        "MO19iXYCu0c",
+        2,
+        0,
+        45,
+        0,
+        0
+      ],
+      [
+        "z-DLqoSoEBo",
+        1,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        "UWwNKYf_aU8",
+        1,
+        0,
+        7,
+        0,
+        0
+      ]
+    ]
+  },
+  "traffic_sources": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "startDate": "2026-07-27",
+    "endDate": "2026-08-01",
+    "columnHeaders": [
+      {
+        "name": "insightTrafficSourceType",
+        "dataType": "STRING",
+        "columnType": "DIMENSION"
+      },
+      {
+        "name": "views",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "estimatedMinutesWatched",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "averageViewDuration",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "averageViewPercentage",
+        "dataType": "FLOAT",
+        "columnType": "METRIC"
+      }
+    ],
+    "rows": [
+      [
+        "NO_LINK_OTHER",
+        8,
+        2,
+        30,
+        66.86
+      ]
+    ]
+  },
+  "audience_demographics": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "startDate": "2026-07-27",
+    "endDate": "2026-08-01",
+    "columnHeaders": [
+      {
+        "name": "ageGroup",
+        "dataType": "STRING",
+        "columnType": "DIMENSION"
+      },
+      {
+        "name": "gender",
+        "dataType": "STRING",
+        "columnType": "DIMENSION"
+      },
+      {
+        "name": "viewerPercentage",
+        "dataType": "FLOAT",
+        "columnType": "METRIC"
+      }
+    ],
+    "rows": []
+  },
+  "audience_geography": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "startDate": "2026-07-27",
+    "endDate": "2026-08-01",
+    "columnHeaders": [
+      {
+        "name": "country",
+        "dataType": "STRING",
+        "columnType": "DIMENSION"
+      },
+      {
+        "name": "views",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "estimatedMinutesWatched",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "averageViewDuration",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      }
+    ],
+    "rows": []
+  },
+  "shorts_vs_longform": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "startDate": "2026-07-27",
+    "endDate": "2026-08-01",
+    "columnHeaders": [
+      {
+        "name": "creatorContentType",
+        "dataType": "STRING",
+        "columnType": "DIMENSION"
+      },
+      {
+        "name": "views",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "estimatedMinutesWatched",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "averageViewDuration",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      }
+    ],
+    "rows": [
+      [
+        "shorts",
+        8,
+        2,
+        30
+      ]
+    ]
+  },
+  "daily_metrics": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "startDate": "2026-07-27",
+    "endDate": "2026-08-01",
+    "columnHeaders": [
+      {
+        "name": "day",
+        "dataType": "STRING",
+        "columnType": "DIMENSION"
+      },
+      {
+        "name": "views",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "estimatedMinutesWatched",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "subscribersGained",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "subscribersLost",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "likes",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "comments",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "averageViewPercentage",
+        "dataType": "FLOAT",
+        "columnType": "METRIC"
+      },
+      {
+        "name": "averageViewDuration",
+        "dataType": "INTEGER",
+        "columnType": "METRIC"
+      }
+    ],
+    "rows": [
+      [
+        "2026-07-29",
+        8,
+        2,
+        0,
+        0,
+        0,
+        0,
+        66.86,
+        30
+      ]
+    ]
+  },
+  "subscriber_insights": {
+    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "period": "30_days",
+    "growthUpdatedAt": null,
+    "topChannels": [],
+    "bestTimeToPost": {
+      "timezoneOffset": "+01:00",
+      "dayOrder": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "hourlyActivity": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "bestThreeHourWindows": []
+    }
+  },
+  "video_ids": [
+    "Mo93x0fxB1Q",
+    "z-DLqoSoEBo",
+    "UWwNKYf_aU8",
+    "MO19iXYCu0c",
+    "--CxhjNqtSY"
+  ],
+  "videos_by_ids": {
+    "videos": [
+      {
+        "id": "z-DLqoSoEBo",
+        "title": "Where Is Everybody? The Fermi Paradox #Space #Shorts",
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelTitle": "Orbit with Ben",
+        "publishedAt": "2026-07-31T00:09:58Z",
+        "description": "Are we alone in the universe? The Fermi Paradox explained in under a minute \u2014 countless stars, no clear hello.\n\nFull film:\nhttps://youtu.be/Mo93x0fxB1Q\n\n#FermiParadox #AreWeAlone #Space #Shorts #OrbitWithBen",
+        "tags": [
+          "SETI",
+          "alien life",
+          "aliens",
+          "are we alone",
+          "are we alone in the universe",
+          "are we alone?",
+          "astronomy explained",
+          "astronomy shorts",
+          "drake equation",
+          "enrico fermi",
+          "exoplanet",
+          "extraterrestrial life",
+          "fermi paradox explained",
+          "great filter",
+          "orbit with ben",
+          "physics",
+          "science",
+          "seti",
+          "space documentary",
+          "space shorts",
+          "where is everybody",
+          "will we ever meet aliens"
+        ],
+        "duration": "PT44S",
+        "viewCount": 100,
+        "likeCount": 1,
+        "commentCount": 1,
+        "thumbnail": "https://i.ytimg.com/vi/z-DLqoSoEBo/maxresdefault.jpg",
+        "topicCategories": [
+          "https://en.wikipedia.org/wiki/Knowledge"
+        ]
+      },
+      {
+        "id": "Mo93x0fxB1Q",
+        "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelTitle": "Orbit with Ben",
+        "publishedAt": "2026-07-30T17:00:09Z",
+        "description": "Are we alone in the universe? The Fermi Paradox explained \u2014 if the Milky Way holds hundreds of billions of stars and countless planets, why does the sky stay so quiet?\n\nIn this Orbit's Cosmic Journey film, Orbit explores the Fermi Paradox, the Great Filter, the zoo hypothesis, the limits of interstellar communication, and how humanity might detect alien life. The first convincing sign may not be a spacecraft or a dramatic message. It may be a faint chemical fingerprint, an unusual pulse, or a clue already hidden inside old data.\n\nCHAPTERS\n00:00 Are we alone?\n00:20 A galaxy of possibilities\n02:36 Where is everybody? The Fermi Paradox\n03:43 Worlds beyond our Solar System\n04:54 Why the galaxy may be quiet\n07:05 The Great Filter\n11:51 How humanity is searching\n14:31 What first contact may really look like\n17:21 The clue may already be here\n\nWhat do you think explains the silence: distance, rarity, timing, deliberate quiet\u2014or something we have not yet imagined?\n\nSubscribe to Orbit for thoughtful space stories and big questions:\nhttps://www.youtube.com/@OrbitWithBen\n\nWonder over certainty. Curiosity over clickbait.\n\n#FermiParadox #AreWeAlone #SpaceDocumentary #Aliens #OrbitWithBen",
+        "tags": [
+          "SETI",
+          "alien contact",
+          "alien life",
+          "are we alone",
+          "are we alone in the universe",
+          "astronomy",
+          "astronomy explained",
+          "biosignatures",
+          "dangerous",
+          "drake equation",
+          "exoplanets",
+          "extraterrestrial life",
+          "fermi paradox",
+          "fermi paradox explained",
+          "great filter",
+          "milky way",
+          "orbit with ben",
+          "search for extraterrestrial intelligence",
+          "space",
+          "space documentary",
+          "space exploration",
+          "space facts",
+          "technosignatures",
+          "voyager",
+          "where is everybody",
+          "will we ever meet aliens",
+          "zoo hypothesis"
+        ],
+        "duration": "PT18M32S",
+        "viewCount": 5,
+        "likeCount": 0,
+        "commentCount": 1,
+        "thumbnail": "https://i.ytimg.com/vi/Mo93x0fxB1Q/maxresdefault.jpg",
+        "topicCategories": [
+          "https://en.wikipedia.org/wiki/Knowledge"
+        ]
+      }
+    ]
+  },
+  "per_video": {
+    "Mo93x0fxB1Q": {
+      "retention": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "elapsedVideoTimeRatio",
+            "dataType": "FLOAT",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "audienceWatchRatio",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "relativeRetentionPerformance",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": []
+      },
+      "traffic": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "insightTrafficSourceType",
+            "dataType": "STRING",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "views",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "estimatedMinutesWatched",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewDuration",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewPercentage",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": []
+      },
+      "hourly": {
+        "videoId": "Mo93x0fxB1Q",
+        "data": [
+          {
+            "timestamp": "2026-07-30T19:18:12.192Z",
+            "views": 2,
+            "likes": 0,
+            "comments": 0,
+            "vph": 0.8695652173913044
+          },
+          {
+            "timestamp": "2026-07-30T20:49:22.609Z",
+            "views": 2,
+            "likes": 0,
+            "comments": 0,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-30T22:22:38.851Z",
+            "views": 0,
+            "likes": 0,
+            "comments": 0,
+            "vph": null
+          },
+          {
+            "timestamp": "2026-07-30T23:30:51.531Z",
+            "views": 1,
+            "likes": 0,
+            "comments": 4,
+            "vph": 0.8823529411764706
+          },
+          {
+            "timestamp": "2026-07-31T00:34:38.754Z",
+            "views": 1,
+            "likes": 0,
+            "comments": 3,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T01:37:17.497Z",
+            "views": 1,
+            "likes": 0,
+            "comments": 4,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T02:36:32.105Z",
+            "views": 1,
+            "likes": 0,
+            "comments": 3,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T03:35:38.342Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 4.067796610169491
+          },
+          {
+            "timestamp": "2026-07-31T04:37:11.625Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T05:37:10.567Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T06:33:05.850Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T07:34:05.906Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T08:36:42.085Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T09:33:40.034Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T10:35:31.037Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T11:35:25.596Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T12:36:14.206Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T13:35:53.717Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T14:37:28.516Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T15:35:43.408Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T16:35:24.537Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T17:34:53.143Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T18:34:03.503Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T21:09:50.648Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-08-01T00:46:58.157Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-08-01T04:06:36.860Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-08-01T07:46:30.469Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-08-01T08:37:42.485Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-08-01T09:32:48.342Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-08-01T10:37:48.232Z",
+            "views": 5,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          }
+        ]
+      }
+    },
+    "z-DLqoSoEBo": {
+      "retention": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "elapsedVideoTimeRatio",
+            "dataType": "FLOAT",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "audienceWatchRatio",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "relativeRetentionPerformance",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": []
+      },
+      "traffic": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "insightTrafficSourceType",
+            "dataType": "STRING",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "views",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "estimatedMinutesWatched",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewDuration",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewPercentage",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": [
+          [
+            "NO_LINK_OTHER",
+            1,
+            0,
+            4,
+            10.77
+          ]
+        ]
+      },
+      "hourly": {
+        "videoId": "z-DLqoSoEBo",
+        "data": [
+          {
+            "timestamp": "2026-07-31T16:52:17.882Z",
+            "views": 1,
+            "likes": 0,
+            "comments": 0,
+            "vph": 0.059880239520958084
+          },
+          {
+            "timestamp": "2026-07-31T18:36:45.890Z",
+            "views": 16,
+            "likes": 0,
+            "comments": 1,
+            "vph": 8.653846153846153
+          },
+          {
+            "timestamp": "2026-07-31T19:33:28.227Z",
+            "views": 16,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T20:37:51.745Z",
+            "views": 16,
+            "likes": 0,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-07-31T21:37:40.881Z",
+            "views": 68,
+            "likes": 1,
+            "comments": 1,
+            "vph": 52.88135593220339
+          },
+          {
+            "timestamp": "2026-07-31T22:32:34.563Z",
+            "views": 85,
+            "likes": 1,
+            "comments": 1,
+            "vph": 18.88888888888889
+          },
+          {
+            "timestamp": "2026-07-31T23:35:16.204Z",
+            "views": 68,
+            "likes": 1,
+            "comments": 1,
+            "vph": null
+          },
+          {
+            "timestamp": "2026-08-01T00:36:07.874Z",
+            "views": 68,
+            "likes": 1,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-08-01T01:36:26.177Z",
+            "views": 98,
+            "likes": 1,
+            "comments": 1,
+            "vph": 30
+          },
+          {
+            "timestamp": "2026-08-01T04:18:59.510Z",
+            "views": 99,
+            "likes": 1,
+            "comments": 1,
+            "vph": 0.37037037037037035
+          },
+          {
+            "timestamp": "2026-08-01T07:46:30.469Z",
+            "views": 99,
+            "likes": 1,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-08-01T09:33:41.736Z",
+            "views": 99,
+            "likes": 1,
+            "comments": 1,
+            "vph": 0
+          },
+          {
+            "timestamp": "2026-08-01T11:03:49.210Z",
+            "views": 99,
+            "likes": 1,
+            "comments": 1,
+            "vph": 0
+          }
+        ]
+      }
+    },
+    "UWwNKYf_aU8": {
+      "retention": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "elapsedVideoTimeRatio",
+            "dataType": "FLOAT",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "audienceWatchRatio",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "relativeRetentionPerformance",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": []
+      },
+      "traffic": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "insightTrafficSourceType",
+            "dataType": "STRING",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "views",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "estimatedMinutesWatched",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewDuration",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewPercentage",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": [
+          [
+            "NO_LINK_OTHER",
+            1,
+            0,
+            7,
+            18.94
+          ]
+        ]
+      },
+      "hourly": {
+        "videoId": "UWwNKYf_aU8",
+        "data": [
+          {
+            "timestamp": "2026-07-30T20:49:22.609Z",
+            "views": 2,
+            "likes": 0,
+            "comments": 0,
+            "vph": 2.4489795918367347
+          },
+          {
+            "timestamp": "2026-07-31T00:33:52.245Z",
+            "views": 13,
+            "likes": 2,
+            "comments": 0,
+            "vph": 2.946428571428571
+          },
+          {
+            "timestamp": "2026-07-31T01:35:09.481Z",
+            "views": 15,
+            "likes": 2,
+            "comments": 0,
+            "vph": 1.9672131147540985
+          },
+          {
+            "timestamp": "2026-07-31T02:34:46.925Z",
+            "views": 15,
+            "likes": 2,
+            "comments": 0,
+            "vph": 0
+          }
+        ]
+      }
+    },
+    "MO19iXYCu0c": {
+      "retention": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "elapsedVideoTimeRatio",
+            "dataType": "FLOAT",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "audienceWatchRatio",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "relativeRetentionPerformance",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": []
+      },
+      "traffic": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "insightTrafficSourceType",
+            "dataType": "STRING",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "views",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "estimatedMinutesWatched",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewDuration",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewPercentage",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": [
+          [
+            "NO_LINK_OTHER",
+            2,
+            0,
+            45,
+            102.46
+          ]
+        ]
+      },
+      "hourly": {
+        "videoId": "MO19iXYCu0c",
+        "data": [
+          {
+            "timestamp": "2026-07-31T00:35:00.279Z",
+            "views": 3,
+            "likes": 0,
+            "comments": 0,
+            "vph": 7.826086956521738
+          }
+        ]
+      }
+    },
+    "--CxhjNqtSY": {
+      "retention": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "elapsedVideoTimeRatio",
+            "dataType": "FLOAT",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "audienceWatchRatio",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "relativeRetentionPerformance",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": []
+      },
+      "traffic": {
+        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "startDate": "2026-07-27",
+        "endDate": "2026-08-01",
+        "columnHeaders": [
+          {
+            "name": "insightTrafficSourceType",
+            "dataType": "STRING",
+            "columnType": "DIMENSION"
+          },
+          {
+            "name": "views",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "estimatedMinutesWatched",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewDuration",
+            "dataType": "INTEGER",
+            "columnType": "METRIC"
+          },
+          {
+            "name": "averageViewPercentage",
+            "dataType": "FLOAT",
+            "columnType": "METRIC"
+          }
+        ],
+        "rows": [
+          [
+            "NO_LINK_OTHER",
+            4,
+            1,
+            47,
+            96.1
+          ]
+        ]
+      },
+      "hourly": {
+        "videoId": "--CxhjNqtSY",
+        "data": [
+          {
+            "timestamp": "2026-07-31T00:35:00.279Z",
+            "views": 4,
+            "likes": 0,
+            "comments": 0,
+            "vph": 10.434782608695652
+          }
+        ]
+      }
+    }
+  },
+  "kw_fermi_paradox": {
+    "mode": "research",
+    "country": "GB",
+    "query": null,
+    "seedKeyword": {
+      "keyword": "fermi paradox",
+      "relatedScore": null,
+      "volume": 76.11752104466744,
+      "competition": 65.5,
+      "overall": 59.47051262680047,
+      "estimatedMonthlySearch": 125629,
+      "countryVolume": 2700,
+      "topMarkets": [
+        {
+          "country": "PK",
+          "pct": 0.2
+        },
+        {
+          "country": "IN",
+          "pct": 0.175
+        },
+        {
+          "country": "DE",
+          "pct": 0.125
+        },
+        {
+          "country": "MA",
+          "pct": 0.075
+        },
+        {
+          "country": "TR",
+          "pct": 0.075
+        }
+      ]
+    },
+    "relatedKeywords": [
+      {
+        "keyword": "aliens",
+        "relatedScore": 13.714080459770114,
+        "volume": 81.54432778867748,
+        "competition": 75,
+        "overall": 58.92659667320648,
+        "estimatedMonthlySearch": 290155,
+        "countryVolume": 10005,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.16521738
+          },
+          {
+            "country": "PK",
+            "pct": 0.09565217
+          },
+          {
+            "country": "IN",
+            "pct": 0.08695652
+          },
+          {
+            "country": "BR",
+            "pct": 0.069565214
+          },
+          {
+            "country": "DE",
+            "pct": 0.04347826
+          }
+        ]
+      },
+      {
+        "keyword": "universe",
+        "relatedScore": 13.5,
+        "volume": 86.32199725137977,
+        "competition": 70,
+        "overall": 63.79319835082786,
+        "estimatedMonthlySearch": 606296,
+        "countryVolume": 4542,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.19521913
+          },
+          {
+            "country": "BR",
+            "pct": 0.12350598
+          },
+          {
+            "country": "IN",
+            "pct": 0.11155379
+          },
+          {
+            "country": "PK",
+            "pct": 0.09163347
+          },
+          {
+            "country": "US",
+            "pct": 0.06374502
+          }
+        ]
+      },
+      {
+        "keyword": "space",
+        "relatedScore": 12.796994884910486,
+        "volume": 93.22193064824123,
+        "competition": 64.7,
+        "overall": 70.05315838894474,
+        "estimatedMonthlySearch": 1757556,
+        "countryVolume": 29622,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.14982164
+          },
+          {
+            "country": "IN",
+            "pct": 0.118906066
+          },
+          {
+            "country": "US",
+            "pct": 0.10107016
+          },
+          {
+            "country": "VN",
+            "pct": 0.09631391
+          },
+          {
+            "country": "DE",
+            "pct": 0.048751485
+          }
+        ]
+      },
+      {
+        "keyword": "astronomy",
+        "relatedScore": 12,
+        "volume": 78.89011839487794,
+        "competition": 57,
+        "overall": 64.53407103692676,
+        "estimatedMonthlySearch": 192675,
+        "countryVolume": 5279,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1594203
+          },
+          {
+            "country": "PK",
+            "pct": 0.13043478
+          },
+          {
+            "country": "VN",
+            "pct": 0.11594203
+          },
+          {
+            "country": "BR",
+            "pct": 0.10144927
+          },
+          {
+            "country": "US",
+            "pct": 0.057971016
+          }
+        ]
+      },
+      {
+        "keyword": "great filter",
+        "relatedScore": 11.1,
+        "volume": 58.534642171212546,
+        "competition": 44.3,
+        "overall": 57.40078530272753,
+        "estimatedMonthlySearch": 8341,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "physics",
+        "relatedScore": 11,
+        "volume": 84.89091214481729,
+        "competition": 66.5,
+        "overall": 64.33454728689037,
+        "estimatedMonthlySearch": 486202,
+        "countryVolume": 14025,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.20942408
+          },
+          {
+            "country": "US",
+            "pct": 0.12041885
+          },
+          {
+            "country": "PK",
+            "pct": 0.09947644
+          },
+          {
+            "country": "BD",
+            "pct": 0.07329843
+          },
+          {
+            "country": "BR",
+            "pct": 0.05235602
+          }
+        ]
+      },
+      {
+        "keyword": "the fermi paradox",
+        "relatedScore": 9.800000000000002,
+        "volume": 69.42592891712623,
+        "competition": 69.5,
+        "overall": 53.85555735027574,
+        "estimatedMonthlySearch": 44753,
+        "countryVolume": 3197,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.23076923
+          },
+          {
+            "country": "AR",
+            "pct": 0.07692308
+          },
+          {
+            "country": "BD",
+            "pct": 0.07692308
+          },
+          {
+            "country": "UA",
+            "pct": 0.07692308
+          },
+          {
+            "country": "IQ",
+            "pct": 0.07692308
+          }
+        ]
+      },
+      {
+        "keyword": "fermi paradox solutions",
+        "relatedScore": 9.8,
+        "volume": 53.927274666506634,
+        "competition": 42.5,
+        "overall": 55.35636479990398,
+        "estimatedMonthlySearch": 4098,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "science",
+        "relatedScore": 9.277488425925926,
+        "volume": 88.91816300556414,
+        "competition": 65,
+        "overall": 67.35089780333848,
+        "estimatedMonthlySearch": 904901,
+        "countryVolume": 12927,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1625
+          },
+          {
+            "country": "US",
+            "pct": 0.1175
+          },
+          {
+            "country": "PK",
+            "pct": 0.0925
+          },
+          {
+            "country": "VN",
+            "pct": 0.0825
+          },
+          {
+            "country": "BD",
+            "pct": 0.0575
+          }
+        ]
+      },
+      {
+        "keyword": "extraterrestrial life",
+        "relatedScore": 9.000000000000002,
+        "volume": 59.82441736451134,
+        "competition": 50,
+        "overall": 55.8946504187068,
+        "estimatedMonthlySearch": 10177,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "science fiction",
+        "relatedScore": 7.2,
+        "volume": 74.16367986312969,
+        "competition": 51.5,
+        "overall": 63.89820791787781,
+        "estimatedMonthlySearch": 92940,
+        "countryVolume": 5809,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.28125
+          },
+          {
+            "country": "DE",
+            "pct": 0.09375
+          },
+          {
+            "country": "VN",
+            "pct": 0.09375
+          },
+          {
+            "country": "GB",
+            "pct": 0.0625
+          },
+          {
+            "country": "AU",
+            "pct": 0.0625
+          }
+        ]
+      },
+      {
+        "keyword": "life in the universe",
+        "relatedScore": 7,
+        "volume": 52.86565586135368,
+        "competition": 45.5,
+        "overall": 53.51939351681221,
+        "estimatedMonthlySearch": 3479,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alien",
+        "relatedScore": 6.947201017811705,
+        "volume": 84.57952435937067,
+        "competition": 71,
+        "overall": 62.3477146156224,
+        "estimatedMonthlySearch": 463401,
+        "countryVolume": 7057,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.13756613
+          },
+          {
+            "country": "ID",
+            "pct": 0.12169312
+          },
+          {
+            "country": "IN",
+            "pct": 0.08994709
+          },
+          {
+            "country": "BR",
+            "pct": 0.08465608
+          },
+          {
+            "country": "US",
+            "pct": 0.074074075
+          }
+        ]
+      },
+      {
+        "keyword": "astrophysics",
+        "relatedScore": 6.75,
+        "volume": 67.62569942257336,
+        "competition": 56,
+        "overall": 58.17541965354402,
+        "estimatedMonthlySearch": 33902,
+        "countryVolume": 3116,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.27272728
+          },
+          {
+            "country": "BY",
+            "pct": 0.18181819
+          },
+          {
+            "country": "BG",
+            "pct": 0.09090909
+          },
+          {
+            "country": "IT",
+            "pct": 0.09090909
+          },
+          {
+            "country": "NL",
+            "pct": 0.09090909
+          }
+        ]
+      },
+      {
+        "keyword": "space facts",
+        "relatedScore": 6.6,
+        "volume": 81.64227425805343,
+        "competition": 42.2,
+        "overall": 72.10536455483206,
+        "estimatedMonthlySearch": 294572,
+        "countryVolume": 4993,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.25233644
+          },
+          {
+            "country": "IN",
+            "pct": 0.13084112
+          },
+          {
+            "country": "VN",
+            "pct": 0.06542056
+          },
+          {
+            "country": "BD",
+            "pct": 0.056074765
+          },
+          {
+            "country": "US",
+            "pct": 0.056074765
+          }
+        ]
+      },
+      {
+        "keyword": "kardashev scale",
+        "relatedScore": 6.300000000000001,
+        "volume": 68.09835130896786,
+        "competition": 47,
+        "overall": 62.05901078538072,
+        "estimatedMonthlySearch": 36466,
+        "countryVolume": 3282,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.54545456
+          },
+          {
+            "country": "US",
+            "pct": 0.18181819
+          },
+          {
+            "country": "PK",
+            "pct": 0.09090909
+          },
+          {
+            "country": "NO",
+            "pct": 0.09090909
+          },
+          {
+            "country": "IQ",
+            "pct": 0.09090909
+          }
+        ]
+      },
+      {
+        "keyword": "earth",
+        "relatedScore": 6.25,
+        "volume": 82.01821858040654,
+        "competition": 53.8,
+        "overall": 67.69093114824392,
+        "estimatedMonthlySearch": 312159,
+        "countryVolume": 17342,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.12605043
+          },
+          {
+            "country": "VN",
+            "pct": 0.11764706
+          },
+          {
+            "country": "IN",
+            "pct": 0.11764706
+          },
+          {
+            "country": "CZ",
+            "pct": 0.075630255
+          },
+          {
+            "country": "GB",
+            "pct": 0.05042017
+          }
+        ]
+      },
+      {
+        "keyword": "fermi paradox explained",
+        "relatedScore": 6.125,
+        "volume": 58.80709016899082,
+        "competition": 46.5,
+        "overall": 56.68425410139449,
+        "estimatedMonthlySearch": 8699,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "mars",
+        "relatedScore": 6,
+        "volume": 82.19731949246219,
+        "competition": 65,
+        "overall": 63.31839169547731,
+        "estimatedMonthlySearch": 320903,
+        "countryVolume": 9874,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.12903225
+          },
+          {
+            "country": "VN",
+            "pct": 0.12903225
+          },
+          {
+            "country": "PK",
+            "pct": 0.10483871
+          },
+          {
+            "country": "TR",
+            "pct": 0.07258064
+          },
+          {
+            "country": "US",
+            "pct": 0.05645161
+          }
+        ]
+      },
+      {
+        "keyword": "where are the aliens",
+        "relatedScore": 5.949999999999999,
+        "volume": 52.93055133646214,
+        "competition": 46,
+        "overall": 53.35833080187729,
+        "estimatedMonthlySearch": 3514,
+        "countryVolume": null,
+        "topMarkets": []
+      }
+    ],
+    "risingKeywords": [],
+    "period": null,
+    "availableTopics": [],
+    "vphDailyViews": [
+      {
+        "date": "2026-07-04",
+        "viewsPerHour": 3141
+      },
+      {
+        "date": "2026-07-05",
+        "viewsPerHour": 7395
+      },
+      {
+        "date": "2026-07-06",
+        "viewsPerHour": 8129
+      },
+      {
+        "date": "2026-07-07",
+        "viewsPerHour": 6453
+      },
+      {
+        "date": "2026-07-08",
+        "viewsPerHour": 5632
+      },
+      {
+        "date": "2026-07-09",
+        "viewsPerHour": 7100
+      },
+      {
+        "date": "2026-07-10",
+        "viewsPerHour": 8579
+      },
+      {
+        "date": "2026-07-11",
+        "viewsPerHour": 5224
+      },
+      {
+        "date": "2026-07-12",
+        "viewsPerHour": 5306
+      },
+      {
+        "date": "2026-07-13",
+        "viewsPerHour": 5304
+      },
+      {
+        "date": "2026-07-14",
+        "viewsPerHour": 5952
+      },
+      {
+        "date": "2026-07-15",
+        "viewsPerHour": 3720
+      },
+      {
+        "date": "2026-07-16",
+        "viewsPerHour": 4880
+      },
+      {
+        "date": "2026-07-17",
+        "viewsPerHour": 8131
+      },
+      {
+        "date": "2026-07-18",
+        "viewsPerHour": 4942
+      },
+      {
+        "date": "2026-07-19",
+        "viewsPerHour": 6788
+      },
+      {
+        "date": "2026-07-20",
+        "viewsPerHour": 5789
+      },
+      {
+        "date": "2026-07-21",
+        "viewsPerHour": 5284
+      },
+      {
+        "date": "2026-07-22",
+        "viewsPerHour": 5336
+      },
+      {
+        "date": "2026-07-23",
+        "viewsPerHour": 7182
+      },
+      {
+        "date": "2026-07-24",
+        "viewsPerHour": 5537
+      },
+      {
+        "date": "2026-07-25",
+        "viewsPerHour": 6051
+      },
+      {
+        "date": "2026-07-26",
+        "viewsPerHour": 6923
+      },
+      {
+        "date": "2026-07-27",
+        "viewsPerHour": 11143
+      },
+      {
+        "date": "2026-07-28",
+        "viewsPerHour": 11066
+      },
+      {
+        "date": "2026-07-29",
+        "viewsPerHour": 7864
+      },
+      {
+        "date": "2026-07-30",
+        "viewsPerHour": 9098
+      },
+      {
+        "date": "2026-07-31",
+        "viewsPerHour": 4466
+      }
+    ]
+  },
+  "kw_black_hole": {
+    "mode": "research",
+    "country": "GB",
+    "query": null,
+    "seedKeyword": {
+      "keyword": "black hole",
+      "relatedScore": null,
+      "volume": 85.96784743101058,
+      "competition": 65.5,
+      "overall": 65.38070845860635,
+      "estimatedMonthlySearch": 574064,
+      "countryVolume": 4574,
+      "topMarkets": [
+        {
+          "country": "VN",
+          "pct": 0.12658228
+        },
+        {
+          "country": "US",
+          "pct": 0.11814346
+        },
+        {
+          "country": "IN",
+          "pct": 0.10548523
+        },
+        {
+          "country": "PK",
+          "pct": 0.101265825
+        },
+        {
+          "country": "BR",
+          "pct": 0.06329114
+        }
+      ]
+    },
+    "relatedKeywords": [
+      {
+        "keyword": "black holes",
+        "relatedScore": 28.2,
+        "volume": 78.13607513667385,
+        "competition": 63.5,
+        "overall": 61.48164508200431,
+        "estimatedMonthlySearch": 171519,
+        "countryVolume": 5360,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.22950819
+          },
+          {
+            "country": "US",
+            "pct": 0.13114753
+          },
+          {
+            "country": "UA",
+            "pct": 0.06557377
+          },
+          {
+            "country": "IN",
+            "pct": 0.04918033
+          },
+          {
+            "country": "GB",
+            "pct": 0.032786883
+          }
+        ]
+      },
+      {
+        "keyword": "supermassive black hole",
+        "relatedScore": 17.150000000000006,
+        "volume": 74.99569895458912,
+        "competition": 39,
+        "overall": 69.39741937275348,
+        "estimatedMonthlySearch": 105667,
+        "countryVolume": 11423,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.25714287
+          },
+          {
+            "country": "PK",
+            "pct": 0.08571429
+          },
+          {
+            "country": "GB",
+            "pct": 0.057142857
+          },
+          {
+            "country": "BR",
+            "pct": 0.057142857
+          },
+          {
+            "country": "CO",
+            "pct": 0.057142857
+          }
+        ]
+      },
+      {
+        "keyword": "space",
+        "relatedScore": 9.046994884910486,
+        "volume": 93.22193064824123,
+        "competition": 64.7,
+        "overall": 70.05315838894474,
+        "estimatedMonthlySearch": 1757556,
+        "countryVolume": 29622,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.14982164
+          },
+          {
+            "country": "IN",
+            "pct": 0.118906066
+          },
+          {
+            "country": "US",
+            "pct": 0.10107016
+          },
+          {
+            "country": "VN",
+            "pct": 0.09631391
+          },
+          {
+            "country": "DE",
+            "pct": 0.048751485
+          }
+        ]
+      },
+      {
+        "keyword": "astrophysics",
+        "relatedScore": 8,
+        "volume": 67.62569942257336,
+        "competition": 56,
+        "overall": 58.17541965354402,
+        "estimatedMonthlySearch": 33902,
+        "countryVolume": 3116,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.27272728
+          },
+          {
+            "country": "BY",
+            "pct": 0.18181819
+          },
+          {
+            "country": "BG",
+            "pct": 0.09090909
+          },
+          {
+            "country": "IT",
+            "pct": 0.09090909
+          },
+          {
+            "country": "NL",
+            "pct": 0.09090909
+          }
+        ]
+      },
+      {
+        "keyword": "physics",
+        "relatedScore": 8,
+        "volume": 84.89091214481729,
+        "competition": 66.5,
+        "overall": 64.33454728689037,
+        "estimatedMonthlySearch": 486202,
+        "countryVolume": 14025,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.20942408
+          },
+          {
+            "country": "US",
+            "pct": 0.12041885
+          },
+          {
+            "country": "PK",
+            "pct": 0.09947644
+          },
+          {
+            "country": "BD",
+            "pct": 0.07329843
+          },
+          {
+            "country": "BR",
+            "pct": 0.05235602
+          }
+        ]
+      },
+      {
+        "keyword": "astronomy",
+        "relatedScore": 8,
+        "volume": 78.89011839487794,
+        "competition": 57,
+        "overall": 64.53407103692676,
+        "estimatedMonthlySearch": 192675,
+        "countryVolume": 5279,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1594203
+          },
+          {
+            "country": "PK",
+            "pct": 0.13043478
+          },
+          {
+            "country": "VN",
+            "pct": 0.11594203
+          },
+          {
+            "country": "BR",
+            "pct": 0.10144927
+          },
+          {
+            "country": "US",
+            "pct": 0.057971016
+          }
+        ]
+      },
+      {
+        "keyword": "universe",
+        "relatedScore": 8,
+        "volume": 86.32199725137977,
+        "competition": 70,
+        "overall": 63.79319835082786,
+        "estimatedMonthlySearch": 606296,
+        "countryVolume": 4542,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.19521913
+          },
+          {
+            "country": "BR",
+            "pct": 0.12350598
+          },
+          {
+            "country": "IN",
+            "pct": 0.11155379
+          },
+          {
+            "country": "PK",
+            "pct": 0.09163347
+          },
+          {
+            "country": "US",
+            "pct": 0.06374502
+          }
+        ]
+      },
+      {
+        "keyword": "black holes explained",
+        "relatedScore": 7.350000000000001,
+        "volume": 67.7879175268008,
+        "competition": 42,
+        "overall": 63.87275051608048,
+        "estimatedMonthlySearch": 34761,
+        "countryVolume": 3815,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.2
+          },
+          {
+            "country": "US",
+            "pct": 0.2
+          },
+          {
+            "country": "ES",
+            "pct": 0.1
+          },
+          {
+            "country": "PK",
+            "pct": 0.1
+          },
+          {
+            "country": "SG",
+            "pct": 0.1
+          }
+        ]
+      },
+      {
+        "keyword": "event horizon",
+        "relatedScore": 6.6,
+        "volume": 78.96811297433719,
+        "competition": 65,
+        "overall": 61.38086778460231,
+        "estimatedMonthlySearch": 195007,
+        "countryVolume": 10541,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.2739726
+          },
+          {
+            "country": "IN",
+            "pct": 0.09589041
+          },
+          {
+            "country": "VN",
+            "pct": 0.05479452
+          },
+          {
+            "country": "GB",
+            "pct": 0.05479452
+          },
+          {
+            "country": "PK",
+            "pct": 0.04109589
+          }
+        ]
+      },
+      {
+        "keyword": "stellar black hole",
+        "relatedScore": 6.125,
+        "volume": 53.11963720124911,
+        "competition": 42,
+        "overall": 55.07178232074947,
+        "estimatedMonthlySearch": 3618,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "intermediate black hole",
+        "relatedScore": 6.125,
+        "volume": 0,
+        "competition": 30.5,
+        "overall": 27.8,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "cosmos",
+        "relatedScore": 5.25,
+        "volume": 82.58096013010501,
+        "competition": 33.7,
+        "overall": 76.068576078063,
+        "estimatedMonthlySearch": 340466,
+        "countryVolume": 12247,
+        "topMarkets": [
+          {
+            "country": "BR",
+            "pct": 0.09375
+          },
+          {
+            "country": "IN",
+            "pct": 0.0859375
+          },
+          {
+            "country": "NL",
+            "pct": 0.0546875
+          },
+          {
+            "country": "US",
+            "pct": 0.046875
+          },
+          {
+            "country": "KR",
+            "pct": 0.046875
+          }
+        ]
+      },
+      {
+        "keyword": "science",
+        "relatedScore": 5.027488425925926,
+        "volume": 88.91816300556414,
+        "competition": 65,
+        "overall": 67.35089780333848,
+        "estimatedMonthlySearch": 904901,
+        "countryVolume": 12927,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1625
+          },
+          {
+            "country": "US",
+            "pct": 0.1175
+          },
+          {
+            "country": "PK",
+            "pct": 0.0925
+          },
+          {
+            "country": "VN",
+            "pct": 0.0825
+          },
+          {
+            "country": "BD",
+            "pct": 0.0575
+          }
+        ]
+      },
+      {
+        "keyword": "black hole event horizon",
+        "relatedScore": 4.9,
+        "volume": 55.47874018494856,
+        "competition": 39.5,
+        "overall": 57.48724411096914,
+        "estimatedMonthlySearch": 5206,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "primordial black holes",
+        "relatedScore": 4.9,
+        "volume": 61.134972418112376,
+        "competition": 59,
+        "overall": 53.08098345086742,
+        "estimatedMonthlySearch": 12457,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "black hole gravity",
+        "relatedScore": 4.9,
+        "volume": 53.219213545697244,
+        "competition": 36,
+        "overall": 57.53152812741835,
+        "estimatedMonthlySearch": 3674,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "black hole photo",
+        "relatedScore": 4.9,
+        "volume": 52.87310545002663,
+        "competition": 38.5,
+        "overall": 56.32386327001598,
+        "estimatedMonthlySearch": 3483,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "black hole sun",
+        "relatedScore": 4.9,
+        "volume": 80.39976927877657,
+        "competition": 44.2,
+        "overall": 70.55986156726594,
+        "estimatedMonthlySearch": 243196,
+        "countryVolume": 5120,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.2580645
+          },
+          {
+            "country": "BR",
+            "pct": 0.12903225
+          },
+          {
+            "country": "CA",
+            "pct": 0.05376344
+          },
+          {
+            "country": "MX",
+            "pct": 0.05376344
+          },
+          {
+            "country": "VN",
+            "pct": 0.043010753
+          }
+        ]
+      },
+      {
+        "keyword": "primordial black hole",
+        "relatedScore": 4.9,
+        "volume": 61.88414569656141,
+        "competition": 52.5,
+        "overall": 56.13048741793685,
+        "estimatedMonthlySearch": 13983,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "stellar mass black hole",
+        "relatedScore": 4.9,
+        "volume": 0,
+        "competition": 38.5,
+        "overall": 24.6,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      }
+    ],
+    "risingKeywords": [],
+    "period": null,
+    "availableTopics": [],
+    "vphDailyViews": [
+      {
+        "date": "2026-07-04",
+        "viewsPerHour": 283065
+      },
+      {
+        "date": "2026-07-05",
+        "viewsPerHour": 394998
+      },
+      {
+        "date": "2026-07-06",
+        "viewsPerHour": 253874
+      },
+      {
+        "date": "2026-07-07",
+        "viewsPerHour": 257069
+      },
+      {
+        "date": "2026-07-08",
+        "viewsPerHour": 351668
+      },
+      {
+        "date": "2026-07-09",
+        "viewsPerHour": 262934
+      },
+      {
+        "date": "2026-07-10",
+        "viewsPerHour": 300664
+      },
+      {
+        "date": "2026-07-11",
+        "viewsPerHour": 778840
+      },
+      {
+        "date": "2026-07-12",
+        "viewsPerHour": 1110009
+      },
+      {
+        "date": "2026-07-13",
+        "viewsPerHour": 1700114
+      },
+      {
+        "date": "2026-07-14",
+        "viewsPerHour": 6251615
+      },
+      {
+        "date": "2026-07-15",
+        "viewsPerHour": 794933
+      },
+      {
+        "date": "2026-07-16",
+        "viewsPerHour": 900307
+      },
+      {
+        "date": "2026-07-17",
+        "viewsPerHour": 633045
+      },
+      {
+        "date": "2026-07-18",
+        "viewsPerHour": 361800
+      },
+      {
+        "date": "2026-07-19",
+        "viewsPerHour": 410128
+      },
+      {
+        "date": "2026-07-20",
+        "viewsPerHour": 213003
+      },
+      {
+        "date": "2026-07-21",
+        "viewsPerHour": 484635
+      },
+      {
+        "date": "2026-07-22",
+        "viewsPerHour": 1250431
+      },
+      {
+        "date": "2026-07-23",
+        "viewsPerHour": 1904285
+      },
+      {
+        "date": "2026-07-24",
+        "viewsPerHour": 979744
+      },
+      {
+        "date": "2026-07-25",
+        "viewsPerHour": 627737
+      },
+      {
+        "date": "2026-07-26",
+        "viewsPerHour": 359604
+      },
+      {
+        "date": "2026-07-27",
+        "viewsPerHour": 242231
+      },
+      {
+        "date": "2026-07-28",
+        "viewsPerHour": 307467
+      },
+      {
+        "date": "2026-07-29",
+        "viewsPerHour": 391416
+      },
+      {
+        "date": "2026-07-30",
+        "viewsPerHour": 369831
+      },
+      {
+        "date": "2026-07-31",
+        "viewsPerHour": 412062
+      }
+    ]
+  },
+  "kw_alien_worlds": {
+    "mode": "research",
+    "country": "GB",
+    "query": null,
+    "seedKeyword": {
+      "keyword": "alien worlds",
+      "relatedScore": null,
+      "volume": 64.99438983237036,
+      "competition": 40.4,
+      "overall": 62.83663389942222,
+      "estimatedMonthlySearch": 22592,
+      "countryVolume": null,
+      "topMarkets": []
+    },
+    "relatedKeywords": [
+      {
+        "keyword": "alien worlds season 1",
+        "relatedScore": 15.924999999999995,
+        "volume": 54.53826401070827,
+        "competition": 42,
+        "overall": 55.92295840642496,
+        "estimatedMonthlySearch": 4503,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alien worlds review",
+        "relatedScore": 11.025,
+        "volume": 52.83202637126784,
+        "competition": 33,
+        "overall": 58.4992158227607,
+        "estimatedMonthlySearch": 3461,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "life on alien worlds",
+        "relatedScore": 9.8,
+        "volume": 0,
+        "competition": 40,
+        "overall": 24,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "what would life look like on alien worlds",
+        "relatedScore": 9.8,
+        "volume": 0,
+        "competition": 43,
+        "overall": 22.8,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alien worlds season 2",
+        "relatedScore": 9.8,
+        "volume": 0,
+        "competition": 40,
+        "overall": 24,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alien worlds summary",
+        "relatedScore": 9.8,
+        "volume": 0,
+        "competition": 38,
+        "overall": 24.8,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "background music",
+        "relatedScore": 6,
+        "volume": 94.89632950843071,
+        "competition": 34.9,
+        "overall": 82.97779770505842,
+        "estimatedMonthlySearch": 2275499,
+        "countryVolume": 41997,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.17471465
+          },
+          {
+            "country": "IN",
+            "pct": 0.15452151
+          },
+          {
+            "country": "PK",
+            "pct": 0.07550483
+          },
+          {
+            "country": "BD",
+            "pct": 0.05882353
+          },
+          {
+            "country": "VN",
+            "pct": 0.038630378
+          }
+        ]
+      },
+      {
+        "keyword": "ambient soundscape music",
+        "relatedScore": 5.6,
+        "volume": 55.50855857632461,
+        "competition": 15.3,
+        "overall": 67.18513514579476,
+        "estimatedMonthlySearch": 5230,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "ambient composition",
+        "relatedScore": 4.8,
+        "volume": 0,
+        "competition": 10.2,
+        "overall": 35.92,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "ambient soundtrack",
+        "relatedScore": 4.8,
+        "volume": 55.491181186327985,
+        "competition": 47.5,
+        "overall": 54.29470871179679,
+        "estimatedMonthlySearch": 5216,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alienworlds ambience",
+        "relatedScore": 4.8,
+        "volume": 0,
+        "competition": 25.7,
+        "overall": 29.72,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "ambient soundscape",
+        "relatedScore": 4.8,
+        "volume": 58.76297012721239,
+        "competition": 25.8,
+        "overall": 64.93778207632744,
+        "estimatedMonthlySearch": 8640,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "cinematic music",
+        "relatedScore": 4.8,
+        "volume": 83.38730941596657,
+        "competition": 28.4,
+        "overall": 78.67238564957995,
+        "estimatedMonthlySearch": 385559,
+        "countryVolume": 7229,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.14473684
+          },
+          {
+            "country": "IN",
+            "pct": 0.13157895
+          },
+          {
+            "country": "PK",
+            "pct": 0.04605263
+          },
+          {
+            "country": "DE",
+            "pct": 0.039473683
+          },
+          {
+            "country": "BD",
+            "pct": 0.032894738
+          }
+        ]
+      },
+      {
+        "keyword": "alien life",
+        "relatedScore": 4.5,
+        "volume": 63.85267708728598,
+        "competition": 58,
+        "overall": 55.11160625237159,
+        "estimatedMonthlySearch": 18944,
+        "countryVolume": 3391,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alienworlds",
+        "relatedScore": 4,
+        "volume": 60.500714006547376,
+        "competition": 47.9,
+        "overall": 57.140428403928425,
+        "estimatedMonthlySearch": 11296,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alien encounters",
+        "relatedScore": 3.8999999999999995,
+        "volume": 60.903998592493366,
+        "competition": 56,
+        "overall": 54.14239915549602,
+        "estimatedMonthlySearch": 12021,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alien planet",
+        "relatedScore": 3.5999999999999996,
+        "volume": 59.56048483127976,
+        "competition": 45.5,
+        "overall": 57.53629089876786,
+        "estimatedMonthlySearch": 9771,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alien creatures",
+        "relatedScore": 3,
+        "volume": 55.099238983513224,
+        "competition": 47.5,
+        "overall": 54.05954339010793,
+        "estimatedMonthlySearch": 4910,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "science fiction",
+        "relatedScore": 3,
+        "volume": 74.16367986312969,
+        "competition": 51.5,
+        "overall": 63.89820791787781,
+        "estimatedMonthlySearch": 92940,
+        "countryVolume": 5809,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.28125
+          },
+          {
+            "country": "DE",
+            "pct": 0.09375
+          },
+          {
+            "country": "VN",
+            "pct": 0.09375
+          },
+          {
+            "country": "GB",
+            "pct": 0.0625
+          },
+          {
+            "country": "AU",
+            "pct": 0.0625
+          }
+        ]
+      },
+      {
+        "keyword": "silicon based life",
+        "relatedScore": 2.8,
+        "volume": 53.4531572815404,
+        "competition": 45.2,
+        "overall": 53.99189436892424,
+        "estimatedMonthlySearch": 3809,
+        "countryVolume": null,
+        "topMarkets": []
+      }
+    ],
+    "risingKeywords": [],
+    "period": null,
+    "availableTopics": [],
+    "vphDailyViews": []
+  },
+  "kw_space_documentary": {
+    "mode": "research",
+    "country": "GB",
+    "query": null,
+    "seedKeyword": {
+      "keyword": "space documentary",
+      "relatedScore": null,
+      "volume": 84.15703916336861,
+      "competition": 47,
+      "overall": 71.69422349802116,
+      "estimatedMonthlySearch": 434165,
+      "countryVolume": 2372,
+      "topMarkets": [
+        {
+          "country": "IN",
+          "pct": 0.19277108
+        },
+        {
+          "country": "PK",
+          "pct": 0.16867469
+        },
+        {
+          "country": "VN",
+          "pct": 0.12650603
+        },
+        {
+          "country": "US",
+          "pct": 0.084337346
+        },
+        {
+          "country": "BD",
+          "pct": 0.06626506
+        }
+      ]
+    },
+    "relatedKeywords": [
+      {
+        "keyword": "space documentary 4k",
+        "relatedScore": 14.699999999999998,
+        "volume": 54.58988740621052,
+        "competition": 29.7,
+        "overall": 60.87393244372632,
+        "estimatedMonthlySearch": 4539,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "space documentary sleep",
+        "relatedScore": 11.025,
+        "volume": 61.98580768299995,
+        "competition": 50.3,
+        "overall": 57.07148460979997,
+        "estimatedMonthlySearch": 14204,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "universe",
+        "relatedScore": 9,
+        "volume": 86.32199725137977,
+        "competition": 70,
+        "overall": 63.79319835082786,
+        "estimatedMonthlySearch": 606296,
+        "countryVolume": 4542,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.19521913
+          },
+          {
+            "country": "BR",
+            "pct": 0.12350598
+          },
+          {
+            "country": "IN",
+            "pct": 0.11155379
+          },
+          {
+            "country": "PK",
+            "pct": 0.09163347
+          },
+          {
+            "country": "US",
+            "pct": 0.06374502
+          }
+        ]
+      },
+      {
+        "keyword": "nasa",
+        "relatedScore": 9,
+        "volume": 88.05062469790604,
+        "competition": 75,
+        "overall": 62.83037481874363,
+        "estimatedMonthlySearch": 791562,
+        "countryVolume": 35083,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1179941
+          },
+          {
+            "country": "VN",
+            "pct": 0.1179941
+          },
+          {
+            "country": "PK",
+            "pct": 0.1179941
+          },
+          {
+            "country": "US",
+            "pct": 0.09439528
+          },
+          {
+            "country": "BR",
+            "pct": 0.076696165
+          }
+        ]
+      },
+      {
+        "keyword": "space",
+        "relatedScore": 8.296994884910486,
+        "volume": 93.22193064824123,
+        "competition": 64.7,
+        "overall": 70.05315838894474,
+        "estimatedMonthlySearch": 1757556,
+        "countryVolume": 29622,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.14982164
+          },
+          {
+            "country": "IN",
+            "pct": 0.118906066
+          },
+          {
+            "country": "US",
+            "pct": 0.10107016
+          },
+          {
+            "country": "VN",
+            "pct": 0.09631391
+          },
+          {
+            "country": "DE",
+            "pct": 0.048751485
+          }
+        ]
+      },
+      {
+        "keyword": "solar system",
+        "relatedScore": 8.1,
+        "volume": 80.51915526002288,
+        "competition": 57.5,
+        "overall": 65.31149315601374,
+        "estimatedMonthlySearch": 247716,
+        "countryVolume": 2554,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.24444444
+          },
+          {
+            "country": "IN",
+            "pct": 0.13333334
+          },
+          {
+            "country": "VN",
+            "pct": 0.1
+          },
+          {
+            "country": "BR",
+            "pct": 0.055555556
+          },
+          {
+            "country": "US",
+            "pct": 0.044444446
+          }
+        ]
+      },
+      {
+        "keyword": "universe documentary",
+        "relatedScore": 7.800000000000001,
+        "volume": 68.0610879526516,
+        "competition": 50,
+        "overall": 60.83665277159096,
+        "estimatedMonthlySearch": 36257,
+        "countryVolume": 2789,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.30769232
+          },
+          {
+            "country": "VN",
+            "pct": 0.30769232
+          },
+          {
+            "country": "US",
+            "pct": 0.07692308
+          },
+          {
+            "country": "ZA",
+            "pct": 0.07692308
+          },
+          {
+            "country": "GB",
+            "pct": 0.07692308
+          }
+        ]
+      },
+      {
+        "keyword": "science",
+        "relatedScore": 7.777488425925926,
+        "volume": 88.91816300556414,
+        "competition": 65,
+        "overall": 67.35089780333848,
+        "estimatedMonthlySearch": 904901,
+        "countryVolume": 12927,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1625
+          },
+          {
+            "country": "US",
+            "pct": 0.1175
+          },
+          {
+            "country": "PK",
+            "pct": 0.0925
+          },
+          {
+            "country": "VN",
+            "pct": 0.0825
+          },
+          {
+            "country": "BD",
+            "pct": 0.0575
+          }
+        ]
+      },
+      {
+        "keyword": "astronomy",
+        "relatedScore": 7.25,
+        "volume": 78.89011839487794,
+        "competition": 57,
+        "overall": 64.53407103692676,
+        "estimatedMonthlySearch": 192675,
+        "countryVolume": 5279,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1594203
+          },
+          {
+            "country": "PK",
+            "pct": 0.13043478
+          },
+          {
+            "country": "VN",
+            "pct": 0.11594203
+          },
+          {
+            "country": "BR",
+            "pct": 0.10144927
+          },
+          {
+            "country": "US",
+            "pct": 0.057971016
+          }
+        ]
+      },
+      {
+        "keyword": "milky way",
+        "relatedScore": 6.8999999999999995,
+        "volume": 74.34004049734007,
+        "competition": 52.599999999999994,
+        "overall": 63.56402429840405,
+        "estimatedMonthlySearch": 95503,
+        "countryVolume": 2894,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.2580645
+          },
+          {
+            "country": "IN",
+            "pct": 0.16129032
+          },
+          {
+            "country": "PK",
+            "pct": 0.06451613
+          },
+          {
+            "country": "PL",
+            "pct": 0.06451613
+          },
+          {
+            "country": "IT",
+            "pct": 0.032258064
+          }
+        ]
+      },
+      {
+        "keyword": "cosmos",
+        "relatedScore": 6.75,
+        "volume": 82.58096013010501,
+        "competition": 33.7,
+        "overall": 76.068576078063,
+        "estimatedMonthlySearch": 340466,
+        "countryVolume": 12247,
+        "topMarkets": [
+          {
+            "country": "BR",
+            "pct": 0.09375
+          },
+          {
+            "country": "IN",
+            "pct": 0.0859375
+          },
+          {
+            "country": "NL",
+            "pct": 0.0546875
+          },
+          {
+            "country": "US",
+            "pct": 0.046875
+          },
+          {
+            "country": "KR",
+            "pct": 0.046875
+          }
+        ]
+      },
+      {
+        "keyword": "cosmos documentary",
+        "relatedScore": 6.6000000000000005,
+        "volume": 63.684187851110664,
+        "competition": 35.099999999999994,
+        "overall": 64.1705127106664,
+        "estimatedMonthlySearch": 18458,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "documentaries",
+        "relatedScore": 6.5,
+        "volume": 87.63932527426573,
+        "competition": 50.5,
+        "overall": 72.38359516455944,
+        "estimatedMonthlySearch": 742903,
+        "countryVolume": 59698,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.22910216
+          },
+          {
+            "country": "IN",
+            "pct": 0.11455108
+          },
+          {
+            "country": "PK",
+            "pct": 0.086687304
+          },
+          {
+            "country": "GB",
+            "pct": 0.071207434
+          },
+          {
+            "country": "BD",
+            "pct": 0.0371517
+          }
+        ]
+      },
+      {
+        "keyword": "documentary",
+        "relatedScore": 5.8374515503875966,
+        "volume": 96.2096736205273,
+        "competition": 76.5,
+        "overall": 67.12580417231638,
+        "estimatedMonthlySearch": 2786488,
+        "countryVolume": 65061,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.19775596
+          },
+          {
+            "country": "PK",
+            "pct": 0.12903225
+          },
+          {
+            "country": "US",
+            "pct": 0.08976157
+          },
+          {
+            "country": "BD",
+            "pct": 0.08134642
+          },
+          {
+            "country": "VN",
+            "pct": 0.06802244
+          }
+        ]
+      },
+      {
+        "keyword": "earth",
+        "relatedScore": 5.75,
+        "volume": 82.01821858040654,
+        "competition": 53.8,
+        "overall": 67.69093114824392,
+        "estimatedMonthlySearch": 312159,
+        "countryVolume": 17342,
+        "topMarkets": [
+          {
+            "country": "US",
+            "pct": 0.12605043
+          },
+          {
+            "country": "VN",
+            "pct": 0.11764706
+          },
+          {
+            "country": "IN",
+            "pct": 0.11764706
+          },
+          {
+            "country": "CZ",
+            "pct": 0.075630255
+          },
+          {
+            "country": "GB",
+            "pct": 0.05042017
+          }
+        ]
+      },
+      {
+        "keyword": "astrophysics",
+        "relatedScore": 5.5,
+        "volume": 67.62569942257336,
+        "competition": 56,
+        "overall": 58.17541965354402,
+        "estimatedMonthlySearch": 33902,
+        "countryVolume": 3116,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.27272728
+          },
+          {
+            "country": "BY",
+            "pct": 0.18181819
+          },
+          {
+            "country": "BG",
+            "pct": 0.09090909
+          },
+          {
+            "country": "IT",
+            "pct": 0.09090909
+          },
+          {
+            "country": "NL",
+            "pct": 0.09090909
+          }
+        ]
+      },
+      {
+        "keyword": "actual space",
+        "relatedScore": 5.4,
+        "volume": 75.98868330534572,
+        "competition": 40,
+        "overall": 69.59320998320743,
+        "estimatedMonthlySearch": 123157,
+        "countryVolume": 2830,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.6944444
+          },
+          {
+            "country": "TW",
+            "pct": 0.055555556
+          },
+          {
+            "country": "TR",
+            "pct": 0.027777778
+          },
+          {
+            "country": "RO",
+            "pct": 0.027777778
+          },
+          {
+            "country": "IT",
+            "pct": 0.027777778
+          }
+        ]
+      },
+      {
+        "keyword": "shocking facts",
+        "relatedScore": 5.4,
+        "volume": 66.62168509518676,
+        "competition": 37.5,
+        "overall": 64.97301105711205,
+        "estimatedMonthlySearch": 29038,
+        "countryVolume": 3187,
+        "topMarkets": []
+      },
+      {
+        "keyword": "physics",
+        "relatedScore": 5.25,
+        "volume": 84.89091214481729,
+        "competition": 66.5,
+        "overall": 64.33454728689037,
+        "estimatedMonthlySearch": 486202,
+        "countryVolume": 14025,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.20942408
+          },
+          {
+            "country": "US",
+            "pct": 0.12041885
+          },
+          {
+            "country": "PK",
+            "pct": 0.09947644
+          },
+          {
+            "country": "BD",
+            "pct": 0.07329843
+          },
+          {
+            "country": "BR",
+            "pct": 0.05235602
+          }
+        ]
+      },
+      {
+        "keyword": "history channel shows",
+        "relatedScore": 5.249999999999999,
+        "volume": 59.55251800529495,
+        "competition": 59,
+        "overall": 52.131510803176965,
+        "estimatedMonthlySearch": 9759,
+        "countryVolume": null,
+        "topMarkets": []
+      }
+    ],
+    "risingKeywords": [],
+    "period": null,
+    "availableTopics": [],
+    "vphDailyViews": [
+      {
+        "date": "2026-07-04",
+        "viewsPerHour": 65165
+      },
+      {
+        "date": "2026-07-05",
+        "viewsPerHour": 66831
+      },
+      {
+        "date": "2026-07-06",
+        "viewsPerHour": 67547
+      },
+      {
+        "date": "2026-07-07",
+        "viewsPerHour": 46539
+      },
+      {
+        "date": "2026-07-08",
+        "viewsPerHour": 75992
+      },
+      {
+        "date": "2026-07-09",
+        "viewsPerHour": 94290
+      },
+      {
+        "date": "2026-07-10",
+        "viewsPerHour": 66723
+      },
+      {
+        "date": "2026-07-11",
+        "viewsPerHour": 71925
+      },
+      {
+        "date": "2026-07-12",
+        "viewsPerHour": 85071
+      },
+      {
+        "date": "2026-07-13",
+        "viewsPerHour": 76624
+      },
+      {
+        "date": "2026-07-14",
+        "viewsPerHour": 83630
+      },
+      {
+        "date": "2026-07-15",
+        "viewsPerHour": 72870
+      },
+      {
+        "date": "2026-07-16",
+        "viewsPerHour": 96111
+      },
+      {
+        "date": "2026-07-17",
+        "viewsPerHour": 126667
+      },
+      {
+        "date": "2026-07-18",
+        "viewsPerHour": 74788
+      },
+      {
+        "date": "2026-07-19",
+        "viewsPerHour": 87437
+      },
+      {
+        "date": "2026-07-20",
+        "viewsPerHour": 58064
+      },
+      {
+        "date": "2026-07-21",
+        "viewsPerHour": 59577
+      },
+      {
+        "date": "2026-07-22",
+        "viewsPerHour": 84049
+      },
+      {
+        "date": "2026-07-23",
+        "viewsPerHour": 76302
+      },
+      {
+        "date": "2026-07-24",
+        "viewsPerHour": 77399
+      },
+      {
+        "date": "2026-07-25",
+        "viewsPerHour": 72290
+      },
+      {
+        "date": "2026-07-26",
+        "viewsPerHour": 79798
+      },
+      {
+        "date": "2026-07-27",
+        "viewsPerHour": 75080
+      },
+      {
+        "date": "2026-07-28",
+        "viewsPerHour": 73409
+      },
+      {
+        "date": "2026-07-29",
+        "viewsPerHour": 117506
+      },
+      {
+        "date": "2026-07-30",
+        "viewsPerHour": 77765
+      },
+      {
+        "date": "2026-07-31",
+        "viewsPerHour": 68520
+      }
+    ]
+  },
+  "kw_are_we_alone": {
+    "mode": "research",
+    "country": "GB",
+    "query": null,
+    "seedKeyword": {
+      "keyword": "are we alone",
+      "relatedScore": null,
+      "volume": 61.85254162935681,
+      "competition": 47.8,
+      "overall": 57.991524977614084,
+      "estimatedMonthlySearch": 13915,
+      "countryVolume": null,
+      "topMarkets": []
+    },
+    "relatedKeywords": [
+      {
+        "keyword": "are we alone in the universe",
+        "relatedScore": 17.150000000000002,
+        "volume": 65.84488356042264,
+        "competition": 53.2,
+        "overall": 58.226930136253586,
+        "estimatedMonthlySearch": 25759,
+        "countryVolume": 5655,
+        "topMarkets": []
+      },
+      {
+        "keyword": "universe",
+        "relatedScore": 7.5,
+        "volume": 86.32199725137977,
+        "competition": 70,
+        "overall": 63.79319835082786,
+        "estimatedMonthlySearch": 606296,
+        "countryVolume": 4542,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.19521913
+          },
+          {
+            "country": "BR",
+            "pct": 0.12350598
+          },
+          {
+            "country": "IN",
+            "pct": 0.11155379
+          },
+          {
+            "country": "PK",
+            "pct": 0.09163347
+          },
+          {
+            "country": "US",
+            "pct": 0.06374502
+          }
+        ]
+      },
+      {
+        "keyword": "alien life",
+        "relatedScore": 5.3999999999999995,
+        "volume": 63.85267708728598,
+        "competition": 58,
+        "overall": 55.11160625237159,
+        "estimatedMonthlySearch": 18944,
+        "countryVolume": 3391,
+        "topMarkets": []
+      },
+      {
+        "keyword": "fermi paradox",
+        "relatedScore": 5.3999999999999995,
+        "volume": 76.11752104466744,
+        "competition": 65.5,
+        "overall": 59.47051262680047,
+        "estimatedMonthlySearch": 125629,
+        "countryVolume": 2700,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.2
+          },
+          {
+            "country": "IN",
+            "pct": 0.175
+          },
+          {
+            "country": "DE",
+            "pct": 0.125
+          },
+          {
+            "country": "MA",
+            "pct": 0.075
+          },
+          {
+            "country": "TR",
+            "pct": 0.075
+          }
+        ]
+      },
+      {
+        "keyword": "are we alone in the galaxy? brian cox on alien life",
+        "relatedScore": 4.9,
+        "volume": 0,
+        "competition": 35.5,
+        "overall": 25.8,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "neil tyson are we alone",
+        "relatedScore": 4.9,
+        "volume": 0,
+        "competition": 79.1710153570896,
+        "overall": 8.33159385716416,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "are we alone in the universe brian cox",
+        "relatedScore": 4.9,
+        "volume": 0,
+        "competition": 53,
+        "overall": 18.8,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "are we alone in the galaxy",
+        "relatedScore": 3.6749999999999994,
+        "volume": 53.78654286088739,
+        "competition": 42,
+        "overall": 55.47192571653243,
+        "estimatedMonthlySearch": 4010,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "extraterrestrial life",
+        "relatedScore": 3.5999999999999996,
+        "volume": 59.82441736451134,
+        "competition": 50,
+        "overall": 55.8946504187068,
+        "estimatedMonthlySearch": 10177,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "brian cox",
+        "relatedScore": 3.3,
+        "volume": 76.83481546198365,
+        "competition": 64.5,
+        "overall": 60.300889277190194,
+        "estimatedMonthlySearch": 140327,
+        "countryVolume": 19261,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.14285715
+          },
+          {
+            "country": "US",
+            "pct": 0.14285715
+          },
+          {
+            "country": "GB",
+            "pct": 0.12244898
+          },
+          {
+            "country": "NG",
+            "pct": 0.10204082
+          },
+          {
+            "country": "HU",
+            "pct": 0.08163265
+          }
+        ]
+      },
+      {
+        "keyword": "mars",
+        "relatedScore": 3,
+        "volume": 82.19731949246219,
+        "competition": 65,
+        "overall": 63.31839169547731,
+        "estimatedMonthlySearch": 320903,
+        "countryVolume": 9874,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.12903225
+          },
+          {
+            "country": "VN",
+            "pct": 0.12903225
+          },
+          {
+            "country": "PK",
+            "pct": 0.10483871
+          },
+          {
+            "country": "TR",
+            "pct": 0.07258064
+          },
+          {
+            "country": "US",
+            "pct": 0.05645161
+          }
+        ]
+      },
+      {
+        "keyword": "physics",
+        "relatedScore": 3,
+        "volume": 84.89091214481729,
+        "competition": 66.5,
+        "overall": 64.33454728689037,
+        "estimatedMonthlySearch": 486202,
+        "countryVolume": 14025,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.20942408
+          },
+          {
+            "country": "US",
+            "pct": 0.12041885
+          },
+          {
+            "country": "PK",
+            "pct": 0.09947644
+          },
+          {
+            "country": "BD",
+            "pct": 0.07329843
+          },
+          {
+            "country": "BR",
+            "pct": 0.05235602
+          }
+        ]
+      },
+      {
+        "keyword": "science time",
+        "relatedScore": 3,
+        "volume": 66.54171355571519,
+        "competition": 56,
+        "overall": 57.52502813342912,
+        "estimatedMonthlySearch": 28682,
+        "countryVolume": 2808,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.2
+          },
+          {
+            "country": "BR",
+            "pct": 0.2
+          },
+          {
+            "country": "PK",
+            "pct": 0.2
+          },
+          {
+            "country": "US",
+            "pct": 0.1
+          },
+          {
+            "country": "BY",
+            "pct": 0.1
+          }
+        ]
+      },
+      {
+        "keyword": "astrophysics",
+        "relatedScore": 3,
+        "volume": 67.62569942257336,
+        "competition": 56,
+        "overall": 58.17541965354402,
+        "estimatedMonthlySearch": 33902,
+        "countryVolume": 3116,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.27272728
+          },
+          {
+            "country": "BY",
+            "pct": 0.18181819
+          },
+          {
+            "country": "BG",
+            "pct": 0.09090909
+          },
+          {
+            "country": "IT",
+            "pct": 0.09090909
+          },
+          {
+            "country": "NL",
+            "pct": 0.09090909
+          }
+        ]
+      },
+      {
+        "keyword": "astronomy",
+        "relatedScore": 3,
+        "volume": 78.89011839487794,
+        "competition": 57,
+        "overall": 64.53407103692676,
+        "estimatedMonthlySearch": 192675,
+        "countryVolume": 5279,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1594203
+          },
+          {
+            "country": "PK",
+            "pct": 0.13043478
+          },
+          {
+            "country": "VN",
+            "pct": 0.11594203
+          },
+          {
+            "country": "BR",
+            "pct": 0.10144927
+          },
+          {
+            "country": "US",
+            "pct": 0.057971016
+          }
+        ]
+      },
+      {
+        "keyword": "cosmos",
+        "relatedScore": 3,
+        "volume": 82.58096013010501,
+        "competition": 33.7,
+        "overall": 76.068576078063,
+        "estimatedMonthlySearch": 340466,
+        "countryVolume": 12247,
+        "topMarkets": [
+          {
+            "country": "BR",
+            "pct": 0.09375
+          },
+          {
+            "country": "IN",
+            "pct": 0.0859375
+          },
+          {
+            "country": "NL",
+            "pct": 0.0546875
+          },
+          {
+            "country": "US",
+            "pct": 0.046875
+          },
+          {
+            "country": "KR",
+            "pct": 0.046875
+          }
+        ]
+      },
+      {
+        "keyword": "the great filter",
+        "relatedScore": 2.8,
+        "volume": 70.19130317205462,
+        "competition": 45.1,
+        "overall": 64.07478190323278,
+        "estimatedMonthlySearch": 50361,
+        "countryVolume": 3148,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.23076923
+          },
+          {
+            "country": "US",
+            "pct": 0.15384616
+          },
+          {
+            "country": "CZ",
+            "pct": 0.07692308
+          },
+          {
+            "country": "TW",
+            "pct": 0.07692308
+          },
+          {
+            "country": "IN",
+            "pct": 0.07692308
+          }
+        ]
+      },
+      {
+        "keyword": "space",
+        "relatedScore": 2.796994884910486,
+        "volume": 93.22193064824123,
+        "competition": 64.7,
+        "overall": 70.05315838894474,
+        "estimatedMonthlySearch": 1757556,
+        "countryVolume": 29622,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.14982164
+          },
+          {
+            "country": "IN",
+            "pct": 0.118906066
+          },
+          {
+            "country": "US",
+            "pct": 0.10107016
+          },
+          {
+            "country": "VN",
+            "pct": 0.09631391
+          },
+          {
+            "country": "DE",
+            "pct": 0.048751485
+          }
+        ]
+      },
+      {
+        "keyword": "science",
+        "relatedScore": 2.777488425925926,
+        "volume": 88.91816300556414,
+        "competition": 65,
+        "overall": 67.35089780333848,
+        "estimatedMonthlySearch": 904901,
+        "countryVolume": 12927,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1625
+          },
+          {
+            "country": "US",
+            "pct": 0.1175
+          },
+          {
+            "country": "PK",
+            "pct": 0.0925
+          },
+          {
+            "country": "VN",
+            "pct": 0.0825
+          },
+          {
+            "country": "BD",
+            "pct": 0.0575
+          }
+        ]
+      },
+      {
+        "keyword": "astrobiology",
+        "relatedScore": 2.25,
+        "volume": 60.29844070288301,
+        "competition": 33.5,
+        "overall": 62.77906442172981,
+        "estimatedMonthlySearch": 10949,
+        "countryVolume": null,
+        "topMarkets": []
+      }
+    ],
+    "risingKeywords": [],
+    "period": null,
+    "availableTopics": [],
+    "vphDailyViews": []
+  },
+  "kw_great_filter": {
+    "mode": "research",
+    "country": "GB",
+    "query": null,
+    "seedKeyword": {
+      "keyword": "great filter",
+      "relatedScore": null,
+      "volume": 58.534642171212546,
+      "competition": 44.3,
+      "overall": 57.40078530272753,
+      "estimatedMonthlySearch": 8341,
+      "countryVolume": null,
+      "topMarkets": []
+    },
+    "relatedKeywords": [
+      {
+        "keyword": "the great filter",
+        "relatedScore": 33.07499999999999,
+        "volume": 70.19130317205462,
+        "competition": 45.1,
+        "overall": 64.07478190323278,
+        "estimatedMonthlySearch": 50361,
+        "countryVolume": 3148,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.23076923
+          },
+          {
+            "country": "US",
+            "pct": 0.15384616
+          },
+          {
+            "country": "CZ",
+            "pct": 0.07692308
+          },
+          {
+            "country": "TW",
+            "pct": 0.07692308
+          },
+          {
+            "country": "IN",
+            "pct": 0.07692308
+          }
+        ]
+      },
+      {
+        "keyword": "great filter theory",
+        "relatedScore": 20.825,
+        "volume": 55.41240131032655,
+        "competition": 32.8,
+        "overall": 60.12744078619593,
+        "estimatedMonthlySearch": 5153,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "what is the great filter",
+        "relatedScore": 11.025,
+        "volume": 53.02032730482513,
+        "competition": 28.4,
+        "overall": 60.45219638289508,
+        "estimatedMonthlySearch": 3563,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "fermi paradox",
+        "relatedScore": 10.5,
+        "volume": 76.11752104466744,
+        "competition": 65.5,
+        "overall": 59.47051262680047,
+        "estimatedMonthlySearch": 125629,
+        "countryVolume": 2700,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.2
+          },
+          {
+            "country": "IN",
+            "pct": 0.175
+          },
+          {
+            "country": "DE",
+            "pct": 0.125
+          },
+          {
+            "country": "MA",
+            "pct": 0.075
+          },
+          {
+            "country": "TR",
+            "pct": 0.075
+          }
+        ]
+      },
+      {
+        "keyword": "unveiled great filter",
+        "relatedScore": 9.8,
+        "volume": 0,
+        "competition": 11.5,
+        "overall": 35.4,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "has humanity solved the great filter",
+        "relatedScore": 9.8,
+        "volume": 0,
+        "competition": 24.1,
+        "overall": 30.360000000000003,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "have we solved the great filter",
+        "relatedScore": 9.8,
+        "volume": 0,
+        "competition": 16.6,
+        "overall": 33.36000000000001,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "science",
+        "relatedScore": 6.027488425925926,
+        "volume": 88.91816300556414,
+        "competition": 65,
+        "overall": 67.35089780333848,
+        "estimatedMonthlySearch": 904901,
+        "countryVolume": 12927,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1625
+          },
+          {
+            "country": "US",
+            "pct": 0.1175
+          },
+          {
+            "country": "PK",
+            "pct": 0.0925
+          },
+          {
+            "country": "VN",
+            "pct": 0.0825
+          },
+          {
+            "country": "BD",
+            "pct": 0.0575
+          }
+        ]
+      },
+      {
+        "keyword": "great filters",
+        "relatedScore": 5.875,
+        "volume": 0,
+        "competition": 47.9,
+        "overall": 20.840000000000003,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "physics",
+        "relatedScore": 5.75,
+        "volume": 84.89091214481729,
+        "competition": 66.5,
+        "overall": 64.33454728689037,
+        "estimatedMonthlySearch": 486202,
+        "countryVolume": 14025,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.20942408
+          },
+          {
+            "country": "US",
+            "pct": 0.12041885
+          },
+          {
+            "country": "PK",
+            "pct": 0.09947644
+          },
+          {
+            "country": "BD",
+            "pct": 0.07329843
+          },
+          {
+            "country": "BR",
+            "pct": 0.05235602
+          }
+        ]
+      },
+      {
+        "keyword": "alien life",
+        "relatedScore": 5.1,
+        "volume": 63.85267708728598,
+        "competition": 58,
+        "overall": 55.11160625237159,
+        "estimatedMonthlySearch": 18944,
+        "countryVolume": 3391,
+        "topMarkets": []
+      },
+      {
+        "keyword": "robin hanson - great filters",
+        "relatedScore": 4.9,
+        "volume": 0,
+        "competition": 11.6,
+        "overall": 35.36000000000001,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "ai great filter",
+        "relatedScore": 4.9,
+        "volume": 53.51414235049666,
+        "competition": 29.6,
+        "overall": 60.268485410298,
+        "estimatedMonthlySearch": 3845,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "extraterrestrial life",
+        "relatedScore": 4.5,
+        "volume": 59.82441736451134,
+        "competition": 50,
+        "overall": 55.8946504187068,
+        "estimatedMonthlySearch": 10177,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "alien civilizations",
+        "relatedScore": 4.499999999999999,
+        "volume": 57.13562690467411,
+        "competition": 58.5,
+        "overall": 50.88137614280447,
+        "estimatedMonthlySearch": 6722,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "universe",
+        "relatedScore": 4.25,
+        "volume": 86.32199725137977,
+        "competition": 70,
+        "overall": 63.79319835082786,
+        "estimatedMonthlySearch": 606296,
+        "countryVolume": 4542,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.19521913
+          },
+          {
+            "country": "BR",
+            "pct": 0.12350598
+          },
+          {
+            "country": "IN",
+            "pct": 0.11155379
+          },
+          {
+            "country": "PK",
+            "pct": 0.09163347
+          },
+          {
+            "country": "US",
+            "pct": 0.06374502
+          }
+        ]
+      },
+      {
+        "keyword": "space",
+        "relatedScore": 4.046994884910486,
+        "volume": 93.22193064824123,
+        "competition": 64.7,
+        "overall": 70.05315838894474,
+        "estimatedMonthlySearch": 1757556,
+        "countryVolume": 29622,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.14982164
+          },
+          {
+            "country": "IN",
+            "pct": 0.118906066
+          },
+          {
+            "country": "US",
+            "pct": 0.10107016
+          },
+          {
+            "country": "VN",
+            "pct": 0.09631391
+          },
+          {
+            "country": "DE",
+            "pct": 0.048751485
+          }
+        ]
+      },
+      {
+        "keyword": "dark forest theory",
+        "relatedScore": 3.85,
+        "volume": 65.72524552254548,
+        "competition": 51,
+        "overall": 59.03514731352729,
+        "estimatedMonthlySearch": 25288,
+        "countryVolume": 3972,
+        "topMarkets": []
+      },
+      {
+        "keyword": "seti",
+        "relatedScore": 3.75,
+        "volume": 61.71790572070316,
+        "competition": 47.2,
+        "overall": 58.15074343242189,
+        "estimatedMonthlySearch": 13629,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "great filter explained",
+        "relatedScore": 3.6749999999999994,
+        "volume": 53.85089082171861,
+        "competition": 40,
+        "overall": 56.31053449303116,
+        "estimatedMonthlySearch": 4050,
+        "countryVolume": null,
+        "topMarkets": []
+      }
+    ],
+    "risingKeywords": [],
+    "period": null,
+    "availableTopics": [],
+    "vphDailyViews": []
+  },
+  "kw_jwst": {
+    "mode": "research",
+    "country": "GB",
+    "query": null,
+    "seedKeyword": {
+      "keyword": "james webb space telescope",
+      "relatedScore": null,
+      "volume": 75.98868330534572,
+      "competition": 42.3,
+      "overall": 68.67320998320743,
+      "estimatedMonthlySearch": 123157,
+      "countryVolume": 2822,
+      "topMarkets": [
+        {
+          "country": "IN",
+          "pct": 0.25641027
+        },
+        {
+          "country": "VN",
+          "pct": 0.12820514
+        },
+        {
+          "country": "BR",
+          "pct": 0.102564104
+        },
+        {
+          "country": "PK",
+          "pct": 0.102564104
+        },
+        {
+          "country": "TR",
+          "pct": 0.07692308
+        }
+      ]
+    },
+    "relatedKeywords": [
+      {
+        "keyword": "jwst",
+        "relatedScore": 16,
+        "volume": 67.46578922330293,
+        "competition": 54,
+        "overall": 58.879473533981766,
+        "estimatedMonthlySearch": 33076,
+        "countryVolume": 3067,
+        "topMarkets": []
+      },
+      {
+        "keyword": "james webb telescope",
+        "relatedScore": 15.050000000000002,
+        "volume": 71.17613657573862,
+        "competition": 41.5,
+        "overall": 66.10568194544318,
+        "estimatedMonthlySearch": 58623,
+        "countryVolume": null,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.15789473
+          },
+          {
+            "country": "IN",
+            "pct": 0.15789473
+          },
+          {
+            "country": "BR",
+            "pct": 0.10526316
+          },
+          {
+            "country": "BD",
+            "pct": 0.10526316
+          },
+          {
+            "country": "PK",
+            "pct": 0.10526316
+          }
+        ]
+      },
+      {
+        "keyword": "nasa",
+        "relatedScore": 14,
+        "volume": 88.05062469790604,
+        "competition": 75,
+        "overall": 62.83037481874363,
+        "estimatedMonthlySearch": 791562,
+        "countryVolume": 35083,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1179941
+          },
+          {
+            "country": "VN",
+            "pct": 0.1179941
+          },
+          {
+            "country": "PK",
+            "pct": 0.1179941
+          },
+          {
+            "country": "US",
+            "pct": 0.09439528
+          },
+          {
+            "country": "BR",
+            "pct": 0.076696165
+          }
+        ]
+      },
+      {
+        "keyword": "universe",
+        "relatedScore": 14,
+        "volume": 86.32199725137977,
+        "competition": 70,
+        "overall": 63.79319835082786,
+        "estimatedMonthlySearch": 606296,
+        "countryVolume": 4542,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.19521913
+          },
+          {
+            "country": "BR",
+            "pct": 0.12350598
+          },
+          {
+            "country": "IN",
+            "pct": 0.11155379
+          },
+          {
+            "country": "PK",
+            "pct": 0.09163347
+          },
+          {
+            "country": "US",
+            "pct": 0.06374502
+          }
+        ]
+      },
+      {
+        "keyword": "space",
+        "relatedScore": 13.796994884910486,
+        "volume": 93.22193064824123,
+        "competition": 64.7,
+        "overall": 70.05315838894474,
+        "estimatedMonthlySearch": 1757556,
+        "countryVolume": 29622,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.14982164
+          },
+          {
+            "country": "IN",
+            "pct": 0.118906066
+          },
+          {
+            "country": "US",
+            "pct": 0.10107016
+          },
+          {
+            "country": "VN",
+            "pct": 0.09631391
+          },
+          {
+            "country": "DE",
+            "pct": 0.048751485
+          }
+        ]
+      },
+      {
+        "keyword": "james webb",
+        "relatedScore": 11.999999999999998,
+        "volume": 78.89011839487794,
+        "competition": 62.9,
+        "overall": 62.17407103692677,
+        "estimatedMonthlySearch": 192675,
+        "countryVolume": 2652,
+        "topMarkets": [
+          {
+            "country": "BR",
+            "pct": 0.16901408
+          },
+          {
+            "country": "VN",
+            "pct": 0.15492958
+          },
+          {
+            "country": "DE",
+            "pct": 0.12676056
+          },
+          {
+            "country": "ES",
+            "pct": 0.07042254
+          },
+          {
+            "country": "PK",
+            "pct": 0.07042254
+          }
+        ]
+      },
+      {
+        "keyword": "astronomy",
+        "relatedScore": 11.25,
+        "volume": 78.89011839487794,
+        "competition": 57,
+        "overall": 64.53407103692676,
+        "estimatedMonthlySearch": 192675,
+        "countryVolume": 5279,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1594203
+          },
+          {
+            "country": "PK",
+            "pct": 0.13043478
+          },
+          {
+            "country": "VN",
+            "pct": 0.11594203
+          },
+          {
+            "country": "BR",
+            "pct": 0.10144927
+          },
+          {
+            "country": "US",
+            "pct": 0.057971016
+          }
+        ]
+      },
+      {
+        "keyword": "space documentary",
+        "relatedScore": 8.4,
+        "volume": 84.15703916336861,
+        "competition": 47,
+        "overall": 71.69422349802116,
+        "estimatedMonthlySearch": 434165,
+        "countryVolume": 2372,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.19277108
+          },
+          {
+            "country": "PK",
+            "pct": 0.16867469
+          },
+          {
+            "country": "VN",
+            "pct": 0.12650603
+          },
+          {
+            "country": "US",
+            "pct": 0.084337346
+          },
+          {
+            "country": "BD",
+            "pct": 0.06626506
+          }
+        ]
+      },
+      {
+        "keyword": "solar system",
+        "relatedScore": 7.799999999999999,
+        "volume": 80.51915526002288,
+        "competition": 57.5,
+        "overall": 65.31149315601374,
+        "estimatedMonthlySearch": 247716,
+        "countryVolume": 2554,
+        "topMarkets": [
+          {
+            "country": "PK",
+            "pct": 0.24444444
+          },
+          {
+            "country": "IN",
+            "pct": 0.13333334
+          },
+          {
+            "country": "VN",
+            "pct": 0.1
+          },
+          {
+            "country": "BR",
+            "pct": 0.055555556
+          },
+          {
+            "country": "US",
+            "pct": 0.044444446
+          }
+        ]
+      },
+      {
+        "keyword": "science",
+        "relatedScore": 7.777488425925926,
+        "volume": 88.91816300556414,
+        "competition": 65,
+        "overall": 67.35089780333848,
+        "estimatedMonthlySearch": 904901,
+        "countryVolume": 12927,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.1625
+          },
+          {
+            "country": "US",
+            "pct": 0.1175
+          },
+          {
+            "country": "PK",
+            "pct": 0.0925
+          },
+          {
+            "country": "VN",
+            "pct": 0.0825
+          },
+          {
+            "country": "BD",
+            "pct": 0.0575
+          }
+        ]
+      },
+      {
+        "keyword": "black hole",
+        "relatedScore": 7.2,
+        "volume": 85.96784743101058,
+        "competition": 65.5,
+        "overall": 65.38070845860635,
+        "estimatedMonthlySearch": 574064,
+        "countryVolume": 4574,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.12658228
+          },
+          {
+            "country": "US",
+            "pct": 0.11814346
+          },
+          {
+            "country": "IN",
+            "pct": 0.10548523
+          },
+          {
+            "country": "PK",
+            "pct": 0.101265825
+          },
+          {
+            "country": "BR",
+            "pct": 0.06329114
+          }
+        ]
+      },
+      {
+        "keyword": "james webb images",
+        "relatedScore": 5.6,
+        "volume": 53.144675040262676,
+        "competition": 29.9,
+        "overall": 59.9268050241576,
+        "estimatedMonthlySearch": 3632,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "physics",
+        "relatedScore": 5.5,
+        "volume": 84.89091214481729,
+        "competition": 66.5,
+        "overall": 64.33454728689037,
+        "estimatedMonthlySearch": 486202,
+        "countryVolume": 14025,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.20942408
+          },
+          {
+            "country": "US",
+            "pct": 0.12041885
+          },
+          {
+            "country": "PK",
+            "pct": 0.09947644
+          },
+          {
+            "country": "BD",
+            "pct": 0.07329843
+          },
+          {
+            "country": "BR",
+            "pct": 0.05235602
+          }
+        ]
+      },
+      {
+        "keyword": "big bang",
+        "relatedScore": 5.1000000000000005,
+        "volume": 83.35137820640168,
+        "competition": 63,
+        "overall": 64.810826923841,
+        "estimatedMonthlySearch": 383428,
+        "countryVolume": 4823,
+        "topMarkets": [
+          {
+            "country": "VN",
+            "pct": 0.32051283
+          },
+          {
+            "country": "US",
+            "pct": 0.06410257
+          },
+          {
+            "country": "IN",
+            "pct": 0.044871796
+          },
+          {
+            "country": "BR",
+            "pct": 0.044871796
+          },
+          {
+            "country": "RU",
+            "pct": 0.044871796
+          }
+        ]
+      },
+      {
+        "keyword": "james webb space telescope live",
+        "relatedScore": 4.9,
+        "volume": 52.97834233813015,
+        "competition": 42.8,
+        "overall": 54.66700540287809,
+        "estimatedMonthlySearch": 3540,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "james webb space telescope best discoveries",
+        "relatedScore": 4.9,
+        "volume": 0,
+        "competition": 35.4,
+        "overall": 25.84,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "james webb space telescope videos",
+        "relatedScore": 4.9,
+        "volume": 54.598451481206624,
+        "competition": 47,
+        "overall": 53.95907088872398,
+        "estimatedMonthlySearch": 4545,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "james webb space telescope images",
+        "relatedScore": 4.9,
+        "volume": 54.46296358874571,
+        "competition": 33.599999999999994,
+        "overall": 59.237778153247426,
+        "estimatedMonthlySearch": 4451,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      {
+        "keyword": "hubble",
+        "relatedScore": 4.5,
+        "volume": 69.04420672950043,
+        "competition": 53.599999999999994,
+        "overall": 59.986524037700256,
+        "estimatedMonthlySearch": 42194,
+        "countryVolume": null,
+        "topMarkets": [
+          {
+            "country": "CO",
+            "pct": 0.18181819
+          },
+          {
+            "country": "JP",
+            "pct": 0.09090909
+          },
+          {
+            "country": "US",
+            "pct": 0.09090909
+          },
+          {
+            "country": "SG",
+            "pct": 0.09090909
+          },
+          {
+            "country": "SE",
+            "pct": 0.09090909
+          }
+        ]
+      },
+      {
+        "keyword": "telescope",
+        "relatedScore": 4.5,
+        "volume": 74.83864985644217,
+        "competition": 55,
+        "overall": 62.903189913865305,
+        "estimatedMonthlySearch": 103138,
+        "countryVolume": 2865,
+        "topMarkets": [
+          {
+            "country": "BD",
+            "pct": 0.1388889
+          },
+          {
+            "country": "PK",
+            "pct": 0.11111111
+          },
+          {
+            "country": "BR",
+            "pct": 0.11111111
+          },
+          {
+            "country": "US",
+            "pct": 0.083333336
+          },
+          {
+            "country": "TR",
+            "pct": 0.055555556
+          }
+        ]
+      }
+    ],
+    "risingKeywords": [],
+    "period": null,
+    "availableTopics": [],
+    "vphDailyViews": [
+      {
+        "date": "2026-07-04",
+        "viewsPerHour": 7275
+      },
+      {
+        "date": "2026-07-05",
+        "viewsPerHour": 6869
+      },
+      {
+        "date": "2026-07-06",
+        "viewsPerHour": 8866
+      },
+      {
+        "date": "2026-07-07",
+        "viewsPerHour": 8640
+      },
+      {
+        "date": "2026-07-08",
+        "viewsPerHour": 5156
+      },
+      {
+        "date": "2026-07-09",
+        "viewsPerHour": 7348
+      },
+      {
+        "date": "2026-07-10",
+        "viewsPerHour": 5948
+      },
+      {
+        "date": "2026-07-11",
+        "viewsPerHour": 5000
+      },
+      {
+        "date": "2026-07-12",
+        "viewsPerHour": 7031
+      },
+      {
+        "date": "2026-07-13",
+        "viewsPerHour": 7015
+      },
+      {
+        "date": "2026-07-14",
+        "viewsPerHour": 10356
+      },
+      {
+        "date": "2026-07-15",
+        "viewsPerHour": 6873
+      },
+      {
+        "date": "2026-07-16",
+        "viewsPerHour": 5242
+      },
+      {
+        "date": "2026-07-17",
+        "viewsPerHour": 7001
+      },
+      {
+        "date": "2026-07-18",
+        "viewsPerHour": 6479
+      },
+      {
+        "date": "2026-07-19",
+        "viewsPerHour": 7806
+      },
+      {
+        "date": "2026-07-20",
+        "viewsPerHour": 8564
+      },
+      {
+        "date": "2026-07-21",
+        "viewsPerHour": 8566
+      },
+      {
+        "date": "2026-07-22",
+        "viewsPerHour": 8042
+      },
+      {
+        "date": "2026-07-23",
+        "viewsPerHour": 6756
+      },
+      {
+        "date": "2026-07-24",
+        "viewsPerHour": 8481
+      },
+      {
+        "date": "2026-07-25",
+        "viewsPerHour": 10060
+      },
+      {
+        "date": "2026-07-26",
+        "viewsPerHour": 8788
+      },
+      {
+        "date": "2026-07-27",
+        "viewsPerHour": 6276
+      },
+      {
+        "date": "2026-07-28",
+        "viewsPerHour": 8206
+      },
+      {
+        "date": "2026-07-29",
+        "viewsPerHour": 23840
+      },
+      {
+        "date": "2026-07-30",
+        "viewsPerHour": 13875
+      },
+      {
+        "date": "2026-07-31",
+        "viewsPerHour": 13529
+      }
+    ]
+  },
+  "outliers_fermi": {
+    "videos": [
+      {
+        "videoId": "zo4q735Mpx4",
+        "videoTitle": "The Fermi Paradox Has A Disturbing Answer: Shawn Ryan",
+        "videoTags": [
+          "Dr Brian Keating",
+          "brian keating",
+          "Brain Keating",
+          "brain keeting",
+          "into the impossible",
+          "Into the impossible Podcast",
+          "Science Podcast",
+          "Scientific podcasts",
+          "Scientific interviews",
+          "cosmology",
+          "Cosmology podcast",
+          "Physics",
+          "space news",
+          "Universe exploration",
+          "astronomy",
+          "astrophysics",
+          "Eric Wienstein",
+          "space discovery",
+          "quantum physics",
+          "science interview",
+          "Fermi paradox",
+          "Drake equation",
+          "are aliens real",
+          "alien contact",
+          "great filter theory",
+          "zoo hypothesis aliens",
+          "Shawn Ryan",
+          "sean ryan"
+        ],
+        "videoTopics": [
+          "Society"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/zo4q735Mpx4/maxresdefault.jpg",
+        "videoPublishedAt": 1784993430,
+        "videoDuration": 853,
+        "channelId": "UCmXH_moPhfkqCk6S3b9RWuw",
+        "channelTitle": "Dr Brian Keating",
+        "channelThumbnail": "https://yt3.ggpht.com/IQBytEG5MYNeC8uTFXGwCVkoLNLd9JlKRE_10oC_Y2ylF0JIyb1vv8OdQPps-ZpSw1TNBD1S_eI=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 417000,
+        "mainCategory": "Society",
+        "viewCount": 28019,
+        "breakoutScore": 3.18,
+        "videoType": "long",
+        "engagementRate": 0.037,
+        "vph": 262.5,
+        "score": 0.11286664009094238,
+        "trendCategories": null
+      },
+      {
+        "videoId": "DX3tn_ADw0M",
+        "videoTitle": "Brian Cox- The Fermi Paradox Will Change How You See The Universe",
+        "videoTags": [
+          "brian cox",
+          "fermi paradox",
+          "space facts"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/DX3tn_ADw0M/maxresdefault.jpg",
+        "videoPublishedAt": 1784581209,
+        "videoDuration": 3611,
+        "channelId": "UCd6DpEsZHe5vadiZQ7JssNw",
+        "channelTitle": "Astral Curiosity",
+        "channelThumbnail": "https://yt3.ggpht.com/eu2Tuph2wUXzOMBVVUitlX2M8S3JqDZFYZGkjieAM6_uzkUfvFF50hQDRfdfmzE3JH5Vd3AA=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": null,
+        "subscriberCount": 43200,
+        "mainCategory": "Knowledge",
+        "viewCount": 252399,
+        "breakoutScore": 5.35,
+        "videoType": "long",
+        "engagementRate": 0.01,
+        "vph": 557.7,
+        "score": 0.10907970368862152,
+        "trendCategories": null
+      },
+      {
+        "videoId": "wJ_FYRpoZtQ",
+        "videoTitle": "The Most Disturbing Paradox Ever Explained",
+        "videoTags": [],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/wJ_FYRpoZtQ/maxresdefault.jpg",
+        "videoPublishedAt": 1785177709,
+        "videoDuration": 1477,
+        "channelId": "UCc7IMfnTzHqqOAr3VLHVsXw",
+        "channelTitle": "Mr Space Explainer",
+        "channelThumbnail": "https://yt3.ggpht.com/8kcJtuoBsUhyWbwiGbkV4ZF9lYZolbVq9KR6XECQPKiODpS9jghZA3lLKVC_u4f6_gZaue_7dA=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 3710,
+        "mainCategory": "Knowledge",
+        "viewCount": 7657,
+        "breakoutScore": 9.2,
+        "videoType": "long",
+        "engagementRate": 0.036,
+        "vph": 73.43,
+        "score": 0.0820777639746666,
+        "trendCategories": null
+      },
+      {
+        "videoId": "bo5ICCN3rT8",
+        "videoTitle": "The Failing Paradox DLC Model",
+        "videoTags": [
+          "paradox interactive",
+          "hearts of iron 4",
+          "europa universalis",
+          "stellaris",
+          "gaming",
+          "video essay"
+        ],
+        "videoTopics": [
+          "Role-playing video game",
+          "Strategy video game",
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/bo5ICCN3rT8/maxresdefault.jpg",
+        "videoPublishedAt": 1783278006,
+        "videoDuration": 519,
+        "channelId": "UCwZHkwTtusrIrvLMhZLaS4g",
+        "channelTitle": "NefariousKnight",
+        "channelThumbnail": "https://yt3.ggpht.com/uM0IfHy4-KZGZru3dXgXmK8rqniiYqt_Oz0F0dzOm6yDT0mcDHdS5MPtmh058HjPyg02OeRzlRM=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "SE",
+        "subscriberCount": 2220,
+        "mainCategory": "Action game",
+        "viewCount": 155834,
+        "breakoutScore": 37.94,
+        "videoType": "long",
+        "engagementRate": 0.036,
+        "vph": 3.44,
+        "score": 0.07758831232786179,
+        "trendCategories": null
+      },
+      {
+        "videoId": "MtdD-RGJFtg",
+        "videoTitle": "Can I Beat A Cheater In Deadlock Paradox Joechuck",
+        "videoTags": [],
+        "videoTopics": [
+          "Action-adventure game",
+          "Action game",
+          "Role-playing video game",
+          "Strategy video game",
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/MtdD-RGJFtg/maxresdefault.jpg",
+        "videoPublishedAt": 1784596302,
+        "videoDuration": 2096,
+        "channelId": "UCaAyvjUuHtQq61bht_gwfmg",
+        "channelTitle": "Chuckjoe",
+        "channelThumbnail": "https://yt3.ggpht.com/q0_rROf4fNySBLTKmHQUGq5mkSJ4hN0__RCvIcyAC9rcMFXpdESjLFJ6qKHqyd1sNTp-02OeXw=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 2060,
+        "mainCategory": "Strategy video game",
+        "viewCount": 21601,
+        "breakoutScore": 55.12,
+        "videoType": "long",
+        "engagementRate": 0.035,
+        "vph": 7.8,
+        "score": 0.07399098575115204,
+        "trendCategories": null
+      },
+      {
+        "videoId": "Ofy0c8-YhpY",
+        "videoTitle": "The Paradox That Breaks The Scientific Method",
+        "videoTags": [
+          "raven",
+          "paradox",
+          "king rs",
+          "logic",
+          "puzzle",
+          "famous",
+          "thought",
+          "experiment",
+          "science",
+          "education",
+          "vsauce",
+          "educational",
+          "interesting",
+          "curiousity",
+          "didyouknow",
+          "philosophy",
+          "scientific",
+          "method",
+          "breaks"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/Ofy0c8-YhpY/maxresdefault.jpg",
+        "videoPublishedAt": 1785007403,
+        "videoDuration": 698,
+        "channelId": "UCJwU16IJKzUuYSNBa80KlSA",
+        "channelTitle": "King RS",
+        "channelThumbnail": "https://yt3.ggpht.com/iuXDX3C_Xh-weoDfqGcGi66Ka3B3JnfJKv10PJhX6LSaRP6O6CZADCdY3yxRnDp41XprDJJfrw=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "CA",
+        "subscriberCount": 26100,
+        "mainCategory": "Knowledge",
+        "viewCount": 4912,
+        "breakoutScore": 6.59,
+        "videoType": "long",
+        "engagementRate": 0.027,
+        "vph": 0,
+        "score": 0.07374318689107895,
+        "trendCategories": null
+      },
+      {
+        "videoId": "a6sYYrLTOjQ",
+        "videoTitle": "Unfortunately, You Need to Know What the Jevons Paradox is",
+        "videoTags": [],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/a6sYYrLTOjQ/maxresdefault.jpg",
+        "videoPublishedAt": 1783353201,
+        "videoDuration": 2002,
+        "channelId": "UCOT2iLov0V7Re7ku_3UBtcQ",
+        "channelTitle": "Hank Green",
+        "channelThumbnail": "https://yt3.ggpht.com/BnlIAtp0b4_Q2WhiY7bbw6amE08F1ZxAej3Gm8ZDTgZFzphBdJH7LFfNfrUpNRxFrOZ34pTK=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 3200000,
+        "mainCategory": "Society",
+        "viewCount": 1955374,
+        "breakoutScore": 3.26,
+        "videoType": "long",
+        "engagementRate": 0.042,
+        "vph": 370.34,
+        "score": 0.06932923942804337,
+        "trendCategories": null
+      },
+      {
+        "videoId": "oXhcoARzLRY",
+        "videoTitle": "The New Solution To The Fermi Paradox.",
+        "videoTags": [
+          "Science",
+          "Physics",
+          "Astronomy",
+          "Astrophysics",
+          "Space",
+          "Cosmos",
+          "Cosmic",
+          "Big bang",
+          "The big bang",
+          "Big bang theory",
+          "Fermi paradox",
+          "The fermi paradox",
+          "Dark matter",
+          "Aliens",
+          "extraterrestrial life",
+          "alien life",
+          "galaxies",
+          "universe",
+          "galaxy",
+          "astroengineering",
+          "universe size",
+          "physics",
+          "stars"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/oXhcoARzLRY/maxresdefault.jpg",
+        "videoPublishedAt": 1783238421,
+        "videoDuration": 831,
+        "channelId": "UC7lz9TowdQ7nEzaVjcS59oQ",
+        "channelTitle": "Astrorisk",
+        "channelThumbnail": "https://yt3.ggpht.com/QA8-MLBhnHpG2CnSp_f2D8EF48AaJLlI3Mwkvpj6nymUSctPi6Ct66Q5yfiaC6DJX3RLkBHbKw=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 378,
+        "mainCategory": "Knowledge",
+        "viewCount": 3211,
+        "breakoutScore": 9.71,
+        "videoType": "long",
+        "engagementRate": 0.068,
+        "vph": 1.09,
+        "score": 0.06847793608903885,
+        "trendCategories": null
+      },
+      {
+        "videoId": "77_Z0iobXsQ",
+        "videoTitle": "Fermi 3 Hunt | Bourbon Collector's Paradise!",
+        "videoTags": [
+          "bourbon hunter",
+          "whiskey collection",
+          "allocated bourbon hunting",
+          "bourbon channel",
+          "whiskey tasting",
+          "whiskey review",
+          "bourbon",
+          "whiskey",
+          "whiskey hunting",
+          "distillery",
+          "whisky tasting",
+          "rare bourbon hunting",
+          "bourbon review",
+          "whiskey reviews",
+          "whiskey community",
+          "best bourbon",
+          "rye whiskey",
+          "whiskey enthusiast",
+          "whiskey brands",
+          "bourbon whiskey",
+          "upset",
+          "bourbon junkies",
+          "whisky",
+          "slb drinks",
+          "whiskey weather",
+          "green river",
+          "wheat"
+        ],
+        "videoTopics": [
+          "Food",
+          "Lifestyle (sociology)"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/77_Z0iobXsQ/maxresdefault.jpg",
+        "videoPublishedAt": 1785186002,
+        "videoDuration": 981,
+        "channelId": "UC-xrD5VM8O2DhyQqLbUpxyA",
+        "channelTitle": "Zbar Bourbon Club",
+        "channelThumbnail": "https://yt3.ggpht.com/gBzkqMc1XQvRJLoFd9DYF79-pabZpapek6pfWcAaxVBNwQFVMRHO5KZLfr0XmFATrdp37eGT2Q=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 2370,
+        "mainCategory": "Lifestyle (sociology)",
+        "viewCount": 3914,
+        "breakoutScore": 11.73,
+        "videoType": "long",
+        "engagementRate": 0.054,
+        "vph": 0,
+        "score": 0.04624132812023163,
+        "trendCategories": null
+      },
+      {
+        "videoId": "MIKCGyFdatE",
+        "videoTitle": "The Vanishing Stars Mystery | Mystery Wire",
+        "videoTags": [
+          "George Knapp",
+          "Las Vegas",
+          "UFO",
+          "UAP",
+          "Investigator"
+        ],
+        "videoTopics": [
+          "Society",
+          "Television program"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/MIKCGyFdatE/maxresdefault.jpg",
+        "videoPublishedAt": 1785100109,
+        "videoDuration": 1397,
+        "channelId": "UCFuzExfO2fUVmNK5_COvsNg",
+        "channelTitle": "8 News Now \u2014 Las Vegas",
+        "channelThumbnail": "https://yt3.ggpht.com/q4h03-0vowy1ESwphrlKSw6i-NWCMdAOJqPgsb5WAyXUI7F9RCh76lPHGDoMAUNxaQpsc4A_wQ=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 447000,
+        "mainCategory": "Entertainment",
+        "viewCount": 288652,
+        "breakoutScore": 176.43,
+        "videoType": "long",
+        "engagementRate": 0.029,
+        "vph": 618.37,
+        "score": 0.04466281086206436,
+        "trendCategories": null
+      },
+      {
+        "videoId": "oQAmfMvn1Vw",
+        "videoTitle": "The Galactic Quarantine Theory: Is Earth Hidden Behind an Alien Fence? | The Fermi Paradox Explained",
+        "videoTags": [
+          "space",
+          "cosmic visuals",
+          "space phenomena",
+          "black hole animation",
+          "celestial events",
+          "mathematical physics",
+          "astrophysics concepts"
+        ],
+        "videoTopics": [],
+        "videoThumbnail": "https://i.ytimg.com/vi/oQAmfMvn1Vw/maxresdefault.jpg",
+        "videoPublishedAt": 1783962026,
+        "videoDuration": 1942,
+        "channelId": "UC60a6AQVtWqp_WV4Z8LVvSA",
+        "channelTitle": "The Unknown",
+        "channelThumbnail": "https://yt3.ggpht.com/qzU6vRzQTLgQ67u5btNofXrKYdkxpJcP2Rc4yNmylEHxBO2KugdEfJdllfDsVusyGToYOgzB7A=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 52500,
+        "mainCategory": "Knowledge",
+        "viewCount": 1130,
+        "breakoutScore": 2.87,
+        "videoType": "long",
+        "engagementRate": 0.043,
+        "vph": 0.42,
+        "score": 0.04465680569410324,
+        "trendCategories": null
+      },
+      {
+        "videoId": "NNQA_EV-amQ",
+        "videoTitle": "The Avenged Sevenfold Situation Is Crazy",
+        "videoTags": [
+          "film",
+          "short film",
+          "short",
+          "feature film",
+          "feature",
+          "filmmaking",
+          "filmmaker",
+          "movie",
+          "movies",
+          "HD",
+          "Cole McCormack",
+          "Godzilla",
+          "Kaiju",
+          "Moviemaking",
+          "Toho",
+          "Giant Monster",
+          "Monster",
+          "Monster Movie",
+          "4K",
+          "Gamera",
+          "Ultraman"
+        ],
+        "videoTopics": [
+          "Electronic music",
+          "Music",
+          "Rock music"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/NNQA_EV-amQ/maxresdefault.jpg",
+        "videoPublishedAt": 1785184224,
+        "videoDuration": 912,
+        "channelId": "UCWt-qgIjac3_pm4YKj-ODYA",
+        "channelTitle": "Firewood Media",
+        "channelThumbnail": "https://yt3.ggpht.com/Pl14b-dCVs5kvRLqHNBW2f5hguhdf83zUevpbDeRC9UN4qmtq5s-w-bDV8qpY4oEnVHl6XVH_A=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 66300,
+        "mainCategory": "Film",
+        "viewCount": 130912,
+        "breakoutScore": 23.57,
+        "videoType": "long",
+        "engagementRate": 0.048,
+        "vph": 1317.19,
+        "score": 0.04439990594983101,
+        "trendCategories": null
+      },
+      {
+        "videoId": "OLfYy2WFaiw",
+        "videoTitle": "Why The Universe Says No (The Tzimtzum Blueprint)",
+        "videoTags": [
+          "psychology of rejection",
+          "dealing with limits",
+          "esoteric philosophy",
+          "ancient wisdom",
+          "spiritual boundaries",
+          "understanding failure",
+          "structural psychology",
+          "mental resilience",
+          "personal architecture",
+          "cosmic laws",
+          "spiritual engineering",
+          "overachiever burnout",
+          "universal principles",
+          "reality mechanics"
+        ],
+        "videoTopics": [
+          "Religion"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/OLfYy2WFaiw/maxresdefault.jpg",
+        "videoPublishedAt": 1784811608,
+        "videoDuration": 1018,
+        "channelId": "UCvVd78egqSVGVi_c7jje1xg",
+        "channelTitle": "Nute Lecht",
+        "channelThumbnail": "https://yt3.ggpht.com/quMMJp3QWKPccJF1vWGWOkLJSncyS4QyjIzNQvP_3HxHTJ23m9kETVjYHs_bOaKXX5MtW827=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "GB",
+        "subscriberCount": 230000,
+        "mainCategory": "Knowledge",
+        "viewCount": 79905,
+        "breakoutScore": 263.07,
+        "videoType": "long",
+        "engagementRate": 0.002,
+        "vph": 5.43,
+        "score": 0.04432357847690582,
+        "trendCategories": null
+      },
+      {
+        "videoId": "zMQzu7hjQ3k",
+        "videoTitle": "The Most Disturbing Theories Ever Explained",
+        "videoTags": [],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/zMQzu7hjQ3k/maxresdefault.jpg",
+        "videoPublishedAt": 1784463479,
+        "videoDuration": 1193,
+        "channelId": "UCc7IMfnTzHqqOAr3VLHVsXw",
+        "channelTitle": "Mr Space Explainer",
+        "channelThumbnail": "https://yt3.ggpht.com/8kcJtuoBsUhyWbwiGbkV4ZF9lYZolbVq9KR6XECQPKiODpS9jghZA3lLKVC_u4f6_gZaue_7dA=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 3710,
+        "mainCategory": "Knowledge",
+        "viewCount": 91465,
+        "breakoutScore": 642.47,
+        "videoType": "long",
+        "engagementRate": 0.029,
+        "vph": 153.44,
+        "score": 0.0437486432492733,
+        "trendCategories": null
+      },
+      {
+        "videoId": "xry4aofGd3M",
+        "videoTitle": "For You Someday - PORTED TO VS IMPOSTOR LEGACY",
+        "videoTags": [],
+        "videoTopics": [
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/xry4aofGd3M/sddefault.jpg",
+        "videoPublishedAt": 1783901106,
+        "videoDuration": 234,
+        "channelId": "UCFGRAyWnc0fiFjAEr6FDw7Q",
+        "channelTitle": "Golivion",
+        "channelThumbnail": "https://yt3.ggpht.com/WNl8ymrk5oWZ4fSS4uS66TtS1XEIGNqEYyfKNJ9BbH1UYx9L72m1HtnFm2DFgTOjVYhvSYLLyl4=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": null,
+        "subscriberCount": 2690,
+        "mainCategory": "Action game",
+        "viewCount": 895291,
+        "breakoutScore": 6390.11,
+        "videoType": "long",
+        "engagementRate": 0.013,
+        "vph": 224.71,
+        "score": 0.043578144162893295,
+        "trendCategories": null
+      }
+    ],
+    "keyword": "fermi paradox"
+  },
+  "outliers_black_hole": {
+    "videos": [
+      {
+        "videoId": "7SuKsI-Xres",
+        "videoTitle": "What If a Black Hole Was Born? | Episode 1",
+        "videoTags": [],
+        "videoTopics": [],
+        "videoThumbnail": "https://i.ytimg.com/vi/7SuKsI-Xres/maxresdefault.jpg",
+        "videoPublishedAt": 1784718870,
+        "videoDuration": 69,
+        "channelId": "UCDm69yrM5Ma9_NXLw1_yoFQ",
+        "channelTitle": "Mr. Earth",
+        "channelThumbnail": "https://yt3.ggpht.com/Vg1-Tvoxo2x3Icykw4CKMqeth5OFCvMQyrCOpjZndHvgiNW96j17SiDeW7aj0c6-1_o-OdtdNEw=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 11300,
+        "mainCategory": "Film",
+        "viewCount": 66110,
+        "breakoutScore": 12.36,
+        "videoType": "long",
+        "engagementRate": 0.009,
+        "vph": 84.19,
+        "score": 0.08031489700078964,
+        "trendCategories": null
+      },
+      {
+        "videoId": "CW5Suhm0vv4",
+        "videoTitle": "Event Horizon | Sam Neill Explains the Black Hole | 4K Scene",
+        "videoTags": [
+          "movie clips",
+          "movie clip",
+          "joblo movie clips",
+          "movieclips",
+          "clip compilation",
+          "marvel",
+          "JoBlo Movie Clips",
+          "JoBlo clips",
+          "JoBlo movie",
+          "Joblo",
+          "Jo Blo",
+          "Celebrity news and updates",
+          "Celebrity transformations",
+          "Celebrity workout routines",
+          "Celebrity cooking and recipes",
+          "Celebrity travel vlogs",
+          "Celebrity fan reactions",
+          "4K",
+          "Event Horizon",
+          "event horizon sam neill",
+          "Event Horizon movie",
+          "Event Horizon 1997",
+          "Sam Neill",
+          "Event horizon scene",
+          "event horizon hell scene"
+        ],
+        "videoTopics": [
+          "Entertainment",
+          "Film"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/CW5Suhm0vv4/maxresdefault.jpg",
+        "videoPublishedAt": 1784043022,
+        "videoDuration": 300,
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "channelTitle": "JoBlo Movie Clips",
+        "channelThumbnail": "https://yt3.ggpht.com/_2dYGk34OLMvQPN5co7uQ9OX3_vSOVI4PExNuaNTFRW1lsCcmhQrxJ46C0HwWhxxhdyXsA75IxI=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "CA",
+        "subscriberCount": 8600000,
+        "mainCategory": "Entertainment",
+        "viewCount": 733076,
+        "breakoutScore": 17.93,
+        "videoType": "long",
+        "engagementRate": 0.012,
+        "vph": 457.38,
+        "score": 0.07889077812433243,
+        "trendCategories": null
+      },
+      {
+        "videoId": "gwDqxCXWopo",
+        "videoTitle": "Could Black Hole Stars Explain JWST's Little Red Dots?",
+        "videoTags": [
+          "Eddington limit",
+          "JWST little red dots",
+          "James Webb Space Telescope",
+          "astronomy documentary",
+          "black hole accretion",
+          "black hole stars",
+          "cosmic dawn",
+          "could black hole stars exist",
+          "direct collapse black hole",
+          "early universe black holes",
+          "heavy black hole seeds",
+          "high redshift galaxies",
+          "how did early black holes grow",
+          "little red dots",
+          "obscured AGN",
+          "physics explained",
+          "quasistar",
+          "quasistar explained",
+          "space documentary",
+          "supermassive black hole seeds"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/gwDqxCXWopo/maxresdefault.jpg",
+        "videoPublishedAt": 1784403599,
+        "videoDuration": 1550,
+        "channelId": "UCp6TbWtgvmb4nBBlHTn66Jw",
+        "channelTitle": "The Future Archives",
+        "channelThumbnail": "https://yt3.ggpht.com/3XZDXM7ENa3zTRXyMX00tSIeqTTp5aru2kqje81n01pY1hKKniFGqg-64cjyX1zwRiYUP-2jqg=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "AT",
+        "subscriberCount": 11900,
+        "mainCategory": "Knowledge",
+        "viewCount": 28205,
+        "breakoutScore": 31.68,
+        "videoType": "long",
+        "engagementRate": 0.002,
+        "vph": 48.26,
+        "score": 0.07766728103160858,
+        "trendCategories": null
+      },
+      {
+        "videoId": "zZc9EghiS9k",
+        "videoTitle": "Every Black Hole Singularity Explained In 15 Minutes",
+        "videoTags": [
+          "black hole singularity",
+          "black holes explained",
+          "kerr black hole",
+          "schwarzschild singularity",
+          "BKL singularity",
+          "outflying singularity",
+          "infalling singularity",
+          "kip thorne",
+          "interstellar physics",
+          "event horizon",
+          "ring singularity",
+          "types of singularities",
+          "inside a black hole",
+          "what is inside a black hole",
+          "black hole interior",
+          "general relativity",
+          "spacetime",
+          "spaghettification",
+          "quantum gravity",
+          "black hole science",
+          "gravipull",
+          "space science",
+          "cosmology",
+          "theoretical physics",
+          "singularity explained"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/zZc9EghiS9k/maxresdefault.jpg",
+        "videoPublishedAt": 1785007029,
+        "videoDuration": 926,
+        "channelId": "UCjSO9PJmhguQBQ1i063iH-g",
+        "channelTitle": "Gravipull",
+        "channelThumbnail": "https://yt3.ggpht.com/n6BFYxbFRY-iRIs1MLyBTNPADKtpgLWxtmSW-hW3EjU6q-mPS2FPmM7OJNmrYlFubPtLvJDfYQ=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "RO",
+        "subscriberCount": 83300,
+        "mainCategory": "Knowledge",
+        "viewCount": 74841,
+        "breakoutScore": 2.78,
+        "videoType": "long",
+        "engagementRate": 0.032,
+        "vph": 203.61,
+        "score": 0.07672068476676941,
+        "trendCategories": null
+      },
+      {
+        "videoId": "xAKhiDxl_kE",
+        "videoTitle": "Tudaus Moves Planet Though Black Hole",
+        "videoTags": [],
+        "videoTopics": [
+          "Entertainment",
+          "Film"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/xAKhiDxl_kE/sddefault.jpg",
+        "videoPublishedAt": 1784670498,
+        "videoDuration": 260,
+        "channelId": "UCEpmMqBwZmUWVVzAF_yxifw",
+        "channelTitle": "unpicked1",
+        "channelThumbnail": "https://yt3.ggpht.com/V0Q6EX4hvyOTUZxXXjMIcSvj6CUGiwRsWUlGHBr4M3wKxjXMOeKsLiV5943Zh8OuwOehclbp=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 111000,
+        "mainCategory": "Film",
+        "viewCount": 10687,
+        "breakoutScore": 95.57,
+        "videoType": "long",
+        "engagementRate": 0.003,
+        "vph": 9.84,
+        "score": 0.07669597864151001,
+        "trendCategories": null
+      },
+      {
+        "videoId": "WTBZfMnF4DY",
+        "videoTitle": "Can Jupiter Stop the Black Hole? | Episode 2",
+        "videoTags": [],
+        "videoTopics": [],
+        "videoThumbnail": "https://i.ytimg.com/vi/WTBZfMnF4DY/maxresdefault.jpg",
+        "videoPublishedAt": 1784991537,
+        "videoDuration": 95,
+        "channelId": "UCDm69yrM5Ma9_NXLw1_yoFQ",
+        "channelTitle": "Mr. Earth",
+        "channelThumbnail": "https://yt3.ggpht.com/Vg1-Tvoxo2x3Icykw4CKMqeth5OFCvMQyrCOpjZndHvgiNW96j17SiDeW7aj0c6-1_o-OdtdNEw=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 11300,
+        "mainCategory": "Entertainment",
+        "viewCount": 18319,
+        "breakoutScore": 4,
+        "videoType": "long",
+        "engagementRate": 0.014,
+        "vph": 160.5,
+        "score": 0.07568622380495071,
+        "trendCategories": null
+      },
+      {
+        "videoId": "avHyNRPD_mc",
+        "videoTitle": "HilalDeep - Black Hole (Original MiX)",
+        "videoTags": [
+          "hilaldeep",
+          "hilaldeep remix",
+          "music",
+          "music 2026",
+          "deep house",
+          "house music",
+          "deep house remix",
+          "remix",
+          "deep house mix",
+          "car music",
+          "car music mix",
+          "music mix",
+          "mix"
+        ],
+        "videoTopics": [
+          "Electronic music",
+          "Music"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/avHyNRPD_mc/maxresdefault.jpg",
+        "videoPublishedAt": 1784386835,
+        "videoDuration": 383,
+        "channelId": "UCffImebCaZdLlSGZUqFyoLg",
+        "channelTitle": "HilalDeep",
+        "channelThumbnail": "https://yt3.ggpht.com/AROjkyQKmgggfbc5VgGYIVxRrLhhBHQFdrXBl-r8XO0RAClrHM_0VP0PChnJ1Gh43MJlmozF=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": null,
+        "subscriberCount": 215000,
+        "mainCategory": "Electronic music",
+        "viewCount": 22807,
+        "breakoutScore": 2.46,
+        "videoType": "long",
+        "engagementRate": 0.014,
+        "vph": 10.99,
+        "score": 0.07282601296901703,
+        "trendCategories": null
+      },
+      {
+        "videoId": "fsIVGu6s8s8",
+        "videoTitle": "Magneto Destroys Black Hole | X-Men 97 Season 2 |",
+        "videoTags": [
+          "X Men 97 Season 2",
+          "X Men 97",
+          "Marvel Animation",
+          "X Men"
+        ],
+        "videoTopics": [
+          "Entertainment",
+          "Film"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/fsIVGu6s8s8/maxresdefault.jpg",
+        "videoPublishedAt": 1783500115,
+        "videoDuration": 84,
+        "channelId": "UCnf2Q7OO53uNp_S9Vu1NzEQ",
+        "channelTitle": "Skystar Alt",
+        "channelThumbnail": "https://yt3.ggpht.com/9h1UDO581qT4CfuiyeDmOgoL7KbnPYqSHZ4RO6Pv4Nva-K1rLG5Tyry6hPs5qhHepCbvXk-4XTc=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": null,
+        "subscriberCount": 10000,
+        "mainCategory": "Television program",
+        "viewCount": 34775,
+        "breakoutScore": 23.91,
+        "videoType": "long",
+        "engagementRate": 0.019,
+        "vph": 49.41,
+        "score": 0.07106045633554459,
+        "trendCategories": null
+      },
+      {
+        "videoId": "ux1cmHUV_SU",
+        "videoTitle": "Banished Into a Black Hole, He Returned to Judge All Humanity!",
+        "videoTags": [],
+        "videoTopics": [
+          "Entertainment",
+          "Film"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/ux1cmHUV_SU/maxresdefault.jpg",
+        "videoPublishedAt": 1785339029,
+        "videoDuration": 7139,
+        "channelId": "UCSXnQbKI0lzhyokxzg9XtHg",
+        "channelTitle": "DreamRealm Anime",
+        "channelThumbnail": "https://yt3.ggpht.com/XRm3RVC4yqXReiiOoOBzDD6TAvi8X65fC99MumCrm4TOFCqqMynRG0FjWWphNWeG8OQ-DR6C=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "TW",
+        "subscriberCount": 55200,
+        "mainCategory": "Film",
+        "viewCount": 41925,
+        "breakoutScore": 8.68,
+        "videoType": "long",
+        "engagementRate": 0.019,
+        "vph": 164.26,
+        "score": 0.07058164477348328,
+        "trendCategories": null
+      },
+      {
+        "videoId": "W-ZhFmi9c7Q",
+        "videoTitle": "Parkour Pandemic Black Hole Event",
+        "videoTags": [
+          "roblox",
+          "game roblox",
+          "acil roblox",
+          "kaido roblox",
+          "roblox funny",
+          "roblox scary",
+          "erwin roblox",
+          "bocil roblox",
+          "roblox story",
+          "roblox movie",
+          "foltyn roblox",
+          "roblox foltyn",
+          "caylus roblox",
+          "roblox gaming",
+          "roblox shorts",
+          "lakaka roblox",
+          "roblox myanmar",
+          "roblox stories",
+          "roblox tsunami",
+          "backflip roblox",
+          "infinite roblox",
+          "game roblox seru",
+          "roblox roleplay",
+          "roblox gameplay",
+          "roblox blade ball",
+          "roblox scary obby",
+          "new roblox videos",
+          "roblox blox fruit",
+          "blox fruit roblox"
+        ],
+        "videoTopics": [
+          "Action-adventure game",
+          "Action game",
+          "Role-playing video game",
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/W-ZhFmi9c7Q/maxresdefault.jpg",
+        "videoPublishedAt": 1783839575,
+        "videoDuration": 242,
+        "channelId": "UCw08t1wMlRBdRLeP-9o0wGQ",
+        "channelTitle": "SwagBrainrot",
+        "channelThumbnail": "https://yt3.ggpht.com/W61-Ah7PCHZXHpAJt2XGpeVgOdjcrjd8wDmRumk5CwaTEh1JzaeKOltTzpynt471SBtceoBy=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "CA",
+        "subscriberCount": 15700,
+        "mainCategory": "Role-playing video game",
+        "viewCount": 5970,
+        "breakoutScore": 12.38,
+        "videoType": "long",
+        "engagementRate": 0.024,
+        "vph": 4.92,
+        "score": 0.07019194960594177,
+        "trendCategories": null
+      },
+      {
+        "videoId": "j3yvDKRipuw",
+        "videoTitle": "Science For Sleep | What Is a Black Hole Star\u2026 Really?",
+        "videoTags": [
+          "science for sleep",
+          "science for sleeping",
+          "science facts for sleep"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/j3yvDKRipuw/maxresdefault.jpg",
+        "videoPublishedAt": 1785268815,
+        "videoDuration": 13478,
+        "channelId": "UCE4CwHCOVG7mCdbmp8hjXgw",
+        "channelTitle": "Science Before Sleep",
+        "channelThumbnail": "https://yt3.ggpht.com/hql_evVlco-jGDC8Fq5yvGF3JfIJ-ZmmFK5SAzTcA5_56Hv-h34HffybYocRXe-H8tqUl_Zl=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 61200,
+        "mainCategory": "Knowledge",
+        "viewCount": 16646,
+        "breakoutScore": 2.65,
+        "videoType": "long",
+        "engagementRate": 0.01,
+        "vph": 31.74,
+        "score": 0.06995515525341034,
+        "trendCategories": null
+      },
+      {
+        "videoId": "4YndYIT6H8w",
+        "videoTitle": "Evolving from ROCK to a BLACK HOLE..",
+        "videoTags": [
+          "beckbrojack",
+          "beckbroplays",
+          "beckbros",
+          "movie",
+          "movies"
+        ],
+        "videoTopics": [
+          "Action-adventure game",
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/4YndYIT6H8w/maxresdefault.jpg",
+        "videoPublishedAt": 1784851212,
+        "videoDuration": 4316,
+        "channelId": "UC5s1JIXAwy3m-QPgC1guKzw",
+        "channelTitle": "BeckBroJack Movies",
+        "channelThumbnail": "https://yt3.ggpht.com/lEEYlv6zok0SW60skLFo7S7Ujtt2uLDZINP1HUFy-LrZpM7Hcy6UHY2lfwnpIkXpSkbhjaKhVJ4=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 364000,
+        "mainCategory": "Action-adventure game",
+        "viewCount": 81439,
+        "breakoutScore": 2.06,
+        "videoType": "long",
+        "engagementRate": 0.06,
+        "vph": 275.14,
+        "score": 0.06980450451374054,
+        "trendCategories": null
+      },
+      {
+        "videoId": "5xvHd2vH7r4",
+        "videoTitle": "Terrifying Mystery of the Universe\u2019s Biggest Black Hole",
+        "videoTags": [
+          "astronomy",
+          "astronomy documentary",
+          "astronomy explained",
+          "astrophysics",
+          "biggest black hole",
+          "black hole",
+          "black hole explained",
+          "brightside",
+          "brightsideglobal",
+          "cosmic giant",
+          "cosmic mystery",
+          "cosmos",
+          "curiosities",
+          "deep space",
+          "earth",
+          "educational video",
+          "galaxy",
+          "largest black hole",
+          "milky way",
+          "mystery",
+          "planet",
+          "quasar",
+          "sagittarius a",
+          "science documentary",
+          "space",
+          "space discovery",
+          "space documentary",
+          "supermassive black hole",
+          "ton 618",
+          "ultramassive black hole",
+          "universe",
+          "universe explained",
+          "world"
+        ],
+        "videoTopics": [],
+        "videoThumbnail": "https://i.ytimg.com/vi/5xvHd2vH7r4/maxresdefault.jpg",
+        "videoPublishedAt": 1784246433,
+        "videoDuration": 530,
+        "channelId": "UC4rlAVgAK0SGk-yTfe48Qpw",
+        "channelTitle": "BRIGHT SIDE",
+        "channelThumbnail": "https://yt3.ggpht.com/BimIuq2UYH1h-GQDEiV89I1dUEtpWVR8Mp_Q516vPN8rLw488Ap1G9ALhPUyqN8_HTPMbawTBDk=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": null,
+        "subscriberCount": 44600000,
+        "mainCategory": "Knowledge",
+        "viewCount": 14570,
+        "breakoutScore": 1.66,
+        "videoType": "long",
+        "engagementRate": 0.022,
+        "vph": 32.24,
+        "score": 0.06948240846395493,
+        "trendCategories": null
+      },
+      {
+        "videoId": "b7OyqrZEesc",
+        "videoTitle": "Black Hole Sun - Soundgarden",
+        "videoTags": [],
+        "videoTopics": [
+          "Music",
+          "Pop music",
+          "Rock music"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/b7OyqrZEesc/hqdefault.jpg",
+        "videoPublishedAt": 1784764346,
+        "videoDuration": 321,
+        "channelId": "UC8H-VPLQje9rb9tDmtOroLw",
+        "channelTitle": "Kenneth Christopher Bowser",
+        "channelThumbnail": "https://yt3.ggpht.com/X84m4I8IuLhDwYwYyS6E3qivoFczJe3qYjCtGBL9GuuFe_KUCtTtRLxhebri3rWrsFzVsNC8U6Y=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": null,
+        "subscriberCount": 19200,
+        "mainCategory": "Rock music",
+        "viewCount": 5196,
+        "breakoutScore": 5.22,
+        "videoType": "long",
+        "engagementRate": 0.009,
+        "vph": 12.78,
+        "score": 0.06942225247621536,
+        "trendCategories": null
+      },
+      {
+        "videoId": "kuyS8mhvVR0",
+        "videoTitle": "A Cosmic Birthday Gift | Black Hole & Nebula Chalk ASMR",
+        "videoTags": [],
+        "videoTopics": [
+          "Lifestyle (sociology)"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/kuyS8mhvVR0/maxresdefault.jpg",
+        "videoPublishedAt": 1784543159,
+        "videoDuration": 739,
+        "channelId": "UCOJ47v1C4y1245Ohneb4z-A",
+        "channelTitle": "OxideFabricDollAsmr",
+        "channelThumbnail": "https://yt3.ggpht.com/F6F_8r_Zq6XjYT-hOs6s_P45smV5TenslYmZZXv1sNHgggx8lK6fexQvWoDLppxj7l2iOOiVgA=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": null,
+        "subscriberCount": 37900,
+        "mainCategory": "Lifestyle (sociology)",
+        "viewCount": 24462,
+        "breakoutScore": 2.42,
+        "videoType": "long",
+        "engagementRate": 0.066,
+        "vph": 24.16,
+        "score": 0.06920814514160156,
+        "trendCategories": [
+          "asmr"
+        ]
+      }
+    ],
+    "keyword": "black hole"
+  },
+  "outliers_shorts_space": {
+    "videos": [
+      {
+        "videoId": "sdqSqR8y8w8",
+        "videoTitle": "PERSONAL SPACE SHIVER, PERSONAL SPACE... Splatoon Raiders Funny Moment #shorts #splatoonraiders",
+        "videoTags": [
+          "splatoon",
+          "splatoon raiders",
+          "splatoon shiver",
+          "shiver splatoon",
+          "shiver splatoon raiders",
+          "splatoon raiders shiver",
+          "splatoon 3 shiver",
+          "shiver splatoon 3",
+          "frye splatoon",
+          "frye splatoon raiders",
+          "splatoon raiders frye",
+          "splatoon 3",
+          "splatoon 3 memes",
+          "splatoon memes",
+          "splatoon raiders memes",
+          "splatoon raiders live",
+          "splatoon raiders gameplay",
+          "splatoon raiders shiver song",
+          "splatoon shiver and frye",
+          "nintendo",
+          "nintendo switch 2",
+          "nintendo direct",
+          "\u30b9\u30d7\u30e9\u30c8\u30a5\u30fc\u30f3"
+        ],
+        "videoTopics": [
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/sdqSqR8y8w8/maxresdefault.jpg",
+        "videoPublishedAt": 1785379473,
+        "videoDuration": 13,
+        "channelId": "UC0ujaDaYx0bwVuUdRiOUsBg",
+        "channelTitle": "Kage",
+        "channelThumbnail": "https://yt3.ggpht.com/QxDOAUzjtSv3UdVGsKT8oFgNG9h8TnEzj7Q73Tw-2H_KYve0ZGBlY84YVlAE4btpFzsoTJoUyA=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 1010,
+        "mainCategory": "Action game",
+        "viewCount": 150624,
+        "breakoutScore": 68.62,
+        "videoType": "short",
+        "engagementRate": 0.001,
+        "vph": 848.85,
+        "score": 0.08896249532699585,
+        "trendCategories": null
+      },
+      {
+        "videoId": "zrdO_kQx6cU",
+        "videoTitle": "The Biggest Space Mysteries #space #alien #universe #blackhole #physics",
+        "videoTags": [
+          "black hole",
+          "blackhole",
+          "galaxy",
+          "big bang",
+          "alien",
+          "wormhole",
+          "what is black hole"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/zrdO_kQx6cU/maxresdefault.jpg",
+        "videoPublishedAt": 1784981417,
+        "videoDuration": 7,
+        "channelId": "UCbJDu8zHkPwldfwuIRzqACQ",
+        "channelTitle": "LUMINA FACTS",
+        "channelThumbnail": "https://yt3.ggpht.com/Wh4nCc60-uZk1dPn9lwWYBaYU_9qgNpdArcpaC6tNsHWuc9oG-ZWpD-eFdbx_TBhSdl0a1ZuxQ=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 1400,
+        "mainCategory": "Knowledge",
+        "viewCount": 54315,
+        "breakoutScore": 13.89,
+        "videoType": "short",
+        "engagementRate": 0.016,
+        "vph": 6.44,
+        "score": 0.08661675453186035,
+        "trendCategories": null
+      },
+      {
+        "videoId": "c5yIv20CDnI",
+        "videoTitle": "Space scenes are every animator's dream \u2728",
+        "videoTags": [
+          "The animation budget just doubled",
+          "The easiest scene to animate"
+        ],
+        "videoTopics": [
+          "Entertainment",
+          "Film"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/c5yIv20CDnI/maxresdefault.jpg",
+        "videoPublishedAt": 1785255475,
+        "videoDuration": 9,
+        "channelId": "UCGUe9xm-m_wJosAkpKAe-YA",
+        "channelTitle": "Theat",
+        "channelThumbnail": "https://yt3.ggpht.com/79YPoeZQ-bpFizxyV-463GbbMnJCdYKZBO8gUwTQmm8cqJ_Wk5eB7iboDFqNuHNzs4AnlXA9=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 30200,
+        "mainCategory": "Entertainment",
+        "viewCount": 1583545,
+        "breakoutScore": 15.77,
+        "videoType": "short",
+        "engagementRate": 0.019,
+        "vph": 449.06,
+        "score": 0.08232180029153824,
+        "trendCategories": null
+      },
+      {
+        "videoId": "_cAqQViQjXA",
+        "videoTitle": "Space isn\u2019t Scary (Part 18) #space #scary #viral #facts #shorts",
+        "videoTags": [],
+        "videoTopics": [],
+        "videoThumbnail": "https://i.ytimg.com/vi/_cAqQViQjXA/maxresdefault.jpg",
+        "videoPublishedAt": 1785075802,
+        "videoDuration": 16,
+        "channelId": "UCFek1RE5GcbkHhjVg8cT8hA",
+        "channelTitle": "Spaceexplorereal",
+        "channelThumbnail": "https://yt3.ggpht.com/ildyWoXoTiuB7yjl5_lx9_NQ43h8NIzwU9TZByiw7hT5TNIFUj8qV5w-8b6OPDw1UKa5nZB8y8w=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "MY",
+        "subscriberCount": 2420,
+        "mainCategory": "Knowledge",
+        "viewCount": 24053,
+        "breakoutScore": 3.45,
+        "videoType": "short",
+        "engagementRate": 0.02,
+        "vph": 16.29,
+        "score": 0.0799131989479065,
+        "trendCategories": null
+      },
+      {
+        "videoId": "sYkc9SHmLnk",
+        "videoTitle": "Husky: \u201cI like my personal space.\u201d Golden: \u201cCorrection: our personal space.\u201d",
+        "videoTags": [
+          "funny pup",
+          "golden",
+          "husky",
+          "pup life"
+        ],
+        "videoTopics": [
+          "Lifestyle (sociology)",
+          "Pet"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/sYkc9SHmLnk/maxresdefault.jpg",
+        "videoPublishedAt": 1785260841,
+        "videoDuration": 8,
+        "channelId": "UCwJc7o_VZgujkLd4hxW5I0A",
+        "channelTitle": "The Pets Table",
+        "channelThumbnail": "https://yt3.ggpht.com/h_UGP4vN0NvFWJ4xTS4ix4jaCNOmLnOSyNXwFUZh85KROmw7aEZgVHZcoSZP5kgyj37UtdD1Dg=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 333,
+        "mainCategory": "Entertainment",
+        "viewCount": 28757,
+        "breakoutScore": 28.85,
+        "videoType": "short",
+        "engagementRate": 0.034,
+        "vph": 61.67,
+        "score": 0.07928808033466339,
+        "trendCategories": null
+      },
+      {
+        "videoId": "azZ-VFXDPz4",
+        "videoTitle": "\ud83c\udf0a We fear the ocean\u2026 Space is far more terrifying. \ud83d\udc40\ud83d\ude80 #Space #Universe #Science",
+        "videoTags": [
+          "space",
+          "universe",
+          "ocean",
+          "deep sea",
+          "deep ocean",
+          "unexplored ocean",
+          "ocean facts",
+          "space facts",
+          "science facts",
+          "astronomy",
+          "astrophysics",
+          "galaxy",
+          "galaxies",
+          "black hole",
+          "black holes",
+          "planets",
+          "stars",
+          "cosmos",
+          "nasa",
+          "james webb telescope",
+          "mysterious ocean",
+          "scary ocean",
+          "deep sea creatures",
+          "alien life",
+          "extraterrestrial",
+          "universe facts",
+          "space exploration",
+          "ocean exploration",
+          "educational",
+          "science",
+          "viral",
+          "trending",
+          "science of limitless"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/azZ-VFXDPz4/maxresdefault.jpg",
+        "videoPublishedAt": 1785006397,
+        "videoDuration": 12,
+        "channelId": "UCHZGAEE4ekGGL4z_nsz-tjA",
+        "channelTitle": "science of limitless",
+        "channelThumbnail": "https://yt3.ggpht.com/Ns44pV2wsjAQCStICItTHn5FYUWCmfpA-tf_Gbr0rP8qubJ1gkhqbgamc5w5442NUUQK4_HHdPI=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 904,
+        "mainCategory": "Knowledge",
+        "viewCount": 31354,
+        "breakoutScore": 9.02,
+        "videoType": "short",
+        "engagementRate": 0.002,
+        "vph": 0.76,
+        "score": 0.07875870168209076,
+        "trendCategories": null
+      },
+      {
+        "videoId": "VHjVgOkg63M",
+        "videoTitle": "NASA\u2019s New Telescope Will Change Space Forever! | SpaceTime Tamil #universe #spacesuccess #space",
+        "videoTags": [
+          "#space",
+          "#Spacetime",
+          "#Science",
+          "#NASA",
+          "#ESA",
+          "#ISRO",
+          "#Sun",
+          "#Earth",
+          "#Moon",
+          "#Star",
+          "#Blackhole",
+          "#DarkMatter",
+          "#Galaxy",
+          "#Atoms",
+          "#Physics",
+          "#Gravity",
+          "#Energy",
+          "#Light",
+          "#Neturons",
+          "#NeutronStar",
+          "#Pulsars",
+          "#Quasars",
+          "#Quantum",
+          "#BigBang",
+          "#Universe",
+          "#TimeTravel",
+          "#Electrons",
+          "#WhiteDwarf",
+          "#ISS",
+          "#Mars",
+          "#Interstellar",
+          "#Spacecraft",
+          "#Rocket",
+          "#Satellite",
+          "#Alien",
+          "#Exoplanets",
+          "#Astrobiology",
+          "#Astronomy",
+          "#Rings",
+          "#Relativity",
+          "#Einstein",
+          "#Newton",
+          "#Spectrum",
+          "#Jupiter",
+          "#Exploration",
+          "#Globe",
+          "#tamil",
+          "#tamilnadu",
+          "#tamilnews",
+          "#india"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/VHjVgOkg63M/maxresdefault.jpg",
+        "videoPublishedAt": 1785286814,
+        "videoDuration": 93,
+        "channelId": "UCRCtJQ5hUUu17CFhmL5nJTw",
+        "channelTitle": "SpaceTime Tamil (\u0ba4\u0bae\u0bbf\u0bb4\u0bcd)",
+        "channelThumbnail": "https://yt3.ggpht.com/nCmGg-f45Dgmf8GR0Jup_i-qLmWktqlLxhB6jCfvAQJONZUJ226VHczJpI59CRI8EetTHTydK2Q=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "CA",
+        "subscriberCount": 31700,
+        "mainCategory": "Knowledge",
+        "viewCount": 20777,
+        "breakoutScore": 4.5,
+        "videoType": "short",
+        "engagementRate": 0.061,
+        "vph": 209.55,
+        "score": 0.07841961830854416,
+        "trendCategories": null
+      },
+      {
+        "videoId": "ED0JwnijmGo",
+        "videoTitle": "How The Solar System Moves through Space #space #universe #nasa #astronomicalobject #celestialglobe",
+        "videoTags": [],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/ED0JwnijmGo/maxresdefault.jpg",
+        "videoPublishedAt": 1785259264,
+        "videoDuration": 14,
+        "channelId": "UC_gdlub3moMCQIDQfl2Py4A",
+        "channelTitle": "Cosmic Signal",
+        "channelThumbnail": "https://yt3.ggpht.com/52k6UHNmxHhvHtVs2AOvlS-wt4duhfcl73c50HjWfIqGooarF8zwnUMen3ofhxH0pMt17WB7qw=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 378,
+        "mainCategory": "Knowledge",
+        "viewCount": 15611,
+        "breakoutScore": 13,
+        "videoType": "short",
+        "engagementRate": 0.008,
+        "vph": 71.52,
+        "score": 0.07841295748949051,
+        "trendCategories": null
+      },
+      {
+        "videoId": "MUSZqg_HlsA",
+        "videoTitle": "Space airless tires \ud83d\udede #space #science #nasa #physics #viral #shorts",
+        "videoTags": [
+          "Future Tech",
+          "Next Gen Tires",
+          "Space Exploration",
+          "Tire Tech"
+        ],
+        "videoTopics": [],
+        "videoThumbnail": "https://i.ytimg.com/vi/MUSZqg_HlsA/maxresdefault.jpg",
+        "videoPublishedAt": 1785249647,
+        "videoDuration": 9,
+        "channelId": "UCFek1RE5GcbkHhjVg8cT8hA",
+        "channelTitle": "Spaceexplorereal",
+        "channelThumbnail": "https://yt3.ggpht.com/ildyWoXoTiuB7yjl5_lx9_NQ43h8NIzwU9TZByiw7hT5TNIFUj8qV5w-8b6OPDw1UKa5nZB8y8w=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "MY",
+        "subscriberCount": 2420,
+        "mainCategory": "Knowledge",
+        "viewCount": 26765,
+        "breakoutScore": 3.82,
+        "videoType": "short",
+        "engagementRate": 0.003,
+        "vph": 224.26,
+        "score": 0.07808400690555573,
+        "trendCategories": null
+      },
+      {
+        "videoId": "uJT8FVyGig0",
+        "videoTitle": "my car is in space #shorts #redstr",
+        "videoTags": [
+          "red",
+          "car",
+          "redstr",
+          "puzzle",
+          "game",
+          "how can a red car be this frustrating"
+        ],
+        "videoTopics": [
+          "Puzzle video game",
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/uJT8FVyGig0/maxresdefault.jpg",
+        "videoPublishedAt": 1785445225,
+        "videoDuration": 23,
+        "channelId": "UCfEetzpfsMJ5GR2k79bT_QQ",
+        "channelTitle": "Redstr",
+        "channelThumbnail": "https://yt3.ggpht.com/NV87oM7Vx3lwBi2rDf0LOyz5QBXOhCs6V_EKLJRt_KdM8b4_KSOW0EJqgZ2iyp5r_whdaS2WYQ=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "DZ",
+        "subscriberCount": 7440,
+        "mainCategory": "Action game",
+        "viewCount": 34164,
+        "breakoutScore": 12.67,
+        "videoType": "short",
+        "engagementRate": 0.011,
+        "vph": 381.54,
+        "score": 0.07564624398946762,
+        "trendCategories": null
+      },
+      {
+        "videoId": "jbDP6Q7ol7s",
+        "videoTitle": "You're 99.9999% Empty Space",
+        "videoTags": [],
+        "videoTopics": [
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/jbDP6Q7ol7s/maxresdefault.jpg",
+        "videoPublishedAt": 1785448839,
+        "videoDuration": 26,
+        "channelId": "UCD_gi-oCl59qmJyGPR9Y9tA",
+        "channelTitle": "Low Bit Cinema",
+        "channelThumbnail": "https://yt3.ggpht.com/IMvtFF0_ANJLFhQFMk05QgXja4UFkM6cxSJJ8_hHkV3p0MZmhhEVH0R2dwkYCCGHDoJ-nSvpSg=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "PA",
+        "subscriberCount": 5420,
+        "mainCategory": "Film",
+        "viewCount": 32482,
+        "breakoutScore": 3.52,
+        "videoType": "short",
+        "engagementRate": 0.001,
+        "vph": 13.44,
+        "score": 0.07380178570747375,
+        "trendCategories": null
+      },
+      {
+        "videoId": "ASfsKeOk-hI",
+        "videoTitle": "Why is the universe fill with so many stars and planets #science #space #universe",
+        "videoTags": [],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/ASfsKeOk-hI/maxresdefault.jpg",
+        "videoPublishedAt": 1785231409,
+        "videoDuration": 65,
+        "channelId": "UCffGSpcq44cqxlaP5OWGtgA",
+        "channelTitle": "Morris M Kokulo",
+        "channelThumbnail": "https://yt3.ggpht.com/sYUojY85YmK9G__JWR_ZZdThEw9Yrvh4zk9DcwYQ_VJhxgeamOlN0vtNBCIczmjWAyzuVuZt2Q=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "GH",
+        "subscriberCount": 6310,
+        "mainCategory": "Knowledge",
+        "viewCount": 96403,
+        "breakoutScore": 28.06,
+        "videoType": "short",
+        "engagementRate": 0.021,
+        "vph": 705.09,
+        "score": 0.07249703258275986,
+        "trendCategories": null
+      },
+      {
+        "videoId": "RTgGS4gHyvo",
+        "videoTitle": "Zoom: Human Hand Vs Human Hair \ud83d\udc80\ud83e\udd76| #space #shorts #cosmos #universe",
+        "videoTags": [],
+        "videoTopics": [],
+        "videoThumbnail": "https://i.ytimg.com/vi/RTgGS4gHyvo/maxresdefault.jpg",
+        "videoPublishedAt": 1784988024,
+        "videoDuration": 36,
+        "channelId": "UCw0FFHK2zeH-SIPx8j0h2Vw",
+        "channelTitle": "SaturnNova",
+        "channelThumbnail": "https://yt3.ggpht.com/wI9_MP-H8cN1VnyigaotjeVyAfVzdbgRXMYRasBnTD20AlmdR4hqAYFGLREGFadsA611F4AFbA=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 22300,
+        "mainCategory": "Knowledge",
+        "viewCount": 915688,
+        "breakoutScore": 22.63,
+        "videoType": "short",
+        "engagementRate": 0.009,
+        "vph": 14040.98,
+        "score": 0.07247861474752426,
+        "trendCategories": null
+      },
+      {
+        "videoId": "-vNXcq3z5mQ",
+        "videoTitle": "I Found a Secret Space Station in Minecraft... \ud83d\ude31\ud83d\ude80 #MinecraftShorts",
+        "videoTags": [],
+        "videoTopics": [
+          "Role-playing video game",
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/-vNXcq3z5mQ/maxresdefault.jpg",
+        "videoPublishedAt": 1785250474,
+        "videoDuration": 19,
+        "channelId": "UCd2CGX52B-nhy42YSOH0FCw",
+        "channelTitle": "MC Gamer \u2b50",
+        "channelThumbnail": "https://yt3.ggpht.com/2J_jqXt2JRSngnCTlt6JCoUK0dBz-fwDbk9K6hVnTDGPVliidcP_x_X1f_nE3aaqIqtxYJeQ=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 5440,
+        "mainCategory": "Role-playing video game",
+        "viewCount": 30108,
+        "breakoutScore": 239.85,
+        "videoType": "short",
+        "engagementRate": 0.002,
+        "vph": 229.09,
+        "score": 0.07244478166103363,
+        "trendCategories": null
+      },
+      {
+        "videoId": "sl82gzn1lwA",
+        "videoTitle": "Level 97:Even Black Holes Fear This Place in Space \ud83d\ude31\ud83d\ude31#space #solarsystem #universe #plants",
+        "videoTags": [
+          "Earth planet facts",
+          "Solar system explained",
+          "funny planets animation",
+          "planet conversation",
+          "space memes",
+          "astronomy facts",
+          "universe mystery",
+          "NASA space facts",
+          "Earth vs Mars",
+          "Jupiter facts",
+          "Saturn facts",
+          "planet animation",
+          "AI space animation",
+          "cosmic humor",
+          "space shorts",
+          "solar system facts"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/sl82gzn1lwA/maxresdefault.jpg",
+        "videoPublishedAt": 1785321039,
+        "videoDuration": 20,
+        "channelId": "UCxkPh9FfzVuQmf8KQ0-s_Cw",
+        "channelTitle": "Cosmic Endgame",
+        "channelThumbnail": "https://yt3.ggpht.com/O4sFBa3q1m0TlUEiMyKh3l7XvtU1RsOMTFZAbGT84G36O7XhPHlhHdDFDsw_QT_313KVliyU1w=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 4550,
+        "mainCategory": "Knowledge",
+        "viewCount": 30003,
+        "breakoutScore": 2.81,
+        "videoType": "short",
+        "engagementRate": 0.014,
+        "vph": 138.39,
+        "score": 0.07238375395536423,
+        "trendCategories": null
+      },
+      {
+        "videoId": "-bx6gCy2Zus",
+        "videoTitle": "Space Flows Like a River #blackhole",
+        "videoTags": [
+          "astronomy",
+          "physics",
+          "Neil deGrasse Tyson",
+          "Brian Cox",
+          "universe",
+          "cosmos",
+          "space"
+        ],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/-bx6gCy2Zus/maxresdefault.jpg",
+        "videoPublishedAt": 1785172650,
+        "videoDuration": 65,
+        "channelId": "UCnQVKjlcClpkczW4mmNo7BA",
+        "channelTitle": "Catstronaut",
+        "channelThumbnail": "https://yt3.ggpht.com/LSNi66HSj06vFAgRGd0PhV5GU0zcUremM2dCBw_4pO3glImZ4ypnD05-xW8EefSustx0afg7IoQ=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 1040,
+        "mainCategory": "Entertainment",
+        "viewCount": 24455,
+        "breakoutScore": 5.73,
+        "videoType": "short",
+        "engagementRate": 0.016,
+        "vph": 98.22,
+        "score": 0.07222996652126312,
+        "trendCategories": null
+      },
+      {
+        "videoId": "ibYk_Lu_f70",
+        "videoTitle": "Jump to space?",
+        "videoTags": [],
+        "videoTopics": [
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/ibYk_Lu_f70/maxresdefault.jpg",
+        "videoPublishedAt": 1785297609,
+        "videoDuration": 59,
+        "channelId": "UCNVlAY0F7xw7k30OG_5ecJQ",
+        "channelTitle": "RedziLive",
+        "channelThumbnail": "https://yt3.ggpht.com/Pl_dMXMbBwnPpOftbBF-Pb90FmT7ftu_OS61M447x9uj9uKMHKXWovK-XolsMkus2Z_gJ39Fmg=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "NO",
+        "subscriberCount": 30600,
+        "mainCategory": "Film",
+        "viewCount": 28307,
+        "breakoutScore": 3.16,
+        "videoType": "short",
+        "engagementRate": 0.031,
+        "vph": 3.77,
+        "score": 0.07213041931390762,
+        "trendCategories": null
+      },
+      {
+        "videoId": "Gk6emsRRTAU",
+        "videoTitle": "Goodbye Saturns Rings! #space #universe #cosmos",
+        "videoTags": [],
+        "videoTopics": [
+          "Knowledge"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/Gk6emsRRTAU/maxresdefault.jpg",
+        "videoPublishedAt": 1785019438,
+        "videoDuration": 15,
+        "channelId": "UC_gdlub3moMCQIDQfl2Py4A",
+        "channelTitle": "Cosmic Signal",
+        "channelThumbnail": "https://yt3.ggpht.com/52k6UHNmxHhvHtVs2AOvlS-wt4duhfcl73c50HjWfIqGooarF8zwnUMen3ofhxH0pMt17WB7qw=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 378,
+        "mainCategory": "Knowledge",
+        "viewCount": 10792,
+        "breakoutScore": 15.13,
+        "videoType": "short",
+        "engagementRate": 0.006,
+        "vph": 1.46,
+        "score": 0.07145272195339203,
+        "trendCategories": null
+      },
+      {
+        "videoId": "02Iu51Zkc-8",
+        "videoTitle": "MY GRANDMA DROVE ME TO SPACE #shorts #rblx",
+        "videoTags": [
+          "roblox",
+          "rblx",
+          "shorts",
+          "viral"
+        ],
+        "videoTopics": [
+          "Video game culture"
+        ],
+        "videoThumbnail": "https://i.ytimg.com/vi/02Iu51Zkc-8/maxresdefault.jpg",
+        "videoPublishedAt": 1785158728,
+        "videoDuration": 47,
+        "channelId": "UCfi844WnzcnTu5mFbBQH37w",
+        "channelTitle": "mimi",
+        "channelThumbnail": "https://yt3.ggpht.com/6L1xutWobtIWnZmU_GVoEPi_5V91ijMAnt6pCOtNllo_CSq-spkwYT_RqbgI_NKVRoPmZ3WNkeE=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "US",
+        "subscriberCount": 43800,
+        "mainCategory": "Action game",
+        "viewCount": 570602,
+        "breakoutScore": 5.67,
+        "videoType": "short",
+        "engagementRate": 0.018,
+        "vph": 3552.35,
+        "score": 0.07086049765348434,
+        "trendCategories": null
+      },
+      {
+        "videoId": "__eWl39tFJw",
+        "videoTitle": "First Selfie \ud83e\udd33\ud83c\udffb in Space \ud83c\udf0c #cosmicexploration #space #universe #moon #science #viral #shorts",
+        "videoTags": [
+          "Astronaut selfie",
+          "Earth from space",
+          "Space exploration",
+          "Space photo",
+          "Zero gravity"
+        ],
+        "videoTopics": [],
+        "videoThumbnail": "https://i.ytimg.com/vi/__eWl39tFJw/maxresdefault.jpg",
+        "videoPublishedAt": 1785043015,
+        "videoDuration": 8,
+        "channelId": "UCFek1RE5GcbkHhjVg8cT8hA",
+        "channelTitle": "Spaceexplorereal",
+        "channelThumbnail": "https://yt3.ggpht.com/ildyWoXoTiuB7yjl5_lx9_NQ43h8NIzwU9TZByiw7hT5TNIFUj8qV5w-8b6OPDw1UKa5nZB8y8w=s800-c-k-c0x00ffffff-no-rj",
+        "channelCountry": "MY",
+        "subscriberCount": 2420,
+        "mainCategory": "Knowledge",
+        "viewCount": 18071,
+        "breakoutScore": 2.19,
+        "videoType": "short",
+        "engagementRate": 0.017,
+        "vph": 0.69,
+        "score": 0.07071859389543533,
+        "trendCategories": null
+      }
+    ],
+    "keyword": "space"
+  },
+  "title_scores": [
+    {
+      "type": "long",
+      "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+      "videoId": "Mo93x0fxB1Q",
+      "result": {
+        "score": 97
+      }
+    },
+    {
+      "type": "short",
+      "title": "Where Is Everybody? The Fermi Paradox #Space #Shorts",
+      "videoId": "z-DLqoSoEBo",
+      "result": {
+        "score": 94
+      }
+    },
+    {
+      "type": "short",
+      "title": "Where Is Everybody? The Fermi Paradox",
+      "videoId": null,
+      "result": {
+        "score": 88
+      }
+    },
+    {
+      "type": "short",
+      "title": "Why haven't we found aliens yet? The answer is terrifying",
+      "videoId": null,
+      "result": {
+        "score": 97
+      }
+    },
+    {
+      "type": "long",
+      "title": "What Happens If You Fall Into a Black Hole? | Orbit's Cosmic Journey",
+      "videoId": null,
+      "result": {
+        "score": 98
+      }
+    },
+    {
+      "type": "long",
+      "title": "Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey",
+      "videoId": null,
+      "result": {
+        "score": 97
+      }
+    },
+    {
+      "type": "short",
+      "title": "Space Is Rude About Distance",
+      "videoId": "UWwNKYf_aU8",
+      "result": {
+        "score": 91
+      }
+    },
+    {
+      "type": "short",
+      "title": "What If Aliens Are Watching Us?",
+      "videoId": "MO19iXYCu0c",
+      "result": {
+        "score": 89
+      }
+    },
+    {
+      "type": "short",
+      "title": "What If the First Alien Clue Is Already Here?",
+      "videoId": "--CxhjNqtSY",
+      "result": {
+        "score": 97
+      }
+    }
+  ],
+  "balance_after": {
+    "type": "limited",
+    "totalCredits": 1435,
+    "renewableCredits": 1365,
+    "maxRenewableCredits": 2000,
+    "renewableResetsAt": "2026-08-30T22:23:46Z",
+    "addOnCredits": 70,
+    "maxAddOnCredits": 70
+  }
+}
