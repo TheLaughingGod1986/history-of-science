@@ -51,8 +51,10 @@ Include mandatory Orbit consistency block when Orbit is on screen (see repo READ
 
 ## 6. Voice instructions
 
-- Model: Ben Orbit / ElevenLabs clone  
+- **Model (locked):** Ben Orbit Narrator — British IVC · `kDch6ACCIpqgQ0NsU9kk`  
+  (`04_Audio/tools/orbit_voice.py` · never swap for a US/stock voice)
 - Pace · warmth · emphasis words · pause marks  
+- British spelling / pronunciation notes where needed  
 
 After master VO:
 

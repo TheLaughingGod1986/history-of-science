@@ -76,3 +76,10 @@ in the vidIQ web app / extension (automation profile must be logged in).
 | Music bed | During / before edit | `generate_music_bed.py --generate` |
 
 Package checklist: `00_Brand/Channel-Setup/VIDEO_PACKAGE_TEMPLATE.md`
+
+## Voice lock (British)
+
+All long-form VO uses **Ben Orbit Narrator** (`kDch6ACCIpqgQ0NsU9kk`) — Ben’s
+British Instant Voice Clone. Constants: `orbit_voice.py`. Do not substitute
+another ElevenLabs voice unless the channel voice is explicitly redesigned.
+

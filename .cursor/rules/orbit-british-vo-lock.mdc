@@ -1,0 +1,17 @@
+---
+description: Lock ElevenLabs VO to British Ben Orbit Narrator clone
+alwaysApply: true
+---
+
+# Orbit YouTube — voiceover lock (British)
+
+When generating or regenerating any Orbit narration with ElevenLabs:
+
+1. **Always use** voice **Ben Orbit Narrator** — Instant Voice Clone of Ben’s British accent.
+2. **Voice ID (locked):** `kDch6ACCIpqgQ0NsU9kk`
+3. **Never** substitute a stock library voice, US accent, or a different clone without an explicit user request to change the channel voice.
+4. Prefer **British** spelling/pronunciation in scripts and SSML notes (`civilisation`, FAIR-mee for Fermi, etc.).
+5. Current production settings (V003/V004 lock): model `eleven_v3` · stability `0.34` · similarity `0.78` · style `0.42` · speed `1.04` · speaker boost on.
+6. Shared constant: `04_Audio/tools/orbit_voice.py` — import from there in new VO scripts.
+
+Target character: warm, articulate British educational narrator — calm authority, cinematic curiosity, restrained mystery. Never theatrical / trailer-like.
