@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-08-01T08:23:35.801690+00:00",
+  "project": "jwst",
+  "script": null,
+  "music_cues": [],
+  "prompt": "Short soft brand sting, warm cinematic space pad swell 2 seconds then resolve, instrumental only, no vocals.",
+  "length_ms": 12000,
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "generate": true,
+  "audio_file": "jwst_score_bed_sting_v01.mp3",
+  "status": "generated",
+  "bytes": 192724,
+  "song_id": "5eXm96WyKtG397pqOBRt"
+}

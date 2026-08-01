@@ -1,0 +1,15 @@
+A — LOCK (production)
+What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey
+
+B — thumb / Short hook
+Galaxies Too Old for the Universe? What JWST Found | Orbit's Cosmic Journey
+
+C — alt
+James Webb Telescope Discoveries That Rewrote the Early Universe | Orbit's Cosmic Journey
+
+## Scoring note
+vidIQ web app not authenticated in the YouTube Playwright profile (login wall). Title A locked from channel backlog + V001–V003 brand pattern (head term + discovery promise + Orbit's Cosmic Journey). Re-score in vidIQ extension when session available; swap only if CTR/SEO clearly favors B/C.
+
+Rejected
+- What JWST Saw That Shouldn't Exist Yet | Orbit's Cosmic Journey — edge toward clickbait
+- Scientists Are Wrong About the Universe (JWST Proof) — fearbait

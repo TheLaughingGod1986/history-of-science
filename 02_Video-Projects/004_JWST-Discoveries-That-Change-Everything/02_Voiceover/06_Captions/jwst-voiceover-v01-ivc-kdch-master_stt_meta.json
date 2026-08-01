@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-08-01T08:23:06.452067+00:00",
+  "audio": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/004_JWST-Discoveries-That-Change-Everything/02_Voiceover/05_Master/jwst_voiceover_v01_ivc_kDch_master.mp3",
+  "model_id": "scribe_v2",
+  "language_code": "eng",
+  "status": "generated",
+  "files": {
+    "raw_json": "jwst-voiceover-v01-ivc-kdch-master_stt_raw.json",
+    "transcript": "jwst-voiceover-v01-ivc-kdch-master_transcript.txt",
+    "srt": "jwst-voiceover-v01-ivc-kdch-master.srt"
+  },
+  "duration_seconds": 983.76,
+  "word_count": 2098
+}
