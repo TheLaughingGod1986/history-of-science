@@ -95,13 +95,6 @@ def generate_one(
     duration: float | None,
     loop: bool,
 ) -> None:
-    if mode != "api_key":
-        raise SystemExit(
-            "SFX generation requires ELEVENLABS_API_KEY (xi-api-key). "
-            "Firebase bearer works for VO/music/STT but ElevenLabs rejects it on "
-            "/v1/sound-generation. Create a key at https://elevenlabs.io/app/settings/api-keys "
-            "and export ELEVENLABS_API_KEY=…"
-        )
     payload: dict = {
         "text": text,
         "model_id": "eleven_text_to_sound_v2",
@@ -169,7 +162,7 @@ def main() -> None:
 
     token = mode = None
     if args.generate:
-        token, mode = load_token()
+        token, mode = load_token(prefer_api_key=True)
 
     for cue in cues:
         prompt = enrich_prompt(cue["text"])

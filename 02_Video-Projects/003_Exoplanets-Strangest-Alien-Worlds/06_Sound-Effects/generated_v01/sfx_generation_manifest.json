@@ -1,10 +1,9 @@
 {
-  "created_at": "2026-08-01T08:12:00+00:00",
+  "created_at": "2026-08-01T08:16:58.030366+00:00",
   "script": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/01_Script/exoplanets_script_master_v01.md",
   "generate": true,
   "duration_seconds": 2.0,
   "loop": false,
-  "notes": "Cue 04 generated via ElevenLabs MCP (Bearer auth rejected on /v1/sound-generation; needs ELEVENLABS_API_KEY for CLI --generate). Cue 05 still planned.",
   "cues": [
     {
       "index": 1,
@@ -12,9 +11,11 @@
       "scene": 4,
       "slug": "04_bright-crystalline-shimmer-restrained",
       "occurrences": 1,
+      "char_offset": 9370,
       "prompt": "bright crystalline shimmer, restrained. Cinematic space documentary sound design, clean and restrained, no cartoon whoosh, no comedy sting, subtle stereo bed suitable under narration.",
       "file": "sfx_04_bright-crystalline-shimmer-restrained_v01.mp3",
-      "status": "generated"
+      "status": "generated",
+      "bytes": 33062
     },
     {
       "index": 2,
@@ -22,9 +23,11 @@
       "scene": 5,
       "slug": "05_high-wind-roar-glassy-tinkles",
       "occurrences": 1,
+      "char_offset": 11935,
       "prompt": "high wind roar, glassy tinkles. Cinematic space documentary sound design, clean and restrained, no cartoon whoosh, no comedy sting, subtle stereo bed suitable under narration.",
       "file": "sfx_05_high-wind-roar-glassy-tinkles_v01.mp3",
-      "status": "planned"
+      "status": "generated",
+      "bytes": 33062
     }
   ]
 }

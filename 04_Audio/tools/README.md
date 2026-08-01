@@ -5,13 +5,13 @@ Shared CLIs for ElevenLabs production audio and vidIQ title gates.
 Auth: `ELEVENLABS_API_KEY` **or** Firebase bearer (same caches as VO generators —
 `/tmp/elevenlabs_bearer.txt`, project `.elevenlabs_bearer`, Playwright profile).
 
-| Endpoint | Bearer OK? | API key |
-|----------|------------|---------|
+| Endpoint | Bearer OK? | API key (`~/.config/elevenlabs/api_key`) |
+|----------|------------|------------------------------------------|
 | TTS / Music / STT | yes | yes |
-| Sound generation (SFX) | **no** (ElevenLabs rejects) | **required** |
+| Sound generation (SFX) | **no** | **required** (same key as ElevenLabs MCP) |
 
-**Cost:** `--generate` / live STT spend ElevenLabs credits. Default for SFX/music
-is dry-run (manifest/plan only).
+The Cursor ElevenLabs MCP wrapper reads `~/.config/elevenlabs/api_key`. Our CLIs
+use that file automatically (or `ELEVENLABS_API_KEY` / `ELEVENLABS_API_KEY_FILE`).
 
 ## Commands
 

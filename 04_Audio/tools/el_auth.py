@@ -76,11 +76,35 @@ def _from_indexeddb() -> str | None:
 def load_token(
     *,
     extra_bearer_paths: list[Path] | None = None,
+    prefer_api_key: bool = False,
 ) -> tuple[str, str]:
     """Return (token, mode) where mode is 'api_key' or 'bearer'."""
     env_key = os.environ.get("ELEVENLABS_API_KEY", "").strip()
-    if env_key:
+    key_file = Path(
+        os.environ.get(
+            "ELEVENLABS_API_KEY_FILE",
+            str(Path.home() / ".config/elevenlabs/api_key"),
+        )
+    ).expanduser()
+    file_key = ""
+    if key_file.exists():
+        file_key = key_file.read_text(encoding="utf-8").strip()
+
+    api_key = env_key or file_key
+    if api_key and (prefer_api_key or not _looks_like_jwt(api_key)):
+        if api_key.startswith("sk_"):
+            return api_key, "api_key"
+
+    if prefer_api_key and not (api_key and api_key.startswith("sk_")):
+        raise SystemExit(
+            "ELEVENLABS_API_KEY required (same key as ElevenLabs MCP). "
+            f"Set env or write sk_… to {key_file}"
+        )
+
+    if env_key and env_key.startswith("sk_"):
         return env_key, "api_key"
+    if file_key and file_key.startswith("sk_"):
+        return file_key, "api_key"
 
     now = time.time()
     for f in _bearer_candidates(extra_bearer_paths):
@@ -95,9 +119,13 @@ def load_token(
         return tok, "bearer"
 
     raise SystemExit(
-        "No ElevenLabs credentials — set ELEVENLABS_API_KEY or refresh "
-        "elevenlabs.io session (bearer cache / Playwright profile)."
+        "No ElevenLabs credentials — set ELEVENLABS_API_KEY / "
+        f"{key_file} (MCP key) or refresh elevenlabs.io session."
     )
+
+
+def _looks_like_jwt(tok: str) -> bool:
+    return tok.count(".") >= 2 and tok.startswith("eyJ")
 
 
 def auth_headers(token: str, mode: str, *, accept: str = "application/json") -> dict[str, str]:
