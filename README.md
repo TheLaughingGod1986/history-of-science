@@ -11,8 +11,10 @@ asking the biggest questions in the universe.*
 **Live channel:** `00_Brand/Channel-Setup/CHANNEL_READY.md`  
 **Publishing & Shorts strategy:** `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`  
 **Publish schedule:** `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.md` · `CHANNEL_PUBLISH_CADENCE.md`  
+**Latest audit:** `00_Brand/Channel-Setup/audits/CHANNEL_AUDIT_2026-08-01.md`  
 **Flywheel / release:** `CONTENT_FLYWHEEL_TEMPLATE.md` · `RELEASE_WEEK_CHECKLIST.md`  
-**Video backlog:** `00_Brand/Channel-Setup/VIDEO_BACKLOG.json`
+**Video backlog:** `00_Brand/Channel-Setup/VIDEO_BACKLOG.json`  
+**Shorts mirrors:** TikTok `Channel-Setup/TikTok/AUTO_POST.md` · Meta (IG+FB) `Channel-Setup/Meta/AUTO_POST.md`
 
 This repository holds every asset for the channel — the character bible, the
 per-video projects, reusable animation and audio libraries, and final exports.

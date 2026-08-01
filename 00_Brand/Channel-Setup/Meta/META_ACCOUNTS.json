@@ -1,0 +1,20 @@
+{
+  "brand": "Orbit with Ben",
+  "youtube_handle": "@OrbitWithBen",
+  "facebook": {
+    "page_name": "Orbit with Ben",
+    "preferred_handles": ["OrbitWithBen", "OrbitwithBen", "OrbitWithBenYT"],
+    "page_url_placeholder": "https://www.facebook.com/OrbitWithBen",
+    "notes": "Publish Reels to the Facebook Page only (not personal profile)."
+  },
+  "instagram": {
+    "preferred_handles": ["orbitwithben", "orbit.with.ben", "orbitwithbenyt"],
+    "account_type": "professional",
+    "must_link_to_facebook_page": true,
+    "profile_url_placeholder": "https://www.instagram.com/orbitwithben/",
+    "notes": "Creator or Business account linked to the Orbit Facebook Page."
+  },
+  "bio": "Space stories. Big questions. Full films on YouTube ↓",
+  "website": "https://www.youtube.com/@OrbitWithBen",
+  "soft_cta": "Full film on YouTube."
+}

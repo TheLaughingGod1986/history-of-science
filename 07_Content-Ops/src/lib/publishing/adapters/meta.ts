@@ -49,7 +49,7 @@ export class InstagramPublishingAdapter implements PublishingAdapter {
       limitations: [
         "Requires Instagram professional account linked to a Facebook Page",
         "App Review usually required for content publishing permissions",
-        "Needs public video URL or Meta resumable upload",
+        "Uses resumable upload for local files (or public video URL when staged)",
         ...(connected ? [] : ["Select an Instagram professional account after Meta OAuth"]),
       ],
     });
@@ -133,44 +133,58 @@ export class InstagramPublishingAdapter implements PublishingAdapter {
     }
 
     const staging = getMediaStagingProvider();
-    const staged = await staging.stageMedia(post.mediaFilePath || post.exportPath!);
-    if (!staged.publicUrl && staged.mode === "local_direct_upload") {
-      return {
-        success: false,
-        published: false,
-        message:
-          "Instagram requires a publicly retrievable video URL or resumable upload. Configure MEDIA_STAGING_MODE=existing_public_url and MEDIA_PUBLIC_BASE_URL, or use resumable Meta upload in a later iteration.",
-        method: "api",
-        errorCategory: "configuration",
-        retryable: false,
-        requiresManualCompletion: true,
-      };
-    }
-
+    const filePath = post.mediaFilePath || post.exportPath!;
+    const staged = await staging.stageMedia(filePath);
     const igId = connection.instagramBusinessAccountId;
-    const createUrl = new URL(`https://graph.facebook.com/v21.0/${igId}/media`);
-    createUrl.searchParams.set("media_type", "REELS");
-    createUrl.searchParams.set("caption", post.caption || post.title || "");
-    createUrl.searchParams.set("video_url", staged.publicUrl!);
-    createUrl.searchParams.set("access_token", context.accessToken);
+    const caption = post.caption || post.title || "";
 
-    const createRes = await fetch(createUrl, { method: "POST" });
-    const createBody = await createRes.json();
-    if (!createRes.ok || !createBody.id) {
-      const c = classifyHttpError(createRes.status, JSON.stringify(createBody));
-      return {
-        success: false,
-        published: false,
-        message: "Instagram container creation failed",
-        method: "api",
-        errorCategory: c.category,
-        retryable: c.retryable,
-        httpStatus: createRes.status,
-        responseSummary: redactSummary(createBody),
-      };
+    let containerId: string;
+    if (staged.publicUrl) {
+      const createUrl = new URL(`https://graph.facebook.com/v21.0/${igId}/media`);
+      createUrl.searchParams.set("media_type", "REELS");
+      createUrl.searchParams.set("caption", caption);
+      createUrl.searchParams.set("video_url", staged.publicUrl);
+      createUrl.searchParams.set("share_to_feed", "true");
+      createUrl.searchParams.set("access_token", context.accessToken);
+      const createRes = await fetch(createUrl, { method: "POST" });
+      const createBody = await createRes.json();
+      if (!createRes.ok || !createBody.id) {
+        const c = classifyHttpError(createRes.status, JSON.stringify(createBody));
+        return {
+          success: false,
+          published: false,
+          message: "Instagram container creation failed",
+          method: "api",
+          errorCategory: c.category,
+          retryable: c.retryable,
+          httpStatus: createRes.status,
+          responseSummary: redactSummary(createBody),
+        };
+      }
+      containerId = String(createBody.id);
+    } else {
+      const resumable = await createIgResumableReel({
+        igId,
+        caption,
+        filePath: staged.localPath,
+        accessToken: context.accessToken,
+      });
+      if (!resumable.ok) {
+        return {
+          success: false,
+          published: false,
+          message: resumable.message,
+          method: "api",
+          errorCategory: resumable.errorCategory || "media_processing",
+          retryable: Boolean(resumable.retryable),
+          httpStatus: resumable.httpStatus,
+          responseSummary: resumable.responseSummary,
+          requiresManualCompletion: resumable.requiresManualCompletion,
+        };
+      }
+      containerId = resumable.containerId!;
     }
 
-    const containerId = createBody.id as string;
     const ready = await pollIgContainer(containerId, context.accessToken);
     if (!ready.ok) {
       return {
@@ -327,51 +341,71 @@ export class FacebookPublishingAdapter implements PublishingAdapter {
     }
 
     const staging = getMediaStagingProvider();
-    const staged = await staging.stageMedia(post.mediaFilePath || post.exportPath!);
-    if (!staged.publicUrl) {
+    const filePath = post.mediaFilePath || post.exportPath!;
+    const staged = await staging.stageMedia(filePath);
+    const description = post.caption || post.title || "";
+
+    if (staged.publicUrl) {
+      const url = new URL(`https://graph.facebook.com/v21.0/${connection.pageId}/videos`);
+      url.searchParams.set("file_url", staged.publicUrl);
+      url.searchParams.set("description", description);
+      url.searchParams.set("published", "true");
+      url.searchParams.set("access_token", context.accessToken);
+      const res = await fetch(url, { method: "POST" });
+      const body = await res.json();
+      if (!res.ok || !body.id) {
+        const c = classifyHttpError(res.status, JSON.stringify(body));
+        return {
+          success: false,
+          published: false,
+          message: "Facebook video publish failed",
+          method: "api",
+          errorCategory: c.category,
+          retryable: c.retryable,
+          httpStatus: res.status,
+          responseSummary: redactSummary(body),
+          requiresManualCompletion: true,
+        };
+      }
+      const id = String(body.id);
       return {
-        success: false,
-        published: false,
-        message:
-          "Facebook Reel publishing from this local setup requires a publicly retrievable media URL. Configure MEDIA_PUBLIC_BASE_URL or use the manual upload package.",
+        success: true,
+        published: true,
+        platformPostId: id,
+        platformUrl: `https://www.facebook.com/reel/${id}`,
+        message: "Facebook video/Reel publish recorded",
         method: "api",
-        errorCategory: "configuration",
-        retryable: false,
-        requiresManualCompletion: true,
+        responseSummary: redactSummary({ id }),
       };
     }
 
-    // Page video upload via graph — simplified officially-supported path using file_url where available
-    const url = new URL(`https://graph.facebook.com/v21.0/${connection.pageId}/videos`);
-    url.searchParams.set("file_url", staged.publicUrl);
-    url.searchParams.set("description", post.caption || post.title || "");
-    url.searchParams.set("published", "true");
-    url.searchParams.set("access_token", context.accessToken);
-    const res = await fetch(url, { method: "POST" });
-    const body = await res.json();
-    if (!res.ok || !body.id) {
-      const c = classifyHttpError(res.status, JSON.stringify(body));
+    const reel = await publishFacebookReelResumable({
+      pageId: connection.pageId,
+      filePath: staged.localPath,
+      description,
+      accessToken: context.accessToken,
+    });
+    if (!reel.ok) {
       return {
         success: false,
         published: false,
-        message: "Facebook video publish failed",
+        message: reel.message,
         method: "api",
-        errorCategory: c.category,
-        retryable: c.retryable,
-        httpStatus: res.status,
-        responseSummary: redactSummary(body),
+        errorCategory: reel.errorCategory || "media_processing",
+        retryable: Boolean(reel.retryable),
+        httpStatus: reel.httpStatus,
+        responseSummary: reel.responseSummary,
         requiresManualCompletion: true,
       };
     }
-    const id = String(body.id);
     return {
       success: true,
       published: true,
-      platformPostId: id,
-      platformUrl: `https://www.facebook.com/reel/${id}`,
-      message: "Facebook video/Reel publish recorded",
+      platformPostId: reel.videoId!,
+      platformUrl: `https://www.facebook.com/reel/${reel.videoId}`,
+      message: "Facebook Reel published via resumable upload",
       method: "api",
-      responseSummary: redactSummary({ id }),
+      responseSummary: redactSummary({ id: reel.videoId }),
     };
   }
 
@@ -401,4 +435,155 @@ async function pollIgContainer(
     await new Promise((r) => setTimeout(r, 2000));
   }
   return { ok: false, message: "Instagram container processing timed out" };
+}
+
+type ResumableResult = {
+  ok: boolean;
+  message: string;
+  containerId?: string;
+  videoId?: string;
+  errorCategory?: PublishResult["errorCategory"];
+  retryable?: boolean;
+  httpStatus?: number;
+  responseSummary?: string;
+  requiresManualCompletion?: boolean;
+};
+
+async function createIgResumableReel(args: {
+  igId: string;
+  caption: string;
+  filePath: string;
+  accessToken: string;
+}): Promise<ResumableResult> {
+  const fs = await import("fs/promises");
+  const buf = await fs.readFile(args.filePath);
+  const createUrl = new URL(`https://graph.facebook.com/v21.0/${args.igId}/media`);
+  createUrl.searchParams.set("media_type", "REELS");
+  createUrl.searchParams.set("upload_type", "resumable");
+  createUrl.searchParams.set("caption", args.caption);
+  createUrl.searchParams.set("share_to_feed", "true");
+  createUrl.searchParams.set("access_token", args.accessToken);
+  const createRes = await fetch(createUrl, { method: "POST" });
+  const createBody = await createRes.json();
+  if (!createRes.ok || !createBody.id) {
+    const c = classifyHttpError(createRes.status, JSON.stringify(createBody));
+    return {
+      ok: false,
+      message: "Instagram resumable container creation failed",
+      errorCategory: c.category,
+      retryable: c.retryable,
+      httpStatus: createRes.status,
+      responseSummary: redactSummary(createBody),
+    };
+  }
+  const containerId = String(createBody.id);
+  const uploadUri =
+    createBody.uri || createBody.upload_url || createBody.video_upload?.uri;
+  if (!uploadUri) {
+    return {
+      ok: false,
+      message: "Instagram resumable upload URI missing from container response",
+      containerId,
+      errorCategory: "configuration",
+      retryable: false,
+      responseSummary: redactSummary(createBody),
+      requiresManualCompletion: true,
+    };
+  }
+  const upRes = await fetch(uploadUri, {
+    method: "POST",
+    headers: {
+      Authorization: `OAuth ${args.accessToken}`,
+      offset: "0",
+      file_size: String(buf.byteLength),
+      "Content-Type": "application/octet-stream",
+    },
+    body: buf,
+  });
+  if (!upRes.ok) {
+    const text = await upRes.text();
+    const c = classifyHttpError(upRes.status, text);
+    return {
+      ok: false,
+      message: "Instagram resumable binary upload failed",
+      containerId,
+      errorCategory: c.category,
+      retryable: c.retryable,
+      httpStatus: upRes.status,
+      responseSummary: redactSummary(text),
+    };
+  }
+  return { ok: true, message: "uploaded", containerId };
+}
+
+async function publishFacebookReelResumable(args: {
+  pageId: string;
+  filePath: string;
+  description: string;
+  accessToken: string;
+}): Promise<ResumableResult> {
+  const fs = await import("fs/promises");
+  const buf = await fs.readFile(args.filePath);
+  const startUrl = new URL(`https://graph.facebook.com/v21.0/${args.pageId}/video_reels`);
+  startUrl.searchParams.set("upload_phase", "start");
+  startUrl.searchParams.set("file_size", String(buf.byteLength));
+  startUrl.searchParams.set("access_token", args.accessToken);
+  const startRes = await fetch(startUrl, { method: "POST" });
+  const startBody = await startRes.json();
+  if (!startRes.ok || !startBody.video_id || !startBody.upload_url) {
+    const c = classifyHttpError(startRes.status, JSON.stringify(startBody));
+    return {
+      ok: false,
+      message: "Facebook Reel upload session start failed",
+      errorCategory: c.category,
+      retryable: c.retryable,
+      httpStatus: startRes.status,
+      responseSummary: redactSummary(startBody),
+    };
+  }
+  const videoId = String(startBody.video_id);
+  const upRes = await fetch(String(startBody.upload_url), {
+    method: "POST",
+    headers: {
+      Authorization: `OAuth ${args.accessToken}`,
+      offset: "0",
+      file_size: String(buf.byteLength),
+      "Content-Type": "application/octet-stream",
+    },
+    body: buf,
+  });
+  if (!upRes.ok) {
+    const text = await upRes.text();
+    const c = classifyHttpError(upRes.status, text);
+    return {
+      ok: false,
+      message: "Facebook Reel binary upload failed",
+      videoId,
+      errorCategory: c.category,
+      retryable: c.retryable,
+      httpStatus: upRes.status,
+      responseSummary: redactSummary(text),
+    };
+  }
+  const finishUrl = new URL(`https://graph.facebook.com/v21.0/${args.pageId}/video_reels`);
+  finishUrl.searchParams.set("upload_phase", "finish");
+  finishUrl.searchParams.set("video_id", videoId);
+  finishUrl.searchParams.set("video_state", "PUBLISHED");
+  finishUrl.searchParams.set("description", args.description);
+  finishUrl.searchParams.set("access_token", args.accessToken);
+  const finishRes = await fetch(finishUrl, { method: "POST" });
+  const finishBody = await finishRes.json();
+  if (!finishRes.ok) {
+    const c = classifyHttpError(finishRes.status, JSON.stringify(finishBody));
+    return {
+      ok: false,
+      message: "Facebook Reel finish/publish failed",
+      videoId,
+      errorCategory: c.category,
+      retryable: c.retryable,
+      httpStatus: finishRes.status,
+      responseSummary: redactSummary(finishBody),
+    };
+  }
+  return { ok: true, message: "published", videoId };
 }

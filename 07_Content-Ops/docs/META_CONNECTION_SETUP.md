@@ -1,6 +1,6 @@
 # Meta Connection Setup (Instagram + Facebook Reels)
 
-**Docs checked:** 2026-07-31 — Instagram Content Publishing + Facebook Page APIs.
+**Docs checked:** 2026-08-01 — Instagram Content Publishing + Facebook Page Reels APIs.
 
 ## Developer portal
 
@@ -45,11 +45,23 @@ Missing IG pro → Instagram capabilities stay manual
 
 ### Instagram Reels
 
-Container → poll processing → `media_publish`. Public media URL or resumable upload required. Localhost files are **not** fetchable by Meta — configure staging or use resumable path.
+Resumable upload (local file → container → poll → `media_publish`) is preferred.
+Public `video_url` staging remains supported when `MEDIA_STAGING_MODE=existing_public_url`.
 
 ### Facebook Page Reels
 
+`/{page-id}/video_reels` start → binary upload → finish (`video_state=PUBLISHED`).
 Publish only to the selected Page. Personal profiles are not used.
+
+## Brand shorts auto-post (TikTok-style mirror)
+
+When a YouTube Short goes live, Orbit can also mirror to IG + Facebook:
+
+→ `00_Brand/Channel-Setup/Meta/AUTO_POST.md`  
+→ `00_Brand/Channel-Setup/Meta/CONNECT_TO_CONTENT_OPS.md`
+
+Copy Page / IG ids + tokens into `META_CREDENTIALS.json` (gitignored), or use Meta
+Business Suite CDP on port 9223 until App Review is complete.
 
 ## Safe test
 
