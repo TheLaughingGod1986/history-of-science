@@ -137,14 +137,16 @@ Publish slots: `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.json`.
 1. Research (NASA / ESA / papers / journals)  
 2. Script (hook · story · science · emotional ending)  
 3. Scene breakdown (number · duration · visual · camera · Orbit · AI prompt)  
-4. Generate visuals (consistent Orbit + palette + cinematic bar)  
-5. Voice (ElevenLabs · Ben clone)  
-6. Edit (music · SFX · captions · transitions)  
-7. Package (titles · thumb ABC · description · tags · chapters · SEO)  
-8. Upload / schedule on `@OrbitWithBen` (long Thu 19:00 → Shorts cluster)  
-9. Fill content flywheel (`CONTENT_FLYWHEEL_TEMPLATE.md`) · run `RELEASE_WEEK_CHECKLIST.md`
+4. **Title gate (vidIQ)** — score ABC ≥90 before VO (`04_Audio/tools/vidiq_title_score_sheet.py`)  
+5. Generate visuals (consistent Orbit + palette + cinematic bar)  
+6. Voice (ElevenLabs · Ben clone) → captions via `04_Audio/tools/transcribe_vo.py`  
+7. Edit — SFX/music from script cues (`generate_sfx_from_script.py`, `generate_music_bed.py`)  
+8. Package (titles · thumb ABC · description · tags · chapters · SEO)  
+9. Upload / schedule on `@OrbitWithBen` (long Thu 19:00 → Shorts cluster)  
+10. Fill content flywheel (`CONTENT_FLYWHEEL_TEMPLATE.md`) · run `RELEASE_WEEK_CHECKLIST.md`
 
 Package template: `00_Brand/Channel-Setup/VIDEO_PACKAGE_TEMPLATE.md`  
+Audio tools: `04_Audio/tools/README.md`  
 Publishing system: `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`
 
 ---

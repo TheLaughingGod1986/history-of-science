@@ -4,13 +4,24 @@ Use this checklist for every long-form (and its Shorts + distribution cluster).
 
 Canonical publish rules: `PUBLISHING_AND_SHORTS_STRATEGY.md`
 
-## 1. Title options (3–5)
+## 1. Title options (3–5) — vidIQ gate
 
-Formula: Question + Mystery + Emotion. Mobile-scannable.
+Formula: Question + Mystery + Emotion. Mobile-scannable. Include `| Orbit's Cosmic Journey`.
 
 - A:
 - B:
 - C:
+
+**Before VO lock:**
+
+```bash
+python3 04_Audio/tools/vidiq_title_score_sheet.py --project-dir 02_Video-Projects/<NN_Slug>
+```
+
+- [ ] Score sheet filled (`11_Upload-Package/Titles/VIDIQ_TITLE_SCORE_SHEET.md`)
+- [ ] Winner ≥ **90** (target **95+**) in vidIQ Title Analyzer
+- [ ] Keyword Research noted for description / tags
+- [ ] Thumbnail Preview checked on mobile + suggested
 
 ## 2. Thumbnail concepts (A/B/C)
 
@@ -43,9 +54,37 @@ Include mandatory Orbit consistency block when Orbit is on screen (see repo READ
 - Model: Ben Orbit / ElevenLabs clone  
 - Pace · warmth · emphasis words · pause marks  
 
+After master VO:
+
+```bash
+python3 04_Audio/tools/transcribe_vo.py \
+  --audio 02_Video-Projects/<NN_Slug>/02_Voiceover/05_Master/<master>.mp3 \
+  --out-dir 02_Video-Projects/<NN_Slug>/02_Voiceover/06_Captions
+```
+
+- [ ] Captions `.srt` + transcript written
+
 ## 7. Editing plan
 
 Music bed · SFX · captions · transitions · end screen · cards · chapters
+
+Generate from script cues (dry-run first; `--generate` spends ElevenLabs credits):
+
+```bash
+python3 04_Audio/tools/generate_sfx_from_script.py \
+  --script 02_Video-Projects/<NN_Slug>/01_Script/<slug>_script_master_v01.md \
+  --out-dir 02_Video-Projects/<NN_Slug>/06_Sound-Effects/generated_v01
+
+python3 04_Audio/tools/generate_music_bed.py \
+  --project <slug> \
+  --script 02_Video-Projects/<NN_Slug>/01_Script/<slug>_script_master_v01.md \
+  --out-dir 02_Video-Projects/<NN_Slug>/05_Music \
+  --length-ms 180000
+```
+
+- [ ] SFX manifest reviewed (unique `[SFX:]` cues)
+- [ ] Music bed plan / file in `05_Music/`
+- [ ] Captions synced in edit
 
 ## 8. SEO metadata
 
@@ -83,9 +122,12 @@ Copy `CONTENT_FLYWHEEL_TEMPLATE.md` → `11_Distribution/CONTENT_FLYWHEEL.md` an
 - [ ] Brand voice intact  
 - [ ] Science sources noted  
 - [ ] Orbit used as guide, not wallpaper  
+- [ ] vidIQ title locked (≥90) + thumb previewed  
 - [ ] Thumb readable at mobile size  
 - [ ] Long scheduled Thu **19:00** UK before any Short goes public  
 - [ ] Short #1 Related → this long  
 - [ ] Soft CTAs only (no ad voice)  
 - [ ] Uploaded to `@OrbitWithBen` only  
 - [ ] `RELEASE_WEEK_CHECKLIST.md` ready for ship week  
+
+Audio/packaging CLIs: `04_Audio/tools/README.md`  

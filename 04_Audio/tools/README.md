@@ -1,0 +1,78 @@
+# Orbit audio + packaging tools
+
+Shared CLIs for ElevenLabs production audio and vidIQ title gates.
+
+Auth: `ELEVENLABS_API_KEY` **or** Firebase bearer (same caches as VO generators —
+`/tmp/elevenlabs_bearer.txt`, project `.elevenlabs_bearer`, Playwright profile).
+
+| Endpoint | Bearer OK? | API key |
+|----------|------------|---------|
+| TTS / Music / STT | yes | yes |
+| Sound generation (SFX) | **no** (ElevenLabs rejects) | **required** |
+
+**Cost:** `--generate` / live STT spend ElevenLabs credits. Default for SFX/music
+is dry-run (manifest/plan only).
+
+## Commands
+
+### 1. SFX from script cues
+
+Requires `ELEVENLABS_API_KEY` for `--generate` (Firebase bearer is not accepted on
+`/v1/sound-generation`).
+
+```bash
+cd 04_Audio/tools
+
+# Parse [SFX: …] tags → manifest
+python3 generate_sfx_from_script.py \
+  --script ../../02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/01_Script/exoplanets_script_master_v01.md \
+  --out-dir ../../02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/06_Sound-Effects/generated_v01
+
+# Generate (costs credits; needs API key)
+export ELEVENLABS_API_KEY=…   # https://elevenlabs.io/app/settings/api-keys
+python3 generate_sfx_from_script.py --script … --out-dir … --generate --duration 3
+```
+
+### 2. Music bed
+
+```bash
+python3 generate_music_bed.py \
+  --project exoplanets \
+  --script ../../02_Video-Projects/003_…/01_Script/exoplanets_script_master_v01.md \
+  --out-dir ../../02_Video-Projects/003_…/05_Music \
+  --length-ms 180000
+
+python3 generate_music_bed.py … --generate   # costs credits
+```
+
+### 3. VO → captions (Scribe)
+
+```bash
+python3 transcribe_vo.py \
+  --audio ../../02_Video-Projects/003_…/02_Voiceover/05_Master/<master>.mp3 \
+  --out-dir ../../02_Video-Projects/003_…/02_Voiceover/06_Captions
+```
+
+Writes `.srt`, plain transcript, and raw JSON word timestamps.
+
+### 4. vidIQ title score sheet
+
+```bash
+python3 vidiq_title_score_sheet.py \
+  --project-dir ../../02_Video-Projects/004_JWST-Discoveries-That-Change-Everything
+```
+
+Opens/creates `11_Upload-Package/Titles/VIDIQ_TITLE_SCORE_SHEET.md`. Fill scores
+in the vidIQ web app / extension (automation profile must be logged in).
+
+## Pipeline slot
+
+| Step | When | Tool |
+|------|------|------|
+| Title gate | Before VO lock | `vidiq_title_score_sheet.py` + live vidIQ |
+| VO | After title lock | existing `_generate_vo_v01.py` |
+| Captions | After VO master | `transcribe_vo.py` |
+| SFX | During / before edit | `generate_sfx_from_script.py --generate` |
+| Music bed | During / before edit | `generate_music_bed.py --generate` |
+
+Package checklist: `00_Brand/Channel-Setup/VIDEO_PACKAGE_TEMPLATE.md`

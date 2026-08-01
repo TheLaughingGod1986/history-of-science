@@ -1,5 +1,18 @@
 # Content workflow
 
+## 0. Long-form production helpers (pre–Content Ops)
+
+Before a video is “completed” for distribution, use shared CLIs in `04_Audio/tools/`:
+
+| Gate | Tool |
+|------|------|
+| vidIQ title score sheet | `vidiq_title_score_sheet.py` |
+| VO → SRT captions | `transcribe_vo.py` |
+| `[SFX:]` → ElevenLabs SFX | `generate_sfx_from_script.py` |
+| `[MUSIC:]` → instrumental bed | `generate_music_bed.py` |
+
+Details: `04_Audio/tools/README.md` · package checklist in `VIDEO_PACKAGE_TEMPLATE.md`.
+
 ## 1. Register a completed long-form video
 
 1. Open Content Ops (`cd 07_Content-Ops && npm run dev`)
