@@ -15,3 +15,13 @@ When generating or regenerating any Orbit narration with ElevenLabs:
 6. Shared constant: `04_Audio/tools/orbit_voice.py` — import from there in new VO scripts.
 
 Target character: warm, articulate British educational narrator — calm authority, cinematic curiosity, restrained mystery. Never theatrical / trailer-like.
+
+## Image & Video / Veo / Omni CG (critical)
+
+ElevenLabs **Image & Video** models (Veo, Omni, etc.) often bake in **American** speech. That is **not** channel VO.
+
+- CG clips must be **silent picture** (or ambience only) — **no dialogue, no narration, no VO** in the video model.
+- Always append the silent-audio block from `04_Audio/tools/orbit_voice.py` (`CG_SILENT_AUDIO_BLOCK`).
+- Channel narration is mixed later from **Ben Orbit Narrator** only.
+- Prefer Gemini Omni Flash when credits allow; if using Veo, still force silent prompts and strip audio on download.
+- Never treat Veo/Omni native speech as usable VO.

@@ -25,3 +25,19 @@ DESCRIPTION = (
     "cinematic curiosity and restrained mystery. Quietly dramatic — never "
     "theatrical, never trailer-like."
 )
+
+# Append to every ElevenLabs Image & Video / Veo / Omni / Seedance prompt.
+# Video models often invent American narration — never use that audio.
+CG_SILENT_AUDIO_BLOCK = (
+    "SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken "
+    "words, no lip sync speech, no American or any-language talking. No announcer. "
+    "Mute or ambient space soundscape only if the model requires an audio track. "
+    "Channel voiceover is added later in edit (British Ben Orbit Narrator)."
+)
+
+CG_PREFACE = (
+    "Premium cinematic 3D animation, educational space documentary. Soft warm "
+    "key light on Orbit, cool scientific accents, shallow depth of field, "
+    "continuous subtle hover. Full character motion — not a still with light "
+    "wiggle. " + CG_SILENT_AUDIO_BLOCK + " "
+)

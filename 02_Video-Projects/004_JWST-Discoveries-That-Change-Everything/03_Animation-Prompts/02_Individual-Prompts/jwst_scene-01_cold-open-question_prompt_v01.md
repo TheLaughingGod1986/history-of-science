@@ -1,7 +1,7 @@
-# Scene 02 — What is an exoplanet?
+# Scene 01 — Cold Open Question
 
-**Video:** 003 — Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey
-**VO span:** ~90s
+**Video:** 004 — What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey
+**VO span:** ~60–90s
 **Aspect:** 16:9 · **Duration per clip:** 8–10s · **Engine:** ElevenLabs Gemini Omni Flash / Seedance i2v
 **Reference:** `01_Orbit-Character/05_Seedance-References/orbit-seedance-reference-v01.png`
 **Format:** Full CG travelogue — Orbit *in* the scene (not PiP wallpaper)
@@ -16,48 +16,52 @@ Preserve Orbit exactly as shown in the uploaded reference image. Maintain the sa
 
 ## Clip beats
 
-### A — holo Solar System (8–10s)
+### A — stare at cosmic dawn (8–10s)
 
 --- PROMPT ---
 
 Premium cinematic 3D animation, educational space documentary. Soft warm key light on Orbit, cool scientific accents, shallow depth of field, continuous subtle hover. Full character motion — not a still with light wiggle. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip-sync speech, no American or any-language talking. Ambient space only if audio is required; otherwise mute. Channel VO is British Ben Orbit Narrator mixed in edit.
 
-Clean grey observatory. Orbit beside a large translucent hologram of the Sun and planets. Explaining gestures with stubby arms. Soft warm key on Orbit, cool blue holo accents. Medium three-quarter framing.
+Deep space filled with soft gold sparks of unfinished early galaxies. Orbit floats tiny in foreground, back partly to camera, cream eyes wide staring into cosmic dawn. Slow continuous hover. Camera slow push past his shoulder toward the golden sparks. No JWST yet — only early-universe wonder.
 
 Preserve Orbit exactly as shown in the uploaded reference image. Maintain the same rounded orange body, black faceplate, cream expressive eyes, single glowing antenna, short stubby side arms (no claws, no fingers), proportions, materials and warm Pixar-like animated-film visual style. Emotion only through cream eye shapes and body language. Do not redesign the character. Do not add limbs, fingers, mouths, clothing, readable text, logos, watermarks or UI gibberish. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip-sync speech, no American or any-language talking. Ambient space only if audio is required; otherwise mute. Channel VO is British Ben Orbit Narrator mixed in edit.
 
 --- END ---
 
-### B — jump to other stars (8–10s)
+
+### B — turn to camera (8–10s)
 
 --- PROMPT ---
 
 Premium cinematic 3D animation, educational space documentary. Soft warm key light on Orbit, cool scientific accents, shallow depth of field, continuous subtle hover. Full character motion — not a still with light wiggle. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip-sync speech, no American or any-language talking. Ambient space only if audio is required; otherwise mute. Channel VO is British Ben Orbit Narrator mixed in edit.
 
-Same observatory. Hologram morphs from Solar System to countless star points; one star highlighted with a glowing planet silhouette orbiting it. Orbit traces the orbit with a stubby finger. Clear planet-around-other-star diagram must read on mobile.
+Same cosmic-dawn field. Orbit turns from the sparks toward camera. Cream eyes puzzled-wonder. Antenna soft glow brightens. Medium close-up on faceplate. Shallow DOF, early galaxies soft bokeh behind.
 
 Preserve Orbit exactly as shown in the uploaded reference image. Maintain the same rounded orange body, black faceplate, cream expressive eyes, single glowing antenna, short stubby side arms (no claws, no fingers), proportions, materials and warm Pixar-like animated-film visual style. Emotion only through cream eye shapes and body language. Do not redesign the character. Do not add limbs, fingers, mouths, clothing, readable text, logos, watermarks or UI gibberish. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip-sync speech, no American or any-language talking. Ambient space only if audio is required; otherwise mute. Channel VO is British Ben Orbit Narrator mixed in edit.
 
 --- END ---
 
-### C — museum of extremes (8–10s)
+
+### C — determined hover (8–10s)
 
 --- PROMPT ---
 
 Premium cinematic 3D animation, educational space documentary. Soft warm key light on Orbit, cool scientific accents, shallow depth of field, continuous subtle hover. Full character motion — not a still with light wiggle. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip-sync speech, no American or any-language talking. Ambient space only if audio is required; otherwise mute. Channel VO is British Ben Orbit Narrator mixed in edit.
 
-Holo parade of world types: tiny rocky dots, bloated gas giants, tight orbits, a lone rogue planet icon. Orbit's cream eyes widen at the rogue. Learning energy, soft oh-blink. Shallow DOF on Orbit faceplate with holo bokeh.
+Orbit faces camera, determined little hover toward the dawn light. Cream eyes resolve with curiosity. Soft brand-friendly framing. Ready to learn beside a great telescope.
 
 Preserve Orbit exactly as shown in the uploaded reference image. Maintain the same rounded orange body, black faceplate, cream expressive eyes, single glowing antenna, short stubby side arms (no claws, no fingers), proportions, materials and warm Pixar-like animated-film visual style. Emotion only through cream eye shapes and body language. Do not redesign the character. Do not add limbs, fingers, mouths, clothing, readable text, logos, watermarks or UI gibberish. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip-sync speech, no American or any-language talking. Ambient space only if audio is required; otherwise mute. Channel VO is British Ben Orbit Narrator mixed in edit.
 
 --- END ---
+
 
 ## Generation settings
 
 - **Silent CG:** no baked speech — strip/mute model audio; British Ben VO only in edit
 - Image ref = `01_Orbit-Character/05_Seedance-References/orbit-seedance-reference-v01.png`
 - Prefer continuous character motion; avoid frozen holds
-- No readable text/UI letters on cards or screens
+- No readable text/UI letters on cards or screens (chapter cards are separate locked stills)
 - Generate 2 versions when credits allow; keep all raws
 - Download → `04_Generated-Clips/01_Raw/scene-XX/`
 - If VO longer than motion: play once → unique still board pan (never loop)
+
