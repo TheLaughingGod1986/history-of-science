@@ -48,3 +48,9 @@ node_modules/
 # Meta (Facebook / Instagram) local secrets / audit dumps
 00_Brand/Channel-Setup/Meta/META_CREDENTIALS.json
 00_Brand/Channel-Setup/Meta/audit/
+
+00_Brand/Channel-Setup/Threads/THREADS_CREDENTIALS.json
+
+00_Brand/Channel-Setup/Threads/audit/
+00_Brand/Channel-Setup/Threads/auto_*.log
+00_Brand/Channel-Setup/Threads/AUTO_LAST_RUN.json

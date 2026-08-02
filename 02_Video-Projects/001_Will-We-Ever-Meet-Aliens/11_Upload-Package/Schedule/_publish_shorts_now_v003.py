@@ -264,7 +264,7 @@ def main():
             json.dumps(INDEX, indent=2) + "\n"
         )
 
-        # Mirror each newly public short to TikTok + Meta (IG/FB).
+        # Mirror each newly public short to TikTok + Meta (IG/FB) + Threads.
         try:
             import importlib.util
             from pathlib import Path as _P
@@ -280,6 +280,9 @@ def main():
             _base = _P("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup")
             notify_tiktok = _load_notify(_base / "TikTok" / "auto", "orbit_tiktok_hooks")
             notify_meta = _load_notify(_base / "Meta" / "auto", "orbit_meta_hooks")
+            notify_threads = _load_notify(
+                _base / "Threads" / "auto", "orbit_threads_hooks"
+            )
 
             for s, rr in zip(INDEX["shorts"], result["shorts"]):
                 if not rr.get("ok"):
@@ -290,6 +293,9 @@ def main():
                 mr = notify_meta(ROOT, s)
                 print(f"meta {s.get('id')} → {mr.get('status')}", flush=True)
                 rr["meta"] = mr
+                thr = notify_threads(ROOT, s)
+                print(f"threads {s.get('id')} → {thr.get('status')}", flush=True)
+                rr["threads"] = thr
             OUT.write_text(json.dumps(result, indent=2) + "\n")
         except Exception as e:
             print("social mirror hooks skipped:", e, flush=True)

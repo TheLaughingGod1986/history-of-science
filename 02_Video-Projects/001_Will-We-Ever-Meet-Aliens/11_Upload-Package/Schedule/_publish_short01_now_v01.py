@@ -252,7 +252,7 @@ def main():
             target.pop("action_required", None)
             INDEX_PATH.write_text(json.dumps(INDEX, indent=2) + "\n")
 
-            # Mirror to TikTok + Meta (IG Reels / FB Reels)
+            # Mirror to TikTok + Meta (IG/FB) + Threads
             try:
                 import importlib.util
                 from pathlib import Path as _P
@@ -276,6 +276,11 @@ def main():
                 )
                 result["meta"] = mr
                 print(f"meta → {mr.get('status')}", flush=True)
+                thr = _load_notify(_base / "Threads" / "auto", "orbit_threads_hooks")(
+                    ROOT, target
+                )
+                result["threads"] = thr
+                print(f"threads → {thr.get('status')}", flush=True)
                 OUT.write_text(json.dumps(result, indent=2) + "\n")
             except Exception as e:
                 print("social mirror hooks skipped:", e, flush=True)
