@@ -208,8 +208,115 @@
       "tt_id": "bh-noreturn",
       "when": "2026-08-10T12:30:00+01:00",
       "mode": "scheduled"
+    },
+    "tt:aliens-01": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v02.mp4",
+      "when": "2026-08-03T01:23:01.887583+01:00",
+      "mode": "scheduled",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "1HuV8o3gOss",
+      "caption": "Where Is Everybody? The Fermi Paradox. Are we alone in the universe? Full film on YouTube. #FermiParadox #AreWeAlone #Space #Shorts #OrbitWithBen",
+      "replaced_at": "2026-08-03T00:19:34.255567+01:00"
+    },
+    "tt:aliens-04": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-04_hidden-clues_v02.mp4",
+      "when": "2026-08-03T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "KcKBixwmcV4",
+      "replaced_at": "2026-08-03T00:33:13.128136+01:00"
+    },
+    "tt:blackhole-01": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-01_event-horizon_v02.mp4",
+      "when": "2026-08-05T21:00:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "2777WlMGM8M",
+      "replaced_at": "2026-08-03T00:33:42.545869+01:00"
+    },
+    "tt:blackhole-02": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-02_spaghettification_v02.mp4",
+      "when": "2026-08-06T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "jyzrl9ueKq4",
+      "replaced_at": "2026-08-03T00:34:12.661605+01:00"
+    },
+    "tt:blackhole-03": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-03_time-dilation_v02.mp4",
+      "when": "2026-08-07T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "HvAKGjx4lv0",
+      "replaced_at": "2026-08-03T00:34:42.605849+01:00"
+    },
+    "tt:blackhole-04": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-04_look-back_v02.mp4",
+      "when": "2026-08-08T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "t1hTGIH8O44",
+      "replaced_at": "2026-08-03T00:35:13.832061+01:00"
+    },
+    "tt:blackhole-05": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-05_photon-sphere_v02.mp4",
+      "when": "2026-08-09T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "icedH_gK8JE",
+      "replaced_at": "2026-08-03T00:35:43.857631+01:00"
+    },
+    "tt:blackhole-06": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-06_point-of-no-return_v02.mp4",
+      "when": "2026-08-10T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "5jjJ5CHrbCs",
+      "replaced_at": "2026-08-03T00:36:13.503696+01:00"
+    },
+    "tt:exoplanets-01": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/10_Shorts/06_Final-Exports/exoplanets_short-01_glass-rain_v02.mp4",
+      "when": "2026-08-21T21:00:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "ho9VJxp7f3A",
+      "replaced_at": "2026-08-03T00:36:44.708375+01:00"
+    },
+    "tt:exoplanets-03": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/10_Shorts/06_Final-Exports/exoplanets_short-03_three-suns_v02.mp4",
+      "when": "2026-08-23T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "6QFGAFZk264",
+      "replaced_at": "2026-08-03T00:37:56.622124+01:00"
+    },
+    "tt:exoplanets-04": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/10_Shorts/06_Final-Exports/exoplanets_short-04_hot-jupiter_v02.mp4",
+      "when": "2026-08-24T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "eOOFVrJ2Ojc",
+      "replaced_at": "2026-08-03T00:38:28.316627+01:00"
+    },
+    "tt:exoplanets-05": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/10_Shorts/06_Final-Exports/exoplanets_short-05_eyeball_v02.mp4",
+      "when": "2026-08-25T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "Web2otrTcT0",
+      "replaced_at": "2026-08-03T00:38:58.183607+01:00"
+    },
+    "tt:exoplanets-06": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/10_Shorts/06_Final-Exports/exoplanets_short-06_habitability_v02.mp4",
+      "when": "2026-08-26T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "1qts3tIsg9c",
+      "replaced_at": "2026-08-03T00:39:29.368315+01:00"
+    },
+    "tt:aliens-03": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4",
+      "when": "2026-08-03T01:54:43.609955+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "rFJoOdQAc9c",
+      "replaced_at": "2026-08-03T00:40:15.915271+01:00"
+    },
+    "tt:exoplanets-02": {
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/10_Shorts/06_Final-Exports/exoplanets_short-02_diamond_v02.mp4",
+      "when": "2026-08-22T12:30:00+01:00",
+      "caption_style": "finalverdict-yellow-white-v02-punch",
+      "yt_id": "aoR-dA_g7eI",
+      "replaced_at": "2026-08-03T00:40:47.554578+01:00"
     }
   },
-  "updated_at": "2026-08-02T23:38:45.692808+01:00",
-  "mode": "v02_replace"
+  "updated_at": "2026-08-03T00:22:03.748234+01:00",
+  "mode": "missing_v02_upload"
 }
