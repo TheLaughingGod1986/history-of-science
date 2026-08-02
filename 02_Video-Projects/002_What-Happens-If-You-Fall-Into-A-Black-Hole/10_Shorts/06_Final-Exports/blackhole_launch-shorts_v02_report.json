@@ -1,0 +1,42 @@
+{
+  "style": "finalverdict-yellow-white-v02",
+  "source": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/09_Final-Export/blackhole_v04_UPLOAD_READY_MASTER.mp4",
+  "long_url": "https://youtu.be/n7CbJrOCnU0",
+  "shorts": [
+    {
+      "id": "01",
+      "slug": "event-horizon",
+      "start": 762.208,
+      "duration": 42.0,
+      "role": "Hook",
+      "phrases": [
+        "cross this line",
+        "and you never",
+        "come back"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-01_event-horizon_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "42.000000",
+          "size": "17975526"
+        }
+      }
+    }
+  ]
+}

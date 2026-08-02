@@ -112,6 +112,10 @@ Each Short must work as a **complete standalone mini-documentary**.
 4. End with **curiosity**
 5. Naturally encourage the full documentary — without sounding like an ad
 
+### On-screen text (TikTok / Shorts lock)
+
+Mirror the space-doc kinetic style that retains (yellow/white bold lowercase, 1–3 words/beat). Spec: `TikTok/SHORTS_ONSCREEN_TEXT_STYLE.md`. Builders: `*_shorts_v02.py`.
+
 ### Arc (30–60s)
 
 ```

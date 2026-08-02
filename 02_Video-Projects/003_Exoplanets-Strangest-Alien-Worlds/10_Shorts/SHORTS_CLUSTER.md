@@ -4,6 +4,7 @@
 **Channel:** Orbit with Ben · @OrbitWithBen  
 **Cluster:** 6 Shorts · ~40–50s each · **pillar first**  
 **Style:** Same full-CG travelogue as the long — Orbit *in* scene, picture matches VO, Pixar-warm × hard astrophysics  
+**On-screen text:** yellow/white lowercase kinetic captions (`SHORTS_ONSCREEN_TEXT_STYLE.md`) — builders `*_shorts_v02.py`  
 **Strategy:** `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`
 
 ## Publish order (pillar-first)
@@ -39,7 +40,9 @@ Do **not** publish any Short before the long is public.
 
 ## Builder (after long master + VO timestamps lock)
 
-Mirror V002: `002_.../10_Shorts/_build_blackhole_shorts_v01.py` → `10_Shorts/_build_exoplanets_shorts_v01.py`
+- v01 (legacy chrome): `_build_exoplanets_shorts_v01.py`
+- **v02 (TikTok kinetic captions):** `_build_exoplanets_shorts_v02.py`  
+  `python3 _build_exoplanets_shorts_v02.py` or pass a slug e.g. `glass-rain`
 
 ## Cutscene rules
 

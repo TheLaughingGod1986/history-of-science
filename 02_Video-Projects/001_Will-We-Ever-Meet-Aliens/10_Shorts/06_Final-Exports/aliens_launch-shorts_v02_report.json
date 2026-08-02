@@ -1,0 +1,42 @@
+{
+  "style": "finalverdict-yellow-white-v02",
+  "source": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/09_Final-Export/aliens_BOLD_EXPLAINER_v17_FINAL_UPLOAD_READY_MASTER.mp4",
+  "long_url": "https://youtu.be/Mo93x0fxB1Q",
+  "shorts": [
+    {
+      "id": "02",
+      "slug": "fermi-paradox",
+      "start": 157.791,
+      "duration": 43.5,
+      "role": "Highlight",
+      "phrases": [
+        "where is",
+        "everybody?",
+        "countless stars\nno clear hello"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "43.500000",
+          "size": "53185819"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "style": "finalverdict-yellow-white-v02",
+  "source": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/09_Final-Export/exoplanets_v02_UPLOAD_READY_MASTER.mp4",
+  "long_url": "https://youtu.be/b8-X_FyJnHM",
+  "shorts": [
+    {
+      "id": "01",
+      "slug": "glass-rain",
+      "start": 436.625,
+      "duration": 44.0,
+      "role": "Hook",
+      "phrases": [
+        "it rains",
+        "glass",
+        "sideways",
+        "5000+ mph\nwinds"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/003_Exoplanets-Strangest-Alien-Worlds/10_Shorts/06_Final-Exports/exoplanets_short-01_glass-rain_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "44.000000",
+          "size": "24160459"
+        }
+      }
+    }
+  ]
+}

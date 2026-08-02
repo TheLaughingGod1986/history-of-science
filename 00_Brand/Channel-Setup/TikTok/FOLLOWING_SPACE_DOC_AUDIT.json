@@ -1,0 +1,44 @@
+{
+  "audited_at": "2026-08-02",
+  "orbit_handle": "orbitwithben",
+  "orbit_following_count_web": 0,
+  "note": "Studio/web shows 0 Following for @orbitwithben. Phone follows (incl. private mind-doc accounts) are not visible via CDP. Style lock uses user screenshots (finalverdict) + public niche samples.",
+  "user_reference": {
+    "handle": "finalverdict",
+    "style": "bold sans lowercase; yellow #FFE600 + white; 1-3 words/beat; soft shadow; no chrome",
+    "example_phrases": [
+      "reality directly",
+      "your",
+      "your / senses / first",
+      "because everything"
+    ],
+    "hook_caption_pattern": "existential one-liner in description (e.g. you are alone inside your own brain...)"
+  },
+  "public_niche_samples": [
+    {
+      "handle": "life_laps_official",
+      "followers": "594.1K",
+      "likes": "18.5M",
+      "onscreen": "lowercase centered captions; minimal chrome; cinematic beds"
+    },
+    {
+      "handle": "mind_lapse1",
+      "followers": "41.9K",
+      "likes": "513.7K",
+      "onscreen": "word-by-word kinetic captions"
+    },
+    {
+      "handle": "actualspace1",
+      "followers": "6854",
+      "likes": "57.2K",
+      "onscreen": "short VO-synced phrases on dark space beds"
+    },
+    {
+      "handle": "factengine6",
+      "followers": "9083",
+      "likes": "119.6K",
+      "onscreen": "fact-hook documentary shorts"
+    }
+  ],
+  "orbit_lock": "00_Brand/Channel-Setup/TikTok/SHORTS_ONSCREEN_TEXT_STYLE.md"
+}
