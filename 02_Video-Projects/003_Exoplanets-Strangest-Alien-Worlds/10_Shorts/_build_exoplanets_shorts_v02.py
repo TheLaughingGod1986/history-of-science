@@ -22,11 +22,14 @@ CAPTION_LIB = Path(
 )
 sys.path.insert(0, str(CAPTION_LIB))
 from onscreen_captions import (  # noqa: E402
+    auto_beats_from_phrases,
     ffmpeg_overlay_filter,
     render_beat_png,
     render_cta_png,
     vertical_base_filter,
 )
+
+SYNC_DIR = ROOT / "10_Shorts/07_Caption-Sync"
 
 SHORTS = [
     {
@@ -35,6 +38,7 @@ SHORTS = [
         "start": 436.625,
         "duration": 44.0,
         "role": "Hook",
+        "hook": "glass",
         "phrases": ["it rains", "glass", "sideways", "5000+ mph\nwinds"],
     },
     {
@@ -43,6 +47,7 @@ SHORTS = [
         "start": 296.625,
         "duration": 42.0,
         "role": "Fact",
+        "hook": "diamond?",
         "phrases": ["a world", "made of", "diamond?"],
     },
     {
@@ -51,6 +56,7 @@ SHORTS = [
         "start": 570.625,
         "duration": 42.0,
         "role": "Scale",
+        "hook": "three suns",
         "phrases": ["three suns", "in the sky", "triple shadows"],
     },
     {
@@ -59,6 +65,7 @@ SHORTS = [
         "start": 698.75,
         "duration": 42.0,
         "role": "Orbit",
+        "hook": "hottest",
         "phrases": ["the hottest", "nights", "in the data"],
     },
     {
@@ -67,6 +74,7 @@ SHORTS = [
         "start": 826.875,
         "duration": 43.0,
         "role": "Visual",
+        "hook": "eyeball",
         "phrases": ["eyeball", "planets", "fire and ice"],
     },
     {
@@ -75,6 +83,7 @@ SHORTS = [
         "start": 976.875,
         "duration": 44.0,
         "role": "Deeper",
+        "hook": "host life?",
         "phrases": ["could any", "host life?", "smell it\nin a spectrum"],
     },
 ]
@@ -84,14 +93,33 @@ def run(cmd: list[str]) -> None:
     subprocess.run(cmd, check=True)
 
 
-def phrases_to_beats(phrases: list[str], duration: float) -> list[dict]:
-    from onscreen_captions import auto_beats_from_phrases
+def resolve_master() -> Path:
+    if MASTER.exists():
+        return MASTER
+    raise SystemExit(f"Missing exoplanets master: {MASTER}")
 
+
+def resolve_beats(item: dict) -> list[dict]:
+    sync = SYNC_DIR / f"exoplanets_short-{item['id']}_{item['slug']}_beats.json"
+    if sync.exists():
+        data = json.loads(sync.read_text())
+        beats = data.get("beats") or []
+        if beats:
+            return beats
+    return auto_beats_from_phrases(
+        item["phrases"],
+        duration=item["duration"],
+        hook_end=8.0,
+        punch_first_hook=item.get("hook") or True,
+    )
+
+
+def phrases_to_beats(phrases: list[str], duration: float) -> list[dict]:
     return auto_beats_from_phrases(phrases, duration=duration, hook_end=8.0)
 
 
 def render(item: dict, temp: Path) -> Path:
-    beats = phrases_to_beats(item["phrases"], item["duration"])
+    beats = resolve_beats(item)
     beat_paths: list[Path] = []
     for i, beat in enumerate(beats):
         p = temp / f"short-{item['id']}-beat-{i:02d}.png"

@@ -9,6 +9,7 @@
       "start": 21.65,
       "duration": 40.0,
       "role": "Discovery",
+      "hook": "space is rude",
       "phrases": [
         "space is rude",
         "about distance",
@@ -34,7 +35,7 @@
         ],
         "format": {
           "duration": "40.000000",
-          "size": "25455676"
+          "size": "25463534"
         }
       }
     },
@@ -44,6 +45,7 @@
       "start": 157.791,
       "duration": 43.5,
       "role": "Highlight",
+      "hook": "everybody?",
       "phrases": [
         "where is",
         "everybody?",
@@ -69,7 +71,7 @@
         ],
         "format": {
           "duration": "43.500000",
-          "size": "53170076"
+          "size": "53097707"
         }
       }
     },
@@ -79,10 +81,11 @@
       "start": 534.251,
       "duration": 43.0,
       "role": "Theory",
+      "hook": "watching?",
       "phrases": [
         "what if",
-        "they're watching",
-        "us?"
+        "they're watching?",
+        "the zoo hypothesis"
       ],
       "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4",
       "probe": {
@@ -104,7 +107,7 @@
         ],
         "format": {
           "duration": "43.000000",
-          "size": "54851163"
+          "size": "54849792"
         }
       }
     },
@@ -114,10 +117,11 @@
       "start": 1041.078,
       "duration": 48.0,
       "role": "Cliffhanger",
+      "hook": "already here?",
       "phrases": [
         "what if the clue",
-        "is already",
-        "here?"
+        "is already here?",
+        "in an archive"
       ],
       "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-04_hidden-clues_v02.mp4",
       "probe": {
@@ -139,7 +143,7 @@
         ],
         "format": {
           "duration": "48.000000",
-          "size": "57432645"
+          "size": "57441083"
         }
       }
     }

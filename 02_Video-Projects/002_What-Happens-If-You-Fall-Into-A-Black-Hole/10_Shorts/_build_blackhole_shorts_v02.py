@@ -29,6 +29,8 @@ from onscreen_captions import (  # noqa: E402
     vertical_base_filter,
 )
 
+SYNC_DIR = ROOT / "10_Shorts/07_Caption-Sync"
+
 SHORTS = [
     {
         "id": "01",
@@ -36,6 +38,7 @@ SHORTS = [
         "start": 762.208,
         "duration": 42.0,
         "role": "Hook",
+        "hook": "cross this line",
         "phrases": ["cross this line", "and you never", "come back"],
     },
     {
@@ -44,6 +47,7 @@ SHORTS = [
         "start": 660.208,
         "duration": 40.0,
         "role": "Fact",
+        "hook": "wouldn't feel",
         "phrases": ["falling in", "wouldn't feel", "like falling"],
     },
     {
@@ -52,6 +56,7 @@ SHORTS = [
         "start": 553.083,
         "duration": 42.0,
         "role": "Scale",
+        "hook": "time stops",
         "phrases": ["time stops", "at the edge", "for them"],
     },
     {
@@ -60,6 +65,7 @@ SHORTS = [
         "start": 792.083,
         "duration": 40.0,
         "role": "Orbit",
+        "hook": "look back?",
         "phrases": ["would you", "look back?"],
     },
     {
@@ -68,6 +74,7 @@ SHORTS = [
         "start": 382.417,
         "duration": 42.0,
         "role": "Visual",
+        "hook": "eyes would",
         "phrases": ["what your", "eyes would", "see"],
     },
     {
@@ -76,6 +83,7 @@ SHORTS = [
         "start": 275.167,
         "duration": 43.0,
         "role": "Deeper",
+        "hook": "no return",
         "phrases": ["the point of", "no return", "explained"],
     },
 ]
@@ -85,8 +93,29 @@ def run(cmd: list[str]) -> None:
     subprocess.run(cmd, check=True)
 
 
+def resolve_master() -> Path:
+    if MASTER.exists():
+        return MASTER
+    raise SystemExit(f"Missing blackhole master: {MASTER}")
+
+
+def resolve_beats(item: dict) -> list[dict]:
+    sync = SYNC_DIR / f"blackhole_short-{item['id']}_{item['slug']}_beats.json"
+    if sync.exists():
+        data = json.loads(sync.read_text())
+        beats = data.get("beats") or []
+        if beats:
+            return beats
+    return auto_beats_from_phrases(
+        item["phrases"],
+        duration=item["duration"],
+        hook_end=8.0,
+        punch_first_hook=item.get("hook") or True,
+    )
+
+
 def render(item: dict, temp: Path) -> Path:
-    beats = auto_beats_from_phrases(item["phrases"], duration=item["duration"], hook_end=8.0)
+    beats = resolve_beats(item)
     beat_paths: list[Path] = []
     for i, beat in enumerate(beats):
         p = temp / f"short-{item['id']}-beat-{i:02d}.png"

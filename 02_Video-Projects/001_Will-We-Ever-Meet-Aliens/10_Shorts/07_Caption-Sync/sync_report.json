@@ -1,0 +1,34 @@
+{
+  "name": "aliens",
+  "master": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/09_Final-Export/aliens_BOLD_EXPLAINER_v17_FINAL_UPLOAD_READY_MASTER.mp4",
+  "shorts": [
+    {
+      "id": "01",
+      "slug": "distance",
+      "words": 55,
+      "synced": 0,
+      "beats": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/07_Caption-Sync/aliens_short-01_distance_beats.json"
+    },
+    {
+      "id": "02",
+      "slug": "fermi-paradox",
+      "words": 47,
+      "synced": 1,
+      "beats": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/07_Caption-Sync/aliens_short-02_fermi-paradox_beats.json"
+    },
+    {
+      "id": "03",
+      "slug": "zoo-hypothesis",
+      "words": 31,
+      "synced": 0,
+      "beats": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/07_Caption-Sync/aliens_short-03_zoo-hypothesis_beats.json"
+    },
+    {
+      "id": "04",
+      "slug": "hidden-clues",
+      "words": 43,
+      "synced": 0,
+      "beats": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/07_Caption-Sync/aliens_short-04_hidden-clues_beats.json"
+    }
+  ]
+}

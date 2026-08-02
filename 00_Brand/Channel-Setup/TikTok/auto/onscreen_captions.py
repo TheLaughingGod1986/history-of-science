@@ -6,6 +6,8 @@ Used by *_shorts_v02 builders.
 """
 from __future__ import annotations
 
+import json
+import re
 from pathlib import Path
 from typing import Iterable, Sequence
 
@@ -63,19 +65,31 @@ def render_beat_png(
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     font = resolve_font(pointsize)
 
-    # Measure stack
+    # Measure stack — auto-shrink so long hooks stay inside the frame
     probe = ImageDraw.Draw(img)
+    font_size = pointsize
+    cleaned: list[LineSpec] = []
     heights: list[int] = []
     widths: list[int] = []
-    cleaned: list[LineSpec] = []
-    for raw, color in lines:
-        text = " ".join(str(raw).strip().lower().split())
-        if not text:
-            continue
-        tw, th = _text_size(probe, text, font)
-        widths.append(tw)
-        heights.append(th)
-        cleaned.append((text, color))
+    max_w = W - 80
+    while font_size >= 42:
+        font = resolve_font(font_size)
+        cleaned, heights, widths = [], [], []
+        overflow = False
+        for raw, color in lines:
+            text = " ".join(str(raw).strip().lower().split())
+            if not text:
+                continue
+            tw, th = _text_size(probe, text, font)
+            if tw > max_w:
+                overflow = True
+                break
+            widths.append(tw)
+            heights.append(th)
+            cleaned.append((text, color))
+        if not overflow and cleaned:
+            break
+        font_size -= 6
     if not cleaned:
         img.save(path)
         return path
@@ -138,36 +152,304 @@ def render_cta_png(
     )
 
 
+def punch_first(phrases: Iterable[str], *, hook: str | None = None) -> list[str]:
+    """Put the monster hook first — strongest phrase leads the first 1–2s.
+
+    If ``hook`` is provided, that phrase (case-insensitive match) is moved to index 0.
+    Otherwise the phrase with the most visceral tokens / question mark wins.
+    """
+    items = [str(p).strip() for p in phrases if str(p).strip()]
+    if len(items) <= 1:
+        return items
+
+    if hook:
+        hook_l = hook.strip().lower()
+        # Prefer exact / phrase-contains-hook over hook-contains-phrase
+        # (avoids hook "never come back" selecting bare "come back")
+        for i, p in enumerate(items):
+            pl = p.lower()
+            if pl == hook_l or hook_l in pl:
+                return [items[i]] + items[:i] + items[i + 1 :]
+        for i, p in enumerate(items):
+            pl = p.lower()
+            if pl and pl in hook_l and len(pl) >= 8:
+                return [items[i]] + items[:i] + items[i + 1 :]
+
+    visceral = (
+        "never",
+        "everybody",
+        "watching",
+        "glass",
+        "diamond",
+        "die",
+        "alone",
+        "stop",
+        "cross",
+        "look back",
+        "clue",
+        "life?",
+        "rude",
+        "sideways",
+        "eyeball",
+        "no return",
+        "?",
+    )
+
+    def score(p: str) -> tuple[int, int, int]:
+        pl = p.lower()
+        hit = sum(1 for v in visceral if v in pl)
+        q = 1 if "?" in p else 0
+        # Prefer punchy length (2–4 words) over long explainers
+        n = len(re.findall(r"[a-z0-9']+", pl))
+        length_bonus = 2 if 1 <= n <= 4 else (1 if n <= 6 else 0)
+        return (hit + q * 2 + length_bonus, -n, -len(p))
+
+    ranked = sorted(range(len(items)), key=lambda i: score(items[i]), reverse=True)
+    best = ranked[0]
+    if best == 0:
+        return items
+    return [items[best]] + items[:best] + items[best + 1 :]
+
+
+def _phrase_lines(phrase: str, *, beat_index: int) -> list[LineSpec]:
+    parts = [x.strip() for x in str(phrase).replace("\\n", "\n").split("\n") if x.strip()]
+    lines: list[LineSpec] = []
+    for j, part in enumerate(parts):
+        color: ColorName = "yellow" if (beat_index + j) % 2 == 0 else "white"
+        lines.append((part, color))
+    return lines
+
+
 def auto_beats_from_phrases(
     phrases: Iterable[str],
     *,
     duration: float,
     hook_end: float = 7.0,
+    punch_first_hook: bool | str = True,
 ) -> list[dict]:
     """Split a list of short phrases across the opening hook window.
 
     Each phrase becomes one beat. Multi-word phrases can include ``\\n`` for stacked lines.
     Colors alternate yellow → white → yellow…
+
+    ``punch_first_hook``: True = auto-rank monster hook first; str = force that phrase first;
+    False = keep author order.
     """
     items = [p for p in phrases if str(p).strip()]
     if not items:
         return []
+    if punch_first_hook is True:
+        items = punch_first(items)
+    elif isinstance(punch_first_hook, str) and punch_first_hook.strip():
+        items = punch_first(items, hook=punch_first_hook)
+
     window = min(max(hook_end, 3.0), max(duration - 4.5, 3.0))
-    slot = window / len(items)
+    # First beat gets a slightly longer dwell (stop-the-scroll)
+    if len(items) == 1:
+        weights = [1.0]
+    else:
+        weights = [1.35] + [1.0] * (len(items) - 1)
+    total_w = sum(weights)
     beats: list[dict] = []
     t = 0.0
     for i, phrase in enumerate(items):
-        parts = [x.strip() for x in str(phrase).replace("\\n", "\n").split("\n") if x.strip()]
-        lines: list[LineSpec] = []
-        for j, part in enumerate(parts):
-            # First line of each beat starts yellow; alternate within stack
-            base = i + j
-            color: ColorName = "yellow" if base % 2 == 0 else "white"
-            lines.append((part, color))
-        t1 = window if i == len(items) - 1 else min(t + slot, window)
+        lines = _phrase_lines(phrase, beat_index=i)
+        span = window * (weights[i] / total_w)
+        t1 = window if i == len(items) - 1 else min(t + span, window)
         beats.append({"start": round(t, 3), "end": round(t1, 3), "lines": lines})
         t = t1
     return beats
+
+
+def _norm_token(s: str) -> str:
+    return re.sub(r"[^a-z0-9']+", "", s.lower())
+
+
+def align_phrases_to_words(
+    phrases: Iterable[str],
+    words: Sequence[dict],
+    *,
+    duration: float,
+    hook_end: float = 8.0,
+    punch_first_hook: bool | str = True,
+    min_dwell: float = 0.85,
+    pad_after: float = 0.15,
+) -> list[dict]:
+    """Build caption beats timed to VO word timestamps (ElevenLabs Scribe shape).
+
+    Each word dict needs ``text`` / ``start`` / ``end``. Phrases are matched by
+    token subsequence; unmatched phrases fall back to even spacing in leftover gaps.
+    """
+    items = [p for p in phrases if str(p).strip()]
+    if not items:
+        return []
+    if punch_first_hook is True:
+        items = punch_first(items)
+    elif isinstance(punch_first_hook, str) and punch_first_hook.strip():
+        items = punch_first(items, hook=punch_first_hook)
+
+    window = min(max(hook_end, 3.0), max(duration - 4.5, 3.0))
+    clean_words: list[dict] = []
+    for w in words:
+        if w.get("type") and w.get("type") != "word":
+            continue
+        text = _norm_token(str(w.get("text") or ""))
+        if not text:
+            continue
+        clean_words.append(
+            {
+                "text": text,
+                "start": float(w.get("start", 0)),
+                "end": float(w.get("end", w.get("start", 0))),
+            }
+        )
+
+    # Always lead with the monster hook on-screen (stop-scroll), even if VO
+    # says that line later. Remaining phrases try VO alignment after the hook.
+    hook_dwell = min(2.0, max(1.2, window / max(len(items), 1)))
+    beats: list[dict] = [
+        {
+            "start": 0.0,
+            "end": round(hook_dwell, 3),
+            "lines": _phrase_lines(items[0], beat_index=0),
+            "synced": False,
+            "punch": True,
+        }
+    ]
+
+    if len(items) == 1 or not clean_words:
+        if len(items) > 1:
+            rest = auto_beats_from_phrases(
+                items[1:],
+                duration=duration,
+                hook_end=hook_end,
+                punch_first_hook=False,
+            )
+            # Shift rest into the remaining window
+            for i, b in enumerate(rest):
+                span = b["end"] - b["start"]
+                start = max(hook_dwell, b["start"] + hook_dwell * 0.0)
+                # remap evenly after hook
+                slot = (window - hook_dwell) / len(rest)
+                start = hook_dwell + i * slot
+                end = window if i == len(rest) - 1 else start + slot
+                beats.append(
+                    {
+                        "start": round(start, 3),
+                        "end": round(end, 3),
+                        "lines": _phrase_lines(items[i + 1], beat_index=i + 1),
+                        "synced": False,
+                    }
+                )
+        return beats
+
+    word_tokens = [w["text"] for w in clean_words]
+    used_until = -1
+
+    def find_phrase(phrase: str, start_at: int) -> tuple[int, float, float] | None:
+        tokens = [_norm_token(t) for t in re.findall(r"[A-Za-z0-9']+", phrase)]
+        tokens = [t for t in tokens if t]
+        if not tokens:
+            return None
+        for i in range(start_at, len(word_tokens) - len(tokens) + 1):
+            if word_tokens[i : i + len(tokens)] == tokens:
+                return (i, clean_words[i]["start"], clean_words[i + len(tokens) - 1]["end"])
+        if len(tokens) >= 2:
+            first, last = tokens[0], tokens[-1]
+            for i, tok in enumerate(word_tokens):
+                if i < start_at or tok != first:
+                    continue
+                for j in range(i, min(i + len(tokens) + 4, len(word_tokens))):
+                    if word_tokens[j] == last:
+                        return (i, clean_words[i]["start"], clean_words[j]["end"])
+        for tok in sorted(tokens, key=len, reverse=True):
+            if len(tok) < 4:
+                continue
+            for i in range(start_at, len(word_tokens)):
+                if word_tokens[i] == tok:
+                    return (i, clean_words[i]["start"], clean_words[i]["end"])
+        return None
+
+    # If the punch phrase also appears in VO, mark punch beat synced but keep t=0
+    punch_hit = find_phrase(items[0], 0)
+    if punch_hit:
+        beats[0]["synced"] = True
+        used_until = punch_hit[0]
+
+    rest_count = len(items) - 1
+    if rest_count == 0:
+        return beats
+
+    # Collect VO hits for remaining phrases (must be after hook_dwell when possible)
+    hits: list[tuple[float, float] | None] = []
+    for phrase in items[1:]:
+        found = find_phrase(phrase, max(0, used_until + 1))
+        if found is None:
+            found = find_phrase(phrase, 0)
+        if found:
+            used_until = max(used_until, found[0])
+            ws, we = found[1], found[2]
+            # Clamp into post-hook window; if VO said it during punch, place just after
+            start = max(hook_dwell, min(ws, window - min_dwell))
+            end = max(start + min_dwell, min(we + pad_after, window))
+            hits.append((start, end))
+        else:
+            hits.append(None)
+
+    # Fill missing with even spacing in leftover gaps
+    missing = sum(1 for h in hits if h is None)
+    slot = (window - hook_dwell) / max(rest_count, 1)
+    cursor = hook_dwell
+    for i, phrase in enumerate(items[1:]):
+        if hits[i] is not None:
+            start, end = hits[i]  # type: ignore[misc]
+            start = max(start, cursor)
+            if end <= start:
+                end = min(start + min_dwell, window)
+            beats.append(
+                {
+                    "start": round(start, 3),
+                    "end": round(end, 3),
+                    "lines": _phrase_lines(phrase, beat_index=i + 1),
+                    "synced": True,
+                }
+            )
+            cursor = end
+        else:
+            start = max(cursor, hook_dwell + i * slot)
+            end = window if i == rest_count - 1 else min(start + slot, window)
+            beats.append(
+                {
+                    "start": round(start, 3),
+                    "end": round(end, 3),
+                    "lines": _phrase_lines(phrase, beat_index=i + 1),
+                    "synced": False,
+                }
+            )
+            cursor = end
+
+    # Resolve forward overlaps only (preserve punch-first order)
+    for i in range(1, len(beats)):
+        if beats[i]["start"] < beats[i - 1]["end"]:
+            beats[i]["start"] = round(beats[i - 1]["end"], 3)
+            if beats[i]["end"] <= beats[i]["start"]:
+                beats[i]["end"] = round(min(beats[i]["start"] + min_dwell, window), 3)
+    return beats
+
+
+def load_words_json(path: Path) -> list[dict]:
+    """Load Scribe/STT JSON — accepts raw words list or ``{words: [...]}``."""
+    data = json.loads(Path(path).read_text())
+    if isinstance(data, list):
+        return data
+    if isinstance(data, dict):
+        for key in ("words", "alignment", "tokens"):
+            if isinstance(data.get(key), list):
+                return data[key]
+        tr = data.get("transcription") or data.get("result") or {}
+        if isinstance(tr, dict) and isinstance(tr.get("words"), list):
+            return tr["words"]
+    return []
 
 
 def ffmpeg_overlay_filter(

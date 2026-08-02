@@ -1,0 +1,47 @@
+{
+  "phrases": [
+    "space is rude",
+    "about distance",
+    "even a hello\ntakes forever"
+  ],
+  "beats": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "lines": [
+        [
+          "space is rude",
+          "yellow"
+        ]
+      ],
+      "synced": false,
+      "punch": true
+    },
+    {
+      "start": 2.0,
+      "end": 5.0,
+      "lines": [
+        [
+          "about distance",
+          "white"
+        ]
+      ],
+      "synced": false
+    },
+    {
+      "start": 5.0,
+      "end": 8.0,
+      "lines": [
+        [
+          "even a hello",
+          "yellow"
+        ],
+        [
+          "takes forever",
+          "white"
+        ]
+      ],
+      "synced": false
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "phrases": [
+    "time stops",
+    "at the edge",
+    "for them"
+  ],
+  "beats": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "lines": [
+        [
+          "time stops",
+          "yellow"
+        ]
+      ],
+      "synced": false,
+      "punch": true
+    },
+    {
+      "start": 2.0,
+      "end": 5.0,
+      "lines": [
+        [
+          "at the edge",
+          "white"
+        ]
+      ],
+      "synced": false
+    },
+    {
+      "start": 5.0,
+      "end": 8.0,
+      "lines": [
+        [
+          "for them",
+          "yellow"
+        ]
+      ],
+      "synced": false
+    }
+  ],
+  "synced": 0,
+  "total": 3,
+  "mode": "vo-aligned",
+  "hook": "time stops"
+}

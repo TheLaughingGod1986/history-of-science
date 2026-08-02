@@ -37,6 +37,8 @@ from onscreen_captions import (  # noqa: E402
     vertical_base_filter,
 )
 
+SYNC_DIR = ROOT / "10_Shorts/07_Caption-Sync"
+
 SHORTS = [
     {
         "id": "01",
@@ -44,6 +46,7 @@ SHORTS = [
         "start": 21.650,
         "duration": 40.000,
         "role": "Discovery",
+        "hook": "space is rude",
         "phrases": ["space is rude", "about distance", "even a hello\ntakes forever"],
     },
     {
@@ -52,6 +55,7 @@ SHORTS = [
         "start": 157.791,
         "duration": 43.500,
         "role": "Highlight",
+        "hook": "everybody?",
         "phrases": ["where is", "everybody?", "countless stars\nno clear hello"],
     },
     {
@@ -60,7 +64,8 @@ SHORTS = [
         "start": 534.251,
         "duration": 43.000,
         "role": "Theory",
-        "phrases": ["what if", "they're watching", "us?"],
+        "hook": "watching?",
+        "phrases": ["what if", "they're watching?", "the zoo hypothesis"],
     },
     {
         "id": "04",
@@ -68,7 +73,8 @@ SHORTS = [
         "start": 1041.078,
         "duration": 48.000,
         "role": "Cliffhanger",
-        "phrases": ["what if the clue", "is already", "here?"],
+        "hook": "already here?",
+        "phrases": ["what if the clue", "is already here?", "in an archive"],
     },
 ]
 
@@ -77,8 +83,23 @@ def run(cmd: list[str]) -> None:
     subprocess.run(cmd, check=True)
 
 
+def resolve_beats(item: dict) -> list[dict]:
+    sync = SYNC_DIR / f"aliens_short-{item['id']}_{item['slug']}_beats.json"
+    if sync.exists():
+        data = json.loads(sync.read_text())
+        beats = data.get("beats") or []
+        if beats:
+            return beats
+    return auto_beats_from_phrases(
+        item["phrases"],
+        duration=item["duration"],
+        hook_end=8.0,
+        punch_first_hook=item.get("hook") or True,
+    )
+
+
 def render(item: dict, temp: Path, master: Path) -> Path:
-    beats = auto_beats_from_phrases(item["phrases"], duration=item["duration"], hook_end=8.0)
+    beats = resolve_beats(item)
     beat_paths: list[Path] = []
     for i, beat in enumerate(beats):
         p = temp / f"short-{item['id']}-beat-{i:02d}.png"

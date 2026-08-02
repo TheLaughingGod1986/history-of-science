@@ -9,6 +9,7 @@
       "start": 762.208,
       "duration": 42.0,
       "role": "Hook",
+      "hook": "cross this line",
       "phrases": [
         "cross this line",
         "and you never",
@@ -34,7 +35,7 @@
         ],
         "format": {
           "duration": "42.000000",
-          "size": "17977748"
+          "size": "17963066"
         }
       }
     },
@@ -44,6 +45,7 @@
       "start": 660.208,
       "duration": 40.0,
       "role": "Fact",
+      "hook": "wouldn't feel",
       "phrases": [
         "falling in",
         "wouldn't feel",
@@ -69,7 +71,7 @@
         ],
         "format": {
           "duration": "40.000000",
-          "size": "17463206"
+          "size": "17454687"
         }
       }
     },
@@ -79,6 +81,7 @@
       "start": 553.083,
       "duration": 42.0,
       "role": "Scale",
+      "hook": "time stops",
       "phrases": [
         "time stops",
         "at the edge",
@@ -104,7 +107,7 @@
         ],
         "format": {
           "duration": "42.000000",
-          "size": "18695316"
+          "size": "18684819"
         }
       }
     },
@@ -114,6 +117,7 @@
       "start": 792.083,
       "duration": 40.0,
       "role": "Orbit",
+      "hook": "look back?",
       "phrases": [
         "would you",
         "look back?"
@@ -138,7 +142,7 @@
         ],
         "format": {
           "duration": "40.000000",
-          "size": "24179513"
+          "size": "24200137"
         }
       }
     },
@@ -148,6 +152,7 @@
       "start": 382.417,
       "duration": 42.0,
       "role": "Visual",
+      "hook": "eyes would",
       "phrases": [
         "what your",
         "eyes would",
@@ -173,7 +178,7 @@
         ],
         "format": {
           "duration": "42.000000",
-          "size": "21550273"
+          "size": "21558026"
         }
       }
     },
@@ -183,6 +188,7 @@
       "start": 275.167,
       "duration": 43.0,
       "role": "Deeper",
+      "hook": "no return",
       "phrases": [
         "the point of",
         "no return",
@@ -208,7 +214,7 @@
         ],
         "format": {
           "duration": "43.000000",
-          "size": "19003948"
+          "size": "18999073"
         }
       }
     }

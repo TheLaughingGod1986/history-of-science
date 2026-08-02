@@ -32,12 +32,17 @@ Orbit’s old Shorts overlays used ALL-CAPS white headlines + top/bottom chrome 
 ### Beat pattern
 
 ```
-0.0–2.0s   hook phrase (yellow)
-2.0–4.0s   payoff word (white)
-4.0–7.0s   stacked 2–3 lines (yellow / white / yellow) if needed
-…          then picture + VO breathe; optional mid-beat reminder
-last 4s    soft CTA (white, smaller)
+0.0–1.5s   MONSTER HOOK (yellow) — strongest phrase first
+1.5–4.0s   payoff / mechanism (white)
+4.0–8.0s   stacked 2–3 lines if needed (VO-synced when Scribe map exists)
+…          then picture + VO breathe
+last 4s    soft CTA (white, smaller): watch the full film →
 ```
+
+Punch-first + VO sync: `onscreen_captions.punch_first` / `align_phrases_to_words`.  
+Generate maps: `TikTok/auto/_sync_shorts_caption_beats.py` → `10_Shorts/07_Caption-Sync/`.
+
+Funnel ops: `SHORTS_FUNNEL_AND_CROSSPOST.md` (metrics · monster-hook order · YT then TikTok +1h).
 
 ### Copy rules
 

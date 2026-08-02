@@ -1,0 +1,51 @@
+{
+  "phrases": [
+    "host life?",
+    "could any",
+    "smell it\nin a spectrum"
+  ],
+  "beats": [
+    {
+      "start": 0.0,
+      "end": 3.224,
+      "lines": [
+        [
+          "host life?",
+          "yellow"
+        ]
+      ],
+      "synced": false,
+      "punch": true
+    },
+    {
+      "start": 3.224,
+      "end": 5.612,
+      "lines": [
+        [
+          "could any",
+          "white"
+        ]
+      ],
+      "synced": false
+    },
+    {
+      "start": 5.612,
+      "end": 8.0,
+      "lines": [
+        [
+          "smell it",
+          "yellow"
+        ],
+        [
+          "in a spectrum",
+          "white"
+        ]
+      ],
+      "synced": false
+    }
+  ],
+  "synced": 0,
+  "total": 3,
+  "mode": "punch-first",
+  "hook": "host life?"
+}

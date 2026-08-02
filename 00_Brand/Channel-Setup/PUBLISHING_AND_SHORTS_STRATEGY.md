@@ -116,6 +116,8 @@ Each Short must work as a **complete standalone mini-documentary**.
 
 Mirror the space-doc kinetic style that retains (yellow/white bold lowercase, 1–3 words/beat). Spec: `TikTok/SHORTS_ONSCREEN_TEXT_STYLE.md`. Builders: `*_shorts_v02.py`.
 
+Funnel + cross-post lock: `SHORTS_FUNNEL_AND_CROSSPOST.md` — pin full-film CTA, monster-hook first in the cluster, YouTube at T0 then TikTok at **T0 + 1 hour**.
+
 ### Arc (30–60s)
 
 ```

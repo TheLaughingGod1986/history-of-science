@@ -1,0 +1,47 @@
+{
+  "phrases": [
+    "eyes would",
+    "what your",
+    "see"
+  ],
+  "beats": [
+    {
+      "start": 0.0,
+      "end": 3.224,
+      "lines": [
+        [
+          "eyes would",
+          "yellow"
+        ]
+      ],
+      "synced": false,
+      "punch": true
+    },
+    {
+      "start": 3.224,
+      "end": 5.612,
+      "lines": [
+        [
+          "what your",
+          "white"
+        ]
+      ],
+      "synced": false
+    },
+    {
+      "start": 5.612,
+      "end": 8.0,
+      "lines": [
+        [
+          "see",
+          "yellow"
+        ]
+      ],
+      "synced": false
+    }
+  ],
+  "synced": 0,
+  "total": 3,
+  "mode": "punch-first",
+  "hook": "eyes would"
+}

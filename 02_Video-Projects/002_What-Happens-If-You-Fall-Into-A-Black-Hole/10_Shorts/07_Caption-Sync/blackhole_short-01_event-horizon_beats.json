@@ -1,0 +1,47 @@
+{
+  "phrases": [
+    "cross this line",
+    "and you never",
+    "come back"
+  ],
+  "beats": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "lines": [
+        [
+          "cross this line",
+          "yellow"
+        ]
+      ],
+      "synced": false,
+      "punch": true
+    },
+    {
+      "start": 2.0,
+      "end": 5.0,
+      "lines": [
+        [
+          "and you never",
+          "white"
+        ]
+      ],
+      "synced": false
+    },
+    {
+      "start": 5.0,
+      "end": 8.0,
+      "lines": [
+        [
+          "come back",
+          "yellow"
+        ]
+      ],
+      "synced": false
+    }
+  ],
+  "synced": 0,
+  "total": 3,
+  "mode": "vo-aligned",
+  "hook": "cross this line"
+}

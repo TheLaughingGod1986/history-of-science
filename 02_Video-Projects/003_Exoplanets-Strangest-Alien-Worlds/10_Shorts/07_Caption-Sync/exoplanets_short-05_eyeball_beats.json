@@ -1,0 +1,47 @@
+{
+  "phrases": [
+    "eyeball",
+    "planets",
+    "fire and ice"
+  ],
+  "beats": [
+    {
+      "start": 0.0,
+      "end": 3.224,
+      "lines": [
+        [
+          "eyeball",
+          "yellow"
+        ]
+      ],
+      "synced": false,
+      "punch": true
+    },
+    {
+      "start": 3.224,
+      "end": 5.612,
+      "lines": [
+        [
+          "planets",
+          "white"
+        ]
+      ],
+      "synced": false
+    },
+    {
+      "start": 5.612,
+      "end": 8.0,
+      "lines": [
+        [
+          "fire and ice",
+          "yellow"
+        ]
+      ],
+      "synced": false
+    }
+  ],
+  "synced": 0,
+  "total": 3,
+  "mode": "punch-first",
+  "hook": "eyeball"
+}

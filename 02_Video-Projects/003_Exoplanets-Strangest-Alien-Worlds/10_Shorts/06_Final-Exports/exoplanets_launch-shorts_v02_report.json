@@ -9,6 +9,7 @@
       "start": 436.625,
       "duration": 44.0,
       "role": "Hook",
+      "hook": "glass",
       "phrases": [
         "it rains",
         "glass",
@@ -35,7 +36,7 @@
         ],
         "format": {
           "duration": "44.000000",
-          "size": "24167733"
+          "size": "24176154"
         }
       }
     },
@@ -45,6 +46,7 @@
       "start": 296.625,
       "duration": 42.0,
       "role": "Fact",
+      "hook": "diamond?",
       "phrases": [
         "a world",
         "made of",
@@ -70,7 +72,7 @@
         ],
         "format": {
           "duration": "42.000000",
-          "size": "24488580"
+          "size": "24498686"
         }
       }
     },
@@ -80,6 +82,7 @@
       "start": 570.625,
       "duration": 42.0,
       "role": "Scale",
+      "hook": "three suns",
       "phrases": [
         "three suns",
         "in the sky",
@@ -105,7 +108,7 @@
         ],
         "format": {
           "duration": "42.000000",
-          "size": "12514083"
+          "size": "12506557"
         }
       }
     },
@@ -115,6 +118,7 @@
       "start": 698.75,
       "duration": 42.0,
       "role": "Orbit",
+      "hook": "hottest",
       "phrases": [
         "the hottest",
         "nights",
@@ -140,7 +144,7 @@
         ],
         "format": {
           "duration": "42.000000",
-          "size": "23123853"
+          "size": "23125157"
         }
       }
     },
@@ -150,6 +154,7 @@
       "start": 826.875,
       "duration": 43.0,
       "role": "Visual",
+      "hook": "eyeball",
       "phrases": [
         "eyeball",
         "planets",
@@ -175,7 +180,7 @@
         ],
         "format": {
           "duration": "43.000000",
-          "size": "17212639"
+          "size": "17185142"
         }
       }
     },
@@ -185,6 +190,7 @@
       "start": 976.875,
       "duration": 44.0,
       "role": "Deeper",
+      "hook": "host life?",
       "phrases": [
         "could any",
         "host life?",
@@ -210,7 +216,7 @@
         ],
         "format": {
           "duration": "44.000000",
-          "size": "21904156"
+          "size": "21903162"
         }
       }
     }

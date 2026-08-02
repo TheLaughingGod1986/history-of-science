@@ -17,7 +17,9 @@
       "visibility": "scheduled",
       "published_now": false,
       "caption_style": "finalverdict-yellow-white-v02",
-      "replaced_at": "2026-08-02T22:47:11.448456+01:00"
+      "replaced_at": "2026-08-02T22:47:11.448456+01:00",
+      "pinned_fullfilm_cta": false,
+      "pinned_fullfilm_cta_at": "2026-08-02T23:56:22.870016+01:00"
     },
     {
       "id": "02",
@@ -35,7 +37,9 @@
       "visibility": "scheduled",
       "published_now": false,
       "caption_style": "finalverdict-yellow-white-v02",
-      "replaced_at": "2026-08-02T22:47:11.448456+01:00"
+      "replaced_at": "2026-08-02T22:47:11.448456+01:00",
+      "pinned_fullfilm_cta": false,
+      "pinned_fullfilm_cta_at": "2026-08-02T23:56:35.424773+01:00"
     },
     {
       "id": "03",
