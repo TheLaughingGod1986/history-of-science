@@ -122,12 +122,12 @@ def render_beat_png(
 
 def render_cta_png(
     path: Path,
-    text: str = "full story on youtube →",
+    text: str = "watch the full film →",
     *,
-    pointsize: int = 44,
+    pointsize: int = 48,
     y: int = 1580,
 ) -> Path:
-    """Soft end CTA — lowercase white, no pill card."""
+    """Soft end CTA — lowercase white, no pill card. Funnels to the pillar long."""
     return render_beat_png(
         path,
         [(text, "white")],

@@ -4,6 +4,41 @@
   "long_url": "https://youtu.be/Mo93x0fxB1Q",
   "shorts": [
     {
+      "id": "01",
+      "slug": "distance",
+      "start": 21.65,
+      "duration": 40.0,
+      "role": "Discovery",
+      "phrases": [
+        "space is rude",
+        "about distance",
+        "even a hello\ntakes forever"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-01_distance_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "40.000000",
+          "size": "25455676"
+        }
+      }
+    },
+    {
       "id": "02",
       "slug": "fermi-paradox",
       "start": 157.791,
@@ -34,7 +69,77 @@
         ],
         "format": {
           "duration": "43.500000",
-          "size": "53185819"
+          "size": "53170076"
+        }
+      }
+    },
+    {
+      "id": "03",
+      "slug": "zoo-hypothesis",
+      "start": 534.251,
+      "duration": 43.0,
+      "role": "Theory",
+      "phrases": [
+        "what if",
+        "they're watching",
+        "us?"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "43.000000",
+          "size": "54851163"
+        }
+      }
+    },
+    {
+      "id": "04",
+      "slug": "hidden-clues",
+      "start": 1041.078,
+      "duration": 48.0,
+      "role": "Cliffhanger",
+      "phrases": [
+        "what if the clue",
+        "is already",
+        "here?"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-04_hidden-clues_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "48.000000",
+          "size": "57432645"
         }
       }
     }

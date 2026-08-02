@@ -34,7 +34,181 @@
         ],
         "format": {
           "duration": "42.000000",
-          "size": "17975526"
+          "size": "17977748"
+        }
+      }
+    },
+    {
+      "id": "02",
+      "slug": "spaghettification",
+      "start": 660.208,
+      "duration": 40.0,
+      "role": "Fact",
+      "phrases": [
+        "falling in",
+        "wouldn't feel",
+        "like falling"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-02_spaghettification_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "40.000000",
+          "size": "17463206"
+        }
+      }
+    },
+    {
+      "id": "03",
+      "slug": "time-dilation",
+      "start": 553.083,
+      "duration": 42.0,
+      "role": "Scale",
+      "phrases": [
+        "time stops",
+        "at the edge",
+        "for them"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-03_time-dilation_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "42.000000",
+          "size": "18695316"
+        }
+      }
+    },
+    {
+      "id": "04",
+      "slug": "look-back",
+      "start": 792.083,
+      "duration": 40.0,
+      "role": "Orbit",
+      "phrases": [
+        "would you",
+        "look back?"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-04_look-back_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "40.000000",
+          "size": "24179513"
+        }
+      }
+    },
+    {
+      "id": "05",
+      "slug": "photon-sphere",
+      "start": 382.417,
+      "duration": 42.0,
+      "role": "Visual",
+      "phrases": [
+        "what your",
+        "eyes would",
+        "see"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-05_photon-sphere_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "42.000000",
+          "size": "21550273"
+        }
+      }
+    },
+    {
+      "id": "06",
+      "slug": "point-of-no-return",
+      "start": 275.167,
+      "duration": 43.0,
+      "role": "Deeper",
+      "phrases": [
+        "the point of",
+        "no return",
+        "explained"
+      ],
+      "output": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/10_Shorts/06_Final-Exports/blackhole_short-06_point-of-no-return_v02.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "43.000000",
+          "size": "19003948"
         }
       }
     }
