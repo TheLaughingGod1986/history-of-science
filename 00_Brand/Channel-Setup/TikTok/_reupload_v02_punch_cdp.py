@@ -101,22 +101,38 @@ def main() -> None:
     with sync_playwright() as p:
         browser = p.chromium.connect_over_cdp(CDP)
         ctx = browser.contexts[0]
-        page = ctx.new_page()
-        page.bring_to_front()
 
-        # First pass: delete older dupes for each needle
+        def fresh_page():
+            # Close stray pages that are not TikTok studio to reduce crash surface
+            page = ctx.new_page()
+            page.goto(mod.CONTENT, wait_until="domcontentloaded", timeout=120000)
+            page.wait_for_timeout(3000)
+            page.bring_to_front()
+            return page
+
+        page = fresh_page()
+
+        # Optional light dupe delete — recreate page if browser closes mid-scan
         for item in queue:
             print(f"delete-scan {item['id']} · {item['needle']}", flush=True)
             try:
+                if page.is_closed():
+                    page = fresh_page()
                 d = mod.delete_matching(page, item["needle"])
             except Exception as e:
                 d = {"error": str(e)[:200]}
+                try:
+                    page = fresh_page()
+                except Exception:
+                    pass
             results.append({"id": item["id"], "phase": "delete", "delete": d})
 
         for item in queue:
             print(f"upload {item['id']}…", flush=True)
             row: dict = {"id": item["id"], "phase": "upload"}
             try:
+                if page.is_closed():
+                    page = fresh_page()
                 up = mod.upload_one(page, item)
                 row["upload"] = up
                 row["ok"] = bool(up.get("ok"))
@@ -134,10 +150,15 @@ def main() -> None:
                 row["ok"] = False
                 row["error"] = str(e)[:400]
                 print(f"  → FAIL {e}", flush=True)
+                try:
+                    page = fresh_page()
+                except Exception as e2:
+                    row["reconnect"] = str(e2)[:160]
             results.append(row)
 
         try:
-            page.close()
+            if not page.is_closed():
+                page.close()
         except Exception:
             pass
 

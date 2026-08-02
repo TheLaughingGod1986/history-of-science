@@ -77,6 +77,17 @@ Automation notes:
 
 ---
 
+## Pin / comment blocker
+
+YouTube **rejects comments on Private videos** (“Comments are not supported on private videos”).
+
+Before batch-pinning:
+
+1. Studio → each Short → set **Public** (live cluster) or **Schedule** (future) — never leave replace uploads as Private drafts  
+2. Then run `audits/_visibility_and_pin_shorts.py` or `_pin_all_shorts_fullfilm_cta.py`
+
+---
+
 ## Caption sync
 
 1. `TikTok/auto/_sync_shorts_caption_beats.py` — Scribe word timestamps for each Short hook  
