@@ -1,0 +1,115 @@
+{
+  "mode": "schedule",
+  "ready": true,
+  "sched": {
+    "when": "2026-08-05T21:00:00+01:00",
+    "ok": true,
+    "want": [
+      "21:00",
+      "2026-08-05"
+    ],
+    "opened": true,
+    "before": [
+      "12:15",
+      "2026-08-03"
+    ],
+    "time_clicked": true,
+    "hour": true,
+    "minute": true,
+    "month_nav": {
+      "month": "August",
+      "year": "2026",
+      "nav": [],
+      "header": {
+        "title": "August",
+        "txt": "August / 2026"
+      },
+      "ok": true
+    },
+    "date_pick": "valid:5",
+    "values": [
+      "21:00",
+      "2026-08-05"
+    ]
+  },
+  "url": "https://www.tiktok.com/tiktokstudio/upload?from=upload",
+  "wrong": false,
+  "published": false,
+  "err": "You\u2019ve reached your check limit for today. Try again tomorrow.",
+  "net_after": [
+    {
+      "status": 200,
+      "method": "POST",
+      "url": "https://mcs-va-useast2a.tiktokv.com/list",
+      "body": "{\"e\":0,\"sc\":5,\"tc\":5}"
+    },
+    {
+      "status": 200,
+      "method": "POST",
+      "url": "https://mcs16-normal-no1a.tiktokw.eu/v1/list",
+      "body": "{\"e\":0,\"sc\":3,\"tc\":3}"
+    },
+    {
+      "status": 204,
+      "method": "POST",
+      "url": "https://mon-i18n.tiktokv.com/monitor_browser/collect/batch/?biz_id=oec_seller_add_product",
+      "body": ""
+    },
+    {
+      "status": 200,
+      "method": "POST",
+      "url": "https://www.tiktok.com/tiktok/web/project/post/v1/?app_name=tiktok_web&channel=tiktok_web&device_platform=web&tz_name=Europe%2FLondon&aid=1988&msToken=jQoms0CMmsJAC_bWXXz5q0pBrt5TPti-N31JPwmXhD7Ou1ITi6dDj4hVNUtrvRkRif9gG",
+      "body": "{\"log_pb\":{\"impr_id\":\"20260803105820A35B5A91EEBF7BC9B5F3\"},\"status_code\":21,\"status_msg\":\"Due to multiple Community Guideline violations, you\u2019re temporarily prevented from posting. View details in your app notifications.\"}"
+    },
+    {
+      "status": 200,
+      "method": "POST",
+      "url": "https://mcs-va-useast2a.tiktokv.com/list",
+      "body": "{\"e\":0,\"sc\":4,\"tc\":4}"
+    },
+    {
+      "status": 204,
+      "method": "POST",
+      "url": "https://mon16-normal-no1a.tiktokv.eu/monitor_browser/collect/batch/?biz_id=tiktok_creator",
+      "body": ""
+    },
+    {
+      "status": 200,
+      "method": "POST",
+      "url": "https://mcs16-normal-no1a.tiktokw.eu/v1/list",
+      "body": "{\"e\":0,\"sc\":6,\"tc\":6}"
+    },
+    {
+      "status": 204,
+      "method": "POST",
+      "url": "https://mon-i18n.tiktokv.com/monitor_browser/collect/batch/?biz_id=ucenter_tiktok_zti_sdk",
+      "body": ""
+    },
+    {
+      "status": 204,
+      "method": "POST",
+      "url": "https://mon16-normal-no1a.tiktokv.eu/monitor_browser/collect/batch/?biz_id=tiktok_creator_center",
+      "body": ""
+    },
+    {
+      "status": 204,
+      "method": "POST",
+      "url": "https://mon16-normal-no1a.tiktokv.eu/monitor_browser/collect/batch/?biz_id=tiktok_creator",
+      "body": ""
+    },
+    {
+      "status": 204,
+      "method": "POST",
+      "url": "https://mon16-normal-no1a.tiktokv.eu/monitor_browser/collect/batch/?biz_id=tiktok_creator",
+      "body": ""
+    },
+    {
+      "status": 204,
+      "method": "POST",
+      "url": "https://mon16-normal-no1a.tiktokv.eu/monitor_browser/collect/batch/?biz_id=tiktok_creator_center",
+      "body": ""
+    }
+  ],
+  "studio_has": false,
+  "studio_chars": 815
+}

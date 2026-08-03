@@ -489,6 +489,25 @@ def upload_one(page, item: dict) -> dict:
           return {x:r.x+r.width/2, y:r.y+r.height/2};
         }"""
     )
+    post_api = {"seen": False}
+    def _on_post_api(resp):
+        try:
+            if "project/post" not in resp.url:
+                return
+            post_api["seen"] = True
+            post_api["status"] = resp.status
+            post_api["url"] = resp.url[:220]
+            try:
+                post_api["body"] = resp.json()
+            except Exception:
+                try:
+                    post_api["text"] = resp.text()[:500]
+                except Exception:
+                    pass
+        except Exception:
+            pass
+    page.on("response", _on_post_api)
+
     if not click:
         cta_err = "schedule_cta_missing_or_disabled"
     else:
@@ -531,16 +550,40 @@ def upload_one(page, item: dict) -> dict:
         "block": blk2,
         "toggle": {"first": turn_off, "mid": turn_off2, "pre_cta": turn_off3},
         "cta_err": cta_err,
+        "post_api": post_api,
         "caption": item["caption"][:100],
     }
+
+    # TikTok account restriction (status_code 21) — fail fast, do not claim success.
+    api_body = post_api.get("body") if isinstance(post_api.get("body"), dict) else {}
+    api_code = api_body.get("status_code")
+    api_msg = str(api_body.get("status_msg") or "")
+    if api_code not in (None, 0) or "temporarily prevented from posting" in api_msg.lower():
+        result["ok"] = False
+        result["error"] = "account_posting_restricted"
+        result["status_code"] = api_code
+        result["status_msg"] = api_msg[:300]
+        result["abort"] = True
+        return result
+
     if still_on_upload and "something went wrong" in body(page).lower():
         result["ok"] = False
         result["error"] = "something_went_wrong"
         result["abort"] = True
         return result
 
-    # Verify in Studio (required — click alone is not success)
-    present = studio_has_needle(page, item["needle"])
+    # Verify in Studio on a fresh page (avoids leave-dialog ERR_ABORTED).
+    present = False
+    try:
+        present = studio_has_needle(page, item["needle"])
+    except Exception as e:
+        result["verify_err"] = str(e)[:240]
+        try:
+            page2 = page.context.new_page()
+            present = studio_has_needle(page2, item["needle"])
+            page2.close()
+        except Exception as e2:
+            result["verify_err2"] = str(e2)[:240]
     result["verified"] = present
     result["ok"] = bool(posted and sched.get("ok") and present)
     if posted and sched.get("ok") and not present:

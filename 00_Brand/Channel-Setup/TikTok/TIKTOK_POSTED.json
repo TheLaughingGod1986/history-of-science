@@ -1,7 +1,7 @@
 {
   "version": 1,
   "mode": "scheduled",
-  "updated_at": "2026-08-03T11:52:22.329189+01:00",
+  "updated_at": "2026-08-03T12:00:02.353487+01:00",
   "note": "Studio-confirmed only. TikTok Schedule currently returns platform error for new uploads (2026-08-03).",
   "posted": {
     "yt:1HuV8o3gOss": {
@@ -40,13 +40,10 @@
   },
   "failures": {},
   "platform_block": {
-    "at": "2026-08-03T11:52:22.123893+01:00",
-    "message": "Something went wrong. You can try again or replace it with a different video.",
-    "affects": [
-      "aliens-04",
-      "blackhole-*",
-      "exoplanets-*"
-    ],
-    "retry": "python3 00_Brand/Channel-Setup/TikTok/_tt_upload_one_safe.py --all-remaining"
+    "endpoint": "POST /tiktok/web/project/post/v1/",
+    "status_code": 21,
+    "status_msg": "Due to multiple Community Guideline violations, you\u2019re temporarily prevented from posting. View details in your app notifications.",
+    "at": "2026-08-03T12:00:02.353487+01:00",
+    "ui": "You\u2019ve reached your check limit for today. Try again tomorrow."
   }
 }
