@@ -1,0 +1,47 @@
+{
+  "ig_suite": [
+    {
+      "status": "no_file_input",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v02.mp4",
+      "caption": "Where Is Everybody? Full film on YouTube. https://youtu.be/Mo93x0fxB1Q #space #orbitwithben #reels",
+      "needle": "everybody",
+      "port": 9222,
+      "url": "https://business.facebook.com/latest/reels_composer?asset_id=1251385088056874&business_id=1203116147241086",
+      "key": "everybody"
+    },
+    {
+      "status": "no_file_input",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-01_distance_v02.mp4",
+      "caption": "Space Is Rude About Distance. Full film on YouTube. https://youtu.be/Mo93x0fxB1Q #space #orbitwithben #reels",
+      "needle": "distance",
+      "port": 9222,
+      "url": "https://business.facebook.com/latest/reels_composer?asset_id=1251385088056874&business_id=1203116147241086",
+      "key": "distance"
+    },
+    {
+      "status": "no_file_input",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4",
+      "caption": "What If Aliens Are Watching Us? Full film on YouTube. https://youtu.be/Mo93x0fxB1Q #space #orbitwithben #reels",
+      "needle": "watching",
+      "port": 9222,
+      "url": "https://business.facebook.com/latest/reels_composer?asset_id=1251385088056874&business_id=1203116147241086",
+      "key": "watching"
+    }
+  ],
+  "threads_check": {
+    "everybody": false,
+    "distance": false,
+    "watching": false,
+    "clue": false,
+    "snip": "For you New thread Search Messages Activity Profile Insights Saved Feeds Edit Following Ghost posts More orbitwithben Orbit with Ben orbitwithben Space stories. Big questions. Full films on YouTube \u2193 youtube.com/@OrbitWithBen 1 follower Edit profile Threads Replies Media Reposts No replies yet. \u00a9 2026 Threads Terms Privacy Policy Cookies Policy"
+  },
+  "tiktok": {
+    "limited": false,
+    "url": "https://www.tiktok.com/tiktokstudio/upload?from=upload",
+    "snip": "Upload MANAGE Home Posts View analytics Comments GROWTH Inspiration Creator Academy TOOLS Monetisation Royalty-free sounds Smart Split OTHERS Share feedback Back to TikTok 1 long video, multiple viral clips Be as productive as a professional team with Smart Split to turn your long videos into shareable clips with just one click. Try now Videos Photos A video you were editing wasn\u2019t saved. Continue editing? Discard Continue Select video to upload Or drag and drop it here Select video Size and dur",
+    "posted_attempt": true
+  }
+}

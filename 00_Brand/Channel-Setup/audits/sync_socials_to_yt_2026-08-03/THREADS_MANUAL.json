@@ -1,0 +1,20 @@
+{
+  "results": [
+    {
+      "status": "clicked",
+      "title": "Where Is Everybody?",
+      "key": "everybody"
+    },
+    {
+      "status": "clicked",
+      "title": "Space Is Rude About Distance",
+      "key": "distance"
+    }
+  ],
+  "verify": {
+    "everybody": false,
+    "distance": false,
+    "watching": true,
+    "clue": true
+  }
+}

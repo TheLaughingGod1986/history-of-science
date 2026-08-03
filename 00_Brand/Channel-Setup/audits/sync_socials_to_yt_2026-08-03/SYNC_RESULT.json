@@ -1,0 +1,111 @@
+{
+  "at": "2026-08-03T13:00:02.212513+01:00",
+  "privatize": [
+    {
+      "id": "UWwNKYf_aU8",
+      "ok": true,
+      "hit": null,
+      "saved": true,
+      "chip_private": true,
+      "body_has_private": true,
+      "body_has_public": false
+    },
+    {
+      "id": "MO19iXYCu0c",
+      "ok": true,
+      "hit": null,
+      "saved": true,
+      "chip_private": true,
+      "body_has_private": true,
+      "body_has_public": false
+    }
+  ],
+  "fb": [
+    {
+      "key": "everybody",
+      "status": "ok",
+      "clicked": true,
+      "still": false
+    },
+    {
+      "key": "distance",
+      "status": "ok",
+      "clicked": true,
+      "still": false
+    },
+    {
+      "key": "watching",
+      "status": "ok",
+      "clicked": true,
+      "still": false
+    },
+    {
+      "key": "clue",
+      "status": "ok",
+      "clicked": true,
+      "still": false
+    }
+  ],
+  "ig": [
+    {
+      "key": "everybody",
+      "status": "ok",
+      "shared": true
+    },
+    {
+      "key": "distance",
+      "status": "ok",
+      "shared": true
+    },
+    {
+      "key": "watching",
+      "status": "ok",
+      "shared": true
+    },
+    {
+      "key": "clue",
+      "status": "skip_have"
+    }
+  ],
+  "threads": [
+    {
+      "key": "everybody",
+      "status": "error",
+      "error": "post_short() got an unexpected keyword argument 'port'"
+    },
+    {
+      "key": "distance",
+      "status": "error",
+      "error": "post_short() got an unexpected keyword argument 'port'"
+    },
+    {
+      "key": "watching",
+      "status": "error",
+      "error": "post_short() got an unexpected keyword argument 'port'"
+    },
+    {
+      "key": "clue",
+      "status": "error",
+      "error": "post_short() got an unexpected keyword argument 'port'"
+    }
+  ],
+  "tiktok": [
+    {
+      "key": "everybody",
+      "status": "skip_have"
+    },
+    {
+      "key": "distance",
+      "status": "skip_have"
+    },
+    {
+      "key": "watching",
+      "status": "skip_have"
+    },
+    {
+      "key": "clue",
+      "status": "error",
+      "error": "Page.goto: net::ERR_ABORTED at https://www.tiktok.com/tiktokstudio/content\nCall log:\n  - navigating to \"https://www.tiktok.com/tiktokstudio/content\", waiting until \"domcontentloaded\"\n"
+    }
+  ]
+}
