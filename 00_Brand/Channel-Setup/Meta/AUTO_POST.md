@@ -72,4 +72,5 @@ python3 live_shorts_to_meta.py --check-creds
 
 - Soft CTA only: “Full film on YouTube.”
 - Instagram must be a **professional** account linked to the Facebook Page.
+- Future `schedule_iso` wins over stale `published_now` / `visibility: public` in the index (`discover.is_live`) — same rule as TikTok. Do not mirror until YouTube actually goes live.
 - Unload: `launchctl unload ~/Library/LaunchAgents/dev.orbit.meta-live-shorts.plist`

@@ -39,16 +39,20 @@ def is_posted(short: dict, *, platform: str | None = None) -> bool:
     entry = data.get("posted", {}).get(key_for(short))
     if not entry:
         return False
+    done = {"ok", "skipped", "seeded", "disabled", "scheduled"}
     if platform:
-        return bool(entry.get(platform) or entry.get("status") == "seeded")
+        if entry.get("status") == "seeded":
+            return True
+        plat = entry.get(platform)
+        return bool(plat) and plat.get("status") in done
     # Umbrella seed
     if entry.get("status") == "seeded":
         return True
     ig = entry.get("instagram")
     fb = entry.get("facebook")
     # If either platform recorded ok/skipped intentionally, treat as done for that side
-    ig_done = bool(ig) and ig.get("status") in {"ok", "skipped", "seeded", "disabled"}
-    fb_done = bool(fb) and fb.get("status") in {"ok", "skipped", "seeded", "disabled"}
+    ig_done = bool(ig) and ig.get("status") in done
+    fb_done = bool(fb) and fb.get("status") in done
     # Complete when both sides have a terminal status
     return ig_done and fb_done
 

@@ -50,12 +50,19 @@ def _parse_iso(value: str | None) -> datetime | None:
 
 
 def is_live(short: dict, *, now: datetime | None = None) -> bool:
+    """True when the short should be mirrored to Threads.
+
+    Future ``schedule_iso`` always wins over stale public / published_now flags.
+    Matches TikTok ``discover.is_live``.
+    """
     now = now or datetime.now(LONDON)
-    if short.get("published_now") is True:
+    sched = _parse_iso(short.get("schedule_iso"))
+    if sched and now < sched + timedelta(minutes=SCHEDULE_GRACE_MIN):
+        return False
+    if short.get("published_now") is True and not sched:
         return True
     if str(short.get("visibility", "")).lower() == "public":
         return True
-    sched = _parse_iso(short.get("schedule_iso"))
     if sched and now >= sched + timedelta(minutes=SCHEDULE_GRACE_MIN):
         if short.get("video_id") or short.get("url"):
             return True
@@ -88,6 +95,16 @@ def iter_index_shorts() -> list[dict]:
             continue
         for short in data.get("shorts") or []:
             item = dict(short)
+            # Normalize Studio index field names
+            if not item.get("video_id") and item.get("youtube_video_id"):
+                item["video_id"] = item["youtube_video_id"]
+            if item.get("video_id") and not item.get("url"):
+                item["url"] = f"https://youtu.be/{item['video_id']}"
+            # Normalize Studio index field names
+            if not item.get("video_id") and item.get("youtube_video_id"):
+                item["video_id"] = item["youtube_video_id"]
+            if item.get("video_id") and not item.get("url"):
+                item["url"] = f"https://youtu.be/{item['video_id']}"
             item["_project"] = project_root.name
             item["_project_root"] = str(project_root)
             item["_index"] = str(index)
