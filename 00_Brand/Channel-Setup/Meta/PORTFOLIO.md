@@ -12,8 +12,28 @@ not Benkay Creative.
 Moved out of Benkay Creative (`1203116147241086`) on **2026-08-03**.
 
 If Suite still shows a Benkay banner, switch portfolio to **Orbit with Ben** in
-Business settings. After any Page move, reconnect Instagram via Suite Home →
-**Connect Instagram** → **Log in to Instagram**.
+Business settings. After any Page move, reconnect Instagram (portfolio move
+drops Suite IG asset linkage even when Page → Connected Instagram still lists
+`@orbitwithben`).
+
+### Reconnect Instagram (required for Meta Business app)
+
+Suite currently shows **Connect Instagram** / **No Instagram accounts added**
+until this is finished. Page settings also show **Review account connection**
+(needs the Instagram password).
+
+**Phone (Meta Business app):** Orbit with Ben → **Connect Instagram** → log in
+as `@orbitwithben` → allow management → confirm until the IG avatar is active.
+
+**Desktop:** Suite Home
+(`business_id=1352434763139246&asset_id=1285932871266399`) →
+**Connect Instagram** / **Continue**, or Settings → Instagram accounts →
+**Add** → **Claim Instagram Account**. Alternate: Facebook Page settings →
+Connected Instagram → **Review Connection** → **Confirm connection** → enter
+IG password.
+
+Details / automation notes:
+`../audits/connect_instagram_2026-08-03/CONNECT_INSTAGRAM.md`
 
 CDP / composer URLs should include
 `business_id=1352434763139246&asset_id=1285932871266399` (see
