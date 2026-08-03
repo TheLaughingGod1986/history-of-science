@@ -13,8 +13,7 @@ LONDON = ZoneInfo("Europe/London")
 
 # YouTube video_id → TikTok schedule slot (pre-scheduled / already on Studio).
 # Auto-poster must NOT Post-now these — Studio already has them queued.
-# Updated 2026-08-03 from live Studio inventory (only 3 aliens present).
-# BH + exo are re-queued separately; add their YT ids here after confirmed upload.
+# Only Studio-confirmed entries until re-queue verifies.
 YT_SCHEDULED_COVER = {
     "1HuV8o3gOss": {"tt_id": "aliens-01", "when": "2026-08-01T17:00:00+01:00"},
     "dPMJQp2gMNc": {"tt_id": "aliens-02", "when": "2026-08-02T12:30:00+01:00"},

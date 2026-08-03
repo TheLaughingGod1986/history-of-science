@@ -53,3 +53,11 @@ python3 live_shorts_to_tiktok.py --seed-scheduled   # cover pre-scheduled batch
 - **Pre-scheduled Studio posts** are recorded in `TIKTOK_POSTED.json` (`yt:…` + `tt:…` keys, `mode: scheduled`). The watcher will **not** Post-now duplicates for those.
 - If Studio shows *“You've reached your check limit for today”*, uploads fail until the next day. The watcher records failures and backs off (`check_limit`).
 - Unload: `launchctl unload ~/Library/LaunchAgents/dev.orbit.tiktok-live-shorts.plist`
+
+## 2026-08-03 restore notes
+
+- LaunchAgent `dev.orbit.tiktok-live-shorts` reloads `auto/live_shorts_to_tiktok.py --once` every 5 minutes.
+- `discover.is_live()` treats a future `schedule_iso` as not-live even if visibility says public.
+- Pre-schedule batch uploads must use `_tt_upload_one_safe.py` → `_upload_missing_v02_cdp.py` (verifies schedule values + Studio needle). Do **not** trust CTA-click-only success.
+- If Studio shows `Something went wrong. You can try again or replace it with a different video.`, stop and retry later — that is a platform-side publish failure, not a missing file.
+

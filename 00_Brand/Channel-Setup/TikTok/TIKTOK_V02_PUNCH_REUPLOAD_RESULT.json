@@ -1,58 +1,25 @@
 {
-  "ran_at": "2026-08-03T11:27:19.599668+01:00",
+  "ran_at": "2026-08-03T11:52:22.123893+01:00",
   "ok": 3,
+  "note": "Only aliens-01/02/03 Studio-confirmed. Platform Schedule error blocks further uploads.",
   "results": [
     {
       "id": "aliens-01",
       "phase": "upload",
-      "upload": {
-        "id": "aliens-01",
-        "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v02.mp4",
-        "posted": true,
-        "schedule": {
-          "when": "2026-08-03T01:23:01.887583+01:00",
-          "ok": true,
-          "opened": true
-        },
-        "caption": "Where Is Everybody? The Fermi Paradox. Are we alone in the universe? Full film on YouTube. #FermiParadox #AreWeAlone #Sp",
-        "ok": true
-      },
-      "ok": true
+      "ok": true,
+      "seeded_from_studio": true
     },
     {
       "id": "aliens-02",
       "phase": "upload",
-      "upload": {
-        "id": "aliens-02",
-        "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-01_distance_v02.mp4",
-        "posted": true,
-        "schedule": {
-          "when": "2026-08-03T01:31:35.393629+01:00",
-          "ok": true,
-          "opened": true
-        },
-        "caption": "Space Is Rude About Distance. Even if another civilisation answered immediately, a conversation across the stars could t",
-        "ok": true
-      },
-      "ok": true
+      "ok": true,
+      "seeded_from_studio": true
     },
     {
       "id": "aliens-03",
       "phase": "upload",
-      "upload": {
-        "id": "aliens-03",
-        "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4",
-        "posted": true,
-        "schedule": {
-          "when": "2026-08-03T01:54:43.609955+01:00",
-          "ok": true,
-          "opened": true
-        },
-        "caption": "What If Aliens Are Watching Us? The zoo hypothesis imagines advanced civilisations observing younger worlds while delibe",
-        "ok": true
-      },
-      "ok": true
+      "ok": true,
+      "seeded_from_studio": true
     }
-  ],
-  "note": "Reset 2026-08-03; Studio only has 3 aliens"
+  ]
 }

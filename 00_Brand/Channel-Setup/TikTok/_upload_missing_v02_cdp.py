@@ -133,22 +133,41 @@ def body(page) -> str:
 
 
 def dismiss(page) -> None:
-    t = body(page).lower()
-    for needle, pat in [
-        ("want to exit", r"^Cancel$"),
-        ("automatic content checks", r"^Turn on$"),
-        ("saved for scheduled", r"^Allow$"),
-        ("got it", r"^Got it$"),
-    ]:
-        if needle not in t:
-            continue
-        try:
-            page.get_by_role("button", name=re.compile(pat, re.I)).first.click(
-                force=True, timeout=1200
-            )
-            page.wait_for_timeout(400)
-        except Exception:
-            pass
+    """Dismiss common TikTok Studio modals, including content-check continue."""
+    for _ in range(4):
+        t = body(page).lower()
+        handled = False
+        # Content-check interrupt — keep going so Schedule completes.
+        if "continue to post" in t or "continue posting before the check" in t:
+            for label in ("Post now", "Continue", "Schedule"):
+                try:
+                    page.get_by_role("button", name=re.compile(rf"^{label}$", re.I)).first.click(
+                        force=True, timeout=1500
+                    )
+                    page.wait_for_timeout(900)
+                    handled = True
+                    break
+                except Exception:
+                    continue
+        for needle, pat in [
+            ("want to exit", r"^Cancel$"),
+            ("automatic content checks", r"^Not now$|^Turn on$"),
+            ("saved for scheduled", r"^Allow$"),
+            ("got it", r"^Got it$"),
+            ("not now", r"^Not now$"),
+        ]:
+            if needle not in t:
+                continue
+            try:
+                page.get_by_role("button", name=re.compile(pat, re.I)).first.click(
+                    force=True, timeout=1200
+                )
+                page.wait_for_timeout(400)
+                handled = True
+            except Exception:
+                pass
+        if not handled:
+            break
 
 
 def blocked(page) -> str | None:
@@ -391,9 +410,12 @@ def studio_has_needle(page, needle: str) -> bool:
     page.goto(CONTENT, wait_until="domcontentloaded", timeout=120000)
     page.wait_for_timeout(3500)
     dismiss(page)
-    for _ in range(4):
-        page.mouse.wheel(0, 1600)
-        page.wait_for_timeout(600)
+    for _ in range(8):
+        try:
+            page.keyboard.press("PageDown")
+        except Exception:
+            break
+        page.wait_for_timeout(500)
     return needle.lower() in body(page).lower()
 
 
@@ -473,7 +495,22 @@ def upload_one(page, item: dict) -> dict:
         try:
             page.mouse.click(click["x"], click["y"])
             posted = True
-            page.wait_for_timeout(8000)
+            page.wait_for_timeout(1500)
+            # Content-check often pops "Continue to post?" — must confirm.
+            for _ in range(8):
+                dismiss(page)
+                if "upload" not in (page.url or "") or "Video published" in body(page):
+                    break
+                t = body(page).lower()
+                if "continue to post" in t or "continue posting before the check" in t:
+                    try:
+                        page.get_by_role("button", name=re.compile(r"^Post now$", re.I)).first.click(
+                            force=True, timeout=2000
+                        )
+                    except Exception:
+                        pass
+                page.wait_for_timeout(1000)
+            page.wait_for_timeout(4000)
         except Exception as e:
             cta_err = str(e)[:160]
 
@@ -501,18 +538,18 @@ def upload_one(page, item: dict) -> dict:
         result["error"] = "something_went_wrong"
         result["abort"] = True
         return result
-    if still_on_upload:
-        result["ok"] = False
-        result["error"] = "still_on_upload_after_schedule"
-        return result
 
-    # Verify in Studio
+    # Verify in Studio (required — click alone is not success)
     present = studio_has_needle(page, item["needle"])
     result["verified"] = present
     result["ok"] = bool(posted and sched.get("ok") and present)
     if posted and sched.get("ok") and not present:
         result["ok"] = False
         result["error"] = "not_in_studio_after_schedule"
+        result["still_on_upload"] = still_on_upload
+    elif still_on_upload and not present:
+        result["ok"] = False
+        result["error"] = "still_on_upload_after_schedule"
     return result
 
 

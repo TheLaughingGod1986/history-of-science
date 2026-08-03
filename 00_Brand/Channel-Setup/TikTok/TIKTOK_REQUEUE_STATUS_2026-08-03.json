@@ -1,0 +1,17 @@
+{
+  "at": "2026-08-03T11:52:22.123893+01:00",
+  "launchagent": "dev.orbit.tiktok-live-shorts",
+  "studio_confirmed": [
+    "aliens-01 Fermi",
+    "aliens-02 Distance",
+    "aliens-03 Watching @ 2026-08-03 12:30"
+  ],
+  "missing": [
+    "aliens-04",
+    "blackhole-01..06",
+    "exoplanets-01..06"
+  ],
+  "blocker": "TikTok Studio Schedule/Post returns: Something went wrong. You can try again or replace it with a different video.",
+  "uploader_fix": "Switched _tt_upload_one_safe.py to _upload_missing_v02_cdp.py (schedule value verify + Studio needle + Continue-to-post dismiss).",
+  "retry_cmd": "python3 00_Brand/Channel-Setup/TikTok/_tt_upload_one_safe.py --all-remaining"
+}

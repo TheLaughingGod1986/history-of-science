@@ -30,7 +30,9 @@ LEDGER = SETUP / "TIKTOK_POSTED.json"
 sys.path.insert(0, str(SETUP / "auto"))
 from caption import tiktok_caption  # noqa: E402
 
-spec = importlib.util.spec_from_file_location("tt", SETUP / "_replace_scheduled_v02_cdp.py")
+# Use the verified uploader (schedule value checks + Studio needle confirm).
+# The older _replace_scheduled_v02_cdp.upload_one falsely marked ok on CTA click.
+spec = importlib.util.spec_from_file_location("tt", SETUP / "_upload_missing_v02_cdp.py")
 mod = importlib.util.module_from_spec(spec)
 assert spec.loader
 spec.loader.exec_module(mod)

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "aliens-04-under50",
+    "ready": true,
+    "sched_ok": true,
+    "sched_vals": [
+      "14:00",
+      "2026-08-03"
+    ],
+    "url": "https://www.tiktok.com/tiktokstudio/upload?from=upload",
+    "wrong": true,
+    "continue": false,
+    "published": false,
+    "err_line": "Something went wrong. You can try again or replace it with a different video.",
+    "studio_has": false
+  },
+  {
+    "id": "blackhole-01",
+    "ready": true,
+    "sched_ok": true,
+    "sched_vals": [
+      "21:00",
+      "2026-08-05"
+    ],
+    "url": "https://www.tiktok.com/tiktokstudio/upload?from=upload",
+    "wrong": true,
+    "continue": false,
+    "published": false,
+    "err_line": "Something went wrong. You can try again or replace it with a different video.",
+    "studio_has": false
+  }
+]
