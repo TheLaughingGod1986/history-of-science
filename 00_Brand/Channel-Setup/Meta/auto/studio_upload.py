@@ -80,13 +80,13 @@ def click_button(page: Page, *labels: str) -> bool:
                     const s=getComputedStyle(el);
                     hits.push({
                       x:r.x+r.width/2, y:r.y+r.height/2,
-                      bg:s.backgroundColor||'', y:Math.round(r.y), x0:Math.round(r.x)
+                      bg:s.backgroundColor||'', y0:Math.round(r.y), x0:Math.round(r.x)
                     });
                   }
                   if (!hits.length) return null;
                   hits.sort((a,b)=>{
-                    const blue=s=>/10,\\s*120,\\s*190|0,\\s*97,\\s*160|24,\\s*119/.test(s.bg)?1:0;
-                    return (blue(a)-blue(b)) || (a.y-b.y) || (a.x0-b.x0);
+                    const blue=h=>/10,\\s*120,\\s*190|0,\\s*97,\\s*160|24,\\s*119/.test(h.bg)?1:0;
+                    return (blue(a)-blue(b)) || (a.y0-b.y0) || (a.x0-b.x0);
                   });
                   return hits[hits.length-1];
                 }""",
