@@ -1,0 +1,40 @@
+{
+  "code_captured": false,
+  "code_prefix": "",
+  "ig_empty": true,
+  "ig_snip": "Settings\nOrbit with Ben\nBusiness portfolio\nTo-dos\nBusiness info\nUsers\nToggle Group\n\u200b\nPeople\nPartners\nSystem users\nAccounts\nToggle Group\n\u200b\nPages\nAd accounts\nBusiness asset groups\nApps\nInstagram accounts\nWhatsApp accounts\nThreads accounts\nData sources\nToggle Group\n\u200b\nCatalogues\nDatasets and pixels\nOffline event sets\nCustom conversions\nShared audiences\nBusiness creative folders\nRequests\nBrand safety and suitability\nToggle Group\n\u200b\nDomains\nPublisher block lists\nIntegrations\nToggle Group\n\u200b\nConnected apps\nLeads access\nConversation routing\nads MCP server\nBilling and payments\nMeta Verified\nNews Pages\nPartnership Ads Hub\nSecurity Centre\nNotifications\nSetup guide\nBusiness assets\nAuthorisations and verifications\nAd account settings\nLanguage settings\nCollapse\n\u200b\nInstagram accounts\n\u200b\nSearch\n\u200b\nFilters\nAdd\nNo Instagram accounts added\nAdd Instagram accounts to this business portfolio so that you can manage all of your business assets in one place.\nAdd\nMeta Business Suite\nLinks\nHome\nHome\nNotifications\nNot",
+  "inputs": [
+    {
+      "type": "hidden",
+      "name": "h",
+      "id": "",
+      "placeholder": "",
+      "aria": null,
+      "visible": false
+    },
+    {
+      "type": "hidden",
+      "name": "ref",
+      "id": "",
+      "placeholder": "",
+      "aria": null,
+      "visible": false
+    },
+    {
+      "type": "search",
+      "name": "",
+      "id": "",
+      "placeholder": "Search Facebook",
+      "aria": "Search Facebook",
+      "visible": true
+    },
+    {
+      "type": "search",
+      "name": "",
+      "id": "",
+      "placeholder": "Search settings",
+      "aria": "Search settings",
+      "visible": true
+    }
+  ]
+}
