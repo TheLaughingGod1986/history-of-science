@@ -67,6 +67,41 @@ def click_button(page: Page, *labels: str) -> bool:
                 return True
         except Exception:
             pass
+        # Business Suite primary actions are often DIVs (not <button>), e.g. Next / Share.
+        try:
+            hit = page.evaluate(
+                """(label) => {
+                  const hits=[];
+                  for (const el of document.querySelectorAll('button,div,span,[role=button]')) {
+                    const t=(el.innerText||'').trim();
+                    if (t!==label) continue;
+                    const r=el.getBoundingClientRect();
+                    if (r.width<15 || r.height<10 || r.width>300) continue;
+                    const s=getComputedStyle(el);
+                    hits.push({
+                      x:r.x+r.width/2, y:r.y+r.height/2,
+                      bg:s.backgroundColor||'', y:Math.round(r.y), x0:Math.round(r.x)
+                    });
+                  }
+                  if (!hits.length) return null;
+                  hits.sort((a,b)=>{
+                    const blue=s=>/10,\\s*120,\\s*190|0,\\s*97,\\s*160|24,\\s*119/.test(s.bg)?1:0;
+                    return (blue(a)-blue(b)) || (a.y-b.y) || (a.x0-b.x0);
+                  });
+                  return hits[hits.length-1];
+                }""",
+                label,
+            )
+            if hit:
+                page.mouse.move(hit["x"], hit["y"])
+                page.wait_for_timeout(120)
+                page.mouse.down()
+                page.wait_for_timeout(50)
+                page.mouse.up()
+                page.wait_for_timeout(800)
+                return True
+        except Exception:
+            pass
     return False
 
 

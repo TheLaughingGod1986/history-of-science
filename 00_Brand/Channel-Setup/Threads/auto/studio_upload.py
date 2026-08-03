@@ -38,7 +38,9 @@ load = _threads_load
 
 config = load("config")
 
+# Prefer threads.com (threads.net redirects here; some CDP sessions abort mid-redirect).
 HOME = "https://www.threads.com/"
+PROFILE_TMPL = "https://www.threads.com/@{username}"
 
 
 def body(page: Page) -> str:
@@ -208,7 +210,22 @@ def post_short(
             page.on("dialog", _dialog2)
         except Exception:
             pass
-        page.goto(HOME, wait_until="domcontentloaded", timeout=120000)
+        def goto_retry(url: str, *, timeout: int = 120000, tries: int = 3) -> None:
+            last: Exception | None = None
+            for i in range(tries):
+                try:
+                    page.goto(url, wait_until="domcontentloaded", timeout=timeout)
+                    return
+                except Exception as e:
+                    last = e
+                    page.wait_for_timeout(1200 * (i + 1))
+                    # Fallback host if .com aborts
+                    if "threads.com" in url and i == tries - 2:
+                        url = url.replace("https://www.threads.com", "https://www.threads.net")
+            assert last is not None
+            raise last
+
+        goto_retry(HOME)
         page.wait_for_timeout(2000)
         dismiss(page)
 
@@ -280,11 +297,7 @@ def post_short(
             page.screenshot(path=str(audit_dir / "after_post.png"))
 
         # Confirm on profile
-        page.goto(
-            f"https://www.threads.com/@{username}",
-            wait_until="domcontentloaded",
-            timeout=90000,
-        )
+        goto_retry(PROFILE_TMPL.format(username=username), timeout=90000)
         page.wait_for_timeout(3000)
         confirmed = needle.lower() in body(page).lower()
         out["url"] = page.url

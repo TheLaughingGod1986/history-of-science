@@ -1,0 +1,248 @@
+{
+  "started_at": "2026-08-03T01:08:33.605633+00:00",
+  "youtube": {
+    "1HuV8o3gOss": {
+      "id": "1HuV8o3gOss",
+      "title": "Where Is Everybody?",
+      "public": {
+        "ok": true,
+        "skipped": "check_only",
+        "after": "Visibility Public"
+      },
+      "pin": {
+        "video_id": "1HuV8o3gOss",
+        "ok": true,
+        "pinned": true,
+        "has_comment": true,
+        "menu": {
+          "ok": true,
+          "opened": true
+        },
+        "pin_click": "Pin",
+        "verify_pinned": true
+      }
+    },
+    "dPMJQp2gMNc": {
+      "id": "dPMJQp2gMNc",
+      "title": "Space Is Rude About Distance",
+      "public": {
+        "video_id": "dPMJQp2gMNc",
+        "ok": true,
+        "before": "Visibility Scheduled",
+        "collapse": {
+          "al": "Click to expand",
+          "id": "first-container-expand-button"
+        },
+        "public_click": {
+          "ok": true,
+          "name": "PUBLIC",
+          "t": "Public",
+          "checked": "true"
+        },
+        "radio_state": [
+          {
+            "n": "VIDEO_MADE_FOR_KIDS_MFK",
+            "t": "Yes, it's Made for Kids . Features like ",
+            "checked": "false"
+          },
+          {
+            "n": "VIDEO_MADE_FOR_KIDS_NOT_MFK",
+            "t": "No, it's not 'Made for Kids'",
+            "checked": "true"
+          },
+          {
+            "n": "PRIVATE",
+            "t": "Private",
+            "checked": "false"
+          },
+          {
+            "n": "UNLISTED",
+            "t": "Unlisted",
+            "checked": "false"
+          },
+          {
+            "n": "PUBLIC",
+            "t": "Public",
+            "checked": "true"
+          }
+        ],
+        "done": true,
+        "saved": true,
+        "after": "Visibility Public"
+      },
+      "pin": {
+        "video_id": "dPMJQp2gMNc",
+        "ok": true,
+        "pinned": true,
+        "has_comment": false,
+        "posted": true,
+        "menu": {
+          "ok": true,
+          "opened": true
+        },
+        "pin_click": "Pin",
+        "verify_pinned": true
+      }
+    },
+    "rFJoOdQAc9c": {
+      "id": "rFJoOdQAc9c",
+      "title": "What If Aliens Are Watching Us?",
+      "public": {
+        "video_id": "rFJoOdQAc9c",
+        "ok": true,
+        "before": "Visibility Scheduled",
+        "collapse": {
+          "al": "Click to expand",
+          "id": "first-container-expand-button"
+        },
+        "public_click": {
+          "ok": true,
+          "name": "PUBLIC",
+          "t": "Public",
+          "checked": "true"
+        },
+        "radio_state": [
+          {
+            "n": "VIDEO_MADE_FOR_KIDS_MFK",
+            "t": "Yes, it's Made for Kids . Features like ",
+            "checked": "false"
+          },
+          {
+            "n": "VIDEO_MADE_FOR_KIDS_NOT_MFK",
+            "t": "No, it's not 'Made for Kids'",
+            "checked": "true"
+          },
+          {
+            "n": "PRIVATE",
+            "t": "Private",
+            "checked": "false"
+          },
+          {
+            "n": "UNLISTED",
+            "t": "Unlisted",
+            "checked": "false"
+          },
+          {
+            "n": "PUBLIC",
+            "t": "Public",
+            "checked": "true"
+          }
+        ],
+        "done": true,
+        "saved": true,
+        "after": "Visibility Public"
+      },
+      "pin": {
+        "video_id": "rFJoOdQAc9c",
+        "ok": true,
+        "pinned": true,
+        "has_comment": false,
+        "posted": true,
+        "menu": {
+          "ok": true,
+          "opened": true
+        },
+        "pin_click": "Pin",
+        "verify_pinned": true
+      }
+    }
+  },
+  "tiktok_bio": {
+    "ok": true,
+    "before": "TikTok\nSearch\nFor You\nExplore\nFollowing\nFriends\nLIVE\nMessages\nActivity\nUpload\nProfile\nMore\nCompany\nProgramme\nTerms & Policies\n\u00a9 2026 TikTok\nOrbitWithBen\norbitwithben\n0\nFollowing\n0\nFollowers\n0\nLikes\nEdit profile\nSpace stories. Big questions. Films \u2192 youtube.com/@OrbitWithBen\n\nVideos\n\nFavourites\n\nLiked\n\nLatest\nPopular\nOldest\n2026\n-\n8\n-\n26\n\u00a0\n12:30\n2026\n-\n8\n-\n25\n\u00a0\n12:30\n2026\n-\n8\n-\n23\n\u00a0\n12:30\n2026\n-\n8\n-\n22\n\u00a0\n12:30\n2026\n-\n8\n-\n21\n\u00a0\n21:00\n2026\n-\n8\n-\n3\n\u00a0\n12:30\n0\n0",
+    "filled_via": "textarea[0]",
+    "filled": true,
+    "after": "TikTok\nSearch\nFor You\nExplore\nFollowing\nFriends\nLIVE\nMessages\nActivity\nUpload\nProfile\nMore\nCompany\nProgramme\nTerms & Policies\n\u00a9 2026 TikTok\nOrbitWithBen\norbitwithben\n0\nFollowing\n0\nFollowers\n0\nLikes\nEdit profile\nSpace stories. Big questions. Films \u2192 youtube.com/@OrbitWithBen\n\nVideos\n\nFavourites\n\nLiked\n\nLatest\nPopular\nOldest\n2026\n-\n8\n-\n26\n\u00a0\n12:30\n2026\n-\n8\n-\n25\n\u00a0\n12:30\n2026\n-\n8\n-\n23\n\u00a0\n12:30\n2026\n-\n8\n-\n22\n\u00a0\n12:30\n2026\n-\n8\n-\n21\n\u00a0\n21:00\n2026\n-\n8\n-\n3\n\u00a0\n12:30\n0\n0",
+    "has_at": true
+  },
+  "meta": {
+    "1HuV8o3gOss": {
+      "status": "unconfirmed",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v02.mp4",
+      "caption": "Where Is Everybody? Full film on YouTube. #space #orbitwithben #reels",
+      "needle": "Where Is Everybody?",
+      "port": 9223,
+      "caption_ok": true,
+      "attempt_1": "not_confirmed",
+      "attempt_2": "not_confirmed",
+      "attempt_3": "not_confirmed",
+      "attempt_4": "not_confirmed",
+      "attempt_5": "not_confirmed",
+      "platforms": {
+        "instagram": {
+          "status": "unconfirmed",
+          "method": "cdp"
+        },
+        "facebook": {
+          "status": "unconfirmed",
+          "method": "cdp"
+        }
+      },
+      "url": "https://business.facebook.com/latest/reels_composer?asset_id=1251385088056874&business_id=1203116147241086"
+    },
+    "dPMJQp2gMNc": {
+      "status": "unconfirmed",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-01_distance_v02.mp4",
+      "caption": "Space Is Rude About Distance Full film on YouTube. #space #orbitwithben #reels",
+      "needle": "Space Is Rude About Distance",
+      "port": 9223,
+      "caption_ok": true,
+      "attempt_1": "not_confirmed",
+      "attempt_2": "not_confirmed",
+      "attempt_3": "not_confirmed",
+      "attempt_4": "not_confirmed",
+      "attempt_5": "not_confirmed",
+      "platforms": {
+        "instagram": {
+          "status": "unconfirmed",
+          "method": "cdp"
+        },
+        "facebook": {
+          "status": "unconfirmed",
+          "method": "cdp"
+        }
+      },
+      "url": "https://business.facebook.com/latest/reels_composer?asset_id=1251385088056874&business_id=1203116147241086"
+    },
+    "rFJoOdQAc9c": {
+      "status": "ok",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4",
+      "caption": "What If Aliens Are Watching Us? Full film on YouTube. #space #orbitwithben #reels",
+      "needle": "What If Aliens Are Watching Us?",
+      "port": 9223,
+      "caption_ok": true,
+      "attempt_1": "not_confirmed",
+      "attempt_2": "not_confirmed",
+      "attempt_3": "not_confirmed",
+      "platforms": {
+        "instagram": {
+          "status": "ok",
+          "method": "cdp"
+        },
+        "facebook": {
+          "status": "ok",
+          "method": "cdp"
+        }
+      },
+      "url": "https://business.facebook.com/latest/content_calendar?asset_id=1251385088056874&business_id=1203116147241086&ir_qe_exposed=1"
+    }
+  },
+  "threads": {
+    "1HuV8o3gOss": {
+      "status": "failed",
+      "error": "Page.goto: net::ERR_ABORTED at https://www.threads.com/@orbitwithben\nCall log:\n  - navigating to \"https://www.threads.com/@orbitwithben\", waiting until \"domcontentloaded\"\n"
+    },
+    "dPMJQp2gMNc": {
+      "status": "failed",
+      "error": "Page.goto: net::ERR_ABORTED at https://www.threads.com/@orbitwithben\nCall log:\n  - navigating to \"https://www.threads.com/@orbitwithben\", waiting until \"domcontentloaded\"\n"
+    },
+    "rFJoOdQAc9c": {
+      "status": "failed",
+      "error": "Page.goto: net::ERR_ABORTED at https://www.threads.com/@orbitwithben\nCall log:\n  - navigating to \"https://www.threads.com/@orbitwithben\", waiting until \"domcontentloaded\"\n"
+    }
+  },
+  "finished_at": "2026-08-03T01:22:09.878278+00:00"
+}
