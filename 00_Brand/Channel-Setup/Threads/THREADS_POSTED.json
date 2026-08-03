@@ -1,35 +1,35 @@
 {
   "version": 1,
-  "posted": {},
-  "updated_at": "2026-08-03T14:05:00+01:00",
-  "cleared_premature": [
-    {
-      "at": "2026-08-03T12:39:16.593798+01:00",
-      "keys": [
-        "yt:1HuV8o3gOss",
-        "yt:dPMJQp2gMNc",
-        "yt:rFJoOdQAc9c"
-      ],
-      "reason": "YT-first cleanup — Threads early copies deleted"
-    }
-  ],
-  "sync_note": "2026-08-03 social match: Watching + Clue exist on Threads as YouTube link cards only (not native video). Everybody + Distance native video uploads attach and show Posting… but do not appear on @orbitwithben. See audits/sync_socials_to_yt_2026-08-03/MATCH_STATUS.md.",
-  "failures": {
+  "posted": {
     "yt:1HuV8o3gOss": {
-      "last_reason": "native_video_post_vanishes",
-      "last_at": "2026-08-03T14:05:00+01:00"
-    },
-    "yt:dPMJQp2gMNc": {
-      "last_reason": "native_video_post_vanishes",
-      "last_at": "2026-08-03T14:05:00+01:00"
+      "status": "posted_link_card",
+      "when": "2026-08-03T15:03:00+01:00",
+      "note": "Profile-visible YouTube link card"
     },
     "yt:rFJoOdQAc9c": {
-      "last_reason": "link_card_only",
-      "last_at": "2026-08-03T14:05:00+01:00"
+      "status": "posted_link_card",
+      "when": "2026-08-03T13:00:00+01:00",
+      "note": "Profile-visible YouTube link card"
     },
     "yt:KcKBixwmcV4": {
-      "last_reason": "link_card_only",
-      "last_at": "2026-08-03T14:05:00+01:00"
+      "status": "posted_link_card",
+      "when": "2026-08-03T13:00:00+01:00",
+      "note": "Profile-visible YouTube link card"
+    },
+    "yt:dPMJQp2gMNc": {
+      "status": "posted_permalink_only",
+      "when": "2026-08-03T15:34:00+01:00",
+      "threads_post_ids": [
+        "DblNwwOjOcl",
+        "DblMYecDCGa"
+      ],
+      "urls": [
+        "https://www.threads.com/@orbitwithben/post/DblNwwOjOcl",
+        "https://www.threads.com/@orbitwithben/post/DblMYecDCGa"
+      ],
+      "note": "Published and viewable via permalink, but not listed on @orbitwithben profile grid"
     }
-  }
+  },
+  "updated_at": "2026-08-03T15:35:00+01:00",
+  "sync_note": "2026-08-03 match push: Everybody/Watching/Clue on profile. Distance live at permalinks only. Native video uploads still fail/vanish. See audits/sync_socials_to_yt_2026-08-03/MATCH_STATUS.md."
 }

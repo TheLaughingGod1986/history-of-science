@@ -1,7 +1,6 @@
 {
   "version": 1,
   "mode": "scheduled",
-  "updated_at": "2026-08-03T14:06:24.369256+01:00",
   "note": "Studio-confirmed only. TikTok Schedule currently returns platform error for new uploads (2026-08-03).",
   "posted": {
     "yt:1HuV8o3gOss": {
@@ -40,16 +39,19 @@
   },
   "failures": {
     "yt:KcKBixwmcV4": {
-      "count": 1,
-      "last_reason": "check_limit",
-      "last_at": "2026-08-03T12:35:45.732665+01:00"
+      "count": 3,
+      "last_reason": "community_guideline_temp_ban_status_21",
+      "last_at": "2026-08-03T15:33:00+01:00"
     }
   },
   "platform_block": {
     "endpoint": "POST /tiktok/web/project/post/v1/",
     "status_code": 21,
     "status_msg": "Due to multiple Community Guideline violations, you\u2019re temporarily prevented from posting. View details in your app notifications.",
-    "at": "2026-08-03T12:00:02.353487+01:00",
-    "ui": "You\u2019ve reached your check limit for today. Try again tomorrow."
-  }
+    "at": "2026-08-03T15:33:00+01:00",
+    "ui": "You\u2019ve reached your check limit for today. Try again tomorrow.",
+    "confirmed_network": true,
+    "note": "Clue (aliens_short-04) upload form succeeds; Post API returns status_code 21. Retry after ban / check-limit window (likely tomorrow)."
+  },
+  "updated_at": "2026-08-03T15:35:00+01:00"
 }

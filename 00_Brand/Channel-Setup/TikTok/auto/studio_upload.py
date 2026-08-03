@@ -48,13 +48,28 @@ def turn_off_content_check(page: Page) -> bool:
             page.evaluate(
                 """() => {
                   const label=[...document.querySelectorAll('*')].find(
-                    e => e.childNodes.length<=2 &&
-                         (e.textContent||'').trim()==='Content check lite'
+                    e => (e.textContent||'').trim()==='Content check lite'
                   );
                   if (!label) return false;
+                  label.scrollIntoView({block:'center'});
+                  let root=label;
+                  for (let i=0;i<10 && root;i++) {
+                    const div=root.querySelector('.Switch__content');
+                    const inp=root.querySelector('input.Switch__input, input[role=switch]');
+                    if (div || inp) {
+                      const on = (div && div.className.includes('checked-true')) ||
+                                 (inp && (inp.checked || inp.getAttribute('aria-checked')==='true'));
+                      if (!on) return false;
+                      if (div) div.click();
+                      if (inp) inp.click();
+                      return true;
+                    }
+                    root=root.parentElement;
+                  }
+                  // Fallback: nearest role=switch by Y
                   const cy=label.getBoundingClientRect().y;
                   const switches=[...document.querySelectorAll(
-                    'button[role=switch],[role=switch]'
+                    'button[role=switch],[role=switch],input[role=switch]'
                   )];
                   let best=null, bd=1e9;
                   for (const sw of switches) {
@@ -63,10 +78,8 @@ def turn_off_content_check(page: Page) -> bool:
                     if (d<bd) { best=sw; bd=d; }
                   }
                   if (!best) return false;
-                  if ((best.getAttribute('aria-checked')||'')==='true') {
-                    best.click();
-                    return true;
-                  }
+                  const checked=(best.getAttribute('aria-checked')||'')==='true' || best.checked;
+                  if (checked) { best.click(); return true; }
                   return false;
                 }"""
             )
