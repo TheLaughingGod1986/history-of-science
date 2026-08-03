@@ -29,6 +29,21 @@ COMPOSER = "https://business.facebook.com/latest/reels_composer"
 CONTENT = "https://business.facebook.com/latest/content_calendar"
 
 
+def suite_url(base: str, creds: dict) -> str:
+    """Pin CDP navigation to the Orbit portfolio + Page asset when known."""
+    asset = str(creds.get("business_suite_asset_id") or "").strip()
+    biz = str(creds.get("business_id") or "").strip()
+    params = []
+    if asset and not asset.startswith("REPLACE_"):
+        params.append(f"asset_id={asset}")
+    if biz and not biz.startswith("REPLACE_"):
+        params.append(f"business_id={biz}")
+    if not params:
+        return base
+    sep = "&" if "?" in base else "?"
+    return base + sep + "&".join(params)
+
+
 def body(page: Page) -> str:
     try:
         return page.inner_text("body")
@@ -260,7 +275,11 @@ def post_short(
             page.on("dialog", _dialog2)
         except Exception:
             pass
-        page.goto(COMPOSER, wait_until="domcontentloaded", timeout=120000)
+        page.goto(
+            suite_url(COMPOSER, creds),
+            wait_until="domcontentloaded",
+            timeout=120000,
+        )
         page.wait_for_timeout(2500)
         dismiss_modals(page)
 

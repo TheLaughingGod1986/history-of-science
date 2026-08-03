@@ -56,6 +56,22 @@ Set:
 
 `META_CREDENTIALS.json` is gitignored.
 
+## Business portfolio
+
+Orbit’s Facebook Page must live in the **Orbit with Ben** Meta business
+portfolio (`business_id=1352434763139246`), not Benkay Creative.
+
+| Asset | ID |
+|-------|-----|
+| Business portfolio | `1352434763139246` (Orbit with Ben) |
+| Suite Page asset | `1285932871266399` |
+| Facebook Page | `61592833318203` |
+
+If Suite shows “Your Page is in the Benkay Creative business portfolio”, move
+the Page (Settings → Pages → Remove from Benkay after disconnecting IG if
+required → Add existing Page into Orbit). Audit notes:
+`audit/portfolio_fix/PORTFOLIO_FIX.md`.
+
 ## CDP fallback (no App Review yet)
 
 Until App Review unlocks content publishing for live users:
@@ -64,8 +80,9 @@ Until App Review unlocks content publishing for live users:
 bash 00_Brand/Channel-Setup/Meta/auto/start_meta_chrome.sh
 ```
 
-Log into Meta Business Suite as a Page admin with Instagram linked. Cross-post
-both destinations in the Suite session when possible.
+Log into Meta Business Suite under the **Orbit with Ben** portfolio as a Page
+admin with Instagram linked. Cross-post both destinations in the Suite session
+when possible.
 
 ## Identity checklist
 

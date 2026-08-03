@@ -22,6 +22,19 @@ CHROME = Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 COMPOSER = "https://business.facebook.com/latest/reels_composer"
 
 
+def composer_url(creds: dict) -> str:
+    asset = str(creds.get("business_suite_asset_id") or "").strip()
+    biz = str(creds.get("business_id") or "").strip()
+    params = []
+    if asset and not asset.startswith("REPLACE_"):
+        params.append(f"asset_id={asset}")
+    if biz and not biz.startswith("REPLACE_"):
+        params.append(f"business_id={biz}")
+    if not params:
+        return COMPOSER
+    return COMPOSER + "?" + "&".join(params)
+
+
 def cdp_up(port: int) -> bool:
     try:
         with urllib.request.urlopen(f"http://127.0.0.1:{port}/json/version", timeout=2) as r:
@@ -45,7 +58,7 @@ def ensure_chrome(*, port: int | None = None) -> dict:
         f"--user-data-dir={PROFILE}",
         "--no-first-run",
         "--no-default-browser-check",
-        COMPOSER,
+        composer_url(creds),
     ]
     subprocess.Popen(
         args,
