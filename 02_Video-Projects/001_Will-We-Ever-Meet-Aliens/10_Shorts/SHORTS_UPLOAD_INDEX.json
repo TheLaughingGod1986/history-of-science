@@ -19,16 +19,18 @@
       "related_ok": true,
       "visibility": "public",
       "published_now": true,
-      "note": "Studio verified 4 Aug 2026 12:30 \u00b7 daily cadence 2026-08-03",
+      "note": "v02 public \u00b7 old v01 z-DLqoSoEBo privatized 2026-08-03 (concept dupe cleanup)",
       "pinned_fullfilm_cta": true,
       "caption_style_pending": "finalverdict-yellow-white-v02",
       "old_video_id": "z-DLqoSoEBo",
       "replaced_at": "2026-08-02T23:25:12.094653+01:00",
       "caption_style": "finalverdict-yellow-white-v02",
-      "pinned_fullfilm_cta_at": "2026-08-03T01:48:02.826078+01:00",
+      "pinned_fullfilm_cta_at": "2026-08-03T08:36:15.161629+01:00",
       "youtube_video_id": "1HuV8o3gOss",
       "scheduled_publish_at": null,
-      "pinned_fullfilm_url": "https://youtu.be/Mo93x0fxB1Q"
+      "pinned_fullfilm_url": "https://youtu.be/Mo93x0fxB1Q",
+      "old_visibility": "private",
+      "old_privatized_at": "2026-08-03T08:39:16.391469+01:00"
     },
     {
       "id": "02",
@@ -52,7 +54,7 @@
       "replaced_at": "2026-08-02T23:27:17.394059+01:00",
       "caption_style": "finalverdict-yellow-white-v02",
       "pinned_fullfilm_cta": true,
-      "pinned_fullfilm_cta_at": "2026-08-03T01:48:02.826117+01:00",
+      "pinned_fullfilm_cta_at": "2026-08-03T08:36:15.161666+01:00",
       "youtube_video_id": "dPMJQp2gMNc",
       "scheduled_publish_at": null,
       "pinned_fullfilm_url": "https://youtu.be/Mo93x0fxB1Q"
@@ -79,7 +81,7 @@
       "replaced_at": "2026-08-02T23:29:41.902594+01:00",
       "caption_style": "finalverdict-yellow-white-v02",
       "pinned_fullfilm_cta": true,
-      "pinned_fullfilm_cta_at": "2026-08-03T01:48:02.826118+01:00",
+      "pinned_fullfilm_cta_at": "2026-08-03T08:36:15.161668+01:00",
       "youtube_video_id": "rFJoOdQAc9c",
       "scheduled_publish_at": null,
       "pinned_fullfilm_url": "https://youtu.be/Mo93x0fxB1Q"
@@ -114,7 +116,7 @@
   "related_ok": true,
   "pin_status": "comment_posted_pin_manual",
   "cluster_start": "2026-07-31T17:00:00+01:00",
-  "updated": "2026-08-03T01:22:09.878036+00:00",
+  "updated": "2026-08-03T08:39:16.391469+01:00",
   "audit": "00_Brand/Channel-Setup/audits/CHANNEL_AUDIT_2026-08-01.md",
   "caption_style": "finalverdict-yellow-white-v02",
   "funnel": "soft CTA on-screen + description full-film link + related video",

@@ -211,17 +211,20 @@ def post_short(
         except Exception:
             pass
         def goto_retry(url: str, *, timeout: int = 120000, tries: int = 3) -> None:
+            """Navigate with retries. Stay on threads.com only — .net redirects abort CDP."""
             last: Exception | None = None
+            # Normalize any .net URL to .com
+            url = url.replace("https://www.threads.net", "https://www.threads.com")
             for i in range(tries):
                 try:
                     page.goto(url, wait_until="domcontentloaded", timeout=timeout)
                     return
                 except Exception as e:
                     last = e
-                    page.wait_for_timeout(1200 * (i + 1))
-                    # Fallback host if .com aborts
-                    if "threads.com" in url and i == tries - 2:
-                        url = url.replace("https://www.threads.com", "https://www.threads.net")
+                    # ERR_ABORTED often still lands on the page
+                    if "threads.com" in (page.url or ""):
+                        return
+                    page.wait_for_timeout(1500 * (i + 1))
             assert last is not None
             raise last
 
