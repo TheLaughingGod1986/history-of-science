@@ -1,57 +1,16 @@
 {
   "version": 1,
-  "posted": {
-    "yt:dPMJQp2gMNc": {
-      "marked_at": "2026-08-03T08:54:33.783473+01:00",
-      "title": "Space Is Rude About Distance",
-      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-01_distance_v02.mp4",
-      "youtube_id": "dPMJQp2gMNc",
-      "youtube_url": null,
-      "project": null,
-      "result_status": "unconfirmed",
-      "method": "cdp",
-      "status": "unconfirmed",
-      "threads": {
-        "status": "unconfirmed",
-        "method": "cdp",
-        "url": "https://www.threads.com/",
-        "permalink": null
-      }
-    },
-    "yt:rFJoOdQAc9c": {
-      "marked_at": "2026-08-03T08:55:09.996717+01:00",
-      "title": "What If Aliens Are Watching Us?",
-      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4",
-      "youtube_id": "rFJoOdQAc9c",
-      "youtube_url": null,
-      "project": null,
-      "result_status": "unconfirmed",
-      "method": "cdp",
-      "status": "unconfirmed",
-      "threads": {
-        "status": "unconfirmed",
-        "method": "cdp",
-        "url": "https://www.threads.com/",
-        "permalink": null
-      }
-    },
-    "yt:1HuV8o3gOss": {
-      "marked_at": "2026-08-03T09:00:15.158800+01:00",
-      "title": "Where Is Everybody?",
-      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v02.mp4",
-      "youtube_id": "1HuV8o3gOss",
-      "youtube_url": null,
-      "project": null,
-      "result_status": "ok",
-      "method": "cdp",
-      "status": "ok",
-      "threads": {
-        "status": "ok",
-        "method": "cdp",
-        "url": "https://www.threads.com/",
-        "permalink": null
-      }
+  "posted": {},
+  "updated_at": "2026-08-03T12:39:16.593798+01:00",
+  "cleared_premature": [
+    {
+      "at": "2026-08-03T12:39:16.593798+01:00",
+      "keys": [
+        "yt:1HuV8o3gOss",
+        "yt:dPMJQp2gMNc",
+        "yt:rFJoOdQAc9c"
+      ],
+      "reason": "YT-first cleanup \u2014 Threads early copies deleted"
     }
-  },
-  "updated_at": "2026-08-03T09:00:15.159575+01:00"
+  ]
 }
