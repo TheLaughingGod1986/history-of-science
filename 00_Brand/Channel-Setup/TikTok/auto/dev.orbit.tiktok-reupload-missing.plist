@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  One-shot: re-upload missing scheduled TikTok shorts (clue + hot Jupiter)
+  after TikTok's daily content-check limit resets.
+
+  Runs 2 Aug 2026 07:15 Europe/London (local Mac time). Self-unloads after run
+  via the wrapper script.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>dev.orbit.tiktok-reupload-missing</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok/auto/run_reupload_missing_once.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Month</key>
+    <integer>8</integer>
+    <key>Day</key>
+    <integer>2</integer>
+    <key>Hour</key>
+    <integer>7</integer>
+    <key>Minute</key>
+    <integer>15</integer>
+  </dict>
+  <key>WorkingDirectory</key>
+  <string>/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok</string>
+  <key>StandardOutPath</key>
+  <string>/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok/audit/tt_reschedule/reupload_missing_launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok/audit/tt_reschedule/reupload_missing_launchd.err.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin</string>
+  </dict>
+</dict>
+</plist>
