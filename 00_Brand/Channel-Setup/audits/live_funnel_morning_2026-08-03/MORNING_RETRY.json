@@ -1,0 +1,90 @@
+{
+  "started": "2026-08-03T08:53:32.253491+01:00",
+  "tiktok": {
+    "bio_has_youtube": true,
+    "logged_in": true,
+    "edit_fields": [
+      {
+        "ph": "Username",
+        "al": "",
+        "v": "orbitwithben",
+        "w": 360
+      },
+      {
+        "ph": "Bio",
+        "al": "",
+        "v": "Space stories. Big questions. Films \u2192 youtube.com/@OrbitWithBen",
+        "w": 360
+      }
+    ],
+    "web_has_website_field": false,
+    "ok": true
+  },
+  "meta": {
+    "1HuV8o3gOss": {
+      "status": "unconfirmed",
+      "caption_ok": true,
+      "url": "https://business.facebook.com/latest/reels_composer?asset_id=1251385088056874&business_id=1203116147241086",
+      "left_composer": false
+    },
+    "dPMJQp2gMNc": {
+      "status": "unconfirmed",
+      "caption_ok": true,
+      "url": "https://business.facebook.com/latest/reels_composer?asset_id=1251385088056874&business_id=1203116147241086",
+      "left_composer": false
+    },
+    "rFJoOdQAc9c": {
+      "status": "unconfirmed",
+      "caption_ok": true,
+      "url": "https://business.facebook.com/latest/reels_composer?asset_id=1251385088056874&business_id=1203116147241086",
+      "left_composer": false
+    },
+    "home_has_cta": false,
+    "home_snip": "To-dos\n@orbitwithben\n61\nfollowers\nEdit Instagram profile\nGet a verified badge\nCreate Post\nCreate ad\nCreate Reel\nCreate Story\nTo-do list\nCheck unread messages, comments and other things that may require your attention.\nYou're up to date on your to-do list.\nManage your marketing content\nSee your recent and upcoming posts, stories and ads, and schedule content to plan ahead.\nPlanner\nPosts and reels\nStories\nSee your posts and reels from the last 60 days.\nThis post contains no text\n3 Aug 2026, 08:47\nBoost\nSee insights\nThis post contains no text\n3 Aug 2026, 08:43\nBoost\nSee insights\nThis post contains no text\n3 Aug 2026, 08:38\nBoost\nSee insights\nThis post contains no text\n3 Aug 2026, 04:10\nBoost\nSee insights\nSee more posts\nSee all posts and reels\nRecent ads\nGet started with your first ad\nNew, act"
+  },
+  "threads": {
+    "1HuV8o3gOss": {
+      "status": "ok",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v02.mp4",
+      "caption": "Where Is Everybody?\n\nFull film on YouTube.\n\n#space #orbitwithben #threads",
+      "needle": "Where Is Everybody?",
+      "port": 9222,
+      "caption_ok": true,
+      "attempt_1": "Post",
+      "url": "https://www.threads.com/"
+    },
+    "dPMJQp2gMNc": {
+      "status": "unconfirmed",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-01_distance_v02.mp4",
+      "caption": "Space Is Rude About Distance\n\nFull film on YouTube.\n\n#space #orbitwithben #threads",
+      "needle": "Space Is Rude About Distance",
+      "port": 9222,
+      "caption_ok": true,
+      "attempt_1": "Post",
+      "attempt_2": "Post",
+      "attempt_3": "Post",
+      "attempt_4": "Post",
+      "attempt_5": "Post",
+      "url": "https://www.threads.com/"
+    },
+    "rFJoOdQAc9c": {
+      "status": "unconfirmed",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4",
+      "caption": "What If Aliens Are Watching Us?\n\nFull film on YouTube.\n\n#space #orbitwithben #threads",
+      "needle": "What If Aliens Are Watching Us?",
+      "port": 9222,
+      "caption_ok": true,
+      "attempt_1": "Post",
+      "attempt_2": "Post",
+      "attempt_3": "Post",
+      "attempt_4": "Post",
+      "attempt_5": "Post",
+      "url": "https://www.threads.com/"
+    },
+    "profile_err": "Page.goto: net::ERR_ABORTED at https://www.threads.com/@orbitwithben\nCall log:\n  - navigating to \"https://www.threads.com/@orbitwithben\", waiting until \"domcontentloaded\"\n"
+  },
+  "finished": "2026-08-03T08:56:59.778339+01:00"
+}

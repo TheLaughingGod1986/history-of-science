@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "1HuV8o3gOss": {
+      "status": "no_upload"
+    },
+    "dPMJQp2gMNc": {
+      "status": "no_upload"
+    },
+    "rFJoOdQAc9c": {
+      "status": "no_upload"
+    },
+    "home_cta": false,
+    "home_times": [
+      "3 Aug 2026, 08:47",
+      "3 Aug 2026, 08:43",
+      "3 Aug 2026, 08:38",
+      "3 Aug 2026, 04:10"
+    ]
+  },
+  "threads": {
+    "profile_cta": true,
+    "titles": {
+      "1HuV8o3gOss": false,
+      "dPMJQp2gMNc": true,
+      "rFJoOdQAc9c": true
+    },
+    "1HuV8o3gOss": {
+      "status": "ok",
+      "method": "cdp",
+      "file": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v02.mp4",
+      "caption": "Where Is Everybody?\n\nFull film on YouTube.\n\n#space #orbitwithben #threads",
+      "needle": "Where Is Everybody?",
+      "port": 9222,
+      "caption_ok": true,
+      "attempt_1": "Post",
+      "url": "https://www.threads.com/"
+    },
+    "dPMJQp2gMNc": {
+      "status": "already_on_profile"
+    },
+    "rFJoOdQAc9c": {
+      "status": "already_on_profile"
+    }
+  },
+  "finished": "2026-08-03T09:00:15.203349+01:00"
+}
