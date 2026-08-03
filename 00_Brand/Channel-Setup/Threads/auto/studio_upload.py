@@ -17,7 +17,24 @@ if str(_AUTO) not in sys.path:
 
 from playwright.sync_api import Page, sync_playwright
 
-from _sib import load
+
+import importlib.util as _ilu
+from pathlib import Path as _P
+def _threads_load(name: str):
+    auto = _P(__file__).resolve().parent
+    key = f"orbit_threads_auto_{name}"
+    import sys as _sys
+    if key in _sys.modules:
+        return _sys.modules[key]
+    path = auto / f"{name}.py"
+    spec = _ilu.spec_from_file_location(key, path)
+    mod = _ilu.module_from_spec(spec)
+    _sys.modules[key] = mod
+    assert spec and spec.loader
+    spec.loader.exec_module(mod)
+    return mod
+
+load = _threads_load
 
 config = load("config")
 
@@ -160,11 +177,37 @@ def post_short(
     if own_pw:
         pw = sync_playwright().start()
         browser = pw.chromium.connect_over_cdp(f"http://127.0.0.1:{port}")
-        page = browser.contexts[0].new_page()
+        ctx = browser.contexts[0]
+
+        def _dialog(d):
+            try:
+                d.dismiss()
+            except Exception:
+                try:
+                    d.accept()
+                except Exception:
+                    pass
+
+        ctx.on("dialog", _dialog)
+        page = ctx.new_page()
+        page.on("dialog", _dialog)
         page.bring_to_front()
 
     assert page is not None
     try:
+        def _dialog2(d):
+            try:
+                d.dismiss()
+            except Exception:
+                try:
+                    d.accept()
+                except Exception:
+                    pass
+
+        try:
+            page.on("dialog", _dialog2)
+        except Exception:
+            pass
         page.goto(HOME, wait_until="domcontentloaded", timeout=120000)
         page.wait_for_timeout(2000)
         dismiss(page)

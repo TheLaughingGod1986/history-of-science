@@ -56,18 +56,48 @@ def click_button(page: Page, *labels: str) -> bool:
 
 
 def dismiss_modals(page: Page) -> None:
-    for label in ("Not now", "Close", "Got it", "Dismiss", "Skip", "Cancel"):
+    for label in (
+        "Continue editing",
+        "Not now",
+        "Close",
+        "Got it",
+        "Dismiss",
+        "Skip",
+        "Cancel",
+    ):
         click_button(page, label)
+    # Discard leave-page only if we intentionally navigate away later
+    page.evaluate(
+        """() => {
+          for (const b of document.querySelectorAll('button,[role=button],div')) {
+            const t=(b.innerText||'').trim();
+            if (t === 'Continue editing') { b.click(); return true; }
+          }
+        }"""
+    )
 
 
 def fill_caption(page: Page, caption: str) -> bool:
     selectors = [
-        'div[contenteditable="true"][role="textbox"]',
+        'div[aria-label*="Tell viewers" i][contenteditable="true"]',
+        'div[aria-label*="what your reel" i][contenteditable="true"]',
         'div[aria-label*="caption" i][contenteditable="true"]',
         'div[aria-label*="Write" i][contenteditable="true"]',
+        'div[contenteditable="true"][role="textbox"]',
+        'div[contenteditable="true"]',
         'textarea[placeholder*="caption" i]',
         'textarea[aria-label*="caption" i]',
+        'textarea[placeholder*="reel" i]',
+        'textarea',
     ]
+    # Prefer the Text field in reels composer (not title)
+    try:
+        text_label = page.get_by_text("Text (optional)", exact=False)
+        if text_label.count():
+            text_label.first.click(force=True, timeout=2000)
+            page.wait_for_timeout(200)
+    except Exception:
+        pass
     for sel in selectors:
         try:
             el = page.locator(sel).first
@@ -81,7 +111,28 @@ def fill_caption(page: Page, caption: str) -> bool:
             return True
         except Exception:
             continue
-    return False
+    # JS fallback
+    ok = page.evaluate(
+        """(cap) => {
+          const nodes=[...document.querySelectorAll('div[contenteditable="true"], textarea')];
+          // Prefer larger text areas
+          nodes.sort((a,b)=> (b.getBoundingClientRect().height*b.getBoundingClientRect().width)
+            - (a.getBoundingClientRect().height*a.getBoundingClientRect().width));
+          for (const el of nodes) {
+            const r=el.getBoundingClientRect();
+            if (r.width < 80 || r.height < 20) continue;
+            el.focus();
+            if (el.tagName === 'TEXTAREA') el.value = cap;
+            else el.textContent = cap;
+            el.dispatchEvent(new InputEvent('input', {bubbles:true, data:cap, inputType:'insertText'}));
+            el.dispatchEvent(new Event('change', {bubbles:true}));
+            return true;
+          }
+          return false;
+        }""",
+        caption[:2100],
+    )
+    return bool(ok)
 
 
 def wait_upload_ready(page: Page, timeout_s: float = 180) -> bool:
@@ -177,23 +228,66 @@ def post_short(
     if own_pw:
         pw = sync_playwright().start()
         browser = pw.chromium.connect_over_cdp(f"http://127.0.0.1:{port}")
-        page = browser.contexts[0].new_page()
+        ctx = browser.contexts[0]
+
+        def _dialog(d):
+            try:
+                d.dismiss()
+            except Exception:
+                try:
+                    d.accept()
+                except Exception:
+                    pass
+
+        ctx.on("dialog", _dialog)
+        page = ctx.new_page()
+        page.on("dialog", _dialog)
         page.bring_to_front()
 
     assert page is not None
     try:
+        # Ensure dialog handler even when page is reused
+        def _dialog2(d):
+            try:
+                d.dismiss()
+            except Exception:
+                try:
+                    d.accept()
+                except Exception:
+                    pass
+
+        try:
+            page.on("dialog", _dialog2)
+        except Exception:
+            pass
         page.goto(COMPOSER, wait_until="domcontentloaded", timeout=120000)
-        page.wait_for_timeout(2000)
+        page.wait_for_timeout(2500)
         dismiss_modals(page)
 
-        file_input = page.locator('input[type="file"]').first
-        if not file_input.count():
-            # Try click upload affordance then re-query
-            click_button(page, "Add video", "Upload", "Select video")
-            page.wait_for_timeout(1000)
-            file_input = page.locator('input[type="file"]').first
+        uploaded = False
+        # Preferred: click Add video and intercept file chooser
+        for label in ("Add video", "Upload", "Select video", "Add media"):
+            try:
+                with page.expect_file_chooser(timeout=4000) as fc_info:
+                    if not click_button(page, label):
+                        page.get_by_text(label, exact=False).first.click(timeout=2500)
+                fc_info.value.set_files(str(video_path))
+                uploaded = True
+                break
+            except Exception:
+                continue
 
-        if not file_input.count():
+        if not uploaded:
+            file_input = page.locator('input[type="file"]').first
+            if not file_input.count():
+                click_button(page, "Add video", "Upload", "Select video", "Add media")
+                page.wait_for_timeout(1000)
+                file_input = page.locator('input[type="file"]').first
+            if file_input.count():
+                file_input.set_input_files(str(video_path))
+                uploaded = True
+
+        if not uploaded:
             out["status"] = "no_file_input"
             out["url"] = page.url
             if audit_dir:
@@ -201,19 +295,28 @@ def post_short(
                 page.screenshot(path=str(audit_dir / f"no_input_{video_path.stem}.png"))
             return out
 
-        file_input.set_input_files(str(video_path))
         if not wait_upload_ready(page):
             out["status"] = "upload_timeout"
             out["url"] = page.url
             return out
 
         out["caption_ok"] = fill_caption(page, caption)
+        # Also fill Title if present
+        try:
+            title_box = page.locator('input[placeholder*="title" i], textarea[placeholder*="title" i]').first
+            if title_box.count():
+                title_box.fill((confirm_needle or caption)[:80])
+        except Exception:
+            pass
         if audit_dir:
             audit_dir.mkdir(parents=True, exist_ok=True)
             page.screenshot(path=str(audit_dir / f"before_{video_path.stem}.png"))
 
         ok = False
         for attempt in range(5):
+            # Next then Share
+            click_button(page, "Next")
+            page.wait_for_timeout(800)
             click_publish(page)
             page.wait_for_timeout(1200)
             dismiss_modals(page)

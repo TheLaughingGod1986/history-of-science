@@ -21,10 +21,24 @@ from datetime import datetime
 from pathlib import Path
 
 AUTO = Path(__file__).resolve().parent
-if str(AUTO) not in sys.path:
-    sys.path.insert(0, str(AUTO))
 
-from _sib import load  # noqa: E402
+import importlib.util as _ilu
+from pathlib import Path as _P
+def _threads_load(name: str):
+    auto = _P(__file__).resolve().parent
+    key = f"orbit_threads_auto_{name}"
+    import sys as _sys
+    if key in _sys.modules:
+        return _sys.modules[key]
+    path = auto / f"{name}.py"
+    spec = _ilu.spec_from_file_location(key, path)
+    mod = _ilu.module_from_spec(spec)
+    _sys.modules[key] = mod
+    assert spec and spec.loader
+    spec.loader.exec_module(mod)
+    return mod
+
+load = _threads_load
 
 caption = load("caption")
 config = load("config")
