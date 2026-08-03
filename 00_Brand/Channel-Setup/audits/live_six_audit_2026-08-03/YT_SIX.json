@@ -1,0 +1,80 @@
+[
+  {
+    "video_id": "1HuV8o3gOss",
+    "yt_status": "public_oembed_ok",
+    "yt_title": "Where Is Everybody? The Fermi Paradox #Space #Shorts",
+    "project": "001_Will-We-Ever-Meet-Aliens",
+    "short_id": "01",
+    "title": "Where Is Everybody? The Fermi Paradox #Space #Shorts",
+    "schedule_iso": "2026-08-04T12:30:00+01:00",
+    "visibility": "scheduled",
+    "published_now": false,
+    "index_field": "youtube_video_id",
+    "file": "10_Shorts/06_Final-Exports/aliens_short-02_fermi-paradox_v02.mp4"
+  },
+  {
+    "video_id": "KcKBixwmcV4",
+    "yt_status": "public_oembed_ok",
+    "yt_title": "What If the First Alien Clue Is Already Here?",
+    "project": "001_Will-We-Ever-Meet-Aliens",
+    "short_id": "04",
+    "title": "What If the First Alien Clue Is Already Here?",
+    "schedule_iso": "2026-08-03T12:30:00+01:00",
+    "visibility": "scheduled",
+    "published_now": false,
+    "index_field": "video_id",
+    "file": "10_Shorts/06_Final-Exports/aliens_short-04_hidden-clues_v02.mp4"
+  },
+  {
+    "video_id": "MO19iXYCu0c",
+    "yt_status": "public_oembed_ok",
+    "yt_title": "What If Aliens Are Watching Us?",
+    "project": "001_Will-We-Ever-Meet-Aliens",
+    "short_id": "03",
+    "title": "What If Aliens Are Watching Us?",
+    "schedule_iso": "2026-08-18T12:30:00+01:00",
+    "visibility": "scheduled",
+    "published_now": false,
+    "index_field": "old_video_id",
+    "file": "10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4"
+  },
+  {
+    "video_id": "UWwNKYf_aU8",
+    "yt_status": "public_oembed_ok",
+    "yt_title": "This Is Why We Haven't Met Aliens Yet #space #aliens #fermiparadox",
+    "project": "001_Will-We-Ever-Meet-Aliens",
+    "short_id": "02",
+    "title": "Space Is Rude About Distance",
+    "schedule_iso": "2026-08-11T12:30:00+01:00",
+    "visibility": "scheduled",
+    "published_now": false,
+    "index_field": "old_video_id",
+    "file": "10_Shorts/06_Final-Exports/aliens_short-01_distance_v02.mp4"
+  },
+  {
+    "video_id": "dPMJQp2gMNc",
+    "yt_status": "public_oembed_ok",
+    "yt_title": "Space Is Rude About Distance",
+    "project": "001_Will-We-Ever-Meet-Aliens",
+    "short_id": "02",
+    "title": "Space Is Rude About Distance",
+    "schedule_iso": "2026-08-11T12:30:00+01:00",
+    "visibility": "scheduled",
+    "published_now": false,
+    "index_field": "youtube_video_id",
+    "file": "10_Shorts/06_Final-Exports/aliens_short-01_distance_v02.mp4"
+  },
+  {
+    "video_id": "rFJoOdQAc9c",
+    "yt_status": "public_oembed_ok",
+    "yt_title": "What If Aliens Are Watching Us?",
+    "project": "001_Will-We-Ever-Meet-Aliens",
+    "short_id": "03",
+    "title": "What If Aliens Are Watching Us?",
+    "schedule_iso": "2026-08-18T12:30:00+01:00",
+    "visibility": "scheduled",
+    "published_now": false,
+    "index_field": "youtube_video_id",
+    "file": "10_Shorts/06_Final-Exports/aliens_short-03_zoo-hypothesis_v02.mp4"
+  }
+]

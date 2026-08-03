@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-08-03T12:50:00+01:00",
+  "youtube": {
+    "count_public_on_shorts_tab": 6,
+    "note": "All 6 return public oEmbed. Index schedule flags are stale for several.",
+    "videos": [
+      {"id": "KcKBixwmcV4", "title": "What If the First Alien Clue Is Already Here?", "role": "aliens_04_v02", "index_sched": "2026-08-03T12:30"},
+      {"id": "1HuV8o3gOss", "title": "Where Is Everybody? The Fermi Paradox", "role": "aliens_01_v02", "index_sched": "2026-08-04T12:30", "note": "Already public despite future schedule in index"},
+      {"id": "dPMJQp2gMNc", "title": "Space Is Rude About Distance", "role": "aliens_02_v02", "index_sched": "2026-08-11T12:30", "note": "Already public despite future schedule in index"},
+      {"id": "rFJoOdQAc9c", "title": "What If Aliens Are Watching Us?", "role": "aliens_03_v02", "index_sched": "2026-08-18T12:30", "note": "Already public despite future schedule in index"},
+      {"id": "UWwNKYf_aU8", "title": "This Is Why We Haven't Met Aliens Yet", "role": "aliens_02_OLD_v01", "note": "old_video_id still public — should be private"},
+      {"id": "MO19iXYCu0c", "title": "What If Aliens Are Watching Us?", "role": "aliens_03_OLD_v01", "note": "old_video_id still public — should be private"}
+    ]
+  },
+  "instagram": {
+    "orbit_reels_live": 1,
+    "items": ["Dbk4wQMAkLM — aliens_04 'in an archive'"],
+    "leftover_non_orbit": ["/p/Cq1MAN9I4pb/ DRAG IS NOT A CRIME"],
+    "missing_vs_yt6": 5
+  },
+  "facebook_page": {
+    "reels_live": 0,
+    "status": "You haven't created any reels yet.",
+    "missing_vs_yt6": 6
+  },
+  "threads": {
+    "matching_short_posts": 0,
+    "missing_vs_yt6": 6
+  },
+  "tiktok": {
+    "profile_visible": 3,
+    "items_visible": ["Watching Us / zoo", "ABOUT DISTANCE", "EVERYBODY?"],
+    "missing_vs_yt6": 3,
+    "note": "Studio also lists Public rows; profile grid shows 3. Posting ban may block further uploads."
+  },
+  "verdict": "YouTube has 6 public Shorts, but social is NOT mirrored 6-across. Closest is TikTok with 3. IG has 1 Orbit reel. FB Page and Threads have 0 of these shorts."
+}
