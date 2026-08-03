@@ -1,7 +1,7 @@
 {
   "version": 1,
   "posted": {},
-  "updated_at": "2026-08-03T12:39:16.593798+01:00",
+  "updated_at": "2026-08-03T14:05:00+01:00",
   "cleared_premature": [
     {
       "at": "2026-08-03T12:39:16.593798+01:00",
@@ -10,7 +10,26 @@
         "yt:dPMJQp2gMNc",
         "yt:rFJoOdQAc9c"
       ],
-      "reason": "YT-first cleanup \u2014 Threads early copies deleted"
+      "reason": "YT-first cleanup — Threads early copies deleted"
     }
-  ]
+  ],
+  "sync_note": "2026-08-03 social match: Watching + Clue exist on Threads as YouTube link cards only (not native video). Everybody + Distance native video uploads attach and show Posting… but do not appear on @orbitwithben. See audits/sync_socials_to_yt_2026-08-03/MATCH_STATUS.md.",
+  "failures": {
+    "yt:1HuV8o3gOss": {
+      "last_reason": "native_video_post_vanishes",
+      "last_at": "2026-08-03T14:05:00+01:00"
+    },
+    "yt:dPMJQp2gMNc": {
+      "last_reason": "native_video_post_vanishes",
+      "last_at": "2026-08-03T14:05:00+01:00"
+    },
+    "yt:rFJoOdQAc9c": {
+      "last_reason": "link_card_only",
+      "last_at": "2026-08-03T14:05:00+01:00"
+    },
+    "yt:KcKBixwmcV4": {
+      "last_reason": "link_card_only",
+      "last_at": "2026-08-03T14:05:00+01:00"
+    }
+  }
 }

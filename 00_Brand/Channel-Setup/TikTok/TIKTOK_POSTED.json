@@ -1,7 +1,7 @@
 {
   "version": 1,
   "mode": "scheduled",
-  "updated_at": "2026-08-03T12:00:02.353487+01:00",
+  "updated_at": "2026-08-03T14:06:24.369256+01:00",
   "note": "Studio-confirmed only. TikTok Schedule currently returns platform error for new uploads (2026-08-03).",
   "posted": {
     "yt:1HuV8o3gOss": {
@@ -38,7 +38,13 @@
       "youtube_id": "rFJoOdQAc9c"
     }
   },
-  "failures": {},
+  "failures": {
+    "yt:KcKBixwmcV4": {
+      "count": 1,
+      "last_reason": "check_limit",
+      "last_at": "2026-08-03T12:35:45.732665+01:00"
+    }
+  },
   "platform_block": {
     "endpoint": "POST /tiktok/web/project/post/v1/",
     "status_code": 21,

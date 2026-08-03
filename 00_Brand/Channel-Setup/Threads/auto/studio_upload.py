@@ -272,8 +272,45 @@ def post_short(
                 page.screenshot(path=str(audit_dir / "upload_fail.png"))
             return out
 
-        page.wait_for_timeout(3000)
-        out["caption_ok"] = fill_caption(page, caption)
+        # Wait for a real video preview (not just a YouTube link-card image).
+        video_ready = False
+        for _ in range(45):
+            txt = body(page)
+            if re.search(r"Failed to upload attachment|couldn't upload|upload failed", txt, re.I):
+                out["status"] = "upload_failed"
+                out["error"] = "Failed to upload attachment"
+                if audit_dir:
+                    audit_dir.mkdir(parents=True, exist_ok=True)
+                    page.screenshot(path=str(audit_dir / "upload_fail.png"))
+                return out
+            try:
+                if page.locator('[role="dialog"] video, video').count():
+                    video_ready = True
+                    break
+            except Exception:
+                pass
+            page.wait_for_timeout(2000)
+        out["video_ready"] = video_ready
+        if not video_ready:
+            out["status"] = "upload_failed"
+            out["error"] = "no video preview after attach"
+            if audit_dir:
+                audit_dir.mkdir(parents=True, exist_ok=True)
+                page.screenshot(path=str(audit_dir / "upload_fail.png"))
+            return out
+
+        # Prefer caption without a raw youtu.be URL — bare URLs often become
+        # link cards and crowd out / replace the attached video.
+        safe_caption = caption
+        if "youtu.be/" in caption or "youtube.com/" in caption:
+            safe_caption = re.sub(
+                r"https?://(?:www\.)?(?:youtu\.be/\S+|youtube\.com/\S+)",
+                "",
+                caption,
+            ).strip()
+            safe_caption = re.sub(r"\n{3,}", "\n\n", safe_caption)
+            out["caption_stripped_url"] = True
+        out["caption_ok"] = fill_caption(page, safe_caption)
         if audit_dir:
             audit_dir.mkdir(parents=True, exist_ok=True)
             page.screenshot(path=str(audit_dir / f"before_{video_path.stem}.png"))
@@ -285,6 +322,17 @@ def post_short(
             page.wait_for_timeout(2500)
             dismiss(page)
             txt = body(page).lower()
+            if "failed to upload attachment" in txt:
+                out["status"] = "upload_failed"
+                out["error"] = "Failed to upload attachment (after Post)"
+                if audit_dir:
+                    audit_dir.mkdir(parents=True, exist_ok=True)
+                    page.screenshot(path=str(audit_dir / "after_post.png"))
+                return out
+            if "posting" in txt:
+                # Give Threads time to finish the upload+publish spinner.
+                page.wait_for_timeout(15000)
+                txt = body(page).lower()
             if needle.lower() in txt or "view" in txt or "posted" in txt:
                 # Composer usually closes after success
                 if page.locator('text=New thread').count() == 0 or "What's new?" in body(page):
@@ -299,17 +347,27 @@ def post_short(
         if audit_dir:
             page.screenshot(path=str(audit_dir / "after_post.png"))
 
-        # Confirm on profile
+        # Confirm on profile — require the needle AND a video element nearby when possible.
         goto_retry(PROFILE_TMPL.format(username=username), timeout=90000)
-        page.wait_for_timeout(3000)
-        confirmed = needle.lower() in body(page).lower()
+        page.wait_for_timeout(4000)
+        profile_txt = body(page)
+        confirmed = needle.lower() in profile_txt.lower()
+        has_video = False
+        try:
+            has_video = page.locator("video").count() > 0
+        except Exception:
+            pass
         out["url"] = page.url
-        out["status"] = "ok" if confirmed else ("posted_click" if posted else "unconfirmed")
-        if out["status"] == "posted_click":
-            # Treat click-success without profile confirm as soft ok for ledger
-            out["status"] = "unconfirmed"
-        if confirmed:
+        out["profile_has_video"] = has_video
+        if confirmed and has_video:
             out["status"] = "ok"
+        elif confirmed:
+            # Text/link card only — do not treat as a successful video mirror.
+            out["status"] = "link_or_text_only"
+        elif posted:
+            out["status"] = "unconfirmed"
+        else:
+            out["status"] = "failed"
         return out
     finally:
         if own_pw:
