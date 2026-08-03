@@ -18,7 +18,19 @@ Until reels are posted to the Page:
 - Bio already: `Full films on YouTube`
 - Page URL: https://www.facebook.com/profile.php?id=61592833318203
 
-## Next manual steps (recommended)
-1. In Meta Business Suite (IG home) → Create reel → **Share to** → **Connect a Facebook Page** → select **Orbit with Ben**.
-2. Or on the Facebook Page → **Create reel** → upload the 3 short MP4s → when **Post** turns blue, publish with caption `… Full film on YouTube. https://youtu.be/Mo93x0fxB1Q`.
+## Resolution (2026-08-03 ~11:55)
+Posted all 3 shorts directly on the Facebook Page via CDP `:9222` (TikTok Chrome profile still had a live FB session; Meta profile cookies on `:9223` were wiped).
+
+Verified on Page Reels + Videos:
+- Where Is Everybody?
+- Space Is Rude About Distance
+- What If Aliens Are Watching Us?
+
+Each caption includes `Full film on YouTube. https://youtu.be/Mo93x0fxB1Q`.
+
+Artifacts: `audits/fb_page_retry_2026-08-03/V17_RESULT.json`, `v17_probe_0.png`, `v17_probe_1.png`, `_post_fb_page_reels_v17.py`.
+
+## Still recommended
+1. Re-login `~/.orbit-chrome-meta-dev` on `:9223` (start with `--remote-allow-origins=*`).
+2. In Suite → Create reel → **Share to** → **Connect a Facebook Page** → **Orbit with Ben** (so IG shares also land on FB).
 3. Exports: `02_Video-Projects/001_Will-We-Ever-Meet-Aliens/10_Shorts/06_Final-Exports/aliens_short-0{1,2,3}_*_v02.mp4`
