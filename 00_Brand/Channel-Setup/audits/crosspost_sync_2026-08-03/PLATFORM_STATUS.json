@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-08-03T06:01:03.800996+01:00",
+  "youtube": {
+    "status": "OK",
+    "live": 3,
+    "scheduled": 13
+  },
+  "meta_ig_fb": {
+    "status": "COMPLETE",
+    "live": 3,
+    "scheduled": 13,
+    "ui_verified_dates": [
+      "3 Aug",
+      "5 Aug",
+      "6 Aug",
+      "7 Aug",
+      "8 Aug",
+      "9 Aug",
+      "10 Aug",
+      "12 Aug",
+      "13 Aug",
+      "14 Aug",
+      "15 Aug",
+      "16 Aug",
+      "17 Aug"
+    ],
+    "ui_verified_times": [
+      "12:30 (11x)",
+      "21:00 (2x: 5 Aug + 12 Aug)"
+    ]
+  },
+  "threads": {
+    "status": "LIVE_OK_SCHEDULED_VIA_WATCHER",
+    "live_posted": [
+      "1HuV8o3gOss",
+      "dPMJQp2gMNc",
+      "rFJoOdQAc9c"
+    ],
+    "watcher": "dev.orbit.threads-live-shorts (running)",
+    "note": "Watcher posts at YouTube go-live for remaining 13"
+  },
+  "tiktok": {
+    "status": "BLOCKED_FROM_POSTING",
+    "api_status_code": 21,
+    "api_status_msg": "Due to multiple Community Guideline violations, you're temporarily prevented from posting. View details in your app notifications.",
+    "studio_now": [
+      "3 Aug, 12:30\u202fpm",
+      "2 Aug, 12:30\u202fpm",
+      "1 Aug, 5:00\u202fpm"
+    ],
+    "cleaned": "Deleted drifted exo schedules Aug 21-26",
+    "gap": "Cannot schedule clue/BH/exo until TikTok lifts temporary posting restriction"
+  },
+  "action_required": [
+    "TikTok mobile app \u2192 Notifications \u2192 resolve Community Guideline temporary posting ban",
+    "After unban: upload clue (today 12:30 if still relevant), BH Aug 5-10, exo Aug 12-17",
+    "After unban: post_now or fix stuck Aug 1-3 aliens if they never published (0 views)"
+  ]
+}

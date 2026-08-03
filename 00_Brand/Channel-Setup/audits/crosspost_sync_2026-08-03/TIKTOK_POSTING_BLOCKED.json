@@ -1,0 +1,15 @@
+{
+  "status_code": 21,
+  "status_msg": "Due to multiple Community Guideline violations, you're temporarily prevented from posting. View details in your app notifications.",
+  "api": "https://www.tiktok.com/tiktok/web/project/post/v1/",
+  "http_status": 200,
+  "implication": "Schedule/Post CTA appears to click but posts are rejected. Cannot upload BH Aug 5-10 or exo Aug 12-17 until ban lifts.",
+  "deleted_drifted_exo": [
+    "Aug 26",
+    "Aug 25",
+    "Aug 23",
+    "Aug 22",
+    "Aug 21(earlier)"
+  ],
+  "remaining_before_empty_check": "aliens Aug1/2/3 were present; recheck inventory screenshot"
+}
