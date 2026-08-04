@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": ".cursor/hooks/orbit-session-start.py",
+        "timeout": 10
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": ".cursor/hooks/orbit-pre-gen-remind.py",
+        "matcher": "Shell",
+        "timeout": 5
+      }
+    ]
+  }
+}

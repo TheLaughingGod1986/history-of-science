@@ -69,3 +69,12 @@ Pre-build data: `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · story/VO: `LONGFORM_STORY
 ## Agent reminder
 
 If building or advising on Orbit content, follow this file + the longform VO–picture gate + pre-build vidIQ audit. Prefer these over ad-hoc process changes.
+
+**Cursor hooks (project):**
+
+- `sessionStart` → injects this checklist + sets `ORBIT_RETENTION_GATE` env  
+- `preToolUse` (Shell) → reminds before Veo/Omni/VO gen-looking commands  
+
+Config: `.cursor/hooks.json` · scripts: `.cursor/hooks/orbit-*.py`  
+Primary enforcement remains `alwaysApply` rules in `.cursor/rules/`.
+
