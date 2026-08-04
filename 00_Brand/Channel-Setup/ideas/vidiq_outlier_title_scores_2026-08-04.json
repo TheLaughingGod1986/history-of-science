@@ -1,0 +1,5964 @@
+{
+  "pulled_at": "2026-08-04",
+  "balance_before": {
+    "type": "limited",
+    "totalCredits": 1136,
+    "renewableCredits": 1016,
+    "maxRenewableCredits": 2000,
+    "renewableResetsAt": "2026-08-30T22:23:46Z",
+    "addOnCredits": 120,
+    "maxAddOnCredits": 120
+  },
+  "scores": {
+    "scale_walk": [
+      {
+        "title": "What's Between Us and the Nearest Star? Orbit Walks There | Orbit's Cosmic Journey",
+        "result": {
+          "score": 92
+        }
+      },
+      {
+        "title": "Orbit Walks to the Nearest Star \u2014 Here's How Long It Takes | Orbit's Cosmic Journey",
+        "result": {
+          "score": 93
+        }
+      },
+      {
+        "title": "How Far Is the Nearest Star? Orbit Tries to Walk There | Orbit's Cosmic Journey",
+        "result": {
+          "score": 94
+        }
+      },
+      {
+        "title": "The Scale of the Universe: Orbit Walks From Earth to Proxima | Orbit's Cosmic Journey",
+        "result": {
+          "score": 89
+        }
+      },
+      {
+        "title": "If Orbit Walked to Proxima Centauri, How Long Would It Take? | Orbit's Cosmic Journey",
+        "result": {
+          "score": 92
+        }
+      }
+    ],
+    "aliens_wrong": [
+      {
+        "title": "Why We're Probably Wrong About Aliens | Orbit's Cosmic Journey",
+        "result": {
+          "score": 94
+        }
+      },
+      {
+        "title": "If Orbit Met an Alien, He'd Walk Right Past It | Orbit's Cosmic Journey",
+        "result": {
+          "score": 91
+        }
+      },
+      {
+        "title": "What Alien Life Would Actually Look Like | Orbit's Cosmic Journey",
+        "result": {
+          "score": 92
+        }
+      },
+      {
+        "title": "Why Alien Contact Won't Look Like the Movies | Orbit's Cosmic Journey",
+        "result": {
+          "score": 96
+        }
+      },
+      {
+        "title": "We're Looking for the Wrong Kind of Aliens | Orbit's Cosmic Journey",
+        "result": {
+          "score": 97
+        }
+      }
+    ],
+    "mars_live": [
+      {
+        "title": "Can We Actually Live on Mars? Orbit Investigates | Orbit's Cosmic Journey",
+        "result": {
+          "score": 93
+        }
+      },
+      {
+        "title": "Can We Terraform Mars? A Step-by-Step Reality Check | Orbit's Cosmic Journey",
+        "result": {
+          "score": 92
+        }
+      },
+      {
+        "title": "Why Even a Robot Can't Survive Mars Without Help | Orbit's Cosmic Journey",
+        "result": {
+          "score": 96
+        }
+      },
+      {
+        "title": "Making Mars Habitable: The Real Roadmap | Orbit's Cosmic Journey",
+        "result": {
+          "score": 86
+        }
+      },
+      {
+        "title": "Can Humans Live on Mars? The Honest Engineering Roadmap | Orbit's Cosmic Journey",
+        "result": {
+          "score": 91
+        }
+      }
+    ]
+  },
+  "keywords": {
+    "scale of the universe": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "scale of the universe",
+        "relatedScore": null,
+        "volume": 61.7112428179283,
+        "competition": 53.5,
+        "overall": 55.626745690756984,
+        "estimatedMonthlySearch": 13615,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "how big is the universe",
+          "relatedScore": 12.25,
+          "volume": 73.79381095146206,
+          "competition": 50,
+          "overall": 64.27628657087723,
+          "estimatedMonthlySearch": 87786,
+          "countryVolume": 2926,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13333334
+            },
+            {
+              "country": "PK",
+              "pct": 0.13333334
+            },
+            {
+              "country": "TR",
+              "pct": 0.1
+            },
+            {
+              "country": "BD",
+              "pct": 0.1
+            },
+            {
+              "country": "DE",
+              "pct": 0.1
+            }
+          ]
+        },
+        {
+          "keyword": "universe",
+          "relatedScore": 9.5,
+          "volume": 86.12548774430276,
+          "competition": 70,
+          "overall": 63.67529264658165,
+          "estimatedMonthlySearch": 588194,
+          "countryVolume": 4560,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.20987654
+            },
+            {
+              "country": "BR",
+              "pct": 0.13580246
+            },
+            {
+              "country": "IN",
+              "pct": 0.10699589
+            },
+            {
+              "country": "PK",
+              "pct": 0.074074075
+            },
+            {
+              "country": "US",
+              "pct": 0.06584362
+            }
+          ]
+        },
+        {
+          "keyword": "universe size comparison",
+          "relatedScore": 9.1,
+          "volume": 75.72207521010489,
+          "competition": 54.5,
+          "overall": 63.63324512606293,
+          "estimatedMonthlySearch": 118195,
+          "countryVolume": 2814,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.23529412
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "NP",
+              "pct": 0.0882353
+            },
+            {
+              "country": "PH",
+              "pct": 0.05882353
+            },
+            {
+              "country": "PK",
+              "pct": 0.05882353
+            }
+          ]
+        },
+        {
+          "keyword": "the scale of the universe",
+          "relatedScore": 7.350000000000001,
+          "volume": 55.55056789621712,
+          "competition": 48.5,
+          "overall": 53.93034073773027,
+          "estimatedMonthlySearch": 5264,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "cosmic scale",
+          "relatedScore": 7.2,
+          "volume": 54.82688311477874,
+          "competition": 43,
+          "overall": 55.696129868867246,
+          "estimatedMonthlySearch": 4708,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "universe size",
+          "relatedScore": 6.9,
+          "volume": 58.79142081908094,
+          "competition": 40,
+          "overall": 59.27485249144856,
+          "estimatedMonthlySearch": 8678,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "true scale of the universe",
+          "relatedScore": 6.125,
+          "volume": 57.57377143394825,
+          "competition": 42.4,
+          "overall": 57.58426286036895,
+          "estimatedMonthlySearch": 7192,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space documentary",
+          "relatedScore": 5.7,
+          "volume": 84.09406417913877,
+          "competition": 47,
+          "overall": 71.65643850748327,
+          "estimatedMonthlySearch": 429968,
+          "countryVolume": 2376,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.19512194
+            },
+            {
+              "country": "PK",
+              "pct": 0.18902439
+            },
+            {
+              "country": "VN",
+              "pct": 0.11585366
+            },
+            {
+              "country": "US",
+              "pct": 0.07926829
+            },
+            {
+              "country": "BD",
+              "pct": 0.05487805
+            }
+          ]
+        },
+        {
+          "keyword": "cosmos",
+          "relatedScore": 5.5,
+          "volume": 82.28482878642022,
+          "competition": 45.099999999999994,
+          "overall": 71.33089727185214,
+          "estimatedMonthlySearch": 325264,
+          "countryVolume": 12321,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.08264463
+            },
+            {
+              "country": "BR",
+              "pct": 0.08264463
+            },
+            {
+              "country": "NL",
+              "pct": 0.05785124
+            },
+            {
+              "country": "US",
+              "pct": 0.049586777
+            },
+            {
+              "country": "KR",
+              "pct": 0.049586777
+            }
+          ]
+        },
+        {
+          "keyword": "space size comparison",
+          "relatedScore": 4.9,
+          "volume": 55.63256261951801,
+          "competition": 47,
+          "overall": 54.57953757171081,
+          "estimatedMonthlySearch": 5331,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "asmongold scale of the universe",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 87.90815565826748,
+          "overall": 4.83673773669301,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "galaxy scale",
+          "relatedScore": 4.2,
+          "volume": 0,
+          "competition": 40,
+          "overall": 24,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "relaxing space video",
+          "relatedScore": 4.199999999999999,
+          "volume": 53.741116221764926,
+          "competition": 20.5,
+          "overall": 64.04466973305895,
+          "estimatedMonthlySearch": 3982,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "how small is earth",
+          "relatedScore": 4.199999999999999,
+          "volume": 54.70736454665372,
+          "competition": 21.6,
+          "overall": 64.18441872799224,
+          "estimatedMonthlySearch": 4622,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "milky way scale",
+          "relatedScore": 4.199999999999999,
+          "volume": 0,
+          "competition": 39,
+          "overall": 24.400000000000002,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "study video",
+          "relatedScore": 3.9000000000000004,
+          "volume": 62.04396790557107,
+          "competition": 28.5,
+          "overall": 65.82638074334264,
+          "estimatedMonthlySearch": 14332,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "calm video",
+          "relatedScore": 3.9000000000000004,
+          "volume": 57.16833540708708,
+          "competition": 36.5,
+          "overall": 59.701001244252254,
+          "estimatedMonthlySearch": 6756,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "universe scale",
+          "relatedScore": 3.8999999999999995,
+          "volume": 57.49760659683737,
+          "competition": 38.3,
+          "overall": 59.17856395810243,
+          "estimatedMonthlySearch": 7108,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 3.796994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "cosmic perspective",
+          "relatedScore": 3.5999999999999996,
+          "volume": 59.345298014278434,
+          "competition": 39.5,
+          "overall": 59.80717880856706,
+          "estimatedMonthlySearch": 9452,
+          "countryVolume": null,
+          "topMarkets": []
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "nearest star": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "nearest star",
+        "relatedScore": null,
+        "volume": 53.485415321843035,
+        "competition": 32.4,
+        "overall": 59.131249193105816,
+        "estimatedMonthlySearch": 3828,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "nearest star to earth",
+          "relatedScore": 19.6,
+          "volume": 0,
+          "competition": 25,
+          "overall": 30,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "nearest stars",
+          "relatedScore": 17.625,
+          "volume": 58.85535188747954,
+          "competition": 29.4,
+          "overall": 63.55321113248772,
+          "estimatedMonthlySearch": 8764,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "proxima centauri",
+          "relatedScore": 14.100000000000001,
+          "volume": 70.5386698957558,
+          "competition": 52.2,
+          "overall": 61.44320193745348,
+          "estimatedMonthlySearch": 53133,
+          "countryVolume": null,
+          "topMarkets": [
+            {
+              "country": "BR",
+              "pct": 0.3125
+            },
+            {
+              "country": "PK",
+              "pct": 0.1875
+            },
+            {
+              "country": "ES",
+              "pct": 0.0625
+            },
+            {
+              "country": "UA",
+              "pct": 0.0625
+            },
+            {
+              "country": "CM",
+              "pct": 0.0625
+            }
+          ]
+        },
+        {
+          "keyword": "alpha centauri",
+          "relatedScore": 11.1,
+          "volume": 73.18999736603523,
+          "competition": 46.2,
+          "overall": 65.43399841962113,
+          "estimatedMonthlySearch": 79979,
+          "countryVolume": null,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.12
+            },
+            {
+              "country": "VN",
+              "pct": 0.12
+            },
+            {
+              "country": "BR",
+              "pct": 0.12
+            },
+            {
+              "country": "US",
+              "pct": 0.08
+            },
+            {
+              "country": "PL",
+              "pct": 0.08
+            }
+          ]
+        },
+        {
+          "keyword": "how far is the nearest star",
+          "relatedScore": 11.025,
+          "volume": 52.65736387381772,
+          "competition": 25.5,
+          "overall": 61.39441832429063,
+          "estimatedMonthlySearch": 3369,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "nearest star to the sun",
+          "relatedScore": 11.025,
+          "volume": 0,
+          "competition": 25.9,
+          "overall": 29.64,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "nearest star to sun",
+          "relatedScore": 9.8,
+          "volume": 0,
+          "competition": 16.4,
+          "overall": 33.44,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "universe",
+          "relatedScore": 7,
+          "volume": 86.12548774430276,
+          "competition": 70,
+          "overall": 63.67529264658165,
+          "estimatedMonthlySearch": 588194,
+          "countryVolume": 4560,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.20987654
+            },
+            {
+              "country": "BR",
+              "pct": 0.13580246
+            },
+            {
+              "country": "IN",
+              "pct": 0.10699589
+            },
+            {
+              "country": "PK",
+              "pct": 0.074074075
+            },
+            {
+              "country": "US",
+              "pct": 0.06584362
+            }
+          ]
+        },
+        {
+          "keyword": "closest star",
+          "relatedScore": 6.6,
+          "volume": 53.087302950534365,
+          "competition": 57.099999999999994,
+          "overall": 49.01238177032062,
+          "estimatedMonthlySearch": 3600,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 5.75,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 5.099999999999999,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "earth",
+          "relatedScore": 5,
+          "volume": 82.41361416566374,
+          "competition": 53.8,
+          "overall": 67.92816849939824,
+          "estimatedMonthlySearch": 331790,
+          "countryVolume": 17204,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.125
+            },
+            {
+              "country": "IN",
+              "pct": 0.1171875
+            },
+            {
+              "country": "US",
+              "pct": 0.1171875
+            },
+            {
+              "country": "CZ",
+              "pct": 0.078125
+            },
+            {
+              "country": "BD",
+              "pct": 0.046875
+            }
+          ]
+        },
+        {
+          "keyword": "where is the nearest star",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 62.88951841359773,
+          "overall": 14.84419263456091,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "how far away is the nearest star",
+          "relatedScore": 4.9,
+          "volume": 53.43611467490853,
+          "competition": 20.2,
+          "overall": 63.981668804945116,
+          "estimatedMonthlySearch": 3799,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "nearest stars to the sun",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 18.7,
+          "overall": 32.52,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space documentary",
+          "relatedScore": 4.799999999999999,
+          "volume": 84.09406417913877,
+          "competition": 47,
+          "overall": 71.65643850748327,
+          "estimatedMonthlySearch": 429968,
+          "countryVolume": 2376,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.19512194
+            },
+            {
+              "country": "PK",
+              "pct": 0.18902439
+            },
+            {
+              "country": "VN",
+              "pct": 0.11585366
+            },
+            {
+              "country": "US",
+              "pct": 0.07926829
+            },
+            {
+              "country": "BD",
+              "pct": 0.05487805
+            }
+          ]
+        },
+        {
+          "keyword": "speed of light",
+          "relatedScore": 4.55,
+          "volume": 72.74887386161485,
+          "competition": 46.2,
+          "overall": 65.16932431696891,
+          "estimatedMonthlySearch": 74718,
+          "countryVolume": 2989,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13043478
+            },
+            {
+              "country": "DE",
+              "pct": 0.13043478
+            },
+            {
+              "country": "BR",
+              "pct": 0.08695652
+            },
+            {
+              "country": "IT",
+              "pct": 0.08695652
+            },
+            {
+              "country": "VN",
+              "pct": 0.08695652
+            }
+          ]
+        },
+        {
+          "keyword": "sun",
+          "relatedScore": 4.25,
+          "volume": 79.55639294712682,
+          "competition": 69,
+          "overall": 60.13383576827609,
+          "estimatedMonthlySearch": 213530,
+          "countryVolume": 18228,
+          "topMarkets": [
+            {
+              "country": "JP",
+              "pct": 0.14473684
+            },
+            {
+              "country": "IN",
+              "pct": 0.09210526
+            },
+            {
+              "country": "VN",
+              "pct": 0.065789476
+            },
+            {
+              "country": "PK",
+              "pct": 0.05263158
+            },
+            {
+              "country": "US",
+              "pct": 0.05263158
+            }
+          ]
+        },
+        {
+          "keyword": "interstellar travel",
+          "relatedScore": 4.199999999999998,
+          "volume": 60.3332813593041,
+          "competition": 53.7,
+          "overall": 54.71996881558246,
+          "estimatedMonthlySearch": 11008,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "cosmos",
+          "relatedScore": 3.75,
+          "volume": 82.28482878642022,
+          "competition": 45.099999999999994,
+          "overall": 71.33089727185214,
+          "estimatedMonthlySearch": 325264,
+          "countryVolume": 12321,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.08264463
+            },
+            {
+              "country": "BR",
+              "pct": 0.08264463
+            },
+            {
+              "country": "NL",
+              "pct": 0.05785124
+            },
+            {
+              "country": "US",
+              "pct": 0.049586777
+            },
+            {
+              "country": "KR",
+              "pct": 0.049586777
+            }
+          ]
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "proxima centauri": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "proxima centauri",
+        "relatedScore": null,
+        "volume": 70.5386698957558,
+        "competition": 52.2,
+        "overall": 61.44320193745348,
+        "estimatedMonthlySearch": 53133,
+        "countryVolume": null,
+        "topMarkets": [
+          {
+            "country": "BR",
+            "pct": 0.3125
+          },
+          {
+            "country": "PK",
+            "pct": 0.1875
+          },
+          {
+            "country": "ES",
+            "pct": 0.0625
+          },
+          {
+            "country": "UA",
+            "pct": 0.0625
+          },
+          {
+            "country": "CM",
+            "pct": 0.0625
+          }
+        ]
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "proxima centauri b",
+          "relatedScore": 20.825,
+          "volume": 64.5351479147086,
+          "competition": 46.7,
+          "overall": 60.04108874882516,
+          "estimatedMonthlySearch": 21047,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "alpha centauri",
+          "relatedScore": 10.799999999999997,
+          "volume": 73.18999736603523,
+          "competition": 46.2,
+          "overall": 65.43399841962113,
+          "estimatedMonthlySearch": 79979,
+          "countryVolume": null,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.12
+            },
+            {
+              "country": "VN",
+              "pct": 0.12
+            },
+            {
+              "country": "BR",
+              "pct": 0.12
+            },
+            {
+              "country": "US",
+              "pct": 0.08
+            },
+            {
+              "country": "PL",
+              "pct": 0.08
+            }
+          ]
+        },
+        {
+          "keyword": "proxima b",
+          "relatedScore": 10.2,
+          "volume": 66.86509879694302,
+          "competition": 51.2,
+          "overall": 59.6390592781658,
+          "estimatedMonthlySearch": 30149,
+          "countryVolume": 3033,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space documentary",
+          "relatedScore": 7.8,
+          "volume": 84.09406417913877,
+          "competition": 47,
+          "overall": 71.65643850748327,
+          "estimatedMonthlySearch": 429968,
+          "countryVolume": 2376,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.19512194
+            },
+            {
+              "country": "PK",
+              "pct": 0.18902439
+            },
+            {
+              "country": "VN",
+              "pct": 0.11585366
+            },
+            {
+              "country": "US",
+              "pct": 0.07926829
+            },
+            {
+              "country": "BD",
+              "pct": 0.05487805
+            }
+          ]
+        },
+        {
+          "keyword": "how long to reach proxima centauri",
+          "relatedScore": 7.350000000000001,
+          "volume": 54.67079293750699,
+          "competition": 24.2,
+          "overall": 63.122475762504195,
+          "estimatedMonthlySearch": 4596,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 7.046994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 6.5,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        },
+        {
+          "keyword": "distance pluto proxima centauri",
+          "relatedScore": 6.125,
+          "volume": 0,
+          "competition": 35.099999999999994,
+          "overall": 25.960000000000004,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "proxima centauri distance",
+          "relatedScore": 6.125,
+          "volume": 0,
+          "competition": 13.3,
+          "overall": 34.68,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "red dwarf star",
+          "relatedScore": 5.6,
+          "volume": 52.88612166745078,
+          "competition": 51.2,
+          "overall": 51.25167300047046,
+          "estimatedMonthlySearch": 3490,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "earth",
+          "relatedScore": 5.5,
+          "volume": 82.41361416566374,
+          "competition": 53.8,
+          "overall": 67.92816849939824,
+          "estimatedMonthlySearch": 331790,
+          "countryVolume": 17204,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.125
+            },
+            {
+              "country": "IN",
+              "pct": 0.1171875
+            },
+            {
+              "country": "US",
+              "pct": 0.1171875
+            },
+            {
+              "country": "CZ",
+              "pct": 0.078125
+            },
+            {
+              "country": "BD",
+              "pct": 0.046875
+            }
+          ]
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 5.4,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "space exploration",
+          "relatedScore": 5.1,
+          "volume": 76.72133279249779,
+          "competition": 50,
+          "overall": 66.03279967549867,
+          "estimatedMonthlySearch": 137892,
+          "countryVolume": 2758,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.3877551
+            },
+            {
+              "country": "US",
+              "pct": 0.1632653
+            },
+            {
+              "country": "IN",
+              "pct": 0.08163265
+            },
+            {
+              "country": "VN",
+              "pct": 0.040816326
+            },
+            {
+              "country": "NL",
+              "pct": 0.040816326
+            }
+          ]
+        },
+        {
+          "keyword": "from pluto to proxima centauri",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 23.1,
+          "overall": 30.760000000000005,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "why is diifficult to reach pluto and proxima centauri",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 40.5,
+          "overall": 23.8,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "going from pluto to proxima centauri",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 29.099999999999998,
+          "overall": 28.360000000000003,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "how far are pluto and proxima centauri",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 35.5,
+          "overall": 25.8,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "how far from pluto to proxima centauri",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 26.099999999999998,
+          "overall": 29.560000000000002,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "life on proxima centauri b",
+          "relatedScore": 4.9,
+          "volume": 54.98871164424338,
+          "competition": 49,
+          "overall": 53.393226986546026,
+          "estimatedMonthlySearch": 4827,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "proxima centauri d",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 35,
+          "overall": 26,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "how far is the nearest star": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "how far is the nearest star",
+        "relatedScore": null,
+        "volume": 52.65736387381772,
+        "competition": 25.5,
+        "overall": 61.39441832429063,
+        "estimatedMonthlySearch": 3369,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "proxima centauri",
+          "relatedScore": 7.799999999999998,
+          "volume": 70.5386698957558,
+          "competition": 52.2,
+          "overall": 61.44320193745348,
+          "estimatedMonthlySearch": 53133,
+          "countryVolume": null,
+          "topMarkets": [
+            {
+              "country": "BR",
+              "pct": 0.3125
+            },
+            {
+              "country": "PK",
+              "pct": 0.1875
+            },
+            {
+              "country": "ES",
+              "pct": 0.0625
+            },
+            {
+              "country": "UA",
+              "pct": 0.0625
+            },
+            {
+              "country": "CM",
+              "pct": 0.0625
+            }
+          ]
+        },
+        {
+          "keyword": "alpha centauri",
+          "relatedScore": 5.999999999999998,
+          "volume": 73.18999736603523,
+          "competition": 46.2,
+          "overall": 65.43399841962113,
+          "estimatedMonthlySearch": 79979,
+          "countryVolume": null,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.12
+            },
+            {
+              "country": "VN",
+              "pct": 0.12
+            },
+            {
+              "country": "BR",
+              "pct": 0.12
+            },
+            {
+              "country": "US",
+              "pct": 0.08
+            },
+            {
+              "country": "PL",
+              "pct": 0.08
+            }
+          ]
+        },
+        {
+          "keyword": "nearest star",
+          "relatedScore": 5.699999999999999,
+          "volume": 53.485415321843035,
+          "competition": 32.4,
+          "overall": 59.131249193105816,
+          "estimatedMonthlySearch": 3828,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 5.5,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        },
+        {
+          "keyword": "universe",
+          "relatedScore": 4.5,
+          "volume": 86.12548774430276,
+          "competition": 70,
+          "overall": 63.67529264658165,
+          "estimatedMonthlySearch": 588194,
+          "countryVolume": 4560,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.20987654
+            },
+            {
+              "country": "BR",
+              "pct": 0.13580246
+            },
+            {
+              "country": "IN",
+              "pct": 0.10699589
+            },
+            {
+              "country": "PK",
+              "pct": 0.074074075
+            },
+            {
+              "country": "US",
+              "pct": 0.06584362
+            }
+          ]
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 4.499999999999999,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "space documentary",
+          "relatedScore": 4.199999999999999,
+          "volume": 84.09406417913877,
+          "competition": 47,
+          "overall": 71.65643850748327,
+          "estimatedMonthlySearch": 429968,
+          "countryVolume": 2376,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.19512194
+            },
+            {
+              "country": "PK",
+              "pct": 0.18902439
+            },
+            {
+              "country": "VN",
+              "pct": 0.11585366
+            },
+            {
+              "country": "US",
+              "pct": 0.07926829
+            },
+            {
+              "country": "BD",
+              "pct": 0.05487805
+            }
+          ]
+        },
+        {
+          "keyword": "light year explained",
+          "relatedScore": 4.199999999999999,
+          "volume": 53.23507519135971,
+          "competition": 29.5,
+          "overall": 60.141045114815824,
+          "estimatedMonthlySearch": 3683,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "interstellar travel",
+          "relatedScore": 3.5999999999999988,
+          "volume": 60.3332813593041,
+          "competition": 53.7,
+          "overall": 54.71996881558246,
+          "estimatedMonthlySearch": 11008,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "sun",
+          "relatedScore": 3.5,
+          "volume": 79.55639294712682,
+          "competition": 69,
+          "overall": 60.13383576827609,
+          "estimatedMonthlySearch": 213530,
+          "countryVolume": 18228,
+          "topMarkets": [
+            {
+              "country": "JP",
+              "pct": 0.14473684
+            },
+            {
+              "country": "IN",
+              "pct": 0.09210526
+            },
+            {
+              "country": "VN",
+              "pct": 0.065789476
+            },
+            {
+              "country": "PK",
+              "pct": 0.05263158
+            },
+            {
+              "country": "US",
+              "pct": 0.05263158
+            }
+          ]
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 3.296994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "cosmos",
+          "relatedScore": 3,
+          "volume": 82.28482878642022,
+          "competition": 45.099999999999994,
+          "overall": 71.33089727185214,
+          "estimatedMonthlySearch": 325264,
+          "countryVolume": 12321,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.08264463
+            },
+            {
+              "country": "BR",
+              "pct": 0.08264463
+            },
+            {
+              "country": "NL",
+              "pct": 0.05785124
+            },
+            {
+              "country": "US",
+              "pct": 0.049586777
+            },
+            {
+              "country": "KR",
+              "pct": 0.049586777
+            }
+          ]
+        },
+        {
+          "keyword": "astrophysics",
+          "relatedScore": 3,
+          "volume": 68.12425568014413,
+          "competition": 56,
+          "overall": 58.47455340808648,
+          "estimatedMonthlySearch": 36612,
+          "countryVolume": 3116,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.25
+            },
+            {
+              "country": "BY",
+              "pct": 0.16666667
+            },
+            {
+              "country": "BG",
+              "pct": 0.083333336
+            },
+            {
+              "country": "IT",
+              "pct": 0.083333336
+            },
+            {
+              "country": "MY",
+              "pct": 0.083333336
+            }
+          ]
+        },
+        {
+          "keyword": "nearest star to earth",
+          "relatedScore": 2.8,
+          "volume": 0,
+          "competition": 25,
+          "overall": 30,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "how far away is proxima centauri",
+          "relatedScore": 2.8,
+          "volume": 0,
+          "competition": 38.599999999999994,
+          "overall": 24.560000000000002,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "stars",
+          "relatedScore": 2.75,
+          "volume": 77.86093497600856,
+          "competition": 64,
+          "overall": 61.11656098560513,
+          "estimatedMonthlySearch": 164392,
+          "countryVolume": 5390,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.13793103
+            },
+            {
+              "country": "BR",
+              "pct": 0.0862069
+            },
+            {
+              "country": "IN",
+              "pct": 0.05172414
+            },
+            {
+              "country": "NL",
+              "pct": 0.05172414
+            },
+            {
+              "country": "PK",
+              "pct": 0.05172414
+            }
+          ]
+        },
+        {
+          "keyword": "earth",
+          "relatedScore": 2.75,
+          "volume": 82.41361416566374,
+          "competition": 53.8,
+          "overall": 67.92816849939824,
+          "estimatedMonthlySearch": 331790,
+          "countryVolume": 17204,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.125
+            },
+            {
+              "country": "IN",
+              "pct": 0.1171875
+            },
+            {
+              "country": "US",
+              "pct": 0.1171875
+            },
+            {
+              "country": "CZ",
+              "pct": 0.078125
+            },
+            {
+              "country": "BD",
+              "pct": 0.046875
+            }
+          ]
+        },
+        {
+          "keyword": "space facts",
+          "relatedScore": 2.7,
+          "volume": 81.59351925747991,
+          "competition": 42.5,
+          "overall": 71.95611155448795,
+          "estimatedMonthlySearch": 292365,
+          "countryVolume": 4998,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.20560747
+            },
+            {
+              "country": "IN",
+              "pct": 0.14018692
+            },
+            {
+              "country": "VN",
+              "pct": 0.06542056
+            },
+            {
+              "country": "US",
+              "pct": 0.06542056
+            },
+            {
+              "country": "CA",
+              "pct": 0.046728972
+            }
+          ]
+        },
+        {
+          "keyword": "closest star",
+          "relatedScore": 2.6999999999999997,
+          "volume": 53.087302950534365,
+          "competition": 57.099999999999994,
+          "overall": 49.01238177032062,
+          "estimatedMonthlySearch": 3600,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space travel",
+          "relatedScore": 2.6999999999999997,
+          "volume": 67.1396061190147,
+          "competition": 55,
+          "overall": 58.28376367140882,
+          "estimatedMonthlySearch": 31453,
+          "countryVolume": 3080,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.4
+            },
+            {
+              "country": "RU",
+              "pct": 0.2
+            },
+            {
+              "country": "TR",
+              "pct": 0.1
+            },
+            {
+              "country": "PK",
+              "pct": 0.1
+            },
+            {
+              "country": "AU",
+              "pct": 0.1
+            }
+          ]
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "alien life": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "alien life",
+        "relatedScore": null,
+        "volume": 63.85267708728598,
+        "competition": 58,
+        "overall": 55.11160625237159,
+        "estimatedMonthlySearch": 18944,
+        "countryVolume": 3391,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "brian cox alien life",
+          "relatedScore": 9.8,
+          "volume": 52.86379212587173,
+          "competition": 41,
+          "overall": 55.318275275523035,
+          "estimatedMonthlySearch": 3478,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "fermi paradox",
+          "relatedScore": 8.4,
+          "volume": 75.98868330534572,
+          "competition": 64,
+          "overall": 59.99320998320743,
+          "estimatedMonthlySearch": 123157,
+          "countryVolume": 2700,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.20512821
+            },
+            {
+              "country": "IN",
+              "pct": 0.15384616
+            },
+            {
+              "country": "DE",
+              "pct": 0.12820514
+            },
+            {
+              "country": "TR",
+              "pct": 0.12820514
+            },
+            {
+              "country": "MA",
+              "pct": 0.07692308
+            }
+          ]
+        },
+        {
+          "keyword": "aliens",
+          "relatedScore": 6.2140804597701145,
+          "volume": 81.64227425805343,
+          "competition": 75,
+          "overall": 58.98536455483206,
+          "estimatedMonthlySearch": 294572,
+          "countryVolume": 9985,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.16239317
+            },
+            {
+              "country": "IN",
+              "pct": 0.094017096
+            },
+            {
+              "country": "BR",
+              "pct": 0.094017096
+            },
+            {
+              "country": "PK",
+              "pct": 0.08547009
+            },
+            {
+              "country": "DE",
+              "pct": 0.034188036
+            }
+          ]
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 5.3999999999999995,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "alien life documentary",
+          "relatedScore": 4.9,
+          "volume": 52.91392587231051,
+          "competition": 47,
+          "overall": 52.948355523386304,
+          "estimatedMonthlySearch": 3505,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "alien life cycle",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 23.6,
+          "overall": 30.560000000000002,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "alien life on proxima b",
+          "relatedScore": 4.9,
+          "volume": 55.43249976883203,
+          "competition": 39,
+          "overall": 57.659499861299224,
+          "estimatedMonthlySearch": 5169,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "brian cox on intelligent alien life",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 43,
+          "overall": 22.8,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "intelligent alien life",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 40.5,
+          "overall": 23.8,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "brian cox talks about alien life",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 44,
+          "overall": 22.400000000000002,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "searching for alien life",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 40,
+          "overall": 24,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "alien lifeforms",
+          "relatedScore": 4.7,
+          "volume": 55.38340017510725,
+          "competition": 46.5,
+          "overall": 54.63004010506435,
+          "estimatedMonthlySearch": 5130,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "alien lifeform",
+          "relatedScore": 4.7,
+          "volume": 0,
+          "competition": 42.5,
+          "overall": 23,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "extraterrestrial life",
+          "relatedScore": 3.9000000000000004,
+          "volume": 59.82441736451134,
+          "competition": 50,
+          "overall": 55.8946504187068,
+          "estimatedMonthlySearch": 10177,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "what if",
+          "relatedScore": 3.5999999999999996,
+          "volume": 96.50764674854125,
+          "competition": 72,
+          "overall": 69.10458804912474,
+          "estimatedMonthlySearch": 2917550,
+          "countryVolume": 57279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.10290055
+            },
+            {
+              "country": "PK",
+              "pct": 0.10013812
+            },
+            {
+              "country": "US",
+              "pct": 0.09737569
+            },
+            {
+              "country": "VN",
+              "pct": 0.084254146
+            },
+            {
+              "country": "TR",
+              "pct": 0.050414365
+            }
+          ]
+        },
+        {
+          "keyword": "ufo",
+          "relatedScore": 3.381188118811881,
+          "volume": 86.65552409151793,
+          "competition": 69,
+          "overall": 64.39331445491077,
+          "estimatedMonthlySearch": 638304,
+          "countryVolume": 13533,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.17358491
+            },
+            {
+              "country": "VN",
+              "pct": 0.094339624
+            },
+            {
+              "country": "JP",
+              "pct": 0.0754717
+            },
+            {
+              "country": "ID",
+              "pct": 0.064150944
+            },
+            {
+              "country": "DE",
+              "pct": 0.049056605
+            }
+          ]
+        },
+        {
+          "keyword": "nasa",
+          "relatedScore": 3.25,
+          "volume": 88.17624052502772,
+          "competition": 75,
+          "overall": 62.90574431501663,
+          "estimatedMonthlySearch": 807049,
+          "countryVolume": 34994,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.13218391
+            },
+            {
+              "country": "VN",
+              "pct": 0.123563215
+            },
+            {
+              "country": "IN",
+              "pct": 0.11494253
+            },
+            {
+              "country": "US",
+              "pct": 0.094827585
+            },
+            {
+              "country": "BR",
+              "pct": 0.07471264
+            }
+          ]
+        },
+        {
+          "keyword": "ancient aliens full episodes",
+          "relatedScore": 3.15,
+          "volume": 68.52673623528338,
+          "competition": 66,
+          "overall": 54.71604174117003,
+          "estimatedMonthlySearch": 38957,
+          "countryVolume": 3896,
+          "topMarkets": []
+        },
+        {
+          "keyword": "brian cox science time",
+          "relatedScore": 2.8,
+          "volume": 0,
+          "competition": 46,
+          "overall": 21.6,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "universe",
+          "relatedScore": 2.75,
+          "volume": 86.12548774430276,
+          "competition": 70,
+          "overall": 63.67529264658165,
+          "estimatedMonthlySearch": 588194,
+          "countryVolume": 4560,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.20987654
+            },
+            {
+              "country": "BR",
+              "pct": 0.13580246
+            },
+            {
+              "country": "IN",
+              "pct": 0.10699589
+            },
+            {
+              "country": "PK",
+              "pct": 0.074074075
+            },
+            {
+              "country": "US",
+              "pct": 0.06584362
+            }
+          ]
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "what do aliens look like": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "what do aliens look like",
+        "relatedScore": null,
+        "volume": 0,
+        "competition": 45,
+        "overall": 22,
+        "estimatedMonthlySearch": 0,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "aliens",
+          "relatedScore": 5.2140804597701145,
+          "volume": 81.64227425805343,
+          "competition": 75,
+          "overall": 58.98536455483206,
+          "estimatedMonthlySearch": 294572,
+          "countryVolume": 9985,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.16239317
+            },
+            {
+              "country": "IN",
+              "pct": 0.094017096
+            },
+            {
+              "country": "BR",
+              "pct": 0.094017096
+            },
+            {
+              "country": "PK",
+              "pct": 0.08547009
+            },
+            {
+              "country": "DE",
+              "pct": 0.034188036
+            }
+          ]
+        },
+        {
+          "keyword": "what do aliens look like?",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 41.5,
+          "overall": 23.400000000000002,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "are aliens real",
+          "relatedScore": 4.55,
+          "volume": 59.24716304763828,
+          "competition": 49,
+          "overall": 55.948297828582966,
+          "estimatedMonthlySearch": 9310,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "alien life",
+          "relatedScore": 4.5,
+          "volume": 63.85267708728598,
+          "competition": 58,
+          "overall": 55.11160625237159,
+          "estimatedMonthlySearch": 18944,
+          "countryVolume": 3391,
+          "topMarkets": []
+        },
+        {
+          "keyword": "extraterrestrial life",
+          "relatedScore": 4.2,
+          "volume": 59.82441736451134,
+          "competition": 50,
+          "overall": 55.8946504187068,
+          "estimatedMonthlySearch": 10177,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "do aliens exist",
+          "relatedScore": 4.199999999999999,
+          "volume": 58.8494313356258,
+          "competition": 56.5,
+          "overall": 52.70965880137548,
+          "estimatedMonthlySearch": 8756,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "alien civilization",
+          "relatedScore": 3.5999999999999996,
+          "volume": 54.21806881289071,
+          "competition": 62,
+          "overall": 47.73084128773443,
+          "estimatedMonthlySearch": 4286,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "extraterrestrials",
+          "relatedScore": 3,
+          "volume": 54.53826401070827,
+          "competition": 57,
+          "overall": 49.922958406424954,
+          "estimatedMonthlySearch": 4503,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "what would aliens look like",
+          "relatedScore": 2.8,
+          "volume": 53.56285539509202,
+          "competition": 42,
+          "overall": 55.33771323705521,
+          "estimatedMonthlySearch": 3874,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "ancient aliens full episodes",
+          "relatedScore": 2.8,
+          "volume": 68.52673623528338,
+          "competition": 66,
+          "overall": 54.71604174117003,
+          "estimatedMonthlySearch": 38957,
+          "countryVolume": 3896,
+          "topMarkets": []
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 2.6999999999999993,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "ancient aliens",
+          "relatedScore": 2.6999999999999993,
+          "volume": 76.60554103607254,
+          "competition": 79,
+          "overall": 54.36332462164352,
+          "estimatedMonthlySearch": 135451,
+          "countryVolume": 2764,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.33333334
+            },
+            {
+              "country": "VN",
+              "pct": 0.14583333
+            },
+            {
+              "country": "PK",
+              "pct": 0.083333336
+            },
+            {
+              "country": "BR",
+              "pct": 0.083333336
+            },
+            {
+              "country": "ES",
+              "pct": 0.041666668
+            }
+          ]
+        },
+        {
+          "keyword": "extra terrestrials",
+          "relatedScore": 2.3999999999999995,
+          "volume": 54.060368418377195,
+          "competition": 49,
+          "overall": 52.836221051026314,
+          "estimatedMonthlySearch": 4183,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "evolution",
+          "relatedScore": 2.25,
+          "volume": 83.99827896578593,
+          "competition": 61,
+          "overall": 65.99896737947157,
+          "estimatedMonthlySearch": 423662,
+          "countryVolume": 2383,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.11627907
+            },
+            {
+              "country": "PK",
+              "pct": 0.10465116
+            },
+            {
+              "country": "DE",
+              "pct": 0.08139535
+            },
+            {
+              "country": "VN",
+              "pct": 0.08139535
+            },
+            {
+              "country": "TR",
+              "pct": 0.08139535
+            }
+          ]
+        },
+        {
+          "keyword": "universe",
+          "relatedScore": 2.25,
+          "volume": 86.12548774430276,
+          "competition": 70,
+          "overall": 63.67529264658165,
+          "estimatedMonthlySearch": 588194,
+          "countryVolume": 4560,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.20987654
+            },
+            {
+              "country": "BR",
+              "pct": 0.13580246
+            },
+            {
+              "country": "IN",
+              "pct": 0.10699589
+            },
+            {
+              "country": "PK",
+              "pct": 0.074074075
+            },
+            {
+              "country": "US",
+              "pct": 0.06584362
+            }
+          ]
+        },
+        {
+          "keyword": "space documentary",
+          "relatedScore": 1.7999999999999998,
+          "volume": 84.09406417913877,
+          "competition": 47,
+          "overall": 71.65643850748327,
+          "estimatedMonthlySearch": 429968,
+          "countryVolume": 2376,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.19512194
+            },
+            {
+              "country": "PK",
+              "pct": 0.18902439
+            },
+            {
+              "country": "VN",
+              "pct": 0.11585366
+            },
+            {
+              "country": "US",
+              "pct": 0.07926829
+            },
+            {
+              "country": "BD",
+              "pct": 0.05487805
+            }
+          ]
+        },
+        {
+          "keyword": "intelligent life",
+          "relatedScore": 1.7999999999999998,
+          "volume": 55.38719029730188,
+          "competition": 49.9,
+          "overall": 53.27231417838112,
+          "estimatedMonthlySearch": 5133,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "alien worlds",
+          "relatedScore": 1.7999999999999998,
+          "volume": 64.99438983237036,
+          "competition": 42.099999999999994,
+          "overall": 62.15663389942222,
+          "estimatedMonthlySearch": 22592,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "physics",
+          "relatedScore": 1.75,
+          "volume": 84.9729811087277,
+          "competition": 66.5,
+          "overall": 64.38378866523662,
+          "estimatedMonthlySearch": 492396,
+          "countryVolume": 11668,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.22279793
+            },
+            {
+              "country": "US",
+              "pct": 0.10880829
+            },
+            {
+              "country": "PK",
+              "pct": 0.09326425
+            },
+            {
+              "country": "BD",
+              "pct": 0.062176164
+            },
+            {
+              "country": "BR",
+              "pct": 0.062176164
+            }
+          ]
+        },
+        {
+          "keyword": "astrophysics",
+          "relatedScore": 1.75,
+          "volume": 68.12425568014413,
+          "competition": 56,
+          "overall": 58.47455340808648,
+          "estimatedMonthlySearch": 36612,
+          "countryVolume": 3116,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.25
+            },
+            {
+              "country": "BY",
+              "pct": 0.16666667
+            },
+            {
+              "country": "BG",
+              "pct": 0.083333336
+            },
+            {
+              "country": "IT",
+              "pct": 0.083333336
+            },
+            {
+              "country": "MY",
+              "pct": 0.083333336
+            }
+          ]
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "are we alone": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "are we alone",
+        "relatedScore": null,
+        "volume": 60.203605062755486,
+        "competition": 47.8,
+        "overall": 57.00216303765329,
+        "estimatedMonthlySearch": 10790,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "are we alone in the universe",
+          "relatedScore": 17.150000000000002,
+          "volume": 65.16990759873104,
+          "competition": 53.2,
+          "overall": 57.821944559238624,
+          "estimatedMonthlySearch": 23212,
+          "countryVolume": 5655,
+          "topMarkets": []
+        },
+        {
+          "keyword": "universe",
+          "relatedScore": 7.5,
+          "volume": 86.12548774430276,
+          "competition": 70,
+          "overall": 63.67529264658165,
+          "estimatedMonthlySearch": 588194,
+          "countryVolume": 4560,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.20987654
+            },
+            {
+              "country": "BR",
+              "pct": 0.13580246
+            },
+            {
+              "country": "IN",
+              "pct": 0.10699589
+            },
+            {
+              "country": "PK",
+              "pct": 0.074074075
+            },
+            {
+              "country": "US",
+              "pct": 0.06584362
+            }
+          ]
+        },
+        {
+          "keyword": "alien life",
+          "relatedScore": 5.3999999999999995,
+          "volume": 63.85267708728598,
+          "competition": 58,
+          "overall": 55.11160625237159,
+          "estimatedMonthlySearch": 18944,
+          "countryVolume": 3391,
+          "topMarkets": []
+        },
+        {
+          "keyword": "fermi paradox",
+          "relatedScore": 5.3999999999999995,
+          "volume": 75.98868330534572,
+          "competition": 64,
+          "overall": 59.99320998320743,
+          "estimatedMonthlySearch": 123157,
+          "countryVolume": 2700,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.20512821
+            },
+            {
+              "country": "IN",
+              "pct": 0.15384616
+            },
+            {
+              "country": "DE",
+              "pct": 0.12820514
+            },
+            {
+              "country": "TR",
+              "pct": 0.12820514
+            },
+            {
+              "country": "MA",
+              "pct": 0.07692308
+            }
+          ]
+        },
+        {
+          "keyword": "are we alone in the galaxy? brian cox on alien life",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 35.5,
+          "overall": 25.8,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "neil tyson are we alone",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 79.1710153570896,
+          "overall": 8.33159385716416,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "are we alone in the universe brian cox",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 53,
+          "overall": 18.8,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "are we alone in the galaxy",
+          "relatedScore": 3.6749999999999994,
+          "volume": 53.78654286088739,
+          "competition": 42,
+          "overall": 55.47192571653243,
+          "estimatedMonthlySearch": 4010,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "extraterrestrial life",
+          "relatedScore": 3.5999999999999996,
+          "volume": 59.82441736451134,
+          "competition": 50,
+          "overall": 55.8946504187068,
+          "estimatedMonthlySearch": 10177,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "brian cox",
+          "relatedScore": 3.3,
+          "volume": 77.26753356007747,
+          "competition": 64.5,
+          "overall": 60.560520136046485,
+          "estimatedMonthlySearch": 150013,
+          "countryVolume": 27275,
+          "topMarkets": [
+            {
+              "country": "GB",
+              "pct": 0.16981132
+            },
+            {
+              "country": "US",
+              "pct": 0.1509434
+            },
+            {
+              "country": "PK",
+              "pct": 0.11320755
+            },
+            {
+              "country": "NG",
+              "pct": 0.0754717
+            },
+            {
+              "country": "HU",
+              "pct": 0.0754717
+            }
+          ]
+        },
+        {
+          "keyword": "mars",
+          "relatedScore": 3,
+          "volume": 81.92652506922404,
+          "competition": 56.3,
+          "overall": 66.63591504153442,
+          "estimatedMonthlySearch": 307775,
+          "countryVolume": 9928,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "VN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "PK",
+              "pct": 0.10084034
+            },
+            {
+              "country": "TR",
+              "pct": 0.067226894
+            },
+            {
+              "country": "US",
+              "pct": 0.05882353
+            }
+          ]
+        },
+        {
+          "keyword": "physics",
+          "relatedScore": 3,
+          "volume": 84.9729811087277,
+          "competition": 66.5,
+          "overall": 64.38378866523662,
+          "estimatedMonthlySearch": 492396,
+          "countryVolume": 11668,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.22279793
+            },
+            {
+              "country": "US",
+              "pct": 0.10880829
+            },
+            {
+              "country": "PK",
+              "pct": 0.09326425
+            },
+            {
+              "country": "BD",
+              "pct": 0.062176164
+            },
+            {
+              "country": "BR",
+              "pct": 0.062176164
+            }
+          ]
+        },
+        {
+          "keyword": "science time",
+          "relatedScore": 3,
+          "volume": 66.54171355571519,
+          "competition": 52.5,
+          "overall": 58.925028133429116,
+          "estimatedMonthlySearch": 28682,
+          "countryVolume": 2808,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.2
+            },
+            {
+              "country": "BR",
+              "pct": 0.2
+            },
+            {
+              "country": "PK",
+              "pct": 0.2
+            },
+            {
+              "country": "US",
+              "pct": 0.1
+            },
+            {
+              "country": "TR",
+              "pct": 0.1
+            }
+          ]
+        },
+        {
+          "keyword": "astrophysics",
+          "relatedScore": 3,
+          "volume": 68.12425568014413,
+          "competition": 56,
+          "overall": 58.47455340808648,
+          "estimatedMonthlySearch": 36612,
+          "countryVolume": 3116,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.25
+            },
+            {
+              "country": "BY",
+              "pct": 0.16666667
+            },
+            {
+              "country": "BG",
+              "pct": 0.083333336
+            },
+            {
+              "country": "IT",
+              "pct": 0.083333336
+            },
+            {
+              "country": "MY",
+              "pct": 0.083333336
+            }
+          ]
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 3,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        },
+        {
+          "keyword": "cosmos",
+          "relatedScore": 3,
+          "volume": 82.28482878642022,
+          "competition": 45.099999999999994,
+          "overall": 71.33089727185214,
+          "estimatedMonthlySearch": 325264,
+          "countryVolume": 12321,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.08264463
+            },
+            {
+              "country": "BR",
+              "pct": 0.08264463
+            },
+            {
+              "country": "NL",
+              "pct": 0.05785124
+            },
+            {
+              "country": "US",
+              "pct": 0.049586777
+            },
+            {
+              "country": "KR",
+              "pct": 0.049586777
+            }
+          ]
+        },
+        {
+          "keyword": "the great filter",
+          "relatedScore": 2.8,
+          "volume": 70.19130317205462,
+          "competition": 45.1,
+          "overall": 64.07478190323278,
+          "estimatedMonthlySearch": 50361,
+          "countryVolume": 3148,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.23076923
+            },
+            {
+              "country": "US",
+              "pct": 0.15384616
+            },
+            {
+              "country": "CZ",
+              "pct": 0.07692308
+            },
+            {
+              "country": "TW",
+              "pct": 0.07692308
+            },
+            {
+              "country": "IN",
+              "pct": 0.07692308
+            }
+          ]
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 2.796994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "science",
+          "relatedScore": 2.777488425925926,
+          "volume": 88.97248395349354,
+          "competition": 56,
+          "overall": 70.98349037209613,
+          "estimatedMonthlySearch": 912515,
+          "countryVolume": 12913,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.1670823
+            },
+            {
+              "country": "US",
+              "pct": 0.10473815
+            },
+            {
+              "country": "PK",
+              "pct": 0.097256854
+            },
+            {
+              "country": "VN",
+              "pct": 0.08478803
+            },
+            {
+              "country": "BD",
+              "pct": 0.052369077
+            }
+          ]
+        },
+        {
+          "keyword": "astrobiology",
+          "relatedScore": 2.25,
+          "volume": 54.00276901398681,
+          "competition": 44.4,
+          "overall": 54.64166140839208,
+          "estimatedMonthlySearch": 4146,
+          "countryVolume": null,
+          "topMarkets": []
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "silicon based life": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "silicon based life",
+        "relatedScore": null,
+        "volume": 53.4531572815404,
+        "competition": 45.2,
+        "overall": 53.99189436892424,
+        "estimatedMonthlySearch": 3809,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "carbon based life",
+          "relatedScore": 5.949999999999999,
+          "volume": 55.72193480301026,
+          "competition": 15.9,
+          "overall": 67.07316088180616,
+          "estimatedMonthlySearch": 5405,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "can silicon based life exist?",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": null,
+          "overall": null,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "could silicon based life exist?",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 72.87908155658268,
+          "overall": 10.84836737736693,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "is silicon based life possible?",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": null,
+          "overall": null,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "silicon based life vs carbon",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 42.74638437453407,
+          "overall": 22.901446250186375,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "alien life",
+          "relatedScore": 3.8999999999999995,
+          "volume": 63.85267708728598,
+          "competition": 58,
+          "overall": 55.11160625237159,
+          "estimatedMonthlySearch": 18944,
+          "countryVolume": 3391,
+          "topMarkets": []
+        },
+        {
+          "keyword": "science fiction",
+          "relatedScore": 3.3,
+          "volume": 75.1485540179216,
+          "competition": 51.5,
+          "overall": 64.48913241075296,
+          "estimatedMonthlySearch": 108188,
+          "countryVolume": 5694,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.2631579
+            },
+            {
+              "country": "VN",
+              "pct": 0.13157895
+            },
+            {
+              "country": "DE",
+              "pct": 0.078947365
+            },
+            {
+              "country": "IN",
+              "pct": 0.078947365
+            },
+            {
+              "country": "US",
+              "pct": 0.05263158
+            }
+          ]
+        },
+        {
+          "keyword": "silicon life",
+          "relatedScore": 3.3,
+          "volume": 54.395614704789885,
+          "competition": 19.799999999999997,
+          "overall": 64.71736882287394,
+          "estimatedMonthlySearch": 4405,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "why is life not based on silicon",
+          "relatedScore": 3.15,
+          "volume": 0,
+          "competition": 27.5,
+          "overall": 29,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "what if scenario",
+          "relatedScore": 3.15,
+          "volume": 65.0515293158616,
+          "competition": 28.7,
+          "overall": 67.55091758951696,
+          "estimatedMonthlySearch": 22792,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "what happens if",
+          "relatedScore": 3.15,
+          "volume": 77.26753356007747,
+          "competition": 53,
+          "overall": 65.16052013604649,
+          "estimatedMonthlySearch": 150013,
+          "countryVolume": 2728,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.14583333
+            },
+            {
+              "country": "IN",
+              "pct": 0.104166664
+            },
+            {
+              "country": "VN",
+              "pct": 0.083333336
+            },
+            {
+              "country": "PK",
+              "pct": 0.083333336
+            },
+            {
+              "country": "UA",
+              "pct": 0.0625
+            }
+          ]
+        },
+        {
+          "keyword": "astrobiology",
+          "relatedScore": 3,
+          "volume": 54.00276901398681,
+          "competition": 44.4,
+          "overall": 54.64166140839208,
+          "estimatedMonthlySearch": 4146,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "what if",
+          "relatedScore": 3,
+          "volume": 96.50764674854125,
+          "competition": 72,
+          "overall": 69.10458804912474,
+          "estimatedMonthlySearch": 2917550,
+          "countryVolume": 57279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.10290055
+            },
+            {
+              "country": "PK",
+              "pct": 0.10013812
+            },
+            {
+              "country": "US",
+              "pct": 0.09737569
+            },
+            {
+              "country": "VN",
+              "pct": 0.084254146
+            },
+            {
+              "country": "TR",
+              "pct": 0.050414365
+            }
+          ]
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 2.796994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "scifi",
+          "relatedScore": 2.75,
+          "volume": 75.85696455147252,
+          "competition": 52,
+          "overall": 64.7141787308835,
+          "estimatedMonthlySearch": 120680,
+          "countryVolume": 5613,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.3
+            },
+            {
+              "country": "US",
+              "pct": 0.125
+            },
+            {
+              "country": "BR",
+              "pct": 0.1
+            },
+            {
+              "country": "ET",
+              "pct": 0.075
+            },
+            {
+              "country": "DE",
+              "pct": 0.05
+            }
+          ]
+        },
+        {
+          "keyword": "silicon",
+          "relatedScore": 2.75,
+          "volume": 68.78895527717201,
+          "competition": 44.5,
+          "overall": 63.473373166303205,
+          "estimatedMonthlySearch": 40565,
+          "countryVolume": null,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.36363637
+            },
+            {
+              "country": "IN",
+              "pct": 0.27272728
+            },
+            {
+              "country": "FI",
+              "pct": 0.09090909
+            },
+            {
+              "country": "PK",
+              "pct": 0.09090909
+            },
+            {
+              "country": "FR",
+              "pct": 0.09090909
+            }
+          ]
+        },
+        {
+          "keyword": "science documentary",
+          "relatedScore": 2.7,
+          "volume": 75.98868330534572,
+          "competition": 49.5,
+          "overall": 65.79320998320743,
+          "estimatedMonthlySearch": 123157,
+          "countryVolume": 11196,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.25581396
+            },
+            {
+              "country": "PK",
+              "pct": 0.11627907
+            },
+            {
+              "country": "US",
+              "pct": 0.093023255
+            },
+            {
+              "country": "GB",
+              "pct": 0.093023255
+            },
+            {
+              "country": "MA",
+              "pct": 0.069767445
+            }
+          ]
+        },
+        {
+          "keyword": "silicon-based life",
+          "relatedScore": 2.7,
+          "volume": 0,
+          "competition": 34.5,
+          "overall": 26.200000000000003,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "nasa",
+          "relatedScore": 2.5,
+          "volume": 88.17624052502772,
+          "competition": 75,
+          "overall": 62.90574431501663,
+          "estimatedMonthlySearch": 807049,
+          "countryVolume": 34994,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.13218391
+            },
+            {
+              "country": "VN",
+              "pct": 0.123563215
+            },
+            {
+              "country": "IN",
+              "pct": 0.11494253
+            },
+            {
+              "country": "US",
+              "pct": 0.094827585
+            },
+            {
+              "country": "BR",
+              "pct": 0.07471264
+            }
+          ]
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 2.5,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "mars habitable": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "mars habitable",
+        "relatedScore": null,
+        "volume": 54.76183802223479,
+        "competition": 42,
+        "overall": 56.057102813340876,
+        "estimatedMonthlySearch": 4661,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "mars",
+          "relatedScore": 4.75,
+          "volume": 81.92652506922404,
+          "competition": 56.3,
+          "overall": 66.63591504153442,
+          "estimatedMonthlySearch": 307775,
+          "countryVolume": 9928,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "VN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "PK",
+              "pct": 0.10084034
+            },
+            {
+              "country": "TR",
+              "pct": 0.067226894
+            },
+            {
+              "country": "US",
+              "pct": 0.05882353
+            }
+          ]
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 3.2999999999999994,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "life on mars",
+          "relatedScore": 2.8000000000000003,
+          "volume": 72.74887386161485,
+          "competition": 51,
+          "overall": 63.24932431696891,
+          "estimatedMonthlySearch": 74718,
+          "countryVolume": 5977,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.16666667
+            },
+            {
+              "country": "PK",
+              "pct": 0.125
+            },
+            {
+              "country": "TN",
+              "pct": 0.083333336
+            },
+            {
+              "country": "GB",
+              "pct": 0.083333336
+            },
+            {
+              "country": "US",
+              "pct": 0.083333336
+            }
+          ]
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 2.5,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        },
+        {
+          "keyword": "red planet",
+          "relatedScore": 2.4,
+          "volume": 59.14115239288955,
+          "competition": 46.099999999999994,
+          "overall": 57.04469143573373,
+          "estimatedMonthlySearch": 9159,
+          "countryVolume": 3800,
+          "topMarkets": []
+        },
+        {
+          "keyword": "water on mars",
+          "relatedScore": 2.1,
+          "volume": 61.89109648936757,
+          "competition": 43,
+          "overall": 59.93465789362054,
+          "estimatedMonthlySearch": 13998,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space exploration",
+          "relatedScore": 2.1,
+          "volume": 76.72133279249779,
+          "competition": 50,
+          "overall": 66.03279967549867,
+          "estimatedMonthlySearch": 137892,
+          "countryVolume": 2758,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.3877551
+            },
+            {
+              "country": "US",
+              "pct": 0.1632653
+            },
+            {
+              "country": "IN",
+              "pct": 0.08163265
+            },
+            {
+              "country": "VN",
+              "pct": 0.040816326
+            },
+            {
+              "country": "NL",
+              "pct": 0.040816326
+            }
+          ]
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 1.796994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "nasa",
+          "relatedScore": 1.75,
+          "volume": 88.17624052502772,
+          "competition": 75,
+          "overall": 62.90574431501663,
+          "estimatedMonthlySearch": 807049,
+          "countryVolume": 34994,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.13218391
+            },
+            {
+              "country": "VN",
+              "pct": 0.123563215
+            },
+            {
+              "country": "IN",
+              "pct": 0.11494253
+            },
+            {
+              "country": "US",
+              "pct": 0.094827585
+            },
+            {
+              "country": "BR",
+              "pct": 0.07471264
+            }
+          ]
+        },
+        {
+          "keyword": "mars rover",
+          "relatedScore": 1.5,
+          "volume": 67.18745441402004,
+          "competition": 47.5,
+          "overall": 61.31247264841202,
+          "estimatedMonthlySearch": 31686,
+          "countryVolume": null,
+          "topMarkets": [
+            {
+              "country": "DE",
+              "pct": 0.1
+            },
+            {
+              "country": "MY",
+              "pct": 0.1
+            },
+            {
+              "country": "SG",
+              "pct": 0.1
+            },
+            {
+              "country": "UA",
+              "pct": 0.1
+            },
+            {
+              "country": "DO",
+              "pct": 0.1
+            }
+          ]
+        },
+        {
+          "keyword": "planets",
+          "relatedScore": 1.25,
+          "volume": 77.57190788703359,
+          "competition": 60.5,
+          "overall": 62.34314473222015,
+          "estimatedMonthlySearch": 157224,
+          "countryVolume": 2711,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.15517241
+            },
+            {
+              "country": "US",
+              "pct": 0.13793103
+            },
+            {
+              "country": "PK",
+              "pct": 0.10344828
+            },
+            {
+              "country": "VN",
+              "pct": 0.0862069
+            },
+            {
+              "country": "ET",
+              "pct": 0.05172414
+            }
+          ]
+        },
+        {
+          "keyword": "mars colony",
+          "relatedScore": 1.2,
+          "volume": 62.45326155121747,
+          "competition": 39.4,
+          "overall": 61.71195693073049,
+          "estimatedMonthlySearch": 15266,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "what if",
+          "relatedScore": 1.2,
+          "volume": 96.50764674854125,
+          "competition": 72,
+          "overall": 69.10458804912474,
+          "estimatedMonthlySearch": 2917550,
+          "countryVolume": 57279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.10290055
+            },
+            {
+              "country": "PK",
+              "pct": 0.10013812
+            },
+            {
+              "country": "US",
+              "pct": 0.09737569
+            },
+            {
+              "country": "VN",
+              "pct": 0.084254146
+            },
+            {
+              "country": "TR",
+              "pct": 0.050414365
+            }
+          ]
+        },
+        {
+          "keyword": "elon musk",
+          "relatedScore": 1.2,
+          "volume": 93.631906779937,
+          "competition": 66,
+          "overall": 69.77914406796219,
+          "estimatedMonthlySearch": 1872291,
+          "countryVolume": 62671,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.15393013
+            },
+            {
+              "country": "PK",
+              "pct": 0.12445415
+            },
+            {
+              "country": "US",
+              "pct": 0.10043668
+            },
+            {
+              "country": "BR",
+              "pct": 0.05349345
+            },
+            {
+              "country": "BD",
+              "pct": 0.051310044
+            }
+          ]
+        },
+        {
+          "keyword": "colonizing mars",
+          "relatedScore": 1.2,
+          "volume": 59.20734918353451,
+          "competition": 39.2,
+          "overall": 59.844409510120705,
+          "estimatedMonthlySearch": 9253,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space facts",
+          "relatedScore": 1.2,
+          "volume": 81.59351925747991,
+          "competition": 42.5,
+          "overall": 71.95611155448795,
+          "estimatedMonthlySearch": 292365,
+          "countryVolume": 4998,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.20560747
+            },
+            {
+              "country": "IN",
+              "pct": 0.14018692
+            },
+            {
+              "country": "VN",
+              "pct": 0.06542056
+            },
+            {
+              "country": "US",
+              "pct": 0.06542056
+            },
+            {
+              "country": "CA",
+              "pct": 0.046728972
+            }
+          ]
+        },
+        {
+          "keyword": "terraforming mars",
+          "relatedScore": 1.2,
+          "volume": 68.84971996441311,
+          "competition": 44.3,
+          "overall": 63.589831978647865,
+          "estimatedMonthlySearch": 40947,
+          "countryVolume": 3685,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.36363637
+            },
+            {
+              "country": "BR",
+              "pct": 0.27272728
+            },
+            {
+              "country": "AT",
+              "pct": 0.09090909
+            },
+            {
+              "country": "VN",
+              "pct": 0.09090909
+            },
+            {
+              "country": "IN",
+              "pct": 0.09090909
+            }
+          ]
+        },
+        {
+          "keyword": "history of mars",
+          "relatedScore": 1.0499999999999998,
+          "volume": 53.29813652021065,
+          "competition": 39.5,
+          "overall": 56.178881912126386,
+          "estimatedMonthlySearch": 3719,
+          "countryVolume": null,
+          "topMarkets": []
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "terraform mars": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "terraform mars",
+        "relatedScore": null,
+        "volume": 53.9855457114712,
+        "competition": 39.599999999999994,
+        "overall": 56.55132742688272,
+        "estimatedMonthlySearch": 4135,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "can we terraform mars",
+          "relatedScore": 7.350000000000001,
+          "volume": 0,
+          "competition": 43.5,
+          "overall": 22.6,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "how to terraform mars",
+          "relatedScore": 6.125,
+          "volume": 55.00346861742776,
+          "competition": 42,
+          "overall": 56.20208117045666,
+          "estimatedMonthlySearch": 4838,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "terraforming",
+          "relatedScore": 4.5,
+          "volume": 57.056056033898585,
+          "competition": 41.099999999999994,
+          "overall": 57.79363362033915,
+          "estimatedMonthlySearch": 6640,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "mars",
+          "relatedScore": 4.5,
+          "volume": 81.92652506922404,
+          "competition": 56.3,
+          "overall": 66.63591504153442,
+          "estimatedMonthlySearch": 307775,
+          "countryVolume": 9928,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "VN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "PK",
+              "pct": 0.10084034
+            },
+            {
+              "country": "TR",
+              "pct": 0.067226894
+            },
+            {
+              "country": "US",
+              "pct": 0.05882353
+            }
+          ]
+        },
+        {
+          "keyword": "terraforming mars",
+          "relatedScore": 3.599999999999999,
+          "volume": 68.84971996441311,
+          "competition": 44.3,
+          "overall": 63.589831978647865,
+          "estimatedMonthlySearch": 40947,
+          "countryVolume": 3685,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.36363637
+            },
+            {
+              "country": "BR",
+              "pct": 0.27272728
+            },
+            {
+              "country": "AT",
+              "pct": 0.09090909
+            },
+            {
+              "country": "VN",
+              "pct": 0.09090909
+            },
+            {
+              "country": "IN",
+              "pct": 0.09090909
+            }
+          ]
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 3.046994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "mars colony",
+          "relatedScore": 2.9999999999999996,
+          "volume": 62.45326155121747,
+          "competition": 39.4,
+          "overall": 61.71195693073049,
+          "estimatedMonthlySearch": 15266,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "spacex",
+          "relatedScore": 2.75,
+          "volume": 91.5946545519281,
+          "competition": 61.099999999999994,
+          "overall": 70.51679273115687,
+          "estimatedMonthlySearch": 1367409,
+          "countryVolume": 77555,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.16211878
+            },
+            {
+              "country": "IN",
+              "pct": 0.08025682
+            },
+            {
+              "country": "GB",
+              "pct": 0.060995184
+            },
+            {
+              "country": "BR",
+              "pct": 0.05778491
+            },
+            {
+              "country": "DE",
+              "pct": 0.049759228
+            }
+          ]
+        },
+        {
+          "keyword": "nasa",
+          "relatedScore": 2.75,
+          "volume": 88.17624052502772,
+          "competition": 75,
+          "overall": 62.90574431501663,
+          "estimatedMonthlySearch": 807049,
+          "countryVolume": 34994,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.13218391
+            },
+            {
+              "country": "VN",
+              "pct": 0.123563215
+            },
+            {
+              "country": "IN",
+              "pct": 0.11494253
+            },
+            {
+              "country": "US",
+              "pct": 0.094827585
+            },
+            {
+              "country": "BR",
+              "pct": 0.07471264
+            }
+          ]
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 2.75,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 2.7,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "mars colonization",
+          "relatedScore": 2.6999999999999997,
+          "volume": 66.7393841386405,
+          "competition": 34.3,
+          "overall": 66.3236304831843,
+          "estimatedMonthlySearch": 29570,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "elon musk",
+          "relatedScore": 2.4,
+          "volume": 93.631906779937,
+          "competition": 66,
+          "overall": 69.77914406796219,
+          "estimatedMonthlySearch": 1872291,
+          "countryVolume": 62671,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.15393013
+            },
+            {
+              "country": "PK",
+              "pct": 0.12445415
+            },
+            {
+              "country": "US",
+              "pct": 0.10043668
+            },
+            {
+              "country": "BR",
+              "pct": 0.05349345
+            },
+            {
+              "country": "BD",
+              "pct": 0.051310044
+            }
+          ]
+        },
+        {
+          "keyword": "colonizing mars",
+          "relatedScore": 2.1,
+          "volume": 59.20734918353451,
+          "competition": 39.2,
+          "overall": 59.844409510120705,
+          "estimatedMonthlySearch": 9253,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "mars atmosphere",
+          "relatedScore": 2.1,
+          "volume": 53.968276530144244,
+          "competition": 26.5,
+          "overall": 61.78096591808655,
+          "estimatedMonthlySearch": 4124,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "physics",
+          "relatedScore": 2,
+          "volume": 84.9729811087277,
+          "competition": 66.5,
+          "overall": 64.38378866523662,
+          "estimatedMonthlySearch": 492396,
+          "countryVolume": 11668,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.22279793
+            },
+            {
+              "country": "US",
+              "pct": 0.10880829
+            },
+            {
+              "country": "PK",
+              "pct": 0.09326425
+            },
+            {
+              "country": "BD",
+              "pct": 0.062176164
+            },
+            {
+              "country": "BR",
+              "pct": 0.062176164
+            }
+          ]
+        },
+        {
+          "keyword": "terraform",
+          "relatedScore": 2,
+          "volume": 74.16367986312969,
+          "competition": 43.099999999999994,
+          "overall": 67.25820791787783,
+          "estimatedMonthlySearch": 92940,
+          "countryVolume": 8713,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.2
+            },
+            {
+              "country": "BR",
+              "pct": 0.2
+            },
+            {
+              "country": "GB",
+              "pct": 0.1
+            },
+            {
+              "country": "AO",
+              "pct": 0.06666667
+            },
+            {
+              "country": "JP",
+              "pct": 0.06666667
+            }
+          ]
+        },
+        {
+          "keyword": "cosmos",
+          "relatedScore": 2,
+          "volume": 82.28482878642022,
+          "competition": 45.099999999999994,
+          "overall": 71.33089727185214,
+          "estimatedMonthlySearch": 325264,
+          "countryVolume": 12321,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.08264463
+            },
+            {
+              "country": "BR",
+              "pct": 0.08264463
+            },
+            {
+              "country": "NL",
+              "pct": 0.05785124
+            },
+            {
+              "country": "US",
+              "pct": 0.049586777
+            },
+            {
+              "country": "KR",
+              "pct": 0.049586777
+            }
+          ]
+        },
+        {
+          "keyword": "mars terraforming",
+          "relatedScore": 1.8,
+          "volume": 55.35680709544874,
+          "competition": 44.3,
+          "overall": 55.49408425726924,
+          "estimatedMonthlySearch": 5109,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space exploration",
+          "relatedScore": 1.8,
+          "volume": 76.72133279249779,
+          "competition": 50,
+          "overall": 66.03279967549867,
+          "estimatedMonthlySearch": 137892,
+          "countryVolume": 2758,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.3877551
+            },
+            {
+              "country": "US",
+              "pct": 0.1632653
+            },
+            {
+              "country": "IN",
+              "pct": 0.08163265
+            },
+            {
+              "country": "VN",
+              "pct": 0.040816326
+            },
+            {
+              "country": "NL",
+              "pct": 0.040816326
+            }
+          ]
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "can we live on mars": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "can we live on mars",
+        "relatedScore": null,
+        "volume": 54.35279320505432,
+        "competition": 36.5,
+        "overall": 58.0116759230326,
+        "estimatedMonthlySearch": 4376,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "life on mars",
+          "relatedScore": 8.049999999999997,
+          "volume": 72.74887386161485,
+          "competition": 51,
+          "overall": 63.24932431696891,
+          "estimatedMonthlySearch": 74718,
+          "countryVolume": 5977,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.16666667
+            },
+            {
+              "country": "PK",
+              "pct": 0.125
+            },
+            {
+              "country": "TN",
+              "pct": 0.083333336
+            },
+            {
+              "country": "GB",
+              "pct": 0.083333336
+            },
+            {
+              "country": "US",
+              "pct": 0.083333336
+            }
+          ]
+        },
+        {
+          "keyword": "mars",
+          "relatedScore": 6.5,
+          "volume": 81.92652506922404,
+          "competition": 56.3,
+          "overall": 66.63591504153442,
+          "estimatedMonthlySearch": 307775,
+          "countryVolume": 9928,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "VN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "PK",
+              "pct": 0.10084034
+            },
+            {
+              "country": "TR",
+              "pct": 0.067226894
+            },
+            {
+              "country": "US",
+              "pct": 0.05882353
+            }
+          ]
+        },
+        {
+          "keyword": "mars colony",
+          "relatedScore": 4.499999999999999,
+          "volume": 62.45326155121747,
+          "competition": 39.4,
+          "overall": 61.71195693073049,
+          "estimatedMonthlySearch": 15266,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 3.5999999999999996,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "elon musk",
+          "relatedScore": 3.5999999999999988,
+          "volume": 93.631906779937,
+          "competition": 66,
+          "overall": 69.77914406796219,
+          "estimatedMonthlySearch": 1872291,
+          "countryVolume": 62671,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.15393013
+            },
+            {
+              "country": "PK",
+              "pct": 0.12445415
+            },
+            {
+              "country": "US",
+              "pct": 0.10043668
+            },
+            {
+              "country": "BR",
+              "pct": 0.05349345
+            },
+            {
+              "country": "BD",
+              "pct": 0.051310044
+            }
+          ]
+        },
+        {
+          "keyword": "nasa",
+          "relatedScore": 3.25,
+          "volume": 88.17624052502772,
+          "competition": 75,
+          "overall": 62.90574431501663,
+          "estimatedMonthlySearch": 807049,
+          "countryVolume": 34994,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.13218391
+            },
+            {
+              "country": "VN",
+              "pct": 0.123563215
+            },
+            {
+              "country": "IN",
+              "pct": 0.11494253
+            },
+            {
+              "country": "US",
+              "pct": 0.094827585
+            },
+            {
+              "country": "BR",
+              "pct": 0.07471264
+            }
+          ]
+        },
+        {
+          "keyword": "going to mars",
+          "relatedScore": 3.15,
+          "volume": 55.194916304712436,
+          "competition": 42,
+          "overall": 56.316949782827464,
+          "estimatedMonthlySearch": 4983,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "spacex",
+          "relatedScore": 3,
+          "volume": 91.5946545519281,
+          "competition": 61.099999999999994,
+          "overall": 70.51679273115687,
+          "estimatedMonthlySearch": 1367409,
+          "countryVolume": 77555,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.16211878
+            },
+            {
+              "country": "IN",
+              "pct": 0.08025682
+            },
+            {
+              "country": "GB",
+              "pct": 0.060995184
+            },
+            {
+              "country": "BR",
+              "pct": 0.05778491
+            },
+            {
+              "country": "DE",
+              "pct": 0.049759228
+            }
+          ]
+        },
+        {
+          "keyword": "what if",
+          "relatedScore": 3,
+          "volume": 96.50764674854125,
+          "competition": 72,
+          "overall": 69.10458804912474,
+          "estimatedMonthlySearch": 2917550,
+          "countryVolume": 57279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.10290055
+            },
+            {
+              "country": "PK",
+              "pct": 0.10013812
+            },
+            {
+              "country": "US",
+              "pct": 0.09737569
+            },
+            {
+              "country": "VN",
+              "pct": 0.084254146
+            },
+            {
+              "country": "TR",
+              "pct": 0.050414365
+            }
+          ]
+        },
+        {
+          "keyword": "colonizing mars",
+          "relatedScore": 3,
+          "volume": 59.20734918353451,
+          "competition": 39.2,
+          "overall": 59.844409510120705,
+          "estimatedMonthlySearch": 9253,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space exploration",
+          "relatedScore": 2.999999999999999,
+          "volume": 76.72133279249779,
+          "competition": 50,
+          "overall": 66.03279967549867,
+          "estimatedMonthlySearch": 137892,
+          "countryVolume": 2758,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.3877551
+            },
+            {
+              "country": "US",
+              "pct": 0.1632653
+            },
+            {
+              "country": "IN",
+              "pct": 0.08163265
+            },
+            {
+              "country": "VN",
+              "pct": 0.040816326
+            },
+            {
+              "country": "NL",
+              "pct": 0.040816326
+            }
+          ]
+        },
+        {
+          "keyword": "water on mars",
+          "relatedScore": 2.8,
+          "volume": 61.89109648936757,
+          "competition": 43,
+          "overall": 59.93465789362054,
+          "estimatedMonthlySearch": 13998,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 2.796994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 2.75,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        },
+        {
+          "keyword": "living on mars",
+          "relatedScore": 2.4499999999999997,
+          "volume": 64.39219994694818,
+          "competition": 42,
+          "overall": 61.83531996816891,
+          "estimatedMonthlySearch": 20588,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "red planet",
+          "relatedScore": 2.4,
+          "volume": 59.14115239288955,
+          "competition": 46.099999999999994,
+          "overall": 57.04469143573373,
+          "estimatedMonthlySearch": 9159,
+          "countryVolume": 3800,
+          "topMarkets": []
+        },
+        {
+          "keyword": "terraforming mars",
+          "relatedScore": 2.4,
+          "volume": 68.84971996441311,
+          "competition": 44.3,
+          "overall": 63.589831978647865,
+          "estimatedMonthlySearch": 40947,
+          "countryVolume": 3685,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.36363637
+            },
+            {
+              "country": "BR",
+              "pct": 0.27272728
+            },
+            {
+              "country": "AT",
+              "pct": 0.09090909
+            },
+            {
+              "country": "VN",
+              "pct": 0.09090909
+            },
+            {
+              "country": "IN",
+              "pct": 0.09090909
+            }
+          ]
+        },
+        {
+          "keyword": "oxygen on mars",
+          "relatedScore": 2.1,
+          "volume": 0,
+          "competition": 48,
+          "overall": 20.8,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "mars mission",
+          "relatedScore": 2.0999999999999996,
+          "volume": 62.90987860367512,
+          "competition": 41.5,
+          "overall": 61.14592716220507,
+          "estimatedMonthlySearch": 16380,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "mars colonization",
+          "relatedScore": 2.0999999999999996,
+          "volume": 66.7393841386405,
+          "competition": 34.3,
+          "overall": 66.3236304831843,
+          "estimatedMonthlySearch": 29570,
+          "countryVolume": null,
+          "topMarkets": []
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "mars colonization": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "mars colonization",
+        "relatedScore": null,
+        "volume": 66.7393841386405,
+        "competition": 34.3,
+        "overall": 66.3236304831843,
+        "estimatedMonthlySearch": 29570,
+        "countryVolume": null,
+        "topMarkets": []
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "mars",
+          "relatedScore": 11.25,
+          "volume": 81.92652506922404,
+          "competition": 56.3,
+          "overall": 66.63591504153442,
+          "estimatedMonthlySearch": 307775,
+          "countryVolume": 9928,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "VN",
+              "pct": 0.13445379
+            },
+            {
+              "country": "PK",
+              "pct": 0.10084034
+            },
+            {
+              "country": "TR",
+              "pct": 0.067226894
+            },
+            {
+              "country": "US",
+              "pct": 0.05882353
+            }
+          ]
+        },
+        {
+          "keyword": "nasa",
+          "relatedScore": 10.75,
+          "volume": 88.17624052502772,
+          "competition": 75,
+          "overall": 62.90574431501663,
+          "estimatedMonthlySearch": 807049,
+          "countryVolume": 34994,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.13218391
+            },
+            {
+              "country": "VN",
+              "pct": 0.123563215
+            },
+            {
+              "country": "IN",
+              "pct": 0.11494253
+            },
+            {
+              "country": "US",
+              "pct": 0.094827585
+            },
+            {
+              "country": "BR",
+              "pct": 0.07471264
+            }
+          ]
+        },
+        {
+          "keyword": "spacex",
+          "relatedScore": 9,
+          "volume": 91.5946545519281,
+          "competition": 61.099999999999994,
+          "overall": 70.51679273115687,
+          "estimatedMonthlySearch": 1367409,
+          "countryVolume": 77555,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.16211878
+            },
+            {
+              "country": "IN",
+              "pct": 0.08025682
+            },
+            {
+              "country": "GB",
+              "pct": 0.060995184
+            },
+            {
+              "country": "BR",
+              "pct": 0.05778491
+            },
+            {
+              "country": "DE",
+              "pct": 0.049759228
+            }
+          ]
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 8.25,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        },
+        {
+          "keyword": "elon musk",
+          "relatedScore": 8.1,
+          "volume": 93.631906779937,
+          "competition": 66,
+          "overall": 69.77914406796219,
+          "estimatedMonthlySearch": 1872291,
+          "countryVolume": 62671,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.15393013
+            },
+            {
+              "country": "PK",
+              "pct": 0.12445415
+            },
+            {
+              "country": "US",
+              "pct": 0.10043668
+            },
+            {
+              "country": "BR",
+              "pct": 0.05349345
+            },
+            {
+              "country": "BD",
+              "pct": 0.051310044
+            }
+          ]
+        },
+        {
+          "keyword": "life on mars",
+          "relatedScore": 7.6999999999999975,
+          "volume": 72.74887386161485,
+          "competition": 51,
+          "overall": 63.24932431696891,
+          "estimatedMonthlySearch": 74718,
+          "countryVolume": 5977,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.16666667
+            },
+            {
+              "country": "PK",
+              "pct": 0.125
+            },
+            {
+              "country": "TN",
+              "pct": 0.083333336
+            },
+            {
+              "country": "GB",
+              "pct": 0.083333336
+            },
+            {
+              "country": "US",
+              "pct": 0.083333336
+            }
+          ]
+        },
+        {
+          "keyword": "mars mission",
+          "relatedScore": 6.8999999999999995,
+          "volume": 62.90987860367512,
+          "competition": 41.5,
+          "overall": 61.14592716220507,
+          "estimatedMonthlySearch": 16380,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space facts",
+          "relatedScore": 6.6000000000000005,
+          "volume": 81.59351925747991,
+          "competition": 42.5,
+          "overall": 71.95611155448795,
+          "estimatedMonthlySearch": 292365,
+          "countryVolume": 4998,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.20560747
+            },
+            {
+              "country": "IN",
+              "pct": 0.14018692
+            },
+            {
+              "country": "VN",
+              "pct": 0.06542056
+            },
+            {
+              "country": "US",
+              "pct": 0.06542056
+            },
+            {
+              "country": "CA",
+              "pct": 0.046728972
+            }
+          ]
+        },
+        {
+          "keyword": "mars colony",
+          "relatedScore": 6.6,
+          "volume": 62.45326155121747,
+          "competition": 39.4,
+          "overall": 61.71195693073049,
+          "estimatedMonthlySearch": 15266,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 6.296994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "space documentary",
+          "relatedScore": 6,
+          "volume": 84.09406417913877,
+          "competition": 47,
+          "overall": 71.65643850748327,
+          "estimatedMonthlySearch": 429968,
+          "countryVolume": 2376,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.19512194
+            },
+            {
+              "country": "PK",
+              "pct": 0.18902439
+            },
+            {
+              "country": "VN",
+              "pct": 0.11585366
+            },
+            {
+              "country": "US",
+              "pct": 0.07926829
+            },
+            {
+              "country": "BD",
+              "pct": 0.05487805
+            }
+          ]
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 6,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "living on mars",
+          "relatedScore": 5.25,
+          "volume": 64.39219994694818,
+          "competition": 42,
+          "overall": 61.83531996816891,
+          "estimatedMonthlySearch": 20588,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "elon musk mars colonization",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 36.5,
+          "overall": 25.400000000000002,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "brian cox on mars colonization",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 17.4,
+          "overall": 33.04,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "elon musk on mars colonization",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 38,
+          "overall": 24.8,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "spacex mars colonization plan",
+          "relatedScore": 4.9,
+          "volume": 0,
+          "competition": 45,
+          "overall": 22,
+          "estimatedMonthlySearch": 0,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "mars colonization documentary",
+          "relatedScore": 4.9,
+          "volume": 54.68488336650359,
+          "competition": 40.5,
+          "overall": 56.610930019902156,
+          "estimatedMonthlySearch": 4606,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "facts about space",
+          "relatedScore": 4.8999999999999995,
+          "volume": 66.85347665032131,
+          "competition": 45.5,
+          "overall": 61.91208599019279,
+          "estimatedMonthlySearch": 30095,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "mars terraforming",
+          "relatedScore": 4.8,
+          "volume": 55.35680709544874,
+          "competition": 44.3,
+          "overall": 55.49408425726924,
+          "estimatedMonthlySearch": 5109,
+          "countryVolume": null,
+          "topMarkets": []
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": []
+    },
+    "space documentary": {
+      "mode": "research",
+      "country": "GB",
+      "query": null,
+      "seedKeyword": {
+        "keyword": "space documentary",
+        "relatedScore": null,
+        "volume": 84.09406417913877,
+        "competition": 47,
+        "overall": 71.65643850748327,
+        "estimatedMonthlySearch": 429968,
+        "countryVolume": 2376,
+        "topMarkets": [
+          {
+            "country": "IN",
+            "pct": 0.19512194
+          },
+          {
+            "country": "PK",
+            "pct": 0.18902439
+          },
+          {
+            "country": "VN",
+            "pct": 0.11585366
+          },
+          {
+            "country": "US",
+            "pct": 0.07926829
+          },
+          {
+            "country": "BD",
+            "pct": 0.05487805
+          }
+        ]
+      },
+      "relatedKeywords": [
+        {
+          "keyword": "space documentary 4k",
+          "relatedScore": 14.699999999999998,
+          "volume": 54.58988740621052,
+          "competition": 43.5,
+          "overall": 55.353932443726315,
+          "estimatedMonthlySearch": 4539,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "space documentary sleep",
+          "relatedScore": 11.025,
+          "volume": 63.63447429466008,
+          "competition": 50.3,
+          "overall": 58.06068457679605,
+          "estimatedMonthlySearch": 18317,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "universe",
+          "relatedScore": 9,
+          "volume": 86.12548774430276,
+          "competition": 70,
+          "overall": 63.67529264658165,
+          "estimatedMonthlySearch": 588194,
+          "countryVolume": 4560,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.20987654
+            },
+            {
+              "country": "BR",
+              "pct": 0.13580246
+            },
+            {
+              "country": "IN",
+              "pct": 0.10699589
+            },
+            {
+              "country": "PK",
+              "pct": 0.074074075
+            },
+            {
+              "country": "US",
+              "pct": 0.06584362
+            }
+          ]
+        },
+        {
+          "keyword": "nasa",
+          "relatedScore": 9,
+          "volume": 88.17624052502772,
+          "competition": 75,
+          "overall": 62.90574431501663,
+          "estimatedMonthlySearch": 807049,
+          "countryVolume": 34994,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.13218391
+            },
+            {
+              "country": "VN",
+              "pct": 0.123563215
+            },
+            {
+              "country": "IN",
+              "pct": 0.11494253
+            },
+            {
+              "country": "US",
+              "pct": 0.094827585
+            },
+            {
+              "country": "BR",
+              "pct": 0.07471264
+            }
+          ]
+        },
+        {
+          "keyword": "space",
+          "relatedScore": 8.296994884910486,
+          "volume": 93.26683162188394,
+          "competition": 64.7,
+          "overall": 70.08009897313036,
+          "estimatedMonthlySearch": 1769771,
+          "countryVolume": 29595,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.14101058
+            },
+            {
+              "country": "IN",
+              "pct": 0.11985899
+            },
+            {
+              "country": "US",
+              "pct": 0.109283194
+            },
+            {
+              "country": "VN",
+              "pct": 0.0893067
+            },
+            {
+              "country": "DE",
+              "pct": 0.04347826
+            }
+          ]
+        },
+        {
+          "keyword": "solar system",
+          "relatedScore": 8.1,
+          "volume": 80.63612539032056,
+          "competition": 64,
+          "overall": 62.781675234192335,
+          "estimatedMonthlySearch": 252226,
+          "countryVolume": 2548,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.24731183
+            },
+            {
+              "country": "IN",
+              "pct": 0.15053764
+            },
+            {
+              "country": "VN",
+              "pct": 0.09677419
+            },
+            {
+              "country": "BR",
+              "pct": 0.05376344
+            },
+            {
+              "country": "US",
+              "pct": 0.05376344
+            }
+          ]
+        },
+        {
+          "keyword": "universe documentary",
+          "relatedScore": 7.800000000000001,
+          "volume": 70.19130317205462,
+          "competition": 50,
+          "overall": 62.11478190323277,
+          "estimatedMonthlySearch": 50361,
+          "countryVolume": 3148,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.25
+            },
+            {
+              "country": "VN",
+              "pct": 0.25
+            },
+            {
+              "country": "US",
+              "pct": 0.0625
+            },
+            {
+              "country": "GB",
+              "pct": 0.0625
+            },
+            {
+              "country": "CZ",
+              "pct": 0.0625
+            }
+          ]
+        },
+        {
+          "keyword": "science",
+          "relatedScore": 7.777488425925926,
+          "volume": 88.97248395349354,
+          "competition": 56,
+          "overall": 70.98349037209613,
+          "estimatedMonthlySearch": 912515,
+          "countryVolume": 12913,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.1670823
+            },
+            {
+              "country": "US",
+              "pct": 0.10473815
+            },
+            {
+              "country": "PK",
+              "pct": 0.097256854
+            },
+            {
+              "country": "VN",
+              "pct": 0.08478803
+            },
+            {
+              "country": "BD",
+              "pct": 0.052369077
+            }
+          ]
+        },
+        {
+          "keyword": "astronomy",
+          "relatedScore": 7.25,
+          "volume": 78.89011839487794,
+          "competition": 57,
+          "overall": 64.53407103692676,
+          "estimatedMonthlySearch": 192675,
+          "countryVolume": 5279,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.13235295
+            },
+            {
+              "country": "BR",
+              "pct": 0.11764706
+            },
+            {
+              "country": "VN",
+              "pct": 0.11764706
+            },
+            {
+              "country": "PK",
+              "pct": 0.10294118
+            },
+            {
+              "country": "US",
+              "pct": 0.073529415
+            }
+          ]
+        },
+        {
+          "keyword": "milky way",
+          "relatedScore": 6.8999999999999995,
+          "volume": 74.99569895458912,
+          "competition": 56.5,
+          "overall": 62.397419372753475,
+          "estimatedMonthlySearch": 105667,
+          "countryVolume": 2856,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.32352942
+            },
+            {
+              "country": "IN",
+              "pct": 0.14705883
+            },
+            {
+              "country": "ID",
+              "pct": 0.05882353
+            },
+            {
+              "country": "PK",
+              "pct": 0.05882353
+            },
+            {
+              "country": "IT",
+              "pct": 0.029411765
+            }
+          ]
+        },
+        {
+          "keyword": "cosmos",
+          "relatedScore": 6.75,
+          "volume": 82.28482878642022,
+          "competition": 45.099999999999994,
+          "overall": 71.33089727185214,
+          "estimatedMonthlySearch": 325264,
+          "countryVolume": 12321,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.08264463
+            },
+            {
+              "country": "BR",
+              "pct": 0.08264463
+            },
+            {
+              "country": "NL",
+              "pct": 0.05785124
+            },
+            {
+              "country": "US",
+              "pct": 0.049586777
+            },
+            {
+              "country": "KR",
+              "pct": 0.049586777
+            }
+          ]
+        },
+        {
+          "keyword": "cosmos documentary",
+          "relatedScore": 6.6000000000000005,
+          "volume": 62.63912485537223,
+          "competition": 40.5,
+          "overall": 61.38347491322334,
+          "estimatedMonthlySearch": 15710,
+          "countryVolume": null,
+          "topMarkets": []
+        },
+        {
+          "keyword": "documentaries",
+          "relatedScore": 6.5,
+          "volume": 87.84043650191103,
+          "competition": 50.5,
+          "overall": 72.50426190114662,
+          "estimatedMonthlySearch": 766310,
+          "countryVolume": 59455,
+          "topMarkets": [
+            {
+              "country": "US",
+              "pct": 0.21130952
+            },
+            {
+              "country": "IN",
+              "pct": 0.13392857
+            },
+            {
+              "country": "PK",
+              "pct": 0.08928572
+            },
+            {
+              "country": "GB",
+              "pct": 0.071428575
+            },
+            {
+              "country": "BD",
+              "pct": 0.035714287
+            }
+          ]
+        },
+        {
+          "keyword": "documentary",
+          "relatedScore": 5.8374515503875966,
+          "volume": 96.14430781158319,
+          "competition": 63.8,
+          "overall": 72.16658468694992,
+          "estimatedMonthlySearch": 2758534,
+          "countryVolume": 67009,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.1934798
+            },
+            {
+              "country": "PK",
+              "pct": 0.13394755
+            },
+            {
+              "country": "US",
+              "pct": 0.09496811
+            },
+            {
+              "country": "BD",
+              "pct": 0.0779589
+            },
+            {
+              "country": "VN",
+              "pct": 0.06520198
+            }
+          ]
+        },
+        {
+          "keyword": "earth",
+          "relatedScore": 5.75,
+          "volume": 82.41361416566374,
+          "competition": 53.8,
+          "overall": 67.92816849939824,
+          "estimatedMonthlySearch": 331790,
+          "countryVolume": 17204,
+          "topMarkets": [
+            {
+              "country": "VN",
+              "pct": 0.125
+            },
+            {
+              "country": "IN",
+              "pct": 0.1171875
+            },
+            {
+              "country": "US",
+              "pct": 0.1171875
+            },
+            {
+              "country": "CZ",
+              "pct": 0.078125
+            },
+            {
+              "country": "BD",
+              "pct": 0.046875
+            }
+          ]
+        },
+        {
+          "keyword": "astrophysics",
+          "relatedScore": 5.5,
+          "volume": 68.12425568014413,
+          "competition": 56,
+          "overall": 58.47455340808648,
+          "estimatedMonthlySearch": 36612,
+          "countryVolume": 3116,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.25
+            },
+            {
+              "country": "BY",
+              "pct": 0.16666667
+            },
+            {
+              "country": "BG",
+              "pct": 0.083333336
+            },
+            {
+              "country": "IT",
+              "pct": 0.083333336
+            },
+            {
+              "country": "MY",
+              "pct": 0.083333336
+            }
+          ]
+        },
+        {
+          "keyword": "actual space",
+          "relatedScore": 5.4,
+          "volume": 75.98868330534572,
+          "competition": 40,
+          "overall": 69.59320998320743,
+          "estimatedMonthlySearch": 123157,
+          "countryVolume": 2830,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.71794873
+            },
+            {
+              "country": "PK",
+              "pct": 0.051282052
+            },
+            {
+              "country": "TW",
+              "pct": 0.051282052
+            },
+            {
+              "country": "TR",
+              "pct": 0.025641026
+            },
+            {
+              "country": "CA",
+              "pct": 0.025641026
+            }
+          ]
+        },
+        {
+          "keyword": "shocking facts",
+          "relatedScore": 5.4,
+          "volume": 68.27045094599006,
+          "competition": 37.5,
+          "overall": 65.96227056759403,
+          "estimatedMonthlySearch": 37447,
+          "countryVolume": 3187,
+          "topMarkets": [
+            {
+              "country": "PK",
+              "pct": 0.41666666
+            },
+            {
+              "country": "SG",
+              "pct": 0.25
+            },
+            {
+              "country": "NL",
+              "pct": 0.083333336
+            },
+            {
+              "country": "AL",
+              "pct": 0.083333336
+            },
+            {
+              "country": "IN",
+              "pct": 0.083333336
+            }
+          ]
+        },
+        {
+          "keyword": "physics",
+          "relatedScore": 5.25,
+          "volume": 84.9729811087277,
+          "competition": 66.5,
+          "overall": 64.38378866523662,
+          "estimatedMonthlySearch": 492396,
+          "countryVolume": 11668,
+          "topMarkets": [
+            {
+              "country": "IN",
+              "pct": 0.22279793
+            },
+            {
+              "country": "US",
+              "pct": 0.10880829
+            },
+            {
+              "country": "PK",
+              "pct": 0.09326425
+            },
+            {
+              "country": "BD",
+              "pct": 0.062176164
+            },
+            {
+              "country": "BR",
+              "pct": 0.062176164
+            }
+          ]
+        },
+        {
+          "keyword": "history channel shows",
+          "relatedScore": 5.249999999999999,
+          "volume": 59.55251800529495,
+          "competition": 59,
+          "overall": 52.131510803176965,
+          "estimatedMonthlySearch": 9759,
+          "countryVolume": null,
+          "topMarkets": []
+        }
+      ],
+      "risingKeywords": [],
+      "period": null,
+      "availableTopics": [],
+      "vphDailyViews": [
+        {
+          "date": "2026-07-07",
+          "viewsPerHour": 46539
+        },
+        {
+          "date": "2026-07-08",
+          "viewsPerHour": 75992
+        },
+        {
+          "date": "2026-07-09",
+          "viewsPerHour": 94290
+        },
+        {
+          "date": "2026-07-10",
+          "viewsPerHour": 66723
+        },
+        {
+          "date": "2026-07-11",
+          "viewsPerHour": 71925
+        },
+        {
+          "date": "2026-07-12",
+          "viewsPerHour": 85071
+        },
+        {
+          "date": "2026-07-13",
+          "viewsPerHour": 76624
+        },
+        {
+          "date": "2026-07-14",
+          "viewsPerHour": 83630
+        },
+        {
+          "date": "2026-07-15",
+          "viewsPerHour": 72870
+        },
+        {
+          "date": "2026-07-16",
+          "viewsPerHour": 96111
+        },
+        {
+          "date": "2026-07-17",
+          "viewsPerHour": 126667
+        },
+        {
+          "date": "2026-07-18",
+          "viewsPerHour": 74788
+        },
+        {
+          "date": "2026-07-19",
+          "viewsPerHour": 87437
+        },
+        {
+          "date": "2026-07-20",
+          "viewsPerHour": 58064
+        },
+        {
+          "date": "2026-07-21",
+          "viewsPerHour": 59577
+        },
+        {
+          "date": "2026-07-22",
+          "viewsPerHour": 84049
+        },
+        {
+          "date": "2026-07-23",
+          "viewsPerHour": 76302
+        },
+        {
+          "date": "2026-07-24",
+          "viewsPerHour": 77399
+        },
+        {
+          "date": "2026-07-25",
+          "viewsPerHour": 72290
+        },
+        {
+          "date": "2026-07-26",
+          "viewsPerHour": 79798
+        },
+        {
+          "date": "2026-07-27",
+          "viewsPerHour": 75080
+        },
+        {
+          "date": "2026-07-28",
+          "viewsPerHour": 73409
+        },
+        {
+          "date": "2026-07-29",
+          "viewsPerHour": 117506
+        },
+        {
+          "date": "2026-07-30",
+          "viewsPerHour": 77765
+        },
+        {
+          "date": "2026-07-31",
+          "viewsPerHour": 68520
+        },
+        {
+          "date": "2026-08-01",
+          "viewsPerHour": 124813
+        },
+        {
+          "date": "2026-08-02",
+          "viewsPerHour": 81643
+        },
+        {
+          "date": "2026-08-03",
+          "viewsPerHour": 68746
+        }
+      ]
+    }
+  },
+  "balance_after": {
+    "type": "limited",
+    "totalCredits": 996,
+    "renewableCredits": 876,
+    "maxRenewableCredits": 2000,
+    "renewableResetsAt": "2026-08-30T22:23:46Z",
+    "addOnCredits": 120,
+    "maxAddOnCredits": 120
+  }
+}

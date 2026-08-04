@@ -1,30 +1,42 @@
 # Orbit backlog ideas — VidIQ outlier patterns
 
-**Pulled:** 2026-08-02  
-**Source:** Outlier pattern analysis (assumption-flip titles, layered journey structure, poetic body-scale narration, slow reveal) remapped to Orbit wonder tone.  
-**Raw scores:** `vidiq_outlier_title_scores_2026-08-02.json`  
-**Backlog IDs:** `013`–`015` in `../VIDEO_BACKLOG.json`
+**Batches:** 2026-08-02 · 2026-08-04  
+**Raw scores:** `vidiq_outlier_title_scores_2026-08-02.json` · `vidiq_outlier_title_scores_2026-08-04.json`  
+**Backlog IDs:** `013`–`018` in `../VIDEO_BACKLOG.json`
+
+## Does this help planning?
+
+Yes. Both analyses extract **reusable structures** (journey layers, assumption-flip, engineering roadmap) that map onto Orbit’s wonder tone. Steal the skeleton; keep Pixar-warm endings; stay in the **10–15 min** production sweet spot until retention data exists. Do **not** chase 4h sleep docs or guest-interview formats Orbit can’t replicate yet.
 
 ## Priority after V004 (JWST)
 
-| ID | Working title | Title score | Pillar | Status |
-|----|---------------|------------:|--------|--------|
-| **013** | Why the Moon Is Slowly Leaving Us — and What Happens When It's Gone | **99** | Cosmic Mysteries | next |
-| **014** | Every Planet Has a Sound — … Stranger Than Anyone Expected | **98** | Space Stories | after 013 |
-| **015** | The 7 Strangest Things We've Accidentally Left in Space | **96** | Space Stories | after 014 |
+| ID | Working title | Score | Pillar | Priority |
+|----|---------------|------:|--------|----------|
+| **013** | Why the Moon Is Slowly Leaving Us — … | **99** | Cosmic Mysteries | **next** |
+| **016** | How Far Is the Nearest Star? Orbit Tries to Walk There | **94** | Cosmic Mysteries | Orbit signature journey |
+| **014** | Every Planet Has a Sound — … | **98** | Space Stories | after 013/016 |
+| **017** | Why Even a Robot Can't Survive Mars Without Help | **96** | Future Humanity | roadmap week |
+| **015** | The 7 Strangest Things We've Accidentally Left in Space | **96** | Space Stories | palate cleanser |
+| **018** | We're Looking for the Wrong Kind of Aliens | **97** | Alien Civilisations | **deferred** (after alien cluster cools) |
 
-## Patterns to reuse (not the dread)
+### Why not “aliens first” from the 08-04 note?
 
-1. **Assumption-flip title** — curiosity gap without “disturbing / terrifying”
-2. **Numbered layers / tour** — mental map + retention
-3. **Body-scale anchors** — “from the chair you’re sitting in…”
-4. **Delay the answer** — state the question early; earn it
-5. **Orbit as guide** — companion, not wallpaper
-6. **Wonder ending** — awe over cosmic dread
-7. **Length** — target **15–22 min** once retention exists (not 1–2h yet)
+V001 Fermi is public and V003 exoplanets is already scheduled. Another aliens long too soon cannibalises the cluster. **018** stays strong — just later. Mars + scale walk diversify pillars first.
+
+## Pattern library (steal these)
+
+| Pattern | Best Orbit use |
+|---------|----------------|
+| Narrative journey / layers | 013 Moon · 016 Star walk · 014 Sounds |
+| Assumption-flip open loop | 013 · 018 · JWST-style titles |
+| Engineering roadmap | **017 Mars** |
+| Body-scale + Orbit guide | All — unique vs sleep/interview outliers |
+| Honest question title | 016 · 017 |
+| Wonder ending (not dread) | Non-negotiable |
 
 ## Guardrails
 
 - Do **not** reshuffle V002–V004 for these
-- Reject fearbait titles even if they score high
-- Fill keyword + thumb ABC when each ID graduates to `02_Video-Projects/`
+- Reject fearbait / “aliens already here” even if scores are high
+- Skip dual-purpose sleep-doc length for now
+- Fill thumb ABC when an ID graduates to `02_Video-Projects/`

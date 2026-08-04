@@ -359,6 +359,195 @@
         "The one thing we left in space on purpose"
       ],
       "tone_guardrail": "Light wonder / human curiosity — palate cleanser after heavy cosmic-mystery weeks; keep science honest on debris vs myth"
+    },
+    {
+      "id": "016",
+      "working_title": "How Far Is the Nearest Star? Orbit Tries to Walk There",
+      "brand_suffix": "Orbit's Cosmic Journey",
+      "title_score": 94,
+      "alt_titles": [
+        "Orbit Walks to the Nearest Star — Here's How Long It Takes | Orbit's Cosmic Journey",
+        "What's Between Us and the Nearest Star? Orbit Walks There | Orbit's Cosmic Journey"
+      ],
+      "pillar": "Cosmic Mysteries",
+      "status": "backlog",
+      "priority": "after_013_orbit_signature",
+      "source": "vidiq_outlier_pattern_analysis_2026-08-04",
+      "ideas_doc": "00_Brand/Channel-Setup/ideas/016_Nearest-Star-Walk/",
+      "format": "full_cg_orbit_walk_journey + chapter_cards",
+      "target_minutes": "10-14",
+      "angle": "Orbit walks layer by layer (ISS → Moon → Sun → Proxima) using one-step-one-metre body scale — proven journey structure made uniquely Orbit",
+      "patterns": [
+        "narrative_journey",
+        "layered_structure",
+        "body_scale_anchor",
+        "orbit_as_guide",
+        "wonder_ending",
+        "honest_not_hyped"
+      ],
+      "structure_beats": [
+        "Hook: Orbit leaves charging station — one step = one metre",
+        "Layer 1: walk to ISS (~400 km) — days of walking",
+        "Layer 2: Moon — a year+; new batteries joke",
+        "Layer 3: Sun — scrap metal before arrival",
+        "Layer 4: Proxima — longer than civilisation",
+        "Close: Orbit looks up — 'Good thing I brought snacks.'"
+      ],
+      "primary_keywords": [
+        "how far is the nearest star",
+        "nearest star",
+        "proxima centauri"
+      ],
+      "secondary_keywords": [
+        "scale of the universe",
+        "space documentary",
+        "space facts"
+      ],
+      "keyword_notes": {
+        "how far is the nearest star": {"overall": 61.4, "est_monthly": 3369, "competition": 25.5},
+        "nearest star": {"overall": 59.1, "est_monthly": 3828, "competition": 32.4},
+        "proxima centauri": {"overall": 61.4, "est_monthly": 53133, "competition": 52.2},
+        "scale of the universe": {"overall": 55.6, "est_monthly": 13615, "competition": 53.5}
+      },
+      "thumb_hooks": [
+        "Tiny Orbit on a glowing path from Earth toward a distant star",
+        "Orbit with a pedometer / step counter overlay",
+        "Split scale: ISS → Moon → Sun → star dots"
+      ],
+      "shorts_cluster_seeds": [
+        "Orbit walks to the ISS — how long?",
+        "Walking to the Moon at 1 metre per step",
+        "How far is Proxima Centauri really?",
+        "The Sun is farther than you feel",
+        "Scale of the universe in Orbit steps"
+      ],
+      "tone_guardrail": "Cosy wonder + humour — not sleep-doc length; keep 10–14 min"
+    },
+    {
+      "id": "017",
+      "working_title": "Why Even a Robot Can't Survive Mars Without Help",
+      "brand_suffix": "Orbit's Cosmic Journey",
+      "title_score": 96,
+      "alt_titles": [
+        "Can We Actually Live on Mars? Orbit Investigates | Orbit's Cosmic Journey",
+        "Can We Terraform Mars? A Step-by-Step Reality Check | Orbit's Cosmic Journey"
+      ],
+      "pillar": "Future Humanity",
+      "status": "backlog",
+      "priority": "after_016",
+      "source": "vidiq_outlier_pattern_analysis_2026-08-04",
+      "ideas_doc": "00_Brand/Channel-Setup/ideas/017_Mars-Habitable-Roadmap/",
+      "format": "full_cg_orbit_investigate + roadmap_chapters",
+      "target_minutes": "10-14",
+      "angle": "Engineering roadmap (warm → atmosphere → oxygen → magnetic shield) with Orbit honesty — even a robot needs serious help; race stakes optional, wonder over hype",
+      "patterns": [
+        "engineering_roadmap",
+        "assumption_flip",
+        "honest_question_title",
+        "competing_stakes_optional",
+        "orbit_as_guide",
+        "wonder_ending"
+      ],
+      "structure_beats": [
+        "Hook: even Orbit couldn't survive Mars without help",
+        "Problem 1: almost no air",
+        "Problem 2: cold (−60°C typical)",
+        "Problem 3: radiation",
+        "Roadmap: warm → thicken atmosphere → oxygen → magnetic shield",
+        "Timeline honesty: centuries, not next Tuesday",
+        "Close: Orbit with tiny Mars model — 'One day. But not this Tuesday.'"
+      ],
+      "primary_keywords": [
+        "mars colonization",
+        "can we live on mars",
+        "terraform mars"
+      ],
+      "secondary_keywords": [
+        "mars habitable",
+        "space documentary",
+        "mars"
+      ],
+      "keyword_notes": {
+        "mars colonization": {"overall": 66.3, "est_monthly": 29570, "competition": 34.3},
+        "can we live on mars": {"overall": 58.0, "est_monthly": 4376, "competition": 36.5},
+        "terraform mars": {"overall": 56.6, "est_monthly": 4135, "competition": 39.6},
+        "mars habitable": {"overall": 56.1, "est_monthly": 4661, "competition": 42}
+      },
+      "thumb_hooks": [
+        "Orbit in a cracked Mars suit / shield UI failing",
+        "Roadmap checklist with red X marks then hopeful last box",
+        "Tiny greenhouse dome next to Orbit on rusty plain"
+      ],
+      "shorts_cluster_seeds": [
+        "Mars has 1% of Earth's atmosphere",
+        "Why Mars radiation is a dealbreaker",
+        "Terraforming Mars: warm it first",
+        "Do we need a magnetic shield for Mars?",
+        "Even a robot needs help on Mars"
+      ],
+      "tone_guardrail": "Skeptical-endearing, not doom; no fake near-term colony promises"
+    },
+    {
+      "id": "018",
+      "working_title": "We're Looking for the Wrong Kind of Aliens",
+      "brand_suffix": "Orbit's Cosmic Journey",
+      "title_score": 97,
+      "alt_titles": [
+        "Why Alien Contact Won't Look Like the Movies | Orbit's Cosmic Journey",
+        "Why We're Probably Wrong About Aliens | Orbit's Cosmic Journey"
+      ],
+      "pillar": "Alien Civilisations",
+      "status": "backlog",
+      "priority": "deferred_after_alien_cluster",
+      "source": "vidiq_outlier_pattern_analysis_2026-08-04",
+      "ideas_doc": "00_Brand/Channel-Setup/ideas/018_Wrong-Kind-Of-Aliens/",
+      "format": "full_cg_orbit_investigate",
+      "target_minutes": "8-12",
+      "angle": "Assumption-flip: movies vs biology/chemistry; microbial or machine intelligence more likely; Orbit almost walks past alien life — expand Fermi short seed without rehashing V001 filter",
+      "patterns": [
+        "assumption_flip",
+        "open_loop_title",
+        "treat_viewer_as_intelligent",
+        "orbit_as_guide",
+        "wonder_ending"
+      ],
+      "structure_beats": [
+        "Hook: if Orbit met an alien, he might walk right past it",
+        "Beat 1: movies vs atmospheres/gravity/chemistry",
+        "Beat 2: carbon assumption — silicon / other chemistries",
+        "Beat 3: most likely = microbial or machine intelligence",
+        "Beat 4: light Orbit joke about machine aliens watching YouTube — keep soft",
+        "Close: Orbit at a pond — maybe we haven't looked closely enough"
+      ],
+      "primary_keywords": [
+        "alien life",
+        "are we alone",
+        "silicon based life"
+      ],
+      "secondary_keywords": [
+        "what do aliens look like",
+        "space documentary",
+        "fermi paradox"
+      ],
+      "keyword_notes": {
+        "alien life": {"overall": 55.1, "est_monthly": 18944, "competition": 58},
+        "are we alone": {"overall": 57.0, "est_monthly": 10790, "competition": 47.8},
+        "silicon based life": {"overall": 54.0, "est_monthly": 3809, "competition": 45.2}
+      },
+      "thumb_hooks": [
+        "Orbit walking past glowing microbes in a pond",
+        "Movie alien silhouette crossed out vs microbe close-up",
+        "Orbit peering into water with reflection of stars"
+      ],
+      "shorts_cluster_seeds": [
+        "Aliens probably aren't little green humanoids",
+        "Silicon-based life — possible?",
+        "The most likely alien is a microbe",
+        "Why we'd walk past alien life",
+        "Machine intelligence as alien life"
+      ],
+      "note": "Defer until clear air after V001 Fermi + V003 exoplanets. Distinct from V012 Great Filter — this is morphology/chemistry assumption-flip, not filter.",
+      "tone_guardrail": "Intelligent counterintuitive — no 'aliens are already here' clickbait"
     }
   ]
 }
