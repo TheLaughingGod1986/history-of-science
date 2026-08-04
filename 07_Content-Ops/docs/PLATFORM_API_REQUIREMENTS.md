@@ -17,12 +17,14 @@
 | Insert | https://developers.google.com/youtube/v3/docs/videos/insert |
 | Schedule | `status.publishAt` + `privacyStatus` private/unlisted on insert |
 | Thumbnails | https://developers.google.com/youtube/v3/docs/thumbnails/set |
-| Minimum scopes | `https://www.googleapis.com/auth/youtube.upload`, `https://www.googleapis.com/auth/youtube.readonly` |
+| Minimum scopes | `youtube.upload`, `youtube.readonly`, `youtube.force-ssl` (comments + playlists) |
 | Upload type | Resumable `videos.insert` |
+| Package CLI | `npm run youtube:package` — see [YOUTUBE_PACKAGE_UPLOAD.md](./YOUTUBE_PACKAGE_UPLOAD.md) |
 | Test default privacy | `private` |
-| Orbit default path | **Data API** (`npm run youtube:upload` / publishing worker) |
-| Fallback | YouTube Studio CDP only if OAuth/API unavailable |
-| Notes | Do not use a service account for a normal channel. Require explicit `privacyStatus` and `madeForKids`. Upload scheduled videos immediately with `publishAt` — do not wait until air time on the local worker. |
+| Orbit default path | **Data API package** (`youtube:package` / `youtube:upload` / publishing worker) |
+| Studio finish only | Title/thumb ABC · pin comment · Shorts Related · end screens/cards |
+| Fallback | Studio CDP only for those gaps or if OAuth/API unavailable |
+| Notes | Do not use a service account for a normal channel. Require explicit `privacyStatus` and `madeForKids`. Upload scheduled videos immediately with `publishAt` — do not wait until air time on the local worker. Reconnect OAuth after adding `force-ssl`. |
 
 ---
 

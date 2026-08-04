@@ -1,0 +1,25 @@
+{
+  "format": "longform",
+  "video": "../09_Final-Export/MASTER_REPLACE_ME.mp4",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/REPLACE_long_description_v01.txt",
+  "tagsFile": "Tags/REPLACE_long_tags_v01.txt",
+  "chaptersFile": "Chapters/REPLACE_long_chapters_v01.txt",
+  "pinnedCommentFile": "Pinned-Comments/REPLACE_long_pinned-comment_v01.txt",
+  "thumbnail": "../08_Thumbnail/Selected/REPLACE_PRIMARY_1280x720.png",
+  "thumbnailAbc": [
+    "../08_Thumbnail/GPT-Image-2-Tests/REPLACE_thumb_A.png",
+    "../08_Thumbnail/GPT-Image-2-Tests/REPLACE_thumb_B.png",
+    "../08_Thumbnail/GPT-Image-2-Tests/REPLACE_thumb_C.png"
+  ],
+  "titleAbc": [
+    "Title A | Orbit's Cosmic Journey",
+    "Title B | Orbit's Cosmic Journey",
+    "Title C | Orbit's Cosmic Journey"
+  ],
+  "schedule": "2026-08-20T18:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false
+}

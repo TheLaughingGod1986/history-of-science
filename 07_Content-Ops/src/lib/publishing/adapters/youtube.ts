@@ -18,6 +18,8 @@ import { getEnv } from "@/lib/env";
 
 const YT_UPLOAD = "https://www.googleapis.com/auth/youtube.upload";
 const YT_READONLY = "https://www.googleapis.com/auth/youtube.readonly";
+/** Needed for commentThreads.insert + playlistItems.insert after upload. */
+const YT_FORCE_SSL = "https://www.googleapis.com/auth/youtube.force-ssl";
 
 /** YouTube requires publishAt at least ~15 minutes in the future (API soft rule). */
 const MIN_PUBLISH_AT_MS = 15 * 60 * 1000;
@@ -519,4 +521,5 @@ function resolveVideoFile(fileOrDir: string): string {
   return fileOrDir;
 }
 
-export const YOUTUBE_SCOPES = [YT_UPLOAD, YT_READONLY];
+export const YOUTUBE_SCOPES = [YT_UPLOAD, YT_READONLY, YT_FORCE_SSL];
+export { YT_UPLOAD, YT_READONLY, YT_FORCE_SSL };

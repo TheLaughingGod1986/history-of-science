@@ -1,21 +1,32 @@
 # YouTube Connection Setup
 
-**Docs checked:** 2026-08-05 — see [PLATFORM_API_REQUIREMENTS.md](./PLATFORM_API_REQUIREMENTS.md)
+**Docs checked:** 2026-08-05 — see [PLATFORM_API_REQUIREMENTS.md](./PLATFORM_API_REQUIREMENTS.md) · full package flow: [YOUTUBE_PACKAGE_UPLOAD.md](./YOUTUBE_PACKAGE_UPLOAD.md)
 
 ## Default upload path
 
 **YouTube Data API v3 is the default** for Orbit uploads and native schedules (`privacyStatus=private` + `publishAt`).
 
-YouTube Studio CDP / Playwright is **fallback only** when OAuth is unavailable or the API rejects a one-off edge case.
+YouTube Studio CDP / Playwright is **fallback only** for API gaps (title/thumb ABC, pin comment, Shorts Related, end screens).
+
+### Package upload (preferred for episodes)
 
 ```bash
-# Dry-run (no network upload)
+cd 07_Content-Ops
+npm run youtube:package -- \
+  --package ../02_Video-Projects/<NN_Slug>/11_Upload-Package \
+  --video ../02_Video-Projects/<NN_Slug>/09_Final-Export/<master>.mp4 \
+  --dry-run
+```
+
+Resolves Titles / Descriptions / Tags / Chapters / Pinned-Comments (or `PACKAGE_MANIFEST.json`), uploads via API, posts first comment + playlist when possible, then prints a **Studio finish checklist**.
+
+Manifest template: `00_Brand/Channel-Setup/templates/YOUTUBE_PACKAGE_MANIFEST.json`
+
+### Single-file upload
+
+```bash
 npm run youtube:upload -- --file /path/to.mp4 --title "Test" --dry-run
 
-# Private test upload now
-npm run youtube:upload -- --file /path/to.mp4 --title "Test" --privacy private --made-for-kids false
-
-# Upload now, go live later (native schedule)
 npm run youtube:upload -- --file /path/to.mp4 --title "Episode" \
   --format longform --schedule 2026-08-10T18:00:00Z \
   --thumbnail /path/to.jpg --made-for-kids false
@@ -36,6 +47,9 @@ Or enqueue a Content Ops `PlatformPost` and run `npm run worker` — YouTube job
 
 - `https://www.googleapis.com/auth/youtube.upload`
 - `https://www.googleapis.com/auth/youtube.readonly`
+- `https://www.googleapis.com/auth/youtube.force-ssl` (comments + playlists)
+
+**Reconnect** the YouTube connection after scope changes so `force-ssl` is granted.
 
 ## Environment
 
@@ -65,10 +79,9 @@ Use **Validate** on the connection card. Expired tokens refresh via stored refre
    - export MP4 path
    - `privacyStatus=private` (default for tests)
    - explicit `madeForKids` (do not infer from animation)
-3. Enqueue the platform post (or use `npm run youtube:upload`)
-4. Run `npm run worker` if using the queue
-5. Confirm job shows genuine YouTube video ID + `https://youtu.be/…`
-6. For scheduled posts: `uploadStatus=scheduled` and Studio shows the future publish time
+3. Run `npm run youtube:package -- … --dry-run` then a private live upload
+4. Confirm result shows a real YouTube video ID + `https://youtu.be/…`
+5. Complete `studioFinish` items (ABC / pin / Related / end screen as listed)
 
 **Do not claim autopublish operational until a private test succeeds.**
 
@@ -90,6 +103,7 @@ Use **Validate** on the connection card. Expired tokens refresh via stored refre
 - Thumbnail upload needs the same OAuth user (`thumbnails.set`)
 - Shorts and long-form both use `videos.insert`; format is application-side (`--format longform` skips Shorts duration warnings)
 - Local worker must be online **at upload time**, not at air time (YouTube holds the schedule)
+- Title/thumb ABC, pin, Related, end screens → Studio finish checklist (not API)
 
 ## Manual fallback
 

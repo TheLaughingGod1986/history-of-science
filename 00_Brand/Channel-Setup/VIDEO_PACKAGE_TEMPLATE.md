@@ -146,9 +146,12 @@ Copy `CONTENT_FLYWHEEL_TEMPLATE.md` → `11_Distribution/CONTENT_FLYWHEEL.md` an
 - [ ] vidIQ title locked (≥90) + thumb previewed  
 - [ ] Thumb readable at mobile size  
 - [ ] Long scheduled Thu **19:00** UK before any Short goes public  
-- [ ] Short #1 Related → this long  
+- [ ] Uploaded via **Data API package** (`07_Content-Ops` → `npm run youtube:package`) — not Studio as primary  
+- [ ] Studio finish done: ABC Test & Compare · pin comment · end screen/cards  
+- [ ] Short #1 Related → this long · pin when long is public  
 - [ ] Soft CTAs only (no ad voice)  
 - [ ] Uploaded to `@OrbitWithBen` only  
 - [ ] `RELEASE_WEEK_CHECKLIST.md` ready for ship week  
 
 Audio/packaging CLIs: `04_Audio/tools/README.md`  
+YouTube package upload: `07_Content-Ops/docs/YOUTUBE_PACKAGE_UPLOAD.md`  
