@@ -1,0 +1,26 @@
+---
+description: Orbit YouTube uploads — Data API default; Studio CDP is fallback only
+alwaysApply: true
+---
+
+# Orbit — YouTube upload path (locked)
+
+**Default:** YouTube Data API v3 via Content Ops — not Studio CDP / Playwright.
+
+## Do this
+
+1. Prefer `07_Content-Ops` API path: connected Google OAuth → adapter / worker / CLI.
+2. CLI: `cd 07_Content-Ops && npm run youtube:upload -- --file … --title … [--schedule ISO] [--format longform|shorts] [--dry-run]`
+3. Future `scheduledAt`: upload **now** with `privacyStatus=private|unlisted` + `publishAt` (≥~15 min ahead). Do not wait until air time on the laptop.
+4. Require explicit `privacyStatus` and `madeForKids`. Private dry-run first when testing.
+5. Docs: `07_Content-Ops/docs/YOUTUBE_CONNECTION_SETUP.md`
+
+## Do not
+
+- Build new YouTube Studio CDP / Playwright upload scripts as the primary path.
+- Use CDP unless OAuth/API is broken or explicitly requested as fallback.
+- Mark a post `published` until the API returns a real video id (or reconcile shows live).
+
+## Other platforms
+
+TikTok / Meta may still need Studio CDP until their APIs are approved. That exception does **not** apply to YouTube.
