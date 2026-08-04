@@ -78,30 +78,33 @@ Wonder over certainty · Curiosity over clickbait · Science over speculation ·
 
 | | |
 |---|---|
-| Cadence | **1 / week** (Thu **19:00** UK · window 18:00–20:00) · scale target **2 / week** later |
-| Length now | 8–15 min |
-| Length later | 20–40 min |
+| Cadence | **1 / week** (Thu **19:00** UK · window 18:00–20:00) · BH cold-start exception allowed |
+| Length now | **10–12 min** VO-locked (hard lock after V004) |
+| Length later | 15–20 min only if retention earns it |
 | Priority | Always first — Shorts never publish before the pillar is public |
 
-**Structure**
+**Structure (chapter story)**
 
-1. **Intro (0–30s)** — immediate curiosity  
-2. **Middle** — science, mystery, possibilities, research — storytelling, not Wikipedia  
-3. **Ending** — powerful question + wonder + Orbit reflection  
+1. **Hook (0–20s)** — mystery claim; picture proves it  
+2. **Chapters (4–6)** — each is a mini-story with one **teach point** + visual must  
+3. **Ending** — wonder takeaway + soft “next mystery” return energy + Orbit CTA  
+
+Canonical gate: `Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
+Rule: picture **shows or acts** the VO — no generic B-roll under specific narration.
 
 ### Shorts (support the pillar)
 
 | | |
 |---|---|
-| Cadence | **5–7 / week** · Day 1 @ **21:00** then Days 2–7 @ **12:30** UK |
-| Length | 30–60s |
+| Cadence | Launch **21:00** · supporting **12:30** · **3–5** scheduled + reserves · max 1/day · prefer 36–48h spacing |
+| Length | Legacy baseline **41–45s** · experiment **22–30s** (JWST EXP-S01) |
 | Job | Premium mini-docs that discover → funnel into **this week’s** long |
 
-**Rules:** standalone value · hook ≤2s · one idea · curiosity ending · soft CTA (never an ad) · no random clip dumps.
+**Rules:** standalone value · hook **0–1.5s** spoken punch · one idea · curiosity ending · soft CTA (never an ad) · no random clip dumps · no welcome/logo open.
 
-**Short arc:** 0–2s hook → single fascinating idea → curiosity ending → soft “full story on Orbit With Ben”.
+**Short arc:** 0–1.5s hook → 1.5–6s escalate → core evidence → payoff → optional 1–2s soft CTA.
 
-Canonical: `Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`
+Canonical: `Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md` · `docs/ORBIT_GROWTH_PLAYBOOK.md`
 
 ---
 
@@ -135,15 +138,17 @@ Publish slots: `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.json`.
 ## Per-video pipeline
 
 1. Research (NASA / ESA / papers / journals)  
-2. Script (hook · story · science · emotional ending)  
-3. Scene breakdown (number · duration · visual · camera · Orbit · AI prompt)  
-4. **Title gate (vidIQ)** — score ABC ≥90 before VO (`04_Audio/tools/vidiq_title_score_sheet.py`)  
-5. Generate visuals (consistent Orbit + palette + cinematic bar)  
-6. Voice (ElevenLabs · Ben clone) → captions via `04_Audio/tools/transcribe_vo.py`  
-7. Edit — SFX/music from script cues (`generate_sfx_from_script.py`, `generate_music_bed.py`)  
-8. Package (titles · thumb ABC · description · tags · chapters · SEO)  
-9. Upload / schedule on `@OrbitWithBen` (long Thu 19:00 → Shorts cluster)  
-10. Fill content flywheel (`CONTENT_FLYWHEEL_TEMPLATE.md`) · run `RELEASE_WEEK_CHECKLIST.md`
+2. **Chapter outline** — 4–6 named chapters with teach-points (`LONGFORM_STORY_AND_VO_PICTURE_GATE.md`)  
+3. Script with `[VISUAL MUST]` / `[TEACH]` / `[CHAPTER CARD]` on every scene  
+4. Scene breakdown (number · duration · visual · camera · Orbit · AI prompt) — prompts derived from markers only  
+5. **Title gate (vidIQ)** — score ABC ≥90 before VO (`04_Audio/tools/vidiq_title_score_sheet.py`)  
+6. Voice (ElevenLabs · Ben clone) → **lock VO duration** → captions via `04_Audio/tools/transcribe_vo.py`  
+7. Generate visuals **to VO timeline** (Orbit identity lock · unique plates · no loops)  
+8. Edit — brand intro + chapter cards + subscribe outro; SFX/music from script cues  
+9. **VO–picture QA gate** (watch once: no generic stretch under specific VO)  
+10. Package (titles · thumb ABC · description · tags · chapters · SEO)  
+11. Upload / schedule on `@OrbitWithBen` (long Thu 19:00 → Shorts cluster)  
+12. Fill content flywheel (`CONTENT_FLYWHEEL_TEMPLATE.md`) · run `RELEASE_WEEK_CHECKLIST.md`
 
 Package template: `00_Brand/Channel-Setup/VIDEO_PACKAGE_TEMPLATE.md`  
 Audio tools: `04_Audio/tools/README.md`  

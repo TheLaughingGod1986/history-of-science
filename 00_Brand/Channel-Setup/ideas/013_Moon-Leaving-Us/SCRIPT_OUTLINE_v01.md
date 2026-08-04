@@ -1,52 +1,36 @@
 # 013 — Script outline v01 (Moon leaving us)
 
 **Title (99):** Why the Moon Is Slowly Leaving Us — and What Happens When It's Gone | Orbit's Cosmic Journey  
-**Runtime target:** 15–22 min  
-**Patterns:** assumption-flip · 3 layers · body-scale anchors · slow reveal · Orbit guide · wonder ending
+**Runtime lock:** **10–12 min** (post-V004 gate)  
+**Quality bar:** `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
+**Patterns:** assumption-flip · chapter story · body-scale · slow reveal · Orbit guide · teach + wonder
 
-## Promise (state early, answer late)
+## Viewer takeaway (must stick)
 
-> The Moon is leaving us — about 3.8 centimetres a year. By the end of this journey, you'll know what that means for the Earth under your feet, the day length on your clock, and the last perfect eclipse you'll ever see.
+> The Moon is receding ~3.8 cm/year because of tidal friction — and we live in a rare window where it still perfectly covers the Sun.
 
-## Structure
+## Promise (state early, answer in chapters)
 
-### 0. Cold open (0:00–0:45)
-- Orbit looking up at a familiar Moon
-- Body anchor: “From the chair you're sitting in, that silver coin is already farther than it was when you were born.”
-- Number the journey: “Three layers. One answer at the end.”
+> The Moon is leaving us. By the end you’ll know how fast, why, and what that means for tides, days, and the last perfect eclipse.
 
-### 1. Layer one — When the Moon was close (≈4–6 min)
-- Early Earth: Moon much nearer
-- Tides measured in extremes; shorter day
-- Sensory: standing on a shoreline under a gigantic Moon
-- Orbit reaction: wonder, not panic
+## Chapters (each = mini-story + one teach)
 
-### 2. Layer two — What's happening now (≈4–6 min)
-- Tidal friction / angular momentum transfer (plain language)
-- 3.8 cm/year made tangible (fingernail, postage stamp, Orbit's hand)
-- Laser ranging / how we know
-- Hold the big “what happens when it's gone” — don't dump yet
+| # | Chapter card | Teach point | Visual must |
+|---|--------------|-------------|-------------|
+| 0 | — Hook | Moon is drifting away now | Orbit under familiar Moon; cm-scale motion |
+| 1 | The Moon Is Leaving | ~3.8 cm/year (laser-ranged fact) | Measuring gap Earth↔Moon; Orbit with ruler metaphor |
+| 2 | When It Was Closer | Early Earth: bigger tides, shorter day | Giant ancient Moon over wild shoreline; Orbit tiny |
+| 3 | Why It Drifts | Tidal friction transfers spin → orbit | Earth–Moon tidal bulge diagram acted by Orbit |
+| 4 | The Last Perfect Eclipse | Perfect solar eclipses won’t last forever | Perfect eclipse → annular future; Orbit watches |
+| 5 | Wonder window | We live in the coincidence era | Orbit looks up; soft return CTA |
 
-### 3. Layer three — The long future (≈4–6 min)
-- Total solar eclipses become impossible (size mismatch)
-- Axial tilt stability risk (honest uncertainty + consensus framing)
-- Far future: Moon drifts toward a distant dance — still bound for a very long time; avoid fake “Moon flies off next Tuesday”
-- Escalating strangeness → still warm
+## Beat rules
 
-### 4. Closing reveal + wonder (≈1–2 min)
-- Answer: we live in a narrow coincidence window where Moon and Sun match in the sky
-- Orbit reflection: the universe didn't owe us perfect eclipses — we got them anyway
-- Soft CTA: next mystery / subscribe as fellow explorers
+- Every scene: `[VISUAL MUST]` + `[TEACH]` + `[ORBIT ACTS]`
+- No generic galaxy under Moon-specific VO
+- Brand intro after hook · subscribe outro at end
+- Unique plates only; motion once then still pan
 
-## Chapter cards (working)
+## Success test
 
-1. The Moon Is Leaving
-2. When It Was Closer
-3. Why It Drifts
-4. The Last Perfect Eclipse
-
-## Must-protect
-
-- Science accuracy over drama
-- No fearbait (“Earth is doomed”)
-- Unique plates per beat — no cutscene reuse/loop
+Viewer can repeat the takeaway and wants the next Orbit mystery.

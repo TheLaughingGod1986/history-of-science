@@ -31,13 +31,19 @@ For each: one idea · Orbit yes/no · text ≤ ~4 words · colour note.
 - B:
 - C:
 
-## 3. Full script
+## 3. Full script (10–12 min · chapter story)
 
-- Hook (0–30s)
-- Body (science · mystery · possibilities · research — storytelling)
-- Ending (question · wonder · Orbit reflection)
+Canonical: `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`
 
-Tone: warm, curious, never conspiratorial.
+- [ ] Target **10–12 min** VO (do not pad)
+- [ ] **4–6 named chapters**, each with one teach-point
+- [ ] Hook (0–20s) — mystery claim on screen
+- [ ] Every scene has `[VISUAL MUST: …]` + `[TEACH: …]`
+- [ ] Picture shows/acts the VO — no generic filler under specific lines
+- [ ] Ending — wonder takeaway + soft return CTA + Orbit reflection
+- [ ] Chapter cards at each chapter start (locked stills)
+
+Tone: mystery + educational + Pixar-warm. Never conspiratorial.
 
 ## 4. Scene breakdown
 

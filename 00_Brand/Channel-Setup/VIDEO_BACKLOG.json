@@ -13,8 +13,15 @@
     "short_day1_time_uk": "21:00",
     "shorts_days_2_to_7_time_uk": "12:30",
     "pattern": "long first → Short#1 after 1-3h → one Short/day Days 2-7",
-    "long_form_minutes_now": "8-15",
-    "long_form_minutes_later": "20-40",
+    "long_form_minutes_now": "10-12",
+    "long_form_minutes_later": "15-20 if retention earns it",
+    "story_gate": "LONGFORM_STORY_AND_VO_PICTURE_GATE.md",
+    "story_gate_rules": [
+      "VO-picture lock: show or act narration",
+      "4-6 story chapters with one teach-point each",
+      "mystery + educational + wonder return habit",
+      "reuse brand intro/outro only; unique story plates per episode"
+    ],
     "strategy": "PUBLISHING_AND_SHORTS_STRATEGY.md",
     "schedule": "OPTIMAL_PUBLISH_SCHEDULE.json",
     "scale_up_target": "2 long / week after months 6-9 if quality holds"
@@ -186,11 +193,13 @@
       "pillar": "Cosmic Mysteries",
       "status": "backlog",
       "priority": "next_after_004",
+      "next_production": true,
+      "quality_bar": "LONGFORM_STORY_AND_VO_PICTURE_GATE.md — first episode under hard 10-12 VO-picture chapter gate",
       "source": "vidiq_outlier_pattern_analysis_2026-08-02",
       "ideas_doc": "00_Brand/Channel-Setup/ideas/013_Moon-Leaving-Us/",
       "format": "full_cg_orbit_guide + chapter_cards",
-      "target_minutes": "15-22",
-      "angle": "Layered reveal of lunar recession — early Earth when Moon was closer, what's happening now, distant future without perfect eclipses; end in wonder at the coincidence window",
+      "target_minutes": "10-12",
+      "angle": "Layered reveal of lunar recession — early Earth when Moon was closer, what's happening now, distant future without perfect eclipses; end in wonder at the coincidence window. Every chapter teaches one concrete fact; picture must match VO.",
       "patterns": [
         "assumption_flip",
         "layered_structure",
@@ -252,7 +261,7 @@
       "source": "vidiq_outlier_pattern_analysis_2026-08-02",
       "ideas_doc": "00_Brand/Channel-Setup/ideas/014_Planet-Sounds/",
       "format": "full_cg_orbit_radio_tour + chapter_cards",
-      "target_minutes": "15-20",
+      "target_minutes": "10-12",
       "angle": "Orbit tunes a cosmic radio — planet-by-planet walk through NASA/ESA converted radio emissions; end on Earth's unique electromagnetic song",
       "patterns": [
         "assumption_flip",

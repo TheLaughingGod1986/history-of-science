@@ -6,13 +6,13 @@
 
 ## Does this help planning?
 
-Yes. Both analyses extract **reusable structures** (journey layers, assumption-flip, engineering roadmap) that map onto Orbit’s wonder tone. Steal the skeleton; keep Pixar-warm endings; stay in the **10–15 min** production sweet spot until retention data exists. Do **not** chase 4h sleep docs or guest-interview formats Orbit can’t replicate yet.
+Yes. Both analyses extract **reusable structures** (journey layers, assumption-flip, engineering roadmap) that map onto Orbit’s wonder tone. Steal the skeleton; keep Pixar-warm endings; stay in the **10–12 min** hard lock with **VO–picture chapter storytelling** (`../LONGFORM_STORY_AND_VO_PICTURE_GATE.md`). Do **not** chase 4h sleep docs or guest-interview formats Orbit can’t replicate yet.
 
 ## Priority after V004 (JWST)
 
 | ID | Working title | Score | Pillar | Priority |
 |----|---------------|------:|--------|----------|
-| **013** | Why the Moon Is Slowly Leaving Us — … | **99** | Cosmic Mysteries | **next** |
+| **013** | Why the Moon Is Slowly Leaving Us — … | **99** | Cosmic Mysteries | **next · 10–12 min VO-picture gate** |
 | **016** | How Far Is the Nearest Star? Orbit Tries to Walk There | **94** | Cosmic Mysteries | Orbit signature journey |
 | **014** | Every Planet Has a Sound — … | **98** | Space Stories | after 013/016 |
 | **017** | Why Even a Robot Can't Survive Mars Without Help | **96** | Future Humanity | roadmap week |
