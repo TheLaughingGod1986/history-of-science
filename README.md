@@ -14,6 +14,7 @@ asking the biggest questions in the universe.*
 **Latest audit:** `00_Brand/Channel-Setup/audits/CHANNEL_AUDIT_2026-08-01_PM.md`  
 **Flywheel / release:** `CONTENT_FLYWHEEL_TEMPLATE.md` · `RELEASE_WEEK_CHECKLIST.md`  
 **Video backlog:** `00_Brand/Channel-Setup/VIDEO_BACKLOG.json`  
+**Long-form quality gate (10–12 min · chapters · VO–picture):** `00_Brand/Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
 **Shorts mirrors:** TikTok `Channel-Setup/TikTok/AUTO_POST.md` · Meta (IG+FB) `Channel-Setup/Meta/AUTO_POST.md`
 
 This repository holds every asset for the channel — the character bible, the
