@@ -1,3 +1,8 @@
+---
+description: Orbit long-form — 10–12 min chapters, VO–picture lock, pre-build vidIQ before gen
+alwaysApply: true
+---
+
 # Orbit long-form — story + VO–picture + vidIQ pre-build gate
 
 When writing or assembling any Orbit long-form **after V004**:
@@ -8,4 +13,4 @@ When writing or assembling any Orbit long-form **after V004**:
 4. **VO–picture lock:** Every scene needs `[VISUAL MUST: …]` and `[TEACH: …]`. Picture must show or act the narration in that moment — no generic filler under specific VO.
 5. **Learning + return + growth:** Viewer leaves with a takeaway and wants the next mystery; packaging aims at **views + whole-video watch**.
 6. **Brand:** Reuse brand intro + like/subscribe outro. Unique story plates only inside one episode (see cutscene rules). Fearbait rejected even if vidIQ scores higher.
-7. Canonical docs: `LONGFORM_STORY_AND_VO_PICTURE_GATE.md` · `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
+7. Canonical docs: `LONGFORM_STORY_AND_VO_PICTURE_GATE.md` · `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · `RETENTION_AND_GROWTH_LOCKED.md`
