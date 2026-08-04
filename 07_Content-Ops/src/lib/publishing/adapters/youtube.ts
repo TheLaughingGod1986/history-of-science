@@ -19,6 +19,9 @@ import { getEnv } from "@/lib/env";
 const YT_UPLOAD = "https://www.googleapis.com/auth/youtube.upload";
 const YT_READONLY = "https://www.googleapis.com/auth/youtube.readonly";
 
+/** YouTube requires publishAt at least ~15 minutes in the future (API soft rule). */
+const MIN_PUBLISH_AT_MS = 15 * 60 * 1000;
+
 export function youtubeCapabilities(connected: boolean, scopes: string[] = []): PlatformCapabilities {
   const hasUpload = scopes.includes(YT_UPLOAD) || scopes.some((s) => s.includes("youtube.upload"));
   return {
@@ -37,8 +40,23 @@ export function youtubeCapabilities(connected: boolean, scopes: string[] = []): 
     limitations: [
       ...(connected ? [] : ["Connect Google OAuth before publishing"]),
       "Default test uploads use privacyStatus=private",
+      "Native schedule uses privacyStatus=private + publishAt (upload now, go live later)",
       "madeForKids must be set explicitly",
+      "YouTube Studio CDP is fallback only — Data API is the default upload path",
     ],
+  };
+}
+
+export function resolveYouTubeSchedule(scheduledAt?: Date | null, now = new Date()): {
+  usePublishAt: boolean;
+  publishAtIso?: string;
+} {
+  if (!scheduledAt || scheduledAt.getTime() <= now.getTime() + MIN_PUBLISH_AT_MS) {
+    return { usePublishAt: false };
+  }
+  return {
+    usePublishAt: true,
+    publishAtIso: scheduledAt.toISOString(),
   };
 }
 
@@ -110,13 +128,23 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
     if (!post.title && !post.caption) errors.push("Title or caption required");
     if (post.privacyStatus == null) errors.push("privacyStatus is required (default tests to private)");
     if (post.madeForKids == null) errors.push("madeForKids must be set explicitly");
+    const schedule = resolveYouTubeSchedule(post.scheduledAt ?? null);
+    if (schedule.usePublishAt && post.privacyStatus && post.privacyStatus !== "private" && post.privacyStatus !== "unlisted") {
+      errors.push("Native YouTube schedule requires privacyStatus private or unlisted (API publishAt rule)");
+    }
     const file = post.mediaFilePath || post.exportPath;
     if (!file) errors.push("mediaFilePath / export video missing");
     else {
       const probe = await probeVideo(resolveVideoFile(file));
-      const platformCheck = validateForPlatform("youtube_shorts", probe);
+      const platformKey = post.contentFormat === "longform" ? "youtube_longform" : "youtube_shorts";
+      const platformCheck = validateForPlatform(platformKey, probe);
       errors.push(...platformCheck.errors);
       warnings.push(...platformCheck.warnings);
+    }
+    if (post.thumbnailPath) {
+      if (!fs.existsSync(post.thumbnailPath)) {
+        warnings.push(`thumbnailPath not found: ${post.thumbnailPath}`);
+      }
     }
     return { ok: errors.length === 0, errors, warnings };
   }
@@ -126,6 +154,12 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
     connection: PlatformConnectionRecord,
     context: PublishingContext,
   ): Promise<PublishResult> {
+    const schedule = resolveYouTubeSchedule(post.scheduledAt ?? null);
+    const requestedPrivacy = (post.privacyStatus || "private") as "private" | "public" | "unlisted";
+    const privacyStatus = schedule.usePublishAt
+      ? (requestedPrivacy === "unlisted" ? "unlisted" : "private")
+      : requestedPrivacy;
+
     if (context.dryRun) {
       const errors: string[] = [];
       if (!post.title && !post.caption) errors.push("Title or caption required");
@@ -144,12 +178,18 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
       return {
         success: true,
         published: false,
-        message: "Dry-run complete. YouTube upload request prepared but not sent.",
+        scheduledOnPlatform: schedule.usePublishAt,
+        scheduledFor: schedule.publishAtIso,
+        message: schedule.usePublishAt
+          ? `Dry-run complete. Would upload now with publishAt=${schedule.publishAtIso}.`
+          : "Dry-run complete. YouTube upload request prepared but not sent.",
         method: "dry_run",
         responseSummary: redactSummary({
           title: post.title,
-          privacyStatus: post.privacyStatus || "private",
+          privacyStatus,
+          publishAt: schedule.publishAtIso || null,
           madeForKids: post.madeForKids,
+          contentFormat: post.contentFormat || "shorts",
           connectionId: connection.id,
         }),
       };
@@ -170,8 +210,15 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
     const filePath = resolveVideoFile(post.mediaFilePath || post.exportPath!);
     const title = (post.title || post.caption || "Orbit Short").slice(0, 100);
     const description = post.caption || "";
-    const privacyStatus = post.privacyStatus || "private";
     const madeForKids = Boolean(post.madeForKids);
+
+    const statusPayload: Record<string, unknown> = {
+      privacyStatus,
+      selfDeclaredMadeForKids: madeForKids,
+    };
+    if (schedule.usePublishAt && schedule.publishAtIso) {
+      statusPayload.publishAt = schedule.publishAtIso;
+    }
 
     try {
       const metaRes = await fetch(
@@ -191,10 +238,7 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
               categoryId: "28",
               tags: safeTags(post.hashtags),
             },
-            status: {
-              privacyStatus,
-              selfDeclaredMadeForKids: madeForKids,
-            },
+            status: statusPayload,
           }),
         },
       );
@@ -251,12 +295,36 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
       }
 
       const videoId = uploadBody.id as string;
+      let thumbNote = "";
+      if (post.thumbnailPath && fs.existsSync(post.thumbnailPath)) {
+        const thumbOk = await setYouTubeThumbnail(context.accessToken, videoId, post.thumbnailPath);
+        thumbNote = thumbOk.ok ? "; thumbnail set" : `; thumbnail skipped: ${thumbOk.message}`;
+      }
+
+      if (schedule.usePublishAt && schedule.publishAtIso) {
+        return {
+          success: true,
+          published: true,
+          scheduledOnPlatform: true,
+          scheduledFor: schedule.publishAtIso,
+          platformPostId: videoId,
+          platformUrl: `https://youtu.be/${videoId}`,
+          message: `Uploaded to YouTube; scheduled to go live at ${schedule.publishAtIso}${thumbNote}`,
+          method: "api",
+          responseSummary: redactSummary({
+            id: videoId,
+            privacyStatus,
+            publishAt: schedule.publishAtIso,
+          }),
+        };
+      }
+
       return {
         success: true,
         published: true,
         platformPostId: videoId,
         platformUrl: `https://youtu.be/${videoId}`,
-        message: `Uploaded to YouTube as ${privacyStatus}`,
+        message: `Uploaded to YouTube as ${privacyStatus}${thumbNote}`,
         method: "api",
         responseSummary: redactSummary({ id: videoId, privacyStatus }),
       };
@@ -288,11 +356,41 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
       const body = await res.json();
       const item = body.items?.[0];
       if (!item) return { status: "failed", detail: "Video not found", platformPostId: externalPostId };
+      const privacy = item.status?.privacyStatus as string | undefined;
+      const publishAt = item.status?.publishAt as string | undefined;
+      const uploadStatus = item.status?.uploadStatus as string | undefined;
+      if (uploadStatus && uploadStatus !== "processed" && uploadStatus !== "uploaded") {
+        return {
+          status: "processing",
+          platformPostId: externalPostId,
+          platformUrl: `https://youtu.be/${externalPostId}`,
+          detail: `uploadStatus=${uploadStatus}; privacy=${privacy}`,
+        };
+      }
+      if (privacy === "private" && publishAt) {
+        const when = new Date(publishAt);
+        if (when.getTime() > Date.now()) {
+          return {
+            status: "scheduled",
+            platformPostId: externalPostId,
+            platformUrl: `https://youtu.be/${externalPostId}`,
+            detail: `publishAt=${publishAt}; privacy=${privacy}`,
+          };
+        }
+      }
+      if (privacy === "public" || privacy === "unlisted") {
+        return {
+          status: "published",
+          platformPostId: externalPostId,
+          platformUrl: `https://youtu.be/${externalPostId}`,
+          detail: `privacy=${privacy}`,
+        };
+      }
       return {
-        status: "published",
+        status: "draft",
         platformPostId: externalPostId,
         platformUrl: `https://youtu.be/${externalPostId}`,
-        detail: `privacy=${item.status?.privacyStatus}`,
+        detail: `privacy=${privacy}`,
       };
     } catch (err) {
       return {
@@ -359,6 +457,41 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
     } catch {
       return { ok: true, message: "Local disconnect will proceed even if revoke call failed" };
     }
+  }
+}
+
+async function setYouTubeThumbnail(
+  accessToken: string,
+  videoId: string,
+  thumbnailPath: string,
+): Promise<{ ok: boolean; message: string }> {
+  try {
+    const buf = fs.readFileSync(thumbnailPath);
+    const lower = thumbnailPath.toLowerCase();
+    const contentType = lower.endsWith(".png")
+      ? "image/png"
+      : lower.endsWith(".gif")
+        ? "image/gif"
+        : "image/jpeg";
+    const res = await fetch(
+      `https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=${encodeURIComponent(videoId)}`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          "Content-Type": contentType,
+          "Content-Length": String(buf.length),
+        },
+        body: buf,
+      },
+    );
+    if (!res.ok) {
+      const text = await res.text();
+      return { ok: false, message: redactSummary(text) };
+    }
+    return { ok: true, message: "ok" };
+  } catch (err) {
+    return { ok: false, message: err instanceof Error ? err.message : "thumbnail upload failed" };
   }
 }
 

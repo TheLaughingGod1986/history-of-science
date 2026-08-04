@@ -28,6 +28,12 @@ npm run dev:all         # UI + worker together
 7. Recover stale locks (>15 minutes)
 8. Heartbeat every poll cycle
 
+### YouTube native schedule
+
+For `youtube_shorts`, a future `scheduledAt` does **not** delay the claim. The worker uploads immediately with YouTube `publishAt`, then marks the post `scheduled` / job `awaiting_platform_processing`. The laptop only needs to be awake at **upload** time, not at air time.
+
+Other platforms still wait until `scheduledAt <= now` unless they gain a native schedule path.
+
 ## Health
 
 Overview and Connections show:

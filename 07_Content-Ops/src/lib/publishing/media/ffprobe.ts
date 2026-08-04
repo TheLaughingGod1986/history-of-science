@@ -112,6 +112,10 @@ export function validateForPlatform(
   if (!probe.ok) return { ok: false, errors, warnings };
 
   const duration = probe.durationSeconds || 0;
+  if (platform === "youtube_longform") {
+    if (duration < 3) errors.push("Video shorter than 3 seconds");
+    return { ok: errors.length === 0, errors, warnings };
+  }
   if (["youtube_shorts", "tiktok", "instagram_reels", "facebook_reels"].includes(platform)) {
     if (duration < 3) errors.push("Video shorter than 3 seconds");
     if (duration > 60 && platform === "youtube_shorts") {

@@ -54,6 +54,10 @@ export type PostValidationResult = {
 export type PublishResult = {
   success: boolean;
   published: boolean;
+  /** True when the platform accepted a future publishAt (uploaded now, goes live later). */
+  scheduledOnPlatform?: boolean;
+  /** ISO timestamp the platform will make the video public, when scheduledOnPlatform. */
+  scheduledFor?: string;
   platformPostId?: string;
   platformUrl?: string;
   externalUploadId?: string;
@@ -73,6 +77,7 @@ export type ExternalPublishStatus = {
     | "uploading"
     | "processing"
     | "published"
+    | "scheduled"
     | "failed"
     | "draft"
     | "manual_action_required";
@@ -129,6 +134,10 @@ export type PlatformPostRecord = {
   approvedForPublish?: boolean | null;
   scheduledAt?: Date | null;
   exportPath?: string | null;
+  /** Optional custom thumbnail (jpg/png/gif under 2MB). */
+  thumbnailPath?: string | null;
+  /** When "longform", skip Shorts-oriented duration warnings. */
+  contentFormat?: "shorts" | "longform" | null;
 };
 
 export type PublishingContext = {

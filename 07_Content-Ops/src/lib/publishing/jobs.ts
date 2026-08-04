@@ -2,6 +2,13 @@ import { prisma } from "@/lib/storage/prisma";
 import { buildIdempotencyKey } from "@/lib/publishing/idempotency";
 import { backoffMs } from "@/lib/publishing/errors";
 
+/** Platforms that upload immediately with a native publishAt (do not wait until air time). */
+const NATIVE_SCHEDULE_UPLOAD_NOW = new Set(["youtube_shorts"]);
+
+export function usesNativeScheduleUploadNow(platform: string): boolean {
+  return NATIVE_SCHEDULE_UPLOAD_NOW.has(platform);
+}
+
 export async function enqueuePublishingJob(input: {
   platformPostId: string;
   platformConnectionId?: string | null;
@@ -12,14 +19,21 @@ export async function enqueuePublishingJob(input: {
   const post = await prisma.platformPost.findUnique({ where: { id: input.platformPostId } });
   if (!post) throw new Error("PlatformPost not found");
 
+  const scheduledAt = input.scheduledAt || post.scheduledAt;
   const connectionId = input.platformConnectionId || "none";
   const idempotencyKey = buildIdempotencyKey({
     platform: post.platform,
     platformConnectionId: connectionId,
     platformPostId: post.id,
     mediaChecksum: input.mediaChecksum || post.mediaChecksum,
-    scheduleVersion: (input.scheduledAt || post.scheduledAt)?.toISOString() || "immediate",
+    scheduleVersion: scheduledAt?.toISOString() || "immediate",
   });
+
+  // YouTube: upload now with publishAt — claim immediately even when scheduledAt is future.
+  const nativeNow =
+    usesNativeScheduleUploadNow(post.platform) &&
+    Boolean(scheduledAt && scheduledAt.getTime() > Date.now());
+  const nextAttemptAt = nativeNow ? new Date() : scheduledAt || new Date();
 
   const existing = await prisma.publishingJob.findUnique({ where: { idempotencyKey } });
   if (existing && ["published", "awaiting_platform_processing"].includes(existing.status)) {
@@ -30,11 +44,11 @@ export async function enqueuePublishingJob(input: {
     const updated = await prisma.publishingJob.update({
       where: { id: existing.id },
       data: {
-        status: input.scheduledAt ? "scheduled" : "pending",
-        scheduledAt: input.scheduledAt || post.scheduledAt,
+        status: scheduledAt ? "scheduled" : "pending",
+        scheduledAt,
         platformConnectionId: input.platformConnectionId || existing.platformConnectionId,
         dryRun: input.dryRun ?? existing.dryRun,
-        nextAttemptAt: input.scheduledAt || new Date(),
+        nextAttemptAt,
       },
     });
     return { job: updated, duplicate: false as const };
@@ -44,9 +58,9 @@ export async function enqueuePublishingJob(input: {
     data: {
       platformPostId: post.id,
       platformConnectionId: input.platformConnectionId || null,
-      status: input.scheduledAt ? "scheduled" : "pending",
-      scheduledAt: input.scheduledAt || post.scheduledAt,
-      nextAttemptAt: input.scheduledAt || new Date(),
+      status: scheduledAt ? "scheduled" : "pending",
+      scheduledAt,
+      nextAttemptAt,
       idempotencyKey,
       dryRun: Boolean(input.dryRun),
     },
@@ -77,7 +91,14 @@ export async function claimDueJob(workerId: string, now = new Date()) {
       OR: [{ nextAttemptAt: null }, { nextAttemptAt: { lte: now } }],
       AND: [
         {
-          OR: [{ scheduledAt: null }, { scheduledAt: { lte: now } }],
+          OR: [
+            { scheduledAt: null },
+            { scheduledAt: { lte: now } },
+            // YouTube native schedule: upload before air time with publishAt
+            {
+              platformPost: { platform: { in: [...NATIVE_SCHEDULE_UPLOAD_NOW] } },
+            },
+          ],
         },
       ],
       lockedAt: null,

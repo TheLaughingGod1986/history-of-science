@@ -9,7 +9,7 @@ import {
 } from "../src/lib/security/token-crypto";
 import { buildIdempotencyKey } from "../src/lib/publishing/idempotency";
 import { backoffMs, classifyHttpError, redactSummary } from "../src/lib/publishing/errors";
-import { youtubeCapabilities, YouTubePublishingAdapter } from "../src/lib/publishing/adapters/youtube";
+import { youtubeCapabilities, YouTubePublishingAdapter, resolveYouTubeSchedule } from "../src/lib/publishing/adapters/youtube";
 import { TikTokPublishingAdapter } from "../src/lib/publishing/adapters/tiktok";
 import { ThreadsPublishingAdapter } from "../src/lib/publishing/adapters/threads";
 import { MockStagingProvider } from "../src/lib/publishing/media/staging";
@@ -173,6 +173,60 @@ describe("youtube dry-run publish", () => {
     expect(result.method).toBe("dry_run");
     expect(result.platformPostId).toBeUndefined();
   });
+
+  it("includes publishAt in dry-run when scheduled far enough ahead", async () => {
+    const adapter = new YouTubePublishingAdapter();
+    const publishAt = new Date(Date.now() + 2 * 60 * 60 * 1000);
+    const result = await adapter.publish(
+      {
+        id: "post-sched",
+        platform: "youtube_shorts",
+        title: "Scheduled Short",
+        caption: "hello",
+        uploadStatus: "ready",
+        privacyStatus: "private",
+        madeForKids: false,
+        scheduledAt: publishAt,
+        mediaFilePath: "/tmp/does-not-need-to-exist-for-dry-run.mp4",
+        contentFormat: "longform",
+      },
+      {
+        id: "conn1",
+        platform: "youtube_shorts",
+        connectionStatus: "connected",
+        grantedScopes: JSON.stringify([
+          "https://www.googleapis.com/auth/youtube.upload",
+          "https://www.googleapis.com/auth/youtube.readonly",
+        ]),
+        accessTokenEncrypted: encryptSecret("fake"),
+      },
+      {
+        dryRun: true,
+        workerId: "test",
+        jobId: "job-sched",
+        attemptNumber: 1,
+        accessToken: "fake",
+      },
+    );
+    expect(result.success).toBe(true);
+    expect(result.published).toBe(false);
+    expect(result.scheduledOnPlatform).toBe(true);
+    expect(result.scheduledFor).toBe(publishAt.toISOString());
+    expect(result.responseSummary).toContain("publishAt");
+  });
+});
+
+describe("youtube schedule helpers", () => {
+  it("resolves publishAt only when far enough in the future", () => {
+    const now = new Date("2026-08-05T12:00:00.000Z");
+    expect(resolveYouTubeSchedule(null, now).usePublishAt).toBe(false);
+    expect(resolveYouTubeSchedule(new Date("2026-08-05T12:10:00.000Z"), now).usePublishAt).toBe(
+      false,
+    );
+    const far = resolveYouTubeSchedule(new Date("2026-08-05T14:00:00.000Z"), now);
+    expect(far.usePublishAt).toBe(true);
+    expect(far.publishAtIso).toBe("2026-08-05T14:00:00.000Z");
+  });
 });
 
 describe("media staging mock", () => {
@@ -252,6 +306,48 @@ describe("publishing jobs locking", () => {
     expect(claimed).toBeTruthy();
     const claimed2 = await claimDueJob(`worker-other-${Date.now()}`);
     if (claimed2) expect(claimed2.id).not.toBe(claimed!.id);
+  });
+
+  it("claims future YouTube schedules immediately for publishAt upload", async () => {
+    const v = await prisma.longFormVideo.create({
+      data: {
+        title: "Future YT",
+        slug: `future-yt-${Date.now()}`,
+        topic: "Test",
+        status: "published",
+      },
+    });
+    const clip = await prisma.shortClip.create({
+      data: {
+        longFormVideoId: v.id,
+        clipNumber: 99,
+        workingTitle: "Future clip",
+        status: "exported",
+      },
+    });
+    const createdPost = await prisma.platformPost.create({
+      data: {
+        shortClipId: clip.id,
+        platform: "youtube_shorts",
+        title: "Future",
+        caption: "x",
+        uploadStatus: "ready",
+        approvedForPublish: true,
+        privacyStatus: "private",
+        madeForKids: false,
+      },
+    });
+    const future = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000);
+    const { job } = await enqueuePublishingJob({
+      platformPostId: createdPost.id,
+      scheduledAt: future,
+      dryRun: true,
+    });
+    expect(job.status).toBe("scheduled");
+    expect(job.nextAttemptAt!.getTime()).toBeLessThanOrEqual(Date.now() + 5_000);
+
+    const claimed = await claimDueJob(`worker-future-${Date.now()}`);
+    expect(claimed?.id).toBe(job.id);
   });
 });
 

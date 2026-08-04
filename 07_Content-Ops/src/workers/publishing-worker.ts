@@ -111,8 +111,10 @@ async function processJob(
   const accessToken = decryptSecret(fresh.accessTokenEncrypted);
   const validation = await adapter.validatePost({
     ...post,
+    scheduledAt: post.scheduledAt || job.scheduledAt,
     exportPath: post.shortClip.exportPath,
     mediaFilePath: post.mediaFilePath || post.shortClip.exportPath,
+    thumbnailPath: post.shortClip.thumbnailPath,
   });
   if (!validation.ok) {
     await recordAttempt({
@@ -181,18 +183,19 @@ async function processJob(
       job.externalPostId || post.platformPostId!,
       fresh,
     );
-    if (status.status === "published") {
+    if (status.status === "published" || status.status === "scheduled") {
       await completeJobSuccess({
         jobId: job.id,
         externalPostId: status.platformPostId,
         externalPostUrl: status.platformUrl,
         responseSummary: redactSummary(status),
+        status: status.status === "scheduled" ? "awaiting_platform_processing" : "published",
       });
       await prisma.platformPost.update({
         where: { id: post.id },
         data: {
-          uploadStatus: "published",
-          publishedAt: new Date(),
+          uploadStatus: status.status === "scheduled" ? "scheduled" : "published",
+          publishedAt: status.status === "published" ? new Date() : post.publishedAt,
           platformPostId: status.platformPostId,
           platformUrl: status.platformUrl,
         },
@@ -206,8 +209,10 @@ async function processJob(
   const result = await adapter.publish(
     {
       ...post,
+      scheduledAt: post.scheduledAt || job.scheduledAt,
       exportPath: post.shortClip.exportPath,
       mediaFilePath: post.mediaFilePath || post.shortClip.exportPath,
+      thumbnailPath: post.shortClip.thumbnailPath,
     },
     fresh,
     {
@@ -225,7 +230,13 @@ async function processJob(
   await recordAttempt({
     jobId: job.id,
     attemptNumber,
-    status: result.published ? "published" : result.success ? "ok" : "failed",
+    status: result.published
+      ? result.scheduledOnPlatform
+        ? "scheduled"
+        : "published"
+      : result.success
+        ? "ok"
+        : "failed",
     httpStatus: result.httpStatus,
     errorCategory: result.errorCategory,
     errorMessage: result.published ? undefined : result.message,
@@ -235,18 +246,24 @@ async function processJob(
   });
 
   if (result.published && result.platformPostId) {
+    const onPlatformSchedule = Boolean(result.scheduledOnPlatform);
     await completeJobSuccess({
       jobId: job.id,
       externalPostId: result.platformPostId,
       externalPostUrl: result.platformUrl,
       externalUploadId: result.externalUploadId,
       responseSummary: result.responseSummary,
+      // Terminal for the worker — YouTube owns the remaining schedule clock.
+      status: onPlatformSchedule ? "awaiting_platform_processing" : "published",
     });
     await prisma.platformPost.update({
       where: { id: post.id },
       data: {
-        uploadStatus: "published",
-        publishedAt: new Date(),
+        uploadStatus: onPlatformSchedule ? "scheduled" : "published",
+        publishedAt: onPlatformSchedule ? null : new Date(),
+        scheduledAt: result.scheduledFor
+          ? new Date(result.scheduledFor)
+          : post.scheduledAt,
         platformPostId: result.platformPostId,
         platformUrl: result.platformUrl,
         publishingMethod: "api",

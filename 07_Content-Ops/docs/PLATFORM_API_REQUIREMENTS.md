@@ -15,10 +15,14 @@
 | Upload | https://developers.google.com/youtube/v3/guides/uploading_a_video |
 | Resumable | https://developers.google.com/youtube/v3/guides/using_resumable_upload_protocol |
 | Insert | https://developers.google.com/youtube/v3/docs/videos/insert |
+| Schedule | `status.publishAt` + `privacyStatus` private/unlisted on insert |
+| Thumbnails | https://developers.google.com/youtube/v3/docs/thumbnails/set |
 | Minimum scopes | `https://www.googleapis.com/auth/youtube.upload`, `https://www.googleapis.com/auth/youtube.readonly` |
 | Upload type | Resumable `videos.insert` |
 | Test default privacy | `private` |
-| Notes | Do not use a service account for a normal channel. Require explicit `privacyStatus` and `madeForKids`. |
+| Orbit default path | **Data API** (`npm run youtube:upload` / publishing worker) |
+| Fallback | YouTube Studio CDP only if OAuth/API unavailable |
+| Notes | Do not use a service account for a normal channel. Require explicit `privacyStatus` and `madeForKids`. Upload scheduled videos immediately with `publishAt` — do not wait until air time on the local worker. |
 
 ---
 
