@@ -108,23 +108,32 @@ Watch with VO only once, then picture+VO:
 
 ## Pipeline order (tightened)
 
-1. Title ABC ≥90 (vidIQ)  
-2. **Chapter outline** with teach-points (this doc’s arc)  
-3. Full script with `[VISUAL MUST]` / `[TEACH]` on every scene  
-4. Scene board / prompts generated **from those markers only**  
-5. ElevenLabs VO → lock duration  
-6. Picture gen / edit **matched to VO timeline**  
-7. Chapter cards + brand intro + subscribe outro  
-8. QA gate above → package → schedule  
+**0. Pre-build vidIQ audit (blocking)** — keywords · title ABC ≥90 · outliers · how data changes chapters/thumb/`VISUAL MUST`  
+   → fill `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` into the project as `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`  
+1. **Chapter outline** with teach-points informed by that audit  
+2. Full script with `[VISUAL MUST]` / `[TEACH]` on every scene  
+3. Scene board / prompts generated **from those markers only**  
+4. ElevenLabs VO → lock duration  
+5. Picture gen / edit **matched to VO timeline**  
+6. Chapter cards + brand intro + subscribe outro  
+7. QA gate above → package → schedule  
 
-Templates: `VIDEO_PACKAGE_TEMPLATE.md` · script pattern: JWST `VISUAL MUST` markers · cutscenes: `CUTSCENE_RULES.md`
+**Do not** lock VO or spend Veo credits until step 0 is signed off.
+
+Templates: `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · `VIDEO_PACKAGE_TEMPLATE.md` · JWST `VISUAL MUST` markers · cutscenes: `CUTSCENE_RULES.md`
 
 ---
 
-## Success test
+## Success test (creative + growth)
 
 After watching, a viewer should be able to say:
 
 > “I didn’t know X — and now I want the next Orbit mystery.”
 
-If they only remember “nice animation,” regenerate the weak chapters.
+Packaging + structure should also aim for:
+
+- **More views** — title/thumb/keyword fit from vidIQ  
+- **Higher % watched** — chapter turns + VO–picture lock so they stay  
+
+If they only remember “nice animation,” regenerate the weak chapters.  
+If CTR is fine but retention dies mid-film, fix chapter teach/turns — don’t just re-title.

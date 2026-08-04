@@ -137,18 +137,21 @@ Publish slots: `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.json`.
 
 ## Per-video pipeline
 
-1. Research (NASA / ESA / papers / journals)  
-2. **Chapter outline** — 4–6 named chapters with teach-points (`LONGFORM_STORY_AND_VO_PICTURE_GATE.md`)  
+1. **Pre-build vidIQ audit (blocking)** — keywords · titles · outliers · retention plan (`PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`)  
+2. **Chapter outline** — 4–6 named chapters with teach-points, shaped by that audit  
 3. Script with `[VISUAL MUST]` / `[TEACH]` / `[CHAPTER CARD]` on every scene  
 4. Scene breakdown (number · duration · visual · camera · Orbit · AI prompt) — prompts derived from markers only  
-5. **Title gate (vidIQ)** — score ABC ≥90 before VO (`04_Audio/tools/vidiq_title_score_sheet.py`)  
+5. Title already locked from audit (≥90); re-check thumb ABC against promise  
 6. Voice (ElevenLabs · Ben clone) → **lock VO duration** → captions via `04_Audio/tools/transcribe_vo.py`  
 7. Generate visuals **to VO timeline** (Orbit identity lock · unique plates · no loops)  
 8. Edit — brand intro + chapter cards + subscribe outro; SFX/music from script cues  
 9. **VO–picture QA gate** (watch once: no generic stretch under specific VO)  
 10. Package (titles · thumb ABC · description · tags · chapters · SEO)  
 11. Upload / schedule on `@OrbitWithBen` (long Thu 19:00 → Shorts cluster)  
-12. Fill content flywheel (`CONTENT_FLYWHEEL_TEMPLATE.md`) · run `RELEASE_WEEK_CHECKLIST.md`
+12. Fill content flywheel (`CONTENT_FLYWHEEL_TEMPLATE.md`) · run `RELEASE_WEEK_CHECKLIST.md`  
+
+**Do not** lock VO or spend Veo/Ultra credits until step 1 is signed off.  
+Success = **views + higher % watched**, not packaging alone.
 
 Package template: `00_Brand/Channel-Setup/VIDEO_PACKAGE_TEMPLATE.md`  
 Audio tools: `04_Audio/tools/README.md`  

@@ -2,9 +2,28 @@
 
 Use this checklist for every long-form (and its Shorts + distribution cluster).
 
-Canonical publish rules: `PUBLISHING_AND_SHORTS_STRATEGY.md`
+Canonical publish rules: `PUBLISHING_AND_SHORTS_STRATEGY.md`  
+**Pre-build (blocking):** `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` → project `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`  
+Story / VO–picture: `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`
 
-## 1. Title options (3–5) — vidIQ gate
+## 0. Pre-build vidIQ audit — **before script lock / VO / gen**
+
+Goal: **views + whole-video watch**, shaped by data.
+
+- [ ] Keyword research (primary + secondary + Shorts terms)
+- [ ] Title ABC scored ≥ **90** (target **95+**); fearbait rejected even if higher
+- [ ] Outliers reviewed — steal **structure**, keep Orbit wonder
+- [ ] Data → chapter list / hook / thumb decisions written down
+- [ ] Retention plan (hook → chapter turns → payoff) filled
+- [ ] Audit signed off
+
+```bash
+python3 04_Audio/tools/vidiq_title_score_sheet.py --project-dir 02_Video-Projects/<NN_Slug>
+# optional channel refresh:
+# python3 00_Brand/Channel-Setup/audits/_pull_vidiq_full_audit.py
+```
+
+## 1. Title options (3–5) — lock from audit
 
 Formula: Question + Mystery + Emotion. Mobile-scannable. Include `| Orbit's Cosmic Journey`.
 
@@ -12,20 +31,14 @@ Formula: Question + Mystery + Emotion. Mobile-scannable. Include `| Orbit's Cosm
 - B:
 - C:
 
-**Before VO lock:**
-
-```bash
-python3 04_Audio/tools/vidiq_title_score_sheet.py --project-dir 02_Video-Projects/<NN_Slug>
-```
-
 - [ ] Score sheet filled (`11_Upload-Package/Titles/VIDIQ_TITLE_SCORE_SHEET.md`)
-- [ ] Winner ≥ **90** (target **95+**) in vidIQ Title Analyzer
-- [ ] Keyword Research noted for description / tags
+- [ ] Winner ≥ **90** (target **95+**)
+- [ ] Keyword stack noted for description / tags
 - [ ] Thumbnail Preview checked on mobile + suggested
 
 ## 2. Thumbnail concepts (A/B/C)
 
-For each: one idea · Orbit yes/no · text ≤ ~4 words · colour note.
+For each: one idea · Orbit yes/no · text ≤ ~4 words · colour note · **matches locked title promise**.
 
 - A:
 - B:
