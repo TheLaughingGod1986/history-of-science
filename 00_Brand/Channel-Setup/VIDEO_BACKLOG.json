@@ -17,12 +17,14 @@
     "long_form_minutes_later": "15-20 if retention earns it",
     "story_gate": "LONGFORM_STORY_AND_VO_PICTURE_GATE.md",
     "pre_build_audit": "PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md",
+    "retention_growth_locked": "RETENTION_AND_GROWTH_LOCKED.md",
     "story_gate_rules": [
       "Pre-build vidIQ audit before script/VO/gen (blocking)",
       "VO-picture lock: show or act narration",
       "4-6 story chapters with one teach-point each",
       "mystery + educational + wonder return habit",
       "aim views + higher percent watched",
+      "Shorts 22-30s punch-first; Related+pin funnel",
       "reuse brand intro/outro only; unique story plates per episode"
     ],
     "strategy": "PUBLISHING_AND_SHORTS_STRATEGY.md",
@@ -197,7 +199,7 @@
       "status": "backlog",
       "priority": "next_after_004",
       "next_production": true,
-      "quality_bar": "LONGFORM_STORY_AND_VO_PICTURE_GATE.md — first episode under hard 10-12 VO-picture chapter gate",
+      "quality_bar": "PRE_BUILD_VIDIQ_AUDIT + LONGFORM_STORY_AND_VO_PICTURE_GATE — first episode under hard pre-build data + 10-12 VO-picture chapter gate",
       "source": "vidiq_outlier_pattern_analysis_2026-08-02",
       "ideas_doc": "00_Brand/Channel-Setup/ideas/013_Moon-Leaving-Us/",
       "format": "full_cg_orbit_guide + chapter_cards",

@@ -16,6 +16,7 @@ asking the biggest questions in the universe.*
 **Video backlog:** `00_Brand/Channel-Setup/VIDEO_BACKLOG.json`  
 **Long-form quality gate (10–12 min · chapters · VO–picture):** `00_Brand/Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
 **Pre-build vidIQ audit (blocking before gen):** `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`  
+**Retention & growth (locked going forward):** `00_Brand/Channel-Setup/RETENTION_AND_GROWTH_LOCKED.md`  
 **Shorts mirrors:** TikTok `Channel-Setup/TikTok/AUTO_POST.md` · Meta (IG+FB) `Channel-Setup/Meta/AUTO_POST.md`
 
 This repository holds every asset for the channel — the character bible, the
