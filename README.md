@@ -9,14 +9,16 @@ asking the biggest questions in the universe.*
 
 **Creative director system:** `00_Brand/CHANNEL_BUILD_SYSTEM.md`  
 **Live channel:** `00_Brand/Channel-Setup/CHANNEL_READY.md`  
+**YouTube Growth System v2 (canonical):** `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
 **Publishing & Shorts strategy:** `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`  
 **Publish schedule:** `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.md` · `CHANNEL_PUBLISH_CADENCE.md`  
 **Latest audit:** `00_Brand/Channel-Setup/audits/CHANNEL_AUDIT_2026-08-01_PM.md`  
 **Flywheel / release:** `CONTENT_FLYWHEEL_TEMPLATE.md` · `RELEASE_WEEK_CHECKLIST.md`  
 **Video backlog:** `00_Brand/Channel-Setup/VIDEO_BACKLOG.json`  
-**Long-form quality gate (10–12 min · chapters · VO–picture):** `00_Brand/Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
+**Long-form quality gate (8–12 min · cold open · VO–picture):** `00_Brand/Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
 **Pre-build vidIQ audit (blocking before gen):** `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`  
 **Retention & growth (locked going forward):** `00_Brand/Channel-Setup/RETENTION_AND_GROWTH_LOCKED.md`  
+**Script reviewer (≥90):** `cd 07_Content-Ops && npm run review:script -- --file <script.md>`  
 **Cursor hooks:** `.cursor/hooks.json` (session checklist + pre-gen reminder)  
 **Shorts mirrors:** TikTok `Channel-Setup/TikTok/AUTO_POST.md` · Meta (IG+FB) `Channel-Setup/Meta/AUTO_POST.md`
 
