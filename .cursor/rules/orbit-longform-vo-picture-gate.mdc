@@ -1,16 +1,19 @@
 ---
-description: Orbit long-form — 10–12 min chapters, VO–picture lock, pre-build vidIQ before gen
+description: Orbit long-form — cold open, 8–12 min, Orbit agency, VO–picture, script ≥90, vidIQ
 alwaysApply: true
 ---
 
-# Orbit long-form — story + VO–picture + vidIQ pre-build gate
+# Orbit long-form — story + VO–picture + growth v2 gate
 
 When writing or assembling any Orbit long-form **after V004**:
 
 1. **Pre-build vidIQ audit (blocking):** keywords, title ABC ≥90, outliers, retention plan — **before** script lock, VO, or picture gen. Template: `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
-2. **Length:** Target **10–12 minutes** VO. Do not pad.
-3. **Chapters:** 4–6 named story chapters. Each chapter has entry → show → **one teach point** → turn → exit — shaped by vidIQ patterns where on-brand.
-4. **VO–picture lock:** Every scene needs `[VISUAL MUST: …]` and `[TEACH: …]`. Picture must show or act the narration in that moment — no generic filler under specific VO.
-5. **Learning + return + growth:** Viewer leaves with a takeaway and wants the next mystery; packaging aims at **views + whole-video watch**.
-6. **Brand:** Reuse brand intro + like/subscribe outro. Unique story plates only inside one episode (see cutscene rules). Fearbait rejected even if vidIQ scores higher.
-7. Canonical docs: `LONGFORM_STORY_AND_VO_PICTURE_GATE.md` · `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · `RETENTION_AND_GROWTH_LOCKED.md`
+2. **Script reviewer ≥ 90 / 100** (`07_Content-Ops` `npm run review:script`) — reject below 90.
+3. **Length:** Target **8–12 minutes** VO in the trust-building window. Do not pad.
+4. **Cold open:** curiosity by 5s · stakes by 15s · journey by 30s. No definition/history/channel-intro opens.
+5. **Structure:** Question → Danger → Story begins → Explanation while story continues → Escalation → Ending. Framework: Hook → Question → Escalation → Discovery → Payoff → Bigger question.
+6. **Chapters:** 4–6 named film-act chapters. Each: entry → show → **one teach** → turn → exit. Orbit **acts** in-scene (`[ORBIT ACTS]`).
+7. **VO–picture lock:** Every scene needs `[VISUAL MUST: …]` and `[TEACH: …]`. Picture must show or act the narration — no generic filler under specific VO.
+8. **Packaging:** one-promise title (prefer ≤~60 chars, **no series suffix**) · thumb = one question · end screen/cards/pin → next Orbit film.
+9. **Brand:** Reuse brand sting + like/subscribe outro. Unique story plates only inside one episode. Fearbait rejected even if vidIQ scores higher.
+10. Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md` · `LONGFORM_STORY_AND_VO_PICTURE_GATE.md` · `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · `RETENTION_AND_GROWTH_LOCKED.md`

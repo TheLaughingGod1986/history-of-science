@@ -2,17 +2,18 @@
 
 **Channel:** Orbit With Ben  
 **Promise:** Calm, cinematic answers to humanity’s biggest space mysteries.  
-**If I subscribe:** I regularly get fascinating space mysteries explained cinematically.
+**If I subscribe:** I regularly get fascinating space mysteries explained cinematically.  
+**System:** Growth System v2 — `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`
 
 ---
 
-## Standing priorities (locked 2026-08-05)
+## Standing priorities (locked 2026-08-06)
 
 Full checklist: `00_Brand/Channel-Setup/RETENTION_AND_GROWTH_LOCKED.md`
 
-**Retention P0:** punch-first opens · 30–60s curiosity resets · VO–picture lock · one teach per chapter · payoff before outro.  
-**Growth P0:** Shorts 22–30s discovery · pre-build vidIQ · thumb=title · Related+pin · soft end CTA.  
-**Success:** more views **and** higher % watched.
+**Retention P0:** cold open 5/15/30s · story-before-explain · Orbit experiences science · 8–12 min trust window · 4–6 acts · VO–picture lock · payoff + bigger question.  
+**Growth P0:** Shorts 3–5 discovery · curiosity-gap ends · Related+pin · pre-build vidIQ · script ≥90 · one-promise titles · no dead ends.  
+**Success:** impressions · CTR · AVD · APV · session time · returning viewers · Browse / Suggested / Search.
 
 ---
 
@@ -39,15 +40,17 @@ Prefer concise. Do not stretch a 20s idea to 45–60s. Longer only if the story 
 
 Every Short is a **standalone micro-story** (not a random long-form crop). Cutting from the long is allowed only when the VO already forms a complete micro-story with punch-first opening.
 
+**Per long:** produce **3–5** Shorts as the discovery engine.
+
 ### Timing
 
 | Beat | Time | Job |
 |------|------|-----|
-| Hook | 0–1.5s | Surprise / contradiction / number / mystery — speech starts immediately |
+| Hook | 0–1.5s | Strongest fact / surprise — speech starts immediately |
 | Escalation | 1.5–6s | Why it matters — do not fully answer |
 | Core | 6–18s | Evidence; short sentences; every line earns its place |
-| Payoff | 18–27s | Twist / answer that rewards staying |
-| CTA | final 1–2s | Optional, soft — never hard sell |
+| Payoff | 18–27s | Partial answer that rewards staying |
+| Curiosity gap | final 1–3s | Unanswered question → Related long (not “watch the full video”) |
 
 ### Forbidden openings
 
@@ -57,25 +60,21 @@ Every Short is a **standalone micro-story** (not a random long-form crop). Cutti
 - Slow empty starfield / title card
 - Early subscribe ask
 
+### Curiosity-gap CTA examples
+
+- “There is one reason scientists fear the Great Filter. Orbit discovers it in the full documentary.”
+- “What Orbit finds past this point changes the whole story.”
+- “The full answer is stranger than this.”
+
+Never: like/subscribe/bell spam · bare “watch the full video.”
+
 ### Visual pacing
 
-Change something every **1.5–3s** (crop, Orbit reaction, text, diagram, reveal — not necessarily new AI clips).  
-First frame = miniature thumbnail (drama, not black/logo).
-
-### Captions
-
-Large mobile type · 3–7 words · sync to speech · emphasise numbers/nouns · consistent placement.
+Change something every **1.5–3s**. First frame = miniature thumbnail.
 
 ### Orbit
 
-Keep Orbit. Integrate into the scene when practical (react, point, investigate). Avoid dead corner-sitter for the whole Short.
-
-### Soft CTA examples
-
-- “Follow Orbit for the next mystery.”
-- “More cosmic mysteries with Orbit.”
-
-Never: like/subscribe/bell spam.
+Integrate into the scene (react, point, investigate, fall, stand). Avoid dead corner-sitter for the whole Short.
 
 ---
 
@@ -92,7 +91,7 @@ Before each Short, write **≥5 hooks**. Classify:
 7. Counterintuitive fact  
 
 Score 1–10: curiosity · clarity · emotion · novelty · spoken naturalness · swipe-stop.  
-Pick the winner; archive rejects as possible future Shorts (`SHORTS_EXPERIMENTS.md`).
+Pick the winner; archive rejects (`SHORTS_EXPERIMENTS.md`).
 
 Template: `00_Brand/Channel-Setup/templates/SHORT_HOOK_WORKSHEET.md`
 
@@ -102,17 +101,23 @@ Template: `00_Brand/Channel-Setup/templates/SHORT_HOOK_WORKSHEET.md`
 
 | Guidance | Detail |
 |----------|--------|
-| Next several videos | Prefer **8–12 min** (story quality wins if longer needed) |
-| First 30s | Central paradox immediately — no logo/welcome/slow establish |
-| Every 30–60s | Curiosity reset (new Q, number, counterargument, reveal, Orbit beat) |
+| Next 6–10 videos | **8–12 min** VO |
+| Later | Grow to 15 → 18 → 20 → 25 after trust |
+| Cold open | 5s curiosity · 15s stakes · 30s journey |
+| Structure | Question → Danger → Story → explain-in-story → Escalation → Ending |
+| Framework | Hook → Question → Escalation → Discovery → Payoff → Bigger question |
+| Orbit | Active experience of the science |
+| Chapters | 4–6 film acts |
 | Picture | Match narration (show the thing being said) |
+| Gate | Script reviewer ≥ 90 before VO |
 
 ### Long targets (once sample size exists)
 
 - CTR ~4–7%+  
 - 30s retention ~60%+  
-- APV ~30–45%+  
+- APV ~35–50%+ (shorter masters help early)  
 - ~5–15 subs / 1k qualified views  
+- Growing Browse + Suggested share over Search-only  
 
 ---
 
@@ -131,7 +136,7 @@ Tiny samples: directional only. Do not pivot niche on &lt;1k views.
 
 ## Topic scoring
 
-Score 1–10: curiosity · emotion · visuals · credibility · evergreen · search · Shorts · long · brand fit.  
+Score 1–10: search demand · curiosity · visual potential · storytelling · series potential · emotion · credibility · evergreen · Shorts · brand fit.
 
 **Orbit Opportunity Score** = average (or weighted mean). Prefer high scores; reject off-brand trends.
 
@@ -141,41 +146,49 @@ Template: `00_Brand/Channel-Setup/templates/TOPIC_OPPORTUNITY_SCORE.md`
 
 ## Titles & thumbnails
 
+- One promise; prefer ≤ ~60 characters.  
+- **No** `| Orbit's Cosmic Journey` (or similar) on every upload.  
 - Curiosity first; SEO second.  
-- No keyword stuffing pipes.  
-- Thumbnails: one idea, high contrast, mobile-readable; 3 concepts scored.
+- Thumbnails: one object · one emotion · minimal text · one question; 3 concepts scored.
 
 ---
 
 ## Content flywheel
 
-Each long → 4–6 **independent** Shorts (complete micro-stories).  
-Cadence: Long Thu ~19:00 UK · first Short ~21:00 · more ~12:30. **Do not churn clocks during the experiment window.**
+```
+Long → 3–5 Shorts → comments → subscribers → next long
+```
+
+Every long: end screen · cards · pin · description links → another Orbit documentary.  
+Cadence: Long Thu ~19:00 UK · first Short ~21:00 · more ~12:30.
 
 ---
 
 ## Learning loop
 
 ```
-IDEA → TOPIC SCORE → HOOK OPTIONS → SCRIPT → RETENTION AUDIT
-  → VISUAL PLAN → PRODUCE → PUBLISH → ANALYTICS → DIAGNOSIS → LEARNINGS → NEXT
+IDEA → TOPIC SCORE → PRE-BUILD VIDIQ → SCRIPT → REVIEW (≥90)
+  → RETENTION AUDIT → VISUAL PLAN → PRODUCE → CHECKLIST V2
+  → PUBLISH → ANALYTICS → RECOMMENDATIONS → LEARNINGS → NEXT
 ```
 
 Docs:
 
 - Experiments: `docs/SHORTS_EXPERIMENTS.md`
 - Memory: `docs/RETENTION_LEARNINGS.md`
-- Analytics import: `docs/ANALYTICS_IMPORT.md`
+- Analytics: `docs/ANALYTICS_IMPORT.md` · Content Ops `/analytics`
+- Script review: `00_Brand/Channel-Setup/templates/SCRIPT_REVIEW_SCORECARD.md`
 
 ---
 
 ## 30-day aim
 
-~4 longs · 16–24 Shorts · quality over quota.  
-Primary: find a repeatable Short structure with stronger stayed-to-watch.  
-Secondary: 2–3 longs that earn Browse/Suggested.  
-Tertiary: first real subscriber cohort.
+~4 longs · 12–20 Shorts · quality over quota.  
+Primary: cold opens + shorter masters that raise APV.  
+Secondary: Shorts curiosity gaps that convert to long watch time.  
+Tertiary: first real returning-viewer cohort + Browse/Suggested lift.
 
 ## Major review checkpoint
 
-~10 longs **and** 40–50 Shorts before niche/schedule/character redesigns.
+~10 longs **and** 40–50 Shorts before niche/schedule/character redesigns.  
+**Do not redesign the brand** to chase distribution — fix hook, structure, funnel, packaging.

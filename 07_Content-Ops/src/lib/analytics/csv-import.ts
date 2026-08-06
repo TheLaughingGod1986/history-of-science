@@ -18,6 +18,18 @@ export type CsvMetricRow = {
   linkClicks?: number;
   subscribersGained?: number;
   followersGained?: number;
+  clickThroughRate?: number;
+  retention30s?: number;
+  retentionDropAtSeconds?: number;
+  retentionDropDepth?: number;
+  returningViewers?: number;
+  newViewers?: number;
+  browsePercent?: number;
+  suggestedPercent?: number;
+  searchPercent?: number;
+  endScreenCtr?: number;
+  cardsCtr?: number;
+  averageSessionSeconds?: number;
 };
 
 export type ColumnMapping = Record<keyof CsvMetricRow, string | undefined>;
@@ -26,12 +38,23 @@ export const DEFAULT_MAPPINGS: Record<string, Partial<ColumnMapping>> = {
   youtube: {
     platformUrl: "Video URL",
     views: "Views",
+    impressions: "Impressions",
     likes: "Likes",
     comments: "Comments",
     shares: "Shares",
     averageWatchTime: "Average view duration",
     averagePercentageViewed: "Average percentage viewed",
     subscribersGained: "Subscribers gained",
+    clickThroughRate: "Impressions click-through rate (%)",
+    retention30s: "Audience retention at 30 seconds (%)",
+    returningViewers: "Returning viewers",
+    newViewers: "New viewers",
+    browsePercent: "Browse features (%)",
+    suggestedPercent: "Suggested videos (%)",
+    searchPercent: "YouTube search (%)",
+    endScreenCtr: "End screen element click rate (%)",
+    cardsCtr: "Card clicks (%)",
+    averageSessionSeconds: "Average session duration",
   },
   tiktok: {
     platformUrl: "Video link",
@@ -101,6 +124,37 @@ export type ImportResult = {
   duplicatesSkipped: number;
 };
 
+const INT_FIELDS = new Set([
+  "views",
+  "impressions",
+  "likes",
+  "comments",
+  "shares",
+  "saves",
+  "profileVisits",
+  "linkClicks",
+  "subscribersGained",
+  "followersGained",
+  "returningViewers",
+  "newViewers",
+]);
+
+const FLOAT_FIELDS = new Set([
+  "averageWatchTime",
+  "averagePercentageViewed",
+  "completionRate",
+  "clickThroughRate",
+  "retention30s",
+  "retentionDropAtSeconds",
+  "retentionDropDepth",
+  "browsePercent",
+  "suggestedPercent",
+  "searchPercent",
+  "endScreenCtr",
+  "cardsCtr",
+  "averageSessionSeconds",
+]);
+
 export function parseMetricsCsv(
   csvText: string,
   mapping: Partial<ColumnMapping>,
@@ -128,20 +182,7 @@ export function parseMetricsCsv(
         if (!col) continue;
         const val = raw[col];
         if (val == null || val === "") continue;
-        if (
-          [
-            "views",
-            "impressions",
-            "likes",
-            "comments",
-            "shares",
-            "saves",
-            "profileVisits",
-            "linkClicks",
-            "subscribersGained",
-            "followersGained",
-          ].includes(field)
-        ) {
+        if (INT_FIELDS.has(field)) {
           const n = Number(String(val).replace(/,/g, ""));
           if (Number.isNaN(n)) {
             errors.push(`Row ${i + 2}: invalid number for ${field}`);
@@ -149,10 +190,8 @@ export function parseMetricsCsv(
           }
           // @ts-expect-error dynamic assign
           row[field] = n;
-        } else if (
-          ["averageWatchTime", "averagePercentageViewed", "completionRate"].includes(field)
-        ) {
-          const n = Number(String(val).replace(/%/g, ""));
+        } else if (FLOAT_FIELDS.has(field)) {
+          const n = Number(String(val).replace(/%/g, "").replace(/,/g, ""));
           if (Number.isNaN(n)) {
             errors.push(`Row ${i + 2}: invalid number for ${field}`);
             continue;

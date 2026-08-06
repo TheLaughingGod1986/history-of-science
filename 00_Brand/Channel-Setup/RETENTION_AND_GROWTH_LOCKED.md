@@ -1,45 +1,57 @@
 # Retention & growth — locked going forward (Orbit with Ben)
 
-**Locked:** 2026-08-05  
-**Applies to:** every Short + every long from **V013 onward** (JWST ships under existing plan; don’t mid-rebuild)  
-**Success:** more views **and** higher % watched — then subscribers.
+**Locked:** 2026-08-06 · **Growth System v2**  
+**Applies to:** every Short + every long from **next new production after current ships**  
+**Success:** Impressions · CTR · AVD · APV · session time · returning viewers · Browse / Suggested / Search  
 
-Canonical detail: `docs/ORBIT_GROWTH_PLAYBOOK.md` · memory: `docs/RETENTION_LEARNINGS.md`  
-Pre-build data: `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · story/VO: `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`
+Canonical system: `YOUTUBE_GROWTH_SYSTEM_V2.md`  
+Detail: `docs/ORBIT_GROWTH_PLAYBOOK.md` · memory: `docs/RETENTION_LEARNINGS.md`  
+Pre-build: `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · story/VO: `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
+Gates: script reviewer (≥90) · `templates/PRODUCTION_CHECKLIST_V2.md`
 
 ---
 
 ## P0 — Retention
 
-1. **First 1.5s is the product (Shorts)** — speech + drama on frame 1; no logo/welcome/soft wind-up.  
-2. **Long open ≤15–20s to first paradox** — no brand-first cold open.  
-3. **Curiosity reset every 30–60s** — chapter card / new Q / number / turn.  
-4. **VO–picture lock** — show or act the narration; no generic filler under specific VO.  
-5. **One teach-point per chapter** — viewer leaves knowing something concrete.  
-6. **Payoff before outro** — answer the open loop; soft CTA only at the end.
+1. **Cold open** — curiosity **0–5s** · stakes **~15s** · journey clear **~30s**. No logo/welcome/history/definition open.  
+2. **Long open ≤15–20s to first paradox** — story tension before explanation.  
+3. **Structure** — Question → Danger → Story begins → Explain while story continues → Escalation → Ending.  
+4. **Framework** — Hook → Question → Escalation → Discovery → Payoff → Bigger question.  
+5. **Orbit experiences the science** — active participant, not passive wallpaper.  
+6. **Curiosity reset every 30–60s** — chapter card / new Q / number / turn.  
+7. **VO–picture lock** — show or act the narration; no generic filler under specific VO.  
+8. **One teach-point per chapter** — 4–6 film-act chapters.  
+9. **Runtime (next 6–10 videos)** — **8–12 min** VO; lengthen only after trust.  
+10. **Payoff before outro** — answer the open loop; soft CTA only at the end.
 
 ## P0 — Growth
 
-7. **Shorts = discovery engine** — keep cluster cadence; package **22–30s** micro-stories (not 44s pads).  
-8. **Pre-build vidIQ audit (blocking)** — keywords · title ≥90 · outliers → then script/VO/gen.  
-9. **Thumb = title promise** — one idea, mobile-readable.  
-10. **Related + pinned full-film** on every Short once the long is public.  
-11. **Soft “follow for the next mystery”** at end only — never interrupt the hook.
+11. **Shorts = discovery engine** — **3–5** per long; **22–30s**; strongest-fact open + curiosity-gap end.  
+12. **Related + pinned full-film** on every Short once the long is public — never “watch the full video” alone.  
+13. **Pre-build vidIQ audit (blocking)** — keywords · title ≥90 · outliers → then script.  
+14. **Script reviewer ≥ 90 / 100** before VO / picture gen.  
+15. **Title = one promise** · prefer ≤~60 chars · **no series suffix** on every upload.  
+16. **Thumb = one question** — one object · one emotion · minimal text.  
+17. **No dead ends** — end screen · cards · pin · description → another Orbit documentary.  
+18. **Soft “follow for the next mystery”** at end only — never interrupt the hook.
 
 ## P1 — Habits
 
-12. **Weekly scorecard** — Short stayed-to-watch / AVD / completion · long CTR / 30s / APV · subs.  
-13. **Series rhythm** — next mysteries feel like “next lesson” (e.g. Moon → star-walk → Mars).  
-14. **Reuse only branding + Orbit kit** — unique story plates per episode.  
-15. **No niche pivot under ~1k views** — sample still directional.
+19. **Weekly scorecard** — impressions / CTR / AVD / APV · traffic mix · Shorts stayed-to-watch · subs.  
+20. **Post-upload recommendations** — Content Ops analytics flags weak opens / drops / packaging.  
+21. **Series rhythm** — next mysteries feel like “next lesson.”  
+22. **Reuse only branding + Orbit kit** — unique story plates per episode.  
+23. **No niche pivot under ~1k views** — sample still directional.
 
 ## Do not
 
 - Fearbait titles (even if vidIQ scores higher)  
 - Stretch Shorts to 45–60s  
-- Mid-flight rebuild of JWST for length  
+- Mid-flight rebuild of shipping episodes for length  
 - Meme/movie outlier chasing  
 - Schedule thrash during experiment windows  
+- Explain-first openings (“What is X?”) before story tension  
+- Passive Orbit as corner decoration for the whole film  
 
 ---
 
@@ -48,33 +60,37 @@ Pre-build data: `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · story/VO: `LONGFORM_STORY
 **Before gen**
 
 - [ ] Pre-build vidIQ audit signed off  
-- [ ] Title ≥90 · thumb matches promise  
-- [ ] 4–6 chapters with teach-points  
-- [ ] Retention plan (hook → turns → payoff)
+- [ ] Script reviewer ≥ 90  
+- [ ] Title one promise · no series suffix · thumb matches  
+- [ ] 4–6 chapters with teach-points + Orbit-in-scene plan  
+- [ ] Cold-open clock (5 / 15 / 30s) written  
 
 **Shorts**
 
 - [ ] 22–30s standalone micro-story  
-- [ ] ≥5 hooks scored; punch-first open  
-- [ ] Visual change ≤3s · Orbit in-story  
-- [ ] Related + pin when long is public · soft end CTA
+- [ ] Strongest-fact open · curiosity-gap end  
+- [ ] Related + pin when long is public  
+
+**Before publish**
+
+- [ ] `templates/PRODUCTION_CHECKLIST_V2.md` complete  
+- [ ] End screen · cards · pin · description links  
 
 **After publish**
 
-- [ ] Log metrics into `RETENTION_LEARNINGS.md` / `SHORTS_EXPERIMENTS.md`  
-- [ ] Diagnose open vs topic before killing an idea  
+- [ ] Import metrics · read recommendations  
+- [ ] Log into `RETENTION_LEARNINGS.md` / `SHORTS_EXPERIMENTS.md`  
 
 ---
 
 ## Agent reminder
 
-If building or advising on Orbit content, follow this file + the longform VO–picture gate + pre-build vidIQ audit. Prefer these over ad-hoc process changes.
+Follow `YOUTUBE_GROWTH_SYSTEM_V2.md` + this file + longform VO–picture gate + pre-build vidIQ audit. Prefer these over ad-hoc process changes.
 
 **Cursor hooks (project):**
 
-- `sessionStart` → injects this checklist + sets `ORBIT_RETENTION_GATE` env  
+- `sessionStart` → injects checklist + sets `ORBIT_RETENTION_GATE` env  
 - `preToolUse` (Shell) → reminds before Veo/Omni/VO gen-looking commands  
 
 Config: `.cursor/hooks.json` · scripts: `.cursor/hooks/orbit-*.py`  
 Primary enforcement remains `alwaysApply` rules in `.cursor/rules/`.
-

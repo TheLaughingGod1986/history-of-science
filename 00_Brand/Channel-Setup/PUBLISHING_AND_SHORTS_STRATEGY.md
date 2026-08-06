@@ -2,11 +2,14 @@
 
 **Channel:** Orbit with Ben (`@OrbitWithBen`)  
 **Timezone:** `Europe/London`  
-**Updated:** 2026-07-28  
-**Status:** Canonical — overrides older teaser-before-long rules
+**Updated:** 2026-08-06  
+**Status:** Canonical — one long/week · launch Short @21:00 · **3–5** supporting Shorts · reserves held  
+**Growth:** `YOUTUBE_GROWTH_SYSTEM_V2.md`
 
 Ops card: `CHANNEL_PUBLISH_CADENCE.md`  
 Machine schedule: `OPTIMAL_PUBLISH_SCHEDULE.json`  
+Master table: `../../docs/MASTER_PUBLISHING_SCHEDULE.md`  
+Manual Studio: `../../docs/PUBLISHING_SCHEDULE_MANUAL_ACTIONS.md`  
 Flywheel template: `CONTENT_FLYWHEEL_TEMPLATE.md`  
 Release checklist: `RELEASE_WEEK_CHECKLIST.md`
 
@@ -74,27 +77,25 @@ Suggested for next Thursday pillar
 | 5 | Ops lock: **21:00 UK** (≈ 2 hours after the long) |
 | 6 | Related video / pinned comment → this week’s long-form |
 
-### Days 2–7 — One Short per day
+### After Day 1 — Related Shorts until the next long
 
-Publish **one Short per day**.
+Keep promoting **this** long until the next long is ready.
 
-Each Short explores a **different idea** from the long-form.
+| Step | When | Time UK | Role |
+|------|------|---------|------|
+| Long | Pillar day | **18:00** cold start · **19:00** steady | Documentary first |
+| Short #1 | Same day, a few hours later | **21:00** | Strongest related hook |
+| Shorts #2… | **Every day**, or **every other day** if inventory is short | **12:30** | Each one idea from that long |
 
-| Day | Relative | Time UK | Role |
-|-----|----------|---------|------|
-| 1 | Thu | 19:00 | **Long-form pillar** |
-| 1 | Thu | 21:00 | Short #1 — strongest hook |
-| 2 | Fri | 12:30 | Short #2 — named mystery / fact |
-| 3 | Sat | 12:30 | Short #3 — scale / visceral beat |
-| 4 | Sun | 12:30 | Short #4 — theory / twist |
-| 5 | Mon | 12:30 | Short #5 — secondary wonder |
-| 6 | Tue | 12:30 | Short #6 — Orbit reaction / deeper cut |
-| 7 | Wed | 12:30 | Short #7 *(optional)* — closer / invitation |
-
-**Cluster size:** **5–7 Shorts** per long (default ops: **6**; V001 ships with **5** already scripted).
+**Spacing rule**
+- Target: **3–5** discovery Shorts per long (Growth System v2); hold extras as reserves to cover the window until the next long.
+- If you have enough Shorts to cover the days until the next long → publish **daily**.
+- If you do not → space them **every other day** so they keep promoting that long across the whole window.
+- Use related Shorts you have. Do not dump them in one week and go silent.
 
 **Never** publish a teaser Short *before* the pillar is public.  
-**Never** dump the whole cluster on Day 1.
+**Never** dump the whole cluster on Day 1.  
+**Never** fill a gap with a Short from another pillar.
 
 ---
 
@@ -106,11 +107,11 @@ Each Short must work as a **complete standalone mini-documentary**.
 
 ### Every Short must
 
-1. Hook within the **first 2 seconds** (on-screen + VO)
+1. Hook within the **first 2 seconds** with the **strongest fact** (on-screen + VO)
 2. Focus on **one** fascinating fact, mystery, or question
 3. Deliver value **independently** of the long
-4. End with **curiosity**
-5. Naturally encourage the full documentary — without sounding like an ad
+4. End with an **unanswered question / curiosity gap**
+5. Link via YouTube **Related** → parent long — never only “Watch the full video.”
 
 ### On-screen text (TikTok / Shorts lock)
 
@@ -118,24 +119,29 @@ Mirror the space-doc kinetic style that retains (yellow/white bold lowercase, 1�
 
 Funnel + cross-post lock: `SHORTS_FUNNEL_AND_CROSSPOST.md` — pin full-film CTA, monster-hook first in the cluster, YouTube at T0 then TikTok at **T0 + 1 hour**.
 
-### Arc (30–60s)
+### Arc (canonical: **22–30s** micro-stories)
+
+See `docs/ORBIT_GROWTH_PLAYBOOK.md`. Opening cliff is P0 (largest drop 0–8s).
+Default **22–30s**. Do not stretch a 20s idea to 45–60s.
 
 ```
-0–2s   Hook (question / paradox / scale)
-2–40s  Single idea · cinematic · Orbit guide beats
-40–60s Curiosity ending + soft funnel line
+0–1.5s  Hook — strongest fact; speech starts immediately
+1.5–6s  Curiosity escalation (do not fully answer)
+6–18s   Core evidence
+18–27s  Partial payoff / twist
+last 1–3s  Curiosity gap → Related long (not bare “watch the full video”)
 ```
 
-### Soft endings (preferred)
+Every Short is a **standalone micro-story**. Longer cuts only when retention data earns them.
 
-Use calm, documentary language:
+### Curiosity-gap endings (preferred)
 
-- “If you want the full story, it’s now available on Orbit With Ben.”
-- “This is only one part of a much bigger mystery explored in our latest documentary.”
-- “The full story unfolds in our latest film — Will We Ever Meet Aliens?”
+- “There is one reason scientists fear the Great Filter. Orbit discovers it in the full documentary.”
+- “What Orbit finds past this point changes the whole story.”
+- “The full answer is stranger than this.”
+- “This is only one part of a much bigger mystery — Related points to the full film.”
 
-Avoid: “WATCH NOW”, “LINK IN BIO” energy, hard-sell captions, fake urgency.
-
+Avoid: bare “WATCH NOW” / “Watch the full video.” · “LINK IN BIO” energy · hard-sell captions · fake urgency.
 ### Quality bar
 
 Every Short should feel like a **premium mini-documentary**:

@@ -1,7 +1,9 @@
 # Pre-build vidIQ audit — Orbit with Ben
 
 **Hard gate:** Run **before** locking script, VO, prompts, or picture gen for any new long.  
-**Goal:** Every episode is aimed at **views + full-video watch** using live data — not gut feel alone.
+**Goal:** Every episode is aimed at **views + full-video watch** using live data — not gut feel alone.  
+**Also follow:** `RETENTION_AND_GROWTH_LOCKED.md` (punch-first opens, Shorts funnel, teach-per-chapter).  
+**Listing path (mandatory):** `.cursor/rules/orbit-vidiq-source-of-truth.mdc` + `VIDIQ_LISTING_OPTIMIZATION_PLAYBOOK.md` — apply the same VidIQ optimize path to **longs and Shorts** (title, description, tags, thumbs/ABC; VidIQ generate thumbs if needed).
 
 Copy into each project as:
 
@@ -51,14 +53,14 @@ Pull GB (or primary market) research for 5–8 terms.
 
 ## 3. Title ABC (score before VO)
 
-Paste full titles including `| Orbit's Cosmic Journey`.
+**Growth System v2:** one promise · prefer ≤ ~60 characters · **do not** append `| Orbit's Cosmic Journey` (or similar series suffix). Brand lives in the content.
 
 | | Title | Score | Keep? |
 |---|-------|------:|-------|
 | A | | | |
 | B | | | |
 | C | | | |
-| Reject (fearbait / off-brand even if high) | | | **Reject** |
+| Reject (fearbait / off-brand / series-suffix clutter even if high) | | | **Reject** |
 
 **Locked title:**  
 **Why it wins (score + brand + keyword):**  
@@ -68,6 +70,18 @@ Regen sheet:
 ```bash
 python3 04_Audio/tools/vidiq_title_score_sheet.py --project-dir 02_Video-Projects/<NN_Slug>
 ```
+
+---
+
+## 3b. Script reviewer (blocking before VO)
+
+```bash
+cd 07_Content-Ops && npm run review:script -- --file <path-to-script.md>
+```
+
+- [ ] Score ≥ **90 / 100**  
+- Scorecard: `templates/SCRIPT_REVIEW_SCORECARD.md`  
+- Reject / rewrite if below threshold  
 
 ---
 
@@ -116,29 +130,35 @@ Translate data → creative decisions **before** writing the full script:
 
 ## 6. Retention plan (whole-video watch)
 
-Design for **watching through**, not just CTR:
+Design for **watching through**, not just CTR (Growth System v2):
 
 | Minute zone | Job | Picture / VO note |
 |-------------|-----|-------------------|
-| 0–0:20 | Hook claim on screen | `[VISUAL MUST]` matches first line |
+| 0–0:05 | Curiosity spike | Mystery / danger on frame 1 |
+| ~0:15 | Stakes | Why it matters now |
+| ~0:30 | Journey clear | Viewer knows the ride |
 | Chapter starts | Re-hook + chapter card | New question / turn |
-| Mid | Teach mechanism | Concrete visual, not wallpaper |
-| Final chapter | Payoff + takeaway | Answer the open loop |
+| Mid | Teach while story continues | Orbit experiences the science |
+| Final chapter | Payoff + bigger question | Answer loop · open next |
 | Outro | Soft return CTA | Brand outro — don’t dump new science |
 
 - [ ] No 30s+ stretch without a new teach or turn  
 - [ ] Every chapter earns the next one  
+- [ ] Runtime target **8–12 min** in trust-building window  
 
 ---
 
 ## 7. Sign-off (block production until checked)
 
 - [ ] Keywords pulled and primary locked  
-- [ ] Title ≥90 locked (fearbait rejected even if higher)  
+- [ ] Title ≥90 locked (fearbait / series-suffix clutter rejected)  
+- [ ] Script reviewer ≥ 90  
 - [ ] Outlier patterns mapped into chapter arc  
-- [ ] Thumb concepts match title promise  
-- [ ] Chapter teach-points listed  
+- [ ] Thumb concepts match title promise (one object · one emotion)  
+- [ ] Chapter teach-points listed (4–6 acts)  
+- [ ] Cold-open clock (5 / 15 / 30s) written  
 - [ ] Retention plan filled  
+- [ ] Production checklist path noted: `templates/PRODUCTION_CHECKLIST_V2.md`  
 
 **Signed off by:**  
 **Date:**  
@@ -150,6 +170,8 @@ Design for **watching through**, not just CTR:
 ## Tools
 
 - Title Analyzer / Keyword: https://app.vidiq.com  
+- Script reviewer: `cd 07_Content-Ops && npm run review:script -- --file <script.md>`  
 - Channel audit puller (optional refresh): `00_Brand/Channel-Setup/audits/_pull_vidiq_full_audit.py`  
 - Story / VO–picture gate: `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
+- Growth system: `YOUTUBE_GROWTH_SYSTEM_V2.md`  
 - Brand: wonder over clickbait — data informs structure, never overrides Orbit DNA

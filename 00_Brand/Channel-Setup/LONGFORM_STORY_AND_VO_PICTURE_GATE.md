@@ -1,10 +1,11 @@
 # Long-form story + VO–picture gate (Orbit with Ben)
 
-**Status:** Hard rule from 2026-08-05 · applies to **every long after JWST (V004)**  
-**First target:** **013 — Moon leaving us** (next new production after V004 ship)  
-**Length lock:** **10–12 minutes** spoken VO (not 16–21)
+**Status:** Hard rule · Growth System v2 (2026-08-06) · applies to **every long after JWST (V004)**  
+**First target:** next new production after current ships  
+**Length lock:** **8–12 minutes** spoken VO during trust-building (then grow toward 15–25)  
+**System:** `YOUTUBE_GROWTH_SYSTEM_V2.md`
 
-This is how we fix “lots of picture / weak match” and make each episode feel like a **fascinating lesson** viewers want to come back for.
+This is how we fix slow opens, passive Orbit, and “lots of picture / weak match” — and make each episode a **fascinating lesson** viewers return for.
 
 ---
 
@@ -20,20 +21,50 @@ If they only feel “wow CGI” without a takeaway, the episode failed.
 
 ---
 
+## Cold open (non-negotiable)
+
+| Beat | Time | Job |
+|------|------|-----|
+| Curiosity | **0–5s** | Huge unanswered need — speech + drama immediately |
+| Stakes | **~15s** | Danger / consequence / why now |
+| Journey | **~30s** | Viewer knows exactly what ride they’re on |
+
+**Forbidden:** channel intro · educational background · history lecture · “What is X?” definition opens.
+
+**Required pattern:** Question → Danger → Story begins → Explanation **while** the story continues → Escalation → Ending.
+
+Example swaps:
+
+- Not “What is a black hole?” → “Orbit has just crossed the event horizon…”  
+- Not “What is the Fermi Paradox?” → “If aliens exist… why has nobody ever arrived?”
+
+Brand intro sting may still exist as a **brief** plate, but it must not consume the curiosity window — prefer mystery first, sting as flash or after the hook lands.
+
+---
+
 ## Length
 
 | | |
 |---|---|
-| Target | **10–12 min** VO-locked master |
-| Words (guide) | ~1,500–1,900 spoken |
-| Chapters | **4–6** story chapters (+ brand intro + subscribe outro) |
+| Trust-building (next 6–10 videos) | **8–12 min** VO-locked master |
+| Words (guide) | ~1,200–1,900 spoken |
+| Chapters | **4–6** story chapters (+ brand sting + subscribe outro) |
+| Later growth | 15 → 18 → 20 → 25 min once trust is earned |
 | Pad rule | Never pad picture or VO to hit length — cut instead |
 
 ---
 
-## Chapter storytelling (required)
+## Story framework (required)
 
-Write the script as **named chapters**. Each chapter is a mini-story with:
+Every script follows:
+
+```
+HOOK → QUESTION → ESCALATION → DISCOVERY → PAYOFF → BIGGER QUESTION
+```
+
+### Chapter storytelling
+
+Write **named chapters**. Each chapter is a mini-act:
 
 | Beat | Job |
 |------|-----|
@@ -43,19 +74,19 @@ Write the script as **named chapters**. Each chapter is a mini-story with:
 | **Turn** | A small surprise / “but…” that opens the next chapter |
 | **Exit** | Soft handoff — “so what does that mean for…?” |
 
+### Orbit agency (required)
+
+Orbit **experiences** the science in-scene: falls, stands, flies through, witnesses — emotionally connect the audience to Orbit. `[ORBIT ACTS: …]` must describe agency, not “Orbit floats nearby.”
+
+### Emotional stakes
+
+Include lived / “you” language without fearbait: what would you see, feel, do next — imagination with Orbit.
+
 ### Chapter card rule
 
 - Locked still chapter plate at each chapter start (`[CHAPTER CARD: Title]`)  
 - No Ken Burns / zoompan on text  
 - Chapter title = story beat language (“When the Moon Was Closer”), not jargon (“Lunar Recession Dynamics”)
-
-### Example arc (Moon / any layered mystery)
-
-1. Hook — the thing you think you know is incomplete  
-2. Layer / evidence — make it visceral  
-3. Mechanism — teach *why*  
-4. Stakes / future — what it means  
-5. Wonder takeaway — one memorable truth + soft return CTA  
 
 ---
 
@@ -68,7 +99,7 @@ Write the script as **named chapters**. Each chapter is a mini-story with:
 | Marker | Meaning |
 |--------|---------|
 | `[VISUAL MUST: …]` | Exact on-screen proof for this VO beat |
-| `[ORBIT ACTS: …]` | What Orbit does (not wallpaper) |
+| `[ORBIT ACTS: …]` | What Orbit **does** (active, not wallpaper) |
 | `[TEACH: …]` | The one fact this beat teaches |
 | `[CHAPTER CARD: …]` | Chapter boundary |
 
@@ -76,7 +107,7 @@ Write the script as **named chapters**. Each chapter is a mini-story with:
 
 1. Build timeline **from VO timestamps first**, then assign picture to beats.  
 2. One VO idea → one picture intent. No “pretty space” fillers while VO is specific.  
-3. If VO names an object/action (Moon, tide, eclipse, walking, radio dial), that object/action is on screen within ~1s.  
+3. If VO names an object/action, that object/action is on screen within ~1s.  
 4. Unique plates only inside one episode (cutscene rules). Brand intro/outro + Orbit character beds may reuse across episodes.  
 5. Motion clip plays **once**; remainder of beat = unique still pan for that scene — never loop.  
 6. Reject / regen any clip that breaks Orbit identity or contradicts the VO beat.
@@ -85,11 +116,11 @@ Write the script as **named chapters**. Each chapter is a mini-story with:
 
 Watch with VO only once, then picture+VO:
 
+- [ ] Cold open hits 5 / 15 / 30s jobs  
 - [ ] Every chapter teaches one clear thing  
 - [ ] No 8s+ stretch of generic scenery while VO is concrete  
-- [ ] Orbit reacts or guides on emotional turns  
-- [ ] Cold open ≤15–20s to first real claim  
-- [ ] Ending: wonder + one takeaway + soft “come explore the next mystery” energy (not hard sell)
+- [ ] Orbit reacts or **acts** on emotional turns  
+- [ ] Ending: payoff + bigger question + soft next-mystery energy (not hard sell)
 
 ---
 
@@ -100,27 +131,28 @@ Watch with VO only once, then picture+VO:
 | Mystery | Open loop in title + hook; delay full answer |
 | Educational | Named mechanisms, honest numbers, repeatable takeaway |
 | Wonder | Pixar-warm Orbit; awe without dread/fearbait |
-| Return habit | End on “there’s always another layer” — invite the next episode |
+| Return habit | Bigger question + “there’s always another layer” |
 
-**Avoid:** conspiracy, fearbait, Wikipedia list dumps, VO/picture drift, looping B-roll.
+**Avoid:** conspiracy, fearbait, Wikipedia dumps, VO/picture drift, looping B-roll, passive Orbit.
 
 ---
 
 ## Pipeline order (tightened)
 
-**0. Pre-build vidIQ audit (blocking)** — keywords · title ABC ≥90 · outliers · how data changes chapters/thumb/`VISUAL MUST`  
-   → fill `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` into the project as `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`  
-1. **Chapter outline** with teach-points informed by that audit  
-2. Full script with `[VISUAL MUST]` / `[TEACH]` on every scene  
-3. Scene board / prompts generated **from those markers only**  
+**0. Pre-build vidIQ audit (blocking)** — keywords · title ABC ≥90 · outliers · packaging  
+   → `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`  
+**0b. Script reviewer ≥ 90** — `npm run review:script` in Content Ops · reject otherwise  
+1. **Chapter outline** with teach-points + Orbit experience beats  
+2. Full script with `[VISUAL MUST]` / `[ORBIT ACTS]` / `[TEACH]`  
+3. Scene board / prompts from those markers only  
 4. ElevenLabs VO → lock duration  
-5. Picture gen / edit **matched to VO timeline**  
-6. Chapter cards + brand intro + subscribe outro  
-7. QA gate above → package → schedule  
+5. Picture gen / edit matched to VO timeline  
+6. Chapter cards + brand sting + subscribe outro  
+7. QA gate → `PRODUCTION_CHECKLIST_V2.md` → package → schedule  
 
-**Do not** lock VO or spend Veo credits until step 0 is signed off.
+**Do not** lock VO or spend Veo credits until steps 0 and 0b are signed off.
 
-Templates: `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · `VIDEO_PACKAGE_TEMPLATE.md` · JWST `VISUAL MUST` markers · cutscenes: `CUTSCENE_RULES.md`
+Templates: `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · `SCRIPT_REVIEW_SCORECARD.md` · `PRODUCTION_CHECKLIST_V2.md` · `VIDEO_PACKAGE_TEMPLATE.md` · cutscenes: `CUTSCENE_RULES.md`
 
 ---
 
@@ -130,10 +162,11 @@ After watching, a viewer should be able to say:
 
 > “I didn’t know X — and now I want the next Orbit mystery.”
 
-Packaging + structure should also aim for:
+Packaging + structure aim for:
 
-- **More views** — title/thumb/keyword fit from vidIQ  
-- **Higher % watched** — chapter turns + VO–picture lock so they stay  
+- **More impressions + CTR** — one-promise title · thumb question  
+- **Higher AVD / APV** — cold open + Orbit-in-story + chapter turns  
+- **Session time** — end screen / cards / pin → next documentary  
 
 If they only remember “nice animation,” regenerate the weak chapters.  
-If CTR is fine but retention dies mid-film, fix chapter teach/turns — don’t just re-title.
+If CTR is fine but retention dies mid-film, fix open / escalation / Orbit agency — don’t just re-title.

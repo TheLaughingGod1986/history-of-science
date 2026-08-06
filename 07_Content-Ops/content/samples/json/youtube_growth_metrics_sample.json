@@ -1,0 +1,42 @@
+[
+  {
+    "title": "What Really Happens When You Fall Into a Black Hole?",
+    "topic": "Black holes",
+    "hookCategory": "mystery",
+    "isShort": false,
+    "durationSeconds": 1200,
+    "views": 420,
+    "impressions": 12000,
+    "ctr": 3.5,
+    "averageViewDurationSeconds": 180,
+    "averagePercentageViewed": 28,
+    "retention30s": 48,
+    "retentionDropAtSeconds": 90,
+    "retentionDropDepth": 12,
+    "returningViewers": 40,
+    "newViewers": 380,
+    "subscribersGained": 2,
+    "browsePercent": 8,
+    "suggestedPercent": 7,
+    "searchPercent": 70,
+    "endScreenCtr": 0.8,
+    "cardsCtr": 0.4,
+    "averageSessionSeconds": 210
+  },
+  {
+    "title": "The Great Filter Fear",
+    "topic": "Fermi",
+    "hookCategory": "mystery",
+    "isShort": true,
+    "durationSeconds": 26,
+    "views": 900,
+    "impressions": 8000,
+    "ctr": 11.2,
+    "averagePercentageViewed": 72,
+    "retention30s": 55,
+    "subscribersGained": 1,
+    "browsePercent": 40,
+    "suggestedPercent": 20,
+    "searchPercent": 10
+  }
+]

@@ -15,21 +15,23 @@ Timezone: **Europe/London**
 ### Long-form
 
 - [ ] Picture lock + final export in `09_Final-Export/`
-- [ ] Title final
-- [ ] Thumbnail final (mobile-readable)
-- [ ] Description final (hook · summary · chapters · soft CTA · sources)
-- [ ] Chapters timestamps verified against export
+- [ ] Title final (one promise · prefer ≤~60 chars · **no series suffix**)
+- [ ] Thumbnail final (one object · one emotion · mobile-readable)
+- [ ] Description final (hook · summary · chapters · soft CTA · sources · next-watch links)
+- [ ] Chapters timestamps verified against export (4–6 acts)
 - [ ] Tags + playlist pillar set
-- [ ] End screen + cards set
+- [ ] End screen + cards → **another Orbit documentary**
 - [ ] Uploaded **private** / **scheduled** for **Thu 19:00**
 - [ ] Schedule confirmed on Studio `/video/{id}/edit`
+- [ ] `templates/PRODUCTION_CHECKLIST_V2.md` complete
+- [ ] Script reviewer was ≥ 90 before VO
 
-### Shorts cluster (5–7)
+### Shorts cluster (3–5 discovery + reserves)
 
 - [ ] Idea map locked (one idea each)
 - [ ] Each Short is a standalone mini-doc (not a random cut)
+- [ ] Strongest-fact open + curiosity-gap end
 - [ ] VO + captions + end cards done
-- [ ] Soft curiosity endings (not ads)
 - [ ] All Shorts uploaded private / scheduled
 - [ ] Short #1 Related → this long (once long public)
 - [ ] Remaining Shorts Related → this long

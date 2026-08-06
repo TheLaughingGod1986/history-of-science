@@ -27,6 +27,12 @@ Open http://localhost:3000 — connect accounts at `/settings/connections`.
 | `npm run connections:validate` | Re-validate OAuth connections |
 | `npm run publishing:reconcile` | Reconcile ambiguous jobs |
 | `npm run db:seed` | Seed aliens episode + 4 clips |
+| `npm run youtube:package` | YouTube Data API package upload |
+| `npm run review:script -- --file <script.md>` | Growth System v2 script reviewer (≥90 to pass) |
+| `npm run diagnose:youtube -- --file <metrics.json>` | Post-upload YouTube growth recommendations |
+
+Growth System v2 (canonical): `../00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
+Analytics UI: `/analytics` — impressions, CTR, APV, traffic mix, actionable flags.
 
 ## Autopublish notes
 

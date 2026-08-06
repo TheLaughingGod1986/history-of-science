@@ -118,6 +118,19 @@ model PerformanceMetric {
   subscribersGained        Int?
   followersGained          Int?
   engagementRate           Float?
+  /// Growth System v2 — YouTube Studio fields (optional CSV import)
+  clickThroughRate         Float?
+  retention30s             Float?
+  retentionDropAtSeconds   Float?
+  retentionDropDepth       Float?
+  returningViewers         Int?
+  newViewers               Int?
+  browsePercent            Float?
+  suggestedPercent         Float?
+  searchPercent            Float?
+  endScreenCtr             Float?
+  cardsCtr                 Float?
+  averageSessionSeconds    Float?
   importSource             String?
   importBatchId            String?
   createdAt                DateTime     @default(now())
