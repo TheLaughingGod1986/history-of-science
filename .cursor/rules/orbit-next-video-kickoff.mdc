@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Orbit — next video kickoff (Growth System v2)
 
-When the user asks to **build / start / plan the next video**, **new episode**, **next long**, or similar — **do this first**. Do not jump to VO, Veo/Omni, Seedance, or picture gen.
+When the user asks to **build / start / plan the next video**, **new episode**, **next long**, or similar — **do this first**. Do not jump to VO, Gemini Veo, Seedance, or picture gen.
 
 ## Step 0 — gate (blocking)
 
@@ -23,7 +23,9 @@ When the user asks to **build / start / plan the next video**, **new episode**, 
 
 ## Then produce
 
-VO (Ben Orbit Narrator) → picture → edit → `templates/PRODUCTION_CHECKLIST_V2.md` → YouTube package upload.
+VO (**ElevenLabs** Ben Orbit Narrator) → picture (**Gemini Veo API** via `orbit_gemini_veo.py`, silent) → edit → `templates/PRODUCTION_CHECKLIST_V2.md` → YouTube package upload.
+
+Do **not** use ElevenLabs Image & Video for CG.
 
 ## Defaults (trust-building window)
 

@@ -10,16 +10,17 @@ CONTEXT = """
 
 Follow these standing rules for this channel:
 
-1. **Pre-build vidIQ audit (blocking)** before script lock / VO / Veo gen → `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
+1. **Pre-build vidIQ audit (blocking)** before script lock / VO / Gemini Veo gen → `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
 2. **Script reviewer ≥ 90** before VO/picture → `cd 07_Content-Ops && npm run review:script -- --file <script.md>`
 3. **Longs:** 8–12 min trust window · cold open 5s/15s/30s · Question→Danger→Story→explain-in-story · Orbit experiences science · 4–6 acts · `[VISUAL MUST]` + `[ORBIT ACTS]` + `[TEACH]`
 4. **Titles:** one promise · prefer ≤~60 chars · no series suffix · thumb = one question
-5. **Shorts:** 3–5 · 22–30s · strongest-fact open · curiosity-gap end · Related+pin when long is public
-6. **No dead ends:** end screen · cards · pin · description → another Orbit documentary
-7. **Success:** impressions · CTR · AVD · APV · session time · returning viewers · Browse/Suggested/Search
-8. Canonical: `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md` · `RETENTION_AND_GROWTH_LOCKED.md`
+5. **Shorts:** 3–5 · 22–30s · strongest-fact open · curiosity-gap end · Related→long
+6. **CG = Gemini Veo API** (`04_Audio/tools/orbit_gemini_veo.py`) · **VO = ElevenLabs** Ben Orbit Narrator only — never EL Image & Video for CG
+7. **No dead ends:** end screen · cards · pin · description → another Orbit documentary
+8. **Success:** impressions · CTR · AVD · APV · session time · returning viewers · Browse/Suggested/Search
+9. Canonical: `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md` · `RETENTION_AND_GROWTH_LOCKED.md`
 
-Do not redesign the brand. Do not spend Ultra/Veo credits or lock VO until pre-build audit + script ≥90 are signed off for new episodes.
+Do not redesign the brand. Do not spend Gemini Veo credits or lock VO until pre-build audit + script ≥90 are signed off for new episodes.
 """.strip()
 
 
@@ -35,6 +36,8 @@ def main() -> None:
             "ORBIT_SCRIPT_REVIEW_MIN": "90",
             "ORBIT_LONGFORM_MINUTES": "8-12",
             "ORBIT_GROWTH_SYSTEM": "v2",
+            "ORBIT_CG_ENGINE": "gemini-veo",
+            "ORBIT_VO_ENGINE": "elevenlabs",
         },
         "additional_context": CONTEXT,
     }

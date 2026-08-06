@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Generate Video 003 CG via ElevenLabs Gemini Omni Flash + Orbit (2026-07 UI).
+"""LEGACY — ElevenLabs Image & Video Omni for Video 003.
 
-Handles: Orbit Headshot style picker · model chip (Veo→Omni) · 8s · circular Generate.
+DO NOT USE FOR NEW EPISODES. Default CG: 04_Audio/tools/orbit_gemini_veo.py
+VO remains ElevenLabs TTS (Ben Orbit Narrator) — separate from this CG script.
 """
 from __future__ import annotations
 

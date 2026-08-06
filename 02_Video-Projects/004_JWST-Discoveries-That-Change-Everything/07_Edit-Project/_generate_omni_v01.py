@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
-"""Generate Video 004 JWST CG via ElevenLabs Gemini Omni Flash + Orbit (2026-07 UI).
+"""LEGACY — ElevenLabs Image & Video Gemini Omni Flash for JWST.
 
-Handles: Orbit Headshot style picker · model chip (Veo→Omni) · 8s · circular Generate.
+DO NOT USE FOR NEW EPISODES OR REGENS.
+Default CG path: 04_Audio/tools/orbit_gemini_veo.py (native Gemini Veo API).
+VO remains ElevenLabs TTS (Ben Orbit Narrator) — that is separate from this script.
+
+Kept only for historical inventory / debugging of already-generated Omni clips.
 """
 from __future__ import annotations
 
@@ -29,11 +33,19 @@ API = "https://api.us.elevenlabs.io"
 # Hero-first: galaxies, black holes, JWST, then rest
 SCENE_ORDER = ["04", "05", "02", "06", "03", "07", "01", "08"]
 
+ANTI_EIFFEL = (
+    "CRITICAL START FRAME: open on Orbit the orange robot in space — never on paper, "
+    "blueprints, schematics, architectural drawings, lattice towers, or the Eiffel Tower. "
+    "FORBIDDEN: Eiffel Tower, Paris landmarks, vintage engineering blueprints, parchment "
+    "diagrams, wireframe building holograms, Explore-gallery architecture refs. "
+    "If any blueprint or tower appears, replace it immediately with Orbit against deep space / JWST scenery."
+)
 LOCK = (
     "Preserve Orbit exactly: rounded orange body, black faceplate, cream expressive eyes, "
     "single glowing antenna, short stubby side arms (no claws, no fingers), soft underside glow. "
     "Emotion through cream eyes and body language only. No text, logos, watermarks, or UI gibberish. "
-    "SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip-sync speech."
+    "SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip-sync speech. "
+    + ANTI_EIFFEL
 )
 PREFACE = (
     "Premium cinematic 3D animation, educational space documentary. Soft warm key light on Orbit, "
@@ -41,6 +53,7 @@ PREFACE = (
     "Full character motion — not a still with light wiggle. "
     "SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words "
     "(channel VO is British Ben Orbit Narrator mixed later in edit). "
+    + ANTI_EIFFEL + " "
 )
 
 
@@ -92,31 +105,45 @@ def log(rec: dict) -> None:
 
 
 def clear_image_refs(page) -> None:
-    """Remove accidental Start/End frame / Image refs (e.g. Explore gallery pollution)."""
+    """Remove accidental Start/End frame / Image refs (e.g. Explore Eiffel blueprint)."""
     page.evaluate(
         """() => {
-          // Remove chips / refs with X buttons near composer
           const kill=[];
           for (const b of document.querySelectorAll('button')) {
             const a=(b.getAttribute('aria-label')||'').toLowerCase();
             const t=(b.innerText||'').trim();
-            if (/remove|clear|delete/.test(a) || t==='×' || t==='x' || t==='✕') {
+            if (/remove|clear|delete|close/.test(a) || t==='×' || t==='x' || t==='✕') {
               const r=b.getBoundingClientRect();
-              if (r.y>400 && r.width>8 && r.width<40) kill.push(b);
+              // Composer + start/end frame chips sit mid-lower UI
+              if (r.y>280 && r.width>6 && r.width<48 && r.height>6 && r.height<48) kill.push(b);
             }
           }
           kill.forEach(b=>{ try{b.click();}catch(e){} });
-          // Also click any @image chip remove
-          for (const el of document.querySelectorAll('[class*="chip"],button,div')) {
+          for (const el of document.querySelectorAll('[class*="chip"],button,div,span')) {
             const t=(el.innerText||'').trim();
-            if (/^@image/i.test(t) || /^image refs/i.test(t)) {
-              const x=[...el.querySelectorAll('button')].find(b=>/remove|close|x/i.test(b.getAttribute('aria-label')||'') || (b.innerText||'').trim()==='×');
-              if (x) x.click();
+            const a=(el.getAttribute('aria-label')||'').toLowerCase();
+            if (/^@image/i.test(t) || /^image refs/i.test(t) || /start frame|end frame|reference image|eiffel/i.test(a+t)) {
+              const x=[...el.querySelectorAll('button')].find(b=>/remove|close|x|clear|delete/i.test(b.getAttribute('aria-label')||'') || ['×','x','✕'].includes((b.innerText||'').trim()));
+              if (x) try{x.click();}catch(e){}
+              // Parent remove if this node itself is a remove control
+              if (/remove|clear/.test(a) && el.tagName==='BUTTON') try{el.click();}catch(e){}
             }
           }
         }"""
     )
-    page.wait_for_timeout(400)
+    page.wait_for_timeout(500)
+    # Second pass — Explore often rebinds after prompt paste
+    page.evaluate(
+        """() => {
+          for (const b of document.querySelectorAll('button')) {
+            const a=(b.getAttribute('aria-label')||'').toLowerCase();
+            if (/remove (image|frame|reference|start|end)/i.test(a)) {
+              try{b.click();}catch(e){}
+            }
+          }
+        }"""
+    )
+    page.wait_for_timeout(300)
 
 
 def bearer(page) -> str:
@@ -198,6 +225,214 @@ def out_path(scene, beat, slug) -> Path:
 
 def already_done(path: Path) -> bool:
     return path.exists() and path.stat().st_size > 800_000
+
+
+ORBIT_START_FRAME = Path(
+    "/Users/ben/code/Orbit-YouTube/01_Orbit-Character/05_Seedance-References/"
+    "orbit-seedance-reference-16x9-v01.png"
+)
+
+
+def reject_eiffel_startframe(path: Path, quarantine_dir: Path | None = None) -> str | None:
+    """Return reason if clip is unusable Eiffel/blueprint; else None.
+
+    Prefer trim-salvage when parchment is only an early start-frame flash and
+    Orbit orange returns by ~1.5–2s (common Explore contamination). Only
+    quarantine + fail when mid-clip stays paper or never recovers orange.
+    """
+    import shutil
+    import subprocess
+    import tempfile
+
+    import numpy as np
+    from PIL import Image
+
+    if not path.exists() or not shutil.which("ffmpeg"):
+        return None
+
+    # Dense enough to catch a 0.5–1s parchment flash mid-take
+    sample_times = (0.0, 0.25, 0.5, 0.8, 1.2, 1.5, 2.0, 3.0, 4.5, 6.0)
+
+    def scores(jpg: Path) -> tuple[float, float]:
+        im = np.array(Image.open(jpg).convert("RGB").resize((320, 180)))
+        r, g, b = im[:, :, 0].astype(float), im[:, :, 1].astype(float), im[:, :, 2].astype(float)
+        orange = float(
+            ((r > 140) & (r > g * 1.15) & (r > b * 1.4) & (g > 60) & (b < 180)).mean()
+        )
+        lum = 0.299 * r + 0.587 * g + 0.114 * b
+        sat = (im.max(axis=2) - im.min(axis=2)).astype(float)
+        paper = float(((lum > 170) & (sat < 45)).mean())
+        return paper, orange
+
+    bad: list[tuple[float, float, float]] = []  # ss, paper, orange
+    rows: list[tuple[float, float, float]] = []
+    with tempfile.TemporaryDirectory(prefix="eiffel_qa_") as td:
+        td_path = Path(td)
+        for i, ss in enumerate(sample_times):
+            jpg = td_path / f"f{i}.jpg"
+            subprocess.run(
+                [
+                    "ffmpeg",
+                    "-y",
+                    "-ss",
+                    str(ss),
+                    "-i",
+                    str(path),
+                    "-frames:v",
+                    "1",
+                    str(jpg),
+                ],
+                check=False,
+                capture_output=True,
+            )
+            if not jpg.exists() or jpg.stat().st_size <= 2000:
+                continue
+            paper, orange = scores(jpg)
+            rows.append((ss, paper, orange))
+            if paper >= 0.40 and orange < 0.01:
+                bad.append((ss, paper, orange))
+
+    if not bad:
+        return None
+
+    # Salvage: early flash only — first clean Orbit frame after last early bad
+    late_bad = [b for b in bad if b[0] >= 2.5]
+    if late_bad:
+        # Mid/late contamination — cannot trim; quarantine
+        ss, paper, orange = bad[0]
+        reason = f"eiffel/blueprint flash t={ss:.2f}s paper={paper:.2f} orange={orange:.3f}"
+        qdir = quarantine_dir or (RAW.parent / "_Rejected" / "eiffel-startframe-jwst-v02")
+        qdir.mkdir(parents=True, exist_ok=True)
+        dest = qdir / path.name
+        if dest.exists():
+            dest = qdir / f"{path.stem}_{int(time.time())}{path.suffix}"
+        path.replace(dest)
+        print(f"REJECT Eiffel → {dest.name}: {reason}", flush=True)
+        return reason
+
+    last_bad_t = max(b[0] for b in bad)
+    clean_t = None
+    for ss, paper, orange in rows:
+        if ss > last_bad_t + 0.05 and orange >= 0.02 and paper < 0.20:
+            clean_t = ss
+            break
+    if clean_t is None:
+        ss, paper, orange = bad[0]
+        reason = (
+            f"eiffel/blueprint flash t={ss:.2f}s paper={paper:.2f} orange={orange:.3f} "
+            "(no clean Orbit recovery)"
+        )
+        qdir = quarantine_dir or (RAW.parent / "_Rejected" / "eiffel-startframe-jwst-v02")
+        qdir.mkdir(parents=True, exist_ok=True)
+        dest = qdir / path.name
+        if dest.exists():
+            dest = qdir / f"{path.stem}_{int(time.time())}{path.suffix}"
+        path.replace(dest)
+        print(f"REJECT Eiffel → {dest.name}: {reason}", flush=True)
+        return reason
+
+    trim_in = round(clean_t + 0.05, 2)
+    tmp = path.with_suffix(".eiffel_trim.mp4")
+    proc = subprocess.run(
+        [
+            "ffmpeg",
+            "-y",
+            "-ss",
+            f"{trim_in:.2f}",
+            "-i",
+            str(path),
+            "-c:v",
+            "libx264",
+            "-preset",
+            "fast",
+            "-crf",
+            "18",
+            "-an",
+            str(tmp),
+        ],
+        capture_output=True,
+    )
+    if proc.returncode != 0 or not tmp.exists() or tmp.stat().st_size < 400_000:
+        if tmp.exists():
+            tmp.unlink()
+        ss, paper, orange = bad[0]
+        reason = f"eiffel trim failed after t={ss:.2f}s flash"
+        qdir = quarantine_dir or (RAW.parent / "_Rejected" / "eiffel-startframe-jwst-v02")
+        qdir.mkdir(parents=True, exist_ok=True)
+        dest = qdir / path.name
+        if dest.exists():
+            dest = qdir / f"{path.stem}_{int(time.time())}{path.suffix}"
+        path.replace(dest)
+        print(f"REJECT Eiffel → {dest.name}: {reason}", flush=True)
+        return reason
+
+    # Keep raw contaminated copy for audit, replace working file with trimmed
+    qdir = quarantine_dir or (RAW.parent / "_Rejected" / "eiffel-startframe-jwst-v02")
+    qdir.mkdir(parents=True, exist_ok=True)
+    archive = qdir / f"{path.stem}_pretrim_{int(time.time())}{path.suffix}"
+    path.replace(archive)
+    tmp.replace(path)
+    print(
+        f"SALVAGE Eiffel trim_in={trim_in:.2f}s → {path.name} (raw → {archive.name})",
+        flush=True,
+    )
+    return None
+
+
+def attach_orbit_start_frame(page, ref: Path | None = None) -> bool:
+    """After clearing Explore refs, lock Start frame to Orbit 16:9 reference.
+
+    Prevents Explore from rebinding the Eiffel blueprint as start frame.
+    """
+    img = ref or ORBIT_START_FRAME
+    if not img.exists():
+        print(f"WARN: Orbit start-frame missing: {img}", flush=True)
+        return False
+
+    # Open start-frame / image-ref upload if a control is visible
+    page.evaluate(
+        """() => {
+          const candidates=[...document.querySelectorAll('button,div,[role="button"],label')];
+          const hit=candidates.find(el=>{
+            const t=((el.innerText||'')+' '+(el.getAttribute('aria-label')||'')).toLowerCase();
+            const r=el.getBoundingClientRect();
+            if (r.width<8 || r.height<8 || r.y<200) return false;
+            return /start frame|add start|image refs|upload image|add image|reference image/.test(t);
+          });
+          if (hit) try{hit.click();}catch(e){}
+        }"""
+    )
+    page.wait_for_timeout(400)
+
+    inputs = page.locator('input[type="file"]')
+    n = inputs.count()
+    attached = False
+    for i in range(n):
+        try:
+            accept = (inputs.nth(i).get_attribute("accept") or "").lower()
+            # Prefer image-accepting inputs; skip obvious video-only
+            if accept and "image" not in accept and "video" in accept and "image" not in accept:
+                continue
+            if accept and not any(x in accept for x in ("image", "png", "jpg", "jpeg", "*", ".")):
+                if "video" in accept:
+                    continue
+            inputs.nth(i).set_input_files(str(img), timeout=5000)
+            attached = True
+            print(f"orbit start-frame: set_input_files idx={i} accept={accept!r}", flush=True)
+            break
+        except Exception as e:
+            print(f"orbit start-frame: idx={i} skip ({e})", flush=True)
+    if not attached and n:
+        try:
+            inputs.last.set_input_files(str(img), timeout=5000)
+            attached = True
+            print("orbit start-frame: set_input_files last", flush=True)
+        except Exception as e:
+            print(f"orbit start-frame FAIL: {e}", flush=True)
+    page.wait_for_timeout(700)
+    page.keyboard.press("Escape")
+    page.wait_for_timeout(250)
+    return attached
 
 
 def mark_queue_done(scene, beat, slug=None):
@@ -290,15 +525,56 @@ def select_orbit_headshot(page):
 
 
 def click_video_tab(page):
+    """Force the Video modality tab — never leave Lip sync / Image selected."""
     page.evaluate(
         """() => {
-          const n=[...document.querySelectorAll('button,[role="tab"]')].find(el=>{
-            return (el.innerText||'').trim()==='Video';
+          const tabs=[...document.querySelectorAll('button,[role="tab"]')];
+          const n=tabs.find(el=>{
+            const t=(el.innerText||'').trim();
+            return t==='Video' || /^Video$/i.test(t.split('\\n')[0]);
           });
           if (n) n.click();
         }"""
     )
-    page.wait_for_timeout(500)
+    page.wait_for_timeout(600)
+
+
+def on_lip_sync(page) -> bool:
+    try:
+        return bool(
+            page.evaluate(
+                """() => {
+                  const body=(document.body.innerText||'');
+                  if (/Image is required for lip syncing/i.test(body)) return true;
+                  const tabs=[...document.querySelectorAll('button,[role="tab"]')];
+                  const lip=tabs.find(el=>/^Lip sync$/i.test((el.innerText||'').trim().split('\\n')[0]));
+                  if (!lip) return false;
+                  const sel=lip.getAttribute('aria-selected')==='true'
+                    || /active|selected/i.test(lip.className||'')
+                    || lip.getAttribute('data-state')==='active';
+                  return !!sel;
+                }"""
+            )
+        )
+    except Exception:
+        return False
+
+
+def force_video_composer(page):
+    """Hard navigate to video composer — Lip sync steals Generate clicks otherwise."""
+    page.goto(
+        "https://elevenlabs.io/app/image-video?modality=video",
+        wait_until="domcontentloaded",
+        timeout=120000,
+    )
+    page.wait_for_timeout(2800)
+    dismiss(page)
+    click_video_tab(page)
+    page.wait_for_timeout(400)
+    if on_lip_sync(page):
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(400)
+        click_video_tab(page)
 
 
 def read_model_chip(page) -> str:
@@ -449,35 +725,42 @@ def set_prompt(page, prompt: str):
 
 
 def click_generate(page) -> bool:
-    """Click enabled Generate only — never Loading / disabled circular buttons."""
-    # Wait briefly for prompt to enable Generate
+    """Click enabled Generate only — never Loading / audio / quantity chips."""
     for _ in range(12):
         state = page.evaluate(
             """() => {
-              const gens=[...document.querySelectorAll('button[aria-label="Generate"]')];
-              for (const b of gens) {
+              // Prefer exact aria-label=Generate (right-side submit)
+              const exact=[...document.querySelectorAll('button[aria-label="Generate"]')];
+              const ranked=[];
+              for (const b of exact) {
                 const r=b.getBoundingClientRect();
                 if (r.width<10 || r.height<10) continue;
+                const a=(b.getAttribute('aria-label')||'').trim();
                 const dis=!!(b.disabled || b.getAttribute('aria-disabled')==='true'
-                  || /loading/i.test(b.getAttribute('aria-label')||'')
-                  || /loading/i.test(b.innerText||''));
-                if (!dis) return {ok:true, x:r.x+r.width/2, y:r.y+r.height/2, a:'Generate'};
+                  || /loading/i.test(a) || /loading/i.test(b.innerText||''));
+                if (dis) continue;
+                ranked.push({ok:true, x:r.x+r.width/2, y:r.y+r.height/2, a:'Generate', score:r.x});
               }
-              // circular enabled submit (exclude Loading)
+              if (ranked.length) {
+                ranked.sort((a,b)=>b.score-a.score);
+                return ranked[0];
+              }
+              // Fallback: circular send on far right — exclude audio/quantity
               const cands=[];
               for (const b of document.querySelectorAll('button')) {
                 const a=(b.getAttribute('aria-label')||'').trim();
+                const t=(b.innerText||'').trim();
                 const r=b.getBoundingClientRect();
-                if (r.width<28 || r.height<28 || r.y<450) continue;
-                if (/loading/i.test(a)) continue;
+                if (r.width<28 || r.height<28 || r.y<450 || r.x<1050) continue;
+                if (/loading|audio|quantity|credit|left|off|on/i.test(a+' '+t)) continue;
                 const dis=!!(b.disabled || b.getAttribute('aria-disabled')==='true');
                 if (dis) continue;
-                if (/^Generate$/i.test(a) || (/generate|submit|send/i.test(a) && !/loading/i.test(a)))
-                  cands.push({x:r.x+r.width/2,y:r.y+r.height/2,a,w:r.width});
-                else if (r.width>=34 && r.width<=72 && r.height>=34 && r.height<=72 && r.x>1000)
-                  cands.push({x:r.x+r.width/2,y:r.y+r.height/2,a:a||'circle',w:r.width});
+                if (/^Generate$/i.test(a) || (/^submit$|^send$/i.test(a)))
+                  cands.push({x:r.x+r.width/2,y:r.y+r.height/2,a,w:r.width,score:r.x});
+                else if (r.width>=34 && r.width<=72 && r.height>=34 && r.height<=72)
+                  cands.push({x:r.x+r.width/2,y:r.y+r.height/2,a:a||'circle',w:r.width,score:r.x});
               }
-              cands.sort((a,b)=>b.y-a.y);
+              cands.sort((a,b)=>b.score-a.score || b.y-a.y);
               return cands[0] ? {ok:true, ...cands[0]} : {ok:false};
             }"""
         )
@@ -490,10 +773,11 @@ def click_generate(page) -> bool:
     return False
 
 
-def wait_new(token, before, timeout_s=420):
+def wait_seen(token, before, timeout_s=90):
+    """Return generation id as soon as it appears (do not wait for completion)."""
     t0 = time.time()
     while time.time() - t0 < timeout_s:
-        data = api_get("/v1/content/generations?per_page=20", token)
+        data = api_get("/v1/content/generations?per_page=30", token)
         for g in data.get("generations") or []:
             gid = g.get("id")
             if not gid or gid in before:
@@ -502,10 +786,15 @@ def wait_new(token, before, timeout_s=420):
                 f"  seen {gid} model={g.get('model_id')} status={g.get('status')}",
                 flush=True,
             )
-            # poll to completion
-            return wait_done(token, gid, timeout_s - int(time.time() - t0))
-        time.sleep(4)
+            return gid, g
+        time.sleep(1.5)
     raise TimeoutError("no new generation")
+
+
+def wait_new(token, before, timeout_s=420):
+    t0 = time.time()
+    gid, _ = wait_seen(token, before, timeout_s=min(90, timeout_s))
+    return wait_done(token, gid, max(30, timeout_s - int(time.time() - t0)))
 
 
 def wait_done(token, gid, timeout_s=420):
@@ -517,8 +806,8 @@ def wait_done(token, gid, timeout_s=420):
         if st == "completed":
             return g
         if st in ("failed", "error"):
-            raise RuntimeError(g.get("error_message"))
-        time.sleep(5)
+            raise RuntimeError(g.get("error_message") or st)
+        time.sleep(2)
     raise TimeoutError(gid)
 
 
@@ -574,24 +863,8 @@ def filter_beats(beats, arg):
 
 
 def setup_composer(page):
-    # Always re-open video composer — Lip Sync / History can steal focus
-    if "modality=video" not in page.url or "image-video" not in page.url:
-        page.goto(
-            "https://elevenlabs.io/app/image-video?modality=video",
-            wait_until="domcontentloaded",
-            timeout=120000,
-        )
-        page.wait_for_timeout(3500)
-    dismiss(page)
-    # Hard-close lip sync if toast/modal present
-    try:
-        if page.get_by_text("Lip sync", exact=False).count():
-            page.keyboard.press("Escape")
-            page.wait_for_timeout(500)
-            page.keyboard.press("Escape")
-            page.wait_for_timeout(400)
-    except Exception:
-        pass
+    # Always hard-open video composer — Lip Sync / History steal Generate otherwise
+    force_video_composer(page)
     select_orbit_headshot(page)
     click_video_tab(page)
     clear_image_refs(page)
@@ -602,7 +875,14 @@ def setup_composer(page):
         chip = force_omni(page)
     set_duration_8s(page)
     clear_image_refs(page)
+    click_video_tab(page)
     dismiss(page)
+    if on_lip_sync(page):
+        print("WARN: still on Lip sync after setup — reforcing video", flush=True)
+        force_video_composer(page)
+        click_video_tab(page)
+        chip = force_omni(page)
+        set_duration_8s(page)
     return chip
 
 
@@ -651,9 +931,17 @@ def main(arg=None):
                 flush=True,
             )
             ok_one = False
-            for attempt in range(1, 4):
+            for attempt in range(1, 5):
                 try:
-                    if "Omni" not in read_model_chip(page):
+                    left = credits_left(page)
+                    if left == "0" or on_lip_sync(page) or "Omni" not in read_model_chip(page):
+                        if left == "0":
+                            print("concurrent 0 left — waiting 90s", flush=True)
+                            time.sleep(90)
+                        setup_composer(page)
+                    click_video_tab(page)
+                    if on_lip_sync(page):
+                        force_video_composer(page)
                         setup_composer(page)
                     clear_image_refs(page)
                     token = bearer(page)
@@ -670,6 +958,14 @@ def main(arg=None):
                     set_prompt(page, prompt)
                     page.wait_for_timeout(600)
                     clear_image_refs(page)
+                    # Skip attach_orbit_start_frame — upload disables Generate; trim-salvage instead
+                    click_video_tab(page)
+                    # Prompt typing can reset model chip — re-lock Omni + 8s
+                    if "Omni" not in read_model_chip(page):
+                        force_omni(page)
+                        set_duration_8s(page)
+                    if on_lip_sync(page):
+                        raise RuntimeError("stuck on Lip sync before Generate")
                     if not click_generate(page):
                         page.screenshot(
                             path=str(AUDIT / f"no_gen_btn_{scene}{beat}_a{attempt}.png")
@@ -679,13 +975,17 @@ def main(arg=None):
                     page.screenshot(
                         path=str(AUDIT / f"after_gen_{scene}{beat}_a{attempt}.png")
                     )
-                    # Captcha / human wait: if no gen appears quickly, keep waiting
-                    g = wait_new(token, before, timeout_s=360)
+                    if on_lip_sync(page):
+                        raise RuntimeError("Generate landed on Lip sync")
+                    g = wait_new(token, before, timeout_s=420)
                     if g.get("model_id") and "omni" not in str(g.get("model_id")).lower():
                         print("WARN wrong model", g.get("model_id"), flush=True)
                     download(g, dest)
                     if not already_done(dest):
                         raise RuntimeError(f"download too small: {dest.stat().st_size}")
+                    eiffel = reject_eiffel_startframe(dest)
+                    if eiffel:
+                        raise RuntimeError(f"Eiffel QA reject: {eiffel}")
                     log(
                         {
                             "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
@@ -709,6 +1009,7 @@ def main(arg=None):
                     page.keyboard.press("Escape")
                     page.wait_for_timeout(800)
                     try:
+                        force_video_composer(page)
                         setup_composer(page)
                     except Exception:
                         pass
@@ -719,7 +1020,7 @@ def main(arg=None):
                     print("ABORT: 3 consecutive failures", flush=True)
                     ctx.close()
                     raise SystemExit(1)
-            time.sleep(8)  # cool-down between clips (avoid Lip Sync / rate stalls)
+            time.sleep(12)  # cool-down between clips (avoid Lip Sync / rate stalls)
 
         ctx.close()
     print("\nbatch complete", flush=True)

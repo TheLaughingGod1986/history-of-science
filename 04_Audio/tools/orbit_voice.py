@@ -26,8 +26,9 @@ DESCRIPTION = (
     "theatrical, never trailer-like."
 )
 
-# Append to every ElevenLabs Image & Video / Veo / Omni / Seedance prompt.
+# Append to every Gemini Veo / Seedance prompt (never ElevenLabs Image & Video for new CG).
 # Video models often invent American narration — never use that audio.
+# Channel VO = ElevenLabs Ben Orbit Narrator only (VOICE_ID above).
 CG_SILENT_AUDIO_BLOCK = (
     "SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken "
     "words, no lip sync speech, no American or any-language talking. No announcer. "

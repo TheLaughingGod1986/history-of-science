@@ -1,11 +1,13 @@
 ---
-description: Lock ElevenLabs VO to British Ben Orbit Narrator clone
+description: Lock ElevenLabs to British VO only — CG is Gemini Veo
 alwaysApply: true
 ---
 
-# Orbit YouTube — voiceover lock (British)
+# Orbit YouTube — voiceover lock (British) + CG split
 
-When generating or regenerating any Orbit narration with ElevenLabs:
+## VO — ElevenLabs only (locked)
+
+When generating or regenerating any Orbit **narration**:
 
 1. **Always use** voice **Ben Orbit Narrator** — Instant Voice Clone of Ben’s British accent.
 2. **Voice ID (locked):** `kDch6ACCIpqgQ0NsU9kk`
@@ -16,12 +18,15 @@ When generating or regenerating any Orbit narration with ElevenLabs:
 
 Target character: warm, articulate British educational narrator — calm authority, cinematic curiosity, restrained mystery. Never theatrical / trailer-like.
 
-## Image & Video / Veo / Omni CG (critical)
+## CG — Gemini Veo API (not ElevenLabs Image & Video)
 
-ElevenLabs **Image & Video** models (Veo, Omni, etc.) often bake in **American** speech. That is **not** channel VO.
+**Default picture path:** native Gemini Veo via `04_Audio/tools/orbit_gemini_veo.py`.
 
 - CG clips must be **silent picture** (or ambience only) — **no dialogue, no narration, no VO** in the video model.
-- Always append the silent-audio block from `04_Audio/tools/orbit_voice.py` (`CG_SILENT_AUDIO_BLOCK`).
-- Channel narration is mixed later from **Ben Orbit Narrator** only.
-- Prefer Gemini Omni Flash when credits allow; if using Veo, still force silent prompts and strip audio on download.
-- Never treat Veo/Omni native speech as usable VO.
+- Always append `CG_SILENT_AUDIO_BLOCK` / use `build_prompt()` from `orbit_gemini_veo.py`.
+- `generate_audio=False` + strip audio on download.
+- Channel narration is mixed later from **Ben Orbit Narrator** (ElevenLabs TTS) only.
+- **Do not** use ElevenLabs Image & Video (Omni / in-app Veo) for new CG — use Gemini API Veo instead.
+- Never treat Veo native speech as usable VO.
+
+See also: `.cursor/rules/orbit-gemini-veo-cg.mdc`

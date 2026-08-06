@@ -1,19 +1,46 @@
 ---
-description: Orbit cutscenes — never reuse or loop scenery in one video
+description: Orbit cutscenes — Gemini Veo CG, motion coverage, no slow-mo/loops/Eiffel
 alwaysApply: true
 ---
 
-# Orbit YouTube — cutscene rules
+# Orbit YouTube — cutscene / picture rules
 
-When editing or assembling any Orbit episode:
+## Hard assembly rules
 
-1. **Never reuse a cutscene** in a single video. Each B-roll / card / fill plate filename appears at most once.
-2. **Never loop cutscenes.** Play once at native duration. Do not use `stream_loop`, ping-pong, or freeze-extend to stretch scenery — including Seedance / animated board beds.
-3. If VO/picture time is longer than the clip: play the animated bed **once**, then continue with that scene’s **unique still board** (smooth pan) for the remainder. Never restart the same motion clip.
-4. If picture time is short elsewhere, add **new unique** plates — never loop existing ones.
+1. **Never reuse a cutscene** in a single video. Each B-roll / card / plate filename appears at most once.
+2. **Never loop cutscenes.** Play once at native duration. No `stream_loop`, ping-pong, or freeze-extend — including Seedance / Veo / animated beds.
+3. **Never slow-mo stretch** (`setpts` > 1×) to fill VO. Slow-mo makes the episode feel laggy.
+4. **Never use long still-pan fills as the main picture.** Still boards are a **short bridge only** (target ≤ ~4s leftover after motion). If VO needs more picture, **generate more unique motion clips** — do not pad with minutes of Ken Burns / hero stills.
 5. **Exception:** Orbit character PiP may loop (character bed only).
 6. Prefer vibrant, distinct scenery (planets, surfaces, telescopes, atmospheres). Avoid empty distant-galaxy / static starfield plates.
-7. Include Orbit **brand intro** (~1s) and **like/subscribe outro** (arrows on LIKE / SUBSCRIBE) plus matching VO CTA.
-8. **Never animate text plates** with zoompan/Ken Burns. Title cards and brand stings must be locked stills — geometric filters make glyphs vibrate.
+7. Include Orbit **brand intro** (~1s) and **like/subscribe outro** plus matching VO CTA.
+8. **Never animate text plates** with zoompan/Ken Burns. Title cards and brand stings must be locked stills.
 
-Builders: `07_Edit-Project/_build_broadcast_noloop_v02.py`, `CUTSCENE_RULES.md`, Bold Explainer `_build_bold_explainer_v10_music_chapters.py`.
+## Motion coverage (plan before generate)
+
+Before locking an episode edit, size the clip inventory so **usable 1× motion covers most of VO picture time**:
+
+- Gemini Veo clips are typically **~8s** and often **degrade in the last ~2s**. Plan on **~5.5–6s usable** per clip after a soft tail trim.
+- **Budget:** `usable_clips × ~6s  ≥  0.75 × VO_picture_seconds` (aim higher for hero sections).
+- Example: ~10–12 min VO picture ≈ need **~75–100+ unique 8s clips** (scale up for longer VO).
+- If coverage is short: add **new unique variants** (extra prompts / p1/p2/p3 takes) — never stretch, loop, or long-still the gap.
+
+## Gemini Veo generation guards (default CG path)
+
+1. Use **`04_Audio/tools/orbit_gemini_veo.py`** (native Gemini API). **Not** ElevenLabs Image & Video.
+2. **Start frame + ASSET = Orbit only.** Abort if non-Orbit refs bind. Forbid **Eiffel Tower / Paris / architectural blueprints / parchment schematics**.
+3. Prompt lock: no readable text / logos / UI; **SILENT PICTURE ONLY**; British VO mixed in edit from ElevenLabs.
+4. `generate_audio=False` + strip audio on download. Spot-check first ~1s and last ~2s; quarantine rejects.
+5. In edit: optional soft **tail trim (~2–2.5s)** when inventory already covers VO without long stills.
+
+## Legacy
+
+ElevenLabs Omni / in-app Veo Playwright scripts (`_generate_omni_*.py`) are legacy. Do not use for new episodes.
+
+## Lessons (JWST v004 — 2026-08)
+
+- Slow-mo stretch fixed “lag” but was wrong; **1× motion** is correct.
+- Root cause of static feel: **too few unique clips for VO length**.
+- Fix path: **regenerate more unique motion plates** via Gemini Veo, rebuild master + Shorts, keep ElevenLabs VO/music.
+
+Builders reference: `CUTSCENE_RULES.md`, `_build_broadcast_noloop_v02.py`, `orbit_gemini_veo.py`.

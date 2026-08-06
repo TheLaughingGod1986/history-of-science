@@ -110,12 +110,16 @@ Canonical: `Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md` · `docs/ORBIT_GROW
 
 ## Production stack
 
-Seedance · Runway · Pika · ElevenLabs (Ben voice clone) · Midjourney/image gen · CapCut / Premiere.
+**CG (default):** Google **Gemini Veo API** — `04_Audio/tools/orbit_gemini_veo.py`  
+**VO (locked):** **ElevenLabs TTS** — Ben Orbit Narrator only  
+**Also:** Seedance (legacy/character refs) · Midjourney/image gen · CapCut / Premiere  
+
+**Do not** use ElevenLabs Image & Video for new CG (cost + American speech + Explore contamination).
 
 **Style:** premium animated documentary.  
 **Avoid:** cheap AI slideshow, generic stock, random AI clip salad. Every scene intentional.
 
-**Voice:** calm, curious, warm, intelligent documentary narrator (Attenborough × modern doc).
+**Voice:** calm, curious, warm, intelligent British documentary narrator (Attenborough × modern doc) via ElevenLabs clone.
 
 Workspace pipeline lives in repo README + per-video folders under `02_Video-Projects/`.  
 Publish slots: `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.json`.

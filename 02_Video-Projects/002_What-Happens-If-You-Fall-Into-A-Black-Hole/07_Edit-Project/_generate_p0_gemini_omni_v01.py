@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate Video 002 P0 CG clips via ElevenLabs Gemini Omni Flash + Orbit avatar.
+"""LEGACY — ElevenLabs Image & Video Omni for Video 002 P0.
 
-Drives the persistent Playwright ElevenLabs profile (captcha-minted create).
-Downloads completed MP4s into 04_Generated-Clips/01_Raw/scene-XX/.
+DO NOT USE FOR NEW EPISODES. Default CG: 04_Audio/tools/orbit_gemini_veo.py
+VO remains ElevenLabs TTS (Ben Orbit Narrator) — separate from this CG script.
 """
 from __future__ import annotations
 

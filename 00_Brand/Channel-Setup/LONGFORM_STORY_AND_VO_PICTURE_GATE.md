@@ -145,12 +145,12 @@ Watch with VO only once, then picture+VO:
 1. **Chapter outline** with teach-points + Orbit experience beats  
 2. Full script with `[VISUAL MUST]` / `[ORBIT ACTS]` / `[TEACH]`  
 3. Scene board / prompts from those markers only  
-4. ElevenLabs VO → lock duration  
-5. Picture gen / edit matched to VO timeline  
+4. ElevenLabs **VO** (Ben Orbit Narrator) → lock duration  
+5. Picture gen via **Gemini Veo API** (`orbit_gemini_veo.py`) / edit **matched to VO timeline** — not ElevenLabs Image & Video  
 6. Chapter cards + brand sting + subscribe outro  
 7. QA gate → `PRODUCTION_CHECKLIST_V2.md` → package → schedule  
 
-**Do not** lock VO or spend Veo credits until steps 0 and 0b are signed off.
+**Do not** lock VO or spend **Gemini Veo** credits until steps 0 and 0b are signed off.
 
 Templates: `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` · `SCRIPT_REVIEW_SCORECARD.md` · `PRODUCTION_CHECKLIST_V2.md` · `VIDEO_PACKAGE_TEMPLATE.md` · cutscenes: `CUTSCENE_RULES.md`
 
