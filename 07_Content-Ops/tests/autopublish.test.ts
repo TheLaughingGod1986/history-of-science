@@ -309,6 +309,15 @@ describe("publishing jobs locking", () => {
   });
 
   it("claims future YouTube schedules immediately for publishAt upload", async () => {
+    // Isolate from leftover due jobs in shared dev.db
+    await prisma.publishingJob.updateMany({
+      where: {
+        status: { in: ["pending", "scheduled", "failed_retryable"] },
+        lockedAt: null,
+      },
+      data: { status: "cancelled", lastErrorMessage: "test isolation" },
+    });
+
     const v = await prisma.longFormVideo.create({
       data: {
         title: "Future YT",

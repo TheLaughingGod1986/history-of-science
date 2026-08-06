@@ -30,9 +30,23 @@ Open http://localhost:3000 — connect accounts at `/settings/connections`.
 | `npm run youtube:package` | YouTube Data API package upload |
 | `npm run review:script -- --file <script.md>` | Growth System v2 script reviewer (≥90 to pass) |
 | `npm run diagnose:youtube -- --file <metrics.json>` | Post-upload YouTube growth recommendations |
+| `npm run verify:growth-v2` | Run growth v2 unit tests + sample diagnose |
 
 Growth System v2 (canonical): `../00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
 Analytics UI: `/analytics` — impressions, CTR, APV, traffic mix, actionable flags.
+
+### Growth System v2 — first-time setup
+
+```bash
+cd 07_Content-Ops
+cp -n .env.example .env   # set ORBIT_TOKEN_ENCRYPTION_KEY if empty
+npx prisma migrate deploy
+npx prisma generate
+npm run verify:growth-v2
+npm run review:script -- --file ../00_Brand/Channel-Setup/templates/SCRIPT_REVIEW_SCORECARD.md
+# (scorecard alone will REJECT — pass a real script.md)
+npm run dev               # open /analytics to import Studio CSV
+```
 
 ## Autopublish notes
 

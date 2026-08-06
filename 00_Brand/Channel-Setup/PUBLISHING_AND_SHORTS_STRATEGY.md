@@ -54,7 +54,7 @@ Related / soft CTA → pillar long-form
         ↓
 Watch time · subs · returning viewers
         ↓
-Suggested for next Thursday pillar
+Suggested for next Wednesday pillar
 ```
 
 ---
@@ -77,21 +77,23 @@ Suggested for next Thursday pillar
 | 5 | Ops lock: **21:00 UK** (≈ 2 hours after the long) |
 | 6 | Related video / pinned comment → this week’s long-form |
 
-### After Day 1 — Related Shorts until the next long
+### Weekly rhythm — Wednesday long, then related Shorts
 
-Keep promoting **this** long until the next long is ready.
+| Day | What | Time UK |
+|-----|------|---------|
+| **Wednesday** | Long-form | **19:00** (cold-start exception allowed) |
+| **Thu–Tue** | Related Shorts (**3–5** discovery; extras as reserves) | **12:30** (optional Day-1 launch Short ~21:00) |
+| **Next Wednesday** | Next long-form | **19:00** |
 
-| Step | When | Time UK | Role |
-|------|------|---------|------|
-| Long | Pillar day | **18:00** cold start · **19:00** steady | Documentary first |
-| Short #1 | Same day, a few hours later | **21:00** | Strongest related hook |
-| Shorts #2… | **Every day**, or **every other day** if inventory is short | **12:30** | Each one idea from that long |
+Example: long on Wednesday → Shorts Thursday through Tuesday about that long → next long the following Wednesday.
 
-**Spacing rule**
-- Target: **3–5** discovery Shorts per long (Growth System v2); hold extras as reserves to cover the window until the next long.
-- If you have enough Shorts to cover the days until the next long → publish **daily**.
-- If you do not → space them **every other day** so they keep promoting that long across the whole window.
-- Use related Shorts you have. Do not dump them in one week and go silent.
+**Growth System v2 spacing**
+
+- Target **3–5** discovery Shorts per long (curiosity-gap ends + Related → pillar); hold soft-duplicates as **Private** reserves.
+- Shorts must promote **that week’s** long only.
+- One Short per day max — never dump the cluster on Day 1.
+- Unused soft-duplicates stay **Private** — do not park them in December.
+- Current backlog ships through **August–September**.
 
 **Never** publish a teaser Short *before* the pillar is public.  
 **Never** dump the whole cluster on Day 1.  
@@ -142,6 +144,7 @@ Every Short is a **standalone micro-story**. Longer cuts only when retention dat
 - “This is only one part of a much bigger mystery — Related points to the full film.”
 
 Avoid: bare “WATCH NOW” / “Watch the full video.” · “LINK IN BIO” energy · hard-sell captions · fake urgency.
+
 ### Quality bar
 
 Every Short should feel like a **premium mini-documentary**:

@@ -1,22 +1,25 @@
 #!/usr/bin/env python3
-"""Orbit sessionStart — inject retention & growth checklist into new agent sessions."""
+"""Orbit sessionStart — inject Growth System v2 checklist into new agent sessions."""
 from __future__ import annotations
 
 import json
 import sys
 
 CONTEXT = """
-# Orbit session checklist (auto-injected)
+# Orbit session checklist — Growth System v2 (auto-injected)
 
 Follow these standing rules for this channel:
 
 1. **Pre-build vidIQ audit (blocking)** before script lock / VO / Veo gen → `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
-2. **Longs:** 10–12 min · 4–6 chapters · `[VISUAL MUST]` + `[TEACH]` every scene · VO–picture lock
-3. **Shorts:** 22–30s punch-first (0–1.5s) · Related+pin when long is public · soft end CTA
-4. **Success:** views + higher % watched · wonder over fearbait
-5. Canonical: `00_Brand/Channel-Setup/RETENTION_AND_GROWTH_LOCKED.md`
+2. **Script reviewer ≥ 90** before VO/picture → `cd 07_Content-Ops && npm run review:script -- --file <script.md>`
+3. **Longs:** 8–12 min trust window · cold open 5s/15s/30s · Question→Danger→Story→explain-in-story · Orbit experiences science · 4–6 acts · `[VISUAL MUST]` + `[ORBIT ACTS]` + `[TEACH]`
+4. **Titles:** one promise · prefer ≤~60 chars · no series suffix · thumb = one question
+5. **Shorts:** 3–5 · 22–30s · strongest-fact open · curiosity-gap end · Related+pin when long is public
+6. **No dead ends:** end screen · cards · pin · description → another Orbit documentary
+7. **Success:** impressions · CTR · AVD · APV · session time · returning viewers · Browse/Suggested/Search
+8. Canonical: `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md` · `RETENTION_AND_GROWTH_LOCKED.md`
 
-Do not spend Ultra/Veo credits or lock VO until the pre-build audit is signed off for new episodes (V013+).
+Do not redesign the brand. Do not spend Ultra/Veo credits or lock VO until pre-build audit + script ≥90 are signed off for new episodes.
 """.strip()
 
 
@@ -29,7 +32,9 @@ def main() -> None:
         "env": {
             "ORBIT_RETENTION_GATE": "1",
             "ORBIT_PREBUILD_VIDIQ_REQUIRED": "1",
-            "ORBIT_LONGFORM_MINUTES": "10-12",
+            "ORBIT_SCRIPT_REVIEW_MIN": "90",
+            "ORBIT_LONGFORM_MINUTES": "8-12",
+            "ORBIT_GROWTH_SYSTEM": "v2",
         },
         "additional_context": CONTEXT,
     }

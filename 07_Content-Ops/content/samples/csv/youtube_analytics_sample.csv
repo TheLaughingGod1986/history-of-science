@@ -1,3 +1,4 @@
-Video URL,Views,Likes,Comments,Shares,Average view duration,Average percentage viewed,Subscribers gained
-https://youtu.be/example-short-1,12000,840,55,30,22.5,48,18
-https://youtu.be/example-short-2,8000,410,22,12,18.1,41,7
+Video URL,Views,Impressions,Impressions click-through rate (%),Likes,Comments,Shares,Average view duration,Average percentage viewed,Audience retention at 30 seconds (%),Subscribers gained,Returning viewers,New viewers,Browse features (%),Suggested videos (%),YouTube search (%),End screen element click rate (%),Card clicks (%),Average session duration
+https://youtu.be/example-long-1,420,12000,3.5,40,8,2,180,28,48,2,40,380,8,7,70,0.8,0.4,210
+https://youtu.be/example-short-1,900,8000,11.2,84,12,9,19,72,55,1,20,880,40,20,10,,,
+https://youtu.be/example-short-2,8000,45000,17.8,410,22,12,18.1,41,38,7,120,7880,35,25,15,,,

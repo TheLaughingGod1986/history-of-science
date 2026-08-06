@@ -25,9 +25,10 @@ def main() -> None:
 
     if GEN_RE.search(command):
         msg = (
-            "Orbit gate: before VO/Veo/Omni/gen spend, confirm pre-build vidIQ audit "
-            "is signed off and VO–picture / retention rules apply "
-            "(RETENTION_AND_GROWTH_LOCKED.md · PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md)."
+            "Orbit Growth System v2 gate: before VO/Veo/Omni/gen spend, confirm "
+            "(1) pre-build vidIQ audit signed off, (2) script reviewer ≥90 "
+            "(npm run review:script), (3) cold open 5/15/30s + Orbit agency. "
+            "See YOUTUBE_GROWTH_SYSTEM_V2.md · RETENTION_AND_GROWTH_LOCKED.md."
         )
         sys.stdout.write(
             json.dumps(
