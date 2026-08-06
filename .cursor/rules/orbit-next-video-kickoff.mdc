@@ -20,12 +20,28 @@ When the user asks to **build / start / plan the next video**, **new episode**, 
    cd 07_Content-Ops && npm run review:script -- --file <script.md>
    ```
    Below 90 = **REJECT** — rewrite. Do not generate audio/video.
+8. **Episode gate (blocking CLI)** before VO / Gemini Veo:
+   ```bash
+   cd 07_Content-Ops && npm run gate:episode -- --project ../02_Video-Projects/<NNN_Slug>
+   ```
+   Must PASS (audit signed · script ≥90 · `[ORBIT ACTS]` / `[VISUAL MUST]` / `[TEACH]` counts).
+
+## New episode scaffold
+
+Copy `02_Video-Projects/_template_NNN_Episode-Slug/` → `02_Video-Projects/NNN_Your-Slug/`, then run the gate.
 
 ## Then produce
 
-VO (**ElevenLabs** Ben Orbit Narrator) → picture (**Gemini Veo API** via `orbit_gemini_veo.py`, silent) → edit → `templates/PRODUCTION_CHECKLIST_V2.md` → YouTube package upload.
+VO (**ElevenLabs** Ben Orbit Narrator) → picture (**Gemini Veo API** via `orbit_gemini_veo.py` / template `_generate_veo_from_beats.py`, silent) → edit → `templates/PRODUCTION_CHECKLIST_V2.md` → YouTube package upload.
 
 Do **not** use ElevenLabs Image & Video for CG.
+
+After shipping, refresh the next brief from Studio metrics:
+
+```bash
+cd 07_Content-Ops && npm run brief:next -- --file metrics.json --topic "Next idea"
+# writes docs/NEXT_EPISODE_BRIEF.md
+```
 
 ## Thumbs + social schedule (after YouTube lock)
 

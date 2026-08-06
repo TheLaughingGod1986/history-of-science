@@ -30,10 +30,9 @@ Open http://localhost:3000 — connect accounts at `/settings/connections`.
 | `npm run youtube:package` | YouTube Data API package upload |
 | `npm run review:script -- --file <script.md>` | Growth System v2 script reviewer (≥90 to pass) |
 | `npm run diagnose:youtube -- --file <metrics.json>` | Post-upload YouTube growth recommendations |
-| `npm run verify:growth-v2` | Run growth v2 unit tests + sample diagnose |
-
-Growth System v2 (canonical): `../00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
-Analytics UI: `/analytics` — impressions, CTR, APV, traffic mix, actionable flags.
+| `npm run gate:episode -- --project <…>` | Growth System v2 episode gate (blocks VO/Veo until PASS) |
+| `npm run brief:next -- --file metrics.json` | Write `docs/NEXT_EPISODE_BRIEF.md` from diagnostics |
+| `npm run verify:growth-v2` | Growth + episode-ops tests + sample diagnose + brief |
 
 ### Growth System v2 — first-time setup
 
@@ -43,10 +42,13 @@ cp -n .env.example .env   # set ORBIT_TOKEN_ENCRYPTION_KEY if empty
 npx prisma migrate deploy
 npx prisma generate
 npm run verify:growth-v2
-npm run review:script -- --file ../00_Brand/Channel-Setup/templates/SCRIPT_REVIEW_SCORECARD.md
-# (scorecard alone will REJECT — pass a real script.md)
+npm run gate:episode -- --project ../02_Video-Projects/_template_NNN_Episode-Slug
+# (template draft should BLOCK until audit signed + strong script)
+npm run brief:next -- --file content/samples/json/youtube_growth_metrics_sample.json
 npm run dev               # open /analytics to import Studio CSV
 ```
+
+New episodes: copy `02_Video-Projects/_template_NNN_Episode-Slug/`.
 
 ## Autopublish notes
 

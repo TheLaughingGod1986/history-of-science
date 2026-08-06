@@ -12,6 +12,7 @@ Follow these standing rules for this channel:
 
 1. **Pre-build vidIQ audit (blocking)** before script lock / VO / Gemini Veo gen → `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
 2. **Script reviewer ≥ 90** before VO/picture → `cd 07_Content-Ops && npm run review:script -- --file <script.md>`
+2b. **Episode gate PASS** → `npm run gate:episode -- --project ../02_Video-Projects/<slug>`
 3. **Longs:** 8–12 min trust window · cold open 5s/15s/30s · Question→Danger→Story→explain-in-story · Orbit experiences science · 4–6 acts · `[VISUAL MUST]` + `[ORBIT ACTS]` + `[TEACH]`
 4. **Titles:** one promise · prefer ≤~60 chars · no series suffix · thumb = one question
 5. **Shorts:** 3–5 · 22–30s · strongest-fact open · curiosity-gap end · Related→long
