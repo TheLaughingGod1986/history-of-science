@@ -27,6 +27,13 @@ VO (**ElevenLabs** Ben Orbit Narrator) → picture (**Gemini Veo API** via `orbi
 
 Do **not** use ElevenLabs Image & Video for CG.
 
+## Thumbs + social schedule (after YouTube lock)
+
+Once the **YouTube** long (and Shorts cluster) schedule is locked:
+
+1. **Thumbnails:** produce **3** Orbit-on-brand variants (one object · one emotion · one question). Score in VidIQ; use `vidiq_generate_thumbnail` only if house/Gemini thumbs are weak. Longs: start Studio **Thumbnail ABC** (or title+thumb ABC) after upload.
+2. **Social mirror:** schedule TikTok / Meta / Threads / other platforms from the **same YouTube air times** (TikTok Shorts ≈ YouTube T0 **+ 1 hour**). Never post social Shorts before the YouTube long is public. Source: `OPTIMAL_PUBLISH_SCHEDULE.json` · `PUBLISHING_AND_SHORTS_STRATEGY.md` · `SHORTS_FUNNEL_AND_CROSSPOST.md` · `RELEASE_WEEK_CHECKLIST.md`.
+
 ## Defaults (trust-building window)
 
 - Runtime **8–12 min** · title one promise (no series suffix) · thumb = one question
@@ -38,4 +45,4 @@ Do **not** use ElevenLabs Image & Video for CG.
 
 “Build next video” · “Next episode” · “Start V0xx” · “New long-form” · “Growth System v2 first”
 
-Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md` · `RETENTION_AND_GROWTH_LOCKED.md` · `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`
+Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md` · `RETENTION_AND_GROWTH_LOCKED.md` · `LONGFORM_STORY_AND_VO_PICTURE_GATE.md` · `docs/GEMINI_VEO_CG.md`
