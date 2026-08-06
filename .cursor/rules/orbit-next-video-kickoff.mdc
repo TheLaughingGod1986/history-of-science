@@ -1,0 +1,39 @@
+---
+description: Next Orbit video kickoff — Growth System v2 gate before VO/picture
+alwaysApply: true
+---
+
+# Orbit — next video kickoff (Growth System v2)
+
+When the user asks to **build / start / plan the next video**, **new episode**, **next long**, or similar — **do this first**. Do not jump to VO, Veo/Omni, Seedance, or picture gen.
+
+## Step 0 — gate (blocking)
+
+1. Read `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`
+2. Topic score (or confirm locked topic) via `templates/TOPIC_OPPORTUNITY_SCORE.md`
+3. Pre-build vidIQ audit → project `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` from `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
+4. Cold-open outline: curiosity **5s** · stakes **15s** · journey **30s**
+5. Chapter outline: **4–6** acts · Orbit **experiences** science · Hook→Question→Escalation→Discovery→Payoff→Bigger question
+6. Write/refine script with `[VISUAL MUST]` · `[ORBIT ACTS]` · `[TEACH]`
+7. **Script reviewer ≥ 90** before any VO or picture:
+   ```bash
+   cd 07_Content-Ops && npm run review:script -- --file <script.md>
+   ```
+   Below 90 = **REJECT** — rewrite. Do not generate audio/video.
+
+## Then produce
+
+VO (Ben Orbit Narrator) → picture → edit → `templates/PRODUCTION_CHECKLIST_V2.md` → YouTube package upload.
+
+## Defaults (trust-building window)
+
+- Runtime **8–12 min** · title one promise (no series suffix) · thumb = one question
+- **3–5** Shorts: strongest-fact open · curiosity-gap end · Related→long
+- No dead ends: end screen · cards · pin → another Orbit documentary
+- Do **not** redesign the brand
+
+## Kickoff phrases that trigger this
+
+“Build next video” · “Next episode” · “Start V0xx” · “New long-form” · “Growth System v2 first”
+
+Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md` · `RETENTION_AND_GROWTH_LOCKED.md` · `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`
