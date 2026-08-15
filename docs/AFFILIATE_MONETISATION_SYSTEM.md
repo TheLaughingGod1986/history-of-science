@@ -28,6 +28,8 @@ src/lib/affiliate/
   conversions.ts        Preview + commit import (dedupe by content hash)
   health.ts             Throttled URL health-check abstraction
   analytics.ts          Dashboard, opportunities, video panel
+  goals.ts              Goals ladder math (reporting only)
+  goals-service.ts      Clock from first approved placement / click
   gear.ts               Phase 5 gear catalogue JSON shape
   social-copy-rules.ts  Hard constraints for affiliate-aware social copy
   social-copy.ts        Sanitize + one soft mention on platform captions
@@ -318,10 +320,30 @@ Social UTM map: see **Live Orbit social channels** above (`threads` / `instagram
 
 ## Reporting
 
-- `/affiliate` — summary + warnings + clicks/revenue by source (youtube, threads, instagram, facebook, …)
+- `/affiliate` — summary + **internal goals panel** + warnings + clicks/revenue by source (youtube, threads, instagram, facebook, …)
 - `/affiliate/opportunities` — opportunity score, views, links, RPM  
 - Homepage **Monetisation** card — month revenue, clicks, affiliate RPM, missing links  
 - Metrics: clicks, CTR, conversions, EPC, revenue / 1k views, affiliate RPM (alongside YouTube RPM when ads data exists). `totalContentRpm()` ready for AdSense + Affiliate + Sponsorship.
+
+### Goals ladder (internal, reporting only)
+
+Shown on `/affiliate` — not a public page. The goals engine **never** auto-inserts placements to catch up; the editorial trust gate still decides links.
+
+**Clock start:** earliest of (1) first `APPROVED`/`ACTIVE` `AffiliatePlacement.updatedAt`, or (2) first `AffiliateClick.timestamp`. Do not hard-code a calendar start date.
+
+**Months:** anniversary months from that clock (Month 1 = first 30/31-day window from the start day).
+
+| Period | Target | Floor |
+|--------|--------|-------|
+| Month 1 | £20 | £10 |
+| Month N (N ≥ 2) | **2 × previous month’s actual commission** (not the previous target) | — |
+
+Panel shows: current month number + date range · revenue so far vs target · clicks · working vs broken links · on track / behind (vs linear pace to target; Month 1 also treats floor hit as on track) · last month actual once Month 2+.
+
+```ts
+import { buildAffiliateGoalsSnapshot, computeMonthTargetGbp } from "@/lib/affiliate/goals";
+import { getAffiliateGoalsPanel } from "@/lib/affiliate/goals-service";
+```
 
 ## CSV imports
 

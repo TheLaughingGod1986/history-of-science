@@ -26,3 +26,5 @@ export * from "./social-snippet-templates";
 export * from "./social-snippet-service";
 export * from "./facebook-page-rules";
 export * from "./editorial-trust-gate";
+export * from "./goals";
+export * from "./goals-service";
