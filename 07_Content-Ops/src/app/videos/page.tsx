@@ -5,7 +5,12 @@ import { PUBLISHING_SCHEDULE } from "@/config/publishing-schedule";
 import { AddThursdayFilmButton } from "@/components/AddThursdayFilmButton";
 import { CopyFilmCaptionButton } from "@/components/CopyFilmCaptionButton";
 import { CopyYoutubeIdButton } from "@/components/CopyYoutubeIdButton";
-import { auditorFilmStatusLine, namedInFilmBookLine, resolveYoutubeId } from "@/app/videos/film-labels";
+import {
+  auditorFilmStatusLine,
+  excludeFromNextThursdayHero,
+  namedInFilmBookLine,
+  resolveYoutubeId,
+} from "@/app/videos/film-labels";
 
 export const dynamic = "force-dynamic";
 
@@ -13,12 +18,14 @@ type FilmRow = {
   id: string;
   title: string;
   workingTitle: string | null;
+  slug: string;
   status: string;
   summary: string | null;
   youtubeUrl: string | null;
   youtubeVideoId: string | null;
   thumbnailPath: string | null;
   finalVideoPath: string | null;
+  projectFolder: string | null;
   publicationDate: Date | null;
   _count: { clips: number };
 };
@@ -27,11 +34,13 @@ function formatThursdayDate(date: Date): string {
   return formatInTimeZone(date, PUBLISHING_SCHEDULE.timezone, "EEE d MMM HH:mm");
 }
 
-/** Prefer next upcoming Thursday; else the latest dated film. */
+/** Prefer next upcoming Thursday; else the latest dated film. Skip private cuts (e.g. last-star v09). */
 function pickThisThursdayFilm(videos: FilmRow[]): FilmRow | null {
   if (!videos.length) return null;
+  const eligible = videos.filter((v) => !excludeFromNextThursdayHero(v));
+  if (!eligible.length) return null;
   const now = Date.now();
-  const dated = videos.filter((v) => v.publicationDate);
+  const dated = eligible.filter((v) => v.publicationDate);
   const upcoming = dated
     .filter((v) => v.publicationDate!.getTime() >= now)
     .sort((a, b) => a.publicationDate!.getTime() - b.publicationDate!.getTime());
@@ -39,7 +48,7 @@ function pickThisThursdayFilm(videos: FilmRow[]): FilmRow | null {
   const latest = [...dated].sort(
     (a, b) => b.publicationDate!.getTime() - a.publicationDate!.getTime(),
   );
-  return latest[0] ?? videos[0];
+  return latest[0] ?? eligible[0];
 }
 
 function filmTitle(video: FilmRow): string {
