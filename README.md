@@ -25,7 +25,8 @@ asking the biggest questions in the universe.*
 **Affiliate monetisation (Content Ops):** `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md` · `/affiliate`  
 **New episode scaffold:** `02_Video-Projects/_template_NNN_Episode-Slug/`  
 **Cursor hooks:** `.cursor/hooks.json` (session checklist + pre-gen reminder)  
-**Shorts mirrors:** TikTok `Channel-Setup/TikTok/AUTO_POST.md` · Meta (IG+FB) `Channel-Setup/Meta/AUTO_POST.md`
+**Shorts mirrors:** TikTok `Channel-Setup/TikTok/AUTO_POST.md` · Meta (IG+FB) `Channel-Setup/Meta/AUTO_POST.md`  
+**Playback lag (smooth audio, glitchy picture):** `docs/PLAYBACK_LAG_FIX.md` — remaster CFR then Studio **Replace** (keeps views)
 
 This repository holds every asset for the channel — the character bible, the
 per-video projects, reusable animation and audio libraries, and final exports.
@@ -252,7 +253,7 @@ For each selected clip:
 6. Keep Orbit inside safe margins.
 7. Avoid aggressive sharpening or filters.
 8. **Do not add music or narration** at this stage — these are reusable clips.
-9. Preserve the original frame rate where possible.
+9. Export **constant 30 fps** (`libx264`). Do not preserve AI-clip VFR and do not use VideoToolbox for delivery files — that is the social-playback stutter (smooth audio, glitchy picture). See `docs/PLAYBACK_LAG_FIX.md`.
 10. Export a high-quality reusable master.
 
 ### Export format
@@ -262,7 +263,7 @@ For each selected clip:
 | Container | MP4 |
 | Codec | H.264 |
 | Resolution | 1920 × 1080 minimum |
-| Frame rate | Original, or 30 fps |
+| Frame rate | **30 fps constant (CFR)** — never “original” / VFR |
 | Bitrate | High |
 | Watermark | None |
 | Audio | None, unless useful source audio is deliberately retained |

@@ -477,13 +477,16 @@ def ffmpeg_overlay_filter(
         label = nxt
         idx += 1
 
+    # fps=30 on the *final* label so PNG loops and the picture share a CFR clock.
+    # Skipping this (and encoding with VideoToolbox) is what made social playback
+    # stutter while audio stayed smooth.
     if has_cta:
         parts.append(
             f"[{label}][{idx}:v]overlay=0:0:enable='gte(t,{cta_start:.3f})'"
-            f":format=auto,format=yuv420p[v]"
+            f":format=auto,fps=30,format=yuv420p,setsar=1[v]"
         )
     else:
-        parts.append(f"[{label}]format=yuv420p[v]")
+        parts.append(f"[{label}]fps=30,format=yuv420p,setsar=1[v]")
     return ";".join(parts)
 
 
@@ -498,5 +501,5 @@ def vertical_base_filter(*, framed: bool = False) -> str:
         "[bgv][fgv]overlay=0:0:format=auto"
     )
     if framed:
-        return core + ",drawbox=x=28:y=(h-574)/2:w=1024:h=574:color=white@0.15:t=2[base]"
-    return core + "[base]"
+        return core + ",drawbox=x=28:y=(h-574)/2:w=1024:h=574:color=white@0.15:t=2,fps=30[base]"
+    return core + ",fps=30[base]"

@@ -37,6 +37,10 @@ from onscreen_captions import (  # noqa: E402
     vertical_base_filter,
 )
 
+_TOOLS = Path(__file__).resolve().parents[3] / "04_Audio" / "tools"
+sys.path.insert(0, str(_TOOLS))
+from orbit_cfr_delivery import shorts_encode_args  # noqa: E402
+
 SYNC_DIR = ROOT / "10_Shorts/07_Caption-Sync"
 
 SHORTS = [
@@ -133,24 +137,9 @@ def render(item: dict, temp: Path, master: Path) -> Path:
         "[v]",
         "-map",
         "0:a:0",
-        "-c:v",
-        "h264_videotoolbox",
-        "-b:v",
-        "12M",
-        "-maxrate",
-        "16M",
-        "-r",
-        "30",
-        "-c:a",
-        "aac",
-        "-b:a",
-        "256k",
-        "-ar",
-        "48000",
+        *shorts_encode_args(),
         "-t",
         str(item["duration"]),
-        "-movflags",
-        "+faststart",
         str(output),
     ]
     run(cmd)

@@ -45,6 +45,8 @@ export function youtubeCapabilities(connected: boolean, scopes: string[] = []): 
       "Native schedule uses privacyStatus=private + publishAt (upload now, go live later)",
       "madeForKids must be set explicitly",
       "YouTube Studio CDP is fallback only — Data API is the default upload path",
+      "VFR / VideoToolbox files are rejected at validatePost — remaster to libx264 CFR first",
+      "Lag fixes must Studio-Replace the existing video id (never videos.insert) so views stay put",
     ],
   };
 }

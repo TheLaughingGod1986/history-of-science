@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
 
@@ -13,6 +14,10 @@ ROOT = Path("/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Me
 MASTER = ROOT / "09_Final-Export/aliens_BOLD_EXPLAINER_v17_FINAL_UPLOAD_READY_MASTER.mp4"
 OUT = ROOT / "10_Shorts/06_Final-Exports"
 FONT = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+
+_TOOLS = Path(__file__).resolve().parents[3] / "04_Audio" / "tools"
+sys.path.insert(0, str(_TOOLS))
+from orbit_cfr_delivery import shorts_encode_args  # noqa: E402
 
 SHORTS = [
     {
@@ -197,24 +202,9 @@ def render(item: dict, temp: Path) -> Path:
             "[v]",
             "-map",
             "0:a:0",
-            "-c:v",
-            "h264_videotoolbox",
-            "-b:v",
-            "12M",
-            "-maxrate",
-            "16M",
-            "-r",
-            "30",
-            "-c:a",
-            "aac",
-            "-b:a",
-            "256k",
-            "-ar",
-            "48000",
+            *shorts_encode_args(),
             "-t",
             duration,
-            "-movflags",
-            "+faststart",
             str(output),
         ]
     )

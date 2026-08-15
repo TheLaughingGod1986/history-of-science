@@ -54,3 +54,6 @@ node_modules/
 00_Brand/Channel-Setup/Threads/audit/
 00_Brand/Channel-Setup/Threads/auto_*.log
 00_Brand/Channel-Setup/Threads/AUTO_LAST_RUN.json
+
+00_Brand/Channel-Setup/audits/playback_lag_in_place_replace/
+00_Brand/Channel-Setup/audits/playback_lag_remaster_report.json

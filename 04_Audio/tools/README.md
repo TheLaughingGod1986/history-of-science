@@ -65,6 +65,20 @@ python3 vidiq_title_score_sheet.py \
 Opens/creates `11_Upload-Package/Titles/VIDIQ_TITLE_SCORE_SHEET.md`. Fill scores
 in the vidIQ web app / extension (automation profile must be logged in).
 
+### 5. Fix playback lag (VFR / VideoToolbox)
+
+Smooth audio + stuttery picture on YouTube/Shorts/social is almost always a
+variable-frame-rate delivery file (Shorts used `h264_videotoolbox`). Remaster
+in place, then **Studio Replace** so view counts stay on the original video id.
+
+```bash
+python3 04_Audio/tools/test_orbit_cfr_delivery.py
+python3 04_Audio/tools/fix_published_playback_lag.py --apply
+python3 00_Brand/Channel-Setup/audits/_replace_media_in_place.py --dry-run
+```
+
+See `docs/PLAYBACK_LAG_FIX.md`.
+
 ## Pipeline slot
 
 | Step | When | Tool |
