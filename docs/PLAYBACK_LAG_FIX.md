@@ -35,6 +35,8 @@ python3 00_Brand/Channel-Setup/audits/_replace_media_in_place.py --dry-run
 
 # 3. Push the new bytes onto the ORIGINAL videos
 python3 00_Brand/Channel-Setup/audits/_replace_media_in_place.py
+# alias used in the mobile runbook:
+# python3 00_Brand/Channel-Setup/audits/_replace_file_on_yt.py
 ```
 
 YouTube Studio **Replace** keeps: video id, URL, views, watch time, likes,
