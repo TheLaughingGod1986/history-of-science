@@ -245,19 +245,40 @@ Migration: `20260815140000_affiliate_monetisation`
 3. Set env IDs (never commit real values):
 
 ```bash
-AMAZON_ASSOCIATE_TAG=your-uk-tag
+AMAZON_ASSOCIATE_TAG=orbitgo-21
 BRILLIANT_AFFILIATE_ID=your-brilliant-id
 AFFILIATE_REDIRECT_BASE_URL=https://orbitwithben.com/go   # optional; defaults to ${APP_BASE_URL}/go
 ```
 
-Seed URLs are `example.invalid` placeholders. Replace product destination/affiliate URLs in `/affiliate/products` after accounts are approved.
+**Never commit** `AMAZON_ASSOCIATE_TAG` (Ben’s live tag is `orbitgo-21` — set it only in the operator’s env / host secrets). `/go/{slug}` stamps `tag=` at redirect time from that env var.
+
+Weekday / daily routines read clicks and conversions from this system (`AffiliateClick` / `AffiliateConversion` / `/affiliate` goals panel).
+
+### Live Amazon UK destinations (additive)
+
+Confirmed product pages live in `src/lib/affiliate/live-product-urls.ts`. Apply without resetting the DB:
+
+```bash
+npm run affiliate:apply-urls
+# or: npm run affiliate:apply-urls -- --dry-run
+```
+
+| Slug | Destination |
+|------|-------------|
+| `beginner-astronomy-book` | Turn Left at Orion (ASIN `1108457568`) |
+| `beginner-telescope` | Celestron Cometron FirstScope 76 (ASIN `B00DV6SBRO`) |
+| `space-lego` | Inactive stub — LEGO programme stays **INACTIVE**; not for social/descriptions |
+
+Unconfirmed Amazon products (`astronomy-binoculars`, `mars-book`) keep `example.invalid` TODOs until an ASIN is verified — do not invent ASINs. Affiliate URL may be empty; redirect builds from destination + env tag.
+
+Seed URLs for confirmed Amazon products are the live amazon.co.uk pages above. For an existing DB, run `affiliate:apply-urls` (do **not** `db:reset`).
 
 | Programme | Slug | Notes |
 |-----------|------|-------|
 | Amazon Associates UK | `amazon-associates-uk` | Tag from `AMAZON_ASSOCIATE_TAG` at redirect time |
 | Brilliant | `brilliant` | `BRILLIANT_AFFILIATE_ID` |
 | Astronomy Retailer | `astronomy-retailer` | Generic specialist slot (FLO / HPS later) |
-| LEGO | `lego` | Seeded **INACTIVE** until access is ready |
+| LEGO | `lego` | Seeded **INACTIVE** until access is ready — never on social/descriptions |
 
 ## Adding products
 
@@ -369,7 +390,7 @@ Sample: `content/samples/csv/affiliate_amazon_sample.csv`
 cd 07_Content-Ops
 npx prisma migrate deploy
 npx prisma generate
-npm run db:seed          # optional full reseed including affiliate catalogue
+npm run affiliate:apply-urls   # additive live amazon.co.uk destinations (no DB reset)
 npm test                 # includes tests/affiliate.test.ts
 npm run dev
 ```
@@ -378,9 +399,9 @@ Open http://localhost:3000/affiliate
 
 ## Manual account setup still required
 
-- Amazon Associates UK approval + real tag in `AMAZON_ASSOCIATE_TAG`
+- Amazon Associates UK approval + `AMAZON_ASSOCIATE_TAG=orbitgo-21` in operator env (never commit)
 - Brilliant affiliate approval + `BRILLIANT_AFFILIATE_ID`
 - Specialist retailer programme contracts / tracking links
-- LEGO Affiliate access (programme seeded inactive)
-- Replace all `example.invalid` product URLs
+- LEGO Affiliate access (programme seeded inactive; `space-lego` product inactive)
+- Confirm remaining Amazon ASINs (`astronomy-binoculars`, `mars-book`) then `npm run affiliate:apply-urls`
 - Production `AFFILIATE_REDIRECT_BASE_URL=https://orbitwithben.com/go` + DNS/hosting for redirects (or proxy to Content Ops)
