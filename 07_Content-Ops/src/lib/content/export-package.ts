@@ -64,10 +64,23 @@ const CHECKLISTS: Record<PlatformId, string[]> = {
     "Publish or schedule",
     "Record published URL",
   ],
+  instagram_feed: [
+    "Paste feed caption (YouTube or /go/ only)",
+    "No merchant stickers",
+    "Publish or schedule",
+    "Record published URL",
+  ],
   facebook_reels: [
     "Upload clean vertical MP4",
     "Paste caption + discussion question",
     "Add 2–4 hashtags",
+    "Publish or schedule",
+    "Record published URL",
+  ],
+  facebook_page: [
+    "Paste documentary Page feed post",
+    "One YouTube or /go/ link at the end only",
+    "No shop now / Amazon stickers",
     "Publish or schedule",
     "Record published URL",
   ],

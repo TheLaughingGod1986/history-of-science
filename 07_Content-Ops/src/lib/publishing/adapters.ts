@@ -160,8 +160,13 @@ export function getPublishingAdapter(platform: string): PublishingAdapter {
     case "meta":
     case "instagram_reels":
       return new InstagramPublishingAdapter();
+    case "instagram_feed":
+      // Feed captions use the same Meta connection; publish path is manual until Graph feed is wired.
+      return new ManualPublishingAdapter("instagram_feed", "Instagram Feed");
     case "facebook_reels":
       return new FacebookPublishingAdapter();
+    case "facebook_page":
+      return new ManualPublishingAdapter("facebook_page", "Facebook Page");
     case "tiktok":
       return new TikTokPublishingAdapter();
     case "x":

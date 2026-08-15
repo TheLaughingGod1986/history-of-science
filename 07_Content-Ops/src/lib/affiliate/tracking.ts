@@ -3,6 +3,10 @@ import {
   applyProgrammeAffiliateId,
   buildTrackedAffiliateUrl,
 } from "./urls";
+import {
+  normalizeAffiliateClickSource,
+  type AffiliateClickSource,
+} from "./social-channels";
 
 export type RecordClickInput = {
   productSlug: string;
@@ -19,12 +23,14 @@ export type RecordClickInput = {
 
 /**
  * Resolve product, record click, return tracked destination URL.
+ * `source` is normalised to youtube | threads | instagram | facebook | …
  */
 export async function recordAffiliateClickAndResolve(input: RecordClickInput): Promise<{
   destinationUrl: string;
   clickId: string;
   productId: string;
   productName: string;
+  source: AffiliateClickSource;
 }> {
   const product = await prisma.affiliateProduct.findUnique({
     where: { slug: input.productSlug },
@@ -36,6 +42,8 @@ export async function recordAffiliateClickAndResolve(input: RecordClickInput): P
   if (product.affiliateProgram.status !== "ACTIVE") {
     throw new Error("Affiliate programme is not active");
   }
+
+  const source = normalizeAffiliateClickSource(input.source);
 
   let videoId = input.videoId ?? null;
   if (!videoId && input.videoSlug) {
@@ -63,7 +71,7 @@ export async function recordAffiliateClickAndResolve(input: RecordClickInput): P
     affiliateUrl: withProgrammeId,
     videoSlug: campaign,
     productSlug: product.slug,
-    utmSource: input.source ?? "youtube",
+    utmSource: source,
     utmMedium: input.medium ?? "affiliate",
     utmCampaign: campaign ?? undefined,
     utmContent: input.content ?? product.slug,
@@ -74,7 +82,7 @@ export async function recordAffiliateClickAndResolve(input: RecordClickInput): P
       affiliateProductId: product.id,
       videoId,
       placementId: input.placementId ?? null,
-      source: input.source ?? "youtube",
+      source,
       medium: input.medium ?? "affiliate",
       campaign,
       content: input.content ?? product.slug,
@@ -110,5 +118,9 @@ export async function recordAffiliateClickAndResolve(input: RecordClickInput): P
     clickId: click.id,
     productId: product.id,
     productName: product.name,
+    source,
   };
 }
+
+export { normalizeAffiliateClickSource };
+export type { AffiliateClickSource };

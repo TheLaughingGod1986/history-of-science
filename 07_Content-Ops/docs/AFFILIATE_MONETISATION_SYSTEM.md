@@ -30,6 +30,9 @@ src/lib/affiliate/
   social-copy-rules.ts  Hard constraints for affiliate-aware social copy
   social-copy.ts        Sanitize + one soft mention on platform captions
   social-context.ts     Resolve placement context for Shorts generation
+  social-channels.ts    Live channel → AffiliateClick.source + UTM map
+  social-snippets.ts    Deterministic Threads / IG / Facebook Page snippets
+  social-snippet-service.ts  DB-backed snippet pack + draft enqueue
   editorial-trust-gate.ts  Video Auditor trust gate (approve + description)
 ```
 
@@ -99,9 +102,46 @@ Affiliate must not turn Orbit into a spam channel. These rules apply wherever Co
 
 | Platform | Rule |
 |----------|------|
-| YouTube Shorts / TikTok | Mention only in the last 1–2s **or** caption tail; no spoken list of links; no URL on screen; no TikTok Shop |
-| Instagram Reels | Keep the mention out of the reel; one caption line (or a reply if asked); sticker/bio → YouTube or `/go/`, never a merchant |
+| YouTube Shorts / TikTok | Mention only in the last 1–2s **or** caption tail; no spoken list of links; no URL on screen; no TikTok Shop. **Short description itself: zero affiliate links** (Auditor gate). |
+| Instagram Reels | Keep the mention out of the reel; one caption line (or a reply if asked); sticker/bio → YouTube or `/go/`, never a merchant. Caption may say “I left the one thing under the film.” |
+| Instagram Feed | Distinct from Reels. One soft caption mention; never merchant stickers. |
+| Facebook Reels | Same soft-mention rules as other Reels — not the Page feed. |
+| Facebook Page | Documentary **feed/page** post (distinct from `facebook_reels`). One optional `/go/` or YouTube link at the end. No Amazon stickers, no “shop now,” no boost/shop energy. |
 | X / Threads | The post is the thought; one extra line or a reply — not a product thread; links only to `youtube.com` or `/go/` |
+
+### Live Orbit social channels (Threads · Instagram · Facebook Page)
+
+Affiliate-aware captions for the live channels Ben runs are generated inside Content Ops — **not** a separate social app.
+
+| Content Ops platform id | `utm_source` / `AffiliateClick.source` | Notes |
+|-------------------------|----------------------------------------|--------|
+| `threads` | `threads` | Soft line + YouTube or `/go/` |
+| `instagram_reels` | `instagram` | Caption only; Reels + feed share reporting source |
+| `instagram_feed` | `instagram` | Distinct caption from Reels |
+| `facebook_page` | `facebook` | Distinct from `facebook_reels` |
+| `facebook_reels` | `facebook` | Reels path; same click source bucket |
+| YouTube description `/go/` | `youtube` | Default when utm_source omitted |
+
+**UTM on social → `/go/` or YouTube links**
+
+| Param | Value |
+|-------|--------|
+| `utm_source` | `threads` \| `instagram` \| `facebook` (or `youtube` from description) |
+| `utm_medium` | `affiliate` when a product is soft-mentioned; `social` when the post only points at the film |
+| `utm_campaign` | `{video-slug}` |
+| `utm_content` | `{affiliate-product-slug}` when a product is mentioned |
+
+Tracked URLs on social may **only** be the YouTube film URL or an Orbit `/go/{slug}` redirect — never `amazon.co.uk`, Brilliant checkout, or other merchant URLs.
+
+**Approval:** snippets render with `approvedForPublish: false`. Editors copy from the video Affiliate Monetisation card or `GET /api/affiliate/social-snippets?videoId=…`, or enqueue PlatformPost **drafts** (`POST … action: enqueue-drafts`) after an approved description placement. Same publish/approval flow as other social posts — never auto-post affiliate mentions.
+
+```ts
+import { generateAffiliateSocialSnippets } from "@/lib/affiliate/social-snippets";
+import { buildSocialGoUrl, buildSocialYouTubeUrl } from "@/lib/affiliate/urls";
+import { socialPlatformToClickSource } from "@/lib/affiliate/social-channels";
+```
+
+Dashboard `/affiliate` shows **clicks & revenue by source** including `youtube`, `threads`, `instagram`, `facebook`.
 
 ### Skip soft mentions when
 
@@ -195,11 +235,13 @@ import { mergeDescriptionWithAffiliateLinks } from "@/lib/publishing/youtube-pac
 3. Apply programme tag from env  
 4. 302 to affiliate URL with UTM preserved  
 
-Recommended UTM: `utm_source=youtube` · `utm_medium=affiliate` · `utm_campaign={video-slug}` · `utm_content={product-slug}`
+Recommended UTM (YouTube description): `utm_source=youtube` · `utm_medium=affiliate` · `utm_campaign={video-slug}` · `utm_content={product-slug}`
+
+Social UTM map: see **Live Orbit social channels** above (`threads` / `instagram` / `facebook`).
 
 ## Reporting
 
-- `/affiliate` — summary + warnings  
+- `/affiliate` — summary + warnings + clicks/revenue by source (youtube, threads, instagram, facebook, …)
 - `/affiliate/opportunities` — opportunity score, views, links, RPM  
 - Homepage **Monetisation** card — month revenue, clicks, affiliate RPM, missing links  
 - Metrics: clicks, CTR, conversions, EPC, revenue / 1k views, affiliate RPM (alongside YouTube RPM when ads data exists). `totalContentRpm()` ready for AdSense + Affiliate + Sponsorship.

@@ -116,6 +116,38 @@ export default async function AffiliateDashboardPage() {
         />
       </section>
 
+      <section className="card-panel space-y-4 p-5">
+        <div>
+          <h2 className="font-[family-name:var(--font-orbit-display)] text-xl text-[#F5E8D2]">
+            Clicks & revenue by source
+          </h2>
+          <p className="mt-1 text-sm text-[#F5E8D2]/55">
+            youtube · threads · instagram · facebook (from /go/ utm_source). Revenue attributed by
+            click share per product when CSV conversions have no click id.
+          </p>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[420px] text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/10 text-xs uppercase tracking-[0.14em] text-[#5A6E82]">
+                <th className="py-2 pr-4 font-normal">Source</th>
+                <th className="py-2 pr-4 font-normal">Clicks</th>
+                <th className="py-2 font-normal">Est. revenue</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.bySource.map((row) => (
+                <tr key={row.source} className="border-b border-white/5 text-[#F5E8D2]/85">
+                  <td className="py-2.5 pr-4 capitalize">{row.source}</td>
+                  <td className="py-2.5 pr-4">{row.clicks}</td>
+                  <td className="py-2.5">£{row.revenue.toFixed(2)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       {warnings.length ? (
         <section className="card-panel space-y-3 p-5">
           <h2 className="font-[family-name:var(--font-orbit-display)] text-xl text-[#F5E8D2]">

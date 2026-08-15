@@ -9,6 +9,18 @@ import {
 import { scoreAffiliateOpportunity } from "./opportunity";
 import { loadActiveProductsForMatching } from "./products";
 import { videoToMatchInput } from "./placements";
+import {
+  AFFILIATE_CLICK_SOURCES,
+  normalizeAffiliateClickSource,
+} from "./social-channels";
+
+/** Primary reporting buckets Ben asked for on the dashboard. */
+const DASHBOARD_SOURCE_BUCKETS = [
+  "youtube",
+  "threads",
+  "instagram",
+  "facebook",
+] as const;
 
 export async function getAffiliateDashboardSummary() {
   const now = new Date();
@@ -27,6 +39,7 @@ export async function getAffiliateDashboardSummary() {
     topVideoPlacement,
     brokenProducts,
     inactiveInDescriptions,
+    clicksGroupedBySource,
   ] = await Promise.all([
     prisma.affiliateProgram.count({ where: { status: "ACTIVE" } }),
     prisma.affiliateProduct.count({ where: { active: true } }),
@@ -66,6 +79,10 @@ export async function getAffiliateDashboardSummary() {
         affiliateProduct: { active: false },
       },
     }),
+    prisma.affiliateClick.groupBy({
+      by: ["source"],
+      _count: true,
+    }),
   ]);
 
   const revenueTotal = conversionsAgg._sum.commissionAmount ?? 0;
@@ -82,6 +99,10 @@ export async function getAffiliateDashboardSummary() {
 
   const highClickZeroConv = await findHighClickZeroConversionProducts();
   const videosMissingLinks = await countHighViewVideosMissingLinks();
+  const bySource = await buildClicksAndRevenueBySource(
+    clicksGroupedBySource,
+    revenueTotal,
+  );
 
   return {
     activePrograms,
@@ -94,6 +115,7 @@ export async function getAffiliateDashboardSummary() {
     revenueMonth: roundMoney(revenueMonth),
     highestPerformingProduct: highestProductName,
     highestPerformingVideo: topVideoPlacement[0]?.video.title ?? null,
+    bySource,
     warnings: {
       brokenUrls: brokenProducts,
       inactiveProductInDescriptions: inactiveInDescriptions,
@@ -102,6 +124,90 @@ export async function getAffiliateDashboardSummary() {
       programmesNeedingReports: await countProgrammesNeedingReports(),
     },
   };
+}
+
+/**
+ * Clicks come from AffiliateClick.source (youtube / threads / instagram / facebook).
+ * Revenue is attributed by click share per product (CSV conversions have no click id).
+ */
+async function buildClicksAndRevenueBySource(
+  clicksGroupedBySource: { source: string | null; _count: number }[],
+  _revenueTotal: number,
+): Promise<
+  { source: string; clicks: number; revenue: number }[]
+> {
+  const clickTotals = new Map<string, number>();
+  for (const row of clicksGroupedBySource) {
+    const src = normalizeAffiliateClickSource(row.source);
+    clickTotals.set(src, (clickTotals.get(src) ?? 0) + row._count);
+  }
+
+  // Attribute each product's conversion commission by that product's click-source share
+  const conversions = await prisma.affiliateConversion.findMany({
+    where: { affiliateProductId: { not: null } },
+    select: { affiliateProductId: true, commissionAmount: true },
+  });
+  const revenueBySource = new Map<string, number>();
+  const productIds = [
+    ...new Set(
+      conversions
+        .map((c) => c.affiliateProductId)
+        .filter((id): id is string => Boolean(id)),
+    ),
+  ];
+  const productClicks =
+    productIds.length === 0
+      ? []
+      : await prisma.affiliateClick.groupBy({
+          by: ["affiliateProductId", "source"],
+          where: { affiliateProductId: { in: productIds } },
+          _count: true,
+        });
+
+  const clicksByProduct = new Map<string, Map<string, number>>();
+  for (const row of productClicks) {
+    const src = normalizeAffiliateClickSource(row.source);
+    if (!clicksByProduct.has(row.affiliateProductId)) {
+      clicksByProduct.set(row.affiliateProductId, new Map());
+    }
+    const m = clicksByProduct.get(row.affiliateProductId)!;
+    m.set(src, (m.get(src) ?? 0) + row._count);
+  }
+
+  for (const conv of conversions) {
+    if (!conv.affiliateProductId) continue;
+    const shares = clicksByProduct.get(conv.affiliateProductId);
+    const totalClicks = shares
+      ? [...shares.values()].reduce((a, b) => a + b, 0)
+      : 0;
+    if (!shares || totalClicks === 0) {
+      // Default unattributed conversion revenue to youtube (description links)
+      revenueBySource.set(
+        "youtube",
+        (revenueBySource.get("youtube") ?? 0) + conv.commissionAmount,
+      );
+      continue;
+    }
+    for (const [src, n] of shares) {
+      const portion = (n / totalClicks) * conv.commissionAmount;
+      revenueBySource.set(src, (revenueBySource.get(src) ?? 0) + portion);
+    }
+  }
+
+  const rows = AFFILIATE_CLICK_SOURCES.map((source) => ({
+    source,
+    clicks: clickTotals.get(source) ?? 0,
+    revenue: roundMoney(revenueBySource.get(source) ?? 0),
+  }));
+
+  // Ensure primary buckets always appear first even with zero traffic
+  const primary = DASHBOARD_SOURCE_BUCKETS.map(
+    (source) => rows.find((r) => r.source === source)!,
+  );
+  const rest = rows.filter(
+    (r) => !(DASHBOARD_SOURCE_BUCKETS as readonly string[]).includes(r.source),
+  );
+  return [...primary, ...rest];
 }
 
 async function findHighClickZeroConversionProducts(): Promise<number> {

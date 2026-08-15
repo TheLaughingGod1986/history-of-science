@@ -10,7 +10,9 @@ export const AFFILIATE_SOCIAL_PLATFORMS = [
   "youtube_shorts",
   "tiktok",
   "instagram_reels",
+  "instagram_feed",
   "facebook_reels",
+  "facebook_page",
   "x",
   "threads",
 ] as const satisfies readonly PlatformId[];
@@ -235,16 +237,15 @@ export function softMentionStyleForPlatform(platform: PlatformId): SoftMentionSt
   switch (platform) {
     case "youtube_shorts":
     case "tiktok":
-      // Mention only in caption tail (last 1–2s / caption) — never spoken link list / on-screen URL
       return "caption_tail";
     case "instagram_reels":
-      // Keep mention out of the reel; one caption line (or reply if asked)
+    case "instagram_feed":
       return "caption_tail";
     case "facebook_reels":
+    case "facebook_page":
       return "caption_tail";
     case "x":
     case "threads":
-      // Thought first; one extra line — not a product thread
       return "caption_tail";
     default:
       return "none";
@@ -284,8 +285,18 @@ export function buildSoftAffiliateMentionLine(args: {
 
   // Platform-specific soft tone — science first, tool as afterthought
   let line: string;
-  if (args.platform === "instagram_reels") {
-    line = `If you want the gear/book I mention for this film: ${destinationNote}.`;
+  if (args.platform === "instagram_reels" || args.platform === "instagram_feed") {
+    line = `I left the one thing under the film${args.youtubeUrl ? "" : args.goUrl ? `: ${args.goUrl}` : ""}.`;
+    if (args.youtubeUrl && isAllowedSocialTrackedUrl(args.youtubeUrl)) {
+      line = `I left the one thing under the film.`;
+    } else if (args.goUrl && isAllowedSocialTrackedUrl(args.goUrl)) {
+      line = `If you want to look at this yourself:\n${args.goUrl}`;
+    }
+  } else if (args.platform === "facebook_page") {
+    line =
+      args.goUrl && isAllowedSocialTrackedUrl(args.goUrl)
+        ? `If you want to look at this yourself:\n${args.goUrl}`
+        : `If you want to look at this yourself — details under the film.`;
   } else if (args.platform === "x" || args.platform === "threads") {
     line = `(For this film’s tools — ${destinationNote}.)`;
   } else if (args.platform === "tiktok" || args.platform === "youtube_shorts") {

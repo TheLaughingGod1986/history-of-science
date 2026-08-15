@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { recordAffiliateClickAndResolve } from "@/lib/affiliate/tracking";
+import { normalizeAffiliateClickSource } from "@/lib/affiliate/social-channels";
 
 export const dynamic = "force-dynamic";
 
 /**
- * Tracked affiliate redirect: /go/{slug}?video=…&utm_*…
- * Records click then 302 to the programme affiliate URL.
+ * Tracked affiliate redirect: /go/{slug}?utm_source=threads|instagram|facebook|youtube&…
+ * Records click with normalised source, then 302 to the programme affiliate URL.
  */
 export async function GET(
   request: NextRequest,
@@ -20,7 +21,7 @@ export async function GET(
       videoId: sp.get("video"),
       videoSlug: sp.get("v") || sp.get("utm_campaign"),
       placementId: sp.get("placement"),
-      source: sp.get("utm_source") || "youtube",
+      source: normalizeAffiliateClickSource(sp.get("utm_source") || "youtube"),
       medium: sp.get("utm_medium") || "affiliate",
       campaign: sp.get("utm_campaign"),
       content: sp.get("utm_content") || slug,

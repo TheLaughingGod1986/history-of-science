@@ -30,6 +30,9 @@ src/lib/affiliate/
   social-copy-rules.ts  Hard constraints for affiliate-aware social copy
   social-copy.ts        Sanitize + one soft mention on platform captions
   social-context.ts     Resolve placement context for Shorts generation
+  social-channels.ts    Live channel → AffiliateClick.source + UTM map
+  social-snippets.ts    Deterministic Threads / IG / Facebook Page snippets
+  social-snippet-service.ts  DB-backed snippet pack + draft enqueue
   editorial-trust-gate.ts  Video Auditor trust gate (approve + description)
 ```
 

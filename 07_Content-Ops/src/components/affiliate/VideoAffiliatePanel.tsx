@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 type PlacementRow = {
@@ -18,6 +18,18 @@ type PlacementRow = {
   };
 };
 
+type SocialSnippet = {
+  platform: string;
+  label: string;
+  caption: string;
+  trackedUrl: string | null;
+  clickSource: string;
+  includeAffiliateMention: boolean;
+  skipReason?: string;
+  approvedForPublish: false;
+  notes: string[];
+};
+
 export function VideoAffiliatePanel({
   videoId,
   placements: initial,
@@ -31,6 +43,31 @@ export function VideoAffiliatePanel({
   const [placements, setPlacements] = useState(initial);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
+  const [snippets, setSnippets] = useState<SocialSnippet[]>([]);
+  const [snippetsMeta, setSnippetsMeta] = useState<{
+    placementApproved: boolean;
+    videoSlug: string;
+  } | null>(null);
+
+  const loadSnippets = useCallback(async () => {
+    try {
+      const res = await fetch(`/api/affiliate/social-snippets?videoId=${videoId}`);
+      const data = await res.json();
+      if (res.ok) {
+        setSnippets(data.snippets || []);
+        setSnippetsMeta({
+          placementApproved: Boolean(data.placementApproved),
+          videoSlug: data.videoSlug,
+        });
+      }
+    } catch {
+      /* non-blocking */
+    }
+  }, [videoId]);
+
+  useEffect(() => {
+    void loadSnippets();
+  }, [loadSnippets]);
 
   async function call(body: Record<string, unknown>) {
     setBusy(true);
@@ -55,6 +92,7 @@ export function VideoAffiliatePanel({
       }
       setMessage("Updated");
       router.refresh();
+      await loadSnippets();
     } catch (err) {
       setMessage(err instanceof Error ? err.message : "Request failed");
     } finally {
@@ -66,6 +104,15 @@ export function VideoAffiliatePanel({
     const res = await fetch(`/api/affiliate/placements?videoId=${videoId}`);
     const data = await res.json();
     if (res.ok) setPlacements(data.placements);
+  }
+
+  async function copyCaption(caption: string) {
+    try {
+      await navigator.clipboard.writeText(caption);
+      setMessage("Copied social caption");
+    } catch {
+      setMessage("Could not copy — select the text manually");
+    }
   }
 
   return (
@@ -140,6 +187,7 @@ export function VideoAffiliatePanel({
                         }
                         setMessage("Approved");
                         router.refresh();
+                        await loadSnippets();
                       } finally {
                         setBusy(false);
                       }
@@ -168,6 +216,56 @@ export function VideoAffiliatePanel({
           ))}
         </ul>
       )}
+
+      <section className="space-y-3 border-t border-white/10 pt-4">
+        <div>
+          <h3 className="font-[family-name:var(--font-orbit-display)] text-lg text-[#F5E8D2]">
+            Live social snippets
+          </h3>
+          <p className="mt-1 text-xs text-[#F5E8D2]/55">
+            Threads · Instagram Reels + feed · Facebook Page. Copy or send through the existing
+            publishing pipeline — never auto-posted. Links are YouTube or /go/ only.
+            {snippetsMeta && !snippetsMeta.placementApproved
+              ? " Approve a description placement before soft mentions appear."
+              : null}
+          </p>
+        </div>
+        {snippets.length === 0 ? (
+          <p className="text-sm text-[#F5E8D2]/45">
+            No snippets yet — approve a relevant placement first.
+          </p>
+        ) : (
+          <ul className="space-y-3">
+            {snippets.map((s) => (
+              <li
+                key={s.platform}
+                className="rounded-xl border border-white/5 bg-white/3 px-4 py-3 text-sm"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">
+                    {s.label} · utm_source={s.clickSource}
+                    {s.includeAffiliateMention ? "" : " · no soft mention"}
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => copyCaption(s.caption)}
+                    className="rounded-full border border-white/15 px-3 py-1 text-xs"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre className="mt-2 whitespace-pre-wrap font-sans text-[#F5E8D2]/85">
+                  {s.caption}
+                </pre>
+                {s.skipReason ? (
+                  <p className="mt-2 text-xs text-[#FFC85A]/80">Skipped soft mention: {s.skipReason}</p>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
       {message ? <p className="text-xs text-[#FFC85A]">{message}</p> : null}
     </div>
   );

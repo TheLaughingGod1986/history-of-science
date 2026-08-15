@@ -115,6 +115,28 @@ function buildBasePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
       notes: ["Slightly more explanatory than TikTok", "Invite discussion"],
     },
     {
+      platform: "instagram_feed",
+      caption: `${input.hook}\n\n${cta}\n\nFull film on YouTube${url ? `:\n${url}` : "."}\n\n${tags
+        .slice(0, 4)
+        .map((t) => `#${t.replace(/^#/, "")}`)
+        .join(" ")}`,
+      hashtags: tags.slice(0, 4),
+      callToAction: cta,
+      notes: ["Instagram feed caption — distinct from Reels", "No merchant stickers"],
+    },
+    {
+      platform: "facebook_page",
+      caption: `${input.hook}\n\n${(input.transcript || long).slice(0, 320)}\n\n${
+        url ? `Full documentary:\n${url}` : `Full story on ${CHANNEL_NAME}.`
+      }`,
+      hashtags: tags.slice(0, 2),
+      callToAction: cta,
+      notes: [
+        "Facebook Page feed — distinct from facebook_reels",
+        "Documentary tone; one YouTube or /go/ link at the end; never shop now",
+      ],
+    },
+    {
       platform: "x",
       caption: truncate(
         url ? `${input.hook} ${url}` : `${input.hook}`,

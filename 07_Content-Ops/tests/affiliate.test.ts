@@ -50,6 +50,15 @@ import {
   filterDescriptionLinksThroughTrustGate,
 } from "../src/lib/affiliate/editorial-trust-gate";
 import type { EditorialTrustProductInput } from "../src/lib/affiliate/editorial-trust-gate";
+import { generateAffiliateSocialSnippets } from "../src/lib/affiliate/social-snippets";
+import {
+  buildSocialGoUrl,
+  buildSocialYouTubeUrl,
+} from "../src/lib/affiliate/urls";
+import {
+  normalizeAffiliateClickSource,
+  socialPlatformToClickSource,
+} from "../src/lib/affiliate/social-channels";
 
 function product(partial: Partial<ProductMatchInput> & Pick<ProductMatchInput, "id" | "name" | "slug" | "category" | "tagSlugs">): ProductMatchInput {
   return {
@@ -690,5 +699,134 @@ describe("editorial trust gate (Video Auditor)", () => {
       trustVideo: { title: "Black Holes Explained", topic: "Physics", isShort: false },
     });
     expect(desc).toBe("Film body.\nSubscribe for more.");
+  });
+});
+
+describe("live social channel affiliate snippets", () => {
+  const baseInput = {
+    videoSlug: "black-hole-fall",
+    videoTitle: "What Would Happen If You Fell Into a Black Hole?",
+    topic: "Black Holes",
+    hook: "What happens at the event horizon?",
+    youtubeUrl: "https://youtu.be/Mo93x0fxB1Q",
+    productLabel: "Brilliant Physics",
+    productSlug: "brilliant-physics",
+    hasNaturalObject: true,
+    productRelevantToVideo: true,
+    hasApprovedPlacement: true,
+    preferYouTubePointer: true as const,
+  };
+
+  it("produces Threads, Instagram Reels, Instagram Feed, and Facebook Page as distinct platforms", () => {
+    const snippets = generateAffiliateSocialSnippets(baseInput);
+    const platforms = snippets.map((s) => s.platform);
+    expect(platforms).toEqual([
+      "threads",
+      "instagram_reels",
+      "instagram_feed",
+      "facebook_page",
+    ]);
+    expect(platforms).not.toContain("facebook_reels");
+    expect(snippets.find((s) => s.platform === "facebook_page")).toBeTruthy();
+    expect(snippets.every((s) => s.approvedForPublish === false)).toBe(true);
+  });
+
+  it("never contains raw merchant URLs", () => {
+    const withGo = generateAffiliateSocialSnippets({
+      ...baseInput,
+      preferYouTubePointer: false,
+    });
+    for (const s of [...generateAffiliateSocialSnippets(baseInput), ...withGo]) {
+      expect(containsRawMerchantUrl(s.caption)).toBe(false);
+      expect(s.caption.toLowerCase()).not.toContain("amazon.");
+      expect(s.caption.toLowerCase()).not.toContain("brilliant.org");
+      expect(s.caption.toLowerCase()).not.toContain("shop now");
+      if (s.trackedUrl) {
+        expect(isAllowedSocialTrackedUrl(s.trackedUrl)).toBe(true);
+      }
+    }
+  });
+
+  it("stamps utm_source per channel on /go/ and YouTube links", () => {
+    const goThreads = buildSocialGoUrl({
+      productSlug: "brilliant-physics",
+      platform: "threads",
+      videoSlug: "black-hole-fall",
+      hasAffiliateMention: true,
+    });
+    expect(goThreads).toContain("utm_source=threads");
+    expect(goThreads).toContain("utm_medium=affiliate");
+    expect(goThreads).toContain("utm_campaign=black-hole-fall");
+    expect(goThreads).toContain("utm_content=brilliant-physics");
+    expect(socialPlatformToClickSource("threads")).toBe("threads");
+
+    const goIg = buildSocialGoUrl({
+      productSlug: "brilliant-physics",
+      platform: "instagram_reels",
+      videoSlug: "black-hole-fall",
+    });
+    expect(goIg).toContain("utm_source=instagram");
+    expect(socialPlatformToClickSource("instagram_feed")).toBe("instagram");
+
+    const goFb = buildSocialGoUrl({
+      productSlug: "brilliant-physics",
+      platform: "facebook_page",
+      videoSlug: "black-hole-fall",
+    });
+    expect(goFb).toContain("utm_source=facebook");
+    expect(socialPlatformToClickSource("facebook_page")).toBe("facebook");
+    expect(socialPlatformToClickSource("facebook_reels")).toBe("facebook");
+
+    const yt = buildSocialYouTubeUrl({
+      youtubeUrl: "https://youtu.be/Mo93x0fxB1Q",
+      platform: "threads",
+      videoSlug: "black-hole-fall",
+      productSlug: "brilliant-physics",
+      hasAffiliateMention: true,
+    });
+    expect(yt).toContain("utm_source=threads");
+    expect(yt).toContain("utm_medium=affiliate");
+
+    expect(normalizeAffiliateClickSource("instagram_reels")).toBe("instagram");
+    expect(normalizeAffiliateClickSource("facebook_page")).toBe("facebook");
+    expect(normalizeAffiliateClickSource("threads")).toBe("threads");
+  });
+
+  it("Facebook Page caption stays documentary — link at end, no shop energy", () => {
+    const fb = generateAffiliateSocialSnippets(baseInput).find(
+      (s) => s.platform === "facebook_page",
+    )!;
+    expect(fb.caption.toLowerCase()).not.toContain("shop now");
+    const lines = fb.caption.trim().split("\n").filter(Boolean);
+    expect(lines[0].toLowerCase().startsWith("brilliant")).toBe(false);
+    if (fb.trackedUrl) {
+      expect(fb.caption.trim().endsWith(fb.trackedUrl) || fb.caption.includes(fb.trackedUrl)).toBe(
+        true,
+      );
+    }
+  });
+
+  it("Shorts description path still gets zero affiliate links", () => {
+    const filtered = filterDescriptionLinksThroughTrustGate({
+      video: { title: "Diamond Planet Short", topic: "Wonder", isShort: true },
+      candidates: [
+        {
+          product: {
+            ...product({
+              id: "t1",
+              name: "Beginner telescope",
+              slug: "beginner-telescope",
+              category: "Beginner telescopes",
+              tagSlugs: ["telescope"],
+            }),
+            namedInVideo: true,
+            helpsViewerDoTheThing: true,
+            wouldRecommendWithoutCommission: true,
+          },
+          role: "primary",
+        },
+      ],
+    });
+    expect(filtered.accepted).toHaveLength(0);
   });
 });
