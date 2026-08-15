@@ -23,9 +23,7 @@ import {
 } from "./social-copy-rules";
 import { assertAffiliateSafeSocialCopy } from "./social-copy";
 import {
-  countCaptionLines,
   firstNonEmptyLine,
-  lastNonEmptyLine,
   renderFacebookPageTemplate,
   renderInstagramFeedTemplate,
   renderInstagramReelsTemplate,
