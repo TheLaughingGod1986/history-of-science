@@ -26,6 +26,7 @@ import {
   buildOrbitRedirectUrl,
   buildTrackedAffiliateUrl,
   applyProgrammeAffiliateId,
+  resolveAffiliateRedirectBase,
 } from "../src/lib/affiliate/urls";
 import {
   previewAffiliateCsv,
@@ -82,6 +83,11 @@ import {
   computeMonthTargetGbp,
   resolveGoalsClockStart,
 } from "../src/lib/affiliate/goals";
+import {
+  LIVE_PRODUCT_URLS,
+  liveUrlForSlug,
+  isAmazonUkDestinationUrl,
+} from "../src/lib/affiliate/live-product-urls";
 
 function product(partial: Partial<ProductMatchInput> & Pick<ProductMatchInput, "id" | "name" | "slug" | "category" | "tagSlugs">): ProductMatchInput {
   return {
@@ -419,6 +425,21 @@ describe("redirect URL generation", () => {
       "amazon-associates-uk",
     );
     expect(url).toContain("tag=orbit-test-21");
+    expect(url).not.toContain("orbitgo-21");
+    delete process.env.AMAZON_ASSOCIATE_TAG;
+  });
+
+  it("builds /go destination from destinationUrl when affiliateUrl is empty", () => {
+    process.env.AMAZON_ASSOCIATE_TAG = "orbit-test-21";
+    const base = resolveAffiliateRedirectBase({
+      destinationUrl:
+        "https://www.amazon.co.uk/Turn-Left-Orion-Hundreds-Telescope/dp/1108457568",
+      affiliateUrl: "",
+    });
+    const stamped = applyProgrammeAffiliateId(base, "amazon-associates-uk");
+    expect(base).toContain("amazon.co.uk");
+    expect(base).toContain("1108457568");
+    expect(stamped).toContain("tag=orbit-test-21");
     delete process.env.AMAZON_ASSOCIATE_TAG;
   });
 });
@@ -1180,5 +1201,57 @@ describe("affiliate goals ladder (reporting only)", () => {
     });
     expect(snap.status).toBe("not_started");
     expect(snap.monthNumber).toBeNull();
+  });
+});
+
+describe("Amazon Associates UK live destinations", () => {
+  it("confirmed Amazon products use amazon.co.uk destination URLs", () => {
+    const book = liveUrlForSlug("beginner-astronomy-book");
+    const scope = liveUrlForSlug("beginner-telescope");
+    expect(book).toBeTruthy();
+    expect(scope).toBeTruthy();
+    expect(isAmazonUkDestinationUrl(book!.destinationUrl)).toBe(true);
+    expect(isAmazonUkDestinationUrl(scope!.destinationUrl)).toBe(true);
+    expect(book!.destinationUrl).toContain("1108457568");
+    expect(scope!.destinationUrl).toContain("B00DV6SBRO");
+    expect(book!.destinationUrl).not.toMatch(/example\.invalid/i);
+    expect(scope!.destinationUrl).not.toMatch(/example\.invalid/i);
+  });
+
+  it("never hard-codes the Associates tag in live URL specs", () => {
+    for (const spec of LIVE_PRODUCT_URLS) {
+      expect(JSON.stringify(spec)).not.toContain("orbitgo-21");
+      expect(spec.destinationUrl).not.toMatch(/[?&]tag=/i);
+      expect(spec.affiliateUrl || "").not.toMatch(/[?&]tag=/i);
+    }
+  });
+
+  it("keeps space-lego inactive and LEGO off live social copy", () => {
+    const lego = liveUrlForSlug("space-lego");
+    expect(lego?.active).toBe(false);
+
+    const snippets = generateAffiliateSocialSnippets({
+      videoSlug: "mars-night",
+      videoTitle: "What Would Happen If You Lived on Mars?",
+      topic: "Mars",
+      hook: "Dust storms that blot out the sun.",
+      youtubeUrl: "https://youtu.be/Mo93x0fxB1Q",
+      productLabel: "Turn Left at Orion",
+      productSlug: "beginner-astronomy-book",
+      hasNaturalObject: true,
+      productRelevantToVideo: true,
+      hasApprovedPlacement: true,
+      preferYouTubePointer: false,
+    });
+    for (const s of snippets) {
+      expect(s.caption.toLowerCase()).not.toContain("lego");
+      expect(containsRawMerchantUrl(s.caption)).toBe(false);
+      expect(s.caption.toLowerCase()).not.toContain("amazon.");
+      expect(s.caption.toLowerCase()).not.toContain("amazon.co.uk");
+      if (s.trackedUrl) {
+        expect(isAllowedSocialTrackedUrl(s.trackedUrl)).toBe(true);
+        expect(s.trackedUrl).toMatch(/youtu\.?be|\/go\//i);
+      }
+    }
   });
 });

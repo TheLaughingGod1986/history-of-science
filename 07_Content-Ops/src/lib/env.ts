@@ -28,7 +28,7 @@ export const envSchema = z.object({
     .enum(["local_direct_upload", "temporary_object_storage", "existing_public_url"])
     .optional(),
   MEDIA_PUBLIC_BASE_URL: optionalString,
-  /** Amazon Associates UK tag — never hard-code in seed/source */
+  /** Amazon Associates UK tag — never hard-code in seed/source; set in operator env only */
   AMAZON_ASSOCIATE_TAG: optionalString,
   /** Brilliant affiliate / referral ID */
   BRILLIANT_AFFILIATE_ID: optionalString,

@@ -6,6 +6,7 @@ import { CONTENT_RULES } from "../src/config/content-rules";
 import { scoreClipQuality } from "../src/lib/content/quality-score";
 import { generatePlatformCopy } from "../src/lib/platforms/generate-platform-copy";
 import { scheduleClipAcrossPlatforms, londonDateTime } from "../src/lib/publishing/schedule";
+import { liveUrlForSlug } from "../src/lib/affiliate/live-product-urls";
 
 const prisma = new PrismaClient();
 
@@ -494,28 +495,40 @@ async function seedAffiliateCatalog() {
     priority?: number;
     active?: boolean;
   }) {
+    const live = liveUrlForSlug(args.slug);
+    const destinationUrl =
+      live?.destinationUrl || `https://example.invalid/dest/${args.slug}`;
+    // Prefer empty affiliateUrl — /go stamps AMAZON_ASSOCIATE_TAG onto destination.
+    // Fall back to destination when live; placeholders only when no live spec.
+    const affiliateUrl =
+      live?.affiliateUrl ??
+      (live?.destinationUrl && !/example\.invalid/i.test(live.destinationUrl)
+        ? ""
+        : `https://example.invalid/aff/${args.slug}?ref=PLACEHOLDER`);
     const product = await prisma.affiliateProduct.create({
       data: {
         affiliateProgramId: args.programId,
-        name: args.name,
+        name: live?.name || args.name,
         slug: args.slug,
-        description: args.description,
-        // Placeholder development URLs only — never invent real affiliate IDs
-        destinationUrl: `https://example.invalid/dest/${args.slug}`,
-        affiliateUrl: `https://example.invalid/aff/${args.slug}?ref=PLACEHOLDER`,
+        description: live?.description || args.description,
+        destinationUrl,
+        affiliateUrl,
         category: args.category,
         price: args.price,
         currency: "GBP",
         estimatedCommission: args.estimatedCommission,
         commissionType: "PERCENTAGE",
-        active: args.active ?? true,
+        active: live?.active ?? args.active ?? true,
         featured: args.featured ?? false,
         evergreen: args.evergreen ?? false,
         priority: args.priority ?? 0,
-        notes: "Seed placeholder — replace with real programme URLs after account approval.",
+        notes:
+          live?.notes ||
+          "TODO: confirm a live amazon.co.uk ASIN before go-live. Do not invent an ASIN. Tag from AMAZON_ASSOCIATE_TAG at /go.",
       },
     });
-    for (const t of args.tags) {
+    const tags = live?.tags || args.tags;
+    for (const t of tags) {
       if (!tagIds[t]) continue;
       await prisma.affiliateProductTag.create({
         data: { productId: product.id, tagId: tagIds[t] },
@@ -525,10 +538,11 @@ async function seedAffiliateCatalog() {
   }
 
   await addProduct({
-    programId: retailer.id,
-    name: "Beginner telescope",
+    programId: amazon.id,
+    name: "Celestron FirstScope (Cometron 76)",
     slug: "beginner-telescope",
-    description: "A practical first telescope for clear nights — Orbit evergreen recommendation.",
+    description:
+      "Celestron FirstScope tabletop Dobsonian — a practical first telescope for clear nights.",
     category: "Beginner telescopes",
     tags: ["telescope", "beginner", "astronomy"],
     price: 179,
@@ -551,11 +565,12 @@ async function seedAffiliateCatalog() {
   });
   await addProduct({
     programId: amazon.id,
-    name: "Beginner astronomy book",
+    name: "Turn Left at Orion",
     slug: "beginner-astronomy-book",
-    description: "Calm introductory astronomy reading for curious adults.",
+    description:
+      "Consolmagno & Davis — hundreds of night-sky objects for a home telescope. Orbit’s beginner desk book.",
     category: "Astronomy books",
-    tags: ["books", "beginner", "astronomy"],
+    tags: ["books", "astronomy", "beginner", "telescope"],
     price: 14.99,
     estimatedCommission: 0.6,
     evergreen: true,
@@ -605,6 +620,7 @@ async function seedAffiliateCatalog() {
     price: 49.99,
     estimatedCommission: 1.5,
     priority: 1,
+    active: false,
   });
   await addProduct({
     programId: retailer.id,

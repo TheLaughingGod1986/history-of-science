@@ -64,8 +64,11 @@ Integrated affiliate programmes, products, video matching, `/go/{slug}` click tr
 
 - Docs: `docs/AFFILIATE_MONETISATION_SYSTEM.md`
 - UI: `/affiliate` · `/affiliate/products` · `/affiliate/programs` · `/affiliate/opportunities`
-- Env: `AMAZON_ASSOCIATE_TAG`, `BRILLIANT_AFFILIATE_ID`, `AFFILIATE_REDIRECT_BASE_URL`
+- Env: `AMAZON_ASSOCIATE_TAG` (set in operator env only — see affiliate docs; never commit), `BRILLIANT_AFFILIATE_ID`, `AFFILIATE_REDIRECT_BASE_URL`
+- Apply live Amazon UK destinations without reset: `npm run affiliate:apply-urls`
 - Philosophy: relevance before revenue — max 4 links per video
+- Social (Threads / Instagram / Facebook Page): YouTube or `/go/` URLs only — never raw amazon.co.uk
+- LEGO programme + `space-lego` product stay inactive
 
 ## Scope
 
