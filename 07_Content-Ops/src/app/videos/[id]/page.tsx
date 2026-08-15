@@ -7,22 +7,10 @@ import { PLATFORMS } from "@/config/platforms";
 import { DistributionPackButton } from "@/components/DistributionPackButton";
 import { ClipActions } from "@/components/ClipActions";
 import { CopyFilmCaptionButton } from "@/components/CopyFilmCaptionButton";
+import { CopyYoutubeIdButton } from "@/components/CopyYoutubeIdButton";
+import { auditorFilmStatusLine, resolveYoutubeId } from "@/app/videos/film-labels";
 
 export const dynamic = "force-dynamic";
-
-function creatorDetailStatus(video: {
-  status: string;
-  youtubeUrl: string | null;
-  youtubeVideoId: string | null;
-  finalVideoPath: string | null;
-}): string {
-  if (video.status === "scheduled" || video.status === "published") return "scheduled";
-  if (video.youtubeUrl || video.youtubeVideoId) return "listed";
-  if (video.status === "ready" || video.status === "editing" || video.finalVideoPath) {
-    return "cut";
-  }
-  return video.status;
-}
 
 function publicThumbSrc(thumbnailPath: string | null): string | null {
   if (!thumbnailPath) return null;
@@ -59,6 +47,8 @@ export default async function VideoDetailPage({
   if (!video) notFound();
 
   const thumb = publicThumbSrc(video.thumbnailPath);
+  const ytId = resolveYoutubeId(video);
+  const statusLine = auditorFilmStatusLine(video);
 
   return (
     <div className="space-y-8 overflow-x-hidden">
@@ -79,62 +69,58 @@ export default async function VideoDetailPage({
             />
           ) : null}
           <div className="min-w-0 flex-1">
-            <h1 className="break-words font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2] sm:text-3xl">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs uppercase tracking-[0.14em] text-[#F5E8D2]/75">
+                Long
+              </span>
+              {video.clips.length > 0 ? (
+                <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs uppercase tracking-[0.14em] text-[#F5E8D2]/70">
+                  Short
+                </span>
+              ) : null}
+            </div>
+            <h1 className="mt-2 break-words font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2] sm:text-3xl">
               {video.workingTitle || video.title}
             </h1>
             {video.workingTitle ? (
               <p className="mt-2 break-words text-[#F5E8D2]/55">{video.title}</p>
             ) : null}
-            <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-xs uppercase tracking-[0.16em] text-[#FF7A24]">
-              <span>{creatorDetailStatus(video)}</span>
-              {video.publicationDate ? (
-                <span>
-                  {formatInTimeZone(
+            <p className="mt-3 text-sm text-[#FF7A24]">{statusLine}</p>
+            <p className="mt-1 text-sm text-[#F5E8D2]/55">
+              {video.publicationDate
+                ? formatInTimeZone(
                     video.publicationDate,
                     PUBLISHING_SCHEDULE.timezone,
                     "EEE d MMM HH:mm",
-                  )}
-                </span>
-              ) : (
-                <span>No Thursday date</span>
-              )}
-            </div>
+                  )
+                : "No Thursday date"}
+              <span className="text-[#5A6E82]"> · Europe/London</span>
+            </p>
           </div>
         </div>
-        <ul className="mt-4 space-y-1.5 text-sm text-[#F5E8D2]/65">
-          <li>
-            Cut (master):{" "}
-            {video.finalVideoPath || video.status === "ready" || video.status === "editing"
-              ? "ready / in cut"
-              : "not yet"}
-          </li>
-          <li>Listing: {video.youtubeUrl || video.youtubeVideoId ? "written" : "not yet"}</li>
-          <li>
-            Scheduled:{" "}
-            {video.status === "scheduled" || video.status === "published"
-              ? "yes"
-              : video.publicationDate
-                ? "date set"
-                : "not yet"}
-          </li>
-          <li>
-            Companion Short:{" "}
-            {video.clips.some((c) => ["exported", "scheduled", "published"].includes(c.status))
-              ? "done / on the way"
-              : video.clips.length
-                ? "in progress"
-                : "not yet"}
-          </li>
-        </ul>
-        {video.youtubeUrl ? (
-          <div className="mt-4 flex flex-wrap gap-3">
-            <p className="w-full break-all text-sm text-[#FFC85A]/90">{video.youtubeUrl}</p>
-            <CopyFilmCaptionButton
-              oneLiner={wonderOneLiner(video)}
-              youtubeUrl={video.youtubeUrl}
-            />
-          </div>
-        ) : null}
+
+        {/* Watch / id above any other actions — no commerce on this page */}
+        <div className="mt-4 space-y-2">
+          {video.youtubeUrl ? (
+            <a
+              href={video.youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block break-all text-sm text-[#FFC85A] hover:underline"
+            >
+              {video.youtubeUrl}
+            </a>
+          ) : null}
+          {ytId ? <CopyYoutubeIdButton youtubeId={ytId} /> : null}
+          {video.youtubeUrl ? (
+            <div className="pt-1">
+              <CopyFilmCaptionButton
+                oneLiner={wonderOneLiner(video)}
+                youtubeUrl={video.youtubeUrl}
+              />
+            </div>
+          ) : null}
+        </div>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
@@ -187,7 +173,7 @@ export default async function VideoDetailPage({
                       Short
                     </span>
                     <span className="text-xs uppercase tracking-[0.16em] text-[#FF7A24]">
-                      #{clip.clipNumber} · {clip.status}
+                      #{clip.clipNumber} · {clip.status} · Film-only · No affiliate
                     </span>
                   </div>
                   <h3 className="mt-2 break-words text-xl text-[#F5E8D2]">{clip.workingTitle}</h3>
@@ -196,7 +182,6 @@ export default async function VideoDetailPage({
                     {clip.sourceStartTime} → {clip.sourceEndTime} · {clip.targetDurationSeconds}s ·{" "}
                     {clip.hookCategory}
                   </p>
-                  <p className="mt-2 text-xs text-[#5A6E82]">No affiliate on Shorts.</p>
                 </div>
                 <div className="[&_button]:inline-flex [&_button]:min-h-11 [&_button]:items-center [&_button]:px-4 [&_button]:py-2 [&_button]:text-sm">
                   <ClipActions clipId={clip.id} status={clip.status} />

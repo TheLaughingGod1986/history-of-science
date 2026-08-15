@@ -4,6 +4,8 @@ import { prisma } from "@/lib/storage/prisma";
 import { PUBLISHING_SCHEDULE } from "@/config/publishing-schedule";
 import { AddThursdayFilmButton } from "@/components/AddThursdayFilmButton";
 import { CopyFilmCaptionButton } from "@/components/CopyFilmCaptionButton";
+import { CopyYoutubeIdButton } from "@/components/CopyYoutubeIdButton";
+import { auditorFilmStatusLine, resolveYoutubeId } from "@/app/videos/film-labels";
 
 export const dynamic = "force-dynamic";
 
@@ -20,21 +22,6 @@ type FilmRow = {
   publicationDate: Date | null;
   _count: { clips: number };
 };
-
-/** Map existing LongFormVideo fields to Video Creator language — no new model. */
-function creatorFilmStatus(video: {
-  status: string;
-  youtubeUrl: string | null;
-  youtubeVideoId: string | null;
-  finalVideoPath: string | null;
-}): string {
-  if (video.status === "scheduled" || video.status === "published") return "scheduled";
-  if (video.youtubeUrl || video.youtubeVideoId) return "listed";
-  if (video.status === "ready" || video.status === "editing" || video.finalVideoPath) {
-    return "cut";
-  }
-  return video.status;
-}
 
 function formatThursdayDate(date: Date): string {
   return formatInTimeZone(date, PUBLISHING_SCHEDULE.timezone, "EEE d MMM HH:mm");
@@ -116,13 +103,13 @@ export default async function VideosPage() {
         <>
           {thisFilm ? (
             <section className="card-panel overflow-hidden">
-              <Link href={`/videos/${thisFilm.id}`} className="block p-4 transition hover:bg-white/[0.02] sm:p-5">
+              <div className="p-4 sm:p-5">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="rounded-full bg-[#FF7A24]/15 px-3 py-1 text-xs uppercase tracking-[0.16em] text-[#FF7A24]">
                     {thisIsUpcoming ? "Next Thursday" : "This film"}
                   </span>
-                  <span className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">
-                    {creatorFilmStatus(thisFilm)}
+                  <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs uppercase tracking-[0.14em] text-[#F5E8D2]/75">
+                    Long
                   </span>
                   {thisFilm._count.clips > 0 ? (
                     <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs uppercase tracking-[0.14em] text-[#F5E8D2]/70">
@@ -130,7 +117,8 @@ export default async function VideosPage() {
                     </span>
                   ) : null}
                 </div>
-                <div className="mt-4 flex gap-4">
+
+                <Link href={`/videos/${thisFilm.id}`} className="mt-4 flex gap-4">
                   {publicThumbSrc(thisFilm.thumbnailPath) ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
@@ -147,13 +135,31 @@ export default async function VideosPage() {
                       {thisFilm.publicationDate
                         ? formatThursdayDate(thisFilm.publicationDate)
                         : "No Thursday date"}
+                      <span className="text-[#5A6E82]"> · Europe/London</span>
                     </p>
-                    {thisFilm.youtubeUrl ? (
-                      <p className="mt-2 break-all text-sm text-[#FFC85A]/90">{thisFilm.youtubeUrl}</p>
-                    ) : null}
+                    <p className="mt-2 text-sm text-[#FF7A24]">
+                      {auditorFilmStatusLine(thisFilm)}
+                    </p>
                   </div>
+                </Link>
+
+                {/* Watch / YouTube id first — no commerce on this page */}
+                <div className="mt-4 space-y-2">
+                  {thisFilm.youtubeUrl ? (
+                    <a
+                      href={thisFilm.youtubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block break-all text-sm text-[#FFC85A] hover:underline"
+                    >
+                      {thisFilm.youtubeUrl}
+                    </a>
+                  ) : null}
+                  {resolveYoutubeId(thisFilm) ? (
+                    <CopyYoutubeIdButton youtubeId={resolveYoutubeId(thisFilm)!} />
+                  ) : null}
                 </div>
-              </Link>
+              </div>
               {thisFilm.youtubeUrl ? (
                 <div className="border-t border-white/5 px-4 py-3 sm:px-5">
                   <CopyFilmCaptionButton
@@ -170,40 +176,49 @@ export default async function VideosPage() {
               <h2 className="text-xs uppercase tracking-[0.18em] text-[#5A6E82]">Catalogue</h2>
               <ul className="divide-y divide-white/5 overflow-hidden rounded-2xl border border-white/10">
                 {catalogue.map((video) => {
-                  const status = creatorFilmStatus(video);
+                  const status = auditorFilmStatusLine(video);
                   const title = filmTitle(video);
+                  const ytId = resolveYoutubeId(video);
                   return (
-                    <li key={video.id}>
+                    <li key={video.id} className="px-4 py-3.5 sm:px-5">
                       <Link
                         href={`/videos/${video.id}`}
-                        className="flex min-h-14 items-center gap-3 px-4 py-3.5 transition hover:bg-white/5 sm:gap-4 sm:px-5"
+                        className="flex min-h-11 flex-col gap-1 transition hover:opacity-90"
                       >
-                        <div className="min-w-0 flex-1">
-                          <div className="flex flex-wrap items-center gap-2">
-                            <span className="truncate text-base text-[#F5E8D2]">{title}</span>
-                            {video._count.clips > 0 ? (
-                              <span className="shrink-0 rounded-full border border-white/10 px-2 py-0.5 text-[0.65rem] uppercase tracking-[0.14em] text-[#F5E8D2]/65">
-                                Short
-                              </span>
-                            ) : null}
-                          </div>
-                          <div className="mt-0.5 text-sm text-[#F5E8D2]/55 sm:hidden">
-                            {video.publicationDate
-                              ? formatThursdayDate(video.publicationDate)
-                              : "No Thursday date"}
-                            <span className="mx-1.5 text-[#5A6E82]">·</span>
-                            <span className="text-[#FF7A24]">{status}</span>
-                          </div>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="truncate text-base text-[#F5E8D2]">{title}</span>
+                          <span className="shrink-0 rounded-full border border-white/10 px-2 py-0.5 text-[0.65rem] uppercase tracking-[0.14em] text-[#F5E8D2]/65">
+                            Long
+                          </span>
+                          {video._count.clips > 0 ? (
+                            <span className="shrink-0 rounded-full border border-white/10 px-2 py-0.5 text-[0.65rem] uppercase tracking-[0.14em] text-[#F5E8D2]/65">
+                              Short
+                            </span>
+                          ) : null}
                         </div>
-                        <div className="hidden shrink-0 text-sm text-[#F5E8D2]/55 sm:block">
+                        <div className="text-sm text-[#F5E8D2]/55">
                           {video.publicationDate
                             ? formatThursdayDate(video.publicationDate)
                             : "No Thursday date"}
-                        </div>
-                        <div className="hidden shrink-0 text-xs uppercase tracking-[0.14em] text-[#FF7A24] sm:block">
-                          {status}
+                          <span className="mx-1.5 text-[#5A6E82]">·</span>
+                          <span className="text-[#FF7A24]">{status}</span>
                         </div>
                       </Link>
+                      {ytId || video.youtubeUrl ? (
+                        <div className="mt-2 flex flex-wrap items-center gap-2">
+                          {video.youtubeUrl ? (
+                            <a
+                              href={video.youtubeUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="break-all text-xs text-[#FFC85A] hover:underline"
+                            >
+                              Watch
+                            </a>
+                          ) : null}
+                          {ytId ? <CopyYoutubeIdButton youtubeId={ytId} /> : null}
+                        </div>
+                      ) : null}
                     </li>
                   );
                 })}
