@@ -45,6 +45,11 @@ import {
   assertAffiliateSafeSocialCopy,
 } from "../src/lib/affiliate/social-copy";
 import { generatePlatformCopy } from "../src/lib/platforms/generate-platform-copy";
+import {
+  evaluateEditorialTrustGate,
+  filterDescriptionLinksThroughTrustGate,
+} from "../src/lib/affiliate/editorial-trust-gate";
+import type { EditorialTrustProductInput } from "../src/lib/affiliate/editorial-trust-gate";
 
 function product(partial: Partial<ProductMatchInput> & Pick<ProductMatchInput, "id" | "name" | "slug" | "category" | "tagSlugs">): ProductMatchInput {
   return {
@@ -170,32 +175,37 @@ describe("affiliate description generation", () => {
     },
   ];
 
-  it("builds go-deeper section with templates", () => {
+  it("builds documentary section with templates", () => {
     const section = buildAffiliateDescriptionSection({ links });
-    expect(section).toContain("🚀 Go deeper");
+    expect(section).toContain("If you want to look at this yourself");
     expect(section).toContain("beginner-telescope");
-    expect(section).toContain("Brilliant");
+    expect(section.toLowerCase()).not.toContain("buy now");
   });
 
-  it("appends disclosure once and prevents duplicate links", () => {
+  it("puts disclosure first, dedupes links, does not duplicate disclosure", () => {
     const withDupes = [...links, links[0]];
     const desc = appendAffiliateSectionToDescription({
-      description: "Hook paragraph about black holes.",
+      description: "Hook paragraph about black holes.\nSubscribe for the next film.",
       links: withDupes,
     });
-    expect(desc).toContain("affiliate links");
+    expect(desc.startsWith("Some links are affiliate")).toBe(true);
+    expect(desc).toContain("no commission");
     expect(desc.match(/beginner-telescope/g)?.length).toBe(1);
+    // Film CTA body remains above affiliate section
+    const disclosureEnd = desc.indexOf("\n\n");
+    const afterDisclosure = desc.slice(disclosureEnd + 2);
+    expect(afterDisclosure.startsWith("Hook paragraph")).toBe(true);
     const again = appendAffiliateSectionToDescription({
       description: desc,
       links,
     });
-    expect(again.toLowerCase().split("affiliate links").length - 1).toBe(1);
+    expect(again.toLowerCase().split("some links are affiliate").length - 1).toBe(1);
   });
 
   it("integrates with YouTube package description merge", () => {
     const merged = mergeDescriptionWithAffiliateLinks("Base description", links);
     expect(merged).toContain("Base description");
-    expect(merged).toContain("Go deeper");
+    expect(merged).toContain("If you want to look at this yourself");
   });
 
   it("dedupes recommendation lists", () => {
@@ -497,5 +507,188 @@ describe("affiliate social copy house rules", () => {
     expect(line).toBeTruthy();
     expect(line!).toContain("/go/");
     expect(containsRawMerchantUrl(line!)).toBe(false);
+  });
+});
+
+describe("editorial trust gate (Video Auditor)", () => {
+  const howToVideo = {
+    title: "How to Find Jupiter Through a Telescope Tonight",
+    topic: "Stargazing",
+    script:
+      "Tonight we use a sky atlas and look through the beginner telescope to find Jupiter.",
+    primaryKeyword: "find jupiter telescope",
+  };
+
+  const namedTelescope: EditorialTrustProductInput = {
+    ...product({
+      id: "t1",
+      name: "Beginner telescope",
+      slug: "beginner-telescope",
+      category: "Beginner telescopes",
+      tagSlugs: ["telescope", "beginner"],
+      price: 179,
+    }),
+    namedInVideo: true,
+    helpsViewerDoTheThing: true,
+    shownOnScreen: true,
+    wouldRecommendWithoutCommission: true,
+  };
+
+  it("rejects Shorts — zero affiliate links", () => {
+    const gate = evaluateEditorialTrustGate(
+      { ...howToVideo, isShort: true },
+      namedTelescope,
+    );
+    expect(gate.pass).toBe(false);
+    expect(gate.failures).toContain("SHORTS_ZERO_AFFILIATE");
+
+    const filtered = filterDescriptionLinksThroughTrustGate({
+      video: { title: "Diamond Planet Short", topic: "Wonder", isShort: true },
+      candidates: [{ product: namedTelescope, role: "primary" }],
+    });
+    expect(filtered.accepted).toHaveLength(0);
+  });
+
+  it("rejects unnamed products (not in VO / on screen)", () => {
+    const vpn: EditorialTrustProductInput = {
+      ...product({
+        id: "vpn",
+        name: "OrbitVPN Pro",
+        slug: "orbit-vpn",
+        category: "VPN",
+        tagSlugs: ["vpn"],
+      }),
+      wouldRecommendWithoutCommission: true,
+      namedInVideo: false,
+    };
+    const gate = evaluateEditorialTrustGate(howToVideo, vpn);
+    expect(gate.pass).toBe(false);
+    expect(gate.failures).toContain("NOT_NAMED_IN_VIDEO");
+  });
+
+  it("rejects no-commission fail", () => {
+    const junk: EditorialTrustProductInput = {
+      ...product({
+        id: "j1",
+        name: "Crypto Space Token",
+        slug: "crypto-space",
+        category: "Crypto",
+        tagSlugs: ["crypto"],
+      }),
+      wouldRecommendWithoutCommission: false,
+      namedInVideo: true,
+    };
+    const gate = evaluateEditorialTrustGate(
+      {
+        title: "Black Holes Explained",
+        topic: "Black Holes",
+        script: "Crypto Space Token is named somehow",
+      },
+      junk,
+    );
+    expect(gate.pass).toBe(false);
+    expect(gate.failures).toContain("NO_COMMISSION_FAIL");
+  });
+
+  it("rejects more than 2 links on a film", () => {
+    const paper: EditorialTrustProductInput = {
+      ...product({
+        id: "p1",
+        name: "JADES survey paper",
+        slug: "jades-paper",
+        category: "Astronomy books",
+        tagSlugs: ["books"],
+        price: 0,
+      }),
+      namedInVideo: true,
+      helpsViewerDoTheThing: true,
+      isFreeOrCheapCompanion: true,
+      wouldRecommendWithoutCommission: true,
+    };
+    const book: EditorialTrustProductInput = {
+      ...product({
+        id: "b1",
+        name: "Cosmology companion book",
+        slug: "cosmo-book",
+        category: "Astronomy books",
+        tagSlugs: ["books"],
+        price: 12,
+      }),
+      namedInVideo: true,
+      helpsViewerDoTheThing: true,
+      isFreeOrCheapCompanion: true,
+      wouldRecommendWithoutCommission: true,
+    };
+    const extra: EditorialTrustProductInput = {
+      ...product({
+        id: "e1",
+        name: "Sky Guide app",
+        slug: "sky-app",
+        category: "Planetarium app",
+        tagSlugs: ["astronomy"],
+      }),
+      namedInVideo: true,
+      helpsViewerDoTheThing: true,
+      wouldRecommendWithoutCommission: true,
+    };
+
+    const explainer = {
+      title: "JWST and the JADES survey explained",
+      topic: "JWST",
+      script:
+        "We discuss the JADES survey paper and the cosmology companion book and Sky Guide app.",
+    };
+
+    const { accepted, rejected } = filterDescriptionLinksThroughTrustGate({
+      video: explainer,
+      candidates: [
+        { product: paper, role: "primary" },
+        { product: book, role: "companion" },
+        { product: extra, role: "secondary" },
+      ],
+    });
+    expect(accepted.length).toBeLessThanOrEqual(2);
+    expect(
+      rejected.some(
+        (r) =>
+          r.gate.failures.includes("TOO_MANY_LINKS") ||
+          r.gate.failures.includes("STACK_NOT_COMPANION"),
+      ),
+    ).toBe(true);
+  });
+
+  it("passes named sky-atlas / tool on how-to film", () => {
+    const gate = evaluateEditorialTrustGate(howToVideo, namedTelescope);
+    expect(gate.pass).toBe(true);
+    expect(gate.videoType).toBe("HOW_TO");
+  });
+
+  it("wonder films reject telescope affiliate without named book/paper", () => {
+    const gate = evaluateEditorialTrustGate(
+      {
+        title: "Diamond Planets Around Three Suns",
+        topic: "Exoplanets",
+        script: "A beautiful world of diamond.",
+      },
+      namedTelescope,
+    );
+    expect(gate.pass).toBe(false);
+    expect(gate.failures).toContain("WONDER_REQUIRES_NAMED_BOOK_OR_PAPER");
+  });
+
+  it("description generator refuses ungated auto-insert without trust metadata", () => {
+    const desc = appendAffiliateSectionToDescription({
+      description: "Film body.\nSubscribe for more.",
+      links: [
+        {
+          productName: "Random VPN",
+          productSlug: "vpn",
+          category: "VPN",
+          url: "https://example.invalid/vpn",
+        },
+      ],
+      trustVideo: { title: "Black Holes Explained", topic: "Physics", isShort: false },
+    });
+    expect(desc).toBe("Film body.\nSubscribe for more.");
   });
 });

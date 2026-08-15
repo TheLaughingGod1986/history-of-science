@@ -31,8 +31,10 @@ export const PLACEMENT_STATUSES = [
 ] as const;
 export type PlacementStatus = (typeof PLACEMENT_STATUSES)[number];
 
-/** Max affiliate links per YouTube description — never spam. */
+/** Max candidates on the video Affiliate Monetisation card (editor options). */
 export const MAX_AFFILIATE_LINKS_PER_VIDEO = 4;
+/** @deprecated Prefer MAX_AFFILIATE_CARD_CANDIDATES from editorial-trust-gate — description cap is 2. */
+export const MAX_AFFILIATE_CARD_CANDIDATES_LEGACY = 4;
 
 /** Scoring weights for deterministic relevance matching. */
 export const RELEVANCE_WEIGHTS = {
@@ -47,7 +49,7 @@ export const RELEVANCE_WEIGHTS = {
 } as const;
 
 export const DEFAULT_DISCLOSURE =
-  "Some links above are affiliate links. If you purchase through them, Orbit With Ben may receive a commission at no additional cost to you.";
+  "Some links are affiliate. We only add ones we’d recommend with no commission.";
 
 export const DEFAULT_AMAZON_DISCLOSURE =
   "As an Amazon Associate I earn from qualifying purchases.";

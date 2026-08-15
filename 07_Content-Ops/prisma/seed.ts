@@ -620,48 +620,53 @@ async function seedAffiliateCatalog() {
   });
 
   const templates = [
-    { key: "section_header", name: "Section header", category: "general", body: "🚀 Go deeper" },
+    {
+      key: "section_header",
+      name: "Section header",
+      category: "general",
+      body: "If you want to look at this yourself",
+    },
     {
       key: "brilliant",
       name: "Brilliant intro",
       category: "brilliant",
-      body: "🧠 Want to understand the physics behind this episode? Explore Brilliant:",
+      body: "If you want to understand the physics behind this film:",
     },
     {
       key: "telescope",
       name: "Telescope intro",
       category: "telescope",
-      body: "🔭 Want to explore the night sky yourself? Here’s the telescope setup I recommend:",
+      body: "If you want to look at this yourself:",
     },
     {
       key: "binoculars",
       name: "Binoculars intro",
       category: "telescope",
-      body: "🔭 Ready to start stargazing? These binoculars are a great first step:",
+      body: "If you want to start under the night sky:",
     },
     {
       key: "books",
       name: "Books intro",
       category: "books",
-      body: "📚 Go deeper into today’s topic:",
+      body: "If you want to go deeper into what this film named:",
     },
     {
       key: "lego",
       name: "LEGO intro",
       category: "lego",
-      body: "🚀 Build your own piece of space exploration:",
+      body: "If you want to build a piece of what we explored:",
     },
     {
       key: "general",
       name: "General intro",
       category: "general",
-      body: "✨ Recommended for this episode:",
+      body: "If you want to look at this yourself:",
     },
     {
       key: "disclosure",
       name: "Standard disclosure",
       category: "disclosure",
-      body: "Some links above are affiliate links. If you purchase through them, Orbit With Ben may receive a commission at no additional cost to you.",
+      body: "Some links are affiliate. We only add ones we’d recommend with no commission.",
     },
     {
       key: "amazon_disclosure",

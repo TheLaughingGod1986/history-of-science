@@ -30,9 +30,57 @@ src/lib/affiliate/
   social-copy-rules.ts  Hard constraints for affiliate-aware social copy
   social-copy.ts        Sanitize + one soft mention on platform captions
   social-context.ts     Resolve placement context for Shorts generation
+  editorial-trust-gate.ts  Video Auditor trust gate (approve + description)
 ```
 
 UI lives under `/affiliate/*` and on each long-form video detail page. Redirects: `/go/[slug]`.
+
+## Editorial trust gate (Video Auditor)
+
+Matching may still surface **up to 4 candidates** on the video Affiliate Monetisation card so an editor can see options. **Auto-insert, description generation, and APPROVED placements** must pass this gate. Relevance and trust beat the old “max 4 links in the description” default.
+
+**Hard rule:** would we still name this product if there were no commission? If no, it does not go in.
+
+### Placement checklist (before a link hits a description)
+
+1. Named on screen or in the VO of **this** video — not “related,” not “viewers also bought.”
+2. A curious viewer is better off after using it (see the sky, read the paper, understand the picture).
+3. **One** primary affiliate link per long-form film. A second only if it is a free/cheap companion (e.g. paper + book). Never a stack. Hard cap: **2**.
+4. Disclosure once, **first line** of the description, plain:  
+   `Some links are affiliate. We only add ones we’d recommend with no commission.`  
+   Do not duplicate if already present.
+5. Tone stays documentary. “If you want to look at this yourself” is fine. “Buy now / limited / 50% off” is not.
+6. Must not compete with the real CTA (film title + subscribe). Affiliate sits **below** that.
+
+### Video types
+
+| Type | Affiliate policy |
+|------|------------------|
+| All Shorts / companion Shorts | **Zero** links |
+| Wonder films (picture is the point) | Zero unless a specific book/paper is named on screen |
+| Explainer (JWST, Fermi, black hole) | At most one book, paper, or sky app that was used or named |
+| How-to / “look tonight” | One relevant tool max, only if shown |
+
+### Reject spam patterns
+
+More than 1 link on a Short (should be 0) or more than 2 on a film · product never in the video (VPN, hosting, protein) · high-commission junk (crypto, supplements, mystery boxes, generic space merch) · same link on every video · stacked disclosures · salesy VO/end card · link that outranks the film title.
+
+### Code
+
+```ts
+import {
+  evaluateEditorialTrustGate,
+  filterDescriptionLinksThroughTrustGate,
+} from "@/lib/affiliate/editorial-trust-gate";
+
+// Approve / auto-insert
+evaluateEditorialTrustGate(video, product); // must .pass
+
+// Description generation
+filterDescriptionLinksThroughTrustGate({ video, candidates });
+```
+
+`setPlacementStatus(..., "APPROVED")` and description builders call this gate. Card candidates may remain `PENDING` when they fail.
 
 ## Social copy house rules (hard constraints)
 

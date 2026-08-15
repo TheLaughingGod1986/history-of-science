@@ -116,7 +116,34 @@ export function VideoAffiliatePanel({
                 <div className="flex flex-wrap gap-2">
                   <button
                     disabled={busy}
-                    onClick={() => call({ action: "status", placementId: p.id, status: "APPROVED" })}
+                    onClick={async () => {
+                      setBusy(true);
+                      setMessage(null);
+                      try {
+                        const res = await fetch("/api/affiliate/placements", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({
+                            action: "status",
+                            placementId: p.id,
+                            status: "APPROVED",
+                          }),
+                        });
+                        const data = await res.json();
+                        if (!res.ok) {
+                          setMessage(
+                            data.trustGate
+                              ? `Trust gate: ${data.error}`
+                              : data.error || "Approve failed",
+                          );
+                          return;
+                        }
+                        setMessage("Approved");
+                        router.refresh();
+                      } finally {
+                        setBusy(false);
+                      }
+                    }}
                     className="rounded-full border border-white/15 px-3 py-1 text-xs"
                   >
                     Approve

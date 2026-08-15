@@ -18,3 +18,4 @@ export * from "./gear";
 export * from "./social-copy-rules";
 export * from "./social-copy";
 export * from "./social-context";
+export * from "./editorial-trust-gate";

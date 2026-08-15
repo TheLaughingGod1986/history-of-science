@@ -5,8 +5,13 @@ import {
 } from "./matching";
 import { loadActiveProductsForMatching, toProductMatchInput } from "./products";
 import type { PlacementType, VideoMatchInput } from "./types";
-import { MAX_AFFILIATE_LINKS_PER_VIDEO } from "./types";
 import { placementActionSchema } from "./schemas";
+import {
+  MAX_AFFILIATE_CARD_CANDIDATES,
+  evaluateEditorialTrustGate,
+  type EditorialTrustProductInput,
+  type EditorialTrustVideoInput,
+} from "./editorial-trust-gate";
 
 function videoToMatchInput(video: {
   id: string;
@@ -34,14 +39,43 @@ function videoToMatchInput(video: {
   };
 }
 
+function toTrustVideo(
+  video: ReturnType<typeof videoToMatchInput>,
+  opts?: { isShort?: boolean; isCompanionShort?: boolean },
+): EditorialTrustVideoInput {
+  return {
+    ...video,
+    isShort: opts?.isShort,
+    isCompanionShort: opts?.isCompanionShort,
+  };
+}
+
+/**
+ * Matching may surface up to 4 candidates for the editor card.
+ * Does not mean 4 links enter the description.
+ */
 export async function generateRecommendationsForVideo(videoId: string) {
   const video = await prisma.longFormVideo.findUnique({ where: { id: videoId } });
   if (!video) throw new Error("Video not found");
   const products = await loadActiveProductsForMatching();
-  const set = recommendProductsForVideo(videoToMatchInput(video), products);
+  const matchInput = videoToMatchInput(video);
+  const set = recommendProductsForVideo(matchInput, products);
+  const recommendations = dedupeRecommendations(set.all).slice(
+    0,
+    MAX_AFFILIATE_CARD_CANDIDATES,
+  );
+
+  const trustVideo = toTrustVideo(matchInput);
+  const gated = recommendations.map((r) => {
+    const gate = evaluateEditorialTrustGate(trustVideo, r.product);
+    return { ...r, trustGate: gate };
+  });
+
   return {
-    video: videoToMatchInput(video),
-    recommendations: dedupeRecommendations(set.all).slice(0, MAX_AFFILIATE_LINKS_PER_VIDEO),
+    video: matchInput,
+    recommendations: gated,
+    /** Candidates that would pass auto-insert / approve right now */
+    trustPassing: gated.filter((r) => r.trustGate.pass),
     set,
   };
 }
@@ -55,14 +89,15 @@ function placementTypeForRole(
 }
 
 /**
- * Regenerate automatic placements for a video.
- * Does not remove manually approved placements unless replaceAll is true.
+ * Regenerate placements for the editor card (up to 4 candidates as PENDING).
+ * Auto-approve only when the editorial trust gate passes — never stack junk.
  */
 export async function regeneratePlacementsForVideo(
   videoId: string,
   opts?: { replaceAll?: boolean; autoApprove?: boolean },
 ) {
-  const { recommendations } = await generateRecommendationsForVideo(videoId);
+  const { recommendations, video } = await generateRecommendationsForVideo(videoId);
+  const trustVideo = toTrustVideo(video);
 
   if (opts?.replaceAll) {
     await prisma.affiliatePlacement.deleteMany({
@@ -99,6 +134,9 @@ export async function regeneratePlacementsForVideo(
       continue;
     }
 
+    const gate = evaluateEditorialTrustGate(trustVideo, rec.product);
+    const canAutoApprove = Boolean(opts?.autoApprove) && gate.pass;
+
     const row = await prisma.affiliatePlacement.upsert({
       where: {
         videoId_affiliateProductId_placementType: {
@@ -114,14 +152,15 @@ export async function regeneratePlacementsForVideo(
         position: i,
         relevanceScore: rec.relevanceScore,
         generatedAutomatically: true,
-        manuallyApproved: Boolean(opts?.autoApprove),
-        status: opts?.autoApprove ? "APPROVED" : "PENDING",
+        manuallyApproved: canAutoApprove,
+        status: canAutoApprove ? "APPROVED" : "PENDING",
       },
       update: {
         position: i,
         relevanceScore: rec.relevanceScore,
         generatedAutomatically: true,
-        status: opts?.autoApprove ? "APPROVED" : "PENDING",
+        status: canAutoApprove ? "APPROVED" : "PENDING",
+        manuallyApproved: canAutoApprove ? true : undefined,
       },
       include: {
         affiliateProduct: {
@@ -129,14 +168,90 @@ export async function regeneratePlacementsForVideo(
         },
       },
     });
-    created.push(row);
+    created.push({ ...row, trustGate: gate });
   }
 
   return { recommendations, placements: created };
 }
 
+export class EditorialTrustGateError extends Error {
+  failures: string[];
+  constructor(message: string, failures: string[]) {
+    super(message);
+    this.name = "EditorialTrustGateError";
+    this.failures = failures;
+  }
+}
+
+async function loadTrustContext(videoId: string, productId: string) {
+  const video = await prisma.longFormVideo.findUnique({ where: { id: videoId } });
+  if (!video) throw new Error("Video not found");
+  const productRow = await prisma.affiliateProduct.findUnique({
+    where: { id: productId },
+    include: {
+      affiliateProgram: true,
+      tags: { include: { tag: true } },
+    },
+  });
+  if (!productRow) throw new Error("Product not found");
+  return {
+    trustVideo: toTrustVideo(videoToMatchInput(video)),
+    product: toProductMatchInput(productRow) as EditorialTrustProductInput,
+  };
+}
+
 export async function upsertPlacement(raw: unknown) {
   const input = placementActionSchema.parse(raw);
+  const targetStatus = input.status ?? "APPROVED";
+
+  if (targetStatus === "APPROVED" || targetStatus === "ACTIVE") {
+    const { trustVideo, product } = await loadTrustContext(
+      input.videoId,
+      input.affiliateProductId,
+    );
+    const gate = evaluateEditorialTrustGate(trustVideo, product);
+    if (!gate.pass) {
+      throw new EditorialTrustGateError(
+        `Editorial trust gate rejected approval: ${gate.reasons.join("; ")}`,
+        gate.failures,
+      );
+    }
+
+    // Description placements: enforce max 2 approved on the film
+    if (
+      input.placementType === "DESCRIPTION_PRIMARY" ||
+      input.placementType === "DESCRIPTION_SECONDARY"
+    ) {
+      const approved = await prisma.affiliatePlacement.count({
+        where: {
+          videoId: input.videoId,
+          status: { in: ["APPROVED", "ACTIVE"] },
+          placementType: {
+            in: ["DESCRIPTION_PRIMARY", "DESCRIPTION_SECONDARY"],
+          },
+          NOT: {
+            affiliateProductId: input.affiliateProductId,
+            placementType: input.placementType,
+          },
+        },
+      });
+      if (approved >= 2) {
+        throw new EditorialTrustGateError(
+          "Editorial trust gate: more than 2 affiliate links on a film is rejected",
+          ["TOO_MANY_LINKS"],
+        );
+      }
+    }
+
+    // Shorts description type: always reject approve
+    if (input.placementType === "SHORT_DESCRIPTION") {
+      throw new EditorialTrustGateError(
+        "Editorial trust gate: Shorts get zero affiliate links",
+        ["SHORTS_ZERO_AFFILIATE"],
+      );
+    }
+  }
+
   return prisma.affiliatePlacement.upsert({
     where: {
       videoId_affiliateProductId_placementType: {
@@ -153,7 +268,7 @@ export async function upsertPlacement(raw: unknown) {
       relevanceScore: input.relevanceScore ?? null,
       manuallyApproved: input.manuallyApproved ?? true,
       generatedAutomatically: input.generatedAutomatically ?? false,
-      status: input.status ?? "APPROVED",
+      status: targetStatus,
     },
     update: {
       position: input.position,
@@ -171,6 +286,61 @@ export async function setPlacementStatus(
   placementId: string,
   status: "APPROVED" | "REJECTED" | "ACTIVE" | "REMOVED" | "PENDING",
 ) {
+  if (status === "APPROVED" || status === "ACTIVE") {
+    const existing = await prisma.affiliatePlacement.findUnique({
+      where: { id: placementId },
+      include: {
+        video: true,
+        affiliateProduct: {
+          include: {
+            affiliateProgram: true,
+            tags: { include: { tag: true } },
+          },
+        },
+      },
+    });
+    if (!existing) throw new Error("Placement not found");
+
+    if (existing.placementType === "SHORT_DESCRIPTION") {
+      throw new EditorialTrustGateError(
+        "Editorial trust gate: Shorts get zero affiliate links",
+        ["SHORTS_ZERO_AFFILIATE"],
+      );
+    }
+
+    const trustVideo = toTrustVideo(videoToMatchInput(existing.video));
+    const product = toProductMatchInput(existing.affiliateProduct);
+    const gate = evaluateEditorialTrustGate(trustVideo, product);
+    if (!gate.pass) {
+      throw new EditorialTrustGateError(
+        `Editorial trust gate rejected approval: ${gate.reasons.join("; ")}`,
+        gate.failures,
+      );
+    }
+
+    if (
+      existing.placementType === "DESCRIPTION_PRIMARY" ||
+      existing.placementType === "DESCRIPTION_SECONDARY"
+    ) {
+      const approved = await prisma.affiliatePlacement.count({
+        where: {
+          videoId: existing.videoId,
+          status: { in: ["APPROVED", "ACTIVE"] },
+          placementType: {
+            in: ["DESCRIPTION_PRIMARY", "DESCRIPTION_SECONDARY"],
+          },
+          id: { not: placementId },
+        },
+      });
+      if (approved >= 2) {
+        throw new EditorialTrustGateError(
+          "Editorial trust gate: more than 2 affiliate links on a film is rejected",
+          ["TOO_MANY_LINKS"],
+        );
+      }
+    }
+  }
+
   return prisma.affiliatePlacement.update({
     where: { id: placementId },
     data: {
@@ -199,14 +369,36 @@ export async function listPlacementsForVideo(videoId: string) {
   });
 }
 
+/**
+ * Description insertion uses only APPROVED/ACTIVE placements that still pass the trust gate.
+ * PENDING candidates stay on the editor card only.
+ */
 export async function getActiveDescriptionPlacements(videoId: string) {
-  const placements = await listPlacementsForVideo(videoId);
-  return placements.filter(
-    (p) =>
-      (p.status === "APPROVED" || p.status === "ACTIVE" || p.status === "PENDING") &&
-      (p.placementType === "DESCRIPTION_PRIMARY" ||
-        p.placementType === "DESCRIPTION_SECONDARY"),
-  );
+  const video = await prisma.longFormVideo.findUnique({ where: { id: videoId } });
+  if (!video) return [];
+
+  const placements = await prisma.affiliatePlacement.findMany({
+    where: {
+      videoId,
+      status: { in: ["APPROVED", "ACTIVE"] },
+      placementType: { in: ["DESCRIPTION_PRIMARY", "DESCRIPTION_SECONDARY"] },
+    },
+    include: {
+      affiliateProduct: {
+        include: { affiliateProgram: true, tags: { include: { tag: true } } },
+      },
+    },
+    orderBy: [{ position: "asc" }, { createdAt: "asc" }],
+  });
+
+  const trustVideo = toTrustVideo(videoToMatchInput(video));
+  return placements.filter((p) => {
+    const gate = evaluateEditorialTrustGate(
+      trustVideo,
+      toProductMatchInput(p.affiliateProduct),
+    );
+    return gate.pass;
+  });
 }
 
-export { videoToMatchInput, toProductMatchInput };
+export { videoToMatchInput, toProductMatchInput, toTrustVideo };
