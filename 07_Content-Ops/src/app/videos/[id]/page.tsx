@@ -66,7 +66,9 @@ export default async function VideoDetailPage({
             {video.publicationDate ? <span>{formatLondon(video.publicationDate)}</span> : null}
           </div>
         </div>
-        <DistributionPackButton videoId={video.id} />
+        <div className="w-full sm:w-auto sm:[&>div]:text-right [&_button]:min-h-11 [&_button]:w-full sm:[&_button]:w-auto">
+          <DistributionPackButton videoId={video.id} />
+        </div>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
@@ -149,7 +151,9 @@ export default async function VideoDetailPage({
                     {clip.hookCategory}
                   </p>
                 </div>
-                <ClipActions clipId={clip.id} status={clip.status} />
+                <div className="[&_button]:inline-flex [&_button]:min-h-11 [&_button]:items-center [&_button]:px-4 [&_button]:py-2 [&_button]:text-sm">
+                  <ClipActions clipId={clip.id} status={clip.status} />
+                </div>
               </div>
               <div className="mt-4 grid gap-3 md:grid-cols-2">
                 <div className="rounded-xl bg-white/3 p-3 text-sm text-[#F5E8D2]/70">

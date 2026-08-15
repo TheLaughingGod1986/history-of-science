@@ -19,12 +19,6 @@ export const metadata: Metadata = {
   description: "Multi-platform distribution studio for Orbit with Ben",
 };
 
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  viewportFit: "cover" as const,
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{

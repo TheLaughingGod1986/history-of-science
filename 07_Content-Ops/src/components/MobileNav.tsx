@@ -39,7 +39,6 @@ export function MobileNav({ items }: { items: NavItem[] }) {
         aria-label={open ? "Close menu" : "Open menu"}
         onClick={() => setOpen((v) => !v)}
       >
-        <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
         <span aria-hidden className="relative block h-4 w-5">
           <span
             className={`absolute left-0 top-0 block h-0.5 w-5 bg-current transition ${
