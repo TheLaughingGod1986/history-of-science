@@ -5,18 +5,20 @@
  * - /videos is a film list forever — never /go/, Amazon, or a shop module here.
  * - Named-in-film (if marked): only `Named: {book title}` — no slug, no link.
  * - Shorts never get a book line.
- * - last-star v09 (`dbBojuwg4r8`) is private — never treat as live/next Thursday.
+ * - last-star v09 (`dbBojuwg4r8`) and v10 (`z-fUtdjWn5o`) are private —
+ *   never treat as live/next Thursday. Live named cut is v11 (`REXYxuLOBoI`).
  */
 
-/** Auditor-confirmed named-in-film long (last-star only). Book title text — no /go/. */
+/** Auditor-confirmed named-in-film long (last-star v11 only). Book title text — no /go/. */
 const NAMED_IN_FILM_BY_YOUTUBE_ID: Record<string, string> = {
-  "z-fUtdjWn5o": "The End of Everything",
+  REXYxuLOBoI: "The End of Everything",
 };
 
-/** Private cut — must not win “next Thursday” / “this film”. */
-const PRIVATE_NOT_NEXT_YOUTUBE_IDS = new Set(["dbBojuwg4r8"]);
-
-const LAST_STAR_V10_MARK = "last-star_v10";
+/** Private cuts — must not win “next Thursday” / “this film”. */
+const PRIVATE_NOT_NEXT_YOUTUBE_IDS = new Set([
+  "dbBojuwg4r8", // last-star v09
+  "z-fUtdjWn5o", // last-star v10
+]);
 
 export function resolveYoutubeId(video: {
   youtubeVideoId: string | null;
@@ -55,51 +57,22 @@ export function auditorFilmStatusLine(video: {
   return "Long · Film-only · Not published";
 }
 
-function looksLikeLastStarV10(video: {
-  workingTitle?: string | null;
-  title?: string | null;
-  slug?: string | null;
-  projectFolder?: string | null;
-  finalVideoPath?: string | null;
-}): boolean {
-  const hay = [
-    video.workingTitle,
-    video.title,
-    video.slug,
-    video.projectFolder,
-    video.finalVideoPath,
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-  return hay.includes(LAST_STAR_V10_MARK);
-}
-
 /**
- * Auditor named-in-film mark for last-star only (`z-fUtdjWn5o` / last-star_v10).
+ * Auditor named-in-film mark for last-star v11 only (`REXYxuLOBoI`).
  * Returns `Named: The End of Everything` or null. Never a slug or link.
  */
 export function namedInFilmBookLine(video: {
   youtubeVideoId: string | null;
   youtubeUrl: string | null;
-  workingTitle?: string | null;
-  title?: string | null;
-  slug?: string | null;
-  projectFolder?: string | null;
-  finalVideoPath?: string | null;
 }): string | null {
   const ytId = resolveYoutubeId(video);
   if (ytId && NAMED_IN_FILM_BY_YOUTUBE_ID[ytId]) {
     return `Named: ${NAMED_IN_FILM_BY_YOUTUBE_ID[ytId]}`;
   }
-  // Fallback only when YouTube id is missing on the record.
-  if (!ytId && looksLikeLastStarV10(video)) {
-    return "Named: The End of Everything";
-  }
   return null;
 }
 
-/** True when this cut must not be the next/this Thursday hero (e.g. private last-star v09). */
+/** True when this cut must not be the next/this Thursday hero (private last-star v09/v10). */
 export function excludeFromNextThursdayHero(video: {
   youtubeVideoId: string | null;
   youtubeUrl: string | null;
