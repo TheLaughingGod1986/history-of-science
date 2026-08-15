@@ -1,5 +1,9 @@
 import { CHANNEL_NAME, PlatformId, PLATFORMS } from "@/config/platforms";
 import { CONTENT_RULES } from "@/config/content-rules";
+import {
+  applyAffiliateSocialConstraints,
+  type AffiliateSocialContext,
+} from "@/lib/affiliate/social-copy";
 
 export type ClipCopyInput = {
   shortTitle: string;
@@ -10,6 +14,11 @@ export type ClipCopyInput = {
   longTitle?: string | null;
   callToAction?: string | null;
   hashtags?: string[];
+  /**
+   * Optional affiliate context. When present, social copy is hard-constrained:
+   * no raw merchant URLs, max one soft mention, science first.
+   */
+  affiliate?: AffiliateSocialContext | null;
 };
 
 export type PlatformCopy = {
@@ -44,7 +53,7 @@ export function renderTemplate(
   return template.replace(/\{\{(\w+)\}\}/g, (_, key: string) => vars[key] ?? "");
 }
 
-export function generatePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
+function buildBasePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
   const cta = input.callToAction || CONTENT_RULES.softCtas[0];
   const tags = input.hashtags?.length ? input.hashtags : defaultHashtags(input.topic);
   const url = input.youtubeUrl || "";
@@ -77,7 +86,11 @@ export function generatePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
       hashtags: tags.slice(0, 5),
       callToAction: cta,
       commentPrompt: "Which explanation for the silence do you find most convincing?",
-      notes: ["Natural, curious tone", "No third-party watermark", "Optional reply-video idea: deepen one comment question"],
+      notes: [
+        "Natural, curious tone",
+        "No third-party watermark",
+        "Optional reply-video idea: deepen one comment question",
+      ],
     },
     {
       platform: "instagram_reels",
@@ -100,6 +113,28 @@ export function generatePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
       hashtags: tags.slice(0, 4),
       callToAction: cta,
       notes: ["Slightly more explanatory than TikTok", "Invite discussion"],
+    },
+    {
+      platform: "instagram_feed",
+      caption: `${input.hook}\n\n${cta}\n\nFull film on YouTube${url ? `:\n${url}` : "."}\n\n${tags
+        .slice(0, 4)
+        .map((t) => `#${t.replace(/^#/, "")}`)
+        .join(" ")}`,
+      hashtags: tags.slice(0, 4),
+      callToAction: cta,
+      notes: ["Instagram feed caption — distinct from Reels", "No merchant stickers"],
+    },
+    {
+      platform: "facebook_page",
+      caption: `${input.hook}\n\n${(input.transcript || long).slice(0, 320)}\n\n${
+        url ? `Full documentary:\n${url}` : `Full story on ${CHANNEL_NAME}.`
+      }`,
+      hashtags: tags.slice(0, 2),
+      callToAction: cta,
+      notes: [
+        "Facebook Page feed — distinct from facebook_reels",
+        "Documentary tone; one YouTube or /go/ link at the end; never shop now",
+      ],
     },
     {
       platform: "x",
@@ -131,3 +166,15 @@ export function generatePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
     },
   ];
 }
+
+/**
+ * Generate platform social copy. When `affiliate` context is provided,
+ * house rules are applied (sanitize merchant URLs; at most one soft mention).
+ */
+export function generatePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
+  const base = buildBasePlatformCopy(input);
+  if (!input.affiliate) return base;
+  return applyAffiliateSocialConstraints(base, input.affiliate).copies;
+}
+
+export type { AffiliateSocialContext };

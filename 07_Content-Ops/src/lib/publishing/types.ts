@@ -2,7 +2,9 @@ export type PublishingPlatform =
   | "youtube_shorts"
   | "tiktok"
   | "instagram_reels"
+  | "instagram_feed"
   | "facebook_reels"
+  | "facebook_page"
   | "x"
   | "threads";
 

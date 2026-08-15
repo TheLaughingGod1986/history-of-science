@@ -58,6 +58,15 @@ New episodes: copy `02_Video-Projects/_template_NNN_Episode-Slug/`.
 - Default `PUBLISHING_DRY_RUN=true` in `.env.example`
 - Setup: `docs/ACCOUNT_CONNECTION_SETUP.md` and platform guides under `docs/`
 
+## Affiliate monetisation
+
+Integrated affiliate programmes, products, video matching, `/go/{slug}` click tracking, description blocks, CSV conversion import, and opportunity scoring.
+
+- Docs: `docs/AFFILIATE_MONETISATION_SYSTEM.md`
+- UI: `/affiliate` · `/affiliate/products` · `/affiliate/programs` · `/affiliate/opportunities`
+- Env: `AMAZON_ASSOCIATE_TAG`, `BRILLIANT_AFFILIATE_ID`, `AFFILIATE_REDIRECT_BASE_URL`
+- Philosophy: relevance before revenue — max 4 links per video
+
 ## Scope
 
 - Does not replace video production under `02_Video-Projects/`

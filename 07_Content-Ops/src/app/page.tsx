@@ -4,6 +4,7 @@ import { PUBLISHING_SCHEDULE } from "@/config/publishing-schedule";
 import Link from "next/link";
 import { startOfMonth, endOfMonth } from "date-fns";
 import { isDryRun } from "@/lib/env";
+import { getHomeMonetisationCard } from "@/lib/affiliate/analytics";
 
 export const dynamic = "force-dynamic";
 
@@ -27,6 +28,7 @@ async function getOverview() {
     heartbeat,
     nextJob,
     recentJobs,
+    monetisation,
   ] = await Promise.all([
     prisma.longFormVideo.count({
       where: { status: { in: ["idea", "scripting", "production", "editing", "ready"] } },
@@ -71,6 +73,7 @@ async function getOverview() {
       take: 5,
       include: { platformPost: true },
     }),
+    getHomeMonetisationCard(),
   ]);
 
   const nextActions: string[] = [];
@@ -83,6 +86,11 @@ async function getOverview() {
   if (postsScheduled === 0) nextActions.push("Schedule this week’s cross-platform posts.");
   if (missingAnalytics > 0) {
     nextActions.push(`Import analytics for ${missingAnalytics} published post(s).`);
+  }
+  if (monetisation.videosMissingLinks > 0) {
+    nextActions.push(
+      `Review ${monetisation.videosMissingLinks} video(s) missing affiliate links.`,
+    );
   }
   if (!heartbeat || Date.now() - heartbeat.lastHeartbeatAt.getTime() > 30_000) {
     nextActions.push("Start the publishing worker (`npm run worker`) for scheduled API posts.");
@@ -106,6 +114,7 @@ async function getOverview() {
     nextJob,
     recentJobs,
     dryRun: isDryRun(),
+    monetisation,
   };
 }
 
@@ -209,6 +218,45 @@ export default async function HomePage() {
           value={data.bestClip?.workingTitle ?? "—"}
           hint={data.bestClip ? `Score ${data.bestClip.qualityScore}/100` : undefined}
         />
+      </section>
+
+      <section className="card-panel p-6">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h2 className="font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2]">
+              Monetisation
+            </h2>
+            <p className="mt-1 text-sm text-[#F5E8D2]/55">
+              Affiliate revenue this month · relevance before commission
+            </p>
+          </div>
+          <Link href="/affiliate/opportunities" className="text-sm text-[#FF7A24] hover:underline">
+            Opportunities →
+          </Link>
+        </div>
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <StatCard
+            label="Affiliate revenue (month)"
+            value={`£${data.monetisation.revenueMonth.toFixed(2)}`}
+          />
+          <StatCard label="Clicks (month)" value={data.monetisation.clicksMonth} />
+          <StatCard
+            label="Affiliate RPM"
+            value={
+              data.monetisation.affiliateRpm != null
+                ? `£${data.monetisation.affiliateRpm.toFixed(2)}`
+                : "—"
+            }
+          />
+          <StatCard
+            label="Videos missing links"
+            value={data.monetisation.videosMissingLinks}
+          />
+          <StatCard
+            label="Top affiliate video"
+            value={data.monetisation.topAffiliateVideo || "—"}
+          />
+        </div>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">

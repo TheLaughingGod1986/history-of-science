@@ -1,6 +1,10 @@
 import fs from "fs";
 import path from "path";
 import { redactSummary } from "@/lib/publishing/errors";
+import {
+  appendAffiliateSectionToDescription,
+  type AffiliateDescriptionLink,
+} from "@/lib/affiliate/description";
 
 export type YouTubePackageManifest = {
   format?: "longform" | "shorts";
@@ -135,6 +139,24 @@ export function mergeDescriptionWithChapters(description: string, chapters: stri
   if (!ch) return desc;
   if (/chapters/i.test(desc) && /\d:\d{2}/.test(desc)) return desc;
   return `${desc}\n\nChapters\n${ch}`.trim();
+}
+
+/**
+ * Optional affiliate block for YouTube long-form descriptions.
+ * Pure merge — callers load placements via `@/lib/affiliate/description-service`.
+ * Does not invent links; empty links leave the description unchanged.
+ */
+export function mergeDescriptionWithAffiliateLinks(
+  description: string,
+  links: AffiliateDescriptionLink[],
+  templates?: Record<string, string>,
+): string {
+  return appendAffiliateSectionToDescription({
+    description,
+    links,
+    templates,
+    useRedirectUrls: true,
+  });
 }
 
 export function buildStudioFinishChecklist(input: {

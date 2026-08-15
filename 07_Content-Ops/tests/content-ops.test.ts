@@ -27,7 +27,7 @@ describe("platform metadata generation", () => {
       topic: "Alien Civilisations",
       youtubeUrl: "https://youtu.be/Mo93x0fxB1Q",
     });
-    expect(copies).toHaveLength(6);
+    expect(copies).toHaveLength(8);
     const yt = copies.find((c) => c.platform === "youtube_shorts")!;
     expect(yt.title!.length).toBeLessThanOrEqual(60);
     expect(yt.pinnedComment).toContain("youtu.be");

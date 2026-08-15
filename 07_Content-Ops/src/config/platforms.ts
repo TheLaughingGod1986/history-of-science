@@ -6,7 +6,9 @@ export type PlatformId =
   | "youtube_shorts"
   | "tiktok"
   | "instagram_reels"
+  | "instagram_feed"
   | "facebook_reels"
+  | "facebook_page"
   | "x"
   | "threads";
 
@@ -58,6 +60,17 @@ export const PLATFORMS: Record<PlatformId, PlatformConfig> = {
     defaultMethod: "manual",
     connectionStatus: "manual_only",
   },
+  instagram_feed: {
+    id: "instagram_feed",
+    label: "Instagram Feed",
+    shortLabel: "IG·F",
+    color: "#C13584",
+    supportsVideo: false,
+    maxCaptionLength: 2200,
+    recommendedHashtags: 4,
+    defaultMethod: "manual",
+    connectionStatus: "manual_only",
+  },
   facebook_reels: {
     id: "facebook_reels",
     label: "Facebook Reels",
@@ -66,6 +79,17 @@ export const PLATFORMS: Record<PlatformId, PlatformConfig> = {
     supportsVideo: true,
     maxCaptionLength: 2200,
     recommendedHashtags: 3,
+    defaultMethod: "manual",
+    connectionStatus: "manual_only",
+  },
+  facebook_page: {
+    id: "facebook_page",
+    label: "Facebook Page",
+    shortLabel: "FB·P",
+    color: "#0866FF",
+    supportsVideo: false,
+    maxCaptionLength: 5000,
+    recommendedHashtags: 2,
     defaultMethod: "manual",
     connectionStatus: "manual_only",
   },
@@ -100,6 +124,7 @@ export const VIDEO_PLATFORMS: PlatformId[] = [
   "facebook_reels",
 ];
 
-export const TEXT_PLATFORMS: PlatformId[] = ["x", "threads"];
+/** Text / feed posts (not Reels). */
+export const TEXT_PLATFORMS: PlatformId[] = ["x", "threads", "instagram_feed", "facebook_page"];
 
 export const ALL_PLATFORM_IDS = Object.keys(PLATFORMS) as PlatformId[];

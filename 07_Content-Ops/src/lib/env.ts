@@ -28,6 +28,12 @@ export const envSchema = z.object({
     .enum(["local_direct_upload", "temporary_object_storage", "existing_public_url"])
     .optional(),
   MEDIA_PUBLIC_BASE_URL: optionalString,
+  /** Amazon Associates UK tag — never hard-code in seed/source */
+  AMAZON_ASSOCIATE_TAG: optionalString,
+  /** Brilliant affiliate / referral ID */
+  BRILLIANT_AFFILIATE_ID: optionalString,
+  /** Base for /go/{slug} redirects (e.g. https://orbitwithben.com/go) */
+  AFFILIATE_REDIRECT_BASE_URL: optionalString,
 });
 
 export type OrbitEnv = z.infer<typeof envSchema>;
