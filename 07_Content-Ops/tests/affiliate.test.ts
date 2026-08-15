@@ -77,6 +77,11 @@ import {
   normalizeAffiliateClickSource,
   socialPlatformToClickSource,
 } from "../src/lib/affiliate/social-channels";
+import {
+  buildAffiliateGoalsSnapshot,
+  computeMonthTargetGbp,
+  resolveGoalsClockStart,
+} from "../src/lib/affiliate/goals";
 
 function product(partial: Partial<ProductMatchInput> & Pick<ProductMatchInput, "id" | "name" | "slug" | "category" | "tagSlugs">): ProductMatchInput {
   return {
@@ -1107,5 +1112,73 @@ describe("live social channel affiliate snippets", () => {
       ],
     });
     expect(filtered.accepted).toHaveLength(0);
+  });
+});
+
+describe("affiliate goals ladder (reporting only)", () => {
+  it("resolves clock from earlier of first approval or first click", () => {
+    const click = new Date("2026-03-01T12:00:00Z");
+    const approved = new Date("2026-03-10T12:00:00Z");
+    const start = resolveGoalsClockStart({
+      firstApprovedPlacementAt: approved,
+      firstClickAt: click,
+    });
+    expect(start?.toISOString().startsWith("2026-03-01")).toBe(true);
+  });
+
+  it("Month 1 target £20 with floor £10; Month 2 = 2× previous actual", () => {
+    expect(computeMonthTargetGbp({ monthNumber: 1, previousMonthActualGbp: 0 })).toEqual({
+      targetGbp: 20,
+      floorGbp: 10,
+    });
+    expect(computeMonthTargetGbp({ monthNumber: 2, previousMonthActualGbp: 12.5 })).toEqual({
+      targetGbp: 25,
+      floorGbp: null,
+    });
+    expect(computeMonthTargetGbp({ monthNumber: 3, previousMonthActualGbp: 40 }).targetGbp).toBe(
+      80,
+    );
+  });
+
+  it("builds snapshot with month range, pace status, and last-month actual from Month 2+", () => {
+    const clockStart = new Date(2026, 0, 15); // 15 Jan 2026 local
+    const now = new Date(2026, 1, 20); // 20 Feb 2026 → Month 2 (starts 15 Feb)
+    const commissions = [
+      { date: new Date(2026, 0, 20), commissionAmount: 12 }, // Month 1
+      { date: new Date(2026, 1, 16), commissionAmount: 5 }, // Month 2
+    ];
+    const snap = buildAffiliateGoalsSnapshot({
+      now,
+      clockStart,
+      commissions,
+      clicksThisMonth: 3,
+      workingLinks: 8,
+      brokenLinks: 1,
+    });
+    expect(snap.reportingOnly).toBe(true);
+    expect(snap.clockStarted).toBe(true);
+    expect(snap.monthNumber).toBe(2);
+    expect(snap.lastMonthActualGbp).toBe(12);
+    expect(snap.targetGbp).toBe(24); // 2 × 12
+    expect(snap.revenueSoFarGbp).toBe(5);
+    expect(snap.clicksThisMonth).toBe(3);
+    expect(snap.workingLinks).toBe(8);
+    expect(snap.brokenLinks).toBe(1);
+    expect(snap.monthStart).toBeTruthy();
+    expect(snap.monthEnd).toBeTruthy();
+    expect(["on_track", "behind", "ahead"]).toContain(snap.status);
+  });
+
+  it("does not invent a clock when there is no placement and no click", () => {
+    const snap = buildAffiliateGoalsSnapshot({
+      now: new Date("2026-08-15T12:00:00Z"),
+      clockStart: null,
+      commissions: [],
+      clicksThisMonth: 0,
+      workingLinks: 0,
+      brokenLinks: 0,
+    });
+    expect(snap.status).toBe("not_started");
+    expect(snap.monthNumber).toBeNull();
   });
 });

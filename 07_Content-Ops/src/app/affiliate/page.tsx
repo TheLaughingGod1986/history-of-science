@@ -1,5 +1,8 @@
 import Link from "next/link";
+import { format } from "date-fns";
 import { getAffiliateDashboardSummary } from "@/lib/affiliate/analytics";
+import { getAffiliateGoalsPanel } from "@/lib/affiliate/goals-service";
+import type { GoalsPaceStatus } from "@/lib/affiliate/goals";
 
 export const dynamic = "force-dynamic";
 
@@ -23,8 +26,49 @@ function StatCard({
   );
 }
 
+function formatGbp(n: number): string {
+  return `£${n.toFixed(2)}`;
+}
+
+function statusLabel(status: GoalsPaceStatus): string {
+  switch (status) {
+    case "ahead":
+      return "Ahead";
+    case "on_track":
+      return "On track";
+    case "behind":
+      return "Behind";
+    case "not_started":
+      return "Not started";
+    default:
+      return status;
+  }
+}
+
+function statusTone(status: GoalsPaceStatus): string {
+  switch (status) {
+    case "ahead":
+      return "border-[#5AEE8A]/30 bg-[#5AEE8A]/10 text-[#5AEE8A]";
+    case "on_track":
+      return "border-[#FFC85A]/30 bg-[#FFC85A]/10 text-[#FFC85A]";
+    case "behind":
+      return "border-[#FF7A24]/35 bg-[#FF7A24]/10 text-[#FF7A24]";
+    default:
+      return "border-white/15 bg-white/5 text-[#F5E8D2]/70";
+  }
+}
+
+function formatRange(startIso: string, endIso: string): string {
+  const start = new Date(startIso);
+  const end = new Date(endIso);
+  return `${format(start, "d MMM yyyy")} – ${format(end, "d MMM yyyy")}`;
+}
+
 export default async function AffiliateDashboardPage() {
-  const data = await getAffiliateDashboardSummary();
+  const [data, goals] = await Promise.all([
+    getAffiliateDashboardSummary(),
+    getAffiliateGoalsPanel(),
+  ]);
   const warnings: string[] = [];
   if (data.warnings.videosMissingLinks > 0) {
     warnings.push(
@@ -49,6 +93,13 @@ export default async function AffiliateDashboardPage() {
       `${data.warnings.programmesNeedingReports} active programme(s) still need reporting data.`,
     );
   }
+
+  const progressPct =
+    goals.targetGbp && goals.targetGbp > 0
+      ? Math.min(100, Math.round((goals.revenueSoFarGbp / goals.targetGbp) * 100))
+      : goals.revenueSoFarGbp > 0
+        ? 100
+        : 0;
 
   return (
     <div className="space-y-8">
@@ -90,6 +141,115 @@ export default async function AffiliateDashboardPage() {
           </Link>
         </div>
       </div>
+
+      <section className="card-panel space-y-5 p-5">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h2 className="font-[family-name:var(--font-orbit-display)] text-xl text-[#F5E8D2]">
+              Goals
+            </h2>
+            <p className="mt-1 text-xs text-[#F5E8D2]/55">
+              Internal ladder only — reporting, not a reason to auto-insert links. Editorial gate
+              still decides placements.
+            </p>
+          </div>
+          <span
+            className={`rounded-full border px-3 py-1 text-xs uppercase tracking-[0.14em] ${statusTone(goals.status)}`}
+          >
+            {statusLabel(goals.status)}
+          </span>
+        </div>
+
+        {!goals.clockStarted ? (
+          <p className="text-sm text-[#F5E8D2]/55">
+            Clock starts on the first approved placement (or first click if earlier). No goals month
+            yet.
+          </p>
+        ) : (
+          <>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div>
+                <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">Month</div>
+                <div className="mt-1 font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2]">
+                  {goals.monthNumber}
+                </div>
+                <div className="mt-1 text-xs text-[#F5E8D2]/45">
+                  {goals.monthStart && goals.monthEnd
+                    ? formatRange(goals.monthStart, goals.monthEnd)
+                    : "—"}
+                </div>
+              </div>
+              <div>
+                <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">
+                  Revenue vs target
+                </div>
+                <div className="mt-1 font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2]">
+                  {formatGbp(goals.revenueSoFarGbp)}
+                  <span className="text-base text-[#F5E8D2]/45">
+                    {" "}
+                    / {goals.targetGbp != null ? formatGbp(goals.targetGbp) : "—"}
+                  </span>
+                </div>
+                {goals.floorGbp != null ? (
+                  <div className="mt-1 text-xs text-[#F5E8D2]/45">
+                    Month 1 floor {formatGbp(goals.floorGbp)}
+                  </div>
+                ) : null}
+              </div>
+              <div>
+                <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">
+                  Clicks (this goals month)
+                </div>
+                <div className="mt-1 font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2]">
+                  {goals.clicksThisMonth}
+                </div>
+              </div>
+              <div>
+                <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">
+                  Links working / broken
+                </div>
+                <div className="mt-1 font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2]">
+                  {goals.workingLinks}
+                  <span className="text-base text-[#F5E8D2]/45"> / {goals.brokenLinks}</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="mb-1 flex justify-between text-xs text-[#F5E8D2]/45">
+                <span>Progress to target</span>
+                <span>{progressPct}%</span>
+              </div>
+              <div className="h-2 overflow-hidden rounded-full bg-white/10">
+                <div
+                  className="h-full rounded-full bg-[#FF7A24]"
+                  style={{ width: `${progressPct}%` }}
+                />
+              </div>
+              {goals.pacedTargetGbp != null ? (
+                <p className="mt-2 text-xs text-[#F5E8D2]/45">
+                  Pace line today: {formatGbp(goals.pacedTargetGbp)}
+                </p>
+              ) : null}
+            </div>
+
+            {goals.monthNumber != null && goals.monthNumber >= 2 ? (
+              <p className="text-sm text-[#F5E8D2]/70">
+                Last month (M{goals.lastMonthNumber}) actual:{" "}
+                {goals.lastMonthActualGbp != null
+                  ? formatGbp(goals.lastMonthActualGbp)
+                  : "—"}
+                . This month’s target is 2× that figure.
+              </p>
+            ) : (
+              <p className="text-sm text-[#F5E8D2]/55">
+                Month 1 ladder: floor {formatGbp(10)}, target {formatGbp(20)}. Later months: 2×
+                previous actual commission.
+              </p>
+            )}
+          </>
+        )}
+      </section>
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard label="Active programmes" value={data.activePrograms} />
