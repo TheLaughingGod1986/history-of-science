@@ -285,11 +285,19 @@ npm run affiliate:apply-urls
 |------|-------------|
 | `beginner-astronomy-book` | Turn Left at Orion (ASIN `1108457568`) |
 | `beginner-telescope` | Celestron Cometron FirstScope 76 (ASIN `B00DV6SBRO`) |
+| `fermi-paradox-book` | Stephen Webb — Where Is Everybody? (ASIN `3319132350`) — Fermi Paradox film |
+| `jwst-book` | Maggie Aderin-Pocock — Webb’s Universe (ASIN `1789295726`) — JWST film (book, not a telescope) |
+| `black-hole-book` | Becky Smethurst — A Brief History of Black Holes (ASIN `1529086744`) |
+| `cosmology-end-book` | Katie Mack — The End of Everything (ASIN `0141989580`) — End of the Universe film |
+| `exoplanet-book` | Elizabeth Tasker — The Planet Factory (ASIN `147291774X`) — Alien Worlds |
+| `europa-icy-moons-book` | Kevin Hand — Alien Oceans (ASIN `0691227284`) — Europa / icy moons |
 | `space-lego` | Inactive stub — LEGO programme stays **INACTIVE**; not for social/descriptions |
 
 Unconfirmed Amazon products (`astronomy-binoculars`, `mars-book`) keep `example.invalid` TODOs until an ASIN is verified — do not invent ASINs. Affiliate URL may be empty; redirect builds from destination + env tag.
 
-Seed URLs for confirmed Amazon products are the live amazon.co.uk pages above. For an existing DB, run `affiliate:apply-urls` (do **not** `db:reset`).
+Topic books are **Active**, Amazon Associates UK, **not** featured on every video. Do not use `beginner-astronomy-book` / `beginner-telescope` on Fermi / JWST / black-hole / cosmology / exoplanet / Europa films.
+
+Seed URLs for confirmed Amazon products are the live amazon.co.uk pages above. For an existing DB, run `affiliate:apply-urls` (do **not** `db:reset`) — it updates existing rows and **creates** missing verified slugs.
 
 | Programme | Slug | Notes |
 |-----------|------|-------|
