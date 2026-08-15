@@ -109,6 +109,7 @@ function jwstEffectiveProduct(input: AffiliateSocialSnippetInput): {
     FIXTURE_JWST_LIVE.forbidProductSlugs as readonly string[]
   ).includes(input.productSlug);
   const readySlug = FIXTURE_JWST_LIVE.softMentionProductSlug;
+  const intendedSlug = FIXTURE_JWST_LIVE.softMentionGoSlugWhenReady;
   const notes: string[] = [];
 
   if (forbidden) {
@@ -121,20 +122,31 @@ function jwstEffectiveProduct(input: AffiliateSocialSnippetInput): {
     return {
       productSlug: readySlug,
       productLabel:
-        FIXTURE_JWST_LIVE.softMentionProductLabel ||
-        FIXTURE_JWST_LIVE.softMentionGoSlugWhenReady,
+        FIXTURE_JWST_LIVE.softMentionProductLabel || intendedSlug,
       preferYouTubePointer: input.preferYouTubePointer !== false,
       notes,
     };
   }
 
-  // TODO: jwst-book product not seeded yet — soft mention stays in copy; door is YouTube only
+  // jwst-book is the only allowed /go door for JWST (seeded topic book).
+  // Soft-mention copy stays under-the-film; default door is still YouTube unless
+  // the caller passes productSlug=jwst-book with preferYouTubePointer=false.
+  if (!forbidden && input.productSlug === intendedSlug) {
+    notes.push(`JWST desk book door: /go/${intendedSlug}`);
+    return {
+      productSlug: intendedSlug,
+      productLabel: input.productLabel || intendedSlug,
+      preferYouTubePointer: input.preferYouTubePointer !== false,
+      notes,
+    };
+  }
+
   notes.push(
-    `TODO: JWST soft-mention /go/ slug is ${FIXTURE_JWST_LIVE.softMentionGoSlugWhenReady} — product unset until seeded; door is YouTube under the film.`,
+    `JWST soft-mention /go/ slug is ${intendedSlug} — wrong/forbidden slug remapped; door is YouTube under the film.`,
   );
   return {
-    productSlug: FIXTURE_JWST_LIVE.softMentionGoSlugWhenReady,
-    productLabel: FIXTURE_JWST_LIVE.softMentionGoSlugWhenReady,
+    productSlug: intendedSlug,
+    productLabel: intendedSlug,
     preferYouTubePointer: true,
     notes,
   };
@@ -288,9 +300,7 @@ function buildSnippetForPlatform(
   if (jwstLive) {
     notes.push(
       "JWST live pack: soft mention = “the one explainer I used under the film” (never telescope / Turn Left at Orion / LEGO).",
-      FIXTURE_JWST_LIVE.softMentionProductSlug
-        ? `Book slug: ${FIXTURE_JWST_LIVE.softMentionProductSlug}.`
-        : `Book slug TODO: ${FIXTURE_JWST_LIVE.softMentionGoSlugWhenReady} (unset until product exists).`,
+      `Book /go/ slug: ${FIXTURE_JWST_LIVE.softMentionGoSlugWhenReady} only — default door YouTube under the film.`,
       "Never auto-post — approvedForPublish stays false until editor approves.",
     );
     if (platform === "threads") {

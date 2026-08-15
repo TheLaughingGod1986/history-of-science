@@ -142,7 +142,7 @@ Tracked URLs on social may **only** be the YouTube film URL or an Orbit `/go/{sl
 
 #### Social Media Manager templates
 
-**First live pack — JWST Thursday film** (`FIXTURE_JWST_LIVE`). Soft mention copy: “the one explainer I used under the film.” Door = YouTube until `jwst-book` exists; intended `/go/jwst-book` once that product is seeded. **Never** `beginner-astronomy-book` / Turn Left at Orion (observing guidebook — fails trust gate on JWST wonder films) or a telescope. LEGO stays out. Never raw Amazon URLs. Snippets ship with `approvedForPublish: false` — **do not auto-post**.
+**First live pack — JWST Thursday film** (`FIXTURE_JWST_LIVE`). Soft mention copy: “the one explainer I used under the film.” Default door = YouTube (under the film); approved placement door = `/go/jwst-book` only. **Never** `beginner-astronomy-book` / Turn Left at Orion (observing guidebook) or a telescope. LEGO stays out. Never raw Amazon URLs. Snippets ship with `approvedForPublish: false` — **do not auto-post**.
 
 Threads (only after **Thu 20 Aug 2026 18:00 Europe/London**):
 
@@ -285,11 +285,40 @@ npm run affiliate:apply-urls
 |------|-------------|
 | `beginner-astronomy-book` | Turn Left at Orion (ASIN `1108457568`) |
 | `beginner-telescope` | Celestron Cometron FirstScope 76 (ASIN `B00DV6SBRO`) |
+| `fermi-paradox-book` | Stephen Webb — Where Is Everybody? (ASIN `3319132350`) — Fermi Paradox film |
+| `jwst-book` | Maggie Aderin-Pocock — Webb’s Universe (ASIN `1789295726`) — JWST film (book, not a telescope) |
+| `black-hole-book` | Becky Smethurst — A Brief History of Black Holes (ASIN `1529086744`) |
+| `cosmology-end-book` | Katie Mack — The End of Everything (ASIN `0141989580`) — End of the Universe film |
+| `exoplanet-book` | Elizabeth Tasker — The Planet Factory (ASIN `147291774X`) — Alien Worlds |
+| `europa-icy-moons-book` | Kevin Hand — Alien Oceans (ASIN `0691227284`) — Europa / icy moons |
 | `space-lego` | Inactive stub — LEGO programme stays **INACTIVE**; not for social/descriptions |
 
 Unconfirmed Amazon products (`astronomy-binoculars`, `mars-book`) keep `example.invalid` TODOs until an ASIN is verified — do not invent ASINs. Affiliate URL may be empty; redirect builds from destination + env tag.
 
-Seed URLs for confirmed Amazon products are the live amazon.co.uk pages above. For an existing DB, run `affiliate:apply-urls` (do **not** `db:reset`).
+Topic books are **Active**, Amazon Associates UK, **not** featured on every video. Do not use `beginner-astronomy-book` / `beginner-telescope` on Fermi / JWST / black-hole / cosmology / exoplanet / Europa films.
+
+Seed URLs for confirmed Amazon products are the live amazon.co.uk pages above. For an existing DB, run `affiliate:apply-urls` (do **not** `db:reset`) — it updates existing rows and **creates** missing verified slugs.
+
+### Film → book DESCRIPTION_PRIMARY (Social Media Manager)
+
+One approved desk book per long-form film. Shorts get **zero** affiliate links. Does **not** publish to YouTube.com — Content Ops description generation + placements only.
+
+```bash
+npm run affiliate:apply-urls
+npm run affiliate:wire-topic-books
+# or: npm run affiliate:wire-topic-books -- --dry-run
+```
+
+| Film | YouTube id | Product slug | /go path |
+|------|------------|--------------|----------|
+| Alien Worlds | `b8-X_FyJnHM` | `exoplanet-book` | `/go/exoplanet-book` |
+| What Happens If You Fall Into a Black Hole? | `3xrxdmaOwJI` | `black-hole-book` | `/go/black-hole-book` |
+| Fermi Paradox | `Mo93x0fxB1Q` | `fermi-paradox-book` | `/go/fermi-paradox-book` |
+| JWST (Thu 20 Aug) | scheduled | `jwst-book` | `/go/jwst-book` |
+| End of the Universe (Thu 27 Aug) | scheduled | `cosmology-end-book` | `/go/cosmology-end-book` |
+| Europa (Thu 3 Sept) | scheduled | `europa-icy-moons-book` | `/go/europa-icy-moons-book` |
+
+Description block: Creator voice · one `/go/{slug}` · disclosure last line · after chapters + subscribe. Never stack Brilliant (not live on these films), telescope, or LEGO.
 
 | Programme | Slug | Notes |
 |-----------|------|-------|

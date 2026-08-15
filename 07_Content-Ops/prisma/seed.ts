@@ -7,6 +7,7 @@ import { scoreClipQuality } from "../src/lib/content/quality-score";
 import { generatePlatformCopy } from "../src/lib/platforms/generate-platform-copy";
 import { scheduleClipAcrossPlatforms, londonDateTime } from "../src/lib/publishing/schedule";
 import { liveUrlForSlug } from "../src/lib/affiliate/live-product-urls";
+import { wireTopicBookPlacements } from "../src/lib/affiliate/wire-topic-book-placements";
 
 const prisma = new PrismaClient();
 
@@ -335,8 +336,12 @@ async function main() {
   });
 
   await seedAffiliateCatalog();
-
-  console.log("Seeded Orbit content ops with Will We Ever Meet Aliens? + 4 clips + affiliate catalogue");
+  // One APPROVED DESCRIPTION_PRIMARY topic book per long film (Social Media Manager).
+  // Additive — does not reset. Telescope / Brilliant / LEGO stay unplaced on these films.
+  const wired = await wireTopicBookPlacements({ skipApplyLiveUrls: true });
+  console.log(
+    `Seeded Orbit content ops with Will We Ever Meet Aliens? + 4 clips + affiliate catalogue + ${wired.wired.length} topic-book placements`,
+  );
 }
 
 async function seedAffiliateCatalog() {
@@ -458,7 +463,10 @@ async function seedAffiliateCatalog() {
     "cosmology",
     "aliens",
     "seti",
+    "fermi",
     "exoplanets",
+    "jwst",
+    "europa",
     "kids",
     "beginner",
     "books",
@@ -609,6 +617,84 @@ async function seedAffiliateCatalog() {
     price: 18,
     estimatedCommission: 0.7,
     priority: 2,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "Where Is Everybody? — Fermi Paradox (Stephen Webb)",
+    slug: "fermi-paradox-book",
+    description:
+      "Stephen Webb — seventy-five solutions to the Fermi Paradox. The desk book for the silence.",
+    category: "Space books",
+    tags: ["books", "fermi", "aliens", "seti", "astronomy"],
+    price: 29.99,
+    estimatedCommission: 0.9,
+    featured: false,
+    priority: 6,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "Webb’s Universe (Maggie Aderin-Pocock)",
+    slug: "jwst-book",
+    description:
+      "Maggie Aderin-Pocock — Webb’s images and what they reveal about cosmic history. A book, not a backyard telescope.",
+    category: "Space books",
+    tags: ["books", "jwst", "nasa", "astronomy"],
+    price: 25,
+    estimatedCommission: 0.8,
+    featured: false,
+    priority: 6,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "A Brief History of Black Holes (Becky Smethurst)",
+    slug: "black-hole-book",
+    description:
+      "Dr Becky Smethurst — how we know black holes are real, without the horror-story fog.",
+    category: "Space books",
+    tags: ["books", "black-hole", "physics", "cosmology"],
+    price: 10.99,
+    estimatedCommission: 0.4,
+    featured: false,
+    priority: 7,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "The End of Everything (Katie Mack)",
+    slug: "cosmology-end-book",
+    description:
+      "Katie Mack — five astrophysical endings for the universe, written with wit and clear physics.",
+    category: "Space books",
+    tags: ["books", "cosmology", "physics"],
+    price: 10.89,
+    estimatedCommission: 0.4,
+    featured: false,
+    priority: 6,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "The Planet Factory (Elizabeth Tasker)",
+    slug: "exoplanet-book",
+    description:
+      "Elizabeth Tasker — exoplanets and the search for a second Earth, from formation to alien landscapes.",
+    category: "Space books",
+    tags: ["books", "exoplanets", "astronomy"],
+    price: 12.99,
+    estimatedCommission: 0.5,
+    featured: false,
+    priority: 6,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "Alien Oceans (Kevin Hand)",
+    slug: "europa-icy-moons-book",
+    description:
+      "Kevin Hand — the search for life in the ocean worlds of Europa and the outer solar system.",
+    category: "Space books",
+    tags: ["books", "europa", "astronomy", "nasa"],
+    price: 17.99,
+    estimatedCommission: 0.6,
+    featured: false,
+    priority: 5,
   });
   await addProduct({
     programId: amazon.id,

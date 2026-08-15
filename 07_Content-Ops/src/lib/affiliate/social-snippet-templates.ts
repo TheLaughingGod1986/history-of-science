@@ -30,11 +30,10 @@ export const FIXTURE_DOOR_PLACEHOLDER_TELESCOPE_GO =
  * First live captions — JWST Thursday film (pictures from space).
  * Soft mention copy: “the one explainer I used under the film.”
  *
- * /go/ slug for that mention MUST be `jwst-book` once that product exists
- * (verified Amazon UK JWST / cosmic-dawn books — other agent). Until then
- * `softMentionProductSlug` stays unset — do NOT use beginner-astronomy-book
- * (Turn Left at Orion is an observing guidebook; fails trust gate on JWST wonder films)
- * or beginner-telescope.
+ * /go/ slug for that mention MUST be `jwst-book` (Webb’s Universe / Unseen Universe,
+ * ASIN 1789295726). Soft-mention copy stays under-the-film; default door is YouTube
+ * unless the approved placement is `jwst-book`. **Never** beginner-astronomy-book
+ * (Turn Left at Orion is an observing guidebook) or beginner-telescope.
  *
  * LEGO stays out. Never raw Amazon URLs. Never auto-post.
  * Threads: hold until Thu 20 Aug 2026 18:00 Europe/London.
@@ -43,12 +42,13 @@ export const FIXTURE_JWST_LIVE = {
   filmTopic: "JWST",
   filmLabel: "JWST Thursday film (pictures from space)",
   /**
-   * Unset until `jwst-book` product exists. Soft mention stays in caption copy;
-   * door is YouTube (“under the film”) until this is set.
+   * Fixture soft-mention product fields stay unset so exact caption fixtures
+   * are stable. Runtime door for JWST is `/go/jwst-book` when that placement
+   * is approved (see `jwstEffectiveProduct`); never Turn Left at Orion.
    */
   softMentionProductSlug: null as string | null,
   softMentionProductLabel: null as string | null,
-  /** Intended /go/{slug} once the JWST explainer book product is seeded. */
+  /** Only allowed /go/{slug} for JWST soft mention / placement door. */
   softMentionGoSlugWhenReady: "jwst-book" as const,
   /** Explicit bans for this film’s social pack (trust gate + wrong product). */
   forbidProductSlugs: [

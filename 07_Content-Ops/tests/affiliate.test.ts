@@ -94,6 +94,10 @@ import {
   liveUrlForSlug,
   isAmazonUkDestinationUrl,
 } from "../src/lib/affiliate/live-product-urls";
+import {
+  resolveTopicBookWireForVideo,
+  filmTopicBookPlacementTableRows,
+} from "../src/lib/affiliate/film-topic-book-map";
 
 function product(partial: Partial<ProductMatchInput> & Pick<ProductMatchInput, "id" | "name" | "slug" | "category" | "tagSlugs">): ProductMatchInput {
   return {
@@ -1214,6 +1218,15 @@ describe("affiliate goals ladder (reporting only)", () => {
 });
 
 describe("Amazon Associates UK live destinations", () => {
+  const TOPIC_BOOK_SLUGS = [
+    "fermi-paradox-book",
+    "jwst-book",
+    "black-hole-book",
+    "cosmology-end-book",
+    "exoplanet-book",
+    "europa-icy-moons-book",
+  ] as const;
+
   it("confirmed Amazon products use amazon.co.uk destination URLs", () => {
     const book = liveUrlForSlug("beginner-astronomy-book");
     const scope = liveUrlForSlug("beginner-telescope");
@@ -1225,6 +1238,49 @@ describe("Amazon Associates UK live destinations", () => {
     expect(scope!.destinationUrl).toContain("B00DV6SBRO");
     expect(book!.destinationUrl).not.toMatch(/example\.invalid/i);
     expect(scope!.destinationUrl).not.toMatch(/example\.invalid/i);
+  });
+
+  it("topic books use verified amazon.co.uk /dp/ destinations (no invented ASINs)", () => {
+    const expected: Record<(typeof TOPIC_BOOK_SLUGS)[number], string> = {
+      "fermi-paradox-book": "3319132350",
+      "jwst-book": "1789295726",
+      "black-hole-book": "1529086744",
+      "cosmology-end-book": "0141989580",
+      "exoplanet-book": "147291774X",
+      "europa-icy-moons-book": "0691227284",
+    };
+    for (const slug of TOPIC_BOOK_SLUGS) {
+      const spec = liveUrlForSlug(slug);
+      expect(spec, slug).toBeTruthy();
+      expect(isAmazonUkDestinationUrl(spec!.destinationUrl), slug).toBe(true);
+      expect(spec!.destinationUrl).toMatch(/amazon\.co\.uk/i);
+      expect(spec!.destinationUrl).toContain(`/dp/${expected[slug]}`);
+      expect(spec!.destinationUrl).not.toMatch(/example\.invalid/i);
+      expect(spec!.programmeSlug).toBe("amazon-associates-uk");
+      expect(spec!.active ?? true).toBe(true);
+      expect(spec!.featured ?? false).toBe(false);
+      expect(spec!.tags).toContain("books");
+    }
+  });
+
+  it("topic book tags match film topics", () => {
+    expect(liveUrlForSlug("fermi-paradox-book")!.tags).toEqual(
+      expect.arrayContaining(["fermi", "aliens", "seti"]),
+    );
+    expect(liveUrlForSlug("jwst-book")!.tags).toEqual(expect.arrayContaining(["jwst"]));
+    expect(liveUrlForSlug("jwst-book")!.tags).not.toContain("telescope");
+    expect(liveUrlForSlug("black-hole-book")!.tags).toEqual(
+      expect.arrayContaining(["black-hole"]),
+    );
+    expect(liveUrlForSlug("cosmology-end-book")!.tags).toEqual(
+      expect.arrayContaining(["cosmology"]),
+    );
+    expect(liveUrlForSlug("exoplanet-book")!.tags).toEqual(
+      expect.arrayContaining(["exoplanets"]),
+    );
+    expect(liveUrlForSlug("europa-icy-moons-book")!.tags).toEqual(
+      expect.arrayContaining(["europa"]),
+    );
   });
 
   it("never hard-codes the Associates tag in live URL specs", () => {
@@ -1261,6 +1317,156 @@ describe("Amazon Associates UK live destinations", () => {
         expect(isAllowedSocialTrackedUrl(s.trackedUrl)).toBe(true);
         expect(s.trackedUrl).toMatch(/youtu\.?be|\/go\//i);
       }
+    }
+  });
+
+  it("social snippets for topic books never include merchant URLs", () => {
+    const snippets = generateAffiliateSocialSnippets({
+      videoSlug: "black-hole-film",
+      videoTitle: "What Happens If You Fall Into a Black Hole?",
+      topic: "Black Holes",
+      hook: "Beyond the event horizon, the future is a direction in space.",
+      youtubeUrl: "https://youtu.be/black-hole-film",
+      productLabel: "A Brief History of Black Holes",
+      productSlug: "black-hole-book",
+      hasNaturalObject: true,
+      productRelevantToVideo: true,
+      hasApprovedPlacement: true,
+      preferYouTubePointer: false,
+    });
+    for (const s of snippets) {
+      expect(containsRawMerchantUrl(s.caption)).toBe(false);
+      expect(s.caption.toLowerCase()).not.toContain("amazon.");
+      expect(s.caption.toLowerCase()).not.toContain("amazon.co.uk");
+      if (s.trackedUrl) {
+        expect(isAllowedSocialTrackedUrl(s.trackedUrl)).toBe(true);
+        expect(s.trackedUrl).toMatch(/youtu\.?be|\/go\//i);
+      }
+    }
+  });
+
+  it("does not recommend beginner telescope or beginner astronomy book on topic films", () => {
+    const topicCatalogue: ProductMatchInput[] = [
+      product({
+        id: "bh-book",
+        name: "A Brief History of Black Holes",
+        slug: "black-hole-book",
+        category: "Space books",
+        tagSlugs: ["books", "black-hole", "physics", "cosmology"],
+        priority: 7,
+      }),
+      product({
+        id: "fermi-book",
+        name: "Where Is Everybody? — Fermi Paradox (Stephen Webb)",
+        slug: "fermi-paradox-book",
+        category: "Space books",
+        tagSlugs: ["books", "fermi", "aliens", "seti", "astronomy"],
+        priority: 6,
+      }),
+      product({
+        id: "jwst-book",
+        name: "Webb’s Universe",
+        slug: "jwst-book",
+        category: "Space books",
+        tagSlugs: ["books", "jwst", "nasa", "astronomy"],
+        priority: 6,
+      }),
+      product({
+        id: "cosmo-book",
+        name: "The End of Everything",
+        slug: "cosmology-end-book",
+        category: "Space books",
+        tagSlugs: ["books", "cosmology", "physics"],
+        priority: 6,
+      }),
+      product({
+        id: "exo-book",
+        name: "The Planet Factory",
+        slug: "exoplanet-book",
+        category: "Space books",
+        tagSlugs: ["books", "exoplanets", "astronomy"],
+        priority: 6,
+      }),
+      product({
+        id: "beginner-book",
+        name: "Turn Left at Orion",
+        slug: "beginner-astronomy-book",
+        category: "Astronomy books",
+        tagSlugs: ["books", "astronomy", "beginner", "telescope"],
+        evergreen: true,
+      }),
+      product({
+        id: "scope",
+        name: "Beginner telescope",
+        slug: "beginner-telescope",
+        category: "Beginner telescopes",
+        tagSlugs: ["telescope", "beginner", "astronomy"],
+        evergreen: true,
+        featured: true,
+      }),
+      product({
+        id: "brilliant",
+        name: "Brilliant Physics",
+        slug: "brilliant-physics",
+        category: "Physics",
+        tagSlugs: ["physics", "black-hole", "cosmology"],
+        programSlug: "brilliant",
+        featured: true,
+        priority: 8,
+      }),
+    ];
+
+    const films: Array<{ video: VideoMatchInput; expectSlug: string }> = [
+      {
+        video: {
+          title: "What Happens If You Fall Into a Black Hole?",
+          topic: "Black Holes",
+          primaryKeyword: "black hole",
+        },
+        expectSlug: "black-hole-book",
+      },
+      {
+        video: {
+          title: "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
+          topic: "Fermi Paradox",
+          primaryKeyword: "fermi paradox",
+        },
+        expectSlug: "fermi-paradox-book",
+      },
+      {
+        video: {
+          title: "What JWST Changed About Cosmic Dawn",
+          topic: "JWST",
+          primaryKeyword: "james webb",
+        },
+        expectSlug: "jwst-book",
+      },
+      {
+        video: {
+          title: "The End of the Universe (Astrophysically Speaking)",
+          topic: "Cosmology",
+          primaryKeyword: "end of the universe",
+          summary: "Heat death, vacuum decay, and the big rip.",
+        },
+        expectSlug: "cosmology-end-book",
+      },
+      {
+        video: {
+          title: "Alien Worlds: Exoplanets Beyond Our Solar System",
+          topic: "Exoplanets",
+          primaryKeyword: "exoplanets",
+        },
+        expectSlug: "exoplanet-book",
+      },
+    ];
+
+    for (const { video, expectSlug } of films) {
+      const set = recommendProductsForVideo(video, topicCatalogue);
+      const slugs = set.all.map((r) => r.product.slug);
+      expect(slugs, video.title).toContain(expectSlug);
+      expect(slugs, video.title).not.toContain("beginner-telescope");
+      expect(slugs, video.title).not.toContain("beginner-astronomy-book");
+      expect(productFamilyOf(set.primary!.product)).toBe("books");
     }
   });
 });
@@ -1349,7 +1555,7 @@ describe("Social Media Manager JWST live captions", () => {
     for (const s of [...fromTelescope, ...fromObservingBook]) {
       expect(s.approvedForPublish).toBe(false);
       assertJwstCaptionSafe(s.caption, s.trackedUrl);
-      // Until jwst-book exists, door is YouTube (under the film), not a wrong /go/
+      // Until jwst-book is the placement door, never a wrong /go/
       expect(s.trackedUrl).toMatch(/youtu\.?be/i);
     }
 
@@ -1362,6 +1568,29 @@ describe("Social Media Manager JWST live captions", () => {
 
     const fb = fromTelescope.find((s) => s.platform === "facebook_page")!;
     expect(fb.caption).toContain(FIXTURE_JWST_LIVE.softLineFacebook);
+  });
+
+  it("JWST door may use /go/jwst-book only — never beginner book or telescope", () => {
+    const fromJwstBook = generateAffiliateSocialSnippets({
+      videoSlug: "jwst-early-galaxies",
+      videoTitle: "JWST and the Galaxies That Should Not Be There",
+      topic: "JWST",
+      youtubeUrl: door,
+      productLabel: "Webb’s Universe",
+      productSlug: "jwst-book",
+      hasNaturalObject: true,
+      productRelevantToVideo: true,
+      hasApprovedPlacement: true,
+      postStyle: "thursday_film",
+      preferYouTubePointer: false,
+    });
+    for (const s of fromJwstBook) {
+      expect(s.approvedForPublish).toBe(false);
+      assertJwstCaptionSafe(s.caption, s.trackedUrl);
+      if (s.trackedUrl?.includes("/go/")) {
+        expect(s.trackedUrl).toContain("/go/jwst-book");
+      }
+    }
   });
 
   it("holds Threads until Thu 20 Aug 2026 18:00 Europe/London", () => {
@@ -1399,5 +1628,150 @@ describe("Social Media Manager JWST live captions", () => {
     expect(familyForbiddenForPlan("telescope", plan)).toBe(true);
     expect(familyForbiddenForPlan("lego", plan)).toBe(true);
     expect(familyForbiddenForPlan("books", plan)).toBe(false);
+  });
+});
+
+describe("film → topic-book wiring (Social Media Manager)", () => {
+  it("resolves each film by YouTube id or title to exactly one book", () => {
+    expect(
+      resolveTopicBookWireForVideo({ youtubeVideoId: "b8-X_FyJnHM" })?.productSlug,
+    ).toBe("exoplanet-book");
+    expect(
+      resolveTopicBookWireForVideo({ youtubeVideoId: "3xrxdmaOwJI" })?.productSlug,
+    ).toBe("black-hole-book");
+    expect(
+      resolveTopicBookWireForVideo({ youtubeVideoId: "n7CbJrOCnU0" })?.productSlug,
+    ).toBe("black-hole-book");
+    expect(
+      resolveTopicBookWireForVideo({ youtubeVideoId: "Mo93x0fxB1Q" })?.productSlug,
+    ).toBe("fermi-paradox-book");
+    expect(
+      resolveTopicBookWireForVideo({
+        title: "What the James Webb Telescope Discovered That Changes Everything",
+      })?.productSlug,
+    ).toBe("jwst-book");
+    expect(
+      resolveTopicBookWireForVideo({
+        title: "The End of the Universe (Astrophysically Speaking)",
+      })?.productSlug,
+    ).toBe("cosmology-end-book");
+    expect(
+      resolveTopicBookWireForVideo({
+        title: "Europa and the Ocean Worlds Under the Ice",
+      })?.productSlug,
+    ).toBe("europa-icy-moons-book");
+  });
+
+  it("trust gate treats wired desk book as named; telescope still fails", () => {
+    const video = {
+      title: "What Happens If You Fall Into a Black Hole?",
+      topic: "Black Holes",
+      primaryKeyword: "black hole",
+      youtubeVideoId: "3xrxdmaOwJI",
+    };
+    const book = product({
+      id: "bh",
+      name: "A Brief History of Black Holes",
+      slug: "black-hole-book",
+      category: "Space books",
+      tagSlugs: ["books", "black-hole"],
+    });
+    const scope = product({
+      id: "scope",
+      name: "Beginner telescope",
+      slug: "beginner-telescope",
+      category: "Beginner telescopes",
+      tagSlugs: ["telescope", "beginner"],
+    });
+    expect(evaluateEditorialTrustGate(video, book).pass).toBe(true);
+    expect(evaluateEditorialTrustGate(video, scope).pass).toBe(false);
+  });
+
+  it("builds Creator description with one /go link and disclosure last; no telescope/Brilliant/LEGO", () => {
+    const rows = filmTopicBookPlacementTableRows();
+    expect(rows.length).toBe(6);
+    for (const row of rows) {
+      expect(row.amazonUrl).toMatch(/amazon\.co\.uk\/.*\/dp\//i);
+      expect(row.goPath).toBe(`/go/${row.productSlug}`);
+      expect(JSON.stringify(row)).not.toContain("orbitgo-21");
+    }
+
+    const bookLink = {
+      productName: "A Brief History of Black Holes",
+      productSlug: "black-hole-book",
+      category: "Space books",
+      programSlug: "amazon-associates-uk",
+      url: "https://orbitwithben.com/go/black-hole-book",
+      role: "primary" as const,
+      trustProduct: product({
+        id: "bh-book",
+        name: "A Brief History of Black Holes",
+        slug: "black-hole-book",
+        category: "Space books",
+        tagSlugs: ["books", "black-hole"],
+      }),
+    };
+    const section = buildAffiliateDescriptionSection({
+      links: [bookLink],
+      topicKey: "black-holes",
+    });
+    expect(section).toContain("/go/black-hole-book");
+    expect(section).not.toContain("beginner-telescope");
+    expect(section.toLowerCase()).not.toContain("brilliant");
+    expect(section.toLowerCase()).not.toContain("lego");
+    expect(section.trim().endsWith(CREATOR_AFFILIATE_DISCLOSURE)).toBe(true);
+
+    const base = [
+      "What Happens If You Fall Into a Black Hole?",
+      "",
+      "Chapters",
+      "0:00 Cold open",
+      "",
+      "Subscribe for the next film.",
+      "",
+      "Playlist",
+      "More Orbit",
+      "",
+      "#OrbitWithBen",
+    ].join("\n");
+    const desc = appendAffiliateSectionToDescription({
+      description: base,
+      links: [bookLink],
+      trustVideo: {
+        title: "What Happens If You Fall Into a Black Hole?",
+        topic: "Black Holes",
+        primaryKeyword: "black hole",
+        youtubeVideoId: "3xrxdmaOwJI",
+      },
+    });
+    expect(desc.indexOf("Subscribe for the next film")).toBeLessThan(
+      desc.indexOf("/go/"),
+    );
+    expect(desc.indexOf("/go/")).toBeLessThan(desc.indexOf("Playlist"));
+    expect(desc.match(/\/go\/[a-z0-9-]+/g)?.length).toBe(1);
+
+    const shortDesc = appendAffiliateSectionToDescription({
+      description: "Short CTA only",
+      links: [bookLink],
+      trustVideo: {
+        title: "Black Hole Short",
+        topic: "Black Holes",
+        isShort: true,
+      },
+    });
+    expect(shortDesc).toBe("Short CTA only");
+    expect(shortDesc).not.toContain("/go/");
+  });
+
+  it("placement table lists film title, youtube id, slug, amazon URL, go path", () => {
+    const bySlug = Object.fromEntries(
+      filmTopicBookPlacementTableRows().map((r) => [r.productSlug, r]),
+    );
+    expect(bySlug["exoplanet-book"].youtubeId).toBe("b8-X_FyJnHM");
+    expect(bySlug["black-hole-book"].youtubeId).toBe("3xrxdmaOwJI");
+    expect(bySlug["fermi-paradox-book"].youtubeId).toBe("Mo93x0fxB1Q");
+    expect(bySlug["jwst-book"].youtubeId).toContain("scheduled");
+    expect(bySlug["cosmology-end-book"].amazonUrl).toContain("0141989580");
+    expect(bySlug["europa-icy-moons-book"].goPath).toBe("/go/europa-icy-moons-book");
   });
 });

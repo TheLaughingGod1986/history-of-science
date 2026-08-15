@@ -49,10 +49,11 @@ function tokenize(...parts: Array<string | null | undefined>): Set<string> {
 const TOPIC_TAG_ALIASES: Record<string, string[]> = {
   "black hole": ["black-hole", "physics", "cosmology", "relativity"],
   "black holes": ["black-hole", "physics", "cosmology"],
-  fermi: ["aliens", "seti", "astronomy"],
+  fermi: ["fermi", "aliens", "seti", "astronomy"],
+  "fermi paradox": ["fermi", "aliens", "seti", "astronomy"],
   alien: ["aliens", "seti"],
   aliens: ["aliens", "seti"],
-  seti: ["seti", "aliens"],
+  seti: ["seti", "aliens", "fermi"],
   mars: ["mars", "nasa", "astronomy"],
   moon: ["moon", "nasa", "astronomy"],
   telescope: ["telescope", "astronomy", "beginner"],
@@ -84,10 +85,15 @@ const TOPIC_TAG_ALIASES: Record<string, string[]> = {
   books: ["books"],
   jupiter: ["astronomy", "planets"],
   saturn: ["astronomy"],
-  jwst: ["jwst", "astronomy", "nasa", "telescope"],
-  "james webb": ["jwst", "astronomy", "nasa", "telescope"],
+  jwst: ["jwst", "astronomy", "nasa"],
+  "james webb": ["jwst", "astronomy", "nasa"],
   webb: ["jwst", "astronomy", "nasa"],
   "cosmic dawn": ["jwst", "cosmology", "astronomy"],
+  europa: ["europa", "astronomy", "nasa"],
+  "icy moon": ["europa", "astronomy"],
+  "icy moons": ["europa", "astronomy"],
+  "ocean world": ["europa", "astronomy"],
+  "ocean worlds": ["europa", "astronomy"],
 };
 
 function inferTagsFromText(text: string): Set<string> {

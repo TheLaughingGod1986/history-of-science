@@ -30,3 +30,5 @@ export * from "./goals";
 export * from "./goals-service";
 export * from "./live-product-urls";
 export * from "./apply-live-urls";
+export * from "./film-topic-book-map";
+export * from "./wire-topic-book-placements";

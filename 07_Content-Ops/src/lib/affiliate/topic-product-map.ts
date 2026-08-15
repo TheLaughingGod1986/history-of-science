@@ -66,6 +66,26 @@ export const CREATOR_TOPIC_SLOT_PLANS: TopicSlotPlan[] = [
       "Pictures-from-space / early-galaxies films: soft mention is a JWST / cosmic-dawn explainer book via /go/jwst-book (once seeded). Never Turn Left at Orion (observing guidebook) or a backyard telescope. LEGO stays out.",
   },
   {
+    topicKey: "fermi",
+    label: "Fermi Paradox / SETI",
+    primary: "books",
+    secondary: ["brilliant"],
+    evergreen: "brilliant",
+    leaveEmpty: ["telescope", "lego"],
+    leaveEmptyIf:
+      "Telescope and LEGO. The silence is not something you see through a backyard scope.",
+  },
+  {
+    topicKey: "europa",
+    label: "Europa / icy moons",
+    primary: "books",
+    secondary: ["brilliant"],
+    evergreen: "brilliant",
+    leaveEmpty: ["telescope"],
+    leaveEmptyIf:
+      "Telescope. Europa’s ocean is not a backyard target — recommend the ocean-worlds book.",
+  },
+  {
     topicKey: "relativity",
     label: "relativity",
     primary: "brilliant",
@@ -122,7 +142,15 @@ const TOPIC_PHRASES: Array<{ key: string; phrases: string[] }> = [
   { key: "mars", phrases: ["mars", "martian", "perseverance", "curiosity rover"] },
   {
     key: "jwst",
-    phrases: ["jwst", "james webb", "webb telescope", "cosmic dawn", "jades"],
+    phrases: ["jwst", "james webb", "webb telescope", "cosmic dawn", "jades", "webb’s universe"],
+  },
+  {
+    key: "fermi",
+    phrases: ["fermi paradox", "fermi", "where is everybody", "great filter", "seti"],
+  },
+  {
+    key: "europa",
+    phrases: ["europa", "icy moon", "icy moons", "ocean world", "ocean worlds", "enceladus"],
   },
   {
     key: "telescopes",
@@ -138,11 +166,20 @@ const TOPIC_PHRASES: Array<{ key: string; phrases: string[] }> = [
   },
   {
     key: "exoplanets",
-    phrases: ["exoplanet", "exoplanets", "habitable zone", "transit method"],
+    phrases: ["exoplanet", "exoplanets", "habitable zone", "transit method", "alien worlds"],
   },
   {
     key: "cosmology",
-    phrases: ["cosmology", "cosmic microwave", "large-scale structure", "dark energy"],
+    phrases: [
+      "cosmology",
+      "cosmic microwave",
+      "large-scale structure",
+      "dark energy",
+      "end of the universe",
+      "end of everything",
+      "heat death",
+      "big rip",
+    ],
   },
   {
     key: "kids",
@@ -249,6 +286,8 @@ export function familyForbiddenForPlan(
   if (plan.topicKey === "jwst" && family === "lego") return true;
   if (plan.topicKey === "kids" && family === "brilliant" && opts?.kidsUnder10) return true;
   if (plan.topicKey === "exoplanets" && family === "telescope") return true;
+  if (plan.topicKey === "fermi" && family === "telescope") return true;
+  if (plan.topicKey === "europa" && family === "telescope") return true;
   if (plan.topicKey === "starship" && family === "telescope" && opts?.filmLooksAtNightSky !== true) {
     return true;
   }
