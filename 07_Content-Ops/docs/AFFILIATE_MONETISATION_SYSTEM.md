@@ -299,6 +299,27 @@ Topic books are **Active**, Amazon Associates UK, **not** featured on every vide
 
 Seed URLs for confirmed Amazon products are the live amazon.co.uk pages above. For an existing DB, run `affiliate:apply-urls` (do **not** `db:reset`) — it updates existing rows and **creates** missing verified slugs.
 
+### Film → book DESCRIPTION_PRIMARY (Social Media Manager)
+
+One approved desk book per long-form film. Shorts get **zero** affiliate links. Does **not** publish to YouTube.com — Content Ops description generation + placements only.
+
+```bash
+npm run affiliate:apply-urls
+npm run affiliate:wire-topic-books
+# or: npm run affiliate:wire-topic-books -- --dry-run
+```
+
+| Film | YouTube id | Product slug | /go path |
+|------|------------|--------------|----------|
+| Alien Worlds | `b8-X_FyJnHM` | `exoplanet-book` | `/go/exoplanet-book` |
+| What Happens If You Fall Into a Black Hole? | `3xrxdmaOwJI` | `black-hole-book` | `/go/black-hole-book` |
+| Fermi Paradox | `Mo93x0fxB1Q` | `fermi-paradox-book` | `/go/fermi-paradox-book` |
+| JWST (Thu 20 Aug) | scheduled | `jwst-book` | `/go/jwst-book` |
+| End of the Universe (Thu 27 Aug) | scheduled | `cosmology-end-book` | `/go/cosmology-end-book` |
+| Europa (Thu 3 Sept) | scheduled | `europa-icy-moons-book` | `/go/europa-icy-moons-book` |
+
+Description block: Creator voice · one `/go/{slug}` · disclosure last line · after chapters + subscribe. Never stack Brilliant (not live on these films), telescope, or LEGO.
+
 | Programme | Slug | Notes |
 |-----------|------|-------|
 | Amazon Associates UK | `amazon-associates-uk` | Tag from `AMAZON_ASSOCIATE_TAG` at redirect time |

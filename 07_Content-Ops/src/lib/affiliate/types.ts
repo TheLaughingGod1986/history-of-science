@@ -102,6 +102,8 @@ export type VideoMatchInput = {
   chapterTitles?: string[];
   tags?: string[];
   episodeType?: string | null;
+  /** Used to resolve film → topic-book wiring for Social Media Manager. */
+  youtubeVideoId?: string | null;
 };
 
 export type ProductMatchInput = {

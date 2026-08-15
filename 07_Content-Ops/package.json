@@ -28,6 +28,7 @@
     "gate:episode": "tsx scripts/gate-episode.ts",
     "brief:next": "tsx scripts/next-episode-brief.ts",
     "affiliate:apply-urls": "tsx scripts/apply-amazon-live-urls.ts",
+    "affiliate:wire-topic-books": "tsx scripts/wire-topic-book-placements.ts",
     "verify:growth-v2": "vitest run tests/growth-system-v2.test.ts tests/episode-ops-v2.test.ts && tsx scripts/diagnose-youtube-growth.ts --file content/samples/json/youtube_growth_metrics_sample.json && tsx scripts/next-episode-brief.ts --file content/samples/json/youtube_growth_metrics_sample.json --out ../docs/NEXT_EPISODE_BRIEF.md"
   },
   "prisma": {

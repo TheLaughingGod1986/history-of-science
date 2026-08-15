@@ -7,6 +7,7 @@ import { scoreClipQuality } from "../src/lib/content/quality-score";
 import { generatePlatformCopy } from "../src/lib/platforms/generate-platform-copy";
 import { scheduleClipAcrossPlatforms, londonDateTime } from "../src/lib/publishing/schedule";
 import { liveUrlForSlug } from "../src/lib/affiliate/live-product-urls";
+import { wireTopicBookPlacements } from "../src/lib/affiliate/wire-topic-book-placements";
 
 const prisma = new PrismaClient();
 
@@ -335,8 +336,12 @@ async function main() {
   });
 
   await seedAffiliateCatalog();
-
-  console.log("Seeded Orbit content ops with Will We Ever Meet Aliens? + 4 clips + affiliate catalogue");
+  // One APPROVED DESCRIPTION_PRIMARY topic book per long film (Social Media Manager).
+  // Additive — does not reset. Telescope / Brilliant / LEGO stay unplaced on these films.
+  const wired = await wireTopicBookPlacements({ skipApplyLiveUrls: true });
+  console.log(
+    `Seeded Orbit content ops with Will We Ever Meet Aliens? + 4 clips + affiliate catalogue + ${wired.wired.length} topic-book placements`,
+  );
 }
 
 async function seedAffiliateCatalog() {
