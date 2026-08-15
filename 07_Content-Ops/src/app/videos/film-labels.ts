@@ -5,19 +5,22 @@
  * - /videos is a film list forever — never /go/, Amazon, or a shop module here.
  * - Named-in-film (if marked): only `Named: {book title}` — no slug, no link.
  * - Shorts never get a book line.
- * - last-star v09 (`dbBojuwg4r8`) and v10 (`z-fUtdjWn5o`) are private —
- *   never treat as live/next Thursday. Live named cut is v11 (`REXYxuLOBoI`).
+ * - Private cuts must not win next/this Thursday:
+ *   last-star v09 (`dbBojuwg4r8`), v10 (`z-fUtdjWn5o`); Europa private (`3_W_jl2GR8w`).
+ * - Live named cuts: last-star v11 (`REXYxuLOBoI`), Europa v02 (`NbW5G1BpPY0`).
  */
 
-/** Auditor-confirmed named-in-film long (last-star v11 only). Book title text — no /go/. */
+/** Auditor-confirmed named-in-film longs. Book title text only — no /go/. */
 const NAMED_IN_FILM_BY_YOUTUBE_ID: Record<string, string> = {
   REXYxuLOBoI: "The End of Everything",
+  NbW5G1BpPY0: "Alien Oceans",
 };
 
 /** Private cuts — must not win “next Thursday” / “this film”. */
 const PRIVATE_NOT_NEXT_YOUTUBE_IDS = new Set([
   "dbBojuwg4r8", // last-star v09
   "z-fUtdjWn5o", // last-star v10
+  "3_W_jl2GR8w", // Europa private (not v02)
 ]);
 
 export function resolveYoutubeId(video: {
@@ -58,8 +61,8 @@ export function auditorFilmStatusLine(video: {
 }
 
 /**
- * Auditor named-in-film mark for last-star v11 only (`REXYxuLOBoI`).
- * Returns `Named: The End of Everything` or null. Never a slug or link.
+ * Auditor named-in-film mark (title text only).
+ * Returns `Named: …` or null. Never a slug or link.
  */
 export function namedInFilmBookLine(video: {
   youtubeVideoId: string | null;
@@ -72,7 +75,7 @@ export function namedInFilmBookLine(video: {
   return null;
 }
 
-/** True when this cut must not be the next/this Thursday hero (private last-star v09/v10). */
+/** True when this cut must not be the next/this Thursday hero (private cuts). */
 export function excludeFromNextThursdayHero(video: {
   youtubeVideoId: string | null;
   youtubeUrl: string | null;

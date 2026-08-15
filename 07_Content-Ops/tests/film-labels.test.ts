@@ -7,10 +7,13 @@ import {
 } from "../src/app/videos/film-labels";
 
 describe("film-labels (Auditor)", () => {
-  it("names only last-star v11", () => {
+  it("names last-star v11 and Europa v02 only", () => {
     expect(
       namedInFilmBookLine({ youtubeVideoId: "REXYxuLOBoI", youtubeUrl: null }),
     ).toBe("Named: The End of Everything");
+    expect(
+      namedInFilmBookLine({ youtubeVideoId: "NbW5G1BpPY0", youtubeUrl: null }),
+    ).toBe("Named: Alien Oceans");
     expect(
       namedInFilmBookLine({ youtubeVideoId: "z-fUtdjWn5o", youtubeUrl: null }),
     ).toBeNull();
@@ -18,11 +21,14 @@ describe("film-labels (Auditor)", () => {
       namedInFilmBookLine({ youtubeVideoId: "dbBojuwg4r8", youtubeUrl: null }),
     ).toBeNull();
     expect(
+      namedInFilmBookLine({ youtubeVideoId: "3_W_jl2GR8w", youtubeUrl: null }),
+    ).toBeNull();
+    expect(
       namedInFilmBookLine({ youtubeVideoId: "Mo93x0fxB1Q", youtubeUrl: null }),
     ).toBeNull();
   });
 
-  it("excludes private v09/v10 from next Thursday hero", () => {
+  it("excludes private cuts from next Thursday hero", () => {
     expect(
       excludeFromNextThursdayHero({ youtubeVideoId: "dbBojuwg4r8", youtubeUrl: null }),
     ).toBe(true);
@@ -30,7 +36,13 @@ describe("film-labels (Auditor)", () => {
       excludeFromNextThursdayHero({ youtubeVideoId: "z-fUtdjWn5o", youtubeUrl: null }),
     ).toBe(true);
     expect(
+      excludeFromNextThursdayHero({ youtubeVideoId: "3_W_jl2GR8w", youtubeUrl: null }),
+    ).toBe(true);
+    expect(
       excludeFromNextThursdayHero({ youtubeVideoId: "REXYxuLOBoI", youtubeUrl: null }),
+    ).toBe(false);
+    expect(
+      excludeFromNextThursdayHero({ youtubeVideoId: "NbW5G1BpPY0", youtubeUrl: null }),
     ).toBe(false);
   });
 
@@ -62,8 +74,8 @@ describe("film-labels (Auditor)", () => {
     expect(
       resolveYoutubeId({
         youtubeVideoId: null,
-        youtubeUrl: "https://youtu.be/REXYxuLOBoI",
+        youtubeUrl: "https://youtu.be/NbW5G1BpPY0",
       }),
-    ).toBe("REXYxuLOBoI");
+    ).toBe("NbW5G1BpPY0");
   });
 });
