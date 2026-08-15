@@ -8,7 +8,7 @@ import { DistributionPackButton } from "@/components/DistributionPackButton";
 import { ClipActions } from "@/components/ClipActions";
 import { CopyFilmCaptionButton } from "@/components/CopyFilmCaptionButton";
 import { CopyYoutubeIdButton } from "@/components/CopyYoutubeIdButton";
-import { auditorFilmStatusLine, resolveYoutubeId } from "@/app/videos/film-labels";
+import { auditorFilmStatusLine, namedInFilmBookLine, resolveYoutubeId } from "@/app/videos/film-labels";
 
 export const dynamic = "force-dynamic";
 
@@ -49,6 +49,7 @@ export default async function VideoDetailPage({
   const thumb = publicThumbSrc(video.thumbnailPath);
   const ytId = resolveYoutubeId(video);
   const statusLine = auditorFilmStatusLine(video);
+  const namedLine = namedInFilmBookLine(video);
 
   return (
     <div className="space-y-8 overflow-x-hidden">
@@ -86,6 +87,7 @@ export default async function VideoDetailPage({
               <p className="mt-2 break-words text-[#F5E8D2]/55">{video.title}</p>
             ) : null}
             <p className="mt-3 text-sm text-[#FF7A24]">{statusLine}</p>
+            {namedLine ? <p className="mt-1 text-sm text-[#F5E8D2]/70">{namedLine}</p> : null}
             <p className="mt-1 text-sm text-[#F5E8D2]/55">
               {video.publicationDate
                 ? formatInTimeZone(
@@ -99,7 +101,7 @@ export default async function VideoDetailPage({
           </div>
         </div>
 
-        {/* Watch / id above any other actions — no commerce on this page */}
+        {/* Watch / id only — /videos never hosts shop or /go/ URLs */}
         <div className="mt-4 space-y-2">
           {video.youtubeUrl ? (
             <a

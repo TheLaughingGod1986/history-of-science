@@ -5,7 +5,7 @@ import { PUBLISHING_SCHEDULE } from "@/config/publishing-schedule";
 import { AddThursdayFilmButton } from "@/components/AddThursdayFilmButton";
 import { CopyFilmCaptionButton } from "@/components/CopyFilmCaptionButton";
 import { CopyYoutubeIdButton } from "@/components/CopyYoutubeIdButton";
-import { auditorFilmStatusLine, resolveYoutubeId } from "@/app/videos/film-labels";
+import { auditorFilmStatusLine, namedInFilmBookLine, resolveYoutubeId } from "@/app/videos/film-labels";
 
 export const dynamic = "force-dynamic";
 
@@ -70,6 +70,7 @@ export default async function VideosPage() {
   const catalogue = thisFilm ? videos.filter((v) => v.id !== thisFilm.id) : videos;
   const thisIsUpcoming =
     thisFilm?.publicationDate != null && thisFilm.publicationDate.getTime() >= Date.now();
+  const thisNamed = thisFilm ? namedInFilmBookLine(thisFilm) : null;
 
   return (
     <div className="space-y-6">
@@ -140,10 +141,13 @@ export default async function VideosPage() {
                     <p className="mt-2 text-sm text-[#FF7A24]">
                       {auditorFilmStatusLine(thisFilm)}
                     </p>
+                    {thisNamed ? (
+                      <p className="mt-1 text-sm text-[#F5E8D2]/70">{thisNamed}</p>
+                    ) : null}
                   </div>
                 </Link>
 
-                {/* Watch / YouTube id first — no commerce on this page */}
+                {/* Watch / YouTube id only — /videos never hosts shop or /go/ URLs */}
                 <div className="mt-4 space-y-2">
                   {thisFilm.youtubeUrl ? (
                     <a
@@ -179,6 +183,7 @@ export default async function VideosPage() {
                   const status = auditorFilmStatusLine(video);
                   const title = filmTitle(video);
                   const ytId = resolveYoutubeId(video);
+                  const named = namedInFilmBookLine(video);
                   return (
                     <li key={video.id} className="px-4 py-3.5 sm:px-5">
                       <Link
@@ -203,6 +208,9 @@ export default async function VideosPage() {
                           <span className="mx-1.5 text-[#5A6E82]">·</span>
                           <span className="text-[#FF7A24]">{status}</span>
                         </div>
+                        {named ? (
+                          <div className="text-sm text-[#F5E8D2]/70">{named}</div>
+                        ) : null}
                       </Link>
                       {ytId || video.youtubeUrl ? (
                         <div className="mt-2 flex flex-wrap items-center gap-2">
