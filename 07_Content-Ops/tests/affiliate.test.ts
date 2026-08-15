@@ -33,6 +33,18 @@ import {
 import { shouldCheckUrl } from "../src/lib/affiliate/health";
 import { mergeDescriptionWithAffiliateLinks } from "../src/lib/publishing/youtube-package";
 import type { ProductMatchInput, VideoMatchInput } from "../src/lib/affiliate/types";
+import {
+  sanitizeAffiliateSocialText,
+  containsRawMerchantUrl,
+  containsBannedAffiliatePhrase,
+  isAllowedSocialTrackedUrl,
+  shouldIncludeAffiliateSoftMention,
+  buildSoftAffiliateMentionLine,
+} from "../src/lib/affiliate/social-copy-rules";
+import {
+  assertAffiliateSafeSocialCopy,
+} from "../src/lib/affiliate/social-copy";
+import { generatePlatformCopy } from "../src/lib/platforms/generate-platform-copy";
 
 function product(partial: Partial<ProductMatchInput> & Pick<ProductMatchInput, "id" | "name" | "slug" | "category" | "tagSlugs">): ProductMatchInput {
   return {
@@ -377,5 +389,113 @@ describe("url health scheduling", () => {
     expect(shouldCheckUrl(null)).toBe(true);
     expect(shouldCheckUrl(new Date(), 1000, Date.now())).toBe(false);
     expect(shouldCheckUrl(new Date(Date.now() - 2000), 1000, Date.now())).toBe(true);
+  });
+});
+
+describe("affiliate social copy house rules", () => {
+  it("strips raw merchant URLs and haul language", () => {
+    const dirty =
+      "Check this telescope https://www.amazon.co.uk/dp/B00TEST use my code ORBIT20 for 20% off haul";
+    const { text, violations } = sanitizeAffiliateSocialText(dirty);
+    expect(containsRawMerchantUrl(text)).toBe(false);
+    expect(containsBannedAffiliatePhrase(text)).toBe(false);
+    expect(violations.length).toBeGreaterThan(0);
+    expect(text).not.toMatch(/amazon/i);
+    expect(text).not.toMatch(/use my code/i);
+  });
+
+  it("allows only YouTube or /go/ tracked URLs", () => {
+    expect(isAllowedSocialTrackedUrl("https://youtu.be/abc")).toBe(true);
+    expect(isAllowedSocialTrackedUrl("https://orbitwithben.com/go/beginner-telescope")).toBe(
+      true,
+    );
+    expect(isAllowedSocialTrackedUrl("/go/beginner-telescope")).toBe(true);
+    expect(isAllowedSocialTrackedUrl("https://www.amazon.co.uk/dp/x")).toBe(false);
+    expect(isAllowedSocialTrackedUrl("https://brilliant.org/course/physics")).toBe(false);
+  });
+
+  it("skips soft mention without natural object, film, or when platform already used", () => {
+    expect(
+      shouldIncludeAffiliateSoftMention({
+        platform: "tiktok",
+        hasNaturalObject: false,
+        canNameSpecificFilm: true,
+        productRelevantToVideo: true,
+        hasApprovedPlacement: true,
+      }).reason,
+    ).toBe("no_natural_object");
+
+    expect(
+      shouldIncludeAffiliateSoftMention({
+        platform: "tiktok",
+        hasNaturalObject: true,
+        canNameSpecificFilm: false,
+        productRelevantToVideo: true,
+        hasApprovedPlacement: true,
+      }).reason,
+    ).toBe("no_specific_film");
+
+    expect(
+      shouldIncludeAffiliateSoftMention({
+        platform: "instagram_reels",
+        hasNaturalObject: true,
+        canNameSpecificFilm: true,
+        productRelevantToVideo: true,
+        hasApprovedPlacement: true,
+        platformMentionedThisWeek: true,
+      }).reason,
+    ).toBe("platform_already_mentioned_this_week");
+  });
+
+  it("never emits raw merchant URLs when applying constraints", () => {
+    const copies = generatePlatformCopy({
+      shortTitle: "Event horizon",
+      hook: "What happens at the event horizon?",
+      topic: "Black Holes",
+      youtubeUrl: "https://youtu.be/Mo93x0fxB1Q",
+      longTitle: "What Would Happen If You Fell Into a Black Hole?",
+      affiliate: {
+        productLabel: "Brilliant Physics",
+        productSlug: "brilliant-physics",
+        hasNaturalObject: true,
+        productRelevantToVideo: true,
+        hasApprovedPlacement: true,
+        youtubeUrl: "https://youtu.be/Mo93x0fxB1Q",
+        longTitle: "What Would Happen If You Fell Into a Black Hole?",
+      },
+    });
+
+    for (const copy of copies) {
+      expect(containsRawMerchantUrl(copy.caption)).toBe(false);
+      expect(containsBannedAffiliatePhrase(copy.caption)).toBe(false);
+      expect(copy.caption.toLowerCase()).not.toContain("amazon.");
+      expect(copy.caption.toLowerCase()).not.toContain("brilliant.org");
+      // Soft mention is a caption tail afterthought — never the opening line
+      const first = copy.caption.split("\n").find((l) => l.trim()) || "";
+      expect(first.toLowerCase().startsWith("brilliant")).toBe(false);
+    }
+
+    const tiktok = copies.find((c) => c.platform === "tiktok")!;
+    expect(tiktok.caption).toContain("YouTube description");
+  });
+
+  it("assertAffiliateSafeSocialCopy rejects merchant leaks", () => {
+    expect(() =>
+      assertAffiliateSafeSocialCopy("Buy here https://www.amazon.co.uk/dp/x"),
+    ).toThrow(/house rules/);
+    expect(() =>
+      assertAffiliateSafeSocialCopy("Thought about silence.\n\nFull film: https://youtu.be/abc"),
+    ).not.toThrow();
+  });
+
+  it("soft mention line never includes merchant hosts", () => {
+    const line = buildSoftAffiliateMentionLine({
+      platform: "x",
+      productLabel: "Beginner telescope",
+      goUrl: "https://orbitwithben.com/go/beginner-telescope",
+    });
+    expect(line).toBeTruthy();
+    expect(line!).toContain("/go/");
+    expect(containsRawMerchantUrl(line!)).toBe(false);
   });
 });

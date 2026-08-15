@@ -27,9 +27,50 @@ src/lib/affiliate/
   health.ts             Throttled URL health-check abstraction
   analytics.ts          Dashboard, opportunities, video panel
   gear.ts               Phase 5 gear catalogue JSON shape
+  social-copy-rules.ts  Hard constraints for affiliate-aware social copy
+  social-copy.ts        Sanitize + one soft mention on platform captions
+  social-context.ts     Resolve placement context for Shorts generation
 ```
 
 UI lives under `/affiliate/*` and on each long-form video detail page. Redirects: `/go/[slug]`.
+
+## Social copy house rules (hard constraints)
+
+Affiliate must not turn Orbit into a spam channel. These rules apply wherever Content Ops **generates or stores** social copy next to affiliate placements (`generatePlatformCopy`, clip platform-copy / distribution-pack / export). This is **not** a new social product — only guardrails.
+
+### Every platform
+
+- Max **one** soft mention per post. If the video is not actually about the thing, say nothing.
+- Never stack brands. Never open on a product. Never “links in bio” as the hook.
+- No raw affiliate / merchant URLs, no “use my code”, no percent-off, no haul energy.
+- Point to the **YouTube description** or an Orbit **`/go/`** link only. That is the only place a tracked URL lives on social.
+- Disclose once, quietly, where the platform requires it. Do not make the disclosure the joke.
+- Sky / science first. The tool is an afterthought.
+
+### Platform notes
+
+| Platform | Rule |
+|----------|------|
+| YouTube Shorts / TikTok | Mention only in the last 1–2s **or** caption tail; no spoken list of links; no URL on screen; no TikTok Shop |
+| Instagram Reels | Keep the mention out of the reel; one caption line (or a reply if asked); sticker/bio → YouTube or `/go/`, never a merchant |
+| X / Threads | The post is the thought; one extra line or a reply — not a product thread; links only to `youtube.com` or `/go/` |
+
+### Skip soft mentions when
+
+- the short has no natural object, or
+- that platform already soft-mentioned something this week, or
+- you cannot name a specific film (no YouTube URL / title).
+
+### Code entry points
+
+```ts
+import { applyAffiliateSocialConstraints, assertAffiliateSafeSocialCopy } from "@/lib/affiliate/social-copy";
+import { resolveAffiliateSocialContextForVideo } from "@/lib/affiliate/social-context";
+
+// generatePlatformCopy({ …, affiliate }) applies constraints automatically
+```
+
+`assertAffiliateSafeSocialCopy` rejects captions that still contain merchant URLs or banned promo language before posts are written.
 
 ## Data model
 

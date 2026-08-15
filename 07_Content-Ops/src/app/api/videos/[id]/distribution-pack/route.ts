@@ -3,6 +3,8 @@ import { prisma } from "@/lib/storage/prisma";
 import { generateShortPlan } from "@/lib/content/generate-short-plan";
 import { generatePlatformCopy } from "@/lib/platforms/generate-platform-copy";
 import { scheduleClipAcrossPlatforms, suggestShortSlot } from "@/lib/publishing/schedule";
+import { resolveAffiliateSocialContextForVideo } from "@/lib/affiliate/social-context";
+import { assertAffiliateSafeSocialCopy } from "@/lib/affiliate/social-copy";
 
 export async function POST(
   _req: Request,
@@ -52,6 +54,13 @@ export async function POST(
       },
     });
 
+    const affiliate = await resolveAffiliateSocialContextForVideo({
+      videoId: video.id,
+      clipHook: proposed.hook,
+      clipTitle: proposed.workingTitle,
+      clipTranscript: proposed.transcript,
+    });
+
     const copies = generatePlatformCopy({
       shortTitle: proposed.workingTitle,
       hook: proposed.hook,
@@ -60,6 +69,7 @@ export async function POST(
       youtubeUrl: video.youtubeUrl,
       longTitle: video.title,
       callToAction: proposed.callToAction,
+      affiliate,
     });
 
     const youtubeAt = video.publicationDate
@@ -72,6 +82,7 @@ export async function POST(
     const schedule = scheduleClipAcrossPlatforms({ youtubeShortAt: youtubeAt });
 
     for (const copy of copies) {
+      assertAffiliateSafeSocialCopy(copy.caption);
       const slot = schedule.find((s) => s.platform === copy.platform);
       await prisma.platformPost.create({
         data: {

@@ -6,6 +6,8 @@ import { createExportPackage, slugify } from "@/lib/content/export-package";
 import { generatePlatformCopy } from "@/lib/platforms/generate-platform-copy";
 import { parseTimestampToSeconds } from "@/lib/validation/schemas";
 import { PlatformId } from "@/config/platforms";
+import { resolveAffiliateSocialContextForVideo } from "@/lib/affiliate/social-context";
+import { applyAffiliateSocialConstraints } from "@/lib/affiliate/social-copy";
 
 export async function POST(
   _req: Request,
@@ -42,10 +44,20 @@ export async function POST(
   const captions = exportCaptions({
     transcript: clip.transcript,
     startSeconds: 0,
-    endSeconds: endSeconds && endSeconds > startSeconds ? endSeconds - startSeconds : clip.targetDurationSeconds || undefined,
+    endSeconds:
+      endSeconds && endSeconds > startSeconds
+        ? endSeconds - startSeconds
+        : clip.targetDurationSeconds || undefined,
   });
 
-  const copies =
+  const affiliate = await resolveAffiliateSocialContextForVideo({
+    videoId: clip.longFormVideoId,
+    clipHook: clip.hook,
+    clipTitle: clip.workingTitle,
+    clipTranscript: clip.transcript,
+  });
+
+  const rawCopies =
     clip.posts.length > 0
       ? clip.posts.map((p) => ({
           platform: p.platform as PlatformId,
@@ -57,7 +69,7 @@ export async function POST(
           coverText: p.coverText || undefined,
           storyCaption: p.storyCaption || undefined,
           commentPrompt: p.commentPrompt || undefined,
-          notes: [],
+          notes: [] as string[],
         }))
       : generatePlatformCopy({
           shortTitle: clip.workingTitle,
@@ -67,7 +79,11 @@ export async function POST(
           youtubeUrl: clip.longFormVideo.youtubeUrl,
           longTitle: clip.longFormVideo.title,
           callToAction: clip.callToAction,
+          affiliate,
         });
+
+  // Always sanitize stored/generated social copy beside affiliate placements
+  const copies = applyAffiliateSocialConstraints(rawCopies, affiliate).copies;
 
   const exportRoot = path.join(process.cwd(), "content", "exports");
   const scheduledDates: Partial<Record<PlatformId, string>> = {};

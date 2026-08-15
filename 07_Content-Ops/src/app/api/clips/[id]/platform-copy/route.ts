@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/storage/prisma";
 import { generatePlatformCopy } from "@/lib/platforms/generate-platform-copy";
+import { resolveAffiliateSocialContextForVideo } from "@/lib/affiliate/social-context";
+import {
+  applyAffiliateSocialConstraints,
+  assertAffiliateSafeSocialCopy,
+} from "@/lib/affiliate/social-copy";
 
 export async function POST(
   _req: Request,
@@ -19,6 +24,13 @@ export async function POST(
     );
   }
 
+  const affiliate = await resolveAffiliateSocialContextForVideo({
+    videoId: clip.longFormVideoId,
+    clipHook: clip.hook,
+    clipTitle: clip.workingTitle,
+    clipTranscript: clip.transcript,
+  });
+
   const copies = generatePlatformCopy({
     shortTitle: clip.workingTitle,
     hook: clip.hook || clip.workingTitle,
@@ -27,10 +39,14 @@ export async function POST(
     youtubeUrl: clip.longFormVideo.youtubeUrl,
     longTitle: clip.longFormVideo.title,
     callToAction: clip.callToAction,
+    affiliate,
   });
 
   let count = 0;
   for (const copy of copies) {
+    assertAffiliateSafeSocialCopy(copy.caption);
+    if (copy.pinnedComment) assertAffiliateSafeSocialCopy(copy.pinnedComment);
+
     const existing = clip.posts.find((p) => p.platform === copy.platform);
     if (existing) {
       await prisma.platformPost.update({
@@ -68,5 +84,12 @@ export async function POST(
     count += 1;
   }
 
-  return NextResponse.json({ count });
+  // Re-run constraints report is available via notes on copies; keep response small
+  const constrained = applyAffiliateSocialConstraints(copies, affiliate);
+
+  return NextResponse.json({
+    count,
+    affiliateApplied: Boolean(affiliate),
+    mentionsByPlatform: constrained.mentionsByPlatform,
+  });
 }

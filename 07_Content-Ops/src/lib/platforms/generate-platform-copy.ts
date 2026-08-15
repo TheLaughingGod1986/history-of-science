@@ -1,5 +1,9 @@
 import { CHANNEL_NAME, PlatformId, PLATFORMS } from "@/config/platforms";
 import { CONTENT_RULES } from "@/config/content-rules";
+import {
+  applyAffiliateSocialConstraints,
+  type AffiliateSocialContext,
+} from "@/lib/affiliate/social-copy";
 
 export type ClipCopyInput = {
   shortTitle: string;
@@ -10,6 +14,11 @@ export type ClipCopyInput = {
   longTitle?: string | null;
   callToAction?: string | null;
   hashtags?: string[];
+  /**
+   * Optional affiliate context. When present, social copy is hard-constrained:
+   * no raw merchant URLs, max one soft mention, science first.
+   */
+  affiliate?: AffiliateSocialContext | null;
 };
 
 export type PlatformCopy = {
@@ -44,7 +53,7 @@ export function renderTemplate(
   return template.replace(/\{\{(\w+)\}\}/g, (_, key: string) => vars[key] ?? "");
 }
 
-export function generatePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
+function buildBasePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
   const cta = input.callToAction || CONTENT_RULES.softCtas[0];
   const tags = input.hashtags?.length ? input.hashtags : defaultHashtags(input.topic);
   const url = input.youtubeUrl || "";
@@ -77,7 +86,11 @@ export function generatePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
       hashtags: tags.slice(0, 5),
       callToAction: cta,
       commentPrompt: "Which explanation for the silence do you find most convincing?",
-      notes: ["Natural, curious tone", "No third-party watermark", "Optional reply-video idea: deepen one comment question"],
+      notes: [
+        "Natural, curious tone",
+        "No third-party watermark",
+        "Optional reply-video idea: deepen one comment question",
+      ],
     },
     {
       platform: "instagram_reels",
@@ -131,3 +144,15 @@ export function generatePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
     },
   ];
 }
+
+/**
+ * Generate platform social copy. When `affiliate` context is provided,
+ * house rules are applied (sanitize merchant URLs; at most one soft mention).
+ */
+export function generatePlatformCopy(input: ClipCopyInput): PlatformCopy[] {
+  const base = buildBasePlatformCopy(input);
+  if (!input.affiliate) return base;
+  return applyAffiliateSocialConstraints(base, input.affiliate).copies;
+}
+
+export type { AffiliateSocialContext };
