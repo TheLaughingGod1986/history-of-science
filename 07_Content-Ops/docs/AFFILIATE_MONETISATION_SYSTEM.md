@@ -2,6 +2,8 @@
 
 Long-term monetisation platform for **Orbit With Ben**, integrated into Content Ops (`07_Content-Ops/`). Relevance before revenue — never recommend a product solely because it pays commission.
 
+Cursor agents: always-apply named-in-film gate — `.cursor/rules/orbit-affiliate-named-in-film.mdc`.
+
 ## Philosophy
 
 Every recommendation must pass: *Would we still recommend this if there were no commission?*  
