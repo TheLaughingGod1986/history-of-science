@@ -42,7 +42,7 @@ export function getAffiliateRedirectBaseUrl(): string {
   }
 }
 
-/** Production gear redirect: https://orbitwithben.com/go/{slug} */
+/** Public tracked redirect: `${APP_BASE_URL}/go/{slug}` (or AFFILIATE_REDIRECT_BASE_URL). */
 export function buildOrbitRedirectUrl(productSlug: string): string {
   return `${getAffiliateRedirectBaseUrl()}/${encodeURIComponent(productSlug)}`;
 }

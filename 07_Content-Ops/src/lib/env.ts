@@ -3,7 +3,10 @@ import { z } from "zod";
 const optionalString = z.string().optional();
 
 export const envSchema = z.object({
-  DATABASE_URL: z.string().min(1).default("file:./dev.db"),
+  /** Postgres connection URL (pooled on Vercel/Neon). Required for runtime DB access. */
+  DATABASE_URL: z.string().min(1),
+  /** Direct (non-pooled) URL for migrations; optional at runtime. */
+  DIRECT_URL: optionalString,
   APP_BASE_URL: z.string().url().default("http://localhost:3000"),
   ORBIT_TOKEN_ENCRYPTION_KEY: optionalString,
   NODE_ENV: z.string().optional(),
@@ -32,7 +35,7 @@ export const envSchema = z.object({
   AMAZON_ASSOCIATE_TAG: optionalString,
   /** Brilliant affiliate / referral ID */
   BRILLIANT_AFFILIATE_ID: optionalString,
-  /** Base for /go/{slug} redirects (e.g. https://orbitwithben.com/go) */
+  /** Base for /go/{slug} redirects; defaults to ${APP_BASE_URL}/go when unset */
   AFFILIATE_REDIRECT_BASE_URL: optionalString,
 });
 

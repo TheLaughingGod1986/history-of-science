@@ -4,16 +4,21 @@ Local multi-platform distribution + autopublish dashboard for **Orbit with Ben**
 
 ## Quick start
 
+Requires **Postgres** (local or hosted). SQLite is no longer supported.
+
 ```bash
 cp .env.example .env
+# set DATABASE_URL + DIRECT_URL (DIRECT_URL may equal DATABASE_URL for non-pooled local Postgres)
 # set ORBIT_TOKEN_ENCRYPTION_KEY=$(openssl rand -base64 32)
 npm install
-npx prisma migrate dev
+npx prisma migrate deploy   # or: npm run db:migrate
 npm run db:seed
 npm run dev:all
 ```
 
 Open http://localhost:3000 — connect accounts at `/settings/connections`.
+
+Production on Vercel: see `docs/VERCEL_DEPLOY.md` (Root Directory = `07_Content-Ops`).
 
 ## Scripts
 
