@@ -54,14 +54,21 @@ export const AFFILIATE_SOCIAL_BANNED_PHRASES = [
   "%off",
   "haul",
   "unboxing haul",
+  "unboxing",
   "link in bio",
   "links in bio",
   "linkinbio",
+  "link in comments",
+  "links in comments",
   "swipe up to buy",
   "shop now",
+  "buy now",
+  "add to cart",
   "tiktok shop",
   "amazon haul",
   "sponsored haul",
+  "product carousel",
+  "boosted catalog",
 ] as const;
 
 /** Host patterns treated as raw merchant / affiliate destinations (never emit on social). */

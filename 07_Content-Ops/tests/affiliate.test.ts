@@ -52,6 +52,21 @@ import {
 import type { EditorialTrustProductInput } from "../src/lib/affiliate/editorial-trust-gate";
 import { generateAffiliateSocialSnippets } from "../src/lib/affiliate/social-snippets";
 import {
+  FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM,
+  FIXTURE_FACEBOOK_PAGE_HOWTO,
+  countCaptionLines,
+  firstNonEmptyLine,
+  lastNonEmptyLine,
+  renderFacebookPageTemplate,
+  renderTelescopeCommentReply,
+  renderThreadsTemplate,
+  renderInstagramReelsTemplate,
+} from "../src/lib/affiliate/social-snippet-templates";
+import {
+  facebookPageCaptionViolations,
+  assertFacebookPageCaptionSafe,
+} from "../src/lib/affiliate/facebook-page-rules";
+import {
   buildSocialGoUrl,
   buildSocialYouTubeUrl,
 } from "../src/lib/affiliate/urls";
@@ -804,6 +819,162 @@ describe("live social channel affiliate snippets", () => {
         true,
       );
     }
+  });
+
+  it("encodes Social Media Manager Thursday-film Facebook pattern", () => {
+    const door = "https://youtu.be/jwst-example";
+    const caption = renderFacebookPageTemplate({
+      style: "thursday_film",
+      wonder: FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.wonder,
+      body: FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.body,
+      doorUrl: door,
+      hasFilmThisWeek: true,
+      includeSoftMention: true,
+    });
+    expect(caption).toBe(
+      `${FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.captionWithoutUrl}\n${door}`,
+    );
+    expect(firstNonEmptyLine(caption)).toBe(FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.wonder);
+    expect(lastNonEmptyLine(caption)).toBe(door);
+    expect(countCaptionLines(caption)).toBeGreaterThanOrEqual(3);
+    expect(countCaptionLines(caption)).toBeLessThanOrEqual(5);
+    expect(caption).toContain(FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.softLine);
+  });
+
+  it("encodes Social Media Manager how-to Facebook pattern (+ /go/ when no film)", () => {
+    const yt = "https://youtu.be/telescope-night";
+    const withFilm = renderFacebookPageTemplate({
+      style: "how_to",
+      wonder: FIXTURE_FACEBOOK_PAGE_HOWTO.wonder,
+      doorUrl: yt,
+      hasFilmThisWeek: true,
+      includeSoftMention: true,
+    });
+    expect(withFilm).toBe(
+      `${FIXTURE_FACEBOOK_PAGE_HOWTO.captionWithFilmWithoutUrl}\n${yt}`,
+    );
+
+    const go = "https://orbitwithben.com/go/telescope";
+    const noFilm = renderFacebookPageTemplate({
+      style: "how_to",
+      wonder: FIXTURE_FACEBOOK_PAGE_HOWTO.wonder,
+      doorUrl: go,
+      hasFilmThisWeek: false,
+      includeSoftMention: true,
+    });
+    expect(noFilm).toContain(FIXTURE_FACEBOOK_PAGE_HOWTO.softLineWithoutFilm);
+    expect(noFilm).not.toContain("Watch the film first");
+    expect(lastNonEmptyLine(noFilm)).toBe(go);
+  });
+
+  it("Threads + Reels templates: thought first, one extra line, door last; never /go/ on line 1", () => {
+    const go = "https://orbitwithben.com/go/telescope";
+    const threads = renderThreadsTemplate({
+      wonder: "The sky was quieter than I expected.",
+      doorUrl: go,
+      includeSoftMention: true,
+      doorIsGo: true,
+    });
+    expect(firstNonEmptyLine(threads)).not.toContain("/go/");
+    expect(lastNonEmptyLine(threads)).toBe(go);
+
+    const reels = renderInstagramReelsTemplate({
+      wonder: "What happens at the event horizon?",
+      doorUrl: go,
+      includeSoftMention: true,
+      doorIsGo: true,
+    });
+    expect(firstNonEmptyLine(reels)).not.toContain("/go/");
+    expect(reels).toContain("If you want to look at this yourself:");
+  });
+
+  it("generator Facebook/IG feed matches SMM thursday_film shape", () => {
+    const snippets = generateAffiliateSocialSnippets({
+      videoSlug: "jwst-early-galaxies",
+      videoTitle: "JWST and the Galaxies That Should Not Be There",
+      topic: "JWST",
+      hook: FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.wonder,
+      body: FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.body,
+      youtubeUrl: "https://youtu.be/jwst-film",
+      productLabel: "JWST explainer book",
+      productSlug: "jwst-explainer",
+      hasNaturalObject: true,
+      productRelevantToVideo: true,
+      hasApprovedPlacement: true,
+      postStyle: "thursday_film",
+    });
+    const fb = snippets.find((s) => s.platform === "facebook_page")!;
+    const ig = snippets.find((s) => s.platform === "instagram_feed")!;
+    expect(fb.caption).toContain(FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.softLine);
+    expect(firstNonEmptyLine(fb.caption)).toBe(FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.wonder);
+    expect(ig.caption).toContain(FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM.softLine);
+    expect(containsRawMerchantUrl(fb.caption)).toBe(false);
+  });
+
+  it("rejects Facebook Page never-list (merchant, shop now, haul, multi-brand, …)", () => {
+    expect(
+      facebookPageCaptionViolations(
+        "Buy this telescope\nhttps://www.amazon.co.uk/dp/x",
+        { brandNames: ["Beginner telescope"] },
+      ),
+    ).toEqual(
+      expect.arrayContaining(["raw_merchant_url", "door_not_youtube_or_go"]),
+    );
+
+    expect(
+      facebookPageCaptionViolations("Shop now for space merch\nhttps://youtu.be/x"),
+    ).toEqual(expect.arrayContaining(["boost_or_catalog_language"]));
+
+    expect(
+      facebookPageCaptionViolations(
+        "Brilliant Physics is amazing and Amazon has deals\nhttps://youtu.be/x",
+        { brandNames: ["Brilliant", "Amazon"] },
+      ),
+    ).toEqual(expect.arrayContaining(["more_than_one_brand"]));
+
+    expect(
+      facebookPageCaptionViolations("Use my code SPACE20 for 20% off\nhttps://youtu.be/x"),
+    ).toEqual(expect.arrayContaining(["banned_shop_phrase"]));
+
+    expect(
+      facebookPageCaptionViolations("Link in comments for the telescope\nhttps://youtu.be/x"),
+    ).toEqual(expect.arrayContaining(["link_in_comments_spam"]));
+
+    expect(() =>
+      assertFacebookPageCaptionSafe(
+        "Haul unboxing of Amazon gear\nhttps://www.amazon.com/x",
+      ),
+    ).toThrow(/Facebook Page caption violates/);
+
+    // Soft mention must not be line 1
+    expect(
+      facebookPageCaptionViolations(
+        "If you want that kind of view, I left the one I use under the film.\nhttps://youtu.be/x",
+      ),
+    ).toEqual(expect.arrayContaining(["soft_mention_on_line_1"]));
+
+    // Same /go/ three days, no film
+    expect(
+      facebookPageCaptionViolations(
+        "Quiet night.\nhttps://orbitwithben.com/go/telescope",
+        {
+          productSlug: "telescope",
+          recentGoSlugs: ["telescope", "telescope"],
+          hasFilmThisWeek: false,
+        },
+      ),
+    ).toEqual(expect.arrayContaining(["same_go_three_days_no_film"]));
+  });
+
+  it("comment reply fixture discloses once and points at film or /go/", () => {
+    expect(renderTelescopeCommentReply({ hasFilm: true })).toContain("under the film");
+    expect(renderTelescopeCommentReply({ hasFilm: true })).toContain("affiliate");
+    const go = renderTelescopeCommentReply({
+      hasFilm: false,
+      doorUrl: "https://orbitwithben.com/go/telescope",
+    });
+    expect(go).toContain("/go/telescope");
+    expect(containsRawMerchantUrl(go)).toBe(false);
   });
 
   it("Shorts description path still gets zero affiliate links", () => {

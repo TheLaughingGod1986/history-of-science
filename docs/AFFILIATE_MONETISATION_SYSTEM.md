@@ -32,6 +32,8 @@ src/lib/affiliate/
   social-context.ts     Resolve placement context for Shorts generation
   social-channels.ts    Live channel → AffiliateClick.source + UTM map
   social-snippets.ts    Deterministic Threads / IG / Facebook Page snippets
+  social-snippet-templates.ts  Social Media Manager fixtures + renderers
+  facebook-page-rules.ts  Facebook Page feed hard rejects
   social-snippet-service.ts  DB-backed snippet pack + draft enqueue
   editorial-trust-gate.ts  Video Auditor trust gate (approve + description)
 ```
@@ -102,9 +104,99 @@ Affiliate must not turn Orbit into a spam channel. These rules apply wherever Co
 
 | Platform | Rule |
 |----------|------|
-| YouTube Shorts / TikTok | Mention only in the last 1–2s **or** caption tail; no spoken list of links; no URL on screen; no TikTok Shop |
-| Instagram Reels | Keep the mention out of the reel; one caption line (or a reply if asked); sticker/bio → YouTube or `/go/`, never a merchant |
+| YouTube Shorts / TikTok | Mention only in the last 1–2s **or** caption tail; no spoken list of links; no URL on screen; no TikTok Shop. **Short description itself: zero affiliate links** (Auditor gate). |
+| Instagram Reels | Keep the mention out of the reel; one caption line (or a reply if asked); sticker/bio → YouTube or `/go/`, never a merchant. Caption may say “I left the one thing under the film.” |
+| Instagram Feed | Distinct from Reels. One soft caption mention; never merchant stickers. |
+| Facebook Reels | Same soft-mention rules as other Reels — not the Page feed. |
+| Facebook Page | Documentary **feed/page** post (distinct from `facebook_reels`). One optional `/go/` or YouTube link at the end. No Amazon stickers, no “shop now,” no boost/shop energy. |
 | X / Threads | The post is the thought; one extra line or a reply — not a product thread; links only to `youtube.com` or `/go/` |
+
+### Live Orbit social channels (Threads · Instagram · Facebook Page)
+
+Affiliate-aware captions for the live channels Ben runs are generated inside Content Ops — **not** a separate social app. Copy patterns are encoded as fixtures/templates in `social-snippet-templates.ts` (Social Media Manager).
+
+| Content Ops platform id | `utm_source` / `AffiliateClick.source` | Notes |
+|-------------------------|----------------------------------------|--------|
+| `threads` | `threads` | Thought first, one extra line, one link |
+| `instagram_reels` | `instagram` | Soft mention in caption only; sticker/bio → YouTube or `/go/` |
+| `instagram_feed` | `instagram` | Same caption pattern as Facebook Page |
+| `facebook_page` | `facebook` | Distinct from `facebook_reels` — feed/page only |
+| `facebook_reels` | `facebook` | Reels path; same click source bucket |
+| YouTube description `/go/` | `youtube` | Default when utm_source omitted |
+
+**UTM on social → `/go/` or YouTube links**
+
+| Param | Value |
+|-------|--------|
+| `utm_source` | `threads` \| `instagram` \| `facebook` (or `youtube` from description) |
+| `utm_medium` | `affiliate` when a product is soft-mentioned; `social` when the post only points at the film |
+| `utm_campaign` | `{video-slug}` |
+| `utm_content` | `{affiliate-product-slug}` when a product is mentioned |
+
+Tracked URLs on social may **only** be the YouTube film URL or an Orbit `/go/{slug}` redirect — never `amazon.co.uk`, Brilliant checkout, or other merchant URLs. Never put `/go/{slug}` on line 1 of a Short/Reel/post.
+
+#### Social Media Manager templates
+
+**Facebook Page feed (not Reels)** — 3–5 short lines. First line = wonder. Soft mention never in line 1. Last line = one door (YouTube or `/go/`) so the preview card is us, not a merchant.
+
+Thursday film fixture (JWST):
+
+```
+JWST keeps finding galaxies that should not be there yet.
+
+Orbit walks through what the pictures actually show, and what they do not.
+
+Film is up. If you want the one explainer I used, it is under the film.
+[YouTube film URL]
+```
+
+How-to / telescope fixture:
+
+```
+I spent a night on this patch of sky. This is what it looked like.
+
+If you want that kind of view, I left the one I use under the film. I get a small cut if you grab it.
+
+Watch the film first.
+[YouTube film URL]
+```
+
+If there is no film that week, the door is `https://orbitwithben.com/go/{slug}` instead (no “Watch the film first”).
+
+**Instagram feed** — same caption pattern as Facebook Page; one `/go/` or YouTube link.
+
+**Instagram Reels** — mention stays in the caption (or one reply). Link sticker / bio = `/go/{slug}` or YouTube. Never a merchant sticker. Soft line: “I left the one thing under the film.”
+
+**Threads** — thought first, one extra line, one link (YouTube or `/go/{slug}`). No product thread.
+
+**Comment reply** (“what telescope?”) — one honest reply, point to the film description or `/go/telescope`, disclose once, stop. Fixture: `FIXTURE_COMMENT_REPLY_TELESCOPE` / `renderTelescopeCommentReply()`.
+
+#### Never on the Facebook Page (generator + tests reject)
+
+- Raw Amazon / Brilliant / merchant URLs (preview becomes a shop card)
+- Link stickers or buttons to Amazon, “Shop now”, store tabs, product tags
+- Boosting as a conversion/shop ad or catalogue
+- More than one brand in a post
+- “Use my code”, percent-off, haul, unboxing-as-the-post
+- Comment-spam “link in comments” with a merchant URL
+- Pinning an affiliate comment
+- Posting the same `/go/` link three days in a row with no new film
+
+Code: `facebookPageCaptionViolations` / `assertFacebookPageCaptionSafe` in `facebook-page-rules.ts`.
+
+**Approval:** snippets render with `approvedForPublish: false`. Editors copy from the video Affiliate Monetisation card or `GET /api/affiliate/social-snippets?videoId=…`, or enqueue PlatformPost **drafts** (`POST … action: enqueue-drafts`) after an approved description placement. Same publish/approval flow as other social posts — never auto-post affiliate mentions.
+
+```ts
+import { generateAffiliateSocialSnippets } from "@/lib/affiliate/social-snippets";
+import {
+  FIXTURE_FACEBOOK_PAGE_THURSDAY_FILM,
+  renderFacebookPageTemplate,
+} from "@/lib/affiliate/social-snippet-templates";
+import { buildSocialGoUrl, buildSocialYouTubeUrl } from "@/lib/affiliate/urls";
+import { socialPlatformToClickSource } from "@/lib/affiliate/social-channels";
+```
+
+Dashboard `/affiliate` shows **clicks & revenue by source** including `youtube`, `threads`, `instagram`, `facebook`.
 
 ### Skip soft mentions when
 
@@ -198,11 +290,13 @@ import { mergeDescriptionWithAffiliateLinks } from "@/lib/publishing/youtube-pac
 3. Apply programme tag from env  
 4. 302 to affiliate URL with UTM preserved  
 
-Recommended UTM: `utm_source=youtube` · `utm_medium=affiliate` · `utm_campaign={video-slug}` · `utm_content={product-slug}`
+Recommended UTM (YouTube description): `utm_source=youtube` · `utm_medium=affiliate` · `utm_campaign={video-slug}` · `utm_content={product-slug}`
+
+Social UTM map: see **Live Orbit social channels** above (`threads` / `instagram` / `facebook`).
 
 ## Reporting
 
-- `/affiliate` — summary + warnings  
+- `/affiliate` — summary + warnings + clicks/revenue by source (youtube, threads, instagram, facebook, …)
 - `/affiliate/opportunities` — opportunity score, views, links, RPM  
 - Homepage **Monetisation** card — month revenue, clicks, affiliate RPM, missing links  
 - Metrics: clicks, CTR, conversions, EPC, revenue / 1k views, affiliate RPM (alongside YouTube RPM when ads data exists). `totalContentRpm()` ready for AdSense + Affiliate + Sponsorship.

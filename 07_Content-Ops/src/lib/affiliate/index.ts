@@ -20,5 +20,7 @@ export * from "./social-copy";
 export * from "./social-context";
 export * from "./social-channels";
 export * from "./social-snippets";
+export * from "./social-snippet-templates";
 export * from "./social-snippet-service";
+export * from "./facebook-page-rules";
 export * from "./editorial-trust-gate";
