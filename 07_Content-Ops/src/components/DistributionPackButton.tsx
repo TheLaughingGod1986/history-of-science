@@ -27,15 +27,17 @@ export function DistributionPackButton({ videoId }: { videoId: string }) {
   }
 
   return (
-    <div className="text-right">
+    <div className="w-full sm:w-auto sm:text-right">
       <button
         onClick={run}
         disabled={loading}
-        className="rounded-full bg-[#FF7A24] px-5 py-2.5 text-sm font-medium text-[#0A0C12] disabled:opacity-60"
+        className="inline-flex min-h-11 w-full items-center justify-center rounded-full bg-[#FF7A24] px-5 py-2.5 text-sm font-medium text-[#0A0C12] disabled:opacity-60 sm:w-auto"
       >
         {loading ? "Generating…" : "Create Distribution Pack"}
       </button>
-      {message ? <p className="mt-2 max-w-xs text-xs text-[#F5E8D2]/60">{message}</p> : null}
+      {message ? (
+        <p className="mt-2 max-w-xs text-xs text-[#F5E8D2]/60 sm:ml-auto">{message}</p>
+      ) : null}
     </div>
   );
 }

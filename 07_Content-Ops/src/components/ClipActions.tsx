@@ -32,14 +32,14 @@ export function ClipActions({ clipId, status }: { clipId: string; status: string
           <button
             disabled={busy}
             onClick={() => setStatus("approved")}
-            className="rounded-full bg-[#FF7A24] px-3 py-1.5 text-xs text-[#0A0C12]"
+            className="inline-flex min-h-11 items-center rounded-full bg-[#FF7A24] px-4 py-2 text-sm text-[#0A0C12]"
           >
             Approve
           </button>
           <button
             disabled={busy}
             onClick={() => setStatus("rejected")}
-            className="rounded-full border border-white/15 px-3 py-1.5 text-xs"
+            className="inline-flex min-h-11 items-center rounded-full border border-white/15 px-4 py-2 text-sm"
           >
             Reject
           </button>
@@ -49,7 +49,7 @@ export function ClipActions({ clipId, status }: { clipId: string; status: string
         <button
           disabled={busy}
           onClick={() => setStatus("editing")}
-          className="rounded-full border border-white/15 px-3 py-1.5 text-xs"
+          className="inline-flex min-h-11 items-center rounded-full border border-white/15 px-4 py-2 text-sm"
         >
           Start editing
         </button>
@@ -58,7 +58,7 @@ export function ClipActions({ clipId, status }: { clipId: string; status: string
         <button
           disabled={busy}
           onClick={() => setStatus("exported")}
-          className="rounded-full border border-white/15 px-3 py-1.5 text-xs"
+          className="inline-flex min-h-11 items-center rounded-full border border-white/15 px-4 py-2 text-sm"
         >
           Mark exported
         </button>
