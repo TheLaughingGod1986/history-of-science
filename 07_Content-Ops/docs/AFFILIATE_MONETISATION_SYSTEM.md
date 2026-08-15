@@ -13,8 +13,10 @@ Editorial / scientific interest is primary. Max **4** affiliate links per video.
 src/lib/affiliate/
   types.ts              Shared constants & DTOs
   schemas.ts            Zod validation
-  matching.ts           Deterministic relevance + interchangeable strategy
-  description.ts        Pure YouTube affiliate block builder
+  matching.ts           Deterministic relevance + Creator topic→slot menu
+  topic-product-map.ts  Topic → 4-slot recommendation menu (leave empty rules)
+  creator-description-voice.ts  Official description templates + disclosure
+  description.ts        Pure YouTube affiliate block builder (Creator voice)
   description-service.ts DB-backed templates + video placement merge
   urls.ts               Redirect base, UTM, programme tag injection
   tracking.ts           Click recording + destination resolve
@@ -50,12 +52,13 @@ Matching may still surface **up to 4 candidates** on the video Affiliate Monetis
 
 1. Named on screen or in the VO of **this** video — not “related,” not “viewers also bought.”
 2. A curious viewer is better off after using it (see the sky, read the paper, understand the picture).
-3. **One** primary affiliate link per long-form film. A second only if it is a free/cheap companion (e.g. paper + book). Never a stack. Hard cap: **2**.
-4. Disclosure once, **first line** of the description, plain:  
-   `Some links are affiliate. We only add ones we’d recommend with no commission.`  
-   Do not duplicate if already present.
-5. Tone stays documentary. “If you want to look at this yourself” is fine. “Buy now / limited / 50% off” is not.
-6. Must not compete with the real CTA (film title + subscribe). Affiliate sits **below** that.
+3. **One** primary affiliate link per long-form film. A second only if it is a free/cheap companion (e.g. paper + book). Never a stack. Hard cap: **2**. Matching may still show **up to 4** card candidates (Creator topic menu) — empty a slot rather than force a product.
+4. Disclosure once, as the **last line** of the affiliate block (Creator):  
+   `Some of these links are affiliate links. We only share things we’d still point you to with no commission.`  
+   Do not put the affiliate block in the first screen. Block sits **after** chapters + subscribe, **before** playlist / next film / hashtags.
+5. Tone stays documentary (Creator templates). No “buy now / must-have / limited / support the channel by shopping.”
+6. Must not compete with the real CTA (film title + subscribe). Affiliate sits **below** that. Never read affiliate links on camera; never in the first 90s of the film.
+7. Shorts: **zero** description links — film CTA only.
 
 ### Video types
 
@@ -269,17 +272,36 @@ Scoring highlights: exact topic +40, related +20, category +15, evergreen +5, fe
 
 On a video page: **Regenerate recommendations** → Approve / Reject / Remove.
 
-## YouTube descriptions
+## YouTube descriptions (Creator voice)
 
 ```ts
 import { generateYouTubeDescriptionWithAffiliates } from "@/lib/affiliate/description-service";
 import { mergeDescriptionWithAffiliateLinks } from "@/lib/publishing/youtube-package";
+import { buildCreatorDescriptionTemplateMap } from "@/lib/affiliate/creator-description-voice";
 ```
 
-- Editable templates in `AffiliateDescriptionTemplate` (seeded defaults)
-- Disclosure appended unless the description already contains one
-- Amazon-specific disclosure configurable (`amazon_disclosure` template)
-- Links use Orbit redirects (`/go/{slug}`), not raw affiliate URLs
+- Editable templates in `AffiliateDescriptionTemplate` (seeded from Creator playbook — Brilliant, telescope, books, LEGO, topic-tuned book/LEGO first lines, headers, disclosure)
+- Header (pick one): `If you want to go further` · `Orbit’s next steps (not a shop)`
+- Disclosure is the **last line** of the affiliate block (never the first line of the description)
+- Block placement: after chapters + subscribe · before playlist / next film / hashtags · not in the first screen
+- Links use Orbit redirects (`/go/{slug}`), not raw affiliate URLs — placeholders only in templates
+- Shorts: no affiliate block
+
+### Topic → 4-slot recommendation menu
+
+Encoded in `topic-product-map.ts` and applied by `recommendProductsForVideo`. Card may show up to 4 candidates; description auto-insert still follows Auditor (≤1 primary + optional companion). Empty a slot rather than force.
+
+| Topic | Primary | Secondary | Evergreen | Leave empty |
+|-------|---------|-----------|-----------|-------------|
+| black holes | Book | Brilliant | Brilliant (if book primary) | Telescope, LEGO |
+| Mars | Telescope | Book, LEGO | Brilliant | (contextual) |
+| telescopes | Telescope | Book, LEGO | Brilliant | (contextual) |
+| JWST | LEGO Webb or cosmic-dawn book | The other + telescope | Brilliant | Backyard scope if film never returns to Earth sky |
+| relativity | Brilliant | Book | Book | Telescope, LEGO |
+| kids astronomy | LEGO | Kids book, telescope | Brilliant (not if under ~10) | **Never Brilliant as primary** |
+| Starship | Book | LEGO, Brilliant | Brilliant | Telescope (unless launch/sky) |
+| cosmology | Book | Brilliant | Brilliant | Telescope, LEGO |
+| exoplanets | Book | Brilliant | Brilliant | Telescope as “exoplanet finder” |
 
 ## Link tracking
 

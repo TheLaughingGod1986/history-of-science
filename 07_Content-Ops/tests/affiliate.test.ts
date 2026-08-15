@@ -10,7 +10,10 @@ import {
   appendAffiliateSectionToDescription,
   buildAffiliateDescriptionSection,
   recommendationsToDescriptionLinks,
+  affiliateBlockAppearsInFirstScreen,
+  CREATOR_AFFILIATE_DISCLOSURE,
 } from "../src/lib/affiliate/description";
+import { productFamilyOf } from "../src/lib/affiliate/topic-product-map";
 import {
   affiliateRpm,
   estimateCommission,
@@ -153,15 +156,51 @@ describe("affiliate matching", () => {
     }),
   ];
 
-  it("scores black-hole episode toward Brilliant + books + telescope, not spam", () => {
+  it("scores black-hole episode toward book + Brilliant, not telescope or spam", () => {
     const set = recommendProductsForVideo(blackHoleVideo, catalogue);
     expect(set.all.length).toBeGreaterThan(0);
     expect(set.all.length).toBeLessThanOrEqual(4);
     const slugs = set.all.map((r) => r.product.slug);
+    expect(slugs).toContain("cosmology-book");
     expect(slugs).toContain("brilliant-physics");
+    expect(slugs).not.toContain("beginner-telescope");
     expect(slugs).not.toContain("spam-gadget");
     expect(slugs).not.toContain("inactive");
-    expect(set.primary?.product.slug).toBe("brilliant-physics");
+    expect(set.primary?.product.slug).toBe("cosmology-book");
+    expect(productFamilyOf(set.primary!.product)).toBe("books");
+  });
+
+  it("kids film never uses Brilliant as primary", () => {
+    const kidsVideo: VideoMatchInput = {
+      title: "Kids Astronomy: Meet the Moon",
+      topic: "Kids astronomy",
+      primaryKeyword: "kids moon",
+      summary: "A gentle first look at the Moon for children.",
+      category: "Kids",
+    };
+    const kidsCatalogue = [
+      ...catalogue,
+      product({
+        id: "7",
+        name: "Space LEGO Hubble",
+        slug: "space-lego-hubble",
+        category: "Space LEGO",
+        tagSlugs: ["lego", "kids", "telescope"],
+        featured: true,
+        priority: 5,
+      }),
+      product({
+        id: "8",
+        name: "Kids space book",
+        slug: "kids-space-book",
+        category: "Astronomy books",
+        tagSlugs: ["books", "kids", "astronomy"],
+      }),
+    ];
+    const set = recommendProductsForVideo(kidsVideo, kidsCatalogue);
+    expect(set.primary).toBeTruthy();
+    expect(productFamilyOf(set.primary!.product)).not.toBe("brilliant");
+    expect(set.primary?.product.slug).not.toBe("brilliant-physics");
   });
 
   it("excludes inactive products from relevance", () => {
@@ -199,37 +238,106 @@ describe("affiliate description generation", () => {
     },
   ];
 
-  it("builds documentary section with templates", () => {
-    const section = buildAffiliateDescriptionSection({ links });
-    expect(section).toContain("If you want to look at this yourself");
+  it("builds Creator-voice section with disclosure as last line", () => {
+    const section = buildAffiliateDescriptionSection({
+      links,
+      topicKey: "telescopes",
+    });
+    expect(section).toContain("If you want to go further");
     expect(section).toContain("beginner-telescope");
     expect(section.toLowerCase()).not.toContain("buy now");
+    expect(section.toLowerCase()).not.toContain("must-have");
+    expect(section.trim().endsWith(CREATOR_AFFILIATE_DISCLOSURE)).toBe(true);
+    expect(section.indexOf("If you want to go further")).toBeLessThan(
+      section.indexOf(CREATOR_AFFILIATE_DISCLOSURE),
+    );
   });
 
-  it("puts disclosure first, dedupes links, does not duplicate disclosure", () => {
+  it("places block after subscribe, before playlist; disclosure last; not first screen", () => {
     const withDupes = [...links, links[0]];
+    const base = [
+      "What happens at the event horizon is stranger than a horror story.",
+      "",
+      "Orbit walks through the pictures and the evidence.",
+      "",
+      "Chapters",
+      "0:00 Cold open",
+      "1:00 The horizon",
+      "",
+      "Subscribe for the next film.",
+      "",
+      "Playlist",
+      "More Orbit documentaries",
+      "",
+      "#OrbitWithBen #BlackHoles",
+    ].join("\n");
+
     const desc = appendAffiliateSectionToDescription({
-      description: "Hook paragraph about black holes.\nSubscribe for the next film.",
+      description: base,
       links: withDupes,
     });
-    expect(desc.startsWith("Some links are affiliate")).toBe(true);
-    expect(desc).toContain("no commission");
+
+    expect(desc.startsWith("Some")).toBe(false);
+    expect(desc.indexOf("Subscribe for the next film")).toBeLessThan(
+      desc.indexOf("If you want to go further"),
+    );
+    expect(desc.indexOf("If you want to go further")).toBeLessThan(
+      desc.indexOf("Playlist"),
+    );
+    expect(desc.indexOf(CREATOR_AFFILIATE_DISCLOSURE)).toBeGreaterThan(
+      desc.indexOf("/go/"),
+    );
+    expect(desc.indexOf(CREATOR_AFFILIATE_DISCLOSURE)).toBeLessThan(
+      desc.indexOf("Playlist"),
+    );
+    expect(affiliateBlockAppearsInFirstScreen(desc)).toBe(false);
     expect(desc.match(/beginner-telescope/g)?.length).toBe(1);
-    // Film CTA body remains above affiliate section
-    const disclosureEnd = desc.indexOf("\n\n");
-    const afterDisclosure = desc.slice(disclosureEnd + 2);
-    expect(afterDisclosure.startsWith("Hook paragraph")).toBe(true);
+
     const again = appendAffiliateSectionToDescription({
       description: desc,
       links,
     });
-    expect(again.toLowerCase().split("some links are affiliate").length - 1).toBe(1);
+    expect(
+      again.toLowerCase().split("some of these links are affiliate").length - 1,
+    ).toBe(1);
+  });
+
+  it("Shorts get no affiliate block", () => {
+    const desc = appendAffiliateSectionToDescription({
+      description: "Short CTA — watch the full film on the channel.",
+      links,
+      trustVideo: {
+        title: "Diamond Planet Short",
+        topic: "Wonder",
+        isShort: true,
+      },
+    });
+    expect(desc).toBe("Short CTA — watch the full film on the channel.");
+    expect(desc).not.toContain("If you want to go further");
+  });
+
+  it("uses topic-tuned black-hole book first line", () => {
+    const section = buildAffiliateDescriptionSection({
+      links: [
+        {
+          productName: "Cosmology book",
+          productSlug: "cosmology-book",
+          category: "Astronomy books",
+          url: "https://example.invalid/x",
+        },
+      ],
+      topicKey: "black-holes",
+    });
+    expect(section).toContain(
+      "How we actually know a black hole is there, without turning it into a horror story.",
+    );
   });
 
   it("integrates with YouTube package description merge", () => {
     const merged = mergeDescriptionWithAffiliateLinks("Base description", links);
     expect(merged).toContain("Base description");
-    expect(merged).toContain("If you want to look at this yourself");
+    expect(merged).toContain("If you want to go further");
+    expect(merged.trim().includes(CREATOR_AFFILIATE_DISCLOSURE)).toBe(true);
   });
 
   it("dedupes recommendation lists", () => {

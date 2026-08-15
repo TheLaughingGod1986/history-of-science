@@ -6,6 +6,14 @@ import {
   type ScoredRecommendation,
   type VideoMatchInput,
 } from "./types";
+import {
+  familyForbiddenForPlan,
+  getTopicSlotPlan,
+  inferCreatorTopicKey,
+  productFamilyOf,
+  type ProductFamily,
+  type TopicSlotPlan,
+} from "./topic-product-map";
 
 function parseKeywords(raw: string[] | string | null | undefined): string[] {
   if (!raw) return [];
@@ -76,8 +84,10 @@ const TOPIC_TAG_ALIASES: Record<string, string[]> = {
   books: ["books"],
   jupiter: ["astronomy", "planets"],
   saturn: ["astronomy"],
-  jwst: ["astronomy", "nasa", "telescope"],
-  "james webb": ["astronomy", "nasa", "telescope"],
+  jwst: ["jwst", "astronomy", "nasa", "telescope"],
+  "james webb": ["jwst", "astronomy", "nasa", "telescope"],
+  webb: ["jwst", "astronomy", "nasa"],
+  "cosmic dawn": ["jwst", "cosmology", "astronomy"],
 };
 
 function inferTagsFromText(text: string): Set<string> {
@@ -264,68 +274,216 @@ export function scoreAffiliateRelevance(
 }
 
 /**
- * Return strongest recommendations: 1 primary, up to 2 secondary, 1 evergreen.
- * Max 4 links. Irrelevant high-commission products must not win on commission alone.
+ * Return strongest recommendations using Creator topic → 4-slot menu when known.
+ * Matching may still return up to 4 card candidates. Empty a slot rather than force.
+ * Description auto-insert remains Auditor-capped separately.
  */
 export function recommendProductsForVideo(
   video: VideoMatchInput,
   products: ProductMatchInput[],
-  options?: { maxLinks?: number; minScore?: number },
+  options?: {
+    maxLinks?: number;
+    minScore?: number;
+    filmLooksAtNightSky?: boolean;
+    adultInvestigation?: boolean;
+    kidsUnder10?: boolean;
+  },
 ): AffiliateRecommendationSet {
   const maxLinks = options?.maxLinks ?? MAX_AFFILIATE_LINKS_PER_VIDEO;
   const minScore = options?.minScore ?? 15;
+  const topicKey = inferCreatorTopicKey(video);
+  const plan = getTopicSlotPlan(topicKey);
 
   const scored: ScoredRecommendation[] = products
     .map((product) => {
       const { score, reasons } = scoreAffiliateRelevance(video, product);
+      const family = productFamilyOf(product);
+      const forbidden = familyForbiddenForPlan(family, plan, {
+        filmLooksAtNightSky: options?.filmLooksAtNightSky,
+        adultInvestigation: options?.adultInvestigation,
+        kidsUnder10: options?.kidsUnder10,
+      });
+      if (forbidden) {
+        return {
+          product,
+          relevanceScore: 0,
+          reasons: [
+            ...reasons,
+            plan?.leaveEmptyIf
+              ? `topic map leave-empty: ${plan.leaveEmptyIf}`
+              : "topic map leave-empty",
+          ],
+          role: "secondary" as const,
+        };
+      }
+      // Soft boost when product family matches a planned slot
+      let adjusted = score;
+      const slotReasons = [...reasons];
+      if (plan && family && score >= minScore) {
+        if (plan.primary === family) {
+          adjusted += 12;
+          slotReasons.push("topic-map primary family (+12)");
+        } else if (plan.secondary.includes(family)) {
+          adjusted += 6;
+          slotReasons.push("topic-map secondary family (+6)");
+        } else if (plan.evergreen === family) {
+          adjusted += 4;
+          slotReasons.push("topic-map evergreen family (+4)");
+        }
+      }
       return {
         product,
-        relevanceScore: score,
-        reasons,
+        relevanceScore: adjusted,
+        reasons: slotReasons,
         role: "secondary" as const,
       };
     })
     .filter((s) => s.relevanceScore >= minScore)
     .sort((a, b) => {
       if (b.relevanceScore !== a.relevanceScore) return b.relevanceScore - a.relevanceScore;
-      // Tie-break: prefer lower commission noise — editorial first, then featured
       if (a.product.featured !== b.product.featured) return a.product.featured ? -1 : 1;
       return a.product.name.localeCompare(b.product.name);
     });
 
-  const used = new Set<string>();
-  const pick = (
-    list: ScoredRecommendation[],
-    role: ScoredRecommendation["role"],
-    predicate?: (s: ScoredRecommendation) => boolean,
-  ): ScoredRecommendation | null => {
-    for (const item of list) {
-      if (used.has(item.product.id)) continue;
-      if (predicate && !predicate(item)) continue;
-      used.add(item.product.id);
-      return { ...item, role };
-    }
-    return null;
-  };
+  if (plan) {
+    return assignSlotsFromTopicPlan(scored, plan, maxLinks);
+  }
 
-  const primary = pick(scored, "primary");
+  return assignSlotsLegacy(scored, maxLinks);
+}
+
+function pickByFamily(
+  list: ScoredRecommendation[],
+  used: Set<string>,
+  family: ProductFamily | null,
+  role: ScoredRecommendation["role"],
+): ScoredRecommendation | null {
+  if (!family) return null;
+  for (const item of list) {
+    if (used.has(item.product.id)) continue;
+    if (productFamilyOf(item.product) !== family) continue;
+    used.add(item.product.id);
+    return { ...item, role };
+  }
+  return null;
+}
+
+function pickAny(
+  list: ScoredRecommendation[],
+  used: Set<string>,
+  role: ScoredRecommendation["role"],
+  predicate?: (s: ScoredRecommendation) => boolean,
+): ScoredRecommendation | null {
+  for (const item of list) {
+    if (used.has(item.product.id)) continue;
+    if (predicate && !predicate(item)) continue;
+    used.add(item.product.id);
+    return { ...item, role };
+  }
+  return null;
+}
+
+/**
+ * Fill Creator 4-slot menu. Empty a slot rather than force an unrelated product.
+ */
+function assignSlotsFromTopicPlan(
+  scored: ScoredRecommendation[],
+  plan: TopicSlotPlan,
+  maxLinks: number,
+): AffiliateRecommendationSet {
+  const used = new Set<string>();
+
+  let primaryFamily = plan.primary;
+  if (plan.neverBrilliantPrimary && primaryFamily === "brilliant") {
+    primaryFamily = plan.secondary.find((f) => f !== "brilliant") || null;
+  }
+
+  let primary =
+    pickByFamily(scored, used, primaryFamily, "primary") ||
+    // JWST: primary may be LEGO or book — try the other secondary if primary empty
+    (plan.topicKey === "jwst"
+      ? pickByFamily(scored, used, "books", "primary") ||
+        pickByFamily(scored, used, "lego", "primary")
+      : null);
+
+  // Kids: never allow Brilliant as primary even via fallback
+  if (
+    primary &&
+    plan.neverBrilliantPrimary &&
+    productFamilyOf(primary.product) === "brilliant"
+  ) {
+    used.delete(primary.product.id);
+    primary =
+      pickByFamily(scored, used, "lego", "primary") ||
+      pickByFamily(scored, used, "books", "primary") ||
+      pickByFamily(scored, used, "telescope", "primary");
+  }
+
+  const secondary: ScoredRecommendation[] = [];
+  for (const fam of plan.secondary) {
+    if (secondary.length >= 2) break;
+    const next = pickByFamily(scored, used, fam, "secondary");
+    if (next) secondary.push(next);
+    // empty slot rather than force
+  }
+
+  let evergreen: ScoredRecommendation | null = null;
+  if (plan.evergreen) {
+    // “Brilliant if the book is primary; else the book”
+    if (
+      plan.topicKey === "black-holes" ||
+      plan.topicKey === "relativity" ||
+      plan.topicKey === "cosmology" ||
+      plan.topicKey === "exoplanets"
+    ) {
+      const primaryFam = primary ? productFamilyOf(primary.product) : null;
+      const evergreenFam =
+        primaryFam === "books" ? "brilliant" : primaryFam === "brilliant" ? "books" : plan.evergreen;
+      evergreen = pickByFamily(scored, used, evergreenFam, "evergreen");
+    } else if (plan.neverBrilliantPrimary && plan.evergreen === "brilliant") {
+      // Kids: Brilliant only as evergreen when not under-10 exclusion (already filtered)
+      evergreen = pickByFamily(scored, used, "brilliant", "evergreen");
+    } else {
+      evergreen = pickByFamily(scored, used, plan.evergreen, "evergreen");
+    }
+  }
+
+  // Do not back-fill empty slots with leaveEmpty families or random products
+  const all = [primary, ...secondary, evergreen]
+    .filter((x): x is ScoredRecommendation => x != null)
+    .slice(0, maxLinks);
+
+  return {
+    primary: all.find((a) => a.role === "primary") || all[0] || null,
+    secondary: all.filter((a) => a.role === "secondary").slice(0, 2),
+    evergreen: all.find((a) => a.role === "evergreen") || null,
+    all,
+  };
+}
+
+function assignSlotsLegacy(
+  scored: ScoredRecommendation[],
+  maxLinks: number,
+): AffiliateRecommendationSet {
+  const used = new Set<string>();
+  const primary = pickAny(scored, used, "primary");
   const secondary: ScoredRecommendation[] = [];
   while (secondary.length < 2) {
-    const next = pick(scored, "secondary");
+    const next = pickAny(scored, used, "secondary");
     if (!next) break;
     secondary.push(next);
   }
   const evergreen =
-    pick(scored, "evergreen", (s) => s.product.evergreen) ||
-    pick(scored, "evergreen", (s) =>
+    pickAny(scored, used, "evergreen", (s) => s.product.evergreen) ||
+    pickAny(scored, used, "evergreen", (s) =>
       /astronomy|beginner|telescope|books/i.test(
         `${s.product.category} ${s.product.tagSlugs.join(" ")}`,
       ),
     );
 
-  const all = [primary, ...secondary, evergreen].filter(
-    (x): x is ScoredRecommendation => x != null,
-  ).slice(0, maxLinks);
+  const all = [primary, ...secondary, evergreen]
+    .filter((x): x is ScoredRecommendation => x != null)
+    .slice(0, maxLinks);
 
   return {
     primary: all.find((a) => a.role === "primary") || all[0] || null,

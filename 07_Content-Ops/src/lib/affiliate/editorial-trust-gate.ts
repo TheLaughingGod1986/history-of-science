@@ -20,11 +20,11 @@ export const MAX_AFFILIATE_DESCRIPTION_LINKS = 2;
 export const MAX_AFFILIATE_DESCRIPTION_PRIMARY = 1;
 
 /**
- * First line of the description when affiliate links are present.
- * Do not duplicate if already present.
+ * Quiet disclosure — last line of the affiliate block (Creator voice).
+ * Do not place the affiliate block in the first screen of the description.
  */
 export const EDITORIAL_TRUST_DISCLOSURE =
-  "Some links are affiliate. We only add ones we’d recommend with no commission.";
+  "Some of these links are affiliate links. We only share things we’d still point you to with no commission.";
 
 export const VIDEO_AFFILIATE_TYPES = [
   "SHORT",
@@ -103,7 +103,7 @@ const JUNK_TAG_SLUGS = new Set([
 ]);
 
 const SALESY_RE =
-  /\b(buy\s*now|limited\s*time|limited\s*offer|50%\s*off|\d+%\s*off|shop\s*now|act\s*now|hurry|flash\s*sale|use\s*my\s*code|promo\s*code)\b/i;
+  /\b(buy\s*now|must[- ]?have|limited\s*time|limited\s*offer|limited\b|50%\s*off|\d+%\s*off|shop\s*now|act\s*now|hurry|flash\s*sale|use\s*my\s*code|promo\s*code|support\s+the\s+channel\s+by\s+(shopping|buying)|countdown|bundle\s+deal|bundle\s+pressure)\b/i;
 
 const WONDER_TITLE_RE =
   /\b(diamond\s+planet|three\s+suns|too[- ]early\s+galax|wonder|beautiful|stunning|impossible\s+world|what\s+if\s+earth)\b/i;
@@ -494,6 +494,7 @@ export function descriptionViolatesEditorialTone(description: string): TrustGate
 /**
  * Ensure affiliate block does not outrank the film title / subscribe CTA.
  * Returns true when the first non-empty line looks like an affiliate pitch.
+ * Creator voice: affiliate block must not be the first screen.
  */
 export function affiliateCompetesWithPrimaryCta(description: string): boolean {
   const first = description
@@ -501,8 +502,10 @@ export function affiliateCompetesWithPrimaryCta(description: string): boolean {
     .map((l) => l.trim())
     .find((l) => l.length > 0);
   if (!first) return false;
-  // Disclosure as first line is required — that is OK
-  if (/^some links are affiliate/i.test(first)) return false;
+  if (/^if you want to go further/i.test(first)) return true;
+  if (/^orbit’s next steps \(not a shop\)/i.test(first)) return true;
+  if (/^orbit's next steps \(not a shop\)/i.test(first)) return true;
+  if (/^some (of these )?links are affiliate/i.test(first)) return true;
   if (/^(🚀|🔭|🧠|📚|✨)/.test(first)) return true;
   if (/^(buy|shop|check out my|affiliate)/i.test(first)) return true;
   return false;
@@ -510,10 +513,16 @@ export function affiliateCompetesWithPrimaryCta(description: string): boolean {
 
 export function hasEditorialTrustDisclosure(description: string): boolean {
   const lower = description.toLowerCase();
-  return (
-    lower.includes("some links are affiliate") &&
-    (lower.includes("no commission") || lower.includes("we’d recommend") || lower.includes("we'd recommend"))
-  );
+  const hasAffiliatePhrase =
+    lower.includes("some of these links are affiliate") ||
+    lower.includes("some links are affiliate");
+  const hasTrustPhrase =
+    lower.includes("no commission") ||
+    lower.includes("we’d still point you") ||
+    lower.includes("we'd still point you") ||
+    lower.includes("we’d recommend") ||
+    lower.includes("we'd recommend");
+  return hasAffiliatePhrase && hasTrustPhrase;
 }
 
 /**

@@ -49,7 +49,7 @@ export const RELEVANCE_WEIGHTS = {
 } as const;
 
 export const DEFAULT_DISCLOSURE =
-  "Some links are affiliate. We only add ones we’d recommend with no commission.";
+  "Some of these links are affiliate links. We only share things we’d still point you to with no commission.";
 
 export const DEFAULT_AMAZON_DISCLOSURE =
   "As an Amazon Associate I earn from qualifying purchases.";

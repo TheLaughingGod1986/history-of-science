@@ -4,29 +4,30 @@ import {
 } from "./types";
 import { buildOrbitRedirectUrl } from "./urls";
 import {
-  EDITORIAL_TRUST_DISCLOSURE,
   descriptionViolatesEditorialTone,
   filterDescriptionLinksThroughTrustGate,
   hasEditorialTrustDisclosure,
   type EditorialTrustProductInput,
   type EditorialTrustVideoInput,
 } from "./editorial-trust-gate";
+import {
+  buildCreatorDescriptionTemplateMap,
+  CREATOR_AFFILIATE_DISCLOSURE,
+  CREATOR_SECTION_HEADERS,
+  descriptionContainsCreatorBannedPhrase,
+  resolveTopicTunedIntro,
+} from "./creator-description-voice";
+import {
+  inferCreatorTopicKey,
+  productFamilyOf,
+  type ProductFamily,
+} from "./topic-product-map";
 
 export type DescriptionTemplateMap = Record<string, string>;
 
-/** Documentary tone — never “buy now / limited / % off”. */
-export const DEFAULT_AFFILIATE_TEMPLATES: DescriptionTemplateMap = {
-  section_header: "If you want to look at this yourself",
-  brilliant: "If you want to understand the physics behind this film:",
-  telescope: "If you want to look at this yourself:",
-  binoculars: "If you want to start under the night sky:",
-  books: "If you want to go deeper into what this film named:",
-  paper: "The paper named in this film:",
-  lego: "If you want to build a piece of what we explored:",
-  general: "If you want to look at this yourself:",
-  disclosure: EDITORIAL_TRUST_DISCLOSURE,
-  amazon_disclosure: DEFAULT_AMAZON_DISCLOSURE,
-};
+/** Creator voice defaults — editable via AffiliateDescriptionTemplate admin rows. */
+export const DEFAULT_AFFILIATE_TEMPLATES: DescriptionTemplateMap =
+  buildCreatorDescriptionTemplateMap();
 
 export type AffiliateDescriptionLink = {
   productName: string;
@@ -39,26 +40,31 @@ export type AffiliateDescriptionLink = {
   trustProduct?: EditorialTrustProductInput;
 };
 
+function familyFromLink(
+  link: AffiliateDescriptionLink,
+): ProductFamily | "binoculars" | "paper" | "general" {
+  const fam = productFamilyOf({
+    category: link.category,
+    programSlug: link.programSlug,
+    name: link.productName,
+  });
+  if (fam) return fam;
+  const cat = link.category.toLowerCase();
+  if (/paper|journal|arxiv/i.test(cat)) return "paper";
+  if (/binocular/i.test(cat)) return "binoculars";
+  return "general";
+}
+
 function pickTemplateKey(link: AffiliateDescriptionLink): string {
   if (link.templateKey) return link.templateKey;
-  const cat = link.category.toLowerCase();
-  if (/paper|journal|arxiv|jades|study/i.test(cat) || /paper/i.test(link.productName)) {
-    return "paper";
-  }
-  if (link.programSlug === "brilliant" || /physics|mathematics|brilliant/i.test(cat)) {
-    return "brilliant";
-  }
-  if (/telescope/i.test(cat)) return "telescope";
-  if (/binocular/i.test(cat)) return "binoculars";
-  if (/book/i.test(cat)) return "books";
-  if (/lego/i.test(cat)) return "lego";
-  return "general";
+  return familyFromLink(link);
 }
 
 function descriptionAlreadyHasDisclosure(description: string): boolean {
   if (hasEditorialTrustDisclosure(description)) return true;
   const lower = description.toLowerCase();
   return (
+    lower.includes("some of these links are affiliate") ||
     lower.includes("some links are affiliate") ||
     lower.includes("affiliate link") ||
     lower.includes("amazon associate") ||
@@ -75,45 +81,136 @@ function needsAmazonDisclosure(links: AffiliateDescriptionLink[]): boolean {
   );
 }
 
+/** Strip a leading disclosure line if an older generator put it first. */
 function stripLeadingDisclosure(description: string): string {
   const lines = description.split("\n");
-  if (lines[0] && /^some links are affiliate/i.test(lines[0].trim())) {
+  const first = lines[0]?.trim() || "";
+  if (
+    /^some (of these )?links are affiliate/i.test(first) ||
+    /^as an amazon associate/i.test(first)
+  ) {
     return lines.slice(1).join("\n").replace(/^\n+/, "").trim();
   }
   return description.trim();
 }
 
 /**
- * Build the affiliate block for a YouTube description.
- * Documentary tone only. Orbit redirect URLs by default.
+ * Insert affiliate block AFTER chapters + subscribe CTA, BEFORE playlist / next film / hashtags.
+ * Never in the first screen of the description.
+ */
+export function insertAffiliateBlockAfterPrimaryCta(
+  description: string,
+  affiliateBlock: string,
+): string {
+  const body = description.trimEnd();
+  if (!body) return affiliateBlock.trim();
+  if (!affiliateBlock.trim()) return body;
+
+  const lines = body.split("\n");
+  let cut = lines.length;
+
+  for (let i = 0; i < lines.length; i++) {
+    const t = lines[i].trim();
+    if (
+      /^playlist\b/i.test(t) ||
+      /^next film\b/i.test(t) ||
+      /^watch next\b/i.test(t) ||
+      /^more from orbit\b/i.test(t) ||
+      /^more orbit\b/i.test(t) ||
+      /^#\w/.test(t)
+    ) {
+      cut = i;
+      break;
+    }
+  }
+
+  const before = lines.slice(0, cut).join("\n").trimEnd();
+  const after = lines.slice(cut).join("\n").trim();
+  if (after) {
+    return `${before}\n\n${affiliateBlock.trim()}\n\n${after}`.trim();
+  }
+  return `${before}\n\n${affiliateBlock.trim()}`.trim();
+}
+
+/**
+ * Build the affiliate block for a YouTube long-form description (Creator voice).
+ * Disclosure is always the **last** line of the block.
+ * Orbit redirect URLs by default — never raw merchant IDs in templates.
  */
 export function buildAffiliateDescriptionSection(args: {
   links: AffiliateDescriptionLink[];
   templates?: DescriptionTemplateMap;
   useRedirectUrls?: boolean;
+  topicKey?: string | null;
+  videoTopic?: string | null;
+  videoTitle?: string | null;
+  headerVariant?: "primary" | "alternate";
 }): string {
   if (!args.links.length) return "";
-  const templates = { ...DEFAULT_AFFILIATE_TEMPLATES, ...args.templates };
+  const templates = {
+    ...DEFAULT_AFFILIATE_TEMPLATES,
+    ...args.templates,
+  };
   const useRedirect = args.useRedirectUrls !== false;
+  const topicKey =
+    args.topicKey ??
+    inferCreatorTopicKey({
+      topic: args.videoTopic,
+      title: args.videoTitle,
+    });
 
-  const lines: string[] = [
-    templates.section_header || "If you want to look at this yourself",
-    "",
-  ];
+  const header =
+    args.headerVariant === "alternate"
+      ? templates.section_header_alt || CREATOR_SECTION_HEADERS.alternate
+      : templates.section_header || CREATOR_SECTION_HEADERS.primary;
+
+  if (descriptionContainsCreatorBannedPhrase(header)) return "";
+
+  const lines: string[] = [header, ""];
 
   for (const link of args.links) {
     const key = pickTemplateKey(link);
+    const family = familyFromLink(link);
     const intro =
-      templates[key] || templates.general || "If you want to look at this yourself:";
-    if (descriptionViolatesEditorialTone(intro).length) continue;
+      family === "books" || family === "lego"
+        ? resolveTopicTunedIntro({
+            family,
+            topicKey,
+            templates,
+          })
+        : templates[key] ||
+          resolveTopicTunedIntro({
+            family:
+              family === "binoculars"
+                ? "binoculars"
+                : family === "paper"
+                  ? "paper"
+                  : "general",
+            topicKey,
+            templates,
+          });
+
+    if (
+      descriptionViolatesEditorialTone(intro).length ||
+      descriptionContainsCreatorBannedPhrase(intro)
+    ) {
+      continue;
+    }
     const url = useRedirect ? buildOrbitRedirectUrl(link.productSlug) : link.url;
     lines.push(intro);
-    lines.push(link.productName);
     lines.push(url);
     lines.push("");
   }
 
-  return lines.join("\n").trimEnd();
+  while (lines.length && lines[lines.length - 1] === "") lines.pop();
+
+  const disclosure = templates.disclosure || CREATOR_AFFILIATE_DISCLOSURE;
+  lines.push("");
+  lines.push(disclosure);
+
+  const section = lines.join("\n").trimEnd();
+  if (descriptionContainsCreatorBannedPhrase(section)) return "";
+  return section;
 }
 
 export type AppendAffiliateOptions = {
@@ -122,16 +219,22 @@ export type AppendAffiliateOptions = {
   templates?: DescriptionTemplateMap;
   useRedirectUrls?: boolean;
   includeAmazonDisclosure?: boolean;
-  /** When set, links must pass the Video Auditor trust gate before insert. */
   trustVideo?: EditorialTrustVideoInput;
+  headerVariant?: "primary" | "alternate";
 };
 
 /**
- * Place affiliate content **below** the real CTA (film body / subscribe).
- * Disclosure once as the **first line** of the description when affiliate links exist.
- * Trust gate filters links when `trustVideo` is provided (fail closed without product metadata).
+ * Place affiliate block **after** chapters + subscribe, **before** playlist / hashtags.
+ * Disclosure is the last line of the affiliate block (Creator).
+ * Shorts → no block.
  */
-export function appendAffiliateSectionToDescription(args: AppendAffiliateOptions): string {
+export function appendAffiliateSectionToDescription(
+  args: AppendAffiliateOptions,
+): string {
+  if (args.trustVideo?.isShort) {
+    return args.description.trimEnd();
+  }
+
   let links = args.links;
 
   if (args.trustVideo) {
@@ -166,52 +269,51 @@ export function appendAffiliateSectionToDescription(args: AppendAffiliateOptions
 
   if (!uniqueLinks.length) return args.description.trimEnd();
 
-  const section = buildAffiliateDescriptionSection({
+  const topicKey = args.trustVideo
+    ? inferCreatorTopicKey(args.trustVideo)
+    : null;
+
+  let section = buildAffiliateDescriptionSection({
     links: uniqueLinks,
     templates: args.templates,
     useRedirectUrls: args.useRedirectUrls,
+    topicKey,
+    videoTopic: args.trustVideo?.topic,
+    videoTitle: args.trustVideo?.title,
+    headerVariant: args.headerVariant,
   });
   if (!section || descriptionViolatesEditorialTone(section).length) {
     return args.description.trimEnd();
   }
 
   const templates = { ...DEFAULT_AFFILIATE_TEMPLATES, ...args.templates };
-  const disclosure = templates.disclosure || EDITORIAL_TRUST_DISCLOSURE;
 
-  // Keep film CTA body above affiliate; disclosure is always the first line when links exist
+  if (
+    args.includeAmazonDisclosure !== false &&
+    needsAmazonDisclosure(uniqueLinks)
+  ) {
+    const amazon = templates.amazon_disclosure || DEFAULT_AMAZON_DISCLOSURE;
+    if (!section.includes(amazon)) {
+      section = `${section}\n${amazon}`;
+    }
+  }
+
   let body = stripLeadingDisclosure(args.description.trimEnd());
 
-  // Avoid duplicating the same affiliate block if generator is called twice
   for (const link of uniqueLinks) {
-    if (body.includes(link.productSlug) || body.includes(buildOrbitRedirectUrl(link.productSlug))) {
-      // Already present — ensure disclosure is first line, do not stack another block
-      if (!hasEditorialTrustDisclosure(args.description) && !descriptionAlreadyHasDisclosure(body)) {
-        return `${disclosure}\n\n${body}`.trim();
+    const go = buildOrbitRedirectUrl(link.productSlug);
+    if (body.includes(link.productSlug) || body.includes(go)) {
+      if (!descriptionAlreadyHasDisclosure(body)) {
+        return insertAffiliateBlockAfterPrimaryCta(
+          body,
+          templates.disclosure || CREATOR_AFFILIATE_DISCLOSURE,
+        );
       }
-      if (hasEditorialTrustDisclosure(args.description) || /^some links are affiliate/i.test(args.description.trim())) {
-        return args.description.trimEnd();
-      }
-      return `${disclosure}\n\n${body}`.trim();
+      return body.trimEnd();
     }
   }
 
-  const hadDisclosure = descriptionAlreadyHasDisclosure(args.description);
-  let result = `${body}\n\n${section}`.trim();
-
-  if (!hadDisclosure || !hasEditorialTrustDisclosure(args.description)) {
-    result = `${disclosure}\n\n${result}`;
-    if (
-      args.includeAmazonDisclosure !== false &&
-      needsAmazonDisclosure(uniqueLinks) &&
-      !result.includes(templates.amazon_disclosure || DEFAULT_AMAZON_DISCLOSURE)
-    ) {
-      result = `${result}\n${templates.amazon_disclosure || DEFAULT_AMAZON_DISCLOSURE}`;
-    }
-  } else {
-    result = `${disclosure}\n\n${body}\n\n${section}`.trim();
-  }
-
-  return result.trim();
+  return insertAffiliateBlockAfterPrimaryCta(body, section);
 }
 
 export function recommendationsToDescriptionLinks(
@@ -225,7 +327,8 @@ export function recommendationsToDescriptionLinks(
     productName: r.product.name,
     productSlug: r.product.slug,
     category: r.product.category,
-    programSlug: opts?.programSlugByProductId?.[r.product.id] || r.product.programSlug,
+    programSlug:
+      opts?.programSlugByProductId?.[r.product.id] || r.product.programSlug,
     url:
       opts?.affiliateUrlBySlug?.[r.product.slug] ||
       `https://example.invalid/go/${r.product.slug}`,
@@ -233,3 +336,28 @@ export function recommendationsToDescriptionLinks(
     trustProduct: r.product,
   }));
 }
+
+/**
+ * True when the affiliate header/disclosure appears before chapters + subscribe
+ * (i.e. still in the “first screen” / film pitch region).
+ */
+export function affiliateBlockAppearsInFirstScreen(description: string): boolean {
+  const lower = description.toLowerCase();
+  const aff = lower.search(
+    /if you want to go further|orbit['’]s next steps \(not a shop\)|some of these links are affiliate/,
+  );
+  if (aff < 0) return false;
+
+  const chapters = lower.search(/\nchapters\b|^chapters\b/);
+  const subscribe = lower.search(/subscribe for|subscribe to/);
+  const ctaMarkers = [chapters, subscribe].filter((i) => i >= 0);
+  if (ctaMarkers.length) {
+    const ctaEnd = Math.max(...ctaMarkers);
+    return aff < ctaEnd;
+  }
+
+  // No chapters/subscribe markers — treat first ~screen of chars as first screen
+  return aff < 420;
+}
+
+export { CREATOR_AFFILIATE_DISCLOSURE, CREATOR_SECTION_HEADERS };
