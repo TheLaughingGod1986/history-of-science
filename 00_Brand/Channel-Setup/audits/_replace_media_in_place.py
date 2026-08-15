@@ -8,8 +8,9 @@ It does NOT create a new video. Do not use `_replace_shorts_v02_youtube.py`
 for this job — that script uploads a new id and deletes the old one, which
 resets counters and can look like a brand-new upload to the algorithm.
 
-Requires the logged-in Chrome profile:
-  /Users/ben/code/youtube/.playwright-youtube-profile
+Requires a logged-in YouTube Studio Chrome. Prefer CDP :9222
+(~/.orbit-chrome-youtube-studio clone of Default). The Playwright profile
+is often signed out.
 
 Usage:
   python3 00_Brand/Channel-Setup/audits/_replace_media_in_place.py --dry-run
@@ -26,11 +27,19 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
-PROFILE = "/Users/ben/code/youtube/.playwright-youtube-profile"
+# Prefer a live Studio Chrome CDP session (logged-in). The old Playwright
+# profile is often signed out; clones under ~/.orbit-chrome-youtube-studio
+# or /Users/ben/code/youtube/.playwright-youtube-from-chrome work when CDP
+# is up on :9222.
+CDP_URL = "http://127.0.0.1:9222"
+PROFILE_CANDIDATES = (
+    str(Path.home() / ".orbit-chrome-youtube-studio"),
+    "/Users/ben/code/youtube/.playwright-youtube-from-chrome",
+    "/Users/ben/code/youtube/.playwright-youtube-profile",
+)
 AUDIT = Path(__file__).resolve().parent / "playback_lag_in_place_replace"
 CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
 LONG_IDS = {"Mo93x0fxB1Q", "n7CbJrOCnU0", "b8-X_FyJnHM"}
-
 
 def extract_long_id(data: dict) -> str:
     for key in ("long_id", "related_to_long"):
@@ -244,14 +253,52 @@ def replace_one(page, job: dict) -> dict:
     return row
 
 
+def _cdp_up(url: str = CDP_URL) -> bool:
+    try:
+        import urllib.request
+
+        with urllib.request.urlopen(url + "/json/version", timeout=2) as resp:
+            return resp.status == 200
+    except Exception:
+        return False
+
+
+def _pick_profile() -> str:
+    for path in PROFILE_CANDIDATES:
+        if Path(path).is_dir():
+            return path
+    return PROFILE_CANDIDATES[-1]
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--root", type=Path, default=REPO)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--only", action="append", default=[], help="Limit to these video ids")
+    ap.add_argument(
+        "--cdp",
+        default=CDP_URL,
+        help="Connect to an already-running Studio Chrome (default http://127.0.0.1:9222)",
+    )
+    ap.add_argument(
+        "--launch-profile",
+        action="store_true",
+        help="Force launch_persistent_context instead of CDP (usually signed out)",
+    )
     args = ap.parse_args()
     root = args.root.expanduser().resolve()
     jobs = collect_jobs(root)
+    # Skip longforms with no remastered master on disk (do not invent uploads).
+    jobs = [j for j in jobs if j.get("file")]
+    # De-dupe identical video ids (keep first).
+    seen: set[str] = set()
+    deduped: list[dict] = []
+    for j in jobs:
+        if j["video_id"] in seen:
+            continue
+        seen.add(j["video_id"])
+        deduped.append(j)
+    jobs = deduped
     if args.only:
         allow = set(args.only)
         jobs = [j for j in jobs if j["video_id"] in allow]
@@ -274,13 +321,24 @@ def main() -> int:
 
     results: list[dict] = []
     with sync_playwright() as p:
-        ctx = p.chromium.launch_persistent_context(
-            PROFILE,
-            headless=False,
-            channel="chrome",
-            args=["--disable-blink-features=AutomationControlled"],
-            viewport={"width": 1440, "height": 900},
-        )
+        browser = None
+        ctx = None
+        close_ctx = False
+        if not args.launch_profile and _cdp_up(args.cdp):
+            print(f"Using Studio CDP {args.cdp}", flush=True)
+            browser = p.chromium.connect_over_cdp(args.cdp)
+            ctx = browser.contexts[0] if browser.contexts else browser.new_context()
+        else:
+            profile = _pick_profile()
+            print(f"Launching Chrome profile {profile}", flush=True)
+            ctx = p.chromium.launch_persistent_context(
+                profile,
+                headless=False,
+                channel="chrome",
+                args=["--disable-blink-features=AutomationControlled"],
+                viewport={"width": 1440, "height": 900},
+            )
+            close_ctx = True
         page = ctx.pages[0] if ctx.pages else ctx.new_page()
         for job in jobs:
             print(f"Replace {job['video_id']} ← {Path(job['file']).name}", flush=True)
@@ -288,14 +346,19 @@ def main() -> int:
                 row = replace_one(page, job)
             except Exception as exc:
                 row = {**job, "ok": False, "error": str(exc)[:400]}
-                page.screenshot(path=str(AUDIT / f"err_{job['video_id']}.png"))
+                try:
+                    page.screenshot(path=str(AUDIT / f"err_{job['video_id']}.png"))
+                except Exception:
+                    pass
                 for _ in range(3):
                     page.keyboard.press("Escape")
                     page.wait_for_timeout(200)
                     dismiss(page)
             results.append(row)
             print(f"  → {'OK' if row.get('ok') else 'FAIL'} {row.get('error') or row.get('id_after')}", flush=True)
-        ctx.close()
+        if close_ctx and ctx is not None:
+            ctx.close()
+        # Do not close shared CDP browser
 
     out = AUDIT / "result.json"
     out.write_text(

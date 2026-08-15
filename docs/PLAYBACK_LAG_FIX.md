@@ -74,3 +74,28 @@ Shared helpers:
 - Content Ops `probeVideo()` **blocks** VFR / VideoToolbox before publish
 
 CapCut: export **30 fps**, not “original.”
+
+
+## Mac: open logged-in Studio for Replace
+
+Chrome refuses `--remote-debugging-port` on the default profile path. Clone it
+once, then keep that window signed in (passkey / 2FA may be required):
+
+```bash
+SRC="$HOME/Library/Application Support/Google/Chrome"
+DST="$HOME/.orbit-chrome-youtube-studio"
+rsync -a --exclude 'Singleton*' --exclude 'BrowserMetrics*' --exclude 'Crashpad' \
+  --exclude 'ShaderCache' --exclude 'GrShaderCache' --exclude 'GraphiteDawnCache' \
+  "$SRC/" "$DST/"
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+  --remote-debugging-port=9222 --remote-allow-origins='*' \
+  --user-data-dir="$DST" --profile-directory=Default \
+  'https://studio.youtube.com/'
+```
+
+When `http://127.0.0.1:9222/json/list` shows a `studio.youtube.com` tab (not
+accounts.google.com), run `_replace_media_in_place.py`. It connects over CDP
+and will not create new video ids.
+
+Scheduled publish times (including Exoplanets Shorts and the 21–26 Aug
+cadence) stay on the original ids — Replace does not touch schedule.
