@@ -30,6 +30,9 @@ model LongFormVideo {
   createdAt          DateTime    @default(now())
   updatedAt          DateTime    @updatedAt
   clips              ShortClip[]
+  affiliatePlacements AffiliatePlacement[]
+  affiliateClicks     AffiliateClick[]
+  affiliateConversions AffiliateConversion[]
 }
 
 model ShortClip {
@@ -310,4 +313,198 @@ model WorkerHeartbeat {
   metadataJson     String?
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
+}
+
+/// Affiliate Monetisation — programmes, products, placements, tracking, revenue
+/// Status values: ACTIVE | INACTIVE | PENDING
+model AffiliateProgram {
+  id                     String                @id @default(cuid())
+  name                   String
+  slug                   String                @unique
+  description            String?
+  website                String?
+  network                String?
+  defaultCommissionType  String                @default("PERCENTAGE") // PERCENTAGE | FIXED
+  defaultCommissionValue Float?
+  cookieDurationDays     Int?
+  status                 String                @default("ACTIVE")
+  /// Env key for affiliate tag/ID (never store real IDs in seed)
+  affiliateIdEnvKey      String?
+  categoriesJson         String? // JSON string array of supported categories
+  disclosureText         String?
+  createdAt              DateTime              @default(now())
+  updatedAt              DateTime              @updatedAt
+  products               AffiliateProduct[]
+  conversions            AffiliateConversion[]
+}
+
+model AffiliateProduct {
+  id                   String                   @id @default(cuid())
+  affiliateProgramId   String
+  affiliateProgram     AffiliateProgram         @relation(fields: [affiliateProgramId], references: [id], onDelete: Cascade)
+  name                 String
+  slug                 String                   @unique
+  description          String?
+  destinationUrl       String
+  affiliateUrl         String
+  imageUrl             String?
+  category             String
+  subcategory          String?
+  price                Float?
+  currency             String                   @default("GBP")
+  estimatedCommission  Float?
+  commissionType       String? // PERCENTAGE | FIXED — falls back to programme default
+  commissionValue      Float?
+  active               Boolean                  @default(true)
+  featured             Boolean                  @default(false)
+  priority             Int                      @default(0)
+  evergreen            Boolean                  @default(false)
+  /// Episode types this product is unsuitable for (JSON string array)
+  unsuitableForJson    String?
+  notes                String?
+  urlHealthStatus      String                   @default("UNKNOWN") // HEALTHY | REDIRECTED | BROKEN | UNKNOWN
+  urlLastCheckedAt     DateTime?
+  createdAt            DateTime                 @default(now())
+  updatedAt            DateTime                 @updatedAt
+  tags                 AffiliateProductTag[]
+  placements           AffiliatePlacement[]
+  clicks               AffiliateClick[]
+  conversions          AffiliateConversion[]
+  urlHealthChecks      AffiliateUrlHealthCheck[]
+
+  @@index([affiliateProgramId, active])
+  @@index([category])
+  @@index([featured, priority])
+}
+
+model AffiliateTag {
+  id        String               @id @default(cuid())
+  slug      String               @unique
+  name      String
+  createdAt DateTime             @default(now())
+  products  AffiliateProductTag[]
+}
+
+model AffiliateProductTag {
+  productId String
+  tagId     String
+  product   AffiliateProduct @relation(fields: [productId], references: [id], onDelete: Cascade)
+  tag       AffiliateTag     @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([productId, tagId])
+  @@index([tagId])
+}
+
+/// Placement types: DESCRIPTION_PRIMARY | DESCRIPTION_SECONDARY | PINNED_COMMENT |
+/// WEBSITE_ARTICLE | GEAR_PAGE | SHORT_DESCRIPTION
+model AffiliatePlacement {
+  id                    String           @id @default(cuid())
+  videoId               String
+  video                 LongFormVideo    @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  affiliateProductId    String
+  affiliateProduct      AffiliateProduct @relation(fields: [affiliateProductId], references: [id], onDelete: Cascade)
+  placementType         String
+  position              Int              @default(0)
+  relevanceScore        Float?
+  manuallyApproved      Boolean          @default(false)
+  generatedAutomatically Boolean         @default(false)
+  status                String           @default("PENDING") // PENDING | APPROVED | REJECTED | ACTIVE | REMOVED
+  clicks                Int              @default(0)
+  conversions           Int              @default(0)
+  estimatedRevenue      Float            @default(0)
+  createdAt             DateTime         @default(now())
+  updatedAt             DateTime         @updatedAt
+  clickEvents           AffiliateClick[]
+
+  @@unique([videoId, affiliateProductId, placementType])
+  @@index([videoId, status])
+  @@index([affiliateProductId])
+}
+
+model AffiliateClick {
+  id                 String              @id @default(cuid())
+  affiliateProductId String
+  affiliateProduct   AffiliateProduct    @relation(fields: [affiliateProductId], references: [id], onDelete: Cascade)
+  videoId            String?
+  video              LongFormVideo?      @relation(fields: [videoId], references: [id], onDelete: SetNull)
+  placementId        String?
+  placement          AffiliatePlacement? @relation(fields: [placementId], references: [id], onDelete: SetNull)
+  source             String?
+  campaign           String?
+  medium             String?
+  content            String?
+  destinationUrl     String
+  userAgent          String?
+  referrer           String?
+  timestamp          DateTime            @default(now())
+
+  @@index([affiliateProductId, timestamp])
+  @@index([videoId, timestamp])
+  @@index([placementId])
+}
+
+model AffiliateConversion {
+  id                 String           @id @default(cuid())
+  affiliateProgramId String
+  affiliateProgram   AffiliateProgram @relation(fields: [affiliateProgramId], references: [id], onDelete: Cascade)
+  affiliateProductId String?
+  affiliateProduct   AffiliateProduct? @relation(fields: [affiliateProductId], references: [id], onDelete: SetNull)
+  videoId            String?
+  video              LongFormVideo?   @relation(fields: [videoId], references: [id], onDelete: SetNull)
+  orderReference     String?
+  saleAmount         Float            @default(0)
+  commissionAmount   Float            @default(0)
+  currency           String           @default("GBP")
+  conversionDate     DateTime
+  imported           Boolean          @default(false)
+  importBatchId      String?
+  source             String? // amazon_csv | brilliant_csv | manual | other
+  notes              String?
+  createdAt          DateTime         @default(now())
+
+  @@index([affiliateProgramId, conversionDate])
+  @@index([affiliateProductId])
+  @@index([videoId])
+  @@index([importBatchId])
+  @@unique([importBatchId, orderReference])
+}
+
+model AffiliateUrlHealthCheck {
+  id                 String           @id @default(cuid())
+  affiliateProductId String
+  affiliateProduct   AffiliateProduct @relation(fields: [affiliateProductId], references: [id], onDelete: Cascade)
+  status             String // HEALTHY | REDIRECTED | BROKEN | UNKNOWN
+  httpStatus         Int?
+  finalUrl           String?
+  checkedAt          DateTime         @default(now())
+  notes              String?
+
+  @@index([affiliateProductId, checkedAt])
+}
+
+/// Editable YouTube / description snippet templates for affiliate blocks
+model AffiliateDescriptionTemplate {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  name      String
+  category  String? // telescope | books | brilliant | lego | general | disclosure | amazon_disclosure | section_header
+  body      String
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AffiliateImportBatch {
+  id           String   @id @default(cuid())
+  programmeSlug String?
+  filename     String?
+  source       String
+  rowCount     Int
+  successCount Int
+  errorCount   Int
+  skippedCount Int      @default(0)
+  errorsJson   String?
+  contentHash  String?  @unique
+  importedAt   DateTime @default(now())
+  notes        String?
 }

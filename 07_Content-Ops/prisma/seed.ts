@@ -33,6 +33,19 @@ async function main() {
   await prisma.publishingJob.deleteMany();
   await prisma.platformPost.deleteMany();
   await prisma.shortClip.deleteMany();
+
+  // Affiliate FKs → LongFormVideo / products — clear before videos
+  await prisma.affiliateClick.deleteMany();
+  await prisma.affiliateConversion.deleteMany();
+  await prisma.affiliatePlacement.deleteMany();
+  await prisma.affiliateUrlHealthCheck.deleteMany();
+  await prisma.affiliateProductTag.deleteMany();
+  await prisma.affiliateProduct.deleteMany();
+  await prisma.affiliateTag.deleteMany();
+  await prisma.affiliateDescriptionTemplate.deleteMany();
+  await prisma.affiliateImportBatch.deleteMany();
+  await prisma.affiliateProgram.deleteMany();
+
   await prisma.longFormVideo.deleteMany();
   await prisma.contentInsight.deleteMany();
   await prisma.platformSettings.deleteMany();
@@ -320,7 +333,346 @@ async function main() {
     },
   });
 
-  console.log("Seeded Orbit content ops with Will We Ever Meet Aliens? + 4 clips");
+  await seedAffiliateCatalog();
+
+  console.log("Seeded Orbit content ops with Will We Ever Meet Aliens? + 4 clips + affiliate catalogue");
+}
+
+async function seedAffiliateCatalog() {
+  const amazon = await prisma.affiliateProgram.create({
+    data: {
+      name: "Amazon Associates UK",
+      slug: "amazon-associates-uk",
+      description:
+        "UK Amazon Associates for telescopes, books, LEGO, and astronomy accessories. Tag from AMAZON_ASSOCIATE_TAG.",
+      website: "https://affiliate-program.amazon.co.uk/",
+      network: "Amazon",
+      defaultCommissionType: "PERCENTAGE",
+      defaultCommissionValue: 3,
+      cookieDurationDays: 1,
+      status: "ACTIVE",
+      affiliateIdEnvKey: "AMAZON_ASSOCIATE_TAG",
+      categoriesJson: JSON.stringify([
+        "Beginner telescopes",
+        "Advanced telescopes",
+        "Astronomy books",
+        "Space books",
+        "Kids’ astronomy books",
+        "Binoculars",
+        "Star projectors",
+        "Astronomy accessories",
+        "Astrophotography gear",
+        "Space LEGO",
+        "Science kits",
+        "Models",
+        "Space gifts",
+      ]),
+      disclosureText:
+        "As an Amazon Associate I earn from qualifying purchases.",
+    },
+  });
+
+  const brilliant = await prisma.affiliateProgram.create({
+    data: {
+      name: "Brilliant",
+      slug: "brilliant",
+      description:
+        "Interactive STEM learning — physics, maths, AI, engineering. ID from BRILLIANT_AFFILIATE_ID.",
+      website: "https://brilliant.org/",
+      network: "Brilliant",
+      defaultCommissionType: "PERCENTAGE",
+      defaultCommissionValue: 50,
+      cookieDurationDays: 30,
+      status: "ACTIVE",
+      affiliateIdEnvKey: "BRILLIANT_AFFILIATE_ID",
+      categoriesJson: JSON.stringify([
+        "Physics",
+        "Mathematics",
+        "Computer science",
+        "AI",
+        "Scientific thinking",
+        "Engineering",
+      ]),
+    },
+  });
+
+  const retailer = await prisma.affiliateProgram.create({
+    data: {
+      name: "Astronomy Retailer",
+      slug: "astronomy-retailer",
+      description:
+        "Generic specialist astronomy retailer slot (First Light Optics, High Point Scientific, etc.). Own reporting; higher AOV.",
+      website: "https://example.invalid/astronomy-retailer",
+      network: "Direct",
+      defaultCommissionType: "PERCENTAGE",
+      defaultCommissionValue: 5,
+      cookieDurationDays: 30,
+      status: "ACTIVE",
+      categoriesJson: JSON.stringify([
+        "Beginner telescopes",
+        "Advanced telescopes",
+        "Binoculars",
+        "Astrophotography gear",
+        "Astronomy accessories",
+      ]),
+    },
+  });
+
+  await prisma.affiliateProgram.create({
+    data: {
+      name: "LEGO",
+      slug: "lego",
+      description:
+        "LEGO Affiliate — Space / NASA / educational sets. May start inactive until programme access is approved.",
+      website: "https://www.lego.com/",
+      network: "LEGO Affiliate",
+      defaultCommissionType: "PERCENTAGE",
+      defaultCommissionValue: 5,
+      cookieDurationDays: 7,
+      status: "INACTIVE",
+      categoriesJson: JSON.stringify([
+        "Space",
+        "NASA",
+        "Mars",
+        "Moon",
+        "Rockets",
+        "Spacecraft",
+        "Educational sets",
+      ]),
+    },
+  });
+
+  const tagSlugs = [
+    "mars",
+    "moon",
+    "black-hole",
+    "telescope",
+    "astronomy",
+    "astrophotography",
+    "spacex",
+    "starship",
+    "nasa",
+    "physics",
+    "ai",
+    "cosmology",
+    "aliens",
+    "seti",
+    "exoplanets",
+    "kids",
+    "beginner",
+    "books",
+    "lego",
+    "binoculars",
+    "mathematics",
+    "engineering",
+  ];
+  const tagIds: Record<string, string> = {};
+  for (const slug of tagSlugs) {
+    const tag = await prisma.affiliateTag.create({
+      data: {
+        slug,
+        name: slug
+          .split("-")
+          .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+          .join(" "),
+      },
+    });
+    tagIds[slug] = tag.id;
+  }
+
+  async function addProduct(args: {
+    programId: string;
+    name: string;
+    slug: string;
+    description: string;
+    category: string;
+    tags: string[];
+    price: number;
+    estimatedCommission: number;
+    featured?: boolean;
+    evergreen?: boolean;
+    priority?: number;
+    active?: boolean;
+  }) {
+    const product = await prisma.affiliateProduct.create({
+      data: {
+        affiliateProgramId: args.programId,
+        name: args.name,
+        slug: args.slug,
+        description: args.description,
+        // Placeholder development URLs only — never invent real affiliate IDs
+        destinationUrl: `https://example.invalid/dest/${args.slug}`,
+        affiliateUrl: `https://example.invalid/aff/${args.slug}?ref=PLACEHOLDER`,
+        category: args.category,
+        price: args.price,
+        currency: "GBP",
+        estimatedCommission: args.estimatedCommission,
+        commissionType: "PERCENTAGE",
+        active: args.active ?? true,
+        featured: args.featured ?? false,
+        evergreen: args.evergreen ?? false,
+        priority: args.priority ?? 0,
+        notes: "Seed placeholder — replace with real programme URLs after account approval.",
+      },
+    });
+    for (const t of args.tags) {
+      if (!tagIds[t]) continue;
+      await prisma.affiliateProductTag.create({
+        data: { productId: product.id, tagId: tagIds[t] },
+      });
+    }
+    return product;
+  }
+
+  await addProduct({
+    programId: retailer.id,
+    name: "Beginner telescope",
+    slug: "beginner-telescope",
+    description: "A practical first telescope for clear nights — Orbit evergreen recommendation.",
+    category: "Beginner telescopes",
+    tags: ["telescope", "beginner", "astronomy"],
+    price: 179,
+    estimatedCommission: 9,
+    featured: true,
+    evergreen: true,
+    priority: 5,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "Astronomy binoculars",
+    slug: "astronomy-binoculars",
+    description: "Wide-field binoculars for lunar and constellation starts.",
+    category: "Binoculars",
+    tags: ["binoculars", "beginner", "astronomy", "moon"],
+    price: 65,
+    estimatedCommission: 2.5,
+    evergreen: true,
+    priority: 3,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "Beginner astronomy book",
+    slug: "beginner-astronomy-book",
+    description: "Calm introductory astronomy reading for curious adults.",
+    category: "Astronomy books",
+    tags: ["books", "beginner", "astronomy"],
+    price: 14.99,
+    estimatedCommission: 0.6,
+    evergreen: true,
+    priority: 2,
+  });
+  await addProduct({
+    programId: brilliant.id,
+    name: "Brilliant Physics",
+    slug: "brilliant-physics",
+    description: "Interactive physics — black holes, relativity, quantum intuition.",
+    category: "Physics",
+    tags: ["physics", "black-hole", "cosmology", "relativity", "quantum"],
+    price: 149,
+    estimatedCommission: 40,
+    featured: true,
+    priority: 8,
+  });
+  await addProduct({
+    programId: brilliant.id,
+    name: "Brilliant Mathematics",
+    slug: "brilliant-mathematics",
+    description: "Maths foundations that unlock orbital mechanics and scientific thinking.",
+    category: "Mathematics",
+    tags: ["mathematics", "physics", "engineering"],
+    price: 149,
+    estimatedCommission: 40,
+    priority: 4,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "Mars book",
+    slug: "mars-book",
+    description: "Deep dive into Mars exploration history and science.",
+    category: "Space books",
+    tags: ["mars", "nasa", "books"],
+    price: 18,
+    estimatedCommission: 0.7,
+    priority: 2,
+  });
+  await addProduct({
+    programId: amazon.id,
+    name: "Space LEGO",
+    slug: "space-lego",
+    description: "Buildable spacecraft sets for kids and nostalgia adults.",
+    category: "Space LEGO",
+    tags: ["lego", "kids", "nasa", "spacecraft"],
+    price: 49.99,
+    estimatedCommission: 1.5,
+    priority: 1,
+  });
+  await addProduct({
+    programId: retailer.id,
+    name: "Astrophotography starter kit",
+    slug: "astrophotography-starter-kit",
+    description: "Entry astrophotography mount + guide for deep-sky beginners.",
+    category: "Astrophotography gear",
+    tags: ["astrophotography", "telescope", "astronomy"],
+    price: 399,
+    estimatedCommission: 20,
+    featured: true,
+    priority: 4,
+  });
+
+  const templates = [
+    { key: "section_header", name: "Section header", category: "general", body: "🚀 Go deeper" },
+    {
+      key: "brilliant",
+      name: "Brilliant intro",
+      category: "brilliant",
+      body: "🧠 Want to understand the physics behind this episode? Explore Brilliant:",
+    },
+    {
+      key: "telescope",
+      name: "Telescope intro",
+      category: "telescope",
+      body: "🔭 Want to explore the night sky yourself? Here’s the telescope setup I recommend:",
+    },
+    {
+      key: "binoculars",
+      name: "Binoculars intro",
+      category: "telescope",
+      body: "🔭 Ready to start stargazing? These binoculars are a great first step:",
+    },
+    {
+      key: "books",
+      name: "Books intro",
+      category: "books",
+      body: "📚 Go deeper into today’s topic:",
+    },
+    {
+      key: "lego",
+      name: "LEGO intro",
+      category: "lego",
+      body: "🚀 Build your own piece of space exploration:",
+    },
+    {
+      key: "general",
+      name: "General intro",
+      category: "general",
+      body: "✨ Recommended for this episode:",
+    },
+    {
+      key: "disclosure",
+      name: "Standard disclosure",
+      category: "disclosure",
+      body: "Some links above are affiliate links. If you purchase through them, Orbit With Ben may receive a commission at no additional cost to you.",
+    },
+    {
+      key: "amazon_disclosure",
+      name: "Amazon disclosure",
+      category: "amazon_disclosure",
+      body: "As an Amazon Associate I earn from qualifying purchases.",
+    },
+  ];
+  for (const t of templates) {
+    await prisma.affiliateDescriptionTemplate.create({ data: t });
+  }
 }
 
 main()

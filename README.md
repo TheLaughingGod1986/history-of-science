@@ -22,6 +22,7 @@ asking the biggest questions in the universe.*
 **Script reviewer (≥90):** `cd 07_Content-Ops && npm run review:script -- --file <script.md>`  
 **Episode gate:** `cd 07_Content-Ops && npm run gate:episode -- --project ../02_Video-Projects/<slug>`  
 **Next brief:** `cd 07_Content-Ops && npm run brief:next -- --file metrics.json`  
+**Affiliate monetisation (Content Ops):** `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md` · `/affiliate`  
 **New episode scaffold:** `02_Video-Projects/_template_NNN_Episode-Slug/`  
 **Cursor hooks:** `.cursor/hooks.json` (session checklist + pre-gen reminder)  
 **Shorts mirrors:** TikTok `Channel-Setup/TikTok/AUTO_POST.md` · Meta (IG+FB) `Channel-Setup/Meta/AUTO_POST.md`

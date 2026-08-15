@@ -5,6 +5,10 @@ import { formatLondon } from "@/lib/publishing/schedule";
 import { PLATFORMS } from "@/config/platforms";
 import { DistributionPackButton } from "@/components/DistributionPackButton";
 import { ClipActions } from "@/components/ClipActions";
+import { VideoAffiliatePanel } from "@/components/affiliate/VideoAffiliatePanel";
+import { getVideoAffiliatePanel } from "@/lib/affiliate/analytics";
+import { generateRecommendationsForVideo } from "@/lib/affiliate/placements";
+import { previewAffiliateDescriptionBlock } from "@/lib/affiliate/description-service";
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +28,21 @@ export default async function VideoDetailPage({
     },
   });
   if (!video) notFound();
+
+  const affiliatePanel = await getVideoAffiliatePanel(video.id);
+  let descriptionPreview: string | null = null;
+  try {
+    if (affiliatePanel && affiliatePanel.placements.length > 0) {
+      descriptionPreview = await previewAffiliateDescriptionBlock(video.id);
+    } else {
+      const recs = await generateRecommendationsForVideo(video.id);
+      if (recs.recommendations.length) {
+        descriptionPreview = `${recs.recommendations.length} recommendation(s) ready — regenerate placements to insert.`;
+      }
+    }
+  } catch {
+    descriptionPreview = null;
+  }
 
   return (
     <div className="space-y-8">
@@ -69,6 +88,38 @@ export default async function VideoDetailPage({
         </div>
       </div>
 
+      {affiliatePanel ? (
+        <VideoAffiliatePanel
+          videoId={video.id}
+          opportunityScore={affiliatePanel.opportunity.total}
+          placements={affiliatePanel.placements.map((p) => ({
+            id: p.id,
+            status: p.status,
+            placementType: p.placementType,
+            relevanceScore: p.relevanceScore,
+            affiliateProduct: {
+              id: p.affiliateProduct.id,
+              name: p.affiliateProduct.name,
+              slug: p.affiliateProduct.slug,
+              category: p.affiliateProduct.category,
+              estimatedCommission: p.affiliateProduct.estimatedCommission,
+              affiliateProgram: { name: p.affiliateProduct.affiliateProgram.name },
+            },
+          }))}
+        />
+      ) : null}
+
+      {descriptionPreview ? (
+        <div className="card-panel p-5">
+          <h2 className="font-[family-name:var(--font-orbit-display)] text-xl">
+            Affiliate description preview
+          </h2>
+          <pre className="mt-3 whitespace-pre-wrap text-sm text-[#F5E8D2]/65">
+            {descriptionPreview}
+          </pre>
+        </div>
+      ) : null}
+
       <section className="space-y-4">
         <h2 className="font-[family-name:var(--font-orbit-display)] text-2xl">Short clips</h2>
         {video.clips.map((clip) => {
@@ -96,7 +147,9 @@ export default async function VideoDetailPage({
                   <p className="mt-2">{clip.transcript}</p>
                 </div>
                 <div className="rounded-xl bg-white/3 p-3 text-sm text-[#F5E8D2]/70">
-                  <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">Platform coverage</div>
+                  <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">
+                    Platform coverage
+                  </div>
                   <p className="mt-2">
                     Tracked: {Array.from(platformsPosted).join(", ") || "none"}
                   </p>
