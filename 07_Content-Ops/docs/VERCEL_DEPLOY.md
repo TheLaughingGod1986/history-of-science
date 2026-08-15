@@ -23,7 +23,7 @@ Set these on the Vercel project for **Production** and **Preview**:
 | `DATABASE_URL` | Pooled Postgres URL for the app (Neon pooler, Supabase pooler, Vercel Postgres, etc.) |
 | `DIRECT_URL` | Direct (non-pooled) URL for `prisma migrate deploy`. If your host has no pooler, set `DIRECT_URL` to the **same value** as `DATABASE_URL`. |
 | `APP_BASE_URL` | Public origin of this deploy, e.g. `https://YOUR-PROJECT.vercel.app` |
-| `AMAZON_ASSOCIATE_TAG` | Set `AMAZON_ASSOCIATE_TAG` to the live Associates tag in the Vercel project env (Production + Preview) **only** — never commit the value. `/go` stamps `tag=` from this env at redirect time. |
+| `AMAZON_ASSOCIATE_TAG` | Set in the Vercel dashboard only (Production + Preview), e.g. the live Associates tag. Never commit the value. `/go` stamps `tag=` from this env at redirect time. |
 | `AFFILIATE_REDIRECT_BASE_URL` | Optional. Defaults to `${APP_BASE_URL}/go`. |
 | `ORBIT_TOKEN_ENCRYPTION_KEY` | Required in production for OAuth token encryption (see `.env.example`). |
 
