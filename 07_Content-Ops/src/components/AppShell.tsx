@@ -4,7 +4,7 @@ import { MobileNav, type NavItem } from "@/components/MobileNav";
 const NAV: NavItem[] = [
   { href: "/", label: "Overview" },
   { href: "/pipeline", label: "Pipeline" },
-  { href: "/videos", label: "Long-form" },
+  { href: "/videos", label: "Films" },
   { href: "/calendar", label: "Calendar" },
   { href: "/analytics", label: "Analytics" },
   { href: "/affiliate", label: "Affiliate" },

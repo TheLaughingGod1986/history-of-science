@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { formatInTimeZone } from "date-fns-tz";
 import { prisma } from "@/lib/storage/prisma";
-import { formatLondon } from "@/lib/publishing/schedule";
+import { PUBLISHING_SCHEDULE } from "@/config/publishing-schedule";
 import { PLATFORMS } from "@/config/platforms";
 import { DistributionPackButton } from "@/components/DistributionPackButton";
 import { ClipActions } from "@/components/ClipActions";
@@ -11,6 +12,20 @@ import { generateRecommendationsForVideo } from "@/lib/affiliate/placements";
 import { previewAffiliateDescriptionBlock } from "@/lib/affiliate/description-service";
 
 export const dynamic = "force-dynamic";
+
+function creatorDetailStatus(video: {
+  status: string;
+  youtubeUrl: string | null;
+  youtubeVideoId: string | null;
+  finalVideoPath: string | null;
+}): string {
+  if (video.status === "scheduled" || video.status === "published") return "scheduled";
+  if (video.youtubeUrl || video.youtubeVideoId) return "listed";
+  if (video.status === "ready" || video.status === "editing" || video.finalVideoPath) {
+    return "cut";
+  }
+  return video.status;
+}
 
 export default async function VideoDetailPage({
   params,
@@ -46,29 +61,58 @@ export default async function VideoDetailPage({
 
   return (
     <div className="space-y-8 overflow-x-hidden">
-      <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
-        <div className="min-w-0">
-          <Link
-            href="/videos"
-            className="inline-flex min-h-11 items-center text-sm text-[#5A6E82] hover:text-[#F5E8D2]"
-          >
-            ← Long-form library
-          </Link>
-          <h1 className="mt-2 break-words font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2] sm:mt-3 sm:text-3xl">
-            {video.workingTitle || video.title}
-          </h1>
-          {video.workingTitle ? (
-            <p className="mt-2 break-words text-[#F5E8D2]/55">{video.title}</p>
-          ) : null}
-          <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-xs uppercase tracking-[0.16em] text-[#FF7A24]">
-            <span>{video.status}</span>
-            <span className="break-words">{video.topic}</span>
-            {video.publicationDate ? <span>{formatLondon(video.publicationDate)}</span> : null}
-          </div>
+      <div className="min-w-0">
+        <Link
+          href="/videos"
+          className="inline-flex min-h-11 items-center text-sm text-[#5A6E82] hover:text-[#F5E8D2]"
+        >
+          ← Thursday films
+        </Link>
+        <h1 className="mt-2 break-words font-[family-name:var(--font-orbit-display)] text-2xl text-[#F5E8D2] sm:mt-3 sm:text-3xl">
+          {video.workingTitle || video.title}
+        </h1>
+        {video.workingTitle ? (
+          <p className="mt-2 break-words text-[#F5E8D2]/55">{video.title}</p>
+        ) : null}
+        <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-xs uppercase tracking-[0.16em] text-[#FF7A24]">
+          <span>{creatorDetailStatus(video)}</span>
+          {video.publicationDate ? (
+            <span>
+              {formatInTimeZone(
+                video.publicationDate,
+                PUBLISHING_SCHEDULE.timezone,
+                "EEE d MMM HH:mm",
+              )}
+            </span>
+          ) : (
+            <span>No Thursday date</span>
+          )}
         </div>
-        <div className="w-full sm:w-auto sm:[&>div]:text-right [&_button]:min-h-11 [&_button]:w-full sm:[&_button]:w-auto">
-          <DistributionPackButton videoId={video.id} />
-        </div>
+        <ul className="mt-4 space-y-1.5 text-sm text-[#F5E8D2]/65">
+          <li>
+            Cut (master):{" "}
+            {video.finalVideoPath || video.status === "ready" || video.status === "editing"
+              ? "ready / in cut"
+              : "not yet"}
+          </li>
+          <li>Listing: {video.youtubeUrl || video.youtubeVideoId ? "written" : "not yet"}</li>
+          <li>
+            Scheduled:{" "}
+            {video.status === "scheduled" || video.status === "published"
+              ? "yes"
+              : video.publicationDate
+                ? "date set"
+                : "not yet"}
+          </li>
+          <li>
+            Companion Short:{" "}
+            {video.clips.some((c) => ["exported", "scheduled", "published"].includes(c.status))
+              ? "done / on the way"
+              : video.clips.length
+                ? "in progress"
+                : "not yet"}
+          </li>
+        </ul>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
@@ -128,10 +172,17 @@ export default async function VideoDetailPage({
       ) : null}
 
       <section className="space-y-4">
-        <h2 className="font-[family-name:var(--font-orbit-display)] text-2xl">Short clips</h2>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <h2 className="font-[family-name:var(--font-orbit-display)] text-2xl">
+            Companion Short
+          </h2>
+          <div className="[&_button]:min-h-11 [&_button]:rounded-full [&_button]:border [&_button]:border-white/15 [&_button]:bg-transparent [&_button]:px-4 [&_button]:py-2 [&_button]:text-sm [&_button]:font-normal [&_button]:text-[#F5E8D2]/80">
+            <DistributionPackButton videoId={video.id} />
+          </div>
+        </div>
         {video.clips.length === 0 ? (
           <div className="card-panel p-5 text-sm text-[#F5E8D2]/65">
-            No short clips yet. Create a distribution pack to propose clips from this film.
+            No companion Short yet. When the cut is ready, propose a Short from this film.
           </div>
         ) : null}
         {video.clips.map((clip) => {
