@@ -15,10 +15,14 @@ Exports:
 from __future__ import annotations
 
 import json
-import shutil
 import subprocess
+import sys
 import time
 from pathlib import Path
+
+_TOOLS = Path(__file__).resolve().parents[3] / "04_Audio" / "tools"
+sys.path.insert(0, str(_TOOLS))
+from orbit_cfr_delivery import remaster_cfr  # noqa: E402
 
 ROOT = Path(
     "/Users/ben/code/Orbit-YouTube/02_Video-Projects/"
@@ -208,7 +212,8 @@ def main() -> None:
             str(MASTER),
         ]
     )
-    shutil.copy2(MASTER, UPLOAD)
+    print("Remastering upload file to constant-frame-rate libx264 (keeps audio)...", flush=True)
+    remaster_cfr(MASTER, UPLOAD)
 
     master_dur = probe_dur(MASTER)
     out_meta = {

@@ -10,8 +10,11 @@ Before a video is “completed” for distribution, use shared CLIs in `04_Audio
 | VO → SRT captions | `transcribe_vo.py` |
 | `[SFX:]` → ElevenLabs SFX | `generate_sfx_from_script.py` |
 | `[MUSIC:]` → instrumental bed | `generate_music_bed.py` |
+| **CFR remaster (playback lag)** | `orbit_cfr_delivery.py` / `fix_published_playback_lag.py` |
 
-Details: `04_Audio/tools/README.md` · package checklist in `VIDEO_PACKAGE_TEMPLATE.md`.
+Laggy/glitchy picture with smooth audio is VFR + VideoToolbox. Remaster, then **Studio Replace** the original video id — never a new upload. Details: `docs/PLAYBACK_LAG_FIX.md`.
+
+Package checklist: `00_Brand/Channel-Setup/VIDEO_PACKAGE_TEMPLATE.md`. Other CLIs: `04_Audio/tools/README.md`.
 
 ## 1. Register a completed long-form video
 

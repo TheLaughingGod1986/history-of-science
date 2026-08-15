@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Replace Orbit Shorts on YouTube Studio with kinetic-caption v02 files.
+"""Upload NEW Shorts and delete old ones — resets view counts.
+
+Do **not** use this to fix playback lag. That must keep the original video id
+(Studio Replace). See `docs/PLAYBACK_LAG_FIX.md` and `_replace_media_in_place.py`.
+
+This script is the v02 caption-style cutover: new upload, new id, delete old.
 
 For each short in SHORTS_UPLOAD_INDEX:
   1) Delete the old scheduled/private draft (or private a public one)

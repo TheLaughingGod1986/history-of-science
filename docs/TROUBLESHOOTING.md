@@ -32,3 +32,10 @@ v1 does not auto-publish. Manual upload is still required. Adapters only report 
 ## Watermarked video
 
 Never re-upload a TikTok/Instagram download. Always use the clean export from `content/exports/.../video/`.
+
+## Smooth audio, glitchy / laggy picture
+
+That is variable frame rate (usually Apple VideoToolbox Shorts encodes), not a
+broken voiceover. Remaster with `04_Audio/tools/fix_published_playback_lag.py`
+and **Replace** the file on the existing YouTube video. Do not upload a new
+video — that resets views. Full runbook: `docs/PLAYBACK_LAG_FIX.md`.

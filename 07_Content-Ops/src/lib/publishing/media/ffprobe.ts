@@ -4,6 +4,8 @@ import fs from "fs/promises";
 
 const execFileAsync = promisify(execFile);
 
+const VIDEOTOOLBOX_MARKERS = ["videotoolbox", "h264_videotoolbox", "hevc_videotoolbox"];
+
 export type ProbeResult = {
   ok: boolean;
   errors: string[];
@@ -16,12 +18,106 @@ export type ProbeResult = {
   audioCodec?: string;
   sizeBytes?: number;
   frameRate?: number;
+  rFrameRate?: number;
+  avgFrameRate?: number;
+  variableFrameRate?: boolean;
+  videoToolbox?: boolean;
+  pixelFormat?: string;
+  encoder?: string;
   hasAudio?: boolean;
 };
 
-export async function probeVideo(filePath: string): Promise<ProbeResult> {
+type ProbeStream = {
+  codec_type?: string;
+  codec_name?: string;
+  width?: number;
+  height?: number;
+  avg_frame_rate?: string;
+  r_frame_rate?: string;
+  pix_fmt?: string;
+  tags?: { encoder?: string };
+};
+
+type ProbeJson = {
+  format?: { duration?: string; size?: string };
+  streams?: ProbeStream[];
+};
+
+export function parseFrameRate(value?: string): number | undefined {
+  if (!value || value === "0/0" || !value.includes("/")) return undefined;
+  const [a, b] = value.split("/").map(Number);
+  if (!b) return undefined;
+  const n = a / b;
+  return Number.isFinite(n) && n > 0 ? n : undefined;
+}
+
+export function isVariableFrameRate(rFrameRate?: string, avgFrameRate?: string, tolerance = 0.08): boolean {
+  const r = parseFrameRate(rFrameRate);
+  const avg = parseFrameRate(avgFrameRate);
+  if (r == null || avg == null) return true;
+  return Math.abs(r - avg) > tolerance;
+}
+
+export function encoderIsVideoToolbox(encoder?: string, codecName?: string): boolean {
+  const blob = `${encoder || ""} ${codecName || ""}`.toLowerCase();
+  return VIDEOTOOLBOX_MARKERS.some((m) => blob.includes(m));
+}
+
+export function assessPlaybackHealth(data: ProbeJson): {
+  errors: string[];
+  warnings: string[];
+  video?: ProbeStream;
+  audio?: ProbeStream;
+  variableFrameRate: boolean;
+  videoToolbox: boolean;
+  frameRate?: number;
+  rFrameRate?: number;
+  avgFrameRate?: number;
+  pixelFormat?: string;
+  encoder?: string;
+} {
   const errors: string[] = [];
   const warnings: string[] = [];
+  const video = data.streams?.find((s) => s.codec_type === "video");
+  const audio = data.streams?.find((s) => s.codec_type === "audio");
+  const rFrameRate = parseFrameRate(video?.r_frame_rate);
+  const avgFrameRate = parseFrameRate(video?.avg_frame_rate);
+  const encoder = video?.tags?.encoder || video?.codec_name;
+  const vfr = isVariableFrameRate(video?.r_frame_rate, video?.avg_frame_rate);
+  const toolbox = encoderIsVideoToolbox(video?.tags?.encoder, video?.codec_name);
+  const pix = (video?.pix_fmt || "").toLowerCase();
+
+  if (!video) errors.push("No video stream");
+  if (vfr && video) {
+    errors.push(
+      `Variable frame rate (r=${video.r_frame_rate} avg=${video.avg_frame_rate}). ` +
+        "YouTube/TikTok/IG transcode this as stuttery video with smooth audio.",
+    );
+  }
+  if (toolbox) {
+    errors.push(`Hardware encoder ${encoder} is not safe for social upload. Use libx264 CFR.`);
+  }
+  if (pix && pix !== "yuv420p" && pix !== "yuvj420p") {
+    errors.push(`Pixel format ${pix} is not yuv420p (platforms glitch on 422/444).`);
+  }
+  if (!audio) warnings.push("No audio track detected");
+
+  return {
+    errors,
+    warnings,
+    video,
+    audio,
+    variableFrameRate: vfr,
+    videoToolbox: toolbox,
+    frameRate: avgFrameRate ?? rFrameRate,
+    rFrameRate,
+    avgFrameRate,
+    pixelFormat: pix || undefined,
+    encoder,
+  };
+}
+
+export async function probeVideo(filePath: string): Promise<ProbeResult> {
   try {
     const stat = await fs.stat(filePath);
     if (stat.size === 0) {
@@ -38,29 +134,20 @@ export async function probeVideo(filePath: string): Promise<ProbeResult> {
         "-v",
         "error",
         "-show_entries",
-        "format=duration,size:stream=codec_type,codec_name,width,height,avg_frame_rate",
+        "format=duration,size:stream=codec_type,codec_name,width,height,avg_frame_rate,r_frame_rate,pix_fmt:stream_tags=encoder",
         "-of",
         "json",
         filePath,
       ],
       { timeout: 30_000 },
     );
-    const data = JSON.parse(stdout) as {
-      format?: { duration?: string; size?: string };
-      streams?: Array<{
-        codec_type?: string;
-        codec_name?: string;
-        width?: number;
-        height?: number;
-        avg_frame_rate?: string;
-      }>;
-    };
-    const video = data.streams?.find((s) => s.codec_type === "video");
-    const audio = data.streams?.find((s) => s.codec_type === "audio");
+    const data = JSON.parse(stdout) as ProbeJson;
+    const health = assessPlaybackHealth(data);
     const durationSeconds = data.format?.duration ? Number(data.format.duration) : undefined;
-    const width = video?.width;
-    const height = video?.height;
+    const width = health.video?.width;
+    const height = health.video?.height;
     let aspectRatio: string | undefined;
+    const warnings = [...health.warnings];
     if (width && height) {
       const g = gcd(width, height);
       aspectRatio = `${width / g}:${height / g}`;
@@ -68,25 +155,25 @@ export async function probeVideo(filePath: string): Promise<ProbeResult> {
         warnings.push(`Aspect ${aspectRatio} is not close to 9:16`);
       }
     }
-    let frameRate: number | undefined;
-    if (video?.avg_frame_rate && video.avg_frame_rate.includes("/")) {
-      const [a, b] = video.avg_frame_rate.split("/").map(Number);
-      if (b) frameRate = a / b;
-    }
-    if (!audio) warnings.push("No audio track detected");
     return {
-      ok: errors.length === 0,
-      errors,
+      ok: health.errors.length === 0,
+      errors: health.errors,
       warnings,
       durationSeconds,
       width,
       height,
       aspectRatio,
-      videoCodec: video?.codec_name,
-      audioCodec: audio?.codec_name,
+      videoCodec: health.video?.codec_name,
+      audioCodec: health.audio?.codec_name,
       sizeBytes: data.format?.size ? Number(data.format.size) : undefined,
-      frameRate,
-      hasAudio: Boolean(audio),
+      frameRate: health.frameRate,
+      rFrameRate: health.rFrameRate,
+      avgFrameRate: health.avgFrameRate,
+      variableFrameRate: health.variableFrameRate,
+      videoToolbox: health.videoToolbox,
+      pixelFormat: health.pixelFormat,
+      encoder: health.encoder,
+      hasAudio: Boolean(health.audio),
     };
   } catch (err) {
     return {
@@ -94,7 +181,7 @@ export async function probeVideo(filePath: string): Promise<ProbeResult> {
       errors: [
         `ffprobe unavailable or failed: ${err instanceof Error ? err.message : "unknown"}`,
       ],
-      warnings,
+      warnings: [],
     };
   }
 }

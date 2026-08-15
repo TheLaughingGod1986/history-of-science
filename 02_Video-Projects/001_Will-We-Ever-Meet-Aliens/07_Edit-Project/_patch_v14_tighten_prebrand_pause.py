@@ -72,9 +72,9 @@ def render(destination: Path, *, proof: bool = False) -> None:
         "error",
     ]
     if proof:
-        command += ["-i", str(SOURCE)]
+        command += ["-t", "45", "-i", str(SOURCE)]
     else:
-        command += ["-hwaccel", "videotoolbox", "-i", str(SOURCE)]
+        command += ["-i", str(SOURCE)]
     command += [
         "-filter_complex",
         filter_graph(),
@@ -83,32 +83,22 @@ def render(destination: Path, *, proof: bool = False) -> None:
         "-map",
         "[a]",
     ]
-    if proof:
-        command += [
-            "-t",
-            "45",
-            "-c:v",
-            "libx264",
-            "-preset",
-            "veryfast",
-            "-crf",
-            "18",
-        ]
-    else:
-        command += [
-            "-c:v",
-            "h264_videotoolbox",
-            "-b:v",
-            "10M",
-            "-maxrate",
-            "14M",
-            "-bufsize",
-            "20M",
-            "-profile:v",
-            "high",
-            "-allow_sw",
-            "1",
-        ]
+    command += [
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "-profile:v",
+        "high",
+        "-pix_fmt",
+        "yuv420p",
+        "-fps_mode",
+        "cfr",
+        "-r",
+        "30",
+    ]
     command += [
         "-c:a",
         "aac",
