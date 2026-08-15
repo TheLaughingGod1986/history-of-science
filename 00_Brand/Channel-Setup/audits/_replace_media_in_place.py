@@ -255,10 +255,12 @@ def replace_one(page, job: dict) -> dict:
 
 def _cdp_up(url: str = CDP_URL) -> bool:
     try:
+        import json
         import urllib.request
 
-        with urllib.request.urlopen(url + "/json/version", timeout=2) as resp:
-            return resp.status == 200
+        with urllib.request.urlopen(url.rstrip("/") + "/json/version", timeout=3) as resp:
+            data = json.loads(resp.read().decode())
+            return bool(data.get("webSocketDebuggerUrl") or data.get("Browser"))
     except Exception:
         return False
 
@@ -324,7 +326,13 @@ def main() -> int:
         browser = None
         ctx = None
         close_ctx = False
-        if not args.launch_profile and _cdp_up(args.cdp):
+        if not args.launch_profile:
+            if not _cdp_up(args.cdp):
+                raise SystemExit(
+                    f"Studio CDP {args.cdp} is down. Start it first:\n"
+                    "  bash 00_Brand/Channel-Setup/audits/start_studio_chrome_cdp.sh\n"
+                    "Do NOT launch_persistent_context on the Studio profile — it signs you out."
+                )
             print(f"Using Studio CDP {args.cdp}", flush=True)
             browser = p.chromium.connect_over_cdp(args.cdp)
             ctx = browser.contexts[0] if browser.contexts else browser.new_context()
