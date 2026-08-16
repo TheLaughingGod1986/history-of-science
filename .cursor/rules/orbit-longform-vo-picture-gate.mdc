@@ -1,5 +1,5 @@
 ---
-description: Orbit long-form — cold open, 18–25 min, Orbit agency, VO–picture, script ≥90, vidIQ
+description: Orbit long-form — cold open, 7–9 min now, Orbit agency, VO–picture, script ≥90, vidIQ
 alwaysApply: true
 ---
 
@@ -9,7 +9,7 @@ When writing or assembling any Orbit long-form **after V004**:
 
 1. **Pre-build vidIQ audit (blocking):** keywords, title ABC ≥90, outliers, retention plan — **before** script lock, VO, or picture gen. Template: `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
 2. **Script reviewer ≥ 90 / 100** (`07_Content-Ops` `npm run review:script`) — reject below 90.
-3. **Length:** Target **~18–25 minutes** VO (documentary depth). Do not pad; only shorten if retention evidence shows abandonment — not because early views are low.
+3. **Length (stage lock):** Target **7–9 minutes** VO now (Last Star / Europa pattern). Expand to 15–20–30 only after an 8-min film gets real impressions and hold stays past ~5 min. Do not pad to 18–25; do not chop a 21-min lecture to fake 7–9. Live 21-min films are not the length to copy.
 4. **Cold open:** curiosity by 5s · stakes by 15s · journey by 30s. Scenario-first / personal — no definition/history/channel-intro opens.
 5. **Structure:** Question → Danger → Story begins → Explanation while story continues → Escalation → Ending. Framework: Hook → Question → Escalation → Discovery → Payoff → Bigger question. Prefer experiential framing (what would YOU see/feel/survive).
 6. **Chapters:** 4–6 named film-act chapters. Each: entry → show → **one teach** → turn → exit. Orbit **acts** in-scene (`[ORBIT ACTS]`).
