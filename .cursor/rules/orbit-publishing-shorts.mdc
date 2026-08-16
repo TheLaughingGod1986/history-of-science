@@ -1,5 +1,5 @@
 ---
-description: Orbit with Ben publishing & Shorts — pillar-first rules
+description: Orbit with Ben publishing & Shorts — cadence + punch-first lock
 globs:
   - 00_Brand/Channel-Setup/**
   - 02_Video-Projects/**/10_Shorts/**
@@ -9,12 +9,18 @@ alwaysApply: false
 
 # Publishing rules (Orbit with Ben)
 
-Canonical: `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`
+Canonical cadence: `00_Brand/Channel-Setup/CHANNEL_PUBLISH_CADENCE.md`  
+Shorts duration lock: `.cursor/rules/orbit-shorts-punch-first.mdc` (always on)
 
-1. Long-form is the pillar. Publish it **first** (Thu **19:00** UK, window 18:00–20:00).
-2. Short #1 ships **1–3 hours later** (ops **21:00** UK) from the strongest hook.
-3. Days 2–7: **one Short per day** @ 12:30 UK. Cluster size **5–7**.
-4. Never publish a Short before the long is public. Never dump the cluster on Day 1.
-5. Every Short is a **standalone mini-documentary** (hook ≤2s, one idea, curiosity ending). Soft CTAs only — never ad voice.
-6. Every long generates a full flywheel: Shorts + X/Threads/LinkedIn/Facebook + Reddit + Community poll/image (`CONTENT_FLYWHEEL_TEMPLATE.md`).
-7. Schedule source of truth: `OPTIMAL_PUBLISH_SCHEDULE.json`. Ops card: `CHANNEL_PUBLISH_CADENCE.md`.
+| Slot | Time UK |
+|------|--------:|
+| Weekly long (Thu) | **18:00** |
+| Same-day launch Short | **20:00** |
+| Daily supporting Short | **11:30** (every day, including long Thursdays) |
+
+1. Long-form is the pillar. Prefer parent long public before Related-dependent Shorts.
+2. On long Thursdays: **11:30** Short + **18:00** long + **20:00** launch Short is allowed.
+3. Cluster: **3–5** strong Shorts per long; weaker/overlapping stays private reserve.
+4. Every Short: punch-first **~20–28s**, one idea, curiosity ending, soft CTA only.
+5. **Never ship or schedule a Short ≥40s** — rebuild via new upload + supersede (see punch-first rule).
+6. Schedule SoT: `YOUTUBE_CANONICAL_LIVE_SCHEDULE.json`. Ops card: `CHANNEL_PUBLISH_CADENCE.md`.

@@ -5,12 +5,13 @@ alwaysApply: true
 
 # Orbit — next video kickoff (Growth System v2)
 
-When the user asks to **build / start / plan the next video**, **new episode**, **next long**, or similar — **do this first**. Do not jump to VO, Gemini Veo, Seedance, or picture gen.
+When the user asks to **build / start / plan the next video**, **new episode**, **next long**, or similar — **do this first**. Do not jump to VO, Flow Veo, Seedance, or picture gen.
 
 ## Step 0 — gate (blocking)
 
-1. Read `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`
-2. Topic score (or confirm locked topic) via `templates/TOPIC_OPPORTUNITY_SCORE.md`
+1. Read `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md` and `CONTENT_INTELLIGENCE_STRATEGY.md`
+2. Topic score (or confirm locked topic) via `templates/TOPIC_OPPORTUNITY_SCORE.md` / `npm run intelligence:score-topics`
+2b. Fill `templates/EPISODE_CLUSTER_PLAN_TEMPLATE.md` (experiential angle · 4–8 Shorts · cluster ID)
 3. Pre-build vidIQ audit → project `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` from `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
 4. Cold-open outline: curiosity **5s** · stakes **15s** · journey **30s**
 5. Chapter outline: **4–6** acts · Orbit **experiences** science · Hook→Question→Escalation→Discovery→Payoff→Bigger question
@@ -20,7 +21,7 @@ When the user asks to **build / start / plan the next video**, **new episode**, 
    cd 07_Content-Ops && npm run review:script -- --file <script.md>
    ```
    Below 90 = **REJECT** — rewrite. Do not generate audio/video.
-8. **Episode gate (blocking CLI)** before VO / Gemini Veo:
+8. **Episode gate (blocking CLI)** before VO / Flow Veo:
    ```bash
    cd 07_Content-Ops && npm run gate:episode -- --project ../02_Video-Projects/<NNN_Slug>
    ```
@@ -30,11 +31,15 @@ When the user asks to **build / start / plan the next video**, **new episode**, 
 
 Copy `02_Video-Projects/_template_NNN_Episode-Slug/` → `02_Video-Projects/NNN_Your-Slug/`, then run the gate.
 
-## Then produce
+## Then produce (Omni long-form — locked)
 
-VO (**ElevenLabs** Ben Orbit Narrator) → picture (**Gemini Veo API** via `orbit_gemini_veo.py` / template `_generate_veo_from_beats.py`, silent) → edit → `templates/PRODUCTION_CHECKLIST_V2.md` → YouTube package upload.
+Prefer the **Europa Omni later standard** (`OMNI_LONGFORM_PLAYBOOK.md`):
 
-Do **not** use ElevenLabs Image & Video for CG.
+1. ~1-min parts → Ben Orbit Narrator VO → **Omni Flash** plates (Flow) → assemble (xfade/acrossfade) → part QA → next part  
+2. Picture-first open · mid-film chapter cards · soft-join parts · 10s last-picture hold for Studio end screens → broadcast master. No brand intro. No baked like/subscribe outro.  
+3. **4–8** punch Shorts (~22–28s) → checklist → YouTube package. Zero `/go/` on Shorts.  
+
+Do **not** use ElevenLabs Image & Video for CG. Do **not** default to `GEMINI_API_KEY` (Flow first; AI Studio / API are fallbacks only). Legacy full-pass Veo beat gen only if explicitly requested.
 
 After shipping, refresh the next brief from Studio metrics:
 
@@ -50,10 +55,11 @@ Once the **YouTube** long (and Shorts cluster) schedule is locked:
 1. **Thumbnails:** produce **3** Orbit-on-brand variants (one object · one emotion · one question). Score in VidIQ; use `vidiq_generate_thumbnail` only if house/Gemini thumbs are weak. Longs: start Studio **Thumbnail ABC** (or title+thumb ABC) after upload.
 2. **Social mirror:** schedule TikTok / Meta / Threads / other platforms from the **same YouTube air times** (TikTok Shorts ≈ YouTube T0 **+ 1 hour**). Never post social Shorts before the YouTube long is public. Source: `OPTIMAL_PUBLISH_SCHEDULE.json` · `PUBLISHING_AND_SHORTS_STRATEGY.md` · `SHORTS_FUNNEL_AND_CROSSPOST.md` · `RELEASE_WEEK_CHECKLIST.md`.
 
-## Defaults (trust-building window)
+## Defaults (documentary + cluster window)
 
-- Runtime **8–12 min** · title one promise (no series suffix) · thumb = one question
-- **3–5** Shorts: strongest-fact open · curiosity-gap end · Related→long
+- Runtime **~18–25 min** · title one promise (no series suffix) · thumb = one question · experiential framing preferred
+- **4–8** Shorts: open inside the question · curiosity-gap end · Related→long · same content cluster
+- Evidence labels honest (LOW_DATA / EARLY_POSITIVE_SIGNAL) — never overfit one Short
 - No dead ends: end screen · cards · pin → another Orbit documentary
 - Do **not** redesign the brand
 
@@ -61,4 +67,4 @@ Once the **YouTube** long (and Shorts cluster) schedule is locked:
 
 “Build next video” · “Next episode” · “Start V0xx” · “New long-form” · “Growth System v2 first”
 
-Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md` · `RETENTION_AND_GROWTH_LOCKED.md` · `LONGFORM_STORY_AND_VO_PICTURE_GATE.md` · `docs/GEMINI_VEO_CG.md`
+Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md` · `CONTENT_INTELLIGENCE_STRATEGY.md` · `RETENTION_AND_GROWTH_LOCKED.md` · `LONGFORM_STORY_AND_VO_PICTURE_GATE.md` · `docs/GEMINI_VEO_CG.md` (Ultra UI default)

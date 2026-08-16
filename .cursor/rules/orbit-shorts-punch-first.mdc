@@ -1,0 +1,32 @@
+---
+description: Shorts must be punch-first ~20–28s — never ship or schedule ≥40s Shorts
+alwaysApply: true
+---
+
+# Shorts punch-first standard (locked)
+
+**Do not upload, schedule, or leave public any Short ≥40 seconds.** Target **~20–28s** (sweet spot ~22–26s).
+
+## Why
+
+Retention evidence (2026-08): ~43s setup-led stayed ~27%; ~22s punch-first stayed ~67%. Growth is retention, not catalogue padding.
+
+## Build rules
+
+1. **Punch-first open** — strongest fact / question in 0–1.5s (captions reinforce the punch).
+2. **One idea** — curiosity-gap end; soft CTA last ~3s only.
+3. **Exact parent long** — description link + Studio Related + pin when parent is public.
+4. Prefer builders named `*_punch_*_v03.py` / `*_punch_*_v01.py` over legacy 40–45s launch cuts.
+
+## Replace rule (YouTube cannot swap files on an ID)
+
+1. Upload new private punch cut → metadata/thumb parity.
+2. **Scheduled:** set new `publishAt` exactly → unschedule old (private, no `publishAt`). Do **not** delete.
+3. **Public:** make new public → privatize old. Do **not** delete.
+4. Update registry / `SHORTS_UPLOAD_INDEX` / protected schedule lists; put old IDs in `historicalDuplicateIds`.
+
+## Before any Shorts upload
+
+- Probe duration; **abort if ≥40s**.
+- Do not re-introduce superseded ≥40s IDs as canonical.
+- Audit artifact for the 2026-08-12 rebuild: `00_Brand/Channel-Setup/audits/shorts_40s_rebuild_2026-08-12/FINAL_40S_REBUILD_REPORT.md`.
