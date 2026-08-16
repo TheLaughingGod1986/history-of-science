@@ -454,3 +454,10 @@ Open http://localhost:3000/affiliate
 - LEGO Affiliate access (programme seeded inactive; `space-lego` product inactive)
 - Confirm remaining Amazon ASINs (`astronomy-binoculars`, `mars-book`) then `npm run affiliate:apply-urls`
 - Production `AFFILIATE_REDIRECT_BASE_URL=https://orbitwithben.com/go` + DNS/hosting for redirects (or proxy to Content Ops)
+
+**Go-live helpers (in-repo):** see `docs/AFFILIATE_GO_LIVE.md`
+
+```bash
+npm run affiliate:apply-urls   # public destination URLs (no affiliate IDs)
+npm run affiliate:verify       # readiness checklist on /affiliate + CLI
+```

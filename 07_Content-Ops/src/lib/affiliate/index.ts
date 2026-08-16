@@ -29,6 +29,8 @@ export * from "./editorial-trust-gate";
 export * from "./goals";
 export * from "./goals-service";
 export * from "./live-product-urls";
+export * from "./go-live";
+export * from "./go-live-service";
 export * from "./apply-live-urls";
 export * from "./film-topic-book-map";
 export * from "./wire-topic-book-placements";

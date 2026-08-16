@@ -67,12 +67,11 @@ New episodes: copy `02_Video-Projects/_template_NNN_Episode-Slug/`.
 
 Integrated affiliate programmes, products, video matching, `/go/{slug}` click tracking, description blocks, CSV conversion import, and opportunity scoring.
 
-- Docs: `docs/AFFILIATE_MONETISATION_SYSTEM.md`
+- Docs: `docs/AFFILIATE_MONETISATION_SYSTEM.md` · go-live: `docs/AFFILIATE_GO_LIVE.md`
 - UI: `/affiliate` · `/affiliate/products` · `/affiliate/programs` · `/affiliate/opportunities`
 - Env: `AMAZON_ASSOCIATE_TAG` (set in operator env only — see affiliate docs; never commit), `BRILLIANT_AFFILIATE_ID`, `AFFILIATE_REDIRECT_BASE_URL`
-- Apply live Amazon UK destinations without reset: `npm run affiliate:apply-urls`
-- Wire film → one approved topic-book DESCRIPTION_PRIMARY (Social Media Manager): `npm run affiliate:wire-topic-books`
-- Philosophy: relevance before revenue — max 4 links per video
+- CLI: `npm run affiliate:verify` · `npm run affiliate:apply-urls` · `npm run affiliate:wire-topic-books`
+- Philosophy: relevance before revenue — card ≤4 candidates; description Auditor-capped
 - Social (Threads / Instagram / Facebook Page): YouTube or `/go/` URLs only — never raw amazon.co.uk
 - LEGO programme + `space-lego` product stay inactive
 
