@@ -1,0 +1,37 @@
+---
+description: picture-first open, Studio end screens, one named-book /go/ on the long only.
+alwaysApply: true
+---
+
+# Orbit long-form — open, end, affiliate (locked 2026-08-16)
+
+Applies to every new long and every recut. Reference: Europa v02 · Last Star v11 · BH v09 · AW v05 · Fermi v20.
+
+## Open
+
+- First **3 seconds** = strange picture only. No Orbit, no logo, no title, no “ORBIT / Stories from the sky”.
+- Orbit after **~8s**.
+- Curiosity by **5s**, stakes by **15s**, journey by **30s** — in the script, not a title card.
+- Do not hard-cut A/V through a leftover sting (chops mid-word). Cover sting **picture only**; leave VO continuous.
+
+## End
+
+- Strip baked like/subscribe VO and graphics.
+- Hold last **real** picture **10s** for official YouTube Studio end screens (Subscribe + next film when an id exists).
+- Soft spoken CTA only if it is not a shop read.
+
+## Affiliate
+
+- One named product, late, after the wonder line. VO + on-screen **4–6s** (not a shop card).
+- URL only in the long description: `https://orbit-content-ops.vercel.app/go/{slug}`.
+- Shorts: **zero** `/go/` or shop URLs. Full-film CTA only.
+- Do not bolt a book on to unlock a link.
+- Do not name telescope / LEGO / Brilliant unless the film is about them and the door is live.
+
+## Also locked
+
+- Picture flatten: one VO idea → one literal image. When VO and picture disagree, picture is wrong. Orbit in the scene, not a sticker.
+- Recut = new YouTube id. Leave old live until new is public, then unpublish. Do not reuse ids.
+- Length **~18–25 min**. Older PRE_BUILD / production-checklist lines that say 8–12 are stale.
+
+Canonical: `00_Brand/Channel-Setup/OMNI_LONGFORM_PLAYBOOK.md`

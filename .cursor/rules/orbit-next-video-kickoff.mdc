@@ -33,11 +33,11 @@ Copy `02_Video-Projects/_template_NNN_Episode-Slug/` → `02_Video-Projects/NNN_
 
 ## Then produce (Omni long-form — locked)
 
-Prefer the **Europa Omni format** (`OMNI_LONGFORM_PLAYBOOK.md`):
+Prefer the **Europa Omni later standard** (`OMNI_LONGFORM_PLAYBOOK.md`):
 
 1. ~1-min parts → Ben Orbit Narrator VO → **Omni Flash** plates (Flow) → assemble (xfade/acrossfade) → part QA → next part  
-2. Brand intro · chapter cards · soft-join parts · outro → broadcast master  
-3. **4–8** punch Shorts (~22–28s) → checklist → YouTube package  
+2. Picture-first open · mid-film chapter cards · soft-join parts · 10s last-picture hold for Studio end screens → broadcast master. No brand intro. No baked like/subscribe outro.  
+3. **4–8** punch Shorts (~22–28s) → checklist → YouTube package. Zero `/go/` on Shorts.  
 
 Do **not** use ElevenLabs Image & Video for CG. Do **not** default to `GEMINI_API_KEY` (Flow first; AI Studio / API are fallbacks only). Legacy full-pass Veo beat gen only if explicitly requested.
 
