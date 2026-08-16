@@ -1,0 +1,71 @@
+---
+description: Omni long-form section QA — motion, SFX joins, single Orbit (locked forward)
+alwaysApply: true
+---
+
+# Orbit Omni section QA (locked forward)
+
+**Locked** on `006_Could-Life-Exist-Under-The-Ice-Of-Europa` Parts **01–08** (broadcast `europa_broadcast_v01.mp4`, 2026-08-14). Apply to **every** Omni-forward long. Pipeline overview: `orbit-omni-longform-playbook.mdc` · `00_Brand/Channel-Setup/OMNI_LONGFORM_PLAYBOOK.md`.
+
+## Process
+
+1. **~1 minute parts.** Write → script QA → VO + Omni for that part only → picture QA → approve → next part.
+2. **Do not** generate the full episode in one pass. Regen only the failed minute / failed plates.
+3. Prefer **Omni Flash** continuous journey takes + **native SFX** under Ben Orbit Narrator VO (this episode). Keep VO-literal picture.
+4. After each part approve: update lessons log; stitch cumulative master when useful.
+
+## Motion coverage (no “broken video” freezes)
+
+1. **Never freeze-pad** (`tpad` / last-frame clone) to stretch short Omni clips to VO length — it looks broken.
+2. **Never loop / slow-mo** scenery (see `orbit-cutscene-no-reuse`).
+3. Size inventory so **1× motion covers VO**: plan ~**8–10 unique ~8s Omni plates per ~60–80s** (or more). If short, **generate more unique plates** — do not pad.
+4. Assembler must **fail** (or trim ≤~1s of VO) rather than freeze-extend picture.
+
+## Character in the scene (user lock — Flow share QA)
+
+Reference feel: Orbit flying the solar system — he **turns**, you see **exhaust / propulsion**, he **flies off**, with **native SFX**. Reads as a character *in* the world, not a sticker on wallpaper.
+
+1. **Orbit interacts with the scene** — bank/turn, push off, skim, tip, dive, react to ice/pull/heat. Body language + motion sell presence.
+2. **Readable agency:** soft underside glow as he moves; tiny bubble wake underwater OK. **Propulsion lock:** exactly **ONE** centered **bottom** underside glow — gyroscope / hover-pad style (same as space). Forbidden: twin thrusters, left+right jets, rear+bottom dual exhaust, side engines, mid-part switch to underwater **flames / fire plumes**.
+3. **Camera treats him as subject in space** — parallax past ice/planets, approaching or leaving frame with intent — not locked dead-center hover for the whole take.
+4. Prompts should include a concrete verb of interaction (turns toward, skims along, plunges through, banks past) + continuous motion + native whoosh/rumble SFX.
+5. Reject plates where Orbit is a static ornament floating in pretty scenery while the world does all the work.
+6. Travel beats: prefer gaze / nose along **direction of travel** (not always staring at camera).
+
+## Picture quality bar (Parts 01–02 lock)
+
+1. **VO-literal journey** — Orbit doing the line (skim cracks while VO says scars; dive when VO goes under the ice).
+2. **Gold beat to keep:** Orbit low over Europa linea + native Omni SFX while VO names cracks/scars.
+3. **Europa surface:** pale cream-white ice + fine dark linea. Avoid large brown/red circular “pools” unless the beat is intentionally melt/chaos.
+4. When VO enters the ocean / under the lid: **lean into the dive** (crack → plunge → subsurface ocean) — intentional water OK; muddy surface pools not.
+5. **Style:** premium **CGI 3D polish** (realistic materials/lighting). Reject 2D cartoon outlines / flat cel-shade when it breaks continuity with approved plates.
+6. **Env honesty:** underwater plates stay submerged under ice; vacuum/space/above-ice plates stay dry. Never ship space/surface with underwater bubble trails.
+7. Tag plates `env: underwater | surface | space` and **gate water SFX** to underwater windows only.
+
+## Single Orbit / single face (hard)
+
+1. **Exactly one Orbit** in frame at all times. Twin / clone / reflection duplicate = reject and regen.
+2. **Exactly one face** — one front black visor with cream eyes + pupils. Reject clear second rear/side faceplate or mirrored eyes on the back (Part 02 nit).
+3. Spot-check frames across each new plate (start / mid / end) before locking the rough.
+4. Still attach canonical Orbit ref + identity lock on every Flow generate.
+5. Eyes: cream/white **with dark pupils** — never blank solid white ovals.
+
+## Omni SFX joins
+
+1. Hard concat of Omni beds makes the soundtrack **stop/jump** at every cut — feels like a break.
+2. Assemble with **paired `xfade` + `acrossfade`** (~0.35–0.45s) so picture and Omni SFX blend across plate joins while staying A/V locked.
+3. Keep Omni SFX under VO (typical ~0.18–0.2 volume); do not strip native beds unless QA asks.
+4. Under-ice minutes: light continuous water-movement / bubble bed under Omni SFX — **only while picture is underwater**.
+
+## Prompt / gen hygiene
+
+1. Prompts: continuous motion the whole clip; target ~8–10s; no freeze; single Orbit; single face; VO-literal verb; **character-in-scene interaction**; **premium CGI**; env lock (underwater vs vacuum) + bubble rules matching env.
+2. Run Flow Omni gens in a **durable foreground** session; skip-existing + per-plate retry; reject ultra-fast suspect downloads when possible.
+3. Archive rejected plates (`_rejected_*`); bump asset version (`v02`/`v03`) rather than overwriting without a trail.
+
+## Episode builders (Europa 006)
+
+- Plates: `07_Edit-Project/parts/part-0N_omni_plates_*.json`
+- Gen / assemble: `_gen_part0N_omni_*.py` / `_assemble_part0N_*.py`
+- Lessons: `PART01_LESSONS.md` · `PART02_LESSONS.md` · `PART03_LESSONS.md`
+- Stitch: `_stitch_parts_01_03_v01.py` → `europa_parts-01-03_stitched_v01.mp4`

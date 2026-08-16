@@ -1,0 +1,32 @@
+---
+description: Locked Omni long-form build format (Europa 006 → every future long)
+alwaysApply: true
+---
+
+# Omni long-form playbook (locked 2026-08-14)
+
+**Reference episode:** `006_Could-Life-Exist-Under-The-Ice-Of-Europa` → `europa_broadcast_v01.mp4`.  
+Build every future long in this format/style. Iterate rules when QA teaches something new — do not silently regress.
+
+## Pipeline (after Growth System gate)
+
+1. **~1-minute parts** — write → script QA → Ben Orbit Narrator VO → Omni Flash plates for that part only → picture QA → approve → next part.
+2. Never gen the full episode in one pass. Regen only failed minutes/plates.
+3. **~8–10 unique ~8s Omni plates per VO minute** — no freeze-pad, no scenery loop (`orbit-cutscene-no-reuse` + `orbit-omni-section-qa`).
+4. Assemble with paired **xfade + acrossfade**; env-gate water SFX; single Orbit / single face / travel-facing / one bottom glow.
+5. After all parts lock: **brand intro** · **chapter cards** · soft-join parts · **like/subscribe outro** → `09_Final-Export/*_broadcast_v01.mp4`.
+6. Then **4–8 punch Shorts** (~22–28s) from locked part roughs (`orbit-shorts-punch-first`).
+
+## Picture / character bar
+
+- VO-literal journey; Orbit *in* the scene (bank/skim/dive), not a sticker.
+- Premium CGI 3D polish; cream eyes + pupils; env honesty (no bubbles in vacuum).
+- Clipper / craft: vacuum/orbital only unless the beat is explicitly under-ice without craft.
+
+## Canonical builders (copy forward)
+
+- Plates JSON · `_gen_part0N_omni_*.py` · `_assemble_part0N_*.py` · `PART0N_LESSONS.md`
+- Broadcast: `_build_*_broadcast_v01.py` · chapter cards · brand intro/outro from `002_…/brand/`
+- Shorts: `10_Shorts/_build_*_punch_shorts_v01.py`
+
+Full steps + Europa lessons: `00_Brand/Channel-Setup/OMNI_LONGFORM_PLAYBOOK.md`
