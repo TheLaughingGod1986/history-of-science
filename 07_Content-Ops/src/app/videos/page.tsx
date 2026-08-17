@@ -13,6 +13,7 @@ import {
   resolveYoutubeId,
 } from "@/app/videos/film-labels";
 import { isOperatorAuthenticated } from "@/lib/security/operator-auth";
+import { KNOWN_THURSDAY_YOUTUBE_IDS } from "@/app/videos/known-thursday-films";
 
 export const dynamic = "force-dynamic";
 
@@ -85,6 +86,10 @@ export default async function VideosPage() {
   const thisIsUpcoming =
     thisFilm?.publicationDate != null && thisFilm.publicationDate.getTime() >= Date.now();
   const thisNamed = thisFilm ? namedInFilmBookLine(thisFilm) : null;
+  const presentYt = new Set(
+    videos.map((v) => v.youtubeVideoId?.trim()).filter((id): id is string => Boolean(id)),
+  );
+  const knownFilmsLoaded = KNOWN_THURSDAY_YOUTUBE_IDS.every((id) => presentYt.has(id));
 
   return (
     <div className="space-y-6">
@@ -100,7 +105,11 @@ export default async function VideosPage() {
         </div>
         {videos.length > 0 && canWrite ? (
           <div className="flex flex-col items-stretch gap-2 sm:items-end">
-            <AddKnownThursdayFilmsButton primary={false} />
+            {knownFilmsLoaded ? (
+              <p className="text-sm text-[#F5E8D2]/55">Known Thursday films already in the library.</p>
+            ) : (
+              <AddKnownThursdayFilmsButton primary={false} />
+            )}
             <AddThursdayFilmButton primary={false} />
           </div>
         ) : null}

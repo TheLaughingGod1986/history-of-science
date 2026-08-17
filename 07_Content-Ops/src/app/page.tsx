@@ -16,7 +16,10 @@ async function getOverview() {
   const [
     filmCount,
     longInProduction,
-    longPublishedMonth,
+    longScheduled,
+    longPublished,
+    clipCount,
+    postCount,
     shortsPlanned,
     shortsAwaitingEdit,
     shortsReady,
@@ -37,10 +40,14 @@ async function getOverview() {
     }),
     prisma.longFormVideo.count({
       where: {
-        status: "published",
-        publicationDate: { gte: monthStart, lte: monthEnd },
+        OR: [{ status: "scheduled" }, { publicationDate: { gt: now } }],
       },
     }),
+    prisma.longFormVideo.count({
+      where: { status: "published" },
+    }),
+    prisma.shortClip.count(),
+    prisma.platformPost.count(),
     prisma.shortClip.count({ where: { status: { in: ["proposed", "approved"] } } }),
     prisma.shortClip.count({ where: { status: { in: ["approved", "editing"] } } }),
     prisma.shortClip.count({ where: { status: { in: ["exported", "scheduled"] } } }),
@@ -84,6 +91,15 @@ async function getOverview() {
   if (filmCount === 0) {
     nextActions.push({
       label: "Add the known Thursday films",
+      href: "/videos",
+    });
+  } else if (clipCount === 0 && postCount === 0) {
+    // Films exist; Shorts/posts not built yet — do not nag schedule/worker.
+    nextActions.push({
+      label:
+        longScheduled > 0
+          ? "Open Thursday films — next scheduled long is on the list."
+          : "Open Thursday films — review the catalogue.",
       href: "/videos",
     });
   } else {
@@ -133,7 +149,8 @@ async function getOverview() {
   return {
     filmCount,
     longInProduction,
-    longPublishedMonth,
+    longScheduled,
+    longPublished,
     shortsPlanned,
     shortsAwaitingEdit,
     shortsReady,
@@ -234,11 +251,20 @@ export default async function HomePage() {
       </section>
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-        <StatCard label="Long in production" value={data.longInProduction} />
         <StatCard
-          label="Long published (month)"
-          value={data.longPublishedMonth}
-          hint={`Target ${data.cadence.longForm}/mo`}
+          label="Films in catalogue"
+          value={data.filmCount}
+          hint={`${data.longInProduction} still in production stages`}
+        />
+        <StatCard
+          label="Films scheduled"
+          value={data.longScheduled}
+          hint="status scheduled or air date ahead"
+        />
+        <StatCard
+          label="Films published"
+          value={data.longPublished}
+          hint={`Catalogue · target ${data.cadence.longForm}/mo`}
         />
         <StatCard label="Shorts planned" value={data.shortsPlanned} />
         <StatCard label="Awaiting editing" value={data.shortsAwaitingEdit} />

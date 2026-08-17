@@ -106,22 +106,29 @@ export default async function PipelinePage({
             </button>
           </form>
 
-          <div className="flex flex-wrap gap-2">
-            {CONTENT_RULES.pipelineStages.map((stage) => (
-              <span key={stage} className="pipeline-step rounded-full px-3 py-1.5 text-xs">
-                {stage}
-              </span>
-            ))}
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <p className="text-sm text-[#F5E8D2]/65">
+              Films in list:{" "}
+              <span className="font-medium text-[#F5E8D2]">{videos.length}</span>
+              <span className="text-[#5A6E82]"> · counters below are Shorts clips / posts</span>
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {CONTENT_RULES.pipelineStages.map((stage) => (
+                <span key={stage} className="pipeline-step rounded-full px-3 py-1.5 text-xs">
+                  {stage}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {[
-              ["Proposed", counts.proposed],
-              ["Approved", counts.approved],
-              ["Editing", counts.editing],
-              ["Exported", counts.exported],
-              ["Scheduled posts", counts.scheduledPosts],
-              ["Analysed posts", counts.analysed],
+              ["Clips proposed", counts.proposed],
+              ["Clips approved", counts.approved],
+              ["Clips editing", counts.editing],
+              ["Clips exported", counts.exported],
+              ["Posts scheduled", counts.scheduledPosts],
+              ["Posts analysed", counts.analysed],
             ].map(([label, value]) => (
               <div key={label as string} className="card-panel p-4">
                 <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">

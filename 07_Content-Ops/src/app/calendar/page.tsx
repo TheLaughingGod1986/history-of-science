@@ -159,34 +159,45 @@ export default async function CalendarPage({
           </div>
 
           <section className="space-y-3">
-            <h2 className="font-[family-name:var(--font-orbit-display)] text-xl">
-              Upcoming posts — edit schedule
-            </h2>
             {posts.length === 0 ? (
-              <div className="card-panel p-5 text-sm text-[#F5E8D2]/65">
-                No Shorts posts in this range yet. Films can still appear on Thursday cells above.{" "}
-                <Link href="/videos" className="text-[#FF7A24] hover:underline">
-                  Manage Thursday films →
+              <div className="card-panel space-y-3 p-5 sm:p-6">
+                <h2 className="font-[family-name:var(--font-orbit-display)] text-xl text-[#F5E8D2]">
+                  No platform posts yet
+                </h2>
+                <p className="max-w-xl text-sm text-[#F5E8D2]/65">
+                  Shorts posts appear here after clips are scheduled. Undated published films stay
+                  on the films list — they have no calendar day to place.
+                </p>
+                <Link
+                  href="/videos"
+                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 px-5 py-2.5 text-sm text-[#F5E8D2]"
+                >
+                  Manage Thursday films
                 </Link>
               </div>
             ) : (
-              posts.slice(0, 12).map((p) => (
-                <div
-                  key={p.id}
-                  className="card-panel flex flex-wrap items-start justify-between gap-4 p-4"
-                >
-                  <div>
-                    <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">
-                      {PLATFORMS[p.platform as keyof typeof PLATFORMS]?.label} · {p.uploadStatus}
+              <>
+                <h2 className="font-[family-name:var(--font-orbit-display)] text-xl">
+                  Upcoming posts — edit schedule
+                </h2>
+                {posts.slice(0, 12).map((p) => (
+                  <div
+                    key={p.id}
+                    className="card-panel flex flex-wrap items-start justify-between gap-4 p-4"
+                  >
+                    <div>
+                      <div className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">
+                        {PLATFORMS[p.platform as keyof typeof PLATFORMS]?.label} · {p.uploadStatus}
+                      </div>
+                      <div className="mt-1 text-sm">{p.shortClip.workingTitle}</div>
+                      <div className="mt-1 text-xs text-[#F5E8D2]/50">
+                        {p.title || p.caption?.slice(0, 80)}
+                      </div>
                     </div>
-                    <div className="mt-1 text-sm">{p.shortClip.workingTitle}</div>
-                    <div className="mt-1 text-xs text-[#F5E8D2]/50">
-                      {p.title || p.caption?.slice(0, 80)}
-                    </div>
+                    <PostStatusForm postId={p.id} status={p.uploadStatus} url={p.platformUrl} />
                   </div>
-                  <PostStatusForm postId={p.id} status={p.uploadStatus} url={p.platformUrl} />
-                </div>
-              ))
+                ))}
+              </>
             )}
           </section>
         </>
