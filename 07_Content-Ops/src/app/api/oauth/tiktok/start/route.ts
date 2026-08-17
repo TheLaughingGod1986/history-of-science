@@ -1,13 +1,14 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getEnv, hasTikTokOAuth } from "@/lib/env";
+import { oauthCallbackUrl } from "@/lib/public-base-url";
 import { createOAuthState } from "@/lib/oauth/state";
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   if (!hasTikTokOAuth()) {
     return NextResponse.json({ error: "TikTok OAuth not configured" }, { status: 400 });
   }
   const env = getEnv();
-  const redirectUri = env.TIKTOK_REDIRECT_URI || `${env.APP_BASE_URL}/api/oauth/tiktok/callback`;
+  const redirectUri = oauthCallbackUrl("tiktok", req);
   const { state, codeChallenge } = await createOAuthState({
     platform: "tiktok",
     withPkce: true,

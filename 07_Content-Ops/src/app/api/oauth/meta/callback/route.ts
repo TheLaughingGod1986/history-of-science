@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/env";
+import { getPublicBaseUrl, oauthCallbackUrl } from "@/lib/public-base-url";
 import { consumeOAuthState } from "@/lib/oauth/state";
 import { encryptSecret } from "@/lib/security/token-crypto";
 import { prisma } from "@/lib/storage/prisma";
 
 export async function GET(req: NextRequest) {
   const env = getEnv();
-  const base = env.APP_BASE_URL;
+  const base = getPublicBaseUrl(req);
   const url = new URL(req.url);
   const code = url.searchParams.get("code");
   const state = url.searchParams.get("state");
@@ -21,7 +22,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.redirect(`${base}/settings/connections?error=encryption_key_required`);
   }
 
-  const redirectUri = env.META_REDIRECT_URI || `${env.APP_BASE_URL}/api/oauth/meta/callback`;
+  const redirectUri = oauthCallbackUrl("meta", req);
   const tokenUrl = new URL("https://graph.facebook.com/v21.0/oauth/access_token");
   tokenUrl.searchParams.set("client_id", env.META_APP_ID!);
   tokenUrl.searchParams.set("client_secret", env.META_APP_SECRET!);

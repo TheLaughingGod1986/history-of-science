@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/storage/prisma";
 import { londonDateTime } from "@/lib/publishing/schedule";
+import { requireOperator } from "@/lib/security/operator-auth";
 
 function slugify(input: string): string {
   const slug = input
@@ -16,6 +17,7 @@ function slugify(input: string): string {
 
 /** Add a Thursday film with title + air date using existing LongFormVideo fields only. */
 export async function addThursdayFilm(formData: FormData): Promise<void> {
+  await requireOperator();
   const title = String(formData.get("title") || "").trim();
   const date = String(formData.get("date") || "").trim();
   const timeRaw = String(formData.get("time") || "18:00").trim();
@@ -140,6 +142,7 @@ export type AddKnownThursdayFilmsResult = {
  * Safe to run twice. LongFormVideo fields only — no clips, posts, or affiliate rows.
  */
 export async function addKnownThursdayFilms(): Promise<AddKnownThursdayFilmsResult> {
+  await requireOperator();
   let created = 0;
   let updated = 0;
 

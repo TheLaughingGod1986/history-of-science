@@ -14,6 +14,7 @@ async function getOverview() {
   const monthEnd = endOfMonth(now);
 
   const [
+    filmCount,
     longInProduction,
     longPublishedMonth,
     shortsPlanned,
@@ -30,6 +31,7 @@ async function getOverview() {
     recentJobs,
     monetisation,
   ] = await Promise.all([
+    prisma.longFormVideo.count(),
     prisma.longFormVideo.count({
       where: { status: { in: ["idea", "scripting", "production", "editing", "ready"] } },
     }),
@@ -76,28 +78,60 @@ async function getOverview() {
     getHomeMonetisationCard(),
   ]);
 
-  const nextActions: string[] = [];
-  if (pendingApprovals > 0) {
-    nextActions.push(`Approve ${pendingApprovals} proposed clip${pendingApprovals === 1 ? "" : "s"}.`);
+  type NextAction = { label: string; href?: string };
+  const nextActions: NextAction[] = [];
+
+  if (filmCount === 0) {
+    nextActions.push({
+      label: "Add the known Thursday films",
+      href: "/videos",
+    });
+  } else {
+    if (pendingApprovals > 0) {
+      nextActions.push({
+        label: `Approve ${pendingApprovals} proposed clip${pendingApprovals === 1 ? "" : "s"}.`,
+        href: "/pipeline",
+      });
+    }
+    if (shortsAwaitingEdit > 0) {
+      nextActions.push({
+        label: `Move ${shortsAwaitingEdit} clip(s) through editing / export.`,
+        href: "/pipeline",
+      });
+    }
+    if (postsScheduled === 0) {
+      nextActions.push({
+        label: "Schedule this week’s cross-platform posts.",
+        href: "/calendar",
+      });
+    }
+    if (missingAnalytics > 0) {
+      nextActions.push({
+        label: `Import analytics for ${missingAnalytics} published post(s).`,
+        href: "/analytics",
+      });
+    }
+    if (monetisation.videosMissingLinks > 0) {
+      nextActions.push({
+        label: `Review ${monetisation.videosMissingLinks} video(s) missing affiliate links.`,
+        href: "/affiliate",
+      });
+    }
+    if (!heartbeat || Date.now() - heartbeat.lastHeartbeatAt.getTime() > 30_000) {
+      nextActions.push({
+        label: "Start the publishing worker (`npm run worker`) for scheduled API posts.",
+      });
+    }
+    if (!nextActions.length) {
+      nextActions.push({
+        label: "Pipeline looks clear — register the next long-form video.",
+        href: "/videos",
+      });
+    }
   }
-  if (shortsAwaitingEdit > 0) {
-    nextActions.push(`Move ${shortsAwaitingEdit} clip(s) through editing / export.`);
-  }
-  if (postsScheduled === 0) nextActions.push("Schedule this week’s cross-platform posts.");
-  if (missingAnalytics > 0) {
-    nextActions.push(`Import analytics for ${missingAnalytics} published post(s).`);
-  }
-  if (monetisation.videosMissingLinks > 0) {
-    nextActions.push(
-      `Review ${monetisation.videosMissingLinks} video(s) missing affiliate links.`,
-    );
-  }
-  if (!heartbeat || Date.now() - heartbeat.lastHeartbeatAt.getTime() > 30_000) {
-    nextActions.push("Start the publishing worker (`npm run worker`) for scheduled API posts.");
-  }
-  if (!nextActions.length) nextActions.push("Pipeline looks clear — register the next long-form video.");
 
   return {
+    filmCount,
     longInProduction,
     longPublishedMonth,
     shortsPlanned,
@@ -289,10 +323,16 @@ export default async function HomePage() {
           <ul className="mt-4 space-y-3">
             {data.nextActions.map((action) => (
               <li
-                key={action}
+                key={action.label}
                 className="rounded-xl border border-[#FF7A24]/25 bg-[#FF7A24]/10 px-4 py-3 text-sm text-[#F5E8D2]"
               >
-                {action}
+                {action.href ? (
+                  <Link href={action.href} className="font-medium text-[#FFC85A] hover:underline">
+                    {action.label}
+                  </Link>
+                ) : (
+                  action.label
+                )}
               </li>
             ))}
           </ul>

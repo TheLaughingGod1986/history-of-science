@@ -12,6 +12,7 @@ import {
   namedInFilmBookLine,
   resolveYoutubeId,
 } from "@/app/videos/film-labels";
+import { isOperatorAuthenticated } from "@/lib/security/operator-auth";
 
 export const dynamic = "force-dynamic";
 
@@ -71,10 +72,13 @@ function publicThumbSrc(thumbnailPath: string | null): string | null {
 }
 
 export default async function VideosPage() {
-  const videos = await prisma.longFormVideo.findMany({
-    orderBy: { publicationDate: "desc" },
-    include: { _count: { select: { clips: true } } },
-  });
+  const [videos, canWrite] = await Promise.all([
+    prisma.longFormVideo.findMany({
+      orderBy: { publicationDate: "desc" },
+      include: { _count: { select: { clips: true } } },
+    }),
+    isOperatorAuthenticated(),
+  ]);
 
   const thisFilm = pickThisThursdayFilm(videos);
   const catalogue = thisFilm ? videos.filter((v) => v.id !== thisFilm.id) : videos;
@@ -94,7 +98,7 @@ export default async function VideosPage() {
             scheduled.
           </p>
         </div>
-        {videos.length > 0 ? (
+        {videos.length > 0 && canWrite ? (
           <div className="flex flex-col items-stretch gap-2 sm:items-end">
             <AddKnownThursdayFilmsButton primary={false} />
             <AddThursdayFilmButton primary={false} />
@@ -109,14 +113,24 @@ export default async function VideosPage() {
               No Thursday film here yet.
             </h2>
             <p className="mt-3 max-w-xl text-[#F5E8D2]/65">
-              Load the six known Thursday films (three published, three scheduled), or add the next
-              one by title and date.
+              {canWrite
+                ? "Load the six known Thursday films (three published, three scheduled), or add the next one by title and date."
+                : "Films are managed by the operator. Sign in to add the known Thursday films or register a new one."}
             </p>
           </div>
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start">
-            <AddKnownThursdayFilmsButton />
-            <AddThursdayFilmButton primary={false} />
-          </div>
+          {canWrite ? (
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start">
+              <AddKnownThursdayFilmsButton />
+              <AddThursdayFilmButton primary={false} />
+            </div>
+          ) : (
+            <Link
+              href="/login?next=/videos"
+              className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#FF7A24] px-5 py-2.5 text-sm font-medium text-[#0A0C12]"
+            >
+              Operator sign-in
+            </Link>
+          )}
         </div>
       ) : (
         <>

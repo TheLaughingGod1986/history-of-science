@@ -1,13 +1,14 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getEnv, hasXOAuth } from "@/lib/env";
+import { oauthCallbackUrl } from "@/lib/public-base-url";
 import { createOAuthState } from "@/lib/oauth/state";
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   if (!hasXOAuth()) {
     return NextResponse.json({ error: "X OAuth not configured" }, { status: 400 });
   }
   const env = getEnv();
-  const redirectUri = env.X_REDIRECT_URI || `${env.APP_BASE_URL}/api/oauth/x/callback`;
+  const redirectUri = oauthCallbackUrl("x", req);
   const { state, codeChallenge } = await createOAuthState({
     platform: "x",
     withPkce: true,
