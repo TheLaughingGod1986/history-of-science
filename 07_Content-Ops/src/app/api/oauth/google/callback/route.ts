@@ -5,8 +5,12 @@ import { consumeOAuthState } from "@/lib/oauth/state";
 import { encryptSecret } from "@/lib/security/token-crypto";
 import { prisma } from "@/lib/storage/prisma";
 import { YOUTUBE_SCOPES } from "@/lib/publishing/adapters/youtube";
+import { requireOperatorApi } from "@/lib/security/operator-auth";
 
 export async function GET(req: NextRequest) {
+  const denied = await requireOperatorApi();
+  if (denied) return denied;
+
   const url = new URL(req.url);
   const code = url.searchParams.get("code");
   const state = url.searchParams.get("state");

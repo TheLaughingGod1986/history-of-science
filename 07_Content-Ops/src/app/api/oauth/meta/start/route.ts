@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getEnv, hasMetaOAuth } from "@/lib/env";
 import { oauthCallbackUrl } from "@/lib/public-base-url";
 import { createOAuthState } from "@/lib/oauth/state";
+import { requireOperatorApi } from "@/lib/security/operator-auth";
 
 const META_SCOPES = [
   "pages_show_list",
@@ -13,6 +14,9 @@ const META_SCOPES = [
 ].join(",");
 
 export async function GET(req: NextRequest) {
+  const denied = await requireOperatorApi();
+  if (denied) return denied;
+
   if (!hasMetaOAuth()) {
     return NextResponse.json({ error: "META_APP_ID / META_APP_SECRET not configured" }, { status: 400 });
   }

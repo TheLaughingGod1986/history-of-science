@@ -4,8 +4,12 @@ import { getPublicBaseUrl, oauthCallbackUrl } from "@/lib/public-base-url";
 import { consumeOAuthState } from "@/lib/oauth/state";
 import { encryptSecret } from "@/lib/security/token-crypto";
 import { prisma } from "@/lib/storage/prisma";
+import { requireOperatorApi } from "@/lib/security/operator-auth";
 
 export async function GET(req: NextRequest) {
+  const denied = await requireOperatorApi();
+  if (denied) return denied;
+
   const env = getEnv();
   const base = getPublicBaseUrl(req);
   const url = new URL(req.url);

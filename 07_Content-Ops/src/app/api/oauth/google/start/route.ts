@@ -3,8 +3,12 @@ import { getEnv, hasGoogleOAuth } from "@/lib/env";
 import { oauthCallbackUrl } from "@/lib/public-base-url";
 import { createOAuthState } from "@/lib/oauth/state";
 import { YOUTUBE_SCOPES } from "@/lib/publishing/adapters/youtube";
+import { requireOperatorApi } from "@/lib/security/operator-auth";
 
 export async function GET(req: NextRequest) {
+  const denied = await requireOperatorApi();
+  if (denied) return denied;
+
   if (!hasGoogleOAuth()) {
     return NextResponse.json(
       { error: "GOOGLE_CLIENT_ID / GOOGLE_CLIENT_SECRET not configured" },

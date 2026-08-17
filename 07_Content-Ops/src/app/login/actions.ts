@@ -4,13 +4,13 @@ import { redirect } from "next/navigation";
 import {
   clearOperatorSessionCookie,
   isOperatorPasswordConfigured,
+  safeOperatorNextPath,
   setOperatorSessionCookie,
   verifyOperatorPassword,
 } from "@/lib/security/operator-auth";
 
 export async function loginOperator(formData: FormData): Promise<void> {
-  const nextRaw = String(formData.get("next") || "/").trim();
-  const next = nextRaw.startsWith("/") ? nextRaw : "/";
+  const next = safeOperatorNextPath(String(formData.get("next") || "/"));
 
   if (!isOperatorPasswordConfigured()) {
     redirect(

@@ -2,8 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { getEnv, hasTikTokOAuth } from "@/lib/env";
 import { oauthCallbackUrl } from "@/lib/public-base-url";
 import { createOAuthState } from "@/lib/oauth/state";
+import { requireOperatorApi } from "@/lib/security/operator-auth";
 
 export async function GET(req: NextRequest) {
+  const denied = await requireOperatorApi();
+  if (denied) return denied;
+
   if (!hasTikTokOAuth()) {
     return NextResponse.json({ error: "TikTok OAuth not configured" }, { status: 400 });
   }

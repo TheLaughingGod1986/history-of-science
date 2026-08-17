@@ -127,11 +127,31 @@ export async function requireOperator(): Promise<void> {
   }
 }
 
+/** Route-handler gate: returns 401 response, or null when the operator may proceed. */
+export async function requireOperatorApi(): Promise<NextResponse | null> {
+  try {
+    await requireOperator();
+    return null;
+  } catch {
+    return unauthorizedJson();
+  }
+}
+
 export function unauthorizedJson(): NextResponse {
   return NextResponse.json(
     { error: "Unauthorized: operator sign-in required" },
     { status: 401 },
   );
+}
+
+/**
+ * Safe post-login redirect. Single leading slash only — rejects `//evil.com`
+ * and absolute URLs (open redirect).
+ */
+export function safeOperatorNextPath(raw: string | null | undefined): string {
+  const next = String(raw || "/").trim();
+  if (/^\/(?!\/)/.test(next)) return next;
+  return "/";
 }
 
 /** Paths that must stay public (affiliate clicks, legal). */

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { loginOperator } from "@/app/login/actions";
-import { isOperatorAuthenticated, isOperatorPasswordConfigured } from "@/lib/security/operator-auth";
+import { isOperatorAuthenticated, isOperatorPasswordConfigured, safeOperatorNextPath } from "@/lib/security/operator-auth";
 import { redirect } from "next/navigation";
 
 export const dynamic = "force-dynamic";
@@ -11,8 +11,9 @@ export default async function LoginPage({
   searchParams: Promise<{ next?: string; error?: string }>;
 }) {
   const sp = await searchParams;
+  const next = safeOperatorNextPath(sp.next);
   if (await isOperatorAuthenticated()) {
-    redirect(sp.next?.startsWith("/") ? sp.next : "/");
+    redirect(next);
   }
 
   const configured = isOperatorPasswordConfigured();
@@ -36,7 +37,7 @@ export default async function LoginPage({
         </div>
       ) : (
         <form action={loginOperator} className="card-panel mt-6 space-y-4 p-5">
-          <input type="hidden" name="next" value={sp.next?.startsWith("/") ? sp.next : "/"} />
+          <input type="hidden" name="next" value={next} />
           <label className="block space-y-1.5">
             <span className="text-xs uppercase tracking-[0.14em] text-[#5A6E82]">Password</span>
             <input
