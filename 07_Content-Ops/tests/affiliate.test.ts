@@ -99,6 +99,7 @@ import {
   liveUrlForSlug,
   isAmazonUkDestinationUrl,
 } from "../src/lib/affiliate/live-product-urls";
+import { buildHomeMonetisationCard } from "../src/lib/affiliate/analytics";
 import {
   resolveTopicBookWireForVideo,
   filmTopicBookPlacementTableRows,
@@ -2030,5 +2031,70 @@ describe("film → topic-book wiring (Social Media Manager)", () => {
     expect(desc.match(/\/go\/black-hole-book/g)?.length).toBe(1);
     expect(desc.split("If you want to go further").length - 1).toBe(1);
     delete process.env.AFFILIATE_REDIRECT_BASE_URL;
+  });
+});
+
+describe("home monetisation card top affiliate video", () => {
+  it("does not surface an opportunity title when highestPerformingVideo is null", () => {
+    const card = buildHomeMonetisationCard(
+      {
+        revenueMonth: 0,
+        clicksMonth: 0,
+        highestPerformingVideo: null,
+        warnings: { videosMissingLinks: 3 },
+      },
+      [
+        {
+          title: "The Fermi Paradox Explained",
+          slug: "fermi-paradox",
+          views: 12_000,
+        },
+        {
+          title: "Alien Worlds",
+          slug: "alien-worlds",
+          views: 8_000,
+        },
+      ],
+    );
+
+    expect(card.topAffiliateVideo).toBeNull();
+    expect(card.topOpportunitySlug).toBe("fermi-paradox");
+    expect(card.videosMissingLinks).toBe(3);
+  });
+
+  it("prefers highestPerformingVideo over an opportunity title", () => {
+    const card = buildHomeMonetisationCard(
+      {
+        revenueMonth: 12.5,
+        clicksMonth: 40,
+        highestPerformingVideo: "Europa Under the Ice",
+        warnings: { videosMissingLinks: 1 },
+      },
+      [
+        {
+          title: "The Fermi Paradox Explained",
+          slug: "fermi-paradox",
+          views: 12_000,
+        },
+      ],
+    );
+
+    expect(card.topAffiliateVideo).toBe("Europa Under the Ice");
+    expect(card.topOpportunitySlug).toBe("fermi-paradox");
+  });
+
+  it("returns null top video and null opportunity slug when both inputs are empty", () => {
+    const card = buildHomeMonetisationCard(
+      {
+        revenueMonth: 0,
+        clicksMonth: 0,
+        highestPerformingVideo: null,
+        warnings: { videosMissingLinks: 0 },
+      },
+      [],
+    );
+
+    expect(card.topAffiliateVideo).toBeNull();
+    expect(card.topOpportunitySlug).toBeNull();
   });
 });

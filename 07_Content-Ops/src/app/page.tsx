@@ -129,7 +129,7 @@ async function getOverview() {
     }
     if (monetisation.videosMissingLinks > 0) {
       nextActions.push({
-        label: `Review ${monetisation.videosMissingLinks} video(s) missing affiliate links.`,
+        label: `Review ${monetisation.videosMissingLinks} published/high-view video(s) with no affiliate placement.`,
         href: "/affiliate",
       });
     }
@@ -309,7 +309,7 @@ export default async function HomePage() {
             }
           />
           <StatCard
-            label="Videos missing links"
+            label="Videos without placements"
             value={data.monetisation.videosMissingLinks}
           />
           <StatCard
