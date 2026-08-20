@@ -1,14 +1,12 @@
-# 007 Neutron Star
+# EMPTY GITHUB SCAFFOLD — do not build here
 
-**Locked next long (16 Aug 2026).** Script already passed. Do **not** start 013 Moon.
+The real 007 folder is on the Mac:
 
-Build with the Europa Omni later standard (PR 18):
+`02_Video-Projects/007_What-Happens-To-Your-Body-Near-A-Neutron-Star/`  
+Script (passed **91.1**): `01_Script/neutron_star_script_master_v01.md`
 
-1. `gate:episode` if this clone has the passed script in `01_Script/`
-2. **One minute at a time** → Ben Orbit Narrator → Omni Flash (Flow) → picture QA
-3. **Stop and check with Ben** (UAT). Do not start the next minute until he passes this one.
-4. Then `PART0N_LESSONS.md` → next minute
-5. After every minute is approved: picture-first open · mid-film chapter cards · 10s Studio end hold
-6. 4–8 punch Shorts from part roughs · zero `/go/` on Shorts
+This `007_Neutron-Star/` directory was created by a cloud clone that could not see the Mac. Leave it unused.
 
-Canonical: `OMNI_LONGFORM_PLAYBOOK.md` · `.cursor/rules/orbit-omni-section-qa.mdc` · Europa `PART01_LESSONS.md`–`PART08_LESSONS.md`
+**Locked next long (16 Aug 2026), 7–9 min.** Do **not** start 013 Moon. Build in the Mac folder with the Europa Omni later standard (PR 18): one minute at a time, Ben UAT before the next minute, picture-first open · mid-film chapter cards · 10s Studio end hold.
+
+Canonical: `OMNI_LONGFORM_PLAYBOOK.md` · `.cursor/rules/orbit-omni-section-qa.mdc` · `.cursor/rules/orbit-next-production.mdc`
