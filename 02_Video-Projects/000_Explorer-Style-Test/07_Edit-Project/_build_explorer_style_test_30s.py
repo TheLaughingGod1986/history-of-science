@@ -124,53 +124,65 @@ def resolve_keys() -> None:
         load_dotenv(p)
 
 
-def gen_plate(client, plate: dict, dest: Path, model: str) -> dict:
+def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 4) -> dict:
     from google.genai import types
 
     if already_done(dest):
         print(f"  skip existing {dest.name}", flush=True)
         return {"skipped": True, "bytes": dest.stat().st_size}
 
-    img = types.Image.from_file(str(REF)) if plate["explorer"] else None
-    config_kwargs = dict(
-        number_of_videos=1,
-        duration_seconds=8,
-        aspect_ratio="16:9",
-        resolution="720p",
-        negative_prompt=NEGATIVE,
-        enhance_prompt=True,
-        generate_audio=False,
-    )
-    if img is not None:
-        config_kwargs["reference_images"] = [
-            types.VideoGenerationReferenceImage(
-                image=img,
-                reference_type=types.VideoGenerationReferenceType.ASSET,
+    last_err: Exception | None = None
+    for attempt in range(1, retries + 1):
+        try:
+            img = (
+                types.Image.from_file(location=str(REF))
+                if plate["explorer"]
+                else None
             )
-        ]
-    config = types.GenerateVideosConfig(**config_kwargs)
+            # Developer API: avoid generate_audio / enhance_prompt / reference_images ASSET.
+            # Explorer plates use start-frame image only + identity text lock.
+            config = types.GenerateVideosConfig(
+                number_of_videos=1,
+                duration_seconds=8,
+                aspect_ratio="16:9",
+                resolution="720p",
+                negative_prompt=NEGATIVE,
+            )
 
-    print(f"  submit {plate['id']} explorer={plate['explorer']}", flush=True)
-    t0 = time.time()
-    kwargs = dict(model=model, prompt=plate["prompt"], config=config)
-    if img is not None:
-        kwargs["image"] = img
-    operation = client.models.generate_videos(**kwargs)
-    while not operation.done:
-        time.sleep(12)
-        operation = client.operations.get(operation)
-        print(f"  poll {plate['id']} … {int(time.time() - t0)}s", flush=True)
-    if operation.error:
-        raise RuntimeError(operation.error)
-    response = operation.response
-    if not response or not response.generated_videos:
-        raise RuntimeError(f"no video for {plate['id']}")
-    video = response.generated_videos[0]
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    client.files.download(file=video.video)
-    video.video.save(str(dest))
-    strip_audio(dest)
-    return {"seconds": round(time.time() - t0, 1), "bytes": dest.stat().st_size}
+            print(
+                f"  submit {plate['id']} explorer={plate['explorer']} attempt={attempt}/{retries}",
+                flush=True,
+            )
+            t0 = time.time()
+            kwargs = dict(model=model, prompt=plate["prompt"], config=config)
+            if img is not None:
+                kwargs["image"] = img
+            operation = client.models.generate_videos(**kwargs)
+            while not operation.done:
+                time.sleep(12)
+                operation = client.operations.get(operation)
+                print(f"  poll {plate['id']} … {int(time.time() - t0)}s", flush=True)
+            if operation.error:
+                raise RuntimeError(operation.error)
+            response = operation.response
+            if not response or not response.generated_videos:
+                raise RuntimeError(f"no video for {plate['id']}")
+            video = response.generated_videos[0]
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            client.files.download(file=video.video)
+            video.video.save(str(dest))
+            strip_audio(dest)
+            return {
+                "seconds": round(time.time() - t0, 1),
+                "bytes": dest.stat().st_size,
+                "attempt": attempt,
+            }
+        except Exception as e:
+            last_err = e
+            print(f"  FAIL {plate['id']} attempt={attempt}: {e}", flush=True)
+            time.sleep(20 * attempt)
+    raise RuntimeError(f"{plate['id']} failed after {retries} attempts: {last_err}")
+
 
 
 def maybe_vo() -> Path | None:

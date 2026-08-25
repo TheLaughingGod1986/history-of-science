@@ -1,0 +1,34 @@
+{
+  "model": "veo-3.1-fast-generate-preview",
+  "plates": [
+    {
+      "id": "01_library_establish",
+      "skipped": true,
+      "bytes": 6418629,
+      "path": "/workspace/02_Video-Projects/000_Explorer-Style-Test/04_Generated-Clips/raw/01_library_establish_v01.mp4"
+    },
+    {
+      "id": "02_explorer_dusts_book",
+      "seconds": 49.9,
+      "bytes": 3756677,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/000_Explorer-Style-Test/04_Generated-Clips/raw/02_explorer_dusts_book_v01.mp4"
+    },
+    {
+      "id": "03_idea_pages",
+      "seconds": 61.6,
+      "bytes": 6167084,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/000_Explorer-Style-Test/04_Generated-Clips/raw/03_idea_pages_v01.mp4"
+    },
+    {
+      "id": "04_explorer_eureka",
+      "seconds": 49.8,
+      "bytes": 3003911,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/000_Explorer-Style-Test/04_Generated-Clips/raw/04_explorer_eureka_v01.mp4"
+    }
+  ],
+  "out": "/workspace/02_Video-Projects/000_Explorer-Style-Test/09_Final-Export/hos_explorer_style_test_30s_v01.mp4",
+  "vo": null
+}
