@@ -11,10 +11,13 @@
   Unload:
     launchctl unload ~/Library/LaunchAgents/dev.orbit.tiktok-live-shorts.plist
 
-  Runs every 5 minutes. Requires Chrome logged into @orbitwithben on the CDP profile.
+  PAUSED 25 Aug 2026 — TikTok posting ban. Do not load until Ben lifts
+  TIKTOK_UPLOAD_BLOCK.json. Disabled=true in this file.
 -->
 <plist version="1.0">
 <dict>
+  <key>Disabled</key>
+  <true/>
   <key>Label</key>
   <string>dev.orbit.tiktok-live-shorts</string>
   <key>ProgramArguments</key>
@@ -37,6 +40,8 @@
   <dict>
     <key>PATH</key>
     <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin</string>
+    <key>TIKTOK_UPLOADS_PAUSED</key>
+    <string>1</string>
   </dict>
 </dict>
 </plist>
