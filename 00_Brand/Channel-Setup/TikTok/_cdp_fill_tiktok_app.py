@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fill Orbit Content Ops TikTok app via Chrome CDP (port 9222)."""
+"""Fill History of Science Content Ops TikTok app via Chrome CDP (port 9222)."""
 from __future__ import annotations
 
 import json
@@ -16,8 +16,8 @@ AUDIT = OUT / "audit"
 RESULT = OUT / "TIKTOK_DEV_APP.json"
 ENV = Path("/Users/ben/code/Orbit-YouTube/07_Content-Ops/.env")
 DESC = (
-    "Orbit Content Ops schedules and publishes short-form space storytelling videos "
-    "from the Orbit with Ben channel (@OrbitWithBen) to TikTok. Used privately by "
+    "History of Science Content Ops schedules and publishes short-form space storytelling videos "
+    "from the History of Science channel (@HistoryOfScience) to TikTok. Used privately by "
     "the channel operator for draft upload and publishing of original educational content."
 )
 TOS = "https://www.youtube.com/t/terms"
@@ -72,7 +72,7 @@ def main() -> None:
         page.wait_for_timeout(2000)
         shot(page, "00")
         body = page.inner_text("body")
-        if re.search(r"No access", body) and "Orbit Content Ops" not in body:
+        if re.search(r"No access", body) and "History of Science Content Ops" not in body:
             result["status"] = "needs_login"
             RESULT.write_text(json.dumps(result, indent=2) + "\n")
             print("NEEDS LOGIN", flush=True)
@@ -146,7 +146,7 @@ def main() -> None:
             let root = lab.parentElement;
             for (let i = 0; i < 6 && root; i++) {
               const inp = root.querySelector('input[type=text]');
-              if (inp && inp.value !== 'Orbit Content Ops') {
+              if (inp && inp.value !== 'History of Science Content Ops') {
                 setIN(inp, value);
                 return true;
               }

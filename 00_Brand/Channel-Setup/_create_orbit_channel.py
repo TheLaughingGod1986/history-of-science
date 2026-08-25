@@ -28,7 +28,7 @@ HANDLE_CANDIDATES = [
     "OrbitStories",
     "MeetOrbit",
     "OrbitExplores",
-    "OrbitWithBen",
+    "HistoryOfScience",
     "OrbitCosmos",
 ]
 

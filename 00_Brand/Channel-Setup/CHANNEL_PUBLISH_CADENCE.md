@@ -1,4 +1,4 @@
-# Orbit with Ben — publish cadence
+# History of Science — publish cadence
 
 Timezone: **Europe/London**  
 Canonical strategy: `PUBLISHING_AND_SHORTS_STRATEGY.md`  
@@ -73,7 +73,7 @@ Confirm every schedule on Studio `/video/{id}/edit`. Every Short: Related → pu
 5–7 Shorts · 3 X · 3 Threads · 2 LinkedIn · 3 Facebook · 1 Reddit · 1 Community poll · 1 Community image · (future: email + blog)
 
 **Shorts auto-mirrors (when live on YouTube):**
-- TikTok → `TikTok/AUTO_POST.md` (@orbitwithben)
+- TikTok → `TikTok/AUTO_POST.md` (@historyofscience)
 - Instagram Reels + Facebook Page Reels → `Meta/AUTO_POST.md`
 
 Template: `CONTENT_FLYWHEEL_TEMPLATE.md` · Checklist: `RELEASE_WEEK_CHECKLIST.md`

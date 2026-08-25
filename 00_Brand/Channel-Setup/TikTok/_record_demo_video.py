@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Record TikTok app-review demo of Orbit Content Ops integration UI."""
+"""Record TikTok app-review demo of History of Science Content Ops integration UI."""
 from __future__ import annotations
 
 from pathlib import Path

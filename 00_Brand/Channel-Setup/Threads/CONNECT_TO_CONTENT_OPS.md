@@ -1,6 +1,6 @@
 # Connect Orbit Threads to Content Ops
 
-Brand: **Orbit with Ben** · YouTube pillar [@OrbitWithBen](https://www.youtube.com/@OrbitWithBen)
+Brand: **History of Science** · YouTube pillar [@HistoryOfScience](https://www.youtube.com/@HistoryOfScience)
 
 This wires Threads the same way TikTok and Meta are wired: Content Ops OAuth
 **and** the brand-level auto-post mirror for live YouTube Shorts.
@@ -9,7 +9,7 @@ This wires Threads the same way TikTok and Meta are wired: Content Ops OAuth
 
 | Piece | Requirement |
 |-------|-------------|
-| Threads account | **@orbitwithben** (same login as Instagram) |
+| Threads account | **@historyofscience** (same login as Instagram) |
 | Meta app | Threads API product enabled |
 | Permissions | Threads content publish scopes for the user |
 
@@ -54,16 +54,16 @@ Until Graph App Review + a public media URL are ready, keep:
 bash 00_Brand/Channel-Setup/Threads/auto/start_threads_chrome.sh
 ```
 
-Log into https://www.threads.com/ as **@orbitwithben** once.
+Log into https://www.threads.com/ as **@historyofscience** once.
 
 ## Identity checklist
 
 | Field | Value |
 |-------|-------|
-| Display name | Orbit with Ben |
-| Handle | @orbitwithben |
+| Display name | History of Science |
+| Handle | @historyofscience |
 | Bio | Space stories. Big questions. Full films on YouTube ↓ |
-| Website / link | https://www.youtube.com/@OrbitWithBen |
+| Website / link | https://www.youtube.com/@HistoryOfScience |
 | Avatar | Same Orbit mascot as YouTube / TikTok |
 
 See `AUTO_POST.md` for the watcher + LaunchAgent.

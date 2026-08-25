@@ -190,7 +190,7 @@ export default async function HomePage() {
     <div className="space-y-8">
       <section className="relative overflow-hidden rounded-3xl border border-white/5 bg-[#0d1018]/70 p-8 md:p-10">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,122,36,0.2),transparent_40%)]" />
-        <p className="text-xs uppercase tracking-[0.28em] text-[#FF7A24]">Orbit with Ben</p>
+        <p className="text-xs uppercase tracking-[0.28em] text-[#FF7A24]">History of Science</p>
         <h1 className="mt-3 max-w-2xl font-[family-name:var(--font-orbit-display)] text-4xl leading-tight text-[#F5E8D2] md:text-5xl">
           Content operations studio
         </h1>

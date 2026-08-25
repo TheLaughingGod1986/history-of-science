@@ -2,7 +2,7 @@
 """
 Orbit Threads CDP client — post one short as a Threads video via Chrome.
 
-Uses the logged-in @orbitwithben session (port 9222 by default).
+Uses the logged-in @historyofscience session (port 9222 by default).
 """
 from __future__ import annotations
 
@@ -160,7 +160,7 @@ def post_short(
     needle = confirm_needle or caption[:48]
     creds = config.load_credentials()
     port = int(port or creds.get("cdp_port") or 9222)
-    username = creds.get("threads_username") or creds.get("username") or "orbitwithben"
+    username = creds.get("threads_username") or creds.get("username") or "historyofscience"
     out: dict = {
         "status": "failed",
         "method": "cdp",

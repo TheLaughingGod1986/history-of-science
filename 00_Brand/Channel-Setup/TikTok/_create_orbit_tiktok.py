@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create Orbit with Ben TikTok account using existing Google Playwright profile."""
+"""Create History of Science TikTok account using existing Google Playwright profile."""
 from __future__ import annotations
 
 import json
@@ -13,15 +13,15 @@ PROFILE = "/Users/ben/code/youtube/.playwright-youtube-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AVATAR = SETUP / "avatar_800x800.png"
 BIO = (SETUP / "bio.txt").read_text().strip()
-WEBSITE = "https://www.youtube.com/@OrbitWithBen"
-DISPLAY = "Orbit with Ben"
+WEBSITE = "https://www.youtube.com/@HistoryOfScience"
+DISPLAY = "History of Science"
 AUDIT = SETUP / "audit"
 RESULT = SETUP / "CREATE_RESULT.json"
 META = SETUP / "TIKTOK_META.json"
 
 HANDLE_CANDIDATES = [
-    "OrbitWithBen",
-    "OrbitWithBenYT",
+    "HistoryOfScience",
+    "HistoryOfScienceYT",
     "MeetOrbit",
     "OrbitExplores",
     "HelloOrbit",
@@ -276,7 +276,7 @@ def go_edit_profile(page) -> bool:
 
     # Alternate: profile page
     if "setting" not in page.url:
-        page.goto("https://www.tiktok.com/@OrbitWithBen", wait_until="domcontentloaded")
+        page.goto("https://www.tiktok.com/@HistoryOfScience", wait_until="domcontentloaded")
         page.wait_for_timeout(2000)
 
     click_text(page, r"^Edit profile$|^Edit$")
@@ -454,7 +454,7 @@ def main() -> None:
         shot(page, "09_post_auth_home")
 
         if go_edit_profile(page):
-            handle = result.get("handle") or extract_handle(page) or "OrbitWithBen"
+            handle = result.get("handle") or extract_handle(page) or "HistoryOfScience"
             branding = apply_branding(page, handle)
             result["branding"] = branding
             result["handle"] = handle

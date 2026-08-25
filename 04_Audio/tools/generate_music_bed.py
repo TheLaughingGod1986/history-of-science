@@ -37,7 +37,7 @@ DEFAULT_NEGATIVE = (
 )
 
 DEFAULT_ORBIT_BED = (
-    "Instrumental cinematic space documentary underscore for Orbit with Ben. "
+    "Instrumental cinematic space documentary underscore for History of Science. "
     "Warm curious pads, soft low strings, gentle cosmic shimmer, sparse piano "
     "motifs. Builds subtly under narration; leaves room for voice. No vocals."
 )

@@ -1,4 +1,4 @@
-# Orbit With Ben — YouTube Growth System v2
+# History of Science — YouTube Growth System v2
 
 **Locked:** 2026-08-06  
 **Status:** Canonical production system  

@@ -1,8 +1,8 @@
-# Orbit with Ben — Final Brand Refinement Pass
+# History of Science — Final Brand Refinement Pass
 
 **Role:** Senior creative director · YouTube growth strategist · IP brand consultant  
 **Date:** 2026-07-27  
-**Channel:** [@OrbitWithBen](https://www.youtube.com/@OrbitWithBen) · `UC_esArsDKd3GJvOkeO0DUog`  
+**Channel:** [@HistoryOfScience](https://www.youtube.com/@HistoryOfScience) · *YouTube channel not created yet — do not use Orbit with Ben `UC_esArsDKd3GJvOkeO0DUog`*  
 **Mode:** Targeted refinement only — do not redesign the concept.
 
 **Preserve:** Orbit mascot · orange robot · space exploration · curious storytelling · warm science · documentary bones · philosophy *Big questions. Deep universe.*
@@ -39,7 +39,7 @@
 - Character design (orange body, black faceplate, cream eyes, single antenna)
 - Core positioning: big questions + deep universe
 - Tone: wonder, intelligence, warmth — not clickbait or conspiracy
-- Channel display name **Orbit with Ben** (for now)
+- Channel display name **History of Science** (for now)
 - Avatar close-up Orbit
 - Colour system: deep space `#0A0C12` · cream `#F5E8D2` · orange `#FF7A24` · gold `#FFC85A`
 
@@ -121,7 +121,7 @@ Left — warm galaxy · Centre — two-line cream slogan (TV-safe) · Right — 
 | Layer | Form | Role |
 |-------|------|------|
 | **Primary IP** | **ORBIT** | Wordmark, character, colour, universe |
-| **Channel / legal** | Orbit with Ben | YouTube display + @OrbitWithBen |
+| **Channel / legal** | History of Science | YouTube display + @HistoryOfScience |
 | **Philosophy** | Big questions. Deep universe. | About, trailer, end cards, merch tags |
 | **Creator credit** | with Ben / Ben Oates | Secondary — never visual co-equal |
 
@@ -135,7 +135,7 @@ Left — warm galaxy · Centre — two-line cream slogan (TV-safe) · Right — 
 | Thumbnail | Rare as text; prefer character | Never |
 | End card | Large ORBIT + Orbit figure | Micro or omit |
 | Merch | ORBIT primary | Fine print only |
-| Spoken | “Orbit” / “Orbit with Ben” interchangeable early | Credit Ben in About |
+| Spoken | “Orbit” / “History of Science” interchangeable early | Credit Ben in About |
 
 **Rule:** If you remove the nav/channel name and the first viewport still feels like ORBIT, hierarchy is correct.
 
@@ -186,8 +186,8 @@ Tone: curious, careful, a little witty. Science over speculation. No conspiracy.
 Big questions. Deep universe.
 
 ———
-Orbit with Ben
-Animated space storytelling · @OrbitWithBen
+History of Science
+Animated space storytelling · @HistoryOfScience
 ```
 
 **Already live** — retain. Only revisit if banner alignment or cadence wording changes.
@@ -381,7 +381,7 @@ Orbit: large eyes toward subject or camera; never tiny corner mascot spam.
 | Milestone | Focus |
 |-----------|--------|
 | **10k** | Lock format (Mission cards, thumbs, signature line). Channel trailer. Consistent weekly rhythm. Light community posts (“This week’s question”). No merch yet. |
-| **50k** | First merch test: Orbit pin / enamel + “Stay curious” print. Simple orbitwithben.com (or orbit.space if available) as hub. Shorts as funnel, not main IP. Spoken shorthand “Orbit” in outros. |
+| **50k** | First merch test: Orbit pin / enamel + “Stay curious” print. Simple historyofscience.com (or orbit.space if available) as hub. Shorts as funnel, not main IP. Spoken shorthand “Orbit” in outros. |
 | **100k** | Rename to **Orbit** on YouTube if allowed. Illustrated kids/YA question book pitch. Classroom one-sheets / education partners. Discord or Circle “Mission Control” for questions. |
 | **1M** | Full media property: premium doc specials, app (sky/questions companion), publishing line, selective brand partnerships (science orgs, not junk tech). Orbit as character licensing — strict brand bible. |
 

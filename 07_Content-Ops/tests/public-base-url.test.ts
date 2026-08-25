@@ -16,11 +16,11 @@ afterEach(() => {
 
 describe("getPublicBaseUrl / oauthCallbackUrl", () => {
   it("uses non-localhost APP_BASE_URL", () => {
-    process.env.APP_BASE_URL = "https://orbit-content-ops.vercel.app";
+    process.env.APP_BASE_URL = "https://history-of-science-content-ops.vercel.app";
     delete process.env.VERCEL_URL;
-    expect(getPublicBaseUrl()).toBe("https://orbit-content-ops.vercel.app");
+    expect(getPublicBaseUrl()).toBe("https://history-of-science-content-ops.vercel.app");
     expect(oauthCallbackUrl("google")).toBe(
-      "https://orbit-content-ops.vercel.app/api/oauth/google/callback",
+      "https://history-of-science-content-ops.vercel.app/api/oauth/google/callback",
     );
   });
 
@@ -30,13 +30,13 @@ describe("getPublicBaseUrl / oauthCallbackUrl", () => {
     delete process.env.VERCEL_URL;
     const req = {
       headers: new Headers({
-        host: "orbit-content-ops.vercel.app",
+        host: "history-of-science-content-ops.vercel.app",
         "x-forwarded-proto": "https",
       }),
     };
-    expect(getPublicBaseUrl(req)).toBe("https://orbit-content-ops.vercel.app");
+    expect(getPublicBaseUrl(req)).toBe("https://history-of-science-content-ops.vercel.app");
     expect(oauthCallbackUrl("google", req)).toBe(
-      "https://orbit-content-ops.vercel.app/api/oauth/google/callback",
+      "https://history-of-science-content-ops.vercel.app/api/oauth/google/callback",
     );
   });
 });

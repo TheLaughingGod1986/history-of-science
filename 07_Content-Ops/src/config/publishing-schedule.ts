@@ -1,13 +1,13 @@
 import { PlatformId } from "./platforms";
 
 /**
- * Canonical Orbit schedule (Europe/London).
+ * Canonical History of Science schedule (Europe/London).
  * Preserves existing channel ops from OPTIMAL_PUBLISH_SCHEDULE.json
  * and adds staggered cross-platform offsets within a 24h window.
  */
 export const PUBLISHING_SCHEDULE = {
   timezone: "Europe/London",
-  channelName: "Orbit with Ben",
+  channelName: "History of Science",
   longForm: {
     day: "Thursday" as const,
     time: "19:00",

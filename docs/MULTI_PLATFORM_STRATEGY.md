@@ -1,6 +1,6 @@
-# Multi-platform strategy — Orbit with Ben
+# Multi-platform strategy — History of Science
 
-YouTube remains the **pillar**. Every other platform is a discovery channel that should send viewers to the full Orbit documentary and brand.
+YouTube remains the **pillar**. Every other platform is a discovery channel that should send viewers to the full History of Science documentary and brand.
 
 ## Output from one long-form video
 
@@ -29,7 +29,7 @@ Configurable in `07_Content-Ops/src/config/publishing-schedule.ts`.
 
 Examples:
 
-- Watch the full story on Orbit with Ben.
+- Watch the full story on History of Science.
 - The full explanation is on the channel.
 
 Avoid hard sells, fake urgency, and watermarked re-uploads.

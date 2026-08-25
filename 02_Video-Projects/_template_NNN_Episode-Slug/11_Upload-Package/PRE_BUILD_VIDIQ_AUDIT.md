@@ -1,4 +1,4 @@
-# Pre-build vidIQ audit — Orbit with Ben
+# Pre-build vidIQ audit — History of Science
 
 **Hard gate:** Run **before** locking script, VO, prompts, or picture gen for any new long.  
 **Goal:** Every episode is aimed at **views + full-video watch** using live data — not gut feel alone.  

@@ -1,7 +1,7 @@
 # Platform API Requirements
 
 **Documented:** 2026-07-31  
-**Purpose:** Official references and constraints for Orbit Content Ops autopublishing.  
+**Purpose:** Official references and constraints for History of Science Content Ops autopublishing.  
 **Rule:** Re-check developer portals before production enablement — scopes and review rules change.
 
 ---

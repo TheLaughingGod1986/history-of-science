@@ -1,7 +1,7 @@
 /**
  * Resolve the public origin for OAuth callbacks and operator UI.
  * Prefer configured APP_BASE_URL when it is not localhost; otherwise use the
- * incoming request host or Vercel’s VERCEL_URL. Never invent orbitwithben.com.
+ * incoming request host or Vercel’s VERCEL_URL. Never invent historyofscience.com.
  */
 
 function stripTrailingSlash(url: string): string {

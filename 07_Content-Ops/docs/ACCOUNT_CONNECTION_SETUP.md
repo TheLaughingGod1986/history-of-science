@@ -1,6 +1,6 @@
 # Account Connection Setup
 
-Shared steps for all Orbit Content Ops platforms.
+Shared steps for all History of Science Content Ops platforms.
 
 ## Prerequisites
 

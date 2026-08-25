@@ -2,7 +2,7 @@
 
 **PAUSED (25 Aug 2026):** TikTok account is banned from posting. **No uploads** until Ben lifts `TIKTOK_UPLOAD_BLOCK.json` and says so. Do not reload LaunchAgents. YouTube / Meta / Threads are unaffected.
 
-When a short goes **live on YouTube**, Orbit mirrors it to **[@orbitwithben](https://www.tiktok.com/@orbitwithben)** via TikTok Studio (Chrome CDP).
+When a short goes **live on YouTube**, Orbit mirrors it to **[@historyofscience](https://www.tiktok.com/@historyofscience)** via TikTok Studio (Chrome CDP).
 
 ## How it fires
 
@@ -15,7 +15,7 @@ When a short goes **live on YouTube**, Orbit mirrors it to **[@orbitwithben](htt
 ## One-time setup
 
 ```bash
-# 1) Chrome logged into @orbitwithben on the CDP profile
+# 1) Chrome logged into @historyofscience on the CDP profile
 bash 00_Brand/Channel-Setup/TikTok/auto/start_tiktok_chrome.sh
 # Log in once in that window if needed.
 

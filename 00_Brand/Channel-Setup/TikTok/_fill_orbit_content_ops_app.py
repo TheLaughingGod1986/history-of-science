@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fill Orbit Content Ops TikTok developer app (basic info + products + credentials)."""
+"""Fill History of Science Content Ops TikTok developer app (basic info + products + credentials)."""
 from __future__ import annotations
 
 import json
@@ -17,8 +17,8 @@ RESULT = OUT / "TIKTOK_DEV_APP.json"
 ENV = Path("/Users/ben/code/Orbit-YouTube/07_Content-Ops/.env")
 ICON = OUT / "app_icon_1024.png"
 DESC = (
-    "Orbit Content Ops schedules and publishes short-form space storytelling videos "
-    "from the Orbit with Ben channel (@OrbitWithBen) to TikTok. Used privately by "
+    "History of Science Content Ops schedules and publishes short-form space storytelling videos "
+    "from the History of Science channel (@HistoryOfScience) to TikTok. Used privately by "
     "the channel operator for draft upload and publishing of original educational content."
 )
 # Prefer profiles that may already hold developer login
@@ -432,7 +432,7 @@ def main() -> None:
         shot(page, "00")
         body = page.inner_text("body")
         if re.search(r"No access|You need to login|Log in", body, re.I) and not re.search(
-            r"Orbit Content Ops|Basic information|App icon", body, re.I
+            r"History of Science Content Ops|Basic information|App icon", body, re.I
         ):
             result["status"] = "needs_login"
             result["notes"] = (
@@ -447,7 +447,7 @@ def main() -> None:
                     body = page.inner_text("body")
                 except Exception:
                     continue
-                if re.search(r"Orbit Content Ops|Basic information|App icon", body, re.I):
+                if re.search(r"History of Science Content Ops|Basic information|App icon", body, re.I):
                     print("login detected", flush=True)
                     page.goto(APP_URL, wait_until="domcontentloaded")
                     page.wait_for_timeout(2000)

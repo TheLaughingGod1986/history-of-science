@@ -13,8 +13,8 @@ PROFILE = "/Users/ben/code/youtube/.playwright-youtube-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AVATAR = SETUP / "avatar_800x800.png"
 BIO = (SETUP / "bio.txt").read_text().strip()
-WEBSITE = "https://www.youtube.com/@OrbitWithBen"
-DISPLAY = "Orbit with Ben"
+WEBSITE = "https://www.youtube.com/@HistoryOfScience"
+DISPLAY = "History of Science"
 AUDIT = SETUP / "audit"
 RESULT = SETUP / "BRAND_RESULT.json"
 META = SETUP / "TIKTOK_META.json"
@@ -326,7 +326,7 @@ def apply_branding(page) -> dict:
     return out
 
 
-def maybe_rename_username(page, preferred: str = "OrbitWithBen") -> str | None:
+def maybe_rename_username(page, preferred: str = "HistoryOfScience") -> str | None:
     """Try to set username if editable and available."""
     try:
         # Username field often separate
@@ -419,7 +419,7 @@ def main() -> None:
             context.close()
             return
 
-        handle_try = maybe_rename_username(page, "OrbitWithBen")
+        handle_try = maybe_rename_username(page, "HistoryOfScience")
         if handle_try:
             result["steps"].append(f"username_field={handle_try}")
 

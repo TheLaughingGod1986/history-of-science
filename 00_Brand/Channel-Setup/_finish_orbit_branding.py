@@ -207,7 +207,7 @@ def main() -> None:
             result["post_publish_snip"] = feedback[:1200]
 
             # Public verify
-            page.goto("https://www.youtube.com/@OrbitWithBen", wait_until="domcontentloaded")
+            page.goto("https://www.youtube.com/@HistoryOfScience", wait_until="domcontentloaded")
             page.wait_for_timeout(4000)
             dismiss_modals(page)
             shot(page, "07_public")

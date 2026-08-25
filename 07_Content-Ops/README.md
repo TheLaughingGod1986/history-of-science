@@ -1,6 +1,6 @@
-# Orbit Content Ops
+# History of Science Content Ops
 
-Local multi-platform distribution + autopublish dashboard for **Orbit with Ben**.
+Local multi-platform distribution + autopublish dashboard for **History of Science**.
 
 ## Quick start
 

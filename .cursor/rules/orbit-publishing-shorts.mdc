@@ -1,5 +1,5 @@
 ---
-description: Orbit with Ben publishing & Shorts — cadence + punch-first lock
+description: History of Science publishing & Shorts — cadence + punch-first lock
 globs:
   - 00_Brand/Channel-Setup/**
   - 02_Video-Projects/**/10_Shorts/**
@@ -7,7 +7,7 @@ globs:
 alwaysApply: false
 ---
 
-# Publishing rules (Orbit with Ben)
+# Publishing rules (History of Science)
 
 Canonical cadence: `00_Brand/Channel-Setup/CHANNEL_PUBLISH_CADENCE.md`  
 Shorts duration lock: `.cursor/rules/orbit-shorts-punch-first.mdc` (always on)

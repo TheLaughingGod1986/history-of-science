@@ -15,8 +15,8 @@ const sans = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Orbit Content Ops",
-  description: "Multi-platform distribution studio for Orbit with Ben",
+  title: "History of Science Content Ops",
+  description: "Multi-platform distribution studio for History of Science",
 };
 
 export default function RootLayout({

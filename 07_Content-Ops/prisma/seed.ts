@@ -250,9 +250,9 @@ async function main() {
         accountDisplayName: CHANNEL_NAME,
         profileUrl:
           id === "youtube_shorts"
-            ? "https://www.youtube.com/@OrbitWithBen"
+            ? "https://www.youtube.com/@HistoryOfScience"
             : null,
-        defaultHashtags: JSON.stringify(["OrbitWithBen", "Space", "Astronomy"]),
+        defaultHashtags: JSON.stringify(["HistoryOfScience", "Science", "History"]),
         defaultCallToAction: CONTENT_RULES.softCtas[0],
         publishingMethod: "manual",
         connectionStatus: PLATFORMS[id].connectionStatus,
@@ -274,7 +274,7 @@ async function main() {
       key: "tiktok_caption",
       name: "TikTok caption",
       platform: "tiktok",
-      body: "{{hook}}\n\n{{call_to_action}}\n\n#OrbitWithBen #Space",
+      body: "{{hook}}\n\n{{call_to_action}}\n\n#HistoryOfScience #Science",
     },
     {
       key: "instagram_reel_caption",

@@ -15,16 +15,16 @@ PROFILE = "/Users/ben/code/youtube/.playwright-tiktok-mobile-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AVATAR = SETUP / "avatar_800x800.png"
 BIO = (SETUP / "bio.txt").read_text().strip()
-WEBSITE = "https://www.youtube.com/@OrbitWithBen"
-DISPLAY = "Orbit with Ben"
+WEBSITE = "https://www.youtube.com/@HistoryOfScience"
+DISPLAY = "History of Science"
 EMAIL = "benoats86@gmail.com"
 AUDIT = SETUP / "audit"
 RESULT = SETUP / "CREATE_RESULT.json"
 META = SETUP / "TIKTOK_META.json"
 
 HANDLES = [
-    "OrbitWithBen",
-    "OrbitWithBenYT",
+    "HistoryOfScience",
+    "HistoryOfScienceYT",
     "MeetOrbit",
     "OrbitExplores",
     "HelloOrbit",

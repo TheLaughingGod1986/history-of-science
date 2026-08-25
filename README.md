@@ -1,14 +1,15 @@
-# Orbit — YouTube Production Workspace
+# History of Science — YouTube Production Workspace
 
-Production workspace for **Orbit with Ben** (`@OrbitWithBen`) — a faceless
-animated science storytelling channel. Feel: *Pixar meets space documentary.*
+Production workspace for **History of Science** (`@HistoryOfScience`) — a faceless
+animated science-storytelling channel. Feel: *Pixar meets documentary.*
+Orbit the robot is the guide; the channel brand is History of Science.
 
 Orbit is a small hovering robot: rounded orange body, black faceplate, cream
 expressive eyes, a single glowing antenna, and two side arms — *a tiny robot
 asking the biggest questions in the universe.*
 
 **Creative director system:** `00_Brand/CHANNEL_BUILD_SYSTEM.md`  
-**Live channel:** `00_Brand/Channel-Setup/CHANNEL_READY.md`  
+**Channel setup (not live yet):** `00_Brand/Channel-Setup/CHANNEL_READY.md`  
 **YouTube Growth System v2 (canonical):** `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
 **Publishing & Shorts strategy:** `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`  
 **Publish schedule:** `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.md` · `CHANNEL_PUBLISH_CADENCE.md`  
@@ -35,7 +36,7 @@ per-video projects, reusable animation and audio libraries, and final exports.
 
 ## Purpose
 
-1. Keep **one canonical visual definition of Orbit** so the character never
+1. Keep **one canonical visual definition of Orbit** (the mascot) so the character never
    drifts between videos.
 2. Build a **reusable library** of Orbit animation clips (hover, talking,
    reactions, outros) that can be dropped into any future video.
@@ -47,7 +48,7 @@ per-video projects, reusable animation and audio libraries, and final exports.
 ## Directory map
 
 ```
-Orbit-YouTube/
+History-of-Science/
 ├── 00_Brand/                       Channel identity
 │   ├── Logos/                      Channel logo, watermark, endcards
 │   ├── Fonts/                      Licensed font files
@@ -108,7 +109,7 @@ Orbit-YouTube/
 
 ### Multi-platform Content Ops
 
-Local dashboard that turns one completed Orbit long-form into reusable short-form
+Local dashboard that turns one completed History of Science long-form into reusable short-form
 distribution packs (YouTube Shorts, TikTok, Instagram Reels, Facebook Reels, X,
 Threads) with platform-specific copy, calendars, CSV analytics, and manual
 upload checklists.

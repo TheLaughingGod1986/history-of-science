@@ -41,7 +41,7 @@ function truncate(s: string, max: number): string {
 }
 
 function defaultHashtags(topic: string): string[] {
-  const base = ["OrbitWithBen", "Space", "Astronomy"];
+  const base = ["HistoryOfScience", "Science", "History"];
   if (/alien|fermi/i.test(topic)) return ["FermiParadox", "AreWeAlone", ...base];
   return [topic.replace(/\s+/g, ""), ...base].slice(0, 5);
 }

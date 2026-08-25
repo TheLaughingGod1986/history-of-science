@@ -25,7 +25,7 @@ NAME_HANDLE_PAIRS = [
     ("Orbit Space", "OrbitSpace"),
     ("Meet Orbit", "MeetOrbit"),
     ("Orbit Explores", "OrbitExplores"),
-    ("Orbit with Ben", "OrbitWithBen"),
+    ("History of Science", "HistoryOfScience"),
     ("Hello Orbit", "HelloOrbit"),
     ("Orbit Cosmos", "OrbitCosmos"),
     ("Orbit Space Stories", "OrbitSpaceStories"),

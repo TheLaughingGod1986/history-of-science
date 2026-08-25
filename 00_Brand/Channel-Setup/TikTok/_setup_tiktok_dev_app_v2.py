@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Login to TikTok Developers and create Orbit Content Ops app."""
+"""Login to TikTok Developers and create History of Science Content Ops app."""
 from __future__ import annotations
 
 import json
@@ -126,7 +126,7 @@ def main() -> None:
                 result["status"] = "needs_developer_login"
                 result["notes"] = (
                     "Log into https://developers.tiktok.com with the TikTok account "
-                    "@orbitwithben (or Ben's developer account), create an app, then re-run."
+                    "@historyofscience (or Ben's developer account), create an app, then re-run."
                 )
                 RESULT.write_text(json.dumps(result, indent=2) + "\n")
                 print(json.dumps(result, indent=2), flush=True)
@@ -156,7 +156,7 @@ def main() -> None:
                 page.locator('input[type="text"]'),
             ):
                 if sel.count() and sel.first.is_visible():
-                    sel.first.fill("Orbit Content Ops")
+                    sel.first.fill("History of Science Content Ops")
                     filled = True
                     break
             print("name filled", filled, flush=True)
@@ -177,8 +177,8 @@ def main() -> None:
 
         # Click into app card
         try:
-            if page.get_by_text(re.compile(r"Orbit Content Ops", re.I)).count():
-                page.get_by_text(re.compile(r"Orbit Content Ops", re.I)).first.click()
+            if page.get_by_text(re.compile(r"History of Science Content Ops", re.I)).count():
+                page.get_by_text(re.compile(r"History of Science Content Ops", re.I)).first.click()
                 page.wait_for_timeout(2500)
         except Exception:
             pass

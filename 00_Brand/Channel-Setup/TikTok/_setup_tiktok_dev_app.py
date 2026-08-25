@@ -14,7 +14,7 @@ OUT = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AUDIT = OUT / "audit"
 RESULT = OUT / "TIKTOK_DEV_APP.json"
 REDIRECT = "http://localhost:3000/api/oauth/tiktok/callback"
-APP_NAME = "Orbit Content Ops"
+APP_NAME = "History of Science Content Ops"
 
 
 def shot(page, name: str) -> None:
@@ -118,8 +118,8 @@ def main() -> None:
 
         # Open existing Orbit app if listed
         try:
-            if page.get_by_text(re.compile(r"Orbit Content Ops|Orbit", re.I)).count():
-                page.get_by_text(re.compile(r"Orbit Content Ops|Orbit", re.I)).first.click()
+            if page.get_by_text(re.compile(r"History of Science Content Ops|Orbit", re.I)).count():
+                page.get_by_text(re.compile(r"History of Science Content Ops|Orbit", re.I)).first.click()
                 page.wait_for_timeout(2500)
         except Exception:
             pass

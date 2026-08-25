@@ -1,13 +1,13 @@
-# Orbit With Ben Monetisation Master Plan
+# History of Science Monetisation Master Plan
 
 Status: implementation plan
-Owner: Orbit With Ben
-Primary repo: `TheLaughingGod1986/orbit-with-ben`
+Owner: History of Science
+Primary repo: `TheLaughingGod1986/history-of-science`
 Audience: coding agents, product agents, content agents and channel operators
 
 ## 1. Mission
 
-Turn Orbit With Ben from a YouTube channel into a diversified science-and-space media business with multiple revenue streams that compound as the content library grows.
+Turn History of Science from a YouTube channel into a diversified science-and-space media business with multiple revenue streams that compound as the content library grows.
 
 The system must avoid dependence on any single monetisation source. YouTube ad revenue is a base layer, not the whole business.
 
@@ -410,7 +410,7 @@ Create a readiness dashboard with signals such as:
 
 ---
 
-# 12. Revenue pillar F: OrbitWithBen.com
+# 12. Revenue pillar F: HistoryOfScience.com
 
 The website should become a monetisation and audience-ownership layer, not just a brochure site.
 
@@ -763,7 +763,7 @@ Build:
 
 ## Phase 6: website/SEO commerce
 
-Prepare shared APIs/data for OrbitWithBen.com:
+Prepare shared APIs/data for HistoryOfScience.com:
 
 - gear
 - guides
@@ -919,7 +919,7 @@ When blocked by credentials, complete everything that does not require them and 
 
 # 27. Definition of success
 
-The long-term system is successful when Orbit With Ben can answer, from one dashboard:
+The long-term system is successful when History of Science can answer, from one dashboard:
 
 - What did the channel earn this month?
 - Which revenue stream is growing fastest?
@@ -935,4 +935,4 @@ The long-term system is successful when Orbit With Ben can answer, from one dash
 
 The ultimate goal is not to maximise ads.
 
-It is to build **Orbit With Ben into a durable audience-owned science and space media business with diversified recurring revenue and valuable intellectual property.**
+It is to build **History of Science into a durable audience-owned science and space media business with diversified recurring revenue and valuable intellectual property.**

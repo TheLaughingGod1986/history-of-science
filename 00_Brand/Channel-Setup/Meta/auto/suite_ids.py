@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
 
-# Orbit with Ben portfolio + Page (see META_ACCOUNTS.json / PORTFOLIO.md).
+# History of Science portfolio + Page (see META_ACCOUNTS.json / PORTFOLIO.md).
 ORBIT_BUSINESS_ID = "1352434763139246"
 ORBIT_PAGE_ASSET_ID = "1285932871266399"
 ORBIT_PAGE_ID = "61592833318203"
@@ -75,7 +75,7 @@ def pin_suite_creds(creds: dict | None, accounts: dict | None = None) -> dict:
     data["business_portfolio_name"] = str(
         data.get("business_portfolio_name")
         or portfolio.get("name")
-        or "Orbit with Ben"
+        or "History of Science"
     )
     return data
 

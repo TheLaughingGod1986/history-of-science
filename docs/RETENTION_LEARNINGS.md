@@ -1,6 +1,6 @@
 # Retention Learnings (cumulative)
 
-Institutional memory for Orbit With Ben. Update when analytics are imported or Studio is reviewed.
+Institutional memory for History of Science. Update when analytics are imported or Studio is reviewed.
 
 ---
 

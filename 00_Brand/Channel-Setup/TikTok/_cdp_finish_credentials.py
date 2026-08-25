@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finish TikTok Orbit Content Ops app: category, icon, credentials, redirect."""
+"""Finish TikTok History of Science Content Ops app: category, icon, credentials, redirect."""
 from __future__ import annotations
 
 import json
@@ -15,8 +15,8 @@ ENV = Path("/Users/ben/code/Orbit-YouTube/07_Content-Ops/.env")
 OUT = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AUDIT = OUT / "audit"
 DESC = (
-    "Orbit Content Ops schedules and publishes short-form space storytelling videos "
-    "from the Orbit with Ben channel (@OrbitWithBen) to TikTok. Used privately by "
+    "History of Science Content Ops schedules and publishes short-form space storytelling videos "
+    "from the History of Science channel (@HistoryOfScience) to TikTok. Used privately by "
     "the channel operator for draft upload and publishing of original educational content."
 )
 
@@ -113,7 +113,7 @@ def main() -> None:
                 let root = lab.parentElement;
                 for (let i = 0; i < 6 && root; i++) {
                   const inp = root.querySelector('input[type=text]');
-                  if (inp && inp.value !== 'Orbit Content Ops') {
+                  if (inp && inp.value !== 'History of Science Content Ops') {
                     setIN(inp, value);
                     return true;
                   }

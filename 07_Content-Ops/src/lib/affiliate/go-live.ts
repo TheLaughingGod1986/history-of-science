@@ -44,9 +44,9 @@ function redirectBaseLooksProduction(url: string | null): boolean {
     const u = new URL(url);
     return (
       u.protocol === "https:" &&
-      (u.hostname === "orbitwithben.com" ||
-        u.hostname === "www.orbitwithben.com" ||
-        u.hostname.endsWith(".orbitwithben.com"))
+      (u.hostname === "historyofscience.com" ||
+        u.hostname === "www.historyofscience.com" ||
+        u.hostname.endsWith(".historyofscience.com"))
     );
   } catch {
     return false;
@@ -94,7 +94,7 @@ export function evaluateAffiliateGoLive(input: GoLiveInput): GoLiveReport {
     detail: redirect
       ? redirectBaseLooksProduction(redirect)
         ? `Using ${redirect}`
-        : `Using ${redirect} — for public YouTube links prefer https://orbitwithben.com/go`
+        : `Using ${redirect} — for public YouTube links prefer https://historyofscience.com/go`
       : "Set APP_BASE_URL or AFFILIATE_REDIRECT_BASE_URL.",
     blocking: !redirect,
   });
@@ -192,10 +192,10 @@ export function evaluateAffiliateGoLive(input: GoLiveInput): GoLiveReport {
 
   checks.push({
     id: "dns_go",
-    label: "orbitwithben.com/go DNS or proxy",
+    label: "historyofscience.com/go DNS or proxy",
     status: redirectBaseLooksProduction(redirect) ? "pass" : "manual",
     detail:
-      "Manual: point https://orbitwithben.com/go to Content Ops (or set AFFILIATE_REDIRECT_BASE_URL to the live app /go).",
+      "Manual: point https://historyofscience.com/go to Content Ops (or set AFFILIATE_REDIRECT_BASE_URL to the live app /go).",
     blocking: false,
   });
 

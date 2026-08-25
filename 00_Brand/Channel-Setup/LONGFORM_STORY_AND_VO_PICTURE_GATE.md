@@ -1,4 +1,4 @@
-# Long-form story + VO–picture gate (Orbit with Ben)
+# Long-form story + VO–picture gate (History of Science)
 
 **Status:** Hard rule · Growth System v2 (2026-08-06) · applies to **every long after JWST (V004)**  
 **First target:** next new production after current ships  

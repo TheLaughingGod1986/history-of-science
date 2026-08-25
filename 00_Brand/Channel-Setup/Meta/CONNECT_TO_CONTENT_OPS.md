@@ -1,6 +1,6 @@
 # Connect Orbit Facebook + Instagram to Content Ops
 
-Brand: **Orbit with Ben** · YouTube pillar [@OrbitWithBen](https://www.youtube.com/@OrbitWithBen)
+Brand: **History of Science** · YouTube pillar [@HistoryOfScience](https://www.youtube.com/@HistoryOfScience)
 
 This wires Meta the same way TikTok is wired: Content Ops OAuth **and** the
 brand-level auto-post mirror for live YouTube Shorts.
@@ -9,14 +9,14 @@ brand-level auto-post mirror for live YouTube Shorts.
 
 | Piece | Requirement |
 |-------|-------------|
-| Facebook Page | Manageable Page named **Orbit with Ben** (or similar) |
+| Facebook Page | Manageable Page named **History of Science** (or similar) |
 | Instagram | **Professional** (Creator/Business) linked to that Page |
 | Meta app | Facebook Login + Instagram Graph / Content Publishing products |
 | Permissions | `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`, `instagram_basic`, `instagram_content_publish`, `business_management` |
 
 ## Content Ops OAuth
 
-1. In [Meta for Developers](https://developers.facebook.com/) create an app (or reuse Orbit Content Ops).
+1. In [Meta for Developers](https://developers.facebook.com/) create an app (or reuse History of Science Content Ops).
 2. Valid OAuth redirect:
 
 ```text
@@ -58,12 +58,12 @@ Set:
 
 ## Business portfolio
 
-Orbit’s Facebook Page must live in the **Orbit with Ben** Meta business
+Orbit’s Facebook Page must live in the **History of Science** Meta business
 portfolio (`business_id=1352434763139246`), not Benkay Creative.
 
 | Asset | ID |
 |-------|-----|
-| Business portfolio | `1352434763139246` (Orbit with Ben) |
+| Business portfolio | `1352434763139246` (History of Science) |
 | Suite Page asset | `1285932871266399` |
 | Facebook Page | `61592833318203` |
 
@@ -80,7 +80,7 @@ Until App Review unlocks content publishing for live users:
 bash 00_Brand/Channel-Setup/Meta/auto/start_meta_chrome.sh
 ```
 
-Log into Meta Business Suite under the **Orbit with Ben** portfolio as a Page
+Log into Meta Business Suite under the **History of Science** portfolio as a Page
 admin with Instagram linked. Cross-post both destinations in the Suite session
 when possible. If Share spins with greyed audience radios, you are not on the
 Orbit Page composer — see `PORTFOLIO.md` / `AUTO_POST.md`.
@@ -89,11 +89,11 @@ Orbit Page composer — see `PORTFOLIO.md` / `AUTO_POST.md`.
 
 | Field | Value |
 |-------|-------|
-| Display name | Orbit with Ben |
-| Preferred IG | @orbitwithben |
-| Preferred FB Page | Orbit with Ben |
+| Display name | History of Science |
+| Preferred IG | @historyofscience |
+| Preferred FB Page | History of Science |
 | Bio | Space stories. Big questions. Full films on YouTube ↓ |
-| Website | https://www.youtube.com/@OrbitWithBen |
+| Website | https://www.youtube.com/@HistoryOfScience |
 | Avatar | Same Orbit mascot as YouTube / TikTok |
 
 See `META_ACCOUNTS.json` and `AUTO_POST.md`.

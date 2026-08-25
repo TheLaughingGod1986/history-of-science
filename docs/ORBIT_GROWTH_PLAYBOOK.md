@@ -1,7 +1,7 @@
-# Orbit Growth Playbook
+# History of Science Growth Playbook
 
-**Channel:** Orbit With Ben  
-**Promise:** Calm, cinematic answers to humanity’s biggest space mysteries.  
+**Channel:** History of Science  
+**Promise:** Calm, cinematic stories of how we discovered what we know.  
 **If I subscribe:** I regularly get fascinating space mysteries explained cinematically.  
 **System:** Growth System v2 — `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`
 

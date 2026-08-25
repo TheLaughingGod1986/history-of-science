@@ -1,4 +1,4 @@
-# Release week checklist — Orbit with Ben
+# Release week checklist — History of Science
 
 Use once per pillar. Canonical strategy: `PUBLISHING_AND_SHORTS_STRATEGY.md`.
 
@@ -121,6 +121,6 @@ Timezone: **Europe/London**
 
 ## Soft CTA bank (copy/paste)
 
-- If you want the full story, it’s now available on Orbit With Ben.
+- If you want the full story, it’s now available on History of Science.
 - This is only one part of a much bigger mystery explored in our latest documentary.
 - The full story unfolds in our latest film — [LONG TITLE].

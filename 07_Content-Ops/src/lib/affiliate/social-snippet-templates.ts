@@ -24,7 +24,7 @@ export type SocialSnippetTemplateVars = {
 export const FIXTURE_DOOR_PLACEHOLDER_JWST = "[JWST YouTube URL]" as const;
 export const FIXTURE_DOOR_PLACEHOLDER_FILM = "[YouTube film URL]" as const;
 export const FIXTURE_DOOR_PLACEHOLDER_TELESCOPE_GO =
-  "https://orbitwithben.com/go/beginner-telescope" as const;
+  "https://historyofscience.com/go/beginner-telescope" as const;
 
 /**
  * First live captions — JWST Thursday film (pictures from space).

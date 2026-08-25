@@ -2,7 +2,7 @@ import { prisma } from "@/lib/storage/prisma";
 import { buildOrbitRedirectUrl } from "./urls";
 
 /**
- * Phase 5 prep — SEO-ready gear catalogue shape for orbitwithben.com/gear.
+ * Phase 5 prep — SEO-ready gear catalogue shape for historyofscience.com/gear.
  * Backend-ready now; does not build the public marketing site.
  */
 export type GearProductDto = {

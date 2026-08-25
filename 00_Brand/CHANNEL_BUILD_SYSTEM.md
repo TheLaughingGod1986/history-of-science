@@ -1,10 +1,10 @@
-# Orbit with Ben — Channel Build System
+# History of Science — Channel Build System
 
-Canonical creative-director playbook for the faceless animated science storytelling channel **Orbit with Ben**.
+Canonical creative-director playbook for the faceless animated science storytelling channel **History of Science**.
 
-Live channel: https://www.youtube.com/@OrbitWithBen · `UC_esArsDKd3GJvOkeO0DUog`
+Channel (create next): https://www.youtube.com/@HistoryOfScience — **do not use Orbit with Ben** `UC_esArsDKd3GJvOkeO0DUog`.
 
-**Feel:** Pixar meets space documentary.  
+**Feel:** Pixar meets documentary — the stories behind the science.  
 **Quality bar:** Kurzgesagt · PBS Space Time · Veritasium · Nat Geo docs · Pixar storytelling principles.
 
 ---
@@ -24,7 +24,7 @@ For every new video idea, deliver:
 7. Editing plan  
 8. SEO metadata  
 
-Always protect the Orbit brand. Goal: build a recognisable space storytelling universe — not just isolated videos.
+Always protect the History of Science channel brand and the Orbit mascot. Goal: a recognisable science-storytelling universe — not just isolated videos.
 
 ---
 
@@ -32,12 +32,12 @@ Always protect the Orbit brand. Goal: build a recognisable space storytelling un
 
 | | |
 |---|---|
-| Channel name | Orbit with Ben |
-| Handle | @OrbitWithBen |
+| Channel name | History of Science |
+| Handle | @HistoryOfScience |
 | Mascot | Orbit — small orange exploration robot |
-| Live banner line | Big questions. Bigger universe. |
-| Core philosophy | Big questions. Deep universe. |
-| Brand line | Space stories. Big questions. |
+| Live banner line | Discovery. Wonder. Proof. |
+| Core philosophy | Discovery. Wonder. Proof. |
+| Brand line | How we discovered what we know. |
 
 ### Orbit character
 
@@ -58,17 +58,17 @@ Wonder over certainty · Curiosity over clickbait · Science over speculation ·
 
 ## Audience
 
-**Primary:** 18–45 · space, astronomy, AI, future tech, physics, evolution, alien life, civilisation.  
+**Primary:** 18–45 · history of science, discovery, physics, astronomy, experiments, inventors, how knowledge is made.  
 **Secondary:** families / younger viewers of animated educational content.
 
 ---
 
 ## Content pillars
 
-1. **Cosmic Mysteries** — alone?, dark matter, black holes, beginning of the universe  
-2. **Future Humanity** — Mars, AI + space, 1,000-year humans, interstellar species  
-3. **Alien Civilisations** — Fermi, Great Filter, communication, advanced civs  
-4. **Space Stories** — dying stars, heat death, strange planets, extreme events  
+1. **How science is made** — experiments, proof, failed ideas, the scientific method in stories  
+2. **People and turning points** — the moments a true idea replaced a comfortable one  
+3. **Cosmic inheritance** — how we learned the universe: telescopes, gravity, origins  
+4. **Tools of discovery** — labs, equations, instruments, and the questions they unlocked  
 
 ---
 
@@ -151,7 +151,7 @@ Publish slots: `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.json`.
 8. Edit — brand intro + chapter cards + subscribe outro; SFX/music from script cues  
 9. **VO–picture QA gate** (watch once: no generic stretch under specific VO)  
 10. Package (titles · thumb ABC · description · tags · chapters · SEO)  
-11. Upload / schedule on `@OrbitWithBen` (long Thu 19:00 → Shorts cluster)  
+11. Upload / schedule on `@HistoryOfScience` (long Thu 19:00 → Shorts cluster)  
 12. Fill content flywheel (`CONTENT_FLYWHEEL_TEMPLATE.md`) · run `RELEASE_WEEK_CHECKLIST.md`  
 
 **Do not** lock VO or spend Veo/Ultra credits until step 1 is signed off.  

@@ -1,15 +1,19 @@
 {
-  "channel_name": "Orbit with Ben",
-  "handle": "@OrbitWithBen",
-  "channel_id": "UC_esArsDKd3GJvOkeO0DUog",
-  "public_url": "https://www.youtube.com/@OrbitWithBen",
-  "studio_url": "https://studio.youtube.com/channel/UC_esArsDKd3GJvOkeO0DUog",
+  "channel_name": "History of Science",
+  "handle": "@HistoryOfScience",
+  "channel_id": null,
+  "public_url": "https://www.youtube.com/@HistoryOfScience",
+  "studio_url": null,
   "google_account": "benoats86@gmail.com",
   "owner_name": "Ben Oates",
-  "created_at": "2026-07-27",
-  "tagline": "Space stories. Big questions.",
-  "banner_line": "Big questions. Bigger universe.",
-  "status": "ready_for_first_upload",
+  "created_at": null,
+  "tagline": "How we discovered what we know.",
+  "banner_line": "Discovery. Wonder. Proof.",
+  "status": "workspace_ready_channel_not_created",
   "opptiai_untouched": "UCXRVwrCxXpN_o9gvuHPKAPQ",
-  "notes": "Bare name 'Orbit' rejected by YouTube at create time. Brand Account under existing Google login — no new email required."
+  "do_not_publish_to": {
+    "orbit_with_ben_channel_id": "UC_esArsDKd3GJvOkeO0DUog",
+    "note": "This workspace was cloned from Orbit with Ben. Never upload or schedule to that channel from here."
+  },
+  "notes": "Create a new YouTube Brand Account named History of Science under the existing Google login, then fill channel_id and studio_url. Handle @HistoryOfScience is the intended claim — confirm availability at create time."
 }

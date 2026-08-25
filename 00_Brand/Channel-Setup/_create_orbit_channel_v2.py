@@ -23,7 +23,7 @@ HANDLES = [
     "OrbitStories",
     "MeetOrbit",
     "OrbitExplores",
-    "OrbitWithBen",
+    "HistoryOfScience",
     "OrbitCosmos",
     "OrbitSpaceStories",
 ]

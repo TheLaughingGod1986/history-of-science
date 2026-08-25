@@ -1,7 +1,7 @@
 # Orbit Multi-Platform Content Distribution — Audit & Plan
 
 **Date:** 2026-07-31  
-**Channel:** Orbit with Ben (`@OrbitWithBen`)  
+**Channel:** History of Science (`@HistoryOfScience`)  
 **Timezone:** Europe/London
 
 ---

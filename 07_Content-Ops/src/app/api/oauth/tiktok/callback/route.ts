@@ -47,9 +47,9 @@ export async function GET(req: NextRequest) {
   }
 
   // Fetch basic profile for display + Orbit profile URL
-  let accountName: string | null = "OrbitWithBen";
-  let accountUsername: string | null = "orbitwithben";
-  let profileUrl: string | null = "https://www.tiktok.com/@orbitwithben";
+  let accountName: string | null = "HistoryOfScience";
+  let accountUsername: string | null = "historyofscience";
+  let profileUrl: string | null = "https://www.tiktok.com/@historyofscience";
   try {
     const userRes = await fetch(
       "https://open.tiktokapis.com/v2/user/info/?fields=open_id,union_id,avatar_url,display_name,username",
@@ -65,7 +65,7 @@ export async function GET(req: NextRequest) {
       }
     }
   } catch {
-    // Keep Orbit defaults when user.info is unavailable
+    // Keep History of Science defaults when user.info is unavailable
   }
 
   await prisma.platformConnection.upsert({
@@ -103,18 +103,18 @@ export async function GET(req: NextRequest) {
     create: {
       platform: "tiktok",
       enabled: true,
-      accountDisplayName: accountName || "OrbitWithBen",
-      profileUrl: profileUrl || "https://www.tiktok.com/@orbitwithben",
-      defaultHashtags: JSON.stringify(["OrbitWithBen", "Space", "Astronomy"]),
-      defaultCallToAction: "Watch the full story on Orbit with Ben.",
+      accountDisplayName: accountName || "HistoryOfScience",
+      profileUrl: profileUrl || "https://www.tiktok.com/@historyofscience",
+      defaultHashtags: JSON.stringify(["HistoryOfScience", "Science", "History"]),
+      defaultCallToAction: "Watch the full story on History of Science.",
       publishingMethod: "api",
       connectionStatus: "connected",
       tokenStatus: "valid",
       defaultVisibility: "public",
     },
     update: {
-      accountDisplayName: accountName || "OrbitWithBen",
-      profileUrl: profileUrl || "https://www.tiktok.com/@orbitwithben",
+      accountDisplayName: accountName || "HistoryOfScience",
+      profileUrl: profileUrl || "https://www.tiktok.com/@historyofscience",
       publishingMethod: "api",
       connectionStatus: "connected",
       tokenStatus: "valid",

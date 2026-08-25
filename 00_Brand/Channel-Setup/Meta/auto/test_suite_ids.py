@@ -22,7 +22,7 @@ Distribution
 Additional options
 options are only available for posts to a Facebook Page.
 Your video is safe to publish! No copyright issues were found.
-Orbit with Ben
+History of Science
 Back
 Share
 """

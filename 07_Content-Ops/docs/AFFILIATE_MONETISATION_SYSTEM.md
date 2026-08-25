@@ -1,6 +1,6 @@
 # Affiliate Monetisation System
 
-Long-term monetisation platform for **Orbit With Ben**, integrated into Content Ops (`07_Content-Ops/`). Relevance before revenue — never recommend a product solely because it pays commission.
+Long-term monetisation platform for **History of Science**, integrated into Content Ops (`07_Content-Ops/`). Relevance before revenue — never recommend a product solely because it pays commission.
 
 Cursor agents: always-apply named-in-film gate — `.cursor/rules/orbit-affiliate-named-in-film.mdc`.
 
@@ -267,7 +267,7 @@ Migration: `20260815140000_affiliate_monetisation`
 ```bash
 AMAZON_ASSOCIATE_TAG=orbitgo-21
 BRILLIANT_AFFILIATE_ID=your-brilliant-id
-AFFILIATE_REDIRECT_BASE_URL=https://orbitwithben.com/go   # optional; defaults to ${APP_BASE_URL}/go
+AFFILIATE_REDIRECT_BASE_URL=https://historyofscience.com/go   # optional; defaults to ${APP_BASE_URL}/go
 ```
 
 **Never commit** `AMAZON_ASSOCIATE_TAG` (Ben’s live tag is `orbitgo-21` — set it only in the operator’s env / host secrets). `/go/{slug}` stamps `tag=` at redirect time from that env var.
@@ -431,7 +431,7 @@ Sample: `content/samples/csv/affiliate_amazon_sample.csv`
 
 ## Gear / public site (Phase 5 prep)
 
-`GET /api/affiliate/gear` returns SEO-ready category + product JSON (`goUrl`, tags, programme). Ready for orbitwithben.com/gear — no full public marketing site in this app.
+`GET /api/affiliate/gear` returns SEO-ready category + product JSON (`goUrl`, tags, programme). Ready for historyofscience.com/gear — no full public marketing site in this app.
 
 ## Commands
 
@@ -453,7 +453,7 @@ Open http://localhost:3000/affiliate
 - Specialist retailer programme contracts / tracking links
 - LEGO Affiliate access (programme seeded inactive; `space-lego` product inactive)
 - Confirm remaining Amazon ASINs (`astronomy-binoculars`, `mars-book`) then `npm run affiliate:apply-urls`
-- Production `AFFILIATE_REDIRECT_BASE_URL=https://orbitwithben.com/go` + DNS/hosting for redirects (or proxy to Content Ops)
+- Production `AFFILIATE_REDIRECT_BASE_URL=https://historyofscience.com/go` + DNS/hosting for redirects (or proxy to Content Ops)
 
 **Go-live helpers (in-repo):** see `docs/AFFILIATE_GO_LIVE.md`
 

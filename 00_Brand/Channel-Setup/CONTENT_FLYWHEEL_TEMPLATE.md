@@ -1,4 +1,4 @@
-# Content flywheel template — Orbit with Ben
+# Content flywheel template — History of Science
 
 Copy this file into each video project as:
 

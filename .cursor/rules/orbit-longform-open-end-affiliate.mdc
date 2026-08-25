@@ -23,7 +23,7 @@ Applies to every new long and every recut. Reference: Europa v02 · Last Star v1
 ## Affiliate
 
 - One named product, late, after the wonder line. VO + on-screen **4–6s** (not a shop card).
-- URL only in the long description: `https://orbit-content-ops.vercel.app/go/{slug}`.
+- URL only in the long description: `https://history-of-science-content-ops.vercel.app/go/{slug}`.
 - Shorts: **zero** `/go/` or shop URLs. Full-film CTA only.
 - Do not bolt a book on to unlock a link.
 - Do not name telescope / LEGO / Brilliant unless the film is about them and the door is live.

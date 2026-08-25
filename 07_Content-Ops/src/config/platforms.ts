@@ -1,5 +1,5 @@
-export const CHANNEL_NAME = "Orbit with Ben";
-export const CHANNEL_HANDLE = "@OrbitWithBen";
+export const CHANNEL_NAME = "History of Science";
+export const CHANNEL_HANDLE = "@HistoryOfScience";
 export const DEFAULT_TIMEZONE = "Europe/London";
 
 export type PlatformId =
