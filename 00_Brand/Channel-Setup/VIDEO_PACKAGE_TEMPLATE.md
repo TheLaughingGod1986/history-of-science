@@ -1,4 +1,4 @@
-# Video package template — Orbit with Ben
+# Video package template — History of Science
 
 Use this checklist for every long-form (and its Shorts + distribution cluster).
 
@@ -25,7 +25,7 @@ python3 04_Audio/tools/vidiq_title_score_sheet.py --project-dir 02_Video-Project
 
 ## 1. Title options (3–5) — lock from audit
 
-Formula: Question + Mystery + Emotion. Mobile-scannable. Include `| Orbit's Cosmic Journey`.
+Formula: Question + Mystery + Emotion. Mobile-scannable. Include `| History of Science`.
 
 - A:
 - B:
@@ -150,7 +150,7 @@ Copy `CONTENT_FLYWHEEL_TEMPLATE.md` → `11_Distribution/CONTENT_FLYWHEEL.md` an
 - [ ] Studio finish done: ABC Test & Compare · pin comment · end screen/cards  
 - [ ] Short #1 Related → this long · pin when long is public  
 - [ ] Soft CTAs only (no ad voice)  
-- [ ] Uploaded to `@OrbitWithBen` only  
+- [ ] Uploaded to `@HistoryOfScience` only  
 - [ ] `RELEASE_WEEK_CHECKLIST.md` ready for ship week  
 
 Audio/packaging CLIs: `04_Audio/tools/README.md`  

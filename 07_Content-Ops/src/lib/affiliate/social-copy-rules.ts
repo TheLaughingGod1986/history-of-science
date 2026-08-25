@@ -37,7 +37,7 @@ export const AFFILIATE_SOCIAL_HOUSE_RULES = {
    * Only allowed tracked destinations on social:
    * YouTube description pointer, youtube.com / youtu.be, or Orbit /go/ links.
    */
-  allowedLinkHosts: ["youtube.com", "www.youtube.com", "youtu.be", "m.youtube.com", "orbitwithben.com", "www.orbitwithben.com"] as const,
+  allowedLinkHosts: ["youtube.com", "www.youtube.com", "youtu.be", "m.youtube.com", "historyofscience.com", "www.historyofscience.com"] as const,
   allowedGoPathPrefix: "/go/",
   /** Disclose once, quietly, only where the platform requires it — never as the joke. */
   quietDisclosureOnly: true,
@@ -149,7 +149,7 @@ export function isAllowedSocialTrackedUrl(url: string): boolean {
     const parsed = new URL(trimmed);
     const host = parsed.hostname.toLowerCase();
     if (
-      (host === "orbitwithben.com" || host === "www.orbitwithben.com") &&
+      (host === "historyofscience.com" || host === "www.historyofscience.com") &&
       parsed.pathname.startsWith("/go/")
     ) {
       return true;
@@ -266,7 +266,7 @@ export function softMentionStyleForPlatform(platform: PlatformId): SoftMentionSt
 export function buildSoftAffiliateMentionLine(args: {
   platform: PlatformId;
   productLabel: string;
-  /** Orbit /go/{slug} or full https://orbitwithben.com/go/{slug} */
+  /** Orbit /go/{slug} or full https://historyofscience.com/go/{slug} */
   goUrl?: string | null;
   /** Prefer pointing at the YouTube description when a film URL exists. */
   youtubeUrl?: string | null;

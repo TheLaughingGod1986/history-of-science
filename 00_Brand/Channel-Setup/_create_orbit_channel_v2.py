@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create Orbit YouTube Brand Account — careful dialog targeting."""
+"""Create History of Science YouTube Brand Account — careful dialog targeting."""
 from __future__ import annotations
 
 import json
@@ -23,7 +23,7 @@ HANDLES = [
     "OrbitStories",
     "MeetOrbit",
     "OrbitExplores",
-    "OrbitWithBen",
+    "HistoryOfScience",
     "OrbitCosmos",
     "OrbitSpaceStories",
 ]

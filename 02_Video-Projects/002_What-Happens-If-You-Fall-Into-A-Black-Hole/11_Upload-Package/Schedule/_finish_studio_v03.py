@@ -19,7 +19,7 @@ ROOT = Path(
     "/Users/ben/code/Orbit-YouTube/02_Video-Projects/"
     "002_What-Happens-If-You-Fall-Into-A-Black-Hole"
 )
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 LONG_ID = "n7CbJrOCnU0"
 LONG_URL = f"https://youtu.be/{LONG_ID}"
 AUDIT = ROOT / "11_Upload-Package/Schedule/_studio_finish_v03"

@@ -9,11 +9,11 @@
 
 | | Title | Score | Keep? |
 |---|-------|------:|-------|
-| **A LOCK** | We're Looking for the Wrong Kind of Aliens \| Orbit's Cosmic Journey | **97** | **Yes** — strongest open loop |
-| **B** | Why Alien Contact Won't Look Like the Movies \| Orbit's Cosmic Journey | **96** | Excellent alt |
-| **C** | Why We're Probably Wrong About Aliens \| Orbit's Cosmic Journey | **94** | Original pitch |
-| — | What Alien Life Would Actually Look Like \| Orbit's Cosmic Journey | 92 | Solid |
-| — | If Orbit Met an Alien, He'd Walk Right Past It \| Orbit's Cosmic Journey | 91 | Great hook line for open / Short |
+| **A LOCK** | We're Looking for the Wrong Kind of Aliens \| History of Science | **97** | **Yes** — strongest open loop |
+| **B** | Why Alien Contact Won't Look Like the Movies \| History of Science | **96** | Excellent alt |
+| **C** | Why We're Probably Wrong About Aliens \| History of Science | **94** | Original pitch |
+| — | What Alien Life Would Actually Look Like \| History of Science | 92 | Solid |
+| — | If Orbit Met an Alien, He'd Walk Right Past It \| History of Science | 91 | Great hook line for open / Short |
 
 ## Keywords
 
@@ -25,5 +25,5 @@
 
 ## Decision
 
-**Locked (provisional):** We're Looking for the Wrong Kind of Aliens | Orbit's Cosmic Journey  
+**Locked (provisional):** We're Looking for the Wrong Kind of Aliens | History of Science  
 **Defer reason:** Distinct from V012 Great Filter, but still alien-pillar — wait for clear air after Fermi + exoplanets.

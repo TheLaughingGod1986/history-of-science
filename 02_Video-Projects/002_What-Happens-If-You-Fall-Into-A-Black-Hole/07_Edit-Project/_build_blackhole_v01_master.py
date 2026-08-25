@@ -50,7 +50,7 @@ ORBIT_WAVE_FALLBACK = (
 )
 
 BRAND_HOLD = 2.0
-# Start subscribe card while VO hits "This is Orbit with Ben…"
+# Start subscribe card while VO hits "This is History of Science…"
 OUTRO_START_S = 1166.0
 ENDSCREEN_HOLD = 8.0  # silent hold after VO for YouTube end-screen cards
 FPS = 24

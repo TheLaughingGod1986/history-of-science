@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Full Orbit with Ben vidIQ MCP pull (HTTP). Writes raw JSON for channel audit."""
+"""Full History of Science vidIQ MCP pull (HTTP). Writes raw JSON for channel audit."""
 from __future__ import annotations
 
 import json
@@ -16,7 +16,7 @@ TOKEN = os.environ.get("VIDIQ_MCP_TOKEN")
 if not TOKEN:
     raise SystemExit("Set VIDIQ_MCP_TOKEN (Bearer token from Cursor mcp.json vidIQ server)")
 BASE = "https://mcp.vidiq.com/mcp"
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 VIDEO_IDS = [
     "Mo93x0fxB1Q",  # V001 long
     "z-DLqoSoEBo",  # S01
@@ -243,12 +243,12 @@ def main():
 
     # Title scores
     titles = [
-        ("long", "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey", "Mo93x0fxB1Q"),
+        ("long", "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science", "Mo93x0fxB1Q"),
         ("short", "Where Is Everybody? The Fermi Paradox #Space #Shorts", "z-DLqoSoEBo"),
         ("short", "Where Is Everybody? The Fermi Paradox", None),
         ("short", "Why haven't we found aliens yet? The answer is terrifying", None),
-        ("long", "What Happens If You Fall Into a Black Hole? | Orbit's Cosmic Journey", None),
-        ("long", "Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey", None),
+        ("long", "What Happens If You Fall Into a Black Hole? | History of Science", None),
+        ("long", "Alien Worlds: The Strangest Planets We've Ever Found | History of Science", None),
         ("short", "Space Is Rude About Distance", "UWwNKYf_aU8"),
         ("short", "What If Aliens Are Watching Us?", "MO19iXYCu0c"),
         ("short", "What If the First Alien Clue Is Already Here?", "--CxhjNqtSY"),

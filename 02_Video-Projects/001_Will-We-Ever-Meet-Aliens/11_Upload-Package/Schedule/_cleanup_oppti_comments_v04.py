@@ -192,7 +192,7 @@ def main():
         result["still_needle"] = NEEDLE in body
 
         # Switch to Orbit and post ONE clean comment
-        result["as_orbit"] = switch_account(page, "Orbit with Ben")
+        result["as_orbit"] = switch_account(page, "History of Science")
         page.goto(
             f"https://www.youtube.com/watch?v={LONG_ID}",
             wait_until="domcontentloaded",
@@ -219,7 +219,7 @@ def main():
               for (const n of document.querySelectorAll(
                 'ytd-account-item-renderer, tp-yt-paper-item, yt-formatted-string'
               )) {
-                if (/Orbit with Ben/i.test(n.innerText||'')) { n.click(); return; }
+                if (/History of Science/i.test(n.innerText||'')) { n.click(); return; }
               }
             }"""
         )

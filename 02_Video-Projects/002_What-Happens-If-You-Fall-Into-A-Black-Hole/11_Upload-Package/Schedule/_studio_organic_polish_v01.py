@@ -21,7 +21,7 @@ AUDIT = PKG / "Schedule/_organic_polish"
 OUT = PKG / "Schedule/blackhole_organic_polish_result.json"
 
 LONG_ID = "n7CbJrOCnU0"
-LONG_TITLE = "What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey"
+LONG_TITLE = "What Happens If You Fall Into a Black Hole? History of Science"
 DESC = (PKG / "Descriptions/blackhole_long_description_v01.txt").read_text().strip()
 TAGS = (PKG / "Tags/blackhole_long_tags_v01.txt").read_text().strip()
 PINNED = (PKG / "Pinned-Comments/blackhole_long_pinned-comment_v01.txt").read_text().strip()

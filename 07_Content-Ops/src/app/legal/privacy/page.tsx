@@ -1,14 +1,14 @@
 export const metadata = {
-  title: "Privacy Policy — Orbit Content Ops",
+  title: "Privacy Policy — History of Science Content Ops",
 };
 
 export default function PrivacyPage() {
   return (
     <main style={{ maxWidth: 720, margin: "40px auto", padding: 24, fontFamily: "system-ui", lineHeight: 1.5 }}>
-      <h1>Orbit Content Ops — Privacy Policy</h1>
+      <h1>History of Science Content Ops — Privacy Policy</h1>
       <p>Last updated: 31 July 2026</p>
       <p>
-        Orbit Content Ops stores account connection tokens and publishing metadata needed to upload
+        History of Science Content Ops stores account connection tokens and publishing metadata needed to upload
         videos on behalf of the channel operator. It is not a public consumer product.
       </p>
       <p>
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
         For TikTok account data handled under Login Kit / Content Posting API, processing follows
         TikTok&apos;s developer terms and the operator&apos;s channel ownership.
       </p>
-      <p>Contact: the channel operator via the Orbit with Ben YouTube channel.</p>
+      <p>Contact: the channel operator via the History of Science YouTube channel.</p>
     </main>
   );
 }

@@ -3,7 +3,7 @@ description: VidIQ is mandatory source of truth for Orbit listings (longs + Shor
 alwaysApply: true
 ---
 
-# Orbit YouTube — VidIQ optimization path (mandatory)
+# History of Science YouTube — VidIQ optimization path (mandatory)
 
 **VidIQ is the source of truth** for packaging every Orbit upload: long-form **and** Shorts. Do not lock or ship a listing from gut feel alone.
 
@@ -29,7 +29,7 @@ alwaysApply: true
 
 | Surface | Target | Rules |
 |---------|--------|-------|
-| Title | ≥ **90**, prefer **95–98+** | Keep Orbit voice / `Orbit's Cosmic Journey` on longs. **Reject** fearbait/conspiracy even if score is higher |
+| Title | ≥ **90**, prefer **95–98+** | Keep Orbit voice / `History of Science` on longs. **Reject** fearbait/conspiracy even if score is higher |
 | Description | Primary keyword in **first ~100 chars** | Chapters on longs; Shorts: punch + soft funnel to long URL |
 | Tags | Fill toward **500** | VidIQ-backed terms only; drop weak generics (`fun facts`, `fall asleep fast`, etc.) |
 | Thumbnails | Score ≥ house baseline | Longs: Studio **Thumbnail only** or **Title and thumbnail** A/B/C (3 distinct variants). Shorts: no Studio ABC — optimize cover/title/tags via VidIQ scores |

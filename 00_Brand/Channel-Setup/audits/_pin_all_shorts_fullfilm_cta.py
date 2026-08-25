@@ -60,7 +60,7 @@ def load_targets() -> list[dict]:
                     "comment": (
                         f"Full film here → {long_title}\n"
                         f"{long_url}\n\n"
-                        "Orbit's Cosmic Journey 🚀"
+                        "History of Science 🚀"
                     ),
                     "long_url": long_url,
                 }
@@ -95,7 +95,7 @@ def ensure_orbit_studio(page) -> str | None:
           const nodes=[...document.querySelectorAll('*')];
           for (const n of nodes) {
             const t=(n.innerText||'');
-            if (t.includes('Orbit with Ben') && t.length<120) {
+            if (t.includes('History of Science') && t.length<120) {
               const r=n.getBoundingClientRect();
               if (r.width>40 && r.height>10 && r.height<100) { n.click(); return t.slice(0,80); }
             }
@@ -141,7 +141,7 @@ def post_and_pin_studio(page, video_id: str, comment: str) -> dict:
                 """() => {
                   for (const n of document.querySelectorAll('*')) {
                     const t=n.innerText||'';
-                    if (t.includes('Orbit with Ben') && t.length<100) {
+                    if (t.includes('History of Science') && t.length<100) {
                       const r=n.getBoundingClientRect();
                       if (r.width>50 && r.height>12) { n.click(); return; }
                     }

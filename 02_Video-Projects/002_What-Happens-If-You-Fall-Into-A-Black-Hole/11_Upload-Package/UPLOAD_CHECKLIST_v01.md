@@ -2,7 +2,7 @@
 
 **File to upload:** `09_Final-Export/blackhole_v04_UPLOAD_READY_MASTER.mp4`  
 **Duration:** ~19:50 (includes end-screen hold)  
-**Title (lock):** What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey
+**Title (lock):** What Happens If You Fall Into a Black Hole? History of Science
 
 ## Before you hit Publish
 

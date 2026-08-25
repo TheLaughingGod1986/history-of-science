@@ -19,11 +19,11 @@ Captions include `Full film on YouTube.` + `https://youtu.be/Mo93x0fxB1Q`.
 
 ### YouTube path for viewers
 - Bio: `Space stories. Big questions. Full films on YouTube ↓`
-- Profile link: `www.youtube.com/@OrbitWithBen`
+- Profile link: `www.youtube.com/@HistoryOfScience`
 - Each reel caption: full-film URL above
 
 ### Leftover
-- `/orbitwithben/p/Cq1MAN9I4pb/` — “DRAG IS NOT A CRIME” (Apr 2023). Delete UI returns **Couldn't delete post. Try again.** after mass cleanup (rate limit). Retry manually later from IG app/web.
+- `/historyofscience/p/Cq1MAN9I4pb/` — “DRAG IS NOT A CRIME” (Apr 2023). Delete UI returns **Couldn't delete post. Try again.** after mass cleanup (rate limit). Retry manually later from IG app/web.
 - Post count may stay inflated briefly while IG finishes purging deleted media.
 
 ## Scripts

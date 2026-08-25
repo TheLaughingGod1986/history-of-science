@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check Orbit Studio for V001; update metadata if present, else upload+schedule.
 
-Channel: Orbit with Ben (UC_esArsDKd3GJvOkeO0DUog)
+Channel: History of Science (TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL)
 Schedule: Thu 7 Aug 2026 19:00 UK
 """
 from __future__ import annotations
@@ -28,7 +28,7 @@ TITLE = (
 DESC = (PKG / "Descriptions/aliens_long_description_v01.txt").read_text().strip()
 TAGS = (PKG / "Tags/aliens_long_tags_v01.txt").read_text().strip()
 PINNED = (PKG / "Pinned-Comments/aliens_long_pinned-comment_v01.txt").read_text().strip()
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 OUT = PKG / "Schedule/aliens_v001_studio_update_result.json"
 AUDIT = PKG / "Schedule/_studio_audit_v001"
 SCHEDULE_TIME = "19:00"

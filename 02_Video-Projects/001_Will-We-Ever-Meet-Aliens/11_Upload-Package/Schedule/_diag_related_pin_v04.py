@@ -14,7 +14,7 @@ PKG = Path(
 )
 AUDIT = PKG / "Schedule/_studio_audit_shorts_v001"
 OUT = PKG / "Schedule/aliens_related_pin_v04.json"
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 LONG_ID = "Mo93x0fxB1Q"
 SHORT_ID = "z-DLqoSoEBo"
 NEEDLE = "best explains the silence"

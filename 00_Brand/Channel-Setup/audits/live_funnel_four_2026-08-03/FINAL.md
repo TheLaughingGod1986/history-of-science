@@ -18,23 +18,23 @@ Full film: https://youtu.be/Mo93x0fxB1Q
   Full film here → Why Haven't We Found Aliens Yet? The Fermi Paradox Explained
   https://youtu.be/Mo93x0fxB1Q
 
-  Orbit's Cosmic Journey 🚀
+  History of Science 🚀
   ```
 - Index updated: `visibility=public`, `published_now=true`, `pinned_fullfilm_cta=true`.
 
 ### 2) TikTok bio link
-- Profile `@orbitwithben` bio now includes `youtube.com/@OrbitWithBen`
-- Confirmed: `Space stories. Big questions. Films → youtube.com/@OrbitWithBen`
+- Profile `@historyofscience` bio now includes `youtube.com/@HistoryOfScience`
+- Confirmed: `Space stories. Big questions. Films → youtube.com/@HistoryOfScience`
 
 ### 3) Meta Business Suite reels (CDP :9223)
-- Session already logged in as `@orbitwithben` (Benkay portfolio asset `1251385088056874` used for composer; Graph user token is **expired**).
+- Session already logged in as `@historyofscience` (Benkay portfolio asset `1251385088056874` used for composer; Graph user token is **expired**).
 - Reels published — Suite Home shows 3+ Instagram reels dated **3 Aug 2026** (~03:09–03:13).
 - IG Reels tab shows new Orbit space thumbnails (0 views at capture).
 - **Caveat:** captions show “This post contains no text” (soft CTA did not stick in React textarea). Videos are live; edit captions in Suite/IG to add `Full film on YouTube.` if needed.
 - Suite Next/Share are **DIV** controls — mouse click required (updated `Meta/auto/studio_upload.py`).
 
 ### 4) Threads video posts
-- All three live on https://www.threads.com/@orbitwithben (Media tab) with soft CTA `Full film on YouTube.`
+- All three live on https://www.threads.com/@historyofscience (Media tab) with soft CTA `Full film on YouTube.`
 - Posted ~minutes apart during v08 run.
 
 ## Ops notes

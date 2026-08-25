@@ -1,7 +1,7 @@
-# Orbit with Ben — Full Channel Audit (PM refresh)
+# History of Science — Full Channel Audit (PM refresh)
 
 **Date:** 2026-08-01 · ~12:05 Europe/London  
-**Channel:** Orbit with Ben (`@OrbitWithBen` · `UC_esArsDKd3GJvOkeO0DUog`)  
+**Channel:** History of Science (`@HistoryOfScience` · `TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL`)  
 **Data:** vidIQ MCP (live HTTP) + YouTube Studio (persistent Chrome profile)  
 **Raw pull:** `CHANNEL_AUDIT_2026-08-01_pm/vidiq_raw.json`  
 **Studio inventory:** `CHANNEL_AUDIT_2026-08-01_pm/studio_*_clean_parsed.json`  
@@ -26,7 +26,7 @@ Channel is **~5 days old** (created 27 Jul). **Shorts remain the only growth eng
 ## 1. Performance (vidIQ)
 
 ### Channel
-- Created: 2026-07-27 · Country **GB** · `@OrbitWithBen`
+- Created: 2026-07-27 · Country **GB** · `@HistoryOfScience`
 - Public catalogue: **1 long + 1 Short** (rest Scheduled / Draft)
 - Analytics still tiny: traffic almost all `NO_LINK_OTHER`; Shorts-only split in Analytics reports
 - Demographics / geography / audience-overlap / best-time windows: **still empty**
@@ -45,12 +45,12 @@ Channel is **~5 days old** (created 27 Jul). **Shorts remain the only growth eng
 
 | Title | Format | Score | Decision |
 |-------|--------|------:|----------|
-| Why Haven't We Found Aliens Yet? … \| Orbit's Cosmic Journey | long | **97** | Keep |
+| Why Haven't We Found Aliens Yet? … \| History of Science | long | **97** | Keep |
 | Where Is Everybody? The Fermi Paradox #Space #Shorts | short | **94** | **Locked live** (tags help vs 88 bare) |
 | Where Is Everybody? The Fermi Paradox | short | **88** | Bare form — keep hashtags on live |
 | Why haven't we found aliens yet? The answer is terrifying | short | **97** | **Rejected** — fearbait |
 | What Happens If You Fall Into a Black Hole? (\|/no \|) Orbit's… | long | **98** | V002 — keep (pipe optional for score) |
-| Alien Worlds: The Strangest Planets… \| Orbit's Cosmic Journey | long | **97** | V003 keep |
+| Alien Worlds: The Strangest Planets… \| History of Science | long | **97** | V003 keep |
 | Space Is Rude About Distance | short | **91** | S02 OK |
 | What If Aliens Are Watching Us? | short | **89** | S03 OK |
 | What If the First Alien Clue Is Already Here? | short | **97** | S04 strong |
@@ -80,8 +80,8 @@ Channel is **~5 days old** (created 27 Jul). **Shorts remain the only growth eng
 | ID | Title | State | When |
 |----|-------|-------|------|
 | `Mo93x0fxB1Q` | Why Haven't We Found Aliens Yet? … | **Public** | 30 Jul · **5** views |
-| `n7CbJrOCnU0` | What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey | **Scheduled** | **Thu 6 Aug 2026 · 19:00 UK** |
-| `b8-X_FyJnHM` | Alien Worlds: The Strangest Planets We've Ever Found \| Orbit's Cosmic Journey | **Scheduled** | **Thu 21 Aug 2026 · 19:00 UK** |
+| `n7CbJrOCnU0` | What Happens If You Fall Into a Black Hole? History of Science | **Scheduled** | **Thu 6 Aug 2026 · 19:00 UK** |
+| `b8-X_FyJnHM` | Alien Worlds: The Strangest Planets We've Ever Found \| History of Science | **Scheduled** | **Thu 21 Aug 2026 · 19:00 UK** |
 
 ### Shorts (Scheduled / Public)
 

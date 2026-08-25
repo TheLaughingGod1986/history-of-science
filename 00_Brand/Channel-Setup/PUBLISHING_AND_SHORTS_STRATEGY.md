@@ -1,6 +1,6 @@
-# Orbit with Ben — Publishing & Shorts Strategy
+# History of Science — Publishing & Shorts Strategy
 
-**Channel:** Orbit with Ben (`@OrbitWithBen`)  
+**Channel:** History of Science (`@HistoryOfScience`)  
 **Timezone:** `Europe/London`  
 **Updated:** 2026-08-06  
 **Status:** Canonical — one long/week · launch Short @21:00 · **3–5** supporting Shorts · reserves held  

@@ -12,7 +12,7 @@ For each short in SHORTS_UPLOAD_INDEX:
   3) Schedule to the same UK slot (or publish-now if the slot has passed)
   4) Update the index with the new video_id
 
-Channel: Orbit with Ben (UC_esArsDKd3GJvOkeO0DUog)
+Channel: History of Science (TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL)
 """
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ from zoneinfo import ZoneInfo
 from playwright.sync_api import sync_playwright
 
 PROFILE = "/Users/ben/code/youtube/.playwright-youtube-profile"
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 LONDON = ZoneInfo("Europe/London")
 ROOTS = [
     Path("/Users/ben/code/Orbit-YouTube/02_Video-Projects/001_Will-We-Ever-Meet-Aliens"),

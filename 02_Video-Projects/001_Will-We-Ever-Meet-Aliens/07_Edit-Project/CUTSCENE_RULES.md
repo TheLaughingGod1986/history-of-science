@@ -1,4 +1,4 @@
-# Cutscene rules — Orbit YouTube (hard production rules)
+# Cutscene rules — History of Science YouTube (hard production rules)
 
 ## Never reuse a cutscene in one video
 - Every B-roll / card / fill plate filename appears **at most once** in a single episode edit.

@@ -3,7 +3,7 @@ import { getGearCatalog } from "@/lib/affiliate/gear";
 
 export const dynamic = "force-dynamic";
 
-/** Phase 5 prep — public-ready gear catalogue JSON for orbitwithben.com/gear */
+/** Phase 5 prep — public-ready gear catalogue JSON for historyofscience.com/gear */
 export async function GET(request: NextRequest) {
   const sp = request.nextUrl.searchParams;
   const catalog = await getGearCatalog({

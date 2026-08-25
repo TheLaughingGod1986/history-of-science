@@ -16,7 +16,7 @@ OUT = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AUDIT = OUT / "audit"
 DESC = (
     "Orbit Content Ops schedules and publishes short-form space storytelling videos "
-    "from the Orbit with Ben channel (@OrbitWithBen) to TikTok. Used privately by "
+    "from the History of Science channel (@HistoryOfScience) to TikTok. Used privately by "
     "the channel operator for draft upload and publishing of original educational content."
 )
 

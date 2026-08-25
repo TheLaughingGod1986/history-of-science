@@ -3,7 +3,7 @@
 **Voice name:** Ben Orbit Narrator  
 **Voice ID:** `kDch6ACCIpqgQ0NsU9kk`  
 **Source:** Instant Voice Clone of Ben’s own voice  
-**Project:** Orbit YouTube / 001 Will We Ever Meet Aliens  
+**Project:** History of Science YouTube / 001 Will We Ever Meet Aliens  
 **Active profile:** **Documentary v02** (2026-07-27)  
 **Status:** Tuned for space-mystery narration · full master still blocked on character quota
 

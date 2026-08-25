@@ -14,16 +14,16 @@ PROFILE = "/Users/ben/code/youtube/.playwright-tiktok-mobile-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AVATAR = SETUP / "avatar_800x800.png"
 BIO = (SETUP / "bio.txt").read_text().strip()
-WEBSITE = "https://www.youtube.com/@OrbitWithBen"
-DISPLAY = "Orbit with Ben"
+WEBSITE = "https://www.youtube.com/@HistoryOfScience"
+DISPLAY = "History of Science"
 AUDIT = SETUP / "audit"
 RESULT = SETUP / "CREATE_RESULT.json"
 META = SETUP / "TIKTOK_META.json"
 GOOGLE_PROFILE = "/Users/ben/code/youtube/.playwright-youtube-profile"
 
 HANDLES = [
-    "OrbitWithBen",
-    "OrbitWithBenYT",
+    "HistoryOfScience",
+    "HistoryOfScienceYT",
     "MeetOrbit",
     "OrbitExplores",
     "HelloOrbit",
@@ -252,7 +252,7 @@ def main() -> None:
             result["status"] = "app_wall_mobile_too"
             result["notes"] = (
                 "TikTok requires the mobile app to finish signup. "
-                "Scan the QR on phone, create @OrbitWithBen, then re-run branding."
+                "Scan the QR on phone, create @HistoryOfScience, then re-run branding."
             )
             save(result)
             print(json.dumps(result, indent=2))
@@ -353,7 +353,7 @@ def main() -> None:
             result["status"] = "incomplete"
             result["notes"] = (
                 "Could not finish on mobile web. Use phone: install TikTok → "
-                "sign up with Google (benoats86@gmail.com) → username OrbitWithBen → "
+                "sign up with Google (benoats86@gmail.com) → username HistoryOfScience → "
                 "upload avatar from Channel-Setup/TikTok/avatar_800x800.png → paste bio.txt"
             )
         else:

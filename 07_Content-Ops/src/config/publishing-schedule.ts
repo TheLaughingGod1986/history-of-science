@@ -7,7 +7,7 @@ import { PlatformId } from "./platforms";
  */
 export const PUBLISHING_SCHEDULE = {
   timezone: "Europe/London",
-  channelName: "Orbit with Ben",
+  channelName: "History of Science",
   longForm: {
     day: "Thursday" as const,
     time: "19:00",

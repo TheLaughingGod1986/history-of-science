@@ -1,6 +1,6 @@
 # Ranking / SEO — Video 001 (metadata pass 2026-07-30)
 
-**Title lock (97):** Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey  
+**Title lock (97):** Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science  
 **Previous (kept as B):** Will We Ever Meet Aliens? The Answer May Already Be Here (97 CTR · weak search head term)
 
 ## Why we changed the title

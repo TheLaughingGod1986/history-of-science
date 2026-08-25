@@ -12,7 +12,7 @@ PROFILE = "/Users/ben/code/youtube/.playwright-youtube-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup")
 BANNER = SETUP / "banner_2560x1440.png"
 AUDIT = SETUP / "audit"
-CID = "UC_esArsDKd3GJvOkeO0DUog"
+CID = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 RESULT = SETUP / "BANNER_DEEP_PUBLISH.json"
 
 
@@ -68,7 +68,7 @@ def main() -> None:
                 try:
                     page.locator("#avatar-btn, button#avatar-btn, img#img").first.click(timeout=3000)
                     page.wait_for_timeout(1000)
-                    page.get_by_text("Orbit with Ben", exact=False).first.click(timeout=5000)
+                    page.get_by_text("History of Science", exact=False).first.click(timeout=5000)
                     page.wait_for_timeout(4000)
                     page.goto(
                         f"https://studio.youtube.com/channel/{CID}/editing/profile",
@@ -124,7 +124,7 @@ def main() -> None:
             shot(page, "05_after_publish")
 
             # Verify public channel banner
-            page.goto("https://www.youtube.com/@OrbitWithBen", wait_until="domcontentloaded", timeout=90000)
+            page.goto("https://www.youtube.com/@HistoryOfScience", wait_until="domcontentloaded", timeout=90000)
             page.wait_for_timeout(4000)
             dismiss(page)
             shot(page, "06_public")

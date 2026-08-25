@@ -2,15 +2,15 @@
 
 **Date:** 2026-08-02  
 **Gate:** ≥90 — **provisional lock A at 96**  
-**Brand suffix:** Orbit's Cosmic Journey
+**Brand suffix:** History of Science
 
 ## Score ABC
 
 | | Title | vidIQ score | Keep? |
 |---|-------|------------:|-------|
-| **A LOCK** | The 7 Strangest Things We've Accidentally Left in Space \| Orbit's Cosmic Journey | **96** | **Yes** — listicle journey + curiosity |
-| **B** | A Spatula, a Roadster, and a Golden Record — What We Left in Space \| Orbit's Cosmic Journey | **94** | Strong specificity; great thumb copy |
-| **C** | Things Humans Accidentally Left in Space \| Orbit's Cosmic Journey | **89** | Below gate; Soft/desc only |
+| **A LOCK** | The 7 Strangest Things We've Accidentally Left in Space \| History of Science | **96** | **Yes** — listicle journey + curiosity |
+| **B** | A Spatula, a Roadster, and a Golden Record — What We Left in Space \| History of Science | **94** | Strong specificity; great thumb copy |
+| **C** | Things Humans Accidentally Left in Space \| History of Science | **89** | Below gate; Soft/desc only |
 
 ## Keyword stack (vidIQ · 2026-08-02)
 
@@ -24,7 +24,7 @@
 
 ## Decision
 
-**Locked title (provisional):** The 7 Strangest Things We've Accidentally Left in Space | Orbit's Cosmic Journey  
+**Locked title (provisional):** The 7 Strangest Things We've Accidentally Left in Space | History of Science  
 **vidIQ score:** 96  
 **Why it wins:** Clear numbered journey; pairs with Voyager search demand in the ending.  
 **SEO note:** Ending object (Golden Record) carries the real search volume — plant it in desc + one Short.

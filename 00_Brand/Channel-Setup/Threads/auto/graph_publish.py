@@ -137,7 +137,7 @@ def publish_video(
         }
 
     media_id = str(pub_body["id"])
-    username = creds.get("threads_username") or creds.get("username") or "orbitwithben"
+    username = creds.get("threads_username") or creds.get("username") or "historyofscience"
     return {
         "status": "ok",
         "method": "graph",

@@ -22,10 +22,10 @@ AUDIT.mkdir(parents=True, exist_ok=True)
 FULL_URL = "https://youtu.be/Mo93x0fxB1Q"
 LONG_TITLE = "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained"
 COMMENT = (
-    f"Full film here → {LONG_TITLE}\n{FULL_URL}\n\nOrbit's Cosmic Journey 🚀"
+    f"Full film here → {LONG_TITLE}\n{FULL_URL}\n\nHistory of Science 🚀"
 )
 SOFT = "Full film on YouTube."
-TT_BIO = "Space stories. Big questions. Films → youtube.com/@OrbitWithBen"
+TT_BIO = "Space stories. Big questions. Films → youtube.com/@HistoryOfScience"
 
 TARGETS = [
     {
@@ -357,7 +357,7 @@ def pin_fullfilm(page, video_id: str, tag: str) -> dict:
 def fix_tiktok_bio(page) -> dict:
     out: dict = {"ok": False}
     page.goto(
-        "https://www.tiktok.com/@orbitwithben",
+        "https://www.tiktok.com/@historyofscience",
         wait_until="domcontentloaded",
         timeout=120000,
     )
@@ -433,14 +433,14 @@ def fix_tiktok_bio(page) -> dict:
         page.wait_for_timeout(500)
 
     page.goto(
-        "https://www.tiktok.com/@orbitwithben",
+        "https://www.tiktok.com/@historyofscience",
         wait_until="domcontentloaded",
         timeout=120000,
     )
     page.wait_for_timeout(3500)
     body = page.inner_text("body")
     out["after"] = body[:900]
-    out["has_at"] = "youtube.com/@OrbitWithBen" in body
+    out["has_at"] = "youtube.com/@HistoryOfScience" in body
     out["ok"] = out["has_at"]
     page.screenshot(path=str(AUDIT / "tt_final_v05.png"))
     return out

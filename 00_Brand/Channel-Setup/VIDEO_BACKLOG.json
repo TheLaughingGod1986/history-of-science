@@ -1,6 +1,6 @@
 {
-  "channel": "Orbit with Ben",
-  "handle": "@OrbitWithBen",
+  "channel": "History of Science",
+  "handle": "@HistoryOfScience",
   "cadence": {
     "long_form_per_week": 1,
     "long_form_per_month": 4,
@@ -42,7 +42,7 @@
       "id": "001",
       "working_title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
       "alt_title": "Will We Ever Meet Aliens? The Answer May Already Be Here",
-      "brand_suffix": "Orbit's Cosmic Journey",
+      "brand_suffix": "History of Science",
       "title_score": 97,
       "pillar": "Alien Civilisations",
       "status": "published",
@@ -60,7 +60,7 @@
     },
     {
       "id": "002",
-      "working_title": "What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey",
+      "working_title": "What Happens If You Fall Into a Black Hole? History of Science",
       "alt_titles": [
         "Black Holes Explained: What Would Happen If Orbit Fell Into One?",
         "What If Orbit Fell Into A Black Hole? (Spaghettification Explained)"
@@ -89,7 +89,7 @@
       "id": "003",
       "working_title": "Alien Worlds: The Strangest Planets We've Ever Found",
       "alt_title": "The Most Bizarre Exoplanets We've Ever Discovered",
-      "brand_suffix": "Orbit's Cosmic Journey",
+      "brand_suffix": "History of Science",
       "title_score": 97,
       "pillar": "Alien Civilisations",
       "status": "in_production",
@@ -117,7 +117,7 @@
     {
       "id": "004",
       "working_title": "What the James Webb Telescope Discovered That Changes Everything",
-      "brand_suffix": "Orbit's Cosmic Journey",
+      "brand_suffix": "History of Science",
       "pillar": "Cosmic Mysteries",
       "status": "in_production",
       "angle": "Orbit as curious learner — galaxies too old, black holes too big; wonder not clickbait",
@@ -128,7 +128,7 @@
       "next_step": "CG gen hero-first via Omni (queue jwst_generation_queue_v01.md) → VO-locked edit with chapter cards",
       "vo_duration_min": 16.4,
       "vo_master": "02_Voiceover/05_Master/jwst_voiceover_v01_ivc_kDch_master.wav",
-      "title_lock": "What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey",
+      "title_lock": "What the James Webb Telescope Discovered That Changes Everything | History of Science",
       "primary_keywords": [
         "james webb telescope",
         "james webb telescope discoveries",
@@ -201,11 +201,11 @@
     {
       "id": "013",
       "working_title": "Why the Moon Is Slowly Leaving Us — and What Happens When It's Gone",
-      "brand_suffix": "Orbit's Cosmic Journey",
+      "brand_suffix": "History of Science",
       "title_score": 99,
       "alt_titles": [
-        "The Moon Is Leaving Earth — Here's What Happens Next | Orbit's Cosmic Journey",
-        "We Live in the Last Perfect Eclipse Window | Orbit's Cosmic Journey"
+        "The Moon Is Leaving Earth — Here's What Happens Next | History of Science",
+        "We Live in the Last Perfect Eclipse Window | History of Science"
       ],
       "pillar": "Cosmic Mysteries",
       "status": "backlog",
@@ -267,11 +267,11 @@
     {
       "id": "014",
       "working_title": "Every Planet Has a Sound — and What They Recorded Is Stranger Than Anyone Expected",
-      "brand_suffix": "Orbit's Cosmic Journey",
+      "brand_suffix": "History of Science",
       "title_score": 98,
       "alt_titles": [
-        "Orbit Tunes Into the Planets — What They Sound Like Will Surprise You | Orbit's Cosmic Journey",
-        "What Do the Planets Sound Like? NASA Recorded Their Voices | Orbit's Cosmic Journey"
+        "Orbit Tunes Into the Planets — What They Sound Like Will Surprise You | History of Science",
+        "What Do the Planets Sound Like? NASA Recorded Their Voices | History of Science"
       ],
       "pillar": "Space Stories",
       "status": "backlog",
@@ -339,11 +339,11 @@
     {
       "id": "019",
       "working_title": "The 7 Strangest Things We've Accidentally Left in Space",
-      "brand_suffix": "Orbit's Cosmic Journey",
+      "brand_suffix": "History of Science",
       "title_score": 96,
       "alt_titles": [
-        "A Spatula, a Roadster, and a Golden Record — What We Left in Space | Orbit's Cosmic Journey",
-        "Things Humans Accidentally Left in Space | Orbit's Cosmic Journey"
+        "A Spatula, a Roadster, and a Golden Record — What We Left in Space | History of Science",
+        "Things Humans Accidentally Left in Space | History of Science"
       ],
       "pillar": "Space Stories",
       "status": "backlog",
@@ -399,11 +399,11 @@
     {
       "id": "016",
       "working_title": "How Far Is the Nearest Star? Orbit Tries to Walk There",
-      "brand_suffix": "Orbit's Cosmic Journey",
+      "brand_suffix": "History of Science",
       "title_score": 94,
       "alt_titles": [
-        "Orbit Walks to the Nearest Star — Here's How Long It Takes | Orbit's Cosmic Journey",
-        "What's Between Us and the Nearest Star? Orbit Walks There | Orbit's Cosmic Journey"
+        "Orbit Walks to the Nearest Star — Here's How Long It Takes | History of Science",
+        "What's Between Us and the Nearest Star? Orbit Walks There | History of Science"
       ],
       "pillar": "Cosmic Mysteries",
       "status": "backlog",
@@ -462,11 +462,11 @@
     {
       "id": "017",
       "working_title": "Why Even a Robot Can't Survive Mars Without Help",
-      "brand_suffix": "Orbit's Cosmic Journey",
+      "brand_suffix": "History of Science",
       "title_score": 96,
       "alt_titles": [
-        "Can We Actually Live on Mars? Orbit Investigates | Orbit's Cosmic Journey",
-        "Can We Terraform Mars? A Step-by-Step Reality Check | Orbit's Cosmic Journey"
+        "Can We Actually Live on Mars? Orbit Investigates | History of Science",
+        "Can We Terraform Mars? A Step-by-Step Reality Check | History of Science"
       ],
       "pillar": "Future Humanity",
       "status": "backlog",
@@ -526,11 +526,11 @@
     {
       "id": "018",
       "working_title": "We're Looking for the Wrong Kind of Aliens",
-      "brand_suffix": "Orbit's Cosmic Journey",
+      "brand_suffix": "History of Science",
       "title_score": 97,
       "alt_titles": [
-        "Why Alien Contact Won't Look Like the Movies | Orbit's Cosmic Journey",
-        "Why We're Probably Wrong About Aliens | Orbit's Cosmic Journey"
+        "Why Alien Contact Won't Look Like the Movies | History of Science",
+        "Why We're Probably Wrong About Aliens | History of Science"
       ],
       "pillar": "Alien Civilisations",
       "status": "backlog",

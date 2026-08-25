@@ -1,7 +1,7 @@
 # Shorts Cluster — Video 002 Black Hole
 
-**Long-form:** What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
-**Channel:** Orbit with Ben · @OrbitWithBen  
+**Long-form:** What Happens If You Fall Into a Black Hole? History of Science  
+**Channel:** History of Science · @HistoryOfScience  
 **Cluster:** 6 Shorts · ~40–43s each · **pillar first**  
 **Strategy:** `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`
 

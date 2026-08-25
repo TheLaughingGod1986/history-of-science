@@ -1,12 +1,12 @@
-# Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey — Script MASTER v01
+# Alien Worlds: The Strangest Planets We've Ever Found | History of Science — Script MASTER v01
 
-**Channel:** Orbit with Ben  
+**Channel:** History of Science  
 **Video:** 003 — Alien Worlds / Strangest Planets  
-**SEO title (97/100):** Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey  
+**SEO title (97/100):** Alien Worlds: The Strangest Planets We've Ever Found | History of Science  
 **Alt titles (ABC):**  
-- A: Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey  
-- B: We Found Planets Made of Diamond. Here's What They're Like | Orbit's Cosmic Journey *(Short/thumb)*  
-- C: The Most Bizarre Exoplanets We've Ever Discovered | Orbit's Cosmic Journey  
+- A: Alien Worlds: The Strangest Planets We've Ever Found | History of Science  
+- B: We Found Planets Made of Diamond. Here's What They're Like | History of Science *(Short/thumb)*  
+- C: The Most Bizarre Exoplanets We've Ever Discovered | History of Science  
 **Pillar:** Alien Civilisations  
 **Angle:** Orbit **travelogue** — visits concrete exoplanets; science on the world, emotion on Orbit  
 **Primary keywords:** alien worlds · strangest planets in the universe · exoplanets · exoplanets explained  
@@ -70,7 +70,7 @@
 If alien worlds are real… what are they actually like? Diamond crusts? Glass rain? Three suns in the sky?
 
 [ORBIT: determined hover; antenna brightens]  
-[TITLE: Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey]  
+[TITLE: Alien Worlds: The Strangest Planets We've Ever Found | History of Science]  
 [MUSIC: soft brand sting ~2s, then bed resumes]
 
 Today, Orbit is going on a tour.
@@ -463,11 +463,11 @@ Orbit did not conquer them. He visited them the only way we can today: with evid
 
 [ORBIT: soft wave]
 
-This is Orbit with Ben. If this cosmic journey made alien worlds feel a little closer — and a little weirder in the best way — stay curious… and subscribe for more journeys every week.
+This is History of Science. If this cosmic journey made alien worlds feel a little closer — and a little weirder in the best way — stay curious… and subscribe for more journeys every week.
 
 There are more addresses in the dark. Some glitter. Some howl. Some might, one day, hold a puddle with a secret.
 
-[END CARD: Orbit with Ben · subscribe / like]  
+[END CARD: History of Science · subscribe / like]  
 [ORBIT: final tiny wave, then exit frame]
 
 ---
@@ -486,7 +486,7 @@ There are more addresses in the dark. Some glitter. Some howl. Some might, one d
 | 14:00 | Eyeball planets | alien planet |
 | 16:15 | Could any host life? | habitable zone |
 | 18:00 | What the catalogue teaches | space facts |
-| 19:15 | Closing — more cosmic journeys | Orbit's Cosmic Journey |
+| 19:15 | Closing — more cosmic journeys | History of Science |
 
 *(Fine-tune timestamps after VO lock.)*
 

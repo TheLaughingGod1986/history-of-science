@@ -13,8 +13,8 @@ PROFILE = "/Users/ben/code/youtube/.playwright-youtube-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AVATAR = SETUP / "avatar_800x800.png"
 BIO = (SETUP / "bio.txt").read_text().strip()
-WEBSITE = "https://www.youtube.com/@OrbitWithBen"
-DISPLAY = "Orbit with Ben"
+WEBSITE = "https://www.youtube.com/@HistoryOfScience"
+DISPLAY = "History of Science"
 AUDIT = SETUP / "audit"
 RESULT = SETUP / "BRAND_RESULT.json"
 META = SETUP / "TIKTOK_META.json"
@@ -255,14 +255,14 @@ def apply_brand(page) -> dict:
         if u.count() and u.first.is_visible():
             cur = u.first.input_value()
             out["username"] = cur
-            if cur.lower() != "orbitwithben":
-                u.first.fill("OrbitWithBen")
+            if cur.lower() != "historyofscience":
+                u.first.fill("HistoryOfScience")
                 page.wait_for_timeout(2000)
                 if re.search(r"already taken|not available", body(page), re.I):
-                    print("OrbitWithBen taken — keeping", cur)
+                    print("HistoryOfScience taken — keeping", cur)
                     u.first.fill(cur)
                 else:
-                    out["username"] = "OrbitWithBen"
+                    out["username"] = "HistoryOfScience"
     except Exception as e:
         print("user", e)
 

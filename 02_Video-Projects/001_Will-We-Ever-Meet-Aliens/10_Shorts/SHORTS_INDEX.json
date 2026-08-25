@@ -1,7 +1,7 @@
 {
   "cluster": "001_aliens_fermi_funnel",
   "long_form": "001_Will-We-Ever-Meet-Aliens",
-  "channel": "@OrbitWithBen",
+  "channel": "@HistoryOfScience",
   "strategy": "pillar_first",
   "long_publish": {
     "day": "Thursday",

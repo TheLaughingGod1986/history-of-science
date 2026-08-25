@@ -43,7 +43,7 @@ QUEUE = [
         "when": "2026-08-04T12:30:00+01:00",
         "caption": (
             "What if the first alien clue is already here — in an archive we haven't read yet? "
-            "Full film on YouTube. #Aliens #Astronomy #AreWeAlone #OrbitWithBen"
+            "Full film on YouTube. #Aliens #Astronomy #AreWeAlone #HistoryOfScience"
         ),
         "yt_id": "--CxhjNqtSY",
     },
@@ -54,7 +54,7 @@ QUEUE = [
         "when": "2026-08-05T21:00:00+01:00",
         "caption": (
             "Cross this line and you never come back. The event horizon, in under a minute. "
-            "Full film on YouTube. #eventhorizon #blackhole #orbitwithben"
+            "Full film on YouTube. #eventhorizon #blackhole #historyofscience"
         ),
         "yt_id": "eZGAhF8dN7w",
     },
@@ -65,7 +65,7 @@ QUEUE = [
         "when": "2026-08-06T12:30:00+01:00",
         "caption": (
             "Falling into a black hole wouldn't feel like falling — until it does. "
-            "Full film on YouTube. #spaghettification #blackhole #orbitwithben"
+            "Full film on YouTube. #spaghettification #blackhole #historyofscience"
         ),
         "yt_id": "C4GuFEFGySI",
     },
@@ -76,7 +76,7 @@ QUEUE = [
         "when": "2026-08-07T12:30:00+01:00",
         "caption": (
             "Time stops at the edge — for them. Black hole time dilation. "
-            "Full film on YouTube. #timedilation #blackhole #orbitwithben"
+            "Full film on YouTube. #timedilation #blackhole #historyofscience"
         ),
         "yt_id": "hdlr1soUwNA",
     },
@@ -87,7 +87,7 @@ QUEUE = [
         "when": "2026-08-08T12:30:00+01:00",
         "caption": (
             "Would you look back as you fall past the event horizon? "
-            "Full film on YouTube. #blackhole #eventhorizon #orbitwithben"
+            "Full film on YouTube. #blackhole #eventhorizon #historyofscience"
         ),
         "yt_id": "80S5E-AWFhA",
     },
@@ -98,7 +98,7 @@ QUEUE = [
         "when": "2026-08-09T12:30:00+01:00",
         "caption": (
             "What your eyes would see near a black hole — light bent into impossible shapes. "
-            "Full film on YouTube. #photonsphere #blackhole #orbitwithben"
+            "Full film on YouTube. #photonsphere #blackhole #historyofscience"
         ),
         "yt_id": "olnaYqeOtFs",
     },
@@ -109,7 +109,7 @@ QUEUE = [
         "when": "2026-08-10T12:30:00+01:00",
         "caption": (
             "The point of no return, explained. Full film on YouTube. "
-            "#eventhorizon #blackhole #orbitwithben"
+            "#eventhorizon #blackhole #historyofscience"
         ),
         "yt_id": "5nMieBeymKU",
     },
@@ -120,7 +120,7 @@ QUEUE = [
         "when": "2026-08-24T12:30:00+01:00",
         "caption": (
             "The hottest nights in the universe — Hot Jupiters that glow on the nightside. "
-            "Full film on YouTube. #hotjupiter #exoplanets #alienworlds #orbitwithben"
+            "Full film on YouTube. #hotjupiter #exoplanets #alienworlds #historyofscience"
         ),
         "yt_id": "e8-rKGv37o4",
     },

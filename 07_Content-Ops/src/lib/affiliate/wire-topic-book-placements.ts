@@ -251,7 +251,7 @@ function sampleBaseDescription(title: string): string {
     "Playlist",
     "More Orbit documentaries",
     "",
-    "#OrbitWithBen",
+    "#HistoryOfScience",
   ].join("\n");
 }
 

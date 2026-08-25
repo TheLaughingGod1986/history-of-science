@@ -23,8 +23,8 @@
 
 ### Threads Distance permalinks (live, not on profile grid)
 
-- https://www.threads.com/@orbitwithben/post/DblNwwOjOcl
-- https://www.threads.com/@orbitwithben/post/DblMYecDCGa
+- https://www.threads.com/@historyofscience/post/DblNwwOjOcl
+- https://www.threads.com/@historyofscience/post/DblMYecDCGa
 
 ### TikTok blocker (confirmed network)
 

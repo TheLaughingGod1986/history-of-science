@@ -1,6 +1,6 @@
 # Orbit launch schedule — V001 Fermi / Are We Alone
 
-**Long title:** Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey  
+**Long title:** Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science  
 **Source of truth:** `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.json`  
 All times Europe/London.
 

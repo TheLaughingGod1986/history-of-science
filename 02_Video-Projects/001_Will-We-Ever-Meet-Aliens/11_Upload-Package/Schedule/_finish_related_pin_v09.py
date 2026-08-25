@@ -15,7 +15,7 @@ ROOT = Path(
 PKG = ROOT / "11_Upload-Package"
 AUDIT = PKG / "Schedule/_studio_audit_shorts_v001"
 OUT = PKG / "Schedule/aliens_related_pin_v09.json"
-ORBIT = "UC_esArsDKd3GJvOkeO0DUog"
+ORBIT = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 LONG_ID = "Mo93x0fxB1Q"
 NEEDLE = "best explains the silence"
 SHORTS = [
@@ -246,7 +246,7 @@ def main():
             print(f"  → ok={rr['ok']} saved={rr.get('saved')} {chunk[:70]!r}", flush=True)
             OUT.write_text(json.dumps(result, indent=2) + "\n")
 
-        # PIN: switch watch-page identity to Orbit with Ben, then pin @OpptiAI comment
+        # PIN: switch watch-page identity to History of Science, then pin @OpptiAI comment
         print("PIN…", flush=True)
         pin: dict = {"ok": False, "via": "orbit_owner_pins_oppti"}
         page.goto(
@@ -256,8 +256,8 @@ def main():
         )
         page.wait_for_timeout(4000)
 
-        # Switch to Orbit with Ben in topbar (owner context for Pin)
-        pin["switched"] = switch_youtube_channel(page, "Orbit with Ben")
+        # Switch to History of Science in topbar (owner context for Pin)
+        pin["switched"] = switch_youtube_channel(page, "History of Science")
         page.wait_for_timeout(2000)
         # May need reload after switch
         page.goto(

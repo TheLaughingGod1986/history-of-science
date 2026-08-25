@@ -106,7 +106,7 @@ def main():
                 'tp-yt-paper-item, ytcp-ve, [role=menuitem], yt-formatted-string'
               )) {
                 const t=n.innerText||'';
-                if (/Orbit with Ben/i.test(t)) { n.click(); return t.slice(0,60); }
+                if (/History of Science/i.test(t)) { n.click(); return t.slice(0,60); }
               }
               return null;
             }"""

@@ -1,6 +1,6 @@
 # Video 002 — production status
 
-**Title:** What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
+**Title:** What Happens If You Fall Into a Black Hole? History of Science  
 **Folder:** `02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole`  
 **Status:** **Scheduled** · SEO meta live · end screen set · Shorts tagged · Related waits for public
 

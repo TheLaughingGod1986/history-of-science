@@ -24,7 +24,7 @@ VIDEOS = [
         "file": EXPORTS / "aliens_short-02_fermi-paradox_v02.mp4",
         "caption": (
             "Where Is Everybody? Full film on YouTube. "
-            "https://youtu.be/Mo93x0fxB1Q #space #orbitwithben #reels"
+            "https://youtu.be/Mo93x0fxB1Q #space #historyofscience #reels"
         ),
     },
     {
@@ -32,7 +32,7 @@ VIDEOS = [
         "file": EXPORTS / "aliens_short-01_distance_v02.mp4",
         "caption": (
             "Space Is Rude About Distance. Full film on YouTube. "
-            "https://youtu.be/Mo93x0fxB1Q #space #orbitwithben #reels"
+            "https://youtu.be/Mo93x0fxB1Q #space #historyofscience #reels"
         ),
     },
     {
@@ -40,7 +40,7 @@ VIDEOS = [
         "file": EXPORTS / "aliens_short-03_zoo-hypothesis_v02.mp4",
         "caption": (
             "What If Aliens Are Watching Us? Full film on YouTube. "
-            "https://youtu.be/Mo93x0fxB1Q #space #orbitwithben #reels"
+            "https://youtu.be/Mo93x0fxB1Q #space #historyofscience #reels"
         ),
     },
 ]
@@ -128,7 +128,7 @@ def main() -> None:
             snip = re.sub(r"\s+", " ", page.inner_text("body"))[:900]
             results["connect"] = {"opened": True, "snip": snip}
             print("CONNECT", snip[:400], flush=True)
-            for label in ("Orbit with Ben", "Continue", "Confirm", "Connect", "Done", "Next"):
+            for label in ("History of Science", "Continue", "Confirm", "Connect", "Done", "Next"):
                 if click_text(page, label, timeout=1800):
                     print("clicked", label, flush=True)
                     time.sleep(1.2)

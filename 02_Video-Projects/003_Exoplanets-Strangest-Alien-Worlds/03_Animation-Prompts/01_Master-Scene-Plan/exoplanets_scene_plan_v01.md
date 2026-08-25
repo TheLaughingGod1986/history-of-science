@@ -1,6 +1,6 @@
 # Video 003 — Master scene plan (from script MASTER v01)
 
-**Title:** Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey  
+**Title:** Alien Worlds: The Strangest Planets We've Ever Found | History of Science  
 **Script:** `01_Script/exoplanets_script_master_v01.md`  
 **Style:** Pixar-warm × hard astrophysics · shallow DOF · Gemini Omni / Seedance  
 **Rule:** picture matches narration beat-by-beat · no cutscene reuse/loops  

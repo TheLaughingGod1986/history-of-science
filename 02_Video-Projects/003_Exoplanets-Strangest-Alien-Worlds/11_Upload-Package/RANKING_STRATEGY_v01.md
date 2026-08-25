@@ -1,6 +1,6 @@
 # Ranking strategy — Video 003
 
-**Locked title (vidIQ 97/100):** Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey  
+**Locked title (vidIQ 97/100):** Alien Worlds: The Strangest Planets We've Ever Found | History of Science  
 **Runtime target:** 18–20 min  
 **Moat:** Orbit travelogue — visits concrete exoplanets (not faceless explainer / fearbait)
 
@@ -10,12 +10,12 @@
 
 | | Title | Score | Notes |
 |---|-------|------:|-------|
-| **A LOCK** | Alien Worlds: The Strangest Planets We've Ever Found \| Orbit's Cosmic Journey | **97** | Best SEO + brand fit |
-| B | We Found Planets Made of Diamond. Here's What They're Like \| Orbit's Cosmic Journey | **98** | Highest CTR; narrower topic — use as thumb/Short hook |
-| C | The Most Bizarre Exoplanets We've Ever Discovered \| Orbit's Cosmic Journey | **96** | Strong alt |
-| — | The Most Disturbing Exoplanets We've Ever Found \| Orbit's Cosmic Journey | 98 | **Reject** — fearbait vs Orbit wonder tone |
-| — | The Strangest Planets in the Universe: Alien Worlds Explained \| Orbit's Cosmic Journey | 94 | Solid; beaten by A |
-| — | Exoplanets Explained: The Strangest Alien Worlds We've Found \| Orbit's Cosmic Journey | 94 | Solid; beaten by A |
+| **A LOCK** | Alien Worlds: The Strangest Planets We've Ever Found \| History of Science | **97** | Best SEO + brand fit |
+| B | We Found Planets Made of Diamond. Here's What They're Like \| History of Science | **98** | Highest CTR; narrower topic — use as thumb/Short hook |
+| C | The Most Bizarre Exoplanets We've Ever Discovered \| History of Science | **96** | Strong alt |
+| — | The Most Disturbing Exoplanets We've Ever Found \| History of Science | 98 | **Reject** — fearbait vs Orbit wonder tone |
+| — | The Strangest Planets in the Universe: Alien Worlds Explained \| History of Science | 94 | Solid; beaten by A |
+| — | Exoplanets Explained: The Strangest Alien Worlds We've Found \| History of Science | 94 | Solid; beaten by A |
 | — | Alien Worlds Documentary: Orbit Visits the Strangest Exoplanets | 87 | Drop |
 
 ### vidIQ-generated (no brand) — pattern fuel
@@ -87,7 +87,7 @@ Winners = listicle “most X exoplanets” CGI explainers.
 | Hot Jupiter | Roasted nightside | exoplanets |
 | Eyeball world | Day–night terminator | alien planet |
 | Habitability close | Soft biosignature wonder | habitable zone · astronomy |
-| CTA | Brand outro | Orbit's Cosmic Journey |
+| CTA | Brand outro | History of Science |
 
 ## Description open (draft)
 

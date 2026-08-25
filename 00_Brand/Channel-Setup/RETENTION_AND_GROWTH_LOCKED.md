@@ -1,4 +1,4 @@
-# Retention & growth — locked going forward (Orbit with Ben)
+# Retention & growth — locked going forward (History of Science)
 
 **Locked:** 2026-08-06 · **Growth System v2**  
 **Applies to:** every Short + every long from **next new production after current ships**  

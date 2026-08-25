@@ -1,12 +1,12 @@
-# What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey — Script MASTER v01
+# What the James Webb Telescope Discovered That Changes Everything | History of Science — Script MASTER v01
 
-**Channel:** Orbit with Ben  
+**Channel:** History of Science  
 **Video:** 004 — JWST discoveries / early universe surprises  
-**Working title (A):** What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey  
+**Working title (A):** What the James Webb Telescope Discovered That Changes Everything | History of Science  
 **Alt titles (ABC):**  
-- A: What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey  
-- B: Galaxies Too Old for the Universe? What JWST Found | Orbit's Cosmic Journey *(Short/thumb)*  
-- C: James Webb Telescope Discoveries That Rewrote the Early Universe | Orbit's Cosmic Journey  
+- A: What the James Webb Telescope Discovered That Changes Everything | History of Science  
+- B: Galaxies Too Old for the Universe? What JWST Found | History of Science *(Short/thumb)*  
+- C: James Webb Telescope Discoveries That Rewrote the Early Universe | History of Science  
 **Pillar:** Cosmic Mysteries  
 **Angle:** Orbit as **curious learner** beside JWST — galaxies too early, black holes too big; wonder not clickbait  
 **Primary keywords:** james webb telescope · james webb telescope discoveries · jwst discoveries · early universe  
@@ -71,7 +71,7 @@
 What if the universe was already… busy… when our textbooks said it should still be waking up?
 
 [ORBIT: antenna brightens; determined hover]  
-[TITLE: What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey]  
+[TITLE: What the James Webb Telescope Discovered That Changes Everything | History of Science]  
 [MUSIC: soft brand sting ~2s, then bed resumes]
 
 Today, Orbit is going to learn beside the James Webb Space Telescope.

@@ -8,7 +8,7 @@ Usage:
   python3 live_shorts_to_tiktok.py --dry-run       # show pending only
   python3 live_shorts_to_tiktok.py --seed-posted   # mark all currently-live as already posted
 
-Requires Chrome CDP on :9222 logged into @orbitwithben
+Requires Chrome CDP on :9222 logged into @historyofscience
 (profile ~/.orbit-chrome-tiktok-dev — auto-started if missing).
 """
 from __future__ import annotations

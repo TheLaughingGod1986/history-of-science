@@ -296,7 +296,7 @@ describe("affiliate description generation", () => {
       "Playlist",
       "More Orbit documentaries",
       "",
-      "#OrbitWithBen #BlackHoles",
+      "#HistoryOfScience #BlackHoles",
     ].join("\n");
 
     const desc = appendAffiliateSectionToDescription({
@@ -438,9 +438,9 @@ describe("redirect URL generation", () => {
   });
 
   it("builds orbit redirect paths", () => {
-    process.env.AFFILIATE_REDIRECT_BASE_URL = "https://orbitwithben.com/go";
+    process.env.AFFILIATE_REDIRECT_BASE_URL = "https://historyofscience.com/go";
     expect(buildOrbitRedirectUrl("beginner-telescope")).toBe(
-      "https://orbitwithben.com/go/beginner-telescope",
+      "https://historyofscience.com/go/beginner-telescope",
     );
     delete process.env.AFFILIATE_REDIRECT_BASE_URL;
   });
@@ -619,7 +619,7 @@ describe("affiliate social copy house rules", () => {
 
   it("allows only YouTube or /go/ tracked URLs", () => {
     expect(isAllowedSocialTrackedUrl("https://youtu.be/abc")).toBe(true);
-    expect(isAllowedSocialTrackedUrl("https://orbitwithben.com/go/beginner-telescope")).toBe(
+    expect(isAllowedSocialTrackedUrl("https://historyofscience.com/go/beginner-telescope")).toBe(
       true,
     );
     expect(isAllowedSocialTrackedUrl("/go/beginner-telescope")).toBe(true);
@@ -705,7 +705,7 @@ describe("affiliate social copy house rules", () => {
     const line = buildSoftAffiliateMentionLine({
       platform: "x",
       productLabel: "Beginner telescope",
-      goUrl: "https://orbitwithben.com/go/beginner-telescope",
+      goUrl: "https://historyofscience.com/go/beginner-telescope",
     });
     expect(line).toBeTruthy();
     expect(line!).toContain("/go/");
@@ -1046,7 +1046,7 @@ describe("live social channel affiliate snippets", () => {
       `${FIXTURE_FACEBOOK_PAGE_HOWTO.captionWithFilmWithoutUrl}\n${yt}`,
     );
 
-    const go = "https://orbitwithben.com/go/telescope";
+    const go = "https://historyofscience.com/go/telescope";
     const noFilm = renderFacebookPageTemplate({
       style: "how_to",
       wonder: FIXTURE_FACEBOOK_PAGE_HOWTO.wonder,
@@ -1060,7 +1060,7 @@ describe("live social channel affiliate snippets", () => {
   });
 
   it("Threads + Reels templates: thought first, one extra line, door last; never /go/ on line 1", () => {
-    const go = "https://orbitwithben.com/go/telescope";
+    const go = "https://historyofscience.com/go/telescope";
     const threads = renderThreadsTemplate({
       wonder: "The sky was quieter than I expected.",
       doorUrl: go,
@@ -1151,7 +1151,7 @@ describe("live social channel affiliate snippets", () => {
     // Same /go/ three days, no film
     expect(
       facebookPageCaptionViolations(
-        "Quiet night.\nhttps://orbitwithben.com/go/telescope",
+        "Quiet night.\nhttps://historyofscience.com/go/telescope",
         {
           productSlug: "telescope",
           recentGoSlugs: ["telescope", "telescope"],
@@ -1166,7 +1166,7 @@ describe("live social channel affiliate snippets", () => {
     expect(renderTelescopeCommentReply({ hasFilm: true })).toContain("affiliate");
     const go = renderTelescopeCommentReply({
       hasFilm: false,
-      doorUrl: "https://orbitwithben.com/go/telescope",
+      doorUrl: "https://historyofscience.com/go/telescope",
     });
     expect(go).toContain("/go/telescope");
     expect(containsRawMerchantUrl(go)).toBe(false);
@@ -1271,7 +1271,7 @@ describe("affiliate go-live readiness", () => {
       amazonTag: null,
       brilliantId: null,
       appBaseUrl: "https://ops.example.com",
-      affiliateRedirectBaseUrl: "https://orbitwithben.com/go",
+      affiliateRedirectBaseUrl: "https://historyofscience.com/go",
       activeProductCount: 8,
       placeholderUrlCount: 0,
       brokenUrlCount: 0,
@@ -1289,7 +1289,7 @@ describe("affiliate go-live readiness", () => {
       amazonTag: "orbit-21",
       brilliantId: null,
       appBaseUrl: "https://ops.example.com",
-      affiliateRedirectBaseUrl: "https://orbitwithben.com/go",
+      affiliateRedirectBaseUrl: "https://historyofscience.com/go",
       activeProductCount: 8,
       placeholderUrlCount: 0,
       brokenUrlCount: 0,
@@ -1305,7 +1305,7 @@ describe("affiliate go-live readiness", () => {
       amazonTag: "orbit-21",
       brilliantId: "brill-1",
       appBaseUrl: "https://ops.example.com",
-      affiliateRedirectBaseUrl: "https://orbitwithben.com/go",
+      affiliateRedirectBaseUrl: "https://historyofscience.com/go",
       activeProductCount: 8,
       placeholderUrlCount: 3,
       brokenUrlCount: 0,
@@ -1803,7 +1803,7 @@ describe("film → topic-book wiring (Social Media Manager)", () => {
       productSlug: "black-hole-book",
       category: "Space books",
       programSlug: "amazon-associates-uk",
-      url: "https://orbitwithben.com/go/black-hole-book",
+      url: "https://historyofscience.com/go/black-hole-book",
       role: "primary" as const,
       trustProduct: product({
         id: "bh-book",
@@ -1841,7 +1841,7 @@ describe("film → topic-book wiring (Social Media Manager)", () => {
       "Playlist",
       "More Orbit",
       "",
-      "#OrbitWithBen",
+      "#HistoryOfScience",
     ].join("\n");
     const desc = appendAffiliateSectionToDescription({
       description: base,

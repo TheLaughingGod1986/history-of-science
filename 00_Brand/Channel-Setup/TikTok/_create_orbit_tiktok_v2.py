@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create Orbit with Ben TikTok — v2 (custom birthday UI + stay on signup flow)."""
+"""Create History of Science TikTok — v2 (custom birthday UI + stay on signup flow)."""
 from __future__ import annotations
 
 import json
@@ -13,15 +13,15 @@ PROFILE = "/Users/ben/code/youtube/.playwright-youtube-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AVATAR = SETUP / "avatar_800x800.png"
 BIO = (SETUP / "bio.txt").read_text().strip()
-WEBSITE = "https://www.youtube.com/@OrbitWithBen"
-DISPLAY = "Orbit with Ben"
+WEBSITE = "https://www.youtube.com/@HistoryOfScience"
+DISPLAY = "History of Science"
 AUDIT = SETUP / "audit"
 RESULT = SETUP / "CREATE_RESULT.json"
 META = SETUP / "TIKTOK_META.json"
 
 HANDLES = [
-    "OrbitWithBen",
-    "OrbitWithBenYT",
+    "HistoryOfScience",
+    "HistoryOfScienceYT",
     "MeetOrbit",
     "OrbitExplores",
     "HelloOrbit",

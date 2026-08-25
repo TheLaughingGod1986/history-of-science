@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Delete scheduled TikTok posts and re-upload kinetic-caption v02 shorts.
 
-Uses Chrome CDP :9222 (@orbitwithben). Captions soft-funnel to the full YT film.
+Uses Chrome CDP :9222 (@historyofscience). Captions soft-funnel to the full YT film.
 """
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ QUEUE = [
         "post_now": True,
         "caption": (
             "Where is everybody? The Fermi Paradox in under a minute — countless stars, no clear hello. "
-            "Full film on YouTube. #FermiParadox #AreWeAlone #Space #OrbitWithBen"
+            "Full film on YouTube. #FermiParadox #AreWeAlone #Space #HistoryOfScience"
         ),
         "yt_id": "z-DLqoSoEBo",
     },
@@ -49,7 +49,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "Space is rude about distance — even a quick alien hello could take generations. "
-            "Full film on YouTube. #Space #Aliens #FermiParadox #OrbitWithBen"
+            "Full film on YouTube. #Space #Aliens #FermiParadox #HistoryOfScience"
         ),
         "yt_id": "UWwNKYf_aU8",
     },
@@ -61,7 +61,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "What if aliens are watching us? The zoo hypothesis — science, not fearbait. "
-            "Full film on YouTube. #Aliens #SpaceMystery #FermiParadox #OrbitWithBen"
+            "Full film on YouTube. #Aliens #SpaceMystery #FermiParadox #HistoryOfScience"
         ),
         "yt_id": "MO19iXYCu0c",
     },
@@ -73,7 +73,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "What if the first alien clue is already here — in an archive we haven't read yet? "
-            "Full film on YouTube. #Aliens #Astronomy #AreWeAlone #OrbitWithBen"
+            "Full film on YouTube. #Aliens #Astronomy #AreWeAlone #HistoryOfScience"
         ),
         "yt_id": "--CxhjNqtSY",
     },
@@ -85,7 +85,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "Cross this line and you never come back. The event horizon, in under a minute. "
-            "Full film on YouTube. #eventhorizon #blackhole #orbitwithben"
+            "Full film on YouTube. #eventhorizon #blackhole #historyofscience"
         ),
         "yt_id": "eZGAhF8dN7w",
     },
@@ -97,7 +97,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "Falling into a black hole wouldn't feel like falling — until it does. "
-            "Full film on YouTube. #spaghettification #blackhole #orbitwithben"
+            "Full film on YouTube. #spaghettification #blackhole #historyofscience"
         ),
         "yt_id": "C4GuFEFGySI",
     },
@@ -109,7 +109,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "Time stops at the edge — for them. Black hole time dilation. "
-            "Full film on YouTube. #timedilation #blackhole #orbitwithben"
+            "Full film on YouTube. #timedilation #blackhole #historyofscience"
         ),
         "yt_id": "hdlr1soUwNA",
     },
@@ -121,7 +121,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "Would you look back as you fall past the event horizon? "
-            "Full film on YouTube. #blackhole #eventhorizon #orbitwithben"
+            "Full film on YouTube. #blackhole #eventhorizon #historyofscience"
         ),
         "yt_id": "80S5E-AWFhA",
     },
@@ -133,7 +133,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "What your eyes would see near a black hole — light bent into impossible shapes. "
-            "Full film on YouTube. #photonsphere #blackhole #orbitwithben"
+            "Full film on YouTube. #photonsphere #blackhole #historyofscience"
         ),
         "yt_id": "olnaYqeOtFs",
     },
@@ -145,7 +145,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "The point of no return, explained. Full film on YouTube. "
-            "#eventhorizon #blackhole #orbitwithben"
+            "#eventhorizon #blackhole #historyofscience"
         ),
         "yt_id": "5nMieBeymKU",
     },
@@ -157,7 +157,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "It rains glass sideways on this alien world — molten glass in 5,000+ mph winds. "
-            "Full film on YouTube. #glassrain #exoplanets #alienworlds #orbitwithben"
+            "Full film on YouTube. #glassrain #exoplanets #alienworlds #historyofscience"
         ),
         "yt_id": "aX_7Qg_qzyo",
     },
@@ -169,7 +169,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "We found planets that may have diamond crusts thicker than anything on Earth. "
-            "Full film on YouTube. #diamondplanet #exoplanets #alienworlds #orbitwithben"
+            "Full film on YouTube. #diamondplanet #exoplanets #alienworlds #historyofscience"
         ),
         "yt_id": "niqnBlzqaFs",
     },
@@ -181,7 +181,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "Three suns in the sky — real exoplanets in multi-star systems. "
-            "Full film on YouTube. #threesuns #exoplanets #alienworlds #orbitwithben"
+            "Full film on YouTube. #threesuns #exoplanets #alienworlds #historyofscience"
         ),
         "yt_id": "PYhQ0x9HcPM",
     },
@@ -193,7 +193,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "The hottest nights in the universe — Hot Jupiters that glow on the nightside. "
-            "Full film on YouTube. #hotjupiter #exoplanets #alienworlds #orbitwithben"
+            "Full film on YouTube. #hotjupiter #exoplanets #alienworlds #historyofscience"
         ),
         "yt_id": "e8-rKGv37o4",
     },
@@ -205,7 +205,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "Eyeball planets: one face fire, one face ice, thin twilight belt between. "
-            "Full film on YouTube. #eyeballplanet #exoplanets #alienworlds #orbitwithben"
+            "Full film on YouTube. #eyeballplanet #exoplanets #alienworlds #historyofscience"
         ),
         "yt_id": "LQtNmzXJW4w",
     },
@@ -217,7 +217,7 @@ QUEUE = [
         "post_now": False,
         "caption": (
             "Could any of these alien worlds host life? The habitable zone, explained. "
-            "Full film on YouTube. #habitablezone #exoplanets #alienlife #orbitwithben"
+            "Full film on YouTube. #habitablezone #exoplanets #alienlife #historyofscience"
         ),
         "yt_id": "i18OD5Ab748",
     },

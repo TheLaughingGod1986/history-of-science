@@ -1,8 +1,8 @@
-# Orbit with Ben — Channel Build System
+# History of Science — Channel Build System
 
-Canonical creative-director playbook for the faceless animated science storytelling channel **Orbit with Ben**.
+Canonical creative-director playbook for the faceless animated science storytelling channel **History of Science**.
 
-Live channel: https://www.youtube.com/@OrbitWithBen · `UC_esArsDKd3GJvOkeO0DUog`
+Live channel: https://www.youtube.com/@HistoryOfScience · `TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL`
 
 **Feel:** Pixar meets space documentary.  
 **Quality bar:** Kurzgesagt · PBS Space Time · Veritasium · Nat Geo docs · Pixar storytelling principles.
@@ -32,8 +32,8 @@ Always protect the Orbit brand. Goal: build a recognisable space storytelling un
 
 | | |
 |---|---|
-| Channel name | Orbit with Ben |
-| Handle | @OrbitWithBen |
+| Channel name | History of Science |
+| Handle | @HistoryOfScience |
 | Mascot | Orbit — small orange exploration robot |
 | Live banner line | Big questions. Bigger universe. |
 | Core philosophy | Big questions. Deep universe. |
@@ -151,7 +151,7 @@ Publish slots: `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.json`.
 8. Edit — brand intro + chapter cards + subscribe outro; SFX/music from script cues  
 9. **VO–picture QA gate** (watch once: no generic stretch under specific VO)  
 10. Package (titles · thumb ABC · description · tags · chapters · SEO)  
-11. Upload / schedule on `@OrbitWithBen` (long Thu 19:00 → Shorts cluster)  
+11. Upload / schedule on `@HistoryOfScience` (long Thu 19:00 → Shorts cluster)  
 12. Fill content flywheel (`CONTENT_FLYWHEEL_TEMPLATE.md`) · run `RELEASE_WEEK_CHECKLIST.md`  
 
 **Do not** lock VO or spend Veo/Ultra credits until step 1 is signed off.  

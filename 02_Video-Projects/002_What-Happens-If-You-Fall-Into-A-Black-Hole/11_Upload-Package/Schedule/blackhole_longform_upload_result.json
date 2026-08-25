@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "title": "What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey",
+  "title": "What Happens If You Fall Into a Black Hole? History of Science",
   "source": "/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/09_Final-Export/blackhole_v04_UPLOAD_READY_MASTER.mp4",
   "schedule_target": "2026-08-06T19:00:00+01:00",
-  "channel": "UC_esArsDKd3GJvOkeO0DUog",
+  "channel": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
   "features_snippet": "Oops, something went wrong.",
   "intermediate": "unknown",
   "tags_err": "Locator.click: Timeout 2500ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Show more\")\n",

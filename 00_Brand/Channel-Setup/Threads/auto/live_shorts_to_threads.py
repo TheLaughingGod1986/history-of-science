@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Post live YouTube Shorts to Threads (@orbitwithben).
+Post live YouTube Shorts to Threads (@historyofscience).
 
 Usage:
   python3 live_shorts_to_threads.py --once

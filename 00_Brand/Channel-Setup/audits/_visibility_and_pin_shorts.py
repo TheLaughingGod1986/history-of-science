@@ -52,7 +52,7 @@ def load_targets() -> list[dict]:
                     "schedule_iso": s.get("schedule_iso"),
                     "comment": (
                         f"Full film here → {long_title}\n{long_url}\n\n"
-                        "Orbit's Cosmic Journey 🚀"
+                        "History of Science 🚀"
                     ),
                 }
             )

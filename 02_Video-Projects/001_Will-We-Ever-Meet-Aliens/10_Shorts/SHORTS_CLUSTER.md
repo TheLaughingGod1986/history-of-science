@@ -1,7 +1,7 @@
 # Shorts Cluster — Funnel into 001
 
 **Long-form:** Will We Ever Meet Aliens?  
-**Channel:** Orbit with Ben · @OrbitWithBen  
+**Channel:** History of Science · @HistoryOfScience  
 **Cluster:** 5 Shorts (+ optional 6th later) · 30–55s each · **pillar first**  
 **Strategy:** `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`
 
@@ -43,7 +43,7 @@ Do **not** publish any Short before the long is public.
 ## Soft ending bank
 
 ```
-If you want the full story, it’s now available on Orbit With Ben.
+If you want the full story, it’s now available on History of Science.
 This is only one part of a much bigger mystery explored in our latest documentary.
 The full story unfolds in our latest film — Will We Ever Meet Aliens?
 ```
@@ -52,7 +52,7 @@ The full story unfolds in our latest film — Will We Ever Meet Aliens?
 
 ```
 Full story → Will We Ever Meet Aliens?
-Orbit with Ben
+History of Science
 ```
 
 Until the long-form URL is live, keep Shorts **private/scheduled** only.

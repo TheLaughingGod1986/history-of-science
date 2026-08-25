@@ -44,8 +44,8 @@ def load_credentials() -> dict:
         if v:
             data[k] = v
 
-    data.setdefault("threads_username", "orbitwithben")
-    data.setdefault("username", data.get("threads_username", "orbitwithben"))
+    data.setdefault("threads_username", "historyofscience")
+    data.setdefault("username", data.get("threads_username", "historyofscience"))
     data.setdefault("preferred_method", "cdp")
     data.setdefault("cdp_port", 9222)
     return data

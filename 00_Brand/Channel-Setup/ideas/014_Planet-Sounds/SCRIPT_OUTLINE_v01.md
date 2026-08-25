@@ -1,6 +1,6 @@
 # 014 — Script outline v01 (Planet sounds)
 
-**Title (98):** Every Planet Has a Sound — and What They Recorded Is Stranger Than Anyone Expected | Orbit's Cosmic Journey  
+**Title (98):** Every Planet Has a Sound — and What They Recorded Is Stranger Than Anyone Expected | History of Science  
 **Runtime target:** 15–20 min  
 **Patterns:** assumption-flip · planet-by-planet tour · Orbit radio guide · wonder ending
 

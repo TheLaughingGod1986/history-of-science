@@ -1,7 +1,7 @@
-# Orbit with Ben — full YouTube audit
+# History of Science — full YouTube audit
 
 **Date:** Tuesday 25 Aug 2026, evening UK  
-**Channel:** Orbit with Ben (`@OrbitWithBen` · `UC_esArsDKd3GJvOkeO0DUog`)  
+**Channel:** History of Science (`@HistoryOfScience` · `TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL`)  
 **Age:** 29 days (created 27 Jul 2026)
 
 **Data this run**
@@ -84,7 +84,7 @@ These are already in the rules. The last three weeks confirmed them in productio
 | Alien Worlds `b8-X_FyJnHM` | 21:29 | **10** | Same generation. |
 | JWST `ziKBPJ6FY0U` | 16:33 | **7** | Shorter, still no Browse hold. Live 5 days. |
 | Black Hole `3xrxdmaOwJI` | 21:13 | **4** | Weakest public long. |
-| Last Star `REXYxuLOBoI` | premiere | **3** | **Do not judge.** Goes live Thu 27 Aug 18:00. Title still has `\| Orbit's Cosmic Journey`. |
+| Last Star `REXYxuLOBoI` | premiere | **3** | **Do not judge.** Goes live Thu 27 Aug 18:00. Title still has `\| History of Science`. |
 | Europa `NbW5G1BpPY0` | scheduled | — | Thu 3 Sept. |
 | Neutron `Yk1tLh23rko` | scheduled | — | Next to *make*, not next to air. Broadcast v02 **8.89 min**. Do not mint until Ben watches. |
 

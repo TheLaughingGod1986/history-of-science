@@ -107,8 +107,8 @@ def tiktok_caption(short: dict, *, max_len: int = 2100) -> str:
     parts.append(cta)
     if hashtags:
         parts.append(hashtags)
-    elif "#orbitwithben" not in (hook + prose).lower():
-        parts.append("#space #orbitwithben #shorts")
+    elif "#historyofscience" not in (hook + prose).lower():
+        parts.append("#space #historyofscience #shorts")
 
     caption = " ".join(p for p in parts if p).strip()
     caption = re.sub(r"\s+", " ", caption)

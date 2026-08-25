@@ -18,9 +18,9 @@ LONDON = ZoneInfo("Europe/London")
 
 # Morning-funnel IG reels (aliases 01–03) — remove until YT go-live
 IG_REELS = [
-    ("/orbitwithben/reel/Dbkjz74gTje/", "Where Is Everybody?", "1HuV8o3gOss"),
-    ("/orbitwithben/reel/DbkkMoxjwpt/", "Space Is Rude About Distance", "dPMJQp2gMNc"),
-    ("/orbitwithben/reel/DbkkmlLEwbH/", "What If Aliens Are Watching Us?", "rFJoOdQAc9c"),
+    ("/historyofscience/reel/Dbkjz74gTje/", "Where Is Everybody?", "1HuV8o3gOss"),
+    ("/historyofscience/reel/DbkkMoxjwpt/", "Space Is Rude About Distance", "dPMJQp2gMNc"),
+    ("/historyofscience/reel/DbkkmlLEwbH/", "What If Aliens Are Watching Us?", "rFJoOdQAc9c"),
 ]
 
 THREADS_NEEDLES = [
@@ -98,7 +98,7 @@ def delete_ig(page, href: str, title: str) -> dict:
 
 def delete_threads(page) -> list[dict]:
     results: list[dict] = []
-    page.goto("https://www.threads.com/@orbitwithben", wait_until="domcontentloaded", timeout=90000)
+    page.goto("https://www.threads.com/@historyofscience", wait_until="domcontentloaded", timeout=90000)
     time.sleep(4)
     shot(page, "threads_before.png")
 
@@ -190,7 +190,7 @@ def delete_threads(page) -> list[dict]:
         results.append(entry)
         print(entry, flush=True)
         time.sleep(3)
-        page.goto("https://www.threads.com/@orbitwithben", wait_until="domcontentloaded", timeout=90000)
+        page.goto("https://www.threads.com/@historyofscience", wait_until="domcontentloaded", timeout=90000)
         time.sleep(3)
 
     shot(page, "threads_after.png")
@@ -238,7 +238,7 @@ def main() -> None:
             shot(page, "threads_err.png")
 
         # Verify IG profile grid
-        page.goto("https://www.instagram.com/orbitwithben/", wait_until="domcontentloaded", timeout=90000)
+        page.goto("https://www.instagram.com/historyofscience/", wait_until="domcontentloaded", timeout=90000)
         time.sleep(3)
         shot(page, "ig_profile_after.png")
         hrefs = page.evaluate(

@@ -1,6 +1,7 @@
-# Orbit Content Ops
+# History of Science — Content Ops
 
-Local multi-platform distribution + autopublish dashboard for **Orbit with Ben**.
+Local multi-platform distribution + autopublish dashboard for **History of Science**.
+YouTube uploads use the **YouTube Data API** package path (`npm run youtube:package`).
 
 ## Quick start
 

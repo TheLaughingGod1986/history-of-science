@@ -1,6 +1,6 @@
 # Scene 01 — Orbit's question (hook)
 
-**Video:** 002 — What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey
+**Video:** 002 — What Happens If You Fall Into a Black Hole? History of Science
 **VO span:** ~40s (stitch 3× ~8–10s motion clips under narration)
 **Aspect:** 16:9 · **Duration per clip:** 8–10s · **Engine:** ElevenLabs Gemini Omni Flash / Seedance i2v
 **Reference:** `01_Orbit-Character/05_Seedance-References/orbit-seedance-reference-v01.png (+ character sheet if multi-ref allowed)`

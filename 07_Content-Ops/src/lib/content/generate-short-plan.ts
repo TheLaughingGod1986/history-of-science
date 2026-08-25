@@ -206,7 +206,7 @@ function pickMoments(title: string, script: string): MomentSeed[] {
       whyItWorks: "Selected as a dense standalone paragraph with a clear opening line.",
       visualDirection: "Vibrant scenic board matching the beat; Orbit guide PiP optional.",
       onScreenText: first.slice(0, 28),
-      endingLine: "The full story is on Orbit with Ben.",
+      endingLine: "The full story is on History of Science.",
     };
   });
 }

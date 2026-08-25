@@ -6,7 +6,7 @@
 
 ## Live lock
 
-**Title:** Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey  
+**Title:** Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science  
 **Result JSON:** `Schedule/aliens_v001_studio_update_result.json`  
 **Audit screenshots:** `Schedule/_studio_audit_v001/`
 
@@ -32,7 +32,7 @@ Applied on Studio edit:
 ## Pinned comment
 
 - **Fixed 2026-07-31:** Removed mistaken `@OpptiAI` CTA comments (automation used wrong account identity).
-- CTA now posted as **`@OrbitWithBen`**.
+- CTA now posted as **`@HistoryOfScience`**.
 - Pin still may need a manual tap in Studio/mobile (Pin control often missing in desktop automation).
 
 CTA text: `Pinned-Comments/aliens_long_pinned-comment_v01.txt`

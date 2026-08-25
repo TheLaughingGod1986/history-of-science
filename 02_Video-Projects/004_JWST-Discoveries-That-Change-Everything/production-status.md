@@ -19,7 +19,7 @@
 
 ## Locked
 
-**Title A:** What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey  
+**Title A:** What the James Webb Telescope Discovered That Changes Everything | History of Science  
 **Score sheet:** `11_Upload-Package/Titles/VIDIQ_TITLE_SCORE_SHEET.md` — fill live vidIQ scores when research profile is logged in (gate ≥90).
 
 **VO master:** `02_Voiceover/05_Master/jwst_voiceover_v01_ivc_kDch_master.wav` (**16.4 min**)  

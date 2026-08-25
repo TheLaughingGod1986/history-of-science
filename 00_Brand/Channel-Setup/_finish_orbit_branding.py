@@ -15,7 +15,7 @@ AVATAR = SETUP / "avatar_800x800.png"
 BANNER = SETUP / "banner_2560x1440.png"
 DESC = (SETUP / "channel_description.txt").read_text().strip()
 AUDIT = SETUP / "audit"
-CID = "UC_esArsDKd3GJvOkeO0DUog"
+CID = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 RESULT = SETUP / "BRAND_RESULT.json"
 
 
@@ -207,7 +207,7 @@ def main() -> None:
             result["post_publish_snip"] = feedback[:1200]
 
             # Public verify
-            page.goto("https://www.youtube.com/@OrbitWithBen", wait_until="domcontentloaded")
+            page.goto("https://www.youtube.com/@HistoryOfScience", wait_until="domcontentloaded")
             page.wait_for_timeout(4000)
             dismiss_modals(page)
             shot(page, "07_public")

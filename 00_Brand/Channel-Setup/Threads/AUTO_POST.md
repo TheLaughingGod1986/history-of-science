@@ -1,11 +1,11 @@
-# Auto-post YouTube Shorts → Threads (@orbitwithben)
+# Auto-post YouTube Shorts → Threads (@historyofscience)
 
 When a short goes **live on YouTube**, Orbit mirrors it to Threads — same pattern
 as TikTok (`TikTok/AUTO_POST.md`) and Meta (`Meta/AUTO_POST.md`).
 
 **One unique post (25 Aug 2026):** each Short is **one** Threads post. Remakes, new YouTube IDs, or the same file/title do not get a second post. A watcher pass posts **at most one** new unique Short. TikTok is paused separately.
 
-Brand: **Orbit with Ben** · handle **@orbitwithben** · soft CTA *Full film on YouTube.*
+Brand: **History of Science** · handle **@historyofscience** · soft CTA *Full film on YouTube.*
 
 ## How it fires
 
@@ -23,7 +23,7 @@ is wired, use Chrome CDP on the shared IG/TikTok profile:
 
 ```bash
 bash 00_Brand/Channel-Setup/Threads/auto/start_threads_chrome.sh
-# Log into threads.com as @orbitwithben once in that window (port 9222).
+# Log into threads.com as @historyofscience once in that window (port 9222).
 ```
 
 `THREADS_CREDENTIALS.json`:
@@ -32,7 +32,7 @@ bash 00_Brand/Channel-Setup/Threads/auto/start_threads_chrome.sh
 {
   "preferred_method": "cdp",
   "cdp_port": 9222,
-  "threads_username": "orbitwithben"
+  "threads_username": "historyofscience"
 }
 ```
 
@@ -83,10 +83,10 @@ python3 live_shorts_to_threads.py --check-creds
 
 | Field | Value |
 |-------|-------|
-| Display name | Orbit with Ben |
-| Handle | @orbitwithben |
+| Display name | History of Science |
+| Handle | @historyofscience |
 | Bio | Space stories. Big questions. Full films on YouTube ↓ |
-| Link | https://www.youtube.com/@OrbitWithBen |
+| Link | https://www.youtube.com/@HistoryOfScience |
 | Avatar | Same Orbit mascot as YouTube / TikTok / IG |
 
 Unload: `launchctl unload ~/Library/LaunchAgents/dev.orbit.threads-live-shorts.plist`

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Delete @OpptiAI / @opptiai comments from V001 long; post CTA as Orbit with Ben."""
+"""Delete @OpptiAI / @opptiai comments from V001 long; post CTA as History of Science."""
 from __future__ import annotations
 
 import json
@@ -15,7 +15,7 @@ PKG = Path(
 AUDIT = PKG / "Schedule/_studio_audit_shorts_v001"
 OUT = PKG / "Schedule/aliens_cleanup_oppti_comments_v01.json"
 LONG_ID = "Mo93x0fxB1Q"
-ORBIT = "UC_esArsDKd3GJvOkeO0DUog"
+ORBIT = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 PINNED = (PKG / "Pinned-Comments/aliens_long_pinned-comment_v01.txt").read_text().strip()
 NEEDLE = "best explains the silence"
 
@@ -173,7 +173,7 @@ def main():
         page.screenshot(path=str(AUDIT / "cleanup_comments_after_delete.png"), full_page=True)
         result["remaining"] = page.locator("ytcp-comment").count()
 
-        # Post ONE comment as Orbit with Ben via Studio Add a comment
+        # Post ONE comment as History of Science via Studio Add a comment
         # Switch composer identity if possible
         page.evaluate(
             """() => {
@@ -198,7 +198,7 @@ def main():
                 'tp-yt-paper-item, [role=menuitem], yt-formatted-string, ytcp-ve'
               )) {
                 const t=n.innerText||'';
-                if (/Orbit with Ben/i.test(t)) { n.click(); return t; }
+                if (/History of Science/i.test(t)) { n.click(); return t; }
               }
             }"""
         )

@@ -1,11 +1,11 @@
 # Connect Orbit TikTok to Content Ops
 
-Account: **[@orbitwithben](https://www.tiktok.com/@orbitwithben)**  
+Account: **[@historyofscience](https://www.tiktok.com/@historyofscience)**  
 Ops UI: http://localhost:3000/settings/connections
 
 ## Already done in Content Ops
 
-- `PlatformSettings` for `tiktok` → profile URL + display name `OrbitWithBen`
+- `PlatformSettings` for `tiktok` → profile URL + display name `HistoryOfScience`
 - OAuth callback stores `accountUsername` / `profileUrl` and syncs settings
 - Redirect URI expected: `http://localhost:3000/api/oauth/tiktok/callback`
 
@@ -19,7 +19,7 @@ App: **Orbit Content Ops** → https://developers.tiktok.com/app/766877350801249
 ## Finish in TikTok Developer Portal (still needed)
 
 1. **Basic info** (description max **120** chars), e.g.  
-   `Private ops tool that drafts and posts Orbit with Ben space stories to TikTok (@OrbitWithBen).`
+   `Private ops tool that drafts and posts History of Science space stories to TikTok (@HistoryOfScience).`
 2. Category: **Education** · Platform: **Web** only · Web URL: `http://localhost:3000`
 3. ToS / Privacy (local pages, Content Ops running):
    - `http://localhost:3000/legal/terms`

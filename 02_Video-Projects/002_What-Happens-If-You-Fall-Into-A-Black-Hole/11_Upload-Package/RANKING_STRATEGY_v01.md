@@ -1,6 +1,6 @@
 # Ranking strategy — Video 002
 
-**Title lock (98/100):** What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
+**Title lock (98/100):** What Happens If You Fall Into a Black Hole? History of Science  
 **Runtime decision:** 18–20 min deep dive (brief suggested 8–12; Orbit channel long-form target wins)  
 **Moat:** Character-driven narrative peril — not faceless explainer / talking-head interview
 
@@ -9,7 +9,7 @@
 | Element | Why it matters |
 |---------|----------------|
 | Leads with `what happens if you fall into a black hole` | Exact-match search (~38.7K/mo) |
-| `Orbit's Cosmic Journey` | Unique hook vs generic explainers |
+| `History of Science` | Unique hook vs generic explainers |
 | `What Happens If…` format | Proven click pattern under large umbrella keyword |
 | Emotional stakes without clickbait | Curiosity + character care |
 

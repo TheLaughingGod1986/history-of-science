@@ -47,10 +47,10 @@ Payoff: you would not "see darkness" the way cinema shows — spacetime geometry
 `.repeat(3); // pad toward 8–12 min word count
 
 const WEAK_SCRIPT = `
-Welcome to Orbit with Ben. In this video, what is a black hole?
+Welcome to History of Science. In this video, what is a black hole?
 Have you ever wondered about space? For centuries humanity has looked up.
 Today we will explain the history of black holes in a calm lecture style.
-| Orbit's Cosmic Journey
+| History of Science
 `;
 
 describe("script reviewer v2", () => {

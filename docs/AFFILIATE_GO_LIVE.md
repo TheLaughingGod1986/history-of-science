@@ -23,9 +23,9 @@ Destination URLs come from `src/lib/affiliate/live-product-urls.ts` (confirmed A
 1. **Amazon Associates UK** — approve account → set `AMAZON_ASSOCIATE_TAG` in production env  
 2. **Brilliant** — approve affiliate → set `BRILLIANT_AFFILIATE_ID`  
 3. **Deploy Content Ops** with migrate + those env vars  
-4. **Point** `https://orbitwithben.com/go` at Content Ops (DNS / reverse proxy), or set  
-   `AFFILIATE_REDIRECT_BASE_URL=https://orbitwithben.com/go` if the app already owns that host  
-5. **Smoke-test** `https://orbitwithben.com/go/brilliant-physics` → 302 → Brilliant with `ref=` · click row appears  
+4. **Point** `https://historyofscience.com/go` at Content Ops (DNS / reverse proxy), or set  
+   `AFFILIATE_REDIRECT_BASE_URL=https://historyofscience.com/go` if the app already owns that host  
+5. **Smoke-test** `https://historyofscience.com/go/brilliant-physics` → 302 → Brilliant with `ref=` · click row appears  
 6. On a long-form video: regenerate → approve trust-gated placement → publish description with `/go/` links  
 7. When reports exist: CSV import on `/affiliate/import`
 
@@ -33,7 +33,7 @@ Destination URLs come from `src/lib/affiliate/live-product-urls.ts` (confirmed A
 
 ```bash
 APP_BASE_URL=https://<your-content-ops-host>
-AFFILIATE_REDIRECT_BASE_URL=https://orbitwithben.com/go
+AFFILIATE_REDIRECT_BASE_URL=https://historyofscience.com/go
 AMAZON_ASSOCIATE_TAG=<uk-tag>
 BRILLIANT_AFFILIATE_ID=<brilliant-id>
 ```

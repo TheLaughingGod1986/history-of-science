@@ -83,7 +83,7 @@ def set_related(page, sid: str, num: str) -> dict:
     search = page.locator("ytcp-video-pick-dialog #search-yours")
     if not search.count():
         search = page.get_by_placeholder(re.compile(r"Search your videos", re.I))
-    for q in (LONG_TITLE, LONG_ID, "Orbit's Cosmic Journey"):
+    for q in (LONG_TITLE, LONG_ID, "History of Science"):
         search.first.fill(q)
         page.wait_for_timeout(2500)
         body = page.locator("ytcp-video-pick-dialog").inner_text()

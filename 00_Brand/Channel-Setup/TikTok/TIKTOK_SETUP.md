@@ -6,11 +6,11 @@ Mirror of YouTube brand for TikTok discovery. Pillar stays YouTube.
 
 | Field | Value |
 |---|---|
-| Display name | **Orbit with Ben** |
-| Preferred handle | **@OrbitWithBen** |
-| Fallbacks | `@OrbitWithBenYT` · `@MeetOrbit` · `@OrbitExplores` · `@HelloOrbit` · `@OrbitCosmos` |
+| Display name | **History of Science** |
+| Preferred handle | **@HistoryOfScience** |
+| Fallbacks | `@HistoryOfScienceYT` · `@MeetOrbit` · `@OrbitExplores` · `@HelloOrbit` · `@OrbitCosmos` |
 | Bio (≤80) | `Space stories. Big questions. Full films on YT ↓` |
-| Website | https://www.youtube.com/@OrbitWithBen |
+| Website | https://www.youtube.com/@HistoryOfScience |
 | Avatar | Same Orbit mascot as YouTube (`avatar_800x800.png`) |
 
 ## Assets
@@ -30,7 +30,7 @@ Mirror of YouTube brand for TikTok discovery. Pillar stays YouTube.
 
 ## Soft CTA rule
 
-TikTok is discovery only. Captions: “Watch the full story on Orbit with Ben” — never hard sell, never watermarked re-uploads.
+TikTok is discovery only. Captions: “Watch the full story on History of Science” — never hard sell, never watermarked re-uploads.
 
 ## Create
 

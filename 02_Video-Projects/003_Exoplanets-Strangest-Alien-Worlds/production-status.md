@@ -29,7 +29,7 @@
 
 Orbit **visits** strange exoplanets — one clear wonder per beat. Science lands on the world; emotion lands on Orbit. Not a talking-head over space wallpaper.
 
-**Title (vidIQ 97):** Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey  
+**Title (vidIQ 97):** Alien Worlds: The Strangest Planets We've Ever Found | History of Science  
 
 ## Assets ready
 

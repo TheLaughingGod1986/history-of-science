@@ -15,7 +15,7 @@ PKG = Path(
 AUDIT = PKG / "Schedule/_studio_audit_shorts_v001"
 OUT = PKG / "Schedule/aliens_cleanup_oppti_comments_v02.json"
 LONG_ID = "Mo93x0fxB1Q"
-ORBIT = "UC_esArsDKd3GJvOkeO0DUog"
+ORBIT = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 NEEDLE = "best explains the silence"
 PINNED = (PKG / "Pinned-Comments/aliens_long_pinned-comment_v01.txt").read_text().strip()
 
@@ -46,7 +46,7 @@ def switch_to_orbit(page) -> str | None:
             'ytd-account-item-renderer, tp-yt-paper-item, yt-list-item-view-model, yt-formatted-string'
           )) {
             const t=n.innerText||'';
-            if (/Orbit with Ben/i.test(t)) { n.click(); return t.slice(0,80); }
+            if (/History of Science/i.test(t)) { n.click(); return t.slice(0,80); }
           }
           return null;
         }"""
@@ -184,7 +184,7 @@ def main():
             for i in range(threads.count()):
                 t = threads.nth(i).inner_text()
                 if re.search(r"opptiai|OpptiAI", t, re.I) or (
-                    NEEDLE in t and "Orbit with Ben" not in t.split("\n")[0]
+                    NEEDLE in t and "History of Science" not in t.split("\n")[0]
                 ):
                     hit = i
                     break
@@ -256,7 +256,7 @@ def main():
                   for (const n of document.querySelectorAll(
                     'ytd-account-item-renderer, tp-yt-paper-item, yt-formatted-string'
                   )) {
-                    if (/Orbit with Ben/i.test(n.innerText||'')) { n.click(); return; }
+                    if (/History of Science/i.test(n.innerText||'')) { n.click(); return; }
                   }
                 }"""
             )

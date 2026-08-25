@@ -1,9 +1,9 @@
-# Orbit with Ben — Brand Optimisation
+# History of Science — Brand Optimisation
 
 **Role:** Senior YouTube brand strategist · creative director · IP development  
 **Mode:** Optimise what works — do not redesign the concept.  
 **Date:** 2026-07-27  
-**Channel:** [@OrbitWithBen](https://www.youtube.com/@OrbitWithBen) · `UC_esArsDKd3GJvOkeO0DUog`
+**Channel:** [@HistoryOfScience](https://www.youtube.com/@HistoryOfScience) · `TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL`
 
 **Keep:** Orbit mascot · orange robot · space exploration · curious storytelling · warm science · documentary approach.  
 **Feel:** Pixar storytelling × space documentary.  
@@ -18,11 +18,11 @@
 | Layer | Name | Role |
 |-------|------|------|
 | **Primary IP** | **ORBIT** | The recognisable character, wordmark, colour, and universe |
-| **Channel / legal** | Orbit with Ben | YouTube account name (already live; searchable; human credit) |
+| **Channel / legal** | History of Science | YouTube account name (already live; searchable; human credit) |
 | **Signature line** | Big questions. Deep universe. | Philosophy (use in About, trailers, end cards) |
 | **Banner line** | Big questions. Bigger universe. | Visual slogan (already on banner — keep for continuity) |
 
-**Orbit with Ben** stays as the YouTube display name for now (bare “Orbit” was rejected at channel creation; “with Ben” also builds trust and search for creator name).
+**History of Science** stays as the YouTube display name for now (bare “Orbit” was rejected at channel creation; “with Ben” also builds trust and search for creator name).
 
 **Visual hierarchy rule:** On screen, **ORBIT** always wins. “with Ben” is secondary credit — never equal weight in logos, thumbs, or end cards.
 
@@ -48,7 +48,7 @@
 
 | Subscribers | Name strategy |
 |-------------|----------------|
-| Now–50k | Keep **Orbit with Ben** on YouTube |
+| Now–50k | Keep **History of Science** on YouTube |
 | 50k–100k | Test shorthand “Orbit” in spoken outros + merch |
 | 100k+ | If YouTube allows rename to **Orbit**, take it; keep @handle; “with Ben” in About as creator credit |
 
@@ -128,8 +128,8 @@ Tone: curious, careful, a little witty. Science over speculation. No conspiracy.
 Big questions. Deep universe.
 
 ———
-Orbit with Ben
-Animated space storytelling · @OrbitWithBen
+History of Science
+Animated space storytelling · @HistoryOfScience
 ```
 
 ### Notes

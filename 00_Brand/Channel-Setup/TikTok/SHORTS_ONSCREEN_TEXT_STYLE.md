@@ -62,7 +62,7 @@ Funnel ops: `SHORTS_FUNNEL_AND_CROSSPOST.md` (metrics · monster-hook order · Y
 | **actualspace1** | Solid space niche | Short VO-synced phrases · dark cinematic beds |
 | **mind_lapse1** | ~42K · high like density | Word-by-word kinetic captions |
 
-**Note:** `@orbitwithben` shows **0 Following** on web/Studio. Phone follows (including private accounts) are not visible here — style lock is driven by your screenshots + public niche samples above.
+**Note:** `@historyofscience` shows **0 Following** on web/Studio. Phone follows (including private accounts) are not visible here — style lock is driven by your screenshots + public niche samples above.
 
 ---
 

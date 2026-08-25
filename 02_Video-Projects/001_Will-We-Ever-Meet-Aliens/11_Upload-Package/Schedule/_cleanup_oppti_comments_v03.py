@@ -14,7 +14,7 @@ PKG = Path(
 )
 AUDIT = PKG / "Schedule/_studio_audit_shorts_v001"
 OUT = PKG / "Schedule/aliens_cleanup_oppti_comments_v03.json"
-ORBIT = "UC_esArsDKd3GJvOkeO0DUog"
+ORBIT = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 LONG_ID = "Mo93x0fxB1Q"
 PINNED = (PKG / "Pinned-Comments/aliens_long_pinned-comment_v01.txt").read_text().strip()
 NEEDLE = "best explains the silence"
@@ -266,7 +266,7 @@ def main():
                   for (const n of document.querySelectorAll(
                     'ytd-account-item-renderer, tp-yt-paper-item, yt-formatted-string'
                   )) {
-                    if (/Orbit with Ben/i.test(n.innerText||'')) { n.click(); return; }
+                    if (/History of Science/i.test(n.innerText||'')) { n.click(); return; }
                   }
                 }"""
             )

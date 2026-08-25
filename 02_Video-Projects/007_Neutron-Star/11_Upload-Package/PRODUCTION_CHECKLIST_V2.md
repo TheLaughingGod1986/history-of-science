@@ -1,4 +1,4 @@
-# Production checklist v2 — Orbit with Ben
+# Production checklist v2 — History of Science
 
 **Episode:**  
 **Date:**  

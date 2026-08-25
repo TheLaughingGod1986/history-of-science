@@ -8,11 +8,11 @@
 
 | | Title | Score | Keep? |
 |---|-------|------:|-------|
-| **A LOCK** | How Far Is the Nearest Star? Orbit Tries to Walk There \| Orbit's Cosmic Journey | **94** | **Yes** — honest question + Orbit action |
-| **B** | Orbit Walks to the Nearest Star — Here's How Long It Takes \| Orbit's Cosmic Journey | **93** | Strong alt |
-| **C** | What's Between Us and the Nearest Star? Orbit Walks There \| Orbit's Cosmic Journey | **92** | Original pitch; solid |
-| — | If Orbit Walked to Proxima Centauri, How Long Would It Take? \| Orbit's Cosmic Journey | 92 | Proxima SEO; longer |
-| — | The Scale of the Universe: Orbit Walks From Earth to Proxima \| Orbit's Cosmic Journey | 89 | Below gate alone — use in desc |
+| **A LOCK** | How Far Is the Nearest Star? Orbit Tries to Walk There \| History of Science | **94** | **Yes** — honest question + Orbit action |
+| **B** | Orbit Walks to the Nearest Star — Here's How Long It Takes \| History of Science | **93** | Strong alt |
+| **C** | What's Between Us and the Nearest Star? Orbit Walks There \| History of Science | **92** | Original pitch; solid |
+| — | If Orbit Walked to Proxima Centauri, How Long Would It Take? \| History of Science | 92 | Proxima SEO; longer |
+| — | The Scale of the Universe: Orbit Walks From Earth to Proxima \| History of Science | 89 | Below gate alone — use in desc |
 
 ## Keywords
 
@@ -25,5 +25,5 @@
 
 ## Decision
 
-**Locked (provisional):** How Far Is the Nearest Star? Orbit Tries to Walk There | Orbit's Cosmic Journey  
+**Locked (provisional):** How Far Is the Nearest Star? Orbit Tries to Walk There | History of Science  
 **Why:** Best score + clear question loop; plant Proxima in description for search volume.

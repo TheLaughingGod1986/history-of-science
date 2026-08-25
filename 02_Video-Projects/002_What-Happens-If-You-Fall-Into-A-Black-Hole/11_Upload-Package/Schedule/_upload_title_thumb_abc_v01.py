@@ -24,7 +24,7 @@ THUMBS = [
     THUMB_DIR / "blackhole_thumb_C_point-of-no-return_gpt-image-2_v01.png",
 ]
 TITLES = [
-    "What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey",
+    "What Happens If You Fall Into a Black Hole? History of Science",
     "Fall Into a Black Hole — Spaghettification Explained",
     "What Happens Past the Event Horizon? A Cosmic Journey",
 ]

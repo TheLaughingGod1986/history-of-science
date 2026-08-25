@@ -1,6 +1,6 @@
-# Orbit with Ben — Optimal Publishing Schedule
+# History of Science — Optimal Publishing Schedule
 
-**Channel:** Orbit with Ben (`@OrbitWithBen`)  
+**Channel:** History of Science (`@HistoryOfScience`)  
 **Timezone source of truth:** `Europe/London`  
 **Machine schedule:** `OPTIMAL_PUBLISH_SCHEDULE.json`  
 **Ops cadence card:** `CHANNEL_PUBLISH_CADENCE.md`  

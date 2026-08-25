@@ -1,5 +1,5 @@
 {
-  "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+  "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
   "pulled_at": "2026-08-01T11:03:48.839995+00:00",
   "source": "vidiq MCP HTTP direct",
   "balance": {
@@ -12,8 +12,8 @@
     "maxAddOnCredits": 70
   },
   "channel_stats": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
-    "title": "Orbit with Ben",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
+    "title": "History of Science",
     "thumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s240-c-k-c0x00ffffff-no-rj",
     "country": "GB",
     "defaultLanguage": null,
@@ -57,15 +57,15 @@
     ]
   },
   "long_recent": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
-    "channelTitle": "Orbit with Ben",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
+    "channelTitle": "History of Science",
     "channelThumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s800-c-k-c0x00ffffff-no-rj",
     "videoFormat": "long",
     "popular": false,
     "videos": [
       {
         "videoId": "Mo93x0fxB1Q",
-        "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+        "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science",
         "publishedAt": "2026-07-30T17:00:09Z",
         "thumbnail": "https://i.ytimg.com/vi/Mo93x0fxB1Q/maxresdefault.jpg",
         "viewCount": 5,
@@ -78,8 +78,8 @@
     ]
   },
   "short_recent": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
-    "channelTitle": "Orbit with Ben",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
+    "channelTitle": "History of Science",
     "channelThumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s800-c-k-c0x00ffffff-no-rj",
     "videoFormat": "short",
     "popular": false,
@@ -99,15 +99,15 @@
     ]
   },
   "long_popular": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
-    "channelTitle": "Orbit with Ben",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
+    "channelTitle": "History of Science",
     "channelThumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s800-c-k-c0x00ffffff-no-rj",
     "videoFormat": "long",
     "popular": true,
     "videos": [
       {
         "videoId": "Mo93x0fxB1Q",
-        "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+        "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science",
         "publishedAt": "2026-07-30T17:00:09Z",
         "thumbnail": "https://i.ytimg.com/vi/Mo93x0fxB1Q/maxresdefault.jpg",
         "viewCount": 5,
@@ -120,7 +120,7 @@
     ]
   },
   "short_popular": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
     "channelTitle": null,
     "channelThumbnail": "https://yt3.ggpht.com/ZLq0YZg1lHMRPo3doP4aSnDQlxp3cJgWJz89MceO3yOA-jp7Bx138sVGuJ29ZL5HV1zLefOG0Q=s800-c-k-c0x00ffffff-no-rj",
     "videoFormat": "short",
@@ -128,7 +128,7 @@
     "videos": []
   },
   "top_videos": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
     "startDate": "2026-07-27",
     "endDate": "2026-08-01",
     "columnHeaders": [
@@ -199,7 +199,7 @@
     ]
   },
   "traffic_sources": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
     "startDate": "2026-07-27",
     "endDate": "2026-08-01",
     "columnHeaders": [
@@ -240,7 +240,7 @@
     ]
   },
   "audience_demographics": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
     "startDate": "2026-07-27",
     "endDate": "2026-08-01",
     "columnHeaders": [
@@ -263,7 +263,7 @@
     "rows": []
   },
   "audience_geography": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
     "startDate": "2026-07-27",
     "endDate": "2026-08-01",
     "columnHeaders": [
@@ -291,7 +291,7 @@
     "rows": []
   },
   "shorts_vs_longform": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
     "startDate": "2026-07-27",
     "endDate": "2026-08-01",
     "columnHeaders": [
@@ -326,7 +326,7 @@
     ]
   },
   "daily_metrics": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
     "startDate": "2026-07-27",
     "endDate": "2026-08-01",
     "columnHeaders": [
@@ -391,7 +391,7 @@
     ]
   },
   "subscriber_insights": {
-    "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+    "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
     "period": "30_days",
     "growthUpdatedAt": null,
     "topChannels": [],
@@ -605,10 +605,10 @@
       {
         "id": "z-DLqoSoEBo",
         "title": "Where Is Everybody? The Fermi Paradox #Space #Shorts",
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
-        "channelTitle": "Orbit with Ben",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
+        "channelTitle": "History of Science",
         "publishedAt": "2026-07-31T00:09:58Z",
-        "description": "Are we alone in the universe? The Fermi Paradox explained in under a minute \u2014 countless stars, no clear hello.\n\nFull film:\nhttps://youtu.be/Mo93x0fxB1Q\n\n#FermiParadox #AreWeAlone #Space #Shorts #OrbitWithBen",
+        "description": "Are we alone in the universe? The Fermi Paradox explained in under a minute \u2014 countless stars, no clear hello.\n\nFull film:\nhttps://youtu.be/Mo93x0fxB1Q\n\n#FermiParadox #AreWeAlone #Space #Shorts #HistoryOfScience",
         "tags": [
           "SETI",
           "alien life",
@@ -644,11 +644,11 @@
       },
       {
         "id": "Mo93x0fxB1Q",
-        "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
-        "channelTitle": "Orbit with Ben",
+        "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
+        "channelTitle": "History of Science",
         "publishedAt": "2026-07-30T17:00:09Z",
-        "description": "Are we alone in the universe? The Fermi Paradox explained \u2014 if the Milky Way holds hundreds of billions of stars and countless planets, why does the sky stay so quiet?\n\nIn this Orbit's Cosmic Journey film, Orbit explores the Fermi Paradox, the Great Filter, the zoo hypothesis, the limits of interstellar communication, and how humanity might detect alien life. The first convincing sign may not be a spacecraft or a dramatic message. It may be a faint chemical fingerprint, an unusual pulse, or a clue already hidden inside old data.\n\nCHAPTERS\n00:00 Are we alone?\n00:20 A galaxy of possibilities\n02:36 Where is everybody? The Fermi Paradox\n03:43 Worlds beyond our Solar System\n04:54 Why the galaxy may be quiet\n07:05 The Great Filter\n11:51 How humanity is searching\n14:31 What first contact may really look like\n17:21 The clue may already be here\n\nWhat do you think explains the silence: distance, rarity, timing, deliberate quiet\u2014or something we have not yet imagined?\n\nSubscribe to Orbit for thoughtful space stories and big questions:\nhttps://www.youtube.com/@OrbitWithBen\n\nWonder over certainty. Curiosity over clickbait.\n\n#FermiParadox #AreWeAlone #SpaceDocumentary #Aliens #OrbitWithBen",
+        "description": "Are we alone in the universe? The Fermi Paradox explained \u2014 if the Milky Way holds hundreds of billions of stars and countless planets, why does the sky stay so quiet?\n\nIn this History of Science film, Orbit explores the Fermi Paradox, the Great Filter, the zoo hypothesis, the limits of interstellar communication, and how humanity might detect alien life. The first convincing sign may not be a spacecraft or a dramatic message. It may be a faint chemical fingerprint, an unusual pulse, or a clue already hidden inside old data.\n\nCHAPTERS\n00:00 Are we alone?\n00:20 A galaxy of possibilities\n02:36 Where is everybody? The Fermi Paradox\n03:43 Worlds beyond our Solar System\n04:54 Why the galaxy may be quiet\n07:05 The Great Filter\n11:51 How humanity is searching\n14:31 What first contact may really look like\n17:21 The clue may already be here\n\nWhat do you think explains the silence: distance, rarity, timing, deliberate quiet\u2014or something we have not yet imagined?\n\nSubscribe to Orbit for thoughtful space stories and big questions:\nhttps://www.youtube.com/@HistoryOfScience\n\nWonder over certainty. Curiosity over clickbait.\n\n#FermiParadox #AreWeAlone #SpaceDocumentary #Aliens #HistoryOfScience",
         "tags": [
           "SETI",
           "alien contact",
@@ -692,7 +692,7 @@
   "per_video": {
     "Mo93x0fxB1Q": {
       "retention": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -715,7 +715,7 @@
         "rows": []
       },
       "traffic": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -965,7 +965,7 @@
     },
     "z-DLqoSoEBo": {
       "retention": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -988,7 +988,7 @@
         "rows": []
       },
       "traffic": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -1127,7 +1127,7 @@
     },
     "UWwNKYf_aU8": {
       "retention": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -1150,7 +1150,7 @@
         "rows": []
       },
       "traffic": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -1226,7 +1226,7 @@
     },
     "MO19iXYCu0c": {
       "retention": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -1249,7 +1249,7 @@
         "rows": []
       },
       "traffic": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -1304,7 +1304,7 @@
     },
     "--CxhjNqtSY": {
       "retention": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -1327,7 +1327,7 @@
         "rows": []
       },
       "traffic": {
-        "channelId": "UC_esArsDKd3GJvOkeO0DUog",
+        "channelId": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
         "startDate": "2026-07-27",
         "endDate": "2026-08-01",
         "columnHeaders": [
@@ -6791,7 +6791,7 @@
   "title_scores": [
     {
       "type": "long",
-      "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey",
+      "title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science",
       "videoId": "Mo93x0fxB1Q",
       "result": {
         "score": 97
@@ -6823,7 +6823,7 @@
     },
     {
       "type": "long",
-      "title": "What Happens If You Fall Into a Black Hole? | Orbit's Cosmic Journey",
+      "title": "What Happens If You Fall Into a Black Hole? | History of Science",
       "videoId": null,
       "result": {
         "score": 98
@@ -6831,7 +6831,7 @@
     },
     {
       "type": "long",
-      "title": "Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey",
+      "title": "Alien Worlds: The Strangest Planets We've Ever Found | History of Science",
       "videoId": null,
       "result": {
         "score": 97

@@ -1,62 +1,62 @@
-# Orbit — YouTube Production Workspace
+# History of Science — YouTube Production Workspace
 
-Production workspace for **Orbit with Ben** (`@OrbitWithBen`) — a faceless
-animated science storytelling channel. Feel: *Pixar meets space documentary.*
+Production workspace for **History of Science** (`@HistoryOfScience`) — a new
+cartoon-forward, upbeat animated science channel. Separate repo and channel from
+Orbit With Ben.
 
-Orbit is a small hovering robot: rounded orange body, black faceplate, cream
-expressive eyes, a single glowing antenna, and two side arms — *a tiny robot
-asking the biggest questions in the universe.*
+**Vision (locked):** `00_Brand/Channel-Setup/CHANNEL_VISION.md`  
+**Channel checklist:** `00_Brand/Channel-Setup/CHANNEL_READY.md` · `CHANNEL_META.json`
+
+| Stack | Reuse |
+|---|---|
+| VO | ElevenLabs Ben Orbit Narrator (same British voice) |
+| CG | Omni / Gemini Veo silent picture (`04_Audio/tools/orbit_gemini_veo.py`) |
+| Upload | YouTube Data API v3 via Content Ops |
+
+Feel: stylised cartoon science · bright · curious — not photoreal dread essays.
 
 **Creative director system:** `00_Brand/CHANNEL_BUILD_SYSTEM.md`  
-**Live channel:** `00_Brand/Channel-Setup/CHANNEL_READY.md`  
-**YouTube Growth System v2 (canonical):** `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
+**YouTube Growth System v2:** `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
 **Publishing & Shorts strategy:** `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`  
 **Publish schedule:** `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.md` · `CHANNEL_PUBLISH_CADENCE.md`  
-**Latest audit:** `00_Brand/Channel-Setup/audits/CHANNEL_AUDIT_2026-08-01_PM.md`  
 **Flywheel / release:** `CONTENT_FLYWHEEL_TEMPLATE.md` · `RELEASE_WEEK_CHECKLIST.md`  
 **Video backlog:** `00_Brand/Channel-Setup/VIDEO_BACKLOG.json`  
-**Long-form quality gate (8–12 min · cold open · VO–picture):** `00_Brand/Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
-**CG = Gemini Veo API** (`04_Audio/tools/orbit_gemini_veo.py` · `docs/GEMINI_VEO_CG.md`) · **VO = ElevenLabs** Ben Orbit Narrator  
-**Pre-build vidIQ audit (blocking before gen):** `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
-**Retention & growth (locked going forward):** `00_Brand/Channel-Setup/RETENTION_AND_GROWTH_LOCKED.md`  
+**Long-form quality gate:** `00_Brand/Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
+**CG docs:** `docs/GEMINI_VEO_CG.md` · **VO lock:** `.cursor/rules/orbit-british-vo-lock.mdc`  
+**Pre-build vidIQ audit:** `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`  
+**Retention & growth:** `00_Brand/Channel-Setup/RETENTION_AND_GROWTH_LOCKED.md`  
 **Script reviewer (≥90):** `cd 07_Content-Ops && npm run review:script -- --file <script.md>`  
 **Episode gate:** `cd 07_Content-Ops && npm run gate:episode -- --project ../02_Video-Projects/<slug>`  
-**Next brief:** `cd 07_Content-Ops && npm run brief:next -- --file metrics.json`  
-**Affiliate monetisation (Content Ops):** `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md` · `/affiliate`  
+**Affiliate (Content Ops):** `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md`  
 **New episode scaffold:** `02_Video-Projects/_template_NNN_Episode-Slug/`  
-**Cursor hooks:** `.cursor/hooks.json` (session checklist + pre-gen reminder)  
-**Shorts mirrors:** TikTok `Channel-Setup/TikTok/AUTO_POST.md` · Meta (IG+FB) `Channel-Setup/Meta/AUTO_POST.md`  
-**Playback lag (smooth audio, glitchy picture):** `docs/PLAYBACK_LAG_FIX.md` — remaster CFR then Studio **Replace** (keeps views)
 
-This repository holds every asset for the channel — the character bible, the
-per-video projects, reusable animation and audio libraries, and final exports.
+`01_Orbit-Character/` is **legacy seed** from the Orbit template until a History of
+Science character bible exists — do not ship Orbit orange robot as this channel’s mascot unless Ben locks that.
 
 ---
 
 ## Purpose
 
-1. Keep **one canonical visual definition of Orbit** so the character never
-   drifts between videos.
-2. Build a **reusable library** of Orbit animation clips (hover, talking,
-   reactions, outros) that can be dropped into any future video.
-3. Keep raw AI generations, chosen takes, and polished masters clearly separated
-   and never confused with each other.
+1. Run **History of Science** as its own channel — cartoon / upbeat science films.
+2. Reuse the proven **VO + Omni/Veo + YouTube API** ops stack without pointing at Orbit With Ben.
+3. Keep raw AI generations, chosen takes, and polished masters clearly separated.
+4. Replace legacy Orbit character seed with a History of Science character bible before first ship.
 
 ---
 
 ## Directory map
 
 ```
-Orbit-YouTube/
-├── 00_Brand/                       Channel identity
+history-of-science/
+├── 00_Brand/                       Channel identity + CHANNEL_VISION.md
 │   ├── Logos/                      Channel logo, watermark, endcards
 │   ├── Fonts/                      Licensed font files
 │   ├── Colour-Palette/             Swatches, hex reference
 │   ├── Thumbnails/                 Reusable thumbnail templates
 │   └── Brand-Guidelines/           Written brand + voice rules
 │
-├── 01_Orbit-Character/             THE CHARACTER BIBLE
-│   ├── 01_Master-References/       PROTECTED. Canonical character sheets.
+├── 01_Orbit-Character/             LEGACY SEED (replace with HOS character bible)
+│   ├── 01_Master-References/       Old Orbit sheets — not HOS default
 │   ├── 02_Transparent-PNGs/        Cut-outs with alpha for compositing
 │   ├── 03_Expressions/             curious · amazed · concerned · playful
 │   ├── 04_Poses/                   front · side · pointing · waving

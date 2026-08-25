@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Clean Instagram @orbitwithben: delete legacy merch/animal posts + duplicate reels.
+"""Clean Instagram @historyofscience: delete legacy merch/animal posts + duplicate reels.
 
 Keeps one copy of each live Orbit short that has 'Full film on YouTube' in the caption.
 Verifies profile bio + YouTube link.
@@ -24,7 +24,7 @@ KEEP_CAPTION_MARKERS = [
     "what if aliens are watching",
 ]
 FULL_FILM = "full film on youtube"
-YT_LINK = "youtube.com/@orbitwithben"
+YT_LINK = "youtube.com/@historyofscience"
 
 # Soft caps so a hung run does not wipe forever; re-run to continue.
 MAX_LEGACY_DELETES = 120
@@ -55,7 +55,7 @@ def _dismiss_noise(page) -> None:
 
 
 def collect_hrefs(page) -> list[str]:
-    _goto(page, "https://www.instagram.com/orbitwithben/", wait=4)
+    _goto(page, "https://www.instagram.com/historyofscience/", wait=4)
     _dismiss_noise(page)
     hrefs: list[str] = []
     stagnant = 0
@@ -69,11 +69,11 @@ def collect_hrefs(page) -> list[str]:
             if not h:
                 continue
             # normalize
-            m = re.search(r"(/orbitwithben/(?:p|reel)/[^/?#]+/?)", h)
+            m = re.search(r"(/historyofscience/(?:p|reel)/[^/?#]+/?)", h)
             if not m:
                 m = re.search(r"(/(?:p|reel)/[^/?#]+/?)", h)
                 if m:
-                    h = "/orbitwithben" + m.group(1)
+                    h = "/historyofscience" + m.group(1)
                 else:
                     continue
             else:
@@ -223,7 +223,7 @@ def delete_post(page, href: str) -> dict:
     except Exception as e:
         return {"href": href, "status": "nav_fail", "error": str(e)[:160]}
     _dismiss_noise(page)
-    if page.url.rstrip("/").endswith("orbitwithben") or "/accounts/login" in page.url:
+    if page.url.rstrip("/").endswith("historyofscience") or "/accounts/login" in page.url:
         return {"href": href, "status": "gone_or_login"}
     # already deleted?
     body = ""
@@ -244,14 +244,14 @@ def delete_post(page, href: str) -> dict:
     try:
         _goto(page, url, wait=1.5)
         body2 = page.inner_text("body")[:800]
-        gone = "isn't available" in body2.lower() or "/orbitwithben/" == page.url.rstrip("/")[-15:]
+        gone = "isn't available" in body2.lower() or "/historyofscience/" == page.url.rstrip("/")[-15:]
     except Exception:
         gone = True
     return {"href": href, "status": "deleted" if gone else "deleted_unverified"}
 
 
 def verify_profile(page) -> dict:
-    _goto(page, "https://www.instagram.com/orbitwithben/", wait=4)
+    _goto(page, "https://www.instagram.com/historyofscience/", wait=4)
     _dismiss_noise(page)
     body = page.inner_text("body")
     page.screenshot(path=str(OUT / "ig_profile_after.png"), full_page=True)

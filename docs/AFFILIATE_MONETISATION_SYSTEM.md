@@ -1,6 +1,6 @@
 # Affiliate Monetisation System
 
-Long-term monetisation platform for **Orbit With Ben**, integrated into Content Ops (`07_Content-Ops/`). Relevance before revenue — never recommend a product solely because it pays commission.
+Long-term monetisation platform for **History of Science**, integrated into Content Ops (`07_Content-Ops/`). Relevance before revenue — never recommend a product solely because it pays commission.
 
 ## Philosophy
 
@@ -166,7 +166,7 @@ Watch the film first.
 [YouTube film URL]
 ```
 
-If there is no film that week, the door is `https://orbitwithben.com/go/{slug}` instead (no “Watch the film first”).
+If there is no film that week, the door is `https://historyofscience.com/go/{slug}` instead (no “Watch the film first”).
 
 **Instagram feed** — same caption pattern as Facebook Page; one `/go/` or YouTube link.
 
@@ -247,7 +247,7 @@ Migration: `20260815140000_affiliate_monetisation`
 ```bash
 AMAZON_ASSOCIATE_TAG=your-uk-tag
 BRILLIANT_AFFILIATE_ID=your-brilliant-id
-AFFILIATE_REDIRECT_BASE_URL=https://orbitwithben.com/go   # optional; defaults to ${APP_BASE_URL}/go
+AFFILIATE_REDIRECT_BASE_URL=https://historyofscience.com/go   # optional; defaults to ${APP_BASE_URL}/go
 ```
 
 Seed URLs are `example.invalid` placeholders. Replace product destination/affiliate URLs in `/affiliate/products` after accounts are approved.
@@ -361,7 +361,7 @@ Sample: `content/samples/csv/affiliate_amazon_sample.csv`
 
 ## Gear / public site (Phase 5 prep)
 
-`GET /api/affiliate/gear` returns SEO-ready category + product JSON (`goUrl`, tags, programme). Ready for orbitwithben.com/gear — no full public marketing site in this app.
+`GET /api/affiliate/gear` returns SEO-ready category + product JSON (`goUrl`, tags, programme). Ready for historyofscience.com/gear — no full public marketing site in this app.
 
 ## Commands
 
@@ -382,7 +382,7 @@ Open http://localhost:3000/affiliate
 - Brilliant affiliate approval + `BRILLIANT_AFFILIATE_ID`
 - Specialist retailer programme contracts / tracking links
 - LEGO Affiliate access (programme seeded inactive)
-- Production `AFFILIATE_REDIRECT_BASE_URL=https://orbitwithben.com/go` + DNS/hosting for redirects (or proxy to Content Ops)
+- Production `AFFILIATE_REDIRECT_BASE_URL=https://historyofscience.com/go` + DNS/hosting for redirects (or proxy to Content Ops)
 
 **Go-live helpers (in-repo):** see `docs/AFFILIATE_GO_LIVE.md`
 

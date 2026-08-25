@@ -6,12 +6,12 @@ Mirror of YouTube brand for Meta discovery. Pillar stays YouTube.
 
 | Field | Value |
 |-------|-------|
-| Display name | **Orbit with Ben** |
-| Preferred IG | **@orbitwithben** |
-| Fallbacks | `@orbit.with.ben` · `@orbitwithbenyt` |
-| Facebook Page | **Orbit with Ben** |
+| Display name | **History of Science** |
+| Preferred IG | **@historyofscience** |
+| Fallbacks | `@orbit.with.ben` · `@historyofscienceyt` |
+| Facebook Page | **History of Science** |
 | Bio | `Space stories. Big questions. Full films on YouTube ↓` |
-| Website | https://www.youtube.com/@OrbitWithBen |
+| Website | https://www.youtube.com/@HistoryOfScience |
 | Avatar | Same Orbit mascot (`TikTok/avatar_800x800.png`) |
 
 ## Soft CTA rule

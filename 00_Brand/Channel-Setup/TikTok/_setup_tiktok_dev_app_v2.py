@@ -126,7 +126,7 @@ def main() -> None:
                 result["status"] = "needs_developer_login"
                 result["notes"] = (
                     "Log into https://developers.tiktok.com with the TikTok account "
-                    "@orbitwithben (or Ben's developer account), create an app, then re-run."
+                    "@historyofscience (or Ben's developer account), create an app, then re-run."
                 )
                 RESULT.write_text(json.dumps(result, indent=2) + "\n")
                 print(json.dumps(result, indent=2), flush=True)

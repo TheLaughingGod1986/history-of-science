@@ -9,7 +9,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 START, END = "2026-07-27", "2026-08-25"
 OUT = Path(__file__).resolve().parent / "vidiq_raw.json"
 

@@ -104,7 +104,7 @@ def main() -> None:
                 """() => {
                   for (const el of document.querySelectorAll('button,[role=button],a')) {
                     const t=(el.innerText||'').trim();
-                    if (/log in as orbitwithben|continue as|continue|allow|log in/i.test(t) && t.length<80) {
+                    if (/log in as historyofscience|continue as|continue|allow|log in/i.test(t) && t.length<80) {
                       el.click(); return t;
                     }
                   }
@@ -194,7 +194,7 @@ def main() -> None:
                     """() => {
                       for (const el of document.querySelectorAll('button,[role=button],a')) {
                         const t=(el.innerText||'').trim();
-                        if (/log in as orbitwithben|continue as|continue|allow/i.test(t) && t.length<80) {
+                        if (/log in as historyofscience|continue as|continue|allow/i.test(t) && t.length<80) {
                           el.click(); return t;
                         }
                       }
