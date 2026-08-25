@@ -11,19 +11,23 @@ Repo: `history-of-science` (separate from `orbit-with-ben`)
 |---|---|
 | Display name | **History of Science** |
 | Handle (target) | **@HistoryOfScience** (confirm availability at create) |
-| Feel | **3D cartoon** · upbeat · curious · discovery-first |
+| Feel | **3D cartoon** immersion (Animistry-class) · curious · discovery-first |
+| Runtime | **8–9 minutes** per long |
+| Titles | Curiosity questions / day-in-the-life / “Did X really…?” — about **science** |
+| Inspiration | [Animistry](https://www.youtube.com/@ytAnimistry) — steal form, not topics (`INSPIRATION_ANIMISTRY.md`) |
 | Tagline | Discovery. Wonder. Proof. |
 | Brand line | How we discovered what we know. |
-| Mascot | **the Explorer** — side character only (`01_Character/`) |
-| Not | Orbit With Ben clone · Orbit robot · continuous mascot show · dread essay |
+| Mascot | **the Explorer** — sparse side character (`01_Character/`) |
+| Not | Orbit With Ben · continuous mascot · war-history clone · dread essay |
 
 ## Picture rules (locked)
 
-1. **Story is the star.** Worlds, discoveries, experiments, and ideas lead every film.
-2. Style: almost **3D cartoon** feature animation — stylised, bright, soft cinematic light.
-3. **Explorer** pops in **every few scenes** (≈ every 3–5): walks through, shows interest, interacts with a prop (e.g. dusts a library book and reads), reacts thinking / surprised / eureka — then leaves.
-4. He is **less intrusive than Orbit** on Orbit With Ben. Never continuous presence. Never the whole film’s talking head.
+1. **Story is the star.** Put the viewer inside the discovery — Animistry immersion, pointed at science.
+2. Style: **3D stylised cartoon** (feature-animation polish) — warm cinematic light, period/lab worlds.
+3. **Explorer** pops in **every few scenes** (≈ every 3–5): walks through, shows interest, interacts with a prop, reacts — then leaves. (Animistry has no mascot; we keep a light garnish only.)
+4. Never continuous Orbit-style presence. Never the whole film’s talking head.
 5. Mute test: story still reads without him.
+6. Length **8–9 min** — do not default to 15–16 until hold proves out.
 
 Canonical sheet: `01_Character/01_Master-References/hos-explorer-character-sheet-v01.jpg`
 

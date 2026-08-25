@@ -14,7 +14,8 @@ side character. Separate repo and channel from Orbit With Ben.
 | CG | Omni / Gemini Veo silent picture (`04_Audio/tools/orbit_gemini_veo.py`) |
 | Upload | YouTube Data API v3 via Content Ops |
 
-Feel: 3D cartoon discovery · bright · curious — story first, mascot second.
+Feel: **Animistry-class 3D cartoon** immersion · 8–9 min · curiosity titles about science discovery · Explorer as light garnish.  
+Inspiration: `00_Brand/Channel-Setup/INSPIRATION_ANIMISTRY.md` · https://www.youtube.com/@ytAnimistry
 
 **Creative director system:** `00_Brand/CHANNEL_BUILD_SYSTEM.md`  
 **YouTube Growth System v2 (canonical):** `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
