@@ -55,7 +55,7 @@ cd 07_Content-Ops && npm run brief:next -- --file metrics.json --topic "Next ide
 Once the **YouTube** long (and Shorts cluster) schedule is locked:
 
 1. **Thumbnails:** produce **3** Orbit-on-brand variants (one object · one emotion · one question). Score in VidIQ; use `vidiq_generate_thumbnail` only if house/Gemini thumbs are weak. Longs: start Studio **Thumbnail ABC** (or title+thumb ABC) after upload.
-2. **Social mirror:** Meta / Threads from the **same YouTube air times**. **TikTok is paused** (account ban, 25 Aug 2026) — do not upload or schedule TikTok until Ben lifts `TIKTOK_UPLOAD_BLOCK.json`. Never post social Shorts before the YouTube long is public.
+2. **Social mirror:** Meta / Threads from the **same YouTube air times**. **One unique post per Short** on Instagram, Facebook, and Threads — no remake/file/title duplicates (`orbit-social-no-duplicates.mdc`). **TikTok is paused** (account ban) until Ben lifts `TIKTOK_UPLOAD_BLOCK.json`. Never post social Shorts before the YouTube long is public.
 
 ## Defaults (documentary + cluster window)
 
