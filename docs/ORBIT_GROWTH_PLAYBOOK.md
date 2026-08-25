@@ -1,7 +1,7 @@
-# Orbit Growth Playbook
+# History of Science Growth Playbook
 
 **Channel:** History of Science  
-**Promise:** Calm, cinematic answers to humanity’s biggest space mysteries.  
+**Promise:** Calm, cinematic stories of how we discovered what we know.  
 **If I subscribe:** I regularly get fascinating space mysteries explained cinematically.  
 **System:** Growth System v2 — `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`
 
@@ -147,7 +147,7 @@ Template: `00_Brand/Channel-Setup/templates/TOPIC_OPPORTUNITY_SCORE.md`
 ## Titles & thumbnails
 
 - One promise; prefer ≤ ~60 characters.  
-- **No** `| History of Science` (or similar) on every upload.  
+- **No** `| Orbit's Cosmic Journey` (or similar) on every upload.  
 - Curiosity first; SEO second.  
 - Thumbnails: one object · one emotion · minimal text · one question; 3 concepts scored.
 

@@ -3,26 +3,26 @@
   "youtube_handle": "@HistoryOfScience",
   "meta_business_portfolio": {
     "name": "History of Science",
-    "business_id": "1352434763139246",
-    "notes": "Orbit Page + IG live under this portfolio (moved out of Benkay Creative on 2026-08-03)."
+    "business_id": null,
+    "notes": "Create a new Meta Business portfolio for this channel. Do not publish to the Orbit with Ben Page from this workspace."
   },
   "facebook": {
     "page_name": "History of Science",
-    "page_id": "61592833318203",
-    "business_suite_asset_id": "1285932871266399",
-    "preferred_handles": ["HistoryOfScience", "OrbitwithBen", "HistoryOfScienceYT"],
-    "page_url": "https://www.facebook.com/profile.php?id=61592833318203",
+    "page_id": null,
+    "business_suite_asset_id": null,
+    "preferred_handles": ["HistoryOfScience", "HistoryOfScienceYT"],
+    "page_url": null,
     "page_url_placeholder": "https://www.facebook.com/HistoryOfScience",
-    "notes": "Publish Reels to the Facebook Page only (not personal profile). Owned by History of Science portfolio."
+    "notes": "Publish Reels to a new Facebook Page only (not personal profile, not Orbit with Ben)."
   },
   "instagram": {
-    "preferred_handles": ["historyofscience", "orbit.with.ben", "historyofscienceyt"],
+    "preferred_handles": ["historyofscience", "historyofscienceyt"],
     "account_type": "professional",
     "must_link_to_facebook_page": true,
     "profile_url_placeholder": "https://www.instagram.com/historyofscience/",
-    "notes": "Creator or Business account linked to the Orbit Facebook Page. Reconnect after portfolio moves if Suite shows Connect Instagram."
+    "notes": "Creator or Business account linked to the new History of Science Facebook Page."
   },
-  "bio": "Space stories. Big questions. Full films on YouTube ↓",
+  "bio": "How we discovered what we know. Full films on YouTube ↓",
   "website": "https://www.youtube.com/@HistoryOfScience",
   "soft_cta": "Full film on YouTube."
 }

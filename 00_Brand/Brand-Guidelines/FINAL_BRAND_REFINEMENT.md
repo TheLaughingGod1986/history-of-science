@@ -2,7 +2,7 @@
 
 **Role:** Senior creative director · YouTube growth strategist · IP brand consultant  
 **Date:** 2026-07-27  
-**Channel:** [@HistoryOfScience](https://www.youtube.com/@HistoryOfScience) · `TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL`  
+**Channel:** [@HistoryOfScience](https://www.youtube.com/@HistoryOfScience) · *YouTube channel not created yet — do not use Orbit with Ben `UC_esArsDKd3GJvOkeO0DUog`*  
 **Mode:** Targeted refinement only — do not redesign the concept.
 
 **Preserve:** Orbit mascot · orange robot · space exploration · curious storytelling · warm science · documentary bones · philosophy *Big questions. Deep universe.*

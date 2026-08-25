@@ -1,6 +1,6 @@
 # Multi-platform strategy — History of Science
 
-YouTube remains the **pillar**. Every other platform is a discovery channel that should send viewers to the full Orbit documentary and brand.
+YouTube remains the **pillar**. Every other platform is a discovery channel that should send viewers to the full History of Science documentary and brand.
 
 ## Output from one long-form video
 

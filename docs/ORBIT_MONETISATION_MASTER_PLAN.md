@@ -2,7 +2,7 @@
 
 Status: implementation plan
 Owner: History of Science
-Primary repo: `TheLaughingGod1986/orbit-with-ben`
+Primary repo: `TheLaughingGod1986/history-of-science`
 Audience: coding agents, product agents, content agents and channel operators
 
 ## 1. Mission

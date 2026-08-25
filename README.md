@@ -1,10 +1,11 @@
 # History of Science — YouTube Production Workspace
 
-Production workspace for **History of Science** (`@HistoryOfScience`) — a new
-cartoon-forward, upbeat animated science channel. Separate repo and channel from
-Orbit With Ben.
+Production workspace for **History of Science** (`@HistoryOfScience`) — a
+**3D cartoon**, upbeat science channel. Story leads; the Explorer is a sparse
+side character. Separate repo and channel from Orbit With Ben.
 
 **Vision (locked):** `00_Brand/Channel-Setup/CHANNEL_VISION.md`  
+**Character bible:** `01_Character/CHARACTER_BIBLE.md`  
 **Channel checklist:** `00_Brand/Channel-Setup/CHANNEL_READY.md` · `CHANNEL_META.json`
 
 | Stack | Reuse |
@@ -13,16 +14,17 @@ Orbit With Ben.
 | CG | Omni / Gemini Veo silent picture (`04_Audio/tools/orbit_gemini_veo.py`) |
 | Upload | YouTube Data API v3 via Content Ops |
 
-Feel: stylised cartoon science · bright · curious — not photoreal dread essays.
+Feel: 3D cartoon discovery · bright · curious — story first, mascot second.
 
 **Creative director system:** `00_Brand/CHANNEL_BUILD_SYSTEM.md`  
-**YouTube Growth System v2:** `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
+**YouTube Growth System v2 (canonical):** `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
 **Publishing & Shorts strategy:** `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`  
 **Publish schedule:** `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.md` · `CHANNEL_PUBLISH_CADENCE.md`  
 **Flywheel / release:** `CONTENT_FLYWHEEL_TEMPLATE.md` · `RELEASE_WEEK_CHECKLIST.md`  
 **Video backlog:** `00_Brand/Channel-Setup/VIDEO_BACKLOG.json`  
 **Long-form quality gate:** `00_Brand/Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
 **CG docs:** `docs/GEMINI_VEO_CG.md` · **VO lock:** `.cursor/rules/orbit-british-vo-lock.mdc`  
+**Explorer lock:** `.cursor/rules/hos-explorer-character.mdc`  
 **Pre-build vidIQ audit:** `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`  
 **Retention & growth:** `00_Brand/Channel-Setup/RETENTION_AND_GROWTH_LOCKED.md`  
 **Script reviewer (≥90):** `cd 07_Content-Ops && npm run review:script -- --file <script.md>`  
@@ -30,17 +32,16 @@ Feel: stylised cartoon science · bright · curious — not photoreal dread essa
 **Affiliate (Content Ops):** `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md`  
 **New episode scaffold:** `02_Video-Projects/_template_NNN_Episode-Slug/`  
 
-`01_Orbit-Character/` is **legacy seed** from the Orbit template until a History of
-Science character bible exists — do not ship Orbit orange robot as this channel’s mascot unless Ben locks that.
+`01_Orbit-Character/` is **archive only**. Do not ship Orbit orange robot on this channel.
 
 ---
 
 ## Purpose
 
-1. Run **History of Science** as its own channel — cartoon / upbeat science films.
-2. Reuse the proven **VO + Omni/Veo + YouTube API** ops stack without pointing at Orbit With Ben.
-3. Keep raw AI generations, chosen takes, and polished masters clearly separated.
-4. Replace legacy Orbit character seed with a History of Science character bible before first ship.
+1. Tell discovery stories in **3D cartoon** style — story and world first.
+2. Use **the Explorer** sparingly (every few scenes) to walk through, react, and touch props.
+3. Reuse VO + Omni/Veo + YouTube API without pointing at Orbit With Ben.
+4. Keep raw AI generations, chosen takes, and polished masters clearly separated.
 
 ---
 
@@ -55,17 +56,12 @@ history-of-science/
 │   ├── Thumbnails/                 Reusable thumbnail templates
 │   └── Brand-Guidelines/           Written brand + voice rules
 │
-├── 01_Orbit-Character/             LEGACY SEED (replace with HOS character bible)
-│   ├── 01_Master-References/       Old Orbit sheets — not HOS default
-│   ├── 02_Transparent-PNGs/        Cut-outs with alpha for compositing
-│   ├── 03_Expressions/             curious · amazed · concerned · playful
-│   ├── 04_Poses/                   front · side · pointing · waving
-│   ├── 05_Seedance-References/     Working copies fed to the video model
-│   └── 06_Animation-Exports/       POLISHED REUSABLE MASTERS
-│       ├── hover/                  Idle / floating / intro clips
-│       ├── talking/                Explaining clips for use under narration
-│       ├── reactions/              Thinking, surprised, emotional beats
-│       └── outros/                 Goodbye / fly-away endings
+├── 01_Character/                   HOS Explorer bible + sheets
+│   ├── CHARACTER_BIBLE.md
+│   ├── 01_Master-References/       Protected character sheet
+│   └── 05_Generation-References/   Veo / Omni identity attach
+│
+├── 01_Orbit-Character/             ARCHIVE (Orbit With Ben seed — do not ship)
 │
 ├── 02_Video-Projects/              One folder per video
 │   └── 001_Will-We-Ever-Meet-Aliens/
@@ -108,7 +104,7 @@ history-of-science/
 
 ### Multi-platform Content Ops
 
-Local dashboard that turns one completed Orbit long-form into reusable short-form
+Local dashboard that turns one completed History of Science long-form into reusable short-form
 distribution packs (YouTube Shorts, TikTok, Instagram Reels, Facebook Reels, X,
 Threads) with platform-specific copy, calendars, CSV analytics, and manual
 upload checklists.

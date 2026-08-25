@@ -20,7 +20,7 @@ export default async function LoginPage({
 
   return (
     <div className="mx-auto flex min-h-[70vh] max-w-md flex-col justify-center px-4 py-10">
-      <p className="text-xs uppercase tracking-[0.22em] text-[#FF7A24]">History of Science — Content Ops</p>
+      <p className="text-xs uppercase tracking-[0.22em] text-[#FF7A24]">History of Science Content Ops</p>
       <h1 className="mt-3 font-[family-name:var(--font-orbit-display)] text-3xl text-[#F5E8D2]">
         Operator sign-in
       </h1>

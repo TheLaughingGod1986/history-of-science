@@ -1,7 +1,7 @@
 # Threads Publishing Assessment
 
 **Date:** 2026-07-31  
-**Question:** Should Orbit Content Ops implement Threads autopublishing now?
+**Question:** Should History of Science Content Ops implement Threads autopublishing now?
 
 ## Official support
 

@@ -446,7 +446,7 @@ describe("redirect URL generation", () => {
   });
 
   it("stamps utm_source=youtube on YouTube description /go/ URLs", () => {
-    process.env.AFFILIATE_REDIRECT_BASE_URL = "https://orbit-content-ops.vercel.app/go";
+    process.env.AFFILIATE_REDIRECT_BASE_URL = "https://history-of-science-content-ops.vercel.app/go";
     const url = buildYouTubeDescriptionGoUrl({
       productSlug: "black-hole-book",
       videoSlug: "what-happens-if-you-fall-into-a-black-hole",
@@ -1893,13 +1893,13 @@ describe("film → topic-book wiring (Social Media Manager)", () => {
 
   it("upgrades bare existing /go/{slug} to utm_source=youtube on re-append without duplicating", () => {
     process.env.AFFILIATE_REDIRECT_BASE_URL =
-      "https://orbit-content-ops.vercel.app/go";
+      "https://history-of-science-content-ops.vercel.app/go";
     const bookLink = {
       productName: "A Brief History of Black Holes",
       productSlug: "black-hole-book",
       category: "Space books",
       programSlug: "amazon-associates-uk",
-      url: "https://orbit-content-ops.vercel.app/go/black-hole-book",
+      url: "https://history-of-science-content-ops.vercel.app/go/black-hole-book",
       role: "primary" as const,
       trustProduct: product({
         id: "bh-book-upgrade",
@@ -1909,7 +1909,7 @@ describe("film → topic-book wiring (Social Media Manager)", () => {
         tagSlugs: ["books", "black-hole"],
       }),
     };
-    const bareGo = "https://orbit-content-ops.vercel.app/go/black-hole-book";
+    const bareGo = "https://history-of-science-content-ops.vercel.app/go/black-hole-book";
     const base = [
       "What Happens If You Fall Into a Black Hole?",
       "",
@@ -1982,7 +1982,7 @@ describe("film → topic-book wiring (Social Media Manager)", () => {
 
   it("leaves already-stamped youtube /go/ URLs alone on re-append", () => {
     process.env.AFFILIATE_REDIRECT_BASE_URL =
-      "https://orbit-content-ops.vercel.app/go";
+      "https://history-of-science-content-ops.vercel.app/go";
     const stamped = buildYouTubeDescriptionGoUrl({
       productSlug: "black-hole-book",
       videoSlug: "what-happens-if-you-fall-into-a-black-hole",

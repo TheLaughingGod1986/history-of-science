@@ -42,7 +42,7 @@ Growth System v2 · topic score · cluster plan · vidIQ audit · script ≥90 �
 2. Chapter cards for mid-film acts only (locked stills — **never** Ken Burns on text). No chapter card on the open.
 3. Soft-join approved part roughs in story order.
 4. **Outro:** strip baked like/subscribe VO and graphics. Hold last real picture **10s** for official YouTube Studio end screens (Subscribe + next film when an id exists). Soft spoken CTA only if it is not a shop read.
-5. **Affiliate (long only):** one named product late, after the wonder line — VO + on-screen 4–6s (not a shop card). URL only in the description: `https://orbit-content-ops.vercel.app/go/{slug}`. Do not bolt a book on to unlock a link. Do not name telescope / LEGO / Brilliant unless the film is about them and the door is live.
+5. **Affiliate (long only):** one named product late, after the wonder line — VO + on-screen 4–6s (not a shop card). URL only in the description: `https://history-of-science-content-ops.vercel.app/go/{slug}`. Do not bolt a book on to unlock a link. Do not name telescope / LEGO / Brilliant unless the film is about them and the door is live.
 6. Export → `09_Final-Export/<slug>_broadcast_v0N.mp4`. Verify picture-first open, 10s end hold, A/V locked. Recut = new filename + new YouTube id.
 
 ### D. Shorts cluster (4–8)

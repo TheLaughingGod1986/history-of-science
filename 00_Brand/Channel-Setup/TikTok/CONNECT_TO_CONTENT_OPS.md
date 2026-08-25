@@ -14,7 +14,7 @@ Ops UI: http://localhost:3000/settings/connections
 `07_Content-Ops/.env` already has `TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, and
 `TIKTOK_REDIRECT_URI=http://localhost:3000/api/oauth/tiktok/callback`.
 
-App: **Orbit Content Ops** → https://developers.tiktok.com/app/7668773508012492817/pending
+App: **History of Science Content Ops** → https://developers.tiktok.com/app/7668773508012492817/pending
 
 ## Finish in TikTok Developer Portal (still needed)
 

@@ -65,7 +65,7 @@ export async function GET(req: NextRequest) {
       }
     }
   } catch {
-    // Keep Orbit defaults when user.info is unavailable
+    // Keep History of Science defaults when user.info is unavailable
   }
 
   await prisma.platformConnection.upsert({
@@ -105,7 +105,7 @@ export async function GET(req: NextRequest) {
       enabled: true,
       accountDisplayName: accountName || "HistoryOfScience",
       profileUrl: profileUrl || "https://www.tiktok.com/@historyofscience",
-      defaultHashtags: JSON.stringify(["HistoryOfScience", "Space", "Astronomy"]),
+      defaultHashtags: JSON.stringify(["HistoryOfScience", "Science", "History"]),
       defaultCallToAction: "Watch the full story on History of Science.",
       publishingMethod: "api",
       connectionStatus: "connected",

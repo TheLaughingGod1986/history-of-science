@@ -149,7 +149,9 @@ export function isAllowedSocialTrackedUrl(url: string): boolean {
     const parsed = new URL(trimmed);
     const host = parsed.hostname.toLowerCase();
     if (
-      (host === "historyofscience.com" || host === "www.historyofscience.com") &&
+      (host === "historyofscience.com" ||
+        host === "www.historyofscience.com" ||
+        host.endsWith(".vercel.app")) &&
       parsed.pathname.startsWith("/go/")
     ) {
       return true;

@@ -1,9 +1,10 @@
 {
   "brand": "History of Science",
   "handle": "@historyofscience",
-  "profile_url": "https://www.threads.com/@historyofscience",
+  "profile_url": null,
   "youtube": "https://www.youtube.com/@HistoryOfScience",
-  "bio": "Space stories. Big questions. Full films on YouTube ↓",
+  "bio": "How we discovered what we know. Full films on YouTube ↓",
   "avatar": "00_Brand/Channel-Setup/TikTok/avatar_800x800.png",
-  "soft_cta": "Full film on YouTube."
+  "soft_cta": "Full film on YouTube.",
+  "notes": "Create after Instagram. Do not post from @orbitwithben."
 }

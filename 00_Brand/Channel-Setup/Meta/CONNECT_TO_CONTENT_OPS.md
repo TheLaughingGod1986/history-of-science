@@ -16,7 +16,7 @@ brand-level auto-post mirror for live YouTube Shorts.
 
 ## Content Ops OAuth
 
-1. In [Meta for Developers](https://developers.facebook.com/) create an app (or reuse Orbit Content Ops).
+1. In [Meta for Developers](https://developers.facebook.com/) create an app (or reuse History of Science Content Ops).
 2. Valid OAuth redirect:
 
 ```text

@@ -32,7 +32,7 @@ Canonical ops doc: `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md`
 
 ## Public `/go/` base (locked)
 
-- Base: `https://orbit-content-ops.vercel.app/go/{slug}` **only**
+- Base: `https://history-of-science-content-ops.vercel.app/go/{slug}` **only** (set after HOS Content Ops deploy; never Orbit's host)
 - **Never** `historyofscience.com` or `oppti.dev`
 - **Never** commit `AMAZON_ASSOCIATE_TAG` / `orbitgo-21`
 - **Do not invent ASINs**
@@ -58,6 +58,6 @@ Before adding `/go/`, an affiliate block, or a social soft mention:
 
 1. Is the product **named** in VO or on screen in **this** cut? (Not topic-adjacent.)
 2. Is it the **one** primary product (or free/cheap companion only)?
-3. Is the door `https://orbit-content-ops.vercel.app/go/{slug}`?
+3. Is the door `https://history-of-science-content-ops.vercel.app/go/{slug}`?
 4. Shorts → refuse. Social → skip unless the film is about the thing.
 5. Old film retrofit → refuse unless Ben asked.

@@ -1,6 +1,6 @@
 # Local Publishing Worker
 
-Orbit Content Ops runs on your laptop. Scheduled posts **do not** publish if:
+History of Science Content Ops runs on your laptop. Scheduled posts **do not** publish if:
 
 - the Next.js server is stopped
 - the worker process is not running
