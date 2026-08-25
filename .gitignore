@@ -32,6 +32,9 @@ node_modules/
 **/*.webp
 !**/*.md
 !07_Content-Ops/public/**
+# History of Science — locked Explorer identity sheets (small, required for gens)
+!01_Character/01_Master-References/*.jpg
+!01_Character/05_Generation-References/*.jpg
 
 # Playwright / caches
 **/playwright-report/
