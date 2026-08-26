@@ -1,21 +1,9 @@
 {
   "out": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/09_Final-Export/hos_001_part01_rough_v05.mp4",
-  "mode": "motion_chain_v05",
-  "note": "Veo quota still blocked. Multi-angle still chains + continuous Ken Burns + long dissolves + lamp flicker; corridor/hands remain true motion.",
-  "seg_s": 4.5,
-  "in_xfade": 1.0,
-  "beat_xfade": 1.1,
-  "pic_dur": 77.1,
-  "beats": [
-    "01_ward_open_beat.mp4",
-    "02_corridor_beat.mp4",
-    "03_patients_beat.mp4",
-    "04_explorer_beat.mp4",
-    "05_instruments_beat.mp4",
-    "06_fever_beat.mp4",
-    "07_micro_hint_beat.mp4",
-    "08_hands_beat.mp4",
-    "09_micro_close_beat.mp4",
-    "10_ward_hold_beat.mp4"
-  ]
+  "mode": "heavy_morph_v05b",
+  "note": "Veo quota blocked. Continuous Ken Burns + near-full-length in-beat dissolves so picture is almost always morphing (not frozen holds).",
+  "seg_s": 6.5,
+  "in_xfade": 5.2,
+  "beat_xfade": 1.25,
+  "pic_dur": 69.999998
 }
