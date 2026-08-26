@@ -1,0 +1,35 @@
+{
+  "mode": "v08_v01_style_fewer_germs_faceless",
+  "pic_dur": 76.4,
+  "out": "09_Final-Export/hos_001_part01_rough_v08.mp4",
+  "artifact": "/opt/cursor/artifacts/hos_001_part01_rough_v08.mp4",
+  "demo": "/opt/cursor/artifacts/hos_001_part01_rough_v08_demo.mp4",
+  "ben_notes_addressed": [
+    "Keep v01 Animistry cartoon style (no v03–v07 redesign)",
+    "Fewer germ-float scenes: germs only late (plate 09) + end hold (plate 10)",
+    "Last ~5–8s faceless deadly microbes (no smiles/eyes)"
+  ],
+  "method": {
+    "story_plates": "Gemini-edited germ-free frames from v01 + Veo I2V (plates 02–07)",
+    "open": "Locked cartoon corridor still motion (Veo open drifted photoreal — replaced)",
+    "germ_plates": "Isolated faceless microbe assets composited onto clean ward/instruments; still-motion (Veo quota exhausted on late plates — preserves faceless lock)"
+  },
+  "plates": [
+    {"id": "01_corridor", "germs": false},
+    {"id": "02_curtains", "germs": false},
+    {"id": "03_explorer", "germs": false},
+    {"id": "04_instruments", "germs": false},
+    {"id": "05_fever", "germs": false},
+    {"id": "06_breath_ward", "germs": false},
+    {"id": "07_hands", "germs": false},
+    {"id": "08_ward_calm", "germs": false},
+    {"id": "09_sparse_faceless", "germs": "faceless_sparse"},
+    {"id": "10_end_faceless", "germs": "faceless_sparse_end"}
+  ],
+  "face_audit": {
+    "last5s": "FACES_NO",
+    "sparse_mid": "FACES_NO",
+    "end_still": "FACES_NO",
+    "v01_end_control": "FACES_YES"
+  }
+}
