@@ -1433,6 +1433,8 @@ def wait_and_download(
                     ct.startswith("image/")
                     or body[:3] in (b"\xff\xd8\xff", b"\x89PN")
                 ):
+                    if int(elapsed) % 30 < 5:
+                        print(f"  skip image mid={mid[:48]}… ct={ct} n={len(body)}", flush=True)
                     continue
                 looks_video = (
                     "video" in ct
@@ -1444,8 +1446,13 @@ def wait_and_download(
                 if looks_video and len(body) > 150_000:
                     dest.parent.mkdir(parents=True, exist_ok=True)
                     dest.write_bytes(body)
+                    print(f"  downloaded mid={mid[:48]}… bytes={len(body)} ct={ct}", flush=True)
                     return mid
-            except Exception:
+                if int(elapsed) % 30 < 5:
+                    print(f"  mid not ready mid={mid[:48]}… ct={ct} n={len(body)} video={looks_video}", flush=True)
+            except Exception as e:
+                if int(elapsed) % 30 < 5:
+                    print(f"  mid fetch err {type(e).__name__}: {e}", flush=True)
                 continue
 
         body = ""
