@@ -28,14 +28,51 @@ Official how-to: [Add a related video to your YouTube Shorts](https://support.go
 | Volume | Shorts fire often; longs are fewer, heavier pillars (their Rome/WW2 films run far longer than HOS 8–9 min) |
 | Promote the full film | Related pill + Short description can echo the long title; Short is a teaser, not the whole lecture |
 
-### HOS note on schedule (honest)
+## Schedule & how they promote full videos (RSS evidence)
 
-Exact daily clocks need a live Studio scrape (bot walls here). Usable pattern anyway:
+**Channel id:** `UCoZd78hRUdxxsuGiABuHF_A` · feed sampled **26 Aug 2026** (latest 15 public uploads).
 
-1. **Ship the long first** (or same day) so Related can target a **public/unlisted** id — Studio will not attach Related to a still-scheduled-only private that isn’t eligible.
-2. **Cluster Shorts around that one pillar** for days after — not orphan Shorts with no parent.
-3. Prefer **one Related destination per cluster** (the Thursday film), not a random older video.
-4. Cadence for *our* channel stays in `PUBLISHING_AND_SHORTS_STRATEGY.md` / `OPTIMAL_PUBLISH_SCHEDULE.json` (Thu long · Shorts around it). Steal their *funnel habit*, keep our clocks.
+### Cadence (observed)
+
+| Kind | Pattern in sample |
+|---|---|
+| **Longs** | Sparse pillars — **~2 / month** (matches public sponsor listings). In window: Rome **Sun 19 Apr**, WW1 **Sun 21 Jun**, WW2 Villains **Tue 30 Jun**. |
+| **Shorts** | Steady drip — roughly **~1 / week** (median ~7 days between Shorts; sometimes 4–8 days). Mix of Mon / Thu / Fri / Sat; not a rigid single weekday. |
+| **Clock (UTC)** | Split personality: many Shorts **~08:00–14:00 UTC**, others **~18:00–22:00 UTC** (Netherlands-based channel → late afternoon/evening local for evening slots). |
+| **Most-active day (third party)** | ReachRanking flags **Saturday** as most active historically — treat as soft signal, not a hard HOS clock. |
+
+### How they promote the full film
+
+1. **Drop a big pillar long** with a destination-grade title (*The ENTIRE History of ROME*).
+2. **Keep releasing Shorts for weeks after** — not only on launch day. Example: Rome long **19 Apr** → Kamikaze Short **11 May** still Related-pills to Rome (Ben’s screenshot).
+3. **Primary CTA = Studio Related pill** (▶ exact long title under the Short). Description/hashtags support discovery; the pill does the click.
+4. Shorts are **micro-stories**, not chopped lectures — they create a reason to tap the pillar.
+5. Many Shorts can share **one** Related destination (Rome-cluster energy), so the long keeps getting fresh Shorts traffic over time.
+
+```
+Pillar long (public)
+    │
+    ├─ Short (+~1–3w)  → Related ▶ same long
+    ├─ Short (+~1w)    → Related ▶ same long
+    ├─ Short (+~1w)    → Related ▶ same long
+    └─ …until next pillar, then new cluster (or keep mining the evergreen pillar)
+```
+
+### What HOS should copy (schedule habit)
+
+Keep our own clocks in `PUBLISHING_AND_SHORTS_STRATEGY.md` (Thu long · Shorts around it). Steal their **shape**:
+
+1. **Long first (or same day)** so Related can attach to a public/unlisted id.
+2. **4–8 punch Shorts over the following 1–2 weeks**, ~every few days — not a same-day dump.
+3. **All cluster Shorts Related → that one Thursday film** (Rome-cluster rule).
+4. Evergreen: a winning pillar can keep receiving Shorts later; do not orphan Shorts with no parent.
+
+### Do not copy their calendar literally
+
+- Their longs are **mega essays** (Rome ~38 min+); HOS stays **8–9 min**.
+- Their Short volume can outpace a small channel — start with **4–8 / film**, not daily forever.
+- War/politics micro-hooks stay off-brand for HOS topics.
+
 
 ## Steal for History of Science
 
