@@ -50,3 +50,10 @@
 
 - Full **Veo character/patient motion** (429 RESOURCE_EXHAUSTED).
 - When quota returns: I2V from v05 stills → true walk/breathe plates; keep ward-first narrative.
+
+## Flow-first lock (Ben 26 Aug 2026)
+
+- HOS CG primary = **Google Flow Veo UI** (Orbit parity) — rule `hos-flow-veo-primary.mdc`
+- Builder: `_build_part01_v07_flow_i2v.py` (needs Flow Ultra login once)
+- API path is fallback only; Fast/Lite API quotas too thin for full minutes
+- Interim: `hos_001_part01_rough_v06.mp4` = 8 API-lite motion plates + morph for last 2

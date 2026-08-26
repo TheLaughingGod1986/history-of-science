@@ -657,6 +657,104 @@ def _wait_add_to_prompt_enabled(page, *, timeout_s: float = 90) -> bool:
     return False
 
 
+def attach_image_to_prompt(page, ref: Path) -> bool:
+    """Attach an arbitrary still to the Flow agent prompt (HOS start-frame I2V).
+
+    Same upload path as Orbit identity attach, without Orbit filename asserts.
+    """
+    ref = Path(ref).resolve()
+    if not ref.exists():
+        raise FileNotFoundError(ref)
+    ensure_agent_session(page)
+    before = _prompt_attachment_count(page)
+    print(f"  attaching start frame: {ref.name}", flush=True)
+
+    _open_create_picker(page)
+
+    uploads_tab = page.locator('button:has-text("Uploads")')
+    if uploads_tab.count():
+        try:
+            uploads_tab.first.click(timeout=3000)
+            page.wait_for_timeout(400)
+        except Exception:
+            pass
+
+    up = page.locator('button:has-text("Upload media")')
+    if up.count() == 0:
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(400)
+        _open_create_picker(page)
+        page.wait_for_timeout(600)
+        up = page.locator('button:has-text("Upload media")')
+    if up.count() == 0:
+        up = page.locator('button:has-text("Upload")')
+    if up.count() == 0:
+        raise RuntimeError("Upload media not found in Create picker")
+
+    try:
+        with page.expect_file_chooser(timeout=12_000) as fc:
+            up.last.click(force=True)
+        fc.value.set_files(str(ref))
+    except Exception:
+        fi = page.locator('input[type="file"]')
+        if fi.count() == 0:
+            raise RuntimeError("Could not upload start frame to Create picker")
+        fi.last.set_input_files(str(ref))
+
+    print("  uploaded — waiting for Add to Prompt…", flush=True)
+    if not _wait_add_to_prompt_enabled(page, timeout_s=90):
+        raise RuntimeError(
+            "Flow never enabled Add to Prompt after start-frame upload"
+        )
+
+    # Prefer selecting the just-uploaded asset by filename stem when possible
+    stem = ref.stem.lower()[:24]
+    page.evaluate(
+        """(stem) => {
+          for (const el of document.querySelectorAll('div,button,li,[role="option"]')) {
+            const t = (el.innerText || '').trim().toLowerCase();
+            if (stem && t.includes(stem) && t.length < 200) {
+              try { el.click(); } catch (e) {}
+              return true;
+            }
+          }
+          return false;
+        }""",
+        stem,
+    )
+    page.wait_for_timeout(400)
+    add = page.locator('button:has-text("Add to Prompt")')
+    if add.count() == 0:
+        raise RuntimeError("Add to Prompt button missing")
+    add.last.click(force=True)
+    page.wait_for_timeout(1500)
+
+    for _ in range(2):
+        body = ""
+        try:
+            body = page.locator("body").inner_text(timeout=2000)[:2500]
+        except Exception:
+            pass
+        if "Add to Prompt" in body or "Search assets" in body or "Upload media" in body:
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(500)
+        else:
+            break
+
+    ensure_agent_session(page)
+    attached = _prompt_attachment_count(page) > before
+    if not attached:
+        page.wait_for_timeout(2000)
+        attached = _prompt_attachment_count(page) > before
+
+    print(f"  prompt attachment visible={attached} (was {before})", flush=True)
+    if not attached:
+        raise RuntimeError(
+            "Start frame did not attach to the Flow prompt — aborting."
+        )
+    return True
+
+
 def attach_orbit_to_prompt(page, ref: Path) -> bool:
     """Attach Orbit identity still into the agent prompt (required for identity).
 
@@ -836,7 +934,12 @@ def ensure_orbit_agent_instruction(page) -> None:
     print("  Orbit Agent Instruction saved", flush=True)
 
 
-def flow_prompt(scene_prompt: str, *, scenery_only: bool = False) -> str:
+def flow_prompt(
+    scene_prompt: str,
+    *,
+    scenery_only: bool = False,
+    start_frame_i2v: bool = False,
+) -> str:
     """Wrap a scene prompt for Flow.
 
     Keep this short — Agent Instruction already holds the full identity lock.
@@ -845,6 +948,12 @@ def flow_prompt(scene_prompt: str, *, scenery_only: bool = False) -> str:
     body = scene_prompt.strip()
     if "IMAGE-TO-VIDEO" in body or "ORBIT IDENTITY LOCK" in body:
         return body
+    if start_frame_i2v:
+        return (
+            f"IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact scene — "
+            f"keep composition, characters, and lighting. Continuous camera/subject "
+            f"motion through the final frame. {body} Silent picture only. No text, no logos."
+        )
     if scenery_only:
         return (
             f"{body} "
@@ -1107,14 +1216,27 @@ def _generate_clip_once(
     *,
     model: str = DEFAULT_MODEL,
     orbit_ref: Path | None = None,
+    start_frame: Path | None = None,
     timeout_s: int = 900,
     reuse_project: bool = False,
     scenery_only: bool = False,
 ) -> dict:
-    """One attempt: generate a silent Veo clip via Google Flow Ultra UI."""
+    """One attempt: generate a silent Veo clip via Google Flow Ultra UI.
+
+    Modes:
+      - default: Orbit identity I2V (Orbit With Ben)
+      - scenery_only: no attachment chip
+      - start_frame: I2V from an arbitrary still (History of Science / custom)
+    """
     t0 = time.time()
     ref = None
-    if not scenery_only:
+    if start_frame is not None:
+        ref = Path(start_frame)
+        if not ref.exists():
+            raise FileNotFoundError(ref)
+        print(f"  start-frame I2V: {ref}", flush=True)
+        scenery_only = False
+    elif not scenery_only:
         ref = _assert_orbit_identity_ref(orbit_ref or veo.ORBIT_REF)
         print(f"  orbit identity ref: {ref}", flush=True)
     else:
@@ -1144,7 +1266,21 @@ def _generate_clip_once(
     settle_after_nav(page, wait_ms=600)
     ensure_agent_session(page)
     attached = False
-    if scenery_only:
+    if start_frame is not None:
+        ensure_agent_session(page)
+        print("  attaching start frame…", flush=True)
+        attached = attach_image_to_prompt(page, ref)
+        print("  setting start-frame I2V prompt…", flush=True)
+        set_prompt(page, flow_prompt(prompt, start_frame_i2v=True))
+        if _prompt_attachment_count(page) < 1:
+            print("  chip missing after prompt paste — re-attaching", flush=True)
+            attached = attach_image_to_prompt(page, ref)
+        if _prompt_attachment_count(page) < 1:
+            raise RuntimeError("Start-frame prompt chip missing after attach — aborting")
+        print("  submitting Create…", flush=True)
+        submit_create(page)
+        print("  submitted Create (start-frame I2V)", flush=True)
+    elif scenery_only:
         # Keep agent session healthy, but do NOT attach Orbit identity chip.
         ensure_agent_session(page)
         print("  setting scenery-only prompt (no Orbit chip)…", flush=True)
@@ -1188,9 +1324,10 @@ def _generate_clip_once(
         "bytes": dest.stat().st_size,
         "model": model,
         "engine": "flow-ui-veo",
-        "orbit_ref": str(ref) if ref else None,
+        "orbit_ref": str(ref) if ref and start_frame is None and not scenery_only else None,
+        "start_frame": str(start_frame) if start_frame else None,
         "orbit_attached": attached,
-        "identity_lock": not scenery_only,
+        "identity_lock": (not scenery_only) and start_frame is None,
         "scenery_only": scenery_only,
         "media_id": media_id,
         "url": page.url,
@@ -1204,6 +1341,7 @@ def generate_clip(
     *,
     model: str = DEFAULT_MODEL,
     orbit_ref: Path | None = None,
+    start_frame: Path | None = None,
     timeout_s: int = 900,
     reuse_project: bool = False,
     scenery_only: bool = False,
@@ -1220,6 +1358,7 @@ def generate_clip(
                 dest,
                 model=model,
                 orbit_ref=orbit_ref,
+                start_frame=start_frame,
                 timeout_s=timeout_s,
                 reuse_project=use_reuse,
                 scenery_only=scenery_only,
@@ -1302,6 +1441,17 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--dump-ui", type=Path, default=None)
     ap.add_argument("--timeout", type=int, default=900)
+    ap.add_argument(
+        "--start-frame",
+        type=Path,
+        default=None,
+        help="I2V from this still (HOS / custom — skips Orbit identity lock)",
+    )
+    ap.add_argument(
+        "--scenery-only",
+        action="store_true",
+        help="No identity/start-frame attachment",
+    )
     args = ap.parse_args()
 
     profile = profile_path(args.profile)
@@ -1318,9 +1468,15 @@ def main() -> None:
 
     prompt = ""
     if args.prompt:
-        prompt = veo.build_prompt(args.prompt, pass_id=args.pass_id)
+        # HOS / start-frame prompts should stay short and literal — skip Orbit wrapper.
+        if args.start_frame or args.scenery_only:
+            prompt = args.prompt.strip()
+        else:
+            prompt = veo.build_prompt(args.prompt, pass_id=args.pass_id)
 
     print(f"Orbit ref: {veo.ORBIT_REF}", flush=True)
+    if args.start_frame:
+        print(f"start_frame: {args.start_frame}", flush=True)
     print(f"profile={profile}", flush=True)
     print(f"model={args.model} · engine=flow-ui", flush=True)
 
@@ -1352,6 +1508,8 @@ def main() -> None:
                 args.out,
                 model=args.model,
                 timeout_s=args.timeout,
+                start_frame=args.start_frame,
+                scenery_only=args.scenery_only,
             )
             print(json.dumps(meta, indent=2))
             print(f"SAVED {args.out}", flush=True)
