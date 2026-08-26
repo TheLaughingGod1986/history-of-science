@@ -1,67 +1,48 @@
 # Part 01 lessons — Germs
 
-**Date:** 2026-08-26
+**Date:** 2026-08-26 (updated after Ben style UAT)
 
-## Ben UAT
+## Style freeze (Ben — hard)
 
-- **Reject:** smiling / winking / cute-faced cartoon germs.
-- Germs = invisible **enemy** — stylised rods/spheres OK, **no faces**.
-- Locked: `.cursor/rules/hos-microbe-visual-lock.mdc`
+**Canonical look = `hos_001_part01_rough_v01.mp4`.**
+
+That cut is the Animistry-class 3D cartoon world we want (period ward, Explorer, feature-animation polish).
+
+**The only thing wrong on that cut:** smiling / winking / cute-faced germs.
+
+**Do not redesign.** Do not chase ward-first rewrites, photoreal Flow, or modern-hospital inserts that abandon v01.
+
+Locks:
+- `00_Brand/Channel-Setup/HOS_PART01_STYLE_BASELINE_LOCKED.md`
+- `.cursor/rules/hos-part01-style-baseline.mdc`
+- `.cursor/rules/hos-microbe-visual-lock.mdc`
 - Reject proof: `00_Brand/Channel-Setup/inspiration/REJECT_smiling_germs_part01_example.png`
 
-## What we tried
+Artifact alias: `/opt/cursor/artifacts/hos_001_part01_BASELINE_v01_smiling_germs_only.mp4`
 
-1. Text-only prompt lock → Veo **still invented smiles** (v02 frames).
-2. Built **faceless start-frame** (`refs/faceless_microbes_ref_v01.jpg`) for I2V.
-3. Gemini Veo quota blocked v03/v04 motion regen.
-4. **Interim rough v03:** microbe beats = push-in on faceless still (no smiles).
-5. **Interim rough v04:** ward-first stillbridges (Flash Image stills) + corridor/hands motion.
+## What went wrong (over-correction)
 
-## Ben UAT (round 2)
-
-- Too many germs in the first minutes → **human ward first**.
-- Mascot (**Explorer**) should **walk past beds** with a couple of **sick/ill patients**.
-- Germs: faceless + **sparse**, late in the minute.
-
-## Fix path (v04)
-
-| Beat | Picture |
+| Cut | What happened |
 |---|---|
-| Open | Ward with ~2 sick patients (no germs) |
-| Mid | Explorer walks past beds / ill patients |
-| Late | Sparse faceless microbes only when VO names the invisible enemy |
+| v01 | **KEEP as style baseline** — only germs smile |
+| v02–v03 | Faceless-germ attempts / stillbridges — style already wobbling |
+| v04–v06 | Ward-first redesign + morph polish — mixed looks |
+| v05 mid/end | **Modern hospital** + style jumps — REJECT |
+| v07 Flow | Photoreal / live-action drift — REJECT |
 
-- Plate plan locked in `_build_part01_rough_v01.py` (Veo motion path).
-- Interim assemble: `_build_part01_v04_still_interim.py` → `hos_001_part01_rough_v04.mp4`
-- Stills under `04_Generated-Clips/part01/refs/*_v04.jpg`
-- Artifact: `/opt/cursor/artifacts/hos_001_part01_rough_v04.mp4`
+Ben’s screenshots on the later cut: first seconds OK; later beats “completely different,” including modern day. That is not the channel.
 
-## Ben UAT (round 3) — jumpy / frozen
+## Next build (minimal)
 
-- v04 stillbridges read as **images**, not video.
-- **v05b polish** (Veo still quota-blocked): multi-angle chains with **near-full-length dissolves** (~5.2s overlap on ~6.5s takes) so the picture is almost always morphing + continuous Ken Burns + lamp flicker.
-- Builder: `_build_part01_v05_motion_polish.py` → `hos_001_part01_rough_v05.mp4` (~70s)
-- Corridor + doctor-hands remain true Veo motion from earlier gens.
-- Artifact: `/opt/cursor/artifacts/hos_001_part01_rough_v05.mp4`
-- Honest limit: without Veo I2V, Explorer/patients cannot truly walk/breathe — only camera + morph. Real motion resumes when Gemini Veo quota is topped up.
-- Quarantined old germy corridor plate: `part01/_rejected_germ_corridor_v01/` (swarm in the aisle). Clean corridor stills: `corridor_*_v05.jpg`.
+1. UAT **v01** as the picture bible (not v05/v07).
+2. Build **v08** = v01 plates kept + **only microbe beats** replaced with faceless germs in the **same cartoon style**.
+3. No modern hospital. No photoreal. No full-minute rewrite.
+4. Stop and show Ben after germ plates land — before any Part 02.
 
-## Still blocked
+## Microbe plate IDs in original v01 meta
 
-- Full **Veo character/patient motion** (429 RESOURCE_EXHAUSTED).
-- When quota returns: I2V from v05 stills → true walk/breathe plates; keep ward-first narrative.
+- `01_microbes_ward_air` (raw missing on disk — cut from master or regen)
+- `07_microbe_cloud_close` (raw missing — cut from master or regen)
+- Related: any other plate where smiles appear in the assembled v01
 
-## Flow-first lock (Ben 26 Aug 2026)
-
-- HOS CG primary = **Google Flow Veo UI** (Orbit parity) — rule `hos-flow-veo-primary.mdc`
-- Builder: `_build_part01_v07_flow_i2v.py` (needs Flow Ultra login once)
-- API path is fallback only; Fast/Lite API quotas too thin for full minutes
-- Interim: `hos_001_part01_rough_v06.mp4` = 8 API-lite motion plates + morph for last 2
-
-## Ben UAT (round 4) — style FAIL on v07
-
-- **Reject v07 style:** Flow I2V drifted to **photoreal / live-action ward** — lost Animistry-class **3D cartoon** + Explorer mascot look.
-- Channel lock stays: `CHANNEL_VISION.md` · Animistry-class · Explorer sparse.
-- **Keep:** ward-first narrative · Explorer past beds · sparse faceless microbes late · real motion when possible.
-- **Do not ship v07** as the style reference. UAT from **v05 / v06** (cartoon stills + limited motion).
-- Next Flow regen must lock in every prompt: `Premium 3D cartoon / Animistry-class — match start-frame style exactly. NOT photoreal. NOT live action. NOT documentary.` + Explorer identity still on character beats.
+Keep on disk from v01 family: `03_curtains_beds`, `04_explorer_doorway_peek`, `05_doctor_hands_instruments`, `06_fever_soft_consequence`, `09_hands_to_next_patient`, `10_ward_atmosphere_hold` (verify against master).

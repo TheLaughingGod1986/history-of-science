@@ -1,0 +1,22 @@
+---
+description: HOS Part 01 picture freeze — v01 cartoon baseline; only fix smiling germs
+alwaysApply: true
+---
+
+# History of Science — Part 01 style freeze (Ben 26 Aug 2026)
+
+**Canonical look:** `hos_001_part01_rough_v01.mp4` (Animistry-class 3D cartoon · period ward · Explorer).
+
+**Only approved delta from that cut:** remove smiling / winking / cute-faced germs. Faceless microbes only.
+
+## Do not
+
+- Ship or UAT v03–v07 as the house style (photoreal drift, modern hospital, mixed looks)
+- “Fix” germs by rewriting the whole minute / ward-first redesign / new art direction
+- Generate photoreal or live-action plates for this channel
+
+## Regen
+
+Replace **microbe plates only**. Match v01 lighting and cartoon materials. Reject any plate that style-jumps next to the v01 open or Explorer beat.
+
+Ops note: `00_Brand/Channel-Setup/HOS_PART01_STYLE_BASELINE_LOCKED.md`
