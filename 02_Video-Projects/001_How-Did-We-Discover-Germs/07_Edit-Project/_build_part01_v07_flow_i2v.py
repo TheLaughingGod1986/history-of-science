@@ -179,7 +179,9 @@ def main() -> None:
                     model=MODEL,
                     start_frame=still,
                     timeout_s=900,
-                    reuse_project=(i > 0),
+                    # Fresh project each plate avoids leftover media-id confusion
+                    # when Flow reuses redirect names across gens.
+                    reuse_project=False,
                     attempts=2,
                 )
                 meta["plates"].append({"id": pid, **info, "path": str(dest)})

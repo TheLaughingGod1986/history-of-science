@@ -1364,7 +1364,9 @@ def wait_and_download(
     failed_since: float | None = None
     retry_clicks = 0
     seen_generating = False
-    stale_ids: set[str] = set()
+    # Do NOT permanently blacklist early media ids — Flow often reuses the same
+    # getMediaUrlRedirect name from a placeholder/upload into the finished mp4.
+    early_gate_s = max(5.0, float(min_elapsed_s or 0) * 0.35)
     while time.time() - t0 < timeout_s:
         dismiss_soft_prompts(page)
         try:
@@ -1376,18 +1378,22 @@ def wait_and_download(
             raise
         new_ids = [i for i in ids if i not in before_ids]
         elapsed = time.time() - t0
-        if elapsed < max(8.0, min_elapsed_s * 0.35):
-            stale_ids.update(new_ids)
-        skip_download = elapsed < min_elapsed_s
+        skip_download = elapsed < early_gate_s or elapsed < float(min_elapsed_s or 0)
         # Prefer ids that resolve as video/mp4 (Flow sometimes returns octet-stream)
         for mid in reversed(new_ids):
-            if skip_download or mid in stale_ids:
+            if skip_download:
                 continue
             url = absolute_media_url(mid)
             try:
                 head = page.request.get(url, timeout=60_000)
                 ct = (head.headers.get("content-type") or "").lower()
                 body = head.body()
+                # Skip still-image ingredient uploads that are not videos yet
+                if body[:12].find(b"ftyp") < 0 and (
+                    ct.startswith("image/")
+                    or body[:3] in (b"\xff\xd8\xff", b"\x89PN")
+                ):
+                    continue
                 looks_video = (
                     "video" in ct
                     or "mp4" in ct
@@ -1419,6 +1425,12 @@ def wait_and_download(
             "scheduled",
             "working",
         ):
+            # Avoid false positives from unrelated copy; require a word boundary.
+            if k == "failed":
+                if re.search(r"\bfailed\b", low):
+                    status = k
+                    break
+                continue
             if k in low:
                 status = k
                 break
