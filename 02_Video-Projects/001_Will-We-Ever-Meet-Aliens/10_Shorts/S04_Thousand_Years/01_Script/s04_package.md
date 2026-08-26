@@ -91,8 +91,8 @@ A hello from 1,000 light-years away takes 1,000 years to arrive.
 
 Space isn’t just big. It’s inconvenient.
 
-Full story on Orbit with Ben.
+Full story on History of Science.
 
 #shorts #space #aliens #astronomy #lightyears
 ```
-**Tags:** light years, fermi paradox, meeting aliens, space distance, Orbit with Ben
+**Tags:** light years, fermi paradox, meeting aliens, space distance, History of Science

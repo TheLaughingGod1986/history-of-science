@@ -9,14 +9,14 @@
 
 | | Title | vidIQ score | Search vol note | Competition | Keep? |
 |---|-------|-------------|-----------------|-------------|-------|
-| **A** | What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey |  |  |  |  |
-| **B** | Galaxies Too Old for the Universe? What JWST Found | Orbit's Cosmic Journey |  |  |  |  |
-| **C** | James Webb Telescope Discoveries That Rewrote the Early Universe | Orbit's Cosmic Journey |  |  |  |  |
+| **A** | What the James Webb Telescope Discovered That Changes Everything | History of Science |  |  |  |  |
+| **B** | Galaxies Too Old for the Universe? What JWST Found | History of Science |  |  |  |  |
+| **C** | James Webb Telescope Discoveries That Rewrote the Early Universe | History of Science |  |  |  |  |
 
 ## Checklist (run in order)
 
 - [ ] **Keyword Research** — confirm primary keyword volume + related terms for description/tags
-- [ ] **Title Analyzer** — score A/B/C (paste full title including `| Orbit's Cosmic Journey`)
+- [ ] **Title Analyzer** — score A/B/C (paste full title including `| History of Science`)
 - [ ] **Thumbnail Preview** — pair top title with thumb ABC; check mobile + suggested feed
 - [ ] **Outliers / Daily Ideas** *(optional)* — note 1–2 competing angles to avoid
 - [ ] Lock winner into `11_Upload-Package/Titles/` + `RANKING_STRATEGY` / production-status

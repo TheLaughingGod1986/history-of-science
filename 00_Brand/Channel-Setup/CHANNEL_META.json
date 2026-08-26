@@ -7,13 +7,22 @@
   "google_account": "benoats86@gmail.com",
   "owner_name": "Ben Oates",
   "created_at": null,
+  "rebranded_from_template": "orbit-with-ben seed (2026-08-25)",
   "tagline": "How we discovered what we know.",
   "banner_line": "Discovery. Wonder. Proof.",
   "status": "workspace_ready_channel_not_created",
+  "visual_direction": "3d_cartoon_animistry_style",
+  "runtime_minutes": "8-9",
+  "inspiration_channel": "https://www.youtube.com/@ytAnimistry",
+  "mascot": "explorer_side_character",
+  "mascot_ref": "01_Character/01_Master-References/hos-explorer-character-sheet-v01.jpg",
+  "vo_stack": "elevenlabs_ben_orbit_narrator",
+  "cg_stack": "omni_gemini_veo_silent_picture",
+  "upload_stack": "youtube_data_api_v3_content_ops",
   "opptiai_untouched": "UCXRVwrCxXpN_o9gvuHPKAPQ",
   "do_not_publish_to": {
     "orbit_with_ben_channel_id": "UC_esArsDKd3GJvOkeO0DUog",
     "note": "This workspace was cloned from Orbit with Ben. Never upload or schedule to that channel from here."
   },
-  "notes": "Create a new YouTube Brand Account named History of Science under the existing Google login, then fill channel_id and studio_url. Handle @HistoryOfScience is the intended claim — confirm availability at create time."
+  "notes": "Create a new YouTube Brand Account named History of Science. Explorer is a sparse side character; story leads. Confirm @HistoryOfScience at create."
 }

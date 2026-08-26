@@ -37,7 +37,7 @@ Mark `STATUS.json` → `phase0_done`.
 ## Phase 1 — restore watchers (before any catch-up posts)
 
 ```bash
-# Chrome CDP profiles (log into @orbitwithben once if needed)
+# Chrome CDP profiles (log into @historyofscience once if needed)
 bash 00_Brand/Channel-Setup/TikTok/auto/start_tiktok_chrome.sh   # :9222
 bash 00_Brand/Channel-Setup/Meta/auto/start_meta_chrome.sh       # :9223
 bash 00_Brand/Channel-Setup/Threads/auto/start_threads_chrome.sh # :9222 shared OK if TT idle
@@ -79,7 +79,7 @@ Today is **Thu 20 Aug**. Cadence expects a daily Short; socials mirror Shorts, n
 
 Soft JWST social line (film URL only):
 
-> JWST keeps finding galaxies that shouldn’t be there yet. Full film on YouTube → https://youtube.com/@OrbitWithBen
+> JWST keeps finding galaxies that shouldn’t be there yet. Full film on YouTube → https://youtube.com/@HistoryOfScience
 
 (Replace with the exact JWST watch URL once Studio shows it public.)
 

@@ -1,4 +1,4 @@
-# Pre-build vidIQ audit — Orbit with Ben
+# Pre-build vidIQ audit — History of Science
 
 **Hard gate:** Run **before** locking script, VO, prompts, or picture gen for any new long.  
 **Also follow:** `RETENTION_AND_GROWTH_LOCKED.md` · `CONTENT_INTELLIGENCE_STRATEGY.md`

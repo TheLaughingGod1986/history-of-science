@@ -1,6 +1,6 @@
 # Ranking strategy — Video 004 (JWST)
 
-**Locked title (production A):** What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey  
+**Locked title (production A):** What the James Webb Telescope Discovered That Changes Everything | History of Science  
 **Runtime target:** ~15–16 min VO (expand if needed)  
 **Moat:** Orbit *curious learner* beside JWST — visits discoveries; wonder not fearbait  
 **Schedule:** Thu 28 Aug 2026 · 19:00 UK  
@@ -10,9 +10,9 @@
 
 | | Title | Notes |
 |---|-------|-------|
-| **A LOCK** | What the James Webb Telescope Discovered That Changes Everything \| Orbit's Cosmic Journey | Backlog + brand suffix |
-| **B** | Galaxies Too Old for the Universe? What JWST Found \| Orbit's Cosmic Journey | Short/thumb hook |
-| **C** | James Webb Telescope Discoveries That Rewrote the Early Universe \| Orbit's Cosmic Journey | Alt SEO |
+| **A LOCK** | What the James Webb Telescope Discovered That Changes Everything \| History of Science | Backlog + brand suffix |
+| **B** | Galaxies Too Old for the Universe? What JWST Found \| History of Science | Short/thumb hook |
+| **C** | James Webb Telescope Discoveries That Rewrote the Early Universe \| History of Science | Alt SEO |
 
 Brand suffix after pipe — same as V001–V003.
 
@@ -56,12 +56,12 @@ Winners = JWST montage + “impossible galaxies” fearbait.
 | Black holes too soon | Overmassive BH / little red dot | supermassive black hole | **MIDDLE** |
 | Textbook vs data | Orbit comparing model → image | jwst discoveries | Act II stamp |
 | Honest uncertainty | Models updating; wonder | early universe | **END** |
-| CTA | Brand outro | Orbit's Cosmic Journey | — |
+| CTA | Brand outro | History of Science | — |
 
 ## Description open (draft)
 
 ```
-What the James Webb Telescope discovered that changes everything: galaxies shining too early, black holes growing too fast, and an early universe that keeps surprising us. Orbit's Cosmic Journey through JWST discoveries — wonder, not clickbait.
+What the James Webb Telescope discovered that changes everything: galaxies shining too early, black holes growing too fast, and an early universe that keeps surprising us. History of Science through JWST discoveries — wonder, not clickbait.
 ```
 
 ## Tags draft (~480 chars)

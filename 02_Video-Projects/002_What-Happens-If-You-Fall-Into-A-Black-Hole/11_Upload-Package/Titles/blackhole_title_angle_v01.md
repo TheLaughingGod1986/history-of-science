@@ -1,6 +1,6 @@
 # Title + angle lock — Video 002
 
-**Primary title (98/100):** What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
+**Primary title (98/100):** What Happens If You Fall Into a Black Hole? History of Science  
 **Angle:** Put Orbit in peril — teach horizon / time dilation / spaghettification through *his* fall  
 **Tone:** Pixar-warm × hard astrophysics (science + emotional stakes)  
 
@@ -11,7 +11,7 @@
 
 ## Alts (Studio Title+Thumb ABC)
 
-1. What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey ← **lock**
+1. What Happens If You Fall Into a Black Hole? History of Science ← **lock**
 2. Black Holes Explained: What Would Happen If Orbit Fell Into One?
 3. What If Orbit Fell Into A Black Hole? (Spaghettification Explained)
 

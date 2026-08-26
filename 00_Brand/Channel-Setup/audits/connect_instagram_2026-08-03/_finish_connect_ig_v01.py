@@ -48,7 +48,7 @@ def dump(page) -> dict:
                 re.I,
             )
         ),
-        "orbitwithben": "orbitwithben" in text.lower(),
+        "historyofscience": "historyofscience" in text.lower(),
         "connected_complete": bool(re.search(r"Connected Instagram", text, re.I))
         and not bool(
             re.search(r"Review account connection|only includes some features", text, re.I)
@@ -285,7 +285,7 @@ def main() -> None:
             linked = dump(page_v)
             log["final"] = {"home": home, "ig_accounts": ig_acc, "linked": linked}
             print("FINAL home connect=", home["connect_instagram"], "review=", home["review_connection"])
-            print("FINAL ig accounts no_ig=", ig_acc["no_ig_added"], "orbit=", ig_acc["orbitwithben"])
+            print("FINAL ig accounts no_ig=", ig_acc["no_ig_added"], "orbit=", ig_acc["historyofscience"])
             print(
                 "FINAL linked review=",
                 linked["review_connection"],

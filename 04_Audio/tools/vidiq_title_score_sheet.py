@@ -19,7 +19,7 @@ import re
 from datetime import date
 from pathlib import Path
 
-BRAND_SUFFIX = "Orbit's Cosmic Journey"
+BRAND_SUFFIX = "History of Science"
 
 
 def clean_title(raw: str) -> str | None:

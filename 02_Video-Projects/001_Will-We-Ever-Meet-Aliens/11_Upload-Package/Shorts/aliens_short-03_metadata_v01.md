@@ -9,8 +9,8 @@ The zoo hypothesis imagines advanced civilisations observing younger worlds whil
 Full film:
 https://youtu.be/Mo93x0fxB1Q
 
-#Aliens #SpaceMystery #FermiParadox #Shorts #OrbitWithBen
+#Aliens #SpaceMystery #FermiParadox #Shorts #HistoryOfScience
 
 Schedule: Saturday 9 August 2026 at 12:30 UK
 
-Related video: Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey
+Related video: Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science

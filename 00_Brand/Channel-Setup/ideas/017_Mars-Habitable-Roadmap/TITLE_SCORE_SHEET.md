@@ -8,11 +8,11 @@
 
 | | Title | Score | Keep? |
 |---|-------|------:|-------|
-| **A LOCK** | Why Even a Robot Can't Survive Mars Without Help \| Orbit's Cosmic Journey | **96** | **Yes** — Orbit-unique assumption flip |
-| **B** | Can We Actually Live on Mars? Orbit Investigates \| Orbit's Cosmic Journey | **93** | Original pitch; honest question |
-| **C** | Can We Terraform Mars? A Step-by-Step Reality Check \| Orbit's Cosmic Journey | **92** | Roadmap SEO clear |
-| — | Can Humans Live on Mars? The Honest Engineering Roadmap \| Orbit's Cosmic Journey | 91 | Solid backup |
-| — | Making Mars Habitable: The Real Roadmap \| Orbit's Cosmic Journey | 86 | Drop |
+| **A LOCK** | Why Even a Robot Can't Survive Mars Without Help \| History of Science | **96** | **Yes** — Orbit-unique assumption flip |
+| **B** | Can We Actually Live on Mars? Orbit Investigates \| History of Science | **93** | Original pitch; honest question |
+| **C** | Can We Terraform Mars? A Step-by-Step Reality Check \| History of Science | **92** | Roadmap SEO clear |
+| — | Can Humans Live on Mars? The Honest Engineering Roadmap \| History of Science | 91 | Solid backup |
+| — | Making Mars Habitable: The Real Roadmap \| History of Science | 86 | Drop |
 
 ## Keywords
 
@@ -25,5 +25,5 @@
 
 ## Decision
 
-**Locked (provisional):** Why Even a Robot Can't Survive Mars Without Help | Orbit's Cosmic Journey  
+**Locked (provisional):** Why Even a Robot Can't Survive Mars Without Help | History of Science  
 **Why:** Highest score + character moat. Sprinkle **mars colonization** / **terraform mars** in description.

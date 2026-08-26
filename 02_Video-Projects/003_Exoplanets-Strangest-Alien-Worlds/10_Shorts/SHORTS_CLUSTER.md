@@ -1,7 +1,7 @@
 # Shorts Cluster — Video 003 Exoplanets
 
-**Long-form:** Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey  
-**Channel:** Orbit with Ben · @OrbitWithBen  
+**Long-form:** Alien Worlds: The Strangest Planets We've Ever Found | History of Science  
+**Channel:** History of Science · @HistoryOfScience  
 **Cluster:** 6 Shorts · ~40–50s each · **pillar first**  
 **Style:** Same full-CG travelogue as the long — Orbit *in* scene, picture matches VO, Pixar-warm × hard astrophysics  
 **On-screen text:** yellow/white lowercase kinetic captions (`SHORTS_ONSCREEN_TEXT_STYLE.md`) — builders `*_shorts_v02.py`  

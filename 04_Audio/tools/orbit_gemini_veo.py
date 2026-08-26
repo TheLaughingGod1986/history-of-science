@@ -118,7 +118,7 @@ def orbit_image(ref: Path | None = None):
     path = ref or ORBIT_REF
     if not path.exists():
         raise SystemExit(f"Orbit ref missing: {path}")
-    return types.Image.from_file(str(path))
+    return types.Image.from_file(location=str(path))
 
 
 def build_prompt(scene_action: str, *, pass_id: str = "p0") -> str:
@@ -176,20 +176,13 @@ def generate_clip(
     from google.genai import types
 
     img = orbit_image(orbit_ref)
+    # Developer API: start-frame image only (ASSET reference_images unsupported).
     config = types.GenerateVideosConfig(
         number_of_videos=1,
         duration_seconds=duration_seconds,
         aspect_ratio=aspect_ratio,
         resolution=resolution,
         negative_prompt=NEGATIVE,
-        enhance_prompt=True,
-        generate_audio=False,
-        reference_images=[
-            types.VideoGenerationReferenceImage(
-                image=img,
-                reference_type=types.VideoGenerationReferenceType.ASSET,
-            )
-        ],
         seed=seed,
     )
     print(f"  submit model={model} → {dest.name}", flush=True)

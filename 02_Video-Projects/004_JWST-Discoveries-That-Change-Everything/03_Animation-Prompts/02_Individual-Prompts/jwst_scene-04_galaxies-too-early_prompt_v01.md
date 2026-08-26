@@ -1,6 +1,6 @@
 # Scene 04 — Galaxies Too Early
 
-**Video:** 004 — What the James Webb Telescope Discovered That Changes Everything | Orbit's Cosmic Journey
+**Video:** 004 — What the James Webb Telescope Discovered That Changes Everything | History of Science
 **VO span:** ~150s
 **Aspect:** 16:9 · **Duration per clip:** 8–10s · **Engine:** ElevenLabs Gemini Omni Flash / Seedance i2v
 **Reference:** `01_Orbit-Character/05_Seedance-References/orbit-seedance-reference-v01.png`

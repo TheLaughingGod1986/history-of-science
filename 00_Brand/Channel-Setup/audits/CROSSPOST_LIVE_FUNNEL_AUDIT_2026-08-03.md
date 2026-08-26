@@ -32,16 +32,16 @@ Index descriptions already include `Watch the full film:` + `youtu.be/…` for a
 | Black hole | `n7CbJrOCnU0` | Scheduled (per production-status) |
 | Exoplanets | `b8-X_FyJnHM` | In production / upload id present |
 
-## TikTok (`@orbitwithben`)
+## TikTok (`@historyofscience`)
 
 - **Live cuts present** for Fermi + Distance (grid shows non-scheduled thumbnails).
 - **Many future Shorts already scheduled** (exoplanets Aug 21–26, etc.).
 - Captions template (ledger / `TIKTOK_EXISTENTIAL_CAPTIONS.json`): existential hook + **`Full film on YouTube.`** (soft CTA, no raw URL spam) — correct.
-- **Bio link still wrong:** `youtube.com/OrbitWithBen` (missing `@`). Needs manual Save in Edit profile → `https://www.youtube.com/@OrbitWithBen`.
+- **Bio link still wrong:** `youtube.com/HistoryOfScience` (missing `@`). Needs manual Save in Edit profile → `https://www.youtube.com/@HistoryOfScience`.
 
 ## Instagram + Facebook (Meta)
 
-- Business Suite composer targets **Orbit with Ben + @orbitwithben**.
+- Business Suite composer targets **History of Science + @historyofscience**.
 - Auto uploader improved (file chooser + caption fill). Latest run: `caption_ok=true` for all 3 live Shorts, status **`unconfirmed`** (Share confirmation flake / leave-page dialog).
 - IG Reels grid still dominated by **old non-Orbit posts** — Orbit space Shorts not clearly live yet.
 - **Action:** manually finish Share in Meta Business Suite for the 3 uploaded drafts if still open, or re-run:
@@ -50,7 +50,7 @@ Index descriptions already include `Watch the full film:` + `youtu.be/…` for a
   ```
   after dismissing leave-page dialogs in the CDP window on `:9223`.
 
-## Threads (`@orbitwithben`)
+## Threads (`@historyofscience`)
 
 - Branding OK: name, bio, YouTube link, Orbit avatar, intro text post.
 - **No Shorts video threads visible** after auto attempts (`unconfirmed`). Module clash with Meta `_sib` fixed.
@@ -71,7 +71,7 @@ Index descriptions already include `Watch the full film:` + `youtu.be/…` for a
 ## Remaining checklist
 
 1. Pin full-film comments on YT `1HuV8o3gOss`, `dPMJQp2gMNc`, `rFJoOdQAc9c`
-2. Fix TikTok bio to `@OrbitWithBen`
+2. Fix TikTok bio to `@HistoryOfScience`
 3. Confirm Meta Share published all 3 to **both** FB + IG with captions containing `Full film on YouTube.`
 4. Post the same 3 video threads on Threads
 5. Before each scheduled cluster goes live: pin CTA + related video + Meta/Threads mirror (LaunchAgents should handle after YT Public)

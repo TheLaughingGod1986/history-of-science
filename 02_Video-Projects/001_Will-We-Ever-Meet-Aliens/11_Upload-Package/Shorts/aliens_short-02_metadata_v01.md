@@ -9,8 +9,8 @@ Are we alone in the universe? The Fermi Paradox explained in under a minute — 
 Full film:
 https://youtu.be/Mo93x0fxB1Q
 
-#FermiParadox #AreWeAlone #Space #Shorts #OrbitWithBen
+#FermiParadox #AreWeAlone #Space #Shorts #HistoryOfScience
 
 Schedule: Thursday 7 August 2026 at 21:00 UK
 
-Related video: Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey
+Related video: Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science

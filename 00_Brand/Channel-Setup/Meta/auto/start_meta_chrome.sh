@@ -3,7 +3,7 @@
 set -euo pipefail
 PROFILE="${HOME}/.orbit-chrome-meta-dev"
 PORT=9223
-# Pin to Orbit with Ben portfolio + Page (not Benkay Creative).
+# Pin to History of Science portfolio + Page (not Benkay Creative).
 COMPOSER="https://business.facebook.com/latest/reels_composer?asset_id=1285932871266399&business_id=1352434763139246"
 
 if curl -sf "http://127.0.0.1:${PORT}/json/version" >/dev/null 2>&1; then

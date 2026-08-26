@@ -22,7 +22,7 @@ LONG_ID = INDEX["long_id"]
 LONG_TITLE = INDEX["long_title"]
 # Full title as shown in Studio / watch
 LONG_TITLE_FULL = (
-    "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey"
+    "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science"
 )
 PINNED = (PKG / "Pinned-Comments/aliens_long_pinned-comment_v01.txt").read_text().strip()
 OUT = PKG / "Schedule/aliens_related_pin_v03.json"
@@ -249,7 +249,7 @@ def pick_cell(page, r: dict) -> bool:
         LONG_ID,
         "Why Haven't We Found Aliens",
         "Fermi Paradox Explained",
-        "Orbit's Cosmic Journey",
+        "History of Science",
         "Haven't We Found Aliens",
     ]
     for i in range(cells.count()):

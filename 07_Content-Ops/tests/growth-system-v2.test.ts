@@ -50,7 +50,7 @@ const WEAK_SCRIPT = `
 Welcome to History of Science. In this video, what is a black hole?
 Have you ever wondered about space? For centuries humanity has looked up.
 Today we will explain the history of black holes in a calm lecture style.
-| Orbit's Cosmic Journey
+| History of Science
 `;
 
 describe("script reviewer v2", () => {

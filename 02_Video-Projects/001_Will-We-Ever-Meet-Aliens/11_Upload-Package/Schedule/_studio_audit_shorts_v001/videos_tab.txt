@@ -2,7 +2,7 @@ Channel content
 Skip navigation
 Create
 Your channel
-Orbit with Ben
+History of Science
 Dashboard
 Content
 Analytics
@@ -32,7 +32,7 @@ Date
 Views
 Comments
 19:50
-What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey
+What Happens If You Fall Into a Black Hole? History of Science
 What happens if you fall into a black hole? Join Orbit — a small orange exploration robot — on a black holes explained cosmic journey across the event horizon. In this space documentary we explore spaghettification, time dilation, the singularity, Hawking radiation, and what scientists still don't know about falling into a black hole. 🌌 Chapters: 0:00 — Orbit's question 0:33 — What is a black hole? 1:31 — Black hole myths 2:23 — How black holes are born 4:35 — Event horizon explained 6:22 — Ap
 —
 Scheduled
@@ -41,7 +41,7 @@ Scheduled
 0
 0
 18:32
-Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey
+Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science
 A/B test running
 —
 Public

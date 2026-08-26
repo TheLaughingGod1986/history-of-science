@@ -92,8 +92,8 @@ The Wow! signal: one strange scream from the sky in 1977… then nothing.
 
 Was it noise — or a hello that didn’t come back?
 
-Full story on Orbit with Ben.
+Full story on History of Science.
 
 #shorts #SETI #wowsignal #aliens #space
 ```
-**Tags:** wow signal, SETI, fermi paradox, aliens, space shorts, Orbit with Ben
+**Tags:** wow signal, SETI, fermi paradox, aliens, space shorts, History of Science

@@ -130,7 +130,7 @@ function scoreHook(script: string, open: string): { score: number; findings: Scr
     findings.push({
       dimension: "searchPotential",
       severity: "warn",
-      message: "Series suffix detected (e.g. | Orbit's Cosmic Journey). Prefer one-promise titles without series branding.",
+      message: "Series suffix detected (e.g. | History of Science). Prefer one-promise titles without series branding.",
     });
   }
 

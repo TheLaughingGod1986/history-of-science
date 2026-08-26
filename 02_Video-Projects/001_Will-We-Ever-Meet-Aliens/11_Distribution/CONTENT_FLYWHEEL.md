@@ -13,11 +13,11 @@ Canonical rules: `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`
 
 | # | Day | Time UK | Working title | Single idea | Soft ending line | Status |
 |---|-----|---------|---------------|-------------|------------------|--------|
-| 1 | Thu | 21:00 | Why Haven't Aliens Said Hello? | Fermi paradox | Full story on Orbit With Ben | Scripted · S01 |
+| 1 | Thu | 21:00 | Why Haven't Aliens Said Hello? | Fermi paradox | Full story on History of Science | Scripted · S01 |
 | 2 | Fri | 12:30 | Why Meeting Aliens Takes Forever | Distance / light-time | Only one part of a bigger mystery | Scripted · S04 |
 | 3 | Sat | 12:30 | The Signal That Never Repeated | Wow! signal | Full story in our latest documentary | Scripted · S02 |
 | 4 | Sun | 12:30 | What If Aliens Are Watching Us? | Zoo hypothesis (science) | Explored in Will We Ever Meet Aliens? | Scripted · S03 |
-| 5 | Mon | 12:30 | The Silence Isn't Empty | Silence as invitation | Full story on Orbit With Ben | Scripted · S05 |
+| 5 | Mon | 12:30 | The Silence Isn't Empty | Silence as invitation | Full story on History of Science | Scripted · S05 |
 | 6 | Tue | 12:30 | Could We Have Missed the Evidence? | Listening windows | Soft funnel to long | Planned in schedule JSON |
 
 ---
@@ -34,7 +34,7 @@ Canonical rules: `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`
 
 1. **Day 1:** Micro-essay opening Fermi’s lunchtime question → “where is everybody?” → soft link to the film.
 2. **Day 3:** The Wow! signal as a careful mystery (no conspiracy) → curiosity → documentary.
-3. **Day 5:** Reflective closer on cosmic silence + “full documentary on YouTube — Orbit with Ben.”
+3. **Day 5:** Reflective closer on cosmic silence + “full documentary on YouTube — History of Science.”
 
 ---
 

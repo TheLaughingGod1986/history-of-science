@@ -94,8 +94,8 @@ Maybe nobody is there. Or maybe everyone is waiting.
 
 The silence isn’t empty — it’s an invitation to keep listening.
 
-Full Fermi Paradox film on Orbit with Ben.
+Full Fermi Paradox film on History of Science.
 
 #shorts #space #fermi #aliens #curiosity
 ```
-**Tags:** are we alone, fermi paradox, space wonder, Orbit with Ben, astronomy shorts
+**Tags:** are we alone, fermi paradox, space wonder, History of Science, astronomy shorts

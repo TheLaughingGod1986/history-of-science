@@ -84,7 +84,7 @@ CARDS = [
     ),
     (
         "card_end_subscribe",
-        "ORBIT WITH BEN",
+        "HISTORY OF SCIENCE",
         "BIG QUESTIONS. BIGGER UNIVERSE.",
         [
             "If this mystery stays with you —",

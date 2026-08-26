@@ -4,7 +4,7 @@ Full system: `../CHANNEL_BUILD_SYSTEM.md`
 Brand optimisation: `BRAND_OPTIMISATION.md`
 
 ## Feel
-Pixar meets space documentary. Orbit = “a tiny robot asking the biggest questions in the universe.”
+3D cartoon discovery films. Story leads; the Explorer is a sparse side character.
 
 ## Voice
 Cosmic · thoughtful · warm · witty · timeless.  
@@ -13,15 +13,16 @@ Wonder over certainty · Curiosity over clickbait · Science over speculation ·
 Narration: Ben AI clone — calm, curious, warm documentary (Attenborough × modern doc). Never conspiratorial.
 
 ## Visual
-- Mascot: rounded orange robot, black faceplate, cream eyes, glowing antenna, hover glow
+- Mascot: the Explorer — teal coat, gold glasses, satchel, atom pin (see `01_Character/CHARACTER_BIBLE.md`)
 - Primary orange `#FF7A24` · cream `#F5E8D2` · deep space `#0A0C12` · antenna gold `#FFC85A`
-- Wordmark: History of Science (channel) · Orbit face as avatar
-- Primary IP: **History of Science** channel · mascot **Orbit**
+- Wordmark: History of Science
+- Primary IP: **History of Science** channel · side mascot **the Explorer** (3D cartoon boy)
 - Brand line: How we discovered what we know.
 - Philosophy: Discovery. Wonder. Proof.
 - Banner: Discovery. Wonder. Proof.
+- Picture: story-first 3D cartoon; Explorer every few scenes only
 
-Orbit appears as guide (intro / react / explain / humour) — not every frame.
+Explorer walks through every few scenes — reacts / interacts — then leaves. Story stays front.
 
 ## Channel
 - Name: History of Science · Handle: @HistoryOfScience (claim at create — not live yet)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Upload Video 002 long-form to Orbit Studio as Private, then set schedule.
 
-Channel: Orbit with Ben (UC_esArsDKd3GJvOkeO0DUog)
+Channel: History of Science (TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL)
 Schedule target: Thu 6 Aug 2026 19:00 UK
 """
 from __future__ import annotations
@@ -24,8 +24,8 @@ TAGS = (ROOT / "11_Upload-Package/Tags/blackhole_long_tags_v01.txt").read_text()
 PINNED = (
     ROOT / "11_Upload-Package/Pinned-Comments/blackhole_long_pinned-comment_v01.txt"
 ).read_text().strip()
-TITLE = "What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey"
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+TITLE = "What Happens If You Fall Into a Black Hole? History of Science"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 OUT = ROOT / "11_Upload-Package/Schedule/blackhole_longform_upload_result.json"
 AUDIT = ROOT / "11_Upload-Package/Schedule/_studio_audit"
 # Studio date picker: 6 Aug 2026 19:00

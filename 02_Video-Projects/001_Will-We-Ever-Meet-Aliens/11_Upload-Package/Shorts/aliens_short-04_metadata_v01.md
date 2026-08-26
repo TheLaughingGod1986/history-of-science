@@ -9,8 +9,8 @@ The first real sign of alien life may already be in an archive: a chemical imbal
 Full film:
 https://youtu.be/Mo93x0fxB1Q
 
-#Aliens #Astronomy #AreWeAlone #Shorts #OrbitWithBen
+#Aliens #Astronomy #AreWeAlone #Shorts #HistoryOfScience
 
 Schedule: Sunday 10 August 2026 at 12:30 UK
 
-Related video: Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey
+Related video: Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science

@@ -1,6 +1,6 @@
 # 017 — Script outline v01 (Mars roadmap)
 
-**Title (96):** Why Even a Robot Can't Survive Mars Without Help | Orbit's Cosmic Journey  
+**Title (96):** Why Even a Robot Can't Survive Mars Without Help | History of Science  
 **Runtime:** 10–14 min  
 **Pattern:** Engineering roadmap · honest skepticism · Orbit guide
 

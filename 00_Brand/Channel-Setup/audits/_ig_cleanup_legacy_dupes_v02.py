@@ -15,14 +15,14 @@ OUT = Path(__file__).resolve().parent / "ig_cleanup_2026-08-03"
 OUT.mkdir(parents=True, exist_ok=True)
 
 KEEP = {
-    "/orbitwithben/reel/DbkkmlLEwbH/",
-    "/orbitwithben/reel/DbkkMoxjwpt/",
-    "/orbitwithben/reel/Dbkjz74gTje/",
+    "/historyofscience/reel/DbkkmlLEwbH/",
+    "/historyofscience/reel/DbkkMoxjwpt/",
+    "/historyofscience/reel/Dbkjz74gTje/",
 }
 
 
 def collect_hrefs(page) -> list[str]:
-    page.goto("https://www.instagram.com/orbitwithben/", wait_until="domcontentloaded", timeout=90000)
+    page.goto("https://www.instagram.com/historyofscience/", wait_until="domcontentloaded", timeout=90000)
     time.sleep(3.5)
     hrefs: list[str] = []
     stagnant = 0
@@ -33,14 +33,14 @@ def collect_hrefs(page) -> list[str]:
                 h = a.get_attribute("href") or ""
             except Exception:
                 continue
-            m = re.search(r"(/orbitwithben/(?:p|reel)/[^/?#]+/?)", h) or re.search(
+            m = re.search(r"(/historyofscience/(?:p|reel)/[^/?#]+/?)", h) or re.search(
                 r"(/(?:p|reel)/[^/?#]+/?)", h
             )
             if not m:
                 continue
             h = m.group(1)
-            if not h.startswith("/orbitwithben"):
-                h = "/orbitwithben" + h
+            if not h.startswith("/historyofscience"):
+                h = "/historyofscience" + h
             if not h.endswith("/"):
                 h += "/"
             if h not in hrefs:
@@ -124,7 +124,7 @@ def delete_one(page, href: str) -> dict:
 
 
 def posts_count(page) -> int | None:
-    page.goto("https://www.instagram.com/orbitwithben/", wait_until="domcontentloaded", timeout=90000)
+    page.goto("https://www.instagram.com/historyofscience/", wait_until="domcontentloaded", timeout=90000)
     time.sleep(3.5)
     body = page.inner_text("body")
     page.screenshot(path=str(OUT / "v02_profile.png"), full_page=True)
@@ -133,11 +133,11 @@ def posts_count(page) -> int | None:
 
 
 def profile_funnel(page) -> dict:
-    page.goto("https://www.instagram.com/orbitwithben/", wait_until="domcontentloaded", timeout=90000)
+    page.goto("https://www.instagram.com/historyofscience/", wait_until="domcontentloaded", timeout=90000)
     time.sleep(3.5)
     body = page.inner_text("body")
     return {
-        "bio_youtube_link": "youtube.com/@orbitwithben" in body.lower(),
+        "bio_youtube_link": "youtube.com/@historyofscience" in body.lower(),
         "bio_full_films": "full films on youtube" in body.lower(),
         "snip": re.sub(r"\s+", " ", body)[:400],
     }

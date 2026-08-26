@@ -17,7 +17,7 @@ ROOT = Path(
 )
 INDEX = json.loads((ROOT / "10_Shorts/SHORTS_UPLOAD_INDEX.json").read_text())
 PKG = ROOT / "11_Upload-Package"
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 LONG_ID = INDEX["long_id"]
 LONG_TITLE = INDEX["long_title"]
 PINNED = (PKG / "Pinned-Comments/aliens_long_pinned-comment_v01.txt").read_text().strip()

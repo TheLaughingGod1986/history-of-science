@@ -1,6 +1,6 @@
 # 016 — Script outline v01 (Nearest star walk)
 
-**Title (94):** How Far Is the Nearest Star? Orbit Tries to Walk There | Orbit's Cosmic Journey  
+**Title (94):** How Far Is the Nearest Star? Orbit Tries to Walk There | History of Science  
 **Runtime:** 10–14 min  
 **Pattern:** Narrative journey · body-scale · Orbit guide
 

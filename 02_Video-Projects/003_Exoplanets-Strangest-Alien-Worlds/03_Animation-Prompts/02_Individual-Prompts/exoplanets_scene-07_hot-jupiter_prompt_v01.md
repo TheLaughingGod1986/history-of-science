@@ -1,6 +1,6 @@
 # Scene 07 — Hot Jupiter — hottest nights
 
-**Video:** 003 — Alien Worlds: The Strangest Planets We've Ever Found | Orbit's Cosmic Journey
+**Video:** 003 — Alien Worlds: The Strangest Planets We've Ever Found | History of Science
 **VO span:** ~110s
 **Aspect:** 16:9 · **Duration per clip:** 8–10s · **Engine:** ElevenLabs Gemini Omni Flash / Seedance i2v
 **Reference:** `01_Orbit-Character/05_Seedance-References/orbit-seedance-reference-v01.png`

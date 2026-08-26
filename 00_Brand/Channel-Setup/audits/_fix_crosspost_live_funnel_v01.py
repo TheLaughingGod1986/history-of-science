@@ -4,7 +4,7 @@ Fix Orbit cross-post funnel for live Shorts (2026-08-03).
 
 1) YouTube: past-due aliens Shorts → Public (desc already has full-film link)
 2) YouTube: pin "Full film here →" comments
-3) TikTok: fix bio YouTube URL to @OrbitWithBen
+3) TikTok: fix bio YouTube URL to @HistoryOfScience
 4) Meta + Threads: post the live Shorts with soft CTA captions
 5) Sync SHORTS_UPLOAD_INDEX visibility flags
 """
@@ -218,7 +218,7 @@ def publish_youtube_public(page, video_id: str) -> dict:
 
 def pin_comment(page, video_id: str) -> dict:
     comment = (
-        f"Full film here → {LONG_TITLE}\n{LONG_URL}\n\nOrbit's Cosmic Journey 🚀"
+        f"Full film here → {LONG_TITLE}\n{LONG_URL}\n\nHistory of Science 🚀"
     )
     out = {"video_id": video_id, "ok": False}
     # Studio comments is more reliable for owners
@@ -324,15 +324,15 @@ def pin_comment(page, video_id: str) -> dict:
 
 def fix_tiktok_bio(page) -> dict:
     out = {"ok": False}
-    page.goto("https://www.tiktok.com/@orbitwithben", wait_until="domcontentloaded", timeout=90000)
+    page.goto("https://www.tiktok.com/@historyofscience", wait_until="domcontentloaded", timeout=90000)
     page.wait_for_timeout(2500)
     body = page.inner_text("body")
-    if "youtube.com/@OrbitWithBen" in body and "youtube.com/OrbitWithBen" not in body.replace(
-        "youtube.com/@OrbitWithBen", ""
+    if "youtube.com/@HistoryOfScience" in body and "youtube.com/HistoryOfScience" not in body.replace(
+        "youtube.com/@HistoryOfScience", ""
     ):
         # still may have wrong without @
         pass
-    if "https://www.youtube.com/OrbitWithBen" not in body and "youtube.com/@OrbitWithBen" in body:
+    if "https://www.youtube.com/HistoryOfScience" not in body and "youtube.com/@HistoryOfScience" in body:
         out["ok"] = True
         out["skipped"] = "already_correct"
         return out
@@ -346,12 +346,12 @@ def fix_tiktok_bio(page) -> dict:
         if bio.count():
             cur = bio.input_value()
             new = re.sub(
-                r"https?://(www\.)?youtube\.com/OrbitWithBen",
-                "https://www.youtube.com/@OrbitWithBen",
+                r"https?://(www\.)?youtube\.com/HistoryOfScience",
+                "https://www.youtube.com/@HistoryOfScience",
                 cur,
             )
-            if "youtube.com/@OrbitWithBen" not in new:
-                new = "Space stories. Big questions. Full films on https://www.youtube.com/@OrbitWithBen"
+            if "youtube.com/@HistoryOfScience" not in new:
+                new = "Space stories. Big questions. Full films on https://www.youtube.com/@HistoryOfScience"
             bio.fill(new)
             out["bio"] = new
         page.get_by_role("button", name=re.compile(r"^Save$", re.I)).click(timeout=5000)

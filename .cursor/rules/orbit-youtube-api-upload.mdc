@@ -1,9 +1,9 @@
 ---
-description: Orbit YouTube uploads — Data API package default; Studio only for API gaps
+description: History of Science YouTube uploads — Data API package default; Studio only for API gaps
 alwaysApply: true
 ---
 
-# Orbit — YouTube upload path (locked)
+# History of Science — YouTube upload path (locked)
 
 **Default:** YouTube Data API v3 package upload via Content Ops — not Studio CDP as the primary uploader.
 

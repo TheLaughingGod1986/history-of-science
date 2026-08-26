@@ -1,6 +1,6 @@
 # 015 — Script outline v01 (Left in space)
 
-**Title (96):** The 7 Strangest Things We've Accidentally Left in Space | Orbit's Cosmic Journey  
+**Title (96):** The 7 Strangest Things We've Accidentally Left in Space | History of Science  
 **Runtime target:** 12–18 min  
 **Patterns:** object-by-object journey · emotional anchoring · wonder ending (intentional Golden Record)
 

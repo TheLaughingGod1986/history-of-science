@@ -53,7 +53,7 @@ Pull GB (or primary market) research for 5–8 terms.
 
 ## 3. Title ABC (score before VO)
 
-**Growth System v2:** one promise · prefer ≤ ~60 characters · **do not** append `| Orbit's Cosmic Journey` (or similar series suffix). Brand lives in the content.
+**Growth System v2:** one promise · prefer ≤ ~60 characters · **do not** append `| History of Science` (or similar series suffix). Brand lives in the content.
 
 | | Title | Score | Keep? |
 |---|-------|------:|-------|

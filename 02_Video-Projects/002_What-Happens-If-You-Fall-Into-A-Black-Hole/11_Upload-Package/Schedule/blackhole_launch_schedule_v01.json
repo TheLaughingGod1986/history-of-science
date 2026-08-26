@@ -1,9 +1,9 @@
 {
-  "channel": "Orbit with Ben",
-  "handle": "@OrbitWithBen",
-  "channel_id": "UC_esArsDKd3GJvOkeO0DUog",
+  "channel": "History of Science",
+  "handle": "@HistoryOfScience",
+  "channel_id": "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL",
   "longform": {
-    "title": "What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey",
+    "title": "What Happens If You Fall Into a Black Hole? History of Science",
     "file": "09_Final-Export/blackhole_v04_UPLOAD_READY_MASTER.mp4",
     "thumbnail_primary": "08_Thumbnail/blackhole_thumbnail_primary_A_falling-in_v01.png",
     "thumbnails_abc": [
@@ -54,5 +54,5 @@
       "file": "10_Shorts/06_Final-Exports/blackhole_short-06_point-of-no-return_v01.mp4"
     }
   ],
-  "short_description_template": "A black-hole mystery in under a minute — from Orbit with Ben.\\n\\nFull story: {{LONG_VIDEO_URL}}\\n\\n#blackhole #shorts #spacedocumentary #orbitwithben"
+  "short_description_template": "A black-hole mystery in under a minute — from History of Science.\\n\\nFull story: {{LONG_VIDEO_URL}}\\n\\n#blackhole #shorts #spacedocumentary #historyofscience"
 }

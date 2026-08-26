@@ -23,7 +23,7 @@ VIDEOS = [
         "file": EXPORTS / "aliens_short-02_fermi-paradox_v02.mp4",
         "caption": (
             "Where Is Everybody? Full film on YouTube. "
-            "https://youtu.be/Mo93x0fxB1Q #space #orbitwithben #reels"
+            "https://youtu.be/Mo93x0fxB1Q #space #historyofscience #reels"
         ),
     },
     {
@@ -31,7 +31,7 @@ VIDEOS = [
         "file": EXPORTS / "aliens_short-01_distance_v02.mp4",
         "caption": (
             "Space Is Rude About Distance. Full film on YouTube. "
-            "https://youtu.be/Mo93x0fxB1Q #space #orbitwithben #reels"
+            "https://youtu.be/Mo93x0fxB1Q #space #historyofscience #reels"
         ),
     },
     {
@@ -39,7 +39,7 @@ VIDEOS = [
         "file": EXPORTS / "aliens_short-03_zoo-hypothesis_v02.mp4",
         "caption": (
             "What If Aliens Are Watching Us? Full film on YouTube. "
-            "https://youtu.be/Mo93x0fxB1Q #space #orbitwithben #reels"
+            "https://youtu.be/Mo93x0fxB1Q #space #historyofscience #reels"
         ),
     },
 ]

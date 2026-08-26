@@ -32,7 +32,7 @@ Canonical ops doc: `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md`
 
 ## Public `/go/` base (locked)
 
-- Base: `https://history-of-science-content-ops.vercel.app/go/{slug}` **only**
+- Base: `https://history-of-science-content-ops.vercel.app/go/{slug}` **only** (set after HOS Content Ops deploy; never Orbit's host)
 - **Never** `historyofscience.com` or `oppti.dev`
 - **Never** commit `AMAZON_ASSOCIATE_TAG` / `orbitgo-21`
 - **Do not invent ASINs**

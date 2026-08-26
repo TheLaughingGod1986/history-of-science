@@ -7,7 +7,7 @@
   "force_instrumental": false,
   "status": "generated",
   "why": "Omni native beds restart every ~8s plate. Ben UAT: continuous underscore matching VO, not a new sting at each cut.",
-  "prompt": "Instrumental cinematic space documentary underscore for Orbit with Ben, Part 01. One continuous 76s piece following hang → ordinary dies → gravity/ring → giant/supernova → remnant resolve. No vocals. No 8-second restarts.",
+  "prompt": "Instrumental cinematic space documentary underscore for History of Science, Part 01. One continuous 76s piece following hang → ordinary dies → gravity/ring → giant/supernova → remnant resolve. No vocals. No 8-second restarts.",
   "chunks": [
     {"text": "[Anticipation]", "duration_ms": 8000},
     {"text": "[The Turn]", "duration_ms": 16000},

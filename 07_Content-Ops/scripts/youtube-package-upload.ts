@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Orbit YouTube package upload — Data API for everything it can do,
+ * History of Science YouTube package upload — Data API for everything it can do,
  * plus a Studio finish checklist for ABC / pin / Related / end screens.
  *
  * Usage:

@@ -233,7 +233,7 @@ def main():
             OUT.write_text(json.dumps(result, indent=2) + "\n")
 
         page.goto(
-            "https://studio.youtube.com/channel/UC_esArsDKd3GJvOkeO0DUog/videos/short",
+            "https://studio.youtube.com/channel/TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL/videos/short",
             wait_until="domcontentloaded",
         )
         page.wait_for_timeout(4500)

@@ -105,10 +105,10 @@ Orbit facing viewer slightly, warm antenna glow, starfield background, calm refl
 ```
 If alien civilisations are common… where is everybody?
 
-The Fermi Paradox in under a minute — then the full story on Orbit with Ben.
+The Fermi Paradox in under a minute — then the full story on History of Science.
 
-#shorts #space #fermi #aliens #astronomy #orbitwithben
+#shorts #space #fermi #aliens #astronomy #historyofscience
 ```
-**Tags:** fermi paradox, are we alone, aliens, space shorts, astronomy, SETI, Orbit with Ben  
+**Tags:** fermi paradox, are we alone, aliens, space shorts, astronomy, SETI, History of Science  
 **Related / pinned (when long live):** 001 URL  
 **Playlist:** Alien Civilisations · Shorts

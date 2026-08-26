@@ -1,7 +1,7 @@
 # Video 002 — Launch schedule (UK)
 
 **Timezone:** Europe/London  
-**Channel:** @OrbitWithBen  
+**Channel:** @HistoryOfScience  
 **Pillar first — never Short before long is public**
 
 ## Long-form
@@ -9,7 +9,7 @@
 | Field | Value |
 |-------|--------|
 | **Go-live** | **Thu 6 Aug 2026 · 19:00** |
-| Title | What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey |
+| Title | What Happens If You Fall Into a Black Hole? History of Science |
 | File | `09_Final-Export/blackhole_v04_UPLOAD_READY_MASTER.mp4` |
 | Thumbnail (primary) | `08_Thumbnail/blackhole_thumbnail_primary_A_falling-in_v01.png` |
 | ABC thumbs | `08_Thumbnail/GPT-Image-2-Tests/` A / B / C |

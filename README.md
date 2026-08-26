@@ -1,72 +1,68 @@
 # History of Science — YouTube Production Workspace
 
-Production workspace for **History of Science** (`@HistoryOfScience`) — a faceless
-animated science-storytelling channel. Feel: *Pixar meets documentary.*
-Orbit the robot is the guide; the channel brand is History of Science.
+Production workspace for **History of Science** (`@HistoryOfScience`) — a
+**3D cartoon**, upbeat science channel. Story leads; the Explorer is a sparse
+side character. Separate repo and channel from Orbit With Ben.
 
-Orbit is a small hovering robot: rounded orange body, black faceplate, cream
-expressive eyes, a single glowing antenna, and two side arms — *a tiny robot
-asking the biggest questions in the universe.*
+**Vision (locked):** `00_Brand/Channel-Setup/CHANNEL_VISION.md`  
+**Character bible:** `01_Character/CHARACTER_BIBLE.md`  
+**Channel checklist:** `00_Brand/Channel-Setup/CHANNEL_READY.md` · `CHANNEL_META.json`
+
+| Stack | Reuse |
+|---|---|
+| VO | ElevenLabs Ben Orbit Narrator (same British voice) |
+| CG | Omni / Gemini Veo silent picture (`04_Audio/tools/orbit_gemini_veo.py`) |
+| Upload | YouTube Data API v3 via Content Ops |
+
+Feel: **Animistry-class 3D cartoon** immersion · 8–9 min · curiosity titles about science discovery · Explorer as light garnish.  
+Inspiration: `00_Brand/Channel-Setup/INSPIRATION_ANIMISTRY.md` · https://www.youtube.com/@ytAnimistry
 
 **Creative director system:** `00_Brand/CHANNEL_BUILD_SYSTEM.md`  
-**Channel setup (not live yet):** `00_Brand/Channel-Setup/CHANNEL_READY.md`  
 **YouTube Growth System v2 (canonical):** `00_Brand/Channel-Setup/YOUTUBE_GROWTH_SYSTEM_V2.md`  
 **Publishing & Shorts strategy:** `00_Brand/Channel-Setup/PUBLISHING_AND_SHORTS_STRATEGY.md`  
 **Publish schedule:** `00_Brand/Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.md` · `CHANNEL_PUBLISH_CADENCE.md`  
-**Latest audit:** `00_Brand/Channel-Setup/audits/CHANNEL_AUDIT_2026-08-01_PM.md`  
 **Flywheel / release:** `CONTENT_FLYWHEEL_TEMPLATE.md` · `RELEASE_WEEK_CHECKLIST.md`  
 **Video backlog:** `00_Brand/Channel-Setup/VIDEO_BACKLOG.json`  
-**Long-form quality gate (8–12 min · cold open · VO–picture):** `00_Brand/Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
-**CG = Gemini Veo API** (`04_Audio/tools/orbit_gemini_veo.py` · `docs/GEMINI_VEO_CG.md`) · **VO = ElevenLabs** Ben Orbit Narrator  
-**Pre-build vidIQ audit (blocking before gen):** `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`
-**Retention & growth (locked going forward):** `00_Brand/Channel-Setup/RETENTION_AND_GROWTH_LOCKED.md`  
+**Long-form quality gate:** `00_Brand/Channel-Setup/LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
+**CG docs:** `docs/GEMINI_VEO_CG.md` · **VO lock:** `.cursor/rules/orbit-british-vo-lock.mdc`  
+**Explorer lock:** `.cursor/rules/hos-explorer-character.mdc`  
+**Pre-build vidIQ audit:** `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`  
+**Retention & growth:** `00_Brand/Channel-Setup/RETENTION_AND_GROWTH_LOCKED.md`  
 **Script reviewer (≥90):** `cd 07_Content-Ops && npm run review:script -- --file <script.md>`  
 **Episode gate:** `cd 07_Content-Ops && npm run gate:episode -- --project ../02_Video-Projects/<slug>`  
-**Next brief:** `cd 07_Content-Ops && npm run brief:next -- --file metrics.json`  
-**Affiliate monetisation (Content Ops):** `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md` · `/affiliate`  
+**Affiliate (Content Ops):** `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md`  
 **New episode scaffold:** `02_Video-Projects/_template_NNN_Episode-Slug/`  
-**Cursor hooks:** `.cursor/hooks.json` (session checklist + pre-gen reminder)  
-**Shorts mirrors:** TikTok `Channel-Setup/TikTok/AUTO_POST.md` · Meta (IG+FB) `Channel-Setup/Meta/AUTO_POST.md`  
-**Playback lag (smooth audio, glitchy picture):** `docs/PLAYBACK_LAG_FIX.md` — remaster CFR then Studio **Replace** (keeps views)
 
-This repository holds every asset for the channel — the character bible, the
-per-video projects, reusable animation and audio libraries, and final exports.
+`01_Orbit-Character/` is **archive only**. Do not ship Orbit orange robot on this channel.
 
 ---
 
 ## Purpose
 
-1. Keep **one canonical visual definition of Orbit** (the mascot) so the character never
-   drifts between videos.
-2. Build a **reusable library** of Orbit animation clips (hover, talking,
-   reactions, outros) that can be dropped into any future video.
-3. Keep raw AI generations, chosen takes, and polished masters clearly separated
-   and never confused with each other.
+1. Tell discovery stories in **3D cartoon** style — story and world first.
+2. Use **the Explorer** sparingly (every few scenes) to walk through, react, and touch props.
+3. Reuse VO + Omni/Veo + YouTube API without pointing at Orbit With Ben.
+4. Keep raw AI generations, chosen takes, and polished masters clearly separated.
 
 ---
 
 ## Directory map
 
 ```
-History-of-Science/
-├── 00_Brand/                       Channel identity
+history-of-science/
+├── 00_Brand/                       Channel identity + CHANNEL_VISION.md
 │   ├── Logos/                      Channel logo, watermark, endcards
 │   ├── Fonts/                      Licensed font files
 │   ├── Colour-Palette/             Swatches, hex reference
 │   ├── Thumbnails/                 Reusable thumbnail templates
 │   └── Brand-Guidelines/           Written brand + voice rules
 │
-├── 01_Orbit-Character/             THE CHARACTER BIBLE
-│   ├── 01_Master-References/       PROTECTED. Canonical character sheets.
-│   ├── 02_Transparent-PNGs/        Cut-outs with alpha for compositing
-│   ├── 03_Expressions/             curious · amazed · concerned · playful
-│   ├── 04_Poses/                   front · side · pointing · waving
-│   ├── 05_Seedance-References/     Working copies fed to the video model
-│   └── 06_Animation-Exports/       POLISHED REUSABLE MASTERS
-│       ├── hover/                  Idle / floating / intro clips
-│       ├── talking/                Explaining clips for use under narration
-│       ├── reactions/              Thinking, surprised, emotional beats
-│       └── outros/                 Goodbye / fly-away endings
+├── 01_Character/                   HOS Explorer bible + sheets
+│   ├── CHARACTER_BIBLE.md
+│   ├── 01_Master-References/       Protected character sheet
+│   └── 05_Generation-References/   Veo / Omni identity attach
+│
+├── 01_Orbit-Character/             ARCHIVE (Orbit With Ben seed — do not ship)
 │
 ├── 02_Video-Projects/              One folder per video
 │   └── 001_Will-We-Ever-Meet-Aliens/

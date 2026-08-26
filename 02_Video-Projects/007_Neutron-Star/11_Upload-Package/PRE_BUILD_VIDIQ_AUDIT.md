@@ -1,4 +1,4 @@
-# Pre-build vidIQ audit — Orbit with Ben
+# Pre-build vidIQ audit — History of Science
 
 **Hard gate:** Run **before** locking script, VO, prompts, or picture gen for any new long.  
 **Goal:** Every episode is aimed at **views + full-video watch** using live data — not gut feel alone.  
@@ -53,7 +53,7 @@ Pull GB (or primary market) research for 5–8 terms.
 
 ## 3. Title ABC (score before VO)
 
-**Growth System v2:** one promise · prefer ≤ ~60 characters · **do not** append `| Orbit's Cosmic Journey` (or similar series suffix). Brand lives in the content.
+**Growth System v2:** one promise · prefer ≤ ~60 characters · **do not** append `| History of Science` (or similar series suffix). Brand lives in the content.
 
 | | Title | Score | Keep? |
 |---|-------|------:|-------|

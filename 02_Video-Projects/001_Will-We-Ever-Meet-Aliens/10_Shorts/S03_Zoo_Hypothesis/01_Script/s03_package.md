@@ -92,8 +92,8 @@ The zoo hypothesis: maybe the silence isn’t empty — maybe it’s a rule.
 
 Do not disturb.
 
-Full Fermi Paradox story on Orbit with Ben.
+Full Fermi Paradox story on History of Science.
 
 #shorts #fermi #aliens #space #zoohypothesis
 ```
-**Tags:** zoo hypothesis, fermi paradox, aliens watching, space shorts, Orbit with Ben
+**Tags:** zoo hypothesis, fermi paradox, aliens watching, space shorts, History of Science

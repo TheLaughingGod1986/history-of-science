@@ -25,7 +25,7 @@ python3 04_Audio/tools/vidiq_title_score_sheet.py --project-dir 02_Video-Project
 
 ## 1. Title options (3–5) — lock from audit
 
-Formula: Question + Mystery + Emotion. Mobile-scannable. Include `| Orbit's Cosmic Journey`.
+Formula: Question + Mystery + Emotion. Mobile-scannable. Include `| History of Science`.
 
 - A:
 - B:

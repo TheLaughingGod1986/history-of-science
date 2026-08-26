@@ -1,4 +1,4 @@
-# Orbit with Ben — Full Channel Audit
+# History of Science — Full Channel Audit
 
 **Date:** 2026-08-01 (Europe/London)  
 **Data:** vidIQ MCP (live) + YouTube Studio  
@@ -22,7 +22,7 @@ Channel is **72 hours old**. Long-form is not discovering yet; **Shorts are the 
 ## 1. Performance (vidIQ)
 
 ### Channel
-- Created: 2026-07-27 · Country GB · `@OrbitWithBen`
+- Created: 2026-07-27 · Country GB · `@HistoryOfScience`
 - Public catalogue: 1 long + 1 Short (others scheduled)
 - Analytics window tiny: traffic almost all `NO_LINK_OTHER` (self / opaque Shorts feed)
 - Demographics / geography / audience-overlap / best-time windows: **empty** (need ~1–2 weeks + more views)
@@ -35,9 +35,9 @@ Channel is **72 hours old**. Long-form is not discovering yet; **Shorts are the 
 
 | Title | Format | Score | Decision |
 |-------|--------|------:|----------|
-| Why Haven't We Found Aliens Yet? … \| Orbit's Cosmic Journey | long | **97** | Keep |
-| What Happens If You Fall Into a Black Hole? \| Orbit's Cosmic Journey | long | **98** | Next pillar priority |
-| Alien Worlds: The Strangest Planets… \| Orbit's Cosmic Journey | long | **97** | Keep V003 |
+| Why Haven't We Found Aliens Yet? … \| History of Science | long | **97** | Keep |
+| What Happens If You Fall Into a Black Hole? \| History of Science | long | **98** | Next pillar priority |
+| Alien Worlds: The Strangest Planets… \| History of Science | long | **97** | Keep V003 |
 | Why haven't we found aliens yet? The answer is terrifying | short | **97** | **Rejected** — fearbait vs brand |
 | Where Is Everybody? The Fermi Paradox | short | **88–89** | **Locked** (wonder > clickbait) |
 

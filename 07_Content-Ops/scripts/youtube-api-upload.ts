@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Orbit YouTube Data API upload (default path — prefer over Studio CDP).
+ * History of Science YouTube Data API upload (default path — prefer over Studio CDP).
  *
  * Usage:
  *   npx tsx scripts/youtube-api-upload.ts --file /path/to.mp4 --title "..." --dry-run

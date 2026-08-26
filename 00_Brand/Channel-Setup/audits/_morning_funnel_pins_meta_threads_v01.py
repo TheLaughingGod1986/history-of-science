@@ -20,9 +20,9 @@ LONDON = ZoneInfo("Europe/London")
 SOFT = "Full film on YouTube."
 FULL_URL = "https://youtu.be/Mo93x0fxB1Q"
 LONG_TITLE = "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained"
-COMMENT = f"Full film here → {LONG_TITLE}\n{FULL_URL}\n\nOrbit's Cosmic Journey 🚀"
-TT_LINK = "https://www.youtube.com/@OrbitWithBen"
-TT_BIO = "Space stories. Big questions. Films → youtube.com/@OrbitWithBen"
+COMMENT = f"Full film here → {LONG_TITLE}\n{FULL_URL}\n\nHistory of Science 🚀"
+TT_LINK = "https://www.youtube.com/@HistoryOfScience"
+TT_BIO = "Space stories. Big questions. Films → youtube.com/@HistoryOfScience"
 
 TARGETS = [
     {
@@ -175,7 +175,7 @@ def pin_fullfilm(page, video_id: str) -> dict:
 
 def fix_tiktok_bio_link(page) -> dict:
     out: dict = {"ok": False, "target": TT_LINK}
-    page.goto("https://www.tiktok.com/@orbitwithben", wait_until="domcontentloaded", timeout=120000)
+    page.goto("https://www.tiktok.com/@historyofscience", wait_until="domcontentloaded", timeout=120000)
     page.wait_for_timeout(3500)
     dismiss(page)
     out["before"] = page.inner_text("body")[:700]
@@ -274,7 +274,7 @@ def fix_tiktok_bio_link(page) -> dict:
             break
         page.wait_for_timeout(500)
 
-    page.goto("https://www.tiktok.com/@orbitwithben", wait_until="domcontentloaded", timeout=120000)
+    page.goto("https://www.tiktok.com/@historyofscience", wait_until="domcontentloaded", timeout=120000)
     page.wait_for_timeout(3500)
     dismiss(page)
     body = page.inner_text("body")
@@ -283,8 +283,8 @@ def fix_tiktok_bio_link(page) -> dict:
     )
     out["after"] = body[:700]
     out["links"] = links
-    out["has_at"] = "youtube.com/@OrbitWithBen" in body or "youtube.com/@orbitwithben" in body.lower()
-    out["has_link"] = any("youtube.com/@OrbitWithBen" in (h or "") or "youtube.com/@orbitwithben" in (h or "").lower() for h in links) or out["has_at"]
+    out["has_at"] = "youtube.com/@HistoryOfScience" in body or "youtube.com/@historyofscience" in body.lower()
+    out["has_link"] = any("youtube.com/@HistoryOfScience" in (h or "") or "youtube.com/@historyofscience" in (h or "").lower() for h in links) or out["has_at"]
     out["ok"] = bool(out["has_link"] or out["has_at"])
     page.screenshot(path=str(AUDIT / "tt_profile_final.png"))
     return out
@@ -306,7 +306,7 @@ def ensure_meta_login(page) -> dict:
 
     needs = bool(
         re.search(r"Log in|Log into Facebook|email address|password|Allow the use of cookies", body, re.I)
-    ) and not re.search(r"orbitwithben|Content|Reels composer|Home", body, re.I)
+    ) and not re.search(r"historyofscience|Content|Reels composer|Home", body, re.I)
 
     # Cookie wall
     for lab in ("Allow all cookies", "Accept all", "Allow essential and optional cookies"):

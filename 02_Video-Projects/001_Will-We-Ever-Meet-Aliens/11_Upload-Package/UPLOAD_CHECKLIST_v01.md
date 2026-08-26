@@ -1,6 +1,6 @@
 # Upload checklist — Video 001
 
-**Title (paste):** Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | Orbit's Cosmic Journey  
+**Title (paste):** Why Haven't We Found Aliens Yet? The Fermi Paradox Explained | History of Science  
 **Master:** `09_Final-Export/aliens_BOLD_EXPLAINER_v17_FINAL_UPLOAD_READY_MASTER.mp4`  
 **Thumb A:** `08_Thumbnail/GPT-Image-2-Tests/aliens_thumbnail-test-A_where-is-everybody_gpt-image-2_v01.png`
 
@@ -24,5 +24,5 @@
 
 ## SEO lock reminder
 
-Head search: **are we alone in the universe** · **fermi paradox explained** · brand suffix **Orbit's Cosmic Journey**  
+Head search: **are we alone in the universe** · **fermi paradox explained** · brand suffix **History of Science**  
 Detail: `RANKING_STRATEGY_v01.md`

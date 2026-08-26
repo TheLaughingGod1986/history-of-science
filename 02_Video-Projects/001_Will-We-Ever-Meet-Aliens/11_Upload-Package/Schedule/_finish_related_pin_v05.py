@@ -14,7 +14,7 @@ PKG = Path(
 )
 AUDIT = PKG / "Schedule/_studio_audit_shorts_v001"
 OUT = PKG / "Schedule/aliens_related_pin_v05.json"
-ORBIT = "UC_esArsDKd3GJvOkeO0DUog"
+ORBIT = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 OPPTI = "UCXRVwrCxXpN_o9gvuHPKAPQ"
 LONG_ID = "Mo93x0fxB1Q"
 SHORTS = ["z-DLqoSoEBo", "UWwNKYf_aU8", "MO19iXYCu0c", "--CxhjNqtSY"]
@@ -323,7 +323,7 @@ def main():
         pin["switch_click"] = switched
         page.wait_for_timeout(1000)
         page.screenshot(path=str(AUDIT / "v05_identity_menu.png"))
-        # Choose Orbit with Ben
+        # Choose History of Science
         chose = page.evaluate(
             """() => {
               const items=[...document.querySelectorAll(
@@ -331,7 +331,7 @@ def main():
               )];
               for (const i of items) {
                 const t=(i.innerText||'');
-                if (/Orbit with Ben/i.test(t)) { i.click(); return t.slice(0,80); }
+                if (/History of Science/i.test(t)) { i.click(); return t.slice(0,80); }
               }
               // also try menuitem
               return null;

@@ -13,13 +13,13 @@ import {
 describe("youtube package parsers", () => {
   it("parses title ABC sheet with recommended A", () => {
     const text = `A — RECOMMENDED
-JWST Found Galaxies That Shouldn't Exist Yet | Orbit's Cosmic Journey
+JWST Found Galaxies That Shouldn't Exist Yet | History of Science
 
 B — ALT
-The Early Universe Was Busier Than It Should Have Been | Orbit's Cosmic Journey
+The Early Universe Was Busier Than It Should Have Been | History of Science
 
 C — FALLBACK
-Why Did the Early Universe Look Too Busy for JWST? | Orbit's Cosmic Journey
+Why Did the Early Universe Look Too Busy for JWST? | History of Science
 `;
     const parsed = parseTitleAbcSheet(text);
     expect(parsed.titles).toHaveLength(3);
@@ -93,7 +93,7 @@ describe("loadYouTubePackage", () => {
     fs.mkdirSync(path.join(root, "Pinned-Comments"));
     fs.writeFileSync(
       path.join(root, "Titles", "title_abc_v01.txt"),
-      "A — RECOMMENDED\nHello Space | Orbit's Cosmic Journey\n\nB — ALT\nAlt Title | Orbit's Cosmic Journey\n",
+      "A — RECOMMENDED\nHello Space | History of Science\n\nB — ALT\nAlt Title | History of Science\n",
     );
     fs.writeFileSync(path.join(root, "Descriptions", "long_description_v01.txt"), "Desc body");
     fs.writeFileSync(path.join(root, "Tags", "tags_v01.txt"), "space,orbit,jwst");

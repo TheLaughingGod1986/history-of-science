@@ -1,6 +1,6 @@
 # 013 — Script outline v01 (Moon leaving us)
 
-**Title (99):** Why the Moon Is Slowly Leaving Us — and What Happens When It's Gone | Orbit's Cosmic Journey  
+**Title (99):** Why the Moon Is Slowly Leaving Us — and What Happens When It's Gone | History of Science  
 **Runtime lock:** **10–12 min** (post-V004 gate)  
 **Quality bar:** `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
 **Patterns:** assumption-flip · chapter story · body-scale · slow reveal · Orbit guide · teach + wonder

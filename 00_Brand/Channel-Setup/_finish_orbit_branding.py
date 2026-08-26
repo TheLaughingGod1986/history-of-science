@@ -15,7 +15,7 @@ AVATAR = SETUP / "avatar_800x800.png"
 BANNER = SETUP / "banner_2560x1440.png"
 DESC = (SETUP / "channel_description.txt").read_text().strip()
 AUDIT = SETUP / "audit"
-CID = "UC_esArsDKd3GJvOkeO0DUog"
+CID = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 RESULT = SETUP / "BRAND_RESULT.json"
 
 

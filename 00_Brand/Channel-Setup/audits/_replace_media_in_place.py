@@ -38,7 +38,7 @@ PROFILE_CANDIDATES = (
     "/Users/ben/code/youtube/.playwright-youtube-profile",
 )
 AUDIT = Path(__file__).resolve().parent / "playback_lag_in_place_replace"
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 LONG_IDS = {"Mo93x0fxB1Q", "n7CbJrOCnU0", "b8-X_FyJnHM"}
 
 def extract_long_id(data: dict) -> str:

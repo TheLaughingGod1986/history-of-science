@@ -1,6 +1,6 @@
 # 018 — Script outline v01 (Wrong kind of aliens)
 
-**Title (97):** We're Looking for the Wrong Kind of Aliens | Orbit's Cosmic Journey  
+**Title (97):** We're Looking for the Wrong Kind of Aliens | History of Science  
 **Runtime:** 8–12 min  
 **Pattern:** Assumption-flip · treat viewer as intelligent  
 **Defer:** After V001 + V003 alien cluster

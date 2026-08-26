@@ -15,7 +15,7 @@ ROOT = Path(
 )
 INDEX = json.loads((ROOT / "10_Shorts/SHORTS_UPLOAD_INDEX.json").read_text())
 LONG_URL = "https://youtu.be/n7CbJrOCnU0"
-CHANNEL = "UC_esArsDKd3GJvOkeO0DUog"
+CHANNEL = "TBD_CREATE_HISTORY_OF_SCIENCE_CHANNEL"
 OUT = ROOT / "11_Upload-Package/Schedule/blackhole_shorts_upload_result.json"
 AUDIT = ROOT / "11_Upload-Package/Schedule/_studio_audit_shorts"
 

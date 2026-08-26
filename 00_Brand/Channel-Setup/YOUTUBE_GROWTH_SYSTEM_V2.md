@@ -100,11 +100,11 @@ Science stays strong; add lived stakes:
 
 - Prefer **≤ ~60 characters**  
 - **One promise**  
-- No `| Orbit’s Cosmic Journey` (or similar series suffix) on every upload  
+- No `| History of Science` (or similar series suffix) on every upload  
 - Brand lives in the content; title sells the mystery  
 
 Good: *What Really Happens When You Fall Into a Black Hole?*  
-Bad: *What Happens If You Fall Into a Black Hole? | Orbit’s Cosmic Journey*
+Bad: *What Happens If You Fall Into a Black Hole? | History of Science*
 
 ### 8. Thumbnails
 

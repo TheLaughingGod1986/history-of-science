@@ -1,10 +1,10 @@
-# What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey — Script MASTER v01
+# What Happens If You Fall Into a Black Hole? History of Science — Script MASTER v01
 
-**Channel:** Orbit with Ben  
-**Video:** 002 — What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
-**Working / SEO title (98/100):** What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
+**Channel:** History of Science  
+**Video:** 002 — What Happens If You Fall Into a Black Hole? History of Science  
+**Working / SEO title (98/100):** What Happens If You Fall Into a Black Hole? History of Science  
 **Alt titles (ABC):**  
-- A: What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey  
+- A: What Happens If You Fall Into a Black Hole? History of Science  
 - B: Black Holes Explained: What Would Happen If Orbit Fell Into One?  
 - C: What If Orbit Fell Into A Black Hole? (Spaghettification Explained)  
 **Pillar:** Cosmic Mysteries  
@@ -61,7 +61,7 @@
 If I fell into a black hole… what would actually happen to me? Would I be crushed? Stretched into spaghetti? Would time stop?
 
 [ORBIT: determined hover; antenna brightens]  
-[TITLE: What Happens If You Fall Into a Black Hole? Orbit's Cosmic Journey]  
+[TITLE: What Happens If You Fall Into a Black Hole? History of Science]  
 [MUSIC: soft brand sting ~2s, then bed resumes]
 
 Today, Orbit is going to find out.
@@ -475,11 +475,11 @@ The universe is under no obligation to match our instincts.
 
 Falling in is almost certainly unsurvivable. Studying them from the outside — with telescopes, maths, patience — is one of the most human things we do.
 
-This is Orbit with Ben. If Orbit’s cosmic journey made you look at the night sky a little differently, stay curious — and subscribe for more cosmic journeys every week.
+This is History of Science. If Orbit’s cosmic journey made you look at the night sky a little differently, stay curious — and subscribe for more cosmic journeys every week.
 
 There are more doors in the dark… and not all of them are one-way.
 
-[END CARD: Orbit with Ben · subscribe / next]  
+[END CARD: History of Science · subscribe / next]  
 [ORBIT: final tiny wave, then exit frame]
 
 ---

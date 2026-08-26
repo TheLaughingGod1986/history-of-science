@@ -37,5 +37,5 @@ Artifacts: `audits/premature_social_cleanup_2026-08-03/`,
 ## Still recommended
 
 1. Re-login `~/.orbit-chrome-meta-dev` on `:9223` with `--remote-allow-origins=*`.
-2. Suite → **Connect a Facebook Page** → Orbit with Ben so Meta auto-posts hit the Page.
+2. Suite → **Connect a Facebook Page** → History of Science so Meta auto-posts hit the Page.
 3. Optional: delete leftover legacy IG `/p/Cq1MAN9I4pb/` when rate limits allow.
