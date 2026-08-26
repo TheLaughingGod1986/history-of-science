@@ -40,7 +40,7 @@ DEFAULT_PROFILE = Path(
 CLIP_USE = 7.5
 XFADE = 0.55
 FPS = 24
-MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Quality")
+MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 
 PLATES = [
     (

@@ -574,37 +574,47 @@ def _select_veo_from_dropdown(page, model: str) -> str:
 def _set_video_aspect_and_outputs(
     page, *, frames_mode: bool = False, ingredients_mode: bool = False
 ) -> None:
-    """Prefer 16:9 and x1; Frames or Ingredients for I2V when requested."""
-    page.evaluate(
-        """({ framesMode, ingredientsMode }) => {
-          if (framesMode) {
-            for (const b of document.querySelectorAll('button')) {
-              const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-              if (/crop_free|\\bFrames\\b/i.test(t) && t.length < 40) { b.click(); break; }
-            }
-          } else if (ingredientsMode) {
-            for (const b of document.querySelectorAll('button')) {
-              const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-              if (/Ingredients|chrome_extension/i.test(t) && t.length < 50) { b.click(); break; }
-            }
-          }
-          for (const b of document.querySelectorAll('button')) {
-            const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-            if ((/crop_16_9/.test(t) || /\\b16:9\\b/.test(t)) && t.length < 40) {
-              b.click(); break;
-            }
-          }
-          for (const b of document.querySelectorAll('button')) {
-            if ((b.innerText || '').trim() === 'x1') { b.click(); break; }
-          }
-          // Prefer 8s when duration chips exist
-          for (const b of document.querySelectorAll('button')) {
-            if ((b.innerText || '').trim() === '8s') { b.click(); break; }
-          }
-        }""",
-        {"framesMode": frames_mode, "ingredientsMode": ingredients_mode},
-    )
-    page.wait_for_timeout(300)
+    """Prefer 16:9 and x1; Frames or Ingredients for I2V when requested.
+
+    Mouse-click tabs — JS el.click() often fails to flip aria-selected here
+    (same bug as the Image/Video tab).
+    """
+
+    def _mouse_click_match(kind: str) -> str | None:
+        box = page.evaluate(
+            """(kind) => {
+              for (const b of document.querySelectorAll('button')) {
+                const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+                let ok = false;
+                if (kind === 'frames') ok = /crop_free|\\bFrames\\b/i.test(t) && t.length < 40;
+                else if (kind === 'ingredients') ok = /Ingredients|chrome_extension/i.test(t) && t.length < 50;
+                else if (kind === '16:9') ok = /crop_16_9/.test(t) || /\\b16:9\\b/.test(t);
+                else if (kind === '8s') ok = t === '8s';
+                else if (kind === 'x1') ok = t === 'x1';
+                if (!ok) continue;
+                const r = b.getBoundingClientRect();
+                if (r.width < 8 || r.height < 8) continue;
+                return { x: r.x + r.width / 2, y: r.y + r.height / 2, t };
+              }
+              return null;
+            }""",
+            kind,
+        )
+        if not box:
+            return None
+        page.mouse.click(box["x"], box["y"])
+        page.wait_for_timeout(350)
+        return box.get("t")
+
+    if frames_mode:
+        _mouse_click_match("frames")
+    elif ingredients_mode:
+        _mouse_click_match("ingredients")
+
+    _mouse_click_match("16:9")
+    _mouse_click_match("8s")
+    clicked_x1 = _mouse_click_match("x1")
+    print(f"  outputs clicked x1={clicked_x1!r}", flush=True)
 
 
 def configure_veo_settings(
@@ -1244,13 +1254,31 @@ def set_prompt(page, prompt: str) -> None:
 
 def submit_create(page) -> None:
     """Click the prompt-bar Create (arrow_forward), waiting until it enables."""
+    # Clear leftover asset-picker / error overlays that steal the Create control
+    for _ in range(4):
+        body = ""
+        try:
+            body = page.locator("body").inner_text(timeout=1500)[:2500]
+        except Exception:
+            pass
+        if any(
+            s in body
+            for s in ("Asset Search", "Search assets", "Upload media", "Add to Prompt")
+        ):
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(400)
+        else:
+            break
+
     deadline = time.time() + 45
     while time.time() < deadline:
         state = page.evaluate(
             """() => {
               for (const b of document.querySelectorAll('button')) {
                 const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+                // Prefer real Create — never the error/cancel chip control
                 if (!/arrow_forward/i.test(t)) continue;
+                if (/error|cancel/i.test(t)) continue;
                 const disabled =
                   b.disabled || b.getAttribute('aria-disabled') === 'true';
                 const r = b.getBoundingClientRect();
@@ -1261,16 +1289,29 @@ def submit_create(page) -> None:
                   t: t.slice(0, 40),
                 };
               }
+              // Info/error circle where Create should be
+              for (const b of document.querySelectorAll('button')) {
+                const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+                if (/^info$|^error$|priority_high|error\\s*cancel/i.test(t) &&
+                    b.getBoundingClientRect().y > 700) {
+                  return { disabled: true, blocked: t.slice(0, 40) };
+                }
+              }
               return null;
             }"""
         )
+        if state and state.get("blocked"):
+            raise RuntimeError(
+                f"Flow Create blocked ({state['blocked']!r}) — often Quality "
+                f"credits exhausted; try Veo 3.1 - Fast (0 credits on Ultra) + x1"
+            )
         if state and not state.get("disabled"):
-            # Prefer JS click — Playwright can hang on aria-disabled races
             clicked = page.evaluate(
                 """() => {
                   for (const b of document.querySelectorAll('button')) {
                     const t = (b.innerText || '').trim();
                     if (/arrow_forward/i.test(t) &&
+                        !/error|cancel/i.test(t) &&
                         !b.disabled &&
                         b.getAttribute('aria-disabled') !== 'true') {
                       b.click();
@@ -1288,7 +1329,6 @@ def submit_create(page) -> None:
             return
         page.wait_for_timeout(500)
 
-    # Last resort: any Create button
     creates = page.locator('button:has-text("Create")')
     if creates.count() == 0:
         raise RuntimeError("Flow Create / arrow_forward not found or never enabled")
