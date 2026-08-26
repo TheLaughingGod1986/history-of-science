@@ -571,14 +571,21 @@ def _select_veo_from_dropdown(page, model: str) -> str:
     return selected
 
 
-def _set_video_aspect_and_outputs(page, *, frames_mode: bool = False) -> None:
-    """Prefer 16:9 and x1; optionally Frames (I2V) when start-frame attaches."""
+def _set_video_aspect_and_outputs(
+    page, *, frames_mode: bool = False, ingredients_mode: bool = False
+) -> None:
+    """Prefer 16:9 and x1; Frames or Ingredients for I2V when requested."""
     page.evaluate(
-        """(framesMode) => {
+        """({ framesMode, ingredientsMode }) => {
           if (framesMode) {
             for (const b of document.querySelectorAll('button')) {
               const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
               if (/crop_free|\\bFrames\\b/i.test(t) && t.length < 40) { b.click(); break; }
+            }
+          } else if (ingredientsMode) {
+            for (const b of document.querySelectorAll('button')) {
+              const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+              if (/Ingredients|chrome_extension/i.test(t) && t.length < 50) { b.click(); break; }
             }
           }
           for (const b of document.querySelectorAll('button')) {
@@ -590,14 +597,22 @@ def _set_video_aspect_and_outputs(page, *, frames_mode: bool = False) -> None:
           for (const b of document.querySelectorAll('button')) {
             if ((b.innerText || '').trim() === 'x1') { b.click(); break; }
           }
+          // Prefer 8s when duration chips exist
+          for (const b of document.querySelectorAll('button')) {
+            if ((b.innerText || '').trim() === '8s') { b.click(); break; }
+          }
         }""",
-        frames_mode,
+        {"framesMode": frames_mode, "ingredientsMode": ingredients_mode},
     )
     page.wait_for_timeout(300)
 
 
 def configure_veo_settings(
-    page, *, model: str = DEFAULT_MODEL, frames_mode: bool = False
+    page,
+    *,
+    model: str = DEFAULT_MODEL,
+    frames_mode: bool = False,
+    ingredients_mode: bool = False,
 ) -> None:
     """Lock Flow Create settings to Veo 3.x video · 16:9 · x1.
 
@@ -612,7 +627,9 @@ def configure_veo_settings(
         _open_prompt_settings_pill(page)
         _select_video_tab(page)
         selected = _select_veo_from_dropdown(page, model)
-        _set_video_aspect_and_outputs(page, frames_mode=frames_mode)
+        _set_video_aspect_and_outputs(
+            page, frames_mode=frames_mode, ingredients_mode=ingredients_mode
+        )
         print(f"  video model locked: {selected}", flush=True)
         page.keyboard.press("Escape")
         page.wait_for_timeout(500)
@@ -1178,7 +1195,9 @@ def set_prompt(page, prompt: str) -> None:
     )
     page.keyboard.press("Backspace")
     page.wait_for_timeout(80)
-    # Clipboard paste is much faster than per-char type for long locks
+    # Clipboard paste is much faster than per-char type for long locks.
+    # Linux/Chrome needs Control+V; Meta+V is macOS-only and silently no-ops here.
+    pasted = False
     try:
         page.evaluate(
             """async (text) => {
@@ -1186,19 +1205,94 @@ def set_prompt(page, prompt: str) -> None:
             }""",
             prompt,
         )
-        page.keyboard.press("Meta+V")
+        page.keyboard.press("Control+V")
+        page.wait_for_timeout(200)
+        # Verify text landed (placeholder should be gone / editor nonempty)
+        got = page.evaluate(
+            """() => {
+              const ed = document.querySelector('[data-slate-editor="true"]');
+              return (ed && (ed.innerText || '').trim()) || '';
+            }"""
+        )
+        if got and len(got) >= min(12, len(prompt) // 4):
+            pasted = True
+        else:
+            # Retry with Meta+V for macOS profiles
+            page.keyboard.press("Meta+V")
+            page.wait_for_timeout(200)
+            got = page.evaluate(
+                """() => {
+                  const ed = document.querySelector('[data-slate-editor="true"]');
+                  return (ed && (ed.innerText || '').trim()) || '';
+                }"""
+            )
+            pasted = bool(got and len(got) >= min(12, len(prompt) // 4))
     except Exception:
+        pasted = False
+    if not pasted:
         page.keyboard.type(prompt, delay=0)
     page.wait_for_timeout(250)
+    final = page.evaluate(
+        """() => {
+          const ed = document.querySelector('[data-slate-editor="true"]');
+          return (ed && (ed.innerText || '').trim().slice(0, 80)) || '';
+        }"""
+    )
+    if not final:
+        raise RuntimeError("Flow prompt editor still empty after paste/type")
 
 
 def submit_create(page) -> None:
-    if not click_visible(page, "arrow_forward"):
-        # Last Create in prompt bar
-        creates = page.locator('button:has-text("Create")')
-        if creates.count() == 0:
-            raise RuntimeError("Flow Create / arrow_forward not found")
-        creates.last.click(timeout=8000)
+    """Click the prompt-bar Create (arrow_forward), waiting until it enables."""
+    deadline = time.time() + 45
+    while time.time() < deadline:
+        state = page.evaluate(
+            """() => {
+              for (const b of document.querySelectorAll('button')) {
+                const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+                if (!/arrow_forward/i.test(t)) continue;
+                const disabled =
+                  b.disabled || b.getAttribute('aria-disabled') === 'true';
+                const r = b.getBoundingClientRect();
+                return {
+                  disabled,
+                  x: r.x + r.width / 2,
+                  y: r.y + r.height / 2,
+                  t: t.slice(0, 40),
+                };
+              }
+              return null;
+            }"""
+        )
+        if state and not state.get("disabled"):
+            # Prefer JS click — Playwright can hang on aria-disabled races
+            clicked = page.evaluate(
+                """() => {
+                  for (const b of document.querySelectorAll('button')) {
+                    const t = (b.innerText || '').trim();
+                    if (/arrow_forward/i.test(t) &&
+                        !b.disabled &&
+                        b.getAttribute('aria-disabled') !== 'true') {
+                      b.click();
+                      return true;
+                    }
+                  }
+                  return false;
+                }"""
+            )
+            if clicked:
+                page.wait_for_timeout(800)
+                return
+            page.mouse.click(state["x"], state["y"])
+            page.wait_for_timeout(800)
+            return
+        page.wait_for_timeout(500)
+
+    # Last resort: any Create button
+    creates = page.locator('button:has-text("Create")')
+    if creates.count() == 0:
+        raise RuntimeError("Flow Create / arrow_forward not found or never enabled")
+    creates.last.click(timeout=8000, force=True)
 
 
 def dismiss_soft_prompts(page) -> None:
@@ -1449,9 +1543,12 @@ def _generate_clip_once(
     model = assert_veo3_model(model)
     ensure_agent_session(page)
     before = collect_media_ids(page)
-    # Start-frame I2V: prefer Frames mode in the Video settings popover.
+    # Start-frame / Orbit I2V: Ingredients mode (prompt chip), not Frames slots.
     configure_veo_settings(
-        page, model=model, frames_mode=(start_frame is not None)
+        page,
+        model=model,
+        frames_mode=False,
+        ingredients_mode=(start_frame is not None) or (not scenery_only),
     )
     print("  post-settings…", flush=True)
     settle_after_nav(page, wait_ms=600)
