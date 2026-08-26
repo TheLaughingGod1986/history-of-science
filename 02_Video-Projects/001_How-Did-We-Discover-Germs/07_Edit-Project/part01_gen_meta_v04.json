@@ -1,0 +1,18 @@
+{
+  "out": "02_Video-Projects/001_How-Did-We-Discover-Germs/09_Final-Export/hos_001_part01_rough_v04.mp4",
+  "mode": "still_interim_v04",
+  "note": "Veo quota blocked; ward-first stillbridges + corridor/hands motion for Ben UAT of patients+Explorer",
+  "plates": [
+    "01_ward_open_patients",
+    "02_clean_corridor",
+    "03_two_ill_patients",
+    "04_explorer_walks_past_beds",
+    "05_doctor_hands_instruments",
+    "06_fever_patient",
+    "07_sparse_microbes_hint",
+    "08_hands_between_patients",
+    "09_sparse_microbes_close",
+    "10_ward_hold_patients"
+  ],
+  "pic_dur": 68.4
+}

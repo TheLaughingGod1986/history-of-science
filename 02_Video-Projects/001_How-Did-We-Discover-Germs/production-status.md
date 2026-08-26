@@ -6,22 +6,24 @@
 | Cluster plan | DONE |
 | Pre-build VidIQ audit | SIGNED (live VidIQ re-score before upload) |
 | Master script | `germs_script_master_v01.md` |
-| Script review | **PASS 90.4** |
-| Episode gate | **PASS** |
-| Part 01 VO | DONE · ~84s Ben Orbit Narrator |
-| Part 01 Veo | **PARTIAL** — 3/10 plates (Gemini 429 quota). Explorer deferred. |
-| Part 01 rough | `hos_001_part01_partial_v01.mp4` (~23s picture under VO open) |
-| Parts 02–05 | Blocked on Ben UAT + Veo quota recovery |
-| Broadcast + Shorts | Later |
+| Script / gate | **PASS 90.4** |
+| Shorts cadence | Cluster 4–6 · **not daily** |
+| Part 01 VO | DONE · Ben Orbit Narrator |
+| Part 01 picture | **PASS — `hos_001_part01_rough_v08.mp4`** |
+| Style / microbe / motion locks | **LOCKED** |
+| Part 02 VO + stills | DONE |
+| Part 02 picture | **BLOCKED** — Ben: not animated. Still-push REJECT. 1/10 real Flow plate done; Flow daily limit + API 429 |
+| Parts 03–05 | Blocked on real animated Part 02 + Ben UAT |
+| Broadcast + Shorts | Later (Shorts only after long is public) |
 
 ## Artifacts
 
-- VO: `/opt/cursor/artifacts/part01_invisible_enemy_v01.mp3`
-- Partial rough: `/opt/cursor/artifacts/hos_001_part01_partial_v01.mp4`
-- Style test (locked): `/opt/cursor/artifacts/hos_explorer_style_test_30s_v01.mp4`
+- Part 01 locked: `/opt/cursor/artifacts/hos_001_part01_LOCKED_v08.mp4`
+- Part 02 real plate sample: `04_Generated-Clips/part02/raw/v01_flow/05_microbial_city_v01.mp4`
+- Part 02 still-push (REJECT): `09_Final-Export/hos_001_part02_rough_v01_STILLPUSH_REJECT.mp4`
 
-## Blocker
+## Next
 
-Gemini Developer API **RESOURCE_EXHAUSTED** after plates 01–03. Resume `_build_part01_rough_v01.py` when quota resets (skip-existing keeps the three good plates).
-
-**Do not start Part 02 until Ben passes Part 01.**
+1. Wait for Flow daily generation reset **or** Gemini Veo API quota.
+2. Generate remaining 9 Part 02 Flow I2V plates → assemble real `hos_001_part02_rough_v01.mp4`.
+3. Ben UAT Part 02 (animated). Then Part 03.

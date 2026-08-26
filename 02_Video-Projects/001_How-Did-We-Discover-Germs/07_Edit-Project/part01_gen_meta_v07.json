@@ -1,0 +1,19 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Quality (01-06) + Veo 3.1 - Fast (07-09); plate10 see note",
+  "plates": [
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/01_ward_open_v07.mp4",
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/02_corridor_v07.mp4",
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/03_patients_v07.mp4",
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/04_explorer_v07.mp4",
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/05_instruments_v07.mp4",
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/06_fever_v07.mp4",
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/07_micro_hint_v07.mp4",
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/08_hands_v07.mp4",
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/09_micro_close_v07.mp4",
+    "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/v07_flow/10_ward_hold_v07.mp4"
+  ],
+  "plate10_note": "Flow Fast stalled on ward_hold; used v06 morph stand-in",
+  "out": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/09_Final-Export/hos_001_part01_rough_v07.mp4",
+  "pic_dur": 70.05
+}

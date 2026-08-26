@@ -1,0 +1,14 @@
+{
+  "mode": "v08_end_motion_fix_v2",
+  "pic_dur": 76.4,
+  "motion_scores": {
+    "20": 14.73,
+    "40": 24.84,
+    "62": 30.72,
+    "68": 36.8,
+    "70": 31.3,
+    "72": 26.71,
+    "74": 29.63
+  },
+  "fix": "Last plates: Veo motion beds + drifting faceless microbes + secondary camera push (no still-zoom)"
+}

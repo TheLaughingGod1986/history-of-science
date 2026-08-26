@@ -35,8 +35,11 @@ ORBIT_REF_SEEDANCE = (
 )
 ORBIT_REF = ORBIT_REF_CG if ORBIT_REF_CG.exists() else ORBIT_REF_SEEDANCE
 
-# Default paid/preview model — override with ORBIT_VEO_MODEL
-DEFAULT_MODEL = os.environ.get("ORBIT_VEO_MODEL", "veo-3.1-fast-generate-preview")
+# Default Veo model — override with ORBIT_VEO_MODEL.
+# NOTE (2026-08-26): veo-3.1-fast-generate-preview can 429 RESOURCE_EXHAUSTED
+# on its own quota bucket even when prepaid credit remains and lite/standard
+# still work. Prefer lite (or generate-preview) unless Fast quota is healthy.
+DEFAULT_MODEL = os.environ.get("ORBIT_VEO_MODEL", "veo-3.1-lite-generate-preview")
 
 try:
     from orbit_voice import CG_PREFACE, CG_SILENT_AUDIO_BLOCK  # type: ignore

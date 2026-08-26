@@ -38,6 +38,8 @@ node_modules/
 # Inspiration proof screenshots (Shorts Related-pill examples, etc.)
 !00_Brand/Channel-Setup/inspiration/*.jpg
 !00_Brand/Channel-Setup/inspiration/*.jpeg
+!00_Brand/Channel-Setup/inspiration/*.png
+!00_Brand/Channel-Setup/inspiration/*.webp
 
 # Playwright / caches
 **/playwright-report/

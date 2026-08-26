@@ -1,0 +1,63 @@
+[
+  {
+    "id": "01_ward_open_patients",
+    "explorer": false,
+    "force": true,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). Two patients maximum in frame, tasteful 3D cartoon illness \u2014 pale faces, tired eyes, feverish stillness under white sheets. NO gore, NO blood, NO open wounds, NO corpses. Family-friendly but clearly sick and ill. Strange cold-open: Victorian hospital ward, soft lamps, brass beds \u2014 TWO sick patients resting ill in bed (pale, feverish, still). NO microbes visible yet. Human stakes first. Continuous slow push into the ward."
+  },
+  {
+    "id": "02_clean_corridor",
+    "explorer": false,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). Long clean Victorian hospital corridor, polished wood floor, soft wall lamps, white curtains in the distance, orderly and peaceful. No people. No microbes. Continuous slow dolly down the corridor toward the light."
+  },
+  {
+    "id": "03_two_ill_patients",
+    "explorer": false,
+    "force": true,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). Two patients maximum in frame, tasteful 3D cartoon illness \u2014 pale faces, tired eyes, feverish stillness under white sheets. NO gore, NO blood, NO open wounds, NO corpses. Family-friendly but clearly sick and ill. Medium shot along a row of brass beds: exactly two patients looking sick and ill under white sheets \u2014 one restless with fever, one very still and pale. Curtains, warm lamps. NO microbes. NO gore. Continuous gentle camera drift past the beds."
+  },
+  {
+    "id": "04_explorer_walks_past_beds",
+    "explorer": true,
+    "force": true,
+    "optional": true,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). CRITICAL CHARACTER IDENTITY \u2014 match the attached reference exactly: young boy Explorer, messy wavy brown hair, round thin gold wire-rim glasses, teal-blue long overcoat with gold atom lapel pin, tan waistcoat, white shirt, dark brown floppy bow tie, brown trousers rolled at cuffs, cream socks, sturdy brown lace-up boots, brown leather satchel with brass compass, rolled parchment map in coat pocket. Premium 3D cartoon feature-animation polish, soft cinematic light, stylised materials \u2014 NOT photoreal, NOT flat 2D cel. Two patients maximum in frame, tasteful 3D cartoon illness \u2014 pale faces, tired eyes, feverish stillness under white sheets. NO gore, NO blood, NO open wounds, NO corpses. Family-friendly but clearly sick and ill. The Explorer walks slowly past brass hospital beds, satchel at his side, glancing with quiet concern at TWO sick patients in bed \u2014 then continues down the aisle so the ward stays the story. Single Explorer only. NO microbes. Continuous walking motion."
+  },
+  {
+    "id": "05_doctor_hands_instruments",
+    "explorer": false,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). Close cinematic 3D cartoon shot of Victorian doctor hands and gleaming metal surgical instruments on a tray under warm lamp light \u2014 confident, polished, slightly ominous. No microbes. Continuous subtle orbit of the tray."
+  },
+  {
+    "id": "06_fever_patient",
+    "explorer": false,
+    "force": true,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). Two patients maximum in frame, tasteful 3D cartoon illness \u2014 pale faces, tired eyes, feverish stillness under white sheets. NO gore, NO blood, NO open wounds, NO corpses. Family-friendly but clearly sick and ill. One ill patient in bed \u2014 soft red-orange fever glow under white sheets, thermometer on a side table, worried stillness. Tasteful cartoon illness only. NO microbes. NO gore. Continuous slow push-in."
+  },
+  {
+    "id": "07_sparse_microbes_hint",
+    "explorer": false,
+    "force": true,
+    "microbe_ref": true,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). MICROBE VISUAL LOCK (HARD): blank scientific rods and spheres only \u2014 translucent teal/amber glass-like forms. NO faces, NO eyes, NO mouths, NO smiles. SPARSE: only a few microbes (about 3\u20138), not a room-filling swarm. Slightly ominous invisible enemy. Late reveal: over an empty patch of ward air, only a HANDFUL (about 5) of faceless glowing microbial rods/spheres drift like dangerous dust \u2014 sparse, not a swarm. Background ward soft. Continuous motion."
+  },
+  {
+    "id": "08_hands_between_patients",
+    "explorer": false,
+    "force": true,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). Two patients maximum in frame, tasteful 3D cartoon illness \u2014 pale faces, tired eyes, feverish stillness under white sheets. NO gore, NO blood, NO open wounds, NO corpses. Family-friendly but clearly sick and ill. Victorian doctor hands leave one curtained bed with a sick patient and move toward a second ill patient nearby \u2014 no washing bowl. Human transmission beat. NO microbe swarm; at most a tiny faceless sparkle or none. Continuous tracking with the hands."
+  },
+  {
+    "id": "09_sparse_microbes_close",
+    "explorer": false,
+    "force": true,
+    "microbe_ref": true,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). MICROBE VISUAL LOCK (HARD): blank scientific rods and spheres only \u2014 translucent teal/amber glass-like forms. NO faces, NO eyes, NO mouths, NO smiles. SPARSE: only a few microbes (about 3\u20138), not a room-filling swarm. Slightly ominous invisible enemy. Macro of a FEW (3\u20136) faceless scientific rods and spheres tumbling slowly \u2014 educational, slightly ominous, never cute. Not a packed galaxy of germs. Continuous gentle tumble."
+  },
+  {
+    "id": "10_ward_hold_patients",
+    "explorer": false,
+    "force": true,
+    "prompt": "Premium 3D cartoon animated film style like high-end feature animation, warm scholarly Victorian hospital palette, soft cinematic light, continuous camera motion through the final frame. SILENT PICTURE ONLY: no dialogue, no narration, no voiceover, no spoken words, no lip sync speech, no American or any-language talking. No announcer. Mute or ambient space soundscape only if the model requires an audio track. Channel voiceover is added later in edit (British Ben Orbit Narrator). Two patients maximum in frame, tasteful 3D cartoon illness \u2014 pale faces, tired eyes, feverish stillness under white sheets. NO gore, NO blood, NO open wounds, NO corpses. Family-friendly but clearly sick and ill. Wide hold on the Victorian ward: lamps, curtains, TWO ill patients still in bed \u2014 quiet question hanging. NO microbe swarm. Continuous slow pull-back."
+  }
+]
