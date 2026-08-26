@@ -1,0 +1,75 @@
+{
+  "model": "veo-3.1-fast-generate-preview",
+  "plates": [
+    {
+      "id": "01_microbes_ward_air",
+      "skipped": true,
+      "bytes": 7507724,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/01_microbes_ward_air_v01.mp4"
+    },
+    {
+      "id": "02_clean_corridor",
+      "skipped": true,
+      "bytes": 6060712,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/02_clean_corridor_v01.mp4"
+    },
+    {
+      "id": "03_curtains_beds",
+      "skipped": true,
+      "bytes": 4987047,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/03_curtains_beds_v01.mp4"
+    },
+    {
+      "id": "05_doctor_hands_instruments",
+      "seconds": 61.7,
+      "bytes": 4127720,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/05_doctor_hands_instruments_v01.mp4"
+    },
+    {
+      "id": "06_fever_soft_consequence",
+      "seconds": 49.3,
+      "bytes": 4726939,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/06_fever_soft_consequence_v01.mp4"
+    },
+    {
+      "id": "07_microbe_cloud_close",
+      "seconds": 49.5,
+      "bytes": 4978083,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/07_microbe_cloud_close_v01.mp4"
+    },
+    {
+      "id": "08_breath_cloth_travel",
+      "seconds": 61.4,
+      "bytes": 6622523,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/08_breath_cloth_travel_v01.mp4"
+    },
+    {
+      "id": "09_hands_to_next_patient",
+      "seconds": 49.2,
+      "bytes": 3584035,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/09_hands_to_next_patient_v01.mp4"
+    },
+    {
+      "id": "10_ward_atmosphere_hold",
+      "seconds": 49.3,
+      "bytes": 5480507,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/10_ward_atmosphere_hold_v01.mp4"
+    },
+    {
+      "id": "04_explorer_doorway_peek",
+      "seconds": 49.7,
+      "bytes": 2416279,
+      "attempt": 1,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part01/raw/04_explorer_doorway_peek_v01.mp4"
+    }
+  ],
+  "part": "01",
+  "out": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/09_Final-Export/hos_001_part01_rough_v01.mp4",
+  "vo": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/02_Voiceover/part01_invisible_enemy_v01.mp3"
+}

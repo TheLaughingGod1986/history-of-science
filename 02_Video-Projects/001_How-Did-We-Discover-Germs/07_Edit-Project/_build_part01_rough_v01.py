@@ -377,6 +377,11 @@ def main() -> None:
                 continue
             raise
 
+    # Assemble in narrative id order (Explorer mid-act), not generation order.
+    path_by_id = {p.stem.replace("_v01", ""): p for p in paths}
+    ordered_ids = sorted(path_by_id.keys())
+    paths = [path_by_id[i] for i in ordered_ids]
+
     if len(paths) < 2:
         raise SystemExit(f"Need ≥2 plates to assemble; only have {len(paths)}")
 

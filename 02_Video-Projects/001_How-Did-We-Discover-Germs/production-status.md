@@ -4,22 +4,27 @@
 |---|---|
 | Topic / cluster / audit | DONE |
 | Master script | PASS **90.4** · gate PASS |
-| Shorts cadence | **LOCKED: 5-cluster, not daily** (`HOS_SHORTS_CADENCE_LOCKED.md`) |
-| Release week plan | `11_Upload-Package/RELEASE_WEEK_001.md` |
-| Shorts punch drafts | `10_Shorts/SHORTS_PUNCH_SCRIPTS_v01.md` |
+| Shorts cadence | **LOCKED: 4–6 cluster, not daily** |
+| Release week + punch drafts | DONE |
 | Part 01 VO | DONE (~84s) |
-| Part 01 Veo | PARTIAL 3/10 · resume when quota allows |
-| Parts 02–05 | Blocked on Ben UAT after Part 01 |
+| Part 01 Veo | **DONE 10/10** (incl. Explorer peek) |
+| Part 01 rough | `hos_001_part01_rough_v01.mp4` (~76s picture; VO trimmed to match) |
+| Parts 02–05 | **Blocked on Ben UAT** |
 | Broadcast + Shorts cuts | After all parts lock |
 
-## Cadence (this channel)
+## Artifacts
 
-- Long Thu 19:00 UK when ready  
-- Shorts **4–6 / film** over 7–10 days after · **not daily treadmill**  
-- Every Short Related ▶ *How Did We Discover Germs?*
+- `/opt/cursor/artifacts/hos_001_part01_rough_v01.mp4`
+- `/opt/cursor/artifacts/part01_invisible_enemy_v01.mp3` (full ~84s VO)
+
+## Note for Ben
+
+Picture inventory covers ~76s at 1×; full VO is ~84s — next pass can add 1–2 unique plates (no freeze-pad). Explorer appears mid-act (doorway peek), not continuous.
+
+## Cadence (locked)
+
+Thu long → 5 Shorts over ~9 days · Related ▶ film · **not daily**.
 
 ## Next
 
-1. Resume Part 01 Veo plates → full rough  
-2. Ben UAT Part 01  
-3. Only then Part 02
+**Ben UAT Part 01** — pass / regen notes. Do not start Part 02 until then.
