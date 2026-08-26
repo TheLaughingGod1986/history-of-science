@@ -19,6 +19,8 @@ Credit balance ≠ Fast RPM/RPD/spend window. Lite and standard use separate quo
 
 ## Fix applied
 - Default model → `veo-3.1-lite-generate-preview` (`orbit_gemini_veo.py` + `ORBIT_VEO_MODEL` in `.env`)
+- Lite does **not** support `negativePrompt` (400) — omit it for lite I2V
+- Part 01 real-motion rebuild: `_build_part01_v06_veo_i2v.py`
 - Monitor: https://aistudio.google.com/rate-limit (same project as this key)
 - Docs: https://ai.google.dev/gemini-api/docs/rate-limits
 
