@@ -48,6 +48,7 @@ def load_micro(path: Path) -> Image.Image:
 
 
 def zoompan_cmd(still: Path, dest: Path) -> list[str]:
+    # Smooth linear push-in only — NO sin/cos pan (that read as shaky handheld).
     return [
         "ffmpeg",
         "-y",
@@ -56,9 +57,9 @@ def zoompan_cmd(still: Path, dest: Path) -> list[str]:
         "-i",
         str(still),
         "-vf",
-        "scale=1500:844:force_original_aspect_ratio=increase,crop=1500:844,"
-        "zoompan=z='min(1+0.002*on\\,1.14)':x='iw/2-(iw/zoom/2)+30*sin(on/35)':"
-        "y='ih/2-(ih/zoom/2)+18*cos(on/42)':d=192:s=1280x720:fps=24,format=yuv420p",
+        "scale=1400:788:force_original_aspect_ratio=increase,crop=1400:788,"
+        "zoompan=z='min(1+0.0012*on\\,1.10)':x='iw/2-(iw/zoom/2)':"
+        "y='ih/2-(ih/zoom/2)':d=192:s=1280x720:fps=24,format=yuv420p",
         "-t",
         "8",
         "-c:v",
