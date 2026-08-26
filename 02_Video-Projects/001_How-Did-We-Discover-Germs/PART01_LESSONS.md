@@ -36,7 +36,15 @@
 - Stills under `04_Generated-Clips/part01/refs/*_v04.jpg`
 - Artifact: `/opt/cursor/artifacts/hos_001_part01_rough_v04.mp4`
 
+## Ben UAT (round 3) — jumpy / frozen
+
+- v04 stillbridges read as **images**, not video.
+- **v05 polish** (Veo still quota-blocked): multi-angle still chains (A→B→C) + continuous Ken Burns + ~1s dissolves + lamp flicker.
+- Builder: `_build_part01_v05_motion_polish.py` → `hos_001_part01_rough_v05.mp4` (~77s)
+- Corridor + doctor-hands remain true Veo motion from earlier gens.
+- Artifact: `/opt/cursor/artifacts/hos_001_part01_rough_v05.mp4`
+
 ## Still blocked
 
-- Full **Veo motion** regen for patient + Explorer walk plates (429 RESOURCE_EXHAUSTED).
-- When quota returns: run `_build_part01_rough_v01.py` to replace stillbridges with true motion; keep same narrative order.
+- Full **Veo character/patient motion** (429 RESOURCE_EXHAUSTED).
+- When quota returns: I2V from v05 stills via `_build_part01_rough_v01.py` (or dedicated I2V pass) so beds/Explorer actually move — keep ward-first narrative.
