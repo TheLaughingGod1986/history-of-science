@@ -113,7 +113,7 @@ Each Short must work as a **complete standalone mini-documentary**.
 2. Focus on **one** fascinating fact, mystery, or question
 3. Deliver value **independently** of the long
 4. End with an **unanswered question / curiosity gap**
-5. Link via YouTube **Related** → parent long — never only “Watch the full video.”
+5. Link via YouTube Studio **Related video** → parent long — the mobile **▶ film-title pill** under the Short (HeyHistorically pattern — `INSPIRATION_HEYHISTORICALLY.md`). Never only “Watch the full video” in VO/captions.
 
 ### On-screen text (TikTok / Shorts lock)
 

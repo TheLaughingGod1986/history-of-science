@@ -14,7 +14,7 @@ Repo: `history-of-science` (separate from `orbit-with-ben`)
 | Feel | **3D cartoon** immersion (Animistry-class) · curious · discovery-first |
 | Runtime | **8–9 minutes** per long |
 | Titles | Curiosity questions / day-in-the-life / “Did X really…?” — about **science** |
-| Inspiration | [Animistry](https://www.youtube.com/@ytAnimistry) — steal form, not topics (`INSPIRATION_ANIMISTRY.md`) |
+| Inspiration | [Animistry](https://www.youtube.com/@ytAnimistry) — picture + long form (`INSPIRATION_ANIMISTRY.md`) · [HeyHistorically](https://www.youtube.com/@heyhistorically) — Shorts → long Related pill (`INSPIRATION_HEYHISTORICALLY.md`) |
 | Tagline | Discovery. Wonder. Proof. |
 | Brand line | How we discovered what we know. |
 | Mascot | **the Explorer** — sparse side character (`01_Character/`) |

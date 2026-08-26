@@ -32,7 +32,7 @@ Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
 - [ ] End screen → another Orbit documentary
 - [ ] Cards configured
 - [ ] Pinned comment (question + next / companion link)
-- [ ] Related Shorts linked to this long (once public)
+- [ ] Every public Short: Studio **Related video** → this long (▶ title pill visible on mobile; HeyHistorically pattern)
 - [ ] Shorts cluster: **3–5** with strongest-fact open + curiosity-gap end
 
 ## Gates signed
