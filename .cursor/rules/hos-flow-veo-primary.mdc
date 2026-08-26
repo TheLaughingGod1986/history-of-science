@@ -13,9 +13,15 @@ Locked to match Orbit With Ben production practice.
 
 - Burns **Google One → AI Ultra Flow credits** (not Gemini API Fast/Lite buckets)
 - Model: **Veo 3.1** only (`Veo 3.1 - Lite` / `Fast` / `Quality`) — never Omni Flash / Nano Banana
-- HOS start-frame I2V: `--start-frame <still.jpg> --prompt "…" --out clip.mp4`
+- HOS start-frame I2V proven path (2026-08-26):
+  1. Upload still → right-click **Animate**
+  2. Lock **Veo 3.1 - Fast** · 16:9 · x1
+  3. Prompt → Create → **approve credit confirmation**
+  4. Wait for finished mp4 (not the start-frame JPEG)
+- CLI: `--start-frame <still.jpg> --prompt "…" --out clip.mp4`
 - One-time auth: `python3 04_Audio/tools/orbit_flow_veo_ui.py --login`
 - Profile: `ORBIT_FLOW_PROFILE` (default Playwright profile path)
+- **Daily generation limit** can block even with monthly credits left — wait for reset; do not ship Ken Burns as a substitute
 
 ## Fallback (only if Flow UI is broken / not logged in)
 

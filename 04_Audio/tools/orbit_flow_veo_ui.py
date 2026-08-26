@@ -1336,23 +1336,123 @@ def submit_create(page) -> None:
 
 
 def dismiss_soft_prompts(page) -> None:
-    """Click safe confirmations (not blanket Yes)."""
+    """Click safe confirmations (not blanket Yes).
+
+    Flow Ultra often shows a post-Create approval card
+    ("I'm going to generate… Veo 3.1… N credits") that must be confirmed
+    before generation actually starts — without this, wait only sees the
+    uploaded start-frame JPEG forever.
+    """
     page.evaluate(
         """() => {
-          const re = /Got it|I understand|Continue|Agree|Accept|Dismiss|^OK$|Generate (the )?video|Create video|Try again|Retry|Regenerate/i;
+          const re = /Got it|I understand|Continue|Agree|Accept|Dismiss|^OK$|Generate (the )?video|Create video|Try again|Retry|Regenerate|^Confirm$|^Generate$|^Approve$|Use \\d+ credits|Spend credits|Yes,? generate/i;
           for (const b of document.querySelectorAll('button,[role="button"],[role="menuitem"]')) {
             const t = (b.innerText || b.getAttribute('aria-label') || '')
               .trim().replace(/\\n/g, ' ');
             if (
               re.test(t) &&
-              t.length < 100 &&
-              !/new project|settings|add media|ultra|agent instructions|view settings|save|close/i.test(t)
+              t.length < 120 &&
+              !/new project|settings|add media|ultra|agent instructions|view settings|save|close|never/i.test(t)
             ) {
               try { b.click(); } catch (e) {}
             }
           }
         }"""
     )
+
+
+def confirm_generation_spend(page, *, timeout_s: float = 12.0) -> bool:
+    """Click the post-Create Ultra credit / model confirmation if it appears."""
+    deadline = time.time() + timeout_s
+    clicked = False
+    while time.time() < deadline:
+        hit = page.evaluate(
+            """() => {
+              const body = (document.body && document.body.innerText) || '';
+              const needs =
+                /going to generate|Veo 3\\.1|credits|high demand|in the queue/i.test(body);
+              const labels = [
+                /^Confirm$/i, /^Generate$/i, /^Approve$/i, /^Continue$/i,
+                /Generate (the )?video/i, /Create video/i, /Use \\d+ credits/i,
+                /Spend .*credits/i, /Yes,? generate/i, /^OK$/i,
+              ];
+              for (const b of document.querySelectorAll('button,[role="button"]')) {
+                const t = (b.innerText || b.getAttribute('aria-label') || '')
+                  .trim().replace(/\\n/g, ' ');
+                if (!t || t.length > 80) continue;
+                if (/never|cancel|dismiss|close|settings/i.test(t)) continue;
+                for (const re of labels) {
+                  if (re.test(t)) {
+                    try { b.click(); return t.slice(0, 60); } catch (e) {}
+                  }
+                }
+              }
+              // Agent chat may expose a single primary action near "credits"
+              if (needs) {
+                for (const b of document.querySelectorAll('button')) {
+                  const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+                  const r = b.getBoundingClientRect();
+                  if (r.width > 40 && r.height > 24 &&
+                      /arrow_forward|send|check/i.test(t) &&
+                      !b.disabled) {
+                    try { b.click(); return 'arrow:' + t.slice(0, 40); } catch (e) {}
+                  }
+                }
+              }
+              return null;
+            }"""
+        )
+        if hit:
+            print(f"  confirmed generation spend via {hit!r}", flush=True)
+            clicked = True
+            page.wait_for_timeout(600)
+            # One pass is usually enough; keep looping briefly for stacked dialogs
+        else:
+            page.wait_for_timeout(400)
+            if clicked:
+                break
+    return clicked
+
+
+def try_context_animate(page) -> bool:
+    """Right-click the latest uploaded/project still and choose Animate (HOS Flow path)."""
+    hit = page.evaluate(
+        """() => {
+          const imgs = [...document.querySelectorAll('img,video,canvas,[role="img"]')]
+            .filter((el) => {
+              const r = el.getBoundingClientRect();
+              return r.width > 80 && r.height > 60 && r.y > 40 && r.y < 900;
+            });
+          if (!imgs.length) return null;
+          const el = imgs[imgs.length - 1];
+          const r = el.getBoundingClientRect();
+          return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
+        }"""
+    )
+    if not hit:
+        return False
+    page.mouse.click(hit["x"], hit["y"], button="right")
+    page.wait_for_timeout(500)
+    animated = page.evaluate(
+        """() => {
+          for (const el of document.querySelectorAll(
+            'button,[role="menuitem"],[role="option"],div,span,li'
+          )) {
+            const t = (el.innerText || el.getAttribute('aria-label') || '')
+              .trim().replace(/\\n/g, ' ');
+            if (/^Animate$/i.test(t) || /\\bAnimate\\b/i.test(t) && t.length < 40) {
+              try { el.click(); return t.slice(0, 40); } catch (e) {}
+            }
+          }
+          return null;
+        }"""
+    )
+    if animated:
+        print(f"  context Animate clicked ({animated!r})", flush=True)
+        page.wait_for_timeout(800)
+        return True
+    page.keyboard.press("Escape")
+    return False
 
 
 def collect_media_ids(page) -> set[str]:
@@ -1462,6 +1562,7 @@ def wait_and_download(
             pass
         low = body.lower()
         status = ""
+        pct = re.search(r"\b(\d{1,3})\s*%", body)
         for k in (
             "failed",
             "generating",
@@ -1481,9 +1582,67 @@ def wait_and_download(
             if k in low:
                 status = k
                 break
-        if status in ("generating", "thinking", "creating", "working", "queue", "scheduled"):
+        if pct and not status:
+            status = f"{pct.group(1)}%"
+        if status in ("generating", "thinking", "creating", "working", "queue", "scheduled") or (
+            pct is not None
+        ):
             seen_generating = True
-        line = f"  wait {int(time.time() - t0)}s status={status or '…'} new_media={len(new_ids)}"
+        # Also harvest <video src> / blob URLs that never appear as getMediaUrlRedirect
+        if elapsed >= max(20.0, float(min_elapsed_s or 0)):
+            vsrc = page.evaluate(
+                """() => {
+                  const vs = [...document.querySelectorAll('video')]
+                    .map(v => v.currentSrc || v.src)
+                    .filter(Boolean);
+                  return vs.length ? vs[vs.length - 1] : null;
+                }"""
+            )
+            if vsrc and (vsrc.startswith("http") or vsrc.startswith("blob:")):
+                try:
+                    if vsrc.startswith("blob:"):
+                        data = page.evaluate(
+                            """async (url) => {
+                              const r = await fetch(url);
+                              const buf = await r.arrayBuffer();
+                              const bytes = new Uint8Array(buf);
+                              let s = '';
+                              const chunk = 0x8000;
+                              for (let i = 0; i < bytes.length; i += chunk) {
+                                s += String.fromCharCode(...bytes.subarray(i, i + chunk));
+                              }
+                              return btoa(s);
+                            }""",
+                            vsrc,
+                        )
+                        import base64
+
+                        raw = base64.b64decode(data)
+                        if len(raw) > 150_000 and raw.find(b"ftyp") >= 0:
+                            dest.parent.mkdir(parents=True, exist_ok=True)
+                            dest.write_bytes(raw)
+                            print(
+                                f"  downloaded blob video bytes={len(raw)}",
+                                flush=True,
+                            )
+                            return vsrc
+                    else:
+                        head = page.request.get(vsrc, timeout=60_000)
+                        body_b = head.body()
+                        if len(body_b) > 150_000 and (
+                            b"ftyp" in body_b[:64] or "video" in (head.headers.get("content-type") or "")
+                        ):
+                            dest.parent.mkdir(parents=True, exist_ok=True)
+                            dest.write_bytes(body_b)
+                            print(
+                                f"  downloaded video src bytes={len(body_b)}",
+                                flush=True,
+                            )
+                            return vsrc
+                except Exception as e:
+                    if int(elapsed) % 30 < 5:
+                        print(f"  video-src fetch err {type(e).__name__}: {e}", flush=True)
+        line = f"  wait {int(time.time() - t0)}s status={status or '…'} new_media={len(new_ids)} gen={seen_generating}"
         if line != last_status:
             print(line, flush=True)
             last_status = line
@@ -1617,6 +1776,15 @@ def _generate_clip_once(
         ensure_agent_session(page)
         print("  attaching start frame…", flush=True)
         attached = attach_image_to_prompt(page, ref)
+        # HOS-proven path (2026-08-26): right-click still → Animate, then prompt.
+        # Without this, Create can accept the JPEG chip but never start Veo.
+        if try_context_animate(page):
+            configure_veo_settings(
+                page,
+                model=model,
+                frames_mode=False,
+                ingredients_mode=True,
+            )
         print("  setting start-frame I2V prompt…", flush=True)
         set_prompt(page, flow_prompt(prompt, start_frame_i2v=True))
         if _prompt_attachment_count(page) < 1:
@@ -1627,6 +1795,7 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (start-frame I2V)", flush=True)
+        confirm_generation_spend(page)
     elif scenery_only:
         # Keep agent session healthy, but do NOT attach Orbit identity chip.
         ensure_agent_session(page)
@@ -1641,6 +1810,7 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (scenery-only, no Orbit ref)", flush=True)
+        confirm_generation_spend(page)
     else:
         print("  ensuring Orbit agent instruction…", flush=True)
         ensure_orbit_agent_instruction(page)
@@ -1658,8 +1828,9 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (identity-locked, Orbit ref attached)", flush=True)
+        confirm_generation_spend(page)
     media_id = wait_and_download(
-        page, dest, before_ids=before, timeout_s=timeout_s
+        page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
     )
     if not veo.already_done(dest):
         raise RuntimeError(

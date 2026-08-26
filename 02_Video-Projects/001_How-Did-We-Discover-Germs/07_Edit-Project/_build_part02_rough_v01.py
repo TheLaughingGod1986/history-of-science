@@ -128,21 +128,11 @@ def gen_i2v_api(client, model: str, still: Path, prompt: str, dest: Path) -> dic
 
 
 def still_motion_fallback(still: Path, dest: Path) -> dict:
-    """Last-resort continuous push — better than a freeze, worse than Veo."""
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    subprocess.run(
-        [
-            "ffmpeg", "-y", "-loop", "1", "-i", str(still),
-            "-vf",
-            "scale=1400:788:force_original_aspect_ratio=increase,crop=1400:788,"
-            "zoompan=z='min(1+0.0018*on\\,1.12)':x='iw/2-(iw/zoom/2)+20*sin(on/40)':"
-            "y='ih/2-(ih/zoom/2)':d=192:s=1280x720:fps=24,format=yuv420p",
-            "-t", "8", "-c:v", "libx264", "-preset", "fast", "-crf", "17", "-an", str(dest),
-        ],
-        check=True,
-        capture_output=True,
+    """REMOVED — Ben 2026-08-26: still-push is not animation. Never ship this."""
+    raise RuntimeError(
+        f"Refusing still-motion fallback for {still.name} → {dest.name}. "
+        "Part 02 requires real Flow/API Veo I2V (see PART02_LESSONS.md)."
     )
-    return {"bytes": dest.stat().st_size, "engine": "still_motion_fallback"}
 
 
 def assemble(clips: list[Path]) -> float:
