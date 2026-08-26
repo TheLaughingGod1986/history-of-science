@@ -33,11 +33,13 @@ from orbit_voice import (  # noqa: E402
 
 PROJ = Path(__file__).resolve().parents[1]
 RAW = PROJ / "04_Generated-Clips" / "part01" / "raw"
-OUT = PROJ / "09_Final-Export" / "hos_001_part01_rough_v01.mp4"
 VO_PATH = PROJ / "02_Voiceover" / "part01_invisible_enemy_v01.mp3"
 REF = REPO / "01_Character" / "05_Generation-References" / "hos-explorer-reference-v01.jpg"
-META_PATH = PROJ / "07_Edit-Project" / "part01_gen_meta_v01.json"
-PLATES_JSON = PROJ / "07_Edit-Project" / "parts" / "part-01_omni_plates_v01.json"
+MICROBE_REF = PROJ / "04_Generated-Clips" / "part01" / "refs" / "faceless_microbes_ref_v01.jpg"
+META_PATH = PROJ / "07_Edit-Project" / "part01_gen_meta_v03.json"
+PLATES_JSON = PROJ / "07_Edit-Project" / "parts" / "part-01_omni_plates_v03.json"
+REJECTED = PROJ / "04_Generated-Clips" / "part01" / "_rejected_smiling_v01"
+OUT = PROJ / "09_Final-Export" / "hos_001_part01_rough_v03.mp4"
 
 CLIP_USE_S = 7.2
 XFADE = 0.4
@@ -56,14 +58,25 @@ NEGATIVE = (
     "Orbit orange robot, floating robot, black visor mascot, Eiffel Tower, Paris, "
     "photoreal live action, horror, gore, blood, open wounds, readable UI chrome, "
     "watermark, logo overlay, dialogue, speech, talking, narrator, lip sync, "
-    "twin characters, clone, duplicate boy, second explorer, text on screen"
+    "twin characters, clone, duplicate boy, second explorer, text on screen, "
+    "smiling germs, winking microbes, cute faces on bacteria, anthropomorphic germs, "
+    "cartoon eyes on microbes, friendly mascot germs, kawaii germs"
 )
 
 STYLE = (
     "Premium 3D cartoon animated film style like high-end feature animation, "
-    "upbeat warm scholarly palette, Victorian hospital world, soft cinematic light, "
-    "stylised glowing cartoon microbes as tiny characters of light — wondrous not "
-    "scary, continuous camera motion through the final frame. " + CG_SILENT_AUDIO_BLOCK
+    "warm scholarly Victorian hospital palette, soft cinematic light, continuous "
+    "camera motion through the final frame. " + CG_SILENT_AUDIO_BLOCK
+)
+
+# Ben lock 26 Aug 2026: germs are the enemy — wondrous science forms, never cute faces.
+# Veo invents smiles from text alone — use MICROBE_REF start frame + this lock.
+MICROBE_LOCK = (
+    "MICROBE VISUAL LOCK (HARD): keep microbes as blank scientific rods and spheres "
+    "exactly like the start frame — translucent teal/amber glass-like forms. "
+    "ABSOLUTELY NO faces, NO eyes, NO pupils, NO mouths, NO smiles, NO winking, "
+    "NO cute expressions, NO anthropomorphic characters. Featureless surfaces only. "
+    "If a face appears the shot is wrong. Slightly ominous invisible enemy."
 )
 
 VO_TEXT = (
@@ -90,11 +103,13 @@ PLATES = [
     {
         "id": "01_microbes_ward_air",
         "explorer": False,
+        "regen": True,
         "prompt": (
-            f"{STYLE} Strange cold-open picture: inside a warm Victorian hospital ward, "
-            "soft lamps and white beds, while stylised glowing teal-gold cartoon microbes "
-            "drift like fireflies through the air — wondrous invisible life made visible. "
-            "No people. Continuous slow push into the glowing swarm."
+            f"{STYLE} {MICROBE_LOCK} Strange cold-open picture: inside a warm Victorian "
+            "hospital ward, soft lamps and white beds, while stylised glowing teal-amber "
+            "microbial forms — rods and spheres with no faces — drift like dust motes "
+            "made visible through science. Slightly ominous invisible enemy. No people. "
+            "Continuous slow push into the swarm."
         ),
     },
     {
@@ -103,7 +118,7 @@ PLATES = [
         "prompt": (
             f"{STYLE} Long clean Victorian hospital corridor, polished wood floor, soft "
             "wall lamps, white curtains in the distance, orderly and peaceful. No people. "
-            "Continuous slow dolly down the corridor toward the light."
+            "No microbes in this shot. Continuous slow dolly down the corridor toward the light."
         ),
     },
     {
@@ -112,7 +127,7 @@ PLATES = [
         "prompt": (
             f"{STYLE} Soft hospital ward with white curtains half-drawn around neat beds, "
             "warm lamps, quiet atmosphere of care that still feels tense. No gore. "
-            "No people visible. Continuous gentle camera drift past curtains."
+            "No people visible. No smiling characters. Continuous gentle camera drift past curtains."
         ),
     },
     {
@@ -137,37 +152,42 @@ PLATES = [
     {
         "id": "07_microbe_cloud_close",
         "explorer": False,
+        "regen": True,
         "prompt": (
-            f"{STYLE} Macro close-up of a glowing stylised cartoon microbe cloud swirling "
-            "like a tiny galaxy of rods and spheres — wondrous educational visualisation, "
-            "not horror. Continuous tumbling motion through the swarm."
+            f"{STYLE} {MICROBE_LOCK} Macro close-up of a glowing stylised microbial cloud — "
+            "scientific rods and spheres tumbling like a tiny galaxy. Educational "
+            "visualisation, slightly ominous, not horror and not cute. Continuous motion."
         ),
     },
     {
         "id": "08_breath_cloth_travel",
         "explorer": False,
+        "regen": True,
         "prompt": (
-            f"{STYLE} Stylised montage beat: glowing cartoon microbes hitchhiking on a "
-            "fluttering cloth, then riding a soft breath mist across a ward — invisible "
-            "travel made visible, wondrous not scary. Continuous motion."
+            f"{STYLE} {MICROBE_LOCK} Stylised beat: faceless glowing microbial rods and "
+            "spheres hitchhiking on a fluttering cloth, then riding a soft breath mist "
+            "across a ward — invisible travel made visible. Continuous motion."
         ),
     },
     {
         "id": "09_hands_to_next_patient",
         "explorer": False,
+        "regen": True,
         "prompt": (
-            f"{STYLE} Victorian doctor hands leaving one curtained bed and moving toward "
-            "another — no washing bowl in sight — glowing microbe sparkles cling to the "
-            "fingertips. Educational, not gruesome. Continuous tracking with the hands."
+            f"{STYLE} {MICROBE_LOCK} Victorian doctor hands leaving one curtained bed and "
+            "moving toward another — no washing bowl — tiny faceless glowing microbial "
+            "forms cling to the fingertips like dangerous dust. Educational, not gruesome. "
+            "Continuous tracking with the hands."
         ),
     },
     {
         "id": "10_ward_atmosphere_hold",
         "explorer": False,
+        "regen": True,
         "prompt": (
-            f"{STYLE} Wide hold on the Victorian ward atmosphere: lamps, curtains, quiet "
-            "beds, a few remaining glowing microbes drifting — question hanging in the "
-            "air. No people. Continuous slow pull-back as if asking what comes next."
+            f"{STYLE} {MICROBE_LOCK} Wide hold on the Victorian ward: lamps, curtains, quiet "
+            "beds, a few faceless glowing microbial forms drifting in the air — question "
+            "hanging. No people. Continuous slow pull-back."
         ),
     },
     # Explorer last — image+video burns more quota; skip-ok if exhausted.
@@ -179,7 +199,7 @@ PLATES = [
             f"{STYLE} {EXPLORER_LOCK} Medium shot: the Explorer peeks from a hospital "
             "doorway into the ward, cream-curious eyes wide behind gold glasses, then "
             "quietly slips back so the ward remains the hero. Single character only. "
-            "Continuous motion."
+            "No microbes with faces in frame. Continuous motion."
         ),
     },
 ]
@@ -199,7 +219,7 @@ def _is_quota(err: Exception) -> bool:
     return "429" in s or "RESOURCE_EXHAUSTED" in s or "quota" in s.lower()
 
 
-def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 6) -> dict:
+def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 3) -> dict:
     from google.genai import types
 
     if already_done(dest):
@@ -209,11 +229,12 @@ def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 6) 
     last_err: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
-            img = (
-                types.Image.from_file(location=str(REF))
-                if plate["explorer"]
-                else None
-            )
+            img = None
+            if plate.get("explorer"):
+                img = types.Image.from_file(location=str(REF))
+            elif plate.get("regen") and MICROBE_REF.exists():
+                # Start from faceless still so Veo doesn't invent cute smiles.
+                img = types.Image.from_file(location=str(MICROBE_REF))
             config = types.GenerateVideosConfig(
                 number_of_videos=1,
                 duration_seconds=8,
@@ -222,7 +243,9 @@ def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 6) 
                 negative_prompt=NEGATIVE,
             )
             print(
-                f"  submit {plate['id']} explorer={plate['explorer']} attempt={attempt}/{retries}",
+                f"  submit {plate['id']} explorer={plate['explorer']} "
+                f"microbe_ref={bool(plate.get('regen') and MICROBE_REF.exists())} "
+                f"attempt={attempt}/{retries}",
                 flush=True,
             )
             t0 = time.time()
@@ -252,7 +275,6 @@ def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 6) 
         except Exception as e:
             last_err = e
             print(f"  FAIL {plate['id']} attempt={attempt}: {e}", flush=True)
-            # Quota: wait much longer before retry (Developer API rate limits).
             sleep_s = (90 * attempt) if _is_quota(e) else (20 * attempt)
             print(f"  backoff {sleep_s}s…", flush=True)
             time.sleep(sleep_s)
@@ -361,24 +383,45 @@ def main() -> None:
     RAW.mkdir(parents=True, exist_ok=True)
 
     vo = maybe_vo()
+    REJECTED.mkdir(parents=True, exist_ok=True)
 
     for plate in PLATES:
-        dest = RAW / f"{plate['id']}_v01.mp4"
+        ver = "v03" if plate.get("regen") else "v01"
+        dest = RAW / f"{plate['id']}_{ver}.mp4"
+        # Quarantine prior smiling microbe plates when regenerating.
+        if plate.get("regen"):
+            for old_ver in ("v01", "v02"):
+                old = RAW / f"{plate['id']}_{old_ver}.mp4"
+                if old.exists():
+                    dest_rej = REJECTED / old.name
+                    if not dest_rej.exists():
+                        old.rename(dest_rej)
+                        print(f"  quarantined {old.name} → _rejected_smiling_v01/", flush=True)
+                    else:
+                        old.unlink()
         try:
             info = gen_plate(client, plate, dest, model)
-            meta["plates"].append({"id": plate["id"], **info, "path": str(dest)})
+            meta["plates"].append({"id": plate["id"], "ver": ver, **info, "path": str(dest)})
             paths.append(dest)
         except Exception as e:
-            if plate.get("optional"):
-                print(f"  OPTIONAL SKIP {plate['id']}: {e}", flush=True)
+            # Microbe regens are preferred but optional if quota dies mid-run.
+            if plate.get("optional") or plate.get("regen"):
+                print(f"  SKIP {plate['id']}: {e}", flush=True)
                 meta["plates"].append(
-                    {"id": plate["id"], "skipped_optional": True, "error": str(e)}
+                    {"id": plate["id"], "skipped": True, "error": str(e)}
                 )
                 continue
             raise
 
     # Assemble in narrative id order (Explorer mid-act), not generation order.
-    path_by_id = {p.stem.replace("_v01", ""): p for p in paths}
+    def plate_sort_key(p: Path) -> str:
+        name = p.stem
+        for suffix in ("_v03", "_v02", "_v01"):
+            if name.endswith(suffix):
+                return name[: -len(suffix)]
+        return name
+
+    path_by_id = {plate_sort_key(p): p for p in paths}
     ordered_ids = sorted(path_by_id.keys())
     paths = [path_by_id[i] for i in ordered_ids]
 

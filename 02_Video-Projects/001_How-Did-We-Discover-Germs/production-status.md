@@ -2,29 +2,20 @@
 
 | Step | Status |
 |---|---|
-| Topic / cluster / audit | DONE |
-| Master script | PASS **90.4** · gate PASS |
-| Shorts cadence | **LOCKED: 4–6 cluster, not daily** |
-| Release week + punch drafts | DONE |
-| Part 01 VO | DONE (~84s) |
-| Part 01 Veo | **DONE 10/10** (incl. Explorer peek) |
-| Part 01 rough | `hos_001_part01_rough_v01.mp4` (~76s picture; VO trimmed to match) |
-| Parts 02–05 | **Blocked on Ben UAT** |
-| Broadcast + Shorts cuts | After all parts lock |
+| Script / gate | PASS 90.4 |
+| Shorts cadence | Cluster 4–6 · **not daily** |
+| Part 01 VO | DONE |
+| Part 01 picture | **v03 interim** — no smiling germs (faceless still-bridges on microbe beats) |
+| Microbe lock | **LOCKED** — no faces/smiles |
+| Veo faceless regen | Blocked on Gemini **429** — retry with `MICROBE_REF` start frame |
+| Parts 02–05 | Blocked on Ben UAT of non-smiling Part 01 |
 
 ## Artifacts
 
-- `/opt/cursor/artifacts/hos_001_part01_rough_v01.mp4`
-- `/opt/cursor/artifacts/part01_invisible_enemy_v01.mp3` (full ~84s VO)
-
-## Note for Ben
-
-Picture inventory covers ~76s at 1×; full VO is ~84s — next pass can add 1–2 unique plates (no freeze-pad). Explorer appears mid-act (doorway peek), not continuous.
-
-## Cadence (locked)
-
-Thu long → 5 Shorts over ~9 days · Related ▶ film · **not daily**.
+- Review now: `/opt/cursor/artifacts/hos_001_part01_rough_v03.mp4`
+- Faceless ref: `/opt/cursor/artifacts/faceless_microbes_ref_v01.jpg`
+- Reject (smiling): `inspiration/REJECT_smiling_germs_part01_example.png`
 
 ## Next
 
-**Ben UAT Part 01** — pass / regen notes. Do not start Part 02 until then.
+Ben: confirm germs look right (no smiles). Then either (a) wait for Veo quota → motion regen, or (b) pass interim and start Part 02 ward/story plates.

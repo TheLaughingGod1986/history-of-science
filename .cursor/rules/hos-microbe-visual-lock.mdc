@@ -1,0 +1,28 @@
+---
+description: HOS microbes — wondrous but not cute/smiling (locked)
+alwaysApply: true
+---
+
+# History of Science — microbe / germ picture lock
+
+Ben UAT (26 Aug 2026) on Germs Part 01: smiling / winking cartoon germs are **wrong**. Germs are the invisible enemy — not mascots.
+
+## Steal
+
+- Stylised 3D **rods, spheres, spirals** — educational visualisation
+- Soft glow OK · wondrous scale · slightly ominous presence
+- Drift / swarm / hitchhike on cloth, breath, hands
+
+## Hard reject
+
+- Smiling faces · winking · cute eyes · anthropomorphic personalities
+- “Friendly” pastel mascot germs
+- Horror gore / blood / jump-scare monsters (wonder brand still)
+
+Reject proof: `00_Brand/Channel-Setup/inspiration/REJECT_smiling_germs_part01_example.png`
+
+## Prompt stub
+
+Append on every microbe plate: no faces, no smiles, no eyes, no cute characters — scientific forms only.
+
+**Veo note:** text locks alone are weak — Veo invents smiles. Prefer I2V from `faceless_microbes_ref_v01.jpg` (or equivalent blank rods/spheres still) as start frame.
