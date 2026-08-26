@@ -57,3 +57,11 @@
 - Builder: `_build_part01_v07_flow_i2v.py` (needs Flow Ultra login once)
 - API path is fallback only; Fast/Lite API quotas too thin for full minutes
 - Interim: `hos_001_part01_rough_v06.mp4` = 8 API-lite motion plates + morph for last 2
+
+## Ben UAT (round 4) — style FAIL on v07
+
+- **Reject v07 style:** Flow I2V drifted to **photoreal / live-action ward** — lost Animistry-class **3D cartoon** + Explorer mascot look.
+- Channel lock stays: `CHANNEL_VISION.md` · Animistry-class · Explorer sparse.
+- **Keep:** ward-first narrative · Explorer past beds · sparse faceless microbes late · real motion when possible.
+- **Do not ship v07** as the style reference. UAT from **v05 / v06** (cartoon stills + limited motion).
+- Next Flow regen must lock in every prompt: `Premium 3D cartoon / Animistry-class — match start-frame style exactly. NOT photoreal. NOT live action. NOT documentary.` + Explorer identity still on character beats.
