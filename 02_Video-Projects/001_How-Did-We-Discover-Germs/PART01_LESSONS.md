@@ -39,12 +39,14 @@
 ## Ben UAT (round 3) — jumpy / frozen
 
 - v04 stillbridges read as **images**, not video.
-- **v05 polish** (Veo still quota-blocked): multi-angle still chains (A→B→C) + continuous Ken Burns + ~1s dissolves + lamp flicker.
-- Builder: `_build_part01_v05_motion_polish.py` → `hos_001_part01_rough_v05.mp4` (~77s)
+- **v05b polish** (Veo still quota-blocked): multi-angle chains with **near-full-length dissolves** (~5.2s overlap on ~6.5s takes) so the picture is almost always morphing + continuous Ken Burns + lamp flicker.
+- Builder: `_build_part01_v05_motion_polish.py` → `hos_001_part01_rough_v05.mp4` (~70s)
 - Corridor + doctor-hands remain true Veo motion from earlier gens.
 - Artifact: `/opt/cursor/artifacts/hos_001_part01_rough_v05.mp4`
+- Honest limit: without Veo I2V, Explorer/patients cannot truly walk/breathe — only camera + morph. Real motion resumes when Gemini Veo quota is topped up.
+- Quarantined old germy corridor plate: `part01/_rejected_germ_corridor_v01/` (swarm in the aisle). Clean corridor stills: `corridor_*_v05.jpg`.
 
 ## Still blocked
 
 - Full **Veo character/patient motion** (429 RESOURCE_EXHAUSTED).
-- When quota returns: I2V from v05 stills via `_build_part01_rough_v01.py` (or dedicated I2V pass) so beds/Explorer actually move — keep ward-first narrative.
+- When quota returns: I2V from v05 stills → true walk/breathe plates; keep ward-first narrative.

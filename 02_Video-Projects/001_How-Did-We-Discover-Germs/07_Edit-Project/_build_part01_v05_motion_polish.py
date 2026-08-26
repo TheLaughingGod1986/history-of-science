@@ -186,7 +186,10 @@ def main() -> None:
                 REFS / "ward_open_c_v05.jpg",
             ],
         ),
-        ("02_corridor", LEGACY_RAW / "02_clean_corridor_v01.mp4"),
+        (
+            "02_corridor",
+            [REFS / "corridor_a_v05.jpg", REFS / "corridor_b_v05.jpg"],
+        ),
         (
             "03_patients",
             [REFS / "patients_a_v05.jpg", REFS / "patients_b_v05.jpg"],
