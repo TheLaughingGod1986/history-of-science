@@ -2,8 +2,9 @@
 
 **Channel:** History of Science (`@HistoryOfScience`)  
 **Timezone:** `Europe/London`  
-**Updated:** 2026-08-06  
-**Status:** Canonical — one long/week · launch Short @21:00 · **3–5** supporting Shorts · reserves held  
+**Updated:** 2026-08-26  
+**Status:** Canonical — **1 long/week (Thu)** · **4–6 cluster Shorts over 7–10 days** · **not daily** · Related ▶ pill every Short  
+**Cadence lock:** `HOS_SHORTS_CADENCE_LOCKED.md` · funnel ref: `INSPIRATION_HEYHISTORICALLY.md`  
 **Growth:** `YOUTUBE_GROWTH_SYSTEM_V2.md`
 
 Ops card: `CHANNEL_PUBLISH_CADENCE.md`  
@@ -19,9 +20,9 @@ Release checklist: `RELEASE_WEEK_CHECKLIST.md`
 
 | Trait | Meaning in practice |
 |-------|---------------------|
-| Calm documentary narration | Ben Orbit voice · warm · never hype |
-| Cinematic AI space visuals | Intentional scenes · no clip salad |
-| Orbit mascot throughout | Guide beats · not wallpaper |
+| Calm documentary narration | Ben Orbit Narrator · warm British · upbeat curiosity |
+| Animistry-class 3D cartoon | Immersive discovery worlds · not clip salad |
+| Explorer sparse | Side character every few scenes · story leads |
 | Educational but entertaining | Story spine · one idea per beat |
 | Thought-provoking | End on wonder · not certainty |
 | Family friendly | No conspiracy · no gore · no fearmongering |
@@ -54,7 +55,7 @@ Related / soft CTA → pillar long-form
         ↓
 Watch time · subs · returning viewers
         ↓
-Suggested for next Wednesday pillar
+Suggested for next Thursday pillar
 ```
 
 ---
@@ -66,7 +67,7 @@ Suggested for next Wednesday pillar
 | Step | Action |
 |------|--------|
 | 1 | Publish the **long-form** first |
-| 2 | Window: **18:00–20:00 UK** (ops lock: **19:00**) |
+| 2 | Window: **18:00–20:00 UK** (ops lock: **Thursday 19:00**) |
 | 3 | Title, description, chapters, thumbnail, end screens, cards — **final before go-live** |
 
 ### Day 1 — First Short (1–3 hours later)
@@ -75,25 +76,25 @@ Suggested for next Wednesday pillar
 |------|--------|
 | 4 | Publish Short #1 from the **strongest hook** or most intriguing moment |
 | 5 | Ops lock: **21:00 UK** (≈ 2 hours after the long) |
-| 6 | Related video / pinned comment → this week’s long-form |
+| 6 | Studio **Related video** ▶ this week’s long (exact title pill — HeyHistorically pattern) |
 
-### Weekly rhythm — Wednesday long, then related Shorts
+### Weekly rhythm — Thursday long, then cluster Shorts (**not daily forever**)
 
 | Day | What | Time UK |
 |-----|------|---------|
-| **Wednesday** | Long-form | **19:00** (cold-start exception allowed) |
-| **Thu–Tue** | Related Shorts (**3–5** discovery; extras as reserves) | **12:30** (optional Day-1 launch Short ~21:00) |
-| **Next Wednesday** | Next long-form | **19:00** |
+| **Thursday** | Long-form (8–9 min) | **19:00** |
+| **Thu ~21:00** | Short #1 (monster hook) | **21:00** |
+| **Next 7–10 days** | Shorts **#2–#6** · **one every 1–2 days** | **~12:30** preferred |
+| **Next Thursday** | Next long only if ready | **19:00** |
 
-Example: long on Wednesday → Shorts Thursday through Tuesday about that long → next long the following Wednesday.
+**Locked recommendation (Ben 26 Aug 2026):** do **not** run daily Shorts as the default. Run a **4–6 Short cluster per film**. See `HOS_SHORTS_CADENCE_LOCKED.md`.
 
-**Growth System v2 spacing**
+**Growth System spacing**
 
-- Target **3–5** discovery Shorts per long (curiosity-gap ends + Related → pillar); hold soft-duplicates as **Private** reserves.
+- Target **4–6** discovery Shorts per long (curiosity-gap ends + Related → pillar); hold soft-duplicates as **Private** reserves.
 - Shorts must promote **that week’s** long only.
-- One Short per day max — never dump the cluster on Day 1.
-- Unused soft-duplicates stay **Private** — do not park them in December.
-- Current backlog ships through **August–September**.
+- One Short per publish slot — never dump the cluster on Day 1.
+- Unused soft-duplicates stay **Private**.
 
 **Never** publish a teaser Short *before* the pillar is public.  
 **Never** dump the whole cluster on Day 1.  

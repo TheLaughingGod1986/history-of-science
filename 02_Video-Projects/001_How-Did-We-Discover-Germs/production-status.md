@@ -2,26 +2,24 @@
 
 | Step | Status |
 |---|---|
-| Topic score | DONE |
-| Cluster plan | DONE |
-| Pre-build VidIQ audit | SIGNED (live VidIQ re-score before upload) |
-| Master script | `germs_script_master_v01.md` |
-| Script review | **PASS 90.4** |
-| Episode gate | **PASS** |
-| Part 01 VO | DONE · ~84s Ben Orbit Narrator |
-| Part 01 Veo | **PARTIAL** — 3/10 plates (Gemini 429 quota). Explorer deferred. |
-| Part 01 rough | `hos_001_part01_partial_v01.mp4` (~23s picture under VO open) |
-| Parts 02–05 | Blocked on Ben UAT + Veo quota recovery |
-| Broadcast + Shorts | Later |
+| Topic / cluster / audit | DONE |
+| Master script | PASS **90.4** · gate PASS |
+| Shorts cadence | **LOCKED: 5-cluster, not daily** (`HOS_SHORTS_CADENCE_LOCKED.md`) |
+| Release week plan | `11_Upload-Package/RELEASE_WEEK_001.md` |
+| Shorts punch drafts | `10_Shorts/SHORTS_PUNCH_SCRIPTS_v01.md` |
+| Part 01 VO | DONE (~84s) |
+| Part 01 Veo | PARTIAL 3/10 · resume when quota allows |
+| Parts 02–05 | Blocked on Ben UAT after Part 01 |
+| Broadcast + Shorts cuts | After all parts lock |
 
-## Artifacts
+## Cadence (this channel)
 
-- VO: `/opt/cursor/artifacts/part01_invisible_enemy_v01.mp3`
-- Partial rough: `/opt/cursor/artifacts/hos_001_part01_partial_v01.mp4`
-- Style test (locked): `/opt/cursor/artifacts/hos_explorer_style_test_30s_v01.mp4`
+- Long Thu 19:00 UK when ready  
+- Shorts **4–6 / film** over 7–10 days after · **not daily treadmill**  
+- Every Short Related ▶ *How Did We Discover Germs?*
 
-## Blocker
+## Next
 
-Gemini Developer API **RESOURCE_EXHAUSTED** after plates 01–03. Resume `_build_part01_rough_v01.py` when quota resets (skip-existing keeps the three good plates).
-
-**Do not start Part 02 until Ben passes Part 01.**
+1. Resume Part 01 Veo plates → full rough  
+2. Ben UAT Part 01  
+3. Only then Part 02

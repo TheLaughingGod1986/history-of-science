@@ -15,16 +15,17 @@ You are inside the discovery of an invisible enemy. Hospitals smell of death. Do
 - **Title C:** How Tiny Invisible Creatures Changed Medicine Forever
 - Prefer **A** (Animistry curiosity form). Score with VidIQ before upload lock.
 
-## Shorts cluster (4–6 punch, 22–27s)
+## Shorts cluster (5 punch, 22–27s) — **not daily**
 
-| # | Working punch | Funnel beat |
+Cadence: `HOS_SHORTS_CADENCE_LOCKED.md` · plan: `RELEASE_WEEK_001.md`
+
+| # | Slot after long | Working punch |
 |---|---|---|
-| 1 | Doctors once blamed “bad air,” not germs | → long |
-| 2 | The first time humans *saw* microbes | → long |
-| 3 | Why washing hands was once “ridiculous” | → long |
-| 4 | Pasteur’s flask that broke the old story | → long |
-| 5 | Lister’s spray that cleaned the operating theatre | → long |
-| 6 | Your body is a city of tiny lives | → long |
+| 1 | Thu ~21:00 | Doctors once blamed “bad air,” not germs |
+| 2 | Sat ~12:30 | The first time humans *saw* microbes |
+| 3 | Mon ~12:30 | Why washing hands was once “ridiculous” |
+| 4 | Wed ~12:30 | Pasteur’s flask that broke the old story |
+| 5 | Fri ~12:30 | Lister’s spray that cleaned the theatre |
 
 Zero affiliate on Shorts. **Studio Related / ▶ pill** → parent long once public (HeyHistorically pattern — `INSPIRATION_HEYHISTORICALLY.md`).
 
