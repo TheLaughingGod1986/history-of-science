@@ -21,8 +21,8 @@ Ben UAT (26 Aug 2026) on Germs Part 01: smiling / winking cartoon germs are **wr
 
 Reject proof: `00_Brand/Channel-Setup/inspiration/REJECT_smiling_germs_part01_example.png`
 
-## Prompt stub
+## Density (Ben 26 Aug 2026)
 
-Append on every microbe plate: no faces, no smiles, no eyes, no cute characters — scientific forms only.
-
-**Veo note:** text locks alone are weak — Veo invents smiles. Prefer I2V from `faceless_microbes_ref_v01.jpg` (or equivalent blank rods/spheres still) as start frame.
+- First minutes of Part 01: **human ward + sick patients** — not a germ swarm.
+- Explorer (mascot) **walks past beds** with ~2 ill patients.
+- Germs appear **later and sparse** (handful only) when VO names the invisible enemy.

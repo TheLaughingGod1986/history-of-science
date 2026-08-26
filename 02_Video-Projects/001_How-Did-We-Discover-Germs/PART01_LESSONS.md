@@ -16,7 +16,13 @@
 3. Gemini quota blocked v03 Veo regen mid-run.
 4. **Interim rough v03:** microbe beats use push-in on the faceless still (no smiles) until Veo quota recovers for true motion plates.
 
-## Next
+## Ben UAT (round 2)
 
-- Resume `_build_part01_rough_v01.py` when quota resets → real v03 Veo from `MICROBE_REF`.
-- Replace still-bridges; Ben re-UAT before Part 02.
+- Too many germs in the first minutes → **human ward first**.
+- Mascot (Explorer) should **walk past beds** with a couple of **sick/ill patients**.
+- Germs: faceless + **sparse**, late in the minute.
+
+## Fix path (v04)
+
+- New plates: ward open with patients · two ill patients · Explorer walks past beds · sparse microbe hints only late.
+- Output target: `hos_001_part01_rough_v04.mp4`

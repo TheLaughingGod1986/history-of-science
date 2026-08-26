@@ -36,10 +36,10 @@ RAW = PROJ / "04_Generated-Clips" / "part01" / "raw"
 VO_PATH = PROJ / "02_Voiceover" / "part01_invisible_enemy_v01.mp3"
 REF = REPO / "01_Character" / "05_Generation-References" / "hos-explorer-reference-v01.jpg"
 MICROBE_REF = PROJ / "04_Generated-Clips" / "part01" / "refs" / "faceless_microbes_ref_v01.jpg"
-META_PATH = PROJ / "07_Edit-Project" / "part01_gen_meta_v03.json"
-PLATES_JSON = PROJ / "07_Edit-Project" / "parts" / "part-01_omni_plates_v03.json"
+META_PATH = PROJ / "07_Edit-Project" / "part01_gen_meta_v04.json"
+PLATES_JSON = PROJ / "07_Edit-Project" / "parts" / "part-01_omni_plates_v04.json"
 REJECTED = PROJ / "04_Generated-Clips" / "part01" / "_rejected_smiling_v01"
-OUT = PROJ / "09_Final-Export" / "hos_001_part01_rough_v03.mp4"
+OUT = PROJ / "09_Final-Export" / "hos_001_part01_rough_v04.mp4"
 
 CLIP_USE_S = 7.2
 XFADE = 0.4
@@ -58,9 +58,10 @@ NEGATIVE = (
     "Orbit orange robot, floating robot, black visor mascot, Eiffel Tower, Paris, "
     "photoreal live action, horror, gore, blood, open wounds, readable UI chrome, "
     "watermark, logo overlay, dialogue, speech, talking, narrator, lip sync, "
-    "twin characters, clone, duplicate boy, second explorer, text on screen, "
+    "twin Explorers, clone, duplicate boy, second explorer, text on screen, "
     "smiling germs, winking microbes, cute faces on bacteria, anthropomorphic germs, "
-    "cartoon eyes on microbes, friendly mascot germs, kawaii germs"
+    "cartoon eyes on microbes, friendly mascot germs, kawaii germs, "
+    "swarm of hundreds of germs, thick cloud of microbes filling the whole frame"
 )
 
 STYLE = (
@@ -70,13 +71,18 @@ STYLE = (
 )
 
 # Ben lock 26 Aug 2026: germs are the enemy — wondrous science forms, never cute faces.
-# Veo invents smiles from text alone — use MICROBE_REF start frame + this lock.
+# Early Part 01: HUMAN WARD FIRST — few/no germs until the “invisible enemy” line.
 MICROBE_LOCK = (
-    "MICROBE VISUAL LOCK (HARD): keep microbes as blank scientific rods and spheres "
-    "exactly like the start frame — translucent teal/amber glass-like forms. "
-    "ABSOLUTELY NO faces, NO eyes, NO pupils, NO mouths, NO smiles, NO winking, "
-    "NO cute expressions, NO anthropomorphic characters. Featureless surfaces only. "
-    "If a face appears the shot is wrong. Slightly ominous invisible enemy."
+    "MICROBE VISUAL LOCK (HARD): blank scientific rods and spheres only — translucent "
+    "teal/amber glass-like forms. NO faces, NO eyes, NO mouths, NO smiles. "
+    "SPARSE: only a few microbes (about 3–8), not a room-filling swarm. "
+    "Slightly ominous invisible enemy."
+)
+
+PATIENT_LOCK = (
+    "Two patients maximum in frame, tasteful 3D cartoon illness — pale faces, tired "
+    "eyes, feverish stillness under white sheets. NO gore, NO blood, NO open wounds, "
+    "NO corpses. Family-friendly but clearly sick and ill."
 )
 
 VO_TEXT = (
@@ -99,17 +105,16 @@ VO_TEXT = (
     "prove it exists."
 )
 
+# Ben 26 Aug 2026: fewer germs in first minutes; Explorer walks past sick patients in beds.
 PLATES = [
     {
-        "id": "01_microbes_ward_air",
+        "id": "01_ward_open_patients",
         "explorer": False,
-        "regen": True,
+        "force": True,
         "prompt": (
-            f"{STYLE} {MICROBE_LOCK} Strange cold-open picture: inside a warm Victorian "
-            "hospital ward, soft lamps and white beds, while stylised glowing teal-amber "
-            "microbial forms — rods and spheres with no faces — drift like dust motes "
-            "made visible through science. Slightly ominous invisible enemy. No people. "
-            "Continuous slow push into the swarm."
+            f"{STYLE} {PATIENT_LOCK} Strange cold-open: Victorian hospital ward, soft lamps, "
+            "brass beds — TWO sick patients resting ill in bed (pale, feverish, still). "
+            "NO microbes visible yet. Human stakes first. Continuous slow push into the ward."
         ),
     },
     {
@@ -118,16 +123,30 @@ PLATES = [
         "prompt": (
             f"{STYLE} Long clean Victorian hospital corridor, polished wood floor, soft "
             "wall lamps, white curtains in the distance, orderly and peaceful. No people. "
-            "No microbes in this shot. Continuous slow dolly down the corridor toward the light."
+            "No microbes. Continuous slow dolly down the corridor toward the light."
         ),
     },
     {
-        "id": "03_curtains_beds",
+        "id": "03_two_ill_patients",
         "explorer": False,
+        "force": True,
         "prompt": (
-            f"{STYLE} Soft hospital ward with white curtains half-drawn around neat beds, "
-            "warm lamps, quiet atmosphere of care that still feels tense. No gore. "
-            "No people visible. No smiling characters. Continuous gentle camera drift past curtains."
+            f"{STYLE} {PATIENT_LOCK} Medium shot along a row of brass beds: exactly two "
+            "patients looking sick and ill under white sheets — one restless with fever, "
+            "one very still and pale. Curtains, warm lamps. NO microbes. NO gore. "
+            "Continuous gentle camera drift past the beds."
+        ),
+    },
+    {
+        "id": "04_explorer_walks_past_beds",
+        "explorer": True,
+        "force": True,
+        "optional": True,
+        "prompt": (
+            f"{STYLE} {EXPLORER_LOCK} {PATIENT_LOCK} The Explorer walks slowly past brass "
+            "hospital beds, satchel at his side, glancing with quiet concern at TWO sick "
+            "patients in bed — then continues down the aisle so the ward stays the story. "
+            "Single Explorer only. NO microbes. Continuous walking motion."
         ),
     },
     {
@@ -136,70 +155,61 @@ PLATES = [
         "prompt": (
             f"{STYLE} Close cinematic 3D cartoon shot of Victorian doctor hands and "
             "gleaming metal surgical instruments on a tray under warm lamp light — "
-            "confident, polished, slightly ominous. No faces required. Continuous "
+            "confident, polished, slightly ominous. No microbes. Continuous "
             "subtle orbit of the tray."
         ),
     },
     {
-        "id": "06_fever_soft_consequence",
+        "id": "06_fever_patient",
         "explorer": False,
+        "force": True,
         "prompt": (
-            f"{STYLE} Tasteful stylised shot: a patient bed with a soft red-orange fever "
-            "glow under white sheets, thermometer on a side table, worried stillness — "
-            "no gore, no blood, cartoon-safe consequence. Continuous slow push-in."
+            f"{STYLE} {PATIENT_LOCK} One ill patient in bed — soft red-orange fever glow "
+            "under white sheets, thermometer on a side table, worried stillness. "
+            "Tasteful cartoon illness only. NO microbes. NO gore. Continuous slow push-in."
         ),
     },
     {
-        "id": "07_microbe_cloud_close",
+        "id": "07_sparse_microbes_hint",
         "explorer": False,
-        "regen": True,
+        "force": True,
+        "microbe_ref": True,
         "prompt": (
-            f"{STYLE} {MICROBE_LOCK} Macro close-up of a glowing stylised microbial cloud — "
-            "scientific rods and spheres tumbling like a tiny galaxy. Educational "
-            "visualisation, slightly ominous, not horror and not cute. Continuous motion."
+            f"{STYLE} {MICROBE_LOCK} Late reveal: over an empty patch of ward air, only a "
+            "HANDFUL (about 5) of faceless glowing microbial rods/spheres drift like "
+            "dangerous dust — sparse, not a swarm. Background ward soft. Continuous motion."
         ),
     },
     {
-        "id": "08_breath_cloth_travel",
+        "id": "08_hands_between_patients",
         "explorer": False,
-        "regen": True,
+        "force": True,
         "prompt": (
-            f"{STYLE} {MICROBE_LOCK} Stylised beat: faceless glowing microbial rods and "
-            "spheres hitchhiking on a fluttering cloth, then riding a soft breath mist "
-            "across a ward — invisible travel made visible. Continuous motion."
+            f"{STYLE} {PATIENT_LOCK} Victorian doctor hands leave one curtained bed with a "
+            "sick patient and move toward a second ill patient nearby — no washing bowl. "
+            "Human transmission beat. NO microbe swarm; at most a tiny faceless sparkle "
+            "or none. Continuous tracking with the hands."
         ),
     },
     {
-        "id": "09_hands_to_next_patient",
+        "id": "09_sparse_microbes_close",
         "explorer": False,
-        "regen": True,
+        "force": True,
+        "microbe_ref": True,
         "prompt": (
-            f"{STYLE} {MICROBE_LOCK} Victorian doctor hands leaving one curtained bed and "
-            "moving toward another — no washing bowl — tiny faceless glowing microbial "
-            "forms cling to the fingertips like dangerous dust. Educational, not gruesome. "
-            "Continuous tracking with the hands."
+            f"{STYLE} {MICROBE_LOCK} Macro of a FEW (3–6) faceless scientific rods and "
+            "spheres tumbling slowly — educational, slightly ominous, never cute. "
+            "Not a packed galaxy of germs. Continuous gentle tumble."
         ),
     },
     {
-        "id": "10_ward_atmosphere_hold",
+        "id": "10_ward_hold_patients",
         "explorer": False,
-        "regen": True,
+        "force": True,
         "prompt": (
-            f"{STYLE} {MICROBE_LOCK} Wide hold on the Victorian ward: lamps, curtains, quiet "
-            "beds, a few faceless glowing microbial forms drifting in the air — question "
-            "hanging. No people. Continuous slow pull-back."
-        ),
-    },
-    # Explorer last — image+video burns more quota; skip-ok if exhausted.
-    {
-        "id": "04_explorer_doorway_peek",
-        "explorer": True,
-        "optional": True,
-        "prompt": (
-            f"{STYLE} {EXPLORER_LOCK} Medium shot: the Explorer peeks from a hospital "
-            "doorway into the ward, cream-curious eyes wide behind gold glasses, then "
-            "quietly slips back so the ward remains the hero. Single character only. "
-            "No microbes with faces in frame. Continuous motion."
+            f"{STYLE} {PATIENT_LOCK} Wide hold on the Victorian ward: lamps, curtains, "
+            "TWO ill patients still in bed — quiet question hanging. NO microbe swarm. "
+            "Continuous slow pull-back."
         ),
     },
 ]
@@ -232,7 +242,7 @@ def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 3) 
             img = None
             if plate.get("explorer"):
                 img = types.Image.from_file(location=str(REF))
-            elif plate.get("regen") and MICROBE_REF.exists():
+            elif plate.get("microbe_ref") and MICROBE_REF.exists():
                 # Start from faceless still so Veo doesn't invent cute smiles.
                 img = types.Image.from_file(location=str(MICROBE_REF))
             config = types.GenerateVideosConfig(
@@ -243,8 +253,8 @@ def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 3) 
                 negative_prompt=NEGATIVE,
             )
             print(
-                f"  submit {plate['id']} explorer={plate['explorer']} "
-                f"microbe_ref={bool(plate.get('regen') and MICROBE_REF.exists())} "
+                f"  submit {plate['id']} explorer={plate.get('explorer')} "
+                f"microbe_ref={bool(plate.get('microbe_ref') and MICROBE_REF.exists())} "
                 f"attempt={attempt}/{retries}",
                 flush=True,
             )
@@ -386,44 +396,40 @@ def main() -> None:
     REJECTED.mkdir(parents=True, exist_ok=True)
 
     for plate in PLATES:
-        ver = "v03" if plate.get("regen") else "v01"
+        ver = "v04" if plate.get("force") else "v01"
         dest = RAW / f"{plate['id']}_{ver}.mp4"
-        # Quarantine prior smiling microbe plates when regenerating.
-        if plate.get("regen"):
-            for old_ver in ("v01", "v02"):
-                old = RAW / f"{plate['id']}_{old_ver}.mp4"
-                if old.exists():
-                    dest_rej = REJECTED / old.name
-                    if not dest_rej.exists():
-                        old.rename(dest_rej)
-                        print(f"  quarantined {old.name} → _rejected_smiling_v01/", flush=True)
-                    else:
-                        old.unlink()
         try:
             info = gen_plate(client, plate, dest, model)
             meta["plates"].append({"id": plate["id"], "ver": ver, **info, "path": str(dest)})
             paths.append(dest)
         except Exception as e:
-            # Microbe regens are preferred but optional if quota dies mid-run.
-            if plate.get("optional") or plate.get("regen"):
+            if plate.get("optional") or plate.get("force"):
                 print(f"  SKIP {plate['id']}: {e}", flush=True)
-                meta["plates"].append(
-                    {"id": plate["id"], "skipped": True, "error": str(e)}
-                )
+                meta["plates"].append({"id": plate["id"], "skipped": True, "error": str(e)})
+                # Fallback: keep prior corridor/hands plates if named the same id+v01
+                fallback = RAW / f"{plate['id']}_v01.mp4"
+                if fallback.exists():
+                    paths.append(fallback)
                 continue
             raise
 
     # Assemble in narrative id order (Explorer mid-act), not generation order.
     def plate_sort_key(p: Path) -> str:
         name = p.stem
-        for suffix in ("_v03", "_v02", "_v01"):
+        for suffix in ("_v04", "_v03_stillbridge", "_v03", "_v02", "_v01"):
             if name.endswith(suffix):
                 return name[: -len(suffix)]
         return name
 
-    path_by_id = {plate_sort_key(p): p for p in paths}
-    ordered_ids = sorted(path_by_id.keys())
-    paths = [path_by_id[i] for i in ordered_ids]
+    # Prefer highest version per id
+    best: dict[str, Path] = {}
+    rank = {"v04": 4, "v03_stillbridge": 3, "v03": 3, "v02": 2, "v01": 1}
+    for p in paths:
+        key = plate_sort_key(p)
+        suf = p.stem[len(key) + 1 :] if p.stem.startswith(key + "_") else "v01"
+        if key not in best or rank.get(suf, 0) >= rank.get(best[key].stem[len(key) + 1 :], 0):
+            best[key] = p
+    paths = [best[i] for i in sorted(best.keys())]
 
     if len(paths) < 2:
         raise SystemExit(f"Need ≥2 plates to assemble; only have {len(paths)}")
