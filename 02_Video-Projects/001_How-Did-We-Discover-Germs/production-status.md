@@ -2,13 +2,19 @@
 
 | Step | Status |
 |---|---|
-| Script / gate | PASS 90.4 |
+| Topic score | DONE |
+| Cluster plan | DONE |
+| Pre-build VidIQ audit | SIGNED (live VidIQ re-score before upload) |
+| Master script | `germs_script_master_v01.md` |
+| Script / gate | **PASS 90.4** |
 | Shorts cadence | Cluster 4–6 · **not daily** |
+| Part 01 VO | DONE · Ben Orbit Narrator |
 | Part 01 picture | **PASS — `hos_001_part01_rough_v08.mp4`** |
 | Style / microbe / motion locks | **LOCKED** |
 | Part 02 VO + stills | DONE |
 | Part 02 picture | **BLOCKED** — Ben: not animated. Still-push REJECT. 1/10 real Flow plate done; Flow daily limit + API 429 |
 | Parts 03–05 | Blocked on real animated Part 02 + Ben UAT |
+| Broadcast + Shorts | Later (Shorts only after long is public) |
 
 ## Artifacts
 
