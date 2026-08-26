@@ -46,3 +46,16 @@ Ben’s screenshots on the later cut: first seconds OK; later beats “completel
 - Related: any other plate where smiles appear in the assembled v01
 
 Keep on disk from v01 family: `03_curtains_beds`, `04_explorer_doorway_peek`, `05_doctor_hands_instruments`, `06_fever_soft_consequence`, `09_hands_to_next_patient`, `10_ward_atmosphere_hold` (verify against master).
+
+## v08 build notes (Ben UAT follow-up)
+
+Ben: style of v01 is really good; too many germ-float scenes; last ~5s still smiling.
+
+v08 deltas only:
+1. Drop dense open swarm + macro cloud float beats (reduce repetition)
+2. Story plates = germ-free edits of v01 frames (same cartoon world)
+3. Only late sparse + end hold use composited FACELESS microbe assets (no eyes/smiles)
+4. Builder: `07_Edit-Project/_build_part01_v08_faceless.py`
+
+Do not ship until Ben UAT on `hos_001_part01_rough_v08.mp4`.
+
