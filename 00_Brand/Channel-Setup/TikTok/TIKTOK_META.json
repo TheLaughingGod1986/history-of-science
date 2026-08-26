@@ -2,15 +2,14 @@
   "platform": "tiktok",
   "display_name": "History of Science",
   "handle_candidates": [
-    "HistoryOfScience",
-    "HistoryOfScienceYT",
-    "HoSWithOrbit",
-    "OrbitExplores"
+    "historyofscience",
+    "historyofscienceyt",
+    "hoscienceyt"
   ],
   "preferred_handle": "historyofscience",
   "handle": null,
   "public_url": null,
-  "bio": "How we discovered what we know. Full films on YT ↓",
+  "bio": "How we discovered what we know. Films on YT ↓",
   "website": "https://www.youtube.com/@HistoryOfScience",
   "youtube_handle": "@HistoryOfScience",
   "youtube_url": "https://www.youtube.com/@HistoryOfScience",
@@ -19,9 +18,9 @@
   "avatar": "avatar_800x800.png",
   "tagline": "How we discovered what we know.",
   "philosophy": "Discovery. Wonder. Proof.",
-  "status": "not_created",
+  "status": "check_existing_before_create",
   "created_at": null,
-  "notes": "Create a new TikTok for History of Science. Do not post from the Orbit with Ben TikTok (@orbitwithben) in this workspace.",
-  "blocker": "TikTok account not created",
-  "next_step": "1) Create @historyofscience (or nearest available)  2) Upload Orbit avatar  3) TikTok dev app  4) Connect at /settings/connections"
+  "notes": "Create or reclaim a TikTok for History of Science. Do not post from the banned Orbit with Ben TikTok (@orbitwithben). Do not post until the first YouTube Short is public.",
+  "blocker": "Confirm whether @historyofscience is already on this login",
+  "next_step": "1) Check phone login for @historyofscience  2) Upload Explorer avatar  3) Set bio  4) Connect Content Ops after YouTube ID exists"
 }

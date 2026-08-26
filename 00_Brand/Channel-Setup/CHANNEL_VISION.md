@@ -50,8 +50,10 @@ Canonical sheet: `01_Character/01_Master-References/hos-explorer-character-sheet
 
 ## Next ops steps
 
-1. Create Brand Account channel + handle → fill `CHANNEL_META.json`.
+Launch pack: `SOCIALS_LAUNCH.md` · `SOCIAL_IDENTITY.json`.
+
+1. Confirm `@HistoryOfScience` in the YouTube channel switcher (empty public page already exists) → brand it → fill `CHANNEL_META.json`.
 2. Connect YouTube Data API OAuth for this channel only.
 3. Deploy Content Ops for HOS; set `APP_BASE_URL` to that origin.
-4. Create **new** Meta / Threads / TikTok accounts (do not publish to Orbit’s).
+4. Create **new** Meta / Threads / TikTok (`@historyofscienceyt` on IG — exact `@historyofscience` is Wellesley).
 5. First episode: story-first 3D cartoon plates + sparse Explorer beats.

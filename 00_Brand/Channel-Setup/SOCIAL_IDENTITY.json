@@ -1,0 +1,101 @@
+{
+  "brand": "History of Science",
+  "prepared_at": "2026-08-26",
+  "google_account": "benoats86@gmail.com",
+  "owner_name": "Ben Oates",
+  "tagline": "How we discovered what we know.",
+  "banner_line": "Discovery. Wonder. Proof.",
+  "hashtag": "#HistoryOfScience",
+  "mascot": "the Explorer (side character only)",
+  "picture": "3D cartoon · Animistry-class · story first",
+  "vo": "ElevenLabs Ben Orbit Narrator",
+  "do_not_publish_to": {
+    "orbit_with_ben_youtube": "UC_esArsDKd3GJvOkeO0DUog",
+    "orbit_with_ben_tiktok": "@orbitwithben",
+    "note": "Never upload or OAuth this workspace to Orbit With Ben."
+  },
+  "youtube": {
+    "display_name": "History of Science",
+    "handle": "@HistoryOfScienceYT",
+    "public_url": "https://www.youtube.com/@HistoryOfScienceYT",
+    "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "status": "created_26_aug_2026",
+    "observed_2026_08_26": "@HistoryOfScience taken. Created Brand Account @HistoryOfScienceYT (UCXp7HkBIl1LgaznXuZHJyRg) under benoats86@gmail.com. Description, Explorer avatar, and library banner live.",
+    "country": "GB",
+    "language": "en-GB",
+    "made_for_kids": false,
+    "keywords": "history of science, science, discovery, documentary, cartoon science, explained, curiosity, physics, astronomy, experiments, scientific method, inventors, universe, big questions",
+    "avatar": "00_Brand/Channel-Setup/avatar_800x800.png",
+    "banner": "00_Brand/Channel-Setup/banner_2560x1440.png",
+    "description_file": "00_Brand/Channel-Setup/channel_description.txt",
+    "links_after_socials_exist": [
+      "https://www.instagram.com/historyofscienceyt/",
+      "https://www.tiktok.com/@historyofscienceyt"
+    ]
+  },
+  "instagram": {
+    "display_name": "History of Science",
+    "handle": "historyofscienceyt",
+    "preferred_handle": "historyofscienceyt",
+    "profile_url": "https://www.instagram.com/historyofscienceyt/",
+    "blocked_handles": {
+      "historyofscience": "Taken — Wellesley Science Center",
+      "thehistoryofscience": "Taken — Kürşat Civelek"
+    },
+    "fallbacks": ["hoscienceyt", "historyofsciencefilms"],
+    "profile_url_placeholder": "https://www.instagram.com/historyofscienceyt/",
+    "account_type": "creator",
+    "category": "Education website",
+    "must_link_to_facebook_page": true,
+    "facebook_page_link": "restricted_26_aug_2026_retry_later",
+    "status": "created_26_aug_2026",
+    "bio": "How we discovered what we know.\n3D cartoon science films.\nYouTube ↓",
+    "website": "https://www.youtube.com/@HistoryOfScienceYT",
+    "website_note": "Instagram web still blocks the website field. Bio is live. Add https://www.youtube.com/@HistoryOfScienceYT in the IG iPhone app (Edit profile → Website).",
+    "note": "Creator account in Ben's Accounts Centre (alongside orbitwithben). Explorer avatar, bio, Education website category, Threads badge on. Do not post as orbitwithben."
+  },
+  "facebook": {
+    "page_name": "History of Science",
+    "page_id": "61593586420124",
+    "page_url": "https://www.facebook.com/profile.php?id=61593586420124",
+    "preferred_handles": ["HistoryOfScienceYT", "HistoryOfScienceFilms"],
+    "page_url_placeholder": "https://www.facebook.com/HistoryOfScienceYT",
+    "bio": "How we discovered what we know. 3D cartoon films about discovery. Full films on YouTube.",
+    "website": "https://www.youtube.com/@HistoryOfScienceYT",
+    "category": "Education website",
+    "status": "created_26_aug_2026",
+    "note": "New Page under Ben's Facebook, not Orbit with Ben. Explorer avatar + library banner live (HISTORY OF SCIENCE / DISCOVERY. WONDER. PROOF.). Bio + youtube.com/@historyofscienceyt in Links. Page↔IG connect still Meta-restricted 26 Aug 2026."
+  },
+  "threads": {
+    "handle": "@historyofscienceyt",
+    "follows_instagram": true,
+    "profile_url": "https://www.threads.com/@historyofscienceyt",
+    "profile_url_placeholder": "https://www.threads.net/@historyofscienceyt",
+    "status": "created_26_aug_2026",
+    "bio": "How we discovered what we know. Full films on YouTube ↓",
+    "bio_note": "Bio live 26 Aug 2026. YouTube link added in Edit profile → Links.",
+    "note": "Joined from Instagram @historyofscienceyt. Public. Explorer photo imported from IG. In the same Accounts Centre as orbitwithben — switch handle before posting."
+  },
+  "tiktok": {
+    "display_name": "History of Science",
+    "preferred_handle": "historyofscienceyt",
+    "fallbacks": ["hoscienceyt", "historyofsciencefilms"],
+    "status": "historyofscience_taken_not_ours",
+    "note": "Checked 26 Aug 2026: @historyofscience is ภวัต วิชัยรัตน์ (not ours). Create @historyofscienceyt. This is NOT the banned @orbitwithben TikTok. Account only — no posts until a YouTube Short is public.",
+    "bio": "How we discovered what we know. Films on YT ↓",
+    "website": "https://www.youtube.com/@HistoryOfScienceYT"
+  },
+  "x": {
+    "optional": true,
+    "display_name": "History of Science",
+    "preferred_handle": "HoScienceYT",
+    "fallbacks": ["HistoryOfSciYT"],
+    "bio": "How we discovered what we know. 3D cartoon science films. YouTube @HistoryOfScienceYT",
+    "note": "Skip until YouTube + Meta are live. Not required for launch."
+  },
+  "soft_cta": {
+    "social_caption": "Full film on YouTube.",
+    "shorts_onscreen": "watch the full film →",
+    "never": ["shop read", "link in bio ad voice", "raw Amazon URLs", "Orbit robot as mascot"]
+  }
+}

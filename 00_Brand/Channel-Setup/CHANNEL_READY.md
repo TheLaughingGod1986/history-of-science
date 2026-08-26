@@ -1,9 +1,9 @@
 # History of Science — YouTube Channel
 
-Created: **not yet**  
-Status: **Production workspace ready · YouTube channel not created**
+Created: **26 Aug 2026**  
+Status: **Live @HistoryOfScienceYT · description + Explorer avatar + library banner · IG + Threads @historyofscienceyt live**
 
-Canonical vision: `CHANNEL_VISION.md` · Character: `01_Character/CHARACTER_BIBLE.md`
+Canonical: `CHANNEL_VISION.md` · `SOCIALS_LAUNCH.md` · `SOCIAL_IDENTITY.json` · `01_Character/CHARACTER_BIBLE.md`
 
 This repo was cloned from Orbit with Ben as a production template. **Do not publish, schedule, or connect OAuth to Orbit’s live channel.**
 
@@ -12,44 +12,67 @@ This repo was cloned from Orbit with Ben as a production template. **Do not publ
 | Field | Value |
 |---|---|
 | Display name | **History of Science** |
-| Handle (claim at create) | **@HistoryOfScience** |
+| Handle | **@HistoryOfScienceYT** (`@HistoryOfScience` was taken) |
 | Tagline (banner) | DISCOVERY. WONDER. PROOF. |
 | Brand line | How we discovered what we know. |
-| Picture | **3D cartoon** · story-first · upbeat |
+| Picture | **3D cartoon** · story-first · Animistry-class · 8–9 min |
 | Mascot | **the Explorer** — side character only (every few scenes) |
 | VO | ElevenLabs Ben Orbit Narrator (same voice) |
 | CG | Omni / Gemini Veo silent picture |
 | Upload | YouTube Data API via Content Ops |
 | Managing Google account | `benoats86@gmail.com` (Ben Oates) |
 
-## Live links (fill after create)
+## Live links
 
 | | |
 |---|---|
-| Public handle | https://www.youtube.com/@HistoryOfScience *(create the Brand Account, then confirm)* |
-| Channel ID | *fill in `CHANNEL_META.json` after create* |
-| Studio | *fill in after create* |
+| Public handle | https://www.youtube.com/@HistoryOfScienceYT |
+| Channel ID | `UCXp7HkBIl1LgaznXuZHJyRg` |
+| Studio | https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg |
 
-Historical Orbit create/brand JSON (`CREATE_RESULT.json`, `BRAND_RESULT.json`, `VERIFY_RESULT.json`) is leftover from the template clone — treat as archive, not live config.
+OpptiAI (`UCXRVwrCxXpN_o9gvuHPKAPQ`) and Orbit with Ben (`UC_esArsDKd3GJvOkeO0DUog`) must **not** be edited from this workspace.
 
-## Branding to apply (after channel create)
+## Branding to apply (today)
 
-- [ ] Avatar: Explorer face crop from character sheet (or HOS wordmark)
-- [ ] Banner: History of Science lockup + “DISCOVERY. WONDER. PROOF.”
-- [ ] About description (`channel_description.txt`)
+- [x] Avatar: `Channel-Setup/avatar_800x800.png` (Explorer face, v01 draft)
+- [x] Banner: `Channel-Setup/banner_2560x1440.png` + “DISCOVERY. WONDER. PROOF.”
+- [x] Name Title Case **History of Science**
+- [x] About description (`channel_description.txt`)
+- [ ] Keywords (`channel_keywords.txt`)
 - [ ] YouTube Data API OAuth for **this** Brand Account only
-- [ ] New Meta / Threads / TikTok (null IDs until created — do not use Orbit’s)
+- [x] Instagram `@historyofscienceyt` (Creator · Education website · Explorer avatar · bio)
+- [ ] Instagram website URL (mobile app only — add YouTube in Edit profile)
+- [x] Threads `@historyofscienceyt` (bio + Explorer photo + YouTube link)
+- [ ] Link IG ↔ Facebook Page (Meta temporary restriction 26 Aug 2026 — retry later)
+- [x] Facebook Page **History of Science** (`61593586420124`) — Explorer avatar, library banner, bio, YouTube link
+
+## Socials (locked handles)
+
+| Platform | Handle |
+|---|---|
+| YouTube | `@HistoryOfScienceYT` |
+| Instagram | [@historyofscienceyt](https://www.instagram.com/historyofscienceyt/) — Creator, live 26 Aug 2026 |
+| Threads | [@historyofscienceyt](https://www.threads.com/@historyofscienceyt) — live 26 Aug 2026 |
+| Facebook Page | [History of Science](https://www.facebook.com/profile.php?id=61593586420124) (`61593586420124`) — live 26 Aug 2026 |
+| TikTok | skipped for now (`@historyofscience` taken; planned `@historyofscienceyt`) |
 
 ## Assets (local)
 
 ```
 00_Brand/
+  Logos/
+    hos_youtube-avatar_800x800_v01.png
+    hos_youtube-banner_2560x1440_v01.png
+  Colour-Palette/
+    hos_colours_v01.txt
   Channel-Setup/
-    CHANNEL_VISION.md
-    CHANNEL_META.json
+    avatar_800x800.png
+    banner_2560x1440.png
     channel_description.txt
     channel_keywords.txt
-    CHANNEL_READY.md
+    SOCIALS_LAUNCH.md
+    SOCIAL_IDENTITY.json
+    CHANNEL_META.json
 01_Character/
   CHARACTER_BIBLE.md
   01_Master-References/hos-explorer-character-sheet-v01.jpg
@@ -58,12 +81,12 @@ Historical Orbit create/brand JSON (`CREATE_RESULT.json`, `BRAND_RESULT.json`, `
 
 ## Email note
 
-No new Gmail is required. Create a **Brand Account** linked to `benoats86@gmail.com`, separate from OpptiAI and Orbit with Ben.
+No new Gmail is required. Use the **Brand Account** on `benoats86@gmail.com`, separate from OpptiAI and Orbit with Ben.
 
 ## Ready for publishing means
 
-- New channel exists and is public at `@HistoryOfScience` (or nearest available handle)
+- Channel exists and is public at `@HistoryOfScience` (or the nearest available handle)
 - `CHANNEL_META.json` has the new `channel_id` — never Orbit’s
 - Avatar, banner, and description are live
-- Content Ops connected to **this** channel only
+- Content Ops is connected to **this** channel only
 - First film: story-first 3D cartoon + sparse Explorer beats

@@ -1,16 +1,18 @@
 {
   "channel_name": "History of Science",
-  "handle": "@HistoryOfScience",
-  "channel_id": null,
-  "public_url": "https://www.youtube.com/@HistoryOfScience",
-  "studio_url": null,
+  "handle": "@HistoryOfScienceYT",
+  "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "public_url": "https://www.youtube.com/@HistoryOfScienceYT",
+  "studio_url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
   "google_account": "benoats86@gmail.com",
   "owner_name": "Ben Oates",
-  "created_at": null,
+  "created_at": "2026-08-26",
   "rebranded_from_template": "orbit-with-ben seed (2026-08-25)",
   "tagline": "How we discovered what we know.",
   "banner_line": "Discovery. Wonder. Proof.",
-  "status": "workspace_ready_channel_not_created",
+  "status": "live_youtube_ig_threads_facebook",
+  "handle_note": "@HistoryOfScience is taken (empty third-party or held handle). Live handle is @HistoryOfScienceYT.",
+  "socials_pack": "00_Brand/Channel-Setup/SOCIALS_LAUNCH.md",
   "visual_direction": "3d_cartoon_animistry_style",
   "runtime_minutes": "8-9",
   "inspiration_channel": "https://www.youtube.com/@ytAnimistry",
@@ -24,5 +26,5 @@
     "orbit_with_ben_channel_id": "UC_esArsDKd3GJvOkeO0DUog",
     "note": "This workspace was cloned from Orbit with Ben. Never upload or schedule to that channel from here."
   },
-  "notes": "Create a new YouTube Brand Account named History of Science. Explorer is a sparse side character; story leads. Confirm @HistoryOfScience at create."
+  "notes": "Created 26 Aug 2026 as a Brand Account under benoats86@gmail.com. Explorer is a sparse side character; story leads."
 }

@@ -1,6 +1,6 @@
 {
   "brand": "History of Science",
-  "youtube_handle": "@HistoryOfScience",
+  "youtube_handle": "@HistoryOfScienceYT",
   "meta_business_portfolio": {
     "name": "History of Science",
     "business_id": null,
@@ -8,21 +8,44 @@
   },
   "facebook": {
     "page_name": "History of Science",
-    "page_id": null,
+    "page_id": "61593586420124",
     "business_suite_asset_id": null,
-    "preferred_handles": ["HistoryOfScience", "HistoryOfScienceYT"],
-    "page_url": null,
-    "page_url_placeholder": "https://www.facebook.com/HistoryOfScience",
-    "notes": "Publish Reels to a new Facebook Page only (not personal profile, not Orbit with Ben)."
+    "preferred_handles": [
+      "HistoryOfScienceYT",
+      "HistoryOfScienceFilms"
+    ],
+    "page_url": "https://www.facebook.com/profile.php?id=61593586420124",
+    "page_url_placeholder": "https://www.facebook.com/HistoryOfScienceYT",
+    "notes": "Created 26 Aug 2026 as a new Page (Education website). Not Orbit with Ben. Explorer avatar + library banner live. Bio + youtube.com/@historyofscienceyt. Instagram @historyofscienceyt is in Accounts Centre. Page↔IG connect still Meta-restricted 26 Aug 2026."
   },
   "instagram": {
-    "preferred_handles": ["historyofscience", "historyofscienceyt"],
-    "account_type": "professional",
+    "handle": "historyofscienceyt",
+    "preferred_handle": "historyofscienceyt",
+    "preferred_handles": [
+      "historyofscienceyt",
+      "hoscienceyt",
+      "historyofsciencefilms"
+    ],
+    "blocked_handles": {
+      "historyofscience": "Wellesley Science Center",
+      "thehistoryofscience": "K\u00fcr\u015fat Civelek"
+    },
+    "account_type": "creator",
+    "category": "Education website",
     "must_link_to_facebook_page": true,
-    "profile_url_placeholder": "https://www.instagram.com/historyofscience/",
-    "notes": "Creator or Business account linked to the new History of Science Facebook Page."
+    "facebook_page_link": "restricted_26_aug_2026_retry_later",
+    "profile_url": "https://www.instagram.com/historyofscienceyt/",
+    "profile_url_placeholder": "https://www.instagram.com/historyofscienceyt/",
+    "status": "created_26_aug_2026",
+    "notes": "Creator account live in Ben's Accounts Centre. Explorer avatar, bio, Education website, Threads badge. Website field is mobile-only. Page link still Meta-restricted."
   },
-  "bio": "How we discovered what we know. Full films on YouTube ↓",
-  "website": "https://www.youtube.com/@HistoryOfScience",
+  "threads": {
+    "handle": "@historyofscienceyt",
+    "profile_url": "https://www.threads.com/@historyofscienceyt",
+    "status": "created_26_aug_2026",
+    "notes": "Joined from Instagram @historyofscienceyt. Public. Photo imported from IG."
+  },
+  "bio": "How we discovered what we know.\n3D cartoon science films.\nYouTube \u2193",
+  "website": "https://www.youtube.com/@HistoryOfScienceYT",
   "soft_cta": "Full film on YouTube."
 }

@@ -1,18 +1,21 @@
-# Orbit Facebook + Instagram — Setup pack
+# History of Science — Facebook + Instagram setup
 
 Mirror of YouTube brand for Meta discovery. Pillar stays YouTube.
+
+Canonical handles: `../SOCIALS_LAUNCH.md` · `../SOCIAL_IDENTITY.json`
 
 ## Identity
 
 | Field | Value |
 |-------|-------|
 | Display name | **History of Science** |
-| Preferred IG | **@historyofscience** |
-| Fallbacks | `@orbit.with.ben` · `@historyofscienceyt` |
-| Facebook Page | **History of Science** |
-| Bio | `Space stories. Big questions. Full films on YouTube ↓` |
+| Preferred IG | **@historyofscienceyt** |
+| Blocked | `@historyofscience` (Wellesley Science Center) · `@thehistoryofscience` |
+| Fallbacks | `@hoscienceyt` · `@historyofsciencefilms` |
+| Facebook Page | **History of Science** (new Meta Business portfolio) |
+| Bio | `instagram_bio.txt` |
 | Website | https://www.youtube.com/@HistoryOfScience |
-| Avatar | Same Orbit mascot (`TikTok/avatar_800x800.png`) |
+| Avatar | Explorer (`TikTok/avatar_800x800.png`) — not Orbit |
 
 ## Soft CTA rule
 

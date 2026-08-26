@@ -6,7 +6,8 @@ side character. Separate repo and channel from Orbit With Ben.
 
 **Vision (locked):** `00_Brand/Channel-Setup/CHANNEL_VISION.md`  
 **Character bible:** `01_Character/CHARACTER_BIBLE.md`  
-**Channel checklist:** `00_Brand/Channel-Setup/CHANNEL_READY.md` · `CHANNEL_META.json`
+**Channel checklist:** `00_Brand/Channel-Setup/CHANNEL_READY.md` · `CHANNEL_META.json`  
+**YouTube + socials launch:** `00_Brand/Channel-Setup/SOCIALS_LAUNCH.md` · `SOCIAL_IDENTITY.json`
 
 | Stack | Reuse |
 |---|---|
