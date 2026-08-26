@@ -105,12 +105,6 @@ PLATES = [
     ),
 ]
 
-NEGATIVE = (
-    "smiling germs, cute faces on bacteria, anthropomorphic germs, freeze frame, "
-    "slideshow, text, logos, watermark, dialogue, speech, twin Explorers"
-)
-
-
 def resolve_keys() -> None:
     for p in (
         REPO / "04_Audio" / "tools" / ".env",
@@ -127,12 +121,12 @@ def gen_i2v(client, model: str, still: Path, prompt: str, dest: Path) -> dict:
         return {"skipped": True, "bytes": dest.stat().st_size}
 
     img = types.Image.from_file(location=str(still))
+    # lite preview does not support negative_prompt (400 if set)
     config = types.GenerateVideosConfig(
         number_of_videos=1,
         duration_seconds=8,
         aspect_ratio="16:9",
         resolution="720p",
-        negative_prompt=NEGATIVE,
     )
     last_err: Exception | None = None
     for attempt in range(1, 4):
