@@ -26,7 +26,7 @@ You are inside the discovery of an invisible enemy. Hospitals smell of death. Do
 | 5 | Lister’s spray that cleaned the operating theatre | → long |
 | 6 | Your body is a city of tiny lives | → long |
 
-Zero affiliate on Shorts. Related → parent long once public.
+Zero affiliate on Shorts. **Studio Related / ▶ pill** → parent long once public (HeyHistorically pattern — `INSPIRATION_HEYHISTORICALLY.md`).
 
 ## End screen / cards
 

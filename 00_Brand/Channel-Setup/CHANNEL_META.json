@@ -14,6 +14,8 @@
   "visual_direction": "3d_cartoon_animistry_style",
   "runtime_minutes": "8-9",
   "inspiration_channel": "https://www.youtube.com/@ytAnimistry",
+  "inspiration_shorts_funnel": "https://www.youtube.com/@heyhistorically",
+  "inspiration_shorts_note": "Studio Related pill on every Short → parent long (see INSPIRATION_HEYHISTORICALLY.md)",
   "mascot": "explorer_side_character",
   "mascot_ref": "01_Character/01_Master-References/hos-explorer-character-sheet-v01.jpg",
   "vo_stack": "elevenlabs_ben_orbit_narrator",
