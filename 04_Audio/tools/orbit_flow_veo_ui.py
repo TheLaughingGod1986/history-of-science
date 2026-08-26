@@ -418,19 +418,226 @@ def read_selected_video_model(page) -> str | None:
           for (const b of document.querySelectorAll('button')) {
             const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
             if (/Veo 3|Omni Flash/.test(t) && /arrow_drop_down/.test(t)) {
-              return t.replace(/\\s*arrow_drop_down\\s*/i, '').trim();
+              return t.replace(/\\s*arrow_drop_down\\s*/i, '')
+                .replace(/^volume_up\\s*/i, '')
+                .trim();
             }
           }
+          // Closed pill may show "Video · 720p · 8s" — open state is authoritative.
           return null;
         }"""
     )
 
 
-def configure_veo_settings(page, *, model: str = DEFAULT_MODEL) -> None:
-    """Open agent Settings → Never confirm → Veo 3 model → 16:9 x1 → Save."""
+def _ensure_create_prompt_mode(page) -> None:
+    """Leave Agent-instructions mode so the Image/Video model pill is visible.
+
+    Aug 2026 Flow UI: Agent mode shows tune/Settings + Agent Instructions and
+    hides the Nano Banana / Video · settings pill used for Veo selection.
+    """
+    has_pill = page.evaluate(
+        """() => [...document.querySelectorAll('button')].some(b =>
+          /Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(b.innerText || ''))"""
+    )
+    if has_pill:
+        return
+    # Agent Instructions visible → toggle Agent off
+    if page.locator("button").filter(has_text="Agent Instructions").count():
+        clicked = page.evaluate(
+            """() => {
+              for (const b of document.querySelectorAll('button')) {
+                const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+                if (t === 'Agent' || /^Agent$/i.test(t)) { b.click(); return true; }
+              }
+              return false;
+            }"""
+        )
+        if clicked:
+            page.wait_for_timeout(900)
+    has_pill = page.evaluate(
+        """() => [...document.querySelectorAll('button')].some(b =>
+          /Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(b.innerText || ''))"""
+    )
+    if not has_pill:
+        raise RuntimeError(
+            "Flow Create model pill not found (still in Agent mode?). "
+            "Toggle Agent off so Image/Video settings appear."
+        )
+
+
+def _open_prompt_settings_pill(page) -> None:
+    """Click the prompt-bar settings pill (Nano Banana / Video · / Omni / Veo)."""
+    box = page.evaluate(
+        """() => {
+          for (const b of document.querySelectorAll('button')) {
+            const t = (b.innerText || '');
+            if (/Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(t)) {
+              const r = b.getBoundingClientRect();
+              if (r.width > 40 && r.height > 16)
+                return { x: r.x + r.width / 2, y: r.y + r.height / 2, t: t.trim().slice(0, 80) };
+            }
+          }
+          return null;
+        }"""
+    )
+    if not box:
+        raise RuntimeError("Flow prompt settings pill not found")
+    page.mouse.click(box["x"], box["y"])
+    page.wait_for_timeout(900)
+
+
+def _select_video_tab(page) -> None:
+    """Select the Video tab inside the prompt settings popover (not Image/Nano Banana)."""
+    tabs = page.evaluate(
+        """() => [...document.querySelectorAll('button[role=tab]')].map(b => {
+          const r = b.getBoundingClientRect();
+          return {
+            t: (b.innerText || '').trim(),
+            sel: b.getAttribute('aria-selected'),
+            x: r.x + r.width / 2,
+            y: r.y + r.height / 2,
+          };
+        }).filter(b => /Image|Video/i.test(b.t))"""
+    )
+    video = next((t for t in (tabs or []) if "Video" in t["t"]), None)
+    if not video:
+        # Popover may already be on video-only chrome (Omni/Veo dropdown visible)
+        if page.locator("button").filter(has_text="Omni Flash").count() or page.locator(
+            "button"
+        ).filter(has_text="Veo 3").count():
+            return
+        raise RuntimeError("Flow Image/Video tabs not found in settings popover")
+    if video.get("sel") != "true":
+        # JS click often fails to flip aria-selected — use mouse.
+        page.mouse.click(video["x"], video["y"])
+        page.wait_for_timeout(900)
+
+
+def _select_veo_from_dropdown(page, model: str) -> str:
+    """Open Omni/Veo dropdown and pick the requested Veo 3.x model."""
+    dd = page.locator("button").filter(has_text="arrow_drop_down")
+    # Prefer the video-model dropdown (Omni Flash / Veo 3.x)
+    model_dd = page.locator("button").filter(has_text="Omni Flash").filter(
+        has_text="arrow_drop_down"
+    )
+    if model_dd.count() == 0:
+        model_dd = page.locator("button").filter(has_text="Veo 3").filter(
+            has_text="arrow_drop_down"
+        )
+    if model_dd.count() == 0:
+        model_dd = dd
+    if model_dd.count() == 0:
+        raise RuntimeError("Flow video model dropdown not found")
+
+    current = (model_dd.last.inner_text() or "").replace("\n", " ")
+    if model not in current:
+        model_dd.last.click(timeout=5000, force=True)
+        page.wait_for_timeout(800)
+        item = page.get_by_role("menuitem", name=re.compile(re.escape(model), re.I))
+        if item.count() == 0:
+            item = page.locator(f'[role="menuitem"]:has-text("{model}")')
+        if item.count() == 0:
+            # Menuitem text may include a leading volume_up icon glyph
+            clicked = page.evaluate(
+                """(model) => {
+                  const needle = String(model || '').toLowerCase();
+                  for (const el of document.querySelectorAll('[role=menuitem],button')) {
+                    const t = (el.innerText || '').trim().replace(/\\n/g, ' ');
+                    if (t.length < 80 && t.toLowerCase().includes(needle)) {
+                      el.click();
+                      return t;
+                    }
+                  }
+                  return null;
+                }""",
+                model,
+            )
+            if not clicked:
+                raise RuntimeError(f"Veo 3 model menu item not found: {model}")
+        else:
+            item.first.click(timeout=5000, force=True)
+        page.wait_for_timeout(500)
+
+    selected = read_selected_video_model(page) or ""
+    if "Veo 3" not in selected:
+        selected = (model_dd.last.inner_text() or "").replace("\n", " ")
+        selected = re.sub(r"\s*arrow_drop_down\s*", " ", selected, flags=re.I).strip()
+        selected = re.sub(r"^volume_up\s*", "", selected, flags=re.I).strip()
+    if "Veo 3" not in selected:
+        raise RuntimeError(
+            f"Flow video model is still {selected!r} — must be Veo 3.x "
+            f"(not Omni Flash / Nano Banana)"
+        )
+    return selected
+
+
+def _set_video_aspect_and_outputs(page, *, frames_mode: bool = False) -> None:
+    """Prefer 16:9 and x1; optionally Frames (I2V) when start-frame attaches."""
+    page.evaluate(
+        """(framesMode) => {
+          if (framesMode) {
+            for (const b of document.querySelectorAll('button')) {
+              const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+              if (/crop_free|\\bFrames\\b/i.test(t) && t.length < 40) { b.click(); break; }
+            }
+          }
+          for (const b of document.querySelectorAll('button')) {
+            const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+            if ((/crop_16_9/.test(t) || /\\b16:9\\b/.test(t)) && t.length < 40) {
+              b.click(); break;
+            }
+          }
+          for (const b of document.querySelectorAll('button')) {
+            if ((b.innerText || '').trim() === 'x1') { b.click(); break; }
+          }
+        }""",
+        frames_mode,
+    )
+    page.wait_for_timeout(300)
+
+
+def configure_veo_settings(
+    page, *, model: str = DEFAULT_MODEL, frames_mode: bool = False
+) -> None:
+    """Lock Flow Create settings to Veo 3.x video · 16:9 · x1.
+
+    Aug 2026 UI: prompt-bar pill → Video tab → model dropdown (not the old
+    Agent tune panel). Falls back to legacy tune/Settings if needed.
+    """
     model = assert_veo3_model(model)
+    _ensure_create_prompt_mode(page)
+
+    # --- New prompt-bar popover path ---
+    try:
+        _open_prompt_settings_pill(page)
+        _select_video_tab(page)
+        selected = _select_veo_from_dropdown(page, model)
+        _set_video_aspect_and_outputs(page, frames_mode=frames_mode)
+        print(f"  video model locked: {selected}", flush=True)
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(500)
+        print("  settings closed via escape (prompt pill)", flush=True)
+        return
+    except Exception as e:
+        print(f"  prompt-pill settings path failed ({e}); trying legacy tune…", flush=True)
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        page.wait_for_timeout(400)
+
+    # --- Legacy Agent tune/Settings path ---
+    # Enter Agent mode if tune is only available there
+    if not visible_button(page, "tune") and not visible_button(page, "settings"):
+        page.evaluate(
+            """() => {
+              for (const b of document.querySelectorAll('button')) {
+                if ((b.innerText || '').trim() === 'Agent') { b.click(); return; }
+              }
+            }"""
+        )
+        page.wait_for_timeout(800)
     if not click_visible(page, "tune"):
-        # Fallback: Settings near prompt
         if not click_visible(page, "settings"):
             raise RuntimeError("Flow Settings (tune) button not found")
     page.wait_for_timeout(900)
@@ -469,33 +676,7 @@ def configure_veo_settings(page, *, model: str = DEFAULT_MODEL) -> None:
     )
     page.wait_for_timeout(200)
 
-    # Model dropdown (Omni Flash default → must switch to Veo 3.x)
-    model_btn = page.locator(
-        'button:has-text("Omni Flash"), button:has-text("Veo 3")'
-    )
-    if model_btn.count() == 0:
-        raise RuntimeError("Flow video model dropdown not found")
-    current = (model_btn.last.inner_text() or "").replace("\n", " ")
-    if model not in current:
-        model_btn.last.click(timeout=5000)
-        page.wait_for_timeout(700)
-        item = page.get_by_role("menuitem", name=model)
-        if item.count() == 0:
-            item = page.locator(f'[role="menuitem"]:has-text("{model}")')
-        if item.count() == 0:
-            raise RuntimeError(f"Veo 3 model menu item not found: {model}")
-        item.first.click(timeout=5000)
-        page.wait_for_timeout(300)
-
-    selected = read_selected_video_model(page) or ""
-    if "Veo 3" not in selected:
-        # Dropdown may still show truncated text — re-read button
-        selected = (model_btn.last.inner_text() or "").replace("\n", " ")
-    if "Veo 3" not in selected:
-        raise RuntimeError(
-            f"Flow video model is still {selected!r} — must be Veo 3.x "
-            f"(not Omni Flash / Nano Banana)"
-        )
+    selected = _select_veo_from_dropdown(page, model)
     print(f"  video model locked: {selected}", flush=True)
 
     # JS click — Playwright click() can hang forever if the Save control is obscured.
@@ -515,9 +696,16 @@ def configure_veo_settings(page, *, model: str = DEFAULT_MODEL) -> None:
         }""",
     )
     if not saved:
-        raise RuntimeError("Flow Settings Save/Back not found")
+        page.keyboard.press("Escape")
+        saved = "escape"
     print(f"  settings closed via {saved}", flush=True)
     settle_after_nav(page, wait_ms=900)
+
+    # Legacy path may leave us in Agent mode — return to Create pill mode
+    try:
+        _ensure_create_prompt_mode(page)
+    except Exception:
+        pass
 
     box = editor_box(page)
     if not box or box["w"] < 50:
@@ -1261,7 +1449,10 @@ def _generate_clip_once(
     model = assert_veo3_model(model)
     ensure_agent_session(page)
     before = collect_media_ids(page)
-    configure_veo_settings(page, model=model)
+    # Start-frame I2V: prefer Frames mode in the Video settings popover.
+    configure_veo_settings(
+        page, model=model, frames_mode=(start_frame is not None)
+    )
     print("  post-settings…", flush=True)
     settle_after_nav(page, wait_ms=600)
     ensure_agent_session(page)
