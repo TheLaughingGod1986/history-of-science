@@ -116,16 +116,6 @@ PLATES = [
         ),
     },
     {
-        "id": "04_explorer_doorway_peek",
-        "explorer": True,
-        "prompt": (
-            f"{STYLE} {EXPLORER_LOCK} Medium shot: the Explorer peeks from a hospital "
-            "doorway into the ward, cream-curious eyes wide behind gold glasses, then "
-            "quietly slips back so the ward remains the hero. Single character only. "
-            "Continuous motion."
-        ),
-    },
-    {
         "id": "05_doctor_hands_instruments",
         "explorer": False,
         "prompt": (
@@ -180,6 +170,18 @@ PLATES = [
             "air. No people. Continuous slow pull-back as if asking what comes next."
         ),
     },
+    # Explorer last — image+video burns more quota; skip-ok if exhausted.
+    {
+        "id": "04_explorer_doorway_peek",
+        "explorer": True,
+        "optional": True,
+        "prompt": (
+            f"{STYLE} {EXPLORER_LOCK} Medium shot: the Explorer peeks from a hospital "
+            "doorway into the ward, cream-curious eyes wide behind gold glasses, then "
+            "quietly slips back so the ward remains the hero. Single character only. "
+            "Continuous motion."
+        ),
+    },
 ]
 
 
@@ -192,7 +194,12 @@ def resolve_keys() -> None:
         load_dotenv(p)
 
 
-def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 4) -> dict:
+def _is_quota(err: Exception) -> bool:
+    s = str(err)
+    return "429" in s or "RESOURCE_EXHAUSTED" in s or "quota" in s.lower()
+
+
+def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 6) -> dict:
     from google.genai import types
 
     if already_done(dest):
@@ -245,7 +252,10 @@ def gen_plate(client, plate: dict, dest: Path, model: str, *, retries: int = 4) 
         except Exception as e:
             last_err = e
             print(f"  FAIL {plate['id']} attempt={attempt}: {e}", flush=True)
-            time.sleep(20 * attempt)
+            # Quota: wait much longer before retry (Developer API rate limits).
+            sleep_s = (90 * attempt) if _is_quota(e) else (20 * attempt)
+            print(f"  backoff {sleep_s}s…", flush=True)
+            time.sleep(sleep_s)
     raise RuntimeError(f"{plate['id']} failed after {retries} attempts: {last_err}")
 
 
@@ -354,9 +364,21 @@ def main() -> None:
 
     for plate in PLATES:
         dest = RAW / f"{plate['id']}_v01.mp4"
-        info = gen_plate(client, plate, dest, model)
-        meta["plates"].append({"id": plate["id"], **info, "path": str(dest)})
-        paths.append(dest)
+        try:
+            info = gen_plate(client, plate, dest, model)
+            meta["plates"].append({"id": plate["id"], **info, "path": str(dest)})
+            paths.append(dest)
+        except Exception as e:
+            if plate.get("optional"):
+                print(f"  OPTIONAL SKIP {plate['id']}: {e}", flush=True)
+                meta["plates"].append(
+                    {"id": plate["id"], "skipped_optional": True, "error": str(e)}
+                )
+                continue
+            raise
+
+    if len(paths) < 2:
+        raise SystemExit(f"Need ≥2 plates to assemble; only have {len(paths)}")
 
     assemble(paths, vo)
     meta["out"] = str(OUT)
