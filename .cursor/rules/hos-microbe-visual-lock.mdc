@@ -1,17 +1,17 @@
 ---
-description: HOS microbes — wondrous but not cute/smiling (locked)
+description: HOS microbes — faceless deadly; sparse; never cute (locked)
 alwaysApply: true
 ---
 
 # History of Science — microbe / germ picture lock
 
-Ben UAT (26 Aug 2026) on Germs Part 01: smiling / winking cartoon germs are **wrong**. Germs are the invisible enemy — not mascots.
+Ben PASS on Part 01 v08 (26 Aug 2026): germs are the invisible enemy — not mascots.
 
 ## Steal
 
-- Stylised 3D **rods, spheres, spirals** — educational visualisation
+- Stylised 3D **rods, spiked spheres, spirals** — educational visualisation
 - Soft glow OK · wondrous scale · slightly ominous presence
-- Drift / swarm / hitchhike on cloth, breath, hands
+- Drift / hitchhike on cloth, breath, hands, instruments when VO names them
 
 ## Hard reject
 
@@ -19,11 +19,11 @@ Ben UAT (26 Aug 2026) on Germs Part 01: smiling / winking cartoon germs are **wr
 - “Friendly” pastel mascot germs
 - Horror gore / blood / jump-scare monsters (wonder brand still)
 
-Reject proof: `00_Brand/Channel-Setup/inspiration/REJECT_smiling_germs_part01_example.png`
+Reject proof: `00_Brand/Channel-Setup/inspiration/REJECT_smiling_germs_part01_example.png`  
+Faceless asset kit (Part 01): `04_Generated-Clips/part01/refs/v08_micro_assets/`
 
-## Density (Ben 26 Aug 2026 — refined after v01 style freeze)
+## Density + motion (channel-wide)
 
-- Keep the **v01 cartoon world** (do not redesign into a different ward look).
-- Avoid **repetitive germ-float scenes** — most of Part 01 should be ward / Explorer / hands without a swarm.
-- Germs appear **late and sparse** (handful only), faceless/deadly — especially the closing hold.
-- Never smiling / winking / cute-faced germs.
+- Avoid **repetitive germ-float scenes** — most beats are the human / discovery world.
+- Germs **sparse** when shown; faceless/deadly.
+- Microbe shots must still be **animated** (drift + camera) — never a frozen still hold of a swarm.

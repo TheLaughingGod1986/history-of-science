@@ -1,0 +1,59 @@
+{
+  "part": 2,
+  "title": "Seeing the Tiny World",
+  "style_lock": "hos_001_part01_rough_v08",
+  "clip_use_s": 8.0,
+  "xfade_s": 0.4,
+  "plates": [
+    {
+      "id": "01_chapter_lab_scope",
+      "explorer": false,
+      "prompt": "Premium 3D cartoon Victorian science study. Brass microscope on polished wood desk, warm lamp, leather books, soft dust motes. Slow push toward the microscope. Silent. No text. No modern equipment. No germs yet."
+    },
+    {
+      "id": "02_lens_flare_eye",
+      "explorer": false,
+      "prompt": "Premium 3D cartoon close on brass microscope eyepiece. Warm light flares through the lens, subtle spectrum colours. Continuous gentle camera drift. Silent. No text. No faces on any particles."
+    },
+    {
+      "id": "03_drop_of_water",
+      "explorer": false,
+      "prompt": "Premium 3D cartoon glass slide with a glowing bead of pond water. Soft refraction, warm lab light. Slow orbit around the drop. Silent. No cute characters."
+    },
+    {
+      "id": "04_plunge_into_drop",
+      "explorer": false,
+      "prompt": "Premium 3D cartoon camera plunges into a water drop — continuous dive from clear surface into a luminous microscopic world. Silent. Faceless translucent rods and spheres begin to appear deep inside — NO eyes NO smiles."
+    },
+    {
+      "id": "05_microbial_city",
+      "explorer": false,
+      "prompt": "Premium 3D cartoon microbial city inside a water drop: faceless teal rods, amber spirals, spiked spheres drifting and tumbling. Wondrous educational visualisation, slightly ominous. Continuous motion. NO faces NO smiles NO winks. Silent."
+    },
+    {
+      "id": "06_explorer_eyepiece",
+      "explorer": true,
+      "prompt": "Premium 3D cartoon: the Explorer boy in teal coat and gold glasses leans into a brass microscope eyepiece, eyes widen in surprise, then startles back a step. Single Explorer only. Continuous acting motion. Attach identity. Silent. No Orbit robot."
+    },
+    {
+      "id": "07_tiny_world_hold",
+      "explorer": false,
+      "prompt": "Premium 3D cartoon living drop galaxy — sparse-to-rich faceless microbes swirling in luminous water. Continuous gentle camera drift. NO cute faces. Silent."
+    },
+    {
+      "id": "08_ward_vs_lens",
+      "explorer": false,
+      "prompt": "Premium 3D cartoon soft split: left warm Victorian ward corridor (no germ swarm), right glowing microscope light. Gentle parallax. Silent. Period only — no modern hospital."
+    },
+    {
+      "id": "09_faceless_swarm_detail",
+      "explorer": false,
+      "prompt": "Premium 3D cartoon extreme close on a few faceless glassy bacteria tumbling slowly — rods and spiked spheres only. Deadly educational look. Continuous tumble. NO eyes NO mouths NO smiles. Silent."
+    },
+    {
+      "id": "10_pullback_to_lab",
+      "explorer": false,
+      "prompt": "Premium 3D cartoon pull back from the microscopic glow to the Victorian study and brass microscope. Continuous camera pull the whole clip — never freeze. Soft lamp flicker. Silent."
+    }
+  ]
+}

@@ -1,31 +1,33 @@
-# History of Science — picture style freeze (Ben 26 Aug 2026)
+# History of Science — picture style lock (Ben PASS 26 Aug 2026)
 
-## Locked baseline
+## Locked Part 01 cut
 
-**Canonical Part 01 look = `hos_001_part01_rough_v01.mp4`**
+**PASS / house look:** `hos_001_part01_rough_v08.mp4`  
+Artifact: `/opt/cursor/artifacts/hos_001_part01_rough_v08.mp4`
 
-(Artifact: `/opt/cursor/artifacts/hos_001_part01_BASELINE_v01_smiling_germs_only.mp4`)
+World DNA still comes from the v01 cartoon bible (`hos_001_part01_rough_v01.mp4`) — Animistry-class **3D stylised cartoon**, Victorian / period science, Explorer garnish.
 
-Animistry-class **3D stylised cartoon** · Victorian / period science worlds · Explorer mascot · warm cinematic light.
+## What Ben locked on v08
 
-## The ONLY approved change from v01
+1. **Style** — Premium 3D cartoon (feature polish). Warm cinematic light. Period worlds.
+2. **Germs** — Faceless deadly pathogens only (rods / spiked spheres / spirals). **No eyes, smiles, winks, cute mascots.**
+3. **Density** — Do **not** pad with repetitive germ-float scenes. Most beats = story world (ward, hands, Explorer, props). Germs late / sparse when the VO needs them.
+4. **Motion** — Continuous real animation through the whole minute. **No still-zoom / still-bridge endings.** If Veo quota dies, use a real motion bed + drifting faceless overlays (`_fix_v08_end_motion.py`) — never freeze the close.
+5. **Explorer** — Side character only (doorway peek / sparse garnish). Story first.
+6. **Rejects** — Photoreal / live-action drift · modern hospital mid-period · style jumps mid-minute · smiling germs · Orbit orange robot
 
-- **Stop smiling / winking / cute-faced germs.**
-- Germs = invisible enemy — faceless rods / spheres / spirals only.
-- See `.cursor/rules/hos-microbe-visual-lock.mdc` · reject proof `inspiration/REJECT_smiling_germs_part01_example.png`
+## Apply to every later part (02+)
 
-## Do NOT
+Match v08 next to Part 01 without a style jump. Same cartoon materials, same period honesty, same microbe rules, same motion bar.
 
-- Redesign the episode “to fix germs”
-- Drift into **photoreal / live-action** documentary CGI (v07 fail)
-- Jump eras mid-minute into a **modern hospital** (v05 fail)
-- Mix multiple unrelated animation styles in one part
-- Rebuild ward-first / stillbridge / morph pipelines that abandon the v01 world
+## Superseded for style (history only)
 
-## Regen rule
+`rough_v03` … `rough_v07` — over-corrections. Do not UAT as house look.
 
-Keep every non-germ plate from the v01 family. Replace **only** microbe beats with faceless versions that **match v01 cartoon style** (same lighting, materials, period ward). If a new plate does not sit next to v01_t2 / Explorer without a style jump — **reject and regen**.
+## Cursor rules
 
-## Superseded for style (do not UAT as house look)
-
-`rough_v03` … `rough_v07` — over-corrections. Keep files for history; do not treat as canonical.
+- `.cursor/rules/hos-part01-style-baseline.mdc` (channel picture freeze)
+- `.cursor/rules/hos-microbe-visual-lock.mdc`
+- `.cursor/rules/hos-animistry-inspiration.mdc`
+- `.cursor/rules/hos-explorer-character.mdc`
+- `.cursor/rules/hos-flow-veo-primary.mdc`

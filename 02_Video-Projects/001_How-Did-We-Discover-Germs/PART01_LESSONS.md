@@ -1,61 +1,43 @@
-# Part 01 lessons — Germs
+# Part 01 lessons — Germs (LOCKED PASS)
 
-**Date:** 2026-08-26 (updated after Ben style UAT)
+**Date:** 2026-08-26  
+**Status:** **PASS** — Ben locked style on `hos_001_part01_rough_v08.mp4`
 
-## Style freeze (Ben — hard)
+## Locked look
 
-**Canonical look = `hos_001_part01_rough_v01.mp4`.**
+Animistry-class 3D cartoon · Victorian ward · Explorer garnish · faceless germs · continuous motion through the close.
 
-That cut is the Animistry-class 3D cartoon world we want (period ward, Explorer, feature-animation polish).
-
-**The only thing wrong on that cut:** smiling / winking / cute-faced germs.
-
-**Do not redesign.** Do not chase ward-first rewrites, photoreal Flow, or modern-hospital inserts that abandon v01.
-
-Locks:
+Canonical docs:
 - `00_Brand/Channel-Setup/HOS_PART01_STYLE_BASELINE_LOCKED.md`
 - `.cursor/rules/hos-part01-style-baseline.mdc`
 - `.cursor/rules/hos-microbe-visual-lock.mdc`
-- Reject proof: `00_Brand/Channel-Setup/inspiration/REJECT_smiling_germs_part01_example.png`
 
-Artifact alias: `/opt/cursor/artifacts/hos_001_part01_BASELINE_v01_smiling_germs_only.mp4`
+Artifact: `/opt/cursor/artifacts/hos_001_part01_rough_v08.mp4`
 
-## What went wrong (over-correction)
+## What Ben approved (v08)
 
-| Cut | What happened |
+| Rule | Detail |
 |---|---|
-| v01 | **KEEP as style baseline** — only germs smile |
-| v02–v03 | Faceless-germ attempts / stillbridges — style already wobbling |
-| v04–v06 | Ward-first redesign + morph polish — mixed looks |
-| v05 mid/end | **Modern hospital** + style jumps — REJECT |
-| v07 Flow | Photoreal / live-action drift — REJECT |
+| Style | Keep the v01 cartoon world (not v03–v07 redesigns) |
+| Germs | Faceless only — no smiles / winks |
+| Density | Fewer germ-float scenes; story world leads |
+| Motion | Last stretch must stay animated (not still-zoom) |
 
-Ben’s screenshots on the later cut: first seconds OK; later beats “completely different,” including modern day. That is not the channel.
+## What failed (do not repeat)
 
-## Next build (minimal)
+| Cut | Fail |
+|---|---|
+| v01 | Smiling germs (style otherwise good) |
+| v03–v06 | Ward-first / stillbridge / modern hospital |
+| v07 | Photoreal Flow drift |
+| early v08 end | Still-zoom after ~1:10 — fixed with motion beds + drifting faceless overlays |
 
-1. UAT **v01** as the picture bible (not v05/v07).
-2. Build **v08** = v01 plates kept + **only microbe beats** replaced with faceless germs in the **same cartoon style**.
-3. No modern hospital. No photoreal. No full-minute rewrite.
-4. Stop and show Ben after germ plates land — before any Part 02.
+## Build helpers to copy forward
 
-## Microbe plate IDs in original v01 meta
+- Faceless micro assets: `04_Generated-Clips/part01/refs/v08_micro_assets/`
+- End-motion repair: `07_Edit-Project/_fix_v08_end_motion.py`
+- Part builder pattern: `07_Edit-Project/_build_part01_v08_faceless.py`
 
-- `01_microbes_ward_air` (raw missing on disk — cut from master or regen)
-- `07_microbe_cloud_close` (raw missing — cut from master or regen)
-- Related: any other plate where smiles appear in the assembled v01
+## Next
 
-Keep on disk from v01 family: `03_curtains_beds`, `04_explorer_doorway_peek`, `05_doctor_hands_instruments`, `06_fever_soft_consequence`, `09_hands_to_next_patient`, `10_ward_atmosphere_hold` (verify against master).
-
-## v08 build notes (Ben UAT follow-up)
-
-Ben: style of v01 is really good; too many germ-float scenes; last ~5s still smiling.
-
-v08 deltas only:
-1. Drop dense open swarm + macro cloud float beats (reduce repetition)
-2. Story plates = germ-free edits of v01 frames (same cartoon world)
-3. Only late sparse + end hold use composited FACELESS microbe assets (no eyes/smiles)
-4. Builder: `07_Edit-Project/_build_part01_v08_faceless.py`
-
-Do not ship until Ben UAT on `hos_001_part01_rough_v08.mp4`.
-
+**Part 02 — Seeing the Tiny World** (microscope / microbial city). Match this lock. Stop for Ben UAT after Part 02 rough.
