@@ -25,7 +25,7 @@ Must match Part 01 **v08 PASS**. Faceless microbes only. Sparse germs.
 | Plate | Status |
 |---|---|
 | 05_microbial_city | **DONE** Flow Veo 3.1 Fast → `raw/v01_flow/05_microbial_city_v01.mp4` (~3.8MB, real motion) |
-| 01–04, 06–10 | **BLOCKED** — Flow daily generation limit (2026-08-26 evening); Gemini Veo API 429 |
+| 01–04, 06–10 | **BLOCKED** — re-probe 27 Aug AM: Flow still daily-capped; Gemini API prepaid **depleted** |
 
 ## Flow workflow that works (locked)
 
