@@ -1252,10 +1252,51 @@ def set_prompt(page, prompt: str) -> None:
         raise RuntimeError("Flow prompt editor still empty after paste/type")
 
 
+def _flow_info_tooltip(page) -> str:
+    """Hover the orange info chip next to Create and return tooltip / title."""
+    try:
+        tip = page.evaluate(
+            """() => {
+              const btns = [...document.querySelectorAll('button,[role="button"],[aria-label]')];
+              for (const b of btns) {
+                const t = (b.innerText || b.getAttribute('aria-label') || '')
+                  .trim().replace(/\\n/g, ' ');
+                if (/^info$|priority_high|error/i.test(t) && t.length < 40) {
+                  const r = b.getBoundingClientRect();
+                  if (r.y > 500) {
+                    return {
+                      t,
+                      title: b.getAttribute('title') || b.getAttribute('aria-label') || '',
+                      x: r.x + r.width / 2,
+                      y: r.y + r.height / 2,
+                    };
+                  }
+                }
+              }
+              return null;
+            }"""
+        )
+        if not tip:
+            return ""
+        page.mouse.move(tip["x"], tip["y"])
+        page.wait_for_timeout(600)
+        extra = page.evaluate(
+            """() => {
+              const els = [...document.querySelectorAll(
+                '[role="tooltip"],[data-state="open"],div[class*="tooltip"]'
+              )];
+              return els.map(e => (e.innerText || '').trim()).filter(Boolean).join(' | ');
+            }"""
+        )
+        return " | ".join(x for x in (tip.get("t"), tip.get("title"), extra) if x)
+    except Exception as e:
+        return f"tooltip-err {e}"
+
+
 def submit_create(page) -> None:
     """Click the prompt-bar Create (arrow_forward), waiting until it enables."""
     # Clear leftover asset-picker / error overlays that steal the Create control
-    for _ in range(4):
+    for _ in range(6):
         body = ""
         try:
             body = page.locator("body").inner_text(timeout=1500)[:2500]
@@ -1263,7 +1304,13 @@ def submit_create(page) -> None:
             pass
         if any(
             s in body
-            for s in ("Asset Search", "Search assets", "Upload media", "Add to Prompt")
+            for s in (
+                "Asset Search",
+                "Search assets",
+                "Upload media",
+                "Add to Prompt",
+                "No results found",
+            )
         ):
             page.keyboard.press("Escape")
             page.wait_for_timeout(400)
@@ -1277,7 +1324,11 @@ def submit_create(page) -> None:
               for (const b of document.querySelectorAll('button')) {
                 const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
                 // Prefer real Create — never the error/cancel chip control
-                if (!/arrow_forward/i.test(t)) continue;
+                const isCreate =
+                  /arrow_forward/i.test(t) ||
+                  /^(add_2\\s*)?Create$/i.test(t) ||
+                  /add_2 Create/i.test(t);
+                if (!isCreate) continue;
                 if (/error|cancel/i.test(t)) continue;
                 const disabled =
                   b.disabled || b.getAttribute('aria-disabled') === 'true';
@@ -1301,17 +1352,18 @@ def submit_create(page) -> None:
             }"""
         )
         if state and state.get("blocked"):
+            tip = _flow_info_tooltip(page)
             raise RuntimeError(
-                f"Flow Create blocked ({state['blocked']!r}) — often Quality "
-                f"credits exhausted; try Veo 3.1 - Fast (0 credits on Ultra) + x1"
+                f"Flow Create blocked ({state['blocked']!r} tooltip={tip!r})"
             )
         if state and not state.get("disabled"):
             clicked = page.evaluate(
                 """() => {
                   for (const b of document.querySelectorAll('button')) {
                     const t = (b.innerText || '').trim();
-                    if (/arrow_forward/i.test(t) &&
-                        !/error|cancel/i.test(t) &&
+                    if ((/arrow_forward/i.test(t) || /Create/i.test(t)) &&
+                        !/error|cancel|new project/i.test(t) &&
+                        t.length < 40 &&
                         !b.disabled &&
                         b.getAttribute('aria-disabled') !== 'true') {
                       b.click();
@@ -1329,10 +1381,32 @@ def submit_create(page) -> None:
             return
         page.wait_for_timeout(500)
 
+    add_create = page.evaluate(
+        """() => {
+          const btns = [...document.querySelectorAll('button')];
+          for (const b of btns.reverse()) {
+            const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+            if (/^(add_2\\s*)?Create$/i.test(t) || /add_2 Create/i.test(t)) {
+              if (b.disabled || b.getAttribute('aria-disabled') === 'true') continue;
+              b.click();
+              return t.slice(0, 40);
+            }
+          }
+          return null;
+        }"""
+    )
+    if add_create:
+        print(f"  clicked prompt Create ({add_create!r})", flush=True)
+        page.wait_for_timeout(800)
+        return
     creates = page.locator('button:has-text("Create")')
     if creates.count() == 0:
-        raise RuntimeError("Flow Create / arrow_forward not found or never enabled")
+        tip = _flow_info_tooltip(page)
+        raise RuntimeError(
+            f"Flow Create / arrow_forward not found or never enabled tooltip={tip!r}"
+        )
     creates.last.click(timeout=8000, force=True)
+    print("  clicked fallback Create", flush=True)
 
 
 def dismiss_soft_prompts(page) -> None:
@@ -1688,12 +1762,29 @@ def wait_and_download(
             and elapsed > 20
             and int(elapsed) % 30 < 5
         ):
-            snippet = (body or "").replace("\n", " | ")[:900]
-            print(f"  PAGE_SNIPPET gen=False: {snippet}", flush=True)
+            snippet = (body or "").replace("\n", " | ")
+            print(f"  PAGE_SNIPPET gen=False head: {snippet[:700]}", flush=True)
+            print(f"  PAGE_SNIPPET gen=False tail: {snippet[-900:]}", flush=True)
+            try:
+                btns = page.evaluate(
+                    """() => [...document.querySelectorAll('button,[role="button"]')]
+                      .map(b => (b.innerText || b.getAttribute('aria-label') || '')
+                        .trim().replace(/\\n/g,' ')).filter(t => t).slice(0, 80)"""
+                )
+                print(f"  PAGE_BUTTONS: {btns}", flush=True)
+            except Exception as e:
+                print(f"  PAGE_BUTTONS err: {e}", flush=True)
+            try:
+                shot = dest.with_name(dest.stem + "_flow_stall.png")
+                page.screenshot(path=str(shot), full_page=False)
+                print(f"  stall screenshot {shot}", flush=True)
+            except Exception as e:
+                print(f"  screenshot skipped: {e}", flush=True)
             try:
                 confirm_generation_spend(page, timeout_s=4.0)
+                submit_create(page)
             except Exception as e:
-                print(f"  reconfirm spend skipped: {e}", flush=True)
+                print(f"  reconfirm/resubmit skipped: {e}", flush=True)
 
         # Agent queued due to demand — ask for status once after ~90s
         if (
