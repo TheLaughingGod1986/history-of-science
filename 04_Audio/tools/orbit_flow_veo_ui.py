@@ -1682,6 +1682,19 @@ def wait_and_download(
         else:
             failed_since = None
 
+        # If Create never entered generating, re-confirm spend and dump page text.
+        if (
+            not seen_generating
+            and elapsed > 20
+            and int(elapsed) % 30 < 5
+        ):
+            snippet = (body or "").replace("\n", " | ")[:900]
+            print(f"  PAGE_SNIPPET gen=False: {snippet}", flush=True)
+            try:
+                confirm_generation_spend(page, timeout_s=4.0)
+            except Exception as e:
+                print(f"  reconfirm spend skipped: {e}", flush=True)
+
         # Agent queued due to demand — ask for status once after ~90s
         if (
             not asked_status
