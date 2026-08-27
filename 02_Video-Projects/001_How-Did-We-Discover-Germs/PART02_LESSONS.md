@@ -24,16 +24,19 @@ Must match Part 01 **v08 PASS**. Faceless microbes only. Sparse germs.
 
 | Plate | Status |
 |---|---|
-| 05_microbial_city | **DONE** Flow Veo 3.1 Fast → `raw/v01_flow/05_microbial_city_v01.mp4` (~3.8MB, real motion) |
-| 01–04, 06–10 | **BLOCKED** — re-probe 27 Aug AM: Flow still daily-capped; Gemini API prepaid **depleted** |
+| 01_chapter_lab_scope | **DONE** Flow Veo 3.1 **Lite** (27 Aug PM) |
+| 05_microbial_city | **DONE** Flow Veo 3.1 Fast |
+| 02–04, 06–10 | **BLOCKED** — daily gen limit again after plate 01 Lite |
+
+Prefer **Lite (5 credits)** for remaining plates when daily gens reopen.
 
 ## Flow workflow that works (locked)
 
 1. Upload start still → right-click **Animate**
-2. Model **Veo 3.1 - Fast** (not Omni Flash) · 16:9 · x1
+2. Model **Veo 3.1 - Lite** (5 credits Ultra; Fast OK if needed) · 16:9 · x1 — never Omni Flash / Nano Banana
 3. Prompt + Create → **approve credit confirmation**
 4. Wait ~2 min → download mp4 from player
-5. Playwright helper updated: `try_context_animate` + `confirm_generation_spend` in `orbit_flow_veo_ui.py`
+5. Playwright helper: `try_context_animate` + `confirm_generation_spend` in `orbit_flow_veo_ui.py`
 
 ## Do not
 
@@ -43,4 +46,4 @@ Must match Part 01 **v08 PASS**. Faceless microbes only. Sparse germs.
 
 ## Next
 
-When Flow daily limit resets (or Gemini Veo API quota recovers): run `_build_part02_flow_v01.py` for remaining 9 plates → assemble `hos_001_part02_rough_v01.mp4` → Ben UAT.
+When Flow daily gens reopen: finish **8** remaining plates on **Lite** (~40 credits) → assemble `hos_001_part02_rough_v01.mp4` → Ben UAT.
