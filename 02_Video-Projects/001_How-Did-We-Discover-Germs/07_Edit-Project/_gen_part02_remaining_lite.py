@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+"""Generate remaining Part 02 plates via Flow Veo 3.1 Lite. Skip existing."""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
+import orbit_flow_veo_ui as flow  # noqa: E402
+from orbit_gemini_veo import already_done, strip_audio  # noqa: E402
+from playwright.sync_api import sync_playwright
+
+PROJ = Path(__file__).resolve().parents[1]
+PLATES = json.loads((PROJ / "07_Edit-Project" / "parts" / "part-02_plates_v01.json").read_text())["plates"]
+REFS = PROJ / "04_Generated-Clips" / "part02" / "refs"
+RAW = PROJ / "04_Generated-Clips" / "part02" / "raw" / "v01_flow"
+FACELESS = (
+    "Keep microbes FACELESS if present: rods/spheres/spirals only. "
+    "NO eyes NO mouths NO smiles. Continuous motion whole clip — never freeze. "
+    "Premium 3D cartoon matching start frame. Silent. NOT photoreal. NOT modern hospital."
+)
+MODEL = "Veo 3.1 - Lite"
+LIMIT_RE = re.compile(
+    r"generation limit|daily gen|you've reached|reached your (daily )?limit|"
+    r"quota|try again tomorrow|limit for today",
+    re.I,
+)
+
+
+def page_limit_text(page) -> str:
+    try:
+        return (page.inner_text("body", timeout=4000) or "")[:4000]
+    except Exception:
+        return ""
+
+
+def is_daily_limit(err: BaseException, page) -> str | None:
+    blob = f"{err}\n{page_limit_text(page)}"
+    if LIMIT_RE.search(blob):
+        m = LIMIT_RE.search(blob)
+        # Prefer a tight window around the match.
+        i = blob.lower().find(m.group(0).lower())
+        snippet = blob[max(0, i - 80) : i + 240].replace("\n", " ")
+        return snippet.strip()
+    return None
+
+
+def main() -> None:
+    RAW.mkdir(parents=True, exist_ok=True)
+    for junk in RAW.glob("*.nosound.mp4"):
+        if junk.stat().st_size < 400_000:
+            junk.unlink(missing_ok=True)
+    profile = flow.profile_path(Path.home() / ".playwright-hos-flow-profile")
+    print(f"profile={profile} model={MODEL}", flush=True)
+    with sync_playwright() as p:
+        ctx, page = flow.launch_context(p, headed=False, profile=profile)
+        try:
+            for i, plate in enumerate(PLATES, 1):
+                still = REFS / f"{plate['id']}_v01.jpg"
+                dest = RAW / f"{plate['id']}_v01.mp4"
+                if not still.exists():
+                    raise SystemExit(f"missing still {still}")
+                if already_done(dest, min_bytes=400_000):
+                    print(f"  skip {dest.name} ({dest.stat().st_size})", flush=True)
+                    continue
+                prompt = f"{plate['prompt']} {FACELESS}"
+                print(f"\n=== Lite I2V {plate['id']} ({i}/{len(PLATES)}) ===", flush=True)
+                try:
+                    info = flow.generate_clip(
+                        page,
+                        prompt,
+                        dest,
+                        model=MODEL,
+                        start_frame=still,
+                        timeout_s=420,
+                        reuse_project=False,
+                        scenery_only=not plate.get("explorer", False),
+                        attempts=2,
+                    )
+                except Exception as e:
+                    limit = is_daily_limit(e, page)
+                    if limit:
+                        print("DAILY_GEN_LIMIT — stop. Exact error / page snippet:", flush=True)
+                        print(limit, flush=True)
+                        print(f"FAILED_AT {plate['id']}: {e}", flush=True)
+                        raise SystemExit(2)
+                    raise
+                strip_audio(dest)
+                print(f"  OK {dest.name} {dest.stat().st_size} {info.get('seconds')}s", flush=True)
+        finally:
+            ctx.close()
+    print("DONE remaining Lite plates", flush=True)
+
+
+if __name__ == "__main__":
+    main()
+
+
+if __name__ == "__main__":
+    main()
