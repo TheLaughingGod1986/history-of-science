@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -50,16 +51,19 @@ def is_daily_limit(err: BaseException, page) -> str | None:
 
 
 def main() -> None:
+    only = {x.strip() for x in os.environ.get("HOS_PLATE_ONLY", "10_pullback_to_lab").split(",") if x.strip()}
     RAW.mkdir(parents=True, exist_ok=True)
     for junk in RAW.glob("*.nosound.mp4"):
         if junk.stat().st_size < 400_000:
             junk.unlink(missing_ok=True)
     profile = flow.profile_path(Path.home() / ".playwright-hos-flow-profile")
-    print(f"profile={profile} model={MODEL}", flush=True)
+    print(f"profile={profile} model={MODEL} only={sorted(only)}", flush=True)
     with sync_playwright() as p:
         ctx, page = flow.launch_context(p, headed=False, profile=profile)
         try:
             for i, plate in enumerate(PLATES, 1):
+                if only and plate["id"] not in only:
+                    continue
                 still = REFS / f"{plate['id']}_v01.jpg"
                 dest = RAW / f"{plate['id']}_v01.mp4"
                 if not still.exists():
@@ -82,11 +86,20 @@ def main() -> None:
                         attempts=2,
                     )
                 except Exception as e:
+                    dump = Path("/tmp/hos_part02_plate10_flow_dump.txt")
+                    body = page_limit_text(page)
+                    dump.write_text(f"{e}\n\n--- body ---\n{body}\n", encoding="utf-8")
+                    try:
+                        page.screenshot(path="/tmp/hos_part02_plate10_flow.png", full_page=True)
+                    except Exception:
+                        pass
+                    print(f"FAILED_AT {plate['id']}: {e}", flush=True)
+                    print("--- UI body (truncated) ---", flush=True)
+                    print(body[:2500], flush=True)
                     limit = is_daily_limit(e, page)
                     if limit:
                         print("DAILY_GEN_LIMIT — stop. Exact error / page snippet:", flush=True)
                         print(limit, flush=True)
-                        print(f"FAILED_AT {plate['id']}: {e}", flush=True)
                         raise SystemExit(2)
                     raise
                 strip_audio(dest)
@@ -94,10 +107,6 @@ def main() -> None:
         finally:
             ctx.close()
     print("DONE remaining Lite plates", flush=True)
-
-
-if __name__ == "__main__":
-    main()
 
 
 if __name__ == "__main__":

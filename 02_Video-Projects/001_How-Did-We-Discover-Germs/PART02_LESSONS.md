@@ -37,15 +37,15 @@ Must match Part 01 **v08 PASS**. Faceless microbes only. Sparse germs.
 
 Did **not** assemble `hos_001_part02_rough_v01.mp4` (need all 10 mp4s). No Ken Burns fill for plate 10.
 
-## Exact Flow error (plate 10, 27 Aug ~21:34 UTC)
+## Exact Flow error (plate 10)
 
-Hovering the prompt-bar **info** chip / empty Create slot:
+Retried **27 Aug ~22:08 UTC** (same copy as ~21:34 UTC). I2V submit reached the prompt bar (Lite · 16:9 · x1 · start frame attached) but Create never entered generating. Hovering the orange **info** chip:
 
 > **error**  
 > **Not enough Google Flow and AI credits to perform this action. Try other settings or get more AI credits.**  
 > Settings · Get more AI credits
 
-Create/arrow is absent; orange send is gone. Model stayed **Veo 3.1 - Lite** (did not switch to Fast).
+Orange send is an exclamation chip. Model stayed **Veo 3.1 - Lite**. Did not switch to Fast. Did not Ken Burns. Did not assemble.
 
 ## Flow workflow that works (locked)
 

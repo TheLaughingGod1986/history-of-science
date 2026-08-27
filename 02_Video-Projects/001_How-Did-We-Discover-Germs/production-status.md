@@ -26,9 +26,9 @@
 ## Quota (2026-08-27 night)
 
 - **Gemini Veo API:** prepaid depleted (separate from Free Trial / GDP).
-- **Flow Ultra:** Veo **3.1 Lite** generated plates **02–04, 06–09** this session after 01+05 already existed. Plate **10** then failed with exact UI copy:
+- **Flow Ultra:** Veo **3.1 Lite** generated plates **02–04, 06–09** after 01+05 already existed. Plate **10** still blocked on retry ~22:08 UTC. Exact UI copy:
   **`Not enough Google Flow and AI credits to perform this action. Try other settings or get more AI credits.`**
-- Create/send control gone (info chip only). Did not switch model. Did not Ken Burns.
+- Create/send is the orange **info** chip. Did not switch model. Did not Ken Burns. Did not assemble.
 
 ## Next
 
