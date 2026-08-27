@@ -12,24 +12,26 @@
 | Part 01 picture | **PASS — `hos_001_part01_rough_v08.mp4`** |
 | Style / microbe / motion locks | **LOCKED** |
 | Part 02 VO + stills | DONE |
-| Part 02 picture | **IN PROGRESS** — Flow Veo Lite open briefly 27 Aug PM: plates **01+05** done (2/10). Then daily gen limit again. Need 02–04, 06–10 |
+| Part 02 picture | **9/10 Flow I2V done** (01–09). Plate **10** blocked on Flow credits. **No assemble. No Ken Burns. STOP — not Ben UAT yet.** |
 | Parts 03–05 | Blocked on real animated Part 02 + Ben UAT |
-| Broadcast + Shorts | Later (Shorts only after long is public) |
+| Broadcast + Shorts | Later (Shorts only after long is public; zero `/go/` on Shorts) |
 
 ## Artifacts
 
 - Part 01 locked: `/opt/cursor/artifacts/hos_001_part01_LOCKED_v08.mp4`
-- Part 02 real plates: `04_Generated-Clips/part02/raw/v01_flow/` (**01** Lite + **05** Fast)
+- Part 02 real plates: `04_Generated-Clips/part02/raw/v01_flow/` (**01–09**; **10 missing**)
 - Part 02 still-push (REJECT): `09_Final-Export/hos_001_part02_rough_v01_STILLPUSH_REJECT.mp4`
+- Part 02 animated rough: **not built** (waiting on plate 10)
 
-## Quota (re-probe 2026-08-27)
+## Quota (2026-08-27 night)
 
-- **Gemini Veo API:** prepaid depleted (separate from Free Trial £225 / GDP £30).
-- **Flow Ultra:** Veo **Lite** worked once tonight (5 credits) → plate 01; then **daily generation limit** again despite credits left (~52).
-- **Next:** retry when daily gen opens, or wait **6 Sept** Flow 10k refresh / GDP ~£30 month-end.
+- **Gemini Veo API:** prepaid depleted (separate from Free Trial / GDP).
+- **Flow Ultra:** Veo **3.1 Lite** generated plates **02–04, 06–09** this session after 01+05 already existed. Plate **10** then failed with exact UI copy:
+  **`Not enough Google Flow and AI credits to perform this action. Try other settings or get more AI credits.`**
+- Create/send control gone (info chip only). Did not switch model. Did not Ken Burns.
 
 ## Next
 
-1. When Flow daily gens open: burn remaining **8** plates on **Veo 3.1 Lite** (~40 credits).
-2. Assemble real `hos_001_part02_rough_v01.mp4`.
+1. When Flow credits exist: Lite I2V **10_pullback_to_lab** only (`_gen_part02_remaining_lite.py` skip-existing).
+2. Assemble `hos_001_part02_rough_v01.mp4` via `_build_part02_flow_v01.py` (RAW `v01_flow`) → copy to `/opt/cursor/artifacts` + demo.
 3. Ben UAT Part 02 (animated). Then Part 03.

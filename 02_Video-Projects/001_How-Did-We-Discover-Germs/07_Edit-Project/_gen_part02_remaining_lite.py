@@ -25,7 +25,8 @@ FACELESS = (
 MODEL = "Veo 3.1 - Lite"
 LIMIT_RE = re.compile(
     r"generation limit|daily gen|you've reached|reached your (daily )?limit|"
-    r"quota|try again tomorrow|limit for today",
+    r"quota|try again tomorrow|limit for today|"
+    r"Not enough Google Flow and AI credits|not enough .*credits",
     re.I,
 )
 
