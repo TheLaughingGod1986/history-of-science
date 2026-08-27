@@ -1,5 +1,7 @@
 # Production status — 001 How Did We Discover Germs?
 
+**Queue (27 Aug 2026):** This is the film to finish. Then one more HOS long. Then compare Veo vs Omni — do not rewrite Orbit Omni until that compare. `hos-finish-then-compare-omni.mdc`
+
 | Step | Status |
 |---|---|
 | Topic score | DONE |
@@ -24,6 +26,6 @@
 
 ## Next
 
-1. Wait for Flow daily generation reset **or** Gemini Veo API quota.
-2. Generate remaining 9 Part 02 Flow I2V plates → assemble real `hos_001_part02_rough_v01.mp4`.
-3. Ben UAT Part 02 (animated). Then Part 03.
+1. On the **Mac Flow Ultra** profile: remaining 9 Part 02 Veo 3.1 Fast I2V plates (`_build_part02_flow_v01.py`). This cloud checkout has no Playwright Flow login — do not still-push.
+2. Assemble real `hos_001_part02_rough_v01.mp4` → Ben UAT. Then Part 03.
+3. Do not start HOS 002 or Neutron Star Omni while this minute is open.

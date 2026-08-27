@@ -1,11 +1,17 @@
 ---
-description: Locked next Orbit long — 007 Neutron Star (not Moon, not Simulation)
+description: Production queue — HOS 001–002 first; Neutron Star paused until Omni compare
 alwaysApply: true
 ---
 
-# Locked next production (16 Aug 2026)
+# Locked next production
 
-**Next to make is 007 Neutron Star.** Do not start 013 Moon. Do not treat 007 as Simulation.
+**27 Aug 2026 (Ben):** Production capacity goes to **History of Science**, not a new Orbit Omni pass. Finish **001 Germs**, then **one more HOS long**, then compare HOS Veo vs Orbit Omni before changing Omni. See `hos-finish-then-compare-omni.mdc`.
+
+**Do not make 007 Neutron Star next.** Script stays passed; credits stay unspent until that compare. Do not start 013 Moon. Do not treat 007 as Simulation.
+
+# Orbit backlog (paused — 16 Aug 2026 lock, not cancelled)
+
+When Ben green-lights Orbit again after the HOS compare, **007 Neutron Star** is still the next Orbit long (not Moon, not Simulation).
 
 **Real folder (Mac, script already passed 91.1):**  
 `02_Video-Projects/007_What-Happens-To-Your-Body-Near-A-Neutron-Star/`  
@@ -23,11 +29,23 @@ Script: `01_Script/neutron_star_script_master_v01.md`
 | Thu 20 Aug 18:00 | JWST v04 | scheduled — leave as-is |
 | Thu 27 Aug 18:00 | Last Star | scheduled · YouTube id `REXYxuLOBoI` (**letter O**, not zero) |
 | Thu 3 Sept 18:00 | Europa | scheduled |
-| **Next to make** | **007 Neutron Star** | script **already passed** · Omni 1-min path · **7–9 min** (~7–9 parts) |
+| **Next to make** | **HOS 001 Germs** | Veo 3.1 Fast · Part 01 PASS v08 · Part 02 real I2V next |
+| After 001 | **HOS 002** | same HOS method · topic not gated yet |
+| Orbit (paused) | **007 Neutron Star** | script **already passed** · **do not spend Omni credits** until HOS vs Omni compare |
 | After 007 | 013 Moon | backlog only |
 | 015 | Are We Living Inside A Simulation? | moved here from old 007 · not next |
 
-## Build 007 — one minute at a time (hard)
+## Build HOS 001 (active)
+
+1. Folder: `02_Video-Projects/001_How-Did-We-Discover-Germs/`
+2. Part 01 locked: `hos_001_part01_rough_v08.mp4` (Veo Fast · 3D cartoon · faceless germs · Explorer garnish).
+3. **Part 02 next:** real Flow Veo 3.1 Fast I2V (`_build_part02_flow_v01.py`). Still-push is REJECT.
+4. One minute → Ben UAT → `PART0N_LESSONS.md` → ask before the next minute.
+5. Do not start HOS 002 topic work until 001 has a locked master (or Ben asks).
+
+## Build 007 — paused until HOS vs Omni compare
+
+When Ben green-lights Orbit again, one minute at a time on the Mac folder below. **Until then: no Omni gens.**
 
 1. Use **`02_Video-Projects/007_What-Happens-To-Your-Body-Near-A-Neutron-Star/`** (Mac). Script: `01_Script/neutron_star_script_master_v01.md` (passed **91.1**). Not the empty `007_Neutron-Star` scaffold.
 2. Omni later standard (PR 18): `orbit-omni-section-qa.mdc` · `OMNI_LONGFORM_PLAYBOOK.md` · Europa Part 01–08 lessons.
@@ -38,6 +56,7 @@ Script: `01_Script/neutron_star_script_master_v01.md`
 
 ## Do not
 
+- Do **not** spend Flow Omni credits on 007 Neutron Star until the HOS vs Omni compare.
 - Do **not** generate the full film in one pass.
 - Do **not** batch two minutes, then ask.
 - Do **not** scaffold or produce 013 Moon until 007 Neutron Star has a locked master.
