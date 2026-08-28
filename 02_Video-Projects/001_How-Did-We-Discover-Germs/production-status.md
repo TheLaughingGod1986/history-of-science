@@ -1,5 +1,7 @@
 # Production status — 001 How Did We Discover Germs?
 
+**Queue (27 Aug 2026):** This is the film to finish. Then one more HOS long. Then compare Veo vs Omni — do not rewrite Orbit Omni until that compare. `hos-finish-then-compare-omni.mdc`
+
 | Step | Status |
 |---|---|
 | Topic score | DONE |
@@ -32,3 +34,4 @@
 
 1. **Ben UAT** Part 02 animated rough. Do not start Part 03 until pass.
 2. After pass: write Part 03 script → VO → Lite plates one minute at a time.
+3. Do not start HOS 002 or spend Omni on Neutron Star while this minute is open.

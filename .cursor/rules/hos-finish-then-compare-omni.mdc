@@ -1,0 +1,32 @@
+---
+description: HOS Veo first — finish 1–2 films, then compare before changing Orbit Omni
+alwaysApply: true
+---
+
+# HOS first, then compare Omni (locked 27 Aug 2026)
+
+Ben: the History of Science method is the cheaper production path. **Finish one or two HOS longs on Veo Fast. Then compare those films to Orbit Omni. Only then consider changing the Omni plan to match HOS.**
+
+## Do this
+
+1. **Now:** finish **001 How Did We Discover Germs?** — one minute at a time, Flow **Veo 3.1 Fast**, Part 01 v08 style lock. Part 02 animated rough is in **Ben UAT** (10/10 I2V). Do not start Part 03 until he passes. Stop for Ben UAT after each minute.
+2. **Then:** one more HOS long (002). Topic must still pass Growth System v2 + script ≥90. Do not invent 002 to keep the factory busy.
+3. **Then:** compare HOS Veo vs Orbit Omni (credits/minute, regen takes, UAT rejects, look). Ops note: `00_Brand/Channel-Setup/HOS_THEN_COMPARE_OMNI_LOCKED.md`.
+4. **Only after that compare:** decide whether Orbit longs switch toward Veo Fast + mascot-as-garnish (HOS method) instead of Omni-in-every-shot.
+
+## Do not
+
+- Do **not** rewrite `OMNI_LONGFORM_PLAYBOOK.md` or Orbit Omni rules until the compare exists.
+- Do **not** spend Flow / Omni credits on **007 Neutron Star** (or any new Orbit long) while HOS 001–002 are the production queue.
+- Do **not** put Omni Flash on HOS, or put Explorer in every cut.
+- Do **not** ship Ken Burns / still-push when Flow caps — wait for reset or Gemini API Veo Lite.
+- Do **not** start 013 Moon or 015 Simulation.
+
+## Channel split (until the compare)
+
+| Channel | Engine | Mascot |
+|---|---|---|
+| **History of Science** (make these) | Flow Veo 3.1 Fast | Explorer garnish every 3–5 scenes |
+| **Orbit With Ben** (paused) | Omni Flash (unchanged until compare) | Orbit in-scene |
+
+Neutron Star stays the next *Orbit* long (archived under `_archive_orbit/`). It is **not** what to make next. Do not copy it back into `02_Video-Projects/`.
