@@ -63,6 +63,8 @@ def assemble(clips: list[Path]) -> float:
         vprev = out
         offset += CLIP_USE - XFADE
     pic_dur = n * CLIP_USE - (n - 1) * XFADE
+    # xfade can promote to yuv444p; browsers/QuickTime then refuse playback.
+    parts.append(f"[{vprev}]format=yuv420p[vout]")
     afilter = (
         f"[{n}:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,"
         f"atrim=0:{pic_dur:.3f},apad=whole_dur={pic_dur:.3f}[a]"
@@ -72,8 +74,9 @@ def assemble(clips: list[Path]) -> float:
         [
             "ffmpeg", "-y", *inputs,
             "-filter_complex", ";".join(parts) + ";" + afilter,
-            "-map", f"[{vprev}]", "-map", "[a]",
-            "-c:v", "libx264", "-preset", "fast", "-crf", "17",
+            "-map", "[vout]", "-map", "[a]",
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high",
+            "-preset", "fast", "-crf", "17",
             "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(OUT),
         ],
         check=True,
@@ -152,8 +155,9 @@ def main() -> None:
     subprocess.run(["cp", "-f", str(OUT), str(ART / OUT.name)], check=False)
     subprocess.run(
         [
-            "ffmpeg", "-y", "-i", str(OUT), "-vf", "scale=960:540",
-            "-c:v", "libx264", "-crf", "28", "-c:a", "aac", "-b:a", "96k",
+            "ffmpeg", "-y", "-i", str(OUT), "-vf", "scale=960:540,format=yuv420p",
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high", "-crf", "28",
+            "-c:a", "aac", "-b:a", "96k",
             "-movflags", "+faststart", str(ART / "hos_001_part02_rough_v01_demo.mp4"),
         ],
         check=False,
