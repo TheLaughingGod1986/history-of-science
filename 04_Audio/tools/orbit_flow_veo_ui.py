@@ -1293,54 +1293,85 @@ def _flow_info_tooltip(page) -> str:
         return f"tooltip-err {e}"
 
 
-def submit_create(page) -> None:
-    """Click the prompt-bar Create (arrow_forward), waiting until it enables."""
-    # Clear leftover asset-picker / error overlays that steal the Create control
-    for _ in range(6):
+def _dismiss_asset_search_modal(page) -> None:
+    """Close Flow's Search assets / empty Uploads overlay that steals Create."""
+    for _ in range(10):
         body = ""
         try:
-            body = page.locator("body").inner_text(timeout=1500)[:2500]
+            body = page.locator("body").inner_text(timeout=1500)[:4000]
         except Exception:
             pass
-        if any(
+        open_picker = any(
             s in body
             for s in (
                 "Asset Search",
                 "Search assets",
-                "Upload media",
                 "Add to Prompt",
                 "No results found",
             )
-        ):
-            page.keyboard.press("Escape")
-            page.wait_for_timeout(400)
+        )
+        if not open_picker:
+            return
+        closed = page.evaluate(
+            """() => {
+              const labels = /^(close|cancel|done|dismiss)$/i;
+              for (const b of document.querySelectorAll('button,[aria-label]')) {
+                const t = (b.innerText || b.getAttribute('aria-label') || '')
+                  .trim().replace(/\\n/g, ' ');
+                if (labels.test(t) && t.length < 24) {
+                  try { b.click(); return t.slice(0, 24); } catch (e) {}
+                }
+              }
+              return null;
+            }"""
+        )
+        if closed:
+            print(f"  closed asset picker via {closed!r}", flush=True)
         else:
-            break
+            page.keyboard.press("Escape")
+            # Click the canvas (not the prompt plus) so the overlay loses focus
+            try:
+                page.mouse.click(720, 220)
+            except Exception:
+                pass
+        page.wait_for_timeout(350)
+
+
+def submit_create(page) -> None:
+    """Click the prompt-bar send (arrow_forward). Never click add_2 (asset picker)."""
+    _dismiss_asset_search_modal(page)
 
     deadline = time.time() + 45
     while time.time() < deadline:
+        _dismiss_asset_search_modal(page)
         state = page.evaluate(
             """() => {
-              for (const b of document.querySelectorAll('button')) {
-                const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-                // Prefer real Create — never the error/cancel chip control
-                const isCreate =
-                  /arrow_forward/i.test(t) ||
-                  /^(add_2\\s*)?Create$/i.test(t) ||
-                  /add_2 Create/i.test(t);
-                if (!isCreate) continue;
-                if (/error|cancel/i.test(t)) continue;
-                const disabled =
-                  b.disabled || b.getAttribute('aria-disabled') === 'true';
-                const r = b.getBoundingClientRect();
-                return {
-                  disabled,
-                  x: r.x + r.width / 2,
-                  y: r.y + r.height / 2,
-                  t: t.slice(0, 40),
-                };
-              }
-              // Info/error circle where Create should be
+              const pick = (preferArrow) => {
+                const hits = [];
+                for (const b of document.querySelectorAll('button')) {
+                  const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+                  if (/error|cancel|add_2/i.test(t)) continue;
+                  const isArrow = /arrow_forward/i.test(t);
+                  const isCreate = /^Create$/i.test(t);
+                  if (preferArrow && !isArrow) continue;
+                  if (!preferArrow && !isCreate) continue;
+                  if (!isArrow && !isCreate) continue;
+                  const disabled =
+                    b.disabled || b.getAttribute('aria-disabled') === 'true';
+                  const r = b.getBoundingClientRect();
+                  if (r.width < 8 || r.height < 8) continue;
+                  hits.push({
+                    disabled,
+                    x: r.x + r.width / 2,
+                    y: r.y + r.height / 2,
+                    t: t.slice(0, 40),
+                    arrow: isArrow,
+                  });
+                }
+                return hits.find(h => h.arrow) || hits[0] || null;
+              };
+              const send = pick(true) || pick(false);
+              if (send) return send;
               for (const b of document.querySelectorAll('button')) {
                 const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
                 if (/^info$|^error$|priority_high|error\\s*cancel/i.test(t) &&
@@ -1357,20 +1388,22 @@ def submit_create(page) -> None:
                 f"Flow Create blocked ({state['blocked']!r} tooltip={tip!r})"
             )
         if state and not state.get("disabled"):
+            print(f"  clicking Flow send ({state.get('t')!r})", flush=True)
             clicked = page.evaluate(
                 """() => {
+                  const ranked = [];
                   for (const b of document.querySelectorAll('button')) {
-                    const t = (b.innerText || '').trim();
-                    if ((/arrow_forward/i.test(t) || /Create/i.test(t)) &&
-                        !/error|cancel|new project/i.test(t) &&
-                        t.length < 40 &&
-                        !b.disabled &&
-                        b.getAttribute('aria-disabled') !== 'true') {
-                      b.click();
-                      return true;
-                    }
+                    const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
+                    if (/error|cancel|add_2|new project/i.test(t)) continue;
+                    if (!/arrow_forward/i.test(t)) continue;
+                    if (b.disabled || b.getAttribute('aria-disabled') === 'true') continue;
+                    ranked.push(b);
                   }
-                  return false;
+                  if (ranked.length) {
+                    ranked[ranked.length - 1].click();
+                    return 'arrow_forward';
+                  }
+                  return null;
                 }"""
             )
             if clicked:
@@ -1381,32 +1414,10 @@ def submit_create(page) -> None:
             return
         page.wait_for_timeout(500)
 
-    add_create = page.evaluate(
-        """() => {
-          const btns = [...document.querySelectorAll('button')];
-          for (const b of btns.reverse()) {
-            const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-            if (/^(add_2\\s*)?Create$/i.test(t) || /add_2 Create/i.test(t)) {
-              if (b.disabled || b.getAttribute('aria-disabled') === 'true') continue;
-              b.click();
-              return t.slice(0, 40);
-            }
-          }
-          return null;
-        }"""
+    tip = _flow_info_tooltip(page)
+    raise RuntimeError(
+        f"Flow arrow_forward send not found or never enabled tooltip={tip!r}"
     )
-    if add_create:
-        print(f"  clicked prompt Create ({add_create!r})", flush=True)
-        page.wait_for_timeout(800)
-        return
-    creates = page.locator('button:has-text("Create")')
-    if creates.count() == 0:
-        tip = _flow_info_tooltip(page)
-        raise RuntimeError(
-            f"Flow Create / arrow_forward not found or never enabled tooltip={tip!r}"
-        )
-    creates.last.click(timeout=8000, force=True)
-    print("  clicked fallback Create", flush=True)
 
 
 def dismiss_soft_prompts(page) -> None:

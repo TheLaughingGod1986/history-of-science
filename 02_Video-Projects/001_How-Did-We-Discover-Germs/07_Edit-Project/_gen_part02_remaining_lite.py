@@ -80,10 +80,10 @@ def main() -> None:
                         dest,
                         model=MODEL,
                         start_frame=still,
-                        timeout_s=420,
+                        timeout_s=900,
                         reuse_project=False,
                         scenery_only=not plate.get("explorer", False),
-                        attempts=2,
+                        attempts=1,
                     )
                 except Exception as e:
                     dump = Path("/tmp/hos_part02_plate10_flow_dump.txt")
