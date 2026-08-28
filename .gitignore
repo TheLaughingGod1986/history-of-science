@@ -40,6 +40,8 @@ node_modules/
 !00_Brand/Channel-Setup/inspiration/*.jpeg
 !00_Brand/Channel-Setup/inspiration/*.png
 !00_Brand/Channel-Setup/inspiration/*.webp
+# HOS Part 02 v04 ward start still (Veo API I2V seed)
+!02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part02/refs/08_ward_vs_lens_v04.jpg
 
 # Playwright / caches
 **/playwright-report/
