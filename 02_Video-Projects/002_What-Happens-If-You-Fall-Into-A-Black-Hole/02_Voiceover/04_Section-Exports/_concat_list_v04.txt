@@ -1,5 +1,0 @@
-file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/02_Voiceover/04_Section-Exports/blackhole_vo_section-01_hook-context_ivc_kDch_v04.mp3'
-file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/02_Voiceover/04_Section-Exports/blackhole_vo_section-02_birth-horizon_ivc_kDch_v04.mp3'
-file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/02_Voiceover/04_Section-Exports/blackhole_vo_section-03_approach-time_ivc_kDch_v04.mp3'
-file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/02_Voiceover/04_Section-Exports/blackhole_vo_section-04_fall-crossing_ivc_kDch_v04.mp3'
-file '/Users/ben/code/Orbit-YouTube/02_Video-Projects/002_What-Happens-If-You-Fall-Into-A-Black-Hole/02_Voiceover/04_Section-Exports/blackhole_vo_section-05_mystery-close_ivc_kDch_v04.mp3'

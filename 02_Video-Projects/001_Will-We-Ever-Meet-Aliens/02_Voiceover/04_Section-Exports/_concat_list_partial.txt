@@ -1,6 +1,0 @@
-file 'aliens_vo_section-01_cold-open_v01.wav'
-file 'aliens_vo_section-02_galaxy-scale_v01.wav'
-file 'aliens_vo_section-03_exoplanets_v01.wav'
-file 'aliens_vo_section-04_fermi-paradox_v01.wav'
-file 'aliens_vo_section-05_great-filter_v01.wav'
-file 'aliens_vo_section-09_conclusion_v01.wav'
