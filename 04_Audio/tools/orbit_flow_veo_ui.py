@@ -1835,6 +1835,7 @@ def _generate_clip_once(
     timeout_s: int = 900,
     reuse_project: bool = False,
     scenery_only: bool = False,
+    frames_i2v: bool = False,
 ) -> dict:
     """One attempt: generate a silent Veo clip via Google Flow Ultra UI.
 
@@ -1842,6 +1843,8 @@ def _generate_clip_once(
       - default: Orbit identity I2V (Orbit With Ben)
       - scenery_only: no attachment chip
       - start_frame: I2V from an arbitrary still (History of Science / custom)
+      - frames_i2v: lock Flow to Frames (first-frame I2V), not Ingredients.
+        Ingredients + a locked still often invents a Ken Burns zoom.
     """
     t0 = time.time()
     ref = None
@@ -1876,12 +1879,15 @@ def _generate_clip_once(
     model = assert_veo3_model(model)
     ensure_agent_session(page)
     before = collect_media_ids(page)
-    # Start-frame / Orbit I2V: Ingredients mode (prompt chip), not Frames slots.
+    # Default start-frame / Orbit I2V: Ingredients (prompt chip).
+    # frames_i2v: Frames tab so Veo animates THIS frame instead of exploring it.
+    want_frames = bool(frames_i2v and start_frame is not None)
     configure_veo_settings(
         page,
         model=model,
-        frames_mode=False,
-        ingredients_mode=(start_frame is not None) or (not scenery_only),
+        frames_mode=want_frames,
+        ingredients_mode=(not want_frames)
+        and ((start_frame is not None) or (not scenery_only)),
     )
     print("  post-settings…", flush=True)
     settle_after_nav(page, wait_ms=600)
@@ -1897,8 +1903,8 @@ def _generate_clip_once(
             configure_veo_settings(
                 page,
                 model=model,
-                frames_mode=False,
-                ingredients_mode=True,
+                frames_mode=want_frames,
+                ingredients_mode=not want_frames,
             )
         print("  setting start-frame I2V prompt…", flush=True)
         set_prompt(page, flow_prompt(prompt, start_frame_i2v=True))
@@ -1962,6 +1968,7 @@ def _generate_clip_once(
         "orbit_attached": attached,
         "identity_lock": (not scenery_only) and start_frame is None,
         "scenery_only": scenery_only,
+        "frames_i2v": want_frames,
         "media_id": media_id,
         "url": page.url,
     }
@@ -1979,6 +1986,7 @@ def generate_clip(
     reuse_project: bool = False,
     scenery_only: bool = False,
     attempts: int = 3,
+    frames_i2v: bool = False,
 ) -> dict:
     """Generate one silent Veo clip via Google Flow Ultra UI (with soft retries)."""
     last: BaseException | None = None
@@ -1995,6 +2003,7 @@ def generate_clip(
                 timeout_s=timeout_s,
                 reuse_project=use_reuse,
                 scenery_only=scenery_only,
+                frames_i2v=frames_i2v,
             )
         except Exception as e:
             last = e
