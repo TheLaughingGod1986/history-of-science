@@ -1,0 +1,173 @@
+[
+  {
+    "t": "arrow_back Go Back",
+    "role": null,
+    "sel": null,
+    "w": 32,
+    "h": 32,
+    "x": 24,
+    "y": 22
+  },
+  {
+    "t": "more_vert More options",
+    "role": null,
+    "sel": null,
+    "w": 32,
+    "h": 32,
+    "x": 183,
+    "y": 22
+  },
+  {
+    "t": "search Search",
+    "role": null,
+    "sel": null,
+    "w": 32,
+    "h": 32,
+    "x": 445,
+    "y": 22
+  },
+  {
+    "t": "filter_list Sort & Filter",
+    "role": null,
+    "sel": null,
+    "w": 42,
+    "h": 40,
+    "x": 872,
+    "y": 18
+  },
+  {
+    "t": "add Add Media",
+    "role": null,
+    "sel": null,
+    "w": 32,
+    "h": 32,
+    "x": 1133,
+    "y": 22
+  },
+  {
+    "t": "help Product Help",
+    "role": null,
+    "sel": null,
+    "w": 32,
+    "h": 32,
+    "x": 1177,
+    "y": 22
+  },
+  {
+    "t": "settings_2 View Settings",
+    "role": null,
+    "sel": null,
+    "w": 32,
+    "h": 32,
+    "x": 1221,
+    "y": 22
+  },
+  {
+    "t": "more_vert More",
+    "role": null,
+    "sel": null,
+    "w": 32,
+    "h": 32,
+    "x": 1265,
+    "y": 22
+  },
+  {
+    "t": "ULTRA",
+    "role": null,
+    "sel": null,
+    "w": 111,
+    "h": 48,
+    "x": 1309,
+    "y": 14
+  },
+  {
+    "t": "dashboard All Media",
+    "role": null,
+    "sel": null,
+    "w": 40,
+    "h": 40,
+    "x": 20,
+    "y": 80
+  },
+  {
+    "t": "accessibility_new Characters",
+    "role": null,
+    "sel": null,
+    "w": 40,
+    "h": 40,
+    "x": 20,
+    "y": 133
+  },
+  {
+    "t": "movie View scenes",
+    "role": null,
+    "sel": null,
+    "w": 40,
+    "h": 40,
+    "x": 20,
+    "y": 186
+  },
+  {
+    "t": "apps_spark_2 Tools",
+    "role": null,
+    "sel": null,
+    "w": 40,
+    "h": 40,
+    "x": 20,
+    "y": 260
+  },
+  {
+    "t": "delete View Trash",
+    "role": null,
+    "sel": null,
+    "w": 40,
+    "h": 40,
+    "x": 20,
+    "y": 723
+  },
+  {
+    "t": "left_panel_close Collapse",
+    "role": null,
+    "sel": null,
+    "w": 40,
+    "h": 40,
+    "x": 20,
+    "y": 776
+  },
+  {
+    "t": "add_2 Create",
+    "role": null,
+    "sel": null,
+    "w": 32,
+    "h": 32,
+    "x": 430,
+    "y": 827
+  },
+  {
+    "t": "Agent",
+    "role": null,
+    "sel": null,
+    "w": 67,
+    "h": 32,
+    "x": 467,
+    "y": 827
+  },
+  {
+    "t": "\ud83c\udf4c Nano Banana 2 crop_16_9 x2",
+    "role": null,
+    "sel": null,
+    "w": 154,
+    "h": 34,
+    "x": 821,
+    "y": 826
+  },
+  {
+    "t": "arrow_forward Create",
+    "role": null,
+    "sel": null,
+    "w": 32,
+    "h": 32,
+    "x": 980,
+    "y": 827
+  }
+]

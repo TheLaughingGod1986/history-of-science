@@ -186,20 +186,26 @@ def recover_flow_home(page) -> None:
 
 def dismiss_banners(page) -> None:
     try:
-        safe_evaluate(
+        hit = safe_evaluate(
             page,
             """() => {
-              for (const b of document.querySelectorAll('button')) {
-                const t = (b.innerText || '').trim().split('\\n')[0];
-                if (/^close$|^Dismiss$|^Got it$/i.test(t)) {
-                  try { b.click(); } catch (e) {}
+              const want = [/^(Agree|I agree|Accept all|Accept)$/i, /^(No thanks|Reject|Decline)$/i, /^close$|^Dismiss$|^Got it$/i];
+              for (const re of want) {
+                for (const b of document.querySelectorAll('button')) {
+                  const t = (b.innerText || '').trim().split('\\n')[0];
+                  if (re.test(t)) {
+                    try { b.click(); return t; } catch (e) {}
+                  }
                 }
               }
+              return null;
             }""",
         )
+        if hit:
+            print(f"  dismissed banner via {hit!r}", flush=True)
     except Exception:
         pass
-    page.wait_for_timeout(300)
+    page.wait_for_timeout(400)
 
 
 def looks_logged_in(page) -> bool:
@@ -630,6 +636,7 @@ def configure_veo_settings(
     Agent tune panel). Falls back to legacy tune/Settings if needed.
     """
     model = assert_veo3_model(model)
+    dismiss_banners(page)
     _ensure_create_prompt_mode(page)
 
     # --- New prompt-bar popover path ---
