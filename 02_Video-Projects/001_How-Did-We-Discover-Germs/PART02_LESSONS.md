@@ -58,4 +58,17 @@ Plate 10 landed in ~72s after that fix (Lite, start-frame Animate path).
 
 ## Next
 
-Ben UAT `hos_001_part02_rough_v01.mp4`. Pass / regen notes. Then Part 03 only.
+Ben UAT on Part 02 rough after ward remint lands. Do **not** start Part 03 until Ben passes.
+
+## v04 ward remint — STOP (2026-08-28 HOS Cloud)
+
+Ben UAT FAIL on v01/v02/v03 at **0:53–1:01** (still-push / Ken Burns — nurses/steam/cloth do not move). Do not splice `08_ward_vs_lens_v02` or v03 again.
+
+**Cloud attempt from clean `main` (`b45d245…`) on branch `cursor/hos-001-part02-ward-v04-a06c`:**
+
+1. Veo API only (no Flow on this VM).
+2. `GEMINI_API_KEY` **MISSING** → cannot mint. Prior run prepaid **429 RESOURCE_EXHAUSTED**.
+3. **Did not** ship a Ken Burns plate. **No** `hos_001_part02_rough_v04.mp4` yet.
+4. Scripts ready: `_mint_part02_ward_v04_api.py` · `_splice_part02_v04_ward.py`
+5. Start still seed: `04_Generated-Clips/part02/refs/08_ward_vs_lens_v04.jpg`
+6. Details: `07_Edit-Project/PART02_V04_WARD_STOP.md`
