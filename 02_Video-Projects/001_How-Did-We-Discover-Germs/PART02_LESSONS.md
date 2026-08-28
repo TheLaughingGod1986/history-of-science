@@ -1,7 +1,7 @@
 # Part 02 lessons — Seeing the Tiny World
 
-**Date:** 2026-08-27  
-**Status:** **STOP for Ben UAT** is not ready — **9/10** real Flow Veo clips exist; plate **10** blocked on Flow credits. No Ken Burns. No Part 03.
+**Date:** 2026-08-28  
+**Status:** **STOP for Ben UAT** — animated rough is ready. Do **not** start Part 03 until Ben passes this cut.
 
 ## Ben UAT (locked)
 
@@ -19,50 +19,43 @@ Must match Part 01 **v08 PASS**. Faceless microbes only. Sparse germs.
 - VO: `02_Voiceover/part02_seeing_tiny_world_v01.mp3` (~87s)
 - Stills: `04_Generated-Clips/part02/refs/*_v01.jpg` (10/10)
 - Rejected still-push: `09_Final-Export/hos_001_part02_rough_v01_STILLPUSH_REJECT.mp4`
+- **Animated rough:** `09_Final-Export/hos_001_part02_rough_v01.mp4` (~76.4s picture; VO trimmed to picture)
 
-## Real motion progress (`raw/v01_flow/`)
+## Real motion inventory (`raw/v01_flow/`)
 
 | Plate | Status |
 |---|---|
 | 01_chapter_lab_scope | **DONE** Veo 3.1 Lite (~2.2MB, 8s) |
 | 02_lens_flare_eye | **DONE** Veo 3.1 Lite (~1.8MB, 8s) |
-| 03_drop_of_water | **DONE** Veo 3.1 Lite (~1.0MB, 8s) |
+| 03_drop_of_water | **DONE** Veo 3.1 Lite — **subtle** motion (low frame-diff); watch in UAT |
 | 04_plunge_into_drop | **DONE** Veo 3.1 Lite (~4.8MB, 8s) |
 | 05_microbial_city | **DONE** Veo 3.1 Fast (~3.8MB, 8s) |
-| 06_explorer_eyepiece | **DONE** Veo 3.1 Lite (~2.1MB, 8s) |
+| 06_explorer_eyepiece | **DONE** Veo 3.1 Lite — camera moves; Explorer acting may look stiff (UAT) |
 | 07_tiny_world_hold | **DONE** Veo 3.1 Lite (~3.5MB, 8s) |
 | 08_ward_vs_lens | **DONE** Veo 3.1 Lite (~1.5MB, 8s) |
 | 09_faceless_swarm_detail | **DONE** Veo 3.1 Lite (~3.1MB, 8s) |
-| 10_pullback_to_lab | **BLOCKED** — Create send missing; Flow exact error below |
+| 10_pullback_to_lab | **DONE** Veo 3.1 Lite (~2.1MB, 8s, real motion; Flow flashed “failed” then mp4 arrived) |
 
-Did **not** assemble `hos_001_part02_rough_v01.mp4` (need all 10 mp4s). No Ken Burns fill for plate 10.
+## Flow send bug (2026-08-28)
 
-## Exact Flow error (plate 10)
+`submit_create` was matching **`add_2 Create`** (plus / asset picker) before **`arrow_forward Create`** (orange send). That left an empty Uploads modal (“No results found”) and `gen=False` forever. Fix: dismiss the picker, click **arrow_forward only**. Never click `add_2` to start a gen.
 
-Retried **27 Aug ~22:08 UTC** (same copy as ~21:34 UTC). I2V submit reached the prompt bar (Lite · 16:9 · x1 · start frame attached) but Create never entered generating. Hovering the orange **info** chip:
-
-> **error**  
-> **Not enough Google Flow and AI credits to perform this action. Try other settings or get more AI credits.**  
-> Settings · Get more AI credits
-
-Orange send is an exclamation chip. Model stayed **Veo 3.1 - Lite**. Did not switch to Fast. Did not Ken Burns. Did not assemble.
+Plate 10 landed in ~72s after that fix (Lite, start-frame Animate path).
 
 ## Flow workflow that works (locked)
 
 1. Upload start still → right-click **Animate**
 2. Model **Veo 3.1 - Lite** (5 credits Ultra; Fast OK if needed) · 16:9 · x1 — never Omni Flash / Nano Banana
-3. Prompt + Create → **approve credit confirmation**
-4. Wait ~2 min → download mp4 from player
-5. Playwright helper: `try_context_animate` + `confirm_generation_spend` in `orbit_flow_veo_ui.py`
-6. Current Flow prompt bar may show **`add_2 Create`** (plus) instead of `arrow_forward`; the real send is the orange circle — it disappears when credits are exhausted.
+3. Prompt + **arrow_forward** Create → **approve credit confirmation**
+4. Wait ~1–3 min → download mp4 from player (ignore a brief “failed” flash if video/mp4 arrives)
+5. Playwright helper: `try_context_animate` + `confirm_generation_spend` + arrow-only `submit_create`
 
 ## Do not
 
-- Assemble or UAT still-push as the Part 02 rough
-- Assemble a 9-plate cut and call it the animated rough
-- Start Part 03 until a real animated Part 02 rough exists and Ben passes it
+- Treat the still-push file as the Part 02 rough
+- Start Part 03 until Ben passes this animated cut
 - Fall back to zoompan / sine-pan and call it animation
 
 ## Next
 
-When Flow credits reopen: generate **10_pullback_to_lab** on **Veo 3.1 Lite** → assemble `_build_part02_flow_v01.py` (RAW=`v01_flow`) → `hos_001_part02_rough_v01.mp4` → Ben UAT.
+Ben UAT `hos_001_part02_rough_v01.mp4`. Pass / regen notes. Then Part 03 only.

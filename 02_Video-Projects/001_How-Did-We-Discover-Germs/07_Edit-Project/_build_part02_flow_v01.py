@@ -80,48 +80,68 @@ def assemble(clips: list[Path]) -> float:
     return pic_dur
 
 
+def clip_paths(plates: list[dict]) -> list[Path]:
+    paths = []
+    for plate in plates:
+        dest = RAW / f"{plate['id']}_v01.mp4"
+        if not veo.already_done(dest, min_bytes=400_000):
+            raise FileNotFoundError(dest)
+        paths.append(dest)
+    return paths
+
+
 def main() -> None:
     plates = json.loads(PLATES_JSON.read_text())["plates"]
     RAW.mkdir(parents=True, exist_ok=True)
     profile = flow.profile_path(DEFAULT_PROFILE)
     print(f"Flow profile={profile} model={MODEL}", flush=True)
 
-    from playwright.sync_api import sync_playwright
-
     meta = {"engine": "flow-ui", "model": MODEL, "style_lock": "v08_pass", "plates": []}
     paths: list[Path] = []
+    missing = [
+        plate["id"]
+        for plate in plates
+        if not veo.already_done(RAW / f"{plate['id']}_v01.mp4", min_bytes=400_000)
+    ]
 
-    with sync_playwright() as p:
-        ctx, page = flow.launch_context(p, headed=False, profile=profile)
-        try:
-            for i, plate in enumerate(plates):
-                still = REFS / f"{plate['id']}_v01.jpg"
-                dest = RAW / f"{plate['id']}_v01.mp4"
-                if not still.exists():
-                    raise SystemExit(f"missing still {still}")
-                if veo.already_done(dest, min_bytes=400_000):
-                    print(f"  skip {dest.name}", flush=True)
-                    meta["plates"].append({"id": plate["id"], "skipped": True, "path": str(dest)})
+    if not missing:
+        print("  all 10 Flow clips present — assemble only (no Flow)", flush=True)
+        paths = clip_paths(plates)
+        meta["plates"] = [{"id": p.stem, "skipped": True, "path": str(p)} for p in paths]
+    else:
+        from playwright.sync_api import sync_playwright
+
+        with sync_playwright() as p:
+            ctx, page = flow.launch_context(p, headed=False, profile=profile)
+            try:
+                for i, plate in enumerate(plates):
+                    still = REFS / f"{plate['id']}_v01.jpg"
+                    dest = RAW / f"{plate['id']}_v01.mp4"
+                    if not still.exists():
+                        raise SystemExit(f"missing still {still}")
+                    if veo.already_done(dest, min_bytes=400_000):
+                        print(f"  skip {dest.name}", flush=True)
+                        meta["plates"].append({"id": plate["id"], "skipped": True, "path": str(dest)})
+                        paths.append(dest)
+                        continue
+                    prompt = f"{plate['prompt']} {FACELESS}"
+                    print(f"\n=== Flow I2V {plate['id']} ({i+1}/{len(plates)}) ===", flush=True)
+                    info = flow.generate_clip(
+                        page,
+                        prompt,
+                        dest,
+                        model=MODEL,
+                        start_frame=still,
+                        timeout_s=700,
+                        reuse_project=False,
+                        scenery_only=not plate.get("explorer", False),
+                        attempts=2,
+                    )
+                    veo.strip_audio(dest)
+                    meta["plates"].append({"id": plate["id"], **info, "path": str(dest)})
                     paths.append(dest)
-                    continue
-                prompt = f"{plate['prompt']} {FACELESS}"
-                print(f"\n=== Flow I2V {plate['id']} ({i+1}/{len(plates)}) ===", flush=True)
-                info = flow.generate_clip(
-                    page,
-                    prompt,
-                    dest,
-                    model=MODEL,
-                    start_frame=still,
-                    timeout_s=700,
-                    reuse_project=False,
-                    scenery_only=not plate.get("explorer", False),
-                    attempts=2,
-                )
-                veo.strip_audio(dest)
-                meta["plates"].append({"id": plate["id"], **info, "path": str(dest)})
-                paths.append(dest)
-        finally:
-            ctx.close()
+            finally:
+                ctx.close()
 
     pic_dur = assemble(paths)
     meta["out"] = str(OUT)
