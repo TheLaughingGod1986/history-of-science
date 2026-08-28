@@ -28,7 +28,7 @@ Must match Part 01 **v08 PASS**. Faceless microbes only. Sparse germs.
 | 01_chapter_lab_scope | **DONE** Veo 3.1 Lite (~2.2MB, 8s) |
 | 02_lens_flare_eye | **DONE** Veo 3.1 Lite (~1.8MB, 8s) |
 | 03_drop_of_water | **DONE** Veo 3.1 Lite — **subtle** motion (low frame-diff); watch in UAT |
-| 04_plunge_into_drop | **DONE** Veo 3.1 Lite (~4.8MB, 8s) |
+| 04_plunge_into_drop | **DONE v02** Veo 3.1 Lite from pond-water still — dive into faceless microbes. **v01 CAMERA REJECT** quarantined |
 | 05_microbial_city | **DONE** Veo 3.1 Fast (~3.8MB, 8s) |
 | 06_explorer_eyepiece | **DONE** Veo 3.1 Lite — camera moves; Explorer acting may look stiff (UAT) |
 | 07_tiny_world_hold | **DONE** Veo 3.1 Lite (~3.5MB, 8s) |

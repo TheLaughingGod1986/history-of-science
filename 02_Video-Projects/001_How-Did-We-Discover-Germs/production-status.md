@@ -12,7 +12,7 @@
 | Part 01 picture | **PASS — `hos_001_part01_rough_v08.mp4`** |
 | Style / microbe / motion locks | **LOCKED** |
 | Part 02 VO + stills | DONE |
-| Part 02 picture | **10/10 Flow I2V** · assembled `hos_001_part02_rough_v01.mp4` (~76.4s). **STOP for Ben UAT.** |
+| Part 02 picture | **10/10 Flow I2V** · camera-in-drop **replaced** · VO-lock order · `hos_001_part02_rough_v01.mp4` (~76.4s). **STOP for Ben UAT.** |
 | Parts 03–05 | Blocked until Ben passes Part 02 |
 | Broadcast + Shorts | Later (Shorts only after long is public; zero `/go/` on Shorts) |
 

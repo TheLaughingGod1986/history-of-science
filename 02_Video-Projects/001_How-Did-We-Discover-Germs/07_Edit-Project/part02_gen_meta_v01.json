@@ -1,6 +1,6 @@
 {
   "engine": "flow-ui",
-  "model": "Veo 3.1 Lite (plates 01-04,06-10) + Fast (05)",
+  "model": "Veo 3.1 - Fast",
   "style_lock": "v08_pass",
   "plates": [
     {
@@ -9,14 +9,14 @@
       "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part02/raw/v01_flow/01_chapter_lab_scope_v01.mp4"
     },
     {
-      "id": "02_lens_flare_eye_v01",
-      "skipped": true,
-      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part02/raw/v01_flow/02_lens_flare_eye_v01.mp4"
-    },
-    {
       "id": "03_drop_of_water_v01",
       "skipped": true,
       "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part02/raw/v01_flow/03_drop_of_water_v01.mp4"
+    },
+    {
+      "id": "02_lens_flare_eye_v01",
+      "skipped": true,
+      "path": "/workspace/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part02/raw/v01_flow/02_lens_flare_eye_v01.mp4"
     },
     {
       "id": "04_plunge_into_drop_v01",
