@@ -33,7 +33,7 @@ Inspiration: `00_Brand/Channel-Setup/INSPIRATION_ANIMISTRY.md` · https://www.yo
 **Affiliate (Content Ops):** `07_Content-Ops/docs/AFFILIATE_MONETISATION_SYSTEM.md`  
 **New episode scaffold:** `02_Video-Projects/_template_NNN_Episode-Slug/`  
 
-`01_Orbit-Character/` is **archive only**. Do not ship Orbit orange robot on this channel.
+Orbit leftovers live under `_archive_orbit/` (template copies — do not ship to `@HistoryOfScienceYT`).
 
 ---
 
@@ -62,10 +62,12 @@ history-of-science/
 │   ├── 01_Master-References/       Protected character sheet
 │   └── 05_Generation-References/   Veo / Omni identity attach
 │
-├── 01_Orbit-Character/             ARCHIVE (Orbit With Ben seed — do not ship)
+├── _archive_orbit/                 Orbit With Ben leftovers (do not ship)
 │
 ├── 02_Video-Projects/              One folder per video
-│   └── 001_Will-We-Ever-Meet-Aliens/
+│   ├── 000_Explorer-Style-Test/
+│   ├── 001_How-Did-We-Discover-Germs/   ← current HOS film
+│   └── _template_NNN_Episode-Slug/
 │       ├── 01_Script/              Script drafts, final read script
 │       ├── 02_Voiceover/           Recorded / generated narration
 │       ├── 03_Seedance-Prompts/    Scene prompt sheets for this video
@@ -311,6 +313,5 @@ generation, the fix is a high-resolution render of the hero pose alone, saved as
 
 ## Current status
 
-Folder structure, prompt sheets, review scaffolding and both reference files are
-in place. Next step is Seedance generation — see
-`02_Video-Projects/001_Will-We-Ever-Meet-Aliens/04_Generated-Clips/animation-review.md`.
+Folder structure, prompt sheets, and review scaffolding are in place. Current
+film: `02_Video-Projects/001_How-Did-We-Discover-Germs/`.
