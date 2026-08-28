@@ -159,10 +159,13 @@ def main() -> None:
     subprocess.run(["cp", "-f", str(OUT), str(ART / OUT.name)], check=False)
     subprocess.run(
         [
-            "ffmpeg", "-y", "-i", str(OUT), "-vf", "scale=960:540,format=yuv420p",
-            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high", "-crf", "28",
-            "-c:a", "aac", "-b:a", "96k",
-            "-movflags", "+faststart", str(ART / "hos_001_part02_rough_v01_demo.mp4"),
+            "ffmpeg", "-y", "-i", str(OUT),
+            "-vf", "scale=854:480:flags=lanczos,format=yuv420p",
+            "-c:v", "libx264", "-pix_fmt", "yuv420p",
+            "-profile:v", "baseline", "-level", "3.0", "-bf", "0", "-crf", "20",
+            "-c:a", "aac", "-profile:a", "aac_low", "-b:a", "128k", "-ac", "2", "-ar", "44100",
+            "-movflags", "+faststart", "-brand", "mp42",
+            str(ART / "hos_001_part02_rough_v01_demo.mp4"),
         ],
         check=False,
         capture_output=True,

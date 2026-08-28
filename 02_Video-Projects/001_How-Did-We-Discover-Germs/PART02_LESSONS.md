@@ -21,6 +21,15 @@ Must match Part 01 **v08 PASS**. Faceless microbes only. Sparse germs.
 - Rejected still-push: `09_Final-Export/hos_001_part02_rough_v01_STILLPUSH_REJECT.mp4`
 - **Animated rough:** `09_Final-Export/hos_001_part02_rough_v01.mp4` (~76.4s picture; VO trimmed to picture)
 
+## VO–picture polish (2026-08-28)
+
+Ben: camera-in-drop at ~25s did not follow the narration.
+
+- Root cause: prompt said “camera plunges” + start still already contained a photographic camera. Veo literalised it.
+- Fix: I2V from `03_drop_of_water` still; prompt forbids cameras; assemble order is now **lab → pond drop → eyepiece/spectrum → dive**.
+- Do **not** put the word “camera” in HOS plunge prompts unless you mean a photographic object.
+
+
 ## Real motion inventory (`raw/v01_flow/`)
 
 | Plate | Status |
