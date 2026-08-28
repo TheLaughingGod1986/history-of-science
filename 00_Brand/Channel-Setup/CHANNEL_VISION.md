@@ -53,6 +53,6 @@ Canonical sheet: `01_Character/01_Master-References/hos-explorer-character-sheet
 
 1. Create Brand Account channel + handle → fill `CHANNEL_META.json`.
 2. Connect YouTube Data API OAuth for this channel only.
-3. Deploy Content Ops for HOS; set `APP_BASE_URL` to that origin.
+3. **Content Ops cloud:** Vercel project `history-of-science-content-ops` exists (root `07_Content-Ops`). **Still need Postgres + env**, then first deploy to `https://history-of-science-content-ops.vercel.app`. See `HOS_CLOUD_INFRASTRUCTURE.md`.
 4. Create **new** Meta / Threads / TikTok accounts (do not publish to Orbit’s).
 5. First episode: story-first 3D cartoon plates + sparse Explorer beats.
