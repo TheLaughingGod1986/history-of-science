@@ -8,7 +8,7 @@ Cursor rule: `.cursor/rules/hos-finish-then-compare-omni.mdc`
 
 | Order | Film | Engine | Status |
 |---|---|---|---|
-| 1 | **001 How Did We Discover Germs?** | Flow Veo 3.1 Fast | Part 01 PASS v08 · Part 02 blocked on real I2V |
+| 1 | **001 How Did We Discover Germs?** | Flow Veo 3.1 Fast | Part 01 PASS v08 · Part 02 10/10 I2V rough — **STOP for Ben UAT** |
 | 2 | **HOS 002** | Same HOS method | Not gated yet — Growth System v2 + script ≥90 before VO/picture |
 | Pause | 007 Neutron Star (Orbit) | Omni Flash (do not change yet) | Script passed · **do not spend credits** until compare |
 | After compare | Orbit plan | TBD | May shift toward Veo Fast + mascot garnish |
