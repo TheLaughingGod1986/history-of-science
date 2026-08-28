@@ -186,20 +186,26 @@ def recover_flow_home(page) -> None:
 
 def dismiss_banners(page) -> None:
     try:
-        safe_evaluate(
+        hit = safe_evaluate(
             page,
             """() => {
-              for (const b of document.querySelectorAll('button')) {
-                const t = (b.innerText || '').trim().split('\\n')[0];
-                if (/^close$|^Dismiss$|^Got it$/i.test(t)) {
-                  try { b.click(); } catch (e) {}
+              const want = [/^(Agree|I agree|Accept all|Accept)$/i, /^(No thanks|Reject|Decline)$/i, /^close$|^Dismiss$|^Got it$/i];
+              for (const re of want) {
+                for (const b of document.querySelectorAll('button')) {
+                  const t = (b.innerText || '').trim().split('\\n')[0];
+                  if (re.test(t)) {
+                    try { b.click(); return t; } catch (e) {}
+                  }
                 }
               }
+              return null;
             }""",
         )
+        if hit:
+            print(f"  dismissed banner via {hit!r}", flush=True)
     except Exception:
         pass
-    page.wait_for_timeout(300)
+    page.wait_for_timeout(400)
 
 
 def looks_logged_in(page) -> bool:
@@ -630,6 +636,7 @@ def configure_veo_settings(
     Agent tune panel). Falls back to legacy tune/Settings if needed.
     """
     model = assert_veo3_model(model)
+    dismiss_banners(page)
     _ensure_create_prompt_mode(page)
 
     # --- New prompt-bar popover path ---
@@ -1181,75 +1188,91 @@ def flow_prompt(
     )
 
 
+_PLACEHOLDER_RE = re.compile(
+    r"^what do you want to create\??$|^describe|^enter a prompt|^prompt$",
+    re.I,
+)
+
+
+def _editor_prompt_text(page) -> str:
+    """Return real editor text. Flow's placeholder must not count as a prompt."""
+    raw = page.evaluate(
+        """() => {
+          const ed = document.querySelector('[data-slate-editor="true"]');
+          return (ed && (ed.innerText || '').trim()) || '';
+        }"""
+    ) or ""
+    if _PLACEHOLDER_RE.match(raw.strip()):
+        return ""
+    return raw.strip()
+
+
+def _clear_editor(page) -> None:
+    """Wipe placeholder + leftover Slate text. Do not click the image chip."""
+    for combo in (("Meta+A", "Backspace"), ("Control+A", "Backspace")):
+        page.evaluate(
+            """() => {
+              const ed = document.querySelector('[data-slate-editor="true"]');
+              if (!ed) return;
+              ed.focus();
+              const sel = window.getSelection();
+              if (!sel) return;
+              const range = document.createRange();
+              range.selectNodeContents(ed);
+              sel.removeAllRanges();
+              sel.addRange(range);
+            }"""
+        )
+        page.keyboard.press(combo[0])
+        page.keyboard.press(combo[1])
+        page.wait_for_timeout(80)
+    # Placeholder-only is fine; leftover "What do you want…" + prompt is not.
+    leftover = _editor_prompt_text(page)
+    if leftover.lower().startswith("what do you want"):
+        page.keyboard.press("Meta+A")
+        page.keyboard.press("Backspace")
+        page.wait_for_timeout(80)
+
+
 def set_prompt(page, prompt: str) -> None:
-    """Paste into the Flow agent editor without wiping an attached image chip."""
+    """Type into the Flow agent editor without wiping an attached image chip.
+
+    Slate only arms Create when it sees real input events. execCommand/DOM
+    writes look filled but leave Create disabled.
+    """
     ensure_agent_session(page)
     box = editor_box(page)
     if not box or not editor_usable(page):
         raise RuntimeError("Flow prompt editor not visible (open agent session)")
     # Click toward the right of the editor so we don't focus/remove the chip
     page.mouse.click(box["x"] + min(box["w"] - 40, 180), box["y"] + max(6, box["h"] / 2))
-    page.wait_for_timeout(120)
-    page.evaluate(
-        """() => {
-          const ed = document.querySelector('[data-slate-editor="true"]');
-          if (!ed) return;
-          ed.focus();
-          const sel = window.getSelection();
-          if (!sel) return;
-          const range = document.createRange();
-          range.selectNodeContents(ed);
-          sel.removeAllRanges();
-          sel.addRange(range);
-        }"""
-    )
+    page.wait_for_timeout(150)
+    page.keyboard.press("Meta+A")
+    page.keyboard.press("Backspace")
+    page.keyboard.press("Control+A")
     page.keyboard.press("Backspace")
     page.wait_for_timeout(80)
-    # Clipboard paste is much faster than per-char type for long locks.
-    # Linux/Chrome needs Control+V; Meta+V is macOS-only and silently no-ops here.
-    pasted = False
-    try:
-        page.evaluate(
-            """async (text) => {
-              await navigator.clipboard.writeText(text);
-            }""",
-            prompt,
-        )
-        page.keyboard.press("Control+V")
+    # Playwright insert_text fires beforeinput insertText — Slate consumes this.
+    page.keyboard.insert_text(prompt)
+    page.wait_for_timeout(300)
+    got = _editor_prompt_text(page)
+    dirty = got.lower().startswith("what do you want")
+    ok = bool(got and (not dirty) and len(got) >= min(24, max(12, len(prompt) // 8)))
+    print(f"  set_prompt insert_text chars={len(got)} dirty={dirty}", flush=True)
+    if not ok:
+        page.keyboard.press("Meta+A")
+        page.keyboard.press("Backspace")
+        page.wait_for_timeout(80)
+        page.keyboard.type(prompt, delay=2)
         page.wait_for_timeout(200)
-        # Verify text landed (placeholder should be gone / editor nonempty)
-        got = page.evaluate(
-            """() => {
-              const ed = document.querySelector('[data-slate-editor="true"]');
-              return (ed && (ed.innerText || '').trim()) || '';
-            }"""
+        got = _editor_prompt_text(page)
+        dirty = got.lower().startswith("what do you want")
+        ok = bool(got and (not dirty) and len(got) >= min(24, max(12, len(prompt) // 8)))
+    if not ok:
+        raise RuntimeError(
+            f"Flow prompt editor not armed after input events head={got[:80]!r}"
         )
-        if got and len(got) >= min(12, len(prompt) // 4):
-            pasted = True
-        else:
-            # Retry with Meta+V for macOS profiles
-            page.keyboard.press("Meta+V")
-            page.wait_for_timeout(200)
-            got = page.evaluate(
-                """() => {
-                  const ed = document.querySelector('[data-slate-editor="true"]');
-                  return (ed && (ed.innerText || '').trim()) || '';
-                }"""
-            )
-            pasted = bool(got and len(got) >= min(12, len(prompt) // 4))
-    except Exception:
-        pasted = False
-    if not pasted:
-        page.keyboard.type(prompt, delay=0)
-    page.wait_for_timeout(250)
-    final = page.evaluate(
-        """() => {
-          const ed = document.querySelector('[data-slate-editor="true"]');
-          return (ed && (ed.innerText || '').trim().slice(0, 80)) || '';
-        }"""
-    )
-    if not final:
-        raise RuntimeError("Flow prompt editor still empty after paste/type")
+    print(f"  set_prompt ok head={got[:60]!r}", flush=True)
 
 
 def _flow_info_tooltip(page) -> str:
