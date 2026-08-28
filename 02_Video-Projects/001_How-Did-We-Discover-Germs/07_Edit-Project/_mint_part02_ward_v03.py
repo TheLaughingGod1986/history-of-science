@@ -17,7 +17,10 @@ STILL = PROJ / "04_Generated-Clips/part02/refs/08_ward_vs_lens_v03.jpg"
 OUT = PROJ / "04_Generated-Clips/part02/raw/v03_flow/08_ward_vs_lens_v03.mp4"
 MODEL = "Veo 3.1 - Lite"
 PROFILE = Path(
-    os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile"))
+    os.environ.get(
+        "ORBIT_FLOW_PROFILE",
+        str(Path.home() / ".playwright-hos-flow-profile"),
+    )
 )
 
 PROMPT = (
@@ -59,7 +62,7 @@ def main() -> None:
                 start_frame=STILL,
                 timeout_s=900,
                 reuse_project=False,
-                scenery_only=True,
+                scenery_only=False,
                 attempts=1,
             )
             print(f"OK {OUT} bytes={OUT.stat().st_size} info={info}", flush=True)

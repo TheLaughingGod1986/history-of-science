@@ -30,7 +30,11 @@ def main() -> None:
     if src is None:
         raise SystemExit("missing v01 rough")
     if not PLATE.exists():
-        raise SystemExit(f"missing plate {PLATE}")
+        raise SystemExit(f"missing plate {PLATE} — mint + visual-QA first")
+    # Hard reject splicing the failed v02 plate
+    reject = PROJ / "04_Generated-Clips/part02/raw/v01_flow/08_ward_vs_lens_v02.mp4"
+    if PLATE.resolve() == reject.resolve():
+        raise SystemExit("REFUSED: 08_ward_vs_lens_v02 is REJECT — do not splice")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     ART.mkdir(parents=True, exist_ok=True)
     fc = (
