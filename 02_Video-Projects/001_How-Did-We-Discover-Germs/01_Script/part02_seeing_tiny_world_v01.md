@@ -45,9 +45,10 @@ The truth was waiting for a harder kind of proof: not that life exists in drops,
 | # | id | Explorer? | Notes |
 |---|---|---|---|
 | 1 | 01_chapter_lab_scope | No | Period study / brass microscope hero |
-| 2 | 02_lens_flare_eye | No | Looking into eyepiece · light spectrum |
-| 3 | 03_drop_of_water | No | Bead of pond water on slide |
-| 4 | 04_plunge_into_drop | No | Camera dive into the drop |
+| 2 | 03_drop_of_water | No | Bead of pond water on slide (VO: drop is a kingdom) |
+| 3 | 02_lens_flare_eye | No | Eyepiece · light spectrum (VO: look closer / light bends) |
+| 4 | 04_plunge_into_drop | No | Viewpoint dive into the drop — **no photographic camera** |
+
 | 5 | 05_microbial_city | No | Faceless rods/spheres swirling (sparse→rich, not cute) |
 | 6 | 06_explorer_eyepiece | Yes | Explorer leans in · startles · exits |
 | 7 | 07_tiny_world_hold | No | Living drop galaxy continues |

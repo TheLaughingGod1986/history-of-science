@@ -36,7 +36,8 @@ FPS = 24
 FACELESS = (
     "Keep microbes FACELESS if present: rods/spheres/spirals only. "
     "NO eyes NO mouths NO smiles NO winks. Continuous motion whole clip — never freeze. "
-    "Premium 3D cartoon matching start frame. Silent. NOT photoreal. NOT modern hospital."
+    "Premium 3D cartoon matching start frame. Silent. NOT photoreal. NOT modern hospital. "
+    "FORBIDDEN: photographic cameras, camcorders, film cameras, multi-lens gadgets."
 )
 
 
@@ -105,7 +106,7 @@ def main() -> None:
     ]
 
     if not missing:
-        print("  all 10 Flow clips present — assemble only (no Flow)", flush=True)
+        print(f"  all {len(plates)} Flow clips present — assemble only (no Flow)", flush=True)
         paths = clip_paths(plates)
         meta["plates"] = [{"id": p.stem, "skipped": True, "path": str(p)} for p in paths]
     else:
@@ -115,7 +116,7 @@ def main() -> None:
             ctx, page = flow.launch_context(p, headed=False, profile=profile)
             try:
                 for i, plate in enumerate(plates):
-                    still = REFS / f"{plate['id']}_v01.jpg"
+                    still = REFS / plate.get("start_still", f"{plate['id']}_v01.jpg")
                     dest = RAW / f"{plate['id']}_v01.mp4"
                     if not still.exists():
                         raise SystemExit(f"missing still {still}")

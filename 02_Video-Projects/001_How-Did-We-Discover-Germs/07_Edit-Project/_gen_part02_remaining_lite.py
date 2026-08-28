@@ -21,7 +21,9 @@ RAW = PROJ / "04_Generated-Clips" / "part02" / "raw" / "v01_flow"
 FACELESS = (
     "Keep microbes FACELESS if present: rods/spheres/spirals only. "
     "NO eyes NO mouths NO smiles. Continuous motion whole clip — never freeze. "
-    "Premium 3D cartoon matching start frame. Silent. NOT photoreal. NOT modern hospital."
+    "Premium 3D cartoon matching start frame. Silent. NOT photoreal. NOT modern hospital. "
+    "FORBIDDEN: photographic cameras, camcorders, film cameras, multi-lens gadgets, "
+    "steampunk cameras, floating cameras inside the droplet."
 )
 MODEL = "Veo 3.1 - Lite"
 LIMIT_RE = re.compile(
@@ -51,7 +53,7 @@ def is_daily_limit(err: BaseException, page) -> str | None:
 
 
 def main() -> None:
-    only = {x.strip() for x in os.environ.get("HOS_PLATE_ONLY", "10_pullback_to_lab").split(",") if x.strip()}
+    only = {x.strip() for x in os.environ.get("HOS_PLATE_ONLY", "04_plunge_into_drop").split(",") if x.strip()}
     RAW.mkdir(parents=True, exist_ok=True)
     for junk in RAW.glob("*.nosound.mp4"):
         if junk.stat().st_size < 400_000:
@@ -64,7 +66,7 @@ def main() -> None:
             for i, plate in enumerate(PLATES, 1):
                 if only and plate["id"] not in only:
                     continue
-                still = REFS / f"{plate['id']}_v01.jpg"
+                still = REFS / plate.get("start_still", f"{plate['id']}_v01.jpg")
                 dest = RAW / f"{plate['id']}_v01.mp4"
                 if not still.exists():
                     raise SystemExit(f"missing still {still}")
