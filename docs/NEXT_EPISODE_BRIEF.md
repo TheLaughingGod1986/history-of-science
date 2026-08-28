@@ -1,10 +1,10 @@
 # Next episode brief — Growth System v2
 
-**Locked next (16 Aug 2026): 007 Neutron Star.** Script passed. Omni 1-min path (PR 18). Do not start 013 Moon. Simulation is 015.
+**Locked next: 001 How Did We Discover Germs** (`02_Video-Projects/001_How-Did-We-Discover-Germs/`). Orbit episode folders (Aliens, Neutron Star, etc.) are archived under `_archive_orbit/` — not HOS current work.
 
 Generated: 2026-08-06T14:05:59.670Z (snapshot below is historical; queue lock above is current)
 
-**Candidate next topic:** 007 Neutron Star
+**Candidate next topic:** 001 How Did We Discover Germs
 
 ## Channel snapshot (imported metrics)
 
