@@ -68,3 +68,18 @@ Plate 10 landed in ~72s after that fix (Lite, start-frame Animate path).
 ## Next
 
 Ben UAT `hos_001_part02_rough_v01.mp4`. Pass / regen notes. Then Part 03 only.
+
+## v03 ward remint (in progress — 2026-08-28)
+
+Ben UAT FAIL on v01/v02 0:53–1:01 still-push. Root cause: v02 start still was a wide high-angle locked ward → Flow Lite only Ken-Burned.
+
+**v03 plan (do not declare PASS):**
+1. REJECT `08_ward_vs_lens_v02` — do not splice it again.
+2. New tighter 16:9 start still `04_Generated-Clips/part02/refs/08_ward_vs_lens_v03.jpg` (large mid-stride nurse + brass microscope + sparse faceless germs).
+3. One Flow **Veo 3.1 - Lite** I2V with **locked camera** + acting prompt (nurses walk, steam/cloth move). arrow_forward send only.
+4. Visual confirm real subject motion before splice; remint once if still-push.
+5. Splice only 0:53–1:01 of v01; keep v01 audio → `hos_001_part02_rough_v03.mp4`.
+6. Upload v03 onto release `hos-001-uat-cuts` alongside v01/v02. STOP for UAT.
+
+Scripts: `_mint_part02_ward_v03.py` · `_splice_part02_v03_ward.py`
+
