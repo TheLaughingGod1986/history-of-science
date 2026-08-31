@@ -1,10 +1,26 @@
 # Deploy Content Ops on Vercel (Postgres)
 
-Public host for `/go/{slug}` and click persistence. Use the Vercel `*.vercel.app` URL (or a custom domain you control later). SQLite file DB is **not** the production path.
+Public host for `/go/{slug}` and click persistence. Locked production origin:
 
-## Vercel project setup
+**`https://history-of-science-content-ops.vercel.app`**
 
-1. Import this monorepo into Vercel.
+Do **not** use `orbit-content-ops.vercel.app` (Orbit With Ben). SQLite file DB is **not** the production path.
+
+Live infra status / blockers: `00_Brand/Channel-Setup/HOS_CLOUD_INFRASTRUCTURE.md`.
+
+## Vercel project (created 28 Aug 2026)
+
+| Field | Value |
+|---|---|
+| Project | `history-of-science-content-ops` |
+| Project id | `prj_GQglbnYlh6fZicGZGl8AhLHSWz3j` |
+| Team | `ben's projects` |
+| Git | `TheLaughingGod1986/history-of-science` · branch `main` |
+| Root Directory | `07_Content-Ops` |
+
+If recreating from scratch:
+
+1. Import this monorepo into Vercel (or reuse the project above).
 2. Set **Root Directory** to `07_Content-Ops` (Project Settings → General).
 3. Framework Preset: Next.js (auto-detected).
 4. Build Command (default from `package.json`):  
@@ -22,7 +38,8 @@ Set these on the Vercel project for **Production** and **Preview**:
 |----------|---------|
 | `DATABASE_URL` | Pooled Postgres URL for the app (Neon pooler, Supabase pooler, Vercel Postgres, etc.) |
 | `DIRECT_URL` | Direct (non-pooled) URL for `prisma migrate deploy`. If your host has no pooler, set `DIRECT_URL` to the **same value** as `DATABASE_URL`. |
-| `APP_BASE_URL` | Public origin of this deploy, e.g. `https://YOUR-PROJECT.vercel.app` |
+| `APP_BASE_URL` | `https://history-of-science-content-ops.vercel.app` |
+| `CONTENT_OPS_OPERATOR_PASSWORD` | Operator login for mutating dashboard actions |
 | `AMAZON_ASSOCIATE_TAG` | Set in the Vercel dashboard only (Production + Preview), e.g. the live Associates tag. Never commit the value. `/go` stamps `tag=` from this env at redirect time. |
 | `AFFILIATE_REDIRECT_BASE_URL` | Optional. Defaults to `${APP_BASE_URL}/go`. |
 | `ORBIT_TOKEN_ENCRYPTION_KEY` | Required in production for OAuth token encryption (see `.env.example`). |
