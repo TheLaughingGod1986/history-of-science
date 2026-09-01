@@ -1,39 +1,38 @@
 # Production status — 001 How Did We Discover Germs?
 
-**Queue (27 Aug 2026):** This is the film to finish. Then one more HOS long. Then compare Veo vs Omni — do not rewrite Orbit Omni until that compare. `hos-finish-then-compare-omni.mdc`
+**Queue:** Finish this film, then one more HOS long, then compare Veo vs Omni. `hos-finish-then-compare-omni.mdc`
 
 | Step | Status |
 |---|---|
-| Topic score | DONE |
-| Cluster plan | DONE |
-| Pre-build VidIQ audit | SIGNED (live VidIQ re-score before upload) |
-| Master script | `germs_script_master_v01.md` |
-| Script / gate | **PASS 90.4** |
-| Shorts cadence | Cluster 4–6 · **not daily** |
-| Part 01 VO | DONE · Ben Orbit Narrator |
-| Part 01 picture | **PASS — `hos_001_part01_rough_v08.mp4`** |
-| Style / microbe / motion locks | **LOCKED** |
-| Part 02 VO + stills | DONE |
-| Part 02 picture | **10/10 Flow I2V** · ward beat **v04 remint** (locked cam) spliced into `hos_001_part02_rough_v04.mp4` (~76.4s). **STOP for Ben UAT** — watch **0:53–1:01**. Not agent PASS. |
-| Parts 03–05 | Blocked until Ben passes Part 02 |
-| Broadcast + Shorts | Later (Shorts only after long is public; zero `/go/` on Shorts) |
+| Topic / cluster / VidIQ pre-build | DONE |
+| Master script | `germs_script_master_v01.md` · **PASS 90.4** |
+| Part 01 picture | **LOCKED** `hos_001_part01_rough_v21.mp4` |
+| Part 02 picture | **LOCKED** `hos_001_part02_rough_v12.mp4` |
+| Part 03 picture | **LOCKED** `hos_001_part03_LOCKED_v08.mp4` |
+| Part 04 | **STOP for UAT** on `hos_001_part04_rough_v07.mp4` |
+| Part 05 | Blocked until Part 04 PASS |
+| Broadcast + Shorts | Later (Shorts only after the long is public; zero `/go/` on Shorts) |
 
-## Artifacts
+## Locked artifacts
 
-- Part 01 locked: `/opt/cursor/artifacts/hos_001_part01_LOCKED_v08.mp4`
-- Part 02 real plates: `04_Generated-Clips/part02/raw/v01_flow/` (**01–10**)
-- Part 02 still-push (REJECT): `09_Final-Export/hos_001_part02_rough_v01_STILLPUSH_REJECT.mp4`
-- Part 02 animated rough (baseline): `09_Final-Export/hos_001_part02_rough_v01.mp4`
-- Part 02 **UAT cut:** `09_Final-Export/hos_001_part02_rough_v04.mp4` (ward 0:53–1:01 = `raw/v04_flow/08_ward_vs_lens_v04.mp4`)
-- Do **not** splice `08_ward_vs_lens_v02` / `v03` again
+- Part 01: `09_Final-Export/hos_001_part01_rough_v21.mp4`
+- Part 02: `09_Final-Export/hos_001_part02_rough_v12.mp4`
+- Part 03: `09_Final-Export/hos_001_part03_LOCKED_v08.mp4`  
+  sha256 `7e7ce4d5dd909888a222983b58972dc08612442c51a65e6bf619f33f3e08b368`  
+  Dur 71.292s · VO `part03_childbirth_ward_v01`  
+  Superseded: `hos_001_part03_LOCKED_v05.mp4`
 
-## Quota (2026-08-28)
+## Part 04 watch
 
-- **Gemini Veo API:** prepaid depleted (separate from Free Trial / GDP).
-- **Flow Ultra:** plate **10** Lite I2V completed after Ben confirmed **52 credits**. Send-button bug (plus vs arrow) was why earlier retries sat at `gen=False` even with credits.
+- Cut: `09_Final-Export/hos_001_part04_rough_v07.mp4`
+- Also in **HOS UAT**
+- sha256 `52192b3edc3dffacea6a650b714b23a091a010880d5a125937405eb9f9c52a71`
+- Dur **82.560s** · VO 81.760s (`part04_proof_in_a_flask_v01` — do not remint)
+- v01–v06 / `picture_only_v01` are superseded
+- Last remint: `07_bloom_cloud` v07 Fast I2V — planted flask (camera orbit + broth swirl). First sliding v07 archived `_rejected_slide_07_bloom_cloud_v07.mp4`.
 
 ## Next
 
-1. **Ben UAT** `hos_001_part02_rough_v04.mp4` (ward 0:53–1:01). Do not start Part 03 until pass.
-2. After pass: write Part 03 script → VO → Lite plates one minute at a time.
-3. Do not start HOS 002 or spend Omni on Neutron Star while this minute is open.
+1. Part 04 `hos_001_part04_rough_v07.mp4` in **HOS UAT**.
+2. Do not start Part 05 until Part 04 PASS.
+3. Do not remint Part 03. Do not remint Part 04 VO. Do not spend Omni on Neutron Star. Do not start HOS 002.
