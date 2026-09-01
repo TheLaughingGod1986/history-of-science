@@ -236,10 +236,16 @@ def main() -> None:
             print(f"projects={len(hrefs)}", flush=True)
             for href in hrefs[:MAX_PROJECTS]:
                 print(f"  {href}", flush=True)
-            if not hrefs:
+            prefer = [h for h in hrefs if PREFER_PROJECT in h]
+            rest = [h for h in hrefs if PREFER_PROJECT not in h]
+            ordered = prefer + rest
+            if not ordered:
                 raise SystemExit("STOP: no Flow projects to harvest. Do not Create yet.")
-            for href in hrefs[:MAX_PROJECTS]:
+            for href in ordered[:MAX_PROJECTS]:
                 harvest_project(page, href, seen, harvested)
+                if any(h.get("moves") for h in harvested):
+                    print("moving take found — stop visiting more projects", flush=True)
+                    break
         finally:
             ctx.close()
 

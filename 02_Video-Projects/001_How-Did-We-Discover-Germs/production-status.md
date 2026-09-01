@@ -9,7 +9,7 @@
 | Part 01 picture | **LOCKED** `hos_001_part01_rough_v21.mp4` |
 | Part 02 picture | **LOCKED** `hos_001_part02_rough_v12.mp4` |
 | Part 03 picture | **LOCKED** `hos_001_part03_LOCKED_v08.mp4` · UAT remint `hos_001_part03_rough_v09.mp4` |
-| Part 04 | Harvest/rebuild `07_bloom_cloud` → `hos_001_part04_rough_v09.mp4` |
+| Part 04 | **STOP for UAT** on `hos_001_part04_rough_v09.mp4` |
 | Part 05 | Parked until Part 04 PASS |
 | Broadcast + Shorts | Later (Shorts only after the long is public; zero `/go/` on Shorts) |
 
@@ -30,15 +30,17 @@
 - Reminted `06_explorer_crosses_v09` Fast I2V (OTS walk, no palm germ)
 - Do **not** overwrite `LOCKED_v08` or rough_v01/v02
 
-## Part 04 watch
+## Part 04 UAT remint (not locked)
 
-- Parent FAIL: `hos_001_part04_rough_v08.mp4` sha256 `89bfe1ecdfba3a12…` Dur **82.560s**
-- Next export: `hos_001_part04_rough_v09.mp4` after harvest of `07_bloom_cloud`
-- VO stays `part04_proof_in_a_flask_v01` — do not remint
-- Do not remint 01, 06, 08, 09
+- Cut: `09_Final-Export/hos_001_part04_rough_v09.mp4` (also **HOS UAT**)
+- sha256 `abd8e969e761c0b8e10714f0fa1eb272c57c3550b52c7a49d89b600454524c86`
+- Dur **82.560s** · VO 81.760s (`part04_proof_in_a_flask_v01`)
+- `07_bloom_cloud_v09` harvested from Flow project `a686d24f` (`_harvest_07_5f22ca4e.mp4`) — flask on bench, room is the frame, mean 5.90 / first 18.91
+- Parent FAIL v08 left in place (`89bfe1ecdfba3a12…`)
+- Did not remint 01, 06, 08, 09. No Create for 07.
 
 ## Next
 
-1. Part 03 `hos_001_part03_rough_v09.mp4` in **HOS UAT** — not locked.
-2. Part 04 harvest flask-grid takes, then assemble v09. Do not start Part 05.
+1. Part 03 `hos_001_part03_rough_v09.mp4` and Part 04 `hos_001_part04_rough_v09.mp4` in **HOS UAT** — neither locked.
+2. Do not start Part 05 until Part 04 PASS.
 3. Do not remint Part 01 v21 or Part 02 v12. Do not spend Omni on Neutron Star.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Part 04 v08 rough — Proof in a Flask.
+"""Part 04 v09 rough — Proof in a Flask.
 
 Chapter after moving picture. Side labels snap to locked times. No PASTEUR.
 Ominous ward bed. Period lab FX. No metal tray. No flask clink off-flask.
