@@ -30,7 +30,7 @@ META = PROJ / "07_Edit-Project/part03_gen_meta_v02.json"
 LOCKED_01 = "01_hands_arrive"
 LOCKED_01_SHA = "03740f749d43be0ce5977b08713adaaf9924ea098cea6aac8a5daf40fa8e522f"
 T2V_ID = "07_mocked"
-T2V_DEST = RAW / "07_mocked_v10.mp4"
+T2V_DEST = RAW / "07_mocked_v11.mp4"
 KEEP = {
     "01_hands_arrive",
     "02_perfume_windows",
@@ -42,7 +42,7 @@ KEEP = {
     "09_they_still_sneer",
     "10_flask_in_the_room",
 }
-STILL_VERS = ("v10", "v09", "v05", "v04", "v03", "v02")
+STILL_VERS = ("v11", "v10", "v09", "v05", "v04", "v03", "v02")
 GERM_ARCHIVE = {
     "03_bedside_hands": "0a1cb868d9e42d31d65cbf40a7bc010f43c416aeed84d7bad034ca9525271004",
     "04_autopsy_to_ward": "d955cda1e503f3bab6ad278671d2e655e42e4bf3a938b2030ea3b751b4e644cd",
@@ -283,22 +283,32 @@ def main() -> None:
                     f"\n=== Fast T2V {plate['id']} ({i+1}/{len(plates)}) ===",
                     flush=True,
                 )
-                try:
-                    info = mint_t2v(page, plate, dest)
-                except Exception as e:
-                    print(f"STOP: Flow failed on {plate['id']}: {e}", flush=True)
-                    META.write_text(json.dumps(meta, indent=2))
-                    raise SystemExit(
-                        "STOP: Create/arrow_forward died. Do not loop. "
-                        f"Last plate={plate['id']}"
-                    ) from e
-                if still_fail(info):
-                    archive_reject(dest, "still")
-                    META.write_text(json.dumps(meta, indent=2))
-                    raise SystemExit(
-                        f"STOP: still-push on {plate['id']} after successful Create. "
-                        "Prefer STOP over credit-burn remint. QA frames extracted."
-                    )
+                remint_used = False
+                while True:
+                    try:
+                        info = mint_t2v(page, plate, dest)
+                    except Exception as e:
+                        print(f"STOP: Flow failed on {plate['id']}: {e}", flush=True)
+                        META.write_text(json.dumps(meta, indent=2))
+                        raise SystemExit(
+                            "STOP: Create/arrow_forward died. Do not loop. "
+                            f"Last plate={plate['id']}"
+                        ) from e
+                    if still_fail(info):
+                        archive_reject(dest, "still")
+                        if remint_used:
+                            META.write_text(json.dumps(meta, indent=2))
+                            raise SystemExit(
+                                f"STOP: still-push on {plate['id']} after one remint. "
+                                "Do not loop. QA frames extracted."
+                            )
+                        remint_used = True
+                        print(
+                            "  QA motion reject — one remint only (Create still alive)",
+                            flush=True,
+                        )
+                        continue
+                    break
                 meta.setdefault("plates", []).append({"id": plate["id"], **info})
                 META.write_text(json.dumps(meta, indent=2))
         finally:

@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
-"""Part 04 Flow Veo 3.1 Fast — 07_bloom_cloud T2V only.
+"""Part 04 Flow Veo 3.1 Fast — 05 + 06 T2V only for v14.
 
-KEEP 01–06 + 08–12 from v10. 07 only: Fast T2V. dest 07_bloom_cloud_v11.mp4.
-Leave 07_bloom_cloud_v10.mp4 in place (FAIL take — do not delete).
-No still. No Add to Prompt. No Ingredients. Do not harvest.
-Do not upload 07_bloom_cloud_v10.jpg or any start frame.
-If Create/arrow_forward dies: STOP. No Omni / Quality / Lite.
-QA reject + Create alive: ONE remint only. Then STOP.
+KEEP 07_bloom_cloud_v13 (living 0:43–0:49 splice) and all other plates.
+No still. No Add to Prompt. If Create dies: STOP.
 """
 from __future__ import annotations
 
@@ -30,15 +26,18 @@ PLATES_JSON = PROJ / "07_Edit-Project/parts/part-04_plates_v01.json"
 REFS = PROJ / "04_Generated-Clips/part04/refs"
 RAW = PROJ / "04_Generated-Clips/part04/raw/v01_fast_probe"
 META = PROJ / "07_Edit-Project/part04_gen_meta_v01.json"
-T2V_ID = "07_bloom_cloud"
-T2V_DEST = RAW / "07_bloom_cloud_v11.mp4"
+T2V_DESTS = {
+    "06_explorer_watches": RAW / "06_explorer_watches_v14.mp4",
+    "05_tip_the_trap": RAW / "05_tip_the_trap_v14.mp4",
+}
+T2V_ORDER = ("06_explorer_watches", "05_tip_the_trap")
+T2V_IDS = set(T2V_ORDER)
 KEEP = {
     "01_question_mark_flask",
     "02_boil_broth",
     "03_dust_in_the_curve",
     "04_still_clear",
-    "05_tip_the_trap",
-    "06_explorer_watches",
+    "07_bloom_cloud",
     "08_passengers",
     "09_sceptics_watch",
     "10_an_address",
@@ -145,8 +144,8 @@ def still_for(plate_id: str) -> Path:
 
 
 def dest_for(plate_id: str) -> Path:
-    if plate_id == T2V_ID:
-        return T2V_DEST
+    if plate_id in T2V_DESTS:
+        return T2V_DESTS[plate_id]
     still = still_for(plate_id)
     for ver in STILL_VERS:
         if still.name.endswith(f"_{ver}.jpg"):
@@ -155,8 +154,8 @@ def dest_for(plate_id: str) -> Path:
 
 
 def mint_t2v(page, plate: dict, dest: Path) -> dict:
-    if plate["id"] != T2V_ID:
-        raise SystemExit(f"STOP: refusing to mint {plate['id']} (only {T2V_ID} T2V)")
+    if plate["id"] not in T2V_IDS:
+        raise SystemExit(f"STOP: refusing to mint {plate['id']} (only {sorted(T2V_IDS)} T2V)")
     prompt = plate["prompt"]
     print(
         f"  T2V exact prompt ({len(prompt)} chars) start_frame=None scenery_only=True",
@@ -203,18 +202,23 @@ def main() -> None:
     plates = json.loads(PLATES_JSON.read_text())["plates"]
     RAW.mkdir(parents=True, exist_ok=True)
     for slug in sorted(KEEP):
-        p = dest_for(slug)
-        if not veo.already_done(p, min_bytes=400_000):
-            raise SystemExit(f"STOP: keep-plate missing {p}")
+        p = None
+        for ver in ("v14", "v13", "v12", "v11", "v10", "v09", "v08", "v07", "v06", "v05", "v04", "v03", "v02", "v01"):
+            cand = RAW / f"{slug}_{ver}.mp4"
+            if veo.already_done(cand, min_bytes=400_000):
+                p = cand
+                break
+        if p is None:
+            raise SystemExit(f"STOP: keep-plate missing {slug}")
         print(f"KEEP {slug} sha256={sha256(p)} — will not remint", flush=True)
     missing = [
         p for p in plates
         if p["id"] not in KEEP
         and not veo.already_done(dest_for(p["id"]), min_bytes=400_000)
     ]
-    extra = [p["id"] for p in missing if p["id"] != T2V_ID]
+    extra = [p["id"] for p in missing if p["id"] not in T2V_IDS]
     if extra:
-        raise SystemExit(f"STOP: unexpected missing plates {extra} — only {T2V_ID} T2V")
+        raise SystemExit(f"STOP: unexpected missing plates {extra} — only {sorted(T2V_IDS)} T2V")
     meta: dict = {"engine": "flow-ui", "model": MODEL, "plates": []}
     if META.exists():
         try:
@@ -243,20 +247,22 @@ def main() -> None:
             flow.dismiss_banners(page)
             if not flow.looks_logged_in(page):
                 raise SystemExit("STOP: Flow not logged in. Do not loop.")
-            for i, plate in enumerate(plates):
+            by_id = {p["id"]: p for p in plates}
+            for i, plate_id in enumerate(T2V_ORDER):
+                plate = by_id[plate_id]
                 dest = dest_for(plate["id"])
                 if plate["id"] in KEEP:
                     print(f"  skip keep {dest.name}", flush=True)
                     continue
-                if plate["id"] != T2V_ID:
+                if plate["id"] not in T2V_IDS:
                     raise SystemExit(
-                        f"STOP: refusing {plate['id']} — only {T2V_ID} T2V this run"
+                        f"STOP: refusing {plate['id']} — only {list(T2V_ORDER)} T2V this run"
                     )
                 if veo.already_done(dest, min_bytes=400_000):
                     print(f"  skip {dest.name}", flush=True)
                     continue
                 print(
-                    f"\n=== Fast T2V {plate['id']} ({i+1}/{len(plates)}) ===",
+                    f"\n=== Fast T2V {plate['id']} ({i+1}/{len(T2V_ORDER)}) ===",
                     flush=True,
                 )
                 remint_used = False

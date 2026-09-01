@@ -28,7 +28,7 @@ MUSIC = PROJ / "05_Music"
 BED_SRC = MUSIC / "hos_001_part01_ominous_ward_v12.wav"
 BED = MUSIC / "hos_001_part03_dry_ward_v01.wav"
 P01_SFX = PROJ / "06_Sound-Effects/v12"
-OUT = PROJ / "09_Final-Export/hos_001_part03_rough_v10.mp4"
+OUT = PROJ / "09_Final-Export/hos_001_part03_rough_v11.mp4"
 ICLOUD = Path(
     "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT"
 )
@@ -38,14 +38,20 @@ FPS = 24
 FADE = 14 / 24
 HOLD = 4.20
 CHAPTER = ("chapter", "A childbirth ward, 1840s", 1.50, 5.00, "left")
-CLIP_VERS = ("v10", "v09", "v05", "v04", "v03", "v02")
+CLIP_VERS = ("v11", "v10", "v09", "v05", "v04", "v03", "v02")
+# Needle labels except SEMMELWEIS / HANDWASHING — those are locked so
+# SEMMELWEIS stays on the name/hallway beat and never sits on soap hands.
 NEEDLES = [
     ("living_seeds", "LIVING SEEDS", "living seeds", "right"),
     ("hitchhiker", "HITCHHIKER", "hitchhiker", "right"),
-    ("semmelweis", "SEMMELWEIS", "semmelweis", "right"),
-    ("handwashing", "HANDWASHING", "handwashing", "right"),
     ("the_vector", "THE VECTOR", "you are the vector", "right"),
     ("a_flask", "A FLASK", "flask", "right"),
+]
+# SEMMELWEIS = VO "Semmelweis" on hallway (plate 04), off before wash (28.40).
+# HANDWASHING = VO "Handwashing" on the soap close-up (plate 05).
+LOCKED_LABELS = [
+    ("semmelweis", "SEMMELWEIS", 26.54, 28.15, "right"),
+    ("handwashing", "HANDWASHING", 34.78, 35.70, "right"),
 ]
 
 
@@ -179,6 +185,10 @@ def main() -> None:
             t_out = min(t_in + max(1.20, nxt - t_in - 0.15), cut - 0.02)
         cards.append((slug, text, t_in, t_out, side))
         print(f"CARD {text} {t_in:.2f}-{t_out:.2f} {side}", flush=True)
+    for slug, text, t_in, t_out, side in LOCKED_LABELS:
+        cards.append((slug, text, t_in, min(t_out, cut - 0.02), side))
+        print(f"CARD {text} {t_in:.2f}-{t_out:.2f} {side} locked", flush=True)
+    cards.sort(key=lambda x: 0 if x[0] == "chapter" else x[2])
 
     pic = FX_DIR / "_picture_xfade.mp4"
     FX_DIR.mkdir(parents=True, exist_ok=True)
