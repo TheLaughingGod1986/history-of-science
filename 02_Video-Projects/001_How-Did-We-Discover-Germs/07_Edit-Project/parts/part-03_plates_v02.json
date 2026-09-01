@@ -1,0 +1,67 @@
+{
+  "part": 3,
+  "title": "Bad Air vs Living Seeds",
+  "chapter_card": {
+    "text": "A childbirth ward, 1840s",
+    "t_in": 1.5,
+    "t_out": 5.0,
+    "side": "left"
+  },
+  "style_lock": "hos_001_part01_rough_v21",
+  "engine": "Veo 3.1 - Fast",
+  "clip_use_s": 7.5,
+  "xfade_s": 0.4,
+  "notes": "Scenery-first. 01 stays. Explorer 06 OTS/profile garnish only — remint v09. No glowing palm. Chapter card left after moving picture.",
+  "plates": [
+    {
+      "id": "01_hands_arrive",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. ACTION OPEN: unwashed doctor's hands and a folded cloth are already arriving at a childbirth bed — they reach, the cloth unfolds, fingers touch the rail. Camera follows the hands into the warm ward. Continuous translation the whole 8 seconds. SCENERY FIRST: the bed, curtains, and hands are the picture. NO living cloud. NO germ city. NO split-world. NO floating macro microbes. NO Explorer. NO Orbit. Silent. No readable text. Not photoreal. Not a modern hospital."
+    },
+    {
+      "id": "02_perfume_windows",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Camera eases toward the tall arched window. White curtains billow in a breeze. Herb steam rises from the pot on the sill. The nurse on the left looks out, a small head turn, then stays at the sill. HARD LOCK: the window FRAME DOES NOT MOVE. Do NOT open, swing, hinge, or rotate any sash. The right side of the window stays parked. Solid geometry the whole 8 seconds. No warp. No melt. No ghost double. No extra overlapping frame. Continuous 8s. SCENERY FIRST. ZERO microbes. NO living cloud. NO germ city. NO split-world. NO floating rods. NO Explorer. NO Orbit. Silent. No readable text."
+    },
+    {
+      "id": "03_bedside_hands",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Slightly chubby prestige hands already HOLD a closed steel forceps in a stable grip. The other hand turns the white cloth on the tray. Camera eases around the hands and tray. Continuous 8s. HARD LOCK: do NOT pick up the scissors. The scissors stay parked flat on the tray in the SAME orientation the whole 8 seconds \u2014 loops stay loops, blades stay blades. Do NOT flip, invert, rotate, or swap top and bottom of any instrument. No hinged snap. No morph. Only forceps, scissors, and cloth on the tray. No extra objects. No overlay graphics. No floating particles. No Explorer. No Orbit. Silent. No text."
+    },
+    {
+      "id": "04_autopsy_to_ward",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Two 1840s doctors in dark coats are ALREADY walking in the first second — from a dim covered autopsy table through a doorway into the warm childbirth ward. A real walk, continuous translate. Not an empty corridor. Coats and cloth move. Continuous 8s. SCENERY FIRST. ZERO microbes in the aisle. NO floating germs. NO rods. NO spheres. NO germ overlay. NO living cloud. NO germ city. NO split-world. NO gore. NO Explorer. NO Orbit. Silent. No text. Not modern white lab coats."
+    },
+    {
+      "id": "05_wash_works",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. A porcelain basin FILLS the near frame. Hands are ALREADY washing with soap in the first second — water pours and ripples. Camera holds the basin as the subject, with a quiet occupied ward behind. Continuous 8s. HARD LOCK: do NOT pull out to an empty aisle. No frozen beds. No Ken Burns still-push. ZERO microbes in the sink. NO floating germs. NO rods. NO spheres. NO living cloud. NO germ city. NO Explorer. NO Orbit. Silent. No text."
+    },
+    {
+      "id": "06_explorer_crosses",
+      "explorer": true,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Exactly one Explorer: messy brown hair, gold glasses, teal trenchcoat, tan vest, brown bow tie, satchel. OVER-THE-SHOULDER / PROFILE garnish. He is ALREADY walking the occupied ward aisle in the first second. He watches. Hands at sides or in pockets. The WARD is the hero. HARD LOCK: he NEVER turns to face the camera. He NEVER presents. He NEVER raises a finger. He NEVER holds a glowing microbe in his palm. Reject a faced host. Reject a lecture pose. Single Explorer. NO twins. NO Orbit. NO living cloud. Silent. No text."
+    },
+    {
+      "id": "07_mocked",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Two DISTINCT 1840s colleagues are ALREADY at the porcelain wash basin and turning their backs dismissively in the first second — coats swinging, a small step along the wall at most, they STAY at the basin. IDENTITY LOCK: LEFT older stocky man, receding gray hair, FULL gray beard, charcoal coat, black bow tie. RIGHT younger lean man, dark swept hair, CLEAN-SHAVEN, prominent chin, longer black frock coat. They are NOT twins. NOT two identical dark-bearded men. HARD LOCK: there is NO hospital bed in this shot. Do NOT introduce a bed, iron lung, mattress, or patient. Do NOT walk through furniture. Solid bodies. Continuous 8s. SCENERY FIRST. The air is EMPTY and CLEAN. ZERO microbes. NO floating rods. NO spiked spheres. NO dust-germ stars. NO living cloud. NO germ overlay. NO Explorer. NO Orbit. Silent. No text."
+    },
+    {
+      "id": "08_prestige_hands",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Hero close-up of 1840s prestige hands — linen cuffs, idle flex on a childbirth-ward rail. Soft lamp flicker. Camera slowly orbits the cuffs. Continuous 8s, never a still zoom. SCENERY FIRST. NOT a germ closeup. NO living cloud. NO germ city. NO Explorer. NO Orbit. Silent. No text."
+    },
+    {
+      "id": "09_they_still_sneer",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. In the same occupied 1840s ward, two DIFFERENT colleagues fold their arms and refuse, then turn away from a working basin. IDENTITY LOCK: LEFT older BIGGER / stocky / slightly chubby man, receding gray hair, FULL gray beard, broader chest, charcoal coat, black bow tie. RIGHT younger SLIM man \u2014 lean face, lean frame, NOT chubby, NOT a double chin \u2014 dark swept hair, CLEAN-SHAVEN, prominent chin, longer black frock coat. They are not twins. Do NOT make both men chubby. Camera trucks with the refusal. Continuous 8s. SCENERY FIRST. Occupied beds, not an empty aisle. No Ken Burns. No frozen empty ward. ZERO microbes. NO floating germ overlay. NO living cloud. NO germ city. NO Explorer. NO Orbit. Silent. No text."
+    },
+    {
+      "id": "10_flask_in_the_room",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. A Pasteur swan-neck glass flask sits on a wooden nightstand INSIDE the childbirth ward — brass beds stay visible behind it. The flask is an object in the room, not a bloom filling the frame. Camera eases past the table, stays in the ward. Continuous 8s. HARD LOCK: do NOT leave the ward. Not a library. Not a study desk. ZERO microbes on the table. NO spiked spheres. NO floating germs. NO living cloud. NO germ city. NO Explorer. NO Orbit. Silent. No text. Not modern lab plastics."
+    }
+  ]
+}
