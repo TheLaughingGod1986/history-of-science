@@ -21,7 +21,8 @@ PROJ = Path(__file__).resolve().parents[1]
 RAW = PROJ / "04_Generated-Clips/part04/raw/v01_fast_probe"
 META = PROJ / "07_Edit-Project/part04_harvest07_meta_v01.json"
 SKIP_PROJECT = "6edb3fca-da13-423f-bfd9-08e5b40be51f"  # Part 03 plate 06 mint
-MAX_PROJECTS = 8
+PREFER_PROJECT = "99d47c3d-90ff-4167-b56c-5c00a4d0a9e7"  # 17:27 flask grid
+MAX_PROJECTS = 4
 MAX_TILES = 16
 STILL_MEAN = 1.4
 STILL_FIRST = 2.0
@@ -225,11 +226,13 @@ def main() -> None:
         ctx, page = flow.launch_context(p, headed=True, profile=profile)
         try:
             page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
-            page.wait_for_timeout(2000)
+            page.wait_for_timeout(3500)
             flow.dismiss_banners(page)
+            page.wait_for_timeout(800)
             if not flow.looks_logged_in(page):
                 raise SystemExit("STOP: Flow not logged in. Do not Create.")
             hrefs = [h for h in project_hrefs(page) if SKIP_PROJECT not in h]
+            hrefs.sort(key=lambda h: (PREFER_PROJECT not in h, h))
             print(f"projects={len(hrefs)}", flush=True)
             for href in hrefs[:MAX_PROJECTS]:
                 print(f"  {href}", flush=True)
