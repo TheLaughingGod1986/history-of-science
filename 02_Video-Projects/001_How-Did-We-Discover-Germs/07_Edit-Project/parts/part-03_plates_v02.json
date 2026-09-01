@@ -11,7 +11,7 @@
   "engine": "Veo 3.1 - Fast",
   "clip_use_s": 7.5,
   "xfade_s": 0.4,
-  "notes": "Scenery-first. 01 stays. Explorer 06 HOLDS. Remint 07_mocked v10 backs-at-wash. Chapter card left after moving picture.",
+  "notes": "Scenery-first. 01 stays. Explorer 06 HOLDS. 07_mocked v10 is Fast T2V only — no still, no Ingredients. Chapter card left after moving picture.",
   "plates": [
     {
       "id": "01_hands_arrive",
@@ -46,7 +46,7 @@
     {
       "id": "07_mocked",
       "explorer": false,
-      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Two 1840s doctors seen from BEHIND at the wash basins — coats and hands only. They are ALREADY turning away / water already pouring in the first second. Camera eases into the living ward behind them (beds, lamps, nurse). HARD LOCK: they NEVER turn to face the camera. No portrait two-shot. No eye contact. Faces stay hidden. The ROOM is the hero. Continuous 8s. ZERO microbes. NO Explorer. NO Orbit. Silent. No text."
+      "prompt": "Animistry 3D cartoon, 1840s living childbirth ward, same house as the rest of the film. Faceless doctors in dark coats, seen from the back and side, shifting weight, turning slightly away from a washbasin in a crowded wooden ward. Beds and windows already moving. Not a portrait two-shot, not facing camera, no faces, no Explorer, no glowing microbes, no Ken Burns, no freeze. Camera slowly tracks with them as they refuse the basin. Continuous motion the whole clip."
     },
     {
       "id": "08_prestige_hands",

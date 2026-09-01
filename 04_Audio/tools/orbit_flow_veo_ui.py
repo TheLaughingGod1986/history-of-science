@@ -1177,11 +1177,9 @@ def flow_prompt(
             f"motion through the final frame. {body} Silent picture only. No text, no logos."
         )
     if scenery_only:
-        return (
-            f"{body} "
-            "SCENERY ONLY — no characters, no robots, no mascots, no text. "
-            "Silent picture only."
-        )
+        # T2V path: type the caller prompt exactly. Do not append
+        # "no characters" — HOS plates may include period figures.
+        return body
     return (
         f"{FLOW_I2V_PREFACE} {body} "
         "Match the attached Orbit identity image exactly. Silent picture only."
