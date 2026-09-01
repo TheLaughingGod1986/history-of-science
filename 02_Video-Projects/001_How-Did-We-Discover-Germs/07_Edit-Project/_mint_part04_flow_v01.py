@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Part 04 Flow Veo 3.1 Fast I2V → raw/v01_fast_probe.
 
-Mint all 10 plates. If Create/arrow_forward dies: STOP. Do not loop.
-Do not use Quality/Lite/Omni.
+Remint 07_bloom_cloud v10 only. Keep 01–06, 08–12.
+If Create/arrow_forward dies: STOP. Do not loop. No Quality/Lite/Omni.
+Do not harvest. Do not reuse v09 harvest clip.
 """
 from __future__ import annotations
 
@@ -26,12 +27,25 @@ PLATES_JSON = PROJ / "07_Edit-Project/parts/part-04_plates_v01.json"
 REFS = PROJ / "04_Generated-Clips/part04/refs"
 RAW = PROJ / "04_Generated-Clips/part04/raw/v01_fast_probe"
 META = PROJ / "07_Edit-Project/part04_gen_meta_v01.json"
-ZERO_GERM_IDS = {
+KEEP = {
     "01_question_mark_flask",
     "02_boil_broth",
     "03_dust_in_the_curve",
     "04_still_clear",
     "05_tip_the_trap",
+    "06_explorer_watches",
+    "08_passengers",
+    "09_sceptics_watch",
+    "10_an_address",
+    "11_result_returns",
+    "12_block_the_road",
+}
+STILL_VERS = ("v10", "v09", "v08", "v07", "v06", "v05", "v04", "v03", "v02")
+ZERO_GERM_IDS = {
+    "01_question_mark_flask",
+    "02_boil_broth",
+    "03_dust_in_the_curve",
+    "04_still_clear",
     "06_explorer_watches",
     "09_sceptics_watch",
     "10_an_address",
@@ -123,7 +137,7 @@ def first_second_motion(mp4: Path) -> float:
 
 def extract_frames(mp4: Path, dest_dir: Path) -> None:
     dest_dir.mkdir(parents=True, exist_ok=True)
-    for t, name in ((0.04, "t000"), (1.00, "t100"), (4.00, "t400")):
+    for t, name in ((0.04, "t000"), (1.00, "t100"), (4.00, "t400"), (7.20, "t720")):
         subprocess.run(
             [
                 "ffmpeg", "-y", "-ss", f"{t:.2f}", "-i", str(mp4),
@@ -144,7 +158,7 @@ def archive_reject(dest: Path, tag: str) -> Path | None:
 
 
 def still_for(plate_id: str) -> Path:
-    for ver in ("v07", "v06", "v05", "v04", "v03", "v02"):
+    for ver in STILL_VERS:
         p = REFS / f"{plate_id}_{ver}.jpg"
         if p.exists():
             return p
@@ -153,7 +167,7 @@ def still_for(plate_id: str) -> Path:
 
 def dest_for(plate_id: str) -> Path:
     still = still_for(plate_id)
-    for ver in ("v07", "v06", "v05", "v04", "v03", "v02"):
+    for ver in STILL_VERS:
         if still.name.endswith(f"_{ver}.jpg"):
             return RAW / f"{plate_id}_{ver}.mp4"
     return RAW / f"{plate_id}_v01.mp4"
@@ -202,9 +216,15 @@ def still_fail(info: dict) -> bool:
 def main() -> None:
     plates = json.loads(PLATES_JSON.read_text())["plates"]
     RAW.mkdir(parents=True, exist_ok=True)
+    for slug in sorted(KEEP):
+        p = dest_for(slug)
+        if not veo.already_done(p, min_bytes=400_000):
+            raise SystemExit(f"STOP: keep-plate missing {p}")
+        print(f"KEEP {slug} sha256={sha256(p)} — will not remint", flush=True)
     missing = [
         p for p in plates
-        if not veo.already_done(dest_for(p["id"]), min_bytes=400_000)
+        if p["id"] not in KEEP
+        and not veo.already_done(dest_for(p["id"]), min_bytes=400_000)
     ]
     meta: dict = {"engine": "flow-ui", "model": MODEL, "plates": []}
     if META.exists():
@@ -228,7 +248,7 @@ def main() -> None:
 
     failed: list[str] = []
     with sync_playwright() as p:
-        ctx, page = flow.launch_context(p, headed=False, profile=profile)
+        ctx, page = flow.launch_context(p, headed=True, profile=profile)
         try:
             page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
             page.wait_for_timeout(2000)
@@ -237,6 +257,9 @@ def main() -> None:
                 raise SystemExit("STOP: Flow not logged in. Do not loop.")
             for i, plate in enumerate(plates):
                 dest = dest_for(plate["id"])
+                if plate["id"] in KEEP:
+                    print(f"  skip keep {dest.name}", flush=True)
+                    continue
                 if veo.already_done(dest, min_bytes=400_000):
                     print(f"  skip {dest.name}", flush=True)
                     continue
@@ -270,12 +293,11 @@ def main() -> None:
                         ) from e
                     if still_fail(info):
                         archive_reject(dest, "still2")
-                        failed.append(plate["id"])
-                        print(
-                            f"  FAIL {plate['id']} still-push after one remint — continue",
-                            flush=True,
+                        META.write_text(json.dumps(meta, indent=2))
+                        raise SystemExit(
+                            f"STOP: still-push on {plate['id']} after one remint. "
+                            "Do not burn another Create. QA frames extracted."
                         )
-                        continue
                 meta.setdefault("plates", []).append({"id": plate["id"], **info})
                 META.write_text(json.dumps(meta, indent=2))
         finally:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Part 04 v09 rough — Proof in a Flask.
+"""Part 04 v10 rough — Proof in a Flask.
 
 Chapter after moving picture. Side labels snap to locked times. No PASTEUR.
 Ominous ward bed. Period lab FX. No metal tray. No flask clink off-flask.
@@ -27,7 +27,7 @@ FX_DIR = PROJ / "06_Sound-Effects/v01_part04_fx"
 MUSIC = PROJ / "05_Music"
 BED_SRC = MUSIC / "hos_001_part01_ominous_ward_v14_norm.wav"
 BED = MUSIC / "hos_001_part04_lab_bed_v06.wav"
-OUT = PROJ / "09_Final-Export/hos_001_part04_rough_v09.mp4"
+OUT = PROJ / "09_Final-Export/hos_001_part04_rough_v10.mp4"
 ICLOUD = Path(
     "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT"
 )
@@ -140,7 +140,7 @@ def main() -> None:
     clips = []
     for p in plates:
         chosen = None
-        for ver in ("v09", "v08", "v07", "v06", "v05", "v04", "v03", "v02"):
+        for ver in ("v10", "v09", "v08", "v07", "v06", "v05", "v04", "v03", "v02"):
             cand = RAW / f"{p['id']}_{ver}.mp4"
             if veo.already_done(cand, min_bytes=400_000):
                 chosen = cand

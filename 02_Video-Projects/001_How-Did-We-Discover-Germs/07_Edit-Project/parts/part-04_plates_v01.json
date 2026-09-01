@@ -26,12 +26,12 @@
     {
       "id": "04_still_clear",
       "explorer": false,
-      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Hero close-up of bright clear broth in the swan-neck flask body. A slow push-in. Soft lamp flicker on the glass. HARD LOCK: the liquid stays empty, clear, and bright the whole 8 seconds. NO white beads. NO pearls. NO bubbles sitting on the bottom. NO rods. NO spheres. ZERO microbes. Stay in an 1860s lab, not a hospital ward. NO Explorer. NO Orbit. Silent. No text. Never a still zoom freeze."
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. MEDIUM SHOT of the 1860s lab. The ROOM stays the frame. Swan-neck flask planted on the wooden bench — not a liquid macro, not a product CU. Camera already trucks the room in the first second. HARD LOCK: broth reads EMPTY and clear at this distance. ZERO specks. ZERO white dots. ZERO sediment. ZERO beads. ZERO rods. ZERO spheres. ZERO microbes. Do NOT push into a hero close-up of the liquid. Do NOT invent particles. Lamp flicker and camera move only. 1860s laboratory — wood, lamp, shelves — NOT a hospital ward. NO Explorer. NO Orbit. Silent. No text. Never freeze."
     },
     {
       "id": "05_tip_the_trap",
       "explorer": false,
-      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Stay in the 1860s LABORATORY — not a hospital ward. Period charcoal-coat hands ALREADY hold the flask tipped. Broth is ALREADY sitting in the S-curve trap. Camera slowly orbits the already-tipped flask. HARD LOCK: do not tip further. The open tip stays completely DRY the whole 8 seconds. NO drip. NO stream. NO hanging drop. NO puddle. NO pouring. NO funnel. Liquid NEVER exits the glass. Do NOT invent a hospital ward. Do NOT break the glass. ZERO microbes. NO Explorer. NO Orbit. Silent. No text."
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Stay in the 1860s LABORATORY. Period charcoal-coat hands ALREADY hold the flask in the RETURN pose: a ribbon of amber broth is ALREADY running FROM the S-curve trap BACK INTO the bulb. Dust specks ride that ribbon into the liquid. Camera slowly orbits. HARD LOCK: EXACTLY ONE swan neck. NO second chimney. NO side-branch. Glass is SOLID. Liquid stays ENTIRELY INSIDE the glass. ZERO leaks through the wall. ZERO drips. ZERO puddles. The open tip stays DRY. Do not tip the other way. Do not empty the bulb away from the neck. Do not morph the glass. Fine dust garnish in the returning liquid only. NO germ-macro. NO Explorer. NO Orbit. Silent. No text."
     },
     {
       "id": "06_explorer_watches",
@@ -41,7 +41,7 @@
     {
       "id": "07_bloom_cloud",
       "explorer": false,
-      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. The 1860s lab ROOM stays the frame. Camera already orbits slowly around the bench in the first second — lamp flicker, dust motes, broth swirling inside the glass. HARD LOCK: the swan-neck flask, the books, and the microscope stay PLANTED. Same spots on the wood the whole 8 seconds. Glass NEVER slides, NEVER scoots, NEVER walks, NEVER drifts. Relative positions stay locked. Motion is camera + light + liquid only. Broth is ALREADY cloudy IN the flask. Sparse tiny faceless rods garnish INSIDE the liquid only. Germs are NOT the hero. NO germ-macro. NO giant spheres. NO living cloud in the room. NO hands. NO one touching the flask. Continuous 8s. NO Explorer. NO Orbit. Silent. No text. Intact glass."
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. The 1860s lab ROOM stays the frame. Camera already orbits / lamp flickers in the first second. The swan-neck flask is PLANTED on the wooden bench — glass NEVER slides or morphs. Broth STARTS clear gold and BLOOMS cloudy IN the flask during the first 1–2 seconds. Sparse tiny faceless rods garnish INSIDE the liquid only as it clouds. Germs are NOT the hero. NO germ-macro. NO living cloud in the room. NO hands. NO sunbeam particle storm. Continuous 8s. NO Explorer. NO Orbit. Silent. No text. Intact glass."
     },
     {
       "id": "08_passengers",

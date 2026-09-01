@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Part 03 Flow Veo 3.1 Fast I2V → raw/v02_fast_probe.
 
-Remint 06_explorer_crosses v09 only. Keep 01–05, 07, 08, 09, 10.
+Remint 07_mocked v10 only. Keep 01–06 (06 HOLDS), 08–10.
 If Create/arrow_forward dies: STOP. No Omni / Quality / Lite.
 """
 from __future__ import annotations
@@ -34,12 +34,12 @@ KEEP = {
     "03_bedside_hands",
     "04_autopsy_to_ward",
     "05_wash_works",
-    "07_mocked",
+    "06_explorer_crosses",
     "08_prestige_hands",
     "09_they_still_sneer",
     "10_flask_in_the_room",
 }
-STILL_VERS = ("v09", "v05", "v04", "v03", "v02")
+STILL_VERS = ("v10", "v09", "v05", "v04", "v03", "v02")
 ZERO_GERM_IDS = {
     "01_hands_arrive",
     "02_perfume_windows",
@@ -322,11 +322,26 @@ def main() -> None:
                     ) from e
                 if still_fail(info):
                     archive_reject(dest, "still")
-                    META.write_text(json.dumps(meta, indent=2))
-                    raise SystemExit(
-                        f"STOP: still-push on {plate['id']} after one Create. "
-                        "Do not burn a second Create. QA frames extracted."
+                    print(
+                        f"  still-push on {plate['id']} — one remint only if Create alive",
+                        flush=True,
                     )
+                    try:
+                        info = mint_one(page, plate, dest)
+                    except Exception as e:
+                        print(f"STOP: remint Flow failed on {plate['id']}: {e}", flush=True)
+                        META.write_text(json.dumps(meta, indent=2))
+                        raise SystemExit(
+                            "STOP: Create died on remint. Do not loop. "
+                            f"Last plate={plate['id']}"
+                        ) from e
+                    if still_fail(info):
+                        archive_reject(dest, "still2")
+                        META.write_text(json.dumps(meta, indent=2))
+                        raise SystemExit(
+                            f"STOP: still-push on {plate['id']} after one remint. "
+                            "Do not burn another Create. QA frames extracted."
+                        )
                 meta.setdefault("plates", []).append({"id": plate["id"], **info})
                 META.write_text(json.dumps(meta, indent=2))
         finally:

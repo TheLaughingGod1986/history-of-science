@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Part 03 v09 rough — Bad Air vs Living Seeds.
+"""Part 03 v10 rough — Bad Air vs Living Seeds.
 
 Chapter after moving picture: A childbirth ward, 1840s (left / Didot).
 Drier bed. No cough. No metal tray. Flask SFX only on plate 10.
@@ -28,7 +28,7 @@ MUSIC = PROJ / "05_Music"
 BED_SRC = MUSIC / "hos_001_part01_ominous_ward_v12.wav"
 BED = MUSIC / "hos_001_part03_dry_ward_v01.wav"
 P01_SFX = PROJ / "06_Sound-Effects/v12"
-OUT = PROJ / "09_Final-Export/hos_001_part03_rough_v09.mp4"
+OUT = PROJ / "09_Final-Export/hos_001_part03_rough_v10.mp4"
 ICLOUD = Path(
     "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT"
 )
@@ -38,7 +38,7 @@ FPS = 24
 FADE = 14 / 24
 HOLD = 4.20
 CHAPTER = ("chapter", "A childbirth ward, 1840s", 1.50, 5.00, "left")
-CLIP_VERS = ("v09", "v05", "v04", "v03", "v02")
+CLIP_VERS = ("v10", "v09", "v05", "v04", "v03", "v02")
 NEEDLES = [
     ("living_seeds", "LIVING SEEDS", "living seeds", "right"),
     ("hitchhiker", "HITCHHIKER", "hitchhiker", "right"),
