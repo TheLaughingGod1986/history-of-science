@@ -6,7 +6,7 @@
   "engine": "Veo 3.1 - Fast",
   "clip_use_s": 7.5,
   "xfade_s": 0.4,
-  "notes": "Scenery-first. No place+year card. Explorer plate 06 only. 07_bloom_cloud v10 is Fast T2V only — no still, no Ingredients, no harvest. Do not morph-break glass. Hard cut from Part 03.",
+  "notes": "Scenery-first. No place+year card. Explorer plate 06 only. 07_bloom_cloud v11 is Fast T2V only — no still, no Ingredients, no harvest. Do not remint v10 flask (round-bottom + worms). Do not morph-break glass. Hard cut from Part 03.",
   "plates": [
     {
       "id": "01_question_mark_flask",
@@ -41,7 +41,7 @@
     {
       "id": "07_bloom_cloud",
       "explorer": false,
-      "prompt": "Animistry 3D cartoon, 1860s wood-and-brass laboratory. A swan-neck flask already sits on a wooden bench in the room. Clear golden broth inside turns cloudy over the shot, a few sparse faceless rods drifting only inside the liquid as garnish. Steam, lamplight, and a hand or cloth moving at the edge of frame. The room stays the frame. Germs are not the hero. No still flask, no Ken Burns zoom, no freeze, no Explorer, no sunbeam particle storm. Continuous motion the whole clip."
+      "prompt": "Animistry 3D cartoon, 1860s wood-and-brass laboratory. The only flask is a Pasteur swan-neck flask: long S-curved neck like a question mark, bulb body, already sitting on a wooden bench in the room. Not a round-bottom boiling flask. Not a straight neck. Not an Erlenmeyer. Clear broth inside turns cloudy over the shot. A few sparse faceless rods garnish only inside the liquid. Room stays the frame. Steam, lamplight, cloth or hand at the edge. Germs are not the hero. Continuous motion the whole clip. No Ken Burns, no freeze, no Explorer, no sunbeam particle storm."
     },
     {
       "id": "08_passengers",

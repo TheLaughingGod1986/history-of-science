@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Part 04 Flow Veo 3.1 Fast — 07_bloom_cloud T2V only.
 
-KEEP 01–06 + 08–12. 07 only: Fast T2V. dest 07_bloom_cloud_v10.mp4.
+KEEP 01–06 + 08–12 from v10. 07 only: Fast T2V. dest 07_bloom_cloud_v11.mp4.
+Leave 07_bloom_cloud_v10.mp4 in place (FAIL take — do not delete).
 No still. No Add to Prompt. No Ingredients. Do not harvest.
-Do not upload 07_bloom_cloud_v10.jpg.
+Do not upload 07_bloom_cloud_v10.jpg or any start frame.
 If Create/arrow_forward dies: STOP. No Omni / Quality / Lite.
+QA reject + Create alive: ONE remint only. Then STOP.
 """
 from __future__ import annotations
 
@@ -29,7 +31,7 @@ REFS = PROJ / "04_Generated-Clips/part04/refs"
 RAW = PROJ / "04_Generated-Clips/part04/raw/v01_fast_probe"
 META = PROJ / "07_Edit-Project/part04_gen_meta_v01.json"
 T2V_ID = "07_bloom_cloud"
-T2V_DEST = RAW / "07_bloom_cloud_v10.mp4"
+T2V_DEST = RAW / "07_bloom_cloud_v11.mp4"
 KEEP = {
     "01_question_mark_flask",
     "02_boil_broth",
@@ -160,7 +162,7 @@ def mint_t2v(page, plate: dict, dest: Path) -> dict:
         f"  T2V exact prompt ({len(prompt)} chars) start_frame=None scenery_only=True",
         flush=True,
     )
-    print("  will not upload 07_bloom_cloud_v10.jpg — no harvest", flush=True)
+    print("  will not upload 07_bloom_cloud_v10.jpg or any still — no harvest", flush=True)
     info = flow.generate_clip(
         page,
         prompt,
@@ -257,22 +259,32 @@ def main() -> None:
                     f"\n=== Fast T2V {plate['id']} ({i+1}/{len(plates)}) ===",
                     flush=True,
                 )
-                try:
-                    info = mint_t2v(page, plate, dest)
-                except Exception as e:
-                    print(f"STOP: Flow failed on {plate['id']}: {e}", flush=True)
-                    META.write_text(json.dumps(meta, indent=2))
-                    raise SystemExit(
-                        "STOP: Create/arrow_forward died. Do not loop. "
-                        f"Last plate={plate['id']}"
-                    ) from e
-                if still_fail(info):
-                    archive_reject(dest, "still")
-                    META.write_text(json.dumps(meta, indent=2))
-                    raise SystemExit(
-                        f"STOP: still-push on {plate['id']} after successful Create. "
-                        "Prefer STOP over credit-burn remint. QA frames extracted."
-                    )
+                remint_used = False
+                while True:
+                    try:
+                        info = mint_t2v(page, plate, dest)
+                    except Exception as e:
+                        print(f"STOP: Flow failed on {plate['id']}: {e}", flush=True)
+                        META.write_text(json.dumps(meta, indent=2))
+                        raise SystemExit(
+                            "STOP: Create/arrow_forward died. Do not loop. "
+                            f"Last plate={plate['id']}"
+                        ) from e
+                    if still_fail(info):
+                        archive_reject(dest, "still")
+                        if remint_used:
+                            META.write_text(json.dumps(meta, indent=2))
+                            raise SystemExit(
+                                f"STOP: still-push on {plate['id']} after one remint. "
+                                "Do not loop. QA frames extracted."
+                            )
+                        remint_used = True
+                        print(
+                            "  QA motion reject — one remint only (Create still alive)",
+                            flush=True,
+                        )
+                        continue
+                    break
                 meta.setdefault("plates", []).append({"id": plate["id"], **info})
                 META.write_text(json.dumps(meta, indent=2))
         finally:
