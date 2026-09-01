@@ -291,9 +291,8 @@ def main() -> None:
     )
     from playwright.sync_api import sync_playwright
 
-    failed: list[str] = []
     with sync_playwright() as p:
-        ctx, page = flow.launch_context(p, headed=False, profile=profile)
+        ctx, page = flow.launch_context(p, headed=True, profile=profile)
         try:
             page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
             page.wait_for_timeout(2000)
@@ -323,33 +322,15 @@ def main() -> None:
                     ) from e
                 if still_fail(info):
                     archive_reject(dest, "still")
-                    print(
-                        f"  still-push on {plate['id']} — one remint only",
-                        flush=True,
+                    META.write_text(json.dumps(meta, indent=2))
+                    raise SystemExit(
+                        f"STOP: still-push on {plate['id']} after one Create. "
+                        "Do not burn a second Create. QA frames extracted."
                     )
-                    try:
-                        info = mint_one(page, plate, dest)
-                    except Exception as e:
-                        print(f"STOP: remint Flow failed on {plate['id']}: {e}", flush=True)
-                        META.write_text(json.dumps(meta, indent=2))
-                        raise SystemExit(
-                            "STOP: Create died on remint. Do not loop. "
-                            f"Last plate={plate['id']}"
-                        ) from e
-                    if still_fail(info):
-                        archive_reject(dest, "still2")
-                        failed.append(plate["id"])
-                        print(
-                            f"  FAIL {plate['id']} still-push after one remint — continue",
-                            flush=True,
-                        )
-                        continue
                 meta.setdefault("plates", []).append({"id": plate["id"], **info})
                 META.write_text(json.dumps(meta, indent=2))
         finally:
             ctx.close()
-    if failed:
-        print("FAILED after one remint: " + ", ".join(failed), flush=True)
     print("OK resume mint finished", flush=True)
 
 
