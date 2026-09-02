@@ -32,7 +32,7 @@ Optional reserve (Private): “Your Body Is a City of Tiny Lives” — only if 
 
 1. Finish Part 01 rough → **Ben UAT**
 2. Parts 02–05 one minute at a time (VO → Veo → assemble → Ben UAT each)
-3. Broadcast master (picture-first open · 10s end hold · no baked subscribe)
+3. Broadcast master — open/out lock: `HOS_OPEN_OUT_LOCKED.md` (Part 01 death ward is the open · no branded intro · cream **DISCOVERY. WONDER. PROOF.** card 3–4s after last question · Subscribe via Studio end screens only · not a 10s last-picture Orbit pad)
 4. Cut 5 punch Shorts from locked parts
 5. Package + schedule only after Brand Account / OAuth exist
 

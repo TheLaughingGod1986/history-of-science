@@ -10,6 +10,7 @@ Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
 
 ## Story & open
 
+- [ ] Open/out lock: `00_Brand/Channel-Setup/HOS_OPEN_OUT_LOCKED.md` · `.cursor/rules/hos-open-out-lock.mdc` (Germs: Part 01 death ward **is** the open — no branded intro)
 - [ ] Cold open: curiosity by **5s**, stakes by **15s**, journey clear by **30s**
 - [ ] No channel intro / history / textbook definition open
 - [ ] Immediate mystery — audience needs the answer
@@ -29,7 +30,8 @@ Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
 
 ## Funnel (no dead ends)
 
-- [ ] End screen → another Orbit documentary
+- [ ] Out: quiet 3–4s cream-on-brown **History of Science / DISCOVERY. WONDER. PROOF.** card after last question (`HOS_OPEN_OUT_LOCKED.md`) — no baked subscribe/like graphics
+- [ ] Studio end screens → Subscribe + another HOS documentary (not burned into picture)
 - [ ] Cards configured
 - [ ] Pinned comment (question + next / companion link)
 - [ ] Related Shorts linked to this long (once public)

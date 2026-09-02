@@ -1,11 +1,26 @@
 ---
-description: picture-first open, Studio end screens, one named-book /go/ on the long only.
-alwaysApply: true
+description: ARCHIVE Orbit open/end/affiliate — do not apply to History of Science; see hos-open-out-lock
+alwaysApply: false
 ---
 
-# Orbit long-form — open, end, affiliate (locked 2026-08-16)
+# Orbit long-form — open, end, affiliate (ARCHIVE — Orbit With Ben leftover)
 
-Applies to every new long and every recut. Reference: Europa v02 · Last Star v11 · BH v09 · AW v05 · Fermi v20.
+**Do not apply to History of Science productions.**
+
+HOS open / out is locked in:
+
+- `.cursor/rules/hos-open-out-lock.mdc`
+- `00_Brand/Channel-Setup/HOS_OPEN_OUT_LOCKED.md`
+
+HOS affiliate (named-in-film only) stays under `.cursor/rules/orbit-affiliate-named-in-film.mdc` and the HOS Content Ops `/go/` docs — not this file’s Orbit open/end grammar.
+
+Kept only as seed history from the Orbit With Ben clone. Orbit leftovers live under `_archive_orbit/` (see repo README). This rule is **alwaysApply: false** so it cannot override HOS films (especially not a 10s last-picture hold or Orbit-after-~8s open on Germs 001 / future HOS longs).
+
+---
+
+# Historical Orbit text (2026-08-16) — reference only
+
+Applies to Orbit longs / recuts only (not HOS). Reference: Europa v02 · Last Star v11 · BH v09 · AW v05 · Fermi v20.
 
 ## Open
 
@@ -28,10 +43,10 @@ Applies to every new long and every recut. Reference: Europa v02 · Last Star v1
 - Do not bolt a book on to unlock a link.
 - Do not name telescope / LEGO / Brilliant unless the film is about them and the door is live.
 
-## Also locked
+## Also locked (Orbit historical)
 
 - Picture flatten: one VO idea → one literal image. When VO and picture disagree, picture is wrong. Orbit in the scene, not a sticker.
 - Recut = new YouTube id. Leave old live until new is public, then unpublish. Do not reuse ids.
-- Length **NOW 7–9 min** (Last Star / Europa pattern). Expand to 15–20–30 only after an 8-min film gets real impressions and hold stays past ~5 min. Older lines that say **~18–25 min** (or “8–12 are stale”) are themselves stale — do not copy live 21-min Alien Worlds / Black Hole / Fermi runtimes.
+- Length **NOW 7–9 min** (Last Star / Europa pattern). Expand to 15–20–30 only after an 8-min film gets real impressions and hold stays past ~5 min.
 
-Canonical: `00_Brand/Channel-Setup/OMNI_LONGFORM_PLAYBOOK.md`
+Canonical (Orbit archive playbook): `00_Brand/Channel-Setup/OMNI_LONGFORM_PLAYBOOK.md`
