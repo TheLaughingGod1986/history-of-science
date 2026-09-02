@@ -11,6 +11,7 @@ Canonical docs:
 - `00_Brand/Channel-Setup/HOS_PART01_STYLE_BASELINE_LOCKED.md`
 - `.cursor/rules/hos-part01-style-baseline.mdc`
 - `.cursor/rules/hos-microbe-visual-lock.mdc`
+- Open/out: this death-ward picture **is** the film open (no branded intro) — `00_Brand/Channel-Setup/HOS_OPEN_OUT_LOCKED.md` · `.cursor/rules/hos-open-out-lock.mdc`
 
 Artifact: `/opt/cursor/artifacts/hos_001_part01_rough_v08.mp4`
 
