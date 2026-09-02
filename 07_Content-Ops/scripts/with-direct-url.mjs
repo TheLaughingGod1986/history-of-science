@@ -3,12 +3,16 @@
  * Ensure DIRECT_URL is set before Prisma CLI runs.
  *
  * Prisma schema keeps `directUrl = env("DIRECT_URL")` for Neon/pooler setups.
- * On Vercel, DATABASE_URL is often set alone. Without this helper,
- * `prisma migrate deploy` fails with P1012 (DIRECT_URL not found).
+ * On Vercel, DATABASE_URL may be set alone — or (surprisingly) absent on Preview
+ * while Prisma still reports only "DIRECT_URL not found" (Validation Error Count: 1)
+ * even when DATABASE_URL is also missing.
  *
- * Also handles the case where Prisma loads DATABASE_URL from a dotenv file
- * that Node does not auto-load: we read .env*, default DIRECT_URL, write it
- * back into `.env`, then spawn Prisma with an updated env.
+ * Rules:
+ * - If DIRECT_URL is missing and DATABASE_URL (or alias) is present → default DIRECT_URL.
+ * - Write DIRECT_URL into `.env` so Prisma dotenv sees it.
+ * - If `migrate deploy` is requested and no real DATABASE_URL exists → skip migrate
+ *   (exit 0) so the Next build can still go Ready. Never skip migrate when a real
+ *   DATABASE_URL is present. Never run `migrate dev` here.
  *
  * Usage: node scripts/with-direct-url.mjs <command> [args...]
  */
@@ -22,7 +26,6 @@ const binDir = path.join(root, "node_modules", ".bin");
 const pathSep = path.delimiter;
 const envFiles = [".env", ".env.production", ".env.local", "prisma/.env"];
 
-/** Non-empty string, or undefined. */
 function nonEmpty(value) {
   if (typeof value !== "string") return undefined;
   const trimmed = value.trim();
@@ -93,6 +96,14 @@ function resolveDirectUrl() {
   );
 }
 
+function isMigrateDeploy(command, args) {
+  return (
+    command === "prisma" &&
+    args[0] === "migrate" &&
+    args[1] === "deploy"
+  );
+}
+
 const urlKeys = Object.keys(process.env)
   .filter((key) => /DATABASE|DIRECT|POSTGRES|PRISMA.*URL/i.test(key))
   .sort();
@@ -104,6 +115,21 @@ console.log(
 const databaseUrl = resolveDatabaseUrl();
 let directUrl = resolveDirectUrl();
 
+const [command, ...args] = process.argv.slice(2);
+if (!command) {
+  console.error("usage: node scripts/with-direct-url.mjs <command> [args...]");
+  process.exit(1);
+}
+
+// No real DB URL: generate can still succeed; migrate deploy must not redline
+// production solely because DIRECT_URL is unset when DATABASE_URL is also absent.
+if (!databaseUrl && isMigrateDeploy(command, args)) {
+  console.warn(
+    "[with-direct-url] No DATABASE_URL (or alias) at build time — skipping `prisma migrate deploy`. Set DATABASE_URL on Vercel Production + Preview for migrations and /go/ click persistence. DIRECT_URL is optional and defaults to DATABASE_URL when set.",
+  );
+  process.exit(0);
+}
+
 if (!directUrl && databaseUrl) {
   directUrl = databaseUrl;
   console.log(
@@ -111,7 +137,7 @@ if (!directUrl && databaseUrl) {
   );
 } else if (!databaseUrl) {
   console.log(
-    "[with-direct-url] No non-empty DATABASE_URL (or alias) in process.env/.env* — Prisma may fail",
+    "[with-direct-url] No non-empty DATABASE_URL (or alias) in process.env/.env* — Prisma generate may still work; migrate is skipped above",
   );
 } else {
   console.log("[with-direct-url] DIRECT_URL already present");
@@ -121,12 +147,6 @@ if (databaseUrl) process.env.DATABASE_URL = databaseUrl;
 if (directUrl) {
   process.env.DIRECT_URL = directUrl;
   ensureDirectUrlInDotEnv(directUrl);
-}
-
-const [command, ...args] = process.argv.slice(2);
-if (!command) {
-  console.error("usage: node scripts/with-direct-url.mjs <command> [args...]");
-  process.exit(1);
 }
 
 const env = {

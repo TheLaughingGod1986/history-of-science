@@ -25,7 +25,7 @@ Set these on the Vercel project for **Production** and **Preview**:
 
 | Variable | Purpose |
 |----------|---------|
-| `DATABASE_URL` | Pooled Postgres URL for the app (Neon pooler, Supabase pooler, Vercel Postgres, etc.) |
+| `DATABASE_URL` | Pooled Postgres URL for the app (Neon pooler, Supabase pooler, Vercel Postgres, etc.). Set for **Production and Preview**. Required for migrations and `/go/` click persistence. If unset at build time, `prisma migrate deploy` is skipped so the Next build can still go Ready (Prisma only reports a missing `DIRECT_URL` even when `DATABASE_URL` is also absent — Validation Error Count: 1 is ambiguous). |
 | `DIRECT_URL` | Direct (non-pooled) URL for `prisma migrate deploy`. **Optional on Vercel:** if unset, `scripts/with-direct-url.mjs` defaults it to `DATABASE_URL` for both `postinstall` and `build`. Set an explicit direct (non-pooler) URL when using Neon/Supabase pooler. |
 | `APP_BASE_URL` | Public origin of this deploy, e.g. `https://YOUR-PROJECT.vercel.app` |
 | `AMAZON_ASSOCIATE_TAG` | Set in the Vercel dashboard only (Production + Preview), e.g. the live Associates tag. Never commit the value. `/go` stamps `tag=` from this env at redirect time. |
@@ -34,7 +34,7 @@ Set these on the Vercel project for **Production** and **Preview**:
 
 Copy the rest of OAuth / publishing keys from `.env.example` as needed.
 
-**Do not** put secrets in git. Prefer setting `DATABASE_URL` on Vercel; add a separate `DIRECT_URL` only when the pooled URL must not be used for migrations.
+**Do not** put secrets in git. Prefer setting `DATABASE_URL` on Vercel (Production **and** Preview); add a separate `DIRECT_URL` only when the pooled URL must not be used for migrations. `with-direct-url.mjs` never skips `migrate deploy` when a real `DATABASE_URL` is present; it only skips when no DB URL exists at build time.
 
 ## After first deploy
 
