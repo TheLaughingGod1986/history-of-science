@@ -1,0 +1,56 @@
+{
+  "lock": "HOS_001_GERMS_SHIP",
+  "locked_at": "2026-09-02",
+  "clock_lock_at": "2026-09-02",
+  "channel_handle": "@HistoryOfScienceYT",
+  "project": "02_Video-Projects/001_How-Did-We-Discover-Germs",
+  "title": "How Did We Discover Germs?",
+  "first_public_video": true,
+  "do_not_lead_with_short": true,
+  "live_cut": {
+    "filename": "hos_001_germs_full_v02.mp4",
+    "sha256": "f49fae7872e9ae16d76e76d01e00444e6fa6159956ee0375fb1df8234d9df195",
+    "duration_seconds": 364.555,
+    "size_bytes": 184675182,
+    "uat": "PASS",
+    "uat_date": "2026-09-02",
+    "ben_note": "Ship it — not perfect; first film for a new channel. Quality bar rises on film 002.",
+    "remint": false
+  },
+  "parents_locked": {
+    "part_01": "v21",
+    "part_02": "v12",
+    "part_03": "v14",
+    "part_04": "v23",
+    "part_05": "v03"
+  },
+  "premiere": {
+    "local_datetime": "2026-09-03T18:00:00",
+    "timezone": "Europe/London",
+    "channel": "@HistoryOfScienceYT",
+    "subscribe": "studio_end_screens_only",
+    "branded_intro": false,
+    "end_card_in_cut": true
+  },
+  "shorts": {
+    "first_short_local_datetime": "2026-09-04T11:30:00",
+    "first_short_timezone": "Europe/London",
+    "source": "this_film_only",
+    "after_long_listing_exists": true,
+    "related_to_long": true,
+    "go_links": "zero",
+    "never_upload_hos_to": ["Orbit With Ben", "Oppti"]
+  },
+  "join_notes_v02": {
+    "part02_to_part03_dissolve": [159.46, 159.877],
+    "end_card_dissolve_start": 359.405,
+    "end_card_on": 360.072,
+    "words_fade_to_brown_by": 363.822,
+    "click_interpolated": [47.152, 47.16]
+  },
+  "open_out": "keep_hos_open_out_lock",
+  "ops_doc": "00_Brand/Channel-Setup/HOS_001_GERMS_SHIP_LOCKED.md",
+  "cursor_rule": ".cursor/rules/hos-001-germs-ship-lock.mdc",
+  "youtube_video_id": null,
+  "upload_status": "not_uploaded_encode_only"
+}

@@ -24,20 +24,20 @@
 
 Only after: consistent weekly long shipping · Shorts → long clicks visible · hold on the 8–9 min film past ~5 min · spare production capacity. Until then: **cluster > calendar spam**.
 
-## First film (001 Germs) — example week
+## First film (001 Germs) — launch week (ship lock 2 Sep 2026 · clock update)
 
-Assume long public **Thu 19:00 UK**:
+Premiere **Thursday 3 Sep 2026 18:00 Europe/London** on **@HistoryOfScienceYT only**. First public video is the **long** — do **not** lead with a Short. Shorts start **Friday 4 Sep 2026 11:30 Europe/London** after the long listing exists. Canonical: `HOS_001_GERMS_SHIP_LOCKED.md`.
 
 | When | What |
 |---|---|
-| Thu 19:00 | Long: *How Did We Discover Germs?* |
-| Thu ~21:00 | Short 01 (strongest punch) · Related ▶ long |
+| Thu 3 Sep 18:00 London | Long: *How Did We Discover Germs?* (`hos_001_germs_full_v02.mp4`) · @HistoryOfScienceYT only |
+| Fri 4 Sep 11:30 London | Short 01 (strongest punch) · Related ▶ long — **only after** long listing exists |
 | Sat ~12:30 | Short 02 |
 | Mon ~12:30 | Short 03 |
 | Wed ~12:30 | Short 04 |
 | Fri ~12:30 | Short 05 (optional 5–6) |
-| Next Thu 19:00 | Next long (only when ready — do not force empty weeks) |
+| Next ready Thursday 19:00 | Next long (only when ready — do not force empty weeks) |
 
-Launch exception: if channel not created yet, keep all private/scheduled until Brand Account + OAuth exist.
+Shorts: punch from **this film only** · **zero `/go/`** · never upload HOS to Orbit or Oppti.
 
 Canonical ops: `PUBLISHING_AND_SHORTS_STRATEGY.md` · `INSPIRATION_HEYHISTORICALLY.md`
