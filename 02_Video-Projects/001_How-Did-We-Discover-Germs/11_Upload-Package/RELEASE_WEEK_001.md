@@ -1,40 +1,46 @@
 # Episode 001 — release week + Shorts cluster
 
 **Film:** How Did We Discover Germs?  
-**Runtime target:** 8–9 min · Animistry-class · Explorer sparse  
-**Cadence:** `HOS_SHORTS_CADENCE_LOCKED.md` — **not daily** · **5 Shorts** over ~9 days after long  
-**Related:** every Short → Studio Related ▶ *How Did We Discover Germs?*
+**Ship lock:** `00_Brand/Channel-Setup/HOS_001_GERMS_SHIP_LOCKED.md` (Ben 2 Sep 2026)  
+**Live cut:** `hos_001_germs_full_v02.mp4` · sha256 `f49fae7872e9ae16d76e76d01e00444e6fa6159956ee0375fb1df8234d9df195` · 364.555 s · 184675182 B · UAT PASS  
+**Cadence:** `HOS_SHORTS_CADENCE_LOCKED.md` — **not daily** · **4–6 Shorts** over ~7–10 days **after** the long listing exists  
+**Related:** every Short → Studio Related ▶ *How Did We Discover Germs?* (that long’s id)  
+**Affiliate:** **zero `/go/`** on Shorts · never upload HOS to Orbit or Oppti
 
-## Long (pillar)
+## Long (pillar) — first public video on @HistoryOfScienceYT
 
 | Field | Value |
 |---|---|
-| Title (locked intent) | How Did We Discover Germs? |
-| Air (once channel live) | Thursday **19:00 UK** |
+| Title (locked) | How Did We Discover Germs? |
+| Premiere | **Thursday 3 Sep 2026 18:00 Europe/London** · @HistoryOfScienceYT only |
+| Shorts start | **Friday 4 Sep 2026 11:30 Europe/London** (after long listing exists) |
+| First public | This **full film** — **do not** lead the channel with a Short |
+| Subscribe | Studio end screens only |
+| Intro / out | No branded intro · cream end card already in the cut (`HOS_OPEN_OUT_LOCKED.md`) |
+| Parents | LOCKED 01 v21 · 02 v12 · 03 v14 · 04 v23 · 05 v03 — do not remint |
 | Script | `01_Script/germs_script_master_v01.md` · **PASS 90.4** |
-| Affiliate | none unless product named in *this* cut |
 
-## Shorts cluster (5 · 22–27s · punch-first)
+## Shorts cluster (after long listing exists · 22–27s · punch-first)
 
 | # | Slot after long | Working title | Punch (0–1s) |
 |---|---|---|---|
-| 01 | Thu ~21:00 | Doctors Blamed Bad Air — Not Germs | Strange ward air / glowing microbes |
-| 02 | Sat ~12:30 | The First Time Humans Saw Microbes | Microscope plunge |
-| 03 | Mon ~12:30 | Why Handwashing Was Once “Ridiculous” | Clean hands vs mockery |
-| 04 | Wed ~12:30 | Pasteur’s Flask That Broke the Old Story | Swan-neck clear → cloudy |
-| 05 | Fri ~12:30 | The Spray That Cleaned the Operating Theatre | Lister carbolic mist |
+| 01 | **Fri 4 Sep 11:30 London** | Doctors Blamed Bad Air — Not Germs | Strange ward air / glowing microbes |
+| 02 | ~+2 days | The First Time Humans Saw Microbes | Microscope plunge |
+| 03 | ~+4 days | Why Handwashing Was Once “Ridiculous” | Clean hands vs mockery |
+| 04 | ~+6 days | Pasteur’s Flask That Broke the Old Story | Swan-neck clear → cloudy |
+| 05 | ~+8 days | The Spray That Cleaned the Operating Theatre | Lister carbolic mist |
 
-All Shorts: captions whole way · curiosity-gap end · description = film title + long URL only · **zero `/go/`** · Related ▶ long once public.
+All Shorts: punch from **this film only** · captions whole way · curiosity-gap end · description = film title + long URL only · **zero `/go/`** · Related ▶ long once listing exists.
 
 Optional reserve (Private): “Your Body Is a City of Tiny Lives” — only if 01–05 ship clean.
 
-## Production order (blocking)
+## Production order
 
-1. Finish Part 01 rough → **Ben UAT**
-2. Parts 02–05 one minute at a time (VO → Veo → assemble → Ben UAT each)
-3. Broadcast master — open/out lock: `HOS_OPEN_OUT_LOCKED.md` (Part 01 death ward is the open · no branded intro · cream **DISCOVERY. WONDER. PROOF.** card 3–4s after last question · Subscribe via Studio end screens only · not a 10s last-picture Orbit pad)
-4. Cut 5 punch Shorts from locked parts
-5. Package + schedule only after Brand Account / OAuth exist
+1. ~~Finish parts · Ben UAT~~ → **DONE** · parents locked · full v02 UAT PASS
+2. ~~Broadcast master open/out~~ → **DONE** (in cut)
+3. **Upload + premiere** locked v02 (not this encode)
+4. Cut punch Shorts from locked full · Related ▶ long id
+5. Never upload HOS assets to Orbit or Oppti
 
 ## Status
 

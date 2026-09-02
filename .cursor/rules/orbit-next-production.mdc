@@ -29,19 +29,20 @@ Script: `01_Script/neutron_star_script_master_v01.md` (passed **91.1**). Credits
 | Thu 20 Aug 18:00 | JWST v04 | scheduled — leave as-is |
 | Thu 27 Aug 18:00 | Last Star | scheduled · YouTube id `REXYxuLOBoI` (**letter O**, not zero) |
 | Thu 3 Sept 18:00 | Europa | scheduled |
-| **Next to make** | **HOS 001 Germs** | Veo 3.1 Fast · Part 01 PASS v08 · Part 02 10/10 I2V — **STOP for Ben UAT** |
-| After 001 | **HOS 002** | same HOS method · topic not gated yet |
+| **Ship / premiere** | **HOS 001 Germs** | **SHIP LOCKED** full v02 · premiere **Thu 3 Sep 2026 18:00 London** · Shorts from **Fri 4 Sep 11:30** · `HOS_001_GERMS_SHIP_LOCKED.md` · do not remint · do not lead with a Short |
+| **Next to make** | **HOS 002** | same HOS method · topic not gated yet · quality bar rises |
 | Orbit (paused) | **007 Neutron Star** | script **already passed** · **do not spend Omni credits** until HOS vs Omni compare |
 | After 007 | 013 Moon | backlog only |
 | 015 | Are We Living Inside A Simulation? | moved here from old 007 · not next |
 
-## Build HOS 001 (active)
+## HOS 001 Germs — SHIP LOCKED (2 Sep 2026)
 
 1. Folder: `02_Video-Projects/001_How-Did-We-Discover-Germs/`
-2. Part 01 locked: `hos_001_part01_rough_v08.mp4` (Veo Fast · 3D cartoon · faceless germs · Explorer garnish).
-3. **Part 02:** animated rough `hos_001_part02_rough_v01.mp4` is **STOP for Ben UAT**. Still-push is REJECT. Do not start Part 03 until he passes.
-4. One minute → Ben UAT → `PART0N_LESSONS.md` → ask before the next minute.
-5. Do not start HOS 002 topic work until 001 has a locked master (or Ben asks).
+2. Live cut: `hos_001_germs_full_v02.mp4` · sha256 `f49fae7872e9ae16d76e76d01e00444e6fa6159956ee0375fb1df8234d9df195` · 364.555 s · 184675182 B · UAT PASS.
+3. Parents LOCKED: Part 01 **v21** · 02 **v12** · 03 **v14** · 04 **v23** · 05 **v03**. Do **not** remint.
+4. Premiere **Thu 3 Sep 2026 18:00 Europe/London** on **@HistoryOfScienceYT** only — title **How Did We Discover Germs?** — do **not** lead with a Short. Shorts start **Fri 4 Sep 2026 11:30 Europe/London** after the long listing exists.
+5. After long listing exists: Shorts from this film only · Related ▶ that long · **zero `/go/`** · never upload HOS to Orbit or Oppti.
+6. Open/out keep locked. Next make is **HOS 002** (higher quality bar). Ops: `HOS_001_GERMS_SHIP_LOCKED.md`.
 
 ## Build 007 — paused until HOS vs Omni compare
 

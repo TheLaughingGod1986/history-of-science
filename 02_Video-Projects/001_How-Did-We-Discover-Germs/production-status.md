@@ -1,6 +1,7 @@
 # Production status — 001 How Did We Discover Germs?
 
-**Queue (27 Aug 2026):** This is the film to finish. Then one more HOS long. Then compare Veo vs Omni — do not rewrite Orbit Omni until that compare. `hos-finish-then-compare-omni.mdc`
+**Ship lock (2 Sep 2026):** Full film **LOCKED** for first @HistoryOfScienceYT upload.  
+Canonical: `00_Brand/Channel-Setup/HOS_001_GERMS_SHIP_LOCKED.md` · `.cursor/rules/hos-001-germs-ship-lock.mdc` · `09_Final-Export/HOS_001_GERMS_FULL_V02_SHIP.json`
 
 | Step | Status |
 |---|---|
@@ -9,29 +10,23 @@
 | Pre-build VidIQ audit | SIGNED (live VidIQ re-score before upload) |
 | Master script | `germs_script_master_v01.md` |
 | Script / gate | **PASS 90.4** |
-| Shorts cadence | Cluster 4–6 · **not daily** |
-| Part 01 VO | DONE · Ben Orbit Narrator |
-| Part 01 picture | **PASS — `hos_001_part01_rough_v08.mp4`** |
-| Style / microbe / motion locks | **LOCKED** |
-| Part 02 VO + stills | DONE |
-| Part 02 picture | **10/10 Flow I2V** · camera-in-drop **replaced** · VO-lock order · `hos_001_part02_rough_v01.mp4` (~76.4s). **STOP for Ben UAT.** |
-| Parts 03–05 | Blocked until Ben passes Part 02 |
-| Broadcast + Shorts | Later (Shorts only after long is public; zero `/go/` on Shorts) |
+| Shorts cadence | Cluster 4–6 · **after** long listing · **not daily** · zero `/go/` |
+| Parts 01–05 | **PARENTS LOCKED** — 01 **v21** · 02 **v12** · 03 **v14** · 04 **v23** · 05 **v03** |
+| Full join | **LIVE CUT** `hos_001_germs_full_v02.mp4` · sha256 `f49fae7872e9ae16d76e76d01e00444e6fa6159956ee0375fb1df8234d9df195` · **364.555 s** · **184675182 B** |
+| UAT | **PASS 2 Sep 2026** — Ben: ship it (not perfect; first film). Quality bar rises on **002**. |
+| Premiere | **Thu 3 Sep 2026 18:00 Europe/London** · @HistoryOfScienceYT only · title **How Did We Discover Germs?** · do **not** lead with a Short |
+| Shorts start | **Fri 4 Sep 2026 11:30 Europe/London** · after long listing exists · this film only · Related ▶ long · zero `/go/` |
+| Open / out | Locked — no branded intro · cream card in cut · Studio subscribe only |
+| Upload | **Not done in this encode** — do not remint · do not upload here |
 
 ## Artifacts
 
-- Part 01 locked: `/opt/cursor/artifacts/hos_001_part01_LOCKED_v08.mp4`
-- Part 02 real plates: `04_Generated-Clips/part02/raw/v01_flow/` (**01–10**)
-- Part 02 still-push (REJECT): `09_Final-Export/hos_001_part02_rough_v01_STILLPUSH_REJECT.mp4`
-- Part 02 animated rough: `09_Final-Export/hos_001_part02_rough_v01.mp4` + `/opt/cursor/artifacts/hos_001_part02_rough_v01.mp4`
+- Ship manifest: `09_Final-Export/HOS_001_GERMS_FULL_V02_SHIP.json`
+- Join notes: `09_Final-Export/FULL_V02_JOIN_NOTES.md` (02→03 dissolve 159.460→159.877 · end card 359.405 / 360.072 · fade by 363.822 · click 47.152–47.160)
+- Open/out: `00_Brand/Channel-Setup/HOS_OPEN_OUT_LOCKED.md`
 
-## Quota (2026-08-28)
+## Next (ops — not this encode)
 
-- **Gemini Veo API:** prepaid depleted (separate from Free Trial / GDP).
-- **Flow Ultra:** plate **10** Lite I2V completed after Ben confirmed **52 credits**. Send-button bug (plus vs arrow) was why earlier retries sat at `gen=False` even with credits.
-
-## Next
-
-1. **Ben UAT** Part 02 animated rough. Do not start Part 03 until pass.
-2. After pass: write Part 03 script → VO → Lite plates one minute at a time.
-3. Do not start HOS 002 or spend Omni on Neutron Star while this minute is open.
+1. Upload + premiere the locked v02 long on **@HistoryOfScienceYT** only (not Orbit, not Oppti).
+2. After the long listing exists: punch Shorts from **this film only** · Related ▶ that long id · **zero `/go/`**.
+3. Then HOS 002 (higher quality bar) → compare Veo vs Omni. Do not spend Omni on Neutron Star until that compare.

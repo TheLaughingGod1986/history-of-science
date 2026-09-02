@@ -1,16 +1,16 @@
 ---
-description: HOS Veo first — finish 1–2 films, then compare before changing Orbit Omni
+description: HOS Veo first — 001 ship-locked; finish 002 then compare before changing Orbit Omni
 alwaysApply: true
 ---
 
-# HOS first, then compare Omni (locked 27 Aug 2026)
+# HOS first, then compare Omni (locked 27 Aug 2026 · 001 ship 2 Sep 2026)
 
 Ben: the History of Science method is the cheaper production path. **Finish one or two HOS longs on Veo Fast. Then compare those films to Orbit Omni. Only then consider changing the Omni plan to match HOS.**
 
 ## Do this
 
-1. **Now:** finish **001 How Did We Discover Germs?** — one minute at a time, Flow **Veo 3.1 Fast**, Part 01 v08 style lock. Part 02 animated rough is in **Ben UAT** (10/10 I2V). Do not start Part 03 until he passes. Stop for Ben UAT after each minute.
-2. **Then:** one more HOS long (002). Topic must still pass Growth System v2 + script ≥90. Do not invent 002 to keep the factory busy.
+1. **001 Germs — SHIP LOCKED (2 Sep 2026).** Live cut `hos_001_germs_full_v02.mp4` (UAT PASS). Premiere **Thu 3 Sep 2026 18:00 Europe/London** on **@HistoryOfScienceYT** only. Shorts from **Fri 4 Sep 11:30**. Do **not** remint. Do **not** lead with a Short. Ops: `HOS_001_GERMS_SHIP_LOCKED.md` · `.cursor/rules/hos-001-germs-ship-lock.mdc`.
+2. **Then:** one more HOS long (002). Topic must still pass Growth System v2 + script ≥90. Quality bar rises on 002. Do not invent 002 to keep the factory busy.
 3. **Then:** compare HOS Veo vs Orbit Omni (credits/minute, regen takes, UAT rejects, look). Ops note: `00_Brand/Channel-Setup/HOS_THEN_COMPARE_OMNI_LOCKED.md`.
 4. **Only after that compare:** decide whether Orbit longs switch toward Veo Fast + mascot-as-garnish (HOS method) instead of Omni-in-every-shot.
 
@@ -21,6 +21,7 @@ Ben: the History of Science method is the cheaper production path. **Finish one 
 - Do **not** put Omni Flash on HOS, or put Explorer in every cut.
 - Do **not** ship Ken Burns / still-push when Flow caps — wait for reset or Gemini API Veo Lite.
 - Do **not** start 013 Moon or 015 Simulation.
+- Do **not** upload HOS to Orbit or Oppti · zero `/go/` on Shorts.
 
 ## Channel split (until the compare)
 
