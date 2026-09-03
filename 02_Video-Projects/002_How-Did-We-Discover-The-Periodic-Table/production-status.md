@@ -1,7 +1,6 @@
 # Production status — 002 How Did We Discover the Periodic Table?
 
-**PLANNING LOCKED · Part 01 PRODUCING — 3 Sep 2026.**  
-Brief: `PLANNING_BRIEF.md`. Topic locked. Part 01 only. Do not start Part 02 until Ben UAT.
+**PART 01 ROUGH READY FOR BEN UAT — 3 Sep 2026.** Do **not** start Part 02 until Ben passes.
 
 | Field | Value |
 |---|---|
@@ -12,17 +11,20 @@ Brief: `PLANNING_BRIEF.md`. Topic locked. Part 01 only. Do not start Part 02 unt
 | Runtime target | 8–9 min · 5 acts |
 | Target air | Thu **10 Sep 2026 19:00 UK** |
 | Gate | **PASS** (script 90.4 · episode gate PASS) |
-| Part 01 VO | `02_Voiceover/part01_zoo_of_stuff_v02` · **85.680s** (v01 112s discarded) |
-| Part 01 picture | Plate sheet ready · Flow Fast mint **not finished** (clips folder empty) |
+| Part 01 VO | `02_Voiceover/part01_zoo_of_stuff_v02.wav` · **85.680s** |
+| Part 01 rough | `09_Final-Export/hos_002_part01_rough_v01.mp4` · **85.67s** · sha256 `bc2426ff77e645c9dfaf6365db20b92b3545f1a4d68decb98843a0d1f0a551ff` |
+| Plates | 12 × Flow Veo 3.1 Fast T2V · `04_Generated-Clips/part01/raw/v01_fast/` |
 | Affiliate | none |
 | Not | Orbit Omni · Neutron Star · Part 02 |
 
-## Part 01 VO lock
+## UAT
 
-Ben Orbit Narrator. Align hits: seating plan **2.15s** · periodic table **27.41s** · four ingredients **43.58s** · trap **52.16s** · alchemists **66.48s** · zoo **77.28s**. Also **HOS UAT**.
+Notes: `09_Final-Export/PART01_UAT_NOTES_v01.md`  
+Stills: `09_Final-Export/_uat_part01_v01/`
+
+Agent flags before Ben watch: Explorer plate off-model + smiley rock; seating-plan plate weak vs empty chairs; open chalkboard text.
 
 ## Next
 
-1. Confirm planning brief with Ben (title · 5 acts · air slot)
-2. Mint ~8–10 Flow Veo 3.1 Fast plates for Part 01 · assemble rough · **STOP for Ben UAT**
-3. Do not batch Part 02
+1. **Ben UAT** PASS / REGEN plates  
+2. Only then Part 02
