@@ -1,6 +1,6 @@
 # Production status — 002 How Did We Discover the Periodic Table?
 
-**PART 01 ROUGH v04 READY FOR BEN UAT — 3 Sep 2026.** Do **not** start Part 02 until Ben passes.
+**PART 01 ROUGH v05 READY FOR BEN UAT — 3 Sep 2026.** Do **not** start Part 02 until Ben passes.
 
 | Field | Value |
 |---|---|
@@ -12,17 +12,18 @@
 | Target air | Thu **10 Sep 2026 19:00 UK** |
 | Gate | **PASS** (script 90.4 · episode gate PASS) |
 | Part 01 VO | `02_Voiceover/part01_zoo_of_stuff_v02.wav` · **85.680s** |
-| Part 01 rough | `09_Final-Export/hos_002_part01_rough_v04.mp4` · **85.67s** · sha256 `575ac412e4ee5f54e727f48b5e6b54b8f4248ff741539eaa787cd0ef4424b0cb` |
-| Plates | 12 × Flow Veo 3.1 Fast · plate09 I2V v04 · `04_Generated-Clips/part01/raw/v01_fast/` |
+| Part 01 rough | `09_Final-Export/hos_002_part01_rough_v05.mp4` · **85.67s** · sha256 `5613e590214377db081fa7d04a34b1fb608c7313edce4f22cfb38785b84c4ab7` |
+| Plates | 12 × Flow Veo 3.1 Fast · plate09 I2V v05 · `04_Generated-Clips/part01/raw/v01_fast/` |
+| Part 02 | **SCAFFOLD ONLY** — script + plates JSON (no mint until Part 01 PASS) |
 | Affiliate | none |
 | Not | Orbit Omni · Neutron Star · Part 02 |
 
 ## UAT
 
-Notes: `09_Final-Export/PART01_UAT_NOTES_v04.md`  
+Notes: `09_Final-Export/PART01_UAT_NOTES_v05.md`  
 Stills: `09_Final-Export/_uat_part01_v02/`
 
-Agent: plate 09 I2V fix PASS. Open + seating may rhyme visually — flag for Ben.
+Agent: v05 plate 09 = banquet table + empty glowing chairs (distinct from open).
 
 ## Next
 

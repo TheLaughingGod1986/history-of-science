@@ -1,0 +1,72 @@
+{
+  "part": 2,
+  "title": "First Patterns, Still Wrong",
+  "status": "scaffold_only",
+  "style_lock": "hos_001_part01_rough_v21",
+  "clip_use_s": 8.0,
+  "xfade_s": 0.4,
+  "vo_file": null,
+  "notes": "DO NOT MINT until Part 01 Ben UAT PASS. Explorer once on 05. No readable text. No Orbit.",
+  "plates": [
+    {
+      "id": "01_chapter_card",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon still: cream-on-brown History of Science chapter card reading FIRST PATTERNS STILL WRONG in bold serif — no other text. Warm period wood frame. Not photoreal.",
+      "prompt": "Premium 3D cartoon chapter card hold with subtle warm light pulse. Continuous gentle motion. Silent. No Orbit."
+    },
+    {
+      "id": "02_lavoisier_list",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon 1780s study bench: neat rows of blank specimen cards and simple glass jars — Lavoisier-era list of simple substances without readable words. Warm lamp. No people.",
+      "prompt": "Premium 3D cartoon period study: camera drifts along blank specimen cards and simple jars on a bench. Continuous motion. Silent. No readable text. No Orbit."
+    },
+    {
+      "id": "03_not_a_map",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon: scattered cards on a desk fail to form columns — a messy pile, not a grid. Warm light. No readable text. No people.",
+      "prompt": "Premium 3D cartoon: cards shuffle and refuse to align into columns on a desk. Continuous motion. Silent. No text. No Orbit."
+    },
+    {
+      "id": "04_triad_cards",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon: three glowing blank cards in a row almost rhyming — lithium sodium potassium vibe as coloured metal swatches without labels. Warm workshop. No people.",
+      "prompt": "Premium 3D cartoon: three glowing cousin cards pulse in a neat row, middle card between the others. Continuous motion. Silent. No readable text. No Orbit."
+    },
+    {
+      "id": "05_explorer_triad_break",
+      "explorer": true,
+      "still_prompt": "Premium 3D cartoon: exactly ONE Explorer boy on-model — messy brown hair, gold wire glasses, teal coat, tan vest, white shirt, brown bow tie, satchel. He lines three glowing cards, smiles, then a fourth card breaks the row. Single Explorer. No twins. No Orbit. No readable text on cards.",
+      "prompt": "Premium 3D cartoon: animate attached start frame. ONE Explorer lines three glowing cards, smiles — fourth card slides in and breaks the rhyme; he winces. Continuous acting. No twins. No Orbit. No readable text. Silent."
+    },
+    {
+      "id": "06_rhymes_run_out",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon workshop shelf: more and more blank cards crowding in until triads no longer fit. Warm light. No people. No readable text.",
+      "prompt": "Premium 3D cartoon: cards multiply across shelves until patterns break. Continuous drift. Silent. No text. No Orbit."
+    },
+    {
+      "id": "07_newlands_octave",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon period bench with element cards laid in a long line like a musical scale — no readable names. A small stylised piano keyboard at the end. Warm light. No people.",
+      "prompt": "Premium 3D cartoon: camera tracks along a long line of blank element cards beside a tiny piano keyboard. Continuous motion. Silent. No readable text. No Orbit."
+    },
+    {
+      "id": "08_piano_gag_fail",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon comedic beat: a stylised piano keyboard gag collapses or tips — cards scatter. Wonder not horror. No readable text. No people.",
+      "prompt": "Premium 3D cartoon: piano octave gag falls flat — keys tip, cards scatter, gentle comic fail. Continuous motion. Silent. No text. No Orbit."
+    },
+    {
+      "id": "09_almost_right",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon: a nearly-complete row of cards with one obvious gap — almost a pattern but wrong. Warm workshop. No people. No readable text.",
+      "prompt": "Premium 3D cartoon: nearly-aligned cards wobble with one gap breaking the pattern. Continuous motion. Silent. No text. No Orbit."
+    },
+    {
+      "id": "10_ruler_crooked",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon: a crooked wooden ruler beside mismatched cards on a desk — measurement problem visual. Warm light. No readable numbers. No people.",
+      "prompt": "Premium 3D cartoon: crooked ruler and mismatched cards slide; camera pushes toward the ruler. Continuous motion. Silent. No readable text. No Orbit."
+    }
+  ]
+}
