@@ -36,3 +36,9 @@ n = len(clips)
 parts += [f"[{n}:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,atrim=0:{vo_dur:.3f},apad=whole_dur={vo_dur:.3f}[a]", f"[{vprev}]trim=0:{vo_dur:.3f},setpts=PTS-STARTPTS[vout]"]
 subprocess.run(["ffmpeg","-y",*inputs,"-filter_complex",";".join(parts),"-map","[vout]","-map","[a]","-c:v","libx264","-preset","fast","-crf","18","-c:a","aac","-b:a","192k","-shortest","-movflags","+faststart",str(OUT)], check=True)
 print(f"SAVED {OUT} dur≈{probe_dur(OUT):.2f}s bytes={OUT.stat().st_size}")
+ICLOUD = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT")
+if ICLOUD.parent.exists():
+    ICLOUD.mkdir(parents=True, exist_ok=True)
+    dest = ICLOUD / OUT.name
+    subprocess.run(["cp", "-f", str(OUT), str(dest)], check=False)
+    print(f"ICLOUD {dest}", flush=True)

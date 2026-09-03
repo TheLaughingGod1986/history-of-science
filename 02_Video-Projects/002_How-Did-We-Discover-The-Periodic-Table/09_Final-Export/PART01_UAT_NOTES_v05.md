@@ -1,6 +1,7 @@
 # Part 01 UAT — hos_002_part01_rough_v05
 
 **File:** `09_Final-Export/hos_002_part01_rough_v05.mp4`  
+**iCloud:** `iCloud Drive/HOS UAT/hos_002_part01_rough_v05.mp4` (same folder as Germs 001 UAT)  
 **sha256:** `5613e590214377db081fa7d04a34b1fb608c7313edce4f22cfb38785b84c4ab7`  
 **Duration:** 85.67s  
 **Status:** STOP for Ben UAT — do not start Part 02 picture/VO

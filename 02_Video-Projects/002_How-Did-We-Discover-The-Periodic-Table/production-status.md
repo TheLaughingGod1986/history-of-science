@@ -13,6 +13,7 @@
 | Gate | **PASS** (script 90.4 · episode gate PASS) |
 | Part 01 VO | `02_Voiceover/part01_zoo_of_stuff_v02.wav` · **85.680s** |
 | Part 01 rough | `09_Final-Export/hos_002_part01_rough_v05.mp4` · **85.67s** · sha256 `5613e590214377db081fa7d04a34b1fb608c7313edce4f22cfb38785b84c4ab7` |
+| iCloud UAT | `iCloud Drive/HOS UAT/hos_002_part01_rough_v05.mp4` (same sha256) |
 | Plates | 12 × Flow Veo 3.1 Fast · plate09 I2V v05 · `04_Generated-Clips/part01/raw/v01_fast/` |
 | Part 02 | **SCAFFOLD ONLY** — script + plates JSON (no mint until Part 01 PASS) |
 | Affiliate | none |
