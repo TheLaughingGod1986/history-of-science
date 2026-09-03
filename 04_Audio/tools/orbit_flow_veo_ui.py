@@ -36,7 +36,9 @@ sys.path.insert(0, str(TOOLS))
 
 import orbit_gemini_veo as veo  # noqa: E402 — shared prompt lock / strip_audio
 
-FLOW_HOME = "https://labs.google/fx/tools/flow"
+# Google moved Flow off labs.google; prefer the live host (labs still redirects).
+FLOW_HOME = "https://flow.google.com/"
+FLOW_HOME_LEGACY = "https://labs.google/fx/tools/flow"
 DEFAULT_PROFILE = Path(
     os.environ.get(
         "ORBIT_FLOW_PROFILE",
@@ -212,16 +214,36 @@ def looks_logged_in(page) -> bool:
     url = (page.url or "").lower()
     if "accounts.google.com" in url and ("signin" in url or "servicelogin" in url):
         return False
+    on_flow = ("labs.google" in url) or ("flow.google.com" in url)
+    if not on_flow:
+        return False
+    if "/project/" in url:
+        return True
+    # Visible "New project" control on the modern home is enough.
     try:
-        body = page.locator("body").inner_text(timeout=5000)[:3000]
+        if page.get_by_text(re.compile(r"^\s*New project\s*$", re.I)).count() > 0:
+            return True
+        if page.get_by_role("button", name=re.compile(r"new project", re.I)).count() > 0:
+            return True
+    except Exception:
+        pass
+    try:
+        body = page.locator("body").inner_text(timeout=5000)[:4000]
     except Exception:
         return False
     low = body.lower()
-    if "sign in" in low and "google flow" in low and "ultra" not in low and "new project" not in low:
+    if "sign in" in low[:500] and "new project" not in low:
         return False
-    on_flow = ("labs.google" in url) or ("flow.google.com" in url)
-    return on_flow and (
-        "ultra" in low or "new project" in low or "/project/" in url or "flow tv" in low
+    return any(
+        m in low
+        for m in (
+            "new project",
+            "flow tv",
+            "ultra",
+            "start creating",
+            "all media",
+            "create with flow",
+        )
     )
 
 
@@ -251,16 +273,104 @@ def click_visible(page, *needles: str, timeout: int = 8000) -> bool:
     return True
 
 
+# Flow 2026-09 UI: prompt is often a contenteditable ("What do you want to create?")
+# not the older Slate `[data-slate-editor="true"]` node.
+_PROMPT_EDITOR_JS = """() => {
+  const score = (el) => {
+    if (!el) return null;
+    const r = el.getBoundingClientRect();
+    if (r.width < 40 || r.height < 10) return null;
+    if (r.bottom < 0 || r.top > (window.innerHeight || 900)) return null;
+    const aria = (el.getAttribute('aria-label') || '').toLowerCase();
+    const ph = (el.getAttribute('placeholder') || '').toLowerCase();
+    const t = (el.innerText || el.textContent || '').toLowerCase();
+    const cls = (el.className || '').toString();
+    const hint = aria + ' ' + ph + ' ' + t.slice(0, 80);
+    let s = r.width * Math.max(r.height, 24);
+    // Prefer the agent composer on the right.
+    if (r.x > 900) s += 20000;
+    if (/what do you want|what would you like|create\\?|prompt|describe/i.test(hint)) s += 50000;
+    if (cls.includes('ProseMirror')) s += 45000;
+    if (el.getAttribute('data-slate-editor') === 'true') s += 40000;
+    if (el.getAttribute('contenteditable') === 'true') s += 10000;
+    if ((el.getAttribute('role') || '') === 'textbox') s += 8000;
+    if (el.tagName === 'TEXTAREA') s += 6000;
+    return {el, s, w: r.width, h: r.height, x: r.x, y: r.y};
+  };
+  const cands = [];
+  for (const sel of [
+    '.ProseMirror[contenteditable="true"]',
+    '[data-slate-editor="true"]',
+    '[contenteditable="true"]',
+    'textarea',
+    '[role="textbox"]',
+  ]) {
+    for (const el of document.querySelectorAll(sel)) {
+      const hit = score(el);
+      if (hit) cands.push(hit);
+    }
+  }
+  cands.sort((a, b) => b.s - a.s);
+  if (!cands.length) return null;
+  const best = cands[0];
+  return {w: best.w, h: best.h, x: best.x, y: best.y};
+}"""
+
+_FOCUS_PROMPT_EDITOR_JS = """() => {
+  const score = (el) => {
+    if (!el) return null;
+    const r = el.getBoundingClientRect();
+    if (r.width < 40 || r.height < 10) return null;
+    const aria = (el.getAttribute('aria-label') || '').toLowerCase();
+    const ph = (el.getAttribute('placeholder') || '').toLowerCase();
+    const t = (el.innerText || el.textContent || '').toLowerCase();
+    const cls = (el.className || '').toString();
+    const hint = aria + ' ' + ph + ' ' + t.slice(0, 80);
+    let s = r.width * Math.max(r.height, 24);
+    if (r.x > 900) s += 20000;
+    if (/what do you want|what would you like|create\\?|prompt|describe/i.test(hint)) s += 50000;
+    if (cls.includes('ProseMirror')) s += 45000;
+    if (el.getAttribute('data-slate-editor') === 'true') s += 40000;
+    if (el.getAttribute('contenteditable') === 'true') s += 10000;
+    if ((el.getAttribute('role') || '') === 'textbox') s += 8000;
+    if (el.tagName === 'TEXTAREA') s += 6000;
+    return {el, s};
+  };
+  const cands = [];
+  for (const sel of [
+    '.ProseMirror[contenteditable="true"]',
+    '[data-slate-editor="true"]',
+    '[contenteditable="true"]',
+    'textarea',
+    '[role="textbox"]',
+  ]) {
+    for (const el of document.querySelectorAll(sel)) {
+      const hit = score(el);
+      if (hit) cands.push(hit);
+    }
+  }
+  cands.sort((a, b) => b.s - a.s);
+  if (!cands.length) return false;
+  const ed = cands[0].el;
+  ed.focus();
+  try {
+    const sel = window.getSelection();
+    if (sel) {
+      const range = document.createRange();
+      range.selectNodeContents(ed);
+      sel.removeAllRanges();
+      sel.addRange(range);
+    }
+  } catch (e) {}
+  return true;
+}"""
+
+
 def editor_box(page) -> dict | None:
     try:
         return safe_evaluate(
             page,
-            """() => {
-              const el = document.querySelector('[data-slate-editor="true"]');
-              if (!el) return null;
-              const r = el.getBoundingClientRect();
-              return {w: r.width, h: r.height, x: r.x, y: r.y};
-            }""",
+            _PROMPT_EDITOR_JS,
             retries=3,
             pause_ms=500,
         )
@@ -271,14 +381,14 @@ def editor_box(page) -> dict | None:
 def editor_usable(page) -> bool:
     """True when the agent prompt editor is on-screen and wide enough to type."""
     box = editor_box(page)
-    if not box or box["w"] < 50:
+    if not box or box["w"] < 40:
         return False
     # Closed session leaves a 0×0 or off-viewport editor node in the DOM
     try:
         vw = page.viewport_size["width"] if page.viewport_size else 1440
     except Exception:
         vw = 1440
-    return 0 <= box["x"] < vw - 40 and box["y"] > 0
+    return 0 <= box["x"] < vw - 40 and box["y"] > -20
 
 
 def ensure_agent_session(page) -> None:
@@ -298,12 +408,13 @@ def ensure_agent_session(page) -> None:
                 return null;
               };
               clickMatch(/history/i);
-              // session row
+              // session row — never match bare "orbit" (hits Orbit With Ben social cards)
               for (const el of document.querySelectorAll('button,div,[role="button"]')) {
                 const t = (el.innerText || '').trim();
                 const r = el.getBoundingClientRect();
                 if (r.width > 120 && r.height > 24 && r.x > 900 &&
-                    /untitled|session|orbit|video|cinematic/i.test(t) && t.length < 80) {
+                    /untitled session|new session|^session\b|video session|cinematic/i.test(t) &&
+                    t.length < 80 && !/facebook|instagram|orbit with ben/i.test(t)) {
                   el.click(); return;
                 }
               }
@@ -343,21 +454,24 @@ def _ensure_project_once(page) -> str:
                 "Run once with --login on the Ultra Google account:\n"
                 "  python3 04_Audio/tools/orbit_flow_veo_ui.py --login"
             )
-        if not click_visible(page, "new project"):
-            # Open most recent project card
-            href = safe_evaluate(
-                page,
-                """() => {
-                  const a = document.querySelector('a[href*="/project/"]');
-                  return a ? a.href : null;
-                }""",
-            )
-            if not href:
-                raise RuntimeError("Could not find New project or existing Flow project")
+        # Prefer an existing Flow project (New project SPA is flaky on flow.google.com).
+        href = safe_evaluate(
+            page,
+            """() => {
+              const as = [...document.querySelectorAll('a[href*="/project/"]')];
+              const hit = as.find(a => /flow\\.google\\.com\\/project\\/|labs\\.google.*\\/project\\//i.test(a.href));
+              return hit ? hit.href : (as[0] ? as[0].href : null);
+            }""",
+        )
+        if href:
             page.goto(href, wait_until="domcontentloaded", timeout=120_000)
-        else:
+        elif click_visible(page, "new project"):
             page.wait_for_url("**/project/**", timeout=60_000)
+        else:
+            raise RuntimeError("Could not find New project or existing Flow project")
         settle_after_nav(page, wait_ms=2000)
+        if "flow.google.com" not in (page.url or "") and "labs.google" not in (page.url or ""):
+            raise RuntimeError(f"Left Flow unexpectedly: {page.url}")
     else:
         page.wait_for_timeout(800)
     dismiss_banners(page)
@@ -1190,44 +1304,85 @@ def flow_prompt(
 
 
 _PLACEHOLDER_RE = re.compile(
-    r"^what do you want to create\??$|^describe|^enter a prompt|^prompt$",
+    r"^what do you want to create\??$|^what would you like to create\??$|"
+    r"^hi\b.*create\??$|^describe|^enter a prompt|^prompt$|^start creating",
     re.I,
 )
+
+_EDITOR_TEXT_JS = """() => {
+  const score = (el) => {
+    if (!el) return null;
+    const r = el.getBoundingClientRect();
+    if (r.width < 40 || r.height < 10) return null;
+    const aria = (el.getAttribute('aria-label') || '').toLowerCase();
+    const ph = (el.getAttribute('placeholder') || '').toLowerCase();
+    const t = (el.innerText || el.textContent || '').toLowerCase();
+    const hint = aria + ' ' + ph + ' ' + t.slice(0, 80);
+    let s = r.width * Math.max(r.height, 24);
+    if (r.x > 900) s += 20000;
+    if (/what do you want|what would you like|create\\?|prompt|describe/i.test(hint)) s += 50000;
+    if ((el.className || '').toString().includes('ProseMirror')) s += 45000;
+    if (el.getAttribute('data-slate-editor') === 'true') s += 40000;
+    if (el.getAttribute('contenteditable') === 'true') s += 10000;
+    if ((el.getAttribute('role') || '') === 'textbox') s += 8000;
+    if (el.tagName === 'TEXTAREA') s += 6000;
+    return {el, s};
+  };
+  const cands = [];
+  for (const sel of [
+    '.ProseMirror[contenteditable="true"]',
+    '[data-slate-editor="true"]',
+    '[contenteditable="true"]',
+    'textarea',
+    '[role="textbox"]',
+  ]) {
+    for (const el of document.querySelectorAll(sel)) {
+      const hit = score(el);
+      if (hit) cands.push(hit);
+    }
+  }
+  cands.sort((a, b) => b.s - a.s);
+  if (!cands.length) return '';
+  const ed = cands[0].el;
+  if (ed.tagName === 'TEXTAREA' || ed.tagName === 'INPUT') {
+    return (ed.value || '').trim();
+  }
+  // Strip ProseMirror placeholder widgets so empty editors don't look filled.
+  const clone = ed.cloneNode(true);
+  clone.querySelectorAll(
+    '.prosemirror-placeholder, .ProseMirror-placeholder, .ProseMirror-widget, [data-placeholder]'
+  ).forEach((n) => n.remove());
+  let out = (clone.innerText || clone.textContent || '').trim();
+  // Placeholder decorations sometimes leave the question as plain text.
+  const q = ['what do you want to create', 'what would you like to create'];
+  const low = out.toLowerCase().replace(/\?+$/, '');
+  if (q.includes(low)) return '';
+  return out;
+}"""
 
 
 def _editor_prompt_text(page) -> str:
     """Return real editor text. Flow's placeholder must not count as a prompt."""
-    raw = page.evaluate(
-        """() => {
-          const ed = document.querySelector('[data-slate-editor="true"]');
-          return (ed && (ed.innerText || '').trim()) || '';
-        }"""
-    ) or ""
-    if _PLACEHOLDER_RE.match(raw.strip()):
+    raw = page.evaluate(_EDITOR_TEXT_JS) or ""
+    stripped = raw.strip()
+    if _PLACEHOLDER_RE.match(stripped):
         return ""
-    return raw.strip()
+    if stripped.lower() in {
+        "what do you want to create?",
+        "what do you want to create",
+        "what would you like to create?",
+    }:
+        return ""
+    return stripped
 
 
 def _clear_editor(page) -> None:
-    """Wipe placeholder + leftover Slate text. Do not click the image chip."""
+    """Wipe placeholder + leftover prompt text. Do not click the image chip."""
     for combo in (("Meta+A", "Backspace"), ("Control+A", "Backspace")):
-        page.evaluate(
-            """() => {
-              const ed = document.querySelector('[data-slate-editor="true"]');
-              if (!ed) return;
-              ed.focus();
-              const sel = window.getSelection();
-              if (!sel) return;
-              const range = document.createRange();
-              range.selectNodeContents(ed);
-              sel.removeAllRanges();
-              sel.addRange(range);
-            }"""
-        )
+        page.evaluate(_FOCUS_PROMPT_EDITOR_JS)
         page.keyboard.press(combo[0])
         page.keyboard.press(combo[1])
         page.wait_for_timeout(80)
-    # Placeholder-only is fine; leftover "What do you want…" + prompt is not.
     leftover = _editor_prompt_text(page)
     if leftover.lower().startswith("what do you want"):
         page.keyboard.press("Meta+A")
@@ -1238,8 +1393,8 @@ def _clear_editor(page) -> None:
 def set_prompt(page, prompt: str) -> None:
     """Type into the Flow agent editor without wiping an attached image chip.
 
-    Slate only arms Create when it sees real input events. execCommand/DOM
-    writes look filled but leave Create disabled.
+    ProseMirror/Slate only arm Create on real input events. DOM writes look
+    filled but leave send disabled.
     """
     ensure_agent_session(page)
     box = editor_box(page)
@@ -1248,27 +1403,26 @@ def set_prompt(page, prompt: str) -> None:
     # Click toward the right of the editor so we don't focus/remove the chip
     page.mouse.click(box["x"] + min(box["w"] - 40, 180), box["y"] + max(6, box["h"] / 2))
     page.wait_for_timeout(150)
-    page.keyboard.press("Meta+A")
-    page.keyboard.press("Backspace")
-    page.keyboard.press("Control+A")
-    page.keyboard.press("Backspace")
-    page.wait_for_timeout(80)
-    # Playwright insert_text fires beforeinput insertText — Slate consumes this.
+    page.evaluate(_FOCUS_PROMPT_EDITOR_JS)
+    _clear_editor(page)
+    page.evaluate(_FOCUS_PROMPT_EDITOR_JS)
+    # Playwright insert_text fires beforeinput insertText — editor consumes this.
     page.keyboard.insert_text(prompt)
-    page.wait_for_timeout(300)
+    page.wait_for_timeout(450)
     got = _editor_prompt_text(page)
     dirty = got.lower().startswith("what do you want")
     ok = bool(got and (not dirty) and len(got) >= min(24, max(12, len(prompt) // 8)))
-    print(f"  set_prompt insert_text chars={len(got)} dirty={dirty}", flush=True)
+    print(f"  set_prompt insert_text chars={len(got)} dirty={dirty} head={got[:40]!r}", flush=True)
     if not ok:
-        page.keyboard.press("Meta+A")
-        page.keyboard.press("Backspace")
-        page.wait_for_timeout(80)
-        page.keyboard.type(prompt, delay=2)
-        page.wait_for_timeout(200)
+        page.evaluate(_FOCUS_PROMPT_EDITOR_JS)
+        _clear_editor(page)
+        page.evaluate(_FOCUS_PROMPT_EDITOR_JS)
+        page.keyboard.type(prompt, delay=3)
+        page.wait_for_timeout(300)
         got = _editor_prompt_text(page)
         dirty = got.lower().startswith("what do you want")
         ok = bool(got and (not dirty) and len(got) >= min(24, max(12, len(prompt) // 8)))
+        print(f"  set_prompt type fallback chars={len(got)} dirty={dirty}", flush=True)
     if not ok:
         raise RuntimeError(
             f"Flow prompt editor not armed after input events head={got[:80]!r}"
