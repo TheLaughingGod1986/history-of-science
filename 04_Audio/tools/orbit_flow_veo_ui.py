@@ -217,10 +217,11 @@ def looks_logged_in(page) -> bool:
     except Exception:
         return False
     low = body.lower()
-    if "sign in" in low and "google flow" in low and "ultra" not in low:
+    if "sign in" in low and "google flow" in low and "ultra" not in low and "new project" not in low:
         return False
-    return "labs.google" in url and (
-        "ultra" in low or "new project" in low or "/project/" in url
+    on_flow = ("labs.google" in url) or ("flow.google.com" in url)
+    return on_flow and (
+        "ultra" in low or "new project" in low or "/project/" in url or "flow tv" in low
     )
 
 
