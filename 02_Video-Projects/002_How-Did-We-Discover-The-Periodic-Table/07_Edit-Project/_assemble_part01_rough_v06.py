@@ -17,7 +17,8 @@ SF2 = GERMS_MUSIC / "TimGM6mb.sf2"
 BED_RAW = PROJ / "05_Music/hos_002_part01_curious_workshop_v01.wav"
 BED = PROJ / "05_Music/hos_002_part01_curious_workshop_v01_norm.wav"
 OUT = PROJ / "09_Final-Export/hos_002_part01_rough_v07.mp4"
-ICLOUD = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT")
+ICLOUD = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/OWB UAT")
+ICLOUD_HOS = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT")
 CLIP_USE = 8.0
 XFADE = 0.4
 BED_VOL = 0.14
@@ -124,9 +125,11 @@ def main() -> None:
     subprocess.run(cmd, check=True)
     digest = sha256(OUT)
     print(f"SAVED {OUT} bytes={OUT.stat().st_size} dur≈{probe_dur(OUT):.2f}s sha256={digest}", flush=True)
-    if ICLOUD.parent.exists():
-        ICLOUD.mkdir(parents=True, exist_ok=True)
-        dest = ICLOUD / OUT.name
+    for cloud in (ICLOUD, ICLOUD_HOS):
+        if not cloud.parent.exists():
+            continue
+        cloud.mkdir(parents=True, exist_ok=True)
+        dest = cloud / OUT.name
         subprocess.run(["cp", "-f", str(OUT), str(dest)], check=False)
         print(f"ICLOUD {dest} sha256={sha256(dest)}", flush=True)
 
