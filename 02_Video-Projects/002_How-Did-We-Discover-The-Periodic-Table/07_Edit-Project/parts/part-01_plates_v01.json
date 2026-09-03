@@ -16,8 +16,8 @@
     {
       "id": "02_workshop_jars",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon 18th-century chemistry workshop. Crowded wooden shelves of CORKED flat-bottom reagent bottles filled with still clear colored liquids (amber, teal, gold, ruby) — no open necks, no bubbles. Ores on the wood only. Furnace glow. No people. No readable labels.",
-      "prompt": "Premium 3D cartoon period chemistry workshop. Camera drifts along shelves of CORKED flat-bottom glass reagent bottles — each bottle sealed with a cork, filled halfway with STILL clear colored liquid (amber, teal, gold, ruby), flat meniscus, gentle glass glints only. NO open necks. ZERO bubbles, ZERO foam, ZERO sparkles, ZERO spheres in liquid or air. Ores rest on wood only. Furnace flicker. Continuous motion. Silent. HARD REJECT: open flasks, pouring, boiling, bubbles, floating spheres, powder in glass, readable text, Orbit."
+      "still_prompt": "Premium 3D cartoon 18th-century chemistry workshop. Crowded wooden shelves of OPAQUE ceramic jars and sealed metal canisters — no clear glass liquids. Colored powders sealed inside opaque vessels. Ores on the wood. Furnace glow. No people. No readable labels.",
+      "prompt": "Premium 3D cartoon period chemistry workshop. Camera drifts along shelves of OPAQUE ceramic jars and sealed tin canisters only — NO clear glass flasks, NO transparent liquids, NO bubbles possible. Colored powders stay sealed inside opaque vessels. Ores on wood. Furnace flicker. Continuous motion. Silent. HARD REJECT: clear glass with liquid, open necks, pouring, bubbles, sparkles, readable text, Orbit, modern news, food."
     },
     {
       "id": "03_four_elements_crumble",
@@ -40,20 +40,20 @@
     {
       "id": "06_alchemist_accidents",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon period cellar: ONE round flask already seated in an iron tripod on wood. Inside the liquid, a sudden unexpected colour flare blooms. No pouring. No crucible stream. Background corked bottles of still liquid. Not gore. No readable glyphs.",
-      "prompt": "Premium 3D cartoon alchemist bench, tight hero shot. ONE clear flask ALREADY sits firmly in an iron tripod on the wood — no pouring, no powder stream, no crucible tipping. Suddenly a small unexpected colour flare blooms FROM INSIDE the liquid only (wonder accident). Continuous motion. Nearby vessels if any are CORKED bottles of STILL clear liquid — ZERO bubbles. Wonder not horror. HARD REJECT: any pouring, powder streams, missing the mouth, floating glassware, bubbles or sparkles in air, readable text, gore, Orbit."
+      "still_prompt": "Premium 3D cartoon period cellar: ONE opaque ceramic jar on a tripod tip over — coloured powder spills onto wood and a sudden puff of coloured smoke rises. No clear liquid flasks. Not gore. No readable glyphs.",
+      "prompt": "Premium 3D cartoon alchemist bench. ONE opaque ceramic jar tips on a tripod; coloured powder spills onto the wood; a sudden coloured smoke puff blooms (wonder accident). NO clear glass liquids, NO pouring into flasks, NO bubbles. Continuous motion. Wonder not horror. HARD REJECT: clear flasks, liquid bubbles, floating glass, CNN, news footage, food, readable text, gore, Orbit."
     },
     {
       "id": "07_shelf_names_grow",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon workshop shelf multiplying — more and more CORKED flat-bottom reagent bottles of still clear colored liquid crowding the wood into a zoo. Ores on the bench only. No readable names. No people.",
-      "prompt": "Premium 3D cartoon: shelves keep gaining more CORKED flat-bottom reagent bottles of STILL CLEAR COLORED LIQUID (amber, teal, gold, ruby) crowding into a zoo. Every bottle sealed with a cork — no open necks, no pouring. Flat meniscus. ZERO bubbles, ZERO sparkles, ZERO spheres. HARD REJECT: open flasks, boiling, bubbles in air or liquid, rocks/ore/crystals/powder inside glass, readable text. Ores stay on wood. Continuous multiply and camera drift. Silent. No Orbit."
+      "still_prompt": "Premium 3D cartoon workshop shelf multiplying — more OPAQUE ceramic jars and sealed metal canisters crowding into a zoo. No clear liquids. Ores on the bench. No readable names. No people.",
+      "prompt": "Premium 3D cartoon: shelves keep gaining more OPAQUE ceramic jars and sealed metal canisters crowding into a zoo of stuff. NO clear glass liquids, NO bubbles. Continuous multiply and camera drift. Silent. HARD REJECT: transparent flasks with liquid, bubbles, readable text, Orbit, news, food."
     },
     {
       "id": "08_labelled_zoo",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon: chaotic cabinet of CORKED flat-bottom bottles of still clear colored liquids, blank paper tags fluttering. Warm period wood. No readable words. No people.",
-      "prompt": "Premium 3D cartoon cabinet of CORKED flat-bottom reagent bottles — every vessel sealed, STILL CLEAR COLORED LIQUID only, blank tags flutter. ZERO bubbles, ZERO sparkles, ZERO spheres. No open necks, no pouring. Camera weaves through. Continuous motion. Silent. HARD REJECT: open flasks, bubbles in air or liquid, stuffing, powder in jars, readable text, Orbit."
+      "still_prompt": "Premium 3D cartoon: chaotic cabinet of OPAQUE ceramic jars and sealed canisters with blank paper tags. Warm period wood. No clear liquids. No readable words. No people.",
+      "prompt": "Premium 3D cartoon cabinet of OPAQUE ceramic jars and sealed metal canisters — blank tags flutter. NO clear glass liquids, NO bubbles. Camera weaves through. Continuous motion. Silent. HARD REJECT: transparent liquid flasks, bubbles, readable text, Orbit, news, food."
     },
     {
       "id": "09_seating_plan_gap",
@@ -64,8 +64,8 @@
     {
       "id": "10_rock_not_fire",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon: dark rock on a grate with heat shimmer only (NO flames). Beside it a CORKED flat-bottom blue gas bottle sits FULLY IN the brass scale pan — flat base touching the pan metal. Period workshop. No people. No text.",
-      "prompt": "Premium 3D cartoon split beat. LEFT: dark rock on a metal grate with rising heat shimmer only — NO flames, NO fire show. RIGHT: a CORKED flat-bottom blue glass reagent bottle (gas jar) sits FULLY INSIDE the brass scale pan — flat base presses on the pan metal with visible contact; chains hold the pan; bottle does not hover. Liquid STILL, ZERO bubbles. Continuous gentle settle and shimmer. Silent. HARD REJECT: floating bottle, round flask hovering beside pan, open necks, flames/fire on the rock, bubbles in air, Orbit, readable text."
+      "still_prompt": "Premium 3D cartoon: dark rock on a grate with heat shimmer only (NO flames). Beside it a solid copper gas cylinder / metal canister sits FULLY ON the brass scale pan — flat metal base touching the pan. No glass. No liquid. Period workshop. No people. No text.",
+      "prompt": "Premium 3D cartoon. LEFT: dark rock on a metal grate with rising heat shimmer only — NO flames. RIGHT: a SOLID copper gas cylinder with flat metal base sits FULLY ON the brass scale pan — base presses on the pan metal, visible contact, no hover, no glass, no liquid, no bubbles. Continuous gentle settle. Silent. HARD REJECT: floating objects, glass flasks, liquid bubbles, flames on rock, split-screen wipe, Orbit, readable text, news, food."
     },
     {
       "id": "11_chemists_more_names",
