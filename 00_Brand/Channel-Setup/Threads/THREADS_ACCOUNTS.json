@@ -1,10 +1,10 @@
 {
   "brand": "History of Science",
-  "handle": "@historyofscience",
-  "profile_url": null,
-  "youtube": "https://www.youtube.com/@HistoryOfScience",
+  "handle": "@historyofscienceyt",
+  "profile_url": "https://www.threads.com/@historyofscienceyt",
+  "youtube": "https://www.youtube.com/@HistoryOfScienceYT",
   "bio": "How we discovered what we know. Full films on YouTube ↓",
-  "avatar": "00_Brand/Channel-Setup/TikTok/avatar_800x800.png",
   "soft_cta": "Full film on YouTube.",
-  "notes": "Create after Instagram. Do not post from @orbitwithben."
+  "notes": "Match Instagram @historyofscienceyt. Do not post from @orbitwithben. Do not post to @historyofscience (Wellesley Science Center).",
+  "do_not_publish_to": ["orbitwithben", "historyofscience"]
 }

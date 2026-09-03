@@ -1,0 +1,19 @@
+{
+  "id": "01_hands_arrive",
+  "model": "Veo 3.1 - Fast",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/raw/v02_fast_probe/01_hands_arrive_v01.mp4",
+  "bytes": 1608337,
+  "duration": 8.0,
+  "sha256": "03740f749d43be0ce5977b08713adaaf9924ea098cea6aac8a5daf40fa8e522f",
+  "motion_mean": 8.9,
+  "first_second_motion": 24.99,
+  "seconds": 72.7,
+  "engine": "flow-ui-veo",
+  "orbit_ref": null,
+  "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/refs/01_hands_arrive_v01.jpg",
+  "orbit_attached": true,
+  "identity_lock": false,
+  "scenery_only": false,
+  "media_id": "caedff8b-b684-4c85-b1b2-659af28f1fcf",
+  "url": "https://labs.google/fx/tools/flow/project/9ed1b1c9-c50d-481c-8882-fb03e8acd28a"
+}

@@ -1,0 +1,26 @@
+url=https://labs.google/fx/tools/flow
+logged_in=True
+button_count=22
+
+'help_outlined Flow Help Center Flow Help Center' disabled=False x=1205 y=28 24x24
+'ULTRA' disabled=False x=1305 y=16 111x48
+'close Dismiss Dismiss' disabled=False x=1355 y=97 40x40
+'edit Edit project' disabled=False x=151 y=413 40x40
+'delete Delete project' disabled=False x=433 y=413 40x40
+'edit Edit project' disabled=False x=619 y=413 40x40
+'delete Delete project' disabled=False x=903 y=413 40x40
+'edit Edit project' disabled=False x=1081 y=413 40x40
+'delete Delete project' disabled=False x=1372 y=413 40x40
+'edit Edit project' disabled=False x=143 y=732 40x40
+'delete Delete project' disabled=False x=433 y=732 40x40
+'edit Edit project' disabled=False x=612 y=732 40x40
+'delete Delete project' disabled=False x=903 y=732 40x40
+'edit Edit project' disabled=False x=1080 y=732 40x40
+'delete Delete project' disabled=False x=1372 y=732 40x40
+'edit Edit project' disabled=False x=143 y=1051 40x40
+'delete Delete project' disabled=False x=433 y=1051 40x40
+'edit Edit project' disabled=False x=612 y=1051 40x40
+'delete Delete project' disabled=False x=903 y=1051 40x40
+'edit Edit project' disabled=False x=1081 y=1051 40x40
+'delete Delete project' disabled=False x=1372 y=1051 40x40
+'add_2 New project' disabled=False x=624 y=716 192x128

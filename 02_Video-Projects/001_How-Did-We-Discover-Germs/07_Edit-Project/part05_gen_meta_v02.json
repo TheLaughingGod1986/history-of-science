@@ -1,0 +1,61 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "plates": [
+    {
+      "id": "04_explorer_scrubs",
+      "seconds": 92.2,
+      "bytes": 2322564,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/refs/explorer_sheet.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "ae24e3c6-765f-49a5-a22e-65591a93b00c",
+      "url": "https://labs.google/fx/tools/flow/project/6ef99262-955c-44dd-85ef-2ddd606691ab",
+      "motion_mean": 10.5,
+      "first_second_motion": 5.19,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe/04_explorer_scrubs_v02.mp4",
+      "i2v": true
+    },
+    {
+      "id": "05_theatre_wins",
+      "seconds": 114.4,
+      "bytes": 4553857,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "f167359b-ad5b-4a45-982f-7e10eeaf7311",
+      "url": "https://labs.google/fx/tools/flow/project/572d406b-c94a-48be-96e3-5c02f14eace1",
+      "motion_mean": 11.77,
+      "first_second_motion": 29.31,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe/05_theatre_wins_v02.mp4",
+      "i2v": false
+    },
+    {
+      "id": "06_soap_hands",
+      "seconds": 105.7,
+      "bytes": 3814572,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "70c7a74a-908e-490b-955c-b2d3f01983fd",
+      "url": "https://labs.google/fx/tools/flow/project/43eaa5d1-d7ef-415d-aa17-6374c9fec7ce",
+      "motion_mean": 11.69,
+      "first_second_motion": 28.22,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe/06_soap_hands_v02.mp4",
+      "i2v": false
+    }
+  ],
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe"
+}

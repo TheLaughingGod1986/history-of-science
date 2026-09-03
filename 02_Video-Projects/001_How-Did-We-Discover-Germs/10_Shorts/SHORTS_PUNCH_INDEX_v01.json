@@ -1,0 +1,162 @@
+{
+  "parentId": "_C92tIJCk8A",
+  "parentTitle": "How Did We Discover Germs?",
+  "parentUrl": "https://youtu.be/_C92tIJCk8A",
+  "source": "hos_001_germs_full_v02.mp4",
+  "sourceSha": "f49fae7872e9ae16d76e76d01e00444e6fa6159956ee0375fb1df8234d9df195",
+  "note": "Related _C92tIJCk8A + Animistry covers + VidIQ listings saved. Scheduled files still v01 / s05 v02. Zero /go/. Do not remint.",
+  "schedule": [
+    {
+      "when": "Fri 4 Sep 2026 11:30 Europe/London",
+      "id": "s01_shadow",
+      "title": "Germs don't cast a shadow",
+      "platformPostId": "8uBR-9oxeWs"
+    },
+    {
+      "when": "Sat 5 Sep 2026 11:30 Europe/London",
+      "id": "s02_pond",
+      "title": "Microbes in a drop of pond water",
+      "platformPostId": "YX2UR1u-JCQ"
+    },
+    {
+      "when": "Sun 6 Sep 2026 11:30 Europe/London",
+      "id": "s03_vector",
+      "title": "Germs hitch a ride on you",
+      "platformPostId": "Fnb3p81u-wY"
+    },
+    {
+      "when": "Mon 7 Sep 2026 11:30 Europe/London",
+      "id": "s04_flask",
+      "title": "A flask that proved germs come from outside",
+      "platformPostId": "vpuRgKXtFlY"
+    },
+    {
+      "when": "Tue 8 Sep 2026 11:30 Europe/London",
+      "id": "s05_soap",
+      "title": "Invisible life is still everywhere",
+      "platformPostId": "Lcmh5y2KMQM"
+    }
+  ],
+  "items": [
+    {
+      "id": "s01_shadow",
+      "slot": "Fri 4 Sep 2026 11:30 Europe/London",
+      "title": "Germs don't cast a shadow",
+      "line": "So how do you fight an enemy that does not cast a shadow?",
+      "start": 74.1,
+      "end": 80.05,
+      "fill_start": 18.0,
+      "fill_dur": 14.2,
+      "hold": 0.0,
+      "loop_open": true,
+      "file": "hos_001_s01_shadow_punch_v02.mp4",
+      "duration": 24.229667,
+      "relatedVideoId": "_C92tIJCk8A",
+      "relatedApplied": true,
+      "go": null,
+      "status": "SCHEDULED",
+      "platformPostId": "8uBR-9oxeWs",
+      "locked": false,
+      "type": {
+        "yellow": "How do you fight",
+        "white": "an enemy that does not cast a shadow?"
+      },
+      "uat": "TEXT ONLY TYPE recut. Picture/VO unchanged. One HOLD card. Last ~4s CTA. Stop for UAT."
+    },
+    {
+      "id": "s02_pond",
+      "slot": "Sat 5 Sep 2026 11:30 Europe/London",
+      "title": "Microbes in a drop of pond water",
+      "line": "A drop of pond water is not empty.",
+      "start": 80.14,
+      "end": 100.64,
+      "hold": 0.0,
+      "loop_open": true,
+      "file": "hos_001_s02_pond_punch_v02.mp4",
+      "duration": 24.563,
+      "relatedVideoId": "_C92tIJCk8A",
+      "relatedApplied": true,
+      "go": null,
+      "status": "SCHEDULED",
+      "platformPostId": "YX2UR1u-JCQ",
+      "locked": false,
+      "type": {
+        "yellow": "A drop of pond water",
+        "white": "is not empty"
+      },
+      "uat": "TEXT ONLY TYPE recut. Picture/VO unchanged. One HOLD card. Last ~4s CTA. Stop for UAT."
+    },
+    {
+      "id": "s03_vector",
+      "slot": "Sun 6 Sep 2026 11:30 Europe/London",
+      "title": "Germs hitch a ride on you",
+      "line": "You are the vector.",
+      "start": 203.2,
+      "end": 223.7,
+      "hold": 0.0,
+      "loop_open": true,
+      "file": "hos_001_s03_vector_punch_v02.mp4",
+      "duration": 24.521333,
+      "relatedVideoId": "_C92tIJCk8A",
+      "relatedApplied": true,
+      "go": null,
+      "status": "SCHEDULED",
+      "platformPostId": "Fnb3p81u-wY",
+      "locked": false,
+      "type": {
+        "yellow": "You are",
+        "white": "the vector"
+      },
+      "uat": "TEXT ONLY TYPE recut. Picture/VO unchanged. One HOLD card. Last ~4s CTA. Stop for UAT."
+    },
+    {
+      "id": "s04_flask",
+      "slot": "Mon 7 Sep 2026 11:30 Europe/London",
+      "title": "A flask that proved germs come from outside",
+      "line": "He won with a flask shaped like a question mark.",
+      "start": 233.7,
+      "end": 254.2,
+      "hold": 0.0,
+      "loop_open": true,
+      "file": "hos_001_s04_flask_punch_v02.mp4",
+      "duration": 24.521333,
+      "relatedVideoId": "_C92tIJCk8A",
+      "relatedApplied": true,
+      "go": null,
+      "status": "SCHEDULED",
+      "platformPostId": "vpuRgKXtFlY",
+      "locked": false,
+      "type": {
+        "yellow": "A flask",
+        "white": "shaped like a question mark"
+      },
+      "uat": "TEXT ONLY TYPE recut. Picture/VO unchanged. One HOLD card. Last ~4s CTA. Stop for UAT."
+    },
+    {
+      "id": "s05_soap",
+      "slot": "Tue 8 Sep 2026 11:30 Europe/London",
+      "title": "Invisible life is still everywhere",
+      "line": "What else is still invisible?",
+      "start": 343.2,
+      "end": 350.0,
+      "hold": 3.6,
+      "loop_open": true,
+      "file": "hos_001_s05_soap_punch_v03.mp4",
+      "duration": 23.867667,
+      "relatedVideoId": "_C92tIJCk8A",
+      "relatedApplied": true,
+      "go": null,
+      "status": "SCHEDULED",
+      "platformPostId": "Lcmh5y2KMQM",
+      "locked": false,
+      "spoken_may": "Every time soap meets your hands.",
+      "uat": "TEXT ONLY TYPE recut. Picture/VO unchanged. One HOLD card. Last ~4s CTA. Stop for UAT.",
+      "audio_end": 359.325,
+      "type": {
+        "yellow": "What else",
+        "white": "is still invisible?"
+      }
+    }
+  ],
+  "typeLock": "showrunner-2026-09-02"
+}

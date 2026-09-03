@@ -1,0 +1,27 @@
+{
+  "format": "longform",
+  "video": "../09_Final-Export/hos_001_germs_full_v02.mp4",
+  "title": "How Did We Discover Germs?",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/germs_long_description_v01.txt",
+  "tagsFile": "Tags/germs_long_tags_v01.txt",
+  "chaptersFile": "Chapters/germs_long_chapters_v01.txt",
+  "pinnedCommentFile": "Pinned-Comments/germs_long_pinned-comment_v01.txt",
+  "thumbnail": "../08_Thumbnail/Selected/hos_001_thumb_B_animistry_explorer_v01.jpg",
+  "thumbnailAbc": [
+    "../08_Thumbnail/Selected/hos_001_thumb_A_animistry_flask_v01.jpg",
+    "../08_Thumbnail/Selected/hos_001_thumb_B_animistry_explorer_v01.jpg",
+    "../08_Thumbnail/Selected/hos_001_thumb_C_animistry_microscope_v01.jpg"
+  ],
+  "titleAbc": [
+    "How Did We Discover Germs?",
+    "The Day Doctors Realised Germs Were Real",
+    "How Invisible Creatures Changed Medicine Forever"
+  ],
+  "schedule": "2026-09-03T17:00:00.000Z",
+  "youtubeId": "_C92tIJCk8A",
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false
+}

@@ -1,0 +1,43 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "plates": [
+    {
+      "id": "08_passengers",
+      "seconds": 74.3,
+      "bytes": 2602342,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "7db24040-3374-482c-9df4-24434edc593e",
+      "url": "https://labs.google/fx/tools/flow/project/f89f949a-f96a-4ddd-bcde-142f778e577c",
+      "motion_mean": 8.4,
+      "first_second_motion": 27.43,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part04/raw/v01_fast_probe/08_passengers_v21.mp4",
+      "t2v": true
+    },
+    {
+      "id": "08_passengers",
+      "seconds": 75.0,
+      "bytes": 2888855,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "fd23b3b2-96be-4d70-a72c-3f0dec095dbb",
+      "url": "https://labs.google/fx/tools/flow/project/791dc42e-3284-42d0-8c18-874ce2b65d15",
+      "motion_mean": 12.74,
+      "first_second_motion": 37.31,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part04/raw/v01_fast_probe/08_passengers_v21.mp4",
+      "t2v": true
+    }
+  ],
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part04/raw/v01_fast_probe"
+}

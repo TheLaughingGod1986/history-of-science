@@ -1,0 +1,44 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "plates": [
+    {
+      "id": "05_theatre_wins",
+      "seconds": 106.3,
+      "bytes": 3505366,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "f6e09f63-5a79-40c0-98bd-e59d3894b991",
+      "url": "https://labs.google/fx/tools/flow/project/f5f000b1-38bf-4489-b68e-edd9bc477201",
+      "motion_mean": 10.33,
+      "first_second_motion": 15.49,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe/05_theatre_wins_v01c.mp4",
+      "i2v": false
+    },
+    {
+      "id": "08_last_light",
+      "seconds": 70.0,
+      "bytes": 2426705,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/refs/t72_pasteur_lock_one_flask.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "65f8eced-28a5-4d50-993d-a560115a3e99",
+      "url": "https://labs.google/fx/tools/flow/project/5b0a274d-4722-4f56-90d0-6ee7049629da",
+      "motion_mean": 15.17,
+      "first_second_motion": 31.38,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe/08_last_light_v01d.mp4",
+      "i2v": true
+    }
+  ],
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe",
+  "t72_start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/refs/t72_pasteur_lock_one_flask.jpg"
+}

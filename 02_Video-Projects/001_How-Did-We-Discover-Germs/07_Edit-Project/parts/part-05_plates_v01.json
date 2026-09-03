@@ -1,0 +1,60 @@
+{
+  "part": 5,
+  "title": "Clean Hands, Clean Cuts",
+  "chapter_card": "A surgical theatre",
+  "style_lock": "hos_001_part01_rough_v21",
+  "engine": "Veo 3.1 - Fast",
+  "clip_use_s": 7.5,
+  "xfade_s": 0.4,
+  "notes": "v01: Lister theatre. One Pasteur only if shown (t72 S-curve on wood). Lister NEW not Semmelweis/VECTOR mustache. Explorer garnish once. No sprites, no twins, no top hats.",
+  "plates": [
+    {
+      "id": "01_old_theatre",
+      "explorer": false,
+      "i2v": false,
+      "prompt": "Premium Animistry 3D cartoon. 1860s operating theatre ALREADY moving in the first second — not a still, not Ken Burns. Bloody wooden table, stained linen, oil lamps, wood-and-brass room. Surgeons in dark frocks already at work. Camera trucks through the bloodiest room in medicine. Continuous 8s motion. ZERO cartoon germ sprites. ZERO smiling microbes. ZERO modern hospital. ZERO Orbit robot. NO Explorer. NO top hats. NO matching-coat twins. Silent picture. No readable text."
+    },
+    {
+      "id": "02_spray_scrub",
+      "explorer": false,
+      "i2v": false,
+      "prompt": "Premium Animistry 3D cartoon. 1860s operating theatre. Carbolic mist is ALREADY spraying across a wooden table. Period hands scrub instruments. Gleaming metal tools, cloth, wood. Camera already moving. Continuous 8s. Germs garnish only if any — faceless rods, sparse, no eyes no smiles. NEVER a germ-macro hero. ZERO cartoon sprites. NO Explorer. NO Orbit. NO modern hospital. NO top hats. Silent. No text."
+    },
+    {
+      "id": "03_protocol",
+      "explorer": false,
+      "i2v": false,
+      "prompt": "Premium Animistry 3D cartoon. 1860s surgical theatre. ONE older English surgeon washing as craft — Joseph Lister: receding brown-grey hair, mutton-chop sideburns, NO dark mustache, NOT Semmelweis, NOT the VECTOR pair. Dark frock, no hat. Stone or wood basin, soap, careful ritual. Theatre stays the room. Camera already moving. Continuous 8s. ZERO second doctor clone. ZERO matching-coat twins. ZERO top hats. ZERO germ sprites. ZERO Explorer. ZERO Orbit. Silent. No text."
+    },
+    {
+      "id": "04_explorer_scrubs",
+      "explorer": true,
+      "i2v": true,
+      "prompt": "IMAGE-TO-VIDEO. Premium Animistry 3D cartoon. 1860s operating theatre is the HERO. ONE Victorian-scholar boy Explorer — messy brown hair, round gold glasses, teal overcoat, tan vest, brown bow tie — already scrubbing in at a basin, then LEAVES frame. Do not park him centre the whole clip. Theatre, lamps, table stay the picture. Continuous 8s. EXACTLY one Explorer. NO twins. NO Orbit robot. NO cartoon germ sprites. NO top hats. Silent. No readable text."
+    },
+    {
+      "id": "05_theatre_wins",
+      "explorer": false,
+      "i2v": false,
+      "prompt": "Premium Animistry 3D cartoon. Living 1860s operating theatre — the room is winning. Cleaner linen, calmer lamps, fever receding. Camera trucks through the living theatre. Continuous 8s. NO germ-macro hero. NO cartoon sprites. NO Explorer. NO Orbit. NO modern hospital. NO still-push. Silent. No text."
+    },
+    {
+      "id": "06_soap_hands",
+      "explorer": false,
+      "i2v": false,
+      "prompt": "Premium Animistry 3D cartoon. Close on period hands meeting soap at a stone or wood basin. Steam, water, cloth. Timeless 1860s basin — NEVER a modern hospital sink, NEVER chrome taps, NEVER fluorescent lights. Camera already moving. Continuous 8s. ZERO cartoon germ sprites. NO Explorer. NO Orbit. NO top hats. Silent. No text."
+    },
+    {
+      "id": "07_a_map",
+      "explorer": false,
+      "i2v": false,
+      "prompt": "Premium Animistry 3D cartoon. The story as a map: wood ward beds, surgical theatre table, and washed hands in one continuous camera journey — not a germ city, not a microbe macro. Soft truck from ward into theatre onto hands. Continuous 8s. ZERO cartoon germ sprites. ZERO germ-city. NO Explorer. NO Orbit. NO modern hospital. Silent. No text."
+    },
+    {
+      "id": "08_last_light",
+      "explorer": false,
+      "i2v": false,
+      "prompt": "Premium Animistry 3D cartoon. Hold the last clean 1860s theatre light. Camera eases toward warm lamp glow over a clean wooden table. OPTIONAL: one tiny locked Pasteur swan-neck flask small in the far corner — S-curve only, round-bottom sitting on wood, clear broth. ZERO second bottle. ZERO other glass. ZERO cartoon germ sprites. NO Explorer. NO Orbit. NO Ken Burns. Continuous 8s motion. Silent. No text."
+    }
+  ]
+}

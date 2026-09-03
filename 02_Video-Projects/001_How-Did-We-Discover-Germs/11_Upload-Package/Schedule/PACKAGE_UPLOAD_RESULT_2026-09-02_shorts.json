@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "park": true,
+  "method": "youtube_studio_hos_session",
+  "channel": {
+    "name": "History of Science",
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "studioUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": ["@OrbitWithBen", "@OpptiAI", "@HistoryOfScience"],
+  "parent": {
+    "title": "How Did We Discover Germs?",
+    "platformPostId": "_C92tIJCk8A",
+    "platformUrl": "https://youtu.be/_C92tIJCk8A",
+    "premiere": "Thu 3 Sep 2026 18:00 Europe/London"
+  },
+  "affiliate": "none",
+  "relatedVideo": {
+    "requested": "_C92tIJCk8A",
+    "applied": false,
+    "reason": "Studio phone-verify wall: Unlock more on YouTube — To link a video to a Shorts, verify your phone number. Did not click Verify. Did not ping Ben."
+  },
+  "customThumbnails": {
+    "requested": "yellow-hook cream-on-brown 9:16 HOS covers",
+    "applied": false,
+    "reason": "Same Studio phone-verify wall for custom Shorts thumbs. Auto-generated frames used. No Orbit robot."
+  },
+  "madeForKids": false,
+  "description": "How Did We Discover Germs?\nhttps://youtu.be/_C92tIJCk8A\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#HistoryOfScience #GermTheory #Science",
+  "timezone": "GMT+0100 Europe/London",
+  "noneBeforePremiere": true,
+  "shorts": [
+    {
+      "slot": "Fri 4 Sep 2026 11:30 Europe/London",
+      "file": "hos_001_s01_shadow_punch_v01.mp4",
+      "title": "An enemy that does not cast a shadow",
+      "platformPostId": "8uBR-9oxeWs",
+      "platformUrl": "https://youtube.com/shorts/8uBR-9oxeWs",
+      "studioConfirm": "Your video will be set to public on 4 September 2026 at 11:30",
+      "saveGrey": true,
+      "relatedApplied": false
+    },
+    {
+      "slot": "Sat 5 Sep 2026 11:30 Europe/London",
+      "file": "hos_001_s02_pond_punch_v01.mp4",
+      "title": "A drop of pond water is not empty",
+      "platformPostId": "YX2UR1u-JCQ",
+      "platformUrl": "https://youtube.com/shorts/YX2UR1u-JCQ",
+      "studioConfirm": "Your video will be set to public on 5 September 2026 at 11:30",
+      "saveGrey": true,
+      "relatedApplied": false
+    },
+    {
+      "slot": "Sun 6 Sep 2026 11:30 Europe/London",
+      "file": "hos_001_s03_vector_punch_v01.mp4",
+      "title": "You are the vector",
+      "platformPostId": "Fnb3p81u-wY",
+      "platformUrl": "https://youtube.com/shorts/Fnb3p81u-wY",
+      "studioConfirm": "Your video will be set to public on 6 September 2026 at 11:30",
+      "saveGrey": true,
+      "relatedApplied": false
+    },
+    {
+      "slot": "Mon 7 Sep 2026 11:30 Europe/London",
+      "file": "hos_001_s04_flask_punch_v01.mp4",
+      "title": "A flask shaped like a question mark",
+      "platformPostId": "vpuRgKXtFlY",
+      "platformUrl": "https://youtube.com/shorts/vpuRgKXtFlY",
+      "studioConfirm": "Your video will be set to public on 7 September 2026 at 11:30",
+      "saveGrey": true,
+      "relatedApplied": false
+    },
+    {
+      "slot": "Tue 8 Sep 2026 11:30 Europe/London",
+      "file": "hos_001_s05_soap_punch_v02.mp4",
+      "title": "What else is still invisible?",
+      "platformPostId": "Lcmh5y2KMQM",
+      "platformUrl": "https://youtube.com/shorts/Lcmh5y2KMQM",
+      "studioConfirm": "Your video will be set to public on 8 September 2026 at 11:30",
+      "saveGrey": true,
+      "relatedApplied": false
+    }
+  ],
+  "note": "UAT PACK PASS uploaded as-is. Did not remint. Did not upload s05 v01. Did not click Verify. CoS told Ben about the phone-verify wall. PARK until CoS sends the agent back after Ben verifies HOS Studio — then set Related _C92tIJCk8A on the five ids and custom thumbs if Studio allows. Not Orbit."
+}

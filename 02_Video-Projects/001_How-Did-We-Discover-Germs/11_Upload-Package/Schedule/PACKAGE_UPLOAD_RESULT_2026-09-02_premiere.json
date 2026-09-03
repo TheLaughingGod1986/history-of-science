@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "method": "youtube_studio_hos_session",
+  "channel": {
+    "name": "History of Science",
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "studioUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": ["@OrbitWithBen", "@OpptiAI", "@HistoryOfScience"],
+  "video": {
+    "file": "hos_001_germs_full_v02.mp4",
+    "sha256": "f49fae7872e9ae16d76e76d01e00444e6fa6159956ee0375fb1df8234d9df195",
+    "durationSec": 364.555,
+    "title": "How Did We Discover Germs?",
+    "platformPostId": "_C92tIJCk8A",
+    "platformUrl": "https://youtu.be/_C92tIJCk8A",
+    "watchUrl": "https://www.youtube.com/watch?v=_C92tIJCk8A"
+  },
+  "premiere": {
+    "date": "2026-09-03",
+    "time": "18:00",
+    "timeZone": "(GMT+01:00) London",
+    "type": "premiere",
+    "studioConfirm": "Your video will premiere on 3 September 2026 at 18:00"
+  },
+  "thumbnail": "08_Thumbnail/Selected/hos_001_thumb_A_flask_v01.png",
+  "madeForKids": false,
+  "affiliate": "none",
+  "note": "First public playable video on this channel. Shorts not uploaded. Stop for Shorts UAT."
+}

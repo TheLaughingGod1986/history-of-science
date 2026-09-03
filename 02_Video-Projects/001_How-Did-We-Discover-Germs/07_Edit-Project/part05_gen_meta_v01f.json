@@ -1,0 +1,21 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe/05_theatre_wins_v01d.mp4",
+  "plate": {
+    "seconds": 94.1,
+    "bytes": 4611172,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "48936ace-aa5b-499a-8546-b99471a5bddb",
+    "url": "https://labs.google/fx/tools/flow/project/b64cee28-b4fd-41ec-8017-1b1b7f38bd1c",
+    "motion_mean": 14.84,
+    "first_second_motion": 33.2,
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe/05_theatre_wins_v01d.mp4"
+  }
+}

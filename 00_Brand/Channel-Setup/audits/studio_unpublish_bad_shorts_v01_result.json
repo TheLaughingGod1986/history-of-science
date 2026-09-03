@@ -1,0 +1,101 @@
+{
+  "channel": "UC_esArsDKd3GJvOkeO0DUog",
+  "profile": "/Users/benjaminoats/.playwright-hos-flow-profile",
+  "dry_run": false,
+  "unpublish": [
+    {
+      "id": "KX-XU_AODoI",
+      "note": "0 views \u00b7 long-title VO open \u00b7 audit FAIL"
+    },
+    {
+      "id": "CkSECfUfH2Y",
+      "note": "eyeball-planet mute-test fail \u00b7 audit FAIL"
+    }
+  ],
+  "keep_public": [
+    "9lLZMy8rBJo"
+  ],
+  "fillers": {
+    "QptlHs1HuYI": {
+      "title_hint": "Galaxy Should Be Crowded",
+      "long_id": "Mo93x0fxB1Q",
+      "long_title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
+      "unpublish_if_fail": true
+    },
+    "Q16DKNvq2OY": {
+      "title_hint": "Earth, Seen From the Dark",
+      "long_id": null,
+      "long_title": null,
+      "unpublish_if_fail": true
+    }
+  },
+  "related_studio_only_note": "Shorts Related \u2192 parent long is Studio UI only (ytcp-shorts-content-links-picker). No YouTube Data API v3 field.",
+  "started": "2026-09-01T15:21:28.794356+00:00",
+  "results": {
+    "unpublish": [
+      {
+        "video_id": "KX-XU_AODoI",
+        "action": "private",
+        "note": "0 views \u00b7 long-title VO open \u00b7 audit FAIL",
+        "ok": false,
+        "chip_before": "",
+        "open_err": "Locator.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"ytcp-video-metadata-visibility\").first\n",
+        "collapse": null,
+        "private_click": null,
+        "saved": false,
+        "chip_after": ""
+      },
+      {
+        "video_id": "CkSECfUfH2Y",
+        "action": "private",
+        "note": "eyeball-planet mute-test fail \u00b7 audit FAIL",
+        "ok": false,
+        "chip_before": "",
+        "open_err": "Locator.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"ytcp-video-metadata-visibility\").first\n",
+        "collapse": null,
+        "private_click": null,
+        "saved": false,
+        "chip_after": ""
+      }
+    ],
+    "keep_public": [
+      {
+        "video_id": "9lLZMy8rBJo",
+        "action": "verify_public",
+        "ok": false,
+        "chip": ""
+      }
+    ],
+    "fillers": [
+      {
+        "video_id": "QptlHs1HuYI",
+        "config": {
+          "title_hint": "Galaxy Should Be Crowded",
+          "long_id": "Mo93x0fxB1Q",
+          "long_title": "Why Haven't We Found Aliens Yet? The Fermi Paradox Explained",
+          "unpublish_if_fail": true
+        },
+        "related_chunk": "",
+        "points_at_last_star": false,
+        "ok": true,
+        "action": "no_change_needed"
+      },
+      {
+        "video_id": "Q16DKNvq2OY",
+        "config": {
+          "title_hint": "Earth, Seen From the Dark",
+          "long_id": null,
+          "long_title": null,
+          "unpublish_if_fail": true
+        },
+        "related_chunk": "",
+        "points_at_last_star": false,
+        "ok": true,
+        "action": "no_change_needed"
+      }
+    ],
+    "login_wall": false
+  },
+  "finished": "2026-09-01T15:23:37.507995+00:00",
+  "ok": false
+}

@@ -1,0 +1,71 @@
+{
+  "ok": true,
+  "park": true,
+  "channel": {
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": ["@OrbitWithBen", "@OpptiAI", "@HistoryOfScience"],
+  "relatedTarget": "_C92tIJCk8A",
+  "relatedTitle": "How Did We Discover Germs?",
+  "long": {
+    "id": "_C92tIJCk8A",
+    "title": "How Did We Discover Germs?",
+    "visibility": "Premiere",
+    "thumb": "08_Thumbnail/Selected/hos_001_thumb_B_animistry_explorer_v01.jpg",
+    "thumbLiveConfirmed": true,
+    "thumbnailAbcStarted": false,
+    "thumbnailAbcBlocked": "premiere_ineligible_until_after_2026-09-03T18:00+01:00"
+  },
+  "coversUploaded": [
+    "08_Thumbnail/Shorts/hos_001_s01_shadow_cover_animistry_v01.jpg",
+    "08_Thumbnail/Shorts/hos_001_s02_pond_cover_animistry_v02.jpg",
+    "08_Thumbnail/Shorts/hos_001_s03_vector_cover_animistry_v01.jpg",
+    "08_Thumbnail/Shorts/hos_001_s04_flask_cover_animistry_v02.jpg",
+    "08_Thumbnail/Shorts/hos_001_s05_soap_cover_animistry_v01.jpg"
+  ],
+  "ids": [
+    {
+      "id": "8uBR-9oxeWs",
+      "title": "An enemy that does not cast a shadow",
+      "related": true,
+      "thumb": true,
+      "saveGrey": true,
+      "cover": "hos_001_s01_shadow_cover_animistry_v01.jpg"
+    },
+    {
+      "id": "YX2UR1u-JCQ",
+      "title": "A drop of pond water is not empty",
+      "related": true,
+      "thumb": true,
+      "saveGrey": true,
+      "cover": "hos_001_s02_pond_cover_animistry_v02.jpg"
+    },
+    {
+      "id": "Fnb3p81u-wY",
+      "title": "You are the vector",
+      "related": true,
+      "thumb": true,
+      "saveGrey": true,
+      "cover": "hos_001_s03_vector_cover_animistry_v01.jpg"
+    },
+    {
+      "id": "vpuRgKXtFlY",
+      "title": "A flask shaped like a question mark",
+      "related": true,
+      "thumb": true,
+      "saveGrey": true,
+      "cover": "hos_001_s04_flask_cover_animistry_v02.jpg"
+    },
+    {
+      "id": "Lcmh5y2KMQM",
+      "title": "What else is still invisible?",
+      "related": true,
+      "thumb": true,
+      "saveGrey": true,
+      "cover": "hos_001_s05_soap_cover_animistry_v01.jpg"
+    }
+  ],
+  "fileReplaced": false,
+  "replaceNote": "Animistry covers + Related How Did We Discover Germs? saved in Studio on a computer. Did not mint new ids. Scheduled punch files still v01 / s05 v02."
+}

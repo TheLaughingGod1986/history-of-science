@@ -1,0 +1,70 @@
+{
+  "part": 3,
+  "title": "Bad Air vs Living Seeds",
+  "chapter_card": "A childbirth ward, 1840s",
+  "style_lock": "hos_001_part01_rough_v21",
+  "clip_use_s": 8.0,
+  "xfade_s": 0.4,
+  "plates": [
+    {
+      "id": "01_split_world",
+      "explorer": false,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. Split Victorian world: LEFT brown miasma fog curling through an 1840s street and hospital window; RIGHT sparse faceless glassy rods and spiked spheres hitchhiking on a doctor's bare hand and cloth. Warm cinematic light. No Explorer. No Orbit. No readable text. No modern hospital.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Camera slowly trucks from the foggy left half toward the microbe-hand right half. Fog drifts. Faceless rods hitchhike on the moving hand. Continuous translation the whole 8 seconds — never freeze, never Ken Burns zoom on a still. Silent. No Explorer. No Orbit. No text."
+    },
+    {
+      "id": "02_perfume_windows",
+      "explorer": false,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. 1840s childbirth ward: nurses burn herbs, perfume bottles on a wood sill, tall windows thrown open, white curtains billow. Warm lamps. No Explorer. No Orbit. No microbes. No readable text. No modern hospital.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Camera dollies past the herb smoke toward the open windows. Curtains billow, perfume glass catches light, a nurse turns to the sash. Continuous motion 8s. Silent. No Explorer. No Orbit. No text."
+    },
+    {
+      "id": "03_hitchhiker_hands",
+      "explorer": false,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. Extreme close: 1840s doctor's prestige hands, linen cuff, brass instruments. Sparse faceless glassy rods and spiked spheres hitchhiking on skin, cloth, and tool. Warm ward lamp. No faces on microbes. No Explorer. No Orbit. No text.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Hands slowly turn a cloth and instrument. Faceless microbes hitchhike and drift with the motion. Camera eases around the hands. Continuous 8s. Silent. No Explorer. No Orbit. No text. No smiling germs."
+    },
+    {
+      "id": "04_autopsy_to_ward",
+      "explorer": false,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. 1840s doctors in dark coats walk from a dim autopsy table (covered, no gore) down a corridor into a warm childbirth ward with white beds. Unwashed hands. Continuous space. No Explorer. No Orbit. No readable text. No modern hospital.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Follow the doctors walking from the autopsy room into the childbirth ward — a real walk, translating through the doorway. Cloth and coats move. Continuous 8s. Silent. No gore. No Explorer. No Orbit. No text."
+    },
+    {
+      "id": "05_wash_works",
+      "explorer": false,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. 1840s ward basin and soap, water pouring over doctor's hands, childbirth beds behind growing calmer, lamps steady. No Explorer. No Orbit. No readable text. Sparse or no microbes.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Hands wash in the basin, water moves, camera slowly pushes past the basin into the quieter ward. Continuous 8s. Silent. No Explorer. No Orbit. No text."
+    },
+    {
+      "id": "06_explorer_crosses",
+      "explorer": true,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. Exactly one Explorer boy: messy brown hair, round gold glasses, teal overcoat, tan vest, brown bow tie, satchel. He stands at the edge of brown miasma fog in an 1840s ward, about to cross toward a faint glow of faceless microbes on a fingertip. Single Explorer only. No twins. No Orbit. No text.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Exactly one Explorer: he sniffs the fog, shrugs, walks across the room, recoils from a faceless fingertip-swarm, then exits frame. Continuous acting the whole 8s — he must travel, not park. Silent. No Orbit. No second Explorer. No text."
+    },
+    {
+      "id": "07_mocked",
+      "explorer": false,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. 1840s hospital colleagues in dark coats turn their backs and walk away from a basin, dismissive. Warm ward. No Explorer. No Orbit. No readable text. No modern clothes.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Colleagues turn away and walk off, coats swinging, camera eases with them. Continuous 8s. Silent. No Explorer. No Orbit. No text."
+    },
+    {
+      "id": "08_prestige_hands",
+      "explorer": false,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. Hero close-up of 1840s prestige doctor's hands — gold cufflinks, linen, idle over a childbirth-ward rail. Warm lamp. No Explorer. No Orbit. No text. Faceless microbes optional and sparse.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Camera slowly orbits the prestige hands as fingers flex on the rail. Soft lamp flicker. Continuous 8s — never a still zoom. Silent. No Explorer. No Orbit. No text."
+    },
+    {
+      "id": "09_they_still_sneer",
+      "explorer": false,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. Split beat: left a clean basin and calmer 1840s childbirth beds; right colleagues sneer and refuse, arms folded. Warm cinematic. No Explorer. No Orbit. No readable text.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Camera trucks from the working basin toward the sneering colleagues who turn away. Continuous 8s. Silent. No Explorer. No Orbit. No text."
+    },
+    {
+      "id": "10_flask_tease",
+      "explorer": false,
+      "still_prompt": "Premium Animistry 3D cartoon 16:9. A Pasteur-style swan-neck glass flask silhouette on a dark laboratory bench, clear broth, curved neck catching warm lamp light. End-frame hero is the flask. No Explorer. No Orbit. No readable text. No modern lab plastics.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Premium Animistry 3D cartoon. Slow continuous push toward the swan-neck flask until it fills the frame. Dust motes drift. Glass catches light. Never freeze. Silent. No Explorer. No Orbit. No text. End on the flask."
+    }
+  ]
+}

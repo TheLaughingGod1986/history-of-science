@@ -1,0 +1,70 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "plates": [
+    {
+      "id": "01_split_world",
+      "seconds": 73.1,
+      "bytes": 1475859,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/refs/01_split_world_v01.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "5e76664b-371b-4950-b429-03ce92cc4f3b",
+      "url": "https://labs.google/fx/tools/flow/project/4a4730f0-324b-41fa-9082-6fd1a4e16f0f",
+      "motion_mean": 6.97,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/raw/v01_flow/01_split_world_v01.mp4"
+    },
+    {
+      "id": "02_perfume_windows",
+      "seconds": 77.7,
+      "bytes": 2812875,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/refs/02_perfume_windows_v01.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "f5382b6d-5690-48b5-995f-821153a2a1e0",
+      "url": "https://labs.google/fx/tools/flow/project/3a889ef4-61d4-4b1e-9a23-631fe8c81025",
+      "motion_mean": 15.06,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/raw/v01_flow/02_perfume_windows_v01.mp4"
+    },
+    {
+      "id": "03_hitchhiker_hands",
+      "seconds": 75.5,
+      "bytes": 1397711,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/refs/03_hitchhiker_hands_v01.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "f6ef2cc7-355b-4a09-987e-a49dd51d6e37",
+      "url": "https://labs.google/fx/tools/flow/project/45d596e8-d5da-4deb-9204-71098edb3b83",
+      "motion_mean": 4.73,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/raw/v01_flow/03_hitchhiker_hands_v01.mp4"
+    },
+    {
+      "id": "04_autopsy_to_ward",
+      "seconds": 75.2,
+      "bytes": 2219681,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/refs/04_autopsy_to_ward_v01.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "b7bf49c1-a881-4833-a9df-1de7f18877d5",
+      "url": "https://labs.google/fx/tools/flow/project/722dd638-6c73-4a2d-9311-3e90c7dcc11a",
+      "motion_mean": 11.07,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/raw/v01_flow/04_autopsy_to_ward_v01.mp4"
+    }
+  ]
+}

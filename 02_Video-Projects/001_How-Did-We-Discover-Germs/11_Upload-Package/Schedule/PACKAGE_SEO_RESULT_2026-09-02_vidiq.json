@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "when": "2026-09-02",
+  "channel": {
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "relatedTarget": "_C92tIJCk8A",
+  "relatedTitle": "How Did We Discover Germs?",
+  "affiliate": "none",
+  "vidiq": "scored live in HOS Studio Title Analyzer",
+  "before": {
+    "titles": "poetic; 4/5 under 90",
+    "description": "identical two-liner + 3 hashtags, no unique punch",
+    "tags": "201/500 shared; s05 had competitor tags (Hank Green, vlogbrothers, Crash Course)",
+    "category": "People and blogs",
+    "language": "unset"
+  },
+  "ids": [
+    {
+      "id": "8uBR-9oxeWs",
+      "oldTitle": "An enemy that does not cast a shadow",
+      "title": "Germs don't cast a shadow",
+      "vidiq": 92,
+      "tags": "486/500",
+      "related": true,
+      "category": "Education",
+      "language": "English (United Kingdom)",
+      "madeForKids": false,
+      "saved": true
+    },
+    {
+      "id": "YX2UR1u-JCQ",
+      "oldTitle": "A drop of pond water is not empty",
+      "title": "Microbes in a drop of pond water",
+      "vidiq": 92,
+      "tags": "482/500",
+      "related": true,
+      "category": "Education",
+      "language": "English (United Kingdom)",
+      "madeForKids": false,
+      "saved": true
+    },
+    {
+      "id": "Fnb3p81u-wY",
+      "oldTitle": "You are the vector",
+      "title": "Germs hitch a ride on you",
+      "vidiq": 90,
+      "tags": "498/500",
+      "related": true,
+      "category": "Education",
+      "language": "English (United Kingdom)",
+      "madeForKids": false,
+      "saved": true
+    },
+    {
+      "id": "vpuRgKXtFlY",
+      "oldTitle": "A flask shaped like a question mark",
+      "title": "A flask that proved germs come from outside",
+      "vidiq": 92,
+      "tags": "492/500",
+      "related": true,
+      "category": "Education",
+      "language": "English (United Kingdom)",
+      "madeForKids": false,
+      "saved": true
+    },
+    {
+      "id": "Lcmh5y2KMQM",
+      "oldTitle": "What else is still invisible?",
+      "title": "Invisible life is still everywhere",
+      "vidiq": 91,
+      "tags": "493/500",
+      "related": true,
+      "category": "Education",
+      "language": "English (United Kingdom)",
+      "madeForKids": false,
+      "saved": true
+    }
+  ],
+  "leftForPublic": [
+    "Pin first comment Full film — How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A once each Short is public (Studio pin fails while scheduled)",
+    "Auto-captions usually mint after publish — spot-check Subtitles tab then",
+    "Studio Thumbnail ABC on the long still not started"
+  ]
+}

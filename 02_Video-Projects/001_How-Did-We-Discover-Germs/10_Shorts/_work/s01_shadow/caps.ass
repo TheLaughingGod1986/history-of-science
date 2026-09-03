@@ -1,0 +1,18 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Punch,Didot,54,&H00D2E8F5,&H00000000,&H001C1A1C,&H80000000,0,1,0,0,100,100,0,0,1,3,0,2,70,70,260,1
+Style: Film,Didot,42,&H00D2E8F5,&H00000000,&H001C1A1C,&H66000000,0,1,0,0,100,100,1,0,1,2,0,8,60,60,220,1
+Style: Cta,Didot,40,&H00D2E8F5,&H00000000,&H001C1A1C,&H80000000,0,1,0,0,100,100,0,0,1,2,0,2,70,70,210,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.35,0:00:06.35,Punch,,0,0,0,,So how do you fight an enemy that does not cast a shadow?
+Dialogue: 0,0:00:02.20,0:00:06.35,Punch,,0,0,0,,An enemy that does not cast a shadow
+Dialogue: 0,0:00:09.00,0:00:14.00,Film,,0,0,0,,How Did We Discover Germs?
+Dialogue: 0,0:00:22.35,0:00:26.20,Cta,,0,0,0,,watch the full film →

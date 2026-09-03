@@ -1,0 +1,65 @@
+{
+  "ok": false,
+  "blocked": true,
+  "reason": "premiere_ineligible",
+  "channel": {
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": ["@OrbitWithBen"],
+  "video": {
+    "id": "_C92tIJCk8A",
+    "title": "How Did We Discover Germs?",
+    "visibility": "Premiere",
+    "premiereAt": "2026-09-03T18:00:00+01:00",
+    "listingThumb": "08_Thumbnail/Selected/hos_001_thumb_B_animistry_explorer_v01.jpg"
+  },
+  "mode": "Thumbnail only",
+  "titleLocked": "How Did We Discover Germs?",
+  "variantsReady": [
+    {
+      "slot": "A",
+      "beat": "object — swan-neck flask",
+      "file": "08_Thumbnail/Selected/hos_001_thumb_A_animistry_flask_v01.jpg",
+      "bytes": 769900,
+      "px": "1920x1080"
+    },
+    {
+      "slot": "B",
+      "beat": "emotion — Explorer in the ward",
+      "file": "08_Thumbnail/Selected/hos_001_thumb_B_animistry_explorer_v01.jpg",
+      "bytes": 674381,
+      "px": "1920x1080"
+    },
+    {
+      "slot": "C",
+      "beat": "question — microscope + droplet",
+      "file": "08_Thumbnail/Selected/hos_001_thumb_C_animistry_microscope_v01.jpg",
+      "bytes": 649407,
+      "px": "1920x1080"
+    }
+  ],
+  "studio": {
+    "abButtonPresent": true,
+    "dialogOpened": true,
+    "chip": "Thumbnail only",
+    "slotsPreviewed": ["hos_long_a.jpg", "hos_long_b.jpg", "hos_long_c.jpg"],
+    "setTestClicked": true,
+    "setTestStarted": false,
+    "studioError": "Oops, something went wrong."
+  },
+  "youtubeHelp": {
+    "url": "https://support.google.com/youtube/answer/16391400?hl=en",
+    "quote": "You are not able to A/B test Shorts, Scheduled Lives, and Premiere videos at this time. Premiere videos are only eligible after the Premiere ends and the video converts to a long-form video."
+  },
+  "doNot": [
+    "Do not turn the Premiere into a normal scheduled public upload just to unlock ABC",
+    "Do not change the locked title",
+    "Do not Data API thumbnails.set",
+    "Do not start Title-and-thumbnail ABC"
+  ],
+  "next": {
+    "when": "After Thu 3 Sep 2026 18:00 London Premiere ends (~18:10, once Studio shows a normal public long, not Premiere)",
+    "do": "Studio Details → A/B Testing → Thumbnail only → attach A then B then C JPEGs → Set test. Confirm Manage test / running test. Keep title How Did We Discover Germs?"
+  }
+}
