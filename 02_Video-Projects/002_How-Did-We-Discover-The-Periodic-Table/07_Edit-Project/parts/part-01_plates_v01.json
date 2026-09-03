@@ -58,8 +58,8 @@
     {
       "id": "09_seating_plan_gap",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon: a long wooden banquet table as a seating plan for matter — wooden chairs along both sides, several seats clearly EMPTY and glowing soft gold (the gaps), a few seats hold plain closed jars as placeholders. Camera eye-level along the empty chairs. NO flasks pouring, NO holograms, NO lightning in glass, NO chalkboard. No people. No text. No periodic table chart.",
-      "prompt": "Premium 3D cartoon seating plan for matter: long wooden table lined with chairs. Several empty chairs glow soft gold as reserved gaps; plain closed jars sit on a few occupied seats only. Slow lateral dolly along the EMPTY glowing chairs — chairs are the subject, not glassware. NO pouring flasks, NO holograms, NO energy orbs, NO lightning in bottles, NO chalkboard writing. Continuous motion. Silent. No readable text. No classroom poster. No Orbit. No people."
+      "still_prompt": "Premium 3D cartoon: FULL-SIZE SOLID OPAQUE wooden banquet table with FULL-SIZE human chairs around it (real furniture, not miniatures, not see-through). Several chairs EMPTY with cream upholstery. Plain closed jars on the table only. No holograms. No ghost chairs. No chalkboard. No people. No text.",
+      "prompt": "Camera eye-level in a period chemistry dining hall. A LONG full-size wooden banquet table with FULL-SIZE SOLID OPAQUE human wooden chairs — real furniture you could sit in, cream upholstery, never translucent, never ghost, never hologram. Several chairs are EMPTY. Slow lateral dolly past the empty full-size chairs. Closed plain jars sit on the TABLE only. HARD REJECT: translucent chairs, ghost chairs, holograms, glowing flat silhouettes, miniature chairs on the tabletop, energy orbs, lightning flasks, chalkboard writing, people, Orbit robot."
     },
     {
       "id": "10_rock_not_fire",
