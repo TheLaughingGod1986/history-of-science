@@ -53,14 +53,16 @@ Periodic table beat Gravity/Newton (53 vs 50 /60). Gravity parked for **003**. E
 - [x] Topic score + cluster plan + pre-build vidIQ (draft; live VidIQ before listing lock)
 - [x] Script ≥90 · episode gate PASS
 - [x] Part 01 VO locked (`02_Voiceover/part01_zoo_of_stuff_v02` · **85.680s**)
-- [x] Part 01 picture → rough **v09** → **Ben UAT** (`hos_002_part01_rough_v09.mp4` · iCloud **`HOS UAT/` only** — never OWB · reminted plates + audible continuous bed)
-- [x] Part 02 script + plates JSON scaffold (no mint until Part 01 PASS)
-- [ ] Parts 02–05 only after Ben passes Part 01
+- [x] Part 01 picture → rough **v11** → **Ben PASS** (`hos_002_part01_rough_v11.mp4` · iCloud **`HOS UAT/`** · lessons `PART01_LESSONS.md`)
+- [x] Part 02 script + plates JSON scaffold
+- [ ] Part 02 VO + Flow mint + rough → Ben UAT
+- [ ] Parts 03–05 only after Ben passes Part 02
 
 ## Do not
 
 - Batch the whole film  
-- Mint Part 02 before Part 01 UAT  
+- Mint Part 03+ before Part 02 Ben PASS  
 - Spend Omni credits / start Neutron Star  
 - Lead channel with a Short before Germs long is public  
-- Put Orbit orange robot in HOS picture (`beats.json` template leftovers are invalid)
+- Put Orbit orange robot in HOS picture (`beats.json` template leftovers are invalid)  
+- Clear liquid glass / air-bubbles / floating flasks (see `PART01_LESSONS.md`)

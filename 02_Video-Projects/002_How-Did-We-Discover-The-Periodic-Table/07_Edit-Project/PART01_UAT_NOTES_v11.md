@@ -27,5 +27,5 @@ Other plates unchanged from v10 remints.
 
 ## Gate
 
-**STOP for Ben UAT.** Do not mint Part 02 until PASS.  
-If FAIL → still from **this v11 file only** (not v07–v10).
+**PASS (Ben 3 Sep 2026).** Part 01 locked on this v11 cut.  
+Lessons: `../PART01_LESSONS.md`. Part 02 unlocked.

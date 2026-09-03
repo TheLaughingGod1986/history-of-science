@@ -1,7 +1,7 @@
 # Part 02 — First Patterns, Still Wrong (~60–80s)
 
 **Parent:** `periodic_table_script_master_v01.md` (90.4 PASS)  
-**Status:** SCAFFOLD ONLY — do **not** mint picture or VO until Part 01 Ben UAT PASS  
+**Status:** UNLOCKED — Part 01 Ben PASS (v11 · 3 Sep 2026). Apply `PART01_LESSONS.md` physics lock.  
 **Style:** Animistry 3D cartoon · Explorer once (triad cards break) · no Orbit  
 **Chapter card:** First Patterns, Still Wrong
 
