@@ -10,8 +10,8 @@
     {
       "id": "01_empty_chairs_open",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon: a row of ornate empty wooden chairs in a warm period chemistry hall, three chairs glowing soft gold as if reserved, dust in lamp light. No people. No text. No periodic table poster.",
-      "prompt": "Premium 3D cartoon empty chairs in a warm period chemistry hall. Three vacant chairs glow softly. Slow push toward the glowing gaps. Continuous camera motion the whole clip. Silent. No people. No text. No logos. No Orbit robot."
+      "still_prompt": "Premium 3D cartoon: a row of ornate empty wooden chairs in a warm period chemistry hall, three chairs glowing soft gold as if reserved, dust in lamp light. Blank dark wood wall behind — NO chalkboard, NO writing, NO diagrams. No people. No text. No periodic table poster.",
+      "prompt": "Premium 3D cartoon empty chairs in a warm period chemistry hall. Three vacant chairs glow softly. Slow push toward the glowing gaps. Blank wooden walls and shelves only — NO chalkboard, NO writing, NO formulas, NO diagrams, NO readable marks of any kind. Continuous camera motion the whole clip. Silent. No people. No text. No logos. No Orbit robot."
     },
     {
       "id": "02_workshop_jars",
@@ -34,8 +34,8 @@
     {
       "id": "05_explorer_ore_gas",
       "explorer": true,
-      "still_prompt": "Premium 3D cartoon: exactly one Explorer boy (messy brown hair, round gold glasses, teal coat, tan vest, brown bow tie) in a period workshop, holding a heavy dark ore in one hand and a glowing glass gas jar in the other, puzzled. Single Explorer. No twins. No Orbit.",
-      "prompt": "Premium 3D cartoon: the Explorer boy in teal coat and gold glasses lifts a heavy ore, then a light glowing gas jar, baffled that both count as stuff. Exactly one Explorer. Continuous acting. Attach identity. Silent. No Orbit robot. No text. No twins."
+      "still_prompt": "Premium 3D cartoon medium shot: exactly ONE Explorer boy matching identity lock — messy wavy brown hair, round thin gold wire-rim glasses, teal-blue long overcoat with gold atom lapel pin, tan waistcoat, white shirt (NOT striped), dark brown floppy bow tie, brown trousers rolled at cuffs, brown leather satchel with brass compass. He stands at a workshop table holding a heavy dark ore lump in one hand and a glowing glass gas jar in the other, puzzled. Ore is plain rock — NO face, NO smile, NO eyes on any rock or jar. Single Explorer. No twins. No Orbit. No readable text.",
+      "prompt": "Premium 3D cartoon: animate the attached start frame. Exactly ONE Explorer boy stays on-model — messy wavy brown hair, round gold wire-rim glasses, teal-blue overcoat, tan waistcoat, white shirt, dark brown floppy bow tie, satchel with compass. He lifts the heavy dark ore, then the light glowing gas jar, baffled both count as stuff. Continuous acting the whole clip. Ore and rocks stay blank — NO faces, NO smiles, NO cute marks on rocks. No striped shirt. No neat slick hair. No twins. No Orbit robot. No readable text. Silent."
     },
     {
       "id": "06_alchemist_accidents",
@@ -58,8 +58,8 @@
     {
       "id": "09_seating_plan_gap",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon: a long wooden table set as a seating plan for matter \u2014 place settings and empty glowing chairs with gaps between occupied seats. No people. No periodic table chart. No text.",
-      "prompt": "Premium 3D cartoon long table seating plan for matter. Occupied seats and glowing empty chairs. Slow lateral move along the gaps. Continuous motion. Silent. No text. No classroom poster. No Orbit."
+      "still_prompt": "Premium 3D cartoon: a long wooden banquet table as a seating plan for matter — wooden chairs along both sides, several seats clearly EMPTY and glowing soft gold (the gaps), a few seats hold plain closed jars as placeholders. Camera eye-level along the empty chairs. NO flasks pouring, NO holograms, NO lightning in glass, NO chalkboard. No people. No text. No periodic table chart.",
+      "prompt": "Premium 3D cartoon seating plan for matter: long wooden table lined with chairs. Several empty chairs glow soft gold as reserved gaps; plain closed jars sit on a few occupied seats only. Slow lateral dolly along the EMPTY glowing chairs — chairs are the subject, not glassware. NO pouring flasks, NO holograms, NO energy orbs, NO lightning in bottles, NO chalkboard writing. Continuous motion. Silent. No readable text. No classroom poster. No Orbit. No people."
     },
     {
       "id": "10_rock_not_fire",

@@ -1,0 +1,54 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "remint": [
+    "01_empty_chairs_open",
+    "05_explorer_ore_gas",
+    "09_seating_plan_gap"
+  ],
+  "mode": "t2v-hardened",
+  "plates": [
+    {
+      "id": "01_empty_chairs_open",
+      "seconds": 74.4,
+      "bytes": 2360710,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "9ceac945-2e5c-4686-90f8-c94a9ab811dd",
+      "url": "https://labs.google/fx/tools/flow/project/34b1f950-adf9-42f5-a689-7ca4019e5ba3"
+    },
+    {
+      "id": "05_explorer_ore_gas",
+      "seconds": 144.9,
+      "bytes": 3858557,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "eb83b4be-6b45-470e-822b-30cbb61fb386",
+      "url": "https://labs.google/fx/tools/flow/project/6d3cde27-fb69-43f2-aebf-8505f9c9123c"
+    },
+    {
+      "id": "09_seating_plan_gap",
+      "seconds": 74.0,
+      "bytes": 1865622,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "98724c14-e66b-4d08-8a62-79011c9857dd",
+      "url": "https://labs.google/fx/tools/flow/project/85f5a54f-e5c4-436d-8e4d-8b5d009c9dd9"
+    }
+  ]
+}

@@ -53,7 +53,7 @@ Periodic table beat Gravity/Newton (53 vs 50 /60). Gravity parked for **003**. E
 - [x] Topic score + cluster plan + pre-build vidIQ (draft; live VidIQ before listing lock)
 - [x] Script ≥90 · episode gate PASS
 - [x] Part 01 VO locked (`02_Voiceover/part01_zoo_of_stuff_v02` · **85.680s**)
-- [ ] Part 01 picture (~8–10 Flow Fast plates) → rough → **Ben UAT**
+- [x] Part 01 picture → rough **v03** → **Ben UAT** (`hos_002_part01_rough_v03.mp4`)
 - [ ] Parts 02–05 only after Ben passes Part 01
 
 ## Do not
