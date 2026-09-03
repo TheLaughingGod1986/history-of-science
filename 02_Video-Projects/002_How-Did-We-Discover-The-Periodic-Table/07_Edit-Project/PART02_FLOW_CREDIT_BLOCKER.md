@@ -15,12 +15,7 @@
 
 ## Salvage
 
-Two already-rendered gallery clips were UI-downloaded into:
-
-`04_Generated-Clips/part02/raw/_salvage_gallery_v01/ui_download_01.mp4`  
-`04_Generated-Clips/part02/raw/_salvage_gallery_v01/ui_download_03.mp4`
-
-(Likely duplicates of the same successful scenery take — not enough for an 11-plate rough.)
+Gallery shows ~2 prior successful scenery thumbnails, but UI “Download” pulls were **corrupt** (`moov atom not found` — not usable mp4s). Treat salvage as failed until credits allow a fresh mint (or a working media-URL download path).
 
 ## Unblock options (Ben)
 
