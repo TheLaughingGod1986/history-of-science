@@ -2180,7 +2180,7 @@ def _generate_clip_once(
         )
     except Exception as e:
         raise RuntimeError(f"download unreadable: {dest} ({e})") from e
-    if dur < 5.0 or dur > 14.0:
+    if dur < 5.0 or dur > 40.0:
         raise RuntimeError(f"download bad duration: {dest} dur={dur:.2f} size={size}")
     veo.strip_audio(dest)
     return {
