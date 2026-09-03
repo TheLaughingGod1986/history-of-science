@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-09-03T22:09:34",
+  "channel": "History of Science",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "studioUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/short",
+  "verdict": "NOT_MISSING",
+  "diagnosis": "Shorts are Scheduled on History of Science. Empty schedule is almost always wrong brand account (Orbit With Ben) or Videos tab instead of Shorts tab.",
+  "countScheduledShorts": 5,
+  "shortsFromStudioList": [
+    {
+      "duration": "0:24",
+      "title": "Invisible life is still everywhere",
+      "scheduledDate": "8 Sept 2026",
+      "visibility": "Scheduled"
+    },
+    {
+      "duration": "0:27",
+      "title": "A flask that proved germs come from outside",
+      "scheduledDate": "7 Sept 2026",
+      "visibility": "Scheduled"
+    },
+    {
+      "duration": "0:27",
+      "title": "Germs hitch a ride on you",
+      "scheduledDate": "6 Sept 2026",
+      "visibility": "Scheduled"
+    },
+    {
+      "duration": "0:27",
+      "title": "Microbes in a drop of pond water",
+      "scheduledDate": "5 Sept 2026",
+      "visibility": "Scheduled"
+    },
+    {
+      "duration": "0:27",
+      "title": "Germs don't cast a shadow",
+      "scheduledDate": "4 Sept 2026",
+      "visibility": "Scheduled"
+    }
+  ],
+  "canonicalIds": {
+    "long": "_C92tIJCk8A",
+    "s01": "8uBR-9oxeWs",
+    "s02": "YX2UR1u-JCQ",
+    "s03": "Fnb3p81u-wY",
+    "s04": "vpuRgKXtFlY",
+    "s05": "Lcmh5y2KMQM"
+  },
+  "slotsLondon": [
+    "Fri 4 Sep 2026 11:30",
+    "Sat 5 Sep 2026 11:30",
+    "Sun 6 Sep 2026 11:30",
+    "Mon 7 Sep 2026 11:30",
+    "Tue 8 Sep 2026 11:30"
+  ],
+  "noteThumbnails": "Studio shows auto/custom cover frames on each Short editor; that is not the same as the Content \u2192 Shorts schedule list. Custom cover attach previously hit phone-verify; Animistry covers later saved per package logs.",
+  "scheduledLabelHits": 10,
+  "studioUrls": {
+    "shortsTab": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/short",
+    "s01": "https://studio.youtube.com/video/8uBR-9oxeWs/edit",
+    "s02": "https://studio.youtube.com/video/YX2UR1u-JCQ/edit",
+    "s03": "https://studio.youtube.com/video/Fnb3p81u-wY/edit",
+    "s04": "https://studio.youtube.com/video/vpuRgKXtFlY/edit",
+    "s05": "https://studio.youtube.com/video/Lcmh5y2KMQM/edit"
+  }
+}
