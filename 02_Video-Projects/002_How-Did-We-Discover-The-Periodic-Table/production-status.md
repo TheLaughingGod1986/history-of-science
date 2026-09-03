@@ -28,3 +28,7 @@
 1. Part 02 VO (Ben Orbit Narrator)
 2. Mint Part 02 plates (opaque props · no air-bubbles · no floating glass)
 3. Assemble Part 02 rough → iCloud `HOS UAT/` → **STOP for Ben**
+
+## Part 02 (2026-09-04)
+
+BLOCKED — Flow Ultra usage/credit limit. See `07_Edit-Project/PART02_FLOW_CREDIT_BLOCKER.md`. Mint automation + fail-fast landed; waiting for credits.

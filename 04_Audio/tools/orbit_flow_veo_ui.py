@@ -1952,6 +1952,10 @@ def wait_and_download(
                 "not enough credits",
                 "upgrade your plan",
                 "check the subscription page",
+                "reached your usage limit",
+                "you've reached your usage limit",
+                "usage limit",
+                "try again later",
             )
         )
         if credit_blocked and elapsed > 12 and not new_ids:
