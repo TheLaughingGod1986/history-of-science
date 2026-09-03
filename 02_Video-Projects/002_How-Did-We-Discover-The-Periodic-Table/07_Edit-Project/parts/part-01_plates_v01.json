@@ -5,19 +5,19 @@
   "clip_use_s": 8.0,
   "xfade_s": 0.4,
   "vo_file": "02_Voiceover/part01_zoo_of_stuff_v02.wav",
-  "notes": "Strange picture first 3s — empty chairs, no Explorer, no title. Explorer once on 05. 12 plates cover ~86s VO (no freeze-pad). No Orbit. No cute atom faces. No readable text.",
+  "notes": "Strange picture first 3s \u2014 empty chairs, no Explorer, no title. Explorer once on 05. 12 plates cover ~86s VO (no freeze-pad). No Orbit. No cute atom faces. No readable text.",
   "plates": [
     {
       "id": "01_empty_chairs_open",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon: a row of ornate empty wooden chairs in a warm period chemistry hall, three chairs glowing soft gold as if reserved, dust in lamp light. Blank dark wood wall behind — NO chalkboard, NO writing, NO diagrams. No people. No text. No periodic table poster.",
-      "prompt": "Premium 3D cartoon empty chairs in a warm period chemistry hall. Three vacant chairs glow softly. Slow push toward the glowing gaps. Blank wooden walls and shelves only — NO chalkboard, NO writing, NO formulas, NO diagrams, NO readable marks of any kind. Continuous camera motion the whole clip. Silent. No people. No text. No logos. No Orbit robot."
+      "still_prompt": "Premium 3D cartoon: a row of ornate empty wooden chairs in a warm period chemistry hall, three chairs glowing soft gold as if reserved, dust in lamp light. Blank dark wood wall behind \u2014 NO chalkboard, NO writing, NO diagrams. No people. No text. No periodic table poster.",
+      "prompt": "Premium 3D cartoon empty chairs in a warm period chemistry hall. Three vacant chairs glow softly. Slow push toward the glowing gaps. Blank wooden walls and shelves only \u2014 NO chalkboard, NO writing, NO formulas, NO diagrams, NO readable marks of any kind. Continuous camera motion the whole clip. Silent. No people. No text. No logos. No Orbit robot."
     },
     {
       "id": "02_workshop_jars",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon 18th-century chemistry workshop. Crowded wooden shelves of OPAQUE ceramic jars and sealed metal canisters — no clear glass liquids. Colored powders sealed inside opaque vessels. Ores on the wood. Furnace glow. No people. No readable labels.",
-      "prompt": "Premium 3D cartoon period chemistry workshop. Camera drifts along shelves of OPAQUE ceramic jars and sealed tin canisters only — NO clear glass flasks, NO transparent liquids, NO bubbles possible. Colored powders stay sealed inside opaque vessels. Ores on wood. Furnace flicker. Continuous motion. Silent. HARD REJECT: clear glass with liquid, open necks, pouring, bubbles, sparkles, readable text, Orbit, modern news, food."
+      "still_prompt": "Premium 3D cartoon 18th-century chemistry workshop. Crowded wooden shelves of OPAQUE ceramic jars and sealed metal canisters \u2014 no clear glass liquids. Colored powders sealed inside opaque vessels. Ores on the wood. Furnace glow. No people. No readable labels.",
+      "prompt": "Premium 3D cartoon period chemistry workshop. Camera drifts along shelves of OPAQUE ceramic jars and sealed tin canisters only \u2014 NO clear glass flasks, NO transparent liquids, NO bubbles possible. Colored powders stay sealed inside opaque vessels. Ores on wood. Furnace flicker. Continuous motion. Silent. HARD REJECT: clear glass with liquid, open necks, pouring, bubbles, sparkles, readable text, Orbit, modern news, food."
     },
     {
       "id": "03_four_elements_crumble",
@@ -34,49 +34,49 @@
     {
       "id": "05_explorer_ore_gas",
       "explorer": true,
-      "still_prompt": "Premium 3D cartoon medium shot: exactly ONE Explorer boy matching History of Science Germs Part 01 identity — YOUNGER BOY proportions (not adult), messy wavy brown hair, large expressive eyes, round thin gold wire-rim glasses, teal-blue long overcoat with gold atom lapel pin, tan waistcoat, plain white shirt, dark brown floppy bow tie, brown trousers rolled at cuffs, cream socks, sturdy brown lace-up boots, brown leather satchel with brass compass on the strap. He stands at a workshop table holding a heavy dark ore lump in both hands; a glass jar of clear blue liquid sits on the bench beside a brass scale. Ore is plain rock — NO face. No glowing chairs. Single Explorer. No twins. No Orbit. No readable text.",
-      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Keep this EXACT workshop beat: ONE Explorer boy at the bench holding the dark ore, glass jar of clear blue liquid on the table, brass scale. Face and body must match History of Science Germs Part 01 Explorer — YOUNGER BOY (not adult man), messy wavy brown hair, large eyes, gold wire-rim glasses, teal coat, tan vest, white shirt, floppy brown bow, satchel+compass. Continuous acting: he lifts the ore, glances at the gas jar, puzzled both count as stuff. HARD REJECT: adult redesign, blond curls, rummaging in satchel as the whole beat, glowing chairs, hospital ward, twins, Orbit, smiley rocks, floating glassware. Silent."
+      "still_prompt": "Premium 3D cartoon medium shot: exactly ONE Explorer boy matching History of Science Germs Part 01 identity \u2014 YOUNGER BOY proportions (not adult), messy wavy brown hair, large expressive eyes, round thin gold wire-rim glasses, teal-blue long overcoat with gold atom lapel pin, tan waistcoat, plain white shirt, dark brown floppy bow tie, brown trousers rolled at cuffs, cream socks, sturdy brown lace-up boots, brown leather satchel with brass compass on the strap. He stands at a workshop table holding a heavy dark ore lump in both hands; a glass jar of clear blue liquid sits on the bench beside a brass scale. Ore is plain rock \u2014 NO face. No glowing chairs. Single Explorer. No twins. No Orbit. No readable text.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Keep this EXACT workshop beat: ONE Explorer boy at the bench holding the dark ore, glass jar of clear blue liquid on the table, brass scale. Face and body must match History of Science Germs Part 01 Explorer \u2014 YOUNGER BOY (not adult man), messy wavy brown hair, large eyes, gold wire-rim glasses, teal coat, tan vest, white shirt, floppy brown bow, satchel+compass. Continuous acting: he lifts the ore, glances at the gas jar, puzzled both count as stuff. HARD REJECT: adult redesign, blond curls, rummaging in satchel as the whole beat, glowing chairs, hospital ward, twins, Orbit, smiley rocks, floating glassware. Silent."
     },
     {
       "id": "06_alchemist_accidents",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon period cellar: ONE opaque ceramic jar on a tripod tip over — coloured powder spills onto wood and a sudden puff of coloured smoke rises. No clear liquid flasks. Not gore. No readable glyphs.",
+      "still_prompt": "Premium 3D cartoon period cellar: ONE opaque ceramic jar on a tripod tip over \u2014 coloured powder spills onto wood and a sudden puff of coloured smoke rises. No clear liquid flasks. Not gore. No readable glyphs.",
       "prompt": "Premium 3D cartoon alchemist bench. ONE opaque ceramic jar tips on a tripod; coloured powder spills onto the wood; a sudden coloured smoke puff blooms (wonder accident). NO clear glass liquids, NO pouring into flasks, NO bubbles. Continuous motion. Wonder not horror. HARD REJECT: clear flasks, liquid bubbles, floating glass, CNN, news footage, food, readable text, gore, Orbit."
     },
     {
       "id": "07_shelf_names_grow",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon workshop shelf multiplying — more OPAQUE ceramic jars and sealed metal canisters crowding into a zoo. No clear liquids. Ores on the bench. No readable names. No people.",
+      "still_prompt": "Premium 3D cartoon workshop shelf multiplying \u2014 more OPAQUE ceramic jars and sealed metal canisters crowding into a zoo. No clear liquids. Ores on the bench. No readable names. No people.",
       "prompt": "Premium 3D cartoon: shelves keep gaining more OPAQUE ceramic jars and sealed metal canisters crowding into a zoo of stuff. NO clear glass liquids, NO bubbles. Continuous multiply and camera drift. Silent. HARD REJECT: transparent flasks with liquid, bubbles, readable text, Orbit, news, food."
     },
     {
       "id": "08_labelled_zoo",
       "explorer": false,
       "still_prompt": "Premium 3D cartoon: chaotic cabinet of OPAQUE ceramic jars and sealed canisters with blank paper tags. Warm period wood. No clear liquids. No readable words. No people.",
-      "prompt": "Premium 3D cartoon cabinet of OPAQUE ceramic jars and sealed metal canisters — blank tags flutter. NO clear glass liquids, NO bubbles. Camera weaves through. Continuous motion. Silent. HARD REJECT: transparent liquid flasks, bubbles, readable text, Orbit, news, food."
+      "prompt": "Premium 3D cartoon cabinet of OPAQUE ceramic jars and sealed metal canisters \u2014 blank tags flutter. NO clear glass liquids, NO bubbles. Camera weaves through. Continuous motion. Silent. HARD REJECT: transparent liquid flasks, bubbles, readable text, Orbit, news, food."
     },
     {
       "id": "09_seating_plan_gap",
       "explorer": false,
       "still_prompt": "Premium 3D cartoon: FULL-SIZE SOLID OPAQUE wooden banquet table with FULL-SIZE human chairs around it (real furniture, not miniatures, not see-through). Several chairs EMPTY with cream upholstery. Plain closed jars on the table only. No holograms. No ghost chairs. No chalkboard. No people. No text.",
-      "prompt": "Camera eye-level in a period chemistry dining hall. A LONG full-size wooden banquet table with FULL-SIZE SOLID OPAQUE human wooden chairs — real furniture you could sit in, cream upholstery, never translucent, never ghost, never hologram. Several chairs are EMPTY. Slow lateral dolly past the empty full-size chairs. Closed plain jars sit on the TABLE only. HARD REJECT: translucent chairs, ghost chairs, holograms, glowing flat silhouettes, miniature chairs on the tabletop, energy orbs, lightning flasks, chalkboard writing, people, Orbit robot."
+      "prompt": "Camera eye-level in a period chemistry dining hall. A LONG full-size wooden banquet table with FULL-SIZE SOLID OPAQUE human wooden chairs \u2014 real furniture you could sit in, cream upholstery, never translucent, never ghost, never hologram. Several chairs are EMPTY. Slow lateral dolly past the empty full-size chairs. Closed plain jars sit on the TABLE only. HARD REJECT: translucent chairs, ghost chairs, holograms, glowing flat silhouettes, miniature chairs on the tabletop, energy orbs, lightning flasks, chalkboard writing, people, Orbit robot."
     },
     {
       "id": "10_rock_not_fire",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon: dark rock on a grate with heat shimmer only (NO flames). Beside it a solid copper gas cylinder / metal canister sits FULLY ON the brass scale pan — flat metal base touching the pan. No glass. No liquid. Period workshop. No people. No text.",
-      "prompt": "Premium 3D cartoon. LEFT: dark rock on a metal grate with rising heat shimmer only — NO flames. RIGHT: a SOLID copper gas cylinder with flat metal base sits FULLY ON the brass scale pan — base presses on the pan metal, visible contact, no hover, no glass, no liquid, no bubbles. Continuous gentle settle. Silent. HARD REJECT: floating objects, glass flasks, liquid bubbles, flames on rock, split-screen wipe, Orbit, readable text, news, food."
+      "still_prompt": "Premium 3D cartoon: rock on grate with heat shimmer (no flames); heavy copper cylinder pressed flat onto brass scale pan with visible contact. No glass. No people.",
+      "prompt": "Premium 3D cartoon workshop, one continuous wide shot (no split-screen). LEFT: a dark rock on a grate with heat shimmer only \u2014 NO flames, NO fire. RIGHT: a brass balance scale whose LEFT pan holds a heavy chunk of dark ore sitting FLAT INSIDE the pan \u2014 the ore rests on the pan metal, pan depressed, NO chains attached to the ore, NO hanging vessel above the pan. Continuous gentle camera drift. Silent. HARD REJECT: anything floating or hovering above the pan, hanging copper pots, glass flasks, liquid bubbles, flames, split-screen, news, food, Orbit, text."
     },
     {
       "id": "11_chemists_more_names",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon later chemists’ bench — neat rows of blank specimen cards and glass flasks of clear colored liquid multiplying faster than the shelves can hold. Warm lamp light. No readable words. No people.",
+      "still_prompt": "Premium 3D cartoon later chemists\u2019 bench \u2014 neat rows of blank specimen cards and glass flasks of clear colored liquid multiplying faster than the shelves can hold. Warm lamp light. No readable words. No people.",
       "prompt": "Premium 3D cartoon chemists' bench: blank cards and glass flasks of CLEAR COLORED LIQUID multiply across the wood. Liquids slosh. HARD REJECT inside glass: spheres, beads, nuggets, crystals, ore, powder, cotton. Ores if any sit on wood only. Continuous camera drift. Silent. No readable text, no Orbit."
     },
     {
       "id": "12_workshop_hold",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon wide of the workshop at dusk — glass flasks of clear colored liquid, furnace embers, one empty glowing chair in the foreground. Quiet wonder. No people. No text.",
+      "still_prompt": "Premium 3D cartoon wide of the workshop at dusk \u2014 glass flasks of clear colored liquid, furnace embers, one empty glowing chair in the foreground. Quiet wonder. No people. No text.",
       "prompt": "Premium 3D cartoon workshop dusk hold: glass flasks of CLEAR COLORED LIQUID on shelves, furnace embers, one empty glowing chair in the foreground. Bubbles only inside liquid below meniscus. Slow push. Continuous motion. Silent. HARD REJECT: bubbles in air above liquid, stuffing in jars, text, Orbit."
     }
   ]
