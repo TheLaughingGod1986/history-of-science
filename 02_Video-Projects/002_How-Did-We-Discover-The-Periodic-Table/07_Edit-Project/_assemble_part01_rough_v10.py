@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble HOS 002 Part 01 v06 — plates + VO + curious workshop bed + iCloud."""
+"""Assemble HOS 002 Part 01 v10 — v09 remints: 05 opaque jar · 10 no-flames · 11/12 opaque + audible workshop bed → HOS UAT only."""
 from __future__ import annotations
 
 import hashlib
@@ -12,28 +12,27 @@ GERMS_MUSIC = PROJ.parent / "001_How-Did-We-Discover-Germs" / "05_Music"
 PLATES_JSON = PROJ / "07_Edit-Project/parts/part-01_plates_v01.json"
 RAW = PROJ / "04_Generated-Clips/part01/raw/v01_fast"
 VO = PROJ / "02_Voiceover/part01_zoo_of_stuff_v02.wav"
-MID = PROJ / "05_Music/hos_002_part01_curious_workshop_v01.mid"
+BED = PROJ / "05_Music/hos_002_part01_curious_workshop_v02_norm.wav"
+MID = PROJ / "05_Music/hos_002_part01_curious_workshop_v02.mid"
 SF2 = GERMS_MUSIC / "TimGM6mb.sf2"
-BED_RAW = PROJ / "05_Music/hos_002_part01_curious_workshop_v01.wav"
-BED = PROJ / "05_Music/hos_002_part01_curious_workshop_v01_norm.wav"
-OUT = PROJ / "09_Final-Export/hos_002_part01_rough_v07.mp4"
-# HOS only — never Orbit With Ben (OWB UAT).
+BED_RAW = PROJ / "05_Music/hos_002_part01_curious_workshop_v02.wav"
+OUT = PROJ / "09_Final-Export/hos_002_part01_rough_v10.mp4"
 ICLOUD = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT")
-ICLOUD_HOS = ICLOUD
 CLIP_USE = 8.0
 XFADE = 0.4
-BED_VOL = 0.14
+BED_VOL = 0.42
 
 
 def probe_dur(path: Path) -> float:
-    out = subprocess.check_output(
-        [
-            "ffprobe", "-v", "error", "-show_entries", "format=duration",
-            "-of", "default=nw=1:nk=1", str(path),
-        ],
-        text=True,
-    ).strip()
-    return float(out)
+    return float(
+        subprocess.check_output(
+            [
+                "ffprobe", "-v", "error", "-show_entries", "format=duration",
+                "-of", "default=nw=1:nk=1", str(path),
+            ],
+            text=True,
+        ).strip()
+    )
 
 
 def sha256(p: Path) -> str:
@@ -44,12 +43,14 @@ def sha256(p: Path) -> str:
     return h.hexdigest()
 
 
-def render_bed(vo_dur: float) -> None:
+def ensure_bed(vo_dur: float) -> None:
+    if BED.exists() and probe_dur(BED) >= vo_dur:
+        return
     if not MID.exists() or not SF2.exists():
-        raise SystemExit(f"STOP: missing MIDI or sf2 ({MID} / {SF2})")
+        raise SystemExit(f"STOP: missing MIDI/sf2 ({MID} / {SF2})")
     BED_RAW.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(
-        ["fluidsynth", "-ni", "-l", "-r", "48000", "-g", "0.7", "-F", str(BED_RAW), str(SF2), str(MID)],
+        ["fluidsynth", "-ni", "-l", "-r", "48000", "-g", "1.0", "-F", str(BED_RAW), str(SF2), str(MID)],
         check=True,
         capture_output=True,
     )
@@ -57,13 +58,13 @@ def render_bed(vo_dur: float) -> None:
     subprocess.run(
         [
             "ffmpeg", "-y", "-i", str(BED_RAW),
-            "-af", f"loudnorm=I=-22:LRA=8:TP=-3,afade=t=in:d=1.4,afade=t=out:st={fade_out_start:.2f}:d=2.0",
+            "-af",
+            f"loudnorm=I=-20:LRA=9:TP=-2.5,afade=t=in:d=1.2,afade=t=out:st={fade_out_start:.2f}:d=2.0",
             "-ar", "48000", "-ac", "2", str(BED),
         ],
         check=True,
         capture_output=True,
     )
-    print(f"BED {BED} dur≈{probe_dur(BED):.2f}s", flush=True)
 
 
 def main() -> None:
@@ -72,15 +73,19 @@ def main() -> None:
     for plate in plates:
         mp4 = RAW / f"{plate['id']}_v01.mp4"
         if not mp4.exists() or mp4.stat().st_size < 400_000:
-            raise SystemExit(f"missing/small plate: {mp4}")
+            raise SystemExit(f"missing/small: {mp4}")
+        d = probe_dur(mp4)
+        if d < 5.5 or d > 12.0:
+            raise SystemExit(f"STOP bad duration {mp4.name} d={d}")
         clips.append(mp4)
+        print(f"  {plate['id']}: {mp4.stat().st_size}b {d:.2f}s", flush=True)
     if not VO.exists():
         raise SystemExit(f"missing VO {VO}")
     vo_dur = probe_dur(VO)
     pic_dur = len(clips) * CLIP_USE - (len(clips) - 1) * XFADE
     if pic_dur + 0.05 < vo_dur:
-        raise SystemExit(f"STOP: picture {pic_dur:.2f}s < VO {vo_dur:.2f}s")
-    render_bed(vo_dur)
+        raise SystemExit(f"picture {pic_dur:.2f} < VO {vo_dur:.2f}")
+    ensure_bed(vo_dur)
     OUT.parent.mkdir(parents=True, exist_ok=True)
 
     inputs: list[str] = []
@@ -113,23 +118,33 @@ def main() -> None:
         f"[{n+1}:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,"
         f"atrim=0:{vo_dur:.3f},volume={BED_VOL}[bed]"
     )
-    parts.append("[vo][bed]amix=inputs=2:duration=first:normalize=0[a]")
+    parts.append(
+        "[vo][bed]amix=inputs=2:duration=first:normalize=0,"
+        "alimiter=limit=0.95:attack=5:release=50[a]"
+    )
     filt = ";".join(parts)
     cmd = [
         "ffmpeg", "-y", *inputs, "-filter_complex", filt,
         "-map", "[vout]", "-map", "[a]",
-        "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart",
         str(OUT),
     ]
-    print(f"assemble v07 → {OUT.name} vo={vo_dur:.2f}s bed_vol={BED_VOL}", flush=True)
+    print(f"assemble v09 → {OUT.name} vo={vo_dur:.2f}s bed_vol={BED_VOL}", flush=True)
     subprocess.run(cmd, check=True)
     digest = sha256(OUT)
     print(f"SAVED {OUT} bytes={OUT.stat().st_size} dur≈{probe_dur(OUT):.2f}s sha256={digest}", flush=True)
+
     ICLOUD.mkdir(parents=True, exist_ok=True)
+    # Drop older confusing roughs from HOS UAT so only the current cut is there.
+    for old in ICLOUD.glob("hos_002_part01_rough_v0[5-8].mp4"):
+        old.unlink()
+        print(f"removed stale {old.name}", flush=True)
     dest = ICLOUD / OUT.name
     subprocess.run(["cp", "-f", str(OUT), str(dest)], check=True)
     print(f"ICLOUD {dest} sha256={sha256(dest)}", flush=True)
+
+    # History of Science only — never leave HOS cuts in OWB UAT.
     owb = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/OWB UAT")
     if owb.exists():
         for stale in owb.glob("hos_*.mp4"):

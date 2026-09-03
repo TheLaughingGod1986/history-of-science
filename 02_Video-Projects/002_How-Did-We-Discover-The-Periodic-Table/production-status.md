@@ -1,6 +1,6 @@
 # Production status — 002 How Did We Discover the Periodic Table?
 
-**PART 01 ROUGH v09 READY FOR BEN UAT — 3 Sep 2026.** Reminted picture + audible workshop bed. Deliver **only** to `HOS UAT/` (History of Science — **not** Orbit `OWB UAT/`). Do **not** start Part 02 until Ben passes.
+**PART 01 ROUGH v10 READY FOR BEN UAT — 3 Sep 2026.** Reminted residual physics fails (Explorer opaque powder · no pour · opaque shelves · ore in pan · no flames · late plates opaque). Do **not** start Part 02 until Ben passes.
 
 | Field | Value |
 |---|---|
@@ -12,19 +12,19 @@
 | Target air | Thu **10 Sep 2026 19:00 UK** |
 | Gate | **PASS** (script 90.4 · episode gate PASS) |
 | Part 01 VO | `02_Voiceover/part01_zoo_of_stuff_v02.wav` · **85.680s** |
-| Part 01 rough | `09_Final-Export/hos_002_part01_rough_v09.mp4` · **85.68s** · sha256 `86132c70ce9b7d7922a624eb4b2c1b1f7c704494df3c56a3a4c9b849c2bb9725` · iCloud **`HOS UAT/` only** |
-| Plates | 12 × Flow Veo 3.1 Fast · Explorer in workshop · opaque / liquid-honest glassware · continuous curious workshop bed under VO |
+| Part 01 rough | `09_Final-Export/hos_002_part01_rough_v10.mp4` · **≈85.67s** · sha256 `b19eb265f39c88da85365426797878affe727abc3c0d1169fed580b13a72fb7b` · iCloud `HOS UAT/` |
+| Plates | 12 × Flow Veo 3.1 Fast · Explorer holding ore · opaque workshop props · continuous curious workshop bed |
 | Part 02 | **SCAFFOLD ONLY** — script + plates JSON (no mint until Part 01 PASS) |
 | Affiliate | none |
-| Not | Orbit Omni · Neutron Star · Part 02 · OWB UAT delivery |
+| Not | Orbit Omni · Neutron Star · Part 02 |
 
 ## UAT
 
-Notes: `09_Final-Export/PART01_UAT_NOTES_v09.md`
+Notes: `07_Edit-Project/PART01_UAT_NOTES_v10.md`
 
-v09: reminted plates (glassware + Explorer fixes that never made it into v08) + audible continuous workshop underscore. Future parts keep the same bed family under VO. **Always copy to `HOS UAT/` only; scrub any `hos_*` from `OWB UAT/`.**
+Ben’s floating-flask / bubble-air / pour-miss / satchel screenshots were from **superseded v07/v08**. Watch **v10** only.
 
 ## Next
 
-1. **Ben UAT** PASS / REGEN (watch `HOS UAT/hos_002_part01_rough_v09.mp4`)
-2. Only then Part 02 (with continuous underscore from the start)
+1. **Ben UAT** PASS / REGEN
+2. Only then Part 02
