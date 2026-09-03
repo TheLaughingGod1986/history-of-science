@@ -2,6 +2,8 @@
 
 **Ship lock (2 Sep 2026):** Full film **LOCKED**. Canonical: `00_Brand/Channel-Setup/HOS_001_GERMS_SHIP_LOCKED.md` · `.cursor/rules/hos-001-germs-ship-lock.mdc` · `09_Final-Export/HOS_001_GERMS_FULL_V02_SHIP.json`
 
+**Studio (3 Sep 2026 evening finish):** Long `_C92tIJCk8A` is **Public** (Premiere converted). Thumbnail ABC **Running** (Thumbnail only; title locked). Five Shorts still **Scheduled** 4–8 Sep 11:30 London with Related → long. Feed-safe Short covers (Animistry v02/v03) **attached + Saved** in Studio. Do not remint. Do not Data API `thumbnails.set`.
+
 **Studio (3 Sep 2026):** Long Premiere `_C92tIJCk8A` Thu 3 Sep **18:00** London on **@HistoryOfScienceYT**. Five Shorts 4–8 Sep **11:30**. Related `_C92tIJCk8A`. Zero `/go/`. Not Orbit. Do not remint. Do not mint new ids.
 
 **Replace still missing.** Studio has no Replace-file control. Scheduled punch files still v01 / s05 v02. TYPE cuts stay on disk + HOS UAT.
