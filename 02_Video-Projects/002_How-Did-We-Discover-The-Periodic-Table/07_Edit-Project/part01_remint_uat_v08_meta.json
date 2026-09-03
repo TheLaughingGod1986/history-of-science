@@ -1,0 +1,37 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "mode": "uat-v08",
+  "plates": [
+    {
+      "id": "05_explorer_ore_gas",
+      "mode": "i2v",
+      "seconds": 72.4,
+      "bytes": 2044077,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/refs/v01_stills/05_explorer_ore_gas_start_v08.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "5258fa5c-98b7-44a2-914f-e6421def4482",
+      "url": "https://labs.google/fx/tools/flow/project/f2d604cb-3dff-4446-8961-6b32dab0b677"
+    },
+    {
+      "id": "06_alchemist_accidents",
+      "mode": "t2v",
+      "seconds": 74.5,
+      "bytes": 3892955,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "ad613525-b04f-4bb6-8d8f-321193d6873b",
+      "url": "https://labs.google/fx/tools/flow/project/958df242-6817-48f8-9680-ff3aa51406f7"
+    }
+  ]
+}
