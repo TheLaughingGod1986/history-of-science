@@ -12,7 +12,7 @@
 | Target air | Thu **10 Sep 2026 19:00 UK** |
 | Gate | **PASS** (script 90.4 · episode gate PASS) |
 | Part 01 VO | `02_Voiceover/part01_zoo_of_stuff_v02.wav` · **85.680s** |
-| Part 01 rough | `09_Final-Export/hos_002_part01_rough_v07.mp4` · **85.67s** · sha256 `5a49e103307d1417771bde5624ee90f3ea52f50821af1e7740024134ad66c951` · iCloud `HOS UAT/hos_002_part01_rough_v07.mp4` |
+| Part 01 rough | `09_Final-Export/hos_002_part01_rough_v07.mp4` · **85.67s** · sha256 `5a49e103307d1417771bde5624ee90f3ea52f50821af1e7740024134ad66c951` · iCloud `OWB UAT/` (+ `HOS UAT/`) |
 | Plates | 12 × Flow Veo 3.1 Fast · Explorer in workshop · liquid-only flasks · curious workshop bed under VO · plate 09 opaque banquet chairs |
 | Part 02 | **SCAFFOLD ONLY** — script + plates JSON (no mint until Part 01 PASS) |
 | Affiliate | none |
