@@ -1,7 +1,11 @@
 # History of Science — Shorts cadence (locked recommendation)
 
+**Orbit with Ben (live, 1 Sep 2026):** daily Short at **11:30 UK** + Thursday-morning premiere promo. See `ORBIT_DAILY_SHORTS_CADENCE_LOCKED.md`. That is the queue on `@OrbitWithBen` until Ben changes it.
+
+**This file** is still the rec for the **History of Science Brand Account** once Germs (or the next HOS long) is public: cluster after the long, not a second daily treadmill on an empty channel.
+
 **Date:** 26 Aug 2026 · Ben asked: daily Shorts vs other?  
-**Answer:** **Not daily.** Use a **pillar cluster** (HeyHistorically habit + small-channel reality).
+**Answer (HOS Brand Account):** **Not daily.** Use a **pillar cluster** (HeyHistorically habit + small-channel reality).
 
 ## Recommendation
 

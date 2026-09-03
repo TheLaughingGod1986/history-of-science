@@ -1,0 +1,25 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "plates": [
+    {
+      "id": "09_they_still_sneer",
+      "seconds": 73.9,
+      "bytes": 1654075,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "ef7f06d2-cfdf-4e6a-9912-5f5352490ee3",
+      "url": "https://labs.google/fx/tools/flow/project/a62130b6-53dd-4f8a-ae61-8dd95f890778",
+      "motion_mean": 3.05,
+      "first_second_motion": 8.83,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/raw/v02_fast_probe/09_they_still_sneer_v13.mp4",
+      "t2v": true
+    }
+  ],
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part03/raw/v02_fast_probe"
+}

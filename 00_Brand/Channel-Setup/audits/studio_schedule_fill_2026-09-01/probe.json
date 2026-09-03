@@ -1,0 +1,6 @@
+{
+  "ok": false,
+  "downloads": [],
+  "studio_url": "https://accounts.google.com/v3/signin/identifier?continue=https://www.youtube.com/signin?action_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3Dhttps%253A%252F%252Fstudio.youtube.com%252Fchannel%252FUC_esArsDKd3GJvOkeO0DUog%252Fvideos%252Fupload%26feature%3Dredirect_login&hl=en-GB&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S419938016:1788278797207233",
+  "error": "signin_wall"
+}

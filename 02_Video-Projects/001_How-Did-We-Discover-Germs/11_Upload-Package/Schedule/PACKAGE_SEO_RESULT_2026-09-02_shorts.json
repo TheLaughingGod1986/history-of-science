@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "park": true,
+  "channel": {
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": ["@OrbitWithBen", "@OpptiAI", "@HistoryOfScience"],
+  "verifyClicked": false,
+  "benVerified": true,
+  "titlesChanged": false,
+  "datesChanged": false,
+  "affiliate": "none",
+  "related": {
+    "requested": "_C92tIJCk8A",
+    "applied": true,
+    "title": "How Did We Discover Germs?"
+  },
+  "descriptionSaved": true,
+  "tagsSaved": true,
+  "tagsCount": "201/500",
+  "thumbsSaved": true,
+  "fileReplaced": false,
+  "description": "Watch the full film — How Did We Discover Germs?\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#HistoryOfScience #GermTheory #Science",
+  "ids": [
+    {"id": "8uBR-9oxeWs", "title": "An enemy that does not cast a shadow", "related": true, "thumb": true, "description": true, "tags": true, "saveGrey": true, "replaced": false},
+    {"id": "YX2UR1u-JCQ", "title": "A drop of pond water is not empty", "related": true, "thumb": true, "description": true, "tags": true, "saveGrey": true, "replaced": false},
+    {"id": "Fnb3p81u-wY", "title": "You are the vector", "related": true, "thumb": true, "description": true, "tags": true, "saveGrey": true, "replaced": false},
+    {"id": "vpuRgKXtFlY", "title": "A flask shaped like a question mark", "related": true, "thumb": true, "description": true, "tags": true, "saveGrey": true, "replaced": false},
+    {"id": "Lcmh5y2KMQM", "title": "What else is still invisible?", "related": true, "thumb": true, "description": true, "tags": true, "saveGrey": true, "replaced": false}
+  ]
+}

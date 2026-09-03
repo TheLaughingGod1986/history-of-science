@@ -1,0 +1,25 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "plates": [
+    {
+      "id": "02_spray_scrub",
+      "seconds": 148.5,
+      "bytes": 3807447,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "6dd05b0f-4724-4060-9f29-f3ea7650cae4",
+      "url": "https://labs.google/fx/tools/flow/project/eb640c33-f9a7-44ee-9cdb-c7e869b05a9c",
+      "motion_mean": 14.23,
+      "first_second_motion": 35.56,
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe/02_spray_scrub_v01c.mp4",
+      "i2v": false
+    }
+  ],
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part05/raw/v01_fast_probe"
+}

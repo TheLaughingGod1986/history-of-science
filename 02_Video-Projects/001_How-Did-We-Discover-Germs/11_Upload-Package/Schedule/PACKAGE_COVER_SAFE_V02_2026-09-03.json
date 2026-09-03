@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "studioPushed": false,
+  "reasonStudioBlocked": "Chrome Allow JavaScript from Apple Events is off and the menu item is greyed out. Do not Data API thumbnails.set.",
+  "channel": "@HistoryOfScienceYT",
+  "not": ["@OrbitWithBen"],
+  "method": "Scale locked Animistry covers to 0.815 and paste at top=176 side=100. Fill new margin from scene edge colour. Same pixels, not a remint.",
+  "composer": "08_Thumbnail/_compose_hos_short_cover_safe_v02.py",
+  "safeZonePx": { "top": 176, "side": 100 },
+  "covers": [
+    {
+      "id": "8uBR-9oxeWs",
+      "was": "hos_001_s01_shadow_cover_animistry_v01.jpg",
+      "now": "hos_001_s01_shadow_cover_animistry_v02.jpg",
+      "margins": { "top": 176, "left": 106, "right": 100 }
+    },
+    {
+      "id": "YX2UR1u-JCQ",
+      "was": "hos_001_s02_pond_cover_animistry_v02.jpg",
+      "now": "hos_001_s02_pond_cover_animistry_v03.jpg",
+      "margins": { "top": 232, "left": 106, "right": 103 }
+    },
+    {
+      "id": "Fnb3p81u-wY",
+      "was": "hos_001_s03_vector_cover_animistry_v01.jpg",
+      "now": "hos_001_s03_vector_cover_animistry_v02.jpg",
+      "margins": { "top": 207, "left": 125, "right": 100 }
+    },
+    {
+      "id": "vpuRgKXtFlY",
+      "was": "hos_001_s04_flask_cover_animistry_v02.jpg",
+      "now": "hos_001_s04_flask_cover_animistry_v03.jpg",
+      "margins": { "top": 176, "left": 100, "right": 100 }
+    },
+    {
+      "id": "Lcmh5y2KMQM",
+      "was": "hos_001_s05_soap_cover_animistry_v01.jpg",
+      "now": "hos_001_s05_soap_cover_animistry_v02.jpg",
+      "margins": { "top": 176, "left": 116, "right": 100 }
+    }
+  ],
+  "doNot": [
+    "Do not mint new ids",
+    "Do not change 11:30 dates",
+    "Do not recut punch TYPE cards",
+    "Do not Data API thumbnails.set"
+  ],
+  "next": "When Chrome View > Developer > Allow JavaScript from Apple Events is on again, attach the five JPEGs on the Shorts editors and Save."
+}

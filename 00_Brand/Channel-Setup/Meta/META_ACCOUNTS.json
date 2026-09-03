@@ -1,28 +1,38 @@
 {
   "brand": "History of Science",
-  "youtube_handle": "@HistoryOfScience",
+  "youtube_handle": "@HistoryOfScienceYT",
+  "youtube_url": "https://www.youtube.com/@HistoryOfScienceYT",
+  "youtube_channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
   "meta_business_portfolio": {
     "name": "History of Science",
-    "business_id": null,
-    "notes": "Create a new Meta Business portfolio for this channel. Do not publish to the Orbit with Ben Page from this workspace."
+    "business_id": "1352434763139246",
+    "notes": "Portfolio name only. The Page sitting in it (61592833318203) is Orbit with Ben — do not publish HOS there."
   },
   "facebook": {
     "page_name": "History of Science",
     "page_id": null,
     "business_suite_asset_id": null,
-    "preferred_handles": ["HistoryOfScience", "HistoryOfScienceYT"],
+    "preferred_handles": ["HistoryOfScienceYT", "HistoryOfScience"],
     "page_url": null,
-    "page_url_placeholder": "https://www.facebook.com/HistoryOfScience",
-    "notes": "Publish Reels to a new Facebook Page only (not personal profile, not Orbit with Ben)."
+    "page_url_placeholder": "https://www.facebook.com/HistoryOfScienceYT",
+    "notes": "Need a new Facebook Page for this channel. Do not use Orbit Page 61592833318203."
   },
   "instagram": {
-    "preferred_handles": ["historyofscience", "historyofscienceyt"],
+    "handle": "historyofscienceyt",
+    "profile_url": "https://www.instagram.com/historyofscienceyt/",
+    "preferred_handles": ["historyofscienceyt"],
     "account_type": "professional",
     "must_link_to_facebook_page": true,
-    "profile_url_placeholder": "https://www.instagram.com/historyofscience/",
-    "notes": "Creator or Business account linked to the new History of Science Facebook Page."
+    "notes": "Live IG is @historyofscienceyt. @historyofscience is Wellesley Science Center — never post there."
   },
   "bio": "How we discovered what we know. Full films on YouTube ↓",
-  "website": "https://www.youtube.com/@HistoryOfScience",
-  "soft_cta": "Full film on YouTube."
+  "website": "https://www.youtube.com/@HistoryOfScienceYT",
+  "soft_cta": "Full film on YouTube.",
+  "do_not_publish_to": {
+    "youtube": ["@OrbitWithBen", "UC_esArsDKd3GJvOkeO0DUog", "@HistoryOfScience"],
+    "instagram": ["orbitwithben", "historyofscience"],
+    "facebook_page_ids": ["61592833318203"],
+    "threads": ["orbitwithben", "historyofscience"],
+    "notes": "Orbit YouTube/socials stay on the Orbit repo. IG/Threads @historyofscience is Wellesley, not us. YouTube @HistoryOfScience is the empty 2023 third-party page."
+  }
 }

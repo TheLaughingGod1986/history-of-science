@@ -1,7 +1,9 @@
 # Part 02 lessons — Seeing the Tiny World
 
-**Date:** 2026-08-28  
-**Status:** **STOP for Ben UAT** — animated rough is ready. Do **not** start Part 03 until Ben passes this cut.
+**Date:** 2026-08-29  
+**Status:** **LOCKED** on `hos_001_part02_rough_v12.mp4`. Do **not** remint unless CoS sends a UAT FAIL with stills.
+
+**Film-wide doctor continuity (2 Sep 2026):** any two-doctor plate in this film must match KEEP 0:48 (`07_mocked_v12` — mustache younger + grey 1840s beard). Rule: `.cursor/rules/hos-part03-doctor-continuity.mdc`.
 
 ## Ben UAT (locked)
 
@@ -58,4 +60,4 @@ Plate 10 landed in ~72s after that fix (Lite, start-frame Animate path).
 
 ## Next
 
-Ben UAT `hos_001_part02_rough_v01.mp4`. Pass / regen notes. Then Part 03 only.
+Locked on `hos_001_part02_rough_v12.mp4`. Do **not** remint unless CoS sends a UAT FAIL with stills.

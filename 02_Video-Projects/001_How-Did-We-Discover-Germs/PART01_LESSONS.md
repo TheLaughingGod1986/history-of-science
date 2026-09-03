@@ -1,7 +1,9 @@
 # Part 01 lessons — Germs (LOCKED PASS)
 
 **Date:** 2026-08-26  
-**Status:** **PASS** — Ben locked style on `hos_001_part01_rough_v08.mp4`
+**Status:** **PASS** — Ben locked style on `hos_001_part01_rough_v08.mp4` (cut now `hos_001_part01_rough_v21.mp4`)
+
+**Film-wide doctor continuity (2 Sep 2026):** any two-doctor plate in this film must match KEEP 0:48 (`07_mocked_v12` — mustache younger + grey 1840s beard). Do **not** remint this locked cut unless CoS sends a UAT FAIL with stills. Finish 03 v14 first. Rule: `.cursor/rules/hos-part03-doctor-continuity.mdc`.
 
 ## Locked look
 
