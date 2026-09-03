@@ -8,7 +8,7 @@ import subprocess
 from pathlib import Path
 
 PROJ = Path(__file__).resolve().parents[1]
-GERMS_MUSIC = PROJ.parents[1] / "001_How-Did-We-Discover-Germs" / "05_Music"
+GERMS_MUSIC = PROJ.parent / "001_How-Did-We-Discover-Germs" / "05_Music"
 PLATES_JSON = PROJ / "07_Edit-Project/parts/part-01_plates_v01.json"
 RAW = PROJ / "04_Generated-Clips/part01/raw/v01_fast"
 VO = PROJ / "02_Voiceover/part01_zoo_of_stuff_v02.wav"
