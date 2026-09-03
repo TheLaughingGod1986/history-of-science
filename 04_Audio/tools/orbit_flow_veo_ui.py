@@ -1941,18 +1941,61 @@ def wait_and_download(
             print(line, flush=True)
             last_status = line
 
+        # Hard stop: Flow Ultra daily / plan credit exhaustion. Do not hang.
+        credit_blocked = any(
+            s in low
+            for s in (
+                "reached your credit limit",
+                "credit limit for now",
+                "out of credits",
+                "no credits remaining",
+                "not enough credits",
+                "upgrade your plan",
+                "check the subscription page",
+            )
+        )
+        if credit_blocked and elapsed > 12 and not new_ids:
+            raise RuntimeError(
+                "Flow credit limit reached — stop mint; wait for Ultra refresh "
+                "or top up Google One AI credits"
+            )
+
         # Flow often flashes "failed" while a usable mp4 is still arriving.
-        # Soft-retry the UI; do not abort the whole wait on that banner alone.
-        # But do not burn the full timeout once retries are exhausted.
+        # Soft-retry the UI (incl. material `refresh` on failed cards).
+        # Fail fast once retries are exhausted with no new media.
         if status == "failed":
             if failed_since is None:
                 failed_since = time.time()
-            elif retry_clicks < 2 and time.time() - failed_since > 45:
+            elif retry_clicks < 3 and time.time() - failed_since > 20:
                 clicked = (
                     click_visible(page, "try again")
                     or click_visible(page, "retry")
                     or click_visible(page, "regenerate")
+                    or click_visible(page, "refresh")
                 )
+                # Failed card icon is often a bare Material `refresh` glyph.
+                if not clicked:
+                    try:
+                        clicked = bool(
+                            page.evaluate(
+                                """() => {
+                                  const nodes = [...document.querySelectorAll(
+                                    'button,[role="button"],span'
+                                  )];
+                                  for (const n of nodes) {
+                                    const t = (n.innerText || n.textContent || '')
+                                      .trim().toLowerCase();
+                                    if (t === 'refresh') {
+                                      n.click();
+                                      return true;
+                                    }
+                                  }
+                                  return false;
+                                }"""
+                            )
+                        )
+                    except Exception:
+                        clicked = False
                 retry_clicks += 1
                 failed_since = time.time()
                 print(
@@ -1961,12 +2004,10 @@ def wait_and_download(
                     flush=True,
                 )
             elif (
-                retry_clicks >= 2
-                and time.time() - failed_since > 90
+                retry_clicks >= 3
+                and time.time() - failed_since > 45
                 and not new_ids
             ):
-                # Only abort if nothing new appeared — new_media often still downloads
-                # even while the banner flashes "failed".
                 raise RuntimeError(
                     "Flow stuck in failed state after soft retries"
                 )
@@ -1976,11 +2017,13 @@ def wait_and_download(
         else:
             failed_since = None
 
-        # If Create never entered generating, re-confirm spend and dump page text.
+        # If Create never entered generating, dump once then stop resubmitting
+        # forever (resubmit spam burns credits / hangs when browser dies).
         if (
             not seen_generating
             and elapsed > 20
             and int(elapsed) % 30 < 5
+            and retry_clicks < 3
         ):
             snippet = (body or "").replace("\n", " | ")
             print(f"  PAGE_SNIPPET gen=False head: {snippet[:700]}", flush=True)
@@ -1996,39 +2039,28 @@ def wait_and_download(
                 print(f"  PAGE_BUTTONS err: {e}", flush=True)
             try:
                 shot = dest.with_name(dest.stem + "_flow_stall.png")
-                page.screenshot(path=str(shot), full_page=False)
+                page.screenshot(path=str(shot), full_page=False, timeout=10_000)
                 print(f"  stall screenshot {shot}", flush=True)
             except Exception as e:
                 print(f"  screenshot skipped: {e}", flush=True)
+                if "closed" in str(e).lower() or "crashed" in str(e).lower():
+                    raise RuntimeError(f"Flow browser died during wait: {e}") from e
+            # Prefer refresh-on-fail over blind Create resubmit.
             try:
-                confirm_generation_spend(page, timeout_s=4.0)
-                submit_create(page)
+                click_visible(page, "refresh") or click_visible(page, "try again")
             except Exception as e:
-                print(f"  reconfirm/resubmit skipped: {e}", flush=True)
-
-        # Agent queued due to demand — ask for status once after ~90s
-        if (
-            not asked_status
-            and time.time() - t0 > 90
-            and ("queue" in low or "high demand" in low or "scheduled" in low)
-        ):
-            try:
-                set_prompt(
-                    page,
-                    "Please check the status of the Orbit video you scheduled and "
-                    "share it when ready.",
-                )
-                submit_create(page)
-                asked_status = True
-                print("  asked agent for video status", flush=True)
-            except Exception as e:
-                print(f"  status ask skipped: {e}", flush=True)
+                print(f"  fail-refresh skipped: {e}", flush=True)
 
         # Click into All Media / videos if present to surface completed clips
         if time.time() - t0 > 60 and int(time.time() - t0) % 45 < 4:
             click_visible(page, "view videos") or click_visible(page, "all media")
 
-        page.wait_for_timeout(4000)
+        try:
+            page.wait_for_timeout(4000)
+        except Exception as e:
+            if "closed" in str(e).lower() or "crashed" in str(e).lower():
+                raise RuntimeError(f"Flow browser died during wait: {e}") from e
+            raise
 
     raise TimeoutError(f"Flow video not ready after {timeout_s}s")
 

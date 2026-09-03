@@ -7,6 +7,7 @@ Duration guard rejects contamination outside ~6–12s.
 from __future__ import annotations
 
 import json
+import traceback
 import os
 import shutil
 import subprocess
@@ -70,7 +71,9 @@ def main() -> None:
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as p:
-        ctx, page = flow.launch_context(p, headed=True, profile=profile)
+        headed = os.environ.get("ORBIT_FLOW_HEADED", "1") not in {"0", "false", "False"}
+        print(f"headed={headed}", flush=True)
+        ctx, page = flow.launch_context(p, headed=headed, profile=profile)
         try:
             page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
             page.wait_for_timeout(2000)
@@ -161,4 +164,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        traceback.print_exc()
+        raise
