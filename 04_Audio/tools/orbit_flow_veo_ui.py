@@ -551,41 +551,55 @@ def read_selected_video_model(page) -> str | None:
 
 
 def _ensure_create_prompt_mode(page) -> None:
-    """Leave Agent-instructions mode so the Image/Video model pill is visible.
+    """Ensure we can configure video generation on the current Flow UI.
 
-    Aug 2026 Flow UI: Agent mode shows tune/Settings + Agent Instructions and
-    hides the Nano Banana / Video · settings pill used for Veo selection.
+    Sep 2026 Flow (`flow.google.com`): generation defaults live under the Agent
+    panel Settings (tune) sheet — there is no separate Create/Agent toggle or
+    prompt-bar Veo pill. Opening Settings and seeing the video model dropdown
+    is enough to proceed.
     """
+    # Legacy prompt-bar pill still present on some sessions.
     has_pill = page.evaluate(
         """() => [...document.querySelectorAll('button')].some(b =>
-          /Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(b.innerText || ''))"""
+          /Nano Banana|Video ·|Omni Flash|Omni 1|Veo 3|crop_16_9/.test(b.innerText || ''))"""
     )
     if has_pill:
         return
-    # Agent Instructions visible → toggle Agent off
-    if page.locator("button").filter(has_text="Agent Instructions").count():
-        clicked = page.evaluate(
+    # New Agent Settings sheet
+    try:
+        page.get_by_role("button", name="Settings", exact=True).click(timeout=4000)
+        page.wait_for_timeout(900)
+    except Exception:
+        # Fallback: material "tune" icon button near the prompt
+        page.evaluate(
             """() => {
               for (const b of document.querySelectorAll('button')) {
-                const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-                if (t === 'Agent' || /^Agent$/i.test(t)) { b.click(); return true; }
+                const aria = (b.getAttribute('aria-label') || '').trim();
+                const t = (b.innerText || '').trim();
+                if (aria === 'Settings' || t === 'tune') { b.click(); return true; }
               }
               return false;
             }"""
         )
-        if clicked:
-            page.wait_for_timeout(900)
-    has_pill = page.evaluate(
-        """() => [...document.querySelectorAll('button')].some(b =>
-          /Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(b.innerText || ''))"""
+        page.wait_for_timeout(900)
+    has_video_dd = page.evaluate(
+        """() => [...document.querySelectorAll('button')].some(b => {
+          const t = (b.innerText || '');
+          return /arrow_drop_down/i.test(t) && /(Omni|Veo 3)/i.test(t);
+        })"""
     )
-    if not has_pill:
-        raise RuntimeError(
-            "Flow Create model pill not found (still in Agent mode?). "
-            "Toggle Agent off so Image/Video settings appear."
-        )
-
-
+    if has_video_dd:
+        # Leave sheet open for configure_veo_settings; caller will Save/close.
+        return
+    # Close and fail clearly
+    try:
+        page.keyboard.press("Escape")
+    except Exception:
+        pass
+    raise RuntimeError(
+        "Flow video model settings not found. Open Agent Settings (tune) and "
+        "confirm Video generation default shows Omni/Veo."
+    )
 def _open_prompt_settings_pill(page) -> None:
     """Click the prompt-bar settings pill (Nano Banana / Video · / Omni / Veo)."""
     box = page.evaluate(
@@ -745,17 +759,135 @@ def configure_veo_settings(
     frames_mode: bool = False,
     ingredients_mode: bool = False,
 ) -> None:
-    """Lock Flow Create settings to Veo 3.x video · 16:9 · x1.
+    """Lock Flow video defaults to Veo 3.x · 16:9 · x1 via Agent Settings.
 
-    Aug 2026 UI: prompt-bar pill → Video tab → model dropdown (not the old
-    Agent tune panel). Falls back to legacy tune/Settings if needed.
+    Sep 2026 UI: Settings (tune) sheet → Video generation default → Save.
+    Legacy prompt-bar pill path kept as fallback.
     """
     model = assert_veo3_model(model)
     dismiss_banners(page)
-    _ensure_create_prompt_mode(page)
 
-    # --- New prompt-bar popover path ---
+    def _open_agent_settings() -> bool:
+        try:
+            page.get_by_role("button", name="Settings", exact=True).click(timeout=4000)
+            page.wait_for_timeout(900)
+        except Exception:
+            opened = page.evaluate(
+                """() => {
+                  for (const b of document.querySelectorAll('button')) {
+                    const aria = (b.getAttribute('aria-label') || '').trim();
+                    const t = (b.innerText || '').trim();
+                    if (aria === 'Settings' || t === 'tune') { b.click(); return true; }
+                  }
+                  return false;
+                }"""
+            )
+            if not opened:
+                return False
+            page.wait_for_timeout(900)
+        return page.evaluate(
+            r"""() => [...document.querySelectorAll('button')].some(b => {
+              const t = (b.innerText || '');
+              return /arrow_drop_down/i.test(t) && /(Omni|Veo 3)/i.test(t);
+            })"""
+        )
+
+    def _agent_settings_path() -> str:
+        if not _open_agent_settings():
+            raise RuntimeError("Agent Settings sheet not available")
+        # Prefer Never for confirm-before-generate so mint can run unattended.
+        page.evaluate(
+            r"""() => {
+              for (const b of document.querySelectorAll('button,label,span,div')) {
+                const t = (b.innerText || '').trim().replace(/\n/g, ' ');
+                if (t === 'Never') { b.click(); return true; }
+              }
+              return false;
+            }"""
+        )
+        page.wait_for_timeout(200)
+        # Video section: 16:9 + x1 (lower controls). Avoid regex word-boundaries.
+        page.evaluate(
+            r"""() => {
+              const btns = [...document.querySelectorAll('button')];
+              for (const b of btns) {
+                const t = (b.innerText || '').trim().replace(/\n/g, ' ');
+                const r = b.getBoundingClientRect();
+                if (r.y > 450 && (t.includes('crop_16_9') || t.includes('16:9'))) b.click();
+              }
+              const x1 = btns.filter((b) => (b.innerText || '').trim() === 'x1');
+              if (x1.length >= 2) x1[x1.length - 1].click();
+              else if (x1.length === 1) x1[0].click();
+            }"""
+        )
+        page.wait_for_timeout(250)
+        # Video model dropdown (lower Omni/Veo control)
+        box = page.evaluate(
+            r"""() => {
+              const hits = [];
+              for (const b of document.querySelectorAll('button')) {
+                const t = (b.innerText || '').trim();
+                const r = b.getBoundingClientRect();
+                if (/arrow_drop_down/i.test(t) && /(Omni|Veo 3)/i.test(t) && r.width > 40)
+                  hits.push({x: r.x + r.width / 2, y: r.y + r.height / 2, t: t.slice(0, 80), y0: r.y});
+              }
+              hits.sort((a, b) => b.y0 - a.y0);
+              return hits[0] || null;
+            }"""
+        )
+        if not box:
+            raise RuntimeError("Video model dropdown not found in Agent Settings")
+        page.mouse.click(box["x"], box["y"])
+        page.wait_for_timeout(900)
+        clicked = page.evaluate(
+            r"""(model) => {
+              const needle = String(model || '').toLowerCase();
+              for (const el of document.querySelectorAll('[role=menuitem],button,mat-option,[role=option]')) {
+                const t = (el.innerText || '').trim().replace(/\n/g, ' ');
+                if (t.length < 80 && t.toLowerCase().includes(needle)) {
+                  el.click();
+                  return t;
+                }
+              }
+              return null;
+            }""",
+            model,
+        )
+        if not clicked:
+            raise RuntimeError(f"Veo model menu item not found: {model}")
+        page.wait_for_timeout(400)
+        saved = page.evaluate(
+            """() => {
+              for (const b of document.querySelectorAll('button')) {
+                const t = (b.innerText || '').trim();
+                if (t === 'Save' || t.startsWith('Save')) { b.click(); return 'save'; }
+              }
+              return null;
+            }"""
+        )
+        if not saved:
+            page.keyboard.press("Escape")
+            saved = "escape"
+        page.wait_for_timeout(700)
+        print(f"  agent-settings video model locked: {clicked} ({saved})", flush=True)
+        return clicked
+
+    # Prefer Agent Settings (current Flow home UI).
     try:
+        selected = _agent_settings_path()
+        print(f"  video model locked: {selected}", flush=True)
+        return
+    except Exception as e:
+        print(f"  agent-settings path failed ({e}); trying prompt pill…", flush=True)
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        page.wait_for_timeout(400)
+
+    # Legacy prompt-bar popover path — soft-fail if missing on Sep 2026 UI.
+    try:
+        _ensure_create_prompt_mode(page)
         _open_prompt_settings_pill(page)
         _select_video_tab(page)
         selected = _select_veo_from_dropdown(page, model)
@@ -766,112 +898,11 @@ def configure_veo_settings(
         page.keyboard.press("Escape")
         page.wait_for_timeout(500)
         print("  settings closed via escape (prompt pill)", flush=True)
-        return
     except Exception as e:
-        print(f"  prompt-pill settings path failed ({e}); trying legacy tune…", flush=True)
-        try:
-            page.keyboard.press("Escape")
-        except Exception:
-            pass
-        page.wait_for_timeout(400)
+        raise RuntimeError(
+            f"Could not lock Veo settings via Agent Settings or prompt pill: {e}"
+        ) from e
 
-    # --- Legacy Agent tune/Settings path ---
-    # Enter Agent mode if tune is only available there
-    if not visible_button(page, "tune") and not visible_button(page, "settings"):
-        page.evaluate(
-            """() => {
-              for (const b of document.querySelectorAll('button')) {
-                if ((b.innerText || '').trim() === 'Agent') { b.click(); return; }
-              }
-            }"""
-        )
-        page.wait_for_timeout(800)
-    if not click_visible(page, "tune"):
-        if not click_visible(page, "settings"):
-            raise RuntimeError("Flow Settings (tune) button not found")
-    page.wait_for_timeout(900)
-
-    # Never auto-spend confirmations (JS avoids header intercepts)
-    page.evaluate(
-        """() => {
-          for (const b of document.querySelectorAll('button')) {
-            const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-            if (/Never/.test(t) && /confirm|credits|Agent will generate/i.test(t)) {
-              b.click(); return true;
-            }
-          }
-          for (const el of document.querySelectorAll('span,label,div')) {
-            if ((el.innerText || '').trim() === 'Never') { el.click(); return true; }
-          }
-          return false;
-        }"""
-    )
-    page.wait_for_timeout(200)
-
-    # Video defaults: 16:9 + x1 (video section is lower in the panel)
-    page.evaluate(
-        """() => {
-          for (const b of document.querySelectorAll('button')) {
-            const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-            const r = b.getBoundingClientRect();
-            if (r.y > 500 && t.includes('16:9')) b.click();
-          }
-          const x1 = [...document.querySelectorAll('button')].filter(
-            (b) => (b.innerText || '').trim() === 'x1'
-          );
-          if (x1.length >= 2) x1[1].click();
-          else if (x1.length === 1) x1[0].click();
-        }"""
-    )
-    page.wait_for_timeout(200)
-
-    selected = _select_veo_from_dropdown(page, model)
-    print(f"  video model locked: {selected}", flush=True)
-
-    # JS click — Playwright click() can hang forever if the Save control is obscured.
-    # Save often triggers a navigation; settle before any follow-up evaluate.
-    saved = safe_evaluate(
-        page,
-        """() => {
-          for (const b of document.querySelectorAll('button')) {
-            const t = (b.innerText || '').trim();
-            if (t === 'Save' || t.startsWith('Save')) { b.click(); return 'save'; }
-          }
-          for (const b of document.querySelectorAll('button')) {
-            const t = (b.innerText || '').trim();
-            if (t === 'Back' || /arrow_back/i.test(t)) { b.click(); return 'back'; }
-          }
-          return null;
-        }""",
-    )
-    if not saved:
-        page.keyboard.press("Escape")
-        saved = "escape"
-    print(f"  settings closed via {saved}", flush=True)
-    settle_after_nav(page, wait_ms=900)
-
-    # Legacy path may leave us in Agent mode — return to Create pill mode
-    try:
-        _ensure_create_prompt_mode(page)
-    except Exception:
-        pass
-
-    box = editor_box(page)
-    if not box or box["w"] < 50:
-        if page.get_by_text("Confirm before generating").count():
-            try:
-                safe_evaluate(
-                    page,
-                    """() => {
-                      for (const b of document.querySelectorAll('button')) {
-                        const t = (b.innerText || '').trim();
-                        if (/arrow_back|Back/i.test(t)) { b.click(); return; }
-                      }
-                    }""",
-                )
-            except Exception:
-                pass
-            settle_after_nav(page, wait_ms=600)
 
 
 def upload_orbit_ref(page, ref: Path) -> bool:
@@ -1355,7 +1386,7 @@ _EDITOR_TEXT_JS = """() => {
   let out = (clone.innerText || clone.textContent || '').trim();
   // Placeholder decorations sometimes leave the question as plain text.
   const q = ['what do you want to create', 'what would you like to create'];
-  const low = out.toLowerCase().replace(/\?+$/, '');
+  const low = out.toLowerCase().replace(new RegExp('[?]+$'), '');
   if (q.includes(low)) return '';
   return out;
 }"""
@@ -1528,8 +1559,8 @@ def submit_create(page) -> None:
                 const hits = [];
                 for (const b of document.querySelectorAll('button')) {
                   const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-                  if (/error|cancel|add_2/i.test(t)) continue;
-                  const isArrow = /arrow_forward/i.test(t);
+                  if (/error|cancel|add_2|show thinking|arrow_forward_ios|expand_more/i.test(t)) continue;
+                  const isArrow = /(^|\\s)arrow_forward(\\s|$)/i.test(t) && !/ios|thinking/i.test(t);
                   const isCreate = /^Create$/i.test(t);
                   if (preferArrow && !isArrow) continue;
                   if (!preferArrow && !isCreate) continue;
@@ -1573,7 +1604,7 @@ def submit_create(page) -> None:
                   for (const b of document.querySelectorAll('button')) {
                     const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
                     if (/error|cancel|add_2|new project/i.test(t)) continue;
-                    if (!/arrow_forward/i.test(t)) continue;
+                    if (!/(^|\\s)arrow_forward(\\s|$)/i.test(t) || /ios|show thinking/i.test(t)) continue;
                     if (b.disabled || b.getAttribute('aria-disabled') === 'true') continue;
                     ranked.push(b);
                   }
@@ -2093,7 +2124,15 @@ def _generate_clip_once(
         # Keep agent session healthy, but do NOT attach Orbit identity chip.
         ensure_agent_session(page)
         print("  setting scenery-only prompt (no Orbit chip)…", flush=True)
-        set_prompt(page, flow_prompt(prompt, scenery_only=True))
+        set_prompt(
+            page,
+            (
+                "GENERATE one silent 8-second Veo video NOW. Do not brainstorm. "
+                "Do not ask questions. Do not edit images. Spend credits and output "
+                "the video file only.\n\n"
+                + flow_prompt(prompt, scenery_only=True)
+            ),
+        )
         # Clear any leftover attachment chips if present
         try:
             page.keyboard.press("Escape")
@@ -2125,10 +2164,24 @@ def _generate_clip_once(
     media_id = wait_and_download(
         page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
     )
-    if not veo.already_done(dest):
-        raise RuntimeError(
-            f"download too small: {dest} ({dest.stat().st_size if dest.exists() else 0})"
+    size = dest.stat().st_size if dest.exists() else 0
+    if size < 120_000:
+        raise RuntimeError(f"download too small: {dest} ({size})")
+    import subprocess as _sp
+    try:
+        dur = float(
+            _sp.check_output(
+                [
+                    "ffprobe", "-v", "error", "-show_entries", "format=duration",
+                    "-of", "default=nw=1:nk=1", str(dest),
+                ],
+                text=True,
+            ).strip()
         )
+    except Exception as e:
+        raise RuntimeError(f"download unreadable: {dest} ({e})") from e
+    if dur < 5.0 or dur > 14.0:
+        raise RuntimeError(f"download bad duration: {dest} dur={dur:.2f} size={size}")
     veo.strip_audio(dest)
     return {
         "seconds": round(time.time() - t0, 1),
