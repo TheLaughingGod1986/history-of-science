@@ -19,8 +19,9 @@ SF2 = GERMS_MUSIC / "TimGM6mb.sf2"
 BED_RAW = PROJ / "05_Music/hos_002_part01_curious_workshop_v02.wav"
 BED = PROJ / "05_Music/hos_002_part01_curious_workshop_v02_norm.wav"
 OUT = PROJ / "09_Final-Export/hos_002_part01_rough_v08.mp4"
-ICLOUD = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/OWB UAT")
-ICLOUD_HOS = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT")
+# HOS only — never Orbit With Ben (OWB UAT).
+ICLOUD = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT")
+ICLOUD_HOS = ICLOUD
 # v07 used 0.14 → pauses ~-43 dBFS (inaudible on phone). Target ~-30 like Germs.
 BED_VOL = 0.42
 
@@ -100,13 +101,15 @@ def main() -> None:
     subprocess.run(cmd, check=True)
     digest = sha256(OUT)
     print(f"SAVED {OUT} bytes={OUT.stat().st_size} dur≈{probe_dur(OUT):.2f}s sha256={digest}", flush=True)
-    for cloud in (ICLOUD, ICLOUD_HOS):
-        if not cloud.parent.exists():
-            continue
-        cloud.mkdir(parents=True, exist_ok=True)
-        dest = cloud / OUT.name
-        subprocess.run(["cp", "-f", str(OUT), str(dest)], check=False)
-        print(f"ICLOUD {dest} sha256={sha256(dest)}", flush=True)
+    ICLOUD.mkdir(parents=True, exist_ok=True)
+    dest = ICLOUD / OUT.name
+    subprocess.run(["cp", "-f", str(OUT), str(dest)], check=True)
+    print(f"ICLOUD {dest} sha256={sha256(dest)}", flush=True)
+    owb = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/OWB UAT")
+    if owb.exists():
+        for stale in owb.glob("hos_*.mp4"):
+            stale.unlink()
+            print(f"removed from OWB UAT: {stale.name}", flush=True)
 
 
 if __name__ == "__main__":

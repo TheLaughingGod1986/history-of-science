@@ -34,8 +34,8 @@
     {
       "id": "05_explorer_ore_gas",
       "explorer": true,
-      "still_prompt": "Premium 3D cartoon medium shot: exactly ONE Explorer boy matching History of Science Germs Part 01 identity \u2014 YOUNGER BOY proportions (not adult), messy wavy brown hair, large expressive eyes, round thin gold wire-rim glasses, teal-blue long overcoat with gold atom lapel pin, tan waistcoat, plain white shirt, dark brown floppy bow tie, brown trousers rolled at cuffs, cream socks, sturdy brown lace-up boots, brown leather satchel with brass compass on the strap. He stands at a workshop table holding a heavy dark ore lump in both hands; a glass jar of clear blue liquid sits on the bench beside a brass scale. Ore is plain rock \u2014 NO face. No glowing chairs. Single Explorer. No twins. No Orbit. No readable text.",
-      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Keep this EXACT workshop beat: ONE Explorer boy at the bench holding the dark ore, glass jar of clear blue liquid on the table, brass scale. Face and body must match History of Science Germs Part 01 Explorer \u2014 YOUNGER BOY (not adult man), messy wavy brown hair, large eyes, gold wire-rim glasses, teal coat, tan vest, white shirt, floppy brown bow, satchel+compass. Continuous acting: he lifts the ore, glances at the gas jar, puzzled both count as stuff. HARD REJECT: adult redesign, blond curls, rummaging in satchel as the whole beat, glowing chairs, hospital ward, twins, Orbit, smiley rocks, floating glassware. Silent."
+      "still_prompt": "Premium 3D cartoon medium shot: exactly ONE Explorer boy matching History of Science Germs Part 01 identity \u2014 YOUNGER BOY proportions (not adult), messy wavy brown hair, large expressive eyes, round thin gold wire-rim glasses, teal-blue long overcoat with gold atom lapel pin, tan waistcoat, plain white shirt, dark brown floppy bow tie, brown trousers rolled at cuffs, cream socks, sturdy brown lace-up boots, brown leather satchel with brass compass on the strap. He stands at a workshop table HOLDING a heavy dark ore lump in BOTH hands (not rummaging in satchel). Beside him: ONE sealed OPAQUE ceramic jar of blue powder and a brass scale with EMPTY pans. NO clear glass liquids. Ore is plain rock \u2014 NO face. No glowing chairs. Single Explorer. No twins. No Orbit. No readable text.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. REPLACE any clear glass / glowing blue liquid jar with a sealed OPAQUE ceramic canister of blue powder \u2014 ZERO clear liquid, ZERO bubbles, ZERO foam, ZERO spheres in air. Keep ONE Explorer boy at the bench HOLDING the dark ore in both hands (not rummaging in satchel). Face/body = Germs Part 01 younger boy: messy wavy brown hair, large eyes, gold wire-rim glasses, teal coat, tan vest, white shirt, floppy brown bow, satchel+compass. Continuous acting: he lifts the ore, glances at the opaque powder jar, puzzled. Empty brass scale pans OK. HARD REJECT: clear glass liquids, bubbles in air, adult redesign, satchel rummage as the beat, glowing chairs, hospital ward, twins, Orbit, floating glassware. Silent."
     },
     {
       "id": "06_alchemist_accidents",
@@ -64,20 +64,20 @@
     {
       "id": "10_rock_not_fire",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon: rock on grate with heat shimmer (no flames); heavy copper cylinder pressed flat onto brass scale pan with visible contact. No glass. No people.",
-      "prompt": "Premium 3D cartoon workshop, one continuous wide shot (no split-screen). LEFT: a dark rock on a grate with heat shimmer only \u2014 NO flames, NO fire. RIGHT: a brass balance scale whose LEFT pan holds a heavy chunk of dark ore sitting FLAT INSIDE the pan \u2014 the ore rests on the pan metal, pan depressed, NO chains attached to the ore, NO hanging vessel above the pan. Continuous gentle camera drift. Silent. HARD REJECT: anything floating or hovering above the pan, hanging copper pots, glass flasks, liquid bubbles, flames, split-screen, news, food, Orbit, text."
+      "still_prompt": "Premium 3D cartoon: rock on grate with heat shimmer ONLY (no flames, no fire, no coals glowing bright); heavy dark ore chunk seated FLAT INSIDE brass scale pan with visible contact. Opaque jars on shelves. No clear glass. No people.",
+      "prompt": "Premium 3D cartoon workshop, one continuous wide shot (no split-screen). LEFT: a dark rock on a cold metal grate with subtle heat shimmer / haze ONLY \u2014 NO flames, NO fire, NO orange coals, NO burning. RIGHT: a brass balance scale whose LEFT pan holds a heavy chunk of dark ore sitting FLAT INSIDE the pan \u2014 ore rests on pan metal, pan depressed, NO chains attached to the ore, NO hanging vessel, NO glass flask near the scale. Shelves hold OPAQUE ceramic jars only. Continuous gentle camera drift. Silent. HARD REJECT: flames, fire, floating/hovering above the pan, hanging pots, glass flasks, liquid bubbles, split-screen, news, food, Orbit, text."
     },
     {
       "id": "11_chemists_more_names",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon later chemists\u2019 bench \u2014 neat rows of blank specimen cards and glass flasks of clear colored liquid multiplying faster than the shelves can hold. Warm lamp light. No readable words. No people.",
-      "prompt": "Premium 3D cartoon chemists' bench: blank cards and glass flasks of CLEAR COLORED LIQUID multiply across the wood. Liquids slosh. HARD REJECT inside glass: spheres, beads, nuggets, crystals, ore, powder, cotton. Ores if any sit on wood only. Continuous camera drift. Silent. No readable text, no Orbit."
+      "still_prompt": "Premium 3D cartoon later chemists\u2019 bench \u2014 neat rows of blank specimen cards and OPAQUE ceramic jars / sealed metal canisters multiplying faster than the shelves can hold. Warm lamp light. No clear liquids. No readable words. No people.",
+      "prompt": "Premium 3D cartoon chemists' bench: blank cards and OPAQUE ceramic jars / sealed metal canisters multiply across the wood. NO clear glass liquids, NO bubbles. Ores if any sit on wood only. Continuous camera drift. Silent. HARD REJECT: transparent flasks with liquid, bubbles in air, readable text, Orbit, news, food."
     },
     {
       "id": "12_workshop_hold",
       "explorer": false,
-      "still_prompt": "Premium 3D cartoon wide of the workshop at dusk \u2014 glass flasks of clear colored liquid, furnace embers, one empty glowing chair in the foreground. Quiet wonder. No people. No text.",
-      "prompt": "Premium 3D cartoon workshop dusk hold: glass flasks of CLEAR COLORED LIQUID on shelves, furnace embers, one empty glowing chair in the foreground. Bubbles only inside liquid below meniscus. Slow push. Continuous motion. Silent. HARD REJECT: bubbles in air above liquid, stuffing in jars, text, Orbit."
+      "still_prompt": "Premium 3D cartoon wide of the workshop at dusk \u2014 OPAQUE ceramic jars and sealed canisters on shelves, furnace embers (no open flames on the bench), one empty glowing chair in the foreground. Quiet wonder. No clear liquids. No people. No text.",
+      "prompt": "Premium 3D cartoon workshop dusk hold: OPAQUE ceramic jars and sealed metal canisters on shelves, soft furnace embers, one empty glowing chair in the foreground. NO clear glass liquids, NO bubbles. Slow push. Continuous motion. Silent. HARD REJECT: clear liquid flasks, bubbles in air above liquid, stuffing in jars, text, Orbit, news, food."
     }
   ]
 }
