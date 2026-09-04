@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Mint HOS 002 Part 02 Flow Veo 3.1 Fast plates.
 
-Applies PART01_LESSONS physics lock. Explorer once on 05 (T2V identity lock).
+Applies PART01_LESSONS physics lock. Explorer once on 05 (prompt identity).
 Duration guard rejects contamination outside ~6–12s.
 
-Agent UI crash rule: after Create is running, generate_clip returns
-needs_gallery_harvest. Mint closes the browser, settles, harvests in a
-fresh process, then relaunches for the next plate.
+Crash isolation: one Playwright session per plate. When Agent UI returns
+needs_gallery_harvest, end that session without ctx.close() mid-gen, settle,
+then Download-harvest in a fresh process.
 """
 from __future__ import annotations
 
@@ -62,21 +62,18 @@ def probe_dur(path: Path) -> float:
     return float(
         subprocess.check_output(
             [
-                "ffprobe", "-v", "error", "-show_entries", "format=duration",
-                "-of", "default=nw=1:nk=1", str(path),
+                "ffprobe",
+                "-v",
+                "error",
+                "-show_entries",
+                "format=duration",
+                "-of",
+                "default=nw=1:nk=1",
+                str(path),
             ],
             text=True,
         ).strip()
     )
-
-
-def safe_close(ctx) -> None:
-    if ctx is None:
-        return
-    try:
-        ctx.close()
-    except Exception:
-        pass
 
 
 def open_flow(p, *, headed: bool, profile: Path, pinned: str):
@@ -93,7 +90,10 @@ def open_flow(p, *, headed: bool, profile: Path, pinned: str):
         except Exception:
             body = ""
         if "new project" not in body and "flow.google.com" not in (page.url or "").lower():
-            safe_close(ctx)
+            try:
+                ctx.close()
+            except Exception:
+                pass
             raise SystemExit("STOP: Flow not logged in.")
         print("  continuing — Flow UI reachable", flush=True)
     return ctx, page
@@ -107,13 +107,72 @@ def run_harvest(dest: Path, project_url: str) -> None:
     env = dict(os.environ)
     env["HOS_FLOW_PROJECT_URL"] = project_url
     cmd = [
-        sys.executable, "-u", str(HARVEST),
-        "--out", str(dest),
-        "--project", project_url,
-        "--wait-s", str(wait_s),
+        sys.executable,
+        "-u",
+        str(HARVEST),
+        "--out",
+        str(dest),
+        "--project",
+        project_url,
+        "--wait-s",
+        str(wait_s),
     ]
     print(f"  spawn harvest: {' '.join(cmd)}", flush=True)
     subprocess.check_call(cmd, env=env)
+
+
+def mint_one_plate(
+    *,
+    prompt: str,
+    dest: Path,
+    headed: bool,
+    profile: Path,
+    pinned: str,
+    reuse: bool,
+) -> dict:
+    from playwright.sync_api import sync_playwright
+
+    tmp = dest.with_name(dest.stem + "_tmp.mp4")
+    if tmp.exists():
+        tmp.unlink()
+
+    info: dict = {}
+    with sync_playwright() as p:
+        ctx, page = open_flow(p, headed=headed, profile=profile, pinned=pinned)
+        try:
+            info = flow.generate_clip(
+                page,
+                prompt,
+                tmp,
+                model=MODEL,
+                reuse_project=reuse,
+                attempts=1,
+                timeout_s=420,
+                start_frame=None,
+                scenery_only=True,
+            )
+        finally:
+            # Never ctx.close() mid-gen — that SIGPIPEs the mint process.
+            if not info.get("needs_gallery_harvest"):
+                try:
+                    ctx.close()
+                except Exception:
+                    pass
+
+    if info.get("needs_gallery_harvest"):
+        project_url = info.get("project_url") or pinned
+        print("  playwright session ended — settling for harvest…", flush=True)
+        subprocess.run(
+            ["pkill", "-f", "playwright-hos-flow-profile"],
+            check=False,
+            capture_output=True,
+        )
+        time.sleep(2)
+        run_harvest(tmp, project_url)
+        info["media_id"] = f"gallery-harvest:{tmp.stat().st_size if tmp.exists() else 0}"
+        info["bytes"] = tmp.stat().st_size if tmp.exists() else 0
+
+    return {"tmp": tmp, "info": info}
 
 
 def main() -> None:
@@ -149,128 +208,89 @@ def main() -> None:
     os.environ["ORBIT_FLOW_PROJECT_URL"] = pinned
     os.environ["HOS_FLOW_PROJECT_URL"] = pinned
 
-    from playwright.sync_api import sync_playwright
+    headed = os.environ.get("ORBIT_FLOW_HEADED", "1") not in {"0", "false", "False"}
+    print(f"headed={headed}", flush=True)
 
-    with sync_playwright() as p:
-        headed = os.environ.get("ORBIT_FLOW_HEADED", "1") not in {"0", "false", "False"}
-        print(f"headed={headed}", flush=True)
-        ctx, page = open_flow(p, headed=headed, profile=profile, pinned=pinned)
-        try:
-            for i, plate in enumerate(plates):
-                pid = plate["id"]
-                dest = RAW / f"{pid}_v01.mp4"
-                if veo.already_done(dest, min_bytes=800_000):
-                    try:
-                        d = probe_dur(dest)
-                    except Exception:
-                        d = 0.0
-                    if 5.5 <= d <= 12.0:
-                        print(f"  skip {dest.name} dur={d:.2f}", flush=True)
-                        continue
-                    bad = REJECT / f"{pid}_bad_existing.mp4"
+    for i, plate in enumerate(plates):
+        pid = plate["id"]
+        dest = RAW / f"{pid}_v01.mp4"
+        if veo.already_done(dest, min_bytes=800_000):
+            try:
+                d = probe_dur(dest)
+            except Exception:
+                d = 0.0
+            if 5.5 <= d <= 12.0:
+                print(f"  skip {dest.name} dur={d:.2f}", flush=True)
+                continue
+            bad = REJECT / f"{pid}_bad_existing.mp4"
+            if bad.exists():
+                bad.unlink()
+            shutil.move(str(dest), str(bad))
+            print(f"  archived bad existing {bad.name}", flush=True)
+
+        prompt = f"{STYLE} {PHYSICS} {plate['prompt']}"
+        reuse = bool(
+            os.environ.get("ORBIT_FLOW_REUSE_PROJECT", "1")
+            not in {"0", "false", "False"}
+        )
+        print(
+            f"\n=== {i + 1}/{len(plates)} T2V {pid} "
+            f"explorer={bool(plate.get('explorer'))} reuse={reuse} ===",
+            flush=True,
+        )
+        ok = False
+        last_err: Exception | None = None
+        for attempt in range(1, 4):
+            try:
+                result = mint_one_plate(
+                    prompt=prompt,
+                    dest=dest,
+                    headed=headed,
+                    profile=profile,
+                    pinned=pinned,
+                    reuse=reuse,
+                )
+                tmp: Path = result["tmp"]
+                info: dict = result["info"]
+                veo.strip_audio(tmp)
+                dur = probe_dur(tmp)
+                size = tmp.stat().st_size
+                print(f"  attempt{attempt} dur={dur:.2f}s bytes={size}", flush=True)
+                if size < 800_000 or dur < 5.5 or dur > 12.0:
+                    bad = REJECT / f"{pid}_contam_attempt{attempt}.mp4"
                     if bad.exists():
                         bad.unlink()
-                    shutil.move(str(dest), str(bad))
-                    print(f"  archived bad existing {bad.name}", flush=True)
-
-                prompt = f"{STYLE} {PHYSICS} {plate['prompt']}"
-                scenery = True
-                reuse = bool(
-                    os.environ.get("ORBIT_FLOW_REUSE_PROJECT", "1")
-                    not in {"0", "false", "False"}
+                    shutil.move(str(tmp), str(bad))
+                    print("  REJECT duration/size", flush=True)
+                    continue
+                if dest.exists():
+                    dest.unlink()
+                shutil.move(str(tmp), str(dest))
+                meta.setdefault("plates", []).append(
+                    {
+                        "id": pid,
+                        "mode": "t2v",
+                        "duration": dur,
+                        "bytes": size,
+                        **{
+                            k: v
+                            for k, v in info.items()
+                            if k != "needs_gallery_harvest"
+                        },
+                    }
                 )
-                print(
-                    f"\n=== {i + 1}/{len(plates)} T2V {pid} "
-                    f"explorer={bool(plate.get('explorer'))} reuse={reuse} ===",
-                    flush=True,
-                )
-                ok = False
-                last_err: Exception | None = None
-                for attempt in range(1, 4):
-                    tmp = RAW / f"{pid}_v01_tmp.mp4"
-                    if tmp.exists():
-                        tmp.unlink()
-                    try:
-                        # Ensure we have a live page before each attempt.
-                        try:
-                            _ = page.url
-                        except Exception:
-                            print("  page dead before attempt — relaunching", flush=True)
-                            safe_close(ctx)
-                            ctx, page = open_flow(
-                                p, headed=headed, profile=profile, pinned=pinned
-                            )
+                META.write_text(json.dumps(meta, indent=2) + "\n")
+                print(f"  SAVED {dest.name}", flush=True)
+                ok = True
+                break
+            except Exception as e:  # noqa: BLE001
+                last_err = e
+                print(f"  error: {e}", flush=True)
+                traceback.print_exc()
+        if not ok:
+            META.write_text(json.dumps(meta, indent=2) + "\n")
+            raise SystemExit(f"STOP: failed {pid}: {last_err}")
 
-                        info = flow.generate_clip(
-                            page,
-                            prompt,
-                            tmp,
-                            model=MODEL,
-                            reuse_project=reuse,
-                            attempts=1,
-                            timeout_s=420,
-                            start_frame=None,
-                            scenery_only=scenery,
-                        )
-
-                        if info.get("needs_gallery_harvest"):
-                            project_url = info.get("project_url") or pinned
-                            print("  closing mint browser for harvest…", flush=True)
-                            safe_close(ctx)
-                            ctx = None
-                            page = None
-                            run_harvest(tmp, project_url)
-                            # Relaunch for next plate/attempt validation
-                            ctx, page = open_flow(
-                                p, headed=headed, profile=profile, pinned=pinned
-                            )
-                            info["media_id"] = (
-                                f"gallery-harvest:{tmp.stat().st_size if tmp.exists() else 0}"
-                            )
-                            info["bytes"] = tmp.stat().st_size if tmp.exists() else 0
-
-                        veo.strip_audio(tmp)
-                        dur = probe_dur(tmp)
-                        size = tmp.stat().st_size
-                        print(
-                            f"  attempt{attempt} dur={dur:.2f}s bytes={size}",
-                            flush=True,
-                        )
-                        if size < 800_000 or dur < 5.5 or dur > 12.0:
-                            bad = REJECT / f"{pid}_contam_attempt{attempt}.mp4"
-                            if bad.exists():
-                                bad.unlink()
-                            shutil.move(str(tmp), str(bad))
-                            print("  REJECT duration/size", flush=True)
-                            continue
-                        if dest.exists():
-                            dest.unlink()
-                        shutil.move(str(tmp), str(dest))
-                        meta.setdefault("plates", []).append(
-                            {
-                                "id": pid,
-                                "mode": "t2v",
-                                "duration": dur,
-                                "bytes": size,
-                                **{k: v for k, v in info.items() if k != "needs_gallery_harvest"},
-                            }
-                        )
-                        META.write_text(json.dumps(meta, indent=2) + "\n")
-                        print(f"  SAVED {dest.name}", flush=True)
-                        ok = True
-                        break
-                    except Exception as e:  # noqa: BLE001
-                        last_err = e
-                        print(f"  error: {e}", flush=True)
-                        safe_close(ctx)
-                        ctx, page = open_flow(
-                            p, headed=headed, profile=profile, pinned=pinned
-                        )
-                if not ok:
-                    META.write_text(json.dumps(meta, indent=2) + "\n")
-                    raise SystemExit(f"STOP: failed {pid}: {last_err}")
-        finally:
-            safe_close(ctx)
     print("OK Part 02 mint finished", flush=True)
 
 
