@@ -67,6 +67,10 @@ def main() -> None:
             pass
     profile = flow.profile_path(PROFILE)
     print(f"Flow Part 02 mint profile={profile} plates={len(plates)}", flush=True)
+    # Ultra AI-credit account + fresh /u/1/ project (old projects hit usage limit).
+    os.environ.setdefault("ORBIT_FLOW_ACCOUNT", "benoats@googlemail.com")
+    os.environ.setdefault("ORBIT_FLOW_FORCE_NEW_PROJECT", "1")
+    os.environ.setdefault("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
 
     from playwright.sync_api import sync_playwright
 
@@ -75,7 +79,13 @@ def main() -> None:
         print(f"headed={headed}", flush=True)
         ctx, page = flow.launch_context(p, headed=headed, profile=profile)
         try:
-            page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
+            # Must use Ultra account with AI-credit fallback (not benoats86 Flow-only).
+            flow.ensure_flow_account(page)
+            page.goto(
+                os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/"),
+                wait_until="domcontentloaded",
+                timeout=120_000,
+            )
             page.wait_for_timeout(2000)
             flow.dismiss_banners(page)
             if not flow.looks_logged_in(page):

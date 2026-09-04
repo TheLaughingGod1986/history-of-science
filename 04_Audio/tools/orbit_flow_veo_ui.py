@@ -38,6 +38,8 @@ import orbit_gemini_veo as veo  # noqa: E402 — shared prompt lock / strip_audi
 
 # Google moved Flow off labs.google; prefer the live host (labs still redirects).
 FLOW_HOME = "https://flow.google.com/"
+# Ultra AI-credit account (benoats@googlemail.com) is typically /u/1/ in this profile.
+FLOW_HOME_ULTRA = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
 FLOW_HOME_LEGACY = "https://labs.google/fx/tools/flow"
 DEFAULT_PROFILE = Path(
     os.environ.get(
@@ -84,6 +86,88 @@ def profile_path(override: Path | None = None) -> Path:
     p = override or DEFAULT_PROFILE
     p.mkdir(parents=True, exist_ok=True)
     return p
+
+
+# HOS Ultra mint account — has AI credits when Flow credits are 0.
+# Playwright often defaults to benoats86@gmail.com (Flow-only pool).
+DEFAULT_FLOW_ACCOUNT = os.environ.get(
+    "ORBIT_FLOW_ACCOUNT", "benoats@googlemail.com"
+)
+ACCOUNT_CHOOSER_URL = (
+    "https://accounts.google.com/AccountChooser?"
+    "continue=https%3A%2F%2Fflow.google.com%2F"
+)
+
+
+def ensure_flow_account(page, email: str | None = None) -> str:
+    """Force the Flow session onto the Ultra account with AI-credit fallback.
+
+    Returns the email string we attempted to select. Raises if the chooser
+    cannot surface the account (manual login required once).
+    """
+    target = (email or DEFAULT_FLOW_ACCOUNT).strip().lower()
+    print(f"  ensure Flow account → {target}", flush=True)
+    page.goto(ACCOUNT_CHOOSER_URL, wait_until="domcontentloaded", timeout=120_000)
+    page.wait_for_timeout(2500)
+    dismiss_banners(page)
+    body = ""
+    try:
+        body = page.locator("body").inner_text(timeout=8000)
+    except Exception:
+        pass
+    if target not in body.lower():
+        # Already on Flow with that session, or chooser skipped
+        if "flow.google.com" in (page.url or ""):
+            print(f"  chooser skipped — already on Flow url={page.url}", flush=True)
+            return target
+        raise RuntimeError(
+            f"Flow account chooser does not list {target}. "
+            "Sign in once with ORBIT_FLOW_PROFILE headed."
+        )
+    clicked = False
+    loc = page.locator(f'[data-email="{target}"], [data-identifier="{target}"]')
+    if loc.count():
+        loc.first.click(timeout=15_000)
+        clicked = True
+    else:
+        try:
+            page.get_by_text(target, exact=False).first.click(timeout=15_000)
+            clicked = True
+        except Exception:
+            hit = page.evaluate(
+                """(email) => {
+                  for (const n of document.querySelectorAll(
+                    'div,li,button,a,[role="link"],[role="option"]'
+                  )) {
+                    const t = ((n.innerText || '') + ' ' +
+                      (n.getAttribute('data-email') || '')).toLowerCase();
+                    if (t.includes(email)) { n.click(); return true; }
+                  }
+                  return false;
+                }""",
+                target,
+            )
+            clicked = bool(hit)
+    if not clicked:
+        raise RuntimeError(f"Could not click Flow account {target}")
+    try:
+        page.wait_for_url("**/flow.google.com/**", timeout=90_000)
+    except Exception:
+        page.wait_for_timeout(5000)
+    dismiss_banners(page)
+    print(f"  Flow account ready url={page.url}", flush=True)
+    # Best-effort credit readout from account panel
+    try:
+        page.locator('[aria-label*="Account" i]').first.click(timeout=4000)
+        page.wait_for_timeout(800)
+        panel = page.locator("body").inner_text(timeout=4000)
+        for line in panel.splitlines():
+            if re.search(r"credit|@gmail|@googlemail", line, re.I):
+                print(f"  acct: {line.strip()[:160]}", flush=True)
+        page.keyboard.press("Escape")
+    except Exception as e:
+        print(f"  account panel readout skipped: {e}", flush=True)
+    return target
 
 
 def launch_context(playwright, *, headed: bool, profile: Path, slow_mo: int = 0):
@@ -444,8 +528,16 @@ def ensure_agent_session(page) -> None:
 
 def _ensure_project_once(page) -> str:
     """Single attempt to land inside a Flow project editor."""
-    if "/project/" not in (page.url or ""):
-        page.goto(FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
+    force_new = os.environ.get("ORBIT_FLOW_FORCE_NEW_PROJECT", "1") not in {
+        "0",
+        "false",
+        "False",
+    }
+    home = FLOW_HOME_ULTRA if "u/1" in FLOW_HOME_ULTRA else FLOW_HOME
+    if "/project/" not in (page.url or "") or (
+        force_new and "/u/1/" not in (page.url or "")
+    ):
+        page.goto(home, wait_until="domcontentloaded", timeout=120_000)
         settle_after_nav(page, wait_ms=2000)
         dismiss_banners(page)
         if not looks_logged_in(page):
@@ -454,21 +546,33 @@ def _ensure_project_once(page) -> str:
                 "Run once with --login on the Ultra Google account:\n"
                 "  python3 04_Audio/tools/orbit_flow_veo_ui.py --login"
             )
-        # Prefer an existing Flow project (New project SPA is flaky on flow.google.com).
-        href = safe_evaluate(
-            page,
-            """() => {
-              const as = [...document.querySelectorAll('a[href*="/project/"]')];
-              const hit = as.find(a => /flow\\.google\\.com\\/project\\/|labs\\.google.*\\/project\\//i.test(a.href));
-              return hit ? hit.href : (as[0] ? as[0].href : null);
-            }""",
-        )
-        if href:
-            page.goto(href, wait_until="domcontentloaded", timeout=120_000)
-        elif click_visible(page, "new project"):
-            page.wait_for_url("**/project/**", timeout=60_000)
-        else:
-            raise RuntimeError("Could not find New project or existing Flow project")
+        opened = False
+        if force_new and click_visible(page, "new project"):
+            try:
+                page.wait_for_url("**/project/**", timeout=60_000)
+                opened = True
+            except Exception:
+                opened = "/project/" in (page.url or "")
+        if not opened:
+            # Prefer an existing project under /u/1/ only (AI-credit Ultra account).
+            href = safe_evaluate(
+                page,
+                """() => {
+                  const as = [...document.querySelectorAll('a[href*="/project/"]')];
+                  const u1 = as.find(a => /\\/u\\/1\\/.*project\\//i.test(a.href));
+                  if (u1) return u1.href;
+                  const hit = as.find(a =>
+                    /flow\\.google\\.com\\/.*project\\/|labs\\.google.*\\/project\\//i.test(a.href)
+                  );
+                  return hit ? hit.href : (as[0] ? as[0].href : null);
+                }""",
+            )
+            if href:
+                page.goto(href, wait_until="domcontentloaded", timeout=120_000)
+            elif click_visible(page, "new project"):
+                page.wait_for_url("**/project/**", timeout=60_000)
+            else:
+                raise RuntimeError("Could not find New project or existing Flow project")
         settle_after_nav(page, wait_ms=2000)
         if "flow.google.com" not in (page.url or "") and "labs.google" not in (page.url or ""):
             raise RuntimeError(f"Left Flow unexpectedly: {page.url}")
@@ -493,6 +597,7 @@ def _ensure_project_once(page) -> str:
         raise RuntimeError(
             "Flow agent prompt editor not visible — open a session in the UI"
         )
+    print(f"  project ready: {page.url}", flush=True)
     return page.url
 
 
@@ -885,7 +990,8 @@ def configure_veo_settings(
             pass
         page.wait_for_timeout(400)
 
-    # Legacy prompt-bar popover path — soft-fail if missing on Sep 2026 UI.
+    # Legacy prompt-bar popover path — soft-fail on Sep 2026 Agent UI
+    # (new /u/1/ projects expose "Video · 720p · 8s · xN" pill, not Image/Video tabs).
     try:
         _ensure_create_prompt_mode(page)
         _open_prompt_settings_pill(page)
@@ -898,10 +1004,47 @@ def configure_veo_settings(
         page.keyboard.press("Escape")
         page.wait_for_timeout(500)
         print("  settings closed via escape (prompt pill)", flush=True)
+        return
     except Exception as e:
-        raise RuntimeError(
-            f"Could not lock Veo settings via Agent Settings or prompt pill: {e}"
-        ) from e
+        print(
+            f"  WARN Veo settings lock soft-fail ({e}); continuing with UI defaults",
+            flush=True,
+        )
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        # Best-effort: open bottom "Video · … · x2" pill and force x1 / 16:9.
+        try:
+            hit = page.evaluate(
+                """() => {
+                  const btns = [...document.querySelectorAll('button,[role="button"]')];
+                  const pill = btns.find(b => /Video\\s*·|720p|1080p/i.test(b.innerText||''));
+                  if (pill) { pill.click(); return (pill.innerText||'').slice(0,80); }
+                  return null;
+                }"""
+            )
+            if hit:
+                print(f"  opened video pill: {hit!r}", flush=True)
+                page.wait_for_timeout(700)
+                page.evaluate(
+                    """() => {
+                      const clickExact = (label) => {
+                        for (const b of document.querySelectorAll('button,[role="button"]')) {
+                          const t = (b.innerText || '').trim();
+                          if (t === label) { b.click(); return true; }
+                        }
+                        return false;
+                      };
+                      clickExact('x1');
+                      clickExact('16:9');
+                      clickExact('Landscape');
+                    }"""
+                )
+                page.keyboard.press("Escape")
+                page.wait_for_timeout(400)
+        except Exception as e2:
+            print(f"  video pill tweak skipped: {e2}", flush=True)
 
 
 
@@ -1802,6 +1945,18 @@ def wait_and_download(
     # getMediaUrlRedirect name from a placeholder/upload into the finished mp4.
     early_gate_s = max(5.0, float(min_elapsed_s or 0) * 0.35)
     while time.time() - t0 < timeout_s:
+        # Stay on Flow — profile sometimes drifts to Facebook/Threads overlays.
+        url = page.url or ""
+        if "flow.google.com" not in url and "labs.google" not in url:
+            print(f"  left Flow ({url[:80]}) — recovering…", flush=True)
+            try:
+                page.goto(FLOW_HOME_ULTRA, wait_until="domcontentloaded", timeout=60_000)
+                dismiss_banners(page)
+                ensure_project(page)
+            except Exception as e:
+                print(f"  Flow recover failed: {e}", flush=True)
+            page.wait_for_timeout(1000)
+            continue
         dismiss_soft_prompts(page)
         try:
             ids = collect_media_ids(page)
@@ -1941,27 +2096,35 @@ def wait_and_download(
             print(line, flush=True)
             last_status = line
 
-        # Hard stop: Flow Ultra daily / plan credit exhaustion. Do not hang.
-        credit_blocked = any(
+        # Hard stop only when BOTH Flow and AI credit pools are exhausted.
+        # "Out of Google Flow credits" alone is OK — Ultra falls back to AI credits.
+        # Do NOT treat "usage limit" / "try again later" as fatal (often the
+        # wrong Google account, or a transient Fast-queue refuse).
+        both_pools_empty = any(
             s in low
             for s in (
-                "reached your credit limit",
-                "credit limit for now",
-                "out of credits",
-                "no credits remaining",
-                "not enough credits",
-                "upgrade your plan",
-                "check the subscription page",
-                "reached your usage limit",
-                "you've reached your usage limit",
-                "usage limit",
-                "try again later",
+                "no ai credits",
+                "out of ai credits",
+                "not enough ai credits",
+                "ai credits remaining: 0",
+                "0 ai credits",
+            )
+        ) or (
+            ("out of google flow credits" in low or "0 google flow credits" in low)
+            and ("0 ai credits" in low or "no ai credits" in low)
+        )
+        hard_empty = any(
+            s in low
+            for s in (
+                "not enough credits to generate",
+                "purchase more credits",
+                "buy more credits",
             )
         )
-        if credit_blocked and elapsed > 12 and not new_ids:
+        if (both_pools_empty or hard_empty) and elapsed > 12 and not new_ids:
             raise RuntimeError(
-                "Flow credit limit reached — stop mint; wait for Ultra refresh "
-                "or top up Google One AI credits"
+                "Flow + AI credits exhausted — stop mint; top up Google One AI "
+                "credits or wait for daily refresh"
             )
 
         # Flow often flashes "failed" while a usable mp4 is still arriving.

@@ -1,7 +1,16 @@
 # Part 02 Flow Ultra — credit / usage blocker
 
-**Date:** 2026-09-04  
-**Status:** BLOCKED on Google Flow Ultra credits (not a script bug)
+**Date:** 2026-09-04 (updated after AI-credit account switch)  
+**Status:** UNBLOCKED path — use `benoats@googlemail.com` (AI credits), not `benoats86@gmail.com`
+
+## Account split (root cause)
+
+| Account | Flow credits | AI credits | Notes |
+|---|---|---|---|
+| `benoats86@gmail.com` (Playwright default) | exhausted / daily Flow pool | not shown | mint failed here |
+| `benoats@googlemail.com` (phone / Ultra) | **0** | **~900+** | “Used when you're out of Google Flow credits” |
+
+Mint now calls `ensure_flow_account()` → AccountChooser → googlemail before Create.
 
 ## What happened
 
