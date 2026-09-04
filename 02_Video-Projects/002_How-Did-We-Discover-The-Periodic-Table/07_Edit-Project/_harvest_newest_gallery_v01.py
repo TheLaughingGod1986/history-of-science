@@ -42,17 +42,32 @@ def main() -> None:
             thumbs = flow.collect_gallery_asb_srcs(page)
             if not thumbs:
                 raise SystemExit("no gallery thumbs")
-            idx = args.index if args.index >= 0 else len(thumbs) - 1
-            idx = max(0, min(idx, len(thumbs) - 1))
-            src = thumbs[idx]
-            before = set(thumbs) - {src}
-            print(f"harvest idx={idx}/{len(thumbs)} -> {args.out}", flush=True)
-            got = flow.harvest_agent_gallery_mp4(
-                page, args.out, captured, before_asb=before
-            )
-            if not got or not args.out.exists() or args.out.stat().st_size < 800_000:
+            # Try newest thumbs first; some cards are stills / non-playable.
+            if args.index >= 0:
+                candidates = [max(0, min(args.index, len(thumbs) - 1))]
+            else:
+                candidates = list(range(len(thumbs) - 1, -1, -1))[:6]
+            got = None
+            for idx in candidates:
+                src = thumbs[idx]
+                before = set(thumbs) - {src}
+                print(f"harvest try idx={idx}/{len(thumbs)} -> {args.out}", flush=True)
+                if args.out.exists():
+                    args.out.unlink()
+                got = flow.harvest_agent_gallery_mp4(
+                    page, args.out, captured, before_asb=before
+                )
+                if got and args.out.exists() and args.out.stat().st_size >= 800_000:
+                    print(f"OK bytes={args.out.stat().st_size} via={got}", flush=True)
+                    break
+                print(f"  idx={idx} failed got={got}", flush=True)
+                try:
+                    page.keyboard.press("Escape")
+                    page.wait_for_timeout(500)
+                except Exception:
+                    pass
+            else:
                 raise SystemExit(f"harvest failed got={got}")
-            print(f"OK bytes={args.out.stat().st_size} via={got}", flush=True)
         finally:
             ctx.close()
 

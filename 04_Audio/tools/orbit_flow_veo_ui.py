@@ -2012,15 +2012,14 @@ def harvest_agent_gallery_mp4(
     *,
     before_asb: set[str] | None = None,
 ) -> str | None:
-    """Play newest Agent gallery card and save the googlevideo/mp4 body.
+    """Open an Agent gallery card and save its mp4 (Download, else googlevideo).
 
     New Flow Agent UI never emits getMediaUrlRedirect ids. Completed clips sit
-    in All media as /asb/ thumbs; playing them fires googlevideo videoplayback
-    which we capture from the network listener.
+    in All media as /asb/ thumbs. Opening a card shows a detail/editor chrome
+    with a Download control; playing may also fire googlevideo videoplayback.
     """
     before_asb = before_asb or set()
     try:
-        # Prefer All media tab so thumbs are visible.
         page.evaluate(
             """() => {
               for (const n of document.querySelectorAll('button,a,[role="button"],[role="tab"]')) {
@@ -2038,68 +2037,143 @@ def harvest_agent_gallery_mp4(
     if not new_thumbs:
         return None
     print(f"  gallery harvest thumbs={len(thumbs)} new={len(new_thumbs)}", flush=True)
-
-    # Prefer the newest card (last in DOM is usually latest).
     target_src = new_thumbs[-1]
-    before_n = len(captured_videos)
 
-    # Hover card → click play; capture googlevideo via expect_response (safe).
-    def _play_and_capture() -> bytes | None:
-        try:
-            box = page.evaluate(
-                """(src) => {
-                  const img = [...document.querySelectorAll('img')].find(i =>
-                    (i.currentSrc || i.src || '') === src
-                  );
-                  if (!img) return null;
-                  const r = img.getBoundingClientRect();
-                  return {x:r.x, y:r.y, w:r.width, h:r.height};
-                }""",
-                target_src,
+    def _scroll_target() -> dict | None:
+        page.evaluate(
+            """(src) => {
+              const img = [...document.querySelectorAll('img')].find(i =>
+                (i.currentSrc || i.src || '') === src
+              );
+              if (img) img.scrollIntoView({block:'center', inline:'nearest'});
+            }""",
+            target_src,
+        )
+        page.wait_for_timeout(450)
+        box = page.evaluate(
+            """(src) => {
+              const img = [...document.querySelectorAll('img')].find(i =>
+                (i.currentSrc || i.src || '') === src
+              );
+              if (!img) return null;
+              const r = img.getBoundingClientRect();
+              return {x:r.x, y:r.y, w:r.width, h:r.height};
+            }""",
+            target_src,
+        )
+        if not box or box.get("w", 0) <= 40:
+            return None
+        vp = page.viewport_size or {"width": 1440, "height": 900}
+        cx = box["x"] + box["w"] / 2
+        cy = box["y"] + box["h"] / 2
+        if not (0 <= cx <= vp["width"] and 0 <= cy <= vp["height"]):
+            print(f"  gallery thumb still offscreen cx={cx:.0f} cy={cy:.0f}", flush=True)
+            return None
+        return {"box": box, "cx": cx, "cy": cy}
+
+    def _save(raw: bytes, via: str) -> str | None:
+        if len(raw) < 150_000 or b"ftyp" not in raw[:64]:
+            return None
+        captured_videos.append(raw)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(raw)
+        print(f"  gallery harvest saved bytes={len(raw)} via={via}", flush=True)
+        return f"{via}:{len(raw)}"
+
+    def _click_download() -> bytes | None:
+        # Detail chrome: download icon / button near top-right.
+        candidates = [
+            page.get_by_role("button", name=re.compile(r"download", re.I)),
+            page.locator('button[aria-label*="Download" i], [aria-label*="Download" i]'),
+            page.locator('button:has-text("download"), button:has-text("Download")'),
+            page.locator('text=/^download$/i'),
+        ]
+        for loc in candidates:
+            try:
+                if loc.count() < 1:
+                    continue
+                target = loc.first
+                if not target.is_visible():
+                    continue
+                with page.expect_download(timeout=25_000) as di:
+                    target.click(timeout=5_000)
+                download = di.value
+                tmp = dest.with_suffix(".download.tmp")
+                download.save_as(str(tmp))
+                raw = tmp.read_bytes()
+                tmp.unlink(missing_ok=True)
+                if len(raw) > 150_000:
+                    return raw
+            except Exception as e:
+                print(f"  gallery Download miss: {e}", flush=True)
+        return None
+
+    def _capture_googlevideo(play_click) -> bytes | None:
+        def _is_vid(resp) -> bool:
+            u = (resp.url or "").lower()
+            ct = (resp.headers.get("content-type") or "").lower()
+            return resp.status == 200 and (
+                "googlevideo.com" in u
+                or "videoplayback" in u
+                or ("video" in ct and "mp4" in ct)
             )
-            if not box or box.get("w", 0) <= 40:
-                return None
-            cx = box["x"] + box["w"] / 2
-            cy = box["y"] + box["h"] / 2
-            page.mouse.move(cx, cy)
-            page.wait_for_timeout(350)
 
-            def _is_vid(resp) -> bool:
-                u = (resp.url or "").lower()
-                ct = (resp.headers.get("content-type") or "").lower()
-                return resp.status == 200 and (
-                    "googlevideo.com" in u
-                    or "videoplayback" in u
-                    or ("video" in ct and "mp4" in ct)
-                )
-
+        try:
             with page.expect_response(_is_vid, timeout=45_000) as ri:
-                page.mouse.click(box["x"] + 28, box["y"] + 28)
-                page.wait_for_timeout(400)
-                page.mouse.click(cx, cy)
-            resp = ri.value
-            body = resp.body()
+                play_click()
+            body = ri.value.body()
             if len(body) > 150_000 and b"ftyp" in body[:64]:
                 return body
         except Exception as e:
             print(f"  gallery expect_response play err: {e}", flush=True)
         return None
 
-    raw = _play_and_capture()
+    # 1) Open the card in detail/editor chrome.
+    geo = _scroll_target()
+    if not geo:
+        return None
+    try:
+        page.mouse.click(geo["cx"], geo["cy"])
+        page.wait_for_timeout(1200)
+    except Exception as e:
+        print(f"  gallery open click err: {e}", flush=True)
+
+    # 2) Prefer explicit Download (reliable on detail chrome).
+    raw = _click_download()
+    if raw:
+        got = _save(raw, "gallery-download")
+        if got:
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            return got
+
+    # 3) Fall back: play in viewer and capture googlevideo.
+    def _play():
+        # Timeline / viewer play control, else re-click center of preview.
+        try:
+            play = page.get_by_role("button", name=re.compile(r"play", re.I))
+            if play.count() > 0 and play.first.is_visible():
+                play.first.click(timeout=3_000)
+                return
+        except Exception:
+            pass
+        page.mouse.click(geo["cx"], geo["cy"])
+
+    raw = _capture_googlevideo(_play)
     if raw is None:
         print("  gallery harvest: retry play for network mp4", flush=True)
         page.wait_for_timeout(800)
-        raw = _play_and_capture()
+        raw = _capture_googlevideo(_play)
+    try:
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(400)
+    except Exception:
+        pass
     if raw is not None:
-        captured_videos.append(raw)
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_bytes(raw)
-        print(f"  gallery harvest saved bytes={len(raw)}", flush=True)
-        return f"gallery-network:{len(raw)}"
-
+        return _save(raw, "gallery-network")
     return None
-
-
 
 
 
