@@ -2305,41 +2305,30 @@ def wait_and_download(
             pct is not None
         ):
             seen_generating = True
-        # Agent UI harvest: after gen finishes, play gallery card → googlevideo mp4.
+        # Agent UI: after gen finishes, hand off to a fresh-browser gallery harvest.
+        # In-process play/expect_response here was crashing Chrome mid-mint.
         pct_n = int(pct.group(1)) if pct else None
         gen_done = seen_generating and (
             (pct_n is not None and pct_n >= 100)
             or (status == "" and elapsed >= max(35.0, float(min_elapsed_s or 0)))
             or elapsed >= 50.0
         )
-        if (
-            gen_done
-            and gallery_tries < 6
-            and (elapsed - last_gallery_try) >= 12.0
-            and elapsed >= max(25.0, float(min_elapsed_s or 0))
-        ):
-            gallery_tries += 1
-            last_gallery_try = elapsed
-            print(f"  gallery harvest attempt #{gallery_tries}", flush=True)
-            got = harvest_agent_gallery_mp4(
-                page, dest, captured_videos, before_asb=before_asb
+        if gen_done and elapsed >= max(25.0, float(min_elapsed_s or 0)):
+            thumbs_now = collect_gallery_asb_srcs(page)
+            new_thumbs = [s for s in thumbs_now if s not in before_asb]
+            print(
+                f"  gen done — gallery thumbs={len(thumbs_now)} new={len(new_thumbs)}; "
+                f"defer harvest to fresh browser",
+                flush=True,
             )
-            if got:
-                try:
-                    page.remove_listener("response", _on_response)
-                except Exception:
-                    pass
-                return got
-            if captured_videos:
-                raw = captured_videos[-1]
-                dest.parent.mkdir(parents=True, exist_ok=True)
-                dest.write_bytes(raw)
-                print(f"  saved network video bytes={len(raw)}", flush=True)
-                try:
-                    page.remove_listener("response", _on_response)
-                except Exception:
-                    pass
-                return f"network-video:{len(raw)}"
+            if new_thumbs or thumbs_now:
+                return f"gallery-pending:{len(new_thumbs) or len(thumbs_now)}"
+            # No thumbs yet — keep waiting a bit
+            if gallery_tries < 8 and (elapsed - last_gallery_try) >= 8.0:
+                gallery_tries += 1
+                last_gallery_try = elapsed
+                print(f"  waiting for gallery thumbs (#{gallery_tries})", flush=True)
+
         # Mount completed cards so <video> elements appear.
         if seen_generating and elapsed >= 30 and int(elapsed) % 20 < 5:
             try:
@@ -2775,6 +2764,43 @@ def _generate_clip_once(
     media_id = wait_and_download(
         page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
     )
+    if isinstance(media_id, str) and media_id.startswith("gallery-pending:"):
+        print(f"  {media_id} — harvesting via fresh browser subprocess", flush=True)
+        import subprocess as _sp
+        harvester = (
+            Path(__file__).resolve().parents[2]
+            / "02_Video-Projects"
+            / "002_How-Did-We-Discover-The-Periodic-Table"
+            / "07_Edit-Project"
+            / "_harvest_newest_gallery_v01.py"
+        )
+        # Prefer sibling path relative to this tool when HOS layout differs
+        if not harvester.exists():
+            harvester = Path(__file__).resolve().parent.parent.parent / (
+                "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/"
+                "07_Edit-Project/_harvest_newest_gallery_v01.py"
+            )
+        proj_url = getattr(page, "_orbit_flow_project_url", None) or (page.url or "")
+        # Close mint browser before harvest to avoid profile lock / crash coupling
+        try:
+            page.context.close()
+        except Exception:
+            pass
+        env = dict(os.environ)
+        if proj_url:
+            env["HOS_FLOW_PROJECT_URL"] = proj_url.split("?")[0].rstrip("/")
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        cmd = [sys.executable, "-u", str(harvester), "--out", str(dest)]
+        if env.get("HOS_FLOW_PROJECT_URL"):
+            cmd += ["--project", env["HOS_FLOW_PROJECT_URL"]]
+        print(f"  spawn harvest: {' '.join(cmd)}", flush=True)
+        _sp.check_call(cmd, env=env)
+        media_id = f"gallery-subprocess:{dest.stat().st_size if dest.exists() else 0}"
+        context_closed = True
+    else:
+        context_closed = False
+        proj_url = getattr(page, "_orbit_flow_project_url", None) or (page.url or "")
+
     size = dest.stat().st_size if dest.exists() else 0
     if size < 120_000:
         raise RuntimeError(f"download too small: {dest} ({size})")
@@ -2805,7 +2831,8 @@ def _generate_clip_once(
         "identity_lock": (not scenery_only) and start_frame is None,
         "scenery_only": scenery_only,
         "media_id": media_id,
-        "url": page.url,
+        "url": proj_url,
+        "context_closed": context_closed,
     }
 
 

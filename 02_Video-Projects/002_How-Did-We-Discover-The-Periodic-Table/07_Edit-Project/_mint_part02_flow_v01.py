@@ -3,17 +3,22 @@
 
 Applies PART01_LESSONS physics lock. Explorer once on 05 (T2V identity lock).
 Duration guard rejects contamination outside ~6–12s.
+
+After each Agent-UI gen, harvest runs in a fresh browser (profile lock). This
+mint relaunches Chromium before the next plate so we do not touch a dead page.
 """
 from __future__ import annotations
+
 import faulthandler
+
 faulthandler.enable()
 
 import json
-import traceback
 import os
 import shutil
 import subprocess
 import sys
+import traceback
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
@@ -28,7 +33,13 @@ REJECT = PROJ / "04_Generated-Clips/part02/_rejected_mint_v01"
 META = PROJ / "07_Edit-Project/part02_mint_v01_meta.json"
 MODEL = "Veo 3.1 - Fast"
 PROFILE = Path(
-    os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile"))
+    os.environ.get(
+        "ORBIT_FLOW_PROFILE",
+        str(Path.home() / ".playwright-hos-flow-profile"),
+    )
+)
+PINNED_DEFAULT = (
+    "https://flow.google.com/u/1/project/30a34afb-8d9c-4eac-83ba-012d97f6b1b5"
 )
 STYLE = (
     "History of Science locked look: premium Animistry-class 3D cartoon like Germs "
@@ -48,12 +59,50 @@ def probe_dur(path: Path) -> float:
     return float(
         subprocess.check_output(
             [
-                "ffprobe", "-v", "error", "-show_entries", "format=duration",
-                "-of", "default=nw=1:nk=1", str(path),
+                "ffprobe",
+                "-v",
+                "error",
+                "-show_entries",
+                "format=duration",
+                "-of",
+                "default=nw=1:nk=1",
+                str(path),
             ],
             text=True,
         ).strip()
     )
+
+
+def open_flow(p, *, headed: bool, profile: Path, pinned: str):
+    ctx, page = flow.launch_context(p, headed=headed, profile=profile)
+    flow.ensure_flow_account(page)
+    page.goto(pinned, wait_until="domcontentloaded", timeout=120_000)
+    page.wait_for_timeout(2000)
+    flow.dismiss_banners(page)
+    print(f"  mint project={page.url}", flush=True)
+    if not flow.looks_logged_in(page):
+        print(f"WARN looks_logged_in=False url={page.url}", flush=True)
+        try:
+            body = page.locator("body").inner_text(timeout=5000)[:1500].lower()
+        except Exception:
+            body = ""
+        if "new project" not in body and "flow.google.com" not in (page.url or "").lower():
+            try:
+                ctx.close()
+            except Exception:
+                pass
+            raise SystemExit("STOP: Flow not logged in.")
+        print("  continuing — Flow UI reachable", flush=True)
+    return ctx, page
+
+
+def safe_close(ctx) -> None:
+    if ctx is None:
+        return
+    try:
+        ctx.close()
+    except Exception:
+        pass
 
 
 def main() -> None:
@@ -61,53 +110,44 @@ def main() -> None:
     plates = data["plates"]
     RAW.mkdir(parents=True, exist_ok=True)
     REJECT.mkdir(parents=True, exist_ok=True)
-    meta: dict = {"engine": "flow-ui", "model": MODEL, "mode": "part02-mint-v01", "plates": []}
+    meta: dict = {
+        "engine": "flow-ui",
+        "model": MODEL,
+        "mode": "part02-mint-v01",
+        "plates": [],
+    }
     if META.exists():
         try:
             meta = json.loads(META.read_text())
         except Exception:
             pass
+
     profile = flow.profile_path(PROFILE)
     print(f"Flow Part 02 mint profile={profile} plates={len(plates)}", flush=True)
+
     # Ultra AI-credit account. Reuse one /u/1/ project across plates (saves credits;
     # new projects were burning gens that we then failed to harvest).
     os.environ.setdefault("ORBIT_FLOW_ACCOUNT", "benoats@googlemail.com")
     os.environ.setdefault("ORBIT_FLOW_FORCE_NEW_PROJECT", "0")
     os.environ.setdefault("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
-    # Prefer the project that already has tonight's gallery (optional override).
     if os.environ.get("HOS_FLOW_PROJECT_URL"):
         os.environ["ORBIT_FLOW_PROJECT_URL"] = os.environ["HOS_FLOW_PROJECT_URL"]
+
+    pinned = (
+        os.environ.get("HOS_FLOW_PROJECT_URL")
+        or os.environ.get("ORBIT_FLOW_PROJECT_URL")
+        or PINNED_DEFAULT
+    )
+    os.environ["ORBIT_FLOW_PROJECT_URL"] = pinned
+    os.environ["HOS_FLOW_PROJECT_URL"] = pinned
 
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as p:
         headed = os.environ.get("ORBIT_FLOW_HEADED", "1") not in {"0", "false", "False"}
         print(f"headed={headed}", flush=True)
-        ctx, page = flow.launch_context(p, headed=headed, profile=profile)
+        ctx, page = open_flow(p, headed=headed, profile=profile, pinned=pinned)
         try:
-            # Must use Ultra account with AI-credit fallback (not benoats86 Flow-only).
-            flow.ensure_flow_account(page)
-            # Land on a known /u/1/ project so reuse_project=True works from plate 1.
-            pinned = (
-                os.environ.get("HOS_FLOW_PROJECT_URL")
-                or os.environ.get("ORBIT_FLOW_PROJECT_URL")
-                or "https://flow.google.com/u/1/project/30a34afb-8d9c-4eac-83ba-012d97f6b1b5"
-            )
-            os.environ["ORBIT_FLOW_PROJECT_URL"] = pinned
-            page.goto(pinned, wait_until="domcontentloaded", timeout=120_000)
-            page.wait_for_timeout(2000)
-            flow.dismiss_banners(page)
-            print(f"  mint project={page.url}", flush=True)
-            if not flow.looks_logged_in(page):
-                print(f"WARN looks_logged_in=False url={page.url}", flush=True)
-                try:
-                    body = page.locator("body").inner_text(timeout=5000)[:1500].lower()
-                except Exception:
-                    body = ""
-                if "new project" not in body and "flow.google.com" not in (page.url or "").lower():
-                    raise SystemExit("STOP: Flow not logged in.")
-                print("  continuing — Flow UI reachable", flush=True)
-
             for i, plate in enumerate(plates):
                 pid = plate["id"]
                 dest = RAW / f"{pid}_v01.mp4"
@@ -126,12 +166,16 @@ def main() -> None:
                     print(f"  archived bad existing {bad.name}", flush=True)
 
                 prompt = f"{STYLE} {PHYSICS} {plate['prompt']}"
-                # Always scenery_only=True — False attaches the Orbit robot ref (wrong channel).
+                # Always scenery_only=True — False attaches the Orbit robot ref.
                 # Explorer identity is locked in the prompt text (Germs Part 01 younger boy).
                 scenery = True
-                reuse = bool(os.environ.get("ORBIT_FLOW_REUSE_PROJECT", "1") not in {"0", "false", "False"})
+                reuse = bool(
+                    os.environ.get("ORBIT_FLOW_REUSE_PROJECT", "1")
+                    not in {"0", "false", "False"}
+                )
                 print(
-                    f"\n=== {i+1}/{len(plates)} T2V {pid} explorer={bool(plate.get('explorer'))} reuse={reuse} ===",
+                    f"\n=== {i + 1}/{len(plates)} T2V {pid} "
+                    f"explorer={bool(plate.get('explorer'))} reuse={reuse} ===",
                     flush=True,
                 )
                 ok = False
@@ -152,10 +196,22 @@ def main() -> None:
                             start_frame=None,
                             scenery_only=scenery,
                         )
+                        # Harvest closes the mint browser — reopen before next work.
+                        if info.get("context_closed"):
+                            print("  mint browser closed for harvest — relaunching", flush=True)
+                            ctx = None
+                            page = None
+                            ctx, page = open_flow(
+                                p, headed=headed, profile=profile, pinned=pinned
+                            )
+
                         veo.strip_audio(tmp)
                         dur = probe_dur(tmp)
                         size = tmp.stat().st_size
-                        print(f"  attempt{attempt} dur={dur:.2f}s bytes={size}", flush=True)
+                        print(
+                            f"  attempt{attempt} dur={dur:.2f}s bytes={size}",
+                            flush=True,
+                        )
                         if size < 800_000 or dur < 5.5 or dur > 12.0:
                             bad = REJECT / f"{pid}_contam_attempt{attempt}.mp4"
                             if bad.exists():
@@ -167,7 +223,13 @@ def main() -> None:
                             dest.unlink()
                         shutil.move(str(tmp), str(dest))
                         meta.setdefault("plates", []).append(
-                            {"id": pid, "mode": "t2v", "duration": dur, "bytes": size, **info}
+                            {
+                                "id": pid,
+                                "mode": "t2v",
+                                "duration": dur,
+                                "bytes": size,
+                                **info,
+                            }
                         )
                         META.write_text(json.dumps(meta, indent=2) + "\n")
                         print(f"  SAVED {dest.name}", flush=True)
@@ -176,11 +238,23 @@ def main() -> None:
                     except Exception as e:  # noqa: BLE001
                         last_err = e
                         print(f"  error: {e}", flush=True)
+                        # If harvest closed the browser mid-failure, relaunch for retry.
+                        dead = False
+                        try:
+                            _ = page.url  # type: ignore[union-attr]
+                        except Exception:
+                            dead = True
+                        if dead or "has been closed" in str(e).lower():
+                            print("  page dead — relaunching before retry", flush=True)
+                            safe_close(ctx)
+                            ctx, page = open_flow(
+                                p, headed=headed, profile=profile, pinned=pinned
+                            )
                 if not ok:
                     META.write_text(json.dumps(meta, indent=2) + "\n")
                     raise SystemExit(f"STOP: failed {pid}: {last_err}")
         finally:
-            ctx.close()
+            safe_close(ctx)
     print("OK Part 02 mint finished", flush=True)
 
 
