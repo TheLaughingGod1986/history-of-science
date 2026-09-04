@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Post + pin the Germs full-film funnel comment on a public Short.
 
-Usage (Playwright Chromium already logged into History of Science):
-  python3 _pin_short_funnel_comment_v01.py --id YX2UR1u-JCQ
+Usage (Chrome already logged into History of Science):
+  python3 _pin_short_funnel_comment_v01.py --id YX2UR1u-JCQ --headed
 
 Do not run against Orbit / Oppti. Zero /go/.
 """
@@ -13,9 +13,8 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-ROOT = Path(__file__).resolve().parents[1]
-PIN = (ROOT / "Pinned-Comments/germs_shorts_pinned-comment_v01.txt").read_text().strip()
-CHANNEL = "UCXp7HkBIl1LgaznXuZHJyRg"
+PKG = Path(__file__).resolve().parents[1]
+PIN = (PKG / "Pinned-Comments" / "germs_shorts_pinned-comment_v01.txt").read_text().strip()
 
 
 def main() -> None:
