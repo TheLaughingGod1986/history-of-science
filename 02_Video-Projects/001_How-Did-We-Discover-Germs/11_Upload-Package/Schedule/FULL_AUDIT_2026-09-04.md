@@ -77,3 +77,15 @@ Pinned by `@HistoryOfScienceYT` on `8uBR-9oxeWs`.
 - `STUDIO_AUDIT_REFRESH_2026-09-04.json`
 - `evidence_2026-09-04/` (Studio list · s01 edit · pinned comment)
 - Prior: `STUDIO_LIVE_VERIFY_SHORTS_2026-09-03_evening.json` · `STUDIO_POST_PREMIERE_FINISH_2026-09-03_evening.json`
+
+## Follow-up polish (4 Sep evening)
+
+| Item | Status |
+|---|---|
+| Pin ritual doc for s02–s05 | DONE — `PIN_RITUAL_S02_S05.md` |
+| Helper script | DONE — `_pin_short_funnel_comment_v01.py` |
+| Long pinned engagement comment | DONE |
+| Long cleaned EN captions uploaded + published | DONE — `Captions/long_en_cleaned_v01.srt` |
+| s01 cleaned captions | SKIP — auto track incomplete; see `Captions/S01_CAPTIONS_NOTE.md` |
+| Pin s02–s05 | WAIT until each publishes (Sat–Tue 11:30 London) |
+

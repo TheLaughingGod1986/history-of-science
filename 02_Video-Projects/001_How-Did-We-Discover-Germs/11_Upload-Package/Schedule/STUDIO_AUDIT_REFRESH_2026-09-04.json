@@ -60,5 +60,17 @@
       "descHasLongId": true
     }
   },
-  "verdict": "PASS \u2014 public SEO + Related + pin complete; schedule intact"
+  "verdict": "PASS \u2014 public SEO + Related + pin complete; schedule intact",
+  "eveningPolish": {
+    "longPinnedComment": true,
+    "longCleanCaptionsPublished": true,
+    "pinRitualDoc": "PIN_RITUAL_S02_S05.md",
+    "s01Captions": "skipped_incomplete_auto",
+    "pendingPins": [
+      "YX2UR1u-JCQ",
+      "Fnb3p81u-wY",
+      "vpuRgKXtFlY",
+      "Lcmh5y2KMQM"
+    ]
+  }
 }
