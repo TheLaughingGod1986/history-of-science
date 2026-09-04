@@ -740,13 +740,47 @@ def _ensure_create_prompt_mode(page) -> None:
         "Flow video model settings not found. Open Agent Settings (tune) and "
         "confirm Video generation default shows Omni/Veo."
     )
+def _prompt_settings_pill_text(page) -> str:
+    """Return the visible Create settings-pill label (Nano Banana / Video · …)."""
+    try:
+        return (
+            page.evaluate(
+                """() => {
+                  for (const b of document.querySelectorAll('button')) {
+                    const aria = (b.getAttribute('aria-label') || '');
+                    const t = (b.innerText || '').trim().replace(/\\s+/g, ' ');
+                    if (/Settings trigger/i.test(aria) && t)
+                      return t.slice(0, 120);
+                    if (/Nano Banana|Video\\s*·|Omni Flash|Veo 3|crop_16_9/.test(t))
+                      return t.slice(0, 120);
+                  }
+                  return '';
+                }"""
+            )
+            or ""
+        )
+    except Exception:
+        return ""
+
+
 def _open_prompt_settings_pill(page) -> None:
     """Click the prompt-bar settings pill (Nano Banana / Video · / Omni / Veo)."""
+    # Prefer aria-label — more stable than emoji/model copy on the pill.
+    try:
+        trig = page.get_by_role("button", name=re.compile(r"Settings trigger", re.I))
+        if trig.count():
+            trig.last.click(timeout=4000, force=True)
+            page.wait_for_timeout(1100)
+            return
+    except Exception:
+        pass
     box = page.evaluate(
         """() => {
           for (const b of document.querySelectorAll('button')) {
+            const aria = (b.getAttribute('aria-label') || '');
             const t = (b.innerText || '');
-            if (/Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(t)) {
+            if (/Settings trigger/i.test(aria) ||
+                /Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(t)) {
               const r = b.getBoundingClientRect();
               if (r.width > 40 && r.height > 16)
                 return { x: r.x + r.width / 2, y: r.y + r.height / 2, t: t.trim().slice(0, 80) };
@@ -758,34 +792,111 @@ def _open_prompt_settings_pill(page) -> None:
     if not box:
         raise RuntimeError("Flow prompt settings pill not found")
     page.mouse.click(box["x"], box["y"])
-    page.wait_for_timeout(900)
+    page.wait_for_timeout(1100)
+
+
+def _video_mode_radio_box(page) -> dict | None:
+    """Locate the Image/Video popover's Video radio (mouse-click coords)."""
+    return page.evaluate(
+        """() => {
+          const radios = [...document.querySelectorAll(
+            'button[role=radio], [role=radio], button[role=tab]'
+          )];
+          for (const b of radios) {
+            const t = ((b.innerText || '') + ' ' + (b.getAttribute('aria-label') || ''))
+              .trim().replace(/\\s+/g, ' ');
+            // Match "videocam Video" / "Video" — not gallery "Videos" sidebar.
+            if (!/\\bVideo\\b/i.test(t)) continue;
+            if (/\\bVideos\\b/i.test(t) && !/videocam/i.test(t)) continue;
+            if (/\\bImage\\b/i.test(t) && !/\\bVideo\\b/i.test(t)) continue;
+            const r = b.getBoundingClientRect();
+            if (r.width < 20 || r.height < 16) continue;
+            return {
+              t,
+              sel: b.getAttribute('aria-checked') || b.getAttribute('aria-selected') || '',
+              x: r.x + r.width / 2,
+              y: r.y + r.height / 2,
+            };
+          }
+          return null;
+        }"""
+    )
 
 
 def _select_video_tab(page) -> None:
-    """Select the Video tab inside the prompt settings popover (not Image/Nano Banana)."""
-    tabs = page.evaluate(
-        """() => [...document.querySelectorAll('button[role=tab]')].map(b => {
-          const r = b.getBoundingClientRect();
-          return {
-            t: (b.innerText || '').trim(),
-            sel: b.getAttribute('aria-selected'),
-            x: r.x + r.width / 2,
-            y: r.y + r.height / 2,
-          };
-        }).filter(b => /Image|Video/i.test(b.t))"""
-    )
-    video = next((t for t in (tabs or []) if "Video" in t["t"]), None)
-    if not video:
+    """Select the Video mode in the prompt settings popover (not Image/Nano Banana).
+
+    2026-09 Flow Ultra: popover uses ``role=radio`` buttons labelled
+    ``image Image`` / ``videocam Video`` (not classic tabs).
+    """
+    # Retry: pill sometimes needs a second open after attach / Escape.
+    last_dump = ""
+    for attempt in range(1, 4):
+        video = _video_mode_radio_box(page)
+        if video:
+            if video.get("sel") != "true":
+                page.mouse.click(video["x"], video["y"])
+                page.wait_for_timeout(1000)
+            # Confirm Video is selected (or Omni/Veo chrome appeared).
+            after = _video_mode_radio_box(page)
+            if after and after.get("sel") == "true":
+                return
+            pill = _prompt_settings_pill_text(page)
+            if re.search(r"Video\s*·|Veo 3|Omni Flash", pill, re.I) and not re.search(
+                r"Nano Banana", pill, re.I
+            ):
+                return
+            if page.locator("button").filter(has_text="Omni Flash").count() or page.locator(
+                "button"
+            ).filter(has_text="Veo 3").count():
+                return
+            # Clicked but not locked — try Playwright role click once, then retry.
+            try:
+                radio = page.get_by_role("radio", name=re.compile(r"Video", re.I))
+                if radio.count():
+                    radio.first.click(timeout=3000, force=True)
+                    page.wait_for_timeout(900)
+                    pill2 = _prompt_settings_pill_text(page)
+                    if re.search(r"Video\s*·|Veo 3|Omni Flash", pill2, re.I) and not re.search(
+                        r"Nano Banana", pill2, re.I
+                    ):
+                        return
+            except Exception:
+                pass
+            # stay in retry loop
+
         # Popover may already be on video-only chrome (Omni/Veo dropdown visible)
         if page.locator("button").filter(has_text="Omni Flash").count() or page.locator(
             "button"
         ).filter(has_text="Veo 3").count():
             return
-        raise RuntimeError("Flow Image/Video tabs not found in settings popover")
-    if video.get("sel") != "true":
-        # JS click often fails to flip aria-selected — use mouse.
-        page.mouse.click(video["x"], video["y"])
-        page.wait_for_timeout(900)
+        pill = _prompt_settings_pill_text(page)
+        if re.search(r"Video\s*·|Veo 3", pill, re.I) and not re.search(
+            r"Nano Banana", pill, re.I
+        ):
+            return
+
+        last_dump = page.evaluate(
+            """() => [...document.querySelectorAll('button[role=radio],button[role=tab],[role=radio]')]
+              .map(b => ((b.innerText||'')+'|'+(b.getAttribute('aria-label')||'')).trim().slice(0,60))
+              .filter(Boolean).slice(0,12).join(' || ')"""
+        ) or ""
+        print(
+            f"  Video radio not visible (attempt {attempt}/3); "
+            f"pill={pill!r} radios={last_dump!r} — reopening settings…",
+            flush=True,
+        )
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        page.wait_for_timeout(350)
+        _open_prompt_settings_pill(page)
+
+    raise RuntimeError(
+        "Flow Image/Video tabs not found in settings popover "
+        f"(last radios={last_dump!r})"
+    )
 
 
 def _select_veo_from_dropdown(page, model: str) -> str:
@@ -1025,16 +1136,43 @@ def configure_veo_settings(
             pass
         page.wait_for_timeout(400)
 
-    # Agent UI (Sep 2026): skip slow legacy Image/Video tab lock — it hangs on
-    # /u/1/ projects. Force x1 on the bottom Video pill and continue.
+    # Agent UI (Sep 2026): still must leave Image/Nano Banana and lock Veo.
+    # Previous shortcut only forced x1 and left Nano Banana selected — Create
+    # then minted stills instead of Veo video.
     if "/u/1/" in (page.url or "") or "flow.google.com" in (page.url or ""):
-        print("  Agent UI: skip legacy settings lock; force x1 only", flush=True)
-        force_outputs_x1(page)
+        print("  Agent UI: lock Video tab + Veo via prompt pill…", flush=True)
         try:
-            page.keyboard.press("Escape")
-        except Exception:
-            pass
-        return
+            _ensure_create_prompt_mode(page)
+            _open_prompt_settings_pill(page)
+            _select_video_tab(page)
+            selected = _select_veo_from_dropdown(page, model)
+            _set_video_aspect_and_outputs(
+                page, frames_mode=frames_mode, ingredients_mode=ingredients_mode
+            )
+            force_outputs_x1(page)
+            print(f"  Agent UI video model locked: {selected}", flush=True)
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            page.wait_for_timeout(400)
+            pill = _prompt_settings_pill_text(page)
+            print(f"  Agent UI prompt pill after lock: {pill!r}", flush=True)
+            if re.search(r"Nano Banana", pill, re.I) and not re.search(r"Veo 3", pill, re.I):
+                raise RuntimeError(
+                    f"Agent UI lock claimed success but pill still Image/Nano: {pill!r}"
+                )
+            return
+        except Exception as e:
+            # Hard-fail: soft-continue left Create on Nano Banana and minted stills.
+            print(f"  Agent UI Veo lock failed ({e})", flush=True)
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            raise RuntimeError(
+                f"Agent UI Veo lock failed — refusing Create while not on Veo: {e}"
+            ) from e
 
     # Legacy prompt-bar popover path — soft-fail on Sep 2026 Agent UI
     # (new /u/1/ projects expose "Video · 720p · 8s · xN" pill, not Image/Video tabs).
@@ -1118,22 +1256,43 @@ def upload_orbit_ref(page, ref: Path) -> bool:
 
 
 def _prompt_attachment_count(page) -> int:
-    """Count image chips near the agent prompt editor (not the whole page)."""
+    """Count image/ingredient chips on the agent prompt composer.
+
+    2026-09 Flow Ultra uses a ``flow-ingredient-bar`` / ``.chip-image`` strip
+    above the prompt (not only slate-adjacent ``img`` tags).
+    """
     return page.evaluate(
         """() => {
-          const ed = document.querySelector('[data-slate-editor="true"]');
+          // New Ultra ingredient bar
+          const bar = document.querySelector(
+            'flow-ingredient-bar, .prompt-ingredient-bar, .has-ingredient-bar, .ingredient-bar-container'
+          );
+          if (bar) {
+            const chips = bar.querySelectorAll(
+              'img.chip-image, .chip-image, .chip-container img, button.chip-container'
+            );
+            if (chips.length) return chips.length;
+          }
+          const chipImgs = [...document.querySelectorAll('img.chip-image, .chip-image-wrapper img')];
+          if (chipImgs.length) return chipImgs.length;
+
+          // Legacy: image chips near slate / contenteditable prompt
+          const ed =
+            document.querySelector('[data-slate-editor="true"]') ||
+            document.querySelector('[contenteditable="true"]') ||
+            document.querySelector('[role="textbox"]');
           if (!ed) return 0;
           const er = ed.getBoundingClientRect();
-          // Attachment chips sit just above the slate editor in the composer.
           return [...document.querySelectorAll('img')].filter(i => {
             const r = i.getBoundingClientRect();
             if (r.width < 24 || r.height < 24 || r.width > 200) return false;
-            // Exclude avatar / header chrome
             if (r.y < 60) return false;
-            const nearY = r.y >= er.y - 280 && r.bottom <= er.bottom + 100;
-            const nearX = r.x >= er.x - 60 && r.x <= er.right + 60;
+            const nearY = r.y >= er.y - 280 && r.bottom <= er.bottom + 120;
+            const nearX = r.x >= er.x - 80 && r.x <= er.right + 80;
             const src = i.currentSrc || i.src || '';
-            const isMedia = /media\\.getMediaUrlRedirect|blob:|data:image/i.test(src);
+            const cls = (i.className || '').toString();
+            const isMedia =
+              /media\\.getMediaUrlRedirect|blob:|data:image|flow-content|chip/i.test(src + ' ' + cls);
             return nearY && nearX && isMedia;
           }).length;
         }"""
@@ -1197,7 +1356,7 @@ def _wait_add_to_prompt_enabled(page, *, timeout_s: float = 90) -> bool:
         st = page.evaluate(
             """() => {
               const btns = [...document.querySelectorAll('button')].filter(b =>
-                /^Add to Prompt$/i.test((b.innerText || '').trim())
+                /^Add to [Pp]rompt$/i.test((b.innerText || '').trim())
               );
               if (!btns.length) return {found: false};
               const b = btns[btns.length - 1];
@@ -1214,57 +1373,128 @@ def _wait_add_to_prompt_enabled(page, *, timeout_s: float = 90) -> bool:
     return False
 
 
-def attach_image_to_prompt(page, ref: Path) -> bool:
-    """Attach an arbitrary still to the Flow agent prompt (HOS start-frame I2V).
+def _click_uploadish_control(page) -> bool:
+    """Click whatever the current Flow UI uses for local image upload.
 
-    Same upload path as Orbit identity attach, without Orbit filename asserts.
+    Prefer real buttons (not CDK tooltips). 2026-09 Flow Ultra shows
+    'Upload media' inside the Add-ingredients / Add-media menus.
     """
-    ref = Path(ref).resolve()
-    if not ref.exists():
-        raise FileNotFoundError(ref)
-    ensure_agent_session(page)
-    before = _prompt_attachment_count(page)
-    print(f"  attaching start frame: {ref.name}", flush=True)
+    # Role-based first — avoids tooltip divs that also contain the words.
+    import re
 
-    _open_create_picker(page)
-
-    uploads_tab = page.locator('button:has-text("Uploads")')
-    if uploads_tab.count():
+    for name in (
+        re.compile(r"^Upload media$", re.I),
+        re.compile(r"^Upload$", re.I),
+        re.compile(r"^Upload image$", re.I),
+        re.compile(r"^From device$", re.I),
+        re.compile(r"^From computer$", re.I),
+        re.compile(r"^Computer$", re.I),
+        re.compile(r"^Browse$", re.I),
+        re.compile(r"^Add media$", re.I),
+        re.compile(r"^Add image$", re.I),
+    ):
+        loc = page.get_by_role("button", name=name)
+        if loc.count() == 0:
+            loc = page.get_by_role("menuitem", name=name)
+        if loc.count() == 0:
+            continue
         try:
-            uploads_tab.first.click(timeout=3000)
+            loc.last.click(timeout=2500, force=True)
             page.wait_for_timeout(400)
+            print(f"  clicked uploadish role button name={name.pattern!r}", flush=True)
+            return True
         except Exception:
-            pass
+            continue
 
-    up = page.locator('button:has-text("Upload media")')
-    if up.count() == 0:
-        page.keyboard.press("Escape")
+    labels = (
+        "Upload media",
+        "Upload image",
+        "Upload",
+        "From device",
+        "From computer",
+        "Computer",
+        "Browse",
+        "Add media",
+        "Add image",
+        "Add photos",
+        "Photos",
+        "Images",
+        "Uploads",
+    )
+    for label in labels:
+        loc = page.locator(
+            f'button:has-text("{label}"):visible, [role="menuitem"]:has-text("{label}"):visible, '
+            f'[role="button"]:has-text("{label}"):visible'
+        )
+        if loc.count() == 0:
+            continue
+        try:
+            loc.last.click(timeout=2500, force=True)
+            page.wait_for_timeout(400)
+            print(f"  clicked uploadish visible control {label!r}", flush=True)
+            return True
+        except Exception:
+            continue
+    # Material icon buttons near the prompt / picker (skip tooltips)
+    hit = page.evaluate(
+        """() => {
+          const needles = ['upload', 'add_photo', 'add_a_photo', 'drive_folder', 'attach_file'];
+          for (const el of document.querySelectorAll('button, [role="button"], [role="menuitem"]')) {
+            if ((el.getAttribute('role') || '') === 'tooltip') continue;
+            const t = ((el.innerText || '') + ' ' + (el.getAttribute('aria-label') || '')).toLowerCase();
+            const icon = (el.textContent || '').trim().toLowerCase();
+            if (![...needles].some(n => t.includes(n) || icon === n || icon.includes(n))) continue;
+            const r = el.getBoundingClientRect();
+            if (r.width < 8 || r.height < 8) continue;
+            if (r.bottom < 0 || r.top > innerHeight) continue;
+            el.click();
+            return (el.innerText || el.getAttribute('aria-label') || icon || 'icon').slice(0, 60);
+          }
+          return null;
+        }"""
+    )
+    if hit:
+        print(f"  clicked uploadish control: {hit!r}", flush=True)
         page.wait_for_timeout(400)
-        _open_create_picker(page)
-        page.wait_for_timeout(600)
-        up = page.locator('button:has-text("Upload media")')
-    if up.count() == 0:
-        up = page.locator('button:has-text("Upload")')
-    if up.count() == 0:
-        raise RuntimeError("Upload media not found in Create picker")
+        return True
+    return False
 
+
+def _try_set_any_file_input(page, ref: Path) -> bool:
+    fi = page.locator('input[type="file"]')
+    n = fi.count()
+    if n == 0:
+        return False
+    # Prefer image-accepting inputs
+    for i in range(n - 1, -1, -1):
+        accept = (fi.nth(i).get_attribute("accept") or "").lower()
+        if accept and "image" not in accept and "video" not in accept and "*" not in accept:
+            continue
+        try:
+            fi.nth(i).set_input_files(str(ref))
+            print(f"  set_input_files via input[{i}] accept={accept!r}", flush=True)
+            return True
+        except Exception as e:
+            print(f"  set_input_files[{i}] failed: {e}", flush=True)
     try:
-        with page.expect_file_chooser(timeout=12_000) as fc:
-            up.last.click(force=True)
-        fc.value.set_files(str(ref))
-    except Exception:
-        fi = page.locator('input[type="file"]')
-        if fi.count() == 0:
-            raise RuntimeError("Could not upload start frame to Create picker")
         fi.last.set_input_files(str(ref))
+        print("  set_input_files via last input", flush=True)
+        return True
+    except Exception as e:
+        print(f"  set_input_files last failed: {e}", flush=True)
+        return False
 
+
+def _confirm_add_to_prompt(page, ref: Path) -> None:
     print("  uploaded — waiting for Add to Prompt…", flush=True)
     if not _wait_add_to_prompt_enabled(page, timeout_s=90):
+        # Some Flow builds auto-attach and never show Add to Prompt.
+        if _prompt_attachment_count(page) >= 1:
+            print("  Add to Prompt missing but chip already present — continuing", flush=True)
+            return
         raise RuntimeError(
             "Flow never enabled Add to Prompt after start-frame upload"
         )
-
-    # Prefer selecting the just-uploaded asset by filename stem when possible
     stem = ref.stem.lower()[:24]
     page.evaluate(
         """(stem) => {
@@ -1280,24 +1510,205 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         stem,
     )
     page.wait_for_timeout(400)
-    add = page.locator('button:has-text("Add to Prompt")')
+    add = page.get_by_role("button", name=re.compile(r"^Add to prompt$", re.I))
     if add.count() == 0:
+        add = page.locator('button:has-text("Add to Prompt"), button:has-text("Add to prompt")')
+    if add.count() == 0:
+        if _prompt_attachment_count(page) >= 1:
+            print("  no Add button; chip already present", flush=True)
+            return
         raise RuntimeError("Add to Prompt button missing")
+    print(f"  clicking Add to prompt (count={add.count()})", flush=True)
     add.last.click(force=True)
     page.wait_for_timeout(1500)
-
     for _ in range(2):
         body = ""
         try:
             body = page.locator("body").inner_text(timeout=2000)[:2500]
         except Exception:
             pass
-        if "Add to Prompt" in body or "Search assets" in body or "Upload media" in body:
+        if any(
+            k in body
+            for k in ("Add to Prompt", "Search assets", "Upload media", "Uploads")
+        ):
             page.keyboard.press("Escape")
             page.wait_for_timeout(500)
         else:
             break
 
+
+def attach_image_to_prompt(page, ref: Path) -> bool:
+    """Attach an arbitrary still to the Flow agent prompt (HOS start-frame I2V).
+
+    Flow UI churn (2026-09): no more "Upload media" label. Working controls:
+      - button aria-label "Add ingredients to the prompt box" (prompt +)
+      - button aria-label "Add media menu" (header +)
+    Then file-chooser / uploadish / raw file input.
+    """
+    ref = Path(ref).resolve()
+    if not ref.exists():
+        raise FileNotFoundError(ref)
+    ensure_agent_session(page)
+    before = _prompt_attachment_count(page)
+    print(f"  attaching start frame: {ref.name}", flush=True)
+
+    uploaded = False
+    last_err: Exception | None = None
+
+    def _click_aria(label: str) -> bool:
+        loc = page.locator(f'button[aria-label="{label}"]')
+        if loc.count() == 0:
+            loc = page.locator(f'[aria-label="{label}"]')
+        if loc.count() == 0:
+            return False
+        try:
+            loc.first.click(timeout=3000, force=True)
+            page.wait_for_timeout(500)
+            return True
+        except Exception:
+            return False
+
+    # Path A0 (2026-09): Add ingredients / Add media menu → Upload media
+    # Exact aria-labels from live Flow Ultra UI probe (2026-09-04).
+    for aria in (
+        "Add ingredients to the prompt box",
+        "Add media menu",
+    ):
+        if uploaded:
+            break
+        try:
+            with page.expect_file_chooser(timeout=6_000) as fc:
+                if not _click_aria(aria):
+                    raise RuntimeError(f"no button aria={aria!r}")
+                # Menu may open first — click an uploadish item inside it
+                page.wait_for_timeout(400)
+                _click_uploadish_control(page)
+            fc.value.set_files(str(ref))
+            uploaded = True
+            print(f"  uploaded via aria={aria!r}", flush=True)
+        except Exception as e:
+            last_err = e
+            print(f"  aria={aria!r} chooser path: {e}", flush=True)
+            # Menu opened without chooser — try uploadish + file input
+            if _click_uploadish_control(page):
+                try:
+                    with page.expect_file_chooser(timeout=5_000) as fc:
+                        _click_uploadish_control(page)
+                    fc.value.set_files(str(ref))
+                    uploaded = True
+                    print(f"  uploaded via menu uploadish after {aria!r}", flush=True)
+                except Exception as e2:
+                    last_err = e2
+                    if _try_set_any_file_input(page, ref):
+                        uploaded = True
+                        print(f"  uploaded via file input after {aria!r}", flush=True)
+
+    # Path A: Create / + picker (legacy + new labels)
+    if not uploaded:
+      try:
+        _open_create_picker(page)
+        for tab in ("Uploads", "Images", "Media", "Photos"):
+            loc = page.locator(f'button:has-text("{tab}")')
+            if loc.count():
+                try:
+                    loc.first.click(timeout=2000)
+                    page.wait_for_timeout(350)
+                except Exception:
+                    pass
+        try:
+            with page.expect_file_chooser(timeout=10_000) as fc:
+                if not _click_uploadish_control(page):
+                    raise RuntimeError("no uploadish control in Create picker")
+            fc.value.set_files(str(ref))
+            uploaded = True
+        except Exception as e:
+            print(f"  Create file-chooser path: {e}", flush=True)
+            uploaded = _try_set_any_file_input(page, ref)
+      except Exception as e:
+        last_err = e
+        print(f"  Create-picker upload path failed: {e}", flush=True)
+
+    # Path B: sidebar All media +
+    if not uploaded:
+        try:
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(300)
+            clicked = page.evaluate(
+                """() => {
+                  for (const b of document.querySelectorAll('button,[role="button"]')) {
+                    const t = (b.innerText || b.getAttribute('aria-label') || '').trim();
+                    const r = b.getBoundingClientRect();
+                    if (r.x > 340 || r.y > 160) continue;
+                    if (/^\\+$/.test(t) || /^add(_2)?$/i.test(t) || /upload/i.test(t) || /add media/i.test(t)) {
+                      b.click(); return t || 'sidebar+';
+                    }
+                  }
+                  return null;
+                }"""
+            )
+            print(f"  sidebar media control={clicked!r}", flush=True)
+            page.wait_for_timeout(700)
+            if _click_uploadish_control(page):
+                try:
+                    with page.expect_file_chooser(timeout=8_000) as fc:
+                        _click_uploadish_control(page)
+                    fc.value.set_files(str(ref))
+                    uploaded = True
+                except Exception:
+                    uploaded = _try_set_any_file_input(page, ref)
+            if not uploaded:
+                uploaded = _try_set_any_file_input(page, ref)
+        except Exception as e:
+            last_err = e
+            print(f"  sidebar upload path failed: {e}", flush=True)
+
+    # Path C: invent a hidden file input via page evaluation (last resort)
+    if not uploaded:
+        try:
+            page.evaluate(
+                """() => {
+                  let inp = document.querySelector('input#hos-flow-file-hack');
+                  if (!inp) {
+                    inp = document.createElement('input');
+                    inp.type = 'file';
+                    inp.accept = 'image/*';
+                    inp.id = 'hos-flow-file-hack';
+                    inp.style.position = 'fixed';
+                    inp.style.left = '0';
+                    inp.style.top = '0';
+                    inp.style.opacity = '0.01';
+                    inp.style.zIndex = '2147483647';
+                    document.body.appendChild(inp);
+                  }
+                }"""
+            )
+            page.locator("#hos-flow-file-hack").set_input_files(str(ref))
+            # Dispatch change so any listeners notice
+            page.evaluate(
+                """() => {
+                  const inp = document.querySelector('input#hos-flow-file-hack');
+                  if (inp) inp.dispatchEvent(new Event('change', { bubbles: true }));
+                }"""
+            )
+            # This alone rarely attaches to the prompt — still try native inputs after.
+            uploaded = _try_set_any_file_input(page, ref)
+        except Exception as e:
+            last_err = e
+            print(f"  file-hack path failed: {e}", flush=True)
+
+    if not uploaded:
+        dbg = Path("/tmp/hos_flow_attach_fail.png")
+        try:
+            page.screenshot(path=str(dbg), full_page=False)
+            print(f"  attach fail screenshot → {dbg}", flush=True)
+        except Exception:
+            pass
+        raise RuntimeError(
+            f"Could not upload start frame to Flow UI ({ref.name})"
+            + (f"; last_err={last_err}" if last_err else "")
+        )
+
+    _confirm_add_to_prompt(page, ref)
     ensure_agent_session(page)
     attached = _prompt_attachment_count(page) > before
     if not attached:
@@ -2843,6 +3254,37 @@ def _generate_clip_once(
             attached = attach_image_to_prompt(page, ref)
         if _prompt_attachment_count(page) < 1:
             raise RuntimeError("Start-frame prompt chip missing after attach — aborting")
+        # Attaching an image can flip the prompt pill to Nano Banana (Image).
+        # Re-lock Video + Veo before Create.
+        print("  re-locking Video/Veo after start-frame attach…", flush=True)
+        configure_veo_settings(
+            page,
+            model=model,
+            frames_mode=False,
+            ingredients_mode=True,
+        )
+        force_outputs_x1(page)
+        pill = ""
+        try:
+            pill = page.evaluate(
+                """() => {
+                  for (const b of document.querySelectorAll('button')) {
+                    const t = (b.innerText || '');
+                    if (/Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(t))
+                      return t.trim().replace(/\\s+/g, ' ').slice(0, 120);
+                  }
+                  return '';
+                }"""
+            ) or ""
+        except Exception:
+            pass
+        print(f"  prompt settings pill: {pill!r}", flush=True)
+        if re.search(r"Nano Banana|Omni Flash", pill, re.I) and not re.search(
+            r"Veo 3", pill, re.I
+        ):
+            raise RuntimeError(
+                f"Refusing Create — still on non-Veo mode after re-lock: {pill!r}"
+            )
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (start-frame I2V)", flush=True)

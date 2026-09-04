@@ -21,13 +21,13 @@ sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 
 PROJ = Path(__file__).resolve().parents[1]
+_PLATES_V04 = PROJ / "07_Edit-Project/parts/part-02_plates_v04.json"
 _PLATES_V03 = PROJ / "07_Edit-Project/parts/part-02_plates_v03.json"
 _PLATES_V02 = PROJ / "07_Edit-Project/parts/part-02_plates_v02.json"
 _PLATES_V01 = PROJ / "07_Edit-Project/parts/part-02_plates_v01.json"
-PLATES_JSON = (
-    _PLATES_V03
-    if _PLATES_V03.exists()
-    else (_PLATES_V02 if _PLATES_V02.exists() else _PLATES_V01)
+PLATES_JSON = next(
+    (p for p in (_PLATES_V04, _PLATES_V03, _PLATES_V02, _PLATES_V01) if p.exists()),
+    _PLATES_V01,
 )
 MODEL = "Veo 3.1 - Fast"
 PROFILE = Path(
@@ -43,18 +43,18 @@ PINNED_DEFAULT = (
 STYLE = (
     "History of Science locked look: premium Animistry-class 3D cartoon like Germs "
     "Part 01 PASS — warm wood, cream parchment science cards when asked. "
-    "Not photoreal. Not live-action. Not a modern lab. Silent picture. "
+    "Scholar WRITING STUDY / library desk — NOT a chemistry lab, NOT alchemy workshop, "
+    "NOT a modern lab. Not photoreal. Not live-action. Silent picture. "
     "No Orbit orange robot. Continuous motion the whole clip. "
 )
 PHYSICS = (
-    "OPAQUE ceramic jars / sealed metal canisters only when props appear. "
-    "ZERO clear glass flasks with liquid. ZERO bubbles floating in air. "
-    "ZERO floating glassware. Objects sit IN or ON contact surfaces. "
-    "FIRE RULE (hard): the ONLY allowed flame is a candle wick in a candlestick or wall sconce. "
-    "ZERO spirit lamps. ZERO Bunsen burners. ZERO tripod burners. ZERO open fire under any pot, jar, crucible, or canister. "
-    "Jars, pots, canisters, crucibles MUST NEVER be on fire and MUST NEVER sit above a flame. "
-    "ZERO flames, smoke plumes, or glowing vapor from jar or pot mouths. "
-    "ZERO pots on fire. ZERO jars on fire. "
+    "Premium finished Animistry-class 3D cartoon — NOT flat 2D placeholders, NOT unfinished shapes. "
+    "ZERO jars, pots, canisters, tins, crucibles, flasks, bottles, vials, retorts, "
+    "spirit lamps, Bunsen burners, tripod burners, shelves of glassware. "
+    "Candles in candlesticks MAY have a small natural candle-wick flame. "
+    "ZERO flames from any vessel mouth. ZERO fire under or on any object. "
+    "Papers, blank cards, books, quills, rulers, toy piano OK. "
+    "Objects sit on contact surfaces. Silent picture. "
 )
 CARD_LOCK = (
     "If this is a full-frame SCIENCE CARD: exact title and body text must be sharp readable "
@@ -72,7 +72,13 @@ def main() -> None:
         "--plates-json",
         type=Path,
         default=PLATES_JSON,
-        help="Plates JSON (default: v02 if present else v01)",
+        help="Plates JSON (default: newest v0N)",
+    )
+    ap.add_argument(
+        "--start-frame",
+        type=Path,
+        default=None,
+        help="Optional locked start still for I2V (keeps composition; no jars)",
     )
     args = ap.parse_args()
 
@@ -81,6 +87,13 @@ def main() -> None:
     if plate.get("remint") is False:
         raise SystemExit(f"plate {args.plate_id} marked remint=false — skip")
     prompt = f"{STYLE} {PHYSICS} {CARD_LOCK} {plate['prompt']}"
+    if args.start_frame:
+        prompt += (
+            " IMAGE-TO-VIDEO from the attached start frame. Keep the same finished premium "
+            "3D cartoon look and composition. Animate gentle continuous motion only. "
+            "Do NOT add jars, pots, canisters, flasks, burners, or fire under vessels. "
+            "Candle wick flame may stay if present. "
+        )
     pinned = (
         os.environ.get("HOS_FLOW_PROJECT_URL")
         or os.environ.get("ORBIT_FLOW_PROJECT_URL")
@@ -100,8 +113,16 @@ def main() -> None:
     if tmp.exists():
         tmp.unlink()
 
+    # v04: do NOT auto-attach local Pillow desks — they look unfinished and flip
+    # Flow Create into Nano Banana (Image). Only use an explicit --start-frame
+    # that is a finished Flow still. Default = scenery-only Veo T2V.
+    start = args.start_frame
+    if start is not None and not start.exists():
+        raise SystemExit(f"start-frame missing: {start}")
+    scenery_only = start is None
     print(
-        f"CREATE {args.plate_id} plates={args.plates_json.name} profile={profile}",
+        f"CREATE {args.plate_id} plates={args.plates_json.name} profile={profile} "
+        f"start_frame={start.name if start else None} scenery_only={scenery_only}",
         flush=True,
     )
     with sync_playwright() as p:
@@ -119,8 +140,8 @@ def main() -> None:
             reuse_project=True,
             attempts=1,
             timeout_s=420,
-            start_frame=None,
-            scenery_only=True,
+            start_frame=start,
+            scenery_only=scenery_only,
         )
         if not info.get("needs_gallery_harvest"):
             if tmp.exists() and tmp.stat().st_size > 800_000:
