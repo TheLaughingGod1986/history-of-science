@@ -2379,6 +2379,21 @@ def wait_and_download(
             pct is not None
         ):
             seen_generating = True
+        # Agent UI: long in-process waits crash Chrome mid-gen. Once Create is
+        # clearly running, hand off to a fresh-browser harvest after a short settle.
+        if seen_generating and elapsed >= max(12.0, float(min_elapsed_s or 0) * 0.4):
+            thumbs_now = []
+            try:
+                thumbs_now = collect_gallery_asb_srcs(page)
+            except Exception as e:
+                print(f"  early handoff thumb probe failed: {e}", flush=True)
+            label = status or (pct.group(0) if pct else "?")
+            print(
+                f"  gen running ({label} @ {elapsed:.0f}s) — "
+                f"defer to fresh-browser harvest (thumbs={len(thumbs_now)})",
+                flush=True,
+            )
+            return f"gallery-pending:{len(thumbs_now)}"
         # Agent UI: after gen finishes, hand off to a fresh-browser gallery harvest.
         # In-process play/expect_response here was crashing Chrome mid-mint.
         pct_n = int(pct.group(1)) if pct else None
@@ -2867,6 +2882,10 @@ def _generate_clip_once(
         cmd = [sys.executable, "-u", str(harvester), "--out", str(dest)]
         if env.get("HOS_FLOW_PROJECT_URL"):
             cmd += ["--project", env["HOS_FLOW_PROJECT_URL"]]
+        # Give Veo wall-clock time to finish after we abandon the mint browser.
+        settle = int(os.environ.get("HOS_FLOW_HARVEST_SETTLE_S", "55"))
+        print(f"  settle {settle}s for gen to finish before harvest…", flush=True)
+        time.sleep(settle)
         print(f"  spawn harvest: {' '.join(cmd)}", flush=True)
         _sp.check_call(cmd, env=env)
         media_id = f"gallery-subprocess:{dest.stat().st_size if dest.exists() else 0}"
