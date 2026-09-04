@@ -1,0 +1,71 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "mode": "uat-v09",
+  "plates": [
+    {
+      "id": "05_explorer_ore_gas",
+      "mode": "i2v",
+      "duration": 8.0,
+      "seconds": 75.1,
+      "bytes": 1591922,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/refs/v01_stills/05_explorer_ore_gas_start_v09.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "3ddb9ef4-87a7-473f-bd85-e2abc62c1d09",
+      "url": "https://labs.google/fx/tools/flow/project/9a45f0fb-c24a-4f08-8686-faf9bf3a93ef"
+    },
+    {
+      "id": "10_rock_not_fire",
+      "mode": "t2v",
+      "duration": 8.0,
+      "seconds": 74.5,
+      "bytes": 2394659,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "9b35fc1a-cea9-441b-8993-3e6fffe4ac5b",
+      "url": "https://labs.google/fx/tools/flow/project/619456aa-c11a-48fd-a571-6c3b2e6073b5"
+    },
+    {
+      "id": "11_chemists_more_names",
+      "mode": "t2v",
+      "duration": 8.0,
+      "seconds": 78.0,
+      "bytes": 3864361,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "1583f1ae-1ed8-407c-a1a0-6b72b90f26e8",
+      "url": "https://labs.google/fx/tools/flow/project/cc450119-7c72-41cf-9660-2a50f5f69c6c"
+    },
+    {
+      "id": "12_workshop_hold",
+      "mode": "t2v",
+      "duration": 8.0,
+      "seconds": 74.0,
+      "bytes": 2284676,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "f1a27309-9f41-4cc1-922c-f603b436d434",
+      "url": "https://labs.google/fx/tools/flow/project/d7ce80f6-88fe-4ae3-bb85-0932eadc6fac"
+    }
+  ]
+}

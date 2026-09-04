@@ -1,0 +1,97 @@
+{
+  "part": 2,
+  "title": "First Patterns, Still Wrong",
+  "status": "uat_fix_v03_sparse_cards_candle_ok_jars_never_fire",
+  "style_lock": "hos_002_part01_rough_v11",
+  "clip_use_s": 8.0,
+  "xfade_s": 0.4,
+  "vo_file": "02_Voiceover/part02_first_patterns_v01.wav",
+  "notes": "Ben UAT v02 FAIL: wall-to-wall science cards + jars still on fire in older scenery. KEEP one chapter card + ONE teach pop-up (triads). Rest = workshop/study scenery. Candles MAY flame. Jars/pots/canisters NEVER on fire.",
+  "physics_lock": "Candles may have small natural candle flames only. Jars, pots, canisters, crucibles, flasks MUST NOT emit flames, fire, smoke plumes, or glowing vapor from their mouths. No pots on fire. No jars on fire. Opaque ceramic/metal vessels when jars appear. Silent. No Orbit.",
+  "card_budget": {
+    "chapter": "01_chapter_card",
+    "teach_popup": "04_triad_cards",
+    "max_cards": 2
+  },
+  "plates": [
+    {
+      "id": "01_chapter_card",
+      "kind": "chapter_card",
+      "remint": false,
+      "source": "keep_v01",
+      "explorer": false,
+      "prompt": "KEEP. English chapter card PASS."
+    },
+    {
+      "id": "02_lavoisier_list",
+      "kind": "scenery",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon 1780s chemist study. Camera drifts along a wooden desk: neat blank specimen cards in a row, OPAQUE lidded ceramic jars and sealed metal canisters sitting cold and closed (never heated). One beeswax candle in a brass candlestick may show a small candle-wick flame \u2014 far from the jars. NO spirit lamp. NO burner. NO tripod with fire. NO flame under any pot or jar. Warm window light. Continuous gentle motion. Silent. No readable text. No Orbit. No people. HARD REJECT: jars on fire; pots on fire; burner under a pot; flames from canister mouths."
+    },
+    {
+      "id": "03_not_a_map",
+      "kind": "scenery",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon: blank specimen cards on a wooden desk shuffle and refuse to form neat columns \u2014 a messy pile, not a map. Opaque ceramic jars stay sealed and cold on a shelf behind. Optional single candle flame in a holder far from the jars. Continuous motion. Silent. No readable text. No Orbit. No people. HARD REJECT: jars or pots on fire; flames rising from jar mouths. Also HARD REJECT: spirit lamps, Bunsen burners, tripod burners, any flame under a vessel."
+    },
+    {
+      "id": "04_triad_cards",
+      "kind": "teach_card",
+      "remint": false,
+      "source": "local_pillow_v03",
+      "explorer": false,
+      "prompt": "LOCAL RENDER ONLY \u2014 D\u00f6bereiner triads teach pop-up. Exact English."
+    },
+    {
+      "id": "05_explorer_triad_break",
+      "kind": "scenery",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon workshop bench: three glowing blank cousin-cards sit in a neat row, then a fourth blank card slides in and breaks the tidy rhyme; the glow flickers uneven. Opaque cold jars on shelves. One candle in a holder may flame; jars never flame. Continuous motion. Silent. No readable text. No people. No Orbit. HARD REJECT: jars/pots/canisters on fire. Also HARD REJECT: spirit lamps, Bunsen burners, tripod burners, any flame under a vessel."
+    },
+    {
+      "id": "06_rhymes_run_out",
+      "kind": "scenery",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon: blank cards multiply across shelves packed with OPAQUE cold ceramic jars until any triad pattern is drowned. Camera drifts through the crowded shelves. Candlelight OK from wall sconces/candles only. Continuous motion. Silent. No readable text. No Orbit. No people. HARD REJECT: any jar or pot with flames or fire coming out of it. Also HARD REJECT: spirit lamps, Bunsen burners, tripod burners, any flame under a vessel."
+    },
+    {
+      "id": "07_newlands_octave",
+      "kind": "scenery",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon: camera tracks along a long line of blank element cards beside a tiny wooden toy piano on a desk \u2014 octave gag setup. Opaque cold jars in background. Candle OK. Continuous motion. Silent. No readable text. No Orbit. No people. HARD REJECT: jars on fire. Also HARD REJECT: spirit lamps, Bunsen burners, tripod burners, any flame under a vessel."
+    },
+    {
+      "id": "08_piano_gag_fail",
+      "kind": "scenery",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon: the piano octave gag falls flat \u2014 wooden keys tip, blank cards scatter onto the desk. Opaque cold jars stay put. Candle OK. Continuous motion. Silent. No readable text. No Orbit. No people. HARD REJECT: jars, pots, or canisters on fire. Also HARD REJECT: spirit lamps, Bunsen burners, tripod burners, any flame under a vessel."
+    },
+    {
+      "id": "09_almost_right",
+      "kind": "scenery",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon: nearly-aligned blank cards on a desk wobble with one obvious gap breaking the pattern. Warm study, opaque cold jars, optional candle flame. Continuous motion. Silent. No readable text. No Orbit. No people. HARD REJECT: jars on fire. Also HARD REJECT: spirit lamps, Bunsen burners, tripod burners, any flame under a vessel."
+    },
+    {
+      "id": "10_ruler_crooked",
+      "kind": "scenery",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon: a crooked wooden ruler and mismatched blank cards slide on a desk \u2014 the measuring stick is wrong. Opaque cold jars on the shelf. Candle OK. Continuous motion. Silent. No readable text. No Orbit. No people. HARD REJECT: jars/pots on fire; flames from canisters. Also HARD REJECT: spirit lamps, Bunsen burners, tripod burners, any flame under a vessel."
+    },
+    {
+      "id": "11_shared_stick",
+      "kind": "scenery",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon period meeting hall table: identical blank wooden measuring sticks slide across toward the center, matching lengths \u2014 a shared stick. Soft window light, optional distant candles. No jars needed; if jars appear they are cold and sealed. Continuous motion. Silent. No readable text. No Orbit. No people. HARD REJECT: any vessel on fire. Also HARD REJECT: spirit lamps, Bunsen burners, tripod burners, any flame under a vessel."
+    }
+  ]
+}

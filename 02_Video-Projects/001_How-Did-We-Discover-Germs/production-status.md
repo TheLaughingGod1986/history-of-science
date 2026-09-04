@@ -2,11 +2,13 @@
 
 **Ship lock (2 Sep 2026):** Full film **LOCKED**. Canonical: `00_Brand/Channel-Setup/HOS_001_GERMS_SHIP_LOCKED.md` · `.cursor/rules/hos-001-germs-ship-lock.mdc` · `09_Final-Export/HOS_001_GERMS_FULL_V02_SHIP.json`
 
-**Studio (3 Sep 2026):** Long Premiere `_C92tIJCk8A` Thu 3 Sep **18:00** London on **@HistoryOfScienceYT**. Five Shorts 4–8 Sep **11:30**. Related `_C92tIJCk8A`. Zero `/go/`. Not Orbit. Do not remint. Do not mint new ids.
+**Studio (4 Sep 2026 audit):** Long `_C92tIJCk8A` **Public** on **@HistoryOfScienceYT**. Short **s01** `8uBR-9oxeWs` **Public** (Fri 11:30). s02–s05 still **Scheduled** Sat–Tue 11:30. Related `_C92tIJCk8A`. Zero `/go/`. Not Orbit. Do not remint. Do not mint new ids.
+
+**Full audit:** `11_Upload-Package/Schedule/FULL_AUDIT_2026-09-04.md` — SEO PASS on public assets. Pin funnel comment on live Short still TODO (HOS Studio login blocked from agent Chrome).
 
 **Replace still missing.** Studio has no Replace-file control. Scheduled punch files still v01 / s05 v02. TYPE cuts stay on disk + HOS UAT.
 
-**Covers:** listing thumb **B** live. Feed-safe type-inset Shorts JPEGs on disk (`hos_001_s01_shadow_cover_animistry_v02.jpg` · `s02_pond_…_v03.jpg` · `s03_vector_…_v02.jpg` · `s04_flask_…_v03.jpg` · `s05_soap_…_v02.jpg`). Composer `_compose_hos_short_cover_safe_v02.py`. Studio still has the previous Animistry set until Apple Events JS is on. Do not Data API `thumbnails.set`. Thumbnail ABC **blocked until Premiere ends**.
+**Covers:** listing thumb **B** live. Feed-safe type-inset Shorts JPEGs on disk (`hos_001_s01_shadow_cover_animistry_v02.jpg` · `s02_pond_…_v03.jpg` · `s03_vector_…_v02.jpg` · `s04_flask_…_v03.jpg` · `s05_soap_…_v02.jpg`). Composer `_compose_hos_short_cover_safe_v02.py`. Studio still has the previous Animistry set until Apple Events JS is on. Do not Data API `thumbnails.set`. Thumbnail ABC **Running** on long (Thumbnail only).
 
 **TYPE lock (yellow / white, one HOLD card):**
 
@@ -24,8 +26,8 @@
 | Parts 01–05 | **PARENTS LOCKED** — 01 **v21** · 02 **v12** · 03 **v14** · 04 **v23** · 05 **v03** |
 | Full join | **LIVE CUT** `hos_001_germs_full_v02.mp4` · sha256 `f49fae7872e9ae16d76e76d01e00444e6fa6159956ee0375fb1df8234d9df195` · **364.555 s** |
 | UAT | **PASS 2 Sep 2026** |
-| Long | Premiere `_C92tIJCk8A` · *How Did We Discover Germs?* · listing thumb B |
-| Shorts | `8uBR-9oxeWs` · `YX2UR1u-JCQ` · `Fnb3p81u-wY` · `vpuRgKXtFlY` · `Lcmh5y2KMQM` · Related + VidIQ listings saved |
+| Long | **Public** `_C92tIJCk8A` · *How Did We Discover Germs?* · listing thumb B · Thumbnail ABC Running |
+| Shorts | `8uBR-9oxeWs` **Public** · `YX2UR1u-JCQ` · `Fnb3p81u-wY` · `vpuRgKXtFlY` · `Lcmh5y2KMQM` Scheduled · Related + VidIQ listings saved |
 | Open / out | Locked — no branded intro · cream card in cut · Studio subscribe only |
 
 ## Artifacts
@@ -41,7 +43,7 @@
 
 ## Next
 
-1. After Premiere converts to a normal long: Studio **Thumbnail only** ABC (A flask · B Explorer · C microscope).
-2. When Chrome **Allow JavaScript from Apple Events** is on: attach the five feed-safe Shorts covers.
-3. After each Short is public: pin the full-film comment.
-4. HOS 002 (`002_How-Did-We-Discover-The-Periodic-Table`) · then compare Veo vs Omni. Do not spend Omni on Neutron Star until that compare.
+1. **Phone / HOS Studio:** pin full-film comment on live Short `8uBR-9oxeWs` (template in `Pinned-Comments/germs_shorts_pinned-comment_v01.txt`).
+2. After each later Short publishes (Sat–Tue 11:30): same pin.
+3. End screen on long → Subscribe (+ next film when 002 exists).
+4. HOS 002 · then compare Veo vs Omni. Do not spend Omni on Neutron Star until that compare.

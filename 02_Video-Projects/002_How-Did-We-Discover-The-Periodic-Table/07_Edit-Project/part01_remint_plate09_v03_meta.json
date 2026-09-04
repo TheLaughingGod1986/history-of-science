@@ -1,0 +1,15 @@
+{
+  "engine": "flow-ui-veo",
+  "model": "Veo 3.1 - Fast",
+  "plate": "09_seating_plan_gap",
+  "mode": "t2v-v03",
+  "seconds": 74.5,
+  "bytes": 1975726,
+  "orbit_ref": null,
+  "start_frame": null,
+  "orbit_attached": false,
+  "identity_lock": false,
+  "scenery_only": true,
+  "media_id": "0b834889-69b5-49f9-bfa6-de2b29832772",
+  "url": "https://labs.google/fx/tools/flow/project/7a7a162a-bdc3-448c-97b3-cdebb824cd9e"
+}

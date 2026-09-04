@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Part 01 Flow Veo 3.1 Fast T2V — all ten plates. No Gemini stills.
+"""Part 01 Flow Veo 3.1 Fast T2V — unique plates. No Gemini stills.
 
-scenery_only. Explorer plate is T2V with identity in the prompt (do not I2V
-the full character sheet). If Create dies: STOP. Do not start Part 02.
+World plates: scenery_only. Explorer plate: T2V with identity in the prompt
+(do not I2V the full character sheet as a wide hero). If Create dies: STOP.
+Do not start Part 02.
 """
 from __future__ import annotations
 
@@ -67,7 +68,10 @@ def main() -> None:
                     print(f"  skip {dest.name}", flush=True)
                     continue
                 prompt = f"{STYLE} {plate['prompt']}"
-                print(f"\n=== Fast T2V {plate['id']} ({i+1}/{len(plates)}) ===", flush=True)
+                print(
+                    f"\n=== Fast T2V {plate['id']} ({i + 1}/{len(plates)}) ===",
+                    flush=True,
+                )
                 try:
                     info = flow.generate_clip(
                         page,
