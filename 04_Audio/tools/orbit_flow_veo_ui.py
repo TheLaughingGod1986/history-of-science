@@ -2036,79 +2036,9 @@ def harvest_agent_gallery_mp4(
     target_src = new_thumbs[-1]
     before_n = len(captured_videos)
 
-    # Hover card → click play icon (mouse coords; DOM click often misses Agent UI).
-    try:
-        box = page.evaluate(
-            """(src) => {
-              const img = [...document.querySelectorAll('img')].find(i =>
-                (i.currentSrc || i.src || '') === src
-              );
-              if (!img) return null;
-              const r = img.getBoundingClientRect();
-              return {x:r.x, y:r.y, w:r.width, h:r.height};
-            }""",
-            target_src,
-        )
-        if box and box.get("w", 0) > 40:
-            cx = box["x"] + box["w"] / 2
-            cy = box["y"] + box["h"] / 2
-            page.mouse.move(cx, cy)
-            page.wait_for_timeout(400)
-            # play_circle sits top-left of the card
-            page.mouse.click(box["x"] + 28, box["y"] + 28)
-            page.wait_for_timeout(600)
-            # fallback: click card centre to open viewer/player
-            if len(captured_videos) <= before_n:
-                page.mouse.click(cx, cy)
-        else:
-            page.evaluate(
-                """(src) => {
-                  const img = [...document.querySelectorAll('img')].find(i =>
-                    (i.currentSrc || i.src || '') === src
-                  );
-                  if (img) img.click();
-                }""",
-                target_src,
-            )
-    except Exception as e:
-        print(f"  gallery play click err: {e}", flush=True)
-
-    # Wait briefly for network mp4 capture from the shared listener.
-    for _ in range(20):
-        page.wait_for_timeout(500)
-        if len(captured_videos) > before_n:
-            break
-        # Also try <video src> once playback mounts
+    # Hover card → click play; capture googlevideo via expect_response (safe).
+    def _play_and_capture() -> bytes | None:
         try:
-            vsrc = page.evaluate(
-                """() => {
-                  const vs = [...document.querySelectorAll('video')]
-                    .map(v => v.currentSrc || v.src).filter(Boolean);
-                  return vs.length ? vs[vs.length - 1] : null;
-                }"""
-            )
-            if vsrc and vsrc.startswith("http") and "asb/" not in vsrc:
-                resp = page.request.get(vsrc, timeout=120_000)
-                body = resp.body()
-                if len(body) > 150_000 and b"ftyp" in body[:64]:
-                    captured_videos.append(body)
-                    print(f"  gallery video-src bytes={len(body)}", flush=True)
-                    break
-        except Exception:
-            pass
-
-    if len(captured_videos) > before_n:
-        raw = captured_videos[-1]
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_bytes(raw)
-        print(f"  gallery harvest saved bytes={len(raw)}", flush=True)
-        return f"gallery-network:{len(raw)}"
-
-    # Prefer network capture only — UI Download often closes the Agent page/context.
-    # Second play attempt with a longer wait if the first pass missed.
-    if len(captured_videos) <= before_n:
-        try:
-            print("  gallery harvest: retry play for network mp4", flush=True)
             box = page.evaluate(
                 """(src) => {
                   const img = [...document.querySelectorAll('img')].find(i =>
@@ -2120,26 +2050,49 @@ def harvest_agent_gallery_mp4(
                 }""",
                 target_src,
             )
-            if box and box.get("w", 0) > 40:
-                page.mouse.move(box["x"] + box["w"] / 2, box["y"] + box["h"] / 2)
-                page.wait_for_timeout(300)
-                page.mouse.click(box["x"] + 28, box["y"] + 28)
-                page.wait_for_timeout(500)
-                page.mouse.click(box["x"] + box["w"] / 2, box["y"] + box["h"] / 2)
-            for _ in range(40):
-                page.wait_for_timeout(500)
-                if len(captured_videos) > before_n:
-                    break
-        except Exception as e:
-            print(f"  gallery retry play err: {e}", flush=True)
+            if not box or box.get("w", 0) <= 40:
+                return None
+            cx = box["x"] + box["w"] / 2
+            cy = box["y"] + box["h"] / 2
+            page.mouse.move(cx, cy)
+            page.wait_for_timeout(350)
 
-    if len(captured_videos) > before_n:
-        raw = captured_videos[-1]
+            def _is_vid(resp) -> bool:
+                u = (resp.url or "").lower()
+                ct = (resp.headers.get("content-type") or "").lower()
+                return resp.status == 200 and (
+                    "googlevideo.com" in u
+                    or "videoplayback" in u
+                    or ("video" in ct and "mp4" in ct)
+                )
+
+            with page.expect_response(_is_vid, timeout=45_000) as ri:
+                page.mouse.click(box["x"] + 28, box["y"] + 28)
+                page.wait_for_timeout(400)
+                page.mouse.click(cx, cy)
+            resp = ri.value
+            body = resp.body()
+            if len(body) > 150_000 and b"ftyp" in body[:64]:
+                return body
+        except Exception as e:
+            print(f"  gallery expect_response play err: {e}", flush=True)
+        return None
+
+    raw = _play_and_capture()
+    if raw is None:
+        print("  gallery harvest: retry play for network mp4", flush=True)
+        page.wait_for_timeout(800)
+        raw = _play_and_capture()
+    if raw is not None:
+        captured_videos.append(raw)
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(raw)
         print(f"  gallery harvest saved bytes={len(raw)}", flush=True)
         return f"gallery-network:{len(raw)}"
+
     return None
+
+
 
 
 
@@ -2199,15 +2152,20 @@ def wait_and_download(
         try:
             ct = (resp.headers.get("content-type") or "").lower()
             url = (resp.url or "").lower()
+            # NEVER body()-read googlevideo streams here — that crashes Chrome.
+            # Gallery harvest uses expect_response around play instead.
+            if "googlevideo.com" in url or "videoplayback" in url:
+                return
             if not (
                 "video" in ct
                 or url.endswith(".mp4")
-                or "videoplayback" in url
-                or "googlevideo.com" in url
                 or "getmediaurlredirect" in url
             ):
                 return
             if resp.status != 200:
+                return
+            cl = resp.headers.get("content-length")
+            if cl and cl.isdigit() and int(cl) < 150_000:
                 return
             body = resp.body()
             if len(body) > 150_000 and (b"ftyp" in body[:64] or "video" in ct):
