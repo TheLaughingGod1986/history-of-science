@@ -22,6 +22,7 @@
   "youtubeId": "_C92tIJCk8A",
   "playlistId": null,
   "relatedVideoId": null,
-  "privacy": "private",
-  "madeForKids": false
+  "privacy": "public",
+  "madeForKids": false,
+  "privacyNote": "Long Public post-Premiere (audited 2026-09-04). Short s01 public; s02\u2013s05 scheduled."
 }
