@@ -1,7 +1,7 @@
 # Part 02 UAT — v02 (English cards · no fire)
 
 **Watch only:** iCloud `HOS UAT/hos_002_part02_rough_v02.mp4`  
-**Note:** `HOS UAT/WATCH_part02_v02.txt`
+**Note:** iCloud `HOS UAT/WATCH_part02_v02.txt`
 
 ## Fix vs v01 FAIL
 - Kept the cream parchment **science-card** look Ben liked.
@@ -10,7 +10,7 @@
 - No pots, no flames, no workshop fire in 02–11.
 
 ## Why local (not Flow remint)
-Flow `scenery_only` appends “no text”, so readable English cards cannot be trusted from Flow. Local render is the lock for card copy.
+Flow scenery-only minting forbids readable text, so English cards cannot be trusted from Flow. Local render is the lock for card copy.
 
 ## Ship gate
 - STOP — Ben UAT on v02 only.
