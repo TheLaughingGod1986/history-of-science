@@ -22,15 +22,15 @@
 
 ## Shorts cluster (after long listing exists · 22–27s · punch-first)
 
-| # | Slot after long | Working title | Punch (0–1s) |
-|---|---|---|---|
-| 01 | **Fri 4 Sep 11:30 London** | Doctors Blamed Bad Air — Not Germs | Strange ward air / glowing microbes |
-| 02 | ~+2 days | The First Time Humans Saw Microbes | Microscope plunge |
-| 03 | ~+4 days | Why Handwashing Was Once “Ridiculous” | Clean hands vs mockery |
-| 04 | ~+6 days | Pasteur’s Flask That Broke the Old Story | Swan-neck clear → cloudy |
-| 05 | ~+8 days | The Spray That Cleaned the Operating Theatre | Lister carbolic mist |
+| # | Slot (London) | Locked title | YouTube id | Status (4 Sep audit) |
+|---|---|---|---|---|
+| 01 | **Fri 4 Sep 11:30** | Germs don't cast a shadow | `8uBR-9oxeWs` | **Public** |
+| 02 | **Sat 5 Sep 11:30** | Microbes in a drop of pond water | `YX2UR1u-JCQ` | Scheduled |
+| 03 | **Sun 6 Sep 11:30** | Germs hitch a ride on you | `Fnb3p81u-wY` | Scheduled |
+| 04 | **Mon 7 Sep 11:30** | A flask that proved germs come from outside | `vpuRgKXtFlY` | Scheduled |
+| 05 | **Tue 8 Sep 11:30** | Invisible life is still everywhere | `Lcmh5y2KMQM` | Scheduled |
 
-All Shorts: punch from **this film only** · captions whole way · curiosity-gap end · description = film title + long URL only · **zero `/go/`** · Related ▶ long once listing exists.
+All Shorts: punch from **this film only** · captions whole way · curiosity-gap end · description = film title + long URL only · **zero `/go/`** · Related ▶ long · pin full-film comment when public.
 
 Optional reserve (Private): “Your Body Is a City of Tiny Lives” — only if 01–05 ship clean.
 
