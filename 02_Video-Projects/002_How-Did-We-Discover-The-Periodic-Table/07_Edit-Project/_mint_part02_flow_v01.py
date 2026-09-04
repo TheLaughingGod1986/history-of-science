@@ -67,10 +67,14 @@ def main() -> None:
             pass
     profile = flow.profile_path(PROFILE)
     print(f"Flow Part 02 mint profile={profile} plates={len(plates)}", flush=True)
-    # Ultra AI-credit account + fresh /u/1/ project (old projects hit usage limit).
+    # Ultra AI-credit account. Reuse one /u/1/ project across plates (saves credits;
+    # new projects were burning gens that we then failed to harvest).
     os.environ.setdefault("ORBIT_FLOW_ACCOUNT", "benoats@googlemail.com")
-    os.environ.setdefault("ORBIT_FLOW_FORCE_NEW_PROJECT", "1")
+    os.environ.setdefault("ORBIT_FLOW_FORCE_NEW_PROJECT", "0")
     os.environ.setdefault("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
+    # Prefer the project that already has tonight's gallery (optional override).
+    if os.environ.get("HOS_FLOW_PROJECT_URL"):
+        os.environ["ORBIT_FLOW_PROJECT_URL"] = os.environ["HOS_FLOW_PROJECT_URL"]
 
     from playwright.sync_api import sync_playwright
 
@@ -81,13 +85,17 @@ def main() -> None:
         try:
             # Must use Ultra account with AI-credit fallback (not benoats86 Flow-only).
             flow.ensure_flow_account(page)
-            page.goto(
-                os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/"),
-                wait_until="domcontentloaded",
-                timeout=120_000,
+            # Land on a known /u/1/ project so reuse_project=True works from plate 1.
+            pinned = (
+                os.environ.get("HOS_FLOW_PROJECT_URL")
+                or os.environ.get("ORBIT_FLOW_PROJECT_URL")
+                or "https://flow.google.com/u/1/project/30a34afb-8d9c-4eac-83ba-012d97f6b1b5"
             )
+            os.environ["ORBIT_FLOW_PROJECT_URL"] = pinned
+            page.goto(pinned, wait_until="domcontentloaded", timeout=120_000)
             page.wait_for_timeout(2000)
             flow.dismiss_banners(page)
+            print(f"  mint project={page.url}", flush=True)
             if not flow.looks_logged_in(page):
                 print(f"WARN looks_logged_in=False url={page.url}", flush=True)
                 try:
@@ -119,8 +127,9 @@ def main() -> None:
                 # Always scenery_only=True — False attaches the Orbit robot ref (wrong channel).
                 # Explorer identity is locked in the prompt text (Germs Part 01 younger boy).
                 scenery = True
+                reuse = bool(os.environ.get("ORBIT_FLOW_REUSE_PROJECT", "1") not in {"0", "false", "False"})
                 print(
-                    f"\n=== {i+1}/{len(plates)} T2V {pid} explorer={bool(plate.get('explorer'))} ===",
+                    f"\n=== {i+1}/{len(plates)} T2V {pid} explorer={bool(plate.get('explorer'))} reuse={reuse} ===",
                     flush=True,
                 )
                 ok = False
@@ -135,7 +144,7 @@ def main() -> None:
                             prompt,
                             tmp,
                             model=MODEL,
-                            reuse_project=False,
+                            reuse_project=reuse,
                             attempts=1,
                             timeout_s=420,
                             start_frame=None,

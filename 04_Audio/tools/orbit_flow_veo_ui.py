@@ -197,6 +197,23 @@ def launch_context(playwright, *, headed: bool, profile: Path, slow_mo: int = 0)
         )
     except Exception:
         pass
+    # HOS mint must stay on Flow — Chrome profile can auto-open Orbit Facebook.
+    def _abort_social(route):
+        route.abort()
+
+    for host in (
+        "**/facebook.com/**",
+        "**/www.facebook.com/**",
+        "**/instagram.com/**",
+        "**/www.instagram.com/**",
+        "**/threads.com/**",
+        "**/www.threads.com/**",
+        "**/threads.net/**",
+    ):
+        try:
+            ctx.route(host, _abort_social)
+        except Exception:
+            pass
     return ctx, page
 
 
@@ -533,6 +550,17 @@ def _ensure_project_once(page) -> str:
         "false",
         "False",
     }
+    pinned = (os.environ.get("ORBIT_FLOW_PROJECT_URL") or "").strip()
+    if pinned and "/project/" in pinned:
+        if pinned.rstrip("/") not in (page.url or ""):
+            print(f"  opening pinned project {pinned}", flush=True)
+            page.goto(pinned, wait_until="domcontentloaded", timeout=120_000)
+            settle_after_nav(page, wait_ms=2000)
+            dismiss_banners(page)
+        if "/project/" in (page.url or "") and editor_usable(page):
+            print(f"  project ready (pinned): {page.url}", flush=True)
+            return page.url
+        # fall through to normal ensure if editor not ready yet
     home = FLOW_HOME_ULTRA if "u/1" in FLOW_HOME_ULTRA else FLOW_HOME
     if "/project/" not in (page.url or "") or (
         force_new and "/u/1/" not in (page.url or "")
@@ -1897,6 +1925,233 @@ def collect_media_ids(page) -> set[str]:
     return set(MEDIA_REDIRECT_RE.findall(html))
 
 
+def collect_gallery_asb_srcs(page) -> list[str]:
+    """Agent UI gallery thumbnails live at flow.google.com/asb/…"""
+    try:
+        return page.evaluate(
+            """() => [...document.querySelectorAll('img')]
+              .map(i => i.currentSrc || i.src || '')
+              .filter(s => /\\/asb\\//i.test(s))"""
+        ) or []
+    except Exception:
+        return []
+
+
+def force_outputs_x1(page) -> bool:
+    """Force Agent UI outputs pill off x2/x3/x4 onto x1 (saves AI credits)."""
+    try:
+        before = page.evaluate(
+            """() => {
+              const btns = [...document.querySelectorAll('button,[role="button"]')];
+              const pill = btns.find(b => /Video\\s*[·•]|720p|1080p|\\bx[1-4]\\b/i.test(b.innerText||''));
+              return pill ? (pill.innerText || '').replace(/\\s+/g,' ').trim().slice(0,80) : '';
+            }"""
+        )
+        page.evaluate(
+            """() => {
+              const btns = [...document.querySelectorAll('button,[role="button"]')];
+              const pill = btns.find(b => /Video\\s*[·•]|720p|1080p|\\bx[2-4]\\b/i.test(b.innerText||''));
+              if (pill) pill.click();
+            }"""
+        )
+        page.wait_for_timeout(600)
+        clicked = page.evaluate(
+            """() => {
+              const clickExact = (label) => {
+                for (const b of document.querySelectorAll('button,[role="button"],[role="option"],div[role="menuitem"]')) {
+                  const t = (b.innerText || '').trim();
+                  if (t === label) { b.click(); return true; }
+                }
+                return false;
+              };
+              // Prefer explicit x1; also click "1" variants some locales use.
+              return clickExact('x1') || clickExact('1');
+            }"""
+        )
+        page.wait_for_timeout(400)
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        page.wait_for_timeout(300)
+        after = page.evaluate(
+            """() => {
+              const btns = [...document.querySelectorAll('button,[role="button"]')];
+              const pill = btns.find(b => /Video\\s*[·•]|720p|1080p|\\bx[1-4]\\b/i.test(b.innerText||''));
+              return pill ? (pill.innerText || '').replace(/\\s+/g,' ').trim().slice(0,80) : '';
+            }"""
+        )
+        ok = bool(clicked) and ("x2" not in (after or "").lower()) and (
+            "x1" in (after or "").lower() or "x2" not in (before or "").lower()
+        )
+        print(
+            f"  force x1: clicked={clicked!r} before={before!r} after={after!r} ok={ok}",
+            flush=True,
+        )
+        return ok
+    except Exception as e:
+        print(f"  force x1 skipped: {e}", flush=True)
+        return False
+
+
+def harvest_agent_gallery_mp4(
+    page,
+    dest: Path,
+    captured_videos: list[bytes],
+    *,
+    before_asb: set[str] | None = None,
+) -> str | None:
+    """Play newest Agent gallery card and save the googlevideo/mp4 body.
+
+    New Flow Agent UI never emits getMediaUrlRedirect ids. Completed clips sit
+    in All media as /asb/ thumbs; playing them fires googlevideo videoplayback
+    which we capture from the network listener.
+    """
+    before_asb = before_asb or set()
+    try:
+        # Prefer All media tab so thumbs are visible.
+        page.evaluate(
+            """() => {
+              for (const n of document.querySelectorAll('button,a,[role="button"],[role="tab"]')) {
+                const t = ((n.innerText || '') + ' ' + (n.getAttribute('aria-label') || '')).trim();
+                if (/^All media$/i.test(t) || t === 'All media') { n.click(); return; }
+              }
+            }"""
+        )
+        page.wait_for_timeout(500)
+    except Exception:
+        pass
+
+    thumbs = collect_gallery_asb_srcs(page)
+    new_thumbs = [s for s in thumbs if s not in before_asb] or list(thumbs)
+    if not new_thumbs:
+        return None
+    print(f"  gallery harvest thumbs={len(thumbs)} new={len(new_thumbs)}", flush=True)
+
+    # Prefer the newest card (last in DOM is usually latest).
+    target_src = new_thumbs[-1]
+    before_n = len(captured_videos)
+
+    # Hover card → click play icon (mouse coords; DOM click often misses Agent UI).
+    try:
+        box = page.evaluate(
+            """(src) => {
+              const img = [...document.querySelectorAll('img')].find(i =>
+                (i.currentSrc || i.src || '') === src
+              );
+              if (!img) return null;
+              const r = img.getBoundingClientRect();
+              return {x:r.x, y:r.y, w:r.width, h:r.height};
+            }""",
+            target_src,
+        )
+        if box and box.get("w", 0) > 40:
+            cx = box["x"] + box["w"] / 2
+            cy = box["y"] + box["h"] / 2
+            page.mouse.move(cx, cy)
+            page.wait_for_timeout(400)
+            # play_circle sits top-left of the card
+            page.mouse.click(box["x"] + 28, box["y"] + 28)
+            page.wait_for_timeout(600)
+            # fallback: click card centre to open viewer/player
+            if len(captured_videos) <= before_n:
+                page.mouse.click(cx, cy)
+        else:
+            page.evaluate(
+                """(src) => {
+                  const img = [...document.querySelectorAll('img')].find(i =>
+                    (i.currentSrc || i.src || '') === src
+                  );
+                  if (img) img.click();
+                }""",
+                target_src,
+            )
+    except Exception as e:
+        print(f"  gallery play click err: {e}", flush=True)
+
+    # Wait briefly for network mp4 capture from the shared listener.
+    for _ in range(20):
+        page.wait_for_timeout(500)
+        if len(captured_videos) > before_n:
+            break
+        # Also try <video src> once playback mounts
+        try:
+            vsrc = page.evaluate(
+                """() => {
+                  const vs = [...document.querySelectorAll('video')]
+                    .map(v => v.currentSrc || v.src).filter(Boolean);
+                  return vs.length ? vs[vs.length - 1] : null;
+                }"""
+            )
+            if vsrc and vsrc.startswith("http") and "asb/" not in vsrc:
+                resp = page.request.get(vsrc, timeout=120_000)
+                body = resp.body()
+                if len(body) > 150_000 and b"ftyp" in body[:64]:
+                    captured_videos.append(body)
+                    print(f"  gallery video-src bytes={len(body)}", flush=True)
+                    break
+        except Exception:
+            pass
+
+    if len(captured_videos) > before_n:
+        raw = captured_videos[-1]
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(raw)
+        print(f"  gallery harvest saved bytes={len(raw)}", flush=True)
+        return f"gallery-network:{len(raw)}"
+
+    # Fallback: more_vert → Download (or right-click → Download)
+    try:
+        page.evaluate(
+            """(src) => {
+              const img = [...document.querySelectorAll('img')].find(i =>
+                (i.currentSrc || i.src || '') === src
+              );
+              if (!img) return;
+              const r = img.getBoundingClientRect();
+              img.dispatchEvent(new MouseEvent('mouseover', {bubbles:true}));
+              const more = [...document.querySelectorAll('button,[role="button"],span')]
+                .filter(n => /more_vert|More options/i.test(
+                  (n.innerText || '') + (n.getAttribute('aria-label') || '')
+                ));
+              for (const n of more) {
+                const mr = n.getBoundingClientRect();
+                if (Math.abs(mr.x - r.x) < r.width && Math.abs(mr.y - r.y) < r.height + 40) {
+                  n.click(); return;
+                }
+              }
+            }""",
+            target_src,
+        )
+        page.wait_for_timeout(500)
+        with page.expect_download(timeout=20_000) as di:
+            page.evaluate(
+                """() => {
+                  for (const n of document.querySelectorAll(
+                    'button,[role="button"],[role="menuitem"],li,span,a,div'
+                  )) {
+                    const t = ((n.innerText || '') + ' ' + (n.getAttribute('aria-label') || ''))
+                      .trim().toLowerCase();
+                    if (t === 'download' || t.startsWith('download\\n') ||
+                        (t.includes('download') && !t.includes('undownload') && t.length < 40)) {
+                      n.click(); return true;
+                    }
+                  }
+                  return false;
+                }"""
+            )
+        dl = di.value
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dl.save_as(str(dest))
+        n = dest.stat().st_size if dest.exists() else 0
+        if n > 150_000:
+            print(f"  gallery UI Download bytes={n}", flush=True)
+            return f"gallery-ui-download:{n}"
+    except Exception as e:
+        print(f"  gallery Download miss: {e}", flush=True)
+    return None
+
+
 def absolute_media_url(name_or_url: str) -> str:
     if name_or_url.startswith("http"):
         return name_or_url
@@ -1944,19 +2199,68 @@ def wait_and_download(
     # Do NOT permanently blacklist early media ids — Flow often reuses the same
     # getMediaUrlRedirect name from a placeholder/upload into the finished mp4.
     early_gate_s = max(5.0, float(min_elapsed_s or 0) * 0.35)
+    captured_videos: list[bytes] = []
+    before_asb = set(collect_gallery_asb_srcs(page))
+    gallery_tries = 0
+    last_gallery_try = 0.0
+
+    def _on_response(resp) -> None:
+        try:
+            ct = (resp.headers.get("content-type") or "").lower()
+            url = (resp.url or "").lower()
+            if not (
+                "video" in ct
+                or url.endswith(".mp4")
+                or "videoplayback" in url
+                or "googlevideo.com" in url
+                or "getmediaurlredirect" in url
+            ):
+                return
+            if resp.status != 200:
+                return
+            body = resp.body()
+            if len(body) > 150_000 and (b"ftyp" in body[:64] or "video" in ct):
+                captured_videos.append(body)
+                print(
+                    f"  network captured video bytes={len(body)} ct={ct[:40]}",
+                    flush=True,
+                )
+        except Exception:
+            pass
+
+    try:
+        page.on("response", _on_response)
+    except Exception:
+        pass
     while time.time() - t0 < timeout_s:
         # Stay on Flow — profile sometimes drifts to Facebook/Threads overlays.
         url = page.url or ""
         if "flow.google.com" not in url and "labs.google" not in url:
             print(f"  left Flow ({url[:80]}) — recovering…", flush=True)
+            recover_to = getattr(page, "_orbit_flow_project_url", None) or FLOW_HOME_ULTRA
+            # Never force a brand-new project during recover — that abandons in-flight gens.
+            prev_force = os.environ.get("ORBIT_FLOW_FORCE_NEW_PROJECT")
+            os.environ["ORBIT_FLOW_FORCE_NEW_PROJECT"] = "0"
             try:
-                page.goto(FLOW_HOME_ULTRA, wait_until="domcontentloaded", timeout=60_000)
+                page.goto(recover_to, wait_until="domcontentloaded", timeout=60_000)
                 dismiss_banners(page)
-                ensure_project(page)
+                if "/project/" not in (page.url or ""):
+                    ensure_project(page)
             except Exception as e:
                 print(f"  Flow recover failed: {e}", flush=True)
+            finally:
+                if prev_force is None:
+                    os.environ.pop("ORBIT_FLOW_FORCE_NEW_PROJECT", None)
+                else:
+                    os.environ["ORBIT_FLOW_FORCE_NEW_PROJECT"] = prev_force
             page.wait_for_timeout(1000)
             continue
+        # Remember last good project URL for recover.
+        if "/project/" in url:
+            try:
+                page._orbit_flow_project_url = url  # type: ignore[attr-defined]
+            except Exception:
+                pass
         dismiss_soft_prompts(page)
         try:
             ids = collect_media_ids(page)
@@ -1967,6 +2271,16 @@ def wait_and_download(
             raise
         new_ids = [i for i in ids if i not in before_ids]
         elapsed = time.time() - t0
+        if captured_videos and elapsed >= max(20.0, float(min_elapsed_s or 0)):
+            raw = captured_videos[-1]
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(raw)
+            print(f"  saved network video bytes={len(raw)}", flush=True)
+            try:
+                page.remove_listener("response", _on_response)
+            except Exception:
+                pass
+            return f"network-video:{len(raw)}"
         skip_download = elapsed < early_gate_s or elapsed < float(min_elapsed_s or 0)
         # Prefer ids that resolve as video/mp4 (Flow sometimes returns octet-stream)
         for mid in reversed(new_ids):
@@ -2037,6 +2351,56 @@ def wait_and_download(
             pct is not None
         ):
             seen_generating = True
+        # Agent UI harvest: after gen finishes, play gallery card → googlevideo mp4.
+        pct_n = int(pct.group(1)) if pct else None
+        gen_done = seen_generating and (
+            (pct_n is not None and pct_n >= 100)
+            or (status == "" and elapsed >= max(35.0, float(min_elapsed_s or 0)))
+            or elapsed >= 50.0
+        )
+        if (
+            gen_done
+            and gallery_tries < 6
+            and (elapsed - last_gallery_try) >= 12.0
+            and elapsed >= max(25.0, float(min_elapsed_s or 0))
+        ):
+            gallery_tries += 1
+            last_gallery_try = elapsed
+            print(f"  gallery harvest attempt #{gallery_tries}", flush=True)
+            got = harvest_agent_gallery_mp4(
+                page, dest, captured_videos, before_asb=before_asb
+            )
+            if got:
+                try:
+                    page.remove_listener("response", _on_response)
+                except Exception:
+                    pass
+                return got
+            if captured_videos:
+                raw = captured_videos[-1]
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_bytes(raw)
+                print(f"  saved network video bytes={len(raw)}", flush=True)
+                try:
+                    page.remove_listener("response", _on_response)
+                except Exception:
+                    pass
+                return f"network-video:{len(raw)}"
+        # Mount completed cards so <video> elements appear.
+        if seen_generating and elapsed >= 30 and int(elapsed) % 20 < 5:
+            try:
+                page.evaluate(
+                    """() => {
+                      const plays = [...document.querySelectorAll('button,[role="button"],span')]
+                        .filter(n => /play_circle|play_arrow/i.test(
+                          (n.innerText||'') + (n.getAttribute('aria-label')||'')
+                        ));
+                      for (const n of plays.slice(0, 3)) { try { n.click(); } catch (e) {} }
+                    }"""
+                )
+                page.wait_for_timeout(800)
+            except Exception:
+                pass
         # Also harvest <video src> / blob URLs that never appear as getMediaUrlRedirect
         if elapsed >= max(20.0, float(min_elapsed_s or 0)):
             vsrc = page.evaluate(
@@ -2091,6 +2455,97 @@ def wait_and_download(
                 except Exception as e:
                     if int(elapsed) % 30 < 5:
                         print(f"  video-src fetch err {type(e).__name__}: {e}", flush=True)
+        # After generation completes, new Flow UI often has no getMediaUrlRedirect
+        # ids — pull via the card Download control / expect_download.
+        if seen_generating and elapsed >= max(35.0, float(min_elapsed_s or 0)):
+            try:
+                # Prefer an explicit Download control near completed cards.
+                dl_clicked = click_visible(page, "download") or click_visible(
+                    page, "Download"
+                )
+                if not dl_clicked:
+                    dl_clicked = bool(
+                        page.evaluate(
+                            """() => {
+                              const nodes = [...document.querySelectorAll(
+                                'button,[role="button"],a'
+                              )];
+                              for (const n of nodes) {
+                                const t = (
+                                  (n.innerText || '') +
+                                  ' ' +
+                                  (n.getAttribute('aria-label') || '')
+                                ).toLowerCase();
+                                if (t.includes('download') && !t.includes('undownload')) {
+                                  n.click();
+                                  return true;
+                                }
+                              }
+                              // Overflow more_vert near latest media
+                              for (const n of nodes) {
+                                const t = (n.innerText || '').trim().toLowerCase();
+                                if (t === 'more_vert' || t === 'more_horiz') {
+                                  n.click();
+                                  return 'menu';
+                                }
+                              }
+                              return false;
+                            }"""
+                        )
+                    )
+                    if dl_clicked == "menu":
+                        page.wait_for_timeout(500)
+                        dl_clicked = click_visible(page, "download") or click_visible(
+                            page, "Download"
+                        )
+                # Click must happen INSIDE expect_download or the event is missed.
+                try:
+                    with page.expect_download(timeout=25_000) as di:
+                        clicked = (
+                            click_visible(page, "download")
+                            or click_visible(page, "Download")
+                        )
+                        if not clicked:
+                            page.evaluate(
+                                """() => {
+                                  for (const n of document.querySelectorAll(
+                                    'button,[role="button"],a'
+                                  )) {
+                                    const t = (
+                                      (n.innerText || '') + ' ' +
+                                      (n.getAttribute('aria-label') || '')
+                                    ).toLowerCase();
+                                    if (t.includes('download')) { n.click(); return; }
+                                  }
+                                  for (const n of document.querySelectorAll(
+                                    'button,[role="button"]'
+                                  )) {
+                                    const t = (n.innerText || '').trim().toLowerCase();
+                                    if (t === 'more_vert' || t === 'more_horiz') {
+                                      n.click(); return;
+                                    }
+                                  }
+                                }"""
+                            )
+                            page.wait_for_timeout(400)
+                            click_visible(page, "download") or click_visible(
+                                page, "Download"
+                            )
+                    dl = di.value
+                    dest.parent.mkdir(parents=True, exist_ok=True)
+                    dl.save_as(str(dest))
+                    n = dest.stat().st_size if dest.exists() else 0
+                    if n > 150_000:
+                        print(f"  downloaded via UI Download bytes={n}", flush=True)
+                        return f"ui-download:{n}"
+                    print(f"  UI download too small bytes={n}", flush=True)
+                except Exception as e:
+                    if int(elapsed) % 30 < 5:
+                        print(f"  UI download miss: {e}", flush=True)
+            except Exception as e:
+                if int(elapsed) % 30 < 5:
+                    print(f"  UI download path err: {e}", flush=True)
+
         line = f"  wait {int(time.time() - t0)}s status={status or '…'} new_media={len(new_ids)} gen={seen_generating}"
         if line != last_status:
             print(line, flush=True)
@@ -2291,6 +2746,8 @@ def _generate_clip_once(
         frames_mode=False,
         ingredients_mode=(start_frame is not None) or (not scenery_only),
     )
+    # Agent UI defaults to x2 — burn 2× AI credits. Force x1 before Create.
+    force_outputs_x1(page)
     print("  post-settings…", flush=True)
     settle_after_nav(page, wait_ms=600)
     ensure_agent_session(page)
@@ -2308,6 +2765,7 @@ def _generate_clip_once(
                 frames_mode=False,
                 ingredients_mode=True,
             )
+            force_outputs_x1(page)
         print("  setting start-frame I2V prompt…", flush=True)
         set_prompt(page, flow_prompt(prompt, start_frame_i2v=True))
         if _prompt_attachment_count(page) < 1:
