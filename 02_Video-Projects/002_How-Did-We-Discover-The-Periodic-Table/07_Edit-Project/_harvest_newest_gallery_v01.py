@@ -40,9 +40,20 @@ def main() -> None:
 
     os.environ.setdefault("ORBIT_FLOW_ACCOUNT", "benoats@googlemail.com")
     profile = flow.profile_path(
-        Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
+        Path(
+            os.environ.get(
+                "ORBIT_FLOW_PROFILE",
+                str(Path.home() / ".playwright-hos-flow-profile"),
+            )
+        )
     )
     from playwright.sync_api import sync_playwright
+    from playwright.sync_api import Error as PlaywrightError
+
+    try:
+        from playwright._impl._errors import TargetClosedError
+    except Exception:  # pragma: no cover
+        TargetClosedError = PlaywrightError  # type: ignore[misc, assignment]
 
     t0 = time.time()
     last_err = "not started"
@@ -57,11 +68,14 @@ def main() -> None:
                 flow.dismiss_banners(page)
                 thumbs = flow.collect_gallery_asb_srcs(page)
                 print(
-                    f"harvest poll thumbs={len(thumbs)} elapsed={time.time()-t0:.0f}s",
+                    f"harvest poll thumbs={len(thumbs)} elapsed={time.time() - t0:.0f}s",
                     flush=True,
                 )
                 if args.before_thumbs >= 0 and len(thumbs) <= args.before_thumbs:
-                    last_err = f"waiting for new thumb (have={len(thumbs)} before={args.before_thumbs})"
+                    last_err = (
+                        f"waiting for new thumb (have={len(thumbs)} "
+                        f"before={args.before_thumbs})"
+                    )
                     print(f"  {last_err}", flush=True)
                 elif not thumbs:
                     last_err = "no gallery thumbs yet"
@@ -76,12 +90,27 @@ def main() -> None:
                         before = set(thumbs) - {src}
                         if args.out.exists():
                             args.out.unlink()
-                        print(f"harvest try idx={idx}/{len(thumbs)} -> {args.out}", flush=True)
-                        got = flow.harvest_agent_gallery_mp4(
-                            page, args.out, captured, before_asb=before
+                        print(
+                            f"harvest try idx={idx}/{len(thumbs)} -> {args.out}",
+                            flush=True,
                         )
+                        try:
+                            got = flow.harvest_agent_gallery_mp4(
+                                page, args.out, captured, before_asb=before
+                            )
+                        except TargetClosedError as e:
+                            last_err = f"idx={idx} target_closed: {e}"
+                            print(f"  {last_err}", flush=True)
+                            break
+                        except PlaywrightError as e:
+                            last_err = f"idx={idx} playwright: {e}"
+                            print(f"  {last_err}", flush=True)
+                            break
                         if got and args.out.exists() and args.out.stat().st_size >= 800_000:
-                            print(f"OK bytes={args.out.stat().st_size} via={got}", flush=True)
+                            print(
+                                f"OK bytes={args.out.stat().st_size} via={got}",
+                                flush=True,
+                            )
                             return
                         last_err = f"idx={idx} got={got}"
                         print(f"  {last_err}", flush=True)
@@ -91,7 +120,10 @@ def main() -> None:
                         except Exception:
                             pass
             finally:
-                ctx.close()
+                try:
+                    ctx.close()
+                except Exception:
+                    pass
         time.sleep(12)
 
     raise SystemExit(f"harvest failed after {args.wait_s}s: {last_err}")

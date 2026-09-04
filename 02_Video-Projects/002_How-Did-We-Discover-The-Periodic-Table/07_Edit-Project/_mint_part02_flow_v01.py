@@ -4,8 +4,9 @@
 Applies PART01_LESSONS physics lock. Explorer once on 05 (T2V identity lock).
 Duration guard rejects contamination outside ~6–12s.
 
-After each Agent-UI gen, harvest runs in a fresh browser (profile lock). This
-mint relaunches Chromium before the next plate so we do not touch a dead page.
+Agent UI crash rule: after Create is running, generate_clip returns
+needs_gallery_harvest. Mint closes the browser, settles, harvests in a
+fresh process, then relaunches for the next plate.
 """
 from __future__ import annotations
 
@@ -18,6 +19,7 @@ import os
 import shutil
 import subprocess
 import sys
+import time
 import traceback
 from pathlib import Path
 
@@ -53,24 +55,28 @@ PHYSICS = (
     "ZERO floating glassware. Objects sit IN or ON contact surfaces. "
     "Heat shimmer colourless only — no flames unless asked. "
 )
+HARVEST = Path(__file__).resolve().parent / "_harvest_newest_gallery_v01.py"
 
 
 def probe_dur(path: Path) -> float:
     return float(
         subprocess.check_output(
             [
-                "ffprobe",
-                "-v",
-                "error",
-                "-show_entries",
-                "format=duration",
-                "-of",
-                "default=nw=1:nk=1",
-                str(path),
+                "ffprobe", "-v", "error", "-show_entries", "format=duration",
+                "-of", "default=nw=1:nk=1", str(path),
             ],
             text=True,
         ).strip()
     )
+
+
+def safe_close(ctx) -> None:
+    if ctx is None:
+        return
+    try:
+        ctx.close()
+    except Exception:
+        pass
 
 
 def open_flow(p, *, headed: bool, profile: Path, pinned: str):
@@ -87,22 +93,27 @@ def open_flow(p, *, headed: bool, profile: Path, pinned: str):
         except Exception:
             body = ""
         if "new project" not in body and "flow.google.com" not in (page.url or "").lower():
-            try:
-                ctx.close()
-            except Exception:
-                pass
+            safe_close(ctx)
             raise SystemExit("STOP: Flow not logged in.")
         print("  continuing — Flow UI reachable", flush=True)
     return ctx, page
 
 
-def safe_close(ctx) -> None:
-    if ctx is None:
-        return
-    try:
-        ctx.close()
-    except Exception:
-        pass
+def run_harvest(dest: Path, project_url: str) -> None:
+    settle = int(os.environ.get("HOS_FLOW_HARVEST_SETTLE_S", "70"))
+    wait_s = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "180"))
+    print(f"  settle {settle}s then harvest wait_s={wait_s}", flush=True)
+    time.sleep(settle)
+    env = dict(os.environ)
+    env["HOS_FLOW_PROJECT_URL"] = project_url
+    cmd = [
+        sys.executable, "-u", str(HARVEST),
+        "--out", str(dest),
+        "--project", project_url,
+        "--wait-s", str(wait_s),
+    ]
+    print(f"  spawn harvest: {' '.join(cmd)}", flush=True)
+    subprocess.check_call(cmd, env=env)
 
 
 def main() -> None:
@@ -124,9 +135,6 @@ def main() -> None:
 
     profile = flow.profile_path(PROFILE)
     print(f"Flow Part 02 mint profile={profile} plates={len(plates)}", flush=True)
-
-    # Ultra AI-credit account. Reuse one /u/1/ project across plates (saves credits;
-    # new projects were burning gens that we then failed to harvest).
     os.environ.setdefault("ORBIT_FLOW_ACCOUNT", "benoats@googlemail.com")
     os.environ.setdefault("ORBIT_FLOW_FORCE_NEW_PROJECT", "0")
     os.environ.setdefault("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
@@ -166,8 +174,6 @@ def main() -> None:
                     print(f"  archived bad existing {bad.name}", flush=True)
 
                 prompt = f"{STYLE} {PHYSICS} {plate['prompt']}"
-                # Always scenery_only=True — False attaches the Orbit robot ref.
-                # Explorer identity is locked in the prompt text (Germs Part 01 younger boy).
                 scenery = True
                 reuse = bool(
                     os.environ.get("ORBIT_FLOW_REUSE_PROJECT", "1")
@@ -185,6 +191,16 @@ def main() -> None:
                     if tmp.exists():
                         tmp.unlink()
                     try:
+                        # Ensure we have a live page before each attempt.
+                        try:
+                            _ = page.url
+                        except Exception:
+                            print("  page dead before attempt — relaunching", flush=True)
+                            safe_close(ctx)
+                            ctx, page = open_flow(
+                                p, headed=headed, profile=profile, pinned=pinned
+                            )
+
                         info = flow.generate_clip(
                             page,
                             prompt,
@@ -196,14 +212,22 @@ def main() -> None:
                             start_frame=None,
                             scenery_only=scenery,
                         )
-                        # Harvest closes the mint browser — reopen before next work.
-                        if info.get("context_closed"):
-                            print("  mint browser closed for harvest — relaunching", flush=True)
+
+                        if info.get("needs_gallery_harvest"):
+                            project_url = info.get("project_url") or pinned
+                            print("  closing mint browser for harvest…", flush=True)
+                            safe_close(ctx)
                             ctx = None
                             page = None
+                            run_harvest(tmp, project_url)
+                            # Relaunch for next plate/attempt validation
                             ctx, page = open_flow(
                                 p, headed=headed, profile=profile, pinned=pinned
                             )
+                            info["media_id"] = (
+                                f"gallery-harvest:{tmp.stat().st_size if tmp.exists() else 0}"
+                            )
+                            info["bytes"] = tmp.stat().st_size if tmp.exists() else 0
 
                         veo.strip_audio(tmp)
                         dur = probe_dur(tmp)
@@ -228,7 +252,7 @@ def main() -> None:
                                 "mode": "t2v",
                                 "duration": dur,
                                 "bytes": size,
-                                **info,
+                                **{k: v for k, v in info.items() if k != "needs_gallery_harvest"},
                             }
                         )
                         META.write_text(json.dumps(meta, indent=2) + "\n")
@@ -238,18 +262,10 @@ def main() -> None:
                     except Exception as e:  # noqa: BLE001
                         last_err = e
                         print(f"  error: {e}", flush=True)
-                        # If harvest closed the browser mid-failure, relaunch for retry.
-                        dead = False
-                        try:
-                            _ = page.url  # type: ignore[union-attr]
-                        except Exception:
-                            dead = True
-                        if dead or "has been closed" in str(e).lower():
-                            print("  page dead — relaunching before retry", flush=True)
-                            safe_close(ctx)
-                            ctx, page = open_flow(
-                                p, headed=headed, profile=profile, pinned=pinned
-                            )
+                        safe_close(ctx)
+                        ctx, page = open_flow(
+                            p, headed=headed, profile=profile, pinned=pinned
+                        )
                 if not ok:
                     META.write_text(json.dumps(meta, indent=2) + "\n")
                     raise SystemExit(f"STOP: failed {pid}: {last_err}")

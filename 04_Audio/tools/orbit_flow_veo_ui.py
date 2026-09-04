@@ -2099,7 +2099,18 @@ def harvest_agent_gallery_mp4(
                     target.click(timeout=5_000)
                 download = di.value
                 tmp = dest.with_suffix(".download.tmp")
-                download.save_as(str(tmp))
+                try:
+                    download.save_as(str(tmp))
+                except Exception as e:
+                    # Detail chrome sometimes closes the page as the file lands.
+                    print(f"  gallery Download save_as warn: {e}", flush=True)
+                    try:
+                        src = download.path()
+                        if src:
+                            Path(tmp).write_bytes(Path(src).read_bytes())
+                    except Exception as e2:
+                        print(f"  gallery Download path warn: {e2}", flush=True)
+                        raise
                 raw = tmp.read_bytes()
                 tmp.unlink(missing_ok=True)
                 if len(raw) > 150_000:
@@ -2854,41 +2865,28 @@ def _generate_clip_once(
         page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
     )
     if isinstance(media_id, str) and media_id.startswith("gallery-pending:"):
-        print(f"  {media_id} — harvesting via fresh browser subprocess", flush=True)
-        import subprocess as _sp
-        harvester = (
-            Path(__file__).resolve().parents[2]
-            / "02_Video-Projects"
-            / "002_How-Did-We-Discover-The-Periodic-Table"
-            / "07_Edit-Project"
-            / "_harvest_newest_gallery_v01.py"
-        )
-        # Prefer sibling path relative to this tool when HOS layout differs
-        if not harvester.exists():
-            harvester = Path(__file__).resolve().parent.parent.parent / (
-                "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/"
-                "07_Edit-Project/_harvest_newest_gallery_v01.py"
-            )
+        # Do NOT close Chromium here — closing the persistent profile mid-gen
+        # was SIGPIPE-killing the mint process. Caller closes, settles, harvests.
+        print(f"  {media_id} — caller must fresh-browser harvest", flush=True)
+        context_closed = False
         proj_url = getattr(page, "_orbit_flow_project_url", None) or (page.url or "")
-        # Close mint browser before harvest to avoid profile lock / crash coupling
-        try:
-            page.context.close()
-        except Exception:
-            pass
-        env = dict(os.environ)
-        if proj_url:
-            env["HOS_FLOW_PROJECT_URL"] = proj_url.split("?")[0].rstrip("/")
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        cmd = [sys.executable, "-u", str(harvester), "--out", str(dest)]
-        if env.get("HOS_FLOW_PROJECT_URL"):
-            cmd += ["--project", env["HOS_FLOW_PROJECT_URL"]]
-        # Give Veo wall-clock time to finish after we abandon the mint browser.
-        settle = int(os.environ.get("HOS_FLOW_HARVEST_SETTLE_S", "55"))
-        print(f"  settle {settle}s for gen to finish before harvest…", flush=True)
-        time.sleep(settle)
-        print(f"  spawn harvest: {' '.join(cmd)}", flush=True)
-        _sp.check_call(cmd, env=env)
-        media_id = f"gallery-subprocess:{dest.stat().st_size if dest.exists() else 0}"
+        return {
+            "seconds": round(time.time() - t0, 1),
+            "bytes": 0,
+            "model": model,
+            "engine": "flow-ui-veo",
+            "orbit_ref": str(ref) if ref and start_frame is None and not scenery_only else None,
+            "start_frame": str(start_frame) if start_frame else None,
+            "orbit_attached": attached,
+            "identity_lock": (not scenery_only) and start_frame is None,
+            "scenery_only": scenery_only,
+            "media_id": media_id,
+            "url": proj_url,
+            "context_closed": False,
+            "needs_gallery_harvest": True,
+            "project_url": (proj_url or "").split("?")[0].rstrip("/"),
+        }
+
         context_closed = True
     else:
         context_closed = False
