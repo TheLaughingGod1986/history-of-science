@@ -1018,6 +1018,17 @@ def configure_veo_settings(
             pass
         page.wait_for_timeout(400)
 
+    # Agent UI (Sep 2026): skip slow legacy Image/Video tab lock — it hangs on
+    # /u/1/ projects. Force x1 on the bottom Video pill and continue.
+    if "/u/1/" in (page.url or "") or "flow.google.com" in (page.url or ""):
+        print("  Agent UI: skip legacy settings lock; force x1 only", flush=True)
+        force_outputs_x1(page)
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        return
+
     # Legacy prompt-bar popover path — soft-fail on Sep 2026 Agent UI
     # (new /u/1/ projects expose "Video · 720p · 8s · xN" pill, not Image/Video tabs).
     try:
