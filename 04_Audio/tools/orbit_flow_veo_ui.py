@@ -199,7 +199,14 @@ def launch_context(playwright, *, headed: bool, profile: Path, slow_mo: int = 0)
         pass
     # HOS mint must stay on Flow — Chrome profile can auto-open Orbit Facebook.
     def _abort_social(route):
-        route.abort()
+        # fulfill empty instead of abort — abort() was crashing the renderer mid-gen
+        try:
+            route.fulfill(status=204, body=b"")
+        except Exception:
+            try:
+                route.abort()
+            except Exception:
+                pass
 
     for host in (
         "**/facebook.com/**",
@@ -2177,10 +2184,8 @@ def wait_and_download(
         except Exception:
             pass
 
-    try:
-        page.on("response", _on_response)
-    except Exception:
-        pass
+    # Response body capture disabled during wait — it crashes Chrome on Agent UI.
+    # Gallery harvest uses expect_response around play after 100%.
     while time.time() - t0 < timeout_s:
         # Stay on Flow — profile sometimes drifts to Facebook/Threads overlays.
         url = page.url or ""

@@ -5,6 +5,8 @@ Applies PART01_LESSONS physics lock. Explorer once on 05 (T2V identity lock).
 Duration guard rejects contamination outside ~6–12s.
 """
 from __future__ import annotations
+import faulthandler
+faulthandler.enable()
 
 import json
 import traceback
