@@ -12,6 +12,7 @@
 | Field | Value |
 |---|---|
 | Title (locked) | How Did We Discover Germs? |
+| YouTube id | `_C92tIJCk8A` |
 | Premiere | **Thursday 3 Sep 2026 18:00 Europe/London** · @HistoryOfScienceYT only |
 | Shorts start | **Friday 4 Sep 2026 11:30 Europe/London** (after long listing exists) |
 | First public | This **full film** — **do not** lead the channel with a Short |
@@ -24,13 +25,13 @@
 
 | # | Slot (London) | Locked title | YouTube id | Status (4 Sep audit) |
 |---|---|---|---|---|
-| 01 | **Fri 4 Sep 11:30** | Germs don't cast a shadow | `8uBR-9oxeWs` | **Public** |
-| 02 | **Sat 5 Sep 11:30** | Microbes in a drop of pond water | `YX2UR1u-JCQ` | Scheduled |
-| 03 | **Sun 6 Sep 11:30** | Germs hitch a ride on you | `Fnb3p81u-wY` | Scheduled |
-| 04 | **Mon 7 Sep 11:30** | A flask that proved germs come from outside | `vpuRgKXtFlY` | Scheduled |
-| 05 | **Tue 8 Sep 11:30** | Invisible life is still everywhere | `Lcmh5y2KMQM` | Scheduled |
+| 01 | **Fri 4 Sep 11:30** | Germs don't cast a shadow | `8uBR-9oxeWs` | **Public** · pin PASS |
+| 02 | **Sat 5 Sep 11:30** | Microbes in a drop of pond water | `YX2UR1u-JCQ` | Scheduled · Related PASS |
+| 03 | **Sun 6 Sep 11:30** | Germs hitch a ride on you | `Fnb3p81u-wY` | Scheduled · Related PASS |
+| 04 | **Mon 7 Sep 11:30** | A flask that proved germs come from outside | `vpuRgKXtFlY` | Scheduled · Related PASS |
+| 05 | **Tue 8 Sep 11:30** | Invisible life is still everywhere | `Lcmh5y2KMQM` | Scheduled · Related PASS |
 
-All Shorts: punch from **this film only** · captions whole way · curiosity-gap end · description = film title + long URL only · **zero `/go/`** · Related ▶ long · pin full-film comment when public.
+All Shorts: punch from **this film only** · captions whole way · curiosity-gap end · description = film title + long URL only · **zero `/go/`** · Related ▶ long · pin full-film comment when public (s01 done; s02–s05 on publish day).
 
 Optional reserve (Private): “Your Body Is a City of Tiny Lives” — only if 01–05 ship clean.
 

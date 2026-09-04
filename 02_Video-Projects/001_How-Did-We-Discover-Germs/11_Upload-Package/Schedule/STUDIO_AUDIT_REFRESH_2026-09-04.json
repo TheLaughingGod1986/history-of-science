@@ -1,0 +1,64 @@
+{
+  "auditedAt": "2026-09-04T15:45:00+01:00",
+  "channel": "History of Science",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "handle": "@HistoryOfScienceYT",
+  "long": {
+    "id": "_C92tIJCk8A",
+    "title": "How Did We Discover Germs?",
+    "visibility": "Public",
+    "duration": "6:05",
+    "hasGo": false,
+    "chapters": true,
+    "endScreen": "1 video, 1 subscribe",
+    "thumbnailAbc": "Running"
+  },
+  "shorts": {
+    "s01": {
+      "id": "8uBR-9oxeWs",
+      "title": "Germs don't cast a shadow",
+      "visibility": "Public",
+      "related": "How Did We Discover Germs?",
+      "hasGo": false,
+      "descHasLongId": true,
+      "pin": {
+        "status": "pinned",
+        "text": "Full film \u2014 How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A",
+        "commentId": "Ugxuzdv7rIU_rCnWH5J4AaABAg"
+      }
+    },
+    "s02": {
+      "id": "YX2UR1u-JCQ",
+      "title": "Microbes in a drop of pond water",
+      "visibility": "Scheduled",
+      "related": "How Did We Discover Germs?",
+      "hasGo": false,
+      "descHasLongId": true
+    },
+    "s03": {
+      "id": "Fnb3p81u-wY",
+      "title": "Germs hitch a ride on you",
+      "visibility": "Scheduled",
+      "related": "How Did We Discover Germs?",
+      "hasGo": false,
+      "descHasLongId": true
+    },
+    "s04": {
+      "id": "vpuRgKXtFlY",
+      "title": "A flask that proved germs come from outside",
+      "visibility": "Scheduled",
+      "related": "How Did We Discover Germs?",
+      "hasGo": false,
+      "descHasLongId": true
+    },
+    "s05": {
+      "id": "Lcmh5y2KMQM",
+      "title": "Invisible life is still everywhere",
+      "visibility": "Scheduled",
+      "related": "How Did We Discover Germs?",
+      "hasGo": false,
+      "descHasLongId": true
+    }
+  },
+  "verdict": "PASS \u2014 public SEO + Related + pin complete; schedule intact"
+}
