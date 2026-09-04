@@ -1838,15 +1838,20 @@ def dismiss_soft_prompts(page) -> None:
 
 
 def confirm_generation_spend(page, *, timeout_s: float = 12.0) -> bool:
-    """Click the post-Create Ultra credit / model confirmation if it appears."""
+    """Click the post-Create Ultra credit / model confirmation if it appears.
+
+    Do NOT treat ambient 'AI credits' chrome as a dialog — that used to re-click
+    the main Create arrow_forward and stall/resubmit forever.
+    """
     deadline = time.time() + timeout_s
     clicked = False
     while time.time() < deadline:
         hit = page.evaluate(
             """() => {
+              // Only act when a real confirmation dialog/sheet is visible.
               const body = (document.body && document.body.innerText) || '';
-              const needs =
-                /going to generate|Veo 3\\.1|credits|high demand|in the queue/i.test(body);
+              const dialogish = /going to generate|about to generate|use \\d+ credits|spend \\d+ credits|high demand|in the queue|confirm generation/i.test(body);
+              if (!dialogish) return null;
               const labels = [
                 /^Confirm$/i, /^Generate$/i, /^Approve$/i, /^Continue$/i,
                 /Generate (the )?video/i, /Create video/i, /Use \\d+ credits/i,
@@ -1856,22 +1861,11 @@ def confirm_generation_spend(page, *, timeout_s: float = 12.0) -> bool:
                 const t = (b.innerText || b.getAttribute('aria-label') || '')
                   .trim().replace(/\\n/g, ' ');
                 if (!t || t.length > 80) continue;
-                if (/never|cancel|dismiss|close|settings/i.test(t)) continue;
+                // Never re-fire the composer send control.
+                if (/never|cancel|dismiss|close|settings|arrow_forward|send/i.test(t)) continue;
                 for (const re of labels) {
                   if (re.test(t)) {
                     try { b.click(); return t.slice(0, 60); } catch (e) {}
-                  }
-                }
-              }
-              // Agent chat may expose a single primary action near "credits"
-              if (needs) {
-                for (const b of document.querySelectorAll('button')) {
-                  const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-                  const r = b.getBoundingClientRect();
-                  if (r.width > 40 && r.height > 24 &&
-                      /arrow_forward|send|check/i.test(t) &&
-                      !b.disabled) {
-                    try { b.click(); return 'arrow:' + t.slice(0, 40); } catch (e) {}
                   }
                 }
               }
@@ -1882,7 +1876,6 @@ def confirm_generation_spend(page, *, timeout_s: float = 12.0) -> bool:
             print(f"  confirmed generation spend via {hit!r}", flush=True)
             clicked = True
             page.wait_for_timeout(600)
-            # One pass is usually enough; keep looping briefly for stacked dialogs
         else:
             page.wait_for_timeout(400)
             if clicked:
@@ -2111,56 +2104,43 @@ def harvest_agent_gallery_mp4(
         print(f"  gallery harvest saved bytes={len(raw)}", flush=True)
         return f"gallery-network:{len(raw)}"
 
-    # Fallback: more_vert → Download (or right-click → Download)
-    try:
-        page.evaluate(
-            """(src) => {
-              const img = [...document.querySelectorAll('img')].find(i =>
-                (i.currentSrc || i.src || '') === src
-              );
-              if (!img) return;
-              const r = img.getBoundingClientRect();
-              img.dispatchEvent(new MouseEvent('mouseover', {bubbles:true}));
-              const more = [...document.querySelectorAll('button,[role="button"],span')]
-                .filter(n => /more_vert|More options/i.test(
-                  (n.innerText || '') + (n.getAttribute('aria-label') || '')
-                ));
-              for (const n of more) {
-                const mr = n.getBoundingClientRect();
-                if (Math.abs(mr.x - r.x) < r.width && Math.abs(mr.y - r.y) < r.height + 40) {
-                  n.click(); return;
-                }
-              }
-            }""",
-            target_src,
-        )
-        page.wait_for_timeout(500)
-        with page.expect_download(timeout=20_000) as di:
-            page.evaluate(
-                """() => {
-                  for (const n of document.querySelectorAll(
-                    'button,[role="button"],[role="menuitem"],li,span,a,div'
-                  )) {
-                    const t = ((n.innerText || '') + ' ' + (n.getAttribute('aria-label') || ''))
-                      .trim().toLowerCase();
-                    if (t === 'download' || t.startsWith('download\\n') ||
-                        (t.includes('download') && !t.includes('undownload') && t.length < 40)) {
-                      n.click(); return true;
-                    }
-                  }
-                  return false;
-                }"""
+    # Prefer network capture only — UI Download often closes the Agent page/context.
+    # Second play attempt with a longer wait if the first pass missed.
+    if len(captured_videos) <= before_n:
+        try:
+            print("  gallery harvest: retry play for network mp4", flush=True)
+            box = page.evaluate(
+                """(src) => {
+                  const img = [...document.querySelectorAll('img')].find(i =>
+                    (i.currentSrc || i.src || '') === src
+                  );
+                  if (!img) return null;
+                  const r = img.getBoundingClientRect();
+                  return {x:r.x, y:r.y, w:r.width, h:r.height};
+                }""",
+                target_src,
             )
-        dl = di.value
+            if box and box.get("w", 0) > 40:
+                page.mouse.move(box["x"] + box["w"] / 2, box["y"] + box["h"] / 2)
+                page.wait_for_timeout(300)
+                page.mouse.click(box["x"] + 28, box["y"] + 28)
+                page.wait_for_timeout(500)
+                page.mouse.click(box["x"] + box["w"] / 2, box["y"] + box["h"] / 2)
+            for _ in range(40):
+                page.wait_for_timeout(500)
+                if len(captured_videos) > before_n:
+                    break
+        except Exception as e:
+            print(f"  gallery retry play err: {e}", flush=True)
+
+    if len(captured_videos) > before_n:
+        raw = captured_videos[-1]
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dl.save_as(str(dest))
-        n = dest.stat().st_size if dest.exists() else 0
-        if n > 150_000:
-            print(f"  gallery UI Download bytes={n}", flush=True)
-            return f"gallery-ui-download:{n}"
-    except Exception as e:
-        print(f"  gallery Download miss: {e}", flush=True)
+        dest.write_bytes(raw)
+        print(f"  gallery harvest saved bytes={len(raw)}", flush=True)
+        return f"gallery-network:{len(raw)}"
     return None
+
 
 
 def absolute_media_url(name_or_url: str) -> str:
@@ -2211,9 +2191,7 @@ def wait_and_download(
     # getMediaUrlRedirect name from a placeholder/upload into the finished mp4.
     early_gate_s = max(5.0, float(min_elapsed_s or 0) * 0.35)
     captured_videos: list[bytes] = []
-    print("  wait_and_download: start", flush=True)
     before_asb = set(collect_gallery_asb_srcs(page))
-    print(f"  wait_and_download: before_asb={len(before_asb)}", flush=True)
     gallery_tries = 0
     last_gallery_try = 0.0
 
