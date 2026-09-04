@@ -21,9 +21,14 @@ sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 
 PROJ = Path(__file__).resolve().parents[1]
+_PLATES_V03 = PROJ / "07_Edit-Project/parts/part-02_plates_v03.json"
 _PLATES_V02 = PROJ / "07_Edit-Project/parts/part-02_plates_v02.json"
 _PLATES_V01 = PROJ / "07_Edit-Project/parts/part-02_plates_v01.json"
-PLATES_JSON = _PLATES_V02 if _PLATES_V02.exists() else _PLATES_V01
+PLATES_JSON = (
+    _PLATES_V03
+    if _PLATES_V03.exists()
+    else (_PLATES_V02 if _PLATES_V02.exists() else _PLATES_V01)
+)
 MODEL = "Veo 3.1 - Fast"
 PROFILE = Path(
     os.environ.get(
@@ -45,13 +50,17 @@ PHYSICS = (
     "OPAQUE ceramic jars / sealed metal canisters only when props appear. "
     "ZERO clear glass flasks with liquid. ZERO bubbles floating in air. "
     "ZERO floating glassware. Objects sit IN or ON contact surfaces. "
-    "ZERO flames. ZERO fire. ZERO open burners. ZERO pots on fire. "
-    "ZERO glowing vapor rising from jar mouths. Colourless heat shimmer only if any. "
+    "FIRE RULE (hard): the ONLY allowed flame is a candle wick in a candlestick or wall sconce. "
+    "ZERO spirit lamps. ZERO Bunsen burners. ZERO tripod burners. ZERO open fire under any pot, jar, crucible, or canister. "
+    "Jars, pots, canisters, crucibles MUST NEVER be on fire and MUST NEVER sit above a flame. "
+    "ZERO flames, smoke plumes, or glowing vapor from jar or pot mouths. "
+    "ZERO pots on fire. ZERO jars on fire. "
 )
 CARD_LOCK = (
-    "If this is a SCIENCE CARD: exact title and body text must be sharp readable "
+    "If this is a full-frame SCIENCE CARD: exact title and body text must be sharp readable "
     "English as given — correct spelling, factual, no Latin gibberish, no Sciener, "
     "no invented words, no blurry nonsense text. "
+    "For scenery plates: NO readable text / NO information cards filling the frame. "
 )
 
 
