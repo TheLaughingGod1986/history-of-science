@@ -2012,12 +2012,7 @@ def harvest_agent_gallery_mp4(
     *,
     before_asb: set[str] | None = None,
 ) -> str | None:
-    """Open an Agent gallery card and save its mp4 (Download, else googlevideo).
-
-    New Flow Agent UI never emits getMediaUrlRedirect ids. Completed clips sit
-    in All media as /asb/ thumbs. Opening a card shows a detail/editor chrome
-    with a Download control; playing may also fire googlevideo videoplayback.
-    """
+    """Open an Agent gallery card and save its mp4 (Download / video src / googlevideo)."""
     before_asb = before_asb or set()
     try:
         page.evaluate(
@@ -2081,42 +2076,76 @@ def harvest_agent_gallery_mp4(
         return f"{via}:{len(raw)}"
 
     def _click_download() -> bytes | None:
-        # Detail chrome: download icon / button near top-right.
-        candidates = [
-            page.get_by_role("button", name=re.compile(r"download", re.I)),
-            page.locator('button[aria-label*="Download" i], [aria-label*="Download" i]'),
-            page.locator('button:has-text("download"), button:has-text("Download")'),
-            page.locator('text=/^download$/i'),
+        selectors = [
+            'button[aria-label*="Download" i]',
+            '[aria-label*="Download" i]',
+            'button:has-text("Download")',
+            'button:has-text("download")',
         ]
-        for loc in candidates:
+        for sel in selectors:
+            loc = page.locator(sel)
             try:
-                if loc.count() < 1:
+                if loc.count() < 1 or not loc.first.is_visible():
                     continue
-                target = loc.first
-                if not target.is_visible():
-                    continue
-                with page.expect_download(timeout=25_000) as di:
-                    target.click(timeout=5_000)
-                download = di.value
                 tmp = dest.with_suffix(".download.tmp")
                 try:
-                    download.save_as(str(tmp))
-                except Exception as e:
-                    # Detail chrome sometimes closes the page as the file lands.
-                    print(f"  gallery Download save_as warn: {e}", flush=True)
+                    with page.expect_download(timeout=30_000) as di:
+                        loc.first.click(timeout=5_000)
+                    download = di.value
+                    # Prefer path() — survives detail-chrome teardown better than save_as.
                     try:
                         src = download.path()
                         if src:
                             Path(tmp).write_bytes(Path(src).read_bytes())
-                    except Exception as e2:
-                        print(f"  gallery Download path warn: {e2}", flush=True)
-                        raise
+                        else:
+                            download.save_as(str(tmp))
+                    except Exception as e:
+                        print(f"  gallery Download path warn: {e}", flush=True)
+                        try:
+                            download.save_as(str(tmp))
+                        except Exception as e2:
+                            print(f"  gallery Download save_as warn: {e2}", flush=True)
+                            if tmp.exists() and tmp.stat().st_size > 150_000:
+                                raw = tmp.read_bytes()
+                                tmp.unlink(missing_ok=True)
+                                return raw
+                            continue
+                except Exception as e:
+                    print(f"  gallery Download warn: {e}", flush=True)
+                    if tmp.exists() and tmp.stat().st_size > 150_000:
+                        raw = tmp.read_bytes()
+                        tmp.unlink(missing_ok=True)
+                        return raw
+                    continue
+                if not tmp.exists():
+                    continue
                 raw = tmp.read_bytes()
                 tmp.unlink(missing_ok=True)
                 if len(raw) > 150_000:
                     return raw
             except Exception as e:
                 print(f"  gallery Download miss: {e}", flush=True)
+        return None
+
+    def _fetch_video_src() -> bytes | None:
+        try:
+            src = page.evaluate(
+                """() => {
+                  const v = document.querySelector('video');
+                  if (!v) return null;
+                  return v.currentSrc || v.src || null;
+                }"""
+            )
+            if not src or src.startswith("blob:"):
+                return None
+            resp = page.context.request.get(src, timeout=120_000)
+            if resp.status != 200:
+                return None
+            body = resp.body()
+            if len(body) > 150_000 and b"ftyp" in body[:64]:
+                return body
+        except Exception as e:
+            print(f"  gallery video-src fetch miss: {e}", flush=True)
         return None
 
     def _capture_googlevideo(play_click) -> bytes | None:
@@ -2139,30 +2168,28 @@ def harvest_agent_gallery_mp4(
             print(f"  gallery expect_response play err: {e}", flush=True)
         return None
 
-    # 1) Open the card in detail/editor chrome.
     geo = _scroll_target()
     if not geo:
         return None
     try:
         page.mouse.click(geo["cx"], geo["cy"])
-        page.wait_for_timeout(1200)
+        page.wait_for_timeout(1500)
     except Exception as e:
         print(f"  gallery open click err: {e}", flush=True)
 
-    # 2) Prefer explicit Download (reliable on detail chrome).
     raw = _click_download()
     if raw:
         got = _save(raw, "gallery-download")
         if got:
-            try:
-                page.keyboard.press("Escape")
-            except Exception:
-                pass
             return got
 
-    # 3) Fall back: play in viewer and capture googlevideo.
+    raw = _fetch_video_src()
+    if raw:
+        got = _save(raw, "gallery-video-src")
+        if got:
+            return got
+
     def _play():
-        # Timeline / viewer play control, else re-click center of preview.
         try:
             play = page.get_by_role("button", name=re.compile(r"play", re.I))
             if play.count() > 0 and play.first.is_visible():
