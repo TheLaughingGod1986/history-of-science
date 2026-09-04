@@ -21,7 +21,9 @@ sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 
 PROJ = Path(__file__).resolve().parents[1]
-PLATES_JSON = PROJ / "07_Edit-Project/parts/part-02_plates_v01.json"
+_PLATES_V02 = PROJ / "07_Edit-Project/parts/part-02_plates_v02.json"
+_PLATES_V01 = PROJ / "07_Edit-Project/parts/part-02_plates_v01.json"
+PLATES_JSON = _PLATES_V02 if _PLATES_V02.exists() else _PLATES_V01
 MODEL = "Veo 3.1 - Fast"
 PROFILE = Path(
     os.environ.get(
@@ -32,17 +34,24 @@ PROFILE = Path(
 PINNED_DEFAULT = (
     "https://flow.google.com/u/1/project/30a34afb-8d9c-4eac-83ba-012d97f6b1b5"
 )
+# Science-card remints NEED readable English. Do not forbid text.
 STYLE = (
     "History of Science locked look: premium Animistry-class 3D cartoon like Germs "
-    "Part 01 and Periodic Table Part 01 PASS — warm wood period workshop, cinematic light. "
+    "Part 01 PASS — warm wood, cream parchment science cards when asked. "
     "Not photoreal. Not live-action. Not a modern lab. Silent picture. "
-    "No readable text, logos, or UI. No Orbit orange robot. Continuous motion the whole clip. "
+    "No Orbit orange robot. Continuous motion the whole clip. "
 )
 PHYSICS = (
-    "Prefer OPAQUE ceramic jars / sealed metal canisters / solid cylinders. "
+    "OPAQUE ceramic jars / sealed metal canisters only when props appear. "
     "ZERO clear glass flasks with liquid. ZERO bubbles floating in air. "
     "ZERO floating glassware. Objects sit IN or ON contact surfaces. "
-    "Heat shimmer colourless only — no flames unless asked. "
+    "ZERO flames. ZERO fire. ZERO open burners. ZERO pots on fire. "
+    "ZERO glowing vapor rising from jar mouths. Colourless heat shimmer only if any. "
+)
+CARD_LOCK = (
+    "If this is a SCIENCE CARD: exact title and body text must be sharp readable "
+    "English as given — correct spelling, factual, no Latin gibberish, no Sciener, "
+    "no invented words, no blurry nonsense text. "
 )
 
 
@@ -50,11 +59,19 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--plate-id", required=True)
     ap.add_argument("--out", type=Path, required=True)
+    ap.add_argument(
+        "--plates-json",
+        type=Path,
+        default=PLATES_JSON,
+        help="Plates JSON (default: v02 if present else v01)",
+    )
     args = ap.parse_args()
 
-    plates = {p["id"]: p for p in json.loads(PLATES_JSON.read_text())["plates"]}
+    plates = {p["id"]: p for p in json.loads(args.plates_json.read_text())["plates"]}
     plate = plates[args.plate_id]
-    prompt = f"{STYLE} {PHYSICS} {plate['prompt']}"
+    if plate.get("remint") is False:
+        raise SystemExit(f"plate {args.plate_id} marked remint=false — skip")
+    prompt = f"{STYLE} {PHYSICS} {CARD_LOCK} {plate['prompt']}"
     pinned = (
         os.environ.get("HOS_FLOW_PROJECT_URL")
         or os.environ.get("ORBIT_FLOW_PROJECT_URL")
@@ -66,7 +83,6 @@ def main() -> None:
     os.environ.setdefault("ORBIT_FLOW_FORCE_NEW_PROJECT", "0")
     headed = os.environ.get("ORBIT_FLOW_HEADED", "1") not in {"0", "false", "False"}
     profile = flow.profile_path(PROFILE)
-    reuse = True
 
     from playwright.sync_api import sync_playwright
 
@@ -75,7 +91,10 @@ def main() -> None:
     if tmp.exists():
         tmp.unlink()
 
-    print(f"CREATE {args.plate_id} profile={profile}", flush=True)
+    print(
+        f"CREATE {args.plate_id} plates={args.plates_json.name} profile={profile}",
+        flush=True,
+    )
     with sync_playwright() as p:
         ctx, page = flow.launch_context(p, headed=headed, profile=profile)
         flow.ensure_flow_account(page)
@@ -88,15 +107,13 @@ def main() -> None:
             prompt,
             tmp,
             model=MODEL,
-            reuse_project=reuse,
+            reuse_project=True,
             attempts=1,
             timeout_s=420,
             start_frame=None,
             scenery_only=True,
         )
-        # Leave the with-block without closing mid-gen.
         if not info.get("needs_gallery_harvest"):
-            # Unexpected direct download path.
             if tmp.exists() and tmp.stat().st_size > 800_000:
                 if args.out.exists():
                     args.out.unlink()
@@ -104,8 +121,10 @@ def main() -> None:
                 print(f"SAVED_DIRECT {args.out}", flush=True)
                 return
             raise SystemExit(f"CREATE did not hand off to harvest: {info}")
-        print(f"HANDOFF {args.plate_id} media_id={info.get('media_id')}", flush=True)
-    # Force a hard exit so no Playwright destructor can kill a later wait.
+        print(
+            f"HANDOFF {args.plate_id} media_id={info.get('media_id')}",
+            flush=True,
+        )
     os._exit(0)
 
 
