@@ -2211,7 +2211,9 @@ def wait_and_download(
     # getMediaUrlRedirect name from a placeholder/upload into the finished mp4.
     early_gate_s = max(5.0, float(min_elapsed_s or 0) * 0.35)
     captured_videos: list[bytes] = []
+    print("  wait_and_download: start", flush=True)
     before_asb = set(collect_gallery_asb_srcs(page))
+    print(f"  wait_and_download: before_asb={len(before_asb)}", flush=True)
     gallery_tries = 0
     last_gallery_try = 0.0
 
