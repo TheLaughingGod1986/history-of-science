@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Drive remaining Part 02 plates one-by-one.
 # Create exits immediately on Agent handoff; shell settles + harvests.
+# Bash 3.2 compatible (macOS /bin/bash — no mapfile).
 set -euo pipefail
 EDIT="$(cd "$(dirname "$0")" && pwd)"
 PROJ="$(cd "$EDIT/.." && pwd)"
@@ -26,7 +27,8 @@ WAIT_S="${HOS_FLOW_HARVEST_WAIT_S:-180}"
 exec > >(tee -a "$LOG") 2>&1
 echo "drive Part 02 remaining start $(date -Iseconds)"
 
-mapfile -t NEED < <(python3 - <<PY
+NEED_FILE="$(mktemp)"
+python3 - <<PY >"$NEED_FILE"
 import json
 from pathlib import Path
 plates = json.loads(Path("$PLATES_JSON").read_text())["plates"]
@@ -36,7 +38,13 @@ for p in plates:
     if not (dest.exists() and dest.stat().st_size > 800_000):
         print(p["id"])
 PY
-)
+
+NEED=()
+while IFS= read -r line || [[ -n "$line" ]]; do
+  [[ -z "$line" ]] && continue
+  NEED+=("$line")
+done <"$NEED_FILE"
+rm -f "$NEED_FILE"
 
 echo "need ${#NEED[@]} plates: ${NEED[*]:-}"
 if [[ ${#NEED[@]} -eq 0 ]]; then
