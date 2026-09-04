@@ -16,7 +16,7 @@ BED = PROJ / "05_Music/hos_002_part01_curious_workshop_v02_norm.wav"
 MID = PROJ / "05_Music/hos_002_part01_curious_workshop_v02.mid"
 SF2 = GERMS_MUSIC / "TimGM6mb.sf2"
 BED_RAW = PROJ / "05_Music/hos_002_part01_curious_workshop_v02.wav"
-OUT = PROJ / "09_Final-Export/hos_002_part02_rough_v01.mp4"
+OUT = PROJ / "09_Final-Export/hos_002_part02_rough_v02.mp4"
 ICLOUD = Path("/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT")
 CLIP_USE = 8.0
 XFADE = 0.4
@@ -139,12 +139,16 @@ def main() -> None:
     ICLOUD.mkdir(parents=True, exist_ok=True)
     dest = ICLOUD / OUT.name
     subprocess.run(["cp", "-f", str(OUT), str(dest)], check=True)
-    watch = ICLOUD / "WATCH_part02_v01.txt"
+    watch = ICLOUD / "WATCH_part02_v02.txt"
     watch.write_text(
         "WATCH THIS FILE ONLY:\n"
         f"  {OUT.name}\n\n"
-        "Part 02 — First Patterns, Still Wrong.\n"
-        "Part 01 is PASS (v11). Reject with stills from THIS file only.\n"
+        "Part 02 — First Patterns, Still Wrong (v02 UAT fix).\n"
+        "Science cards kept — now exact English + factual.\n"
+        "Workshop fire / flaming pots removed (cards 02–11 are local parchment).\n"
+        "Plate 01 chapter card kept from prior PASS-style mint.\n"
+        "Part 01 is PASS. Reject with stills from THIS file only.\n"
+        "Do NOT start Part 03 until Ben PASSes this cut.\n"
     )
     print(f"ICLOUD {dest} sha256={sha256(dest)}", flush=True)
 
