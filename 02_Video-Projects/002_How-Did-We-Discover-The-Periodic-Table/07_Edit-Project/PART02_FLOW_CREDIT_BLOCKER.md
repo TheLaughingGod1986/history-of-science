@@ -1,45 +1,17 @@
-# Part 02 Flow Ultra — credit / usage blocker
+# Part 02 Flow credit / harvest notes (4 Sep 2026)
 
-**Date:** 2026-09-04 (updated after AI-credit account switch)  
-**Status:** UNBLOCKED path — use `benoats@googlemail.com` (AI credits), not `benoats86@gmail.com`
+## Account
+- Use `benoats@googlemail.com` on `https://flow.google.com/u/1/` (AI credits fallback).
+- `benoats86@gmail.com` is Flow-credit-only and hits usage limits — do not mint there.
 
-## Account split (root cause)
+## Harvest (Agent UI)
+- Agent UI does **not** emit `getMediaUrlRedirect` ids after 100%.
+- Working path: play gallery `/asb/` thumb → capture mp4 via `page.expect_response` (googlevideo).
+- Do **not** call `resp.body()` on googlevideo in a global response listener (crashes Chrome).
+- Do **not** use UI Download on Agent (often closes the page/context).
+- Force outputs **x1** before Create (pill often defaults to x2).
 
-| Account | Flow credits | AI credits | Notes |
-|---|---|---|---|
-| `benoats86@gmail.com` (Playwright default) | exhausted / daily Flow pool | not shown | mint failed here |
-| `benoats@googlemail.com` (phone / Ultra) | **0** | **~900+** | “Used when you're out of Google Flow credits” |
-
-Mint now calls `ensure_flow_account()` → AccountChooser → googlemail before Create.
-
-## What happened
-
-1. Part 01 PASS is locked. Part 02 VO + 11 plates + assemble script are ready.
-2. Flow UI automation works (`flow.google.com`, Veo 3.1 Fast, scenery-only).
-3. Create submits, then Flow returns:
-   - "You've reached your usage limit. Please try again later."
-   - "I've tried starting that video again, but it was declined because your credit limit has been reached."
-4. Soft-retry / refresh cannot mint new plates without credits.
-5. Gemini API fallback is unavailable — `GEMINI_API_KEY` / `GOOGLE_API_KEY` are empty in project `.env`.
-
-## Salvage
-
-Gallery shows ~2 prior successful scenery thumbnails, but UI “Download” pulls were **corrupt** (`moov atom not found` — not usable mp4s). Treat salvage as failed until credits allow a fresh mint (or a working media-URL download path).
-
-## Unblock options (Ben)
-
-1. **Wait** for Google One AI Ultra Flow credits / daily usage to refresh, then re-run:
-   ```bash
-   cd "/Users/benjaminoats/YouTube/History Of Science"
-   ORBIT_FLOW_PROFILE="$HOME/.playwright-hos-flow-profile" ORBIT_FLOW_HEADED=1 \
-     /tmp/hos-flow-venv/bin/python -u \
-     02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_mint_part02_flow_v01.py
-   ```
-2. **Top up / confirm Ultra** subscription credits in Google One / Flow.
-3. Optionally put a real `GEMINI_API_KEY` in `07_Edit-Project/.env` for API Veo lite fallback (not preferred; Flow-first rule).
-
-## After credits return
-
-1. Mint 11 plates → `_assemble_part02_rough_v01.py`
-2. Copy rough **only** to iCloud `HOS UAT/`
-3. **STOP for Ben UAT** — no Part 03 until PASS
+## Status
+- Plate 01: salvaged chapter card (text QA for Ben).
+- Plate 02: salvaged lavoisier-list-like desk plate.
+- Remaining plates: remint with harvest fix; stop after Part 02 rough for Ben UAT.
