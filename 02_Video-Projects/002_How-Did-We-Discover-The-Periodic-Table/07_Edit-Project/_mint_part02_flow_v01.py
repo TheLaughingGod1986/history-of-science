@@ -11,8 +11,12 @@ then Download-harvest in a fresh process.
 from __future__ import annotations
 
 import faulthandler
+import signal
 
 faulthandler.enable()
+signal.signal(signal.SIGPIPE, signal.SIG_IGN)
+signal.signal(signal.SIGHUP, signal.SIG_IGN)
+signal.signal(signal.SIGTERM, signal.SIG_DFL)
 
 import json
 import os
@@ -103,7 +107,10 @@ def run_harvest(dest: Path, project_url: str) -> None:
     settle = int(os.environ.get("HOS_FLOW_HARVEST_SETTLE_S", "70"))
     wait_s = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "180"))
     print(f"  settle {settle}s then harvest wait_s={wait_s}", flush=True)
-    time.sleep(settle)
+    # Sleep in small slices so a late Playwright SIGPIPE cannot kill a long sleep.
+    end = time.time() + settle
+    while time.time() < end:
+        time.sleep(min(5.0, max(0.1, end - time.time())))
     env = dict(os.environ)
     env["HOS_FLOW_PROJECT_URL"] = project_url
     cmd = [
@@ -118,7 +125,21 @@ def run_harvest(dest: Path, project_url: str) -> None:
         str(wait_s),
     ]
     print(f"  spawn harvest: {' '.join(cmd)}", flush=True)
-    subprocess.check_call(cmd, env=env)
+    # Detach from any leftover Playwright process group.
+    proc = subprocess.Popen(
+        cmd,
+        env=env,
+        start_new_session=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+    )
+    assert proc.stdout is not None
+    for line in proc.stdout:
+        print(line, end="", flush=True)
+    rc = proc.wait()
+    if rc != 0:
+        raise RuntimeError(f"harvest exited {rc}")
 
 
 def mint_one_plate(
@@ -162,12 +183,6 @@ def mint_one_plate(
     if info.get("needs_gallery_harvest"):
         project_url = info.get("project_url") or pinned
         print("  playwright session ended — settling for harvest…", flush=True)
-        subprocess.run(
-            ["pkill", "-f", "playwright-hos-flow-profile"],
-            check=False,
-            capture_output=True,
-        )
-        time.sleep(2)
         run_harvest(tmp, project_url)
         info["media_id"] = f"gallery-harvest:{tmp.stat().st_size if tmp.exists() else 0}"
         info["bytes"] = tmp.stat().st_size if tmp.exists() else 0
