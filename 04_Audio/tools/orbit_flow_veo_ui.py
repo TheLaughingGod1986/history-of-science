@@ -36,7 +36,8 @@ sys.path.insert(0, str(TOOLS))
 
 import orbit_gemini_veo as veo  # noqa: E402 — shared prompt lock / strip_audio
 
-FLOW_HOME = "https://labs.google/fx/tools/flow"
+# Flow home moved off labs.google (still redirects, but native host is flow.google.com).
+FLOW_HOME = "https://flow.google.com/"
 DEFAULT_PROFILE = Path(
     os.environ.get(
         "ORBIT_FLOW_PROFILE",
@@ -106,9 +107,16 @@ def launch_context(playwright, *, headed: bool, profile: Path, slow_mo: int = 0)
         ctx = playwright.chromium.launch_persistent_context(**kwargs)
     page = ctx.pages[0] if ctx.pages else ctx.new_page()
     try:
-        ctx.grant_permissions(
-            ["clipboard-read", "clipboard-write"], origin="https://labs.google"
-        )
+        for origin in (
+            "https://labs.google",
+            "https://flow.google.com",
+        ):
+            try:
+                ctx.grant_permissions(
+                    ["clipboard-read", "clipboard-write"], origin=origin
+                )
+            except Exception:
+                pass
     except Exception:
         pass
     return ctx, page
@@ -219,8 +227,16 @@ def looks_logged_in(page) -> bool:
     low = body.lower()
     if "sign in" in low and "google flow" in low and "ultra" not in low:
         return False
-    return "labs.google" in url and (
-        "ultra" in low or "new project" in low or "/project/" in url
+    # Flow now serves from flow.google.com (labs.google/fx/tools/flow redirects).
+    on_flow = ("labs.google" in url) or ("flow.google.com" in url)
+    return on_flow and (
+        "ultra" in low
+        or "new project" in low
+        or "/project/" in url
+        or "create a character" in low
+        or "create characters" in low
+        or "flow music" in low
+        or "try the google flow agent" in low
     )
 
 
@@ -251,13 +267,26 @@ def click_visible(page, *needles: str, timeout: int = 8000) -> bool:
 
 
 def editor_box(page) -> dict | None:
+    """Locate the Flow create prompt box (Slate legacy or 2026 textarea/contenteditable)."""
     try:
         return safe_evaluate(
             page,
             """() => {
-              const el = document.querySelector('[data-slate-editor="true"]');
-              if (!el) return null;
-              const r = el.getBoundingClientRect();
+              const cands = [];
+              const push = (el) => {
+                if (!el) return;
+                const r = el.getBoundingClientRect();
+                if (r.width < 80 || r.height < 16) return;
+                if (r.bottom < 0 || r.top > (window.innerHeight || 900)) return;
+                cands.push({el, r, score: r.width * Math.min(Math.max(r.height, 18), 120) + (r.y > 200 ? 5000 : 0) + (r.y > 600 ? 8000 : 0)});
+              };
+              push(document.querySelector('[data-slate-editor="true"]'));
+              for (const el of document.querySelectorAll(
+                'textarea, [contenteditable="true"], [role="textbox"]'
+              )) push(el);
+              cands.sort((a, b) => b.score - a.score);
+              if (!cands.length) return null;
+              const r = cands[0].r;
               return {w: r.width, h: r.height, x: r.x, y: r.y};
             }""",
             retries=3,
@@ -275,9 +304,10 @@ def editor_usable(page) -> bool:
     # Closed session leaves a 0×0 or off-viewport editor node in the DOM
     try:
         vw = page.viewport_size["width"] if page.viewport_size else 1440
+        vh = page.viewport_size["height"] if page.viewport_size else 900
     except Exception:
-        vw = 1440
-    return 0 <= box["x"] < vw - 40 and box["y"] > 0
+        vw, vh = 1440, 900
+    return 0 <= box["x"] < vw - 40 and 0 <= box["y"] < vh - 20
 
 
 def ensure_agent_session(page) -> None:
@@ -342,7 +372,23 @@ def _ensure_project_once(page) -> str:
                 "Run once with --login on the Ultra Google account:\n"
                 "  python3 04_Audio/tools/orbit_flow_veo_ui.py --login"
             )
-        if not click_visible(page, "new project"):
+        clicked_new = click_visible(page, "new project")
+        if not clicked_new:
+            # Material button often renders as "add\nNew project"
+            clicked_new = bool(
+                page.evaluate(
+                    """() => {
+                      for (const b of document.querySelectorAll('button')) {
+                        const t = (b.innerText || '').replace(/\n/g, ' ').trim();
+                        if (/^add\\s*new project$/i.test(t) || /^new project$/i.test(t)) {
+                          b.click(); return true;
+                        }
+                      }
+                      return false;
+                    }"""
+                )
+            )
+        if not clicked_new:
             # Open most recent project card
             href = safe_evaluate(
                 page,
@@ -436,39 +482,147 @@ def read_selected_video_model(page) -> str | None:
 
 
 def _ensure_create_prompt_mode(page) -> None:
-    """Leave Agent-instructions mode so the Image/Video model pill is visible.
+    """Ensure Create can generate video.
 
-    Aug 2026 Flow UI: Agent mode shows tune/Settings + Agent Instructions and
-    hides the Nano Banana / Video · settings pill used for Veo selection.
+    Sep 2026 Flow UI: model selection lives in tune/Settings under
+    "Video generation default". Prompt-bar Video pill may be absent.
     """
-    has_pill = page.evaluate(
-        """() => [...document.querySelectorAll('button')].some(b =>
-          /Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(b.innerText || ''))"""
+    return
+
+
+def _open_agent_settings_drawer(page) -> None:
+    """Open the right-rail Agent settings drawer (tune / aria-label=Settings)."""
+    opened = page.evaluate(
+        r"""() => {
+          for (const b of document.querySelectorAll('button')) {
+            const a = (b.getAttribute('aria-label') || '').trim();
+            const t = (b.innerText || '').trim();
+            if (a === 'Settings' || t === 'tune') { b.click(); return a || t; }
+          }
+          return null;
+        }"""
     )
-    if has_pill:
-        return
-    # Agent Instructions visible → toggle Agent off
-    if page.locator("button").filter(has_text="Agent Instructions").count():
-        clicked = page.evaluate(
-            """() => {
-              for (const b of document.querySelectorAll('button')) {
-                const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-                if (t === 'Agent' || /^Agent$/i.test(t)) { b.click(); return true; }
-              }
-              return false;
-            }"""
-        )
-        if clicked:
-            page.wait_for_timeout(900)
-    has_pill = page.evaluate(
-        """() => [...document.querySelectorAll('button')].some(b =>
-          /Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(b.innerText || ''))"""
+    if not opened:
+        raise RuntimeError("Flow Settings (tune) button not found")
+    page.wait_for_timeout(900)
+    ok = page.evaluate(
+        r"""() => /Agent settings|Video generation default|Image generation default/i
+          .test(document.body.innerText || '')"""
     )
-    if not has_pill:
-        raise RuntimeError(
-            "Flow Create model pill not found (still in Agent mode?). "
-            "Toggle Agent off so Image/Video settings appear."
-        )
+    if not ok:
+        raise RuntimeError("Flow Agent settings drawer did not open")
+
+
+def _lock_veo_in_agent_settings(page, model: str) -> str:
+    """In Agent settings: Never confirm, pick Veo under Video generation default, Save."""
+    model = assert_veo3_model(model)
+    _open_agent_settings_drawer(page)
+
+    page.evaluate(
+        r"""() => {
+          for (const el of document.querySelectorAll('button,label,div,span')) {
+            const t = (el.innerText || '').trim();
+            if (t === 'Never') { el.click(); return true; }
+          }
+          return false;
+        }"""
+    )
+    page.wait_for_timeout(250)
+
+    page.evaluate(
+        r"""() => {
+          const labels = [...document.querySelectorAll('span,div')].filter(
+            el => (el.innerText || '').trim() === 'Video generation default'
+          );
+          if (!labels.length) return false;
+          const y0 = labels[0].getBoundingClientRect().y;
+          let best = null;
+          for (const b of document.querySelectorAll('button')) {
+            const t = (b.innerText || '').replace(/\n/g, ' ');
+            const r = b.getBoundingClientRect();
+            if (r.y < y0 || r.y > y0 + 120) continue;
+            if (/crop_16_9|\b16:9\b/.test(t)) {
+              if (!best || r.y < best.y) best = {b, y: r.y};
+            }
+          }
+          if (best) { best.b.click(); return true; }
+          return false;
+        }"""
+    )
+    page.wait_for_timeout(200)
+
+    page.evaluate(
+        r"""() => {
+          const labels = [...document.querySelectorAll('span,div')].filter(
+            el => (el.innerText || '').trim() === 'Video generation default'
+          );
+          if (!labels.length) return false;
+          const y0 = labels[0].getBoundingClientRect().y;
+          for (const b of document.querySelectorAll('button')) {
+            const t = (b.innerText || '').trim();
+            const r = b.getBoundingClientRect();
+            if (r.y < y0 + 40 || r.y > y0 + 200) continue;
+            if (t === 'x1') { b.click(); return true; }
+          }
+          return false;
+        }"""
+    )
+    page.wait_for_timeout(200)
+
+    opened = page.evaluate(
+        r"""() => {
+          const labels = [...document.querySelectorAll('span,div')].filter(
+            el => (el.innerText || '').trim() === 'Video generation default'
+          );
+          if (!labels.length) return 'no-label';
+          const y0 = labels[0].getBoundingClientRect().y;
+          let best = null;
+          for (const b of document.querySelectorAll('button')) {
+            const t = (b.innerText || '').replace(/\n/g, ' ').trim();
+            const r = b.getBoundingClientRect();
+            if (r.y < y0 || r.y > y0 + 220) continue;
+            if (/Omni|Veo|arrow_drop_down/i.test(t)) {
+              if (!best || r.y > best.y) best = {b, t, y: r.y};
+            }
+          }
+          if (!best) return 'no-dropdown';
+          best.b.click();
+          return best.t;
+        }"""
+    )
+    print(f"  video model dropdown: {opened!r}", flush=True)
+    page.wait_for_timeout(700)
+
+    wanted = [model, "Veo 3.1 - Fast", "Veo 3.1 - Lite", "Veo 3.1 - Quality", "Veo 3.1"]
+    selected = page.evaluate(
+        r"""(wanted) => {
+          for (const label of wanted) {
+            for (const b of document.querySelectorAll('[role=menuitem], button')) {
+              const t = (b.innerText || '').replace(/\n/g, ' ').trim();
+              if (t === label || t.includes(label)) { b.click(); return t; }
+            }
+          }
+          return null;
+        }""",
+        wanted,
+    )
+    if not selected:
+        raise RuntimeError(f"Could not select video model from {wanted}")
+    print(f"  video model selected: {selected}", flush=True)
+    page.wait_for_timeout(400)
+
+    saved = page.evaluate(
+        r"""() => {
+          for (const b of document.querySelectorAll('button')) {
+            if ((b.innerText || '').trim() === 'Save') { b.click(); return true; }
+          }
+          return false;
+        }"""
+    )
+    if not saved:
+        raise RuntimeError("Flow Agent settings Save button not found")
+    page.wait_for_timeout(900)
+    return selected
 
 
 def _open_prompt_settings_pill(page) -> None:
@@ -638,6 +792,19 @@ def configure_veo_settings(
     model = assert_veo3_model(model)
     dismiss_banners(page)
     _ensure_create_prompt_mode(page)
+
+    # --- Sep 2026 Agent settings drawer (flow.google.com) ---
+    try:
+        selected = _lock_veo_in_agent_settings(page, model)
+        print(f"  video model locked via Agent settings: {selected}", flush=True)
+        return
+    except Exception as e:
+        print(f"  Agent settings path failed ({e}); trying prompt pill…", flush=True)
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        page.wait_for_timeout(400)
 
     # --- New prompt-bar popover path ---
     try:
@@ -1195,43 +1362,82 @@ _PLACEHOLDER_RE = re.compile(
 
 
 def _editor_prompt_text(page) -> str:
-    """Return real editor text. Flow's placeholder must not count as a prompt."""
+    """Return real editor text. Flow placeholder text must not count as a prompt."""
     raw = page.evaluate(
         """() => {
-          const ed = document.querySelector('[data-slate-editor="true"]');
-          return (ed && (ed.innerText || '').trim()) || '';
+          const cands = [];
+          const push = (el) => {
+            if (!el) return;
+            const r = el.getBoundingClientRect();
+            if (r.width < 80 || r.height < 16) return;
+            if (r.bottom < 0 || r.top > (window.innerHeight || 900)) return;
+            cands.push({el, score: r.width * Math.min(Math.max(r.height, 18), 120) + (r.y > 200 ? 5000 : 0) + (r.y > 600 ? 8000 : 0)});
+          };
+          push(document.querySelector('[data-slate-editor="true"]'));
+          for (const el of document.querySelectorAll(
+            'textarea, [contenteditable="true"], [role="textbox"]'
+          )) push(el);
+          cands.sort((a, b) => b.score - a.score);
+          const ed = cands.length ? cands[0].el : null;
+          if (!ed) return '';
+          if (ed.tagName === 'TEXTAREA' || ed.tagName === 'INPUT') {
+            return (ed.value || '').trim();
+          }
+          return (ed.innerText || '').trim();
         }"""
     ) or ""
+    low = raw.strip().lower()
+    if not low:
+        return ""
+    if low.startswith("what do you want") or low.startswith("what would you like"):
+        return ""
     if _PLACEHOLDER_RE.match(raw.strip()):
         return ""
     return raw.strip()
 
 
 def _clear_editor(page) -> None:
-    """Wipe placeholder + leftover Slate text. Do not click the image chip."""
+    """Wipe placeholder + leftover editor text. Do not click the image chip."""
+    page.evaluate(
+        """() => {
+          const cands = [];
+          const push = (el) => {
+            if (!el) return;
+            const r = el.getBoundingClientRect();
+            if (r.width < 80 || r.height < 16) return;
+            cands.push({el, score: r.width * Math.min(Math.max(r.height, 18), 120) + (r.y > 200 ? 5000 : 0) + (r.y > 600 ? 8000 : 0)});
+          };
+          push(document.querySelector('[data-slate-editor="true"]'));
+          for (const el of document.querySelectorAll(
+            'textarea, [contenteditable="true"], [role="textbox"]'
+          )) push(el);
+          cands.sort((a, b) => b.score - a.score);
+          const ed = cands.length ? cands[0].el : null;
+          if (!ed) return;
+          ed.focus();
+          if (ed.tagName === 'TEXTAREA' || ed.tagName === 'INPUT') {
+            ed.value = '';
+            ed.dispatchEvent(new Event('input', {bubbles: true}));
+            return;
+          }
+          const sel = window.getSelection();
+          if (!sel) return;
+          const range = document.createRange();
+          range.selectNodeContents(ed);
+          sel.removeAllRanges();
+          sel.addRange(range);
+        }"""
+    )
     for combo in (("Meta+A", "Backspace"), ("Control+A", "Backspace")):
-        page.evaluate(
-            """() => {
-              const ed = document.querySelector('[data-slate-editor="true"]');
-              if (!ed) return;
-              ed.focus();
-              const sel = window.getSelection();
-              if (!sel) return;
-              const range = document.createRange();
-              range.selectNodeContents(ed);
-              sel.removeAllRanges();
-              sel.addRange(range);
-            }"""
-        )
         page.keyboard.press(combo[0])
         page.keyboard.press(combo[1])
         page.wait_for_timeout(80)
-    # Placeholder-only is fine; leftover "What do you want…" + prompt is not.
-    leftover = _editor_prompt_text(page)
-    if leftover.lower().startswith("what do you want"):
+    leftover = _editor_prompt_text(page).lower()
+    if leftover.startswith("what do you want") or leftover.startswith("what would you like"):
         page.keyboard.press("Meta+A")
         page.keyboard.press("Backspace")
         page.wait_for_timeout(80)
+
 
 
 def set_prompt(page, prompt: str) -> None:
@@ -1568,6 +1774,24 @@ def collect_media_ids(page) -> set[str]:
     return set(MEDIA_REDIRECT_RE.findall(html))
 
 
+def is_flow_video_url(url: str) -> bool:
+    """Reject non-Flow CDNs (Threads/Instagram pollution in shared Chrome profiles)."""
+    u = (url or "").lower()
+    if not u:
+        return False
+    bad = (
+        "threads.com",
+        "instagram.com",
+        "cdninstagram.com",
+        "facebook.com",
+        "fbcdn.net",
+        "scontent.",
+    )
+    if any(b in u for b in bad):
+        return False
+    return True
+
+
 def absolute_media_url(name_or_url: str) -> str:
     if name_or_url.startswith("http"):
         return name_or_url
@@ -1735,6 +1959,13 @@ def wait_and_download(
                             )
                             return vsrc
                     else:
+                        if not is_flow_video_url(vsrc):
+                            if int(elapsed) % 30 < 5:
+                                print(
+                                    f"  skip non-Flow video src {vsrc[:80]}",
+                                    flush=True,
+                                )
+                            continue
                         head = page.request.get(vsrc, timeout=60_000)
                         body_b = head.body()
                         if len(body_b) > 150_000 and (
@@ -1758,6 +1989,11 @@ def wait_and_download(
         # Flow often flashes "failed" while a usable mp4 is still arriving.
         # Soft-retry the UI; do not abort the whole wait on that banner alone.
         # But do not burn the full timeout once retries are exhausted.
+        body_low = (page.inner_text("body") or "").lower()
+        if "generation quota for today" in body_low or "reached your generation quota" in body_low:
+            raise RuntimeError(
+                "Flow daily generation quota reached — stop minting (do not harvest foreign CDNs)"
+            )
         if status == "failed":
             if failed_since is None:
                 failed_since = time.time()
