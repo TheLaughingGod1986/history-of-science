@@ -185,24 +185,16 @@ def main() -> None:
     subprocess.run(["cp", "-f", str(OUT), str(dest)], check=True)
     watch = ICLOUD / "WATCH_part01_v13.txt"
     watch.write_text(
-        "WATCH THIS FILE ONLY (Part 01 remint rough v13):
-"
-        f"  {OUT.name}
-
-"
-        "Plate 10 remint only (UAT FAIL ~69–76s):
-"
-        "- Colourless heat shimmer under ore grate (NO orange / fire / embers)
-"
-        "- KEEP from v12: motion MAD · Animistry side labels · ore IN brass pan · no flask beside scale
-"
-        "- Explorer once · British VO · 3D cartoon · no Ken Burns
-
-"
-        "Do not ping Ben. Do not score UAT here — hand to HOS UAT.
-"
-        f"sha256={digest}
-"
+        "WATCH THIS FILE ONLY (Part 01 remint rough v13):\n"
+        f"  {OUT.name}\n\n"
+        "Ben unlocked motion remint 5 Sep. Gate:\n"
+        "- Real Veo every beat (no Ken Burns hero)\n"
+        "- Animistry side labels (upper-right, not center stamps)\n"
+        "- Continuity: no still↔motion style flips\n"
+        "- Plate 10 remint: colourless shimmer under grate (NO orange/fire/embers)\n- KEEP: ore IN brass pan · Animistry side labels · no flask beside scale\n"
+        "- Explorer once · British VO · 3D cartoon\n\n"
+        "Do not ping Ben. Reject with stills from THIS file only.\n"
+        f"sha256={digest}\n"
     )
     (ICLOUD / "ZZ_OPEN_PART01_V13.txt").write_text(
         "Part 01 current remint cut = hos_002_part01_rough_v13.mp4\n"
