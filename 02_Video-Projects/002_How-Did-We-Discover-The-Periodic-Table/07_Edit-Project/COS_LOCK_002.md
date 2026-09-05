@@ -1,42 +1,40 @@
-# CoS lock — film 002 Periodic Table (4 Sep 2026)
+# CoS lock — film 002 Periodic Table (updated 5 Sep 2026 morning)
 
-Source: CoS watch of iCloud `HOS UAT` (`hos_002_part01_rough_v11.mp4` + locked Part 02). **Do not ping Ben.**
+Source: Ben unlocked Parts **01 + 02** for **MOTION REMINT** (5 Sep). Do not ping Ben until UAT PASS path.
 
-## LOCKED keepers — do not remint
+## Active remint (unlocked)
 
-| Cut | Lock |
+| Cut | Status |
 |---|---|
-| `hos_002_part01_rough_v11.mp4` | **HOLD.** Plate 10: clear flask **gone**; ore **IN** brass pan; heat = shimmer only; **no floating glass**. |
-| `hos_002_part02_rough_v06.mp4` | **PASS locked.** Do not UAT again unless Ben reopens. |
+| Part 01 | **REMINT OPEN** → `hos_002_part01_rough_v12.mp4` in HOS UAT (side labels on; plate 10 HOLD still applies — clear flask scrub pending if CoS flags shelves) |
+| Part 02 | **REMINT OPEN** — prior v06 was Ken Burns PASS-locked; must remint to real Veo. Blocked while Flow Create stalls / Gemini prepaid dry. |
+| Part 03 | Ship gate unchanged once 01/02 remint PASS |
 
-## HOLD from 01 / 02 (keep on Part 03+)
+## HOLD (still applies)
 
 - 3D cartoon / Animistry house look
-- British VO pacing
+- British VO
 - Classical bed under VO
-- Explorer garnish **once** (~0:30 pattern on Part 01)
+- Explorer garnish **once per part max**
+- **Plate 10 HOLD:** clear flask **gone**; ore **IN** brass pan; heat = shimmer only; **no floating glass**; opaque jars on shelves
 
-## FAIL on 002 bar — do not remint 01 unless Ben unlocks
+## Gate (same as Part 03)
 
-From CoS watch of Part 01 v11:
+1. Real Veo motion every beat — no Ken Burns / still-push as hero
+2. Animistry side labels when VO names terms (side, not dead-center stamps)
+3. Continuity: no jarring still↔motion jumps
+4. Report blockers to CoS — do not spam Ben for credits
 
-1. **Heavy Ken Burns** — stills with pans/zooms at ~0:07, 0:45, 0:53, 1:08, 1:16, 1:23. Real motion only in pockets.
-2. **Animistry side labels MISSING entirely** — need labels when VO names terms; **side**, not center stamps.
-3. **Continuity style jarring** — cuts between real motion and still-push.
+## Credits
 
-## Part 03 — A Ruler for Atoms (active ship gate)
-
-Same gate as Part 02 watch:
-
-1. **All real Veo motion** every beat — no Ken Burns hero, no freeze-pad.
-2. **Animistry side labels** when VO names terms (upper-right / side, 1–4 words).
-3. One persistent set language; no motion/still style flip-flops.
-4. Explorer garnish **once**.
-5. Report when rough lands in `HOS UAT` — do not ping Ben.
-6. Cream-on-brown end card **only at full join** (not per-part).
+- Gemini prepaid: dry (`429`)
+- Flow Ultra: preferred path; Create/agent path currently unreliable (navigation / Failed to render). Prefer Flow when healthy.
 
 ## Process
 
-- Do **not** remint Part 01 or Part 02.
-- Do **not** start Part 04 until Part 03 PASS.
-- Do **not** ping Ben.
+- Deliver reminted roughs to **HOS UAT** when ready
+- No Ben ping until UAT PASS path
+
+## Live blocker (5 Sep morning)
+
+Flow Ultra account hit **Veo 3.1 Fast daily quota**. Gemini prepaid still dry. Part 02 remint waiting on quota reset / prepaid top-up. Part 01 v12 is in HOS UAT for CoS watch.
