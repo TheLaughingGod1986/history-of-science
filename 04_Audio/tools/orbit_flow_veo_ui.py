@@ -1058,7 +1058,85 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
     before = _prompt_attachment_count(page)
     print(f"  attaching start frame: {ref.name}", flush=True)
 
+    def _dump_picker(tag: str) -> None:
+        try:
+            texts = page.evaluate(
+                """() => [...document.querySelectorAll('button,[role="button"],[role="tab"]')]
+                  .map(b => (b.innerText || b.getAttribute('aria-label') || '').trim())
+                  .filter(t => t && t.length < 80)
+                  .slice(0, 60)"""
+            )
+            print(f"  picker[{tag}] buttons={texts[:40]}", flush=True)
+        except Exception as e:
+            print(f"  picker[{tag}] dump failed: {e}", flush=True)
+
+    def _find_upload_control():
+        """Find the control that opens the OS file chooser (not Add/library)."""
+        # Prefer accessible name match — Upload first (never bare Add).
+        for pattern in (
+            r"^Upload media$",
+            r"^upload\s*Upload$",
+            r"Upload media",
+            r"^Upload$",
+            r"Upload (image|file|photo|from device)",
+            r"From (device|computer)",
+        ):
+            loc = page.get_by_role("button", name=re.compile(pattern, re.I))
+            if loc.count():
+                print(f"  found upload role button name={pattern!r}", flush=True)
+                return loc.last
+        # Visible text / icon fallbacks
+        for label in ("Upload media", "Upload", "From device", "From computer"):
+            loc = page.locator(f'button:has-text("{label}")')
+            if loc.count():
+                print(f"  found upload text button {label!r}", flush=True)
+                return loc.last
+        loc = page.locator(
+            'button[aria-label*="Upload" i], button:has(i:text-is("upload")), '
+            'button:has(span:text-is("upload")), button:has-text("cloud_upload"), '
+            'button:has(i:text-is("cloud_upload"))'
+        )
+        if loc.count():
+            print("  found upload icon control", flush=True)
+            return loc.last
+        return None
+
+    def _open_media_library_if_needed() -> None:
+        """Sep 2026 Flow: + Create often opens a library; Upload lives inside it."""
+        if _find_upload_control() is not None:
+            return
+        # Click Add / create entry points that reveal Upload.
+        for pattern in (
+            r"^Add$",
+            r"Add (media|image|file|to prompt)",
+            r"^Create$",
+        ):
+            loc = page.get_by_role("button", name=re.compile(pattern, re.I))
+            if not loc.count():
+                continue
+            try:
+                print(f"  opening media library via {pattern!r}", flush=True)
+                loc.last.click(force=True, timeout=4000)
+                page.wait_for_timeout(700)
+            except Exception:
+                continue
+            if _find_upload_control() is not None:
+                return
+        # Material icon-only add buttons
+        add_icon = page.locator(
+            'button:has(i:text-is("add")), button:has(span:text-is("add")), '
+            'button:has-text("add")'
+        )
+        if add_icon.count():
+            try:
+                print("  opening media library via add icon", flush=True)
+                add_icon.last.click(force=True, timeout=4000)
+                page.wait_for_timeout(700)
+            except Exception:
+                pass
+
     _open_create_picker(page)
+    page.wait_for_timeout(500)
 
     uploads_tab = page.locator('button:has-text("Uploads")')
     if uploads_tab.count():
@@ -1068,54 +1146,127 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         except Exception:
             pass
 
-    up = page.locator('button:has-text("Upload media")')
-    if up.count() == 0:
+    _open_media_library_if_needed()
+    up = _find_upload_control()
+    if up is None:
         page.keyboard.press("Escape")
         page.wait_for_timeout(400)
         _open_create_picker(page)
-        page.wait_for_timeout(600)
-        up = page.locator('button:has-text("Upload media")')
-    if up.count() == 0:
-        up = page.locator('button:has-text("Upload")')
-    if up.count() == 0:
-        raise RuntimeError("Upload media not found in Create picker")
-
-    try:
-        with page.expect_file_chooser(timeout=12_000) as fc:
-            up.last.click(force=True)
-        fc.value.set_files(str(ref))
-    except Exception:
+        page.wait_for_timeout(700)
+        uploads_tab = page.locator('button:has-text("Uploads")')
+        if uploads_tab.count():
+            try:
+                uploads_tab.first.click(timeout=3000)
+                page.wait_for_timeout(400)
+            except Exception:
+                pass
+        _open_media_library_if_needed()
+        up = _find_upload_control()
+    if up is None:
+        _dump_picker("no-upload")
         fi = page.locator('input[type="file"]')
         if fi.count() == 0:
-            raise RuntimeError("Could not upload start frame to Create picker")
+            raise RuntimeError("Upload media not found in Create picker")
+        print("  using hidden file input (no Upload button)", flush=True)
         fi.last.set_input_files(str(ref))
+    else:
+        try:
+            print("  clicking Upload for file chooser…", flush=True)
+            with page.expect_file_chooser(timeout=15_000) as fc:
+                up.click(force=True)
+            fc.value.set_files(str(ref))
+        except Exception:
+            # Upload click sometimes opens a nested panel; try again.
+            page.wait_for_timeout(600)
+            up2 = _find_upload_control()
+            try:
+                if up2 is not None:
+                    with page.expect_file_chooser(timeout=12_000) as fc:
+                        up2.click(force=True)
+                    fc.value.set_files(str(ref))
+                else:
+                    raise RuntimeError("no upload control on retry")
+            except Exception:
+                fi = page.locator('input[type="file"]')
+                if fi.count() == 0:
+                    _dump_picker("chooser-fail")
+                    raise RuntimeError("Could not upload start frame to Create picker")
+                print("  using hidden file input after Upload click", flush=True)
+                fi.last.set_input_files(str(ref))
 
     print("  uploaded — waiting for Add to Prompt…", flush=True)
-    if not _wait_add_to_prompt_enabled(page, timeout_s=90):
-        raise RuntimeError(
-            "Flow never enabled Add to Prompt after start-frame upload"
+    # Upload consent dialog (Sep 2026 Flow): Cancel / I agree
+    for _ in range(3):
+        agree = page.get_by_role("button", name=re.compile(r"^I agree$", re.I))
+        if agree.count() == 0:
+            agree = page.locator('button:has-text("I agree")')
+        if agree.count():
+            try:
+                print("  clicking upload consent 'I agree'", flush=True)
+                agree.last.click(force=True, timeout=3000)
+                page.wait_for_timeout(800)
+            except Exception:
+                break
+        else:
+            break
+    # Some Flow builds auto-chip the upload; check early.
+    page.wait_for_timeout(1500)
+    if _prompt_attachment_count(page) > before:
+        print("  start frame auto-attached after upload", flush=True)
+        ensure_agent_session(page)
+        print(
+            f"  prompt attachment visible=True (was {before})",
+            flush=True,
         )
+        return True
 
     # Prefer selecting the just-uploaded asset by filename stem when possible
     stem = ref.stem.lower()[:24]
     page.evaluate(
         """(stem) => {
-          for (const el of document.querySelectorAll('div,button,li,[role="option"]')) {
-            const t = (el.innerText || '').trim().toLowerCase();
+          for (const el of document.querySelectorAll('div,button,li,[role="option"],img')) {
+            const t = ((el.innerText || el.getAttribute('alt') || el.getAttribute('aria-label') || '') + '').trim().toLowerCase();
             if (stem && t.includes(stem) && t.length < 200) {
               try { el.click(); } catch (e) {}
               return true;
             }
           }
+          // Fallback: click the newest/largest media thumbnail in the picker.
+          const imgs = [...document.querySelectorAll('img')].filter(i => {
+            const r = i.getBoundingClientRect();
+            return r.width > 48 && r.height > 48 && r.y > 80;
+          });
+          if (imgs.length) {
+            try { imgs[imgs.length - 1].click(); return true; } catch (e) {}
+          }
           return false;
         }""",
         stem,
     )
-    page.wait_for_timeout(400)
+    page.wait_for_timeout(500)
+
+    enabled = _wait_add_to_prompt_enabled(page, timeout_s=45)
     add = page.locator('button:has-text("Add to Prompt")')
     if add.count() == 0:
-        raise RuntimeError("Add to Prompt button missing")
-    add.last.click(force=True)
+        add = page.get_by_role(
+            "button",
+            name=re.compile(r"Add to Prompt|Add to prompt|Insert|Use selected|Add$", re.I),
+        )
+    if add.count() == 0 and not enabled:
+        _dump_picker("post-upload")
+        # Last chance: attachment may already be present after thumbnail click.
+        if _prompt_attachment_count(page) > before:
+            print("  start frame attached without Add to Prompt click", flush=True)
+            ensure_agent_session(page)
+            return True
+        raise RuntimeError(
+            "Flow never enabled Add to Prompt after start-frame upload"
+        )
+    try:
+        add.last.click(force=True)
+    except Exception:
+        if _prompt_attachment_count(page) <= before:
+            raise RuntimeError("Add to Prompt click failed and no chip attached")
     page.wait_for_timeout(1500)
 
     for _ in range(2):
