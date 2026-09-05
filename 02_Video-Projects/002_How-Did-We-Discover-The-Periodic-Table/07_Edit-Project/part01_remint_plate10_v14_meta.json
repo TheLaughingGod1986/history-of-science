@@ -1,0 +1,14 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Lite",
+  "mode": "i2v-v14-plate10",
+  "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_v14_plate10_prep/p10_start_v14_clean.jpg",
+  "plates": [],
+  "blocked": {
+    "stage": "i2v",
+    "match": "you're out of google flow credits",
+    "error": "Flow never enabled Add to Prompt after start-frame upload",
+    "screenshot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/_rejected_uat_v14_plate10/10_rock_not_fire_v14_i2v_fail.png",
+    "body_snip": "Skip to main content\narrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\ndashboard\nAll media\nimage\nImages\naccessibility_new\nCharacters\nmovie\nScenes\ndrive_folder_upload\nUploads\napps_spark_2\nTools\ndelete\nBin\nleft_panel_close\nCollapse\ninfo\nYou're out of Google Flow credits. You can wait until they refresh or upgrade to get more Google Flow credits now.\nopen_in_new\nUpgrade\nclose\nmenu\nUntitled session\nedit_square\nclose\nCreate a few versions of an image\n\nI've generated a few versions for you. Let me know if any of these directions work or if you'd like to try something more specific!\n\nthumb_up\nthumb_down\ncontent_copy\nflag\n\nWhat do you want to create?\n\n\n\nadd\narticle_spark\ntune\narrow_forward\n\nGoogle Flow can make mistakes, so double-check it"
+  }
+}
