@@ -1,0 +1,13 @@
+{
+  "channel_target": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "long": "_C92tIJCk8A",
+  "items": [],
+  "oops_stop": false,
+  "blocked": "oops_on_hos",
+  "switch": {
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Oops",
+    "snip": "Oops, you don't have permission to view this page\n\nYou need to be signed in to an account that has access. Try switching or signing in to an account that has permission.\n\nSwitch account\nReturn to Studio",
+    "oops": true
+  }
+}
