@@ -1,0 +1,77 @@
+{
+  "ok": false,
+  "related_ok": true,
+  "replace_ok": false,
+  "newIdsMinted": false,
+  "channel": "@HistoryOfScienceYT",
+  "longRelated": "_C92tIJCk8A",
+  "continuedAt": "2026-09-05T12:18:39",
+  "summary": "Continued with Showrunner TYPE PASS paths. Related already set on all five. Deeper Details+Options+Editor hunt still finds no Replace control. Live files remain v01 / s05 v02. Did not mint new ids.",
+  "items": [
+    {
+      "id": "8uBR-9oxeWs",
+      "related": "already_set_to__C92tIJCk8A",
+      "related_ok": true,
+      "replace": "BLOCKED_NO_CONTROL",
+      "options_has_replace": false,
+      "live_filename": "hos_001_s01_shadow_punch_v01.mp4",
+      "wanted_type_pass": "hos_001_s01_shadow_punch_v02.mp4",
+      "type_pass_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s01_shadow_punch_v02.mp4",
+      "type_pass_exists": true,
+      "type_pass_sha256": "055315a54a28f19e78c32a76b90567127ad22ccb30a686f9fe3b8e0df5437aaf",
+      "type_pass_bytes": 19742591
+    },
+    {
+      "id": "YX2UR1u-JCQ",
+      "related": "already_set_to__C92tIJCk8A",
+      "related_ok": true,
+      "replace": "BLOCKED_NO_CONTROL",
+      "options_has_replace": false,
+      "live_filename": "hos_001_s02_pond_punch_v01.mp4",
+      "wanted_type_pass": "hos_001_s02_pond_punch_v02.mp4",
+      "type_pass_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s02_pond_punch_v02.mp4",
+      "type_pass_exists": true,
+      "type_pass_sha256": "94256ce1418fb3453f01167322589249caf81d86af011fdd84323b2ac3072a90",
+      "type_pass_bytes": 19295644
+    },
+    {
+      "id": "Fnb3p81u-wY",
+      "related": "already_set_to__C92tIJCk8A",
+      "related_ok": true,
+      "replace": "BLOCKED_NO_CONTROL",
+      "options_has_replace": false,
+      "live_filename": "hos_001_s03_vector_punch_v01.mp4",
+      "wanted_type_pass": "hos_001_s03_vector_punch_v02.mp4",
+      "type_pass_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s03_vector_punch_v02.mp4",
+      "type_pass_exists": true,
+      "type_pass_sha256": "ef304cd1eb19fba4393ab7ba7b93d01081ab8664e759642725d41f0b44b26ec2",
+      "type_pass_bytes": 17072770
+    },
+    {
+      "id": "vpuRgKXtFlY",
+      "related": "already_set_to__C92tIJCk8A",
+      "related_ok": true,
+      "replace": "BLOCKED_NO_CONTROL",
+      "options_has_replace": false,
+      "live_filename": "hos_001_s04_flask_punch_v01.mp4",
+      "wanted_type_pass": "hos_001_s04_flask_punch_v02.mp4",
+      "type_pass_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s04_flask_punch_v02.mp4",
+      "type_pass_exists": true,
+      "type_pass_sha256": "acf9f7e685eddbbc99e4452aa0ac8f2a0fb0e22fe0b91643e34fa914e7ad040b",
+      "type_pass_bytes": 26020489
+    },
+    {
+      "id": "Lcmh5y2KMQM",
+      "related": "already_set_to__C92tIJCk8A",
+      "related_ok": true,
+      "replace": "BLOCKED_NO_CONTROL",
+      "options_has_replace": false,
+      "live_filename": "hos_001_s05_soap_punch_v02.mp4",
+      "wanted_type_pass": "hos_001_s05_soap_punch_v03.mp4",
+      "type_pass_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s05_soap_punch_v03.mp4",
+      "type_pass_exists": true,
+      "type_pass_sha256": "de928d5438038370f108176ddb66bc604323c407ae9f6c61f471f8a285805397",
+      "type_pass_bytes": 7959817
+    }
+  ]
+}
