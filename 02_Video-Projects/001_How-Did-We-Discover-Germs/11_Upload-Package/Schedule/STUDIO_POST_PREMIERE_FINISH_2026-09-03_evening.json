@@ -1,0 +1,221 @@
+{
+  "checkedAt": "2026-09-03T23:04:03.011Z",
+  "channel": "History of Science",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "verdict": "HEALTHY",
+  "long": {
+    "id": "_C92tIJCk8A",
+    "title": "How Did We Discover Germs?",
+    "visibility": "Public",
+    "premiereConverted": true,
+    "thumbnailAbc": "Running",
+    "mode": "Thumbnail only (title locked)"
+  },
+  "shorts": {
+    "status": "Scheduled 4\u20138 Sep 2026 ~11:30 London",
+    "count": 5,
+    "related": "How Did We Discover Germs? (_C92tIJCk8A)",
+    "feedSafeCoversAttached": true,
+    "ids": {
+      "s01": "8uBR-9oxeWs",
+      "s02": "YX2UR1u-JCQ",
+      "s03": "Fnb3p81u-wY",
+      "s04": "vpuRgKXtFlY",
+      "s05": "Lcmh5y2KMQM"
+    },
+    "coverResults": {
+      "8uBR-9oxeWs": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/8uBR-9oxeWs/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "Germs don't cast a shadow"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s01_shadow_cover_animistry_v02.jpg"
+      },
+      "YX2UR1u-JCQ": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/YX2UR1u-JCQ/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "Microbes in a drop of pond water"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s02_pond_cover_animistry_v03.jpg"
+      },
+      "Fnb3p81u-wY": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/Fnb3p81u-wY/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "Germs hitch a ride on you"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s03_vector_cover_animistry_v02.jpg"
+      },
+      "vpuRgKXtFlY": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/vpuRgKXtFlY/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "A flask that proved germs come from outside"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s04_flask_cover_animistry_v03.jpg"
+      },
+      "Lcmh5y2KMQM": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/Lcmh5y2KMQM/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "Invisible life is still everywhere"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s05_soap_cover_animistry_v02.jpg"
+      }
+    }
+  },
+  "notes": [
+    "Shorts were never missing \u2014 wrong brand account / Videos tab vs Shorts tab.",
+    "After Premiere ended, long is Public and Thumbnail ABC is Running.",
+    "Feed-safe Animistry covers v02/v03 attached + Saved on all five Shorts via Studio CDP (not Data API thumbnails.set).",
+    "Related still set on all five Shorts."
+  ],
+  "raw": {
+    "checkedAt": "2026-09-03T23:04:03.011Z",
+    "covers": {
+      "8uBR-9oxeWs": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/8uBR-9oxeWs/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "Germs don't cast a shadow"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s01_shadow_cover_animistry_v02.jpg"
+      },
+      "YX2UR1u-JCQ": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/YX2UR1u-JCQ/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "Microbes in a drop of pond water"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s02_pond_cover_animistry_v03.jpg"
+      },
+      "Fnb3p81u-wY": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/Fnb3p81u-wY/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "Germs hitch a ride on you"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s03_vector_cover_animistry_v02.jpg"
+      },
+      "vpuRgKXtFlY": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/vpuRgKXtFlY/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "A flask that proved germs come from outside"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s04_flask_cover_animistry_v03.jpg"
+      },
+      "Lcmh5y2KMQM": {
+        "ok": true,
+        "enabled": true,
+        "saved": true,
+        "head": {
+          "url": "https://studio.youtube.com/video/Lcmh5y2KMQM/edit?theme=dark",
+          "chan": "?",
+          "saveAria": "true",
+          "title": "Invisible life is still everywhere"
+        },
+        "after": {
+          "saveAria": "true",
+          "related": "Related video\nHow Did We Discover Germs?",
+          "toast": null
+        },
+        "file": "hos_001_s05_soap_cover_animistry_v02.jpg"
+      }
+    },
+    "abc": {
+      "chan": "History of Science",
+      "public": true,
+      "running": true,
+      "thumb": "Thumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nRunning\u2026\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for vi"
+    },
+    "shorts": {
+      "chan": "History of Science",
+      "scheduled": 10,
+      "snip": "Skip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nShorts\nVideos\nShorts\nLive\nPosts\nPlaylists\nShort\nNotices\nVisibility\nDate\nViews\nComments\n0:24\nInvisible life is still everywhere\nWhat else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleLife #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n8 Sept 2026\nScheduled\n1\n0\n0:27\nA flask that proved germs come from outside\nPasteur won with a flask shaped like a question mark \u2014 boil the broth, keep the neck, it stays clear. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Pasteur #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n7 Sept 2026\nScheduled\n0\n0\n0:27\nGerms hitch a ride on you\nYou are the vector \u2014 germs hitch a ride on hands, cloth, and breath. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #Handwashing #GermTheory #HistoryOfScience #Shorts\n\u2014\nScheduled\n6 Sept 2026\nScheduled\n1\n0\n0:27\nMicrobes in a drop of pond water\nA drop of pond water is not empty \u2014 under a microscope it is full of microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Microbes #PondWater #GermTheory #HistoryOfScience #Shorts\n\u2014\nScheduled\n5 Sept 2026\nScheduled\n0\n0\n0:27\nGerms don't cast a shadow\nGerms don't cast a shadow \u2014 doctors once blamed bad air, not living microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n4 Se"
+    }
+  }
+}
