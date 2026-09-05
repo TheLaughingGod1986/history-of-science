@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "id": "8uBR-9oxeWs",
+      "related": true,
+      "filename": "hos_001_s01_shadow_punch_v01.mp4",
+      "options_has_replace": false
+    },
+    {
+      "id": "YX2UR1u-JCQ",
+      "related": true,
+      "filename": "hos_001_s02_pond_punch_v01.mp4",
+      "options_has_replace": false
+    },
+    {
+      "id": "Fnb3p81u-wY",
+      "related": true,
+      "filename": "hos_001_s03_vector_punch_v01.mp4",
+      "options_has_replace": false
+    },
+    {
+      "id": "vpuRgKXtFlY",
+      "related": true,
+      "filename": "hos_001_s04_flask_punch_v01.mp4",
+      "options_has_replace": false
+    },
+    {
+      "id": "Lcmh5y2KMQM",
+      "related": true,
+      "filename": "hos_001_s05_soap_punch_v02.mp4",
+      "options_has_replace": false
+    }
+  ],
+  "s03": {
+    "id": "Fnb3p81u-wY",
+    "related": true,
+    "filename": "hos_001_s03_vector_punch_v01.mp4",
+    "options_has_replace": false
+  }
+}

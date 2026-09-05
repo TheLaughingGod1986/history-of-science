@@ -1,26 +1,25 @@
 # Production status — 002 How Did We Discover the Periodic Table?
 
-**IN PROGRESS — 3 Sep 2026.** Topic locked. Part 01 only. Do not start Part 02 until Ben UAT.
+**PART 01 PASS** (Ben · rough v11).  
+**PART 02 PASS** (Ben · 4 Sep 2026 · rough v06).  
+**NOW:** Part 03 — A Ruler for Atoms (real Veo motion · Explorer once).
 
 | Field | Value |
 |---|---|
 | Slug | `002_How-Did-We-Discover-The-Periodic-Table` |
 | Channel | @HistoryOfScienceYT only |
-| Working title | How Did We Discover the Periodic Table? |
-| Cluster | `hos-periodic-table-002` |
-| Runtime target | 8–9 min · 5 acts |
-| Target air | Thu **10 Sep 2026 19:00 UK** |
-| Gate | **PASS** (script 90.4) |
-| Part 01 VO | `02_Voiceover/part01_zoo_of_stuff_v02` · **85.680s** (v01 112s discarded) |
-| Part 01 picture | Flow Veo 3.1 Fast T2V mint started · Gemini stills blocked (empty API key) |
+| Part 01 | **PASS** · `hos_002_part01_rough_v11.mp4` |
+| Part 02 | **PASS** · `hos_002_part02_rough_v06.mp4` |
+| Part 03 | **IN PROGRESS** — VO locked · plates scaffolded · **blocked on Flow/Gemini credits for real motion** |
+| Parts 04–05 | Blocked until Part 03 Ben PASS |
 | Affiliate | none |
-| Not | Orbit Omni · Neutron Star · Part 02 |
+| Not | Orbit Omni · Neutron Star |
 
-## Part 01 VO lock
-
-Ben Orbit Narrator. Align hits: seating plan **2.15s** · periodic table **27.41s** · four ingredients **43.58s** · trap **52.16s** · alchemists **66.48s** · zoo **77.28s**. Also **HOS UAT**.
+## UAT
+- Part 02 locked PASS note: iCloud `HOS UAT/PART02_PASS.txt`
+- Part 03 detail: `07_Edit-Project/PART03_STATUS.md`
 
 ## Next
-
-1. Finish 10 Fast T2V plates · assemble rough · **STOP for Ben UAT**
-2. Do not batch Part 02
+1. Top up Flow Ultra credits **or** set `GEMINI_API_KEY` in project `.env`
+2. Mint Part 03 scenery as real Veo (no Ken Burns)
+3. Assemble Part 03 rough → `HOS UAT/` → STOP for Ben
