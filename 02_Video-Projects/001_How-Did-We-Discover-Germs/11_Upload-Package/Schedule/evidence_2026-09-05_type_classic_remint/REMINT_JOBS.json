@@ -47,7 +47,7 @@
     "uploaded": false,
     "relatedSet": false,
     "oldPrivated": false,
-    "status": "blocked_auth"
+    "status": "ready"
   },
   {
     "slot": "s02",
@@ -96,7 +96,7 @@
     "uploaded": false,
     "relatedSet": false,
     "oldPrivated": false,
-    "status": "blocked_auth"
+    "status": "ready"
   },
   {
     "slot": "s03",
@@ -141,13 +141,13 @@
       "spontaneous generation"
     ],
     "related": "_C92tIJCk8A",
-    "visibilityPlan": "schedule",
-    "publishAt": "2026-09-06T11:30:00+01:00",
+    "visibilityPlan": "public",
+    "publishAt": null,
     "originalScheduleLondon": "2026-09-06T11:30:00+01:00",
     "uploaded": false,
     "relatedSet": false,
     "oldPrivated": false,
-    "status": "blocked_auth"
+    "status": "ready"
   },
   {
     "slot": "s04",
@@ -190,13 +190,13 @@
       "miasma"
     ],
     "related": "_C92tIJCk8A",
-    "visibilityPlan": "schedule",
-    "publishAt": "2026-09-07T11:30:00+01:00",
+    "visibilityPlan": "public",
+    "publishAt": null,
     "originalScheduleLondon": "2026-09-07T11:30:00+01:00",
     "uploaded": false,
     "relatedSet": false,
     "oldPrivated": false,
-    "status": "blocked_auth"
+    "status": "ready"
   },
   {
     "slot": "s05",
@@ -239,12 +239,12 @@
       "miasma"
     ],
     "related": "_C92tIJCk8A",
-    "visibilityPlan": "schedule",
-    "publishAt": "2026-09-08T11:30:00+01:00",
+    "visibilityPlan": "public",
+    "publishAt": null,
     "originalScheduleLondon": "2026-09-08T11:30:00+01:00",
     "uploaded": false,
     "relatedSet": false,
     "oldPrivated": false,
-    "status": "blocked_auth"
+    "status": "ready"
   }
 ]
