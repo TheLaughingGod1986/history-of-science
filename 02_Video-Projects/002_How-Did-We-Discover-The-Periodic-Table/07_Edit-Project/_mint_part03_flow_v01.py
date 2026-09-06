@@ -24,11 +24,15 @@ RAW = PROJ / "04_Generated-Clips/part03/raw/v01_fast"
 META = PROJ / "07_Edit-Project/part03_mint_flow_v01_meta.json"
 EXPLORER_LOCK = PROJ / "04_Generated-Clips/part01/refs/explorer_germs_part01_lock.jpg"
 EXPLORER_START = PROJ / "04_Generated-Clips/part03/refs/v01_stills/05_explorer_ruler_start.jpg"
-MODEL = "Veo 3.1 - Fast"
+# Prefer Fast (house). Fall back to Lite only if Create reports Fast exhausted.
+MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 PROFILE = Path(
     os.environ.get(
         "ORBIT_FLOW_PROFILE",
-        str(Path.home() / ".playwright-hos-flow-profile"),
+        os.environ.get(
+            "ORBIT_FLOW_PROFILE",
+            str(Path.home() / ".playwright-hos-flow-profile"),
+        ),
     )
 )
 STYLE = (
@@ -45,7 +49,7 @@ def dest_for(plate_id: str) -> Path:
 
 
 def ensure_explorer_start() -> Path | None:
-    if EXPLORER_START.exists() and EXPLORER_START.stat().st_size > 40_000:
+    if EXPLORER_START.exists() and EXPLORER_START.stat().st_size > 20_000:
         return EXPLORER_START
     if not EXPLORER_LOCK.exists():
         print(f"WARN missing explorer lock {EXPLORER_LOCK}", flush=True)

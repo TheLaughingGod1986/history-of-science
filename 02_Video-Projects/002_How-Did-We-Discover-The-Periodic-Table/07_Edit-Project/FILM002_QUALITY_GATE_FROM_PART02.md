@@ -1,15 +1,15 @@
-# Film 002 quality gate — CoS watches of locked Part 01 v11 + Part 02 v06
+# Film 002 quality gate — CoS watches of locked Part 01 + Part 02
 
-**Sources:** CoS video watch of `hos_002_part01_rough_v11.mp4` and `hos_002_part02_rough_v06.mp4` (iCloud HOS UAT).  
-**Those cuts:** PASS / locked — **do not remint 01 or 02** unless Ben unlocks.  
+**Sources:** CoS / Ben locks on Part 01 + Part 02 (iCloud HOS UAT).  
+**Current keepers (6 Sep 2026 Ben GO):** Part 01 **v14 PASS** · Part 02 **v06 LOCKED** — **do not remint 01 or 02**.  
 **Use:** Ship gate for **Part 03+**. Do not ping Ben.
 
 ## LOCKED keepers
 
 | Cut | Rule |
 |---|---|
-| `hos_002_part01_rough_v11.mp4` | Do not remint. **Plate 10 HOLD:** clear flask gone; ore IN brass pan; heat shimmer only; no floating glass. |
-| `hos_002_part02_rough_v06.mp4` | PASS locked. Do not UAT again unless Ben reopens. |
+| `hos_002_part01_rough_v14.mp4` | **LOCKED PASS.** Do not remint. **Plate 10 HOLD:** clear flask gone; ore IN brass pan; heat shimmer only; no floating glass; no blue scrub. |
+| `hos_002_part02_rough_v06.mp4` | **LOCKED.** Do not remint / UAT again unless Ben reopens. |
 
 ## HOLD from 01 / 02
 

@@ -1,49 +1,66 @@
 # Part 03 status — A Ruler for Atoms
 
-**Updated:** 4 Sep 2026 evening (after CoS Part 01 v11 watch notes)
+**Updated:** 6 Sep 2026 22:10 Europe/London (HOS Local Mini · Ben GO attempt)
 
-## Locked keepers (do not remint)
+## Ben GO (locks)
 
 | Cut | Status |
 |---|---|
-| `hos_002_part01_rough_v11.mp4` | **HOLD / locked.** Plate 10: clear flask gone; ore IN brass pan; shimmer only; no floating glass. |
-| `hos_002_part02_rough_v06.mp4` | **PASS locked.** Do not UAT again unless Ben reopens. |
+| `hos_002_part01_rough_v14.mp4` | **LOCKED PASS.** Do **not** remint / overwrite. |
+| `hos_002_part02_rough_v06.mp4` | **LOCKED.** Do **not** remint / overwrite. |
+| Part 03 | **Mint attempted → BLOCKED (credits)** |
+| Part 04 | Do **not** start |
 
-## CoS gate for Part 03 (from Part 01 v11 + Part 02 v06)
+## Target rough (not landed)
 
-**KEEP:** 3D cartoon / Animistry · British VO · classical bed · Explorer once.
+`/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v01.mp4`
 
-**FAIL — must not repeat:**
+## Ready on disk (inputs)
 
-1. Heavy Ken Burns (stills + pans/zooms ~0:07, 0:45, 0:53, 1:08, 1:16, 1:23)
-2. Animistry side labels missing (need side labels when VO names terms — not center stamps)
-3. Continuity style jarring (real motion ↔ still-push cuts)
+- Board: `07_Edit-Project/parts/part-03_plates_v01.json` (12 plates; Explorer once on `05_explorer_ruler`)
+- VO: `02_Voiceover/part03_ruler_for_atoms_v01.wav` + align
+- Music bed: `05_Music/hos_002_part01_curious_workshop_v02_norm.wav`
+- Mint: `_mint_part03_flow_v01.py` (prefer Flow Veo 3.1 Fast) · `_mint_part03_gemini_v01.py`
+- Assemble: `_assemble_part03_rough_v01.py` (Animistry upper-right side labels)
 
-**Part 03 hard:** all real Veo motion every beat · side labels burned in assemble · Explorer once · one set language.
+## BLOCKED — credits dry (do not ship fake motion)
 
-Canonical: `COS_LOCK_002.md` · `FILM002_QUALITY_GATE_FROM_PART02.md`
+Hard rule obeyed: **STOP**. No Ken Burns / still-push / freeze-pad rough.
 
-## Ready on disk
+### Gemini API (prepaid)
 
-- Script + VO (~89.7s) + 12-plate board (`parts/part-03_plates_v01.json`)
-- Mint: `_mint_part03_gemini_v01.py` (API) · `_mint_part03_flow_v01.py` (Flow UI)
-- Assemble: `_assemble_part03_rough_v01.py` (upper-right side labels → HOS UAT)
-- Flow UI helper updated for `flow.google.com` Agent settings → **Veo 3.1 - Fast**
+Live probe 6 Sep 22:00:
 
-## Blocker (now) — not shipping Ken Burns
+`429 RESOURCE_EXHAUSTED` — *Your prepayment credits are depleted* (AI Studio prepay).
 
-1. **Gemini API:** prepaid credits depleted (`429 RESOURCE_EXHAUSTED` / prepayment).
-2. **Flow UI (benoats86@gmail.com):** Agent Create path locks Veo 3.1 - Fast in settings, but generations fail with *“Failed to render response” / agent failed* (not charged). UI shows ~10 Flow credits; agent path still cannot mint usable landscape Veo. One harvest pulled a **Threads/Instagram portrait** CDN clip — **quarantined** under `04_Generated-Clips/part03/raw/_rejected_wrong_source/` (download filter now rejects those CDNs).
+Prior full mint log (`logs/mint_part03_gemini_v01_full.log`): `ok=0` across all plates on same 429.
 
-## When credits / Flow agent recover
+### Flow UI (benoats86@gmail.com / Ultra session)
 
-1. Prefer Flow Veo 3.1 Fast via `_mint_part03_flow_v01.py` (or Gemini API if prepaid refilled).
-2. QA: landscape 16:9 · continuous motion · no Ken Burns · Explorer once on plate 05.
-3. Assemble → `HOS UAT` → report land. **Do not ping Ben.**
+Smoke 6 Sep 21:57 → `logs/mint_part03_flow_smoke_plate01_20260906_215711.log`:
+
+1. Logged in; Create project opened; model locked **Veo 3.1 - Fast** via Agent settings.
+2. Create submitted (scenery T2V plate `01_hall_open_side_label`).
+3. Immediate fail — page text:
+
+   > You're out of Google Flow credits. You can wait until they refresh or upgrade…
+
+   > I wasn't able to start that generation because your account has reached its current credit limit.
+
+4. Stall PNG: `04_Generated-Clips/part03/raw/v01_fast/01_hall_open_side_label_v01_flow_stall.png`
+5. **Zero** usable landscape Veo mp4 written under `raw/v01_fast/` (only stall PNG).
+6. Browser later drifted to Facebook cookie interstitial after fail (secondary noise; root cause = Flow credits).
+
+## When credits recover
+
+1. Flow Veo 3.1 Fast via `_mint_part03_flow_v01.py` (or Gemini Fast if prepaid refilled).
+2. QA every plate: landscape 16:9 · continuous real motion · no Threads/portrait CDN · Explorer once on plate 05 on-model.
+3. Assemble → `hos_002_part03_rough_v01.mp4` → HOS UAT. Print path + bytes + sha256 + duration.
+4. **Do not** ping Ben. Parent hands to HOS UAT.
 
 ## Do not
 
-- Remint Part 01 / 02
-- Ship Ken Burns / freeze-pad as the Part 03 look
+- Remint Part 01 v14 or Part 02 v06
+- Ship Ken Burns / freeze-pad as Part 03
+- Start Part 04
 - Ping Ben
-- Start Part 04 before Part 03 PASS
