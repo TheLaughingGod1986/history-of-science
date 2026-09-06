@@ -220,10 +220,15 @@ def looks_logged_in(page) -> bool:
     url = (page.url or "").lower()
     if "accounts.google.com" in url and ("signin" in url or "servicelogin" in url):
         return False
+    # Project URLs on the multi-login slot are a hard login signal even when
+    # body text is mid-hydration after cookie Agree.
+    if "flow.google.com" in url and "/project/" in url:
+        return True
     try:
         body = page.locator("body").inner_text(timeout=5000)[:3000]
     except Exception:
-        return False
+        # Transient — treat /u/N/ Flow home as logged-in enough to continue.
+        return "flow.google.com" in url and ("/u/" in url or url.rstrip("/").endswith("flow.google.com"))
     low = body.lower()
     if "sign in" in low and "google flow" in low and "ultra" not in low:
         return False
@@ -237,6 +242,8 @@ def looks_logged_in(page) -> bool:
         or "create characters" in low
         or "flow music" in low
         or "try the google flow agent" in low
+        or "what do you want to create" in low
+        or "all media" in low
     )
 
 
@@ -2614,6 +2621,10 @@ def _generate_clip_once(
         dismiss_banners(page)
         url = ensure_project(page)
 
+    print(f"  flow: {url}", flush=True)
+    if not looks_logged_in(page):
+        settle_after_nav(page, wait_ms=1500)
+        dismiss_banners(page)
     if not looks_logged_in(page):
         raise RuntimeError(
             "Not logged into Google Flow.\n"
@@ -2621,7 +2632,6 @@ def _generate_clip_once(
             "  python3 04_Audio/tools/orbit_flow_veo_ui.py --login"
         )
 
-    print(f"  flow: {url}", flush=True)
     model = assert_veo3_model(model)
     ensure_agent_session(page)
     before = collect_media_ids(page)
@@ -2659,7 +2669,14 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (start-frame I2V)", flush=True)
-        confirm_generation_spend(page)
+        settle_after_nav(page, wait_ms=1200)
+        try:
+            confirm_generation_spend(page)
+        except Exception as e:
+            if not is_transient_ui_error(e):
+                raise
+            print(f"  confirm spend race after Create (ok): {e}", flush=True)
+            settle_after_nav(page, wait_ms=1500)
     elif scenery_only:
         # Keep agent session healthy, but do NOT attach Orbit identity chip.
         ensure_agent_session(page)
@@ -2699,7 +2716,14 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (identity-locked, Orbit ref attached)", flush=True)
-        confirm_generation_spend(page)
+        settle_after_nav(page, wait_ms=1200)
+        try:
+            confirm_generation_spend(page)
+        except Exception as e:
+            if not is_transient_ui_error(e):
+                raise
+            print(f"  confirm spend race after Create (ok): {e}", flush=True)
+            settle_after_nav(page, wait_ms=1500)
     media_id = wait_and_download(
         page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
     )
@@ -2774,6 +2798,15 @@ def generate_clip(
             )
         except Exception as e:
             last = e
+            # Allow one recover when login probe races cookie Agree / project hop.
+            if "not logged into google flow" in str(e).lower() and attempt < attempts:
+                print(
+                    f"  generate_clip soft-retry {attempt}/{attempts}: {e}",
+                    flush=True,
+                )
+                use_reuse = False
+                recover_flow_home(page)
+                continue
             if "not logged into google flow" in str(e).lower():
                 raise
             if attempt >= attempts or not is_transient_ui_error(e):
