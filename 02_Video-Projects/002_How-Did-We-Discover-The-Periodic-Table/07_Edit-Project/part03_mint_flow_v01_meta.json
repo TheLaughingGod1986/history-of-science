@@ -7,10 +7,81 @@
       "id": "01_hall_open_side_label",
       "status": "ok",
       "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/01_hall_open_side_label_v01.mp4",
-      "duration": 8.0,
-      "bytes": 7530984,
-      "media_id": "gallery-salvage:40c7c7f0",
-      "project_url": "https://flow.google.com/u/1/project/40c7c7f0-49c6-4cd7-b8e5-56491bf88d16"
+      "bytes": 7385562
+    },
+    {
+      "id": "02_hall_argument",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/02_hall_argument_v01.mp4",
+      "bytes": 7972924
+    },
+    {
+      "id": "03_method_pamphlet",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/03_method_pamphlet_v01.mp4",
+      "bytes": 7318371
+    },
+    {
+      "id": "04_zoo_gets_ruler",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/04_zoo_gets_ruler_v01.mp4",
+      "bytes": 7235908
+    },
+    {
+      "id": "05_explorer_ruler",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/05_explorer_ruler_v01.mp4",
+      "bytes": 6827139
+    },
+    {
+      "id": "06_cards_snap_line",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/06_cards_snap_line_v01.mp4",
+      "bytes": 6762128
+    },
+    {
+      "id": "07_light_to_heavy",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/07_light_to_heavy_v01.mp4",
+      "bytes": 7345359
+    },
+    {
+      "id": "08_property_waves",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/08_property_waves_v01.mp4",
+      "bytes": 7453339
+    },
+    {
+      "id": "09_empty_chair_claim",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/09_empty_chair_claim_v01.mp4",
+      "bytes": 6789384
+    },
+    {
+      "id": "10_city_plan_lots",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/10_city_plan_lots_v01.mp4",
+      "bytes": 7475441
+    },
+    {
+      "id": "12_pattern_risks_public",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/12_pattern_risks_public_v01.mp4",
+      "bytes": 2628717
+    },
+    {
+      "id": "11_fix_weights",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/11_fix_weights_v01.mp4",
+      "bytes": 7360110
     }
-  ]
+  ],
+  "flow_account": "benoats@googlemail.com",
+  "flow_home": "https://flow.google.com/u/1/",
+  "rough": {
+    "path": "09_Final-Export/hos_002_part03_rough_v01.mp4",
+    "bytes": 92787361,
+    "duration": 89.68,
+    "sha256": "5b625ba5f5009260170989250376f16bf7bb0fedbc000050bf7225d9b99cf4ec"
+  }
 }

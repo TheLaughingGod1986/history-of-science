@@ -192,9 +192,16 @@ def safe_close(ctx) -> None:
 def open_flow(p, *, profile: Path):
     ctx, page = flow.launch_context(p, headed=True, profile=profile)
     page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
-    page.wait_for_timeout(2500)
+    page.wait_for_timeout(3500)
     pick_google_account(page)
     flow.dismiss_banners(page)
+    page.wait_for_timeout(1500)
+    flow.dismiss_banners(page)
+    if not flow.looks_logged_in(page):
+        # Cookie Agree / SPA hydrate race — settle and recheck once.
+        flow.settle_after_nav(page, wait_ms=2000)
+        flow.dismiss_banners(page)
+        page.wait_for_timeout(1500)
     if not flow.looks_logged_in(page):
         safe_close(ctx)
         raise SystemExit(
@@ -374,8 +381,24 @@ def main() -> None:
                         raise SystemExit(f"STOP: Flow failed on {pid}: {e}") from e
 
                 if info.get("needs_gallery_harvest"):
-                    project_url = info.get("project_url") or (page.url or "")
-                    project_url = project_url.split("?")[0].rstrip("/")
+                    # Prefer Flow project URL recorded at Create — page.url can
+                    # drift to Facebook/other tabs and poison harvest.
+                    candidates = [
+                        info.get("project_url") or "",
+                        info.get("url") or "",
+                        page.url or "",
+                    ]
+                    project_url = ""
+                    for cand in candidates:
+                        cand = (cand or "").split("?")[0].rstrip("/")
+                        if "flow.google.com" in cand and "/project/" in cand:
+                            project_url = cand
+                            break
+                    if not project_url:
+                        raise SystemExit(
+                            f"STOP: no Flow project URL for harvest on {pid}; "
+                            f"candidates={candidates!r}"
+                        )
                     print(
                         f"  closing mint browser for harvest… project={project_url}",
                         flush=True,
