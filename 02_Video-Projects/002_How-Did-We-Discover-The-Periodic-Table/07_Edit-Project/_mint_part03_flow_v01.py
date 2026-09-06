@@ -305,6 +305,7 @@ def main() -> None:
 
                 tmp = dest.with_suffix(".tmp.mp4")
                 tmp.unlink(missing_ok=True)
+                info = None
                 try:
                     info = flow.generate_clip(
                         page,
@@ -318,21 +319,54 @@ def main() -> None:
                         timeout_s=180,
                     )
                 except Exception as e:
-                    death = looks_like_create_death(e, page)
-                    by_id[pid] = {
-                        "id": pid,
-                        "status": "fail",
-                        "error": str(e)[:500],
-                        "create_death": death,
-                    }
-                    meta["plates"] = list(by_id.values())
-                    META.write_text(json.dumps(meta, indent=2))
-                    if death:
-                        raise SystemExit(
-                            f"STOP BLOCKED: Create died on {pid} ({death}). "
-                            "No Ken Burns. No Omni Flash substitute."
-                        ) from e
-                    raise SystemExit(f"STOP: Flow failed on {pid}: {e}") from e
+                    # Explorer I2V attach can fail when Create UI hides Add to Prompt.
+                    # Fall back once to T2V with the same Explorer prompt (no Ken Burns).
+                    if (
+                        start is not None
+                        and "add to prompt" in str(e).lower()
+                    ):
+                        print(
+                            f"  I2V attach failed ({e}); falling back to Explorer T2V",
+                            flush=True,
+                        )
+                        safe_close(ctx)
+                        ctx, page, active = open_flow(p, profile=profile)
+                        t2v_prompt = prompt.replace(
+                            "IMAGE-TO-VIDEO from attached start frame. ",
+                            "Exactly ONE Explorer boy in frame. ",
+                        )
+                        try:
+                            info = flow.generate_clip(
+                                page,
+                                t2v_prompt,
+                                tmp,
+                                model=MODEL,
+                                start_frame=None,
+                                scenery_only=True,
+                                reuse_project=False,
+                                attempts=2,
+                                timeout_s=180,
+                            )
+                            info["i2v_fallback_t2v"] = True
+                        except Exception as e2:
+                            e = e2
+                            info = None
+                    if info is None:
+                        death = looks_like_create_death(e, page)
+                        by_id[pid] = {
+                            "id": pid,
+                            "status": "fail",
+                            "error": str(e)[:500],
+                            "create_death": death,
+                        }
+                        meta["plates"] = list(by_id.values())
+                        META.write_text(json.dumps(meta, indent=2))
+                        if death:
+                            raise SystemExit(
+                                f"STOP BLOCKED: Create died on {pid} ({death}). "
+                                "No Ken Burns. No Omni Flash substitute."
+                            ) from e
+                        raise SystemExit(f"STOP: Flow failed on {pid}: {e}") from e
 
                 if info.get("needs_gallery_harvest"):
                     project_url = info.get("project_url") or (page.url or "")
