@@ -1,0 +1,101 @@
+{
+  "finished": "2026-09-06T10:52:54.554762+00:00",
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "lock": "FORCE yellow/gold 3D house thumbs \u2014 Studio custom thumbnail only",
+  "ok": true,
+  "summary": {
+    "updated": 5,
+    "failed": 0,
+    "total": 5
+  },
+  "items": [
+    {
+      "slot": "s01",
+      "id": "H1y0DXFVmw8",
+      "title": "Germs don't cast a shadow",
+      "status": "updated",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Shorts/hos_001_s01_shadow_cover_animistry_v02.jpg",
+      "sha256": "d5f12863e06e39f6605f8cafc06f629b19eb30c18d1c6e3d684a71d637a69f8d",
+      "bytes": 346802,
+      "evidence": {
+        "before": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s01_H1y0DXFVmw8_before.png",
+        "after_upload": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s01_H1y0DXFVmw8_after_upload.png",
+        "after_save": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s01_H1y0DXFVmw8_after_save.png",
+        "verify_edit": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/verify_H1y0DXFVmw8_edit.png"
+      },
+      "house": "yellow_gold_3d_hook_confirmed_on_edit"
+    },
+    {
+      "slot": "s02",
+      "id": "iqToagXnjX0",
+      "title": "Microbes in a drop of pond water",
+      "status": "updated",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Shorts/hos_001_s02_pond_cover_animistry_v03.jpg",
+      "sha256": "a9afc947154d88264c895536b4fac5ff0b3bdcbb4dc432229e389ca96c96df71",
+      "bytes": 303548,
+      "evidence": {
+        "before": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s02_iqToagXnjX0_before.png",
+        "after_upload": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s02_iqToagXnjX0_after_upload.png",
+        "after_save": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s02_iqToagXnjX0_after_save.png",
+        "verify_edit": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/verify_iqToagXnjX0_edit.png"
+      },
+      "house": "yellow_gold_3d_hook_confirmed_on_edit"
+    },
+    {
+      "slot": "s03",
+      "id": "8_Edn_HCi1s",
+      "title": "Germs hitch a ride on you",
+      "status": "updated",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Shorts/hos_001_s03_vector_cover_animistry_v02.jpg",
+      "sha256": "6a92e606498906faa3b8bd9658f3acd6a8dee7c1d6ac837e385c8232d14262f6",
+      "bytes": 369419,
+      "evidence": {
+        "before": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s03_8_Edn_HCi1s_before.png",
+        "after_upload": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s03_8_Edn_HCi1s_after_upload.png",
+        "after_save": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s03_8_Edn_HCi1s_after_save.png",
+        "verify_edit": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/verify_8_Edn_HCi1s_edit.png"
+      },
+      "house": "yellow_gold_3d_hook_confirmed_on_edit"
+    },
+    {
+      "slot": "s04",
+      "id": "sILtQxgYQk8",
+      "title": "A flask that proved germs come from outside",
+      "status": "updated",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Shorts/hos_001_s04_flask_cover_animistry_v03.jpg",
+      "sha256": "4629f5b0686c4a6ba00208d3e4227b7a170e8c50c775542af75d915856fa60a5",
+      "bytes": 326748,
+      "evidence": {
+        "before": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s04_sILtQxgYQk8_before.png",
+        "after_upload": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s04_sILtQxgYQk8_after_upload.png",
+        "after_save": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s04_sILtQxgYQk8_after_save.png",
+        "verify_edit": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/verify_sILtQxgYQk8_edit.png"
+      },
+      "house": "yellow_gold_3d_hook_confirmed_on_edit"
+    },
+    {
+      "slot": "s05",
+      "id": "93fPUG-hW0A",
+      "title": "Invisible life is still everywhere",
+      "status": "updated",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Shorts/hos_001_s05_soap_cover_animistry_v02.jpg",
+      "sha256": "220ead2b9f3a833a2207e9e78ef283f2072d1c830dc593ba0b477715f5c9f545",
+      "bytes": 343290,
+      "evidence": {
+        "before": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s05_93fPUG-hW0A_before.png",
+        "after_upload": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s05_93fPUG-hW0A_after_upload.png",
+        "after_save": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/s05_93fPUG-hW0A_after_save.png",
+        "verify_edit": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/verify_93fPUG-hW0A_edit.png"
+      },
+      "house": "yellow_gold_3d_hook_confirmed_on_edit"
+    }
+  ],
+  "dashboard": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/99c_dashboard_after.png",
+  "content_shorts": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-06_shorts_thumb_house/99d_content_shorts_final.png",
+  "notes": [
+    "All five Public edit pages show cinematic 3D key-art + bold yellow/gold 3D hook after Save (Save grey).",
+    "Drafts left untouched (still white-type on Content list).",
+    "No remints. No HOS 002. No Orbit."
+  ]
+}
