@@ -2621,6 +2621,12 @@ def _generate_clip_once(
         dismiss_banners(page)
         url = ensure_project(page)
 
+    # Pin the Flow project URL immediately — page.url can later drift to
+    # Facebook/etc when the shared Playwright profile has polluted tabs.
+    if "flow.google.com" in (url or "") and "/project/" in (url or ""):
+        page._orbit_flow_project_url = (url or "").split("?")[0].rstrip("/")
+        print(f"  pinned project_url={page._orbit_flow_project_url}", flush=True)
+
     print(f"  flow: {url}", flush=True)
     if not looks_logged_in(page):
         settle_after_nav(page, wait_ms=1500)
@@ -2727,7 +2733,18 @@ def _generate_clip_once(
     media_id = wait_and_download(
         page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
     )
-    proj_url = getattr(page, "_orbit_flow_project_url", None) or (page.url or "")
+    proj_url = getattr(page, "_orbit_flow_project_url", None) or ""
+    if "flow.google.com" not in proj_url or "/project/" not in proj_url:
+        # Fall back carefully — never harvest a non-Flow URL from a polluted profile.
+        cur = (page.url or "").split("?")[0].rstrip("/")
+        if "flow.google.com" in cur and "/project/" in cur:
+            proj_url = cur
+            page._orbit_flow_project_url = cur
+        else:
+            raise RuntimeError(
+                f"Lost Flow project URL before harvest (page.url={page.url!r}). "
+                "Refuse non-Flow harvest targets."
+            )
     if isinstance(media_id, str) and media_id.startswith("gallery-pending:"):
         # Caller closes Chromium, settles, then fresh-browser harvests.
         print(f"  {media_id} — caller must fresh-browser harvest", flush=True)
@@ -2745,7 +2762,7 @@ def _generate_clip_once(
             "url": proj_url,
             "context_closed": False,
             "needs_gallery_harvest": True,
-            "project_url": (proj_url or "").split("?")[0].rstrip("/"),
+            "project_url": proj_url,
         }
     if not veo.already_done(dest):
         raise RuntimeError(

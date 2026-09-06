@@ -207,6 +207,11 @@ def open_flow(p, *, profile: Path):
 
 
 def run_harvest(dest: Path, project_url: str, *, before_thumbs: int = -1) -> None:
+    project_url = (project_url or "").split("?")[0].rstrip("/")
+    if "flow.google.com" not in project_url or "/project/" not in project_url:
+        raise SystemExit(
+            f"STOP: refuse harvest — not a Flow project URL: {project_url!r}"
+        )
     settle = int(os.environ.get("HOS_FLOW_HARVEST_SETTLE_S", "55"))
     wait_s = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "200"))
     print(f"  settle {settle}s then harvest wait_s={wait_s}", flush=True)
