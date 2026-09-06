@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-09-06T13:01:57",
+  "jobs": [
+    {
+      "id": "sILtQxgYQk8",
+      "want": "Mon 7 Sep 2026 11:30",
+      "chip": "Visibility Scheduled",
+      "date": "7 Sept 2026",
+      "time": "11:30",
+      "related": {
+        "ok": true,
+        "snip": "Related video\nHow Did We Discover Germs?\nSubtitles\n\nHere's how your thumb"
+      },
+      "ok": true
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "want": "Tue 8 Sep 2026 11:30",
+      "chip": "Visibility Scheduled",
+      "date": "8 Sept 2026",
+      "time": "11:30",
+      "related": {
+        "ok": true,
+        "snip": "Related video\nHow Did We Discover Germs?\nSubtitles\n\nHere's how your thumb"
+      },
+      "ok": true
+    }
+  ],
+  "publics": [
+    {
+      "id": "H1y0DXFVmw8",
+      "chip": "Visibility Public",
+      "ok": true
+    },
+    {
+      "id": "iqToagXnjX0",
+      "chip": "Visibility Public",
+      "ok": true
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "chip": "Visibility Public",
+      "ok": true
+    }
+  ],
+  "deletes": "NONE",
+  "filter_err": "Locator.click: Timeout 2500ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"Visibility\", re.IGNORECASE)).first\n",
+  "content_scheduled_has_flask": true,
+  "content_scheduled_has_invisible": true,
+  "ok": true
+}
