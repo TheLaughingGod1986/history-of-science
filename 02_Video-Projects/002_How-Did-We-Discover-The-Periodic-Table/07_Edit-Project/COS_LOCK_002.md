@@ -28,10 +28,11 @@ Source: **Ben GO** for Part 03 mint (6 Sep). P01 v14 PASS · P02 v06 LOCKED. Do 
 5. Report blockers to CoS — do not spam Ben for credits
 6. If Flow/API credits dry → **BLOCKED**; do not ship fake motion
 
-## Credits (live 6 Sep 22:00)
+## Credits (live reconfirm 6 Sep 22:20)
 
-- Gemini prepaid: dry (`429 RESOURCE_EXHAUSTED` / prepayment depleted)
-- Flow Ultra session: **out of Google Flow credits** on Create (Veo 3.1 Fast submit accepted UI-side, generation refused unpaid)
+- Gemini prepaid: dry (`429 RESOURCE_EXHAUSTED`)
+- Flow Ultra: **out of Google Flow credits** + **Veo 3.1 Fast daily/credit limit** on Create
+- Showrunner LOCK: STOP — do not ship Ken Burns; do not substitute Omni Flash for Veo Fast
 
 ## Process
 
