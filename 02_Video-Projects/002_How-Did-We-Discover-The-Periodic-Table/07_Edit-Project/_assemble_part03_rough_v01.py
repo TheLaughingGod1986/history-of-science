@@ -36,7 +36,8 @@ SIDE_LABELS = [
     (50.0, 58.0, "PROPERTY WAVES"),
     (60.0, 68.0, "A PREDICTION"),
     (70.0, 78.0, "EMPTY CHAIR"),
-    (80.0, 88.0, "FIX THE WEIGHTS"),
+    (80.0, 85.5, "FIX THE WEIGHTS"),
+    (85.5, 89.7, "CHAOS HAS ADDRESS"),
 ]
 
 
