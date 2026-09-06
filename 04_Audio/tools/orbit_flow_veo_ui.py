@@ -482,12 +482,64 @@ def read_selected_video_model(page) -> str | None:
 
 
 def _ensure_create_prompt_mode(page) -> None:
-    """Ensure Create can generate video.
+    """Ensure Create generates Veo video — not Agent chat.
 
-    Sep 2026 Flow UI: model selection lives in tune/Settings under
-    "Video generation default". Prompt-bar Video pill may be absent.
+    Sep 2026 Flow UI: the prompt-bar ``Agent`` chip
+    (``agent-mode-chip`` / ``agent-mode-chip-checked``) routes arrow_forward
+    into chat. Progress can hit 100% with zero media. For scenery/I2V mint
+    we must leave Agent OFF so ``Start generation`` runs Veo.
     """
-    return
+    for _ in range(3):
+        state = page.evaluate(
+            """() => {
+              const chips = [...document.querySelectorAll('button.agent-mode-chip, button')];
+              for (const b of chips) {
+                const t = (b.innerText || '').trim();
+                if (t !== 'Agent') continue;
+                const checked = b.classList.contains('agent-mode-chip-checked')
+                  || b.getAttribute('aria-pressed') === 'true';
+                return {
+                  found: true,
+                  checked,
+                  cls: (b.className || '').toString(),
+                };
+              }
+              return {found: false, checked: false, cls: ''};
+            }"""
+        )
+        if not state.get("found"):
+            print("  create-mode: Agent chip not found (ok if UI variant)", flush=True)
+            return
+        if not state.get("checked"):
+            # Confirm Video settings trigger is present (Create/Veo mode).
+            has_video = page.evaluate(
+                """() => [...document.querySelectorAll('button')].some(b => {
+                  const t = (b.innerText || '').replace(/\\n/g, ' ');
+                  const a = b.getAttribute('aria-label') || '';
+                  return /Settings trigger/i.test(a) || /Video\\s*·/i.test(t) || /Veo/i.test(t);
+                })"""
+            )
+            print(
+                f"  create-mode: Agent OFF video_settings={bool(has_video)}",
+                flush=True,
+            )
+            return
+        print("  create-mode: Agent ON → clicking chip to disable", flush=True)
+        page.evaluate(
+            """() => {
+              for (const b of document.querySelectorAll('button')) {
+                if ((b.innerText || '').trim() !== 'Agent') continue;
+                b.click();
+                return true;
+              }
+              return false;
+            }"""
+        )
+        page.wait_for_timeout(700)
+    raise RuntimeError(
+        "Flow Agent chip stayed ON — Create would chat instead of minting Veo. "
+        "Turn Agent off manually on Mini, then retry."
+    )
 
 
 def _open_agent_settings_drawer(page) -> None:
