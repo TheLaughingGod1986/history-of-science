@@ -1,54 +1,37 @@
 # Part 03 status — A Ruler for Atoms
 
-**Updated:** 6 Sep 2026 22:52 Europe/London (HOS Local Mini · Showrunner GO resume probe)
+**Updated:** 7 Sep 2026 Europe/London (HOS Local Mini · gallery harvest restored)
 
-## Ben / Showrunner locks
+## Locks
 
 | Cut | Status |
 |---|---|
-| `hos_002_part01_rough_v14.mp4` | **LOCKED PASS.** Do **not** remint / overwrite. |
-| `hos_002_part02_rough_v06.mp4` | **LOCKED.** Do **not** remint / overwrite. |
-| Part 03 | **BLOCKED_AUTH** — Mini Flow still on wrong Google account |
+| `hos_002_part01_rough_v14.mp4` | **LOCKED PASS.** Untouched. |
+| `hos_002_part02_rough_v06.mp4` | **LOCKED.** Untouched. |
+| Part 03 | **MINTING** — Flow `/u/1/` as `benoats@googlemail.com` |
 | Part 04 | Do **not** start |
 
-## Target rough (not landed)
+## Target
 
-`/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v01.mp4`
+`…/09_Final-Export/hos_002_part03_rough_v01.mp4`
 
-## BLOCKED_AUTH — Showrunner GO resume probe (22:52)
+## Auth
 
-Showrunner GO received. Auth probe ran **before** any mint.
+Mini Playwright profile on **`https://flow.google.com/u/1/`** → `benoats@googlemail.com` (Ultra · credits OK). Refuse `benoats86@gmail.com`.
 
-| Check | Result |
+## Harvest fix
+
+Flow Create finishes at 100% with **zero** `getMediaUrlRedirect` ids. Clips land under Videos as `<video src="/asb/…">`. Mint hands off to fresh-browser gallery Download.
+
+## Progress
+
+| Plate | Status |
 |---|---|
-| Required account | `benoats@googlemail.com` (Ben proof: 10,050 Flow credits) |
-| Mini profile | `~/.playwright-hos-flow-profile` |
-| Signed-in now | **`benoats86@gmail.com`** |
-| Credits on that account | **0 Google Flow credits** |
-| Mint | **not started** |
-| Ken Burns | not used |
-| P01 / P02 | untouched |
+| 01_hall_open_side_label | **OK** salvaged · 8.0s · real Veo |
+| 02–12 | minting |
 
-Evidence:
+## Next
 
-- `logs/flow_auth_probe_resume_20260906.json`
-- Aria: `Google Account: Benjamin Oats (benoats86@gmail.com)`
-- Credits chip: `0 Google Flow credits` · `Credits refresh daily` · Upgrade
-
-**Hard stop.** Ben must sign Mini Flow as `benoats@googlemail.com` himself (never paste passwords), then re-issue GO.
-
-## When Mini shows benoats@googlemail.com + credits
-
-1. Confirm account chip + credits
-2. `_mint_part03_flow_v01.py` (12 × Veo 3.1 Fast only)
-3. QA gate → `_assemble_part03_rough_v01.py` → print path + bytes + sha256 + duration
-4. Hand to HOS UAT. Do not ping Ben.
-
-## Do not
-
-- Remint Part 01 / 02
-- Ship Ken Burns / still-push / freeze-pad
-- Use Omni Flash instead of Veo Fast
-- Mint as `benoats86@gmail.com`
-- Paste passwords / switch accounts for Ben
-- Start Part 04
+1. Mint remaining 11 × Veo 3.1 Fast
+2. Assemble rough v01 → path + bytes + sha256 + duration
+3. Hand to HOS UAT. Do not ping Ben.

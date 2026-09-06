@@ -1772,6 +1772,11 @@ def _dismiss_asset_search_modal(page) -> None:
 def submit_create(page) -> None:
     """Click the prompt-bar send (arrow_forward). Never click add_2 (asset picker)."""
     _dismiss_asset_search_modal(page)
+    # Hard gate: Agent chip ON → chat, not Veo. Always force Create mode first.
+    try:
+        _ensure_create_prompt_mode(page)
+    except Exception as e:
+        print(f"  submit_create create-mode warn: {e}", flush=True)
 
     deadline = time.time() + 45
     while time.time() < deadline:
@@ -1977,6 +1982,237 @@ def collect_media_ids(page) -> set[str]:
     return set(MEDIA_REDIRECT_RE.findall(html))
 
 
+def collect_gallery_asb_srcs(page) -> list[str]:
+    """Flow gallery thumbs live at flow.google.com/asb/… (img and/or video).
+
+    Sep 2026 Create Videos panel often mounts completed clips as ``<video
+    src="/asb/…">`` rather than ``<img>``. Collect both.
+    """
+    try:
+        return page.evaluate(
+            """() => {
+              const out = [];
+              const push = (s) => {
+                if (s && /\\/asb\\//i.test(s) && !out.includes(s)) out.push(s);
+              };
+              for (const i of document.querySelectorAll('img')) {
+                push(i.currentSrc || i.src || '');
+              }
+              for (const v of document.querySelectorAll('video')) {
+                push(v.currentSrc || v.src || '');
+                push(v.poster || '');
+              }
+              return out;
+            }"""
+        ) or []
+    except Exception:
+        return []
+
+
+def harvest_agent_gallery_mp4(
+    page,
+    dest: Path,
+    captured_videos: list[bytes],
+    *,
+    before_asb: set[str] | None = None,
+) -> str | None:
+    """Open a gallery card and save its mp4 (Download, else googlevideo / asb).
+
+    Sep 2026 Flow Create UI often finishes at 100% with zero getMediaUrlRedirect
+    ids. Completed clips sit under All media / Videos as /asb/ video thumbs.
+    Opening a card shows detail chrome with Download; playing may fire
+    flow-content.google/video or googlevideo.
+    """
+    before_asb = before_asb or set()
+    try:
+        page.evaluate(
+            """() => {
+              for (const n of document.querySelectorAll('button,a,[role="button"],[role="tab"]')) {
+                const t = ((n.innerText || '') + ' ' + (n.getAttribute('aria-label') || '')).trim();
+                if (/^Videos$/i.test(t)) { n.click(); return 'Videos'; }
+              }
+              for (const n of document.querySelectorAll('button,a,[role="button"],[role="tab"]')) {
+                const t = ((n.innerText || '') + ' ' + (n.getAttribute('aria-label') || '')).trim();
+                if (/^All media$/i.test(t) || t === 'All media') { n.click(); return 'All media'; }
+              }
+              return null;
+            }"""
+        )
+        page.wait_for_timeout(900)
+    except Exception:
+        pass
+
+    thumbs = collect_gallery_asb_srcs(page)
+    new_thumbs = [s for s in thumbs if s not in before_asb] or list(thumbs)
+    if not new_thumbs:
+        # Fallback: any on-page <video> with measurable box
+        try:
+            fallback = page.evaluate(
+                """() => [...document.querySelectorAll('video')]
+                  .map(v => {
+                    const r = v.getBoundingClientRect();
+                    return {
+                      src: v.currentSrc || v.src || '',
+                      w: r.width, h: r.height, x: r.x, y: r.y
+                    };
+                  })
+                  .filter(v => v.w > 80 && v.h > 60)
+                  .map(v => v.src)
+                  .filter(Boolean)"""
+            ) or []
+            new_thumbs = [s for s in fallback if s not in before_asb] or list(fallback)
+        except Exception:
+            pass
+    if not new_thumbs:
+        return None
+    print(f"  gallery harvest thumbs={len(thumbs)} new={len(new_thumbs)}", flush=True)
+    target_src = new_thumbs[-1]
+
+    def _scroll_target() -> dict | None:
+        page.evaluate(
+            """(src) => {
+              const els = [...document.querySelectorAll('img,video')];
+              const el = els.find(i => (i.currentSrc || i.src || '') === src)
+                || els.find(i => (i.currentSrc || i.src || '').includes('/asb/'));
+              if (el) el.scrollIntoView({block:'center', inline:'nearest'});
+            }""",
+            target_src,
+        )
+        page.wait_for_timeout(450)
+        box = page.evaluate(
+            """(src) => {
+              const els = [...document.querySelectorAll('img,video')];
+              const el = els.find(i => (i.currentSrc || i.src || '') === src)
+                || els.find(i => (i.currentSrc || i.src || '').includes('/asb/'));
+              if (!el) return null;
+              const r = el.getBoundingClientRect();
+              return {x:r.x, y:r.y, w:r.width, h:r.height};
+            }""",
+            target_src,
+        )
+        if not box or box.get("w", 0) <= 40:
+            return None
+        vp = page.viewport_size or {"width": 1440, "height": 900}
+        cx = box["x"] + box["w"] / 2
+        cy = box["y"] + box["h"] / 2
+        if not (0 <= cx <= vp["width"] and 0 <= cy <= vp["height"]):
+            print(f"  gallery thumb still offscreen cx={cx:.0f} cy={cy:.0f}", flush=True)
+            return None
+        return {"box": box, "cx": cx, "cy": cy}
+
+    def _save(raw: bytes, via: str) -> str | None:
+        if len(raw) < 150_000 or b"ftyp" not in raw[:64]:
+            return None
+        captured_videos.append(raw)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(raw)
+        print(f"  gallery harvest saved bytes={len(raw)} via={via}", flush=True)
+        return f"{via}:{len(raw)}"
+
+    def _click_download() -> bytes | None:
+        candidates = [
+            page.get_by_role("button", name=re.compile(r"download", re.I)),
+            page.locator('button[aria-label*="Download" i], [aria-label*="Download" i]'),
+            page.locator('button:has-text("download"), button:has-text("Download")'),
+            page.locator('text=/^download$/i'),
+        ]
+        for loc in candidates:
+            try:
+                if loc.count() < 1:
+                    continue
+                target = loc.first
+                if not target.is_visible():
+                    continue
+                with page.expect_download(timeout=25_000) as di:
+                    target.click(timeout=5_000)
+                download = di.value
+                tmp = dest.with_suffix(".download.tmp")
+                try:
+                    download.save_as(str(tmp))
+                except Exception as e:
+                    print(f"  gallery Download save_as warn: {e}", flush=True)
+                    try:
+                        src = download.path()
+                        if src:
+                            Path(tmp).write_bytes(Path(src).read_bytes())
+                    except Exception as e2:
+                        print(f"  gallery Download path warn: {e2}", flush=True)
+                        raise
+                raw = tmp.read_bytes()
+                tmp.unlink(missing_ok=True)
+                if len(raw) > 150_000:
+                    return raw
+            except Exception as e:
+                print(f"  gallery Download miss: {e}", flush=True)
+        return None
+
+    def _capture_network(play_click) -> bytes | None:
+        def _is_vid(resp) -> bool:
+            u = (resp.url or "").lower()
+            ct = (resp.headers.get("content-type") or "").lower()
+            return resp.status == 200 and (
+                "googlevideo.com" in u
+                or "videoplayback" in u
+                or "flow-content.google/video" in u
+                or ("video" in ct and "mp4" in ct)
+                or u.endswith(".mp4")
+            )
+
+        try:
+            with page.expect_response(_is_vid, timeout=45_000) as ri:
+                play_click()
+            body = ri.value.body()
+            if len(body) > 150_000 and b"ftyp" in body[:64]:
+                return body
+        except Exception as e:
+            print(f"  gallery expect_response play err: {e}", flush=True)
+        return None
+
+    geo = _scroll_target()
+    if not geo:
+        return None
+    try:
+        page.mouse.click(geo["cx"], geo["cy"])
+        page.wait_for_timeout(1400)
+    except Exception as e:
+        print(f"  gallery open click err: {e}", flush=True)
+
+    # Prefer explicit Download (reliable on detail chrome).
+    raw = _click_download()
+    if raw:
+        got = _save(raw, "gallery-download")
+        if got:
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            return got
+
+    def _play():
+        try:
+            play = page.get_by_role("button", name=re.compile(r"play", re.I))
+            if play.count() > 0 and play.first.is_visible():
+                play.first.click(timeout=3_000)
+                return
+        except Exception:
+            pass
+        page.mouse.click(geo["cx"], geo["cy"])
+
+    raw = _capture_network(_play)
+    if raw is None:
+        print("  gallery harvest: retry play for network mp4", flush=True)
+        page.wait_for_timeout(800)
+        raw = _capture_network(_play)
+    try:
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(400)
+    except Exception:
+        pass
+    if raw is not None:
+        return _save(raw, "gallery-network")
+    return None
+
+
 def is_flow_video_url(url: str) -> bool:
     """Reject non-Flow CDNs (Threads/Instagram pollution in shared Chrome profiles)."""
     u = (url or "").lower()
@@ -2032,13 +2268,21 @@ def wait_and_download(
     timeout_s: int = 900,
     min_elapsed_s: float = 0,
 ) -> str:
-    """Wait for a new Flow media video and download it. Returns media id/url."""
+    """Wait for a new Flow media video and download it. Returns media id/url.
+
+    Sep 2026 Create UI often finishes with zero getMediaUrlRedirect ids. Once
+    generation is clearly running (or hits 100%), return ``gallery-pending:N``
+    so the caller can close Chromium and harvest in a fresh browser.
+    """
     t0 = time.time()
     last_status = ""
     asked_status = False
     failed_since: float | None = None
     retry_clicks = 0
     seen_generating = False
+    before_asb = set(collect_gallery_asb_srcs(page))
+    gallery_tries = 0
+    last_gallery_try = 0.0
     # Do NOT permanently blacklist early media ids — Flow often reuses the same
     # getMediaUrlRedirect name from a placeholder/upload into the finished mp4.
     early_gate_s = max(5.0, float(min_elapsed_s or 0) * 0.35)
@@ -2123,6 +2367,42 @@ def wait_and_download(
             pct is not None
         ):
             seen_generating = True
+
+        # Create UI: long in-process waits crash Chrome / never emit media ids.
+        # Once Create is clearly running, hand off to fresh-browser gallery harvest.
+        pct_n = int(pct.group(1)) if pct else None
+        if seen_generating and elapsed >= max(12.0, float(min_elapsed_s or 0) * 0.4):
+            thumbs_now: list[str] = []
+            try:
+                thumbs_now = collect_gallery_asb_srcs(page)
+            except Exception as e:
+                print(f"  early handoff thumb probe failed: {e}", flush=True)
+            label = status or (pct.group(0) if pct else "?")
+            # Prefer waiting until ~100% / thumbs appear, but do not spin forever.
+            gen_done = (
+                (pct_n is not None and pct_n >= 95)
+                or (status == "" and elapsed >= max(40.0, float(min_elapsed_s or 0)))
+                or elapsed >= 55.0
+                or bool(thumbs_now and (set(thumbs_now) - before_asb))
+            )
+            if gen_done or (pct_n is not None and pct_n >= 15 and elapsed >= 18.0):
+                new_thumbs = [s for s in thumbs_now if s not in before_asb]
+                print(
+                    f"  gen running ({label} @ {elapsed:.0f}s) — "
+                    f"defer to fresh-browser harvest "
+                    f"(thumbs={len(thumbs_now)} new={len(new_thumbs)})",
+                    flush=True,
+                )
+                return f"gallery-pending:{len(new_thumbs) or len(thumbs_now)}"
+            if gallery_tries < 6 and (elapsed - last_gallery_try) >= 8.0:
+                gallery_tries += 1
+                last_gallery_try = elapsed
+                print(
+                    f"  waiting for gallery thumbs (#{gallery_tries}) "
+                    f"pct={pct_n} thumbs={len(thumbs_now)}",
+                    flush=True,
+                )
+
         # Also harvest <video src> / blob URLs that never appear as getMediaUrlRedirect
         if elapsed >= max(20.0, float(min_elapsed_s or 0)):
             vsrc = page.evaluate(
@@ -2409,6 +2689,26 @@ def _generate_clip_once(
     media_id = wait_and_download(
         page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
     )
+    proj_url = getattr(page, "_orbit_flow_project_url", None) or (page.url or "")
+    if isinstance(media_id, str) and media_id.startswith("gallery-pending:"):
+        # Caller closes Chromium, settles, then fresh-browser harvests.
+        print(f"  {media_id} — caller must fresh-browser harvest", flush=True)
+        return {
+            "seconds": round(time.time() - t0, 1),
+            "bytes": 0,
+            "model": model,
+            "engine": "flow-ui-veo",
+            "orbit_ref": str(ref) if ref and start_frame is None and not scenery_only else None,
+            "start_frame": str(start_frame) if start_frame else None,
+            "orbit_attached": attached,
+            "identity_lock": (not scenery_only) and start_frame is None,
+            "scenery_only": scenery_only,
+            "media_id": media_id,
+            "url": proj_url,
+            "context_closed": False,
+            "needs_gallery_harvest": True,
+            "project_url": (proj_url or "").split("?")[0].rstrip("/"),
+        }
     if not veo.already_done(dest):
         raise RuntimeError(
             f"download too small: {dest} ({dest.stat().st_size if dest.exists() else 0})"
@@ -2425,7 +2725,7 @@ def _generate_clip_once(
         "identity_lock": (not scenery_only) and start_frame is None,
         "scenery_only": scenery_only,
         "media_id": media_id,
-        "url": page.url,
+        "url": proj_url,
     }
 
 

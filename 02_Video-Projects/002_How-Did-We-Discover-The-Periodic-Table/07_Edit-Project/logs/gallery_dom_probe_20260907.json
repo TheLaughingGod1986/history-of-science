@@ -1,0 +1,54 @@
+{
+  "imgs": [
+    {
+      "src": "https://ssl.gstatic.com/gb/images/ring/pr_32px_asknjuyerc.png",
+      "w": 42,
+      "h": 42,
+      "alt": ""
+    }
+  ],
+  "videos": [
+    {
+      "src": "https://flow.google.com/asb/AB-nOUZWpsPOSE7m-dsAJ5f4_E2nzkpPInJudis8p8mhtkj-DoGQoW9qMIoAG-olnD5G_hEGejzVdNL28zZvWb9-uMfdoMW3erLB0IGISQovLDLSPnKpASaoGCEygbtR4GlrsHT8x8Exe1JSP6mZblgNJCbr8hDz0qMLf8c2jJihww=mm,22,15?authuser",
+      "w": 444,
+      "h": 250
+    }
+  ],
+  "btns": [
+    "Agree",
+    "No thanks",
+    "arrow_back Back button to go to previous page",
+    "more_vert More options for the project",
+    "search Search",
+    "filter_list Filtering and sorting options",
+    "add Add media menu",
+    "help Product help",
+    "settings_2 Tile grid settings",
+    "more_vert More options",
+    "ULTRA Account details",
+    "favorite Favourite",
+    "redo Reuse prompt",
+    "more_vert More options",
+    "play_circle Empty hall with fluttering pamph\u2026",
+    "add Add ingredients to the prompt box",
+    "Agent",
+    "Video \u00b7 720p \u00b7 8s crop_16_9 x1 Settings trigger",
+    "arrow_forward Start generation"
+  ],
+  "htmlHas": {
+    "asb": true,
+    "mediaRedirect": false,
+    "googlevideo": false,
+    "play_circle": true
+  },
+  "bgs": [],
+  "bodyHead": "Skip to main content\narrow_back\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nULTRA\ndashboard\nAll media\nvideocam\nVideos\naccessibility_new\nCharacters\nmovie\nScenes\napps_spark_2\nTools\ndelete\nBin\nleft_panel_close\nCollapse\nfavorite\nredo\nmore_vert\nplay_circle\nEmpty hall with fluttering pamph\u2026\n\nWhat do you want to create?\n\n\n\nadd\nAgent\nVideo \u00b7 720p \u00b7 8s\ncrop_16_9\nx1\narrow_forward\n\nGoogle Flow can make mistakes, so double-check it",
+  "clicked": [
+    "All media",
+    "All media",
+    "Videos",
+    "Videos"
+  ],
+  "url": "https://flow.google.com/u/1/project/40c7c7f0-49c6-4cd7-b8e5-56491bf88d16",
+  "shot": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/logs/gallery_dom_probe_20260907.png"
+}

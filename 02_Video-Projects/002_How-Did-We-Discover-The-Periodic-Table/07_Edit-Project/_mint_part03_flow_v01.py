@@ -3,6 +3,11 @@
 
 Auth lock (2026-09-06): mint ONLY via https://flow.google.com/u/1/ as
 benoats@googlemail.com (10k+ credits). Refuse benoats86@gmail.com.
+
+Create UI often finishes at 100% with zero getMediaUrlRedirect ids. After
+Create is running, generate_clip returns needs_gallery_harvest; this mint
+closes Chromium, settles, harvests in a fresh process, then relaunches.
+
 Do not remint Part 01/02. Do not ping Ben. STOP if Create dies.
 """
 from __future__ import annotations
@@ -10,8 +15,10 @@ from __future__ import annotations
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
@@ -27,6 +34,7 @@ PROJ = Path(__file__).resolve().parents[1]
 PLATES_JSON = PROJ / "07_Edit-Project/parts/part-03_plates_v01.json"
 RAW = PROJ / "04_Generated-Clips/part03/raw/v01_fast"
 META = PROJ / "07_Edit-Project/part03_mint_flow_v01_meta.json"
+HARVEST = Path(__file__).resolve().parent / "_harvest_newest_gallery_v01.py"
 EXPLORER_LOCK = PROJ / "04_Generated-Clips/part01/refs/explorer_germs_part01_lock.jpg"
 EXPLORER_START = PROJ / "04_Generated-Clips/part03/refs/v01_stills/05_explorer_ruler_start.jpg"
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
@@ -154,8 +162,6 @@ def require_flow_account(page) -> str:
         raise SystemExit(
             f"BLOCKED_AUTH: unexpected Flow account {active}. Need {REQUIRED_FLOW_EMAIL}."
         )
-    if "/u/1" not in (page.url or "") and "/u/1" not in flow.FLOW_HOME:
-        print("  WARN: not clearly on /u/1/ — continuing only because email matched", flush=True)
     return active
 
 
@@ -172,6 +178,63 @@ def looks_like_create_death(exc: BaseException, page) -> str | None:
         if marker in body:
             return marker
     return None
+
+
+def safe_close(ctx) -> None:
+    if ctx is None:
+        return
+    try:
+        ctx.close()
+    except Exception:
+        pass
+
+
+def open_flow(p, *, profile: Path):
+    ctx, page = flow.launch_context(p, headed=True, profile=profile)
+    page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
+    page.wait_for_timeout(2500)
+    pick_google_account(page)
+    flow.dismiss_banners(page)
+    if not flow.looks_logged_in(page):
+        safe_close(ctx)
+        raise SystemExit(
+            "BLOCKED_AUTH: Flow not logged in. Do not Ken-Burns. "
+            "Ben must sign Mini as benoats@googlemail.com on /u/1/."
+        )
+    active = require_flow_account(page)
+    print(f"  AUTH OK minting as {active} via {flow.FLOW_HOME}", flush=True)
+    return ctx, page, active
+
+
+def run_harvest(dest: Path, project_url: str, *, before_thumbs: int = -1) -> None:
+    settle = int(os.environ.get("HOS_FLOW_HARVEST_SETTLE_S", "55"))
+    wait_s = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "200"))
+    print(f"  settle {settle}s then harvest wait_s={wait_s}", flush=True)
+    time.sleep(settle)
+    env = dict(os.environ)
+    env["ORBIT_FLOW_HOME"] = flow.FLOW_HOME
+    env["ORBIT_FLOW_PROFILE"] = str(PROFILE)
+    cmd = [
+        sys.executable, "-u", str(HARVEST),
+        "--out", str(dest),
+        "--project", project_url,
+        "--wait-s", str(wait_s),
+        "--before-thumbs", str(before_thumbs),
+    ]
+    print(f"  spawn harvest: {' '.join(cmd)}", flush=True)
+    subprocess.check_call(cmd, env=env)
+
+
+def probe_dur(path: Path) -> float:
+    return float(
+        subprocess.check_output(
+            [
+                "ffprobe", "-v", "error", "-show_entries", "format=duration",
+                "-of", "default=nw=1:nk=1", str(path),
+            ],
+            text=True,
+        ).strip()
+    )
 
 
 def main() -> None:
@@ -201,46 +264,58 @@ def main() -> None:
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as p:
-        ctx, page = flow.launch_context(p, headed=True, profile=profile)
+        ctx, page, active = open_flow(p, profile=profile)
+        meta["flow_account"] = active
+        meta["flow_home"] = flow.FLOW_HOME
         try:
-            page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
-            page.wait_for_timeout(2500)
-            pick_google_account(page)
-            flow.dismiss_banners(page)
-            if not flow.looks_logged_in(page):
-                raise SystemExit(
-                    "BLOCKED_AUTH: Flow not logged in. Do not Ken-Burns. "
-                    "Ben must sign Mini as benoats@googlemail.com on /u/1/."
-                )
-            active = require_flow_account(page)
-            meta["flow_account"] = active
-            meta["flow_home"] = flow.FLOW_HOME
-            print(f"  AUTH OK minting as {active} via {flow.FLOW_HOME}", flush=True)
-
             for i, plate in enumerate(plates):
                 pid = plate["id"]
                 if only and pid not in only and not any(pid.startswith(x) for x in only):
                     continue
                 dest = dest_for(pid)
                 if veo.already_done(dest, min_bytes=400_000):
-                    print(f"  skip {dest.name}", flush=True)
-                    by_id[pid] = {"id": pid, "status": "exists", "out": str(dest)}
-                    continue
+                    try:
+                        dur = probe_dur(dest)
+                    except Exception:
+                        dur = 0.0
+                    if 5.0 <= dur <= 40.0:
+                        print(f"  skip {dest.name} dur={dur:.2f}", flush=True)
+                        by_id[pid] = {
+                            "id": pid,
+                            "status": "exists",
+                            "out": str(dest),
+                            "duration": dur,
+                        }
+                        continue
+                    print(f"  re-mint bad existing {dest.name} dur={dur:.2f}", flush=True)
+                    dest.unlink(missing_ok=True)
+
                 prompt = f"{STYLE} {plate['prompt']}"
                 start = explorer_start if plate.get("explorer") else None
                 kind = "I2V" if start else "T2V"
                 print(f"\n=== Fast {kind} {pid} ({i+1}/{len(plates)}) ===", flush=True)
+
+                # Ensure live page
+                try:
+                    _ = page.url
+                except Exception:
+                    print("  page dead — relaunching", flush=True)
+                    safe_close(ctx)
+                    ctx, page, active = open_flow(p, profile=profile)
+
+                tmp = dest.with_suffix(".tmp.mp4")
+                tmp.unlink(missing_ok=True)
                 try:
                     info = flow.generate_clip(
                         page,
                         prompt,
-                        dest,
+                        tmp,
                         model=MODEL,
                         start_frame=start,
                         scenery_only=(start is None),
                         reuse_project=False,
                         attempts=1,
-                        timeout_s=700,
+                        timeout_s=180,
                     )
                 except Exception as e:
                     death = looks_like_create_death(e, page)
@@ -258,15 +333,53 @@ def main() -> None:
                             "No Ken Burns. No Omni Flash substitute."
                         ) from e
                     raise SystemExit(f"STOP: Flow failed on {pid}: {e}") from e
-                veo.strip_audio(dest)
-                if not dest.exists() or dest.stat().st_size < 400_000:
-                    raise SystemExit(f"STOP: download missing/small {dest}")
-                by_id[pid] = {"id": pid, "status": "ok", "out": str(dest), **info}
+
+                if info.get("needs_gallery_harvest"):
+                    project_url = info.get("project_url") or (page.url or "")
+                    project_url = project_url.split("?")[0].rstrip("/")
+                    print(
+                        f"  closing mint browser for harvest… project={project_url}",
+                        flush=True,
+                    )
+                    safe_close(ctx)
+                    ctx = None
+                    page = None
+                    run_harvest(tmp, project_url, before_thumbs=-1)
+                    ctx, page, active = open_flow(p, profile=profile)
+                    info["media_id"] = (
+                        f"gallery-harvest:{tmp.stat().st_size if tmp.exists() else 0}"
+                    )
+                    info["bytes"] = tmp.stat().st_size if tmp.exists() else 0
+
+                if not tmp.exists() or tmp.stat().st_size < 400_000:
+                    raise SystemExit(f"STOP: download missing/small {tmp}")
+                veo.strip_audio(tmp)
+                try:
+                    dur = probe_dur(tmp)
+                except Exception as e:
+                    raise SystemExit(f"STOP: unreadable download {tmp}: {e}") from e
+                if dur < 5.0 or dur > 40.0:
+                    bad = RAW / f"{pid}_bad_dur_{dur:.1f}.mp4"
+                    shutil.move(str(tmp), str(bad))
+                    raise SystemExit(f"STOP: bad duration {bad} dur={dur:.2f}")
+                if dest.exists():
+                    dest.unlink()
+                shutil.move(str(tmp), str(dest))
+                by_id[pid] = {
+                    "id": pid,
+                    "status": "ok",
+                    "out": str(dest),
+                    "duration": dur,
+                    **{k: v for k, v in info.items() if k != "needs_gallery_harvest"},
+                }
                 meta["plates"] = list(by_id.values())
                 META.write_text(json.dumps(meta, indent=2))
-                print(f"  SAVED {dest.name} bytes={dest.stat().st_size}", flush=True)
+                print(
+                    f"  SAVED {dest.name} bytes={dest.stat().st_size} dur={dur:.2f}",
+                    flush=True,
+                )
         finally:
-            ctx.close()
+            safe_close(ctx)
 
     ok = sum(1 for p in by_id.values() if p.get("status") in {"ok", "exists"})
     want = len(only) if only else len(plates)

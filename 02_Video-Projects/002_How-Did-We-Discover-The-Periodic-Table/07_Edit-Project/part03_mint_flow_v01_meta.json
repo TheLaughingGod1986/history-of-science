@@ -5,8 +5,12 @@
   "plates": [
     {
       "id": "01_hall_open_side_label",
-      "status": "fail",
-      "error": "Flow Create model pill not found (still in Agent mode?). Toggle Agent off so Image/Video settings appear."
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/01_hall_open_side_label_v01.mp4",
+      "duration": 8.0,
+      "bytes": 7530984,
+      "media_id": "gallery-salvage:40c7c7f0",
+      "project_url": "https://flow.google.com/u/1/project/40c7c7f0-49c6-4cd7-b8e5-56491bf88d16"
     }
   ]
 }
