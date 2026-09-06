@@ -1,0 +1,22 @@
+2026-09-06T12:25:13 boot ok=True url=https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg
+2026-09-06T12:25:13 PRIVATE sILtQxgYQk8
+2026-09-06T12:25:24   private ok=False vis=Public
+2026-09-06T12:25:24 PRIVATE 93fPUG-hW0A
+2026-09-06T12:25:35   private ok=False vis=Public
+2026-09-06T12:25:35 SCHEDULE sILtQxgYQk8 -> Mon 7 Sep 2026 11:30 Europe/London
+2026-09-06T12:25:50   schedule ok=False vis=Public
+2026-09-06T12:25:50 RELATED sILtQxgYQk8
+2026-09-06T12:25:54   related ok=True trig=Related video How Did We Discover Germs?
+2026-09-06T12:25:58 SCHEDULE 93fPUG-hW0A -> Tue 8 Sep 2026 11:30 Europe/London
+2026-09-06T12:26:13   schedule ok=False vis=Public
+2026-09-06T12:26:13 RELATED 93fPUG-hW0A
+2026-09-06T12:26:17   related ok=True trig=Related video How Did We Discover Germs?
+2026-09-06T12:26:20 SNAPSHOT public H1y0DXFVmw8
+2026-09-06T12:26:23 SNAPSHOT public iqToagXnjX0
+2026-09-06T12:26:26 SNAPSHOT public 8_Edn_HCi1s
+2026-09-06T12:26:28 SNAPSHOT twin 8uBR-9oxeWs
+2026-09-06T12:26:31 SNAPSHOT twin YX2UR1u-JCQ
+2026-09-06T12:26:34 SNAPSHOT twin Fnb3p81u-wY
+2026-09-06T12:26:36 SNAPSHOT twin vpuRgKXtFlY
+2026-09-06T12:26:39 SNAPSHOT twin Lcmh5y2KMQM
+2026-09-06T12:26:46 DONE ok=False summary={'private_ok': False, 'schedule_related_ok': False, 'publics_still_public': True}

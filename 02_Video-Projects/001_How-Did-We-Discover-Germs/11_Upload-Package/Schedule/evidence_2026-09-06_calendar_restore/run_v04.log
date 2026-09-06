@@ -1,0 +1,4 @@
+2026-09-06T12:39:41 FATAL BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:9460
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:9460
+

@@ -1,0 +1,436 @@
+{
+  "started": "2026-09-06T12:45:09+01:00",
+  "version": "v02",
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "related": "_C92tIJCk8A",
+  "steps": {
+    "1_private_now": [
+      {
+        "ok": true,
+        "visibility_before": "Visibility Public",
+        "visibility_after": "Visibility Private",
+        "thumb_before": {
+          "custom": false,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            }
+          ]
+        },
+        "thumb_after": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "commit": {
+          "ok": true,
+          "notes": [
+            "radio=role:Private",
+            "save_enabled_pre=False",
+            "save_while_open={'enabled_before': False, 'clicked': False, 'ok': False}",
+            "done=role:Done",
+            "dialog_closed=True",
+            "save_enabled_post_done=True",
+            "save_after_done={'enabled_before': True, 'via': 'role', 'clicked': True, 'grey_after_ms': 1600, 'enabled_after': False, 'ok': True}"
+          ],
+          "save": {
+            "enabled_before": true,
+            "via": "role",
+            "clicked": true,
+            "grey_after_ms": 1600,
+            "enabled_after": false,
+            "ok": true
+          }
+        },
+        "attempts": 1,
+        "id": "sILtQxgYQk8",
+        "title": "A flask that proved germs come from outside"
+      },
+      {
+        "ok": true,
+        "visibility_before": "Visibility Public",
+        "visibility_after": "Visibility Private",
+        "thumb_before": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "thumb_after": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "commit": {
+          "ok": true,
+          "notes": [
+            "radio=role:Private",
+            "save_enabled_pre=False",
+            "save_while_open={'enabled_before': False, 'clicked': False, 'ok': False}",
+            "done=role:Done",
+            "dialog_closed=True",
+            "save_enabled_post_done=True",
+            "save_after_done={'enabled_before': True, 'via': 'role', 'clicked': True, 'grey_after_ms': 1600, 'enabled_after': False, 'ok': True}"
+          ],
+          "save": {
+            "enabled_before": true,
+            "via": "role",
+            "clicked": true,
+            "grey_after_ms": 1600,
+            "enabled_after": false,
+            "ok": true
+          }
+        },
+        "attempts": 1,
+        "id": "93fPUG-hW0A",
+        "title": "Invisible life is still everywhere"
+      }
+    ],
+    "2_schedule_related": [
+      {
+        "id": "sILtQxgYQk8",
+        "title": "A flask that proved germs come from outside",
+        "label": "Mon 7 Sep 2026 11:30 Europe/London",
+        "schedule": {
+          "ok": false,
+          "visibility_before": "Visibility Private",
+          "visibility_after": "Visibility Scheduled",
+          "thumb_before": {
+            "custom": false,
+            "imgs": [
+              {
+                "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+                "w": 48
+              }
+            ]
+          },
+          "thumb_after": {
+            "custom": true,
+            "imgs": [
+              {
+                "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+                "w": 48
+              },
+              {
+                "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+                "w": 900
+              }
+            ]
+          },
+          "commit": {
+            "ok": false,
+            "notes": [
+              "radio=row:Schedule",
+              "dt={'day': 7, 'date_before': '7 Sept 2026', 'date_picked': '7', 'time_focus': {'ok': True, 'old': '11:30'}, 'time_typed': '11:30', 'after': {'date': '7 Sept 2026', 'time': '11:30'}, 'ok': False}",
+              "dt_soft_fail",
+              "save_enabled_pre=False",
+              "save_while_open={'enabled_before': False, 'clicked': False, 'ok': False}",
+              "done=",
+              "dialog_closed=False",
+              "save_enabled_post_done=False",
+              "save_after_done={'enabled_before': False, 'clicked': False, 'ok': False}"
+            ],
+            "save": {
+              "enabled_before": false,
+              "clicked": false,
+              "ok": false
+            },
+            "visibility_after_attempt": "Visibility Scheduled"
+          },
+          "label": "Mon 7 Sep 2026 11:30 Europe/London"
+        },
+        "related": {
+          "ok": true,
+          "trigger": "Related video How Did We Discover Germs?"
+        },
+        "final_visibility": "Visibility Scheduled",
+        "final_related": "Related video How Did We Discover Germs?",
+        "final_thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "ok": false
+      },
+      {
+        "id": "93fPUG-hW0A",
+        "title": "Invisible life is still everywhere",
+        "label": "Tue 8 Sep 2026 11:30 Europe/London",
+        "schedule": {
+          "ok": false,
+          "visibility_before": "Visibility Private",
+          "visibility_after": "Visibility Scheduled",
+          "thumb_before": {
+            "custom": true,
+            "imgs": [
+              {
+                "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+                "w": 48
+              },
+              {
+                "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+                "w": 900
+              }
+            ]
+          },
+          "thumb_after": {
+            "custom": true,
+            "imgs": [
+              {
+                "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+                "w": 48
+              },
+              {
+                "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+                "w": 900
+              }
+            ]
+          },
+          "commit": {
+            "ok": false,
+            "notes": [
+              "radio=row:Schedule",
+              "dt={'day': 8, 'date_before': '8 Sept 2026', 'date_picked': '8', 'time_focus': {'ok': True, 'old': '11:30'}, 'time_typed': '11:30', 'after': {'date': '8 Sept 2026', 'time': '11:30'}, 'ok': False}",
+              "dt_soft_fail",
+              "save_enabled_pre=False",
+              "save_while_open={'enabled_before': False, 'clicked': False, 'ok': False}",
+              "done=",
+              "dialog_closed=False",
+              "save_enabled_post_done=False",
+              "save_after_done={'enabled_before': False, 'clicked': False, 'ok': False}"
+            ],
+            "save": {
+              "enabled_before": false,
+              "clicked": false,
+              "ok": false
+            },
+            "visibility_after_attempt": "Visibility Scheduled"
+          },
+          "label": "Tue 8 Sep 2026 11:30 Europe/London"
+        },
+        "related": {
+          "ok": true,
+          "trigger": "Related video How Did We Discover Germs?"
+        },
+        "final_visibility": "Visibility Scheduled",
+        "final_related": "Related video How Did We Discover Germs?",
+        "final_thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "ok": false
+      }
+    ],
+    "3_leave_public": [
+      {
+        "id": "H1y0DXFVmw8",
+        "visibility": "Visibility Public",
+        "thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "related": "Related video How Did We Discover Germs?",
+        "shot": "v02_50_public_H1y0DXFVmw8.png",
+        "title": "Germs don't cast a shadow"
+      },
+      {
+        "id": "iqToagXnjX0",
+        "visibility": "Visibility Public",
+        "thumb": {
+          "custom": false,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            }
+          ]
+        },
+        "related": "Related video None",
+        "shot": "v02_50_public_iqToagXnjX0.png",
+        "title": "Microbes in a drop of pond water"
+      },
+      {
+        "id": "8_Edn_HCi1s",
+        "visibility": "Visibility Public",
+        "thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "related": "Related video How Did We Discover Germs?",
+        "shot": "v02_50_public_8_Edn_HCi1s.png",
+        "title": "Germs hitch a ride on you"
+      }
+    ],
+    "4_old_twins": [
+      {
+        "id": "8uBR-9oxeWs",
+        "visibility": "Visibility Private",
+        "thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "related": "Related video How Did We Discover Germs?",
+        "shot": "v02_60_twin_8uBR-9oxeWs.png"
+      },
+      {
+        "id": "YX2UR1u-JCQ",
+        "visibility": "Visibility Private",
+        "thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "related": "Related video How Did We Discover Germs?",
+        "shot": "v02_60_twin_YX2UR1u-JCQ.png"
+      },
+      {
+        "id": "Fnb3p81u-wY",
+        "visibility": "Visibility Private",
+        "thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "related": "Related video How Did We Discover Germs?",
+        "shot": "v02_60_twin_Fnb3p81u-wY.png"
+      },
+      {
+        "id": "vpuRgKXtFlY",
+        "visibility": "Visibility Private",
+        "thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "related": "Related video How Did We Discover Germs?",
+        "shot": "v02_60_twin_vpuRgKXtFlY.png"
+      },
+      {
+        "id": "Lcmh5y2KMQM",
+        "visibility": "Visibility Private",
+        "thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "related": "Related video How Did We Discover Germs?",
+        "shot": "v02_60_twin_Lcmh5y2KMQM.png"
+      }
+    ]
+  },
+  "ok": false,
+  "boot": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "snippet": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard"
+  },
+  "content_shorts_shot": "v02_90_content_shorts.png",
+  "content_snip": "Channel content\nSkip navigation\n\n0\n\n10\n\n134\n\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nShorts\nVideos\nShorts\nLive\nPosts\nPlaylists\nShort\nNotices\nVisibility\nDate\nViews\nComments\n0:24\nInvisible life is still everywhere\nWhat else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleLife #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n8 Sept 2026\nScheduled\n6\n0\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\\n\\n#Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n7 Sept 2026\nScheduled\n10\n0\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nhos 001 s04 flask punch v02\nAdd description\n\u2014\nDraft\nEdit draft\n0:25\nhos 001 s04 flask punch v02\nAdd description\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\\n\\n#Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\\n\\n#Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nGerms hitch a ride on you\nYou are the vector \u2014 germs hitch a ride on hands, cloth, and breath. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #Handwashing #GermTheory #HistoryOfScience #Shorts\n\u2014\nPublic\n6 Sept 2026\nPublished\n7\n0\n0:25\nMicrobes in a drop of pond water\nA drop of pond water is not empty \u2014 under a microscope it is full of microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Microbes #PondWater #GermTheory #HistoryOfScience #Shorts\n\u2014\nPublic\n6 Sept 2026\nPublished\n40\n0\n0:25\nGerms don't cast a shadow\nGerms don't cast a shadow \u2014 doctors once blamed bad air, not living microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nPublic\n6 Sept 2026\nPublished\n30\n0\n0:24\nInvisible life is still everywhere\nWhat else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleL",
+  "summary": {
+    "private_ok": true,
+    "schedule_related_ok": false,
+    "publics_still_public": true
+  },
+  "finished": "2026-09-06T12:48:10+01:00"
+}

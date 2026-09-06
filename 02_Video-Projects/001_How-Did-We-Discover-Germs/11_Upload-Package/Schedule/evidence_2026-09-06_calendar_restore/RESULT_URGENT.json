@@ -1,0 +1,123 @@
+{
+  "started": "2026-09-06T12:56:48",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "related": "_C92tIJCk8A",
+  "no_deletes": true,
+  "jobs": [
+    {
+      "id": "sILtQxgYQk8",
+      "label": "Mon 7 Sep 2026 11:30",
+      "chip0": "Visibility Scheduled",
+      "sched_radio": "",
+      "fill": {
+        "day": 7,
+        "picked": "7",
+        "time": "11:30",
+        "after": {
+          "found": true,
+          "date": "7 Sept 2026",
+          "time": "11:30",
+          "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n7 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+        }
+      },
+      "dialog_filled": {
+        "found": true,
+        "date": "7 Sept 2026",
+        "time": "11:30",
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n7 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "sched_save2": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "chip_final": "Visibility Scheduled",
+      "dialog_final": {
+        "found": true,
+        "date": "7 Sept 2026",
+        "time": "11:30",
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n7 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "related": {
+        "ok": true,
+        "snip": "Related video"
+      },
+      "ok": true
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "label": "Tue 8 Sep 2026 11:30",
+      "chip0": "Visibility Scheduled",
+      "sched_radio": "",
+      "fill": {
+        "day": 8,
+        "picked": "8",
+        "time": "11:30",
+        "after": {
+          "found": true,
+          "date": "8 Sept 2026",
+          "time": "11:30",
+          "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n8 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+        }
+      },
+      "dialog_filled": {
+        "found": true,
+        "date": "8 Sept 2026",
+        "time": "11:30",
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n8 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "sched_save2": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "chip_final": "Visibility Scheduled",
+      "dialog_final": {
+        "found": true,
+        "date": "8 Sept 2026",
+        "time": "11:30",
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n8 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "related": {
+        "ok": true,
+        "snip": "Related video"
+      },
+      "ok": true
+    }
+  ],
+  "publics": [
+    {
+      "id": "H1y0DXFVmw8",
+      "chip": "Visibility Public",
+      "ok": true
+    },
+    {
+      "id": "iqToagXnjX0",
+      "chip": "Visibility Public",
+      "ok": true
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "chip": "Visibility Public",
+      "ok": true
+    }
+  ],
+  "cancel_upload": {
+    "action": "cancel_upload_only",
+    "has_title": true,
+    "has_uploading": true,
+    "row": "0:25 hos 001 s04 flask punch v02 Add description \u2014 Draft Edit draft",
+    "clicked": "^Cancel upload$",
+    "still_uploading": false,
+    "still_title": true,
+    "ok": true
+  },
+  "content_scan": {
+    "public_has_flask": true,
+    "public_snip": "Channel content\nSkip navigation\n\n0\n\n14\n\n139\n\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nShorts\nVideos\nShorts\nLive\nPosts\nPlaylists\nShort\nNotices\nVisibility\nDate\nViews\nComments\n0:24\nInvisible life is still everywhere\nWhat else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleLife #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n8 Sept 2026\nScheduled\n6\n0\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C",
+    "scheduled_has_flask": true,
+    "scheduled_snip": "Channel content\nSkip navigation\n\n0\n\n14\n\n139\n\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nShorts\nVideos\nShorts\nLive\nPosts\nPlaylists\nShort\nNotices\nVisibility\nDate\nViews\nComments\n0:24\nInvisible life is still everywhere\nWhat else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleLife #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n8 Sept 2026\nScheduled\n6\n0\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C"
+  },
+  "ok": true,
+  "finished": "2026-09-06T12:58:10"
+}

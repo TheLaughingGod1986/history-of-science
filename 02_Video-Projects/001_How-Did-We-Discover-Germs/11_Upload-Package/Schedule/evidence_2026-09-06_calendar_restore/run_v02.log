@@ -1,0 +1,30 @@
+2026-09-06T12:45:09 hard_reset_chrome
+2026-09-06T12:45:12 chrome_up_1
+2026-09-06T12:45:14 boot ok=True url=https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg
+2026-09-06T12:45:14 PRIVATE sILtQxgYQk8
+2026-09-06T12:45:16   private attempt 1
+2026-09-06T12:45:29   private ok=True vis=Visibility Private
+2026-09-06T12:45:29 PRIVATE 93fPUG-hW0A
+2026-09-06T12:45:32   private attempt 1
+2026-09-06T12:45:45   private ok=True vis=Visibility Private
+2026-09-06T12:45:45 SCHEDULE sILtQxgYQk8 -> Mon 7 Sep 2026 11:30 Europe/London
+2026-09-06T12:45:47   schedule attempt 1 day=7
+2026-09-06T12:46:01   schedule attempt 2 day=7
+2026-09-06T12:46:19   schedule attempt 3 day=7
+2026-09-06T12:46:37   schedule ok=False vis=Visibility Scheduled
+2026-09-06T12:46:40   related ok=True trig=Related video How Did We Discover Germs?
+2026-09-06T12:46:44 SCHEDULE 93fPUG-hW0A -> Tue 8 Sep 2026 11:30 Europe/London
+2026-09-06T12:46:47   schedule attempt 1 day=8
+2026-09-06T12:47:01   schedule attempt 2 day=8
+2026-09-06T12:47:19   schedule attempt 3 day=8
+2026-09-06T12:47:37   schedule ok=False vis=Visibility Scheduled
+2026-09-06T12:47:40   related ok=True trig=Related video How Did We Discover Germs?
+2026-09-06T12:47:44 SNAPSHOT public H1y0DXFVmw8
+2026-09-06T12:47:47 SNAPSHOT public iqToagXnjX0
+2026-09-06T12:47:50 SNAPSHOT public 8_Edn_HCi1s
+2026-09-06T12:47:53 SNAPSHOT twin 8uBR-9oxeWs
+2026-09-06T12:47:56 SNAPSHOT twin YX2UR1u-JCQ
+2026-09-06T12:47:59 SNAPSHOT twin Fnb3p81u-wY
+2026-09-06T12:48:01 SNAPSHOT twin vpuRgKXtFlY
+2026-09-06T12:48:04 SNAPSHOT twin Lcmh5y2KMQM
+2026-09-06T12:48:10 DONE ok=False summary={'private_ok': True, 'schedule_related_ok': False, 'publics_still_public': True}

@@ -1,0 +1,245 @@
+{
+  "started": "2026-09-06T12:25:11+01:00",
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "cdp": "http://127.0.0.1:9460",
+  "related": "_C92tIJCk8A",
+  "steps": {
+    "1_private_now": [
+      {
+        "ok": false,
+        "visibility_before": "Public",
+        "visibility_after": "Public",
+        "thumb_before": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            }
+          ]
+        },
+        "thumb_after": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "notes": [
+          "vis0=Public",
+          "private=Private",
+          "done=Done"
+        ],
+        "id": "sILtQxgYQk8",
+        "title": "A flask that proved germs come from outside"
+      },
+      {
+        "ok": false,
+        "visibility_before": "Public",
+        "visibility_after": "Public",
+        "thumb_before": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            }
+          ]
+        },
+        "thumb_after": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            }
+          ]
+        },
+        "notes": [
+          "vis0=Public",
+          "private=Private",
+          "done=Done"
+        ],
+        "id": "93fPUG-hW0A",
+        "title": "Invisible life is still everywhere"
+      }
+    ],
+    "2_schedule_related": [
+      {
+        "id": "sILtQxgYQk8",
+        "title": "A flask that proved germs come from outside",
+        "label": "Mon 7 Sep 2026 11:30 Europe/London",
+        "schedule": {
+          "ok": false,
+          "visibility_before": "Public",
+          "visibility_after": "Public",
+          "datetime": {
+            "day": 7,
+            "date_before": "7 Sept 2026",
+            "date_picked": "7",
+            "date_wanted": "7 Sept 2026",
+            "time_focus": {
+              "ok": true,
+              "old": "00:00"
+            },
+            "time_typed": "11:30",
+            "after": {
+              "date": "7 Sept 2026",
+              "time": "11:30"
+            },
+            "ok": false
+          },
+          "thumb_before": {
+            "custom": true,
+            "imgs": [
+              {
+                "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+                "w": 48
+              }
+            ]
+          },
+          "thumb_after": {
+            "custom": true,
+            "imgs": [
+              {
+                "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+                "w": 48
+              },
+              {
+                "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+                "w": 900
+              }
+            ]
+          },
+          "notes": [
+            "vis0=Public",
+            "schedule=Schedule",
+            "dt={'day': 7, 'date_before': '7 Sept 2026', 'date_picked': '7', 'date_wanted': '7 Sept 2026', 'time_focus': {'ok': True, 'old': '00:00'}, 'time_typed': '11:30', 'after': {'date': '7 Sept 2026', 'time': '11:30'}, 'ok': False}",
+            "done=Done"
+          ],
+          "label": "Mon 7 Sep 2026 11:30 Europe/London",
+          "snip": "Video details\nSkip navigation\n\n0\n\n9\n\n131\n\nAsk Studio\nCreate\nChannel content\n0:25\nYour video\nA flask that proved germs come from outside\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nA flask that proved germs come from outside\n\nSuggestions\n\n85\n\nHow to Create Amazing Content That Gets Views\n\n80\n\nThe Ultimate Guide to YouTube Success in 2024\n\n75\n\n5 Secrets That Will Transform Your Channel\n\n70\n\nWhy Your Videos Aren't Getting Views (And How to Fix It)\n\nSign in to get title suggestions\n\nBy signing in you gain access to 100+ vidIQ tools that will help you take your channel to the next level\n\nSign in\nDescription\nA fla"
+        },
+        "related": {
+          "ok": true,
+          "already": true,
+          "trigger": "Related video How Did We Discover Germs?",
+          "notes": [
+            "already"
+          ]
+        },
+        "final_visibility": "Public",
+        "final_related": "Related video How Did We Discover Germs?",
+        "final_thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "ok": false
+      },
+      {
+        "id": "93fPUG-hW0A",
+        "title": "Invisible life is still everywhere",
+        "label": "Tue 8 Sep 2026 11:30 Europe/London",
+        "schedule": {
+          "ok": false,
+          "visibility_before": "Public",
+          "visibility_after": "Public",
+          "datetime": {
+            "day": 8,
+            "date_before": "7 Sept 2026",
+            "date_picked": "8",
+            "date_wanted": "8 Sept 2026",
+            "time_focus": {
+              "ok": true,
+              "old": "00:00"
+            },
+            "time_typed": "11:30",
+            "after": {
+              "date": "8 Sept 2026",
+              "time": "11:30"
+            },
+            "ok": false
+          },
+          "thumb_before": {
+            "custom": true,
+            "imgs": [
+              {
+                "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+                "w": 48
+              },
+              {
+                "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+                "w": 900
+              }
+            ]
+          },
+          "thumb_after": {
+            "custom": true,
+            "imgs": [
+              {
+                "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+                "w": 48
+              }
+            ]
+          },
+          "notes": [
+            "vis0=Public",
+            "schedule=Schedule",
+            "dt={'day': 8, 'date_before': '7 Sept 2026', 'date_picked': '8', 'date_wanted': '8 Sept 2026', 'time_focus': {'ok': True, 'old': '00:00'}, 'time_typed': '11:30', 'after': {'date': '8 Sept 2026', 'time': '11:30'}, 'ok': False}",
+            "done=Done"
+          ],
+          "label": "Tue 8 Sep 2026 11:30 Europe/London",
+          "snip": "Video details\nSkip navigation\n\n0\n\n9\n\n131\n\nAsk Studio\nCreate\nChannel content\n0:24\nYour video\nInvisible life is still everywhere\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nInvisible life is still everywhere\n\nSuggestions\n\n85\n\nHow to Create Amazing Content That Gets Views\n\n80\n\nThe Ultimate Guide to YouTube Success in 2024\n\n75\n\n5 Secrets That Will Transform Your Channel\n\n70\n\nWhy Your Videos Aren't Getting Views (And How to Fix It)\n\nSign in to get title suggestions\n\nBy signing in you gain access to 100+ vidIQ tools that will help you take your channel to the next level\n\nSign in\nDescription\nWhat else is still invi"
+        },
+        "related": {
+          "ok": true,
+          "already": true,
+          "trigger": "Related video How Did We Discover Germs?",
+          "notes": [
+            "already"
+          ]
+        },
+        "final_visibility": "Public",
+        "final_related": "Related video How Did We Discover Germs?",
+        "final_thumb": {
+          "custom": true,
+          "imgs": [
+            {
+              "src": "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+              "w": 48
+            },
+            {
+              "src": "https://yt3.googleusercontent.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s900-c-k-c0x00ffffff-no-rj",
+              "w": 900
+            }
+          ]
+        },
+        "ok": false
+      }
+    ],
+    "3_leave_public": [],
+    "4_old_twins": []
+  },
+  "ok": false,
+  "boot": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "snippet": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nA flask that proved germs come from outside\n12\n0\n0\nFirst 7 hours 36 minutes\nRanking by views\n3 of 5\nViews\n12\nAverage percentage viewed\n33.7%\nLikes\n0\nCatch me up on this video\nPublished videos\nGo to videos\n\nCreate your first post to start a conversatio"
+  }
+}
