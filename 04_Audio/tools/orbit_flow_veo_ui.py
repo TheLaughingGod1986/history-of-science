@@ -2130,35 +2130,79 @@ def harvest_agent_gallery_mp4(
             page.locator('button:has-text("download"), button:has-text("Download")'),
             page.locator('text=/^download$/i'),
         ]
-        for loc in candidates:
+        # Capture CDN mp4 if Download navigates away / closes the viewer.
+        net_hits: list[bytes] = []
+
+        def _on_resp(resp) -> None:
             try:
-                if loc.count() < 1:
-                    continue
-                target = loc.first
-                if not target.is_visible():
-                    continue
-                with page.expect_download(timeout=25_000) as di:
-                    target.click(timeout=5_000)
-                download = di.value
-                tmp = dest.with_suffix(".download.tmp")
+                u = (resp.url or "").lower()
+                ct = (resp.headers.get("content-type") or "").lower()
+                if resp.status != 200:
+                    return
+                if not (
+                    "flow-content.google/video" in u
+                    or "googlevideo.com" in u
+                    or "videoplayback" in u
+                    or ("video" in ct and "mp4" in ct)
+                ):
+                    return
+                body = resp.body()
+                if len(body) > 150_000 and b"ftyp" in body[:64]:
+                    net_hits.append(body)
+            except Exception:
+                pass
+
+        page.on("response", _on_resp)
+        try:
+            for loc in candidates:
                 try:
-                    download.save_as(str(tmp))
-                except Exception as e:
-                    print(f"  gallery Download save_as warn: {e}", flush=True)
+                    if loc.count() < 1:
+                        continue
+                    target = loc.first
+                    if not target.is_visible():
+                        continue
+                    with page.expect_download(timeout=25_000) as di:
+                        target.click(timeout=5_000)
+                    download = di.value
+                    tmp = dest.with_suffix(".download.tmp")
+                    raw = None
+                    # Prefer path() first — save_as often races viewer close.
                     try:
                         src = download.path()
                         if src:
-                            Path(tmp).write_bytes(Path(src).read_bytes())
-                    except Exception as e2:
-                        print(f"  gallery Download path warn: {e2}", flush=True)
-                        raise
-                raw = tmp.read_bytes()
-                tmp.unlink(missing_ok=True)
-                if len(raw) > 150_000:
-                    return raw
-            except Exception as e:
-                print(f"  gallery Download miss: {e}", flush=True)
-        return None
+                            raw = Path(src).read_bytes()
+                    except Exception as e:
+                        print(f"  gallery Download path warn: {e}", flush=True)
+                    if raw is None:
+                        try:
+                            download.save_as(str(tmp))
+                            raw = tmp.read_bytes()
+                            tmp.unlink(missing_ok=True)
+                        except Exception as e:
+                            print(f"  gallery Download save_as warn: {e}", flush=True)
+                            # Last chance: suggested filename may already be on disk.
+                            try:
+                                sug = download.suggested_filename
+                                if sug:
+                                    cand = Path(sug)
+                                    if cand.exists():
+                                        raw = cand.read_bytes()
+                            except Exception:
+                                pass
+                    if raw and len(raw) > 150_000:
+                        return raw
+                    if net_hits:
+                        return net_hits[-1]
+                except Exception as e:
+                    print(f"  gallery Download miss: {e}", flush=True)
+                    if net_hits:
+                        return net_hits[-1]
+        finally:
+            try:
+                page.remove_listener("response", _on_resp)
+            except Exception:
+                pass
+        return net_hits[-1] if net_hits else None
 
     def _capture_network(play_click) -> bytes | None:
         def _is_vid(resp) -> bool:
