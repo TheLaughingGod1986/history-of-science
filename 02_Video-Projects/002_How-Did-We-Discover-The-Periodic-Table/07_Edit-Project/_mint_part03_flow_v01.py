@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Part 03 Flow Veo 3.1 Fast — all real motion plates. No Ken Burns.
 
-CoS gate (Part 01 v11 + Part 02 v06): real Veo every beat, side labels in assemble,
-Explorer once, no center stamps. Do not remint 01/02. Do not ping Ben.
+Auth lock (2026-09-06): mint ONLY via https://flow.google.com/u/1/ as
+benoats@googlemail.com (10k+ credits). Refuse benoats86@gmail.com.
+Do not remint Part 01/02. Do not ping Ben. STOP if Create dies.
 """
 from __future__ import annotations
 
@@ -19,21 +20,20 @@ sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 import orbit_gemini_veo as veo  # noqa: E402
 
+# Critical: Ben's credited Ultra session is multi-login slot /u/1/
+flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
+
 PROJ = Path(__file__).resolve().parents[1]
 PLATES_JSON = PROJ / "07_Edit-Project/parts/part-03_plates_v01.json"
 RAW = PROJ / "04_Generated-Clips/part03/raw/v01_fast"
 META = PROJ / "07_Edit-Project/part03_mint_flow_v01_meta.json"
 EXPLORER_LOCK = PROJ / "04_Generated-Clips/part01/refs/explorer_germs_part01_lock.jpg"
 EXPLORER_START = PROJ / "04_Generated-Clips/part03/refs/v01_stills/05_explorer_ruler_start.jpg"
-# Prefer Fast (house). Fall back to Lite only if Create reports Fast exhausted.
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 PROFILE = Path(
     os.environ.get(
         "ORBIT_FLOW_PROFILE",
-        os.environ.get(
-            "ORBIT_FLOW_PROFILE",
-            str(Path.home() / ".playwright-hos-flow-profile"),
-        ),
+        str(Path.home() / ".playwright-hos-flow-profile"),
     )
 )
 STYLE = (
@@ -42,6 +42,20 @@ STYLE = (
     "Not live-action. Silent picture. No readable text, logos, or UI. "
     "No Orbit orange robot. Continuous real camera and object motion the whole clip. "
     "Never a still photo with Ken Burns. Never a dead-center full-screen title stamp."
+)
+
+REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
+ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
+FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+
+CREATE_DIE_MARKERS = (
+    "out of google flow credits",
+    "reached your credit or daily limit",
+    "you're out of google flow credits",
+    "create failed",
+    "generation failed",
+    "could not create",
+    "not been charged",
 )
 
 
@@ -79,15 +93,7 @@ def ensure_explorer_start() -> Path | None:
     return EXPLORER_START if EXPLORER_START.exists() else EXPLORER_LOCK
 
 
-# Ben lock 2026-09-06: mint ONLY as benoats@googlemail.com (10k+ Flow credits).
-# Never fall through to benoats86@gmail.com (prior Create-die / empty Fast quota).
-REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
-ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}  # same mailbox
-FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
-
-
 def pick_google_account(page) -> None:
-    """If Flow bounced to the account chooser, pick ONLY the credited Ultra mailbox."""
     url = page.url or ""
     if "accounts.google.com" not in url:
         return
@@ -105,7 +111,6 @@ def pick_google_account(page) -> None:
 
 
 def require_flow_account(page) -> str:
-    """Hard gate: read the signed-in Google Account chip before any Create click."""
     try:
         labels = page.eval_on_selector_all(
             "button, a, [role=button]",
@@ -114,8 +119,7 @@ def require_flow_account(page) -> str:
         )
     except Exception as exc:
         raise SystemExit(
-            f"BLOCKED_AUTH: could not read Flow account chrome ({exc}). "
-            "Ben must confirm Mini is signed in as benoats@googlemail.com."
+            f"BLOCKED_AUTH: could not read Flow account chrome ({exc})."
         ) from exc
     blob = "\n".join(labels)
     emails = {
@@ -138,29 +142,49 @@ def require_flow_account(page) -> str:
         active = sorted(emails)[0]
 
     print(f"  Flow account probe emails={sorted(emails)} active={active}", flush=True)
+    print(f"  page.url={page.url}", flush=True)
     if not active:
-        raise SystemExit(
-            "BLOCKED_AUTH: signed-in Google email not visible on Flow. "
-            "Ben must open the account menu on Mini and confirm benoats@googlemail.com."
-        )
+        raise SystemExit("BLOCKED_AUTH: signed-in Google email not visible on Flow.")
     if active == FORBIDDEN_FLOW_EMAIL or "benoats86" in active:
         raise SystemExit(
             f"BLOCKED_AUTH: Mini Flow is signed in as {active}. "
-            f"Need exactly {REQUIRED_FLOW_EMAIL} (Ben's 10,050-credit proof). "
-            "Ben signs himself — do not paste passwords. No mint."
+            f"Need exactly {REQUIRED_FLOW_EMAIL} on /u/1/. No mint."
         )
     if active not in ALLOWED_FLOW_EMAILS:
         raise SystemExit(
             f"BLOCKED_AUTH: unexpected Flow account {active}. Need {REQUIRED_FLOW_EMAIL}."
         )
+    if "/u/1" not in (page.url or "") and "/u/1" not in flow.FLOW_HOME:
+        print("  WARN: not clearly on /u/1/ — continuing only because email matched", flush=True)
     return active
+
+
+def looks_like_create_death(exc: BaseException, page) -> str | None:
+    msg = str(exc).lower()
+    for marker in CREATE_DIE_MARKERS:
+        if marker in msg:
+            return marker
+    try:
+        body = (page.inner_text("body") or "").lower()
+    except Exception:
+        body = ""
+    for marker in CREATE_DIE_MARKERS:
+        if marker in body:
+            return marker
+    return None
 
 
 def main() -> None:
     only = set(sys.argv[1:]) if len(sys.argv) > 1 else None
     plates = json.loads(PLATES_JSON.read_text())["plates"]
     RAW.mkdir(parents=True, exist_ok=True)
-    meta: dict = {"engine": "flow-ui", "model": MODEL, "raw": str(RAW), "plates": []}
+    meta: dict = {
+        "engine": "flow-ui",
+        "model": MODEL,
+        "flow_home": flow.FLOW_HOME,
+        "raw": str(RAW),
+        "plates": [],
+    }
     if META.exists():
         try:
             meta = json.loads(META.read_text())
@@ -169,7 +193,10 @@ def main() -> None:
     by_id = {p["id"]: p for p in meta.get("plates", []) if "id" in p}
     explorer_start = ensure_explorer_start()
     profile = flow.profile_path(PROFILE)
-    print(f"Flow profile={profile} model={MODEL} plates={len(plates)}", flush=True)
+    print(
+        f"Flow profile={profile} home={flow.FLOW_HOME} model={MODEL} plates={len(plates)}",
+        flush=True,
+    )
 
     from playwright.sync_api import sync_playwright
 
@@ -183,12 +210,13 @@ def main() -> None:
             if not flow.looks_logged_in(page):
                 raise SystemExit(
                     "BLOCKED_AUTH: Flow not logged in. Do not Ken-Burns. "
-                    "Ben must sign Mini as benoats@googlemail.com "
-                    "(python3 04_Audio/tools/orbit_flow_veo_ui.py --login)."
+                    "Ben must sign Mini as benoats@googlemail.com on /u/1/."
                 )
             active = require_flow_account(page)
             meta["flow_account"] = active
-            print(f"  AUTH OK minting as {active}", flush=True)
+            meta["flow_home"] = flow.FLOW_HOME
+            print(f"  AUTH OK minting as {active} via {flow.FLOW_HOME}", flush=True)
+
             for i, plate in enumerate(plates):
                 pid = plate["id"]
                 if only and pid not in only and not any(pid.startswith(x) for x in only):
@@ -215,9 +243,20 @@ def main() -> None:
                         timeout_s=700,
                     )
                 except Exception as e:
-                    by_id[pid] = {"id": pid, "status": "fail", "error": str(e)[:500]}
+                    death = looks_like_create_death(e, page)
+                    by_id[pid] = {
+                        "id": pid,
+                        "status": "fail",
+                        "error": str(e)[:500],
+                        "create_death": death,
+                    }
                     meta["plates"] = list(by_id.values())
                     META.write_text(json.dumps(meta, indent=2))
+                    if death:
+                        raise SystemExit(
+                            f"STOP BLOCKED: Create died on {pid} ({death}). "
+                            "No Ken Burns. No Omni Flash substitute."
+                        ) from e
                     raise SystemExit(f"STOP: Flow failed on {pid}: {e}") from e
                 veo.strip_audio(dest)
                 if not dest.exists() or dest.stat().st_size < 400_000:
