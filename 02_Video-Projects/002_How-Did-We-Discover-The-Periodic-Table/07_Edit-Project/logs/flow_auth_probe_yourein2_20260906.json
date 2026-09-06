@@ -1,0 +1,45 @@
+{
+  "want": "benoats@googlemail.com",
+  "forbidden": "benoats86@gmail.com",
+  "profile": "/Users/benjaminoats/.playwright-hos-flow-profile",
+  "probes": [
+    {
+      "requested_url": "https://flow.google.com/u/1/",
+      "final_url": "https://flow.google.com/u/1/",
+      "emails": [
+        "benoats@googlemail.com"
+      ],
+      "active_email": "benoats@googlemail.com",
+      "credits_text": "10,050 Google Flow credits",
+      "account_labels": [
+        "Account details",
+        "Google Account: Benjamin Oats  \n(benoats@googlemail.com), Google membership",
+        "Google AccountBenjamin Oatsbenoats@googlemail.comGoogle membership",
+        "Google AccountBenjamin Oatsbenoats@googlemail.comGoogle membership",
+        "Google Account",
+        "benoats@googlemail.com",
+        "Account settings",
+        "Close account panel",
+        "Benjamin Oats\nbenoats@googlemail.com\nSwitch account",
+        "Benjamin Oats\nbenoats@googlemail.com",
+        "benoats@googlemail.com",
+        "Switch account",
+        "movie_filter_auto\n10,050 Google Flow credits\nUpgrade",
+        "Credits display",
+        "movie_filter_auto\n10,050 Google Flow credits",
+        "10,050 Google Flow credits",
+        "10,050 Google Flow credits",
+        "Upgrade",
+        "Upgrade"
+      ],
+      "out_of_credits": false,
+      "screenshot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/logs/flow_auth_probe_yourein2_u_probe_0.png"
+    }
+  ],
+  "verdict": "OK",
+  "probed_at": "2026-09-06T23:10:32+0100",
+  "active_email": "benoats@googlemail.com",
+  "credits_text": "10,050 Google Flow credits",
+  "mint_url": "https://flow.google.com/u/1/",
+  "reason": "benoats@googlemail.com via https://flow.google.com/u/1/"
+}
