@@ -1,0 +1,91 @@
+{
+  "part": 3,
+  "title": "A Ruler for Atoms",
+  "status": "mint_v01_real_motion_cos_gate",
+  "quality_gate": "07_Edit-Project/FILM002_QUALITY_GATE_FROM_PART02.md",
+  "clip_use_s": 8.0,
+  "xfade_s": 0.35,
+  "vo_file": "02_Voiceover/part03_ruler_for_atoms_v01.wav",
+  "set_language": "ONE persistent 1860 Karlsruhe congress-hall / study-hall: warm honey oak panels, tall arched windows with soft volumetric daylight, cream blank pamphlets, blank cream specimen cards, long glowing blank wooden mass-line on the floor when the ruler appears. Same room DNA every scenery plate — do not reset furniture layout.",
+  "motion_lock": "REAL Veo camera + object motion every scenery plate. No Ken Burns hero. No freeze-pad.",
+  "label_lock": "If a term needs a label: Animistry side label upper-right, 1-4 words max. NEVER dead-center full-screen chapter stamps.",
+  "style_lock": "Finished Animistry-class stylised 3D cartoon like Germs Part 01 PASS / Periodic Part 01 PASS. NOT photoreal. NOT live-action AI stills.",
+  "physics_lock": "Opaque ceramic / sealed metal only when vessels appear. ZERO clear liquid glass. ZERO bubbles in air. ZERO vessel fire. Candle wick OK. Silent. No Orbit orange robot. Exactly ONE Explorer when called — Germs younger-boy lock.",
+  "plates": [
+    {
+      "id": "01_hall_open_side_label",
+      "kind": "scenery",
+      "explorer": false,
+      "side_label": "A RULER FOR ATOMS",
+      "prompt": "Finished Animistry-class stylised 3D cartoon (NOT photoreal). ONE persistent 1860 Karlsruhe congress hall: warm honey oak panels, tall arched windows, soft volumetric daylight, rows of wooden benches, blank cream pamphlets fluttering. Continuous camera push down the aisle as dust motes drift and pamphlets rustle. Optional tiny Animistry side caption plate upper-right only reading four words max — never a full-screen center title card. Silent. No readable body text elsewhere. No Orbit robot. No vessel fire. HARD REJECT: photoreal, still photo, Ken Burns only, dead-center chapter stamp, modern conference."
+    },
+    {
+      "id": "02_hall_argument",
+      "kind": "scenery",
+      "explorer": false,
+      "prompt": "Same Karlsruhe congress hall continuity (honey oak, arched windows, blank cream pamphlets). Continuous motion: chalk dust puffs from a blank slate, pamphlets flap, camera eases around a lectern as coat-back silhouettes gesture about invisible sizes. Stylised 3D cartoon Animistry finish. Silent. No faces in hero close-up. No readable formulas. No Orbit. No vessel fire. HARD REJECT: photoreal still, layout reset to a different room."
+    },
+    {
+      "id": "03_method_pamphlet",
+      "kind": "scenery",
+      "explorer": false,
+      "prompt": "Same hall-study DNA: honey oak desk under the arched window light. A blank cream method pamphlet slides into focus; blank specimen cards settle from a soft float into a tidy stack. Continuous slide + settle. Stylised 3D cartoon. Silent. No readable type. No Orbit. Candle wick far aside OK. HARD REJECT: photoreal, clear liquid glass, vessel fire, full-screen text card."
+    },
+    {
+      "id": "04_zoo_gets_ruler",
+      "kind": "scenery",
+      "explorer": false,
+      "prompt": "Same study-hall: long blank wooden mass-line begins to glow along the honey oak floor; blank cream cards quiver then start aligning toward it. Continuous glow + alignment motion, camera tracks along the line. Stylised 3D cartoon Animistry. Silent. No people. No readable numbers. No Orbit. HARD REJECT: photoreal still, room layout change."
+    },
+    {
+      "id": "05_explorer_ruler",
+      "kind": "scenery",
+      "explorer": true,
+      "prompt": "IMAGE-TO-VIDEO from attached start frame. Keep EXACTLY ONE Explorer boy — Germs Part 01 younger-boy lock: messy wavy brown hair, large eyes, thin gold wire-rim glasses, teal-blue overcoat with gold atom pin, tan waistcoat, white shirt, floppy brown bow, satchel with brass compass. Same Karlsruhe study-hall continuity behind him. He steadies the glowing blank wooden mass-line on the floor with both hands as blank cream cards lock onto it. Continuous acting + gentle camera drift. Stylised 3D cartoon. Silent. HARD REJECT: twins, adult redesign, Orbit robot, photoreal, readable text, vessel fire, hospital ward, desk-layout reset."
+    },
+    {
+      "id": "06_cards_snap_line",
+      "kind": "scenery",
+      "explorer": false,
+      "prompt": "Same hall floor + same glowing blank mass-line. Chaotic blank cream cards tumble then SNAP onto the line. Continuous tumble-to-snap, camera tracks along the line. Stylised 3D cartoon. Silent. No people. No Orbit. HARD REJECT: photoreal, cards floating forever, different room."
+    },
+    {
+      "id": "07_light_to_heavy",
+      "kind": "scenery",
+      "explorer": false,
+      "prompt": "Same glowing blank mass-line in the same hall. Camera travels left-to-right: lighter delicate cards on the left, denser darker cards on the right. Continuous travel, soft god-rays from arched windows. Stylised 3D cartoon. Silent. No readable labels. No people. No Orbit. HARD REJECT: photoreal still, layout reset."
+    },
+    {
+      "id": "08_property_waves",
+      "kind": "scenery",
+      "explorer": false,
+      "prompt": "Same mass-line in the same hall. Soft colour pulses travel along the line in waves — reactive glow, calm pause, reactive glow again. Continuous pulse motion. Stylised 3D cartoon Animistry. Silent. No readable text. No people. No Orbit. No vessel flames. HARD REJECT: photoreal, freeze-frame."
+    },
+    {
+      "id": "09_empty_chair_claim",
+      "kind": "scenery",
+      "explorer": false,
+      "prompt": "Same Karlsruhe hall benches/chairs language. A row of warm wooden chairs; one middle chair glows empty on purpose while neighbouring blank cards sit occupied. Slow continuous push-in on the vacant glowing chair. Stylised 3D cartoon. Silent. Wonder not horror. No people. No Orbit. No full-screen text. HARD REJECT: photoreal, different furniture set."
+    },
+    {
+      "id": "10_city_plan_lots",
+      "kind": "scenery",
+      "explorer": false,
+      "prompt": "Same honey oak desk under arched window: a miniature wooden city-plan model of matter — streets of blank cards, tiny house blocks, glowing vacant lots. Continuous camera drift over the model as vacant lots pulse. Stylised 3D cartoon. Silent. No readable street names. No people. No Orbit. HARD REJECT: photoreal still."
+    },
+    {
+      "id": "11_fix_weights",
+      "kind": "scenery",
+      "explorer": false,
+      "side_label": "FIX THE WEIGHTS",
+      "prompt": "Same desk + same mass-line language: a crooked glowing blank ruler straightens; mismatched blank cards realign onto the true line. Continuous straighten + realign. Soft window light. Stylised 3D cartoon. Silent. No readable numbers. No people. No Orbit. Candle wick OK. HARD REJECT: vessel fire, clear liquid glass, photoreal, Ken Burns still."
+    },
+    {
+      "id": "12_pattern_risks_public",
+      "kind": "scenery",
+      "explorer": false,
+      "side_label": "CHAOS HAS ADDRESS",
+      "prompt": "Same Karlsruhe hall continuity: blank cream cards now sit steady on the glowing mass-line while soft daylight shifts across honey oak panels; camera slowly orbits the line as one empty glow-gap pulses like a public claim. Continuous orbit + pulse. Stylised 3D cartoon Animistry. Silent. No readable text. No people. No Orbit. No vessel fire. HARD REJECT: photoreal still, Ken Burns only, room layout reset, center title stamp."
+    }
+  ]
+}

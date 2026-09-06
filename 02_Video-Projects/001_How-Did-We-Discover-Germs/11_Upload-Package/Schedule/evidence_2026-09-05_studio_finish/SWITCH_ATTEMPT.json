@@ -1,0 +1,29 @@
+{
+  "clickables": [
+    {
+      "t": "Switch account",
+      "href": "https://www.youtube.com/channel_switcher?next=https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+    }
+  ],
+  "popup": {
+    "url": "https://www.youtube.com/account",
+    "title": "(5) YouTube",
+    "snip": "GB\nSkip navigation\nFilters\nCreate\n5\nSettings\nAccount\nNotifications\nPlayback and performance\nPrivacy\nConnected apps\nBilling and payments\nAdvanced settings\nAll channels\nCreate a channel\nOpptiAI\n@OpptiAI\n3 subscribers\nOrbit with Ben\n@OrbitWithBen\n5 subscribers\nHistory of Science\n@HistoryOfScienceYT\nNo subscribers"
+  },
+  "picked": "History of Science",
+  "hos_after": {
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Oops",
+    "snip": "Oops, you don't have permission to view this page\n\nYou need to be signed in to an account that has access. Try switching or signing in to an account that has permission.\n\nSwitch account\nReturn to Studio"
+  },
+  "studio_home": {
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Channel dashboard - YouTube Studio",
+    "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nMicrobes in a drop of pond water\n0\n0\n0\nFirst 32 minutes\nViews\n0\nAverage percentage viewed\n\u2014\nLikes\n\u2014\nAdditional metrics become available three hours after publishing.\nCatch me up on this video\n\nCreate your first post to start a conversation and get feedback from your community.\n\nCreate post\nChannel analytics\nCurrent subscribers\n0\nSummary\nLast 28 days\nViews\t16\t\n\u2014\n\nWatch time (hours)\t0.1\t\n\u2014\nTop content\nLast 48 hours \u00b7 Views\nGerms don't cast a shadow\n\t\n12\n\n\nHow Did We Discover Germs?\n\t\n2\nGo to channel analytics\n1 / 3\nCreator Insider\nYouTube & Kids with Dr. Ali Mattu\nPsychologist @drali & @ReneRitchie discuss kids on YouTube, health tools, parental controls, & navigating age-appropriate content\nWatch on YouTube\nTerms of use \nPrivacy Policy \nPolic"
+  },
+  "avatar_snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nMicrobes in a drop of pond water\n0\n0\n0\nFirst 32 minutes\nViews\n0\nAverage percentage viewed\n\u2014\nLikes\n\u2014\nAdditional metrics become available three hours after publishing.\nCatch me up on this video\n\nCreate your first post to start a conversation and get feedback from your community.\n\nCreate post\nChannel analytics\nCurrent subscribers\n0\nSummary\nLast 28 days\nViews\t16\t\n\u2014\n\nWatch time (hours)\t0.1\t\n\u2014\nTop content\nLast 48 hours \u00b7 Views\nGerms don't cast a shadow\n\t\n12\n\n\nHow Did We Discover Germs?\n\t\n2\nGo to channel analytics\n1 / 3\nCreator Insider\nYouTube & Kids with Dr. Ali Mattu\nPsychologist @drali & @ReneRitchie discuss kids on YouTube, health tools, parental controls, & navigating age-appropriate content\nWatch on YouTube\nTerms of use \nPrivacy Policy \nPolicies and Safety \nHistory of Science\n@HistoryOfScienceYT\nYour channel\nYouTube\nSwitch account\nSign out\nAppearance: Device theme\nSend feedback",
+  "avatar_hits": [
+    "Switch account",
+    "History of Science"
+  ]
+}

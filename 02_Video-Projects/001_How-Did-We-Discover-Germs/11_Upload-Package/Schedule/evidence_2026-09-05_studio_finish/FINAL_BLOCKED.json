@@ -1,0 +1,32 @@
+{
+  "steps": [
+    {
+      "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Oops",
+      "snip": "Oops, you don't have permission to view this page\n\nYou need to be signed in to an account that has access. Try switching or signing in to an account that has permission.\n\nSwitch account\nReturn to Studio",
+      "oops": true
+    },
+    {
+      "after_switch_click": {
+        "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+        "title": "Oops",
+        "snip": "Oops, you don't have permission to view this page\n\nYou need to be signed in to an account that has access. Try switching or signing in to an account that has permission.\n\nSwitch account\nReturn to Studio"
+      }
+    },
+    {
+      "chosen": null,
+      "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Oops",
+      "snip": "Oops, you don't have permission to view this page\n\nYou need to be signed in to an account that has access. Try switching or signing in to an account that has permission.\n\nSwitch account\nReturn to Studio",
+      "oops": true
+    }
+  ],
+  "items": [],
+  "blocked": "HOS_PERMISSION_OOPS_AFTER_SWITCH",
+  "hos_retry": {
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Oops",
+    "snip": "Oops, you don't have permission to view this page\n\nYou need to be signed in to an account that has access. Try switching or signing in to an account that has permission.\n\nSwitch account\nReturn to Studio",
+    "oops": true
+  }
+}
