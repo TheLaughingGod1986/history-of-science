@@ -314,7 +314,7 @@ def main() -> None:
                         start_frame=start,
                         scenery_only=(start is None),
                         reuse_project=False,
-                        attempts=1,
+                        attempts=2,
                         timeout_s=180,
                     )
                 except Exception as e:

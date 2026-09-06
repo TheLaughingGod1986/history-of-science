@@ -1885,11 +1885,10 @@ def dismiss_soft_prompts(page) -> None:
 
 def confirm_generation_spend(page, *, timeout_s: float = 12.0) -> bool:
     """Click the post-Create Ultra credit / model confirmation if it appears."""
+    settle_after_nav(page, wait_ms=800)
     deadline = time.time() + timeout_s
     clicked = False
-    while time.time() < deadline:
-        hit = page.evaluate(
-            """() => {
+    script = """() => {
               const body = (document.body && document.body.innerText) || '';
               const needs =
                 /going to generate|Veo 3\\.1|credits|high demand|in the queue/i.test(body);
@@ -1923,7 +1922,15 @@ def confirm_generation_spend(page, *, timeout_s: float = 12.0) -> bool:
               }
               return null;
             }"""
-        )
+    while time.time() < deadline:
+        try:
+            hit = safe_evaluate(page, script, retries=3, pause_ms=900)
+        except Exception as e:
+            if is_transient_ui_error(e):
+                print(f"  confirm spend skipped race: {e}", flush=True)
+                settle_after_nav(page, wait_ms=1000)
+                continue
+            raise
         if hit:
             print(f"  confirmed generation spend via {hit!r}", flush=True)
             clicked = True
@@ -2667,7 +2674,14 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (scenery-only, no Orbit ref)", flush=True)
-        confirm_generation_spend(page)
+        settle_after_nav(page, wait_ms=1200)
+        try:
+            confirm_generation_spend(page)
+        except Exception as e:
+            if not is_transient_ui_error(e):
+                raise
+            print(f"  confirm spend race after Create (ok): {e}", flush=True)
+            settle_after_nav(page, wait_ms=1500)
     else:
         print("  ensuring Orbit agent instruction…", flush=True)
         ensure_orbit_agent_instruction(page)
