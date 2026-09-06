@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -78,18 +79,81 @@ def ensure_explorer_start() -> Path | None:
     return EXPLORER_START if EXPLORER_START.exists() else EXPLORER_LOCK
 
 
+# Ben lock 2026-09-06: mint ONLY as benoats@googlemail.com (10k+ Flow credits).
+# Never fall through to benoats86@gmail.com (prior Create-die / empty Fast quota).
+REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
+ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}  # same mailbox
+FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+
+
 def pick_google_account(page) -> None:
-    """If Flow bounced to the account chooser, pick the Ultra account."""
+    """If Flow bounced to the account chooser, pick ONLY the credited Ultra mailbox."""
     url = page.url or ""
     if "accounts.google.com" not in url:
         return
-    for needle in ("benoats@googlemail.com", "benoats86@gmail.com"):
+    for needle in (REQUIRED_FLOW_EMAIL, "benoats@gmail.com"):
         loc = page.get_by_text(needle, exact=False)
         if loc.count():
             print(f"  account chooser → {needle}", flush=True)
             loc.first.click(timeout=8000)
             page.wait_for_timeout(7000)
             return
+    raise SystemExit(
+        f"BLOCKED_AUTH: account chooser open but {REQUIRED_FLOW_EMAIL} not listed. "
+        "Ben must sign Mini Flow himself (never paste passwords)."
+    )
+
+
+def require_flow_account(page) -> str:
+    """Hard gate: read the signed-in Google Account chip before any Create click."""
+    try:
+        labels = page.eval_on_selector_all(
+            "button, a, [role=button]",
+            "els => els.map(e => (e.getAttribute('aria-label') || e.innerText || '').trim())"
+            ".filter(Boolean)",
+        )
+    except Exception as exc:
+        raise SystemExit(
+            f"BLOCKED_AUTH: could not read Flow account chrome ({exc}). "
+            "Ben must confirm Mini is signed in as benoats@googlemail.com."
+        ) from exc
+    blob = "\n".join(labels)
+    emails = {
+        e.lower()
+        for e in re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", blob, flags=re.I)
+    }
+    active = None
+    m = re.search(
+        r"Google Account:[^\n\(]*\(([^)]+@(?:gmail|googlemail)\.com)\)",
+        blob,
+        re.I,
+    )
+    if m:
+        active = m.group(1).lower()
+    elif FORBIDDEN_FLOW_EMAIL in emails:
+        active = FORBIDDEN_FLOW_EMAIL
+    elif emails & ALLOWED_FLOW_EMAILS:
+        active = sorted(emails & ALLOWED_FLOW_EMAILS)[0]
+    elif emails:
+        active = sorted(emails)[0]
+
+    print(f"  Flow account probe emails={sorted(emails)} active={active}", flush=True)
+    if not active:
+        raise SystemExit(
+            "BLOCKED_AUTH: signed-in Google email not visible on Flow. "
+            "Ben must open the account menu on Mini and confirm benoats@googlemail.com."
+        )
+    if active == FORBIDDEN_FLOW_EMAIL or "benoats86" in active:
+        raise SystemExit(
+            f"BLOCKED_AUTH: Mini Flow is signed in as {active}. "
+            f"Need exactly {REQUIRED_FLOW_EMAIL} (Ben's 10,050-credit proof). "
+            "Ben signs himself — do not paste passwords. No mint."
+        )
+    if active not in ALLOWED_FLOW_EMAILS:
+        raise SystemExit(
+            f"BLOCKED_AUTH: unexpected Flow account {active}. Need {REQUIRED_FLOW_EMAIL}."
+        )
+    return active
 
 
 def main() -> None:
@@ -118,9 +182,13 @@ def main() -> None:
             flow.dismiss_banners(page)
             if not flow.looks_logged_in(page):
                 raise SystemExit(
-                    "STOP: Flow not logged in. Do not Ken-Burns. "
-                    "Re-auth with: python3 04_Audio/tools/orbit_flow_veo_ui.py --login"
+                    "BLOCKED_AUTH: Flow not logged in. Do not Ken-Burns. "
+                    "Ben must sign Mini as benoats@googlemail.com "
+                    "(python3 04_Audio/tools/orbit_flow_veo_ui.py --login)."
                 )
+            active = require_flow_account(page)
+            meta["flow_account"] = active
+            print(f"  AUTH OK minting as {active}", flush=True)
             for i, plate in enumerate(plates):
                 pid = plate["id"]
                 if only and pid not in only and not any(pid.startswith(x) for x in only):

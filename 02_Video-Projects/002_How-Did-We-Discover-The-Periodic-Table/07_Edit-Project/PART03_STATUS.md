@@ -1,6 +1,6 @@
 # Part 03 status — A Ruler for Atoms
 
-**Updated:** 6 Sep 2026 22:22 Europe/London (Showrunner LOCK re-attempt · HOS Local Mini)
+**Updated:** 6 Sep 2026 22:45 Europe/London (HOS Local Mini · auth probe)
 
 ## Ben / Showrunner locks
 
@@ -8,7 +8,7 @@
 |---|---|
 | `hos_002_part01_rough_v14.mp4` | **LOCKED PASS.** Do **not** remint / overwrite. |
 | `hos_002_part02_rough_v06.mp4` | **LOCKED.** Do **not** remint / overwrite. |
-| Part 03 | **BLOCKED (credits)** — Showrunner LOCK obeyed; no Ken Burns |
+| Part 03 | **BLOCKED_AUTH** — wrong Google account on Mini Flow profile |
 | Part 04 | Do **not** start |
 
 ## Target rough (not landed)
@@ -36,35 +36,37 @@
 
 Inputs ready: script · VO · `parts/part-03_plates_v01.json` · `_mint_part03_flow_v01.py` · `_assemble_part03_rough_v01.py`
 
-## BLOCKED — reconfirmed 6 Sep 22:13–22:20
+## BLOCKED_AUTH — 6 Sep 22:45 (Mini live probe)
 
-Hard rule: real **Veo 3.1 Fast** every plate. Create dies / credits dry → **STOP**. No fake motion.
+Ben phone proof: Flow signed in as **benoats@googlemail.com** with **10,050 Google Flow credits**.
 
-### Gemini API
-Live probe: `429 RESOURCE_EXHAUSTED` — prepayment credits depleted (AI Studio).
+Mini Playwright profile `~/.playwright-hos-flow-profile` is signed in as **benoats86@gmail.com** (different account).
 
-### Flow UI (Veo 3.1 - Fast)
-Smoke log: `logs/mint_part03_flow_smoke_plate01_20260906_221306.log`
+Live probe evidence:
 
-- Model locked: **Veo 3.1 - Fast**
-- Create submitted → immediate fail
-- Page: *You're out of Google Flow credits…*
-- Agent: *reached your credit or daily limit for the Veo 3.1 - Fast model*
-- Suggested Omni Flash — **rejected** (Showrunner requires real Veo Fast, not Omni)
-- Stall PNG refreshed under `04_Generated-Clips/part03/raw/v01_fast/`
-- **Zero** landscape Veo mp4s on disk for Part 03
+- `logs/flow_auth_probe_20260906.json` → `verdict: BLOCKED_AUTH`, `active_email: benoats86@gmail.com`
+- Aria label: `Google Account: Benjamin Oats (benoats86@gmail.com)`
+- Screens: `logs/flow_auth_probe_20260906_account.png`, `logs/flow_auth_probe_20260906_credits_menu.png`
+- Prior Create-die / “out of credits” on Fast was this wrong account — not the credited mailbox
 
-## When credits recover
+**Hard stop.** No mint. No Ken Burns. No password paste. Ben must switch Mini Flow to `benoats@googlemail.com` himself, then re-run mint.
 
-1. `_mint_part03_flow_v01.py` (all 12 · Fast only)
-2. QA: 16:9 · real motion · opaque vessels · no clear liquid glass · no vessel fire · Explorer once on 05
-3. `_assemble_part03_rough_v01.py` → print path + bytes + sha256 + duration
-4. Hand to HOS UAT. **Do not** ping Ben.
+Mint script now hard-gates on account (`require_flow_account`) and will refuse `benoats86@gmail.com`.
+
+## When Mini is on benoats@googlemail.com
+
+1. Confirm Flow account chip + credits visible
+2. `_mint_part03_flow_v01.py` (all 12 · Veo 3.1 Fast only)
+3. QA: 16:9 · real motion · opaque vessels · no clear liquid glass · no vessel fire · Explorer once on 05
+4. `_assemble_part03_rough_v01.py` → print path + bytes + sha256 + duration
+5. Hand to HOS UAT. **Do not** ping Ben.
 
 ## Do not
 
 - Remint Part 01 / 02
 - Ship Ken Burns / still-push / freeze-pad
 - Use Omni Flash as a substitute for Veo Fast
+- Mint while signed in as `benoats86@gmail.com`
+- Paste passwords / switch accounts for Ben
 - Start Part 04
 - Ping Ben
