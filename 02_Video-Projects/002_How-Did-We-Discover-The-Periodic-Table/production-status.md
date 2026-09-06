@@ -1,6 +1,6 @@
 # Production status — 002 How Did We Discover the Periodic Table?
 
-**Desk board lock — 6 Sep 2026.** Docs only. No remint · no mint · no upload · no Mac Mini · no Flow · no Studio · no Orbit / Oppti from this file.
+**Desk board lock — 6 Sep 2026 (CoS / Ben).** Docs only. No remint · no mint · no upload · no Mac Mini · no Flow · no Studio · no Orbit / Oppti from this file.
 
 | Field | Value |
 |---|---|
@@ -18,9 +18,9 @@
 
 | Part | Cut | Status |
 |---|---|---|
-| **P01** | `hos_002_part01_rough_v13` | **FAIL** (5 Sep; PASS withdrawn). Blocker: plate `10_workshop_hold` / `10_rock_not_fire` only (~69–76s) **blue/cyan scrub mask**. Remint in flight → export `hos_002_part01_rough_v14`. **KEEP** rest of minute. Hold Ben score until v14 lands. Path + sha → Picture. |
-| **P02** | `hos_002_part02_rough_v06` | **KEEP / locked PASS**. Do not remint. Do not ask Ben to rewatch. |
-| **P03** | — | Mid-batch only (VO + board ready, **zero keepers**). Credits killed mint. Resume mint **only after P01 v14 PASS**. |
+| **P01** | `hos_002_part01_rough_v14` | **KEEP / Ben-locked PASS**. Supersedes v13 FAIL (plate-10 blue/cyan scrub). **Do not remint P01. Do not ask Ben to rewatch.** Path + sha → Picture (disk inventory). |
+| **P02** | `hos_002_part02_rough_v06` | **KEEP / locked PASS**. Unchanged. Do not remint. Do not ask Ben to rewatch. |
+| **P03** | — | **Minting** (in progress). Gate: real Veo every beat · Animistry side labels · Explorer once on plate **05** · no Ken Burns. |
 | **P04–P05** | — | No cuts. Blocked until **P03 PASS**. |
 
 ### P01 forever FAIL (regen if present)
@@ -31,13 +31,13 @@
 - Ken Burns
 - Orbit robot
 
-### P01 plate-10 keep shape
+### P01 plate-10 keep shape (v14 lock)
 
 - Ore **IN** brass pan
 - Colourless shimmer only
 - Continuous motion
 
-### P03 mint gate (when unlocked)
+### P03 mint gate
 
 - Real Veo every beat
 - Animistry side labels
@@ -46,14 +46,15 @@
 
 ## Fix order (blocking)
 
-1. **P01 v14** lands (plate-10 remint only; keep rest of minute)
+1. Finish **P03** mint
 2. UAT → Ben
-3. Then **P03** mint
+3. Then **P04**
 4. **Moon Leaving** waits
 
 ## Do not
 
-- Remint P02
+- Remint P01 or P02
+- Ask Ben to rewatch P01 / P02
 - Start P04 / P05 before P03 PASS
 - Upload · Studio · Orbit / Oppti
 - Invent cut hashes or Mini paths here — Picture owns path + sha

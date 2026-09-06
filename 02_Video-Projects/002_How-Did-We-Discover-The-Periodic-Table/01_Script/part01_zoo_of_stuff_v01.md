@@ -3,7 +3,7 @@
 **Parent:** `periodic_table_script_master_v01.md` (90.4 PASS)  
 **Status:** PRODUCING  
 **Style:** Animistry 3D cartoon · Explorer once (ore + gas jar) · no Orbit  
-**Stop (historical):** Ben UAT after this rough. **Desk now (6 Sep):** P02 `hos_002_part02_rough_v06` is KEEP / locked PASS — see `production-status.md`. P01 v13 FAIL on plate 10 only → v14.
+**Stop (historical):** Ben UAT after this rough. **Desk now (6 Sep CoS / Ben):** P01 `hos_002_part01_rough_v14` KEEP / Ben-locked PASS · P02 `hos_002_part02_rough_v06` KEEP — see `production-status.md`. Do not remint P01. Do not ask Ben to rewatch.
 
 **VO file:** `02_Voiceover/part01_zoo_of_stuff_v02` (v01 was 112s — trimmed)
 
@@ -47,4 +47,4 @@ A zoo with labels is still a zoo. What if the secret is not a new jar — it is 
 
 ## UAT
 
-Stop after Part 01 rough was the original gate. **Current board:** P02 KEEP · P01 plate-10 remint to v14 · then P03 — see `production-status.md`.
+Stop after Part 01 rough was the original gate. **Current board:** P01 v14 KEEP · P02 KEEP · P03 minting → then P04 — see `production-status.md`.
