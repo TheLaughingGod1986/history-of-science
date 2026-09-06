@@ -1,0 +1,30 @@
+2026-09-06T05:15:20 related_hex=5f43393274494a436b3841 channel_hex=5543587037486b42496c314c67617a6e58755a484a795267
+2026-09-06T05:15:20 plan s01 new_hex=48317930445846566d7738 old_hex=387542522d396f78655773
+2026-09-06T05:15:20 plan s02 new_hex=6971546f6167586e6a5830 old_hex=595832555231752d4a4351
+2026-09-06T05:15:20 plan s03 new_hex=385f45646e5f4843693173 old_hex=466e6233703831752d7759
+2026-09-06T05:15:20 plan s04 new_hex=73494c7451786759516b38 old_hex=76707552674b5874466c59
+2026-09-06T05:15:20 plan s05 new_hex=3933665055472d68573041 old_hex=4c636d683579324b4d514d
+2026-09-06T05:15:20 hard_reset
+2026-09-06T05:15:23 chrome_up_1
+2026-09-06T05:15:27 auth_hos=True url=https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg
+2026-09-06T05:15:30 s01 new vis=Public related=True trig='Related video How Did We Discover Germs?'
+2026-09-06T05:15:33 s01 old vis=Private
+2026-09-06T05:15:37 s02 new vis=Public related=True trig='Related video How Did We Discover Germs?'
+2026-09-06T05:15:40 s02 old vis=Private
+2026-09-06T05:15:44 s03 new vis=Public related=True trig='Related video How Did We Discover Germs?'
+2026-09-06T05:15:47 s03 old vis=Private
+2026-09-06T05:15:50 s04 new vis=Public related=False trig='Related video None'
+2026-09-06T05:16:03 s04 related_set {'ok': True, 'notes': ['Select from video', 'card', 'select', 'saved'], 'trigger': 'Related video How Did We Discover Germs?'}
+2026-09-06T05:16:06 s04 old vis=Private
+2026-09-06T05:16:10 s05 new vis=Public related=True trig='Related video How Did We Discover Germs?'
+2026-09-06T05:16:13 s05 old vis=Private
+
+=== AUDIT TABLE ===
+| new id | title | Public? | Related `_C92tIJCk8A`? | old id Private? |
+|---|---|---|---|---|
+| H1y0DXFVmw8 | Germs don't cast a shadow | True | True | 8uBR-9oxeWs=True |
+| iqToagXnjX0 | Microbes in a drop of pond water | True | True | YX2UR1u-JCQ=True |
+| 8_Edn_HCi1s | Germs hitch a ride on you | True | True | Fnb3p81u-wY=True |
+| sILtQxgYQk8 | A flask that proved germs come from outside | True | True | vpuRgKXtFlY=True |
+| 93fPUG-hW0A | Invisible life is still everywhere | True | True | Lcmh5y2KMQM=True |
+2026-09-06T05:16:13 DONE
