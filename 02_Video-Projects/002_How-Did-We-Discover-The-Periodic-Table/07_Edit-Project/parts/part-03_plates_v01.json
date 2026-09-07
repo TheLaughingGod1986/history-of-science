@@ -1,18 +1,18 @@
 {
   "part": 3,
   "title": "A Ruler for Atoms",
-  "status": "remint_v03_plates_09_10_only",
+  "status": "remint_v04_plate_09_only_skip_10_under_empty_chair",
   "quality_gate": "07_Edit-Project/FILM002_QUALITY_GATE_FROM_PART02.md",
   "clip_use_s": 8.0,
   "xfade_s": 0.35,
   "vo_file": "02_Voiceover/part03_ruler_for_atoms_v01.wav",
-  "set_language": "ONE persistent 1860 Karlsruhe congress-hall ONLY: warm honey oak panels, tall arched windows with soft volumetric daylight, blank cream pamphlets on wooden benches, long glowing blank wooden mass-line on the floor when the ruler appears. Same room DNA every scenery plate — camera moves only; do not reset furniture layout; do not invent a new room.",
+  "set_language": "ONE persistent 1860 Karlsruhe congress-hall ONLY: warm honey oak panels, tall arched windows with soft volumetric daylight, blank cream pamphlets on wooden benches, long glowing blank wooden mass-line on the floor when the ruler appears. Same room DNA every scenery plate \u2014 camera moves only; do not reset furniture layout; do not invent a new room.",
   "continuity_lock": "HARD: every scenery plate MUST match plate 01 hall DNA (honey oak + arched windows + blank cream pamphlets + wooden benches). Prefer I2V from plate-01 frames / same-room stills. Camera moves only. No furniture layout reset.",
   "forbidden_rooms": "FORBIDDEN room swaps: blackboard classroom, chandelier ballroom, fresco gallery, separate model-town set, Part 01 workshop, any new architecture. Chair / city-plan / mass-line beats stay INSIDE this hall.",
-  "motion_lock": "REAL Veo camera + object motion every scenery plate. No Ken Burns hero. No freeze-pad. If Create dies — STOP (no Ken Burns fallback).",
+  "motion_lock": "REAL Veo camera + object motion every scenery plate. No Ken Burns hero. No freeze-pad. If Create dies \u2014 STOP (no Ken Burns fallback).",
   "label_lock": "If a term needs a label: Animistry side label upper-right, 1-4 words max. NEVER dead-center full-screen chapter stamps. Burn-in labels: A RULER FOR ATOMS / FIX THE WEIGHTS / CHAOS HAS ADDRESS (plus timed edit labels).",
   "style_lock": "Finished Animistry-class stylised 3D cartoon like Germs Part 01 PASS / Periodic Part 01 PASS. NOT photoreal. NOT live-action AI stills.",
-  "physics_lock": "Opaque ceramic / sealed metal only when vessels appear. ZERO clear liquid glass. ZERO bubbles in air. ZERO vessel fire. Candle wick OK. Silent. No Orbit orange robot. Exactly ONE Explorer when called — Germs younger-boy lock.",
+  "physics_lock": "Opaque ceramic / sealed metal only when vessels appear. ZERO clear liquid glass. ZERO bubbles in air. ZERO vessel fire. Candle wick OK. Silent. No Orbit orange robot. Exactly ONE Explorer when called \u2014 Germs younger-boy lock.",
   "plates": [
     {
       "id": "01_hall_open_side_label",
@@ -21,7 +21,7 @@
       "keep_if_clean": true,
       "i2v": false,
       "side_label": "A RULER FOR ATOMS",
-      "prompt": "Finished Animistry-class stylised 3D cartoon (NOT photoreal). ONE persistent 1860 Karlsruhe congress hall DNA: warm honey oak panels, tall arched windows, soft volumetric daylight, rows of wooden benches, blank cream pamphlets fluttering. Continuous camera push down the aisle as dust motes drift and pamphlets rustle. Optional tiny Animistry side caption plate upper-right only reading four words max — never a full-screen center title card. Silent. No readable body text elsewhere. No Orbit robot. No vessel fire. HARD REJECT: photoreal, still photo, Ken Burns only, dead-center chapter stamp, blackboard classroom, chandelier ballroom, fresco gallery, modern conference."
+      "prompt": "Finished Animistry-class stylised 3D cartoon (NOT photoreal). ONE persistent 1860 Karlsruhe congress hall DNA: warm honey oak panels, tall arched windows, soft volumetric daylight, rows of wooden benches, blank cream pamphlets fluttering. Continuous camera push down the aisle as dust motes drift and pamphlets rustle. Optional tiny Animistry side caption plate upper-right only reading four words max \u2014 never a full-screen center title card. Silent. No readable body text elsewhere. No Orbit robot. No vessel fire. HARD REJECT: photoreal, still photo, Ken Burns only, dead-center chapter stamp, blackboard classroom, chandelier ballroom, fresco gallery, modern conference."
     },
     {
       "id": "02_hall_argument",
@@ -29,7 +29,7 @@
       "explorer": false,
       "i2v": true,
       "start_frame_key": "hall_dna_t4",
-      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this exact honey-oak congress hall — arched windows, wooden benches, blank cream pamphlets. Continuous motion only: pamphlets flap, dust motes drift, coat-back silhouettes at benches gesture while arguing about invisible sizes; camera eases slightly around the aisle/lectern. NO blackboard. NO chalk slate. NO chandelier. NO fresco. NO new room. Stylised 3D cartoon Animistry. Silent. No faces in hero close-up. No readable formulas. No Orbit. No vessel fire. HARD REJECT: blackboard classroom, chandelier ballroom, fresco gallery, layout reset, photoreal still, Ken Burns only."
+      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this exact honey-oak congress hall \u2014 arched windows, wooden benches, blank cream pamphlets. Continuous motion only: pamphlets flap, dust motes drift, coat-back silhouettes at benches gesture while arguing about invisible sizes; camera eases slightly around the aisle/lectern. NO blackboard. NO chalk slate. NO chandelier. NO fresco. NO new room. Stylised 3D cartoon Animistry. Silent. No faces in hero close-up. No readable formulas. No Orbit. No vessel fire. HARD REJECT: blackboard classroom, chandelier ballroom, fresco gallery, layout reset, photoreal still, Ken Burns only."
     },
     {
       "id": "03_method_pamphlet",
@@ -37,7 +37,7 @@
       "explorer": false,
       "i2v": true,
       "start_frame_key": "hall_dna_t1",
-      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this exact hall DNA (honey oak, arched windows, wooden benches, blank cream pamphlets). Camera moves closer along a bench/desk inside THIS hall as a blank cream method pamphlet slides into focus and blank specimen cards settle into a tidy stack. Continuous slide + settle. Stay inside the congress hall — do NOT cut to a separate study/library. No bookshelf room swap. Stylised 3D cartoon. Silent. No readable type. No Orbit. Candle wick far aside OK. HARD REJECT: different room, clear liquid glass, vessel fire, full-screen text card, Ken Burns only."
+      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this exact hall DNA (honey oak, arched windows, wooden benches, blank cream pamphlets). Camera moves closer along a bench/desk inside THIS hall as a blank cream method pamphlet slides into focus and blank specimen cards settle into a tidy stack. Continuous slide + settle. Stay inside the congress hall \u2014 do NOT cut to a separate study/library. No bookshelf room swap. Stylised 3D cartoon. Silent. No readable type. No Orbit. Candle wick far aside OK. HARD REJECT: different room, clear liquid glass, vessel fire, full-screen text card, Ken Burns only."
     },
     {
       "id": "04_zoo_gets_ruler",
@@ -53,7 +53,7 @@
       "explorer": true,
       "i2v": true,
       "start_frame_key": "explorer_on_hall",
-      "prompt": "IMAGE-TO-VIDEO from attached start frame. Keep EXACTLY ONE Explorer boy — Germs Part 01 younger-boy lock: messy wavy brown hair, large eyes, thin gold wire-rim glasses, teal-blue overcoat with gold atom pin, tan waistcoat, white shirt, floppy brown bow, satchel with brass compass. KEEP the attached Karlsruhe congress-hall DNA behind him (honey oak, arched windows, wooden benches, blank cream pamphlets). He steadies the glowing blank wooden mass-line on the hall floor with both hands as blank cream cards lock onto it. Continuous acting + gentle camera drift. Opaque props only. Silent. HARD REJECT: twins, adult redesign, Orbit robot, clear liquid glass, vessel fire, blackboard classroom, chandelier ballroom, fresco gallery, hospital ward, desk-layout reset, photoreal, readable text, Ken Burns only."
+      "prompt": "IMAGE-TO-VIDEO from attached start frame. Keep EXACTLY ONE Explorer boy \u2014 Germs Part 01 younger-boy lock: messy wavy brown hair, large eyes, thin gold wire-rim glasses, teal-blue overcoat with gold atom pin, tan waistcoat, white shirt, floppy brown bow, satchel with brass compass. KEEP the attached Karlsruhe congress-hall DNA behind him (honey oak, arched windows, wooden benches, blank cream pamphlets). He steadies the glowing blank wooden mass-line on the hall floor with both hands as blank cream cards lock onto it. Continuous acting + gentle camera drift. Opaque props only. Silent. HARD REJECT: twins, adult redesign, Orbit robot, clear liquid glass, vessel fire, blackboard classroom, chandelier ballroom, fresco gallery, hospital ward, desk-layout reset, photoreal, readable text, Ken Burns only."
     },
     {
       "id": "06_cards_snap_line",
@@ -77,7 +77,7 @@
       "explorer": false,
       "i2v": true,
       "start_frame_key": "hall_dna_t65",
-      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this exact hall + mass-line. Soft colour pulses travel along the glowing blank mass-line in waves — reactive glow, calm pause, reactive glow again. Continuous pulse motion; camera holds the hall DNA. Stylised 3D cartoon Animistry. Silent. No readable text. No people. No Orbit. No vessel flames. HARD REJECT: photoreal, freeze-frame, room swap, chandelier, blackboard, fresco."
+      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this exact hall + mass-line. Soft colour pulses travel along the glowing blank mass-line in waves \u2014 reactive glow, calm pause, reactive glow again. Continuous pulse motion; camera holds the hall DNA. Stylised 3D cartoon Animistry. Silent. No readable text. No people. No Orbit. No vessel flames. HARD REJECT: photoreal, freeze-frame, room swap, chandelier, blackboard, fresco."
     },
     {
       "id": "09_empty_chair_claim",
@@ -86,7 +86,8 @@
       "i2v": true,
       "start_frame_key": "empty_chair_i2v",
       "remint_v03": true,
-      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this EXACT plate-01 congress-hall DNA: warm honey oak panels, tall arched windows with soft volumetric daylight, blank cream pamphlets on wooden benches, clear central aisle. A single vacant wooden armchair sits IN THE AISLE and glows empty on purpose (warm gold glow in the backrest) — like a prediction claim. Continuous slow push-in toward the glowing empty chair. Neighbouring benches keep blank cream pamphlets. Stay INSIDE this hall — camera moves only; do NOT reset furniture layout; do NOT invent a new room. Stylised 3D cartoon Animistry. Silent. Wonder not horror. No people. No Orbit. No full-screen text. HARD REJECT: model-town, chandelier, blackboard, fresco, circular amphitheatre reset, different furniture set, photoreal, Ken Burns only."
+      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall aisle-chair start frame. KEEP this EXACT plate-01 congress-hall DNA: warm honey oak panels, tall arched windows with soft volumetric daylight, blank cream pamphlets on wooden benches, clear central aisle. The ONLY hero is a single vacant wooden armchair sitting ALONE IN THE AISLE with a warm gold glow in the empty backrest \u2014 a prediction claim. Continuous slow push-in toward that glowing empty chair. Neighbouring benches keep blank cream pamphlets. Stay INSIDE this hall \u2014 camera moves only. Stylised 3D cartoon Animistry. Silent. Wonder not horror. No people. No Orbit. HARD REJECT: wooden city/model-town, desk-top town stand-in, glowing blue/yellow building blocks, postcard city plan as hero, chandelier, blackboard, fresco, photoreal, Ken Burns only.",
+      "remint_v04": true
     },
     {
       "id": "10_city_plan_lots",
@@ -95,7 +96,8 @@
       "i2v": true,
       "start_frame_key": "postcard_plan_i2v",
       "remint_v03": true,
-      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this EXACT plate-01 congress-hall DNA visible (honey oak, arched windows, wooden benches, blank cream pamphlets). On an EXISTING hall desk/bench ONLY, a TINY postcard-scale wooden city-plan of matter rests — palm-sized, flat postcard prop, not a floor model. Tiny blank house blocks and a few glowing vacant lots on that postcard only. Continuous gentle camera drift/push toward the postcard on the desk; hall architecture stays in frame. Stylised 3D cartoon Animistry. Silent. No readable street names. No people. No Orbit. HARD REJECT: wooden model-town sprawl, large floor town, outdoor town, separate model-town set/world, chandelier ballroom, blackboard classroom, fresco gallery, layout reset, photoreal still, Ken Burns only."
+      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this EXACT plate-01 congress-hall DNA visible (honey oak, arched windows, wooden benches, blank cream pamphlets). On an EXISTING hall desk/bench ONLY, a TINY postcard-scale wooden city-plan of matter rests \u2014 palm-sized, flat postcard prop, not a floor model. Tiny blank house blocks and a few glowing vacant lots on that postcard only. Continuous gentle camera drift/push toward the postcard on the desk; hall architecture stays in frame. Stylised 3D cartoon Animistry. Silent. No readable street names. No people. No Orbit. HARD REJECT: wooden model-town sprawl, large floor town, outdoor town, separate model-town set/world, chandelier ballroom, blackboard classroom, fresco gallery, layout reset, photoreal still, Ken Burns only.",
+      "skip_under_empty_chair_v04": true
     },
     {
       "id": "11_fix_weights",
