@@ -1,0 +1,169 @@
+{
+  "part": "04",
+  "title": "Empty Chairs",
+  "parent_locked": "hos_002_part03_rough_v09",
+  "house": "HOS_HOUSE_VO_AND_TEACH_LOCK",
+  "vo_file": "02_Voiceover/part04_empty_chairs_v01.wav",
+  "vo_duration_s": 127.76,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "set_language": "ONE persistent 1869 chemist desk DNA ONLY: honey wood desk, soft warm lamp, cream blank cards, night window. Same desk DNA every scenery plate — camera moves only; do not reset furniture layout; do not invent a new room or model-town.",
+  "continuity_lock": "HARD: every scenery plate MUST match plate 01 desk DNA (honey wood + soft lamp + cream blank cards + night window). Prefer I2V from plate-01 frames / same-desk stills. Camera moves only. No furniture layout reset.",
+  "forbidden": "HARD REJECT: model-town sprawl, glowing yellow house-blocks, black house icons/map pins, central-table town diorama, Orbit robot, photoreal, vessel fire, clear liquid glass, Ken Burns only, academic-blazer Explorer, layout reset that dumps desk DNA.",
+  "motion_lock": "REAL Veo camera + object motion every scenery plate. No Ken Burns hero. No freeze-pad. If Create dies — STOP (no Ken Burns fallback).",
+  "note_coverage": "VO landed 127.76s (brief estimated 80–95s). Core board = 11 plates; 6 unique desk-DNA coverage plates added so 1× motion covers VO (no freeze-pad / no loop).",
+  "plates": [
+    {
+      "id": "01_chapter_empty_chairs",
+      "explorer": false,
+      "i2v": false,
+      "coverage": false,
+      "side_label": "EMPTY CHAIRS",
+      "prompt": "Animistry 3D cartoon. Warm 1869 chemist desk DNA: honey wood, soft lamp, cream blank cards, night window. Continuous gentle push-in. Chapter mood only. Silent. No Orbit. No model-town. No readable wall of text. HARD REJECT: photoreal, Ken Burns only, vessel fire."
+    },
+    {
+      "id": "02_mendeleev_desk_cards",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_dna_t4",
+      "coverage": false,
+      "side_label": "MENDELEEV",
+      "prompt": "Same 1869 desk DNA. Faceless or OTS hands arrange dozens of blank cream element cards across the desk. Continuous card-sort motion. Stylised 3D cartoon. Silent. Sparse mark on at most 2 cards OK (e.g. H 1). HARD REJECT: model-town, house-blocks, Orbit, room swap, photoreal."
+    },
+    {
+      "id": "02b_cards_sixty_three",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_dna_t1",
+      "coverage": true,
+      "side_label": "1869",
+      "prompt": "Same 1869 desk DNA. Cream blank cards keep settling across the honey wood — denser stack, continuous gentle shuffle as if counting known elements. Soft lamp. Night window. Silent. No people. HARD REJECT: model-town, house-blocks, Orbit, photoreal, Ken Burns only."
+    },
+    {
+      "id": "03_what_is_element",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_hero_card",
+      "coverage": false,
+      "side_label": "ELEMENT",
+      "prompt": "Same desk DNA. One cream card slides into hero close-up — sparse phone-readable mark optional (e.g. O 16). Continuous slide + settle. Teach: one pure chemical. Silent. No paragraph text. HARD REJECT: wall of formulas, model-town, Orbit."
+    },
+    {
+      "id": "04_sort_atomic_weight",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_weight_line",
+      "coverage": false,
+      "side_label": "ATOMIC WEIGHT",
+      "prompt": "Same desk DNA. Cream cards continuously slide into one left-to-right line by increasing weight (light to heavy). Soft glow along the line. Silent. Most cards blank. HARD REJECT: model-town, house icons, layout reset."
+    },
+    {
+      "id": "05_columns_families",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_columns",
+      "coverage": false,
+      "side_label": "PERIODIC TABLE",
+      "prompt": "Same desk DNA. Cards drop from the weight line into vertical family columns — cousins grouping. Continuous drop + settle. Grid begins to read as a seating chart. Silent. No street/town. HARD REJECT: glowing yellow house-blocks, central-table model-town, Orbit."
+    },
+    {
+      "id": "05b_families_settle",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_columns",
+      "coverage": true,
+      "side_label": "PERIODIC TABLE",
+      "prompt": "Same desk DNA. Family columns on the desk finish settling — soft reactive metals glow faintly in one column, halogen cousins in another, loners in their own lane. Continuous settle + lamp flicker. Flat cream cards only. Silent. HARD REJECT: glowing yellow house-blocks, model-town, Orbit, photoreal."
+    },
+    {
+      "id": "06_explorer_leaves_gap",
+      "explorer": true,
+      "i2v": true,
+      "start_frame_key": "explorer_on_desk",
+      "coverage": false,
+      "side_label": "EMPTY SEATS",
+      "prompt": "Same desk DNA. ONE Explorer boy only — messy wavy brown hair, teal trenchcoat house lock (Germs/P03 refs), not academic blazer. He pins one cream card into a column, leaves a glowing vacant seat/gap, steps back. Continuous acting + gentle camera. Silent. HARD REJECT: twins, off-model Explorer, model-town, Orbit robot."
+    },
+    {
+      "id": "07_eka_placeholders",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_empty_seats",
+      "coverage": false,
+      "side_label": "EKA-ALUMINIUM",
+      "prompt": "Same desk DNA. Two or three glowing empty card-slots / vacant seats in the columns — placeholders for missing elements. Continuous soft pulse on empty seats only. No miniature houses. Silent. HARD REJECT: model-town sprawl, yellow house-blocks, people."
+    },
+    {
+      "id": "07b_eka_names_rotate",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_empty_seats",
+      "coverage": true,
+      "side_label": "EKA-BORON",
+      "prompt": "Same desk DNA. Soft pulse rotates attention across two or three glowing vacant cream-card seats in the columns — placeholders only, no readable wall of text. Continuous pulse. Silent. No people. HARD REJECT: model-town, yellow house-blocks, Orbit, photoreal."
+    },
+    {
+      "id": "08_prediction_navigation",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_one_gap",
+      "coverage": false,
+      "side_label": "A PREDICTION",
+      "prompt": "Same desk DNA. Camera pushes toward one glowing vacant seat as an address — prediction you can hunt. Continuous push. Hall/desk only. Silent. HARD REJECT: city-plan toy town, outdoor street, house icons."
+    },
+    {
+      "id": "08b_navigation_walk",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_one_gap",
+      "coverage": true,
+      "side_label": "A PREDICTION",
+      "prompt": "Same desk DNA. Continuous slow push toward the glowing vacant cream-card seat — feels like walking toward an address on the desk. Soft lamp. Night window. Silent. HARD REJECT: outdoor street, model-town, house icons, Orbit."
+    },
+    {
+      "id": "09_risk_bet",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_one_gap",
+      "coverage": false,
+      "side_label": "A BET",
+      "prompt": "Same desk DNA. Empty glowing seat holds the frame; soft tension lighting shift. Continuous subtle drift. Silent. HARD REJECT: model-town, Orbit, freeze still."
+    },
+    {
+      "id": "09b_risk_hold",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_one_gap",
+      "coverage": true,
+      "side_label": "A BET",
+      "prompt": "Same desk DNA. Glowing vacant seat stays hero; lamp warm vs cooler night window tension. Continuous subtle camera drift only. Silent. HARD REJECT: model-town, Orbit, Ken Burns freeze, photoreal."
+    },
+    {
+      "id": "10_family_before_weight",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_swap_cards",
+      "coverage": false,
+      "side_label": "FAMILY FIRST",
+      "prompt": "Same desk DNA. In one column, two cream cards swap order (family wins over messy weight). Continuous swap motion. Silent. Sparse marks OK on those two cards only. HARD REJECT: town diorama, house-blocks."
+    },
+    {
+      "id": "11_publish_gaps",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_publish_papers",
+      "coverage": false,
+      "side_label": "PUBLISH THE GAPS",
+      "prompt": "Same desk DNA. Stack of papers / flat grid sheet with clear empty holes in the seating chart — published map with gaps. Continuous settle. Flat marks only — no 3D houses. Silent. HARD REJECT: glowing yellow house-blocks, black house icons, model-town, Orbit."
+    },
+    {
+      "id": "11b_wait_and_hunt",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "desk_publish_papers",
+      "coverage": true,
+      "side_label": "PUBLISH THE GAPS",
+      "prompt": "Same desk DNA. Published flat grid sheet with empty holes rests on the honey desk; soft lamp; continuous gentle push toward the holes as if the hunt begins. Flat ink only — no 3D houses. Silent. HARD REJECT: glowing yellow house-blocks, black house icons, model-town, Orbit, photoreal."
+    }
+  ]
+}
