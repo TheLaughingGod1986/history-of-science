@@ -2,7 +2,7 @@
 """Compose I2V start frames for Part 04 v02 — scrub model-town window.
 
 UAT FAIL v01 ~40–45s: glowing yellow-window toy houses outside lab window.
-v02: same desk DNA; through window = night sky + moon/stars ONLY (no houses).
+v02: hard-fill window glass with night sky + moon/stars ONLY (opaque).
 """
 from __future__ import annotations
 
@@ -31,151 +31,50 @@ def grab(src: Path, ss: float, dest: Path) -> None:
     )
 
 
-def _is_sky(r: int, g: int, b: int) -> bool:
-    return b > r + 18 and b > g + 8 and b > 85 and r < 130
+def hard_scrub_window(
+    src: Path,
+    dest: Path,
+    box_frac: tuple[float, float, float, float],
+    moon_frac: tuple[float, float] = (0.55, 0.11),
+    strip_label: bool = False,
+) -> None:
+    """Opaque night-sky fill over window glass — removes model-town houses."""
+    im = Image.open(src).convert("RGB")
+    w, h = im.size
+    x0 = int(w * box_frac[0])
+    y0 = int(h * box_frac[1])
+    x1 = int(w * box_frac[2])
+    y1 = int(h * box_frac[3])
 
+    sky_rgb = Image.new("RGB", (w, h), (26, 40, 82))
+    sd = ImageDraw.Draw(sky_rgb)
+    mx, my = int(w * moon_frac[0]), int(h * moon_frac[1])
+    rad = max(20, int(min(w, h) * 0.034))
+    sd.ellipse((mx - rad, my - rad, mx + rad, my + rad), fill=(236, 236, 250))
+    for sx, sy in (
+        (mx - rad * 2.8, my + 10),
+        (mx + rad * 2.0, my - 8),
+        (mx + 12, my + rad * 1.8),
+        (mx - rad, my + rad * 2.2),
+    ):
+        sd.ellipse((int(sx), int(sy), int(sx) + 2, int(sy) + 2), fill=(220, 225, 240))
 
-def _is_house_glow(r: int, g: int, b: int) -> bool:
-    # Glowing yellow rectangular house windows (not warm lamp cream).
-    return r > 175 and g > 145 and b < 115 and (r - b) > 55 and (g - b) > 35
-
-
-def _is_house_body(r: int, g: int, b: int) -> bool:
-    # Dark brown / silhouette house walls near glow.
-    return r < 95 and g < 75 and b < 70 and (r + g + b) < 200 and max(r, g, b) > 25
-
-
-def scrub_window_sky(im: Image.Image) -> Image.Image:
-    """Remove glowing model-town houses in the night window → sky + moon only."""
-    rgb = im.convert("RGB")
-    w, h = rgb.size
-    pix = rgb.load()
-
-    # 1) Sky seed pixels in upper 55%.
-    sky_pts: list[tuple[int, int]] = []
-    for y in range(0, int(h * 0.55), 2):
-        for x in range(0, w, 2):
-            r, g, b = pix[x, y]
-            if _is_sky(r, g, b):
-                sky_pts.append((x, y))
-    if not sky_pts:
-        # Fallback night blue
-        sky_color = (32, 48, 92)
-        sky_bbox = (int(w * 0.25), int(h * 0.02), int(w * 0.78), int(h * 0.45))
-    else:
-        sx = [p[0] for p in sky_pts]
-        sy = [p[1] for p in sky_pts]
-        # Sky color = median-ish of seeds
-        samples = [pix[x, y] for x, y in sky_pts[:: max(1, len(sky_pts) // 400)]]
-        samples.sort(key=lambda c: c[2])
-        sky_color = samples[len(samples) // 2]
-        sky_bbox = (
-            max(0, min(sx) - 8),
-            max(0, min(sy) - 4),
-            min(w - 1, max(sx) + 8),
-            min(h - 1, max(sy) + 70),
-        )
-
-    x0, y0, x1, y1 = sky_bbox
-
-    # 2) Mark house-glow + adjacent dark body pixels INSIDE sky bbox only.
     mask = Image.new("L", (w, h), 0)
-    mp = mask.load()
-    glow_n = 0
-    for y in range(y0, y1):
-        for x in range(x0, x1):
-            r, g, b = pix[x, y]
-            if _is_house_glow(r, g, b):
-                mp[x, y] = 255
-                glow_n += 1
-            elif _is_house_body(r, g, b):
-                # Only keep body if a glow is nearby (same window row-ish)
-                near_glow = False
-                for dy in range(-18, 19, 3):
-                    for dx in range(-18, 19, 3):
-                        xx, yy = x + dx, y + dy
-                        if xx < x0 or xx >= x1 or yy < y0 or yy >= y1:
-                            continue
-                        rr, gg, bb = pix[xx, yy]
-                        if _is_house_glow(rr, gg, bb):
-                            near_glow = True
-                            break
-                    if near_glow:
-                        break
-                if near_glow:
-                    mp[x, y] = 255
+    ImageDraw.Draw(mask).rectangle((x0, y0, x1, y1), fill=255)
+    soft = mask.filter(ImageFilter.GaussianBlur(radius=3))
+    inset = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(inset).rectangle((x0 + 6, y0 + 6, x1 - 6, y1 - 6), fill=255)
+    mask = Image.composite(inset, soft, inset)
 
-    # Dilate mask so whole house + roof is covered
-    mask = mask.filter(ImageFilter.MaxFilter(15))
-    mask = mask.filter(ImageFilter.MaxFilter(11))
-    mask = mask.filter(ImageFilter.GaussianBlur(radius=2.2))
+    out = Image.composite(sky_rgb, im, mask)
+    if strip_label:
+        # Rough frames bake PERIODIC TABLE / EMPTY SEATS overlays — strip for I2V.
+        d = ImageDraw.Draw(out)
+        d.rectangle((int(w * 0.68), int(h * 0.01), int(w * 0.99), int(h * 0.13)), fill=(26, 40, 82))
 
-    # 3) Paint sky color through mask (opaque where mask strong)
-    sky_layer = Image.new("RGB", (w, h), sky_color)
-    # Soft moon disc near top-center of scrub region if no bright moon already
-    moon_box = (int((x0 + x1) / 2) - 22, y0 + 8, int((x0 + x1) / 2) + 22, y0 + 52)
-    moon_crop = rgb.crop(
-        (
-            max(0, moon_box[0] - 40),
-            max(0, moon_box[1] - 10),
-            min(w, moon_box[2] + 40),
-            min(h, moon_box[3] + 30),
-        )
-    )
-    bright = sum(
-        1
-        for p in moon_crop.getdata()
-        if p[0] > 200 and p[1] > 200 and p[2] > 185 and (p[0] + p[1] + p[2]) > 620
-    )
-    md = ImageDraw.Draw(sky_layer)
-    if bright < 120:
-        cx = (moon_box[0] + moon_box[2]) // 2
-        cy = (moon_box[1] + moon_box[3]) // 2
-        rad = max(16, int(min(w, h) * 0.028))
-        md.ellipse((cx - rad, cy - rad, cx + rad, cy + rad), fill=(236, 236, 248))
-        for sx, sy in (
-            (cx - rad * 3, cy + 6),
-            (cx + rad * 2, cy - 4),
-            (cx + rad, cy + rad + 10),
-        ):
-            if x0 <= sx < x1 and y0 <= sy < y1:
-                md.ellipse((sx, sy, sx + 2, sy + 2), fill=(220, 225, 240))
-
-    out = Image.composite(sky_layer, rgb, mask)
-
-    # 4) If glow count was high, also force-fill a horizontal band under moon
-    # (catches leftover rooflines the mask missed).
-    if glow_n > 80:
-        band = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-        bd = ImageDraw.Draw(band)
-        # Lower third of sky bbox = typical house row
-        by0 = y0 + int((y1 - y0) * 0.35)
-        bd.rectangle((x0, by0, x1, y1), fill=(*sky_color, 210))
-        # Re-mask band by only painting where original still looks like house/glow
-        band_rgb = Image.new("RGB", (w, h), sky_color)
-        band_mask = Image.new("L", (w, h), 0)
-        bmp = band_mask.load()
-        for y in range(by0, y1):
-            for x in range(x0, x1):
-                r, g, b = pix[x, y]
-                if _is_house_glow(r, g, b) or _is_house_body(r, g, b):
-                    bmp[x, y] = 255
-                # also mid-brown roofs
-                elif 40 < r < 140 and 25 < g < 110 and b < 90 and r > b + 15:
-                    bmp[x, y] = 200
-        band_mask = band_mask.filter(ImageFilter.MaxFilter(13))
-        band_mask = band_mask.filter(ImageFilter.GaussianBlur(radius=2.0))
-        out = Image.composite(band_rgb, out, band_mask)
-
-    return out.convert("RGB")
-
-
-def save_scrub(src: Path, dest: Path) -> None:
-    im = Image.open(src)
-    out = scrub_window_sky(im)
     dest.parent.mkdir(parents=True, exist_ok=True)
     out.save(dest, quality=95)
-    print(f"wrote {dest} bytes={dest.stat().st_size}", flush=True)
+    print(f"wrote {dest.name} box=({x0},{y0},{x1},{y1}) bytes={dest.stat().st_size}", flush=True)
 
 
 def main() -> None:
@@ -197,33 +96,40 @@ def main() -> None:
         grab(ROUGH, 40.0, FAIL / "rough_t40_periodic_table.jpg")
         grab(ROUGH, 45.0, FAIL / "rough_t45_empty_seats.jpg")
 
-    save_scrub(FAIL / "05_fail_t4.jpg", STILLS / "05_columns_scrub_i2v.jpg")
-    save_scrub(FAIL / "05_fail_t1.jpg", STILLS / "05_columns_scrub_alt.jpg")
-    save_scrub(FAIL / "rough_t40_periodic_table.jpg", STILLS / "05_columns_scrub_from_rough.jpg")
+    # Full-width opaque window cover (houses leaked on right with smaller boxes).
+    box05 = (0.12, 0.00, 0.95, 0.55)
+    hard_scrub_window(FAIL / "05_fail_t4.jpg", STILLS / "05_columns_scrub_i2v.jpg", box05)
+    hard_scrub_window(FAIL / "05_fail_t1.jpg", STILLS / "05_columns_scrub_alt.jpg", box05)
 
-    # Prefer clean desk_columns still (already night-sky) as extra start option
-    clean_cols = STILLS_V01 / "desk_columns.jpg"
-    if clean_cols.exists():
-        # Still run scrub in case of faint leak
-        save_scrub(clean_cols, STILLS / "05_desk_columns_clean.jpg")
+    box_r = (0.15, 0.00, 0.92, 0.52)
+    hard_scrub_window(
+        FAIL / "rough_t40_periodic_table.jpg",
+        STILLS / "05_columns_scrub_from_rough.jpg",
+        box_r,
+        strip_label=True,
+    )
 
-    explorer_src = STILLS_V01 / "explorer_on_desk.jpg"
-    if not explorer_src.exists():
-        explorer_src = FAIL / "06_fail_t4.jpg"
-    save_scrub(explorer_src, STILLS / "06_explorer_scrub_i2v.jpg")
+    explorer = STILLS_V01 / "explorer_on_desk.jpg"
+    if explorer.exists():
+        hard_scrub_window(
+            explorer,
+            STILLS / "06_explorer_scrub_i2v.jpg",
+            (0.48, 0.00, 0.995, 0.45),
+            moon_frac=(0.78, 0.10),
+        )
     if (FAIL / "06_fail_t7.jpg").exists():
-        save_scrub(FAIL / "06_fail_t7.jpg", STILLS / "06_explorer_scrub_alt.jpg")
+        hard_scrub_window(
+            FAIL / "06_fail_t7.jpg",
+            STILLS / "06_explorer_scrub_alt.jpg",
+            (0.40, 0.00, 0.995, 0.48),
+            moon_frac=(0.75, 0.10),
+        )
 
-    dna = STILLS_V01 / "desk_dna_t4.jpg"
-    if dna.exists():
-        save_scrub(dna, STILLS / "desk_dna_scrub_t4.jpg")
-
-    # QA copies
+    # QA previews
     for name in (
         "05_columns_scrub_i2v.jpg",
         "05_columns_scrub_from_rough.jpg",
         "06_explorer_scrub_i2v.jpg",
-        "05_desk_columns_clean.jpg",
     ):
         src = STILLS / name
         if src.exists():

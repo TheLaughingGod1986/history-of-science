@@ -58,9 +58,12 @@ REJECT = (
 )
 
 WINDOW_LOCK = (
-    "Through the lab window: deep night sky with moon and faint stars ONLY. "
-    "NO houses. NO glowing yellow windows outside. NO miniature town. "
-    "NO toy building blocks on the exterior ledge."
+    "Through the lab window exterior: deep empty night sky with ONE moon and a "
+    "handful of faint stars ONLY. The outdoor view must be completely EMPTY of "
+    "architecture — no houses, no buildings, no chimneys, no rooftops, no village, "
+    "no town, no model-town, no miniature houses, no glowing yellow rectangular "
+    "windows outside, no toy house-blocks, no silhouettes of homes on a snowy "
+    "ledge. Sky + moon + stars only. Do not invent any structure outside the glass."
 )
 
 PROMPT_05 = (
@@ -114,8 +117,8 @@ DEFAULT_ONLY = ("05_columns_families", "06_explorer_leaves_gap")
 ALLOWED_ONLY = set(DEFAULT_ONLY)
 
 START_FRAMES = {
-    "05_primary": STILLS / "05_columns_scrub_i2v.jpg",
-    "05_alt": STILLS / "05_columns_scrub_alt.jpg",
+    "05_primary": STILLS / "05_columns_scrub_strong.jpg",
+    "05_alt": STILLS / "05_columns_scrub_i2v.jpg",
     "05_rough": STILLS / "05_columns_scrub_from_rough.jpg",
     "06_primary": STILLS / "06_explorer_scrub_i2v.jpg",
     "06_alt": STILLS / "06_explorer_scrub_alt.jpg",
