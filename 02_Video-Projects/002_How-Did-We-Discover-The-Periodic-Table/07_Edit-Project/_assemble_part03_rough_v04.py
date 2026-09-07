@@ -47,9 +47,10 @@ SIDE_LABELS = [
     (37.0, 48.0, "MASS LINE"),
     (50.0, 58.0, "PROPERTY WAVES"),
     (60.0, 68.0, "A PREDICTION"),
-    # EMPTY CHAIR covers reminted 09 + skipped-10 slot (both are chair now)
-    (70.0, 78.0, "EMPTY CHAIR"),
-    (80.0, 85.5, "FIX THE WEIGHTS"),
+    # EMPTY CHAIR only while chair is on screen (09 + skipped-10 reuse).
+    # Plate 11 (fix weights) starts ~76.5 — end label before that cut.
+    (70.0, 76.4, "EMPTY CHAIR"),
+    (76.6, 85.5, "FIX THE WEIGHTS"),
     (85.5, 89.7, "CHAOS HAS ADDRESS"),
 ]
 
