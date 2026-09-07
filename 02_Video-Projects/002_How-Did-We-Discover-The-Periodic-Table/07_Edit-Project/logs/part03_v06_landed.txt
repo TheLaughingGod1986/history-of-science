@@ -1,0 +1,12 @@
+LANDED hos_002_part03_rough_v06.mp4
+path=/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v06.mp4
+bytes=81156184
+duration=89.680
+sha256=1266d5b05b130bab2f85b6f768656d91559f568b79954a6897c95cba31064fc3
+parent_v05_sha=3642d00563129a88b93b042936da0e1aad0f8a123914e3d979f1b86754c8f049
+remint=03_method_pamphlet(+optional 04_zoo_gets_ruler) props only
+keep=05_explorer_v05,09_empty_chair_v04,rest_v02
+engine=flow-veo-3.1-fast T2V_fallback (I2V Add-to-Prompt flaky)
+auth=benoats@googlemail.com /u/1/ ULTRA
+icloud=HOS UAT/hos_002_part03_rough_v06.mp4
+scores=PART03_V06_COS_SCORES.md → CoS only; do not declare PASS; no P04

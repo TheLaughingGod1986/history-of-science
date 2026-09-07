@@ -1,0 +1,61 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v06_fast",
+  "continuity": "atomic_weights_props_i2v_partial_v06",
+  "source_keep_v02": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v02_fast",
+  "parent_pass_v05_sha_prefix": "3642d005",
+  "only": [
+    "04_zoo_gets_ruler"
+  ],
+  "keep_explorer_v05": true,
+  "keep_empty_chair_v04": true,
+  "plates": [
+    {
+      "id": "03_method_pamphlet",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v06_fast/03_method_pamphlet_v06.mp4",
+      "duration": 8.0,
+      "kind": "T2V_fallback",
+      "start_frame": null,
+      "seconds": 51.5,
+      "bytes": 1260523,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:1260523",
+      "url": "https://flow.google.com/u/1/project/b212f2a4-7f04-4346-8874-ba8160690248",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/b212f2a4-7f04-4346-8874-ba8160690248",
+      "i2v_fallback_t2v": true,
+      "i2v_error": "Flow never enabled Add to Prompt after start-frame upload"
+    },
+    {
+      "id": "04_zoo_gets_ruler",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v06_fast/04_zoo_gets_ruler_v06.mp4",
+      "duration": 8.0,
+      "kind": "T2V_fallback",
+      "start_frame": null,
+      "seconds": 51.1,
+      "bytes": 7625248,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:7625248",
+      "url": "https://flow.google.com/u/1/project/15624fbe-5a3e-4788-9605-131e5a985c0f",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/15624fbe-5a3e-4788-9605-131e5a985c0f",
+      "i2v_fallback_t2v": true,
+      "i2v_error": "Flow never enabled Add to Prompt after start-frame upload"
+    }
+  ],
+  "flow_account": "benoats@googlemail.com"
+}
