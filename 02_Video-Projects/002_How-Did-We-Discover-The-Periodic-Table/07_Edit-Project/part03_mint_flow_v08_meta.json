@@ -1,0 +1,58 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v08_fast",
+  "continuity": "scrub_model_town_blocks_v08",
+  "parent_v07_sha_prefix": "f39d794e",
+  "only": [
+    "08_property_waves",
+    "10_city_plan_lots"
+  ],
+  "keep_empty_chair_v04": true,
+  "keep_explorer_v05": true,
+  "keep_03_method_pamphlet_v07": true,
+  "plates": [
+    {
+      "id": "08_property_waves",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v08_fast/08_property_waves_v08.mp4",
+      "duration": 8.0,
+      "kind": "T2V_forced",
+      "start_frame": null,
+      "seconds": 52.4,
+      "bytes": 3665320,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:3665320",
+      "url": "https://flow.google.com/u/1/project/111872c0-144b-4e22-af51-33c86e07924a",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/111872c0-144b-4e22-af51-33c86e07924a"
+    },
+    {
+      "id": "10_city_plan_lots",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v08_fast/10_city_plan_lots_v08.mp4",
+      "duration": 8.0,
+      "kind": "T2V_forced",
+      "start_frame": null,
+      "seconds": 51.5,
+      "bytes": 1465969,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:1465969",
+      "url": "https://flow.google.com/u/1/project/254b4923-e531-4ede-896e-3cbc529afa8a",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/254b4923-e531-4ede-896e-3cbc529afa8a"
+    }
+  ],
+  "flow_account": "benoats@googlemail.com"
+}
