@@ -287,8 +287,8 @@ def run_harvest(dest: Path, project_url: str, *, before_thumbs: int = -1) -> Non
         raise SystemExit(
             f"STOP: refuse harvest — not a Flow project URL: {project_url!r}"
         )
-    settle = int(os.environ.get("HOS_FLOW_HARVEST_SETTLE_S", "55"))
-    wait_s = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "200"))
+    settle = int(os.environ.get("HOS_FLOW_HARVEST_SETTLE_S", "90"))
+    wait_s = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "360"))
     print(f"  settle {settle}s then harvest wait_s={wait_s}", flush=True)
     time.sleep(settle)
     env = dict(os.environ)
@@ -321,14 +321,27 @@ def probe_dur(path: Path) -> float:
 def resolve_start_frame(pid: str) -> Path:
     if pid != "03_method_pamphlet":
         raise SystemExit(f"STOP: unexpected plate {pid}")
-    preferred = [
-        START_FRAMES["03_desk_midair"],
-        START_FRAMES["03_desk_midair_t2"],
-        START_FRAMES["03_swirl_midair"],
-        START_FRAMES["03_fail_swirl"],
-        START_FRAMES["03_desk_keep"],
-        START_FRAMES["03_fail_desk_v06"],
-    ]
+    # Prefer full-res FAIL swirl (1920) for mid-air H/C/O; desk KEEP stills as alts.
+    # HOS_V07_START=desk|swirl overrides default order.
+    prefer = os.environ.get("HOS_V07_START", "swirl").strip().lower()
+    if prefer == "desk":
+        preferred = [
+            START_FRAMES["03_desk_midair"],
+            START_FRAMES["03_desk_midair_t2"],
+            START_FRAMES["03_fail_swirl"],
+            START_FRAMES["03_swirl_midair"],
+            START_FRAMES["03_desk_keep"],
+            START_FRAMES["03_fail_desk_v06"],
+        ]
+    else:
+        preferred = [
+            START_FRAMES["03_fail_swirl"],
+            START_FRAMES["03_swirl_midair"],
+            START_FRAMES["03_desk_midair"],
+            START_FRAMES["03_desk_midair_t2"],
+            START_FRAMES["03_desk_keep"],
+            START_FRAMES["03_fail_desk_v06"],
+        ]
     for path in preferred:
         if path.exists() and path.stat().st_size > 20_000:
             print(f"  I2V start_frame={path}", flush=True)
@@ -355,13 +368,34 @@ def t2v_prompt(pid: str) -> str:
     )
 
 
+def _truthy(name: str) -> bool:
+    return os.environ.get(name, "").strip().lower() in {"1", "true", "yes", "on"}
+
+
 def main() -> None:
-    if os.environ.get("HOS_FLOW_SKIP_I2V", "").strip().lower() in {"1", "true", "yes"}:
+    if _truthy("HOS_FLOW_SKIP_I2V"):
         print(
             "  WARN: unsetting HOS_FLOW_SKIP_I2V — v07 prefers marked-props I2V",
             flush=True,
         )
         os.environ.pop("HOS_FLOW_SKIP_I2V", None)
+
+    # Login shells on Mini often export HOS_FLOW_I2V_ONLY=1 (blocks T2V fallback).
+    # When this job asks for T2V_ONLY (I2V gallery keeps landing stills), clear I2V_ONLY.
+    if _truthy("HOS_FLOW_T2V_ONLY") and _truthy("HOS_FLOW_I2V_ONLY"):
+        print(
+            "  WARN: HOS_FLOW_T2V_ONLY wins — unsetting HOS_FLOW_I2V_ONLY "
+            "(login-shell default was blocking props T2V)",
+            flush=True,
+        )
+        os.environ.pop("HOS_FLOW_I2V_ONLY", None)
+
+    print(
+        f"  env T2V_ONLY={os.environ.get('HOS_FLOW_T2V_ONLY')!r} "
+        f"I2V_ONLY={os.environ.get('HOS_FLOW_I2V_ONLY')!r} "
+        f"FORCE_REMINT={os.environ.get('HOS_FLOW_FORCE_REMINT')!r}",
+        flush=True,
+    )
 
     argv = [a for a in sys.argv[1:] if not a.startswith("-")]
     only = set(argv) if argv else set(DEFAULT_ONLY)
@@ -444,8 +478,16 @@ def main() -> None:
 
                 prompt = prompt_for(pid)
                 kind = "I2V"
-                print(f"\n=== Fast {kind} {pid} ({i+1}/{len(plates)}) ===", flush=True)
-                print(f"  start_frame={start}", flush=True)
+                force_t2v = _truthy("HOS_FLOW_T2V_ONLY")
+                print(
+                    f"\n=== Fast {'T2V' if force_t2v else kind} {pid} "
+                    f"({i+1}/{len(plates)}) force_t2v={force_t2v} ===",
+                    flush=True,
+                )
+                if not force_t2v:
+                    print(f"  start_frame={start}", flush=True)
+                else:
+                    print("  start_frame: (none — T2V props Fast)", flush=True)
 
                 try:
                     _ = page.url
@@ -458,23 +500,45 @@ def main() -> None:
                 tmp.unlink(missing_ok=True)
                 info = None
                 i2v_err: Exception | None = None
-                try:
-                    info = flow.generate_clip(
-                        page,
-                        prompt,
-                        tmp,
-                        model=MODEL,
-                        start_frame=start,
-                        scenery_only=False,
-                        reuse_project=False,
-                        attempts=1,
-                        timeout_s=240,
+                if force_t2v:
+                    print(
+                        "  HOS_FLOW_T2V_ONLY — props T2V Fast (no Ken Burns; I2V Frames disabled)",
+                        flush=True,
                     )
-                except Exception as e:
-                    i2v_err = e
-                    info = None
+                    try:
+                        info = flow.generate_clip(
+                            page,
+                            t2v_prompt(pid),
+                            tmp,
+                            model=MODEL,
+                            start_frame=None,
+                            scenery_only=True,
+                            reuse_project=False,
+                            attempts=2,
+                            timeout_s=240,
+                        )
+                        kind = "T2V_forced"
+                    except Exception as e:
+                        i2v_err = e
+                        info = None
+                else:
+                    try:
+                        info = flow.generate_clip(
+                            page,
+                            prompt,
+                            tmp,
+                            model=MODEL,
+                            start_frame=start,
+                            scenery_only=False,
+                            reuse_project=False,
+                            attempts=1,
+                            timeout_s=240,
+                        )
+                    except Exception as e:
+                        i2v_err = e
+                        info = None
 
-                if info is None and start is not None:
+                if info is None and start is not None and not force_t2v:
                     elow = str(i2v_err or "").lower()
                     attach_fail = any(
                         x in elow
