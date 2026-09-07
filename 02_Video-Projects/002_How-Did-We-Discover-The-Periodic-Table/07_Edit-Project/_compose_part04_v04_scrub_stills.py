@@ -20,13 +20,13 @@ FAIL = STILLS / "ben_fail"
 ROUGH = PROJ / "09_Final-Export/hos_002_part04_rough_v03.mp4"
 QA = PROJ / "07_Edit-Project/_qa_part04_v04_spot"
 
-# Hard rectangular book-top cover on 02b (measured from v01 plate + rough ~18–21)
-BOOK_BOX = (0.66, 0.32, 0.94, 0.62)
+# Hard rectangular book-top cover on 02b — must cover yellow house icons ON the stack
+BOOK_BOX = (0.62, 0.18, 0.98, 0.58)
 
-# Window glass on glowing-chair beat — leave chair glow intact (lower-right)
-WIN_09 = (0.18, 0.00, 0.82, 0.52)
-WIN_09B = (0.12, 0.00, 0.92, 0.55)
-WIN_ROUGH = (0.20, 0.00, 0.78, 0.50)
+# Window glass on glowing-chair beat — cover sill/town line; leave chair glow (lower-right)
+WIN_09 = (0.14, 0.00, 0.88, 0.58)
+WIN_09B = (0.08, 0.00, 0.96, 0.60)
+WIN_ROUGH = (0.16, 0.00, 0.84, 0.56)
 
 
 def grab(src: Path, ss: float, dest: Path) -> None:
@@ -187,7 +187,7 @@ def main() -> None:
         rect_leather_book_top(
             FAIL / "rough_t19.jpg",
             STILLS / "02b_books_clean_from_rough.jpg",
-            box_frac=(0.62, 0.30, 0.92, 0.60),
+            box_frac=(0.58, 0.22, 0.95, 0.58),
         )
 
     # --- B) A BET window: sky only, chair glow stays ---

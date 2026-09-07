@@ -14,7 +14,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
 
-BOOK_BOX = (0.66, 0.32, 0.94, 0.62)
+BOOK_BOX = (0.62, 0.18, 0.98, 0.58)
 
 
 def probe_dur(path: Path) -> float:
