@@ -1,0 +1,4 @@
+path=/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v06.mp4
+bytes=88140641
+duration=89.680000
+sha256=2122456781bc5cabc6b7fb30f83fe091ae4affe14ae440a4d215e6da3a50a24f

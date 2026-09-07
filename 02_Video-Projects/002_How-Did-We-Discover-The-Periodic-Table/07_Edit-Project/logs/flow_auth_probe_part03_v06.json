@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "flow_home": "https://flow.google.com/u/1/",
+  "profile": "/Users/benjaminoats/.playwright-hos-flow-profile",
+  "emails": [
+    "benoats@googlemail.com"
+  ],
+  "active": "benoats@googlemail.com",
+  "url": "https://flow.google.com/u/1/",
+  "credits_probe": [
+    "ULTRA"
+  ]
+}
