@@ -1,25 +1,26 @@
-# Part 03 lessons — Periodic Table 002 (wait for v09 · not LOCKED)
+# Part 03 lessons — Periodic Table 002 (LOCKED on v09)
 
 **Date:** 2026-09-07  
 **Channel:** **@HistoryOfScienceYT only**  
-**Status:** **Ben clarify** — wait for **v09** before PASS/KEEP. **No LOCK** until v09 UAT PASS **and** Ben re-confirms. Hold P04. Earlier “this part is a pass” does **not** lock v08.
+**Status:** **LOCKED (CoS)** on `hos_002_part03_rough_v09` · sha256 `30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e`. Supersedes wait-for-v09 / Ben-clarify gate. **P04 unlocked.** P05 blocked until P04 PASS.
 
-Docs only. No remint · no mint · no upload · no Mini path/sha invent · no Flow · no Studio · no Orbit / Oppti from this file. Path + sha live on Picture / Mini inventory — do not invent them here.
+Docs only. No remint · no mint · no upload · no Mini path invent · no Flow · no Studio · no Orbit / Oppti from this file. P03 sha is locked above; path lives on Picture / Mini inventory.
 
 | Doc | Role |
 |---|---|
 | `production-status.md` | Desk board |
 | `README.md` | Episode pointer |
-| `07_Edit-Project/PART03_KEEP_AND_LOCK_GATE.md` | Canonical lock gate (supersedes earlier pass/KEEP wording) |
+| `07_Edit-Project/PART03_KEEP_AND_LOCK_GATE.md` | Canonical lock gate — **LOCKED** on v09 · P04 unlocked |
 | `00_Brand/Brand-Guidelines/HOS_HOUSE_VO_AND_TEACH_LOCK.md` | VO clarity + teach for Part 04+ (not a P03 remint) |
 
 ## Board state (this minute)
 
 | Gate | Call |
 |---|---|
-| Ben | Wait for **v09** before PASS/KEEP. Provisional KEEP-through-scrub only (not a lock) — see gate doc |
-| CoS / LOCK | **No LOCK** until v09 UAT PASS **and** Ben re-confirms |
-| P04–P05 | **HOLD** — no P04 brief/mint until that LOCK |
+| Cut | `hos_002_part03_rough_v09` · sha256 `30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e` |
+| CoS / LOCK | **LOCKED** (7 Sep 2026) |
+| P04 | **Unlocked** — brief/mint may proceed |
+| P05 | **Blocked** until P04 PASS |
 | Moon Leaving | Waits |
 
 ## House locks (Part 03 + going-forward 002)
@@ -56,24 +57,21 @@ Do **not** rewrite shipped P03 VO for the VO/teach house note unless Ben asks.
 | Model-town / glowing house-blocks / desk toys after empty chair | Reads as toy city — use flat plan / papers only |
 | Blank-props over teachable VO numbers | Ben override: readable numbers when the line teaches |
 | Ben KEEP ping before UAT PASS · KEEP left up after amend FAIL | Withdraw the ping on FAIL; ping only after PASS |
-| Treating earlier “pass” as lock of v08 / opening P04 | Gate: wait for v09 + Ben re-confirm |
 
 ## Fix order (blocking)
 
-1. Finish **P03 v09 scrub** (`10_city_plan_lots` — flat postcard / papers only; no house icons / glowing blocks)
-2. Land `hos_002_part03_rough_v09` → **UAT** → scores to CoS
-3. CoS pings Ben → **LOCK only after Ben re-confirms** on v09
-4. Then **P04** brief/mint (not before)
-5. **Moon Leaving** waits
+1. **P04** brief → mint → UAT (house VO/teach lock applies)
+2. After **P04 PASS** → **P05** brief/mint
+3. **Moon Leaving** waits
 
 ## Do not
 
-- Call P03 **LOCKED** before v09 UAT PASS **and** Ben re-confirms
-- Start **P04 / P05** brief or picture before that LOCK
+- Remint **P03** (LOCKED on v09)
+- Start **P05** brief or picture before **P04 PASS**
 - Remint P01 / P02
-- Invent Mini paths or cut hashes in this file
+- Invent Mini paths in this file
 - Upload · Studio · Orbit / Oppti from lessons
 
 ## Next
 
-Finish **v09 scrub** → UAT → Ben re-confirm LOCK. Board: `production-status.md`. Gate: `07_Edit-Project/PART03_KEEP_AND_LOCK_GATE.md`. Hold P04 until that LOCK.
+**P04** brief/mint. Board: `production-status.md`. Gate: `07_Edit-Project/PART03_KEEP_AND_LOCK_GATE.md`. P05 waits on P04 PASS.
