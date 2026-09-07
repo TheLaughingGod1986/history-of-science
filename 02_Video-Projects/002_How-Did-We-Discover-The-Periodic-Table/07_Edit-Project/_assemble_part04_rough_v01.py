@@ -32,6 +32,7 @@ XFADE = 0.35
 BED_VOL = 0.38
 CLIP_USE = 7.9
 
+# Ordered for spoken-meaning lock (VO align): Explorer @ ~45s = EMPTY SEATS.
 PLATE_ORDER = [
     "01_chapter_empty_chairs",
     "02_mendeleev_desk_cards",
@@ -39,8 +40,8 @@ PLATE_ORDER = [
     "03_what_is_element",
     "04_sort_atomic_weight",
     "05_columns_families",
-    "05b_families_settle",
     "06_explorer_leaves_gap",
+    "05b_families_settle",
     "07_eka_placeholders",
     "07b_eka_names_rotate",
     "08_prediction_navigation",
