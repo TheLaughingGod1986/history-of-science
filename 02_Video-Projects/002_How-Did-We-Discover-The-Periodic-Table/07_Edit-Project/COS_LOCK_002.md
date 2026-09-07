@@ -8,7 +8,7 @@ Source: **Ben GO** for Part 03 mint (6 Sep). P01 v14 PASS · P02 v06 LOCKED. Do 
 |---|---|
 | Part 01 | **LOCKED PASS** `hos_002_part01_rough_v14.mp4` — do not remint / overwrite |
 | Part 02 | **LOCKED** `hos_002_part02_rough_v06.mp4` — do not remint / overwrite |
-| Part 03 | **Mint OPEN but BLOCKED** — Flow + Gemini credits dry (see `PART03_STATUS.md`) |
+| Part 03 | **ROUGH v02 LANDED** — hall continuity remint (see `PART03_STATUS.md`) |
 | Part 04 | Do **not** start |
 
 ## HOLD (still applies)
