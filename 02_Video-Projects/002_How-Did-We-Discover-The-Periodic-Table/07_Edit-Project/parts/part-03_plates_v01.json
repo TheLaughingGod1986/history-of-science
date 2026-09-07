@@ -1,7 +1,7 @@
 {
   "part": 3,
   "title": "A Ruler for Atoms",
-  "status": "remint_v02_hall_continuity_lock",
+  "status": "remint_v03_plates_09_10_only",
   "quality_gate": "07_Edit-Project/FILM002_QUALITY_GATE_FROM_PART02.md",
   "clip_use_s": 8.0,
   "xfade_s": 0.35,
@@ -84,16 +84,18 @@
       "kind": "scenery",
       "explorer": false,
       "i2v": true,
-      "start_frame_key": "hall_dna_t4",
-      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this exact congress hall. Among the warm wooden benches/chairs of THIS hall, one middle seat glows empty on purpose while neighbouring blank cream cards sit occupied. Slow continuous push-in on the vacant glowing chair. Stay INSIDE this hall — no ornate ballroom reset, no fresco gallery. Stylised 3D cartoon. Silent. Wonder not horror. No people. No Orbit. No full-screen text. HARD REJECT: chandelier, blackboard, fresco, different furniture set, photoreal, Ken Burns only."
+      "start_frame_key": "empty_chair_i2v",
+      "remint_v03": true,
+      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this EXACT plate-01 congress-hall DNA: warm honey oak panels, tall arched windows with soft volumetric daylight, blank cream pamphlets on wooden benches, clear central aisle. A single vacant wooden armchair sits IN THE AISLE and glows empty on purpose (warm gold glow in the backrest) — like a prediction claim. Continuous slow push-in toward the glowing empty chair. Neighbouring benches keep blank cream pamphlets. Stay INSIDE this hall — camera moves only; do NOT reset furniture layout; do NOT invent a new room. Stylised 3D cartoon Animistry. Silent. Wonder not horror. No people. No Orbit. No full-screen text. HARD REJECT: model-town, chandelier, blackboard, fresco, circular amphitheatre reset, different furniture set, photoreal, Ken Burns only."
     },
     {
       "id": "10_city_plan_lots",
       "kind": "scenery",
       "explorer": false,
       "i2v": true,
-      "start_frame_key": "hall_dna_t1",
-      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this exact hall DNA visible around the action. On a honey-oak bench/desk INSIDE this congress hall (not a separate model-town set), a miniature wooden city-plan of matter appears — streets of blank cards, tiny house blocks, glowing vacant lots. Continuous camera drift over the model as vacant lots pulse; hall arched windows and honey oak remain in frame. Stylised 3D cartoon. Silent. No readable street names. No people. No Orbit. HARD REJECT: separate model-town world, outdoor town, chandelier ballroom, blackboard classroom, fresco gallery, photoreal still, Ken Burns only."
+      "start_frame_key": "postcard_plan_i2v",
+      "remint_v03": true,
+      "prompt": "IMAGE-TO-VIDEO from attached Karlsruhe hall start frame. KEEP this EXACT plate-01 congress-hall DNA visible (honey oak, arched windows, wooden benches, blank cream pamphlets). On an EXISTING hall desk/bench ONLY, a TINY postcard-scale wooden city-plan of matter rests — palm-sized, flat postcard prop, not a floor model. Tiny blank house blocks and a few glowing vacant lots on that postcard only. Continuous gentle camera drift/push toward the postcard on the desk; hall architecture stays in frame. Stylised 3D cartoon Animistry. Silent. No readable street names. No people. No Orbit. HARD REJECT: wooden model-town sprawl, large floor town, outdoor town, separate model-town set/world, chandelier ballroom, blackboard classroom, fresco gallery, layout reset, photoreal still, Ken Burns only."
     },
     {
       "id": "11_fix_weights",
