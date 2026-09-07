@@ -1,0 +1,10 @@
+LANDED hos_002_part03_rough_v04.mp4
+path=/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v04.mp4
+bytes=87431420
+sha256=ea5a554ce78083927633a9a482dd45f0531e9d1dd6eff7016e5f5cf2c9a4d442
+duration=89.680
+parent_fail_v03_sha=b9180ca94ee1b155f008695c418fbcaa5dabcdc09d34dc55abe3c6d17cc4ee18
+remint=09_empty_chair_claim_v04
+skip_under_empty_chair=10_city_plan_lots
+empty_chair_label=70.0-76.4
+flow_account=benoats@googlemail.com
