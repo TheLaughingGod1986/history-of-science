@@ -339,10 +339,11 @@ def probe_dur(path: Path) -> float:
 
 def resolve_start_frame(pid: str) -> Path:
     if pid == "03_method_pamphlet":
+        # Prefer desk-hero marked stills (no baked side-label). Skip assembled
+        # still — it has ATOMIC WEIGHTS overlay burned in.
         preferred = [
             START_FRAMES["03_desk_hero"],
             START_FRAMES["03_desk_mid"],
-            START_FRAMES["03_assembled"],
             START_FRAMES["03_swirl"],
             START_FRAMES["03_blank_desk"],
             START_FRAMES["hall_dna"],
