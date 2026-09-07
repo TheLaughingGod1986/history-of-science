@@ -105,6 +105,12 @@ DEFAULT_ONLY = ("10_city_plan_lots",)
 ALLOWED_ONLY = set(DEFAULT_ONLY)
 
 START_FRAMES = {
+    # Prefer desk-scrubbed FAIL frames (real Karlsruhe desk DNA, houses painted out)
+    "10_desk_papers": STILLS / "10_desk_scrub_papers_i2v.jpg",
+    "10_desk_flat": STILLS / "10_desk_scrub_flat_i2v.jpg",
+    "10_desk_flat_rough": STILLS / "10_desk_scrub_flat_from_rough.jpg",
+    "10_desk_flat_benfail": STILLS / "10_desk_scrub_flat_benfail.jpg",
+    # Hall-compose alts (no FAIL DNA)
     "10_flat": STILLS / "10_flat_ink_grid_i2v.jpg",
     "10_flat_alt": STILLS / "10_flat_ink_grid_alt.jpg",
     "10_papers": STILLS / "10_papers_only_i2v.jpg",
@@ -339,6 +345,10 @@ def resolve_start_frame(pid: str) -> Path:
     if pid != "10_city_plan_lots":
         raise SystemExit(f"STOP: unexpected plate {pid}")
     preferred = [
+        START_FRAMES["10_desk_papers"],
+        START_FRAMES["10_desk_flat"],
+        START_FRAMES["10_desk_flat_rough"],
+        START_FRAMES["10_desk_flat_benfail"],
         START_FRAMES["10_flat"],
         START_FRAMES["10_flat_alt"],
         START_FRAMES["10_papers"],
@@ -382,7 +392,16 @@ def t2v_prompt(*, papers: bool = False) -> str:
 
 
 def alt_starts_for(start: Path) -> list[Path]:
-    keys = ["10_flat_alt", "10_papers", "10_papers_alt", "10_hall_fallback", "10_flat"]
+    keys = [
+        "10_desk_flat",
+        "10_desk_flat_rough",
+        "10_flat",
+        "10_flat_alt",
+        "10_papers",
+        "10_papers_alt",
+        "10_hall_fallback",
+        "10_desk_papers",
+    ]
     out: list[Path] = []
     for key in keys:
         path = START_FRAMES[key]

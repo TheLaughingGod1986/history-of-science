@@ -9,7 +9,7 @@
 
 | Plate | Action |
 |------|--------|
-| `10_city_plan_lots` | **REMINT v09** — flat ink postcard OR papers only |
+| `10_city_plan_lots` | **REMINT v09** — papers-only on desk (sheet option 2) |
 | `08_property_waves` | KEEP v08 |
 | EMPTY CHAIR / 03 / 05 / Karlsruhe / VO | KEEP |
 
@@ -26,16 +26,19 @@
 - EMPTY CHAIR sync + art
 - 03 swirl H/C/O · 05 Explorer teal · Karlsruhe blank
 
-## Fill after land
+## Land stats
 
 | Field | Value |
 |------|-------|
-| path | |
-| bytes | |
-| duration | |
-| sha256 | |
-| mint kind (I2V/T2V) | |
-| Flow project | |
+| path | `09_Final-Export/hos_002_part03_rough_v09.mp4` |
+| bytes | 88499232 |
+| duration | 89.680 s |
+| sha256 | `30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e` |
+| mint kind | T2V scenery Fast · papers-only (I2V left stills-only) |
+| Flow project | see `logs/mint_part03_v09_papers_t2v2_20260907.log` |
+| chair_picture | 52.01–60.01 |
+| waves≈ / city≈ | 59.66 / 67.31 |
+| HOS UAT | `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part03_rough_v09.mp4` |
 
 ## CoS scores
 
