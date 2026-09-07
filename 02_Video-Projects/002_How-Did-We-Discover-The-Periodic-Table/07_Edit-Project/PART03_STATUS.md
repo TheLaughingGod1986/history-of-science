@@ -54,3 +54,15 @@ Mini Playwright profile on **`https://flow.google.com/u/1/`** → `benoats@googl
 2. Do **not** declare PASS here — scores → CoS only
 3. Do **not** start Part 04
 4. Do not ping Ben
+
+## v06 Atomic Weights props (continue 7 Sep)
+
+- Export: `hos_002_part03_rough_v06.mp4`
+- sha256: `a1285f9a60c4090eb45aa681556f508c6ddc4217cd6f3ba448b27a53f89922de`
+- bytes: 85041901 · duration: 89.680 s
+- Engine: Flow Veo 3.1 Fast Frames Start I2V from Ben FAIL marked desk still
+- Remint: `03_method_pamphlet` only · `04` kept v02
+- KEEP: Explorer v05 · empty chair v04 · hall DNA from Ben FAIL still
+- Scores: `PART03_V06_COS_SCORES.md` → CoS only (no PASS / no P04 / no Ben ping)
+- HOS UAT: iCloud `HOS UAT/hos_002_part03_rough_v06.mp4`
+

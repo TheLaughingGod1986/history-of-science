@@ -1024,10 +1024,34 @@ def _prompt_attachment_count(page) -> int:
             const nearY = r.y >= er.y - 280 && r.bottom <= er.bottom + 100;
             const nearX = r.x >= er.x - 60 && r.x <= er.right + 60;
             const src = i.currentSrc || i.src || '';
-            const isMedia = /media\\.getMediaUrlRedirect|blob:|data:image/i.test(src);
+            const isMedia = /media\\.getMediaUrlRedirect|blob:|data:image|flow-content\\.google|googleusercontent/i.test(src);
             return nearY && nearX && isMedia;
           }).length;
         }"""
+    )
+
+
+def _start_frame_present(page) -> bool:
+    """True if Ingredients chip OR Frames Start preview is wired near the prompt."""
+    if _prompt_attachment_count(page) >= 1:
+        return True
+    return bool(
+        page.evaluate(
+            """() => {
+              const h = window.innerHeight || 800;
+              // Frames Start thumb often sits mid/lower composer; gallery tiles are higher.
+              const imgs = [...document.querySelectorAll('img')].filter(i => {
+                const r = i.getBoundingClientRect();
+                const src = i.currentSrc || i.src || '';
+                if (r.width < 28 || r.height < 28 || r.width > 420) return false;
+                if (r.y < 80) return false;
+                // Prefer lower-half (Start slot / chip); allow mid for taller windows.
+                if (r.y < h * 0.35) return false;
+                return /flow-content\\.google|googleusercontent|blob:|media\\.getMediaUrlRedirect/i.test(src);
+              });
+              return imgs.length > 0;
+            }"""
+        )
     )
 
 
@@ -1254,22 +1278,29 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
                 fi.last.set_input_files(str(ref))
 
     print("  uploaded — waiting for Add to Prompt…", flush=True)
-    # Upload consent dialog (Sep 2026 Flow): Cancel / I agree
-    for _ in range(3):
-        agree = page.get_by_role("button", name=re.compile(r"^I agree$", re.I))
+    # Upload consent dialog (Sep 2026 Flow): Cancel / I agree — or shorter Agree
+    # May stack with cookie "Agree / No thanks" — clear until gone.
+    for _ in range(8):
+        agree = page.get_by_role(
+            "button", name=re.compile(r"^(I agree|Agree|Accept)$", re.I)
+        )
         if agree.count() == 0:
-            agree = page.locator('button:has-text("I agree")')
+            agree = page.locator(
+                'button:has-text("I agree"), button:has-text("Agree"), '
+                'button:has-text("Accept")'
+            )
         if agree.count():
             try:
-                print("  clicking upload consent 'I agree'", flush=True)
+                label = (agree.last.inner_text(timeout=1000) or "Agree").strip()[:40]
+                print(f"  clicking upload consent {label!r}", flush=True)
                 agree.last.click(force=True, timeout=3000)
-                page.wait_for_timeout(800)
+                page.wait_for_timeout(900)
+                continue
             except Exception:
                 break
-        else:
-            break
-    # Some Flow builds auto-chip the upload; check early.
-    page.wait_for_timeout(1500)
+        break
+    # Give Flow more time to finish processing the still before Add to Prompt.
+    page.wait_for_timeout(2500)
     if _prompt_attachment_count(page) > before:
         print("  start frame auto-attached after upload", flush=True)
         ensure_agent_session(page)
@@ -1293,7 +1324,9 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
           // Fallback: click the newest/largest media thumbnail in the picker.
           const imgs = [...document.querySelectorAll('img')].filter(i => {
             const r = i.getBoundingClientRect();
-            return r.width > 48 && r.height > 48 && r.y > 80;
+            const src = i.currentSrc || i.src || '';
+            return r.width > 48 && r.height > 48 && r.y > 80 &&
+              (/flow-content\\.google|googleusercontent|blob:/i.test(src) || r.width > 120);
           });
           if (imgs.length) {
             try { imgs[imgs.length - 1].click(); return true; } catch (e) {}
@@ -1304,29 +1337,111 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
     )
     page.wait_for_timeout(500)
 
-    enabled = _wait_add_to_prompt_enabled(page, timeout_s=45)
+    # Sep 2026 HOS: Ingredients "Add to Prompt" often never enables.
+    # Prefer Frames Start slot FIRST (proven on Mini), then Animate, then chip.
+    print("  trying Frames Start slot first…", flush=True)
+    try:
+        configure_veo_settings(
+            page,
+            model=os.environ.get("ORBIT_FLOW_VEO_MODEL", DEFAULT_MODEL),
+            frames_mode=True,
+            ingredients_mode=False,
+        )
+    except Exception as e:
+        print(f"  frames settings warn: {e}", flush=True)
+    start_btn = page.get_by_role("button", name=re.compile(r"^Start$", re.I))
+    if start_btn.count() == 0:
+        start_btn = page.locator('button:has-text("Start")')
+    if start_btn.count():
+        try:
+            start_btn.last.click(force=True, timeout=4000)
+            page.wait_for_timeout(700)
+        except Exception:
+            pass
+    clicked = page.evaluate(
+        """() => {
+          const imgs = [...document.querySelectorAll('img')].filter(i => {
+            const r = i.getBoundingClientRect();
+            const src = i.currentSrc || i.src || '';
+            return r.width > 80 && r.height > 60 &&
+              /flow-content\\.google|googleusercontent|blob:/i.test(src);
+          });
+          if (!imgs.length) return false;
+          try { imgs[imgs.length - 1].click(); return true; } catch (e) { return false; }
+        }"""
+    )
+    print(f"  frames tile click={clicked}", flush=True)
+    page.wait_for_timeout(800)
+    for pattern in (
+        r"Add to Prompt",
+        r"Use as start",
+        r"Set as start",
+        r"Use selected",
+        r"^Use$",
+        r"^Add$",
+    ):
+        loc = page.get_by_role("button", name=re.compile(pattern, re.I))
+        if loc.count():
+            try:
+                # Only click enabled Add to Prompt
+                if "Add to Prompt" in pattern:
+                    st = page.evaluate(
+                        """() => {
+                          const btns = [...document.querySelectorAll('button')].filter(b =>
+                            /Add to Prompt/i.test((b.innerText || '').trim())
+                          );
+                          if (!btns.length) return {found:false, disabled:true};
+                          const b = btns[btns.length-1];
+                          return {
+                            found:true,
+                            disabled: !!(b.disabled || b.getAttribute('aria-disabled')==='true')
+                          };
+                        }"""
+                    )
+                    if not st.get("found") or st.get("disabled"):
+                        continue
+                loc.last.click(force=True, timeout=3000)
+                page.wait_for_timeout(1200)
+                print(f"  clicked frames CTA {pattern!r}", flush=True)
+                break
+            except Exception:
+                continue
+    if _start_frame_present(page) or _prompt_attachment_count(page) > before:
+        ensure_agent_session(page)
+        print("  start frame wired via Frames Start", flush=True)
+        return True
+
+    # Sep 2026: uploads can sit in "processing" for >90s before Add enables.
+    enabled = _wait_add_to_prompt_enabled(page, timeout_s=30)
     add = page.locator('button:has-text("Add to Prompt")')
     if add.count() == 0:
         add = page.get_by_role(
             "button",
-            name=re.compile(r"Add to Prompt|Add to prompt|Insert|Use selected|Add$", re.I),
+            name=re.compile(
+                r"Add to Prompt|Add to prompt|Insert|Use selected|Use as start|"
+                r"Add to (scene|project)|Attach",
+                re.I,
+            ),
         )
-    if add.count() == 0 and not enabled:
-        _dump_picker("post-upload")
-        # Last chance: attachment may already be present after thumbnail click.
-        if _prompt_attachment_count(page) > before:
-            print("  start frame attached without Add to Prompt click", flush=True)
+    if add.count() and enabled:
+        try:
+            add.last.click(force=True)
+            page.wait_for_timeout(1500)
+            if _prompt_attachment_count(page) > before or _start_frame_present(page):
+                ensure_agent_session(page)
+                print("  prompt attachment via Add to Prompt", flush=True)
+                return True
+        except Exception:
+            pass
+
+    print("  trying gallery right-click Animate…", flush=True)
+    if try_context_animate(page):
+        page.wait_for_timeout(1500)
+        if _start_frame_present(page) or _prompt_attachment_count(page) > before:
             ensure_agent_session(page)
+            print("  start frame wired via context Animate", flush=True)
             return True
-        raise RuntimeError(
-            "Flow never enabled Add to Prompt after start-frame upload"
-        )
-    try:
-        add.last.click(force=True)
-    except Exception:
-        if _prompt_attachment_count(page) <= before:
-            raise RuntimeError("Add to Prompt click failed and no chip attached")
-    page.wait_for_timeout(1500)
+        print("  Animate clicked but start frame not detected", flush=True)
 
     for _ in range(2):
         body = ""
@@ -1341,15 +1456,12 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
             break
 
     ensure_agent_session(page)
-    attached = _prompt_attachment_count(page) > before
-    if not attached:
-        page.wait_for_timeout(2000)
-        attached = _prompt_attachment_count(page) > before
-
+    attached = _prompt_attachment_count(page) > before or _start_frame_present(page)
     print(f"  prompt attachment visible={attached} (was {before})", flush=True)
     if not attached:
+        _dump_picker("post-upload")
         raise RuntimeError(
-            "Start frame did not attach to the Flow prompt — aborting."
+            "Flow never enabled Add to Prompt after start-frame upload"
         )
     return True
 
@@ -2124,6 +2236,14 @@ def harvest_agent_gallery_mp4(
         return f"{via}:{len(raw)}"
 
     def _click_download() -> bytes | None:
+        # Clear leftover menu/backdrop from prior attempts (Sep 2026 Flow).
+        try:
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(350)
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(250)
+        except Exception:
+            pass
         candidates = [
             page.get_by_role("button", name=re.compile(r"download", re.I)),
             page.locator('button[aria-label*="Download" i], [aria-label*="Download" i]'),
@@ -2152,6 +2272,32 @@ def harvest_agent_gallery_mp4(
             except Exception:
                 pass
 
+        def _menu_download_item():
+            """Flow 'Download media' opens a mat-menu — pick the video/original row."""
+            return page.evaluate(
+                """() => {
+                  const items = [...document.querySelectorAll(
+                    '[role="menuitem"], button, a, mat-menu-item, .mat-mdc-menu-item'
+                  )];
+                  const scored = [];
+                  for (const el of items) {
+                    const t = ((el.innerText || '') + ' ' + (el.getAttribute('aria-label') || ''))
+                      .trim().replace(/\\n/g, ' ');
+                    if (!t || t.length > 80) continue;
+                    const r = el.getBoundingClientRect();
+                    if (r.width < 20 || r.height < 12) continue;
+                    let score = 0;
+                    if (/\\bmp4\\b/i.test(t)) score += 5;
+                    if (/original|full.?res|video|1080|720|download/i.test(t)) score += 3;
+                    if (/image|jpeg|png|gif|still/i.test(t)) score -= 4;
+                    if (score > 0) scored.push({score, t: t.slice(0,60), x:r.x+r.width/2, y:r.y+r.height/2});
+                  }
+                  scored.sort((a,b) => b.score - a.score);
+                  if (!scored.length) return null;
+                  return scored[0];
+                }"""
+            )
+
         page.on("response", _on_resp)
         try:
             for loc in candidates:
@@ -2161,9 +2307,23 @@ def harvest_agent_gallery_mp4(
                     target = loc.first
                     if not target.is_visible():
                         continue
-                    with page.expect_download(timeout=25_000) as di:
+                    # Open download menu (often does NOT start a download itself).
+                    try:
+                        target.click(force=True, timeout=5_000)
+                    except Exception:
                         target.click(timeout=5_000)
-                    download = di.value
+                    page.wait_for_timeout(500)
+                    item = _menu_download_item()
+                    if item:
+                        print(f"  gallery download menu → {item.get('t')!r}", flush=True)
+                        with page.expect_download(timeout=30_000) as di:
+                            page.mouse.click(item["x"], item["y"])
+                        download = di.value
+                    else:
+                        # Legacy: button itself triggers download
+                        with page.expect_download(timeout=25_000) as di:
+                            target.click(force=True, timeout=5_000)
+                        download = di.value
                     tmp = dest.with_suffix(".download.tmp")
                     raw = None
                     # Prefer path() first — save_as often races viewer close.
@@ -2180,7 +2340,6 @@ def harvest_agent_gallery_mp4(
                             tmp.unlink(missing_ok=True)
                         except Exception as e:
                             print(f"  gallery Download save_as warn: {e}", flush=True)
-                            # Last chance: suggested filename may already be on disk.
                             try:
                                 sug = download.suggested_filename
                                 if sug:
@@ -2195,6 +2354,11 @@ def harvest_agent_gallery_mp4(
                         return net_hits[-1]
                 except Exception as e:
                     print(f"  gallery Download miss: {e}", flush=True)
+                    try:
+                        page.keyboard.press("Escape")
+                        page.wait_for_timeout(300)
+                    except Exception:
+                        pass
                     if net_hits:
                         return net_hits[-1]
         finally:
@@ -2685,12 +2849,14 @@ def _generate_clip_once(
     model = assert_veo3_model(model)
     ensure_agent_session(page)
     before = collect_media_ids(page)
-    # Start-frame / Orbit I2V: Ingredients mode (prompt chip), not Frames slots.
+    # HOS start-frame I2V: prefer Frames Start/End slots (Sep 2026).
+    # Ingredients chip path is flaky (Add to Prompt never enables).
+    use_frames = start_frame is not None
     configure_veo_settings(
         page,
         model=model,
-        frames_mode=False,
-        ingredients_mode=(start_frame is not None) or (not scenery_only),
+        frames_mode=use_frames,
+        ingredients_mode=(not use_frames) and ((start_frame is not None) or (not scenery_only)),
     )
     print("  post-settings…", flush=True)
     settle_after_nav(page, wait_ms=600)
@@ -2700,22 +2866,32 @@ def _generate_clip_once(
         ensure_agent_session(page)
         print("  attaching start frame…", flush=True)
         attached = attach_image_to_prompt(page, ref)
-        # HOS-proven path (2026-08-26): right-click still → Animate, then prompt.
-        # Without this, Create can accept the JPEG chip but never start Veo.
-        if try_context_animate(page):
-            configure_veo_settings(
-                page,
-                model=model,
-                frames_mode=False,
-                ingredients_mode=True,
-            )
+        # Frames Start attach is trusted. Do NOT right-click Animate afterward —
+        # it often wipes the Start slot / closes the page (Sep 2026).
+        if not attached and not _start_frame_present(page):
+            if try_context_animate(page):
+                configure_veo_settings(
+                    page,
+                    model=model,
+                    frames_mode=True,
+                    ingredients_mode=False,
+                )
+                attached = _start_frame_present(page)
         print("  setting start-frame I2V prompt…", flush=True)
         set_prompt(page, flow_prompt(prompt, start_frame_i2v=True))
-        if _prompt_attachment_count(page) < 1:
-            print("  chip missing after prompt paste — re-attaching", flush=True)
+        present = _start_frame_present(page)
+        if not present and not attached:
+            print("  start frame missing after prompt paste — re-attaching", flush=True)
             attached = attach_image_to_prompt(page, ref)
-        if _prompt_attachment_count(page) < 1:
+            present = _start_frame_present(page)
+        if not present and not attached:
             raise RuntimeError("Start-frame prompt chip missing after attach — aborting")
+        if not present and attached:
+            print(
+                "  WARN: start-frame detector unclear after prompt; "
+                "trusting prior Frames attach and submitting Create",
+                flush=True,
+            )
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (start-frame I2V)", flush=True)

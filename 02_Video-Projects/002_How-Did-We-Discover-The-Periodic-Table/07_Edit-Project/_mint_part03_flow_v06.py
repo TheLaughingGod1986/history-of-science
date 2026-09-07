@@ -57,22 +57,21 @@ STYLE = (
 )
 
 V06_PROMPT_03 = (
-    "IMAGE-TO-VIDEO from the attached start frame. KEEP this exact Karlsruhe "
-    "congress-hall DNA and camera settle (desk hero with one upright cream sheet "
-    "+ tidy stack beside it; optional brief wide aisle pamphlet swirl into the "
-    "desk settle). PROPS CHANGE ONLY: on a FEW sheets only — upright hero sheet "
-    "plus 1–2 sheets on the stack (and ≈3–6 sheets if any mid-air swirl) — keep "
-    "sparse phone-readable dark-ink marks: element symbol + whole number only, "
-    "exactly like H 1, O 16, C 12, N 14, S 32. Huge high-contrast charcoal ink on "
-    "cream so a phone can read them in clear frames. MOST sheets stay completely "
-    "BLANK so the paper chaos still reads as blank pamphlets, NOT a spreadsheet. "
+    "IMAGE-TO-VIDEO from the attached start frame. KEEP this EXACT Karlsruhe "
+    "congress-hall DNA from the still (honey oak panels, arched windows, wooden "
+    "benches/pews, same desk or aisle layout — do NOT redesign the room). "
+    "Continuous camera settle: wide aisle pamphlet swirl into desk hero with one "
+    "upright cream sheet + tidy stack OK, or hold the desk hero settle if the "
+    "start is already desk. PROPS: on a FEW sheets only — upright hero + 1–2 on "
+    "the stack (and ≈3–6 mid-air if swirling) — keep sparse phone-readable "
+    "dark-ink marks already on the start frame: H 1, O 16, C 12, N 14, S 32. "
+    "Huge high-contrast charcoal on cream. MOST sheets stay completely BLANK. "
     "NOT equations. NOT full tables. NOT paragraphs. NOT a wall of text. "
-    "Continuous slide + settle motion the whole clip. Stay inside THIS hall — "
-    "no room swap. Opaque props. Silent. Wonder not horror. "
-    "HARD REJECT: every sheet covered in text; tiny unreadable chicken-scratch; "
-    "formula walls; blackboard/chandelier/fresco; Explorer on this plate; "
-    "Orbit robot; vessel fire; faces in hero CU; photoreal; Ken Burns only; "
-    "layout reset."
+    "Continuous motion the whole clip. Opaque props. Silent. No people / no "
+    "Explorer on this plate. Wonder not horror. "
+    "HARD REJECT: every sheet covered; tiny chicken-scratch; formula walls; "
+    "room swap / new architecture; green theatre chairs redesign; microphone; "
+    "blackboard/chandelier/fresco; Orbit; vessel fire; Ken Burns only."
 )
 
 V06_PROMPT_04 = (
@@ -104,12 +103,14 @@ DEFAULT_ONLY = ("03_method_pamphlet",)
 ALLOWED_ONLY = {"03_method_pamphlet", "04_zoo_gets_ruler"}
 
 START_FRAMES = {
+    # Ben FAIL stills (7 Sep) with sparse marks composited — hall DNA lock.
+    "03_fail_desk": STILLS / "03_FAIL_desk_marked_i2v.jpg",
+    "03_fail_swirl": STILLS / "03_FAIL_swirl_marked_i2v.jpg",
     "03_desk_hero": STILLS / "03_desk_hero_marked_i2v.jpg",
     "03_desk_mid": STILLS / "03_desk_mid_marked_i2v.jpg",
-    "03_assembled": STILLS / "03_assembled_desk_marked_i2v.jpg",
     "03_swirl": STILLS / "03_swirl_marked_i2v.jpg",
     "03_blank_desk": STILLS / "03_pamphlet_v02_t65.jpg",
-    "04_swirl": STILLS / "03_swirl_marked_i2v.jpg",
+    "04_swirl": STILLS / "03_FAIL_swirl_marked_i2v.jpg",
     "04_blank": STILLS / "04_zoo_v02_t20.jpg",
     "hall_dna": STILLS_V02 / "01_hall_dna_t4.jpg",
 }
@@ -339,9 +340,10 @@ def probe_dur(path: Path) -> float:
 
 def resolve_start_frame(pid: str) -> Path:
     if pid == "03_method_pamphlet":
-        # Prefer desk-hero marked stills (no baked side-label). Skip assembled
-        # still — it has ATOMIC WEIGHTS overlay burned in.
+        # Prefer Ben FAIL stills with sparse marks (exact hall DNA to KEEP).
         preferred = [
+            START_FRAMES["03_fail_desk"],
+            START_FRAMES["03_fail_swirl"],
             START_FRAMES["03_desk_hero"],
             START_FRAMES["03_desk_mid"],
             START_FRAMES["03_swirl"],
@@ -351,6 +353,7 @@ def resolve_start_frame(pid: str) -> Path:
     elif pid == "04_zoo_gets_ruler":
         preferred = [
             START_FRAMES["04_swirl"],
+            START_FRAMES["03_fail_swirl"],
             START_FRAMES["04_blank"],
             START_FRAMES["hall_dna"],
         ]
@@ -383,9 +386,14 @@ def t2v_prompt(pid: str) -> str:
             + STYLE
         )
     return (
-        "Same Karlsruhe hall aisle: blank cream cards align to a glowing blank "
-        "wooden mass-line. Sparse H 1 / O 16 / C 12 on 2–3 cards only; most blank. "
-        "No people. Continuous motion. Silent. " + STYLE
+        "Wide low-angle shot down the central aisle of the SAME Karlsruhe honey-oak "
+        "congress hall (ornate wooden pews left and right, three arched windows at "
+        "the far end, warm golden light). Cream pamphlets SWIRL mid-air down the "
+        "aisle toward camera. On ONLY about 3–6 sheets, sparse huge phone-readable "
+        "dark-ink marks: H 1, O 16, C 12, N 14, S 32. MOST sheets stay completely "
+        "BLANK. NOT equations. NOT walls of text. Continuous swirl motion. Silent. "
+        "No people. No Explorer. No Orbit. HARD REJECT: every sheet covered; room "
+        "swap; green/red theatre chairs; Ken Burns only. " + STYLE
     )
 
 
@@ -492,10 +500,10 @@ def main() -> None:
                         tmp,
                         model=MODEL,
                         start_frame=start,
-                        scenery_only=True,
+                        scenery_only=False,
                         reuse_project=False,
-                        attempts=2,
-                        timeout_s=180,
+                        attempts=1,
+                        timeout_s=240,
                     )
                 except Exception as e:
                     i2v_err = e
@@ -515,10 +523,10 @@ def main() -> None:
                     )
                     if attach_fail or i2v_err is not None:
                         alts = [
+                            START_FRAMES["03_fail_swirl"],
                             START_FRAMES["03_desk_mid"],
-                            START_FRAMES["03_assembled"],
                             START_FRAMES["03_swirl"],
-                            START_FRAMES["hall_dna"],
+                            # Do NOT fall back to unmarked hall DNA — props marks required.
                         ]
                         for alt in alts:
                             if info is not None:
@@ -549,6 +557,15 @@ def main() -> None:
                                 i2v_err = e_alt
                                 info = None
                         if info is None:
+                            if os.environ.get("HOS_FLOW_I2V_ONLY", "").strip().lower() in {
+                                "1",
+                                "true",
+                                "yes",
+                            }:
+                                raise SystemExit(
+                                    f"STOP: I2V-only mode — refuse T2V fallback after "
+                                    f"attach failure ({i2v_err})"
+                                ) from i2v_err
                             print(
                                 f"  I2V preferred failed ({i2v_err}); "
                                 "falling back to props T2V Fast (no Ken Burns)",
