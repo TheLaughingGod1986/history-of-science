@@ -35,6 +35,7 @@ PLATES_JSON = PROJ / "07_Edit-Project/parts/part-04_plates_v01.json"
 RAW = PROJ / "04_Generated-Clips/part04/raw/v01_fast"
 META = PROJ / "07_Edit-Project/part04_mint_flow_v01_meta.json"
 HARVEST = Path(__file__).resolve().parent / "_harvest_newest_gallery_v01.py"
+FORCE_DL = Path(__file__).resolve().parent / "_harvest_force_download_v01.py"
 STILLS = PROJ / "04_Generated-Clips/part04/refs/v01_stills"
 COMPOSE = Path(__file__).resolve().parent / "_compose_part04_desk_stills_v01.py"
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
@@ -276,6 +277,20 @@ def open_flow(p, *, profile: Path):
     )
 
 
+def run_force_download(dest: Path, project_url: str) -> None:
+    project_url = (project_url or "").split("?")[0].rstrip("/")
+    env = dict(os.environ)
+    env["ORBIT_FLOW_HOME"] = flow.FLOW_HOME
+    env["ORBIT_FLOW_PROFILE"] = str(PROFILE)
+    cmd = [
+        sys.executable, "-u", str(FORCE_DL),
+        "--project", project_url,
+        "--dest", str(dest),
+    ]
+    print(f"  spawn force-download: {' '.join(cmd)}", flush=True)
+    subprocess.check_call(cmd, env=env)
+
+
 def run_harvest(dest: Path, project_url: str, *, before_thumbs: int = -1) -> None:
     project_url = (project_url or "").split("?")[0].rstrip("/")
     if "flow.google.com" not in project_url or "/project/" not in project_url:
@@ -297,7 +312,15 @@ def run_harvest(dest: Path, project_url: str, *, before_thumbs: int = -1) -> Non
         "--before-thumbs", str(before_thumbs),
     ]
     print(f"  spawn harvest: {' '.join(cmd)}", flush=True)
-    subprocess.check_call(cmd, env=env)
+    try:
+        subprocess.check_call(cmd, env=env)
+    except subprocess.CalledProcessError as exc:
+        print(
+            f"  gallery harvest failed ({exc.returncode}); "
+            "falling back to Download-media force path",
+            flush=True,
+        )
+        run_force_download(dest, project_url)
 
 
 def probe_dur(path: Path) -> float:
