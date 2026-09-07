@@ -47,4 +47,4 @@ A zoo with labels is still a zoo. What if the secret is not a new jar — it is 
 
 ## UAT
 
-Stop after Part 01 rough was the original gate. **Current board:** P01 v14 KEEP · P02 KEEP · P03 Ben KEEP (finish v09 scrub → UAT → CoS LOCK; hold P04) — see `production-status.md` · `PART03_LESSONS.md`.
+Stop after Part 01 rough was the original gate. **Current board:** P01 v14 KEEP · P02 KEEP · P03 wait for v09 before PASS/KEEP (hold P04) — see `production-status.md` · `PART03_LESSONS.md` · `07_Edit-Project/PART03_KEEP_AND_LOCK_GATE.md` · `00_Brand/Brand-Guidelines/HOS_HOUSE_VO_AND_TEACH_LOCK.md`.
