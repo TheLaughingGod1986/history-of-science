@@ -389,10 +389,12 @@ def video_gone(page, vid: str) -> bool:
     )
     page.wait_for_timeout(2200)
     t = body(page, 3000)
+    # After hard delete Studio often shows a generic Oops page instead of "not found"
     return bool(
         re.search(
             r"not found|doesn't exist|does not exist|unavailable|moved to trash|"
-            r"couldn't find|no longer available",
+            r"couldn't find|no longer available|Oops, something went wrong|"
+            r"something went wrong",
             t,
             re.I,
         )
@@ -410,10 +412,9 @@ def check_permanent_ack(page) -> bool:
         if box.count():
             if not box.first.is_checked():
                 box.first.check(force=True, timeout=2500)
-            notes_hit = True
             return True
     except Exception:
-        notes_hit = False
+        pass
     checked = page.evaluate(
         """()=>{
       const walk=(r,d=0)=>{

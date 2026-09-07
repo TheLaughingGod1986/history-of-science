@@ -1,0 +1,424 @@
+{
+  "notes": [
+    {
+      "cancel_boxes": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 1157.90625,
+          "y": 1569,
+          "w": 120.953125,
+          "h": 36,
+          "top": 1569,
+          "bottom": 1605,
+          "vis": true
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "top": 0,
+          "bottom": 0,
+          "vis": false
+        },
+        {
+          "x": 1157.90625,
+          "y": 1569,
+          "w": 120.953125,
+          "h": 36,
+          "top": 1569,
+          "bottom": 1605,
+          "vis": true
+        },
+        {
+          "x": 1173.90625,
+          "y": 1569,
+          "w": 88.953125,
+          "h": 36,
+          "top": 1569,
+          "bottom": 1605,
+          "vis": true
+        }
+      ]
+    },
+    "scroll_0_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_1_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_2_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_3_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_4_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_5_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_6_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_7_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_8_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_9_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_10_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_11_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_12_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_13_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "scroll_14_targets=[{'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 120.953125, 'h': 36}, {'x': 1218.3828125, 'y': 1587, 'top': 1569, 'bottom': 1605, 'w': 88.953125, 'h': 36}] pick=None",
+    "no_visible_cancel"
+  ],
+  "still_upload": true,
+  "still_hos_draft": true,
+  "draft_vis_approx": 0,
+  "snip": "Channel content\nSkip navigation\n\n0\n\n0\n\n218\n\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nShorts\nVideos\nShorts\nLive\nPosts\nPlaylists\nShort\nNotices\nVisibility\nDate\nViews\nComments\n0:24\nInvisible life is still everywhere\nWhat else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleLife #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n8 Sept 2026\nScheduled\n6\n0\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\\n\\n#Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n7 Sept 2026\nScheduled\n12\n0\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nhos 001 s04 flask punch v02\nAdd description\n\u2014\nDraf"
+}
