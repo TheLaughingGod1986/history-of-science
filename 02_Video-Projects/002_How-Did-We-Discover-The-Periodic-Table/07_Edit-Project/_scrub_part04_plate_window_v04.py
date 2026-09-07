@@ -12,15 +12,15 @@ import sys
 import tempfile
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 # plate_id substring → (x0,y0,x1,y1) fractions + moon (mx,my) fractions
 # v04: A BET glowing-chair plates — clear rooftop sill; leave chair glow below
 WINDOW_BOXES = {
     "05_columns": ((0.10, 0.00, 0.995, 0.62), (0.55, 0.14)),
     "06_explorer": ((0.32, 0.00, 0.995, 0.62), (0.78, 0.10)),
-    "09_risk": ((0.14, 0.00, 0.88, 0.58), (0.62, 0.12)),
-    "09b_risk": ((0.08, 0.00, 0.96, 0.60), (0.70, 0.14)),
+    "09_risk": ((0.10, 0.00, 0.92, 0.72), (0.62, 0.12)),
+    "09b_risk": ((0.04, 0.00, 0.99, 0.74), (0.70, 0.14)),
     "default": ((0.18, 0.00, 0.90, 0.48), (0.55, 0.12)),
 }
 
@@ -45,7 +45,7 @@ def pick_box(name: str):
     return WINDOW_BOXES["default"]
 
 
-def hard_fill_window(im: Image.Image, box_frac, moon_frac) -> Image.Image:
+def hard_fill_window(im: Image.Image, box_frac, moon_frac, *, protect_chair: bool) -> Image.Image:
     rgb = im.convert("RGB")
     w, h = rgb.size
     x0 = int(w * box_frac[0])
@@ -55,6 +55,15 @@ def hard_fill_window(im: Image.Image, box_frac, moon_frac) -> Image.Image:
 
     sky = Image.new("RGB", (w, h), (24, 38, 80))
     sd = ImageDraw.Draw(sky)
+    # soft clouds
+    for cx, cy, cr, col in (
+        (0.32, 0.16, 0.05, (68, 92, 138)),
+        (0.48, 0.20, 0.065, (82, 108, 152)),
+        (0.64, 0.14, 0.045, (62, 88, 132)),
+    ):
+        px, py = int(w * cx), int(h * cy)
+        r = int(min(w, h) * cr)
+        sd.ellipse((px - r, py - r, px + r, py + int(r * 0.55)), fill=col)
     mx, my = int(w * moon_frac[0]), int(h * moon_frac[1])
     rad = max(18, int(min(w, h) * 0.032))
     sd.ellipse((mx - rad, my - rad, mx + rad, my + rad), fill=(236, 236, 250))
@@ -69,11 +78,23 @@ def hard_fill_window(im: Image.Image, box_frac, moon_frac) -> Image.Image:
     # Hard opaque fill — soft blur at the bottom edge previously leaked yellow windows.
     mask = Image.new("L", (w, h), 0)
     ImageDraw.Draw(mask).rectangle((x0, y0, x1, y1), fill=255)
-    soft = mask.filter(ImageFilter.GaussianBlur(radius=1.2))
+    soft = mask.filter(ImageFilter.GaussianBlur(radius=1.0))
     inset = Image.new("L", (w, h), 0)
-    # Keep bottom edge hard (no soft fade into house glow)
-    ImageDraw.Draw(inset).rectangle((x0 + 3, y0 + 3, x1 - 3, y1), fill=255)
+    # Keep bottom edge hard (no soft fade into rooftop sill)
+    ImageDraw.Draw(inset).rectangle((x0 + 2, y0 + 2, x1 - 2, y1), fill=255)
     mask = Image.composite(inset, soft, inset)
+
+    if protect_chair:
+        # Keep glowing chair LOWER body only — do not protect mid-window rooftops
+        chair = Image.new("L", (w, h), 0)
+        ImageDraw.Draw(chair).ellipse(
+            (int(w * 0.64), int(h * 0.58), int(w * 0.995), int(h * 0.995)),
+            fill=255,
+        )
+        chair = chair.filter(ImageFilter.GaussianBlur(radius=5))
+        inv = Image.eval(chair, lambda v: 255 - v)
+        mask = ImageChops.multiply(mask, inv)
+
     return Image.composite(sky, rgb, mask)
 
 
@@ -94,13 +115,16 @@ def scrub_mp4(src: Path, dest: Path) -> None:
             check=True,
         )
         paths = sorted(frames.glob("f_*.png"))
+        protect = "09" in (src.name + dest.name).lower()
         print(
             f"hard-fill window {len(paths)} frames {src.name} "
-            f"box={box_frac} dur={dur:.2f}",
+            f"box={box_frac} protect_chair={protect} dur={dur:.2f}",
             flush=True,
         )
         for i, fp in enumerate(paths):
-            hard_fill_window(Image.open(fp), box_frac, moon_frac).save(fp)
+            hard_fill_window(
+                Image.open(fp), box_frac, moon_frac, protect_chair=protect
+            ).save(fp)
             if i % 48 == 0:
                 print(f"  frame {i}/{len(paths)}", flush=True)
         tmp = dest.with_suffix(".scrub.tmp.mp4")

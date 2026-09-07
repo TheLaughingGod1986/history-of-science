@@ -1,0 +1,38 @@
+{
+  "cut": "hos_002_part04_rough_v04.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v04.mp4",
+  "bytes": 78393949,
+  "duration_s": 127.76,
+  "sha256": "259bb76f4f4e8a95b0ed0439be8dd85555856340f4ce49bed5ad5984341fe736",
+  "parent_v03_sha256": "79dd7650cb582b548ae4c1c0aa98e4938ff8ec90ba654dea9c0b5c5574ee62e8",
+  "reminted_plates": [
+    "02b_cards_sixty_three",
+    "09_risk_bet",
+    "09b_risk_hold"
+  ],
+  "flow_account": "benoats@googlemail.com",
+  "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+  "plate02b_picture_s": [
+    15.100000000000001,
+    23.0
+  ],
+  "columns_picture_s": [
+    37.75,
+    45.65
+  ],
+  "explorer_picture_s": [
+    45.3,
+    53.199999999999996
+  ],
+  "plate09_picture_s": [
+    90.59999999999998,
+    98.49999999999999
+  ],
+  "plate09b_picture_s": [
+    98.14999999999998,
+    106.04999999999998
+  ],
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v04.mp4",
+  "watch": "WATCH_part04_v04.txt",
+  "note": "Scrub house silhouettes \u00d72: books ~18\u201321 (02b) + A BET window town ~91\u201397 (09/09b). KEEP v02 05/06 sky. Scores \u2192 CoS only. Do not declare PASS."
+}
