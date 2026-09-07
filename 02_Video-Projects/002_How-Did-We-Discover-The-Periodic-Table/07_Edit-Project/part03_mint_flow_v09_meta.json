@@ -1,0 +1,29 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "continuity": "scrub_city_plan_house_blocks_v09",
+  "parent_v08_sha": "487dc2b8cc58787e0ee9d76acf9fb29d04b3291b1ba15be6b4f20868c8c6b3b3",
+  "only": ["10_city_plan_lots"],
+  "keep_08_property_waves_v08": true,
+  "keep_empty_chair_v04": true,
+  "keep_explorer_v05": true,
+  "keep_03_method_pamphlet_v07": true,
+  "rough": {
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v09.mp4",
+    "bytes": 88499232,
+    "duration": 89.68,
+    "sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e"
+  },
+  "plates": [
+    {
+      "id": "10_city_plan_lots",
+      "status": "ok",
+      "kind": "T2V_papers_only",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v09_fast/10_city_plan_lots_v09.mp4",
+      "duration": 8.0,
+      "bytes": 2035374,
+      "note": "Sheet option 2 papers-only after flat-ink T2V still showed house-like marks on plan"
+    }
+  ]
+}

@@ -690,7 +690,7 @@ def _open_prompt_settings_pill(page) -> None:
         """() => {
           for (const b of document.querySelectorAll('button')) {
             const t = (b.innerText || '');
-            if (/Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(t)) {
+            if (/Nano Banana|Video ·|Omni Flash|Omni 1|Veo 3|crop_16_9/.test(t)) {
               const r = b.getBoundingClientRect();
               if (r.width > 40 && r.height > 16)
                 return { x: r.x + r.width / 2, y: r.y + r.height / 2, t: t.trim().slice(0, 80) };
@@ -707,26 +707,33 @@ def _open_prompt_settings_pill(page) -> None:
 
 def _select_video_tab(page) -> None:
     """Select the Video tab inside the prompt settings popover (not Image/Nano Banana)."""
+    # Sep 2026 Flow: Image/Video controls are often role=radio (not role=tab).
     tabs = page.evaluate(
-        """() => [...document.querySelectorAll('button[role=tab]')].map(b => {
+        """() => [...document.querySelectorAll(
+          'button[role=tab], button[role=radio], [role=tab], [role=radio]'
+        )].map(b => {
           const r = b.getBoundingClientRect();
           return {
-            t: (b.innerText || '').trim(),
-            sel: b.getAttribute('aria-selected'),
+            t: (b.innerText || '').trim().replace(/\\n/g, ' '),
+            sel: b.getAttribute('aria-selected') || b.getAttribute('aria-checked'),
             x: r.x + r.width / 2,
             y: r.y + r.height / 2,
+            w: r.width,
+            h: r.height,
           };
-        }).filter(b => /Image|Video/i.test(b.t))"""
+        }).filter(b => b.w > 20 && b.h > 10 && /\\bImage\\b|\\bVideo\\b/i.test(b.t))"""
     )
-    video = next((t for t in (tabs or []) if "Video" in t["t"]), None)
+    video = next((t for t in (tabs or []) if re.search(r"\bVideo\b", t["t"], re.I)), None)
     if not video:
         # Popover may already be on video-only chrome (Omni/Veo dropdown visible)
         if page.locator("button").filter(has_text="Omni Flash").count() or page.locator(
             "button"
-        ).filter(has_text="Veo 3").count():
+        ).filter(has_text="Veo 3").count() or page.locator("button").filter(
+            has_text="Video ·"
+        ).count():
             return
         raise RuntimeError("Flow Image/Video tabs not found in settings popover")
-    if video.get("sel") != "true":
+    if video.get("sel") not in {"true", "True"}:
         # JS click often fails to flip aria-selected — use mouse.
         page.mouse.click(video["x"], video["y"])
         page.wait_for_timeout(900)
@@ -735,10 +742,14 @@ def _select_video_tab(page) -> None:
 def _select_veo_from_dropdown(page, model: str) -> str:
     """Open Omni/Veo dropdown and pick the requested Veo 3.x model."""
     dd = page.locator("button").filter(has_text="arrow_drop_down")
-    # Prefer the video-model dropdown (Omni Flash / Veo 3.x)
-    model_dd = page.locator("button").filter(has_text="Omni Flash").filter(
-        has_text="arrow_drop_down"
-    )
+    # Prefer the video-model dropdown (Omni Flash / Omni 1.1 Flash / Veo 3.x)
+    model_dd = page.locator("button").filter(has_text="Omni").filter(
+        has_text="Flash"
+    ).filter(has_text="arrow_drop_down")
+    if model_dd.count() == 0:
+        model_dd = page.locator("button").filter(has_text="Omni Flash").filter(
+            has_text="arrow_drop_down"
+        )
     if model_dd.count() == 0:
         model_dd = page.locator("button").filter(has_text="Veo 3").filter(
             has_text="arrow_drop_down"
