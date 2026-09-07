@@ -399,6 +399,77 @@ def video_gone(page, vid: str) -> bool:
     )
 
 
+def check_permanent_ack(page) -> bool:
+    """Tick 'I understand that deleting this video is permanent…' in the dialog."""
+    # Prefer role=checkbox / native input inside the permanent-delete dialog
+    try:
+        box = page.get_by_role(
+            "checkbox",
+            name=re.compile(r"I understand that deleting", re.I),
+        )
+        if box.count():
+            if not box.first.is_checked():
+                box.first.check(force=True, timeout=2500)
+            notes_hit = True
+            return True
+    except Exception:
+        notes_hit = False
+    checked = page.evaluate(
+        """()=>{
+      const walk=(r,d=0)=>{
+        if(!r||d>50) return false;
+        for(const el of (r.querySelectorAll?r.querySelectorAll('tp-yt-paper-checkbox,ytcp-checkbox-lit,input[type=checkbox],[role=checkbox]'):[])){
+          const t=((el.innerText||'')+' '+(el.getAttribute('aria-label')||'')+' '+(el.getAttribute('label')||'')).trim();
+          const near=(el.closest && (el.closest('ytcp-confirmation-dialog,tp-yt-paper-dialog,ytcp-dialog')||el.parentElement));
+          const nearT=near?((near.innerText||'').slice(0,500)):'';
+          if(/I understand that deleting|deleting this video is permanent/i.test(t+nearT)){
+            if(el.getAttribute('aria-checked')==='true' || el.checked) return 'already';
+            el.click();
+            return 'clicked';
+          }
+        }
+        // also click label text
+        for(const el of (r.querySelectorAll?r.querySelectorAll('yt-formatted-string,span,div,label'):[])){
+          const t=(el.innerText||'').trim();
+          if(/^I understand that deleting this video is permanent/i.test(t)){
+            el.click(); return 'label';
+          }
+        }
+        for(const el of (r.querySelectorAll?r.querySelectorAll('*'):[]))
+          if(el.shadowRoot){ const x=walk(el.shadowRoot,d+1); if(x) return x; }
+        return false;
+      };
+      return walk(document);
+    }"""
+    )
+    return bool(checked)
+
+
+def click_delete_forever_enabled(page) -> bool:
+    """Click the enabled Delete forever button inside the confirmation dialog."""
+    return bool(
+        page.evaluate(
+            """()=>{
+      const walk=(r,d=0)=>{
+        if(!r||d>50) return false;
+        for(const el of (r.querySelectorAll?r.querySelectorAll('button,ytcp-button,[role=button]'):[])){
+          const t=(el.innerText||'').trim();
+          if(!/^Delete forever$/i.test(t)) continue;
+          const dis=el.disabled || el.getAttribute('aria-disabled')==='true'
+            || el.classList.contains('disabled') || el.getAttribute('disabled')!=null;
+          const box=el.getBoundingClientRect();
+          if(!dis && box.width>20){ el.click(); return true; }
+        }
+        for(const el of (r.querySelectorAll?r.querySelectorAll('*'):[]))
+          if(el.shadowRoot && walk(el.shadowRoot,d+1)) return true;
+        return false;
+      };
+      return walk(document);
+    }"""
+        )
+    )
+
+
 def hard_delete_one(page, vid: str) -> dict:
     if vid in ALLOWLIST:
         return {"id": vid, "ok": False, "skipped": True, "reason": "ALLOWLIST"}
@@ -420,33 +491,63 @@ def hard_delete_one(page, vid: str) -> dict:
     page.wait_for_timeout(800)
     item = click_delete_menu_item(page)
     notes.append(f"item={item}")
-    page.wait_for_timeout(900)
+    page.wait_for_timeout(1000)
+    shot(page, f"20b_menu_{vid}.png")
+
+    # First click may open "Permanently delete this video?" OR select Delete in menu
+    # then open dialog. If dialog not open yet, click Delete / Delete forever once.
+    dlg = body(page, 2000)
+    if not re.search(r"Permanently delete this video|I understand that deleting", dlg, re.I):
+        for label in ("Delete forever", "Delete", "Move to trash"):
+            if click_named(page, label):
+                notes.append(f"open_dlg={label}")
+                page.wait_for_timeout(1000)
+                break
+
+    shot(page, f"20c_dialog_{vid}.png")
+    ack = check_permanent_ack(page)
+    notes.append(f"ack={ack}")
+    page.wait_for_timeout(600)
+    shot(page, f"20d_acked_{vid}.png")
+
     confirmed = False
-    for label in ("Delete forever", "Delete", "Move to trash", "Confirm", "Yes"):
-        if click_named(page, label):
-            notes.append(f"confirm={label}")
-            confirmed = True
-            page.wait_for_timeout(1200)
-            if label in ("Move to trash", "Delete"):
-                for label2 in ("Delete forever", "Delete", "Confirm", "Yes"):
-                    if click_named(page, label2):
-                        notes.append(f"confirm2={label2}")
-                        page.wait_for_timeout(1000)
-                        break
-            break
-    page.wait_for_timeout(2200)
+    if click_delete_forever_enabled(page):
+        notes.append("confirm=Delete forever (enabled)")
+        confirmed = True
+    else:
+        for label in ("Delete forever", "Delete", "Confirm", "Yes"):
+            if click_named(page, label):
+                notes.append(f"confirm={label}")
+                confirmed = True
+                break
+    page.wait_for_timeout(2800)
     shot(page, f"21_after_click_{vid}.png")
+
+    # If still on dialog (ack failed first pass), retry ack + confirm
+    t_mid = body(page, 2000)
+    if re.search(r"Permanently delete this video|I understand that deleting", t_mid, re.I):
+        notes.append("dialog_still_open_retry")
+        ack2 = check_permanent_ack(page)
+        notes.append(f"ack2={ack2}")
+        page.wait_for_timeout(500)
+        if click_delete_forever_enabled(page):
+            notes.append("confirm2=Delete forever")
+            confirmed = True
+            page.wait_for_timeout(2800)
+            shot(page, f"21b_retry_{vid}.png")
+
     gone = video_gone(page, vid)
     in_trash = False
     if not gone:
         t = body(page, 2500)
-        in_trash = bool(re.search(r"trash|deleted", t, re.I))
+        in_trash = bool(re.search(r"trash|deleted|no longer available", t, re.I))
         notes.append(f"post_snip={t[:200]}")
     result = {
         "id": vid,
-        "ok": gone or confirmed,
+        "ok": bool(gone),
         "gone_from_edit": gone,
         "in_trash_hint": in_trash,
+        "confirmed_click": confirmed,
         "notes": notes,
     }
     dump(f"22_delete_{vid}.json", result)
