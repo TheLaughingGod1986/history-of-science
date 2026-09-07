@@ -2,6 +2,7 @@
 
 **Cut:** `hos_002_part03_rough_v07.mp4`  
 **Parent:** `hos_002_part03_rough_v06.mp4` sha `a1285f9a…` (85041901 B)  
+Preferred UAT PASS parent `21224567…` / 88140641 **not recoverable** (hunt: Time Machine / iCloud superseded / artifacts / LFS / Downloads — see `logs/part03_v07_parent_pass_sha_hunt.txt`). CoS OK to proceed on disk parent.  
 **Landed:** 7 Sep 2026 Europe/London · Mini · Flow `benoats@googlemail.com` /u/1/ ULTRA  
 **VO:** `part03_ruler_for_atoms_v01` unchanged  
 **Scores → CoS Picture→UAT only.** Do not ping Ben. No P04.

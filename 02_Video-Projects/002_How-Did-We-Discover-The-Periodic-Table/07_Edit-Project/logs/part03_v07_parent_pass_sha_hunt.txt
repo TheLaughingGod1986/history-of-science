@@ -1,0 +1,32 @@
+# Part 03 — UAT PASS parent sha hunt (v07)
+
+**Wanted:** `hos_002_part03_rough_v06.mp4`  
+sha256 `2122456781bc5cabc6b7fb30f83fe091ae4affe14ae440a4d215e6da3a50a24f` · **88140641** bytes  
+(recorded in `logs/part03_v06_continue_landed.txt` before in-place overwrite)
+
+**Result: NOT FOUND** — no recoverable copy.
+
+## Searched
+
+| Location | Result |
+|---|---|
+| Final-Export | Current v06 is **a1285f9a…** / 85041901 (continue overwrite) |
+| iCloud `HOS UAT/_SUPERSEDED_*_v06.mp4` | Same **a1285f9a…** / 85041901 |
+| Exact size 88140641c (`find` + `mdfind`) | Zero hits |
+| Time Machine local snapshots | None listed for `/` |
+| Trash | No part03 v06 |
+| git / git LFS | mp4s gitignored; no LFS object |
+| Flow / Playwright profile / Downloads | No size/sha match |
+| AgentStores / cursor artifacts | Window clips only (not full rough); no 88140641 file |
+| Superseded v01–v05 | Different sizes/shas (v05 = `3642d005…` / 85662210) |
+
+## Decision (CoS)
+
+Use current disk parent **a1285f9a60c4090eb45aa681556f508c6ddc4217cd6f3ba448b27a53f89922de** for edit+swirl → v07.  
+Do **not** restart assemble — v07 already landed from that parent.
+
+## UAT handoff (current)
+
+`hos_002_part03_rough_v07.mp4`  
+path Final-Export + `HOS UAT/`  
+sha256 **f39d794ed6d8d23faeb67320f623cc0213d0b344eca29e2fa8b48d8117664bd1** · **91490005** bytes · **89.680 s**
