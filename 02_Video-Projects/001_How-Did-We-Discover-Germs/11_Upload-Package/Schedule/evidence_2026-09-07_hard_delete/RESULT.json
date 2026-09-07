@@ -1,0 +1,234 @@
+{
+  "started": "2026-09-07T10:13:00",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "allowlist": [
+    "8_Edn_HCi1s",
+    "93fPUG-hW0A",
+    "H1y0DXFVmw8",
+    "_C92tIJCk8A",
+    "iqToagXnjX0",
+    "sILtQxgYQk8"
+  ],
+  "twins": [
+    "8uBR-9oxeWs",
+    "YX2UR1u-JCQ",
+    "Fnb3p81u-wY",
+    "vpuRgKXtFlY",
+    "Lcmh5y2KMQM"
+  ],
+  "deleted": [],
+  "failed": [
+    {
+      "id": "Lcmh5y2KMQM",
+      "ok": false,
+      "gone_from_edit": false,
+      "in_trash_hint": false,
+      "confirmed_click": true,
+      "notes": [
+        "menu=Options",
+        "item=Delete",
+        "open_dlg=Delete forever",
+        "ack=True",
+        "confirm=Delete forever (enabled)",
+        "post_snip=Video details\n\nOops, something went wrong."
+      ]
+    },
+    {
+      "id": "vpuRgKXtFlY",
+      "ok": false,
+      "gone_from_edit": false,
+      "in_trash_hint": false,
+      "confirmed_click": true,
+      "notes": [
+        "menu=Options",
+        "item=Delete",
+        "open_dlg=Delete forever",
+        "ack=True",
+        "confirm=Delete forever (enabled)",
+        "post_snip=Video details\n\nOops, something went wrong."
+      ]
+    },
+    {
+      "id": "Fnb3p81u-wY",
+      "ok": false,
+      "gone_from_edit": false,
+      "in_trash_hint": false,
+      "confirmed_click": true,
+      "notes": [
+        "menu=Options",
+        "item=Delete",
+        "open_dlg=Delete forever",
+        "ack=True",
+        "confirm=Delete forever (enabled)",
+        "post_snip=Video details\n\nOops, something went wrong."
+      ]
+    },
+    {
+      "id": "YX2UR1u-JCQ",
+      "ok": false,
+      "gone_from_edit": false,
+      "in_trash_hint": false,
+      "confirmed_click": true,
+      "notes": [
+        "menu=Options",
+        "item=Delete",
+        "open_dlg=Delete forever",
+        "ack=True",
+        "confirm=Delete forever (enabled)",
+        "post_snip=Video details\n\nOops, something went wrong."
+      ]
+    },
+    {
+      "id": "8uBR-9oxeWs",
+      "ok": false,
+      "gone_from_edit": false,
+      "in_trash_hint": false,
+      "confirmed_click": true,
+      "notes": [
+        "menu=Options",
+        "item=Delete",
+        "open_dlg=Delete forever",
+        "ack=True",
+        "confirm=Delete forever (enabled)",
+        "post_snip=Video details\n\nOops, something went wrong."
+      ]
+    }
+  ],
+  "skipped_allowlist": [],
+  "ok": false,
+  "auth": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "cancel_uploads": [
+    "cancel_err_0=Locator.click: Element is not visible\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Cancel upload$\", re.IGNORECASE)).first\n    - locator resolved to <div class=\"ytcpButtonShapeImpl__button-text-content\">Cancel upload</div>\n  - attempting click action\n    - scrolling into view if needed\n"
+  ],
+  "inventory_before": {
+    "shelf_count": 10,
+    "keep_ids": [
+      "93fPUG-hW0A",
+      "sILtQxgYQk8",
+      "8_Edn_HCi1s",
+      "iqToagXnjX0",
+      "H1y0DXFVmw8"
+    ],
+    "delete_ids": [
+      "Lcmh5y2KMQM",
+      "vpuRgKXtFlY",
+      "Fnb3p81u-wY",
+      "YX2UR1u-JCQ",
+      "8uBR-9oxeWs"
+    ]
+  },
+  "trash": {
+    "notes": [
+      "trash_rows=0",
+      "trash_rows=0"
+    ],
+    "deleted_from_trash": []
+  },
+  "inventory_after": {
+    "shelf_count": 6,
+    "keep_ids": [
+      "_C92tIJCk8A",
+      "93fPUG-hW0A",
+      "sILtQxgYQk8",
+      "8_Edn_HCi1s",
+      "iqToagXnjX0",
+      "H1y0DXFVmw8"
+    ],
+    "leftover_non_allowlist": [],
+    "items": [
+      {
+        "id": "_C92tIJCk8A",
+        "tab": "videos",
+        "text": "6:05 How Did We Discover Germs? A/B test running \u2014 Public 3 Sept 2026 Premiered 2 1",
+        "allowlisted": true,
+        "named_twin": false
+      },
+      {
+        "id": "93fPUG-hW0A",
+        "tab": "shorts",
+        "text": "0:24 Invisible life is still everywhere What else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleLife #HistoryOfScience #Science #Shorts \u2014 S",
+        "allowlisted": true,
+        "named_twin": false
+      },
+      {
+        "id": "sILtQxgYQk8",
+        "tab": "shorts",
+        "text": "0:25 A flask that proved germs come from outside A flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\\n\\n#Germs #GermTheory #HistoryOfScience #Science #Shorts \u2014 Scheduled 7 Sept 2026 Schedule",
+        "allowlisted": true,
+        "named_twin": false
+      },
+      {
+        "id": "8_Edn_HCi1s",
+        "tab": "shorts",
+        "text": "0:25 Germs hitch a ride on you You are the vector \u2014 germs hitch a ride on hands, cloth, and breath. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #Handwashing #GermTheory #HistoryOfScience #Shorts \u2014 Public 6 Sept 2026 Publish",
+        "allowlisted": true,
+        "named_twin": false
+      },
+      {
+        "id": "iqToagXnjX0",
+        "tab": "shorts",
+        "text": "0:25 Microbes in a drop of pond water A drop of pond water is not empty \u2014 under a microscope it is full of microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Microbes #PondWater #GermTheory #HistoryOfScience #Shorts \u2014 Public 6",
+        "allowlisted": true,
+        "named_twin": false
+      },
+      {
+        "id": "H1y0DXFVmw8",
+        "tab": "shorts",
+        "text": "0:25 Germs don't cast a shadow Germs don't cast a shadow \u2014 doctors once blamed bad air, not living microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts \u2014 Public 6 Sept 2026 Pu",
+        "allowlisted": true,
+        "named_twin": false
+      }
+    ]
+  },
+  "allowlist_status": {
+    "8_Edn_HCi1s": {
+      "gone": false
+    },
+    "93fPUG-hW0A": {
+      "gone": false
+    },
+    "H1y0DXFVmw8": {
+      "gone": false
+    },
+    "_C92tIJCk8A": {
+      "gone": false
+    },
+    "iqToagXnjX0": {
+      "gone": false
+    },
+    "sILtQxgYQk8": {
+      "gone": false
+    }
+  },
+  "missing_allowlist_alarm": [],
+  "twin_status": {
+    "8uBR-9oxeWs": {
+      "gone": false
+    },
+    "YX2UR1u-JCQ": {
+      "gone": false
+    },
+    "Fnb3p81u-wY": {
+      "gone": false
+    },
+    "vpuRgKXtFlY": {
+      "gone": false
+    },
+    "Lcmh5y2KMQM": {
+      "gone": false
+    }
+  },
+  "leftovers": [
+    "8uBR-9oxeWs",
+    "Fnb3p81u-wY",
+    "Lcmh5y2KMQM",
+    "YX2UR1u-JCQ",
+    "vpuRgKXtFlY"
+  ],
+  "remaining_shelf_count": 6,
+  "deleted_ids": [],
+  "finished": "2026-09-07T10:16:48"
+}

@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-07T10:20:49",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "cancel_notes": [
+    "cancel_0",
+    "cancel_1",
+    "cancel_2",
+    "cancel_3",
+    "cancel_4",
+    "cancel_5",
+    "cancel_6",
+    "cancel_7",
+    "cancel_8",
+    "cancel_9",
+    "cancel_10",
+    "cancel_11"
+  ],
+  "shelf_ids": [
+    "8_Edn_HCi1s",
+    "93fPUG-hW0A",
+    "H1y0DXFVmw8",
+    "_C92tIJCk8A",
+    "iqToagXnjX0",
+    "sILtQxgYQk8"
+  ],
+  "shelf_count": 6,
+  "non_allowlist_left": [],
+  "missing_allowlist_from_shelf": [],
+  "twins_gone": {
+    "8uBR-9oxeWs": true,
+    "YX2UR1u-JCQ": true,
+    "Fnb3p81u-wY": true,
+    "vpuRgKXtFlY": true,
+    "Lcmh5y2KMQM": true
+  },
+  "allowlist_gone": {
+    "8_Edn_HCi1s": false,
+    "93fPUG-hW0A": false,
+    "H1y0DXFVmw8": false,
+    "_C92tIJCk8A": false,
+    "iqToagXnjX0": false,
+    "sILtQxgYQk8": false
+  },
+  "by_tab_counts": {
+    "videos": 1,
+    "shorts": 5
+  },
+  "draft_upload_flags": {
+    "videos_draft": false,
+    "videos_uploading": false,
+    "shorts_draft": true,
+    "shorts_uploading": true
+  },
+  "ok": true
+}

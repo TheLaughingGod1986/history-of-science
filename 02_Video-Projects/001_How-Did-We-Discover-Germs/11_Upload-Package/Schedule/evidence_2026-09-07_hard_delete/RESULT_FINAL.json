@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-07T10:53:26",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "deleted_ids": [
+    "8uBR-9oxeWs",
+    "YX2UR1u-JCQ",
+    "Fnb3p81u-wY",
+    "vpuRgKXtFlY",
+    "Lcmh5y2KMQM"
+  ],
+  "twins_gone": {
+    "8uBR-9oxeWs": true,
+    "YX2UR1u-JCQ": true,
+    "Fnb3p81u-wY": true,
+    "vpuRgKXtFlY": true,
+    "Lcmh5y2KMQM": true
+  },
+  "remaining_ids": [
+    "8_Edn_HCi1s",
+    "93fPUG-hW0A",
+    "H1y0DXFVmw8",
+    "_C92tIJCk8A",
+    "iqToagXnjX0",
+    "sILtQxgYQk8"
+  ],
+  "remaining_shelf_count": 6,
+  "non_allowlist": [],
+  "allowlist_missing": [],
+  "body_has_draft_or_deleting": false,
+  "ok": true
+}
