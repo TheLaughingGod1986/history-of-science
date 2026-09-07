@@ -1,0 +1,4 @@
+=== AFTER part03 v05 remint 2026-09-07T08:49:48Z ===
+d903cf7ca1789dcfc1a3703b9215564b3a0d306d0ea1dbf7c2a974888fa92781  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part01_rough_v14.mp4
+799086795d62f159930bd00db638ea2de0e02a299d8c9d50c8eed3d482e89529  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part02_rough_v06.mp4
+3642d00563129a88b93b042936da0e1aad0f8a123914e3d979f1b86754c8f049  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v05.mp4
