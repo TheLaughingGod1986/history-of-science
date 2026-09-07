@@ -1,6 +1,6 @@
 # Production status — 002 How Did We Discover the Periodic Table?
 
-**Desk board lock — 6 Sep 2026 (CoS / Ben).** Docs only. No remint · no mint · no upload · no Mac Mini · no Flow · no Studio · no Orbit / Oppti from this file.
+**Desk board lock — 7 Sep 2026 (Ben KEEP on P03 · CoS LOCK pending).** Docs only. No remint · no mint · no upload · no Mac Mini · no Flow · no Studio · no Orbit / Oppti from this file.
 
 | Field | Value |
 |---|---|
@@ -18,10 +18,10 @@
 
 | Part | Cut | Status |
 |---|---|---|
-| **P01** | `hos_002_part01_rough_v14` | **KEEP / Ben-locked PASS**. Supersedes v13 FAIL (plate-10 blue/cyan scrub). **Do not remint P01. Do not ask Ben to rewatch.** Path + sha → Picture (disk inventory). |
+| **P01** | `hos_002_part01_rough_v14` | **KEEP / Ben-locked PASS**. Unchanged. Supersedes v13 FAIL (plate-10 blue/cyan scrub). **Do not remint P01. Do not ask Ben to rewatch.** Path + sha → Picture (disk inventory). |
 | **P02** | `hos_002_part02_rough_v06` | **KEEP / locked PASS**. Unchanged. Do not remint. Do not ask Ben to rewatch. |
-| **P03** | — | **Minting** (in progress). Gate: real Veo every beat · Animistry side labels · Explorer once on plate **05** · no Ken Burns. |
-| **P04–P05** | — | No cuts. Blocked until **P03 PASS**. |
+| **P03** | — | **Ben KEEP** (2026-09-07). Finish **v09 scrub** → UAT → **Chief of Staff will LOCK**. **Not CoS-LOCKED yet.** Lessons: `PART03_LESSONS.md`. |
+| **P04–P05** | — | **HOLD** until CoS LOCK on a **clean P03** cut. **Do not start P04 picture.** |
 
 ### P01 forever FAIL (regen if present)
 
@@ -37,24 +37,32 @@
 - Colourless shimmer only
 - Continuous motion
 
-### P03 mint gate
+### P03 house locks (Ben KEEP · see `PART03_LESSONS.md`)
 
-- Real Veo every beat
-- Animistry side labels
-- Explorer once on plate **05**
-- No Ken Burns
+1. Explorer = **teal trenchcoat boy** (not blazer / bow-tie atom)
+2. Empty chair: picture + `EMPTY CHAIR` label **with** spoken word (~52–58s), not late
+3. Atomic Weights: sparse phone-readable H/C/O on desk + 2–3 mid-air sheets; most blank OK; Karlsruhe blanks OK
+4. No model-town / glowing house-blocks / desk toy blocks after empty-chair beat — flat postcard plan or papers only; whole-minute walk stays clean
+5. **Ben override > blank-props** when VO needs teachable numbers
+6. Ping Ben **only after UAT PASS**; amend FAIL must **withdraw** any Ben KEEP ping
 
 ## Fix order (blocking)
 
-1. Finish **P03** mint
-2. UAT → Ben
-3. Then **P04**
-4. **Moon Leaving** waits
+1. Finish **P03 v09 scrub**
+2. **UAT**
+3. **CoS LOCK** on the clean P03 cut
+4. Then **P04** picture (not before)
+5. **Moon Leaving** waits
+
+## Next (Ben — going forward)
+
+Clearer educational scripts · VO + picture sync · any-age friendly · teach chemistry **and** why the discovery mattered. Encode in `PART03_LESSONS.md`.
 
 ## Do not
 
 - Remint P01 or P02
 - Ask Ben to rewatch P01 / P02
-- Start P04 / P05 before P03 PASS
+- Call P03 **CoS-LOCKED** before CoS locks a clean cut after v09 scrub + UAT
+- Start P04 / P05 picture before that CoS LOCK
 - Upload · Studio · Orbit / Oppti
 - Invent cut hashes or Mini paths here — Picture owns path + sha
