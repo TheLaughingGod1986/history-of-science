@@ -27,6 +27,8 @@ House: Animistry labels follow the **spoken word**. Picture must land **with** t
 - Labels cue with spoken terms (1–4 words, side, elegant).
 - Do not let a later plate “explain” a line the viewer already heard and forgot.
 
+**UAT (standing ALWAYS):** the picture must also **visually explain** the spoken beat — not pretty B-roll. See `HOS_UAT_BIBLE_HOUSE_LOCK.md` · `.cursor/rules/hos-uat-bible-house-lock.mdc`. This note’s teach/clarity bar is unchanged.
+
 ## Teach the science (periodic table films)
 
 For 002 Part 04+ (and similar):
@@ -38,3 +40,4 @@ For 002 Part 04+ (and similar):
 
 - Bake this into every Showrunner brief from Part 04 onward.
 - Part 03 KEEP / lock path is separate (see film 002 edit status) — do **not** rewrite shipped P03 VO for this note unless Ben asks.
+- Every cut still runs the standing UAT ALWAYS pair (consistency + VO visual explainer) in `HOS_UAT_BIBLE_HOUSE_LOCK.md`.

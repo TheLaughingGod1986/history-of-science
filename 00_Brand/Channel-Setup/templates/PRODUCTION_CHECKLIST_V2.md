@@ -40,6 +40,8 @@ Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
 - [ ] Pre-build vidIQ audit signed off
 - [ ] Script reviewer ≥ 90
 - [ ] VO–picture gate QA passed
+- [ ] **UAT ALWAYS — CONSISTENCY:** Explorer scale + teal trenchcoat garnish / props / style match locked priors (`HOS_UAT_BIBLE_HOUSE_LOCK.md`)
+- [ ] **UAT ALWAYS — VO VISUAL EXPLAINER:** picture matches and visually explains the spoken VO beat (not pretty B-roll)
 - [ ] Studio finish items done after API upload (ABC if long · Related+pin Shorts)
 
 **Ship only when every box is checked.**
