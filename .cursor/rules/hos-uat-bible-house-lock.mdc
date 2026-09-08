@@ -1,5 +1,5 @@
 ---
-description: HOS UAT bible — standing ALWAYS consistency + VO visual explainer on every cut (8 Sep 2026)
+description: HOS UAT bible — standing ALWAYS consistency, VO visual explainer, glasses, lamp glow, readable cards on every cut (8 Sep 2026)
 alwaysApply: true
 ---
 
@@ -8,20 +8,24 @@ alwaysApply: true
 **Channel:** [@HistoryOfScienceYT](https://www.youtube.com/@HistoryOfScienceYT) **only**  
 **Scope:** **Standing ALWAYS** on every HOS cut (001, 002, later). Not film-002-only.  
 **Ops bible:** `00_Brand/Brand-Guidelines/HOS_UAT_BIBLE_HOUSE_LOCK.md`  
-**UAT notified:** yes (Ben → CoS).
+**UAT notified:** yes (Ben → CoS).  
+**Hardened 8 Sep 2026:** glasses · lamp glow · readable cards (keep existing ALWAYS).
 
-## Standing ALWAYS (fail either → UAT FAIL)
+## Standing ALWAYS (fail any → UAT FAIL)
 
 1. **CONSISTENCY** — Cut matches locked prior parts / house: Explorer **scale** + **teal trenchcoat** garnish language, props, period world, 3D-cartoon style. Off-model = fail.
 2. **VO VISUAL EXPLAINER** — Picture **matches** and **visually explains** the spoken VO beat. Not pretty B-roll under clever narration. Mute test: you should still follow the beat.
+3. **EXPLORER ROUND GLASSES** — Whenever Explorer is visible, **round glasses** on (sheet DNA). Bare / no-glasses Explorer = fail.
+4. **LAMP = CLEAN WARM GLOW** — Lamps are a clean warm glow only. Fire spit / candle-flame lamp artifacts = fail.
+5. **READABLE CARDS** — Cards have readable writing or symbols. Blank stacks / blank hero cards = fail.
 
 ## Relate (do not weaken)
 
 - **VO visual explainer** reinforces `HOS_HOUSE_VO_AND_TEACH_LOCK.md` — picture lands **with** the VO beat and teaches what the line says.
-- **Consistency** reinforces Explorer teal trenchcoat / on-model continuity (`.cursor/rules/hos-explorer-character.mdc` · Part 01 style baseline · film lessons).
+- **Consistency** + **round glasses** reinforce Explorer teal trenchcoat / on-model continuity (`.cursor/rules/hos-explorer-character.mdc` · Part 01 style baseline · film lessons).
 
 ## Do not
 
 - Soft-pass scenery-only under a specific VO line
-- Soft-pass off-model Explorer or wrong coat / scale vs locked priors
+- Soft-pass off-model Explorer, wrong coat / scale, bare/no-glasses Explorer, flame-spit lamps, or blank hero cards / blank stacks
 - Remint, mint, upload, Mini, Flow, Studio, Orbit, or Oppti from this rule alone
