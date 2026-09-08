@@ -1,0 +1,34 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v05_fast",
+  "continuity": "scrub_brown_panel_v05_veo_no_hard_fill",
+  "parent_v04_sha": "fda60b04bd3785b1f01b61c5c76b786a841d21152df29ed398ce5b5e4490554d",
+  "only": [
+    "02b_cards_sixty_three"
+  ],
+  "plates": [
+    {
+      "id": "02b_cards_sixty_three",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v05_fast/02b_cards_sixty_three_v05.mp4",
+      "duration": 8.0,
+      "kind": "T2V",
+      "start_frame": null,
+      "seconds": 51.2,
+      "bytes": 1425770,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:1425770",
+      "url": "https://flow.google.com/u/1/project/d18a4055-ceb3-4eee-b70f-3805eb6f6da0",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/d18a4055-ceb3-4eee-b70f-3805eb6f6da0"
+    }
+  ],
+  "flow_account": "benoats@googlemail.com"
+}
