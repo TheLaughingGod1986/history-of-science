@@ -1,13 +1,13 @@
 # Part 04 status — Empty Chairs
 
-**Updated:** 8 Sep 2026 Europe/London (rough v04 LANDED → CoS scores)
+**Updated:** 8 Sep 2026 Europe/London (rough v06 LANDED desk-only → CoS scores)
 
 | Cut | Status |
 |---|---|
 | P01 v14 | LOCKED — do not touch |
 | P02 v06 | LOCKED — do not touch |
 | P03 v09 | LOCKED (sha 30060612…) — do not touch |
-| P04 | **ROUGH LANDED** `hos_002_part04_rough_v04.mp4` — scores → CoS |
+| P04 | **ROUGH LANDED** `hos_002_part04_rough_v06.mp4` — scores → CoS |
 | P05 | Blocked until P04 KEEP/LOCK |
 
 ## Land (v04)
@@ -38,9 +38,12 @@
 - Scores → CoS only. Do not declare PASS.
 - **UAT FAIL:** ~18–21s 02b in-camera peaked roofs + chimneys (brown scrub CLEARED KEEP).
 
-## v06 (2026-09-08) — STOP
-- Attempted full Veo 3.1 Fast remint of `02b_cards_sixty_three` only (sky-only window lock).
-- Creates: **2/2 REJECT** (roofs/chimneys/town still readable). No hard-fill.
-- `hos_002_part04_rough_v06.mp4` **NOT LANDED**. Parent watch remains **v05**.
-- Flow: benoats@googlemail.com · P03 FROZEN `30060612…`
-- CoS sheet: `PART04_V06_COS_SCORES.md` · Scores → CoS only. Do not declare PASS. Do not ping Ben.
+## v06 (2026-09-08) — LANDED (desk-only 02b)
+- Cut: `hos_002_part04_rough_v06.mp4`
+- sha256: `5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2`
+- bytes: 76818977 · duration 127.760s
+- Method: Veo 3.1 Fast T2V of 02b only — **DESK-ONLY** (no window) — **no hard fill**
+- Flow: benoats@googlemail.com
+- Tries: Create 1 ACCEPT; Creates 2–3 crash-resubmits REJECT (window edge)
+- Scores → CoS only. Do not declare PASS. Do not ping Ben.
+- CoS sheet: `PART04_V06_COS_SCORES.md` · Sheet: `PART04_V06_DESK_ONLY_02B.md`

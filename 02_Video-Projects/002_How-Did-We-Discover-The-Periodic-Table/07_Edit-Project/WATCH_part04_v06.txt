@@ -1,0 +1,28 @@
+WATCH THIS FILE ONLY (Part 04 rough v06 — desk-only remint 02b):
+  hos_002_part04_rough_v06.mp4
+
+CoS / Picture→UAT gates for this cut:
+- Parent v05 FAIL ~18–21s: in-camera peaked roofs + chimneys through 02b window.
+- v06: FULL Veo Fast remint of 02b ONLY — DESK-ONLY framing (no window in frame).
+- Brown scrub CLEARED KEEP (books visible) — do not regress.
+- Spot ~18–21: desk continuous; NO window / panes / night sky / outdoor / roofs / chimneys / town.
+- KEEP: ~38–44s night sky · Explorer teal · glowing chair · Empty Chairs · late window cleared.
+- Real Veo Fast remint. Continuous motion. No Ken Burns. No hard fills / sky boxes.
+- Part 01 v14 + Part 02 v06 + Part 03 v09 LOCKED — do not remint
+- Do NOT declare PASS here. Scores → CoS. No P05 until KEEP/LOCK.
+
+Do not ping Ben. Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v05_sha=a7c9741c32f9689c019d5c8695b36a8e8d2bbbebfb19b93ee53b6d584b8a43fc
+reminted=02b_cards_sixty_three
+plate02b_picture=15.100-23.000
+columns_picture=37.750-45.650
+explorer_picture=45.300-53.200
+plate09_picture=90.600-98.500
+plate09b_picture=98.150-106.050
+sha256=5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2
+bytes=76818977
+duration=127.760
+method=Veo 3.1 Fast T2V desk-only
+tries=1 accepted (Creates 2–3 crash-resubmits rejected)
+flow=benoats@googlemail.com

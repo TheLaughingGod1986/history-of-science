@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Assemble HOS 002 Part 04 rough v06 — scrub 02b window roofs.
+"""Assemble HOS 002 Part 04 rough v06 — desk-only remint 02b (no window).
 
 Parent: hos_002_part04_rough_v05.mp4 sha a7c9741c…
-  - REMINT: 02b_cards_sixty_three ONLY (in-camera peaked roofs + chimneys)
+  - REMINT: 02b_cards_sixty_three ONLY (desk-only: no window/roofs in 02b)
   - KEEP: brown scrub cleared · late window 09/09b · night-sky 05/06 · Explorer · Empty Chairs
   - P01–P03 FROZEN (P03 sha 30060612…)
   - Scores → CoS only. Do not declare PASS. Do not ping Ben.
@@ -323,7 +323,7 @@ def main() -> None:
                 "hos_uat": str(ICLOUD / OUT.name),
                 "watch": "WATCH_part04_v06.txt",
                 "note": (
-                    "Scrub 02b in-camera window roofs ~18–21. "
+                    "Desk-only 02b (no window in frame) ~18–21. "
                     "KEEP brown scrub cleared · late window · night-sky ~40 · "
                     "Explorer teal · Empty Chairs. Scores → CoS only. Do not declare PASS."
                 ),
@@ -338,13 +338,13 @@ def main() -> None:
     subprocess.run(["cp", "-f", str(OUT), str(dest)], check=True)
     watch = ICLOUD / "WATCH_part04_v06.txt"
     watch.write_text(
-        "WATCH THIS FILE ONLY (Part 04 rough v06 — scrub 02b window roofs):\n"
+        "WATCH THIS FILE ONLY (Part 04 rough v06 — desk-only remint 02b (no window)):\n"
         f"  {OUT.name}\n\n"
         "CoS / Picture→UAT gates for this cut:\n"
-        "- Parent v05 FAIL ~18–21s: in-camera peaked roofs + chimneys through 02b window.\n"
+        "- Parent v05 FAIL ~18–21s: desk-only: no window/roofs in 02b through 02b window.\n"
         "- Brown scrub CLEARED KEEP (books visible) — do not regress.\n"
         "- Reminted: 02b_cards_sixty_three ONLY (Veo Fast). KEEP v04 09/09b + v02 05/06.\n"
-        "- Spot ~18–21: night sky + moon + clouds + stars ONLY; n≈0 roofs/chimneys/town.\n"
+        "- Spot ~18–21: night sky + moon + clouds + stars ONLY; no window · no roofs/chimneys/town.\n"
         "- KEEP: ~38–44s night sky · Explorer teal · glowing chair · Empty Chairs · late window.\n"
         "- Real Veo Fast remint. Continuous motion. No Ken Burns. No hard fills / sky boxes.\n"
         "- Part 01 v14 + Part 02 v06 + Part 03 v09 LOCKED — do not remint\n"
@@ -365,7 +365,7 @@ def main() -> None:
     (ICLOUD / "ZZ_OPEN_PART04_V06_ONLY.txt").write_text(
         "Part 04 current cut = hos_002_part04_rough_v06.mp4\n"
         "Part 01 v14 + Part 02 v06 + Part 03 v09 are LOCKED keepers.\n"
-        "v05 was UAT FAIL (02b window roofs) — watch v06 only.\n"
+        "v05 UAT FAIL roofs → v06 desk-only — watch v06 only.\n"
     )
     (ICLOUD / "PART04_NEXT.txt").write_text(
         "Part 04 rough remint LANDED: hos_002_part04_rough_v06.mp4\n"
