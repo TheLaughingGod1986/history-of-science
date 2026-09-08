@@ -403,18 +403,19 @@ def main() -> None:
         "WATCH THIS FILE ONLY (Part 04 rough v11 — Ben FAIL glasses/lamp/written cards):\n"
         f"  {OUT.name}\n\n"
         "CoS / Picture→UAT gates for this cut:\n"
-        "- v08 UAT FAIL ~45–53s: teal pith helmet + colour DNA drift (darkened skin).\n"
-        "- Reminted: 06_explorer_leaves_gap ONLY. KEEP all other plates from v08 timeline.\n"
-        "- Spot Explorer ~45–53s: bare head (messy wavy chestnut hair), fair warm tan skin,\n"
-        "  house dark teal trenchcoat — same boy as character sheet / Germs / P03.\n"
-        "  Toy-scale garnish (profile/OTS/back), NOT face-hero. NO hat/helmet/cap.\n"
-        "- KEEP: Empty Chairs glow · EMPTY SEATS / Eka labels · 02b desk-only · late indoor.\n"
-        "- Real Veo Fast remint. Continuous motion. No Ken Burns. No hard fills / sky boxes.\n"
-        "- Part 01–03 LOCKED — do not remint\n"
+        "- Parent FAIL v10 sha eab7f8ec… — Ben override 8 Sep (glasses / lamp fire / blank cards).\n"
+        "- Reminted v11: 06_explorer_leaves_gap · 05b_families_settle · 07_eka_placeholders ·\n"
+        "  07b_eka_names_rotate · 09_risk_bet · 09b_risk_hold. KEEP 02b desk + 05 columns + rest.\n"
+        "- Spot Explorer ~45–53s: ROUND gold/wire glasses ALWAYS visible · bare head ·\n"
+        "  messy wavy chestnut · fair warm tan · dark teal coat · profile/OTS/back garnish.\n"
+        "- Lamp clean: warm desk-lamp glow ONLY — NO fire spit / candle / Bunsen on desk.\n"
+        "- Cards: readable H/C/O/Eka/atomic marks — NEVER blank cream stacks/hero cards.\n"
+        "- KEEP: Empty Chairs glow · EMPTY SEATS / Eka / A BET labels · indoor wood/bookcase.\n"
+        "- Part 01–03 LOCKED — do not remint. Real Veo Fast. No Ken Burns.\n"
         "- Do NOT declare PASS here. Scores → CoS. No P05 until KEEP/LOCK.\n\n"
         "Do not ping Ben. Reject with stills from THIS file only.\n"
         f"keep_p03_sha={p03_sha}\n"
-        f"parent_v08_sha={v08_sha}\n"
+        f"parent_v10_sha={v10_sha}\n"
         f"reminted={','.join(reminted)}\n"
         f"plate06_sha256={plate06_sha}\n"
         f"plate02b_picture={plate02b_start:.3f}-{plate02b_end:.3f}\n"
@@ -428,12 +429,12 @@ def main() -> None:
     (ICLOUD / "ZZ_OPEN_PART04_V11_ONLY.txt").write_text(
         "Part 04 current cut = hos_002_part04_rough_v11.mp4\n"
         "Part 01–03 LOCKED keepers.\n"
-        "v08 UAT FAIL hat+colour → v09 hat-free colour DNA — watch v09 only.\n"
+        "v10 Ben FAIL (glasses/lamp/blank cards) → v11 remint — watch v11 only.\n"
     )
     (ICLOUD / "PART04_NEXT.txt").write_text(
         "Part 04 rough remint LANDED: hos_002_part04_rough_v11.mp4\n"
         "Watch WATCH_part04_v11.txt\n"
-        "Scores → CoS. No P05 until KEEP/LOCK.\n"
+        "Scores → CoS. No P05 until KEEP/LOCK. Do not declare PASS. Do not ping Ben.\n"
     )
     print(f"ICLOUD {dest}", flush=True)
     print(f"WATCH {watch}", flush=True)
