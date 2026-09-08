@@ -103,16 +103,15 @@ def main() -> None:
     glow_slot(d, (int(W * 0.48), int(H * 0.52)), (cw, ch))
     bed = Image.alpha_composite(bed, overlay)
 
-    # Prefer Germs lock (live film DNA), then P03, then sheet.
-    fig = crop_explorer_germs(GERMS)
-    fig_src = "germs_lock"
-    # Soft-alpha edges: convert near-white sheet leftover if any — germs is full scene.
-    out = place_toy(bed, fig, target_h_frac=0.17)
-    # Also write alt with P03 crop for visual compare
+    # Prefer character SHEET full-body (full crown hair DNA). Germs/P03 alts for compare.
+    # Prior Germs-first compose led I2V to invent bald crown when turning away.
+    fig = crop_explorer_sheet(SHEET)
+    fig_src = "character_sheet_fullbody"
+    out = place_toy(bed, fig, target_h_frac=0.18)
+    alt_germs = place_toy(bed, crop_explorer_germs(GERMS), target_h_frac=0.17)
     alt_p03 = place_toy(bed, crop_explorer_p03(P03), target_h_frac=0.15)
-    alt_sheet = place_toy(bed, crop_explorer_sheet(SHEET), target_h_frac=0.16)
+    alt_germs.convert("RGB").save(OUT_DIR / "06_alt_germs_compose.jpg", quality=92)
     alt_p03.convert("RGB").save(OUT_DIR / "06_alt_p03_compose.jpg", quality=92)
-    alt_sheet.convert("RGB").save(OUT_DIR / "06_alt_sheet_compose.jpg", quality=92)
 
     rgb = out.convert("RGB")
     rgb.save(OUT, quality=94)
@@ -120,13 +119,13 @@ def main() -> None:
         "out": str(OUT),
         "desk_src": str(desk_src),
         "explorer_src": fig_src,
-        "dna_refs": [str(GERMS), str(P03), str(SHEET)],
+        "dna_refs": [str(SHEET), str(GERMS), str(P03)],
         "forbidden": "never use v08 hat FAIL stills as start frame",
         "locks": [
-            "NO HAT — bare messy wavy chestnut-brown hair",
+            "NO HAT — FULL messy wavy chestnut crown hair (sheet DNA)",
             "skin: light-medium warm tan / fair boy",
             "coat: house dark teal / blue-green trenchcoat",
-            "toy-scale garnish profile/OTS — not face-hero",
+            "toy-scale garnish PROFILE — not face-hero, not bald-crown back",
         ],
     }
     META.write_text(json.dumps(meta, indent=2) + "\n")
