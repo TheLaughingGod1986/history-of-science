@@ -991,6 +991,49 @@ def still_check_roofs(clip: Path, tag: str) -> dict:
     return report
 
 
+def candle_flame_suspect(still: Path) -> dict:
+    """Detect lit candle / fire spit away from the left desk-lamp shade."""
+    im = Image.open(still).convert("RGB")
+    w, h = im.size
+    pix = im.load()
+    hits = 0
+    # Ignore left lamp shade region; scan desk mid for candle cores
+    x0, x1 = int(w * 0.28), int(w * 0.72)
+    y0, y1 = int(h * 0.28), int(h * 0.72)
+    for y in range(y0, y1, 2):
+        for x in range(x0, x1, 2):
+            r, g, b = pix[x, y]
+            # tight candle tip: bright yellow-orange core
+            if r >= 220 and g >= 150 and b <= 95 and (r - b) >= 130:
+                hits += 1
+            elif r >= 245 and g >= 210 and b <= 130 and (r + g) >= 460 and (r - b) >= 110:
+                hits += 1
+    return {
+        "still": str(still),
+        "candle_hits": hits,
+        "candle": hits >= 18,
+    }
+
+
+def still_check_candle(clip: Path, tag: str) -> dict:
+    stills = extract_stills(clip, QA_STILLS, f"{tag}_candle")
+    scores = [candle_flame_suspect(p) for p in stills]
+    bad = [s for s in scores if s["candle"]]
+    report = {
+        "tag": tag,
+        "clip": str(clip),
+        "scores": scores,
+        "candle_frame_count": len(bad),
+        "reject": len(bad) >= 2,
+    }
+    (QA_STILLS / f"{tag}_candle_check.json").write_text(json.dumps(report, indent=2) + "\n")
+    print(
+        f"  candle-check {tag}: candle_frames={len(bad)}/9 reject={report['reject']}",
+        flush=True,
+    )
+    return report
+
+
 def _truthy(name: str) -> bool:
     return os.environ.get(name, "").strip().lower() in {"1", "true", "yes", "on"}
 
@@ -1260,6 +1303,7 @@ def main() -> None:
 
                     tag = f"{pid}_try{create_n}"
                     check = still_check_roofs(tmp, tag)
+                    ccheck = still_check_candle(tmp, tag)
                     # Garnish / face-hero checks are Explorer-only (desk plates have teal vessels)
                     if pid == "06_explorer_leaves_gap":
                         gcheck = still_check_garnish(tmp, tag)
@@ -1294,6 +1338,10 @@ def main() -> None:
                             "suspect_count": check["suspect_count"],
                             "roof_readable": check["roof_readable"],
                         },
+                        "candle_check": {
+                            "candle_frame_count": ccheck["candle_frame_count"],
+                            "reject": ccheck["reject"],
+                        },
                         "hat_colour": {
                             "hat_count": hcheck["hat_count"],
                             "colour_bad_count": hcheck["colour_bad_count"],
@@ -1308,6 +1356,8 @@ def main() -> None:
                     reject_reasons = []
                     if check["roof_readable"]:
                         reject_reasons.append("hardfill_or_roof")
+                    if ccheck.get("reject"):
+                        reject_reasons.append("candle_fire")
                     if gcheck.get("auto_reject"):
                         reject_reasons.append("faceon_hero")
                     if hcheck.get("hat_reject"):
