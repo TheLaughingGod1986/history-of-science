@@ -2,12 +2,21 @@
   "engine": "flow-ui",
   "model": "Veo 3.1 - Fast",
   "flow_home": "https://flow.google.com/u/1/",
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v06_fast",
   "continuity": "scrub_02b_window_roofs_v06_veo_no_hard_fill",
   "parent_v05_sha": "a7c9741c32f9689c019d5c8695b36a8e8d2bbbebfb19b93ee53b6d584b8a43fc",
-  "flow_account": "benoats@googlemail.com",
+  "window_lock": "night sky + moon + clouds + stars ONLY; NO buildings/houses/peaked roofs/chimneys/town silhouette/skyline",
   "max_creates": 2,
   "only": [
     "02b_cards_sixty_three"
+  ],
+  "plates": [
+    {
+      "id": "02b_cards_sixty_three",
+      "status": "fail_roofs_or_create",
+      "error": "roofs after max Creates",
+      "tries": 2
+    }
   ],
   "tries": [
     {
@@ -17,7 +26,46 @@
       "project_url": "https://flow.google.com/u/1/project/ea1943c7-80f4-4800-9702-fa9858fefc0f",
       "note": "Vision still-check: peaked roofs+chimneys readable t0-t7; heuristic dark_frac under-threshold so visual reject",
       "out": "04_Generated-Clips/part04/raw/v06_fast/_rejected/02b_cards_sixty_three_v06_try1_roofs.mp4"
+    },
+    {
+      "id": "02b_cards_sixty_three",
+      "create": 2,
+      "status": "reject_roofs_visual",
+      "duration": 8.0,
+      "bytes": 1348486,
+      "roof_check": {
+        "suspect_count": 9,
+        "roof_readable": true,
+        "dark_fracs": [
+          0.4991,
+          0.5065,
+          0.4998,
+          0.4889,
+          0.4828,
+          0.4843,
+          0.4867,
+          0.4853,
+          0.4836
+        ]
+      },
+      "seconds": 51.2,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:1348486",
+      "url": "https://flow.google.com/u/1/project/46215d4f-a524-473d-992f-b62a340050b0",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/46215d4f-a524-473d-992f-b62a340050b0",
+      "out": "04_Generated-Clips/part04/raw/v06_fast/_rejected/02b_cards_sixty_three_v06_try2_roofs.mp4",
+      "note": "Vision still-check: peaked roofs+chimneys/town silhouette readable t0-t8; STOP at max 2 Creates"
     }
   ],
-  "plates": []
+  "flow_account": "benoats@googlemail.com",
+  "stop": true,
+  "stop_reason": "roofs after 2 Creates \u2014 no hard-fill; v06 rough not assembled",
+  "accepted_try": null
 }

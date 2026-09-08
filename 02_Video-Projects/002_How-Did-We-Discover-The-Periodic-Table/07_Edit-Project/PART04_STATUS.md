@@ -36,3 +36,11 @@
 - Method: Veo 3.1 Fast T2V of 02b only — **no hard fill**
 - Flow: benoats@googlemail.com
 - Scores → CoS only. Do not declare PASS.
+- **UAT FAIL:** ~18–21s 02b in-camera peaked roofs + chimneys (brown scrub CLEARED KEEP).
+
+## v06 (2026-09-08) — STOP
+- Attempted full Veo 3.1 Fast remint of `02b_cards_sixty_three` only (sky-only window lock).
+- Creates: **2/2 REJECT** (roofs/chimneys/town still readable). No hard-fill.
+- `hos_002_part04_rough_v06.mp4` **NOT LANDED**. Parent watch remains **v05**.
+- Flow: benoats@googlemail.com · P03 FROZEN `30060612…`
+- CoS sheet: `PART04_V06_COS_SCORES.md` · Scores → CoS only. Do not declare PASS. Do not ping Ben.

@@ -46,7 +46,9 @@ PROFILE = Path(
         str(Path.home() / ".playwright-hos-flow-profile"),
     )
 )
-MAX_CREATES = 2
+MAX_CREATES = int(os.environ.get("HOS_V06_MAX_CREATES", "2"))
+CREATE_OFFSET = int(os.environ.get("HOS_V06_CREATE_OFFSET", "0"))  # prior Creates already spent
+
 
 STYLE = (
     "Animistry-class stylised 3D cartoon (NOT photoreal). "
@@ -601,10 +603,13 @@ def main() -> None:
 
                 accepted = False
                 last_err: Exception | None = None
-                for create_n in range(1, MAX_CREATES + 1):
+                # CREATE_OFFSET accounts for Creates already spent this scrub (e.g. try1 rejected).
+                creates_this_run = max(1, MAX_CREATES - CREATE_OFFSET)
+                for local_n in range(1, creates_this_run + 1):
+                    create_n = CREATE_OFFSET + local_n
                     print(
                         f"\n=== Fast T2V {pid} Create {create_n}/{MAX_CREATES} "
-                        f"({i+1}/{len(plates)}) ===",
+                        f"(run {local_n}/{creates_this_run}) ({i+1}/{len(plates)}) ===",
                         flush=True,
                     )
                     try:
