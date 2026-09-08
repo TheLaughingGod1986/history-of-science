@@ -1254,8 +1254,29 @@ def main() -> None:
 
                     tag = f"{pid}_try{create_n}"
                     check = still_check_roofs(tmp, tag)
-                    gcheck = still_check_garnish(tmp, tag)
-                    hcheck = still_check_hat_colour(tmp, tag)
+                    # Garnish / face-hero checks are Explorer-only (desk plates have teal vessels)
+                    if pid == "06_explorer_leaves_gap":
+                        gcheck = still_check_garnish(tmp, tag)
+                        hcheck = still_check_hat_colour(tmp, tag)
+                    else:
+                        gcheck = {
+                            "face_hero": False,
+                            "faceon_pose": False,
+                            "auto_reject": False,
+                            "face_hero_count": 0,
+                            "faceon_count": 0,
+                            "max_h_frac": 0.0,
+                            "skipped": "non_explorer_plate",
+                        }
+                        hcheck = {
+                            "hat_reject": False,
+                            "colour_reject": False,
+                            "reject": False,
+                            "hat_count": 0,
+                            "colour_bad_count": 0,
+                            "skipped": "non_explorer_plate",
+                        }
+                        print(f"  skip garnish/hat checks for desk plate {pid}", flush=True)
                     try_rec = {
                         "id": pid,
                         "create": create_n,
