@@ -21,7 +21,7 @@
 | `PART03_LESSONS.md` | Part 03 house locks (six) + going-forward Ben |
 | `07_Edit-Project/PART03_KEEP_AND_LOCK_GATE.md` | **P03 LOCKED** on `hos_002_part03_rough_v09` · P04 unlocked |
 | `00_Brand/Brand-Guidelines/HOS_HOUSE_VO_AND_TEACH_LOCK.md` | House VO clarity + teach — **Part 04+** and later films (not a P03 remint) |
-| `00_Brand/Brand-Guidelines/HOS_UAT_BIBLE_HOUSE_LOCK.md` | Standing ALWAYS UAT bible — consistency + VO visual explainer (every HOS cut) |
+| `00_Brand/Brand-Guidelines/HOS_UAT_BIBLE_HOUSE_LOCK.md` | Standing ALWAYS UAT bible — consistency · VO visual explainer · Explorer round glasses · lamp clean warm glow · readable cards (every HOS cut) |
 
 ## Board (locked)
 
