@@ -1,0 +1,23 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "continuity": "scrub_02b_window_roofs_v06_veo_no_hard_fill",
+  "parent_v05_sha": "a7c9741c32f9689c019d5c8695b36a8e8d2bbbebfb19b93ee53b6d584b8a43fc",
+  "flow_account": "benoats@googlemail.com",
+  "max_creates": 2,
+  "only": [
+    "02b_cards_sixty_three"
+  ],
+  "tries": [
+    {
+      "id": "02b_cards_sixty_three",
+      "create": 1,
+      "status": "reject_roofs_visual",
+      "project_url": "https://flow.google.com/u/1/project/ea1943c7-80f4-4800-9702-fa9858fefc0f",
+      "note": "Vision still-check: peaked roofs+chimneys readable t0-t7; heuristic dark_frac under-threshold so visual reject",
+      "out": "04_Generated-Clips/part04/raw/v06_fast/_rejected/02b_cards_sixty_three_v06_try1_roofs.mp4"
+    }
+  ],
+  "plates": []
+}

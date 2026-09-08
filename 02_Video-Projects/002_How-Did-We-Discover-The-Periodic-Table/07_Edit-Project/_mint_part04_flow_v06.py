@@ -74,11 +74,14 @@ DESK_PROP_LOCK = (
 
 # Sheet lock — must appear verbatim in spirit in the mint prompt.
 WINDOW_LOCK = (
-    "Through the REAL wooden window panes: deep night sky + full moon + soft "
-    "clouds + faint stars ONLY. Window = night sky + moon + clouds + stars ONLY. "
+    "CRITICAL WINDOW LOCK: Through the REAL wooden window panes the view is "
+    "deep night sky + full moon + soft clouds + faint stars ONLY. "
+    "Window = night sky + moon + clouds + stars ONLY. "
+    "Lower panes must show OPEN night sky continuing all the way to the sill — "
+    "NO dark horizon band, NO building outlines. "
     "NO buildings, NO houses, NO peaked roofs, NO chimneys, NO town silhouette, "
-    "NO skyline, NO rooftops on the sill, NO model-town. Completely EMPTY of "
-    "architecture — clear open night sky filling every pane down to the sill. "
+    "NO skyline, NO rooftops on the sill, NO model-town, NO village, NO city. "
+    "Completely EMPTY of architecture. "
     "Rendered IN-CAMERA through real window panes — NOT a pasted flat sky "
     "rectangle or hard fill."
 )
@@ -95,15 +98,16 @@ PROMPT_02B = (
 )
 
 T2V_02B = (
+    "ABSOLUTE FIRST RULE: the lab window shows ONLY night sky, moon, clouds, "
+    "and stars — zero architecture outside. "
+    f"{WINDOW_LOCK} "
     "ONE continuous natural 1869 chemist desk shot with NO overlays: honey wood "
     "desk, soft warm brass lamp glowing, dense neat stack of cream blank cards "
     "gently flipping and settling as if counting sixty-three known elements, "
     "stack of thick brown leather-bound books with PLAIN clean tops (no house "
     "props, no house silhouettes, no brown scrub panel), pink/teal/orange lab "
-    "flasks, white mortar. "
-    f"{WINDOW_LOCK} "
-    "Continuous gentle card shuffle and subtle camera drift. Silent. No "
-    "people. No hands. No Explorer. "
+    "flasks, white mortar. Continuous gentle card shuffle and subtle camera "
+    "drift. Silent. No people. No hands. No Explorer. "
     + STYLE + " " + REJECT + " " + DESK_PROP_LOCK
 )
 
@@ -371,12 +375,26 @@ def probe_dur(path: Path) -> float:
 def extract_stills(clip: Path, dest_dir: Path, tag: str) -> list[Path]:
     dest_dir.mkdir(parents=True, exist_ok=True)
     outs: list[Path] = []
-    for t in range(0, 9):
-        out = dest_dir / f"{tag}_t{t}.jpg"
+    dur = probe_dur(clip)
+    # Sheet: still-check every second ~0–8. Clamp last seek inside clip.
+    times = [float(t) for t in range(0, 9)]
+    times = [min(t, max(0.0, dur - 0.08)) for t in times]
+    # de-dupe if clip shorter than 8s
+    seen: set[float] = set()
+    uniq: list[float] = []
+    for t in times:
+        key = round(t, 2)
+        if key in seen:
+            continue
+        seen.add(key)
+        uniq.append(t)
+    for i, t in enumerate(uniq):
+        out = dest_dir / f"{tag}_t{i}.jpg"
         subprocess.run(
             [
                 "ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
-                "-ss", str(t), "-i", str(clip), "-frames:v", "1", str(out),
+                "-ss", f"{t:.3f}", "-i", str(clip),
+                "-frames:v", "1", "-q:v", "2", str(out),
             ],
             check=True,
         )
@@ -385,11 +403,11 @@ def extract_stills(clip: Path, dest_dir: Path, tag: str) -> list[Path]:
 
 
 def roof_suspect_score(still: Path) -> dict:
-    """Heuristic: dark silhouette band in lower window panes against blue sky.
+    """Heuristic: dark / navy silhouette band in lower window panes.
 
-    Window glass on 02b desk shots is typically upper-centre. Dark peaked roofs
-    read as very dark pixels under blue night sky. This is a gate assist — agent
-    still visually reviews stills before KEEP.
+    Window glass on 02b desk shots is typically upper-centre. Roofs often read as
+    near-black OR very dark navy (not pure black). Gate assist only — agent still
+    visually reviews stills before KEEP.
     """
     im = Image.open(still).convert("RGB")
     w, h = im.size
@@ -409,13 +427,16 @@ def roof_suspect_score(still: Path) -> dict:
             # wood muntins are warm brown — skip
             if r > 90 and g > 55 and b < 80 and (r - b) > 30:
                 continue
-            if r < 55 and g < 55 and b < 70:
+            lum = (r + g + b) / 3.0
+            # near-black OR dark navy silhouette (common Veo town stamp)
+            if lum < 70 and b <= 110 and r < 90 and g < 90:
                 dark += 1
-            elif b > r + 15 and b > g + 5 and b > 70:
+            elif b > r + 15 and b > g + 5 and b > 70 and lum > 90:
                 blueish += 1
     dark_frac = (dark / total) if total else 0.0
     # Peaked roofs leave a meaningful dark fraction in the sill band.
-    suspect = dark_frac >= 0.085
+    # Tuned after try1 visual FAIL where pure-black threshold missed navy roofs.
+    suspect = dark_frac >= 0.035
     return {
         "still": str(still),
         "dark": dark,
@@ -477,8 +498,8 @@ def main() -> None:
             flush=True,
         )
 
-    argv = [a for a in sys.argv[1:] if not a.startswith("-")]
-    if argv == ["--probe-auth"]:
+    raw_argv = sys.argv[1:]
+    if "--probe-auth" in raw_argv:
         profile = flow.profile_path(PROFILE)
         from playwright.sync_api import sync_playwright
 
@@ -488,6 +509,7 @@ def main() -> None:
             safe_close(ctx)
         return
 
+    argv = [a for a in raw_argv if not a.startswith("-")]
     only = set(argv) if argv else set(DEFAULT_ONLY)
     bad = only - ALLOWED_ONLY
     if bad:
