@@ -96,13 +96,13 @@ HAT_LOCK = (
 )
 
 POSE_LOCK = (
-    "CAMERA / POSE LOCK (UAT FAIL v09 — hard): Camera stays BEHIND or BESIDE the Explorer "
-    "for the ENTIRE 8 seconds. PROFILE view OR back / over-shoulder view ONLY — match "
-    "Part 03 house garnish pose language. Explorer faces the desk cards / gap, NEVER the lens. "
-    "He may lean, pin a cream card into the glowing empty-seat gap, and step slightly aside, "
-    "but he must NEVER turn to face the camera, NEVER strike a hands-on-hips ¾ front hero, "
-    "NEVER teach/present to the viewer. Toy-scale garnish on the desk the whole clip. "
-    "HARD REJECT any frame that is face-on or ¾-front hero looking at camera."
+    "STATIC LOCKED CAMERA behind Explorer. Full BACK view for all 8 seconds. "
+    "Feet planted — Explorer does NOT walk, does NOT turn, does NOT rotate. "
+    "Only small arm motion: place one cream card into the glowing empty-seat gap. "
+    "Back of head and teal coat fill the silhouette the entire clip. Never show a face. "
+    "Never ¾-front. Never orbit camera. FULL thick messy wavy chestnut hair covering "
+    "whole crown (no bald). Exactly ONE Explorer, no clones. Toy-scale garnish. "
+    "HARD REJECT face, turn, walk-toward-camera, bald, twins."
 )
 
 

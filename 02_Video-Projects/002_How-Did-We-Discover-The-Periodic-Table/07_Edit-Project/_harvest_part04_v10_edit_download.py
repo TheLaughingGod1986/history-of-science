@@ -172,8 +172,7 @@ def click_download_720(page, ctx, dl_dir: Path) -> Path | None:
             f
             for f in dl_dir.iterdir()
             if f.is_file()
-            and not f.name.endswith(".crdownload")
-            and not f.name.endswith(".tmp")
+            and not f.name.endswith(".tmp")  # allow finished .crdownload (Chrome rename flake)
         ]
         big = [f for f in files if f.stat().st_size > 400_000]
         if big:
@@ -188,15 +187,11 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--project",
-        default="https://flow.google.com/u/1/project/8bbeb102-a2d7-4f17-bb3e-120c3f09d996",
+        default="https://flow.google.com/u/1/project/57da1bf5-a379-4e8e-935f-d97751257d82",
     )
     ap.add_argument(
         "--edit",
-        default=(
-            "https://flow.google.com/u/1/project/"
-            "8bbeb102-a2d7-4f17-bb3e-120c3f09d996/edit/"
-            "5fd3ec92-6c41-4ef3-ad5a-382024fe810c"
-        ),
+        default="",
         help="Direct Flow edit URL for the clip (preferred). Empty string skips.",
     )
     ap.add_argument(
