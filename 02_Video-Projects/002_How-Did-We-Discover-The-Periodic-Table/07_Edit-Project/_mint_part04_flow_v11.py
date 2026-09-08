@@ -70,7 +70,8 @@ PARENT_V10_SHA = "eab7f8ec4d01ae21352e882dd50f8b45bab13d6305c2ac21f6fb73682e47ec
 STYLE = (
     "Animistry-class stylised 3D cartoon (NOT photoreal). "
     "ONE continuous 1869 chemist desk: honey wood desktop, soft warm lamp, cream "
-    "blank cards, leather books, lab vessels. Continuous real camera/object motion "
+    "element cards with readable ink letters/symbols (H/C/O/Eka — NEVER blank), "
+    "leather books, lab vessels. Continuous real camera/object motion "
     "the whole clip. Silent. No Orbit. No Ken Burns still. Opaque vessels preferred."
 )
 
@@ -120,13 +121,14 @@ HAT_LOCK = (
 )
 
 POSE_LOCK = (
-    "STATIC LOCKED CAMERA behind Explorer. Full BACK view for all 8 seconds. "
-    "Feet planted — Explorer does NOT walk, does NOT turn, does NOT rotate. "
-    "Only small arm motion: place one cream card into the glowing empty-seat gap. "
-    "Back of head and teal coat fill the silhouette the entire clip. Never show a face. "
-    "Never ¾-front. Never orbit camera. FULL thick messy wavy chestnut hair covering "
-    "whole crown (no bald). Exactly ONE Explorer, no clones. Toy-scale garnish. "
-    "HARD REJECT face, turn, walk-toward-camera, bald, twins."
+    "STATIC LOCKED CAMERA behind Explorer. Full BACK / over-shoulder view for ALL 8 seconds. "
+    "Feet planted — Explorer does NOT walk forward, does NOT turn toward camera, does NOT "
+    "rotate to face the lens. Only tiny arm motion: place one WRITTEN cream card into the "
+    "glowing empty-seat gap. We see the BACK of his head, teal coat, and temple glasses "
+    "rim the entire clip. Never show a face. Never ¾-front. Never orbit camera. "
+    "FULL thick messy wavy chestnut hair covering whole crown (no bald). Exactly ONE "
+    "Explorer, no clones. Toy-scale garnish. "
+    "HARD REJECT face, turn-to-camera, ¾-front hero, walk-toward-camera, bald, twins."
 )
 
 
@@ -145,8 +147,9 @@ REJECT = (
 )
 
 DESK_PROP_LOCK = (
-    "Leather-bound books stay with PLAIN leather tops OR blank cream cards — "
-    "continuous 3D books, NOT a flat brown panel. ZERO house silhouettes on props."
+    "Leather-bound books stay with PLAIN leather tops; cream element cards show "
+    "readable ink marks (never blank stacks). Continuous 3D books, NOT a flat brown "
+    "panel. ZERO house silhouettes on props."
 )
 
 WINDOW_LOCK = (
@@ -182,13 +185,13 @@ PROMPTS = {
         "CAMERA LOCK: Camera behind or beside Explorer. Profile or back / over-shoulder "
         "view ONLY for the ENTIRE 8 seconds. Never face the camera. Never ¾-front hero. "
         "Toy-scale garnish on desk. Glasses rims stay readable even in profile. "
-        "He stays a small teal figurine on the honey-wood chemist desk. Beat: in PROFILE "
-        "or from behind he pins one WRITTEN cream element card (ink symbol visible) into "
-        "a vertical card column, leaves a glowing vacant seat/gap, then steps slightly "
-        "aside — still profile or back. Desk cards show readable H/C/O/Eka marks. "
-        "Soft warm desk-lamp glow only — NO candle, NO fire spit, NO sparks. "
-        "Fully indoor wood panelled wall / filled bookcase behind the desk (no window/"
-        "sky/roofs/blue fills/moon). "
+        "He stays a small teal figurine on the honey-wood chemist desk. Beat: FROM BEHIND "
+        "ONLY he pins one WRITTEN cream element card (ink H/C/O/Eka visible) into a "
+        "vertical card column and leaves a glowing vacant seat/gap. He NEVER turns to "
+        "face the camera — back/OTS silhouette holds for the full 8s. Desk cards show "
+        "readable H/C/O/Eka marks. Soft warm desk-lamp glow only — NO candle, NO fire "
+        "spit, NO sparks. Fully indoor wood panelled wall / filled bookcase behind the "
+        "desk (no window/sky/roofs/blue fills/moon). "
         f"{EXPLORER_GARNISH_LOCK} {WINDOW_LOCK} {DESK_PROP_LOCK} "
         "Silent. HARD REJECT: face-on, ¾ hero, no glasses, blank cards, candle/fire lamp, "
         "hat, bald crown, darkened skin, wrong coat hue, twins, window, exterior sky. "
