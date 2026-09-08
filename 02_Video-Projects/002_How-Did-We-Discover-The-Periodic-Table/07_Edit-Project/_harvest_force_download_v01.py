@@ -215,7 +215,8 @@ def main() -> None:
                         if (r.width<20 || r.height<12) continue;
                         let score=0;
                         if (/720p/i.test(t)) score+=12;
-                        if (/1080p/i.test(t)) score+=10;
+                        if (/1080p/i.test(t)) score+=6;
+                        if (/upscaled/i.test(t)) score-=8;
                         if (/\\bmp4\\b/i.test(t)) score+=10;
                         if (/upscaled/i.test(t)) score+=3;
                         if (/1k|original size|image|jpeg|png|still|fullscreen/i.test(t)
@@ -227,10 +228,31 @@ def main() -> None:
                       return scored[0]||null;
                     }"""
                 )
-                if item:
+                # Prefer leaf 720p before scored menu (avoid Upscaled 1080)
+                leaf_clicked=False
+                for sel in (
+                    page.get_by_text("720p", exact=True),
+                    page.locator("text=720p"),
+                ):
+                    try:
+                        n=min(sel.count(), 6)
+                        for i in range(n):
+                            el=sel.nth(i)
+                            box=el.bounding_box()
+                            if not box or box["width"]>=400 or box["height"]>=80:
+                                continue
+                            el.click(timeout=3000, force=True)
+                            print(f"  leaf click 720p i={i} box={box}", flush=True)
+                            leaf_clicked=True
+                            break
+                        if leaf_clicked:
+                            break
+                    except Exception as e:
+                        print(f"  leaf warn: {e}", flush=True)
+                if not leaf_clicked and item:
                     print(f"  menu → {item}", flush=True)
                     page.mouse.click(item["x"], item["y"])
-                else:
+                elif not leaf_clicked:
                     print("  no menu item — waiting for direct download", flush=True)
                 # Wait for file on disk (CDP path)
                 raw = None
@@ -238,9 +260,7 @@ def main() -> None:
                 while time.time() < deadline:
                     files = [
                         f for f in dl_dir.iterdir()
-                        if f.is_file()
-                        and not f.name.endswith(".crdownload")
-                        and not f.name.endswith(".tmp")
+                        if f.is_file() and not f.name.endswith(".tmp")
                     ]
                     big = [f for f in files if f.stat().st_size > 400_000]
                     if big:
