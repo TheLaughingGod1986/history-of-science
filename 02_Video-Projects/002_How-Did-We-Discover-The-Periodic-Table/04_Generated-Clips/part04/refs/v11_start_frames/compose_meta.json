@@ -1,0 +1,29 @@
+{
+  "out_dir": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_start_frames",
+  "starts": {
+    "06_explorer_leaves_gap": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_start_frames/06_explorer_leaves_gap_start_v11.jpg",
+    "05b_families_settle": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_start_frames/05b_families_settle_start_v11.jpg",
+    "07_eka_placeholders": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_start_frames/07_eka_placeholders_start_v11.jpg",
+    "07b_eka_names_rotate": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_start_frames/07b_eka_names_rotate_start_v11.jpg",
+    "09_risk_bet": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_start_frames/09_risk_bet_start_v11.jpg",
+    "09b_risk_hold": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_start_frames/09b_risk_hold_start_v11.jpg"
+  },
+  "locks": [
+    "glasses_visible_on_explorer",
+    "lamp_clean_no_fire_spit_no_candle",
+    "cards_have_writing_H_C_O_Eka",
+    "explorer_profile_back_only",
+    "indoor_wood_bookcase_prefer"
+  ],
+  "dna": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_dna/character_sheet.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_dna/germs_lock.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_dna/p03_keep.jpg"
+  ],
+  "ben_fail_refs": [
+    "fail_explorer_no_glasses.png",
+    "fail_eka_boron_blank_fire.png",
+    "fail_abet_blank_cards.png",
+    "fail_blank_card_hero.png"
+  ]
+}
