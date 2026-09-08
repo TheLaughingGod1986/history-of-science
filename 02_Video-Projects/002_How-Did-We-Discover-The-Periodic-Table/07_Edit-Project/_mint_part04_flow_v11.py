@@ -1298,7 +1298,11 @@ def main() -> None:
                         safe_close(ctx)
                         ctx = None
                         page = None
-                        run_harvest(tmp, project_url, before_thumbs=-1)
+                        try:
+                            run_harvest(tmp, project_url, before_thumbs=-1)
+                        except Exception as harvest_err:
+                            print(f"  Create {create_n}: harvest failed: {harvest_err}", flush=True)
+                            continue
                         ctx, page, active = open_flow(p, profile=profile)
                         info["media_id"] = (
                             f"gallery-harvest:{tmp.stat().st_size if tmp.exists() else 0}"
