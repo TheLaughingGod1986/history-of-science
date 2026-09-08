@@ -102,7 +102,8 @@ LAMP_CLEAN_LOCK = (
     "LAMP CLEAN LOCK: soft warm desk-lamp glow ONLY. HARD REJECT: lamp spitting fire, "
     "sparks dripping under the bulb, candle flames on the desk, any lit candle, "
     "taper candle, wax candle, fire particles, ember trails, flaming props. "
-    "ZERO open flames anywhere on the desk — no wax candle, no taper, no tealight, no Bunsen burner flame, no spirit lamp, no fire behind cards, no orange flame tips.  The bulb is a calm warm glow — never fire. FULL thick messy wavy chestnut hair covering the ENTIRE crown every frame (NO bald spot, NO tonsure, NO monk ring)."
+    "ZERO open flames anywhere on the desk — no wax candle, no taper, no tealight, no Bunsen burner flame, no spirit lamp, no fire behind cards, no orange flame tips.  The bulb is a calm warm glow — never fire. FULL thick messy wavy chestnut hair covering the ENTIRE crown every frame (NO bald spot, NO tonsure, NO monk ring). "
+    "CRITICAL: do NOT place any lit burner, spirit lamp, alcohol lamp, or glass vessel with a flame behind the element cards. Replace any flame-looking prop with a CLOSED brown ink bottle or sealed flask with NO fire."
 )
 
 WRITTEN_CARDS_LOCK = (
@@ -191,7 +192,7 @@ PROMPTS = {
         "ONLY he pins one WRITTEN cream element card (ink H/C/O/Eka visible) into a "
         "vertical card column and leaves a glowing vacant seat/gap. He NEVER turns to "
         "face the camera — back/OTS silhouette holds for the full 8s. Desk cards show "
-        "readable H/C/O/Eka marks. Soft warm desk-lamp glow only — NO candle, NO fire "
+        "readable H/C/O/Eka marks. Soft warm desk-lamp glow only — NO candle, NO Bunsen, NO spirit lamp, NO open flame behind cards, NO fire "
         "spit, NO sparks. Fully indoor wood panelled wall / filled bookcase behind the "
         "desk (no window/sky/roofs/blue fills/moon). "
         f"{EXPLORER_GARNISH_LOCK} {WINDOW_LOCK} {DESK_PROP_LOCK} "
@@ -992,34 +993,38 @@ def still_check_roofs(clip: Path, tag: str) -> dict:
 
 
 def candle_flame_suspect(still: Path) -> dict:
-    """Detect lit candle / fire spit away from the left desk-lamp shade.
+    """Detect lit candle / Bunsen tip behind cards (Ben lamp-clean HARD).
 
-    Tight: require a *compact* bright yellow-orange core (candle tip), not scattered
-    warm lamp spill or amber flask liquid (those false-positive the loose scan).
+    Scan includes left-desk card zone (flame often sits ~x18–28% behind H/N cards).
+    Exclude extreme top-left lamp shade. Compact bright orange/yellow tip only —
+    not broad lamp wash or amber flask liquid.
     """
     im = Image.open(still).convert("RGB")
     w, h = im.size
     pix = im.load()
     hits: list[tuple[int, int]] = []
-    # Ignore left lamp shade; scan desk mid only
-    x0, x1 = int(w * 0.32), int(w * 0.68)
-    y0, y1 = int(h * 0.32), int(h * 0.68)
+    # Card/flame zone left-mid desk; skip lamp shade upper-left corner
+    x0, x1 = int(w * 0.16), int(w * 0.55)
+    y0, y1 = int(h * 0.38), int(h * 0.72)
     for y in range(y0, y1, 2):
         for x in range(x0, x1, 2):
+            # skip upper-left lamp shade pocket
+            if x < int(w * 0.28) and y < int(h * 0.42):
+                continue
             r, g, b = pix[x, y]
-            # candle tip only: near-white-yellow / orange point, very bright, low blue
+            # candle tip: near-white-yellow / orange point, very bright, low blue
             if r >= 235 and g >= 175 and b <= 70 and (r - b) >= 160:
                 hits.append((x, y))
             elif r >= 250 and g >= 230 and b <= 90 and (r - b) >= 150:
                 hits.append((x, y))
     candle = False
-    if len(hits) >= 12:
+    if len(hits) >= 10:
         xs = [p[0] for p in hits]
         ys = [p[1] for p in hits]
         span_x = max(xs) - min(xs)
         span_y = max(ys) - min(ys)
         # compact tip (~candle) not a broad lamp wash
-        candle = span_x <= int(w * 0.12) and span_y <= int(h * 0.18) and len(hits) >= 12
+        candle = span_x <= int(w * 0.10) and span_y <= int(h * 0.20) and len(hits) >= 10
     return {
         "still": str(still),
         "candle_hits": len(hits),
@@ -1027,11 +1032,8 @@ def candle_flame_suspect(still: Path) -> dict:
     }
 
 
-def still_check_candle(clip: Path, tag: str) -> dict:
-    """Log candle suspects — do NOT auto-reject (warm lamp/amber flask false-pos).
-
-    Agent videoReview / still QA is source of truth for Ben lamp-clean blocker.
-    """
+def still_check_candle(clip: Path, tag: str, *, auto_reject: bool = False) -> dict:
+    """Candle/flame scan. When auto_reject=True (Explorer 06), reject ≥2 candle frames."""
     stills = extract_stills(clip, QA_STILLS, f"{tag}_candle")
     scores = [candle_flame_suspect(p) for p in stills]
     bad = [s for s in scores if s["candle"]]
@@ -1040,14 +1042,14 @@ def still_check_candle(clip: Path, tag: str) -> dict:
         "clip": str(clip),
         "scores": scores,
         "candle_frame_count": len(bad),
-        # Heuristic is advisory only — lamp spill / flask liquid false-positive.
-        "reject": False,
+        "reject": bool(auto_reject and len(bad) >= 2),
         "advisory": len(bad) >= 2,
+        "auto_reject": auto_reject,
     }
     (QA_STILLS / f"{tag}_candle_check.json").write_text(json.dumps(report, indent=2) + "\n")
+    mode = "AUTO-REJECT ON" if auto_reject else "advisory only"
     print(
-        f"  candle-check {tag}: candle_frames={len(bad)}/9 advisory={report['advisory']} "
-        f"(auto-reject OFF — agent QA)",
+        f"  candle-check {tag}: candle_frames={len(bad)}/9 reject={report['reject']} ({mode})",
         flush=True,
     )
     return report
@@ -1326,7 +1328,9 @@ def main() -> None:
 
                     tag = f"{pid}_try{create_n}"
                     check = still_check_roofs(tmp, tag)
-                    ccheck = still_check_candle(tmp, tag)
+                    ccheck = still_check_candle(
+                        tmp, tag, auto_reject=(pid == "06_explorer_leaves_gap")
+                    )
                     # Garnish / face-hero checks are Explorer-only (desk plates have teal vessels)
                     if pid == "06_explorer_leaves_gap":
                         gcheck = still_check_garnish(tmp, tag)
