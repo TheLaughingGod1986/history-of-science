@@ -16,11 +16,13 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 # plate_id substring → (x0,y0,x1,y1) fractions + moon (mx,my) fractions
 # v04: A BET glowing-chair plates — clear rooftop sill; leave chair glow below
+# Soft whole-cut also clears 02b window town at ~18–21 (desk KEEP below y≈0.45)
 WINDOW_BOXES = {
+    "02b_cards": ((0.10, 0.00, 0.70, 0.46), (0.42, 0.14)),
     "05_columns": ((0.10, 0.00, 0.995, 0.62), (0.55, 0.14)),
     "06_explorer": ((0.32, 0.00, 0.995, 0.62), (0.78, 0.10)),
-    "09_risk": ((0.10, 0.00, 0.92, 0.72), (0.62, 0.12)),
-    "09b_risk": ((0.04, 0.00, 0.99, 0.74), (0.70, 0.14)),
+    "09_risk": ((0.08, 0.00, 0.94, 0.82), (0.62, 0.12)),
+    "09b_risk": ((0.02, 0.00, 0.995, 0.84), (0.70, 0.14)),
     "default": ((0.18, 0.00, 0.90, 0.48), (0.55, 0.12)),
 }
 
@@ -85,13 +87,13 @@ def hard_fill_window(im: Image.Image, box_frac, moon_frac, *, protect_chair: boo
     mask = Image.composite(inset, soft, inset)
 
     if protect_chair:
-        # Keep glowing chair LOWER body only — do not protect mid-window rooftops
+        # Keep glowing chair LOWER body only — sky must fully cover sill/town above
         chair = Image.new("L", (w, h), 0)
         ImageDraw.Draw(chair).ellipse(
-            (int(w * 0.64), int(h * 0.58), int(w * 0.995), int(h * 0.995)),
+            (int(w * 0.66), int(h * 0.68), int(w * 0.995), int(h * 0.995)),
             fill=255,
         )
-        chair = chair.filter(ImageFilter.GaussianBlur(radius=5))
+        chair = chair.filter(ImageFilter.GaussianBlur(radius=4))
         inv = Image.eval(chair, lambda v: 255 - v)
         mask = ImageChops.multiply(mask, inv)
 
@@ -115,7 +117,9 @@ def scrub_mp4(src: Path, dest: Path) -> None:
             check=True,
         )
         paths = sorted(frames.glob("f_*.png"))
-        protect = "09" in (src.name + dest.name).lower()
+        name_blob = (src.name + dest.name).lower()
+        # Chair protect only for A BET plates — not 02b desk / 05 / 06
+        protect = ("09_risk" in name_blob) or ("09b_risk" in name_blob)
         print(
             f"hard-fill window {len(paths)} frames {src.name} "
             f"box={box_frac} protect_chair={protect} dur={dur:.2f}",

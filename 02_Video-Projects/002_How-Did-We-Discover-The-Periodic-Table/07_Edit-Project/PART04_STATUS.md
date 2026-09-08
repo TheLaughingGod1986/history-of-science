@@ -13,9 +13,9 @@
 ## Land (v04)
 
 - path: `09_Final-Export/hos_002_part04_rough_v04.mp4`
-- bytes: **78393949**
+- bytes: **76318531**
 - duration: **127.760 s**
-- sha256: `259bb76f4f4e8a95b0ed0439be8dd85555856340f4ce49bed5ad5984341fe736`
+- sha256: `fda60b04bd3785b1f01b61c5c76b786a841d21152df29ed398ce5b5e4490554d`
 - reminted: `02b_cards_sixty_three`, `09_risk_bet`, `09b_risk_hold` (house silhouettes ×2)
 - Flow: `benoats@googlemail.com`
 - HOS UAT copy + `WATCH_part04_v04.txt`
@@ -25,6 +25,6 @@
 ## Notes
 
 - UAT FAIL v03: (A) ~18–21 brown house silhouettes on books; (B) ~91–97 model-town through A BET window.
-- Cleared via fixed-rect leather + hard sky fills on continuous Veo beds (Create OK; Download JPEG-only).
+- Cleared via fixed-rect leather + hard sky fills on continuous Veo beds (Create OK; Download JPEG-only). Soft whole-cut also sky-fills 02b window.
 - KEEP: ~38–44 sky · Explorer teal · Empty Chairs · glowing chair.
 - Do **not** declare PASS. No P05 until KEEP/LOCK. Do not ping Ben.

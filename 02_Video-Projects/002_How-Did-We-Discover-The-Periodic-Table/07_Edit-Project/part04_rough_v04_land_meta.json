@@ -1,9 +1,9 @@
 {
   "cut": "hos_002_part04_rough_v04.mp4",
   "path": "09_Final-Export/hos_002_part04_rough_v04.mp4",
-  "bytes": 78393949,
+  "bytes": 76318531,
   "duration_s": 127.76,
-  "sha256": "259bb76f4f4e8a95b0ed0439be8dd85555856340f4ce49bed5ad5984341fe736",
+  "sha256": "fda60b04bd3785b1f01b61c5c76b786a841d21152df29ed398ce5b5e4490554d",
   "parent_v03_sha256": "79dd7650cb582b548ae4c1c0aa98e4938ff8ec90ba654dea9c0b5c5574ee62e8",
   "reminted_plates": [
     "02b_cards_sixty_three",
@@ -34,5 +34,5 @@
   ],
   "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v04.mp4",
   "watch": "WATCH_part04_v04.txt",
-  "note": "Scrub house silhouettes \u00d72: books ~18\u201321 (02b) + A BET window town ~91\u201397 (09/09b). KEEP v02 05/06 sky. Scores \u2192 CoS only. Do not declare PASS."
+  "note": "Scrub house silhouettes \u00d72: books+window ~18\u201321 (02b) + A BET window town ~91\u201397 (09/09b deep fill). KEEP v02 05/06 sky. Scores \u2192 CoS only. Do not declare PASS."
 }
