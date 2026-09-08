@@ -126,18 +126,44 @@ def click_download_720(page, ctx, dl_dir: Path) -> Path | None:
           return scored[0]||null;
         }"""
     )
-    if item:
+    clicked = False
+    # Prefer leaf "720p" / "Original size" — avoid clicking the whole menu blob.
+    for sel in (
+        page.get_by_text("720p", exact=True),
+        page.locator("text=720p"),
+        page.get_by_role("menuitem", name=re.compile(r"720p", re.I)),
+    ):
+        try:
+            n = min(sel.count(), 8)
+            for i in range(n):
+                el = sel.nth(i)
+                box = el.bounding_box()
+                if not box or box["width"] >= 400 or box["height"] >= 80:
+                    continue
+                el.click(timeout=3000, force=True)
+                print(f"  leaf click 720p i={i} box={box}", flush=True)
+                clicked = True
+                break
+            if clicked:
+                break
+        except Exception as e:
+            print(f"  leaf warn: {e}", flush=True)
+    if not clicked and item and item.get("t", "").strip() in ("720p", "Original size"):
         print(f"  menu → {item}", flush=True)
         page.mouse.click(item["x"], item["y"])
-    else:
-        # Try explicit text clicks
+        clicked = True
+    if not clicked:
         for label in ("720p", "Original size (720p)", "1080p", "mp4"):
             try:
                 page.get_by_text(label, exact=False).first.click(timeout=2000)
                 print(f"  clicked text {label}", flush=True)
+                clicked = True
                 break
             except Exception:
                 continue
+    if not clicked:
+        print("  could not click a resolution item", flush=True)
+        return None
 
     deadline = time.time() + 90
     while time.time() < deadline:
@@ -167,10 +193,11 @@ def main() -> None:
     ap.add_argument(
         "--edit",
         default=(
-            "https://labs.google/fx/tools/flow/project/"
+            "https://flow.google.com/u/1/project/"
             "8bbeb102-a2d7-4f17-bb3e-120c3f09d996/edit/"
-            "media_0c5c9e3c-79d5-4b60-a6e7-7c6e4a9e2b1c?mediaType=VIDEO"
+            "5fd3ec92-6c41-4ef3-ad5a-382024fe810c"
         ),
+        help="Direct Flow edit URL for the clip (preferred). Empty string skips.",
     )
     ap.add_argument(
         "--dest",

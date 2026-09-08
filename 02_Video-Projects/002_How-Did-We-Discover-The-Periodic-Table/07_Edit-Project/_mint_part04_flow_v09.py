@@ -72,25 +72,30 @@ COLOUR_DNA_LOCK = (
     "+ Part 03 keep EXACTLY — same boy, not a recolour cousin): "
     "Skin = light–medium warm tan / fair boy skin (NOT darkened, NOT deep brown, "
     "NOT grey-brown drift). "
-    "Hair = messy wavy chestnut-brown, BARE HEAD fully visible. "
+    "Hair = FULL thick messy wavy chestnut-brown covering the ENTIRE crown — young boy "
+    "with a complete head of hair like the character sheet (tufts on top visible). "
+    "NO bald spot, NO tonsure, NO monk ring, NO male-pattern baldness, NO shiny bare "
+    "scalp on top when seen from behind or above. BARE HEAD (no hat) with FULL hair. "
     "Glasses = round gold or thin dark wire-rim. "
     "Coat = house DARK TEAL / blue-green trenchcoat (same hue as sheet/Germs/P03 — "
     "NOT bright cyan, NOT mint, NOT olive, NOT navy). "
     "Underlayers = tan/mustard vest, white shirt, brown tie/cravat. "
-    "Same young-boy face proportions as the locked sheet."
+    "Same young-boy face proportions as the locked sheet — NOT an older/bald man."
 )
 
 HAT_LOCK = (
     "CRITICAL EVERY FRAME: NO HAT. NO helmet. NO pith helmet. NO safari hat. NO cap. "
     "NO hood. NO beanie. NO dome. NO brim. NO head covering of ANY colour (teal, tan, "
     "beige, brown, cream). The Explorer's head stays BARE for the ENTIRE 8 seconds — "
-    "messy wavy chestnut-brown hair fully visible from start to end, including when he "
-    "turns, steps back, or is seen from behind. Never grow or spawn a hat mid-clip. "
-    "HARD REJECT any dome/brim/helmet appearing even for one frame."
+    "FULL messy wavy chestnut-brown hair covering the crown from start to end, "
+    "including when he turns, steps back, or is seen from behind. Never grow or spawn "
+    "a hat mid-clip. Never strip the crown bald mid-clip. "
+    "HARD REJECT any dome/brim/helmet OR bald-crown/tonsure appearing even for one frame."
 )
 
 REJECT = (
-    "HARD REJECT: ANY hat/helmet/pith/cap/hood; darkened/deep-brown skin drift; "
+    "HARD REJECT: ANY hat/helmet/pith/cap/hood; bald crown / tonsure / ring-hair only; "
+    "older bald Explorer; darkened/deep-brown skin drift; "
     "bright cyan or mint or olive coat; off-model Explorer cousin; "
     "any window showing exterior; flat navy/blue rectangular sky overlays; pasted sky boxes; "
     "hard fills of any colour; brown scrub panels; heal panels; unblended coloured "
@@ -138,8 +143,9 @@ PROMPTS = {
         "whole clip — no Ken Burns still. Fully indoor wood panelled wall / filled "
         "bookcase behind the desk. "
         f"{EXPLORER_GARNISH_LOCK} {WINDOW_LOCK} {DESK_PROP_LOCK} "
-        "Silent. HARD REJECT: hat, darkened skin, wrong coat hue, face-hero, giant "
-        "Explorer, twins, window, exterior sky, navy sky boxes, roofs, model-town. "
+        "Silent. HARD REJECT: hat, bald crown/tonsure, darkened skin, wrong coat hue, "
+        "face-hero, giant Explorer, twins, window, exterior sky, navy sky boxes, roofs, "
+        "model-town. "
         + REJECT + " " + STYLE
     ),
 }
