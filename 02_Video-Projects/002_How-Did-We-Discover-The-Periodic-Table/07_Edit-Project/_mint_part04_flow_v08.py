@@ -88,16 +88,17 @@ WINDOW_LOCK = (
 
 EXPLORER_GARNISH_LOCK = (
     "HOUSE SCALE LOCK (match History of Science P01/P03 keep stills): Explorer is a "
-    "TINY toy-scale teal GARNISH in the wide desk scene — roughly knee-high to the "
-    "card stacks / a small figurine on the desktop. He occupies well under ~25% of "
-    "frame height. Prefer PROFILE or OVER-THE-SHOULDER. He must NOT present face to "
-    "camera, NOT teach, NOT fill the frame as a face-hero medium shot. Camera stays "
-    "on the desk landscape; Explorer is a small moving accent, not the hero portrait."
+    "TINY toy-scale teal GARNISH in the wide desk scene — a small figurine on the "
+    "desktop, about the height of a short stack of cream cards. He MUST occupy under "
+    "~20% of frame height and under ~15% of frame width. Wide shot of the desk; "
+    "Explorer is a small accent, NEVER a medium portrait. Prefer PROFILE or "
+    "OVER-THE-SHOULDER from behind/side. HARD REJECT face-to-camera, teaching pose, "
+    "waist-up hero framing, close-up face, or Explorer filling the middle of the frame."
 )
 
 PROMPTS = {
     "06_explorer_leaves_gap": (
-        "IMAGE-TO-VIDEO of the attached start frame. Keep the SAME toy-scale garnish "
+        "Text-to-video (or image-to-video if a start frame is attached). Keep the SAME toy-scale garnish "
         "composition: exactly ONE Explorer boy — messy wavy brown hair, gold wire-rim "
         "glasses, TEAL trenchcoat overcoat (house DNA, NOT academic blazer). He stays "
         "a small teal figurine on the honey-wood chemist desk. Beat: he pins one cream "
@@ -580,11 +581,12 @@ def mint_one_create(page, prompt: str, tmp: Path, start_frame: Path | None = Non
 
 
 def main() -> None:
-    # v08 Explorer remint: I2V from garnish start frame (do NOT force T2V-only).
-    if not _truthy("HOS_FLOW_T2V_ONLY"):
-        os.environ["HOS_FLOW_I2V_FIRST"] = "1"
+    # v08 default = T2V with hard garnish language.
+    # Optional I2V: HOS_FLOW_I2V_FIRST=1 (Flow media-library attach is flaky on Mini).
+    if not _truthy("HOS_FLOW_I2V_FIRST") and not _truthy("HOS_FLOW_T2V_ONLY"):
+        os.environ["HOS_FLOW_T2V_ONLY"] = "1"
         print(
-            "  v08 default: I2V from garnish start frame (toy-scale lock)",
+            "  v08 default: T2V garnish lock (set HOS_FLOW_I2V_FIRST=1 for start-frame)",
             flush=True,
         )
 
@@ -716,12 +718,19 @@ def main() -> None:
                     tmp.unlink(missing_ok=True)
                     info = None
                     try:
-                        start = START_FRAME_06 if pid == "06_explorer_leaves_gap" else None
+                        use_i2v = _truthy("HOS_FLOW_I2V_FIRST") and not _truthy("HOS_FLOW_T2V_ONLY")
+                        start = START_FRAME_06 if (pid == "06_explorer_leaves_gap" and use_i2v) else None
                         if start is not None and not start.exists():
                             raise SystemExit(f"STOP: missing start frame {start}")
+                        if start is not None:
+                            print(f"  start-frame I2V: {start}", flush=True)
+                        else:
+                            print("  mode: T2V garnish (no start frame)", flush=True)
                         info = mint_one_create(page, PROMPTS[pid], tmp, start_frame=start)
                     except Exception as e:
                         last_err = e
+                        import traceback
+                        print(f"  Create pre-submit exception:\n{traceback.format_exc()}", flush=True)
                         death = looks_like_create_death(e, page)
                         meta.setdefault("tries", []).append(
                             {
