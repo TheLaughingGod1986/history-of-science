@@ -81,9 +81,12 @@ COLOUR_DNA_LOCK = (
 )
 
 HAT_LOCK = (
-    "NO HAT. NO helmet. NO pith helmet. NO safari hat. NO cap. NO hood covering hair. "
-    "Bare head ONLY — messy wavy chestnut-brown hair must be clearly visible the whole clip. "
-    "HARD REJECT any teal/brown/beige dome, brim, or head covering above the hair."
+    "CRITICAL EVERY FRAME: NO HAT. NO helmet. NO pith helmet. NO safari hat. NO cap. "
+    "NO hood. NO beanie. NO dome. NO brim. NO head covering of ANY colour (teal, tan, "
+    "beige, brown, cream). The Explorer's head stays BARE for the ENTIRE 8 seconds — "
+    "messy wavy chestnut-brown hair fully visible from start to end, including when he "
+    "turns, steps back, or is seen from behind. Never grow or spawn a hat mid-clip. "
+    "HARD REJECT any dome/brim/helmet appearing even for one frame."
 )
 
 REJECT = (
