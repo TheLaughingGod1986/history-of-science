@@ -1,0 +1,25 @@
+WATCH THIS FILE ONLY (Part 04 rough v07 — Explorer garnish remint (toy-scale teal)):
+  hos_002_part04_rough_v08.mp4
+
+CoS / Picture→UAT gates for this cut:
+- Parent v05 FAIL ~18–21s: desk-only: no window/roofs in 02b through 02b window.
+- Brown scrub CLEARED KEEP (books visible) — do not regress.
+- Reminted: 06_explorer_leaves_gap ONLY (Veo Fast I2V/T2V garnish). KEEP v07 sky scrub 05/09/09b + v06 desk 02b.
+- Spot Explorer ~45–53s: toy-scale teal garnish (profile/OTS), NOT face-hero.
+- KEEP: ~38–44s night sky · Explorer teal · glowing chair · Empty Chairs · late window.
+- Real Veo Fast remint. Continuous motion. No Ken Burns. No hard fills / sky boxes.
+- Part 01 v14 + Part 02 v06 + Part 03 v09 LOCKED — do not remint
+- Do NOT declare PASS here. Scores → CoS. No P05 until KEEP/LOCK.
+
+Do not ping Ben. Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v06_sha=5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2
+reminted=06_explorer_leaves_gap
+plate02b_picture=15.100-23.000
+columns_picture=37.750-45.650
+explorer_picture=45.300-53.200
+plate09_picture=90.600-106.050
+plate09b_picture=98.150-106.050
+sha256=8cafb379af976897d6cee46484439b1ecbda56f8a42760327a96d1744d614a83
+bytes=87885278
+duration=127.760
