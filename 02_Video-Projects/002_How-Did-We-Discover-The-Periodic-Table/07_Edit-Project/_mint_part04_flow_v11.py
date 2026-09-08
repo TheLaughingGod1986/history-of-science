@@ -664,7 +664,7 @@ def explorer_face_hero_suspect(still: Path) -> dict:
     bh = max(ys) - min(ys)
     h_frac = bh / float(h)
     w_frac = bw / float(w)
-    face_hero = h_frac >= 0.42 or (h_frac >= 0.34 and w_frac >= 0.28 and len(xs) > 1800)
+    face_hero = h_frac >= 0.55 or (h_frac >= 0.45 and w_frac >= 0.32 and len(xs) > 2200)
     return {
         "still": str(still),
         "teal_px": len(xs),
@@ -913,14 +913,16 @@ def still_check_garnish(clip: Path, tag: str) -> dict:
         "face_hero_count": len(heroes),
         "faceon_count": len(faceons),
         "face_hero": len(heroes) >= 2,
-        "faceon_pose": len(faceons) >= 2,  # advisory heuristic; agent still-QA is source of truth
+        "faceon_pose": len(faceons) >= 2,
+        # Auto-reject only when tall garnish AND face-on (back silhouette can be tall)
+        "auto_reject": (len(heroes) >= 2 and len(faceons) >= 2) or len(faceons) >= 4,
         "max_h_frac": max((s["h_frac"] for s in scores), default=0.0),
     }
     (QA_STILLS / f"{tag}_garnish_check.json").write_text(json.dumps(report, indent=2) + "\n")
     print(
         f"  garnish-check {tag}: face_hero_frames={len(heroes)}/9 "
         f"faceon_frames={len(faceons)}/9 max_h_frac={report['max_h_frac']} "
-        f"reject={report['face_hero'] or report['faceon_pose']}",
+        f"reject={report.get('auto_reject')}",
         flush=True,
     )
     return report
@@ -1111,7 +1113,7 @@ def main() -> None:
                         hcheck = still_check_hat_colour(dest, f"{pid}_existing")
                         if (
                             not check["roof_readable"]
-                            and not gcheck.get("face_hero")
+                            and not gcheck.get("auto_reject", gcheck.get("face_hero"))
                             and not hcheck.get("reject")
                         ):
                             print(
@@ -1279,16 +1281,15 @@ def main() -> None:
                     reject_reasons = []
                     if check["roof_readable"]:
                         reject_reasons.append("hardfill_or_roof")
-                    if gcheck.get("face_hero"):
-                        reject_reasons.append("face_hero")
-                    # faceon_pose is advisory here; agent visual QA across 1s stills is authoritative
+                    if gcheck.get("auto_reject"):
+                        reject_reasons.append("faceon_hero")
                     if hcheck.get("hat_reject"):
                         reject_reasons.append("hat")
                     if hcheck.get("colour_reject"):
                         reject_reasons.append("colour_dna")
 
                     if reject_reasons:
-                        rej = REJECTED / f"{pid}_v10_try{create_n}_{'+'.join(reject_reasons)}.mp4"
+                        rej = REJECTED / f"{pid}_v11_try{create_n}_{'+'.join(reject_reasons)}.mp4"
                         if rej.exists():
                             rej.unlink()
                         shutil.move(str(tmp), str(rej))
