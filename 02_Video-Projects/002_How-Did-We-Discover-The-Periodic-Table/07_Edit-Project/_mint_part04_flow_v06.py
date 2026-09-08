@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Part 04 Flow Veo 3.1 Fast remint v06 — 02b ONLY (scrub in-camera window roofs).
+"""Part 04 Flow Veo 3.1 Fast remint v06 — 02b DESK-ONLY (no window in frame).
 
-Showrunner PART04_V06_SCRUB_02B_WINDOW_ROOFS.md (parent v05 sha a7c9741c…):
-  - REMINT: 02b_cards_sixty_three ONLY (~18–21 peaked roofs + chimneys through window)
+Showrunner PART04_V06_DESK_ONLY_02B.md (parent v05 sha a7c9741c…):
+  - REMINT: 02b_cards_sixty_three ONLY (tight desk — cream cards, books, lamp, vessels)
+  - Framing: NO WINDOW, NO panes, NO night sky, NO outdoor view, NO roofs/chimneys/town
+  - Soft dark / wood interior BG only if needed
   - KEEP: brown scrub cleared · late window · night-sky ~40 · Explorer teal · Empty Chairs
-  - FULL Veo 3.1 Fast. Create dies OR gallery fail → STOP.
-  - NEVER hard fills / brown panels / flat sky rectangles.
-  - Prompt MUST lock window = night sky + moon + clouds + stars ONLY.
-  - Still-check every second ~0–8; reject+retry if roofs readable (max 2 Creates).
+  - FULL Veo 3.1 Fast. Create dies → STOP. NEVER hard fills.
+  - Still-check full plate; reject+retry if any window/roof readable (max 2 Creates)
   - Auth: benoats@googlemail.com on /u/1/. P01–P03 FROZEN.
 """
 from __future__ import annotations
@@ -52,18 +52,19 @@ CREATE_OFFSET = int(os.environ.get("HOS_V06_CREATE_OFFSET", "0"))  # prior Creat
 
 STYLE = (
     "Animistry-class stylised 3D cartoon (NOT photoreal). "
-    "ONE continuous 1869 chemist desk: honey wood, soft warm lamp, cream blank "
-    "cards, leather books, lab vessels, night window. Continuous real "
-    "camera/object motion the whole clip. Silent. No Orbit. No Ken Burns still. "
-    "Opaque vessels preferred."
+    "ONE continuous 1869 chemist desk CLOSE-UP: honey wood desktop fills most of "
+    "frame, soft warm lamp, cream blank cards, leather books, lab vessels. "
+    "Background is soft dark wood wall or shallow interior darkness ONLY — "
+    "NO window anywhere. Continuous real camera/object motion the whole clip. "
+    "Silent. No Orbit. No Ken Burns still. Opaque vessels preferred."
 )
 
 REJECT = (
-    "HARD REJECT: peaked roofs; chimneys; town silhouette; skyline; buildings; "
-    "houses; rooftops on the sill; model-town; village silhouette; dark building "
-    "shapes through the window; unblended brown scrub panels; flat rectangular "
-    "leather overlays; hard rectangular fills of any colour; flat blue sky boxes "
-    "/ pasted sky rectangles cutting across desk or cards; Ken Burns only; "
+    "HARD REJECT: any window; glass panes; muntins; night sky; moon through glass; "
+    "outdoor view; peaked roofs; chimneys; town silhouette; skyline; buildings; "
+    "houses; rooftops; model-town; village silhouette; unblended brown scrub "
+    "panels; flat rectangular leather overlays; hard rectangular fills of any "
+    "colour; flat blue sky boxes / pasted sky rectangles; Ken Burns only; "
     "Orbit robot; photoreal; layout reset away from desk DNA."
 )
 
@@ -74,42 +75,42 @@ DESK_PROP_LOCK = (
     "scrub masks, ZERO glowing yellow house tokens."
 )
 
-# Sheet lock — must appear verbatim in spirit in the mint prompt.
-WINDOW_LOCK = (
-    "CRITICAL WINDOW LOCK: Through the REAL wooden window panes the view is "
-    "deep night sky + full moon + soft clouds + faint stars ONLY. "
-    "Window = night sky + moon + clouds + stars ONLY. "
-    "Lower panes must show OPEN night sky continuing all the way to the sill — "
-    "NO dark horizon band, NO building outlines. "
-    "NO buildings, NO houses, NO peaked roofs, NO chimneys, NO town silhouette, "
-    "NO skyline, NO rooftops on the sill, NO model-town, NO village, NO city. "
-    "Completely EMPTY of architecture. "
-    "Rendered IN-CAMERA through real window panes — NOT a pasted flat sky "
-    "rectangle or hard fill."
+# Sheet lock — desk-only; window must not appear at all (CoS after 2× roof STOP).
+DESK_ONLY_LOCK = (
+    "CRITICAL FRAMING LOCK — DESK ONLY: tight crop across the desktop / slightly "
+    "down. Cream blank cards in motion, leather books, warm lamp, mortar/vessels. "
+    "NO WINDOW in frame at all — no panes, no muntins, no sill, no night sky, "
+    "no moon, no outdoor view, no buildings, no houses, no peaked roofs, no "
+    "chimneys, no town silhouette, no skyline, no model-town. "
+    "If any background is visible behind the desk, it must be plain soft dark "
+    "wood panel or shallow interior darkness only — never glass looking outside. "
+    "NOT a pasted fill / brown scrub panel / flat sky rectangle."
 )
 
 PROMPT_02B = (
     "IMAGE-TO-VIDEO from the attached start frame. KEEP this EXACT 1869 chemist "
     "desk DNA (honey wood, soft lamp, cream blank card stacks, lab vessels, "
-    "leather books with PLAIN tops). Cream blank cards keep settling / gentle "
-    "shuffle across the honey wood — denser stack as if counting known elements. "
-    "Continuous card motion. Soft lamp. "
-    f"{DESK_PROP_LOCK} {WINDOW_LOCK} "
+    "leather books with PLAIN tops) but TIGHTEN framing to DESK ONLY — crop out "
+    "any window. Cream blank cards keep settling / gentle shuffle across the "
+    "honey wood — denser stack as if counting known elements. Continuous card "
+    "motion. Soft lamp. "
+    f"{DESK_PROP_LOCK} {DESK_ONLY_LOCK} "
     "Silent. No people. No Explorer. "
     + REJECT + " " + STYLE
 )
 
 T2V_02B = (
-    "ABSOLUTE FIRST RULE: the lab window shows ONLY night sky, moon, clouds, "
-    "and stars — zero architecture outside. "
-    f"{WINDOW_LOCK} "
-    "ONE continuous natural 1869 chemist desk shot with NO overlays: honey wood "
-    "desk, soft warm brass lamp glowing, dense neat stack of cream blank cards "
-    "gently flipping and settling as if counting sixty-three known elements, "
-    "stack of thick brown leather-bound books with PLAIN clean tops (no house "
-    "props, no house silhouettes, no brown scrub panel), pink/teal/orange lab "
-    "flasks, white mortar. Continuous gentle card shuffle and subtle camera "
-    "drift. Silent. No people. No hands. No Explorer. "
+    "ABSOLUTE FIRST RULE: there is NO WINDOW in this shot — no glass panes, no "
+    "night sky, no outdoor view, no roofs, no town. Tight desk-only frame. "
+    f"{DESK_ONLY_LOCK} "
+    "ONE continuous natural 1869 chemist desk CLOSE-UP with NO overlays: honey "
+    "wood desk filling the frame, soft warm brass lamp glowing, dense neat stack "
+    "of cream blank cards gently flipping and settling as if counting sixty-three "
+    "known elements, stack of thick brown leather-bound books with PLAIN clean "
+    "tops (no house props, no house silhouettes, no brown scrub panel), "
+    "pink/teal/orange lab flasks, white mortar. Soft dark wood / interior "
+    "darkness behind the desk if needed — never a window. Continuous gentle card "
+    "shuffle and subtle camera drift. Silent. No people. No hands. No Explorer. "
     + STYLE + " " + REJECT + " " + DESK_PROP_LOCK
 )
 
@@ -404,54 +405,55 @@ def extract_stills(clip: Path, dest_dir: Path, tag: str) -> list[Path]:
     return outs
 
 
-def roof_suspect_score(still: Path) -> dict:
-    """Heuristic: dark / navy silhouette band in lower window panes.
+def window_or_roof_suspect_score(still: Path) -> dict:
+    """Heuristic for DESK-ONLY: flag night-sky / window glass OR roof silhouettes.
 
-    Window glass on 02b desk shots is typically upper-centre. Roofs often read as
-    near-black OR very dark navy (not pure black). Gate assist only — agent still
-    visually reviews stills before KEEP.
+    Desk-only framing must not show a window at all. Upper-frame cool blues /
+    navy (night sky through panes) OR dark silhouette bands (roofs/town) →
+    suspect. Gate assist only — agent still visually reviews stills before KEEP.
     """
     im = Image.open(still).convert("RGB")
     w, h = im.size
-    # Upper-centre window glass (avoid desk / lamp / books)
-    x0, x1 = int(w * 0.18), int(w * 0.72)
-    y0, y1 = int(h * 0.02), int(h * 0.48)
+    # Upper half / upper-centre (where a window would live if Veo sneaks one in)
+    x0, x1 = int(w * 0.08), int(w * 0.92)
+    y0, y1 = int(h * 0.00), int(h * 0.52)
     pix = im.load()
     dark = 0
-    blueish = 0
+    sky_blue = 0
     total = 0
-    # Lower third of that window box = sill / roof zone
-    y_sill0 = y0 + int((y1 - y0) * 0.55)
-    for y in range(y_sill0, y1):
+    for y in range(y0, y1):
         for x in range(x0, x1, 2):
             r, g, b = pix[x, y]
             total += 1
-            # wood muntins are warm brown — skip
-            if r > 90 and g > 55 and b < 80 and (r - b) > 30:
+            # warm wood / lamp / books — skip
+            if r > 90 and g > 55 and b < 90 and (r - b) > 25:
                 continue
             lum = (r + g + b) / 3.0
-            # near-black OR dark navy silhouette (common Veo town stamp)
-            if lum < 70 and b <= 110 and r < 90 and g < 90:
+            # night-sky / cool glass (window tell)
+            if b > r + 18 and b > g + 8 and b > 85 and lum > 70:
+                sky_blue += 1
+            # near-black OR dark navy silhouette (roof/town tell)
+            elif lum < 70 and b <= 110 and r < 90 and g < 90:
                 dark += 1
-            elif b > r + 15 and b > g + 5 and b > 70 and lum > 90:
-                blueish += 1
     dark_frac = (dark / total) if total else 0.0
-    # Peaked roofs leave a meaningful dark fraction in the sill band.
-    # Tuned after try1 visual FAIL where pure-black threshold missed navy roofs.
-    suspect = dark_frac >= 0.035
+    sky_frac = (sky_blue / total) if total else 0.0
+    # Tuned: prior window tries had large sky + dark sill; desk-only should be near 0.
+    suspect = (sky_frac >= 0.045) or (dark_frac >= 0.035)
     return {
         "still": str(still),
         "dark": dark,
-        "blueish": blueish,
+        "sky_blue": sky_blue,
         "total": total,
         "dark_frac": round(dark_frac, 4),
+        "sky_frac": round(sky_frac, 4),
         "suspect": suspect,
     }
 
 
 def still_check_roofs(clip: Path, tag: str) -> dict:
+    """Name kept for callers; now rejects window OR roof readable."""
     stills = extract_stills(clip, QA_STILLS, tag)
-    scores = [roof_suspect_score(p) for p in stills]
+    scores = [window_or_roof_suspect_score(p) for p in stills]
     suspects = [s for s in scores if s["suspect"]]
     report = {
         "tag": tag,
@@ -459,12 +461,14 @@ def still_check_roofs(clip: Path, tag: str) -> dict:
         "stills": [str(p) for p in stills],
         "scores": scores,
         "suspect_count": len(suspects),
-        "roof_readable": len(suspects) >= 2,  # ≥2 seconds with dark sill band
+        "roof_readable": len(suspects) >= 2,  # ≥2 seconds with window/sky/roof tell
+        "window_or_roof_readable": len(suspects) >= 2,
     }
     (QA_STILLS / f"{tag}_roof_check.json").write_text(json.dumps(report, indent=2) + "\n")
     print(
         f"  still-check {tag}: suspect_frames={len(suspects)}/9 "
-        f"roof_readable={report['roof_readable']} "
+        f"window_or_roof={report['window_or_roof_readable']} "
+        f"sky_fracs={[s['sky_frac'] for s in scores]} "
         f"dark_fracs={[s['dark_frac'] for s in scores]}",
         flush=True,
     )
@@ -492,11 +496,11 @@ def mint_one_create(page, tmp: Path) -> dict:
 
 
 def main() -> None:
-    # v06 default = T2V with sky-only window lock (avoid I2V stills that bake roofs).
+    # v06 desk-only default = T2V (no I2V still that bakes a window).
     if not _truthy("HOS_FLOW_I2V_FIRST") and not _truthy("HOS_FLOW_T2V_ONLY"):
         os.environ["HOS_FLOW_T2V_ONLY"] = "1"
         print(
-            "  v06 default: HOS_FLOW_T2V_ONLY=1 (sky-only window; no hard-fill)",
+            "  v06 default: HOS_FLOW_T2V_ONLY=1 (desk-only; no window; no hard-fill)",
             flush=True,
         )
 
@@ -532,11 +536,11 @@ def main() -> None:
         "model": MODEL,
         "flow_home": flow.FLOW_HOME,
         "raw": str(RAW),
-        "continuity": "scrub_02b_window_roofs_v06_veo_no_hard_fill",
+        "continuity": "desk_only_02b_v06_veo_no_window_no_hard_fill",
         "parent_v05_sha": "a7c9741c32f9689c019d5c8695b36a8e8d2bbbebfb19b93ee53b6d584b8a43fc",
-        "window_lock": (
-            "night sky + moon + clouds + stars ONLY; "
-            "NO buildings/houses/peaked roofs/chimneys/town silhouette/skyline"
+        "desk_only_lock": (
+            "tight desk crop; NO window/panes/night sky/outdoor view; "
+            "NO roofs/chimneys/town; soft dark/wood interior BG only if needed"
         ),
         "max_creates": MAX_CREATES,
         "only": sorted(only),
@@ -559,7 +563,7 @@ def main() -> None:
         f"partial remint only={order} max_creates={MAX_CREATES}",
         flush=True,
     )
-    print(f"  WINDOW_LOCK head={WINDOW_LOCK[:120]}…", flush=True)
+    print(f"  DESK_ONLY_LOCK head={DESK_ONLY_LOCK[:120]}…", flush=True)
 
     from playwright.sync_api import sync_playwright
 
@@ -580,7 +584,7 @@ def main() -> None:
                     if 5.0 <= dur <= 40.0:
                         check = still_check_roofs(dest, f"{pid}_existing")
                         if not check["roof_readable"]:
-                            print(f"  skip {dest.name} dur={dur:.2f} roofs_clear", flush=True)
+                            print(f"  skip {dest.name} dur={dur:.2f} desk_only_clear", flush=True)
                             by_id[pid] = {
                                 "id": pid,
                                 "status": by_id.get(pid, {}).get("status", "exists"),
@@ -590,7 +594,7 @@ def main() -> None:
                             }
                             continue
                         print(
-                            f"  existing {dest.name} still has roofs — remint",
+                            f"  existing {dest.name} still has window/roof — remint",
                             flush=True,
                         )
                         dest.unlink(missing_ok=True)
@@ -716,7 +720,7 @@ def main() -> None:
                             rej.unlink()
                         shutil.move(str(tmp), str(rej))
                         print(
-                            f"  REJECT Create {create_n}: roofs readable → {rej.name} "
+                            f"  REJECT Create {create_n}: window/roof readable → {rej.name} "
                             f"(suspect_frames={check['suspect_count']})",
                             flush=True,
                         )
@@ -740,7 +744,7 @@ def main() -> None:
                     META.write_text(json.dumps(meta, indent=2))
                     print(
                         f"  SAVED {dest.name} bytes={dest.stat().st_size} dur={dur:.2f} "
-                        f"try={create_n} roofs_clear",
+                        f"try={create_n} desk_only_clear",
                         flush=True,
                     )
                     accepted = True
@@ -750,13 +754,13 @@ def main() -> None:
                     by_id[pid] = {
                         "id": pid,
                         "status": "fail_roofs_or_create",
-                        "error": str(last_err)[:500] if last_err else "roofs after max Creates",
+                        "error": str(last_err)[:500] if last_err else "window/roof after max Creates",
                         "tries": MAX_CREATES,
                     }
                     meta["plates"] = list(by_id.values())
                     META.write_text(json.dumps(meta, indent=2))
                     raise SystemExit(
-                        f"STOP: {pid} still has roofs (or Create failed) after "
+                        f"STOP: {pid} still has window/roof (window/roof or Create failed) after "
                         f"{MAX_CREATES} Creates. No hard-fill. Report to CoS."
                     )
         finally:
