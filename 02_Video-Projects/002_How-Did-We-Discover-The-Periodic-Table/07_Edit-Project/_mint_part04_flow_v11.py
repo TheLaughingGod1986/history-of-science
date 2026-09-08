@@ -100,8 +100,9 @@ GLASSES_LOCK = (
 
 LAMP_CLEAN_LOCK = (
     "LAMP CLEAN LOCK: soft warm desk-lamp glow ONLY. HARD REJECT: lamp spitting fire, "
-    "sparks dripping under the bulb, candle flames on the desk, fire particles, "
-    "ember trails, flaming props. The bulb is a calm warm glow — never fire."
+    "sparks dripping under the bulb, candle flames on the desk, any lit candle, "
+    "taper candle, wax candle, fire particles, ember trails, flaming props. "
+    "ZERO candles anywhere in the scene. The bulb is a calm warm glow — never fire."
 )
 
 WRITTEN_CARDS_LOCK = (
