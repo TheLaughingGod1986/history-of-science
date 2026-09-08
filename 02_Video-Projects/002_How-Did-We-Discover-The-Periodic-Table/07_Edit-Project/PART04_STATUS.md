@@ -28,3 +28,11 @@
 - Cleared via fixed-rect leather + hard sky fills on continuous Veo beds (Create OK; Download JPEG-only). Soft whole-cut also sky-fills 02b window.
 - KEEP: ~38–44 sky · Explorer teal · Empty Chairs · glowing chair.
 - Do **not** declare PASS. No P05 until KEEP/LOCK. Do not ping Ben.
+
+## v05 (2026-09-08)
+- Cut: `hos_002_part04_rough_v05.mp4`
+- sha256: `a7c9741c32f9689c019d5c8695b36a8e8d2bbbebfb19b93ee53b6d584b8a43fc`
+- bytes: 76043650 · duration 127.760s
+- Method: Veo 3.1 Fast T2V of 02b only — **no hard fill**
+- Flow: benoats@googlemail.com
+- Scores → CoS only. Do not declare PASS.
