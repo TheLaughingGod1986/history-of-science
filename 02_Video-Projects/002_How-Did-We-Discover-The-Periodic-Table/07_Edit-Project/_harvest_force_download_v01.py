@@ -92,6 +92,15 @@ def main() -> None:
             if not thumbs:
                 raise SystemExit("FAIL: no gallery thumbs")
 
+            # Prefer Videos filter so we don't open the start-frame JPEG.
+            try:
+                page.get_by_text("Videos", exact=True).first.click(timeout=5000)
+                page.wait_for_timeout(1500)
+                thumbs = flow.collect_gallery_asb_srcs(page) or thumbs
+                print(f"  after Videos tab thumbs={len(thumbs)}", flush=True)
+            except Exception as e:
+                print(f"  Videos tab warn: {e}", flush=True)
+
             src = thumbs[-1]
             page.evaluate(
                 """(src)=>{
@@ -146,66 +155,100 @@ def main() -> None:
                 if accept_mp4(tmp, dest):
                     return
 
+            # Prefer Videos tab so we open the clip, not the start-frame JPEG.
+            try:
+                page.get_by_text("Videos", exact=True).first.click(timeout=5000)
+                page.wait_for_timeout(1500)
+                thumbs2 = flow.collect_gallery_asb_srcs(page)
+                if thumbs2:
+                    src2 = thumbs2[-1]
+                    page.evaluate(
+                        """(src)=>{
+                          const els=[...document.querySelectorAll('img,video')];
+                          const el=els.find(e=>(e.currentSrc||e.src||'')===src)
+                            || els.find(e=>(e.currentSrc||e.src||'').includes('/asb/'));
+                          if(el){el.scrollIntoView({block:'center'}); el.click();}
+                        }""",
+                        src2,
+                    )
+                    page.wait_for_timeout(2000)
+            except Exception as e:
+                print(f"  Videos tab warn: {e}", flush=True)
+
+            # CDP download path — Playwright expect_download often closes mid-save.
+            dl_dir = dest.parent / "_dl"
+            dl_dir.mkdir(parents=True, exist_ok=True)
+            for old in dl_dir.glob("*"):
+                if old.is_file():
+                    old.unlink()
+            try:
+                cdp = ctx.new_cdp_session(page)
+                cdp.send(
+                    "Page.setDownloadBehavior",
+                    {"behavior": "allow", "downloadPath": str(dl_dir)},
+                )
+                print(f"  CDP downloadPath={dl_dir}", flush=True)
+            except Exception as e:
+                print(f"  CDP download warn: {e}", flush=True)
+
             btn = page.get_by_role("button", name=re.compile(r"Download media", re.I))
             if not (btn.count() and btn.first.is_visible()):
-                btn = page.locator('button[aria-label*="Download" i]').first
+                btn = page.locator('button[aria-label*="Download media" i]').first
             print("Download media…", flush=True)
             tmp = dest.with_suffix(".dl.tmp.mp4")
             tmp.unlink(missing_ok=True)
             try:
-                with page.expect_download(timeout=90_000) as di:
-                    if hasattr(btn, "count"):
-                        btn.first.click(force=True)
-                    else:
-                        btn.click(force=True)
-                    page.wait_for_timeout(700)
-                    item = page.evaluate(
-                        """() => {
-                          const items=[...document.querySelectorAll(
-                            '[role=menuitem],button,a,mat-menu-item,.mat-mdc-menu-item'
-                          )];
-                          const scored=[];
-                          for (const el of items) {
-                            const t=((el.innerText||'')+' '
-                              +(el.getAttribute('aria-label')||'')).trim().replace(/\\n/g,' ');
-                            if (!t || t.length>90) continue;
-                            const r=el.getBoundingClientRect();
-                            if (r.width<20 || r.height<12) continue;
-                            let score=0;
-                            if (/\\bmp4\\b/i.test(t)) score+=5;
-                            if (/original|full|video|1080|720/i.test(t)) score+=3;
-                            if (/image|jpeg|png|still/i.test(t)) score-=5;
-                            if (score>0) scored.push({score,t:t.slice(0,60),
-                              x:r.x+r.width/2,y:r.y+r.height/2});
-                          }
-                          scored.sort((a,b)=>b.score-a.score);
-                          return scored[0]||null;
-                        }"""
-                    )
-                    if item:
-                        print(f"  menu → {item}", flush=True)
-                        page.mouse.click(item["x"], item["y"])
-                    else:
-                        print("  no menu item — waiting for direct download", flush=True)
-                dl = di.value
+                if hasattr(btn, "count"):
+                    btn.first.click(force=True)
+                else:
+                    btn.click(force=True)
+                page.wait_for_timeout(900)
+                item = page.evaluate(
+                    """() => {
+                      const items=[...document.querySelectorAll('*')];
+                      const scored=[];
+                      for (const el of items) {
+                        const t=((el.innerText||'')+' '
+                          +(el.getAttribute('aria-label')||'')).trim().replace(/\\n/g,' ');
+                        if (!t || t.length>60) continue;
+                        const r=el.getBoundingClientRect();
+                        if (r.width<20 || r.height<12) continue;
+                        let score=0;
+                        if (/720p/i.test(t)) score+=12;
+                        if (/1080p/i.test(t)) score+=10;
+                        if (/\\bmp4\\b/i.test(t)) score+=10;
+                        if (/upscaled/i.test(t)) score+=3;
+                        if (/1k|original size|image|jpeg|png|still|fullscreen/i.test(t)
+                            && !/mp4|1080|720|upscaled/i.test(t)) score-=12;
+                        if (score>0) scored.push({score,t:t.slice(0,60),
+                          x:r.x+r.width/2,y:r.y+r.height/2});
+                      }
+                      scored.sort((a,b)=>b.score-a.score);
+                      return scored[0]||null;
+                    }"""
+                )
+                if item:
+                    print(f"  menu → {item}", flush=True)
+                    page.mouse.click(item["x"], item["y"])
+                else:
+                    print("  no menu item — waiting for direct download", flush=True)
+                # Wait for file on disk (CDP path)
                 raw = None
-                for attempt in range(5):
-                    try:
-                        pth = dl.path()
-                        if pth and Path(pth).exists():
-                            raw = Path(pth).read_bytes()
-                            print(f"  path ok attempt={attempt} bytes={len(raw)}", flush=True)
-                            break
-                    except Exception as e:
-                        print(f"  path wait {attempt}: {e}", flush=True)
-                        time.sleep(1.5)
-                if raw is None:
-                    try:
-                        dl.save_as(str(tmp))
-                        raw = tmp.read_bytes()
-                        print(f"  save_as ok bytes={len(raw)}", flush=True)
-                    except Exception as e:
-                        print(f"  save_as fail: {e}", flush=True)
+                deadline = time.time() + 90
+                while time.time() < deadline:
+                    files = [
+                        f for f in dl_dir.iterdir()
+                        if f.is_file()
+                        and not f.name.endswith(".crdownload")
+                        and not f.name.endswith(".tmp")
+                    ]
+                    big = [f for f in files if f.stat().st_size > 400_000]
+                    if big:
+                        cand = max(big, key=lambda p: p.stat().st_size)
+                        raw = cand.read_bytes()
+                        print(f"  CDP file ok {cand.name} bytes={len(raw)}", flush=True)
+                        break
+                    time.sleep(1.5)
                 if raw is None and net_hits:
                     raw = net_hits[-1]
                     print(f"  fallback net bytes={len(raw)}", flush=True)

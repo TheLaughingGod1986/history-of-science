@@ -1,0 +1,17 @@
+{
+  "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v09_start_frames/06_explorer_leaves_gap_start_v09.jpg",
+  "desk_src": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v09_start_frames/_desk_bed_05.jpg",
+  "explorer_src": "character_sheet_fullbody",
+  "dna_refs": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v09_dna/character_sheet.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v09_dna/germs_lock.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v09_dna/p03_keep.jpg"
+  ],
+  "forbidden": "never use v08 hat FAIL stills as start frame",
+  "locks": [
+    "NO HAT \u2014 FULL messy wavy chestnut crown hair (sheet DNA)",
+    "skin: light-medium warm tan / fair boy",
+    "coat: house dark teal / blue-green trenchcoat",
+    "toy-scale garnish PROFILE \u2014 not face-hero, not bald-crown back"
+  ]
+}
