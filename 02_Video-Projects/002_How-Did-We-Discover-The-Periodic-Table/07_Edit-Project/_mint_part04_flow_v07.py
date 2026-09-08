@@ -57,11 +57,13 @@ STYLE = (
 )
 
 REJECT = (
-    "HARD REJECT: flat navy/blue rectangular sky overlays; pasted sky boxes; "
+    "HARD REJECT: any window showing exterior; flat navy/blue rectangular sky overlays; pasted sky boxes; "
     "hard fills of any colour; brown scrub panels; heal panels; unblended coloured "
-    "rectangles covering half the frame; peaked roofs; chimneys; town silhouette; "
-    "skyline; model-town; village; glowing yellow house windows outdoors; "
-    "Ken Burns only; Orbit robot; photoreal; layout reset away from desk DNA."
+    "rectangles covering half the frame; peaked roofs; gables; chimneys; town "
+    "silhouette; skyline; horizon band with buildings; model-town; village; "
+    "glowing yellow house windows outdoors; dark triangular roof shapes in lower "
+    "window panes; Ken Burns only; Orbit robot; photoreal; layout reset away from "
+    "desk DNA."
 )
 
 DESK_PROP_LOCK = (
@@ -70,21 +72,21 @@ DESK_PROP_LOCK = (
 )
 
 WINDOW_LOCK = (
-    "Lab window in frame must be a REAL wooden multi-pane window with true glass "
-    "muntins. Through the panes: a CONTINUOUS deep night sky with ONE soft moon, "
-    "soft clouds, and faint stars rendered IN-CAMERA as part of the 3D world — "
-    "NOT a flat navy rectangle, NOT a pasted sky box, NOT a hard fill, NOT a heal "
-    "panel. Exterior EMPTY of architecture — no rooftops, no chimneys, no "
-    "model-town, no village silhouette, no glowing yellow street windows. "
-    "Sky + moon + soft clouds + stars ONLY beyond the glass."
+    "NO WINDOW in frame. Behind the desk is a solid warm wooden panelled wall "
+    "and/or filled bookcase only — fully indoor night study lit by the desk lamp. "
+    "ZERO exterior view, ZERO sky, ZERO moon-through-glass, ZERO glass panes "
+    "showing outdoors, ZERO flat navy/blue sky rectangles, ZERO pasted sky boxes, "
+    "ZERO hard fills, ZERO heal panels, ZERO rooftops, ZERO chimneys, ZERO town "
+    "silhouette, ZERO skyline. The background wall stays continuous wood/books."
 )
 
 PROMPTS = {
     "05_columns_families": (
         "Text-to-video. ONE persistent 1869 chemist desk: honey wood, soft warm "
         "lamp, cream blank cards dropping into vertical family columns — cousins "
-        "grouping. Continuous drop + settle motion. Behind the desk a real "
-        "multi-pane night window with moon + soft clouds + stars in-camera. "
+        "grouping. Continuous drop + settle motion. Fully indoor night study: "
+        "solid warm wood panelled wall and/or filled bookcase behind the desk — "
+        "NO window, NO exterior sky, NO moon-through-glass, NO navy sky rectangles. "
         f"{WINDOW_LOCK} {DESK_PROP_LOCK} "
         "Silent. No people. No Explorer. "
         + REJECT + " " + STYLE
@@ -94,26 +96,26 @@ PROMPTS = {
         "boy — messy wavy brown hair, gold wire-rim glasses, TEAL trenchcoat "
         "overcoat (house lock, NOT academic blazer). He pins one cream card into "
         "a column, leaves a glowing vacant seat/gap, steps back. Continuous acting "
-        "+ gentle camera. Behind him a real multi-pane night window with moon + "
-        "soft clouds + stars in-camera. "
+        "+ gentle camera. Fully indoor: solid wood panelled wall / bookcase behind "
+        "— NO window, NO exterior sky, NO navy sky boxes, NO roofs. "
         f"{WINDOW_LOCK} {DESK_PROP_LOCK} "
-        "Silent. HARD REJECT: twins, off-model Explorer, flat sky boxes. "
+        "Silent. HARD REJECT: twins, off-model Explorer, flat sky boxes, roofs. "
         + REJECT + " " + STYLE
     ),
     "09_risk_bet": (
         "Text-to-video. ONE persistent 1869 chemist desk with ONE glowing vacant "
         "wooden chair (Empty Chairs / A BET). Soft tension lighting. Continuous "
-        "subtle camera drift + chair glow pulse. Real multi-pane night window "
-        "behind with moon + soft clouds + stars in-camera. "
+        "subtle camera drift + chair glow pulse. Fully indoor wood-wall study — "
+        "NO window, NO exterior sky, NO navy sky rectangles, NO roofs. "
         f"{WINDOW_LOCK} {DESK_PROP_LOCK} "
         "Silent. No people. No Explorer. KEEP chair glow. "
         + REJECT + " " + STYLE
     ),
     "09b_risk_hold": (
         "Text-to-video. ONE persistent 1869 chemist desk; glowing vacant chair "
-        "holds frame as hero. Continuous subtle hold / lamp warmth vs cooler night "
-        "window. Real multi-pane night window with moon + soft clouds + stars "
-        "in-camera. "
+        "holds frame as hero. Continuous subtle hold / lamp warmth. Fully indoor "
+        "wood-wall study — NO window, NO exterior sky, NO navy sky rectangles, "
+        "NO roofs. "
         f"{WINDOW_LOCK} {DESK_PROP_LOCK} "
         "Silent. No people. KEEP chair glow. "
         + REJECT + " " + STYLE
@@ -517,15 +519,15 @@ def _truthy(name: str) -> bool:
     return os.environ.get(name, "").strip().lower() in {"1", "true", "yes", "on"}
 
 
-def mint_one_create(page, prompt: str, tmp: Path) -> dict:
+def mint_one_create(page, prompt: str, tmp: Path, start_frame: Path | None = None) -> dict:
     """One Flow Create (attempts=1). Caller owns the max-2 retry loop."""
     info = flow.generate_clip(
         page,
         prompt,
         tmp,
         model=MODEL,
-        start_frame=None,
-        scenery_only=True,
+        start_frame=start_frame,
+        scenery_only=(start_frame is None),
         reuse_project=False,
         attempts=1,
         timeout_s=180,
@@ -574,7 +576,7 @@ def main() -> None:
         "model": MODEL,
         "flow_home": flow.FLOW_HOME,
         "raw": str(RAW),
-        "continuity": "v07_real_window_night_sky_moon_no_hard_fill",
+        "continuity": "v07_indoor_no_window_no_hard_fill_no_roofs",
         "parent_v06_sha": "5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2",
         "window_lock": (
             "real multi-pane window; night sky + moon + soft clouds + stars "
@@ -645,13 +647,16 @@ def main() -> None:
 
                 accepted = False
                 last_err: Exception | None = None
-                # CREATE_OFFSET accounts for Creates already spent this scrub (e.g. try1 rejected).
-                creates_this_run = max(1, MAX_CREATES - CREATE_OFFSET)
-                for local_n in range(1, creates_this_run + 1):
-                    create_n = CREATE_OFFSET + local_n
+                # Only count Creates that actually submit to Flow (UI pre-submit fails
+                # do not burn the max-2 budget). CREATE_OFFSET = prior spent Creates.
+                submitted = 0
+                attempt_n = 0
+                while submitted < max(1, MAX_CREATES - CREATE_OFFSET) and attempt_n < 8:
+                    attempt_n += 1
+                    create_n = CREATE_OFFSET + submitted + 1
                     print(
                         f"\n=== Fast T2V {pid} Create {create_n}/{MAX_CREATES} "
-                        f"(run {local_n}/{creates_this_run}) ({i+1}/{len(plates)}) ===",
+                        f"(submitted={submitted} attempt={attempt_n}) ({i+1}/{len(plates)}) ===",
                         flush=True,
                     )
                     try:
@@ -673,7 +678,7 @@ def main() -> None:
                             {
                                 "id": pid,
                                 "create": create_n,
-                                "status": "fail",
+                                "status": "fail_pre_submit",
                                 "error": str(e)[:500],
                                 "create_death": death,
                             }
@@ -684,8 +689,12 @@ def main() -> None:
                                 f"STOP BLOCKED: Create died on {pid} ({death}). "
                                 "No Ken Burns. No hard fills. No Omni Flash substitute."
                             ) from e
-                        print(f"  Create {create_n} failed: {e}", flush=True)
+                        print(
+                            f"  Create pre-submit failed (does not burn budget): {e}",
+                            flush=True,
+                        )
                         continue
+                    submitted += 1
 
                     if info.get("needs_gallery_harvest"):
                         candidates = [
@@ -794,13 +803,18 @@ def main() -> None:
                         "status": "fail_roofs_or_create",
                         "error": str(last_err)[:500] if last_err else "hard-fill/roof after max Creates",
                         "tries": MAX_CREATES,
+                        "submitted_creates": submitted,
                     }
                     meta["plates"] = list(by_id.values())
+                    meta.setdefault("failed_plates", []).append(pid)
                     META.write_text(json.dumps(meta, indent=2))
-                    raise SystemExit(
-                        f"STOP: {pid} still has hard-fill/roof (window/roof or Create failed) after "
-                        f"{MAX_CREATES} Creates. No hard-fill. Report to CoS."
+                    print(
+                        f"FAIL CONTINUE: {pid} still has hard-fill/roof after "
+                        f"{submitted} submitted Creates (max {MAX_CREATES}). "
+                        "No hard-fill. Continuing other plates; report fails to CoS.",
+                        flush=True,
                     )
+                    continue
         finally:
             safe_close(ctx)
 

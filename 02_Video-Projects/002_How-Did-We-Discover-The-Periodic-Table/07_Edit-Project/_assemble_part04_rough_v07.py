@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Assemble HOS 002 Part 04 rough v07 — scrub hard navy sky fills (real window).
 
-Parent: hos_002_part04_rough_v06.mp4 sha a7c9741c…
-  - REMINT: 02b_cards_sixty_three ONLY (desk-only: no window/roofs in 02b)
-  - KEEP: brown scrub cleared · late window 09/09b · night-sky 05/06 · Explorer · Empty Chairs
+Parent: hos_002_part04_rough_v06.mp4 sha 5aea09bd…
+  - REMINT: 05_columns_families, 06_explorer_leaves_gap, 09_risk_bet, 09b_risk_hold
+    (Veo 3.1 Fast — real window night sky+moon in-camera; ZERO hard navy boxes; ZERO roofs)
+  - KEEP: 02b_cards_sixty_three desk-only from v06 (do NOT remint)
+  - KEEP: Empty Chairs / VO / labels / Explorer teal on 06 / brown scrub cleared
   - P01–P03 FROZEN (P03 sha 30060612…)
   - Scores → CoS only. Do not declare PASS. Do not ping Ben.
 """
