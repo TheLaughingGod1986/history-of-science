@@ -23,9 +23,10 @@ META = OUT_DIR / "compose_meta.json"
 GERMS = DNA / "germs_lock.jpg"
 P03 = DNA / "p03_keep.jpg"
 SHEET = DNA / "character_sheet.jpg"
-DESK_GAP = PROJ / "04_Generated-Clips/part04/refs/v01_stills/desk_one_gap.jpg"
-DESK_BED = OUT_DIR / "_desk_bed_t2.jpg"
-FALLBACK_DESK = PROJ / "04_Generated-Clips/part04/refs/v01_stills/desk_dna_t4.jpg"
+DESK_GAP = PROJ / "04_Generated-Clips/part04/refs/v01_stills/desk_one_gap.jpg"  # has window — avoid
+DESK_BED = OUT_DIR / "_desk_bed_05.jpg"  # indoor bookcase, no sky
+FALLBACK_DESK = OUT_DIR / "_desk_bed_t2.jpg"
+FALLBACK_DESK2 = PROJ / "04_Generated-Clips/part04/refs/v01_stills/desk_dna_t4.jpg"
 
 
 def glow_slot(draw: ImageDraw.ImageDraw, xy, wh) -> None:
@@ -89,11 +90,14 @@ def main() -> None:
         if not p.exists():
             raise SystemExit(f"STOP: missing DNA ref {p}")
 
-    desk_src = DESK_GAP if DESK_GAP.exists() else (
-        DESK_BED if DESK_BED.exists() else FALLBACK_DESK
+    # Prefer indoor bookcase bed (no window/sky). desk_one_gap has moon window — forbidden.
+    desk_src = DESK_BED if DESK_BED.exists() else (
+        FALLBACK_DESK if FALLBACK_DESK.exists() else FALLBACK_DESK2
     )
     if not desk_src.exists():
         raise SystemExit(f"STOP: missing desk bed {desk_src}")
+    if "desk_one_gap" in desk_src.name:
+        raise SystemExit("STOP: desk_one_gap has window/sky — refuse for v09")
 
     bed = Image.open(desk_src).convert("RGBA")
     W, H = bed.size
