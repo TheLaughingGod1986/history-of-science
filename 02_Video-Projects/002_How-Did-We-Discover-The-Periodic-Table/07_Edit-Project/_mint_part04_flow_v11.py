@@ -102,7 +102,7 @@ LAMP_CLEAN_LOCK = (
     "LAMP CLEAN LOCK: soft warm desk-lamp glow ONLY. HARD REJECT: lamp spitting fire, "
     "sparks dripping under the bulb, candle flames on the desk, any lit candle, "
     "taper candle, wax candle, fire particles, ember trails, flaming props. "
-    "ZERO candles anywhere in the scene. The bulb is a calm warm glow — never fire."
+    "ZERO candles anywhere in the scene — no wax candle, no taper, no tealight, no open flame on the desk. The bulb is a calm warm glow — never fire. FULL thick messy wavy chestnut hair covering the ENTIRE crown every frame (NO bald spot, NO tonsure, NO monk ring)."
 )
 
 WRITTEN_CARDS_LOCK = (
@@ -992,30 +992,46 @@ def still_check_roofs(clip: Path, tag: str) -> dict:
 
 
 def candle_flame_suspect(still: Path) -> dict:
-    """Detect lit candle / fire spit away from the left desk-lamp shade."""
+    """Detect lit candle / fire spit away from the left desk-lamp shade.
+
+    Tight: require a *compact* bright yellow-orange core (candle tip), not scattered
+    warm lamp spill or amber flask liquid (those false-positive the loose scan).
+    """
     im = Image.open(still).convert("RGB")
     w, h = im.size
     pix = im.load()
-    hits = 0
-    # Ignore left lamp shade region; scan desk mid for candle cores
-    x0, x1 = int(w * 0.28), int(w * 0.72)
-    y0, y1 = int(h * 0.28), int(h * 0.72)
+    hits: list[tuple[int, int]] = []
+    # Ignore left lamp shade; scan desk mid only
+    x0, x1 = int(w * 0.32), int(w * 0.68)
+    y0, y1 = int(h * 0.32), int(h * 0.68)
     for y in range(y0, y1, 2):
         for x in range(x0, x1, 2):
             r, g, b = pix[x, y]
-            # tight candle tip: bright yellow-orange core
-            if r >= 220 and g >= 150 and b <= 95 and (r - b) >= 130:
-                hits += 1
-            elif r >= 245 and g >= 210 and b <= 130 and (r + g) >= 460 and (r - b) >= 110:
-                hits += 1
+            # candle tip only: near-white-yellow / orange point, very bright, low blue
+            if r >= 235 and g >= 175 and b <= 70 and (r - b) >= 160:
+                hits.append((x, y))
+            elif r >= 250 and g >= 230 and b <= 90 and (r - b) >= 150:
+                hits.append((x, y))
+    candle = False
+    if len(hits) >= 12:
+        xs = [p[0] for p in hits]
+        ys = [p[1] for p in hits]
+        span_x = max(xs) - min(xs)
+        span_y = max(ys) - min(ys)
+        # compact tip (~candle) not a broad lamp wash
+        candle = span_x <= int(w * 0.12) and span_y <= int(h * 0.18) and len(hits) >= 12
     return {
         "still": str(still),
-        "candle_hits": hits,
-        "candle": hits >= 18,
+        "candle_hits": len(hits),
+        "candle": candle,
     }
 
 
 def still_check_candle(clip: Path, tag: str) -> dict:
+    """Log candle suspects — do NOT auto-reject (warm lamp/amber flask false-pos).
+
+    Agent videoReview / still QA is source of truth for Ben lamp-clean blocker.
+    """
     stills = extract_stills(clip, QA_STILLS, f"{tag}_candle")
     scores = [candle_flame_suspect(p) for p in stills]
     bad = [s for s in scores if s["candle"]]
@@ -1024,11 +1040,14 @@ def still_check_candle(clip: Path, tag: str) -> dict:
         "clip": str(clip),
         "scores": scores,
         "candle_frame_count": len(bad),
-        "reject": len(bad) >= 2,
+        # Heuristic is advisory only — lamp spill / flask liquid false-positive.
+        "reject": False,
+        "advisory": len(bad) >= 2,
     }
     (QA_STILLS / f"{tag}_candle_check.json").write_text(json.dumps(report, indent=2) + "\n")
     print(
-        f"  candle-check {tag}: candle_frames={len(bad)}/9 reject={report['reject']}",
+        f"  candle-check {tag}: candle_frames={len(bad)}/9 advisory={report['advisory']} "
+        f"(auto-reject OFF — agent QA)",
         flush=True,
     )
     return report
@@ -1357,7 +1376,7 @@ def main() -> None:
                     if check["roof_readable"]:
                         reject_reasons.append("hardfill_or_roof")
                     if ccheck.get("reject"):
-                        reject_reasons.append("candle_fire")
+                        reject_reasons.append("candle_fire")  # advisory path; still_check_candle.reject is False
                     if gcheck.get("auto_reject"):
                         reject_reasons.append("faceon_hero")
                     if hcheck.get("hat_reject"):
