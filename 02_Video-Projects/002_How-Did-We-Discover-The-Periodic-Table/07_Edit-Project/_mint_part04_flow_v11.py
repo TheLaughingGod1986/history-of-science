@@ -102,7 +102,7 @@ LAMP_CLEAN_LOCK = (
     "LAMP CLEAN LOCK: soft warm desk-lamp glow ONLY. HARD REJECT: lamp spitting fire, "
     "sparks dripping under the bulb, candle flames on the desk, any lit candle, "
     "taper candle, wax candle, fire particles, ember trails, flaming props. "
-    "ZERO candles anywhere in the scene — no wax candle, no taper, no tealight, no open flame on the desk. The bulb is a calm warm glow — never fire. FULL thick messy wavy chestnut hair covering the ENTIRE crown every frame (NO bald spot, NO tonsure, NO monk ring)."
+    "ZERO open flames anywhere on the desk — no wax candle, no taper, no tealight, no Bunsen burner flame, no spirit lamp, no fire behind cards, no orange flame tips.  The bulb is a calm warm glow — never fire. FULL thick messy wavy chestnut hair covering the ENTIRE crown every frame (NO bald spot, NO tonsure, NO monk ring)."
 )
 
 WRITTEN_CARDS_LOCK = (
@@ -919,10 +919,9 @@ def still_check_garnish(clip: Path, tag: str) -> dict:
         "faceon_count": len(faceons),
         "face_hero": len(heroes) >= 2,
         "faceon_pose": len(faceons) >= 2,
-        # Heuristic face-on over-flags pure-back frames (hands/neck skin). Do NOT
-        # auto-reject on faceon alone — agent still QA stills for profile/back KEEP.
-        # Auto-reject only when tall face-hero AND strong faceon agreement (≥5).
-        "auto_reject": len(heroes) >= 5 and len(faceons) >= 5,
+        # Agent still QA — but auto-reject when face-on agreement is strong (≥3).
+        # Pure-back false positives exist; prefer remint over shipping ¾-front.
+        "auto_reject": len(faceons) >= 3,
         "max_h_frac": max((s["h_frac"] for s in scores), default=0.0),
     }
     (QA_STILLS / f"{tag}_garnish_check.json").write_text(json.dumps(report, indent=2) + "\n")
