@@ -917,8 +917,10 @@ def still_check_garnish(clip: Path, tag: str) -> dict:
         "faceon_count": len(faceons),
         "face_hero": len(heroes) >= 2,
         "faceon_pose": len(faceons) >= 2,
-        # Auto-reject only when tall garnish AND face-on (back silhouette can be tall)
-        "auto_reject": (len(heroes) >= 2 and len(faceons) >= 2) or len(faceons) >= 4,
+        # Heuristic face-on over-flags pure-back frames (hands/neck skin). Do NOT
+        # auto-reject on faceon alone — agent still QA stills for profile/back KEEP.
+        # Auto-reject only when tall face-hero AND strong faceon agreement (≥5).
+        "auto_reject": len(heroes) >= 5 and len(faceons) >= 5,
         "max_h_frac": max((s["h_frac"] for s in scores), default=0.0),
     }
     (QA_STILLS / f"{tag}_garnish_check.json").write_text(json.dumps(report, indent=2) + "\n")
