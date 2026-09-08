@@ -112,9 +112,10 @@ WRITTEN_CARDS_LOCK = (
 )
 
 HAT_LOCK = (
-    "CRITICAL EVERY FRAME: NO HAT. NO helmet. NO pith helmet. NO safari hat. NO cap. "
+    "CRITICAL EVERY FRAME: NO HAT. NO crown. NO gold crown. NO diadem. NO tiara. "
+    "NO helmet. NO pith helmet. NO safari hat. NO cap. "
     "NO hood. NO beanie. NO dome. NO brim. NO head covering of ANY colour (teal, tan, "
-    "beige, brown, cream). The Explorer's head stays BARE for the ENTIRE 8 seconds — "
+    "beige, brown, cream, gold). The Explorer's head stays BARE for the ENTIRE 8 seconds — "
     "FULL messy wavy chestnut-brown hair covering the crown from start to end, "
     "including when he turns, steps back, or is seen from behind. Never grow or spawn "
     "a hat mid-clip. Never strip the crown bald mid-clip. "
@@ -183,7 +184,7 @@ PROMPTS = {
         "wire-rim GLASSES always visible on his face. "
         f"{HAT_LOCK} {COLOUR_DNA_LOCK} {GLASSES_LOCK} {LAMP_CLEAN_LOCK} "
         f"{WRITTEN_CARDS_LOCK} {POSE_LOCK} "
-        "CAMERA LOCK: Camera behind or beside Explorer. Profile or back / over-shoulder "
+        "CAMERA LOCK: Camera locked BEHIND Explorer only. Pure BACK / over-shoulder "
         "view ONLY for the ENTIRE 8 seconds. Never face the camera. Never ¾-front hero. "
         "Toy-scale garnish on desk. Glasses rims stay readable even in profile. "
         "He stays a small teal figurine on the honey-wood chemist desk. Beat: FROM BEHIND "
