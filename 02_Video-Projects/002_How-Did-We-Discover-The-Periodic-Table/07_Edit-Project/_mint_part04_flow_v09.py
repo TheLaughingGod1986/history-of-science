@@ -180,12 +180,12 @@ def dest_for(plate_id: str) -> Path:
 
 
 def resolve_start_frame() -> Path:
-    """Hat-free on-colour start. Prefer dedicated hatfree ref; never FAIL hat stills."""
-    for cand in (START_FRAME_PREF, START_FRAME_06):
+    """Hat-free on-colour start. Prefer latest composed v09 start (sheet full crown)."""
+    for cand in (START_FRAME_06, START_FRAME_PREF):
         if cand.exists() and cand.stat().st_size > 20_000:
             return cand
     raise SystemExit(
-        f"STOP: missing hat-free start frame ({START_FRAME_PREF} or {START_FRAME_06})"
+        f"STOP: missing hat-free start frame ({START_FRAME_06} or {START_FRAME_PREF})"
     )
 
 

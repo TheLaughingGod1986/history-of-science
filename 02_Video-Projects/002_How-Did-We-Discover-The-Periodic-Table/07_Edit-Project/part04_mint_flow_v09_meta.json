@@ -1,0 +1,35 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v09_fast",
+  "continuity": "v09_explorer_hatfree_colour_dna",
+  "parent_v08_sha": "8cafb379af976897d6cee46484439b1ecbda56f8a42760327a96d1744d614a83",
+  "start_frame_06": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v09_start_frames/06_explorer_leaves_gap_start_v09.jpg",
+  "dna_refs": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v09_dna/character_sheet.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v09_dna/germs_lock.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v09_dna/p03_keep.jpg"
+  ],
+  "locks": [
+    "NO_HAT",
+    "fair_warm_skin",
+    "dark_teal_coat",
+    "toy_scale_garnish"
+  ],
+  "max_creates": 2,
+  "only": [
+    "06_explorer_leaves_gap"
+  ],
+  "plates": [],
+  "tries": [
+    {
+      "id": "06_explorer_leaves_gap",
+      "create": 1,
+      "status": "fail_pre_submit",
+      "error": "Flow never enabled Add to Prompt after start-frame upload",
+      "create_death": null
+    }
+  ],
+  "flow_account": "benoats@googlemail.com"
+}

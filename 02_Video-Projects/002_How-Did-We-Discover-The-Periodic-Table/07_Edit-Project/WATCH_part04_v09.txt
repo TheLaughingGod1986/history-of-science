@@ -1,0 +1,27 @@
+WATCH THIS FILE ONLY (Part 04 rough v09 — Explorer HAT-FREE + colour DNA):
+  hos_002_part04_rough_v09.mp4
+
+CoS / Picture→UAT gates for this cut:
+- v08 UAT FAIL ~45–53s: teal pith helmet + colour DNA drift (darkened skin).
+- Reminted: 06_explorer_leaves_gap ONLY. KEEP all other plates from v08 timeline.
+- Spot Explorer ~45–53s: bare head (messy wavy chestnut hair), fair warm tan skin,
+  house dark teal trenchcoat — same boy as character sheet / Germs / P03.
+  Toy-scale garnish (profile/OTS/back), NOT face-hero. NO hat/helmet/cap.
+- KEEP: Empty Chairs glow · EMPTY SEATS / Eka labels · 02b desk-only · late indoor.
+- Real Veo Fast remint. Continuous motion. No Ken Burns. No hard fills / sky boxes.
+- Part 01–03 LOCKED — do not remint
+- Do NOT declare PASS here. Scores → CoS. No P05 until KEEP/LOCK.
+
+Do not ping Ben. Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v08_sha=8cafb379af976897d6cee46484439b1ecbda56f8a42760327a96d1744d614a83
+reminted=06_explorer_leaves_gap
+plate06_sha256=1550c8a0d3d6e79f49c96c944ded53af31c8161145097633000b4b49ae304c74
+plate02b_picture=15.100-23.000
+columns_picture=37.750-45.650
+explorer_picture=45.300-53.200
+plate09_picture=90.600-98.500
+plate09b_picture=98.150-106.050
+sha256=2981b26ae720edc3a8f5456a99fb5a3ac727bc79b850dabe5ad9cc57cf61eb61
+bytes=87106716
+duration=127.760
