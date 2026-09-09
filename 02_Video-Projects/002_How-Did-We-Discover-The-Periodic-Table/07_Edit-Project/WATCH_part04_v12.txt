@@ -1,0 +1,28 @@
+WATCH THIS FILE ONLY (Part 04 rough v12 — Ben FAIL glasses/lamp/written cards):
+  hos_002_part04_rough_v12.mp4
+
+CoS / Picture→UAT gates for this cut:
+- Parent FAIL v10 sha eab7f8ec… — Ben override 8 Sep (glasses / lamp fire / blank cards).
+- Reminted v11: 06_explorer_leaves_gap · 05b_families_settle · 07_eka_placeholders ·
+  07b_eka_names_rotate · 09_risk_bet · 09b_risk_hold. KEEP 02b desk + 05 columns + rest.
+- Spot Explorer ~45–53s: ROUND gold/wire glasses ALWAYS visible · bare head ·
+  messy wavy chestnut · fair warm tan · dark teal coat · profile/OTS/back garnish.
+- Lamp clean: warm desk-lamp glow ONLY — NO fire spit / candle / Bunsen on desk.
+- Cards: readable H/C/O/Eka/atomic marks — NEVER blank cream stacks/hero cards.
+- KEEP: Empty Chairs glow · EMPTY SEATS / Eka / A BET labels · indoor wood/bookcase.
+- Part 01–03 LOCKED — do not remint. Real Veo Fast. No Ken Burns.
+- Do NOT declare PASS here. Scores → CoS. No P05 until KEEP/LOCK.
+
+Do not ping Ben. Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v11_sha=eab7f8ec4d01ae21352e882dd50f8b45bab13d6305c2ac21f6fb73682e47ec8f
+reminted=04_sort_atomic_weight,05_columns_families,05b_families_settle,07_eka_placeholders,08_prediction_navigation,08b_navigation_walk,09_risk_bet,09b_risk_hold,10_family_before_weight
+plate06_sha256=1c766374250b8ffc835ef88fd50995b2fd6020f6a6d697f871d7e5f12f767310
+plate02b_picture=15.100-23.000
+columns_picture=37.750-45.650
+explorer_picture=45.300-53.200
+plate09_picture=90.600-98.500
+plate09b_picture=98.150-106.050
+sha256=175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2
+bytes=89364193
+duration=127.760
