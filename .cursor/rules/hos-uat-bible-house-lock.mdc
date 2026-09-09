@@ -1,5 +1,5 @@
 ---
-description: HOS UAT bible — standing ALWAYS consistency, VO visual explainer, glasses, lamp glow, readable cards on every cut (8 Sep 2026)
+description: HOS UAT bible — standing ALWAYS consistency, VO visual explainer, glasses, lamp glow, readable cards, Explorer hair, no lamp lava, late-shot finish on every cut (9 Sep 2026)
 alwaysApply: true
 ---
 
@@ -9,7 +9,8 @@ alwaysApply: true
 **Scope:** **Standing ALWAYS** on every HOS cut (001, 002, later). Not film-002-only.  
 **Ops bible:** `00_Brand/Brand-Guidelines/HOS_UAT_BIBLE_HOUSE_LOCK.md`  
 **UAT notified:** yes (Ben → CoS).  
-**Hardened 8 Sep 2026:** glasses · lamp glow · readable cards (keep existing ALWAYS).
+**Hardened 8 Sep 2026:** glasses · lamp glow · readable cards (keep existing ALWAYS).  
+**Hardened 9 Sep 2026:** Explorer hair · no lamp lava drip · late-shot finish (keep all prior ALWAYS).
 
 ## Standing ALWAYS (fail any → UAT FAIL)
 
@@ -18,14 +19,18 @@ alwaysApply: true
 3. **EXPLORER ROUND GLASSES** — Whenever Explorer is visible, **round glasses** on (sheet DNA). Bare / no-glasses Explorer = fail.
 4. **LAMP = CLEAN WARM GLOW** — Lamps are a clean warm glow only. Fire spit / candle-flame lamp artifacts = fail.
 5. **READABLE CARDS** — Cards have readable writing or symbols. Blank stacks / blank hero cards = fail.
+6. **EXPLORER HAIR — FULL FINISHED CROWN** — Explorer hair is a full finished crown. Sloppy / unfinished mid-scalp / bald patch = fail.
+7. **NO LAMP LAVA DRIP** — No molten / orange leak under the bulb onto chair / desk. Extends clean light — lava drip = fail.
+8. **LATE SHOTS SHARP + FINISHED** — Final beats stay sharp and finished. Heavy motion blur / ghost doubles / unfinished desks on late shots = fail.
 
 ## Relate (do not weaken)
 
 - **VO visual explainer** reinforces `HOS_HOUSE_VO_AND_TEACH_LOCK.md` — picture lands **with** the VO beat and teaches what the line says.
-- **Consistency** + **round glasses** reinforce Explorer teal trenchcoat / on-model continuity (`.cursor/rules/hos-explorer-character.mdc` · Part 01 style baseline · film lessons).
+- **Consistency** + **round glasses** + **finished crown hair** reinforce Explorer teal trenchcoat / on-model continuity (`.cursor/rules/hos-explorer-character.mdc` · Part 01 style baseline · film lessons).
+- **No lamp lava drip** extends **lamp = clean warm glow** — light stays light, not molten leak under the bulb.
 
 ## Do not
 
 - Soft-pass scenery-only under a specific VO line
-- Soft-pass off-model Explorer, wrong coat / scale, bare/no-glasses Explorer, flame-spit lamps, or blank hero cards / blank stacks
+- Soft-pass off-model Explorer, wrong coat / scale, bare/no-glasses Explorer, unfinished Explorer hair / bald crown, flame-spit lamps, lamp lava drip, blank hero cards / blank stacks, or soft/ghosted/unfinished late shots
 - Remint, mint, upload, Mini, Flow, Studio, Orbit, or Oppti from this rule alone
