@@ -13,7 +13,7 @@ sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 
 # Ben Ultra credits live on multi-login slot /u/1/
-flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
+flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/")
 
 
 def main() -> None:
@@ -37,16 +37,22 @@ def main() -> None:
         default=int(os.environ.get("HOS_FLOW_BEFORE_THUMBS", "-1")),
         help="If >=0, require gallery thumb count to exceed this before harvest",
     )
-    args = ap.parse_args()
+    
+    ap.add_argument("--cdp", default=os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222"))
+    ap.add_argument("--before-thumbs", type=int, default=None)
+    ap.add_argument("--wait-s", type=int, default=None)
 
-    profile = flow.profile_path(
-        Path(
-            os.environ.get(
-                "ORBIT_FLOW_PROFILE",
-                str(Path.home() / ".playwright-hos-flow-profile"),
-            )
-        )
-    )
+    args = ap.parse_args()
+    if args.wait_s is not None:
+        args.wait_s = args.wait_s
+    if getattr(args, "before_thumbs", None) is not None:
+        args.before_thumbs = args.before_thumbs
+    if getattr(args, "project", None) is None and getattr(args, "project_url", None):
+        args.project = args.project_url
+    if not args.project:
+        ap.error("--project or --project-url required")
+
+    
     from playwright.sync_api import sync_playwright
     from playwright.sync_api import Error as PlaywrightError
 
@@ -55,11 +61,23 @@ def main() -> None:
     except Exception:  # pragma: no cover
         TargetClosedError = PlaywrightError  # type: ignore[misc, assignment]
 
+    cdp = os.environ.get("ORBIT_FLOW_CDP", getattr(args, "cdp", None) or "http://127.0.0.1:9222")
+    require_cdp = os.environ.get("HOS_FLOW_REQUIRE_CDP", "1") == "1"
+
     t0 = time.time()
     last_err = "not started"
     while time.time() - t0 < args.wait_s:
         with sync_playwright() as p:
-            ctx, page = flow.launch_context(p, headed=True, profile=profile)
+            browser = None
+            ctx = None
+            page = None
+            if require_cdp or cdp:
+                print(f"harvest CDP attach {cdp}", flush=True)
+                browser = p.chromium.connect_over_cdp(cdp)
+                ctx = browser.contexts[0]
+                page = ctx.new_page()
+            else:
+                raise SystemExit("STOP_TO_COS: harvest refused fresh Playwright profile (passkey risk)")
             captured: list[bytes] = []
             try:
                 page.goto(args.project, wait_until="domcontentloaded", timeout=120_000)

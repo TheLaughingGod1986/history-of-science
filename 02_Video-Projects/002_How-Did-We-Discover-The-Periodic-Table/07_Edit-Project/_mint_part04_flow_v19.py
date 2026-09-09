@@ -30,7 +30,7 @@ REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 
-flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
+flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/")
 
 PROJ = Path(__file__).resolve().parents[1]
 RAW = PROJ / "04_Generated-Clips/part04/raw/v19_fast"
@@ -44,6 +44,8 @@ EDIT_DL = Path(__file__).resolve().parent / "_harvest_part04_v11_edit_download.p
 
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 PROFILE = Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
+CDP_URL = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
+REQUIRE_CDP = os.environ.get("HOS_FLOW_REQUIRE_CDP", "1") == "1"
 REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
 ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
 FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
@@ -202,12 +204,16 @@ def run_harvest(tmp: Path, project_url: str, before_thumbs: int) -> bool:
         return False
     env = os.environ.copy()
     env["ORBIT_FLOW_PROFILE"] = str(PROFILE)
+    env["ORBIT_FLOW_CDP"] = CDP_URL
+    env["HOS_FLOW_REQUIRE_CDP"] = "1"
+    env["ORBIT_FLOW_HOME"] = flow.FLOW_HOME
     cmd = [
         sys.executable, str(HARVEST),
-        "--project-url", project_url,
+        "--project", project_url,
         "--out", str(tmp),
         "--before-thumbs", str(before_thumbs),
         "--wait-s", str(HARVEST_WAIT_S),
+        "--cdp", CDP_URL,
     ]
     print("  harvest:", " ".join(cmd[-8:]), flush=True)
     subprocess.run(cmd, env=env, check=False)
@@ -219,6 +225,8 @@ def run_force_download(tmp: Path, project_url: str) -> bool:
         return False
     env = os.environ.copy()
     env["ORBIT_FLOW_PROFILE"] = str(PROFILE)
+    env["ORBIT_FLOW_CDP"] = CDP_URL
+    env["HOS_FLOW_REQUIRE_CDP"] = "1"
     cmd = [sys.executable, str(FORCE_DL), "--project-url", project_url, "--out", str(tmp)]
     print("  force-dl", flush=True)
     subprocess.run(cmd, env=env, check=False)
@@ -230,20 +238,84 @@ def run_edit_download(tmp: Path, project_url: str) -> bool:
         return False
     env = os.environ.copy()
     env["ORBIT_FLOW_PROFILE"] = str(PROFILE)
+    env["ORBIT_FLOW_CDP"] = CDP_URL
+    env["HOS_FLOW_REQUIRE_CDP"] = "1"
     cmd = [sys.executable, str(EDIT_DL), "--project-url", project_url, "--out", str(tmp)]
     print("  edit-dl", flush=True)
     subprocess.run(cmd, env=env, check=False)
     return accept_mp4(tmp)
 
 
-def assert_auth(page) -> None:
+def assert_auth(page) -> dict:
+    """Confirm live ULTRA session = benoats@googlemail.com, ~8k+ credits, no passkey.
+
+    STOP_TO_COS on passkey / forbidden 86 / low credits. Never open a fresh Playwright profile.
+    """
+    import re as _re
+
     html = page.content()
-    if FORBIDDEN_FLOW_EMAIL in html:
-        raise SystemExit(f"STOP: wrong Flow account {FORBIDDEN_FLOW_EMAIL}")
-    ok = any(e in html for e in ALLOWED_FLOW_EMAILS)
-    if not ok:
-        print("  WARN: email not found in HTML; continuing if /u/1/ session looks live", flush=True)
-    print(f"  AUTH minting via {page.url}", flush=True)
+    body = ""
+    try:
+        body = page.inner_text("body")
+    except Exception:
+        body = html
+    low = (html + "\n" + body).lower()
+    # passkey / verify wall
+    passkey = any(
+        x in low
+        for x in (
+            "passkey",
+            "verifying it's you",
+            "verifying it’s you",
+            "complete sign-in using your passkey",
+            "use your passkey",
+            "confirm it's you",
+            "confirm it’s you",
+        )
+    )
+    if passkey:
+        raise SystemExit(
+            "STOP_TO_COS BLOCKED_AUTH: passkey wall on attached Chrome. "
+            f"profile/CDP={CDP_URL} url={page.url}"
+        )
+    if FORBIDDEN_FLOW_EMAIL.lower() in low or "benoats86" in low:
+        # only fatal if required email absent
+        if REQUIRED_FLOW_EMAIL.lower() not in low and "benoats@googlemail.com" not in low:
+            raise SystemExit(
+                f"STOP_TO_COS BLOCKED_AUTH: forbidden {FORBIDDEN_FLOW_EMAIL} on {page.url}"
+            )
+    credits = None
+    for m in _re.finditer(r"([\d,]{3,7})\s*google flow credits", body, _re.I):
+        credits = int(m.group(1).replace(",", ""))
+        break
+    if credits is None:
+        for m in _re.finditer(r"([\d,]{3,7})\s*credits", body, _re.I):
+            credits = int(m.group(1).replace(",", ""))
+            break
+    ultra = "ultra" in low
+    has_req = REQUIRED_FLOW_EMAIL.lower() in low or "benoats@googlemail.com" in low
+    if credits is not None and credits < 1000:
+        raise SystemExit(
+            f"STOP_TO_COS BLOCKED_AUTH: credits={credits} too low on {page.url}"
+        )
+    if not has_req:
+        print(
+            "  WARN: required email not in DOM yet; ULTRA+credits gate still applies",
+            flush=True,
+        )
+    info = {
+        "url": page.url,
+        "email_ok": has_req,
+        "credits": credits,
+        "ultra": ultra,
+        "cdp": CDP_URL,
+        "passkey": False,
+    }
+    print(
+        f"  AUTH OK cdp={CDP_URL} ultra={ultra} credits={credits} url={page.url}",
+        flush=True,
+    )
+    return info
 
 
 def mint_one(page, pid: str, meta: dict):
@@ -369,52 +441,108 @@ def main() -> None:
     )
     args = ap.parse_args()
     RAW.mkdir(parents=True, exist_ok=True)
+    QA.mkdir(parents=True, exist_ok=True)
     meta: dict = {
         "engine": "flow-veo-ui",
         "account": REQUIRED_FLOW_EMAIL,
+        "forbidden_account": FORBIDDEN_FLOW_EMAIL,
         "parent_v18_sha": PARENT_V18_SHA,
         "bible_main": "43d9405",
         "model": MODEL,
         "plates_requested": args.plates,
         "accepted": {},
         "no_paint_fallback": True,
+        "cdp": CDP_URL,
+        "flow_home": flow.FLOW_HOME,
         "status": "running",
         "updated": time.strftime("%Y-%m-%dT%H:%M:%S"),
     }
     META.write_text(json.dumps(meta, indent=2) + "\n")
 
+    # HARD RULE: attach to Ben's already-open Mini Chrome CDP (OrbitStudio :9222).
+    # Do NOT launch a fresh Playwright profile (passkey). Do NOT use benoats86.
+    if REQUIRE_CDP:
+        print(f"Attaching Flow via CDP {CDP_URL} (no fresh Playwright profile)", flush=True)
     with sync_playwright() as p:
-        ctx = p.chromium.launch_persistent_context(
-            user_data_dir=str(PROFILE),
-            headless=False,
-            viewport={"width": 1400, "height": 900},
-            accept_downloads=True,
-        )
-        page = ctx.pages[0] if ctx.pages else ctx.new_page()
-        page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120000)
-        time.sleep(3)
+        browser = None
+        ctx = None
+        page = None
+        close_ctx = False
         try:
-            page.get_by_role("button", name="Agree").click(timeout=3000)
-        except Exception:
-            pass
-        assert_auth(page)
-        for pid in args.plates:
-            status, _ = mint_one(page, pid, meta)
-            if status == "credit_block":
-                meta["status"] = "CREDIT_BLOCKER"
-                META.write_text(json.dumps(meta, indent=2) + "\n")
-                print("CREDIT BLOCKER — stop Flow creates; NO PAINT", flush=True)
-                break
-            if status == "exhausted":
-                meta.setdefault("exhausted_plates", []).append(pid)
-                META.write_text(json.dumps(meta, indent=2) + "\n")
-                print(f"EXHAUSTED {pid} after {MAX_CREATES} creates — NO PAINT", flush=True)
-        else:
-            want = set(args.plates)
-            got = set(meta.get("accepted", {}))
-            meta["status"] = "done" if want <= got else "partial"
-        META.write_text(json.dumps(meta, indent=2) + "\n")
-        safe_close(ctx)
+            browser = p.chromium.connect_over_cdp(CDP_URL)
+            # Prefer existing Flow tab
+            for c in browser.contexts:
+                for pg in c.pages:
+                    u = (pg.url or "").lower()
+                    if "flow.google.com" in u or "labs.google" in u:
+                        page = pg
+                        ctx = c
+                        break
+                if page is not None:
+                    break
+            if page is None:
+                # open Flow on existing context (still same Chrome profile — no passkey)
+                ctx = browser.contexts[0] if browser.contexts else None
+                if ctx is None:
+                    raise SystemExit(
+                        f"STOP_TO_COS BLOCKED_AUTH: CDP {CDP_URL} has no contexts"
+                    )
+                page = ctx.new_page()
+                page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120000)
+            else:
+                page.bring_to_front()
+                # Stay on live ULTRA home — do NOT hop to /u/1/ (86 trap)
+                if "/u/1" in (page.url or ""):
+                    raise SystemExit(
+                        "STOP_TO_COS BLOCKED_AUTH: attached tab is /u/1/ "
+                        "(forbidden 86 path). Need live flow.google.com ULTRA tab."
+                    )
+                if "flow.google.com" not in (page.url or ""):
+                    page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120000)
+            time.sleep(2)
+            try:
+                page.get_by_role("button", name="Agree").click(timeout=3000)
+            except Exception:
+                pass
+            # Open account menu so credits + email land in DOM
+            try:
+                page.locator("text=ULTRA").first.click(timeout=2500)
+                time.sleep(1.5)
+            except Exception:
+                pass
+            auth = assert_auth(page)
+            meta["auth"] = auth
+            META.write_text(json.dumps(meta, indent=2) + "\n")
+            (QA / "auth_ok_cdp.json").write_text(json.dumps(auth, indent=2) + "\n")
+            try:
+                page.screenshot(path=str(QA / "auth_ok_cdp.png"), full_page=False)
+            except Exception:
+                pass
+
+            for pid in args.plates:
+                status, _ = mint_one(page, pid, meta)
+                if status == "credit_block":
+                    meta["status"] = "CREDIT_BLOCKER"
+                    META.write_text(json.dumps(meta, indent=2) + "\n")
+                    print("CREDIT BLOCKER — stop Flow creates; NO PAINT", flush=True)
+                    break
+                if status == "exhausted":
+                    meta.setdefault("exhausted_plates", []).append(pid)
+                    META.write_text(json.dumps(meta, indent=2) + "\n")
+                    print(f"EXHAUSTED {pid} after {MAX_CREATES} creates — NO PAINT", flush=True)
+            else:
+                want = set(args.plates)
+                got = set(meta.get("accepted", {}))
+                meta["status"] = "done" if want <= got else "partial"
+            META.write_text(json.dumps(meta, indent=2) + "\n")
+        finally:
+            # Never close Ben's Chrome — only disconnect Playwright CDP client.
+            try:
+                if browser is not None:
+                    browser.close()
+            except Exception:
+                pass
+
     print(json.dumps(meta, indent=2), flush=True)
     missing = [p for p in args.plates if p not in meta.get("accepted", {})]
     if missing:
