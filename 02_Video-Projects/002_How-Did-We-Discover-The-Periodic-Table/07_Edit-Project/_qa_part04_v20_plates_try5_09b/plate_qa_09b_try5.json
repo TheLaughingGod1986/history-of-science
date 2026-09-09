@@ -1,0 +1,33 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 5,
+  "landed_at": "2026-09-09T21:30:51+0100",
+  "path_repo": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try5.mp4",
+  "path_icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try5/09b_risk_hold_v20_try5.mp4",
+  "sha256": "19d9a6acbe727ce2d798f56e1b41c956651f93f20cdd5be8eb1328991117cb89",
+  "bytes": 1908392,
+  "duration_s": 8.0,
+  "model": "Veo 3.1 - Fast",
+  "flow_project": "https://flow.google.com/project/210f4518-c5cb-4d25-8f0e-ec68d9ee3a1a",
+  "account": "benoats@googlemail.com",
+  "ultra": true,
+  "paint": false,
+  "parent_rough_v20_sha": "46d5187d7689a89ea43570889af00d8f145c7a6591e87cb7aa74657f62cd5da5",
+  "parent_status": "SELF_FAIL_not_candidate",
+  "gate": "REJECT_CLEAN_LIGHT",
+  "reason": "Continuous mid-frame evidence: ember/spark from ~t1.5; distinct desk flames by t4.5\u2013t7.2. Bible: lava/fire spit NEVER soft-pass. Flat card overlays also present.",
+  "assemble_rough_v21": false,
+  "minted_06_11_11b": false,
+  "stop": true,
+  "ben_ping": false,
+  "visual_review": {
+    "t0.5": "warm lamp OK seed",
+    "t1.5": "ember/spark particles begin \u2014 FAIL seed",
+    "t3.0": "sparks denser \u2014 FAIL",
+    "t4.5": "desk flame \u2014 CLEAN LIGHT FAIL",
+    "t6.0": "two desk flames \u2014 CLEAN LIGHT FAIL",
+    "t7.2": "flames larger \u2014 CLEAN LIGHT FAIL"
+  },
+  "contact_continuous": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try5/09b_risk_hold_contact_continuous.jpg",
+  "contact_grid": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try5/09b_risk_hold_contact_grid.jpg"
+}

@@ -66,10 +66,10 @@ STYLE = (
     "Silent. No Orbit. No Ken Burns still. No paint / no double-exposure."
 )
 CLEAN = (
-    "CLEAN LIGHT (BIBLE HARD): warm desk-lamp glow ONLY. "
+    "CLEAN LIGHT (BIBLE HARD — NEVER soft-pass): warm desk-lamp glow ONLY. "
     "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO burning chair rim, "
-    "ZERO dripping bulb goo onto desk/chair. Soft continuous warm cone — "
-    "no stepped banding rings on the lamp shade. "
+    "ZERO dripping bulb goo onto desk/chair, ZERO lava bloom under the shade. "
+    "Soft continuous warm cone — no stepped banding rings on the lamp shade. "
     "Empty Chairs = ONE soft rectangular panel glow ONLY — never double edge."
 )
 SHARP = (
@@ -157,10 +157,17 @@ PROMPTS = {
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "09b_risk_hold": (
-        "Image-to-video from the attached start frame. Risk-hold / settle beat. "
-        "Finished cinematic stylised 3D chemist study — NOT flat unfinished vector. "
-        "CLEAN LIGHT HARD: soft warm lamp ONLY — ZERO lava drip / molten leak / fire spit "
-        "onto chair or desk. Soft continuous light cone. Locked camera. Silent. "
+        "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact empty-chair study. "
+        "A BET / risk-hold settle beat (~SIDE_LABELS): finished cinematic stylised 3D "
+        "chemist study — honey wood desk, empty wooden chair, bookshelf, readable element cards. "
+        "NOT flat unfinished vlog vector. NOT 2D cutout. NOT cheap cel. "
+        "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN: warm clean desk-lamp glow ONLY. "
+        "Brass/wood lamps are SOLID finished fixtures with a soft continuous warm cone. "
+        "ZERO lava drip from the bulb. ZERO molten orange leak. ZERO fire spit / sparks / embers. "
+        "ZERO burning chair-rim glow. ZERO lava-like bloom spurting under the shade. "
+        "ZERO dripping goo onto chair or desk. Soft continuous gradient — no stepped lamp banding. "
+        "Keep the empty chair calm and solid; gentle settle only. Readable cards stay sharp. "
+        "LOCKED TRIPOD CAMERA. Silent. No Explorer. No Orbit. "
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "10_family_before_weight": (

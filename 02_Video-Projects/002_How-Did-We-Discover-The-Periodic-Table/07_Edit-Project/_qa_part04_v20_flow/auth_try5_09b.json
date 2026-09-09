@@ -1,0 +1,8 @@
+{
+  "url": "https://flow.google.com/",
+  "email_ok": true,
+  "ultra": true,
+  "passkey": false,
+  "cdp": "http://127.0.0.1:9222",
+  "note": "ULTRA badge visible on Flow home; session live"
+}
