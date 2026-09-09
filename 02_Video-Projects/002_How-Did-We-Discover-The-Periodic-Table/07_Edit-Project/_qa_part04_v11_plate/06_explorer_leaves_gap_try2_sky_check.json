@@ -1,0 +1,131 @@
+{
+  "tag": "06_explorer_leaves_gap_try2",
+  "clip": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v11_fast/06_explorer_leaves_gap_v11.try2.tmp.mp4",
+  "stills": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t0.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t1.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t2.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t3.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t4.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t5.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t6.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t7.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t8.jpg"
+  ],
+  "scores": [
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t0.jpg",
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.3586,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t1.jpg",
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.319,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t2.jpg",
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.3067,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t3.jpg",
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.2903,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t4.jpg",
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.2947,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t5.jpg",
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.2803,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t6.jpg",
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.2875,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t7.jpg",
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.2844,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try2_t8.jpg",
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.2922,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    }
+  ],
+  "suspect_count": 0,
+  "hard_fill_count": 0,
+  "roof_count": 0,
+  "roof_readable": false,
+  "hard_fill_or_roof": false,
+  "window_or_roof_readable": false
+}

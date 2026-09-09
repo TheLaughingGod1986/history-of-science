@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "plate": "09b_risk_hold",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v15_fast/09b_risk_hold_v15.mp4",
+      "sha256": "fa4ddf9e574467e1d7ccf1322f4e7984cdecc14c37f0db92796b639839e21e91",
+      "method": "painted_clean_static",
+      "bytes": 1761098
+    },
+    {
+      "plate": "06_explorer_leaves_gap",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v15_fast/06_explorer_leaves_gap_v15.mp4",
+      "sha256": "f294b87b2387c2a10d7aa343db349e10e0fd5576c82a767d08f8fa211e4920c3",
+      "method": "crown_lamp_lock",
+      "bytes": 4384029
+    },
+    {
+      "plate": "10_family_before_weight",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v15_fast/10_family_before_weight_v15.mp4",
+      "sha256": "047a44a2d4888f5dbacd20e8c6dbbc48a8a4dc4becfa0a7a3b798699cf5b00c9",
+      "method": "median_deghost_cream",
+      "bytes": 5746410
+    },
+    {
+      "plate": "11_publish_gaps",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v15_fast/11_publish_gaps_v15.mp4",
+      "sha256": "6942869d20ac034912d521e85b3e8aac95953bb004798571187f22696965dc62",
+      "method": "median_deghost_cream",
+      "bytes": 12600938
+    },
+    {
+      "plate": "11b_wait_and_hunt",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v15_fast/11b_wait_and_hunt_v15.mp4",
+      "sha256": "31a7bdb0717f40737c6f9832bfd44657e9391824405e1c861b97fd256dcb83c3",
+      "method": "median_deghost_cream",
+      "bytes": 13149028
+    }
+  ],
+  "status": "PAINTED_V15_PLATES \u2014 no PASS"
+}
