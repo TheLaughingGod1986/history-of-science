@@ -157,7 +157,8 @@ def render_side_label(text: str, dest: Path) -> None:
 def resolve_clip(pid: str) -> tuple[Path, str]:
     if pid in REMINT_V18_IDS:
         v18 = RAW_V18 / f"{pid}_v18.mp4"
-        if v18.exists() and v18.stat().st_size >= 400_000:
+        # Painted single-exposure flats compress tiny (~130–200KB @ CRF17); size gate is sanity only.
+        if v18.exists() and v18.stat().st_size >= 80_000:
             return v18, "v18_ben_override_remint"
         raise SystemExit(f"missing reminted v18 plate {v18}")
     if pid in KEEP_V16_IDS:

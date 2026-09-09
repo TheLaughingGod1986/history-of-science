@@ -32,22 +32,23 @@ UAT PASSed `hos_002_part04_rough_v17` sha `e4cc41d8cf050f6726e6b3d5cbbbff1028565
 
 | Plate | Method | sha256 |
 |---|---|---|
-| `06_explorer_leaves_gap` | Painted single-exposure · finished crown · profile/back · gold glasses rim · clean cards | `286c4c0244098ac283e428d7de8e46929e6540cc430ac19c226c1dad675799af` |
-| `10_family_before_weight` | Painted single-exposure · sharp H/C/N/O · clean lamp · ONE soft Empty Chairs panel | `4496c73f9bba7157d50b685c2e427daba12d22b245d73ee7a646a76cb50ef13c` |
-| `11_publish_gaps` | Painted single-exposure · opaque props · no crop-settle · mid-frame ghost QA | `9863fb4844151b95343e12301a1b2c410cfe051edf134f11e1be8f6574506c49` |
-| `11b_wait_and_hunt` | Painted single-exposure · grid holes · mid-frame ghost QA | `dc119f7757938da2ae99e9a02a86d04dfcb1a60cea8086867256737f1b1fbcfa` |
+| `06_explorer_leaves_gap` | Painted single-exposure · finished crown · profile/back · gold glasses rim · clean cards | `d0cff4a1aa1d3afeda35e7a91561673f0de818cbda6d35f2436302934b1f00de` |
+| `10_family_before_weight` | Painted single-exposure · sharp H/C/N/O · clean lamp · ONE soft Empty Chairs panel | `d40a2cb1a9002731f67f22da9da82a6d2eff523ab52f0cdc05d1daa2f1916905` |
+| `11_publish_gaps` | Painted single-exposure · opaque props · no crop-settle · no grain · mid-frame ghost QA | `3ea3401a357b00150976ea5ffbb6fc39bf17c506d3debe69ad0ec09f9816b600` |
+| `11b_wait_and_hunt` | Painted single-exposure · grid holes · mid-frame ghost QA | `2cf249a0954d8ce8e161d84230f8d4734ae03f198126b6ed7fb45f9816e2390b` |
 
 Exact plate sha256 also in `part04_rough_v18_land_meta.json` / `part04_build_v18_painted_meta.json`.
 
 ### Engine notes (credit blockers → CoS)
 
 1. **Gemini API Veo** (`veo-3.1-generate-preview` / lite / fast): `429 RESOURCE_EXHAUSTED` — prepaid credits depleted (`ai.studio` billing). Stopped; did not retry burn.
-2. **Flow Ultra** (`benoats@googlemail.com`): create reached project `f98399b2-df65-41b0-821c-2c28844828d1` then stalled — Agent settings (tune) button not found; no accepted gallery mp4 this run. Prior v17 harvest also empty/MAD-heavy.
-3. Therefore remint used **opaque per-frame painted continuous motion** from fresh procedural single-exposure v18 starts:
-   - ONE soft Empty Chairs glow via mask-blur (no nested concentric rects)
-   - No crop-settle (v17 crop+sharpen rang as ghost doubles for Ben)
-   - No temporal-median · not v01 restore
-   - Mid-plate frames extracted and self-checked before assemble
+2. **Flow Ultra** (`benoats@googlemail.com`): create reached project then stalled (Agent settings / harvest empty). No accepted gallery mp4 this run.
+3. Therefore remint used **opaque per-frame painted continuous motion** from fresh procedural single-exposure v18 starts (harden pass after first land):
+   - ONE soft Empty Chairs glow via heavy mask-blur (no nested concentric rects)
+   - No crop-settle · no grain blend · no sharpen on publish/family/explorer
+   - Card stacks vertical-only (horizontal card offsets read as Ben doubles)
+   - Opaque flask / magnifier / mortar (no translucent nested outlines)
+   - Mid-plate frames extracted (≥3) and self-checked before assemble
 
 ## HARD locks enforced
 
@@ -64,9 +65,9 @@ Exact plate sha256 also in `part04_rough_v18_land_meta.json` / `part04_build_v18
 | Cut | `hos_002_part04_rough_v18.mp4` |
 | Final-Export | `09_Final-Export/hos_002_part04_rough_v18.mp4` |
 | HOS UAT (iCloud) | `HOS UAT/hos_002_part04_rough_v18.mp4` |
-| sha256 | `b4ab99efa40a281bf59a325c443b2c28f29a3db4c5760b046cb290ba3f779fd3` |
-| bytes | 73195893 |
-| duration | 127.760 s |
+| sha256 | `05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5` |
+| bytes | 71888783 |
+| duration | 127.76 s |
 | Watch | `WATCH_part04_v18.txt` |
 | Land meta | `part04_rough_v18_land_meta.json` |
 
@@ -84,11 +85,7 @@ Exact plate sha256 also in `part04_rough_v18_land_meta.json` / `part04_build_v18
 
 Also mid-plate: `_qa_part04_v18_final_mid/` (≥3 frames per reminted plate).
 
-### Edge-pair frac (lower = fewer parallel ghost edges; Ben fail publish ≈ 0.597)
-
-See `part04_rough_v18_land_meta.json` → `edge_pair_frac`.
-
-Note: cut `t≈121` sits inside the 11→11b xfade (0.35s) — edge-pair spikes there are expected from dissolve blend, not plate DNA. Prefer mid-plate stills (`t124.5`/`t125`/`t126`) for LATE SHOTS SHARP scoring.
+Note: cut `t≈121` sits inside the 11→11b xfade (0.35s) — dissolve blend can look soft there. Prefer mid-plate stills (`t2`/`t4`/`t6` of plate mp4s) and cut `t124.5`/`t125`/`t126` for LATE SHOTS SHARP scoring.
 
 ## Residual risk
 

@@ -80,22 +80,22 @@ def soft_empty_chairs_once(canvas: Image.Image) -> Image.Image:
     mask = Image.new("L", (W, H), 0)
     d = ImageDraw.Draw(mask)
     x0, y0, x1, y1 = int(W * 0.42), int(H * 0.24), int(W * 0.58), int(H * 0.40)
-    d.rounded_rectangle((x0, y0, x1, y1), radius=14, fill=255)
-    mask = mask.filter(ImageFilter.GaussianBlur(18))
+    d.rounded_rectangle((x0, y0, x1, y1), radius=18, fill=255)
+    # heavier blur so edge is one soft falloff, never a parallel hard line
+    mask = mask.filter(ImageFilter.GaussianBlur(28))
     glow = Image.new("RGBA", (W, H), (255, 236, 190, 0))
-    # apply soft mask as alpha at low strength — single falloff, no second outline
-    a = mask.point(lambda v: int(v * 0.28))
+    a = mask.point(lambda v: int(v * 0.22))
     glow.putalpha(a)
     return Image.alpha_composite(canvas, glow)
 
 
 def paint_lamp(canvas: Image.Image, cx: int, cy: int, *, scale: float = 1.0) -> None:
-    """Solid warm lamp — no blown white lava patches."""
+    """Solid warm lamp — no blown white lava patches · no stepped concentric rings."""
     lw, lh = int(150 * scale), int(260 * scale)
     lamp = Image.new("RGBA", (lw, lh), (0, 0, 0, 0))
     d = ImageDraw.Draw(lamp)
-    d.ellipse((int(lw * 0.24), int(lh * 0.84), int(lw * 0.76), int(lh * 0.96)), fill=(115, 80, 42, 255))
-    d.ellipse((int(lw * 0.32), int(lh * 0.80), int(lw * 0.68), int(lh * 0.90)), fill=(135, 95, 50, 255))
+    # ONE base ellipse only (nested bases read as horizontal doubles under soft light)
+    d.ellipse((int(lw * 0.26), int(lh * 0.82), int(lw * 0.74), int(lh * 0.96)), fill=(125, 88, 48, 255))
     d.rectangle((int(lw * 0.46), int(lh * 0.30), int(lw * 0.54), int(lh * 0.84)), fill=(145, 105, 55, 255))
     d.polygon(
         [
@@ -105,15 +105,24 @@ def paint_lamp(canvas: Image.Image, cx: int, cy: int, *, scale: float = 1.0) -> 
             (int(lw * 0.32), int(lh * 0.10)),
         ],
         fill=(175, 135, 70, 255),
-        outline=(85, 60, 32, 255),
     )
-    # warm underside only — soft amber wash, never blown jagged white / stepped rings
+    # shade lip as same fill family — no hard outline ring
+    d.polygon(
+        [
+            (int(lw * 0.18), int(lh * 0.34)),
+            (int(lw * 0.82), int(lh * 0.34)),
+            (int(lw * 0.78), int(lh * 0.36)),
+            (int(lw * 0.22), int(lh * 0.36)),
+        ],
+        fill=(155, 115, 55, 255),
+    )
+    # warm underside — heavy blur, low alpha so no stepped rings / jagged white
     warm = Image.new("RGBA", (lw, lh), (0, 0, 0, 0))
     ImageDraw.Draw(warm).ellipse(
-        (int(lw * 0.28), int(lh * 0.24), int(lw * 0.72), int(lh * 0.48)),
-        fill=(255, 210, 140, 90),
+        (int(lw * 0.22), int(lh * 0.20), int(lw * 0.78), int(lh * 0.52)),
+        fill=(255, 205, 130, 55),
     )
-    warm = warm.filter(ImageFilter.GaussianBlur(8))
+    warm = warm.filter(ImageFilter.GaussianBlur(16))
     lamp = Image.alpha_composite(lamp, warm)
     canvas.alpha_composite(lamp, (cx - lw // 2, cy - lh // 2))
 
@@ -127,52 +136,61 @@ def paint_flask(
     scale: float = 1.0,
     sphere: bool = False,
 ) -> None:
-    """Fully opaque flask — no translucent ghost body."""
+    """Fully opaque flask — single silhouette (no rim+inner double outline)."""
     fw, fh = int(110 * scale), int(150 * scale)
     flask = Image.new("RGBA", (fw, fh), (0, 0, 0, 0))
     d = ImageDraw.Draw(flask)
-    d.ellipse((8, int(fh * 0.28), fw - 9, fh - 8), fill=(210, 225, 235, 255), outline=(55, 70, 90, 255), width=3)
-    ly0 = int(fh * 0.48)
-    d.ellipse((14, ly0, fw - 15, fh - 14), fill=(*liquid, 255))
+    # outer glass body — fill only, no outline stroke (stroke+fill reads as ghost rim)
+    d.ellipse((8, int(fh * 0.28), fw - 9, fh - 8), fill=(200, 215, 225, 255))
+    ly0 = int(fh * 0.50)
+    # liquid inset enough that glass rim is a band, not a second flask
+    d.ellipse((18, ly0, fw - 19, fh - 16), fill=(*liquid, 255))
     if sphere:
-        for i, (ox, oy) in enumerate(((0.35, 0.62), (0.55, 0.70), (0.42, 0.78))):
-            r = max(6, int(10 * scale) - i)
+        # bubbles as lighter liquid tint only — no dark outline rings
+        for ox, oy, r in ((0.38, 0.64, 7), (0.55, 0.72, 5), (0.44, 0.78, 4)):
             sx, sy = int(fw * ox), int(fh * oy)
-            d.ellipse((sx - r, sy - r, sx + r, sy + r), fill=(*liquid, 255), outline=(40, 40, 50, 255), width=2)
-    nx0, nx1 = int(fw * 0.38), int(fw * 0.62)
-    d.rectangle((nx0, 6, nx1, int(fh * 0.36)), fill=(200, 215, 225, 255), outline=(55, 70, 90, 255), width=2)
-    d.ellipse((nx0 - 2, 2, nx1 + 2, 16), fill=(220, 225, 230, 255), outline=(55, 70, 90, 255), width=2)
+            bubble = tuple(min(255, c + 40) for c in liquid)
+            d.ellipse((sx - r, sy - r, sx + r, sy + r), fill=(*bubble, 255))
+    nx0, nx1 = int(fw * 0.40), int(fw * 0.60)
+    d.rectangle((nx0, 8, nx1, int(fh * 0.36)), fill=(195, 210, 220, 255))
+    d.ellipse((nx0 - 1, 4, nx1 + 1, 14), fill=(215, 220, 225, 255))
+    # single soft specular — not a second body
+    d.ellipse((int(fw * 0.22), int(fh * 0.36), int(fw * 0.34), int(fh * 0.52)), fill=(235, 240, 245, 255))
     canvas.alpha_composite(flask, (cx - fw // 2, cy - fh // 2))
 
 
 def paint_magnifier(canvas: Image.Image, cx: int, cy: int, *, scale: float = 1.0) -> None:
+    """Opaque lens + single ring — no translucent inner that reads as a double."""
     mw, mh = int(220 * scale), int(90 * scale)
     mag = Image.new("RGBA", (mw, mh), (0, 0, 0, 0))
     d = ImageDraw.Draw(mag)
     r = int(38 * scale)
-    d.ellipse((8, mh // 2 - r, 8 + 2 * r, mh // 2 + r), outline=(150, 115, 55, 255), width=6)
-    d.ellipse((14, mh // 2 - r + 6, 2 + 2 * r, mh // 2 + r - 6), fill=(190, 220, 230, 80))
+    # filled opaque glass disk first, then ONE ring
+    d.ellipse((10, mh // 2 - r + 2, 6 + 2 * r, mh // 2 + r - 2), fill=(175, 200, 210, 255))
+    d.ellipse((8, mh // 2 - r, 8 + 2 * r, mh // 2 + r), outline=(140, 105, 50, 255), width=5)
     d.line((8 + 2 * r - 4, mh // 2 + 4, mw - 10, mh // 2 + 18), fill=(90, 60, 35, 255), width=10)
     canvas.alpha_composite(mag, (cx - mw // 2, cy - mh // 2))
 
 
 def paint_mortar(canvas: Image.Image, cx: int, cy: int, *, scale: float = 1.0, color=(235, 230, 220)) -> None:
+    """Single bowl silhouette — no nested ellipse doubles."""
     mw, mh = int(90 * scale), int(70 * scale)
     m = Image.new("RGBA", (mw, mh), (0, 0, 0, 0))
     d = ImageDraw.Draw(m)
-    d.ellipse((4, int(mh * 0.25), mw - 5, mh - 4), fill=(*color, 255), outline=(90, 80, 70, 255), width=3)
-    d.ellipse((int(mw * 0.18), int(mh * 0.08), int(mw * 0.82), int(mh * 0.45)), fill=(*color, 255), outline=(90, 80, 70, 255), width=2)
-    d.line((int(mw * 0.55), 4, int(mw * 0.78), int(mh * 0.55)), fill=(200, 195, 185, 255), width=8)
+    d.ellipse((4, int(mh * 0.22), mw - 5, mh - 4), fill=(*color, 255))
+    # pestle as one stroke only
+    d.line((int(mw * 0.55), 6, int(mw * 0.78), int(mh * 0.55)), fill=(185, 175, 160, 255), width=7)
     canvas.alpha_composite(m, (cx - mw // 2, cy - mh // 2))
 
 
 def paint_card_stack(canvas: Image.Image, cx: int, cy: int, *, n: int = 5, scale: float = 1.0) -> None:
+    """Stack depth is VERTICAL only — horizontal card offsets read as Ben ghost doubles."""
     cw, ch = int(70 * scale), int(90 * scale)
     for i in range(n):
         card = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
         d = ImageDraw.Draw(card)
         d.rounded_rectangle((1, 1, cw - 2, ch - 2), radius=6, fill=(248, 242, 228, 255), outline=(55, 45, 35, 255), width=2)
-        canvas.alpha_composite(card, (cx - cw // 2 + i * 2, cy - ch // 2 - i * 2))
+        canvas.alpha_composite(card, (cx - cw // 2, cy - ch // 2 - i * 3))
 
 
 def paint_element_card(
@@ -208,7 +226,9 @@ def paint_grid_sheet(
     sheet = Image.new("RGBA", (x1 - x0, y1 - y0), (0, 0, 0, 0))
     d = ImageDraw.Draw(sheet)
     w, h = sheet.size
-    d.rounded_rectangle((2, 2, w - 3, h - 3), radius=8, fill=(245, 236, 215, 255), outline=(60, 50, 40, 255), width=3)
+    d.rounded_rectangle((2, 2, w - 3, h - 3), radius=8, fill=(245, 236, 215, 255))
+    # single thin rim stroke only (width 2)
+    d.rounded_rectangle((2, 2, w - 3, h - 3), radius=8, outline=(60, 50, 40, 255), width=2)
     cols, rows = 6, 4
     pad = 18
     cell_w = (w - 2 * pad) / cols
@@ -216,19 +236,19 @@ def paint_grid_sheet(
     ink = (35, 30, 28, 255)
     for c in range(cols + 1):
         x = int(pad + c * cell_w)
-        d.line((x, pad, x, h - pad), fill=ink, width=3)
+        d.line((x, pad, x, h - pad), fill=ink, width=2)
     for r in range(rows + 1):
         y = int(pad + r * cell_h)
-        d.line((pad, y, w - pad, y), fill=ink, width=3)
+        d.line((pad, y, w - pad, y), fill=ink, width=2)
     gap_cells = {(1, 1), (2, 2), (4, 1), (3, 3), (5, 2)} if holes else {(1, 1), (3, 2), (4, 1)}
     for (cc, rr) in gap_cells:
         cx = int(pad + (cc + 0.5) * cell_w)
         cy = int(pad + (rr + 0.5) * cell_h)
         rad = int(min(cell_w, cell_h) * 0.28)
         if holes:
-            d.ellipse((cx - rad, cy - rad, cx + rad, cy + rad), fill=(120, 85, 50, 255), outline=ink, width=2)
+            d.ellipse((cx - rad, cy - rad, cx + rad, cy + rad), fill=(120, 85, 50, 255))
         else:
-            d.ellipse((cx - rad, cy - rad, cx + rad, cy + rad), outline=ink, width=3)
+            d.ellipse((cx - rad, cy - rad, cx + rad, cy + rad), fill=(55, 45, 35, 255))
     canvas.alpha_composite(sheet, (x0, y0))
 
 
@@ -276,8 +296,8 @@ def paint_publish_desk(*, holes: bool) -> Image.Image:
     paint_mortar(rgba, int(W * 0.52), int(H * 0.48), scale=0.95, color=(235, 230, 220))
     paint_mortar(rgba, int(W * 0.58), int(H * 0.50), scale=1.05, color=(170, 170, 165))
     paint_magnifier(rgba, int(W * 0.78), int(H * 0.58), scale=1.05)
-    # mild sharpen only — v17 used 1.30 and rang like ghosts
-    return ImageEnhance.Sharpness(rgba.convert("RGB")).enhance(1.04)
+    # NO sharpen on publish — even 1.04 rang as ghost edges for Ben
+    return rgba.convert("RGB")
 
 
 def paint_family_desk() -> Image.Image:
@@ -288,7 +308,7 @@ def paint_family_desk() -> Image.Image:
     paint_element_card(rgba, (int(W * 0.40), int(H * 0.56)), "C", "12", angle=5, scale=1.08)
     paint_element_card(rgba, (int(W * 0.58), int(H * 0.58)), "N", "14", angle=-4, scale=1.10)
     paint_element_card(rgba, (int(W * 0.76), int(H * 0.64)), "O", "16", angle=8, scale=1.05)
-    return ImageEnhance.Sharpness(rgba.convert("RGB")).enhance(1.04)
+    return rgba.convert("RGB")
 
 
 def paint_finished_crown(canvas: Image.Image, hx: int, hy: int) -> None:
@@ -372,7 +392,7 @@ def paint_explorer_scene(sheet: Image.Image) -> Image.Image:
     bd.arc((hx + 5, hy - 10, hx + 48, hy + 28), start=200, end=330, fill=(200, 160, 50, 255), width=4)
     rgba = Image.alpha_composite(rgba, body)
     paint_finished_crown(rgba, hx, hy)
-    return ImageEnhance.Sharpness(rgba.convert("RGB")).enhance(1.03)
+    return rgba.convert("RGB")
 
 
 def main() -> None:

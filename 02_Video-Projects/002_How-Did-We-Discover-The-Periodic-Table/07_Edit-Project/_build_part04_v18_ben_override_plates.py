@@ -70,16 +70,13 @@ def ghost_peak(im: Image.Image) -> float:
 
 
 def animate_frame(base: Image.Image, i: int, n: int) -> Image.Image:
-    """Opaque single-exposure — brightness only, never blend two scenes."""
+    """Opaque single-exposure — brightness only, never blend two scenes.
+
+    No grain blend (even 1.2% noise + edge sharpen history read as ghost fringe).
+    """
     t = i / max(n - 1, 1)
-    pulse = 1.0 + 0.010 * math.sin(t * math.pi * 2)
-    frame = ImageEnhance.Brightness(base).enhance(pulse)
-    # tiny grain (not a second exposure of props)
-    if i % 2 == 0:
-        grain = Image.effect_noise((W, H), 5).convert("L")
-        grain_rgb = Image.merge("RGB", (grain, grain, grain))
-        frame = Image.blend(frame, grain_rgb, 0.012)
-    return frame
+    pulse = 1.0 + 0.008 * math.sin(t * math.pi * 2)
+    return ImageEnhance.Brightness(base).enhance(pulse)
 
 
 def build_plate(pid: str) -> dict:
