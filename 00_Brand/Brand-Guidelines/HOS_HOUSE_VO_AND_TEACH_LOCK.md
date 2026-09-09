@@ -40,4 +40,4 @@ For 002 Part 04+ (and similar):
 
 - Bake this into every Showrunner brief from Part 04 onward.
 - Part 03 KEEP / lock path is separate (see film 002 edit status) — do **not** rewrite shipped P03 VO for this note unless Ben asks.
-- Every cut still runs the standing UAT ALWAYS set in `HOS_UAT_BIBLE_HOUSE_LOCK.md` (consistency · VO visual explainer · Explorer round glasses · lamp clean warm glow · readable cards).
+- Every cut still runs the standing UAT ALWAYS set in `HOS_UAT_BIBLE_HOUSE_LOCK.md` (consistency · VO visual explainer · Explorer round glasses · lamp clean warm glow · readable cards · Explorer hair · no lamp lava drip · late-shot finish).

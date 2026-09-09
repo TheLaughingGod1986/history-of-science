@@ -45,6 +45,9 @@ Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
 - [ ] **UAT ALWAYS — EXPLORER ROUND GLASSES:** Explorer wears round glasses whenever visible (fail bare / no-glasses)
 - [ ] **UAT ALWAYS — LAMP = CLEAN WARM GLOW:** lamps are clean warm glow only (fail fire spit / candle-flame artifacts)
 - [ ] **UAT ALWAYS — READABLE CARDS:** cards show readable writing/symbols (fail blank stacks / blank hero cards)
+- [ ] **UAT ALWAYS — EXPLORER HAIR — FULL FINISHED CROWN:** Explorer hair is a full finished crown (fail sloppy / unfinished mid-scalp / bald patch)
+- [ ] **UAT ALWAYS — NO LAMP LAVA DRIP:** no molten / orange leak under bulb onto chair / desk (extends clean light)
+- [ ] **UAT ALWAYS — LATE SHOTS SHARP + FINISHED:** final beats stay sharp and finished (fail heavy motion blur / ghost doubles / unfinished desks)
 - [ ] Studio finish items done after API upload (ABC if long · Related+pin Shorts)
 
 **Ship only when every box is checked.**
