@@ -1,8 +1,8 @@
 # PART04 v20 FLOW — Ben v19 stills remint (no PASS)
 
 **Cut:** `09_Final-Export/hos_002_part04_rough_v20.mp4`  
-**sha256:** `b89a5fdeeee65dded9aebbb677e314d3625ae3285b83d29232527fc8e2d4f1d9`  
-**bytes:** 84039677  
+**sha256:** `1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b`  
+**bytes:** 78059045  
 **duration:** 127.76s  
 **Verdict:** **SELF_FAIL remaining** — do not declare PASS · do not ping Ben
 
@@ -13,27 +13,25 @@
 ## Remint (Flow Ultra CDP, live Mini, NO paint)
 Account `benoats@googlemail.com` ULTRA. Model **Veo 3.1 Fast**. Gallery mp4 harvest only.
 
-| Plate | Flow project |
-|---|---|
-| 06_explorer_leaves_gap (try5) | https://flow.google.com/project/136d14be-11d5-45bd-82b2-0f53a12f1871 |
-| 08_prediction_navigation | https://flow.google.com/project/e5a44cd6-5530-4496-8fb8-cba4893bffa2 |
-| 08b_navigation_walk | https://flow.google.com/project/b08261b3-2c23-489f-a725-345edf5fc6fa |
-| 09_risk_bet | https://flow.google.com/project/2e360c0f-b155-47ff-9396-00d7b0276956 |
-| 09b_risk_hold | https://flow.google.com/project/555bd802-0f3a-433b-aff7-8c0088ffcf16 |
-| 10_family_before_weight | https://flow.google.com/project/6c6777f8-c9b9-4561-a652-3a22087bdb19 |
-| 11_publish_gaps | https://flow.google.com/project/5f65787e-9421-4b1f-b6db-6b5fceceec07 |
-| 11b_wait_and_hunt | https://flow.google.com/project/3dd9ab57-fa09-4ec5-b3f3-8f67e3d52748 |
+| Plate | Try | Flow project | Gate |
+|---|---|---|---|
+| 06_explorer_leaves_gap | 7 | https://flow.google.com/project/17fd41b1-9a6f-44eb-89c0-402d57bd19f6 | KEEP (finished 3/4 Explorer) |
+| 07_eka_placeholders | 9b | https://flow.google.com/project/09196715-0d89-41fe-9c2f-f4a22fdc44e8 | KEEP |
+| 07b_eka_names_rotate | 9 | https://flow.google.com/project/938bc799-aac1-49ca-8ad4-10726c6e059f | REJECT chair-fire |
+| 07b_eka_names_rotate | 10 | https://flow.google.com/project/1f2f49c8-07b1-4038-a645-7e1301400ef3 | KEEP |
+| 08_prediction_navigation | 9 | https://flow.google.com/project/f388d6a8-5e37-4e34-9857-55b152a32321 | KEEP |
+| 08b_navigation_walk | 8 | https://flow.google.com/project/e1629c10-ec73-4a23-a297-46fcd7d817ed | KEEP |
+| 11b_wait_and_hunt | 9 | https://flow.google.com/project/36ca56de-0511-46d2-939f-dc62094f5dff | KEEP (start = 11 last frame) |
 
-Assemble now uses **08 / 08b from v20** (previous land KEEP v12 — that was the molten-bulb DNA).
+07 first submit `38e17016-…` landed empty (Create progress then no gallery) — resubmitted 9b.
 
 ## Honest stills (this cut)
 | t | Ben still | This cut |
 |---|---|---|
-| ~48s | unfinished Explorer | 3D back Explorer remains; **crown pits still visible** |
-| A PREDICTION | lava/fire bulbs | 3D study, not v19 empty-chair lava still; **warm lamp / fiery card glow still a CLEAN LIGHT risk** |
-| ~1:44 | unfinished / pasted | 3D night desk + moon (not flat vlog) · chunky flasks |
-| FAMILY FIRST | flat 2D H/C/N/O | 3D hanging F/Na/Mg desk |
-| publish | unfinished 2D overhead | 3D grid/flasks · xfade ghost + lamp banding |
+| ~48s | unfinished vlog Explorer | 3D 3/4 Explorer; no scalp pits; ore/gas room |
+| A PREDICTION | lava/fire bulbs | flaming N14 KEEP-v11 gone; possible small lamp teardrop ~72–75 |
+| FAMILY FIRST | flat 2D H/C/N/O | 3D hanging F/Na/Mg |
+| publish | unfinished 2D / bad cut | 3D grid/flasks · lamp banding |
 
 ## iCloud
 `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v20.mp4`  
