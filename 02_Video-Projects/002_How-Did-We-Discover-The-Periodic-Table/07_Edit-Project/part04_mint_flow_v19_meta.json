@@ -1,33 +1,144 @@
 {
   "engine": "flow-veo-ui",
-  "account_required": "benoats@googlemail.com",
-  "account_forbidden": "benoats86@gmail.com",
+  "account": "benoats@googlemail.com",
+  "forbidden_account": "benoats86@gmail.com",
+  "cdp": "http://127.0.0.1:9222",
+  "chrome_profile": "Chrome-OrbitStudio",
+  "ultra": true,
+  "credits_at_auth": 8590,
   "parent_v18_sha": "05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5",
   "bible_main": "43d9405",
   "model": "Veo 3.1 - Fast",
-  "plates_requested": [
-    "11_publish_gaps",
-    "11b_wait_and_hunt",
-    "06_explorer_leaves_gap"
-  ],
-  "accepted": {},
   "no_paint_fallback": true,
-  "status": "STOP_TO_COS_BLOCKED_AUTH",
-  "updated": "2026-09-09T17:35:16+01:00",
-  "retry_attempt": {
-    "ben_claim": "try now \u2014 Mini Flow should be signed in",
-    "reverify_result": "PASSKEY still required for benoats@googlemail.com; live u/1 is benoats86 @ 50 credits",
-    "evidence": "07_Edit-Project/_qa_part04_v19_auth/cdp_retry_0_after_googlemail.png",
-    "evidence_json": "07_Edit-Project/_qa_part04_v19_auth/STOP_TO_COS_BLOCKED_AUTH.json",
-    "action_taken": "STOP \u2014 no paint, no temporal-median, no brightness-motion, no mint on benoats86"
+  "no_temporal_median": true,
+  "no_brightness_motion": true,
+  "accepted": {
+    "11_publish_gaps": {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v19_fast/11_publish_gaps_v19.mp4",
+      "sha256": "d77c7c8540beab760f8fd534d7b11c4584c628ecb0d738d9da53bbc3b5917619",
+      "bytes": 1018384,
+      "project_url": "https://flow.google.com/project/98a27639-100d-4997-9272-739952ae57bc",
+      "ghost_peak": 0.432
+    },
+    "11b_wait_and_hunt": {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v19_fast/11b_wait_and_hunt_v19.mp4",
+      "sha256": "570f6a0b51a0c57cafed17beeea8f30204c3523bdfa0f4d9815d245348f12791",
+      "bytes": 996384,
+      "project_url": "https://flow.google.com/project/e61f2c1c-8c1e-46fd-9db6-64d80a83025a",
+      "ghost_peak": 0.485
+    },
+    "06_explorer_leaves_gap": {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v19_fast/06_explorer_leaves_gap_v19.mp4",
+      "sha256": "7ebc1135bd8d2557beb2140459039d7a132f381c992b92d22e22d800d5d58886",
+      "bytes": 1521979,
+      "project_url": "https://flow.google.com/project/790bcd17-f71b-4a62-942a-bc33e68073cf",
+      "ghost_peak": 0.328
+    }
   },
-  "blocker": {
-    "type": "BLOCKED_AUTH",
-    "detail": "Selecting benoats@googlemail.com on labs.google/fx/tools/flow \u2192 Google passkey 'Verifying it's you\u2026 / Complete sign-in using your passkey'. Existing flow.google.com/u/1 session is benoats86@gmail.com with 50 credits \u2014 forbidden."
+  "rough_v19": {
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part04_rough_v19.mp4",
+    "sha256": "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf",
+    "bytes": 80789230,
+    "duration_s": 127.76
   },
-  "not_delivered": [
-    "hos_002_part04_rough_v19.mp4",
-    "iCloud HOS UAT copy",
-    "Flow job ids for 06/11/11b"
-  ]
+  "land": {
+    "cut": "hos_002_part04_rough_v19.mp4",
+    "path": "09_Final-Export/hos_002_part04_rough_v19.mp4",
+    "bytes": 80789230,
+    "duration_s": 127.76,
+    "sha256": "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf",
+    "bible_main": "43d9405",
+    "parent_v18": "hos_002_part04_rough_v18.mp4",
+    "parent_v18_sha256": "05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5",
+    "parent_v17": "hos_002_part04_rough_v17.mp4",
+    "parent_v17_sha256": "e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd",
+    "parent_v16": "hos_002_part04_rough_v16.mp4",
+    "parent_v16_sha256": "7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c",
+    "reminted_plates": [
+      "06_explorer_leaves_gap",
+      "11_publish_gaps",
+      "11b_wait_and_hunt"
+    ],
+    "plate_sha256": {
+      "06_explorer_leaves_gap": "7ebc1135bd8d2557beb2140459039d7a132f381c992b92d22e22d800d5d58886",
+      "11_publish_gaps": "d77c7c8540beab760f8fd534d7b11c4584c628ecb0d738d9da53bbc3b5917619",
+      "11b_wait_and_hunt": "570f6a0b51a0c57cafed17beeea8f30204c3523bdfa0f4d9815d245348f12791"
+    },
+    "plates": {
+      "06_explorer_leaves_gap": {
+        "path": "04_Generated-Clips/part04/raw/v19_fast/06_explorer_leaves_gap_v19.mp4",
+        "sha256": "7ebc1135bd8d2557beb2140459039d7a132f381c992b92d22e22d800d5d58886",
+        "bytes": 1521979
+      },
+      "11_publish_gaps": {
+        "path": "04_Generated-Clips/part04/raw/v19_fast/11_publish_gaps_v19.mp4",
+        "sha256": "d77c7c8540beab760f8fd534d7b11c4584c628ecb0d738d9da53bbc3b5917619",
+        "bytes": 1018384
+      },
+      "11b_wait_and_hunt": {
+        "path": "04_Generated-Clips/part04/raw/v19_fast/11b_wait_and_hunt_v19.mp4",
+        "sha256": "570f6a0b51a0c57cafed17beeea8f30204c3523bdfa0f4d9815d245348f12791",
+        "bytes": 996384
+      }
+    },
+    "methods": {
+      "06_explorer_leaves_gap": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+      "11_publish_gaps": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+      "11b_wait_and_hunt": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)"
+    },
+    "flow_job_ids": {},
+    "kept_from_v18": [
+      "10_family_before_weight"
+    ],
+    "kept_from_v15": [
+      "09_risk_bet",
+      "09b_risk_hold"
+    ],
+    "uat_blocker": "UAT HARD FAIL bible 43d9405 \u2014 PUBLISH ~118\u2013127 continuous horizontal ghost/jitter from paint fallback",
+    "fail_times": {
+      "publish_ghost_window": [
+        118,
+        127
+      ],
+      "explorer": [
+        46,
+        53
+      ]
+    },
+    "timeline": {
+      "plate09b_picture_s": [
+        98.14999999999998,
+        106.04999999999998
+      ],
+      "plate10_picture_s": [
+        105.69999999999997,
+        113.59999999999998
+      ],
+      "plate11_picture_s": [
+        113.24999999999997,
+        121.14999999999998
+      ],
+      "plate11b_picture_s": [
+        120.79999999999997,
+        128.69999999999996
+      ],
+      "explorer_picture_s": [
+        45.3,
+        53.199999999999996
+      ]
+    },
+    "plate06_sha256": "7ebc1135bd8d2557beb2140459039d7a132f381c992b92d22e22d800d5d58886",
+    "plate10_sha256": "d40a2cb1a9002731f67f22da9da82a6d2eff523ab52f0cdc05d1daa2f1916905",
+    "plate11_sha256": "d77c7c8540beab760f8fd534d7b11c4584c628ecb0d738d9da53bbc3b5917619",
+    "plate11b_sha256": "570f6a0b51a0c57cafed17beeea8f30204c3523bdfa0f4d9815d245348f12791",
+    "flow_account": "benoats@googlemail.com",
+    "no_paint_fallback": true,
+    "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+    "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v19.mp4",
+    "watch": "WATCH_part04_v19.txt",
+    "doc": "PART04_V19_FLOW.md",
+    "status": "LANDED_FOR_UAT \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping"
+  },
+  "status": "LANDED_NO_PASS",
+  "updated": "2026-09-09T19:27:06"
 }
