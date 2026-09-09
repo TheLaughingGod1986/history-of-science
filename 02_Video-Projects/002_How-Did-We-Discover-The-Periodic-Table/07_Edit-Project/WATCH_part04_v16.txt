@@ -1,0 +1,23 @@
+WATCH THIS FILE ONLY (Part 04 rough v16 — LATE SHOTS SHARP remint):
+  hos_002_part04_rough_v16.mp4
+
+CoS / Picture→UAT gates for this cut:
+- Parent FAIL v15 sha cd7a57b2979478a34a… — single blocker LATE SHOTS SHARP.
+- Reminted ONLY 10 / 11 / 11b via clean Flow Veo (no temporal-median deghost).
+- KEEP from v15: Explorer 06, 09, 09b CLEAN LIGHT, written cards ~40.
+- Spot ~110 FAMILY FIRST: N-card sharp — NO ghost doubles.
+- Spot ~121–125 PUBLISH THE GAPS: finished sharp desk — NO full-scene ghosts, NO left-half pixel mush.
+- Spot ~102–105 CLEAN LIGHT KEEP: soft panel, no lamp lava.
+- Part 01–03 LOCKED. Flow account benoats@googlemail.com.
+- Do NOT declare PASS here. Scores → CoS. No Ben ping.
+
+Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v15_sha=cd7a57b2979478a34ac7cc5fe5639aa156ae603b437674ccd724ab3fe994748c
+reminted=10_family_before_weight,11_publish_gaps,11b_wait_and_hunt
+plate10_picture=105.700-113.600
+plate11_picture=113.250-121.150
+plate11b_picture=120.800-128.700
+sha256=7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c
+bytes=87821720
+duration=127.760
