@@ -84,36 +84,41 @@ LOCK_CAM = (
     "Any horizontal motion causes FAIL ghost doubles — forbidden. "
     "Single clean exposure like a still photograph that barely breathes."
 )
+STILL_PROPS = (
+    "ALL PROPS FROZEN IN PLACE: grid, flasks, lamp, magnifier, cards do not travel, "
+    "do not slide, do not pan across frame. Magnifier stays fixed on the desk — ZERO travel. "
+    "Only microscopic liquid shimmer inside flasks is allowed. No object fly-through."
+)
 PROMPTS = {
     "11_publish_gaps": (
         "Image-to-video from the attached start frame. PUBLISH THE GAPS beat. "
         "Animistry-class stylised 3D cartoon chemist desk at night. "
         "HARD LOCKED TRIPOD CAMERA — zero pan, zero dolly, zero truck, zero orbit. "
-        + LOCK_CAM + " "
-        "Only tiny object settle (grid cards / flask liquid shimmer). "
-        "SINGLE EXPOSURE every frame: ZERO horizontal ghost / double-edge / smear on "
-        "grid lines, coloured flasks, desk lamp, magnifier. "
-        "One solid lamp, one solid flask set, one solid grid. Soft warm lamp glow — no stepped banding. "
-        "No Explorer. Silent. "
+        + LOCK_CAM + " " + STILL_PROPS + " "
+        "SINGLE EXPOSURE every frame: ZERO horizontal ghost / double-edge / smear / tear on "
+        "grid lines, coloured flasks, desk lamp, magnifier, moon. "
+        "One solid lamp, one solid flask set, one solid grid, one solid magnifier. "
+        "Soft warm lamp glow — no stepped banding. No Explorer. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "11b_wait_and_hunt": (
         "Image-to-video from the attached start frame. Wait-and-hunt beat. "
         "Published flat parchment grid with empty circular holes, flasks, soft warm lamp. "
         "HARD LOCKED TRIPOD CAMERA — zero horizontal pan / smear. "
-        + LOCK_CAM + " "
-        "SINGLE EXPOSURE continuous playback: ZERO ghost doubles on grid / flasks / lamp / magnifier "
-        "in mid frames. Soft continuous light. No Explorer. Silent. "
+        + LOCK_CAM + " " + STILL_PROPS + " "
+        "SINGLE EXPOSURE continuous playback: ZERO ghost doubles / horizontal tears on "
+        "grid / flasks / lamp / magnifier / moon in mid frames. Soft continuous light. "
+        "No Explorer. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "06_explorer_leaves_gap": (
         "Image-to-video from the attached start frame. Explorer garnish beat. "
-        "KEEP exact back/profile Explorer: dense finished brown crown/bun with ZERO black-hole "
-        "scalp pits or face-cloud blotches, gold glasses rim readable, teal coat. "
+        "KEEP exact BACK or PROFILE only — never turn to face camera. "
+        "Dense finished opaque brown crown/bun with ZERO black-hole scalp pits, ZERO gaps "
+        "between hair spheres, ZERO face-cloud blotches; gold glasses rim readable; teal coat. "
         "Desk cards MUST stay readable as H1, C12, N14, O16 (never C1, never N12, never garbled). "
-        "Smooth warm lamp glow — no stepped banding rings. "
-        "LOCKED CAMERA. Dense opaque brown crown ZERO black scalp pits. "
-        "Smooth lamp ZERO stepped banding. Cards exactly H1 C12 N14 O16. Silent. "
+        "Smooth warm lamp glow — continuous soft gradient, NO stepped banding rings on shade. "
+        "LOCKED CAMERA. Tiny head settle only — stay back/profile. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
 }
