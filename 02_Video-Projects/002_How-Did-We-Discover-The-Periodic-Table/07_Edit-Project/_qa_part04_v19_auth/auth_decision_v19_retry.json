@@ -1,0 +1,6 @@
+{
+  "blocked_auth": true,
+  "ok_credits": true,
+  "forbidden_only": false,
+  "action": "STOP_TO_COS_BLOCKED_AUTH"
+}

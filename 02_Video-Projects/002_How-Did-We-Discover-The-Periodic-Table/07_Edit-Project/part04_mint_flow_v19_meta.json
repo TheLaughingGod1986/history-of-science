@@ -13,17 +13,17 @@
   "accepted": {},
   "no_paint_fallback": true,
   "status": "STOP_TO_COS_BLOCKED_AUTH",
-  "updated": "2026-09-09T16:46:14",
-  "resume_attempt": {
-    "ben_claim": "Flow is NOT blocked now",
-    "reverify_result": "PASSKEY still required for benoats@googlemail.com",
-    "evidence": "07_Edit-Project/_qa_part04_v19_auth/flow_googlemail_passkey_blocker_RESUME.png",
+  "updated": "2026-09-09T17:35:16+01:00",
+  "retry_attempt": {
+    "ben_claim": "try now \u2014 Mini Flow should be signed in",
+    "reverify_result": "PASSKEY still required for benoats@googlemail.com; live u/1 is benoats86 @ 50 credits",
+    "evidence": "07_Edit-Project/_qa_part04_v19_auth/cdp_retry_0_after_googlemail.png",
     "evidence_json": "07_Edit-Project/_qa_part04_v19_auth/STOP_TO_COS_BLOCKED_AUTH.json",
-    "action_taken": "STOP \u2014 no paint, no temporal-median, no brightness-motion, no mint on benoats86 (50 credits)"
+    "action_taken": "STOP \u2014 no paint, no temporal-median, no brightness-motion, no mint on benoats86"
   },
   "blocker": {
     "type": "BLOCKED_AUTH",
-    "detail": "Selecting benoats@googlemail.com on labs.google/fx/tools/flow \u2192 Google passkey 'Verifying it's you\u2026 / Complete sign-in using your passkey'. Cannot mint ~10050-credit Ultra session without human passkey approval."
+    "detail": "Selecting benoats@googlemail.com on labs.google/fx/tools/flow \u2192 Google passkey 'Verifying it's you\u2026 / Complete sign-in using your passkey'. Existing flow.google.com/u/1 session is benoats86@gmail.com with 50 credits \u2014 forbidden."
   },
   "not_delivered": [
     "hos_002_part04_rough_v19.mp4",
