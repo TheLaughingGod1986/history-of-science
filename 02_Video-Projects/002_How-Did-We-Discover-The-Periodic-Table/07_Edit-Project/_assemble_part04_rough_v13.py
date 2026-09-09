@@ -1,7 +1,8 @@
-"""Assemble HOS 002 Part 04 rough v13 — CLEAN LIGHT + WRITTEN CARDS remint (chair fire / lamp smoke / blank cards).
+"""Assemble HOS 002 Part 04 rough v13 — CLEAN LIGHT + WRITTEN CARDS remint.
 
-Parent FAIL: hos_002_part04_rough_v13.mp4 sha 175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2
-  - REMINT: 04,05,09,09b (v13_fast) — blank stacks ~40–42; blank bet cards ~98; chair fire/smoke ~102–105
+Parent FAIL: hos_002_part04_rough_v13.mp4
+O5c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2
+  - REMINT: 04,05,09,09b (v13_fast) — blank stacks ~40–42; blank bet ~98; chair fire/smoke ~102–105
   - KEEP: 06 v11 CLEARED; 05b/07/08/08b/10 v12 cleared takes; 02b v06; 07b v11; P01–P03 frozen
   - Scores → CoS only. Do not declare PASS. Do not ping Ben.
 """
@@ -31,11 +32,11 @@ OUT = PROJ / "09_Final-Export/hos_002_part04_rough_v13.mp4"
 KEEP_V06_PARENT = PROJ / "09_Final-Export/hos_002_part04_rough_v06.mp4"
 KEEP_V07_PARENT = PROJ / "09_Final-Export/hos_002_part04_rough_v07.mp4"
 KEEP_V08_PARENT = PROJ / "09_Final-Export/hos_002_part04_rough_v08.mp4"
-KEEP_V08_PARENT_SHA = "8cafb379af976897d6cee46484439b1ecbda56f8a42760327a96d1744d614a83"
+KEEP_V08_PARENT_SHA = "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2"
 KEEP_V09_PARENT = PROJ / "09_Final-Export/hos_002_part04_rough_v09.mp4"
-KEEP_V09_PARENT_SHA = "2981b26ae720edc3a8f5456a99fb5a3ac727bc79b850dabe5ad9cc57cf61eb61"
-KEEP_V07_PARENT_SHA = "a74fa8ecd7f74785b3c4887e574d009676844189a0dc67620e659ae96e09efe2"
-KEEP_V06_PARENT_SHA = "5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2"
+KEEP_V09_PARENT_SHA = "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2"
+KEEP_V07_PARENT_SHA = "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2"
+KEEP_V06_PARENT_SHA = "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2"
 KEEP_P03 = PROJ / "09_Final-Export/hos_002_part03_rough_v09.mp4"
 KEEP_P03_SHA = "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e"
 ICLOUD = Path.home() / "Library/Mobile Documents/com~apple~CloudDocs/HOS UAT"
@@ -61,12 +62,12 @@ KEEP_V11_IDS = {
     "07b_eka_names_rotate",
 }
 KEEP_V06_IDS = {"02b_cards_sixty_three"}
-KEEP_V11_PARENT = PROJ / "09_Final-Export/hos_002_part04_rough_v11.mp4"
-KEEP_V11_PARENT_SHA = "96a0f41e53987e090e5eee6af29d3abda8de3c30b326584193c10847d1ebd739"
-KEEP_V12_PARENT = PROJ / "09_Final-Export/hos_002_part04_rough_v13.mp4"
+KEEP_V12_PARENT = PROJ / "09_Final-Export/hos_002_part04_rough_v12.mp4"
 KEEP_V12_PARENT_SHA = "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2"
+KEEP_V11_PARENT = PROJ / "09_Final-Export/hos_002_part04_rough_v11.mp4"
+KEEP_V11_PARENT_SHA = "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2"
 KEEP_V10_PARENT = PROJ / "09_Final-Export/hos_002_part04_rough_v10.mp4"
-KEEP_V10_PARENT_SHA = "eab7f8ec4d01ae21352e882dd50f8b45bab13d6305c2ac21f6fb73682e47ec8f"
+KEEP_V10_PARENT_SHA = "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2"
 
 PLATE_ORDER = [
     "01_chapter_empty_chairs",
@@ -169,7 +170,6 @@ def resolve_clip(pid: str) -> tuple[Path, str]:
     raise SystemExit(f"missing plate {v01}")
 
 
-
 def main() -> None:
     if not KEEP_P03.exists():
         raise SystemExit(f"missing locked parent {KEEP_P03}")
@@ -242,6 +242,7 @@ def main() -> None:
             f"STOP: v12 parent sha mismatch want {KEEP_V12_PARENT_SHA} got {v12_sha}"
         )
     print(f"KEEP v12 parent sha OK {v12_sha}", flush=True)
+
 
     plates_by_id = {p["id"]: p for p in json.loads(PLATES_JSON.read_text())["plates"]}
     ordered_ids = [pid for pid in PLATE_ORDER if pid in plates_by_id]
@@ -406,12 +407,13 @@ def main() -> None:
                 "parent_v07_sha256": v07_sha,
                 "parent_v08_sha256": v08_sha,
                 "parent_v09_sha256": v09_sha,
-                "parent_v11_sha256": v10_sha,
+                "parent_v11_sha256": v11_sha,
+                "parent_v12_sha256": v12_sha,
                 "reminted_plates": reminted,
                 "plate06_sha256": plate06_sha,
                 "method": (
                     "Veo 3.1 Fast I2V — CLEAN LIGHT + WRITTEN CARDS remint (no chair fire / sparks / blank cards) "
-                    "(04/05/05b/07/08/08b/09/09b/10)"
+                    "(04/05/09/09b)"
                 ),
                 "flow_account": "benoats@googlemail.com",
                 "p03_untouched_sha256": p03_sha,
