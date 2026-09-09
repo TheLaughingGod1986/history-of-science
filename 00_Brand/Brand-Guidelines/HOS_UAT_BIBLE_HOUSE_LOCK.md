@@ -2,7 +2,8 @@
 
 **Source:** Ben → CoS, 8 Sep 2026. HOS UAT already notified.  
 **Hardened:** Ben, 8 Sep 2026 — standing ALWAYS fails (glasses · lamp glow · readable cards) after P04 v10 UAT PASS then Ben FAIL remint on basics.  
-**Hardened again:** Ben, 9 Sep 2026 — standing ALWAYS fails (Explorer hair · no lamp lava drip · late-shot finish) after P04 v14 UAT PASS then Ben FAIL. Keep all prior ALWAYS.  
+**Hardened again:** Ben, 9 Sep 2026 — standing ALWAYS fails (Explorer hair · no lamp lava drip · late-shot finish) after Ben FAIL on **HOS 002 Part 04 Empty Chairs `v14`** (UAT had PASS; Ben FAIL remint on these basics). Keep all prior ALWAYS.  
+**Cite / scope:** Locked from Ben’s 9 Sep override on P04 Empty Chairs v14. These three ALWAYS fails apply **standing ALWAYS to every HOS cut thereafter** — not P04-only. Remint **v15** is already running elsewhere; do **not** launch remint, mint, or Mini work from encoding this lock.  
 **Channel:** [@HistoryOfScienceYT](https://www.youtube.com/@HistoryOfScienceYT) **only**  
 **Cursor rule:** `.cursor/rules/hos-uat-bible-house-lock.mdc` (always apply)  
 **Scope:** **Standing ALWAYS** on every HOS cut — film **001**, **002**, and every later film. Not film-002-only.
@@ -99,4 +100,5 @@ Canonical character / style: `.cursor/rules/hos-explorer-character.mdc` · `01_C
 - Treat these as 002-only or Part-04-only
 - Soft-pass off-model Explorer, bare/no-glasses Explorer, unfinished Explorer hair / bald crown, flame-spit lamps, lamp lava drip, blank hero cards, scenery-only under specific VO, or soft/ghosted/unfinished late shots
 - Remint locked 001 / 002 parents from this note alone
+- Launch remint / mint / Mini for P04 Empty Chairs (or any cut) from this file — v15 remint already runs elsewhere
 - Drive Flow, Studio, Mini, Orbit, or Oppti while encoding this lock
