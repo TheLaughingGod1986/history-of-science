@@ -1,0 +1,97 @@
+{
+  "cut": "hos_002_part04_rough_v18.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v18.mp4",
+  "bytes": 71888783,
+  "duration_s": 127.76,
+  "sha256": "05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5",
+  "bible_main": "25bdefd",
+  "parent_v17": "hos_002_part04_rough_v17.mp4",
+  "parent_v17_sha256": "e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd",
+  "parent_v16": "hos_002_part04_rough_v16.mp4",
+  "parent_v16_sha256": "7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c",
+  "reminted_plates": [
+    "06_explorer_leaves_gap",
+    "10_family_before_weight",
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "plate_sha256": {
+    "06_explorer_leaves_gap": "d0cff4a1aa1d3afeda35e7a91561673f0de818cbda6d35f2436302934b1f00de",
+    "10_family_before_weight": "d40a2cb1a9002731f67f22da9da82a6d2eff523ab52f0cdc05d1daa2f1916905",
+    "11_publish_gaps": "3ea3401a357b00150976ea5ffbb6fc39bf17c506d3debe69ad0ec09f9816b600",
+    "11b_wait_and_hunt": "2cf249a0954d8ce8e161d84230f8d4734ae03f198126b6ed7fb45f9816e2390b"
+  },
+  "plates": {
+    "06_explorer_leaves_gap": {
+      "path": "04_Generated-Clips/part04/raw/v18_fast/06_explorer_leaves_gap_v18.mp4",
+      "sha256": "d0cff4a1aa1d3afeda35e7a91561673f0de818cbda6d35f2436302934b1f00de",
+      "bytes": 149824
+    },
+    "10_family_before_weight": {
+      "path": "04_Generated-Clips/part04/raw/v18_fast/10_family_before_weight_v18.mp4",
+      "sha256": "d40a2cb1a9002731f67f22da9da82a6d2eff523ab52f0cdc05d1daa2f1916905",
+      "bytes": 139036
+    },
+    "11_publish_gaps": {
+      "path": "04_Generated-Clips/part04/raw/v18_fast/11_publish_gaps_v18.mp4",
+      "sha256": "3ea3401a357b00150976ea5ffbb6fc39bf17c506d3debe69ad0ec09f9816b600",
+      "bytes": 138312
+    },
+    "11b_wait_and_hunt": {
+      "path": "04_Generated-Clips/part04/raw/v18_fast/11b_wait_and_hunt_v18.mp4",
+      "sha256": "2cf249a0954d8ce8e161d84230f8d4734ae03f198126b6ed7fb45f9816e2390b",
+      "bytes": 149486
+    }
+  },
+  "methods": {
+    "06_explorer_leaves_gap": "painted single-exposure v18 harden (Flow/Gemini blocked; brightness-only motion)",
+    "10_family_before_weight": "painted single-exposure v18 harden (Flow/Gemini blocked; brightness-only motion)",
+    "11_publish_gaps": "painted single-exposure v18 harden (Flow/Gemini blocked; brightness-only motion)",
+    "11b_wait_and_hunt": "painted single-exposure v18 harden (Flow/Gemini blocked; brightness-only motion)"
+  },
+  "kept_from_v16": [],
+  "kept_from_v15_partial": [
+    "09_risk_bet",
+    "09b_risk_hold"
+  ],
+  "kept_from_v15": [
+    "09_risk_bet",
+    "09b_risk_hold"
+  ],
+  "uat_blocker": "BEN OVERRIDE FAIL \u2014 publish ghosts \u00b7 explorer face \u00b7 family lamp/panel",
+  "fail_times": {
+    "publish_ghost": 121,
+    "grid_ghost": 125
+  },
+  "timeline": {
+    "plate09b_picture_s": [
+      98.14999999999998,
+      106.04999999999998
+    ],
+    "plate10_picture_s": [
+      105.69999999999997,
+      113.59999999999998
+    ],
+    "plate11_picture_s": [
+      113.24999999999997,
+      121.14999999999998
+    ],
+    "plate11b_picture_s": [
+      120.79999999999997,
+      128.69999999999996
+    ],
+    "explorer_picture_s": [
+      45.3,
+      53.199999999999996
+    ]
+  },
+  "plate06_sha256": "d0cff4a1aa1d3afeda35e7a91561673f0de818cbda6d35f2436302934b1f00de",
+  "plate10_sha256": "d40a2cb1a9002731f67f22da9da82a6d2eff523ab52f0cdc05d1daa2f1916905",
+  "flow_account": "benoats@googlemail.com",
+  "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v18.mp4",
+  "watch": "WATCH_part04_v18.txt",
+  "doc": "PART04_V18_BEN_OVERRIDE.md",
+  "status": "LANDED_FOR_UAT \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping",
+  "paint_harden": "v18b: no grain, no sharpen, vertical-only card stacks, opaque flask/magnifier/mortar, heavier Empty Chairs blur"
+}

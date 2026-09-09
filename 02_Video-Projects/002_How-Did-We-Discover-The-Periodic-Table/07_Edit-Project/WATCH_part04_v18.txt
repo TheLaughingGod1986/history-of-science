@@ -1,0 +1,27 @@
+WATCH THIS FILE ONLY (Part 04 rough v18 — Ben OVERRIDE FAIL remint):
+  hos_002_part04_rough_v18.mp4
+
+CoS / Picture→UAT gates for this cut:
+- Parent FAIL v17 sha e4cc41d8… — Ben OVERRIDE with stills (publish ghosts · explorer face · family lamp/panel).
+- Reminted 06 / 10 / 11 / 11b via single-exposure painted continuous motion.
+- KEEP: 09/09b CLEAN LIGHT, written cards ~40.
+- Spot ~47–53 Explorer: finished crown, NO face-cloud blot, NO black hole dots, gold glasses, clean cards.
+- Spot ~110 FAMILY FIRST: H/C/N/O sharp, clean lamp, ONE soft Empty Chairs panel.
+- Spot ~121 / ~125 PUBLISH THE GAPS: one solid lamp, one solid flask set, one solid grid — NO horizontal ghost doubles.
+- Spot ~102–105 CLEAN LIGHT KEEP: soft panel, no lamp lava.
+- Credit note: Gemini prepaid 429; Flow create stalled (Agent settings / harvest).
+- Part 01–03 LOCKED. Flow account benoats@googlemail.com.
+- Do NOT declare PASS here. Scores → CoS. No Ben ping.
+
+Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v17_sha=e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd
+parent_v16_sha=7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c
+reminted=06_explorer_leaves_gap,10_family_before_weight,11_publish_gaps,11b_wait_and_hunt
+explorer_picture=45.300-53.200
+plate10_picture=105.700-113.600
+plate11_picture=113.250-121.150
+plate11b_picture=120.800-128.700
+sha256=05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5
+bytes=71888783
+duration=127.760

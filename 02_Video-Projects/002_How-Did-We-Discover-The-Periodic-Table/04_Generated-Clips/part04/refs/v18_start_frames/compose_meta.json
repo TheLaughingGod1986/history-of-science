@@ -1,0 +1,17 @@
+{
+  "parent_v17_sha": "e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd",
+  "bible_main": "25bdefd",
+  "plates": {
+    "11_publish_gaps": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v18_start_frames/11_publish_gaps_start_v18.jpg",
+    "11b_wait_and_hunt": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v18_start_frames/11b_wait_and_hunt_start_v18.jpg",
+    "10_family_before_weight": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v18_start_frames/10_family_before_weight_start_v18.jpg",
+    "06_explorer_leaves_gap": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v18_start_frames/06_explorer_leaves_gap_start_v18.jpg"
+  },
+  "method": "procedural_single_exposure_v18 \u2014 opaque props, ONE soft Empty Chairs rect, no nested glow, no oversharpen ringing, Explorer crown from sheet + stroke hair (NOT black-dot spray, NOT face-cloud scrub)",
+  "ben_fail": [
+    "publish_ghost",
+    "explorer_face",
+    "family_lamp_panel",
+    "family_cards"
+  ]
+}
