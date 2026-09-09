@@ -3,7 +3,8 @@ WATCH THIS FILE ONLY (Part 04 rough v17 — PUBLISH THE GAPS sharp remint):
 
 CoS / Picture→UAT gates for this cut:
 - Parent KEEP v16 sha 7e083fc440879209… — blocker LATE SHOTS SHARP on PUBLISH only.
-- Reminted ONLY 11 / 11b via fresh Flow/Veo (NOT ghosty v01 restore).
+- Reminted ONLY 11 / 11b from fresh single-exposure starts (NOT ghosty v01 restore).
+- Method: painted continuous-motion fallback after Flow harvest/salvage rejected + Gemini blocked.
 - KEEP: plate 10 FAMILY FIRST, Explorer 06, 09/09b CLEAN LIGHT, written cards ~40.
 - Spot ~110 FAMILY FIRST KEEP: H/C/N/O sharp — do not regress.
 - Spot ~121 / ~125 PUBLISH THE GAPS: one solid lamp, one solid flask set, one solid grid — NO ghost doubles, NO left-half pixel mush.
