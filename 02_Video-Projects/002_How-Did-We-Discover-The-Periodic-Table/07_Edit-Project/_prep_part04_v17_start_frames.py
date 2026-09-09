@@ -81,32 +81,31 @@ def paint_flask(
 
 
 def paint_lamp(canvas: Image.Image, cx: int, cy: int, *, scale: float = 1.0) -> None:
-    """One solid warm desk lamp."""
-    lw, lh = int(160 * scale), int(280 * scale)
+    """One solid warm desk lamp — no separate glow silhouette."""
+    lw, lh = int(150 * scale), int(260 * scale)
     lamp = Image.new("RGBA", (lw, lh), (0, 0, 0, 0))
     d = ImageDraw.Draw(lamp)
     # base
-    d.ellipse((int(lw * 0.22), int(lh * 0.82), int(lw * 0.78), int(lh * 0.96)), fill=(120, 85, 45, 255))
-    d.ellipse((int(lw * 0.30), int(lh * 0.78), int(lw * 0.70), int(lh * 0.88)), fill=(140, 100, 55, 255))
+    d.ellipse((int(lw * 0.24), int(lh * 0.84), int(lw * 0.76), int(lh * 0.96)), fill=(115, 80, 42, 255))
+    d.ellipse((int(lw * 0.32), int(lh * 0.80), int(lw * 0.68), int(lh * 0.90)), fill=(135, 95, 50, 255))
     # stem
-    d.rectangle((int(lw * 0.46), int(lh * 0.28), int(lw * 0.54), int(lh * 0.82)), fill=(150, 110, 60, 255))
-    # shade
+    d.rectangle((int(lw * 0.46), int(lh * 0.30), int(lw * 0.54), int(lh * 0.84)), fill=(145, 105, 55, 255))
+    # shade (solid single)
     d.polygon(
         [
-            (int(lw * 0.18), int(lh * 0.34)),
-            (int(lw * 0.82), int(lh * 0.34)),
-            (int(lw * 0.70), int(lh * 0.12)),
-            (int(lw * 0.30), int(lh * 0.12)),
+            (int(lw * 0.16), int(lh * 0.36)),
+            (int(lw * 0.84), int(lh * 0.36)),
+            (int(lw * 0.68), int(lh * 0.10)),
+            (int(lw * 0.32), int(lh * 0.10)),
         ],
-        fill=(185, 145, 75, 255),
-        outline=(90, 65, 35, 255),
+        fill=(175, 135, 70, 255),
+        outline=(85, 60, 32, 255),
     )
-    # warm bulb glow (soft, not lava)
-    glow = Image.new("RGBA", (lw, lh), (0, 0, 0, 0))
-    gd = ImageDraw.Draw(glow)
-    gd.ellipse((int(lw * 0.28), int(lh * 0.28), int(lw * 0.72), int(lh * 0.55)), fill=(255, 230, 160, 90))
-    glow = glow.filter(ImageFilter.GaussianBlur(6))
-    lamp = Image.alpha_composite(lamp, glow)
+    # warm underside only (inside shade, not a second lamp)
+    d.ellipse(
+        (int(lw * 0.34), int(lh * 0.28), int(lw * 0.66), int(lh * 0.40)),
+        fill=(255, 235, 170, 200),
+    )
     canvas.alpha_composite(lamp, (cx - lw // 2, cy - lh // 2))
 
 
@@ -209,46 +208,79 @@ def paint_night_window(canvas: Image.Image) -> None:
     d.ellipse((mcx - moon_r, mcy - moon_r, mcx + moon_r, mcy + moon_r), fill=(240, 235, 210, 255))
 
 
+def paint_bookshelf(canvas: Image.Image) -> None:
+    """Procedural bookshelf — no KEEP banner bleed."""
+    d = ImageDraw.Draw(canvas)
+    x0, y0, x1, y1 = int(W * 0.66), 0, W, int(H * 0.42)
+    d.rectangle((x0, y0, x1, y1), fill=(55, 38, 26, 255))
+    rng_colors = [
+        (92, 62, 38), (110, 75, 45), (78, 52, 32), (130, 90, 55),
+        (70, 48, 30), (100, 68, 42), (120, 82, 50), (85, 58, 35),
+    ]
+    col_w = 18
+    x = x0 + 10
+    ci = 0
+    while x < x1 - 12:
+        bw = col_w + (ci % 5) - 2
+        d.rectangle((x, y0 + 8, min(x1 - 8, x + bw), y1 - 8), fill=(*rng_colors[ci % len(rng_colors)], 255))
+        # shelf lines
+        for sy in (y0 + 70, y0 + 150, y0 + 230, y0 + 310):
+            if sy < y1 - 10:
+                d.line((x0 + 6, sy, x1 - 6, sy), fill=(40, 28, 18, 255), width=4)
+        x += bw + 3
+        ci += 1
+
+
 def paint_publish_desk(*, holes: bool) -> Image.Image:
-    """Full opaque rebuild — KEEP upper room DNA + solid desk props. Zero ghost layers."""
-    keep = load_keep_room()
-    rgba = Image.new("RGBA", (W, H), (0, 0, 0, 255))
-    # keep upper shelves / lamp area from KEEP (already sharp)
-    top = keep.crop((0, 0, W, int(H * 0.38))).convert("RGBA")
-    rgba.paste(top, (0, 0))
-    # night window override for publish beat (moon / night)
+    """Full opaque procedural rebuild — zero KEEP composite ghosts / banners."""
+    rgba = Image.new("RGBA", (W, H), (28, 22, 18, 255))
+    d0 = ImageDraw.Draw(rgba)
+    d0.rectangle((0, 0, W, int(H * 0.42)), fill=(42, 30, 22, 255))
+
+    # left wood panelling
+    d0.rectangle((0, 0, int(W * 0.34), int(H * 0.42)), fill=(48, 34, 24, 255))
+    for i in range(0, int(H * 0.42), 28):
+        d0.line((0, i, int(W * 0.34), i), fill=(58, 40, 28, 255), width=2)
+
+    paint_bookshelf(rgba)
     paint_night_window(rgba)
 
-    # solid warm desk surface (lower 65%)
+    # solid warm desk surface (lower 65%) — fully opaque
     desk = Image.new("RGBA", (W, int(H * 0.68)), (78, 52, 32, 255))
     dd = ImageDraw.Draw(desk)
     for i in range(0, desk.size[1], 5):
         shade = 78 + (i % 16) - 5
         dd.rectangle((0, i, W, i + 4), fill=(shade, int(shade * 0.68), int(shade * 0.42), 255))
-    # warm lamp pool
     dd.ellipse(
-        (int(W * 0.08), int(desk.size[1] * 0.02), int(W * 0.72), int(desk.size[1] * 0.70)),
-        fill=(165, 120, 65, 190),
+        (int(W * 0.10), int(desk.size[1] * 0.05), int(W * 0.68), int(desk.size[1] * 0.65)),
+        fill=(160, 118, 62, 170),
     )
-    desk = desk.filter(ImageFilter.GaussianBlur(1.0))
+    desk = desk.filter(ImageFilter.GaussianBlur(0.8))
     rgba.alpha_composite(desk, (0, int(H * 0.34)))
 
-    rgba = soft_empty_chairs_glow(rgba)
+    # soft Empty Chairs glow (behind props, low alpha)
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    gd = ImageDraw.Draw(glow)
+    gx0, gy0, gx1, gy1 = int(W * 0.42), int(H * 0.24), int(W * 0.58), int(H * 0.40)
+    for pad, a in ((16, 28), (6, 48), (0, 70)):
+        gd.rounded_rectangle(
+            (gx0 - pad, gy0 - pad, gx1 + pad, gy1 + pad),
+            radius=12,
+            fill=(255, 236, 190, a),
+        )
+    rgba = Image.alpha_composite(rgba, glow.filter(ImageFilter.GaussianBlur(2.5)))
 
     # ONE solid lamp
-    paint_lamp(rgba, int(W * 0.14), int(H * 0.42), scale=1.15)
+    paint_lamp(rgba, int(W * 0.13), int(H * 0.40), scale=1.10)
 
-    # card stacks
     paint_card_stack(rgba, int(W * 0.22), int(H * 0.72), n=6, scale=1.1)
     paint_card_stack(rgba, int(W * 0.86), int(H * 0.68), n=5, scale=1.0)
 
-    # ONE solid grid
     if holes:
         paint_grid_sheet(rgba, int(W * 0.28), int(H * 0.52), int(W * 0.78), int(H * 0.92), holes=True)
     else:
         paint_grid_sheet(rgba, int(W * 0.30), int(H * 0.50), int(W * 0.72), int(H * 0.88), holes=False)
 
-    # flasks — single solids
     paint_flask(rgba, int(W * 0.38), int(H * 0.42), liquid=(210, 90, 140), scale=0.95)
     paint_flask(rgba, int(W * 0.48), int(H * 0.40), liquid=(70, 150, 210), scale=1.0)
     paint_flask(rgba, int(W * 0.60), int(H * 0.41), liquid=(60, 180, 90), scale=1.08, sphere=holes)
@@ -259,7 +291,7 @@ def paint_publish_desk(*, holes: bool) -> Image.Image:
     paint_magnifier(rgba, int(W * 0.78), int(H * 0.58), scale=1.05)
 
     out = rgba.convert("RGB")
-    return ImageEnhance.Sharpness(out).enhance(1.35)
+    return ImageEnhance.Sharpness(out).enhance(1.30)
 
 
 def main() -> None:

@@ -1,0 +1,178 @@
+{
+  "url": "https://flow.google.com/u/1/project/f342b44a-4c5d-4907-b9a3-d8bbd0c40c30",
+  "thumbs": 2,
+  "thumb_srcs": [
+    "https://flow.google.com/asb/AB-nOUYIVDX3VMQNDMgYP1oBwSFYMqJQD-Rk7mliyRdGhDGsaxjm9FljqZZb723vaL4nG8NLAnqRlE1mXb4rjo332ziK2uFRReZLw0Ef_yXjFwrCLRA3ihEOpw_RCHzlm5XSiz3R8DaIR4BMHUe6o3vOYiEkv44Uur7SfD4RYYcmUw?authuser=1",
+    "https://flow.google.com/asb/AB-nOUZQZkeosJLdVNVh-KH6MkVWlO9S3bvlJ28hrnzIe2yriVwGdcX9UASnUJVUixjYIM4B9SreRlXmTsnXc6_LSMVhVMNE_sdEqXQYBTgH2QAd1aUKp4A74dn1ASeYFCGag_BeUvRjbDjAP5XjAX6JWbQ-pmqFmlEPNuWy4fbW=s1600-rw?authuser=1"
+  ],
+  "chrome": [
+    {
+      "t": "Learn more about how Google uses cookies. Opens in a new tab.",
+      "tag": "A",
+      "vis": false
+    },
+    {
+      "t": "Generating video from start frame",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Share media",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Download media",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Button to open image cropping menu",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Button to open image selection menu",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Save to projects",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Download",
+      "tag": "BUTTON",
+      "vis": true
+    }
+  ],
+  "all_sample": [
+    {
+      "t": "Learn more about how Google uses cookies. Opens in a new tab.",
+      "tag": "A",
+      "vis": false
+    },
+    {
+      "t": "Agree",
+      "tag": "BUTTON",
+      "vis": false
+    },
+    {
+      "t": "No thanks",
+      "tag": "BUTTON",
+      "vis": false
+    },
+    {
+      "t": "Skip to main content",
+      "tag": "A",
+      "vis": true
+    },
+    {
+      "t": "Back button to go to previous page",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Editable text",
+      "tag": "INPUT",
+      "vis": true
+    },
+    {
+      "t": "Show asset info",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Previous media",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Generating video from start frame",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "03_desk_keep_plus_midair_t3.jpg",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Next media",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Favourite",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Share media",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Move to bin",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Download media",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "history\nShow history",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Finished editing",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Button to open image cropping menu",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Button to open image selection menu",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Add ingredients to the prompt box",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Settings trigger",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Start generation",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Save to projects",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Download",
+      "tag": "BUTTON",
+      "vis": true
+    },
+    {
+      "t": "Google Account: Benjamin Oats  \n(benoats@googlemail.com), Google membership",
+      "tag": "A",
+      "vis": true
+    }
+  ],
+  "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/logs/flow_gallery_diag_v07.png"
+}

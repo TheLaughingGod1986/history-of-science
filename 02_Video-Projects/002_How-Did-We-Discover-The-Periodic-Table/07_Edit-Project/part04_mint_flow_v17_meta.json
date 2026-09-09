@@ -1,0 +1,17 @@
+{
+  "parent_v16_sha256": "7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c",
+  "bible_main": "25bdefd",
+  "flow_account": "benoats@googlemail.com",
+  "model": "Veo 3.1 - Fast",
+  "plates": [
+    "11b_wait_and_hunt"
+  ],
+  "tries": {},
+  "accepted": {},
+  "projects": {
+    "11b_wait_and_hunt_try1": "https://flow.google.com/u/1/project/f4df706a-f043-415d-b50c-5c2b45f38968"
+  },
+  "status": "running",
+  "method": "fresh Flow Veo I2V from painted sharp starts \u2014 NOT v01 restore",
+  "active_account": "benoats@googlemail.com"
+}

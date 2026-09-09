@@ -1,0 +1,110 @@
+{
+  "bad": [
+    {
+      "tag": "pre05_keep",
+      "t": 35.0,
+      "navy_frac": 0.0605,
+      "warm_frac": 0.0,
+      "dark_frac": 0.3364,
+      "navy_var": 105.03,
+      "box_navy_frac": 0.0098,
+      "box_var": 283.82,
+      "hard_fill": false,
+      "roof_town": true,
+      "suspect": true
+    }
+  ],
+  "all": [
+    {
+      "tag": "02b_desk",
+      "t": 19.0,
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.2832,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "tag": "05_cols",
+      "t": 41.5,
+      "navy_frac": 0.0029,
+      "warm_frac": 0.0,
+      "dark_frac": 0.3515,
+      "navy_var": 84.0,
+      "box_navy_frac": 0.0043,
+      "box_var": 85.01,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "tag": "06_explorer",
+      "t": 49.0,
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.3373,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "tag": "09_bet",
+      "t": 94.5,
+      "navy_frac": 0.0,
+      "warm_frac": 0.0,
+      "dark_frac": 0.4611,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0,
+      "box_var": 999.0,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "tag": "09b_hold",
+      "t": 102.0,
+      "navy_frac": 0.0001,
+      "warm_frac": 0.0,
+      "dark_frac": 0.3139,
+      "navy_var": 0.0,
+      "box_navy_frac": 0.0002,
+      "box_var": 35.78,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    },
+    {
+      "tag": "pre05_keep",
+      "t": 35.0,
+      "navy_frac": 0.0605,
+      "warm_frac": 0.0,
+      "dark_frac": 0.3364,
+      "navy_var": 105.03,
+      "box_navy_frac": 0.0098,
+      "box_var": 283.82,
+      "hard_fill": false,
+      "roof_town": true,
+      "suspect": true
+    },
+    {
+      "tag": "post06_keep",
+      "t": 56.0,
+      "navy_frac": 0.035,
+      "warm_frac": 0.0,
+      "dark_frac": 0.403,
+      "navy_var": 242.75,
+      "box_navy_frac": 0.0474,
+      "box_var": 240.31,
+      "hard_fill": false,
+      "roof_town": false,
+      "suspect": false
+    }
+  ]
+}

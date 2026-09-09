@@ -1,0 +1,75 @@
+{
+  "i": 1,
+  "clip": "../04_Generated-Clips/part04/raw/v06_fast/_desk_harvest/desk_try_prior_1.mp4",
+  "bytes": 1829814,
+  "dur": 8.0,
+  "stills": [
+    "_qa_part04_v06_plate/02b_desk_prior1_t0.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior1_t1.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior1_t2.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior1_t3.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior1_t4.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior1_t5.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior1_t6.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior1_t7.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior1_t8.jpg"
+  ],
+  "scores": [
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior1_t0.jpg",
+      "dark_frac": 0.4549,
+      "sky_frac": 0.0001,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior1_t1.jpg",
+      "dark_frac": 0.4471,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior1_t2.jpg",
+      "dark_frac": 0.4429,
+      "sky_frac": 0.0001,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior1_t3.jpg",
+      "dark_frac": 0.4347,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior1_t4.jpg",
+      "dark_frac": 0.4242,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior1_t5.jpg",
+      "dark_frac": 0.4204,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior1_t6.jpg",
+      "dark_frac": 0.412,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior1_t7.jpg",
+      "dark_frac": 0.4047,
+      "sky_frac": 0.0001,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior1_t8.jpg",
+      "dark_frac": 0.3982,
+      "sky_frac": 0.0003,
+      "suspect": true
+    }
+  ],
+  "suspect_count": 9,
+  "window_or_roof_readable": true
+}
