@@ -66,10 +66,10 @@ STYLE = (
     "Silent. No Orbit. No Ken Burns still. No paint / no double-exposure."
 )
 CLEAN = (
-    "CLEAN LIGHT (BIBLE HARD): warm desk-lamp glow ONLY. "
+    "CLEAN LIGHT (BIBLE HARD — NEVER soft-pass): warm desk-lamp glow ONLY. "
     "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO burning chair rim, "
-    "ZERO dripping bulb goo onto desk/chair. Soft continuous warm cone — "
-    "no stepped banding rings on the lamp shade. "
+    "ZERO dripping bulb goo onto desk/chair, ZERO lava bloom under the shade. "
+    "Soft continuous warm cone — no stepped banding rings on the lamp shade. "
     "Empty Chairs = ONE soft rectangular panel glow ONLY — never double edge."
 )
 SHARP = (
