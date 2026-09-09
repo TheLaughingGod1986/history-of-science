@@ -99,6 +99,31 @@ STILL_PROPS = (
     "do not slide, do not pan across frame. Magnifier stays fixed on the desk — ZERO travel. "
     "Only microscopic liquid shimmer inside flasks is allowed. No object fly-through."
 )
+# 09b try10C — do NOT append generic CLEAN/SHARP/STYLE (they reintroduce desk-lamp language).
+CLEAN_NOLAMP = (
+    "CLEAN LIGHT (BIBLE HARD — NO LAMP PROP): moonlight + soft warm OFF-SCREEN/OFF-FRAME left wall bounce ONLY. "
+    "ZERO desk lamp, ZERO lampshade, ZERO bulb, ZERO shade cup, ZERO looking into shade. "
+    "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO sparks, ZERO embers, "
+    "ZERO flames, ZERO burning chair rim, ZERO molten bead, ZERO glowing droplet. "
+    "Soft continuous warm bounce on desk — never a visible lamp fixture."
+)
+SHARP_NOLAMP = (
+    "LATE SHOTS SHARP / SINGLE EXPOSURE (HARD): every frame finished cinematic 3D. "
+    "ZERO horizontal ghost doubles, ZERO double-exposure edges, ZERO left-half mush, "
+    "ZERO jitter trail on grid lines / flasks / chair. "
+    "ZERO desk lamp invent — do not materialize a lamp mid-clip. "
+    "LOCKED tripod settle preferred."
+)
+STYLE_NOLAMP = (
+    "FINISHED cinematic stylised 3D house quality (Animistry-class). "
+    "NOT flat unfinished vlog vector. NOT 2D cutouts. NOT cheap cel. "
+    "Believable wood grain, glass refraction, soft depth of field, polished materials. "
+    "ONE continuous 1869 chemist study at night: honey wood desk, empty chair, moon window, "
+    "ceramic vessels / flasks, blank paper — NO desk lamp prop in frame. "
+    "Silent. No Orbit. No Ken Burns still. No paint / no double-exposure."
+)
+
+
 PROMPTS = {
     "11_publish_gaps": (
         "Image-to-video from the attached start frame. PUBLISH THE GAPS beat. "
@@ -195,19 +220,20 @@ PROMPTS = {
         "A BET / risk-hold settle beat. Finished cinematic stylised 3D — honey wood desk, empty wooden chair, "
         "bookshelf, moon in the window, soft Empty Chairs panel OK. LOCKED TRIPOD CAMERA. Silent. "
         "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds "
-        "(try8/try9 UAT: molten bead / lava drip under lamp shade when camera looks into shade cup): "
-        "warm clean desk-lamp glow ONLY as a soft continuous pool of light on the desk. "
-        "OPAQUE metal/ceramic lampshade — shade is FULLY OPAQUE; camera NEVER looks into the shade cup; "
-        "NO visible glass bulb, NO underside bulb hotspot, NO hanging teardrop / molten bead / lava drip "
-        "under the shade, NO fire spit, NO sparks. Prefer side-lit / backlit lamp OR shade exterior only. "
-        "HARD BAN forever (t0 through t8): lava drip, molten teardrop, molten bead, glowing droplet, "
-        "fire spit, sparks, embers, lava, molten leak, dripping bulb goo, fire, flame, flames, spark, ember, "
-        "burning chair rim, candle flicker, firework particles, glowing coal, lamp-beam sparks, floating embers, "
-        "visible bulb underside, looking into lamp shade cup. "
-        "CARDLESS desk (HARD): ceramic vessels, mortar, flasks, one blank paper stack, lamp, chair only — "
+        "(try9 UAT HARD FAIL bible 8ddbf99 — NEVER soft-pass molten bead under shade cup; "
+        "try10A/try10B/try10C SELF_REJECT: Veo invented open shade cup + molten bead even from nocup starts): "
+        "THERE IS NO DESK LAMP PROP IN THIS SCENE — zero lamp fixture, zero lampshade, zero bulb, zero shade cup. "
+        "Illumination is moonlight from the window PLUS a soft warm bounce from an OFF-SCREEN / OFF-FRAME wall on the left only (lamp must never enter frame). LOCKED FRAMING for all 8s — identical crop to the start frame: do NOT widen, do NOT zoom out, do NOT pan left, do NOT reveal anything off the left edge. Left margin stays lamp-free empty space forever. try10C failed by inventing a desk lamp when the camera widened left — that must not recur. "
+        "Warm clean glow on the desk as ambient bounce — NOT a visible lamp. "
+        "HARD BAN forever (t0 through t8): desk lamp, lampshade, bulb, shade cup, looking into shade, "
+        "lava drip, molten teardrop, molten bead, glowing droplet, fire spit, sparks, embers, lava, "
+        "molten leak, dripping bulb goo, fire, flame, flames, spark, ember, burning chair rim, "
+        "candle flicker, firework particles, glowing coal, lamp-beam sparks, floating embers, "
+        "visible bulb underside, open shade cup. "
+        "CARDLESS desk (HARD): ceramic vessels, mortar, flasks, one blank paper stack, chair only — "
         "ZERO flat H/C/O/N element cards, letter tiles, HUD chips, unfinished flat overlays. "
         "Soft Empty Chairs glow OK. No Explorer. No Orbit. No paint. No double-exposure. "
-        + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
+        + LOCK_CAM + " " + CLEAN_NOLAMP + " " + SHARP_NOLAMP + " " + REJECT + " " + STYLE_NOLAMP
     ),
     "10_family_before_weight": (
         "Image-to-video from the attached start frame. FAMILY FIRST beat. "

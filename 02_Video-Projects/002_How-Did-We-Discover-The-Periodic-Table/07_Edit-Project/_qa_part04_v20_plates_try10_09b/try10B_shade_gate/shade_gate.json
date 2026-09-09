@@ -1,0 +1,256 @@
+{
+  "try": "10B",
+  "verdict": "SELF_REJECT",
+  "fail_frames": [
+    "full_t0.5.jpg",
+    "full_t1.0.jpg",
+    "full_t1.5.jpg",
+    "full_t2.0.jpg",
+    "full_t2.5.jpg",
+    "full_t3.0.jpg",
+    "full_t3.5.jpg",
+    "full_t3.8.jpg",
+    "full_t4.0.jpg",
+    "full_t4.5.jpg",
+    "full_t5.0.jpg",
+    "full_t5.5.jpg",
+    "full_t5.8.jpg",
+    "full_t6.0.jpg",
+    "full_t6.5.jpg",
+    "full_t7.0.jpg",
+    "full_t7.2.jpg",
+    "full_t7.3.jpg",
+    "full_t7.5.jpg",
+    "f_001.jpg",
+    "f_002.jpg",
+    "f_003.jpg",
+    "f_004.jpg",
+    "f_005.jpg",
+    "f_006.jpg",
+    "f_007.jpg",
+    "f_008.jpg",
+    "f_009.jpg",
+    "f_010.jpg",
+    "f_011.jpg",
+    "f_012.jpg",
+    "f_013.jpg",
+    "f_014.jpg",
+    "f_015.jpg",
+    "f_016.jpg"
+  ],
+  "lava_peak": 0.09026,
+  "cup_hot_peak": 0.052,
+  "rows": [
+    {
+      "frame": "full_t0.5.jpg",
+      "lava": 0.08623,
+      "cup_hot": 0.0,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t1.0.jpg",
+      "lava": 0.09026,
+      "cup_hot": 0.0,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t1.5.jpg",
+      "lava": 0.08904,
+      "cup_hot": 0.0007,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t2.0.jpg",
+      "lava": 0.08867,
+      "cup_hot": 0.0096,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t2.5.jpg",
+      "lava": 0.08627,
+      "cup_hot": 0.0208,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t3.0.jpg",
+      "lava": 0.08302,
+      "cup_hot": 0.0316,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t3.5.jpg",
+      "lava": 0.07961,
+      "cup_hot": 0.0411,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t3.8.jpg",
+      "lava": 0.0778,
+      "cup_hot": 0.0457,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t4.0.jpg",
+      "lava": 0.07701,
+      "cup_hot": 0.0481,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t4.5.jpg",
+      "lava": 0.07539,
+      "cup_hot": 0.0518,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t5.0.jpg",
+      "lava": 0.07326,
+      "cup_hot": 0.0513,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t5.5.jpg",
+      "lava": 0.07168,
+      "cup_hot": 0.0476,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t5.8.jpg",
+      "lava": 0.07079,
+      "cup_hot": 0.0459,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t6.0.jpg",
+      "lava": 0.07073,
+      "cup_hot": 0.0449,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t6.5.jpg",
+      "lava": 0.07005,
+      "cup_hot": 0.0419,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t7.0.jpg",
+      "lava": 0.06869,
+      "cup_hot": 0.0369,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t7.2.jpg",
+      "lava": 0.06867,
+      "cup_hot": 0.0344,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t7.3.jpg",
+      "lava": 0.06835,
+      "cup_hot": 0.0328,
+      "bead_suspect": true
+    },
+    {
+      "frame": "full_t7.5.jpg",
+      "lava": 0.06836,
+      "cup_hot": 0.0311,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_001.jpg",
+      "lava": 0.08147,
+      "cup_hot": 0.0,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_002.jpg",
+      "lava": 0.08889,
+      "cup_hot": 0.0,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_003.jpg",
+      "lava": 0.09007,
+      "cup_hot": 0.0,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_004.jpg",
+      "lava": 0.08864,
+      "cup_hot": 0.0037,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_005.jpg",
+      "lava": 0.08778,
+      "cup_hot": 0.0142,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_006.jpg",
+      "lava": 0.08409,
+      "cup_hot": 0.0256,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_007.jpg",
+      "lava": 0.08056,
+      "cup_hot": 0.0362,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_008.jpg",
+      "lava": 0.07801,
+      "cup_hot": 0.0442,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_009.jpg",
+      "lava": 0.07524,
+      "cup_hot": 0.0496,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_010.jpg",
+      "lava": 0.07343,
+      "cup_hot": 0.052,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_011.jpg",
+      "lava": 0.07167,
+      "cup_hot": 0.0489,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_012.jpg",
+      "lava": 0.06909,
+      "cup_hot": 0.0454,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_013.jpg",
+      "lava": 0.06847,
+      "cup_hot": 0.043,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_014.jpg",
+      "lava": 0.06723,
+      "cup_hot": 0.0386,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_015.jpg",
+      "lava": 0.06658,
+      "cup_hot": 0.0328,
+      "bead_suspect": true
+    },
+    {
+      "frame": "f_016.jpg",
+      "lava": 0.06617,
+      "cup_hot": 0.0283,
+      "bead_suspect": true
+    }
+  ],
+  "bible": "8ddbf99 \u2014 NEVER soft-pass molten bead"
+}

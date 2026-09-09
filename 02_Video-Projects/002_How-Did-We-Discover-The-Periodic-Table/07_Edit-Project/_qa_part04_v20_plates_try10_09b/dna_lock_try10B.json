@@ -1,0 +1,18 @@
+{
+  "plate": "09b_risk_hold",
+  "try": "10B",
+  "parent": {
+    "try9_uat": "HARD FAIL molten bead \u2014 bible 8ddbf99",
+    "try10A": "SELF_REJECT \u2014 cup look-in + drip-like protrusion at t3.8/5.8/7.3 despite nocup start cropL791"
+  },
+  "chosen_start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20_try10B_nocup_opaque_glow.jpg",
+  "chosen_sha256": "364549eae77efdcb14ed3810987bf4d954342c21f736f247e173e5eda38bf328",
+  "dna": "try9C cardless moon empty-chair reframed cropL931 \u2014 lamp fixture FULLY OFF FRAME; warm off-screen side glow only; no shade cup; cardless; finished 3D; paint banned",
+  "forbidden": [
+    "try8 KEEP drip-baked",
+    "flat 2a651abc",
+    "try10A cup-look-in",
+    "paint"
+  ],
+  "gate": "crop-check every mid for molten bead; SELF_REJECT if bead or open cup returns"
+}
