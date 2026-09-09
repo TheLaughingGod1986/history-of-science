@@ -5,8 +5,9 @@ Parent FAIL: hos_002_part04_rough_v19.mp4
   sha256 05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5
 UAT HARD FAIL parent v19: EXPLORER scalp/cards/lamp + PUBLISH ~118–127 continuous playback horizontal ghost/jitter (paint fallback).
 
-Remint (Flow Ultra gallery mp4 ONLY): 06 · 09 · 09b · 10 · 11 · 11b
-  Ben override FAIL v19: flat unfinished + lava drip chair/desk + explorer unfinished + publish ghosts.
+Remint (Flow Ultra gallery mp4 ONLY): 06 · 08 · 08b · 09 · 09b · 10 · 11 · 11b
+  Ben override FAIL v19 stills: unfinished Explorer · lava bulbs (A PREDICTION) ·
+  unfinished 1:44 / FAMILY FIRST / publish overhead 2D.
 KEEP: written cards ~40 where still clean; earlier locked plates unchanged.
 
 NO PAINT. Scores → CoS. Do not declare PASS. Do not ping Ben.
@@ -60,6 +61,8 @@ CLIP_USE = 7.9
 
 REMINT_V20_IDS = {
     "06_explorer_leaves_gap",
+    "08_prediction_navigation",
+    "08b_navigation_walk",
     "09_risk_bet",
     "09b_risk_hold",
     "10_family_before_weight",
@@ -76,8 +79,6 @@ KEEP_V13_IDS = {
 KEEP_V12_IDS = {
     "05b_families_settle",
     "07_eka_placeholders",
-    "08_prediction_navigation",
-    "08b_navigation_walk",
 }
 KEEP_V11_IDS = {
     "07b_eka_names_rotate",
@@ -477,12 +478,13 @@ def main() -> None:
         "CoS / Picture→UAT gates for this cut:\n"
         "- Parent FAIL v18 sha 05fb0a2b… — bible 43d9405 PUBLISH continuous ghost "
         "(paint fallback caused it).\n"
-        "- Reminted 06 / 11 / 11b via Flow Ultra Veo I2V + real gallery mp4 harvest.\n"
+        "- Reminted 06 / 08 / 08b / 09 / 09b / 10 / 11 / 11b via Flow Ultra Veo I2V + "
+        "real gallery mp4 harvest.\n"
         "- NO PAINT FALLBACK. NO temporal-median.\n"
-        "- KEEP: 10_family (v18) · 09/09b CLEAN LIGHT · written cards ~40.\n"
-        "- Spot ~50 + ~53 Explorer: finished crown KEEP, no blot, clean cards, clean lamp.\n"
-        "- Spot ~118–126 PUBLISH continuous: one solid lamp / flasks / grid / magnifier — "
-        "NO horizontal ghost jitter.\n"
+        "- KEEP: written cards ~40 · earlier locked plates (01–05 / 05b / 07 / 07b).\n"
+        "- Spot ~48 Explorer: finished 3D crown, no scalp holes, clean cards, clean lamp.\n"
+        "- Spot A PREDICTION: SOLID lamps — no lava/fire drip from the bulb.\n"
+        "- Spot ~1:44 / FAMILY FIRST / PUBLISH: finished 3D cartoon, not flat unfinished 2D.\n"
         "- Part 01–03 LOCKED. Flow account benoats@googlemail.com.\n"
         "- Do NOT declare PASS here. Scores → CoS. No Ben ping.\n\n"
         "Reject with stills from THIS file only.\n"

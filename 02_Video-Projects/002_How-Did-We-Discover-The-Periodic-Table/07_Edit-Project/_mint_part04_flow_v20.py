@@ -4,8 +4,10 @@
 Parent FAIL: hos_002_part04_rough_v19.mp4
   sha256 69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf
 
-Remint ONLY via Flow Ultra real gallery mp4 harvest:
-  11_publish_gaps · 11b_wait_and_hunt · 06_explorer_leaves_gap
+Remint ONLY via Flow Ultra real gallery mp4 harvest (Ben v19 stills):
+  06_explorer_leaves_gap · 08_prediction_navigation · 08b_navigation_walk
+  09_risk_bet · 09b_risk_hold · 10_family_before_weight
+  11_publish_gaps · 11b_wait_and_hunt
 
 NO PAINT FALLBACK. NO temporal-median. NO brightness-motion paint.
 If harvest empty / MAD-high doubles → reject + retry. STOP to CoS only after real retries.
@@ -44,7 +46,7 @@ HARVEST = Path(__file__).resolve().parent / "_harvest_newest_gallery_v01.py"
 FORCE_DL = Path(__file__).resolve().parent / "_harvest_force_download_v04.py"
 EDIT_DL = Path(__file__).resolve().parent / "_harvest_part04_v11_edit_download.py"
 
-MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
+MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Fast"
 PROFILE = Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
 CDP_URL = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
 REQUIRE_CDP = os.environ.get("HOS_FLOW_REQUIRE_CDP", "1") == "1"
@@ -127,6 +129,23 @@ PROMPTS = {
         "CLEAN warm lamp ONLY — continuous soft gradient, NO stepped banding, ZERO lava drip. "
         "LOCKED CAMERA. Tiny head settle only — stay back/profile. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
+    ),
+    "08_prediction_navigation": (
+        "Image-to-video from the attached start frame. A PREDICTION beat. "
+        "Finished cinematic stylised 3D chemist study — empty wooden chair at honey desk. "
+        "NOT flat unfinished vlog vector. "
+        "CLEAN LIGHT HARD: brass lamps are SOLID fixtures. ZERO lava drip from the bulb, "
+        "ZERO molten leak, ZERO fire spit, ZERO dripping goo onto chair/desk. "
+        "Readable C12 / O16 / N14 cards sitting on the desk (not pasted cutouts). "
+        "LOCKED CAMERA. Silent. "
+        + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
+    ),
+    "08b_navigation_walk": (
+        "Image-to-video from the attached start frame. Prediction settle / walk-to-address beat. "
+        "Finished cinematic stylised 3D chemist study — NOT flat unfinished vector. "
+        "CLEAN LIGHT HARD: SOLID lamps only — ZERO lava drip / molten leak / fire spit "
+        "from the bulb onto chair or desk. Readable element cards. LOCKED CAMERA. Silent. "
+        + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "09_risk_bet": (
         "Image-to-video from the attached start frame. RISK / A PREDICTION beat. "
@@ -243,7 +262,30 @@ def qa_clip(path: Path, tag: str) -> dict:
         report["reason"] = (report["reason"] + "; " if report["reason"] else "") + (
             f"mad_peak {report['mad_peak']:.1f} >= 12 (MAD-high / motion-ghost risk)"
         )
+    lavas = []
+    for dest in frames:
+        lavas.append(lava_frac(Path(dest)))
+    report["lava_fracs"] = lavas
+    report["lava_peak"] = max(lavas) if lavas else None
+    if report["lava_peak"] is not None and report["lava_peak"] >= 0.012:
+        report["reject"] = True
+        report["reason"] = (report["reason"] + "; " if report["reason"] else "") + (
+            f"lava_peak {report['lava_peak']:.4f} >= 0.012 (bulb drip / fire)"
+        )
     return report
+
+
+def lava_frac(path: Path) -> float:
+    im = Image.open(path).convert("RGB").resize((480, 270))
+    px = im.load()
+    w, h = im.size
+    n = 0
+    for y in range(h):
+        for x in range(w):
+            r, g, b = px[x, y]
+            if r > 185 and b < 85 and (r - b) > 105 and g < 165:
+                n += 1
+    return n / max(1, w * h)
 
 
 def accept_mp4(path: Path) -> bool:
@@ -491,7 +533,16 @@ def main() -> None:
     ap.add_argument(
         "--plates",
         nargs="*",
-        default=["11_publish_gaps", "11b_wait_and_hunt", "06_explorer_leaves_gap"],
+        default=[
+            "06_explorer_leaves_gap",
+            "08_prediction_navigation",
+            "08b_navigation_walk",
+            "09_risk_bet",
+            "09b_risk_hold",
+            "10_family_before_weight",
+            "11_publish_gaps",
+            "11b_wait_and_hunt",
+        ],
     )
     args = ap.parse_args()
     RAW.mkdir(parents=True, exist_ok=True)

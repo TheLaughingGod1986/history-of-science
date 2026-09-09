@@ -18,7 +18,8 @@ import orbit_flow_veo_ui as flow
 flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/")
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
 STARTS = Path(__file__).resolve().parents[1] / "04_Generated-Clips/part04/refs/v20_start_frames"
-MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
+# House lock: Veo 3.1 Fast (do not inherit Quality from orbit_flow_veo_ui DEFAULT_MODEL).
+MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Fast"
 
 # Load prompts from mint without importing Path(__file__) side effects
 _mint = (Path(__file__).resolve().parent / "_mint_part04_flow_v20.py").read_text()
