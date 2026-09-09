@@ -1,0 +1,108 @@
+{
+  "cut": "hos_002_part04_rough_v18.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v18.mp4",
+  "bytes": 73195893,
+  "duration_s": 127.76,
+  "sha256": "b4ab99efa40a281bf59a325c443b2c28f29a3db4c5760b046cb290ba3f779fd3",
+  "bible_main": "25bdefd",
+  "parent_v17": "hos_002_part04_rough_v17.mp4",
+  "parent_v17_sha256": "e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd",
+  "parent_v16": "hos_002_part04_rough_v16.mp4",
+  "parent_v16_sha256": "7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c",
+  "reminted_plates": [
+    "06_explorer_leaves_gap",
+    "10_family_before_weight",
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "plate_sha256": {
+    "06_explorer_leaves_gap": "286c4c0244098ac283e428d7de8e46929e6540cc430ac19c226c1dad675799af",
+    "10_family_before_weight": "4496c73f9bba7157d50b685c2e427daba12d22b245d73ee7a646a76cb50ef13c",
+    "11_publish_gaps": "9863fb4844151b95343e12301a1b2c410cfe051edf134f11e1be8f6574506c49",
+    "11b_wait_and_hunt": "dc119f7757938da2ae99e9a02a86d04dfcb1a60cea8086867256737f1b1fbcfa"
+  },
+  "plates": {
+    "06_explorer_leaves_gap": {
+      "path": "04_Generated-Clips/part04/raw/v18_fast/06_explorer_leaves_gap_v18.mp4",
+      "sha256": "286c4c0244098ac283e428d7de8e46929e6540cc430ac19c226c1dad675799af",
+      "bytes": 501045
+    },
+    "10_family_before_weight": {
+      "path": "04_Generated-Clips/part04/raw/v18_fast/10_family_before_weight_v18.mp4",
+      "sha256": "4496c73f9bba7157d50b685c2e427daba12d22b245d73ee7a646a76cb50ef13c",
+      "bytes": 534672
+    },
+    "11_publish_gaps": {
+      "path": "04_Generated-Clips/part04/raw/v18_fast/11_publish_gaps_v18.mp4",
+      "sha256": "9863fb4844151b95343e12301a1b2c410cfe051edf134f11e1be8f6574506c49",
+      "bytes": 553470
+    },
+    "11b_wait_and_hunt": {
+      "path": "04_Generated-Clips/part04/raw/v18_fast/11b_wait_and_hunt_v18.mp4",
+      "sha256": "dc119f7757938da2ae99e9a02a86d04dfcb1a60cea8086867256737f1b1fbcfa",
+      "bytes": 586898
+    }
+  },
+  "methods": {
+    "06_explorer_leaves_gap": "painted single-exposure v18 (Flow harvest/agent fail; Gemini prepaid 429; NOT temporal-median)",
+    "10_family_before_weight": "painted single-exposure v18 (Flow harvest/agent fail; Gemini prepaid 429; NOT temporal-median)",
+    "11_publish_gaps": "painted single-exposure v18 (Flow harvest/agent fail; Gemini prepaid 429; NOT temporal-median)",
+    "11b_wait_and_hunt": "painted single-exposure v18 (Flow harvest/agent fail; Gemini prepaid 429; NOT temporal-median)"
+  },
+  "kept_from_v16": [],
+  "kept_from_v15_partial": [
+    "09_risk_bet",
+    "09b_risk_hold"
+  ],
+  "kept_from_v15": [
+    "09_risk_bet",
+    "09b_risk_hold"
+  ],
+  "uat_blocker": "BEN OVERRIDE FAIL \u2014 publish ghosts \u00b7 explorer face \u00b7 family lamp/panel",
+  "fail_times": {
+    "publish_ghost": 121,
+    "grid_ghost": 125
+  },
+  "timeline": {
+    "plate09b_picture_s": [
+      98.14999999999998,
+      106.04999999999998
+    ],
+    "plate10_picture_s": [
+      105.69999999999997,
+      113.59999999999998
+    ],
+    "plate11_picture_s": [
+      113.24999999999997,
+      121.14999999999998
+    ],
+    "plate11b_picture_s": [
+      120.79999999999997,
+      128.69999999999996
+    ],
+    "explorer_picture_s": [
+      45.3,
+      53.199999999999996
+    ]
+  },
+  "plate06_sha256": "286c4c0244098ac283e428d7de8e46929e6540cc430ac19c226c1dad675799af",
+  "plate10_sha256": "4496c73f9bba7157d50b685c2e427daba12d22b245d73ee7a646a76cb50ef13c",
+  "flow_account": "benoats@googlemail.com",
+  "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v18.mp4",
+  "watch": "WATCH_part04_v18.txt",
+  "doc": "PART04_V18_BEN_OVERRIDE.md",
+  "status": "LANDED_FOR_UAT \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping",
+  "credit_blockers": {
+    "gemini": "429 RESOURCE_EXHAUSTED \u2014 prepaid credits depleted (ai.studio billing)",
+    "flow": "create started project f98399b2\u2026 then stalled \u2014 Agent settings (tune) button not found; gallery harvest empty; no accepted Flow mp4"
+  },
+  "method_summary": "painted single-exposure continuous motion from procedural v18 starts (opaque props, ONE soft Empty Chairs mask-blur, no crop-settle, no nested glow, no oversharpen). Mid-plate frame QA before assemble. NOT temporal-median. NOT v01 restore.",
+  "edge_pair_frac": {
+    "ben_fail_publish": 0.597,
+    "cut_t48_explorer": 0.269,
+    "cut_t110_family": 0.264,
+    "cut_t121_publish": 0.571,
+    "cut_t125_publish": 0.496
+  }
+}

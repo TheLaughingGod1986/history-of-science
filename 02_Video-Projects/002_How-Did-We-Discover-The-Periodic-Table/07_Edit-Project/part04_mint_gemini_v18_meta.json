@@ -1,0 +1,22 @@
+{
+  "engine": "gemini-api-veo",
+  "models_tried": [
+    "veo-3.1-generate-preview"
+  ],
+  "parent_v17_sha": "e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd",
+  "bible_main": "25bdefd",
+  "only": [
+    "11_publish_gaps"
+  ],
+  "plates": [],
+  "status": "CREDIT_BLOCKER",
+  "updated": "2026-09-09T13:03:36",
+  "errors": [
+    {
+      "plate": "11_publish_gaps",
+      "model": "veo-3.1-generate-preview",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}"
+    }
+  ],
+  "credit_blocker": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}"
+}
