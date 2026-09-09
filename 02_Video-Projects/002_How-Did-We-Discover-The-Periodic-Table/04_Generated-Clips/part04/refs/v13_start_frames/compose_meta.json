@@ -1,0 +1,20 @@
+{
+  "starts": {
+    "04_sort_atomic_weight": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v13_start_frames/04_sort_atomic_weight_start_v13.jpg",
+    "05_columns_families": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v13_start_frames/05_columns_families_start_v13.jpg",
+    "09_risk_bet": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v13_start_frames/09_risk_bet_start_v13.jpg",
+    "09b_risk_hold": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v13_start_frames/09b_risk_hold_start_v13.jpg"
+  },
+  "remint": [
+    "04_sort_atomic_weight",
+    "05_columns_families",
+    "09_risk_bet",
+    "09b_risk_hold"
+  ],
+  "locks": [
+    "clean_light_no_fire_smoke",
+    "written_stack_tops_and_heroes",
+    "soft_rect_backrest_only"
+  ],
+  "parent_fail": "hos_002_part04_rough_v12.mp4"
+}
