@@ -1,39 +1,40 @@
-# PART04 v20 FLOW — SELF_FAIL
+# PART04 v20 FLOW — Ben v19 stills remint (no PASS)
 
 **Cut:** `09_Final-Export/hos_002_part04_rough_v20.mp4`  
-**sha256:** `46d5187d7689a89ea43570889af00d8f145c7a6591e87cb7aa74657f62cd5da5`  
-**bytes:** 83373090  
+**sha256:** `1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b`  
+**bytes:** 78059045  
 **duration:** 127.76s  
-**Verdict:** **SELF_FAIL** (do not declare PASS)
+**Verdict:** **SELF_FAIL remaining** — do not declare PASS · do not ping Ben
 
 ## Parent
 - `hos_002_part04_rough_v19.mp4` sha256 `69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf`
-- Ben override FAIL stills: flat unfinished · lava drip · desk unfinished · lava chair · explorer unfinished
+- Ben stills: unfinished Explorer · lava/fire bulbs · unfinished 1:44 / FAMILY FIRST / publish desks
 
 ## Remint (Flow Ultra CDP, live Mini, NO paint)
-| Plate | Model | Flow project |
+Account `benoats@googlemail.com` ULTRA. Model **Veo 3.1 Fast**. Gallery mp4 harvest only.
+
+| Plate | Try | Flow project | Gate |
+|---|---|---|---|
+| 06_explorer_leaves_gap | 7 | https://flow.google.com/project/17fd41b1-9a6f-44eb-89c0-402d57bd19f6 | KEEP (finished 3/4 Explorer) |
+| 07_eka_placeholders | 9b | https://flow.google.com/project/09196715-0d89-41fe-9c2f-f4a22fdc44e8 | KEEP |
+| 07b_eka_names_rotate | 9 | https://flow.google.com/project/938bc799-aac1-49ca-8ad4-10726c6e059f | REJECT chair-fire |
+| 07b_eka_names_rotate | 10 | https://flow.google.com/project/1f2f49c8-07b1-4038-a645-7e1301400ef3 | KEEP |
+| 08_prediction_navigation | 9 | https://flow.google.com/project/f388d6a8-5e37-4e34-9857-55b152a32321 | KEEP |
+| 08b_navigation_walk | 8 | https://flow.google.com/project/e1629c10-ec73-4a23-a297-46fcd7d817ed | KEEP |
+| 11b_wait_and_hunt | 9 | https://flow.google.com/project/36ca56de-0511-46d2-939f-dc62094f5dff | KEEP (start = 11 last frame) |
+
+07 first submit `38e17016-…` landed empty (Create progress then no gallery) — resubmitted 9b.
+
+## Honest stills (this cut)
+| t | Ben still | This cut |
 |---|---|---|
-| 06_explorer_leaves_gap | Veo 3.1 - Fast | https://flow.google.com/project/c7587e19-b6fe-4f81-aca7-b450561161fb |
-| 09_risk_bet | Veo 3.1 - Fast | https://flow.google.com/project/2e360c0f-b155-47ff-9396-00d7b0276956 |
-| 09b_risk_hold | Veo 3.1 - Fast | https://flow.google.com/project/555bd802-0f3a-433b-aff7-8c0088ffcf16 |
-| 10_family_before_weight | Veo 3.1 - Fast | https://flow.google.com/project/6c6777f8-c9b9-4561-a652-3a22087bdb19 |
-| 11_publish_gaps | Veo 3.1 - Fast | https://flow.google.com/project/5f65787e-9421-4b1f-b6db-6b5fceceec07 |
-| 11b_wait_and_hunt | Veo 3.1 - Quality | https://flow.google.com/project/0b5d1ca7-a8f7-49c5-a9d4-8b1f693723e1 |
+| ~48s | unfinished vlog Explorer | 3D 3/4 Explorer; no scalp pits; ore/gas room |
+| A PREDICTION | lava/fire bulbs | flaming N14 KEEP-v11 gone; possible small lamp teardrop ~72–75 |
+| FAMILY FIRST | flat 2D H/C/N/O | 3D hanging F/Na/Mg |
+| publish | unfinished 2D / bad cut | 3D grid/flasks · lamp banding |
 
-KEEP: 08 / 08b from v12 for this land.
-
-Account: `benoats@googlemail.com` (ULTRA). CDP `9222`.
-
-## SELF_FAIL (honest)
-1. **CLEAN LIGHT** — ~t100 still shows lamp lava / fire spit under bulb (bible always-fail).
-2. **FLAT unfinished** — publish desk beats ~t117–122 still read unfinished flat vector / vlog DNA.
-3. **Explorer** — ~t49 horizontal ghosts on cards + unfinished motion.
-
-Evidence under `07_Edit-Project/_qa_part04_v20_self_fail/`.
-
-## iCloud land
+## iCloud
 `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v20.mp4`  
 WATCH: `WATCH_part04_v20.txt`
 
-## Next
-Remint again (try5+) until CLEAN LIGHT + finished cinematic 3D clear the stills. No Ben ping. No PASS.
+Parts 01–03 LOCKED. Scores → CoS.

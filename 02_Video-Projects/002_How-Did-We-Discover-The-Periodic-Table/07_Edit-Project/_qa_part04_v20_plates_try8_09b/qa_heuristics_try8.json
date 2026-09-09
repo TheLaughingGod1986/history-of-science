@@ -1,0 +1,95 @@
+{
+  "dna_mad_t0_vs_start": 2.378,
+  "dna_ok_expected_mad_lt": 45,
+  "desk_fire_fail": true,
+  "beam_spark_fail_heuristic": false,
+  "spark_mid_hits": [],
+  "white_peaks": [
+    {
+      "frame": "09b_risk_hold_t3.5.jpg",
+      "beam_bright": 3565,
+      "beam_sparkish": 0,
+      "desk_fire": 5800,
+      "flat_white_px": 3
+    },
+    {
+      "frame": "09b_risk_hold_t5.5.jpg",
+      "beam_bright": 3283,
+      "beam_sparkish": 0,
+      "desk_fire": 5878,
+      "flat_white_px": 3
+    },
+    {
+      "frame": "09b_risk_hold_t2.5.jpg",
+      "beam_bright": 3375,
+      "beam_sparkish": 0,
+      "desk_fire": 5851,
+      "flat_white_px": 2
+    }
+  ],
+  "rows": [
+    {
+      "frame": "09b_risk_hold_t0.05.jpg",
+      "beam_bright": 3197,
+      "beam_sparkish": 0,
+      "desk_fire": 11264,
+      "flat_white_px": 1
+    },
+    {
+      "frame": "09b_risk_hold_t0.5.jpg",
+      "beam_bright": 3423,
+      "beam_sparkish": 0,
+      "desk_fire": 10557,
+      "flat_white_px": 0
+    },
+    {
+      "frame": "09b_risk_hold_t1.5.jpg",
+      "beam_bright": 3301,
+      "beam_sparkish": 0,
+      "desk_fire": 7244,
+      "flat_white_px": 0
+    },
+    {
+      "frame": "09b_risk_hold_t2.5.jpg",
+      "beam_bright": 3375,
+      "beam_sparkish": 0,
+      "desk_fire": 5851,
+      "flat_white_px": 2
+    },
+    {
+      "frame": "09b_risk_hold_t3.5.jpg",
+      "beam_bright": 3565,
+      "beam_sparkish": 0,
+      "desk_fire": 5800,
+      "flat_white_px": 3
+    },
+    {
+      "frame": "09b_risk_hold_t4.5.jpg",
+      "beam_bright": 3488,
+      "beam_sparkish": 0,
+      "desk_fire": 5627,
+      "flat_white_px": 2
+    },
+    {
+      "frame": "09b_risk_hold_t5.5.jpg",
+      "beam_bright": 3283,
+      "beam_sparkish": 0,
+      "desk_fire": 5878,
+      "flat_white_px": 3
+    },
+    {
+      "frame": "09b_risk_hold_t6.5.jpg",
+      "beam_bright": 3095,
+      "beam_sparkish": 0,
+      "desk_fire": 5422,
+      "flat_white_px": 1
+    },
+    {
+      "frame": "09b_risk_hold_t7.5.jpg",
+      "beam_bright": 2879,
+      "beam_sparkish": 0,
+      "desk_fire": 5416,
+      "flat_white_px": 1
+    }
+  ]
+}

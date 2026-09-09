@@ -1,23 +1,24 @@
-# PART 04 rough v20 — SELF_FAIL
+# Part 04 rough v20 — remaining FAIL (Ben v19 stills)
 
 **Cut:** `hos_002_part04_rough_v20.mp4`  
-**sha256:** `46d5187d7689a89ea43570889af00d8f145c7a6591e87cb7aa74657f62cd5da5`  
+**sha256:** `1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b`  
+**bytes:** 78059045 · **duration:** 127.760 s  
 **Landed:** iCloud `HOS UAT/hos_002_part04_rough_v20.mp4`  
-**Verdict:** SELF_FAIL — do not PASS · do not ping Ben
+**Verdict:** remaining FAIL — do not PASS · do not ping Ben
 
-## Remint
-Flow Ultra CDP (`:9222`) · account `benoats@googlemail.com` · **NO paint**
+## What moved (try9/try10)
+- A PREDICTION lava in the previous assemble was **KEEP `07b_eka_names_rotate` v11** (flaming N14 + pasted Eka HUD), not reminted 08. 07/07b now Flow v20 gallery mp4s from empty-chair DNA.
+- 08 try9 cardless / hidden-bulb. 11b try9 starts from 11’s last frame (publish join).
+- Explorer remains Part 01 3/4 finished hair (not v19 vlog back-view pits).
 
-Plates: 06 · 09 · 09b · 10 · 11 · 11b (08/08b KEEP v12)
-
-## Fail stills (this cut)
-| t | Beat | Fail |
+## Remaining fail stills
+| t | Beat | Honest read |
 |---|---|---|
-| ~49s | Explorer | Horizontal ghosts on cards · unfinished motion |
-| ~100s | A BET / chair | CLEAN LIGHT FAIL — lamp lava / fire spit |
-| ~117–122s | Publish / family desk | Unfinished flat vector / vlog DNA |
+| ~48s | Explorer | Finished 3D crown. Wrong room (ore/gas, not card-desk gap). |
+| ~72–75s | A PREDICTION | No flaming N14. Possible small orange teardrop on the lamp. |
+| ~121s | Publish | 3D grid/flasks. Lamp banding. Late 11b flask smear risk. |
 
-Evidence: `07_Edit-Project/_qa_part04_v20_self_fail/`
+Evidence: `07_Edit-Project/_qa_part04_v20_ben_spot/`
 
 ## CoS
-Scores → CoS. Picture gate closed until CLEAN LIGHT + finished cinematic 3D clear the stills.
+Scores → CoS. Picture gate stays closed.

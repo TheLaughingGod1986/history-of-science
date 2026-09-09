@@ -5,7 +5,8 @@ Parent FAIL: hos_002_part04_rough_v19.mp4
   sha256 69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf
 
 Remint ONLY via Flow Ultra real gallery mp4 harvest (Ben v19 stills):
-  06_explorer_leaves_gap · 08_prediction_navigation · 08b_navigation_walk
+  06_explorer_leaves_gap · 07_eka_placeholders · 07b_eka_names_rotate
+  08_prediction_navigation · 08b_navigation_walk
   09_risk_bet · 09b_risk_hold · 10_family_before_weight
   11_publish_gaps · 11b_wait_and_hunt
 
@@ -66,10 +67,12 @@ STYLE = (
     "Silent. No Orbit. No Ken Burns still. No paint / no double-exposure."
 )
 CLEAN = (
-    "CLEAN LIGHT (BIBLE HARD): warm desk-lamp glow ONLY. "
-    "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO burning chair rim, "
-    "ZERO dripping bulb goo onto desk/chair. Soft continuous warm cone — "
-    "no stepped banding rings on the lamp shade. "
+    "CLEAN LIGHT (BIBLE HARD): warm desk-lamp glow ONLY — a soft continuous luminous cone. "
+    "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO sparks, ZERO embers, "
+    "ZERO flames, ZERO burning chair rim, ZERO dripping bulb goo onto desk/chair. "
+    "ZERO lamp-beam sparks, ZERO floating embers, ZERO fire spit motes, ZERO firework particles, "
+    "ZERO ash flecks, ZERO glowing coal dots drifting in the beam (try7 UAT: continuous beam sparks FAIL — never soft-pass as dust). "
+    "Soft continuous warm cone — no stepped banding rings on the lamp shade. "
     "Empty Chairs = ONE soft rectangular panel glow ONLY — never double edge."
 )
 SHARP = (
@@ -121,30 +124,61 @@ PROMPTS = {
     ),
     "06_explorer_leaves_gap": (
         "Image-to-video from the attached start frame. Explorer garnish beat. "
-        "Finished cinematic stylised 3D — NOT flat unfinished vector. "
-        "KEEP exact BACK or PROFILE only — never turn to face camera. "
-        "Dense finished opaque brown crown/bun with ZERO black-hole scalp pits, ZERO gaps "
-        "between hair spheres, ZERO face-cloud blotches; gold glasses rim readable; teal coat. "
-        "Desk cards MUST stay readable as H1, C12, N14, O16 (never C1, never N12, never garbled). "
-        "CLEAN warm lamp ONLY — continuous soft gradient, NO stepped banding, ZERO lava drip. "
-        "LOCKED CAMERA. Tiny head settle only — stay back/profile. Silent. "
+        "KEEP THIS exact finished Explorer from the still: gold round glasses, messy brown hair "
+        "with ZERO black circular scalp pits, teal coat, yellow vest, brown bow tie, satchel. "
+        "He is examining a specimen at a chemist bench. Tiny head/hands settle only. "
+        "Finished cinematic stylised 3D (Animistry-class). NOT flat unfinished vlog. "
+        "NOT a rear-view orange-hair chibi with holes in the crown. NOT a pith helmet. NOT twins. "
+        "Exactly one Explorer, one face. CLEAN warm lamp ONLY — no lava, no fire. "
+        "LOCKED CAMERA. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
+    "07_eka_placeholders": (
+        "IMAGE-TO-VIDEO of the attached start frame. Eka-placeholder beat. "
+        "Animate THIS exact empty-chair chemist study at night — honey wood desk, empty wooden chair, "
+        "moon in the window, one desk lamp. LOCKED TRIPOD CAMERA. Silent. "
+        "Vacant cream card seats sit ON the desk as physical paper placeholders in a column — "
+        "not floating HUD, not pasted 2D overlays, not flaming cards. "
+        "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds: the lampshade HIDES the bulb; "
+        "only a soft continuous warm cone. ZERO visible hanging glass bulb drip. "
+        "HARD BAN (t0 through t8): fire, flame, flames, spark, sparks, ember, embers, lava, lava drip, "
+        "molten leak, fire spit, burning card aura, fiery N14, dripping bulb goo, lamp-beam sparks. "
+        "Do NOT write letters, element symbols, captions, UI, or signage anywhere. Blank cream cards only. "
+        "No floating cards. No Explorer. No Orbit. No paint. No double-exposure. "
+        + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
+    ),
+    "07b_eka_names_rotate": (
+        "IMAGE-TO-VIDEO of the attached start frame. Eka-names / vacant-seat pulse beat. "
+        "Animate THIS exact empty-chair chemist study. Soft pulse of attention across two or three "
+        "vacant cream-card seats that rest ON the honey wood desk as physical paper — "
+        "NOT floating HUD, NOT pasted 2D cutouts, NOT a flaming N14 card. "
+        "LOCKED TRIPOD CAMERA. Silent. "
+        "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds: lampshade HIDES the bulb; "
+        "only a soft continuous warm cone. ZERO lava drip, ZERO molten leak, ZERO fire spit, "
+        "ZERO fiery card border, ZERO dripping goo onto chair/desk. "
+        "Do NOT write letters, element symbols, Eka labels, N14, captions, or UI anywhere in the frame. "
+        "Blank cream cards / empty slots only. No Explorer. No Orbit. No paint. No double-exposure. "
+        + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
+    ),
     "08_prediction_navigation": (
-        "Image-to-video from the attached start frame. A PREDICTION beat. "
-        "Finished cinematic stylised 3D chemist study — empty wooden chair at honey desk. "
-        "NOT flat unfinished vlog vector. "
-        "CLEAN LIGHT HARD: brass lamps are SOLID fixtures. ZERO lava drip from the bulb, "
-        "ZERO molten leak, ZERO fire spit, ZERO dripping goo onto chair/desk. "
-        "Readable C12 / O16 / N14 cards sitting on the desk (not pasted cutouts). "
-        "LOCKED CAMERA. Silent. "
+        "IMAGE-TO-VIDEO of the attached start frame. A PREDICTION beat. "
+        "Animate THIS exact empty-chair chemist study — honey wood desk, empty wooden chair, "
+        "moon in the window. LOCKED TRIPOD CAMERA. Silent. "
+        "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds: the lampshade HIDES the bulb; "
+        "only a soft continuous warm cone. ZERO visible hanging glass bulb. "
+        "HARD BAN (t0 through t8): fire, flame, flames, spark, sparks, ember, embers, lava, lava drip, "
+        "molten leak, fire spit, burning chair rim, fiery card aura, flaming N14, dripping bulb goo. "
+        "CARDLESS desk: flasks, mortar, book, blank paper stack, lamp, empty chair only. "
+        "Do NOT write letters, element symbols, or UI. No floating cards. No Explorer. No Orbit. "
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "08b_navigation_walk": (
-        "Image-to-video from the attached start frame. Prediction settle / walk-to-address beat. "
-        "Finished cinematic stylised 3D chemist study — NOT flat unfinished vector. "
-        "CLEAN LIGHT HARD: SOLID lamps only — ZERO lava drip / molten leak / fire spit "
-        "from the bulb onto chair or desk. Readable element cards. LOCKED CAMERA. Silent. "
+        "IMAGE-TO-VIDEO of the attached start frame. Prediction settle / walk-to-address beat. "
+        "Animate THIS exact empty-chair chemist study. LOCKED TRIPOD CAMERA. Silent. "
+        "CLEAN LIGHT HARD for 8 seconds: lampshade HIDES the bulb; soft continuous warm cone only. "
+        "ZERO lava drip / molten leak / fire spit / flames behind the chair / lamp-beam sparks. "
+        "Do NOT write letters or UI on cards. Blank paper stacks OK. No floating cards. "
+        "No Explorer. No Orbit. No paint. No double-exposure. "
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "09_risk_bet": (
@@ -157,10 +191,17 @@ PROMPTS = {
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "09b_risk_hold": (
-        "Image-to-video from the attached start frame. Risk-hold / settle beat. "
-        "Finished cinematic stylised 3D chemist study — NOT flat unfinished vector. "
-        "CLEAN LIGHT HARD: soft warm lamp ONLY — ZERO lava drip / molten leak / fire spit "
-        "onto chair or desk. Soft continuous light cone. Locked camera. Silent. "
+        "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact empty-chair chemist study. "
+        "A BET / risk-hold settle beat. Finished cinematic stylised 3D — honey wood desk, empty wooden chair, "
+        "bookshelf, moon in the window. LOCKED TRIPOD CAMERA. Silent. "
+        "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds: warm clean desk-lamp glow ONLY. "
+        "HARD BAN forever (t0 through t8): fire, flame, flames, spark, sparks, ember, embers, lava, lava drip, "
+        "molten leak, fire spit, burning chair rim, candle flicker, firework particles, glowing coal, "
+        "dripping bulb goo, lamp-beam sparks, floating embers. "
+        "Chair back is PLAIN finished wood. Do NOT write any words, labels, captions, UI, or signage "
+        "anywhere in the frame. No lettering on the chair. No HUD. "
+        "CARDLESS desk: ceramic vessels, mortar, flasks, one blank paper stack, lamp, chair only. "
+        "No Explorer. No Orbit. No paint. No double-exposure. "
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "10_family_before_weight": (
@@ -535,6 +576,8 @@ def main() -> None:
         nargs="*",
         default=[
             "06_explorer_leaves_gap",
+            "07_eka_placeholders",
+            "07b_eka_names_rotate",
             "08_prediction_navigation",
             "08b_navigation_walk",
             "09_risk_bet",

@@ -1,46 +1,151 @@
 {
   "cut": "hos_002_part04_rough_v20.mp4",
-  "sha256": "46d5187d7689a89ea43570889af00d8f145c7a6591e87cb7aa74657f62cd5da5",
-  "bytes": 83373090,
+  "path": "09_Final-Export/hos_002_part04_rough_v20.mp4",
+  "bytes": 78059045,
   "duration_s": 127.76,
-  "verdict": "SELF_FAIL",
+  "sha256": "1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b",
+  "bible_main": "43d9405",
+  "parent_v19": "hos_002_part04_rough_v19.mp4",
   "parent_v19_sha256": "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf",
+  "parent_v17": "hos_002_part04_rough_v17.mp4",
+  "parent_v17_sha256": "e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd",
+  "parent_v16": "hos_002_part04_rough_v16.mp4",
+  "parent_v16_sha256": "7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c",
   "reminted_plates": [
     "06_explorer_leaves_gap",
+    "07_eka_placeholders",
+    "07b_eka_names_rotate",
+    "08_prediction_navigation",
+    "08b_navigation_walk",
     "09_risk_bet",
     "09b_risk_hold",
     "10_family_before_weight",
     "11_publish_gaps",
     "11b_wait_and_hunt"
   ],
-  "kept_08_08b_from": "v12",
-  "flow_projects_try4": {
-    "06_explorer_leaves_gap": "https://flow.google.com/project/c7587e19-b6fe-4f81-aca7-b450561161fb",
-    "09_risk_bet": "https://flow.google.com/project/2e360c0f-b155-47ff-9396-00d7b0276956",
-    "09b_risk_hold": "https://flow.google.com/project/555bd802-0f3a-433b-aff7-8c0088ffcf16",
-    "10_family_before_weight": "https://flow.google.com/project/6c6777f8-c9b9-4561-a652-3a22087bdb19",
-    "11_publish_gaps": "https://flow.google.com/project/5f65787e-9421-4b1f-b6db-6b5fceceec07",
-    "11b_wait_and_hunt": "https://flow.google.com/project/0b5d1ca7-a8f7-49c5-a9d4-8b1f693723e1"
+  "plate_sha256": {
+    "06_explorer_leaves_gap": "b9a984a2a05e1952f159f1e138db9f1be94fe4f43105ffc515071470f593fc9d",
+    "07_eka_placeholders": "12ea5fc68e83da8df5f734ed9d0f8e3b0d725b86dc4140df794c03b16c29f74f",
+    "07b_eka_names_rotate": "0ae6525c28737226c8cca3184dfd95b583413293df5c2906427c3d5ef6911d60",
+    "08_prediction_navigation": "b50dcbbfd1f7b2c538e03f3d745f0ceed415b4da313505e9354d736ed880313e",
+    "08b_navigation_walk": "d7cb7843e3990f76147113f80a87fe339e72e1a65888e4278124335b32d4da87",
+    "09_risk_bet": "95042880aba7f49edeedced0bd69e5dbd27e6a790c0f149fe632b05447d70ef3",
+    "09b_risk_hold": "e3fdfa71f7bfbcb4f24e07100292e085526f76243a0f73c652eea8fe4d044a94",
+    "10_family_before_weight": "cf73a7b487b158714eeac593c2db960649d49a897e40a172387cc5e785f40951",
+    "11_publish_gaps": "8624847b54809612436f8b87e18f4578a8138f7ca3ecc27788eb6376265ea1aa",
+    "11b_wait_and_hunt": "d2c66e868fa923bf57d6cd03848b7105655564919e9f8e141129bd1d4e48cc71"
   },
-  "flow_models_try4": {
-    "06_explorer_leaves_gap": "Veo 3.1 - Fast",
-    "09_risk_bet": "Veo 3.1 - Fast",
-    "09b_risk_hold": "Veo 3.1 - Fast",
-    "10_family_before_weight": "Veo 3.1 - Fast",
-    "11_publish_gaps": "Veo 3.1 - Fast",
-    "11b_wait_and_hunt": "Veo 3.1 - Quality"
+  "plates": {
+    "06_explorer_leaves_gap": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/06_explorer_leaves_gap_v20.mp4",
+      "sha256": "b9a984a2a05e1952f159f1e138db9f1be94fe4f43105ffc515071470f593fc9d",
+      "bytes": 1811306
+    },
+    "07_eka_placeholders": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/07_eka_placeholders_v20.mp4",
+      "sha256": "12ea5fc68e83da8df5f734ed9d0f8e3b0d725b86dc4140df794c03b16c29f74f",
+      "bytes": 1466667
+    },
+    "07b_eka_names_rotate": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/07b_eka_names_rotate_v20.mp4",
+      "sha256": "0ae6525c28737226c8cca3184dfd95b583413293df5c2906427c3d5ef6911d60",
+      "bytes": 1314779
+    },
+    "08_prediction_navigation": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/08_prediction_navigation_v20.mp4",
+      "sha256": "b50dcbbfd1f7b2c538e03f3d745f0ceed415b4da313505e9354d736ed880313e",
+      "bytes": 1402281
+    },
+    "08b_navigation_walk": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/08b_navigation_walk_v20.mp4",
+      "sha256": "d7cb7843e3990f76147113f80a87fe339e72e1a65888e4278124335b32d4da87",
+      "bytes": 1504109
+    },
+    "09_risk_bet": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/09_risk_bet_v20.mp4",
+      "sha256": "95042880aba7f49edeedced0bd69e5dbd27e6a790c0f149fe632b05447d70ef3",
+      "bytes": 1341061
+    },
+    "09b_risk_hold": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20.mp4",
+      "sha256": "e3fdfa71f7bfbcb4f24e07100292e085526f76243a0f73c652eea8fe4d044a94",
+      "bytes": 1178710
+    },
+    "10_family_before_weight": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/10_family_before_weight_v20.mp4",
+      "sha256": "cf73a7b487b158714eeac593c2db960649d49a897e40a172387cc5e785f40951",
+      "bytes": 2037098
+    },
+    "11_publish_gaps": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/11_publish_gaps_v20.mp4",
+      "sha256": "8624847b54809612436f8b87e18f4578a8138f7ca3ecc27788eb6376265ea1aa",
+      "bytes": 1531446
+    },
+    "11b_wait_and_hunt": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/11b_wait_and_hunt_v20.mp4",
+      "sha256": "d2c66e868fa923bf57d6cd03848b7105655564919e9f8e141129bd1d4e48cc71",
+      "bytes": 1520468
+    }
   },
-  "account": "benoats@googlemail.com",
-  "path": "Flow Ultra CDP :9222 \u2014 NO paint",
-  "self_fail_reasons": [
-    "CLEAN LIGHT FAIL: lamp lava/fire spit still visible ~t100 (09b risk hold)",
-    "FLAT unfinished vector DNA still on publish desk beats (~t117-122)",
-    "Explorer ~t49: horizontal ghosting on cards + unfinished look"
-  ],
-  "evidence_frames": [
-    "07_Edit-Project/_qa_part04_v20_self_fail/rough_v20_t49_0.jpg",
-    "07_Edit-Project/_qa_part04_v20_self_fail/rough_v20_t100_0.jpg",
-    "07_Edit-Project/_qa_part04_v20_self_fail/rough_v20_t117_0.jpg",
-    "07_Edit-Project/_qa_part04_v20_self_fail/rough_v20_t122_0.jpg"
-  ]
+  "methods": {
+    "06_explorer_leaves_gap": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+    "07_eka_placeholders": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+    "07b_eka_names_rotate": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+    "08_prediction_navigation": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+    "08b_navigation_walk": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+    "09_risk_bet": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+    "09b_risk_hold": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+    "10_family_before_weight": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+    "11_publish_gaps": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)",
+    "11b_wait_and_hunt": "Flow Ultra Veo 3.1 Fast I2V + real gallery mp4 harvest (NO paint)"
+  },
+  "flow_job_ids": {},
+  "kept_from_v18": [],
+  "kept_from_v15": [],
+  "uat_blocker": "UAT HARD FAIL bible 43d9405 \u2014 PUBLISH ~118\u2013127 continuous horizontal ghost/jitter from paint fallback",
+  "fail_times": {
+    "publish_ghost_window": [
+      118,
+      127
+    ],
+    "explorer": [
+      46,
+      53
+    ]
+  },
+  "timeline": {
+    "plate09b_picture_s": [
+      98.14999999999998,
+      106.04999999999998
+    ],
+    "plate10_picture_s": [
+      105.69999999999997,
+      113.59999999999998
+    ],
+    "plate11_picture_s": [
+      113.24999999999997,
+      121.14999999999998
+    ],
+    "plate11b_picture_s": [
+      120.79999999999997,
+      128.69999999999996
+    ],
+    "explorer_picture_s": [
+      45.3,
+      53.199999999999996
+    ]
+  },
+  "plate06_sha256": "b9a984a2a05e1952f159f1e138db9f1be94fe4f43105ffc515071470f593fc9d",
+  "plate10_sha256": "d40a2cb1a9002731f67f22da9da82a6d2eff523ab52f0cdc05d1daa2f1916905",
+  "plate11_sha256": "8624847b54809612436f8b87e18f4578a8138f7ca3ecc27788eb6376265ea1aa",
+  "plate11b_sha256": "d2c66e868fa923bf57d6cd03848b7105655564919e9f8e141129bd1d4e48cc71",
+  "flow_account": "benoats@googlemail.com",
+  "no_paint_fallback": true,
+  "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v20.mp4",
+  "watch": "WATCH_part04_v20.txt",
+  "doc": "PART04_V20_FLOW.md",
+  "status": "LANDED_FOR_UAT remaining FAIL \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping",
+  "try": "9/10",
+  "honest_watch": "WATCH_part04_v20.txt overwritten after assemble (assemble auto-WATCH is too rosy)"
 }
