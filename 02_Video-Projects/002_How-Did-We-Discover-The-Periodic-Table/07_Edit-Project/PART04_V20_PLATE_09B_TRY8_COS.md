@@ -3,7 +3,7 @@
 **Mode:** ONE PLATE · STOP · no rough_v21 · no assemble
 
 ## UAT amend on try7
-CLEAN LIGHT NOT CLEARED — continuous lamp-beam sparks/embers ~t1–t8 FAIL (desk flames gone but sparks still FAIL; never soft-pass as dust). Plus UNFINISHED FLAT cards.
+**CLEAN LIGHT CLEARED.** **UNFINISHED FLAT only blocker** (Ben stills: left H/C/O/N cluster + desk-row flat overlays). Fire stay clear.
 
 ## DNA
 | Field | Value |

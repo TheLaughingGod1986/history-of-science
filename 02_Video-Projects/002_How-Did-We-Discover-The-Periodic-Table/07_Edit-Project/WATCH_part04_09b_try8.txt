@@ -8,5 +8,5 @@ dna: KEEP v01 09b empty-chair moon cardless (NOT try6/7 flat DNA 2a651abc…)
 flow: https://flow.google.com/project/0ba58130-bc20-47c8-b8e2-1b1d77947973
 iCloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try8/
 try8A: SELF_REJECT_FLAT_CARDS (lamp clean; HJ/CoB flats) — archived _rejected/
-try7 UAT amend: CLEAN LIGHT NOT CLEARED (beam sparks) + unfinished flats
+try7 UAT amend: CLEAN LIGHT CLEARED; UNFINISHED FLAT only blocker — try8 cardless DNA (not flat DNA)
 NO assemble. NO other plates.
