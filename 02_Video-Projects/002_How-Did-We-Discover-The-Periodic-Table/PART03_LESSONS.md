@@ -12,7 +12,7 @@ Docs only. No remint · no mint · no upload · no Mini path invent · no Flow �
 | `README.md` | Episode pointer |
 | `07_Edit-Project/PART03_KEEP_AND_LOCK_GATE.md` | Canonical lock gate — **LOCKED** on v09 · P04 unlocked |
 | `00_Brand/Brand-Guidelines/HOS_HOUSE_VO_AND_TEACH_LOCK.md` | VO clarity + teach for Part 04+ (not a P03 remint) |
-| `00_Brand/Brand-Guidelines/HOS_UAT_BIBLE_HOUSE_LOCK.md` | Standing ALWAYS UAT: consistency · VO visual explainer · Explorer round glasses · lamp clean warm glow · readable cards / no garbled · Explorer face/hair finished · no lamp lava drip · late-shot sharp (no horizontal ghosts; continuous playback) (every HOS cut; not 002-only) · `.cursor/rules/hos-uat-bible-house-lock.mdc` |
+| `00_Brand/Brand-Guidelines/HOS_UAT_BIBLE_HOUSE_LOCK.md` | Standing ALWAYS UAT: consistency · VO visual explainer · Explorer round glasses · lamp clean warm glow · readable cards / no garbled · Explorer face/hair finished · no lamp lava drip · late-shot sharp (no horizontal ghosts; continuous playback) · finished 3D cartoon quality / no unfinished flat (every HOS cut; not 002-only) · `.cursor/rules/hos-uat-bible-house-lock.mdc` |
 
 ## Board state (this minute)
 
@@ -39,7 +39,7 @@ Canonical for this minute and every later 002 plate unless Ben overrides in writ
 
 ## Going-forward Ben (scripts + picture)
 
-For the rest of 002 (and the channel bar rising after Germs). Full house: `HOS_HOUSE_VO_AND_TEACH_LOCK.md` (Part 04+). Standing UAT ALWAYS (001 / 002 / later): `HOS_UAT_BIBLE_HOUSE_LOCK.md` — **consistency** (teal trenchcoat Explorer scale + house continuity) · **VO visual explainer** · **Explorer round glasses** · **lamp = clean warm glow** · **readable cards** (no garbled element cards) · **Explorer face/hair finished** (no face-cloud blot / black-hole scalp dots) · **no lamp lava drip** · **late-shot sharp** (no horizontal ghosts on lamp/flasks/grid; continuous playback).
+For the rest of 002 (and the channel bar rising after Germs). Full house: `HOS_HOUSE_VO_AND_TEACH_LOCK.md` (Part 04+). Standing UAT ALWAYS (001 / 002 / later): `HOS_UAT_BIBLE_HOUSE_LOCK.md` — **consistency** (teal trenchcoat Explorer scale + house continuity) · **VO visual explainer** · **Explorer round glasses** · **lamp = clean warm glow** · **readable cards** (no garbled element cards) · **Explorer face/hair finished** (no face-cloud blot / black-hole scalp dots) · **no lamp lava drip** · **late-shot sharp** (no horizontal ghosts on lamp/flasks/grid; continuous playback) · **finished 3D cartoon quality** (no unfinished flat).
 
 1. **Clearer educational scripts** — teach the chemistry beat in plain language.
 2. **VO + picture sync** — when the line names a thing, the frame shows that thing on time (labels included).

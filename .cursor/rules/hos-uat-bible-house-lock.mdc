@@ -1,5 +1,5 @@
 ---
-description: HOS UAT bible — standing ALWAYS consistency, VO visual explainer, glasses, lamp glow, readable cards (no garbled), Explorer face/hair finish, no lamp lava, late-shot sharp (no horizontal ghosts; continuous playback) on every cut (9 Sep 2026)
+description: HOS UAT bible — standing ALWAYS consistency, VO visual explainer, glasses, lamp glow, readable cards (no garbled), Explorer face/hair finish, no lamp lava, late-shot sharp (no horizontal ghosts; continuous playback), finished 3D cartoon quality (no unfinished flat) on every cut (9 Sep 2026)
 alwaysApply: true
 ---
 
@@ -12,7 +12,8 @@ alwaysApply: true
 **Hardened 8 Sep 2026:** glasses · lamp glow · readable cards (keep existing ALWAYS).  
 **Hardened 9 Sep 2026:** Explorer hair · no lamp lava drip · late-shot finish (keep all prior ALWAYS).  
 **Hardened again 9 Sep 2026:** late-shot **horizontal ghosts** (continuous playback) · Explorer **face-cloud blot** / **black-hole scalp dots** · **garbled element cards** — cite Ben FAIL on HOS 002 Part 04 Empty Chairs **`v17`** (after UAT PASS). Keep **all** prior ALWAYS.  
-**Cite:** Ben 9 Sep override stills — HOS 002 Part 04 Empty Chairs `v17` (UAT PASS → Ben FAIL remint on these basics). Standing ALWAYS on every HOS cut thereafter — **not P04-only**. Remint runs elsewhere; do **not** launch remint / mint / Mini from this rule.
+**Hardened again 9 Sep 2026 (evening):** **unfinished flat animation quality** · **lamp lava drip reinforced** — cite Ben OVERRIDE FAIL on HOS 002 Part 04 Empty Chairs **`v19`** evening stills (UAT had PASS). Keep **all** prior ALWAYS.  
+**Cite:** Ben 9 Sep evening stills — HOS 002 Part 04 Empty Chairs `v19` (UAT PASS → Ben OVERRIDE FAIL). Standing ALWAYS on every HOS cut thereafter — **not P04-only / not v19-only**. Remint runs elsewhere; do **not** launch remint / mint / Mini from this rule.
 
 ## Standing ALWAYS (fail any → UAT FAIL)
 
@@ -22,18 +23,20 @@ alwaysApply: true
 4. **LAMP = CLEAN WARM GLOW** — Lamps are a clean warm glow only. Fire spit / candle-flame / smoke lamp artifacts = fail.
 5. **READABLE CARDS** — Cards have readable writing or symbols. Blank stacks / blank hero cards = fail. **Garbled element cards** on the desk (scrambled letters, melted glyphs, unreadable symbols) = fail.
 6. **EXPLORER FACE / HAIR — FINISHED** — Explorer hair is a full finished crown. Fail sloppy / unfinished mid-scalp / bald patch. Also fail **face-cloud blot** (soft melted face smear) and **black-hole dots** in scalp / hair.
-7. **NO LAMP LAVA DRIP** — No molten / orange leak under the bulb onto chair / desk. Extends clean light — lava drip = fail.
+7. **NO LAMP LAVA DRIP** — No molten / orange leak under the bulb onto chair / desk. Extends clean light — lava drip = fail. **Reinforced:** Ben hit this again on P04 Empty Chairs **`v19`** evening stills — do **not** soft-pass.
 8. **LATE SHOTS SHARP + FINISHED** — Final beats stay sharp and finished. Fail heavy motion blur / unfinished desks. Fail **ANY horizontal ghost / double-exposure** on lamp / flasks / grid **even when DNA is painted**. Require **continuous-playback evidence** (scrub the late window) — **not** one still.
+9. **FINISHED 3D CARTOON QUALITY (NO UNFINISHED FLAT)** — Picture reads as finished premium **3D cartoon** house. Soft / flat / unfinished animation look that reads incomplete (under-shaded flats, half-built forms, “unfinished anim” softness) = **ALWAYS FAIL**. Standing on every HOS cut — **not v19-only**. Cite Ben OVERRIDE FAIL on P04 Empty Chairs **`v19`** evening stills.
 
 ## Relate (do not weaken)
 
 - **VO visual explainer** reinforces `HOS_HOUSE_VO_AND_TEACH_LOCK.md` — picture lands **with** the VO beat and teaches what the line says.
 - **Consistency** + **round glasses** + **finished face/hair** reinforce Explorer teal trenchcoat / on-model continuity (`.cursor/rules/hos-explorer-character.mdc` · Part 01 style baseline · film lessons).
-- **No lamp lava drip** extends **lamp = clean warm glow** — light stays light, not molten leak under the bulb.
+- **No lamp lava drip** extends **lamp = clean warm glow** — light stays light, not molten leak under the bulb. Ben `v19` evening stills prove this cannot be soft-passed.
 - **Late-shot horizontal ghosts** and **garbled cards** / **face blot** clarify finish bars that soft-passed on P04 Empty Chairs `v17` stills — do not weaken prior ALWAYS.
+- **Finished 3D cartoon quality** clarifies the house finish bar that soft-passed on P04 Empty Chairs `v19` evening stills — do not weaken prior ALWAYS.
 
 ## Do not
 
 - Soft-pass scenery-only under a specific VO line
-- Soft-pass off-model Explorer, wrong coat / scale, bare/no-glasses Explorer, unfinished Explorer hair / bald crown, face-cloud blot, black-hole scalp dots, flame-spit / smoke lamps, lamp lava drip, blank or **garbled** hero cards / stacks, soft/ghosted/unfinished late shots, or **horizontal ghost / double-exposure** on lamp / flasks / grid scored from one still only
+- Soft-pass off-model Explorer, wrong coat / scale, bare/no-glasses Explorer, unfinished Explorer hair / bald crown, face-cloud blot, black-hole scalp dots, flame-spit / smoke lamps, lamp lava drip, blank or **garbled** hero cards / stacks, soft/ghosted/unfinished late shots, **horizontal ghost / double-exposure** on lamp / flasks / grid scored from one still only, or **unfinished flat / soft incomplete animation** that is not finished 3D cartoon house
 - Remint, mint, upload, Mini, Flow, Studio, Orbit, or Oppti from this rule alone (P04 Empty Chairs remint already runs elsewhere)

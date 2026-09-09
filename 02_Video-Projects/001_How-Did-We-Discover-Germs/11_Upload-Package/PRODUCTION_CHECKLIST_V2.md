@@ -48,8 +48,9 @@ Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
 - [ ] **UAT ALWAYS — LAMP = CLEAN WARM GLOW:** lamps are clean warm glow only (fail fire spit / candle-flame / smoke artifacts)
 - [ ] **UAT ALWAYS — READABLE CARDS:** cards show readable writing/symbols (fail blank stacks / blank hero cards / garbled element cards)
 - [ ] **UAT ALWAYS — EXPLORER FACE / HAIR — FINISHED:** full finished crown; fail sloppy / bald patch / face-cloud blot / black-hole scalp dots
-- [ ] **UAT ALWAYS — NO LAMP LAVA DRIP:** no molten / orange leak under bulb onto chair / desk (extends clean light)
+- [ ] **UAT ALWAYS — NO LAMP LAVA DRIP:** no molten / orange leak under bulb onto chair / desk (extends clean light; Ben hit again on v19 evening stills — never soft-pass)
 - [ ] **UAT ALWAYS — LATE SHOTS SHARP + FINISHED:** final beats sharp; fail ANY horizontal ghost / double-exposure on lamp / flasks / grid (continuous playback, not one still)
+- [ ] **UAT ALWAYS — FINISHED 3D CARTOON QUALITY (NO UNFINISHED FLAT):** picture reads as finished premium 3D cartoon house; fail soft/flat/unfinished anim look (cite Ben v19 evening OVERRIDE FAIL)
 - [ ] Studio finish items done after API upload (ABC if long · Related+pin Shorts)
 
 **Ship only when every box is checked.**
