@@ -1,0 +1,29 @@
+{
+  "engine": "flow-veo-ui",
+  "account_required": "benoats@googlemail.com",
+  "parent_v18_sha": "05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5",
+  "bible_main": "43d9405",
+  "model": "Veo 3.1 - Fast",
+  "plates_requested": [
+    "11_publish_gaps",
+    "11b_wait_and_hunt",
+    "06_explorer_leaves_gap"
+  ],
+  "accepted": {},
+  "no_paint_fallback": true,
+  "status": "BLOCKED_AUTH_PASSKEY",
+  "updated": "2026-09-09T14:54:35",
+  "blocker": {
+    "type": "BLOCKED_AUTH",
+    "detail": "Flow Playwright profile and Chrome Default require passkey/2FA for benoats@googlemail.com. Wrong account benoats86@gmail.com is logged in on MCP Chrome with only 50 credits (forbidden). Cookie clone from Chrome Default did not transfer OSCrypt session. Password/phone recovery unavailable to agent.",
+    "retries": [
+      "orbit_flow_veo_ui --login hos profile \u2192 passkey timeout",
+      "Try another way \u2192 password/phone recovery (no credentials)",
+      "Chrome Default cookie rsync into Playwright profile \u2192 still Sign in",
+      "Playwright MCP AccountChooser \u2192 googlemail \u2192 passkey challenge again",
+      "Chrome --profile-directory=Default Flow window \u2192 Google sign-in identifier (session dead)"
+    ],
+    "evidence_credits_phone_screenshot": "assets/flow_credits_benoats_googlemail.png (~10050 credits on googlemail)",
+    "wrong_account_credits": "benoats86@gmail.com = 50 credits on MCP Flow"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "parent_v18_sha": "05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5",
+  "bible_main": "43d9405",
+  "plates": {
+    "11_publish_gaps": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v19_start_frames/11_publish_gaps_start_v19.jpg",
+    "11b_wait_and_hunt": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v19_start_frames/11b_wait_and_hunt_start_v19.jpg",
+    "06_explorer_leaves_gap": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v19_start_frames/06_explorer_leaves_gap_start_v19.jpg"
+  },
+  "method": "publish desks = v18 single-exposure procedural starts; explorer = KEEP back-view still cover-fit 1920x1080",
+  "remint": [
+    "06_explorer_leaves_gap",
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "keep_assemble": [
+    "10_family_before_weight",
+    "09_risk_bet",
+    "09b_risk_hold"
+  ]
+}
