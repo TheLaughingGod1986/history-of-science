@@ -1,60 +1,51 @@
 # PART04 v19 — Flow Ultra remint (bible 43d9405)
 
-**Status:** `STOP_TO_COS` · **BLOCKED_AUTH** · do **not** declare PASS · **NO PAINT** · no Ben ping
+**Status:** `LANDED` · **NO PASS** · **NO PAINT** · no Ben ping
 
-## Retry (this turn)
+## Auth (first 2 minutes)
 
-Ben: try now — Mini Flow should be signed in.
+- Attached live Mini Chrome CDP `http://127.0.0.1:9222` (`Chrome-OrbitStudio`)
+- Account: `benoats@googlemail.com` · ULTRA · **8590** credits
+- No passkey wall · did **not** open a fresh Playwright profile · did **not** use `benoats86`
 
-**Unblock check:** opened Flow as `benoats@googlemail.com` (NOT benoats86).
+Evidence: `07_Edit-Project/_qa_part04_v19_auth/auth_gate_pre_mint.json`
 
-**Result:** passkey challenge still blocks googlemail (`Verifying it's you…` / `Complete sign-in using your passkey`).
-Live `flow.google.com/u/1` session is **forbidden** `benoats86@gmail.com` with **50 credits** — must not mint there.
+## Parent FAIL
 
-**Action:** **STOP_TO_COS BLOCKED_AUTH only.** Did not paint. Did not temporal-median. Did not brightness-motion. Did not mint.
+- `hos_002_part04_rough_v18.mp4`
+- sha256 `05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5`
+- UAT: publish continuous playback horizontal ghost (paint fallback)
 
-Evidence:
-- `07_Edit-Project/_qa_part04_v19_auth/cdp_retry_0_after_googlemail.png`
-- `07_Edit-Project/_qa_part04_v19_auth/cdp_u1_click_1.png` (86 @ 50 credits)
-- `07_Edit-Project/_qa_part04_v19_auth/STOP_TO_COS_BLOCKED_AUTH.json`
-- Meta: `part04_mint_flow_v19_meta.json` → `status: STOP_TO_COS_BLOCKED_AUTH`
+## Reminted Flow Ultra gallery mp4 only
 
-## Why (parent FAIL)
+| Plate | Flow project | bytes | ghost peak | sha256 |
+|---|---|---:|---:|---|
+| `11_publish_gaps` | [98a27639…](https://flow.google.com/project/98a27639-100d-4997-9272-739952ae57bc) | 1018384 | 0.432 | `d77c7c8540beab760f8fd534d7b11c4584c628ecb0d738d9da53bbc3b5917619` |
+| `11b_wait_and_hunt` | [e61f2c1c…](https://flow.google.com/project/e61f2c1c-8c1e-46fd-9db6-64d80a83025a) | 996384 | 0.485 | `570f6a0b51a0c57cafed17beeea8f30204c3523bdfa0f4d9815d245348f12791` |
+| `06_explorer_leaves_gap` | [790bcd17…](https://flow.google.com/project/790bcd17-f71b-4a62-942a-bc33e68073cf) | 1521979 | 0.328 | `7ebc1135bd8d2557beb2140459039d7a132f381c992b92d22e22d800d5d58886` |
 
-Parent FAIL `hos_002_part04_rough_v18.mp4` sha `05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5`.
-UAT HARD FAIL bible `43d9405`: PUBLISH continuous playback horizontal ghost/jitter (paint fallback caused it).
+Model: **Veo 3.1 - Fast**. Harvest: CDP open generated-video thumb → Download media → 720p (no paint / no temporal-median / no brightness-motion).
 
-Remint required **Flow Ultra real gallery mp4 only** for:
+## KEEP (assemble)
 
-| Plate | Intent |
-|---|---|
-| `11_publish_gaps` | single-exposure desk · no horizontal ghost |
-| `11b_wait_and_hunt` | same · grid holes |
-| `06_explorer_leaves_gap` | lamp banding + garbled cards fix · KEEP back-view hair |
+- plate `10_family_before_weight` from v18
+- CLEAN LIGHT `09` / `09b` from v15
+- written cards ~40 family keep path unchanged
 
-KEEP (assemble): plate `10` · CLEAN LIGHT `09`/`09b` · written cards ~40.
+## Delivered
 
-## Scaffold ready (reuse when auth clears)
+- `09_Final-Export/hos_002_part04_rough_v19.mp4`
+  - sha256 `69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf`
+  - duration **127.760 s** · size **80789230 B**
+- iCloud: `HOS UAT/hos_002_part04_rough_v19.mp4`
+- Land meta: `07_Edit-Project/part04_rough_v19_land_meta.json`
+- Mint meta: `07_Edit-Project/part04_mint_flow_v19_meta.json`
+- Watch note: `HOS UAT/WATCH_part04_v19.txt`
 
-- `_prep_part04_v19_start_frames.py` + starts under `04_Generated-Clips/part04/refs/v19_start_frames/`
-- `_mint_part04_flow_v19.py` — Flow I2V + gallery harvest · ghost/MAD reject · **no paint path**
-- `_assemble_part04_rough_v19.py` — remint 06/11/11b from `v19_fast` · keep family from v18
-- FAIL refs: `07_Edit-Project/_qa_part04_v19_fail_refs/`
+## QA notes (not a PASS)
 
-## CoS unblock
+- Publish scrub ≥5 mid frames on assembled rough: see `_qa_part04_v19_flow/rough_v19_publish_scrub.json`
+- Plate ghost peaks all < 0.52 gate used during mint
+- Scores → CoS. Do **not** declare PASS. Do **not** ping Ben.
 
-1. On Mini, approve passkey for `benoats@googlemail.com` until Flow shows googlemail + ~8k–10k credits (not 50 / not benoats86).
-2. Re-run:
-   ```bash
-   HOS_V19_MAX_CREATES=3 python3 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_mint_part04_flow_v19.py
-   python3 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_assemble_part04_rough_v19.py
-   ```
-3. QA: publish mid-plate ≥5 frames continuous (no ghosts) · explorer ~46–53 lamp/cards clean · scalp blot stays cleared.
-
-## Not delivered (blocked)
-
-- `hos_002_part04_rough_v19.mp4`
-- iCloud HOS UAT copy
-- Flow job ids / plate sha256 for 06/11/11b
-
-Parts 01–03 LOCKED. Scores → CoS. No Ben ping from this agent.
+Parts 01–03 LOCKED.

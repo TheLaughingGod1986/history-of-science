@@ -13,6 +13,8 @@ If harvest empty / MAD-high doubles → reject + retry. STOP to CoS only after r
 Flow: benoats@googlemail.com (credits confirmed 8000+). Scores → CoS. No PASS. No Ben ping.
 """
 from __future__ import annotations
+import faulthandler
+faulthandler.enable()
 
 import hashlib
 import json
@@ -556,4 +558,10 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except BaseException as e:
+        import traceback
+        traceback.print_exc()
+        print(f"FATAL: {type(e).__name__}: {e}", flush=True)
+        raise
