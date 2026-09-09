@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
-"""Submit one Part04 v19 I2V create on live CDP; return project URL. No long wait."""
+"""Submit one Part04 v20 I2V create on live CDP; return project URL. No long wait."""
 from __future__ import annotations
-import argparse, json, os, sys, time
+
+import argparse
+import json
+import os
+import sys
+import time
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 REPO = Path(__file__).resolve().parents[3]
@@ -11,20 +17,18 @@ import orbit_flow_veo_ui as flow
 
 flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/")
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-STARTS = Path(__file__).resolve().parents[1] / "04_Generated-Clips/part04/refs/v19_start_frames"
+STARTS = Path(__file__).resolve().parents[1] / "04_Generated-Clips/part04/refs/v20_start_frames"
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 
-# Import prompts from mint module
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import importlib.util
-spec = importlib.util.spec_from_file_location("mint", Path(__file__).resolve().parent / "_mint_part04_flow_v19.py")
-mint = importlib.util.module_from_spec(spec)
-# Avoid running mint main: load source and exec only constants/prompts
-src = (Path(__file__).resolve().parent / "_mint_part04_flow_v19.py").read_text()
-# crude extract PROMPTS dict via exec of prefix
-ns = {}
-exec(compile("\n".join(src.split("def sha256")[0].splitlines()), "mint_prefix", "exec"), ns)
-PROMPTS = ns["PROMPTS"]
+# Load prompts from mint without importing Path(__file__) side effects
+_mint = (Path(__file__).resolve().parent / "_mint_part04_flow_v20.py").read_text()
+import re
+_m = re.search(r"(STYLE = [\s\S]*?PROMPTS = \{[\s\S]*?\n\})\n\n\ndef ", _mint)
+if not _m:
+    raise SystemExit("could not extract PROMPTS from mint")
+_ns: dict = {}
+exec(_m.group(1), _ns)
+PROMPTS = _ns["PROMPTS"]
 
 
 def main() -> None:
@@ -32,7 +36,7 @@ def main() -> None:
     ap.add_argument("--plate", required=True)
     ap.add_argument("--out-json", type=Path, required=True)
     args = ap.parse_args()
-    start = STARTS / f"{args.plate}_start_v19.jpg"
+    start = STARTS / f"{args.plate}_start_v20.jpg"
     if not start.exists():
         raise SystemExit(f"missing {start}")
     prompt = PROMPTS[args.plate]
@@ -50,22 +54,18 @@ def main() -> None:
         if page is None:
             page = browser.contexts[0].new_page()
         page.bring_to_front()
-        # Always start from home to avoid stale project state
         page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120000)
         time.sleep(2)
-        try:
-            page.get_by_role("button", name="Agree").click(timeout=2000)
-        except Exception:
-            pass
+        for name in ("Agree", "Got it", "Accept all"):
+            try:
+                page.get_by_role("button", name=name).first.click(timeout=1500)
+            except Exception:
+                pass
 
-        # Monkeypatch wait: stop soon after submit by wrapping generate_clip timeout tiny
-        # Better: call lower-level create once without waiting for media
-        # Use generate_clip with timeout_s small AFTER submit by patching wait helper if needed.
-        # Practical approach: call generate_clip with timeout_s=45 — it should submit then return gallery-pending.
-        tmp = Path("/tmp") / f"hos_v19_{args.plate}_stub.mp4"
+        tmp = Path("/tmp") / f"hos_v20_{args.plate}_stub.mp4"
         if tmp.exists():
             tmp.unlink()
-        info = {}
+        info: dict = {}
         try:
             info = flow.generate_clip(
                 page,
@@ -73,19 +73,24 @@ def main() -> None:
                 tmp,
                 model=MODEL,
                 start_frame=start,
-                timeout_s=45,  # force early return after submit / early poll
+                timeout_s=55,
                 attempts=1,
                 scenery_only=True,
             )
         except Exception as e:
-            # Even on timeout, project URL may be pinned
             info = {
                 "error": str(e),
                 "project_url": getattr(page, "_orbit_flow_project_url", None) or (page.url or ""),
             }
             print(f"submit note: {e}", flush=True)
 
-        project_url = (info.get("project_url") or info.get("url") or getattr(page, "_orbit_flow_project_url", None) or page.url or "")
+        project_url = (
+            info.get("project_url")
+            or info.get("url")
+            or getattr(page, "_orbit_flow_project_url", None)
+            or page.url
+            or ""
+        )
         project_url = str(project_url).split("?")[0].rstrip("/")
         out = {
             "plate": args.plate,
