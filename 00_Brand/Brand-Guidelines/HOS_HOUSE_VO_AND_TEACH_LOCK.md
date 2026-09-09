@@ -41,3 +41,4 @@ For 002 Part 04+ (and similar):
 - Bake this into every Showrunner brief from Part 04 onward.
 - Part 03 KEEP / lock path is separate (see film 002 edit status) — do **not** rewrite shipped P03 VO for this note unless Ben asks.
 - Every cut still runs the standing UAT ALWAYS set in `HOS_UAT_BIBLE_HOUSE_LOCK.md` (consistency · VO visual explainer · Explorer round glasses · lamp clean warm glow · readable cards / no garbled element cards · Explorer face/hair finished · no lamp lava drip · late-shot sharp with no horizontal ghosts — continuous playback · finished 3D cartoon quality / no unfinished flat).
+- Studio mint process for P04+ remints / briefs: `HOS_STUDIO_PLATE_LIBRARY_LOCK.md` (plate-library · continuous plate UAT before assemble · Flow-only on Empty Chairs / late desks / Explorer). Does not change this VO/teach lock.
