@@ -1,0 +1,16 @@
+{
+  "out": "../04_Generated-Clips/part04/raw/v14_fast/09b_risk_hold_v14.mp4",
+  "sha256": "1be14fe1f86ce769c7207e8f539ebdddf27348b8d46067b3121508dece154c37",
+  "bytes": 4841093,
+  "clean": "../04_Generated-Clips/part04/refs/v14_start_frames/09b_risk_hold_start_v14_clean_glow.jpg",
+  "motion": "../04_Generated-Clips/part04/raw/v14_fast/_rejected/09b_risk_hold_v14_try2_flame.mp4",
+  "method": "clean-chair-lock composite (upper clean start + desk motion)",
+  "crown_hot_qa": {
+    "comp_lock_t0.5.jpg": 0,
+    "comp_lock_t2.0.jpg": 0,
+    "comp_lock_t4.0.jpg": 0,
+    "comp_lock_t6.0.jpg": 0,
+    "comp_lock_t7.5.jpg": 0
+  },
+  "reject": false
+}
