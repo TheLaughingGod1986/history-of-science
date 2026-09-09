@@ -34,6 +34,9 @@ RAW = PROJ / "04_Generated-Clips/part04/raw"
 # try7: leave v10/v12 DNA — those starts still carried scalp pits + molten bulbs.
 DNA = {
     "06": PROJ / "04_Generated-Clips/part01/raw/v01_fast/05_explorer_ore_gas_v01.mp4",
+    # try9: 07/07b KEEP v12/v11 is Ben's A PREDICTION lava + pasted Eka HUD.
+    "07": RAW / "v01_fast/08_prediction_navigation_v01.mp4",
+    "07b": RAW / "v01_fast/08_prediction_navigation_v01.mp4",
     "08": RAW / "v01_fast/08_prediction_navigation_v01.mp4",
     "08b": RAW / "v01_fast/08_prediction_navigation_v01.mp4",
     "09": RAW / "v01_fast/09b_risk_hold_v01.mp4",
@@ -44,8 +47,10 @@ DNA = {
 }
 DNA_T = {
     "06": 2.0,
+    "07": 1.0,
+    "07b": 1.0,
     "08": 1.0,
-    "08b": 3.5,
+    "08b": 1.0,
     "09": 4.0,
     "09b": 6.2,
     "10": 2.5,
@@ -55,6 +60,8 @@ DNA_T = {
 
 REMINT = [
     "06_explorer_leaves_gap",
+    "07_eka_placeholders",
+    "07b_eka_names_rotate",
     "08_prediction_navigation",
     "08b_navigation_walk",
     "09_risk_bet",
@@ -432,25 +439,35 @@ def main() -> None:
         "bible_main": "43d9405",
         "ben_fail_stills": {
             "01_explorer_t048": "06_explorer_leaves_gap",
-            "02_prediction_lava": ["08_prediction_navigation", "08b_navigation_walk"],
+            "02_prediction_lava": [
+                "07_eka_placeholders",
+                "07b_eka_names_rotate",
+                "08_prediction_navigation",
+                "08b_navigation_walk",
+            ],
             "03_t144_unfinished": ["09_risk_bet", "09b_risk_hold"],
             "04_family_first_2d": "10_family_before_weight",
             "05_publish_overhead_2d": ["11_publish_gaps", "11b_wait_and_hunt"],
         },
         "plates": {},
         "method": (
-            "try7 Ben stills: 06=LOCKED Part 01 Explorer 3/4 (finished hair; not v10 pit DNA); "
-            "08/08b=v01 prediction empty-chair CLEAN LIGHT (not v12 molten); "
-            "09/09b=v01 09b empty-chair moon t=4.0/6.2 (solid bulb, not t=1.5 drip); "
-            "10=KEEP hanging F/Na/Mg v20 clip (already 3D); "
-            "11/11b=v01 publish night desk+moon+grid"
+            "try9: 07/07b leave KEEP v11/v12 (flaming N14 + lava drip at A PREDICTION); "
+            "08/08b cardless hidden-bulb I2V from v01 t=1.0; "
+            "11b start = 11 try7 last frame (kill publish xfade ghost); "
+            "06=LOCKED Part 01 Explorer 3/4; 09b try8 keep; 10 keep hanging F/Na/Mg"
         ),
-        "try": "7",
+        "try": "9",
         "remint": REMINT,
         "keep_assemble": ["written cards ~40", "01-05/05b/07/07b locked"],
         "no_paint_on_mp4": True,
     }
     meta["plates"]["06_explorer_leaves_gap"] = str(prep_explorer())
+    meta["plates"]["07_eka_placeholders"] = str(
+        prep_from_clip("07_eka_placeholders", "07")
+    )
+    meta["plates"]["07b_eka_names_rotate"] = str(
+        prep_from_clip("07b_eka_names_rotate", "07b")
+    )
     meta["plates"]["08_prediction_navigation"] = str(
         prep_from_clip("08_prediction_navigation", "08")
     )
