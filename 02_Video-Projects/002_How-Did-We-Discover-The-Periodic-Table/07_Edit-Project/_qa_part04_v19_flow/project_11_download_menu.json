@@ -1,0 +1,22 @@
+[
+  {
+    "t": "download Download media",
+    "role": null
+  },
+  {
+    "t": "fullscreen Full screen",
+    "role": null
+  },
+  {
+    "t": "download Download",
+    "role": null
+  },
+  {
+    "t": "720p\nOriginal size",
+    "role": "menuitem"
+  },
+  {
+    "t": "1080p\nUpscaled",
+    "role": "menuitem"
+  }
+]

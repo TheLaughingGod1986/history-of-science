@@ -207,6 +207,7 @@ def run_harvest(tmp: Path, project_url: str, before_thumbs: int) -> bool:
     env["ORBIT_FLOW_CDP"] = CDP_URL
     env["HOS_FLOW_REQUIRE_CDP"] = "1"
     env["ORBIT_FLOW_HOME"] = flow.FLOW_HOME
+    env["HOS_FLOW_HARVEST_WAIT_S"] = str(max(HARVEST_WAIT_S, 480))
     cmd = [
         sys.executable, str(HARVEST),
         "--project", project_url,
@@ -389,6 +390,8 @@ def mint_one(page, pid: str, meta: dict):
             or (not tmp.exists() or tmp.stat().st_size < 400_000)
         ):
             print(f"  careful harvest from {project_url}", flush=True)
+            print("  waiting 90s for Flow gen before harvest…", flush=True)
+            time.sleep(90)
             # close page noise — harvest uses its own browser
             if run_harvest(tmp, project_url, before_thumbs=max(before, 0)):
                 got = True

@@ -1,33 +1,55 @@
 {
   "engine": "flow-veo-ui",
-  "account_required": "benoats@googlemail.com",
-  "account_forbidden": "benoats86@gmail.com",
+  "account": "benoats@googlemail.com",
+  "forbidden_account": "benoats86@gmail.com",
   "parent_v18_sha": "05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5",
   "bible_main": "43d9405",
   "model": "Veo 3.1 - Fast",
   "plates_requested": [
-    "11_publish_gaps",
-    "11b_wait_and_hunt",
-    "06_explorer_leaves_gap"
+    "11_publish_gaps"
   ],
-  "accepted": {},
+  "accepted": {
+    "11_publish_gaps": {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v19_fast/11_publish_gaps_v19.mp4",
+      "sha256": "d77c7c8540beab760f8fd534d7b11c4584c628ecb0d738d9da53bbc3b5917619",
+      "bytes": 1018384,
+      "engine": "flow-veo-ui-gallery-net",
+      "project_url": "https://flow.google.com/project/98a27639-100d-4997-9272-739952ae57bc",
+      "qa_ghost_peak": 0.432,
+      "updated": "2026-09-09T19:00:57"
+    }
+  },
   "no_paint_fallback": true,
-  "status": "STOP_TO_COS_BLOCKED_AUTH",
-  "updated": "2026-09-09T17:35:16+01:00",
-  "retry_attempt": {
-    "ben_claim": "try now \u2014 Mini Flow should be signed in",
-    "reverify_result": "PASSKEY still required for benoats@googlemail.com; live u/1 is benoats86 @ 50 credits",
-    "evidence": "07_Edit-Project/_qa_part04_v19_auth/cdp_retry_0_after_googlemail.png",
-    "evidence_json": "07_Edit-Project/_qa_part04_v19_auth/STOP_TO_COS_BLOCKED_AUTH.json",
-    "action_taken": "STOP \u2014 no paint, no temporal-median, no brightness-motion, no mint on benoats86"
+  "cdp": "http://127.0.0.1:9222",
+  "flow_home": "https://flow.google.com/",
+  "status": "running",
+  "updated": "2026-09-09T18:47:07",
+  "auth": {
+    "url": "https://flow.google.com/",
+    "email_ok": true,
+    "credits": 8590,
+    "ultra": true,
+    "cdp": "http://127.0.0.1:9222",
+    "passkey": false
   },
-  "blocker": {
-    "type": "BLOCKED_AUTH",
-    "detail": "Selecting benoats@googlemail.com on labs.google/fx/tools/flow \u2192 Google passkey 'Verifying it's you\u2026 / Complete sign-in using your passkey'. Existing flow.google.com/u/1 session is benoats86@gmail.com with 50 credits \u2014 forbidden."
+  "projects": {
+    "11_publish_gaps_try1": "https://flow.google.com/project/98a27639-100d-4997-9272-739952ae57bc"
   },
-  "not_delivered": [
-    "hos_002_part04_rough_v19.mp4",
-    "iCloud HOS UAT copy",
-    "Flow job ids for 06/11/11b"
+  "flow_job_ids": {
+    "11_publish_gaps_try1": {
+      "project_url": "https://flow.google.com/project/98a27639-100d-4997-9272-739952ae57bc",
+      "media_id": "gallery-pending:0",
+      "model": "Veo 3.1 - Fast"
+    }
+  },
+  "harvest_miss": [
+    {
+      "plate": "11_publish_gaps",
+      "create": 1,
+      "project_url": "https://flow.google.com/project/98a27639-100d-4997-9272-739952ae57bc"
+    }
+  ],
+  "exhausted_plates": [
+    "11_publish_gaps"
   ]
 }
