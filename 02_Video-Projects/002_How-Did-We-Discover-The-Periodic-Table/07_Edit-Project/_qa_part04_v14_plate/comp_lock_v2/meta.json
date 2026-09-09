@@ -1,0 +1,12 @@
+{
+  "sha256": "7243f56619512b5819682463544abb7af39000a180a5ee38793bc6ea7b1eca50",
+  "bytes": 3760747,
+  "crown_hot": {
+    "t0.5.jpg": 35,
+    "t2.0.jpg": 35,
+    "t4.0.jpg": 23,
+    "t6.0.jpg": 23,
+    "t7.5.jpg": 22
+  },
+  "reject": false
+}

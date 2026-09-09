@@ -1,0 +1,21 @@
+WATCH THIS FILE ONLY (Part 04 rough v14 — CLEAN GLOW chair remint):
+  hos_002_part04_rough_v14.mp4
+
+CoS / Picture→UAT gates for this cut:
+- Parent FAIL v13 sha 27828f216c289d36… — single blocker CLEAN LIGHT ~105s.
+- UAT named plate 10; picture blocker is 09b_risk_hold (~98–106s under FAMILY FIRST).
+- Reminted ONLY 09b (clean soft rectangular backrest glow, ZERO chair-top flame).
+- KEEP from v13: 04,05,06 Explorer,09,10,05b,07,08,08b,02b,07b (+ all non-09b).
+- Spot ~102–110s: soft panel glow ONLY — NO flame / fire wisp / lamp smoke.
+- Cards readable (H/C/O/N/Li). Indoor wood/bookcase. No blue fills/roofs.
+- Part 01–03 LOCKED. Flow account benoats@googlemail.com.
+- Do NOT declare PASS here. Scores → CoS. No Ben ping.
+
+Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v13_sha=27828f216c289d36aaeae7311c545cdf0fb829381ff110c528cc40008710cd6a
+reminted=09b_risk_hold
+plate09b_picture=98.150-106.050
+sha256=fa62ab22d0f7cbd4f208e5200c9b8b471c23595237b4d7d2dd18e6f47dabad4f
+bytes=96269992
+duration=127.760

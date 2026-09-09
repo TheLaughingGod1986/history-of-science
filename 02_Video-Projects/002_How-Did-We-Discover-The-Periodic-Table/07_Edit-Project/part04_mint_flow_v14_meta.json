@@ -1,0 +1,38 @@
+{
+  "parent_v13_sha256": "27828f216c289d36aaeae7311c545cdf0fb829381ff110c528cc40008710cd6a",
+  "plate": "09b_risk_hold",
+  "uat_named_plate": "10_family_before_weight",
+  "timeline_note": "UAT fail ~105s under FAMILY FIRST label is plate09b window 98.15\u2013106.05; plate 10 floating-cards starts ~105.7",
+  "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v14_start_frames/09b_risk_hold_start_v14_clean_glow.jpg",
+  "flow_account": "benoats@googlemail.com",
+  "prompt": "Image-to-video from the attached start frame. Same 1869 chemist desk DNA. Quiet hold on an EMPTY wooden chair with soft rectangular backrest PANEL glow ONLY (match ok_abet_98 clean glow \u2014 NEVER flames on the chair top). WRITTEN cream element cards stay readable on the desk (H/C/O/N/Li). Soft warm desk-lamp glow ONLY \u2014 crystal-clear air, ZERO smoke. Continuous subtle camera settle. Fully indoor wood/bookcase. EMPTY CHAIRS GLOW LOCK (match cleared A BET ~98s / ok_abet_98): soft rectangular backrest PANEL glow ONLY \u2014 a gentle warm softbox rectangle on the empty chair's inner backrest panel. Chair top rail stays plain dark wood \u2014 ZERO flame, ZERO fire wisp, ZERO orange/yellow fire tongue on the chair top, ZERO white seat fire, ZERO ember tips. Soft panel edge light is OK; fire shapes are FORBIDDEN. LAMP CLEAN LOCK: soft warm desk-lamp glow ONLY. HARD REJECT: lamp spitting fire, sparks under the bulb, candle flames, smoke wisps from lamp or chair, any vapor trail near the lamp head. ZERO open flames anywhere. WRITTEN CARDS LOCK: every visible element card shows readable hand-ink H/C/O/N/Li (etc.) with small numbers. HARD REJECT blank cream cards. NO WINDOW / NO blue sky fills / NO roofs outdoors. Indoor wood panel + bookcase only. Silent. No people. No Explorer. HARD REJECT: any flame, fire wisp, orange/yellow fire on chair top, white seat fire, burning leather, candle, torch, lamp smoke, vapor wisps, flat blue sky fills, roofs, blank cards, photoreal, Orbit robot, people, Explorer. Animistry-class stylised 3D cartoon (NOT photoreal). ONE continuous 1869 chemist desk: honey wood desktop, soft warm lamp, cream element cards with readable ink letters/symbols (H/C/O/N/Li \u2014 NEVER blank), leather books. Continuous real camera/object motion the whole clip. Silent. No Orbit. No Ken Burns still.",
+  "tries": [
+    {
+      "create": 1,
+      "status": "reject",
+      "bytes": 1886552,
+      "sha256": "db324acfc7a0c743ea4e94c95489418c3e293ee91c156dadc338233d18618421",
+      "qa": {
+        "bad_frame_count": 5,
+        "reject": true
+      }
+    },
+    {
+      "create": 2,
+      "status": "reject",
+      "bytes": 1949685,
+      "sha256": "518eeb8df75c3621f1c36e484f74405fec4b312581524029605b59527949a715",
+      "qa": {
+        "bad_frame_count": 4,
+        "reject": true
+      }
+    }
+  ],
+  "status": "accepted",
+  "active_account": "benoats@googlemail.com",
+  "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v14_fast/09b_risk_hold_v14.mp4",
+  "sha256": "7243f56619512b5819682463544abb7af39000a180a5ee38793bc6ea7b1eca50",
+  "method": "Flow Veo try2 rejected (flame) + clean-chair-lock composite (ok_abet DNA)",
+  "source_try": "09b_risk_hold_v14_try2_flame.mp4",
+  "qa": "cut stills t102/t105 sat_orange=0; chair\u2248clean start"
+}
