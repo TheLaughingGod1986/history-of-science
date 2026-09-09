@@ -36,6 +36,7 @@
 1. Flow Ultra (`benoats@googlemail.com`) create started (projects `8b761966-…`, `7aed7e87-…`). Gallery harvest still broken (play response timeout). Edit-download salvage returned an 8s mp4, but frame-diff MAD ~23–26 (heavy Veo motion) vs plate-10 KEEP MAD ~4–5 — rejected for motion-ghost risk.
 2. Gemini API Veo: current Python 3.14 env missing `google.genai`; prior prepaid path was `429 RESOURCE_EXHAUSTED` on v16. No usable Gemini clip this run.
 3. Therefore publish remint used: **opaque per-frame painted continuous motion** from fresh sharp starts (same class of fallback that cleared plate 10 in v16) — explicitly **not** restoring ghosty `v01` DNA and **not** temporal-median deghost.
+4. Later Flow harvest for `11b` only (project `f4df706a-…`, sha `5c0da6e9…`) is archived as `11b_wait_and_hunt_v17.FLOW_TRY_5c0da6e9.mp4`. **Not swapped into rough_v17** — CoS should score mid-plate stills first; wrong burned `FAMILY FIRST` label on that clip vs SIDE_LABELS PUBLISH; ghost risk not cleared. Canonical dest stays painted `315394ce…`.
 
 ## HARD locks enforced
 
