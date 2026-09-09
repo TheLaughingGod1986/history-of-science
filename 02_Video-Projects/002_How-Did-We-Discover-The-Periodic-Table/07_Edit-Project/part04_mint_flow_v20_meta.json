@@ -1,0 +1,27 @@
+{
+  "engine": "flow-veo-ui",
+  "account": "benoats@googlemail.com",
+  "forbidden_account": "benoats86@gmail.com",
+  "parent_v19_sha": "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf",
+  "bible_main": "43d9405",
+  "model": "Veo 3.1 - Fast",
+  "plates_requested": [
+    "11_publish_gaps",
+    "11b_wait_and_hunt",
+    "06_explorer_leaves_gap"
+  ],
+  "accepted": {},
+  "no_paint_fallback": true,
+  "cdp": "http://127.0.0.1:9222",
+  "flow_home": "https://flow.google.com/",
+  "status": "running",
+  "updated": "2026-09-09T19:47:59",
+  "auth": {
+    "url": "https://flow.google.com/",
+    "email_ok": true,
+    "credits": 8560,
+    "ultra": true,
+    "cdp": "http://127.0.0.1:9222",
+    "passkey": false
+  }
+}

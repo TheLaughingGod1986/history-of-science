@@ -1,0 +1,46 @@
+{
+  "parent_v19_sha": "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf",
+  "bible_main": "43d9405",
+  "ben_fail_stills": {
+    "01_explorer_t048": "06_explorer_leaves_gap",
+    "02_prediction_lava": [
+      "08_prediction_navigation",
+      "08b_navigation_walk"
+    ],
+    "03_t144_unfinished": [
+      "09_risk_bet",
+      "09b_risk_hold"
+    ],
+    "04_family_first_2d": "10_family_before_weight",
+    "05_publish_overhead_2d": [
+      "11_publish_gaps",
+      "11b_wait_and_hunt"
+    ]
+  },
+  "plates": {
+    "06_explorer_leaves_gap": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/06_explorer_leaves_gap_start_v20.jpg",
+    "08_prediction_navigation": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/08_prediction_navigation_start_v20.jpg",
+    "08b_navigation_walk": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/08b_navigation_walk_start_v20.jpg",
+    "09_risk_bet": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09_risk_bet_start_v20.jpg",
+    "09b_risk_hold": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+    "10_family_before_weight": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/10_family_before_weight_start_v20.jpg",
+    "11_publish_gaps": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11_publish_gaps_start_v20.jpg",
+    "11b_wait_and_hunt": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11b_wait_and_hunt_start_v20.jpg"
+  },
+  "method": "06=v10 3D back explorer + conservative scalp heal (no collage stamp); 08/08b/09=v12 empty-chair 3D DNA + drip-only lava (NOT failed v19 still); 09b/11/11b=v15 3D desk+moon (not flat overhead); 10=v13 columns 3D desk DNA",
+  "remint": [
+    "06_explorer_leaves_gap",
+    "08_prediction_navigation",
+    "08b_navigation_walk",
+    "09_risk_bet",
+    "09b_risk_hold",
+    "10_family_before_weight",
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "keep_assemble": [
+    "written cards ~40",
+    "01-05/05b/07/07b locked"
+  ],
+  "no_paint_on_mp4": true
+}

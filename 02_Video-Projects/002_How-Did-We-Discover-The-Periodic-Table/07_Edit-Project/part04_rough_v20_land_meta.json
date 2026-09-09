@@ -1,0 +1,46 @@
+{
+  "cut": "hos_002_part04_rough_v20.mp4",
+  "sha256": "46d5187d7689a89ea43570889af00d8f145c7a6591e87cb7aa74657f62cd5da5",
+  "bytes": 83373090,
+  "duration_s": 127.76,
+  "verdict": "SELF_FAIL",
+  "parent_v19_sha256": "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf",
+  "reminted_plates": [
+    "06_explorer_leaves_gap",
+    "09_risk_bet",
+    "09b_risk_hold",
+    "10_family_before_weight",
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "kept_08_08b_from": "v12",
+  "flow_projects_try4": {
+    "06_explorer_leaves_gap": "https://flow.google.com/project/c7587e19-b6fe-4f81-aca7-b450561161fb",
+    "09_risk_bet": "https://flow.google.com/project/2e360c0f-b155-47ff-9396-00d7b0276956",
+    "09b_risk_hold": "https://flow.google.com/project/555bd802-0f3a-433b-aff7-8c0088ffcf16",
+    "10_family_before_weight": "https://flow.google.com/project/6c6777f8-c9b9-4561-a652-3a22087bdb19",
+    "11_publish_gaps": "https://flow.google.com/project/5f65787e-9421-4b1f-b6db-6b5fceceec07",
+    "11b_wait_and_hunt": "https://flow.google.com/project/0b5d1ca7-a8f7-49c5-a9d4-8b1f693723e1"
+  },
+  "flow_models_try4": {
+    "06_explorer_leaves_gap": "Veo 3.1 - Fast",
+    "09_risk_bet": "Veo 3.1 - Fast",
+    "09b_risk_hold": "Veo 3.1 - Fast",
+    "10_family_before_weight": "Veo 3.1 - Fast",
+    "11_publish_gaps": "Veo 3.1 - Fast",
+    "11b_wait_and_hunt": "Veo 3.1 - Quality"
+  },
+  "account": "benoats@googlemail.com",
+  "path": "Flow Ultra CDP :9222 \u2014 NO paint",
+  "self_fail_reasons": [
+    "CLEAN LIGHT FAIL: lamp lava/fire spit still visible ~t100 (09b risk hold)",
+    "FLAT unfinished vector DNA still on publish desk beats (~t117-122)",
+    "Explorer ~t49: horizontal ghosting on cards + unfinished look"
+  ],
+  "evidence_frames": [
+    "07_Edit-Project/_qa_part04_v20_self_fail/rough_v20_t49_0.jpg",
+    "07_Edit-Project/_qa_part04_v20_self_fail/rough_v20_t100_0.jpg",
+    "07_Edit-Project/_qa_part04_v20_self_fail/rough_v20_t117_0.jpg",
+    "07_Edit-Project/_qa_part04_v20_self_fail/rough_v20_t122_0.jpg"
+  ]
+}
