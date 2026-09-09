@@ -1,0 +1,33 @@
+{
+  "out_dir": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v13_start_frames",
+  "starts": {
+    "04_sort_atomic_weight": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v13_start_frames/04_sort_atomic_weight_start_v13.jpg",
+    "05_columns_families": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v13_start_frames/05_columns_families_start_v13.jpg",
+    "09_risk_bet": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v13_start_frames/09_risk_bet_start_v13.jpg",
+    "09b_risk_hold": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v13_start_frames/09b_risk_hold_start_v13.jpg"
+  },
+  "remint_plates": [
+    "04_sort_atomic_weight",
+    "05_columns_families",
+    "09_risk_bet",
+    "09b_risk_hold"
+  ],
+  "keep": [
+    "06_explorer_leaves_gap",
+    "05b_families_settle",
+    "07_eka_placeholders",
+    "08_prediction_navigation",
+    "08b_navigation_walk",
+    "10_family_before_weight",
+    "02b_cards_sixty_three",
+    "P01-P03"
+  ],
+  "locks": [
+    "lamp_clean_no_fire_sparks_smoke",
+    "cards_have_writing_H_C_O_N_Eka",
+    "soft_chair_glow_not_fire",
+    "indoor_wood_bookcase_prefer"
+  ],
+  "parent_fail": "hos_002_part04_rough_v12.mp4",
+  "parent_sha": "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2"
+}
