@@ -105,7 +105,7 @@ LAMP_CLEAN_LOCK = (
     "taper candle, wax candle, fire particles, ember trails, flaming props, "
     "leather chair on fire, flames in leather cushions, smoke wisps from lamp or chair. "
     "ZERO open flames anywhere — no wax candle, no taper, no tealight, no Bunsen, no spirit lamp, "
-    "no fire behind cards, no orange flame tips, no chair fire. Soft Empty-Chairs chair glow OK (NOT fire). The bulb is a calm warm glow — never fire. FULL thick messy wavy chestnut hair covering the ENTIRE crown every frame (NO bald spot, NO tonsure, NO monk ring). "
+    "no fire behind cards, no orange flame tips, no chair fire. Soft Empty-Chairs chair glow OK (NOT fire). The bulb is a calm warm glow — never fire. ABSOLUTELY NO open flame anywhere CARDS NEVER ON FIRE Empty-Chairs seat glow must be SOFT cool-white aura only — like moonlight on wood — NEVER yellow/orange fire, NEVER flames in leather, NEVER smoke rising from the chair.: ink on paper only — no burning letters, no ember cards, no flames rising from cards.: no Bunsen, no spirit lamp, no candle in glass tube, no burning bowl, no incense smoke, no white smoke plume, no ember on cards, no glowing letter fire.  FULL thick messy wavy chestnut hair covering the ENTIRE crown every frame (NO bald spot, NO tonsure, NO monk ring). "
     "CRITICAL: do NOT place any lit burner, spirit lamp, alcohol lamp, or glass vessel with a flame behind the element cards. Replace any flame-looking prop with a CLOSED brown ink bottle or sealed flask with NO fire."
 )
 
@@ -212,7 +212,7 @@ PROMPTS = {
         + REJECT + " " + STYLE
     ),
     "07_eka_placeholders": (
-        "Image-to-video from the attached start frame. Same 1869 desk DNA. Two or three "
+        "CRITICAL CLEAN LIGHT: warm desk-lamp glow ONLY. ZERO sparks under the bulb, ZERO candle flames, ZERO flame in any glass tube, ZERO ember rings on cards, ZERO smoke wisps, ZERO fire particles. Soft Empty-Chairs glow on chair is NOT fire. Image-to-video from the attached start frame. Same 1869 desk DNA. Two or three "
         "soft glowing empty card-slots / vacant seats among WRITTEN cream element cards "
         "(readable Eka-/H/C/O marks on neighboring cards — NEVER blank stacks). Soft "
         "warm desk-lamp glow ONLY — no fire spit, no candle, no chair fire, no plasma "

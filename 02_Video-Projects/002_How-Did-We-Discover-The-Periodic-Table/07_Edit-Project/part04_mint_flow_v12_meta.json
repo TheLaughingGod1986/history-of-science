@@ -1,0 +1,275 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v12_fast",
+  "continuity": "v12_clean_light_glasses_lamp_cards",
+  "parent_v11_sha": "96a0f41e53987e090e5eee6af29d3abda8de3c30b326584193c10847d1ebd739",
+  "start_frame_06": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v12_start_frames/05b_families_settle_start_v12.jpg",
+  "dna_refs": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_dna/character_sheet.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_dna/germs_lock.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v11_dna/p03_keep.jpg"
+  ],
+  "locks": [
+    "NO_HAT",
+    "fair_warm_skin",
+    "dark_teal_coat",
+    "toy_scale_garnish",
+    "profile_or_back_pose",
+    "glasses_always_visible",
+    "lamp_clean_no_fire",
+    "written_element_cards"
+  ],
+  "max_creates": 2,
+  "only": [
+    "07_eka_placeholders"
+  ],
+  "plates": [
+    {
+      "id": "07_eka_placeholders",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v12_fast/07_eka_placeholders_v12.mp4",
+      "duration": 8.0,
+      "kind": "T2V",
+      "create_try": 1,
+      "roof_check": {
+        "tag": "07_eka_placeholders_try1",
+        "clip": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v12_fast/07_eka_placeholders_v12.try1.tmp.mp4",
+        "stills": [
+          "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t0.jpg",
+          "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t1.jpg",
+          "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t2.jpg",
+          "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t3.jpg",
+          "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t4.jpg",
+          "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t5.jpg",
+          "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t6.jpg",
+          "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t7.jpg",
+          "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t8.jpg"
+        ],
+        "scores": [
+          {
+            "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t0.jpg",
+            "navy_frac": 0.0006,
+            "warm_frac": 0.0,
+            "dark_frac": 0.2998,
+            "navy_var": 137.78,
+            "box_navy_frac": 0.0002,
+            "box_var": 165.76,
+            "hard_fill": false,
+            "roof_town": false,
+            "suspect": false
+          },
+          {
+            "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t1.jpg",
+            "navy_frac": 0.0003,
+            "warm_frac": 0.0,
+            "dark_frac": 0.284,
+            "navy_var": 0.0,
+            "box_navy_frac": 0.0001,
+            "box_var": 167.99,
+            "hard_fill": false,
+            "roof_town": false,
+            "suspect": false
+          },
+          {
+            "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t2.jpg",
+            "navy_frac": 0.0,
+            "warm_frac": 0.0,
+            "dark_frac": 0.2459,
+            "navy_var": 0.0,
+            "box_navy_frac": 0.0,
+            "box_var": 48.06,
+            "hard_fill": false,
+            "roof_town": false,
+            "suspect": false
+          },
+          {
+            "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t3.jpg",
+            "navy_frac": 0.0,
+            "warm_frac": 0.0,
+            "dark_frac": 0.1924,
+            "navy_var": 0.0,
+            "box_navy_frac": 0.0001,
+            "box_var": 147.4,
+            "hard_fill": false,
+            "roof_town": false,
+            "suspect": false
+          },
+          {
+            "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t4.jpg",
+            "navy_frac": 0.0001,
+            "warm_frac": 0.0,
+            "dark_frac": 0.1846,
+            "navy_var": 0.0,
+            "box_navy_frac": 0.0001,
+            "box_var": 136.26,
+            "hard_fill": false,
+            "roof_town": false,
+            "suspect": false
+          },
+          {
+            "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t5.jpg",
+            "navy_frac": 0.0001,
+            "warm_frac": 0.0,
+            "dark_frac": 0.1766,
+            "navy_var": 0.0,
+            "box_navy_frac": 0.0001,
+            "box_var": 35.41,
+            "hard_fill": false,
+            "roof_town": false,
+            "suspect": false
+          },
+          {
+            "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t6.jpg",
+            "navy_frac": 0.0,
+            "warm_frac": 0.0,
+            "dark_frac": 0.172,
+            "navy_var": 0.0,
+            "box_navy_frac": 0.0,
+            "box_var": 236.34,
+            "hard_fill": false,
+            "roof_town": false,
+            "suspect": false
+          },
+          {
+            "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t7.jpg",
+            "navy_frac": 0.0003,
+            "warm_frac": 0.0,
+            "dark_frac": 0.1775,
+            "navy_var": 0.0,
+            "box_navy_frac": 0.0005,
+            "box_var": 80.22,
+            "hard_fill": false,
+            "roof_town": false,
+            "suspect": false
+          },
+          {
+            "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v12_plate/07_eka_placeholders_try1_t8.jpg",
+            "navy_frac": 0.0002,
+            "warm_frac": 0.0,
+            "dark_frac": 0.1765,
+            "navy_var": 0.0,
+            "box_navy_frac": 0.0004,
+            "box_var": 20.78,
+            "hard_fill": false,
+            "roof_town": false,
+            "suspect": false
+          }
+        ],
+        "suspect_count": 0,
+        "hard_fill_count": 0,
+        "roof_count": 0,
+        "roof_readable": false,
+        "hard_fill_or_roof": false,
+        "window_or_roof_readable": false
+      },
+      "hat_colour_check": {
+        "hat_reject": false,
+        "colour_reject": false,
+        "reject": false,
+        "hat_count": 0,
+        "colour_bad_count": 0,
+        "skipped": "non_explorer_plate"
+      },
+      "seconds": 51.2,
+      "bytes": 2561836,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:2561836",
+      "url": "https://flow.google.com/u/1/project/fcb21213-38ca-4084-929c-024a9e0d0890",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/fcb21213-38ca-4084-929c-024a9e0d0890"
+    }
+  ],
+  "tries": [
+    {
+      "id": "07_eka_placeholders",
+      "create": 1,
+      "status": "ok_pending_qa",
+      "out_tmp": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v12_fast/07_eka_placeholders_v12.try1.tmp.mp4",
+      "duration": 8.0,
+      "bytes": 4439673,
+      "roof_check": {
+        "suspect_count": 0,
+        "roof_readable": false
+      },
+      "candle_check": {
+        "candle_frame_count": 0,
+        "reject": false
+      },
+      "hat_colour": {
+        "hat_count": 0,
+        "colour_bad_count": 0,
+        "reject": false
+      },
+      "face_hero": false,
+      "seconds": 51.6,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:4439673",
+      "url": "https://flow.google.com/u/1/project/052add54-d454-4d5c-9eb7-184409305118",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/052add54-d454-4d5c-9eb7-184409305118"
+    },
+    {
+      "id": "07_eka_placeholders",
+      "create": 1,
+      "status": "ok_pending_qa",
+      "out_tmp": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v12_fast/07_eka_placeholders_v12.try1.tmp.mp4",
+      "duration": 8.0,
+      "bytes": 2561836,
+      "roof_check": {
+        "suspect_count": 0,
+        "roof_readable": false
+      },
+      "candle_check": {
+        "candle_frame_count": 0,
+        "reject": false
+      },
+      "hat_colour": {
+        "hat_count": 0,
+        "colour_bad_count": 0,
+        "reject": false
+      },
+      "face_hero": false,
+      "seconds": 51.2,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:2561836",
+      "url": "https://flow.google.com/u/1/project/fcb21213-38ca-4084-929c-024a9e0d0890",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/fcb21213-38ca-4084-929c-024a9e0d0890"
+    },
+    {
+      "id": "07_eka_placeholders",
+      "create": 1,
+      "status": "fail_pre_submit",
+      "error": "Flow never enabled Add to Prompt after start-frame upload",
+      "create_death": null
+    },
+    {
+      "id": "07_eka_placeholders",
+      "create": 1,
+      "status": "fail_pre_submit",
+      "error": "Page.evaluate: Execution context was destroyed, most likely because of a navigation",
+      "create_death": null
+    }
+  ],
+  "flow_account": "benoats@googlemail.com"
+}
