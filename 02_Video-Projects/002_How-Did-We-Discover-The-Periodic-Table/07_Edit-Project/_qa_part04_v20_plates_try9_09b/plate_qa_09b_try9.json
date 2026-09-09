@@ -1,0 +1,49 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 9,
+  "variant": "9B_best_of_9A_9B_9C",
+  "decision": "SELF_REJECT_LAVA_DRIP",
+  "sha256": "17b025037cc82bc5622757c6c12891a4b380b36c8fc92dd86c37410d8e59226f",
+  "path_repo": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try9.mp4",
+  "path_icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try9/09b_risk_hold_v20_try9.mp4",
+  "model": "Veo 3.1 - Fast",
+  "auth": "Mini CDP ULTRA benoats@googlemail.com",
+  "paint": "banned",
+  "start_dna": "v01 empty-chair moon cardless t\u22480.2 (sha 7d7563a3\u2026) \u2014 NOT try8 KEEP cf182dc drip-baked; NOT flat 2a651abc",
+  "flats": "PASS \u2014 cardless desk; soft Empty Chairs optional/absent OK; no H/C/O/N flats",
+  "clean_light": "FAIL \u2014 molten bead / lava drip under lamp shade still visible across continuous mids (improved vs try8/9A heuristically but visual FAIL)",
+  "attempts": {
+    "9A": {
+      "sha": "788e9d670c1be39a188351c18ba1199f0f19a639d63c5869c063962a5b0159c5",
+      "project": "https://flow.google.com/project/b3971cf7-dc46-4f9a-8e61-eb8286bd881a",
+      "drip_median": 4159,
+      "reject": "SELF_REJECT_LAVA_DRIP"
+    },
+    "9B": {
+      "sha": "17b025037cc82bc5622757c6c12891a4b380b36c8fc92dd86c37410d8e59226f",
+      "project": "https://flow.google.com/project/167948bb-bb9c-4170-a6e9-814a805ad7e8",
+      "drip_median": 31.5,
+      "reject": "SELF_REJECT_LAVA_DRIP (subtle but visual bead remains)"
+    },
+    "9C": {
+      "sha": "a9859c82c61846515857c5913150826e65931c56d9aef728f5688c5cdbad96e3",
+      "project": "https://flow.google.com/project/0752a813-f8f9-40cb-8f56-1378cdc767be",
+      "drip_median": 2257.5,
+      "reject": "SELF_REJECT_LAVA_DRIP"
+    }
+  },
+  "contact_continuous": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try9/09b_risk_hold_contact_continuous.jpg",
+  "contact_grid": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try9/09b_risk_hold_contact_grid.jpg",
+  "mids": [
+    "0.8",
+    "1.8",
+    "2.8",
+    "3.8",
+    "4.8",
+    "5.8",
+    "6.8",
+    "7.3"
+  ],
+  "assemble": "NO",
+  "other_plates": "NO"
+}
