@@ -111,7 +111,7 @@ WRITTEN_CARDS_LOCK = (
     "readable hand-ink letters/symbols/numbers — H, C, O, N, Li, Be, and/or Eka- marks. "
     "Stack edges look like paper layers with marks visible on the tops. "
     "Foreground hero cards MUST have readable writing. "
-    "HARD REJECT blank white/cream card stacks, blank stack tops, blank outer tops, "
+    "Every stack TOP on the desk — including the left stack under the lamp — must show ink marks. HARD REJECT blank white/cream card stacks, blank stack tops, blank outer tops, "
     "blank flat cards, blank hero cards, empty card faces."
 )
 
@@ -207,7 +207,7 @@ PROMPTS = {
         "Image-to-video from the attached start frame. Same 1869 desk DNA. "
         "CRITICAL EMPTY CHAIRS GLOW: soft rectangular backrest glow / vacant-seat light ONLY — "
         "NEVER flames, NEVER white fire cluster in the seat, NEVER leather chair on fire, "
-        "NEVER smoke wisps from lamp. Foreground hero cream cards MUST show readable "
+        "NEVER smoke wisps from lamp. EVERY card face and EVERY stack TOP (including left lamp-side stack) MUST show readable "
         "H/C/O/N/Li ink marks — NEVER blank cream foreground cards. Soft warm desk-lamp "
         "glow ONLY. Continuous subtle camera drift. Fully indoor wood/bookcase. "
         f"{LAMP_CLEAN_LOCK} {WRITTEN_CARDS_LOCK} {WINDOW_LOCK} {DESK_PROP_LOCK} "
@@ -215,17 +215,22 @@ PROMPTS = {
         + REJECT + " " + STYLE
     ),
     "09b_risk_hold": (
-        "Image-to-video from the attached start frame. Same 1869 desk DNA. Soft glowing "
-        "vacant chair holds frame — Empty Chairs glow = soft rectangular backrest / "
-        "vacant-seat light ONLY. HARD REJECT white flames in seat, white fire cluster, "
-        "leather engulfed in fire, smoke wisps from lamp. WRITTEN cream element cards "
-        "(readable H/C/O/N/Li on every face and stack top) stay on desk — NEVER blank. "
-        "Soft warm desk-lamp glow ONLY. Continuous subtle hold. Fully indoor wood/bookcase. "
+        "Image-to-video from the attached start frame. Same 1869 desk DNA. Quiet hold on an "
+        "EMPTY dark wooden chair with a DARK leather backrest — NO glow, NO light panel, "
+        "NO halo, NO fire on the chair. Seat cushion stays dark brown empty leather. "
+        "Warm brass desk lamp only — crystal clear air, ZERO smoke or wisps. "
+        "EVERY cream card face AND every stack TOP (including the left lamp-side stack) shows clear readable black ink H C O N Li Be and numbers — NEVER a blank top. "
+        "Indoor wood bookcase study. Soft slow camera settle. "
+        "If any Empty Chairs cue appears, it must be an extremely dim soft amber rectangle "
+        "on the backrest only — never bright, never white, never flame-shaped, never flickering. "
+        "ABSOLUTE BAN: flames, fire, white-fire, orange fire edges, flame halo, candle, torch, "
+        "burning chair, seat fire, lamp smoke, wisps, vapor, steam, fog, haze, embers, sparks. "
         f"{LAMP_CLEAN_LOCK} {WRITTEN_CARDS_LOCK} {WINDOW_LOCK} {DESK_PROP_LOCK} "
         "Silent. No people. No Explorer. "
         + REJECT + " " + STYLE
     ),
 }
+
 
 
 
@@ -1031,6 +1036,91 @@ def still_check_candle(clip: Path, tag: str, *, auto_reject: bool = False) -> di
     return report
 
 
+
+def chair_fire_smoke_suspect(still: Path) -> dict:
+    """HARD reject: white seat/backrest fire cluster or pale lamp smoke wisps."""
+    im = Image.open(still).convert("RGB")
+    w, h = im.size
+    pix = im.load()
+    sx0, sx1 = int(w * 0.36), int(w * 0.64)
+    sy0, sy1 = int(h * 0.50), int(h * 0.80)
+    seat_white = 0
+    seat_n = 0
+    for y in range(sy0, sy1, 2):
+        for x in range(sx0, sx1, 2):
+            seat_n += 1
+            r, g, b = pix[x, y]
+            if r >= 248 and g >= 240 and b >= 210:
+                seat_white += 1
+            elif r >= 252 and g >= 230 and b >= 160 and (r + g + b) / 3 >= 235:
+                seat_white += 1
+    seat_white_pct = 100.0 * seat_white / max(seat_n, 1)
+
+    bx0, bx1 = int(w * 0.40), int(w * 0.60)
+    by0, by1 = int(h * 0.14), int(h * 0.46)
+    back_white = 0
+    back_hot = 0
+    back_n = 0
+    for y in range(by0, by1, 2):
+        for x in range(bx0, bx1, 2):
+            back_n += 1
+            r, g, b = pix[x, y]
+            if r >= 252 and g >= 252 and b >= 245:
+                back_white += 1
+            if r >= 250 and g >= 235 and b <= 160 and (r - b) >= 90:
+                back_hot += 1
+    back_white_pct = 100.0 * back_white / max(back_n, 1)
+    back_hot_pct = 100.0 * back_hot / max(back_n, 1)
+
+    smoke = 0
+    smoke_n = 0
+    for y in range(int(h * 0.04), int(h * 0.52), 2):
+        for x in range(int(w * 0.10), int(w * 0.58), 2):
+            if x < int(w * 0.24) and y < int(h * 0.30):
+                continue
+            smoke_n += 1
+            r, g, b = pix[x, y]
+            avg = (r + g + b) / 3.0
+            sat = max(r, g, b) - min(r, g, b)
+            if 145 <= avg <= 235 and sat <= 30:
+                smoke += 1
+    smoke_pct = 100.0 * smoke / max(smoke_n, 1)
+
+    fire = seat_white_pct >= 1.2 or back_white_pct >= 1.5 or back_hot_pct >= 1.2
+    smoke_hit = smoke_pct >= 2.5
+    return {
+        "still": str(still),
+        "seat_white_pct": round(seat_white_pct, 2),
+        "back_white_pct": round(back_white_pct, 2),
+        "back_hot_pct": round(back_hot_pct, 2),
+        "smoke_pct": round(smoke_pct, 2),
+        "fire": fire,
+        "smoke": smoke_hit,
+        "reject": bool(fire or smoke_hit),
+    }
+
+
+def still_check_chair_fire_smoke(clip: Path, tag: str, *, auto_reject: bool = True) -> dict:
+    """Auto-reject white chair fire / lamp smoke on Empty Chairs plates."""
+    stills = extract_stills(clip, QA_STILLS, f"{tag}_firesmoke")
+    scores = [chair_fire_smoke_suspect(p) for p in stills]
+    bad = [s for s in scores if s["reject"]]
+    report = {
+        "tag": tag,
+        "clip": str(clip),
+        "scores": scores,
+        "bad_frame_count": len(bad),
+        "reject": bool(auto_reject and len(bad) >= 2),
+        "auto_reject": auto_reject,
+    }
+    (QA_STILLS / f"{tag}_firesmoke_check.json").write_text(json.dumps(report, indent=2) + "\n")
+    print(
+        f"  fire/smoke-check {tag}: bad_frames={len(bad)}/9 reject={report['reject']}",
+        flush=True,
+    )
+    return report
+
+
 def _truthy(name: str) -> bool:
     return os.environ.get(name, "").strip().lower() in {"1", "true", "yes", "on"}
 
@@ -1307,6 +1397,10 @@ def main() -> None:
                     ccheck = still_check_candle(
                         tmp, tag, auto_reject=(pid == "06_explorer_leaves_gap")
                     )
+                    if pid in {"09_risk_bet", "09b_risk_hold"}:
+                        fcheck = still_check_chair_fire_smoke(tmp, tag, auto_reject=True)
+                    else:
+                        fcheck = {"reject": False, "bad_frame_count": 0, "skipped": True}
                     # Garnish / face-hero checks are Explorer-only (desk plates have teal vessels)
                     if pid == "06_explorer_leaves_gap":
                         gcheck = still_check_garnish(tmp, tag)
@@ -1361,6 +1455,8 @@ def main() -> None:
                         reject_reasons.append("hardfill_or_roof")
                     if ccheck.get("reject"):
                         reject_reasons.append("candle_fire")  # advisory path; still_check_candle.reject is False
+                    if fcheck.get("reject"):
+                        reject_reasons.append("chair_fire_or_lamp_smoke")
                     if gcheck.get("auto_reject"):
                         reject_reasons.append("faceon_hero")
                     if hcheck.get("hat_reject"):

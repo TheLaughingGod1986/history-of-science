@@ -1,0 +1,31 @@
+{
+  "cut": "hos_002_part04_rough_v13.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v13.mp4",
+  "bytes": 87327620,
+  "duration_s": 127.76,
+  "sha256": "27828f216c289d36aaeae7311c545cdf0fb829381ff110c528cc40008710cd6a",
+  "parent_v12": "hos_002_part04_rough_v12.mp4",
+  "parent_v12_sha256": "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2",
+  "reminted_plates": [
+    "04_sort_atomic_weight",
+    "05_columns_families",
+    "09_risk_bet",
+    "09b_risk_hold"
+  ],
+  "kept_plates": [
+    "06_explorer_leaves_gap",
+    "05b_families_settle",
+    "07_eka_placeholders",
+    "07b_eka_names_rotate",
+    "08_prediction_navigation",
+    "08b_navigation_walk",
+    "10_family_before_weight",
+    "02b_cards_sixty_three"
+  ],
+  "method": "Flow Veo 3.1 Fast I2V remint CLEAN LIGHT + WRITTEN CARDS; 09/09b dense stack-top ink stamp post on clean-light takes",
+  "flow_account": "benoats@googlemail.com",
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v13.mp4",
+  "cut_qa_stills": ["t40", "t42", "t98", "t102", "t105"],
+  "status": "LANDED_FOR_UAT — do not declare PASS; scores → CoS; no Ben ping",
+  "updated_at": "2026-09-09T05:22:00+0100"
+}
