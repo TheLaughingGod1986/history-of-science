@@ -6,6 +6,7 @@ Prefer --edit URL (media edit page). Else open --project, filter Videos, open ne
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import shutil
 import subprocess
@@ -212,9 +213,9 @@ def main() -> None:
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as p:
-        ctx, page = flow.launch_context(
-            p, headed=True, profile=flow.profile_path(PROFILE)
-        )
+        browser = p.chromium.connect_over_cdp(os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222"))
+        ctx = browser.contexts[0]
+        page = ctx.new_page()
         # Block social pollution that previously stole the harvest.
         try:
             ctx.route(
@@ -310,7 +311,7 @@ def main() -> None:
             raise SystemExit(2)
         finally:
             try:
-                ctx.close()
+                page.close()
             except Exception:
                 pass
 

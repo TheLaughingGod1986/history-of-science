@@ -68,11 +68,13 @@ def main() -> None:
     dest = args.dest
 
     from playwright.sync_api import sync_playwright
+    import os
 
+    cdp = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
     with sync_playwright() as p:
-        ctx, page = flow.launch_context(
-            p, headed=True, profile=flow.profile_path(PROFILE)
-        )
+        browser = p.chromium.connect_over_cdp(cdp)
+        ctx = browser.contexts[0]
+        page = ctx.new_page()
         try:
             page.goto(project, wait_until="domcontentloaded", timeout=120_000)
             page.wait_for_timeout(5000)
@@ -231,7 +233,7 @@ def main() -> None:
             raise SystemExit(2)
         finally:
             try:
-                ctx.close()
+                page.close()
             except Exception:
                 pass
 

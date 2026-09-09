@@ -227,7 +227,7 @@ def run_force_download(tmp: Path, project_url: str) -> bool:
     env["ORBIT_FLOW_PROFILE"] = str(PROFILE)
     env["ORBIT_FLOW_CDP"] = CDP_URL
     env["HOS_FLOW_REQUIRE_CDP"] = "1"
-    cmd = [sys.executable, str(FORCE_DL), "--project-url", project_url, "--out", str(tmp)]
+    cmd = [sys.executable, str(FORCE_DL), "--project", project_url, "--dest", str(tmp)]
     print("  force-dl", flush=True)
     subprocess.run(cmd, env=env, check=False)
     return accept_mp4(tmp)
@@ -240,7 +240,7 @@ def run_edit_download(tmp: Path, project_url: str) -> bool:
     env["ORBIT_FLOW_PROFILE"] = str(PROFILE)
     env["ORBIT_FLOW_CDP"] = CDP_URL
     env["HOS_FLOW_REQUIRE_CDP"] = "1"
-    cmd = [sys.executable, str(EDIT_DL), "--project-url", project_url, "--out", str(tmp)]
+    cmd = [sys.executable, str(EDIT_DL), "--project", project_url, "--dest", str(tmp)]
     print("  edit-dl", flush=True)
     subprocess.run(cmd, env=env, check=False)
     return accept_mp4(tmp)
@@ -357,7 +357,7 @@ def mint_one(page, pid: str, meta: dict):
                 tmp,
                 model=MODEL,
                 start_frame=start,
-                timeout_s=480,
+                timeout_s=900,
                 attempts=1,
                 scenery_only=True,
             )
