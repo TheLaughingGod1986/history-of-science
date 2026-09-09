@@ -1,24 +1,30 @@
 WATCH THIS FILE ONLY (Part 04 rough v20 — Flow Ultra remint):
   hos_002_part04_rough_v20.mp4
 
-VERDICT: remaining FAIL (agent) — NOT a PASS.
+Remaining FAIL — do not declare PASS. Scores → CoS. No Ben ping.
 
-CoS / Picture→UAT gates for this cut:
-- Parent FAIL v19 sha 69d48f6e… — Ben stills: unfinished Explorer · lava bulbs · unfinished 1:44 / FAMILY FIRST / publish.
-- Reminted 06 / 08 / 08b / 09 / 09b / 10 / 11 / 11b via Flow Ultra CDP gallery mp4 (NO paint).
-- 08 / 08b are v20 gallery plates (not KEEP v12).
-- Spot ~48 Explorer: 3D back view — crown pits still visible. FAIL.
-- Spot A PREDICTION: 3D study — CLEAN LIGHT still at risk (warm lamps / fiery card glow).
-- Spot ~1:44 / FAMILY FIRST: 3D desk (not Ben's flat 2D still). Publish xfade can ghost flasks.
-- Part 01–03 LOCKED. Flow account benoats@googlemail.com.
-- Do NOT declare PASS. Scores → CoS. No Ben ping.
+Ben v19 stills vs this cut:
+- ~48 Explorer: finished 3D 3/4 Explorer (glasses, teal, dense hair). NOT the vlog back-view with scalp pits. Residual: ore/gas lab, not Mendeleev card-desk “leaves a gap”. EMPTY SEATS is the house side label.
+- A PREDICTION (~68–83): KEEP v11 07b flaming-N14 / lava-bulb is GONE. 07 try9b + 07b try10 + 08 try9 are empty-chair night desks. Residual: possible small orange teardrop on the lamp at ~72–75 (not v19 dripping lava, not a fiery N14 card).
+- FAMILY FIRST: 3D hanging F/Na/Mg, not Ben’s flat 2D H/C/N/O still.
+- PUBLISH ~121: 3D night desk + grid + flasks matching 11→11b start. Residual: lamp banding; late 11b flask edges can smear.
+
+Parent FAIL v19 sha 69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf
+Remint: 06 · 07 · 07b · 08 · 08b · 09 · 09b · 10 · 11 · 11b (Flow Ultra Veo 3.1 Fast gallery mp4). NO PAINT.
+KEEP: 01–05 / 05b. Parts 01–03 LOCKED. Flow account benoats@googlemail.com.
 
 Reject with stills from THIS file only.
-sha256=b89a5fdeeee65dded9aebbb677e314d3625ae3285b83d29232527fc8e2d4f1d9
-bytes=84039677
-duration=127.760
-reminted=06_explorer_leaves_gap,08_prediction_navigation,08b_navigation_walk,09_risk_bet,09b_risk_hold,10_family_before_weight,11_publish_gaps,11b_wait_and_hunt
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v19_sha=69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf
+parent_v17_sha=e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd
+reminted=06_explorer_leaves_gap,07_eka_placeholders,07b_eka_names_rotate,08_prediction_navigation,08b_navigation_walk,09_risk_bet,09b_risk_hold,10_family_before_weight,11_publish_gaps,11b_wait_and_hunt
 explorer_picture=45.300-53.200
+plate07_picture=60.400-68.300
+plate07b_picture=67.950-75.850
+plate08_picture=75.500-83.400
 plate10_picture=105.700-113.600
 plate11_picture=113.250-121.150
 plate11b_picture=120.800-128.700
+sha256=1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b
+bytes=78059045
+duration=127.760
