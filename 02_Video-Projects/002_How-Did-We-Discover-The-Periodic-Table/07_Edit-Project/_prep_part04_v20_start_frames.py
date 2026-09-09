@@ -31,24 +31,26 @@ PARENT_V19_SHA = "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bc
 W, H = 1920, 1080
 
 RAW = PROJ / "04_Generated-Clips/part04/raw"
+# try7: leave v10/v12 DNA — those starts still carried scalp pits + molten bulbs.
 DNA = {
-    "06": PROJ / "04_Generated-Clips/part04/refs/v10_start_frames/06_explorer_leaves_gap_start_v10.jpg",
-    "08": RAW / "v12_fast/08_prediction_navigation_v12.mp4",
-    "08b": RAW / "v12_fast/08b_navigation_walk_v12.mp4",
-    "09": RAW / "v12_fast/08_prediction_navigation_v12.mp4",
-    "09b": RAW / "v15_fast/11_publish_gaps_v15.mp4",
+    "06": PROJ / "04_Generated-Clips/part01/raw/v01_fast/05_explorer_ore_gas_v01.mp4",
+    "08": RAW / "v01_fast/08_prediction_navigation_v01.mp4",
+    "08b": RAW / "v01_fast/08_prediction_navigation_v01.mp4",
+    "09": RAW / "v01_fast/09b_risk_hold_v01.mp4",
+    "09b": RAW / "v01_fast/09b_risk_hold_v01.mp4",
     "10": RAW / "v13_fast/05_columns_families_v13.mp4",
-    "11": RAW / "v15_fast/11_publish_gaps_v15.mp4",
-    "11b": RAW / "v15_fast/11b_wait_and_hunt_v15.mp4",
+    "11": RAW / "v01_fast/11_publish_gaps_v01.mp4",
+    "11b": RAW / "v01_fast/11b_wait_and_hunt_v01.mp4",
 }
 DNA_T = {
+    "06": 2.0,
     "08": 1.0,
-    "08b": 2.5,
-    "09": 1.0,
-    "09b": 1.2,
+    "08b": 3.5,
+    "09": 4.0,
+    "09b": 6.2,
     "10": 2.5,
     "11": 1.2,
-    "11b": 3.0,
+    "11b": 2.0,
 }
 
 REMINT = [
@@ -193,7 +195,7 @@ def heal_scalp_pits(im: Image.Image) -> Image.Image:
                     if is_pit(nr, ng, nb):
                         visited.add((nx, ny))
                         stack.append((nx, ny))
-            if not (8 <= len(cells) <= 1200):
+            if not (8 <= len(cells) <= 4000):
                 continue
             samples = []
             for cx, cy in cells:
@@ -228,6 +230,38 @@ def heal_scalp_pits(im: Image.Image) -> Image.Image:
                 px[nx, ny] = fill
                 filled += 1
     print(f"  scalp blob-fill pixels={filled} blobs={blobs}", flush=True)
+    return rgb
+
+
+def plug_crown_holes(im: Image.Image) -> Image.Image:
+    """Close circular scalp pits with median + hair-surrounded fill (start hygiene only)."""
+    rgb = im.convert("RGB")
+    w, h = rgb.size
+    x0, x1 = int(w * 0.30), int(w * 0.66)
+    y0, y1 = int(h * 0.06), int(h * 0.50)
+    crop = rgb.crop((x0, y0, x1, y1))
+    cw, ch = crop.size
+    px = crop.load()
+
+    def is_hair(r: int, g: int, b: int) -> bool:
+        return r > 70 and g > 35 and (r - b) > 14 and r >= g - 12 and 80 < max(r, g, b) < 230
+
+    def is_pit(r: int, g: int, b: int) -> bool:
+        mx = max(r, g, b)
+        return mx < 100 and abs(r - g) < 45 and not is_hair(r, g, b)
+
+    mask = Image.new("L", (cw, ch), 0)
+    mp = mask.load()
+    for y in range(ch):
+        for x in range(cw):
+            r, g, b = px[x, y]
+            if is_hair(r, g, b) or is_pit(r, g, b):
+                mp[x, y] = 255
+    filtered = crop.filter(ImageFilter.MedianFilter(5)).filter(ImageFilter.MedianFilter(5))
+    plugged = Image.composite(filtered, crop, mask)
+    rgb.paste(plugged, (x0, y0))
+    rgb = heal_scalp_pits(rgb)
+    print("  crown median+blob plug applied", flush=True)
     return rgb
 
 
@@ -358,10 +392,11 @@ def prep_explorer() -> Path:
     src = DNA["06"]
     if not src.exists():
         raise SystemExit(f"missing explorer DNA {src}")
-    im = fit_cover(src)
-    im = cover_corner_label(im)
-    im = heal_scalp_pits(im)
-    im = densify_crown(im)
+    tmp = QA / "_dna_06.jpg"
+    extract_frame(src, DNA_T["06"], tmp)
+    im = fit_cover(tmp)
+    # Part 01 locked Explorer is finished 3D (glasses + dense hair). Do not
+    # median-plug the crown — that smear is how we got face-blot / pits before.
     return save_plate(im, "06_explorer_leaves_gap")
 
 
@@ -404,24 +439,26 @@ def main() -> None:
         },
         "plates": {},
         "method": (
-            "06=v10 3D back explorer + conservative scalp heal (no collage stamp); "
-            "08/08b/09=v12 empty-chair 3D DNA + drip-only lava (NOT failed v19 still); "
-            "09b/11/11b=v15 3D desk+moon (not flat overhead); "
-            "10=v13 columns 3D desk DNA"
+            "try7 Ben stills: 06=LOCKED Part 01 Explorer 3/4 (finished hair; not v10 pit DNA); "
+            "08/08b=v01 prediction empty-chair CLEAN LIGHT (not v12 molten); "
+            "09/09b=v01 09b empty-chair moon t=4.0/6.2 (solid bulb, not t=1.5 drip); "
+            "10=KEEP hanging F/Na/Mg v20 clip (already 3D); "
+            "11/11b=v01 publish night desk+moon+grid"
         ),
+        "try": "7",
         "remint": REMINT,
         "keep_assemble": ["written cards ~40", "01-05/05b/07/07b locked"],
         "no_paint_on_mp4": True,
     }
     meta["plates"]["06_explorer_leaves_gap"] = str(prep_explorer())
     meta["plates"]["08_prediction_navigation"] = str(
-        prep_from_clip("08_prediction_navigation", "08", heal_lava=True)
+        prep_from_clip("08_prediction_navigation", "08")
     )
     meta["plates"]["08b_navigation_walk"] = str(
-        prep_from_clip("08b_navigation_walk", "08b", heal_lava=True)
+        prep_from_clip("08b_navigation_walk", "08b")
     )
     meta["plates"]["09_risk_bet"] = str(
-        prep_from_clip("09_risk_bet", "09", heal_lava=True)
+        prep_from_clip("09_risk_bet", "09")
     )
     meta["plates"]["09b_risk_hold"] = str(
         prep_from_clip("09b_risk_hold", "09b")

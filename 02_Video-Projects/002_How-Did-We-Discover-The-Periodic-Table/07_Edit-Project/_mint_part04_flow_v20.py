@@ -67,9 +67,9 @@ STYLE = (
 )
 CLEAN = (
     "CLEAN LIGHT (BIBLE HARD): warm desk-lamp glow ONLY. "
-    "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO burning chair rim, "
-    "ZERO dripping bulb goo onto desk/chair. Soft continuous warm cone — "
-    "no stepped banding rings on the lamp shade. "
+    "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO sparks, ZERO embers, "
+    "ZERO flames, ZERO burning chair rim, ZERO dripping bulb goo onto desk/chair. "
+    "Soft continuous warm cone — no stepped banding rings on the lamp shade. "
     "Empty Chairs = ONE soft rectangular panel glow ONLY — never double edge."
 )
 SHARP = (
@@ -121,13 +121,13 @@ PROMPTS = {
     ),
     "06_explorer_leaves_gap": (
         "Image-to-video from the attached start frame. Explorer garnish beat. "
-        "Finished cinematic stylised 3D — NOT flat unfinished vector. "
-        "KEEP exact BACK or PROFILE only — never turn to face camera. "
-        "Dense finished opaque brown crown/bun with ZERO black-hole scalp pits, ZERO gaps "
-        "between hair spheres, ZERO face-cloud blotches; gold glasses rim readable; teal coat. "
-        "Desk cards MUST stay readable as H1, C12, N14, O16 (never C1, never N12, never garbled). "
-        "CLEAN warm lamp ONLY — continuous soft gradient, NO stepped banding, ZERO lava drip. "
-        "LOCKED CAMERA. Tiny head settle only — stay back/profile. Silent. "
+        "KEEP THIS exact finished Explorer from the still: gold round glasses, messy brown hair "
+        "with ZERO black circular scalp pits, teal coat, yellow vest, brown bow tie, satchel. "
+        "He is examining a specimen at a chemist bench. Tiny head/hands settle only. "
+        "Finished cinematic stylised 3D (Animistry-class). NOT flat unfinished vlog. "
+        "NOT a rear-view orange-hair chibi with holes in the crown. NOT a pith helmet. NOT twins. "
+        "Exactly one Explorer, one face. CLEAN warm lamp ONLY — no lava, no fire. "
+        "LOCKED CAMERA. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "08_prediction_navigation": (
@@ -157,10 +157,21 @@ PROMPTS = {
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "09b_risk_hold": (
-        "Image-to-video from the attached start frame. Risk-hold / settle beat. "
-        "Finished cinematic stylised 3D chemist study — NOT flat unfinished vector. "
-        "CLEAN LIGHT HARD: soft warm lamp ONLY — ZERO lava drip / molten leak / fire spit "
-        "onto chair or desk. Soft continuous light cone. Locked camera. Silent. "
+        "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact empty-chair chemist study. "
+        "A BET / risk-hold settle beat. Finished cinematic stylised 3D — honey wood desk, empty wooden chair, "
+        "bookshelf, soft rectangular Empty Chairs panel glow on the chair back (one soft finished translucent "
+        "rectangle only). LOCKED TRIPOD CAMERA. Silent. "
+        "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds: warm clean desk-lamp glow ONLY. "
+        "HARD BAN forever (t0 through t8): fire, flame, flames, spark, sparks, ember, embers, lava, lava drip, "
+        "molten leak, fire spit, burning chair rim, candle flicker on furniture, firework particles, glowing coal "
+        "on desk/chair, lava bloom under the shade, dripping bulb goo. Parent try5 UAT HARD FAIL = desk flames "
+        "t4.5–t7.2 — NEVER repeat. Soft continuous warm lamp cone only — no particle spit. "
+        "CARDS — HOUSE HARD FAIL IF BROKEN: ZERO unfinished flat card overlays, ZERO 2D paste-on stickers, "
+        "ZERO garbled flat letter tiles, ZERO screen-locked HUD cards that ignore perspective. "
+        "If element cards appear they MUST be finished thick 3D props (paper/wood/enamel tiles with real thickness, "
+        "bevel, contact shadows, lit by the same lamp). Prefer a clean desk with only books + lamp + Empty Chairs "
+        "panel if cards would look flat or garbled. NOT flat unfinished vlog vector. NOT cheap cel. "
+        "No Explorer. No Orbit. No paint. No double-exposure. "
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "10_family_before_weight": (

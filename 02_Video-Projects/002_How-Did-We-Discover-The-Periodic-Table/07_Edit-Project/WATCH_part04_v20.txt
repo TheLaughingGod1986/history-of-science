@@ -1,20 +1,24 @@
 WATCH THIS FILE ONLY (Part 04 rough v20 — Flow Ultra remint):
   hos_002_part04_rough_v20.mp4
 
-VERDICT: SELF_FAIL (agent) — NOT a PASS.
+VERDICT: remaining FAIL (agent) — NOT a PASS.
 
 CoS / Picture→UAT gates for this cut:
-- Parent FAIL v19 sha 69d48f6e… — Ben override: flat unfinished · lava drip · lava chair · explorer unfinished.
-- Reminted 06 / 09 / 09b / 10 / 11 / 11b via Flow Ultra CDP gallery mp4 (NO paint).
-- KEEP 08/08b from v12 for this land.
-- Spot ~49 Explorer: still shows card ghosting / unfinished — FAIL.
-- Spot A BET / chair ~100: lamp lava/fire spit — CLEAN LIGHT FAIL.
-- Spot ~117–122 PUBLISH / FAMILY desk: unfinished flat vector DNA — FAIL.
+- Parent FAIL v19 sha 69d48f6e… — Ben stills: unfinished Explorer · lava bulbs · unfinished 1:44 / FAMILY FIRST / publish.
+- Reminted 06 / 08 / 08b / 09 / 09b / 10 / 11 / 11b via Flow Ultra CDP gallery mp4 (NO paint).
+- 08 / 08b are v20 gallery plates (not KEEP v12).
+- Spot ~48 Explorer: 3D back view — crown pits still visible. FAIL.
+- Spot A PREDICTION: 3D study — CLEAN LIGHT still at risk (warm lamps / fiery card glow).
+- Spot ~1:44 / FAMILY FIRST: 3D desk (not Ben's flat 2D still). Publish xfade can ghost flasks.
 - Part 01–03 LOCKED. Flow account benoats@googlemail.com.
 - Do NOT declare PASS. Scores → CoS. No Ben ping.
 
 Reject with stills from THIS file only.
-sha256=46d5187d7689a89ea43570889af00d8f145c7a6591e87cb7aa74657f62cd5da5
-bytes=83373090
+sha256=b89a5fdeeee65dded9aebbb677e314d3625ae3285b83d29232527fc8e2d4f1d9
+bytes=84039677
 duration=127.760
-reminted=06_explorer_leaves_gap,09_risk_bet,09b_risk_hold,10_family_before_weight,11_publish_gaps,11b_wait_and_hunt
+reminted=06_explorer_leaves_gap,08_prediction_navigation,08b_navigation_walk,09_risk_bet,09b_risk_hold,10_family_before_weight,11_publish_gaps,11b_wait_and_hunt
+explorer_picture=45.300-53.200
+plate10_picture=105.700-113.600
+plate11_picture=113.250-121.150
+plate11b_picture=120.800-128.700
