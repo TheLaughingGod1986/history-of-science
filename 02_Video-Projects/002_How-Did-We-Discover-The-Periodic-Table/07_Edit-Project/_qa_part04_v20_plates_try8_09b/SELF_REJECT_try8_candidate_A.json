@@ -1,0 +1,11 @@
+{
+  "candidate": "A",
+  "project": "https://flow.google.com/project/895d2087-6abb-44dd-b411-f7f84895d7ea",
+  "mp4": "04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try8.mp4",
+  "sha256": "32b69654356f95b737581d678400a558780e120dcf491d99883bc8ec4c20f095",
+  "start_dna": "cardless v01 moon empty-chair (cf182dc…)",
+  "gate_lamp_beam_sparks": "PASS_CLEAN — warm cone only; no continuous sparks/embers in beam on mids",
+  "gate_desk_flames": "PASS — no desk fire tongues",
+  "gate_flat_cards": "FAIL — unfinished flat letter cards appear mid-clip (HJ / CoB-style) on desk; soft Empty Chairs panel also baked readable 'Empy Chairs panel' text",
+  "decision": "SELF_REJECT_FLAT_CARDS — remint try8B with absolute CARDLESS + blank glow panel (no typography)"
+}

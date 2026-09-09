@@ -1,0 +1,78 @@
+  start-frame I2V: /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  pinned project_url=https://flow.google.com/project/0ba58130-bc20-47c8-b8e2-1b1d77947973
+  flow: https://flow.google.com/project/0ba58130-bc20-47c8-b8e2-1b1d77947973
+  dismissed banner via 'Agree'
+  create-mode: Agent OFF video_settings=True
+  Agent settings path failed (Flow Settings (tune) button not found); trying prompt pill…
+  outputs clicked x1=None
+  video model locked: Veo 3.1 - Fast
+  settings closed via escape (prompt pill)
+  post-settings…
+  attaching start frame…
+  attaching start frame: 09b_risk_hold_start_v20.jpg
+  opening media library via 'Add (media|image|file|to prompt)'
+  found upload text button 'Upload'
+  found upload text button 'Upload'
+  clicking Upload for file chooser…
+  uploaded — waiting for Add to Prompt…
+  clicking upload consent 'Agree'
+  trying Frames Start slot first…
+  dismissed banner via 'Agree'
+  create-mode: Agent OFF video_settings=True
+  Agent settings path failed (Flow Settings (tune) button not found); trying prompt pill…
+  outputs clicked x1=None
+  video model locked: Veo 3.1 - Fast
+  settings closed via escape (prompt pill)
+  frames tile click=False
+  clicked frames CTA 'Add to Prompt'
+  start frame wired via Frames Start
+  setting start-frame I2V prompt…
+  set_prompt insert_text chars=3483 dirty=False
+  set_prompt ok head='IMAGE-TO-VIDEO of the attached start frame. Animate THIS exa'
+  submitting Create…
+  create-mode: Agent OFF video_settings=True
+  clicking Flow send ('arrow_forward')
+  submitted Create (start-frame I2V)
+  wait 0s status=5% new_media=0 gen=True
+  wait 4s status=7% new_media=0 gen=True
+  wait 8s status=9% new_media=0 gen=True
+  waiting for gallery thumbs (#1) pct=11 thumbs=0
+  wait 12s status=11% new_media=0 gen=True
+  wait 16s status=14% new_media=0 gen=True
+  gen running (17% @ 21s) — defer to fresh-browser harvest (thumbs=0 new=0)
+  gallery-pending:0 — caller must fresh-browser harvest
+{
+  "plate": "09b_risk_hold",
+  "try": 8,
+  "project_url": "https://flow.google.com/project/0ba58130-bc20-47c8-b8e2-1b1d77947973",
+  "info": {
+    "seconds": 63.2,
+    "bytes": 0,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/0ba58130-bc20-47c8-b8e2-1b1d77947973",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/0ba58130-bc20-47c8-b8e2-1b1d77947973"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+  "start_sha256": "cf182dc25d67d848cc37e2db05d7d7ff24f6d65e2cdecddc22f45e97d74576b3",
+  "model": "Veo 3.1 - Fast",
+  "when": "2026-09-09T22:19:47",
+  "prompt_has_fire_ban": true,
+  "prompt_has_spark_ban": true,
+  "prompt_has_flat_card_ban": true,
+  "prompt_has_absolute_cardless": true,
+  "parent_try7_gate": "REJECT_CLEAN_LIGHT_UAT_AMEND + REJECT_FLAT_CARDS",
+  "parent_try8A_gate": "SELF_REJECT_FLAT_CARDS (HJ/CoB mid-clip; lamp beam clean)",
+  "dna": "KEEP v01 09b empty-chair moon cardless (not try6/7 v14 flat)"
+}
