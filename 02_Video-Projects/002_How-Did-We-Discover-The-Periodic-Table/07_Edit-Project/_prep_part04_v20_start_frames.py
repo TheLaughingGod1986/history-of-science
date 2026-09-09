@@ -31,24 +31,26 @@ PARENT_V19_SHA = "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bc
 W, H = 1920, 1080
 
 RAW = PROJ / "04_Generated-Clips/part04/raw"
+# try7: leave v10/v12 DNA — those starts still carried scalp pits + molten bulbs.
 DNA = {
-    "06": PROJ / "04_Generated-Clips/part04/refs/v10_start_frames/06_explorer_leaves_gap_start_v10.jpg",
-    "08": RAW / "v12_fast/08_prediction_navigation_v12.mp4",
-    "08b": RAW / "v12_fast/08b_navigation_walk_v12.mp4",
-    "09": RAW / "v12_fast/08_prediction_navigation_v12.mp4",
-    "09b": RAW / "v15_fast/11_publish_gaps_v15.mp4",
+    "06": PROJ / "04_Generated-Clips/part01/raw/v01_fast/05_explorer_ore_gas_v01.mp4",
+    "08": RAW / "v01_fast/08_prediction_navigation_v01.mp4",
+    "08b": RAW / "v01_fast/08_prediction_navigation_v01.mp4",
+    "09": RAW / "v01_fast/09b_risk_hold_v01.mp4",
+    "09b": RAW / "v01_fast/09b_risk_hold_v01.mp4",
     "10": RAW / "v13_fast/05_columns_families_v13.mp4",
-    "11": RAW / "v15_fast/11_publish_gaps_v15.mp4",
-    "11b": RAW / "v15_fast/11b_wait_and_hunt_v15.mp4",
+    "11": RAW / "v01_fast/11_publish_gaps_v01.mp4",
+    "11b": RAW / "v01_fast/11b_wait_and_hunt_v01.mp4",
 }
 DNA_T = {
+    "06": 2.0,
     "08": 1.0,
-    "08b": 2.5,
-    "09": 2.2,
-    "09b": 1.2,
+    "08b": 3.5,
+    "09": 4.0,
+    "09b": 6.2,
     "10": 2.5,
     "11": 1.2,
-    "11b": 3.0,
+    "11b": 2.0,
 }
 
 REMINT = [
@@ -152,55 +154,114 @@ def inpaint_lava(im: Image.Image) -> Image.Image:
 
 
 def heal_scalp_pits(im: Image.Image) -> Image.Image:
-    """Fill near-black circular pits in the crown with local hair colour."""
+    """Fill compact dark circular pits on the crown only (hair-surrounded blobs)."""
     rgb = im.convert("RGB")
     w, h = rgb.size
     px = rgb.load()
-    x0, x1 = int(w * 0.22), int(w * 0.78)
-    y0, y1 = int(h * 0.04), int(h * 0.52)
-    healed = 0
+    x0, x1 = int(w * 0.38), int(w * 0.62)
+    y0, y1 = int(h * 0.16), int(h * 0.45)
+
+    def is_hair(r: int, g: int, b: int) -> bool:
+        return r > 90 and r >= g and (r - b) > 18 and g > 45 and max(r, g, b) > 95
+
+    def is_pit(r: int, g: int, b: int) -> bool:
+        mx = max(r, g, b)
+        return mx < 108 and r < 125 and abs(r - g) < 42 and not is_hair(r, g, b)
+
+    visited = set()
+    filled = 0
+    blobs = 0
     for y in range(y0, y1):
         for x in range(x0, x1):
+            if (x, y) in visited:
+                continue
             r, g, b = px[x, y]
-            dark = max(r, g, b) <= 38 and abs(r - g) < 16 and abs(g - b) < 16
-            if not dark:
+            if not is_pit(r, g, b):
+                continue
+            stack = [(x, y)]
+            visited.add((x, y))
+            cells: list[tuple[int, int]] = []
+            while stack:
+                cx, cy = stack.pop()
+                cells.append((cx, cy))
+                for dx, dy in (
+                    (1, 0), (-1, 0), (0, 1), (0, -1),
+                    (1, 1), (-1, -1), (1, -1), (-1, 1),
+                ):
+                    nx, ny = cx + dx, cy + dy
+                    if nx < x0 or nx >= x1 or ny < y0 or ny >= y1 or (nx, ny) in visited:
+                        continue
+                    nr, ng, nb = px[nx, ny]
+                    if is_pit(nr, ng, nb):
+                        visited.add((nx, ny))
+                        stack.append((nx, ny))
+            if not (8 <= len(cells) <= 4000):
                 continue
             samples = []
-            for rad in (6, 10, 16, 22, 28):
-                for ang in range(0, 360, 24):
-                    sx = int(x + rad * math.cos(math.radians(ang)))
-                    sy = int(y + rad * math.sin(math.radians(ang)))
-                    if x0 <= sx < x1 and y0 <= sy < y1:
-                        sr, sg, sb = px[sx, sy]
-                        if max(sr, sg, sb) > 80 and sr > sb:
-                            samples.append((sr, sg, sb))
-                if len(samples) >= 6:
-                    break
-            if samples:
-                n = len(samples)
-                px[x, y] = (
-                    sum(s[0] for s in samples) // n,
-                    sum(s[1] for s in samples) // n,
-                    sum(s[2] for s in samples) // n,
-                )
-                healed += 1
-    if healed:
-        blur = rgb.filter(ImageFilter.GaussianBlur(1.2))
-        out = rgb.copy()
-        opx = out.load()
-        bpx = blur.load()
-        for y in range(y0, y1):
-            for x in range(x0, x1):
-                r, g, b = opx[x, y]
-                if max(r, g, b) < 130 and r >= g:
-                    br, bg, bb = bpx[x, y]
-                    opx[x, y] = (
-                        int(0.5 * r + 0.5 * br),
-                        int(0.5 * g + 0.5 * bg),
-                        int(0.55 * b + 0.45 * bb),
-                    )
-        rgb = out
-    print(f"  scalp pits healed pixels≈{healed}", flush=True)
+            for cx, cy in cells:
+                for rad in (8, 14, 22):
+                    for ang in range(0, 360, 30):
+                        sx = int(cx + rad * math.cos(math.radians(ang)))
+                        sy = int(cy + rad * math.sin(math.radians(ang)))
+                        if x0 <= sx < x1 and y0 <= sy < y1:
+                            sr, sg, sb = px[sx, sy]
+                            if is_hair(sr, sg, sb):
+                                samples.append((sr, sg, sb))
+            if len(samples) < 10:
+                continue
+            n = len(samples)
+            fill = (
+                sum(s[0] for s in samples) // n,
+                sum(s[1] for s in samples) // n,
+                sum(s[2] for s in samples) // n,
+            )
+            blobs += 1
+            extra: list[tuple[int, int]] = []
+            for cx, cy in cells:
+                px[cx, cy] = fill
+                filled += 1
+                for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    nx, ny = cx + dx, cy + dy
+                    if x0 <= nx < x1 and y0 <= ny < y1:
+                        nr, ng, nb = px[nx, ny]
+                        if is_pit(nr, ng, nb) or max(nr, ng, nb) < 88:
+                            extra.append((nx, ny))
+            for nx, ny in extra:
+                px[nx, ny] = fill
+                filled += 1
+    print(f"  scalp blob-fill pixels={filled} blobs={blobs}", flush=True)
+    return rgb
+
+
+def plug_crown_holes(im: Image.Image) -> Image.Image:
+    """Close circular scalp pits with median + hair-surrounded fill (start hygiene only)."""
+    rgb = im.convert("RGB")
+    w, h = rgb.size
+    x0, x1 = int(w * 0.30), int(w * 0.66)
+    y0, y1 = int(h * 0.06), int(h * 0.50)
+    crop = rgb.crop((x0, y0, x1, y1))
+    cw, ch = crop.size
+    px = crop.load()
+
+    def is_hair(r: int, g: int, b: int) -> bool:
+        return r > 70 and g > 35 and (r - b) > 14 and r >= g - 12 and 80 < max(r, g, b) < 230
+
+    def is_pit(r: int, g: int, b: int) -> bool:
+        mx = max(r, g, b)
+        return mx < 100 and abs(r - g) < 45 and not is_hair(r, g, b)
+
+    mask = Image.new("L", (cw, ch), 0)
+    mp = mask.load()
+    for y in range(ch):
+        for x in range(cw):
+            r, g, b = px[x, y]
+            if is_hair(r, g, b) or is_pit(r, g, b):
+                mp[x, y] = 255
+    filtered = crop.filter(ImageFilter.MedianFilter(5)).filter(ImageFilter.MedianFilter(5))
+    plugged = Image.composite(filtered, crop, mask)
+    rgb.paste(plugged, (x0, y0))
+    rgb = heal_scalp_pits(rgb)
+    print("  crown median+blob plug applied", flush=True)
     return rgb
 
 
@@ -251,11 +312,13 @@ def smooth_lamp_glow(im: Image.Image) -> Image.Image:
 
 
 def cover_corner_label(im: Image.Image) -> Image.Image:
-    """Cover baked EMPTY SEATS / FAMILY FIRST overlays with a bookshelf sample colour."""
+    """Cover baked EMPTY SEATS overlay by tiling a neighbouring bookshelf patch."""
     rgb = im.convert("RGB")
-    color = rgb.getpixel((min(W - 90, W - 1), min(220, H - 1)))
-    d = ImageDraw.Draw(rgb)
-    d.rounded_rectangle((int(W * 0.70), 16, W - 14, 138), radius=12, fill=color)
+    src = rgb.crop((int(W * 0.48), 16, int(W * 0.67), 16 + 148))
+    dest_x = int(W * 0.68)
+    while dest_x < W - 8:
+        rgb.paste(src, (dest_x, 6))
+        dest_x += src.size[0]
     return rgb
 
 
@@ -329,10 +392,11 @@ def prep_explorer() -> Path:
     src = DNA["06"]
     if not src.exists():
         raise SystemExit(f"missing explorer DNA {src}")
-    im = fit_cover(src)
-    im = cover_corner_label(im)
-    im = heal_scalp_pits(im)
-    im = densify_crown(im)
+    tmp = QA / "_dna_06.jpg"
+    extract_frame(src, DNA_T["06"], tmp)
+    im = fit_cover(tmp)
+    # Part 01 locked Explorer is finished 3D (glasses + dense hair). Do not
+    # median-plug the crown — that smear is how we got face-blot / pits before.
     return save_plate(im, "06_explorer_leaves_gap")
 
 
@@ -375,24 +439,26 @@ def main() -> None:
         },
         "plates": {},
         "method": (
-            "06=v10 3D back explorer + conservative scalp heal (no collage stamp); "
-            "08/08b/09=v12 empty-chair 3D DNA + drip-only lava (NOT failed v19 still); "
-            "09b/11/11b=v15 3D desk+moon (not flat overhead); "
-            "10=v13 columns 3D desk DNA"
+            "try7 Ben stills: 06=LOCKED Part 01 Explorer 3/4 (finished hair; not v10 pit DNA); "
+            "08/08b=v01 prediction empty-chair CLEAN LIGHT (not v12 molten); "
+            "09/09b=v01 09b empty-chair moon t=4.0/6.2 (solid bulb, not t=1.5 drip); "
+            "10=KEEP hanging F/Na/Mg v20 clip (already 3D); "
+            "11/11b=v01 publish night desk+moon+grid"
         ),
+        "try": "7",
         "remint": REMINT,
         "keep_assemble": ["written cards ~40", "01-05/05b/07/07b locked"],
         "no_paint_on_mp4": True,
     }
     meta["plates"]["06_explorer_leaves_gap"] = str(prep_explorer())
     meta["plates"]["08_prediction_navigation"] = str(
-        prep_from_clip("08_prediction_navigation", "08", heal_lava=True)
+        prep_from_clip("08_prediction_navigation", "08")
     )
     meta["plates"]["08b_navigation_walk"] = str(
-        prep_from_clip("08b_navigation_walk", "08b", heal_lava=True)
+        prep_from_clip("08b_navigation_walk", "08b")
     )
     meta["plates"]["09_risk_bet"] = str(
-        prep_from_clip("09_risk_bet", "09", heal_lava=True)
+        prep_from_clip("09_risk_bet", "09")
     )
     meta["plates"]["09b_risk_hold"] = str(
         prep_from_clip("09b_risk_hold", "09b")
