@@ -44,7 +44,7 @@ DNA = {
 DNA_T = {
     "08": 1.0,
     "08b": 2.5,
-    "09": 2.2,
+    "09": 1.0,
     "09b": 1.2,
     "10": 2.5,
     "11": 1.2,
@@ -152,55 +152,82 @@ def inpaint_lava(im: Image.Image) -> Image.Image:
 
 
 def heal_scalp_pits(im: Image.Image) -> Image.Image:
-    """Fill near-black circular pits in the crown with local hair colour."""
+    """Fill compact dark circular pits on the crown only (hair-surrounded blobs)."""
     rgb = im.convert("RGB")
     w, h = rgb.size
     px = rgb.load()
-    x0, x1 = int(w * 0.22), int(w * 0.78)
-    y0, y1 = int(h * 0.04), int(h * 0.52)
-    healed = 0
+    x0, x1 = int(w * 0.38), int(w * 0.62)
+    y0, y1 = int(h * 0.16), int(h * 0.45)
+
+    def is_hair(r: int, g: int, b: int) -> bool:
+        return r > 90 and r >= g and (r - b) > 18 and g > 45 and max(r, g, b) > 95
+
+    def is_pit(r: int, g: int, b: int) -> bool:
+        mx = max(r, g, b)
+        return mx < 108 and r < 125 and abs(r - g) < 42 and not is_hair(r, g, b)
+
+    visited = set()
+    filled = 0
+    blobs = 0
     for y in range(y0, y1):
         for x in range(x0, x1):
+            if (x, y) in visited:
+                continue
             r, g, b = px[x, y]
-            dark = max(r, g, b) <= 38 and abs(r - g) < 16 and abs(g - b) < 16
-            if not dark:
+            if not is_pit(r, g, b):
+                continue
+            stack = [(x, y)]
+            visited.add((x, y))
+            cells: list[tuple[int, int]] = []
+            while stack:
+                cx, cy = stack.pop()
+                cells.append((cx, cy))
+                for dx, dy in (
+                    (1, 0), (-1, 0), (0, 1), (0, -1),
+                    (1, 1), (-1, -1), (1, -1), (-1, 1),
+                ):
+                    nx, ny = cx + dx, cy + dy
+                    if nx < x0 or nx >= x1 or ny < y0 or ny >= y1 or (nx, ny) in visited:
+                        continue
+                    nr, ng, nb = px[nx, ny]
+                    if is_pit(nr, ng, nb):
+                        visited.add((nx, ny))
+                        stack.append((nx, ny))
+            if not (8 <= len(cells) <= 1200):
                 continue
             samples = []
-            for rad in (6, 10, 16, 22, 28):
-                for ang in range(0, 360, 24):
-                    sx = int(x + rad * math.cos(math.radians(ang)))
-                    sy = int(y + rad * math.sin(math.radians(ang)))
-                    if x0 <= sx < x1 and y0 <= sy < y1:
-                        sr, sg, sb = px[sx, sy]
-                        if max(sr, sg, sb) > 80 and sr > sb:
-                            samples.append((sr, sg, sb))
-                if len(samples) >= 6:
-                    break
-            if samples:
-                n = len(samples)
-                px[x, y] = (
-                    sum(s[0] for s in samples) // n,
-                    sum(s[1] for s in samples) // n,
-                    sum(s[2] for s in samples) // n,
-                )
-                healed += 1
-    if healed:
-        blur = rgb.filter(ImageFilter.GaussianBlur(1.2))
-        out = rgb.copy()
-        opx = out.load()
-        bpx = blur.load()
-        for y in range(y0, y1):
-            for x in range(x0, x1):
-                r, g, b = opx[x, y]
-                if max(r, g, b) < 130 and r >= g:
-                    br, bg, bb = bpx[x, y]
-                    opx[x, y] = (
-                        int(0.5 * r + 0.5 * br),
-                        int(0.5 * g + 0.5 * bg),
-                        int(0.55 * b + 0.45 * bb),
-                    )
-        rgb = out
-    print(f"  scalp pits healed pixels≈{healed}", flush=True)
+            for cx, cy in cells:
+                for rad in (8, 14, 22):
+                    for ang in range(0, 360, 30):
+                        sx = int(cx + rad * math.cos(math.radians(ang)))
+                        sy = int(cy + rad * math.sin(math.radians(ang)))
+                        if x0 <= sx < x1 and y0 <= sy < y1:
+                            sr, sg, sb = px[sx, sy]
+                            if is_hair(sr, sg, sb):
+                                samples.append((sr, sg, sb))
+            if len(samples) < 10:
+                continue
+            n = len(samples)
+            fill = (
+                sum(s[0] for s in samples) // n,
+                sum(s[1] for s in samples) // n,
+                sum(s[2] for s in samples) // n,
+            )
+            blobs += 1
+            extra: list[tuple[int, int]] = []
+            for cx, cy in cells:
+                px[cx, cy] = fill
+                filled += 1
+                for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    nx, ny = cx + dx, cy + dy
+                    if x0 <= nx < x1 and y0 <= ny < y1:
+                        nr, ng, nb = px[nx, ny]
+                        if is_pit(nr, ng, nb) or max(nr, ng, nb) < 88:
+                            extra.append((nx, ny))
+            for nx, ny in extra:
+                px[nx, ny] = fill
+                filled += 1
+    print(f"  scalp blob-fill pixels={filled} blobs={blobs}", flush=True)
     return rgb
 
 
@@ -251,11 +278,13 @@ def smooth_lamp_glow(im: Image.Image) -> Image.Image:
 
 
 def cover_corner_label(im: Image.Image) -> Image.Image:
-    """Cover baked EMPTY SEATS / FAMILY FIRST overlays with a bookshelf sample colour."""
+    """Cover baked EMPTY SEATS overlay by tiling a neighbouring bookshelf patch."""
     rgb = im.convert("RGB")
-    color = rgb.getpixel((min(W - 90, W - 1), min(220, H - 1)))
-    d = ImageDraw.Draw(rgb)
-    d.rounded_rectangle((int(W * 0.70), 16, W - 14, 138), radius=12, fill=color)
+    src = rgb.crop((int(W * 0.48), 16, int(W * 0.67), 16 + 148))
+    dest_x = int(W * 0.68)
+    while dest_x < W - 8:
+        rgb.paste(src, (dest_x, 6))
+        dest_x += src.size[0]
     return rgb
 
 
