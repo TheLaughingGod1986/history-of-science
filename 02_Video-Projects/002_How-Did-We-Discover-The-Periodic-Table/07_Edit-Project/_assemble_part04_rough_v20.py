@@ -5,8 +5,9 @@ Parent FAIL: hos_002_part04_rough_v19.mp4
   sha256 05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5
 UAT HARD FAIL parent v19: EXPLORER scalp/cards/lamp + PUBLISH ~118–127 continuous playback horizontal ghost/jitter (paint fallback).
 
-Remint (Flow Ultra gallery mp4 ONLY): 06 · 11 · 11b
-KEEP: 10_family (v18 if clean) · CLEAN LIGHT 09/09b · written cards ~40.
+Remint (Flow Ultra gallery mp4 ONLY): 06 · 09 · 09b · 10 · 11 · 11b
+  Ben override FAIL v19: flat unfinished + lava drip chair/desk + explorer unfinished + publish ghosts.
+KEEP: written cards ~40 where still clean; earlier locked plates unchanged.
 
 NO PAINT. Scores → CoS. Do not declare PASS. Do not ping Ben.
 """
@@ -59,17 +60,15 @@ CLIP_USE = 7.9
 
 REMINT_V20_IDS = {
     "06_explorer_leaves_gap",
+    "09_risk_bet",
+    "09b_risk_hold",
+    "10_family_before_weight",
     "11_publish_gaps",
     "11b_wait_and_hunt",
 }
-KEEP_V18_IDS = {
-    "10_family_before_weight",  # UAT said improved — keep if still clean
-}
+KEEP_V18_IDS = set()  # family reminted in v20 (Ben flat/lava override)
 KEEP_V16_IDS = set()
-KEEP_V15_IDS = {
-    "09_risk_bet",
-    "09b_risk_hold",  # CLEAN LIGHT KEEP
-}
+KEEP_V15_IDS = set()  # 09/09b reminted in v20 (Ben lava-chair override)
 KEEP_V13_IDS = {
     "04_sort_atomic_weight",
     "05_columns_families",

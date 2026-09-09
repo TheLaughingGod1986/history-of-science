@@ -56,25 +56,30 @@ HARVEST_WAIT_S = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "480"))
 PARENT_V19_SHA = "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf"
 
 STYLE = (
-    "Animistry-class stylised 3D cartoon (NOT photoreal). "
-    "ONE continuous 1869 chemist desk at night: honey wood desktop, soft warm lamp, "
-    "flat parchment grid sheet OR floating element cards, coloured flasks. "
+    "FINISHED cinematic stylised 3D house quality (Animistry-class). "
+    "NOT flat unfinished vlog vector. NOT 2D cutouts. NOT cheap cel. "
+    "Believable wood grain, glass refraction, soft depth of field, polished materials. "
+    "ONE continuous 1869 chemist study at night: honey wood desk, soft warm lamp, "
+    "parchment grid OR readable element cards, coloured flasks. "
     "Silent. No Orbit. No Ken Burns still. No paint / no double-exposure."
 )
 CLEAN = (
-    "CLEAN LIGHT: soft warm desk-lamp glow ONLY — no lava, no blown jagged white, "
+    "CLEAN LIGHT (BIBLE HARD): warm desk-lamp glow ONLY. "
+    "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO burning chair rim, "
+    "ZERO dripping bulb goo onto desk/chair. Soft continuous warm cone — "
     "no stepped banding rings on the lamp shade. "
     "Empty Chairs = ONE soft rectangular panel glow ONLY — never double edge."
 )
 SHARP = (
-    "LATE SHOTS SHARP / SINGLE EXPOSURE (HARD): every frame finished. "
+    "LATE SHOTS SHARP / SINGLE EXPOSURE (HARD): every frame finished cinematic 3D. "
     "ZERO horizontal ghost doubles, ZERO double-exposure edges, ZERO left-half mush, "
     "ZERO jitter trail on grid lines / flasks / lamp / magnifier. "
     "ONE solid lamp, ONE solid flask set / card set, ONE solid grid. "
     "LOCKED or VERY GENTLE camera — prefer locked tripod settle over any pan that smears edges."
 )
 REJECT = (
-    "HARD REJECT: horizontal ghost doubles; double-exposure; unfinished mush; "
+    "HARD REJECT: unfinished flat vlog vector; lava drip / molten leak / fire spit; "
+    "horizontal ghost doubles; double-exposure; unfinished mush; "
     "garbled cards / striping; lamp banding; face-cloud blot; black hole dots in hair; "
     "photoreal; Orbit; twins; hat."
 )
@@ -92,34 +97,60 @@ STILL_PROPS = (
 PROMPTS = {
     "11_publish_gaps": (
         "Image-to-video from the attached start frame. PUBLISH THE GAPS beat. "
-        "Animistry-class stylised 3D cartoon chemist desk at night. "
+        "Finished cinematic stylised 3D chemist desk — NOT flat unfinished vector. "
         "HARD LOCKED TRIPOD CAMERA — zero pan, zero dolly, zero truck, zero orbit. "
         + LOCK_CAM + " " + STILL_PROPS + " "
         "SINGLE EXPOSURE every frame: ZERO horizontal ghost / double-edge / smear / tear on "
         "grid lines, coloured flasks, desk lamp, magnifier, moon. "
         "One solid lamp, one solid flask set, one solid grid, one solid magnifier. "
-        "Soft warm lamp glow — no stepped banding. No Explorer. Silent. "
+        "CLEAN warm lamp ONLY — zero lava drip / molten leak / fire spit. No Explorer. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "11b_wait_and_hunt": (
         "Image-to-video from the attached start frame. Wait-and-hunt beat. "
-        "Published flat parchment grid with empty circular holes, flasks, soft warm lamp. "
+        "Finished cinematic stylised 3D published parchment grid with empty circular holes, "
+        "flasks, soft warm lamp — NOT flat unfinished vector. "
         "HARD LOCKED TRIPOD CAMERA — zero horizontal pan / smear. "
         + LOCK_CAM + " " + STILL_PROPS + " "
         "SINGLE EXPOSURE continuous playback: ZERO ghost doubles / horizontal tears on "
-        "grid / flasks / lamp / magnifier / moon in mid frames. Soft continuous light. "
-        "No Explorer. Silent. "
+        "grid / flasks / lamp / magnifier / moon in mid frames. "
+        "CLEAN warm lamp ONLY — zero lava drip. No Explorer. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "06_explorer_leaves_gap": (
         "Image-to-video from the attached start frame. Explorer garnish beat. "
+        "Finished cinematic stylised 3D — NOT flat unfinished vector. "
         "KEEP exact BACK or PROFILE only — never turn to face camera. "
         "Dense finished opaque brown crown/bun with ZERO black-hole scalp pits, ZERO gaps "
         "between hair spheres, ZERO face-cloud blotches; gold glasses rim readable; teal coat. "
         "Desk cards MUST stay readable as H1, C12, N14, O16 (never C1, never N12, never garbled). "
-        "Smooth warm lamp glow — continuous soft gradient, NO stepped banding rings on shade. "
+        "CLEAN warm lamp ONLY — continuous soft gradient, NO stepped banding, ZERO lava drip. "
         "LOCKED CAMERA. Tiny head settle only — stay back/profile. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
+    ),
+    "09_risk_bet": (
+        "Image-to-video from the attached start frame. RISK / A PREDICTION beat. "
+        "Finished cinematic stylised 3D chemist study — NOT flat unfinished vlog vector. "
+        "Wooden chair + desk + warm lamp. "
+        "CLEAN LIGHT HARD: warm lamp glow ONLY — ZERO lava drip under bulb, ZERO molten leak, "
+        "ZERO fire spit onto chair/desk, ZERO burning chair rim glow. "
+        "Readable element cards. LOCKED or very gentle camera. Silent. "
+        + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
+    ),
+    "09b_risk_hold": (
+        "Image-to-video from the attached start frame. Risk-hold / settle beat. "
+        "Finished cinematic stylised 3D chemist study — NOT flat unfinished vector. "
+        "CLEAN LIGHT HARD: soft warm lamp ONLY — ZERO lava drip / molten leak / fire spit "
+        "onto chair or desk. Soft continuous light cone. Locked camera. Silent. "
+        + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
+    ),
+    "10_family_before_weight": (
+        "Image-to-video from the attached start frame. FAMILY FIRST beat. "
+        "Finished cinematic stylised 3D chemist desk with readable element cards — "
+        "NOT flat unfinished vlog vector cutouts. Wood grain, glass, soft DOF. "
+        "CLEAN LIGHT HARD: warm lamp ONLY — ZERO lava drip / molten leak / fire spit "
+        "under bulb onto desk/chair. Readable cards H/C/N/O family. Locked camera. Silent. "
+        + LOCK_CAM + " " + STILL_PROPS + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
 }
 
