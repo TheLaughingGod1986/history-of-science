@@ -1,0 +1,15 @@
+{
+  "when": "2026-09-09T16:46:14+0100",
+  "url": "https://accounts.google.com/v3/signin/challenge/pk?TL=ACv9tzGgKXZCLLEylTJFaMZpb_5N8InG7oMSZe_v19l4oXEuuailpOJilM6oKIdz&app_domain=https%3A%2F%2Flabs.google&cid=1&client_id=365941595420-v51i7q8ik0crmaoltkhuo5ogb1kekl6f.apps.googleusercontent.com&code_challenge=4y6pPog2OfYkKDoCH3taM66wyg0-_2XPdVc4wNE5e6o&code_challenge_method=S256&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fv3%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPDEHn9Vl9cq4hHBBMq6zc177NmZf6q1F80FQO-cykZKbEkYMJluMWEIBB3GArYIPQvhWptcDrOZDZ3SFUkGZDGbGGyTe9B9VEWDSsktVE3aanP5NwV9VrF8xdekP35iBAXt89KvoXrSKsIUJP5Lbuhh6BILK2DDtPgZ_SnyvyXQjkvqTDjDSNUoOtkDHIabFTXMWF5NpXitK9xCozOla706cSsP9qOGHXAjCDbRND1co6T6X-RfGCiprt1jHSAOKL-tm6ZGp67V-gNddm3H9zXtVNZlfB0QbzHzXIG5GKfOBBleoKKhfnwspAAkMq4431nyOoCG4n3HmbsrM1QiOl0WZKX5K67tonI4N8WuXkeYKiZlMo3l2Zr4mk0MOhjdXFu3PAALZAoq29tWLtqxkURHK3bMrMBL_a8P8UD528Z_mKV_HqCME6Ln9AKoSK-YUIPXCgHviLqgQzy28DkukRrmcvYag%26flowName%3DGeneralOAuthFlow%26as%3DS1916310644%253A1788968762606591%26client_id%3D365941595420-v51i7q8ik0crmaoltkhuo5ogb1kekl6f.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fv3%252Fconsent%23&dsh=S1916310644%3A1788968762606591&flowName=GeneralOAuthFlow&o2v=2&opparams=%253F&redirect_uri=https%3A%2F%2Flabs.google%2Ffx%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faisandbox%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&service=lso&state=5gFZ_vdBptFzftHatJbRvoKQaAaaQT8_hySICzTVEVA",
+  "title": "Welcome",
+  "body": "Loading\nSign in with Google\nWelcome\nbenoats@googlemail.com\nVerifying it\u2019s you...\nComplete sign-in using your passkey\nTry another way\nEnglish (United States)\nHelp\nPrivacy\nTerms\nWelcome",
+  "passkey_markers": {
+    "passkey_word": true,
+    "verifying": true,
+    "try_another_way": true,
+    "googlemail_chip": true,
+    "wrong_account_86_visible": false
+  },
+  "screenshot": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/flow_googlemail_passkey_blocker_RESUME.png",
+  "instruction": "STOP_TO_COS BLOCKED_AUTH \u2014 do not paint / do not mint on benoats86"
+}
