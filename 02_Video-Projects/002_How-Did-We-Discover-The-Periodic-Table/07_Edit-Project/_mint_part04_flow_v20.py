@@ -66,9 +66,11 @@ STYLE = (
     "Silent. No Orbit. No Ken Burns still. No paint / no double-exposure."
 )
 CLEAN = (
-    "CLEAN LIGHT (BIBLE HARD): warm desk-lamp glow ONLY. "
+    "CLEAN LIGHT (BIBLE HARD): warm desk-lamp glow ONLY — a soft continuous luminous cone. "
     "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO sparks, ZERO embers, "
     "ZERO flames, ZERO burning chair rim, ZERO dripping bulb goo onto desk/chair. "
+    "ZERO lamp-beam sparks, ZERO floating embers, ZERO fire spit motes, ZERO firework particles, "
+    "ZERO ash flecks, ZERO glowing coal dots drifting in the beam (try7 UAT: continuous beam sparks FAIL — never soft-pass as dust). "
     "Soft continuous warm cone — no stepped banding rings on the lamp shade. "
     "Empty Chairs = ONE soft rectangular panel glow ONLY — never double edge."
 )
@@ -144,7 +146,9 @@ PROMPTS = {
         "Image-to-video from the attached start frame. Prediction settle / walk-to-address beat. "
         "Finished cinematic stylised 3D chemist study — NOT flat unfinished vector. "
         "CLEAN LIGHT HARD: SOLID lamps only — ZERO lava drip / molten leak / fire spit "
-        "from the bulb onto chair or desk. Readable element cards. LOCKED CAMERA. Silent. "
+        "from the bulb onto chair or desk. ZERO flames behind the chair. "
+        "Do NOT write letters or UI on cards if they would be garbled — blank paper stacks OK. "
+        "Readable element cards. LOCKED CAMERA. Silent. "
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
     "09_risk_bet": (
@@ -159,18 +163,14 @@ PROMPTS = {
     "09b_risk_hold": (
         "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact empty-chair chemist study. "
         "A BET / risk-hold settle beat. Finished cinematic stylised 3D — honey wood desk, empty wooden chair, "
-        "bookshelf, soft rectangular Empty Chairs panel glow on the chair back (one soft finished translucent "
-        "rectangle only). LOCKED TRIPOD CAMERA. Silent. "
+        "bookshelf, moon in the window. LOCKED TRIPOD CAMERA. Silent. "
         "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds: warm clean desk-lamp glow ONLY. "
         "HARD BAN forever (t0 through t8): fire, flame, flames, spark, sparks, ember, embers, lava, lava drip, "
-        "molten leak, fire spit, burning chair rim, candle flicker on furniture, firework particles, glowing coal "
-        "on desk/chair, lava bloom under the shade, dripping bulb goo. Parent try5 UAT HARD FAIL = desk flames "
-        "t4.5–t7.2 — NEVER repeat. Soft continuous warm lamp cone only — no particle spit. "
-        "CARDS — HOUSE HARD FAIL IF BROKEN: ZERO unfinished flat card overlays, ZERO 2D paste-on stickers, "
-        "ZERO garbled flat letter tiles, ZERO screen-locked HUD cards that ignore perspective. "
-        "If element cards appear they MUST be finished thick 3D props (paper/wood/enamel tiles with real thickness, "
-        "bevel, contact shadows, lit by the same lamp). Prefer a clean desk with only books + lamp + Empty Chairs "
-        "panel if cards would look flat or garbled. NOT flat unfinished vlog vector. NOT cheap cel. "
+        "molten leak, fire spit, burning chair rim, candle flicker, firework particles, glowing coal, "
+        "dripping bulb goo, lamp-beam sparks, floating embers. "
+        "Chair back is PLAIN finished wood. Do NOT write any words, labels, captions, UI, or signage "
+        "anywhere in the frame. No lettering on the chair. No HUD. "
+        "CARDLESS desk: ceramic vessels, mortar, flasks, one blank paper stack, lamp, chair only. "
         "No Explorer. No Orbit. No paint. No double-exposure. "
         + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),

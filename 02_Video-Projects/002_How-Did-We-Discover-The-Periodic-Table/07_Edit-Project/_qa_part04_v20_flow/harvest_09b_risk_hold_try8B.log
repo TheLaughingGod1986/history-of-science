@@ -1,0 +1,11 @@
+poll thumbs=1 elapsed=6s
+dl 720p: Locator.click: Timeout 4000ms exceeded.
+Call log:
+  - waiting for get_by_text(re.compile(r"720p", re.IGNORECASE)).first
+
+dl Download$: Timeout 90000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+poll thumbs=2 elapsed=115s
+OK bytes=1444721 via=720p

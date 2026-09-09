@@ -1,0 +1,12 @@
+PLATE-FIRST 09b_risk_hold try8
+mp4: /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try8.mp4
+sha256: ff544cf308bc9e5e9c325debc142cf355156f22e5a79bfde229b0078ac2895ef
+gate: PASS_TRY8_SELF
+lamp_beam_sparks: PASS (warm clean cone; no continuous sparks/embers)
+flat_cards: PASS (cardless desk; soft Empty Chairs panel OK)
+dna: KEEP v01 09b empty-chair moon cardless (NOT try6/7 flat DNA 2a651abc…)
+flow: https://flow.google.com/project/0ba58130-bc20-47c8-b8e2-1b1d77947973
+iCloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try8/
+try8A: SELF_REJECT_FLAT_CARDS (lamp clean; HJ/CoB flats) — archived _rejected/
+try7 UAT amend: CLEAN LIGHT NOT CLEARED (beam sparks) + unfinished flats
+NO assemble. NO other plates.
