@@ -1,0 +1,44 @@
+{
+  "profile": "/Users/benjaminoats/.playwright-hos-flow-profile",
+  "checks": [
+    {
+      "tried": "https://flow.google.com/",
+      "final_url": "https://flow.google.com/",
+      "title": "Google Flow \u2013 AI creative studio for video, images and custom tools",
+      "shot": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/probe_flow.google.com_.png",
+      "googlemail": false,
+      "gmail_main": false,
+      "forbidden86": true,
+      "passkey": false,
+      "sign_in": true,
+      "credits_hint": false,
+      "body_snip": "Skip to main content\nGoogle Flow\nFlow Music\ntv\nFlow TV\nhelp\nmore_vert\nCreate characters and cast them anywhere.\n\nDefine their look, voice, and personality once. Reference them anywhere with a simple @tag.\n\naccessibility_new\nCreate a character\nclose\nSept 07 - 14:57\nedit\ndelete\nSept 06 - 22:13\nedit\ndelete\nSept 06 - 21:57\nedit\ndelete\nSept 06 - 13:41\nedit\ndelete\nSept 06 - 13:25\nedit\ndelete\nSept 06 - 13:24\nedit\ndelete\nSept 06 - 12:27\nedit\ndelete\nSept 06 - 12:15\nedit\ndelete\nSept 06 - 12:14\nedit\ndelete\nSept 06 - 12:13\nedit\ndelete\nSept 06 - 12:10\nedit\ndelete\nSept 05 - 12:46\nedit\ndelete\nSept 05 - 12:05"
+    },
+    {
+      "tried": "https://labs.google/fx/tools/flow",
+      "final_url": "https://accounts.google.com/v3/signin/accountchooser?client_id=365941595420-v51i7q8ik0crmaoltkhuo5ogb1kekl6f.apps.googleusercontent.com&code_challenge=CGafAdhbgNSkPo9v5v5i_6f4YK04oiKdAntfNd9PzwI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Flabs.google%2Ffx%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faisandbox+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&state=prNjtRwBwVUdMiWoZrEUScf6Ls8p4L1rL9DQp-BF22U&dsh=S974317267%3A1788968666494573&o2v=2&service=lso&flowName=GeneralOAuthFlow&opparams=%253F&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fv3%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAP-buxm8t74vT7iQl5TKyGbaMBcxJ4iQkhyjIz--7-KRGJ_J7cVFCN2sBlkvTru332cV1d-b8mqHyzzfzIs2W4buq8i4JA10V2JyCeVz9N8Uanp4Dk51bKzqMoqK-7HfU5eY1zqi6QocUidgKXIxsCFi0En8ALhComWB0SwXHfp1J8vzN00kbTRzrsFwxXI1d2S0tqHMU5k6OyP8b9RL_B-zZi_QdHyXvkvqBQ9gLgzwgve7qUZV0j4vCe2D5pYXiWqpwP4HNuJ2XrBKTUtEXOTe3C59iBBxzVsNlSejGYRiXuoAqtKVmaFHXBFNorrU-fu8CVInZciqIYYoot5SR5dsEMaMRc9N_ziopeSm4r5h9EZqb-dGKTtH6TpWdls3MYjRxWalmJ2JPSJ32OQqECznjn8GYlx8xrwSSGoZS5MZGigd6g9rVTyuoUI2jCSlMSeRa8sbMvn4Q01nMJZZy-HVmsdSA%26flowName%3DGeneralOAuthFlow%26as%3DS974317267%253A1788968666494573%26client_id%3D365941595420-v51i7q8ik0crmaoltkhuo5ogb1kekl6f.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fv3%252Fconsent%23&app_domain=https%3A%2F%2Flabs.google",
+      "title": "Sign in \u2013 Google accounts",
+      "shot": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/probe_labs.google_fx_tools_flow.png",
+      "googlemail": true,
+      "gmail_main": false,
+      "forbidden86": true,
+      "passkey": false,
+      "sign_in": true,
+      "credits_hint": false,
+      "body_snip": "Loading\nSign in with Google\nChoose an account\nto continue to AI Test Kitchen\nBenjamin Oats\nbenoats@googlemail.com\nBenjamin Oats\nbenoats86@gmail.com\nUse another account\nBefore using this app, you can review AI Test Kitchen\u2019s Privacy Policy and Terms of Service.\nEnglish (United Kingdom)\nHelp\nPrivacy\nTerms"
+    },
+    {
+      "tried": "https://flow.google.com/u/1/",
+      "final_url": "https://flow.google.com/u/1/about",
+      "title": "Google Flow \u2013 AI creative studio for video, images and custom tools",
+      "shot": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/probe_flow.google.com_u_1_.png",
+      "googlemail": false,
+      "gmail_main": false,
+      "forbidden86": false,
+      "passkey": false,
+      "sign_in": true,
+      "credits_hint": true,
+      "body_snip": "Skip to main content\nOverview\nModels\nCapabilities\nTools\nFlow Sessions\nPricing\nmore_vert\nGoogle Flow\n\nYour AI creative studio built with Google's advanced generative models.\n\nCreate with Google Flow\n\nExploreGoogle AI subscriptions. SeeFAQ.\nFeatures may vary by Google AI subscription tier, platform (web vs mobile) and region. 18+.\n\nkeyboard_arrow_down\nUnlock your\nbest creative work\nplay_arrow\nOur models\n\nGoogle Flow collaborates with creatives at every stage, from idea to execution \u2013 all using Google\u2019s advanced generative models.\n\nGemini Omni\n\nCreate and edit videos from any input reference \u2013 re"
+    }
+  ]
+}

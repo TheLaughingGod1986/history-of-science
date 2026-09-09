@@ -2,16 +2,20 @@
 
 **Status:** `STOP_TO_COS` · **BLOCKED_AUTH** · do **not** declare PASS · **NO PAINT** · no Ben ping
 
-## Resume (this turn)
+## Retry (this turn)
 
-Ben: Flow is **NOT blocked** now. Re-verified login on **`benoats@googlemail.com`** (NOT `benoats86@gmail.com` @ ~50 credits).
+Ben: try now — Mini Flow should be signed in.
+
+**Unblock check:** opened Flow as `benoats@googlemail.com` (NOT benoats86).
 
 **Result:** passkey challenge still blocks googlemail (`Verifying it's you…` / `Complete sign-in using your passkey`).
+Live `flow.google.com/u/1` session is **forbidden** `benoats86@gmail.com` with **50 credits** — must not mint there.
 
-**Action:** **STOP_TO_COS BLOCKED_AUTH only.** Did not paint. Did not temporal-median. Did not brightness-motion. Did not mint on the 50-credit account.
+**Action:** **STOP_TO_COS BLOCKED_AUTH only.** Did not paint. Did not temporal-median. Did not brightness-motion. Did not mint.
 
 Evidence:
-- `07_Edit-Project/_qa_part04_v19_auth/flow_googlemail_passkey_blocker_RESUME.png`
+- `07_Edit-Project/_qa_part04_v19_auth/cdp_retry_0_after_googlemail.png`
+- `07_Edit-Project/_qa_part04_v19_auth/cdp_u1_click_1.png` (86 @ 50 credits)
 - `07_Edit-Project/_qa_part04_v19_auth/STOP_TO_COS_BLOCKED_AUTH.json`
 - Meta: `part04_mint_flow_v19_meta.json` → `status: STOP_TO_COS_BLOCKED_AUTH`
 
@@ -35,10 +39,11 @@ KEEP (assemble): plate `10` · CLEAN LIGHT `09`/`09b` · written cards ~40.
 - `_prep_part04_v19_start_frames.py` + starts under `04_Generated-Clips/part04/refs/v19_start_frames/`
 - `_mint_part04_flow_v19.py` — Flow I2V + gallery harvest · ghost/MAD reject · **no paint path**
 - `_assemble_part04_rough_v19.py` — remint 06/11/11b from `v19_fast` · keep family from v18
+- FAIL refs: `07_Edit-Project/_qa_part04_v19_fail_refs/`
 
 ## CoS unblock
 
-1. On Mini, approve passkey for `benoats@googlemail.com` until Flow shows googlemail + ~10050 credits (not 50).
+1. On Mini, approve passkey for `benoats@googlemail.com` until Flow shows googlemail + ~8k–10k credits (not 50 / not benoats86).
 2. Re-run:
    ```bash
    HOS_V19_MAX_CREATES=3 python3 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_mint_part04_flow_v19.py

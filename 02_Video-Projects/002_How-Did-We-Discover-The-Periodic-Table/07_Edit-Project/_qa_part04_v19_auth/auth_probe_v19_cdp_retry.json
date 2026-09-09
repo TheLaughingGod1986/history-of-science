@@ -1,0 +1,65 @@
+{
+  "when": "2026-09-09T17:33:44+0100",
+  "results": [
+    {
+      "label": "0",
+      "url": "https://accounts.google.com/v3/signin/accountchooser?client_id=365941595420-v51i7q8ik0crmaoltkhuo5ogb1kekl6f.apps.googleusercontent.com&code_challenge=C56xi7SWgClTvBGYXk2CI6ki5q3K01oJNFT-XxeVRWw&code_challenge_method=S256&redirect_uri=https%3A%2F%2Flabs.google%2Ffx%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faisandbox+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&state=tF4WsihqCBBlbUdpcZslvdNyGp0dIjxJMZzNDITDdTc&dsh=S2116640319%3A1788971572891257&o2v=2&service=lso&flowName=GeneralOAuthFlow&opparams=%253F&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fv3%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAOjcQwbfm6T4yNY10n6Fak_hemswkE-wxi5EXRFvN7RpxqMbcV08-ihbgzIp2ENwh9s5fn5X2E-PU2oExwqAuYx-aTKaarcwx2BNh05WqbAOaqXP2Y5Sbh2gELwQx71nXJtpHVv-YJI3k3R_aczoV6W8XIjMDoadhCPfvJlM1XHeobhfkTzFDwjDzTXtT2aa8w4HAnZRGaXXYZaIUWp4GhVncbkCY4LRbUsFa02Bh5IP-5hiumLkrLSusF90r0DzQ_c4o9moCd24iWnHz_3z2x8O8cgbAdaDHwvoOfwN90P55SYi4l8IA6IIejCX4eYIGd9xIhFGgBbb3VHnEzjJ5VIBCVa_KRB9yEiEN2r6reWFtvQnRxYS3Vy-Q2eYhcUVA-g0p886bD9mwFyE5W8KXBJhOqew1YU80v5vTLdPTPC52oszcKOcq6854VITayxvKutUKYlzpVDJwQrumjPSBEUt5hIYw%26flowName%3DGeneralOAuthFlow%26as%3DS2116640319%253A1788971572891257%26client_id%3D365941595420-v51i7q8ik0crmaoltkhuo5ogb1kekl6f.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fv3%252Fconsent%23&app_domain=https%3A%2F%2Flabs.google",
+      "title": "Sign in - Google Accounts",
+      "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/cdp_retry_0.png",
+      "googlemail": true,
+      "forbidden86": true,
+      "passkey": false,
+      "sign_in_wall": true,
+      "credits": null,
+      "snip": "Loading\nSign in with Google\nChoose an account\nto continue to AI Test Kitchen\nBenjamin Oats\nbenoats@googlemail.com\nBenjamin Oats\nbenoats86@gmail.com\nUse another account\nBefore using this app, you can review AI Test Kitchen\u2019s Privacy Policy and Terms of Service.\nEnglish (United States)\nHelp\nPrivacy\nTerms"
+    },
+    {
+      "label": "0_after_googlemail",
+      "url": "https://accounts.google.com/v3/signin/challenge/pk?TL=ACv9tzHjxMjLm94OUakuqHZzazMWZcckv77fKmL934Pn9vrwa2zD_7enBDAzGnCs&app_domain=https%3A%2F%2Flabs.google&cid=1&client_id=365941595420-v51i7q8ik0crmaoltkhuo5ogb1kekl6f.apps.googleusercontent.com&code_challenge=C56xi7SWgClTvBGYXk2CI6ki5q3K01oJNFT-XxeVRWw&code_challenge_method=S256&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fv3%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAOjcQwbfm6T4yNY10n6Fak_hemswkE-wxi5EXRFvN7RpxqMbcV08-ihbgzIp2ENwh9s5fn5X2E-PU2oExwqAuYx-aTKaarcwx2BNh05WqbAOaqXP2Y5Sbh2gELwQx71nXJtpHVv-YJI3k3R_aczoV6W8XIjMDoadhCPfvJlM1XHeobhfkTzFDwjDzTXtT2aa8w4HAnZRGaXXYZaIUWp4GhVncbkCY4LRbUsFa02Bh5IP-5hiumLkrLSusF90r0DzQ_c4o9moCd24iWnHz_3z2x8O8cgbAdaDHwvoOfwN90P55SYi4l8IA6IIejCX4eYIGd9xIhFGgBbb3VHnEzjJ5VIBCVa_KRB9yEiEN2r6reWFtvQnRxYS3Vy-Q2eYhcUVA-g0p886bD9mwFyE5W8KXBJhOqew1YU80v5vTLdPTPC52oszcKOcq6854VITayxvKutUKYlzpVDJwQrumjPSBEUt5hIYw%26flowName%3DGeneralOAuthFlow%26as%3DS2116640319%253A1788971572891257%26client_id%3D365941595420-v51i7q8ik0crmaoltkhuo5ogb1kekl6f.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fv3%252Fconsent%23&dsh=S2116640319%3A1788971572891257&flowName=GeneralOAuthFlow&o2v=2&opparams=%253F&redirect_uri=https%3A%2F%2Flabs.google%2Ffx%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faisandbox%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&service=lso&state=tF4WsihqCBBlbUdpcZslvdNyGp0dIjxJMZzNDITDdTc",
+      "title": "Welcome",
+      "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/cdp_retry_0_after_googlemail.png",
+      "googlemail": true,
+      "forbidden86": false,
+      "passkey": true,
+      "sign_in_wall": true,
+      "credits": null,
+      "snip": "Loading\nSign in with Google\nWelcome\nbenoats@googlemail.com\nVerifying it\u2019s you...\nComplete sign-in using your passkey\nTry another way\nEnglish (United States)\nHelp\nPrivacy\nTerms\nWelcome"
+    },
+    {
+      "label": "1",
+      "url": "https://flow.google.com/about",
+      "title": "Google Flow \u2013 AI creative studio for video, images and custom tools",
+      "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/cdp_retry_1.png",
+      "googlemail": false,
+      "forbidden86": false,
+      "passkey": false,
+      "sign_in_wall": false,
+      "credits": 1000,
+      "snip": "Skip to main content\nOverview\nModels\nCapabilities\nTools\nFlow Sessions\nPricing\nmore_vert\nGoogle Flow\n\nYour AI creative studio built with Google's advanced generative models.\n\nCreate with Google Flow\n\nExploreGoogle AI subscriptions. SeeFAQ.\nFeatures may vary by Google AI subscription tier, platform (web vs mobile) and region. 18+.\n\nkeyboard_arrow_down\nUnlock your\nbest creative work\nplay_arrow\nOur models\n\nGoogle Flow collaborates with creatives at every stage, from idea to execution \u2013 all using Google\u2019s advanced generative models.\n\nGemini Omni\n\nCreate and edit videos from any input reference \u2013 real or generated. Omni is a leap forward in world understanding, multimodality and conversational editing.\n\nTry in Google Flow\nLearn more\nNano Banana\n\nPowerful image generation and precise editing control. Our image models excel at subject consistency, text rendering, enhanced reasoning and much more.\n\nTry in Google Flow\nLearn more\nVeo 3.1\n\nVeo delivers expanded creative controls, native audio and quality videos. It excels in physics, realism and prompt adherence.\n\nTry in Google Flow\nLearn more\nGemini Omni\n\nCreate and edit videos from any input reference \u2013 real or generated. Omni is a leap forward in world understanding, multimodality and conversational editing.\n\nTry in Google Flow\nLearn more\nNano Banana"
+    },
+    {
+      "label": "2",
+      "url": "https://flow.google.com/u/0/about",
+      "title": "Google Flow \u2013 AI creative studio for video, images and custom tools",
+      "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/cdp_retry_2.png",
+      "googlemail": false,
+      "forbidden86": false,
+      "passkey": false,
+      "sign_in_wall": false,
+      "credits": 1000,
+      "snip": "Skip to main content\nOverview\nModels\nCapabilities\nTools\nFlow Sessions\nPricing\nmore_vert\nGoogle Flow\n\nYour AI creative studio built with Google's advanced generative models.\n\nCreate with Google Flow\n\nExploreGoogle AI subscriptions. SeeFAQ.\nFeatures may vary by Google AI subscription tier, platform (web vs mobile) and region. 18+.\n\nkeyboard_arrow_down\nUnlock your\nbest creative work\nplay_arrow\nOur models\n\nGoogle Flow collaborates with creatives at every stage, from idea to execution \u2013 all using Google\u2019s advanced generative models.\n\nGemini Omni\n\nCreate and edit videos from any input reference \u2013 real or generated. Omni is a leap forward in world understanding, multimodality and conversational editing.\n\nTry in Google Flow\nLearn more\nNano Banana\n\nPowerful image generation and precise editing control. Our image models excel at subject consistency, text rendering, enhanced reasoning and much more.\n\nTry in Google Flow\nLearn more\nVeo 3.1\n\nVeo delivers expanded creative controls, native audio and quality videos. It excels in physics, realism and prompt adherence.\n\nTry in Google Flow\nLearn more\nGemini Omni\n\nCreate and edit videos from any input reference \u2013 real or generated. Omni is a leap forward in world understanding, multimodality and conversational editing.\n\nTry in Google Flow\nLearn more\nNano Banana"
+    },
+    {
+      "label": "3",
+      "url": "https://flow.google.com/u/1/",
+      "title": "Google Flow \u2013 AI creative studio for video, images and custom tools",
+      "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/cdp_retry_3.png",
+      "googlemail": false,
+      "forbidden86": false,
+      "passkey": false,
+      "sign_in_wall": false,
+      "credits": null,
+      "snip": "Skip to main content\nGoogle Flow\nFlow Music\ntv\nFlow TV\nhelp\nmore_vert\nA creative partner at every step.\n\nBrainstorming, prompting, batch editing, organizing your media, and more\u2013 see what the agent can do for you.\n\nTry the Google Flow Agent\nclose\nSept 07 - 14:57\nedit\ndelete\nSept 06 - 22:13\nedit\ndelete\nSept 06 - 21:57\nedit\ndelete\nSept 06 - 13:41\nedit\ndelete\nSept 06 - 13:25\nedit\ndelete\nSept 06 - 13:24\nedit\ndelete\nSept 06 - 12:27\nedit\ndelete\nSept 06 - 12:15\nedit\ndelete\nSept 06 - 12:14\nedit\ndelete\nSept 06 - 12:13\nedit\ndelete\nSept 06 - 12:10\nedit\ndelete\nSept 05 - 12:46\nedit\ndelete\nSept 05 - 12:05"
+    }
+  ]
+}
