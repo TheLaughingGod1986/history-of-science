@@ -1,0 +1,20 @@
+WATCH THIS FILE ONLY (Part 04 rough v20 — Flow Ultra remint):
+  hos_002_part04_rough_v20.mp4
+
+VERDICT: SELF_FAIL (agent) — NOT a PASS.
+
+CoS / Picture→UAT gates for this cut:
+- Parent FAIL v19 sha 69d48f6e… — Ben override: flat unfinished · lava drip · lava chair · explorer unfinished.
+- Reminted 06 / 09 / 09b / 10 / 11 / 11b via Flow Ultra CDP gallery mp4 (NO paint).
+- KEEP 08/08b from v12 for this land.
+- Spot ~49 Explorer: still shows card ghosting / unfinished — FAIL.
+- Spot A BET / chair ~100: lamp lava/fire spit — CLEAN LIGHT FAIL.
+- Spot ~117–122 PUBLISH / FAMILY desk: unfinished flat vector DNA — FAIL.
+- Part 01–03 LOCKED. Flow account benoats@googlemail.com.
+- Do NOT declare PASS. Scores → CoS. No Ben ping.
+
+Reject with stills from THIS file only.
+sha256=46d5187d7689a89ea43570889af00d8f145c7a6591e87cb7aa74657f62cd5da5
+bytes=83373090
+duration=127.760
+reminted=06_explorer_leaves_gap,09_risk_bet,09b_risk_hold,10_family_before_weight,11_publish_gaps,11b_wait_and_hunt

@@ -5,10 +5,10 @@ Parent FAIL: hos_002_part04_rough_v19.mp4
   sha256 05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5
 UAT HARD FAIL parent v19: EXPLORER scalp/cards/lamp + PUBLISH ~118–127 continuous playback horizontal ghost/jitter (paint fallback).
 
-Remint (Flow Ultra gallery mp4 ONLY): 06 · 08 · 08b · 09 · 09b · 10 · 11 · 11b
+Remint (Flow Ultra gallery mp4 ONLY): 06 · 09 · 09b · 10 · 11 · 11b
   Ben override FAIL v19 stills: unfinished Explorer · lava bulbs (A PREDICTION) ·
   unfinished 1:44 / FAMILY FIRST / publish overhead 2D.
-KEEP: written cards ~40 where still clean; earlier locked plates unchanged.
+KEEP: 08/08b from v12; written cards ~40 where still clean; earlier locked plates.
 
 NO PAINT. Scores → CoS. Do not declare PASS. Do not ping Ben.
 """
@@ -61,8 +61,6 @@ CLIP_USE = 7.9
 
 REMINT_V20_IDS = {
     "06_explorer_leaves_gap",
-    "08_prediction_navigation",
-    "08b_navigation_walk",
     "09_risk_bet",
     "09b_risk_hold",
     "10_family_before_weight",
@@ -79,6 +77,8 @@ KEEP_V13_IDS = {
 KEEP_V12_IDS = {
     "05b_families_settle",
     "07_eka_placeholders",
+    "08_prediction_navigation",
+    "08b_navigation_walk",
 }
 KEEP_V11_IDS = {
     "07b_eka_names_rotate",
