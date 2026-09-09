@@ -2,7 +2,7 @@
 """Part 04 Flow remint v20 — UAT HARD FAIL bible 43d9405 (parent v19 scalp pits + publish ghosts).
 
 Parent FAIL: hos_002_part04_rough_v19.mp4
-  sha256 05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5
+  sha256 69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf
 
 Remint ONLY via Flow Ultra real gallery mp4 harvest:
   11_publish_gaps · 11b_wait_and_hunt · 06_explorer_leaves_gap
@@ -79,11 +79,17 @@ REJECT = (
     "photoreal; Orbit; twins; hat."
 )
 
+LOCK_CAM = (
+    "ABSOLUTELY LOCKED CAMERA: no camera move at all for 8 seconds. Static tripod. "
+    "Any horizontal motion causes FAIL ghost doubles — forbidden. "
+    "Single clean exposure like a still photograph that barely breathes."
+)
 PROMPTS = {
     "11_publish_gaps": (
         "Image-to-video from the attached start frame. PUBLISH THE GAPS beat. "
         "Animistry-class stylised 3D cartoon chemist desk at night. "
         "HARD LOCKED TRIPOD CAMERA — zero pan, zero dolly, zero truck, zero orbit. "
+        + LOCK_CAM + " "
         "Only tiny object settle (grid cards / flask liquid shimmer). "
         "SINGLE EXPOSURE every frame: ZERO horizontal ghost / double-edge / smear on "
         "grid lines, coloured flasks, desk lamp, magnifier. "
@@ -95,6 +101,7 @@ PROMPTS = {
         "Image-to-video from the attached start frame. Wait-and-hunt beat. "
         "Published flat parchment grid with empty circular holes, flasks, soft warm lamp. "
         "HARD LOCKED TRIPOD CAMERA — zero horizontal pan / smear. "
+        + LOCK_CAM + " "
         "SINGLE EXPOSURE continuous playback: ZERO ghost doubles on grid / flasks / lamp / magnifier "
         "in mid frames. Soft continuous light. No Explorer. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
@@ -105,7 +112,8 @@ PROMPTS = {
         "scalp pits or face-cloud blotches, gold glasses rim readable, teal coat. "
         "Desk cards MUST stay readable as H1, C12, N14, O16 (never C1, never N12, never garbled). "
         "Smooth warm lamp glow — no stepped banding rings. "
-        "LOCKED CAMERA or tiny settle only. Continuous subtle motion. Silent. "
+        "LOCKED CAMERA. Dense opaque brown crown ZERO black scalp pits. "
+        "Smooth lamp ZERO stepped banding. Cards exactly H1 C12 N14 O16. Silent. "
         + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
     ),
 }
