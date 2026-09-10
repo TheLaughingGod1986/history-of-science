@@ -1,6 +1,7 @@
-20/20 KEEP. P04 v25 PASS / LOCKED.
-VO: 144.160s. Assemble rough v01 next.
+ASSEMBLED. P04 v25 PASS / LOCKED. Part 05 rough v01 landed.
 
-KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07, 07b t3, 08, 08b, 09, 09b t2, 10 t4, 10b t3, 11 t4, 11b t2.
+WATCH: 09_Final-Export/hos_002_part05_rough_v01.mp4
+sha256=8dcb06b596318a7283210928fbb0e78f6f89c7db5d200b8edeefbaa9b5522ec4
+duration=147.310s  20/20 KEEP. Scores → CoS. Do not declare PASS.
 
-Do not remint P01–P04. Do not remint VO. Scores → CoS. Do not declare PASS.
+Do not remint P01–P04. Do not remint VO.
