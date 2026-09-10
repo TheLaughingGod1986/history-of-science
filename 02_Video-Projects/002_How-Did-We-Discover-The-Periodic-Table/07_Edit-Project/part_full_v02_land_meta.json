@@ -1,8 +1,8 @@
 {
   "file": "hos_002_periodic_table_full_v02.mp4",
-  "sha256": "09356ae1092de504382751c83408d44da473211f7921f6322dade5eb2e11ed20",
+  "sha256": "8a5b8dde713cd4d6d2834b49635443ebf5fda1a83de92688bf79ca91746de31f",
   "duration": 540.63,
-  "bytes": 437335506,
+  "bytes": 437292747,
   "xfade": 0.4,
   "card_hold": 3.0,
   "starts": {
@@ -56,7 +56,6 @@
   ],
   "card_in": 537.13,
   "card_land": 537.48,
-  "p05_picture": 393.32,
   "status": "UAT",
   "locked": false,
   "upload": false

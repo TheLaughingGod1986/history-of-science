@@ -264,7 +264,7 @@ def main() -> None:
         f"sha256={digest}\n"
         f"duration={dur:.3f}\n"
         f"bytes={size}\n"
-        "P01 cold open. P02 baked CHAPTER 2 card. Inserted parchment cards before 03–05.\n"
+        "P01 cold open. P02 baked CHAPTER 2 card. Inserted PART+year cards before 03–05.\n"
         "xfade+acrossfade 0.40s at every join. One house end card (from P05).\n"
         "Not LOCKED. Scores → CoS. Do NOT declare PASS. No Ben ping. Do not upload.\n"
     )
@@ -280,7 +280,7 @@ def main() -> None:
         "",
         "P01 stays a story cold open (house lock — no channel/title bumper at 0:00).",
         "P02 already opens on its locked CHAPTER 2 parchment card.",
-        "Parts 03–05 get matching parchment cards stating what the section is about,",
+        "Parts 03–05 get matching parchment cards: PART N, the year, a short title.",
         "then a 0.40s dissolve into the locked picture. Audio acrossfades with picture.",
         "",
         "**Parents LOCKED (hash-checked, not reminted):**",

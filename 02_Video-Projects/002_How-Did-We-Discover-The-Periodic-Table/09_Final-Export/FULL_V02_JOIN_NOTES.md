@@ -1,14 +1,15 @@
 # HOS 002 full v02 — chapter cards + soft joins (UAT, not ship lock)
 
 **Cut:** `hos_002_periodic_table_full_v02.mp4`
-**sha256:** `09356ae1092de504382751c83408d44da473211f7921f6322dade5eb2e11ed20`
-**Duration:** 540.630 s · **Size:** 437335506 B
+**sha256:** `8a5b8dde713cd4d6d2834b49635443ebf5fda1a83de92688bf79ca91746de31f`
+**Duration:** 540.630 s · **Size:** 437292747 B
 **UAT:** CoS watch only. Do **not** declare Ben PASS. Do **not** upload.
 
 P01 stays a story cold open (house lock — no channel/title bumper at 0:00).
 P02 already opens on its locked CHAPTER 2 parchment card.
-Parts 03–05 get matching parchment cards stating what the section is about,
-then a 0.40s dissolve into the locked picture. Audio acrossfades with picture.
+Parts 03–05 get matching parchment cards: PART N, the year, a short title
+(1860 The ruler · 1869 Empty chairs · 1875 The guests).
+Then a 0.40s dissolve into the locked picture. Audio acrossfades with picture.
 
 **Parents LOCKED (hash-checked, not reminted):**
 
@@ -27,7 +28,6 @@ then a 0.40s dissolve into the locked picture. Audio acrossfades with picture.
 | Card 03 A ruler for atoms | 168.880 |
 | Card 04 Empty chairs | 260.760 |
 | Card 05 The guests arrive | 390.720 |
-| P05 picture | 393.320 |
 | End-card dissolve | 537.130 |
 | End card on | 537.480 |
 | Film out | 540.630 |
