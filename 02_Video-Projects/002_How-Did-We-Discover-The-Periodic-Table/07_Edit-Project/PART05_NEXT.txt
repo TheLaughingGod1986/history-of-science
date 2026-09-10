@@ -1,8 +1,7 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. 9/20 KEEP. Do not assemble yet.
+VO: 144.160s. 10/20 KEEP. Do not assemble yet.
 
-KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06.
-FAIL 06b try1–2 flame icons. Next: 06b try3 one blank card on empty wall + 07 wide unfinished.
+KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 07.
+FAIL 06b try1–3 (flame icons / sparks). Next: 06b try4 MEDIUM classroom dolly + 07b noble-gas column.
 
-Lesson: do not prompt glowing holes; Veo paints fire. Pictogram grids also spawn flame icons.
 Do not remint P01–P04.

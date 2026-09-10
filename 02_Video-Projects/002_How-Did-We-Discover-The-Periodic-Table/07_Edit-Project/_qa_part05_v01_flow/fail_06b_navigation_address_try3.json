@@ -1,0 +1,15 @@
+{
+  "plate": "06b_navigation_address",
+  "try": "3",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/06b_navigation_address_v01_try3.mp4",
+  "sha256": "e72a0f368d47931eb06c16ec39bbcdcf27f3c156cf63d04acb0d7ebe5ff8ca29",
+  "bytes": 1848769,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/ca39ec4c-7ec1-4116-a270-ca66eec1ea00",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "one blank card on wood; camera push; no pictogram grid",
+  "fail": "At ~5.5s orange sparks/embers appear at the left and right edges of the card. Do not assemble.",
+  "next": "try4 NEW FRAMING: stay MEDIUM across a classroom; never CU the card."
+}

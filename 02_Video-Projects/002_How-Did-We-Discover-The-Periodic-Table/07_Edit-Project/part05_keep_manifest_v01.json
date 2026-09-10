@@ -38,6 +38,10 @@
     "05b_germanium_verdict": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/05b_germanium_verdict_v01_try4.mp4",
       "sha256": "b43701c7d23b84ce5713072c62a0fe6fc84cfb34dbc8152da0f8402a78305e73"
+    },
+    "07_table_not_finished": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/07_table_not_finished_v01_try1.mp4",
+      "sha256": "6117c40c9e731858832cbbc08eda6465c001684ac9639bcb1d035331a8ddef84"
     }
   }
 }
