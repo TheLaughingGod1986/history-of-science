@@ -5,7 +5,7 @@ Parent: 11_publish_gaps try9 Fast UAT KEEP
   sha 97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72
 Start: last frame of 11 KEEP (continuity join).
 DNA: same board-top edge-off / zerolamp moon-window as 11 KEEP.
-Model: Veo 3.1 - Fast (zerolamp low-risk like 11 KEEP; Quality invents left lamp on this desk family).
+Model: Veo 3.1 - Quality REQUIRED (CLEAN LIGHT class per locked Showrunner brief).
 Seedance banned. Paint banned. No assemble. No 09b. No remint 06/11.
 
 Auth: Mini CDP benoats@googlemail.com ULTRA. STOP on passkey.
@@ -35,8 +35,8 @@ START = REF / "11b_wait_and_hunt_start_v20.jpg"
 LOCK = REF / "11b_wait_and_hunt_start_v20_from_11_try9_KEEP_last.jpg"
 QA_DIR = PROJ / "07_Edit-Project/_qa_part04_v20_plates_try1_11b"
 START_COUNTER = QA_DIR / "start_counter.json"
-# Zerolamp low-risk DNA matching 11 KEEP Fast — Quality invents left lamp on this desk family.
-MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Fast"
+# CLEAN LIGHT class — Quality REQUIRED (locked brief). Seedance banned.
+MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Quality"
 REQUIRED_EMAIL = "benoats@googlemail.com"
 MAX_STARTS = 2
 OUT = PROJ / "07_Edit-Project/_qa_part04_v20_flow/submit_11b_wait_and_hunt_try1.json"
@@ -47,7 +47,7 @@ MAIN_LOCK = "3bc0414"
 PROMPT = (
     "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact beat only. "
     "Plate 11b_wait_and_hunt try1 — WAIT AND HUNT (sibling after 11_publish_gaps KEEP; "
-    "continuity join from 11 last frame; Veo 3.1 Fast; zerolamp DNA). "
+    "continuity join from 11 last frame; Veo 3.1 Quality; zerolamp DNA). "
     "Finished cinematic stylised 3D chemist desk (Animistry-class). "
     "NOT flat unfinished vlog vector. NOT 2D cutouts. "
     "Hero: TOP of published parchment/grid with CLEAR circular holes / empty seats, "
@@ -194,6 +194,8 @@ def main() -> None:
         if need.lower() not in PROMPT.lower():
             raise SystemExit(f"ABORT: prompt missing {need}")
 
+    if "Quality" not in MODEL:
+        raise SystemExit("ABORT: locked brief requires Veo 3.1 Quality for 11b (CLEAN LIGHT class)")
     if "Seedance" in MODEL or "seedance" in MODEL.lower():
         raise SystemExit("ABORT: Seedance banned")
 

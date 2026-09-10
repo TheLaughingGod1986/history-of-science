@@ -26,7 +26,7 @@
   "plate_library_lock_sha": "4b8ed25",
   "main_lock_sha": "3bc0414",
   "model": "Veo 3.1 - Quality",
-  "model_rationale": "Fast OK \u2014 zerolamp low-risk DNA matching 11 KEEP; Quality invents left lamp on this desk family (try9Q SELF_REJECT)",
+  "model_rationale": "Quality REQUIRED \u2014 CLEAN LIGHT class per locked Showrunner brief",
   "seedance": "banned",
   "when": "2026-09-10T11:19:26",
   "auth": {
@@ -52,5 +52,6 @@
     "06_explorer_leaves_gap",
     "11_publish_gaps",
     "assemble"
-  ]
+  ],
+  "brief_lock": "PART04_NEXT_PLATE_11B_WAIT_AND_HUNT.md"
 }

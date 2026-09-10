@@ -85,4 +85,4 @@
 ---
 
 ## Status (Picture 10 Sep)
-`11b_wait_and_hunt` try1 Quality **KEEP_CANDIDATE** sha `5602762e…3075e` (from 11 KEEP last; CLEAN LIGHT/flask/text CLEAR on eyeball). Starts 1/2. iCloud `HOS UAT/part04_plate_11b_wait_and_hunt_try1/`. No assemble. No 09b. Scores → CoS.
+`11b_wait_and_hunt` try1 Quality **KEEP_CANDIDATE** sha `5602762e…b3075e` (from 11 KEEP last; CLEAN LIGHT/flask/text CLEAR on eyeball). Starts 1/2. iCloud `HOS UAT/part04_plate_11b_wait_and_hunt_try1/`. No assemble. No 09b. Scores → CoS.
