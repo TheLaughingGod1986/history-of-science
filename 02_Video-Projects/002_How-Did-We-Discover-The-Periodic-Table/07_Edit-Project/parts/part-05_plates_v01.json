@@ -52,8 +52,8 @@
       "i2v": false,
       "model": "Veo 3.1 - Quality",
       "side_label": "GALLIUM",
-      "mute_test": "CU of on-model Explorer palm: cool SILVER metal puddles. Glasses + teal coat readable. No lava.",
-      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. Young boy Explorer: messy chestnut hair covering the crown, round gold glasses VISIBLE, dark teal trenchcoat, mustard vest, brown bow tie, satchel. CU warm palm: cool SILVERY soft metal puddles like room-temp gallium — SILVER not orange. Continuous melt settle. Finished hair. Silent. HARD REJECT: lava drip, molten bead, orange fire, flame, academic blazer, unfinished mid-crown hair, Orbit, toy-scale OTS, Ken Burns only. Plate-library lock 4b8ed25."
+      "mute_test": "WAIST-UP Explorer looking down at a SMALL silver puddle in his palm. Head, round gold glasses, teal coat MUST stay in frame. Palm is a prop, not a giant disembodied hand CU. No lava.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. WAIST-UP medium shot of ONE finished Explorer boy looking DOWN at his own palm. Messy chestnut hair covering the crown, round gold glasses VISIBLE the whole take, dark teal trenchcoat, mustard vest, brown bow tie, satchel. A SMALL cool SILVER metal puddle sits in the palm — tin/pewter, never orange. Head and coat fill the upper frame; the palm is lower-third only. FORBIDDEN: giant disembodied hand filling the frame, palm-only CU, no face, no glasses. Continuous look+melt. Silent. HARD REJECT: lava drip, molten bead, orange fire, flame, academic blazer, unfinished mid-crown hair, Orbit, toy-scale OTS, Ken Burns only. Plate-library lock 4b8ed25."
     },
     {
       "id": "04_gallium_fills_seat",
