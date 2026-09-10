@@ -1,8 +1,7 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. 11/20 KEEP. Do not assemble yet.
+VO: 144.160s. 13/20 KEEP. Do not assemble yet.
 
-KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07.
-FAIL 07b try1 gallery / try2 gold neon strip.
-Next: cycle v01_c18 — 07b try3 no-neon column + 08 barcode sweep.
+KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07, 07b t3, 08.
+Next: cycle v01_c19 — 08b two seats swap + 09 everyday seats.
 
 Do not remint P01–P04.

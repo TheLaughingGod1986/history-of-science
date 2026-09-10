@@ -46,6 +46,14 @@
     "06b_navigation_address": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/06b_navigation_address_v01_try5.mp4",
       "sha256": "74779c7592ea86f4295862816d8da12d8edd425e4b4b447a11f79bde3393b48c"
+    },
+    "07b_noble_gas_column": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/07b_noble_gas_column_v01_try3.mp4",
+      "sha256": "3cfe1ba14a5e809af11004209477229c5f809e2512bcf39dde2db52b6db01383"
+    },
+    "08_atomic_number_ruler": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/08_atomic_number_ruler_v01_try1.mp4",
+      "sha256": "5b63e784aab4c828eb373c26f6bb81e360ca868b36b81d987c48639e397e54f5"
     }
   }
 }
