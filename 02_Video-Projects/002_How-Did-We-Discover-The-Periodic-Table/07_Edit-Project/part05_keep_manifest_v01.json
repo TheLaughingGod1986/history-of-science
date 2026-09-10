@@ -54,6 +54,14 @@
     "08_atomic_number_ruler": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/08_atomic_number_ruler_v01_try1.mp4",
       "sha256": "5b63e784aab4c828eb373c26f6bb81e360ca868b36b81d987c48639e397e54f5"
+    },
+    "08b_weight_vs_identity": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/08b_weight_vs_identity_v01_try1.mp4",
+      "sha256": "d0b9263452b2e216d0a046d3817d117d8f292ea50d8a4cae70a2f02b6c0a8ab5"
+    },
+    "09_everyday_seats": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/09_everyday_seats_v01_try1.mp4",
+      "sha256": "e72efc825b96d3687e757315fae6f7c21b1795284ea259b46b62a824b1072b5a"
     }
   }
 }

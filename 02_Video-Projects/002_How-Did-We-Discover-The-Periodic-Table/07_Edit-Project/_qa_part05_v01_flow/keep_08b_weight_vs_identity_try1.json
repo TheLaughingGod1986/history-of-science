@@ -1,0 +1,13 @@
+{
+  "plate": "08b_weight_vs_identity",
+  "try": "1",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/08b_weight_vs_identity_v01_try1.mp4",
+  "sha256": "d0b9263452b2e216d0a046d3817d117d8f292ea50d8a4cae70a2f02b6c0a8ab5",
+  "bytes": 2177832,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/30794e14-e5f7-4b97-ba8a-cc77fc015dc3",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "Two cream cards swap on honey wood as a pale barcode card passes. Cool white light, not orange fire. Distinct from 08's sweep-across-marked-tiles."
+}

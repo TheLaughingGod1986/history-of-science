@@ -1,0 +1,13 @@
+{
+  "cycle": "v01_c22_11b",
+  "jobs": [
+    {
+      "plate": "11b_late_for_dinner",
+      "try": "1_v01",
+      "which": "vacancy_pulses_orbit",
+      "note": "last blank card pulses; slow camera orbit; not a freeze of 11",
+      "out": "submit_11b_late_for_dinner_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11b_late_for_dinner try1 — late for dinner. VO beat: the next guest is already late. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream cards as KEEP 07. The last blank unprinted cream card pulses once more as if a guest is late. Camera slow orbit around that card. Continuous motion, never freeze. Cool pale, never orange fire, never neon. Daytime window bounce only. No person. No lamp. NEVER a white gallery. Silent. HARD REJECT: lava, fire, model-town, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    }
+  ]
+}
