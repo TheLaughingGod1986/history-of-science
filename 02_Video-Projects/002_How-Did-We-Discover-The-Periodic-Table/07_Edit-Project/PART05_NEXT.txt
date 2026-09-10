@@ -1,11 +1,8 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. 10/20 KEEP. Do not assemble yet.
+VO: 144.160s. 11/20 KEEP. Do not assemble yet.
 
-KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 07.
-FAIL 06b try1–4 (flame icons / sparks / modern classroom WALL CHAIRT).
-FAIL 07b try1 (white gallery tiles, not 1869 wood wall).
-Next: cycle v01_c17 — 06b try5 wood-wall medium dolly + 07b try2 column pins onto wood wall.
-
-DNA lock for remaining plates: honey-wood 1869 WALL of cream cards (KEEP 07). Never modern classroom. Never white gallery. Never glow-hole fire.
+KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07.
+FAIL 07b try1 gallery / try2 gold neon strip.
+Next: cycle v01_c18 — 07b try3 no-neon column + 08 barcode sweep.
 
 Do not remint P01–P04.

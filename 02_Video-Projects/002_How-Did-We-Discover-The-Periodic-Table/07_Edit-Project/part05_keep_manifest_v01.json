@@ -42,6 +42,10 @@
     "07_table_not_finished": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/07_table_not_finished_v01_try1.mp4",
       "sha256": "6117c40c9e731858832cbbc08eda6465c001684ac9639bcb1d035331a8ddef84"
+    },
+    "06b_navigation_address": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/06b_navigation_address_v01_try5.mp4",
+      "sha256": "74779c7592ea86f4295862816d8da12d8edd425e4b4b447a11f79bde3393b48c"
     }
   }
 }

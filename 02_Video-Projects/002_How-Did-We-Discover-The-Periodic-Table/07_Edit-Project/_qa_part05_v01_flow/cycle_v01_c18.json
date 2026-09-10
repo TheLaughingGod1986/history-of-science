@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c18_07b3_08",
+  "jobs": [
+    {
+      "plate": "07b_noble_gas_column",
+      "try": "3_v01",
+      "which": "wood_wall_column_no_neon",
+      "note": "new cream-card column pins from the right; zero neon/lamp strips",
+      "out": "submit_07b_noble_gas_column_try3.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 07b_noble_gas_column try3 — noble gases. VO beat: a new column of seats. ONE continuous 8s take. SAME 1869 classroom DNA as KEEP 07: honey-wood panelling, cream element cards on a WALL GRID. A NEW vertical COLUMN of pale cream cards slides in from the RIGHT and pins onto that wood wall beside the existing grid. Daytime window bounce ONLY. ZERO lamps. ZERO neon. ZERO gold light-strips. ZERO glowing frames. ZERO orange or amber light. Cards are matte cream paper, not glowing. NEVER buildings, NEVER houses, NEVER a white gallery. Sparse 1-2 letter marks OK. No English words. No person. Continuous slide. Silent. HARD REJECT: model-town, lava, fire, neon, Ken Burns only, moon-desk still-life, white gallery, modern classroom. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "08_atomic_number_ruler",
+      "try": "1_v01",
+      "which": "xray_barcode_sweep",
+      "note": "soft pale barcode light sweeps two seats on 1869 wood wall; no HUD",
+      "out": "submit_08_atomic_number_ruler_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 08_atomic_number_ruler try1 — atomic number. VO beat: a new ruler, atomic number. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream cards as KEEP 07. Soft cool pale barcode / X-ray light sweeps TWO neighbouring cream-card seats. The light is pale white-blue, never orange fire, never flaming letters, never a gold neon strip. No readable paragraphs. No HUD. No English words. NEVER a white gallery. NEVER a modern classroom. Continuous ruler sweep. Daytime window bounce only. No person. No lamp. Silent. HARD REJECT: photoreal lab, lava, fire, flaming letters, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    }
+  ]
+}
