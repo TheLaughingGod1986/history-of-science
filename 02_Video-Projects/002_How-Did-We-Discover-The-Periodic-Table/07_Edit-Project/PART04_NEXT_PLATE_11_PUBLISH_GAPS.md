@@ -6,6 +6,7 @@
 **Parked:** `09b_risk_hold`. **Do not** mint `11b` · **no assemble**.  
 **Lock:** plate-library `4b8ed25` · Flow-only (paint banned) · continuous plate UAT · one plate per FAIL cycle · googlemail ULTRA · max 2 same-DNA then STOP_TO_COS.  
 **Ben LOCK 10 Sep 2026 mid-flight:** plate 11 is CLEAN LIGHT / emissive-invent class — remaining try9 starts use **Veo 3.1 Quality** (not Fast). Seedance not a substitute. Self-REJECT on readable invented text / lamp / flask invent.  
+**Status:** try9 Fast KEEP_CANDIDATE · try9Q Quality **SELF_REJECT** (lamp invent L) → **STOP_TO_COS** (2/2 boardtop DNA). Await CoS new framing for try10.  
 **Do not touch** P01–P03 · do not resume 09b · do not remint 06.
 
 ---
