@@ -22,6 +22,10 @@
     "04_gallium_fills_seat": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/04_gallium_fills_seat_v01_try1.mp4",
       "sha256": "b828431ec255f31844861dd927c60cb58cce3c7afff6780dc928945bff802d30"
+    },
+    "04b_chemistry_rhymes": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/04b_chemistry_rhymes_v01_try1.mp4",
+      "sha256": "bef1f46fed31d34610e95454424fd44ea661d0baa547558bc571b46aa3a2f093"
     }
   }
 }
