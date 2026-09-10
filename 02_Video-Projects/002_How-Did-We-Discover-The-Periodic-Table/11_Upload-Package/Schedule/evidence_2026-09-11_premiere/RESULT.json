@@ -1,0 +1,40 @@
+{
+  "ok": false,
+  "method": "youtube_studio_hos_session",
+  "channel": {
+    "name": "History of Science",
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "studioUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": [
+    "@OrbitWithBen",
+    "@OpptiAI",
+    "@HistoryOfScience"
+  ],
+  "premiere": {
+    "date": "2026-09-17",
+    "time": "19:00",
+    "timeZone": "Europe/London",
+    "type": "premiere",
+    "label": "Thursday 17 Sep 2026 19:00 Europe/London",
+    "iso": "2026-09-17T18:00:00+00:00"
+  },
+  "madeForKids": false,
+  "affiliate": "none",
+  "started": "2026-09-11T00:42:30+01:00",
+  "video": {
+    "file": "hos_002_periodic_table_full_v02.mp4",
+    "sha256": "8a5b8dde713cd4d6d2834b49635443ebf5fda1a83de92688bf79ca91746de31f",
+    "bytes": 437292747,
+    "title": "How Did We Discover the Periodic Table?",
+    "thumb": "hos_002_thumb_A_gallium_live_v02.jpg"
+  },
+  "hos": {
+    "ok": false,
+    "reason": "SIGNED_OUT",
+    "url": "https://accounts.google.com/v3/signin/confirmidentifier?continue=https://www.youtube.com/signin?action_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3Dhttps%253A%252F%252Fstudio.youtube.com%252Fchannel%252FUCXp7HkBIl1LgaznXuZHJyRg%26feature%3Dredirect_login&hl=en-GB&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-584765606:1789083752554144",
+    "snip": "Loading\nVerify that it\u2019s you\nbenoats86@gmail.com\nTo help keep your account secure, Google needs to verify it\u2019s you. Please sign in again to continue to YouTube.\nNext\nEnglish (United Kingdom)\nHelp\nPrivacy\nTerms"
+  },
+  "error": "SIGNED_OUT"
+}

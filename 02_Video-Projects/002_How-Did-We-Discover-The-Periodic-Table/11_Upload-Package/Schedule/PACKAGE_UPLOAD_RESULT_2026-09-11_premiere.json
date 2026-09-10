@@ -1,0 +1,12 @@
+{
+  "ok": false,
+  "blocked": true,
+  "method": "youtube_studio_hos_session",
+  "channel": {
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "error": "GOOGLE_VERIFY_THAT_ITS_YOU",
+  "videoNotUploaded": true,
+  "evidence": "11_Upload-Package/Schedule/evidence_2026-09-11_premiere/BLOCKED_AUTH.json"
+}
