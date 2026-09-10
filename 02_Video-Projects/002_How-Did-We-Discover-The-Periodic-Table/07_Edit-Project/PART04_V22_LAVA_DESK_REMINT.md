@@ -66,3 +66,10 @@ Fail stills: `07_Edit-Project/_qa_part04_v21_lava_fail/fail_t{38,40,42,43,106,10
 2. **`10_family_before_weight`** — `PART04_NEXT_PLATE_10_FAMILY_NO_LAVA.md`  
 
 Do **not** remint 04 unless plate UAT proves lava is only on 04’s tail (xfade @38); default owner of PERIODIC TABLE desk fail is **05**.
+
+
+## Update 10 Sep PM — plate 05 try1/1B STOP
+Zerolamp side-desk DNA exhausted (lamp invent + lava). **NEW DNA:** `PART04_NEXT_PLATE_05_TRY2_BOARDTOP_DNA.md` (BOARDTOP_DAY_NOFIXTURE). Plate 10 held.
+
+## Update 10 Sep PM — plate 05 try2 BOARDTOP
+try2A Quality SELF_REJECT lamp invent. try2B Quality KEEP_CANDIDATE (no invent/lava; CoS owns steepness). Starts 2/2. Plate 10 held. No assemble. See `PART04_V22_PLATE_05_TRY2_COS.md`.
