@@ -1,0 +1,30 @@
+{
+  "format": "longform",
+  "video": "../09_Final-Export/hos_002_periodic_table_full_v01.mp4",
+  "title": "How Did We Discover the Periodic Table?",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/periodic_table_long_description_v01.txt",
+  "tagsFile": "Tags/periodic_table_long_tags_v01.txt",
+  "chaptersFile": "Chapters/periodic_table_long_chapters_v01.txt",
+  "pinnedCommentFile": "Pinned-Comments/periodic_table_long_pinned-comment_v01.txt",
+  "thumbnail": "../08_Thumbnail/Selected/hos_002_thumb_A_gallium_animistry_v01.jpg",
+  "thumbnailAbc": [
+    "../08_Thumbnail/Selected/hos_002_thumb_A_gallium_animistry_v01.jpg",
+    "../08_Thumbnail/Selected/hos_002_thumb_B_empty_seats_animistry_v01.jpg",
+    "../08_Thumbnail/Selected/hos_002_thumb_C_empty_slot_animistry_v01.jpg"
+  ],
+  "titleAbc": [
+    "How Did We Discover the Periodic Table?",
+    "How Did We Know Which Elements Were Missing?",
+    "How Did Mendeleev Predict Missing Elements?"
+  ],
+  "schedule": null,
+  "youtubeId": null,
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "note": "UAT pack. Do not upload until CoS/Ben lock. Score titles in VidIQ before listing lock. Studio Related on Shorts = this exact title after the long id exists."
+}
