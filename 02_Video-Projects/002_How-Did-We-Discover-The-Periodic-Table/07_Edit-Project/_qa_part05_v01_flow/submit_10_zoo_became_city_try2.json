@@ -1,0 +1,32 @@
+{
+  "plate": "10_zoo_became_city",
+  "try": "2_v01",
+  "which": "wide_city_of_seats",
+  "start_n": 2,
+  "max_starts": 2,
+  "cycle": "v01_c23_09b2_10t2",
+  "project_url": "https://flow.google.com/project/052f652b-c6e3-442e-94e0-577f93adb1ea",
+  "info": {
+    "seconds": 52.3,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/052f652b-c6e3-442e-94e0-577f93adb1ea",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/052f652b-c6e3-442e-94e0-577f93adb1ea"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T20:49:34",
+  "paint": "banned",
+  "assemble": false,
+  "note": "wide pull-back filled cream-card wall as a city of seats, never houses"
+}
