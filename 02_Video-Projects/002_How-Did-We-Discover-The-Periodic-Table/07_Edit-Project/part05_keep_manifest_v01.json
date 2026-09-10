@@ -34,6 +34,10 @@
     "06_predict_before_found": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/06_predict_before_found_v01_try1.mp4",
       "sha256": "d0c5703dca6af066d71fff30558ed8f15e7e0e83b5d4434b4038f6b1dab61de3"
+    },
+    "05b_germanium_verdict": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/05b_germanium_verdict_v01_try4.mp4",
+      "sha256": "b43701c7d23b84ce5713072c62a0fe6fc84cfb34dbc8152da0f8402a78305e73"
     }
   }
 }

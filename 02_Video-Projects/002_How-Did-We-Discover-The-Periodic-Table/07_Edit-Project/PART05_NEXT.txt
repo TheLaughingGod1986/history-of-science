@@ -1,9 +1,8 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. 8/20 KEEP. Do not assemble yet.
+VO: 144.160s. 9/20 KEEP. Do not assemble yet.
 
-KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 06.
-FAIL 05b try1–3 all fire. FAIL 06b try1 flame-icon on a card.
+KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06.
+FAIL 06b try1–2 flame icons. Next: 06b try3 one blank card on empty wall + 07 wide unfinished.
 
-Next cycle c14: 05b try4 seated-Ge drift (no hole) + 06b try2 push without flame icons.
-Never prompt “glowing vacant hole” — Veo paints fire.
+Lesson: do not prompt glowing holes; Veo paints fire. Pictogram grids also spawn flame icons.
 Do not remint P01–P04.
