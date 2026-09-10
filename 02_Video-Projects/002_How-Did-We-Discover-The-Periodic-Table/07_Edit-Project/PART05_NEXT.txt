@@ -1,8 +1,9 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. Need 20 unique plates. Do not assemble yet. 8/20 KEEP.
+VO: 144.160s. 8/20 KEEP. Do not assemble yet.
 
-KEEP: 01, 01b, 02 try3, 03 try2, 04, 04b, 05 try2, 06 try1
-FAIL 05b try1 desk fire-pit · try2 wall fire + Ge→Gg. Next: try3 FLAT wall, zero glow.
+KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 06.
+FAIL 05b try1–3 all fire. FAIL 06b try1 flame-icon on a card.
 
-Cycle v01_c7 done. Next cycle v01_c8: 05b try3 + 06b navigation.
+Next cycle c14: 05b try4 seated-Ge drift (no hole) + 06b try2 push without flame icons.
+Never prompt “glowing vacant hole” — Veo paints fire.
 Do not remint P01–P04.

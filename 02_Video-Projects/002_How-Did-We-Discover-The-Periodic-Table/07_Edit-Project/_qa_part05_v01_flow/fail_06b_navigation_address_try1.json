@@ -1,0 +1,15 @@
+{
+  "plate": "06b_navigation_address",
+  "try": "1",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/06b_navigation_address_v01_try1.mp4",
+  "sha256": "6952dddec243d1393f369b868a355da9888494af7e71c03f35fc4bb31077777a",
+  "bytes": 2702450,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/1ca9d6b8-9a8e-4e31-940d-a810185e88a5",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "camera push to a blank gold-rim cream card on a wood wall; not a chair walk",
+  "fail": "A flame icon is drawn on a neighbouring card. Do not assemble fire.",
+  "next": "try2 same push DNA once: FORBIDDEN flame drawings / fire icons on any card."
+}

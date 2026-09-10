@@ -1,0 +1,15 @@
+{
+  "plate": "05b_germanium_verdict",
+  "try": "3",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/05b_germanium_verdict_v01_try3.mp4",
+  "sha256": "16394a687aff6f00f4559947d4d5d842efb3436731c03a30adba59e86aed98e6",
+  "bytes": 2247141,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/c30a193a-9640-497e-8e95-0885a71c325e",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "Ge card seats on a flat peg; Ge stays Ge; wall chart",
+  "fail": "Orange slit then literal fire bursts off the wall. Do not assemble.",
+  "next": "try4: Ge already seated. Camera drift only. No hole, no seating action, no glow words."
+}
