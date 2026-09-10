@@ -81,3 +81,8 @@
 - Parent 11 KEEP: `raw/v20_fast/11_publish_gaps_v20_try9.mp4` · `PART04_V20_PLATE_11_TRY9_COS.md` (Fast row KEEP)  
 - Parent 11 next-sheet: `PART04_NEXT_PLATE_11_PUBLISH_GAPS.md`  
 - Studio: `00_Brand/Brand-Guidelines/HOS_STUDIO_PLATE_LIBRARY_LOCK.md`
+
+---
+
+## Status (Picture 10 Sep)
+`11b_wait_and_hunt` try1 Quality **KEEP_CANDIDATE** sha `5602762e…3075e` (from 11 KEEP last; CLEAN LIGHT/flask/text CLEAR on eyeball). Starts 1/2. iCloud `HOS UAT/part04_plate_11b_wait_and_hunt_try1/`. No assemble. No 09b. Scores → CoS.
