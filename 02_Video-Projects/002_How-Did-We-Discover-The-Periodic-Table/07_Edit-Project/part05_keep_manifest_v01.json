@@ -1,0 +1,15 @@
+{
+  "part": "05",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "keep": {
+    "01_chapter_guests_arrive": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/01_chapter_guests_arrive_v01_try1.mp4",
+      "sha256": "ebef3126e9e9d3f501b67dac17b43d39d59be8dad9124fed66a04f5649559816"
+    },
+    "02_guests_as_work": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/02_guests_as_work_v01_try3.mp4",
+      "sha256": "39ce3bea84590412a4b56e601c083414b0f582dc13cc4bad99f00723df913abb"
+    }
+  }
+}
