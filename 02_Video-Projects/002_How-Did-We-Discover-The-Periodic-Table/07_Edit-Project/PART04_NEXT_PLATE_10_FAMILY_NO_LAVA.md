@@ -18,3 +18,6 @@ lava drip · molten bead · open shade-cup · underside bulb · unfinished flat 
 
 ## Process
 Mint after 05 KEEP (default one-plate cycle). Plate UAT · then assemble `hos_002_part04_rough_v22`. Scores → CoS.
+
+## Update 10 Sep PM — try1 BOARDTOP join
+05 try2B KEEP unlocked this plate. Prefer **BOARDTOP_DAY_NOFIXTURE** (try2B cards-only lesson) — no room for practical lamp invent. Active brief: `PART04_NEXT_PLATE_10_TRY1_BOARDTOP_DNA.md`. Max 2 Quality starts then STOP_TO_COS. **No assemble this run.**
