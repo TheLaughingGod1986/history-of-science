@@ -1,0 +1,32 @@
+{
+  "plate": "10_zoo_became_city",
+  "try": "3_v01",
+  "which": "wide_filled_wall_grid",
+  "start_n": 1,
+  "max_starts": 2,
+  "cycle": "v01_c24_10t3_10b",
+  "project_url": "https://flow.google.com/project/b0488f92-1097-45fa-805d-071bae732250",
+  "info": {
+    "seconds": 51.9,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/b0488f92-1097-45fa-805d-071bae732250",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/b0488f92-1097-45fa-805d-071bae732250"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T20:56:22",
+  "paint": "banned",
+  "assemble": false,
+  "note": "WIDE filled cream-card WALL GRID pull-back; never miniature furniture; never say city"
+}

@@ -1,0 +1,32 @@
+{
+  "plate": "10b_find_missing",
+  "try": "1_v01",
+  "which": "one_blank_in_filled_grid",
+  "start_n": 2,
+  "max_starts": 2,
+  "cycle": "v01_c24_10t3_10b",
+  "project_url": "https://flow.google.com/project/61cfa9de-ef70-4773-ae20-f0b7b18f3962",
+  "info": {
+    "seconds": 52.1,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/61cfa9de-ef70-4773-ae20-f0b7b18f3962",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/61cfa9de-ef70-4773-ae20-f0b7b18f3962"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T20:57:18",
+  "paint": "banned",
+  "assemble": false,
+  "note": "filled cream-card wall with ONE blank card to hunt; no glow-hole"
+}
