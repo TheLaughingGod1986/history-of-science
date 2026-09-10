@@ -228,8 +228,8 @@ def main() -> None:
             starts[item["id"]] = t
             t += src_dur - XFADE
 
-    p05_start = starts["05"]
-    card_in = p05_start + P05_VO - P05_CARD_XFADE
+    p05_pic = starts["05"] + CARD_HOLD - XFADE
+    card_in = p05_pic + P05_VO - P05_CARD_XFADE
     card_land = card_in + P05_CARD_XFADE
 
     print(f"SAVED {OUT}", flush=True)
