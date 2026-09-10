@@ -5,6 +5,7 @@
 **This mint:** `11_publish_gaps` try9 **NEW framing** only (not harder prompt on try8 DNA).  
 **Parked:** `09b_risk_hold`. **Do not** mint `11b` · **no assemble**.  
 **Lock:** plate-library `4b8ed25` · Flow-only (paint banned) · continuous plate UAT · one plate per FAIL cycle · googlemail ULTRA · max 2 same-DNA then STOP_TO_COS.  
+**Ben LOCK 10 Sep 2026 mid-flight:** plate 11 is CLEAN LIGHT / emissive-invent class — remaining try9 starts use **Veo 3.1 Quality** (not Fast). Seedance not a substitute. Self-REJECT on readable invented text / lamp / flask invent.  
 **Do not touch** P01–P03 · do not resume 09b · do not remint 06.
 
 ---
@@ -56,11 +57,12 @@
 ## Process
 
 1. Flow-only I2V for **11 try9 only** (max 2 starts this DNA).  
-2. Continuous-playback **plate UAT** every mid + **text-edge crop-check** — KEEP or SELF_REJECT.  
-3. Self-REJECT on readable invented text OR lamp/flask invent.  
-4. After 2 same-DNA FAILs → STOP_TO_COS (new framing again).  
-5. On KEEP → queue `11b_wait_and_hunt` later. **Assemble last.**  
-6. Scores → CoS. No Ben ping from Picture.
+2. **Model:** start1 was Fast (KEEP_CANDIDATE). Remaining starts → **Veo 3.1 - Quality** only. Never Seedance.  
+3. Continuous-playback **plate UAT** every mid + **text-edge crop-check** — KEEP or SELF_REJECT.  
+4. Self-REJECT on readable invented text OR lamp/flask invent.  
+5. After 2 same-DNA FAILs → STOP_TO_COS (new framing again).  
+6. On KEEP → queue `11b_wait_and_hunt` later. **Assemble last.**  
+7. Scores → CoS. No Ben ping from Picture.
 
 ## Brief paths
 

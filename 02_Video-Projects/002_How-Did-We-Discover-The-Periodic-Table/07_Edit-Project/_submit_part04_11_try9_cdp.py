@@ -12,6 +12,9 @@ try9 NEW framing (not harder prompt on try8 DNA):
 Auth: Mini CDP benoats@googlemail.com ULTRA. STOP on passkey.
 Max 2 starts this DNA then STOP_TO_COS.
 Plate-library 4b8ed25. Paint banned. No assemble. No 11b/09b/06.
+
+Ben LOCK 10 Sep 2026 mid-flight: plate 11 is CLEAN LIGHT / emissive-invent class —
+remaining try9 starts use **Veo 3.1 - Quality** (not Fast). Seedance not a substitute.
 """
 from __future__ import annotations
 
@@ -35,16 +38,17 @@ REF = PROJ / "04_Generated-Clips/part04/refs/v20_start_frames"
 START = REF / "11_publish_gaps_start_v20.jpg"
 LOCK = REF / "11_publish_gaps_start_v20_try9_boardtop_edgeoff.jpg"
 OLD_TRY8 = REF / "11_publish_gaps_start_v20_try8_zerolamp_moonwin.jpg"
-OUT = PROJ / "07_Edit-Project/_qa_part04_v20_flow/submit_11_publish_gaps_try9.json"
 QA_DIR = PROJ / "07_Edit-Project/_qa_part04_v20_plates_try9_11"
 START_COUNTER = QA_DIR / "start_counter.json"
-MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Fast"
+# Ben LOCK mid-flight: remaining try9 starts = Quality (not Fast). Seedance banned.
+MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Quality"
 REQUIRED_EMAIL = "benoats@googlemail.com"
 MAX_STARTS = 2
+OUT = PROJ / "07_Edit-Project/_qa_part04_v20_flow/submit_11_publish_gaps_try9Q.json"
 
 PROMPT = (
     "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact beat only. "
-    "Plate 11_publish_gaps try9 — PUBLISH THE GAPS (NEW framing: board-top; front lip OFF-FRAME). "
+    "Plate 11_publish_gaps try9Q — PUBLISH THE GAPS (NEW framing: board-top; front lip OFF-FRAME; Veo 3.1 Quality). "
     "Finished cinematic stylised 3D chemist desk (Animistry-class). "
     "NOT flat unfinished vlog vector. NOT 2D cutouts. "
     "Hero: TOP of published parchment/grid with CLEAR circular holes / empty seats, "
@@ -197,7 +201,11 @@ def main() -> None:
                 pass
         auth = assert_auth(page)
 
-        tmp = Path("/tmp/hos_v20_11_try9_stub.mp4")
+        if "Quality" not in MODEL:
+            raise SystemExit(
+                f"ABORT: Ben LOCK — remaining try9 starts require Veo 3.1 Quality, got {MODEL!r}"
+            )
+        tmp = Path("/tmp/hos_v20_11_try9Q_stub.mp4")
         if tmp.exists():
             tmp.unlink()
         info: dict = {}
@@ -208,7 +216,7 @@ def main() -> None:
                 tmp,
                 model=MODEL,
                 start_frame=START,
-                timeout_s=70,
+                timeout_s=90,
                 attempts=1,
                 scenery_only=True,
             )
@@ -227,9 +235,13 @@ def main() -> None:
             or ""
         )
         project_url = str(project_url).split("?")[0].rstrip("/")
+        if "Quality" not in MODEL and start_n >= 2:
+            raise SystemExit(
+                f"ABORT: Ben LOCK — remaining try9 starts require Veo 3.1 Quality, got {MODEL!r}"
+            )
         out = {
             "plate": "11_publish_gaps",
-            "try": 9,
+            "try": "9Q" if start_n >= 2 else 9,
             "start_n": start_n,
             "max_starts": MAX_STARTS,
             "project_url": project_url,
@@ -244,6 +256,8 @@ def main() -> None:
             ),
             "plate_library_lock_sha": "4b8ed25",
             "model": MODEL,
+            "ben_lock_quality": True,
+            "seedance": "banned",
             "when": time.strftime("%Y-%m-%dT%H:%M:%S"),
             "auth": auth,
             "paint": "banned",
