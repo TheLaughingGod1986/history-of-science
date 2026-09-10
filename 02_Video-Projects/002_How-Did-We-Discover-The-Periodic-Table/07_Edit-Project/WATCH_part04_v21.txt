@@ -1,0 +1,31 @@
+WATCH THIS FILE ONLY (Part 04 rough v21 — KEEP remints assemble):
+  hos_002_part04_rough_v21.mp4
+
+CoS / Picture→UAT gates for this cut:
+- Plate-library LOCKED. Reminted plates UAT KEEP. No more remints this cycle.
+- KEEP remints swapped into v20 map:
+  · 06_explorer_leaves_gap try3 sha df9bb44f…1978c
+  · 09b_risk_hold try14 Quality sha 47a6bdeb…44c38
+  · 11_publish_gaps try9 sha 97d0c419…f8cc72
+  · 11b_wait_and_hunt try1 sha 5602762e…3075e
+- NO PAINT FALLBACK on reminted picture.
+- Animistry side labels + VO + curious workshop bed.
+- Spot EMPTY SEATS / A BET hold / PUBLISH — no 5–10s lag regressions.
+- Part 01–03 LOCKED. Do NOT declare PASS here. Scores → CoS. No Ben ping.
+
+Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v20_sha=1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b
+keep_remints=06_explorer_leaves_gap,09b_risk_hold,11_publish_gaps,11b_wait_and_hunt
+explorer_picture=45.300-53.200
+plate09b_picture=98.150-106.050
+plate10_picture=105.700-113.600
+plate11_picture=113.250-121.150
+plate11b_picture=120.800-128.700
+plate06_sha256=df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c
+plate09b_sha256=47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38
+plate11_sha256=97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72
+plate11b_sha256=5602762e82fd40eb654b25a5d3e5260e8baf79707fb19ecf8b58ede67cb3075e
+sha256=868a012c5f52fa7f412a076cf26593f9cd700f3c03299cd14ff7010eb6804963
+bytes=78639895
+duration=127.760
