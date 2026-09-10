@@ -1,0 +1,48 @@
+{
+  "plate": "11_publish_gaps",
+  "try": 8,
+  "start_n": 1,
+  "max_starts": 2,
+  "project_url": "https://flow.google.com/project/a3017d62-3df6-4dd8-8043-a4e1362a15e1",
+  "info": {
+    "seconds": 63.0,
+    "bytes": 0,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11_publish_gaps_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/a3017d62-3df6-4dd8-8043-a4e1362a15e1",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/a3017d62-3df6-4dd8-8043-a4e1362a15e1"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11_publish_gaps_start_v20.jpg",
+  "start_sha256": "eabcf990c664e38132756311f0baf08378118f03d8c5978d460bb3ddba97b936",
+  "start_dna": "try8 zerolamp moonwin: cropL40 of v20 publish desk \u2014 practical lamp OFF FRAME; cool left grade; CLEAN=window/moon/off-world bounce ONLY; dull/matte flasks; cardless/no unfinished H/C/O/N; soft gap glow OK; plate-library 4b8ed25; paint banned",
+  "plate_library_lock_sha": "4b8ed25",
+  "model": "Veo 3.1 - Fast",
+  "when": "2026-09-10T10:04:01",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "paint": "banned",
+  "assemble": false,
+  "parent_06": {
+    "verdict": "UAT_PASS",
+    "sha256": "df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c"
+  },
+  "parked": [
+    "09b_risk_hold"
+  ],
+  "out_of_scope": [
+    "11b_wait_and_hunt",
+    "09b_risk_hold",
+    "06_explorer_leaves_gap",
+    "assemble"
+  ]
+}
