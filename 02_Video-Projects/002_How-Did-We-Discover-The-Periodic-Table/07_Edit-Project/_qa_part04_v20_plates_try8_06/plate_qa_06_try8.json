@@ -1,0 +1,31 @@
+{
+  "plate": "06_explorer_leaves_gap",
+  "try": 8,
+  "verdict": "KEEP",
+  "keep_variant": "try8B",
+  "sha256": "fd4627d29e8087ff50baca163fc0dd155d2a19eb5127dc1c3c7379e9525c7a70",
+  "mp4": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/06_explorer_leaves_gap_v20_try8.mp4",
+  "reason": "Ben UAT v22: Explorer must match Germs/P01/P03 on-model DNA. try8B: face+round glasses+teal coat+mustard vest+bow+satchel+atom pin visible; human hands; 1869 card desk with soft glowing vacant-seat gap; continuous motion. try8A SELF_REJECT: stayed in P03 lecture-hall aisle (wrong scene), mostly back walk.",
+  "notes": {
+    "lamp": "practical brass desk lamp present (CLEAN LIGHT soft fail vs prior zerolamp briefs) \u2014 Ben this cycle asked Explorer continuity + music; no lava drip under shade",
+    "open": "t0 briefly inherits Germs ward doorway from start DNA then settles on card desk",
+    "gap_glow": "soft/bright vacant seat glow present \u2014 not chair fire / lava drip"
+  },
+  "rejected": {
+    "try8A": {
+      "sha256": "b718213dae37d6a0d7fca0bb0a04b27e84fc773d0ba63e85d658c7e4a26db874",
+      "reason": "lecture-hall relocation fail"
+    }
+  },
+  "parent_try3": {
+    "sha256": "df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c",
+    "verdict": "SUPERSEDED_BY_BEN_UAT",
+    "reason": "OTS toy-scale, glasses N/A \u2014 inconsistent with film lock"
+  },
+  "paint": "banned",
+  "model": "Veo 3.1 - Quality",
+  "projects": {
+    "A": "https://flow.google.com/project/dee1b6da-c573-4875-a037-529b50ec88f7",
+    "B": "https://flow.google.com/project/c9dd924a-6503-40a7-bc10-7f34bacb71f5"
+  }
+}
