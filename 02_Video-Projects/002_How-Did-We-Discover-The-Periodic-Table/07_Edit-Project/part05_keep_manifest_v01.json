@@ -62,6 +62,10 @@
     "09_everyday_seats": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/09_everyday_seats_v01_try1.mp4",
       "sha256": "e72efc825b96d3687e757315fae6f7c21b1795284ea259b46b62a824b1072b5a"
+    },
+    "09b_victory_seats": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/09b_victory_seats_v01_try2.mp4",
+      "sha256": "877e32424010e3fd3b20e163883cf898a6a771903f8f7ed63b931434d430eeb9"
     }
   }
 }

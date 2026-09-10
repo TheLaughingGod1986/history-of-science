@@ -1,0 +1,13 @@
+{
+  "plate": "09b_victory_seats",
+  "try": "2",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/09b_victory_seats_v01_try2.mp4",
+  "sha256": "877e32424010e3fd3b20e163883cf898a6a771903f8f7ed63b931434d430eeb9",
+  "bytes": 4192152,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/278bd3a9-e5b9-437a-9083-a305f9e8c454",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "Honey-wood wall, cream-card shelves. Battery, red telephone, pill bottle, steel beam in turn. Not armchairs. Distinct from 09 salt/iodine set."
+}

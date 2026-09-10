@@ -1,8 +1,8 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. 15/20 KEEP. Do not assemble yet.
+VO: 144.160s. 16/20 KEEP. Do not assemble yet.
 
-KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07, 07b t3, 08, 08b, 09.
-FAIL 09b try1 armchair waiting room. FAIL 10 try1 empty Flow project (no clip).
-Next: cycle v01_c23 — 09b try2 card-wall props + 10 try2 city of seats.
+KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07, 07b t3, 08, 08b, 09, 09b t2.
+FAIL 10 try2 model-town of miniature chairs.
+Next: cycle v01_c24 — 10 try3 filled wall grid (never say city) + 10b one blank card.
 
 Do not remint P01–P04.
