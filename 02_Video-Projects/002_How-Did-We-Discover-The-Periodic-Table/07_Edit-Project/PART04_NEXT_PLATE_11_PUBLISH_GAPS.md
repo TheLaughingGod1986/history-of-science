@@ -1,10 +1,11 @@
-# P04 Empty Chairs — NEXT plate `11_publish_gaps` (09b parked · 06 KEEP)
+# P04 Empty Chairs — NEXT plate `11_publish_gaps` try9 (09b parked · 06 KEEP)
 
 **CoS 10 Sep 2026:** `06_explorer_leaves_gap` try3 **UAT PASS** sha `df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c`.  
-**Next mint:** `11_publish_gaps` only (then `11b` after 11 KEEP).  
-**Parked:** `09b_risk_hold` CLEAN LIGHT lamp-loop.  
-**Lock:** plate-library `4b8ed25` · Flow-only (paint banned) · continuous **plate UAT before any rough assemble** · one plate per FAIL cycle · googlemail ULTRA · max 2 same-DNA then STOP_TO_COS.  
-**Do not touch** P01–P03 · do not resume 09b · do not mint 11b · **no assemble**.
+**Parent STOP_TO_COS:** try8 + try8B **SELF_REJECT** — CLEAN LIGHT + flask invent CLEAR; printable edge text invent (~SECURITY/RESULT) on publish grid both starts.  
+**This mint:** `11_publish_gaps` try9 **NEW framing** only (not harder prompt on try8 DNA).  
+**Parked:** `09b_risk_hold`. **Do not** mint `11b` · **no assemble**.  
+**Lock:** plate-library `4b8ed25` · Flow-only (paint banned) · continuous plate UAT · one plate per FAIL cycle · googlemail ULTRA · max 2 same-DNA then STOP_TO_COS.  
+**Do not touch** P01–P03 · do not resume 09b · do not remint 06.
 
 ---
 
@@ -28,19 +29,21 @@
 
 `PUBLISH THE GAPS` · papers/stack + grid with clear holes; bridge to hunt (~publish beat).
 
-## KEEP DNA (required)
+## KEEP DNA (required) — try9 NEW framing
 
 - Finished cinematic 3D chemist desk (Animistry-class) — **not** flat unfinished 2D vlog vector.
-- Hero: published **grid / parchment with clear circular holes** + paper stack / papers.
-- Soft gap glow OK on empty seats/holes if it does **not** invent as a lamp.
-- Light: **window / moonlight / soft off-world bounce ONLY**. **No practical table lamp in frame.** No shade, no bulb, no shade-cup (open or closed). If light reads as a lamp fixture → FAIL.
-- Flask / glassware liquids: **dull / matte / translucent** only — NEVER self-emissive, NEVER molten, NEVER desk-lighting invent.
-- **Cardless / no unfinished flat H/C/O/N** that fail house. Blank paper stacks OK for publish beat; readable unfinished element flats → FAIL.
+- Hero: published **grid / parchment with clear circular holes** + paper stack / papers / magnifier OK.
+- **NEW framing (try9):** crop/reframe so the publish-grid **front edge with printable band is OFF-FRAME** (board-top crop of try8 zerolamp). Soft gap glow OK. No hero readable invented words on any edge.
+- Light: **window / moonlight / soft off-world bounce ONLY**. **No practical table lamp in frame.** Zerolamp.
+- Flask / glassware liquids: **dull / matte / translucent** only — NEVER self-emissive / molten / desk-lighting invent.
+- **Cardless / no unfinished flat H/C/O/N** — ALWAYS fail if flat H/C/O/N appear. Blank paper stacks OK.
 - No Explorer. Continuous real Veo motion. LOCKED tripod preferred.
-- Start DNA try8: `11_publish_gaps_start_v20_try8_zerolamp_moonwin.jpg` (cropL40 lamp OFF-FRAME + cool left grade).
+- Start DNA try9: `11_publish_gaps_start_v20_try9_boardtop_edgeoff.jpg`  
+  (board-top crop of try8 zerolamp moonwin — front SECURITY/RESULT lip OFF-FRAME; holes+magnifier hero).
 
 ## Always-fails (prompt)
 
+- readable invented text / captions / UI / SECURITY / RESULT  
 - open shade-cup / practical lamp invent  
 - flask / molten desk-lighting invent  
 - lava drip / molten bead / chair fire  
@@ -48,18 +51,21 @@
 - model-town / yellow house-blocks  
 - double-exposure / ghost smear mid-clip  
 - paint / Ken Burns still  
+- camera widen that re-reveals off-frame front lip / lamp  
 
 ## Process
 
-1. Flow-only I2V for **11 only**.  
-2. Continuous-playback **plate UAT** → KEEP or SELF_REJECT.  
-3. After 2 same-DNA FAILs → new framing/start (not harder prompt only).  
-4. On KEEP → queue `11b_wait_and_hunt` (start from 11 last frame) under same CLEAN LIGHT. **Assemble last.**  
-5. Scores → CoS. No Ben ping from Picture.
+1. Flow-only I2V for **11 try9 only** (max 2 starts this DNA).  
+2. Continuous-playback **plate UAT** every mid + **text-edge crop-check** — KEEP or SELF_REJECT.  
+3. Self-REJECT on readable invented text OR lamp/flask invent.  
+4. After 2 same-DNA FAILs → STOP_TO_COS (new framing again).  
+5. On KEEP → queue `11b_wait_and_hunt` later. **Assemble last.**  
+6. Scores → CoS. No Ben ping from Picture.
 
 ## Brief paths
 
 - This sheet: `07_Edit-Project/PART04_NEXT_PLATE_11_PUBLISH_GAPS.md`  
+- Parent reject: `PART04_V20_PLATE_11_TRY8_COS.md` · `WATCH_part04_11_try8.txt`  
 - Part brief: `01_Script/part04_empty_chairs_v01.md`  
 - Studio lock: `00_Brand/Brand-Guidelines/HOS_STUDIO_PLATE_LIBRARY_LOCK.md`  
 - Parent 06 KEEP: `_qa_part04_v20_plates_try3_06/KEEP_try3.md`
