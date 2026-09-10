@@ -9,7 +9,7 @@
 **Channel:** [@HistoryOfScienceYT](https://www.youtube.com/@HistoryOfScienceYT) **only**  
 **Cursor rule:** `.cursor/rules/hos-uat-bible-house-lock.mdc` (always apply)  
 **Scope:** **Standing ALWAYS** on every HOS cut — film **001**, **002**, and every later film. Not film-002-only.  
-**Studio process (9 Sep 2026):** plate-library runbook — `HOS_STUDIO_PLATE_LIBRARY_LOCK.md` · `.cursor/rules/hos-studio-plate-library-lock.mdc`. Continuous-playback **plate** gate before any `rough_vN` assemble. Hard fails in Flow prompt + UAT: lava drip / molten bead (never soft-pass; bible merge `8ddbf99`); unfinished flat H/C/O/N cards; mid-crown unfinished Explorer hair / pits. Do not weaken these ALWAYS checks.
+**Studio process (9–10 Sep 2026):** plate-library runbook — `HOS_STUDIO_PLATE_LIBRARY_LOCK.md` · `.cursor/rules/hos-studio-plate-library-lock.mdc`. Continuous-playback **plate** gate before any `rough_vN` assemble. Hard fails in Flow prompt + UAT: lava drip / molten bead (never soft-pass; bible merge `8ddbf99`); unfinished flat H/C/O/N cards; mid-crown unfinished Explorer hair / pits. **Model tier (Ben LOCK 10 Sep 2026):** fragile CLEAN LIGHT remints (lamp / flask / emissive invent) use **Veo 3.1 Quality** — not Fast; **Seedance is not a substitute**. Do not weaken these ALWAYS checks.
 
 Docs / rules only. No remint · no mint · no upload · no Mini · no Flow · no Studio · no Orbit / Oppti from this file.
 
@@ -104,7 +104,7 @@ Canonical character / style: `.cursor/rules/hos-explorer-character.mdc` · `01_C
 | Lock | Relationship |
 |---|---|
 | `HOS_HOUSE_VO_AND_TEACH_LOCK.md` | VO/teach = clearer scripts + picture-with-beat + teach why. This bible’s **VO visual explainer** is the standing UAT score for the picture-with-beat half. Do not weaken VO/teach. |
-| `HOS_STUDIO_PLATE_LIBRARY_LOCK.md` | Studio **process**: KEEP DNA plate library · continuous-playback plate UAT before assemble · Flow-only on Empty Chairs / late desks / Explorer · hard lava / flat-card / mid-crown fails in prompt · stop same-DNA after 2 FAILs · Mini CDP `benoats@googlemail.com` ULTRA. This bible stays the ALWAYS picture bar; plate-library does not replace it. |
+| `HOS_STUDIO_PLATE_LIBRARY_LOCK.md` | Studio **process**: KEEP DNA plate library · continuous-playback plate UAT before assemble · Flow-only on Empty Chairs / late desks / Explorer · hard lava / flat-card / mid-crown fails in prompt · stop same-DNA after 2 FAILs · Mini CDP `benoats@googlemail.com` ULTRA · **Veo 3.1 Quality** for fragile CLEAN LIGHT (not Fast; Seedance not substitute — Ben LOCK 10 Sep 2026). This bible stays the ALWAYS picture bar; plate-library does not replace it. |
 | Explorer / Part 01 style / microbe locks | **Consistency** + **Explorer round glasses** + **Explorer face/hair** + **finished 3D cartoon quality** score those house rules on every cut. Do not weaken them. |
 | Film-specific lessons (e.g. `PART03_LESSONS.md`) | Extra locks for that minute still apply; these nine ALWAYS checks still run on top. |
 
@@ -112,7 +112,7 @@ Canonical character / style: `.cursor/rules/hos-explorer-character.mdc` · `01_C
 
 - Bake all nine checks into every Showrunner brief, picture desk QA, and Ben/CoS UAT pass before the next minute.
 - Cite this bible + the Cursor rule when failing a cut for consistency, VO-visual miss, missing glasses, lamp flame / smoke artifacts, lamp lava drip, blank or garbled cards, unfinished Explorer hair, face-cloud blot, black-hole scalp dots, soft/unfinished late shots, late-shot horizontal ghosts (with continuous-playback evidence), or **unfinished flat / soft incomplete animation** (not finished 3D cartoon house).
-- Plate remints follow `HOS_STUDIO_PLATE_LIBRARY_LOCK.md`: continuous-playback **plate** UAT per plate **before** `rough_vN` assemble; hard-fail lava drip / molten bead, unfinished flat cards, and mid-crown unfinished Explorer hair in the Flow prompt (self-REJECT on hit).
+- Plate remints follow `HOS_STUDIO_PLATE_LIBRARY_LOCK.md`: continuous-playback **plate** UAT per plate **before** `rough_vN` assemble; hard-fail lava drip / molten bead, unfinished flat cards, and mid-crown unfinished Explorer hair in the Flow prompt (self-REJECT on hit). Fragile CLEAN LIGHT remints use **Veo 3.1 Quality** (not Fast; Seedance not a substitute — Ben LOCK 10 Sep 2026).
 - Remint / mint / upload only when a separate production brief says so — **not** from encoding this lock.
 
 ## Do not
