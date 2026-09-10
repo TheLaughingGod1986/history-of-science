@@ -30,3 +30,9 @@ None before the Premiere. First Short **Friday 18 Sep 2026 11:30 Europe/London**
 | s05 | Tue 22 Sep 11:30 | What other table has empty chairs? |
 
 Uploader: `Schedule/_upload_hos_002_premiere_v01.py`
+
+## Status 11 Sep 2026 00:42 London
+
+**Blocked on Google verify** for `benoats86@gmail.com` in the HOS Chrome profile. Did not click Next. Did not upload. Chrome left running on CDP `:9460`.
+
+Resume: complete that verify on the Mac mini, then re-run the uploader.
