@@ -1,0 +1,52 @@
+{
+  "plate": "11_publish_gaps",
+  "try": 9,
+  "start_n": 1,
+  "max_starts": 2,
+  "project_url": "https://flow.google.com/project/17327f2b-fc8f-44d0-9c56-ddc23eeb2ef6",
+  "info": {
+    "seconds": 63.2,
+    "bytes": 0,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11_publish_gaps_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/17327f2b-fc8f-44d0-9c56-ddc23eeb2ef6",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/17327f2b-fc8f-44d0-9c56-ddc23eeb2ef6"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11_publish_gaps_start_v20.jpg",
+  "start_sha256": "719984d4fe50dab1a63a9d4cc9f0eb96b69922a1475afdf093b975daeb512d79",
+  "start_dna": "try9 boardtop edgeoff: NEW framing crop of try8 zerolamp \u2014 publish-grid front printable band OFF-FRAME; holes+magnifier hero; CLEAN=window/moon/off-world bounce ONLY; dull/matte flasks; cardless/no unfinished H/C/O/N; soft gap glow OK; plate-library 4b8ed25; paint banned",
+  "plate_library_lock_sha": "4b8ed25",
+  "model": "Veo 3.1 - Fast",
+  "when": "2026-09-10T10:37:16",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "paint": "banned",
+  "assemble": false,
+  "parent_06": {
+    "verdict": "UAT_PASS",
+    "sha256": "df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c"
+  },
+  "parent_try8": {
+    "verdict": "STOP_TO_COS",
+    "reason": "text invent SECURITY/RESULT both starts; CLEAN LIGHT+flasks CLEAR"
+  },
+  "parked": [
+    "09b_risk_hold"
+  ],
+  "out_of_scope": [
+    "11b_wait_and_hunt",
+    "09b_risk_hold",
+    "06_explorer_leaves_gap",
+    "assemble"
+  ]
+}
