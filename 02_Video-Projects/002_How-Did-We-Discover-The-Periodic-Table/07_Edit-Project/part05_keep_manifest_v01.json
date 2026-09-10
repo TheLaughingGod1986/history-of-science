@@ -70,6 +70,10 @@
     "10_zoo_became_city": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/10_zoo_became_city_v01_try4.mp4",
       "sha256": "5a2c1667a1702e25b58ebad4b51bd59135f810371c54883761900795c30bc3de"
+    },
+    "10b_find_missing": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/10b_find_missing_v01_try3.mp4",
+      "sha256": "0500cf3a38989b03df4b6f1c3bba5227fca2124319d1f084f29e1df3af395c75"
     }
   }
 }

@@ -1,10 +1,10 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. 17/20 KEEP. Do not assemble yet.
+VO: 144.160s. 18/20 KEEP. Do not assemble yet.
 
-KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07, 07b t3, 08, 08b, 09, 09b t2, 10 t4.
-FAIL: 10b try1 fire-hole+chairs; 10b try2 fire+1669+house+hand.
-IN FLIGHT c26 (2/2):
-- 10b try3 https://flow.google.com/project/689901bb-ee5c-4129-b958-220d5367d47d
-- 11 try1 https://flow.google.com/project/e3a8e047-f6de-4574-b3a4-a7de1760adf4
+KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07, 07b t3, 08, 08b, 09, 09b t2, 10 t4, 10b t3.
+FAIL: 11 try1 books+ember+fire around card.
+IN FLIGHT c27 (2/2):
+- 11 try2 (KEEP 10b cream-card wall, last-row unprinted card)
+- 11b try1 (slow orbit around last unprinted card; never pulse/fire/books)
 
-Do not remint P01–P04. Do not remint KEEP 10. Remaining after this cycle: 11b (+ remint 10b/11 if FAIL).
+Do not remint P01–P04. Do not remint KEEP 10 / 10b.

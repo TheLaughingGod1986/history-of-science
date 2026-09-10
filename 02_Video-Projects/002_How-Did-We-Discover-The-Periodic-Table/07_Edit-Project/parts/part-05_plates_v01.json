@@ -187,8 +187,8 @@
       "i2v": false,
       "model": "Veo 3.1 - Quality",
       "side_label": "EMPTY STILL",
-      "mute_test": "Stay ON the filled wall. Last-row far-right cream card is unprinted paper. Never a glow-hole.",
-      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON the 1869 honey-wood cream-card WALL filling the frame. Camera slow drift to the LAST ROW far-right cream card, unprinted cream paper, neighbours with faint 1-2 letter marks. Paper in a wood slot, never a hole, never a question-mark, never orange. Continuous gentle drift. Silent. HARD REJECT: lava, fire, burned holes, HUD, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+      "mute_test": "KEEP 10b cream-card WALL filling the frame. Last-row far-right card is unprinted paper. Never books, never fire.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON a honey-wood WALL of cream CARDS filling the frame like KEEP 10b: flat cream paper cards flush in wood frames, faint 1-2 letter marks. NEVER books. NEVER book-spines. Last-row far-right card is unprinted cream paper flush in its frame. Camera slow lateral drift. Never fire. Never ember lights. Silent. HARD REJECT: lava, fire, books, burned holes, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
     },
     {
       "id": "11b_late_for_dinner",
@@ -196,8 +196,8 @@
       "i2v": false,
       "model": "Veo 3.1 - Quality",
       "side_label": "EMPTY STILL",
-      "mute_test": "Same last-row unprinted cream card as 11, but it pulses once. Not a freeze of 11. Never fire.",
-      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON the 1869 honey-wood cream-card WALL. The last-row far-right unprinted cream card pulses once as if a guest is late. Camera slow orbit around that card. Stay on the wall. Never a hole. Never orange. Continuous motion, never freeze. Silent. HARD REJECT: lava, fire, burned holes, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+      "mute_test": "Same KEEP 10b cream-card wall. Slow orbit around last unprinted card. Never pulse, never fire, never books.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON the honey-wood WALL of cream CARDS. Last-row far-right unprinted cream card flush in its frame. Camera slow orbit around that card. Card stays matte cream paper. NEVER a pulse of light. NEVER fire. NEVER books. Continuous, never freeze. Silent. HARD REJECT: lava, fire, burned holes, books, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
     }
   ]
 }
