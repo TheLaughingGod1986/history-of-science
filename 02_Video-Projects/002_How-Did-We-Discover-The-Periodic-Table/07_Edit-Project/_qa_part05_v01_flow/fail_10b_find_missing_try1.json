@@ -1,0 +1,15 @@
+{
+  "plate": "10b_find_missing",
+  "try": "1",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/10b_find_missing_v01_try1.mp4",
+  "sha256": "a71ec88c49cace59c5a0476755b2778760bfd446d18a36655a73c2bd0c6e1836",
+  "bytes": 3087470,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/61cfa9de-ef70-4773-ae20-f0b7b18f3962",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "filled cream-card wall with ONE blank card; no glow-hole",
+  "fail": "Orange FIRE in a burned hole where a card is missing. Also two wooden chairs in the foreground. Do not assemble.",
+  "next": "try2: ONE blank unprinted cream CARD among filled cards. Never a hole. Never fire. Never furniture chairs."
+}
