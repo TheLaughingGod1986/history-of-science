@@ -1,0 +1,12 @@
+{
+  "wav": "02_Voiceover/part05_the_guests_arrive_v01.wav",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model": "eleven_v3",
+  "duration_s": 144.16,
+  "bytes": 27678798,
+  "chars": 1895,
+  "plates_needed": 20,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "note": "Do not remint. Part-level Orbit reviewer is not the episode gate."
+}

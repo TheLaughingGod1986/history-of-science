@@ -1,3 +1,4 @@
-Part 04 rough assemble LANDED: hos_002_part04_rough_v25.mp4
-Watch WATCH_part04_v25.txt
-Ben UAT: moon-desk still-life no longer repeats. Scores → CoS. Do not declare PASS.
+Part 04 rough v25 PASS / LOCKED: hos_002_part04_rough_v25.mp4
+sha256 e78027c0c58abe9284f7b85de693a08caabd3ad8ee45b64624eadd0329942bb1
+Do not remint. Lessons: PART04_LESSONS.md
+Next: Part 05 The Guests Arrive.
