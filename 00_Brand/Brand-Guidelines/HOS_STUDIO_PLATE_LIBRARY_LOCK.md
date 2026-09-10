@@ -1,6 +1,6 @@
-# HOS studio lock — plate-library (9 Sep 2026)
+# HOS studio lock — plate-library (9–10 Sep 2026)
 
-**Source:** Ben LOCK via CoS. Standing for **every** future Cursor/Showrunner brief on HOS parts. Not optional.  
+**Source:** Ben LOCK via CoS, 9 Sep 2026 (seven rules) · **Ben LOCK 10 Sep 2026** (model tier / Veo 3.1 Quality). Standing for **every** future Cursor/Showrunner brief on HOS parts. Not optional.  
 **First live use:** HOS 002 Part 04 Empty Chairs (09b CLEAN LIGHT remint in flight). Later parts copy this.
 
 ## Brief must require
@@ -12,10 +12,11 @@
 5. After **2 same-DNA FAILs** → new framing/start, not harder prompt only.
 6. **One plate per FAIL cycle** until that plate KEEP; then parallel remaining plates; **assemble last**.
 7. **Auth:** Mini CDP `benoats@googlemail.com` ULTRA only (not prepaid-dry / wrong account).
+8. **Model tier:** **Veo 3.1 Quality** required for fragile CLEAN LIGHT remints (lamp / flask / emissive invent risk). **Fast** only for low-risk motion garnish. **Seedance is not a substitute.**
 
 ## Showrunner duty
 
-Every part brief (P04+ and remint sheets) must include a **Studio (plate-library)** section copying these seven rules. Do not ship a brief that omits them.
+Every part brief (P04+ and remint sheets) must include a **Studio (plate-library)** section copying these **eight** rules. Do not ship a brief that omits them.
 
 ---
 
@@ -29,7 +30,7 @@ Docs / rules only. Do **not** remint picture from encoding this lock.
 
 ## Standing plate-library runbook (full)
 
-Folds Ben LOCK 9 Sep 2026 (CoS) + prior plate-first points that still apply.
+Folds Ben LOCK 9 Sep 2026 (CoS) + Ben LOCK 10 Sep 2026 (model tier) + prior plate-first points that still apply.
 
 ### 1 — Plate library first
 
@@ -40,7 +41,7 @@ Folds Ben LOCK 9 Sep 2026 (CoS) + prior plate-first points that still apply.
 
 ### 2 — One gate per plate before assemble
 
-- Gate = **continuous-playback plate UAT only**.
+- Gate = **continuous-playback plate UAT only** (includes **crop-reject** + **continuous mid-plate** checks — do not weaken).
 - Never score from stills alone.
 - Never paint-patch / paint banned for Empty Chairs / late desks / Explorer.
 - No `rough_vN` assemble until **every** reminted plate PASSes continuous plate UAT.
@@ -75,6 +76,18 @@ Bake these into every Flow prompt for Empty Chairs / late desks / Explorer. UAT 
 - Ping Ben only after **full UAT PASS / ready to watch**.
 - Plate packs go **CoS → UAT** only (not Ben mid-FAIL).
 
+### 7 — Model tier (Veo Quality) — Ben LOCK 10 Sep 2026
+
+Standing model tier for the plate-library path (cite Ben LOCK 10 Sep 2026 via CoS):
+
+| Tier | When |
+|---|---|
+| **Veo 3.1 Quality REQUIRED** | Fragile **CLEAN LIGHT** remints — any plate with **lamp / flask / emissive invent** risk (examples: P04 `06` flask class, `09b` lamp class, and same-class plates on later parts). |
+| **Veo 3.1 Fast OK only** | Low-risk **motion garnish** — not fragile CLEAN LIGHT / lamp / flask / emissive invent. |
+| **Seedance** | **NOT a substitute** for Veo on HOS fragile remints / plate-library path. |
+
+Keep existing **crop-reject** + **continuous mid-plate / continuous-playback plate UAT** gate — do not weaken when choosing Quality vs Fast.
+
 ### Folded plate-first rules (still apply)
 
 | Rule | Meaning |
@@ -83,14 +96,15 @@ Bake these into every Flow prompt for Empty Chairs / late desks / Explorer. UAT 
 | **SEED from last KEEP DNA + character sheet** | Composition continuity beats “new idea” starts |
 | **FLOW-ONLY** | Paint / temporal-median / brightness-motion paint **BANNED** |
 | **STOP_TO_COS on passkey** | Auth stop — no prepaid-dry / wrong-account workaround |
+| **CROP-REJECT + continuous mid-plate / continuous-playback plate UAT** | Standing gate before assemble — do not weaken |
 
 ## How this sits with other locks
 
 | Lock | Relationship |
 |---|---|
-| `HOS_UAT_BIBLE_HOUSE_LOCK.md` | Standing ALWAYS picture bar. Plate-library adds **process**: library DNA · continuous plate gate before assemble · mint path. Do not weaken UAT ALWAYS. |
+| `HOS_UAT_BIBLE_HOUSE_LOCK.md` | Standing ALWAYS picture bar. Plate-library adds **process**: library DNA · continuous plate gate before assemble · model tier · mint path. Do not weaken UAT ALWAYS. |
 | `HOS_HOUSE_VO_AND_TEACH_LOCK.md` | VO/teach clarity unchanged. |
-| `.cursor/rules/hos-flow-veo-primary.mdc` | Flow Veo remains CG path; this lock adds plate-library process + ULTRA CDP auth. |
+| `.cursor/rules/hos-flow-veo-primary.mdc` | Flow Veo remains CG path; this lock adds plate-library process + **Quality vs Fast** tier + ULTRA CDP auth. Fast remains OK for low-risk garnish; Quality is required for fragile CLEAN LIGHT. |
 
 ## Do not
 
@@ -101,5 +115,8 @@ Bake these into every Flow prompt for Empty Chairs / late desks / Explorer. UAT 
 - Score plate UAT from stills alone
 - Paint / temporal-median / brightness-motion paint on Empty Chairs / late desks / Explorer
 - Use `benoats86` or any non-ULTRA / prepaid-dry account for HOS Veo
+- Use **Veo 3.1 Fast** on fragile CLEAN LIGHT / lamp / flask / emissive-invent remints (Quality required)
+- Use **Seedance** as a substitute for Veo on HOS fragile remints / plate-library path
+- Weaken crop-reject or continuous mid-plate / continuous-playback plate UAT
 - Ping Ben before full UAT PASS / ready to watch
 - Upload HOS to Orbit or Oppti · put `/go/` on Shorts from this note

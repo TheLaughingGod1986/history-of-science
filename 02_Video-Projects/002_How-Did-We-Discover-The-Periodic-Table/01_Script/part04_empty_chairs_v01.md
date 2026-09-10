@@ -121,7 +121,7 @@ Persist **one desk DNA** across scenery plates (warm wood, lamp, cream cards, so
 
 ---
 
-## Studio (plate-library) — Ben LOCK 9 Sep 2026
+## Studio (plate-library) — Ben LOCK 9–10 Sep 2026
 
 Standing HOS studio. Mandatory on this part and every later brief:
 
@@ -132,5 +132,6 @@ Standing HOS studio. Mandatory on this part and every later brief:
 5. After 2 same-DNA FAILs → new framing/start, not harder prompt only.
 6. One plate per FAIL cycle until that plate KEEP; then parallel remaining plates; assemble last.
 7. Auth: Mini CDP `benoats@googlemail.com` ULTRA only.
+8. **Model tier:** **Veo 3.1 Quality** for fragile CLEAN LIGHT remints (lamp / flask / emissive invent). **Fast** only for low-risk motion garnish. **Seedance is not a substitute.**
 
-P04 live path: 09b CLEAN LIGHT remint in flight under this lock.
+P04 live path: park `09b_risk_hold` CLEAN LIGHT this cycle (try13 STOP); next mint `06_explorer_leaves_gap` only — see `07_Edit-Project/PART04_NEXT_PLATE_06_EXPLORER_NO_LAMP.md`.

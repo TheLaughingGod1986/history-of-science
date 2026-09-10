@@ -8,7 +8,7 @@ alwaysApply: true
 **Channel:** [@HistoryOfScienceYT](https://www.youtube.com/@HistoryOfScienceYT) **only**  
 **Scope:** **Standing ALWAYS** on every HOS cut (001, 002, later). Not film-002-only.  
 **Ops bible:** `00_Brand/Brand-Guidelines/HOS_UAT_BIBLE_HOUSE_LOCK.md`  
-**Studio process:** `00_Brand/Brand-Guidelines/HOS_STUDIO_PLATE_LIBRARY_LOCK.md` · `.cursor/rules/hos-studio-plate-library-lock.mdc` — continuous-playback **plate** gate before `rough_vN` assemble; hard fails in Flow prompt + UAT: lava drip / molten bead (never soft-pass; bible merge `8ddbf99`); unfinished flat cards; mid-crown unfinished Explorer hair / pits.  
+**Studio process:** `00_Brand/Brand-Guidelines/HOS_STUDIO_PLATE_LIBRARY_LOCK.md` · `.cursor/rules/hos-studio-plate-library-lock.mdc` — continuous-playback **plate** gate before `rough_vN` assemble; hard fails in Flow prompt + UAT: lava drip / molten bead (never soft-pass; bible merge `8ddbf99`); unfinished flat cards; mid-crown unfinished Explorer hair / pits. **Model tier (Ben LOCK 10 Sep 2026):** fragile CLEAN LIGHT remints (lamp / flask / emissive invent) → **Veo 3.1 Quality** (not Fast; **Seedance is not a substitute**).  
 **UAT notified:** yes (Ben → CoS).  
 **Hardened 8 Sep 2026:** glasses · lamp glow · readable cards (keep existing ALWAYS).  
 **Hardened 9 Sep 2026:** Explorer hair · no lamp lava drip · late-shot finish (keep all prior ALWAYS).  
@@ -35,7 +35,7 @@ alwaysApply: true
 - **No lamp lava drip** extends **lamp = clean warm glow** — light stays light, not molten leak under the bulb. Ben `v19` evening stills prove this cannot be soft-passed.
 - **Late-shot horizontal ghosts** and **garbled cards** / **face blot** clarify finish bars that soft-passed on P04 Empty Chairs `v17` stills — do not weaken prior ALWAYS.
 - **Finished 3D cartoon quality** clarifies the house finish bar that soft-passed on P04 Empty Chairs `v19` evening stills — do not weaken prior ALWAYS.
-- **Plate-library studio lock** (`HOS_STUDIO_PLATE_LIBRARY_LOCK.md`) is the standing mint **process** (KEEP DNA · continuous plate UAT before assemble · Flow-only · hard lava/flat/crown fails · stop same-DNA after 2 FAILs · Mini CDP `benoats@googlemail.com` ULTRA). It does not replace these ALWAYS checks.
+- **Plate-library studio lock** (`HOS_STUDIO_PLATE_LIBRARY_LOCK.md`) is the standing mint **process** (KEEP DNA · continuous plate UAT before assemble · Flow-only · hard lava/flat/crown fails · stop same-DNA after 2 FAILs · Mini CDP `benoats@googlemail.com` ULTRA · **Veo 3.1 Quality** for fragile CLEAN LIGHT — not Fast; Seedance not substitute). It does not replace these ALWAYS checks.
 
 ## Do not
 
