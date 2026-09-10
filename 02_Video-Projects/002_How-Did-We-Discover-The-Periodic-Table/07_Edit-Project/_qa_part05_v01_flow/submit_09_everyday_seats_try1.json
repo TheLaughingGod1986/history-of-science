@@ -1,0 +1,32 @@
+{
+  "plate": "09_everyday_seats",
+  "try": "1_v01",
+  "which": "salt_iodine_silicon_helium",
+  "start_n": 2,
+  "max_starts": 2,
+  "cycle": "v01_c19_08b_09",
+  "project_url": "https://flow.google.com/project/cf142170-5db3-4753-9842-c68b9dda77e0",
+  "info": {
+    "seconds": 52.3,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/cf142170-5db3-4753-9842-c68b9dda77e0",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/cf142170-5db3-4753-9842-c68b9dda77e0"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T20:27:55",
+  "paint": "banned",
+  "assemble": false,
+  "note": "four hero seats pulse with salt, iodine, silicon, pale balloon"
+}

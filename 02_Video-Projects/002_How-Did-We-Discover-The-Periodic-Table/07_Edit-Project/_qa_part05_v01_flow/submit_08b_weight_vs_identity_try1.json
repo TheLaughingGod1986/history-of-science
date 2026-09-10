@@ -1,0 +1,32 @@
+{
+  "plate": "08b_weight_vs_identity",
+  "try": "1_v01",
+  "which": "two_seats_swap",
+  "start_n": 1,
+  "max_starts": 2,
+  "cycle": "v01_c19_08b_09",
+  "project_url": "https://flow.google.com/project/30794e14-e5f7-4b97-ba8a-cc77fc015dc3",
+  "info": {
+    "seconds": 51.5,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/30794e14-e5f7-4b97-ba8a-cc77fc015dc3",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/30794e14-e5f7-4b97-ba8a-cc77fc015dc3"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T20:26:58",
+  "paint": "banned",
+  "assemble": false,
+  "note": "two neighbouring cream seats gently swap order on 1869 wood wall"
+}
