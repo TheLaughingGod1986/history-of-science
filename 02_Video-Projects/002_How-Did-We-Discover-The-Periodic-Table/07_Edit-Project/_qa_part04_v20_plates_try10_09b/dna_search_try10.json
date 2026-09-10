@@ -1,0 +1,51 @@
+{
+  "parent_try9_sha_mp4_note": "17b025037cc82bc5622757c6c12891a4b380b36c8fc92dd86c37410d8e59226f",
+  "forbidden_try8_keep": "cf182dc25d67d848cc37e2db05d7d7ff24f6d65e2cdecddc22f45e97d74576b3",
+  "forbidden_flat": "2a651abc673e719af8f6647f264da28a45d41950473489193c72f9a0c4481182",
+  "src_try9_cardless_sha": "879f96c78b60f877c4f0e3134cfbf41af0bfab4d22dcfbb74ce238c3c58bb4c2",
+  "critical_dna_change": "Do NOT reuse underside-bulb-hotspot starts; prefer side/backlit or opaque shade; reframe crops lamp cup out of frame",
+  "candidates": [
+    {
+      "name": "sidelit_cropL08",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try10_09b/alt_starts/try10_sidelit_cropL08.jpg",
+      "sha256": "6a3be6e98267313f927e3995d2f3d8476e86615011901aef140098036d37bfe0",
+      "hot_frac": 0.008130345262349062
+    },
+    {
+      "name": "sidelit_cropL12",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try10_09b/alt_starts/try10_sidelit_cropL12.jpg",
+      "sha256": "c3e715101204c3824ba2d816d96a7c7e5934db23a843f5bbbb44546f95150b51",
+      "hot_frac": 0.00849830764360679
+    },
+    {
+      "name": "sidelit_cropL16",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try10_09b/alt_starts/try10_sidelit_cropL16.jpg",
+      "sha256": "ae929d95a097b91628bfc26a9aba2b5db8a9407da26c90e196d78be36de1f6bb",
+      "hot_frac": 0.008695816862958363
+    },
+    {
+      "name": "highcam_cropL10_top04",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try10_09b/alt_starts/try10_highcam_cropL10_top04.jpg",
+      "sha256": "88d86bffb7a0e81a48cdb28e36df25de49b95d4b63dcc28150080c134ce4c502",
+      "hot_frac": 0.008655232776790232
+    },
+    {
+      "name": "glowonly_cropL22",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try10_09b/alt_starts/try10_glowonly_cropL22.jpg",
+      "sha256": "42a8c9b113d9b212cd7c8e36855953c7c61e978d0e01b8559eeea0a23bc32a0f",
+      "hot_frac": 0.009366807087604808
+    },
+    {
+      "name": "v01_t0.0_cropL18",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try10_09b/alt_starts/try10_v01_t0.0_cropL18.jpg",
+      "sha256": "fdac9b6b11d0f0a626dab27f7691028c030cf28f4576974ac428ee46b73f7345",
+      "hot_frac": 0.009109774541873308
+    },
+    {
+      "name": "v01_t0.2_cropL18",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try10_09b/alt_starts/try10_v01_t0.2_cropL18.jpg",
+      "sha256": "f9d56eb42e29d11e53bc96640cb6a7c8e638ea6affa5f90b5c42728c74125a26",
+      "hot_frac": 0.009431741625473819
+    }
+  ]
+}

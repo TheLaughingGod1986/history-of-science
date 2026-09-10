@@ -1,0 +1,39 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 10,
+  "project_url": "https://flow.google.com/project/6252334a-f001-4ff9-935e-9715535e3621",
+  "info": {
+    "seconds": 62.8,
+    "bytes": 0,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/6252334a-f001-4ff9-935e-9715535e3621",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/6252334a-f001-4ff9-935e-9715535e3621"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+  "start_sha256": "fe6d219f7c1d1f642a1e877eab6c65873fb1740d67036d9e95dedac37459de38",
+  "start_dna": "try10 nocup sidelit KEEP: try9C cardless moon empty-chair reframed cropL791 \u2014 lamp fixture OFF FRAME (no underside bulb cup); warm off-screen glow; NOT try8 KEEP cf182dc drip-baked; NOT flat 2a651abc; paint banned",
+  "model": "Veo 3.1 - Fast",
+  "when": "2026-09-09T23:26:26",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "prompt_has_lava_drip_ban": true,
+  "prompt_has_molten_teardrop_ban": true,
+  "prompt_has_fire_spit_ban": true,
+  "prompt_has_cardless": true,
+  "prompt_has_shade_cup_ban": true,
+  "prompt_allows_soft_empty_chairs": true,
+  "parent_try8_uat": "HARD FAIL CLEAN LIGHT \u2014 lamp lava drip / molten teardrop under shade continuous ~t1\u2013t8; flats CLEARED",
+  "parent_try9_uat": "SELF_REJECT CLEAN LIGHT \u2014 molten bead under shade (cup look-in DNA); flats PASS; sha 17b025037cc82bc5622757c6c12891a4b380b36c8fc92dd86c37410d8e59226f",
+  "paint": "banned"
+}

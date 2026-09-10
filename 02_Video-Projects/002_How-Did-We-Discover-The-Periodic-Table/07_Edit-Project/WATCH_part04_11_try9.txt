@@ -1,0 +1,15 @@
+plate: 11_publish_gaps try9
+verdict: KEEP_CANDIDATE (start 1/2)
+dna: try9 boardtop edgeoff — front printable band OFF-FRAME
+cleared: CLEAN LIGHT; dull flasks; no SECURITY/RESULT invent; cardless H/C/O/N; continuous motion
+note: mild mid→late pull-back; front margin blank (no readable words)
+sha256: 97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72
+bytes: 1316943
+duration_s: 8.0
+start_sha256: 719984d4fe50dab1a63a9d4cc9f0eb96b69922a1475afdf093b975daeb512d79
+flow: https://flow.google.com/project/17327f2b-fc8f-44d0-9c56-ddc23eeb2ef6
+starts: 1/2
+icloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_11_publish_gaps_try9
+parent_06: UAT PASS sha df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c
+parent_try8: STOP_TO_COS text invent
+next: CoS UAT; no assemble; no 11b/09b; do not burn start2 unless FAIL

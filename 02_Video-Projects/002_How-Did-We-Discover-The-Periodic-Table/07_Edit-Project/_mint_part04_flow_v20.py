@@ -99,6 +99,36 @@ STILL_PROPS = (
     "do not slide, do not pan across frame. Magnifier stays fixed on the desk — ZERO travel. "
     "Only microscopic liquid shimmer inside flasks is allowed. No object fly-through."
 )
+# 09b try12 — ZERO lamp prop + RIGHT-CAM / bookshelf-LEFT DNA (try11 still invented left fixture).
+# try10A–D + try11 SELF_REJECT: Veo invents shade/fixture mid-clip even from zerolamp starts.
+CLEAN_NOLAMP = (
+    "CLEAN LIGHT (BIBLE HARD — try12 ZERO FIXTURE + NO LEFT DESK INVENT ZONE): "
+    "moonlight through the window + window spill + soft ambient room fill ONLY. "
+    "Any warm fill is BEHIND CAMERA / OUT OF WORLD — never a visible fixture. "
+    "ZERO desk lamp, ZERO gooseneck, ZERO lampshade, ZERO bulb, ZERO shade cup, ZERO any lighting fixture, "
+    "ZERO looking into shade, ZERO inventing a fixture on the left edge mid-clip. "
+    "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO sparks, ZERO embers, "
+    "ZERO flames, ZERO burning chair rim, ZERO molten bead, ZERO glowing droplet. "
+    "Cool moonlit desk — never a visible lamp fixture of any kind."
+)
+SHARP_NOLAMP = (
+    "LATE SHOTS SHARP / SINGLE EXPOSURE (HARD): every frame finished cinematic 3D. "
+    "ZERO horizontal ghost doubles, ZERO double-exposure edges, ZERO left-half mush, "
+    "ZERO jitter trail on grid lines / flasks / chair / bookshelf. "
+    "ZERO desk lamp / gooseneck / shade / bulb invent — do not materialize any lighting fixture mid-clip "
+    "(try11 failed by inventing a left shade/gooseneck ~t5.8–t7.3). "
+    "LOCKED tripod settle preferred."
+)
+STYLE_NOLAMP = (
+    "FINISHED cinematic stylised 3D house quality (Animistry-class). "
+    "NOT flat unfinished vlog vector. NOT 2D cutouts. NOT cheap cel. "
+    "Believable wood grain, glass refraction, soft depth of field, polished materials. "
+    "ONE continuous 1869 chemist study at night: honey wood desk, empty chair, moon in the window, "
+    "BOOKSHELVES dominate the LEFT, moon/window on the RIGHT — NO desk lamp / gooseneck / shade / bulb / fixture. "
+    "Soft Empty Chairs panel glow OK. Silent. No Orbit. No Ken Burns still. No paint / no double-exposure."
+)
+
+
 PROMPTS = {
     "11_publish_gaps": (
         "Image-to-video from the attached start frame. PUBLISH THE GAPS beat. "
@@ -193,16 +223,31 @@ PROMPTS = {
     "09b_risk_hold": (
         "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact empty-chair chemist study. "
         "A BET / risk-hold settle beat. Finished cinematic stylised 3D — honey wood desk, empty wooden chair, "
-        "bookshelf, moon in the window. LOCKED TRIPOD CAMERA. Silent. "
-        "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds: warm clean desk-lamp glow ONLY. "
-        "HARD BAN forever (t0 through t8): fire, flame, flames, spark, sparks, ember, embers, lava, lava drip, "
-        "molten leak, fire spit, burning chair rim, candle flicker, firework particles, glowing coal, "
-        "dripping bulb goo, lamp-beam sparks, floating embers. "
-        "Chair back is PLAIN finished wood. Do NOT write any words, labels, captions, UI, or signage "
-        "anywhere in the frame. No lettering on the chair. No HUD. "
-        "CARDLESS desk: ceramic vessels, mortar, flasks, one blank paper stack, lamp, chair only. "
-        "No Explorer. No Orbit. No paint. No double-exposure. "
-        + LOCK_CAM + " " + CLEAN + " " + SHARP + " " + REJECT + " " + STYLE
+        "BOOKSHELVES dominate LEFT, bright moon in the window on RIGHT, soft Empty Chairs panel OK. "
+        "Camera is a RIGHT / three-quarter view — there is NO left desk-edge invent zone. "
+        "LOCKED TRIPOD CAMERA. Silent. "
+        "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds "
+        "(try9 UAT HARD FAIL bible 8ddbf99 — NEVER soft-pass molten bead under shade cup; "
+        "try10A/try10B/try10C/try10D SELF_REJECT: Veo invented open shade cup + molten bead mid-clip; "
+        "try11 SELF_REJECT: Veo invented desk-lamp shade/gooseneck on the LEFT ~t5.8–t7.3 from zerolamp start — "
+        "try12 mandatory DNA change = RIGHT-CAM / bookshelf-LEFT + ZERO lighting fixture): "
+        "THERE IS NO DESK LAMP AND NO LIGHTING FIXTURE OF ANY KIND — zero gooseneck, zero lampshade, "
+        "zero bulb, zero shade cup, zero wall sconce, zero candle holder, zero fixture that can invent a cup. "
+        "Illumination is MOONLIGHT + WINDOW SPILL + SOFT AMBIENT ROOM FILL ONLY "
+        "(warm fill may exist only BEHIND CAMERA / OUT OF WORLD — never visible). "
+        "Do NOT invent a lamp on the left; do NOT invent a shade cup mid-clip; do NOT invent warm fixture bounce. "
+        "LOCKED FRAMING for all 8s — identical crop to the start frame: do NOT widen, do NOT zoom out, "
+        "do NOT pan left/right, do NOT reveal anything off any edge. "
+        "Desk stays moonlit / softly ambient — NOT lit by a visible or implied lamp fixture. "
+        "HARD BAN forever (t0 through t8): desk lamp, gooseneck, lampshade, bulb, shade cup, looking into shade, "
+        "any lighting fixture, lava drip, molten teardrop, molten bead, glowing droplet, fire spit, sparks, "
+        "embers, lava, molten leak, dripping bulb goo, fire, flame, flames, spark, ember, burning chair rim, "
+        "candle flicker, firework particles, glowing coal, lamp-beam sparks, floating embers, "
+        "visible bulb underside, open shade cup, mid-crown unfinished hair, unfinished flat cards. "
+        "CARDLESS desk (HARD): ceramic vessels, mortar, flasks, one blank paper stack, empty chair only — "
+        "ZERO flat H/C/O/N element cards, letter tiles, HUD chips, unfinished flat overlays. "
+        "Soft Empty Chairs glow OK. No Explorer. No Orbit. No paint. No double-exposure. "
+        + LOCK_CAM + " " + CLEAN_NOLAMP + " " + SHARP_NOLAMP + " " + REJECT + " " + STYLE_NOLAMP
     ),
     "10_family_before_weight": (
         "Image-to-video from the attached start frame. FAMILY FIRST beat. "

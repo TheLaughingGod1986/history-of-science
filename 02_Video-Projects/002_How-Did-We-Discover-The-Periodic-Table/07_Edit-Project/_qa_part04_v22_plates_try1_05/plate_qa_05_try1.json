@@ -1,0 +1,24 @@
+{
+  "plate": "05_columns_families",
+  "try": 1,
+  "verdict": "SELF_REJECT",
+  "model": "Veo 3.1 - Quality",
+  "sha256": "29e4941c6071dd8686f3bcf85333b18e2e235396f7172fe4e3203f4614a9ad65",
+  "project_url": "https://flow.google.com/project/8041f52b-3dd9-449b-886a-b65f62ef2394",
+  "starts_used": 1,
+  "max_starts": 2,
+  "fail_class": [
+    "lava_drip",
+    "molten_bead",
+    "practical_lamp_invent_from_zerolamp_start"
+  ],
+  "evidence": [
+    "lamp_crops/t6.5_lamp.jpg \u2014 glowing teardrop under shade (lava/molten bead)",
+    "lamp_crops/t7.5_lamp.jpg \u2014 molten bead / drip along shade underside",
+    "frames mid\u2192late invent practical desk lamp despite zerolamp start crop"
+  ],
+  "human_gate": "SELF_REJECT before CoS \u2014 parent fail class repeats",
+  "assemble": false,
+  "next": "burn start 2/2 with try1B tighter zerolamp crop; STOP_TO_COS if fail",
+  "when": "2026-09-10T12:49:03"
+}

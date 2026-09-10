@@ -1,0 +1,3 @@
+Part 04 rough assemble LANDED: hos_002_part04_rough_v23.mp4
+Watch WATCH_part04_v23.txt
+Ben UAT: Explorer on-model + music continuous. Scores → CoS. Do not declare PASS.

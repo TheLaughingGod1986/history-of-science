@@ -1,0 +1,15 @@
+plate: 11_publish_gaps try9Q
+verdict: SELF_REJECT → STOP_TO_COS (2/2 boardtop DNA)
+model: Veo 3.1 - Quality (Ben LOCK; Seedance banned)
+blocker: practical lamp invent LEFT ~t6.0–t7.2
+cleared: no SECURITY/RESULT readable invent; continuous motion
+sha256: c2fdae47aa650d73a71fe72783ded3aa97c9387a06ed82c03a2650db2cefbd36
+bytes: 1450093
+duration_s: 8.0
+start_sha256: 719984d4fe50dab1a63a9d4cc9f0eb96b69922a1475afdf093b975daeb512d79
+start_dna: try9 boardtop edgeoff
+flow: https://flow.google.com/project/938eff46-7d04-4a90-b26a-69f50507ec23
+starts: 2/2
+parent_try9_fast: KEEP_CANDIDATE sha 97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72
+icloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_11_publish_gaps_try9Q
+next: STOP_TO_COS — new framing/DNA; no assemble; no 11b/09b

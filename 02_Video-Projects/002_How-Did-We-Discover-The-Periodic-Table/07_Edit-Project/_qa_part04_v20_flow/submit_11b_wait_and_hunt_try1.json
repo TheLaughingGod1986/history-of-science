@@ -1,0 +1,57 @@
+{
+  "plate": "11b_wait_and_hunt",
+  "try": 1,
+  "start_n": 1,
+  "max_starts": 2,
+  "project_url": "https://flow.google.com/project/3a2757d3-d996-44a8-b8c3-3ac7aa6536c7",
+  "info": {
+    "seconds": 63.0,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11b_wait_and_hunt_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/3a2757d3-d996-44a8-b8c3-3ac7aa6536c7",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/3a2757d3-d996-44a8-b8c3-3ac7aa6536c7"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11b_wait_and_hunt_start_v20.jpg",
+  "start_sha256": "53441bf8f77ead72b51acab6612909abc01d677e35fd10afafa11f5bbfbfc2de",
+  "start_dna": "try1 from 11 KEEP last: boardtop edgeoff zerolamp continuity join \u2014 publish-grid front printable band OFF-FRAME; holes+magnifier hero; gentle hunt toward holes; CLEAN=window/moon/off-world bounce ONLY; dull/matte flasks; cardless/no unfinished H/C/O/N; soft gap glow OK; plate-library 4b8ed25; main 3bc0414; paint banned; Seedance banned",
+  "plate_library_lock_sha": "4b8ed25",
+  "main_lock_sha": "3bc0414",
+  "model": "Veo 3.1 - Quality",
+  "model_rationale": "Quality REQUIRED \u2014 CLEAN LIGHT class per locked Showrunner brief",
+  "seedance": "banned",
+  "when": "2026-09-10T11:19:26",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "paint": "banned",
+  "assemble": false,
+  "parent_11": {
+    "verdict": "UAT_KEEP",
+    "sha256": "97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72",
+    "model": "Veo 3.1 - Fast"
+  },
+  "parent_06": {
+    "verdict": "UAT_PASS",
+    "sha256": "df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c"
+  },
+  "parked": [
+    "09b_risk_hold"
+  ],
+  "out_of_scope": [
+    "09b_risk_hold",
+    "06_explorer_leaves_gap",
+    "11_publish_gaps",
+    "assemble"
+  ],
+  "brief_lock": "PART04_NEXT_PLATE_11B_WAIT_AND_HUNT.md"
+}

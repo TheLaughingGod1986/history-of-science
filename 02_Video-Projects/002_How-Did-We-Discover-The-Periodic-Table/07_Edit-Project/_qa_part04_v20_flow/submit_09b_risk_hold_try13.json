@@ -1,0 +1,39 @@
+{
+  "plate": "09b_risk_hold",
+  "try": "13A",
+  "project_url": "https://flow.google.com/project/61016519-e333-4ff1-820f-a7ce70dfe72e",
+  "info": {
+    "seconds": 63.0,
+    "bytes": 0,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/61016519-e333-4ff1-820f-a7ce70dfe72e",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/61016519-e333-4ff1-820f-a7ce70dfe72e"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+  "start_sha256": "e036c7f8430dbd03921203346cab55d295ee2a62229c61567c11426e87a7dcd9",
+  "start_dna": "try13A NEW KEEP bookshelf leather-chair: v07 L38 crop \u2014 ZERO fixture in frame; CLEAN=warm OFF-LEFT out-of-world fill ONLY; CARDLESS empty tufted leather chair + bookshelves; Soft Empty Chairs OK; finished 3D; LOCKED FRAMING; bible 8ddbf99; plate-library 4b8ed25; NOT try8\u201312 moon-desk invent tree; NOT v01 moon empty-chair invent starts; paint banned",
+  "plate_library_lock_sha": "4b8ed25",
+  "bible": "8ddbf99",
+  "model": "Veo 3.1 - Fast",
+  "when": "2026-09-10T08:36:18",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "parent_try9_uat": "FORMAL HARD FAIL molten bead \u2014 bible 8ddbf99",
+  "parent_try10_12": "SELF_REJECT \u2014 lamp fixture invent mid-clip on moon-desk DNA",
+  "family": "NEW_KEEP_v07_bookshelf_empty_leather_chair_zerofixture_outworld",
+  "paint": "banned",
+  "assemble": false,
+  "max_starts": 2,
+  "stop_rule": "If A and B both invent ANY fixture \u2192 STOP_TO_COS"
+}

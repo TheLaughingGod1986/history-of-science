@@ -1,0 +1,113 @@
+{
+  "cut": "hos_002_part04_rough_v21.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v21.mp4",
+  "bytes": 78639895,
+  "duration_s": 127.76,
+  "sha256": "868a012c5f52fa7f412a076cf26593f9cd700f3c03299cd14ff7010eb6804963",
+  "parent_v20": "hos_002_part04_rough_v20.mp4",
+  "parent_v20_sha256": "1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b",
+  "parent_v19": "hos_002_part04_rough_v19.mp4",
+  "parent_v19_sha256": "69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf",
+  "keep_remints": {
+    "06_explorer_leaves_gap": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/06_explorer_leaves_gap_v20_try3.mp4",
+      "sha256": "df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c",
+      "bytes": 1616965
+    },
+    "09b_risk_hold": {
+      "path": "04_Generated-Clips/part04/raw/v20_quality/09b_risk_hold_v20_try14.mp4",
+      "sha256": "47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38",
+      "bytes": 1573095
+    },
+    "11_publish_gaps": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/11_publish_gaps_v20_try9.mp4",
+      "sha256": "97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72",
+      "bytes": 1316943
+    },
+    "11b_wait_and_hunt": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/11b_wait_and_hunt_v20_try1.mp4",
+      "sha256": "5602762e82fd40eb654b25a5d3e5260e8baf79707fb19ecf8b58ede67cb3075e",
+      "bytes": 1737312
+    }
+  },
+  "v20_kept_remints": {
+    "07_eka_placeholders": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/07_eka_placeholders_v20.mp4",
+      "sha256": "12ea5fc68e83da8df5f734ed9d0f8e3b0d725b86dc4140df794c03b16c29f74f",
+      "bytes": 1466667
+    },
+    "07b_eka_names_rotate": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/07b_eka_names_rotate_v20.mp4",
+      "sha256": "0ae6525c28737226c8cca3184dfd95b583413293df5c2906427c3d5ef6911d60",
+      "bytes": 1314779
+    },
+    "08_prediction_navigation": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/08_prediction_navigation_v20.mp4",
+      "sha256": "b50dcbbfd1f7b2c538e03f3d745f0ceed415b4da313505e9354d736ed880313e",
+      "bytes": 1402281
+    },
+    "08b_navigation_walk": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/08b_navigation_walk_v20.mp4",
+      "sha256": "d7cb7843e3990f76147113f80a87fe339e72e1a65888e4278124335b32d4da87",
+      "bytes": 1504109
+    },
+    "09_risk_bet": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/09_risk_bet_v20.mp4",
+      "sha256": "95042880aba7f49edeedced0bd69e5dbd27e6a790c0f149fe632b05447d70ef3",
+      "bytes": 1341061
+    },
+    "10_family_before_weight": {
+      "path": "04_Generated-Clips/part04/raw/v20_fast/10_family_before_weight_v20.mp4",
+      "sha256": "cf73a7b487b158714eeac593c2db960649d49a897e40a172387cc5e785f40951",
+      "bytes": 2037098
+    }
+  },
+  "plate_sha256": {
+    "01_chapter_empty_chairs": "3e0ce08b47beaf2cbd3c81a0736ff952a35ed11497aaace703b370844c700529",
+    "02_mendeleev_desk_cards": "ec2cc4388cb0546baaa0ec7713574b41a67cb4ddfdd133b5c39bfed9223e6ae9",
+    "02b_cards_sixty_three": "4599048325b8599f8eccc9940babd9545c24c37d1a9332678f552f287a1651e4",
+    "03_what_is_element": "6bd820496fe9ec0e24c293a6de65e9f1ecd5fab22810fa88d4129dd90dc9882b",
+    "04_sort_atomic_weight": "20c4344bc6d703e1498e74ca26fce74c141c00a0c197591f04c1e5eaa2feeb5c",
+    "05_columns_families": "6eb0121a7b959da4b19adac6ab45e50fe6d26620e755583b268e4f6fd0402454",
+    "06_explorer_leaves_gap": "df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c",
+    "05b_families_settle": "c1917608241b8479ac71b2d0d4d79053e00d66679ecc68ad9f234b7c23261ea3",
+    "07_eka_placeholders": "12ea5fc68e83da8df5f734ed9d0f8e3b0d725b86dc4140df794c03b16c29f74f",
+    "07b_eka_names_rotate": "0ae6525c28737226c8cca3184dfd95b583413293df5c2906427c3d5ef6911d60",
+    "08_prediction_navigation": "b50dcbbfd1f7b2c538e03f3d745f0ceed415b4da313505e9354d736ed880313e",
+    "08b_navigation_walk": "d7cb7843e3990f76147113f80a87fe339e72e1a65888e4278124335b32d4da87",
+    "09_risk_bet": "95042880aba7f49edeedced0bd69e5dbd27e6a790c0f149fe632b05447d70ef3",
+    "09b_risk_hold": "47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38",
+    "10_family_before_weight": "cf73a7b487b158714eeac593c2db960649d49a897e40a172387cc5e785f40951",
+    "11_publish_gaps": "97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72",
+    "11b_wait_and_hunt": "5602762e82fd40eb654b25a5d3e5260e8baf79707fb19ecf8b58ede67cb3075e"
+  },
+  "no_paint_fallback": true,
+  "plate_library_locked": true,
+  "timeline": {
+    "plate09b_picture_s": [
+      98.14999999999998,
+      106.04999999999998
+    ],
+    "plate10_picture_s": [
+      105.69999999999997,
+      113.59999999999998
+    ],
+    "plate11_picture_s": [
+      113.24999999999997,
+      121.14999999999998
+    ],
+    "plate11b_picture_s": [
+      120.79999999999997,
+      128.69999999999996
+    ],
+    "explorer_picture_s": [
+      45.3,
+      53.199999999999996
+    ]
+  },
+  "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v21.mp4",
+  "watch": "WATCH_part04_v21.txt",
+  "doc": "PART04_ASSEMBLE_V21.md",
+  "status": "LANDED_FOR_UAT \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping"
+}

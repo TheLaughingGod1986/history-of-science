@@ -1,0 +1,14 @@
+PLATE-FIRST 09b_risk_hold try10
+mp4: /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try10.mp4
+sha256: 084a374968c18153c9631a4027d0cd5f15e67ffbcf45fd22e68699bdcb542f76
+bytes: 1418665
+gate: PASS_TRY10_SELF
+clean_light: PASS (no molten bead / lava drip / sparks / fire under shade)
+flats: PASS (cardless; soft Empty Chairs OK)
+dna: nocup sidelit crop of try9C cardless moon empty-chair (lamp OFF FRAME left; NOT cup-look-in; NOT try8 KEEP drip-baked; NOT flat 2a651abc; paint banned)
+start_sha256: fe6d219f7c1d1f642a1e877eab6c65873fb1740d67036d9e95dedac37459de38
+flow: https://flow.google.com/project/6252334a-f001-4ff9-935e-9715535e3621
+auth: Mini CDP googlemail ULTRA
+iCloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try10/
+parent_try9: SELF_REJECT CLEAN LIGHT sha 17b025037cc82bc5622757c6c12891a4b380b36c8fc92dd86c37410d8e59226f
+NO assemble. NO other plates.
