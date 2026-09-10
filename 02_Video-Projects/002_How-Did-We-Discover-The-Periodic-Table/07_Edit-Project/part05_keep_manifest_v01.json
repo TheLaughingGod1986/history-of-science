@@ -26,6 +26,10 @@
     "04b_chemistry_rhymes": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/04b_chemistry_rhymes_v01_try1.mp4",
       "sha256": "bef1f46fed31d34610e95454424fd44ea661d0baa547558bc571b46aa3a2f093"
+    },
+    "05_scandium_fills": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/05_scandium_fills_v01_try2.mp4",
+      "sha256": "15061b734f1b65a36805503e0d2608b744f69fe588eb3387622794b39c3a8eab"
     }
   }
 }

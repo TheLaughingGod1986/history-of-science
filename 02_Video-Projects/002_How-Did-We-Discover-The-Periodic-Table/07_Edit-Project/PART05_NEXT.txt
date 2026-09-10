@@ -1,5 +1,5 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. Need 20 unique plates. Do not assemble yet. 6/20 KEEP.
+VO: 144.160s. Need 20 unique plates. Do not assemble yet. 7/20 KEEP.
 
 KEEP:
 - 01_chapter_guests_arrive try1 — EWS classroom wall chart
@@ -13,16 +13,19 @@ KEEP:
   Explorer used ONCE. Remaining plates scenery-only.
 - 04_gallium_fills_seat try1 — MACRO wall cell fills with Ga + silver sheen
   sha b828431ec255f31844861dd927c60cb58cce3c7afff6780dc928945bff802d30
-- 04b_chemistry_rhymes try1 — Ga + In, silver sheen rhymes across two seated cards
+- 04b_chemistry_rhymes try1 — Ga + In, silver sheen rhymes
   sha bef1f46fed31d34610e95454424fd44ea661d0baa547558bc571b46aa3a2f093
+- 05_scandium_fills try2 — SIDE wall, ONE Sc card seats
+  sha 15061b734f1b65a36805503e0d2608b744f69fe588eb3387622794b39c3a8eab
 
 FAIL / HOLD (do not assemble):
 - 02 try1 HOLD open lamp bulb
 - 02 try2 FAIL fire in desk slot
 - 03 try1 FAIL giant disembodied palm (no Explorer)
-- 05_scandium_fills try1 FAIL — three cards stack in one slot; full-word Scandium.
+- 05 try1 FAIL three cards stack in one slot
+- 05b_germanium_verdict try1 FAIL — orange fire-pit under Ge tile on a desk grid.
 
-Cycle v01_c5 is 2/2. Next cycle: remint 05 (ONE card, sparse Sc) + mint 05b_germanium_verdict (OVERHEAD, different from SIDE).
+Cycle v01_c6 is 2/2. Next cycle: remint 05b (cool white vacant, WALL grid from above, ZERO orange under the card) + mint 06_predict_before_found.
 No Explorer. Silver not lava. No desk fire-trenches.
 Auth Mini CDP Ultra. Paint banned. T2V Quality.
 Do not remint P01–P04.
