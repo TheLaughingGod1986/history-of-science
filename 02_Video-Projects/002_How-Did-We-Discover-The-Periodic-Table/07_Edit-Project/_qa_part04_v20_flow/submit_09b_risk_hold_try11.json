@@ -1,0 +1,39 @@
+{
+  "plate": "09b_risk_hold",
+  "try": "11",
+  "project_url": "https://flow.google.com/project/3983820e-e3db-411a-af11-ef366ced9d4c",
+  "info": {
+    "seconds": 62.5,
+    "bytes": 0,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/3983820e-e3db-411a-af11-ef366ced9d4c",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/3983820e-e3db-411a-af11-ef366ced9d4c"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+  "start_sha256": "ee638b2decc112ec57cd120361c2901d7ee72dd5741a7b5d0c581781ae9a2e64",
+  "start_dna": "try11 zerolamp moonwin: try9C cardless empty-chair moon KEEP cropL18+top03 \u2014 ZERO desk-lamp/gooseneck/shade/bulb/fixture; CLEAN LIGHT=moon+window spill+soft ambient ONLY; LOCKED FRAMING; bible 8ddbf99; Soft Empty Chairs OK; finished 3D; NOT try10A\u2013D; paint banned",
+  "plate_library_lock_sha": "4b8ed25",
+  "bible": "8ddbf99",
+  "model": "Veo 3.1 - Fast",
+  "when": "2026-09-10T00:57:46",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "parent_try9_uat": "FORMAL HARD FAIL molten bead \u2014 bible 8ddbf99 (contact + t3.8/t5.8/t7.3)",
+  "parent_try10A": "SELF_REJECT \u2014 open shade cup + drip-like protrusion mid-clip",
+  "parent_try10C": "SELF_REJECT \u2014 Veo widened left, invented open shade cup + molten bead mid-clip",
+  "parent_try10B": "SELF_REJECT \u2014 Veo invented open shade cup + molten bead mid-clip",
+  "parent_try10D": "SELF_REJECT \u2014 invents cup+bead late despite nolamp tightL + locked framing",
+  "paint": "banned",
+  "assemble": false
+}

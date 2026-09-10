@@ -99,28 +99,31 @@ STILL_PROPS = (
     "do not slide, do not pan across frame. Magnifier stays fixed on the desk — ZERO travel. "
     "Only microscopic liquid shimmer inside flasks is allowed. No object fly-through."
 )
-# 09b try10C — do NOT append generic CLEAN/SHARP/STYLE (they reintroduce desk-lamp language).
+# 09b try11 — ZERO lamp prop; do NOT append generic CLEAN/SHARP/STYLE (desk-lamp language).
+# try10A–D SELF_REJECT: Veo invented open shade cup + molten bead mid-clip even from nocup/nolamp starts.
 CLEAN_NOLAMP = (
-    "CLEAN LIGHT (BIBLE HARD — NO LAMP PROP): moonlight + soft warm OFF-SCREEN/OFF-FRAME left wall bounce ONLY. "
-    "ZERO desk lamp, ZERO lampshade, ZERO bulb, ZERO shade cup, ZERO looking into shade. "
+    "CLEAN LIGHT (BIBLE HARD — try11 ZERO FIXTURE): moonlight through the window + window spill "
+    "+ soft ambient room fill ONLY. "
+    "ZERO desk lamp, ZERO gooseneck, ZERO lampshade, ZERO bulb, ZERO shade cup, ZERO any lighting fixture, "
+    "ZERO looking into shade, ZERO off-screen lamp bounce that could invent a fixture. "
     "ZERO lava drip, ZERO molten leak, ZERO fire spit, ZERO sparks, ZERO embers, "
     "ZERO flames, ZERO burning chair rim, ZERO molten bead, ZERO glowing droplet. "
-    "Soft continuous warm bounce on desk — never a visible lamp fixture."
+    "Cool moonlit desk — never a visible lamp fixture of any kind."
 )
 SHARP_NOLAMP = (
     "LATE SHOTS SHARP / SINGLE EXPOSURE (HARD): every frame finished cinematic 3D. "
     "ZERO horizontal ghost doubles, ZERO double-exposure edges, ZERO left-half mush, "
     "ZERO jitter trail on grid lines / flasks / chair. "
-    "ZERO desk lamp invent — do not materialize a lamp mid-clip. "
+    "ZERO desk lamp / gooseneck / shade / bulb invent — do not materialize any lighting fixture mid-clip. "
     "LOCKED tripod settle preferred."
 )
 STYLE_NOLAMP = (
     "FINISHED cinematic stylised 3D house quality (Animistry-class). "
     "NOT flat unfinished vlog vector. NOT 2D cutouts. NOT cheap cel. "
     "Believable wood grain, glass refraction, soft depth of field, polished materials. "
-    "ONE continuous 1869 chemist study at night: honey wood desk, empty chair, moon window, "
-    "ceramic vessels / flasks, blank paper — NO desk lamp prop in frame. "
-    "Silent. No Orbit. No Ken Burns still. No paint / no double-exposure."
+    "ONE continuous 1869 chemist study at night: honey wood desk, empty chair, moon in the window, "
+    "ceramic vessels / flasks, blank paper — NO desk lamp / gooseneck / shade / bulb / fixture in frame. "
+    "Soft Empty Chairs panel glow OK. Silent. No Orbit. No Ken Burns still. No paint / no double-exposure."
 )
 
 
@@ -218,19 +221,25 @@ PROMPTS = {
     "09b_risk_hold": (
         "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact empty-chair chemist study. "
         "A BET / risk-hold settle beat. Finished cinematic stylised 3D — honey wood desk, empty wooden chair, "
-        "bookshelf, moon in the window, soft Empty Chairs panel OK. LOCKED TRIPOD CAMERA. Silent. "
+        "bookshelf, bright moon in the window, soft Empty Chairs panel OK. LOCKED TRIPOD CAMERA. Silent. "
         "CLEAN LIGHT — HOUSE HARD FAIL IF BROKEN for the FULL 8 seconds "
         "(try9 UAT HARD FAIL bible 8ddbf99 — NEVER soft-pass molten bead under shade cup; "
-        "try10A/try10B/try10C SELF_REJECT: Veo invented open shade cup + molten bead even from nocup starts): "
-        "THERE IS NO DESK LAMP PROP IN THIS SCENE — zero lamp fixture, zero lampshade, zero bulb, zero shade cup. "
-        "Illumination is moonlight from the window PLUS a soft warm bounce from an OFF-SCREEN / OFF-FRAME wall on the left only (lamp must never enter frame). LOCKED FRAMING for all 8s — identical crop to the start frame: do NOT widen, do NOT zoom out, do NOT pan left, do NOT reveal anything off the left edge. Left margin stays lamp-free empty space forever. try10C failed by inventing a desk lamp when the camera widened left — that must not recur. "
-        "Warm clean glow on the desk as ambient bounce — NOT a visible lamp. "
-        "HARD BAN forever (t0 through t8): desk lamp, lampshade, bulb, shade cup, looking into shade, "
-        "lava drip, molten teardrop, molten bead, glowing droplet, fire spit, sparks, embers, lava, "
-        "molten leak, dripping bulb goo, fire, flame, flames, spark, ember, burning chair rim, "
+        "try10A/try10B/try10C/try10D SELF_REJECT: Veo invented open shade cup + molten bead mid-clip "
+        "even from nocup/nolamp starts — try11 mandatory DNA change = ZERO lighting fixture in the scene): "
+        "THERE IS NO DESK LAMP AND NO LIGHTING FIXTURE OF ANY KIND — zero gooseneck, zero lampshade, "
+        "zero bulb, zero shade cup, zero wall sconce, zero candle holder, zero fixture that can invent a cup. "
+        "Illumination is MOONLIGHT + WINDOW SPILL + SOFT AMBIENT ROOM FILL ONLY. "
+        "Do NOT invent an off-screen lamp; do NOT invent warm fixture bounce that becomes a lamp. "
+        "LOCKED FRAMING for all 8s — identical crop to the start frame: do NOT widen, do NOT zoom out, "
+        "do NOT pan left/right, do NOT reveal anything off any edge. try10C/D failed by inventing a desk lamp "
+        "mid-clip (often after a widen/pan) — that must not recur. "
+        "Desk stays moonlit / softly ambient — NOT lit by a visible or implied lamp fixture. "
+        "HARD BAN forever (t0 through t8): desk lamp, gooseneck, lampshade, bulb, shade cup, looking into shade, "
+        "any lighting fixture, lava drip, molten teardrop, molten bead, glowing droplet, fire spit, sparks, "
+        "embers, lava, molten leak, dripping bulb goo, fire, flame, flames, spark, ember, burning chair rim, "
         "candle flicker, firework particles, glowing coal, lamp-beam sparks, floating embers, "
         "visible bulb underside, open shade cup. "
-        "CARDLESS desk (HARD): ceramic vessels, mortar, flasks, one blank paper stack, chair only — "
+        "CARDLESS desk (HARD): ceramic vessels, mortar, flasks, one blank paper stack, empty chair only — "
         "ZERO flat H/C/O/N element cards, letter tiles, HUD chips, unfinished flat overlays. "
         "Soft Empty Chairs glow OK. No Explorer. No Orbit. No paint. No double-exposure. "
         + LOCK_CAM + " " + CLEAN_NOLAMP + " " + SHARP_NOLAMP + " " + REJECT + " " + STYLE_NOLAMP
