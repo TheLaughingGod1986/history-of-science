@@ -1,0 +1,14 @@
+{
+  "plate": "10_zoo_became_city",
+  "try": "1",
+  "call": "FAIL",
+  "path": null,
+  "sha256": null,
+  "bytes": 0,
+  "project_url": "https://flow.google.com/project/f546f0d9-022c-4f85-a7b7-ce8c4c63c31a",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "wide city of seats, never houses",
+  "fail": "Create submitted but Flow project stayed empty (no generated-video thumb after 4+ min). No clip to harvest. Do not assemble.",
+  "next": "try2 remint same wood-wall city-of-seats prompt."
+}
