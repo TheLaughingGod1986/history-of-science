@@ -38,10 +38,11 @@ def main() -> None:
     copyf(PKG / "Pinned-Comments/periodic_table_long_pinned-comment_v01.txt", ICLOUD / "LISTINGS/pinned.txt")
 
     copyf(FULL, ICLOUD / "FULL/hos_002_periodic_table_full_v01.mp4")
+    copyf(PROJ / "08_Thumbnail/LIVE_THUMB_LOCK.md", ICLOUD / "THUMBS/LIVE_THUMB_LOCK.md")
     for name in (
-        "hos_002_thumb_A_gallium_animistry_v01.jpg",
-        "hos_002_thumb_B_empty_seats_animistry_v01.jpg",
-        "hos_002_thumb_C_empty_slot_animistry_v01.jpg",
+        "hos_002_thumb_A_gallium_live_v02.jpg",
+        "hos_002_thumb_B_empty_seats_live_v02.jpg",
+        "hos_002_thumb_C_empty_slot_live_v02.jpg",
     ):
         copyf(THUMB / name, ICLOUD / "THUMBS" / name)
 
@@ -54,11 +55,11 @@ def main() -> None:
     ):
         copyf(SHORTS / name, ICLOUD / "SHORTS" / name)
     for name in (
-        "hos_002_s01_empty_chairs_cover_v01.jpg",
-        "hos_002_s02_predict_metal_cover_v01.jpg",
-        "hos_002_s03_gallium_cover_v01.jpg",
-        "hos_002_s04_tellurium_cover_v01.jpg",
-        "hos_002_s05_other_table_cover_v01.jpg",
+        "hos_002_s01_empty_chairs_cover_live_v02.jpg",
+        "hos_002_s02_predict_metal_cover_live_v02.jpg",
+        "hos_002_s03_gallium_cover_live_v02.jpg",
+        "hos_002_s04_tellurium_cover_live_v02.jpg",
+        "hos_002_s05_other_table_cover_live_v02.jpg",
     ):
         src = COVERS / name
         if src.exists():
