@@ -1,0 +1,25 @@
+{
+  "plate": "11_publish_gaps",
+  "try": "8",
+  "verdict": "SELF_REJECT",
+  "reason": "readable invented text on grid BR (~SECURITY/RESULT); CLEAN LIGHT+flasks CLEARED",
+  "gates": {
+    "lamp_invent": "CLEAR",
+    "flask_glow_invent": "CLEAR",
+    "soft_gap_glow": "PASS",
+    "continuous_motion": "PASS",
+    "text_invent": "FAIL"
+  },
+  "sha256": "781b80b0df0c144ebda0cdd33d648fe061920d65985b9951e829ba8b4c64837c",
+  "bytes": 1409161,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/a3017d62-3df6-4dd8-8043-a4e1362a15e1",
+  "start_sha256": "eabcf990c664e38132756311f0baf08378118f03d8c5978d460bb3ddba97b936",
+  "start_dna": "try8 zerolamp moonwin cropL40",
+  "plate_library_lock_sha": "4b8ed25",
+  "paint": "banned",
+  "assemble": false,
+  "when": "2026-09-10T10:21:41",
+  "starts_used": 1,
+  "max_starts": 2
+}
