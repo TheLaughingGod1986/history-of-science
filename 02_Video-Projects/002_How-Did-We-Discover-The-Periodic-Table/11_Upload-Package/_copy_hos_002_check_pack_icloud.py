@@ -14,7 +14,7 @@ PKG = PROJ / "11_Upload-Package"
 THUMB = PROJ / "08_Thumbnail/Selected"
 SHORTS = PROJ / "10_Shorts"
 COVERS = PROJ / "08_Thumbnail/Shorts"
-FULL = PROJ / "09_Final-Export/hos_002_periodic_table_full_v01.mp4"
+FULL = PROJ / "09_Final-Export/hos_002_periodic_table_full_v02.mp4"
 
 
 def copyf(src: Path, dest: Path) -> None:
@@ -33,11 +33,11 @@ def main() -> None:
     copyf(PKG / "Titles/periodic_table_long_title_abc_v01.txt", ICLOUD / "LISTINGS/titles.txt")
     copyf(PKG / "Descriptions/periodic_table_long_description_v01.txt", ICLOUD / "LISTINGS/description.txt")
     copyf(PKG / "Tags/periodic_table_long_tags_v01.txt", ICLOUD / "LISTINGS/tags.txt")
-    copyf(PKG / "Chapters/periodic_table_long_chapters_v01.txt", ICLOUD / "LISTINGS/chapters.txt")
+    copyf(PKG / "Chapters/periodic_table_long_chapters_v02.txt", ICLOUD / "LISTINGS/chapters.txt")
     copyf(PKG / "Shorts/SHORTS_LISTINGS_v01.json", ICLOUD / "LISTINGS/shorts_listings.json")
     copyf(PKG / "Pinned-Comments/periodic_table_long_pinned-comment_v01.txt", ICLOUD / "LISTINGS/pinned.txt")
 
-    copyf(FULL, ICLOUD / "FULL/hos_002_periodic_table_full_v01.mp4")
+    copyf(FULL, ICLOUD / "FULL/hos_002_periodic_table_full_v02.mp4")
     copyf(PROJ / "08_Thumbnail/LIVE_THUMB_LOCK.md", ICLOUD / "THUMBS/LIVE_THUMB_LOCK.md")
     for name in (
         "hos_002_thumb_A_gallium_live_v02.jpg",

@@ -8,6 +8,8 @@
 **B:** How Did We Know Which Elements Were Missing?  
 **C:** How Did Mendeleev Predict Missing Elements?
 
+**Watch:** `HOS UAT/hos_002_periodic_table_full_v02.mp4` (chapter cards + soft joins). v01 hard-concat is trail only.
+
 **Thumb A (recommend — live 001 flask grammar):** giant gallium, Explorer garnish  
 Studio ABC after upload: A object-hero · B Explorer peek · C empty slot.  
 v01 character-hero thumbs are trail only. See `08_Thumbnail/LIVE_THUMB_LOCK.md`.
