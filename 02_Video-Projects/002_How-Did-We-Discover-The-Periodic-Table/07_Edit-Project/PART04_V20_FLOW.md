@@ -11,7 +11,7 @@
 - Ben stills: unfinished Explorer · lava/fire bulbs · unfinished 1:44 / FAMILY FIRST / publish desks
 
 ## Remint (Flow Ultra CDP, live Mini, NO paint)
-Account `benoats@googlemail.com` ULTRA. Model **Veo 3.1 Fast**. Gallery mp4 harvest only.
+Account `benoats@googlemail.com` ULTRA. Model **Veo 3.1 Quality** going forward (was Fast through early v20 tries; locked Quality 10 Sep 2026 for consistency). Gallery mp4 harvest only.
 
 | Plate | Try | Flow project | Gate |
 |---|---|---|---|
