@@ -273,8 +273,8 @@ def main() -> None:
             "main_lock_sha": MAIN_LOCK,
             "model": MODEL,
             "model_rationale": (
-                "Fast OK — zerolamp low-risk DNA matching 11 KEEP; "
-                "Quality invents left lamp on this desk family (try9Q SELF_REJECT)"
+                "Quality REQUIRED — CLEAN LIGHT / lamp·flask·emissive invent class "
+                "(locked Showrunner brief PART04_NEXT_PLATE_11B_WAIT_AND_HUNT.md)"
             ),
             "seedance": "banned",
             "when": time.strftime("%Y-%m-%dT%H:%M:%S"),
