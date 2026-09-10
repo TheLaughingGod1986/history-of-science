@@ -38,7 +38,7 @@ import orbit_flow_veo_ui as flow  # noqa: E402
 flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/")
 
 PROJ = Path(__file__).resolve().parents[1]
-RAW = PROJ / "04_Generated-Clips/part04/raw/v20_fast"
+RAW = PROJ / "04_Generated-Clips/part04/raw/v20_quality"
 REJECTED = RAW / "_rejected"
 QA = PROJ / "07_Edit-Project/_qa_part04_v20_flow"
 META = PROJ / "07_Edit-Project/part04_mint_flow_v20_meta.json"
@@ -47,7 +47,8 @@ HARVEST = Path(__file__).resolve().parent / "_harvest_newest_gallery_v01.py"
 FORCE_DL = Path(__file__).resolve().parent / "_harvest_force_download_v04.py"
 EDIT_DL = Path(__file__).resolve().parent / "_harvest_part04_v11_edit_download.py"
 
-MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Fast"
+# House lock (10 Sep 2026): Veo 3.1 Quality — consistency over Fast volume.
+MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Quality"
 PROFILE = Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
 CDP_URL = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
 REQUIRE_CDP = os.environ.get("HOS_FLOW_REQUIRE_CDP", "1") == "1"

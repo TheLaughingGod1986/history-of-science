@@ -13,15 +13,23 @@ Locked to match Orbit With Ben production practice.
 
 - Burns **Google One → AI Ultra Flow credits** (not Gemini API Fast/Lite buckets)
 - Model: **Veo 3.1** only (`Veo 3.1 - Lite` / `Fast` / `Quality`) — never Omni Flash / Nano Banana
-- HOS start-frame I2V proven path (2026-08-26):
+- **Default going forward (locked 10 Sep 2026):** **`Veo 3.1 - Quality`**
+  - Better consistency / material honesty (CLEAN LIGHT, flasks, desks, faces)
+  - Matches `orbit_flow_veo_ui.DEFAULT_MODEL`
+  - Override only with explicit `ORBIT_FLOW_VEO_MODEL=…` when CoS asks for Fast volume garnish
+- HOS start-frame I2V path:
   1. Upload still → right-click **Animate**
-  2. Lock **Veo 3.1 - Fast** · 16:9 · x1
+  2. Lock **Veo 3.1 - Quality** · 16:9 · x1
   3. Prompt → Create → **approve credit confirmation**
   4. Wait for finished mp4 (not the start-frame JPEG)
 - CLI: `--start-frame <still.jpg> --prompt "…" --out clip.mp4`
 - One-time auth: `python3 04_Audio/tools/orbit_flow_veo_ui.py --login`
 - Profile: `ORBIT_FLOW_PROFILE` (default Playwright profile path)
 - **Daily generation limit** can block even with monthly credits left — wait for reset; do not ship Ken Burns as a substitute
+
+## Fast (exception only)
+
+**Veo 3.1 - Fast** is allowed only for low-risk motion / volume garnish when CoS explicitly says so. Do **not** use Fast as the house default for CLEAN LIGHT, prop-sensitive, or identity-sensitive plates.
 
 ## Fallback (only if Flow UI is broken / not logged in)
 
@@ -34,6 +42,6 @@ ElevenLabs **Ben Orbit Narrator** only (`kDch6ACCIpqgQ0NsU9kk`).
 
 ## Why
 
-API Fast/Lite quotas are too thin for episode plate volume. Orbit avoided this by living on Flow Ultra. HOS follows the same pipe.
+API Fast/Lite quotas are too thin for episode plate volume. Orbit lived on Flow Ultra; HOS follows the same pipe. Part 04 UAT (emissive flask / lamp invent mid-clip on Fast) → **Quality** is the consistency default going forward.
 
 See: `VEO_QUOTA_DIAG_2026-08-26.md` (Episode 001).
