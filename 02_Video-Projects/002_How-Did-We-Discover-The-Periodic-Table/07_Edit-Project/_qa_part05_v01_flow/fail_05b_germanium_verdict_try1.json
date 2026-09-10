@@ -1,0 +1,15 @@
+{
+  "plate": "05b_germanium_verdict",
+  "try": "1",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/05b_germanium_verdict_v01_try1.mp4",
+  "sha256": "1f0ff7829723650bf8abc07e28feaa2cfe43cdd558c52aead9c94df13ac68133",
+  "bytes": 1697515,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/5a1ee4bd-cf10-483e-9da8-d6ec2a3657cb",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "sparse Ge on one cream card; one card seats; no Explorer; 3D cartoon",
+  "fail": "Orange/amber glow under the seated Ge tile reads as a fire-pit in the desk grid. Also a tabletop isometric, not a wall-chart overhead. Do not assemble.",
+  "next": "try2: cool white/silver vacant only, ZERO orange under the card. Prefer WALL GRID from above, not a honey-wood desk tabletop."
+}

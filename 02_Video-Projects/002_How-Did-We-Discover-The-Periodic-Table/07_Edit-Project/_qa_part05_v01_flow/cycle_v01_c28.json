@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c28_11t3_11b2",
+  "jobs": [
+    {
+      "plate": "11_last_vacancy",
+      "try": "3_v01",
+      "which": "matte_last_row_no_glow",
+      "note": "NEW FRAMING after 2 FAILs: KEEP 10 wall, last-row unprinted card SAME brightness, never a lightbox or sparks",
+      "out": "submit_11_last_vacancy_try3.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11_last_vacancy try3 — last matte card. NEW FRAMING after two FAILs (books+fire, then spark lightbox). Copy KEEP 10 try4. ONE continuous 8s take. FRAME 1 already ON a honey-wood WALL of matte cream CARDS filling the frame. Every card is paper, same brightness, daytime wood bounce only. NONE of the cards is a lightbox. NONE is brighter than its neighbour. NONE has sparks, ember rims, or a glowing screen. Camera slow LATERAL DRIFT to the far-right of the last visible row. That far-right card has no ink, but it is the SAME matte cream paper and the SAME brightness as its neighbours. Stay ON the wall. NEVER fire. NEVER sparks. NEVER a white glowing panel. NEVER books. NEVER a hole. No person. No lamp. Continuous. Silent. HARD REJECT: lava, fire, sparks, ember rims, lightboxes, books, burned holes, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "11b_late_for_dinner",
+      "try": "2_v01",
+      "which": "matte_settle_no_orbit_fire",
+      "note": "KEEP 10 wall. Closer settle on last-row matte unprinted card. Never fire, never a hole, never a special glow.",
+      "out": "submit_11b_late_for_dinner_try2.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11b_late_for_dinner try2 — last matte card, slow settle. Copy KEEP 10 try4. ONE continuous 8s take. FRAME 1 already ON a honey-wood WALL of matte cream CARDS filling the frame. Camera slow SETTLE closer on the far-right last-row card. That card is unprinted cream paper, SAME brightness as neighbours — not a lightbox, not a hole, not a burned slot. The card stays seated in its wood frame the whole 8 seconds. NEVER fire. NEVER sparks. NEVER a flame rim. NEVER a card lifting out. NEVER a burned wood plate. NEVER an empty wood slot. NEVER books. Stay ON the wall. Continuous slow settle, never freeze. No person. No lamp. Silent. HARD REJECT: lava, fire, sparks, burned holes, empty slots, books, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}

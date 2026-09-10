@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c8_05b3_06b",
+  "jobs": [
+    {
+      "plate": "05b_germanium_verdict",
+      "try": "3_v01",
+      "which": "flat_wall_ge_no_glow",
+      "note": "NEW FRAMING: Ge card onto FLAT wall, ZERO glowing hole, zero fire",
+      "out": "submit_05b_germanium_verdict_try3.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 05b_germanium_verdict try3 — Germanium. NEW FRAMING after 2 fire FAILs. VO beat: germanium, the verdict. ONE continuous 8s take. VERTICAL cream-card WALL CHART. EXACTLY ONE cream card with sparse Ge slides onto a FLAT wooden peg on the wall among other cream cards. THERE IS NO HOLE. THERE IS NO GLOWING SLOT. THERE IS NO RIM LIGHT. The wood is solid. The verdict is the card seating and a tiny settle, not a furnace. FORBIDDEN: fire, flame, orange, amber, lava, sparks, glowing trenches, fire-pits, emissive vacant cells. Sparse Ge only — never Gg, never the word Germanium. Distinct from SIDE scandium drop. Daytime. No person. No lamp. Continuous 8s. Silent. HARD REJECT: lava, fire, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "06b_navigation_address",
+      "try": "1_v01",
+      "which": "push_vacant_wall_slot",
+      "note": "camera PUSH to one vacant WALL slot; cool pale gold rim; not a chair walk",
+      "out": "submit_06b_navigation_address_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 06b_navigation_address try1 — navigation. VO beat: walk toward a vacant lot with an address. ONE continuous 8s take. Camera PUSH toward ONE vacant card-space on a cream-card WALL CHART. The empty cell is a blank cream rectangle with a COOL pale gold pencil-line rim — never orange fire. Not a wooden chair dolly. Not a hallway of empty chairs. Not tiny houses. Solid wood behind. Continuous push the whole 8 seconds. Daytime. No person. No lamp. Silent. HARD REJECT: model-town, yellow house-blocks, chair-walk copy, lava, fire, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}

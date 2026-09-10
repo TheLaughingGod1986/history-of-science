@@ -1,0 +1,15 @@
+{
+  "plate": "02_guests_as_work",
+  "try": "1",
+  "call": "HOLD",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/02_guests_as_work_v01_try1.mp4",
+  "sha256": "afdd7f3545dc3e76b318c2377e2e8a58ed5668109ce36ee741570647c6203b83",
+  "bytes": 1434243,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/9d8e385e-7e12-4d3c-b90e-65b84510521a",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "adult hands placing cream cards, glowing gaps under the row, daytime, no lava, no Explorer, no moon-desk",
+  "fail_risk": "OPEN brass shade with visible bulb (P04 CLEAN LIGHT). Colour flasks. Faint street through window (not yellow house-block hero).",
+  "next": "Remint 02 with NO practical table lamp (P04 06 try8 lesson). New cycle."
+}

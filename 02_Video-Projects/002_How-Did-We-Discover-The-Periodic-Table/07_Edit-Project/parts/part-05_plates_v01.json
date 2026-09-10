@@ -1,0 +1,203 @@
+{
+  "part": "05",
+  "title": "The Guests Arrive",
+  "parent_locked_gate": "P04 v25 PASS_LOCKED sha e78027c0c58abe9284f7b85de693a08caabd3ad8ee45b64624eadd0329942bb1",
+  "house": "HOS_HOUSE_VO_AND_TEACH_LOCK + PART04_LESSONS",
+  "vo_file": "02_Voiceover/part05_the_guests_arrive_v01.wav",
+  "vo_txt": "02_Voiceover/part05_the_guests_arrive_v01.txt",
+  "brief": "01_Script/part05_the_guests_arrive_v01.md",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "bed_vol": 0.38,
+  "bed": "05_Music/hos_002_part01_curious_workshop_v02_loop130_norm.wav",
+  "end_card_s": 3.5,
+  "set_language": "ONE persistent 1869 classroom table DNA: honey wood + cream-card grid that grows from desk BOARDTOP into the SAME grid as a WALL CHART. Soft lamp with NO underside bulb/shade cup. Glowing vacant seats that FILL. Same DNA every scenery plate — camera and VERB change every plate. NEVER the P04 moon-desk still-life.",
+  "continuity_lock": "HARD: persist honey wood + cream cards. Do NOT I2V a run of plates from one start frame. Default T2V. Distinct mute-test framing per plate. No furniture layout reset. No room swap.",
+  "forbidden": "HARD REJECT: P04 moon-desk still-life (moon LEFT window + flasks + mortar + three blank cards + lamp right); lava drip / molten bead / orange fire melt / flame / sparks / chair fire; model-town sprawl; glowing yellow house-blocks; Orbit robot; photoreal; Ken Burns only; academic-blazer Explorer; unfinished flat cards; mid-crown unfinished Explorer hair; underside lamp bulb/shade cup; layout reset; HUD wall of letters; copying P04 08 chair-walk as navigation coverage.",
+  "motion_lock": "REAL Veo 3.1 camera + object motion every scenery plate. Quality for CLEAN LIGHT / emissive seats / gallium sheen. Fast only low-risk garnish. No Ken Burns hero. If Create dies — STOP.",
+  "flow_account": "benoats@googlemail.com",
+  "max_starts_per_cycle": 2,
+  "mint_order": "01 first KEEP, then remaining. Plate-first. Assemble last.",
+  "plates": [
+    {
+      "id": "01_chapter_guests_arrive",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "THE GUESTS",
+      "mute_test": "EWS classroom WALL chart of cream cards with a few glowing empty seats waiting. Daytime window, no moon. Camera slow push on the WALL, not a desk still-life.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. Animistry 3D cartoon 1869 classroom. HERO: a large WALL CHART of cream element cards on honey wood panels, a few seats glowing softly empty and waiting. Daytime window light from the RIGHT. Camera slow push-in on the wall chart the whole 8 seconds. Silent. No Orbit. No model-town. HARD REJECT: lava, photoreal, Ken Burns only, fire, moon in a left window, flasks+mortar+three-blank-cards desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "01b_empty_seats_waiting",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "THE GUESTS",
+      "mute_test": "CLOSER wall: only the glowing empty seats, not the EWS of plate 01.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. CLOSER shot of a cream-card WALL CHART: three glowing empty seats waiting, cards around them still. Slow push. Daytime. Silent. HARD REJECT: lava, fire, moon-desk still-life, model-town, Ken Burns only, Orbit. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "02_guests_as_work",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "THE GUESTS",
+      "mute_test": "BOARDTOP close: adult chemist hands (not Explorer) placing cream cards around glowing gaps. Workbench energy.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. BOARDTOP close of a honey wood chemist desk. Adult human hands (no boy, no Explorer) place cream cards around two or three glowing vacant gaps. Work, not dreamy fog. Continuous settle. Silent. HARD REJECT: model-town, lava, fire, Orbit, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "03_explorer_gallium_palm",
+      "explorer": true,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "GALLIUM",
+      "mute_test": "WAIST-UP Explorer looking down at a SMALL silver puddle in his palm. Head, round gold glasses, teal coat MUST stay in frame. Palm is a prop, not a giant disembodied hand CU. No lava.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. WAIST-UP medium shot of ONE finished Explorer boy looking DOWN at his own palm. Messy chestnut hair covering the crown, round gold glasses VISIBLE the whole take, dark teal trenchcoat, mustard vest, brown bow tie, satchel. A SMALL cool SILVER metal puddle sits in the palm — tin/pewter, never orange. Head and coat fill the upper frame; the palm is lower-third only. FORBIDDEN: giant disembodied hand filling the frame, palm-only CU, no face, no glasses. Continuous look+melt. Silent. HARD REJECT: lava drip, molten bead, orange fire, flame, academic blazer, unfinished mid-crown hair, Orbit, toy-scale OTS, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "04_gallium_fills_seat",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "1875",
+      "mute_test": "MACRO one wall-grid slot fills with a cream card and silver sheen.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. MACRO on ONE vacant glowing slot in a cream-card wall grid. A cream card with a sparse Ga mark slides in and a cool silver sheen settles. Continuous seat-fill. Silent. HARD REJECT: lava, fire, model-town, house-blocks, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "04b_chemistry_rhymes",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "GALLIUM",
+      "mute_test": "MACRO two neighbouring cream cards: similar silver sheen — density close, chemistry rhymes.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. MACRO two neighbouring cream cards on the wall grid; a cool silver sheen rhymes from one to the next. Continuous. Silent. HARD REJECT: lava, fire, moon-desk still-life, model-town, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "05_scandium_fills",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "SCANDIUM",
+      "mute_test": "SIDE angle of the wall grid: one card drops into a glowing gap.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. SIDE view of the cream-card wall grid. ONE card drops into a glowing vacant seat. Sparse Sc mark OK. Continuous. Silent. HARD REJECT: model-town, lava, fire, Orbit, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "05b_germanium_verdict",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "GERMANIUM",
+      "mute_test": "OVERHEAD grid: a second gap fills and the glow settles like a verdict. Different angle from 05.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. OVERHEAD of the cream-card grid. A second glowing gap fills as a card seats; vacant glow settles. Verdict motion. Sparse Ge mark OK. Continuous. Silent. HARD REJECT: model-town, lava, fire, Orbit, same side-angle as the scandium plate, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "06_predict_before_found",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "NOT A BLUFF",
+      "mute_test": "Empty slot gains a silver sheen before anyone 'finds' a metal — prediction made real.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. One empty glowing slot on the wall grid slowly gains a cool silver sheen as if the missing metal already belongs there. No person. Continuous. Silent. HARD REJECT: lava, fire, model-town, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "06b_navigation_address",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "NAVIGATION",
+      "mute_test": "Camera push toward one vacant SLOT with address glow on the WALL CHART. Not a chair dolly (P04 08 already shipped that).",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. Camera PUSH toward ONE vacant glowing SLOT on a cream-card WALL CHART — an address to walk toward, not a wooden chair dolly, not a street of houses. Continuous push. Silent. HARD REJECT: model-town sprawl, glowing yellow house-blocks, copying an empty-chair hallway walk, moon-desk still-life, lava, fire, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "07_table_not_finished",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "1869",
+      "mute_test": "1869 wall grid still full of glowing holes.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. Wide 1869 wall chart still unfinished — several glowing vacant seats remain among cream cards. Camera slow drift. Silent. HARD REJECT: model-town, lava, fire, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "07b_noble_gas_column",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "NOBLE GASES",
+      "mute_test": "A new vertical column of pale cream cards slides in from the right.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. A NEW vertical column of pale cream cards slides in from the right beside the grid — a new street of seats, not buildings. Soft aloof pale glow. Continuous slide. Silent. HARD REJECT: model-town, lava, fire, Orbit, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "08_atomic_number_ruler",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "ATOMIC NUMBER",
+      "mute_test": "Soft barcode / X-ray light sweeps two seats. No HUD paragraphs.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. Soft X-ray barcode light sweeps two cream-card seats. No readable paragraphs, no HUD wall. Continuous ruler sweep. Silent. HARD REJECT: photoreal lab, lava, fire, model-town, flaming letters, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "08b_weight_vs_identity",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "X-RAY",
+      "mute_test": "Two seats gently swap/correct order.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. Two neighbouring cream-card seats gently swap/correct order as a faint barcode light passes. Continuous. Silent. HARD REJECT: lava, fire, model-town, HUD paragraphs, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "09_everyday_seats",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "YOUR WORLD",
+      "mute_test": "Four hero seats pulse with tiny 1869-cartoon props: salt cellar, iodine bottle, silicon crystal, pale balloon.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. Four hero cream-card seats pulse softly in turn with tiny props suggesting salt, iodine, silicon, helium — sparse 1-2 letter marks max. Continuous pulse. Silent. HARD REJECT: wall of text, model-town, Orbit, lava, fire, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "09b_victory_seats",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "YOUR WORLD",
+      "mute_test": "Four cartoon objects on cream seats: battery, telephone, pill bottle, steel beam. Not 09's salt/iodine set.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. Four cream seats hold tiny cartoon props in turn: a battery, a telephone, a pill bottle, a steel beam. Continuous pulse. Silent. HARD REJECT: photoreal phones, logos, lava, fire, model-town, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "10_zoo_became_city",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "A CITY",
+      "mute_test": "Stay ON a filled honey-wood cream-card WALL the whole take. Never houses, never a city pull-back.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. MEDIUM-WIDE on a COMPLETED 1869 honey-wood cream-card WALL GRID. Every tile is a cream card. Camera slow drift along the filled wall ONLY. NEVER houses. NEVER miniature buildings. NEVER a diorama. NEVER furniture chairs. Stay on the wall. Silent. HARD REJECT: model-town, house-blocks, pull-back to a city, lava, fire, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "10b_find_missing",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "A CITY",
+      "mute_test": "Tight filled cream-card WALL; ONE unprinted cream card among faint 1-2 letter neighbours. Never a hole, never fire, never a room.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON a filled 1869 honey-wood cream-card WALL filling the frame. Neighbour cards have faint 1-2 letter marks. ONE card is unprinted cream paper in the same wood slot. Camera slow lateral drift, pause on the unprinted card. NEVER a hole. NEVER fire. NEVER a wide room. NEVER people. NEVER houses. Silent. HARD REJECT: lava, fire, burned holes, hands, furniture chairs, model-town, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "11_last_vacancy",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "EMPTY STILL",
+      "mute_test": "KEEP 10 wall. Last-row far-right card is unprinted matte paper, SAME brightness as neighbours. Never a lightbox, never sparks.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON a honey-wood WALL of matte cream CARDS filling the frame like KEEP 10. Every card same brightness. Camera slow drift to the far-right last row. That card has no ink but is NOT brighter, NOT a screen, NOT spark-rimmed. Silent. HARD REJECT: lava, fire, sparks, lightboxes, books, burned holes, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "id": "11b_late_for_dinner",
+      "explorer": false,
+      "i2v": false,
+      "model": "Veo 3.1 - Quality",
+      "side_label": "EMPTY STILL",
+      "mute_test": "KEEP 10 wall. Closer settle on last-row unprinted matte card, same brightness. Never fire, never a hole, never a lightbox.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON the honey-wood WALL of matte cream CARDS. Camera slow settle on the far-right last-row unprinted cream card. Same brightness as neighbours. Card stays seated. NEVER fire. NEVER a hole. NEVER a lightbox. Continuous, never freeze. Silent. HARD REJECT: lava, fire, sparks, burned holes, empty slots, books, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}

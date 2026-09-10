@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c27_11t2_11b1",
+  "jobs": [
+    {
+      "plate": "11_last_vacancy",
+      "try": "2_v01",
+      "which": "keep10b_last_row_card",
+      "note": "Copy KEEP 10b cream-card wall. Last-row unprinted card. Never books, never fire around paper.",
+      "out": "submit_11_last_vacancy_try2.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11_last_vacancy try2 — last unprinted card. Copy KEEP 10b DNA. ONE continuous 8s take. FRAME 1 already ON a honey-wood WALL of cream CARDS filling the entire frame, same as KEEP 10b: flat cream paper cards flush in wood frames, faint 1-2 letter corner marks. NEVER books. NEVER book-spines. NEVER standing paper on a shelf. NEVER pigeonholes. The far-right card of the last visible row is unprinted cream paper, same size, flush in its frame. Camera slow LATERAL DRIFT along that row toward that unprinted card. Stay ON the wall the whole 8 seconds. The unprinted card stays matte cream paper — NEVER a flame rim, NEVER burning paper, NEVER ember lights in empty cubbies, NEVER orange. No person. No lamp. Continuous. Silent. HARD REJECT: lava, fire, burned holes, books, book-spines, shelves of spines, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "11b_late_for_dinner",
+      "try": "1_v01",
+      "which": "orbit_last_unprinted_card",
+      "note": "Same KEEP 10b wall. Slow orbit around last unprinted card. Never pulse/glow/fire/books.",
+      "out": "submit_11b_late_for_dinner_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11b_late_for_dinner try1 — last unprinted card, camera orbit. Copy KEEP 10b DNA. ONE continuous 8s take. FRAME 1 already ON a honey-wood WALL of cream CARDS filling the frame: flat cream paper cards flush in wood frames, faint 1-2 letter marks. NEVER books. NEVER book-spines. The last-row far-right card is unprinted cream paper, flush in its frame. Camera slow ORBIT around that one unprinted card. The card stays matte cream paper the whole 8 seconds — NEVER a pulse of light, NEVER a glow, NEVER a flame rim, NEVER burning paper, NEVER ember lights. Stay ON the wall. Continuous motion, never freeze. No person. No lamp. Silent. HARD REJECT: lava, fire, burned holes, books, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}

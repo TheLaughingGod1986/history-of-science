@@ -1,0 +1,13 @@
+{
+  "plate": "07_table_not_finished",
+  "try": "1",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/07_table_not_finished_v01_try1.mp4",
+  "sha256": "6117c40c9e731858832cbbc08eda6465c001684ac9639bcb1d035331a8ddef84",
+  "bytes": 3139899,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/2b456fb0-a252-45fe-b770-c5eb1124fb94",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "WIDE 1869 wall chart, unfinished, blank cards remain as camera drifts in. No fire. Distinct from MACRO fills and SIDE Sc. Letters are messy Veo but the mute test is the unfinished wall."
+}

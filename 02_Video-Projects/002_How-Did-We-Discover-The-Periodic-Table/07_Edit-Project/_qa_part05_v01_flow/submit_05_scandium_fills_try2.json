@@ -1,0 +1,32 @@
+{
+  "plate": "05_scandium_fills",
+  "try": "2_v01",
+  "which": "side_one_card_sc",
+  "start_n": 1,
+  "max_starts": 2,
+  "cycle": "v01_c6_05_try2_05b",
+  "project_url": "https://flow.google.com/project/b2105c23-5aae-446e-98fc-0931b0908400",
+  "info": {
+    "seconds": 51.5,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/b2105c23-5aae-446e-98fc-0931b0908400",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/b2105c23-5aae-446e-98fc-0931b0908400"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T18:55:58",
+  "paint": "banned",
+  "assemble": false,
+  "note": "ONE Sc card drop; no stacking; no word Scandium"
+}

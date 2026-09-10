@@ -1,0 +1,13 @@
+{
+  "plate": "06_predict_before_found",
+  "try": "1",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/06_predict_before_found_v01_try1.mp4",
+  "sha256": "d0c5703dca6af066d71fff30558ed8f15e7e0e83b5d4434b4038f6b1dab61de3",
+  "bytes": 1569253,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/1299e2ff-fd2a-4439-84b8-0d68edb46d97",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "MACRO wood grid: cream placeholder turns into a cool silver metal plate in place. No lava. Distinct from 04 Ga card-fill and 05 Sc drop. Prediction made visible."
+}

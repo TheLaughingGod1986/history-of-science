@@ -1,0 +1,87 @@
+{
+  "part": "05",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "keep": {
+    "01_chapter_guests_arrive": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/01_chapter_guests_arrive_v01_try1.mp4",
+      "sha256": "ebef3126e9e9d3f501b67dac17b43d39d59be8dad9124fed66a04f5649559816"
+    },
+    "01b_empty_seats_waiting": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/01b_empty_seats_waiting_v01_try1.mp4",
+      "sha256": "6289e4cdc71b19e2628b2aa5bbc5225f1619dbde04fd6766fe3938c37b281a05"
+    },
+    "02_guests_as_work": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/02_guests_as_work_v01_try3.mp4",
+      "sha256": "39ce3bea84590412a4b56e601c083414b0f582dc13cc4bad99f00723df913abb"
+    },
+    "03_explorer_gallium_palm": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/03_explorer_gallium_palm_v01_try2.mp4",
+      "sha256": "374f44d9f19be8cede5975840048bfce9469049ac801a5ff655988c03f36c5fe"
+    },
+    "04_gallium_fills_seat": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/04_gallium_fills_seat_v01_try1.mp4",
+      "sha256": "b828431ec255f31844861dd927c60cb58cce3c7afff6780dc928945bff802d30"
+    },
+    "04b_chemistry_rhymes": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/04b_chemistry_rhymes_v01_try1.mp4",
+      "sha256": "bef1f46fed31d34610e95454424fd44ea661d0baa547558bc571b46aa3a2f093"
+    },
+    "05_scandium_fills": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/05_scandium_fills_v01_try2.mp4",
+      "sha256": "15061b734f1b65a36805503e0d2608b744f69fe588eb3387622794b39c3a8eab"
+    },
+    "06_predict_before_found": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/06_predict_before_found_v01_try1.mp4",
+      "sha256": "d0c5703dca6af066d71fff30558ed8f15e7e0e83b5d4434b4038f6b1dab61de3"
+    },
+    "05b_germanium_verdict": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/05b_germanium_verdict_v01_try4.mp4",
+      "sha256": "b43701c7d23b84ce5713072c62a0fe6fc84cfb34dbc8152da0f8402a78305e73"
+    },
+    "07_table_not_finished": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/07_table_not_finished_v01_try1.mp4",
+      "sha256": "6117c40c9e731858832cbbc08eda6465c001684ac9639bcb1d035331a8ddef84"
+    },
+    "06b_navigation_address": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/06b_navigation_address_v01_try5.mp4",
+      "sha256": "74779c7592ea86f4295862816d8da12d8edd425e4b4b447a11f79bde3393b48c"
+    },
+    "07b_noble_gas_column": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/07b_noble_gas_column_v01_try3.mp4",
+      "sha256": "3cfe1ba14a5e809af11004209477229c5f809e2512bcf39dde2db52b6db01383"
+    },
+    "08_atomic_number_ruler": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/08_atomic_number_ruler_v01_try1.mp4",
+      "sha256": "5b63e784aab4c828eb373c26f6bb81e360ca868b36b81d987c48639e397e54f5"
+    },
+    "08b_weight_vs_identity": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/08b_weight_vs_identity_v01_try1.mp4",
+      "sha256": "d0b9263452b2e216d0a046d3817d117d8f292ea50d8a4cae70a2f02b6c0a8ab5"
+    },
+    "09_everyday_seats": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/09_everyday_seats_v01_try1.mp4",
+      "sha256": "e72efc825b96d3687e757315fae6f7c21b1795284ea259b46b62a824b1072b5a"
+    },
+    "09b_victory_seats": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/09b_victory_seats_v01_try2.mp4",
+      "sha256": "877e32424010e3fd3b20e163883cf898a6a771903f8f7ed63b931434d430eeb9"
+    },
+    "10_zoo_became_city": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/10_zoo_became_city_v01_try4.mp4",
+      "sha256": "5a2c1667a1702e25b58ebad4b51bd59135f810371c54883761900795c30bc3de"
+    },
+    "10b_find_missing": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/10b_find_missing_v01_try3.mp4",
+      "sha256": "0500cf3a38989b03df4b6f1c3bba5227fca2124319d1f084f29e1df3af395c75"
+    },
+    "11_last_vacancy": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/11_last_vacancy_v01_try4.mp4",
+      "sha256": "15fe79f3b2eb153da8fa528cec71ef2372551c5cc92f93ee916cfee80aff4096"
+    },
+    "11b_late_for_dinner": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/11b_late_for_dinner_v01_try2.mp4",
+      "sha256": "9a65fd751019c2fe9779453ad909aea6af110e584a0133dc328906dcf7f4997c"
+    }
+  }
+}

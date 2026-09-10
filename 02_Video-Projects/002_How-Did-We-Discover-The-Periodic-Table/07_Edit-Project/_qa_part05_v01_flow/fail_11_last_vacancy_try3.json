@@ -1,0 +1,15 @@
+{
+  "plate": "11_last_vacancy",
+  "try": "3",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/11_last_vacancy_v01_try3.mp4",
+  "sha256": "d2d2578fb42957c17c9339c87c96a23569e01b815f0b5bd35b0a304b7659c592",
+  "bytes": 2802411,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/92b5af86-43c8-4bd1-9eca-f20bb7d4d612",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "KEEP 10 wood GRID with cream cards flush IN cells, not pinned playing cards",
+  "fail": "Room swap: playing cards / hanafuda pinned with brass tacks on plywood. Hearts, spades, ink-brush house drawings. Not the honey-wood cream-card GRID of KEEP 10. No fire, but do not assemble.",
+  "next": "try4: copy KEEP 10 try4. Cream cards flush IN honey-wood grid cells. Camera drift right along the last row. Matte, same brightness. Never pinned cards, never pips, never ink houses."
+}

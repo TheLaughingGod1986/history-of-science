@@ -1,0 +1,15 @@
+{
+  "plate": "10b_find_missing",
+  "try": "2",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/10b_find_missing_v01_try2.mp4",
+  "sha256": "8758032a46143293f74dc0003ebcbaf8fd478309285ed29f9d1b11a89f9a287a",
+  "bytes": 2443312,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/078e1673-dd35-4205-bc3d-73a80773b89e",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "tight filled cream-card wall; one unprinted cream card; no room, no fire",
+  "fail": "t00 wide room: orange FIRE in burned holes, 1669 on the wall, landscape window, miniature house on the right. Later a disembodied HAND. Mid stills still show fire behind cards. Same fire-hole DNA as try1. Do not assemble.",
+  "next": "try3 NEW FRAMING after 2 FAILs: copy KEEP 10 try4 — frame 1 already ON the filled cream-card wall filling the frame. Lateral drift. Neighbors have faint 1-2 letter marks; ONE card is unprinted cream paper, same size, same wood slot. Never a wide room, never years, never people, never houses, never fire, never a hole."
+}

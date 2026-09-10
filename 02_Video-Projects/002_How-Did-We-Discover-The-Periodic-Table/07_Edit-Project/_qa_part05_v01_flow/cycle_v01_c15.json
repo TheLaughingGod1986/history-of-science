@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c15_06b3_07",
+  "jobs": [
+    {
+      "plate": "06b_navigation_address",
+      "try": "3_v01",
+      "which": "one_blank_card_empty_wall",
+      "note": "NEW FRAMING: ONE blank cream card on empty wood wall; no pictogram grid",
+      "out": "submit_06b_navigation_address_try3.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 06b_navigation_address try3 — navigation. NEW FRAMING. VO beat: walk toward a vacant lot with an address. ONE continuous 8s take. A honey-wood classroom WALL with EXACTLY ONE blank unprinted cream card hanging on it. Camera PUSH toward that single blank card. No other cards. No grid. No drawings. No flame icons. No letters. No pencil. The blank card is the address. Continuous push 8s. Daytime. No person. No lamp. Silent. HARD REJECT: lava, fire, flame icons, pictograms, Ken Burns only, moon-desk still-life, model-town, chairs. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "07_table_not_finished",
+      "try": "1_v01",
+      "which": "wide_unfinished_1869",
+      "note": "WIDE 1869 wall with several blank unprinted cards still waiting; no fire",
+      "out": "submit_07_table_not_finished_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 07_table_not_finished try1 — 1869 unfinished. VO beat: the table is not finished. ONE continuous 8s take. WIDE cream-card WALL CHART, 1869, unfinished: most cards have sparse 1-2 letters, several cards are still blank unprinted cream rectangles. Camera slow drift. NEVER fire, NEVER flame icons, NEVER orange. Daytime. No person. No lamp. Continuous 8s. Silent. HARD REJECT: lava, fire, flame drawings, Ken Burns only, moon-desk still-life, model-town. Plate-library lock 4b8ed25."
+    }
+  ]
+}

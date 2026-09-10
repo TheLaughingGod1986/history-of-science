@@ -1,0 +1,15 @@
+{
+  "plate": "07b_noble_gas_column",
+  "try": "2",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/07b_noble_gas_column_v01_try2.mp4",
+  "sha256": "7a4335ce583a6634e4ed1caf6801fd92a5c42c8a4997c89cf04f46e39c8a9148",
+  "bytes": 2632297,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/33f9e80c-ae0f-4d1c-9297-722193d08974",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "column pins onto 1869 honey-wood wall from the right",
+  "fail": "Wood DNA and column insert are right, but a bright gold/amber neon light-strip frames the right edge from ~6s. Practical lamp / orange glow. Do not assemble.",
+  "next": "try3: same wood wall, new cream-card column pins from the right. ZERO light-strips, neon frames, lamps, orange/amber glow."
+}

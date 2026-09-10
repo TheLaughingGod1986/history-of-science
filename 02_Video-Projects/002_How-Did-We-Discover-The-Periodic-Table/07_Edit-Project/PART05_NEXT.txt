@@ -1,0 +1,7 @@
+ASSEMBLED. P04 v25 PASS / LOCKED. Part 05 rough v01 landed.
+
+WATCH: 09_Final-Export/hos_002_part05_rough_v01.mp4
+sha256=8dcb06b596318a7283210928fbb0e78f6f89c7db5d200b8edeefbaa9b5522ec4
+duration=147.310s  20/20 KEEP. Scores → CoS. Do not declare PASS.
+
+Do not remint P01–P04. Do not remint VO.

@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c24_10t3_10b",
+  "jobs": [
+    {
+      "plate": "10_zoo_became_city",
+      "try": "3_v01",
+      "which": "wide_filled_wall_grid",
+      "note": "WIDE filled cream-card WALL GRID pull-back; never miniature furniture; never say city",
+      "out": "submit_10_zoo_became_city_try3.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 10_zoo_became_city try3 — order. NEW FRAMING. VO beat: the zoo became a city. ONE continuous 8s take. SAME 1869 honey-wood WALL as KEEP 07, but NOW FILLED: a complete cream-card GRID, every tile a cream card with sparse 1-2 letter marks. Camera WIDE pull-back / settle. NEVER miniature furniture. NEVER tiny chairs. NEVER a diorama. NEVER a picture frame of models. NEVER houses. NEVER yellow house-blocks. Daytime window bounce only. No person. No lamp. No fire. Continuous. Silent. HARD REJECT: model-town, miniature chairs, house-blocks, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "10b_find_missing",
+      "try": "1_v01",
+      "which": "one_blank_in_filled_grid",
+      "note": "filled cream-card wall with ONE blank card to hunt; no glow-hole",
+      "out": "submit_10b_find_missing_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 10b_find_missing try1 — find the missing. VO beat: look at the empty chairs and know what to hunt. ONE continuous 8s take. SAME 1869 honey-wood WALL as KEEP 07. Ordered filled cream-card GRID, with ONE blank unprinted cream card still to hunt. Camera PUSH toward that blank card. Never a glowing fire-pit hole. NEVER miniature furniture. Stay MEDIUM. Continuous. Daytime window bounce only. No person. No lamp. No fire. Silent. HARD REJECT: model-town, miniature chairs, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    }
+  ]
+}

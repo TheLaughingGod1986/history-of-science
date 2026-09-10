@@ -1,0 +1,32 @@
+{
+  "plate": "10_zoo_became_city",
+  "try": "4_v01",
+  "which": "stay_on_filled_wall",
+  "start_n": 1,
+  "max_starts": 2,
+  "cycle": "v01_c25_10t4_10b2",
+  "project_url": "https://flow.google.com/project/ae2ade02-d022-4b96-8f04-fd505f7ca20c",
+  "info": {
+    "seconds": 51.4,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/ae2ade02-d022-4b96-8f04-fd505f7ca20c",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/ae2ade02-d022-4b96-8f04-fd505f7ca20c"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T21:03:34",
+  "paint": "banned",
+  "assemble": false,
+  "note": "Stay on filled cream-card WALL the whole take. No pull-back to houses."
+}

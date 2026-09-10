@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c9_07b_08",
+  "jobs": [
+    {
+      "plate": "07b_noble_gas_column",
+      "try": "1_v01",
+      "which": "column_slides_from_right",
+      "note": "new vertical pale column slides in from the right; not houses",
+      "out": "submit_07b_noble_gas_column_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 07b_noble_gas_column try1 — noble gases. VO beat: a new column of seats. ONE continuous 8s take. A NEW vertical column of pale cream cards slides in from the RIGHT beside an existing cream-card WALL GRID — a new street of seats, NEVER buildings or houses. Soft aloof pale glow, never orange. Continuous slide. Daytime. No person. No lamp. Silent. HARD REJECT: model-town, lava, fire, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "08_atomic_number_ruler",
+      "try": "1_v01",
+      "which": "xray_barcode_sweep",
+      "note": "soft barcode/X-ray light sweeps two seats; no HUD paragraphs",
+      "out": "submit_08_atomic_number_ruler_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 08_atomic_number_ruler try1 — atomic number. VO beat: a new ruler, atomic number. ONE continuous 8s take. Soft cool X-ray / barcode light sweeps TWO neighbouring cream-card seats on a WALL GRID. The light is pale white-blue, never orange fire, never flaming letters. No readable paragraphs. No HUD wall of text. Continuous ruler sweep. Daytime. No person. No lamp. Silent. HARD REJECT: photoreal lab, lava, fire, flaming letters, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}

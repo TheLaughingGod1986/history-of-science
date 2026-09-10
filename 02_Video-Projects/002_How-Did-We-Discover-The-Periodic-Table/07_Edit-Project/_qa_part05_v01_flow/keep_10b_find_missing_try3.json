@@ -1,0 +1,13 @@
+{
+  "plate": "10b_find_missing",
+  "try": "3",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/10b_find_missing_v01_try3.mp4",
+  "sha256": "0500cf3a38989b03df4b6f1c3bba5227fca2124319d1f084f29e1df3af395c75",
+  "bytes": 2381239,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/689901bb-ee5c-4129-b958-220d5367d47d",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "Tight honey-wood cream-card wall filling the frame. Neighbours have faint 1-2 letter marks. ONE unprinted cream card; camera drifts to it. No fire, no houses, no people, no hole. Winning DNA after try1 fire-hole and try2 fire+house+hand."
+}

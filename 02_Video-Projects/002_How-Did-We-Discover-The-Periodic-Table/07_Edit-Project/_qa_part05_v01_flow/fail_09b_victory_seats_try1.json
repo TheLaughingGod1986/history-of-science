@@ -1,0 +1,15 @@
+{
+  "plate": "09b_victory_seats",
+  "try": "1",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/09b_victory_seats_v01_try1.mp4",
+  "sha256": "3c5d57431e7fa93b1ab34c630e837035d00ddaaa19820afc39c17d17c712335e",
+  "bytes": 3340822,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/c19437d3-aa0a-46d8-b814-e960edd85df3",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "battery, telephone, pill bottle, steel beam on cream seats",
+  "fail": "Room swap: upholstered waiting-room armchairs, not the 1869 honey-wood cream-card WALL of KEEP 09. Props (battery/phone/pills/steel) are right. Do not assemble.",
+  "next": "try2: same cream-card wall shelves as KEEP 09, with battery/telephone/pill/steel props on the cards. Not furniture chairs."
+}

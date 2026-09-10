@@ -1,0 +1,32 @@
+{
+  "plate": "05b_germanium_verdict",
+  "try": "1_v01",
+  "which": "overhead_ge_verdict",
+  "start_n": 2,
+  "max_starts": 2,
+  "cycle": "v01_c6_05_try2_05b",
+  "project_url": "https://flow.google.com/project/5a1ee4bd-cf10-483e-9da8-d6ec2a3657cb",
+  "info": {
+    "seconds": 52.3,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/5a1ee4bd-cf10-483e-9da8-d6ec2a3657cb",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/5a1ee4bd-cf10-483e-9da8-d6ec2a3657cb"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T18:56:54",
+  "paint": "banned",
+  "assemble": false,
+  "note": "OVERHEAD Ge fill; distinct from SIDE scandium"
+}

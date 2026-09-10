@@ -143,5 +143,5 @@
     "moon_desk": "07+07b+08 were the same still-life; 07b\u2192v12 eka cards, 08\u2192walk to chair",
     "07b_t2v": "try1/try2 FAIL fire \u2014 not assembled"
   },
-  "status": "LANDED_FOR_UAT \u2014 Ben fix: kill repeating moon-desk; do not declare PASS"
+  "status": "PASS_LOCKED 2026-09-10 \u2014 Ben PASS; do not remint; next is Part 05"
 }
