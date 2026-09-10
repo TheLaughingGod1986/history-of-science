@@ -1,0 +1,24 @@
+{
+  "plate": "05_columns_families",
+  "try": "1B",
+  "verdict": "SELF_REJECT",
+  "model": "Veo 3.1 - Quality",
+  "sha256": "887a5b491b02e002e1233e9f665948fdbd8c4bbd4eb81c822ecaa1020ba38017",
+  "project_url": "https://flow.google.com/project/7c4e55d2-88d0-455f-ae91-de6e0497aaa6",
+  "starts_used": 2,
+  "max_starts": 2,
+  "fail_class": [
+    "lava_drip",
+    "molten_bead",
+    "practical_lamp_invent_from_zerolamp_start"
+  ],
+  "evidence": [
+    "lamp_crops/t6.5_lamp.jpg \u2014 glowing vertical streaks / molten drip under shade",
+    "05_columns_families_contact_continuous_try1B.jpg \u2014 warm drip under left lamp across mid frames",
+    "practical desk lamp invent mid\u2192late despite tighter zerolamp start"
+  ],
+  "human_gate": "SELF_REJECT",
+  "assemble": false,
+  "stop": "STOP_TO_COS \u2014 2/2 Quality starts burned on lava/lamp invent class",
+  "when": "2026-09-10T12:52:18"
+}
