@@ -2,15 +2,13 @@ Mint OPEN. P04 v25 PASS / LOCKED.
 VO: part05_the_guests_arrive_v01.wav  144.160s
 Need 20 unique ~8s plates.
 
-This cycle (2/2 Flow starts used):
+KEEP so far:
 - 01_chapter_guests_arrive try1 Quality T2V KEEP
   sha ebef3126e9e9d3f501b67dac17b43d39d59be8dad9124fed66a04f5649559816
-  project https://flow.google.com/project/57f735d0-f096-4e11-8db0-6cc91291e6c5
-  daytime wall chart, push-in, not moon-desk, no lava
-- 02_guests_as_work try1 Quality T2V HOLD (do not assemble)
-  sha afdd7f3545dc3e76b318c2377e2e8a58ed5668109ce36ee741570647c6203b83
-  project https://flow.google.com/project/9d8e385e-7e12-4d3c-b90e-65b84510521a
-  BOARDTOP hands + glowing card gaps OK, but OPEN shade shows the bulb (P04 CLEAN LIGHT fail). Next cycle remint 02 with NO practical lamp.
 
-Do not assemble a rough. Next cycle: remint 02 lamp-free, then 01b / 03.
-Do not remint P01–P04.
+HOLD (do not assemble):
+- 02_guests_as_work try1 — open shade / visible bulb
+
+This cycle: remint 02 try2 T2V Quality — NO practical lamp, tight BOARDTOP.
+Max 2 starts. If KEEP, mint 01b with remaining start.
+Do not assemble a rough. Do not remint P01–P04.
