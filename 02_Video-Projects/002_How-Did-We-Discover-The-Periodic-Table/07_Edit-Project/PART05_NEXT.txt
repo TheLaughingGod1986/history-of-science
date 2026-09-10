@@ -1,21 +1,25 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. Need 20 unique plates. Do not assemble yet.
+VO: 144.160s. Need 20 unique plates. Do not assemble yet. 5/20 KEEP.
 
 KEEP:
 - 01_chapter_guests_arrive try1 — EWS classroom wall chart
   sha ebef3126e9e9d3f501b67dac17b43d39d59be8dad9124fed66a04f5649559816
 - 01b_empty_seats_waiting try1 — closer wall, gold-rim empty cell
   sha 6289e4cdc71b19e2628b2aa5bbc5225f1619dbde04fd6766fe3938c37b281a05
-- 02_guests_as_work try3 — hands pin cards on wall (new framing after desk lamp/fire FAILs)
+- 02_guests_as_work try3 — hands pin cards on wall
   sha 39ce3bea84590412a4b56e601c083414b0f582dc13cc4bad99f00723df913abb
+- 03_explorer_gallium_palm try2 — waist-up on-model Explorer, silver puddle
+  sha 374f44d9f19be8cede5975840048bfce9469049ac801a5ff655988c03f36c5fe
+  Explorer used ONCE. Remaining plates scenery-only. Do not I2V identity sheet.
+- 04_gallium_fills_seat try1 — MACRO wall cell fills with Ga + silver sheen
+  sha b828431ec255f31844861dd927c60cb58cce3c7afff6780dc928945bff802d30
 
 FAIL / HOLD (do not assemble):
 - 02 try1 HOLD open lamp bulb
 - 02 try2 FAIL fire in desk slot
-- 03_explorer_gallium_palm try1 FAIL — giant disembodied palm, no Explorer.
-  sha 9c07d303b3f16a2395faed0f6de675620d9bc4b30877d3bdb803054950bda346
-  Silver melt PASS. Character FAIL. Do not I2V identity sheet.
+- 03 try1 FAIL giant disembodied palm (no Explorer)
 
-This cycle v01_c4: remint 03 waist-up (new framing) + mint 04_gallium_fills_seat (MACRO wall slot, silver not lava, no desk fire-trenches).
-Max 2 Flow starts. Auth Mini CDP Ultra. Paint banned. T2V Quality.
+Cycle v01_c4 is 2/2. Next cycle mint 04b_chemistry_rhymes then 05_scandium_fills.
+Unique mute-test framings. Silver not lava. No desk fire-trenches. No Explorer.
+Auth Mini CDP Ultra. Paint banned. T2V Quality.
 Do not remint P01–P04.

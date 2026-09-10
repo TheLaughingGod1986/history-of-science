@@ -7,13 +7,21 @@
       "path": "04_Generated-Clips/part05/raw/v01_quality/01_chapter_guests_arrive_v01_try1.mp4",
       "sha256": "ebef3126e9e9d3f501b67dac17b43d39d59be8dad9124fed66a04f5649559816"
     },
+    "01b_empty_seats_waiting": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/01b_empty_seats_waiting_v01_try1.mp4",
+      "sha256": "6289e4cdc71b19e2628b2aa5bbc5225f1619dbde04fd6766fe3938c37b281a05"
+    },
     "02_guests_as_work": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/02_guests_as_work_v01_try3.mp4",
       "sha256": "39ce3bea84590412a4b56e601c083414b0f582dc13cc4bad99f00723df913abb"
     },
-    "01b_empty_seats_waiting": {
-      "path": "04_Generated-Clips/part05/raw/v01_quality/01b_empty_seats_waiting_v01_try1.mp4",
-      "sha256": "6289e4cdc71b19e2628b2aa5bbc5225f1619dbde04fd6766fe3938c37b281a05"
+    "03_explorer_gallium_palm": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/03_explorer_gallium_palm_v01_try2.mp4",
+      "sha256": "374f44d9f19be8cede5975840048bfce9469049ac801a5ff655988c03f36c5fe"
+    },
+    "04_gallium_fills_seat": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/04_gallium_fills_seat_v01_try1.mp4",
+      "sha256": "b828431ec255f31844861dd927c60cb58cce3c7afff6780dc928945bff802d30"
     }
   }
 }
