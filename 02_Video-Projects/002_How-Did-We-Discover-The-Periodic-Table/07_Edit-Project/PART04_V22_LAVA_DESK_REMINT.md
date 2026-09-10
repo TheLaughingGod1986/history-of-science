@@ -73,3 +73,6 @@ Zerolamp side-desk DNA exhausted (lamp invent + lava). **NEW DNA:** `PART04_NEXT
 
 ## Update 10 Sep PM — plate 05 try2 BOARDTOP
 try2A Quality SELF_REJECT lamp invent. try2B Quality KEEP_CANDIDATE (no invent/lava; CoS owns steepness). Starts 2/2. Plate 10 held. No assemble. See `PART04_V22_PLATE_05_TRY2_COS.md`.
+
+## Update 10 Sep PM — plate 10 try1 BOARDTOP (unlocked)
+05 try2B **UAT KEEP** sha `49437e7e…` unlocked `10_family_before_weight`. DNA: `PART04_NEXT_PLATE_10_TRY1_BOARDTOP_DNA.md` (BOARDTOP_DAY_NOFIXTURE join; lead cards-only like try2B). Max 2 Quality starts then STOP_TO_COS. No assemble this run — evening burn after KEEP.
