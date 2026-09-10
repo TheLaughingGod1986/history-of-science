@@ -74,6 +74,10 @@
     "10b_find_missing": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/10b_find_missing_v01_try3.mp4",
       "sha256": "0500cf3a38989b03df4b6f1c3bba5227fca2124319d1f084f29e1df3af395c75"
+    },
+    "11b_late_for_dinner": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/11b_late_for_dinner_v01_try2.mp4",
+      "sha256": "9a65fd751019c2fe9779453ad909aea6af110e584a0133dc328906dcf7f4997c"
     }
   }
 }
