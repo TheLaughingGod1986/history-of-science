@@ -1,0 +1,13 @@
+{
+  "plate": "11_last_vacancy",
+  "try": "4",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/11_last_vacancy_v01_try4.mp4",
+  "sha256": "15fe79f3b2eb153da8fa528cec71ef2372551c5cc92f93ee916cfee80aff4096",
+  "bytes": 2154084,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/aaea7c55-7a7e-4a19-8662-77105c63dd60",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "Honey-wood GRID with cream cards flush in cells (KEEP 10 DNA). Camera drifts right along the last row. No fire, no playing-card pips, no books. Sparse CJK marks. A few cards at the right edge sit loose — last seats not locked. 20/20."
+}

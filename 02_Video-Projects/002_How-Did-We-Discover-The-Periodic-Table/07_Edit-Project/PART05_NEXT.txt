@@ -1,9 +1,6 @@
-Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. 19/20 KEEP. Do not assemble yet.
+20/20 KEEP. P04 v25 PASS / LOCKED.
+VO: 144.160s. Assemble rough v01 next.
 
-KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07, 07b t3, 08, 08b, 09, 09b t2, 10 t4, 10b t3, 11b t2.
-FAIL 11: try1 books+fire; try2 spark lightbox; try3 pinned playing cards + ink houses.
-IN FLIGHT c29 (1/2):
-- 11 try4 (KEEP 10 grid, drift right, flush cells, never pips)
+KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07, 07b t3, 08, 08b, 09, 09b t2, 10 t4, 10b t3, 11 t4, 11b t2.
 
-Do not remint P01–P04. Do not remint KEEP 10 / 10b / 11b.
+Do not remint P01–P04. Do not remint VO. Scores → CoS. Do not declare PASS.

@@ -34,8 +34,18 @@ BED_VOL = 0.38
 CLIP_USE = 7.9
 END_CARD_S = 3.5
 
-# Fill as each plate KEEP. Empty → assembler refuses to ship.
-KEEP_REMINTS: dict[str, tuple[Path, str]] = {}
+KEEP_MANIFEST = PROJ / "07_Edit-Project/part05_keep_manifest_v01.json"
+
+
+def load_keep() -> dict[str, tuple[Path, str]]:
+    man = json.loads(KEEP_MANIFEST.read_text())
+    out: dict[str, tuple[Path, str]] = {}
+    for pid, rec in man["keep"].items():
+        out[pid] = (PROJ / rec["path"], rec["sha256"])
+    return out
+
+
+KEEP_REMINTS = load_keep()
 
 SIDE_LABELS = [
     (0.0, 6.0, "THE GUESTS"),
