@@ -4,7 +4,7 @@ VO: 144.160s. 17/20 KEEP. Do not assemble yet.
 KEEP: 01, 01b, 02t3, 03t2, 04, 04b, 05t2, 05b t4, 06, 06b t5, 07, 07b t3, 08, 08b, 09, 09b t2, 10 t4.
 FAIL: 10b try1 fire-hole+chairs; 10b try2 fire+1669+house+hand.
 IN FLIGHT c26 (2/2):
-- 10b try3 NEW FRAMING (tight KEEP-10 wall, one unprinted card)
-- 11 try1 (last-row unprinted card; no glow-hole language)
+- 10b try3 https://flow.google.com/project/689901bb-ee5c-4129-b958-220d5367d47d
+- 11 try1 https://flow.google.com/project/e3a8e047-f6de-4574-b3a4-a7de1760adf4
 
 Do not remint P01–P04. Do not remint KEEP 10. Remaining after this cycle: 11b (+ remint 10b/11 if FAIL).
