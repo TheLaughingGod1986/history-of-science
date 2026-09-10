@@ -169,8 +169,8 @@
       "i2v": false,
       "model": "Veo 3.1 - Quality",
       "side_label": "A CITY",
-      "mute_test": "Wide pull-back: filled seating chart as a city of seats, never tiny houses.",
-      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. Wide settle/pull-back on the filled seating chart reading as order — a city of seats, NEVER tiny houses or streets. Continuous soft settle + lamp with hidden bulb. Silent. HARD REJECT: model-town, house-blocks, map pins, lava, fire, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+      "mute_test": "Stay ON a filled honey-wood cream-card WALL the whole take. Never houses, never a city pull-back.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. MEDIUM-WIDE on a COMPLETED 1869 honey-wood cream-card WALL GRID. Every tile is a cream card. Camera slow drift along the filled wall ONLY. NEVER houses. NEVER miniature buildings. NEVER a diorama. NEVER furniture chairs. Stay on the wall. Silent. HARD REJECT: model-town, house-blocks, pull-back to a city, lava, fire, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
     },
     {
       "id": "10b_find_missing",
@@ -178,8 +178,8 @@
       "i2v": false,
       "model": "Veo 3.1 - Quality",
       "side_label": "A CITY",
-      "mute_test": "Ordered filled grid with ONE empty glowing seat left to hunt.",
-      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. The ordered cream-card city of seats, with ONE empty glowing vacancy still to hunt. Camera push to that hole. Continuous. Silent. HARD REJECT: model-town houses, lava, fire, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+      "mute_test": "Tight filled cream-card WALL; ONE unprinted cream card among faint 1-2 letter neighbours. Never a hole, never fire, never a room.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON a filled 1869 honey-wood cream-card WALL filling the frame. Neighbour cards have faint 1-2 letter marks. ONE card is unprinted cream paper in the same wood slot. Camera slow lateral drift, pause on the unprinted card. NEVER a hole. NEVER fire. NEVER a wide room. NEVER people. NEVER houses. Silent. HARD REJECT: lava, fire, burned holes, hands, furniture chairs, model-town, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
     },
     {
       "id": "11_last_vacancy",
@@ -187,8 +187,8 @@
       "i2v": false,
       "model": "Veo 3.1 - Quality",
       "side_label": "EMPTY STILL",
-      "mute_test": "One glowing vacancy / soft question-mark glow beyond the last row. Hold.",
-      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. One last glowing vacancy / soft question-mark glow holds beyond the last row of the wall chart. Continuous gentle hold. Soft return energy. Silent. HARD REJECT: model-town, lava, fire, Orbit, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+      "mute_test": "Stay ON the filled wall. Last-row far-right cream card is unprinted paper. Never a glow-hole.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON the 1869 honey-wood cream-card WALL filling the frame. Camera slow drift to the LAST ROW far-right cream card, unprinted cream paper, neighbours with faint 1-2 letter marks. Paper in a wood slot, never a hole, never a question-mark, never orange. Continuous gentle drift. Silent. HARD REJECT: lava, fire, burned holes, HUD, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
     },
     {
       "id": "11b_late_for_dinner",
@@ -196,8 +196,8 @@
       "i2v": false,
       "model": "Veo 3.1 - Quality",
       "side_label": "EMPTY STILL",
-      "mute_test": "The last vacancy pulses once more — next guest already late. Not a freeze of plate 11.",
-      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. The last glowing vacancy pulses once more as if a guest is late. Camera slow orbit. Continuous motion, never freeze. Silent. HARD REJECT: lava, fire, model-town, moon-desk still-life, Ken Burns only. Plate-library lock 4b8ed25."
+      "mute_test": "Same last-row unprinted cream card as 11, but it pulses once. Not a freeze of 11. Never fire.",
+      "prompt": "TEXT-TO-VIDEO. ONE continuous 8s take. FRAME 1 already ON the 1869 honey-wood cream-card WALL. The last-row far-right unprinted cream card pulses once as if a guest is late. Camera slow orbit around that card. Stay on the wall. Never a hole. Never orange. Continuous motion, never freeze. Silent. HARD REJECT: lava, fire, burned holes, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
     }
   ]
 }

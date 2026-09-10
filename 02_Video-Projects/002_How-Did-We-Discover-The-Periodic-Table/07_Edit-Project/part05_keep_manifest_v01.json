@@ -66,6 +66,10 @@
     "09b_victory_seats": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/09b_victory_seats_v01_try2.mp4",
       "sha256": "877e32424010e3fd3b20e163883cf898a6a771903f8f7ed63b931434d430eeb9"
+    },
+    "10_zoo_became_city": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/10_zoo_became_city_v01_try4.mp4",
+      "sha256": "5a2c1667a1702e25b58ebad4b51bd59135f810371c54883761900795c30bc3de"
     }
   }
 }

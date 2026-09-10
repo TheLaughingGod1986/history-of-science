@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c26_10b3_11t1",
+  "jobs": [
+    {
+      "plate": "10b_find_missing",
+      "try": "3_v01",
+      "which": "tight_wall_unprinted_card",
+      "note": "NEW FRAMING after 2 fire FAILs: copy KEEP 10 try4 tight filled wall; one unprinted cream card; never a room/fire/hand",
+      "out": "submit_10b_find_missing_try3.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 10b_find_missing try3 — one unprinted card. NEW FRAMING after two fire FAILs. Copy KEEP 10 try4 DNA. ONE continuous 8s take. FRAME 1 is already a MEDIUM shot of a COMPLETED 1869 honey-wood cream-card WALL filling the entire frame — no room, no floor, no window landscape, no years, no people, no houses. Every tile is a cream card. Neighbour cards have faint 1-2 letter marks. ONE card in the middle of the grid is unprinted cream paper, same size, same wood slot, no ink. Camera slow LATERAL DRIFT along that wall, pausing on the unprinted card. Stay ON the wall the whole 8 seconds. NEVER a hole. NEVER a burned gap. NEVER orange. NEVER a hand. NEVER furniture. NEVER a miniature building. Daytime wood bounce only. Continuous. Silent. HARD REJECT: lava, fire, burned holes, hands, people, houses, house-blocks, furniture chairs, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "11_last_vacancy",
+      "try": "1_v01",
+      "which": "last_row_unprinted_card",
+      "note": "Rewrite before first mint: no glow-hole language. Last-row unprinted cream card on KEEP 10 wall DNA.",
+      "out": "submit_11_last_vacancy_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11_last_vacancy try1 — last unprinted card. VO beat: hold on the last empty seat. ONE continuous 8s take. SAME 1869 honey-wood cream-card WALL as KEEP 10 try4. FRAME 1 already ON the wall filling the frame — no room, no floor, no landscape window, no people, no houses. Camera slow drift toward the LAST ROW, far-right cream card, which is unprinted cream paper while its neighbours have faint 1-2 letter marks. The last card is paper in a wood slot, never a hole, never a question-mark, never orange, never a glow-pit. Stay ON the wall the whole 8 seconds. Continuous gentle drift, never freeze. Daytime wood bounce only. No person. No lamp. Silent. HARD REJECT: lava, fire, burned holes, question-mark HUD, people, houses, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}
