@@ -1,7 +1,7 @@
 {
-  "cycle": "v01_plate01_keep_then_02",
+  "cycle": "v01_c2_02_nolamp",
   "plate": "02_guests_as_work",
-  "starts": 2,
+  "starts": 1,
   "max_starts": 2,
-  "when": "2026-09-10T17:50:29"
+  "when": "2026-09-10T18:08:18"
 }

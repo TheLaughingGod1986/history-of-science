@@ -1,0 +1,15 @@
+{
+  "plate": "02_guests_as_work",
+  "try": "2",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/02_guests_as_work_v01_try2.mp4",
+  "sha256": "ea3c4cb1e49d9bc6470052a9c12cfcda07d6ca86a2fe6ec37e36993f91910763",
+  "bytes": 1654888,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/0a2548ee-4450-4525-9dfc-d44858a57fd6",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "no lamp; adult hands; cream cards on wood",
+  "fail": "rightmost desk slot is literal fire/flame. Orange flask + mortar. Do not assemble.",
+  "next": "try3 NEW FRAMING: wall-pin, no desk trenches (2 same-DNA desk FAILs)"
+}

@@ -1,0 +1,31 @@
+{
+  "plate": "02_guests_as_work",
+  "try": "2_v01_nolamp",
+  "which": "boardtop_work_nolamp",
+  "start_n": 1,
+  "max_starts": 2,
+  "project_url": "https://flow.google.com/project/0a2548ee-4450-4525-9dfc-d44858a57fd6",
+  "info": {
+    "seconds": 53.0,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/0a2548ee-4450-4525-9dfc-d44858a57fd6",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/0a2548ee-4450-4525-9dfc-d44858a57fd6"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T18:09:11",
+  "paint": "banned",
+  "assemble": false,
+  "note": "try1 HOLD visible bulb; try2 NO practical lamp, tight BOARDTOP"
+}
