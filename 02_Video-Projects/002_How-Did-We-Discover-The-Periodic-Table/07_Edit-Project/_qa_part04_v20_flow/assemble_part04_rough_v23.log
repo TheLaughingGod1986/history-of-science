@@ -1,0 +1,66 @@
+KEEP P03 sha OK 30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+KEEP v20 parent sha OK 1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b
+KEEP v21 parent sha OK 868a012c5f52fa7f412a076cf26593f9cd700f3c03299cd14ff7010eb6804963
+KEEP v22 parent sha OK 78039206d044fd9ee61aed5dd3aa491fa697c32b2896ae7311a175db630b13d3
+KEEP v19 parent sha OK 69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf
+KEEP v17 parent sha OK e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd
+KEEP v16 parent sha OK 7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c
+KEEP v15 parent sha OK cd7a57b2979478a34ac7cc5fe5639aa156ae603b437674ccd724ab3fe994748c
+KEEP v14 parent sha OK fa62ab22d0f7cbd4f208e5200c9b8b471c23595237b4d7d2dd18e6f47dabad4f
+KEEP v13 parent sha OK 27828f216c289d36aaeae7311c545cdf0fb829381ff110c528cc40008710cd6a
+KEEP v12 parent sha OK 175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2
+KEEP v11 parent sha OK 96a0f41e53987e090e5eee6af29d3abda8de3c30b326584193c10847d1ebd739
+KEEP KEEP remint 05_columns_families sha OK 49437e7e4004c224b021409e15ebb50fb06b74737adfe2b6c0bc0a61bfae8caa
+KEEP KEEP remint 06_explorer_leaves_gap sha OK fd4627d29e8087ff50baca163fc0dd155d2a19eb5127dc1c3c7379e9525c7a70
+KEEP KEEP remint 09b_risk_hold sha OK 47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38
+KEEP KEEP remint 10_family_before_weight sha OK 49240cbb4fab760e710f24051d822c61f0b8c1236684fc697016db325ab81b78
+KEEP KEEP remint 11_publish_gaps sha OK 97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72
+KEEP KEEP remint 11b_wait_and_hunt sha OK 5602762e82fd40eb654b25a5d3e5260e8baf79707fb19ecf8b58ede67cb3075e
+clip_use=7.900s for n=17 VO=127.760
+  01_chapter_empty_chairs: src=8.00s use=7.90s [v01_keep] 01_chapter_empty_chairs_v01.mp4
+  02_mendeleev_desk_cards: src=8.00s use=7.90s [v01_keep] 02_mendeleev_desk_cards_v01.mp4
+  02b_cards_sixty_three: src=8.00s use=7.90s [v06_desk_keep] 02b_cards_sixty_three_v06.mp4
+  03_what_is_element: src=8.00s use=7.90s [v01_keep] 03_what_is_element_v01.mp4
+  04_sort_atomic_weight: src=8.00s use=7.90s [v13_keep_cleared] 04_sort_atomic_weight_v13.mp4
+  05_columns_families: src=8.00s use=7.90s [v22_keep_remint_uat] 05_columns_families_v22_try2B.mp4
+  06_explorer_leaves_gap: src=8.00s use=7.90s [v22_keep_remint_uat] 06_explorer_leaves_gap_v20_try8.mp4
+  05b_families_settle: src=8.00s use=7.90s [v12_keep_cleared] 05b_families_settle_v12.mp4
+  07_eka_placeholders: src=8.00s use=7.90s [v20_flow_ultra_keep] 07_eka_placeholders_v20.mp4
+  07b_eka_names_rotate: src=8.00s use=7.90s [v20_flow_ultra_keep] 07b_eka_names_rotate_v20.mp4
+  08_prediction_navigation: src=8.00s use=7.90s [v20_flow_ultra_keep] 08_prediction_navigation_v20.mp4
+  08b_navigation_walk: src=8.00s use=7.90s [v20_flow_ultra_keep] 08b_navigation_walk_v20.mp4
+  09_risk_bet: src=8.00s use=7.90s [v20_flow_ultra_keep] 09_risk_bet_v20.mp4
+  09b_risk_hold: src=8.00s use=7.90s [v22_keep_remint_uat] 09b_risk_hold_v20_try14.mp4
+  10_family_before_weight: src=8.00s use=7.90s [v22_keep_remint_uat] 10_family_before_weight_v22_try1.mp4
+  11_publish_gaps: src=8.00s use=7.90s [v22_keep_remint_uat] 11_publish_gaps_v20_try9.mp4
+  11b_wait_and_hunt: src=8.00s use=7.90s [v22_keep_remint_uat] 11b_wait_and_hunt_v20_try1.mp4
+picture≈128.70s VO=127.76s
+LANDED /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part04_rough_v23.mp4
+  path=/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part04_rough_v23.mp4
+  bytes=78282386
+  sha256=7beae93d10a87066731ae58bc39039eabda625154aa7f0aa3e7c4d9f6e5e5b5f
+  duration=127.760
+  keep_remints=['05_columns_families', '06_explorer_leaves_gap', '09b_risk_hold', '10_family_before_weight', '11_publish_gaps', '11b_wait_and_hunt']
+  v20_kept_remints=['07_eka_placeholders', '07b_eka_names_rotate', '08_prediction_navigation', '08b_navigation_walk', '09_risk_bet']
+  plate05_sha256=49437e7e4004c224b021409e15ebb50fb06b74737adfe2b6c0bc0a61bfae8caa
+  plate06_sha256=fd4627d29e8087ff50baca163fc0dd155d2a19eb5127dc1c3c7379e9525c7a70
+  plate10_sha256=49240cbb4fab760e710f24051d822c61f0b8c1236684fc697016db325ab81b78
+  plate09b_sha256=47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38
+  plate10_sha256=49240cbb4fab760e710f24051d822c61f0b8c1236684fc697016db325ab81b78
+  plate11_sha256=97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72
+  plate11b_sha256=5602762e82fd40eb654b25a5d3e5260e8baf79707fb19ecf8b58ede67cb3075e
+  explorer_picture=45.30–53.20
+  plate09b_picture=98.15–106.05
+  plate10_picture=105.70–113.60
+  plate11_picture=113.25–121.15
+  plate11b_picture=120.80–128.70
+  keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+  parent_v22_sha=78039206d044fd9ee61aed5dd3aa491fa697c32b2896ae7311a175db630b13d3
+  parent_v20_sha=1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b
+  parent_v19_sha=69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf
+  parent_v17_sha=e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd
+  parent_v16_sha=7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c
+
+ICLOUD /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v23.mp4
+WATCH /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/WATCH_part04_v23.txt
+META /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/part04_rough_v23_land_meta.json

@@ -1,0 +1,26 @@
+{
+  "plate": "07b_eka_names_rotate",
+  "try": "2_v25",
+  "project_url": "https://flow.google.com/project/a77059c8-6478-4c92-95b3-17dccb62179a",
+  "info": {
+    "seconds": 51.7,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/a77059c8-6478-4c92-95b3-17dccb62179a",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/a77059c8-6478-4c92-95b3-17dccb62179a"
+  },
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T16:59:17",
+  "paint": "banned",
+  "try1": "FAIL fire"
+}
