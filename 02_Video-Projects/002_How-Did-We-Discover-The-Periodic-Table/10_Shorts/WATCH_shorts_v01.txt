@@ -1,0 +1,13 @@
+WATCH Shorts pack (UAT — do not upload):
+  10_Shorts/hos_002_s01_empty_chairs_punch_v01.mp4   26.00s
+  10_Shorts/hos_002_s02_predict_metal_punch_v01.mp4    26.17s
+  10_Shorts/hos_002_s03_gallium_punch_v01.mp4         27.25s
+  10_Shorts/hos_002_s04_tellurium_punch_v01.mp4       26.00s
+  10_Shorts/hos_002_s05_other_table_punch_v01.mp4      27.17s
+  iCloud: HOS UAT/hos_002_s0N_*_punch_v01.mp4
+
+Parent: How Did We Discover the Periodic Table?
+Source: hos_002_periodic_table_full_v01.mp4
+sha256=da8395efb8f74ad8330b945a98ce8acac9f0587109d9742ed3135a8bc43fd399
+Zero /go/. relatedVideoId=null until the long listing exists.
+Do not lead the channel with a Short. Scores → CoS. Do NOT declare PASS.

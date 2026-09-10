@@ -1,0 +1,54 @@
+{
+  "parentTitle": "How Did We Discover the Periodic Table?",
+  "style": "Animistry painted-in type. Film-frame overlays are fallback. No Orbit. UAT.",
+  "recommend": "A (gallium palm) as listing thumb; B emotion; C empty slot. Run Studio ABC after upload.",
+  "long": [
+    {
+      "id": "A",
+      "beat": "object — gallium in the Explorer's palm",
+      "jpg": "hos_002_thumb_A_gallium_animistry_v01.jpg",
+      "fallback": "hos_002_thumb_A_gallium_v01.jpg"
+    },
+    {
+      "id": "B",
+      "beat": "emotion — Explorer leaves a gap in the cards",
+      "jpg": "hos_002_thumb_B_empty_seats_animistry_v01.jpg",
+      "fallback": "hos_002_thumb_B_empty_seats_v01.jpg"
+    },
+    {
+      "id": "C",
+      "beat": "question — one empty seat still glowing",
+      "jpg": "hos_002_thumb_C_empty_slot_animistry_v01.jpg",
+      "fallback": "hos_002_thumb_C_empty_slot_v01.jpg"
+    }
+  ],
+  "shorts": [
+    {
+      "id": "s01_empty_chairs",
+      "title": "The empty chairs were the cleverest part",
+      "jpg": "hos_002_s01_empty_chairs_cover_v01.jpg"
+    },
+    {
+      "id": "s02_predict_metal",
+      "title": "He predicted a metal before anyone found it",
+      "jpg": "hos_002_s02_predict_metal_cover_v01.jpg"
+    },
+    {
+      "id": "s03_gallium",
+      "title": "A drop of gallium that sat in the gap",
+      "jpg": "hos_002_s03_gallium_cover_v01.jpg"
+    },
+    {
+      "id": "s04_tellurium",
+      "title": "Why tellurium and iodine sat wrong",
+      "jpg": "hos_002_s04_tellurium_cover_v01.jpg"
+    },
+    {
+      "id": "s05_other_table",
+      "title": "What other table are we staring at?",
+      "jpg": "hos_002_s05_other_table_cover_v01.jpg"
+    }
+  ],
+  "upload": false,
+  "vidiq": "Score before listing lock. Reject fearbait."
+}

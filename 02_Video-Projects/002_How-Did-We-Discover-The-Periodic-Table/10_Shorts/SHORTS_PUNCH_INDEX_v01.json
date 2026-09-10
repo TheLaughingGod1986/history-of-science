@@ -1,0 +1,122 @@
+{
+  "parentId": null,
+  "parentTitle": "How Did We Discover the Periodic Table?",
+  "parentUrl": null,
+  "source": "hos_002_periodic_table_full_v01.mp4",
+  "sourceSha": "da8395efb8f74ad8330b945a98ce8acac9f0587109d9742ed3135a8bc43fd399",
+  "note": "Not LOCKED. Stop for UAT. Do not upload. Do not schedule. Do not lead the channel with a Short. Related = this film only after the long listing exists. Zero /go/.",
+  "schedule": [
+    {
+      "when": "after long public \u00b7 first Short (Thu ~21:00 UK)",
+      "id": "s01_empty_chairs",
+      "title": "The empty chairs were the cleverest part"
+    },
+    {
+      "when": "after long public \u00b7 Sat ~11:30 UK",
+      "id": "s02_predict_metal",
+      "title": "He predicted a metal before anyone found it"
+    },
+    {
+      "when": "after long public \u00b7 Mon ~11:30 UK",
+      "id": "s03_gallium",
+      "title": "A drop of gallium that sat in the gap"
+    },
+    {
+      "when": "after long public \u00b7 Wed ~11:30 UK",
+      "id": "s04_tellurium",
+      "title": "Why tellurium and iodine sat wrong"
+    },
+    {
+      "when": "after long public \u00b7 Fri ~11:30 UK",
+      "id": "s05_other_table",
+      "title": "What other table are we staring at?"
+    }
+  ],
+  "items": [
+    {
+      "id": "s01_empty_chairs",
+      "slot": "after long public \u00b7 first Short (Thu ~21:00 UK)",
+      "title": "The empty chairs were the cleverest part",
+      "line": "He leaves seats empty on purpose.",
+      "start": 301.36,
+      "end": 321.36,
+      "hold": 0.0,
+      "loop_open": true,
+      "file": "hos_002_s01_empty_chairs_punch_v01.mp4",
+      "duration": 26.0,
+      "relatedVideoId": null,
+      "go": null,
+      "status": "UAT",
+      "locked": false,
+      "upload": false
+    },
+    {
+      "id": "s02_predict_metal",
+      "slot": "after long public \u00b7 Sat ~11:30 UK",
+      "title": "He predicted a metal before anyone found it",
+      "line": "Chemistry can hunt a metal before anyone has found it.",
+      "start": 327.36,
+      "end": 347.36,
+      "hold": 0.0,
+      "loop_open": true,
+      "file": "hos_002_s02_predict_metal_punch_v01.mp4",
+      "duration": 26.166667,
+      "relatedVideoId": null,
+      "go": null,
+      "status": "UAT",
+      "locked": false,
+      "upload": false
+    },
+    {
+      "id": "s03_gallium",
+      "slot": "after long public \u00b7 Mon ~11:30 UK",
+      "title": "A drop of gallium that sat in the gap",
+      "line": "It sits where eka-aluminium was told to sit.",
+      "start": 392.12,
+      "end": 413.32,
+      "hold": 0.0,
+      "loop_open": true,
+      "file": "hos_002_s03_gallium_punch_v01.mp4",
+      "duration": 27.25,
+      "relatedVideoId": null,
+      "go": null,
+      "status": "UAT",
+      "locked": false,
+      "upload": false
+    },
+    {
+      "id": "s04_tellurium",
+      "slot": "after long public \u00b7 Wed ~11:30 UK",
+      "title": "Why tellurium and iodine sat wrong",
+      "line": "Tellurium before iodine, because how they burn and salt matters more.",
+      "start": 359.36,
+      "end": 379.36,
+      "hold": 0.0,
+      "loop_open": true,
+      "file": "hos_002_s04_tellurium_punch_v01.mp4",
+      "duration": 26.0,
+      "relatedVideoId": null,
+      "go": null,
+      "status": "UAT",
+      "locked": false,
+      "upload": false
+    },
+    {
+      "id": "s05_other_table",
+      "slot": "after long public \u00b7 Fri ~11:30 UK",
+      "title": "What other table are we staring at?",
+      "line": "What other table are we staring at \u2014 full of names, empty of order?",
+      "start": 509.52,
+      "end": 530.52,
+      "hold": 0.0,
+      "loop_open": true,
+      "file": "hos_002_s05_other_table_punch_v01.mp4",
+      "duration": 27.166667,
+      "relatedVideoId": null,
+      "go": null,
+      "status": "UAT",
+      "locked": false,
+      "upload": false
+    }
+  ]
+}
