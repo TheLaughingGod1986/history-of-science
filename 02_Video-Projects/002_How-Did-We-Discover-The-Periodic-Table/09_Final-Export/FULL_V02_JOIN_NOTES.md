@@ -25,9 +25,9 @@ Then a 0.40s dissolve into the locked picture. Audio acrossfades with picture.
 |---|---:|
 | P01 start (cold open) | 0.000 |
 | P02 start (baked CHAPTER 2 card) | 85.280 |
-| Card 03 A ruler for atoms | 168.880 |
-| Card 04 Empty chairs | 260.760 |
-| Card 05 The guests arrive | 390.720 |
+| Card 03 PART 03 · 1860 · The ruler | 168.880 |
+| Card 04 PART 04 · 1869 · Empty chairs | 260.760 |
+| Card 05 PART 05 · 1875 · The guests | 390.720 |
 | End-card dissolve | 537.130 |
 | End card on | 537.480 |
 | Film out | 540.630 |
