@@ -47,19 +47,20 @@ def load_keep() -> dict[str, tuple[Path, str]]:
 
 KEEP_REMINTS = load_keep()
 
+# Picture offsets at CLIP_USE 7.9 / XFADE 0.35 (plate i starts at i * 7.55).
 SIDE_LABELS = [
-    (0.0, 6.0, "THE GUESTS"),
-    (6.0, 14.0, "1875"),
-    (14.0, 22.0, "GALLIUM"),
-    (22.0, 30.0, "SCANDIUM"),
-    (30.0, 38.0, "GERMANIUM"),
-    (38.0, 46.0, "NOT A BLUFF"),
-    (46.0, 58.0, "NAVIGATION"),
-    (58.0, 70.0, "NOBLE GASES"),
-    (70.0, 82.0, "ATOMIC NUMBER"),
-    (82.0, 94.0, "YOUR WORLD"),
-    (94.0, 108.0, "A CITY"),
-    (108.0, 200.0, "EMPTY STILL"),
+    (0.0, 15.2, "THE GUESTS"),
+    (15.2, 22.7, "1875"),
+    (22.7, 45.3, "GALLIUM"),
+    (45.3, 52.9, "SCANDIUM"),
+    (52.9, 60.4, "GERMANIUM"),
+    (60.4, 68.0, "NOT A BLUFF"),
+    (68.0, 83.1, "NAVIGATION"),
+    (83.1, 90.6, "NOBLE GASES"),
+    (90.6, 105.7, "ATOMIC NUMBER"),
+    (105.7, 120.8, "YOUR WORLD"),
+    (120.8, 135.9, "A CITY"),
+    (135.9, 200.0, "EMPTY STILL"),
 ]
 
 
