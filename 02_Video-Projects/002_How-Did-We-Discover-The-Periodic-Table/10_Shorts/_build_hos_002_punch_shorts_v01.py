@@ -484,7 +484,10 @@ def main() -> None:
     }
     index_path = OUT_DIR / "SHORTS_PUNCH_INDEX_v01.json"
     index_path.write_text(json.dumps(index, indent=2) + "\n")
-    (ICLOUD / index_path.name).write_text(index_path.read_text())
+    try:
+        (ICLOUD / f"hos_002_{index_path.name}").write_text(index_path.read_text())
+    except OSError as exc:
+        print(f"WARN iCloud index copy skipped ({exc})", flush=True)
     print(f"INDEX {index_path}", flush=True)
 
 
