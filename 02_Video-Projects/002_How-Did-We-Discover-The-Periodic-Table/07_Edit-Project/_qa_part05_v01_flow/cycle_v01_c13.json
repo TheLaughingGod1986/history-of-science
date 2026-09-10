@@ -1,0 +1,13 @@
+{
+  "cycle": "v01_c13_11b",
+  "jobs": [
+    {
+      "plate": "11b_late_for_dinner",
+      "try": "1_v01",
+      "which": "vacancy_pulses_orbit",
+      "note": "last vacancy pulses once more; slow camera orbit; not a freeze of 11",
+      "out": "submit_11b_late_for_dinner_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11b_late_for_dinner try1 — late for dinner. VO beat: the next guest is already late. ONE continuous 8s take. The last cool-white glowing vacancy on a cream-card WALL CHART pulses once more as if a guest is late. Camera slow orbit around the vacancy. Continuous motion, never freeze, never a still hold of plate 11. Cool white glow, never orange fire. Daytime. No person. No lamp. Silent. HARD REJECT: lava, fire, model-town, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}

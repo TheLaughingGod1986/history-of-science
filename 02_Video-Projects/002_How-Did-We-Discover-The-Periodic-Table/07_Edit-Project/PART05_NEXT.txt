@@ -1,31 +1,8 @@
 Mint OPEN. P04 v25 PASS / LOCKED.
-VO: 144.160s. Need 20 unique plates. Do not assemble yet. 7/20 KEEP.
+VO: 144.160s. Need 20 unique plates. Do not assemble yet. 8/20 KEEP.
 
-KEEP:
-- 01_chapter_guests_arrive try1 — EWS classroom wall chart
-  sha ebef3126e9e9d3f501b67dac17b43d39d59be8dad9124fed66a04f5649559816
-- 01b_empty_seats_waiting try1 — closer wall, gold-rim empty cell
-  sha 6289e4cdc71b19e2628b2aa5bbc5225f1619dbde04fd6766fe3938c37b281a05
-- 02_guests_as_work try3 — hands pin cards on wall
-  sha 39ce3bea84590412a4b56e601c083414b0f582dc13cc4bad99f00723df913abb
-- 03_explorer_gallium_palm try2 — waist-up on-model Explorer, silver puddle
-  sha 374f44d9f19be8cede5975840048bfce9469049ac801a5ff655988c03f36c5fe
-  Explorer used ONCE. Remaining plates scenery-only.
-- 04_gallium_fills_seat try1 — MACRO wall cell fills with Ga + silver sheen
-  sha b828431ec255f31844861dd927c60cb58cce3c7afff6780dc928945bff802d30
-- 04b_chemistry_rhymes try1 — Ga + In, silver sheen rhymes
-  sha bef1f46fed31d34610e95454424fd44ea661d0baa547558bc571b46aa3a2f093
-- 05_scandium_fills try2 — SIDE wall, ONE Sc card seats
-  sha 15061b734f1b65a36805503e0d2608b744f69fe588eb3387622794b39c3a8eab
+KEEP: 01, 01b, 02 try3, 03 try2, 04, 04b, 05 try2, 06 try1
+FAIL 05b try1 desk fire-pit · try2 wall fire + Ge→Gg. Next: try3 FLAT wall, zero glow.
 
-FAIL / HOLD (do not assemble):
-- 02 try1 HOLD open lamp bulb
-- 02 try2 FAIL fire in desk slot
-- 03 try1 FAIL giant disembodied palm (no Explorer)
-- 05 try1 FAIL three cards stack in one slot
-- 05b_germanium_verdict try1 FAIL — orange fire-pit under Ge tile on a desk grid.
-
-Cycle v01_c6 is 2/2. Next cycle: remint 05b (cool white vacant, WALL grid from above, ZERO orange under the card) + mint 06_predict_before_found.
-No Explorer. Silver not lava. No desk fire-trenches.
-Auth Mini CDP Ultra. Paint banned. T2V Quality.
+Cycle v01_c7 done. Next cycle v01_c8: 05b try3 + 06b navigation.
 Do not remint P01–P04.

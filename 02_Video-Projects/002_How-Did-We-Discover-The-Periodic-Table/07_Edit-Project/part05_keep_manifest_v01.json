@@ -30,6 +30,10 @@
     "05_scandium_fills": {
       "path": "04_Generated-Clips/part05/raw/v01_quality/05_scandium_fills_v01_try2.mp4",
       "sha256": "15061b734f1b65a36805503e0d2608b744f69fe588eb3387622794b39c3a8eab"
+    },
+    "06_predict_before_found": {
+      "path": "04_Generated-Clips/part05/raw/v01_quality/06_predict_before_found_v01_try1.mp4",
+      "sha256": "d0c5703dca6af066d71fff30558ed8f15e7e0e83b5d4434b4038f6b1dab61de3"
     }
   }
 }
