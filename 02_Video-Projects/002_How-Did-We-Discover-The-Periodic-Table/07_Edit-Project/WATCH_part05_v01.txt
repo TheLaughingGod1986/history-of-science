@@ -1,4 +1,21 @@
 WATCH THIS FILE ONLY (Part 05 rough v01 — The Guests Arrive):
   hos_002_part05_rough_v01.mp4
+  iCloud: HOS UAT/hos_002_part05_rough_v01.mp4
+
 sha256=8dcb06b596318a7283210928fbb0e78f6f89c7db5d200b8edeefbaa9b5522ec4
-Plate-first KEEP assemble. Scores → CoS. Do not declare PASS.
+duration=147.310
+bytes=104161370
+picture=151.35s VO=144.16s (no freeze-pad)
+20/20 KEEP plates. Explorer once (03 try2). House cream end card.
+
+CoS / Picture→UAT gates for this cut:
+- Plate-first KEEP assemble. Do not remint P01–P04. Do not remint VO.
+- Unique pictures, T2V, CLIP_USE 7.9, xfade 0.35, workshop bed 0.38.
+- Explorer on-model once: teal coat, gold glasses, silver gallium palm. Side label GALLIUM.
+- CLEAN LIGHT: no lava / fire-pit / spark lightbox on KEEP plates.
+- Last 3.5s house card: History of Science / DISCOVERY. WONDER. PROOF.
+- Scores → CoS. Do NOT declare PASS. No Ben ping.
+
+Reject with stills from THIS file only.
+keep_p04_sha=e78027c0c58abe9284f7b85de693a08caabd3ad8ee45b64624eadd0329942bb1
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
