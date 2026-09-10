@@ -1,21 +1,21 @@
 {
-  "cycle": "v01_c11_09b_10",
+  "cycle": "v01_c11_09_09b",
   "jobs": [
+    {
+      "plate": "09_everyday_seats",
+      "try": "1_v01",
+      "which": "salt_iodine_silicon_helium",
+      "note": "four hero seats pulse with salt, iodine, silicon, pale balloon",
+      "out": "submit_09_everyday_seats_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 09_everyday_seats try1 — your world. VO beat: salt, iodine, silicon, helium. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream cards as KEEP 07. Four cream-card seats pulse softly IN TURN with tiny 1869 cartoon props: a salt cellar, a small iodine bottle, a silicon crystal, a pale balloon. Sparse 1-2 letter marks max. Continuous pulse. Never a wall of text. No English words. NEVER a white gallery. NEVER a modern classroom. No person. No lamp. No fire. Silent. HARD REJECT: wall of text, model-town, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    },
     {
       "plate": "09b_victory_seats",
       "try": "1_v01",
       "which": "battery_phone_pill_steel",
       "note": "four different props: battery, telephone, pill bottle, steel beam",
       "out": "submit_09b_victory_seats_try1.json",
-      "prompt": "TEXT-TO-VIDEO. Plate 09b_victory_seats try1 — victory seats. VO beat: batteries, phones, medicine, steel. ONE continuous 8s take. Four cream seats on a WALL CHART hold tiny cartoon props IN TURN: a battery, a telephone, a pill bottle, a steel beam. NOT salt/iodine/balloon. No logos. No photoreal phones. Continuous pulse. No person. No lamp. No fire. Silent. HARD REJECT: photoreal phones, logos, lava, fire, model-town, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
-    },
-    {
-      "plate": "10_zoo_became_city",
-      "try": "1_v01",
-      "which": "wide_city_of_seats",
-      "note": "wide pull-back filled seating chart as a city of seats, never houses",
-      "out": "submit_10_zoo_became_city_try1.json",
-      "prompt": "TEXT-TO-VIDEO. Plate 10_zoo_became_city try1 — a city. VO beat: the zoo became a city. ONE continuous 8s take. WIDE pull-back / settle on a filled cream-card WALL seating chart reading as order — a city of SEATS, NEVER tiny houses, NEVER streets of buildings, NEVER yellow house-blocks. Continuous soft settle. Daytime. No person. No practical lamp. Silent. HARD REJECT: model-town, house-blocks, map pins, lava, fire, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+      "prompt": "TEXT-TO-VIDEO. Plate 09b_victory_seats try1 — victory seats. VO beat: batteries, phones, medicine, steel. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream cards as KEEP 07. Four cream seats hold tiny cartoon props IN TURN: a battery, a telephone, a pill bottle, a steel beam. NOT salt/iodine/balloon. No logos. No photoreal phones. No English words. NEVER a white gallery. NEVER a modern classroom. Continuous pulse. No person. No lamp. No fire. Silent. HARD REJECT: photoreal phones, logos, lava, fire, model-town, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
     }
   ]
 }

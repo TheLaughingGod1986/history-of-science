@@ -1,13 +1,21 @@
 {
-  "cycle": "v01_c13_11b",
+  "cycle": "v01_c13_11_11b",
   "jobs": [
+    {
+      "plate": "11_last_vacancy",
+      "try": "1_v01",
+      "which": "last_glow_beyond_last_row",
+      "note": "one last cool vacancy / question-mark glow beyond the last row",
+      "out": "submit_11_last_vacancy_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11_last_vacancy try1 — empty still. VO beat: one last empty chair. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream cards as KEEP 07. One last vacant card-space / soft pale question-mark glow holds beyond the last row. Cool pale, never orange fire. Never a fire-pit hole. Continuous gentle camera drift, never freeze. Daytime window bounce only. No person. No lamp. NEVER a white gallery. Silent. HARD REJECT: model-town, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    },
     {
       "plate": "11b_late_for_dinner",
       "try": "1_v01",
       "which": "vacancy_pulses_orbit",
       "note": "last vacancy pulses once more; slow camera orbit; not a freeze of 11",
       "out": "submit_11b_late_for_dinner_try1.json",
-      "prompt": "TEXT-TO-VIDEO. Plate 11b_late_for_dinner try1 — late for dinner. VO beat: the next guest is already late. ONE continuous 8s take. The last cool-white glowing vacancy on a cream-card WALL CHART pulses once more as if a guest is late. Camera slow orbit around the vacancy. Continuous motion, never freeze, never a still hold of plate 11. Cool white glow, never orange fire. Daytime. No person. No lamp. Silent. HARD REJECT: lava, fire, model-town, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+      "prompt": "TEXT-TO-VIDEO. Plate 11b_late_for_dinner try1 — late for dinner. VO beat: the next guest is already late. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream cards as KEEP 07. The last cool pale vacancy pulses once more as if a guest is late. Camera slow orbit around the vacancy. Continuous motion, never freeze. Cool pale, never orange fire. Daytime window bounce only. No person. No lamp. NEVER a white gallery. Silent. HARD REJECT: lava, fire, model-town, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
     }
   ]
 }
