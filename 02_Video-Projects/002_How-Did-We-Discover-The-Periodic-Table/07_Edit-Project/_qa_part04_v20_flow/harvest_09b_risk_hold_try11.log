@@ -1,0 +1,61 @@
+=== harvest attempt 1 00:58:28 ===
+  dismissed banner via 'Agree'
+  poll 0 thumbs=2
+  dismissed banner via 'Agree'
+Download media…
+  menu all → []
+  no scored menu item — waiting for direct download
+  download flow err: Timeout 90000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+FAIL: no usable mp4
+not ready; sleep 45s
+=== harvest attempt 2 01:00:53 ===
+  dismissed banner via 'Agree'
+  poll 0 thumbs=2
+  dismissed banner via 'Agree'
+Download media…
+  menu all → []
+  no scored menu item — waiting for direct download
+  download flow err: Timeout 90000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+FAIL: no usable mp4
+not ready; sleep 45s
+=== harvest attempt 3 01:03:19 ===
+  dismissed banner via 'Agree'
+  poll 0 thumbs=2
+  dismissed banner via 'Agree'
+Download media…
+  menu all → []
+  no scored menu item — waiting for direct download
+  download flow err: Timeout 90000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+FAIL: no usable mp4
+not ready; sleep 45s
+=== harvest attempt 4 01:05:44 ===
+  dismissed banner via 'Agree'
+  poll 0 thumbs=2
+  dismissed banner via 'Agree'
+Download media…
+  menu all → []
+  no scored menu item — waiting for direct download
+  download flow err: Timeout 90000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+FAIL: no usable mp4
+not ready; sleep 45s
+=== harvest attempt 5 01:08:09 ===
+  dismissed banner via 'Agree'
+  poll 0 thumbs=2
+  dismissed banner via 'Agree'
+Download media…
+  menu all → []
+  no scored menu item — waiting for direct download
+poll thumbs=2 elapsed=7s
+OK bytes=1261947 via=720p
