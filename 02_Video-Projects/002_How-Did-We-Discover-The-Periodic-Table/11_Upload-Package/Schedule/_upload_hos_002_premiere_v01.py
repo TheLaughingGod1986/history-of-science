@@ -13,6 +13,7 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 import time
 import traceback
 import urllib.request
@@ -557,11 +558,14 @@ def set_tags(page) -> dict:
             page.wait_for_timeout(400)
         box = page.get_by_role("textbox", name=re.compile(r"^Tags$", re.I))
         blob = ", ".join(TAGS)
+        info["chars"] = len(blob)
         if box.count():
+            box.first.click(force=True)
+            page.keyboard.press("Meta+A")
+            page.keyboard.press("Backspace")
             box.first.fill(blob)
             page.keyboard.press("Enter")
             info["ok"] = True
-            info["chars"] = len(blob)
         else:
             info["ok"] = False
             info["reason"] = "no_tags_box"
@@ -607,9 +611,15 @@ def next_until_visibility(page) -> str:
     for i in range(18):
         dismiss(page)
         text = dlg_text(page, 3500)
-        if re.search(r"Visibility|Save or publish", text, re.I) and re.search(
-            r"Private|Public|Unlisted|Schedule", text, re.I
-        ):
+        on_vis = bool(
+            re.search(r"Save or publish|When will (your|this) video", text, re.I)
+            or (
+                re.search(r"\bPrivate\b", text)
+                and re.search(r"\bPublic\b", text)
+                and re.search(r"\bSchedule\b", text)
+            )
+        )
+        if on_vis:
             return f"vis_{i}"
         nxt = page.get_by_role("button", name=re.compile(r"^Next$", re.I))
         if nxt.count() and nxt.first.is_enabled():
@@ -999,8 +1009,99 @@ def main() -> int:
     return 0 if result.get("ok") else 1
 
 
+def finish_existing(video_id: str) -> int:
+    """Schedule Premiere on an already-uploaded HOS 002 draft. Do not mint a second id."""
+    EV.mkdir(parents=True, exist_ok=True)
+    result: dict = {
+        "ok": False,
+        "mode": "finish_draft",
+        "videoId": video_id,
+        "premiere": PREMIERE_LABEL,
+        "started": datetime.now(tz=LONDON).isoformat(timespec="seconds"),
+    }
+    ensure_chrome()
+    with sync_playwright() as p:
+        browser = p.chromium.connect_over_cdp(CDP, timeout=60000)
+        ctx = browser.contexts[0]
+        page = studio_page(ctx)
+        try:
+            page.bring_to_front()
+        except Exception:
+            pass
+        page.goto(
+            f"https://studio.youtube.com/video/{video_id}/edit",
+            wait_until="domcontentloaded",
+            timeout=120000,
+        )
+        page.wait_for_timeout(3500)
+        dismiss(page)
+        shot(page, "10_draft_edit.png")
+        clicked = click_shadow_text(page, r"^Edit draft$")
+        result["editDraft"] = clicked
+        page.wait_for_timeout(2500)
+        if not file_input_count(page) and "Details" not in dlg_text(page, 400):
+            page.get_by_role("button", name=re.compile(r"Edit draft", re.I)).first.click(
+                timeout=8000
+            )
+            page.wait_for_timeout(2500)
+        shot(page, "11_draft_dialog.png")
+        result["tags"] = set_tags(page)
+        shot(page, "12_tags_trimmed.png")
+        result["audience"] = set_not_kids_and_ai(page)
+        result["next"] = next_until_visibility(page)
+        shot(page, "13_visibility.png")
+        result["scheduleRadio"] = click_schedule_radio(page)
+        page.wait_for_timeout(900)
+        result["when"] = fill_premiere_when(page)
+        shot(page, "14_premiere_when.png")
+        result["confirmClick"] = click_schedule_or_done(page)
+        page.wait_for_timeout(5000)
+        dismiss(page)
+        shot(page, "15_after_schedule.png")
+        page.goto(
+            f"https://studio.youtube.com/video/{video_id}/edit",
+            wait_until="domcontentloaded",
+            timeout=120000,
+        )
+        page.wait_for_timeout(3500)
+        dismiss(page)
+        body = snip(page, 2500)
+        result["editSnip"] = body[:1500]
+        result["scheduled"] = bool(
+            re.search(r"17\s+(Sept|Sep|September)\s+2026|Premiere|Scheduled", body, re.I)
+        )
+        result["stillDraft"] = bool(re.search(r"draft state", body, re.I))
+        shot(page, "16_edit_after.png")
+        result["ok"] = bool(result.get("scheduled")) or not result.get("stillDraft")
+    result["finished"] = datetime.now(tz=LONDON).isoformat(timespec="seconds")
+    dump("FINISH.json", result)
+    out = PKG / "Schedule/PACKAGE_UPLOAD_RESULT_2026-09-11_premiere.json"
+    prev = {}
+    if out.exists():
+        try:
+            prev = json.loads(out.read_text())
+        except Exception:
+            prev = {}
+    prev["finishDraft"] = result
+    prev["ok"] = bool(result.get("ok"))
+    if video_id:
+        prev.setdefault("video", {})["platformPostId"] = video_id
+        prev["video"]["platformUrl"] = f"https://youtu.be/{video_id}"
+        prev["video"]["watchUrl"] = f"https://www.youtube.com/watch?v={video_id}"
+    out.write_text(json.dumps(prev, indent=2) + "\n")
+    log(f"finish {video_id} ok={result.get('ok')} scheduled={result.get('scheduled')}")
+    print(json.dumps(result, indent=2)[:4000])
+    return 0 if result.get("ok") else 1
+
+
 if __name__ == "__main__":
     try:
+        if "--finish" in sys.argv:
+            vid = "AL_-qlWko_g"
+            if "--id" in sys.argv:
+                i = sys.argv.index("--id")
+                vid = sys.argv[i + 1]
+            raise SystemExit(finish_existing(vid))
         raise SystemExit(main())
     except Exception:
         EV.mkdir(parents=True, exist_ok=True)
