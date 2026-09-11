@@ -120,12 +120,7 @@ def dismiss(page) -> None:
 
 
 def studio_page(ctx):
-    for page in ctx.pages:
-        url = page.url or ""
-        if "facebook.com" in url or "instagram.com" in url:
-            continue
-        if "studio.youtube.com" in url:
-            return page
+    """Always a new Studio tab. Never reuse Google One / Cloud Billing / Facebook tabs."""
     page = ctx.new_page()
     page.goto(
         f"https://studio.youtube.com/channel/{CHANNEL}",
