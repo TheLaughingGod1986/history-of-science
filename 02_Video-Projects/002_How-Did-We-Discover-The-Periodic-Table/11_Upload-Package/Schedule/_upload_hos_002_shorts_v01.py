@@ -474,16 +474,24 @@ def fill_when(page, day: int) -> dict:
 
 
 def click_schedule_btn(page) -> str:
-    for name in ["Schedule", "Done", "Save"]:
-        try:
-            btn = page.get_by_role("button", name=re.compile(rf"^{name}$", re.I))
-            if btn.count() and btn.last.is_enabled():
-                btn.last.click(force=True)
-                page.wait_for_timeout(3500)
-                return name
-        except Exception:
-            continue
-    hit = click_shadow_text(page, r"^(Schedule|Done|Save)$")
+    """Confirm Schedule. Never click Publish / Public — that would go live now."""
+    # Close the date popover first if it is still open.
+    try:
+        done = page.get_by_role("button", name=re.compile(r"^Done$", re.I))
+        if page.locator("tp-yt-paper-dialog, ytcp-date-picker").count() and done.count():
+            done.first.click(force=True, timeout=1500)
+            page.wait_for_timeout(400)
+    except Exception:
+        pass
+    try:
+        btn = page.get_by_role("button", name=re.compile(r"^Schedule$", re.I))
+        if btn.count() and btn.last.is_enabled():
+            btn.last.click(force=True)
+            page.wait_for_timeout(3500)
+            return "Schedule"
+    except Exception:
+        pass
+    hit = click_shadow_text(page, r"^Schedule$")
     page.wait_for_timeout(3000)
     return hit or ""
 
@@ -512,6 +520,17 @@ def extract_id(page, skip: set[str]) -> str | None:
     return None
 
 
+def verify_wall(page) -> bool:
+    blob = snip(page, 4000)
+    return bool(
+        re.search(
+            r"verify (it.?s you|your phone)|Unlock more on YouTube|Confirm it.?s you",
+            blob,
+            re.I,
+        )
+    )
+
+
 def set_related(page, video_id: str) -> str:
     page.goto(
         f"https://studio.youtube.com/video/{video_id}/edit",
@@ -520,6 +539,8 @@ def set_related(page, video_id: str) -> str:
     )
     page.wait_for_timeout(3500)
     dismiss(page)
+    if verify_wall(page):
+        return "phone_verify_wall"
     body = snip(page, 4000)
     if LONG_ID in body or LONG_TITLE in body:
         if re.search(r"Related video", body, re.I):
@@ -635,7 +656,13 @@ def upload_one(page, job: dict, skip_ids: set[str]) -> dict:
     item["confirm"] = click_schedule_btn(page)
     page.wait_for_timeout(4000)
     dismiss(page)
+    item["confirmSnip"] = dlg_text(page, 1800)
     shot(page, f"{slot}_05_after.png")
+    if re.search(r"\bPublic\b", item["confirmSnip"] or "") and re.search(
+        r"now|published", item["confirmSnip"] or "", re.I
+    ):
+        item["error"] = "went_public"
+        return item
     new_id = extract_id(page, skip_ids)
     if not new_id:
         page.wait_for_timeout(2500)
@@ -646,13 +673,15 @@ def upload_one(page, job: dict, skip_ids: set[str]) -> dict:
         skip_ids.add(new_id)
         item["related"] = set_related(page, new_id)
         shot(page, f"{slot}_06_related.png")
-        # Re-apply cover on edit if the details-step upload missed.
-        if not item["thumb"].get("ok"):
+        if verify_wall(page):
+            item["thumbEdit"] = "phone_verify_wall"
+        else:
             item["thumbEdit"] = set_image(page, cover)
             save = page.get_by_role("button", name=re.compile(r"^Save$", re.I))
             if save.count() and save.first.is_enabled():
                 save.first.click(force=True)
                 page.wait_for_timeout(1500)
+                item["thumbSave"] = "clicked"
         shot(page, f"{slot}_07_edit.png")
         item["ok"] = True
     else:
