@@ -211,6 +211,21 @@ def open_upload(page) -> dict:
     return info
 
 
+def staging_path(path: Path) -> Path:
+    """Hardlink into /tmp so the Open dialog path has no spaces."""
+    dest = Path("/tmp") / path.name
+    if dest.exists():
+        try:
+            dest.unlink()
+        except OSError:
+            pass
+    try:
+        dest.hardlink_to(path)
+    except OSError:
+        subprocess.check_call(["ln", "-f", str(path), str(dest)])
+    return dest
+
+
 def pick_video_file(page, path: Path) -> dict:
     """Attach the cut. CDP rejects files >50MB, so large cuts use the OS Open dialog."""
     info: dict = {"path": str(path), "bytes": path.stat().st_size}
@@ -223,29 +238,38 @@ def pick_video_file(page, path: Path) -> dict:
             return info
         except Exception as e:
             info["locator_err"] = f"{type(e).__name__}:{e}"
-    info["os_dialog"] = os_open_dialog(page, path)
+    staged = staging_path(path)
+    info["staged"] = str(staged)
+    info["os_dialog"] = os_open_dialog(page, staged)
     info["ok"] = bool(info["os_dialog"].get("ok"))
     info["via"] = "os_open_dialog"
     return info
 
 
 def os_open_dialog(page, path: Path) -> dict:
+    """Drive the native macOS Open dialog. CDP cannot attach >50MB."""
     info: dict = {}
     click_shadow_text(page, r"^Select files?$")
-    page.wait_for_timeout(1800)
+    page.wait_for_timeout(2000)
     posix = str(path)
-    script = f'''
-    tell application "System Events"
-      delay 0.8
-      keystroke "g" using {{command down, shift down}}
-      delay 0.7
-      keystroke "{posix}"
-      delay 0.4
-      keystroke return
-      delay 0.7
-      keystroke return
-    end tell
-    '''
+    subprocess.run(["pbcopy"], input=posix.encode(), check=True)
+    script = '''
+tell application "Google Chrome" to activate
+delay 0.5
+tell application "System Events"
+  tell process "Google Chrome"
+    set frontmost to true
+  end tell
+  delay 0.5
+  keystroke "g" using {command down, shift down}
+  delay 0.8
+  keystroke "v" using {command down}
+  delay 0.5
+  keystroke return
+  delay 0.9
+  keystroke return
+end tell
+'''
     proc = subprocess.run(
         ["osascript", "-e", script],
         capture_output=True,
@@ -254,7 +278,8 @@ def os_open_dialog(page, path: Path) -> dict:
     )
     info["returncode"] = proc.returncode
     info["stderr"] = (proc.stderr or "")[:400]
-    page.wait_for_timeout(4000)
+    info["stdout"] = (proc.stdout or "")[:200]
+    page.wait_for_timeout(5000)
     info["ok"] = proc.returncode == 0
     return info
 
@@ -377,7 +402,7 @@ def ensure_hos(page) -> dict:
 def fill_title_desc(page) -> dict:
     info: dict = {}
     title_box = page.get_by_role("textbox", name=re.compile(r"title|describe", re.I)).first
-    title_box.wait_for(timeout=900000)
+    title_box.wait_for(timeout=1200000)
     try:
         title_box.fill(TITLE)
         info["title"] = "fill"
@@ -805,6 +830,7 @@ def main() -> int:
 
         picked = pick_video_file(page, VIDEO)
         result["filePick"] = picked
+        shot(page, "01b_after_file_pick.png")
         if not picked.get("ok"):
             result["error"] = "NO_FILE_PICKER"
             dump("RESULT.json", result)
