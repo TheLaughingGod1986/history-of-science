@@ -31,8 +31,13 @@ None before the Premiere. First Short **Friday 18 Sep 2026 11:30 Europe/London**
 
 Uploader: `Schedule/_upload_hos_002_premiere_v01.py`
 
-## Status 11 Sep 2026 00:42 London
+## Status 11 Sep 2026 09:30 London
 
-**Blocked on Google verify** for `benoats86@gmail.com` in the HOS Chrome profile. Did not click Next. Did not upload. Chrome left running on CDP `:9460`.
+Long is on **@HistoryOfScienceYT** as id `AL_-qlWko_g`.
 
-Resume: complete that verify on the Mac mini, then re-run the uploader.
+- Title A, description, chapters, live-lock thumb A, not made for kids
+- **Premiere Thursday 17 Sep 2026 19:00** (Studio Visibility: Premiere)
+- Zero `/go/` · do not lead with a Short · ABC after Premiere ends
+- Pinned comment not posted yet (no comments on a scheduled listing)
+
+https://youtu.be/AL_-qlWko_g

@@ -130,5 +130,14 @@
     "scheduled": true,
     "stillDraft": false,
     "finished": "2026-09-11T09:24:34+01:00"
+  },
+  "premiereConfirmed": {
+    "visibility": "Premiere",
+    "date": "17 Sept 2026",
+    "time": "19:00",
+    "timeZone": "Europe/London",
+    "saved": true,
+    "contentList": "Premiere 17 Sept 2026",
+    "at": "2026-09-11T09:33:55"
   }
 }
