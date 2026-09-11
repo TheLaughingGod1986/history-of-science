@@ -249,6 +249,10 @@ def pick_video_file(page, path: Path) -> dict:
 def os_open_dialog(page, path: Path) -> dict:
     """Drive the native macOS Open dialog. CDP cannot attach >50MB."""
     info: dict = {}
+    try:
+        page.bring_to_front()
+    except Exception:
+        pass
     click_shadow_text(page, r"^Select files?$")
     page.wait_for_timeout(2000)
     posix = str(path)
@@ -806,6 +810,10 @@ def main() -> int:
         browser = p.chromium.connect_over_cdp(CDP, timeout=60000)
         ctx = browser.contexts[0]
         page = studio_page(ctx)
+        try:
+            page.bring_to_front()
+        except Exception:
+            pass
         hos = ensure_hos(page)
         result["hos"] = hos
         shot(page, "00_hos_dashboard.png")
