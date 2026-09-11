@@ -68,3 +68,7 @@ Phone Studio still showed **film-frame** covers on s03, s04, and a cropped long 
 | long | `AL_-qlWko_g` | gallium live_v02 + PREMIERE |
 
 The leftover s02 **Draft** still uses a film frame — leave it unpublished. Phone app may cache old stills; pull-to-refresh Content → Scheduled. Do not click Public.
+
+## Status 11 Sep 2026 12:10 London — s03 cover actually stuck
+
+Phone Scheduled still showed a **film frame** on s03 (`CnHwX1L9XHg`) after the 11:16 pass. Edit page had empty Upload file / Select from video tiles — the earlier `set_input_files` path did not persist. Re-uploaded via Studio **Upload file** file-chooser (`accept=image/jpeg,image/png`) → Save → reload. Custom **GALLIUM IN THE GAP** still present after reload. Helper now prefers the file chooser.

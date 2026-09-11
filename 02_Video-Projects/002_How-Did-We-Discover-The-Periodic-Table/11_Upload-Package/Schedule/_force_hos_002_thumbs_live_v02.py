@@ -73,16 +73,30 @@ def force_one(page, job: dict) -> str:
         return f"{job['slot']} wrong url {page.url}"
     page.keyboard.press("Escape")
     page.wait_for_timeout(800)
-    for sel in ['ytcp-button#select-button', 'ytcp-button:has-text("Upload file")']:
-        loc = page.locator(sel).first
-        if loc.count() and loc.is_visible():
-            loc.click(timeout=8000)
-            break
-    page.wait_for_timeout(1500)
-    file_inp = pick_image_input(page)
-    if file_inp is None:
-        return f"{job['slot']} no image input"
-    file_inp.set_input_files(str(thumb))
+    upload = page.get_by_text("Upload file", exact=True)
+    if upload.count() and upload.first.is_visible():
+        with page.expect_file_chooser(timeout=15000) as fc:
+            upload.first.click(timeout=8000)
+        chooser = fc.value
+        acc = ""
+        try:
+            acc = (chooser.element.get_attribute("accept") or "").lower()
+        except Exception:
+            acc = ""
+        if "video/" in acc and "image" not in acc:
+            return f"{job['slot']} file chooser is video-only"
+        chooser.set_files(str(thumb))
+    else:
+        for sel in ['ytcp-button#select-button', 'ytcp-button:has-text("Upload file")']:
+            loc = page.locator(sel).first
+            if loc.count() and loc.is_visible():
+                loc.click(timeout=8000)
+                break
+        page.wait_for_timeout(1500)
+        file_inp = pick_image_input(page)
+        if file_inp is None:
+            return f"{job['slot']} no image input"
+        file_inp.set_input_files(str(thumb))
     page.wait_for_timeout(5000)
     if "studio.youtube.com" not in page.url:
         return f"{job['slot']} left Studio before save {page.url}"
