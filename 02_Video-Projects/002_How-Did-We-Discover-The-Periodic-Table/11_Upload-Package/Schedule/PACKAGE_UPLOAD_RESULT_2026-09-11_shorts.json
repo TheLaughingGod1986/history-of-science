@@ -17,8 +17,9 @@
   },
   "relatedVideo": {
     "requested": "AL_-qlWko_g",
-    "applied": false,
-    "reason": "Related picker did not save. Descriptions include the long URL. Did not click Verify."
+    "applied": true,
+    "widget": "Related video How Did We Discover the Periodic Table?",
+    "reason": "Reload-verified on s01–s05 11 Sep 2026 12:30 London. No comment pins (empty comments)."
   },
   "extraDraftLeftPrivate": "duplicate s02 'He predicted a metal before it was found' left as Draft, not scheduled",
   "shorts": [
