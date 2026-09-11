@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "parentId": "AL_-qlWko_g",
+  "parentTitle": "How Did We Discover the Periodic Table?",
+  "parentUrl": "https://youtu.be/AL_-qlWko_g",
+  "affiliate": "none",
+  "madeForKids": false,
+  "noneBeforePremiere": true,
+  "scheduleClock": "11:30 Europe/London",
+  "coverStyle": "live_v02 illustrated 9:16",
+  "long": {
+    "platformPostId": "AL_-qlWko_g",
+    "premiere": "Thursday 17 Sep 2026 19:00 Europe/London",
+    "thumb": "hos_002_thumb_A_gallium_live_v02.jpg"
+  },
+  "relatedVideo": {
+    "requested": "AL_-qlWko_g",
+    "applied": false,
+    "reason": "Related picker did not save. Descriptions include the long URL. Did not click Verify."
+  },
+  "extraDraftLeftPrivate": "duplicate s02 'He predicted a metal before it was found' left as Draft, not scheduled",
+  "shorts": [
+    {
+      "slot": "s01_empty_chairs",
+      "title": "The periodic table's empty chairs",
+      "platformPostId": "uU12JA5rMWg",
+      "platformUrl": "https://youtube.com/shorts/uU12JA5rMWg",
+      "studioConfirm": "Scheduled 18 Sept 2026 11:30",
+      "cover": "hos_002_s01_empty_chairs_cover_live_v02.jpg"
+    },
+    {
+      "slot": "s02_predict_metal",
+      "title": "He predicted a metal before it was found",
+      "platformPostId": "nFQRWmpulTQ",
+      "platformUrl": "https://youtube.com/shorts/nFQRWmpulTQ",
+      "studioConfirm": "Scheduled 19 Sept 2026 11:30",
+      "cover": "hos_002_s02_predict_metal_cover_live_v02.jpg"
+    },
+    {
+      "slot": "s03_gallium",
+      "title": "Gallium sat where the table said",
+      "platformPostId": "CnHwX1L9XHg",
+      "platformUrl": "https://youtube.com/shorts/CnHwX1L9XHg",
+      "studioConfirm": "Scheduled 20 Sept 2026 11:30",
+      "cover": "hos_002_s03_gallium_cover_live_v02.jpg"
+    },
+    {
+      "slot": "s04_tellurium",
+      "title": "Why tellurium sat before iodine",
+      "platformPostId": "nba0-f7PPeU",
+      "platformUrl": "https://youtube.com/shorts/nba0-f7PPeU",
+      "studioConfirm": "Scheduled 21 Sept 2026 11:30",
+      "cover": "hos_002_s04_tellurium_cover_live_v02.jpg"
+    },
+    {
+      "slot": "s05_other_table",
+      "title": "What other table has empty chairs?",
+      "platformPostId": "LanTHJckYx8",
+      "platformUrl": "https://youtube.com/shorts/LanTHJckYx8",
+      "studioConfirm": "Scheduled 22 Sept 2026 11:30",
+      "cover": "hos_002_s05_other_table_cover_live_v02.jpg"
+    }
+  ],
+  "finished": "2026-09-11T10:20:00+01:00"
+}

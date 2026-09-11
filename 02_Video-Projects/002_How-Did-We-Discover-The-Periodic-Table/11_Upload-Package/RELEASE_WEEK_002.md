@@ -29,9 +29,9 @@ None before the Premiere. First Short **Friday 18 Sep 2026 11:30 Europe/London**
 | s04 | Mon 21 Sep 11:30 | Why tellurium sat before iodine |
 | s05 | Tue 22 Sep 11:30 | What other table has empty chairs? |
 
-Uploader: `Schedule/_upload_hos_002_premiere_v01.py`
+Uploader: `Schedule/_upload_hos_002_shorts_v01.py` · finish: `Schedule/_finish_hos_002_shorts_v01.py`
 
-## Status 11 Sep 2026 09:30 London
+## Status 11 Sep 2026 10:20 London
 
 Long is on **@HistoryOfScienceYT** as id `AL_-qlWko_g`.
 
@@ -41,3 +41,15 @@ Long is on **@HistoryOfScienceYT** as id `AL_-qlWko_g`.
 - Pinned comment not posted yet (no comments on a scheduled listing)
 
 https://youtu.be/AL_-qlWko_g
+
+Five punch Shorts are **Scheduled** at 11:30 Europe/London (never Public on finish). Covers are live_v02 illustrated 9:16. Descriptions already link the long. Studio Related ▶ picker did not save.
+
+| Slot | London | Title | id |
+|---|---|---|---|
+| s01 | Fri 18 Sep 11:30 | The periodic table's empty chairs | `uU12JA5rMWg` |
+| s02 | Sat 19 Sep 11:30 | He predicted a metal before it was found | `nFQRWmpulTQ` |
+| s03 | Sun 20 Sep 11:30 | Gallium sat where the table said | `CnHwX1L9XHg` |
+| s04 | Mon 21 Sep 11:30 | Why tellurium sat before iodine | `nba0-f7PPeU` |
+| s05 | Tue 22 Sep 11:30 | What other table has empty chairs? | `LanTHJckYx8` |
+
+One extra s02 draft (duplicate file) is left as **Draft** and is not scheduled.

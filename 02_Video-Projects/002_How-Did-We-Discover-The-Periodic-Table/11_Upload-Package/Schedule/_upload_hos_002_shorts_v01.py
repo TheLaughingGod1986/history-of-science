@@ -788,12 +788,15 @@ def apply_long_thumb(page) -> dict:
     shot(page, "00_long_before_thumb.png")
     info["upload"] = set_image(page, LONG_THUMB)
     save = page.get_by_role("button", name=re.compile(r"^Save$", re.I))
-    if save.count() and save.first.is_enabled():
-        save.first.click(force=True)
-        page.wait_for_timeout(2000)
-        info["save"] = "clicked"
-    else:
-        info["save"] = "not_enabled"
+    try:
+        if save.count() and save.first.is_enabled():
+            save.first.click(force=True, timeout=8000)
+            page.wait_for_timeout(2000)
+            info["save"] = "clicked"
+        else:
+            info["save"] = "not_enabled"
+    except Exception as e:
+        info["save"] = f"err:{type(e).__name__}"
     shot(page, "01_long_after_thumb.png")
     info["snip"] = snip(page, 600)
     return info

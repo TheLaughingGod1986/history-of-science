@@ -8,6 +8,11 @@
   "noneBeforePremiere": true,
   "scheduleClock": "11:30 Europe/London",
   "coverStyle": "live_v02 illustrated 9:16 (not film-frame v01)",
+  "related": {
+    "requested": "AL_-qlWko_g",
+    "applied": false,
+    "note": "Studio Related picker did not save. Descriptions already include the long URL. Do not click phone-verify."
+  },
   "items": [
     {
       "slot": "s01_empty_chairs",
@@ -16,7 +21,10 @@
       "title": "The periodic table's empty chairs",
       "day": 18,
       "dateLabel": "Friday 18 Sep 2026 11:30 Europe/London",
-      "iso": "2026-09-18T10:30:00+00:00"
+      "iso": "2026-09-18T10:30:00+00:00",
+      "platformPostId": "uU12JA5rMWg",
+      "platformUrl": "https://youtube.com/shorts/uU12JA5rMWg",
+      "upload": true
     },
     {
       "slot": "s02_predict_metal",
@@ -25,7 +33,10 @@
       "title": "He predicted a metal before it was found",
       "day": 19,
       "dateLabel": "Saturday 19 Sep 2026 11:30 Europe/London",
-      "iso": "2026-09-19T10:30:00+00:00"
+      "iso": "2026-09-19T10:30:00+00:00",
+      "platformPostId": "nFQRWmpulTQ",
+      "platformUrl": "https://youtube.com/shorts/nFQRWmpulTQ",
+      "upload": true
     },
     {
       "slot": "s03_gallium",
@@ -34,7 +45,10 @@
       "title": "Gallium sat where the table said",
       "day": 20,
       "dateLabel": "Sunday 20 Sep 2026 11:30 Europe/London",
-      "iso": "2026-09-20T10:30:00+00:00"
+      "iso": "2026-09-20T10:30:00+00:00",
+      "platformPostId": "CnHwX1L9XHg",
+      "platformUrl": "https://youtube.com/shorts/CnHwX1L9XHg",
+      "upload": true
     },
     {
       "slot": "s04_tellurium",
@@ -43,7 +57,10 @@
       "title": "Why tellurium sat before iodine",
       "day": 21,
       "dateLabel": "Monday 21 Sep 2026 11:30 Europe/London",
-      "iso": "2026-09-21T10:30:00+00:00"
+      "iso": "2026-09-21T10:30:00+00:00",
+      "platformPostId": "nba0-f7PPeU",
+      "platformUrl": "https://youtube.com/shorts/nba0-f7PPeU",
+      "upload": true
     },
     {
       "slot": "s05_other_table",
@@ -52,7 +69,10 @@
       "title": "What other table has empty chairs?",
       "day": 22,
       "dateLabel": "Tuesday 22 Sep 2026 11:30 Europe/London",
-      "iso": "2026-09-22T10:30:00+00:00"
+      "iso": "2026-09-22T10:30:00+00:00",
+      "platformPostId": "LanTHJckYx8",
+      "platformUrl": "https://youtube.com/shorts/LanTHJckYx8",
+      "upload": true
     }
   ]
 }
