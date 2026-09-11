@@ -72,3 +72,7 @@ The leftover s02 **Draft** still uses a film frame — leave it unpublished. Pho
 ## Status 11 Sep 2026 12:10 London — s03 cover actually stuck
 
 Phone Scheduled still showed a **film frame** on s03 (`CnHwX1L9XHg`) after the 11:16 pass. Edit page had empty Upload file / Select from video tiles — the earlier `set_input_files` path did not persist. Re-uploaded via Studio **Upload file** file-chooser (`accept=image/jpeg,image/png`) → Save → reload. Custom **GALLIUM IN THE GAP** still present after reload. Helper now prefers the file chooser.
+
+## Status 11 Sep 2026 12:30 London — Related ▶ long on all five Shorts
+
+Studio **Related video** was **None** on every Scheduled Short. Set to **How Did We Discover the Periodic Table?** (`AL_-qlWko_g`) and reload-verified. Descriptions already include the long URL. No comment pins (comments empty on scheduled listings). Leftover s02 Draft is not in this set.
