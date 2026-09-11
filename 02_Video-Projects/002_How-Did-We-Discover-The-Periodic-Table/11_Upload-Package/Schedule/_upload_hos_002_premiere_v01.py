@@ -127,9 +127,15 @@ def studio_page(ctx):
         url = page.url or ""
         if "facebook.com" in url or "instagram.com" in url:
             continue
-        if "studio.youtube.com" in url:
+        if "studio.youtube.com" in url or "youtube.com" in url:
             return page
-    return ctx.pages[0] if ctx.pages else ctx.new_page()
+    page = ctx.new_page()
+    page.goto(
+        f"https://studio.youtube.com/channel/{CHANNEL}",
+        wait_until="domcontentloaded",
+        timeout=120000,
+    )
+    return page
 
 
 def click_shadow_text(page, pattern: str) -> str | None:
