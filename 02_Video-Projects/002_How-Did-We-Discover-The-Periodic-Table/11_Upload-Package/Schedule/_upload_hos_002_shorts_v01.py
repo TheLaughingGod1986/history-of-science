@@ -408,8 +408,67 @@ def open_schedule(page) -> str:
     return click_shadow_text(page, r"^Schedule$") or ""
 
 
+def read_schedule_dt(page) -> dict:
+    return page.evaluate(
+        """() => {
+          let date='', time='';
+          const walk=(r,d=0)=>{
+            if(!r||d>45) return;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('ytcp-text-dropdown-trigger,ytcp-dropdown-trigger,div,span') : [])) {
+              const t=(el.innerText||'').replace(/\\s+/g,' ').trim();
+              if (/^\\d{1,2}\\s+(Sept|Sep|September)\\s+2026$/i.test(t)) date=t;
+            }
+            for (const inp of (r.querySelectorAll ? r.querySelectorAll('input') : [])) {
+              if (/^\\d{1,2}:\\d{2}$/.test(inp.value||'')) time=inp.value;
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+              if (el.shadowRoot) walk(el.shadowRoot, d+1);
+            }
+          };
+          walk(document);
+          return {date, time};
+        }"""
+    )
+
+
+def date_is(dt: dict, day: int) -> bool:
+    blob = f"{(dt or {}).get('date','')} {(dt or {}).get('time','')}"
+    return bool(re.search(rf"\b{day}\s+(Sept|Sep|September)\s+2026", blob, re.I)) and (
+        str((dt or {}).get("time") or "").startswith("11:30")
+    )
+
+
 def fill_when(page, day: int) -> dict:
+    """Open the Sept 2026 date dropdown, pick `day`, type 11:30. Never leave the default."""
     info: dict = {"day": day, "time": TIME}
+    opened = page.evaluate(
+        """() => {
+          const walk=(r,d=0)=>{
+            if(!r||d>50) return false;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('ytcp-text-dropdown-trigger,ytcp-dropdown-trigger,tp-yt-paper-input')
+              : [])) {
+              const t=(el.innerText||'').replace(/\\s+/g,' ').trim();
+              const aria=el.getAttribute('aria-label')||'';
+              if (/\\d{1,2}\\s+(Sept|Sep|September)\\s+2026/i.test(t)
+                  || /Enter date|Select date/i.test(aria)) {
+                el.click(); return t.slice(0,40) || aria.slice(0,40);
+              }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+              if (el.shadowRoot) {
+                const x=walk(el.shadowRoot, d+1);
+                if (x) return x;
+              }
+            }
+            return false;
+          };
+          return walk(document);
+        }"""
+    )
+    info["date_open"] = opened
+    page.wait_for_timeout(700)
     date_str = f"{day} September 2026"
     el = page.locator('tp-yt-paper-input[aria-label="Enter date"] input')
     if el.count():
@@ -430,11 +489,9 @@ def fill_when(page, day: int) -> dict:
                   const t=(el.innerText||'').trim();
                   const aria=el.getAttribute('aria-label')||'';
                   const box=el.getBoundingClientRect();
-                  if (box.width<8 || box.height<8 || box.width>110) continue;
-                  if (t===String(day) || new RegExp('\\\\b'+day+'\\\\b').test(aria)) {
-                    if (/Sept|Sep|September/i.test(aria) || t===String(day)) {
-                      el.click(); hit=aria||t; return;
-                    }
+                  if (box.width<8 || box.height<8 || box.width>90) continue;
+                  if (t===String(day)) {
+                    el.click(); hit=aria||t; return;
                   }
                 }
                 for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
@@ -470,12 +527,13 @@ def fill_when(page, day: int) -> dict:
         page.keyboard.type(TIME, delay=35)
         page.keyboard.press("Tab")
         info["time_typed"] = TIME
+    page.wait_for_timeout(400)
+    info["after"] = read_schedule_dt(page)
     return info
 
 
 def click_schedule_btn(page) -> str:
     """Confirm Schedule. Never click Publish / Public — that would go live now."""
-    # Close the date popover first if it is still open.
     try:
         done = page.get_by_role("button", name=re.compile(r"^Done$", re.I))
         if page.locator("tp-yt-paper-dialog, ytcp-date-picker").count() and done.count():
@@ -483,15 +541,16 @@ def click_schedule_btn(page) -> str:
             page.wait_for_timeout(400)
     except Exception:
         pass
-    try:
-        btn = page.get_by_role("button", name=re.compile(r"^Schedule$", re.I))
-        if btn.count() and btn.last.is_enabled():
-            btn.last.click(force=True)
-            page.wait_for_timeout(3500)
-            return "Schedule"
-    except Exception:
-        pass
-    hit = click_shadow_text(page, r"^Schedule$")
+    for name in ["Schedule", "Done", "Save"]:
+        try:
+            btn = page.get_by_role("button", name=re.compile(rf"^{name}$", re.I))
+            if btn.count() and btn.last.is_enabled():
+                btn.last.click(force=True)
+                page.wait_for_timeout(3500)
+                return name
+        except Exception:
+            continue
+    hit = click_shadow_text(page, r"^(Schedule|Done)$")
     page.wait_for_timeout(3000)
     return hit or ""
 
@@ -531,6 +590,16 @@ def verify_wall(page) -> bool:
     )
 
 
+def related_widget(page) -> str:
+    return page.evaluate(
+        """() => {
+          const t=document.body.innerText||'';
+          const m=t.match(/Related video[^\\n]{0,80}/i);
+          return m ? m[0].replace(/\\s+/g,' ').trim() : '';
+        }"""
+    )
+
+
 def set_related(page, video_id: str) -> str:
     page.goto(
         f"https://studio.youtube.com/video/{video_id}/edit",
@@ -541,18 +610,39 @@ def set_related(page, video_id: str) -> str:
     dismiss(page)
     if verify_wall(page):
         return "phone_verify_wall"
-    body = snip(page, 4000)
-    if LONG_ID in body or LONG_TITLE in body:
-        if re.search(r"Related video", body, re.I):
-            return "already_or_present"
+    widget = related_widget(page)
+    if (LONG_ID in widget or LONG_TITLE in widget) and not re.search(r"\bNone\b", widget, re.I):
+        return "already_or_present"
     try:
         for _ in range(8):
             page.mouse.wheel(0, 900)
             page.wait_for_timeout(200)
+        pencil = page.evaluate(
+            """() => {
+              const walk=(r,d=0)=>{
+                if(!r||d>50) return null;
+                for (const el of (r.querySelectorAll
+                  ? r.querySelectorAll('ytcp-icon-button,button,[role=button]') : [])) {
+                  const a=el.getAttribute('aria-label')||'';
+                  if (/related video|Add a related|Select video/i.test(a)) {
+                    el.click(); return a.slice(0,60);
+                  }
+                }
+                for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+                  if (el.shadowRoot) {
+                    const x=walk(el.shadowRoot, d+1);
+                    if (x) return x;
+                  }
+                }
+                return null;
+              };
+              return walk(document);
+            }"""
+        )
         add = page.get_by_text(re.compile(r"Add (a )?related video|Select video|Add video", re.I))
-        if add.count():
+        if not pencil and add.count():
             add.first.click(timeout=4000)
-        else:
+        elif not pencil:
             page.get_by_text(re.compile(r"Related video", re.I)).first.click(timeout=4000)
         page.wait_for_timeout(1000)
         box = page.locator(
@@ -573,6 +663,120 @@ def set_related(page, video_id: str) -> str:
         return "picked_save_grey"
     except Exception as e:
         return f"err:{type(e).__name__}"
+
+
+def close_empty_upload(page) -> str:
+    try:
+        dlg = page.locator("ytcp-uploads-dialog")
+        if not dlg.count():
+            return "none"
+        t = dlg.inner_text()[:400]
+        if re.search(r"Select files|Drag and drop", t, re.I) and not re.search(
+            r"Checks complete|Checks in progress|Checks pending", t, re.I
+        ):
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(400)
+            return "escaped_empty"
+        return "busy_leave"
+    except Exception as e:
+        return f"err:{type(e).__name__}"
+
+
+def open_edit_visibility(page) -> str:
+    try:
+        ed = page.get_by_role("button", name=re.compile(r"Edit draft", re.I))
+        if ed.count() and ed.first.is_visible():
+            ed.first.click(force=True, timeout=3000)
+            page.wait_for_timeout(1200)
+    except Exception:
+        pass
+    try:
+        vis = page.get_by_text(re.compile(r"^Visibility$", re.I))
+        if vis.count():
+            vis.first.click(force=True, timeout=3000)
+            page.wait_for_timeout(800)
+            return "visibility_text"
+    except Exception:
+        pass
+    hit = page.evaluate(
+        """() => {
+          const walk=(r,d=0)=>{
+            if(!r||d>55) return false;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('ytcp-icon-button,button,[role=button]') : [])) {
+              const a=el.getAttribute('aria-label')||'';
+              if (/edit video visibility status|Visibility/i.test(a)) {
+                el.click(); return a.slice(0,60);
+              }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+              if (el.shadowRoot && walk(el.shadowRoot, d+1)) return true;
+            }
+            return false;
+          };
+          return walk(document);
+        }"""
+    )
+    page.wait_for_timeout(1200)
+    return str(hit or "")
+
+
+def repair_existing(page, job: dict, video_id: str) -> dict:
+    slot = job["slot"]
+    cover = COVERS / job["cover"]
+    item: dict = {
+        "slot": slot,
+        "title": job["title"],
+        "file": job["file"],
+        "cover": job["cover"],
+        "dateLabel": job["dateLabel"],
+        "platformPostId": video_id,
+        "platformUrl": f"https://youtube.com/shorts/{video_id}",
+        "repaired": True,
+    }
+    log(f"==== repair {slot} {video_id} ====")
+    page.goto(
+        f"https://studio.youtube.com/video/{video_id}/edit",
+        wait_until="domcontentloaded",
+        timeout=120000,
+    )
+    page.wait_for_timeout(3500)
+    dismiss(page)
+    shot(page, f"{slot}_repair_01_edit.png")
+    item["kids"] = set_not_kids(page)
+    item["thumbEdit"] = set_image(page, cover)
+    save = page.get_by_role("button", name=re.compile(r"^Save$", re.I))
+    if save.count() and save.first.is_enabled():
+        save.first.click(force=True)
+        page.wait_for_timeout(1500)
+        item["thumbSave"] = "clicked"
+    item["openVis"] = open_edit_visibility(page)
+    page.wait_for_timeout(800)
+    item["scheduleOpen"] = open_schedule(page)
+    page.wait_for_timeout(800)
+    item["when"] = fill_when(page, job["day"])
+    if not date_is(item["when"].get("after") or {}, job["day"]):
+        item["whenRetry"] = fill_when(page, job["day"])
+        item["when"]["after"] = item["whenRetry"].get("after")
+    shot(page, f"{slot}_repair_02_when.png")
+    if not date_is(item["when"].get("after") or {}, job["day"]):
+        item["error"] = f"date_not_set:{item['when'].get('after')}"
+        item["ok"] = False
+        return item
+    item["confirm"] = click_schedule_btn(page)
+    page.wait_for_timeout(2500)
+    dismiss(page)
+    save2 = page.get_by_role("button", name=re.compile(r"^Save$", re.I))
+    if save2.count() and save2.first.is_enabled():
+        save2.first.click(force=True)
+        page.wait_for_timeout(1500)
+        item["visSave"] = "clicked"
+    shot(page, f"{slot}_repair_03_after.png")
+    item["related"] = set_related(page, video_id)
+    shot(page, f"{slot}_repair_04_related.png")
+    item["relatedWidget"] = related_widget(page)
+    item["ok"] = True
+    return item
 
 
 def apply_long_thumb(page) -> dict:
@@ -652,7 +856,13 @@ def upload_one(page, job: dict, skip_ids: set[str]) -> dict:
     item["scheduleOpen"] = open_schedule(page)
     page.wait_for_timeout(800)
     item["when"] = fill_when(page, job["day"])
+    if not date_is(item["when"].get("after") or {}, job["day"]):
+        item["whenRetry"] = fill_when(page, job["day"])
+        item["when"]["after"] = item["whenRetry"].get("after")
     shot(page, f"{slot}_04_when.png")
+    if not date_is(item["when"].get("after") or {}, job["day"]):
+        item["error"] = f"date_not_set:{item['when'].get('after')}"
+        return item
     item["confirm"] = click_schedule_btn(page)
     page.wait_for_timeout(4000)
     dismiss(page)
@@ -706,6 +916,7 @@ def main() -> int:
     }
     ensure_chrome()
     skip = {LONG_ID, "_C92tIJCk8A"}
+    known = {"s01_empty_chairs": "uU12JA5rMWg"}
     with sync_playwright() as p:
         browser = p.chromium.connect_over_cdp(CDP, timeout=60000)
         ctx = browser.contexts[0]
@@ -721,6 +932,7 @@ def main() -> int:
         )
         page.wait_for_timeout(3500)
         dismiss(page)
+        result["closeUpload"] = close_empty_upload(page)
         body = snip(page, 2000)
         if re.search(r"signin|Signed out", page.url + "\n" + body, re.I):
             result["error"] = "SIGNED_OUT"
@@ -733,12 +945,12 @@ def main() -> int:
         shot(page, "00_dashboard.png")
         result["longThumb"] = apply_long_thumb(page)
         for job in JOBS:
-            if job["title"] in snip(page, 4000):
-                item = {"slot": job["slot"], "title": job["title"], "ok": False, "error": "already_listed_skip"}
-                result["shorts"].append(item)
-                log(f"SKIP already listed {job['title']}")
-                continue
-            item = upload_one(page, job, skip)
+            vid = known.get(job["slot"])
+            if vid:
+                skip.add(vid)
+                item = repair_existing(page, job, vid)
+            else:
+                item = upload_one(page, job, skip)
             result["shorts"].append(item)
             dump("RESULT.json", result)
             log(f"{job['slot']} ok={item.get('ok')} id={item.get('platformPostId')}")
