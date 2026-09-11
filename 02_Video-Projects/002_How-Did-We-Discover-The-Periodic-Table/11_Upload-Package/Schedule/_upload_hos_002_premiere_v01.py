@@ -208,6 +208,7 @@ def open_upload(page) -> dict:
             click_shadow_text(page, r"^Upload videos?$")
             page.wait_for_timeout(2000)
     info["fileInputs"] = file_input_count(page)
+    info["intercept"] = disable_file_chooser_intercept(page)
     return info
 
 
@@ -226,20 +227,81 @@ def staging_path(path: Path) -> Path:
     return dest
 
 
-def pick_video_file(page, path: Path) -> dict:
-    """Attach the cut. CDP rejects files >50MB, so large cuts use the OS Open dialog."""
-    info: dict = {"path": str(path), "bytes": path.stat().st_size}
-    loc = page.locator('input[type="file"]')
-    if loc.count() and path.stat().st_size <= 50 * 1024 * 1024:
-        try:
-            loc.first.set_input_files(str(path))
-            info["ok"] = True
-            info["via"] = f"locator_{loc.count()}"
+def hos_chrome_pid() -> int | None:
+    try:
+        out = subprocess.check_output(["lsof", "-ti", f":{PORT}"], text=True).strip()
+    except subprocess.CalledProcessError:
+        return None
+    for pid in out.split():
+        if pid.isdigit():
+            return int(pid)
+    return None
+
+
+def cdp_set_files(page, path: Path) -> dict:
+    """Ask Chrome to read the file from disk. Playwright set_input_files caps at 50MB over CDP."""
+    info: dict = {"path": str(path)}
+    try:
+        session = page.context.new_cdp_session(page)
+        ev = session.send(
+            "Runtime.evaluate",
+            {
+                "expression": """(() => {
+                  const walk=(r,d=0)=>{
+                    if(!r||d>50) return null;
+                    if (r.querySelector) {
+                      const inp=r.querySelector('input[type=file]');
+                      if (inp) return inp;
+                    }
+                    for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+                      if (el.shadowRoot) {
+                        const x=walk(el.shadowRoot, d+1);
+                        if (x) return x;
+                      }
+                    }
+                    return null;
+                  };
+                  return walk(document);
+                })()"""
+            },
+        )
+        obj = (ev.get("result") or {}).get("objectId")
+        info["evalType"] = (ev.get("result") or {}).get("type")
+        info["evalSubtype"] = (ev.get("result") or {}).get("subtype")
+        if not obj:
+            info["ok"] = False
+            info["reason"] = "no_file_input_object"
             return info
-        except Exception as e:
-            info["locator_err"] = f"{type(e).__name__}:{e}"
+        session.send(
+            "DOM.setFileInputFiles",
+            {"files": [str(path)], "objectId": obj},
+        )
+        info["ok"] = True
+        info["via"] = "cdp_setFileInputFiles"
+        return info
+    except Exception as e:
+        info["ok"] = False
+        info["err"] = f"{type(e).__name__}:{e}"
+        return info
+
+
+def pick_video_file(page, path: Path) -> dict:
+    """Attach the cut. Playwright CDP cannot transfer >50MB; Chrome can read a local path."""
+    info: dict = {"path": str(path), "bytes": path.stat().st_size}
     staged = staging_path(path)
     info["staged"] = str(staged)
+    info["cdp"] = cdp_set_files(page, staged)
+    if info["cdp"].get("ok"):
+        page.wait_for_timeout(2500)
+        after = dlg_text(page, 800)
+        info["after"] = after[:500]
+        still_picker = bool(re.search(r"Select files", after, re.I)) and not re.search(
+            r"Details|Title|Uploading|Checks", after, re.I
+        )
+        info["ok"] = not still_picker
+        info["via"] = "cdp_setFileInputFiles"
+        if info["ok"]:
+            return info
     info["os_dialog"] = os_open_dialog(page, staged)
     info["ok"] = bool(info["os_dialog"].get("ok"))
     info["via"] = "os_open_dialog"
@@ -270,8 +332,10 @@ end tell
 
 
 def os_open_dialog(page, path: Path) -> dict:
-    """Drive the native macOS Open dialog. CDP cannot attach >50MB."""
+    """Drive the native macOS Open dialog on the HOS Chrome PID only."""
     info: dict = {"intercept": disable_file_chooser_intercept(page)}
+    pid = hos_chrome_pid()
+    info["hosPid"] = pid
     try:
         page.bring_to_front()
     except Exception:
@@ -281,22 +345,26 @@ def os_open_dialog(page, path: Path) -> dict:
     info["windows_after_click"] = os_dialog_windows()
     posix = str(path)
     subprocess.run(["pbcopy"], input=posix.encode(), check=True)
-    script = '''
-tell application "Google Chrome" to activate
-delay 0.4
+    activate = ""
+    if pid:
+        activate = f'''
 tell application "System Events"
-  tell process "Google Chrome"
-    set frontmost to true
-  end tell
-  delay 0.4
+  set frontmost of (first process whose unix id is {pid}) to true
+end tell
+delay 0.4
+'''
+    script = f'''
+{activate}
+tell application "System Events"
+  delay 0.3
   repeat 12 times
-    set wn to name of windows of process "Google Chrome"
+    set wn to name of windows of (first process whose unix id is {pid or 0})
     if (wn as text) contains "Open" then exit repeat
     delay 0.25
   end repeat
-  keystroke "g" using {command down, shift down}
+  keystroke "g" using {{command down, shift down}}
   delay 0.8
-  keystroke "v" using {command down}
+  keystroke "v" using {{command down}}
   delay 0.5
   keystroke return
   delay 1.0
