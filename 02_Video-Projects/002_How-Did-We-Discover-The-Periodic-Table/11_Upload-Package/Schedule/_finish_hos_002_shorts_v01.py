@@ -115,14 +115,55 @@ def list_short_ids(page) -> dict[str, str]:
 
 def click_edit_draft(page) -> str:
     try:
-        b = page.get_by_text("Edit draft", exact=False)
+        b = page.get_by_text("Edit draft", exact=True)
         if b.count() and b.first.is_visible():
             b.first.click(force=True, timeout=4000)
             page.wait_for_timeout(2000)
             return "clicked"
     except Exception as e:
         return f"err:{type(e).__name__}"
+    try:
+        b = page.get_by_role("button", name=re.compile(r"Edit draft", re.I))
+        if b.count():
+            b.first.click(force=True, timeout=4000)
+            page.wait_for_timeout(2000)
+            return "role"
+    except Exception:
+        pass
     return "missing"
+
+
+def click_row_edit_draft(page, title: str) -> str:
+    return page.evaluate(
+        """(title) => {
+          let row=null;
+          const walk=(r,d=0)=>{
+            if(!r||d>50||row) return;
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('ytcp-video-row') : [])) {
+              const t=el.innerText||'';
+              if (t.includes(title) && /Edit draft/i.test(t)) { row=el; return; }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+              if (el.shadowRoot) walk(el.shadowRoot, d+1);
+            }
+          };
+          walk(document);
+          if (!row) return 'no_row';
+          const clickWalk=(r,d=0)=>{
+            if(!r||d>40) return false;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('button,ytcp-button,a,[role=button],ytcp-button-shape') : [])) {
+              if (/^Edit draft$/i.test((el.innerText||'').trim())) { el.click(); return true; }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+              if (el.shadowRoot && clickWalk(el.shadowRoot, d+1)) return true;
+            }
+            return false;
+          };
+          return clickWalk(row) ? 'clicked' : 'row_no_btn';
+        }""",
+        title,
+    )
 
 
 def set_related_tile(page) -> str:
@@ -265,22 +306,48 @@ def main() -> int:
         found = list_short_ids(page)
         result["listed"] = found
         log(f"listed {found}")
-        skip = {u.LONG_ID, "_C92tIJCk8A", *KNOWN.values()}
+        skip = {u.LONG_ID, "_C92tIJCk8A", *KNOWN.values(), *GERMS_IDS}
+        body = u.snip(page, 4000)
         for job in u.JOBS:
             vid = KNOWN.get(job["slot"]) or found.get(job["slot"])
             if not vid:
-                log(f"upload missing {job['slot']}")
-                item = u.upload_one(page, job, skip)
-                if item.get("platformPostId"):
-                    vid = item["platformPostId"]
-                    skip.add(vid)
-                    item2 = finish_one(page, job, vid)
-                    item.update(item2)
-                result["shorts"].append(item)
+                if job["title"] not in body and job["title"] not in u.snip(page, 4000):
+                    log(f"SKIP missing and not on list {job['slot']} — will not mint a duplicate")
+                    result["shorts"].append({
+                        "slot": job["slot"],
+                        "title": job["title"],
+                        "ok": False,
+                        "error": "not_on_shorts_list",
+                    })
+                    continue
+                page.goto(
+                    f"https://studio.youtube.com/channel/{u.CHANNEL}/videos/short",
+                    wait_until="domcontentloaded",
+                    timeout=120000,
+                )
+                page.wait_for_timeout(2500)
+                u.dismiss(page)
+                assert_studio(page)
+                clicked = click_row_edit_draft(page, job["title"])
+                page.wait_for_timeout(2500)
+                vid = u.extract_id(page, skip) or ""
+                log(f"row_edit {job['slot']} {clicked} id={vid}")
+                if not vid:
+                    result["shorts"].append({
+                        "slot": job["slot"],
+                        "title": job["title"],
+                        "ok": False,
+                        "error": f"no_id_after_edit_draft:{clicked}",
+                        "clicked": clicked,
+                    })
+                    dump("RESULT.json", result)
+                    continue
+                skip.add(vid)
             else:
                 skip.add(vid)
-                result["shorts"].append(finish_one(page, job, vid))
+            result["shorts"].append(finish_one(page, job, vid))
             dump("RESULT.json", result)
+            log(f"{job['slot']} ok={result['shorts'][-1].get('ok')} id={vid}")
         page.goto(
             f"https://studio.youtube.com/channel/{u.CHANNEL}/videos/short",
             wait_until="domcontentloaded",
