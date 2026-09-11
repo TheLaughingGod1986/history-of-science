@@ -18,7 +18,7 @@
     "How Did We Know Which Elements Were Missing?",
     "How Did Mendeleev Predict Missing Elements?"
   ],
-  "schedule": null,
+  "schedule": "2026-09-17T18:00:00.000Z",
   "youtubeId": null,
   "playlistId": null,
   "relatedVideoId": null,
@@ -26,5 +26,11 @@
   "madeForKids": false,
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
-  "note": "UAT pack. Do not upload until CoS/Ben lock. Score titles in VidIQ before listing lock. Studio Related on Shorts = this exact title after the long id exists."
+  "premiere": {
+    "date": "2026-09-17",
+    "time": "19:00",
+    "timeZone": "Europe/London",
+    "type": "premiere"
+  },
+  "note": "Upload the long as a Thursday Premiere on @HistoryOfScienceYT only. Zero /go/. Do not lead with a Short. ABC Test after Premiere ends."
 }

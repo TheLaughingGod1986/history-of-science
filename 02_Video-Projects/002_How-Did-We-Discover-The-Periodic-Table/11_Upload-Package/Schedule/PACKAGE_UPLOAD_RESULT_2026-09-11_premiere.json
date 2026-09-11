@@ -1,0 +1,143 @@
+{
+  "ok": true,
+  "method": "youtube_studio_hos_session",
+  "channel": {
+    "name": "History of Science",
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "studioUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": [
+    "@OrbitWithBen",
+    "@OpptiAI",
+    "@HistoryOfScience"
+  ],
+  "premiere": {
+    "date": "2026-09-17",
+    "time": "19:00",
+    "timeZone": "Europe/London",
+    "type": "premiere",
+    "label": "Thursday 17 Sep 2026 19:00 Europe/London",
+    "iso": "2026-09-17T18:00:00+00:00"
+  },
+  "madeForKids": false,
+  "affiliate": "none",
+  "started": "2026-09-11T09:14:32+01:00",
+  "video": {
+    "file": "hos_002_periodic_table_full_v02.mp4",
+    "sha256": "8a5b8dde713cd4d6d2834b49635443ebf5fda1a83de92688bf79ca91746de31f",
+    "bytes": 437292747,
+    "title": "How Did We Discover the Periodic Table?",
+    "thumb": "hos_002_thumb_A_gallium_live_v02.jpg",
+    "platformPostId": "AL_-qlWko_g",
+    "platformUrl": "https://youtu.be/AL_-qlWko_g",
+    "watchUrl": "https://www.youtube.com/watch?v=AL_-qlWko_g"
+  },
+  "hos": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Channel dashboard - YouTube Studio",
+    "alreadyListed": false,
+    "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nA flask that proved germs come from outside\n20\n0\n0\nFirst 5 days 4 hours\nRanking by views\n4 of 5\nViews\n20\nAverage percentage viewed\n29.4%\nLikes\n0\nCatch me up on this video\nPublished videos\nInvisible life is still everywhere\n6\n0\n0\nGerms hitch a ride on you\n26\n0\n0\nMicrobes in a drop of pond water\n109\n0\n1\nGerms don't cast a shadow\n78\n0\n1\nGo to videos\n\nC"
+  },
+  "openUpload": {
+    "create": "Create",
+    "uploadVideos": "Upload videos",
+    "fileInputs": 1,
+    "intercept": "off"
+  },
+  "filePick": {
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_periodic_table_full_v02.mp4",
+    "bytes": 437292747,
+    "staged": "/tmp/hos_002_periodic_table_full_v02.mp4",
+    "cdp": {
+      "path": "/tmp/hos_002_periodic_table_full_v02.mp4",
+      "evalType": "object",
+      "evalSubtype": "node",
+      "ok": true,
+      "via": "cdp_setFileInputFiles"
+    },
+    "after": "hos 002 periodic table full v02\nSaving\u2026\nDetails\nVideo elements\nChecks\nVisibility\nDetails\nReuse details\nTitle (required)\nhos 002 periodic table full v02\nA/B Testing\nDescription\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nUpload file\nSelect from video\nA/B Testing\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, yo",
+    "ok": true,
+    "via": "cdp_setFileInputFiles"
+  },
+  "details": {
+    "title": "fill",
+    "desc": true
+  },
+  "audience": {
+    "kids": "err:TimeoutError",
+    "ai": "skip"
+  },
+  "tags": {
+    "ok": true,
+    "chars": 505
+  },
+  "thumb": {
+    "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_A_gallium_live_v02.jpg",
+    "ok": true,
+    "via": "input_0"
+  },
+  "next": "vis_0",
+  "scheduleRadio": "",
+  "when": {
+    "date_picked": null,
+    "time_focus": {
+      "ok": false
+    },
+    "premiere_click": null
+  },
+  "confirmClick": "",
+  "confirmSnip": "Added empty chairs\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n6:05\nHow Did We Discover Germs?\nA/B test running\n\u2014\nPublic\n3 Sept 2026\nPremiered\n2\n1\nRows per page:\n30\n1\u20131 of 1\nHow Did We Discover the Periodic Table?\nSaving\u2026\nDetails\nVideo elements\nInitial check\nVisibility\nDetails\nReuse details\nTitle (required)\nHow Did We Discover the Periodic Table?\nA/B Testing\nDescription\nHow Did We Discover the Periodic Table?\n\nThe cleverest part was not the names. It was the empty chairs. In 1869 Dmitri Mendeleev left seats for metals nobody had found yet \u2014 then gallium, scandium and germanium sat where he told them to sit.\n\nA 3D cartoon film about chemistry becoming navigation: atomic weight, predicted elements, and the moment a zoo of chemicals became a city you can read.\n\n0:00 A zoo of names\n1:25 First patterns\n2:49 A ruler for atoms\n4:21 Empty chairs\n6:31 The guests arrive\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev\n\n\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location,",
+  "studioEdit": "https://studio.youtube.com/video/AL_-qlWko_g/edit",
+  "pin": {
+    "id": "AL_-qlWko_g",
+    "snip": "'Most relevant' is the new default view. Use filter settings to personalise your default view.\nClose\nVideo comments\nSkip navigation\nAsk Studio\nCreate\nThis video is in a draft state\nEdit draft\nChannel content\n9:01\nYour video\nHow Did We Discover the Periodic Table?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo comments\nPublished\nMost relevant\nSearch\nResponse status: Unresponded\nComment\nNo comments found. Try searching for something else or removing filters.\nNo comments found. Try searching for something else or removing filters.",
+    "ok": false,
+    "reason": "pin_manual_if_comment_exists"
+  },
+  "editSnip": "Video details\nSkip navigation\nAsk Studio\nCreate\nThis video is in a draft state\nEdit draft\nChannel content\n9:01\nYour video\nHow Did We Discover the Periodic Table?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nHow Did We Discover the Periodic Table?\nA/B Testing\nDescription\nHow Did We Discover the Periodic Table?\n\nThe cleverest part was not the names. It was the empty chairs. In 1869 Dmitri Mendeleev left seats for metals nobody had found yet \u2014 then gallium, scandium and germanium sat where he told them to sit.\n\nA 3D cartoon film about chemistry becoming navigation: atomic weight, predicted elements, and the moment a zoo of chemicals became a city you can read.\n\n0:00 A zoo of names\n1:25 First patterns\n2:49 A ruler for atoms\n4:21 Empty chairs\n6:31 The guests arrive\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nUpload file\nSelect from video\nA/B Testing\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for",
+  "finished": "2026-09-11T09:15:49+01:00",
+  "finishDraft": {
+    "ok": true,
+    "mode": "finish_draft",
+    "videoId": "AL_-qlWko_g",
+    "premiere": "Thursday 17 Sep 2026 19:00 Europe/London",
+    "started": "2026-09-11T09:23:30+01:00",
+    "editDraft": "Edit draft",
+    "tags": {
+      "chars": 426,
+      "ok": false,
+      "reason": "no_tags_box"
+    },
+    "audience": {
+      "kids": "err:TimeoutError",
+      "ai": "skip"
+    },
+    "next": "vis_3",
+    "scheduleRadio": "select_date_copy",
+    "when": {
+      "date_picked": "17",
+      "time_focus": {
+        "ok": true,
+        "old": "00:00"
+      },
+      "time_typed": "19:00",
+      "premiere_click": "Set as Premiere"
+    },
+    "confirmClick": "Schedule",
+    "editSnip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n9:01\nYour video\nHow Did We Discover the Periodic Table?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nHow Did We Discover the Periodic Table?\nA/B Testing\nDescription\nHow Did We Discover the Periodic Table?\n\nThe cleverest part was not the names. It was the empty chairs. In 1869 Dmitri Mendeleev left seats for metals nobody had found yet \u2014 then gallium, scandium and germanium sat where he told them to sit.\n\nA 3D cartoon film about chemistry becoming navigation: atomic weight, predicted elements, and the moment a zoo of chemicals became a city you can read.\n\n0:00 A zoo of names\n1:25 First patterns\n2:49 A ruler for atoms\n4:21 Empty chairs\n6:31 The guests arrive\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nUpload file\nSelect from video\nA/B Testing\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, you're legally required to comply with the Children's Online Privacy Protection Act (COPPA) and/or other laws. You're required to tell us whether your videos are 'Made for Kids'. What is 'Made for Kids' content?\nFeatures li",
+    "scheduled": true,
+    "stillDraft": false,
+    "finished": "2026-09-11T09:24:34+01:00"
+  },
+  "premiereConfirmed": {
+    "visibility": "Premiere",
+    "date": "17 Sept 2026",
+    "time": "19:00",
+    "timeZone": "Europe/London",
+    "saved": true,
+    "contentList": "Premiere 17 Sept 2026",
+    "at": "2026-09-11T09:33:55"
+  }
+}
