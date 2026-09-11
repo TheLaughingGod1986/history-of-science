@@ -115,6 +115,150 @@ def dismiss(page) -> None:
         pass
 
 
+def studio_page(ctx):
+    """Prefer an existing Studio tab. Never drive Facebook / Orbit tabs."""
+    for page in ctx.pages:
+        url = page.url or ""
+        if "facebook.com" in url or "instagram.com" in url:
+            continue
+        if "studio.youtube.com" in url:
+            return page
+    return ctx.pages[0] if ctx.pages else ctx.new_page()
+
+
+def click_shadow_text(page, pattern: str) -> str | None:
+    return page.evaluate(
+        """(pattern) => {
+          const re = new RegExp(pattern, 'i');
+          const walk=(r,d=0)=>{
+            if(!r||d>40) return null;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('button,ytcp-button,[role=button],tp-yt-paper-item,yt-formatted-string,div,span')
+              : [])) {
+              const t=((el.innerText||'')+' '+(el.getAttribute('aria-label')||''))
+                .replace(/\\s+/g,' ').trim();
+              if (re.test(t) && t.length<48) {
+                const box=el.getBoundingClientRect();
+                if (box.width>20 && box.height>10) { el.click(); return t.slice(0,60); }
+              }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+              if (el.shadowRoot) {
+                const x=walk(el.shadowRoot, d+1);
+                if (x) return x;
+              }
+            }
+            return null;
+          };
+          return walk(document);
+        }""",
+        pattern,
+    )
+
+
+def file_input_count(page) -> int:
+    return int(
+        page.evaluate(
+            """() => {
+              let n=0;
+              const walk=(r,d=0)=>{
+                if(!r||d>40) return;
+                n += (r.querySelectorAll ? r.querySelectorAll('input[type=file]').length : 0);
+                for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+                  if (el.shadowRoot) walk(el.shadowRoot, d+1);
+              };
+              walk(document); return n;
+            }"""
+        )
+        or 0
+    )
+
+
+def open_upload(page) -> dict:
+    """Create → Upload videos, then wait for the file input."""
+    info: dict = {}
+    page.goto(
+        f"https://studio.youtube.com/channel/{CHANNEL}/videos/upload",
+        wait_until="domcontentloaded",
+        timeout=120000,
+    )
+    page.wait_for_timeout(2800)
+    dismiss(page)
+    if file_input_count(page):
+        info["via"] = "upload_url"
+        return info
+    clicked = click_shadow_text(page, r"^Create$")
+    info["create"] = clicked
+    page.wait_for_timeout(800)
+    up = click_shadow_text(page, r"^Upload videos?$")
+    info["uploadVideos"] = up
+    page.wait_for_timeout(2000)
+    dismiss(page)
+    if not file_input_count(page):
+        page.goto(
+            f"https://studio.youtube.com/channel/{CHANNEL}/videos/upload?d=ud",
+            wait_until="domcontentloaded",
+            timeout=120000,
+        )
+        page.wait_for_timeout(2500)
+        dismiss(page)
+        if not file_input_count(page):
+            click_shadow_text(page, r"^Create$")
+            page.wait_for_timeout(700)
+            click_shadow_text(page, r"^Upload videos?$")
+            page.wait_for_timeout(2000)
+    info["fileInputs"] = file_input_count(page)
+    return info
+
+
+def pick_video_file(page, path: Path) -> dict:
+    """Attach the cut. CDP rejects files >50MB, so large cuts use the OS Open dialog."""
+    info: dict = {"path": str(path), "bytes": path.stat().st_size}
+    loc = page.locator('input[type="file"]')
+    if loc.count() and path.stat().st_size <= 50 * 1024 * 1024:
+        try:
+            loc.first.set_input_files(str(path))
+            info["ok"] = True
+            info["via"] = f"locator_{loc.count()}"
+            return info
+        except Exception as e:
+            info["locator_err"] = f"{type(e).__name__}:{e}"
+    info["os_dialog"] = os_open_dialog(page, path)
+    info["ok"] = bool(info["os_dialog"].get("ok"))
+    info["via"] = "os_open_dialog"
+    return info
+
+
+def os_open_dialog(page, path: Path) -> dict:
+    info: dict = {}
+    click_shadow_text(page, r"^Select files?$")
+    page.wait_for_timeout(1800)
+    posix = str(path)
+    script = f'''
+    tell application "System Events"
+      delay 0.8
+      keystroke "g" using {{command down, shift down}}
+      delay 0.7
+      keystroke "{posix}"
+      delay 0.4
+      keystroke return
+      delay 0.7
+      keystroke return
+    end tell
+    '''
+    proc = subprocess.run(
+        ["osascript", "-e", script],
+        capture_output=True,
+        text=True,
+        timeout=30,
+    )
+    info["returncode"] = proc.returncode
+    info["stderr"] = (proc.stderr or "")[:400]
+    page.wait_for_timeout(4000)
+    info["ok"] = proc.returncode == 0
+    return info
+
+
 def chrome_up() -> bool:
     try:
         urllib.request.urlopen(f"{CDP}/json/version", timeout=2).read()
@@ -133,6 +277,24 @@ def kill_port_chrome() -> None:
             log(f"kill_pid={pid}")
             subprocess.call(["kill", pid])
     time.sleep(1.5)
+    try:
+        out2 = subprocess.check_output(["lsof", "-ti", f":{PORT}"], text=True).strip()
+    except subprocess.CalledProcessError:
+        return
+    for pid in out2.split():
+        if pid.isdigit():
+            log(f"kill_9_pid={pid}")
+            subprocess.call(["kill", "-9", pid])
+    time.sleep(1)
+
+
+def clear_profile_locks() -> None:
+    p = Path(PROFILE)
+    for name in ("SingletonLock", "SingletonSocket", "SingletonCookie", "DevToolsActivePort"):
+        try:
+            (p / name).unlink()
+        except FileNotFoundError:
+            pass
 
 
 def ensure_chrome() -> None:
@@ -140,12 +302,7 @@ def ensure_chrome() -> None:
         log("chrome_already_up")
         return
     kill_port_chrome()
-    p = Path(PROFILE)
-    for name in ("SingletonLock", "SingletonSocket", "SingletonCookie", "DevToolsActivePort"):
-        try:
-            (p / name).unlink()
-        except FileNotFoundError:
-            pass
+    clear_profile_locks()
     log("starting_chrome")
     subprocess.Popen(
         [
@@ -623,7 +780,7 @@ def main() -> int:
     with sync_playwright() as p:
         browser = p.chromium.connect_over_cdp(CDP, timeout=60000)
         ctx = browser.contexts[0]
-        page = ctx.pages[0] if ctx.pages else ctx.new_page()
+        page = studio_page(ctx)
         hos = ensure_hos(page)
         result["hos"] = hos
         shot(page, "00_hos_dashboard.png")
@@ -638,13 +795,7 @@ def main() -> int:
             log("ABORT already listed — do not mint a second id")
             return 3
 
-        page.goto(
-            f"https://studio.youtube.com/channel/{CHANNEL}/videos/upload?d=ud",
-            wait_until="domcontentloaded",
-            timeout=120000,
-        )
-        page.wait_for_timeout(2800)
-        dismiss(page)
+        result["openUpload"] = open_upload(page)
         shot(page, "01_upload_dialog.png")
         if is_glue(page):
             result["error"] = "GLUE"
@@ -652,17 +803,12 @@ def main() -> int:
             dump("RESULT.json", result)
             return 2
 
-        inputs = page.locator('input[type="file"]')
-        if inputs.count():
-            inputs.first.set_input_files(str(VIDEO))
-            result["filePick"] = "input"
-        else:
-            with page.expect_file_chooser(timeout=25000) as fc:
-                page.get_by_role("button", name=re.compile(r"Select files", re.I)).click(
-                    force=True
-                )
-            fc.value.set_files(str(VIDEO))
-            result["filePick"] = "chooser"
+        picked = pick_video_file(page, VIDEO)
+        result["filePick"] = picked
+        if not picked.get("ok"):
+            result["error"] = "NO_FILE_PICKER"
+            dump("RESULT.json", result)
+            return 2
 
         result["details"] = fill_title_desc(page)
         shot(page, "02_details_title.png")
