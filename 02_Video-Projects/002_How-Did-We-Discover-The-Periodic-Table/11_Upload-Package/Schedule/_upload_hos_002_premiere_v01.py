@@ -107,10 +107,15 @@ def dismiss(page) -> None:
         try:
             b = page.get_by_role("button", name=re.compile(rf"^{name}$", re.I))
             if b.count() and b.first.is_visible():
+                label = (b.first.inner_text() or "").strip()
+                if name.lower() == "close" and page.locator("ytcp-uploads-dialog").count():
+                    continue
                 b.first.click(timeout=500, force=True)
         except Exception:
             pass
     try:
+        if page.locator("ytcp-uploads-dialog").count():
+            return
         page.keyboard.press("Escape")
     except Exception:
         pass
@@ -622,8 +627,13 @@ def next_until_visibility(page) -> str:
         if on_vis:
             return f"vis_{i}"
         nxt = page.get_by_role("button", name=re.compile(r"^Next$", re.I))
+        clicked = False
         if nxt.count() and nxt.first.is_enabled():
             nxt.first.click(force=True)
+            clicked = True
+        if not clicked:
+            clicked = bool(click_shadow_text(page, r"^Next$"))
+        if clicked:
             page.wait_for_timeout(1600)
         else:
             page.wait_for_timeout(800)
