@@ -246,31 +246,60 @@ def pick_video_file(page, path: Path) -> dict:
     return info
 
 
+def disable_file_chooser_intercept(page) -> str:
+    """Let Chrome show the real macOS Open dialog (Playwright's 50MB CDP cap)."""
+    try:
+        session = page.context.new_cdp_session(page)
+        session.send("Page.setInterceptFileChooserDialog", {"enabled": False})
+        return "off"
+    except Exception as e:
+        return f"err:{type(e).__name__}:{e}"
+
+
+def os_dialog_windows() -> list[str]:
+    script = '''
+tell application "System Events"
+  tell process "Google Chrome"
+    return name of windows
+  end tell
+end tell
+'''
+    proc = subprocess.run(["osascript", "-e", script], capture_output=True, text=True, timeout=10)
+    names = [n.strip() for n in (proc.stdout or "").split(",") if n.strip()]
+    return names
+
+
 def os_open_dialog(page, path: Path) -> dict:
     """Drive the native macOS Open dialog. CDP cannot attach >50MB."""
-    info: dict = {}
+    info: dict = {"intercept": disable_file_chooser_intercept(page)}
     try:
         page.bring_to_front()
     except Exception:
         pass
     click_shadow_text(page, r"^Select files?$")
-    page.wait_for_timeout(2000)
+    page.wait_for_timeout(1200)
+    info["windows_after_click"] = os_dialog_windows()
     posix = str(path)
     subprocess.run(["pbcopy"], input=posix.encode(), check=True)
     script = '''
 tell application "Google Chrome" to activate
-delay 0.5
+delay 0.4
 tell application "System Events"
   tell process "Google Chrome"
     set frontmost to true
   end tell
-  delay 0.5
+  delay 0.4
+  repeat 12 times
+    set wn to name of windows of process "Google Chrome"
+    if (wn as text) contains "Open" then exit repeat
+    delay 0.25
+  end repeat
   keystroke "g" using {command down, shift down}
   delay 0.8
   keystroke "v" using {command down}
   delay 0.5
   keystroke return
-  delay 0.9
+  delay 1.0
   keystroke return
 end tell
 '''
@@ -278,13 +307,19 @@ end tell
         ["osascript", "-e", script],
         capture_output=True,
         text=True,
-        timeout=30,
+        timeout=40,
     )
     info["returncode"] = proc.returncode
     info["stderr"] = (proc.stderr or "")[:400]
     info["stdout"] = (proc.stdout or "")[:200]
-    page.wait_for_timeout(5000)
-    info["ok"] = proc.returncode == 0
+    info["windows_after_keys"] = os_dialog_windows()
+    page.wait_for_timeout(4000)
+    after = dlg_text(page, 800)
+    info["after"] = after[:500]
+    still_picker = bool(re.search(r"Select files", after, re.I)) and not re.search(
+        r"Details|Title|Uploading", after, re.I
+    )
+    info["ok"] = proc.returncode == 0 and not still_picker
     return info
 
 
