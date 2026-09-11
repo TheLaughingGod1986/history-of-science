@@ -5,6 +5,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import re
+import sys
 import traceback
 from datetime import datetime
 from pathlib import Path
@@ -23,7 +24,11 @@ u.EV = EV
 KNOWN = {
     "s01_empty_chairs": "uU12JA5rMWg",
     "s02_predict_metal": "nFQRWmpulTQ",
+    "s03_gallium": "CnHwX1L9XHg",
+    "s04_tellurium": "nba0-f7PPeU",
+    "s05_other_table": "LanTHJckYx8",
 }
+REMAINING = {"s02_predict_metal", "s03_gallium", "s05_other_table"}
 
 
 def log(msg: str) -> None:
@@ -230,8 +235,17 @@ def finish_one(page, job: dict, video_id: str) -> dict:
     assert_studio(page)
     shot(page, f"{slot}_f01_edit.png")
     item["draft"] = click_edit_draft(page)
-    page.wait_for_timeout(1500)
-    u.dismiss(page)
+    try:
+        page.locator("ytcp-uploads-dialog").first.wait_for(timeout=12000)
+        item["wizard"] = True
+    except Exception:
+        item["draft"] = click_edit_draft(page)
+        try:
+            page.locator("ytcp-uploads-dialog").first.wait_for(timeout=8000)
+            item["wizard"] = True
+        except Exception:
+            item["wizard"] = False
+    page.wait_for_timeout(800)
     item["kids"] = u.set_not_kids(page)
     item["thumb"] = u.set_image(page, cover)
     save = page.get_by_role("button", name=re.compile(r"^Save$", re.I))
@@ -306,9 +320,10 @@ def main() -> int:
         found = list_short_ids(page)
         result["listed"] = found
         log(f"listed {found}")
+        jobs = [j for j in u.JOBS if j["slot"] in REMAINING] if "--remaining" in sys.argv else u.JOBS
         skip = {u.LONG_ID, "_C92tIJCk8A", *KNOWN.values(), *GERMS_IDS}
         body = u.snip(page, 4000)
-        for job in u.JOBS:
+        for job in jobs:
             vid = KNOWN.get(job["slot"]) or found.get(job["slot"])
             if not vid:
                 if job["title"] not in body and job["title"] not in u.snip(page, 4000):
@@ -357,12 +372,7 @@ def main() -> int:
         u.dismiss(page)
         shot(page, "99_shorts_after.png")
         result["contentSnip"] = u.snip(page, 2200)
-        page.goto(
-            f"https://studio.youtube.com/video/{u.LONG_ID}/edit",
-            wait_until="domcontentloaded",
-            timeout=120000,
-        )
-        page.wait_for_timeout(2500)
+        result["longThumb"] = u.apply_long_thumb(page)
         shot(page, "99_long_thumb.png")
         result["longSnip"] = u.snip(page, 500)
     result["ok"] = all(s.get("ok") for s in result["shorts"]) and len(result["shorts"]) == 5

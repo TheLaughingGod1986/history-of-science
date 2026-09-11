@@ -298,7 +298,7 @@ def fill_title_desc(page, title: str, desc: str) -> dict:
 
 def set_not_kids(page) -> str:
     try:
-        page.get_by_text(re.compile(r"No, it.?s not.?Made for Kids", re.I)).click(force=True)
+        page.get_by_text(re.compile(r"No, it.?s not.?['\"]?Made for Kids", re.I)).click(force=True)
         return "no"
     except Exception as e:
         t = dlg_text(page, 1500)
@@ -342,6 +342,8 @@ def set_image(page, path: Path) -> dict:
     for i in range(loc.count()):
         try:
             acc = (loc.nth(i).get_attribute("accept") or "").lower()
+            if "video" in acc and "image" not in acc:
+                continue
             if "image" in acc or "jpeg" in acc or "jpg" in acc or "png" in acc:
                 loc.nth(i).set_input_files(str(path))
                 info["ok"] = True
