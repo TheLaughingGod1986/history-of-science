@@ -784,7 +784,7 @@ def fill_premiere_when(page) -> dict:
               : [])) {
               const t=((el.innerText||'')+' '+(el.getAttribute('aria-label')||''))
                 .replace(/\\s+/g,' ').trim();
-              if (/^Premiere|^Premieres/i.test(t) && t.length<40) {
+              if (/Premiere/i.test(t) && !/instant/i.test(t) && t.length<40) {
                 el.click(); return t.slice(0,50);
               }
             }
@@ -1029,6 +1029,38 @@ def main() -> int:
     return 0 if result.get("ok") else 1
 
 
+def tick_set_as_premiere(page) -> str:
+    """Tick Schedule → Set as Premiere. Never Public → instant Premiere."""
+    hit = page.evaluate(
+        """() => {
+          const walk=(r,d=0)=>{
+            if(!r||d>40) return null;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('[role=checkbox],tp-yt-paper-checkbox,ytcp-checkbox-lit,ytcp-checkbox')
+              : [])) {
+              const t=((el.innerText||'')+' '+(el.getAttribute('aria-label')||''))
+                .replace(/\\s+/g,' ').trim();
+              if (/Set as Premiere/i.test(t) && !/instant/i.test(t)) {
+                const on = el.getAttribute('aria-checked')==='true' || el.checked === true;
+                if (!on) el.click();
+                return (on ? 'already:' : 'ticked:') + t.slice(0,40);
+              }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+              if (el.shadowRoot) {
+                const x=walk(el.shadowRoot, d+1);
+                if (x) return x;
+              }
+            }
+            return null;
+          };
+          return walk(document.querySelector('ytcp-uploads-dialog') || document);
+        }"""
+    )
+    page.wait_for_timeout(600)
+    return hit or ""
+
+
 def finish_existing(video_id: str) -> int:
     """Schedule Premiere on an already-uploaded HOS 002 draft. Do not mint a second id."""
     EV.mkdir(parents=True, exist_ok=True)
@@ -1081,6 +1113,8 @@ def finish_existing(video_id: str) -> int:
         ):
             result["confirmClick"] = "skipped_no_when"
         else:
+            result["premiereBox"] = tick_set_as_premiere(page)
+            shot(page, "14b_premiere_ticked.png")
             result["confirmClick"] = click_schedule_or_done(page)
         page.wait_for_timeout(5000)
         dismiss(page)
@@ -1121,13 +1155,81 @@ def finish_existing(video_id: str) -> int:
     return 0 if result.get("ok") else 1
 
 
+def premiere_tick_existing(video_id: str) -> int:
+    """Turn on Set as Premiere for an already-scheduled listing."""
+    EV.mkdir(parents=True, exist_ok=True)
+    result: dict = {
+        "ok": False,
+        "mode": "premiere_tick",
+        "videoId": video_id,
+        "started": datetime.now(tz=LONDON).isoformat(timespec="seconds"),
+    }
+    ensure_chrome()
+    with sync_playwright() as p:
+        browser = p.chromium.connect_over_cdp(CDP, timeout=60000)
+        ctx = browser.contexts[0]
+        page = studio_page(ctx)
+        try:
+            page.bring_to_front()
+        except Exception:
+            pass
+        page.goto(
+            f"https://studio.youtube.com/video/{video_id}/edit",
+            wait_until="domcontentloaded",
+            timeout=120000,
+        )
+        page.wait_for_timeout(3000)
+        dismiss(page)
+        shot(page, "20_before_premiere_tick.png")
+        vis = page.get_by_text(re.compile(r"^Scheduled$", re.I))
+        if vis.count():
+            vis.first.click(force=True)
+            page.wait_for_timeout(1200)
+            result["clickedScheduled"] = True
+        else:
+            click_shadow_text(page, r"^Scheduled$")
+            page.wait_for_timeout(1000)
+            result["clickedScheduled"] = "shadow"
+        shot(page, "21_visibility_popover.png")
+        result["premiereBox"] = tick_set_as_premiere(page)
+        if not result["premiereBox"]:
+            try:
+                page.get_by_text("Set as Premiere", exact=False).first.click(
+                    force=True, timeout=4000
+                )
+                result["premiereBox"] = "text_click"
+            except Exception as e:
+                result["premiereBox"] = f"err:{type(e).__name__}"
+        shot(page, "22_premiere_ticked.png")
+        result["save"] = click_schedule_or_done(page)
+        if not result["save"]:
+            try:
+                page.get_by_role(
+                    "button", name=re.compile(r"^(Save|Done|Schedule)$", re.I)
+                ).last.click(force=True, timeout=4000)
+                result["save"] = "role"
+            except Exception:
+                result["save"] = click_shadow_text(page, r"^(Save|Done|Schedule)$")
+        page.wait_for_timeout(3500)
+        shot(page, "23_after_premiere_tick.png")
+        body = snip(page, 2000)
+        result["snip"] = body[:800]
+        result["ok"] = bool(re.search(r"Premiere", body, re.I) or result.get("premiereBox"))
+    result["finished"] = datetime.now(tz=LONDON).isoformat(timespec="seconds")
+    dump("PREMIERE_TICK.json", result)
+    log(f"premiere_tick {video_id} {json.dumps(result)[:800]}")
+    print(json.dumps(result, indent=2)[:3000])
+    return 0 if result.get("ok") else 1
+
+
 if __name__ == "__main__":
     try:
+        vid = "AL_-qlWko_g"
+        if "--id" in sys.argv:
+            vid = sys.argv[sys.argv.index("--id") + 1]
+        if "--premiere-tick" in sys.argv:
+            raise SystemExit(premiere_tick_existing(vid))
         if "--finish" in sys.argv:
-            vid = "AL_-qlWko_g"
-            if "--id" in sys.argv:
-                i = sys.argv.index("--id")
-                vid = sys.argv[i + 1]
             raise SystemExit(finish_existing(vid))
         raise SystemExit(main())
     except Exception:
