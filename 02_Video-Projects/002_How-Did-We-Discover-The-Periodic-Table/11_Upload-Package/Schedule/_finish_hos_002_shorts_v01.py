@@ -72,28 +72,44 @@ def dedicated_studio(ctx):
     return page
 
 
+GERMS_IDS = {
+    "H1y0DXFVmw8", "iqToagXnjX0", "8_Edn_HCi1s", "sILtQxgYQk8", "93fPUG-hW0A",
+    "8uBR-9oxeWs", "YX2UR1u-JCQ", "Fnb3p81u-wY", "vpuRgKXtFlY", "Lcmh5y2KMQM",
+}
+
+
 def list_short_ids(page) -> dict[str, str]:
-    hrefs = page.evaluate(
-        """() => [...document.querySelectorAll('a[href]')].map(a => ({
-          href: a.getAttribute('href')||'',
-          t: (a.innerText||'').replace(/\\s+/g,' ').trim().slice(0,80)
-        }))"""
+    rows = page.evaluate(
+        """() => {
+          const out=[];
+          const walk=(r,d=0)=>{
+            if(!r||d>45) return;
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('a[href]') : [])) {
+              const href=el.getAttribute('href')||'';
+              const t=(el.innerText||'').replace(/\\s+/g,' ').trim();
+              const m=href.match(/\\/video\\/([A-Za-z0-9_-]{11})/)
+                || href.match(/\\/shorts\\/([A-Za-z0-9_-]{11})/);
+              if (m) out.push({id:m[1], t:t.slice(0,140), href});
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+              if (el.shadowRoot) walk(el.shadowRoot, d+1);
+            }
+          };
+          walk(document);
+          return out;
+        }"""
     ) or []
+    (EV / "listed_rows.json").write_text(json.dumps(rows, indent=2) + "\n")
     found: dict[str, str] = {}
-    blob = []
-    for row in hrefs:
-        href = row.get("href") or ""
-        t = row.get("t") or ""
-        blob.append(f"{t} {href}")
-        m = re.search(r"/video/([A-Za-z0-9_-]{11})", href)
-        if not m:
-            m = re.search(r"/shorts/([A-Za-z0-9_-]{11})", href)
-        if not m:
+    for row in rows:
+        vid = row.get("id") or ""
+        t = (row.get("t") or "").strip()
+        if not vid or vid in GERMS_IDS or vid in {u.LONG_ID, "_C92tIJCk8A"}:
             continue
-        vid = m.group(1)
+        tlow = t.lower()
         for job in u.JOBS:
-            if job["title"].lower() in t.lower() or t.lower() in job["title"].lower():
-                found[job["slot"]] = vid
+            if job["title"].lower() in tlow:
+                found.setdefault(job["slot"], vid)
     return found
 
 
