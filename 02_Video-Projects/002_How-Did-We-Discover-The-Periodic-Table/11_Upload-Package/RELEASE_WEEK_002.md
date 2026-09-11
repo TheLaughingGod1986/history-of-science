@@ -53,3 +53,18 @@ Five punch Shorts are **Scheduled** at 11:30 Europe/London (never Public on fini
 | s05 | Tue 22 Sep 11:30 | What other table has empty chairs? | `LanTHJckYx8` |
 
 One extra s02 draft (duplicate file) is left as **Draft** and is not scheduled.
+
+## Status 11 Sep 2026 11:16 London — live_v02 covers on the Content list
+
+Phone Studio still showed **film-frame** covers on s03, s04, and a cropped long row. Desktop Content list is the proof surface. Re-applied every `live_v02` still with click **Upload file** → image input (skip video-only) → **Save**. Helper: `Schedule/_force_hos_002_thumbs_live_v02.py`.
+
+| Row | id | Cover on Content list |
+|---|---|---|
+| s01 | `uU12JA5rMWg` | THE EMPTY WERE THE CHAIRS |
+| s02 | `nFQRWmpulTQ` | HE PREDICTED A METAL |
+| s03 | `CnHwX1L9XHg` | GALLIUM IN THE GAP |
+| s04 | `nba0-f7PPeU` | TELLURIUM BEFORE IODINE |
+| s05 | `LanTHJckYx8` | WHAT OTHER TABLE HAS GAPS? |
+| long | `AL_-qlWko_g` | gallium live_v02 + PREMIERE |
+
+The leftover s02 **Draft** still uses a film frame — leave it unpublished. Phone app may cache old stills; pull-to-refresh Content → Scheduled. Do not click Public.
