@@ -641,6 +641,15 @@ def next_until_visibility(page) -> str:
 
 
 def click_schedule_radio(page) -> str:
+    """Open the Schedule date dropdown. Do not pick Public + instant Premiere."""
+    try:
+        loc = page.get_by_text("Select a date to make your video public", exact=False)
+        if loc.count():
+            loc.first.click(force=True, timeout=4000)
+            page.wait_for_timeout(1000)
+            return "select_date_copy"
+    except Exception:
+        pass
     try:
         radio = page.get_by_role("radio", name=re.compile(r"^Schedule$", re.I))
         if radio.count():
@@ -654,13 +663,14 @@ def click_schedule_radio(page) -> str:
           const walk=(r,d=0)=>{
             if(!r||d>30) return null;
             for (const el of (r.querySelectorAll
-              ? r.querySelectorAll('[role=radio],tp-yt-paper-radio-button,ytcp-radio,div,span')
+              ? r.querySelectorAll('[role=radio],tp-yt-paper-radio-button,ytcp-dropdown-trigger,ytcp-text-dropdown-trigger,div,span')
               : [])) {
               const t=((el.innerText||'')+' '+(el.getAttribute('aria-label')||''))
                 .replace(/\\s+/g,' ').trim();
-              if (/^Schedule$/i.test(t) || /^Schedule\\b/i.test(t) && t.length<24) {
+              if (/Select a date to make your video public/i.test(t)
+                  || (/^Schedule$/i.test(t) && t.length<24)) {
                 const box=el.getBoundingClientRect();
-                if (box.width>20) { el.click(); return t.slice(0,40); }
+                if (box.width>20) { el.click(); return t.slice(0,80); }
               }
             }
             for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
@@ -1064,7 +1074,14 @@ def finish_existing(video_id: str) -> int:
         page.wait_for_timeout(900)
         result["when"] = fill_premiere_when(page)
         shot(page, "14_premiere_when.png")
-        result["confirmClick"] = click_schedule_or_done(page)
+        if not (
+            result["when"].get("date_typed")
+            or result["when"].get("date_picked")
+            or result["when"].get("time_typed")
+        ):
+            result["confirmClick"] = "skipped_no_when"
+        else:
+            result["confirmClick"] = click_schedule_or_done(page)
         page.wait_for_timeout(5000)
         dismiss(page)
         shot(page, "15_after_schedule.png")
