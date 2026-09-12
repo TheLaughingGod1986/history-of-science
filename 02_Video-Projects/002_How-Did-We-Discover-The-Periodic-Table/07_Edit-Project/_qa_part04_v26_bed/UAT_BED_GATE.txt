@@ -1,0 +1,52 @@
+===== v25 last 20s (t107.76) =====
+[Parsed_volumedetect_1 @ 0x784c0a400] mean_volume: -28.8 dB
+[Parsed_volumedetect_1 @ 0x784c0a400] max_volume: -8.9 dB
+
+===== v26 last 20s (t107.76) =====
+[Parsed_volumedetect_1 @ 0xa5d061d40] mean_volume: -28.9 dB
+[Parsed_volumedetect_1 @ 0xa5d061d40] max_volume: -8.9 dB
+
+===== v26 mid baseline (t60-80) =====
+[Parsed_volumedetect_1 @ 0xca5041d40] mean_volume: -28.3 dB
+[Parsed_volumedetect_1 @ 0xca5041d40] max_volume: -9.9 dB
+
+===== bed-band (80-400Hz) last 20 vs mid =====
+last20: [Parsed_volumedetect_2 @ 0xb6cc6db00] mean_volume: -31.6 dB
+[Parsed_volumedetect_2 @ 0xb6cc6db00] max_volume: -14.8 dB
+mid20:  [Parsed_volumedetect_2 @ 0x93f041e00] mean_volume: -31.3 dB
+[Parsed_volumedetect_2 @ 0x93f041e00] max_volume: -14.8 dB
+
+===== iCloud identity =====
+ba79974bcf6c1777721185a3a13950bd21dae44deb0e1320dd01ea5a7e602070  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part04_rough_v26.mp4
+ba79974bcf6c1777721185a3a13950bd21dae44deb0e1320dd01ea5a7e602070  /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v26.mp4
+bytes local=85071442 icloud=85071442
+duration=127.760000
+
+===== per-second RMS last 25s (fail if mean<-45dB for >1s) =====
+t= 102.76 rms_db= -29.89
+t= 103.76 rms_db= -28.04
+t= 104.76 rms_db= -27.83
+t= 105.76 rms_db= -32.11
+t= 106.76 rms_db= -29.05
+t= 107.76 rms_db= -33.78
+t= 108.76 rms_db= -26.76
+t= 109.76 rms_db= -28.94
+t= 110.76 rms_db= -29.73
+t= 111.76 rms_db= -30.11
+t= 112.76 rms_db= -28.76
+t= 113.76 rms_db= -30.10
+t= 114.76 rms_db= -29.61
+t= 115.76 rms_db= -30.20
+t= 116.76 rms_db= -32.93
+t= 117.76 rms_db= -30.60
+t= 118.76 rms_db= -34.85
+t= 119.76 rms_db= -26.76
+t= 120.76 rms_db= -28.69
+t= 121.76 rms_db= -25.68
+t= 122.76 rms_db= -30.50
+t= 123.76 rms_db= -33.31
+t= 124.76 rms_db= -29.26
+t= 125.76 rms_db= -30.35
+t= 126.76 rms_db= -28.78
+FAIL_WINDOWS=0
+GATE=PASS
