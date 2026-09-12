@@ -1,49 +1,23 @@
 # Part 04 status — Empty Chairs
 
-**Updated:** 8 Sep 2026 Europe/London (rough v06 LANDED desk-only → CoS scores)
+**Updated:** 12 Sep 2026
 
 | Cut | Status |
 |---|---|
-| P01 v14 | LOCKED — do not touch |
-| P02 v06 | LOCKED — do not touch |
-| P03 v09 | LOCKED (sha 30060612…) — do not touch |
-| P04 | **ROUGH LANDED** `hos_002_part04_rough_v06.mp4` — scores → CoS |
-| P05 | Blocked until P04 KEEP/LOCK |
+| P01–P03 | LOCKED |
+| P04 v25 | PASS_LOCKED picture sha `e78027c0c58abe9284f7b85de693a08caabd3ad8ee45b64624eadd0329942bb1` (127.760s) |
+| P04 v26 | **BED-ONLY remaster LANDED** — scores → CoS |
+| P05 v02 | BED-ONLY remaster landed separately — do not touch |
+| P06 | Not until Ben asks |
 
-## Land (v04)
+## v26 bed remaster (no picture remint)
 
-- path: `09_Final-Export/hos_002_part04_rough_v04.mp4`
-- bytes: **76318531**
-- duration: **127.760 s**
-- sha256: `fda60b04bd3785b1f01b61c5c76b786a841d21152df29ed398ce5b5e4490554d`
-- reminted: `02b_cards_sixty_three`, `09_risk_bet`, `09b_risk_hold` (house silhouettes ×2)
-- Flow: `benoats@googlemail.com`
-- HOS UAT copy + `WATCH_part04_v04.txt`
-- CoS sheet: `PART04_V04_COS_SCORES.md`
-- Parent v03: sha `79dd7650cb582b548ae4c1c0aa98e4938ff8ec90ba654dea9c0b5c5574ee62e8`
+- File: `09_Final-Export/hos_002_part04_rough_v26.mp4`
+- sha256: `ba79974bcf6c1777721185a3a13950bd21dae44deb0e1320dd01ea5a7e602070`
+- duration: **127.760s** · bytes: **85071442**
+- iCloud: `HOS UAT/hos_002_part04_rough_v26.mp4` (identical bytes) + `WATCH_part04_v26.txt`
+- Bed: `05_Music/hos_002_part01_curious_workshop_v02_loop130_norm.wav` (135.000s) · `BED_VOL=0.38`
+- Picture: H264 bitstream **identical** to v25 (video copy). No Explorer/plate remint.
+- UAT gate: last 20s silence/volume — continuous bed (0 windows < −45 dB); bed-band last20 ≈ mid (−31.6 vs −31.3 dB).
 
-## Notes
-
-- UAT FAIL v03: (A) ~18–21 brown house silhouettes on books; (B) ~91–97 model-town through A BET window.
-- Cleared via fixed-rect leather + hard sky fills on continuous Veo beds (Create OK; Download JPEG-only). Soft whole-cut also sky-fills 02b window.
-- KEEP: ~38–44 sky · Explorer teal · Empty Chairs · glowing chair.
-- Do **not** declare PASS. No P05 until KEEP/LOCK. Do not ping Ben.
-
-## v05 (2026-09-08)
-- Cut: `hos_002_part04_rough_v05.mp4`
-- sha256: `a7c9741c32f9689c019d5c8695b36a8e8d2bbbebfb19b93ee53b6d584b8a43fc`
-- bytes: 76043650 · duration 127.760s
-- Method: Veo 3.1 Fast T2V of 02b only — **no hard fill**
-- Flow: benoats@googlemail.com
-- Scores → CoS only. Do not declare PASS.
-- **UAT FAIL:** ~18–21s 02b in-camera peaked roofs + chimneys (brown scrub CLEARED KEEP).
-
-## v06 (2026-09-08) — LANDED (desk-only 02b)
-- Cut: `hos_002_part04_rough_v06.mp4`
-- sha256: `5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2`
-- bytes: 76818977 · duration 127.760s
-- Method: Veo 3.1 Fast T2V of 02b only — **DESK-ONLY** (no window) — **no hard fill**
-- Flow: benoats@googlemail.com
-- Tries: Create 1 ACCEPT; Creates 2–3 crash-resubmits REJECT (window edge)
-- Scores → CoS only. Do not declare PASS. Do not ping Ben.
-- CoS sheet: `PART04_V06_COS_SCORES.md` · Sheet: `PART04_V06_DESK_ONLY_02B.md`
+No Ben ping. Scores → CoS.
