@@ -1,0 +1,12 @@
+WATCH THIS FILE ONLY (Part 05 rough v02 — BED-ONLY remaster):
+  hos_002_part05_rough_v02.mp4
+
+Picture = KEEP v01 (video bitstream copy). No Flow / plate / Explorer remint.
+parent_sha=8dcb06b596318a7283210928fbb0e78f6f89c7db5d200b8edeefbaa9b5522ec4
+sha256=0ff86743ceb49f388327cccb12b636e70d57d7c008ed457cf3da7912f8810ccb
+bytes=104234592
+duration=147.310
+bed=hos_002_part01_curious_workshop_v02_loop150_norm.wav (≥148s) BED_VOL=0.38
+UAT gate: bed continuous through last ~20s / end card; VO clear.
+Scores → CoS. Do not ping Ben unless CoS asks for watch.
+P04 stays LOCKED — do not touch.
