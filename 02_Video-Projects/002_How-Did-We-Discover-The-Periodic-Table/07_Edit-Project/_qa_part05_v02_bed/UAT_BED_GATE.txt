@@ -1,0 +1,98 @@
+===== v01 last 20s =====
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part05_rough_v01.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.101
+  Duration: 00:02:27.31, start: 0.000000, bitrate: 5656 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High 4:4:4 Predictive) (avc1 / 0x31637661), yuv444p(progressive), 1920x1080, 5460 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 191 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+[Parsed_volumedetect_1 @ 0x77cc6d500] n_samples: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.101
+  Stream #0:0(und): Video: wrapped_avframe, yuv444p(progressive), 1920x1080, q=2-31, 200 kb/s, 24 fps, 24 tbn (default)
+    Metadata:
+      encoder         : Lavc63.1.101 wrapped_avframe
+      handler_name    : VideoHandler
+  Stream #0:1(und): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.101 pcm_s16le
+      handler_name    : SoundHandler
+[Parsed_silencedetect_0 @ 0x77cc6dc80] silence_start: 8.971667
+[Parsed_silencedetect_0 @ 0x77cc6dc80] silence_end: 9.658375 | silence_duration: 0.686708
+frame=  302 fps=0.0 q=-0.0 size=N/A time=00:00:12.76 bitrate=N/A speed=25.3x elapsed=0:00:00.50    
+[Parsed_silencedetect_0 @ 0x77cc6dc80] silence_start: 13.915812
+[Parsed_silencedetect_0 @ 0x77cc6dc80] silence_end: 14.540042 | silence_duration: 0.624229
+[Parsed_silencedetect_0 @ 0x77cc6dc80] silence_start: 16.85
+[Parsed_silencedetect_0 @ 0x77cc6dc80] silence_end: 20 | silence_duration: 3.15
+[Parsed_volumedetect_1 @ 0x77cc6dd40] n_samples: 1920000
+[Parsed_volumedetect_1 @ 0x77cc6dd40] mean_volume: -26.2 dB
+[Parsed_volumedetect_1 @ 0x77cc6dd40] max_volume: -4.6 dB
+[Parsed_volumedetect_1 @ 0x77cc6dd40] histogram_4db: 38
+[Parsed_volumedetect_1 @ 0x77cc6dd40] histogram_5db: 304
+[Parsed_volumedetect_1 @ 0x77cc6dd40] histogram_6db: 246
+[Parsed_volumedetect_1 @ 0x77cc6dd40] histogram_7db: 556
+[Parsed_volumedetect_1 @ 0x77cc6dd40] histogram_8db: 766
+[Parsed_volumedetect_1 @ 0x77cc6dd40] histogram_9db: 1101
+[out#0/null @ 0x77cc6c300] video:198KiB audio:3750KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  479 fps=0.0 q=-0.0 Lsize=N/A time=00:00:20.00 bitrate=N/A speed=32.2x elapsed=0:00:00.62    
+
+===== v02 last 20s =====
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part05_rough_v02.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.101
+  Duration: 00:02:27.31, start: 0.000000, bitrate: 5660 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High 4:4:4 Predictive) (avc1 / 0x31637661), yuv444p(progressive), 1920x1080, 5460 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 195 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+[Parsed_volumedetect_1 @ 0x85cc09bc0] n_samples: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.101
+  Stream #0:0(und): Video: wrapped_avframe, yuv444p(progressive), 1920x1080, q=2-31, 200 kb/s, 24 fps, 24 tbn (default)
+    Metadata:
+      encoder         : Lavc63.1.101 wrapped_avframe
+      handler_name    : VideoHandler
+  Stream #0:1(und): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.101 pcm_s16le
+      handler_name    : SoundHandler
+frame=  303 fps=0.0 q=-0.0 size=N/A time=00:00:12.87 bitrate=N/A speed=25.6x elapsed=0:00:00.50    
+[Parsed_volumedetect_1 @ 0x85cc0a400] n_samples: 1920000
+[Parsed_volumedetect_1 @ 0x85cc0a400] mean_volume: -29.0 dB
+[Parsed_volumedetect_1 @ 0x85cc0a400] max_volume: -10.0 dB
+[Parsed_volumedetect_1 @ 0x85cc0a400] histogram_9db: 1
+[Parsed_volumedetect_1 @ 0x85cc0a400] histogram_10db: 81
+[Parsed_volumedetect_1 @ 0x85cc0a400] histogram_11db: 502
+[Parsed_volumedetect_1 @ 0x85cc0a400] histogram_12db: 719
+[Parsed_volumedetect_1 @ 0x85cc0a400] histogram_13db: 1380
+[out#0/null @ 0x85cc089c0] video:198KiB audio:3750KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  479 fps=0.0 q=-0.0 Lsize=N/A time=00:00:20.00 bitrate=N/A speed=  32x elapsed=0:00:00.62    
