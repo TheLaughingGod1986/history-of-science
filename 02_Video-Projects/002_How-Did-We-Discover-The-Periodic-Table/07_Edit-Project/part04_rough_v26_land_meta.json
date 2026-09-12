@@ -1,0 +1,22 @@
+{
+  "cut": "hos_002_part04_rough_v26.mp4",
+  "kind": "bed_only_remaster",
+  "parent": "hos_002_part04_rough_v25.mp4",
+  "parent_sha256": "e78027c0c58abe9284f7b85de693a08caabd3ad8ee45b64624eadd0329942bb1",
+  "sha256": "ba79974bcf6c1777721185a3a13950bd21dae44deb0e1320dd01ea5a7e602070",
+  "bytes": 85071442,
+  "duration_s": 127.76,
+  "bed": "hos_002_part01_curious_workshop_v02_loop130_norm.wav",
+  "bed_vol": 0.38,
+  "video_bitstream_identical_to_parent": true,
+  "uat_last20s": {
+    "fail_windows_lt_m45db": 0,
+    "gate": "PASS",
+    "mean_volume_db": -28.9
+  },
+  "icloud": "HOS UAT/hos_002_part04_rough_v26.mp4",
+  "watch": "WATCH_part04_v26.txt",
+  "scores_to": "CoS",
+  "ben_ping": false,
+  "p05_untouched": true
+}
