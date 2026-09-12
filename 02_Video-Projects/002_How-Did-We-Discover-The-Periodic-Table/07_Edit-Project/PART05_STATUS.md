@@ -5,8 +5,8 @@
 | Cut | Status |
 |---|---|
 | P01–P03 | LOCKED |
-| P04 v25 | PASS_LOCKED picture — **do not touch** |
-| P04 v26 | GREEN bed-only (`PART04_BED_ONLY_REMASTER_V26.md`) — after this if serial |
+| P04 v25 | PASS_LOCKED picture — **do not remint** |
+| P04 v26 | **BED-ONLY remaster LANDED** (`PART04_STATUS.md`) — scores → CoS |
 | P05 v01 | PASS_LOCKED picture sha `8dcb06b596318a7283210928fbb0e78f6f89c7db5d200b8edeefbaa9b5522ec4` |
 | P05 v02 | **BED-ONLY remaster LANDED** — scores → CoS |
 | P06 | Not until Ben asks |
