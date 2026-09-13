@@ -1,9 +1,11 @@
 # Cursor brief — HOS 003 Invisible Bones (Röntgen X-rays)
 
-**For:** HOS Repo / HOS builder agent (`bc-cd402253` lane) via CoS  
+**For:** HOS Repo / HOS builder agent (`bc-d72aff4d` lane) via CoS  
 **From:** HOS Showrunner · 13 Sep 2026  
 **Not mint.** No box Flow. No Orbit Creator/Auditor.  
 **Channel:** @HistoryOfScienceYT only.
+
+> **Desk correction (13 Sep 2026):** builder lane is **`bc-d72aff4d`**. The seed pack read `bc-cd402253` — that id is **stale**; do not route this film to it. Rest of this brief is the Showrunner seed verbatim.
 
 ---
 
