@@ -1,0 +1,92 @@
+{
+  "part": 2,
+  "title": "The Cardboard That Should Stay Dark",
+  "film": "003_Invisible-Bones-X-Rays",
+  "mint": false,
+  "house": "HOS_HOUSE_VO_AND_TEACH_LOCK",
+  "vo_file": "02_Voiceover/part02_the_cardboard_v01.txt",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "set_language": "ONE persistent 1895 W\u00fcrzburg physics lab DNA: dark wood benches, dark curtains, coils, one Crookes/cathode-ray glass tube, fluorescent cardboard screen when the beat needs it, ominous soft green-violet glow. Camera moves only; no hospital ward; no Periodic cream-card desk.",
+  "explorer_lock": "NONE this part \u2014 cardboard is the hero.",
+  "forbidden": "HARD REJECT: Orbit robot; Germs death-ward beds; Periodic cream-card desk; photoreal; Ken Burns only; gore; lava drip; underside bulb/shade cup; unfinished Explorer hair; wall of text. No Explorer on Part 02. No Bertha ring plate. No living-skeleton hero minute (Part 03).",
+  "motion_lock": "REAL Veo when mint opens. Create dies \u2192 STOP.",
+  "quality_note": "Quality for CLEAN LIGHT fluorescent cardboard + tube glow.",
+  "always_fails": [
+    "lava",
+    "Orbit",
+    "Germs ward",
+    "Periodic desk",
+    "gore",
+    "Ken Burns",
+    "Explorer this part"
+  ],
+  "plates": [
+    {
+      "id": "01_chapter_cardboard",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Animistry 3D cartoon. Same 1895 W\u00fcrzburg lab DNA. Covered cathode tube on dark bench; cardboard screen across the room waiting. Continuous gentle push. Silent. No Explorer. HARD REJECT: glow already bright (save for later plate), Orbit, Ken Burns only."
+    },
+    {
+      "id": "02_tube_covered",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same lab DNA. Faceless/OTS hands finish covering the cathode tube so rays should stay trapped. Continuous cover motion. Silent. HARD REJECT: Explorer, Orbit, photoreal."
+    },
+    {
+      "id": "03_cardboard_waiting",
+      "explorer": false,
+      "side_label": "CARDBOARD",
+      "prompt": "Same lab DNA. Hero cardboard screen painted with pale fluorescent chemical \u2014 still dark. Soft camera settle. Silent. No text. HARD REJECT: premature full glow, Orbit."
+    },
+    {
+      "id": "04_should_stay_dark",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Cardboard holds dark a beat \u2014 tension. Continuous micro-hold + lamp-free ambient. Silent. HARD REJECT: lava, Orbit."
+    },
+    {
+      "id": "05_glow_blooms",
+      "explorer": false,
+      "side_label": "X-RAY",
+      "prompt": "Same DNA. Soft green fluorescence blooms on the cardboard while the tube stays covered \u2014 wonder, not horror. Continuous bloom. Silent. Quality CLEAN LIGHT. HARD REJECT: photoreal, Orbit, Ken Burns only."
+    },
+    {
+      "id": "06_passes_soft_things",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Soft glow continues; paper/wood props in path read as translucent to the invisible beam (stylised, not gore). Continuous. Silent. HARD REJECT: modern hospital, Orbit."
+    },
+    {
+      "id": "07_names_it_x",
+      "explorer": false,
+      "side_label": "UNKNOWN",
+      "prompt": "Same DNA. Faceless/OTS chalk or card with a simple X mark near the glowing screen \u2014 sparse, phone-readable. Continuous. Silent. HARD REJECT: wall of formulas, Orbit."
+    },
+    {
+      "id": "08_locks_the_door",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Dark lab door latch closes \u2014 locked for tests. Continuous. Silent. No Explorer. HARD REJECT: Orbit, photoreal hallway."
+    },
+    {
+      "id": "09_test_book",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. A book slides into the path between tube and cardboard; glow dimples/changes. Continuous. Silent. HARD REJECT: lava, Orbit."
+    },
+    {
+      "id": "10_test_hand_metal",
+      "explorer": false,
+      "side_label": "A PATTERN",
+      "prompt": "Same DNA. Faceless hand then a metal key/plate enter the path in turn; glow responds differently. Continuous. Silent. No bone-hero yet. HARD REJECT: gore, Bertha ring plate, Explorer."
+    },
+    {
+      "id": "11_detector_hold",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Soft hold on glowing cardboard as first detector. Continuous settle. Silent. HARD REJECT: Ken Burns only, Orbit."
+    }
+  ]
+}

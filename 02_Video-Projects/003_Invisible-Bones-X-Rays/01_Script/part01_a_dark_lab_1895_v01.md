@@ -1,30 +1,16 @@
 # Part 01 — A Dark Lab, 1895 (~90–110s target)
 
-**Film:** HOS 003 Invisible Bones (How Did We Discover X-rays?)  
-**Parent:** `invisible_bones_script_master_v01.md` · chapter **A Dark Lab, 1895**  
-**Brief:** `07_Edit-Project/COS_CURSOR_BRIEF_HOS_003.md` (Showrunner 13 Sep 2026)  
+**Parent:** `invisible_bones_script_master_v01.md`  
+**Brief:** `07_Edit-Project/COS_CURSOR_BRIEF_HOS_003.md`  
 **Status:** DOCS ONLY — not minting · not VO-recorded  
-**Channel:** @HistoryOfScienceYT only — no Flow · no remint · no Studio · no Orbit / Oppti from this file.  
-**House:** `00_Brand/Brand-Guidelines/HOS_HOUSE_VO_AND_TEACH_LOCK.md` — any-age VO; picture **with** spoken meaning; teach the thing + why it mattered in the same breath.  
 **Style:** Animistry 3D cartoon · ominous Würzburg lab · Explorer **once** (peek + step back) · no Orbit  
-**Chapter card:** A Dark Lab, 1895  
-**Open stamp:** after 1–2s moving picture — Didot italic **“A dark lab, 1895”** in dark negative space  
-**Bridge out:** dark room on purpose → the accident that arrives in Part 02.  
-**Bed:** ominous lab / death-ward cousin — dark Würzburg curiosity, not the warm workshop of film 002.  
-**Stop:** CoS merge this pack. Plate-first UAT when picture desk opens. Do **not** start Part 02 until Ben passes Part 01.
+**Stop:** CoS merge this scaffold. Plate-first UAT when picture desk opens. Do **not** start Part 02 until Ben passes Part 01.
 
 **VO file (text only):** `02_Voiceover/part01_a_dark_lab_1895_v01.txt`  
 **Plates:** `07_Edit-Project/parts/part-01_plates_v01.json`  
 **Gate:** `07_Edit-Project/PART01_ACCEPTANCE.md`
 
-**Clock:** spoken estimate ~70–85s from master hook + chapter 01. Brief wants 90–110s. Do not pad here. Showrunner may expand later.
-
----
-
-## Teach (from this chapter)
-
-- In 1895 physicists hunted cathode rays in sealed glass tubes. The lab was about invisible electrical “rays,” not about bones.
-- Film teach carried here: *In **1895**, Wilhelm Röntgen in Würzburg found them by accident with a cathode-ray tube and a glowing cardboard screen.*
+**Clock:** Showrunner expand 13 Sep — cathode-tube teach line added. Target ~90s spoken; ElevenLabs will settle.
 
 ---
 
@@ -41,6 +27,8 @@ This is how we discovered X-rays — and why a cardboard glow changed medicine f
 Würzburg, eighteen ninety-five. A physicist named Wilhelm Röntgen works late with a glass tube almost emptied of air — a cathode-ray tube. Electricity races inside. Scientists think they are studying rays that stop at the glass.
 
 The room is dark on purpose. Eyes need the dark. So does the proof that is about to arrive by accident.
+
+A cathode-ray tube is a sealed glass bottle with almost no air left. Push electricity through it and you get invisible rays that were supposed to stay inside the glass.
 
 Why chase rays you cannot see? Because the invisible is where the next map of nature often hides.
 
@@ -93,31 +81,8 @@ Open stamp is an **assemble overlay**, not a Veo plate.
 
 ---
 
-## Studio (plate-library) — paste when mint opens
-
-1. Plate library / KEEP DNA; lamp **no** underside bulb / shade cup  
-2. Plate-first UAT before rough assemble  
-3. Flow-only for late desks / Explorer / CLEAN LIGHT beats  
-4. Always-fails: lava drip/molten bead; unfinished flat cards; mid-crown unfinished Explorer hair  
-5. After 2 same-DNA FAILs → new framing  
-6. One plate per FAIL cycle; assemble last  
-7. Auth Mini CDP `benoats@googlemail.com` ULTRA  
-8. Veo 3.1 **Quality** for fragile CLEAN LIGHT (tube glow / fluorescent cardboard / beam)
-
-HARD REJECT: Orbit robot · Germs death-ward reuse as “same film” · Periodic desk cards · photoreal · Ken Burns ship · gore.
-
-DNA note: one **1895 Würzburg lab** language across parts (dark wood, tube glass, cardboard screen) — camera moves; no layout resets that dump DNA.
-
----
-
 ## UAT
 
 1. Plate-first stills / takes **before** rough assemble.  
 2. Stop after Part 01 rough. Do **not** start Part 02 until Ben passes.  
 3. Scores → CoS. Do **not** declare Ben PASS. Do **not** ping Ben from this pack.
-
----
-
-## Mint
-
-**NOT OPENED.** No mint / Flow until CoS greens picture desk.

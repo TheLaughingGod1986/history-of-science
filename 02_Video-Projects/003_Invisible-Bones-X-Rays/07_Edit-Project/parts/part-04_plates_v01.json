@@ -1,0 +1,80 @@
+{
+  "part": 4,
+  "title": "Bertha\u2019s Ring",
+  "film": "003_Invisible-Bones-X-Rays",
+  "mint": false,
+  "vo_file": "02_Voiceover/part04_berthas_ring_v01.txt",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "set_language": "ONE persistent 1895 W\u00fcrzburg physics lab DNA: dark wood benches, dark curtains, coils, one Crookes/cathode-ray glass tube, fluorescent cardboard screen when the beat needs it, ominous soft green-violet glow. Camera moves only; no hospital ward; no Periodic cream-card desk. Proof-plate beat may push into stylised photo-plate graphic still in Animistry 3D \u2014 not photoreal medical archive.",
+  "explorer_lock": "NONE this part.",
+  "forbidden": "HARD REJECT: Orbit robot; Germs death-ward beds; Periodic cream-card desk; photoreal; Ken Burns only; gore; lava drip; underside bulb/shade cup; unfinished Explorer hair; wall of text. No Explorer. No gore. No Orbit.",
+  "plates": [
+    {
+      "id": "01_chapter_bertha",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Animistry 3D. W\u00fcrzburg lab DNA. Empty proof plate waiting near the beam. Continuous. Silent. No Explorer. HARD REJECT: Orbit, photoreal."
+    },
+    {
+      "id": "02_hand_on_plate",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Faceless woman's hand rests for exposure \u2014 gentle, dignified. Continuous. Silent. HARD REJECT: gore, face hero."
+    },
+    {
+      "id": "03_bones_and_ring",
+      "explorer": false,
+      "side_label": "BERTHA\u2019S RING",
+      "prompt": "Animistry 3D stylised proof image: hand bones + wedding ring shadow on a plate. Wonder. Continuous soft settle. Silent. HARD REJECT: photoreal historical photo paste, gore, Orbit."
+    },
+    {
+      "id": "04_haunted_becomes_fact",
+      "explorer": false,
+      "side_label": "PROOF",
+      "prompt": "Same DNA. Proof plate held up in lab light \u2014 fact energy. Continuous. Silent. HARD REJECT: wall of newspaper text."
+    },
+    {
+      "id": "05_letters_fly",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Animistry 3D. Letters/envelopes lift and travel (stylised) from the lab. Continuous. Silent. HARD REJECT: modern email UI, Orbit."
+    },
+    {
+      "id": "06_labs_copy_tube",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Animistry 3D. Other dark labs light the same cathode tube shape \u2014 copies. Continuous. Silent. Same cartoon house. HARD REJECT: Periodic desk, Orbit."
+    },
+    {
+      "id": "07_doctors_lean_in",
+      "explorer": false,
+      "side_label": "MEDICINE",
+      "prompt": "Animistry 3D. Faceless doctors lean toward a glowing plate \u2014 curiosity. Continuous. Silent. No photoreal hospital. HARD REJECT: Orbit, Germs ward beds as this film."
+    },
+    {
+      "id": "08_bullet_break_map",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Stylised cartoon: denser shadow suggesting a lodged bullet or bone break on a plate \u2014 educational, not gory. Continuous. Silent. HARD REJECT: blood, photoreal trauma."
+    },
+    {
+      "id": "09_body_as_map",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Soft diagram energy: body as a readable map while still whole. Continuous. Silent. HARD REJECT: cut-open anatomy horror."
+    },
+    {
+      "id": "10_why_groundbreaking",
+      "explorer": false,
+      "side_label": "A NEW EYE",
+      "prompt": "Lab DNA + proof plate glow \u2014 diagnosis gains a new eye. Continuous. Silent. HARD REJECT: slogan bumper, Orbit."
+    },
+    {
+      "id": "11_proof_hold",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Hold on bones+ring plate. Continuous soft settle. Silent. HARD REJECT: Ken Burns only."
+    }
+  ]
+}

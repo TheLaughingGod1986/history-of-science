@@ -30,8 +30,11 @@ Master Part 01 **chapter block** is short. This split **includes the film hook i
 
 | Part | VO source in this pack | Clock |
 |---|---|---|
-| 01 | `02_Voiceover/part01_a_dark_lab_1895_v01.txt` | Hook + chapter 01 · estimate short of 90s |
-| 02–05 | Split listed below · files not cut until CoS asks | 90–110s target when VO lands |
+| 01 | `02_Voiceover/part01_a_dark_lab_1895_v01.txt` | Hook + chapter · Showrunner expand 13 Sep |
+| 02 | `02_Voiceover/part02_the_cardboard_v01.txt` | Full pack landed 13 Sep |
+| 03 | `02_Voiceover/part03_bones_without_a_knife_v01.txt` | Full pack landed 13 Sep |
+| 04 | `02_Voiceover/part04_berthas_ring_v01.txt` | Full pack landed 13 Sep |
+| 05 | `02_Voiceover/part05_a_new_kind_of_seeing_v01.txt` | Full pack landed 13 Sep |
 
 ---
 
@@ -103,3 +106,11 @@ Not Germs · not Periodic / Empty Chairs · not Orbit / space · no invented CTR
 4. Regen only the failed minute / failed plates  
 
 This PR stops at step 0: docs locked for CoS merge.
+
+
+---
+
+## Showrunner pack status (13 Sep 2026)
+
+Parts **01–05** each have: script md · VO txt · plates JSON · ACCEPTANCE.  
+**Still not mint.** CoS → Repo/builder for docs PR; Picture idle until green.

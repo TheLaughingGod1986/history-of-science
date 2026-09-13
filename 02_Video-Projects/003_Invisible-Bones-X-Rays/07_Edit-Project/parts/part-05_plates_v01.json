@@ -1,0 +1,80 @@
+{
+  "part": 5,
+  "title": "A New Kind of Seeing",
+  "film": "003_Invisible-Bones-X-Rays",
+  "mint": false,
+  "vo_file": "02_Voiceover/part05_a_new_kind_of_seeing_v01.txt",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "set_language": "ONE persistent 1895 W\u00fcrzburg physics lab DNA: dark wood benches, dark curtains, coils, one Crookes/cathode-ray glass tube, fluorescent cardboard screen when the beat needs it, ominous soft green-violet glow. Camera moves only; no hospital ward; no Periodic cream-card desk. Teach diagram may leave pure lab for clear layered body-vs-beam graphic still Animistry 3D. Payoff hospital = soft silhouette only, not photoreal.",
+  "explorer_lock": "Exactly one Explorer on plate 06. Younger boy, messy wavy brown hair, round thin gold wire-rim glasses, teal-blue long overcoat, gold atom pin, tan waistcoat, white shirt, dark brown floppy bow, rolled brown trousers, cream socks, brown boots, satchel+compass. Not Orbit robot.",
+  "forbidden": "HARD REJECT: Orbit robot; Germs death-ward beds; Periodic cream-card desk; photoreal; Ken Burns only; gore; lava drip; underside bulb/shade cup; unfinished Explorer hair; wall of text.",
+  "plates": [
+    {
+      "id": "01_chapter_new_seeing",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Animistry 3D. Soft settle from lab glow into teach space. Continuous. Silent. No Explorer. HARD REJECT: Orbit, slogan bumper."
+    },
+    {
+      "id": "02_what_are_xrays",
+      "explorer": false,
+      "side_label": "X-RAYS",
+      "prompt": "Clear Animistry diagram: invisible beam leaving a tube. Continuous. Silent. Sparse marks OK. HARD REJECT: wall of equations."
+    },
+    {
+      "id": "03_spectrum_past_uv",
+      "explorer": false,
+      "side_label": "INVISIBLE LIGHT",
+      "prompt": "Stylised spectrum strip with a band past visible/UV highlighted. Continuous. Silent. HARD REJECT: photoreal prism stock."
+    },
+    {
+      "id": "04_soft_vs_bone",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Layered cartoon body: soft tissue translucent, bone denser, metal densest under a beam. Continuous. Silent. No gore. HARD REJECT: horror anatomy."
+    },
+    {
+      "id": "05_detector_then_now",
+      "explorer": false,
+      "side_label": "A DETECTOR",
+      "prompt": "Split beat: glowing cardboard then a simple modern sensor slab \u2014 same house style. Continuous. Silent. HARD REJECT: brand logos, Orbit."
+    },
+    {
+      "id": "06_explorer_diagram",
+      "explorer": true,
+      "side_label": null,
+      "prompt": "Explorer teal trenchcoat watches the diagram, then looks at his own hand. Finished hair. Continuous. Silent. HARD REJECT: Orbit, unfinished hair, twins."
+    },
+    {
+      "id": "07_why_groundbreaking",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "No-knife symbol energy: closed scalpel tray stays closed while a plate glows. Continuous. Silent. HARD REJECT: surgery gore."
+    },
+    {
+      "id": "08_dentist_hospital_payoff",
+      "explorer": false,
+      "side_label": "YOUR WORLD",
+      "prompt": "Soft stylised hospital/dentist silhouette windows \u2014 warm, safe, not photoreal. Continuous. Silent. HARD REJECT: live-action clinic, Orbit."
+    },
+    {
+      "id": "09_bigger_question",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Faint question-mark glow beyond the spectrum band. Continuous. Silent. No slogan text. HARD REJECT: Impact poster type."
+    },
+    {
+      "id": "10_cardboard_glow_hold",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Return to faint cardboard fluorescence hold. Continuous. Silent. HARD REJECT: Ken Burns only."
+    },
+    {
+      "id": "11_soft_return",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Soft fade energy on last glow \u2014 end of part. Continuous. Silent. HARD REJECT: channel sting on this plate (assemble overlay later)."
+    }
+  ]
+}
