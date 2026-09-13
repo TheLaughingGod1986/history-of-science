@@ -1,6 +1,6 @@
 # Part 01 status — A Dark Lab, 1895
 
-**Updated:** 13 Sep 2026 · **BRIEF / MASTER only — mint not opened.**
+**Updated:** 13 Sep 2026 · **Showrunner split written — mint not opened.**
 
 | Item | State |
 |---|---|
