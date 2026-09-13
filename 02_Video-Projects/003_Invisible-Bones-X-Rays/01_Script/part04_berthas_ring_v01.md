@@ -60,5 +60,5 @@ Why is that groundbreaking? Surgery is no longer the only way to look inside. Di
 | 7 | `07_doctors_lean_in` | No | `MEDICINE` |
 | 8 | `08_bullet_break_map` | No | — |
 | 9 | `09_body_as_map` | No | — |
-| 10 | `10_why_groundbreaking` | No | — |
+| 10 | `10_why_groundbreaking` | No | `A NEW EYE` |
 | 11 | `11_proof_hold` | No | — |
