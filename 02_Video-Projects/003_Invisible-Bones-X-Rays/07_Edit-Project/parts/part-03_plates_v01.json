@@ -21,31 +21,31 @@
       "id": "02_hand_enters_path",
       "explorer": false,
       "side_label": null,
-      "prompt": "Same lab DNA. Faceless adult hand enters the beam path. Continuous. Silent. No blood. HARD REJECT: gore, photoreal medical."
+      "prompt": "Same DNA. Faceless adult hand enters the beam path. Continuous. Silent. No blood. HARD REJECT: gore, photoreal medical."
     },
     {
       "id": "03_soft_fades",
       "explorer": false,
       "side_label": "SOFT TISSUE",
-      "prompt": "Same lab DNA. Soft tissue reads faint in the glow; stylised cartoon clarity. Continuous. Silent. HARD REJECT: horror, Orbit."
+      "prompt": "Same DNA. Soft tissue reads faint in the glow; stylised cartoon clarity. Continuous. Silent. HARD REJECT: horror, Orbit."
     },
     {
       "id": "04_bones_hold",
       "explorer": false,
       "side_label": "BONES",
-      "prompt": "Same lab DNA. Bone shapes hold clearer than soft tissue in the glow. Continuous. Silent. Wonder not horror. HARD REJECT: gore."
+      "prompt": "Same DNA. Bone shapes hold clearer than soft tissue in the glow. Continuous. Silent. Wonder not horror. HARD REJECT: gore."
     },
     {
       "id": "05_ring_darker",
       "explorer": false,
       "side_label": null,
-      "prompt": "Same lab DNA. A denser ring-shaped shadow sits darker on the hand silhouette. Continuous. Silent. HARD REJECT: Bertha nameplate text wall."
+      "prompt": "Same DNA. A denser ring-shaped shadow sits darker on the hand silhouette. Continuous. Silent. HARD REJECT: Bertha nameplate text wall."
     },
     {
       "id": "06_living_skeleton_read",
       "explorer": false,
       "side_label": "NO KNIFE",
-      "prompt": "Same lab DNA. Wide read: living skeleton suggestion without a knife. Continuous soft push. Silent. HARD REJECT: cut-open body, Orbit."
+      "prompt": "Same DNA. Wide read: living skeleton suggestion without a knife. Continuous soft push. Silent. HARD REJECT: cut-open body, Orbit."
     },
     {
       "id": "07_explorer_hand_beam",
@@ -57,25 +57,25 @@
       "id": "08_medicine_question",
       "explorer": false,
       "side_label": null,
-      "prompt": "Same lab DNA. Empty beam path + cardboard glow \u2014 question energy for medicine. Continuous. Silent. No people. HARD REJECT: modern OR photoreal."
+      "prompt": "Same DNA. Empty beam path + cardboard glow \u2014 question energy for medicine. Continuous. Silent. No people. HARD REJECT: modern OR photoreal."
     },
     {
       "id": "09_wonder",
       "explorer": false,
       "side_label": null,
-      "prompt": "Same lab DNA. Soft wonder hold on glowing bone silhouette. Continuous. Silent. HARD REJECT: Ken Burns only."
+      "prompt": "Same DNA. Soft wonder hold on glowing bone silhouette. Continuous. Silent. HARD REJECT: Ken Burns only."
     },
     {
       "id": "10_caution_burn",
       "explorer": false,
       "side_label": "CAUTION",
-      "prompt": "Same lab DNA. Beam intensifies slightly \u2014 caution, not gore; soft heat shimmer only. Continuous. Silent. HARD REJECT: burns/blisters, lava, Orbit."
+      "prompt": "Same DNA. Beam intensifies slightly \u2014 caution, not gore; soft heat shimmer only. Continuous. Silent. HARD REJECT: burns/blisters, lava, Orbit."
     },
     {
       "id": "11_hold_beam",
       "explorer": false,
       "side_label": null,
-      "prompt": "Same lab DNA. Soft settle on beam + cardboard. Continuous. Silent. HARD REJECT: Ken Burns only."
+      "prompt": "Same DNA. Soft settle on beam + cardboard. Continuous. Silent. HARD REJECT: Ken Burns only."
     }
   ]
 }
