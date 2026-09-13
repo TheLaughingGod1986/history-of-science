@@ -4,10 +4,16 @@
 |---|---|
 | Scout pick | LOCKED — Invisible Bones / Röntgen X-rays |
 | Showrunner brief | LOCKED 13 Sep 2026 |
-| Cursor / HOS builder | Scaffold PR — mint not opened |
-| Mint / Flow | Not opened |
-| Part 01–05 VO | Master only — split TBD |
+| Cursor / HOS builder | Scaffold landed (#109) · Part 01 plates pack — **STOP for CoS merge review** |
+| Part-split plan | `07_Edit-Project/PART_SPLIT_PLAN_v01.md` |
+| Part 01 board + ACCEPTANCE | Written — `07_Edit-Project/parts/part-01_plates_v01.json` · `07_Edit-Project/PART01_ACCEPTANCE.md` · not mint |
+| Part 02–05 boards | Plan only — not written |
+| Mint / Flow | **Closed** — not opened |
+| Part 01–05 VO | Part 01 txt only (`02_Voiceover/part01_a_dark_lab_1895_v01.txt`) — not ElevenLabs · 02–05 split TBD |
+| Shorts | 3 punches listed — not cut, not scheduled |
 | Builder lane | **`bc-d72aff4d`** (seed pack said `bc-cd402253` — stale, do not route there) |
+
+Do not remint HOS 002 from this film. Do not ping Ben. Do not declare PASS.
 
 ## Cross-ref — film 002 board (13 Sep 2026)
 
