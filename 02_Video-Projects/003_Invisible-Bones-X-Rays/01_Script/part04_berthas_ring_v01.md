@@ -1,27 +1,22 @@
 # Part 04 — Bertha’s Ring (~90–110s)
 
-**Film:** HOS 003 Invisible Bones (How Did We Discover X-rays?)  
-**Parent script:** `invisible_bones_script_master_v01.md` · chapter **Bertha’s Ring**  
-**Brief:** `07_Edit-Project/COS_CURSOR_BRIEF_HOS_003.md` (Showrunner 13 Sep 2026)  
-**Mint: NOT OPENED.** Docs only — no Flow · no remint · no Studio · no Orbit / Oppti from this file.  
-**Channel:** @HistoryOfScienceYT only.  
-**House:** `00_Brand/Brand-Guidelines/HOS_HOUSE_VO_AND_TEACH_LOCK.md` — any-age VO; picture **with** spoken meaning.  
-**Style:** Animistry 3D cartoon · faceless · real Veo motion · Explorer **none** (proof photo is the hero) · no Orbit robot  
-**Chapter card:** Bertha’s Ring  
-**Bridge in:** P03 ended on power and danger travelling together.  
-**Bridge out:** diagnosis gains a new eye → the any-age teach in Part 05.  
-**Short punch:** **S3** — hook line *Bertha’s ring*.
+**Status:** DOCS ONLY — not minting  
+**Explorer:** **none** — proof photo is the hero  
+**Short punch S3:** Bertha’s ring.
+
+**VO:** `02_Voiceover/part04_berthas_ring_v01.txt`  
+**Plates:** `07_Edit-Project/parts/part-04_plates_v01.json`  
+**Gate:** `07_Edit-Project/PART04_ACCEPTANCE.md`
 
 ---
 
-## Teach (from this chapter)
+## Teach
 
-- The photograph of Bertha Röntgen’s hand (bones and ring) proved the discovery to the world.
-- Film teach carried here: *The **proof** was a photograph of Bertha Röntgen’s hand — bones and wedding ring.*
+The photograph of Bertha Röntgen’s hand (bones and ring) proved the discovery. Medicine gained a way to look inside without surgery.
 
 ---
 
-## VO excerpt (from master · British · clear · any-age)
+## VO
 
 Proof needs a witness the world cannot argue with.
 
@@ -33,34 +28,37 @@ Why is that groundbreaking? Surgery is no longer the only way to look inside. Di
 
 ---
 
-## Markers (from master)
+## Markers
 
 [CHAPTER CARD: Bertha’s Ring]  
-[VISUAL MUST: Classic proof beat — Bertha’s hand plate: bones + wedding ring; then newspapers / telegraphs / stunned doctors (faceless); no Orbit]  
-[EXPLORER ACTS: none — proof photo is the hero]  
-[TEACH: The photograph of Bertha Röntgen’s hand (bones and ring) proved the discovery to the world.]
-
-Side labels: BERTHA’S RING (lands **with** the spoken name).
+[VISUAL MUST: Proof plate bones + wedding ring · letters/telegraphs · faceless doctors lean in · no Orbit]  
+[EXPLORER ACTS: none]
 
 ---
 
-## Studio (plate-library) — paste when mint opens
+## Side labels
 
-1. Plate library / KEEP DNA; lamp **no** underside bulb / shade cup  
-2. Plate-first UAT before rough assemble  
-3. Flow-only for late desks / Explorer / CLEAN LIGHT beats  
-4. Always-fails: lava drip/molten bead; unfinished flat cards; mid-crown unfinished Explorer hair  
-5. After 2 same-DNA FAILs → new framing  
-6. One plate per FAIL cycle; assemble last  
-7. Auth Mini CDP `benoats@googlemail.com` ULTRA  
-8. Veo 3.1 **Quality** for fragile CLEAN LIGHT (tube glow / fluorescent cardboard / beam)
-
-HARD REJECT: Orbit robot · Germs death-ward reuse as “same film” · Periodic desk cards · photoreal · Ken Burns ship · gore.
-
-DNA note: one **1895 Würzburg lab** language across parts (dark wood, tube glass, cardboard screen) — camera moves; no layout resets that dump DNA.
+| Beat | Label |
+|---|---|
+| Proof | `BERTHA’S RING` |
+| Fact | `PROOF` |
+| World | `MEDICINE` |
+| Why | `A NEW EYE` |
 
 ---
 
-## Mint
+## Plates
 
-**NOT OPENED.** No mint / Flow until CoS greens picture desk.
+| # | id | Explorer? | Label |
+|---|---|---|---|
+| 1 | `01_chapter_bertha` | No | — |
+| 2 | `02_hand_on_plate` | No | — |
+| 3 | `03_bones_and_ring` | No | `BERTHA’S RING` |
+| 4 | `04_haunted_becomes_fact` | No | `PROOF` |
+| 5 | `05_letters_fly` | No | — |
+| 6 | `06_labs_copy_tube` | No | — |
+| 7 | `07_doctors_lean_in` | No | `MEDICINE` |
+| 8 | `08_bullet_break_map` | No | — |
+| 9 | `09_body_as_map` | No | — |
+| 10 | `10_why_groundbreaking` | No | `A NEW EYE` |
+| 11 | `11_proof_hold` | No | — |

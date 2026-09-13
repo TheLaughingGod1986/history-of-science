@@ -1,0 +1,81 @@
+{
+  "part": 3,
+  "title": "Bones Without a Knife",
+  "film": "003_Invisible-Bones-X-Rays",
+  "mint": false,
+  "vo_file": "02_Voiceover/part03_bones_without_a_knife_v01.txt",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "set_language": "ONE persistent 1895 W\u00fcrzburg physics lab DNA: dark wood benches, dark curtains, coils, one Crookes/cathode-ray glass tube, fluorescent cardboard screen when the beat needs it, ominous soft green-violet glow. Camera moves only; no hospital ward; no Periodic cream-card desk.",
+  "explorer_lock": "Exactly one Explorer on plate 07 only. Younger boy, messy wavy brown hair, round thin gold wire-rim glasses, teal-blue long overcoat, gold atom pin, tan waistcoat, white shirt, dark brown floppy bow, rolled brown trousers, cream socks, brown boots, satchel+compass. Not Orbit robot.",
+  "forbidden": "HARD REJECT: Orbit robot; Germs death-ward beds; Periodic cream-card desk; photoreal; Ken Burns only; gore; lava drip; underside bulb/shade cup; unfinished Explorer hair; wall of text. No Bertha proof photo as whole minute (Part 04). No gore.",
+  "quality_note": "Quality for CLEAN LIGHT beam / bone silhouette.",
+  "plates": [
+    {
+      "id": "01_chapter_bones",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Animistry 3D. Same W\u00fcrzburg lab DNA. Beam path suggested as soft green-violet cone toward cardboard. Continuous. Silent. No Explorer. HARD REJECT: gore, Orbit."
+    },
+    {
+      "id": "02_hand_enters_path",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Faceless adult hand enters the beam path. Continuous. Silent. No blood. HARD REJECT: gore, photoreal medical."
+    },
+    {
+      "id": "03_soft_fades",
+      "explorer": false,
+      "side_label": "SOFT TISSUE",
+      "prompt": "Same DNA. Soft tissue reads faint in the glow; stylised cartoon clarity. Continuous. Silent. HARD REJECT: horror, Orbit."
+    },
+    {
+      "id": "04_bones_hold",
+      "explorer": false,
+      "side_label": "BONES",
+      "prompt": "Same DNA. Bone shapes hold clearer than soft tissue in the glow. Continuous. Silent. Wonder not horror. HARD REJECT: gore."
+    },
+    {
+      "id": "05_ring_darker",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. A denser ring-shaped shadow sits darker on the hand silhouette. Continuous. Silent. HARD REJECT: Bertha nameplate text wall."
+    },
+    {
+      "id": "06_living_skeleton_read",
+      "explorer": false,
+      "side_label": "NO KNIFE",
+      "prompt": "Same DNA. Wide read: living skeleton suggestion without a knife. Continuous soft push. Silent. HARD REJECT: cut-open body, Orbit."
+    },
+    {
+      "id": "07_explorer_hand_beam",
+      "explorer": true,
+      "side_label": null,
+      "prompt": "Same DNA soft background. Explorer teal trenchcoat boy (on-model) holds his own hand toward a safe stylised beam, eyes wide, then lowers it. Finished hair. Continuous. Silent. HARD REJECT: Orbit robot, twins, unfinished mid-crown hair, academic blazer."
+    },
+    {
+      "id": "08_medicine_question",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Empty beam path + cardboard glow \u2014 question energy for medicine. Continuous. Silent. No people. HARD REJECT: modern OR photoreal."
+    },
+    {
+      "id": "09_wonder",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Soft wonder hold on glowing bone silhouette. Continuous. Silent. HARD REJECT: Ken Burns only."
+    },
+    {
+      "id": "10_caution_burn",
+      "explorer": false,
+      "side_label": "CAUTION",
+      "prompt": "Same DNA. Beam intensifies slightly \u2014 caution, not gore; soft heat shimmer only. Continuous. Silent. HARD REJECT: burns/blisters, lava, Orbit."
+    },
+    {
+      "id": "11_hold_beam",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Soft settle on beam + cardboard. Continuous. Silent. HARD REJECT: Ken Burns only."
+    }
+  ]
+}
