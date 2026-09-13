@@ -1,0 +1,134 @@
+{
+  "part": 1,
+  "title": "A Dark Lab, 1895",
+  "film": "003_Invisible-Bones-X-Rays",
+  "working_title": "How Did We Discover X-rays?",
+  "mint": false,
+  "house": "HOS_HOUSE_VO_AND_TEACH_LOCK",
+  "vo_file": "02_Voiceover/part01_a_dark_lab_1895_v01.txt",
+  "vo_duration_s": null,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "open_stamp": {
+    "after_s": 1.5,
+    "text": "A dark lab, 1895",
+    "treatment": "Didot italic in dark negative space — assemble overlay, not a Veo plate. Copy Germs/Periodic."
+  },
+  "set_language": "ONE persistent 1895 Würzburg physics lab DNA ONLY: dark honey-black wood benches, dark curtains, coils, one Crookes/cathode-ray glass tube, ominous soft green-violet tube glow. Same lab DNA every scenery plate — camera moves only; do not reset furniture layout; do not invent a hospital ward or a chemist cream-card desk.",
+  "continuity_lock": "HARD: every scenery plate MUST match plate 02 lab DNA (dark wood + curtains + coils + one cathode tube). Prefer I2V from plate-02 frames when mint opens. Camera moves only. No furniture layout reset.",
+  "explorer_lock": "Parts 01/03/05 only. Part 01 = plate 06 only. Exactly one Explorer. Identity: younger boy, messy wavy brown hair, round thin gold wire-rim glasses, teal-blue long overcoat, gold atom pin, tan waistcoat, white shirt, dark brown floppy bow, rolled brown trousers, cream socks, brown boots, satchel+compass. Not Orbit robot. Not every shot.",
+  "forbidden": "HARD REJECT: Orbit robot; Germs Victorian death-ward / hospital beds as this film; Periodic 1869 cream-card desk / empty chairs; photoreal; Ken Burns only; gore / cut-open bodies; lava drip / molten bead; unfinished flat cards; underside lamp bulb / shade cup; mid-crown unfinished Explorer hair; twins; readable wall of text; modern hospital interiors on Part 01.",
+  "motion_lock": "REAL Veo camera + object motion every scenery plate when mint opens. No freeze-pad. No loop. If Create dies — STOP (no Ken Burns fallback).",
+  "quality_note": "When mint opens: Veo 3.1 Quality for fragile CLEAN LIGHT (tube glow). Flow-only. Auth Mini CDP benoats@googlemail.com ULTRA. One plate per FAIL cycle. After 2 same-DNA FAILs → new framing.",
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "unfinished Explorer hair",
+    "Orbit robot",
+    "Germs ward reuse",
+    "Periodic cream-card desk",
+    "gore",
+    "Ken Burns ship"
+  ],
+  "notes": "Strange picture first 1–2s — living skeleton suggestion without a knife, no Explorer, no channel bumper. Explorer once on 06. ~11 plates planned so 1× motion can cover VO (no freeze-pad). NOT MINT. Prompts are the board for CoS.",
+  "plates": [
+    {
+      "id": "01_skeleton_without_knife_open",
+      "explorer": false,
+      "i2v": false,
+      "side_label": null,
+      "vo_land": "What if you could see a living skeleton — without cutting anyone open?",
+      "prompt": "Animistry premium 3D cartoon. Cold open: a living human-hand silhouette as a soft green-violet glow on a dark cardboard-like plane — faint bones read through skin, no knife, no blood, no gore, no hospital. Wonder, not horror. Continuous slow push. Silent. No Explorer. No Orbit. No readable text. HARD REJECT: photoreal x-ray photo, medical gore, Ken Burns only, Periodic desk, Germs ward."
+    },
+    {
+      "id": "02_wurzburg_lab_establishing",
+      "explorer": false,
+      "i2v": false,
+      "side_label": "WÜRZBURG",
+      "vo_land": "Würzburg, eighteen ninety-five. A dark lab.",
+      "prompt": "Animistry premium 3D cartoon. Wide 1895 Würzburg physics lab DNA: dark wood benches, heavy dark curtains, coils, one cathode-ray glass tube on the bench, ominous soft green-violet glow. Night. Continuous slow dolly into the room. Silent. No people. No modern hospital. HARD REJECT: Germs white-bed ward, Periodic cream cards, Orbit, photoreal, Ken Burns only."
+    },
+    {
+      "id": "03_cathode_tube_hero",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "lab_dna_tube",
+      "side_label": "CATHODE TUBE",
+      "vo_land": "A glass tube almost emptied of air — a cathode-ray tube.",
+      "prompt": "Same 1895 Würzburg lab DNA. Hero close on one Crookes / cathode-ray glass tube almost emptied of air — glass, metal electrodes, coils nearby. Soft green-violet inside. Continuous gentle orbit. Silent. No readable logos. HARD REJECT: neon beer-sign tube, modern CRT TV, lava, underside lamp bulb, Periodic desk, Orbit."
+    },
+    {
+      "id": "04_electricity_inside_tube",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "lab_dna_tube",
+      "side_label": null,
+      "vo_land": "Electricity races inside.",
+      "prompt": "Same lab DNA. Inside the cathode tube: electricity races as a stylised 3D cartoon current, not lightning storm, not lava. Continuous flicker + camera. Silent. CLEAN LIGHT only. HARD REJECT: fire plumes, molten bead, photoreal, Ken Burns only."
+    },
+    {
+      "id": "05_rays_stop_at_glass",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "lab_dna_tube",
+      "side_label": null,
+      "vo_land": "Scientists think they are studying rays that stop at the glass.",
+      "prompt": "Same lab DNA. Stylised faint rays inside the tube halt at the inner glass — they do not yet leave. Continuous settle. Silent. Teach: they think cathode rays stop at the glass. HARD REJECT: cardboard hero (that is Part 02), hospital, Orbit, gore."
+    },
+    {
+      "id": "06_explorer_peek_flare",
+      "explorer": true,
+      "i2v": true,
+      "start_frame_key": "explorer_lab_peek",
+      "side_label": null,
+      "vo_land": "works late with a glass tube",
+      "prompt": "Same 1895 Würzburg lab DNA. Exactly ONE Explorer boy — Germs/HOS identity lock: younger boy, messy wavy brown hair, round gold glasses, teal overcoat, tan vest, brown bow, satchel. He peeks toward the cathode tube from a dark doorway / bench edge, then steps back when the tube flares green-violet. Continuous acting. Single character. Silent. HARD REJECT: twins, Orbit robot, adult redesign, unfinished hair, Germs ward beds, Periodic cards, photoreal."
+    },
+    {
+      "id": "07_dark_on_purpose",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "lab_dna_curtains",
+      "side_label": null,
+      "vo_land": "The room is dark on purpose. Eyes need the dark.",
+      "prompt": "Same lab DNA. Dark curtains draw / already drawn; the only light is the tube’s green-violet. Eyes-need-the-dark mood. Continuous curtain drift + camera. Silent. No people. HARD REJECT: bright workshop of film 002, Germs lamps-on-white-ward, Orbit, photoreal."
+    },
+    {
+      "id": "08_röntgen_late_ots",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "lab_dna_bench",
+      "side_label": "RÖNTGEN",
+      "vo_land": "A physicist named Wilhelm Röntgen works late",
+      "prompt": "Same lab DNA. Faceless or over-the-shoulder 1895 physicist at the bench — dark frock, period hair, finished face if seen, not a new professor pair. Hands near the cathode tube. Continuous late-night work motion. Silent. HARD REJECT: matching top-hat twins, Orbit, Explorer on this plate, photoreal, Ken Burns only."
+    },
+    {
+      "id": "09_why_chase_invisible",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "lab_dna_tube",
+      "side_label": "INVISIBLE",
+      "vo_land": "Why chase rays you cannot see? Because the invisible is where the next map of nature often hides.",
+      "prompt": "Same lab DNA. Camera hunts empty dark air just beyond the glass — something unseen about to leave. Continuous push into the dark beside the tube. Silent. HARD REJECT: cardboard glow (Part 02), bones (Part 03), Orbit, gore, photoreal."
+    },
+    {
+      "id": "10_accident_coming",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "lab_dna_bench",
+      "side_label": null,
+      "vo_land": "So does the proof that is about to arrive by accident.",
+      "prompt": "Same lab DNA. A blank cardboard sheet waits across the room, still dark — not glowing yet. Tube still the light source. Continuous slow pan from tube to waiting cardboard. Silent. HARD REJECT: fluorescent glow already on (Part 02), Periodic cards, Orbit, Ken Burns only."
+    },
+    {
+      "id": "11_lab_hold",
+      "explorer": false,
+      "i2v": true,
+      "start_frame_key": "lab_dna_wide",
+      "side_label": "1895",
+      "vo_land": "hold into the join",
+      "prompt": "Same 1895 Würzburg lab DNA wide hold: dark wood, curtains, one glowing cathode tube, waiting dark cardboard. Continuous slow pull-back. Question hanging. Silent. HARD REJECT: hospital, Periodic desk, Orbit, freeze-pad, Ken Burns only."
+    }
+  ]
+}
