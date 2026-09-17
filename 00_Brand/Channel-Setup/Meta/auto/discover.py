@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Discover Orbit shorts that are live on YouTube and not yet on Meta."""
+"""Discover HOS shorts that are live on YouTube and not yet on Meta."""
 from __future__ import annotations
 
 import json
@@ -16,12 +16,13 @@ from _sib import load
 
 ledger = load("ledger")
 caption = load("caption")
-_SOCIAL = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/social")
+SETUP = AUTO.parent
+_SOCIAL = SETUP.parent / "social"
 if str(_SOCIAL) not in sys.path:
     sys.path.insert(0, str(_SOCIAL))
 import uniqueness  # noqa: E402
 
-REPO = Path("/Users/ben/code/Orbit-YouTube")
+REPO = SETUP.parents[2]
 PROJECTS = REPO / "02_Video-Projects"
 LONDON = ZoneInfo("Europe/London")
 SCHEDULE_GRACE_MIN = 2
