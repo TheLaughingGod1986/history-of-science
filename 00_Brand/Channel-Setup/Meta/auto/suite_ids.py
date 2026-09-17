@@ -10,10 +10,11 @@ from __future__ import annotations
 
 from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
 
-# History of Science portfolio + Page (see META_ACCOUNTS.json / PORTFOLIO.md).
+# Orbit leftovers — never publish HOS here.
 ORBIT_BUSINESS_ID = "1352434763139246"
 ORBIT_PAGE_ASSET_ID = "1285932871266399"
 ORBIT_PAGE_ID = "61592833318203"
+HOS_PAGE_ID = "61593586420124"
 
 # Stale Benkay Creative portfolio + the IG/Suite asset used before the move.
 BENKAY_BUSINESS_ID = "1203116147241086"
@@ -42,32 +43,38 @@ def is_stale_suite_id(value: object) -> bool:
 
 
 def pin_suite_creds(creds: dict | None, accounts: dict | None = None) -> dict:
-    """Copy creds and lock Orbit Page + portfolio IDs (never keep Benkay)."""
+    """Copy creds and lock the HOS Facebook Page — never Orbit, never Benkay."""
     data = dict(creds or {})
     accounts = accounts or {}
     portfolio = accounts.get("meta_business_portfolio") or {}
     facebook = accounts.get("facebook") or {}
 
-    business = str(
-        data.get("business_id")
-        or portfolio.get("business_id")
-        or ORBIT_BUSINESS_ID
-    ).strip()
+    business = str(data.get("business_id") or portfolio.get("business_id") or "").strip()
     asset = str(
         data.get("business_suite_asset_id")
         or facebook.get("business_suite_asset_id")
-        or ORBIT_PAGE_ASSET_ID
+        or ""
     ).strip()
-    page_id = str(
-        data.get("page_id") or facebook.get("page_id") or ORBIT_PAGE_ID
-    ).strip()
+    page_id = str(data.get("page_id") or facebook.get("page_id") or "").strip()
 
-    if is_stale_suite_id(business) or not business or business.startswith("REPLACE_"):
-        business = str(portfolio.get("business_id") or ORBIT_BUSINESS_ID).strip()
-    if is_stale_suite_id(asset) or not asset or asset.startswith("REPLACE_"):
-        asset = str(facebook.get("business_suite_asset_id") or ORBIT_PAGE_ASSET_ID).strip()
-    if not page_id or page_id.startswith("REPLACE_"):
-        page_id = str(facebook.get("page_id") or ORBIT_PAGE_ID).strip()
+    if is_stale_suite_id(business) or business.startswith("REPLACE_"):
+        business = str(portfolio.get("business_id") or "").strip()
+    if (
+        is_stale_suite_id(asset)
+        or asset.startswith("REPLACE_")
+        or asset == ORBIT_PAGE_ASSET_ID
+    ):
+        asset = str(facebook.get("business_suite_asset_id") or "").strip()
+        if asset == ORBIT_PAGE_ASSET_ID:
+            asset = ""
+    if (
+        not page_id
+        or page_id.startswith("REPLACE_")
+        or page_id == ORBIT_PAGE_ID
+    ):
+        page_id = str(facebook.get("page_id") or HOS_PAGE_ID).strip()
+        if page_id == ORBIT_PAGE_ID:
+            page_id = HOS_PAGE_ID
 
     data["business_id"] = business
     data["business_suite_asset_id"] = asset

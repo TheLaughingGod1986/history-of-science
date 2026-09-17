@@ -1,15 +1,6 @@
 #!/usr/bin/env python3
 """
-Post live YouTube Shorts to Threads (@historyofscience).
-
-Usage:
-  python3 live_shorts_to_threads.py --once
-  python3 live_shorts_to_threads.py --watch
-  python3 live_shorts_to_threads.py --dry-run
-  python3 live_shorts_to_threads.py --seed-all --seed-project 001_Will-We-Ever-Meet-Aliens
-
-Prefers CDP on port 9222 (shared IG/TikTok Chrome profile). Graph API when
-THREADS_CREDENTIALS has access_token + threads_user_id + public media URL.
+Post live YouTube Shorts to Threads (@historyofscienceyt).
 """
 from __future__ import annotations
 
@@ -47,6 +38,10 @@ ensure_chrome = load("ensure_chrome")
 graph_publish = load("graph_publish")
 ledger = load("ledger")
 studio_upload = load("studio_upload")
+
+SETUP = AUTO.parent
+sys.path.insert(0, str(SETUP.parent / "social"))
+import destination  # noqa: E402
 
 SETUP = AUTO.parent
 AUDIT = SETUP / "audit" / "auto"
@@ -132,6 +127,15 @@ def run_once(*, dry_run: bool = False) -> dict:
     }
     if dry_run:
         log(f"dry-run pending={len(pending)}")
+        return summary
+    creds = config.load_credentials()
+    gate = destination.refuse_threads_publish(
+        username=str(creds.get("threads_username") or creds.get("username") or "")
+    )
+    if not gate["ok"]:
+        log(gate["error"])
+        summary["error"] = gate["error"]
+        summary["gate"] = gate
         return summary
     if not pending:
         log("nothing pending")

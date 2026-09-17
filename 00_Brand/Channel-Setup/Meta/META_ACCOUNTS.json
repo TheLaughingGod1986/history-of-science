@@ -10,12 +10,12 @@
   },
   "facebook": {
     "page_name": "History of Science",
-    "page_id": null,
+    "page_id": "61593586420124",
     "business_suite_asset_id": null,
     "preferred_handles": ["HistoryOfScienceYT", "HistoryOfScience"],
-    "page_url": null,
-    "page_url_placeholder": "https://www.facebook.com/HistoryOfScienceYT",
-    "notes": "Need a new Facebook Page for this channel. Do not use Orbit Page 61592833318203."
+    "page_url": "https://www.facebook.com/profile.php?id=61593586420124",
+    "page_url_placeholder": "https://www.facebook.com/profile.php?id=61593586420124",
+    "notes": "HOS Page 61593586420124 confirmed 17 Sep 2026. Not in Orbit Business Suite yet (no composer asset). Do not use Orbit Page 61592833318203. facebook.com/HistoryOfScienceYT is not a public slug."
   },
   "instagram": {
     "handle": "historyofscienceyt",
