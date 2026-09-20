@@ -59,20 +59,23 @@ PROMPT = (
     "ominous soft green glow holds; continuous subtle camera drift. "
     "Silent. No Explorer. No DNA helix. No Orbit. No people."
 )
+# Marketing Flow footer says "protected by reCAPTCHA" — that is NOT a block.
 UNUSUAL_RE = re.compile(
     r"unusual activity|suspicious activity|verify it.?s you|"
     r"confirm you.?re not a robot|automated quer|"
-    r"too many requests|try again later|unusual traffic|"
-    r"couldn.?t verify|are you a robot|captcha",
+    r"too many (requests|attempts)|try again later|unusual traffic|"
+    r"couldn.?t verify|(?<!re)captcha|are you a robot",
     re.I,
 )
 FOREIGN_ACCOUNT_RE = re.compile(
     r"[A-Za-z0-9._%+\-]+@(?:gmail|googlemail)\.com"
 )
+# HOS default env profile is benoats86@gmail.com. This mint stays on
+# benoats@googlemail.com — the account already in Batch B. Do not switch.
 PROFILE = Path(
     os.environ.get(
-        "ORBIT_FLOW_PROFILE",
-        str(Path.home() / ".playwright-hos-flow-profile"),
+        "HOS_003_FLOW_PROFILE",
+        str(Path.home() / ".playwright-owb-flow-benoats-googlemail"),
     )
 )
 QA_DIR = Path(__file__).resolve().parent / "_qa_part02_plate11"
@@ -317,14 +320,20 @@ def main() -> None:
         ctx, page = flow.launch_context(p, headed=True, profile=PROFILE)
         try:
             print(f"profile={PROFILE}", flush=True)
+            print(f"account lock={ACCOUNT} (do not switch)", flush=True)
             print(f"goto {PROJECT_URL}", flush=True)
             page.goto(PROJECT_URL, wait_until="domcontentloaded", timeout=120_000)
             flow.settle_after_nav(page, wait_ms=2000)
             flow.dismiss_banners(page)
+            if "95929b6f-ae75-40be-af91-05699c481557" not in (page.url or ""):
+                print(f"  bounced to {page.url} — re-entering Batch B", flush=True)
+                page.goto(PROJECT_URL, wait_until="domcontentloaded", timeout=120_000)
+                flow.settle_after_nav(page, wait_ms=2000)
+                flow.dismiss_banners(page)
             abort_if_unusual(page, "after-goto", QA_DIR / "unusual_goto.png")
             if not flow.looks_logged_in(page):
                 raise SystemExit(
-                    "STOP: not logged into Google Flow on HOS profile. "
+                    f"STOP: not logged into Google Flow as {ACCOUNT}. "
                     "Do not switch accounts."
                 )
             url = assert_account_slot(page)
