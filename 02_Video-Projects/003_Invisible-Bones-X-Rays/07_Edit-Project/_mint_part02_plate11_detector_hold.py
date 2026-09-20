@@ -306,6 +306,11 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--probe-only", action="store_true")
     ap.add_argument("--timeout", type=int, default=900)
+    ap.add_argument(
+        "--cdp",
+        default=os.environ.get("HOS_003_FLOW_CDP", ""),
+        help="Attach live Chrome Default (benoats@googlemail.com) via CDP",
+    )
     args = ap.parse_args()
 
     if DEST.exists():
@@ -317,7 +322,15 @@ def main() -> None:
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as p:
-        ctx, page = flow.launch_context(p, headed=True, profile=PROFILE)
+        own_ctx = True
+        if args.cdp:
+            print(f"cdp attach {args.cdp}", flush=True)
+            browser = p.chromium.connect_over_cdp(args.cdp)
+            ctx = browser.contexts[0]
+            page = ctx.new_page()
+            own_ctx = False
+        else:
+            ctx, page = flow.launch_context(p, headed=True, profile=PROFILE)
         try:
             print(f"profile={PROFILE}", flush=True)
             print(f"account lock={ACCOUNT} (do not switch)", flush=True)
@@ -380,7 +393,10 @@ def main() -> None:
             raise SystemExit(2)
         finally:
             try:
-                ctx.close()
+                if own_ctx:
+                    ctx.close()
+                else:
+                    page.close()
             except Exception:
                 pass
 
