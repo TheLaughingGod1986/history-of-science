@@ -2,7 +2,9 @@
 
 **For:** CoS soft check. Do not ping Ben. Do not declare PASS.  
 **Cut:** `09_Final-Export/hos_003_part02_rough_v01.mp4`  
-**iCloud:** `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_003_part02_rough_v01.mp4`
+**sha256:** `53d09b8d87c24a01903f5e77474bb8bb7a2ba7ccf08c904c370e1ccdd8e350e0`  
+**bytes:** 47864380 · **duration:** 69.208s  
+**iCloud:** `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_003_part02_rough_v01.mp4` (same sha)
 
 ## What landed
 

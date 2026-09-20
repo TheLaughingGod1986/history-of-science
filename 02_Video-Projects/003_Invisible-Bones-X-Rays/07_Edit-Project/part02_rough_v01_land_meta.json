@@ -1,0 +1,98 @@
+{
+  "cut": "hos_003_part02_rough_v01.mp4",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_part02_rough_v01.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_003_part02_rough_v01.mp4",
+  "bytes": 47864380,
+  "sha256": "53d09b8d87c24a01903f5e77474bb8bb7a2ba7ccf08c904c370e1ccdd8e350e0",
+  "duration_s": 69.208333,
+  "vo_s": 105.12,
+  "picture_s": 69.2,
+  "mix_s": 69.2,
+  "vo_trim_s": 35.92,
+  "bed": "hos_001_part01_ominous_ward_v14_norm.wav",
+  "bed_vol": 0.34,
+  "plates": [
+    "02_tube_covered_v01.mp4",
+    "04_should_stay_dark_v01.mp4",
+    "05_glow_blooms_v02.mp4",
+    "06_passes_soft_things_v03.mp4",
+    "07_names_it_x_v01.mp4",
+    "08_locks_the_door_v01.mp4",
+    "09_test_book_v01.mp4",
+    "10_test_hand_metal_v01.mp4",
+    "11_detector_hold_v01.mp4"
+  ],
+  "parked": [
+    "01_chapter_cardboard_v01",
+    "03_cardboard_waiting"
+  ],
+  "labels": [
+    {
+      "t0": 0.697,
+      "t1": 4.897,
+      "text": "COVERED TUBE"
+    },
+    {
+      "t0": 14.216,
+      "t1": 17.816,
+      "text": "CARDBOARD"
+    },
+    {
+      "t0": 19.173,
+      "t1": 22.572999999999997,
+      "text": "FLUORESCENT"
+    },
+    {
+      "t0": 26.944,
+      "t1": 30.544,
+      "text": "IT GLOWS"
+    },
+    {
+      "t0": 46.453,
+      "t1": 48.653000000000006,
+      "text": "X"
+    },
+    {
+      "t0": 48.813,
+      "t1": 51.13,
+      "text": "UNKNOWN"
+    },
+    {
+      "t0": 53.99999999999999,
+      "t1": 57.79999999999999,
+      "text": "A PATTERN"
+    },
+    {
+      "t0": 61.64999999999999,
+      "t1": 65.44999999999999,
+      "text": "DETECTOR"
+    }
+  ],
+  "teach_cards": [
+    {
+      "t0": 3.097,
+      "t1": 6.897,
+      "title": "WHY COVER THE TUBE",
+      "body": "Cathode rays were supposed to stay inside."
+    },
+    {
+      "t0": 19.322999999999997,
+      "t1": 23.522999999999996,
+      "title": "FLUORESCENT SCREEN",
+      "body": "A screen painted to glow when light hits it."
+    },
+    {
+      "t0": 48.28,
+      "t1": 52.28,
+      "title": "X FOR UNKNOWN",
+      "body": "He names the new ray X \u2014 unknown."
+    },
+    {
+      "t0": 55.34999999999999,
+      "t1": 59.34999999999999,
+      "title": "PATTERN, NOT GHOST",
+      "body": "Book, hand, metal change the glow on purpose."
+    }
+  ],
+  "house": "No Explorer. No Orbit. Flat-cardboard brief. Continuous 1x motion."
+}

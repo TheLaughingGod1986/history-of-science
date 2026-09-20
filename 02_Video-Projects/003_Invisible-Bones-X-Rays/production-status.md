@@ -2,7 +2,7 @@
 
 **Updated:** 20 Sep 2026 ~22:45 London (assemble)
 **Part 01:** KEEP/LOCK v03 sha d9d82de5…
-**Part 02:** rough **v01 assembling** — KEEP plates + VO draft + ward bed + teaching labels. Parked 01/03. Scores → CoS. Do not ping Ben.
+**Part 02:** rough **v01 LANDED** `hos_003_part02_rough_v01.mp4` sha `53d09b8d…` · 69.208s · iCloud HOS UAT. Parked 01/03. Scores → CoS. Do not ping Ben.
 
 ## CoS Batch A order
 

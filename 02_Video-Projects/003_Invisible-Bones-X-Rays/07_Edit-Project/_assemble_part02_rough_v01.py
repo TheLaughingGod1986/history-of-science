@@ -70,6 +70,45 @@ def sha256(path: Path) -> str:
     return h.hexdigest()
 
 
+def _text_size(d: ImageDraw.ImageDraw, text: str, fnt: ImageFont.ImageFont) -> tuple[int, int]:
+    bb = d.textbbox((0, 0), text, font=fnt)
+    return bb[2] - bb[0], bb[3] - bb[1]
+
+
+def word_gap(d: ImageDraw.ImageDraw, fnt: ImageFont.ImageFont) -> int:
+    # Didot italic reports a 0-width space in Pillow — measure from a pair of letters.
+    a, _ = _text_size(d, "n", fnt)
+    b, _ = _text_size(d, "n n", fnt)
+    gap = b - 2 * a
+    return max(14, gap if gap > 6 else max(16, fnt.size // 3 if hasattr(fnt, "size") else 18))
+
+
+def measure_words(d: ImageDraw.ImageDraw, text: str, fnt: ImageFont.ImageFont) -> tuple[int, int, int]:
+    words = text.split()
+    if not words:
+        return 0, 0, 16
+    gap = word_gap(d, fnt)
+    widths = [_text_size(d, w, fnt)[0] for w in words]
+    height = max(_text_size(d, w, fnt)[1] for w in words)
+    total = sum(widths) + gap * (len(words) - 1)
+    return total, height, gap
+
+
+def draw_words(
+    d: ImageDraw.ImageDraw,
+    xy: tuple[float, float],
+    text: str,
+    fnt: ImageFont.ImageFont,
+    fill: tuple[int, int, int, int],
+) -> None:
+    x, y = xy
+    words = text.split()
+    gap = word_gap(d, fnt)
+    for i, word in enumerate(words):
+        d.text((x, y), word, font=fnt, fill=fill)
+        x += _text_size(d, word, fnt)[0] + (gap if i < len(words) - 1 else 0)
+
+
 def font(size: int, *, italic: bool = False, bold: bool = False) -> ImageFont.FreeTypeFont:
     idx = 2 if bold else 1 if italic else 0
     try:
@@ -180,7 +219,7 @@ def cue_from_align(
         (t_of("cardboard screen", "cardboard should", default=fallback_labels[1][0]), 3.6, "CARDBOARD"),
         (t_of("fluorescent screen", "fluorescent", default=fallback_labels[3][0]), 3.4, "FLUORESCENT"),
         (t_of("soft glow blooms", "it does not", default=fallback_labels[2][0]), 3.6, "IT GLOWS"),
-        (t_of("calls it x", "he calls it x", default=fallback_labels[4][0]), 2.8, "X"),
+        (t_of("calls it x", "he calls it x", default=fallback_labels[4][0]), 3.4, "X"),
         (t_of("for unknown", "unknown ray", default=fallback_labels[5][0]), 3.2, "UNKNOWN"),
         (t_of("pattern, not ghost", "the glow changes", default=fallback_labels[6][0]), 3.8, "A PATTERN"),
         (t_of("first detector", "glowing cardboard is the first", default=fallback_labels[7][0]), 3.8, "DETECTOR"),
@@ -203,20 +242,18 @@ def cue_from_align(
         a, b = hold(start, dur)
         labels.append((a, b, name))
 
-    # One at a time: if two overlap, shorten the earlier.
+    # One at a time: keep the earlier label readable (≥2.2s), delay the next.
     labels.sort(key=lambda x: x[0])
     cleaned: list[tuple[float, float, str]] = []
     for a, b, name in labels:
-        if cleaned and a < cleaned[-1][1]:
+        if cleaned and a < cleaned[-1][1] + 0.12:
             prev_a, prev_b, prev_n = cleaned[-1]
-            gap = a - 0.12
-            if gap > prev_a + 1.15:
-                cleaned[-1] = (prev_a, gap, prev_n)
-            else:
-                a = prev_b + 0.12
-                b = min(pic_dur - 0.08, a + (b - a))
-                if b <= a + 1.05:
-                    continue
+            keep = max(prev_a + 2.2, min(prev_b, a))
+            cleaned[-1] = (prev_a, keep, prev_n)
+            a = keep + 0.16
+            b = min(pic_dur - 0.08, max(a + 2.2, b))
+            if b <= a + 1.15:
+                continue
         cleaned.append((a, b, name))
 
     cards_raw = [
@@ -248,7 +285,10 @@ def cue_from_align(
     cards: list[tuple[float, float, str, str]] = []
     for start, dur, title, body in cards_raw:
         if start >= pic_dur - 0.6:
-            continue
+            if title.startswith("PATTERN"):
+                start = windows[7][0] + 1.8
+            else:
+                continue
         a, b = hold(start, dur)
         cards.append((a, b, title, body))
     cards.sort(key=lambda x: x[0])
@@ -267,19 +307,18 @@ def render_side_label(text: str, dest: Path) -> None:
     w, h = 1920, 1080
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    fnt = font(56, italic=True)
-    bb = d.textbbox((0, 0), text, font=fnt)
-    tw, th = bb[2] - bb[0], bb[3] - bb[1]
+    size = 92 if len(text.strip()) <= 2 else 56
+    fnt = font(size, italic=True)
+    tw, th, _gap = measure_words(d, text, fnt)
     x = w - tw - 88
-    y = 86
-    # Soft dark halo so white italic reads on glow and wood.
+    y = 78 if size > 70 else 86
     shadow = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     sd = ImageDraw.Draw(shadow)
-    sd.text((x + 1, y + 2), text, font=fnt, fill=(8, 6, 4, 160))
+    draw_words(sd, (x + 1, y + 2), text, fnt, (8, 6, 4, 160))
     shadow = shadow.filter(ImageFilter.GaussianBlur(radius=1.6))
     im = Image.alpha_composite(im, shadow)
     d = ImageDraw.Draw(im)
-    d.text((x, y), text, font=fnt, fill=(246, 240, 230, 245))
+    draw_words(d, (x, y), text, fnt, (246, 240, 230, 245))
     dest.parent.mkdir(parents=True, exist_ok=True)
     im.save(dest)
 
@@ -291,22 +330,23 @@ def render_teach_card(title: str, body: str, dest: Path) -> None:
     title_f = font(30, italic=True)
     body_f = font(24, italic=False)
     pad_x, pad_y = 28, 22
-    tw = d.textbbox((0, 0), title, font=title_f)
-    bw = d.textbbox((0, 0), body, font=body_f)
-    box_w = max(tw[2] - tw[0], bw[2] - bw[0]) + pad_x * 2
-    box_h = (tw[3] - tw[1]) + (bw[3] - bw[1]) + pad_y * 2 + 14
+    tw, th, _ = measure_words(d, title, title_f)
+    bw, bh, _ = measure_words(d, body, body_f)
+    box_w = max(tw, bw) + pad_x * 2
+    box_h = th + bh + pad_y * 2 + 14
     x0, y0 = 72, h - box_h - 78
     d.rounded_rectangle(
         (x0, y0, x0 + box_w, y0 + box_h),
         radius=22,
         fill=(18, 14, 12, 210),
     )
-    d.text((x0 + pad_x, y0 + pad_y - 2), title, font=title_f, fill=(246, 238, 224, 250))
-    d.text(
-        (x0 + pad_x, y0 + pad_y + (tw[3] - tw[1]) + 8),
+    draw_words(d, (x0 + pad_x, y0 + pad_y - 2), title, title_f, (246, 238, 224, 250))
+    draw_words(
+        d,
+        (x0 + pad_x, y0 + pad_y + th + 8),
         body,
-        font=body_f,
-        fill=(230, 220, 204, 235),
+        body_f,
+        (230, 220, 204, 235),
     )
     dest.parent.mkdir(parents=True, exist_ok=True)
     im.save(dest)
