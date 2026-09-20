@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import base64
+import hashlib
 import json
 import subprocess
 import sys
@@ -20,6 +21,7 @@ HERE = Path(__file__).resolve().parent
 PROJ = HERE.parent
 GERMS_ENV = REPO / "02_Video-Projects/001_How-Did-We-Discover-Germs/07_Edit-Project/.env"
 TXT = HERE / "part02_the_cardboard_v02.txt"
+VO_TXT_SHA = "f3454130086c42ea5545b2e149f193fe8d03ea2f0b7843155e48784ccb206975"
 MP3 = HERE / "05_Master" / "hos_003_part02_vo_v01_draft.mp3"
 WAV = HERE / "05_Master" / "hos_003_part02_vo_v01_draft.wav"
 ALIGN = HERE / "05_Master" / "hos_003_part02_vo_v01_draft_align.json"
@@ -41,6 +43,11 @@ def main() -> None:
     load_dotenv(PROJ / "07_Edit-Project" / ".env")
     if GERMS_ENV.exists():
         load_dotenv(GERMS_ENV)
+    if TXT.name != "part02_the_cardboard_v02.txt":
+        raise SystemExit("STOP: VO lock is part02_the_cardboard_v02.txt — do not use v01")
+    got = hashlib.sha256(TXT.read_bytes()).hexdigest()
+    if got != VO_TXT_SHA:
+        raise SystemExit(f"STOP: VO txt sha {got} != locked {VO_TXT_SHA}")
     text = TXT.read_text().strip()
     token, mode = load_token(prefer_api_key=True)
     print(f"auth={mode} voice={VOICE_ID} model={MODEL_ID} chars={len(text)}", flush=True)

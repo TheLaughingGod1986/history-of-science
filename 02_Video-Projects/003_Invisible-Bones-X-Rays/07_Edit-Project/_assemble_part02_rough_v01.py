@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """HOS 003 Part 02 rough v01 — KEEP plates + VO draft + ward bed + teaching labels.
 
-Parked 01_chapter / 03_cardboard_waiting are skipped (Batch B). No Explorer. No Orbit.
-Labels: Animistry Didot italic side + occasional teach cards (Part 01 v03 house).
+Showrunner GO 20 Sep 2026: VO lock part02_the_cardboard_v02.txt (sha f3454130…).
+Do not use v01.txt. No 03_cardboard_waiting (parked; glow DNA does not need it).
+01_chapter optional only if needed — v01 skips it. No Explorer. No Orbit.
+Labels from PART02_ASSEMBLE_V01_CUES.md (Part 01 v03 house).
 """
 from __future__ import annotations
 
@@ -15,6 +17,8 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 PROJ = Path(__file__).resolve().parents[1]
 CLIPS = PROJ / "04_Generated-Clips" / "part02"
+VO_TXT = PROJ / "02_Voiceover/part02_the_cardboard_v02.txt"
+VO_TXT_SHA = "f3454130086c42ea5545b2e149f193fe8d03ea2f0b7843155e48784ccb206975"
 VO = PROJ / "02_Voiceover/05_Master/hos_003_part02_vo_v01_draft.wav"
 ALIGN = PROJ / "02_Voiceover/05_Master/hos_003_part02_vo_v01_draft_align.json"
 BED = Path(
@@ -36,7 +40,7 @@ BED_VOL = 0.34
 FPS = 24
 DIDOT = "/System/Library/Fonts/Supplemental/Didot.ttc"
 
-# KEEP only — skip parked 01_chapter / 03_cardboard_waiting
+# KEEP 02, 04–11. No 03 (parked / not on disk). 01 chapter not needed for v01.
 PLATES = [
     "02_tube_covered_v01.mp4",
     "04_should_stay_dark_v01.mp4",
@@ -353,6 +357,13 @@ def render_teach_card(title: str, body: str, dest: Path) -> None:
 
 
 def main() -> None:
+    if "03_" in " ".join(PLATES):
+        raise SystemExit("STOP: 03_cardboard_waiting is parked — assemble without it")
+    if VO_TXT.name != "part02_the_cardboard_v02.txt" or not VO_TXT.exists():
+        raise SystemExit("STOP: VO lock is part02_the_cardboard_v02.txt — do not use v01")
+    got_txt = sha256(VO_TXT)
+    if got_txt != VO_TXT_SHA:
+        raise SystemExit(f"STOP: VO txt sha {got_txt} != locked {VO_TXT_SHA}")
     for name in PLATES:
         p = CLIPS / name
         if not p.exists() or p.stat().st_size < 100_000:

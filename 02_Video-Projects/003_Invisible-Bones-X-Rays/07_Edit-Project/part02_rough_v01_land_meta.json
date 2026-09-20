@@ -94,5 +94,13 @@
       "body": "Book, hand, metal change the glow on purpose."
     }
   ],
-  "house": "No Explorer. No Orbit. Flat-cardboard brief. Continuous 1x motion."
+  "house": "No Explorer. No Orbit. Flat-cardboard brief. Continuous 1x motion.",
+  "showrunner_go": {
+    "vo_txt": "02_Voiceover/part02_the_cardboard_v02.txt",
+    "vo_txt_sha256": "f3454130086c42ea5545b2e149f193fe8d03ea2f0b7843155e48784ccb206975",
+    "vo_v01_forbidden": true,
+    "plates": "KEEP 02, 04-11; no 03; 01 chapter not used",
+    "cues": "07_Edit-Project/PART02_ASSEMBLE_V01_CUES.md",
+    "brief": "07_Edit-Project/PRODUCTION_BRIEF_PART02_v01.md"
+  }
 }

@@ -1,10 +1,19 @@
 # HOS 003 Part 02 rough v01 — assemble notes
 
 **For:** CoS soft check. Do not ping Ben. Do not declare PASS.  
+**Showrunner GO:** 20 Sep 2026 — locks below already in this cut (no remint).  
 **Cut:** `09_Final-Export/hos_003_part02_rough_v01.mp4`  
 **sha256:** `53d09b8d87c24a01903f5e77474bb8bb7a2ba7ccf08c904c370e1ccdd8e350e0`  
 **bytes:** 47864380 · **duration:** 69.208s  
 **iCloud:** `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_003_part02_rough_v01.mp4` (same sha)
+
+## Showrunner locks (GO)
+
+- VO **only** `02_Voiceover/part02_the_cardboard_v02.txt` · 240w · sha `f3454130086c42ea5545b2e149f193fe8d03ea2f0b7843155e48784ccb206975` · **not** v01.txt
+- Bed: ominous lab / death-ward cousin (P01 v03 family). Silence = fail.
+- Density: cue sheet `PART02_ASSEMBLE_V01_CUES.md` — COVERED TUBE · CARDBOARD · FLUORESCENT · IT GLOWS · X · UNKNOWN · A PATTERN · DETECTOR + four teach cards
+- Plates: KEEP **02, 04–11**. No `03_cardboard_waiting` (parked; glow DNA does not require it). `01_chapter` optional / not used.
+- Brief: `PRODUCTION_BRIEF_PART02_v01.md` still current.
 
 ## What landed
 
