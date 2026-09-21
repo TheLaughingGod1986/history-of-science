@@ -9,7 +9,7 @@
   "project": "https://flow.google.com/project/537a3344-5ba3-46c3-b727-4e166601d9d0",
   "ts": "2026-09-21T17:09:48.466821+00:00",
   "keep_untouched": {
-    "01_chapter_bones": "ebb64736279d6455d062e740d154d272ead839662eca7865ef4eb0e0a61aafc6",
+    "01_chapter_bones": "ebb64736279d6455d062e740d154d272ead839662eca7865ef4eb0e0a61a6926",
     "03_soft_fades": "5278f40d88f7c65949c773dbdf31633d94200d8badd67a6fe77a712a1e275b1a",
     "07_explorer_hand_beam": "2c938277d3f743fe459ae5bd935adb5dd1bdad80538951a56b08a76e0599617a"
   },
@@ -86,5 +86,6 @@
       "bytes": 3100983,
       "mute_note": "Mute: beam + cardboard hold readable (not neon-only); no helix."
     }
-  ]
+  ],
+  "keep_note": "Live sha256 on Mini after remint lands; land_remint_any.sh before/after lock passed on every land (KEEP files not rewritten)."
 }
