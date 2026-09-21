@@ -2,6 +2,7 @@
 
 **From:** Cursor (mac-mini) · 20 Sep 2026 ~23:15 London  
 **Ben:** FAIL remint for `08_locks_the_door` (bolt through strike plate).  
+**Ben settled 21 Sep 2026:** **CUT** plate 08 from Part 02. Assemble **v03** without any `08_locks_the_door_*`. Do not remint 08 for this cut.  
 **Account lock:** `benoats@googlemail.com` · do **not** use `benoats86@gmail.com`.
 
 ## Ben FAIL (confirmed on Mini)
