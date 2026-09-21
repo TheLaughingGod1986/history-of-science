@@ -57,13 +57,14 @@ PLATES_PATH = (
 INDEX_PATH = QA_DIR / "BATCH_A_LAND_INDEX.json"
 
 # Parent KEEP fingerprints — never touch these trees.
+# sha from live Mini land of 01_chapter_bones_v01 (BATCH_A_LAND_INDEX / file).
 PARENT_KEEPS = {
     REPO
     / "02_Video-Projects"
     / "003_Invisible-Bones-X-Rays"
     / "04_Generated-Clips"
     / "part03"
-    / "01_chapter_bones_v01.mp4": "ebb64736279d6455d062e740d154d272ead839662eca7865ef4eb0e0a61aafc6",
+    / "01_chapter_bones_v01.mp4": "ebb64736279d6455d062e740d154d272ead839662eca7865ef4eb0e0a61a6926",
 }
 
 UNPAID_RE = re.compile(
@@ -244,6 +245,14 @@ def set_prompt_manual(page, prompt: str) -> int:
 
 
 def click_create(page) -> dict:
+    # Close settings / overlays that hide Start generation.
+    try:
+        page.keyboard.press("Escape")
+    except Exception:
+        pass
+    page.wait_for_timeout(400)
+    flow.dismiss_banners(page)
+
     create_state = page.evaluate(
         """() => {
           const hits = [];
@@ -255,6 +264,7 @@ def click_create(page) -> dict:
             if (!isArrow && !isCreate) continue;
             const disabled = b.disabled || b.getAttribute('aria-disabled') === 'true';
             const r = b.getBoundingClientRect();
+            if (r.width < 4 || r.height < 4) continue;
             hits.push({
               disabled, t: t.slice(0,40), aria: aria.slice(0,40),
               x: r.x + r.width/2, y: r.y + r.height/2, arrow: isArrow
@@ -267,8 +277,16 @@ def click_create(page) -> dict:
     if send is None:
         send = next((h for h in create_state if not h["disabled"]), None)
     if send is None:
-        page.screenshot(path=str(QA_DIR / "create_disabled.png"), full_page=False)
-        raise RuntimeError(f"create-disabled {create_state}")
+        try:
+            flow.submit_create(page)
+            return {
+                "send": {"via": "flow.submit_create"},
+                "confirm": None,
+                "create_state": create_state,
+            }
+        except Exception as e:
+            page.screenshot(path=str(QA_DIR / "create_disabled.png"), full_page=False)
+            raise RuntimeError(f"create-disabled {create_state} fallback={e}") from e
     page.mouse.click(send["x"], send["y"])
     page.wait_for_timeout(1200)
     confirm = page.evaluate(
@@ -283,6 +301,10 @@ def click_create(page) -> dict:
           return null;
         }"""
     )
+    try:
+        flow.confirm_generation_spend(page, timeout_s=6.0)
+    except Exception:
+        pass
     return {"send": send, "confirm": confirm, "create_state": create_state}
 
 
