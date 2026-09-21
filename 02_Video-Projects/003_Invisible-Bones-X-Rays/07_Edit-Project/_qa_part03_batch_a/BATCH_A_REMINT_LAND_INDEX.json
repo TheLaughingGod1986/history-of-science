@@ -3,15 +3,14 @@
   "part": "03",
   "batch": "A",
   "kind": "REMINT DNA helix HARD FAIL",
-  "assemble": "CLOSED",
+  "assemble": "OPEN for rough_v02 (07 reminted)",
   "model": "Veo 3.1 - Quality",
   "account": "benoats@googlemail.com",
   "project": "https://flow.google.com/project/537a3344-5ba3-46c3-b727-4e166601d9d0",
-  "ts": "2026-09-21T17:09:48.466821+00:00",
+  "ts": "2026-09-21T18:28:19.966355+00:00",
   "keep_untouched": {
     "01_chapter_bones": "ebb64736279d6455d062e740d154d272ead839662eca7865ef4eb0e0a61a6926",
-    "03_soft_fades": "5278f40d88f7c65949c773dbdf31633d94200d8badd67a6fe77a712a1e275b1a",
-    "07_explorer_hand_beam": "2c938277d3f743fe459ae5bd935adb5dd1bdad80538951a56b08a76e0599617a"
+    "03_soft_fades": "5278f40d88f7c65949c773dbdf31633d94200d8badd67a6fe77a712a1e275b1a"
   },
   "remints": [
     {
@@ -85,7 +84,26 @@
       "duration_s": 8.0,
       "bytes": 3100983,
       "mute_note": "Mute: beam + cardboard hold readable (not neon-only); no helix."
+    },
+    {
+      "plate": "07_explorer_hand_beam",
+      "version": "v03",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/07_explorer_hand_beam_v03.mp4",
+      "sha256": "7d4d70ee8aeeb3f450f368c143b4feeb804e0739b83ec9272b752397876aa4f0",
+      "duration_s": 8.0,
+      "bytes": 3090044,
+      "mute_note": "Mute: on-model Explorer raises hand into safe beam then lowers; clean empty curtain/lab behind \u2014 no helix/molecular tower.",
+      "prompt_mode": "positive-only v03 (never name DNA/helix)",
+      "prior_reject": "v02 white helix left of Explorer",
+      "uat_note": "FREE_STANDING_DNA=NO on start/mid/end; Explorer on-model glasses+crown+teal; hand toward beam"
     }
   ],
-  "keep_note": "Live sha256 on Mini after remint lands; land_remint_any.sh before/after lock passed on every land (KEEP files not rewritten)."
+  "keep_note": "Live sha256 on Mini after remint lands; land_remint_any.sh before/after lock passed on every land (KEEP files not rewritten).",
+  "plate07_remint": {
+    "status": "LANDED",
+    "version": "v03",
+    "sha256": "7d4d70ee8aeeb3f450f368c143b4feeb804e0739b83ec9272b752397876aa4f0",
+    "rejected_v02": "04_Generated-Clips/part03/_rejected_helix/07_explorer_hand_beam_v02_helix_left.mp4",
+    "ts": "2026-09-21T18:28:19.966268+00:00"
+  }
 }
