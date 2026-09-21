@@ -3,11 +3,11 @@
   "part": 3,
   "title": "Bones Without a Knife",
   "status": "LANDED",
-  "reason": "Part 03 rough v01 assembled from locked VO v02 + KEEP/remint plate set",
-  "output_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_part03_rough_v01.mp4",
-  "sha256": "c2b092305900ca82b712dfbee413cb8b9282a8fa0e40f3d2f6dc7dd1f541615d",
+  "reason": "Part 03 rough v02 \u2014 same v01 plate set except 07 reminted to v03 (helix HARD FAIL wipe)",
+  "output_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_part03_rough_v02.mp4",
+  "sha256": "572d498f7b70cd00fc18c68eac1a17c98b4a89b5a6c473772b12fb42053fd262",
   "duration_s": 83.416667,
-  "bytes": 83166549,
+  "bytes": 82583811,
   "missing_paths": [],
   "vo_lock": {
     "text": "02_Voiceover/part03_bones_without_a_knife_v02.txt",
@@ -61,8 +61,8 @@
       "order": 6
     },
     {
-      "file": "07_explorer_hand_beam_v01.mp4",
-      "sha256": "2c938277d3f743fe459ae5bd935adb5dd1bdad80538951a56b08a76e0599617a",
+      "file": "07_explorer_hand_beam_v03.mp4",
+      "sha256": "7d4d70ee8aeeb3f450f368c143b4feeb804e0739b83ec9272b752397876aa4f0",
       "order": 7
     },
     {
@@ -112,8 +112,8 @@
       "sha256": "c2ebf454c382e4fa866e35eba023f312cba60ff8cb5e5326e557a8fabdb7263b"
     },
     {
-      "file": "07_explorer_hand_beam_v01.mp4",
-      "sha256": "2c938277d3f743fe459ae5bd935adb5dd1bdad80538951a56b08a76e0599617a"
+      "file": "07_explorer_hand_beam_v03.mp4",
+      "sha256": "7d4d70ee8aeeb3f450f368c143b4feeb804e0739b83ec9272b752397876aa4f0"
     },
     {
       "file": "08_medicine_question_v02.mp4",
@@ -188,6 +188,6 @@
     "ping Ben",
     "Public upload"
   ],
-  "landed_at": "2026-09-21T18:43:15.957276+01:00",
+  "landed_at": "2026-09-21T19:29:52.150497+01:00",
   "house": "Silent-readable + teaching density. Continuous 1x motion. Ominous ward bed under VO. Explorer only on plate 07. No DNA helix. VO trimmed to picture (no freeze-pad)."
 }
