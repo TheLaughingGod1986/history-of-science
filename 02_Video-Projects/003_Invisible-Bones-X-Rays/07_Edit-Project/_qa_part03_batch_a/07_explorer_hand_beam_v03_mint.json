@@ -1,0 +1,15 @@
+{
+  "plate": "07_explorer_hand_beam",
+  "version": "v03",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/07_explorer_hand_beam_v03.mp4",
+  "bytes": 3090044,
+  "sha256": "7d4d70ee8aeeb3f450f368c143b4feeb804e0739b83ec9272b752397876aa4f0",
+  "duration_s": 8.0,
+  "model": "Veo 3.1 - Quality",
+  "project": "https://flow.google.com/project/537a3344-5ba3-46c3-b727-4e166601d9d0",
+  "account": "benoats@googlemail.com",
+  "mute_note": "Mute: on-model Explorer raises hand into safe beam then lowers; clean empty curtain/lab behind \u2014 no helix/molecular tower.",
+  "prompt_mode": "positive-only v03 (never name DNA/helix)",
+  "prior_reject": "v02 white helix left of Explorer",
+  "ts": "2026-09-21T18:19:16.891634+00:00"
+}

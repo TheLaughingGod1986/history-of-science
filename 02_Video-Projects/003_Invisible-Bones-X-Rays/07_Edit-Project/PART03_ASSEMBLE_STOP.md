@@ -1,3 +1,10 @@
+# SUPERSEDED 21 Sep 2026 ~18:35 London
+
+**VO masters landed.** ASSEMBLE OPEN — use `PART03_ASSEMBLE_V01_CUES.md` + `ASSEMBLE_LAND.json` status OPEN.  
+Historical STOP below kept for audit.
+
+---
+
 # HOS 003 Part 03 — ASSEMBLE STOP (VO missing)
 
 **Status:** **STOPPED** — plate-first Batch A UAT PASS plate set is on Mini, but assemble cannot run.  
