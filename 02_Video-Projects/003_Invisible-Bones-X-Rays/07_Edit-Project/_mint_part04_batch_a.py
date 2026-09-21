@@ -350,11 +350,17 @@ def wait_create(page, dest: Path, before_ids: set[str], timeout_s: int) -> str:
         body = page_text(page, 4000).lower()
         if "generation quota for today" in body or "reached your generation quota" in body:
             raise SystemExit("STOP: Flow daily generation quota")
+        if "credit quota has been reached" in body or "need more ai credits" in body:
+            raise SystemExit("STOP: Flow credit quota reached (Quality)")
+        if "daily limit for this model" in body:
+            raise SystemExit("STOP: Flow daily model limit")
         if unpaid_visible(page):
             raise RuntimeError("UNPAID_FAIL")
         if re.search(r"\bfailed\b", body) and re.search(r"generat|create|video", body):
             if unpaid_visible(page):
                 raise RuntimeError("UNPAID_FAIL")
+            if "credit quota" in body or "daily limit" in body or "not been charged" in body:
+                raise SystemExit("STOP: Flow failed — credit/daily quota (not charged)")
             raise SystemExit("STOP: Flow failed banner (no unpaid match)")
         hit = harvest_newest(page, dest, before_ids)
         if hit:
@@ -376,11 +382,21 @@ def wait_create(page, dest: Path, before_ids: set[str], timeout_s: int) -> str:
 def one_create(page, prompt: str, dest: Path, timeout_s: int) -> dict:
     abort_guards(page, "pre-settings")
     try:
+        page.keyboard.press("Escape")
+    except Exception:
+        pass
+    page.wait_for_timeout(300)
+    try:
         flow.configure_veo_settings(
             page, model=MODEL, frames_mode=False, ingredients_mode=False
         )
     except Exception as e:
         print(f"  configure_veo_settings warn: {e}", flush=True)
+    try:
+        page.keyboard.press("Escape")
+    except Exception:
+        pass
+    page.wait_for_timeout(500)
     abort_guards(page, "post-settings")
     selected = flow.read_selected_video_model(page) or ""
     print(f"  selected model={selected!r}", flush=True)
@@ -402,7 +418,8 @@ def one_create(page, prompt: str, dest: Path, timeout_s: int) -> dict:
         raise SystemExit("STOP: editor starts with banned DNA soft background")
     abort_guards(page, "pre-create")
     print("  submitting ONE Create…", flush=True)
-    click_create(page)
+    clicked = click_create(page)
+    print(f"  create click={clicked.get('send')}", flush=True)
     flow.settle_after_nav(page, wait_ms=1200)
     abort_guards(page, "post-create")
     try:

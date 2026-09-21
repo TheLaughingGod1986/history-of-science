@@ -1,0 +1,27 @@
+{
+  "film": "003_Invisible-Bones-X-Rays",
+  "part": 4,
+  "batch": "A",
+  "title": "Bertha's Ring",
+  "status": "STOP",
+  "reason": "Flow credit / daily Quality quota reached on Create for 01_chapter_bertha",
+  "account": "benoats@googlemail.com",
+  "model": "Veo 3.1 - Quality",
+  "quality": "Veo 3.1 Quality / CLEAN LIGHT",
+  "project": "https://flow.google.com/u/1/project/2ed989c7-688d-46cc-91f3-1ffc65526fc1",
+  "assemble": "CLOSED",
+  "parents": "P01+P02+P03 KEEP/LOCK — untouched",
+  "explorer": "NONE",
+  "plates_landed": 0,
+  "plates": [],
+  "flow_dialog": "Failed — Sorry, this video failed to generate. You have not been charged for this generation. Agent: I couldn't kick off your video generation because your credit quota has been reached. You might need more AI credits to complete this request, or you may have reached the daily limit for this model.",
+  "actions_taken": [
+    "Opened new Flow project HOS 003 Part 04 Batch A (2ed989c7-…)",
+    "Locked Veo 3.1 Quality",
+    "ONE Create for 01_chapter_bertha with baked mute-test + helix HARD FAIL + CLEAN LIGHT",
+    "Create returned Failed (not charged) + credit/daily quota dialog",
+    "STOP — no refresh charge-loop, no Ken Burns, no remint of P01–P03, no Ben ping"
+  ],
+  "resume_when": "ULTRA Flow credits / daily Quality generation limit reset on benoats@googlemail.com — then re-run _mint_part04_batch_a.py from 01_chapter_bertha",
+  "ts": "2026-09-21T19:25:00+00:00"
+}

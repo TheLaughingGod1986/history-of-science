@@ -1,0 +1,16 @@
+cdp attach http://127.0.0.1:9222
+  dismissed banner via 'Agree'
+url=https://flow.google.com/u/1/project/2ed989c7-688d-46cc-91f3-1ffc65526fc1
+logged_in=True editor=True
+
+=== MINT 01_chapter_bertha → v01 ===
+  dismissed banner via 'Agree'
+  create-mode: Agent chip not found (ok if UI variant)
+  video model dropdown: 'Veo 3.1 - Quality arrow_drop_down'
+  video model selected: Veo 3.1 - Quality arrow_drop_down
+  video model locked via Agent settings: Veo 3.1 - Quality arrow_drop_down
+  selected model=''
+  prompt chars=1028
+  submitting ONE Create…
+  dismissed banner via 'Agree'
+  create click={'disabled': False, 't': 'arrow_forward', 'aria': 'Start generation', 'x': 1155, 'y': 1085, 'arrow': True}
