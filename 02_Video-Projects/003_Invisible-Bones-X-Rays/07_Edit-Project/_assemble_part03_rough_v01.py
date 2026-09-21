@@ -17,7 +17,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 PROJ = Path(__file__).resolve().parents[1]
-ROOT = PROJ.parents[1]
+VIDEO_PROJECTS = PROJ.parents[0]  # …/02_Video-Projects
 CLIPS = PROJ / "04_Generated-Clips" / "part03"
 VO_TXT = PROJ / "02_Voiceover/part03_bones_without_a_knife_v02.txt"
 VO_TXT_SHA = "b8e165cca3e245f1b7054d4289c064a1b08af3cc03715afe9ff96196575aa587"
@@ -28,7 +28,7 @@ VO_MP3_SHA = "0032ece496cfd48c796e07e10ff4f86e3dafbf57f0e432faf3cb536d69a880b3"
 ALIGN = PROJ / "02_Voiceover/05_Master/hos_003_part03_vo_v02_draft_align.json"
 ALIGN_SHA = "16ab28d3bf0504e351601dc3c4933d983db009f42fd3859e586c90b0ae644e70"
 BED = (
-    ROOT
+    VIDEO_PROJECTS
     / "001_How-Did-We-Discover-Germs/05_Music/hos_001_part01_ominous_ward_v14_norm.wav"
 )
 OUT = PROJ / "09_Final-Export/hos_003_part03_rough_v01.mp4"
