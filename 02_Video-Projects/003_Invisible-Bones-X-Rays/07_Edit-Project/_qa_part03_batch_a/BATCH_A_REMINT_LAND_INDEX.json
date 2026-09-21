@@ -1,0 +1,91 @@
+{
+  "film": "HOS 003 Invisible Bones / X-Rays",
+  "part": "03",
+  "batch": "A",
+  "kind": "REMINT DNA helix HARD FAIL",
+  "assemble": "CLOSED",
+  "model": "Veo 3.1 - Quality",
+  "account": "benoats@googlemail.com",
+  "project": "https://flow.google.com/project/537a3344-5ba3-46c3-b727-4e166601d9d0",
+  "ts": "2026-09-21T17:09:48.466821+00:00",
+  "keep_untouched": {
+    "01_chapter_bones": "ebb64736279d6455d062e740d154d272ead839662eca7865ef4eb0e0a61a6926",
+    "03_soft_fades": "5278f40d88f7c65949c773dbdf31633d94200d8badd67a6fe77a712a1e275b1a",
+    "07_explorer_hand_beam": "2c938277d3f743fe459ae5bd935adb5dd1bdad80538951a56b08a76e0599617a"
+  },
+  "remints": [
+    {
+      "plate": "02_hand_enters_path",
+      "version": "v03",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/02_hand_enters_path_v03.mp4",
+      "sha256": "8df82c6eee13158a9866b356323f59d3080deb2910f40c99443dbe9eeba94a14",
+      "duration_s": 8.0,
+      "bytes": 3278802,
+      "mute_note": "Mute: faceless hand enters green-violet beam path; clean lab; no helix."
+    },
+    {
+      "plate": "04_bones_hold",
+      "version": "v03",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/04_bones_hold_v03.mp4",
+      "sha256": "d1b54bb9cf7bf5ca2621bbd4cef959b9d2f23b09a84178f7a68110557279db25",
+      "duration_s": 8.0,
+      "bytes": 2676961,
+      "mute_note": "Mute: bones hold clearer than soft tissue on clean palm; no helix."
+    },
+    {
+      "plate": "05_ring_darker",
+      "version": "v05",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/05_ring_darker_v05.mp4",
+      "sha256": "a57705df6eaca9c42bdd3a94e7f8f3aa0633c492cc0659c0f57988c89349cf93",
+      "duration_s": 8.0,
+      "bytes": 2299727,
+      "mute_note": "Mute: denser darker metal wedding-band finger-band on bones; clean palm; no helix."
+    },
+    {
+      "plate": "06_living_skeleton_read",
+      "version": "v02",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/06_living_skeleton_read_v02.mp4",
+      "sha256": "c2ebf454c382e4fa866e35eba023f312cba60ff8cb5e5326e557a8fabdb7263b",
+      "duration_s": 8.0,
+      "bytes": 3835362,
+      "mute_note": "Mute: living skeleton read / NO KNIFE; clean desk; no helix."
+    },
+    {
+      "plate": "08_medicine_question",
+      "version": "v02",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/08_medicine_question_v02.mp4",
+      "sha256": "e770f6783382d6ebad9eaedbc0b57e3fcbf32192d0a48891a2b3670f3671a36a",
+      "duration_s": 8.0,
+      "bytes": 2362798,
+      "mute_note": "Mute: cardboard/CRT + empty beam read medicine question; no helix."
+    },
+    {
+      "plate": "09_wonder",
+      "version": "v02",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/09_wonder_v02.mp4",
+      "sha256": "efcf9c67d62b40b10ece57ea5c6ebc52e7616ca8579880d5fa666bac30938e18",
+      "duration_s": 8.0,
+      "bytes": 2653835,
+      "mute_note": "Mute: wonder bone silhouette clear; no helix."
+    },
+    {
+      "plate": "10_caution_burn",
+      "version": "v02",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/10_caution_burn_v02.mp4",
+      "sha256": "366a6e5b6a2107ebf9f3d95d9ed30ca0aa740b7ec55e99725a155772b5329da2",
+      "duration_s": 8.0,
+      "bytes": 2875609,
+      "mute_note": "Mute: caution/burn intensity + soft heat shimmer; no helix."
+    },
+    {
+      "plate": "11_hold_beam",
+      "version": "v02",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/11_hold_beam_v02.mp4",
+      "sha256": "d9bbd16b12a964c479ced75d397e44cb1abd25e4545a82f32aeb33c1241e8fe8",
+      "duration_s": 8.0,
+      "bytes": 3100983,
+      "mute_note": "Mute: beam + cardboard hold readable (not neon-only); no helix."
+    }
+  ],
+  "keep_note": "Live sha256 on Mini after remint lands; land_remint_any.sh before/after lock passed on every land (KEEP files not rewritten)."
+}
