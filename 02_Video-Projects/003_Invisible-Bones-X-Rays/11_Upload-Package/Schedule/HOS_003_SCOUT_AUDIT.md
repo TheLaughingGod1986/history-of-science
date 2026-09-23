@@ -53,17 +53,17 @@ Analytics pages returned Studio’s empty-state error on scheduled (not-yet-publ
 - Deleted leftover filename draft `hos 003 s2 bones no knife v01` (Draft → Options → Delete forever → Delete draft video). Toast: **Video successfully deleted**.
 - KEEP scheduled Shorts and public 001/002 rows were not touched.
 
-## Shorts shelf thumbs (23 Sep, after Ben’s shelf screenshot)
+## Shorts list thumbs (23 Sep, after the phone list)
 
-The dashboard Shorts row center-crops a wide thumbnail into a tall card. The first v03 16:9 files put the hook on the left, so the card sliced the words (`NTGEN`, `S WERE`).
+v04 (blur side-bars, Arial restamp, hook stuck in a narrow column) was rejected. The Studio Shorts list showed sliced words next to the Periodic Table posters.
 
-Replaced the three scheduled Shorts custom thumbs with shelf-safe 16:9 files. The hook sits in the center column the card keeps:
+Rebuilt the three scheduled custom thumbs as full-bleed 16:9 cards from the v03 scenes, with the old edge-clipped type removed and a short Didot hook inset so it stays inside the list card:
 
-- S1 `hos_003_thumb_s1_accident_shelf_v04.jpg` — RAYS WERE / DISCOVERED / BY ACCIDENT
-- S2 `hos_003_thumb_s2_rontgen_shelf_v04.jpg` — RÖNTGEN / SEES / BONE
-- S3 `hos_003_thumb_s3_wedding_shelf_v04.jpg` — X-RAY / OF A / RING
+- S1 `hos_003_thumb_s1_list_v06.jpg` — BY / ACCIDENT
+- S2 `hos_003_thumb_s2_list_v06.jpg` — NO / KNIFE
+- S3 `hos_003_thumb_s3_list_v06.jpg` — THE / RING
 
-Titles, clocks, and Related are unchanged. Studio content list shows the full lines. The dashboard shelf image can lag on the old crop until YouTube refreshes that card.
+Measured yellow-on-stroke margins inside the live list cards: about 36% each side, and 19–43% below the last line. Titles, clocks, Related, and the long Premiere thumb are unchanged. Jpg masters stay gitignored.
 
 ## Still true / not done
 
