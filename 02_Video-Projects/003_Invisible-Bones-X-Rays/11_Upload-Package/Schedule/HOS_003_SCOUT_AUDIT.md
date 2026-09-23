@@ -53,6 +53,18 @@ Analytics pages returned Studio’s empty-state error on scheduled (not-yet-publ
 - Deleted leftover filename draft `hos 003 s2 bones no knife v01` (Draft → Options → Delete forever → Delete draft video). Toast: **Video successfully deleted**.
 - KEEP scheduled Shorts and public 001/002 rows were not touched.
 
+## Shorts shelf thumbs (23 Sep, after Ben’s shelf screenshot)
+
+The dashboard Shorts row center-crops a wide thumbnail into a tall card. The first v03 16:9 files put the hook on the left, so the card sliced the words (`NTGEN`, `S WERE`).
+
+Replaced the three scheduled Shorts custom thumbs with shelf-safe 16:9 files. The hook sits in the center column the card keeps:
+
+- S1 `hos_003_thumb_s1_accident_shelf_v04.jpg` — RAYS WERE / DISCOVERED / BY ACCIDENT
+- S2 `hos_003_thumb_s2_rontgen_shelf_v04.jpg` — RÖNTGEN / SEES / BONE
+- S3 `hos_003_thumb_s3_wedding_shelf_v04.jpg` — X-RAY / OF A / RING
+
+Titles, clocks, and Related are unchanged. Studio content list shows the full lines. The dashboard shelf image can lag on the old crop until YouTube refreshes that card.
+
 ## Still true / not done
 
 - Clocks unchanged. Never Public-on-finish.
