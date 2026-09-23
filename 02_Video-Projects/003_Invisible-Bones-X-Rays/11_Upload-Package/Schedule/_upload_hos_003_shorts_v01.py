@@ -299,23 +299,28 @@ def extract_new_id(page, exclude: str = "") -> str | None:
 def next_until_visibility(page) -> str:
     for i in range(18):
         dismiss(page)
-        text = snip(page, 2500)
+        text = ""
         try:
             dlg = page.locator("ytcp-uploads-dialog")
             if dlg.count():
-                text = dlg.inner_text()
+                text = dlg.first.inner_text()
         except Exception:
             pass
-        if re.search(r"Visibility|Save or publish|Schedule", text, re.I) and re.search(
-            r"Private|Public|Unlisted", text, re.I
-        ):
+        # Require the actual publish step. "Visibility" is also a stepper label
+        # and "Saved as private" matches Private on Details.
+        if re.search(r"Save or publish", text, re.I):
             return f"vis_{i}"
         nxt = page.get_by_role("button", name=re.compile(r"^Next$", re.I))
+        clicked = False
         if nxt.count() and nxt.first.is_enabled():
             nxt.first.click(force=True)
-            page.wait_for_timeout(1400)
+            clicked = True
         else:
+            hit = click_shadow_text(page, r"^Next$")
+            clicked = bool(hit)
+        if not clicked:
             break
+        page.wait_for_timeout(1400)
     return "no_vis"
 
 
@@ -449,14 +454,17 @@ def fill_when(page, job: dict) -> dict:
             for (const el of (r.querySelectorAll
               ? r.querySelectorAll('ytcp-text-dropdown-trigger,input,span,div') : [])) {
               const t=(el.innerText||el.value||'').replace(/\\s+/g,' ').trim();
-              if (/\\d{1,2}\\s+(Sept|Sep|September)\\s+2026/i.test(t) && t.length<40) date=t;
+              if (/^\\d{1,2}\\s+(Sept|Sep|September)\\s+2026$/i.test(t) && t.length<40) date=t;
               if (/^\\d{1,2}:\\d{2}$/.test(t) || /^\\d{1,2}:\\d{2}$/.test(el.value||''))
                 time = t || el.value;
             }
             for (const n of (r.querySelectorAll ? r.querySelectorAll('*') : []))
               if (n.shadowRoot) walk(n.shadowRoot, d+1);
           };
-          walk(document); return {date, time};
+          const root = document.querySelector('ytcp-uploads-dialog')
+            || document.querySelector('tp-yt-paper-dialog')
+            || document.querySelector('ytcp-dialog');
+          walk(root); return {date, time};
         }"""
     )
     info["after"] = after
@@ -494,51 +502,6 @@ def click_schedule_confirm(page) -> str:
     )
     page.wait_for_timeout(3500)
     return hit or ""
-
-
-def set_related(page, new_id: str, parent: str) -> str:
-    page.goto(
-        f"https://studio.youtube.com/video/{new_id}/edit",
-        wait_until="domcontentloaded",
-        timeout=120000,
-    )
-    page.wait_for_timeout(4000)
-    dismiss(page)
-    body = snip(page, 6000)
-    if parent in body or PARENT_TITLE in body:
-        return "already_set"
-    try:
-        for _ in range(12):
-            page.mouse.wheel(0, 1400)
-            page.wait_for_timeout(200)
-        add = page.get_by_text(
-            re.compile(r"Add (a )?related video|Select video|Add video", re.I)
-        )
-        if add.count():
-            add.first.click(timeout=4000)
-        else:
-            page.get_by_text(re.compile(r"Related video", re.I)).first.click(timeout=4000)
-        page.wait_for_timeout(1000)
-        box = page.locator(
-            "tp-yt-paper-input input, input[type='text'], input[aria-label*='Search' i]"
-        ).first
-        box.click(timeout=4000)
-        box.fill(parent)
-        page.wait_for_timeout(2200)
-        hit = page.get_by_text(
-            re.compile(re.escape(PARENT_TITLE) + "|" + re.escape(parent), re.I)
-        )
-        if hit.count():
-            hit.first.click(timeout=5000)
-            page.wait_for_timeout(800)
-        save = page.get_by_role("button", name=re.compile(r"^Save$", re.I))
-        if save.count() and save.first.is_enabled():
-            save.first.click(timeout=4000)
-            page.wait_for_timeout(2500)
-            return "set_saved"
-        return "picked_save_grey"
-    except Exception as e:
-        return f"err:{type(e).__name__}:{e}"
 
 
 def click_shadow_text(page, pattern: str) -> str | None:
@@ -778,18 +741,22 @@ def upload_one(page, job: dict, parent: str) -> dict:
     page.screenshot(path=str(EV / f"{job['slot']}_details.png"), full_page=True)
 
     out["next"] = next_until_visibility(page)
-    out["scheduleOpen"] = click_schedule_radio(page)
-    page.wait_for_timeout(600)
-    out["when"] = fill_when(page, job)
-    after = (out["when"] or {}).get("after") or {}
-    if not after.get("date"):
-        out["ok"] = False
-        out["error"] = f"date_not_set:{after}"
-        page.screenshot(path=str(EV / f"{job['slot']}_date_fail.png"), full_page=True)
-        return out
-    out["confirm"] = click_schedule_confirm(page)
+    if out["next"].startswith("vis_"):
+        out["scheduleOpen"] = click_schedule_radio(page)
+        page.wait_for_timeout(600)
+        out["when"] = fill_when(page, job)
+        after = (out["when"] or {}).get("after") or {}
+        if after.get("date") and str(job["day"]) in str(after.get("date")):
+            out["confirm"] = click_schedule_confirm(page)
+        else:
+            out["confirm"] = ""
+            out["whenError"] = f"date_not_set:{after}"
+    else:
+        out["scheduleOpen"] = "skipped_not_vis"
+        out["when"] = {}
+        out["confirm"] = ""
     dismiss(page)
-    page.wait_for_timeout(2500)
+    page.wait_for_timeout(1500)
     new_id = extract_new_id(page, exclude=parent)
     out["platformPostId"] = new_id
     out["platformUrl"] = f"https://youtube.com/shorts/{new_id}" if new_id else None
@@ -799,8 +766,255 @@ def upload_one(page, job: dict, parent: str) -> dict:
         out["ok"] = False
         out["error"] = "no_id"
         return out
-    out["related"] = set_related(page, new_id, parent)
-    out["ok"] = True
+    finished = finish_short(page, new_id, job, parent)
+    out["finish"] = finished
+    out["related"] = finished.get("related")
+    out["ok"] = bool(finished.get("ok"))
+    if not out["ok"]:
+        out["error"] = finished.get("error") or "finish_fail"
+    return out
+
+
+def visibility_chip(page) -> str:
+    return page.evaluate(
+        """() => {
+      let hit = '';
+      const walk = (r, d = 0) => {
+        if (!r || d > 50 || hit) return;
+        for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+          const t = (el.innerText || '').replace(/\\s+/g, ' ').trim();
+          if (/^Visibility\\s+(Private|Public|Unlisted|Scheduled\\b.*)$/i.test(t) && t.length < 140) {
+            hit = t; return;
+          }
+        }
+        for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+          if (el.shadowRoot) walk(el.shadowRoot, d + 1);
+      };
+      walk(document);
+      if (hit) return hit;
+      const m = (document.body.innerText || '').match(/Visibility\\s*\\n?\\s*(Private|Public|Unlisted|Scheduled[^\\n]*)/i);
+      return m ? ('Visibility ' + m[1].trim()) : '';
+    }"""
+    )
+
+
+def open_vis(page) -> bool:
+    ok = page.evaluate(
+        """() => {
+      const walk = (r, d = 0) => {
+        if (!r || d > 55) return false;
+        for (const el of (r.querySelectorAll ? r.querySelectorAll('ytcp-icon-button,button,[role=button]') : [])) {
+          const a = el.getAttribute('aria-label') || '';
+          if (/edit video visibility status/i.test(a)) { el.click(); return true; }
+        }
+        for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+          if (el.shadowRoot && walk(el.shadowRoot, d + 1)) return true;
+        return false;
+      };
+      return walk(document);
+    }"""
+    )
+    page.wait_for_timeout(1400)
+    return bool(ok)
+
+
+def click_radio(page, label: str) -> str:
+    try:
+        r = page.get_by_role("radio", name=re.compile(rf"^{re.escape(label)}$", re.I))
+        if r.count():
+            r.first.click(force=True, timeout=3000)
+            page.wait_for_timeout(700)
+            return f"role:{label}"
+    except Exception:
+        pass
+    hit = page.evaluate(
+        """(label) => {
+      const re = new RegExp('^' + label + '$', 'i');
+      let hit = null;
+      const walk = (r, d = 0) => {
+        if (!r || d > 50 || hit) return;
+        for (const el of (r.querySelectorAll ? r.querySelectorAll('tp-yt-paper-radio-button,[role=radio]') : [])) {
+          const t = ((el.innerText || '') + ' ' + (el.getAttribute('aria-label') || '')).replace(/\\s+/g, ' ').trim();
+          if (re.test(t.split('\\n')[0].trim()) || re.test(t)) { el.click(); hit = t.slice(0, 80); return; }
+        }
+        for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+          if (el.shadowRoot) walk(el.shadowRoot, d + 1);
+      };
+      walk(document);
+      return hit;
+    }""",
+        label,
+    )
+    page.wait_for_timeout(700)
+    return hit or ""
+
+
+def save_enabled(page) -> bool:
+    return bool(
+        page.evaluate(
+            """() => {
+      const walk = (r, d = 0) => {
+        if (!r || d > 50) return false;
+        for (const el of (r.querySelectorAll ? r.querySelectorAll('button,ytcp-button,[role=button]') : [])) {
+          if (/^Save$/i.test((el.innerText || '').trim())) {
+            const dis = el.disabled || el.getAttribute('aria-disabled') === 'true';
+            if (!dis) return true;
+          }
+        }
+        for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+          if (el.shadowRoot && walk(el.shadowRoot, d + 1)) return true;
+        return false;
+      };
+      return walk(document);
+    }"""
+        )
+    )
+
+
+def page_save(page) -> dict:
+    info = {"enabled": save_enabled(page)}
+    if not info["enabled"]:
+        info["clicked"] = False
+        return info
+    clicked = bool(
+        page.evaluate(
+            """() => {
+          const walk = (r, d = 0) => {
+            if (!r || d > 50) return false;
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('button,ytcp-button,[role=button]') : [])) {
+              if (/^Save$/i.test((el.innerText || '').trim())) {
+                const dis = el.disabled || el.getAttribute('aria-disabled') === 'true';
+                if (!dis) { el.click(); return true; }
+              }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+              if (el.shadowRoot && walk(el.shadowRoot, d + 1)) return true;
+            return false;
+          };
+          return walk(document);
+        }"""
+        )
+    )
+    info["clicked"] = clicked
+    if clicked:
+        page.wait_for_timeout(2000)
+        for name in ["Update", "Confirm", "Schedule", "Yes", "OK", "Save"]:
+            try:
+                b = page.get_by_role("button", name=re.compile(rf"^{re.escape(name)}$", re.I))
+                if b.count() and b.first.is_visible():
+                    b.first.click(force=True, timeout=1500)
+                    info["confirm"] = name
+                    page.wait_for_timeout(800)
+            except Exception:
+                pass
+    return info
+
+
+def set_related(page, new_id: str, parent: str) -> str:
+    page.goto(
+        f"https://studio.youtube.com/video/{new_id}/edit",
+        wait_until="domcontentloaded",
+        timeout=120000,
+    )
+    page.wait_for_timeout(3500)
+    dismiss(page)
+    body = snip(page, 8000)
+    if PARENT_TITLE in body and (
+        "Related video" in body or parent in body
+    ):
+        if parent in body or PARENT_TITLE in body:
+            rel = re.search(r"Related video[^\n]{0,180}", body, re.I)
+            if rel and ("None" not in rel.group(0)) and PARENT_TITLE in body:
+                return "already_set"
+    try:
+        for _ in range(16):
+            page.mouse.wheel(0, 1400)
+            page.wait_for_timeout(180)
+        clicked = click_shadow_text(
+            page, r"Add (a )?related video|Select video|Add video"
+        )
+        if not clicked:
+            clicked = click_shadow_text(page, r"^Related video")
+        page.wait_for_timeout(1000)
+        box = page.locator(
+            "tp-yt-paper-input input, input[type='text'], input[aria-label*='Search' i]"
+        ).first
+        box.click(timeout=8000)
+        box.fill(parent)
+        page.wait_for_timeout(2500)
+        hit = page.get_by_text(
+            re.compile(re.escape(PARENT_TITLE) + "|" + re.escape(parent), re.I)
+        )
+        if hit.count():
+            hit.first.click(timeout=5000)
+            page.wait_for_timeout(800)
+        save = page.get_by_role("button", name=re.compile(r"^Save$", re.I))
+        if save.count() and save.first.is_enabled():
+            save.first.click(timeout=4000)
+            page.wait_for_timeout(2500)
+            return "set_saved"
+        return f"picked:{clicked}"
+    except Exception as e:
+        return f"err:{type(e).__name__}:{e}"
+
+
+def finish_short(page, vid: str, job: dict, parent: str) -> dict:
+    """Schedule + Related on an already-uploaded Short (edit page). Never Public."""
+    out: dict = {"id": vid, "slot": job["slot"], "titleWanted": job["title"]}
+    page.goto(
+        f"https://studio.youtube.com/video/{vid}/edit",
+        wait_until="domcontentloaded",
+        timeout=120000,
+    )
+    page.wait_for_timeout(3500)
+    dismiss(page)
+    body = snip(page, 4000)
+    out["titleSnip"] = body[:400]
+    if job["title"][:18].lower() not in body.lower() and job["slot"] not in body.lower():
+        # still allow if KEEP title is present
+        if job["title"] not in body:
+            out["ok"] = False
+            out["error"] = "title_mismatch"
+            page.screenshot(path=str(EV / f"{job['slot']}_finish_mismatch.png"), full_page=True)
+            return out
+    out["chip0"] = visibility_chip(page)
+    page.screenshot(path=str(EV / f"{job['slot']}_finish_edit.png"), full_page=True)
+    open_vis(page)
+    out["schedRadio"] = click_radio(page, "Schedule")
+    if not out["schedRadio"]:
+        out["schedRadio"] = click_schedule_radio(page)
+    page.wait_for_timeout(800)
+    out["when"] = fill_when(page, job)
+    page.screenshot(path=str(EV / f"{job['slot']}_finish_when.png"), full_page=True)
+    after = (out["when"] or {}).get("after") or {}
+    if not after.get("date") or str(job["day"]) not in str(after.get("date")):
+        out["ok"] = False
+        out["error"] = f"date_not_set:{after}"
+        return out
+    out["save"] = page_save(page)
+    if not out["save"].get("clicked"):
+        out["confirm"] = click_schedule_confirm(page)
+    page.wait_for_timeout(2000)
+    page.reload(wait_until="domcontentloaded")
+    page.wait_for_timeout(2500)
+    out["chipFinal"] = visibility_chip(page)
+    page.screenshot(path=str(EV / f"{job['slot']}_finish_chip.png"), full_page=True)
+    out["related"] = set_related(page, vid, parent)
+    page.wait_for_timeout(1500)
+    page.screenshot(path=str(EV / f"{job['slot']}_finish_related.png"), full_page=True)
+    rel_body = snip(page, 6000)
+    related_ok = bool(
+        (PARENT_TITLE in rel_body or parent in rel_body)
+        and re.search(r"Related video", rel_body, re.I)
+        and not re.search(r"Related video\s*None", rel_body, re.I)
+    )
+    out["relatedOk"] = related_ok
+    out["ok"] = bool(
+        re.search(r"Scheduled", out.get("chipFinal") or "", re.I)
+        and (related_ok or str(out.get("related") or "").startswith("set") or out.get("related") == "already_set")
+    )
+    if not out["ok"] and not out.get("error"):
+        out["error"] = f"chip={out.get('chipFinal')} related={out.get('related')}"
     return out
 
 
@@ -808,6 +1022,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--parent", required=True, help="Premiere videoId")
     ap.add_argument("--only")
+    ap.add_argument("--finish", help="Finish schedule+Related on an existing Short id")
     args = ap.parse_args()
     parent = args.parent.strip()
     if len(parent) < 8:
@@ -816,6 +1031,8 @@ def main() -> int:
     jobs = JOBS
     if args.only:
         jobs = [j for j in jobs if j["slot"] == args.only]
+    if args.finish and not jobs:
+        raise SystemExit("need --only slot with --finish")
 
     result = {
         "ok": False,
@@ -842,24 +1059,32 @@ def main() -> int:
             dump("RESULT.json", result)
             log(json.dumps(result)[:1500])
             return 2
-        for job in jobs:
-            log(f"==== upload {job['slot']} {job['title']} ====")
-            if is_glue(page):
-                result["stopped"] = "GLUE_BEFORE_UPLOAD"
-                break
-            try:
-                item = upload_one(page, job, parent)
-            except Exception as e:
-                item = {"slot": job["slot"], "ok": False, "error": f"{type(e).__name__}:{e}"}
-                result["shorts"].append(item)
-                result["stopped"] = "UPLOAD_EXCEPTION"
-                dump("RESULT.json", result)
-                break
+        if args.finish:
+            job = jobs[0]
+            log(f"==== finish {job['slot']} {args.finish} ====")
+            item = finish_short(page, args.finish.strip(), job, parent)
+            item["slot"] = job["slot"]
             result["shorts"].append(item)
             dump("RESULT.json", result)
-            if not item.get("ok"):
-                result["stopped"] = item.get("error") or "SHORT_FAIL"
-                break
+        else:
+            for job in jobs:
+                log(f"==== upload {job['slot']} {job['title']} ====")
+                if is_glue(page):
+                    result["stopped"] = "GLUE_BEFORE_UPLOAD"
+                    break
+                try:
+                    item = upload_one(page, job, parent)
+                except Exception as e:
+                    item = {"slot": job["slot"], "ok": False, "error": f"{type(e).__name__}:{e}"}
+                    result["shorts"].append(item)
+                    result["stopped"] = "UPLOAD_EXCEPTION"
+                    dump("RESULT.json", result)
+                    break
+                result["shorts"].append(item)
+                dump("RESULT.json", result)
+                if not item.get("ok"):
+                    result["stopped"] = item.get("error") or "SHORT_FAIL"
+                    break
         result["finished"] = datetime.now(LONDON).isoformat(timespec="seconds")
         result["ok"] = bool(result["shorts"]) and all(s.get("ok") for s in result["shorts"])
         dump("RESULT.json", result)
