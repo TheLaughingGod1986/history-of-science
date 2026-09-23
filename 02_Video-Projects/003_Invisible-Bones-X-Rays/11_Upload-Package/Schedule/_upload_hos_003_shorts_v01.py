@@ -581,7 +581,7 @@ def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
         return null;
       };
       const dlg = document.querySelector('ytcp-uploads-dialog');
-      return walk(dlg) || walk(document);
+      return walk(dlg) || (!dlg && walk(document));
     })()""" % ("true" if image else "false")
     try:
         session = page.context.new_cdp_session(page)
@@ -624,12 +624,23 @@ def open_upload(page) -> dict:
     info["create"] = click_shadow_text(page, r"^Create$")
     page.wait_for_timeout(800)
     info["uploadVideos"] = click_shadow_text(page, r"^Upload videos?$")
-    info["fileInputs"] = wait_file_inputs(page, 20)
-    if info["fileInputs"] == 0:
+    deadline = time.time() + 25
+    while time.time() < deadline:
+        if picker_open(page) or details_open(page):
+            break
+        page.wait_for_timeout(400)
+    if not picker_open(page) and not details_open(page):
         info["create2"] = click_shadow_text(page, r"^Create$")
         page.wait_for_timeout(800)
         info["uploadVideos2"] = click_shadow_text(page, r"^Upload videos?$")
-        info["fileInputs"] = wait_file_inputs(page, 15)
+        deadline = time.time() + 15
+        while time.time() < deadline:
+            if picker_open(page) or details_open(page):
+                break
+            page.wait_for_timeout(400)
+    info["picker"] = picker_open(page)
+    info["details"] = details_open(page)
+    info["fileInputs"] = file_input_count(page)
     return info
 
 
