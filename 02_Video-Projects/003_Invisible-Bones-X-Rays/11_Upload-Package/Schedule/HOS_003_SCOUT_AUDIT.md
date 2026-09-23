@@ -57,13 +57,13 @@ Analytics pages returned Studio’s empty-state error on scheduled (not-yet-publ
 
 The dashboard Shorts cards are 9:16 (about 0.57 wide-to-tall). A 16:9 custom thumb is center-cropped into that card, which sliced the hooks (`TH` / `RING`, `HNO` / `NIFE`, `BY` / `CIDE`).
 
-The live Periodic Table Shorts thumbs are full-bleed **1280×720** posters: one 3D-cartoon scene, title painted into the picture, bold italic yellow with a dark outline. The three scheduled X-ray thumbs were rebuilt in that design, each with its own scene, and saved in Studio:
+The live Periodic Table Shorts thumbs are full-bleed posters with the title in yellow on the picture. The three scheduled X-ray thumbs now use the story plate for that Short, with the title over the picture, and are saved in Studio:
 
-- S1 `hos_003_thumb_s1_v09.jpg` — BY ACCIDENT — glowing tube — `oowAOWTBoq0` thumb `v=6ab3f1a3`
-- S2 `hos_003_thumb_s2_v09.jpg` — NO KNIFE — bones on a plate — `xvanpsLeADE` thumb `v=6ab3f1c0`
-- S3 `hos_003_thumb_s3_v09.jpg` — THE RING — wedding ring on the plate — `zI_eD3vFWmE` thumb `v=6ab3f1dd`
+- S1 `hos_003_thumb_s1_v10.jpg` — BY ACCIDENT on the glowing tube — `oowAOWTBoq0` thumb `v=6ab3f464`
+- S2 `hos_003_thumb_s2_v10.jpg` — NO KNIFE on the bones — `xvanpsLeADE` thumb `v=6ab3f481`
+- S3 `hos_003_thumb_s3_v10.jpg` — THE RING on the wedding-ring plate — `zI_eD3vFWmE` thumb `v=6ab3f49e`
 
-The content-list previews are full-bleed and the hooks read whole. KEEP titles and Scheduled clocks stayed. The long Premiere thumb was not changed. Jpg masters stay gitignored.
+KEEP titles and Scheduled clocks stayed. The long Premiere thumb was not changed. Jpg masters stay gitignored.
 
 ## Still true / not done
 
