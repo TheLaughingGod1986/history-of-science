@@ -1,0 +1,67 @@
+{
+  "long": {
+    "url": "https://studio.youtube.com/video/frP_YrNShsU/edit",
+    "titleLong": true,
+    "titleS1": null,
+    "titleS2": null,
+    "titleS3": null,
+    "parent": true,
+    "go": false,
+    "chapters": true,
+    "premiere": true,
+    "related": false,
+    "kidsSetNo": true,
+    "noticesDash": true
+  },
+  "s1": {
+    "url": "https://studio.youtube.com/video/oowAOWTBoq0/edit",
+    "titleLong": null,
+    "titleS1": true,
+    "titleS2": null,
+    "titleS3": null,
+    "parent": true,
+    "go": false,
+    "chapters": false,
+    "premiere": false,
+    "related": true,
+    "kidsSetNo": true,
+    "noticesDash": true
+  },
+  "s2": {
+    "url": "https://studio.youtube.com/video/xvanpsLeADE/edit",
+    "titleLong": null,
+    "titleS1": null,
+    "titleS2": true,
+    "titleS3": null,
+    "parent": true,
+    "go": false,
+    "chapters": false,
+    "premiere": false,
+    "related": true,
+    "kidsSetNo": true,
+    "noticesDash": true
+  },
+  "s3": {
+    "url": "https://studio.youtube.com/video/zI_eD3vFWmE/edit",
+    "titleLong": null,
+    "titleS1": null,
+    "titleS2": null,
+    "titleS3": true,
+    "parent": true,
+    "go": false,
+    "chapters": false,
+    "premiere": false,
+    "related": true,
+    "kidsSetNo": true,
+    "noticesDash": true
+  },
+  "claims": {
+    "noCopyrighted": true,
+    "noClaims": true
+  },
+  "endScreen": {
+    "subscribe": true,
+    "discard": false,
+    "video": true
+  }
+}

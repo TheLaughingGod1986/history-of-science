@@ -1,0 +1,494 @@
+{
+  "es_save": {
+    "t": "Save",
+    "aria": "",
+    "x": 1274,
+    "y": 78,
+    "w": 62,
+    "h": 36,
+    "tag": "DIV"
+  },
+  "es": {
+    "hasSubscribe": true,
+    "discardStill": false,
+    "savedToast": false,
+    "snip": "Video editor | Skip navigation | Ask Studio | Create | Channel content | PREMIERE | Your video | How Did We Discover X-rays? | Details | Analytics | Editor | Comments | Subtitles | Claims | Clips and Shorts | Settings | Send feedback | End screen | Back | Save | Element | Subscribe element | \u2007:\u2007\u2007:\u2007\u2007 | \u2012 | \u2007:\u2007\u2007:\u2007\u2007 | Subscribe: History of Science | Show hovercard outline | 0:00:00 | Undo | Redo | Subscribe: History of Science | Video: Best for viewer | 0:00:00 | Edit and apply elements on a timeline | In one place, you can edit your video, add end screens and more"
+  },
+  "tags": {
+    "long": {
+      "show": {
+        "t": "Show more",
+        "aria": "Show advanced settings",
+        "x": 272,
+        "y": 683,
+        "w": 103,
+        "h": 36,
+        "tag": "YTCP-BUTTON"
+      },
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "ph": "Search across your channel",
+          "aria": "",
+          "id": "query-input",
+          "x": 420,
+          "y": 12,
+          "w": 560,
+          "h": 40,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "ph": "",
+          "aria": "Tags",
+          "id": "text-input",
+          "x": 665,
+          "y": -1659,
+          "w": 187,
+          "h": 32,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "None",
+          "aria": "Video location",
+          "id": "",
+          "x": 640,
+          "y": -1259,
+          "w": 316,
+          "h": 24,
+          "vis": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "ph": "Help learners find your explanations of how to solve problems. Write the time that the explanation starts and the question that is answered. Each timecode and problem must be on their own line. For example:\n\n0:32 What is the top speed of a 2\u00a0kg ball dropped from 10\u00a0m?\n1:22 Calculate the distance travelled by an ice skater travelling at 2.0\u00a0m/s for 3.5\u00a0seconds.",
+          "aria": "Help learners find your explanations of how to solve problems. Write the time that the explanation starts and the question that is answered. Each timecode and problem must be on their own line. For example:\n\n0:32 What is the top speed of a 2\u00a0kg ball dropped from 10\u00a0m?\n1:22 Calculate the distance travelled by an ice skater travelling at 2.0\u00a0m/s for 3.5\u00a0seconds.",
+          "id": "",
+          "x": 272,
+          "y": -587,
+          "w": 696,
+          "h": 174,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "None",
+          "aria": "Exam, course or standard",
+          "id": "",
+          "x": 284,
+          "y": -195,
+          "w": 672,
+          "h": 24,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "ph": "",
+          "aria": "",
+          "id": "",
+          "x": 320,
+          "y": 779,
+          "w": 167,
+          "h": 22,
+          "vis": true
+        }
+      ],
+      "tag_in": {
+        "tag": "INPUT",
+        "type": "",
+        "ph": "",
+        "aria": "",
+        "id": "",
+        "x": 320,
+        "y": 779,
+        "w": 167,
+        "h": 22,
+        "vis": true
+      },
+      "typed": true,
+      "saved": true
+    },
+    "s1": {
+      "show": {
+        "t": "Show more",
+        "aria": "Show advanced settings",
+        "x": 272,
+        "y": 683,
+        "w": 103,
+        "h": 36,
+        "tag": "YTCP-BUTTON"
+      },
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "ph": "Search across your channel",
+          "aria": "",
+          "id": "query-input",
+          "x": 420,
+          "y": 12,
+          "w": 560,
+          "h": 40,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "ph": "",
+          "aria": "Tags",
+          "id": "text-input",
+          "x": 671,
+          "y": -1033,
+          "w": 181,
+          "h": 32,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "None",
+          "aria": "Video location",
+          "id": "",
+          "x": 640,
+          "y": -633,
+          "w": 316,
+          "h": 24,
+          "vis": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "ph": "Help learners find your explanations of how to solve problems. Write the time that the explanation starts and the question that is answered. Each timecode and problem must be on their own line. For example:\n\n0:32 What is the top speed of a 2\u00a0kg ball dropped from 10\u00a0m?\n1:22 Calculate the distance travelled by an ice skater travelling at 2.0\u00a0m/s for 3.5\u00a0seconds.",
+          "aria": "Help learners find your explanations of how to solve problems. Write the time that the explanation starts and the question that is answered. Each timecode and problem must be on their own line. For example:\n\n0:32 What is the top speed of a 2\u00a0kg ball dropped from 10\u00a0m?\n1:22 Calculate the distance travelled by an ice skater travelling at 2.0\u00a0m/s for 3.5\u00a0seconds.",
+          "id": "",
+          "x": 272,
+          "y": 5,
+          "w": 696,
+          "h": 174,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "None",
+          "aria": "Exam, course or standard",
+          "id": "",
+          "x": 284,
+          "y": 397,
+          "w": 672,
+          "h": 24,
+          "vis": true
+        }
+      ],
+      "tag_in": {
+        "tag": "INPUT",
+        "type": "text",
+        "ph": "None",
+        "aria": "Exam, course or standard",
+        "id": "",
+        "x": 284,
+        "y": 397,
+        "w": 672,
+        "h": 24,
+        "vis": true
+      },
+      "typed": true,
+      "saved": true
+    },
+    "s2": {
+      "show": {
+        "t": "Show more",
+        "aria": "Show advanced settings",
+        "x": 272,
+        "y": 683,
+        "w": 103,
+        "h": 36,
+        "tag": "YTCP-BUTTON"
+      },
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "ph": "Search across your channel",
+          "aria": "",
+          "id": "query-input",
+          "x": 420,
+          "y": 12,
+          "w": 560,
+          "h": 40,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "ph": "",
+          "aria": "Tags",
+          "id": "text-input",
+          "x": 671,
+          "y": -1033,
+          "w": 181,
+          "h": 32,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "None",
+          "aria": "Video location",
+          "id": "",
+          "x": 640,
+          "y": -633,
+          "w": 316,
+          "h": 24,
+          "vis": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "ph": "Help learners find your explanations of how to solve problems. Write the time that the explanation starts and the question that is answered. Each timecode and problem must be on their own line. For example:\n\n0:32 What is the top speed of a 2\u00a0kg ball dropped from 10\u00a0m?\n1:22 Calculate the distance travelled by an ice skater travelling at 2.0\u00a0m/s for 3.5\u00a0seconds.",
+          "aria": "Help learners find your explanations of how to solve problems. Write the time that the explanation starts and the question that is answered. Each timecode and problem must be on their own line. For example:\n\n0:32 What is the top speed of a 2\u00a0kg ball dropped from 10\u00a0m?\n1:22 Calculate the distance travelled by an ice skater travelling at 2.0\u00a0m/s for 3.5\u00a0seconds.",
+          "id": "",
+          "x": 272,
+          "y": 5,
+          "w": 696,
+          "h": 174,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "None",
+          "aria": "Exam, course or standard",
+          "id": "",
+          "x": 284,
+          "y": 397,
+          "w": 672,
+          "h": 24,
+          "vis": true
+        }
+      ],
+      "tag_in": {
+        "tag": "INPUT",
+        "type": "text",
+        "ph": "None",
+        "aria": "Exam, course or standard",
+        "id": "",
+        "x": 284,
+        "y": 397,
+        "w": 672,
+        "h": 24,
+        "vis": true
+      },
+      "typed": true,
+      "saved": true
+    },
+    "s3": {
+      "show": {
+        "t": "Show more",
+        "aria": "Show advanced settings",
+        "x": 272,
+        "y": 683,
+        "w": 103,
+        "h": 36,
+        "tag": "YTCP-BUTTON"
+      },
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "",
+          "ph": "Search across your channel",
+          "aria": "",
+          "id": "query-input",
+          "x": 420,
+          "y": 12,
+          "w": 560,
+          "h": 40,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "",
+          "ph": "",
+          "aria": "Tags",
+          "id": "text-input",
+          "x": 671,
+          "y": -1033,
+          "w": 181,
+          "h": 32,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "None",
+          "aria": "Video location",
+          "id": "",
+          "x": 640,
+          "y": -633,
+          "w": 316,
+          "h": 24,
+          "vis": false
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "ph": "Help learners find your explanations of how to solve problems. Write the time that the explanation starts and the question that is answered. Each timecode and problem must be on their own line. For example:\n\n0:32 What is the top speed of a 2\u00a0kg ball dropped from 10\u00a0m?\n1:22 Calculate the distance travelled by an ice skater travelling at 2.0\u00a0m/s for 3.5\u00a0seconds.",
+          "aria": "Help learners find your explanations of how to solve problems. Write the time that the explanation starts and the question that is answered. Each timecode and problem must be on their own line. For example:\n\n0:32 What is the top speed of a 2\u00a0kg ball dropped from 10\u00a0m?\n1:22 Calculate the distance travelled by an ice skater travelling at 2.0\u00a0m/s for 3.5\u00a0seconds.",
+          "id": "",
+          "x": 272,
+          "y": 5,
+          "w": 696,
+          "h": 174,
+          "vis": false
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "ph": "None",
+          "aria": "Exam, course or standard",
+          "id": "",
+          "x": 284,
+          "y": 397,
+          "w": 672,
+          "h": 24,
+          "vis": true
+        }
+      ],
+      "tag_in": {
+        "tag": "INPUT",
+        "type": "text",
+        "ph": "None",
+        "aria": "Exam, course or standard",
+        "id": "",
+        "x": 284,
+        "y": 397,
+        "w": 672,
+        "h": 24,
+        "vis": true
+      },
+      "typed": true,
+      "saved": true
+    }
+  },
+  "draft_title": {
+    "x": 456,
+    "y": 567,
+    "w": 289,
+    "h": 20
+  },
+  "row_icons": [
+    {
+      "aria": "Details",
+      "t": "",
+      "x": 448,
+      "y": 591,
+      "w": 40,
+      "h": 40,
+      "tag": "YTCP-ICON-BUTTON"
+    },
+    {
+      "aria": "View on YouTube",
+      "t": "",
+      "x": 496,
+      "y": 591,
+      "w": 40,
+      "h": 40,
+      "tag": "YTCP-ICON-BUTTON"
+    },
+    {
+      "aria": "Options",
+      "t": "",
+      "x": 544,
+      "y": 591,
+      "w": 40,
+      "h": 40,
+      "tag": "YTCP-ICON-BUTTON"
+    }
+  ],
+  "kebab": {
+    "aria": "Options",
+    "t": "",
+    "x": 544,
+    "y": 591,
+    "w": 40,
+    "h": 40,
+    "tag": "YTCP-ICON-BUTTON"
+  },
+  "menu_items": [
+    {
+      "t": "Delete forever",
+      "aria": "",
+      "x": 324,
+      "y": 731,
+      "w": 260,
+      "h": 32,
+      "tag": "TP-YT-PAPER-ITEM"
+    },
+    {
+      "t": "Delete forever",
+      "aria": "",
+      "x": 388,
+      "y": 732,
+      "w": 172,
+      "h": 30,
+      "tag": "DIV"
+    },
+    {
+      "t": "Delete forever",
+      "aria": "",
+      "x": 388,
+      "y": 732,
+      "w": 172,
+      "h": 30,
+      "tag": "DIV"
+    },
+    {
+      "t": "Delete forever",
+      "aria": "",
+      "x": 388,
+      "y": 732,
+      "w": 99,
+      "h": 30,
+      "tag": "DIV"
+    },
+    {
+      "t": "Delete forever",
+      "aria": "",
+      "x": 388,
+      "y": 732,
+      "w": 99,
+      "h": 30,
+      "tag": "YT-FORMATTED-STRING"
+    }
+  ],
+  "delete": {
+    "t": "Delete forever",
+    "aria": "",
+    "x": 324,
+    "y": 731,
+    "w": 260,
+    "h": 32,
+    "tag": "TP-YT-PAPER-ITEM"
+  },
+  "confirm": null,
+  "leftoverStill": true,
+  "scheduled": {
+    "s1": true,
+    "s2": true,
+    "s3": true,
+    "s1Date": true,
+    "s2Date": true,
+    "s3Date": true
+  },
+  "videos": {
+    "premiere": true,
+    "premiereDate": true,
+    "scheduled": true
+  }
+}

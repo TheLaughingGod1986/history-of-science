@@ -1,0 +1,65 @@
+{
+  "plus": {
+    "t": "End screen",
+    "x": 272,
+    "y": 326,
+    "w": 527.5,
+    "h": 53,
+    "tag": "DIV"
+  },
+  "template": null,
+  "one_sub": {
+    "t": "1 video, 1 subscribe",
+    "x": 272,
+    "y": 189,
+    "w": 240,
+    "h": 165,
+    "tag": "DIV"
+  },
+  "done": {
+    "t": "Save",
+    "x": 1273.703125,
+    "y": 78,
+    "w": 62.296875,
+    "h": 36,
+    "tag": "DIV"
+  },
+  "show_more": {
+    "t": "Show more",
+    "x": 272,
+    "y": 683,
+    "w": 102.53125,
+    "h": 36,
+    "tag": "YTCP-BUTTON"
+  },
+  "tags_lbl": {
+    "t": "Tags",
+    "x": 272,
+    "y": -1057.46875,
+    "w": 696,
+    "h": 22,
+    "tag": "DIV"
+  },
+  "save_tags": {
+    "t": "Save",
+    "x": 1241.703125,
+    "y": 81,
+    "w": 62.296875,
+    "h": 36,
+    "tag": "YTCP-BUTTON"
+  },
+  "draft_title": {
+    "x": 456,
+    "y": 567,
+    "w": 289.125,
+    "h": 20
+  },
+  "del_toolbar": null,
+  "del_confirm": null,
+  "leftoverStill": true,
+  "scheduled": {
+    "s1": true,
+    "s2": true,
+    "s3": true
+  }
+}
