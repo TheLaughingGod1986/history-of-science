@@ -1,0 +1,74 @@
+{
+  "long_desc_has_title_first": true,
+  "long_desc_chapters": true,
+  "before": [
+    "x-rays",
+    "xray discovery",
+    "wilhelm r\u00f6ntgen",
+    "roentgen",
+    "1895",
+    "bertha r\u00f6ntgen",
+    "first x-ray",
+    "invisible light",
+    "cathode ray",
+    "history of science",
+    "medical history",
+    "how were x-rays discovered",
+    "bones without surgery",
+    "fluorescent cardboard"
+  ],
+  "after": [
+    "x-rays",
+    "xray discovery",
+    "wilhelm r\u00f6ntgen",
+    "roentgen",
+    "1895",
+    "bertha r\u00f6ntgen",
+    "first x-ray",
+    "cathode ray",
+    "history of science",
+    "medical history",
+    "how were x-rays discovered",
+    "fluorescent cardboard"
+  ],
+  "counter": "192/500",
+  "long": {
+    "cannotSave": false,
+    "changesSaved": false,
+    "undoStill": true,
+    "counter": "192/500",
+    "titleStill": true,
+    "premiere": true,
+    "descOpens": true,
+    "chapters": true
+  },
+  "shorts": {
+    "s1": {
+      "titleStill": true,
+      "parentUrl": true,
+      "go": false,
+      "undoStill": true,
+      "changesSaved": false
+    },
+    "s2": {
+      "titleStill": true,
+      "parentUrl": true,
+      "go": false,
+      "undoStill": true,
+      "changesSaved": false
+    },
+    "s3": {
+      "titleStill": true,
+      "parentUrl": true,
+      "go": false,
+      "undoStill": true,
+      "changesSaved": false
+    }
+  },
+  "list": {
+    "leftover": false,
+    "s1": true,
+    "s2": true,
+    "s3": true
+  }
+}

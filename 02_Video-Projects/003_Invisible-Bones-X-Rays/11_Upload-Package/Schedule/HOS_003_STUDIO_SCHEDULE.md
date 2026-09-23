@@ -16,7 +16,9 @@ Studio confirmed 23 Sep 2026 on `@HistoryOfScienceYT` Content:
 
 - Videos: Premiere **24 Sept 2026** (Scheduled)
 - Shorts: S3 **27** / S2 **26** / S1 **25** Sept 2026 (Scheduled)
-- Leftover private draft `hos 003 s2 bones no knife v01` — do **not** delete unless asked
+- Leftover filename draft `hos 003 s2 bones no knife v01` **deleted** 23 Sep (channel cleanup). KEEP S1/S2/S3 untouched.
+
+Scout polish + tech audit: `HOS_003_SCOUT_AUDIT.md`
 
 Chrome: `~/.hos-chrome-youtube-studio` CDP `:9460`.
 

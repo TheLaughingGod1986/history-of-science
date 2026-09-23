@@ -1,0 +1,158 @@
+{
+  "before": [
+    {
+      "t": "x-rays",
+      "x": 284,
+      "y": 286,
+      "w": 82,
+      "h": 32
+    },
+    {
+      "t": "xray discovery",
+      "x": 374,
+      "y": 286,
+      "w": 134,
+      "h": 32
+    },
+    {
+      "t": "wilhelm r\u00f6ntgen",
+      "x": 516,
+      "y": 286,
+      "w": 144,
+      "h": 32
+    },
+    {
+      "t": "roentgen",
+      "x": 668,
+      "y": 286,
+      "w": 100,
+      "h": 32
+    },
+    {
+      "t": "1895",
+      "x": 776,
+      "y": 286,
+      "w": 76,
+      "h": 32
+    },
+    {
+      "t": "bertha r\u00f6ntgen",
+      "x": 284,
+      "y": 326,
+      "w": 137,
+      "h": 32
+    },
+    {
+      "t": "first x-ray",
+      "x": 429,
+      "y": 326,
+      "w": 103,
+      "h": 32
+    },
+    {
+      "t": "cathode ray",
+      "x": 540,
+      "y": 326,
+      "w": 117,
+      "h": 32
+    },
+    {
+      "t": "history of science",
+      "x": 665,
+      "y": 326,
+      "w": 155,
+      "h": 32
+    },
+    {
+      "t": "medical history",
+      "x": 284,
+      "y": 366,
+      "w": 140,
+      "h": 32
+    },
+    {
+      "t": "how were x-rays discovered",
+      "x": 432,
+      "y": 366,
+      "w": 217,
+      "h": 32
+    },
+    {
+      "t": "fluorescent cardboard",
+      "x": 657,
+      "y": 366,
+      "w": 182,
+      "h": 32
+    }
+  ],
+  "tag_box": {
+    "x": 284,
+    "y": 406,
+    "w": 568,
+    "h": 32
+  },
+  "added": [
+    "how did we discover x-rays",
+    "x ray",
+    "wilhelm roentgen",
+    "r\u00f6ntgen",
+    "w\u00fcrzburg",
+    "bertha roentgen",
+    "first xray",
+    "cathode tube",
+    "x-rays discovered by accident",
+    "bones without cutting",
+    "wedding ring x-ray",
+    "invisible bones",
+    "discovery of x-rays",
+    "history of medicine"
+  ],
+  "after": [
+    "x-rays",
+    "xray discovery",
+    "wilhelm r\u00f6ntgen",
+    "roentgen",
+    "1895",
+    "bertha r\u00f6ntgen",
+    "first x-ray",
+    "cathode ray",
+    "history of science",
+    "medical history",
+    "how were x-rays discovered",
+    "fluorescent cardboard",
+    "how did we discover x-rays",
+    "x ray",
+    "wilhelm roentgen",
+    "r\u00f6ntgen",
+    "w\u00fcrzburg",
+    "bertha roentgen",
+    "first xray",
+    "cathode tube",
+    "x-rays discovered by accident",
+    "bones without cutting",
+    "wedding ring x-ray",
+    "invisible bones",
+    "discovery of x-rays",
+    "history of medicine"
+  ],
+  "counter": "450/500",
+  "save_hit": {
+    "t": "Save",
+    "aria": "",
+    "x": 1242,
+    "y": 81,
+    "w": 62,
+    "h": 36,
+    "tag": "YTCP-BUTTON"
+  },
+  "result": {
+    "cannotSave": false,
+    "undoStill": true,
+    "changesSaved": true,
+    "counter": "450/500",
+    "chapters": true,
+    "premiere": true,
+    "title": true,
+    "hasXraySpace": true
+  }
+}

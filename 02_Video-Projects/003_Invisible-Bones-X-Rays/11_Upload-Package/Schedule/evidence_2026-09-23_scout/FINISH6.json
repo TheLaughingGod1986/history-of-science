@@ -1,0 +1,246 @@
+{
+  "draft_title": {
+    "x": 456,
+    "y": 559,
+    "w": 289,
+    "h": 32
+  },
+  "icons": [
+    {
+      "aria": "Details",
+      "x": 448,
+      "y": 591,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "aria": "View on YouTube",
+      "x": 496,
+      "y": 591,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "aria": "Options",
+      "x": 544,
+      "y": 591,
+      "w": 40,
+      "h": 40
+    }
+  ],
+  "dialogHasLeftover": true,
+  "understand": {
+    "t": "I understand that deleting a draft video from YouTube is permanent and cannot be",
+    "aria": "",
+    "x": 436,
+    "y": 416,
+    "w": 528,
+    "h": 52,
+    "tag": "DIV"
+  },
+  "delete_btn": {
+    "t": "Delete draft video",
+    "aria": "",
+    "x": 822,
+    "y": 500,
+    "w": 142,
+    "h": 36,
+    "tag": "YTCP-BUTTON"
+  },
+  "leftoverStill": false,
+  "scheduled": {
+    "s1": true,
+    "s2": true,
+    "s3": true
+  },
+  "tags": {
+    "long": {
+      "found": {
+        "x": 665,
+        "y": 406,
+        "w": 187,
+        "h": 32
+      },
+      "typed": true,
+      "saved": true,
+      "chips_before": [
+        "x-rays",
+        "xray discovery",
+        "wilhelm r\u00f6ntgen",
+        "roentgen",
+        "1895",
+        "bertha r\u00f6ntgen",
+        "first x-ray",
+        "invisible light",
+        "cathode ray",
+        "history of science",
+        "medical history",
+        "how were x-rays discovered",
+        "bones without surgery",
+        "fluorescent cardboard"
+      ],
+      "chips_after": [
+        "x-rays",
+        "xray discovery",
+        "wilhelm r\u00f6ntgen",
+        "roentgen",
+        "1895",
+        "bertha r\u00f6ntgen",
+        "first x-ray",
+        "invisible light",
+        "cathode ray",
+        "history of science",
+        "medical history",
+        "how were x-rays discovered",
+        "bones without surgery",
+        "fluorescent cardboard",
+        "how did we discover x-rays",
+        "x ray",
+        "wilhelm roentgen",
+        "r\u00f6ntgen",
+        "wilhelm conrad r\u00f6ntgen",
+        "w\u00fcrzburg",
+        "bertha roentgen",
+        "first xray",
+        "cathode tube",
+        "x-rays discovered by accident",
+        "bones without cutting",
+        "wedding ring x-ray",
+        "invisible bones",
+        "discovery of x-rays",
+        "history of medicine",
+        "science history",
+        "educational animation"
+      ],
+      "undone": true
+    },
+    "s1": {
+      "found": {
+        "x": 671,
+        "y": 406,
+        "w": 181,
+        "h": 32
+      },
+      "typed": true,
+      "saved": true,
+      "chips_before": [
+        "x-rays",
+        "r\u00f6ntgen",
+        "roentgen",
+        "history of science",
+        "first x-ray",
+        "bertha",
+        "cardboard glow",
+        "invisible bones"
+      ],
+      "chips_after": [
+        "x-rays",
+        "r\u00f6ntgen",
+        "roentgen",
+        "history of science",
+        "first x-ray",
+        "bertha",
+        "cardboard glow",
+        "invisible bones",
+        "how did we discover x-rays",
+        "x-rays discovered by accident",
+        "bones without cutting",
+        "wedding ring x-ray",
+        "bertha r\u00f6ntgen",
+        "cathode ray",
+        "wilhelm r\u00f6ntgen"
+      ],
+      "undone": true
+    },
+    "s2": {
+      "found": {
+        "x": 671,
+        "y": 406,
+        "w": 181,
+        "h": 32
+      },
+      "typed": true,
+      "saved": true,
+      "chips_before": [
+        "x-rays",
+        "r\u00f6ntgen",
+        "roentgen",
+        "history of science",
+        "first x-ray",
+        "bertha",
+        "cardboard glow",
+        "invisible bones"
+      ],
+      "chips_after": [
+        "x-rays",
+        "r\u00f6ntgen",
+        "roentgen",
+        "history of science",
+        "first x-ray",
+        "bertha",
+        "cardboard glow",
+        "invisible bones",
+        "how did we discover x-rays",
+        "x-rays discovered by accident",
+        "bones without cutting",
+        "wedding ring x-ray",
+        "bertha r\u00f6ntgen",
+        "cathode ray",
+        "wilhelm r\u00f6ntgen"
+      ],
+      "undone": true
+    },
+    "s3": {
+      "found": {
+        "x": 671,
+        "y": 406,
+        "w": 181,
+        "h": 32
+      },
+      "typed": true,
+      "saved": true,
+      "chips_before": [
+        "x-rays",
+        "r\u00f6ntgen",
+        "roentgen",
+        "history of science",
+        "first x-ray",
+        "bertha",
+        "cardboard glow",
+        "invisible bones"
+      ],
+      "chips_after": [
+        "x-rays",
+        "r\u00f6ntgen",
+        "roentgen",
+        "history of science",
+        "first x-ray",
+        "bertha",
+        "cardboard glow",
+        "invisible bones",
+        "how did we discover x-rays",
+        "x-rays discovered by accident",
+        "bones without cutting",
+        "wedding ring x-ray",
+        "bertha r\u00f6ntgen",
+        "cathode ray",
+        "wilhelm r\u00f6ntgen"
+      ],
+      "undone": true
+    }
+  },
+  "final_shorts": {
+    "leftoverStill": false,
+    "s1": true,
+    "s2": true,
+    "s3": true,
+    "s1Date": true,
+    "s2Date": true,
+    "s3Date": true
+  },
+  "final_videos": {
+    "premiere": true,
+    "date": true,
+    "scheduled": true
+  }
+}
