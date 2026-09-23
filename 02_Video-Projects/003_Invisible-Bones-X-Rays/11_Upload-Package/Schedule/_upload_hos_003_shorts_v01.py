@@ -633,6 +633,252 @@ def open_upload(page) -> dict:
     return info
 
 
+def mouse_hits(page):
+    return page.evaluate(
+        """() => {
+          const hits=[];
+          const walk=(r,d=0)=>{
+            if(!r||d>50) return;
+            const sel = r.querySelectorAll
+              ? r.querySelectorAll('ytcp-button,button,[role=button],tp-yt-paper-radio-button,ytcp-text-dropdown-trigger,ytcp-entity-card,div,p,span,input')
+              : [];
+            for (const el of sel) {
+              const t=((el.innerText||'')+' '+(el.getAttribute('aria-label')||'')).replace(/\\s+/g,' ').trim();
+              const b=el.getBoundingClientRect();
+              if (b.width<8 || b.height<8) continue;
+              hits.push({t:t.slice(0,110), tag:el.tagName, w:Math.round(b.width), h:Math.round(b.height), x:Math.round(b.x), y:Math.round(b.y)});
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+              if (el.shadowRoot) walk(el.shadowRoot, d+1);
+          };
+          walk(document.querySelector('ytcp-uploads-dialog') || document);
+          return hits;
+        }"""
+    )
+
+
+def mouse_click_hit(page, h) -> None:
+    page.mouse.click(h["x"] + max(8, h["w"] / 2), h["y"] + h["h"] / 2)
+    page.wait_for_timeout(1200)
+
+
+def click_dialog_next(page) -> dict | None:
+    nxt = [
+        h
+        for h in mouse_hits(page)
+        if h["t"].strip() == "Next" and h["tag"] == "YTCP-BUTTON" and h["w"] > 40
+    ]
+    nxt.sort(key=lambda h: h["y"], reverse=True)
+    if not nxt:
+        return None
+    mouse_click_hit(page, nxt[0])
+    return nxt[0]
+
+
+def wizard_related(page, parent: str) -> str:
+    t = ""
+    try:
+        t = page.locator("ytcp-uploads-dialog").first.inner_text()
+    except Exception:
+        t = snip(page, 3000)
+    if PARENT_TITLE in t and "Related video" in t:
+        chunk = t.split("Related video", 1)[-1][:120]
+        if PARENT_TITLE in chunk:
+            return "already"
+    adds = [
+        h
+        for h in mouse_hits(page)
+        if h["t"].strip() in ("Add", "Add video") and h["y"] > 180 and h["tag"] == "YTCP-BUTTON"
+    ]
+    if not adds:
+        return "no_add"
+    mouse_click_hit(page, adds[0])
+    page.wait_for_timeout(1500)
+    cards = page.evaluate(
+        """(title) => {
+          const hits=[];
+          const walk=(r,d=0)=>{
+            if(!r||d>50) return;
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('ytcp-entity-card,div') : [])) {
+              const tx=(el.innerText||'').replace(/\\s+/g,' ').trim();
+              if (tx.includes(title) && tx.length<160) {
+                const b=el.getBoundingClientRect();
+                if (b.width>80 && b.height>40 && b.width<300)
+                  hits.push({t:tx.slice(0,80), tag:el.tagName, w:Math.round(b.width), h:Math.round(b.height), x:Math.round(b.x), y:Math.round(b.y)});
+              }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+              if (el.shadowRoot) walk(el.shadowRoot, d+1);
+          };
+          walk(document);
+          return hits;
+        }""",
+        PARENT_TITLE,
+    )
+    if not cards:
+        return "no_card"
+    cards.sort(key=lambda h: h["w"] * h["h"])
+    mouse_click_hit(page, cards[0])
+    page.wait_for_timeout(1500)
+    return "picked"
+
+
+def wizard_schedule(page, job: dict) -> dict:
+    info: dict = {}
+    hs = mouse_hits(page)
+    sched = [
+        h
+        for h in hs
+        if "Select a date to make your video public" in h["t"]
+        or (h["t"].startswith("Schedule") and h["h"] >= 20 and h["w"] > 200)
+    ]
+    sched.sort(key=lambda h: h["w"] * h["h"])
+    if sched:
+        mouse_click_hit(page, sched[0])
+        info["open"] = sched[0]["t"][:60]
+        page.wait_for_timeout(800)
+    date_el = [
+        h
+        for h in mouse_hits(page)
+        if re.search(r"^\d{1,2}\s+(Sept|Sep|September)\s+2026$", h["t"]) and h["w"] < 220
+    ]
+    if date_el:
+        mouse_click_hit(page, date_el[0])
+        page.wait_for_timeout(400)
+    page.keyboard.type(job["date_typed"], delay=25)
+    page.keyboard.press("Enter")
+    page.wait_for_timeout(700)
+    day = str(job["day"])
+    cells = page.evaluate(
+        """(day) => {
+          const hits=[];
+          const walk=(r,d=0)=>{
+            if(!r||d>50) return;
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('button,[role=gridcell],div,span') : [])) {
+              const t=(el.innerText||'').trim();
+              const aria=el.getAttribute('aria-label')||'';
+              const b=el.getBoundingClientRect();
+              if (b.width<8||b.height<8||b.width>100) continue;
+              if (t===String(day) || (aria.includes(day) && /Sept/i.test(aria)))
+                hits.push({t, aria:aria.slice(0,70), w:Math.round(b.width), h:Math.round(b.height), x:Math.round(b.x), y:Math.round(b.y)});
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+              if (el.shadowRoot) walk(el.shadowRoot, d+1);
+          };
+          walk(document);
+          return hits;
+        }""",
+        day,
+    )
+    picked = None
+    for c in cells or []:
+        if "Sept" in (c.get("aria") or ""):
+            picked = c
+            break
+    if not picked and cells:
+        picked = cells[0]
+    if picked:
+        page.mouse.click(picked["x"] + picked["w"] / 2, picked["y"] + picked["h"] / 2)
+        info["day"] = picked
+        page.wait_for_timeout(400)
+    times = page.evaluate(
+        """() => {
+          const hits=[];
+          const walk=(r,d=0)=>{
+            if(!r||d>50) return;
+            for (const inp of (r.querySelectorAll ? r.querySelectorAll('input') : [])) {
+              if (/^\\d{1,2}:\\d{2}$/.test(inp.value||'')) {
+                const b=inp.getBoundingClientRect();
+                hits.push({val:inp.value, x:b.x, y:b.y, w:b.width, h:b.height});
+              }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+              if (el.shadowRoot) walk(el.shadowRoot, d+1);
+          };
+          walk(document.querySelector('ytcp-uploads-dialog'));
+          return hits;
+        }"""
+    )
+    if times:
+        tm = times[0]
+        page.mouse.click(tm["x"] + 10, tm["y"] + tm["h"] / 2, click_count=3)
+        page.keyboard.type(job["time"], delay=40)
+        page.keyboard.press("Tab")
+        page.wait_for_timeout(500)
+    after = page.evaluate(
+        """() => {
+          let date='', time='';
+          const walk=(r,d=0)=>{
+            if(!r||d>40) return;
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('ytcp-text-dropdown-trigger,input,span,div') : [])) {
+              const t=(el.innerText||el.value||'').replace(/\\s+/g,' ').trim();
+              if (/^\\d{1,2}\\s+(Sept|Sep|September)\\s+2026$/i.test(t) && t.length<28) date=t;
+              if (/^\\d{1,2}:\\d{2}$/.test(el.value||'')) time=el.value;
+            }
+            for (const n of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+              if (n.shadowRoot) walk(n.shadowRoot, d+1);
+          };
+          walk(document.querySelector('ytcp-uploads-dialog'));
+          return {date, time};
+        }"""
+    )
+    info["after"] = after
+    if str(job["day"]) not in str(after.get("date") or ""):
+        info["ok"] = False
+        info["error"] = f"date_not_set:{after}"
+        return info
+    btn = [
+        h
+        for h in mouse_hits(page)
+        if h["t"].strip() == "Schedule"
+        and h["tag"] == "YTCP-BUTTON"
+        and h["y"] > 600
+        and h["w"] > 50
+    ]
+    if not btn:
+        info["ok"] = False
+        info["error"] = "no_schedule_btn"
+        return info
+    mouse_click_hit(page, btn[0])
+    page.wait_for_timeout(4500)
+    info["ok"] = True
+    return info
+
+
+def wizard_to_schedule(page, job: dict, parent: str) -> dict:
+    out: dict = {}
+    nxt0 = click_dialog_next(page)
+    out["next0"] = nxt0
+    page.wait_for_timeout(800)
+    out["related"] = wizard_related(page, parent)
+    page.screenshot(path=str(EV / f"{job['slot']}_related.png"), full_page=True)
+    for i in range(8):
+        t = ""
+        try:
+            t = page.locator("ytcp-uploads-dialog").first.inner_text()
+        except Exception:
+            t = snip(page, 2500)
+        if re.search(r"Save or publish", t, re.I):
+            out["visAt"] = i
+            break
+        nxt = click_dialog_next(page)
+        out[f"next_{i}"] = nxt
+        if not nxt:
+            break
+        page.wait_for_timeout(400)
+    else:
+        out["ok"] = False
+        out["error"] = "no_vis"
+        return out
+    page.screenshot(path=str(EV / f"{job['slot']}_visibility.png"), full_page=True)
+    out["schedule"] = wizard_schedule(page, job)
+    page.screenshot(path=str(EV / f"{job['slot']}_after_schedule.png"), full_page=True)
+    out["ok"] = bool((out.get("schedule") or {}).get("ok"))
+    if not out["ok"]:
+        out["error"] = (out.get("schedule") or {}).get("error") or "schedule_fail"
+    return out
+
+
 def upload_one(page, job: dict, parent: str) -> dict:
     path = Path(job["file"])
     desc = job["desc"].read_text().replace("PREMIERE_VIDEO_ID_TBD", parent)
@@ -746,39 +992,22 @@ def upload_one(page, job: dict, parent: str) -> dict:
     else:
         out["thumbAttempt"] = "missing_file"
     page.screenshot(path=str(EV / f"{job['slot']}_details.png"), full_page=True)
+    m = re.search(r"[?&]udvid=([A-Za-z0-9_-]{11})", page.url or "")
+    if m:
+        out["udvid"] = m.group(1)
 
-    out["next"] = next_until_visibility(page)
-    if out["next"].startswith("vis_"):
-        out["scheduleOpen"] = click_schedule_radio(page)
-        page.wait_for_timeout(600)
-        out["when"] = fill_when(page, job)
-        after = (out["when"] or {}).get("after") or {}
-        if after.get("date") and str(job["day"]) in str(after.get("date")):
-            out["confirm"] = click_schedule_confirm(page)
-        else:
-            out["confirm"] = ""
-            out["whenError"] = f"date_not_set:{after}"
-    else:
-        out["scheduleOpen"] = "skipped_not_vis"
-        out["when"] = {}
-        out["confirm"] = ""
+    wiz = wizard_to_schedule(page, job, parent)
+    out["wizard"] = wiz
     dismiss(page)
     page.wait_for_timeout(1500)
-    new_id = extract_new_id(page, exclude=parent)
+    new_id = out.get("udvid") or extract_new_id(page, exclude=parent)
     out["platformPostId"] = new_id
     out["platformUrl"] = f"https://youtube.com/shorts/{new_id}" if new_id else None
     out["uploadUrl"] = page.url
-    page.screenshot(path=str(EV / f"{job['slot']}_after_schedule.png"), full_page=True)
-    if not new_id:
-        out["ok"] = False
-        out["error"] = "no_id"
-        return out
-    finished = finish_short(page, new_id, job, parent)
-    out["finish"] = finished
-    out["related"] = finished.get("related")
-    out["ok"] = bool(finished.get("ok"))
+    out["related"] = (wiz or {}).get("related")
+    out["ok"] = bool(wiz.get("ok") and new_id)
     if not out["ok"]:
-        out["error"] = finished.get("error") or "finish_fail"
+        out["error"] = wiz.get("error") or ("no_id" if not new_id else "wizard_fail")
     return out
 
 
