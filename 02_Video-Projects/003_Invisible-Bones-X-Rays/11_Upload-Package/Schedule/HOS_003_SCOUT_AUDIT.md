@@ -53,17 +53,17 @@ Analytics pages returned Studio’s empty-state error on scheduled (not-yet-publ
 - Deleted leftover filename draft `hos 003 s2 bones no knife v01` (Draft → Options → Delete forever → Delete draft video). Toast: **Video successfully deleted**.
 - KEEP scheduled Shorts and public 001/002 rows were not touched.
 
-## Shorts list thumbs (23 Sep, after the phone list)
+## Shorts shelf thumbs (23 Sep, dashboard row)
 
-v04 (blur side-bars, Arial restamp, hook stuck in a narrow column) was rejected. The Studio Shorts list showed sliced words next to the Periodic Table posters.
+The dashboard Shorts cards are 9:16 (about 0.57 wide-to-tall). A 16:9 custom thumb is center-cropped into that card, which sliced the hooks (`TH` / `RING`, `HNO` / `NIFE`, `BY` / `CIDE`).
 
-Rebuilt the three scheduled custom thumbs as full-bleed 16:9 cards from the v03 scenes, with the old edge-clipped type removed and a short Didot hook inset so it stays inside the list card:
+The three scheduled custom thumbs are the tall posters again:
 
-- S1 `hos_003_thumb_s1_list_v06.jpg` — BY / ACCIDENT
-- S2 `hos_003_thumb_s2_list_v06.jpg` — NO / KNIFE
-- S3 `hos_003_thumb_s3_list_v06.jpg` — THE / RING
+- S1 `hos_003_s1_cover_v06.jpg` — BY / ACCIDENT
+- S2 `hos_003_s2_cover_v06.jpg` — NO / KNIFE
+- S3 `hos_003_s3_cover_v06.jpg` — THE / RING
 
-Measured yellow-on-stroke margins inside the live list cards: about 36% each side, and 19–43% below the last line. Titles, clocks, Related, and the long Premiere thumb are unchanged. Jpg masters stay gitignored.
+On the Studio portrait preview the yellow type sits inside the card (about 17–25% clear on each side). Titles, clocks, Related, and the long Premiere thumb are unchanged. Jpg masters stay gitignored.
 
 ## Still true / not done
 
