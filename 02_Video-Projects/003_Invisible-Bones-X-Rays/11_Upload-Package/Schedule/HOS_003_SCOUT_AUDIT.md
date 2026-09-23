@@ -57,13 +57,13 @@ Analytics pages returned Studio’s empty-state error on scheduled (not-yet-publ
 
 The dashboard Shorts cards are 9:16 (about 0.57 wide-to-tall). A 16:9 custom thumb is center-cropped into that card, which sliced the hooks (`TH` / `RING`, `HNO` / `NIFE`, `BY` / `CIDE`).
 
-The three scheduled custom thumbs are the tall posters again:
+The Periodic Table Shorts covers are **1080×1920**. The three scheduled X-ray thumbs were rebuilt on that same canvas and saved in Studio:
 
-- S1 `hos_003_s1_cover_v06.jpg` — BY / ACCIDENT
-- S2 `hos_003_s2_cover_v06.jpg` — NO / KNIFE
-- S3 `hos_003_s3_cover_v06.jpg` — THE / RING
+- S1 `hos_003_s1_cover_v07.jpg` — BY / ACCIDENT — `oowAOWTBoq0` thumb `v=6ab3de93`
+- S2 `hos_003_s2_cover_v07.jpg` — NO / KNIFE — `xvanpsLeADE` thumb `v=6ab3dec9`
+- S3 `hos_003_s3_cover_v07.jpg` — THE / RING — `zI_eD3vFWmE` thumb `v=6ab3dee6`
 
-On the Studio portrait preview the yellow type sits inside the card (about 17–25% clear on each side). Titles, clocks, Related, and the long Premiere thumb are unchanged. Jpg masters stay gitignored.
+Yellow Didot sits in the top of the poster. Stroke edges clear the sides by about 7% (S1), 9% (S2), and 9% (S3). Studio kept each KEEP title and the Scheduled clock, and showed “Changes saved.” The long Premiere thumb was not changed. Jpg masters stay gitignored.
 
 ## Still true / not done
 
