@@ -122,14 +122,64 @@ def is_glue(page) -> bool:
 
 
 def studio_page(ctx):
-    page = ctx.pages[0] if ctx.pages else ctx.new_page()
+    hos_pages = []
     for pg in ctx.pages:
         url = pg.url or ""
         if any(x in url for x in ("facebook.com", "instagram.com")):
             continue
         if "studio.youtube.com" in url:
-            return pg
-    return page
+            hos_pages.append(pg)
+    for pg in hos_pages:
+        try:
+            if pg.locator("ytcp-uploads-dialog").count():
+                return pg
+        except Exception:
+            pass
+    if hos_pages:
+        return hos_pages[0]
+    return ctx.pages[0] if ctx.pages else ctx.new_page()
+
+
+def details_open(page) -> bool:
+    try:
+        dlg = page.locator("ytcp-uploads-dialog")
+        if not dlg.count():
+            return False
+        t = dlg.first.inner_text()
+        return bool(re.search(r"Title \(required\)|Details", t, re.I))
+    except Exception:
+        return False
+
+
+def picker_open(page) -> bool:
+    try:
+        dlg = page.locator("ytcp-uploads-dialog")
+        if not dlg.count():
+            return False
+        t = dlg.first.inner_text()
+        return bool(re.search(r"Select files|Drag and drop", t, re.I))
+    except Exception:
+        return False
+
+
+def wait_file_inputs(page, timeout_s: float = 20) -> int:
+    deadline = time.time() + timeout_s
+    n = 0
+    while time.time() < deadline:
+        n = file_input_count(page)
+        if n:
+            return n
+        page.wait_for_timeout(400)
+    return n
+
+
+def wait_details(page, timeout_s: float = 90) -> bool:
+    deadline = time.time() + timeout_s
+    while time.time() < deadline:
+        if details_open(page):
+            return True
+        page.wait_for_timeout(500)
+    return False
 
 
 def ensure_chrome() -> None:
@@ -174,6 +224,25 @@ def ensure_chrome() -> None:
 
 
 def ensure_hos(page) -> dict:
+    if details_open(page) or picker_open(page):
+        return {
+            "ok": True,
+            "url": page.url,
+            "title": page.title(),
+            "snip": snip(page, 400),
+            "resumed_dialog": True,
+        }
+    url = page.url or ""
+    if "studio.youtube.com" in url and HOS in url:
+        body = snip(page, 2500)
+        if "History of Science" in body:
+            return {
+                "ok": True,
+                "url": url,
+                "title": page.title(),
+                "snip": body[:500],
+                "skipped_nav": True,
+            }
     page.goto(
         f"https://studio.youtube.com/channel/{HOS}",
         wait_until="domcontentloaded",
@@ -191,27 +260,37 @@ def ensure_hos(page) -> dict:
     return {"ok": ok, "url": url, "title": page.title(), "snip": body[:500]}
 
 
-def extract_new_id(page) -> str | None:
+def extract_new_id(page, exclude: str = "") -> str | None:
+    def keep(vid: str | None) -> str | None:
+        if not vid or vid == exclude or len(vid) != 11:
+            return None
+        return vid
+
     m = re.search(r"/video/([A-Za-z0-9_-]{11})/", page.url)
-    if m:
-        return m.group(1)
+    hit = keep(m.group(1) if m else None)
+    if hit:
+        return hit
     body = snip(page, 8000)
     for pat in (
-        r"https://youtu\.be/([A-Za-z0-9_-]{11})",
         r"youtube\.com/shorts/([A-Za-z0-9_-]{11})",
+        r"https://youtu\.be/([A-Za-z0-9_-]{11})",
         r"watch\?v=([A-Za-z0-9_-]{11})",
     ):
         m = re.search(pat, body)
-        if m:
-            return m.group(1)
+        hit = keep(m.group(1) if m else None)
+        if hit:
+            return hit
     try:
         hrefs = page.evaluate(
             "() => [...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href')||'')"
         )
         for href in hrefs:
-            m = re.search(r"(?:youtu\.be/|shorts/|watch\?v=|/video/)([A-Za-z0-9_-]{11})", href)
-            if m:
-                return m.group(1)
+            m = re.search(
+                r"(?:youtu\.be/|shorts/|watch\?v=|/video/)([A-Za-z0-9_-]{11})", href
+            )
+            hit = keep(m.group(1) if m else None)
+            if hit:
+                return hit
     except Exception:
         pass
     return None
@@ -509,32 +588,34 @@ def file_input_count(page) -> int:
     )
 
 
-def cdp_set_files(page, path: Path) -> dict:
-    info: dict = {"path": str(path)}
+def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
+    info: dict = {"path": str(path), "image": image}
+    expr = """(() => {
+      const wantImage = %s;
+      const walk=(r,d=0)=>{
+        if(!r||d>50) return null;
+        if (r.querySelectorAll) {
+          for (const inp of r.querySelectorAll('input[type=file]')) {
+            const acc = (inp.getAttribute('accept') || '').toLowerCase();
+            if (wantImage && acc && !acc.includes('image')) continue;
+            if (!wantImage && acc.includes('image') && !acc.includes('video')) continue;
+            return inp;
+          }
+        }
+        for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+          if (el.shadowRoot) {
+            const x=walk(el.shadowRoot, d+1);
+            if (x) return x;
+          }
+        }
+        return null;
+      };
+      const dlg = document.querySelector('ytcp-uploads-dialog');
+      return walk(dlg) || walk(document);
+    })()""" % ("true" if image else "false")
     try:
         session = page.context.new_cdp_session(page)
-        ev = session.send(
-            "Runtime.evaluate",
-            {
-                "expression": """(() => {
-                  const walk=(r,d=0)=>{
-                    if(!r||d>50) return null;
-                    if (r.querySelector) {
-                      const inp=r.querySelector('input[type=file]');
-                      if (inp) return inp;
-                    }
-                    for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
-                      if (el.shadowRoot) {
-                        const x=walk(el.shadowRoot, d+1);
-                        if (x) return x;
-                      }
-                    }
-                    return null;
-                  };
-                  return walk(document);
-                })()""",
-            },
-        )
+        ev = session.send("Runtime.evaluate", {"expression": expr})
         obj = (ev or {}).get("result") or {}
         oid = obj.get("objectId")
         if not oid:
@@ -549,6 +630,14 @@ def cdp_set_files(page, path: Path) -> dict:
 
 def open_upload(page) -> dict:
     info: dict = {}
+    if details_open(page):
+        info["alreadyDetails"] = True
+        info["fileInputs"] = file_input_count(page)
+        return info
+    if picker_open(page):
+        info["alreadyPicker"] = True
+        info["fileInputs"] = wait_file_inputs(page, 15)
+        return info
     page.goto(
         f"https://studio.youtube.com/channel/{HOS}/videos/upload",
         wait_until="domcontentloaded",
@@ -563,17 +652,14 @@ def open_upload(page) -> dict:
     except Exception as e:
         info["intercept"] = f"err:{type(e).__name__}"
     info["create"] = click_shadow_text(page, r"^Create$")
-    page.wait_for_timeout(600)
+    page.wait_for_timeout(800)
     info["uploadVideos"] = click_shadow_text(page, r"^Upload videos?$")
-    page.wait_for_timeout(2000)
-    if file_input_count(page) == 0:
-        page.goto(
-            f"https://studio.youtube.com/channel/{HOS}/videos/upload?d=ud",
-            wait_until="domcontentloaded",
-            timeout=120000,
-        )
-        page.wait_for_timeout(2000)
-    info["fileInputs"] = file_input_count(page)
+    info["fileInputs"] = wait_file_inputs(page, 20)
+    if info["fileInputs"] == 0:
+        info["create2"] = click_shadow_text(page, r"^Create$")
+        page.wait_for_timeout(800)
+        info["uploadVideos2"] = click_shadow_text(page, r"^Upload videos?$")
+        info["fileInputs"] = wait_file_inputs(page, 15)
     return info
 
 
@@ -584,28 +670,46 @@ def upload_one(page, job: dict, parent: str) -> dict:
     out["file"] = str(path)
     out["thumb"] = str(job["thumb"])
     out["parent"] = parent
-    out["openUpload"] = open_upload(page)
-    dismiss(page)
-    if is_glue(page):
-        out["ok"] = False
-        out["glue"] = True
-        return out
-
-    attach = cdp_set_files(page, path)
-    if not attach.get("ok"):
-        inputs = page.locator('input[type="file"]')
-        if inputs.count():
-            inputs.first.set_input_files(str(path))
-            attach = {"ok": True, "via": "locator"}
+    resumed = details_open(page)
+    out["resumed"] = resumed
+    if resumed:
+        out["attach"] = {"ok": True, "via": "already_details"}
+        out["openUpload"] = {"alreadyDetails": True}
+    else:
+        out["openUpload"] = open_upload(page)
+        dismiss(page)
+        if is_glue(page):
+            out["ok"] = False
+            out["glue"] = True
+            return out
+        if details_open(page):
+            out["attach"] = {"ok": True, "via": "open_upload_details"}
         else:
-            with page.expect_file_chooser(timeout=20000) as fc:
-                page.get_by_role("button", name=re.compile(r"Select files", re.I)).click(
-                    force=True
+            attach = cdp_set_files(page, path)
+            if not attach.get("ok"):
+                inputs = page.locator('input[type="file"]')
+                if inputs.count():
+                    inputs.first.set_input_files(str(path))
+                    attach = {"ok": True, "via": "locator"}
+                else:
+                    click_shadow_text(page, r"^Select files$")
+                    page.wait_for_timeout(800)
+                    attach = cdp_set_files(page, path)
+            out["attach"] = attach
+            if not attach.get("ok"):
+                out["ok"] = False
+                out["error"] = f"attach_failed:{attach}"
+                page.screenshot(
+                    path=str(EV / f"{job['slot']}_attach_fail.png"), full_page=True
                 )
-            fc.value.set_files(str(path))
-            attach = {"ok": True, "via": "chooser"}
-    out["attach"] = attach
-    page.wait_for_timeout(1500)
+                return out
+            if not wait_details(page, 90):
+                out["ok"] = False
+                out["error"] = "attach_no_details"
+                page.screenshot(
+                    path=str(EV / f"{job['slot']}_attach_no_details.png"), full_page=True
+                )
+                return out
 
     title_box = page.get_by_role("textbox", name=re.compile(r"title|describe", re.I)).first
     title_box.wait_for(timeout=180000)
@@ -629,10 +733,18 @@ def upload_one(page, job: dict, parent: str) -> dict:
         out["desc"] = f"err:{type(e).__name__}"
 
     try:
-        page.get_by_text(re.compile(r"No, it.?s not.?Made for Kids", re.I)).click(
-            force=True
-        )
-        out["kids"] = "not_kids"
+        dlg_txt = ""
+        try:
+            dlg_txt = page.locator("ytcp-uploads-dialog").first.inner_text()
+        except Exception:
+            dlg_txt = snip(page, 4000)
+        if re.search(r"not.?Made for Kids", dlg_txt, re.I):
+            out["kids"] = "already_not_kids"
+        else:
+            page.get_by_text(re.compile(r"No, it.?s not.?Made for Kids", re.I)).click(
+                timeout=8000, force=True
+            )
+            out["kids"] = "not_kids"
     except Exception as e:
         out["kids"] = f"err:{type(e).__name__}"
 
@@ -649,22 +761,21 @@ def upload_one(page, job: dict, parent: str) -> dict:
         out["tags"] = False
 
     thumb = Path(job["thumb"])
-    try:
-        up = page.get_by_text(
-            re.compile(r"Upload file|Upload thumbnail|Custom thumbnail", re.I)
-        )
-        if up.count() and thumb.exists():
-            with page.expect_file_chooser(timeout=6000) as fc:
-                up.first.click(force=True)
-            fc.value.set_files(str(thumb))
-            out["thumbAttempt"] = "chooser"
-        else:
-            t_inputs = page.locator('input[type="file"]')
-            if t_inputs.count() >= 2 and thumb.exists():
-                t_inputs.nth(1).set_input_files(str(thumb))
-                out["thumbAttempt"] = "input_1"
-    except Exception as e:
-        out["thumbAttempt"] = f"skip:{type(e).__name__}"
+    if thumb.exists():
+        try:
+            t_cdp = cdp_set_files(page, thumb, image=True)
+            if t_cdp.get("ok"):
+                out["thumbAttempt"] = t_cdp
+            else:
+                clicked = click_shadow_text(page, r"Upload file|Upload thumbnail")
+                page.wait_for_timeout(400)
+                t_cdp2 = cdp_set_files(page, thumb, image=True)
+                out["thumbAttempt"] = {"click": clicked, **t_cdp2}
+        except Exception as e:
+            out["thumbAttempt"] = f"skip:{type(e).__name__}"
+    else:
+        out["thumbAttempt"] = "missing_file"
+    page.screenshot(path=str(EV / f"{job['slot']}_details.png"), full_page=True)
 
     out["next"] = next_until_visibility(page)
     out["scheduleOpen"] = click_schedule_radio(page)
@@ -679,7 +790,7 @@ def upload_one(page, job: dict, parent: str) -> dict:
     out["confirm"] = click_schedule_confirm(page)
     dismiss(page)
     page.wait_for_timeout(2500)
-    new_id = extract_new_id(page)
+    new_id = extract_new_id(page, exclude=parent)
     out["platformPostId"] = new_id
     out["platformUrl"] = f"https://youtube.com/shorts/{new_id}" if new_id else None
     out["uploadUrl"] = page.url
