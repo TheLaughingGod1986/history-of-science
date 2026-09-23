@@ -462,6 +462,121 @@ def set_related(page, new_id: str, parent: str) -> str:
         return f"err:{type(e).__name__}:{e}"
 
 
+def click_shadow_text(page, pattern: str) -> str | None:
+    return page.evaluate(
+        """(pattern) => {
+          const re = new RegExp(pattern, 'i');
+          const walk=(r,d=0)=>{
+            if(!r||d>40) return null;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('button,ytcp-button,[role=button],tp-yt-paper-item,yt-formatted-string,div,span')
+              : [])) {
+              const t=((el.innerText||'')+' '+(el.getAttribute('aria-label')||''))
+                .replace(/\\s+/g,' ').trim();
+              if (re.test(t) && t.length<48) {
+                const box=el.getBoundingClientRect();
+                if (box.width>20 && box.height>10) { el.click(); return t.slice(0,60); }
+              }
+            }
+            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+              if (el.shadowRoot) {
+                const x=walk(el.shadowRoot, d+1);
+                if (x) return x;
+              }
+            }
+            return null;
+          };
+          return walk(document);
+        }""",
+        pattern,
+    )
+
+
+def file_input_count(page) -> int:
+    return int(
+        page.evaluate(
+            """() => {
+              let n=0;
+              const walk=(r,d=0)=>{
+                if(!r||d>40) return;
+                n += (r.querySelectorAll ? r.querySelectorAll('input[type=file]').length : 0);
+                for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : []))
+                  if (el.shadowRoot) walk(el.shadowRoot, d+1);
+              };
+              walk(document); return n;
+            }"""
+        )
+    )
+
+
+def cdp_set_files(page, path: Path) -> dict:
+    info: dict = {"path": str(path)}
+    try:
+        session = page.context.new_cdp_session(page)
+        ev = session.send(
+            "Runtime.evaluate",
+            {
+                "expression": """(() => {
+                  const walk=(r,d=0)=>{
+                    if(!r||d>50) return null;
+                    if (r.querySelector) {
+                      const inp=r.querySelector('input[type=file]');
+                      if (inp) return inp;
+                    }
+                    for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
+                      if (el.shadowRoot) {
+                        const x=walk(el.shadowRoot, d+1);
+                        if (x) return x;
+                      }
+                    }
+                    return null;
+                  };
+                  return walk(document);
+                })()""",
+            },
+        )
+        obj = (ev or {}).get("result") or {}
+        oid = obj.get("objectId")
+        if not oid:
+            return {"ok": False, "reason": "no_file_input_object", **info}
+        session.send("DOM.setFileInputFiles", {"objectId": oid, "files": [str(path)]})
+        info["ok"] = True
+        info["via"] = "cdp_setFileInputFiles"
+        return info
+    except Exception as e:
+        return {"ok": False, "err": f"{type(e).__name__}:{e}", **info}
+
+
+def open_upload(page) -> dict:
+    info: dict = {}
+    page.goto(
+        f"https://studio.youtube.com/channel/{HOS}/videos/upload",
+        wait_until="domcontentloaded",
+        timeout=120000,
+    )
+    page.wait_for_timeout(2000)
+    dismiss(page)
+    try:
+        session = page.context.new_cdp_session(page)
+        session.send("Page.setInterceptFileChooserDialog", {"enabled": False})
+        info["intercept"] = "off"
+    except Exception as e:
+        info["intercept"] = f"err:{type(e).__name__}"
+    info["create"] = click_shadow_text(page, r"^Create$")
+    page.wait_for_timeout(600)
+    info["uploadVideos"] = click_shadow_text(page, r"^Upload videos?$")
+    page.wait_for_timeout(2000)
+    if file_input_count(page) == 0:
+        page.goto(
+            f"https://studio.youtube.com/channel/{HOS}/videos/upload?d=ud",
+            wait_until="domcontentloaded",
+            timeout=120000,
+        )
+        page.wait_for_timeout(2000)
+    info["fileInputs"] = file_input_count(page)
+    return info
+
+
 def upload_one(page, job: dict, parent: str) -> dict:
     path = Path(job["file"])
     desc = job["desc"].read_text().replace("PREMIERE_VIDEO_ID_TBD", parent)
@@ -469,29 +584,28 @@ def upload_one(page, job: dict, parent: str) -> dict:
     out["file"] = str(path)
     out["thumb"] = str(job["thumb"])
     out["parent"] = parent
-    page.goto(
-        f"https://studio.youtube.com/channel/{HOS}/videos/upload?d=ud",
-        wait_until="domcontentloaded",
-        timeout=120000,
-    )
-    page.wait_for_timeout(2500)
+    out["openUpload"] = open_upload(page)
     dismiss(page)
     if is_glue(page):
         out["ok"] = False
         out["glue"] = True
         return out
 
-    inputs = page.locator('input[type="file"]')
-    if inputs.count():
-        inputs.first.set_input_files(str(path))
-        out["attach"] = "locator"
-    else:
-        with page.expect_file_chooser(timeout=20000) as fc:
-            page.get_by_role("button", name=re.compile(r"Select files", re.I)).click(
-                force=True
-            )
-        fc.value.set_files(str(path))
-        out["attach"] = "chooser"
+    attach = cdp_set_files(page, path)
+    if not attach.get("ok"):
+        inputs = page.locator('input[type="file"]')
+        if inputs.count():
+            inputs.first.set_input_files(str(path))
+            attach = {"ok": True, "via": "locator"}
+        else:
+            with page.expect_file_chooser(timeout=20000) as fc:
+                page.get_by_role("button", name=re.compile(r"Select files", re.I)).click(
+                    force=True
+                )
+            fc.value.set_files(str(path))
+            attach = {"ok": True, "via": "chooser"}
+    out["attach"] = attach
+    page.wait_for_timeout(1500)
 
     title_box = page.get_by_role("textbox", name=re.compile(r"title|describe", re.I)).first
     title_box.wait_for(timeout=180000)
