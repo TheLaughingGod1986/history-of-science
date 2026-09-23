@@ -1,0 +1,66 @@
+{
+  "ok": true,
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "parentId": "frP_YrNShsU",
+  "parentTitle": "How Did We Discover X-rays?",
+  "parentUrl": "https://youtu.be/frP_YrNShsU",
+  "premiere": {
+    "date": "2026-09-24",
+    "time": "18:00",
+    "timeZone": "Europe/London",
+    "type": "premiere",
+    "studioVisibility": "Premiere",
+    "studioDate": "24 Sept 2026"
+  },
+  "affiliate": "none",
+  "madeForKids": false,
+  "shorts": [
+    {
+      "slot": "s1",
+      "title": "How X-rays Were Discovered by Accident",
+      "platformPostId": "oowAOWTBoq0",
+      "platformUrl": "https://youtube.com/shorts/oowAOWTBoq0",
+      "date": "2026-09-25",
+      "time": "11:30",
+      "timeZone": "Europe/London",
+      "studioVisibility": "Scheduled",
+      "studioDate": "25 Sept 2026",
+      "related": "picked",
+      "thumb": "hos_003_thumb_s1_accident_v03.jpg"
+    },
+    {
+      "slot": "s2",
+      "title": "How did Röntgen see bones without cutting",
+      "platformPostId": "xvanpsLeADE",
+      "platformUrl": "https://youtube.com/shorts/xvanpsLeADE",
+      "date": "2026-09-26",
+      "time": "11:30",
+      "timeZone": "Europe/London",
+      "studioVisibility": "Scheduled",
+      "studioDate": "26 Sept 2026",
+      "related": "picked",
+      "thumb": "hos_003_thumb_s2_rontgen_bones_v03.jpg"
+    },
+    {
+      "slot": "s3",
+      "title": "The first X-ray showed a wedding ring",
+      "platformPostId": "zI_eD3vFWmE",
+      "platformUrl": "https://youtube.com/shorts/zI_eD3vFWmE",
+      "date": "2026-09-27",
+      "time": "11:30",
+      "timeZone": "Europe/London",
+      "studioVisibility": "Scheduled",
+      "studioDate": "27 Sept 2026",
+      "related": "already",
+      "thumb": "hos_003_thumb_s3_wedding_ring_v03.jpg"
+    }
+  ],
+  "leftoverDraft": {
+    "title": "hos 003 s2 bones no knife v01",
+    "visibility": "Draft",
+    "action": "do_not_delete"
+  },
+  "not": ["@OrbitWithBen", "@OpptiAI", "TikTok"],
+  "finished": "2026-09-23T10:49:00+01:00"
+}
