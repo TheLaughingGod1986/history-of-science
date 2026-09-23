@@ -261,12 +261,19 @@ def ensure_hos(page) -> dict:
 
 
 def extract_new_id(page, exclude: str = "") -> str | None:
+    banned = {exclude, "frP_YrNShsU", "AL_-qlWko_g", "LanTHJckYx8", "nba0-f7PPeU"}
+
     def keep(vid: str | None) -> str | None:
-        if not vid or vid == exclude or len(vid) != 11:
+        if not vid or vid in banned or len(vid) != 11:
             return None
         return vid
 
-    m = re.search(r"/video/([A-Za-z0-9_-]{11})/", page.url)
+    url = page.url or ""
+    m = re.search(r"[?&]udvid=([A-Za-z0-9_-]{11})", url)
+    hit = keep(m.group(1) if m else None)
+    if hit:
+        return hit
+    m = re.search(r"/video/([A-Za-z0-9_-]{11})/", url)
     hit = keep(m.group(1) if m else None)
     if hit:
         return hit
