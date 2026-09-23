@@ -57,13 +57,13 @@ Analytics pages returned Studio’s empty-state error on scheduled (not-yet-publ
 
 The dashboard Shorts cards are 9:16 (about 0.57 wide-to-tall). A 16:9 custom thumb is center-cropped into that card, which sliced the hooks (`TH` / `RING`, `HNO` / `NIFE`, `BY` / `CIDE`).
 
-The Periodic Table Shorts covers are **1080×1920**. The three scheduled X-ray thumbs were rebuilt on that same canvas and saved in Studio:
+The Periodic Table Shorts covers are **1080×1920**, with left-aligned italic yellow Didot and a dark outline on the picture. The three scheduled X-ray thumbs were rebuilt in that treatment and saved in Studio:
 
-- S1 `hos_003_s1_cover_v07.jpg` — BY / ACCIDENT — `oowAOWTBoq0` thumb `v=6ab3de93`
-- S2 `hos_003_s2_cover_v07.jpg` — NO / KNIFE — `xvanpsLeADE` thumb `v=6ab3dec9`
-- S3 `hos_003_s3_cover_v07.jpg` — THE / RING — `zI_eD3vFWmE` thumb `v=6ab3dee6`
+- S1 `hos_003_s1_cover_v08.jpg` — BY / ACCIDENT — `oowAOWTBoq0` thumb `v=6ab3e4fe`
+- S2 `hos_003_s2_cover_v08.jpg` — NO / KNIFE — `xvanpsLeADE` thumb `v=6ab3e51b`
+- S3 `hos_003_s3_cover_v08.jpg` — THE / RING — `zI_eD3vFWmE` thumb `v=6ab3e537`
 
-Yellow Didot sits in the top of the poster. Stroke edges clear the sides by about 7% (S1), 9% (S2), and 9% (S3). Studio kept each KEEP title and the Scheduled clock, and showed “Changes saved.” The long Premiere thumb was not changed. Jpg masters stay gitignored.
+Stroke edges clear the left side by about 8–10%. Studio kept each KEEP title and the Scheduled clock. The long Premiere thumb was not changed. Jpg masters stay gitignored.
 
 ## Still true / not done
 
