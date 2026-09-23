@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "method": "youtube_studio_hos_session",
+  "channel": {
+    "name": "History of Science",
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "studioUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": [
+    "@OrbitWithBen",
+    "@OpptiAI",
+    "@HistoryOfScience"
+  ],
+  "premiere": {
+    "date": "2026-09-24",
+    "time": "18:00",
+    "timeZone": "Europe/London",
+    "type": "premiere",
+    "label": "Thursday 24 Sep 2026 18:00 Europe/London",
+    "iso": "2026-09-24T17:00:00+00:00"
+  },
+  "madeForKids": false,
+  "affiliate": "none",
+  "started": "2026-09-23T09:46:22+01:00",
+  "video": {
+    "file": "hos_003_full_polish_v01.mp4",
+    "sha256": "be6d156296dcfbf0ed632632109edc71e3dc7ed60bced442e1cfa9bc44dc4f98",
+    "bytes": 319758493,
+    "title": "How Did We Discover X-rays?",
+    "thumb": "hos_003_thumb_long_xrays_v03.jpg",
+    "platformPostId": "frP_YrNShsU",
+    "platformUrl": "https://youtu.be/frP_YrNShsU",
+    "watchUrl": "https://www.youtube.com/watch?v=frP_YrNShsU"
+  },
+  "hos": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Channel dashboard - YouTube Studio",
+    "alreadyListed": false,
+    "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nWhat other table has empty chairs?\n3\n0\n0\nFirst 22 hours 15 minutes\nRanking by views\n10 of 10\nViews\n3\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\nPublished videos\nWhy tellurium sat before iodine\n16\n0\n1\nGallium sat where the table said\n17\n0\n0\nHe predicted a metal before it was found\n31\n0\n0\nThe periodic table's empty chairs\n25\n0\n0\nGo"
+  },
+  "openUpload": {
+    "create": "Create",
+    "uploadVideos": "Upload videos",
+    "fileInputs": 1,
+    "intercept": "off"
+  },
+  "filePick": {
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_full_polish_v01.mp4",
+    "bytes": 319758493,
+    "staged": "/tmp/hos_003_full_polish_v01.mp4",
+    "cdp": {
+      "path": "/tmp/hos_003_full_polish_v01.mp4",
+      "evalType": "object",
+      "evalSubtype": "node",
+      "ok": true,
+      "via": "cdp_setFileInputFiles"
+    },
+    "after": "hos 003 full polish v01\nSaving\u2026\nDetails\nVideo elements\nChecks\nVisibility\nDetails\nReuse details\nTitle (required)\nhos 003 full polish v01\nA/B Testing\nDescription\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nUpload file\nSelect from video\nA/B Testing\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, you're legally req",
+    "ok": true,
+    "via": "cdp_setFileInputFiles"
+  },
+  "details": {
+    "title": "fill",
+    "desc": true
+  },
+  "audience": {
+    "kids": "err:TimeoutError",
+    "ai": "skip"
+  },
+  "tags": {
+    "chars": 225,
+    "ok": true
+  },
+  "thumb": {
+    "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/08_Thumbnail/Selected/hos_003_thumb_long_xrays_v03.jpg",
+    "ok": true,
+    "via": "input_0"
+  },
+  "next": "vis_3",
+  "scheduleRadio": "select_date_copy",
+  "when": {
+    "date_picked": "24",
+    "time_focus": {
+      "ok": true,
+      "old": "00:00"
+    },
+    "time_typed": "18:00",
+    "premiere_click": "Set as Premiere"
+  },
+  "confirmClick": "Schedule",
+  "confirmSnip": "All changes saved.\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n9:01\nHow Did We Discover the Periodic Table?\nHow Did We Discover the Periodic Table? The cleverest part was not the names. It was the empty chairs. In 1869 Dmitri Mendeleev left seats for metals nobody had found yet \u2014 then gallium, scandium and germanium sat where he told them to sit. A 3D cartoon film about chemistry becoming navigation: atomic weight, predicted elements, and the moment a zoo of chemicals became a city you can read. 0:00 A zoo of names 1:25 First patterns 2:49 A ruler for atoms 4:21 Empty chairs 6:31 The guests arrive\n\u2014\nPublic\n17 Sept 2026\nPremiered\n62\n0\n6:05\nHow Did We Discover Germs?\nA/B test completed\n\u2014\nPublic\n3 Sept 2026\nPremiered\n4\n1\nRows per page:\n30\n1\u20132 of 2\nHow Did We Discover X-rays?\nSaved as private\nDetails\nVideo elements\nInitial check\nVisibility\nVisibility\nChoose when to publish and who can see your video\nWe recommend keeping this video private and not sharing it until checks are complete.\n\nSave or publish\n\nMake your video public, unlisted or private\n\nSchedule\n\nSelect a date to make your video public.\n\nSchedule as public\n\n24 Sept 2026\nTime zone\nVideo will be private before publishing\nSet as Premiere\nBefore you publish, check the following:\nDo children appear ",
+  "studioEdit": "https://studio.youtube.com/video/frP_YrNShsU/edit",
+  "pin": {
+    "id": "frP_YrNShsU",
+    "snip": "Video comments\nSkip navigation\nAsk Studio\nCreate\nChannel content\n7:06\nYour video\nHow Did We Discover X-rays?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo comments\nPublished\nMost relevant\nSearch\nResponse status: Unresponded\nComment\nNo comments found. Try searching for something else or removing filters.\nNo comments found. Try searching for something else or removing filters.",
+    "ok": false,
+    "reason": "pin_manual_if_comment_exists"
+  },
+  "editSnip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n7:06\nYour video\nHow Did We Discover X-rays?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nHow Did We Discover X-rays?\nA/B Testing\nDescription\nIn a dark W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen covered a cathode tube so nothing should escape. Across the room, a cardboard screen painted to glow under light\u2026 glowed anyway.\n\nSomething invisible had left the tube. He called it X \u2014 for unknown.\n\nThis is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha R\u00f6ntgen\u2019s hand \u2014 bones and wedding ring \u2014 that turned a haunted glow into proof the world could not argue with.\n\nChapters\n0:00 A Dark Lab, 1895\n~ The Cardboard\n~ Bones Without a Knife\n~ Bertha\u2019s Ring\n~ A New Kind of Seeing\n\nHistory of Science\nDISCOVERY. WONDER. PROOF.\n\n@HistoryOfScienceYT\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis vi",
+  "finished": "2026-09-23T09:47:39+01:00"
+}
