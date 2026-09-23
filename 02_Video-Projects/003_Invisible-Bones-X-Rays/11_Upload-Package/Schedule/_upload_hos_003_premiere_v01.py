@@ -39,6 +39,8 @@ REPLACEMENTS = {
         PROJ3 / "08_Thumbnail/Selected/hos_003_thumb_long_xrays_v03.jpg"
     ),
     "How Did We Discover the Periodic Table?": "How Did We Discover X-rays?",
+    # 002 ensure_hos searches this prefix (no '?'). Live 002 listing would false-abort 003.
+    "How Did We Discover the Periodic Table": "How Did We Discover X-rays",
     "Descriptions/periodic_table_long_description_v01.txt": str(
         SCHED / "hos_003_long_description_v01.txt"
     ),
