@@ -1,0 +1,97 @@
+{
+  "captured": "2026-09-25",
+  "subs": null,
+  "longs": [
+    {
+      "id": "frP_YrNShsU",
+      "title": "How Did We Discover X-rays?",
+      "views": 0,
+      "age": "1 day ago",
+      "length": "7:06"
+    },
+    {
+      "id": "AL_-qlWko_g",
+      "title": "How Did We Discover the Periodic Table?",
+      "views": 84,
+      "age": "8 days ago",
+      "length": "9:01"
+    },
+    {
+      "id": "_C92tIJCk8A",
+      "title": "How Did We Discover Germs?",
+      "views": 4,
+      "age": "3 wk ago",
+      "length": "6:05"
+    }
+  ],
+  "shorts": [
+    {
+      "id": "oowAOWTBoq0",
+      "title": "How X-rays Were Discovered by Accident",
+      "views": 6,
+      "frame0_flags": []
+    },
+    {
+      "id": "LanTHJckYx8",
+      "title": "What other table has empty chairs?",
+      "views": 4,
+      "frame0_flags": []
+    },
+    {
+      "id": "nba0-f7PPeU",
+      "title": "Why tellurium sat before iodine",
+      "views": 19,
+      "frame0_flags": []
+    },
+    {
+      "id": "CnHwX1L9XHg",
+      "title": "Gallium sat where the table said",
+      "views": 15,
+      "frame0_flags": []
+    },
+    {
+      "id": "nFQRWmpulTQ",
+      "title": "He predicted a metal before it was found",
+      "views": 32,
+      "frame0_flags": []
+    },
+    {
+      "id": "uU12JA5rMWg",
+      "title": "The periodic table's empty chairs",
+      "views": 25,
+      "frame0_flags": []
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "title": "A flask that proved germs come from outside",
+      "views": 24,
+      "frame0_flags": []
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "title": "Invisible life is still everywhere",
+      "views": 6,
+      "frame0_flags": []
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "title": "Germs hitch a ride on you",
+      "views": 26,
+      "frame0_flags": []
+    },
+    {
+      "id": "iqToagXnjX0",
+      "title": "Microbes in a drop of pond water",
+      "views": 110,
+      "frame0_flags": []
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "title": "Germs don't cast a shadow",
+      "views": 78,
+      "frame0_flags": []
+    }
+  ],
+  "note": "Shorts tab lists the newest 48 public Shorts; older ones are not in this file. Frame-0 \"Orbit\" flags from the Orbit tool were checked by eye and are false positives (warm lamp/wood light); no Orbit in any HOS Short.",
+  "handle": "@HistoryOfScienceYT"
+}

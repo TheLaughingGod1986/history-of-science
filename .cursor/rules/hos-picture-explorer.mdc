@@ -1,0 +1,25 @@
+---
+description: HOS picture — Flow Veo 3.1 plate library, UAT hard fails, teach labels, the Explorer lock
+globs:
+  - 02_Video-Projects/**/04_Generated-Clips/**
+  - 02_Video-Projects/**/07_Edit-Project/**
+  - 01_Character/**
+  - 04_Audio/tools/orbit_flow_veo_ui.py
+  - 04_Audio/tools/orbit_gemini_veo.py
+  - 00_Brand/Brand-Guidelines/HOS_SHOWRUNNER_BRIEF_TEMPLATE_STUDIO.md
+alwaysApply: false
+---
+
+# Picture and the Explorer
+
+Full rules: `STUDIO_PLAYBOOK.md` §5–§6.
+
+- **Engine:** Google Flow, Veo 3.1, start-frame I2V (`04_Audio/tools/orbit_flow_veo_ui.py --start-frame …`). **Quality** for fragile light (lamps, flasks, glows); Fast only for low-risk garnish. Mac Mini CDP on `benoats@googlemail.com` (Ultra) only; stop and report on a passkey or sign-out. Gemini API Veo Lite only when Flow is broken. No Omni, Seedance, Kling or ElevenLabs Image & Video.
+- **Plate library:** a plate board per part (`parts/part-NN_plates_v01.json`); seed from the last KEEP plate; one plate at a time until the first KEEP, then parallel; after two same-framing FAILs change the framing; plate UAT on continuous playback (start, middle, end), never stills; assemble only when every plate passed; never paint-patch.
+- **Prompts:** say "same <place> <year> set"; never "same DNA" or "lab DNA".
+- **The look:** premium finished 3D cartoon, warm light, one style per part. Continuous motion. Silent picture; no text or logos in plates.
+- **Picture tells the VO with the sound off.** The named action or prop is on screen in that window.
+- **Teach labels:** white Didot italic side labels (1–4 words, one at a time) or a short teach card when the VO introduces a person, place/year, tool, idea or why-it-matters turn. Support the picture; never replace it.
+- **Hard fails on every cut:** off-model or inconsistent; picture doesn't explain the VO; Explorer without round glasses; unfinished hair or melted face; lamp flame, smoke or lava drip, or a visible underside bulb; blank or garbled cards; blurry, ghosted or unfinished late shots; flat unfinished animation; DNA helix; faced or cute microbes; the Orbit robot.
+- **The Explorer:** reference `01_Character/05_Generation-References/hos-explorer-reference-v01.jpg`. Young boy, messy brown hair, round gold glasses, teal long coat, atom pin, tan waistcoat, brown bow tie, satchel. Exactly one. 1–3 beats per long: walk in, touch a prop, react, leave. Never at frame 0 of a Short.
+- **Never:** reuse a cutscene, loop scenery, slow-mo, freeze-pad, Ken Burns (including as a Flow-cap fallback).

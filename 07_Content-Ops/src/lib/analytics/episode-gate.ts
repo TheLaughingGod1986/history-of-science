@@ -1,6 +1,8 @@
 /**
- * Episode production gate — Growth System v2.
- * Blocks VO / Gemini Veo until audit + script ≥90 + markers are present.
+ * Episode production gate (STUDIO_PLAYBOOK.md §3).
+ * Blocks VO / Flow Veo spend until audit + script ≥90 + markers are present.
+ * HOS films mark the Explorer's 1–3 beats with [EXPLORER ACTS: …]; the old
+ * [ORBIT ACTS: …] marker is still counted so earlier HOS scripts keep passing.
  */
 
 import fs from "fs";
@@ -63,6 +65,12 @@ function countMatches(text: string, re: RegExp): number {
   return (text.match(re) || []).length;
 }
 
+/** Explorer beats: [EXPLORER ACTS: …] (or legacy [ORBIT ACTS: …]) that don't say the Explorer is absent. */
+export function countExplorerBeats(script: string): number {
+  const markers = [...script.matchAll(/\[(?:EXPLORER|ORBIT) ACTS:\s*([^\]]*)\]/gi)];
+  return markers.filter(([, body]) => !/^(?:none\b|no explorer\b)|\bnot in this (?:act|part)\b/i.test(body.trim())).length;
+}
+
 function auditLooksSigned(text: string): boolean {
   // Require a real name/initials after "Signed off by:" (not empty / not markdown-only)
   const signedBy = text.match(/signed\s*off\s*by:\s*\**\s*([^\n*]+)/i);
@@ -87,13 +95,15 @@ export function gateEpisode(opts: {
   projectDir: string;
   scriptPath?: string;
   requireChecklist?: boolean;
+  minExplorerActs?: number;
+  /** @deprecated use minExplorerActs */
   minOrbitActs?: number;
   minVisualMust?: number;
   minTeach?: number;
 }): EpisodeGateResult {
   const projectDir = path.resolve(opts.projectDir);
   const checks: GateCheck[] = [];
-  const minOrbit = opts.minOrbitActs ?? 4;
+  const minExplorer = opts.minExplorerActs ?? opts.minOrbitActs ?? 1;
   const minVisual = opts.minVisualMust ?? 4;
   const minTeach = opts.minTeach ?? 4;
 
@@ -170,16 +180,22 @@ export function gateEpisode(opts: {
       message: `Script reviewer ${scriptReview.decision} ${scriptReview.total}/${PASS_THRESHOLD} (need ≥${PASS_THRESHOLD}).`,
     });
 
-    const orbitActs = countMatches(script, /\[ORBIT ACTS:/gi);
+    const explorerActs = countExplorerBeats(script);
+    const legacyMarkers = countMatches(script, /\[ORBIT ACTS:/gi);
     const visualMust = countMatches(script, /\[VISUAL MUST:/gi);
     const teach = countMatches(script, /\[TEACH:/gi);
     const chapters = countMatches(script, /\[CHAPTER CARD:/gi);
 
+    // STUDIO_PLAYBOOK.md §3: the Explorer is in 1–3 beats of a long; more is allowed but flagged.
     checks.push({
-      id: "orbit_acts",
-      ok: orbitActs >= minOrbit,
-      severity: orbitActs >= minOrbit ? "info" : "fail",
-      message: `[ORBIT ACTS] count ${orbitActs} (need ≥${minOrbit}).`,
+      id: "explorer_acts",
+      ok: explorerActs >= minExplorer,
+      severity: explorerActs < minExplorer ? "fail" : explorerActs > 3 ? "warn" : "info",
+      message:
+        (explorerActs > 3
+          ? `[EXPLORER ACTS] beats ${explorerActs} — the playbook keeps the Explorer to 1–3 beats in a long.`
+          : `[EXPLORER ACTS] beats ${explorerActs} (need ≥${minExplorer}).`) +
+        (legacyMarkers ? ` ${legacyMarkers} use the old [ORBIT ACTS] marker — rename to [EXPLORER ACTS].` : ""),
     });
     checks.push({
       id: "visual_must",

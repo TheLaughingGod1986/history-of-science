@@ -42,8 +42,8 @@ Always strip audio (helper does this). Mix British VO from ElevenLabs in the edi
 
 ## Rules
 
-- `.cursor/rules/orbit-gemini-veo-cg.mdc`
-- `.cursor/rules/orbit-british-vo-lock.mdc`
+- `.cursor/rules/hos-picture-explorer.mdc` (HOS picture is Flow Veo 3.1 first; this API path is the fallback — `STUDIO_PLAYBOOK.md` §5)
+- VO: `STUDIO_PLAYBOOK.md` §4
 - Growth gate before spend: script ≥90 + pre-build vidIQ
 
 ## Legacy

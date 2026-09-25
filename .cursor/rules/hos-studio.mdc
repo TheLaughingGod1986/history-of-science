@@ -1,0 +1,57 @@
+---
+description: History of Science studio — read AGENTS.md first; docs in force, sign-off points and the never-list
+alwaysApply: true
+---
+
+# History of Science — studio core (25 Sep 2026)
+
+Read `AGENTS.md` at the repo root before any channel work. Everything in `_archive/` (including the old `cursor-rules/` and the Orbit leftovers) is superseded history. Never follow it unless Ben asks.
+
+Channel: `@HistoryOfScienceYT` only. Orbit With Ben is a different channel and repo.
+
+## Docs in force (higher wins)
+
+1. `00_Brand/Channel-Setup/HOS_STRATEGY.md`: the lane, the week, hooks, the first two seconds, measure.
+2. `00_Brand/Channel-Setup/THUMBNAIL_AND_TITLE_RULES.md`
+3. `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md`: how to build and ship.
+4. `YOUTUBE_GROWTH_AND_POLICY.md` · 5. `CHANNEL_AUTHORITY.md` · 6. `YOUTUBE_FRAME_SIZES.md` · 7. `IMPROVEMENTS_BACKLOG.md`
+
+The Explorer: `01_Character/CHARACTER_BIBLE.md`.
+
+## The week
+
+One long (7–9 min) on Thursday at 18:00 UK as a **normal publish, never a Premiere**. Three Shorts (22–27 s) at 11:30 UK on Fri, Sun and Tue, each promoting a different film, never before that film's long is public. Never a second long on a subject that already has one.
+
+## Stop for Ben's OK
+
+1. topic
+2. long script (≥90)
+3. Short scripts
+4. voice
+5. moving picture (never stills)
+6. thumbnails
+7. anything going public, renamed or deleted
+
+## Never
+
+- **Channels:** Orbit With Ben, OpptiAI or `@HistoryOfScience` (empty, not ours).
+- **Uploads:** swap a file on a live id (no Studio Replace); re-upload a public idea; delete a video (make it private).
+- **Publishing:** Premiere; more than one Short a day; a Short of 40 s or more; a silent file; the Explorer at frame 0 of a Short; subscribe or like graphics burned into the film.
+- **Titles:** hashtags, suffixes, hedged claims, or a copy of a live title.
+- **Links:** `/go/` or a pinned comment on a Short; `/go/` on a long that doesn't name the product.
+- **Picture:** the Orbit robot; Omni, Seedance, Kling or ElevenLabs Image & Video; Veo Fast on fragile light; paint-patching; "same DNA" in a prompt; Ken Burns when Flow is capped.
+- **Voice:** anything but Ben Orbit Narrator; a video model's speech.
+- **TikTok:** any upload while `TikTok/TIKTOK_UPLOAD_BLOCK.json` is paused.
+- **Secrets:** printing or committing them.
+
+## Every Short export
+
+`python3 00_Brand/Channel-Setup/tools/gate_shorts_open.py check <mp4> --air-date YYYY-MM-DD` must PASS. Then watch it once on a phone with the sound on.
+
+## Git
+
+Film records land on `main` within a day. A STOP is a line in the film's `production-status.md`, not an open branch.
+
+## Changing a rule
+
+Edit the doc in force and its rule in the same commit, with the date and the evidence. Don't add a new "locked" doc. Move anything it supersedes to `_archive/`.

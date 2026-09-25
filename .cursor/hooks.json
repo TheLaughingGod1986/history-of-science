@@ -3,13 +3,13 @@
   "hooks": {
     "sessionStart": [
       {
-        "command": ".cursor/hooks/orbit-session-start.py",
+        "command": ".cursor/hooks/hos-session-start.py",
         "timeout": 10
       }
     ],
     "preToolUse": [
       {
-        "command": ".cursor/hooks/orbit-pre-gen-remind.py",
+        "command": ".cursor/hooks/hos-pre-gen-remind.py",
         "matcher": "Shell",
         "timeout": 5
       }

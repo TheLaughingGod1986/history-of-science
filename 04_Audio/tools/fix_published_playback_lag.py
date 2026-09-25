@@ -189,8 +189,8 @@ def main() -> int:
     out.write_text(json.dumps(report, indent=2) + "\n")
     print(out)
     print(
-        "Next: python3 00_Brand/Channel-Setup/audits/_replace_media_in_place.py "
-        "(Studio Replace — keeps view counts). Do NOT run _replace_shorts_v02_youtube.py."
+        "Next: use the CFR remasters for new uploads only. Never Studio Replace the file on a "
+        "live id (STUDIO_PLAYBOOK.md §9: one video = one upload)."
     )
     failed = sum(1 for f in report["files"] if f.get("ok") is False)
     return 1 if failed else 0
