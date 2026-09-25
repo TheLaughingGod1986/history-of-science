@@ -1,0 +1,52 @@
+[
+  {
+    "t": "cut_t40",
+    "seat_white_pct": 0.04,
+    "flame_pct": 0.0,
+    "smoke_pct": 9.37,
+    "cream_low": 5415,
+    "dark_marks_low": 6628,
+    "fire_smoke_reject": true,
+    "blankish": false
+  },
+  {
+    "t": "cut_t42",
+    "seat_white_pct": 0.07,
+    "flame_pct": 0.0,
+    "smoke_pct": 3.69,
+    "cream_low": 5545,
+    "dark_marks_low": 7326,
+    "fire_smoke_reject": true,
+    "blankish": false
+  },
+  {
+    "t": "cut_t98",
+    "seat_white_pct": 0.68,
+    "flame_pct": 0.0,
+    "smoke_pct": 0.01,
+    "cream_low": 7051,
+    "dark_marks_low": 41824,
+    "fire_smoke_reject": false,
+    "blankish": false
+  },
+  {
+    "t": "cut_t102",
+    "seat_white_pct": 0.05,
+    "flame_pct": 0.0,
+    "smoke_pct": 0.0,
+    "cream_low": 26069,
+    "dark_marks_low": 17077,
+    "fire_smoke_reject": false,
+    "blankish": false
+  },
+  {
+    "t": "cut_t105",
+    "seat_white_pct": 0.0,
+    "flame_pct": 0.0,
+    "smoke_pct": 0.0,
+    "cream_low": 16431,
+    "dark_marks_low": 12887,
+    "fire_smoke_reject": false,
+    "blankish": false
+  }
+]

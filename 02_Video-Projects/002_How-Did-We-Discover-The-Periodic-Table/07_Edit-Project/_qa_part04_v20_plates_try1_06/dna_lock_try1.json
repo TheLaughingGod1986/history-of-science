@@ -1,0 +1,14 @@
+{
+  "plate": "06_explorer_leaves_gap",
+  "try": 1,
+  "family": "v10_back_OTS_carddesk_L26_crop_zerofixture_windowbounce",
+  "source": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/06_dna_review/06_explorer_leaves_gap_start_v10_from_try2_back.jpg",
+  "method": "crop-only (paint banned) \u2014 left 26% removed to eject gooseneck/shade/bulb; cover-fit 1920x1080",
+  "light": "daytime/window OR soft off-world bounce ONLY \u2014 ZERO practical lamp in start",
+  "composition": "toy-scale garnish OTS/back Explorer pins card, soft glowing vacant seat/gap, 1869 card-desk + bookcase",
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/06_explorer_leaves_gap_start_v20_try1_ots_nolamp_windowbounce.jpg",
+  "start_sha256": "d6aebb4e2ead02dca9aee2a59c1bfb17ff8e4d5eb3a590ae3d3d1c2a4695f5d0",
+  "plate_library_lock_sha": "4b8ed25",
+  "paint": "banned",
+  "assemble": false
+}

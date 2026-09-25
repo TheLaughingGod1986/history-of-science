@@ -1,0 +1,26 @@
+{
+  "plate": "11_publish_gaps",
+  "try": "9",
+  "verdict": "KEEP_CANDIDATE",
+  "reason": "NEW boardtop edgeoff framing; no SECURITY/RESULT invent; CLEAN LIGHT+flasks CLEAR; mild pull-back noted",
+  "gates": {
+    "lamp_invent": "CLEAR",
+    "flask_glow_invent": "CLEAR",
+    "soft_gap_glow": "PASS",
+    "continuous_motion": "PASS",
+    "text_invent": "CLEAR",
+    "front_printable_band": "OFF_FRAME_START; late_margin_blank"
+  },
+  "sha256": "97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72",
+  "bytes": 1316943,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/17327f2b-fc8f-44d0-9c56-ddc23eeb2ef6",
+  "start_sha256": "719984d4fe50dab1a63a9d4cc9f0eb96b69922a1475afdf093b975daeb512d79",
+  "start_dna": "try9 boardtop edgeoff",
+  "plate_library_lock_sha": "4b8ed25",
+  "paint": "banned",
+  "assemble": false,
+  "starts_used": 1,
+  "max_starts": 2,
+  "when": "2026-09-10T10:48:20"
+}

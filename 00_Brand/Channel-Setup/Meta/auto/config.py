@@ -63,6 +63,9 @@ def load_credentials() -> dict:
     data.setdefault("publish_facebook", True)
     data.setdefault("preferred_method", "graph")
     data.setdefault("cdp_port", 9223)
+    ig_handle = (load_accounts().get("instagram") or {}).get("handle")
+    if ig_handle:
+        data.setdefault("instagram_username", ig_handle)
     return suite_ids.pin_suite_creds(data, load_accounts())
 
 

@@ -1,0 +1,21 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 13,
+  "family": "NEW_KEEP_v07_bookshelf_empty_leather_chair_CARDLESS_warm_fill_OUT_OF_WORLD",
+  "banned_dna": "try8-12 moon-desk crop/flip invent tree; v01 cardless empty-chair moon starts that invent lamps",
+  "light": "warm CLEAN directional fill from OFF-LEFT / out of world ONLY \u2014 zero lamp fixture in start frame (no shade cup)",
+  "composition": "bookshelf wall + honey desk + empty tufted leather chair \u2014 different room/camera vs try8 moon-window wooden chair",
+  "cards": "cardless \u2014 no flat H/C/O/N",
+  "startA": "04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20_try13_bookshelf_zerofixture_outworld.jpg",
+  "startA_sha256": "e036c7f8430dbd03921203346cab55d295ee2a62229c61567c11426e87a7dcd9",
+  "startA_crop": "L38 of v07 t0.2",
+  "startB": "04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20_try13B_bookshelf_zerofixture_outworld_tq.jpg",
+  "startB_sha256": "19e96ec5878115cf9e6bac24d74256cd23a32a3d0c7e833a212d65b50085cb26",
+  "startB_crop": "L50+top2/bot4 of v07 t0.2",
+  "active_sha256": "e036c7f8430dbd03921203346cab55d295ee2a62229c61567c11426e87a7dcd9",
+  "plate_library_lock_sha": "4b8ed25",
+  "bible": "8ddbf99",
+  "paint": "banned",
+  "assemble": false,
+  "max_starts": 2
+}

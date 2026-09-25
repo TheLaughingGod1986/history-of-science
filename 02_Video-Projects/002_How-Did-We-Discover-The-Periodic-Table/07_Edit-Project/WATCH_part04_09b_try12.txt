@@ -1,0 +1,9 @@
+HOS 002 Part04 plate 09b_risk_hold try12 — WATCH
+
+DNA: RIGHT-CAM / bookshelf-LEFT (H-FLIP of try11 zerolamp moon KEEP). NO left desk invent zone.
+ZERO gooseneck/shade/bulb/fixture. CLEAN LIGHT = moon + window spill + soft ambient only
+(warm fill behind camera / out of world only). Cardless empty-chair moon KEEP. Soft Empty Chairs OK.
+Finished 3D. Paint banned. Bible 8ddbf99. Plate-library lock 4b8ed25.
+Max 2 starts. If A and B both invent left fixture → STOP_TO_COS. No assemble.
+
+Self-REJECT if ANY lamp fixture or bead appears any mid. Crop-check every mid.

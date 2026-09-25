@@ -1,0 +1,91 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "mode": "uat-v06",
+  "plates": [
+    {
+      "id": "05_explorer_ore_gas",
+      "seconds": 76.5,
+      "bytes": 1810069,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/refs/explorer_germs_part01_lock.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "f275e655-88e6-431d-a872-73c3ab5c6a36",
+      "url": "https://labs.google/fx/tools/flow/project/ce275298-4b53-4fde-9e39-79f9dcbac8a7"
+    },
+    {
+      "id": "02_workshop_jars",
+      "seconds": 86.7,
+      "bytes": 5131006,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "2ebeb5ae-f506-43da-bf44-5e2600766567",
+      "url": "https://labs.google/fx/tools/flow/project/1064afdb-b578-452a-a2f3-29fc535a9f02"
+    },
+    {
+      "id": "07_shelf_names_grow",
+      "seconds": 74.5,
+      "bytes": 8032453,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "c3cc7f9a-d512-46d3-97f1-27c1b9ce4fb0",
+      "url": "https://labs.google/fx/tools/flow/project/4352377f-d5f8-4189-ae73-4178a3072bd8"
+    },
+    {
+      "id": "08_labelled_zoo",
+      "seconds": 87.2,
+      "bytes": 4501115,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "8a3b5a5b-e684-4511-96ba-0b67c29230e4",
+      "url": "https://labs.google/fx/tools/flow/project/dc9a56da-ee0d-4eaf-9aa9-56c5f97e8806"
+    },
+    {
+      "id": "11_chemists_more_names",
+      "seconds": 130.7,
+      "bytes": 3424399,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "6e535259-dc40-4b3d-b25f-b383dca6f870",
+      "url": "https://labs.google/fx/tools/flow/project/f71de84b-8ee7-4c5a-bd7c-356bde5bb1d9"
+    },
+    {
+      "id": "12_workshop_hold",
+      "seconds": 76.5,
+      "bytes": 4295413,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "079e5f1f-a373-4270-a026-356fb999f54f",
+      "url": "https://labs.google/fx/tools/flow/project/ffde3e19-48e7-4c01-a498-689800b366aa"
+    }
+  ]
+}

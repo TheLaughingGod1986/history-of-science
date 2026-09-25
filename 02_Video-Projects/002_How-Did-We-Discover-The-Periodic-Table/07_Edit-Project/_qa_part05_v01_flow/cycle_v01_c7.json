@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c7_05b_06",
+  "jobs": [
+    {
+      "plate": "05b_germanium_verdict",
+      "try": "2_v01",
+      "which": "wall_ge_cool_white",
+      "note": "WALL grid Ge; cool white vacant; ZERO orange under card; not a desk fire-pit",
+      "out": "submit_05b_germanium_verdict_try2.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 05b_germanium_verdict try2 — Germanium. NEW FRAMING after desk fire-pit FAIL. VO beat: germanium, the verdict. ONE continuous 8s take. A VERTICAL cream-card WALL CHART on honey wood panels, camera slightly above looking at the WALL — not a tabletop desk grid, not a hole cut into a desk. EXACTLY ONE cream card with sparse Ge slides into ONE vacant card-space. Vacant glow is COOL WHITE / pale gold rim only. FORBIDDEN: orange, amber, yellow fire under the card, fire-pit, lava, flame, sparks, a glowing trench. Solid wood behind the empty cell, not a through-hole. Glow SETTLES cooler as the card seats — a verdict, not a furnace. Distinct from the SIDE scandium drop. No person. No lamp. Continuous 8s. Silent. HARD REJECT: lava, fire, Ken Burns only, moon-desk still-life, model-town. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "06_predict_before_found",
+      "try": "1_v01",
+      "which": "empty_slot_gains_sheen",
+      "note": "empty wall slot gains silver sheen; no card drop; prediction before found",
+      "out": "submit_06_predict_before_found_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 06_predict_before_found try1 — not a bluff. VO beat: you can predict a metal before anyone finds it. ONE continuous 8s take. CLOSE on ONE empty cream-card-sized cell on a WALL GRID. No card slides in. The empty wood cell slowly gains a cool SILVER sheen as if the missing metal already belongs there. Prediction made visible. NOT a card drop. NOT a fire-pit. Cool silver only, never orange. Daytime. No person. No lamp. Continuous 8s. Silent. HARD REJECT: lava, fire, Ken Burns only, moon-desk still-life, model-town. Plate-library lock 4b8ed25."
+    }
+  ]
+}

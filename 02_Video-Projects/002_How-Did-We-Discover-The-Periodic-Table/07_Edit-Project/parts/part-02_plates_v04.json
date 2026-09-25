@@ -1,0 +1,84 @@
+{
+  "part": 2,
+  "title": "First Patterns, Still Wrong",
+  "status": "uat_retry_v04b_jarfree_study_no_lab",
+  "style_lock": "hos_002_part01_rough_v11",
+  "clip_use_s": 8.0,
+  "xfade_s": 0.4,
+  "vo_file": "02_Voiceover/part02_first_patterns_v01.wav",
+  "notes": "Ben UAT: pots still on fire + unfinished look. v04 first T2V still made alchemy lab with vessel flame. v04b: HARD LOCK scholar writing-study only \u2014 zero vessels; finished Animistry; candle wick OK.",
+  "physics_lock": "Premium finished Animistry-class 3D cartoon (Germs Part 01 PASS). Scholar writing study ONLY \u2014 never chemistry/alchemy lab. ZERO jars/pots/canisters/tins/flasks/bottles/vials/burners. Candles in candlesticks MAY have a small wick flame. Silent. No Orbit. No people unless explorer plate.",
+  "card_budget": {
+    "chapter": "01_chapter_card",
+    "teach_popup": "04_triad_cards",
+    "max_cards": 2
+  },
+  "plates": [
+    {
+      "id": "01_chapter_card",
+      "kind": "chapter_card",
+      "remint": false,
+      "prompt": "KEEP."
+    },
+    {
+      "id": "02_lavoisier_list",
+      "kind": "scenery",
+      "remint": true,
+      "prompt": "HARD LOCK FIRST: scholar WRITING STUDY only \u2014 NOT a chemistry lab, NOT an alchemy workshop. ZERO jars, ZERO pots, ZERO canisters, ZERO tins, ZERO flasks, ZERO bottles, ZERO vials, ZERO retorts, ZERO burners, ZERO spirit lamps, ZERO shelves of glassware, ZERO vessels. The ONLY allowed flame is ONE small candle wick in a candlestick (optional). NO fire under or on any object. NO glowing vessel mouths. Premium finished Animistry-class 3D cartoon like Germs Part 01 PASS \u2014 rich wood grain, soft volumetric window light, polished detail. NEVER flat unfinished placeholders. Warm oak writing desk under soft window light. A neat row of blank cream specimen CARDS stands like a list (at most 6 cards). Quill, closed ink bottle with lid, leather notebooks. One brass candlestick with a tiny natural candle flame far to the side. Continuous gentle camera drift. Silent. No readable text. No Orbit. No people."
+    },
+    {
+      "id": "03_not_a_map",
+      "kind": "scenery",
+      "remint": true,
+      "prompt": "HARD LOCK FIRST: scholar WRITING STUDY only \u2014 NOT a chemistry lab, NOT an alchemy workshop. ZERO jars, ZERO pots, ZERO canisters, ZERO tins, ZERO flasks, ZERO bottles, ZERO vials, ZERO retorts, ZERO burners, ZERO spirit lamps, ZERO shelves of glassware, ZERO vessels. The ONLY allowed flame is ONE small candle wick in a candlestick (optional). NO fire under or on any object. NO glowing vessel mouths. Premium finished Animistry-class 3D cartoon like Germs Part 01 PASS \u2014 rich wood grain, soft volumetric window light, polished detail. NEVER flat unfinished placeholders. Warm oak writing desk: blank cream specimen cards shuffle into a messy pile and refuse neat columns \u2014 a pile of cards, not a map. Soft daylight. Optional distant candle in a holder. Continuous motion. Silent. No readable text. No Orbit. No people."
+    },
+    {
+      "id": "04_triad_cards",
+      "kind": "teach_card",
+      "remint": false,
+      "prompt": "KEEP local teach pop-up."
+    },
+    {
+      "id": "05_explorer_triad_break",
+      "kind": "scenery",
+      "remint": true,
+      "prompt": "HARD LOCK FIRST: scholar WRITING STUDY only \u2014 NOT a chemistry lab, NOT an alchemy workshop. ZERO jars, ZERO pots, ZERO canisters, ZERO tins, ZERO flasks, ZERO bottles, ZERO vials, ZERO retorts, ZERO burners, ZERO spirit lamps, ZERO shelves of glassware, ZERO vessels. The ONLY allowed flame is ONE small candle wick in a candlestick (optional). NO fire under or on any object. NO glowing vessel mouths. Premium finished Animistry-class 3D cartoon like Germs Part 01 PASS \u2014 rich wood grain, soft volumetric window light, polished detail. NEVER flat unfinished placeholders. Warm wooden writing desk (no people): three glowing blank cousin-cards in a neat row, then a fourth blank card slides in and breaks the tidy rhyme; glow flickers uneven. Soft lamp light, optional far candle. Continuous motion. Silent. No readable text. No Orbit."
+    },
+    {
+      "id": "06_rhymes_run_out",
+      "kind": "scenery",
+      "remint": true,
+      "prompt": "HARD LOCK FIRST: scholar WRITING STUDY only \u2014 NOT a chemistry lab, NOT an alchemy workshop. ZERO jars, ZERO pots, ZERO canisters, ZERO tins, ZERO flasks, ZERO bottles, ZERO vials, ZERO retorts, ZERO burners, ZERO spirit lamps, ZERO shelves of glassware, ZERO vessels. The ONLY allowed flame is ONE small candle wick in a candlestick (optional). NO fire under or on any object. NO glowing vessel mouths. Premium finished Animistry-class 3D cartoon like Germs Part 01 PASS \u2014 rich wood grain, soft volumetric window light, polished detail. NEVER flat unfinished placeholders. Archive of stacked blank specimen cards and leather notebooks on wooden shelves \u2014 paper and books only, drowning any tidy triad pattern. Warm library wood, soft window light, one candle on a side table. Continuous camera drift. Silent. No readable text. No Orbit. No people."
+    },
+    {
+      "id": "07_newlands_octave",
+      "kind": "scenery",
+      "remint": true,
+      "prompt": "HARD LOCK FIRST: scholar WRITING STUDY only \u2014 NOT a chemistry lab, NOT an alchemy workshop. ZERO jars, ZERO pots, ZERO canisters, ZERO tins, ZERO flasks, ZERO bottles, ZERO vials, ZERO retorts, ZERO burners, ZERO spirit lamps, ZERO shelves of glassware, ZERO vessels. The ONLY allowed flame is ONE small candle wick in a candlestick (optional). NO fire under or on any object. NO glowing vessel mouths. Premium finished Animistry-class 3D cartoon like Germs Part 01 PASS \u2014 rich wood grain, soft volumetric window light, polished detail. NEVER flat unfinished placeholders. Camera tracks along a long line of blank element cards beside a small wooden toy piano on a polished writing desk \u2014 octave gag setup. Warm study light, optional candle. Continuous motion. Silent. No readable text. No Orbit. No people."
+    },
+    {
+      "id": "08_piano_gag_fail",
+      "kind": "scenery",
+      "remint": true,
+      "prompt": "HARD LOCK FIRST: scholar WRITING STUDY only \u2014 NOT a chemistry lab, NOT an alchemy workshop. ZERO jars, ZERO pots, ZERO canisters, ZERO tins, ZERO flasks, ZERO bottles, ZERO vials, ZERO retorts, ZERO burners, ZERO spirit lamps, ZERO shelves of glassware, ZERO vessels. The ONLY allowed flame is ONE small candle wick in a candlestick (optional). NO fire under or on any object. NO glowing vessel mouths. Premium finished Animistry-class 3D cartoon like Germs Part 01 PASS \u2014 rich wood grain, soft volumetric window light, polished detail. NEVER flat unfinished placeholders. Piano octave gag falls flat \u2014 wooden keys tip, blank cards scatter across a writing desk. Warm wood study. Continuous motion. Silent. No readable text. No Orbit. No people."
+    },
+    {
+      "id": "09_almost_right",
+      "kind": "scenery",
+      "remint": true,
+      "prompt": "HARD LOCK FIRST: scholar WRITING STUDY only \u2014 NOT a chemistry lab, NOT an alchemy workshop. ZERO jars, ZERO pots, ZERO canisters, ZERO tins, ZERO flasks, ZERO bottles, ZERO vials, ZERO retorts, ZERO burners, ZERO spirit lamps, ZERO shelves of glassware, ZERO vessels. The ONLY allowed flame is ONE small candle wick in a candlestick (optional). NO fire under or on any object. NO glowing vessel mouths. Premium finished Animistry-class 3D cartoon like Germs Part 01 PASS \u2014 rich wood grain, soft volumetric window light, polished detail. NEVER flat unfinished placeholders. Nearly-aligned blank cards on a writing desk wobble with one obvious gap breaking the pattern. Warm study, soft daylight. Continuous motion. Silent. No readable text. No Orbit. No people."
+    },
+    {
+      "id": "10_ruler_crooked",
+      "kind": "scenery",
+      "remint": true,
+      "prompt": "HARD LOCK FIRST: scholar WRITING STUDY only \u2014 NOT a chemistry lab, NOT an alchemy workshop. ZERO jars, ZERO pots, ZERO canisters, ZERO tins, ZERO flasks, ZERO bottles, ZERO vials, ZERO retorts, ZERO burners, ZERO spirit lamps, ZERO shelves of glassware, ZERO vessels. The ONLY allowed flame is ONE small candle wick in a candlestick (optional). NO fire under or on any object. NO glowing vessel mouths. Premium finished Animistry-class 3D cartoon like Germs Part 01 PASS \u2014 rich wood grain, soft volumetric window light, polished detail. NEVER flat unfinished placeholders. A crooked wooden ruler and mismatched blank cards slide on a writing desk \u2014 the measuring stick is wrong. Warm wood, soft light. Continuous motion. Silent. No readable text. No Orbit. No people."
+    },
+    {
+      "id": "11_shared_stick",
+      "kind": "scenery",
+      "remint": true,
+      "prompt": "HARD LOCK FIRST: scholar WRITING STUDY only \u2014 NOT a chemistry lab, NOT an alchemy workshop. ZERO jars, ZERO pots, ZERO canisters, ZERO tins, ZERO flasks, ZERO bottles, ZERO vials, ZERO retorts, ZERO burners, ZERO spirit lamps, ZERO shelves of glassware, ZERO vessels. The ONLY allowed flame is ONE small candle wick in a candlestick (optional). NO fire under or on any object. NO glowing vessel mouths. Premium finished Animistry-class 3D cartoon like Germs Part 01 PASS \u2014 rich wood grain, soft volumetric window light, polished detail. NEVER flat unfinished placeholders. Period meeting hall table: identical blank wooden measuring sticks slide toward the center, matching lengths \u2014 a shared stick. Soft window light. Papers only beside them. Continuous motion. Silent. No readable text. No Orbit. No people."
+    }
+  ]
+}

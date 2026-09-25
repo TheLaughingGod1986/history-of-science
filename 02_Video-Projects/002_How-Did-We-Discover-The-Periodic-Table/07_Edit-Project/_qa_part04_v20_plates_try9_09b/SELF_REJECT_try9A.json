@@ -1,0 +1,11 @@
+{
+  "plate": "09b_risk_hold",
+  "try": "9A",
+  "decision": "SELF_REJECT_LAVA_DRIP",
+  "sha256": "788e9d670c1be39a188351c18ba1199f0f19a639d63c5869c063962a5b0159c5",
+  "project_url": "https://flow.google.com/project/b3971cf7-dc46-4f9a-8e61-eb8286bd881a",
+  "start_sha256": "7d7563a3244fa460b5646f0a4af452722981850cf1a58152164224336bb4248c",
+  "flats": "PASS (cardless; soft Empty Chairs absent/ok)",
+  "clean_light": "FAIL — molten teardrop / lava beads under lamp shade continuous across mids (visual + heuristic median drip 4159)",
+  "next": "try9B — same cardless DNA start; stronger opaque-shade / no-visible-bulb prompt"
+}

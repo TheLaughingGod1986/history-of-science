@@ -1,0 +1,22 @@
+{
+  "url": "https://flow.google.com/u/1/project/2ed989c7-688d-46cc-91f3-1ffc65526fc1",
+  "hit": {
+    "x": 1015,
+    "y": 1039,
+    "h": 20,
+    "w": 288,
+    "text": "\n"
+  },
+  "creates": [
+    {
+      "t": "arrow_forward",
+      "aria": "Start generation",
+      "disabled": true,
+      "x": 1155,
+      "y": 1085
+    }
+  ],
+  "model": null,
+  "editor_usable": false,
+  "body_head": "Skip to main content\nStart creating or drop media\nhome\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\ndashboard\nAll media\naccessibility_new\nCharacters\nmovie\nScenes\napps_spark_2\nTools\ndelete\nBin\nleft_panel_close\nCollapse\nmenu\nUntitled session\nedit_square\nclose\nHi Benjamin\nWhat would you like to create?\nGenerate concept art\nEdit an image\nDevelop a storyboard\nWhat do you want to create?\n\n\n\n\nadd\narticle_spark\ntune\narrow_forward\n\nGoogle Flow can make mistakes, so double-check it"
+}

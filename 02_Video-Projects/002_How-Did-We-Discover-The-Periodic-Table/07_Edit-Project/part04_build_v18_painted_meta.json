@@ -1,0 +1,69 @@
+{
+  "plates": [
+    {
+      "plate": "06_explorer_leaves_gap",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v18_fast/06_explorer_leaves_gap_v18.mp4",
+      "sha256": "d0cff4a1aa1d3afeda35e7a91561673f0de818cbda6d35f2436302934b1f00de",
+      "bytes": 149824,
+      "duration": 8.0,
+      "start_ghost_peak": 243.97418522384598,
+      "mid_ghost_peaks": [
+        243.97418522384598,
+        243.9459560813423,
+        243.97570555942164,
+        243.97191390242017,
+        243.97570555942164
+      ],
+      "method": "painted_single_exposure_v18 (brightness motion only; NO crop-settle; NO temporal-median; NO nested glow)"
+    },
+    {
+      "plate": "10_family_before_weight",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v18_fast/10_family_before_weight_v18.mp4",
+      "sha256": "d40a2cb1a9002731f67f22da9da82a6d2eff523ab52f0cdc05d1daa2f1916905",
+      "bytes": 139036,
+      "duration": 8.0,
+      "start_ghost_peak": 248.9142701809325,
+      "mid_ghost_peaks": [
+        248.9142701809325,
+        248.90339780020105,
+        248.91611140106704,
+        248.91581274646254,
+        248.91611140106704
+      ],
+      "method": "painted_single_exposure_v18 (brightness motion only; NO crop-settle; NO temporal-median; NO nested glow)"
+    },
+    {
+      "plate": "11_publish_gaps",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v18_fast/11_publish_gaps_v18.mp4",
+      "sha256": "3ea3401a357b00150976ea5ffbb6fc39bf17c506d3debe69ad0ec09f9816b600",
+      "bytes": 138312,
+      "duration": 8.0,
+      "start_ghost_peak": 249.76582047862058,
+      "mid_ghost_peaks": [
+        249.76582047862058,
+        249.75665593829737,
+        249.7668730186345,
+        249.762009491224,
+        249.7668730186345
+      ],
+      "method": "painted_single_exposure_v18 (brightness motion only; NO crop-settle; NO temporal-median; NO nested glow)"
+    },
+    {
+      "plate": "11b_wait_and_hunt",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v18_fast/11b_wait_and_hunt_v18.mp4",
+      "sha256": "2cf249a0954d8ce8e161d84230f8d4734ae03f198126b6ed7fb45f9816e2390b",
+      "bytes": 149486,
+      "duration": 8.0,
+      "start_ghost_peak": 249.51369993427664,
+      "mid_ghost_peaks": [
+        249.51369993427664,
+        249.5042580027836,
+        249.51475247429056,
+        249.51037703935668,
+        249.51475247429056
+      ],
+      "method": "painted_single_exposure_v18 (brightness motion only; NO crop-settle; NO temporal-median; NO nested glow)"
+    }
+  ],
+  "status": "done"
+}

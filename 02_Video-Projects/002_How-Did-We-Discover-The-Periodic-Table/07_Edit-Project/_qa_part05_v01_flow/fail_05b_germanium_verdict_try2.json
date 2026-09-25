@@ -1,0 +1,15 @@
+{
+  "plate": "05b_germanium_verdict",
+  "try": "2",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/05b_germanium_verdict_v01_try2.mp4",
+  "sha256": "5933d75244a6309566f52088dbc8de3dba7a1cb6411f2552cbf736407d9b192a",
+  "bytes": 1658352,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/72176db0-c9b9-4809-9597-e74988bdf38d",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "WALL chart, Ge card, one seat, 3D cartoon",
+  "fail": "Orange fire licks the vacant cell the whole take. Card text morphs Ge → Gg. Do not assemble.",
+  "next": "try3 NEW FRAMING after 2 fire FAILs: NO glowing hole. Ge card slides onto a FLAT wall. Zero emissive rim."
+}

@@ -1,0 +1,34 @@
+{
+  "dialogs": [
+    {
+      "tag": "TP-YT-PAPER-DIALOG",
+      "text": "Sync status\n  \n  \n\n\n  \n    \n      \n      \n        \n        \n          \n            Video field\n          \n          \n        \n        \n          \n          \n        \n        \n      \n    \n  \n    \n      \n      \n        \n        \n          \n            Status\n          \n          \n        \n        \n          \n          \n        \n        \n      \n    \n  \n    \n      \n      \n        \n        \n          \n            RSS feed\n          \n          \n        \n        \n          \n          \n        \n        \n      \n    \n  \n    \n      \n      \n        \n        \n          \n            YouTube\n          \n          \n        \n        \n          \n          \n        \n        \n      \n    \n  \n    \n      \n      \n        \n        \n          \n            \n          \n          \n        \n        \n          \n          \n        \n        \n      \n    \n  \n    \n      \n      \n        \n        \n          \n            \n          \n          \n        \n        \n          \n          \n        \n        \n      \n    \n  \n\n\n\nTitleSet in YouTube\u2013A flask that proved germs come from outsideRevert to RSSRevert to RSSDescriptionSet in YouTube\u2013A flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\\n\\n#Germs #GermTheory #HistoryOfScience #Science #ShortsRevert to RSSRevert to RSSRelease dateSet in YouTube\u2013\u2013Revert to RSSRevert to RSS"
+    },
+    {
+      "tag": "TP-YT-PAPER-DIALOG",
+      "text": "Save or publish\n\nPrivate\nUnlisted\nPublic\n\nSchedule\n\nDone"
+    },
+    {
+      "tag": "YTCP-VIDEO-VISIBILITY-SELECT",
+      "text": "Save or publish\n\nPrivate\nUnlisted\nPublic\n\nSchedule"
+    }
+  ],
+  "radios": [
+    "Yes, it's Made for Kids . Features like personalised ads and notifications won't be available on videos that are Made fo",
+    "No, it's not 'Made for Kids'",
+    "Yes, restrict my video to viewers over 18",
+    "No, don't restrict my video to viewers over 18 only",
+    "Private",
+    "Unlisted",
+    "Public"
+  ],
+  "inputs": [
+    {
+      "type": "text",
+      "aria": "",
+      "placeholder": "Search across your channel",
+      "name": "",
+      "value": ""
+    }
+  ]
+}

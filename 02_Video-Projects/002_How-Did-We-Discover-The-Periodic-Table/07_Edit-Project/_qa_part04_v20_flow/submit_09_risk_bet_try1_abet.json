@@ -1,0 +1,19 @@
+{
+  "plate": "09_risk_bet",
+  "try": "1_abet",
+  "which": "win",
+  "start_n": 2,
+  "max_starts": 2,
+  "project_url": "https://flow.google.com/project/a1bcf8ca-572d-4d75-b5bc-85571671901f",
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T16:26:59",
+  "paint": "banned",
+  "harvest": "04_Generated-Clips/part04/raw/v24_quality/09_risk_bet_v24_try1.mp4",
+  "sha256": "4e15c3b6c1212b84bd61a050c6db3fa64c2158bad38ec77390743a22b1055ad1",
+  "bytes": 2105044,
+  "duration_s": 8.0,
+  "qa": "PASS — cream card/ingot locks into vacant slot; chair fills with glow",
+  "ben_uat": "v23 A BET moon-desk repeats 3-4x; remint 08b FAIL + 09 WIN; KEEP 09b try14"
+}

@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-07T10:23:36",
+  "before_drafts": 64,
+  "after_drafts": 64,
+  "before_ids": [
+    "93fPUG-hW0A",
+    "sILtQxgYQk8",
+    "8_Edn_HCi1s",
+    "iqToagXnjX0",
+    "H1y0DXFVmw8"
+  ],
+  "after_ids": [
+    "93fPUG-hW0A",
+    "sILtQxgYQk8",
+    "8_Edn_HCi1s",
+    "iqToagXnjX0",
+    "H1y0DXFVmw8"
+  ],
+  "non_allowlist_ids": [],
+  "has_draft_text": true,
+  "has_uploading": true,
+  "notes": [
+    "before_drafts=64 ids=['93fPUG-hW0A', 'sILtQxgYQk8', '8_Edn_HCi1s', 'iqToagXnjX0', 'H1y0DXFVmw8']",
+    "cancel_upload_0",
+    "cancel_upload_1",
+    "cancel_upload_2",
+    "cancel_upload_3",
+    "cancel_upload_4",
+    "opened_draft_5_vid=None_url=https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%",
+    "deleted_draft_5",
+    "cancel_upload_6",
+    "cancel_upload_7",
+    "cancel_upload_8",
+    "cancel_upload_9",
+    "cancel_upload_10",
+    "cancel_upload_11"
+  ],
+  "ok": false
+}

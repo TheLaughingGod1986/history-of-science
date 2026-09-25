@@ -1,0 +1,13 @@
+{
+  "plate": "01b_empty_seats_waiting",
+  "try": "1",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/01b_empty_seats_waiting_v01_try1.mp4",
+  "sha256": "6289e4cdc71b19e2628b2aa5bbc5225f1619dbde04fd6766fe3938c37b281a05",
+  "bytes": 2195285,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/a0dfe1a1-c18a-430a-a149-927a15cf8a6b",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "Closer wall: gold rim on empty wood cell, cream cards, slow push. No hands, no fire, no lamp. Distinct from 01 EWS and 02 pin."
+}

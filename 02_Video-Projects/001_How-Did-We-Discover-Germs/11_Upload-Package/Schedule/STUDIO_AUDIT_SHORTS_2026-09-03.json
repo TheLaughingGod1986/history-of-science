@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "id": "_C92tIJCk8A",
+      "title": "YouTube Creator Studio",
+      "url": "https://studio.youtube.com/video/_C92tIJCk8A/edit",
+      "vis_hits": null,
+      "snip": "Oops, something went wrong.",
+      "looks_missing": false
+    },
+    {
+      "id": "8uBR-9oxeWs",
+      "title": "YouTube Creator Studio",
+      "url": "https://studio.youtube.com/video/8uBR-9oxeWs/edit",
+      "vis_hits": null,
+      "snip": "Oops, something went wrong.",
+      "looks_missing": false
+    },
+    {
+      "id": "YX2UR1u-JCQ",
+      "title": "YouTube Creator Studio",
+      "url": "https://studio.youtube.com/video/YX2UR1u-JCQ/edit",
+      "vis_hits": null,
+      "snip": "Oops, something went wrong.",
+      "looks_missing": false
+    },
+    {
+      "id": "Fnb3p81u-wY",
+      "title": "YouTube Creator Studio",
+      "url": "https://studio.youtube.com/video/Fnb3p81u-wY/edit",
+      "vis_hits": null,
+      "snip": "Oops, something went wrong.",
+      "looks_missing": false
+    },
+    {
+      "id": "vpuRgKXtFlY",
+      "title": "YouTube Creator Studio",
+      "url": "https://studio.youtube.com/video/vpuRgKXtFlY/edit",
+      "vis_hits": null,
+      "snip": "Oops, something went wrong.",
+      "looks_missing": false
+    },
+    {
+      "id": "Lcmh5y2KMQM",
+      "title": "YouTube Creator Studio",
+      "url": "https://studio.youtube.com/video/vpuRgKXtFlY/edit?theme=dark",
+      "vis_hits": null,
+      "snip": "Oops, something went wrong.",
+      "looks_missing": false
+    }
+  ],
+  "hos_shorts_tab": {
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/short",
+    "title": "Oops",
+    "body_snip": "Oops, you don't have permission to view this page\n\nYou need to be signed in to an account that has access. Try switching or signing in to an account that has permission.\n\nSwitch account\nReturn to Studio"
+  },
+  "hos_videos_tab": {
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/upload",
+    "title": "Oops",
+    "body_snip": "Oops, you don't have permission to view this page\n\nYou need to be signed in to an account that has access. Try switching or signing in to an account that has permission.\n\nSwitch account\nReturn to Studio",
+    "mentions_germs": false,
+    "mentions_short_ids": {
+      "8uBR-9oxeWs": false,
+      "YX2UR1u-JCQ": false,
+      "Fnb3p81u-wY": false,
+      "vpuRgKXtFlY": false,
+      "Lcmh5y2KMQM": false,
+      "_C92tIJCk8A": false
+    }
+  }
+}

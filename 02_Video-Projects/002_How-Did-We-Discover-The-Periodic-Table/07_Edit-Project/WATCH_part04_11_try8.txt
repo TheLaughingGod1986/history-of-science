@@ -1,0 +1,15 @@
+plate: 11_publish_gaps try8 / try8B
+verdict: SELF_REJECT → STOP_TO_COS (2× same-DNA text invent)
+cleared: CLEAN LIGHT (no lamp); flask dull/matte; continuous motion; soft gap glow OK
+blocker: readable invented text on grid BR (~SECURITY/RESULT)
+try8_sha256: 781b80b0df0c144ebda0cdd33d648fe061920d65985b9951e829ba8b4c64837c
+try8B_sha256: 6721022c141a4c0da584a0034f05bd11fa8b150be2a83126eb89e6999b567fc9
+start_sha256: eabcf990c664e38132756311f0baf08378118f03d8c5978d460bb3ddba97b936
+start_dna: try8 zerolamp moonwin cropL40
+flow_try8: https://flow.google.com/project/a3017d62-3df6-4dd8-8043-a4e1362a15e1
+flow_try8B: https://flow.google.com/project/fba4d3bf-d657-4915-a7f3-f8e5e115a198
+starts: 2/2
+icloud_try8: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_11_publish_gaps_try8
+icloud_try8B: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_11_publish_gaps_try8B
+parent_06: UAT PASS sha df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c
+next: NEW framing (not harder prompt); no assemble; no 11b/09b/06

@@ -1,0 +1,15 @@
+{
+  "plate": "10_zoo_became_city",
+  "try": "3",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/10_zoo_became_city_v01_try3.mp4",
+  "sha256": "0375cb0e8610bd3c9b95b7678d1f04fe2eb1662a0a7892a62765571bc9a85d43",
+  "bytes": 4407991,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/b0488f92-1097-45fa-805d-071bae732250",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "WIDE filled cream-card WALL GRID pull-back; never miniature furniture",
+  "fail": "First ~5s are a filled cream-card wall (right). At ~7s white miniature HOUSES rise in the foreground. Forbidden house-blocks. Do not assemble.",
+  "next": "try4: stay ON the filled wall the whole take. No pull-back that invents a city. NEVER houses."
+}

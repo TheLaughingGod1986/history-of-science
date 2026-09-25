@@ -1,0 +1,12 @@
+{
+  "plate": "09b_risk_hold",
+  "try": "13A",
+  "verdict": "SELF_REJECT",
+  "reason": "lamp_fixture_invent_midclip_left_shade_cup_lookin",
+  "mp4_rejected": "04_Generated-Clips/part04/raw/v20_fast/_rejected/09b_risk_hold_v20_try13A_SELF_REJECT_LAMP_FIXTURE_INVENT.mp4",
+  "sha256": "9ecab77caa621ca9ca857bd89dc18ebc92067f40c2aac4b60f21efd440991991",
+  "family": "NEW_KEEP_v07_bookshelf_empty_leather_chair_zerofixture_outworld",
+  "plate_library_lock_sha": "4b8ed25",
+  "bible": "8ddbf99",
+  "assemble": false
+}

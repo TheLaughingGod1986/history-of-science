@@ -1,0 +1,17 @@
+=== FINAL hos_002_part03_rough_v08 ===
+path=/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v08.mp4
+bytes=87224424
+duration=89.680
+sha256=487dc2b8cc58787e0ee9d76acf9fb29d04b3291b1ba15be6b4f20868c8c6b3b3
+chair_picture=52.01-60.01
+waves≈59.66 city≈67.31
+parent_v07=f39d794ed6d8d23faeb67320f623cc0213d0b344eca29e2fa8b48d8117664bd1
+=== ICLOUD ===
+/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part03_rough_v08.mp4
+=== P01/P02 after ===
+d903cf7ca1789dcfc1a3703b9215564b3a0d306d0ea1dbf7c2a974888fa92781  hos_002_part01_rough_v14.mp4
+799086795d62f159930bd00db638ea2de0e02a299d8c9d50c8eed3d482e89529  hos_002_part02_rough_v06.mp4
+=== REMINT ===
+08_property_waves_v08.mp4 T2V scenery project=111872c0-144b-4e22-af51-33c86e07924a
+10_city_plan_lots_v08.mp4 T2V scenery project=254b4923-e531-4ede-896e-3cbc529afa8a
+Do not declare PASS. Scores → CoS. No P04.

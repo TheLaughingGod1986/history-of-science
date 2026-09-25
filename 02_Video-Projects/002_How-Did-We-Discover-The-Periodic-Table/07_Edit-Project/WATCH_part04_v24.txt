@@ -1,0 +1,49 @@
+WATCH THIS FILE ONLY (Part 04 rough v24 — A BET FAIL/WIN remints):
+  hos_002_part04_rough_v24.mp4
+
+Ben UAT fix vs v23:
+- A BET stretch no longer repeats the moon-desk still-life 3–4 times.
+- 08b FAIL: empty chair glow dies; vacant seat stays empty (imaginary metals).
+- 09 WIN: matching cream card/ingot locks into the vacant slot (bet pays).
+- KEEP 09b try14 three glowing vacant chairs.
+- Explorer try8 + looped music bed unchanged from v23.
+
+CoS / Picture→UAT gates for this cut:
+- KEEP remints:
+  · 05_columns_families try2B Quality sha 49437e7e…e8caa
+  · 06_explorer_leaves_gap try8B sha fd4627d2…5c7a70
+  · 08b_navigation_walk v24 try1 FAIL sha 83fc2c43…827a3
+  · 09_risk_bet v24 try1 WIN sha 4e15c3b6…055ad1
+  · 09b_risk_hold try14 Quality sha 47a6bdeb…44c38
+  · 10_family_before_weight try1A Quality sha 49240cbb…81b78
+  · 11_publish_gaps try9 sha 97d0c419…8cc72
+  · 11b_wait_and_hunt try1 sha 5602762e…3075e
+- Scrub A BET ~83.5–100s: FAIL then WIN then 09b chairs — not the same still-life.
+- NO PAINT FALLBACK. Part 01–03 LOCKED. Do NOT declare PASS.
+
+Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v23_sha=7beae93d10a87066731ae58bc39039eabda625154aa7f0aa3e7c4d9f6e5e5b5f
+parent_v22_sha=78039206d044fd9ee61aed5dd3aa491fa697c32b2896ae7311a175db630b13d3
+parent_v20_sha=1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b
+parent_v21_sha=868a012c5f52fa7f412a076cf26593f9cd700f3c03299cd14ff7010eb6804963
+keep_remints=05_columns_families,06_explorer_leaves_gap,08b_navigation_walk,09_risk_bet,09b_risk_hold,10_family_before_weight,11_publish_gaps,11b_wait_and_hunt
+explorer_picture=45.300-53.200
+plate08b_picture=83.050-90.950
+plate09_picture=90.600-98.500
+plate09b_picture=98.150-106.050
+plate10_picture=105.700-113.600
+plate11_picture=113.250-121.150
+plate11b_picture=120.800-128.700
+plate05_sha256=49437e7e4004c224b021409e15ebb50fb06b74737adfe2b6c0bc0a61bfae8caa
+plate06_sha256=fd4627d29e8087ff50baca163fc0dd155d2a19eb5127dc1c3c7379e9525c7a70
+plate08b_sha256=83fc2c4325ba16b46851a8668a4f8de91858457b35eb8ca6cdd7680b287827a3
+plate09_sha256=4e15c3b6c1212b84bd61a050c6db3fa64c2158bad38ec77390743a22b1055ad1
+plate10_sha256=49240cbb4fab760e710f24051d822c61f0b8c1236684fc697016db325ab81b78
+plate09b_sha256=47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38
+plate11_sha256=97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72
+plate11b_sha256=5602762e82fd40eb654b25a5d3e5260e8baf79707fb19ecf8b58ede67cb3075e
+bed=hos_002_part01_curious_workshop_v02_loop130_norm.wav
+sha256=4dea0a7219ad7a1f1878006c6a1c4511ddb9930225b700ce0a3186b2a666cbcd
+bytes=80287745
+duration=127.760

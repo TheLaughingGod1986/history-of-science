@@ -1,0 +1,15 @@
+{
+  "plate": "07b_noble_gas_column",
+  "try": "1",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/07b_noble_gas_column_v01_try1.mp4",
+  "sha256": "f9e054cf64fc6971a8f8f48fabe7389073bf328819e0c5207c3299be6d72fe62",
+  "bytes": 1706277,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/4ea9adb5-5b7c-4560-ba91-6cb3b8287c0c",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "new pale column slides in from the right; not houses",
+  "fail": "Room swap / style jump: white-blue abstract gallery of floating cream tiles. Verb (column from right) is right; world is not the 1869 honey-wood wall of KEEP 07. Do not assemble.",
+  "next": "try2: same 1869 honey-wood WALL CHART as KEEP 07. A new vertical column of cream cards pins in from the RIGHT of that wood grid. Not a white gallery. Not houses."
+}

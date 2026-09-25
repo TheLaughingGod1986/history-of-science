@@ -45,7 +45,7 @@ def meta_caption(short: dict, *, max_len: int = 2100) -> str:
     if hashtags:
         parts.append(hashtags)
     elif "#historyofscience" not in prose.lower():
-        parts.append("#space #historyofscience #reels")
+        parts.append("#HistoryOfScience #Science #reels")
 
     caption = " ".join(p for p in parts if p).strip()
     caption = re.sub(r"\s+", " ", caption)

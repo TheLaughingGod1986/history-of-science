@@ -1,0 +1,75 @@
+{
+  "i": 3,
+  "clip": "../04_Generated-Clips/part04/raw/v06_fast/_desk_harvest/desk_try_prior_3.mp4",
+  "bytes": 1722766,
+  "dur": 8.0,
+  "stills": [
+    "_qa_part04_v06_plate/02b_desk_prior3_t0.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior3_t1.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior3_t2.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior3_t3.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior3_t4.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior3_t5.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior3_t6.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior3_t7.jpg",
+    "_qa_part04_v06_plate/02b_desk_prior3_t8.jpg"
+  ],
+  "scores": [
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior3_t0.jpg",
+      "dark_frac": 0.4503,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior3_t1.jpg",
+      "dark_frac": 0.4551,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior3_t2.jpg",
+      "dark_frac": 0.4605,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior3_t3.jpg",
+      "dark_frac": 0.4699,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior3_t4.jpg",
+      "dark_frac": 0.4739,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior3_t5.jpg",
+      "dark_frac": 0.4835,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior3_t6.jpg",
+      "dark_frac": 0.4952,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior3_t7.jpg",
+      "dark_frac": 0.5041,
+      "sky_frac": 0.0,
+      "suspect": true
+    },
+    {
+      "still": "_qa_part04_v06_plate/02b_desk_prior3_t8.jpg",
+      "dark_frac": 0.5161,
+      "sky_frac": 0.0,
+      "suspect": true
+    }
+  ],
+  "suspect_count": 9,
+  "window_or_roof_readable": true
+}

@@ -1,0 +1,55 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v03_fast",
+  "continuity": "plate01_hall_dna_i2v_partial_v03",
+  "source_keep_v02": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v02_fast",
+  "only": [
+    "09_empty_chair_claim",
+    "10_city_plan_lots"
+  ],
+  "plates": [
+    {
+      "id": "09_empty_chair_claim",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v03_fast/09_empty_chair_claim_v03.mp4",
+      "duration": 8.0,
+      "kind": "T2V_skip_i2v",
+      "start_frame": null,
+      "seconds": 51.1,
+      "bytes": 2183385,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:2183385",
+      "url": "https://flow.google.com/u/1/project/9e106d10-10e2-411f-975e-6f10971e3d1f",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/9e106d10-10e2-411f-975e-6f10971e3d1f"
+    },
+    {
+      "id": "10_city_plan_lots",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v03_fast/10_city_plan_lots_v03.mp4",
+      "duration": 8.0,
+      "kind": "T2V_skip_i2v",
+      "start_frame": null,
+      "seconds": 51.6,
+      "bytes": 6668042,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:6668042",
+      "url": "https://flow.google.com/u/1/project/98f8d2b6-e6e0-4aa7-9818-fcf7b1c66f8f",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/98f8d2b6-e6e0-4aa7-9818-fcf7b1c66f8f"
+    }
+  ],
+  "flow_account": "benoats@googlemail.com"
+}

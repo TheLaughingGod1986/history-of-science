@@ -1,0 +1,99 @@
+{
+  "tag": "09_risk_bet_try1",
+  "clip": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v13_fast/09_risk_bet_v13.try1.tmp.mp4",
+  "scores": [
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v13_plate/09_risk_bet_try1_firesmoke_t0.jpg",
+      "seat_white_pct": 0.79,
+      "back_white_pct": 0.0,
+      "back_hot_pct": 0.0,
+      "smoke_pct": 3.76,
+      "fire": false,
+      "smoke": true,
+      "reject": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v13_plate/09_risk_bet_try1_firesmoke_t1.jpg",
+      "seat_white_pct": 0.34,
+      "back_white_pct": 0.0,
+      "back_hot_pct": 0.0,
+      "smoke_pct": 0.84,
+      "fire": false,
+      "smoke": false,
+      "reject": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v13_plate/09_risk_bet_try1_firesmoke_t2.jpg",
+      "seat_white_pct": 0.41,
+      "back_white_pct": 0.0,
+      "back_hot_pct": 0.0,
+      "smoke_pct": 0.62,
+      "fire": false,
+      "smoke": false,
+      "reject": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v13_plate/09_risk_bet_try1_firesmoke_t3.jpg",
+      "seat_white_pct": 0.63,
+      "back_white_pct": 0.0,
+      "back_hot_pct": 0.0,
+      "smoke_pct": 0.35,
+      "fire": false,
+      "smoke": false,
+      "reject": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v13_plate/09_risk_bet_try1_firesmoke_t4.jpg",
+      "seat_white_pct": 0.63,
+      "back_white_pct": 0.0,
+      "back_hot_pct": 0.0,
+      "smoke_pct": 0.29,
+      "fire": false,
+      "smoke": false,
+      "reject": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v13_plate/09_risk_bet_try1_firesmoke_t5.jpg",
+      "seat_white_pct": 0.6,
+      "back_white_pct": 0.0,
+      "back_hot_pct": 0.0,
+      "smoke_pct": 0.25,
+      "fire": false,
+      "smoke": false,
+      "reject": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v13_plate/09_risk_bet_try1_firesmoke_t6.jpg",
+      "seat_white_pct": 0.84,
+      "back_white_pct": 0.0,
+      "back_hot_pct": 0.0,
+      "smoke_pct": 0.12,
+      "fire": false,
+      "smoke": false,
+      "reject": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v13_plate/09_risk_bet_try1_firesmoke_t7.jpg",
+      "seat_white_pct": 0.58,
+      "back_white_pct": 0.0,
+      "back_hot_pct": 0.0,
+      "smoke_pct": 0.36,
+      "fire": false,
+      "smoke": false,
+      "reject": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v13_plate/09_risk_bet_try1_firesmoke_t8.jpg",
+      "seat_white_pct": 0.37,
+      "back_white_pct": 0.0,
+      "back_hot_pct": 0.0,
+      "smoke_pct": 0.24,
+      "fire": false,
+      "smoke": false,
+      "reject": false
+    }
+  ],
+  "bad_frame_count": 1,
+  "reject": false,
+  "auto_reject": true
+}

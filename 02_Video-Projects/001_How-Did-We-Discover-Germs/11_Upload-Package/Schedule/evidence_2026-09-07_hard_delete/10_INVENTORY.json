@@ -1,0 +1,130 @@
+{
+  "at": "2026-09-07T10:16:12",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "allowlist": [
+    "8_Edn_HCi1s",
+    "93fPUG-hW0A",
+    "H1y0DXFVmw8",
+    "_C92tIJCk8A",
+    "iqToagXnjX0",
+    "sILtQxgYQk8"
+  ],
+  "by_tab_counts": {
+    "videos": 1,
+    "shorts": 5,
+    "live": 0
+  },
+  "shelf_count": 6,
+  "keep": [
+    {
+      "id": "_C92tIJCk8A",
+      "tab": "videos",
+      "text": "6:05 How Did We Discover Germs? A/B test running \u2014 Public 3 Sept 2026 Premiered 2 1",
+      "allowlisted": true,
+      "named_twin": false
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "tab": "shorts",
+      "text": "0:24 Invisible life is still everywhere What else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleLife #HistoryOfScience #Science #Shorts \u2014 S",
+      "allowlisted": true,
+      "named_twin": false
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "tab": "shorts",
+      "text": "0:25 A flask that proved germs come from outside A flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\\n\\n#Germs #GermTheory #HistoryOfScience #Science #Shorts \u2014 Scheduled 7 Sept 2026 Schedule",
+      "allowlisted": true,
+      "named_twin": false
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "tab": "shorts",
+      "text": "0:25 Germs hitch a ride on you You are the vector \u2014 germs hitch a ride on hands, cloth, and breath. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #Handwashing #GermTheory #HistoryOfScience #Shorts \u2014 Public 6 Sept 2026 Publish",
+      "allowlisted": true,
+      "named_twin": false
+    },
+    {
+      "id": "iqToagXnjX0",
+      "tab": "shorts",
+      "text": "0:25 Microbes in a drop of pond water A drop of pond water is not empty \u2014 under a microscope it is full of microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Microbes #PondWater #GermTheory #HistoryOfScience #Shorts \u2014 Public 6",
+      "allowlisted": true,
+      "named_twin": false
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "tab": "shorts",
+      "text": "0:25 Germs don't cast a shadow Germs don't cast a shadow \u2014 doctors once blamed bad air, not living microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts \u2014 Public 6 Sept 2026 Pu",
+      "allowlisted": true,
+      "named_twin": false
+    }
+  ],
+  "delete_candidates": [
+    {
+      "id": "8uBR-9oxeWs",
+      "tab": "forced_twin",
+      "text": "named twin (force probe)",
+      "allowlisted": false,
+      "named_twin": true
+    },
+    {
+      "id": "YX2UR1u-JCQ",
+      "tab": "forced_twin",
+      "text": "named twin (force probe)",
+      "allowlisted": false,
+      "named_twin": true
+    },
+    {
+      "id": "Fnb3p81u-wY",
+      "tab": "forced_twin",
+      "text": "named twin (force probe)",
+      "allowlisted": false,
+      "named_twin": true
+    },
+    {
+      "id": "vpuRgKXtFlY",
+      "tab": "forced_twin",
+      "text": "named twin (force probe)",
+      "allowlisted": false,
+      "named_twin": true
+    },
+    {
+      "id": "Lcmh5y2KMQM",
+      "tab": "forced_twin",
+      "text": "named twin (force probe)",
+      "allowlisted": false,
+      "named_twin": true
+    }
+  ],
+  "by_tab": {
+    "videos": [
+      {
+        "id": "_C92tIJCk8A",
+        "text": "6:05 How Did We Discover Germs? A/B test running \u2014 Public 3 Sept 2026 Premiered 2 1"
+      }
+    ],
+    "shorts": [
+      {
+        "id": "93fPUG-hW0A",
+        "text": "0:24 Invisible life is still everywhere What else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleLife #HistoryOfScience #Science #Shorts \u2014 S"
+      },
+      {
+        "id": "sILtQxgYQk8",
+        "text": "0:25 A flask that proved germs come from outside A flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\\n\\n#Germs #GermTheory #HistoryOfScience #Science #Shorts \u2014 Scheduled 7 Sept 2026 Schedule"
+      },
+      {
+        "id": "8_Edn_HCi1s",
+        "text": "0:25 Germs hitch a ride on you You are the vector \u2014 germs hitch a ride on hands, cloth, and breath. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #Handwashing #GermTheory #HistoryOfScience #Shorts \u2014 Public 6 Sept 2026 Publish"
+      },
+      {
+        "id": "iqToagXnjX0",
+        "text": "0:25 Microbes in a drop of pond water A drop of pond water is not empty \u2014 under a microscope it is full of microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Microbes #PondWater #GermTheory #HistoryOfScience #Shorts \u2014 Public 6"
+      },
+      {
+        "id": "H1y0DXFVmw8",
+        "text": "0:25 Germs don't cast a shadow Germs don't cast a shadow \u2014 doctors once blamed bad air, not living microbes. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts \u2014 Public 6 Sept 2026 Pu"
+      }
+    ],
+    "live": []
+  }
+}

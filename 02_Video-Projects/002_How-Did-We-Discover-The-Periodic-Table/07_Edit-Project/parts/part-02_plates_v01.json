@@ -1,0 +1,79 @@
+{
+  "part": 2,
+  "title": "First Patterns, Still Wrong",
+  "status": "unlocked_part01_pass",
+  "style_lock": "hos_001_part01_rough_v21",
+  "clip_use_s": 8.0,
+  "xfade_s": 0.4,
+  "vo_file": "02_Voiceover/part02_first_patterns_v01.wav",
+  "notes": "Part 01 PASS unlocked mint. Apply PART01_LESSONS physics lock. Explorer once on 05. Opaque props. No readable text. No Orbit. 11 plates for ~84s VO.",
+  "physics_lock": "OPAQUE ceramic/metal vessels only. ZERO clear liquid glass. ZERO bubbles in air. ZERO floating glassware. Objects sit IN/ON contact surfaces. Heat shimmer colourless only. ONE Explorer when called. Continuous motion. Silent.",
+  "plates": [
+    {
+      "id": "01_chapter_card",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon still: cream-on-brown History of Science chapter card reading FIRST PATTERNS STILL WRONG in bold serif \u2014 no other text. Warm period wood frame. Not photoreal.",
+      "prompt": "Premium 3D cartoon chapter card hold with subtle warm light pulse on cream-on-brown wood frame. Card text stays soft and non-sharp. Continuous gentle motion. Silent. No Orbit. No clear glass. No bubbles."
+    },
+    {
+      "id": "02_lavoisier_list",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon 1780s study bench: neat rows of blank specimen cards and OPAQUE ceramic jars \u2014 Lavoisier-era list of simple substances without readable words. Warm lamp. No clear liquids. No people.",
+      "prompt": "Premium 3D cartoon period study: camera drifts along blank specimen cards and OPAQUE ceramic jars on a bench (simple substances list vibe). NO clear glass liquids, NO bubbles. Continuous motion. Silent. No readable text. No Orbit. HARD REJECT: transparent flasks, floating glass, bubbles in air."
+    },
+    {
+      "id": "03_not_a_map",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon: scattered blank cards on a desk fail to form columns \u2014 a messy pile, not a grid. Warm light. Opaque jars on shelf behind. No readable text. No people.",
+      "prompt": "Premium 3D cartoon: blank cards shuffle and refuse to align into columns on a desk. Opaque jars stay on shelves. Continuous motion. Silent. No text. No clear liquids. No bubbles. No Orbit."
+    },
+    {
+      "id": "04_triad_cards",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon: three glowing blank cards in a row almost rhyming \u2014 lithium sodium potassium vibe as coloured metal swatches without labels. Warm workshop. Opaque props only. No people.",
+      "prompt": "Premium 3D cartoon: three glowing cousin cards pulse in a neat row, middle card between the others. Warm workshop with OPAQUE jars only. Continuous motion. Silent. No readable text. No clear liquids. No bubbles. No Orbit."
+    },
+    {
+      "id": "05_explorer_triad_break",
+      "explorer": true,
+      "still_prompt": "Premium 3D cartoon medium shot: exactly ONE Explorer boy matching Germs Part 01 younger-boy lock \u2014 messy wavy brown hair, large eyes, round thin gold wire-rim glasses, teal-blue overcoat with gold atom pin, tan waistcoat, white shirt, dark brown floppy bow, rolled brown trousers, cream socks, brown boots, brown satchel with brass compass. He stands at a bench LINING three glowing blank cards with both hands (not rummaging in satchel). A fourth blank card waits to break the row. OPAQUE ceramic jars only behind. Empty table of clear glass. Single Explorer. No twins. No Orbit. No readable text.",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Keep ONE Explorer boy (Germs Part 01 younger lock: messy brown hair, gold wire glasses, teal coat, tan vest, floppy brown bow, satchel+compass). He lines three glowing blank cards, smiles \u2014 fourth card slides in and breaks the rhyme; he winces. Continuous acting. Cards stay on the bench surface (not floating). OPAQUE jars only in background. HARD REJECT: adult redesign, satchel rummage as the beat, clear liquid glass, bubbles in air, floating flasks, twins, Orbit, readable text. Silent."
+    },
+    {
+      "id": "06_rhymes_run_out",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon workshop shelf: more and more blank cards crowding in until triads no longer fit. OPAQUE ceramic jars and sealed metal canisters only. Warm light. No people. No readable text.",
+      "prompt": "Premium 3D cartoon: blank cards multiply across shelves of OPAQUE jars until triad patterns break. Continuous drift. Silent. No text. NO clear liquids. NO bubbles. No Orbit. HARD REJECT: transparent flasks, floating glass."
+    },
+    {
+      "id": "07_newlands_octave",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon period bench with blank element cards laid in a long line like a musical scale \u2014 no readable names. A small stylised wooden piano keyboard at the end. Opaque jars on shelf. Warm light. No people.",
+      "prompt": "Premium 3D cartoon: camera tracks along a long line of blank element cards beside a tiny wooden piano keyboard. Cards sit on the bench. Opaque jars only. Continuous motion. Silent. No readable text. No clear liquids. No bubbles. No Orbit."
+    },
+    {
+      "id": "08_piano_gag_fail",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon comedic beat: a stylised wooden piano keyboard gag collapses or tips \u2014 blank cards scatter on the bench. Wonder not horror. Opaque shelves. No readable text. No people.",
+      "prompt": "Premium 3D cartoon: piano octave gag falls flat \u2014 wooden keys tip, blank cards scatter onto the bench (not into liquid). Continuous motion. Silent. Comic fail, not horror. No text. No clear liquids. No bubbles. No Orbit."
+    },
+    {
+      "id": "09_almost_right",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon: a nearly-complete row of blank cards with one obvious gap \u2014 almost a pattern but wrong. Warm workshop. Opaque jars. No people. No readable text.",
+      "prompt": "Premium 3D cartoon: nearly-aligned blank cards wobble with one gap breaking the pattern. Cards stay on wood. Continuous motion. Silent. No text. No clear liquids. No bubbles. No Orbit."
+    },
+    {
+      "id": "10_ruler_crooked",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon: a crooked wooden ruler beside mismatched blank cards on a desk \u2014 measurement problem visual. Warm light. Opaque jars. No readable numbers. No people. No clear glass.",
+      "prompt": "Premium 3D cartoon: crooked wooden ruler and mismatched blank cards slide on the desk; camera pushes toward the ruler. Objects stay on the wood surface. Continuous motion. Silent. No readable text. NO clear flasks beside the ruler. NO bubbles. No Orbit. HARD REJECT: floating glassware, liquid bubbles, flames."
+    },
+    {
+      "id": "11_shared_stick",
+      "explorer": false,
+      "still_prompt": "Premium 3D cartoon: many identical blank wooden measuring sticks handed across a period congress table \u2014 shared measurement visual. Opaque jars on side shelves. Warm hall light. No readable numbers. No people.",
+      "prompt": "Premium 3D cartoon period congress hall: identical blank wooden measuring sticks slide across a long table as hands pass them (hands only, no faces). Opaque ceramic jars on side shelves. Continuous motion. Silent. No readable text. NO clear liquids. NO bubbles. No Orbit. HARD REJECT: transparent flasks, floating glass, modern lab."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "plate": "06b_navigation_address",
+  "try": "3_v01",
+  "which": "one_blank_card_empty_wall",
+  "start_n": 1,
+  "max_starts": 2,
+  "cycle": "v01_c15_06b3_07",
+  "project_url": "https://flow.google.com/project/ca39ec4c-7ec1-4116-a270-ca66eec1ea00",
+  "info": {
+    "seconds": 52.1,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/ca39ec4c-7ec1-4116-a270-ca66eec1ea00",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/ca39ec4c-7ec1-4116-a270-ca66eec1ea00"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T19:42:58",
+  "paint": "banned",
+  "assemble": false,
+  "note": "NEW FRAMING: ONE blank cream card on empty wood wall; no pictogram grid"
+}

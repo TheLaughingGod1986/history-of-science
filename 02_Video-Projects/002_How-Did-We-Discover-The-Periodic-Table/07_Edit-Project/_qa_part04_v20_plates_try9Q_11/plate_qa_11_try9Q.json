@@ -1,0 +1,29 @@
+{
+  "plate": "11_publish_gaps",
+  "try": "9Q",
+  "verdict": "SELF_REJECT",
+  "reason": "practical lamp invent LEFT ~t6–t7.2 on Veo 3.1 Quality; boardtop edgeoff DNA start 2/2",
+  "gates": {
+    "lamp_invent": "FAIL",
+    "flask_glow_invent": "BORDERLINE",
+    "text_invent": "CLEAR",
+    "soft_gap_glow": "PASS",
+    "continuous_motion": "PASS"
+  },
+  "sha256": "c2fdae47aa650d73a71fe72783ded3aa97c9387a06ed82c03a2650db2cefbd36",
+  "bytes": 1450093,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/938eff46-7d04-4a90-b26a-69f50507ec23",
+  "start_sha256": "719984d4fe50dab1a63a9d4cc9f0eb96b69922a1475afdf093b975daeb512d79",
+  "start_dna": "try9 boardtop edgeoff",
+  "model": "Veo 3.1 - Quality",
+  "ben_lock_quality": true,
+  "seedance": "banned",
+  "plate_library_lock_sha": "4b8ed25",
+  "paint": "banned",
+  "assemble": false,
+  "starts_used": 2,
+  "max_starts": 2,
+  "stop": "STOP_TO_COS",
+  "when": "2026-09-10T10:59:14"
+}

@@ -1,0 +1,32 @@
+{
+  "plate": "06b_navigation_address",
+  "try": "4_v01",
+  "which": "classroom_medium_dolly",
+  "start_n": 1,
+  "max_starts": 2,
+  "cycle": "v01_c16_06b4_07b",
+  "project_url": "https://flow.google.com/project/081d119f-8380-4479-9a28-2841c1850beb",
+  "info": {
+    "seconds": 52.0,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/081d119f-8380-4479-9a28-2841c1850beb",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/081d119f-8380-4479-9a28-2841c1850beb"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T19:53:32",
+  "paint": "banned",
+  "assemble": false,
+  "note": "MEDIUM classroom dolly toward wall chart; never CU; no sparks"
+}

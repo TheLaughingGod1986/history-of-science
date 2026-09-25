@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c16_06b4_07b",
+  "jobs": [
+    {
+      "plate": "06b_navigation_address",
+      "try": "4_v01",
+      "which": "classroom_medium_dolly",
+      "note": "MEDIUM classroom dolly toward wall chart; never CU; no sparks",
+      "out": "submit_06b_navigation_address_try4.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 06b_navigation_address try4 — navigation. NEW FRAMING. VO beat: walk toward a vacant lot with an address. ONE continuous 8s take. MEDIUM shot inside an 1869 classroom. Camera dollies toward a cream-card WALL CHART on the far wall. One blank unprinted cream card sits among other cream cards. Stay MEDIUM the whole take — never a close-up, never fill the frame with one card. No fire. No sparks. No flame icons. Not a chair hallway. Daytime. No person. No lamp. Continuous 8s. Silent. HARD REJECT: lava, fire, sparks, Ken Burns only, moon-desk still-life, model-town. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "07b_noble_gas_column",
+      "try": "1_v01",
+      "which": "column_slides_from_right",
+      "note": "new vertical pale column slides in from the right; not houses; no fire",
+      "out": "submit_07b_noble_gas_column_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 07b_noble_gas_column try1 — noble gases. VO beat: a new column of seats. ONE continuous 8s take. A NEW vertical column of pale cream cards slides in from the RIGHT beside an existing cream-card WALL GRID — a new street of seats, NEVER buildings or houses. Soft pale cards, never orange, never fire. Continuous slide. Daytime. No person. No lamp. Silent. HARD REJECT: model-town, lava, fire, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}

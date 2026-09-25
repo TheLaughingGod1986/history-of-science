@@ -1,0 +1,91 @@
+{
+  "tag": "02b_cards_sixty_three_try2",
+  "clip": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v06_fast/02b_cards_sixty_three_v06.try2.tmp.mp4",
+  "stills": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t0.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t1.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t2.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t3.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t4.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t5.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t6.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t7.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t8.jpg"
+  ],
+  "scores": [
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t0.jpg",
+      "dark": 25733,
+      "blueish": 13090,
+      "total": 51554,
+      "dark_frac": 0.4991,
+      "suspect": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t1.jpg",
+      "dark": 26114,
+      "blueish": 13084,
+      "total": 51554,
+      "dark_frac": 0.5065,
+      "suspect": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t2.jpg",
+      "dark": 25769,
+      "blueish": 13481,
+      "total": 51554,
+      "dark_frac": 0.4998,
+      "suspect": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t3.jpg",
+      "dark": 25206,
+      "blueish": 14127,
+      "total": 51554,
+      "dark_frac": 0.4889,
+      "suspect": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t4.jpg",
+      "dark": 24890,
+      "blueish": 14636,
+      "total": 51554,
+      "dark_frac": 0.4828,
+      "suspect": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t5.jpg",
+      "dark": 24970,
+      "blueish": 14684,
+      "total": 51554,
+      "dark_frac": 0.4843,
+      "suspect": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t6.jpg",
+      "dark": 25090,
+      "blueish": 14627,
+      "total": 51554,
+      "dark_frac": 0.4867,
+      "suspect": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t7.jpg",
+      "dark": 25017,
+      "blueish": 14662,
+      "total": 51554,
+      "dark_frac": 0.4853,
+      "suspect": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v06_plate/02b_cards_sixty_three_try2_t8.jpg",
+      "dark": 24932,
+      "blueish": 14780,
+      "total": 51554,
+      "dark_frac": 0.4836,
+      "suspect": true
+    }
+  ],
+  "suspect_count": 9,
+  "roof_readable": true
+}

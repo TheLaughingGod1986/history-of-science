@@ -1,0 +1,8 @@
+{
+  "plate": "11_publish_gaps",
+  "try": 9,
+  "starts": 2,
+  "max_starts": 2,
+  "dna": "try9 boardtop edgeoff",
+  "when": "2026-09-10T10:54:02"
+}

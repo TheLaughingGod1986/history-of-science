@@ -1,0 +1,13 @@
+{
+  "plate": "07b_noble_gas_column",
+  "try": "3",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/07b_noble_gas_column_v01_try3.mp4",
+  "sha256": "3cfe1ba14a5e809af11004209477229c5f809e2512bcf39dde2db52b6db01383",
+  "bytes": 2738857,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/415aa578-bb45-4fbb-a08f-75d29dac59d3",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "1869 honey-wood wall. New cream-card column arrives from the right into empty panelling. No neon strip, no fire. Veo writes messy noble-gas tags; mute test is the new column of seats."
+}

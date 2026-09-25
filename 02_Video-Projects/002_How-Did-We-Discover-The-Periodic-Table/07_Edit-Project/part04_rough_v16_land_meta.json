@@ -1,0 +1,92 @@
+{
+  "cut": "hos_002_part04_rough_v16.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v16.mp4",
+  "bytes": 87821720,
+  "duration_s": 127.76,
+  "sha256": "7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c",
+  "bible_main": "25bdefd",
+  "parent_v15": "hos_002_part04_rough_v15.mp4",
+  "parent_v15_sha256": "cd7a57b2979478a34ac7cc5fe5639aa156ae603b437674ccd724ab3fe994748c",
+  "reminted_plates": [
+    "10_family_before_weight",
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "plate_sha256": {
+    "10_family_before_weight": "6ee17990e49aede89b166b84ee306b04cd2b6e134cee902c1a1bf8a08330fe1a",
+    "11_publish_gaps": "6e83bd2224d1c7a777bd0cc38570b3e2abfff260990237ecb2c3d40443ab1085",
+    "11b_wait_and_hunt": "9706be4bd781ee0488397bb63213c0427e714121a381b4a05c3050c0deb6dfac"
+  },
+  "plates": {
+    "10_family_before_weight": {
+      "path": "04_Generated-Clips/part04/raw/v16_fast/10_family_before_weight_v16.mp4",
+      "sha256": "6ee17990e49aede89b166b84ee306b04cd2b6e134cee902c1a1bf8a08330fe1a",
+      "bytes": 1569552
+    },
+    "11_publish_gaps": {
+      "path": "04_Generated-Clips/part04/raw/v16_fast/11_publish_gaps_v16.mp4",
+      "sha256": "6e83bd2224d1c7a777bd0cc38570b3e2abfff260990237ecb2c3d40443ab1085",
+      "bytes": 2008929
+    },
+    "11b_wait_and_hunt": {
+      "path": "04_Generated-Clips/part04/raw/v16_fast/11b_wait_and_hunt_v16.mp4",
+      "sha256": "9706be4bd781ee0488397bb63213c0427e714121a381b4a05c3050c0deb6dfac",
+      "bytes": 2315471
+    }
+  },
+  "methods": {
+    "10_family_before_weight": "sharp painted continuous-motion remint (Flow harvest broken + Gemini prepaid depleted; not temporal-median)",
+    "11_publish_gaps": "restore clean v01 DNA (replace v15 temporal-median deghost)",
+    "11b_wait_and_hunt": "restore clean v01 DNA (replace v15 temporal-median deghost)"
+  },
+  "kept_from_v15": [
+    "06_explorer_leaves_gap",
+    "09_risk_bet",
+    "09b_risk_hold"
+  ],
+  "uat_blocker": "LATE SHOTS SHARP \u2014 ghost doubles / left-half pixel mush",
+  "fail_times": {
+    "family_ghost": 110,
+    "publish_ghost": 121,
+    "left_pixel": 125
+  },
+  "timeline": {
+    "plate09b_picture_s": [
+      98.14999999999998,
+      106.04999999999998
+    ],
+    "plate10_picture_s": [
+      105.69999999999997,
+      113.59999999999998
+    ],
+    "plate11_picture_s": [
+      113.24999999999997,
+      121.14999999999998
+    ],
+    "plate11b_picture_s": [
+      120.79999999999997,
+      128.69999999999996
+    ],
+    "explorer_picture_s": [
+      45.3,
+      53.199999999999996
+    ]
+  },
+  "plate06_sha256": "f294b87b2387c2a10d7aa343db349e10e0fd5576c82a767d08f8fa211e4920c3",
+  "flow_account": "benoats@googlemail.com",
+  "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v16.mp4",
+  "watch": "WATCH_part04_v16.txt",
+  "doc": "PART04_V16_LATE_SHARP.md",
+  "status": "LANDED_FOR_UAT \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping",
+  "veo_attempt": {
+    "flow_account": "benoats@googlemail.com",
+    "flow_project_attempt": "626aa89d-edf1-45cd-be1a-c50c82a3d111",
+    "flow_result": "create started; gallery harvest/force-dl returned no usable mp4",
+    "gemini_models": [
+      "veo-3.1-generate-preview",
+      "veo-3.1-lite-generate-preview"
+    ],
+    "gemini_result": "429 RESOURCE_EXHAUSTED prepaid credits depleted"
+  }
+}

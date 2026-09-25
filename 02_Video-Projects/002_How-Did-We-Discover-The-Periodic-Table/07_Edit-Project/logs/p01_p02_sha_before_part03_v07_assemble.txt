@@ -1,0 +1,5 @@
+before_assemble 2026-09-07T15:58:48Z
+d903cf7ca1789dcfc1a3703b9215564b3a0d306d0ea1dbf7c2a974888fa92781  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part01_rough_v14.mp4
+799086795d62f159930bd00db638ea2de0e02a299d8c9d50c8eed3d482e89529  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part02_rough_v06.mp4
+a1285f9a60c4090eb45aa681556f508c6ddc4217cd6f3ba448b27a53f89922de  ../09_Final-Export/hos_002_part03_rough_v06.mp4
+ba65c50709d8e7bb5002f7cc05f0dc1d5bcf8fca3cfeb2ac63f5ecc903fb84fd  ../04_Generated-Clips/part03/raw/v07_fast/03_method_pamphlet_v07.mp4

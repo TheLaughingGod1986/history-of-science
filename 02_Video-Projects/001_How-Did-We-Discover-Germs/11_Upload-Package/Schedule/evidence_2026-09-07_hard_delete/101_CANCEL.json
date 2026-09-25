@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-07T10:44:03",
+  "notes": [
+    "locator_count=11",
+    "loc_err=Locator.click: Element is not visible\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Cancel upload$\", re.IGNORECASE)).first\n    - locator resolved to <div class=\"ytcpButtonShapeImpl__button-text-content\">Cancel upload</div>\n  - attempting click action\n    - scrolling into view if needed\n",
+    {
+      "dialogs": [],
+      "snip": "Channel content\nSkip navigation\n\n0\n\n0\n\n218\n\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nShorts\nVideos\nShorts\nLive\nPosts\nPlaylists\nShort\nNotices\nVisibility\nDate\nViews\nComments\n0:24\nInvisible life is still everywhere\nWhat else is still invisible? You meet that victory every time soap meets your hands. Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #InvisibleLife #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n8 Sept 2026\nScheduled\n6\n0\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside\\n\\nWatch the full film \u2014 How Did We Discover Germs?:\\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\\n\\n#Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nScheduled\n7 Sept 2026\nScheduled\n12\n0\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs come from outside Watch the full film \u2014 How Did We Discover Germs?: https://www.youtube.com/watch?v=_C92tIJCk8A #Germs #GermTheory #HistoryOfScience #Science #Shorts\n\u2014\nDraft\nEdit draft\n0:25\nA flask that proved germs come from outside\nA flask that proved germs "
+    },
+    "confirm_role=Cancel upload"
+  ],
+  "still_upload_text": true,
+  "junk_rows": [
+    "0:25 hos 001 s04 flask punch v02 Add description \u2014 Draft Edit draft",
+    "hos 001 s04 flask punch v02 Uploading 0% Checks starting soon Pending Cancel upload Edit draft"
+  ],
+  "ok": false
+}

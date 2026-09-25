@@ -1,0 +1,10 @@
+plate: 06_explorer_leaves_gap try2
+verdict: KEEP
+lamp_invent: CLEAR
+ots_locked: PASS
+sha256: c12b17ae82943c844fa981500ad7e7647414435980e9079d67883d874c85eaf8
+start_sha256: d6aebb4e2ead02dca9aee2a59c1bfb17ff8e4d5eb3a590ae3d3d1c2a4695f5d0
+icloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_06_explorer_leaves_gap_try2
+flow: https://flow.google.com/project/6b215773-6363-4395-ad59-7e3a59268413
+parent_try1: SELF_REJECT glasses face-turn; lamp CLEAR; sha a3f9919597b24aaddcfc727d92f533d1ffdebd89818516baebcaf3807c6f4284
+next: queue 11 then 11b; assemble last

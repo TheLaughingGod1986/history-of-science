@@ -1,0 +1,54 @@
+{
+  "plate": "11_publish_gaps",
+  "try": "8B",
+  "start_n": 2,
+  "max_starts": 2,
+  "project_url": "https://flow.google.com/project/fba4d3bf-d657-4915-a7f3-f8e5e115a198",
+  "info": {
+    "seconds": 63.1,
+    "bytes": 0,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11_publish_gaps_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/fba4d3bf-d657-4915-a7f3-f8e5e115a198",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/fba4d3bf-d657-4915-a7f3-f8e5e115a198"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11_publish_gaps_start_v20.jpg",
+  "start_sha256": "eabcf990c664e38132756311f0baf08378118f03d8c5978d460bb3ddba97b936",
+  "start_dna": "try8B = try8 zerolamp moonwin SAME DNA + HARD TEXT LOCK (blank grid/papers; zero SECURITY/RESULT/captions); CLEAN=window/moon/off-world bounce; dull flasks; plate-library 4b8ed25",
+  "plate_library_lock_sha": "4b8ed25",
+  "model": "Veo 3.1 - Fast",
+  "when": "2026-09-10T10:15:28",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "paint": "banned",
+  "assemble": false,
+  "parent_try8": {
+    "verdict": "SELF_REJECT",
+    "sha256": "781b80b0df0c144ebda0cdd33d648fe061920d65985b9951e829ba8b4c64837c",
+    "blocker": "readable text invent on grid (~SECURITY/RESULT)",
+    "cleared": "lamp invent, flask molten/desk-glow, soft gap glow OK, continuous motion"
+  },
+  "parent_06": {
+    "verdict": "UAT_PASS",
+    "sha256": "df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c"
+  },
+  "parked": [
+    "09b_risk_hold"
+  ],
+  "out_of_scope": [
+    "11b_wait_and_hunt",
+    "09b_risk_hold",
+    "06_explorer_leaves_gap",
+    "assemble"
+  ]
+}

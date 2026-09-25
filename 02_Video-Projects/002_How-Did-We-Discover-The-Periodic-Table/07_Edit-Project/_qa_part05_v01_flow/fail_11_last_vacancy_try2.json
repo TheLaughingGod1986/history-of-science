@@ -1,0 +1,15 @@
+{
+  "plate": "11_last_vacancy",
+  "try": "2",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/11_last_vacancy_v01_try2.mp4",
+  "sha256": "276b93d8bfc96494fb106338c5a2023d9066b26a74c16909939fbc37dc7ac8ee",
+  "bytes": 2004180,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/2dc4363a-cbc1-43b4-9d4b-0feb506572d7",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "NEW FRAMING: last-row unprinted card same brightness as neighbours; never a lightbox or spark rim",
+  "fail": "Cream-card wall DNA is right (not books). The last card becomes a glowing lightbox with SPARKS / amber ember rim t04–t07. CLEAN forbids sparks and amber light around a card. Do not assemble.",
+  "next": "try3 NEW FRAMING after 2 FAILs: copy KEEP 10. All cards matte cream paper, same brightness. Far-right last-row card has no ink but is NOT brighter, NOT a screen, NOT spark-rimmed."
+}

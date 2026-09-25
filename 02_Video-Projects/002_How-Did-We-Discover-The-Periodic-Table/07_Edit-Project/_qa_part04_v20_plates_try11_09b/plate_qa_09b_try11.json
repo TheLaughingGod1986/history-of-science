@@ -1,0 +1,13 @@
+{
+  "plate": "09b_risk_hold",
+  "try": "11",
+  "verdict": "SELF_REJECT",
+  "reason": "Veo invented desk-lamp fixture (shade/gooseneck/bulb) mid-clip; UL crops t5.8/t7.3",
+  "mp4_rejected": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/_rejected/09b_risk_hold_v20_try11_SELF_REJECT_LAMP_FIXTURE_INVENT.mp4",
+  "sha256": "bc37a6bf8bbe6fd31e72e1fe7cb14d6a2bb91260c487bccf55a862955e53c38f",
+  "project_url": "https://flow.google.com/project/3983820e-e3db-411a-af11-ef366ced9d4c",
+  "bible": "8ddbf99",
+  "plate_library_lock_sha": "4b8ed25",
+  "assemble": false,
+  "when": "2026-09-10T01:10:31"
+}

@@ -1,0 +1,58 @@
+{
+  "plate": "05_columns_families",
+  "try": 1,
+  "start_n": 1,
+  "max_starts": 2,
+  "project_url": "https://flow.google.com/project/8041f52b-3dd9-449b-886a-b65f62ef2394",
+  "info": {
+    "seconds": 63.0,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v21_lava_remint_starts/05_columns_families_start_v21_active.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/8041f52b-3dd9-449b-886a-b65f62ef2394",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/8041f52b-3dd9-449b-886a-b65f62ef2394"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v21_lava_remint_starts/05_columns_families_start_v21_active.jpg",
+  "start_sha256": "a200791ed2b40c702b6c2c7b7a94d07502751025fbffed7327ffe6e1ba5ce1e2",
+  "start_lock": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v21_lava_remint_starts/05_columns_families_start_v21_try1_zerolamp_crop.jpg",
+  "parent_start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v21_lava_remint_starts/05_columns_families_start_v21_from_v13_t04.jpg",
+  "start_dna": "try1A NEW KEEP card-columns zerolamp: cream cards drop into family columns; practical lamp OFF-FRAME; CLEAN=window/off-world bounce ONLY; readable sparse marks OK; LOCKED TRIPOD; plate-library 4b8ed25; main 3bc0414; NOT v21 lamp-desk lava; paint banned; Seedance banned; Fast banned; Quality REQUIRED",
+  "family": "NEW_KEEP_try1_columns_zerolamp_nolava",
+  "plate_library_lock_sha": "4b8ed25",
+  "main_lock_sha": "3bc0414",
+  "model": "Veo 3.1 - Quality",
+  "model_rationale": "Quality REQUIRED \u2014 CLEAN LIGHT / lava-desk remint class (locked Showrunner brief PART04_NEXT_PLATE_05_COLUMNS_NO_LAVA.md)",
+  "seedance": "banned",
+  "fast": "banned",
+  "when": "2026-09-10T12:30:18",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "paint": "banned",
+  "assemble": false,
+  "parent_keeps": {
+    "06": "KEEP",
+    "09b": "KEEP",
+    "11": "KEEP",
+    "11b": "KEEP"
+  },
+  "out_of_scope": [
+    "10_family_before_weight",
+    "06_explorer_leaves_gap",
+    "09b_risk_hold",
+    "11_publish_gaps",
+    "11b_wait_and_hunt",
+    "assemble"
+  ],
+  "stop_rule": "Max 2 Quality starts this NEW DNA; invent lamp/lava/molten bead \u2192 SELF_REJECT; both fail \u2192 STOP_TO_COS",
+  "brief_lock": "PART04_NEXT_PLATE_05_COLUMNS_NO_LAVA.md"
+}

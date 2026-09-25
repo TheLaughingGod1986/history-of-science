@@ -1,0 +1,34 @@
+{
+  "plate": "06_explorer_leaves_gap",
+  "try": 2,
+  "verdict": "KEEP",
+  "reason": "LOCKED BACK/OTS full 8s (never face-turn \u2014 fixes try1 glasses miss). Lamp invent CLEAR (window/off-world bounce only). Soft glowing card-gap present. Finished crown sculpt on rear views. Continuous Veo motion as Explorer steps toward shelf gap. No lava drip / molten bead / shade-cup / practical lamp. No assemble.",
+  "gates": {
+    "lamp_invent": "CLEAR",
+    "lava_bead": "CLEAR",
+    "mid_crown_unfinished": "CLEAR",
+    "unfinished_flat_cards": "CLEAR",
+    "glasses_when_visible": "N/A_face_never_visible",
+    "ots_garnish": "PASS_locked_back",
+    "card_desk_1869": "PASS",
+    "soft_glow_gap": "PASS",
+    "continuous_motion": "PASS"
+  },
+  "mp4": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_06_explorer_leaves_gap_try2/06_explorer_leaves_gap_v20_try2.mp4",
+  "sha256": "c12b17ae82943c844fa981500ad7e7647414435980e9079d67883d874c85eaf8",
+  "bytes": 1490859,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/6b215773-6363-4395-ad59-7e3a59268413",
+  "start_sha256": "d6aebb4e2ead02dca9aee2a59c1bfb17ff8e4d5eb3a590ae3d3d1c2a4695f5d0",
+  "start_dna": "try2 = try1 OTS/back nolamp lock + LOCKED BACK/OTS never face-turn; CLEAN=window/off-world bounce ONLY; plate-library 4b8ed25",
+  "plate_library_lock_sha": "4b8ed25",
+  "paint": "banned",
+  "assemble": false,
+  "parent_try1": {
+    "verdict": "SELF_REJECT",
+    "sha256": "a3f9919597b24aaddcfc727d92f533d1ffdebd89818516baebcaf3807c6f4284",
+    "reason": "glasses miss on face-turn; lamp CLEAR",
+    "icloud": "HOS UAT/part04_plate_06_explorer_leaves_gap_try1"
+  },
+  "next": "Queue 11_publish_gaps then 11b under same no-open-lamp rule. Assemble last. Scores \u2192 CoS."
+}

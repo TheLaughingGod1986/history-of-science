@@ -1,0 +1,16 @@
+WATCH — Part04 plate 09b_risk_hold try14 (Quality)
+
+iCloud: HOS UAT/part04_plate_09b_risk_hold_try14/09b_risk_hold_v20_try14.mp4
+sha256: 47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38
+model: Veo 3.1 - Quality
+DNA: NEW seat-hero + daylight window + zerolamp (NOT try8–13)
+verdict: KEEP_CANDIDATE (self-UAT)
+starts: 1/2 (B not burned)
+assemble: NO — assemble last after CoS plate pass
+
+Check:
+1) continuous playback — dust/smoke drift, soft seat glow breathe
+2) L/top mid-clip lamp invent? (should be NONE)
+3) shade-cup / underside bulb? (should be NONE)
+4) Empty Chairs glow stays soft non-fire
+5) cardless / finished 3D / no Explorer

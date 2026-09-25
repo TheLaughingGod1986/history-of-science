@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c17_06b5_07b2",
+  "jobs": [
+    {
+      "plate": "06b_navigation_address",
+      "try": "5_v01",
+      "which": "wood_wall_medium_dolly_blank_card",
+      "note": "MEDIUM dolly on 1869 honey-wood cream-card WALL toward one blank card; no English words; no glow hole",
+      "out": "submit_06b_navigation_address_try5.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 06b_navigation_address try5 — navigation. VO beat: walk toward a vacant lot with an address. ONE continuous 8s take. SAME 1869 classroom DNA as the KEEP unfinished wall: honey-wood panelling, cream element cards pinned on a WALL GRID. MEDIUM shot. Camera dollies toward ONE blank unprinted cream card among other cream cards that already have sparse 1-2 letter marks. The blank card is the address. Stay MEDIUM the whole take — never a close-up that fills the frame with one card. NEVER a modern empty classroom. NEVER student-desk aisles. NEVER hanging pendant lamps. NEVER readable English words. No WALL CHART text. No glow. No glowing hole. No slot. No fire-pit. No sparks. No flame icons. Not a chair hallway. Daytime window bounce only. No person. Continuous 8s. Silent. HARD REJECT: lava, fire, sparks, Ken Burns only, moon-desk still-life, model-town, modern classroom, white gallery. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "07b_noble_gas_column",
+      "try": "2_v01",
+      "which": "wood_wall_column_pins_from_right",
+      "note": "new cream-card column pins onto 1869 honey-wood wall from the right; not a white gallery",
+      "out": "submit_07b_noble_gas_column_try2.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 07b_noble_gas_column try2 — noble gases. VO beat: a new column of seats. ONE continuous 8s take. SAME 1869 classroom DNA as the KEEP unfinished wall: honey-wood panelling, cream element cards on a WALL GRID. A NEW vertical COLUMN of pale cream cards slides in from the RIGHT and pins onto that same wood wall beside the existing grid — a new street of seats, NEVER buildings, NEVER houses, NEVER a white abstract gallery, NEVER floating tiles in empty space. Soft pale cream cards, never orange, never fire. Sparse 1-2 letter marks OK. No readable English words. No hanging lamps. Daytime window bounce only. No person. Continuous slide. Silent. HARD REJECT: model-town, lava, fire, Ken Burns only, moon-desk still-life, white gallery, modern classroom. Plate-library lock 4b8ed25."
+    }
+  ]
+}

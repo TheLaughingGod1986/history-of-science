@@ -232,6 +232,25 @@ def post_short(
         page.wait_for_timeout(2000)
         dismiss(page)
 
+        hos_profile = PROFILE_TMPL.format(username="historyofscienceyt")
+        goto_retry(hos_profile)
+        page.wait_for_timeout(1500)
+        profile_text = body(page)
+        if "edit profile" not in profile_text.lower():
+            out["status"] = "not_hos_session"
+            out["error"] = (
+                "Threads CDP is not logged in as @historyofscienceyt "
+                "(saw Follow, not Edit profile). Abort — do not post as Orbit."
+            )
+            if audit_dir:
+                audit_dir.mkdir(parents=True, exist_ok=True)
+                page.screenshot(path=str(audit_dir / "not_hos_session.png"))
+            return out
+        if "orbitwithben" in (page.url or "").lower():
+            out["status"] = "orbit_session"
+            out["error"] = "Threads session is @orbitwithben — refusing HOS post"
+            return out
+
         text = body(page)
         if "Log in" in text and "Edit profile" not in text and f"@{username}" not in text.lower():
             # Soft check — profile nav usually present when logged in

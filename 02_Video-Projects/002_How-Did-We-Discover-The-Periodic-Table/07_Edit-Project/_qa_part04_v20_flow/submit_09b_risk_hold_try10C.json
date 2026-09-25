@@ -1,0 +1,35 @@
+{
+  "plate": "09b_risk_hold",
+  "try": "10C",
+  "project_url": "https://flow.google.com/project/300180ae-d198-4b73-97cc-15aecdfe36f5",
+  "info": {
+    "seconds": 62.9,
+    "bytes": 0,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/300180ae-d198-4b73-97cc-15aecdfe36f5",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/300180ae-d198-4b73-97cc-15aecdfe36f5"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20.jpg",
+  "start_sha256": "364549eae77efdcb14ed3810987bf4d954342c21f736f247e173e5eda38bf328",
+  "start_dna": "try10C nolamp bounce: try9C cardless moon empty-chair cropL931 \u2014 NO desk-lamp prop; warm OFF-SCREEN/OFF-FRAME left wall bounce + moonlight; bible 8ddbf99; prompt bans inventing lamp/shade/cup/bead; NOT try10A; NOT try8 KEEP; NOT flat; paint banned",
+  "model": "Veo 3.1 - Fast",
+  "when": "2026-09-10T00:26:55",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "parent_try9_uat": "FORMAL HARD FAIL molten bead \u2014 bible 8ddbf99 (contact + t3.8/t5.8/t7.3)",
+  "parent_try10A": "SELF_REJECT \u2014 open shade cup + drip-like protrusion mid-clip",
+  "parent_try10B": "SELF_REJECT \u2014 Veo invented open shade cup + molten bead mid-clip",
+  "paint": "banned",
+  "assemble": false
+}

@@ -1,0 +1,538 @@
+{
+  "listingPack": {
+    "nicheId": "live-how-did-we-discover-x-rays",
+    "nicheName": "How Did We Discover X-Rays",
+    "scannedAt": "2026-09-23T10:09:16.896Z",
+    "evidenceMode": "live",
+    "titles": [
+      {
+        "mode": "KEEP",
+        "text": "How Did We Discover X-rays?",
+        "locked": true
+      },
+      {
+        "mode": "KEEP",
+        "text": "How X-rays Were Discovered by Accident",
+        "locked": true
+      },
+      {
+        "mode": "KEEP",
+        "text": "How did R\u00f6ntgen see bones without cutting",
+        "locked": true
+      },
+      {
+        "mode": "KEEP",
+        "text": "The first X-ray showed a wedding ring",
+        "locked": true
+      },
+      {
+        "mode": "SUGGEST",
+        "text": "x ray",
+        "evidence": {
+          "phrase": "x ray",
+          "phraseCount": 56,
+          "titleCount": 95,
+          "sourceVideoIds": [
+            "_XkP76YKraw",
+            "M1zPOO6sOPo",
+            "pA7IGoJl3Wk",
+            "ZyJq5SSIBis",
+            "6I0ZCl4l8TM",
+            "fdwI5AzTDQQ",
+            "IsaTx5-KLT8",
+            "JkVRdvA6JhM",
+            "63rhmFUXXpA",
+            "SySH8qrtN7U",
+            "rnX09ee0yEA",
+            "pOgGd5d7o8o",
+            "KKD_M5MORZE",
+            "fFijUMdS4bk",
+            "f5PdnO9wqZo",
+            "hZP3G8lK6a0",
+            "AIwuK2aEyeM",
+            "x7ecn4PzXFE",
+            "QfsUJj6BSwI",
+            "qyhPbjP8IWw",
+            "oMsiCYVfa1E",
+            "clWGNlGvtng",
+            "HmW7ShJCq7k",
+            "KEASC8UVAmM",
+            "F_Mszys-qjI",
+            "Q-THKXuQXxQ",
+            "I6cr30r47Xk",
+            "oNpwl7hdzZo",
+            "3effy9aYnOs",
+            "J1n2mJ00xKs",
+            "Hc9mO89JGGs",
+            "SCvUNmEWDFo",
+            "xyvqjjF-xYs",
+            "qF-3myMQx-I",
+            "hkvTqfprzNY",
+            "OCCQG_iJkMw",
+            "7LBkmoOuMXY",
+            "TQVc5ZX0Te8",
+            "koj-EB1379Y",
+            "ihPCv3a2ZxA",
+            "zLcStGRsSQI",
+            "Xwh4M5LM8X4",
+            "2Dh-FxPln_g",
+            "e39pLXGjNbA",
+            "UoYPgshiNls",
+            "QReeKD03wks",
+            "k9EBoQQMODA",
+            "w4C4i-3lT1Y",
+            "V6PqzwnkgsU",
+            "V57xuE1bOck",
+            "P31WAThyTjo",
+            "WHH7-_ptPWs",
+            "CFgOonVWj60",
+            "tWHEZP9Bv0k",
+            "kn6nnzSgZbg",
+            "7fouboHLl_8"
+          ]
+        }
+      },
+      {
+        "mode": "SUGGEST",
+        "text": "of x",
+        "evidence": {
+          "phrase": "of x",
+          "phraseCount": 12,
+          "titleCount": 95,
+          "sourceVideoIds": [
+            "F7hdNVA2yqU",
+            "x3wGYOScKFk",
+            "hZP3G8lK6a0",
+            "fHUzVqoDnts",
+            "OCCQG_iJkMw",
+            "80x-gHAlNug",
+            "MtPMIJuWeas",
+            "UoYPgshiNls",
+            "D3MDgWW94BQ",
+            "k9EBoQQMODA",
+            "4zrw9RIQJGY",
+            "xfJAHDLwqIY"
+          ]
+        }
+      },
+      {
+        "mode": "SUGGEST",
+        "text": "ray vision",
+        "evidence": {
+          "phrase": "ray vision",
+          "phraseCount": 7,
+          "titleCount": 95,
+          "sourceVideoIds": [
+            "AIwuK2aEyeM",
+            "qyhPbjP8IWw",
+            "oMsiCYVfa1E",
+            "I6cr30r47Xk",
+            "koj-EB1379Y",
+            "ihPCv3a2ZxA",
+            "V57xuE1bOck"
+          ]
+        }
+      },
+      {
+        "mode": "SUGGEST",
+        "text": "chest x",
+        "evidence": {
+          "phrase": "chest x",
+          "phraseCount": 6,
+          "titleCount": 95,
+          "sourceVideoIds": [
+            "3Ok6wIiu0zk",
+            "clWGNlGvtng",
+            "J1n2mJ00xKs",
+            "z6Ff1RFphV4",
+            "Xwh4M5LM8X4",
+            "e39pLXGjNbA"
+          ]
+        }
+      },
+      {
+        "mode": "SUGGEST",
+        "text": "how did we discover x-rays",
+        "evidence": {
+          "searchTerm": "how did we discover x-rays",
+          "sourceVideoIds": []
+        }
+      },
+      {
+        "mode": "SUGGEST",
+        "text": "how did we discover x-rays for beginners",
+        "evidence": {
+          "searchTerm": "how did we discover x-rays for beginners",
+          "sourceVideoIds": []
+        }
+      },
+      {
+        "mode": "SUGGEST",
+        "text": "how did we discover x-rays mistakes",
+        "evidence": {
+          "searchTerm": "how did we discover x-rays mistakes",
+          "sourceVideoIds": []
+        }
+      }
+    ],
+    "tags": {
+      "terms": [
+        "x ray",
+        "ray vision",
+        "chest x",
+        "how did we discover x-rays",
+        "how did we discover x-rays for beginners",
+        "how did we discover x-rays mistakes"
+      ],
+      "charactersUsed": 128,
+      "charactersBudget": 500,
+      "budgetSource": "studio-tags-field",
+      "separator": ",",
+      "dropped": [
+        {
+          "term": "of x",
+          "reason": "noise"
+        },
+        {
+          "term": "x ray",
+          "reason": "duplicate"
+        },
+        {
+          "term": "ray vision",
+          "reason": "duplicate"
+        },
+        {
+          "term": "chest x",
+          "reason": "duplicate"
+        }
+      ]
+    },
+    "descriptionOpening": {
+      "text": "How Did We Discover X-Rays. x ray.",
+      "characters": 34,
+      "targetCharacters": 100,
+      "sourceSignals": [
+        "niche name",
+        "repeated title phrase: x ray"
+      ]
+    },
+    "longFormThresholdMinutes": 7,
+    "longFormThresholdSeconds": 420,
+    "competitorWatchlist": [
+      {
+        "videoId": "IsaTx5-KLT8",
+        "title": "X Ray Production Animation",
+        "channel": "A Level Physics HQ",
+        "views": 909436,
+        "publishedAt": "2017-06-16T21:38:36Z",
+        "durationSeconds": 449,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "pOgGd5d7o8o",
+        "title": "Mikey Scanned the Tree With an X-RAY and Found Dead JJ",
+        "channel": "JJ PLAY",
+        "views": 1279767,
+        "publishedAt": "2025-07-25T11:04:56Z",
+        "durationSeconds": 2080,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "KKD_M5MORZE",
+        "title": "Girl Found 4 Years After Vanishing. WHEN DOCTORS SAW HER X-RAY, THEY RAN OUT!",
+        "channel": "Last Path",
+        "views": 440825,
+        "publishedAt": "2026-03-10T18:41:14Z",
+        "durationSeconds": 3005,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "3Ok6wIiu0zk",
+        "title": "Chest X Rays (CXR) Made Easy! - Learn in 10 Minutes!",
+        "channel": "Dr Ollie Burton",
+        "views": 1857941,
+        "publishedAt": "2019-11-15T15:43:45Z",
+        "durationSeconds": 757,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "fFijUMdS4bk",
+        "title": "X-Ray Machine Uncovers $400,000 Worth of Cocaine Hidden In Secret Compartment",
+        "channel": "Rogue Fugitive",
+        "views": 987206,
+        "publishedAt": "2026-08-23T18:00:39Z",
+        "durationSeconds": 2130,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "f5PdnO9wqZo",
+        "title": "JJ Made X-RAY SCANNER to Find Real Mikey from MIMIC, SPIDER and HORROR Mikey in Minecraft Challenge",
+        "channel": "TOCA SISTER",
+        "views": 639070,
+        "publishedAt": "2025-07-31T13:01:09Z",
+        "durationSeconds": 5530,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "QfsUJj6BSwI",
+        "title": "X-Ray Tube Anatomy: X-Ray Production Explained!",
+        "channel": "Sahand Hooshmand",
+        "views": 81532,
+        "publishedAt": "2024-03-25T22:43:28Z",
+        "durationSeconds": 658,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "qyhPbjP8IWw",
+        "title": "Beggar cures a tycoon's cancer with X-ray vision;tycoon weds his daughter to him gives him 10million",
+        "channel": "Seagull Drama",
+        "views": 954681,
+        "publishedAt": "2026-01-23T10:01:21Z",
+        "durationSeconds": 6202,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "fHUzVqoDnts",
+        "title": "History of X-rays",
+        "channel": "Doctor Klioze",
+        "views": 305020,
+        "publishedAt": "2013-12-07T23:33:12Z",
+        "durationSeconds": 1461,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "oMsiCYVfa1E",
+        "title": "Poor girl unexpectedly gains X-ray vision,she sell jade be world's richest!",
+        "channel": "Bubble TV",
+        "views": 145617,
+        "publishedAt": "2026-06-19T09:03:09Z",
+        "durationSeconds": 8879,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "I6cr30r47Xk",
+        "title": "A POOR YOUNG MAN IS LUCKY TO HAVE X-RAY VISION AND BECOMES A BILLIONAIRE BY APPRAISING ANTIQUES!",
+        "channel": "Yuewen Shorts Drama",
+        "views": 135541,
+        "publishedAt": "2026-04-13T12:00:36Z",
+        "durationSeconds": 6254,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "oNpwl7hdzZo",
+        "title": "Overview of the X-Ray Tube and Components",
+        "channel": "Clover Learning",
+        "views": 163059,
+        "publishedAt": "2023-06-12T15:47:31Z",
+        "durationSeconds": 523,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "xyvqjjF-xYs",
+        "title": "I Used X-Ray to BAN Other X-Rayers",
+        "channel": "Yeah Jaron",
+        "views": 3977915,
+        "publishedAt": "2026-03-14T14:30:51Z",
+        "durationSeconds": 2560,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "SCvUNmEWDFo",
+        "title": "Tearing apart an x-ray machine I got from the government",
+        "channel": "NileRed Extra",
+        "views": 1196068,
+        "publishedAt": "2026-05-14T16:53:32Z",
+        "durationSeconds": 652,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "J1n2mJ00xKs",
+        "title": "How to identify pneumothorax on a chest X-ray",
+        "channel": "Medmastery",
+        "views": 369453,
+        "publishedAt": "2018-03-06T13:04:05Z",
+        "durationSeconds": 449,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "tBsbbB0FPfg",
+        "title": "How Were X-Rays Discovered?",
+        "channel": "How Was Made",
+        "views": 3011,
+        "publishedAt": "2025-06-07T19:00:43Z",
+        "durationSeconds": 604,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "hkvTqfprzNY",
+        "title": "Scientists X-Ray a 3,000-Year-Old Mummy\u2026 What They Discovered Is Chilling",
+        "channel": "Ancient History",
+        "views": 18062,
+        "publishedAt": "2026-04-11T15:01:18Z",
+        "durationSeconds": 2631,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "80x-gHAlNug",
+        "title": "The Untold History of X-Rays: From Discovery to Modern Medicine",
+        "channel": "History of Innovations",
+        "views": 1273,
+        "publishedAt": "2025-09-02T14:00:06Z",
+        "durationSeconds": 884,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "M3FnCmSmVVs",
+        "title": "How X-rays Were Discovered",
+        "channel": "Rational Thinker",
+        "views": 65641,
+        "publishedAt": "2026-03-20T20:30:05Z",
+        "durationSeconds": 1030,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "koj-EB1379Y",
+        "title": "After Gaining X-Ray Vision, She Rises to the Top and Is Chased by Three Powerful CEOs\uff01",
+        "channel": "Heartthrob Dramas",
+        "views": 53714,
+        "publishedAt": "2026-05-10T13:01:19Z",
+        "durationSeconds": 7654,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "Xwh4M5LM8X4",
+        "title": "Reading a chest X-ray",
+        "channel": "Osmosis from Elsevier",
+        "views": 1457514,
+        "publishedAt": "2019-10-28T15:11:21Z",
+        "durationSeconds": 422,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "1PwxDEdl2iI",
+        "title": "Physics of How Wilhelm Roentgen Discovered X-rays",
+        "channel": "Kathy Loves Physics",
+        "views": 68869,
+        "publishedAt": "2018-09-30T23:51:58Z",
+        "durationSeconds": 544,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "UoYPgshiNls",
+        "title": "X-Ray \u0915\u093e \u0906\u0935\u093f\u0937\u094d\u0915\u093e\u0930 \u0915\u092c \u0914\u0930 \u0915\u093f\u0938\u0928\u0947 \u0915\u093f\u092f\u093e ? COMPLETE HISTORY OF THE INVENTION OF X-RAY.",
+        "channel": "Vichitra 4u",
+        "views": 1253684,
+        "publishedAt": "2024-05-07T14:30:18Z",
+        "durationSeconds": 509,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "e39pLXGjNbA",
+        "title": "Chest X-ray Interpretation | How to Read a CXR | OSCE Guide | UKMLA | CPSA | PLAB 2",
+        "channel": "Geeky Medics",
+        "views": 434970,
+        "publishedAt": "2024-06-28T10:19:10Z",
+        "durationSeconds": 1419,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "V6PqzwnkgsU",
+        "title": "Usei X RAY para Descobrir o SEGREDOS dos MEUS AMIGOS",
+        "channel": "Athos",
+        "views": 3168975,
+        "publishedAt": "2026-08-12T13:30:36Z",
+        "durationSeconds": 1326,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "P31WAThyTjo",
+        "title": "The Discovery That Changed Science Forever: X-ray Crystallography Explained I IFAS",
+        "channel": "IFAS LIFESCIENCE LIVE - CSIR, UGC, DBT, GATE, SET",
+        "views": 68647,
+        "publishedAt": "2026-02-02T09:55:38Z",
+        "durationSeconds": 441,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "V57xuE1bOck",
+        "title": "A Poor Girl Awakened X-Ray Vision, Struck It Rich with Jade, and Won the Cold School Prince!",
+        "channel": "Heartthrob Dramas",
+        "views": 15596,
+        "publishedAt": "2026-07-23T07:00:23Z",
+        "durationSeconds": 7471,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "kn6nnzSgZbg",
+        "title": "The X-Ray Discovery That Proves Black Holes Came Before Stars",
+        "channel": "Anton Petrov",
+        "views": 126402,
+        "publishedAt": "2026-05-13T22:00:51Z",
+        "durationSeconds": 929,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "CFgOonVWj60",
+        "title": "\u0d0e\u0d15\u0d4d\u0d38\u0d4d-\u0d31\u0d47\u0d2f\u0d41\u0d1f\u0d46 \u0d30\u0d39\u0d38\u0d4d\u0d2f\u0d02! I X-Ray I Shabu Prasad",
+        "channel": "Science Corner ",
+        "views": 6295,
+        "publishedAt": "2026-06-26T13:00:25Z",
+        "durationSeconds": 1508,
+        "durationKnown": true,
+        "longForm": true
+      },
+      {
+        "videoId": "7qlRjqUMX4E",
+        "title": "Marie Curie and Spooky Rays: Crash Course History of Science #31",
+        "channel": "CrashCourse",
+        "views": 342742,
+        "publishedAt": "2018-12-17T22:12:09Z",
+        "durationSeconds": 708,
+        "durationKnown": true,
+        "longForm": true
+      }
+    ],
+    "watchlistDurationCoverage": {
+      "known": 30,
+      "unknown": 0,
+      "total": 30
+    },
+    "searchVolume": {
+      "available": false,
+      "reason": "no-keyword-evidence"
+    },
+    "unknowns": [
+      "Search volume unknown \u2014 Google Ads Keyword Planner is not connected",
+      "44 eligible videos are under the 7-minute long-form threshold and were left off the watchlist"
+    ]
+  },
+  "markdown": "# Listing pack: How Did We Discover X-Rays\n\nScanned 2026-09-23T10:09:16.896Z. Evidence: live. Niche id: live-how-did-we-discover-x-rays.\nListing fields only. This is not a production brief, and it is not uploaded to YouTube Studio.\nSearch volume, duration and title wording below are copied from the scan or from titles you locked. Nothing here is a score.\n\n## Titles to keep\n- How Did We Discover X-rays? \u2014 Kept as written\n- How X-rays Were Discovered by Accident \u2014 Kept as written\n- How did R\u00f6ntgen see bones without cutting \u2014 Kept as written\n- The first X-ray showed a wedding ring \u2014 Kept as written\n\n## Title alternatives\n- x ray \u2014 Alternative \u2014 from the repeated phrase \"x ray\" (56 of 95 titles)\n- of x \u2014 Alternative \u2014 from the repeated phrase \"of x\" (12 of 95 titles)\n- ray vision \u2014 Alternative \u2014 from the repeated phrase \"ray vision\" (7 of 95 titles)\n- chest x \u2014 Alternative \u2014 from the repeated phrase \"chest x\" (6 of 95 titles)\n- how did we discover x-rays \u2014 Alternative \u2014 from the search term \"how did we discover x-rays\"\n- how did we discover x-rays for beginners \u2014 Alternative \u2014 from the search term \"how did we discover x-rays for beginners\"\n- how did we discover x-rays mistakes \u2014 Alternative \u2014 from the search term \"how did we discover x-rays mistakes\"\n\n## Tags\nTags: 6 terms, 128 / 500 characters used\nBudget source: studio-tags-field. Separator: \",\" (commas count toward the budget).\n\nx ray,ray vision,chest x,how did we discover x-rays,how did we discover x-rays for beginners,how did we discover x-rays mistakes\n\n### Left out\n- of x \u2014 noise\n- x ray \u2014 duplicate\n- ray vision \u2014 duplicate\n- chest x \u2014 duplicate\n\n## Description opening\nHow Did We Discover X-Rays. x ray.\n\n34 / 100 characters. Sources: niche name; repeated title phrase: x ray.\n\n## Competitor long-form watchlist\nLong-form threshold: 7 minutes (420 seconds).\nDuration known for 30 of 30 watchlist videos.\nEligibility matches the video planner: public ids, at least seven days old, and at least 1,000 views. Known durations under the threshold are left off and counted below.\n\n- X Ray Production Animation \u2014 A Level Physics HQ, 909,436 lifetime views at scan, published 2017-06-16, 449s, long-form \u2014 https://www.youtube.com/watch?v=IsaTx5-KLT8\n- Mikey Scanned the Tree With an X-RAY and Found Dead JJ \u2014 JJ PLAY, 1,279,767 lifetime views at scan, published 2025-07-25, 2080s, long-form \u2014 https://www.youtube.com/watch?v=pOgGd5d7o8o\n- Girl Found 4 Years After Vanishing. WHEN DOCTORS SAW HER X-RAY, THEY RAN OUT! \u2014 Last Path, 440,825 lifetime views at scan, published 2026-03-10, 3005s, long-form \u2014 https://www.youtube.com/watch?v=KKD_M5MORZE\n- Chest X Rays (CXR) Made Easy! - Learn in 10 Minutes! \u2014 Dr Ollie Burton, 1,857,941 lifetime views at scan, published 2019-11-15, 757s, long-form \u2014 https://www.youtube.com/watch?v=3Ok6wIiu0zk\n- X-Ray Machine Uncovers $400,000 Worth of Cocaine Hidden In Secret Compartment \u2014 Rogue Fugitive, 987,206 lifetime views at scan, published 2026-08-23, 2130s, long-form \u2014 https://www.youtube.com/watch?v=fFijUMdS4bk\n- JJ Made X-RAY SCANNER to Find Real Mikey from MIMIC, SPIDER and HORROR Mikey in Minecraft Challenge \u2014 TOCA SISTER, 639,070 lifetime views at scan, published 2025-07-31, 5530s, long-form \u2014 https://www.youtube.com/watch?v=f5PdnO9wqZo\n- X-Ray Tube Anatomy: X-Ray Production Explained! \u2014 Sahand Hooshmand, 81,532 lifetime views at scan, published 2024-03-25, 658s, long-form \u2014 https://www.youtube.com/watch?v=QfsUJj6BSwI\n- Beggar cures a tycoon's cancer with X-ray vision;tycoon weds his daughter to him gives him 10million \u2014 Seagull Drama, 954,681 lifetime views at scan, published 2026-01-23, 6202s, long-form \u2014 https://www.youtube.com/watch?v=qyhPbjP8IWw\n- History of X-rays \u2014 Doctor Klioze, 305,020 lifetime views at scan, published 2013-12-07, 1461s, long-form \u2014 https://www.youtube.com/watch?v=fHUzVqoDnts\n- Poor girl unexpectedly gains X-ray vision,she sell jade be world's richest! \u2014 Bubble TV, 145,617 lifetime views at scan, published 2026-06-19, 8879s, long-form \u2014 https://www.youtube.com/watch?v=oMsiCYVfa1E\n- A POOR YOUNG MAN IS LUCKY TO HAVE X-RAY VISION AND BECOMES A BILLIONAIRE BY APPRAISING ANTIQUES! \u2014 Yuewen Shorts Drama, 135,541 lifetime views at scan, published 2026-04-13, 6254s, long-form \u2014 https://www.youtube.com/watch?v=I6cr30r47Xk\n- Overview of the X-Ray Tube and Components \u2014 Clover Learning, 163,059 lifetime views at scan, published 2023-06-12, 523s, long-form \u2014 https://www.youtube.com/watch?v=oNpwl7hdzZo\n- I Used X-Ray to BAN Other X-Rayers \u2014 Yeah Jaron, 3,977,915 lifetime views at scan, published 2026-03-14, 2560s, long-form \u2014 https://www.youtube.com/watch?v=xyvqjjF-xYs\n- Tearing apart an x-ray machine I got from the government \u2014 NileRed Extra, 1,196,068 lifetime views at scan, published 2026-05-14, 652s, long-form \u2014 https://www.youtube.com/watch?v=SCvUNmEWDFo\n- How to identify pneumothorax on a chest X-ray \u2014 Medmastery, 369,453 lifetime views at scan, published 2018-03-06, 449s, long-form \u2014 https://www.youtube.com/watch?v=J1n2mJ00xKs\n- How Were X-Rays Discovered? \u2014 How Was Made, 3,011 lifetime views at scan, published 2025-06-07, 604s, long-form \u2014 https://www.youtube.com/watch?v=tBsbbB0FPfg\n- Scientists X-Ray a 3,000-Year-Old Mummy\u2026 What They Discovered Is Chilling \u2014 Ancient History, 18,062 lifetime views at scan, published 2026-04-11, 2631s, long-form \u2014 https://www.youtube.com/watch?v=hkvTqfprzNY\n- The Untold History of X-Rays: From Discovery to Modern Medicine \u2014 History of Innovations, 1,273 lifetime views at scan, published 2025-09-02, 884s, long-form \u2014 https://www.youtube.com/watch?v=80x-gHAlNug\n- How X-rays Were Discovered \u2014 Rational Thinker, 65,641 lifetime views at scan, published 2026-03-20, 1030s, long-form \u2014 https://www.youtube.com/watch?v=M3FnCmSmVVs\n- After Gaining X-Ray Vision, She Rises to the Top and Is Chased by Three Powerful CEOs\uff01 \u2014 Heartthrob Dramas, 53,714 lifetime views at scan, published 2026-05-10, 7654s, long-form \u2014 https://www.youtube.com/watch?v=koj-EB1379Y\n- Reading a chest X-ray \u2014 Osmosis from Elsevier, 1,457,514 lifetime views at scan, published 2019-10-28, 422s, long-form \u2014 https://www.youtube.com/watch?v=Xwh4M5LM8X4\n- Physics of How Wilhelm Roentgen Discovered X-rays \u2014 Kathy Loves Physics, 68,869 lifetime views at scan, published 2018-09-30, 544s, long-form \u2014 https://www.youtube.com/watch?v=1PwxDEdl2iI\n- X-Ray \u0915\u093e \u0906\u0935\u093f\u0937\u094d\u0915\u093e\u0930 \u0915\u092c \u0914\u0930 \u0915\u093f\u0938\u0928\u0947 \u0915\u093f\u092f\u093e ? COMPLETE HISTORY OF THE INVENTION OF X-RAY. \u2014 Vichitra 4u, 1,253,684 lifetime views at scan, published 2024-05-07, 509s, long-form \u2014 https://www.youtube.com/watch?v=UoYPgshiNls\n- Chest X-ray Interpretation | How to Read a CXR | OSCE Guide | UKMLA | CPSA | PLAB 2 \u2014 Geeky Medics, 434,970 lifetime views at scan, published 2024-06-28, 1419s, long-form \u2014 https://www.youtube.com/watch?v=e39pLXGjNbA\n- Usei X RAY para Descobrir o SEGREDOS dos MEUS AMIGOS \u2014 Athos, 3,168,975 lifetime views at scan, published 2026-08-12, 1326s, long-form \u2014 https://www.youtube.com/watch?v=V6PqzwnkgsU\n- The Discovery That Changed Science Forever: X-ray Crystallography Explained I IFAS \u2014 IFAS LIFESCIENCE LIVE - CSIR, UGC, DBT, GATE, SET, 68,647 lifetime views at scan, published 2026-02-02, 441s, long-form \u2014 https://www.youtube.com/watch?v=P31WAThyTjo\n- A Poor Girl Awakened X-Ray Vision, Struck It Rich with Jade, and Won the Cold School Prince! \u2014 Heartthrob Dramas, 15,596 lifetime views at scan, published 2026-07-23, 7471s, long-form \u2014 https://www.youtube.com/watch?v=V57xuE1bOck\n- The X-Ray Discovery That Proves Black Holes Came Before Stars \u2014 Anton Petrov, 126,402 lifetime views at scan, published 2026-05-13, 929s, long-form \u2014 https://www.youtube.com/watch?v=kn6nnzSgZbg\n- \u0d0e\u0d15\u0d4d\u0d38\u0d4d-\u0d31\u0d47\u0d2f\u0d41\u0d1f\u0d46 \u0d30\u0d39\u0d38\u0d4d\u0d2f\u0d02! I X-Ray I Shabu Prasad \u2014 Science Corner , 6,295 lifetime views at scan, published 2026-06-26, 1508s, long-form \u2014 https://www.youtube.com/watch?v=CFgOonVWj60\n- Marie Curie and Spooky Rays: Crash Course History of Science #31 \u2014 CrashCourse, 342,742 lifetime views at scan, published 2018-12-17, 708s, long-form \u2014 https://www.youtube.com/watch?v=7qlRjqUMX4E\n\n## Search volume\nSearch volume unknown \u2014 Google Ads Keyword Planner is not connected\n\n## Unknowns\n- Search volume unknown \u2014 Google Ads Keyword Planner is not connected\n- 44 eligible videos are under the 7-minute long-form threshold and were left off the watchlist\n"
+}

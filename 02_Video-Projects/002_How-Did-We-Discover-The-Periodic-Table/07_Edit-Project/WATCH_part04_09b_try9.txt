@@ -1,0 +1,10 @@
+PLATE-FIRST 09b_risk_hold try9 — SELF_REJECT_LAVA_DRIP
+mp4: /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try9.mp4
+sha256: 17b025037cc82bc5622757c6c12891a4b380b36c8fc92dd86c37410d8e59226f
+gate: SELF_REJECT_LAVA_DRIP (best variant 9B; flats PASS; clean light FAIL — molten bead under shade)
+dna: v01 empty-chair moon cardless (NOT try8 KEEP cf182dc drip-baked; NOT flat 2a651abc)
+flow 9B: https://flow.google.com/project/167948bb-bb9c-4170-a6e9-814a805ad7e8
+iCloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try9/
+9A/9C archived _rejected/
+parent try8 UAT: CLEAN LIGHT FAIL lava drip; flats CLEARED
+NO assemble. NO other plates.

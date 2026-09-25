@@ -1,0 +1,459 @@
+{
+  "plate": "11b_wait_and_hunt",
+  "try": "1",
+  "frames": [
+    {
+      "t": 0.5,
+      "lamp_invent": false,
+      "flask_invent": false,
+      "text_edge_heuristic": true,
+      "left": {
+        "mean_rgb": [
+          116.3,
+          102.9,
+          103.8
+        ],
+        "luma": 105.8,
+        "bright_frac": 0.007,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0,
+        "textish_px": 316,
+        "textish_frac": 0.00312
+      },
+      "flask": {
+        "mean_rgb": [
+          111.5,
+          89.4,
+          84.8
+        ],
+        "luma": 93.8,
+        "bright_frac": 0.003,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0,
+        "textish_px": 660,
+        "textish_frac": 0.00465
+      },
+      "desk": {
+        "mean_rgb": [
+          140.7,
+          108.1,
+          88.4
+        ],
+        "luma": 113.6,
+        "bright_frac": 0.0522,
+        "molten_frac": 0.002,
+        "warm_fixture_frac": 0.0484,
+        "textish_px": 67,
+        "textish_frac": 0.00049
+      },
+      "bottom_edge": {
+        "mean_rgb": [
+          158.0,
+          133.7,
+          117.3
+        ],
+        "luma": 137.7,
+        "bright_frac": 0.174,
+        "molten_frac": 0.0012,
+        "warm_fixture_frac": 0.0243,
+        "textish_px": 1712,
+        "textish_frac": 0.01042
+      },
+      "br_edge": {
+        "mean_rgb": [
+          106.9,
+          78.5,
+          62.8
+        ],
+        "luma": 83.4,
+        "bright_frac": 0.0044,
+        "molten_frac": 0.0015,
+        "warm_fixture_frac": 0.025,
+        "textish_px": 1225,
+        "textish_frac": 0.00698
+      },
+      "reasons": [
+        "text_edge_heuristic bottom=0.01042 BR=0.00698"
+      ]
+    },
+    {
+      "t": 1.5,
+      "lamp_invent": false,
+      "flask_invent": false,
+      "text_edge_heuristic": true,
+      "left": {
+        "mean_rgb": [
+          133.8,
+          114.5,
+          104.0
+        ],
+        "luma": 117.8,
+        "bright_frac": 0.006,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0,
+        "textish_px": 327,
+        "textish_frac": 0.00323
+      },
+      "flask": {
+        "mean_rgb": [
+          115.3,
+          95.4,
+          93.7
+        ],
+        "luma": 99.5,
+        "bright_frac": 0.0033,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0,
+        "textish_px": 129,
+        "textish_frac": 0.00091
+      },
+      "desk": {
+        "mean_rgb": [
+          155.6,
+          122.5,
+          101.4
+        ],
+        "luma": 128.0,
+        "bright_frac": 0.0899,
+        "molten_frac": 0.0021,
+        "warm_fixture_frac": 0.0408,
+        "textish_px": 341,
+        "textish_frac": 0.0025
+      },
+      "bottom_edge": {
+        "mean_rgb": [
+          159.3,
+          132.9,
+          116.7
+        ],
+        "luma": 137.4,
+        "bright_frac": 0.1808,
+        "molten_frac": 0.0001,
+        "warm_fixture_frac": 0.0213,
+        "textish_px": 2116,
+        "textish_frac": 0.01288
+      },
+      "br_edge": {
+        "mean_rgb": [
+          125.7,
+          92.3,
+          73.5
+        ],
+        "luma": 98.0,
+        "bright_frac": 0.0064,
+        "molten_frac": 0.0017,
+        "warm_fixture_frac": 0.0322,
+        "textish_px": 1345,
+        "textish_frac": 0.00766
+      },
+      "reasons": [
+        "text_edge_heuristic bottom=0.01288 BR=0.00766"
+      ]
+    },
+    {
+      "t": 3.0,
+      "lamp_invent": false,
+      "flask_invent": false,
+      "text_edge_heuristic": true,
+      "left": {
+        "mean_rgb": [
+          150.3,
+          127.8,
+          111.4
+        ],
+        "luma": 131.4,
+        "bright_frac": 0.0007,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0036,
+        "textish_px": 225,
+        "textish_frac": 0.00222
+      },
+      "flask": {
+        "mean_rgb": [
+          129.5,
+          103.5,
+          97.8
+        ],
+        "luma": 108.6,
+        "bright_frac": 0.0037,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0134,
+        "textish_px": 9,
+        "textish_frac": 6e-05
+      },
+      "desk": {
+        "mean_rgb": [
+          180.3,
+          151.9,
+          129.0
+        ],
+        "luma": 156.3,
+        "bright_frac": 0.1416,
+        "molten_frac": 0.0022,
+        "warm_fixture_frac": 0.0313,
+        "textish_px": 393,
+        "textish_frac": 0.00288
+      },
+      "bottom_edge": {
+        "mean_rgb": [
+          171.8,
+          142.8,
+          126.2
+        ],
+        "luma": 147.7,
+        "bright_frac": 0.1663,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0143,
+        "textish_px": 1591,
+        "textish_frac": 0.00968
+      },
+      "br_edge": {
+        "mean_rgb": [
+          145.6,
+          111.6,
+          91.5
+        ],
+        "luma": 117.4,
+        "bright_frac": 0.01,
+        "molten_frac": 0.0004,
+        "warm_fixture_frac": 0.0223,
+        "textish_px": 1101,
+        "textish_frac": 0.00627
+      },
+      "reasons": [
+        "text_edge_heuristic bottom=0.00968 BR=0.00627"
+      ]
+    },
+    {
+      "t": 4.5,
+      "lamp_invent": false,
+      "flask_invent": false,
+      "text_edge_heuristic": false,
+      "left": {
+        "mean_rgb": [
+          163.7,
+          134.6,
+          112.5
+        ],
+        "luma": 139.2,
+        "bright_frac": 0.0007,
+        "molten_frac": 0.0025,
+        "warm_fixture_frac": 0.0744,
+        "textish_px": 147,
+        "textish_frac": 0.00145
+      },
+      "flask": {
+        "mean_rgb": [
+          150.7,
+          121.9,
+          110.8
+        ],
+        "luma": 127.3,
+        "bright_frac": 0.0248,
+        "molten_frac": 0.004,
+        "warm_fixture_frac": 0.0257,
+        "textish_px": 0,
+        "textish_frac": 0.0
+      },
+      "desk": {
+        "mean_rgb": [
+          205.6,
+          183.7,
+          162.4
+        ],
+        "luma": 186.8,
+        "bright_frac": 0.206,
+        "molten_frac": 0.0127,
+        "warm_fixture_frac": 0.0323,
+        "textish_px": 145,
+        "textish_frac": 0.00106
+      },
+      "bottom_edge": {
+        "mean_rgb": [
+          176.1,
+          146.2,
+          127.3
+        ],
+        "luma": 151.2,
+        "bright_frac": 0.1689,
+        "molten_frac": 0.0002,
+        "warm_fixture_frac": 0.0155,
+        "textish_px": 353,
+        "textish_frac": 0.00215
+      },
+      "br_edge": {
+        "mean_rgb": [
+          163.7,
+          132.0,
+          114.5
+        ],
+        "luma": 137.5,
+        "bright_frac": 0.0111,
+        "molten_frac": 0.0037,
+        "warm_fixture_frac": 0.0138,
+        "textish_px": 357,
+        "textish_frac": 0.00203
+      },
+      "reasons": []
+    },
+    {
+      "t": 6.0,
+      "lamp_invent": true,
+      "flask_invent": true,
+      "text_edge_heuristic": false,
+      "left": {
+        "mean_rgb": [
+          173.2,
+          140.1,
+          115.7
+        ],
+        "luma": 145.4,
+        "bright_frac": 0.0069,
+        "molten_frac": 0.0085,
+        "warm_fixture_frac": 0.1113,
+        "textish_px": 100,
+        "textish_frac": 0.00099
+      },
+      "flask": {
+        "mean_rgb": [
+          158.3,
+          124.0,
+          113.0
+        ],
+        "luma": 130.5,
+        "bright_frac": 0.0856,
+        "molten_frac": 0.0004,
+        "warm_fixture_frac": 0.0151,
+        "textish_px": 0,
+        "textish_frac": 0.0
+      },
+      "desk": {
+        "mean_rgb": [
+          208.6,
+          186.4,
+          159.1
+        ],
+        "luma": 189.2,
+        "bright_frac": 0.2817,
+        "molten_frac": 0.0172,
+        "warm_fixture_frac": 0.0815,
+        "textish_px": 0,
+        "textish_frac": 0.0
+      },
+      "bottom_edge": {
+        "mean_rgb": [
+          188.7,
+          163.5,
+          145.9
+        ],
+        "luma": 167.6,
+        "bright_frac": 0.1902,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0012,
+        "textish_px": 216,
+        "textish_frac": 0.00131
+      },
+      "br_edge": {
+        "mean_rgb": [
+          167.7,
+          134.8,
+          108.6
+        ],
+        "luma": 139.9,
+        "bright_frac": 0.0195,
+        "molten_frac": 0.0117,
+        "warm_fixture_frac": 0.0589,
+        "textish_px": 248,
+        "textish_frac": 0.00141
+      },
+      "reasons": [
+        "lamp_invent left warm=0.1113 bright=0.0069",
+        "flask_glow bright=0.0856 molten=0.0004 desk=0.2817"
+      ]
+    },
+    {
+      "t": 7.2,
+      "lamp_invent": true,
+      "flask_invent": true,
+      "text_edge_heuristic": false,
+      "left": {
+        "mean_rgb": [
+          176.6,
+          141.6,
+          116.6
+        ],
+        "luma": 147.2,
+        "bright_frac": 0.0126,
+        "molten_frac": 0.01,
+        "warm_fixture_frac": 0.1233,
+        "textish_px": 37,
+        "textish_frac": 0.00037
+      },
+      "flask": {
+        "mean_rgb": [
+          162.9,
+          126.9,
+          115.6
+        ],
+        "luma": 133.7,
+        "bright_frac": 0.0672,
+        "molten_frac": 0.0001,
+        "warm_fixture_frac": 0.0252,
+        "textish_px": 0,
+        "textish_frac": 0.0
+      },
+      "desk": {
+        "mean_rgb": [
+          204.1,
+          179.9,
+          154.5
+        ],
+        "luma": 183.2,
+        "bright_frac": 0.2151,
+        "molten_frac": 0.0011,
+        "warm_fixture_frac": 0.0898,
+        "textish_px": 82,
+        "textish_frac": 0.0006
+      },
+      "bottom_edge": {
+        "mean_rgb": [
+          192.5,
+          168.9,
+          152.2
+        ],
+        "luma": 172.7,
+        "bright_frac": 0.217,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0041,
+        "textish_px": 43,
+        "textish_frac": 0.00026
+      },
+      "br_edge": {
+        "mean_rgb": [
+          169.5,
+          138.0,
+          113.3
+        ],
+        "luma": 143.0,
+        "bright_frac": 0.0131,
+        "molten_frac": 0.0011,
+        "warm_fixture_frac": 0.061,
+        "textish_px": 133,
+        "textish_frac": 0.00076
+      },
+      "reasons": [
+        "lamp_invent left warm=0.1233 bright=0.0126",
+        "flask_glow bright=0.0672 molten=0.0001 desk=0.2151"
+      ]
+    }
+  ],
+  "fail_reasons": [
+    "text_edge_heuristic bottom=0.01042 BR=0.00698",
+    "text_edge_heuristic bottom=0.01288 BR=0.00766",
+    "text_edge_heuristic bottom=0.00968 BR=0.00627",
+    "lamp_invent left warm=0.1113 bright=0.0069",
+    "flask_glow bright=0.0856 molten=0.0004 desk=0.2817",
+    "lamp_invent left warm=0.1233 bright=0.0126",
+    "flask_glow bright=0.0672 molten=0.0001 desk=0.2151"
+  ]
+}

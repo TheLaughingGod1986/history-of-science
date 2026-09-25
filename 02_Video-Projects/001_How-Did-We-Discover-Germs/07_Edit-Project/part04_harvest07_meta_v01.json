@@ -1,0 +1,62 @@
+{
+  "harvested": [
+    {
+      "url": "https://labs.google/fx/tools/flow/project/e2657e66-d17c-4d3e-b515-5c8102878127",
+      "media_id": "b1b93098-d4d2-4f28-be0b-80c5e64c0b4d",
+      "path": "02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part04/raw/v01_fast_probe/_harvest_07_b1b93098.mp4",
+      "bytes": 4183143,
+      "sha256": "0b95317e881bf32fad300dab9b811691cb475a11dd0c5330ff52bc9b570bb003",
+      "motion_mean": 10.62,
+      "first_second_motion": 22.84,
+      "moves": true
+    },
+    {
+      "url": "https://labs.google/fx/tools/flow/project/f7d0ec00-ce42-4945-b7e3-164045324f00",
+      "media_id": "72261c9d-d5fd-42e5-9859-2b036b0df0fa",
+      "path": "02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part04/raw/v01_fast_probe/_harvest_07_72261c9d.mp4",
+      "bytes": 2392334,
+      "sha256": "8a5fb0bf746f7f130c589ad6ef6c6cf13f9813dc34bcb487aebad9e6f08b6c65",
+      "motion_mean": 4.82,
+      "first_second_motion": 19.42,
+      "moves": true
+    },
+    {
+      "url": "https://labs.google/fx/tools/flow/project/7b8740e3-d14f-4b63-baa9-347efc2b1921",
+      "media_id": "6eda4776-a4dd-4c8c-ad35-3b5385c1d8d6",
+      "path": "02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part04/raw/v01_fast_probe/_harvest_07_6eda4776.mp4",
+      "bytes": 2596557,
+      "sha256": "88a883509c820fc30924a136e634d99c3642e125c4a2e72dc2e87313d7d0d851",
+      "motion_mean": 4.45,
+      "first_second_motion": 28.3,
+      "moves": true
+    },
+    {
+      "url": "https://labs.google/fx/tools/flow/project/a686d24f-7a63-4893-8ad9-55e8ba5b89d1",
+      "media_id": "5f22ca4e-c637-4279-a1cd-43679480f497",
+      "path": "02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part04/raw/v01_fast_probe/_harvest_07_5f22ca4e.mp4",
+      "bytes": 2386059,
+      "sha256": "015451d5b04b36bb56fed61779cc78949f02c0a5344eac5f33ae1497861387cd",
+      "motion_mean": 5.9,
+      "first_second_motion": 18.91,
+      "moves": true
+    },
+    {
+      "url": "https://labs.google/fx/tools/flow/project/9477e80c-09d5-4b9d-b46d-a02c80d1b2f2",
+      "media_id": "7074afb9-f013-4988-bbf6-6d23c74d81a0",
+      "path": "02_Video-Projects/001_How-Did-We-Discover-Germs/04_Generated-Clips/part04/raw/v01_fast_probe/_harvest_07_7074afb9.mp4",
+      "bytes": 2102945,
+      "sha256": "78c97c57159f3231c4bda6f7549e3fe81f959ae982890bdfe7922f002ffc2763",
+      "motion_mean": 2.53,
+      "first_second_motion": 14.51,
+      "moves": true
+    }
+  ],
+  "keeper": {
+    "id": "07_bloom_cloud_v09",
+    "from": "_harvest_07_5f22ca4e.mp4",
+    "project": "a686d24f-7a63-4893-8ad9-55e8ba5b89d1",
+    "reason": "unique flask-on-bench room take; no hands; moves 5.90/18.91; not a reuse of 04_still_clear or 05_tip_the_trap",
+    "skipped_dups": ["_harvest_07_72261c9d.mp4=04_still_clear_v09", "_harvest_07_b1b93098.mp4=05_tip_the_trap_v09"],
+    "created": false
+  }
+}

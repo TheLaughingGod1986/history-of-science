@@ -1,0 +1,12 @@
+HOS 002 Part 04 Empty Chairs — rough_v15 (Ben FAIL remint)
+iCloud: HOS UAT/hos_002_part04_rough_v15.mp4
+Duration: 127.760s
+Status: LANDED FOR UAT — NOT PASS — scores → CoS — no Ben ping
+
+Watch windows:
+  ~45–53s  Explorer crown (full finished messy wavy chestnut)
+  ~90–98s  A BET / plate 09 lamp+chair CLEAN LIGHT (no lava)
+  ~98–106s FAMILY FIRST / plate 09b CLEAN LIGHT
+  ~118–126s late publish/hunt desks sharp (no ghost doubles)
+
+Parent v14 sha: fa62ab22d0f7cbd4f208e5200c9b8b471c23595237b4d7d2dd18e6f47dabad4f

@@ -1,0 +1,15 @@
+{
+  "plate": "10_zoo_became_city",
+  "try": "2",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/10_zoo_became_city_v01_try2.mp4",
+  "sha256": "16d7cdaa06d3d83aa5a35cb6302b305a72f3700732fed09caa0ff1bb5d1db5cf",
+  "bytes": 5937553,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/052f652b-c6e3-442e-94e0-577f93adb1ea",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "wide filled cream-card wall as a city of seats, never houses",
+  "fail": "Model-town of miniature furniture chairs in a picture-frame diorama. Forbidden house/town sprawl DNA. Not the cream-card wall. Do not assemble.",
+  "next": "try3 NEW FRAMING: do not say city or chairs. WIDE filled cream-card WALL GRID, camera pull-back. Never miniature furniture, never a diorama."
+}

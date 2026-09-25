@@ -1,0 +1,204 @@
+{
+  "rows": [
+    {
+      "t": "0:25 hos 001 s04 flask punch v02 Add description \u2014 Draft Edit draft",
+      "hrefs": [],
+      "hasDraft": true,
+      "hasSched": false,
+      "hasPub": false,
+      "tag": "YTCP-VIDEO-ROW"
+    },
+    {
+      "t": "hos 001 s04 flask punch v02 Uploading 0% Checks starting soon Pending Cancel upload Edit draft",
+      "hrefs": [],
+      "hasDraft": true,
+      "hasSched": false,
+      "hasPub": false,
+      "tag": "YTCP-VIDEO-ROW"
+    }
+  ],
+  "buttons": [
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Cancel upload",
+      "a": "",
+      "w": 120.953125,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Cancel upload",
+      "a": "Cancel upload",
+      "w": 120.953125,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    },
+    {
+      "t": "Edit draft",
+      "a": "Edit draft",
+      "w": 89.140625,
+      "h": 36,
+      "vis": true
+    }
+  ],
+  "dialogs": [
+    {
+      "tag": "YTCP-DIALOG",
+      "text": ""
+    },
+    {
+      "tag": "TP-YT-PAPER-DIALOG",
+      "text": "Close"
+    },
+    {
+      "tag": "TP-YT-PAPER-DIALOG",
+      "text": ""
+    }
+  ]
+}

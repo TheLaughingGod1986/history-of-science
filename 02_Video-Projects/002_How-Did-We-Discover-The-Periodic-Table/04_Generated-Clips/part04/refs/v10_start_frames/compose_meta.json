@@ -1,0 +1,17 @@
+{
+  "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v10_start_frames/06_explorer_leaves_gap_start_v10.jpg",
+  "source": "v09_plate_t4_profile_lean",
+  "pose_lock": "profile_or_back_only",
+  "forbidden_starts": [
+    "fail_faceon_51",
+    "fail_faceon_52",
+    "sheet_front_hero"
+  ],
+  "colour_dna_keep": [
+    "bare_head_no_hat",
+    "fair_warm_tan_skin",
+    "dark_teal_trenchcoat",
+    "full_messy_wavy_chestnut_hair",
+    "toy_scale_on_desk"
+  ]
+}

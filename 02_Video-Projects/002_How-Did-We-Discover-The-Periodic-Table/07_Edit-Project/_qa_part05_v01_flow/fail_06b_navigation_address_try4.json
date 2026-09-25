@@ -1,0 +1,15 @@
+{
+  "plate": "06b_navigation_address",
+  "try": "4",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/06b_navigation_address_v01_try4.mp4",
+  "sha256": "1c94044abde024c49ec02fd67efe1d79a3e42b7eee37c3006b5823517aacc248",
+  "bytes": 2603593,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/081d119f-8380-4479-9a28-2841c1850beb",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "medium classroom dolly; never CU; no sparks",
+  "fail": "Room swap: modern empty classroom with student desks, hanging pendant lamps, and readable English WALL CHAIRT on a paper. Not the 1869 honey-wood cream-card wall grid. No fire, but DNA + HUD text FAIL. Do not assemble.",
+  "next": "try5: MEDIUM dolly on the SAME 1869 honey-wood WALL of cream cards as KEEP 07 toward ONE blank unprinted cream card. No English words. No lamps. No glow/slot/hole."
+}

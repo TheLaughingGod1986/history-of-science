@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c21_10b_11",
+  "jobs": [
+    {
+      "plate": "10b_find_missing",
+      "try": "1_v01",
+      "which": "one_empty_in_ordered_grid",
+      "note": "ordered filled grid with ONE blank cream card left to hunt; no glow-hole",
+      "out": "submit_10b_find_missing_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 10b_find_missing try1 — find the missing. VO beat: look at the empty chairs and know what to hunt. ONE continuous 8s take. SAME 1869 honey-wood WALL as KEEP 07. Ordered filled cream-card city of seats, with ONE blank unprinted cream card still to hunt. Camera PUSH toward that blank card. Never a glowing fire-pit hole. Stay MEDIUM, never CU-fill. Continuous. Daytime window bounce only. No person. No lamp. No fire. No neon. Silent. HARD REJECT: model-town houses, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "11_last_vacancy",
+      "try": "1_v01",
+      "which": "last_blank_beyond_last_row",
+      "note": "one last blank cream card beyond the last row; continuous drift",
+      "out": "submit_11_last_vacancy_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11_last_vacancy try1 — empty still. VO beat: one last empty chair. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream cards as KEEP 07. One last blank unprinted cream card holds beyond the last row. Cool pale card, never orange fire, never a fire-pit hole. Continuous gentle camera drift, never freeze. Daytime window bounce only. No person. No lamp. NEVER a white gallery. Silent. HARD REJECT: model-town, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    }
+  ]
+}

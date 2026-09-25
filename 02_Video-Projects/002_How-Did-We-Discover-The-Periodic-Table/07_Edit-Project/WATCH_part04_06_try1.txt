@@ -1,0 +1,7 @@
+plate: 06_explorer_leaves_gap try1
+verdict: SELF_REJECT (glasses when face visible t6–t7.2)
+lamp_invent: CLEAR
+sha256: a3f9919597b24aaddcfc727d92f533d1ffdebd89818516baebcaf3807c6f4284
+icloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_06_explorer_leaves_gap_try1
+flow: https://flow.google.com/project/2e5df3fb-a9fe-4c42-803a-07940ed55ede
+next: try2 LOCKED BACK/OTS no face-turn

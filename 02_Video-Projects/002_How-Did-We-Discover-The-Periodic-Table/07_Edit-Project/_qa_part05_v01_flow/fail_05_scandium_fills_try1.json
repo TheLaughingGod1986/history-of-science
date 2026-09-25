@@ -1,0 +1,15 @@
+{
+  "plate": "05_scandium_fills",
+  "try": "1",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/05_scandium_fills_v01_try1.mp4",
+  "sha256": "5b41f6764b69e17aab7bc4dff85880a42d934c2202b4537500a1950f93229eff",
+  "bytes": 739656,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/e895f196-abd5-4350-9606-f088f03739f1",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "SIDE wall chart, cream cards, cool white vacant glow, no lava/fire, no Explorer",
+  "fail": "Three cards stack into the same slot (Sc then Scandium (c) then another). Looping pile, not one seat-fill. Also full-word 'Scandium (c)' instead of sparse Sc.",
+  "next": "try2 same SIDE DNA once: ONE card only, sparse Sc mark, never a second card, never the word Scandium."
+}

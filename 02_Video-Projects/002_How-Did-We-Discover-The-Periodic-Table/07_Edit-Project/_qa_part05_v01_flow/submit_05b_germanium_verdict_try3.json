@@ -1,0 +1,32 @@
+{
+  "plate": "05b_germanium_verdict",
+  "try": "3_v01",
+  "which": "flat_wall_ge_no_glow",
+  "start_n": 1,
+  "max_starts": 2,
+  "cycle": "v01_c8_05b3_06b",
+  "project_url": "https://flow.google.com/project/c30a193a-9640-497e-8e95-0885a71c325e",
+  "info": {
+    "seconds": 52.0,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/c30a193a-9640-497e-8e95-0885a71c325e",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/c30a193a-9640-497e-8e95-0885a71c325e"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T19:23:24",
+  "paint": "banned",
+  "assemble": false,
+  "note": "NEW FRAMING: Ge card onto FLAT wall, ZERO glowing hole, zero fire"
+}

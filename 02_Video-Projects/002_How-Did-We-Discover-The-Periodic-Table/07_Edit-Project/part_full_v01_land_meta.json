@@ -1,0 +1,48 @@
+{
+  "file": "hos_002_periodic_table_full_v01.mp4",
+  "sha256": "da8395efb8f74ad8330b945a98ce8acac9f0587109d9742ed3135a8bc43fd399",
+  "duration": 534.451333,
+  "bytes": 411472085,
+  "parents": [
+    {
+      "id": "01",
+      "name": "hos_002_part01_rough_v14.mp4",
+      "sha": "d903cf7ca1789dcfc1a3703b9215564b3a0d306d0ea1dbf7c2a974888fa92781",
+      "duration": 85.68,
+      "offset": 0.0
+    },
+    {
+      "id": "02",
+      "name": "hos_002_part02_rough_v06.mp4",
+      "sha": "799086795d62f159930bd00db638ea2de0e02a299d8c9d50c8eed3d482e89529",
+      "duration": 84.0,
+      "offset": 85.68
+    },
+    {
+      "id": "03",
+      "name": "hos_002_part03_rough_v09.mp4",
+      "sha": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+      "duration": 89.68,
+      "offset": 169.68
+    },
+    {
+      "id": "04",
+      "name": "hos_002_part04_rough_v25.mp4",
+      "sha": "e78027c0c58abe9284f7b85de693a08caabd3ad8ee45b64624eadd0329942bb1",
+      "duration": 127.76,
+      "offset": 259.36
+    },
+    {
+      "id": "05",
+      "name": "hos_002_part05_rough_v01.mp4",
+      "sha": "8dcb06b596318a7283210928fbb0e78f6f89c7db5d200b8edeefbaa9b5522ec4",
+      "duration": 147.31,
+      "offset": 387.12
+    }
+  ],
+  "card_in": 530.93,
+  "card_land": 531.28,
+  "status": "UAT",
+  "locked": false,
+  "upload": false
+}

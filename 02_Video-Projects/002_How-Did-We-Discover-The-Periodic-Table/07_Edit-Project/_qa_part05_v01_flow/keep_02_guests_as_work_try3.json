@@ -1,0 +1,13 @@
+{
+  "plate": "02_guests_as_work",
+  "try": "3",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/02_guests_as_work_v01_try3.mp4",
+  "sha256": "39ce3bea84590412a4b56e601c083414b0f582dc13cc4bad99f00723df913abb",
+  "bytes": 1972995,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/eb67c102-2840-48ae-9e4c-a62086979428",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "NEW FRAMING after desk FAILs. Adult hands pin cream cards onto wall chart. Empty wood cell as vacant seat. No lamp, no fire, no flasks, daytime window. Distinct from 01 EWS classroom."
+}

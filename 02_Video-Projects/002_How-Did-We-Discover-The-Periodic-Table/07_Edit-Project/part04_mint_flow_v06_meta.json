@@ -1,0 +1,54 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "raw": "04_Generated-Clips/part04/raw/v06_fast",
+  "continuity": "desk_only_02b_v06_veo_no_window_no_hard_fill",
+  "parent_v05_sha": "a7c9741c32f9689c019d5c8695b36a8e8d2bbbebfb19b93ee53b6d584b8a43fc",
+  "desk_only_lock": "tight desk crop; NO window/panes/night sky/outdoor; soft dark/wood interior BG only",
+  "max_creates": 2,
+  "only": [
+    "02b_cards_sixty_three"
+  ],
+  "flow_account": "benoats@googlemail.com",
+  "accepted_try": 1,
+  "plates": [
+    {
+      "id": "02b_cards_sixty_three",
+      "status": "ok",
+      "out": "04_Generated-Clips/part04/raw/v06_fast/02b_cards_sixty_three_v06.mp4",
+      "kind": "T2V",
+      "create_try": 1,
+      "project_url": "https://flow.google.com/u/1/project/20dadd65-c532-4fbf-9928-82c658b0e03e",
+      "note": "desk-only ACCEPT after visual still-check; no window/roofs"
+    }
+  ],
+  "tries": [
+    {
+      "id": "02b_cards_sixty_three",
+      "create": 1,
+      "status": "ok",
+      "project_url": "https://flow.google.com/u/1/project/20dadd65-c532-4fbf-9928-82c658b0e03e",
+      "note": "desk-only wood interior; visual PASS no window/roofs"
+    },
+    {
+      "id": "02b_cards_sixty_three",
+      "create": 2,
+      "status": "reject_window_edge",
+      "project_url": "https://flow.google.com/u/1/project/49213d26-9e7a-43f6-904d-11d0c996c64d",
+      "note": "curved window frame readable on right \u2014 not used"
+    },
+    {
+      "id": "02b_cards_sixty_three",
+      "create": 3,
+      "status": "reject_window_edge_overbudget",
+      "project_url": "https://flow.google.com/u/1/project/e1531365-457e-4b7e-b38b-e03bdefa9fdd",
+      "note": "accidental 3rd submit after mint process crash; window edge; not used. Accepted try1."
+    }
+  ],
+  "note": "Create1 accepted. Creates 2\u20133 were submitted when mint process died mid-wait; harvested+rejected. No hard fills.",
+  "accepted_out_sha256": "4599048325b8599f8eccc9940babd9545c24c37d1a9332678f552f287a1651e4",
+  "rough_v06_sha256": "5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2",
+  "rough_v06_bytes": 76818977,
+  "rough_v06_duration_s": 127.76
+}

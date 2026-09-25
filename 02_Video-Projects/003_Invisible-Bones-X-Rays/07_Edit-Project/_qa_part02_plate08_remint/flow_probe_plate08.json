@@ -1,0 +1,17 @@
+{
+  "plate": "08_locks_the_door",
+  "wanted": "08_locks_the_door_v02.mp4",
+  "fail_keep": "08_locks_the_door_v01.mp4",
+  "fail_keep_sha256": "27849d3f946bcb78c99aa314b80911ed58f1a303737bdeceee12170f48816107",
+  "account_wanted": "benoats@googlemail.com",
+  "forbidden_account": "benoats86@gmail.com",
+  "project": "https://flow.google.com/u/1/project/95929b6f-ae75-40be-af91-05699c481557",
+  "profile": "/Users/benjaminoats/.playwright-owb-flow-benoats-googlemail",
+  "url": "https://flow.google.com/about",
+  "logged_in": false,
+  "create_submitted": false,
+  "assemble_run": false,
+  "probe_exit": 3,
+  "stop_reason": "SIGNED OUT — bounced to flow.google.com/about. Do not switch accounts.",
+  "ts": "2026-09-20T22:15:00+00:00"
+}

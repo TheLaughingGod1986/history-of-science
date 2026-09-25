@@ -1,0 +1,37 @@
+{
+  "status": "STOP_TO_COS_BLOCKED_AUTH",
+  "when": "2026-09-09T17:35:16+01:00",
+  "ben_claim": "try now \u2014 Mini Flow should be signed in",
+  "required_account": "benoats@googlemail.com",
+  "forbidden_account": "benoats86@gmail.com",
+  "result": "Passkey wall still present for googlemail. Live Flow u/1 session is FORBIDDEN benoats86 (~50 credits). Did NOT mint. Did NOT paint / temporal-median / brightness-motion.",
+  "evidence": [
+    "07_Edit-Project/_qa_part04_v19_auth/cdp_retry_0_after_googlemail.png",
+    "07_Edit-Project/_qa_part04_v19_auth/cdp_u1_click_1.png",
+    "07_Edit-Project/_qa_part04_v19_auth/auth_probe_v19_cdp_retry.json",
+    "07_Edit-Project/_qa_part04_v19_auth/hos_profile_probe.json"
+  ],
+  "passkey_ui": {
+    "account": "benoats@googlemail.com",
+    "text": "Verifying it's you... / Complete sign-in using your passkey"
+  },
+  "wrong_session": {
+    "url": "https://flow.google.com/u/1/",
+    "account": "benoats86@gmail.com",
+    "credits": 50,
+    "note": "Must not mint on this account"
+  },
+  "parent_v18_sha": "05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5",
+  "bible": "43d9405",
+  "not_delivered": [
+    "hos_002_part04_rough_v19.mp4",
+    "iCloud HOS UAT copy",
+    "Flow job ids for 06/11/11b"
+  ],
+  "instruction": "STOP_TO_COS BLOCKED_AUTH \u2014 CoS must clear googlemail passkey on Mini until Flow shows benoats@googlemail.com + ~8k\u201310k credits without passkey wall.",
+  "plates_blocked": [
+    "11_publish_gaps",
+    "11b_wait_and_hunt",
+    "06_explorer_leaves_gap"
+  ]
+}

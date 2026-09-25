@@ -1,0 +1,15 @@
+{
+  "plate": "11b_late_for_dinner",
+  "try": "1",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/11b_late_for_dinner_v01_try1.mp4",
+  "sha256": "7c7bc93f55572af908d4c11670392970e73b5ce47effa20a354bc2bdf7c120c8",
+  "bytes": 1741017,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/023f71a2-1048-4dc0-8f69-a5dee01d51b9",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "matte last-row cream card, same brightness as neighbours; never fire, never a burned hole",
+  "fail": "t00 empty wood slot (a hole). t04–t05.5 orange FIRE around a card that lifts out. t07 burned wood plate with two holes after the card is gone. Do not assemble.",
+  "next": "try2: copy KEEP 10. Stay on filled cream-card wall. One unprinted matte card, same brightness as neighbours. Slow settle. Never orbit a special glowing card. Never fire. Never a hole."
+}

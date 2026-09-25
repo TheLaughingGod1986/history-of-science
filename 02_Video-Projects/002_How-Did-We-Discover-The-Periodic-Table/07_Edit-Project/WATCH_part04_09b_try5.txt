@@ -1,0 +1,7 @@
+PLATE-FIRST 09b_risk_hold try5
+mp4: /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try5.mp4
+sha256: 19d9a6acbe727ce2d798f56e1b41c956651f93f20cdd5be8eb1328991117cb89
+flow: https://flow.google.com/project/210f4518-c5cb-4d25-8f0e-ec68d9ee3a1a
+gate: REJECT_CLEAN_LIGHT (desk fire spit mid→late; continuous evidence)
+iCloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try5/
+NO rough_v21. NO 06/11/11b. Scores → CoS. No Ben ping.
