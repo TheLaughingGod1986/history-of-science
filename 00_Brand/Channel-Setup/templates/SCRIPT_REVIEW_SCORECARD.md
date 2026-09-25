@@ -23,7 +23,7 @@ cd 07_Content-Ops && npm run review:script -- --file <path-to-script.md>
 | Escalation | | |
 | Retention potential | | |
 | Search potential | | |
-| Visual opportunities (Orbit-in-scene) | | |
+| Visual opportunities (the proof on screen, sound off) | | |
 | Narration flow | | |
 
 **Total:** ____ / 100  

@@ -4,7 +4,7 @@
 **Date:**  
 **Script review score:** ____ / 100 (must be ≥ 90)
 
-Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
+Canonical: `STUDIO_PLAYBOOK.md`
 
 ---
 
@@ -15,10 +15,10 @@ Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
 - [ ] Immediate mystery — audience needs the answer
 - [ ] Structure: Question → Danger → Story → Explain-in-story → Escalation → Ending
 - [ ] Framework beats present: Hook → Question → Escalation → Discovery → Payoff → Bigger question
-- [ ] Orbit **experiences** the science early (not wallpaper)
+- [ ] The proof is on screen early; the Explorer is in 1–3 beats only (`[EXPLORER ACTS]`)
 - [ ] Emotional “you” stakes present without fearbait
 - [ ] **4–6** film-act chapters (not 12–18 micro-chapters)
-- [ ] Runtime target **8–12 min** (trust-building window)
+- [ ] Runtime target **7–9 min**
 
 ## Packaging
 
@@ -29,7 +29,7 @@ Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
 
 ## Funnel (no dead ends)
 
-- [ ] End screen → another Orbit documentary
+- [ ] End screen → the best related HOS long + Subscribe (normal publish, no Premiere)
 - [ ] Cards configured
 - [ ] Pinned comment (question + next / companion link)
 - [ ] Related Shorts linked to this long (once public)
@@ -40,7 +40,7 @@ Canonical: `YOUTUBE_GROWTH_SYSTEM_V2.md`
 - [ ] Pre-build vidIQ audit signed off
 - [ ] Script reviewer ≥ 90
 - [ ] VO–picture gate QA passed
-- [ ] **UAT ALWAYS — CONSISTENCY:** Explorer scale + teal trenchcoat garnish / props / style match locked priors (`HOS_UAT_BIBLE_HOUSE_LOCK.md`)
+- [ ] **UAT ALWAYS — CONSISTENCY:** Explorer scale + teal trenchcoat garnish / props / style match locked priors (`STUDIO_PLAYBOOK.md`)
 - [ ] **UAT ALWAYS — VO VISUAL EXPLAINER:** picture matches and visually explains the spoken VO beat (not pretty B-roll)
 - [ ] **UAT ALWAYS — EXPLORER ROUND GLASSES:** Explorer wears round glasses whenever visible (fail bare / no-glasses)
 - [ ] **UAT ALWAYS — LAMP = CLEAN WARM GLOW:** lamps are clean warm glow only (fail fire spit / candle-flame / smoke artifacts)

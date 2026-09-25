@@ -2,8 +2,8 @@
 
 **Hard gate:** Run **before** locking script, VO, prompts, or picture gen for any new long.  
 **Goal:** Every episode is aimed at **views + full-video watch** using live data — not gut feel alone.  
-**Also follow:** `RETENTION_AND_GROWTH_LOCKED.md` (punch-first opens, Shorts funnel, teach-per-chapter).  
-**Listing path (mandatory):** `.cursor/rules/orbit-vidiq-source-of-truth.mdc` + `VIDIQ_LISTING_OPTIMIZATION_PLAYBOOK.md` — apply the same VidIQ optimize path to **longs and Shorts** (title, description, tags, thumbs/ABC; VidIQ generate thumbs if needed).
+**Also follow:** `HOS_STRATEGY.md` (punch-first opens, Shorts funnel, teach-per-chapter).  
+**Listing path (mandatory):** `THUMBNAIL_AND_TITLE_RULES.md` + `STUDIO_PLAYBOOK.md` §2 and §8 — apply the same VidIQ optimize path to **longs and Shorts** (title, description, tags, thumbs/ABC; VidIQ generate thumbs if needed).
 
 Copy into each project as:
 
@@ -19,7 +19,7 @@ Copy into each project as:
 | Working title | |
 | Date pulled | |
 | Credits used (approx) | |
-| Brand guardrails | Wonder over fearbait · no conspiracy · Orbit DNA |
+| Brand guardrails | Wonder over fearbait · no conspiracy · HOS lane (a familiar thing, and the moment we found out) |
 
 ---
 
@@ -114,7 +114,7 @@ Translate data → creative decisions **before** writing the full script:
 | Primary keyword | Title lead + early VO mention + desc |
 | High-volume related term | One chapter or Short dedicated to it |
 | Winning outlier structure | Chapter arc shape |
-| Weak competition angle | Our Orbit-unique hook (character / teach) |
+| Weak competition angle | Our unique hook (the room, the person, the proof, shown in 3D cartoon) |
 | Thumb pattern that works | Thumb ABC concept |
 
 **Chapter list after audit** (4–6, each with a teach-point):
@@ -138,13 +138,13 @@ Design for **watching through**, not just CTR (Growth System v2):
 | ~0:15 | Stakes | Why it matters now |
 | ~0:30 | Journey clear | Viewer knows the ride |
 | Chapter starts | Re-hook + chapter card | New question / turn |
-| Mid | Teach while story continues | Orbit experiences the science |
+| Mid | Teach while story continues | The proof happens on screen (the Explorer reacts at most) |
 | Final chapter | Payoff + bigger question | Answer loop · open next |
 | Outro | Soft return CTA | Brand outro — don’t dump new science |
 
 - [ ] No 30s+ stretch without a new teach or turn  
 - [ ] Every chapter earns the next one  
-- [ ] Runtime target **8–12 min** in trust-building window  
+- [ ] Runtime target **7–9 min**  
 
 ---
 
@@ -172,6 +172,6 @@ Design for **watching through**, not just CTR (Growth System v2):
 - Title Analyzer / Keyword: https://app.vidiq.com  
 - Script reviewer: `cd 07_Content-Ops && npm run review:script -- --file <script.md>`  
 - Channel audit puller (optional refresh): `00_Brand/Channel-Setup/audits/_pull_vidiq_full_audit.py`  
-- Story / VO–picture gate: `LONGFORM_STORY_AND_VO_PICTURE_GATE.md`  
-- Growth system: `YOUTUBE_GROWTH_SYSTEM_V2.md`  
-- Brand: wonder over clickbait — data informs structure, never overrides Orbit DNA
+- Story / VO–picture gate: `STUDIO_PLAYBOOK.md`  
+- Growth system: `STUDIO_PLAYBOOK.md`  
+- Brand: wonder over clickbait — data informs structure, never overrides the HOS lane

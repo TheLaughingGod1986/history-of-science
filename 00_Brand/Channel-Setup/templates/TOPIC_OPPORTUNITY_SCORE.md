@@ -10,16 +10,16 @@ Rank future ideas on emotionally compelling questions. Prefer high scores; rejec
 |------------------|------:|-------|
 | Search demand | | Impressions / Search potential |
 | Curiosity | | CTR + open loop |
-| Visual potential | | Orbit-in-scene CGI |
+| Visual potential | | One room, one person, one proof on screen |
 | Storytelling | | Cold open + escalation |
 | Series potential | | Session → next long |
 | Emotional impact | | Lived / “you” stakes |
 | Scientific credibility | | |
 | Evergreen potential | | |
 | Shorts potential | | 3–5 micro-stories |
-| Orbit brand fit | | |
+| HOS lane fit (familiar thing + moment of proof) | | |
 
-**Orbit Opportunity Score** (average): ____ / 10
+**HOS Opportunity Score** (average): ____ / 10
 
 ## Decision
 
@@ -30,8 +30,8 @@ Rank future ideas on emotionally compelling questions. Prefer high scores; rejec
 ## Cluster sketch (if long)
 
 Cold-open line (0–5s):  
-Long angle (8–12 min trust window):  
-Orbit experience beat:  
+Long angle (7–9 min):  
+Explorer beat (1–3 per film):  
 Short micro-stories (standalone · curiosity-gap ends):
 
 1.  

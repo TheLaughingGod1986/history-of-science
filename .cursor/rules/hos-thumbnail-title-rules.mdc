@@ -1,0 +1,33 @@
+---
+description: Titles and thumbnails — familiar noun first, one concrete promise, 2–4 word thumbs readable at phone size, frame 0 is the Shorts thumbnail
+globs:
+  - 02_Video-Projects/**/08_Thumbnail/**
+  - 02_Video-Projects/**/10_Shorts/**
+  - 02_Video-Projects/**/11_Upload-Package/**
+  - 00_Brand/Channel-Setup/tools/thumb_preview.py
+alwaysApply: false
+---
+
+# Thumbnail and title rules (25 Sep 2026)
+
+Readable copy with the evidence: `00_Brand/Channel-Setup/THUMBNAIL_AND_TITLE_RULES.md`.
+
+## Titles
+
+- A familiar noun in the first four words (your hands, your bones, a table, a drop of water, you).
+- One concrete promise: a familiar thing turned strange; the body or the everyday seen for the first time; a yes/no about what everyone believed; a prediction that came true; one real number or object; an accident that changed everything.
+- Longs: the searched phrase, subject in the first five words, the thing over the method. Not *How Did We Discover X?* every week.
+- **FAIL:** abstract labels or riddles (*What other table has empty chairs?* 4 views), hedged claims, hashtags, series suffixes, a copy of a live title, fear framing. Under about 60 characters.
+
+## Long thumbs
+
+- One subject filling at least a third of the frame, simple warm background.
+- **2–4 words**, readable at 168×94: `python3 00_Brand/Channel-Setup/tools/thumb_preview.py long <thumb> --out <sheet>`.
+- The thumb adds to the title, never repeats it. One heavy capitals font, yellow hook word, white rest. Text off the subject and out of the bottom-right corner.
+- The Explorer only as a tested variant. Test & Compare with 3; judge CTR past about 500 impressions.
+
+## Shorts
+
+- **Frame 0 is the thumbnail in the feed:** the named thing, moving. Never the Explorer, a blank card grid or a dark card.
+- Frame-0 caption: the promise in 2–4 words, cap height about 8–10%, yellow hook word.
+- Custom cover: the title's hook words, 2–4 words, at least 60% of frame width, vertically centred. Check with `thumb_preview.py short`.

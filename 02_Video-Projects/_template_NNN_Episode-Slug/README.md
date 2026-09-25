@@ -1,41 +1,27 @@
-# Episode template — Growth System v2 + Gemini Veo
+# Episode template
 
 Copy this folder to start a new long:
 
 ```bash
-cp -R 02_Video-Projects/_template_NNN_Episode-Slug \
-  02_Video-Projects/007_What-Happens-To-Your-Body-Near-A-Neutron-Star
-# Locked next long (7–9 min). Do not use empty 007_Neutron-Star scaffold. Do not start 013 Moon.
+cp -R 02_Video-Projects/_template_NNN_Episode-Slug 02_Video-Projects/004_<Slug>
 ```
 
-## Order (blocking)
+Full steps: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md`. Stop for Ben's OK at every sign-off in `AGENTS.md`.
 
-1. Fill `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` and sign off  
-2. Write `01_Script/*_script_master_v01.md` with cold open + markers  
-3. Gate:
+## Order
+
+1. **Topic** (`STUDIO_PLAYBOOK.md` §2): fill `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` and `TOPIC_OPPORTUNITY_SCORE.md` (template in `00_Brand/Channel-Setup/templates/`). Ben picks.
+2. **Script:** write `01_Script/<slug>_script_master_v01.md` from `episode_script_draft_v01.md`, then split it into five part scripts.
+3. **Gates** (both before any VO or picture spend):
    ```bash
    cd 07_Content-Ops
-   npm run gate:episode -- --project ../02_Video-Projects/<NNN_Slug>
+   npm run review:script -- --file ../02_Video-Projects/<NNN_Slug>/01_Script/<master>.md   # ≥90
+   npm run gate:episode -- --project ../02_Video-Projects/<NNN_Slug>                     # PASS
    ```
-4. **PASS only then:**
-   - VO → ElevenLabs Ben Orbit Narrator → `02_Voiceover/`
-   - CG → Gemini Veo:
-     ```bash
-     export GEMINI_API_KEY=...
-     cd 07_Edit-Project
-     cp .env.example .env   # paste key
-     python3 _generate_veo_from_beats.py --beats beats.json --out-dir ../04_Generated-Clips/01_Raw
-     ```
-5. Edit → Shorts (3–5) → checklist → YouTube package upload  
-6. After YouTube lock: thumb ABC + social mirror schedule  
+4. **VO** per part: Ben Orbit Narrator → `02_Voiceover/`.
+5. **Plate boards** per part: `07_Edit-Project/parts/part-NN_plates_v01.json` (copy the example).
+6. **Picture:** Flow Veo 3.1, one plate at a time until the first KEEP, plate UAT on continuous playback, assemble last (`STUDIO_PLAYBOOK.md` §5).
+7. **Assemble** parts → `09_Final-Export/<slug>_full_v0N.mp4` with the cream end card (§7).
+8. **Thumbnails** (`08_Thumbnail/`), **Shorts** (`10_Shorts/`), checklist, then the YouTube package upload (§9). Normal publish, Thursday 18:00, no Premiere.
 
-## Engines
-
-| Job | Tool |
-|-----|------|
-| CG | Gemini Veo (`orbit_gemini_veo.py`) |
-| VO | ElevenLabs TTS only |
-| Gate | `npm run gate:episode` |
-| Brief | `npm run brief:next -- --file metrics.json` |
-
-Docs: `YOUTUBE_GROWTH_SYSTEM_V2.md` · `docs/GEMINI_VEO_CG.md`
+Keep `production-status.md` current on `main`.

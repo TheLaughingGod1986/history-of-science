@@ -1,0 +1,34 @@
+---
+description: Uploading and finishing in YouTube Studio, affiliate links and social mirrors
+globs:
+  - 02_Video-Projects/**/11_Upload-Package/**
+  - 02_Video-Projects/**/08_Thumbnail/**
+  - 07_Content-Ops/scripts/**
+  - 07_Content-Ops/src/lib/publishing/**
+  - 07_Content-Ops/src/lib/affiliate/**
+  - 07_Content-Ops/docs/AFFILIATE*
+  - 00_Brand/Channel-Setup/CHANNEL_META.json
+  - 00_Brand/Channel-Setup/Meta/**
+  - 00_Brand/Channel-Setup/Threads/**
+  - 00_Brand/Channel-Setup/TikTok/**
+  - 00_Brand/Channel-Setup/social/**
+alwaysApply: false
+---
+
+# Publish, Studio finish, affiliate, social
+
+Full rules: `STUDIO_PLAYBOOK.md` §9–§12.
+
+- **Channel:** `@HistoryOfScienceYT` (`UCXp7HkBIl1LgaznXuZHJyRg`) only. `CHANNEL_META.json` lists the channels never to touch.
+- **Upload:** Data API package: `npm run youtube:package -- --package <…> --video <mp4> --dry-run` first. Private + `publishAt`, explicit `privacyStatus` and `madeForKids`, altered content: yes.
+- **One video = one upload:**
+  - never swap a file on a live id (no Studio Replace); never re-upload a public idea;
+  - a recut gets a new id, and the old one goes private (not deleted).
+- **Long:** normal publish, Thursday 18:00 UK, never a Premiere. Test & Compare with 3 thumbs, end screen, captions from the script. Pinned comment: `07_Content-Ops/scripts/update-pinned-comment.ts --create --video <id> --question "…?"`, then pin it in Studio.
+- **Short:** Studio Related → the long it promotes. No pinned comment, zero `/go/`.
+- **Title-only fixes:** `07_Content-Ops/scripts/retitle-videos.ts` (dry run first, Ben OK).
+- **Studio-only jobs** go through desktop Studio CDP (`00_Brand/Channel-Setup/audits/start_studio_chrome_cdp.sh`). Never Replace.
+- **Affiliate:** only on a long that names the product in VO or on screen; one product per film; never invent ASINs; never commit the Amazon tag.
+- **Social:**
+  - **TikTok paused** and not created (`TikTok/TIKTOK_UPLOAD_BLOCK.json`): no uploads, retries or "test one".
+  - Instagram and Threads `@historyofscienceyt`: each Short at most once per platform, never before its long is public (`social/uniqueness.py`). Never post to an Orbit account or the Orbit Facebook Page.

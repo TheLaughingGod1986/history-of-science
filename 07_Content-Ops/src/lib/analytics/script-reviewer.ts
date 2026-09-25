@@ -59,7 +59,8 @@ const FORBIDDEN_OPEN_PATTERNS: RegExp[] = [
 const SERIES_SUFFIX = /\|\s*orbit['']?s?\s+cosmic\s+journey/i;
 
 const ACTIVE_ORBIT = /\borbit\b.{0,40}\b(falls?|falling|crosses|crossed|stands?|standing|flies|flying|witnesses|witnessed|enters?|entered|dives?|diving|survives?|escapes?|discovers?|discovers)\b/i;
-const ORBIT_ACTS_MARKER = /\[ORBIT ACTS:/i;
+// HOS marks the Explorer's beats with [EXPLORER ACTS: …]; the old [ORBIT ACTS: …] marker still counts.
+const CHARACTER_ACTS_MARKER = /\[(?:EXPLORER|ORBIT) ACTS:/i;
 const VISUAL_MUST = /\[VISUAL MUST:/i;
 const TEACH_MARKER = /\[TEACH:/i;
 const CHAPTER_MARKER = /\[CHAPTER CARD:|^\s*#{1,3}\s+chapter\b|^chapter\s+\d+/gim;
@@ -78,7 +79,7 @@ function stripMarkdownNoise(text: string): string {
     .replace(/```[\s\S]*?```/g, " ")
     .replace(/^\s*\|.*$/gm, " ")
     .replace(/\[VISUAL MUST:[^\]]*\]/gi, " ")
-    .replace(/\[ORBIT ACTS:[^\]]*\]/gi, " ")
+    .replace(/\[(?:EXPLORER|ORBIT) ACTS:[^\]]*\]/gi, " ")
     .replace(/\[TEACH:[^\]]*\]/gi, " ")
     .replace(/\[CHAPTER CARD:[^\]]*\]/gi, " ")
     .replace(/[#>*_`]/g, " ")
@@ -231,12 +232,12 @@ export function reviewScript(
   searchPotential = clampScore(searchPotential);
 
   let visualOpportunities = 5.5;
-  if (ORBIT_ACTS_MARKER.test(script) || ACTIVE_ORBIT.test(script)) visualOpportunities += 2.5;
+  if (CHARACTER_ACTS_MARKER.test(script) || ACTIVE_ORBIT.test(script)) visualOpportunities += 2.5;
   else {
     findings.push({
       dimension: "visualOpportunities",
       severity: "fail",
-      message: "Orbit agency weak — add [ORBIT ACTS: …] where Orbit experiences the science.",
+      message: "No character beats — add [EXPLORER ACTS: …] where the Explorer walks in, touches a prop and reacts (1–3 per film).",
     });
   }
   if (VISUAL_MUST.test(script)) visualOpportunities += 1.5;
@@ -271,7 +272,7 @@ export function reviewScript(
   // Structural completeness bonus — Growth System v2 gates present
   const structureGates = [
     !FORBIDDEN_OPEN_PATTERNS.some((re) => re.test(open)),
-    ORBIT_ACTS_MARKER.test(script) || ACTIVE_ORBIT.test(script),
+    CHARACTER_ACTS_MARKER.test(script) || ACTIVE_ORBIT.test(script),
     VISUAL_MUST.test(script),
     TEACH_MARKER.test(script),
     chapterMarkers >= 4 && chapterMarkers <= 6,

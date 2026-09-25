@@ -1,0 +1,31 @@
+---
+description: Building an HOS long — topic pick, script gates, voice and assembly checks
+globs:
+  - 02_Video-Projects/**/01_Script/**
+  - 02_Video-Projects/**/02_Voiceover/**
+  - 02_Video-Projects/**/07_Edit-Project/**
+  - 02_Video-Projects/**/09_Final-Export/**
+  - 02_Video-Projects/_template_NNN_Episode-Slug/**
+alwaysApply: false
+---
+
+# HOS long (7–9 min, 5 parts)
+
+Full steps: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md` §2–§4 and §7. Hooks: `HOS_STRATEGY.md` → *Long hook*.
+
+- **Topic:** a familiar thing and the moment we found out the truth about it; one person, one room, one proof. No existing public long on that subject. Competition check on the exact title (signed out, top five). Fill `PRE_BUILD_VIDIQ_AUDIT.md`. **Ben picks.**
+- **Script** (about 1,000–1,300 spoken words):
+  - The first 3 s of picture are the story. Sentence one is the promise; the payoff is named by 30 s.
+  - 5 acts, cause and effect. Clear before clever: name the thing, say what it is and why it mattered in the same breath, one idea at a time. Always say what the discovery made possible.
+  - The Explorer in 1–3 beats only. Every claim sourced. No goodbye and no subscribe ask; the last line hands off to the next film.
+  - `[CHAPTER CARD]`, `[VISUAL MUST]` and `[TEACH]` on every act; `[EXPLORER ACTS]` on Explorer beats only.
+- **Gates:** `npm run review:script` scores 90 or more, then `npm run gate:episode` PASSes. No VO or picture spend before both.
+- **Voice:** Ben Orbit Narrator (`04_Audio/tools/orbit_voice.py`). VO before picture. Speech about −19 to −28 dB mean; never silent.
+- **Assembly:**
+  - normalise to 1920×1080, 30 fps CFR, stereo; check A/V lengths match;
+  - a remint is picture only (keep the locked audio);
+  - no branded intro; soft chapter cards; bed about −20 dB under VO;
+  - out on the 3–4 s cream-on-brown card *History of Science / DISCOVERY. WONDER. PROOF.*; subscribe in the Studio end screen only;
+  - export `09_Final-Export/<slug>_full_v0N.mp4`.
+- **Publish:** normal publish, Thursday 18:00 UK, no Premiere. Test & Compare with 3 thumbs; end screen = best related long + Subscribe; captions from the script; a pinned comment with the film's open question.
+- Keep `production-status.md` current on `main`.

@@ -91,7 +91,7 @@ describe("episode gate", () => {
     });
     // Force: if heuristic slightly under 90, still validate structure checks
     expect(result.checks.find((c) => c.id === "prebuild_vidiq")?.ok).toBe(true);
-    expect(result.checks.find((c) => c.id === "orbit_acts")?.ok).toBe(true);
+    expect(result.checks.find((c) => c.id === "explorer_acts")?.ok).toBe(true);
     expect(result.checks.find((c) => c.id === "visual_must")?.ok).toBe(true);
     expect(result.scriptReview).toBeTruthy();
   });

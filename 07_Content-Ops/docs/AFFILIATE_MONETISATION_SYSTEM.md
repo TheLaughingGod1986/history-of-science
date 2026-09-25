@@ -2,7 +2,7 @@
 
 Long-term monetisation platform for **History of Science**, integrated into Content Ops (`07_Content-Ops/`). Relevance before revenue — never recommend a product solely because it pays commission.
 
-Cursor agents: always-apply named-in-film gate — `.cursor/rules/orbit-affiliate-named-in-film.mdc`.
+Cursor agents: always-apply named-in-film gate — `.cursor/rules/hos-publish-studio.mdc` (rule text: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md` §11).
 
 ## Philosophy
 

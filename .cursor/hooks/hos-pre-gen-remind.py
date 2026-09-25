@@ -8,7 +8,7 @@ import sys
 
 GEN_RE = re.compile(
     r"(veo|omni|_generate_|elevenlabs|orbit_voice|orbit_gemini_veo|text_to_speech|"
-    r"seedance|generate_vo|vidiq_score|ultra.?credit|generate_videos)",
+    r"seedance|kling|generate_vo|vidiq_score|ultra.?credit|generate_videos|flow_veo)",
     re.I,
 )
 
@@ -24,12 +24,12 @@ def main() -> None:
 
     if GEN_RE.search(command):
         msg = (
-            "Orbit Growth System v2 gate: before ElevenLabs VO or Gemini Veo CG spend, "
-            "confirm (1) pre-build vidIQ audit signed off, (2) script reviewer ≥90, "
-            "(3) cold open 5/15/30s + Orbit agency. "
-            "CG = Gemini Veo API only (not EL Image & Video). "
-            "VO = ElevenLabs Ben Orbit Narrator. "
-            "See YOUTUBE_GROWTH_SYSTEM_V2.md · orbit-gemini-veo-cg.mdc."
+            "HOS spend gate: before ElevenLabs VO or Flow Veo spend, confirm "
+            "(1) Ben picked the topic, (2) pre-build vidIQ audit signed, (3) script reviewer ≥90 and "
+            "gate:episode PASS. Picture = Flow Veo 3.1 (Quality for lamps/flasks/glows), one plate at a "
+            "time until the first KEEP, plate UAT on continuous playback; never Omni, Seedance or Kling; "
+            "never 'same DNA' in a prompt; strip Veo audio; VO = Ben Orbit Narrator only. "
+            "See STUDIO_PLAYBOOK.md §3–§6."
         )
         sys.stdout.write(
             json.dumps(
