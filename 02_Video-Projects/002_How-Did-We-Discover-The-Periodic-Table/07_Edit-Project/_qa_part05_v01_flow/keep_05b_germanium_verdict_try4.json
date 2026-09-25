@@ -1,0 +1,13 @@
+{
+  "plate": "05b_germanium_verdict",
+  "try": "4",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/05b_germanium_verdict_v01_try4.mp4",
+  "sha256": "b43701c7d23b84ce5713072c62a0fe6fc84cfb34dbc8152da0f8402a78305e73",
+  "bytes": 1450433,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/73d6f76c-58fe-41d3-92f8-e5ea952de563",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "Seated Ge among Ga/As on pegs. Camera drift. No fire. Distinct from 05 SIDE drop and from try1–3 fire FAILs."
+}

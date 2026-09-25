@@ -1,0 +1,24 @@
+{
+  "url": "https://flow.google.com/u/1/project/2ed989c7-688d-46cc-91f3-1ffc65526fc1",
+  "logged_in": true,
+  "editor_usable": false,
+  "editors": [
+    {
+      "tag": "DIV",
+      "role": null,
+      "w": 288,
+      "h": 20,
+      "y": 1029,
+      "visible": true
+    },
+    {
+      "tag": "TEXTAREA",
+      "role": null,
+      "w": 0,
+      "h": 0,
+      "y": 0,
+      "visible": false
+    }
+  ],
+  "clicked": "add New project"
+}

@@ -1,0 +1,34 @@
+{
+  "parent_v16_sha256": "7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c",
+  "bible_main": "25bdefd",
+  "flow_account": "benoats@googlemail.com",
+  "model": "Veo 3.1 - Fast",
+  "plates": [
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "tries": {},
+  "accepted": {
+    "11b_wait_and_hunt": {
+      "path": "../04_Generated-Clips/part04/raw/v17_fast/11b_wait_and_hunt_v17.mp4",
+      "project_url": "https://flow.google.com/u/1/project/f4df706a-f043-415d-b50c-5c2b45f38968",
+      "bytes": 1563679,
+      "duration": 8.0,
+      "sha256": "5c0da6e9ae7ee5a9b3e568b3899fd696eb50e3fd0890d262844092318fb01bf9",
+      "width": 1280,
+      "height": 720,
+      "method": "Flow Veo 3.1 Fast I2V Create + edit-download net play capture",
+      "note": "gallery harvest stalled on before_thumbs=20; painted placeholder moved aside; 7aed7e87 left for plate 11; NOT CoS PASS"
+    }
+  },
+  "projects": {
+    "11b_wait_and_hunt_try1": "https://flow.google.com/u/1/project/f4df706a-f043-415d-b50c-5c2b45f38968"
+  },
+  "status": "11b_harvested_pending_qa",
+  "method": "fresh Flow Veo I2V from painted sharp starts \u2014 NOT v01 restore",
+  "active_account": "benoats@googlemail.com",
+  "probe_7aed7e87": {
+    "url": "https://flow.google.com/u/1/project/7aed7e87-4c6d-44c5-96d1-50f1af669ead",
+    "result": "no usable mp4 via edit-download; leave for plate 11"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "plate": "09_everyday_seats",
+  "try": "1",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/09_everyday_seats_v01_try1.mp4",
+  "sha256": "e72efc825b96d3687e757315fae6f7c21b1795284ea259b46b62a824b1072b5a",
+  "bytes": 2778148,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/cf142170-5db3-4753-9842-c68b9dda77e0",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "Four seats pulse in turn: salt cellar (Na), iodine bottle (I), silicon crystal, helium balloon (He). Honey wood. No fire-pits."
+}

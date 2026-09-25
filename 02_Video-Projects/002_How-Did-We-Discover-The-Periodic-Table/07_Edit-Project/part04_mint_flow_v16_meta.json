@@ -1,0 +1,15 @@
+{
+  "parent_v15_sha256": "cd7a57b2979478a34ac7cc5fe5639aa156ae603b437674ccd724ab3fe994748c",
+  "bible_main": "25bdefd",
+  "flow_account": "benoats@googlemail.com",
+  "model": "Veo 3.1 - Fast",
+  "plates": [
+    "10_family_before_weight",
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "tries": {},
+  "accepted": {},
+  "status": "running",
+  "active_account": "benoats@googlemail.com"
+}

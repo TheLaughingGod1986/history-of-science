@@ -1,0 +1,14 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 10,
+  "chosen_start": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20_try10_nocup_sidelit.jpg",
+  "chosen_sha256": "fe6d219f7c1d1f642a1e877eab6c65873fb1740d67036d9e95dedac37459de38",
+  "dna": "try9C cardless moon empty-chair KEEP reframed cropL791 \u2014 lamp fixture OFF FRAME (no underside bulb cup); warm off-screen glow + moon + empty chair; cardless; finished 3D; NOT try8 KEEP cf182dc; NOT flat 2a651abc; NOT paint",
+  "forbidden": {
+    "try8_keep_drip_baked": "cf182dc25d67d848cc37e2db05d7d7ff24f6d65e2cdecddc22f45e97d74576b3",
+    "flat": "2a651abc673e719af8f6647f264da28a45d41950473489193c72f9a0c4481182",
+    "try9_parent_fail": "CLEAN LIGHT lava drip under shade cup look-in composition"
+  },
+  "critical_change": "Do NOT reuse starts that show underside bulb hotspot. Prefer side/backlit OR opaque shade OR lamp off-frame.",
+  "when": "2026-09-09T23:20:57"
+}

@@ -1,0 +1,44 @@
+{
+  "cut": "hos_002_part04_rough_v14.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v14.mp4",
+  "bytes": 96269992,
+  "duration_s": 127.76,
+  "sha256": "fa62ab22d0f7cbd4f208e5200c9b8b471c23595237b4d7d2dd18e6f47dabad4f",
+  "parent_v13": "hos_002_part04_rough_v13.mp4",
+  "parent_v13_sha256": "27828f216c289d36aaeae7311c545cdf0fb829381ff110c528cc40008710cd6a",
+  "parent_v12_sha256": "175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2",
+  "reminted_plates": [
+    "09b_risk_hold"
+  ],
+  "uat_named_plate": "10_family_before_weight",
+  "picture_reminted_plate": "09b_risk_hold",
+  "timeline_note": "UAT FAIL ~105s under FAMILY FIRST side-label is plate 09b (~98.15\u2013106.05). Plate 10 floating-cards starts ~105.7 \u2014 kept from v13.",
+  "plate09b_sha256": "7243f56619512b5819682463544abb7af39000a180a5ee38793bc6ea7b1eca50",
+  "plate09b_method": "Flow Veo try2 rejected (flame) \u2192 clean-chair-lock composite: ok_abet DNA start locks chair/lamp/shelves; desk cards from try2 motion",
+  "flow_account": "benoats@googlemail.com",
+  "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+  "plate02b_picture_s": [
+    15.100000000000001,
+    23.0
+  ],
+  "columns_picture_s": [
+    37.75,
+    45.65
+  ],
+  "explorer_picture_s": [
+    45.3,
+    53.199999999999996
+  ],
+  "plate09_picture_s": [
+    90.59999999999998,
+    98.49999999999999
+  ],
+  "plate09b_picture_s": [
+    98.14999999999998,
+    106.04999999999998
+  ],
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v14.mp4",
+  "watch": "WATCH_part04_v14.txt",
+  "doc": "PART04_V14_PLATE10_CLEAN_GLOW.md",
+  "status": "LANDED_FOR_UAT \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping"
+}

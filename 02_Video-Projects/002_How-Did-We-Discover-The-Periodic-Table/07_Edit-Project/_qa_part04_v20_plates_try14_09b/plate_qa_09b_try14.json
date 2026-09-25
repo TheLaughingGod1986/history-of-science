@@ -1,0 +1,40 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 14,
+  "verdict": "KEEP_CANDIDATE",
+  "model": "Veo 3.1 - Quality",
+  "project_url": "https://flow.google.com/project/fdfefb06-556c-42bd-9c61-169a740e8ac0",
+  "mp4": "09b_risk_hold_v20_try14.mp4",
+  "sha256": "47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38",
+  "duration_s": 8.0,
+  "bytes": 1573095,
+  "starts_used": 1,
+  "max_starts": 2,
+  "family": "NEW_KEEP_try14_seathero_daywin_zerolamp_empty_chairs",
+  "start_sha256": "0c9af08a1aa3cc337aa72ac8f9bbc6e139d3a7d883d231f0b98ec4ef259c4a56",
+  "auth": {
+    "ultra": true,
+    "email": "benoats@googlemail.com"
+  },
+  "checks": {
+    "continuous_motion": true,
+    "lamp_invent": false,
+    "shade_cup_invent": false,
+    "underside_bulb": false,
+    "lava_molten_bead": false,
+    "chair_fire": false,
+    "unfinished_flat_HCON": false,
+    "cardless": true,
+    "empty_chairs_soft_glow": true,
+    "glow_is_fire": false,
+    "explorer": false,
+    "paint": false,
+    "seedance": false,
+    "fast": false
+  },
+  "uat_notes": "NEW framing DNA (seat-hero + daylight window + zerolamp) cleared continuous-playback plate UAT. No practical lamp/shade/bulb/shade-cup invent on L/top across t0-t8. Soft Empty Chairs seat glow stays non-fire. Finished 3D, cardless. Used 1/2 Quality starts \u2014 second start NOT burned.",
+  "assemble": false,
+  "when": "2026-09-10T11:57:10",
+  "plate_library_lock_sha": "4b8ed25",
+  "main_lock_sha": "3bc0414"
+}

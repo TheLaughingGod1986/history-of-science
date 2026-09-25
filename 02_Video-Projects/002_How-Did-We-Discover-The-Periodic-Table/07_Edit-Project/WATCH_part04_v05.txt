@@ -1,0 +1,27 @@
+WATCH THIS FILE ONLY (Part 04 rough v05 — scrub unblended brown panel):
+  hos_002_part04_rough_v05.mp4
+
+CoS / Picture→UAT gates for this cut:
+- Parent v04 FAIL ~18–21s: unblended brown scrub/panel covering book stack.
+- House silhouettes were already CLEARED on books; late window town CLEARED KEEP.
+- Reminted: 02b_cards_sixty_three ONLY (full Veo 3.1 Fast T2V). NO hard fills.
+- KEEP: v04 09/09b late window · v02 05/06 night-sky ~40 · Explorer teal · Empty Chairs.
+- Spot QA ~18–21: no opaque brown scrub slab; continuous desk + cream cards + leather books.
+- Flag for CoS: 02b window may still show town/roof silhouettes in-camera.
+- Part 01–03 LOCKED (P03 sha below) — do not remint
+- Do NOT declare PASS here. Scores → CoS. No P05 until KEEP/LOCK.
+
+Do not ping Ben. Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v04_sha=fda60b04bd3785b1f01b61c5c76b786a841d21152df29ed398ce5b5e4490554d
+reminted=02b_cards_sixty_three
+method=Veo_3.1_Fast_T2V_no_hard_fill
+flow=benoats@googlemail.com
+plate02b_picture=15.100-23.000
+columns_picture=37.750-45.650
+explorer_picture=45.300-53.200
+plate09_picture=90.600-98.500
+plate09b_picture=98.150-106.050
+sha256=a7c9741c32f9689c019d5c8695b36a8e8d2bbbebfb19b93ee53b6d584b8a43fc
+bytes=76043650
+duration=127.760

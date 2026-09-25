@@ -47,7 +47,7 @@ def threads_caption(short: dict, *, max_len: int = 480) -> str:
     if hashtags:
         parts.append(hashtags)
     elif "#historyofscience" not in prose.lower():
-        parts.append("#space #historyofscience #threads")
+        parts.append("#HistoryOfScience #Science #threads")
 
     caption = "\n\n".join(p for p in parts if p).strip()
     caption = re.sub(r"[ \t]+", " ", caption)

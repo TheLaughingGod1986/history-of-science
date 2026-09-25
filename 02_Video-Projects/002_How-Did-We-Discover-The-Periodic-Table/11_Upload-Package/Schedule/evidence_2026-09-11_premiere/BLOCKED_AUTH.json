@@ -1,0 +1,24 @@
+{
+  "ok": false,
+  "blocked": "GOOGLE_VERIFY_THAT_ITS_YOU",
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "not": [
+    "@OrbitWithBen",
+    "@OpptiAI"
+  ],
+  "account": "benoats86@gmail.com",
+  "cdp": "http://127.0.0.1:9460",
+  "profile": "/Users/benjaminoats/.hos-chrome-youtube-studio",
+  "chromeLeftRunning": true,
+  "note": "Did not click Next. Did not enter a password. Did not upload. Live-lock thumbs and v02 cut are ready.",
+  "nowLondon": "2026-09-11T00:43:52+01:00",
+  "premiereReady": {
+    "title": "How Did We Discover the Periodic Table?",
+    "file": "hos_002_periodic_table_full_v02.mp4",
+    "sha256": "8a5b8dde713cd4d6d2834b49635443ebf5fda1a83de92688bf79ca91746de31f",
+    "thumbA": "hos_002_thumb_A_gallium_live_v02.jpg",
+    "when": "Thursday 17 Sep 2026 19:00 Europe/London"
+  },
+  "resume": "On the Mac mini, complete Google verify for benoats86@gmail.com in the HOS Chrome window, open Studio for @HistoryOfScienceYT, then re-run _upload_hos_002_premiere_v01.py"
+}

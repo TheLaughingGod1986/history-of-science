@@ -1,0 +1,80 @@
+{
+  "slot": "s3",
+  "title": "The first X-ray showed a wedding ring",
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s3_bertha_ring_v01.mp4",
+  "thumb": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/08_Thumbnail/Selected/hos_003_thumb_s3_wedding_ring_v03.jpg",
+  "cover": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/08_Thumbnail/Selected/hos_003_s3_cover_v03.jpg",
+  "desc": true,
+  "day": 27,
+  "date_typed": "27 September 2026",
+  "time": "11:30",
+  "label": "Sunday 27 Sep 2026 11:30 Europe/London",
+  "parent": "frP_YrNShsU",
+  "resumed": true,
+  "attach": {
+    "ok": true,
+    "via": "already_details"
+  },
+  "openUpload": {
+    "alreadyDetails": true
+  },
+  "titleFill": "fill",
+  "kids": "err:TimeoutError",
+  "tags": true,
+  "thumbAttempt": {
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/08_Thumbnail/Selected/hos_003_thumb_s3_wedding_ring_v03.jpg",
+    "image": true,
+    "ok": true,
+    "via": "cdp_setFileInputFiles"
+  },
+  "wizard": {
+    "next0": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1095,
+      "y": 679
+    },
+    "related": "picked",
+    "next_0": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1095,
+      "y": 679
+    },
+    "next_1": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1095,
+      "y": 679
+    },
+    "visAt": 2,
+    "schedule": {
+      "open": "Select a date to make your video public.",
+      "day": {
+        "t": "27",
+        "aria": "",
+        "w": 36,
+        "h": 36,
+        "x": 514,
+        "y": 404
+      },
+      "after": {
+        "date": "27 Sept 2026",
+        "time": "11:30"
+      },
+      "ok": true
+    },
+    "ok": true
+  },
+  "platformPostId": "zI_eD3vFWmE",
+  "platformUrl": "https://youtube.com/shorts/zI_eD3vFWmE",
+  "uploadUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/short?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+  "related": "picked",
+  "ok": true
+}

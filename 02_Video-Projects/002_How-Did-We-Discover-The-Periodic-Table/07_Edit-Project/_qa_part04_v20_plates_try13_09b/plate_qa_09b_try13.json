@@ -1,0 +1,29 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 13,
+  "verdict": "STOP_TO_COS",
+  "starts_burned": 2,
+  "family": "NEW_KEEP_v07_bookshelf_empty_leather_chair_zerofixture_outworld",
+  "A": {
+    "verdict": "SELF_REJECT",
+    "reason": "left_brass_lamp_shade_cup_invent",
+    "sha256": "9ecab77caa621ca9ca857bd89dc18ebc92067f40c2aac4b60f21efd440991991",
+    "bytes": 1444105
+  },
+  "B": {
+    "verdict": "SELF_REJECT",
+    "reason": "topleft_lamp_fixture_invent",
+    "sha256": "3bbc6ce26be95c1f6d2bcd29f5e598839a8b7ad14d9b845c46bd3cb998e37fa3",
+    "bytes": 1739777
+  },
+  "startA_sha256": "e036c7f8430dbd03921203346cab55d295ee2a62229c61567c11426e87a7dcd9",
+  "startB_sha256": "19e96ec5878115cf9e6bac24d74256cd23a32a3d0c7e833a212d65b50085cb26",
+  "plate_library_lock_sha": "4b8ed25",
+  "bible": "8ddbf99",
+  "icloud_uat": "HOS UAT/part04_plate_09b_risk_hold_try13",
+  "assemble": false,
+  "projects": {
+    "A": "https://flow.google.com/project/61016519-e333-4ff1-820f-a7ce70dfe72e",
+    "B": "https://flow.google.com/project/04088715-0ef3-4d3c-acd0-3e0ae427c9a6"
+  }
+}

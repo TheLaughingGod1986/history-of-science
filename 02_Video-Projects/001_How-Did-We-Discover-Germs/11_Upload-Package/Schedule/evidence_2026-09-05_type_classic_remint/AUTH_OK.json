@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "status": "AUTH_OK_RESUME",
+  "checkedAt": "2026-09-06T00:04:10",
+  "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+  "title": "Channel dashboard - YouTube Studio",
+  "channel": "History of Science",
+  "handle": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "cdp": "http://127.0.0.1:9460",
+  "profile": "/Users/benjaminoats/.hos-chrome-youtube-studio",
+  "screenshot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/evidence_2026-09-05_type_classic_remint/02_auth_resume_check.png",
+  "note": "Ben confirmed sign-in; remint CDP profile Dashboard shows History of Science with germs Shorts views. Proceeding with TYPE classic remint.",
+  "related": "_C92tIJCk8A",
+  "oldIdsPendingPrivate": [
+    "8uBR-9oxeWs",
+    "YX2UR1u-JCQ",
+    "Fnb3p81u-wY",
+    "vpuRgKXtFlY",
+    "Lcmh5y2KMQM"
+  ]
+}

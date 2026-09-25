@@ -1,0 +1,106 @@
+{
+  "keepTitles": "unchanged",
+  "long": {
+    "slot": "long",
+    "id": "frP_YrNShsU",
+    "desc": true,
+    "tags": {
+      "ok": false,
+      "err": "no_tags_box"
+    },
+    "saved": true,
+    "titleStill": true,
+    "visibility": "Changes saved\nAll changes saved.\nSkip navigation\nAsk Studio\nCreate\nChannel content\nPREMIERE\nYour video\nHow Did We Discover X-rays?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nHow Did We Discover X-rays?\nA/B Testing\nDescription\nHow Did We Discover X-rays?\n\nIn a dark W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen ",
+    "comment": {
+      "ok": false,
+      "hit": null
+    },
+    "saved2": true
+  },
+  "endScreen": {
+    "ok": false,
+    "getStarted": true,
+    "saved": false
+  },
+  "shorts": [
+    {
+      "slot": "s1",
+      "id": "oowAOWTBoq0",
+      "desc": true,
+      "tags": {
+        "ok": false,
+        "err": "no_tags_box"
+      },
+      "saved": true,
+      "titleStill": true,
+      "visibility": "Changes saved\nAll changes saved.\nSkip navigation\nAsk Studio\nCreate\nChannel content\n0:25\nYour video\nHow X-rays Were Discovered by Accident\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nHow X-rays Were Discovered by Accident\nDescription\nHow X-rays Were Discovered by Accident\n\nA covered cathode tube. A cardb"
+    },
+    {
+      "slot": "s2",
+      "id": "xvanpsLeADE",
+      "desc": true,
+      "tags": {
+        "ok": false,
+        "err": "no_tags_box"
+      },
+      "saved": true,
+      "titleStill": true,
+      "visibility": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n0:25\nYour video\nHow did R\u00f6ntgen see bones without cutting\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nHow did R\u00f6ntgen see bones without cutting\nDescription\nHow did R\u00f6ntgen see bones without cutting\n\nSoft tissue fades. Bone holds. R\u00f6ntgen sa"
+    },
+    {
+      "slot": "s3",
+      "id": "zI_eD3vFWmE",
+      "desc": true,
+      "tags": {
+        "ok": false,
+        "err": "no_tags_box"
+      },
+      "saved": true,
+      "titleStill": true,
+      "visibility": "Changes saved\nAll changes saved.\nSkip navigation\nAsk Studio\nCreate\nChannel content\n0:25\nYour video\nThe first X-ray showed a wedding ring\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nThe first X-ray showed a wedding ring\nDescription\nThe first X-ray showed a wedding ring\n\nThe first X-ray proof was Bertha R"
+    }
+  ],
+  "cleanup": {
+    "ok": false,
+    "titles": [
+      {
+        "kind": "title",
+        "t": "0:25 hos 003 s2 bones no knife v01 Add description \u2014 Draft Edit draft",
+        "x": 248,
+        "y": 553,
+        "w": 1152,
+        "h": 84
+      },
+      {
+        "kind": "title",
+        "t": "Select hos 003 s2 bones no knife v01",
+        "x": 279,
+        "y": 564,
+        "w": 18,
+        "h": 18
+      },
+      {
+        "kind": "title",
+        "t": "0:25 hos 003 s2 bones no knife v01 Add description",
+        "x": 308,
+        "y": 553,
+        "w": 453.125,
+        "h": 83
+      },
+      {
+        "kind": "title",
+        "t": "hos 003 s2 bones no knife v01 Add description",
+        "x": 440,
+        "y": 553,
+        "w": 305.125,
+        "h": 72
+      }
+    ],
+    "deleteHit": null,
+    "err": "no_delete_item"
+  },
+  "channelScout": {
+    "url": "http://localhost:3000/channels",
+    "snip": "Skip to content\nChannelScout\n\nGROWTH INTELLIGENCE\n\nOverview\nNiche finder\nSaved niches\nMy channel\nVideo experiments\nWeekly reports\nPlans & billing\nBlog\nSettings & connections\nYour next move, clearer\n\nFind a niche. Test an idea. Learn what works.\n\nPrivacy\nTerms\n\nMY CHANNEL\n\nFind your next winning video.\n\nDiscover your strongest videos, understand what helped them perform, and get ideas for what to make next.\n\nConnect your YouTube channel\n\nChoose your Google account and approve read-only access. We\u2019ll bring you straight back to your analysis.\n\nConnect with Google\nRead-only access. You stay in control of your videos.\n\nNICHE EXPLORE STACK\n\nWalk one lead, keep the rest\n\nNo niche locked. Confirm a seed before exploring.\n\nKeyword Planner is off \u2014 search volume unknown.\n\nLifetime views are a public-sample snapshot, not current performance.\nKeyword Planner is off \u2014 search volume unknown.\nNo click-through rate, impressions, or VidIQ score exist for this walk.\nUsable means paste-safe, not that anyone searches the phrase.\nA sample band is an estimate from comps already on the candidate. It is not a forecast for the standout.\nPush stores a phrase, video id, or channel key. It does not call YouTu"
+  }
+}

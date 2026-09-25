@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c14_05b4_06b2",
+  "jobs": [
+    {
+      "plate": "05b_germanium_verdict",
+      "try": "4_v01",
+      "which": "seated_ge_drift",
+      "note": "Ge already seated; camera drift; no hole; no seating; no glow",
+      "out": "submit_05b_germanium_verdict_try4.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 05b_germanium_verdict try4 — Germanium. NEW FRAMING. VO beat: germanium takes its seat, the verdict. ONE continuous 8s take. A cream-card WALL CHART. One cream card already on a wooden peg reads sparse Ge. The card is ALREADY seated. Camera slow drift / push on that Ge card among neighbours. FORBIDDEN: fire, flame, orange sparks, lava, exploding wall, glowing slits, fire icons, cards bursting. No empty hole. No seating action. Ge stays Ge the whole time. Daytime window. No person. No lamp. Continuous 8s. Silent. HARD REJECT: lava, fire, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "06b_navigation_address",
+      "try": "2_v01",
+      "which": "push_blank_card_no_flame",
+      "note": "push to one blank gold-rim card; no flame icons",
+      "out": "submit_06b_navigation_address_try2.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 06b_navigation_address try2 — navigation. VO beat: an address to walk toward. ONE continuous 8s take. Camera PUSH toward ONE blank unprinted cream card on a honey-wood WALL of cream cards. Pale gold pencil outline on that blank card. All cards are blank or sparse letters — NEVER a flame drawing, NEVER a fire icon, NEVER orange artwork on a card. Not chairs. Not houses. Continuous push 8s. Daytime. No person. No lamp. Silent. HARD REJECT: lava, fire, flame icons, Ken Burns only, moon-desk still-life, model-town. Plate-library lock 4b8ed25."
+    }
+  ]
+}

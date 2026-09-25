@@ -1,0 +1,41 @@
+{
+  "cut": "hos_002_part04_rough_v08.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v08.mp4",
+  "bytes": 87885278,
+  "duration_s": 127.76,
+  "sha256": "8cafb379af976897d6cee46484439b1ecbda56f8a42760327a96d1744d614a83",
+  "parent_v06_sha256": "5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2",
+  "parent_v07_sha256": "a74fa8ecd7f74785b3c4887e574d009676844189a0dc67620e659ae96e09efe2",
+  "reminted_plates": [
+    "06_explorer_leaves_gap"
+  ],
+  "method": "Veo 3.1 Fast I2V \u2014 Explorer toy-scale garnish remint only",
+  "flow_account": "benoats@googlemail.com",
+  "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+  "plate02b_picture_s": [
+    15.100000000000001,
+    23.0
+  ],
+  "columns_picture_s": [
+    37.75,
+    45.65
+  ],
+  "explorer_picture_s": [
+    45.3,
+    53.199999999999996
+  ],
+  "plate09_picture_s": [
+    90.59999999999998,
+    98.49999999999999
+  ],
+  "plate09b_picture_s": [
+    98.14999999999998,
+    106.04999999999998
+  ],
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v08.mp4",
+  "watch": "WATCH_part04_v08.txt",
+  "note": "v08: remint ONLY 06_explorer_leaves_gap to toy-scale teal garnish (P01/P03 house). KEEP v07 sky scrub on 05/09/09b + v06 desk 02b. Scores \u2192 CoS only. Do not declare PASS.",
+  "plate06_sha256": "efb69579fa84b18fa3f124167bf6bd8124fc79cf641096368d7c872c04048897",
+  "plate06_unique_vs_v07": true,
+  "plate06_v07_sha256": "ad93141401965cacac4dc2b430510166b669b23636e74ed6e98f855e5604fa29"
+}

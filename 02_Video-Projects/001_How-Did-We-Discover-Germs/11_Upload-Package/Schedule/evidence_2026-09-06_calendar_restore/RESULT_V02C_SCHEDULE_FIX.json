@@ -1,0 +1,293 @@
+{
+  "started": "2026-09-06T12:51:03",
+  "jobs": [
+    {
+      "id": "sILtQxgYQk8",
+      "day": 7,
+      "chip_before": "Visibility Scheduled",
+      "dialog0": {
+        "found": true,
+        "date": "7 Sept 2026",
+        "time": "11:30",
+        "buttons": [
+          {
+            "t": "7 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "7 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Done",
+            "dis": true
+          },
+          {
+            "t": "Done",
+            "dis": true
+          }
+        ],
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n7 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "radio": "Schedule",
+      "fill": {
+        "day": 7,
+        "picked": "7",
+        "time": "11:30"
+      },
+      "dialog1": {
+        "found": true,
+        "date": "7 Sept 2026",
+        "time": "11:30",
+        "buttons": [
+          {
+            "t": "7 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "7 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Done",
+            "dis": true
+          },
+          {
+            "t": "Done",
+            "dis": true
+          }
+        ],
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n7 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "save_pre": false,
+      "done": "role",
+      "dialog_still": true,
+      "done2": "role",
+      "save_post": false,
+      "save2": {
+        "enabled": false,
+        "clicked": false
+      },
+      "chip_after": "Visibility Scheduled",
+      "dialog_verify": {
+        "found": true,
+        "date": "7 Sept 2026",
+        "time": "11:30",
+        "buttons": [
+          {
+            "t": "7 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "7 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Done",
+            "dis": true
+          },
+          {
+            "t": "Done",
+            "dis": true
+          }
+        ],
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n7 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "ok": false,
+      "soft_ok": false
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "day": 8,
+      "chip_before": "Visibility Scheduled",
+      "dialog0": {
+        "found": true,
+        "date": "8 Sept 2026",
+        "time": "11:30",
+        "buttons": [
+          {
+            "t": "8 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "8 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Done",
+            "dis": true
+          },
+          {
+            "t": "Done",
+            "dis": true
+          }
+        ],
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n8 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "radio": "Schedule",
+      "fill": {
+        "day": 8,
+        "picked": "8",
+        "time": "11:30"
+      },
+      "dialog1": {
+        "found": true,
+        "date": "8 Sept 2026",
+        "time": "11:30",
+        "buttons": [
+          {
+            "t": "8 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "8 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Done",
+            "dis": true
+          },
+          {
+            "t": "Done",
+            "dis": true
+          }
+        ],
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n8 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "save_pre": false,
+      "done": "role",
+      "dialog_still": true,
+      "done2": "role",
+      "save_post": false,
+      "save2": {
+        "enabled": false,
+        "clicked": false
+      },
+      "chip_after": "Visibility Scheduled",
+      "dialog_verify": {
+        "found": true,
+        "date": "8 Sept 2026",
+        "time": "11:30",
+        "buttons": [
+          {
+            "t": "8 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "8 Sept 2026",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Time zone",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Cancel",
+            "dis": false
+          },
+          {
+            "t": "Done",
+            "dis": true
+          },
+          {
+            "t": "Done",
+            "dis": true
+          }
+        ],
+        "text": "Save or publish\n\nSchedule\n\nSchedule as public\n\n8 Sept 2026\nTime zone\nVideo is private before publishing\nDone"
+      },
+      "ok": false,
+      "soft_ok": false
+    }
+  ],
+  "ok": false,
+  "finished": "2026-09-06T12:51:52"
+}

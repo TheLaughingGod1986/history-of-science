@@ -1,0 +1,23 @@
+{
+  "plate": "11b_wait_and_hunt",
+  "project_url": "https://flow.google.com/project/50832102-0f29-4f21-8baa-5ebc9e145922",
+  "info": {
+    "seconds": 62.6,
+    "bytes": 0,
+    "model": "Veo 3.1 - Fast",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11b_wait_and_hunt_start_v20.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/50832102-0f29-4f21-8baa-5ebc9e145922",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/50832102-0f29-4f21-8baa-5ebc9e145922"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11b_wait_and_hunt_start_v20.jpg",
+  "model": "Veo 3.1 - Fast",
+  "when": "2026-09-09T19:58:22"
+}

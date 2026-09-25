@@ -36,7 +36,8 @@ sys.path.insert(0, str(TOOLS))
 
 import orbit_gemini_veo as veo  # noqa: E402 — shared prompt lock / strip_audio
 
-FLOW_HOME = "https://labs.google/fx/tools/flow"
+# Flow home moved off labs.google (still redirects, but native host is flow.google.com).
+FLOW_HOME = "https://flow.google.com/"
 DEFAULT_PROFILE = Path(
     os.environ.get(
         "ORBIT_FLOW_PROFILE",
@@ -106,9 +107,16 @@ def launch_context(playwright, *, headed: bool, profile: Path, slow_mo: int = 0)
         ctx = playwright.chromium.launch_persistent_context(**kwargs)
     page = ctx.pages[0] if ctx.pages else ctx.new_page()
     try:
-        ctx.grant_permissions(
-            ["clipboard-read", "clipboard-write"], origin="https://labs.google"
-        )
+        for origin in (
+            "https://labs.google",
+            "https://flow.google.com",
+        ):
+            try:
+                ctx.grant_permissions(
+                    ["clipboard-read", "clipboard-write"], origin=origin
+                )
+            except Exception:
+                pass
     except Exception:
         pass
     return ctx, page
@@ -212,15 +220,30 @@ def looks_logged_in(page) -> bool:
     url = (page.url or "").lower()
     if "accounts.google.com" in url and ("signin" in url or "servicelogin" in url):
         return False
+    # Project URLs on the multi-login slot are a hard login signal even when
+    # body text is mid-hydration after cookie Agree.
+    if "flow.google.com" in url and "/project/" in url:
+        return True
     try:
         body = page.locator("body").inner_text(timeout=5000)[:3000]
     except Exception:
-        return False
+        # Transient — treat /u/N/ Flow home as logged-in enough to continue.
+        return "flow.google.com" in url and ("/u/" in url or url.rstrip("/").endswith("flow.google.com"))
     low = body.lower()
     if "sign in" in low and "google flow" in low and "ultra" not in low:
         return False
-    return "labs.google" in url and (
-        "ultra" in low or "new project" in low or "/project/" in url
+    # Flow now serves from flow.google.com (labs.google/fx/tools/flow redirects).
+    on_flow = ("labs.google" in url) or ("flow.google.com" in url)
+    return on_flow and (
+        "ultra" in low
+        or "new project" in low
+        or "/project/" in url
+        or "create a character" in low
+        or "create characters" in low
+        or "flow music" in low
+        or "try the google flow agent" in low
+        or "what do you want to create" in low
+        or "all media" in low
     )
 
 
@@ -251,13 +274,26 @@ def click_visible(page, *needles: str, timeout: int = 8000) -> bool:
 
 
 def editor_box(page) -> dict | None:
+    """Locate the Flow create prompt box (Slate legacy or 2026 textarea/contenteditable)."""
     try:
         return safe_evaluate(
             page,
             """() => {
-              const el = document.querySelector('[data-slate-editor="true"]');
-              if (!el) return null;
-              const r = el.getBoundingClientRect();
+              const cands = [];
+              const push = (el) => {
+                if (!el) return;
+                const r = el.getBoundingClientRect();
+                if (r.width < 80 || r.height < 16) return;
+                if (r.bottom < 0 || r.top > (window.innerHeight || 900)) return;
+                cands.push({el, r, score: r.width * Math.min(Math.max(r.height, 18), 120) + (r.y > 200 ? 5000 : 0) + (r.y > 600 ? 8000 : 0)});
+              };
+              push(document.querySelector('[data-slate-editor="true"]'));
+              for (const el of document.querySelectorAll(
+                'textarea, [contenteditable="true"], [role="textbox"]'
+              )) push(el);
+              cands.sort((a, b) => b.score - a.score);
+              if (!cands.length) return null;
+              const r = cands[0].r;
               return {w: r.width, h: r.height, x: r.x, y: r.y};
             }""",
             retries=3,
@@ -275,9 +311,10 @@ def editor_usable(page) -> bool:
     # Closed session leaves a 0×0 or off-viewport editor node in the DOM
     try:
         vw = page.viewport_size["width"] if page.viewport_size else 1440
+        vh = page.viewport_size["height"] if page.viewport_size else 900
     except Exception:
-        vw = 1440
-    return 0 <= box["x"] < vw - 40 and box["y"] > 0
+        vw, vh = 1440, 900
+    return 0 <= box["x"] < vw - 40 and 0 <= box["y"] < vh - 20
 
 
 def ensure_agent_session(page) -> None:
@@ -342,7 +379,23 @@ def _ensure_project_once(page) -> str:
                 "Run once with --login on the Ultra Google account:\n"
                 "  python3 04_Audio/tools/orbit_flow_veo_ui.py --login"
             )
-        if not click_visible(page, "new project"):
+        clicked_new = click_visible(page, "new project")
+        if not clicked_new:
+            # Material button often renders as "add\nNew project"
+            clicked_new = bool(
+                page.evaluate(
+                    """() => {
+                      for (const b of document.querySelectorAll('button')) {
+                        const t = (b.innerText || '').replace(/\n/g, ' ').trim();
+                        if (/^add\\s*new project$/i.test(t) || /^new project$/i.test(t)) {
+                          b.click(); return true;
+                        }
+                      }
+                      return false;
+                    }"""
+                )
+            )
+        if not clicked_new:
             # Open most recent project card
             href = safe_evaluate(
                 page,
@@ -436,39 +489,199 @@ def read_selected_video_model(page) -> str | None:
 
 
 def _ensure_create_prompt_mode(page) -> None:
-    """Leave Agent-instructions mode so the Image/Video model pill is visible.
+    """Ensure Create generates Veo video — not Agent chat.
 
-    Aug 2026 Flow UI: Agent mode shows tune/Settings + Agent Instructions and
-    hides the Nano Banana / Video · settings pill used for Veo selection.
+    Sep 2026 Flow UI: the prompt-bar ``Agent`` chip
+    (``agent-mode-chip`` / ``agent-mode-chip-checked``) routes arrow_forward
+    into chat. Progress can hit 100% with zero media. For scenery/I2V mint
+    we must leave Agent OFF so ``Start generation`` runs Veo.
     """
-    has_pill = page.evaluate(
-        """() => [...document.querySelectorAll('button')].some(b =>
-          /Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(b.innerText || ''))"""
-    )
-    if has_pill:
-        return
-    # Agent Instructions visible → toggle Agent off
-    if page.locator("button").filter(has_text="Agent Instructions").count():
-        clicked = page.evaluate(
+    for _ in range(3):
+        state = page.evaluate(
+            """() => {
+              const chips = [...document.querySelectorAll('button.agent-mode-chip, button')];
+              for (const b of chips) {
+                const t = (b.innerText || '').trim();
+                if (t !== 'Agent') continue;
+                const checked = b.classList.contains('agent-mode-chip-checked')
+                  || b.getAttribute('aria-pressed') === 'true';
+                return {
+                  found: true,
+                  checked,
+                  cls: (b.className || '').toString(),
+                };
+              }
+              return {found: false, checked: false, cls: ''};
+            }"""
+        )
+        if not state.get("found"):
+            print("  create-mode: Agent chip not found (ok if UI variant)", flush=True)
+            return
+        if not state.get("checked"):
+            # Confirm Video settings trigger is present (Create/Veo mode).
+            has_video = page.evaluate(
+                """() => [...document.querySelectorAll('button')].some(b => {
+                  const t = (b.innerText || '').replace(/\\n/g, ' ');
+                  const a = b.getAttribute('aria-label') || '';
+                  return /Settings trigger/i.test(a) || /Video\\s*·/i.test(t) || /Veo/i.test(t);
+                })"""
+            )
+            print(
+                f"  create-mode: Agent OFF video_settings={bool(has_video)}",
+                flush=True,
+            )
+            return
+        print("  create-mode: Agent ON → clicking chip to disable", flush=True)
+        page.evaluate(
             """() => {
               for (const b of document.querySelectorAll('button')) {
-                const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-                if (t === 'Agent' || /^Agent$/i.test(t)) { b.click(); return true; }
+                if ((b.innerText || '').trim() !== 'Agent') continue;
+                b.click();
+                return true;
               }
               return false;
             }"""
         )
-        if clicked:
-            page.wait_for_timeout(900)
-    has_pill = page.evaluate(
-        """() => [...document.querySelectorAll('button')].some(b =>
-          /Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(b.innerText || ''))"""
+        page.wait_for_timeout(700)
+    raise RuntimeError(
+        "Flow Agent chip stayed ON — Create would chat instead of minting Veo. "
+        "Turn Agent off manually on Mini, then retry."
     )
-    if not has_pill:
-        raise RuntimeError(
-            "Flow Create model pill not found (still in Agent mode?). "
-            "Toggle Agent off so Image/Video settings appear."
-        )
+
+
+def _open_agent_settings_drawer(page) -> None:
+    """Open the right-rail Agent settings drawer (tune / aria-label=Settings)."""
+    opened = page.evaluate(
+        r"""() => {
+          for (const b of document.querySelectorAll('button')) {
+            const a = (b.getAttribute('aria-label') || '').trim();
+            const t = (b.innerText || '').trim();
+            if (a === 'Settings' || t === 'tune') { b.click(); return a || t; }
+          }
+          return null;
+        }"""
+    )
+    if not opened:
+        raise RuntimeError("Flow Settings (tune) button not found")
+    page.wait_for_timeout(900)
+    ok = page.evaluate(
+        r"""() => /Agent settings|Video generation default|Image generation default/i
+          .test(document.body.innerText || '')"""
+    )
+    if not ok:
+        raise RuntimeError("Flow Agent settings drawer did not open")
+
+
+def _lock_veo_in_agent_settings(page, model: str) -> str:
+    """In Agent settings: Never confirm, pick Veo under Video generation default, Save."""
+    model = assert_veo3_model(model)
+    _open_agent_settings_drawer(page)
+
+    page.evaluate(
+        r"""() => {
+          for (const el of document.querySelectorAll('button,label,div,span')) {
+            const t = (el.innerText || '').trim();
+            if (t === 'Never') { el.click(); return true; }
+          }
+          return false;
+        }"""
+    )
+    page.wait_for_timeout(250)
+
+    page.evaluate(
+        r"""() => {
+          const labels = [...document.querySelectorAll('span,div')].filter(
+            el => (el.innerText || '').trim() === 'Video generation default'
+          );
+          if (!labels.length) return false;
+          const y0 = labels[0].getBoundingClientRect().y;
+          let best = null;
+          for (const b of document.querySelectorAll('button')) {
+            const t = (b.innerText || '').replace(/\n/g, ' ');
+            const r = b.getBoundingClientRect();
+            if (r.y < y0 || r.y > y0 + 120) continue;
+            if (/crop_16_9|\b16:9\b/.test(t)) {
+              if (!best || r.y < best.y) best = {b, y: r.y};
+            }
+          }
+          if (best) { best.b.click(); return true; }
+          return false;
+        }"""
+    )
+    page.wait_for_timeout(200)
+
+    page.evaluate(
+        r"""() => {
+          const labels = [...document.querySelectorAll('span,div')].filter(
+            el => (el.innerText || '').trim() === 'Video generation default'
+          );
+          if (!labels.length) return false;
+          const y0 = labels[0].getBoundingClientRect().y;
+          for (const b of document.querySelectorAll('button')) {
+            const t = (b.innerText || '').trim();
+            const r = b.getBoundingClientRect();
+            if (r.y < y0 + 40 || r.y > y0 + 200) continue;
+            if (t === 'x1') { b.click(); return true; }
+          }
+          return false;
+        }"""
+    )
+    page.wait_for_timeout(200)
+
+    opened = page.evaluate(
+        r"""() => {
+          const labels = [...document.querySelectorAll('span,div')].filter(
+            el => (el.innerText || '').trim() === 'Video generation default'
+          );
+          if (!labels.length) return 'no-label';
+          const y0 = labels[0].getBoundingClientRect().y;
+          let best = null;
+          for (const b of document.querySelectorAll('button')) {
+            const t = (b.innerText || '').replace(/\n/g, ' ').trim();
+            const r = b.getBoundingClientRect();
+            if (r.y < y0 || r.y > y0 + 220) continue;
+            if (/Omni|Veo|arrow_drop_down/i.test(t)) {
+              if (!best || r.y > best.y) best = {b, t, y: r.y};
+            }
+          }
+          if (!best) return 'no-dropdown';
+          best.b.click();
+          return best.t;
+        }"""
+    )
+    print(f"  video model dropdown: {opened!r}", flush=True)
+    page.wait_for_timeout(700)
+
+    wanted = [model, "Veo 3.1 - Fast", "Veo 3.1 - Lite", "Veo 3.1 - Quality", "Veo 3.1"]
+    selected = page.evaluate(
+        r"""(wanted) => {
+          for (const label of wanted) {
+            for (const b of document.querySelectorAll('[role=menuitem], button')) {
+              const t = (b.innerText || '').replace(/\n/g, ' ').trim();
+              if (t === label || t.includes(label)) { b.click(); return t; }
+            }
+          }
+          return null;
+        }""",
+        wanted,
+    )
+    if not selected:
+        raise RuntimeError(f"Could not select video model from {wanted}")
+    print(f"  video model selected: {selected}", flush=True)
+    page.wait_for_timeout(400)
+
+    saved = page.evaluate(
+        r"""() => {
+          for (const b of document.querySelectorAll('button')) {
+            if ((b.innerText || '').trim() === 'Save') { b.click(); return true; }
+          }
+          return false;
+        }"""
+    )
+    if not saved:
+        raise RuntimeError("Flow Agent settings Save button not found")
+    page.wait_for_timeout(900)
+    return selected
 
 
 def _open_prompt_settings_pill(page) -> None:
@@ -477,7 +690,7 @@ def _open_prompt_settings_pill(page) -> None:
         """() => {
           for (const b of document.querySelectorAll('button')) {
             const t = (b.innerText || '');
-            if (/Nano Banana|Video ·|Omni Flash|Veo 3|crop_16_9/.test(t)) {
+            if (/Nano Banana|Video ·|Omni Flash|Omni 1|Veo 3|crop_16_9/.test(t)) {
               const r = b.getBoundingClientRect();
               if (r.width > 40 && r.height > 16)
                 return { x: r.x + r.width / 2, y: r.y + r.height / 2, t: t.trim().slice(0, 80) };
@@ -494,26 +707,33 @@ def _open_prompt_settings_pill(page) -> None:
 
 def _select_video_tab(page) -> None:
     """Select the Video tab inside the prompt settings popover (not Image/Nano Banana)."""
+    # Sep 2026 Flow: Image/Video controls are often role=radio (not role=tab).
     tabs = page.evaluate(
-        """() => [...document.querySelectorAll('button[role=tab]')].map(b => {
+        """() => [...document.querySelectorAll(
+          'button[role=tab], button[role=radio], [role=tab], [role=radio]'
+        )].map(b => {
           const r = b.getBoundingClientRect();
           return {
-            t: (b.innerText || '').trim(),
-            sel: b.getAttribute('aria-selected'),
+            t: (b.innerText || '').trim().replace(/\\n/g, ' '),
+            sel: b.getAttribute('aria-selected') || b.getAttribute('aria-checked'),
             x: r.x + r.width / 2,
             y: r.y + r.height / 2,
+            w: r.width,
+            h: r.height,
           };
-        }).filter(b => /Image|Video/i.test(b.t))"""
+        }).filter(b => b.w > 20 && b.h > 10 && /\\bImage\\b|\\bVideo\\b/i.test(b.t))"""
     )
-    video = next((t for t in (tabs or []) if "Video" in t["t"]), None)
+    video = next((t for t in (tabs or []) if re.search(r"\bVideo\b", t["t"], re.I)), None)
     if not video:
         # Popover may already be on video-only chrome (Omni/Veo dropdown visible)
         if page.locator("button").filter(has_text="Omni Flash").count() or page.locator(
             "button"
-        ).filter(has_text="Veo 3").count():
+        ).filter(has_text="Veo 3").count() or page.locator("button").filter(
+            has_text="Video ·"
+        ).count():
             return
         raise RuntimeError("Flow Image/Video tabs not found in settings popover")
-    if video.get("sel") != "true":
+    if video.get("sel") not in {"true", "True"}:
         # JS click often fails to flip aria-selected — use mouse.
         page.mouse.click(video["x"], video["y"])
         page.wait_for_timeout(900)
@@ -522,10 +742,14 @@ def _select_video_tab(page) -> None:
 def _select_veo_from_dropdown(page, model: str) -> str:
     """Open Omni/Veo dropdown and pick the requested Veo 3.x model."""
     dd = page.locator("button").filter(has_text="arrow_drop_down")
-    # Prefer the video-model dropdown (Omni Flash / Veo 3.x)
-    model_dd = page.locator("button").filter(has_text="Omni Flash").filter(
-        has_text="arrow_drop_down"
-    )
+    # Prefer the video-model dropdown (Omni Flash / Omni 1.1 Flash / Veo 3.x)
+    model_dd = page.locator("button").filter(has_text="Omni").filter(
+        has_text="Flash"
+    ).filter(has_text="arrow_drop_down")
+    if model_dd.count() == 0:
+        model_dd = page.locator("button").filter(has_text="Omni Flash").filter(
+            has_text="arrow_drop_down"
+        )
     if model_dd.count() == 0:
         model_dd = page.locator("button").filter(has_text="Veo 3").filter(
             has_text="arrow_drop_down"
@@ -638,6 +862,19 @@ def configure_veo_settings(
     model = assert_veo3_model(model)
     dismiss_banners(page)
     _ensure_create_prompt_mode(page)
+
+    # --- Sep 2026 Agent settings drawer (flow.google.com) ---
+    try:
+        selected = _lock_veo_in_agent_settings(page, model)
+        print(f"  video model locked via Agent settings: {selected}", flush=True)
+        return
+    except Exception as e:
+        print(f"  Agent settings path failed ({e}); trying prompt pill…", flush=True)
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        page.wait_for_timeout(400)
 
     # --- New prompt-bar popover path ---
     try:
@@ -798,10 +1035,34 @@ def _prompt_attachment_count(page) -> int:
             const nearY = r.y >= er.y - 280 && r.bottom <= er.bottom + 100;
             const nearX = r.x >= er.x - 60 && r.x <= er.right + 60;
             const src = i.currentSrc || i.src || '';
-            const isMedia = /media\\.getMediaUrlRedirect|blob:|data:image/i.test(src);
+            const isMedia = /media\\.getMediaUrlRedirect|blob:|data:image|flow-content\\.google|googleusercontent/i.test(src);
             return nearY && nearX && isMedia;
           }).length;
         }"""
+    )
+
+
+def _start_frame_present(page) -> bool:
+    """True if Ingredients chip OR Frames Start preview is wired near the prompt."""
+    if _prompt_attachment_count(page) >= 1:
+        return True
+    return bool(
+        page.evaluate(
+            """() => {
+              const h = window.innerHeight || 800;
+              // Frames Start thumb often sits mid/lower composer; gallery tiles are higher.
+              const imgs = [...document.querySelectorAll('img')].filter(i => {
+                const r = i.getBoundingClientRect();
+                const src = i.currentSrc || i.src || '';
+                if (r.width < 28 || r.height < 28 || r.width > 420) return false;
+                if (r.y < 80) return false;
+                // Prefer lower-half (Start slot / chip); allow mid for taller windows.
+                if (r.y < h * 0.35) return false;
+                return /flow-content\\.google|googleusercontent|blob:|media\\.getMediaUrlRedirect/i.test(src);
+              });
+              return imgs.length > 0;
+            }"""
+        )
     )
 
 
@@ -891,7 +1152,85 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
     before = _prompt_attachment_count(page)
     print(f"  attaching start frame: {ref.name}", flush=True)
 
+    def _dump_picker(tag: str) -> None:
+        try:
+            texts = page.evaluate(
+                """() => [...document.querySelectorAll('button,[role="button"],[role="tab"]')]
+                  .map(b => (b.innerText || b.getAttribute('aria-label') || '').trim())
+                  .filter(t => t && t.length < 80)
+                  .slice(0, 60)"""
+            )
+            print(f"  picker[{tag}] buttons={texts[:40]}", flush=True)
+        except Exception as e:
+            print(f"  picker[{tag}] dump failed: {e}", flush=True)
+
+    def _find_upload_control():
+        """Find the control that opens the OS file chooser (not Add/library)."""
+        # Prefer accessible name match — Upload first (never bare Add).
+        for pattern in (
+            r"^Upload media$",
+            r"^upload\s*Upload$",
+            r"Upload media",
+            r"^Upload$",
+            r"Upload (image|file|photo|from device)",
+            r"From (device|computer)",
+        ):
+            loc = page.get_by_role("button", name=re.compile(pattern, re.I))
+            if loc.count():
+                print(f"  found upload role button name={pattern!r}", flush=True)
+                return loc.last
+        # Visible text / icon fallbacks
+        for label in ("Upload media", "Upload", "From device", "From computer"):
+            loc = page.locator(f'button:has-text("{label}")')
+            if loc.count():
+                print(f"  found upload text button {label!r}", flush=True)
+                return loc.last
+        loc = page.locator(
+            'button[aria-label*="Upload" i], button:has(i:text-is("upload")), '
+            'button:has(span:text-is("upload")), button:has-text("cloud_upload"), '
+            'button:has(i:text-is("cloud_upload"))'
+        )
+        if loc.count():
+            print("  found upload icon control", flush=True)
+            return loc.last
+        return None
+
+    def _open_media_library_if_needed() -> None:
+        """Sep 2026 Flow: + Create often opens a library; Upload lives inside it."""
+        if _find_upload_control() is not None:
+            return
+        # Click Add / create entry points that reveal Upload.
+        for pattern in (
+            r"^Add$",
+            r"Add (media|image|file|to prompt)",
+            r"^Create$",
+        ):
+            loc = page.get_by_role("button", name=re.compile(pattern, re.I))
+            if not loc.count():
+                continue
+            try:
+                print(f"  opening media library via {pattern!r}", flush=True)
+                loc.last.click(force=True, timeout=4000)
+                page.wait_for_timeout(700)
+            except Exception:
+                continue
+            if _find_upload_control() is not None:
+                return
+        # Material icon-only add buttons
+        add_icon = page.locator(
+            'button:has(i:text-is("add")), button:has(span:text-is("add")), '
+            'button:has-text("add")'
+        )
+        if add_icon.count():
+            try:
+                print("  opening media library via add icon", flush=True)
+                add_icon.last.click(force=True, timeout=4000)
+                page.wait_for_timeout(700)
+            except Exception:
+                pass
+
     _open_create_picker(page)
+    page.wait_for_timeout(500)
 
     uploads_tab = page.locator('button:has-text("Uploads")')
     if uploads_tab.count():
@@ -901,55 +1240,219 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         except Exception:
             pass
 
-    up = page.locator('button:has-text("Upload media")')
-    if up.count() == 0:
+    _open_media_library_if_needed()
+    up = _find_upload_control()
+    if up is None:
         page.keyboard.press("Escape")
         page.wait_for_timeout(400)
         _open_create_picker(page)
-        page.wait_for_timeout(600)
-        up = page.locator('button:has-text("Upload media")')
-    if up.count() == 0:
-        up = page.locator('button:has-text("Upload")')
-    if up.count() == 0:
-        raise RuntimeError("Upload media not found in Create picker")
-
-    try:
-        with page.expect_file_chooser(timeout=12_000) as fc:
-            up.last.click(force=True)
-        fc.value.set_files(str(ref))
-    except Exception:
+        page.wait_for_timeout(700)
+        uploads_tab = page.locator('button:has-text("Uploads")')
+        if uploads_tab.count():
+            try:
+                uploads_tab.first.click(timeout=3000)
+                page.wait_for_timeout(400)
+            except Exception:
+                pass
+        _open_media_library_if_needed()
+        up = _find_upload_control()
+    if up is None:
+        _dump_picker("no-upload")
         fi = page.locator('input[type="file"]')
         if fi.count() == 0:
-            raise RuntimeError("Could not upload start frame to Create picker")
+            raise RuntimeError("Upload media not found in Create picker")
+        print("  using hidden file input (no Upload button)", flush=True)
         fi.last.set_input_files(str(ref))
+    else:
+        try:
+            print("  clicking Upload for file chooser…", flush=True)
+            with page.expect_file_chooser(timeout=15_000) as fc:
+                up.click(force=True)
+            fc.value.set_files(str(ref))
+        except Exception:
+            # Upload click sometimes opens a nested panel; try again.
+            page.wait_for_timeout(600)
+            up2 = _find_upload_control()
+            try:
+                if up2 is not None:
+                    with page.expect_file_chooser(timeout=12_000) as fc:
+                        up2.click(force=True)
+                    fc.value.set_files(str(ref))
+                else:
+                    raise RuntimeError("no upload control on retry")
+            except Exception:
+                fi = page.locator('input[type="file"]')
+                if fi.count() == 0:
+                    _dump_picker("chooser-fail")
+                    raise RuntimeError("Could not upload start frame to Create picker")
+                print("  using hidden file input after Upload click", flush=True)
+                fi.last.set_input_files(str(ref))
 
     print("  uploaded — waiting for Add to Prompt…", flush=True)
-    if not _wait_add_to_prompt_enabled(page, timeout_s=90):
-        raise RuntimeError(
-            "Flow never enabled Add to Prompt after start-frame upload"
+    # Upload consent dialog (Sep 2026 Flow): Cancel / I agree — or shorter Agree
+    # May stack with cookie "Agree / No thanks" — clear until gone.
+    for _ in range(8):
+        agree = page.get_by_role(
+            "button", name=re.compile(r"^(I agree|Agree|Accept)$", re.I)
         )
+        if agree.count() == 0:
+            agree = page.locator(
+                'button:has-text("I agree"), button:has-text("Agree"), '
+                'button:has-text("Accept")'
+            )
+        if agree.count():
+            try:
+                label = (agree.last.inner_text(timeout=1000) or "Agree").strip()[:40]
+                print(f"  clicking upload consent {label!r}", flush=True)
+                agree.last.click(force=True, timeout=3000)
+                page.wait_for_timeout(900)
+                continue
+            except Exception:
+                break
+        break
+    # Give Flow more time to finish processing the still before Add to Prompt.
+    page.wait_for_timeout(2500)
+    if _prompt_attachment_count(page) > before:
+        print("  start frame auto-attached after upload", flush=True)
+        ensure_agent_session(page)
+        print(
+            f"  prompt attachment visible=True (was {before})",
+            flush=True,
+        )
+        return True
 
     # Prefer selecting the just-uploaded asset by filename stem when possible
     stem = ref.stem.lower()[:24]
     page.evaluate(
         """(stem) => {
-          for (const el of document.querySelectorAll('div,button,li,[role="option"]')) {
-            const t = (el.innerText || '').trim().toLowerCase();
+          for (const el of document.querySelectorAll('div,button,li,[role="option"],img')) {
+            const t = ((el.innerText || el.getAttribute('alt') || el.getAttribute('aria-label') || '') + '').trim().toLowerCase();
             if (stem && t.includes(stem) && t.length < 200) {
               try { el.click(); } catch (e) {}
               return true;
             }
           }
+          // Fallback: click the newest/largest media thumbnail in the picker.
+          const imgs = [...document.querySelectorAll('img')].filter(i => {
+            const r = i.getBoundingClientRect();
+            const src = i.currentSrc || i.src || '';
+            return r.width > 48 && r.height > 48 && r.y > 80 &&
+              (/flow-content\\.google|googleusercontent|blob:/i.test(src) || r.width > 120);
+          });
+          if (imgs.length) {
+            try { imgs[imgs.length - 1].click(); return true; } catch (e) {}
+          }
           return false;
         }""",
         stem,
     )
-    page.wait_for_timeout(400)
+    page.wait_for_timeout(500)
+
+    # Sep 2026 HOS: Ingredients "Add to Prompt" often never enables.
+    # Prefer Frames Start slot FIRST (proven on Mini), then Animate, then chip.
+    print("  trying Frames Start slot first…", flush=True)
+    try:
+        configure_veo_settings(
+            page,
+            model=os.environ.get("ORBIT_FLOW_VEO_MODEL", DEFAULT_MODEL),
+            frames_mode=True,
+            ingredients_mode=False,
+        )
+    except Exception as e:
+        print(f"  frames settings warn: {e}", flush=True)
+    start_btn = page.get_by_role("button", name=re.compile(r"^Start$", re.I))
+    if start_btn.count() == 0:
+        start_btn = page.locator('button:has-text("Start")')
+    if start_btn.count():
+        try:
+            start_btn.last.click(force=True, timeout=4000)
+            page.wait_for_timeout(700)
+        except Exception:
+            pass
+    clicked = page.evaluate(
+        """() => {
+          const imgs = [...document.querySelectorAll('img')].filter(i => {
+            const r = i.getBoundingClientRect();
+            const src = i.currentSrc || i.src || '';
+            return r.width > 80 && r.height > 60 &&
+              /flow-content\\.google|googleusercontent|blob:/i.test(src);
+          });
+          if (!imgs.length) return false;
+          try { imgs[imgs.length - 1].click(); return true; } catch (e) { return false; }
+        }"""
+    )
+    print(f"  frames tile click={clicked}", flush=True)
+    page.wait_for_timeout(800)
+    for pattern in (
+        r"Add to Prompt",
+        r"Use as start",
+        r"Set as start",
+        r"Use selected",
+        r"^Use$",
+        r"^Add$",
+    ):
+        loc = page.get_by_role("button", name=re.compile(pattern, re.I))
+        if loc.count():
+            try:
+                # Only click enabled Add to Prompt
+                if "Add to Prompt" in pattern:
+                    st = page.evaluate(
+                        """() => {
+                          const btns = [...document.querySelectorAll('button')].filter(b =>
+                            /Add to Prompt/i.test((b.innerText || '').trim())
+                          );
+                          if (!btns.length) return {found:false, disabled:true};
+                          const b = btns[btns.length-1];
+                          return {
+                            found:true,
+                            disabled: !!(b.disabled || b.getAttribute('aria-disabled')==='true')
+                          };
+                        }"""
+                    )
+                    if not st.get("found") or st.get("disabled"):
+                        continue
+                loc.last.click(force=True, timeout=3000)
+                page.wait_for_timeout(1200)
+                print(f"  clicked frames CTA {pattern!r}", flush=True)
+                break
+            except Exception:
+                continue
+    if _start_frame_present(page) or _prompt_attachment_count(page) > before:
+        ensure_agent_session(page)
+        print("  start frame wired via Frames Start", flush=True)
+        return True
+
+    # Sep 2026: uploads can sit in "processing" for >90s before Add enables.
+    enabled = _wait_add_to_prompt_enabled(page, timeout_s=30)
     add = page.locator('button:has-text("Add to Prompt")')
     if add.count() == 0:
-        raise RuntimeError("Add to Prompt button missing")
-    add.last.click(force=True)
-    page.wait_for_timeout(1500)
+        add = page.get_by_role(
+            "button",
+            name=re.compile(
+                r"Add to Prompt|Add to prompt|Insert|Use selected|Use as start|"
+                r"Add to (scene|project)|Attach",
+                re.I,
+            ),
+        )
+    if add.count() and enabled:
+        try:
+            add.last.click(force=True)
+            page.wait_for_timeout(1500)
+            if _prompt_attachment_count(page) > before or _start_frame_present(page):
+                ensure_agent_session(page)
+                print("  prompt attachment via Add to Prompt", flush=True)
+                return True
+        except Exception:
+            pass
+
+    print("  trying gallery right-click Animate…", flush=True)
+    if try_context_animate(page):
+        page.wait_for_timeout(1500)
+        if _start_frame_present(page) or _prompt_attachment_count(page) > before:
+            ensure_agent_session(page)
+            print("  start frame wired via context Animate", flush=True)
+            return True
+        print("  Animate clicked but start frame not detected", flush=True)
 
     for _ in range(2):
         body = ""
@@ -964,15 +1467,12 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
             break
 
     ensure_agent_session(page)
-    attached = _prompt_attachment_count(page) > before
-    if not attached:
-        page.wait_for_timeout(2000)
-        attached = _prompt_attachment_count(page) > before
-
+    attached = _prompt_attachment_count(page) > before or _start_frame_present(page)
     print(f"  prompt attachment visible={attached} (was {before})", flush=True)
     if not attached:
+        _dump_picker("post-upload")
         raise RuntimeError(
-            "Start frame did not attach to the Flow prompt — aborting."
+            "Flow never enabled Add to Prompt after start-frame upload"
         )
     return True
 
@@ -1195,43 +1695,82 @@ _PLACEHOLDER_RE = re.compile(
 
 
 def _editor_prompt_text(page) -> str:
-    """Return real editor text. Flow's placeholder must not count as a prompt."""
+    """Return real editor text. Flow placeholder text must not count as a prompt."""
     raw = page.evaluate(
         """() => {
-          const ed = document.querySelector('[data-slate-editor="true"]');
-          return (ed && (ed.innerText || '').trim()) || '';
+          const cands = [];
+          const push = (el) => {
+            if (!el) return;
+            const r = el.getBoundingClientRect();
+            if (r.width < 80 || r.height < 16) return;
+            if (r.bottom < 0 || r.top > (window.innerHeight || 900)) return;
+            cands.push({el, score: r.width * Math.min(Math.max(r.height, 18), 120) + (r.y > 200 ? 5000 : 0) + (r.y > 600 ? 8000 : 0)});
+          };
+          push(document.querySelector('[data-slate-editor="true"]'));
+          for (const el of document.querySelectorAll(
+            'textarea, [contenteditable="true"], [role="textbox"]'
+          )) push(el);
+          cands.sort((a, b) => b.score - a.score);
+          const ed = cands.length ? cands[0].el : null;
+          if (!ed) return '';
+          if (ed.tagName === 'TEXTAREA' || ed.tagName === 'INPUT') {
+            return (ed.value || '').trim();
+          }
+          return (ed.innerText || '').trim();
         }"""
     ) or ""
+    low = raw.strip().lower()
+    if not low:
+        return ""
+    if low.startswith("what do you want") or low.startswith("what would you like"):
+        return ""
     if _PLACEHOLDER_RE.match(raw.strip()):
         return ""
     return raw.strip()
 
 
 def _clear_editor(page) -> None:
-    """Wipe placeholder + leftover Slate text. Do not click the image chip."""
+    """Wipe placeholder + leftover editor text. Do not click the image chip."""
+    page.evaluate(
+        """() => {
+          const cands = [];
+          const push = (el) => {
+            if (!el) return;
+            const r = el.getBoundingClientRect();
+            if (r.width < 80 || r.height < 16) return;
+            cands.push({el, score: r.width * Math.min(Math.max(r.height, 18), 120) + (r.y > 200 ? 5000 : 0) + (r.y > 600 ? 8000 : 0)});
+          };
+          push(document.querySelector('[data-slate-editor="true"]'));
+          for (const el of document.querySelectorAll(
+            'textarea, [contenteditable="true"], [role="textbox"]'
+          )) push(el);
+          cands.sort((a, b) => b.score - a.score);
+          const ed = cands.length ? cands[0].el : null;
+          if (!ed) return;
+          ed.focus();
+          if (ed.tagName === 'TEXTAREA' || ed.tagName === 'INPUT') {
+            ed.value = '';
+            ed.dispatchEvent(new Event('input', {bubbles: true}));
+            return;
+          }
+          const sel = window.getSelection();
+          if (!sel) return;
+          const range = document.createRange();
+          range.selectNodeContents(ed);
+          sel.removeAllRanges();
+          sel.addRange(range);
+        }"""
+    )
     for combo in (("Meta+A", "Backspace"), ("Control+A", "Backspace")):
-        page.evaluate(
-            """() => {
-              const ed = document.querySelector('[data-slate-editor="true"]');
-              if (!ed) return;
-              ed.focus();
-              const sel = window.getSelection();
-              if (!sel) return;
-              const range = document.createRange();
-              range.selectNodeContents(ed);
-              sel.removeAllRanges();
-              sel.addRange(range);
-            }"""
-        )
         page.keyboard.press(combo[0])
         page.keyboard.press(combo[1])
         page.wait_for_timeout(80)
-    # Placeholder-only is fine; leftover "What do you want…" + prompt is not.
-    leftover = _editor_prompt_text(page)
-    if leftover.lower().startswith("what do you want"):
+    leftover = _editor_prompt_text(page).lower()
+    if leftover.startswith("what do you want") or leftover.startswith("what would you like"):
         page.keyboard.press("Meta+A")
         page.keyboard.press("Backspace")
         page.wait_for_timeout(80)
+
 
 
 def set_prompt(page, prompt: str) -> None:
@@ -1363,6 +1902,11 @@ def _dismiss_asset_search_modal(page) -> None:
 def submit_create(page) -> None:
     """Click the prompt-bar send (arrow_forward). Never click add_2 (asset picker)."""
     _dismiss_asset_search_modal(page)
+    # Hard gate: Agent chip ON → chat, not Veo. Always force Create mode first.
+    try:
+        _ensure_create_prompt_mode(page)
+    except Exception as e:
+        print(f"  submit_create create-mode warn: {e}", flush=True)
 
     deadline = time.time() + 45
     while time.time() < deadline:
@@ -1471,11 +2015,10 @@ def dismiss_soft_prompts(page) -> None:
 
 def confirm_generation_spend(page, *, timeout_s: float = 12.0) -> bool:
     """Click the post-Create Ultra credit / model confirmation if it appears."""
+    settle_after_nav(page, wait_ms=800)
     deadline = time.time() + timeout_s
     clicked = False
-    while time.time() < deadline:
-        hit = page.evaluate(
-            """() => {
+    script = """() => {
               const body = (document.body && document.body.innerText) || '';
               const needs =
                 /going to generate|Veo 3\\.1|credits|high demand|in the queue/i.test(body);
@@ -1509,7 +2052,15 @@ def confirm_generation_spend(page, *, timeout_s: float = 12.0) -> bool:
               }
               return null;
             }"""
-        )
+    while time.time() < deadline:
+        try:
+            hit = safe_evaluate(page, script, retries=3, pause_ms=900)
+        except Exception as e:
+            if is_transient_ui_error(e):
+                print(f"  confirm spend skipped race: {e}", flush=True)
+                settle_after_nav(page, wait_ms=1000)
+                continue
+            raise
         if hit:
             print(f"  confirmed generation spend via {hit!r}", flush=True)
             clicked = True
@@ -1568,6 +2119,351 @@ def collect_media_ids(page) -> set[str]:
     return set(MEDIA_REDIRECT_RE.findall(html))
 
 
+def collect_gallery_asb_srcs(page) -> list[str]:
+    """Flow gallery thumbs live at flow.google.com/asb/… (img and/or video).
+
+    Sep 2026 Create Videos panel often mounts completed clips as ``<video
+    src="/asb/…">`` rather than ``<img>``. Collect both.
+    """
+    try:
+        return page.evaluate(
+            """() => {
+              const out = [];
+              const push = (s) => {
+                if (s && /\\/asb\\//i.test(s) && !out.includes(s)) out.push(s);
+              };
+              for (const i of document.querySelectorAll('img')) {
+                push(i.currentSrc || i.src || '');
+              }
+              for (const v of document.querySelectorAll('video')) {
+                push(v.currentSrc || v.src || '');
+                push(v.poster || '');
+              }
+              return out;
+            }"""
+        ) or []
+    except Exception:
+        return []
+
+
+def harvest_agent_gallery_mp4(
+    page,
+    dest: Path,
+    captured_videos: list[bytes],
+    *,
+    before_asb: set[str] | None = None,
+) -> str | None:
+    """Open a gallery card and save its mp4 (Download, else googlevideo / asb).
+
+    Sep 2026 Flow Create UI often finishes at 100% with zero getMediaUrlRedirect
+    ids. Completed clips sit under All media / Videos as /asb/ video thumbs.
+    Opening a card shows detail chrome with Download; playing may fire
+    flow-content.google/video or googlevideo.
+    """
+    before_asb = before_asb or set()
+    try:
+        page.evaluate(
+            """() => {
+              for (const n of document.querySelectorAll('button,a,[role="button"],[role="tab"]')) {
+                const t = ((n.innerText || '') + ' ' + (n.getAttribute('aria-label') || '')).trim();
+                if (/^Videos$/i.test(t)) { n.click(); return 'Videos'; }
+              }
+              for (const n of document.querySelectorAll('button,a,[role="button"],[role="tab"]')) {
+                const t = ((n.innerText || '') + ' ' + (n.getAttribute('aria-label') || '')).trim();
+                if (/^All media$/i.test(t) || t === 'All media') { n.click(); return 'All media'; }
+              }
+              return null;
+            }"""
+        )
+        page.wait_for_timeout(900)
+    except Exception:
+        pass
+
+    thumbs = collect_gallery_asb_srcs(page)
+    new_thumbs = [s for s in thumbs if s not in before_asb] or list(thumbs)
+    if not new_thumbs:
+        # Fallback: any on-page <video> with measurable box
+        try:
+            fallback = page.evaluate(
+                """() => [...document.querySelectorAll('video')]
+                  .map(v => {
+                    const r = v.getBoundingClientRect();
+                    return {
+                      src: v.currentSrc || v.src || '',
+                      w: r.width, h: r.height, x: r.x, y: r.y
+                    };
+                  })
+                  .filter(v => v.w > 80 && v.h > 60)
+                  .map(v => v.src)
+                  .filter(Boolean)"""
+            ) or []
+            new_thumbs = [s for s in fallback if s not in before_asb] or list(fallback)
+        except Exception:
+            pass
+    if not new_thumbs:
+        return None
+    print(f"  gallery harvest thumbs={len(thumbs)} new={len(new_thumbs)}", flush=True)
+    target_src = new_thumbs[-1]
+
+    def _scroll_target() -> dict | None:
+        page.evaluate(
+            """(src) => {
+              const els = [...document.querySelectorAll('img,video')];
+              const el = els.find(i => (i.currentSrc || i.src || '') === src)
+                || els.find(i => (i.currentSrc || i.src || '').includes('/asb/'));
+              if (el) el.scrollIntoView({block:'center', inline:'nearest'});
+            }""",
+            target_src,
+        )
+        page.wait_for_timeout(450)
+        box = page.evaluate(
+            """(src) => {
+              const els = [...document.querySelectorAll('img,video')];
+              const el = els.find(i => (i.currentSrc || i.src || '') === src)
+                || els.find(i => (i.currentSrc || i.src || '').includes('/asb/'));
+              if (!el) return null;
+              const r = el.getBoundingClientRect();
+              return {x:r.x, y:r.y, w:r.width, h:r.height};
+            }""",
+            target_src,
+        )
+        if not box or box.get("w", 0) <= 40:
+            return None
+        vp = page.viewport_size or {"width": 1440, "height": 900}
+        cx = box["x"] + box["w"] / 2
+        cy = box["y"] + box["h"] / 2
+        if not (0 <= cx <= vp["width"] and 0 <= cy <= vp["height"]):
+            print(f"  gallery thumb still offscreen cx={cx:.0f} cy={cy:.0f}", flush=True)
+            return None
+        return {"box": box, "cx": cx, "cy": cy}
+
+    def _save(raw: bytes, via: str) -> str | None:
+        if len(raw) < 150_000 or b"ftyp" not in raw[:64]:
+            return None
+        captured_videos.append(raw)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(raw)
+        print(f"  gallery harvest saved bytes={len(raw)} via={via}", flush=True)
+        return f"{via}:{len(raw)}"
+
+    def _click_download() -> bytes | None:
+        # Clear leftover menu/backdrop from prior attempts (Sep 2026 Flow).
+        try:
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(350)
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(250)
+        except Exception:
+            pass
+        candidates = [
+            page.get_by_role("button", name=re.compile(r"download", re.I)),
+            page.locator('button[aria-label*="Download" i], [aria-label*="Download" i]'),
+            page.locator('button:has-text("download"), button:has-text("Download")'),
+            page.locator('text=/^download$/i'),
+        ]
+        # Capture CDN mp4 if Download navigates away / closes the viewer.
+        net_hits: list[bytes] = []
+
+        def _on_resp(resp) -> None:
+            try:
+                u = (resp.url or "").lower()
+                ct = (resp.headers.get("content-type") or "").lower()
+                if resp.status != 200:
+                    return
+                if not (
+                    "flow-content.google/video" in u
+                    or "googlevideo.com" in u
+                    or "videoplayback" in u
+                    or ("video" in ct and "mp4" in ct)
+                ):
+                    return
+                body = resp.body()
+                if len(body) > 150_000 and b"ftyp" in body[:64]:
+                    net_hits.append(body)
+            except Exception:
+                pass
+
+        def _menu_download_item():
+            """Flow 'Download media' opens a mat-menu — pick the video/original row."""
+            return page.evaluate(
+                """() => {
+                  const items = [...document.querySelectorAll(
+                    '[role="menuitem"], button, a, mat-menu-item, .mat-mdc-menu-item'
+                  )];
+                  const scored = [];
+                  for (const el of items) {
+                    const t = ((el.innerText || '') + ' ' + (el.getAttribute('aria-label') || ''))
+                      .trim().replace(/\\n/g, ' ');
+                    if (!t || t.length > 80) continue;
+                    const r = el.getBoundingClientRect();
+                    if (r.width < 20 || r.height < 12) continue;
+                    let score = 0;
+                    if (/\\bmp4\\b/i.test(t)) score += 5;
+                    if (/original|full.?res|video|1080|720|download/i.test(t)) score += 3;
+                    if (/image|jpeg|png|gif|still/i.test(t)) score -= 4;
+                    if (score > 0) scored.push({score, t: t.slice(0,60), x:r.x+r.width/2, y:r.y+r.height/2});
+                  }
+                  scored.sort((a,b) => b.score - a.score);
+                  if (!scored.length) return null;
+                  return scored[0];
+                }"""
+            )
+
+        page.on("response", _on_resp)
+        try:
+            for loc in candidates:
+                try:
+                    if loc.count() < 1:
+                        continue
+                    target = loc.first
+                    if not target.is_visible():
+                        continue
+                    # Open download menu (often does NOT start a download itself).
+                    try:
+                        target.click(force=True, timeout=5_000)
+                    except Exception:
+                        target.click(timeout=5_000)
+                    page.wait_for_timeout(500)
+                    item = _menu_download_item()
+                    if item:
+                        print(f"  gallery download menu → {item.get('t')!r}", flush=True)
+                        with page.expect_download(timeout=30_000) as di:
+                            page.mouse.click(item["x"], item["y"])
+                        download = di.value
+                    else:
+                        # Legacy: button itself triggers download
+                        with page.expect_download(timeout=25_000) as di:
+                            target.click(force=True, timeout=5_000)
+                        download = di.value
+                    tmp = dest.with_suffix(".download.tmp")
+                    raw = None
+                    # Prefer path() first — save_as often races viewer close.
+                    try:
+                        src = download.path()
+                        if src:
+                            raw = Path(src).read_bytes()
+                    except Exception as e:
+                        print(f"  gallery Download path warn: {e}", flush=True)
+                    if raw is None:
+                        try:
+                            download.save_as(str(tmp))
+                            raw = tmp.read_bytes()
+                            tmp.unlink(missing_ok=True)
+                        except Exception as e:
+                            print(f"  gallery Download save_as warn: {e}", flush=True)
+                            try:
+                                sug = download.suggested_filename
+                                if sug:
+                                    cand = Path(sug)
+                                    if cand.exists():
+                                        raw = cand.read_bytes()
+                            except Exception:
+                                pass
+                    if raw and len(raw) > 150_000:
+                        return raw
+                    if net_hits:
+                        return net_hits[-1]
+                except Exception as e:
+                    print(f"  gallery Download miss: {e}", flush=True)
+                    try:
+                        page.keyboard.press("Escape")
+                        page.wait_for_timeout(300)
+                    except Exception:
+                        pass
+                    if net_hits:
+                        return net_hits[-1]
+        finally:
+            try:
+                page.remove_listener("response", _on_resp)
+            except Exception:
+                pass
+        return net_hits[-1] if net_hits else None
+
+    def _capture_network(play_click) -> bytes | None:
+        def _is_vid(resp) -> bool:
+            u = (resp.url or "").lower()
+            ct = (resp.headers.get("content-type") or "").lower()
+            return resp.status == 200 and (
+                "googlevideo.com" in u
+                or "videoplayback" in u
+                or "flow-content.google/video" in u
+                or ("video" in ct and "mp4" in ct)
+                or u.endswith(".mp4")
+            )
+
+        try:
+            with page.expect_response(_is_vid, timeout=45_000) as ri:
+                play_click()
+            body = ri.value.body()
+            if len(body) > 150_000 and b"ftyp" in body[:64]:
+                return body
+        except Exception as e:
+            print(f"  gallery expect_response play err: {e}", flush=True)
+        return None
+
+    geo = _scroll_target()
+    if not geo:
+        return None
+    try:
+        page.mouse.click(geo["cx"], geo["cy"])
+        page.wait_for_timeout(1400)
+    except Exception as e:
+        print(f"  gallery open click err: {e}", flush=True)
+
+    # Prefer explicit Download (reliable on detail chrome).
+    raw = _click_download()
+    if raw:
+        got = _save(raw, "gallery-download")
+        if got:
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            return got
+
+    def _play():
+        try:
+            play = page.get_by_role("button", name=re.compile(r"play", re.I))
+            if play.count() > 0 and play.first.is_visible():
+                play.first.click(timeout=3_000)
+                return
+        except Exception:
+            pass
+        page.mouse.click(geo["cx"], geo["cy"])
+
+    raw = _capture_network(_play)
+    if raw is None:
+        print("  gallery harvest: retry play for network mp4", flush=True)
+        page.wait_for_timeout(800)
+        raw = _capture_network(_play)
+    try:
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(400)
+    except Exception:
+        pass
+    if raw is not None:
+        return _save(raw, "gallery-network")
+    return None
+
+
+def is_flow_video_url(url: str) -> bool:
+    """Reject non-Flow CDNs (Threads/Instagram pollution in shared Chrome profiles)."""
+    u = (url or "").lower()
+    if not u:
+        return False
+    bad = (
+        "threads.com",
+        "instagram.com",
+        "cdninstagram.com",
+        "facebook.com",
+        "fbcdn.net",
+        "scontent.",
+    )
+    if any(b in u for b in bad):
+        return False
+    return True
+
+
 def absolute_media_url(name_or_url: str) -> str:
     if name_or_url.startswith("http"):
         return name_or_url
@@ -1605,13 +2501,21 @@ def wait_and_download(
     timeout_s: int = 900,
     min_elapsed_s: float = 0,
 ) -> str:
-    """Wait for a new Flow media video and download it. Returns media id/url."""
+    """Wait for a new Flow media video and download it. Returns media id/url.
+
+    Sep 2026 Create UI often finishes with zero getMediaUrlRedirect ids. Once
+    generation is clearly running (or hits 100%), return ``gallery-pending:N``
+    so the caller can close Chromium and harvest in a fresh browser.
+    """
     t0 = time.time()
     last_status = ""
     asked_status = False
     failed_since: float | None = None
     retry_clicks = 0
     seen_generating = False
+    before_asb = set(collect_gallery_asb_srcs(page))
+    gallery_tries = 0
+    last_gallery_try = 0.0
     # Do NOT permanently blacklist early media ids — Flow often reuses the same
     # getMediaUrlRedirect name from a placeholder/upload into the finished mp4.
     early_gate_s = max(5.0, float(min_elapsed_s or 0) * 0.35)
@@ -1696,6 +2600,42 @@ def wait_and_download(
             pct is not None
         ):
             seen_generating = True
+
+        # Create UI: long in-process waits crash Chrome / never emit media ids.
+        # Once Create is clearly running, hand off to fresh-browser gallery harvest.
+        pct_n = int(pct.group(1)) if pct else None
+        if seen_generating and elapsed >= max(12.0, float(min_elapsed_s or 0) * 0.4):
+            thumbs_now: list[str] = []
+            try:
+                thumbs_now = collect_gallery_asb_srcs(page)
+            except Exception as e:
+                print(f"  early handoff thumb probe failed: {e}", flush=True)
+            label = status or (pct.group(0) if pct else "?")
+            # Prefer waiting until ~100% / thumbs appear, but do not spin forever.
+            gen_done = (
+                (pct_n is not None and pct_n >= 95)
+                or (status == "" and elapsed >= max(40.0, float(min_elapsed_s or 0)))
+                or elapsed >= 55.0
+                or bool(thumbs_now and (set(thumbs_now) - before_asb))
+            )
+            if gen_done or (pct_n is not None and pct_n >= 15 and elapsed >= 18.0):
+                new_thumbs = [s for s in thumbs_now if s not in before_asb]
+                print(
+                    f"  gen running ({label} @ {elapsed:.0f}s) — "
+                    f"defer to fresh-browser harvest "
+                    f"(thumbs={len(thumbs_now)} new={len(new_thumbs)})",
+                    flush=True,
+                )
+                return f"gallery-pending:{len(new_thumbs) or len(thumbs_now)}"
+            if gallery_tries < 6 and (elapsed - last_gallery_try) >= 8.0:
+                gallery_tries += 1
+                last_gallery_try = elapsed
+                print(
+                    f"  waiting for gallery thumbs (#{gallery_tries}) "
+                    f"pct={pct_n} thumbs={len(thumbs_now)}",
+                    flush=True,
+                )
+
         # Also harvest <video src> / blob URLs that never appear as getMediaUrlRedirect
         if elapsed >= max(20.0, float(min_elapsed_s or 0)):
             vsrc = page.evaluate(
@@ -1735,6 +2675,13 @@ def wait_and_download(
                             )
                             return vsrc
                     else:
+                        if not is_flow_video_url(vsrc):
+                            if int(elapsed) % 30 < 5:
+                                print(
+                                    f"  skip non-Flow video src {vsrc[:80]}",
+                                    flush=True,
+                                )
+                            continue
                         head = page.request.get(vsrc, timeout=60_000)
                         body_b = head.body()
                         if len(body_b) > 150_000 and (
@@ -1758,6 +2705,11 @@ def wait_and_download(
         # Flow often flashes "failed" while a usable mp4 is still arriving.
         # Soft-retry the UI; do not abort the whole wait on that banner alone.
         # But do not burn the full timeout once retries are exhausted.
+        body_low = (page.inner_text("body") or "").lower()
+        if "generation quota for today" in body_low or "reached your generation quota" in body_low:
+            raise RuntimeError(
+                "Flow daily generation quota reached — stop minting (do not harvest foreign CDNs)"
+            )
         if status == "failed":
             if failed_since is None:
                 failed_since = time.time()
@@ -1888,6 +2840,16 @@ def _generate_clip_once(
         dismiss_banners(page)
         url = ensure_project(page)
 
+    # Pin the Flow project URL immediately — page.url can later drift to
+    # Facebook/etc when the shared Playwright profile has polluted tabs.
+    if "flow.google.com" in (url or "") and "/project/" in (url or ""):
+        page._orbit_flow_project_url = (url or "").split("?")[0].rstrip("/")
+        print(f"  pinned project_url={page._orbit_flow_project_url}", flush=True)
+
+    print(f"  flow: {url}", flush=True)
+    if not looks_logged_in(page):
+        settle_after_nav(page, wait_ms=1500)
+        dismiss_banners(page)
     if not looks_logged_in(page):
         raise RuntimeError(
             "Not logged into Google Flow.\n"
@@ -1895,16 +2857,17 @@ def _generate_clip_once(
             "  python3 04_Audio/tools/orbit_flow_veo_ui.py --login"
         )
 
-    print(f"  flow: {url}", flush=True)
     model = assert_veo3_model(model)
     ensure_agent_session(page)
     before = collect_media_ids(page)
-    # Start-frame / Orbit I2V: Ingredients mode (prompt chip), not Frames slots.
+    # HOS start-frame I2V: prefer Frames Start/End slots (Sep 2026).
+    # Ingredients chip path is flaky (Add to Prompt never enables).
+    use_frames = start_frame is not None
     configure_veo_settings(
         page,
         model=model,
-        frames_mode=False,
-        ingredients_mode=(start_frame is not None) or (not scenery_only),
+        frames_mode=use_frames,
+        ingredients_mode=(not use_frames) and ((start_frame is not None) or (not scenery_only)),
     )
     print("  post-settings…", flush=True)
     settle_after_nav(page, wait_ms=600)
@@ -1914,26 +2877,43 @@ def _generate_clip_once(
         ensure_agent_session(page)
         print("  attaching start frame…", flush=True)
         attached = attach_image_to_prompt(page, ref)
-        # HOS-proven path (2026-08-26): right-click still → Animate, then prompt.
-        # Without this, Create can accept the JPEG chip but never start Veo.
-        if try_context_animate(page):
-            configure_veo_settings(
-                page,
-                model=model,
-                frames_mode=False,
-                ingredients_mode=True,
-            )
+        # Frames Start attach is trusted. Do NOT right-click Animate afterward —
+        # it often wipes the Start slot / closes the page (Sep 2026).
+        if not attached and not _start_frame_present(page):
+            if try_context_animate(page):
+                configure_veo_settings(
+                    page,
+                    model=model,
+                    frames_mode=True,
+                    ingredients_mode=False,
+                )
+                attached = _start_frame_present(page)
         print("  setting start-frame I2V prompt…", flush=True)
         set_prompt(page, flow_prompt(prompt, start_frame_i2v=True))
-        if _prompt_attachment_count(page) < 1:
-            print("  chip missing after prompt paste — re-attaching", flush=True)
+        present = _start_frame_present(page)
+        if not present and not attached:
+            print("  start frame missing after prompt paste — re-attaching", flush=True)
             attached = attach_image_to_prompt(page, ref)
-        if _prompt_attachment_count(page) < 1:
+            present = _start_frame_present(page)
+        if not present and not attached:
             raise RuntimeError("Start-frame prompt chip missing after attach — aborting")
+        if not present and attached:
+            print(
+                "  WARN: start-frame detector unclear after prompt; "
+                "trusting prior Frames attach and submitting Create",
+                flush=True,
+            )
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (start-frame I2V)", flush=True)
-        confirm_generation_spend(page)
+        settle_after_nav(page, wait_ms=1200)
+        try:
+            confirm_generation_spend(page)
+        except Exception as e:
+            if not is_transient_ui_error(e):
+                raise
+            print(f"  confirm spend race after Create (ok): {e}", flush=True)
+            settle_after_nav(page, wait_ms=1500)
     elif scenery_only:
         # Keep agent session healthy, but do NOT attach Orbit identity chip.
         ensure_agent_session(page)
@@ -1948,7 +2928,14 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (scenery-only, no Orbit ref)", flush=True)
-        confirm_generation_spend(page)
+        settle_after_nav(page, wait_ms=1200)
+        try:
+            confirm_generation_spend(page)
+        except Exception as e:
+            if not is_transient_ui_error(e):
+                raise
+            print(f"  confirm spend race after Create (ok): {e}", flush=True)
+            settle_after_nav(page, wait_ms=1500)
     else:
         print("  ensuring Orbit agent instruction…", flush=True)
         ensure_orbit_agent_instruction(page)
@@ -1966,10 +2953,48 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (identity-locked, Orbit ref attached)", flush=True)
-        confirm_generation_spend(page)
+        settle_after_nav(page, wait_ms=1200)
+        try:
+            confirm_generation_spend(page)
+        except Exception as e:
+            if not is_transient_ui_error(e):
+                raise
+            print(f"  confirm spend race after Create (ok): {e}", flush=True)
+            settle_after_nav(page, wait_ms=1500)
     media_id = wait_and_download(
         page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
     )
+    proj_url = getattr(page, "_orbit_flow_project_url", None) or ""
+    if "flow.google.com" not in proj_url or "/project/" not in proj_url:
+        # Fall back carefully — never harvest a non-Flow URL from a polluted profile.
+        cur = (page.url or "").split("?")[0].rstrip("/")
+        if "flow.google.com" in cur and "/project/" in cur:
+            proj_url = cur
+            page._orbit_flow_project_url = cur
+        else:
+            raise RuntimeError(
+                f"Lost Flow project URL before harvest (page.url={page.url!r}). "
+                "Refuse non-Flow harvest targets."
+            )
+    if isinstance(media_id, str) and media_id.startswith("gallery-pending:"):
+        # Caller closes Chromium, settles, then fresh-browser harvests.
+        print(f"  {media_id} — caller must fresh-browser harvest", flush=True)
+        return {
+            "seconds": round(time.time() - t0, 1),
+            "bytes": 0,
+            "model": model,
+            "engine": "flow-ui-veo",
+            "orbit_ref": str(ref) if ref and start_frame is None and not scenery_only else None,
+            "start_frame": str(start_frame) if start_frame else None,
+            "orbit_attached": attached,
+            "identity_lock": (not scenery_only) and start_frame is None,
+            "scenery_only": scenery_only,
+            "media_id": media_id,
+            "url": proj_url,
+            "context_closed": False,
+            "needs_gallery_harvest": True,
+            "project_url": proj_url,
+        }
     if not veo.already_done(dest):
         raise RuntimeError(
             f"download too small: {dest} ({dest.stat().st_size if dest.exists() else 0})"
@@ -1986,7 +3011,7 @@ def _generate_clip_once(
         "identity_lock": (not scenery_only) and start_frame is None,
         "scenery_only": scenery_only,
         "media_id": media_id,
-        "url": page.url,
+        "url": proj_url,
     }
 
 
@@ -2021,6 +3046,15 @@ def generate_clip(
             )
         except Exception as e:
             last = e
+            # Allow one recover when login probe races cookie Agree / project hop.
+            if "not logged into google flow" in str(e).lower() and attempt < attempts:
+                print(
+                    f"  generate_clip soft-retry {attempt}/{attempts}: {e}",
+                    flush=True,
+                )
+                use_reuse = False
+                recover_flow_home(page)
+                continue
             if "not logged into google flow" in str(e).lower():
                 raise
             if attempt >= attempts or not is_transient_ui_error(e):

@@ -1,0 +1,32 @@
+{
+  "plate": "06_predict_before_found",
+  "try": "1_v01",
+  "which": "empty_slot_gains_sheen",
+  "start_n": 2,
+  "max_starts": 2,
+  "cycle": "v01_c7_05b_06",
+  "project_url": "https://flow.google.com/project/1299e2ff-fd2a-4439-84b8-0d68edb46d97",
+  "info": {
+    "seconds": 53.6,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/1299e2ff-fd2a-4439-84b8-0d68edb46d97",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/1299e2ff-fd2a-4439-84b8-0d68edb46d97"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T19:14:42",
+  "paint": "banned",
+  "assemble": false,
+  "note": "empty wall slot gains silver sheen; no card drop; prediction before found"
+}

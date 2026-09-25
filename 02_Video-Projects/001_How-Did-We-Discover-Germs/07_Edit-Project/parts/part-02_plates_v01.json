@@ -45,7 +45,8 @@
     {
       "id": "08_ward_vs_lens",
       "explorer": false,
-      "prompt": "Premium 3D cartoon soft split: left warm Victorian ward corridor (no germ swarm), right glowing microscope light. Gentle parallax. Silent. Period only — no modern hospital. No cameras."
+      "start_still": "08_ward_vs_lens_v02.jpg",
+      "prompt": "Premium 3D cartoon Victorian hospital ward. The viewpoint travels continuously down the central aisle between wooden beds. Nurses in white aprons walk and tend patients — bodies move, they are not frozen statues. Sunbeams and dust motes drift. A physical brass microscope sits on a wooden trolley in the foreground as a real 3D object with warm lens glow. Period 1860s only. Continuous motion the whole clip — never freeze. FORBIDDEN: 2D neon germ stickers, HUD circles, graphic overlays, Ken Burns still-zoom, Explorer child, Orbit robot, modern hospital, photographic cameras, readable text. Silent."
     },
     {
       "id": "09_faceless_swarm_detail",

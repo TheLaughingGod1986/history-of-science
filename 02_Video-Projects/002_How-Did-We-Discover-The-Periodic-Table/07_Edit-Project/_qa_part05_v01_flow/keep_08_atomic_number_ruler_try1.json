@@ -1,0 +1,13 @@
+{
+  "plate": "08_atomic_number_ruler",
+  "try": "1",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/08_atomic_number_ruler_v01_try1.mp4",
+  "sha256": "5b63e784aab4c828eb373c26f6bb81e360ca868b36b81d987c48639e397e54f5",
+  "bytes": 2585941,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/5b6f37ea-0f1f-4dda-92b3-c5d9ef1865e8",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "Pale white-blue barcode/X-ray light sweeps neighbouring cream cards on honey wood. Not fire, not flaming letters, not a HUD paragraph wall."
+}

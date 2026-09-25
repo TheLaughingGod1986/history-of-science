@@ -1,0 +1,12 @@
+plate: 06_explorer_leaves_gap try3
+verdict: KEEP
+flask_glow_invent: CLEAR
+lamp_invent: CLEAR
+ots_locked: PASS
+sha256: df9bb44fb123e1a737976517be0dc809470f1828f1dba0dc8f1178f59721978c
+start_sha256: d6aebb4e2ead02dca9aee2a59c1bfb17ff8e4d5eb3a590ae3d3d1c2a4695f5d0
+icloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_06_explorer_leaves_gap_try3
+flow: https://flow.google.com/project/5daccbbc-f97f-4b97-b9f9-35fa2c79f1de
+starts: 1/2
+parent_try2: UAT HARD FAIL flask molten/desk-glow; sha c12b17ae82943c844fa981500ad7e7647414435980e9079d67883d874c85eaf8
+next: scores → CoS; no assemble; no 11/11b/09b this run

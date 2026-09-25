@@ -1,0 +1,14 @@
+{
+  "plate": "09b_risk_hold",
+  "try": "12",
+  "chosen": "try12A_flip_bookshelfL_keepChair",
+  "lock": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20_try12_rightcam_bookshelfL.jpg",
+  "lock_sha256": "25782bf78cd9a686986cc40507ec8eb74526460b5e0cf52d0c6f214359aec4f8",
+  "startB": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20_try12B_rightcam_tq.jpg",
+  "startB_sha256": "0919a56f9991ae50df9dee909ab0416ac681e435982a59125fb3cd01a7afe6f2",
+  "dna": "try12 RIGHT-CAM DNA: H-FLIP of try11 zerolamp moon empty-chair KEEP so BOOKSHELVES dominate LEFT and moon+empty chair sit on RIGHT; mild cropR04 keeps chair; CLEAN LIGHT=moon+window spill+soft ambient ONLY (lamp fully behind camera / out of world); ZERO gooseneck/shade/bulb/fixture inventable on left; cool grade on left third; Soft Empty Chairs OK; finished 3D; bible 8ddbf99; plate-library 4b8ed25; paint banned",
+  "plate_library_lock_sha": "4b8ed25",
+  "bible": "8ddbf99",
+  "max_starts": 2,
+  "stop_rule": "If A and B both invent left fixture \u2192 STOP_TO_COS (no third same-family crop)"
+}

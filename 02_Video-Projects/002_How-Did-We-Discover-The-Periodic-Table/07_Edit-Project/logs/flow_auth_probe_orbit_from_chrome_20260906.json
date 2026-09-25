@@ -1,0 +1,11 @@
+{
+  "tag": "orbit_from_chrome_20260906",
+  "profile": "/Users/benjaminoats/.playwright-orbit-flow-from-chrome",
+  "want": "benoats@googlemail.com",
+  "verdict": "BLOCKED_AUTH",
+  "url": "https://flow.google.com/about",
+  "emails": [],
+  "active_email": null,
+  "credits_text": null,
+  "reason": "email unread"
+}

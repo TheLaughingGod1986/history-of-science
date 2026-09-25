@@ -1,0 +1,102 @@
+{
+  "long": "_C92tIJCk8A",
+  "hos": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "channel_dashboard": {
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Oops",
+    "oops": true,
+    "snip": "Oops, you don't have permission to view this page\n\nYou need to be signed in to an account that has access. Try switching or signing in to an account that has permission.\n\nSwitch account\nReturn to Studio"
+  },
+  "videos": [
+    {
+      "id": "8uBR-9oxeWs",
+      "url": "https://studio.youtube.com/video/8uBR-9oxeWs/edit",
+      "title": "YouTube Creator Studio",
+      "oops": true,
+      "snip": "Oops, something went wrong.",
+      "mentions_orbit": false,
+      "mentions_hos": false,
+      "has_related_ui": false,
+      "has_replace": false,
+      "filename": null,
+      "alt_oU": {
+        "url": "https://studio.youtube.com/video/8uBR-9oxeWs/edit?o=U",
+        "title": "YouTube Creator Studio",
+        "oops": true,
+        "snip": "Oops, something went wrong."
+      }
+    },
+    {
+      "id": "YX2UR1u-JCQ",
+      "url": "https://studio.youtube.com/video/YX2UR1u-JCQ/edit",
+      "title": "YouTube Creator Studio",
+      "oops": true,
+      "snip": "Oops, something went wrong.",
+      "mentions_orbit": false,
+      "mentions_hos": false,
+      "has_related_ui": false,
+      "has_replace": false,
+      "filename": null,
+      "alt_oU": {
+        "url": "https://studio.youtube.com/video/YX2UR1u-JCQ/edit?o=U",
+        "title": "YouTube Creator Studio",
+        "oops": true,
+        "snip": "Oops, something went wrong."
+      }
+    },
+    {
+      "id": "Fnb3p81u-wY",
+      "url": "https://studio.youtube.com/video/Fnb3p81u-wY/edit",
+      "title": "YouTube Creator Studio",
+      "oops": true,
+      "snip": "Oops, something went wrong.",
+      "mentions_orbit": false,
+      "mentions_hos": false,
+      "has_related_ui": false,
+      "has_replace": false,
+      "filename": null,
+      "alt_oU": {
+        "url": "https://studio.youtube.com/video/Fnb3p81u-wY/edit?o=U",
+        "title": "YouTube Creator Studio",
+        "oops": true,
+        "snip": "Oops, something went wrong."
+      }
+    },
+    {
+      "id": "vpuRgKXtFlY",
+      "url": "https://studio.youtube.com/video/vpuRgKXtFlY/edit",
+      "title": "YouTube Creator Studio",
+      "oops": true,
+      "snip": "Oops, something went wrong.",
+      "mentions_orbit": false,
+      "mentions_hos": false,
+      "has_related_ui": false,
+      "has_replace": false,
+      "filename": null,
+      "alt_oU": {
+        "url": "https://studio.youtube.com/video/vpuRgKXtFlY/edit?o=U",
+        "title": "YouTube Creator Studio",
+        "oops": true,
+        "snip": "Oops, something went wrong."
+      }
+    },
+    {
+      "id": "Lcmh5y2KMQM",
+      "url": "https://studio.youtube.com/video/Lcmh5y2KMQM/edit",
+      "title": "YouTube Creator Studio",
+      "oops": true,
+      "snip": "Oops, something went wrong.",
+      "mentions_orbit": false,
+      "mentions_hos": false,
+      "has_related_ui": false,
+      "has_replace": false,
+      "filename": null,
+      "alt_oU": {
+        "url": "https://studio.youtube.com/video/Lcmh5y2KMQM/edit?o=U",
+        "title": "YouTube Creator Studio",
+        "oops": true,
+        "snip": "Oops, something went wrong."
+      }
+    }
+  ]
+}

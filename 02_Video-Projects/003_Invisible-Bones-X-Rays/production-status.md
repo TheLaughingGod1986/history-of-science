@@ -1,29 +1,36 @@
-# 003 production status
+# HOS 003 Invisible Bones — production status
 
-| Stage | Status |
+## Live (checked 25 Sep 2026 on the public channel)
+
+| Asset | Id | State |
+|---|---|---|
+| Long *How Did We Discover X-rays?* (7:06) | `frP_YrNShsU` | Public. Premiered Thu 24 Sep 2026 18:00 London |
+| S1 *How X-rays Were Discovered by Accident* | `oowAOWTBoq0` | Public (Fri 25 Sep 11:30) |
+| S2 *How did Röntgen see bones without cutting* | `xvanpsLeADE` | Scheduled Sat 26 Sep 11:30 |
+| S3 *The first X-ray showed a wedding ring* | `zI_eD3vFWmE` | Scheduled Sun 27 Sep 11:30 |
+
+Schedule and upload records: `11_Upload-Package/Schedule/HOS_003_STUDIO_SCHEDULE.md`. Do not remint or re-upload. Per `HOS_STRATEGY.md`, the next long goes out as a normal publish, not a Premiere.
+
+The part notes below are the build history (last updated 21 Sep).
+
+**Updated:** 21 Sep 2026 (assemble land)
+**Premiere title:** How Did We Discover X-rays?
+
+| Part | Status |
 |---|---|
-| Scout pick | LOCKED — Invisible Bones / Röntgen X-rays |
-| Showrunner brief | LOCKED 13 Sep 2026 |
-| Cursor / HOS builder | Showrunner part splits **01–05** landed — **STOP for CoS merge review** |
-| Part-split plan | `07_Edit-Project/PART_SPLIT_PLAN_v01.md` — pack status 01–05 |
-| Part 01–05 scripts | Written — `01_Script/part01…part05_*_v01.md` (Part 02 stub replaced by `part02_the_cardboard_v01.md`) |
-| Part 01–05 boards | Written — `07_Edit-Project/parts/part-0N_plates_v01.json` · 11 plates each · `mint: false` |
-| Part 01–05 ACCEPTANCE | Written — `07_Edit-Project/PART0N_ACCEPTANCE.md` |
-| Mint / Flow | **Closed** — not opened |
-| Part 01–05 VO | Text only — `02_Voiceover/part0N_*_v01.txt` for all five · **not** ElevenLabs |
-| Shorts | 3 punches listed — not cut, not scheduled |
-| CoS stop | `07_Edit-Project/STOP_TO_COS_HOS_003_PART_SPLITS.md` |
-| Builder lane | **`bc-d72aff4d`** (seed pack said `bc-cd402253` — stale, do not route there) |
+| 01 | KEEP/LOCK v03 |
+| 02 | KEEP/LOCK `hos_003_part02_rough_v03.mp4` ~61.6s — no remint |
+| 03 | **LANDED** `hos_003_part03_rough_v01.mp4` · 83.417s · sha `c2b09230…541615d` — VO v02 lock · no Ben ping yet |
+| 04–05 | Density + silent-read house for later |
 
-Do not remint HOS 002 from this film. Do not ping Ben. Do not declare PASS.
+## Part 03 rough
 
-## Cross-ref — film 002 board (13 Sep 2026)
+- Path: `09_Final-Export/hos_003_part03_rough_v01.mp4`
+- Land: `07_Edit-Project/ASSEMBLE_LAND.json` status `LANDED`
+- VO: `part03_bones_without_a_knife_v02` masters (~101.68s; mix trims ~18.3s to picture)
+- Bed: `hos_001_part01_ominous_ward_v14_norm.wav`
+- Assemble: `07_Edit-Project/_assemble_part03_rough_v01.py`
 
-Not a 003 gate. Recorded here so nobody reads a stale 002 doc while scaffolding this film.
+## New house
 
-| Film 002 cut | State |
-|---|---|
-| P04 bed remaster **v26** | **UAT AUDIO PASS** — desk lock on main, PR 108 · `9fe80b316b22ebb99b9e5cb16fc7b29214215653` |
-| P05 bed remaster **v02** | **UAT AUDIO PASS** — desk lock on main, PR 106 · `6ce7efeafee3feacdee70aafa13c5c0b3ec31c75` |
-
-Ben Keep-lock open as of **12 Sep 2026**. Any 002 doc still calling **P04–P05 “blocked”** is **stale**. This is separate from the P01 `v14` remint lane and separate from 003 — **no mint on 003**.
+`00_Brand/Brand-Guidelines/HOS_HOUSE_SILENT_READABLE_PICTURE_LOCK.md` — Part 03+ only (not P02 remint).

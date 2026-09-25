@@ -1,0 +1,4 @@
+Live probe 2026-09-06 ~22:00 Europe/London via .venv-hos + google-genai 2.22.0
+model=veo-3.1-fast-generate-preview
+result=429 RESOURCE_EXHAUSTED
+message=Your prepayment credits are depleted. Please go to AI Studio…

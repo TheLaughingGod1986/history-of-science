@@ -1,41 +1,35 @@
-# Orbit TikTok — Setup pack
+# History of Science TikTok — setup pack
 
-Mirror of YouTube brand for TikTok discovery. Pillar stays YouTube.
+Mirror of YouTube for discovery. Pillar stays YouTube.
+
+Canonical: `../SOCIALS_LAUNCH.md` · `../SOCIAL_IDENTITY.json`
 
 ## Identity (apply on create)
 
 | Field | Value |
 |---|---|
 | Display name | **History of Science** |
-| Preferred handle | **@HistoryOfScience** |
-| Fallbacks | `@HistoryOfScienceYT` · `@MeetOrbit` · `@OrbitExplores` · `@HelloOrbit` · `@OrbitCosmos` |
-| Bio (≤80) | `Space stories. Big questions. Full films on YT ↓` |
+| Preferred handle | **@historyofscience** |
+| Fallbacks | `@historyofscienceyt` · `@hoscienceyt` |
+| Bio (≤80) | `TikTok/bio.txt` — How we discovered what we know. Films on YT ↓ |
 | Website | https://www.youtube.com/@HistoryOfScience |
-| Avatar | Same Orbit mascot as YouTube (`avatar_800x800.png`) |
+| Avatar | Explorer (`avatar_800x800.png`) — not Orbit |
 
 ## Assets
 
 ```
 00_Brand/Channel-Setup/TikTok/
-  avatar_800x800.png      # upload this
-  avatar_800x800.jpg
-  avatar_200x200.jpg
+  avatar_800x800.png
   bio.txt
   bio_alt.txt
   bio_alt2.txt
   TIKTOK_META.json
-  _create_orbit_tiktok.py
-  audit/                  # screenshots from create run
 ```
 
-## Soft CTA rule
+## Soft CTA
 
-TikTok is discovery only. Captions: “Watch the full story on History of Science” — never hard sell, never watermarked re-uploads.
+Captions: **Full film on YouTube.** Never hard sell. Never the banned `@orbitwithben` account.
 
 ## Create
 
-```bash
-/usr/bin/python3 00_Brand/Channel-Setup/TikTok/_create_orbit_tiktok.py
-```
-
-Uses Google session from `/Users/ben/code/youtube/.playwright-youtube-profile` (`benoats86@gmail.com`).
+Confirm the handle on phone first. Then brand the account manually (TikTok blocks most automation). Do not post until the first YouTube Short is public.

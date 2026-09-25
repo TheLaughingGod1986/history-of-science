@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c19_08b_09",
+  "jobs": [
+    {
+      "plate": "08b_weight_vs_identity",
+      "try": "1_v01",
+      "which": "two_seats_swap",
+      "note": "two neighbouring cream seats gently swap order on 1869 wood wall",
+      "out": "submit_08b_weight_vs_identity_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 08b_weight_vs_identity try1 — weight vs identity. VO beat: two seats swap. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream cards as KEEP 07. TWO neighbouring cream-card seats gently SWAP / correct order as a faint pale barcode light passes. Continuous swap. Sparse 1-2 letter marks OK. No HUD paragraphs. No English words. NEVER a white gallery. NEVER a modern classroom. No fire. No neon light-strips. Daytime window bounce only. No person. No lamp. Silent. HARD REJECT: lava, fire, HUD paragraphs, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "09_everyday_seats",
+      "try": "1_v01",
+      "which": "salt_iodine_silicon_helium",
+      "note": "four hero seats pulse with salt, iodine, silicon, pale balloon",
+      "out": "submit_09_everyday_seats_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 09_everyday_seats try1 — your world. VO beat: salt, iodine, silicon, helium. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream cards as KEEP 07. Four cream-card seats pulse softly IN TURN with tiny 1869 cartoon props sitting on or in front of the cards: a salt cellar, a small iodine bottle, a silicon crystal, a pale balloon. Sparse 1-2 letter marks max. Continuous pulse. Never a wall of text. No English words. NEVER a white gallery. NEVER a modern classroom. No person. No lamp. No fire. Silent. HARD REJECT: wall of text, model-town, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    }
+  ]
+}

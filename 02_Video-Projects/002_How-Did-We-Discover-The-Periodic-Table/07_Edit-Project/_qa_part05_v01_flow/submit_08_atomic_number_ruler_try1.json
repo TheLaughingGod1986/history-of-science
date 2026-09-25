@@ -1,0 +1,32 @@
+{
+  "plate": "08_atomic_number_ruler",
+  "try": "1_v01",
+  "which": "xray_barcode_sweep",
+  "start_n": 2,
+  "max_starts": 2,
+  "cycle": "v01_c18_07b3_08",
+  "project_url": "https://flow.google.com/project/5b6f37ea-0f1f-4dda-92b3-c5d9ef1865e8",
+  "info": {
+    "seconds": 52.8,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/5b6f37ea-0f1f-4dda-92b3-c5d9ef1865e8",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/5b6f37ea-0f1f-4dda-92b3-c5d9ef1865e8"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T20:19:46",
+  "paint": "banned",
+  "assemble": false,
+  "note": "soft pale barcode light sweeps two seats on 1869 wood wall; no HUD"
+}

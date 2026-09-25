@@ -1,0 +1,15 @@
+{
+  "plate": "06b_navigation_address",
+  "try": "2",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/06b_navigation_address_v01_try2.mp4",
+  "sha256": "42101abc912790dd029425870b9849e1082dfeabc583fe54478ffa82e1f15d84",
+  "bytes": 2091775,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/a1fe3adb-4e5d-41fb-95de-1bd78e173205",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "push to a blank card exists, but",
+  "fail": "Flame pictograms on several cards, then a pencil writes on the card. Do not assemble.",
+  "next": "try3 NEW FRAMING after 2 flame-icon FAILs: ONE blank cream card on an otherwise empty wood wall. No grid of pictogram cards."
+}

@@ -1,0 +1,13 @@
+{
+  "cycle": "v01_c29_11t4",
+  "jobs": [
+    {
+      "plate": "11_last_vacancy",
+      "try": "4_v01",
+      "which": "keep10_grid_drift_right",
+      "note": "Copy KEEP 10 grid DNA. Cream cards flush IN cells. Drift right along last row. Never pinned playing cards, never sparks.",
+      "out": "submit_11_last_vacancy_try4.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 11_last_vacancy try4 — last row of the grid. Copy KEEP 10 try4 DNA. ONE continuous 8s take. FRAME 1 already ON a honey-wood WALL GRID with cream CARDS sitting flush INSIDE the wood cells, like KEEP 10 — not pinned, not tacks, not playing cards, not hanafuda, not ink drawings, not hearts, not spades, not house sketches. Camera slow LATERAL DRIFT to the RIGHT along the last row of that grid. All cards are matte cream paper, same brightness. Sparse 1-2 letter marks OK. No card is a lightbox. No sparks. No ember rim. Stay ON the wall the whole 8 seconds. NEVER fire. NEVER books. NEVER a hole. No person. No lamp. Continuous. Silent. HARD REJECT: lava, fire, sparks, playing cards, pips, ink houses, pinned tacks, books, burned holes, people, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}

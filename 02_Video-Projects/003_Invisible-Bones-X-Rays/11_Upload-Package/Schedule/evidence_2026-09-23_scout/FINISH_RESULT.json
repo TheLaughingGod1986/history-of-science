@@ -1,0 +1,231 @@
+{
+  "es_hits": [
+    {
+      "t": "Skip navigation Ask Studio Create Channel content PREMIERE Your video How Did We",
+      "tag": "DIV",
+      "x": 0,
+      "y": 0,
+      "w": 1400,
+      "h": 779
+    },
+    {
+      "t": "Channel content PREMIERE Your video How Did We Discover X-rays? Details Analytic",
+      "tag": "DIV",
+      "x": 0,
+      "y": 64,
+      "w": 1400,
+      "h": 715
+    },
+    {
+      "t": "Video editor Edit Trim and cut Blur Audio End screen Info cards Quizzes Create V",
+      "tag": "DIV",
+      "x": 248,
+      "y": 64,
+      "w": 1152,
+      "h": 715
+    },
+    {
+      "t": "Edit Trim and cut Blur Audio End screen Info cards Quizzes Create Video clip Sho",
+      "tag": "DIV",
+      "x": 248,
+      "y": 129,
+      "w": 1152,
+      "h": 260
+    },
+    {
+      "t": "Edit Trim and cut Blur Audio End screen Info cards Quizzes Create Video clip Sho",
+      "tag": "DIV",
+      "x": 248,
+      "y": 129,
+      "w": 577,
+      "h": 260
+    },
+    {
+      "t": "Edit Trim and cut Blur Audio End screen Info cards Quizzes Create Video clip Sho",
+      "tag": "DIV",
+      "x": 248,
+      "y": 129,
+      "w": 576,
+      "h": 515
+    },
+    {
+      "t": "Edit Trim and cut Blur Audio End screen Info cards Quizzes",
+      "tag": "DIV",
+      "x": 248,
+      "y": 129,
+      "w": 576,
+      "h": 363
+    },
+    {
+      "t": "End screen",
+      "tag": "DIV",
+      "x": 272,
+      "y": 326,
+      "w": 528,
+      "h": 53
+    }
+  ],
+  "es_subscribe_hits": [],
+  "long_tags": {
+    "show": {
+      "t": "Show more Paid promotion, collaboration and more",
+      "tag": "DIV",
+      "x": 264,
+      "y": 1507,
+      "w": 704,
+      "h": 96
+    },
+    "inputs": [
+      {
+        "ph": "Search across your channel",
+        "val": "",
+        "x": 420,
+        "y": 12,
+        "w": 560,
+        "h": 40
+      }
+    ],
+    "typed": false,
+    "saved": true
+  },
+  "comment_hits": [],
+  "short_tags": {
+    "s1": {
+      "show": {
+        "t": "Show more Paid promotion, collaboration and more",
+        "tag": "DIV",
+        "x": 264,
+        "y": 1355,
+        "w": 704,
+        "h": 96
+      },
+      "inputs": [
+        {
+          "ph": "Search across your channel",
+          "val": "",
+          "x": 420,
+          "y": 12,
+          "w": 560,
+          "h": 40
+        }
+      ],
+      "typed": false,
+      "saved": true
+    },
+    "s2": {
+      "show": {
+        "t": "Show more Paid promotion, collaboration and more",
+        "tag": "DIV",
+        "x": 264,
+        "y": 1333,
+        "w": 704,
+        "h": 96
+      },
+      "inputs": [
+        {
+          "ph": "Search across your channel",
+          "val": "",
+          "x": 420,
+          "y": 12,
+          "w": 560,
+          "h": 40
+        }
+      ],
+      "typed": false,
+      "saved": true
+    },
+    "s3": {
+      "show": {
+        "t": "Show more Paid promotion, collaboration and more",
+        "tag": "DIV",
+        "x": 264,
+        "y": 1333,
+        "w": 704,
+        "h": 96
+      },
+      "inputs": [
+        {
+          "ph": "Search across your channel",
+          "val": "",
+          "x": 420,
+          "y": 12,
+          "w": 560,
+          "h": 40
+        }
+      ],
+      "typed": false,
+      "saved": true
+    }
+  },
+  "draft_titles": [
+    {
+      "t": "Skip navigation Ask Studio Create Your channel History of Science Dashboard Cont",
+      "tag": "DIV",
+      "x": 0,
+      "y": 0,
+      "w": 1400,
+      "h": 779
+    },
+    {
+      "t": "Your channel History of Science Dashboard Content Analytics Community Languages ",
+      "tag": "DIV",
+      "x": 0,
+      "y": 64,
+      "w": 1400,
+      "h": 715
+    },
+    {
+      "t": "Shorts Videos Shorts Live Posts Playlists Short Notices Visibility Date Views Co",
+      "tag": "DIV",
+      "x": 248,
+      "y": 64,
+      "w": 1152,
+      "h": 715
+    },
+    {
+      "t": "Shorts Videos Shorts Live Posts Playlists Short Notices Visibility Date Views Co",
+      "tag": "DIV",
+      "x": 248,
+      "y": 64,
+      "w": 1152,
+      "h": 1629
+    }
+  ],
+  "icon_btns": [
+    {
+      "t": "Collapse menu",
+      "tag": "YTCP-ICON-BUTTON",
+      "x": 16,
+      "y": 10,
+      "w": 44,
+      "h": 44
+    },
+    {
+      "t": "Search",
+      "tag": "YTCP-ICON-BUTTON",
+      "x": 967,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "t": "Help",
+      "tag": "YTCP-ICON-BUTTON",
+      "x": 1007,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "t": "Notifications",
+      "tag": "YTCP-ICON-BUTTON",
+      "x": 1047,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    }
+  ],
+  "delete_items": [],
+  "leftoverStill": true,
+  "keepScheduled": true
+}

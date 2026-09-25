@@ -1,0 +1,15 @@
+{
+  "id": "YX2UR1u-JCQ",
+  "ok": false,
+  "gone_from_edit": false,
+  "in_trash_hint": false,
+  "confirmed_click": true,
+  "notes": [
+    "menu=Options",
+    "item=Delete",
+    "open_dlg=Delete forever",
+    "ack=True",
+    "confirm=Delete forever (enabled)",
+    "post_snip=Video details\n\nOops, something went wrong."
+  ]
+}

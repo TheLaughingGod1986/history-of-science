@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c12_10_10b",
+  "jobs": [
+    {
+      "plate": "10_zoo_became_city",
+      "try": "1_v01",
+      "which": "wide_city_of_seats",
+      "note": "wide pull-back filled seating chart as a city of seats, never houses",
+      "out": "submit_10_zoo_became_city_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 10_zoo_became_city try1 — a city. VO beat: the zoo became a city. ONE continuous 8s take. WIDE pull-back / settle on a filled 1869 honey-wood cream-card WALL seating chart reading as order — a city of SEATS, NEVER tiny houses, NEVER streets of buildings, NEVER yellow house-blocks, NEVER a white gallery, NEVER a modern classroom. Continuous soft settle. Daytime window bounce only. No person. No practical lamp. Silent. HARD REJECT: model-town, house-blocks, map pins, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "10b_find_missing",
+      "try": "1_v01",
+      "which": "one_empty_in_ordered_grid",
+      "note": "ordered filled grid with ONE cool pale vacancy left to hunt",
+      "out": "submit_10b_find_missing_try1.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 10b_find_missing try1 — find the missing. VO beat: look at the empty chairs and know what to hunt. ONE continuous 8s take. SAME 1869 honey-wood WALL as KEEP 07. Ordered filled cream-card city of seats, with ONE empty cool pale vacancy still to hunt. Camera PUSH to that blank unprinted cream card — never a glowing fire-pit hole. Vacant rim is cool pale gold pencil outline, never orange fire. Stay MEDIUM, never CU-fill. Continuous. Daytime window bounce only. No person. No lamp. Silent. HARD REJECT: model-town houses, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    }
+  ]
+}

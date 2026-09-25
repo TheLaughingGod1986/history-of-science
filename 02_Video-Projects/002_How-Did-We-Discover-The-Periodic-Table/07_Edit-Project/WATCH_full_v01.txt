@@ -1,0 +1,9 @@
+WATCH THIS FILE ONLY (HOS 002 full v01 — How Did We Discover the Periodic Table?):
+  hos_002_periodic_table_full_v01.mp4
+  iCloud: HOS UAT/hos_002_periodic_table_full_v01.mp4
+
+sha256=da8395efb8f74ad8330b945a98ce8acac9f0587109d9742ed3135a8bc43fd399
+duration=534.451
+bytes=411472085
+Hard concat of locked Parts 01–05. No branded intro. One house card (from P05).
+Not LOCKED. Scores → CoS. Do NOT declare PASS. No Ben ping. Do not upload.

@@ -1,0 +1,15 @@
+{
+  "plate": "11_last_vacancy",
+  "try": "1",
+  "call": "FAIL",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/11_last_vacancy_v01_try1.mp4",
+  "sha256": "7d738eb2c661dad42c3141f51799c6285f7c15b872c33b97bb52618016153fb7",
+  "bytes": 2432775,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/e3a8e047-f6de-4574-b3a4-a7de1760adf4",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "keep_action": "KEEP 10b wall DNA: cream CARDS flush in wood frames, last-row unprinted card, never books, never fire",
+  "fail": "Wrong furniture: book-spines / pigeonhole shelves, not cream-card wall. Orange ember lights in empty cubbies at open. t04–t05.5 orange FIRE around the blank card. Do not assemble.",
+  "next": "try2: copy KEEP 10b — cream cards with faint 1-2 letter marks flush in honey-wood frames. Last-row far-right card is unprinted paper. Never books. Never shelves of spines. Never fire around a card. Never ember lights."
+}

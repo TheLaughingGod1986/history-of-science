@@ -1,0 +1,65 @@
+[
+  {
+    "tag": "SPAN",
+    "t": "visibility",
+    "aria": "",
+    "x": 687,
+    "y": 773,
+    "w": 48,
+    "h": 17
+  },
+  {
+    "tag": "DIV",
+    "t": "Visibility Public",
+    "aria": "",
+    "x": 992,
+    "y": 844,
+    "w": 352,
+    "h": 66
+  },
+  {
+    "tag": "DIV",
+    "t": "Visibility Public",
+    "aria": "",
+    "x": 993,
+    "y": 845,
+    "w": 306,
+    "h": 64
+  },
+  {
+    "tag": "DIV",
+    "t": "Visibility",
+    "aria": "",
+    "x": 1005,
+    "y": 853,
+    "w": 294,
+    "h": 16
+  },
+  {
+    "tag": "DIV",
+    "t": "Public",
+    "aria": "",
+    "x": 1005,
+    "y": 869,
+    "w": 294,
+    "h": 40
+  },
+  {
+    "tag": "DIV",
+    "t": "Public",
+    "aria": "",
+    "x": 1037,
+    "y": 869,
+    "w": 44,
+    "h": 40
+  },
+  {
+    "tag": "YTCP-ICON-BUTTON",
+    "t": "Edit video visibility status",
+    "aria": "Edit video visibility status",
+    "x": 1299,
+    "y": 857,
+    "w": 40,
+    "h": 40
+  }
+]

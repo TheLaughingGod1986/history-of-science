@@ -1,0 +1,38 @@
+{
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "related": "_C92tIJCk8A",
+  "profile": "/Users/benjaminoats/.hos-chrome-youtube-studio",
+  "cdp": "http://127.0.0.1:9460",
+  "items": [
+    {
+      "slot": "s01",
+      "newId": "H1y0DXFVmw8",
+      "oldId": "8uBR-9oxeWs",
+      "stillDraft": false
+    },
+    {
+      "slot": "s02",
+      "newId": "iqToagXnjX0",
+      "oldId": "YX2UR1u-JCQ",
+      "stillDraft": false
+    },
+    {
+      "slot": "s03",
+      "newId": "8_Edn_HCi1s",
+      "oldId": "Fnb3p81u-wY",
+      "stillDraft": false
+    },
+    {
+      "slot": "s04",
+      "newId": "JC3iSghhqvY",
+      "oldId": "vpuRgKXtFlY",
+      "stillDraft": true
+    },
+    {
+      "slot": "s05",
+      "newId": "93fPUG-hW0A",
+      "oldId": "Lcmh5y2KMQM",
+      "stillDraft": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "plate": "08_prediction_navigation",
+  "try": "1_v25",
+  "which": "navigation_walk",
+  "qa": "PASS — camera walks toward one vacant glowing chair; not the moon-desk still-life",
+  "project_url": "https://flow.google.com/project/e098703c-c3c1-4382-abd6-337b65c913b7",
+  "harvest": "04_Generated-Clips/part04/raw/v25_quality/08_prediction_navigation_v25_try1.mp4",
+  "sha256": "b189ef879fc303063a5b32dfd1cb420baff9e8a61d3c6345f3268aa927982cb0",
+  "bytes": 2506011,
+  "duration_s": 8.0
+}

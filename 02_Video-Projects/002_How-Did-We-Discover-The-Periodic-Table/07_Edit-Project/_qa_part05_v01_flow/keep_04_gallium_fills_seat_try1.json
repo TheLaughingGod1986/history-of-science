@@ -1,0 +1,13 @@
+{
+  "plate": "04_gallium_fills_seat",
+  "try": "1",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/04_gallium_fills_seat_v01_try1.mp4",
+  "sha256": "b828431ec255f31844861dd927c60cb58cce3c7afff6780dc928945bff802d30",
+  "bytes": 1342091,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/33806434-524a-4955-9c9e-c2bb2b4299fb",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "MACRO one cream-grid cell: wood-backed vacancy, card slides in with sparse Ga + cool silver sheen. No lava, no fire-pit, no person. Distinct from 01 EWS, 01b closer wall, 02 pin-hands."
+}

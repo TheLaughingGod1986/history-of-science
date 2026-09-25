@@ -1,0 +1,16 @@
+{
+  "engine": "flow-ui-frames-i2v",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "flow_account": "benoats@googlemail.com",
+  "project_url": "https://flow.google.com/u/1/project/3e8bd952-2df3-412a-9332-426190a405df",
+  "start_frame": "03_FAIL_desk_marked_i2v.jpg",
+  "plate": "03_method_pamphlet",
+  "kind": "Frames_Start_I2V",
+  "raw_out": "04_Generated-Clips/part03/raw/v06_fast/03_method_pamphlet_v06.mp4",
+  "export_sha256": "a1285f9a60c4090eb45aa681556f508c6ddc4217cd6f3ba448b27a53f89922de",
+  "export_bytes": 85041901,
+  "export_duration_s": 89.68,
+  "optional_04": "skipped_v02_keep",
+  "notes": "Ingredients Add-to-Prompt broken; Frames Start I2V worked. Gallery Download returns zip(still+mp4)."
+}

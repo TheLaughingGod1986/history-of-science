@@ -1,0 +1,40 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "flow_home": "https://flow.google.com/u/1/",
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v04_fast",
+  "continuity": "plate01_aisle_chair_i2v_partial_v04",
+  "source_keep_v03": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v03_fast",
+  "parent_fail_v03_sha_prefix": "b9180ca9",
+  "only": [
+    "09_empty_chair_claim"
+  ],
+  "skip_under_empty_chair_label": [
+    "10_city_plan_lots"
+  ],
+  "plates": [
+    {
+      "id": "09_empty_chair_claim",
+      "status": "ok",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v04_fast/09_empty_chair_claim_v04.mp4",
+      "duration": 8.0,
+      "kind": "T2V_fallback",
+      "start_frame": null,
+      "seconds": 71.8,
+      "bytes": 2457012,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "gallery-harvest:2457012",
+      "url": "https://flow.google.com/u/1/project/61f28085-f344-46d6-bfd1-e9c496e05aab",
+      "context_closed": false,
+      "project_url": "https://flow.google.com/u/1/project/61f28085-f344-46d6-bfd1-e9c496e05aab",
+      "i2v_fallback_t2v": true,
+      "i2v_error": "Flow never enabled Add to Prompt after start-frame upload"
+    }
+  ],
+  "flow_account": "benoats@googlemail.com"
+}

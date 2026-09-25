@@ -1,0 +1,23 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "mode": "uat-v10-plate10",
+  "plates": [
+    {
+      "id": "10_rock_not_fire",
+      "mode": "t2v",
+      "duration": 8.0,
+      "seconds": 83.2,
+      "bytes": 2974397,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "094d5f5f-3771-417a-a5c2-7000804a1c21",
+      "url": "https://labs.google/fx/tools/flow/project/73c46c05-8659-490a-bda0-d78e73bb3422"
+    }
+  ]
+}

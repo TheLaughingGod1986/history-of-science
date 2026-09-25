@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c25_10t4_10b2",
+  "jobs": [
+    {
+      "plate": "10_zoo_became_city",
+      "try": "4_v01",
+      "which": "stay_on_filled_wall",
+      "note": "Stay on filled cream-card WALL the whole take. No pull-back to houses.",
+      "out": "submit_10_zoo_became_city_try4.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 10_zoo_became_city try4 — order. NEW FRAMING. VO beat: the zoo became a city. ONE continuous 8s take. MEDIUM-WIDE on a COMPLETED 1869 honey-wood cream-card WALL GRID. Every tile is a cream card. Camera slow drift along the filled wall ONLY — never pull back far enough to show a floor, a table, or a city. NEVER houses. NEVER miniature buildings. NEVER a diorama. NEVER furniture chairs. Daytime window bounce only. No person. No lamp. No fire. Continuous. Silent. HARD REJECT: model-town, houses, house-blocks, miniature chairs, lava, fire, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "10b_find_missing",
+      "try": "2_v01",
+      "which": "blank_card_not_hole",
+      "note": "one blank unprinted cream CARD among filled cards; never a burned hole",
+      "out": "submit_10b_find_missing_try2.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 10b_find_missing try2 — find the missing. VO beat: look at the empty chairs and know what to hunt. ONE continuous 8s take. SAME 1869 honey-wood WALL. Filled cream-card GRID with ONE blank unprinted cream CARD still in its slot — a pale empty ticket, not a hole, not a fire-pit. Camera MEDIUM push toward that blank card. NEVER orange fire. NEVER sparks. NEVER furniture chairs. NEVER a burned gap in the wood. Continuous. Daytime window bounce only. No person. No lamp. Silent. HARD REJECT: lava, fire, burned holes, furniture chairs, model-town, Ken Burns only, moon-desk still-life. Plate-library lock 4b8ed25."
+    }
+  ]
+}

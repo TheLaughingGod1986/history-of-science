@@ -1,5 +1,18 @@
 # Production status — 002 How Did We Discover the Periodic Table?
 
+## Live (checked 25 Sep 2026 on the public channel)
+
+| Asset | Id | State |
+|---|---|---|
+| Long *How Did We Discover the Periodic Table?* (9:01) | `AL_-qlWko_g` | Public. Premiered Thu 17 Sep 2026 19:00 London |
+| Short *The periodic table's empty chairs* | `uU12JA5rMWg` | Public |
+| Short *He predicted a metal before it was found* | `nFQRWmpulTQ` | Public |
+| Short *Gallium sat where the table said* | `CnHwX1L9XHg` | Public |
+| Short *Why tellurium sat before iodine* | `nba0-f7PPeU` | Public |
+| Short *What other table has empty chairs?* | `LanTHJckYx8` | Public |
+
+The film is finished and live. Do not remint or re-upload. The board below is the build history (last updated 9 Sep); any "blocked" or "next" line in it is stale.
+
 **Desk board lock — 7 Sep 2026 (CoS: P03 LOCKED on v09 · P04 unlocked).** Docs only. No remint · no mint · no upload · no Mac Mini · no Flow · no Studio · no Orbit / Oppti from this file.
 
 | Field | Value |

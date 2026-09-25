@@ -1,0 +1,20 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 14,
+  "family": "NEW_KEEP_try14_seathero_daywin_zerolamp_empty_chairs",
+  "banned_dna": "try8-13 moon-desk crop tree; try13 bookshelf zerofixture invent; v01 cardless empty-chair lamp invent starts",
+  "light": "daylight / window god-rays + soft Empty Chairs seat glow ONLY \u2014 ZERO practical lamp/shade/bulb/shade-cup",
+  "composition": "Empty Chairs vacant ornate seats hero + lab shelves + tall daylight window RIGHT \u2014 NOT moon-desk, NOT try13 bookshelf",
+  "cards": "cardless",
+  "model": "Veo 3.1 - Quality",
+  "startA": "04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20_try14_seathero_daywin_zerolamp.jpg",
+  "startA_sha256": "0c9af08a1aa3cc337aa72ac8f9bbc6e139d3a7d883d231f0b98ec4ef259c4a56",
+  "startB": "04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hold_start_v20_try14B_seathero_daywin_tight_zerolamp.jpg",
+  "startB_sha256": "9cfe97cd2bb5a5098163803640e843fdb54fe6d48b7c3639747f7aa0c5054b55",
+  "active_sha256": "0c9af08a1aa3cc337aa72ac8f9bbc6e139d3a7d883d231f0b98ec4ef259c4a56",
+  "source_still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/_qa_rebuild_v09/01_empty_chairs_open_t1.jpg",
+  "main_lock": "3bc0414",
+  "paint": "banned",
+  "assemble": false,
+  "max_starts": 2
+}

@@ -1,0 +1,62 @@
+{
+  "file": "hos_002_periodic_table_full_v02.mp4",
+  "sha256": "8a5b8dde713cd4d6d2834b49635443ebf5fda1a83de92688bf79ca91746de31f",
+  "duration": 540.63,
+  "bytes": 437292747,
+  "xfade": 0.4,
+  "card_hold": 3.0,
+  "starts": {
+    "01": 0.0,
+    "02": 85.28,
+    "03": 168.88,
+    "04": 260.76,
+    "05": 390.72
+  },
+  "parents": [
+    {
+      "id": "01",
+      "name": "hos_002_part01_rough_v14.mp4",
+      "sha": "d903cf7ca1789dcfc1a3703b9215564b3a0d306d0ea1dbf7c2a974888fa92781",
+      "chapter": "A zoo of names",
+      "card": null,
+      "duration": 85.68
+    },
+    {
+      "id": "02",
+      "name": "hos_002_part02_rough_v06.mp4",
+      "sha": "799086795d62f159930bd00db638ea2de0e02a299d8c9d50c8eed3d482e89529",
+      "chapter": "First patterns",
+      "card": null,
+      "duration": 84.0
+    },
+    {
+      "id": "03",
+      "name": "hos_002_part03_rough_v09.mp4",
+      "sha": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+      "chapter": "A ruler for atoms",
+      "card": "chapter_03.png",
+      "duration": 89.68
+    },
+    {
+      "id": "04",
+      "name": "hos_002_part04_rough_v25.mp4",
+      "sha": "e78027c0c58abe9284f7b85de693a08caabd3ad8ee45b64624eadd0329942bb1",
+      "chapter": "Empty chairs",
+      "card": "chapter_04.png",
+      "duration": 127.76
+    },
+    {
+      "id": "05",
+      "name": "hos_002_part05_rough_v01.mp4",
+      "sha": "8dcb06b596318a7283210928fbb0e78f6f89c7db5d200b8edeefbaa9b5522ec4",
+      "chapter": "The guests arrive",
+      "card": "chapter_05.png",
+      "duration": 147.31
+    }
+  ],
+  "card_in": 537.13,
+  "card_land": 537.48,
+  "status": "UAT",
+  "locked": false,
+  "upload": false
+}

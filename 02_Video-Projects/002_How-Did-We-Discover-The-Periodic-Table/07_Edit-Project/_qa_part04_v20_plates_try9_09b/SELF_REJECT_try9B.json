@@ -1,0 +1,9 @@
+{
+  "plate": "09b_risk_hold",
+  "try": "9B",
+  "decision": "SELF_REJECT_LAVA_DRIP",
+  "sha256": "17b025037cc82bc5622757c6c12891a4b380b36c8fc92dd86c37410d8e59226f",
+  "project_url": "https://flow.google.com/project/167948bb-bb9c-4170-a6e9-814a805ad7e8",
+  "note": "drip heuristic improved vs 9A (median 31) but visual shade crops still show molten bead under shade across mids; flats PASS cardless",
+  "next": "try9C — v01 t=0.00 start (lowest underside bright) + same opaque-shade prompt"
+}

@@ -1,0 +1,49 @@
+{
+  "engine": "flow-ui",
+  "model": "Veo 3.1 - Fast",
+  "mode": "uat-v07",
+  "plates": [
+    {
+      "id": "05_explorer_ore_gas",
+      "seconds": 75.2,
+      "bytes": 3026607,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/_uat_part01_v06/12_workshop_hold_t1.jpg",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "a5ebfc75-d002-4ed7-9430-0e6934bcaa41",
+      "url": "https://labs.google/fx/tools/flow/project/2d83b08f-7b67-4863-bef3-1ab5838f4ba7"
+    },
+    {
+      "id": "07_shelf_names_grow",
+      "seconds": 82.0,
+      "bytes": 5076304,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "8440a12b-57d7-4e31-a752-371a26db5231",
+      "url": "https://labs.google/fx/tools/flow/project/414e230d-7c36-4fb5-8d5f-84c192b5631c"
+    },
+    {
+      "id": "11_chemists_more_names",
+      "seconds": 73.6,
+      "bytes": 3617789,
+      "model": "Veo 3.1 - Fast",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": null,
+      "orbit_attached": false,
+      "identity_lock": false,
+      "scenery_only": true,
+      "media_id": "2ef7188d-b177-4e92-b40c-6a21090fe220",
+      "url": "https://labs.google/fx/tools/flow/project/c5ecc5ac-2670-4f4f-b9d3-06b5f2ac1226"
+    }
+  ]
+}

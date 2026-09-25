@@ -1,0 +1,161 @@
+{
+  "plus": {
+    "t": "End screen",
+    "aria": "",
+    "x": 778,
+    "y": 353,
+    "w": 528,
+    "h": 53
+  },
+  "es_snip": "Video editor | Skip navigation | Ask Studio | Create | Channel content | PREMIERE | Your video | How Did We Discover X-rays? | Details | Analytics | Editor | Comments | Subtitles | Claims | Clips and Shorts | Settings | Send feedback | Video editor | Edit | Trim and cut | Blur | Audio | End screen | Info cards | Quizzes | Create | Video clip | Short | Beta | 0:00:00 | Undo | Redo | 0:00:00 | Edit and apply elements on a timeline | In one place, you can edit your video, add end screens and more. | Get started | Apply template | Video | Playlist | Subscribe | Channel | Link",
+  "tags": {
+    "long": {
+      "show": [
+        {
+          "t": "Show more",
+          "aria": "Show advanced settings",
+          "tag": "YTCP-BUTTON",
+          "x": 272,
+          "y": 1507,
+          "w": 103,
+          "h": 36
+        },
+        {
+          "t": "Show more",
+          "aria": "Show advanced settings",
+          "tag": "BUTTON",
+          "x": 272,
+          "y": 1507,
+          "w": 103,
+          "h": 36
+        }
+      ],
+      "found": {
+        "ok": false
+      },
+      "saved": true
+    },
+    "s1": {
+      "show": [
+        {
+          "t": "Show more",
+          "aria": "Show advanced settings",
+          "tag": "YTCP-BUTTON",
+          "x": 272,
+          "y": 1355,
+          "w": 103,
+          "h": 36
+        },
+        {
+          "t": "Show more",
+          "aria": "Show advanced settings",
+          "tag": "BUTTON",
+          "x": 272,
+          "y": 1355,
+          "w": 103,
+          "h": 36
+        }
+      ],
+      "found": {
+        "ok": false
+      },
+      "saved": true
+    },
+    "s2": {
+      "show": [
+        {
+          "t": "Show more",
+          "aria": "Show advanced settings",
+          "tag": "YTCP-BUTTON",
+          "x": 272,
+          "y": 1333,
+          "w": 103,
+          "h": 36
+        },
+        {
+          "t": "Show more",
+          "aria": "Show advanced settings",
+          "tag": "BUTTON",
+          "x": 272,
+          "y": 1333,
+          "w": 103,
+          "h": 36
+        }
+      ],
+      "found": {
+        "ok": false
+      },
+      "saved": true
+    },
+    "s3": {
+      "show": [
+        {
+          "t": "Show more",
+          "aria": "Show advanced settings",
+          "tag": "YTCP-BUTTON",
+          "x": 272,
+          "y": 1333,
+          "w": 103,
+          "h": 36
+        },
+        {
+          "t": "Show more",
+          "aria": "Show advanced settings",
+          "tag": "BUTTON",
+          "x": 272,
+          "y": 1333,
+          "w": 103,
+          "h": 36
+        }
+      ],
+      "found": {
+        "ok": false
+      },
+      "saved": true
+    }
+  },
+  "edit_drafts": [
+    {
+      "t": "Edit draft",
+      "aria": "",
+      "tag": "YTCP-BUTTON",
+      "x": 1287,
+      "y": 561,
+      "w": 89,
+      "h": 36
+    },
+    {
+      "t": "Edit draft",
+      "aria": "Edit draft",
+      "tag": "BUTTON",
+      "x": 1287,
+      "y": 561,
+      "w": 89,
+      "h": 36
+    },
+    {
+      "t": "Edit draft",
+      "aria": "",
+      "tag": "YTCP-BUTTON",
+      "x": 1287,
+      "y": 1065,
+      "w": 89,
+      "h": 36
+    },
+    {
+      "t": "Edit draft",
+      "aria": "Edit draft",
+      "tag": "BUTTON",
+      "x": 1287,
+      "y": 1065,
+      "w": 89,
+      "h": 36
+    }
+  ],
+  "kebabs": [],
+  "dels": [],
+  "leftoverStill": true,
+  "s1": true,
+  "s2": true,
+  "s3": true
+}

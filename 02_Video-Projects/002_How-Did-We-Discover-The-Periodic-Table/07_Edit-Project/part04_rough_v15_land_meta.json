@@ -1,0 +1,71 @@
+{
+  "cut": "hos_002_part04_rough_v15.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v15.mp4",
+  "sha256": "cd7a57b2979478a34ac7cc5fe5639aa156ae603b437674ccd724ab3fe994748c",
+  "bytes": 101029493,
+  "duration_s": 127.76,
+  "parent_v14": "hos_002_part04_rough_v14.mp4",
+  "parent_v14_sha256": "fa62ab22d0f7cbd4f208e5200c9b8b471c23595237b4d7d2dd18e6f47dabad4f",
+  "reminted_plates": [
+    "06_explorer_leaves_gap",
+    "09_risk_bet",
+    "09b_risk_hold",
+    "10_family_before_weight",
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "plate_sha256": {
+    "06_explorer_leaves_gap": "f294b87b2387c2a10d7aa343db349e10e0fd5576c82a767d08f8fa211e4920c3",
+    "09_risk_bet": "c57072de85a1d3bb67094c6c0c90130d00b2b6de7ce14a6034c25f490b79870a",
+    "09b_risk_hold": "fa4ddf9e574467e1d7ccf1322f4e7984cdecc14c37f0db92796b639839e21e91",
+    "10_family_before_weight": "047a44a2d4888f5dbacd20e8c6dbbc48a8a4dc4becfa0a7a3b798699cf5b00c9",
+    "11_publish_gaps": "6942869d20ac034912d521e85b3e8aac95953bb004798571187f22696965dc62",
+    "11b_wait_and_hunt": "31a7bdb0717f40737c6f9832bfd44657e9391824405e1c861b97fd256dcb83c3"
+  },
+  "plates": {
+    "06_explorer_leaves_gap": {
+      "path": "04_Generated-Clips/part04/raw/v15_fast/06_explorer_leaves_gap_v15.mp4",
+      "sha256": "f294b87b2387c2a10d7aa343db349e10e0fd5576c82a767d08f8fa211e4920c3",
+      "bytes": 4384029
+    },
+    "09_risk_bet": {
+      "path": "04_Generated-Clips/part04/raw/v15_fast/09_risk_bet_v15.mp4",
+      "sha256": "c57072de85a1d3bb67094c6c0c90130d00b2b6de7ce14a6034c25f490b79870a",
+      "bytes": 977109
+    },
+    "09b_risk_hold": {
+      "path": "04_Generated-Clips/part04/raw/v15_fast/09b_risk_hold_v15.mp4",
+      "sha256": "fa4ddf9e574467e1d7ccf1322f4e7984cdecc14c37f0db92796b639839e21e91",
+      "bytes": 1761098
+    },
+    "10_family_before_weight": {
+      "path": "04_Generated-Clips/part04/raw/v15_fast/10_family_before_weight_v15.mp4",
+      "sha256": "047a44a2d4888f5dbacd20e8c6dbbc48a8a4dc4becfa0a7a3b798699cf5b00c9",
+      "bytes": 5746410
+    },
+    "11_publish_gaps": {
+      "path": "04_Generated-Clips/part04/raw/v15_fast/11_publish_gaps_v15.mp4",
+      "sha256": "6942869d20ac034912d521e85b3e8aac95953bb004798571187f22696965dc62",
+      "bytes": 12600938
+    },
+    "11b_wait_and_hunt": {
+      "path": "04_Generated-Clips/part04/raw/v15_fast/11b_wait_and_hunt_v15.mp4",
+      "sha256": "31a7bdb0717f40737c6f9832bfd44657e9391824405e1c861b97fd256dcb83c3",
+      "bytes": 13149028
+    }
+  },
+  "methods": {
+    "06_explorer_leaves_gap": "crown/lamp lock composite on v11 motion + painted crown DNA (pass1 restored)",
+    "09_risk_bet": "gentle cream lava scrub + soft Empty-Chairs panel near-static (Ben A BET window)",
+    "09b_risk_hold": "painted CLEAN LIGHT near-static master (pass1 restored)",
+    "10_family_before_weight": "temporal median deghost + cream lamp scrub (pass1 restored)",
+    "11_publish_gaps": "temporal median deghost + cream lamp scrub (pass1 restored)",
+    "11b_wait_and_hunt": "temporal median deghost + cream lamp scrub (pass1 restored)"
+  },
+  "flow_account": "benoats@googlemail.com",
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v15.mp4",
+  "watch": "WATCH_part04_v15.txt",
+  "doc": "PART04_V15_BEN_FAIL.md",
+  "status": "LANDED_FOR_UAT \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping",
+  "residual_risk": "Composite remints may still show residual crown texture / warm lamp saturation / late softness depending on display. Do not PASS from this agent."
+}

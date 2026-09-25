@@ -1,0 +1,13 @@
+{
+  "plate": "03_explorer_gallium_palm",
+  "try": "2",
+  "call": "KEEP",
+  "path": "04_Generated-Clips/part05/raw/v01_quality/03_explorer_gallium_palm_v01_try2.mp4",
+  "sha256": "374f44d9f19be8cede5975840048bfce9469049ac801a5ff655988c03f36c5fe",
+  "bytes": 1652193,
+  "duration_s": 8.0,
+  "project_url": "https://flow.google.com/project/9a84295b-9e9a-4cca-996a-58e728ea16dd",
+  "model": "Veo 3.1 - Quality",
+  "mode": "T2V",
+  "notes": "Waist-up on-model Explorer: messy chestnut hair covering crown, round gold glasses, teal coat, mustard vest, brown bow tie, satchel. Looks down at a SMALL cool silver gallium puddle that drips. No lava. Distinct from try1 giant-hand FAIL. Do not remint unless CoS FAIL + stills. Explorer used once — remaining P05 plates scenery-only."
+}

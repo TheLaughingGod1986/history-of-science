@@ -1,0 +1,31 @@
+{
+  "plate": "01b_empty_seats_waiting",
+  "try": "1_v01",
+  "which": "closer_empty_cells",
+  "start_n": 1,
+  "max_starts": 2,
+  "project_url": "https://flow.google.com/project/a0dfe1a1-c18a-430a-a149-927a15cf8a6b",
+  "info": {
+    "seconds": 51.5,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/a0dfe1a1-c18a-430a-a149-927a15cf8a6b",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/a0dfe1a1-c18a-430a-a149-927a15cf8a6b"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T18:22:14",
+  "paint": "banned",
+  "assemble": false,
+  "note": "closer empty cells; no hands (02 has pin); no EWS desks (01 has those)"
+}

@@ -1,0 +1,28 @@
+{
+  "cut": "hos_002_part04_rough_v03.mp4",
+  "path": "09_Final-Export/hos_002_part04_rough_v03.mp4",
+  "bytes": 83019495,
+  "duration_s": 127.76,
+  "sha256": "79dd7650cb582b548ae4c1c0aa98e4938ff8ec90ba654dea9c0b5c5574ee62e8",
+  "parent_v02_sha256": "d5377dadc6c862c47348f79ad27b377f63c2b09b0b9607824e0a3c0383350f6c",
+  "reminted_plates": [
+    "02b_cards_sixty_three"
+  ],
+  "flow_account": "benoats@googlemail.com",
+  "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
+  "plate02b_picture_s": [
+    15.100000000000001,
+    23.0
+  ],
+  "columns_picture_s": [
+    37.75,
+    45.65
+  ],
+  "explorer_picture_s": [
+    45.3,
+    53.199999999999996
+  ],
+  "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v03.mp4",
+  "watch": "WATCH_part04_v03.txt",
+  "note": "Flow Create OK; gallery download failed; adaptive rectangular leather scrub on 02b. Scores \u2192 CoS only."
+}

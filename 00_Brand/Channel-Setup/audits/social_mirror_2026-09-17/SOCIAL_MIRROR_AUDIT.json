@@ -1,0 +1,91 @@
+{
+  "audited_at": "2026-09-17T22:00:00+01:00",
+  "channel": "@HistoryOfScienceYT",
+  "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "tiktok": "paused",
+  "destinations": {
+    "instagram": "https://www.instagram.com/historyofscienceyt/",
+    "threads": "https://www.threads.com/@historyofscienceyt",
+    "facebook_page_id": "61593586420124",
+    "facebook_url": "https://www.facebook.com/profile.php?id=61593586420124",
+    "do_not_publish_to": ["orbitwithben", "historyofscience", "61592833318203"]
+  },
+  "youtube_public": [
+    {
+      "id": "AL_-qlWko_g",
+      "kind": "long",
+      "title": "How Did We Discover the Periodic Table?",
+      "social": "missing"
+    },
+    {
+      "id": "_C92tIJCk8A",
+      "kind": "long",
+      "title": "How Did We Discover Germs?",
+      "social": "missing"
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "kind": "short",
+      "title": "Germs don't cast a shadow",
+      "old_id": "8uBR-9oxeWs",
+      "social": "missing"
+    },
+    {
+      "id": "iqToagXnjX0",
+      "kind": "short",
+      "title": "Microbes in a drop of pond water",
+      "old_id": "YX2UR1u-JCQ",
+      "social": "missing"
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "kind": "short",
+      "title": "Germs hitch a ride on you",
+      "old_id": "Fnb3p81u-wY",
+      "social": "missing"
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "kind": "short",
+      "title": "A flask that proved germs come from outside",
+      "old_id": "vpuRgKXtFlY",
+      "social": "missing"
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "kind": "short",
+      "title": "Invisible life is still everywhere",
+      "old_id": "Lcmh5y2KMQM",
+      "social": "missing"
+    }
+  ],
+  "youtube_scheduled_do_not_mirror": [
+    {
+      "id": "uU12JA5rMWg",
+      "title": "The periodic table's empty chairs",
+      "when": "2026-09-18T11:30:00+01:00"
+    },
+    {
+      "id": "nFQRWmpulTQ",
+      "title": "He predicted a metal before it was found",
+      "when": "2026-09-19T11:30:00+01:00"
+    },
+    {
+      "id": "CnHwX1L9XHg",
+      "title": "Gallium sat where the table said",
+      "when": "2026-09-20T11:30:00+01:00"
+    },
+    {
+      "id": "nba0-f7PPeU",
+      "title": "Why tellurium sat before iodine",
+      "when": "2026-09-21T11:30:00+01:00"
+    },
+    {
+      "id": "LanTHJckYx8",
+      "title": "What other table has empty chairs?",
+      "when": "2026-09-22T11:30:00+01:00"
+    }
+  ],
+  "blocked_reason": "CDP 9222/9223 is Orbit with Ben. Instagram @historyofscienceyt has no logged-in HOS Chrome profile. Did not post to Orbit.",
+  "posted_this_pass": []
+}

@@ -1,0 +1,313 @@
+{
+  "plate": "05_columns_families",
+  "try": "2B",
+  "verdict": "KEEP_CANDIDATE",
+  "model": "Veo 3.1 - Quality",
+  "mp4": "05_columns_families_v22_try2B.mp4",
+  "sha256": "49437e7e4004c224b021409e15ebb50fb06b74737adfe2b6c0bc0a61bfae8caa",
+  "duration_s": 8.0,
+  "bytes": 2720017,
+  "auto_fail": false,
+  "reject_reasons": [],
+  "frames": [
+    {
+      "t": 0.0,
+      "lava_molten": false,
+      "underside_bulb": true,
+      "lamp_invent": false,
+      "desk_lava": false,
+      "lamp": {
+        "mean_rgb": [
+          161.1,
+          129.9,
+          98.2
+        ],
+        "luma": 134.3,
+        "molten_frac": 0.0013,
+        "bulb_frac": 0.1587,
+        "warm_fixture_frac": 0.0645
+      },
+      "top": {
+        "mean_rgb": [
+          192.5,
+          171.7,
+          139.7
+        ],
+        "luma": 173.8,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.3171,
+        "warm_fixture_frac": 0.005
+      },
+      "desk": {
+        "mean_rgb": [
+          189.6,
+          168.3,
+          133.0
+        ],
+        "luma": 170.3,
+        "molten_frac": 0.0008,
+        "bulb_frac": 0.2041,
+        "warm_fixture_frac": 0.0297
+      },
+      "reasons": [
+        "underside_bulb/open_cup bulb=0.1587 warm=0.0645"
+      ]
+    },
+    {
+      "t": 1.0,
+      "lava_molten": false,
+      "underside_bulb": false,
+      "lamp_invent": false,
+      "desk_lava": false,
+      "lamp": {
+        "mean_rgb": [
+          145.5,
+          116.9,
+          86.6
+        ],
+        "luma": 120.8,
+        "molten_frac": 0.0001,
+        "bulb_frac": 0.0012,
+        "warm_fixture_frac": 0.05
+      },
+      "top": {
+        "mean_rgb": [
+          154.4,
+          131.7,
+          102.0
+        ],
+        "luma": 134.4,
+        "molten_frac": 0.0001,
+        "bulb_frac": 0.0003,
+        "warm_fixture_frac": 0.0142
+      },
+      "desk": {
+        "mean_rgb": [
+          167.7,
+          141.5,
+          109.1
+        ],
+        "luma": 144.8,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0766,
+        "warm_fixture_frac": 0.0082
+      },
+      "reasons": []
+    },
+    {
+      "t": 2.0,
+      "lava_molten": false,
+      "underside_bulb": false,
+      "lamp_invent": false,
+      "desk_lava": false,
+      "lamp": {
+        "mean_rgb": [
+          145.1,
+          117.5,
+          87.3
+        ],
+        "luma": 121.2,
+        "molten_frac": 0.0002,
+        "bulb_frac": 0.0025,
+        "warm_fixture_frac": 0.0424
+      },
+      "top": {
+        "mean_rgb": [
+          168.7,
+          145.6,
+          114.8
+        ],
+        "luma": 148.3,
+        "molten_frac": 0.0002,
+        "bulb_frac": 0.0004,
+        "warm_fixture_frac": 0.0353
+      },
+      "desk": {
+        "mean_rgb": [
+          175.3,
+          149.9,
+          117.9
+        ],
+        "luma": 153.0,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.1201,
+        "warm_fixture_frac": 0.0113
+      },
+      "reasons": []
+    },
+    {
+      "t": 3.5,
+      "lava_molten": false,
+      "underside_bulb": false,
+      "lamp_invent": false,
+      "desk_lava": false,
+      "lamp": {
+        "mean_rgb": [
+          149.1,
+          124.6,
+          95.0
+        ],
+        "luma": 127.7,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0097,
+        "warm_fixture_frac": 0.0289
+      },
+      "top": {
+        "mean_rgb": [
+          161.2,
+          138.8,
+          108.6
+        ],
+        "luma": 141.4,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0002,
+        "warm_fixture_frac": 0.0297
+      },
+      "desk": {
+        "mean_rgb": [
+          174.5,
+          150.2,
+          117.8
+        ],
+        "luma": 153.0,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0672,
+        "warm_fixture_frac": 0.0212
+      },
+      "reasons": []
+    },
+    {
+      "t": 5.0,
+      "lava_molten": false,
+      "underside_bulb": false,
+      "lamp_invent": false,
+      "desk_lava": false,
+      "lamp": {
+        "mean_rgb": [
+          139.8,
+          112.6,
+          83.8
+        ],
+        "luma": 116.3,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0207,
+        "warm_fixture_frac": 0.0243
+      },
+      "top": {
+        "mean_rgb": [
+          154.7,
+          131.1,
+          101.7
+        ],
+        "luma": 134.0,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0008,
+        "warm_fixture_frac": 0.0284
+      },
+      "desk": {
+        "mean_rgb": [
+          175.4,
+          156.6,
+          129.0
+        ],
+        "luma": 158.6,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0377,
+        "warm_fixture_frac": 0.0009
+      },
+      "reasons": []
+    },
+    {
+      "t": 6.5,
+      "lava_molten": false,
+      "underside_bulb": false,
+      "lamp_invent": false,
+      "desk_lava": false,
+      "lamp": {
+        "mean_rgb": [
+          144.8,
+          118.3,
+          89.6
+        ],
+        "luma": 121.8,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0266,
+        "warm_fixture_frac": 0.0179
+      },
+      "top": {
+        "mean_rgb": [
+          156.2,
+          132.7,
+          103.2
+        ],
+        "luma": 135.6,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0013,
+        "warm_fixture_frac": 0.0242
+      },
+      "desk": {
+        "mean_rgb": [
+          178.0,
+          162.5,
+          137.0
+        ],
+        "luma": 164.0,
+        "molten_frac": 0.0002,
+        "bulb_frac": 0.0706,
+        "warm_fixture_frac": 0.0103
+      },
+      "reasons": []
+    },
+    {
+      "t": 7.5,
+      "lava_molten": false,
+      "underside_bulb": false,
+      "lamp_invent": false,
+      "desk_lava": false,
+      "lamp": {
+        "mean_rgb": [
+          146.2,
+          119.9,
+          91.0
+        ],
+        "luma": 123.4,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0272,
+        "warm_fixture_frac": 0.0178
+      },
+      "top": {
+        "mean_rgb": [
+          156.7,
+          133.3,
+          103.5
+        ],
+        "luma": 136.1,
+        "molten_frac": 0.0,
+        "bulb_frac": 0.0021,
+        "warm_fixture_frac": 0.0244
+      },
+      "desk": {
+        "mean_rgb": [
+          177.6,
+          162.2,
+          136.3
+        ],
+        "luma": 163.6,
+        "molten_frac": 0.0006,
+        "bulb_frac": 0.0776,
+        "warm_fixture_frac": 0.0115
+      },
+      "reasons": []
+    }
+  ],
+  "contact_continuous": "05_columns_families_contact_continuous_try2B.jpg",
+  "lamp_contact": "05_columns_families_lamp_contact_try2B.jpg",
+  "assemble": false,
+  "note": "Heuristic auto-gate for lava/bulb/fixture invent. Human still owns final KEEP. Readable cards OK. No assemble this run.",
+  "auto_fail_overridden": true,
+  "override_note": "t0.0 underside_bulb heuristic was FALSE POSITIVE \u2014 left-upper is Erlenmeyer glass specular + daylight, not shade-cup/underside bulb/practical lamp. Visual scrub of t0\u2013t7.5 lamp-box + fixture contact: no lamp/shade/stem/lava/bead invent. DNA partial: card columns form; some bookshelf/flask room volume remains (not pure steep fill) but LEFT THIRD + UPPER FIFTH stay fixture-empty. Human/CoS owns final KEEP. No assemble.",
+  "human_gate": "KEEP_CANDIDATE \u2014 no invent/lava; CoS decides DNA steepness",
+  "dna_family": "BOARDTOP_DAY_NOFIXTURE",
+  "starts_used": "2/2",
+  "project_url": "https://flow.google.com/project/54fdeb69-bbb5-4d41-a641-4ba1c935d995"
+}

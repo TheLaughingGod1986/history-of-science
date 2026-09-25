@@ -1,0 +1,193 @@
+{
+  "film": "003_Invisible-Bones-X-Rays",
+  "part": 3,
+  "title": "Bones Without a Knife",
+  "status": "LANDED",
+  "reason": "Part 03 rough v02 \u2014 same v01 plate set except 07 reminted to v03 (helix HARD FAIL wipe)",
+  "output_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_part03_rough_v02.mp4",
+  "sha256": "572d498f7b70cd00fc18c68eac1a17c98b4a89b5a6c473772b12fb42053fd262",
+  "duration_s": 83.416667,
+  "bytes": 82583811,
+  "missing_paths": [],
+  "vo_lock": {
+    "text": "02_Voiceover/part03_bones_without_a_knife_v02.txt",
+    "text_sha256": "b8e165cca3e245f1b7054d4289c064a1b08af3cc03715afe9ff96196575aa587",
+    "wav": "02_Voiceover/05_Master/hos_003_part03_vo_v02_draft.wav",
+    "wav_sha256": "a13b686adaa11f088ab629434535b822421f26c023e8e0d66869c6339898a631",
+    "mp3": "02_Voiceover/05_Master/hos_003_part03_vo_v02_draft.mp3",
+    "mp3_sha256": "0032ece496cfd48c796e07e10ff4f86e3dafbf57f0e432faf3cb536d69a880b3",
+    "align": "02_Voiceover/05_Master/hos_003_part03_vo_v02_draft_align.json",
+    "align_sha256": "16ab28d3bf0504e351601dc3c4933d983db009f42fd3859e586c90b0ae644e70",
+    "duration_s": 101.68
+  },
+  "music_source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part01_ominous_ward_v14_norm.wav",
+  "music_name": "hos_001_part01_ominous_ward_v14_norm.wav",
+  "bed_vol": 0.34,
+  "timing_board": "07_Edit-Project/parts/part-03_plates_v01.json",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "picture_s": 83.4,
+  "mix_s": 83.4,
+  "vo_trim_s": 18.28,
+  "plates": [
+    {
+      "file": "01_chapter_bones_v01.mp4",
+      "sha256": "ebb64736279d6455d062e740d154d272ead839662eca7865ef4eb0e0a61a6926",
+      "order": 1
+    },
+    {
+      "file": "02_hand_enters_path_v03.mp4",
+      "sha256": "8df82c6eee13158a9866b356323f59d3080deb2910f40c99443dbe9eeba94a14",
+      "order": 2
+    },
+    {
+      "file": "03_soft_fades_v01.mp4",
+      "sha256": "5278f40d88f7c65949c773dbdf31633d94200d8badd67a6fe77a712a1e275b1a",
+      "order": 3
+    },
+    {
+      "file": "04_bones_hold_v03.mp4",
+      "sha256": "d1b54bb9cf7bf5ca2621bbd4cef959b9d2f23b09a84178f7a68110557279db25",
+      "order": 4
+    },
+    {
+      "file": "05_ring_darker_v05.mp4",
+      "sha256": "a57705df6eaca9c42bdd3a94e7f8f3aa0633c492cc0659c0f57988c89349cf93",
+      "order": 5
+    },
+    {
+      "file": "06_living_skeleton_read_v02.mp4",
+      "sha256": "c2ebf454c382e4fa866e35eba023f312cba60ff8cb5e5326e557a8fabdb7263b",
+      "order": 6
+    },
+    {
+      "file": "07_explorer_hand_beam_v03.mp4",
+      "sha256": "7d4d70ee8aeeb3f450f368c143b4feeb804e0739b83ec9272b752397876aa4f0",
+      "order": 7
+    },
+    {
+      "file": "08_medicine_question_v02.mp4",
+      "sha256": "e770f6783382d6ebad9eaedbc0b57e3fcbf32192d0a48891a2b3670f3671a36a",
+      "order": 8
+    },
+    {
+      "file": "09_wonder_v02.mp4",
+      "sha256": "efcf9c67d62b40b10ece57ea5c6ebc52e7616ca8579880d5fa666bac30938e18",
+      "order": 9
+    },
+    {
+      "file": "10_caution_burn_v02.mp4",
+      "sha256": "366a6e5b6a2107ebf9f3d95d9ed30ca0aa740b7ec55e99725a155772b5329da2",
+      "order": 10
+    },
+    {
+      "file": "11_hold_beam_v02.mp4",
+      "sha256": "d9bbd16b12a964c479ced75d397e44cb1abd25e4545a82f32aeb33c1241e8fe8",
+      "order": 11
+    }
+  ],
+  "plate_versions_verified": [
+    {
+      "file": "01_chapter_bones_v01.mp4",
+      "sha256": "ebb64736279d6455d062e740d154d272ead839662eca7865ef4eb0e0a61a6926"
+    },
+    {
+      "file": "02_hand_enters_path_v03.mp4",
+      "sha256": "8df82c6eee13158a9866b356323f59d3080deb2910f40c99443dbe9eeba94a14"
+    },
+    {
+      "file": "03_soft_fades_v01.mp4",
+      "sha256": "5278f40d88f7c65949c773dbdf31633d94200d8badd67a6fe77a712a1e275b1a"
+    },
+    {
+      "file": "04_bones_hold_v03.mp4",
+      "sha256": "d1b54bb9cf7bf5ca2621bbd4cef959b9d2f23b09a84178f7a68110557279db25"
+    },
+    {
+      "file": "05_ring_darker_v05.mp4",
+      "sha256": "a57705df6eaca9c42bdd3a94e7f8f3aa0633c492cc0659c0f57988c89349cf93"
+    },
+    {
+      "file": "06_living_skeleton_read_v02.mp4",
+      "sha256": "c2ebf454c382e4fa866e35eba023f312cba60ff8cb5e5326e557a8fabdb7263b"
+    },
+    {
+      "file": "07_explorer_hand_beam_v03.mp4",
+      "sha256": "7d4d70ee8aeeb3f450f368c143b4feeb804e0739b83ec9272b752397876aa4f0"
+    },
+    {
+      "file": "08_medicine_question_v02.mp4",
+      "sha256": "e770f6783382d6ebad9eaedbc0b57e3fcbf32192d0a48891a2b3670f3671a36a"
+    },
+    {
+      "file": "09_wonder_v02.mp4",
+      "sha256": "efcf9c67d62b40b10ece57ea5c6ebc52e7616ca8579880d5fa666bac30938e18"
+    },
+    {
+      "file": "10_caution_burn_v02.mp4",
+      "sha256": "366a6e5b6a2107ebf9f3d95d9ed30ca0aa740b7ec55e99725a155772b5329da2"
+    },
+    {
+      "file": "11_hold_beam_v02.mp4",
+      "sha256": "d9bbd16b12a964c479ced75d397e44cb1abd25e4545a82f32aeb33c1241e8fe8"
+    }
+  ],
+  "labels": [
+    {
+      "t0": 15.650000000000002,
+      "t1": 19.450000000000003,
+      "text": "SOFT TISSUE"
+    },
+    {
+      "t0": 23.2,
+      "t1": 26.8,
+      "text": "BONES"
+    },
+    {
+      "t0": 38.29999999999999,
+      "t1": 42.09999999999999,
+      "text": "NO KNIFE"
+    },
+    {
+      "t0": 68.44999999999999,
+      "t1": 72.04999999999998,
+      "text": "CAUTION"
+    }
+  ],
+  "teach_cards": [
+    {
+      "t0": 28.76,
+      "t1": 32.96,
+      "title": "DENSITY MAP",
+      "body": "Soft tissue lets more ray through; bone stops more \u2014 dark on screen."
+    },
+    {
+      "t0": 33.160000000000004,
+      "t1": 36.56,
+      "title": "RING DARKER",
+      "body": "Metal denser still \u2014 wedding ring draws a hard black line."
+    },
+    {
+      "t0": 54.34999999999999,
+      "t1": 58.149999999999984,
+      "title": "MEDICINE",
+      "body": "See a break before you cut."
+    },
+    {
+      "t0": 69.74999999999999,
+      "t1": 73.74999999999999,
+      "title": "CAUTION CARD",
+      "body": "Invisible light that writes bones can also burn."
+    }
+  ],
+  "cues": "07_Edit-Project/PART03_ASSEMBLE_V01_CUES.md",
+  "do_not": [
+    "mint new Veo",
+    "remint plates",
+    "invent VO",
+    "ping Ben",
+    "Public upload"
+  ],
+  "landed_at": "2026-09-21T19:29:52.150497+01:00",
+  "house": "Silent-readable + teaching density. Continuous 1x motion. Ominous ward bed under VO. Explorer only on plate 07. No DNA helix. VO trimmed to picture (no freeze-pad)."
+}

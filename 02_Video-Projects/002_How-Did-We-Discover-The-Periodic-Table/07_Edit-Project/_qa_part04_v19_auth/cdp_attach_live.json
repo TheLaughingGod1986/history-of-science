@@ -1,0 +1,53 @@
+{
+  "cdp": "http://127.0.0.1:9222",
+  "profile_hint": "Chrome-OrbitStudio",
+  "steps": [
+    {
+      "url": "https://flow.google.com/",
+      "title": "Google Flow \u2013 AI creative studio for video, images and custom tools",
+      "passkey": false,
+      "credits": null,
+      "ultra": true,
+      "has_required_email_in_body": false,
+      "has_forbidden_in_body": false,
+      "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/cdp_attach_0_flow_home.png",
+      "body_snip": "Skip to main content\nGoogle Flow\nFlow Music\ntv\nFlow TV\nhelp\nmore_vert\nULTRA\nSept 09 - 13:07\nedit\ndelete\nSept 09 - 12:08\nedit\ndelete\nSept 09 - 11:48\nedit\ndelete\nSept 09 - 11:44\nedit\ndelete\nSept 09 - 10:20\nedit\ndelete\nSept 09 - 06:04\nedit\ndelete\nSept 09 - 05:58\nedit\ndelete\nSept 09 - 05:51\nedit\ndelete\nSept 09 - 04:59\nedit\ndelete\nSept 09 - 04:49\nedit\ndelete\nSept 09 - 04:39\nedit\ndelete\nSept 09 - 04:23\nedit\ndelete\nSept 09 - 04:13\nedit\ndelete\nSept 09 - 04:02\nedit\ndelete"
+    },
+    {
+      "clicked": "[aria-label*='Account' i]",
+      "url": "https://flow.google.com/",
+      "passkey": false,
+      "credits": null,
+      "has_required": true,
+      "has_forbidden": false,
+      "ultra": true,
+      "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/cdp_attach_1_after_menu.png",
+      "body_snip": "Skip to main content\nGoogle Flow\nFlow Music\ntv\nFlow TV\nhelp\nmore_vert\nULTRA\nSept 09 - 13:07\nedit\ndelete\nSept 09 - 12:08\nedit\ndelete\nSept 09 - 11:48\nedit\ndelete\nSept 09 - 11:44\nedit\ndelete\nSept 09 - 10:20\nedit\ndelete\nSept 09 - 06:04\nedit\ndelete\nSept 09 - 05:58\nedit\ndelete\nSept 09 - 05:51\nedit\ndelete\nSept 09 - 04:59\nedit\ndelete\nSept 09 - 04:49\nedit\ndelete\nSept 09 - 04:39\nedit\ndelete\nSept 09 - 04:23\nedit\ndelete\nSept 09 - 04:13\nedit\ndelete\nSept 09 - 04:02\nedit\ndelete\nSept 09 - 03:53\nedit\ndelete\nSept 09 - 03:51\nedit\ndelete\nSept 09 - 03:23\nedit\ndelete\nSept 09 - 03:10"
+    }
+  ],
+  "all_urls": [
+    "https://www.facebook.com/profile.php?id=61592833318203",
+    "https://flow.google.com/"
+  ],
+  "flow_urls": [
+    "https://flow.google.com/"
+  ],
+  "menu_errors": [
+    {
+      "sel": "a[aria-label*='Google Account' i]",
+      "err": "Locator.click: Timeout 2000ms exceeded.\nCall log:\n  - waiting for locator(\"a[aria-label*='Google Account' i]\").first\n    - locator resolved to <a tabindex=\"0\" role=\"button\" aria-expanded=\"false\" class"
+    }
+  ],
+  "emails_in_dom": [
+    "benoats@googlemail.com"
+  ],
+  "myaccount": {
+    "url": "https://myaccount.google.com/?pli=1",
+    "has_required": true,
+    "has_forbidden": false,
+    "snip": "Skip to main content\nAccount\nHelp\nHome\nHome\nFamily\nFamily\nGoogle AI Ultra plan\nGoogle AI Ultra plan\nWallet and subscriptions\nWallet and subscriptions\nPersonal info\nPersonal info\nSecurity and sign-in\nSecurity and sign-in\nGoogle password\nGoogle password\nLinked apps\nLinked apps\nData and privacy\nData and privacy\nPeople and sharing\nPeople and sharing\nBenjamin Oats\nbenoats@googlemail.com\nUltra\nsearch\nMy password\nDevices\nPassword Manager\nMy Activity\nEmail\nCritical security alert\nSuspicious activity in your account\nCheck activity\nShow more\n1\n\nOnly you can see your settings. You might also want to review your settings for Maps, Search or whatever Google service that you use the most. Google keeps your data private, safe and secure. Learn more\n",
+    "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v19_auth/cdp_attach_2_myaccount.png"
+  },
+  "status": "AUTH_OK_ULTRA_NO_CREDIT_PARSE",
+  "ultra": true
+}

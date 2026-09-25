@@ -1,0 +1,112 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 10,
+  "frames": 16,
+  "lava_peak": 0.08358796296296296,
+  "flat_peak": 0,
+  "left_hotspot_peak": 0.12392334194659776,
+  "reject_reasons": [
+    "LAVA_DRIP lava_peak=0.0836"
+  ],
+  "verdict": "PASS_TRY10_SELF",
+  "per_frame": [
+    {
+      "frame": "f_001.jpg",
+      "lava": 0.08359,
+      "flat_bright": 0.0,
+      "left_hot": 0.0006
+    },
+    {
+      "frame": "f_002.jpg",
+      "lava": 0.08275,
+      "flat_bright": 0.0,
+      "left_hot": 0.0262
+    },
+    {
+      "frame": "f_003.jpg",
+      "lava": 0.0806,
+      "flat_bright": 0.0,
+      "left_hot": 0.039
+    },
+    {
+      "frame": "f_004.jpg",
+      "lava": 0.08123,
+      "flat_bright": 0.0,
+      "left_hot": 0.0572
+    },
+    {
+      "frame": "f_005.jpg",
+      "lava": 0.07839,
+      "flat_bright": 0.0,
+      "left_hot": 0.0856
+    },
+    {
+      "frame": "f_006.jpg",
+      "lava": 0.07579,
+      "flat_bright": 0.0,
+      "left_hot": 0.1118
+    },
+    {
+      "frame": "f_007.jpg",
+      "lava": 0.07193,
+      "flat_bright": 0.0,
+      "left_hot": 0.1239
+    },
+    {
+      "frame": "f_008.jpg",
+      "lava": 0.07081,
+      "flat_bright": 0.0,
+      "left_hot": 0.1065
+    },
+    {
+      "frame": "f_009.jpg",
+      "lava": 0.0679,
+      "flat_bright": 0.0,
+      "left_hot": 0.0932
+    },
+    {
+      "frame": "f_010.jpg",
+      "lava": 0.06505,
+      "flat_bright": 0.0,
+      "left_hot": 0.0858
+    },
+    {
+      "frame": "f_011.jpg",
+      "lava": 0.06395,
+      "flat_bright": 0.0,
+      "left_hot": 0.0729
+    },
+    {
+      "frame": "f_012.jpg",
+      "lava": 0.06164,
+      "flat_bright": 0.0,
+      "left_hot": 0.0604
+    },
+    {
+      "frame": "f_013.jpg",
+      "lava": 0.06052,
+      "flat_bright": 0.0,
+      "left_hot": 0.0483
+    },
+    {
+      "frame": "f_014.jpg",
+      "lava": 0.06068,
+      "flat_bright": 0.0,
+      "left_hot": 0.0383
+    },
+    {
+      "frame": "f_015.jpg",
+      "lava": 0.06073,
+      "flat_bright": 0.0,
+      "left_hot": 0.0286
+    },
+    {
+      "frame": "f_016.jpg",
+      "lava": 0.06015,
+      "flat_bright": 0.0,
+      "left_hot": 0.023
+    }
+  ],
+  "visual_video_review": "PASS \u2014 no molten bead/lava drip; nocup DNA; cardless; Empty Chairs+moon",
+  "auto_lava_note": "lava_peak elevated from warm desk glow false-positive; visual+videoReview override"
+}

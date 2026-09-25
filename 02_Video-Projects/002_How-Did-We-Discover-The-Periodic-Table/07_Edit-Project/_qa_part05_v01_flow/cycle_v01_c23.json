@@ -1,0 +1,21 @@
+{
+  "cycle": "v01_c23_09b2_10t2",
+  "jobs": [
+    {
+      "plate": "09b_victory_seats",
+      "try": "2_v01",
+      "which": "card_wall_battery_phone_pill_steel",
+      "note": "battery/phone/pill/steel on cream-card WALL shelves like KEEP 09, not armchairs",
+      "out": "submit_09b_victory_seats_try2.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 09b_victory_seats try2 — victory seats. VO beat: batteries, phones, medicine, steel. ONE continuous 8s take. SAME 1869 honey-wood WALL of cream-card shelves as KEEP 09. Four cream CARD seats hold tiny cartoon props IN TURN on little shelves: a battery, a telephone, a pill bottle, a steel beam. NOT salt/iodine/balloon. NOT upholstered armchairs. No logos. No photoreal phones. No English words. NEVER furniture chairs in a waiting room. NEVER a white gallery. Continuous pulse. No person. No lamp. No fire. No neon. Silent. HARD REJECT: photoreal phones, logos, lava, fire, model-town, Ken Burns only, moon-desk still-life, white gallery, armchair waiting room. Plate-library lock 4b8ed25."
+    },
+    {
+      "plate": "10_zoo_became_city",
+      "try": "2_v01",
+      "which": "wide_city_of_seats",
+      "note": "wide pull-back filled cream-card wall as a city of seats, never houses",
+      "out": "submit_10_zoo_became_city_try2.json",
+      "prompt": "TEXT-TO-VIDEO. Plate 10_zoo_became_city try2 — a city. VO beat: the zoo became a city. ONE continuous 8s take. WIDE pull-back / settle on a filled 1869 honey-wood cream-card WALL seating chart reading as order — a city of SEATS, NEVER tiny houses, NEVER streets of buildings, NEVER yellow house-blocks, NEVER a white gallery, NEVER a modern classroom, NEVER a waiting room of armchairs. Continuous soft settle. Daytime window bounce only. No person. No practical lamp. Silent. HARD REJECT: model-town, house-blocks, map pins, lava, fire, Ken Burns only, moon-desk still-life, white gallery. Plate-library lock 4b8ed25."
+    }
+  ]
+}

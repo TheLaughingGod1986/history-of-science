@@ -1,0 +1,53 @@
+{
+  "tag": "06_explorer_leaves_gap_try4",
+  "clip": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v11_fast/06_explorer_leaves_gap_v11.try4.tmp.mp4",
+  "scores": [
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try4_candle_t0.jpg",
+      "candle_hits": 1,
+      "candle": false
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try4_candle_t1.jpg",
+      "candle_hits": 72,
+      "candle": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try4_candle_t2.jpg",
+      "candle_hits": 66,
+      "candle": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try4_candle_t3.jpg",
+      "candle_hits": 79,
+      "candle": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try4_candle_t4.jpg",
+      "candle_hits": 58,
+      "candle": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try4_candle_t5.jpg",
+      "candle_hits": 41,
+      "candle": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try4_candle_t6.jpg",
+      "candle_hits": 119,
+      "candle": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try4_candle_t7.jpg",
+      "candle_hits": 140,
+      "candle": true
+    },
+    {
+      "still": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v11_plate/06_explorer_leaves_gap_try4_candle_t8.jpg",
+      "candle_hits": 237,
+      "candle": true
+    }
+  ],
+  "candle_frame_count": 8,
+  "reject": true
+}

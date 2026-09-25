@@ -1,0 +1,10 @@
+{
+  "parent_v16_sha": "7e083fc440879209bbc69459fbaf21dc29dbfc1f77b370ec92ee931bec82cb3c",
+  "bible_main": "25bdefd",
+  "plates": {
+    "11_publish_gaps": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v17_start_frames/11_publish_gaps_start_v17.jpg",
+    "11b_wait_and_hunt": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v17_start_frames/11b_wait_and_hunt_start_v17.jpg"
+  },
+  "method": "painted_sharp_publish_from_KEEP_room_DNA \u2014 NOT v01 restore, NOT temporal-median deghost",
+  "note": "v16 restored v01 for 11/11b and UAT still failed ghosts; fresh paint only"
+}

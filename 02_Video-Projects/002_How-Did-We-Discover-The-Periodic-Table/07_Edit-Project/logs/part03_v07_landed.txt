@@ -1,0 +1,11 @@
+=== FINAL hos_002_part03_rough_v07 ===
+-rw-r--r--@ 1 benjaminoats  staff  91490005 Sep  7 16:59 /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v07.mp4
+duration=89.680000
+size=91490005
+f39d794ed6d8d23faeb67320f623cc0213d0b344eca29e2fa8b48d8117664bd1  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part03_rough_v07.mp4
+=== ICLOUD ===
+-rw-r--r--@ 1 benjaminoats  staff  91490005 Sep  7 16:59 /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part03_rough_v07.mp4
+f39d794ed6d8d23faeb67320f623cc0213d0b344eca29e2fa8b48d8117664bd1  /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part03_rough_v07.mp4
+=== P01/P02 after ===
+d903cf7ca1789dcfc1a3703b9215564b3a0d306d0ea1dbf7c2a974888fa92781  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part01_rough_v14.mp4
+799086795d62f159930bd00db638ea2de0e02a299d8c9d50c8eed3d482e89529  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/09_Final-Export/hos_002_part02_rough_v06.mp4

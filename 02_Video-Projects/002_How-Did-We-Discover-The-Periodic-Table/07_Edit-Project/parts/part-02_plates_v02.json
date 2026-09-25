@@ -1,0 +1,90 @@
+{
+  "part": 2,
+  "title": "First Patterns, Still Wrong",
+  "status": "uat_fix_v02_english_cards_no_fire",
+  "style_lock": "hos_002_part02_science_card_v02",
+  "clip_use_s": 8.0,
+  "xfade_s": 0.4,
+  "vo_file": "02_Voiceover/part02_first_patterns_v01.wav",
+  "notes": "Ben UAT v01 FAIL: gibberish science-card text + pots on fire. KEEP cream parchment science-card look. Exact English factual copy only. ZERO flames / burners / fire under jars. Remint 02–11; keep 01 chapter card.",
+  "physics_lock": "Science cards: sharp readable English only — no Latin gibberish, no misspellings, no invented words. Workshops if any: OPAQUE lidded ceramic/metal jars only. ZERO flames, ZERO open burners, ZERO fire under pots, ZERO glowing vapor from jar mouths, ZERO clear liquid bubbles. Silent.",
+  "plates": [
+    {
+      "id": "01_chapter_card",
+      "kind": "science_card",
+      "remint": false,
+      "explorer": false,
+      "prompt": "KEEP. Already PASS English chapter card."
+    },
+    {
+      "id": "02_lavoisier_list",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood planks — same loved History of Science card look (deckled edges, thin brown ornate border, corner flourishes, faint molecular watermark). Title exactly: LAVOISIER'S LIST. Body text exactly, sharp English: He listed simple substances — things his tools could not break. A start. Not a map. HARD RULES: readable correct English only. NO gibberish. NO Latin filler. NO misspellings. NO flames, fire, burners, or pots on fire anywhere. Subtle warm light pulse. Continuous gentle motion. Silent. No Orbit."
+    },
+    {
+      "id": "03_not_a_map",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood — same loved card look. Title exactly: NOT A MAP. Body text exactly: A list of names is not a table of nature. Order was still missing. HARD RULES: sharp factual English only. NO gibberish. NO Sciener. NO Latin filler. NO flames or burning pots in the frame. Gentle light pulse. Continuous motion. Silent. No Orbit."
+    },
+    {
+      "id": "04_triad_cards",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood — same loved card look. Title exactly: DÖBEREINER'S TRIADS. Body text exactly: Lithium, sodium, potassium. Chlorine, bromine, iodine. Three cousins — the middle often sat between the others in mass. HARD RULES: sharp factual English only. NO gibberish. NO misspellings. NO flames. Continuous gentle motion. Silent. No Orbit."
+    },
+    {
+      "id": "05_explorer_triad_break",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood — same loved card look. Title exactly: A RISKY RHYME. Body text exactly: Would you bet your reputation on a pattern that only works for a handful of names? Some did. HARD RULES: sharp factual English only. NO gibberish. NO Sciener. NO flames or pots on fire. Continuous gentle motion. Silent. No Orbit. No people."
+    },
+    {
+      "id": "06_rhymes_run_out",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood — same loved card look. Title exactly: THE RHYMES RUN OUT. Body text exactly: Then the list of elements grew. The tidy threes no longer fitted. HARD RULES: sharp factual English only. NO gibberish. NO Latin filler. NO flames. Continuous gentle motion. Silent. No Orbit."
+    },
+    {
+      "id": "07_newlands_octave",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood — same loved card look. Title exactly: NEWLANDS' OCTAVE. Body text exactly: Lined by atomic mass, every eighth element felt like a repeat — like a musical octave. HARD RULES: sharp factual English only. NO gibberish. NO misspellings. NO flames. Continuous gentle motion. Silent. No Orbit."
+    },
+    {
+      "id": "08_piano_gag_fail",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood — same loved card look. Title exactly: NOT A PIANO. Body text exactly: People laughed. A chemist is not a piano — and nature refused the joke. HARD RULES: sharp factual English only. NO gibberish. NO Sciener. NO flames or burning pots. Continuous gentle motion. Silent. No Orbit."
+    },
+    {
+      "id": "09_almost_right",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood — same loved card look. Title exactly: ALMOST RIGHT. Body text exactly: Why does a near-miss hurt more than a blank page? Close enough to be mocked — which is still wrong. HARD RULES: sharp factual English only. NO gibberish. NO Latin filler. NO flames. Continuous gentle motion. Silent. No Orbit."
+    },
+    {
+      "id": "10_ruler_crooked",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood — same loved card look. Title exactly: CROOKED RULER. Body text exactly: What if the pattern was real, and the measuring stick was wrong? HARD RULES: sharp factual English only. NO gibberish. NO Sciener. ZERO flames, fire, burners, or pots on fire. Continuous gentle motion. Silent. No Orbit."
+    },
+    {
+      "id": "11_shared_stick",
+      "kind": "science_card",
+      "remint": true,
+      "explorer": false,
+      "prompt": "Premium 3D cartoon cream parchment SCIENCE CARD on dark wood — same loved card look. Title exactly: A SHARED STICK. Body text exactly: Until atomic masses were trusted, every table was a guess. The next leap was a shared measuring stick. HARD RULES: sharp factual English only. NO gibberish. NO blurry nonsense. NO flames. Continuous gentle motion. Silent. No Orbit."
+    }
+  ]
+}

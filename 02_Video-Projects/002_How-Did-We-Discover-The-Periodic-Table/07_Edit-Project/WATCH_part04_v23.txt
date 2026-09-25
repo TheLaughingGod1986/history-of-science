@@ -1,0 +1,39 @@
+WATCH THIS FILE ONLY (Part 04 rough v23 — Explorer on-model + music through VO):
+  hos_002_part04_rough_v23.mp4
+
+Ben UAT fixes vs v22:
+- Explorer: try8B on-model (glasses/vest/satchel) — supersedes try3 OTS toy-scale.
+- Music: curious workshop bed looped to cover full VO (was silent after ~85s).
+
+CoS / Picture→UAT gates for this cut:
+- KEEP remints (v22 set + Explorer swap):
+  · 05_columns_families try2B Quality sha 49437e7e…e8caa
+  · 06_explorer_leaves_gap try8B sha fd4627d2…5c7a70 (on-model remint)
+  · 09b_risk_hold try14 Quality sha 47a6bdeb…44c38
+  · 10_family_before_weight try1A Quality sha 49240cbb…81b78
+  · 11_publish_gaps try9 sha 97d0c419…8cc72
+  · 11b_wait_and_hunt try1 sha 5602762e…3075e
+- Scrub Explorer ~45–53s vs Germs/P01 lock. Scrub music present past 50s + through end.
+- NO PAINT FALLBACK. Part 01–03 LOCKED. Do NOT declare PASS.
+
+Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v22_sha=78039206d044fd9ee61aed5dd3aa491fa697c32b2896ae7311a175db630b13d3
+parent_v20_sha=1cd8249ad635b5f8339dc5fb155c9483c090ea4c6969efab19572ffa14d6d45b
+parent_v21_sha=868a012c5f52fa7f412a076cf26593f9cd700f3c03299cd14ff7010eb6804963
+keep_remints=05_columns_families,06_explorer_leaves_gap,09b_risk_hold,10_family_before_weight,11_publish_gaps,11b_wait_and_hunt
+explorer_picture=45.300-53.200
+plate09b_picture=98.150-106.050
+plate10_picture=105.700-113.600
+plate11_picture=113.250-121.150
+plate11b_picture=120.800-128.700
+plate05_sha256=49437e7e4004c224b021409e15ebb50fb06b74737adfe2b6c0bc0a61bfae8caa
+plate06_sha256=fd4627d29e8087ff50baca163fc0dd155d2a19eb5127dc1c3c7379e9525c7a70
+plate10_sha256=49240cbb4fab760e710f24051d822c61f0b8c1236684fc697016db325ab81b78
+plate09b_sha256=47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38
+plate11_sha256=97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72
+plate11b_sha256=5602762e82fd40eb654b25a5d3e5260e8baf79707fb19ecf8b58ede67cb3075e
+bed=hos_002_part01_curious_workshop_v02_loop130_norm.wav
+sha256=7beae93d10a87066731ae58bc39039eabda625154aa7f0aa3e7c4d9f6e5e5b5f
+bytes=78282386
+duration=127.760

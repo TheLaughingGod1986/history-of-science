@@ -1,0 +1,31 @@
+{
+  "engine": "gemini-api-veo",
+  "model": "veo-3.1-generate-preview",
+  "parent_v15_sha": "cd7a57b2979478a34ac7cc5fe5639aa156ae603b437674ccd724ab3fe994748c",
+  "bible_main": "25bdefd",
+  "reason": "Flow UI generate OK but gallery harvest broken; Gemini I2V fallback",
+  "flow_account_target": "benoats@googlemail.com",
+  "only": [
+    "10_family_before_weight",
+    "11_publish_gaps",
+    "11b_wait_and_hunt"
+  ],
+  "plates": [
+    {
+      "id": "10_family_before_weight",
+      "status": "fail",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}"
+    },
+    {
+      "id": "11_publish_gaps",
+      "status": "fail",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}"
+    },
+    {
+      "id": "11b_wait_and_hunt",
+      "status": "fail",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}"
+    }
+  ],
+  "updated": "2026-09-09T10:44:45"
+}

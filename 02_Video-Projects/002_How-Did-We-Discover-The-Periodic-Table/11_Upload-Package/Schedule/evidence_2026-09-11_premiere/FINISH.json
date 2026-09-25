@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "mode": "finish_draft",
+  "videoId": "AL_-qlWko_g",
+  "premiere": "Thursday 17 Sep 2026 19:00 Europe/London",
+  "started": "2026-09-11T09:23:30+01:00",
+  "editDraft": "Edit draft",
+  "tags": {
+    "chars": 426,
+    "ok": false,
+    "reason": "no_tags_box"
+  },
+  "audience": {
+    "kids": "err:TimeoutError",
+    "ai": "skip"
+  },
+  "next": "vis_3",
+  "scheduleRadio": "select_date_copy",
+  "when": {
+    "date_picked": "17",
+    "time_focus": {
+      "ok": true,
+      "old": "00:00"
+    },
+    "time_typed": "19:00",
+    "premiere_click": "Set as Premiere"
+  },
+  "confirmClick": "Schedule",
+  "editSnip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n9:01\nYour video\nHow Did We Discover the Periodic Table?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nHow Did We Discover the Periodic Table?\nA/B Testing\nDescription\nHow Did We Discover the Periodic Table?\n\nThe cleverest part was not the names. It was the empty chairs. In 1869 Dmitri Mendeleev left seats for metals nobody had found yet \u2014 then gallium, scandium and germanium sat where he told them to sit.\n\nA 3D cartoon film about chemistry becoming navigation: atomic weight, predicted elements, and the moment a zoo of chemicals became a city you can read.\n\n0:00 A zoo of names\n1:25 First patterns\n2:49 A ruler for atoms\n4:21 Empty chairs\n6:31 The guests arrive\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nUpload file\nSelect from video\nA/B Testing\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, you're legally required to comply with the Children's Online Privacy Protection Act (COPPA) and/or other laws. You're required to tell us whether your videos are 'Made for Kids'. What is 'Made for Kids' content?\nFeatures li",
+  "scheduled": true,
+  "stillDraft": false,
+  "finished": "2026-09-11T09:24:34+01:00"
+}

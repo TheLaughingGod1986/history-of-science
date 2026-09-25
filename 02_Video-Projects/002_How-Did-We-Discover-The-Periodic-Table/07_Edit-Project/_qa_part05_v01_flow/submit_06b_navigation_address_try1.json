@@ -1,0 +1,32 @@
+{
+  "plate": "06b_navigation_address",
+  "try": "1_v01",
+  "which": "push_vacant_wall_slot",
+  "start_n": 2,
+  "max_starts": 2,
+  "cycle": "v01_c8_05b3_06b",
+  "project_url": "https://flow.google.com/project/1ca9d6b8-9a8e-4e31-940d-a810185e88a5",
+  "info": {
+    "seconds": 56.0,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": null,
+    "orbit_attached": false,
+    "identity_lock": false,
+    "scenery_only": true,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/1ca9d6b8-9a8e-4e31-940d-a810185e88a5",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/1ca9d6b8-9a8e-4e31-940d-a810185e88a5"
+  },
+  "start_frame": null,
+  "mode": "T2V",
+  "model": "Veo 3.1 - Quality",
+  "when": "2026-09-10T19:24:24",
+  "paint": "banned",
+  "assemble": false,
+  "note": "camera PUSH to one vacant WALL slot; cool pale gold rim; not a chair walk"
+}

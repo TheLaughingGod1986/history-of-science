@@ -1,0 +1,61 @@
+{
+  "plate": "10_family_before_weight",
+  "try": 1,
+  "start_n": 1,
+  "max_starts": 2,
+  "dna_family": "BOARDTOP_DAY_NOFIXTURE",
+  "project_url": "https://flow.google.com/project/819c47b5-497b-498c-932c-bedab3f5e899",
+  "info": {
+    "seconds": 62.9,
+    "bytes": 0,
+    "model": "Veo 3.1 - Quality",
+    "engine": "flow-ui-veo",
+    "orbit_ref": null,
+    "start_frame": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v22_dna_try2_10/10_family_before_weight_start_v22_try1_active.jpg",
+    "orbit_attached": true,
+    "identity_lock": false,
+    "scenery_only": false,
+    "media_id": "gallery-pending:0",
+    "url": "https://flow.google.com/project/819c47b5-497b-498c-932c-bedab3f5e899",
+    "context_closed": false,
+    "needs_gallery_harvest": true,
+    "project_url": "https://flow.google.com/project/819c47b5-497b-498c-932c-bedab3f5e899"
+  },
+  "start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v22_dna_try2_10/10_family_before_weight_start_v22_try1_active.jpg",
+  "start_sha256": "8b55374212c1a1b11262ed600a78f78cc8d6cc71bb7121f1a442965b343bdcbf",
+  "start_lock": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v22_dna_try2_10/10_family_before_weight_start_v22_try1_BOARDTOP_CARDS_ONLY.jpg",
+  "parent_start": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v21_lava_remint_starts/10_family_before_weight_start_v21_from_v20_t04.jpg",
+  "start_dna": "try1A BOARDTOP_DAY_NOFIXTURE cards-only (05 try2B KEEP lesson): cream cards fill frame; daylight bounce ONLY; no furniture-lamp volume; two cards swap order in one family column; LEFT THIRD + UPPER FIFTH fixture-empty; LOCKED BOARDTOP; plate-library 4b8ed25; main 3bc0414; NOT v21 lamp-desk; paint banned; Seedance banned; Fast banned; Quality REQUIRED",
+  "family": "BOARDTOP_DAY_NOFIXTURE_join_05_try2B",
+  "plate_library_lock_sha": "4b8ed25",
+  "main_lock_sha": "3bc0414",
+  "model": "Veo 3.1 - Quality",
+  "model_rationale": "Quality REQUIRED \u2014 BOARDTOP_DAY_NOFIXTURE CLEAN LIGHT remint (locked Showrunner brief PART04_NEXT_PLATE_10_TRY1_BOARDTOP_DNA.md; join 05 try2B KEEP 49437e7e4004\u2026)",
+  "seedance": "banned",
+  "fast": "banned",
+  "when": "2026-09-10T13:33:19",
+  "auth": {
+    "ultra": true,
+    "email_hint": true
+  },
+  "paint": "banned",
+  "assemble": false,
+  "parent_keeps": {
+    "05": "KEEP 49437e7e4004c224b021409e15ebb50fb06b74737adfe2b6c0bc0a61bfae8caa",
+    "06": "KEEP",
+    "09b": "KEEP",
+    "11": "KEEP",
+    "11b": "KEEP"
+  },
+  "out_of_scope": [
+    "05_columns_families",
+    "06_explorer_leaves_gap",
+    "09b_risk_hold",
+    "11_publish_gaps",
+    "11b_wait_and_hunt",
+    "assemble"
+  ],
+  "stop_rule": "Max 2 Quality starts this BOARDTOP_DAY_NOFIXTURE DNA; invent lamp/lava/molten bead \u2192 SELF_REJECT; both fail \u2192 STOP_TO_COS",
+  "brief_lock": "PART04_NEXT_PLATE_10_TRY1_BOARDTOP_DNA.md",
+  "banned_dna": "v21 lamp-desk with underside bulb / lava drip"
+}
