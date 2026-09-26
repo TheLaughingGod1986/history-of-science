@@ -5,58 +5,59 @@
 | Slug | `004_Whats-Really-Inside-An-Atom` |
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | Ben picked 26 Sep 2026 (the atom; why the periodic table has its order) |
-| Title | *Why Is the Periodic Table in This Order?* (main, chosen 26 Sep from the audit); Test & Compare *What's Really Inside an Atom?* and *How Small Can You Cut Gold?*. Folder slug unchanged. |
-| Script | `01_Script/atom_script_master_v02.md`. **Ben: KEEP (26 Sep 2026).** Narration locked; v01 kept as `atom_script_v01_ben.md`. |
-| Script review | 88.9. **Passed by hand by Ben, 26 Sep 2026** (reviewer counting bug; see note) |
-| Pre-build vidIQ audit | **Signed off by Ben, 26 Sep 2026.** vidIQ waived; public search data used (`11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`) |
-| Episode gate | **Passed by Ben (manual), 26 Sep 2026.** `gate:episode` still prints REJECT on the reviewer score; that line is overridden. All other checks OK. |
-| VO | **READY (27 Sep 2026).** Ben Orbit Narrator · five part masters · see table below. Copied to iCloud for phone listen. |
-| Picture | not started (Flow Veo 3.1, plate library) — **do not mint until Ben passes VO** |
-| Runtime (recorded) | **536.160 s = 8:56** total VO (script estimate was ~8:25; re-time parts from this VO) |
-| Air | Thu 15 Oct 2026 18:00 UK, normal publish (no Premiere). Fallback Thu 22 Oct. `11_Upload-Package/LAUNCH_PLAN.md` |
-| Shorts | Fri 16 (gold coin, 004) · Sun 18 (002) · Tue 20 Oct (003), 11:30 UK |
-
-**Reviewer note (26 Sep):** the script reviewer counts at most one escalation word and one science word per script (its two regexes lack the global flag), which caps those two scores. With that fixed, v02 scores 91.8. Ben decides whether the fix goes in; it was not changed to pass this script.
-
-Only one version of the script is live: v02. Showrunner holds its own edits until Ben signs off.
+| Title | *Why Is the Periodic Table in This Order?* (main); Test & Compare *What's Really Inside an Atom?* and *How Small Can You Cut Gold?* |
+| Script | `01_Script/atom_script_master_v02.md`. **Ben: KEEP spoken words (26 Sep 2026).** VISUAL MUST times **re-timed 27 Sep from VO v01** (DRAFT pending VO listen KEEP). |
+| Script review | 88.9. Passed by hand by Ben, 26 Sep 2026 |
+| Pre-build vidIQ audit | Signed off by Ben, 26 Sep 2026 (vidIQ waived) |
+| Episode gate | Passed by Ben (manual), 26 Sep 2026 |
+| VO | **READY — awaiting Ben listen (STOP).** Masters in `02_Voiceover/05_Master/`. iCloud copy for phone. |
+| Re-time (Step 3) | **DRAFT pending VO KEEP.** `07_Edit-Project/VO_RETIME_v01.json` · script VISUAL MUST updated from measured VO · cold open every ~4–6 s (no 1:08–1:15 hold) |
+| Plate boards (Step 4) | **DRAFT pending VO KEEP.** `07_Edit-Project/parts/part-0N_plates_v01.json` · `mint: false` · Explorer ×3 only (P02 Te swap · P04 stadium pea · P05 final table) |
+| Picture | **not started** — no Flow / no mint until Ben PASS on VO |
+| Runtime (recorded VO) | **536.160 s = 8:56** |
+| Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
 ---
 
 ## STOP — VO ready, awaiting Ben listen (27 Sep 2026)
 
-**Do not start picture / plate boards / Flow until Ben passes these five VO masters.**
+**Do not Flow / mint / spend picture until Ben passes the five VO masters.**
 
-Voice: ElevenLabs **Ben Orbit Narrator** (`kDch6ACCIpqgQ0NsU9kk`) · settings from `04_Audio/tools/orbit_voice.py` · model `eleven_v3`.
+If Ben asks for a VO redo: re-time `atom_script_master_v02.md` VISUAL MUST + rebuild plate boards before any mint.
 
-Spoken text (locked words from `atom_script_master_v02.md`):
+### VO masters (v01)
 
-| Part | Text |
-|---|---|
-| 01 | `02_Voiceover/part01_cold_open_v01.txt` |
-| 02 | `02_Voiceover/part02_the_table_that_broke_its_own_rule_v01.txt` |
-| 03 | `02_Voiceover/part03_the_crumb_inside_the_atom_v01.txt` |
-| 04 | `02_Voiceover/part04_the_shell_that_bounced_back_v01.txt` |
-| 05 | `02_Voiceover/part05_counting_with_x_rays_v01.txt` |
+| Part | Duration | Mean dB | WAV sha256 |
+|---|---|---|---|
+| 01 | 75.440 s (1:15) | −23.8 | `32773ed38eed6693ac20a101a968bc34a4197294c88b1ddb0b1f668bc3077034` |
+| 02 | 95.760 s (1:35) | −21.9 | `7e3c50ef0ef824b9ebb8b3b7af8a69832bd1a4c69baab2b8447a9d70aa61a70f` |
+| 03 | 88.960 s (1:28) | −23.4 | `3db4205ae7c4df0bc403f087c517f8f4a00e70e07fef67ca39c0b22e35ad3805` |
+| 04 | 118.880 s (1:58) | −24.8 | `c608a223f4ac6fcf29c3aaf1facc28beb6316be7b63fd6a41564c1eea2f9de23` |
+| 05 | 157.120 s (2:37) | −24.3 | `8806482c4cbe96cf47d9c0962ac7f409c71040326f4b0ed9ad702b0b33180287` |
+| **Total** | **536.160 s (8:56)** | — | meta `02_Voiceover/05_Master/VO_MASTERS_v01.json` |
 
-Masters (media out of git; record only):
+Phone: `iCloud Drive/HOS UAT/004_Whats-Really-Inside-An-Atom/02_Voiceover/`
 
-| Part | Duration | Mean dB | WAV sha256 | Path |
-|---|---|---|---|---|
-| 01 | 75.440 s (1:15) | −23.8 | `32773ed38eed6693ac20a101a968bc34a4197294c88b1ddb0b1f668bc3077034` | `02_Voiceover/05_Master/hos_004_part01_vo_v01.wav` |
-| 02 | 95.760 s (1:35) | −21.9 | `7e3c50ef0ef824b9ebb8b3b7af8a69832bd1a4c69baab2b8447a9d70aa61a70f` | `02_Voiceover/05_Master/hos_004_part02_vo_v01.wav` |
-| 03 | 88.960 s (1:28) | −23.4 | `3db4205ae7c4df0bc403f087c517f8f4a00e70e07fef67ca39c0b22e35ad3805` | `02_Voiceover/05_Master/hos_004_part03_vo_v01.wav` |
-| 04 | 118.880 s (1:58) | −24.8 | `c608a223f4ac6fcf29c3aaf1facc28beb6316be7b63fd6a41564c1eea2f9de23` | `02_Voiceover/05_Master/hos_004_part04_vo_v01.wav` |
-| 05 | 157.120 s (2:37) | −24.3 | `8806482c4cbe96cf47d9c0962ac7f409c71040326f4b0ed9ad702b0b33180287` | `02_Voiceover/05_Master/hos_004_part05_vo_v01.wav` |
-| **Total** | **536.160 s (8:56)** | — | meta `02_Voiceover/05_Master/VO_MASTERS_v01.json` | — |
+### Re-time + chapter cards (from VO v01)
 
-**Phone listen (iCloud):**
+| Part | Film window | Chapter card |
+|---|---|---|
+| 01 Cold open | 0:00–1:15 | none |
+| 02 The Table That Broke Its Own Rule | 1:15–2:51 | 1:15 · ~1.5 s |
+| 03 The Crumb Inside the Atom | 2:51–4:20 | 2:51 · ~1.5 s |
+| 04 The Shell That Bounced Back | 4:20–6:19 | 4:20 · ~1.5 s |
+| 05 Counting With X-rays | 6:19–8:56 | 6:19 · ~1.5 s |
 
-`iCloud Drive/HOS UAT/004_Whats-Really-Inside-An-Atom/02_Voiceover/`
+Cold open: picture change every ~4–6 s. Replaced the old 1:08–1:15 slow Te hold with 1:09 knife/coin · 1:12 why-wrong (short) · 1:14 ledger bridge.
 
-- Per-part: `05_Master/hos_004_part0N_vo_v01.mp3` (and `.wav`)
-- Joined: `05_Master/hos_004_vo_all_parts_listen_v01.mp3`
+### Plate boards (DRAFT)
 
-Absolute (this machine worktree):  
-`/Users/benjaminoats/YouTube/history-of-science-hos004-vo-8839/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/`
+| Part | Plates | Explorer |
+|---|---|---|
+| 01 | 16 | none (0:18 Te/I = hand only) |
+| 02 | 10 | plate `07_explorer_te_before_i` |
+| 03 | 8 | none |
+| 04 | 10 | plate `07_explorer_stadium_pea` |
+| 05 | 11 | plate `09_explorer_final_table` (+ end card note) |
 
-**Next after Ben PASS:** plate boards → Flow Veo (steps 3+). No picture spend before then.
+**Next after Ben VO PASS:** mint Part 01 plates (Flow Veo 3.1) one at a time per STUDIO_PLAYBOOK §5.

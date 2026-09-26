@@ -1,0 +1,78 @@
+{
+  "status": "DRAFT_PENDING_VO_KEEP",
+  "source_vo": "02_Voiceover/05_Master/hos_004_part0N_vo_v01.wav",
+  "total_vo_s": 536.16,
+  "total_vo_clock": "8:56",
+  "parts": [
+    {
+      "part": "01",
+      "start_s": 0.0,
+      "end_s": 75.44,
+      "clock": "0:00\u20131:15",
+      "chapter_card": null
+    },
+    {
+      "part": "02",
+      "start_s": 75.44,
+      "end_s": 171.2,
+      "clock": "1:15\u20132:51",
+      "chapter_card": {
+        "at_s": 75.44,
+        "title": "The Table That Broke Its Own Rule",
+        "duration_s": 1.5
+      }
+    },
+    {
+      "part": "03",
+      "start_s": 171.2,
+      "end_s": 260.16,
+      "clock": "2:51\u20134:20",
+      "chapter_card": {
+        "at_s": 171.2,
+        "title": "The Crumb Inside the Atom",
+        "duration_s": 1.5
+      }
+    },
+    {
+      "part": "04",
+      "start_s": 260.16,
+      "end_s": 379.04,
+      "clock": "4:20\u20136:19",
+      "chapter_card": {
+        "at_s": 260.16,
+        "title": "The Shell That Bounced Back",
+        "duration_s": 1.5
+      }
+    },
+    {
+      "part": "05",
+      "start_s": 379.04,
+      "end_s": 536.16,
+      "clock": "6:19\u20138:56",
+      "chapter_card": {
+        "at_s": 379.04,
+        "title": "Counting With X-rays",
+        "duration_s": 1.5
+      }
+    }
+  ],
+  "cold_open_note": "Picture change every ~4\u20136 s; replaced 1:08\u20131:15 slow Te hold with 1:09 knife/coin, 1:12 why-wrong (short), 1:14 ledger bridge.",
+  "explorer_beats": [
+    {
+      "part": "02",
+      "plate": "07_explorer_te_before_i",
+      "act": "Te card swap"
+    },
+    {
+      "part": "04",
+      "plate": "07_explorer_stadium_pea",
+      "act": "stadium pea"
+    },
+    {
+      "part": "05",
+      "plate": "09_explorer_final_table",
+      "act": "final numbered table"
+    }
+  ],
+  "note": "If Ben asks for a VO redo, re-time script VISUAL MUST + rebuild plate boards before any Flow spend."
+}

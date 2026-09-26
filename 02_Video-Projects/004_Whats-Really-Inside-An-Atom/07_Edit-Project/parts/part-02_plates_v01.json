@@ -1,0 +1,132 @@
+{
+  "status": "DRAFT_PENDING_VO_KEEP",
+  "mint": false,
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "working_title": "Why Is the Periodic Table in This Order?",
+  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 DRAFT pending VO KEEP",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship",
+    "Explorer in Part 01 / first minute"
+  ],
+  "notes": "DRAFT only. Do not Flow / mint until Ben PASS on VO v01. If VO is redone, re-time vo_land and rebuild this board. Plate UAT on continuous playback only.",
+  "part": "02",
+  "title": "The Table That Broke Its Own Rule",
+  "vo_file": "02_Voiceover/part02_the_table_that_broke_its_own_rule_v01.txt",
+  "vo_duration_s": 95.76,
+  "vo_master": "02_Voiceover/05_Master/hos_004_part02_vo_v01.wav",
+  "chapter_card": {
+    "at": "1:15",
+    "duration_s": 1.5,
+    "text": "The Table That Broke Its Own Rule"
+  },
+  "film_window": "1:15\u20132:51",
+  "set_language": "TWO sets: Manchester 1808 schoolroom (Dalton, wooden balls, balance); St Petersburg 1869 desk (element cards, Mendeleev). Say 'same 1808 schoolroom set' / 'same 1869 card desk set'. Never 'same DNA'.",
+  "continuity_lock": "Explorer once only on the Te-before-I card swap beat. Readable faces for Dalton and Mendeleev.",
+  "explorer_lock": "Exactly ONE Explorer plate this film-part: Te card swap. On model \u2014 round gold glasses, teal coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels added in edit); twin Explorer; never say 'same DNA' or 'lab DNA' in a Veo prompt. No Explorer except the Te card swap plate.",
+  "motion_lock": "Real Veo motion every plate when mint opens.",
+  "quality_note": "Quality for candle/desk lamps if any; Fast OK for card sorts without emissive glow.",
+  "plates": [
+    {
+      "id": "01_dalton_schoolroom",
+      "t": "1:15",
+      "explorer": false,
+      "i2v": false,
+      "side_label": "JOHN DALTON \u00b7 1808",
+      "vo_land": "Manchester, eighteen-oh-eight. A schoolteacher named John Dalton puts the old idea to work.",
+      "prompt": "Animistry premium 3D cartoon. Manchester 1808 schoolroom. John Dalton (readable finished face) sets wooden balls of different sizes on a balance. Continuous place-on-balance. Silent. No Explorer. HARD REJECT: Orbit, unfinished face, garbled cards."
+    },
+    {
+      "id": "02_atomic_theory_weights",
+      "t": "1:20",
+      "explorer": false,
+      "i2v": true,
+      "side_label": "ATOMIC THEORY",
+      "vo_land": "His atomic theory says every element is made of its own kind of atom, and each kind has its own weight. Hydrogen is the lightest. Oxygen is heavier. Gold is heavier still.",
+      "prompt": "Same 1808 schoolroom set. Wooden balls graded light to heavy (H, O, Au feel). Continuous line-up. Silent. HARD REJECT: Orbit, Explorer, DNA helix."
+    },
+    {
+      "id": "03_water_fixed_ratio",
+      "t": "1:35",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "Why believe him? Because elements always combine in the same fixed amounts. Water is always the same mix of hydrogen and oxygen, however you make it.",
+      "prompt": "Same 1808 set. Water splits into hydrogen and oxygen balls that always land in the same ratio. Continuous split/land. Silent. HARD REJECT: Orbit, photoreal chemistry lab."
+    },
+    {
+      "id": "04_ruler_of_weights",
+      "t": "1:49",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "Now chemists had a ruler. Compare the weights of the atoms and line them up.",
+      "prompt": "Same 1808 set evolving to a simple weight ruler: balls lined by mass. Continuous line-up. Silent. HARD REJECT: Orbit, Explorer."
+    },
+    {
+      "id": "05_mendeleev_cards",
+      "t": "1:55",
+      "explorer": false,
+      "i2v": false,
+      "side_label": "DMITRI MENDELEEV \u00b7 1869",
+      "vo_land": "Sixty years later in Saint Petersburg, Dmitri Mendeleev does exactly that. He writes each element on a card and sorts the cards by weight.",
+      "prompt": "Animistry premium 3D cartoon. St Petersburg 1869 desk. Dmitri Mendeleev (readable finished face, period) writes and sorts element cards by weight. Continuous sort. Silent. No Explorer yet. HARD REJECT: Orbit, garbled cards, unfinished face."
+    },
+    {
+      "id": "06_columns_and_gaps",
+      "t": "2:05",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "The properties repeat. Soft metals that fizz in water line up in one column. Harsh, reactive chlorine, bromine and iodine line up in another. He even leaves gaps for elements nobody has found yet. Then he prints his table and mails it to chemists across Europe.",
+      "prompt": "Same 1869 card desk set. Columns form; gaps left empty; printed tables fly as letters across a map of Europe. Continuous. Silent. Readable card symbols. HARD REJECT: Orbit, Explorer this plate, DNA helix."
+    },
+    {
+      "id": "07_explorer_te_before_i",
+      "t": "2:24",
+      "explorer": true,
+      "i2v": true,
+      "side_label": "Te BEFORE I",
+      "vo_land": "But look closer. Tellurium is heavier than iodine, so by weight tellurium should come after it. Mendeleev puts it before anyway, because that's where it behaves right.",
+      "prompt": "Same 1869 card desk set. Exactly ONE Explorer (teal coat, round gold glasses, finished hair) picks up the Te card, checks the weight, frowns, puts Te back before I. Continuous acting then leave. Attach Explorer reference. Silent. HARD REJECT: twins, no glasses, Orbit, Explorer parked all minute."
+    },
+    {
+      "id": "08_cobalt_nickel",
+      "t": "2:35",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "Cobalt and nickel have the same trouble.",
+      "prompt": "Same 1869 set. Cobalt and nickel cards show the same swap trouble. Continuous nudge. Silent. No Explorer. HARD REJECT: Orbit, garbled cards."
+    },
+    {
+      "id": "09_weights_not_wrong",
+      "t": "2:39",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "Mendeleev guessed the weights had been measured wrong. They hadn't.",
+      "prompt": "Same 1869 set. Scale confirms the weights; the guess fails. Continuous. Silent. HARD REJECT: Orbit, Explorer."
+    },
+    {
+      "id": "10_breaks_own_rule",
+      "t": "2:44",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "So the table works, but it breaks its own rule. If weight isn't the real order, what is?",
+      "prompt": "Same 1869 set. Finished table glows but Te/I still feel wrong \u2014 open question. Continuous soft push. Silent. HARD REJECT: Orbit, Explorer, Ken Burns only."
+    }
+  ]
+}
