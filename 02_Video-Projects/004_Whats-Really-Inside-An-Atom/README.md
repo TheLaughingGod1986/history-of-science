@@ -13,7 +13,7 @@ Film brief. The script is `01_Script/atom_script_master_v02.md` (spoken lines an
 | Style | Animistry 3D cartoon · readable faces · silent-readable, VO-literal picture · one side label at a time |
 | Explorer | 3 beats (P02 card swap · P04 stadium pea · P05 final table). The 0:15 table tap is a hand only. |
 | X-rays callback | one picture beat in P05 (about 4 s), no on-screen "SEE" label. The Studio end screen links the film. |
-| Status | SCRIPT v02. No VO and no mint until Ben signs off. |
+| Status | SCRIPT v02, Ben KEEP 26 Sep 2026. Next: vidIQ audit and episode gate, then VO. |
 | Non-goals | not a Periodic Table retell · not radioactivity (next film) · no bomb or fission · no Orbit |
 | First minute | STUDIO_PLAYBOOK.md §3 → "The first minute" (answer image by 0:05 · title question by 0:08 · promise by 0:15 · stakes by 0:25 · first real fact before 0:45 · picture change every 4–6 s · no intro, logo or title card · Part 01 has no chapter card) |
 
