@@ -1,5 +1,7 @@
 # What's Really Inside an Atom? (script master v02)
 
+[VISUAL MUST: TIMING NOTE — part times below are estimates from the word count (VO ending about 8:05). The real VO will run closer to 8:25. Re-time every part and chapter card from the recorded VO before plate boards are built. The cold-open times up to 1:15 stay as written.]
+
 
 ## PART 01: Cold open (0:00–1:15). No chapter card.
 
@@ -62,6 +64,8 @@ and a question that started with a knife and a coin.
 [VISUAL MUST: 1:08 — slow push into the Te box as the table dims]
 
 So why was the table in the wrong order?
+
+[VISUAL MUST: 1:12 — hard cut to candlelight on an old ledger of element weights, pages turning; bridges into the Part 02 chapter card at 1:15]
 
 ## PART 02: The Table That Broke Its Own Rule (1:15–2:55)
 

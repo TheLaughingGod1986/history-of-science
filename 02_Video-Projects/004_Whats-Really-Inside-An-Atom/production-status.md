@@ -6,13 +6,13 @@
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | Ben picked 26 Sep 2026 (the atom; why the periodic table has its order) |
 | Title | *What's Really Inside an Atom?*; Test & Compare *How Small Can You Cut Gold?* |
-| Script | `01_Script/atom_script_master_v02.md` (26 Sep). **Waiting on Ben's review.** v01 kept as `atom_script_v01_ben.md`. |
+| Script | `01_Script/atom_script_master_v02.md` (26 Sep; 1:12 picture beat added 27 Sep). Fact and rules check passed; phone PDF at iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/01_Script/atom_script_master_v02.pdf`. **Waiting on Ben: keep or change.** v01 kept as `atom_script_v01_ben.md`. |
 | Script review | 88.5 / 90 on the current reviewer (see note) |
 | Pre-build vidIQ audit | not yet (`11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`) |
 | Episode gate | not run (needs the vidIQ audit and a 90) |
 | VO | not started (Ben Orbit Narrator, after script sign-off) |
 | Picture | not started (Flow Veo 3.1, plate library) |
-| Runtime target | about 8 min narration, 5 parts |
+| Runtime target | about 1,260–1,280 words, likely about 8:25 of VO, 5 parts. Part times in the script are estimates: re-time from the recorded VO. |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish (no Premiere). Fallback Thu 22 Oct. `11_Upload-Package/LAUNCH_PLAN.md` |
 | Shorts | Fri 16 (gold coin, 004) · Sun 18 (002) · Tue 20 Oct (003), 11:30 UK |
 
