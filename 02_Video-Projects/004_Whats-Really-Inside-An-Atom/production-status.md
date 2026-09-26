@@ -8,7 +8,7 @@
 | Title | *What's Really Inside an Atom?*; Test & Compare *How Small Can You Cut Gold?* |
 | Script | `01_Script/atom_script_master_v02.md`. **Ben: KEEP (26 Sep 2026).** Narration locked; v01 kept as `atom_script_v01_ben.md`. |
 | Script review | 88.5 / 90 on the current reviewer (see note) |
-| Pre-build vidIQ audit | **next:** fill `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` from the template |
+| Pre-build vidIQ audit | **Drafted 26 Sep** from public YouTube data: `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`. Needs Ben: vidIQ scores (login) and sign-off. Competition check warns on the "inside an atom" phrase; title C *Why Is the Periodic Table in This Order?* proposed as a third Test & Compare variant. |
 | Episode gate | blocked on the vidIQ audit and the reviewer score (88.5; see note) |
 | VO | not started. Script is signed off; VO waits on the episode gate PASS |
 | Picture | not started (Flow Veo 3.1, plate library) |
