@@ -7,10 +7,10 @@
 | Topic | Ben picked 26 Sep 2026 (the atom; why the periodic table has its order) |
 | Title | *Why Is the Periodic Table in This Order?* (main, chosen 26 Sep from the audit); Test & Compare *What's Really Inside an Atom?* and *How Small Can You Cut Gold?*. Folder slug unchanged. |
 | Script | `01_Script/atom_script_master_v02.md`. **Ben: KEEP (26 Sep 2026).** Narration locked; v01 kept as `atom_script_v01_ben.md`. |
-| Script review | 88.5 / 90 on the current reviewer (see note) |
-| Pre-build vidIQ audit | **Drafted 26 Sep** from public YouTube data: `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`. Needs Ben: vidIQ scores (login) and sign-off. Competition check warns on the "inside an atom" phrase; title C *Why Is the Periodic Table in This Order?* proposed as a third Test & Compare variant. |
-| Episode gate | blocked on the vidIQ audit and the reviewer score (88.5; see note) |
-| VO | not started. Script is signed off; VO waits on the episode gate PASS |
+| Script review | 88.9. **Passed by hand by Ben, 26 Sep 2026** (reviewer counting bug; see note) |
+| Pre-build vidIQ audit | **Signed off by Ben, 26 Sep 2026.** vidIQ waived; public search data used (`11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`) |
+| Episode gate | **Passed by Ben (manual), 26 Sep 2026.** `gate:episode` still prints REJECT on the reviewer score; that line is overridden. All other checks OK. |
+| VO | **Next.** Ben Orbit Narrator, one master per part in `02_Voiceover/`. Ben listens before any picture spend. |
 | Picture | not started (Flow Veo 3.1, plate library) |
 | Runtime target | about 1,260–1,280 words, likely about 8:25 of VO, 5 parts. Part times in the script are estimates: re-time from the recorded VO. |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish (no Premiere). Fallback Thu 22 Oct. `11_Upload-Package/LAUNCH_PLAN.md` |

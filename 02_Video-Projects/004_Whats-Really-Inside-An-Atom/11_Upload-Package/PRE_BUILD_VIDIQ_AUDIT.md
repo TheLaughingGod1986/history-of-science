@@ -131,9 +131,9 @@ cd 07_Content-Ops && npm run review:script -- --file ../02_Video-Projects/004_Wh
 
 ## 7. Sign-off (block production until checked)
 
-- [ ] Keywords pulled and primary locked: public signals done; **vidIQ numbers pending (Ben)**
-- [ ] Title ≥90 locked: **vidIQ title scores pending (Ben)**; title A locked by Ben, B and C proposed for Test & Compare
-- [ ] Script reviewer ≥ 90: **88.5** (see §3b)
+- [x] Keywords pulled and primary locked: public signals (§2). **vidIQ waived by Ben, 26 Sep 2026.**
+- [x] Title locked: *Why Is the Periodic Table in This Order?* (C), Test & Compare A and B. **vidIQ title scores waived by Ben.**
+- [x] Script reviewer: **88.9, passed by hand by Ben (26 Sep 2026)**; the shortfall is the reviewer's counting bug (§3b).
 - [x] Outlier patterns mapped into the chapter arc
 - [x] Thumb concepts match the title promise (one object · one emotion)
 - [x] Chapter teach-points listed (5 acts)
@@ -141,7 +141,7 @@ cd 07_Content-Ops && npm run review:script -- --file ../02_Video-Projects/004_Wh
 - [x] Retention plan filled
 - [x] Production checklist path noted: `00_Brand/Channel-Setup/templates/PRODUCTION_CHECKLIST_V2.md`
 
-**Signed off by:**
-**Date:**
+**Signed off by:** Ben (vidIQ waived; script passed by hand at 88.9)
+**Date:** 26 Sep 2026
 
 **Only then:** VO (Ben Orbit Narrator) → Flow Veo plates → edit.
