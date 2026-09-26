@@ -1,4 +1,4 @@
-# What's Really Inside an Atom? (script master v02)
+# Why Is the Periodic Table in This Order? (script master v02)
 
 [VISUAL MUST: TIMING NOTE — part times below are estimates from the word count (VO ending about 8:05). The real VO will run closer to 8:25. Re-time every part and chapter card from the recorded VO before plate boards are built. The cold-open times up to 1:15 stay as written.]
 

@@ -1,4 +1,4 @@
-# Pre-build vidIQ audit — HOS 004 What's Really Inside an Atom?
+# Pre-build vidIQ audit — HOS 004 Why Is the Periodic Table in This Order?
 
 Template: `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`. Drafted 26 Sep 2026 from **public YouTube data** (GB search results and YouTube autocomplete, fetched the same day; raw pull in `evidence_2026-09-26_public_search.json`). **vidIQ scores are not in this draft:** vidIQ needs Ben's login (there's no API connection here), so every score cell reads *pending vidIQ*. Ben fills those in app.vidiq.com and signs off at the end.
 
@@ -7,7 +7,7 @@ Template: `00_Brand/Channel-Setup/PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`. Drafted 26
 | Field | Value |
 |-------|-------|
 | ID / slug | `004_Whats-Really-Inside-An-Atom` |
-| Working title | What's Really Inside an Atom? (Test & Compare: How Small Can You Cut Gold?) |
+| Working title | Why Is the Periodic Table in This Order? (Test & Compare: What's Really Inside an Atom? · How Small Can You Cut Gold?) |
 | Date pulled | 26 Sep 2026 (public search + autocomplete); vidIQ pending |
 | Credits used (approx) | 0 so far |
 | Brand guardrails | Wonder over fearbait · no conspiracy · HOS lane (a familiar thing, and the moment we found out) · no bomb or fission |
@@ -53,8 +53,13 @@ The signed-out competition check (`STUDIO_PLAYBOOK.md` §2) is a **warning** for
 | Reject | How Did We Discover the Atom? | — | Retired formula (THUMBNAIL_AND_TITLE_RULES §1) | **Reject** |
 | Reject | Anything with "atomic bomb" / "deadly" | — | Off-lane, fear framing | **Reject** |
 
-**Locked title:** What's Really Inside an Atom? (Ben, 26 Sep), running Test & Compare against B. **Recommendation for Ben:** add C as the third variant; Test & Compare takes three.
-**Why:** A has the broadest search (the "inside an atom" umbrella); B is the strongest picture and Short hook; C is the least contested and the film's real payoff.
+**Locked title (26 Sep 2026):** *Why Is the Periodic Table in This Order?*, chosen for traction after this audit. Test & Compare runs all three: C (main), A and B.
+**Why C:**
+- **It can be found.** A small channel gets most of its early long-form views from search, not the home feed. The top results for C's question have 8K–15K views; for A's phrase they're minutephysics, Kurzgesagt and TED-Ed at millions.
+- **It's the film's real payoff,** promised in the open ("why the periodic table is in the order it is") and answered in Part 05, so title, open and ending make the same promise.
+- **It follows the channel's best long.** *How Did We Discover the Periodic Table?* has the most long views on the channel; C reads as the sequel, and End screen / Related can pair them. It is a different subject (the atom's inside, not the table's discovery), so it isn't a second long on the same subject.
+- **The rules:** familiar noun first, one concrete promise, a yes/why question, 40 characters, no hedge.
+- **A and B still get tested.** B keeps the gold coin as the strongest thumbnail and the lead Short; A covers the broad "inside an atom" search.
 
 ## 3b. Script reviewer
 

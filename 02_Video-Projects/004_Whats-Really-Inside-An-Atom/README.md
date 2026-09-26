@@ -1,11 +1,11 @@
-# HOS 004 — What's Really Inside an Atom?
+# HOS 004 — Why Is the Periodic Table in This Order?
 
 Film brief. The script is `01_Script/atom_script_master_v02.md` (spoken lines and picture markers only, so the reviewer scores what is said). Teach and fact notes: `01_Script/FACT_NOTES_v02.md`. Launch: `11_Upload-Package/LAUNCH_PLAN.md`. Ben's v01 is kept as `01_Script/atom_script_v01_ben.md` for history.
 
 | Field | Value |
 |---|---|
-| Title (main) | What's Really Inside an Atom? |
-| Title (Test & Compare) | How Small Can You Cut Gold? |
+| Title (main) | Why Is the Periodic Table in This Order? (chosen 26 Sep for traction; see `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` §3) |
+| Title (Test & Compare) | What's Really Inside an Atom? · How Small Can You Cut Gold? |
 | Old title | How Did We Discover the Atom? (dropped: retired formula, THUMBNAIL_AND_TITLE_RULES.md §1) |
 | Angle | Why does the periodic table have its order? The answer was inside the atom, and Moseley's X-ray work proved it. |
 | Scout words | atom · atomic theory · J.J. Thomson · nucleus · atomic number (spoken and on labels) |
@@ -19,7 +19,7 @@ Film brief. The script is `01_Script/atom_script_master_v02.md` (spoken lines an
 
 ## Changes from v01
 
-- **Title:** *What's Really Inside an Atom?* (main), Test & Compare against *How Small Can You Cut Gold?*. *How Did We Discover the Atom?* is dropped.
+- **Title:** *Why Is the Periodic Table in This Order?* (main, 26 Sep, after the audit), Test & Compare against *What's Really Inside an Atom?* and *How Small Can You Cut Gold?*. *How Did We Discover the Atom?* is dropped.
 - **Launch:** normal publish, no Premiere; Shorts Fri 16 / Sun 18 / Tue 20 Oct, each promoting a different film; the gold coin Short leads.
 - **Explorer:** 3 beats. The 0:15 table tap is now a hand with no face.
 - **First-minute rule:** moved into `STUDIO_PLAYBOOK.md` §3 with a picture change every 4–6 s; cold-open picture now changes about every 5 s. The separate lock doc is withdrawn.
