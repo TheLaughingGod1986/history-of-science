@@ -41,6 +41,14 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 
 - **First 3 s of picture:** the story itself. No logo, no bumper, no title card. A place-and-year stamp is fine.
 - **Sentence one is the promise.** By 30 s the viewer knows the old belief, that it is about to break, and why it matters.
+- **The first minute** (Ben, 26 Sep 2026, from the HOS 004 review):
+  - the answer image is on screen by 0:05 (the thing the title asks about, shown);
+  - the title question is spoken by 0:08;
+  - the promise (what the viewer will know by the end) by 0:15;
+  - the stakes (what was wrong or at risk) by 0:25;
+  - the first real fact (a name, place and year) before 0:45;
+  - the picture changes every 4–6 s;
+  - no intro, logo or title card; part 01 has no chapter card.
 - **5 acts, one per part,** told as cause and effect. Each act: entry, show, one teach, turn, exit.
 - **Clear before clever** (Ben, 7 Sep). A first-time viewer can say the one idea out loud after each beat:
   - name the thing (person, element, tool, place) in plain words;
