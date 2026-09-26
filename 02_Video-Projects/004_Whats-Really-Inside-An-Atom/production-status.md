@@ -1,11 +1,11 @@
-# Production status — 004 What's Really Inside an Atom?
+# Production status — 004 Why Is the Periodic Table in This Order?
 
 | Field | Value |
 |---|---|
 | Slug | `004_Whats-Really-Inside-An-Atom` |
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | Ben picked 26 Sep 2026 (the atom; why the periodic table has its order) |
-| Title | *What's Really Inside an Atom?*; Test & Compare *How Small Can You Cut Gold?* |
+| Title | *Why Is the Periodic Table in This Order?* (main, chosen 26 Sep from the audit); Test & Compare *What's Really Inside an Atom?* and *How Small Can You Cut Gold?*. Folder slug unchanged. |
 | Script | `01_Script/atom_script_master_v02.md`. **Ben: KEEP (26 Sep 2026).** Narration locked; v01 kept as `atom_script_v01_ben.md`. |
 | Script review | 88.5 / 90 on the current reviewer (see note) |
 | Pre-build vidIQ audit | **Drafted 26 Sep** from public YouTube data: `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`. Needs Ben: vidIQ scores (login) and sign-off. Competition check warns on the "inside an atom" phrase; title C *Why Is the Periodic Table in This Order?* proposed as a third Test & Compare variant. |
