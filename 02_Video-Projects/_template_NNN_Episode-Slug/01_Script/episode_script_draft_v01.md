@@ -1,11 +1,16 @@
 # Working title
 
 <!--
-7–9 min · about 1,000–1,300 spoken words · 5 acts (one per part)
+7–9 min · about 1,200–1,300 spoken words of real narration · 5 acts (one per part)
 STUDIO_PLAYBOOK.md §3. Gates before any VO or picture: review:script ≥90, gate:episode PASS.
 Open cold on the story: no welcome, no "In 1895…", no channel name.
 Sentence one is the promise: the old belief, that it is about to break, and why it matters.
-The Explorer is in 1–3 beats only. No goodbye; the last line hands off to the next film.
+The Explorer is in 1–3 beats only, never in the first minute. At least two "you" moments.
+No goodbye; the last line hands off to the next film, then the cream end card and the end screen.
+File format: spoken prose + markers only (LABEL goes inside VISUAL MUST). No VO in tables, no notes here:
+notes go in the film README, 01_Script/FACT_NOTES_vNN.md and 11_Upload-Package/LAUNCH_PLAN.md.
+Save as <slug>_script_master_v01.md; rename old versions without "master".
+Delete this comment block from the master (the reviewer counts its words).
 -->
 
 <Sentence one: the surprising truth about a familiar thing.>
