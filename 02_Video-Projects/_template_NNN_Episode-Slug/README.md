@@ -11,7 +11,7 @@ Full steps: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md`. Stop for Ben's OK at ev
 ## Order
 
 1. **Topic** (`STUDIO_PLAYBOOK.md` §2): fill `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` and `TOPIC_OPPORTUNITY_SCORE.md` (template in `00_Brand/Channel-Setup/templates/`). Ben picks.
-2. **Script:** write `01_Script/<slug>_script_master_v01.md` from `episode_script_draft_v01.md`, then split it into five part scripts.
+2. **Script:** write `01_Script/<slug>_script_master_v01.md` from `episode_script_draft_v01.md` in the file format in `STUDIO_PLAYBOOK.md` §3 (spoken prose + markers only). Alongside it: `01_Script/FACT_NOTES_v01.md`, a main title + one Test & Compare title, and `11_Upload-Package/LAUNCH_PLAN.md`. Then split the script into five part scripts.
 3. **Gates** (both before any VO or picture spend):
    ```bash
    cd 07_Content-Ops

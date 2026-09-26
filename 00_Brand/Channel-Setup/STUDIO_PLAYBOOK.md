@@ -37,7 +37,7 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 
 ## 3. Script
 
-### Long (7–9 min, about 1,000–1,300 spoken words, 5 parts)
+### Long (7–9 min, about 1,200–1,300 spoken words, 5 parts)
 
 - **First 3 s of picture:** the story itself. No logo, no bumper, no title card. A place-and-year stamp is fine.
 - **Sentence one is the promise.** By 30 s the viewer knows the old belief, that it is about to break, and why it matters.
@@ -56,10 +56,21 @@ Those are in `_archive/` for history only. Every rule they held that still appli
   - concrete nouns when teaching; poetry only after the fact is clear;
   - one idea at a time; change the beat before attention drops.
 - **Always answer why the discovery was groundbreaking:** what became possible that was impossible before.
-- **The Explorer is in 1–3 beats per film** (about every 3–5 scenes), walking through, touching a prop, reacting, then leaving.
+- **The Explorer is in 1–3 beats per film** (about every 3–5 scenes), walking through, touching a prop, reacting, then leaving. **Never in the first minute:** if the open needs a touch, use a hand with no face.
 - **Every number and claim is sourced.** Sources go in the description.
 - **No goodbye, no subscribe ask in the script.** The last line hands off to the next film.
+- **Two "you" moments** at least: put the viewer in the room ("Picture yourself in that room…", "Imagine you are standing…"). Lived stakes, not a narrator at a distance.
+- **Facts are right for the year in the scene.** Say what was known then; give a modern value as "we now know…". Quotes carry who said them and roughly when. Round numbers honestly ("thirty-odd years", not "thirty"). If a gap was filled in a lab, say so.
+- **Length is narration, not holds.** Reach about 8 minutes with real content (evidence, how it was measured, what it felt like), never long pauses. Part times in the script are estimates from the word count; re-time every part and chapter card from the recorded VO before plate boards are built.
+- **The film's end:** last line → the 3–4 s cream end card → the 20 s Studio end screen (§7). No on-screen "SEE <other film>" labels; the end screen links other films.
 - **Markers:** every scene carries `[VISUAL MUST: …]` and `[TEACH: …]`. Explorer beats carry `[EXPLORER ACTS: …]`. Acts start with `[CHAPTER CARD: …]`.
+- **Script file format** (`01_Script/<slug>_script_master_vNN.md`):
+  - spoken lines as plain prose, and everything else in markers: `[VISUAL MUST: <time> — <picture> · LABEL: <label>]`, `[TEACH: …]`, `[EXPLORER ACTS: …]`, `[CHAPTER CARD: …]`. The reviewer ignores table rows and counts every other word, so no VO in tables and no notes in the script;
+  - the first line after the title is the first spoken line (never "What is…", "Welcome", "In this video");
+  - title, fields, fact notes, teach list, launch plan and change log live beside it: the film's `README.md`, `01_Script/FACT_NOTES_vNN.md`, `11_Upload-Package/LAUNCH_PLAN.md`;
+  - one live version. Old versions are kept but renamed without "master" (e.g. `<slug>_script_v01_ben.md`), because `gate:episode` scores the first "master" file alphabetically.
+- **Title and launch are written with the script:** a main title plus one Test & Compare alternative, both from `THUMBNAIL_AND_TITLE_RULES.md` (never *How Did We Discover X?*); a launch plan in the week from `HOS_STRATEGY.md` (normal publish, three Shorts on different days promoting different films, the lead Short from this film).
+- **Report the score honestly.** Quote the reviewer's number as it is. Don't pad words or change the reviewer to pass a script; a scoring problem is raised separately for Ben.
 - **Gates (both before any voice or picture spend):**
   ```bash
   cd 07_Content-Ops && npm run review:script -- --file <script.md>        # 90 or more

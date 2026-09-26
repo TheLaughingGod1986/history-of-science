@@ -14,11 +14,16 @@ alwaysApply: false
 Full steps: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md` §2–§4 and §7. Hooks: `HOS_STRATEGY.md` → *Long hook*.
 
 - **Topic:** a familiar thing and the moment we found out the truth about it; one person, one room, one proof. No existing public long on that subject. Competition check on the exact title (signed out, top five). Fill `PRE_BUILD_VIDIQ_AUDIT.md`. **Ben picks.**
-- **Script** (about 1,000–1,300 spoken words):
+- **Script** (about 1,200–1,300 spoken words, real narration, not holds):
   - The first 3 s of picture are the story. Sentence one is the promise; the payoff is named by 30 s.
   - First minute (26 Sep 2026): answer image by 0:05, title question spoken by 0:08, promise by 0:15, stakes by 0:25, first real fact before 0:45, picture change every 4–6 s, no intro or title card, part 01 has no chapter card.
   - 5 acts, cause and effect. Clear before clever: name the thing, say what it is and why it mattered in the same breath, one idea at a time. Always say what the discovery made possible.
-  - The Explorer in 1–3 beats only. Every claim sourced. No goodbye and no subscribe ask; the last line hands off to the next film.
+  - The Explorer in 1–3 beats only, never in the first minute (a faceless hand if needed). Every claim sourced. No goodbye and no subscribe ask; the last line hands off to the next film.
+  - At least two "you" moments. Facts right for the year in the scene ("we now know…" for modern values); honest rounding; quotes attributed.
+  - End: last line → 3–4 s cream end card → 20 s Studio end screen. No on-screen "SEE <film>" labels.
+  - File format: spoken prose plus markers only (labels inside `[VISUAL MUST: … · LABEL: …]`); no VO in tables; notes, fact notes, launch plan and change log in the film's README, `FACT_NOTES_vNN.md` and `11_Upload-Package/LAUNCH_PLAN.md`; one live `*_master_*` file, older versions renamed without "master".
+  - Write a main title + one Test & Compare alternative and a launch plan in the HOS_STRATEGY week alongside the script. Part times are estimates; re-time from the recorded VO.
+  - Quote the reviewer score as it is; never pad or edit the reviewer to pass a script.
   - `[CHAPTER CARD]`, `[VISUAL MUST]` and `[TEACH]` on every act; `[EXPLORER ACTS]` on Explorer beats only.
 - **Gates:** `npm run review:script` scores 90 or more, then `npm run gate:episode` PASSes. No VO or picture spend before both.
 - **Voice:** Ben Orbit Narrator (`04_Audio/tools/orbit_voice.py`). VO before picture. Speech about −19 to −28 dB mean; never silent.
