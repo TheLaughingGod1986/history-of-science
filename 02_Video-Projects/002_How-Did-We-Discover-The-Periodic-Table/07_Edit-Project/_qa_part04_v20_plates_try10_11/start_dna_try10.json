@@ -1,0 +1,20 @@
+{
+  "plate": "11_publish_gaps",
+  "try": 10,
+  "dna": "try10 cropL18 boardtop edgeoff \u2014 NEW framing: crop LEFT of try9 boardtop so brass/gooseneck invent zone OFF-FRAME; keep publish-grid front printable band OFF-FRAME (try9 text fix); holes+magnifier hero; soft gap OK; dull flasks; zerolamp/window bounce",
+  "left_frac": 0.18,
+  "source": "11_publish_gaps_start_v20_try9_boardtop_edgeoff.jpg",
+  "parent_try9_crop_box_xyxy": [
+    96,
+    302,
+    1824,
+    615
+  ],
+  "lock": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/refs/v20_start_frames/11_publish_gaps_start_v20_try10_cropL18_boardtop_edgeoff.jpg",
+  "lock_sha256": "7ce0f358e36c09a36f714e28f13fb202d593398aa5dcec053c62091827de0f75",
+  "active_synced": true,
+  "model_required": "Veo 3.1 - Quality",
+  "seedance": "banned",
+  "max_starts": 2,
+  "plate_library_lock_sha": "4b8ed25"
+}

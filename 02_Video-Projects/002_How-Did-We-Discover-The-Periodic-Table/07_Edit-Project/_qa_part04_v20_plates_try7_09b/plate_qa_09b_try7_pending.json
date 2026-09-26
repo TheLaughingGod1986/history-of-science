@@ -1,0 +1,19 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 7,
+  "sha256": "94b671313f38078290aabcabcee0891d862835fe7f5f6cb4b7d1aee34641e3ad",
+  "bytes": 2021738,
+  "spit_scores": {
+    "0.5": 0,
+    "1.5": 0,
+    "3.0": 0,
+    "4.5": 0,
+    "6.0": 0,
+    "7.2": 0
+  },
+  "spit_peak": 0,
+  "path_repo": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try7.mp4",
+  "path_icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try7/09b_risk_hold_v20_try7.mp4",
+  "flow": "https://flow.google.com/project/5e30fce8-71c4-4e3c-a1e9-77a9cee647eb",
+  "gate_pending": true
+}

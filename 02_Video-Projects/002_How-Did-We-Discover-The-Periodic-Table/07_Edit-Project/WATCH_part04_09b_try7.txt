@@ -1,0 +1,11 @@
+PLATE-FIRST 09b_risk_hold try7
+mp4: /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try7.mp4
+sha256: 94b671313f38078290aabcabcee0891d862835fe7f5f6cb4b7d1aee34641e3ad
+gate: REJECT_FLAT_CARDS
+flame: PASS (spit=0; no desk flames vs try5 UAT)
+flat_cards: SELF-REJECT (unfinished flat/garbled overlays remain)
+try5: UAT HARD FAIL confirmed (Ben stills)
+try6: REJECT_FLAT_CARDS (flame PASS)
+iCloud: /Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try7/
+NO assemble. paint banned.
+blocker: start DNA flat cards; need CoS-approved cardless/finished-3D start DNA

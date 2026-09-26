@@ -1,0 +1,41 @@
+{
+  "ok": false,
+  "method": "youtube_studio_hos_session",
+  "channel": {
+    "name": "History of Science",
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "studioUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": [
+    "@OrbitWithBen",
+    "@OpptiAI",
+    "@HistoryOfScience"
+  ],
+  "premiere": {
+    "date": "2026-09-24",
+    "time": "18:00",
+    "timeZone": "Europe/London",
+    "type": "premiere",
+    "label": "Thursday 24 Sep 2026 18:00 Europe/London",
+    "iso": "2026-09-24T17:00:00+00:00"
+  },
+  "madeForKids": false,
+  "affiliate": "none",
+  "started": "2026-09-23T09:44:13+01:00",
+  "video": {
+    "file": "hos_003_full_polish_v01.mp4",
+    "sha256": "be6d156296dcfbf0ed632632109edc71e3dc7ed60bced442e1cfa9bc44dc4f98",
+    "bytes": 319758493,
+    "title": "How Did We Discover X-rays?",
+    "thumb": "hos_003_thumb_long_xrays_v03.jpg"
+  },
+  "hos": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Channel dashboard - YouTube Studio",
+    "alreadyListed": true,
+    "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nWhat other table has empty chairs?\n3\n0\n0\nFirst 22 hours 13 minutes\nRanking by views\n10 of 10\nViews\n3\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\nPublished videos\nWhy tellurium sat before iodine\n16\n0\n1\nGallium sat where the table said\n17\n0\n0\nHe predicted a metal before it was found\n31\n0\n0\nThe periodic table's empty chairs\n25\n0\n0\nGo"
+  },
+  "error": "already_listed_abort"
+}

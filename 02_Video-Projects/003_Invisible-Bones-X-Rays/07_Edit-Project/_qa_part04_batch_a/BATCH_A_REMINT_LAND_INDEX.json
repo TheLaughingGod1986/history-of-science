@@ -1,0 +1,198 @@
+{
+  "batch": "A",
+  "part": 4,
+  "kind": "REMINT_v02",
+  "film": "003_Invisible-Bones-X-Rays",
+  "flow_project_id": "a65f19e8-3cd7-47d3-829c-9745150a6a71",
+  "flow_project_url": "https://flow.google.com/u/1/project/a65f19e8-3cd7-47d3-829c-9745150a6a71",
+  "account": "benoats@googlemail.com",
+  "quality": "Veo 3.1 Quality CLEAN LIGHT",
+  "status": "READY_FOR_UAT_RESCORE",
+  "keep_untouched": [
+    "01_chapter_bertha",
+    "05_letters_fly",
+    "06_labs_copy_tube"
+  ],
+  "plates": [
+    {
+      "n": 2,
+      "id": "02_hand_on_plate",
+      "path": "/workspace/hos003/part04/plates/02_hand_on_plate_v02.mp4",
+      "sha256": "b06f98adb1c351d3b5dbfbfcada01beb6ee31d40d2e7ddd5709f9de313bea565",
+      "bytes": 2547661,
+      "version": "v02",
+      "duration_s": 8.0,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/02_hand_on_plate_v02.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/remint_v02/02_hand_on_plate",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004"
+      ],
+      "chunk_count": 5
+    },
+    {
+      "n": 3,
+      "id": "03_bones_and_ring",
+      "path": "/workspace/hos003/part04/plates/03_bones_and_ring_v02.mp4",
+      "sha256": "3114e1d20eb87fe25eeffba7f303d533a800fa8b94d81d398293800e22fd1137",
+      "bytes": 2897728,
+      "version": "v02",
+      "duration_s": 8.0,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/03_bones_and_ring_v02.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/remint_v02/03_bones_and_ring",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004",
+        "part_005"
+      ],
+      "chunk_count": 6
+    },
+    {
+      "n": 4,
+      "id": "04_haunted_becomes_fact",
+      "path": "/workspace/hos003/part04/plates/04_haunted_becomes_fact_v02.mp4",
+      "sha256": "c34b2523e3d748ec454a11b10bb20e79748adcf02cad9523f329bafa745aabff",
+      "bytes": 3018671,
+      "version": "v02",
+      "duration_s": 8.0,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/04_haunted_becomes_fact_v02.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/remint_v02/04_haunted_becomes_fact",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004",
+        "part_005"
+      ],
+      "chunk_count": 6
+    },
+    {
+      "n": 7,
+      "id": "07_doctors_lean_in",
+      "path": "/workspace/hos003/part04/plates/07_doctors_lean_in_v02.mp4",
+      "sha256": "6dd55759a0e3128bc3b05c06a2c6bf4befa69448009a300573cf6e956f03b218",
+      "bytes": 3899690,
+      "version": "v02",
+      "duration_s": 8.0,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/07_doctors_lean_in_v02.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/remint_v02/07_doctors_lean_in",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004",
+        "part_005",
+        "part_006",
+        "part_007"
+      ],
+      "chunk_count": 8
+    },
+    {
+      "n": 8,
+      "id": "08_bullet_break_map",
+      "path": "/workspace/hos003/part04/plates/08_bullet_break_map_v02.mp4",
+      "sha256": "7cf0b82359c5110a8799bab60288b19f4704f9e0a8244a746c7564a3ec6c4051",
+      "bytes": 2439702,
+      "version": "v02",
+      "duration_s": 8.0,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/08_bullet_break_map_v02.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/remint_v02/08_bullet_break_map",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004"
+      ],
+      "chunk_count": 5
+    },
+    {
+      "n": 9,
+      "id": "09_body_as_map",
+      "path": "/workspace/hos003/part04/plates/09_body_as_map_v02.mp4",
+      "sha256": "bcd637c019741ca9255ab2ad68a197c8b3c12fba574ae13ec3536cc33e66d21b",
+      "bytes": 2506945,
+      "version": "v02",
+      "duration_s": 8.0,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/09_body_as_map_v02.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/remint_v02/09_body_as_map",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004"
+      ],
+      "chunk_count": 5
+    },
+    {
+      "n": 10,
+      "id": "10_why_groundbreaking",
+      "path": "/workspace/hos003/part04/plates/10_why_groundbreaking_v02.mp4",
+      "sha256": "3f143748d8f35723dece18a183036eed370fb6819dcc80f12f380b09243fd5a4",
+      "bytes": 4047224,
+      "version": "v02",
+      "duration_s": 8.0,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/10_why_groundbreaking_v02.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/remint_v02/10_why_groundbreaking",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004",
+        "part_005",
+        "part_006",
+        "part_007"
+      ],
+      "chunk_count": 8
+    },
+    {
+      "n": 11,
+      "id": "11_proof_hold",
+      "path": "/workspace/hos003/part04/plates/11_proof_hold_v02.mp4",
+      "sha256": "a28f2d0a7ca5b341688e7a416c12118010a4721164a537a0c53a638ccc96fd41",
+      "bytes": 4090475,
+      "version": "v02",
+      "duration_s": 8.0,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/11_proof_hold_v02.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/remint_v02/11_proof_hold",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004",
+        "part_005",
+        "part_006",
+        "part_007"
+      ],
+      "chunk_count": 8
+    }
+  ],
+  "landed_at": "2026-09-22 07:52:46 UTC",
+  "landed_count": 8,
+  "assemble": "CLOSED",
+  "do_not_ping_ben": true,
+  "model": "Veo 3.1 Quality CLEAN LIGHT",
+  "account_verified": "benoats@googlemail.com ULTRA",
+  "credits_at_start_approx": 15382,
+  "remint_prompts": "/workspace/hos003/part04/docs/BATCH_A_REMINT_PROMPTS.json",
+  "mini_stage": {
+    "status": "BOX_ONLY_MINI_PENDING",
+    "reason": "CopyFromBox not available on this executor; 500KB chunks prepared on box",
+    "machineId": "1e756e4d-88c1-4572-8ef7-e7984cce785f",
+    "mini_dir": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04",
+    "chunk_root": "/workspace/hos003/part04/chunks/remint_v02",
+    "reassemble_hint": "On Mini: for each plate id, cat part_* > {id}_v02.mp4 && shasum -a 256 {id}_v02.mp4"
+  },
+  "keep_sha_verified": true
+}

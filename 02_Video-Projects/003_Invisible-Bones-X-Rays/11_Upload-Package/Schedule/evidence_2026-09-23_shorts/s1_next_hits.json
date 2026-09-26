@@ -1,0 +1,42 @@
+[
+  {
+    "t": "Visibility",
+    "tag": "BUTTON",
+    "w": 128,
+    "h": 64,
+    "x": 978,
+    "y": 117,
+    "dis": null,
+    "cls": "step remove-default-style style-scope ytcp-stepper"
+  },
+  {
+    "t": "Yes, it's Made for Kids . Features like personalised ads and notifications won't",
+    "tag": "TP-YT-PAPER-RADIO-BUTTON",
+    "w": 213,
+    "h": 24,
+    "x": 270,
+    "y": 1297,
+    "dis": "false",
+    "cls": "style-scope ytkc-made-for-kids-select"
+  },
+  {
+    "t": "No, it's not 'Made for Kids'",
+    "tag": "TP-YT-PAPER-RADIO-BUTTON",
+    "w": 213,
+    "h": 24,
+    "x": 270,
+    "y": 1331,
+    "dis": "false",
+    "cls": "style-scope ytkc-made-for-kids-select iron-selected"
+  },
+  {
+    "t": "Next",
+    "tag": "YTCP-BUTTON",
+    "w": 61,
+    "h": 36,
+    "x": 1095,
+    "y": 679,
+    "dis": "false",
+    "cls": "style-scope ytcp-uploads-dialog"
+  }
+]

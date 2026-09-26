@@ -1,0 +1,89 @@
+{
+  "cut": "hos_003_part05_rough_v02.mp4",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_part05_rough_v02.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_003_part05_rough_v02.mp4",
+  "bytes": 54931949,
+  "sha256": "d1db0f31a220fe6d79f083ea6f285a74217b5b3940641ca7b615cf5659821169",
+  "duration_s": 83.416667,
+  "vo_s": 97.6,
+  "picture_s": 83.4,
+  "mix_s": 83.4,
+  "vo_trim_s": 14.199999999999989,
+  "bed": "hos_001_part04_lab_bed_v06.wav",
+  "bed_vol": 0.34,
+  "plates": [
+    "01_chapter_new_seeing_v18.mp4",
+    "02_what_are_xrays_v07.mp4",
+    "03_spectrum_past_uv_v07.mp4",
+    "04_soft_vs_bone_v02.mp4",
+    "05_detector_then_now_v01.mp4",
+    "06_explorer_diagram_v07.mp4",
+    "07_why_groundbreaking_v08.mp4",
+    "08_dentist_hospital_payoff_v01.mp4",
+    "09_bigger_question_v03.mp4",
+    "10_cardboard_glow_hold_v07.mp4",
+    "11_soft_return_v10.mp4"
+  ],
+  "plate_sha256": {
+    "01_chapter_new_seeing_v18.mp4": "10ece3e997b4522da91edfe059945510c51bd5a56df1c58f161278741128c209",
+    "02_what_are_xrays_v07.mp4": "a72e4d1e297750cf18e5188bc5e015bf004a79a118b86ae5011a455386786447",
+    "03_spectrum_past_uv_v07.mp4": "083016197ce3f2ca8856e89f19f7675e55cfe672d83eee472963a7c407ee0488",
+    "04_soft_vs_bone_v02.mp4": "2bd9aaca582944d9c122495e73e96beb402711eeef0f732d1ce3d1a76b985aee",
+    "05_detector_then_now_v01.mp4": "2757c97ec17dab363f98cdf7ae919e55d1df21ba54702a1ba732d52d7ef51d66",
+    "06_explorer_diagram_v07.mp4": "4228941dcb9b7d8ca8622012ade1e057eb7cda874ef5efb4ddc0b7acf8186ff2",
+    "07_why_groundbreaking_v08.mp4": "e2a4e79d61c8e67f92f21b7c217a0e006a0e01193522461d1eba06411ba64f24",
+    "08_dentist_hospital_payoff_v01.mp4": "93df956a5a56105405079e5da675f1ce541a3a08ce623783956250fec1e46389",
+    "09_bigger_question_v03.mp4": "fed9f00bffcc8e31daa5e17f57aab65fe356e2d9addac799fabd0f520392bbe2",
+    "10_cardboard_glow_hold_v07.mp4": "b29f216cd05a0bfccef00fdcad24f82c751bd891b13328ff7a033975bc1ac2fd",
+    "11_soft_return_v10.mp4": "95e5c481749963137ae2417eb7140b5e4ce05a1d1cd8d602db1d10246c98e789"
+  },
+  "labels": [
+    {
+      "t0": 8.100000000000001,
+      "t1": 11.900000000000002,
+      "text": "X-RAYS"
+    },
+    {
+      "t0": 15.650000000000002,
+      "t1": 19.250000000000004,
+      "text": "INVISIBLE LIGHT"
+    },
+    {
+      "t0": 30.749999999999996,
+      "t1": 34.55,
+      "text": "A DETECTOR"
+    },
+    {
+      "t0": 53.34999999999999,
+      "t1": 56.94999999999999,
+      "text": "YOUR WORLD"
+    }
+  ],
+  "teach_cards": [
+    {
+      "t0": 9.15,
+      "t1": 13.15,
+      "title": "HIGH ENERGY",
+      "body": "Light with more punch than your eyes catch \u2014 past ultraviolet."
+    },
+    {
+      "t0": 24.45,
+      "t1": 28.45,
+      "title": "DENSITY",
+      "body": "Soft tissue lets more through; bone and metal stop more."
+    },
+    {
+      "t0": 46.89999999999999,
+      "t1": 50.89999999999999,
+      "title": "NO KNIFE",
+      "body": "Doctors see inside a living body without surgery."
+    },
+    {
+      "t0": 54.44999999999999,
+      "t1": 58.44999999999999,
+      "title": "STILL R\u00d6NTGEN",
+      "body": "Same idea \u2014 safer dose, clearer detector."
+    }
+  ],
+  "house": "No Explorer. Silent-readable + teaching density. Continuous 1x motion. Ominous ward bed. No DNA helix. No Veo mint."
+}

@@ -1,7 +1,7 @@
 # HOS 003 Part 04 — Batch A Mint Green / Handoff
 
-**Status:** **GREEN / MINT OPEN**  
-**Mint:** **OPEN** — Ben mint-green Batch A (21 Sep 2026). CoS launching Mini Create.  
+**Status:** **UAT FAIL → REMINT OPEN** (see `PART04_BATCH_A_REMINT_v01.md`)  
+**Mint:** **REMINT OPEN** — Batch A UAT HARD FAIL 22 Sep; KEEP 01/05/06; remint 8 on CoS Flow.  
 **Film:** *Invisible Bones / X-rays*  
 **Part:** 04 — *Bertha’s Ring*  
 **Premiere title:** How Did We Discover X-rays?  
@@ -56,3 +56,24 @@ This sheet does **not** pass/fail cuts as Ben PASS.
 ---
 
 **MINT OPEN stamp (21 Sep evening):** Ben mint-green Batch A. `parts/part-04_plates_v01.json` → `mint: true`. Assemble CLOSED. VO masters still later.
+---
+
+**REMINT stamp (22 Sep):** Batch A UAT HARD FAIL (helix + mute/label). KEEP 01/05/06. Remint sheet `PART04_BATCH_A_REMINT_v01.md`. Assemble CLOSED.
+---
+
+**BULLET REMINT stamp (22 Sep):** Ben NOT KEEP — lodged bullet inside arm/chest radiograph, never hand+sticker. Sheet `PART04_PLATES_070809_BULLET_REMINT_v01.md`. Remint 07/08/09 only. Assemble CLOSED. Letters lean house baked.
+---
+
+**08 v05 harden stamp (22 Sep midday):** v03+v04 FAIL — 3D luminous cartridge ON TOP of X-ray + spiral/helix tube filaments + Ken Burns. Board + `PART04_PLATES_070809_BULLET_REMINT_v01.md` hardened: flat 2D denser shadow INSIDE ribs only; continuous 3D camera; Same Würzburg lab. CoS minting v05.
+---
+
+**08 v06 stamp (22 Sep):** Ben greened tight radiograph-hero. Drop `PART04_PLATE08_V06_CREATE.md`. Fill-frame green chest radiograph; shallow dark BG; flat denser shadow INSIDE ribs; no deep lab opener. CoS mint ASAP.
+---
+
+**08 v07 stamp (22 Sep):** Picture FAIL v06 — 3D cartridge still ON TOP (helix/fill-frame WON). Drop `PART04_PLATE08_V07_CREATE.md`: foreign-body SHADOW wording only; opener BLANK. CoS mint ASAP.
+---
+
+**07 faces remint stamp (22 Sep):** Ben GREEN. Readable Animistry cartoon faces on `07_doctors_lean_in`. Sheets `PART04_PLATE07_FACES_REMINT_v01.md` + `PART04_PLATE07_FACES_CREATE.md`. Assemble CLOSED until land + UAT.
+---
+
+**KEEP/LOCK stamp (22 Sep):** `hos_003_part04_rough_v03.mp4` sha `d2b5946221343cb3012077d44b970f91d6002039c73c06ceb06d2972189b8508`. Readable-faces proved. Soft MEDICINE accepted. No further remint this part.

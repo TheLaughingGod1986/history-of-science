@@ -1,98 +1,130 @@
 {
   "part": 4,
-  "title": "Bertha\u2019s Ring",
+  "title": "Bertha’s Ring",
   "film": "003_Invisible-Bones-X-Rays",
-  "mint": true,
+  "mint": false,
   "vo_file": "02_Voiceover/part04_berthas_ring_v02.txt",
   "clip_use_s": 7.9,
   "xfade_s": 0.35,
-  "set_language": "ONE persistent 1895 W\u00fcrzburg physics-lab set: dark wood benches, dark curtains, coils, one Crookes/cathode-ray glass tube, fluorescent cardboard screen when the beat needs it, ominous soft green-violet glow. Camera moves only; no hospital ward; no Periodic cream-card desk. Proof-plate beat may push into stylised photo-plate graphic still in Animistry 3D \u2014 not photoreal medical archive.",
+  "set_language": "ONE persistent 1895 Würzburg physics-lab set: dark wood benches, dark curtains, coils, one Crookes/cathode-ray glass tube, fluorescent cardboard screen when the beat needs it, ominous soft green-violet glow. Camera moves only; no hospital ward; no Periodic cream-card desk. Proof-plate beat may push into stylised photo-plate graphic still in Animistry 3D — not photoreal medical archive.",
   "explorer_lock": "NONE this part.",
-  "forbidden": "HARD REJECT: Orbit robot; Germs death-ward beds; Periodic cream-card desk; photoreal; Ken Burns only; gore; lava drip; underside bulb/shade cup; unfinished Explorer hair; wall of text. No Explorer. No gore. No Orbit. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop (no yellow/purple helix garnish, no DNA model). Never open Create with `Same DNA soft background`. Prefer `Same W\u00fcrzburg lab` not bare `Same DNA`.",
+  "forbidden": "HARD REJECT: Orbit robot; Germs death-ward beds; Periodic cream-card desk; photoreal; Ken Burns only; gore; lava drip; underside bulb/shade cup; unfinished Explorer hair; wall of text; garbled float labels. No Explorer. No gore. No Orbit. HARD FAIL — no DNA helix, no double helix, no spiral DNA prop, no Periodic-table DNA desk prop (includes yellow/purple helix garnish, glowing yellow helix in X-ray palm, DNA model, orrery-helix desk bleed). Never open Create with `Same DNA soft background`. Prefer `Same Würzburg lab` not bare `Same DNA`.",
   "plates": [
     {
       "id": "01_chapter_bertha",
       "explorer": false,
       "side_label": null,
-      "prompt": "Animistry 3D. W\u00fcrzburg 1895 physics lab \u2014 dark wood, dark curtains, coils, one Crookes tube, soft green-violet glow. MUTE-TEST: empty proof plate waiting near the beam must immediately read as the chapter open for Bertha\u2019s Ring (sound OFF). Continuous motion. Silent. No Explorer. HARD REJECT: Orbit, photoreal archive paste, Germs ward, Periodic desk. HARD FAIL \u2014 no DNA helix / double helix / Periodic DNA desk prop; never open Create with `Same DNA soft background`; prefer `Same W\u00fcrzburg lab`.",
-      "mute_test": "Empty proof plate near beam = Bertha chapter open (sound OFF)"
+      "prompt": "Animistry 3D. Würzburg 1895 physics lab — dark wood, dark curtains, coils, one Crookes tube, soft green-violet glow. MUTE-TEST: empty proof plate waiting near the beam must immediately read as the chapter open for Bertha’s Ring (sound OFF). Continuous motion. Silent. No Explorer. HARD REJECT: Orbit, photoreal archive paste, Germs ward, Periodic desk. HARD FAIL — no DNA helix / double helix / spiral DNA prop / Periodic DNA desk (incl. glowing yellow helix in X-ray palm); never open Create with `Same DNA soft background`; prefer `Same Würzburg lab`.",
+      "mute_test": "Empty proof plate near beam = Bertha chapter open (sound OFF)",
+      "uat": "KEEP — chapter open"
     },
     {
       "id": "02_hand_on_plate",
       "explorer": false,
       "side_label": null,
-      "prompt": "Same W\u00fcrzburg lab. MUTE-TEST VO-LITERAL: faceless woman\u2019s hand rests gently on/near the photographic plate for exposure \u2014 dignified, living-person witness (no face hero, no gore). Continuous. Silent. HARD REJECT: gore, face close-up hero, photoreal medical. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "Faceless woman hand rests for exposure \u2014 living witness, dignified"
+      "prompt": "Same Würzburg lab. MUTE-TEST VO-LITERAL (CRITICAL): faceless woman’s hand rests gently ON the photographic proof plate for exposure — living-person witness, dignified rest-for-exposure pose. The mute read is HAND ON PLATE, not a glowing disk, not a floating X-ray orb, not a palm filled with yellow helix. No face hero, no gore. Continuous. Silent. HARD REJECT: glowing disk as the beat; helix-in-palm; face close-up hero; photoreal medical; gore. HARD FAIL — no DNA helix / double helix / spiral DNA prop / Periodic DNA desk (incl. glowing yellow helix in X-ray palm); never open Create with `Same DNA soft background`; prefer `Same Würzburg lab`.",
+      "mute_test": "Hand rests for exposure ON the proof plate (not a glowing disk / not helix-in-palm)",
+      "uat": "KEEP after remint v02 plate-first PASS — do not remint for bullet"
     },
     {
       "id": "03_bones_and_ring",
       "explorer": false,
-      "side_label": "BERTHA\u2019S RING",
-      "prompt": "Animistry 3D stylised proof image (not photoreal archive). MUTE-TEST: hand bones AND wedding-ring shadow both clearly visible on the plate \u2014 ring denser/darker than bone (silent-readable). Wonder, not horror. Continuous soft settle. Silent. Side label BERTHA\u2019S RING sparse/readable. HARD REJECT: photoreal historical photo paste, gore, Orbit. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "Bones AND wedding-ring shadow both clear; ring denser/darker"
+      "side_label": "BERTHA’S RING",
+      "prompt": "Animistry 3D stylised proof image (not photoreal archive). MUTE-TEST: hand bones AND wedding-ring shadow both clearly visible on the plate — ring denser/darker than bone (silent-readable). Wonder, not horror. Continuous soft settle. Silent. Side label BERTHA’S RING sparse/readable. HARD REJECT: photoreal historical photo paste, gore, Orbit, yellow helix in palm. HARD FAIL — no DNA helix / double helix / spiral DNA prop / Periodic DNA desk (incl. glowing yellow helix in X-ray palm); never open Create with `Same DNA soft background`; prefer `Same Würzburg lab`.",
+      "mute_test": "Bones AND wedding-ring shadow both clear; ring denser/darker",
+      "uat": "KEEP after remint v02 plate-first PASS — do not remint for bullet"
     },
     {
       "id": "04_haunted_becomes_fact",
       "explorer": false,
       "side_label": "PROOF",
-      "prompt": "Same W\u00fcrzburg lab. MUTE-TEST: proof plate held up in lab light reads as FACT (haunted glow becomes something you can hold) \u2014 silent-readable; PROOF label sparse. Continuous. Silent. HARD REJECT: wall of newspaper text, Orbit. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "Proof plate held up = fact you can hold"
+      "prompt": "Same Würzburg lab. MUTE-TEST: proof plate held up in lab light reads as FACT (haunted glow becomes something you can hold) — silent-readable. Side label PROOF must be present and sparse (Animistry Didot italic). NO Explorer. NO face-hero scientist. NO hero face close-up. If a figure is needed: warm Animistry cartoon face with simple eyes/nose — not blank mannequin, not Explorer, not face-hero close-up. Continuous. Silent. HARD REJECT: Explorer trenchcoat garnish; face-hero scientist; wall of newspaper text; Orbit. HARD FAIL — no DNA helix / double helix / spiral DNA prop / Periodic DNA desk (incl. glowing yellow helix in X-ray palm); never open Create with `Same DNA soft background`; prefer `Same Würzburg lab`.",
+      "mute_test": "Proof plate held up = fact; PROOF label present; no Explorer / no face-hero",
+      "uat": "KEEP after remint v02 plate-first PASS — do not remint for bullet",
+      "face_note": "Prompt softened for future Creates; remint 04 ONLY if assemble land shows mannequin scientists (default KEEP if proof-plate-only)"
     },
     {
       "id": "05_letters_fly",
       "explorer": false,
       "side_label": null,
-      "prompt": "Animistry 3D. MUTE-TEST: stylised letters/envelopes lift and travel from the lab (Europe spread energy) \u2014 continuous motion; no modern email UI. Silent. HARD REJECT: modern UI, Orbit. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "Letters/envelopes travel from lab (no modern UI)"
+      "prompt": "Animistry 3D. MUTE-TEST VO-LITERAL: stylised letters/envelopes clearly SHOW — lift and travel from the lab (correspondence / mail / spread-of-news energy). Letters must dominate the frame as readable paper/envelopes in motion, not a tiny garnish. Continuous motion; no modern email UI. Silent. HARD REJECT: modern UI, Orbit, wall of text, letters too small to read as mail. HARD FAIL — no DNA helix / double helix / spiral DNA prop / Periodic DNA desk (incl. glowing yellow helix in X-ray palm); never open Create with `Same DNA soft background`; prefer `Same Würzburg lab`.",
+      "mute_test": "Letters/envelopes clearly SHOW traveling from lab (correspondence readable; no modern UI)",
+      "uat": "KEEP — Ben soft lean: SHOW letters more when story has mail/spread (do not remint this land)",
+      "house_letters_lean": "HOS_HOUSE_SHOW_LETTERS_LOCK.md"
     },
     {
       "id": "06_labs_copy_tube",
       "explorer": false,
       "side_label": null,
-      "prompt": "Animistry 3D. MUTE-TEST: other dark labs light the same cathode-tube shape \u2014 copies of the method (same cartoon house). Continuous. Silent. HARD REJECT: Periodic cream-card desk, Orbit. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "Other labs copy same cathode-tube shape"
+      "prompt": "Animistry 3D. MUTE-TEST: other dark labs light the same cathode-tube shape — copies of the method (same cartoon house). Continuous. Silent. HARD REJECT: Periodic cream-card desk, Orbit. HARD FAIL — no DNA helix / double helix / spiral DNA prop / Periodic DNA desk (incl. glowing yellow helix in X-ray palm); never open Create with `Same DNA soft background`; prefer `Same Würzburg lab`.",
+      "mute_test": "Other labs copy same cathode-tube shape",
+      "uat": "KEEP — labs copy tube"
     },
     {
       "id": "07_doctors_lean_in",
       "explorer": false,
       "side_label": "MEDICINE",
-      "prompt": "Animistry 3D. MUTE-TEST: faceless doctors lean toward a glowing plate \u2014 curiosity/medicine energy; MEDICINE label sparse. No photoreal hospital, no Germs death-ward beds. Continuous. Silent. HARD REJECT: Orbit, Germs ward as this film, gore. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "Faceless doctors lean to glowing plate \u2014 medicine curiosity"
+      "prompt": "Animistry 3D cartoon. MUTE-TEST VO-LITERAL (CRITICAL): two Victorian scientists in period suits lean toward a glowing green chest radiograph. Each face is a warm readable Animistry cartoon face with simple eyes and nose (not blank, not mannequin). MEDICINE side label sparse (Animistry Didot italic). Radiograph hold stays clear — denser flat radiographic foreign-body SHADOW (opaque blot density) lodged INSIDE the ribs, same graphic language as the bones. Dark lab / shallow set OK; continuous living camera. Silent. HARD REJECT: blank mannequin ovals; featureless white faces; photoreal faces; Explorer trenchcoat boy; extreme face-hero close-up; 3D cartridge or ammo prop ON TOP of the scan; helix or spiral filament garnish; molecular models; Ken Burns-only; readable prompt text on screen; Orbit; Germs death-ward beds; gore.",
+      "mute_test": "Two period scientists with readable cartoon eyes/nose lean to green radiograph; MEDICINE sparse; denser shadow INSIDE ribs",
+      "uat": "REMINT faces — Ben GREEN 22 Sep; blank mannequin FAIL",
+      "create_opener": "BLANK preferred — or Same Würzburg lab only if Continuity needs it; never Same DNA…",
+      "positive_must": "readable Animistry cartoon faces (simple eyes/nose); period wardrobe; radiograph hold; MEDICINE sparse; continuous camera",
+      "hard_fail": "blank mannequin ovals; photoreal faces; Explorer trenchcoat boy; extreme face-hero close-up; helix"
     },
     {
       "id": "08_bullet_break_map",
       "explorer": false,
       "side_label": null,
-      "prompt": "Stylised cartoon plate. MUTE-TEST: denser shadow suggesting a lodged bullet OR bone break reads as a map doctors can use \u2014 educational, not trauma; no blood. Continuous. Silent. HARD REJECT: blood, photoreal trauma, gore. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "Denser shadow = bullet or break map; no blood"
+      "prompt": "Animistry 3D cartoon. MUTE-TEST VO-LITERAL (CRITICAL): from FRAME 0 fill the entire frame with a glowing green chest radiograph — ribs and soft tissue map already dominate the first frame (no lab peek, no beaker, no flask, no glassware, no helix intro). Shallow empty dark background only for the whole clip. Inside the rib cage and soft tissue: ONE denser flat radiographic foreign-body SHADOW — opaque blot / silhouette density only — lodged INSIDE the anatomy, in the EXACT same graphic language as the bones (looks printed into the scan, not an object in front of it). Do not depict any solid metal object or casing sitting on the plate. Educational; no blood. Continuous living 3D camera (slow drift or gentle parallax across the plate) — not Ken Burns on a still. Silent. HARD REJECT: 3D cartridge; ammunition casing; rifle round; projectile prop; floating object above the scan; drop-shadow casting onto the radiograph; photoreal ammo; hand+sticker; helix or spiral filament garnish; lab/beaker/flask peek at any frame; deep lab background; any readable prompt text / UI text / watermark on screen; Ken Burns-only; gore; Orbit.",
+      "mute_test": "FRAME 0 fill-frame green chest radiograph; denser flat foreign-body SHADOW INSIDE ribs — never 3D cartridge; never lab/beaker peek",
+      "uat": "REMINT v07 — FRAME 0 radiograph-hero; foreign-body SHADOW only; continuous 3D; opener BLANK",
+      "create_opener": "BLANK",
+      "forbidden_create_openers": [
+        "Same DNA soft background",
+        "Same DNA",
+        "Same Würzburg lab"
+      ],
+      "positive_must": "fill-frame green chest radiograph; flat denser foreign-body SHADOW (opaque blot) INSIDE ribs/soft tissue; continuous 3D camera",
+      "hard_fail": "3D cartridge / ammo casing / projectile prop ON TOP of scan; drop-shadow on scan; helix; on-screen prompt text; Ken Burns",
+      "approach": "A_tight_radiograph_hero_shadow_only",
+      "ben_green": {
+        "date": "2026-09-22",
+        "approach": "tight radiograph-hero",
+        "version_target": "v07",
+        "wording": "foreign-body SHADOW only — never bullet/cartridge as object in positive prompt"
+      }
     },
     {
       "id": "09_body_as_map",
       "explorer": false,
       "side_label": null,
-      "prompt": "Soft diagram energy. MUTE-TEST: body reads as a readable map while still whole (no cut-open anatomy). Continuous. Silent. HARD REJECT: cut-open anatomy horror. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "Body as map while still whole"
+      "prompt": "Animistry 3D. MUTE-TEST: fill most of frame with a green torso/chest radiograph as a readable body map while still whole — any denser mark is a flat radiographic foreign-body SHADOW (opaque blot) INSIDE the ribs, same language as bones. Shallow empty dark BG; no deep lab; no molecular models. Continuous living camera. Silent. HARD REJECT: 3D cartridge; ammo casing; projectile prop; cut-open anatomy; helix; Ken Burns-only; readable prompt text on screen; Orbit.",
+      "mute_test": "Fill-frame-ish green radiograph body map; denser shadow INSIDE ribs; shallow dark BG",
+      "uat": "REMINT open with 08 harden — radiographic density inside anatomy only",
+      "create_opener": "NONE preferred — radiograph-hero"
     },
     {
       "id": "10_why_groundbreaking",
       "explorer": false,
       "side_label": "A NEW EYE",
-      "prompt": "W\u00fcrzburg lab + proof-plate glow. MUTE-TEST: diagnosis gains a new eye \u2014 density reading, not blood/guesswork; A NEW EYE label sparse. Continuous. Silent. HARD REJECT: slogan bumper, Orbit. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "New eye for diagnosis \u2014 density, not guesswork"
+      "prompt": "Würzburg lab + proof-plate glow. MUTE-TEST: diagnosis gains a new eye — density reading, not blood/guesswork. ONE sparse side label only: A NEW EYE (Animistry Didot italic). HARD REJECT: wall of text; garbled float labels; stacked floating words; slogan bumper; Orbit; multiple competing labels. Continuous. Silent. HARD FAIL — no DNA helix / double helix / spiral DNA prop / Periodic DNA desk (incl. glowing yellow helix in X-ray palm); never open Create with `Same DNA soft background`; prefer `Same Würzburg lab`.",
+      "mute_test": "New eye for diagnosis — density not guesswork; one sparse A NEW EYE label only (no wall-of-text / garbled floats)",
+      "uat": "KEEP after remint v02 plate-first PASS — do not remint for bullet"
     },
     {
       "id": "11_proof_hold",
       "explorer": false,
       "side_label": null,
-      "prompt": "MUTE-TEST: hold on bones+ring proof plate \u2014 both bones and ring still read; continuous soft settle (not Ken Burns-only). Silent. HARD REJECT: Ken Burns only, freeze-pad. HARD FAIL \u2014 no DNA helix; never `Same DNA soft background`.",
-      "mute_test": "Bones+ring plate hold; continuous settle"
+      "prompt": "MUTE-TEST: hold on bones+ring proof plate — both bones and ring still read; continuous soft settle (not Ken Burns-only). Silent. No DNA helix in palm. HARD REJECT: Ken Burns only, freeze-pad, glowing yellow helix in palm. HARD FAIL — no DNA helix / double helix / spiral DNA prop / Periodic DNA desk (incl. glowing yellow helix in X-ray palm); never open Create with `Same DNA soft background`; prefer `Same Würzburg lab`.",
+      "mute_test": "Bones+ring plate hold; continuous settle",
+      "uat": "KEEP after remint v02 plate-first PASS — do not remint for bullet"
     }
   ],
-  "teaching_density_lock": "HOS_HOUSE_TEACHING_DENSITY_LOCK.md (20 Sep 2026) \u2014 side label or short teach card whenever name/place/idea needs explaining",
-  "silent_readable_picture_lock": "HOS_HOUSE_SILENT_READABLE_PICTURE_LOCK.md (21 Sep) \u2014 bake before mint",
+  "teaching_density_lock": "HOS_HOUSE_TEACHING_DENSITY_LOCK.md (20 Sep 2026) — side label or short teach card whenever name/place/idea needs explaining",
+  "silent_readable_picture_lock": "HOS_HOUSE_SILENT_READABLE_PICTURE_LOCK.md (21 Sep) — bake before mint",
   "house_helix_lock": "HOS_HOUSE_NO_DNA_HELIX_LOCK.md",
-  "parent_parts": "P01+P02+P03 KEEP/LOCK (P03 = hos_003_part03_rough_v02 sha 572d498f\u2026)",
-  "batch_status": "MINT OPEN 21 Sep 2026 \u2014 Ben mint-green Batch A (11 plates). CoS Flow Create in flight. First plate 01_chapter_bertha. Assemble CLOSED. VO masters later. P01\u2013P03 KEEP untouched.",
+  "parent_parts": "P01+P02+P03+P04 KEEP/LOCK (P04 = hos_003_part04_rough_v03 sha d2b59462…)",
+  "batch_status": "KEEP/LOCK 22 Sep 2026 — hos_003_part04_rough_v03.mp4 sha d2b59462…. Readable-faces proved. Soft MEDICINE accepted. P01–P04 all KEEP. Part 05 next.",
   "batch_a_order": [
     "01_chapter_bertha",
     "02_hand_on_plate",
@@ -111,16 +143,59 @@
     "file": "02_Voiceover/part04_berthas_ring_v02.txt",
     "sha256": "45bea4466e68ce5cd7a1fa3e70745694e8fcaa979037de74c52a914cd47bb375",
     "words": 232,
-    "masters": "NOT YET \u2014 mint Orbit Narrator before assemble (same stack as P01\u2013P03)"
+    "masters": "NOT YET — mint Orbit Narrator before assemble (same stack as P01–P03)"
   },
   "quality": "Veo 3.1 Quality / CLEAN LIGHT",
   "flow_account": "benoats@googlemail.com",
-  "assemble": "CLOSED until all Batch A lands + plate-first UAT PASS",
+  "assemble": "DONE — Ben KEEP/LOCK rough_v03",
   "mint_green": {
     "by": "Ben",
     "date": "2026-09-21",
     "batch": "A",
     "first_plate": "01_chapter_bertha",
     "plate_count": 11
+  },
+  "uat_root_fail": "Part 04 Ben NOT KEEP (22 Sep voice): bullet must be lodged INSIDE arm bones or chest ribs on the radiograph; HARD FAIL flat bullet sticker/overlay next to a hand (hand+sticker). Remint 07/08/09. Prior helix/mute remint v01→v02 plate-first PASS stands for other plates. Soft letters lean: SHOW letters when story has mail. | Plate 08 v03+v04 FAIL pattern: luminous 3D rifle cartridge ON TOP of X-ray + helix/spiral tube filaments + Ken Burns. v05 must be flat denser shadow INSIDE ribs only.",
+  "quality_note": "Veo 3.1 Quality / CLEAN LIGHT. Helix HARD FAIL still. Bullet HARD FAIL: never hand+sticker / flat overlay; POSITIVE lodged bullet inside chest or arm bones on X-ray. Letters lean: SHOW letters/envelopes clearly when correspondence / mail / spread-of-news is the story. Plate 08 CRITICAL: denser mark = flat 2D radiographic density INSIDE ribs (same graphic language as bones); HARD FAIL 3D metallic/luminous cartridge ON TOP of plate; continuous camera motion not Ken Burns; Create opener Same Würzburg lab only.",
+  "remint": {
+    "sheet": "PART04_PLATES_070809_BULLET_REMINT_v01.md",
+    "dated": "2026-09-22",
+    "prior_helix_sheet": "PART04_BATCH_A_REMINT_v01.md",
+    "keep": [
+      "01_chapter_bertha",
+      "02_hand_on_plate",
+      "03_bones_and_ring",
+      "04_haunted_becomes_fact",
+      "05_letters_fly",
+      "06_labs_copy_tube",
+      "10_why_groundbreaking",
+      "11_proof_hold"
+    ],
+    "remint": [
+      "07_doctors_lean_in",
+      "08_bullet_break_map",
+      "09_body_as_map"
+    ],
+    "reason": "Ben NOT KEEP — lodged bullet inside chest/arm radiograph; never hand+sticker overlay",
+    "plate_08_version_target": "v07",
+    "plate_08_fail_pattern": "v03–v04 cartridge ON TOP; v05 helix deep lab; v06 fill-frame/helix OK but 3D cartridge still ON TOP",
+    "plate_08_must": "FRAME 0 fill-frame green chest radiograph; foreign-body SHADOW opaque blot INSIDE ribs; continuous 3D not Ken Burns; opener BLANK; no lab/beaker/helix peek",
+    "plate_08_approach": "A_tight_radiograph_hero",
+    "face_sheet": "PART04_PLATE07_FACES_REMINT_v01.md",
+    "face_plates": [
+      "07_doctors_lean_in"
+    ],
+    "face_also_check": [
+      "04_haunted_becomes_fact — remint only if land shows mannequin scientists; else KEEP"
+    ]
+  },
+  "house_letters_lock": "HOS_HOUSE_SHOW_LETTERS_LOCK.md",
+  "house_faces_note": "HOS: readable Animistry cartoon faces on character plates. “Faceless” meant no Explorer / no face-hero close-up — never blank mannequin ovals.",
+  "keep_lock": {
+    "by": "Ben",
+    "date": "2026-09-22",
+    "cut": "hos_003_part04_rough_v03.mp4",
+    "sha256": "d2b5946221343cb3012077d44b970f91d6002039c73c06ceb06d2972189b8508",
+    "duration_s": 83.4
   }
 }

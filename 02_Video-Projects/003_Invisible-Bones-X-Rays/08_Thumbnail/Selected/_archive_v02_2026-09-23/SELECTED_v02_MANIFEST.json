@@ -1,0 +1,131 @@
+{
+  "version": "v02",
+  "picks": {
+    "long": {
+      "file": "hos_003_thumb_long_bertha_ring_v02.jpg",
+      "text": "1895",
+      "sha256": "b226034ad8b2a042ef83c7a074d4469cdebc01d03c2727848fcd73373c484fd8",
+      "rationale": "TV-large 1895; hero frame; board match"
+    },
+    "s1": {
+      "file": "hos_003_thumb_s1_cardboard_glow_v02.jpg",
+      "text": "GLOW?",
+      "sha256": "5454293367fde7c1d02699d020a3a39d59b6110b833dc7235cb7a9c28bf7797a",
+      "rationale": "TV-large GLOW?; hero frame; board match"
+    },
+    "s2": {
+      "file": "hos_003_thumb_s2_bones_no_knife_v02.jpg",
+      "text": "NO KNIFE",
+      "sha256": "86ade8e120a98f5aea61fa6c3b05e0ef81d990586f5fe45ef7a9659a095be2ec",
+      "rationale": "TV-large NO KNIFE; hero frame; board match"
+    },
+    "s3": {
+      "file": "hos_003_thumb_s3_bertha_ring_v02.jpg",
+      "text": "RING",
+      "sha256": "1b959b34419fdde71a0d54e64139da2504983c607099c7dcf6b66203ce3a3616",
+      "rationale": "TV-large RING; hero frame; board match"
+    }
+  },
+  "variants": {
+    "long": [
+      {
+        "file": "hos_003_thumb_long_1895_v02.jpg",
+        "text": "1895",
+        "sha256": "b226034ad8b2a042ef83c7a074d4469cdebc01d03c2727848fcd73373c484fd8"
+      },
+      {
+        "file": "hos_003_thumb_long_x-rays_v02.jpg",
+        "text": "X-RAYS",
+        "sha256": "2efa03407e5a9c812a4661970f888028c3a93831a984159db027d9ec5548326b"
+      },
+      {
+        "file": "hos_003_thumb_long_first_proof_v02.jpg",
+        "text": "FIRST PROOF",
+        "sha256": "281718682c129fdc949c8a09a9ba90ceee9073cd46f8212c4792481b372d47d4"
+      }
+    ],
+    "s1": [
+      {
+        "file": "hos_003_thumb_s1_glow_v02.jpg",
+        "text": "GLOW?",
+        "sha256": "5454293367fde7c1d02699d020a3a39d59b6110b833dc7235cb7a9c28bf7797a"
+      },
+      {
+        "file": "hos_003_thumb_s1_dark_v02.jpg",
+        "text": "DARK?",
+        "sha256": "abc53ff8dfbed51125f43dcca2831996b8c8b37bfe4438f1ba8f5d8a9f906b59"
+      },
+      {
+        "file": "hos_003_thumb_s1_x_v02.jpg",
+        "text": "X",
+        "sha256": "70ef098189b2034e3bd51775f7b67e82d155e861abd9cbaaea4358990dfd1427"
+      }
+    ],
+    "s2": [
+      {
+        "file": "hos_003_thumb_s2_no_knife_v02.jpg",
+        "text": "NO KNIFE",
+        "sha256": "86ade8e120a98f5aea61fa6c3b05e0ef81d990586f5fe45ef7a9659a095be2ec"
+      },
+      {
+        "file": "hos_003_thumb_s2_bones_v02.jpg",
+        "text": "BONES",
+        "sha256": "80381ba37e02420757f99f7a4c3e200e317196dac21e5abcb9efb8de78cbecf6"
+      },
+      {
+        "file": "hos_003_thumb_s2_see_inside_v02.jpg",
+        "text": "SEE INSIDE",
+        "sha256": "5b20e0fa078635e2e2f1218726cc4325a8886d32f1ebaaa3f4b0480617b503e0"
+      }
+    ],
+    "s3": [
+      {
+        "file": "hos_003_thumb_s3_ring_v02.jpg",
+        "text": "RING",
+        "sha256": "1b959b34419fdde71a0d54e64139da2504983c607099c7dcf6b66203ce3a3616"
+      },
+      {
+        "file": "hos_003_thumb_s3_bertha_v02.jpg",
+        "text": "BERTHA",
+        "sha256": "78d4e02d02f1aa12e3dedc939f7d9d04cee9b9ed4a8ecfbaf6e8814a7dc626bd"
+      },
+      {
+        "file": "hos_003_thumb_s3_first_x-ray_v02.jpg",
+        "text": "FIRST X-RAY",
+        "sha256": "85558d3da6850cdf3b9ce9a0310e58895781317e14c8b05c28883c2060548ab8"
+      }
+    ]
+  },
+  "covers": {
+    "hos_003_s1_cover_v02.jpg": {
+      "text": "GLOW?",
+      "sha256": "5b748d3218cbbdaaf9b10219e01c31a5a0166214238642043e226e50d0dc7631"
+    },
+    "hos_003_s2_cover_v02.jpg": {
+      "text": "NO KNIFE",
+      "sha256": "182370b354dccdacaeded8fefb78c885f9b1f471af5f7944f080e3fd1d62dc94"
+    },
+    "hos_003_s3_cover_v02.jpg": {
+      "text": "RING",
+      "sha256": "0fd75433d6161d48d9f7815bcbd7bd00148a9fbf68ea827c01d7065bc647e5ca"
+    }
+  },
+  "pills": {
+    "hos_003_s1_pill_v02.png": {
+      "title": "Why Did This Cardboard Glow in the Dark?",
+      "sha256": "3724a02bf6dbd1be9200a68cca65f0dc2a44fa995892a23cf49a5d3e64628dd7"
+    },
+    "hos_003_s2_pill_v02.png": {
+      "title": "How Can You See Bones Without a Knife?",
+      "sha256": "ee0ea70802f00d0088cea2bd5124ff5defdb6249553bc4b2521de0e6d9240a7d"
+    },
+    "hos_003_s3_pill_v02.png": {
+      "title": "Why Is There a Ring on the First X-ray?",
+      "sha256": "bf869091593407ca70517747fc642fea2187fddd320a4ced84a37fa637811671"
+    },
+    "hos_003_long_pill_v02.png": {
+      "title": "How Did We Discover X-rays?",
+      "sha256": "60f9afb7f45e6f6c3f78f8f1ed665eb64259c7d07eeb01e1f8bea445bfeb3227"
+    }
+  }
+}

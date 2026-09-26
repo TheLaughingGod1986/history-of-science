@@ -1,0 +1,37 @@
+Flow profile=/Users/benjaminoats/.playwright-hos-flow-profile model=Veo 3.1 - Fast plates=12
+  dismissed banner via 'Agree'
+
+=== Fast T2V 01_hall_open_side_label (1/12) ===
+  scenery-only (no Orbit identity ref)
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  flow: https://flow.google.com/project/ab2cbddf-facc-474a-9661-89d723987ceb
+  dismissed banner via 'Agree'
+  video model dropdown: 'Omni 1.1 Flash arrow_drop_down'
+  video model selected: Veo 3.1 - Fast
+  video model locked via Agent settings: Veo 3.1 - Fast
+  post-settings…
+  setting scenery-only prompt (no Orbit chip)…
+  set_prompt insert_text chars=1065 dirty=False
+  set_prompt ok head='History of Science locked look: premium Animistry-class 3D c'
+  submitting Create…
+  clicking Flow send ('arrow_forward')
+  submitted Create (scenery-only, no Orbit ref)
+  wait 0s status=… new_media=0 gen=False
+  wait 4s status=failed new_media=0 gen=False
+  wait 8s status=failed new_media=0 gen=False
+  wait 12s status=failed new_media=0 gen=False
+  wait 16s status=failed new_media=0 gen=False
+  wait 20s status=failed new_media=0 gen=False
+  wait 24s status=failed new_media=0 gen=False
+  wait 28s status=failed new_media=0 gen=False
+  wait 32s status=failed new_media=0 gen=False
+  PAGE_SNIPPET gen=False head: Skip to main content | arrow_back | more_vert | search | filter_list | add | help | settings_2 | more_vert | dashboard | All media | videocam | Videos | accessibility_new | Characters | movie | Scenes | apps_spark_2 | Tools | delete | Bin | left_panel_close | Collapse | info | You're out of Google Flow credits. You can wait until they refresh or upgrade to get more Google Flow credits now. | open_in_new | Upgrade | close | warning | Failed | Sorry, this video failed to generate. | You have not been charged for this generation. | refresh | undo | delete_forever | menu | Untitled session | edit_square | close | History of Science locked look: premium Animistry-class 3D cartoon, warm cinematic 
+  PAGE_SNIPPET gen=False tail: tinuous camera push down the aisle as dust motes drift and pamphlets rustle. Optional tiny Animistry side caption plate upper-right only reading four words max — never a full-screen center title card. Silent. No readable body text elsewhere. No Orbit robot. No vessel fire. HARD REJECT: photoreal, still photo, Ken Burns only, dead-center chapter stamp, modern conference. SCENERY ONLY — no characters, no robots, no mascots, no text. Silent picture only. | warning | Failed | The agent failed. Please try again. |  | I wasn't able to start that generation because your account has reached its current credit limit. You can wait for your credits to refresh or upgrade your plan to continue generating content. |  | thumb_up | thumb_down | content_copy | flag |  | What do you want to create? |  |  |  | add | article_spark | tune | arrow_forward |  | Google Flow can make mistakes, so double-check it
+  PAGE_BUTTONS: ['Agree', 'No thanks', 'arrow_back', 'more_vert', 'search', 'filter_list', 'add', 'help', 'settings_2', 'more_vert', 'Account details', 'Google Account: Benjamin Oats   (benoats86@gmail.com)', 'close', 'refresh', 'undo', 'delete_forever', 'menu', 'edit_square', 'close', 'thumb_up', 'thumb_down', 'content_copy', 'flag', 'add', 'article_spark', 'tune', 'Settings trigger', 'arrow_forward']
+  stall screenshot /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part03/raw/v01_fast/01_hall_open_side_label_v01_flow_stall.png
+  reconfirm/resubmit skipped: Flow arrow_forward send not found or never enabled tooltip=''
+  wait 85s status=… new_media=0 gen=False
+30:  PAGE_SNIPPET gen=False head: Skip to main content | arrow_back | more_vert | search | filter_list | add | help | settings_2 | more_vert | dashboard | All media | videocam | Videos | accessibility_new | Characters | movie | Scenes | apps_spark_2 | Tools | delete | Bin | left_panel_close | Collapse | info | You're out of Google Flow credits. You can wait until they refresh or upgrade to get more Google Flow credits now. | open_in_new | Upgrade | close | warning | Failed | Sorry, this video failed to generate. | You have not been charged for this generation. | refresh | undo | delete_forever | menu | Untitled session | edit_square | close | History of Science locked look: premium Animistry-class 3D cartoon, warm cinematic 
+31:  PAGE_SNIPPET gen=False tail: tinuous camera push down the aisle as dust motes drift and pamphlets rustle. Optional tiny Animistry side caption plate upper-right only reading four words max — never a full-screen center title card. Silent. No readable body text elsewhere. No Orbit robot. No vessel fire. HARD REJECT: photoreal, still photo, Ken Burns only, dead-center chapter stamp, modern conference. SCENERY ONLY — no characters, no robots, no mascots, no text. Silent picture only. | warning | Failed | The agent failed. Please try again. |  | I wasn't able to start that generation because your account has reached its current credit limit. You can wait for your credits to refresh or upgrade your plan to continue generating content. |  | thumb_up | thumb_down | content_copy | flag |  | What do you want to create? |  |  |  | add | article_spark | tune | arrow_forward |  | Google Flow can make mistakes, so double-check it

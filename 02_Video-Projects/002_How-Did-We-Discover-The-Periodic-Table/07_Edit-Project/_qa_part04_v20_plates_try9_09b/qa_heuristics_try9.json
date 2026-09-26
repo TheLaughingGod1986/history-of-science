@@ -1,0 +1,114 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 9,
+  "mp4": "04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try9.mp4",
+  "sha256": "788e9d670c1be39a188351c18ba1199f0f19a639d63c5869c063962a5b0159c5",
+  "drip_rows": [
+    {
+      "t": 0.3,
+      "drip": 1666,
+      "white_desk": 3,
+      "white_left": 0
+    },
+    {
+      "t": 0.8,
+      "drip": 1962,
+      "white_desk": 1,
+      "white_left": 0
+    },
+    {
+      "t": 1.3,
+      "drip": 2260,
+      "white_desk": 0,
+      "white_left": 0
+    },
+    {
+      "t": 1.8,
+      "drip": 2619,
+      "white_desk": 0,
+      "white_left": 0
+    },
+    {
+      "t": 2.3,
+      "drip": 2933,
+      "white_desk": 0,
+      "white_left": 0
+    },
+    {
+      "t": 2.8,
+      "drip": 3288,
+      "white_desk": 0,
+      "white_left": 0
+    },
+    {
+      "t": 3.3,
+      "drip": 3589,
+      "white_desk": 0,
+      "white_left": 9
+    },
+    {
+      "t": 3.8,
+      "drip": 3994,
+      "white_desk": 4,
+      "white_left": 18
+    },
+    {
+      "t": 4.3,
+      "drip": 4324,
+      "white_desk": 1,
+      "white_left": 1
+    },
+    {
+      "t": 4.8,
+      "drip": 4892,
+      "white_desk": 0,
+      "white_left": 0
+    },
+    {
+      "t": 5.3,
+      "drip": 5817,
+      "white_desk": 6,
+      "white_left": 6
+    },
+    {
+      "t": 5.8,
+      "drip": 6432,
+      "white_desk": 0,
+      "white_left": 0
+    },
+    {
+      "t": 6.3,
+      "drip": 7275,
+      "white_desk": 10,
+      "white_left": 10
+    },
+    {
+      "t": 6.8,
+      "drip": 8319,
+      "white_desk": 11,
+      "white_left": 11
+    },
+    {
+      "t": 7.3,
+      "drip": 9408,
+      "white_desk": 0,
+      "white_left": 0
+    },
+    {
+      "t": 7.7,
+      "drip": 10602,
+      "white_desk": 11,
+      "white_left": 11
+    }
+  ],
+  "drip_peak": 10602,
+  "drip_median": 4159.0,
+  "drip_hi_frames": 16,
+  "flat_peak": 11,
+  "flat_left_peak": 18,
+  "heuristic_notes": [
+    "HEURISTIC_DRIP_FAIL"
+  ],
+  "contact_continuous": "07_Edit-Project/_qa_part04_v20_plates_try9_09b/09b_risk_hold_contact_continuous.jpg",
+  "contact_grid": "07_Edit-Project/_qa_part04_v20_plates_try9_09b/09b_risk_hold_contact_grid.jpg"
+}

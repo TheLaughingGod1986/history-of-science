@@ -1,0 +1,16 @@
+{
+  "plate": "01_chapter_new_seeing",
+  "version": "v15",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part05/01_chapter_new_seeing_v15.mp4",
+  "bytes": 1690883,
+  "sha256": "c2ff7426f5a66cd4bb4954c404d36787e3bd0f9ea32f0947723abf2eee76cae4",
+  "duration_s": 8.0,
+  "model": "Veo 3.1 - Quality",
+  "account": "benoats@googlemail.com",
+  "project": "https://flow.google.com/u/0/project/d2ebe084-78fb-4d48-9006-2d897c5a80fb",
+  "source_paste": "PART05_PLATE01_CREATE_v11.md Option A (promoted from CREATE-v11 v14 land; void 6087823a)",
+  "remint_reason": "UAT scored voided 6087823a; CoS: tip as 01_v15 CREATE v11 only",
+  "assemble": "CLOSED",
+  "ts": "2026-09-22T21:40:59.166955+00:00",
+  "prior_void_sha": "6087823a67acbe76ebaee11363c75be07c0112d94c056718ee79b05e64074595"
+}

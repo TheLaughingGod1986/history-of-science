@@ -1,0 +1,89 @@
+{
+  "cut": "hos_003_part04_rough_v03.mp4",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_part04_rough_v03.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_003_part04_rough_v03.mp4",
+  "bytes": 84028334,
+  "sha256": "d2b5946221343cb3012077d44b970f91d6002039c73c06ceb06d2972189b8508",
+  "duration_s": 83.416667,
+  "vo_s": 105.52,
+  "picture_s": 83.4,
+  "mix_s": 83.4,
+  "vo_trim_s": 22.11999999999999,
+  "bed": "hos_001_part01_ominous_ward_v14_norm.wav",
+  "bed_vol": 0.34,
+  "plates": [
+    "01_chapter_bertha_v01.mp4",
+    "02_hand_on_plate_v02.mp4",
+    "03_bones_and_ring_v02.mp4",
+    "04_haunted_becomes_fact_v02.mp4",
+    "05_letters_fly_v01.mp4",
+    "06_labs_copy_tube_v03.mp4",
+    "07_doctors_lean_in_v04.mp4",
+    "08_bullet_break_map_v07.mp4",
+    "09_body_as_map_v03.mp4",
+    "10_why_groundbreaking_v02.mp4",
+    "11_proof_hold_v02.mp4"
+  ],
+  "plate_sha256": {
+    "01_chapter_bertha_v01.mp4": "aaa965401496001ee22aee81df1b22b1ff4aa23fbf12196ef4709346ae06da0d",
+    "02_hand_on_plate_v02.mp4": "b06f98adb1c351d3b5dbfbfcada01beb6ee31d40d2e7ddd5709f9de313bea565",
+    "03_bones_and_ring_v02.mp4": "3114e1d20eb87fe25eeffba7f303d533a800fa8b94d81d398293800e22fd1137",
+    "04_haunted_becomes_fact_v02.mp4": "c34b2523e3d748ec454a11b10bb20e79748adcf02cad9523f329bafa745aabff",
+    "05_letters_fly_v01.mp4": "14fe15df5251c5bc5b71bac0e4c7aff65db28fc1f6db07ded99bb4815595d486",
+    "06_labs_copy_tube_v03.mp4": "70561dadc022459228c7eaf3bbc681ac9e3487a38ad3a22f91d1e2f8a5184a0a",
+    "07_doctors_lean_in_v04.mp4": "493162213e437ef7bb2ebb92fdcce324645ad531d4b2894d9c021488a83ba250",
+    "08_bullet_break_map_v07.mp4": "d1a75b97913332147316632d556f617876b3a1838ef1a92338da96322e1bfd4c",
+    "09_body_as_map_v03.mp4": "4e2733649a721c50027948fb275e1aa8292227794c82f6df34d165a2d1c1051c",
+    "10_why_groundbreaking_v02.mp4": "3f143748d8f35723dece18a183036eed370fb6819dcc80f12f380b09243fd5a4",
+    "11_proof_hold_v02.mp4": "a28f2d0a7ca5b341688e7a416c12118010a4721164a537a0c53a638ccc96fd41"
+  },
+  "labels": [
+    {
+      "t0": 15.650000000000002,
+      "t1": 19.450000000000003,
+      "text": "BERTHA'S RING"
+    },
+    {
+      "t0": 23.2,
+      "t1": 26.8,
+      "text": "PROOF"
+    },
+    {
+      "t0": 45.84999999999999,
+      "t1": 49.649999999999984,
+      "text": "MEDICINE"
+    },
+    {
+      "t0": 68.44999999999999,
+      "t1": 72.04999999999998,
+      "text": "A NEW EYE"
+    }
+  ],
+  "teach_cards": [
+    {
+      "t0": 9.15,
+      "t1": 13.15,
+      "title": "WITNESS",
+      "body": "A living hand makes the claim undeniable."
+    },
+    {
+      "t0": 17.1,
+      "t1": 21.1,
+      "title": "DENSITY",
+      "body": "Metal stops more ray than bone \u2014 darker on the plate."
+    },
+    {
+      "t0": 31.699999999999996,
+      "t1": 35.49999999999999,
+      "title": "IT SPREADS",
+      "body": "Labs copy the tube; the method travels."
+    },
+    {
+      "t0": 73.54,
+      "t1": 77.54,
+      "title": "NO KNIFE",
+      "body": "Medicine can ask the skeleton without opening the skin."
+    }
+  ],
+  "house": "No Explorer. Silent-readable + teaching density. Continuous 1x motion. Ominous ward bed. No DNA helix. No Veo mint."
+}

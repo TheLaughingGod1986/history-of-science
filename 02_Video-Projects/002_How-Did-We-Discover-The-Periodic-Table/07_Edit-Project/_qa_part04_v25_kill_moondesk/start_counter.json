@@ -1,0 +1,9 @@
+{
+  "cycle": "v25_kill_moondesk",
+  "plate": "07b_eka_names_rotate",
+  "try": "2",
+  "starts": 3,
+  "max_starts": 3,
+  "try1": "FAIL fire/miniature chair",
+  "when": "2026-09-10T16:58:14"
+}

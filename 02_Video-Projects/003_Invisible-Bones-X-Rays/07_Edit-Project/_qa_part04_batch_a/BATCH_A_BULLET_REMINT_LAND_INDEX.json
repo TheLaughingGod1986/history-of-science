@@ -1,0 +1,124 @@
+{
+  "batch": "A",
+  "part": 4,
+  "kind": "BULLET_REMINT_v03",
+  "film": "003_Invisible-Bones-X-Rays",
+  "flow_project_id": "a65f19e8-3cd7-47d3-829c-9745150a6a71",
+  "flow_project_url": "https://flow.google.com/u/1/project/a65f19e8-3cd7-47d3-829c-9745150a6a71",
+  "account": "benoats@googlemail.com",
+  "quality": "Veo 3.1 Quality CLEAN LIGHT",
+  "status": "READY_FOR_PLATE_WATCH",
+  "landed_at": "2026-09-22 12:25:53 BST",
+  "plates": [
+    {
+      "n": 6,
+      "id": "06_labs_copy_tube",
+      "path": "/workspace/hos003/part04/plates/06_labs_copy_tube_v03.mp4",
+      "sha256": "70561dadc022459228c7eaf3bbc681ac9e3487a38ad3a22f91d1e2f8a5184a0a",
+      "bytes": 5259948,
+      "version": "v03",
+      "duration_s": 8.0,
+      "source_download": "/home/box/Downloads/Animistry_3D_CLEAN_LIGHT._Same_20260922120939.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/bullet_remint_v03/06_labs_copy_tube",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004",
+        "part_005",
+        "part_006",
+        "part_007",
+        "part_008",
+        "part_009",
+        "part_010"
+      ],
+      "chunk_count": 11,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/06_labs_copy_tube_v03.mp4",
+      "mini_sha_ok": false
+    },
+    {
+      "n": 7,
+      "id": "07_doctors_lean_in",
+      "path": "/workspace/hos003/part04/plates/07_doctors_lean_in_v03.mp4",
+      "sha256": "720b0e81cf0a43395c78a3b1784e6208f4efe6854f077b777f0d8638edc6b4a8",
+      "bytes": 3008222,
+      "version": "v03",
+      "duration_s": 8.0,
+      "source_download": "/home/box/Downloads/Animistry_3D_CLEAN_LIGHT._Same_20260922121857.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/bullet_remint_v03/07_doctors_lean_in",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004",
+        "part_005"
+      ],
+      "chunk_count": 6,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/07_doctors_lean_in_v03.mp4",
+      "mini_sha_ok": false
+    },
+    {
+      "n": 8,
+      "id": "08_bullet_break_map",
+      "path": "/workspace/hos003/part04/plates/08_bullet_break_map_v03.mp4",
+      "sha256": "6783bfa34e13653ce2670d5c04aa3b572e14d364968ebc5bac2b4869086acfb6",
+      "bytes": 1557306,
+      "version": "v03",
+      "duration_s": 8.0,
+      "source_download": "/home/box/Downloads/Animistry_3D_CLEAN_LIGHT._Same_20260922122230.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/bullet_remint_v03/08_bullet_break_map",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003"
+      ],
+      "chunk_count": 4,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/08_bullet_break_map_v03.mp4",
+      "mini_sha_ok": false
+    },
+    {
+      "n": 9,
+      "id": "09_body_as_map",
+      "path": "/workspace/hos003/part04/plates/09_body_as_map_v03.mp4",
+      "sha256": "4e2733649a721c50027948fb275e1aa8292227794c82f6df34d165a2d1c1051c",
+      "bytes": 3723840,
+      "version": "v03",
+      "duration_s": 8.0,
+      "source_download": "/home/box/Downloads/Animistry_3D_CLEAN_LIGHT._Same_20260922122517.mp4",
+      "chunk_dir": "/workspace/hos003/part04/chunks/bullet_remint_v03/09_body_as_map",
+      "chunk_parts": [
+        "part_000",
+        "part_001",
+        "part_002",
+        "part_003",
+        "part_004",
+        "part_005",
+        "part_006",
+        "part_007"
+      ],
+      "chunk_count": 8,
+      "mini_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/09_body_as_map_v03.mp4",
+      "mini_sha_ok": false
+    }
+  ],
+  "landed_count": 4,
+  "mini_status": "BOX_ONLY_MINI_PENDING",
+  "mini_pending": {
+    "reason": "CopyFromBox/Mini Shell not available on this executor; 500KB chunks prepared on box",
+    "machineId": "1e756e4d-88c1-4572-8ef7-e7984cce785f",
+    "mini_dir": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04",
+    "chunk_root": "/workspace/hos003/part04/chunks/bullet_remint_v03",
+    "reassemble_script": "/workspace/hos003/part04/chunks/bullet_remint_v03/REASSEMBLE_ON_MINI.sh"
+  },
+  "account_verified": "benoats@googlemail.com ULTRA",
+  "house": [
+    "Same W\u00fcrzburg lab",
+    "never Same DNA soft background",
+    "bullet INSIDE radiograph for 08"
+  ],
+  "do_not_assemble": true,
+  "do_not_ping_ben": true
+}

@@ -1,0 +1,95 @@
+{
+  "film": "003_Invisible-Bones-X-Rays",
+  "part": 3,
+  "batch": "A",
+  "account": "benoats@googlemail.com",
+  "model": "Veo 3.1 - Quality",
+  "project": "https://flow.google.com/project/537a3344-5ba3-46c3-b727-4e166601d9d0",
+  "assemble": "CLOSED until plate-first UAT",
+  "plates_landed": 11,
+  "plates": [
+    {
+      "id": "01_chapter_bones",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/01_chapter_bones_v01.mp4",
+      "sha256": "ebb64736279d6455d062e740d154d272ead839662eca7865ef4eb0e0a61a6926",
+      "bytes": 4451369,
+      "duration_s": 8.0
+    },
+    {
+      "id": "02_hand_enters_path",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/02_hand_enters_path_v01.mp4",
+      "sha256": "9d29722470e499db11b6fc08aa06bbd9ce79cccdff6df960c61cae9c87f280ac",
+      "bytes": 6730326,
+      "duration_s": 8.0
+    },
+    {
+      "id": "03_soft_fades",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/03_soft_fades_v01.mp4",
+      "sha256": "5278f40d88f7c65949c773dbdf31633d94200d8badd67a6fe77a712a1e275b1a",
+      "bytes": 4086047,
+      "duration_s": 8.0
+    },
+    {
+      "id": "04_bones_hold",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/04_bones_hold_v01.mp4",
+      "sha256": "ea185ffeea4ac2360f085356cd130d9263919c5414b78dadfe1fc79e26cdf579",
+      "bytes": 3571297,
+      "duration_s": 8.0
+    },
+    {
+      "id": "05_ring_darker",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/05_ring_darker_v01.mp4",
+      "sha256": "34e8c1c2391b9191fe18b7ce1ea23b66100d9051fd4c7e644f811d8510eeb8f3",
+      "bytes": 6486809,
+      "duration_s": 8.0
+    },
+    {
+      "id": "06_living_skeleton_read",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/06_living_skeleton_read_v01.mp4",
+      "sha256": "5bc1f90cf613c8f7ef6c858ca7618d70c18c8d1a46d52f139ec1c90e2c04d3da",
+      "bytes": 3679599,
+      "duration_s": 8.0
+    },
+    {
+      "id": "07_explorer_hand_beam",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/07_explorer_hand_beam_v01.mp4",
+      "sha256": "2c938277d3f743fe459ae5bd935adb5dd1bdad80538951a56b08a76e0599617a",
+      "bytes": 3470968,
+      "duration_s": 8.0
+    },
+    {
+      "id": "08_medicine_question",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/08_medicine_question_v01.mp4",
+      "sha256": "651ca8850b87a0805859d596cf95ff7cefdc4206d1bea04ebf5522431842f0db",
+      "bytes": 3916892,
+      "duration_s": 8.0
+    },
+    {
+      "id": "09_wonder",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/09_wonder_v01.mp4",
+      "sha256": "fc6b35e12f845cb8381957a3d365b9ba864ed32cea1a0bea923034e232136e62",
+      "bytes": 2704107,
+      "duration_s": 8.0
+    },
+    {
+      "id": "10_caution_burn",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/10_caution_burn_v01.mp4",
+      "sha256": "e9d19b3b9a8bf47c439db81f33bfc7e6f86edfd0435339408452356b8881e172",
+      "bytes": 3574819,
+      "duration_s": 8.0
+    },
+    {
+      "id": "11_hold_beam",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/11_hold_beam_v01.mp4",
+      "sha256": "2647ec2b91d33178b606af94a74fe14867b543e3d9f4560243033e67e4e6f8ed",
+      "bytes": 4151633,
+      "duration_s": 8.0
+    }
+  ],
+  "notes": [
+    "04_bones_hold: first Create unpaid-failed; one refresh retry succeeded (no charge-loop).",
+    "07_explorer_hand_beam: on-model teal Explorer present; soft UAT note \u2014 purple DNA helix garnish in bg on mid frame.",
+    "P01/P02 KEEP untouched."
+  ],
+  "ts": "2026-09-21T15:27:31.567439+00:00"
+}

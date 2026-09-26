@@ -1,31 +1,104 @@
 {
-  "film": "003_Invisible-Bones-X-Rays",
-  "part": 4,
   "batch": "A",
+  "part": 4,
+  "film": "003_Invisible-Bones-X-Rays",
   "title": "Bertha's Ring",
-  "status": "STOP",
-  "reason": "Flow credit / daily Quality quota still reached on Create for 01_chapter_bertha (resume attempt 21 Sep evening)",
-  "account": "benoats@googlemail.com",
-  "model": "Veo 3.1 - Quality",
-  "quality": "Veo 3.1 Quality / CLEAN LIGHT",
-  "project": "https://flow.google.com/u/1/project/2ed989c7-688d-46cc-91f3-1ffc65526fc1",
+  "status": "READY_FOR_UAT",
   "assemble": "CLOSED",
-  "parents": "P01+P02+P03 KEEP/LOCK — untouched",
-  "explorer": "NONE",
-  "helix_lock": "HOS_HOUSE_NO_DNA_HELIX_LOCK.md",
-  "plates_landed": 0,
-  "plates": [],
-  "flow_dialog": "Failed — Sorry, this video failed to generate. You have not been charged for this generation. Agent: I couldn't kick off your video generation because your credit quota has been reached. You might need more AI credits to complete this request, or you may have reached the daily limit for this model.",
-  "actions_taken": [
-    "Ben resume green — local Mini CDP runner",
-    "Re-attached Flow project HOS 003 Part 04 Batch A (2ed989c7-…)",
-    "Locked Veo 3.1 Quality",
-    "ONE Create for 01_chapter_bertha with baked mute-test + helix HARD FAIL + CLEAN LIGHT",
-    "Create returned Failed (not charged) + credit/daily quota dialog",
-    "STOP — no refresh charge-loop, no Ken Burns, no remint of P01–P03, no Ben ping"
-  ],
-  "screenshot": "_qa_part04_batch_a/quota_stop_resume_20260921.png",
-  "mint_log": "_qa_part04_batch_a/mint_resume_20260921_204946.log",
-  "resume_when": "ULTRA Flow credits / daily Quality generation limit reset on benoats@googlemail.com — then re-run _mint_part04_batch_a.py from 01_chapter_bertha",
-  "ts": "2026-09-21T19:50:30+00:00"
+  "account": "benoats@googlemail.com",
+  "quality": "Veo 3.1 Quality CLEAN LIGHT",
+  "flow_project_url": "https://flow.google.com/u/1/project/a65f19e8-3cd7-47d3-829c-9745150a6a71",
+  "landed_at": "2026-09-22T07:10:50.394930+00:00",
+  "plates_landed": 11,
+  "verify": "11/11 sha256 OK",
+  "plates": [
+    {
+      "n": 1,
+      "id": "01_chapter_bertha",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/01_chapter_bertha_v01.mp4",
+      "sha256": "aaa965401496001ee22aee81df1b22b1ff4aa23fbf12196ef4709346ae06da0d",
+      "bytes": 4167077,
+      "verify": "OK"
+    },
+    {
+      "n": 2,
+      "id": "02_hand_on_plate",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/02_hand_on_plate_v01.mp4",
+      "sha256": "8debfc8b3d6b042973518b62f5ac5230b88ef5e3a83c84802390e536e36cfbae",
+      "bytes": 1861754,
+      "verify": "OK"
+    },
+    {
+      "n": 3,
+      "id": "03_bones_and_ring",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/03_bones_and_ring_v01.mp4",
+      "sha256": "201acce85a39779c2858604748282283058779d4e81f0157c80f8e80a1891d4e",
+      "bytes": 4175346,
+      "verify": "OK"
+    },
+    {
+      "n": 4,
+      "id": "04_haunted_becomes_fact",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/04_haunted_becomes_fact_v01.mp4",
+      "sha256": "b05bf90c0b548ed9f346d479de8cce1ecd35c2ea28290fc1839a87757fec4c80",
+      "bytes": 6227015,
+      "verify": "OK"
+    },
+    {
+      "n": 5,
+      "id": "05_letters_fly",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/05_letters_fly_v01.mp4",
+      "sha256": "14fe15df5251c5bc5b71bac0e4c7aff65db28fc1f6db07ded99bb4815595d486",
+      "bytes": 5169348,
+      "verify": "OK"
+    },
+    {
+      "n": 6,
+      "id": "06_labs_copy_tube",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/06_labs_copy_tube_v01.mp4",
+      "sha256": "1053af11faa9079eafb76d98f78cd50eb7afbc0ad003afd2cd48fa22b0a0d5b2",
+      "bytes": 4695273,
+      "verify": "OK"
+    },
+    {
+      "n": 7,
+      "id": "07_doctors_lean_in",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/07_doctors_lean_in_v01.mp4",
+      "sha256": "cae471d8f0449b5d8aa08bfc207aa8380642c2c948db432aa1f405c83d4d02cb",
+      "bytes": 4101442,
+      "verify": "OK"
+    },
+    {
+      "n": 8,
+      "id": "08_bullet_break_map",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/08_bullet_break_map_v01.mp4",
+      "sha256": "272d618f08b321fec5f673d7a526a791fd63c5b213108443b6469d56551cca29",
+      "bytes": 3994784,
+      "verify": "OK"
+    },
+    {
+      "n": 9,
+      "id": "09_body_as_map",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/09_body_as_map_v01.mp4",
+      "sha256": "98170547b5f3d2e190a4907cd1b09d170e64e418847b09aa227655df4aa76ae3",
+      "bytes": 4459083,
+      "verify": "OK"
+    },
+    {
+      "n": 10,
+      "id": "10_why_groundbreaking",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/10_why_groundbreaking_v01.mp4",
+      "sha256": "f95f21cb325ae0f7bac320c6734c2b6c3b8354e4ad48b1519bc4b40687ea7fdc",
+      "bytes": 3396921,
+      "verify": "OK"
+    },
+    {
+      "n": 11,
+      "id": "11_proof_hold",
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part04/11_proof_hold_v01.mp4",
+      "sha256": "9b01ba270339df0e5de5b120e69b65b8f128207960f3e674d95cbcea299bf18d",
+      "bytes": 2323915,
+      "verify": "OK"
+    }
+  ]
 }

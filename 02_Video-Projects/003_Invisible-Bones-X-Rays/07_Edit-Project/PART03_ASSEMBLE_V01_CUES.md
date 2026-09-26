@@ -78,3 +78,7 @@ Timing board: `07_Edit-Project/parts/part-03_plates_v01.json` (`clip_use_s` 7.9 
 Prior STOP superseded: `PART03_ASSEMBLE_STOP.md`
 
 > **21 Sep evening update:** plate `07_explorer_hand_beam` KEEP overturned — rough_v01 full-cut HARD FAIL purple helix behind Explorer. Remint 07 only + rebuild v02. Bake: `PART03_PLATE07_REMINT_v01.md` + JSON prompt (never "Same DNA soft background."). Soft notes (VO overhang, SOFT TISSUE) not blocking.
+
+---
+
+**KEEP/LOCK stamp (21 Sep evening):** `hos_003_part03_rough_v02.mp4` sha `572d498f…` — Ben KEEP. Soft notes non-blocking. No further remint this part.

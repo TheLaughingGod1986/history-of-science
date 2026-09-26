@@ -32,3 +32,10 @@ Explorer walks through every few scenes — reacts / interacts — then leaves. 
 - Scale-up target: 2 long / week once library + retention proven
 - Schedule: `Channel-Setup/OPTIMAL_PUBLISH_SCHEDULE.md` + `.json`
 - Package every video with: `Channel-Setup/VIDEO_PACKAGE_TEMPLATE.md`
+
+## Teaching density (20 Sep 2026 · Ben · shared with HOS)
+
+Whenever a name, place, or idea needs explaining for watchers: Animistry **side label** or **short teach card** on that beat. Kurzgesagt-level density; Animistry look (Didot italic side, one at a time). Not flat Kurzgesagt UI unless Ben unlocks.
+
+Full rule (shared bible): `History Of Science/00_Brand/Brand-Guidelines/HOS_HOUSE_TEACHING_DENSITY_LOCK.md` (applies to Orbit With Ben too).
+

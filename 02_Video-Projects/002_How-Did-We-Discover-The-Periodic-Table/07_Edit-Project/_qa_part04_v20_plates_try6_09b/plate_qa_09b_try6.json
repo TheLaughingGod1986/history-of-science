@@ -1,0 +1,42 @@
+{
+  "plate": "09b_risk_hold",
+  "try": 6,
+  "path_repo": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part04/raw/v20_fast/09b_risk_hold_v20_try6.mp4",
+  "path_icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try6/09b_risk_hold_v20_try6.mp4",
+  "sha256": "3c967af868e875a12e5a8d9b49b14dd06690fcf24761f93f05fa8e2778e7a25d",
+  "bytes": 1828928,
+  "duration_s": 8.0,
+  "model": "Veo 3.1 - Fast",
+  "auth": "live Mini Chrome CDP \u00b7 benoats@googlemail.com \u00b7 ULTRA",
+  "flow": "https://flow.google.com/project/dfa47d20-30b3-49af-bd01-a3afdbc50825",
+  "start_dna": "v14_clean_glow copied \u2192 09b_risk_hold_start_v20.jpg (no paint)",
+  "start_sha256": "2a651abc673e719af8f6647f264da28a45d41950473489193c72f9a0c4481182",
+  "parent_try5": {
+    "gate": "REJECT_CLEAN_LIGHT",
+    "sha256": "19d9a6acbe727ce2d798f56e1b41c956651f93f20cdd5be8eb1328991117cb89",
+    "note": "desk flames/embers from ~t1.5; Ben lava FAIL ref"
+  },
+  "gate": "REJECT_FLAT_CARDS",
+  "self_reject_flame": false,
+  "reason": "try5 UAT HARD FAIL = desk flames t4.5\u2013t7.2 (Ben stills). try6: ZERO desk flames/embers/sparks across continuous contact (PASS_CLEAN_LIGHT). SELF-REJECT try6: unfinished flat / garbled card overlays persist (left H/C/O/N cluster + desk row). Next = try7 remint with hard ban on flat overlays + fire.",
+  "notes_for_cos": [
+    "CLEAN LIGHT cleared vs try5 lava spit",
+    "Flat left H/C/O/N card cluster unfinished overlay \u2014 CoS call if hard-fail",
+    "STOP after plate \u2014 no assemble, no other plates"
+  ],
+  "spit_scores": {
+    "0.5": 0,
+    "1.5": 0,
+    "3.0": 0,
+    "4.5": 0,
+    "6.0": 0,
+    "7.2": 0
+  },
+  "contact_continuous": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try6/09b_risk_hold_contact_continuous.jpg",
+  "contact_grid": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/part04_plate_09b_risk_hold_try6/09b_risk_hold_contact_grid.jpg",
+  "prompt_explicit_fire_ban": true,
+  "paint": false,
+  "assembled": false,
+  "false_lava_frac_note": "warm wood lit by lamp tripped naive lava_frac; spit_score=0 and video QA confirm no fire",
+  "self_reject_flat_cards": true
+}

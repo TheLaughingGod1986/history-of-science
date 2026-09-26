@@ -1,0 +1,51 @@
+{
+  "ok": false,
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "parentId": "frP_YrNShsU",
+  "parentTitle": "How Did We Discover X-rays?",
+  "affiliate": "none",
+  "madeForKids": false,
+  "started": "2026-09-23T10:29:31+01:00",
+  "shorts": [
+    {
+      "slot": "s2",
+      "title": "How did R\u00f6ntgen see bones without cutting",
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s2_bones_no_knife_v01.mp4",
+      "thumb": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/08_Thumbnail/Selected/hos_003_thumb_s2_rontgen_bones_v03.jpg",
+      "cover": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/08_Thumbnail/Selected/hos_003_s2_cover_v03.jpg",
+      "desc": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/11_Upload-Package/Schedule/hos_003_s2_description_v01.txt",
+      "day": 26,
+      "date_typed": "26 September 2026",
+      "time": "11:30",
+      "label": "Saturday 26 Sep 2026 11:30 Europe/London",
+      "parent": "frP_YrNShsU",
+      "resumed": false,
+      "openUpload": {
+        "intercept": "off",
+        "create": "Create",
+        "uploadVideos": "Upload videos",
+        "picker": true,
+        "details": false,
+        "fileInputs": 1
+      },
+      "attach": {
+        "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s2_bones_no_knife_v01.mp4",
+        "image": false,
+        "ok": true,
+        "via": "cdp_setFileInputFiles"
+      },
+      "ok": false,
+      "error": "attach_no_details"
+    }
+  ],
+  "hos": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+    "title": "Channel content - YouTube Studio",
+    "snip": "Skip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\nPREMIERE\nHow Did We Discover X-rays?\nIn a dark W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen covered a cathode tube so nothing should escape. Across the room, a cardboard screen painted to glow under light\u2026 glowed anyway. Something i",
+    "skipped_nav": true
+  },
+  "stopped": "attach_no_details",
+  "finished": "2026-09-23T10:31:06+01:00"
+}

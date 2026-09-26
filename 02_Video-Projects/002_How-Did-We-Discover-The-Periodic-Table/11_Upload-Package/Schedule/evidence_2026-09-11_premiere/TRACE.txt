@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/11_Upload-Package/Schedule/_upload_hos_002_premiere_v01.py", line 828, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/11_Upload-Package/Schedule/_upload_hos_002_premiere_v01.py", line 767, in main
+    picked = pick_video_file(page, VIDEO)
+  File "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/11_Upload-Package/Schedule/_upload_hos_002_premiere_v01.py", line 218, in pick_video_file
+    loc.first.set_input_files(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/sync_api/_generated.py", line 20177, in set_input_files
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.set_input_files(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        )
+        ^
+    )
+    ^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_locator.py", line 659, in set_input_files
+    return await self._frame.set_input_files(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_frame.py", line 837, in set_input_files
+    await self._channel.send(
+    ...<8 lines>...
+    )
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Locator.set_input_files: Cannot transfer files larger than 50Mb to a browser not co-located with the server

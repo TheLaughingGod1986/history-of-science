@@ -1,0 +1,143 @@
+{
+  "part": 3,
+  "title": "Bones Without a Knife",
+  "film": "003_Invisible-Bones-X-Rays",
+  "mint": false,
+  "batch_status": "KEEP/LOCK hos_003_part03_rough_v02.mp4 sha 572d498f\u2026 (21 Sep 2026). Soft notes non-blocking (VO overhang, SOFT TISSUE typo, CRT glow). No remint.",
+  "keep_ids": [
+    "01_chapter_bones",
+    "02_hand_enters_path",
+    "03_soft_fades",
+    "04_bones_hold",
+    "05_ring_darker",
+    "06_living_skeleton_read",
+    "07_explorer_hand_beam",
+    "08_medicine_question",
+    "09_wonder",
+    "10_caution_burn",
+    "11_hold_beam"
+  ],
+  "remint_ids": [],
+  "vo_file": "02_Voiceover/part03_bones_without_a_knife_v01.txt",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "set_language": "ONE persistent 1895 W\u00fcrzburg physics lab DNA: dark wood benches, dark curtains, coils, one Crookes/cathode-ray glass tube, fluorescent cardboard screen when the beat needs it, ominous soft green-violet glow. Camera moves only; no hospital ward; no Periodic cream-card desk; no DNA helix / double helix desk prop.",
+  "explorer_lock": "Exactly one Explorer on plate 07 only. Younger boy, messy wavy brown hair, round thin gold wire-rim glasses, teal-blue long overcoat, gold atom pin, tan waistcoat, white shirt, dark brown floppy bow, rolled brown trousers, cream socks, brown boots, satchel+compass. Not Orbit robot.",
+  "forbidden": "HARD REJECT: Orbit robot; Germs death-ward beds; Periodic cream-card desk; HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (includes yellow/purple double-helix garnish / DNA model / orrery-helix desk bleed); photoreal; Ken Burns only; gore; lava drip; underside bulb/shade cup; unfinished Explorer hair; wall of text. No Bertha proof photo as whole minute (Part 04). No gore. HARD FAIL forever on Explorer plates \u2014 NO helix garnish behind Explorer (purple/yellow double helix soft background does NOT stand; soft-garnish is still HARD FAIL). Never open Create with `Same DNA soft background`. Prefer `Same W\u00fcrzburg lab` not bare `Same DNA`.",
+  "quality_note": "Quality for CLEAN LIGHT beam / bone silhouette. HARD FAIL DNA helix / double helix / Periodic DNA desk prop on every X-ray plate (yellow/purple garnish included) \u2014 bake into every Create prompt. Plate 07 forever: NO helix garnish / DNA soft background behind Explorer.",
+  "uat_root_fail": "HARD FAIL root (Batch A + rough_v01 full-cut): Periodic-desk DNA helix bleed; plate 07 Explorer KEEP overturned \u2014 purple DNA helix behind Explorer is HARD FAIL (soft-garnish does not stand). Bake: no DNA helix / double helix / Periodic DNA desk prop; NO helix garnish behind Explorer forever.",
+  "plates": [
+    {
+      "id": "01_chapter_bones",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Animistry 3D. Same W\u00fcrzburg lab DNA. Beam path suggested as soft green-violet cone toward cardboard. Continuous. Silent. No Explorer. HARD REJECT: gore, Orbit. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02"
+    },
+    {
+      "id": "02_hand_enters_path",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. Faceless adult hand enters the green-violet beam path \u2014 mute-test: hand visibly enters beam, no blood. Continuous. Silent. No blood. HARD REJECT: gore, photoreal medical. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02",
+      "mint": true
+    },
+    {
+      "id": "03_soft_fades",
+      "explorer": false,
+      "side_label": "SOFT TISSUE",
+      "prompt": "Same DNA. Soft tissue reads faint in the glow; stylised cartoon clarity. Continuous. Silent. HARD REJECT: horror, Orbit. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02"
+    },
+    {
+      "id": "04_bones_hold",
+      "explorer": false,
+      "side_label": "BONES",
+      "prompt": "Same DNA. Bone shapes hold clearer than soft tissue in the glow \u2014 mute-test: bones read clearer than soft tissue; BONES label sparse/readable. Continuous. Silent. Wonder not horror. HARD REJECT: gore. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02",
+      "mint": true
+    },
+    {
+      "id": "05_ring_darker",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. MUTE-TEST VO-LITERAL: a denser ring-shaped shadow must be clearly visibly darker on the hand silhouette (ring denser than surrounding bone/soft tissue \u2014 silent-readable without audio). Continuous. Silent. HARD REJECT: Bertha nameplate text wall. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02",
+      "mint": true,
+      "mute_miss_note": "Mute miss remint: denser ring must be visibly darker on hand silhouette (VO-literal)."
+    },
+    {
+      "id": "06_living_skeleton_read",
+      "explorer": false,
+      "side_label": "NO KNIFE",
+      "prompt": "Same DNA. Wide read: living skeleton suggestion without a knife \u2014 mute-test: living skeleton without cut-open body; NO KNIFE label sparse/readable. Continuous soft push. Silent. HARD REJECT: cut-open body, Orbit. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02",
+      "mint": true
+    },
+    {
+      "id": "07_explorer_hand_beam",
+      "explorer": true,
+      "side_label": null,
+      "prompt": "W\u00fcrzburg 1895 physics lab only \u2014 dark wood benches, dark curtains, coils, one Crookes tube, soft green-violet beam glow. Clean empty negative space behind Explorer: plain curtain / dark wood wall / soft lab shadow \u2014 NEVER a DNA helix, double helix, Periodic DNA desk prop, or purple/yellow helix soft garnish behind him. Explorer teal trenchcoat boy (on-model: messy wavy brown hair, round thin gold wire-rim glasses, teal-blue long overcoat, gold atom pin, tan waistcoat, white shirt, dark brown floppy bow, rolled brown trousers, cream socks, brown boots, satchel+compass) holds his own hand toward a safe stylised beam, eyes wide, then lowers it. Finished hair. Continuous motion. Silent-readable. HARD REJECT: Orbit robot, twins, unfinished mid-crown hair, academic blazer. HARD FAIL FOREVER \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop, NO helix garnish / DNA soft background behind Explorer (soft-garnish does not stand).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 reminted v03 clean (helix garnish gone); locked in rough_v02",
+      "hard_fail_forever": "NO helix garnish behind Explorer; no DNA soft background; no purple/yellow double helix behind him"
+    },
+    {
+      "id": "08_medicine_question",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. MUTE-TEST VO-LITERAL: empty beam path + fluorescent cardboard glow only \u2014 silent-readable medicine-question energy (no people, no dense text, no invented props). Continuous. Silent. No people. HARD REJECT: modern OR photoreal. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02",
+      "mint": true,
+      "mute_miss_note": "Mute miss remint: empty beam+cardboard medicine-question energy only (silent-readable)."
+    },
+    {
+      "id": "09_wonder",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. MUTE-TEST VO-LITERAL: soft wonder hold on a calm glowing bone silhouette \u2014 bone silhouette must dominate frame (wonder not horror; silent-readable). Continuous. Silent. HARD REJECT: Ken Burns only. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02",
+      "mint": true,
+      "mute_miss_note": "Mute miss remint: calm glowing bone silhouette must dominate (wonder, not helix)."
+    },
+    {
+      "id": "10_caution_burn",
+      "explorer": false,
+      "side_label": "CAUTION",
+      "prompt": "Same DNA. Beam intensifies slightly \u2014 caution, not gore; soft heat shimmer only; CAUTION label sparse/readable. Continuous. Silent. HARD REJECT: burns/blisters, lava, Orbit. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02",
+      "mint": true
+    },
+    {
+      "id": "11_hold_beam",
+      "explorer": false,
+      "side_label": null,
+      "prompt": "Same DNA. MUTE-TEST VO-LITERAL: soft settle on clean beam + cardboard hold \u2014 beam and cardboard must both read (silent-readable clean hold; no neon-only cardboard, no freeze-pad, no Ken Burns-only). Continuous. Silent. HARD REJECT: Ken Burns only. HARD FAIL \u2014 no DNA helix, no double helix, no Periodic-table DNA desk prop on X-ray plates (no yellow/purple double-helix garnish, no DNA model, no orrery-helix desk bleed).",
+      "keep": true,
+      "remint": false,
+      "uat_status": "KEEP \u2014 locked in rough_v02",
+      "mint": true,
+      "mute_miss_note": "Mute miss remint: clean beam+cardboard hold \u2014 both read silent-readable."
+    }
+  ]
+}

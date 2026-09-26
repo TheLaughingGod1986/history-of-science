@@ -1,0 +1,281 @@
+{
+  "plate": "11_publish_gaps",
+  "try": 8,
+  "verdict_heuristic": "SELF_REJECT",
+  "frames": [
+    {
+      "t": "0.5",
+      "left": {
+        "mean_rgb": [
+          132.0,
+          138.1,
+          155.3
+        ],
+        "luma": 138.0,
+        "bright_frac": 0.0503,
+        "molten_frac": 0.001,
+        "warm_fixture_frac": 0.0498,
+        "green_shade_frac": 0.0
+      },
+      "flask": {
+        "mean_rgb": [
+          91.1,
+          80.1,
+          87.1
+        ],
+        "luma": 82.9,
+        "bright_frac": 0.0018,
+        "molten_frac": 0.0002,
+        "warm_fixture_frac": 0.053,
+        "green_shade_frac": 0.0136
+      },
+      "desk": {
+        "mean_rgb": [
+          167.5,
+          132.3,
+          109.3
+        ],
+        "luma": 138.1,
+        "bright_frac": 0.1742,
+        "molten_frac": 0.008,
+        "warm_fixture_frac": 0.262,
+        "green_shade_frac": 0.0
+      },
+      "lamp_invent": false,
+      "flask_invent": true,
+      "reasons": [
+        "flask_glow bright=0.0018 molten=0.0002 desk=0.1742"
+      ]
+    },
+    {
+      "t": "1.5",
+      "left": {
+        "mean_rgb": [
+          141.8,
+          146.2,
+          162.6
+        ],
+        "luma": 146.5,
+        "bright_frac": 0.0706,
+        "molten_frac": 0.0044,
+        "warm_fixture_frac": 0.0535,
+        "green_shade_frac": 0.0
+      },
+      "flask": {
+        "mean_rgb": [
+          93.3,
+          86.4,
+          97.5
+        ],
+        "luma": 88.7,
+        "bright_frac": 0.0018,
+        "molten_frac": 0.0001,
+        "warm_fixture_frac": 0.0528,
+        "green_shade_frac": 0.0148
+      },
+      "desk": {
+        "mean_rgb": [
+          184.1,
+          149.9,
+          128.8
+        ],
+        "luma": 155.7,
+        "bright_frac": 0.1988,
+        "molten_frac": 0.0063,
+        "warm_fixture_frac": 0.2399,
+        "green_shade_frac": 0.0
+      },
+      "lamp_invent": false,
+      "flask_invent": true,
+      "reasons": [
+        "flask_glow bright=0.0018 molten=0.0001 desk=0.1988"
+      ]
+    },
+    {
+      "t": "3.0",
+      "left": {
+        "mean_rgb": [
+          156.2,
+          155.1,
+          166.1
+        ],
+        "luma": 156.2,
+        "bright_frac": 0.1251,
+        "molten_frac": 0.0072,
+        "warm_fixture_frac": 0.0647,
+        "green_shade_frac": 0.0
+      },
+      "flask": {
+        "mean_rgb": [
+          100.4,
+          94.6,
+          107.6
+        ],
+        "luma": 96.7,
+        "bright_frac": 0.0075,
+        "molten_frac": 0.0001,
+        "warm_fixture_frac": 0.0517,
+        "green_shade_frac": 0.0085
+      },
+      "desk": {
+        "mean_rgb": [
+          198.7,
+          166.8,
+          148.9
+        ],
+        "luma": 172.3,
+        "bright_frac": 0.2184,
+        "molten_frac": 0.0012,
+        "warm_fixture_frac": 0.2123,
+        "green_shade_frac": 0.0
+      },
+      "lamp_invent": false,
+      "flask_invent": true,
+      "reasons": [
+        "flask_glow bright=0.0075 molten=0.0001 desk=0.2184"
+      ]
+    },
+    {
+      "t": "4.5",
+      "left": {
+        "mean_rgb": [
+          164.2,
+          160.3,
+          166.7
+        ],
+        "luma": 161.6,
+        "bright_frac": 0.1462,
+        "molten_frac": 0.0074,
+        "warm_fixture_frac": 0.077,
+        "green_shade_frac": 0.0
+      },
+      "flask": {
+        "mean_rgb": [
+          106.5,
+          102.0,
+          117.3
+        ],
+        "luma": 104.1,
+        "bright_frac": 0.0148,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0467,
+        "green_shade_frac": 0.0017
+      },
+      "desk": {
+        "mean_rgb": [
+          202.8,
+          174.5,
+          159.8
+        ],
+        "luma": 179.5,
+        "bright_frac": 0.2312,
+        "molten_frac": 0.0018,
+        "warm_fixture_frac": 0.189,
+        "green_shade_frac": 0.0
+      },
+      "lamp_invent": false,
+      "flask_invent": true,
+      "reasons": [
+        "flask_glow bright=0.0148 molten=0.0 desk=0.2312"
+      ]
+    },
+    {
+      "t": "6.0",
+      "left": {
+        "mean_rgb": [
+          165.9,
+          160.6,
+          164.8
+        ],
+        "luma": 162.0,
+        "bright_frac": 0.146,
+        "molten_frac": 0.0078,
+        "warm_fixture_frac": 0.0754,
+        "green_shade_frac": 0.0
+      },
+      "flask": {
+        "mean_rgb": [
+          112.2,
+          110.1,
+          128.0
+        ],
+        "luma": 111.9,
+        "bright_frac": 0.0179,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0446,
+        "green_shade_frac": 0.0
+      },
+      "desk": {
+        "mean_rgb": [
+          202.3,
+          176.9,
+          163.3
+        ],
+        "luma": 181.3,
+        "bright_frac": 0.2484,
+        "molten_frac": 0.0076,
+        "warm_fixture_frac": 0.1577,
+        "green_shade_frac": 0.0
+      },
+      "lamp_invent": false,
+      "flask_invent": true,
+      "reasons": [
+        "flask_glow bright=0.0179 molten=0.0 desk=0.2484"
+      ]
+    },
+    {
+      "t": "7.2",
+      "left": {
+        "mean_rgb": [
+          167.2,
+          162.1,
+          167.1
+        ],
+        "luma": 163.6,
+        "bright_frac": 0.1287,
+        "molten_frac": 0.0036,
+        "warm_fixture_frac": 0.0803,
+        "green_shade_frac": 0.0
+      },
+      "flask": {
+        "mean_rgb": [
+          116.5,
+          115.7,
+          134.8
+        ],
+        "luma": 117.3,
+        "bright_frac": 0.0198,
+        "molten_frac": 0.0,
+        "warm_fixture_frac": 0.0398,
+        "green_shade_frac": 0.0
+      },
+      "desk": {
+        "mean_rgb": [
+          203.9,
+          179.2,
+          165.9
+        ],
+        "luma": 183.5,
+        "bright_frac": 0.2666,
+        "molten_frac": 0.0108,
+        "warm_fixture_frac": 0.1427,
+        "green_shade_frac": 0.0
+      },
+      "lamp_invent": true,
+      "flask_invent": true,
+      "reasons": [
+        "lamp_invent left warm=0.0803 green=0.0",
+        "flask_glow bright=0.0198 molten=0.0 desk=0.2666"
+      ]
+    }
+  ],
+  "fail_reasons": [
+    "flask_glow bright=0.0018 molten=0.0002 desk=0.1742",
+    "flask_glow bright=0.0018 molten=0.0001 desk=0.1988",
+    "flask_glow bright=0.0075 molten=0.0001 desk=0.2184",
+    "flask_glow bright=0.0148 molten=0.0 desk=0.2312",
+    "flask_glow bright=0.0179 molten=0.0 desk=0.2484",
+    "lamp_invent left warm=0.0803 green=0.0",
+    "flask_glow bright=0.0198 molten=0.0 desk=0.2666"
+  ]
+}

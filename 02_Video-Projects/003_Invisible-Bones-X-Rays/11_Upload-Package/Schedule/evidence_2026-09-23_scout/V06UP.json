@@ -1,0 +1,76 @@
+{
+  "s1": {
+    "attach": true,
+    "reason": null,
+    "saveDis": "false",
+    "title": true,
+    "scheduled": true,
+    "saved": true,
+    "cropButtons": [
+      {
+        "t": "Save",
+        "x": 1241.703125,
+        "y": 81,
+        "w": 62.296875,
+        "h": 36
+      },
+      {
+        "t": "Save",
+        "x": 1241.703125,
+        "y": 81,
+        "w": 62.296875,
+        "h": 36
+      }
+    ]
+  },
+  "s2": {
+    "attach": true,
+    "reason": null,
+    "saveDis": "false",
+    "title": true,
+    "scheduled": true,
+    "saved": true,
+    "cropButtons": [
+      {
+        "t": "Save",
+        "x": 1241.703125,
+        "y": 81,
+        "w": 62.296875,
+        "h": 36
+      },
+      {
+        "t": "Save",
+        "x": 1241.703125,
+        "y": 81,
+        "w": 62.296875,
+        "h": 36
+      }
+    ]
+  },
+  "s3": {
+    "attach": true,
+    "reason": null,
+    "saveDis": "false",
+    "title": true,
+    "scheduled": true,
+    "saved": false,
+    "cropButtons": [
+      {
+        "t": "Save",
+        "x": 1241.703125,
+        "y": 81,
+        "w": 62.296875,
+        "h": 36
+      },
+      {
+        "t": "Save",
+        "x": 1241.703125,
+        "y": 81,
+        "w": 62.296875,
+        "h": 36
+      }
+    ]
+  },
+  "listHasS1": true,
+  "listHasS3": true
+}

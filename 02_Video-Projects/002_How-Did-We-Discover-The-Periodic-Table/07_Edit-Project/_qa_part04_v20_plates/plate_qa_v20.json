@@ -1,0 +1,65 @@
+{
+  "11_publish_gaps": {
+    "sha256": "19b3c84d668519edd3d34425b6d65fb923c336f28fb9c25a655105b00f9f40e7",
+    "bytes": 1111526,
+    "ghost_fracs": [
+      0.43810988231119524,
+      0.4201362604087812,
+      0.4246972090573986,
+      0.4224840400685109,
+      0.3813866608065048,
+      0.402067777139575
+    ],
+    "ghost_peak": 0.43810988231119524,
+    "contact": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates/11_publish_gaps_contact.jpg",
+    "reject": true,
+    "reason": "ghost_peak 0.438>=0.40"
+  },
+  "11b_wait_and_hunt": {
+    "sha256": "93b5846e997bf700113daac74083a39d4f24b38e84ee91aaaccd8b69b4352352",
+    "bytes": 869762,
+    "ghost_fracs": [
+      0.49152995243948056,
+      0.49416113134776085,
+      0.49112807828798793,
+      0.49179112382162904,
+      0.496839645190418,
+      0.5182861432861433
+    ],
+    "ghost_peak": 0.5182861432861433,
+    "contact": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates/11b_wait_and_hunt_contact.jpg",
+    "reject": true,
+    "reason": "ghost_peak 0.518>=0.40"
+  },
+  "06_explorer_leaves_gap": {
+    "sha256": "a4af352b6683a9f57759e399451429bce70dd1db0c721b6ee64ef677f93b7e05",
+    "bytes": 1135778,
+    "ghost_fracs": [
+      0.2802835524865937,
+      0.2981761100313948,
+      0.2895491958015555,
+      0.28767328027500655,
+      0.2934566091630022,
+      0.2958983984983426
+    ],
+    "ghost_peak": 0.2981761100313948,
+    "contact": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates/06_explorer_leaves_gap_contact.jpg",
+    "scalp_pits": [
+      [
+        33,
+        0.0008126477541371158
+      ],
+      [
+        26,
+        0.00064026792750197
+      ],
+      [
+        32,
+        0.0007880220646178094
+      ]
+    ],
+    "scalp_pit_frac_peak": 0.0008126477541371158,
+    "reject": false,
+    "reason": ""
+  }
+}

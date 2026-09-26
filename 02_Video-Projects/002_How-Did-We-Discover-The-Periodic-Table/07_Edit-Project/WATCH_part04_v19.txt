@@ -1,0 +1,25 @@
+WATCH THIS FILE ONLY (Part 04 rough v19 — Flow Ultra remint):
+  hos_002_part04_rough_v19.mp4
+
+CoS / Picture→UAT gates for this cut:
+- Parent FAIL v18 sha 05fb0a2b… — bible 43d9405 PUBLISH continuous ghost (paint fallback caused it).
+- Reminted 06 / 11 / 11b via Flow Ultra Veo I2V + real gallery mp4 harvest.
+- NO PAINT FALLBACK. NO temporal-median.
+- KEEP: 10_family (v18) · 09/09b CLEAN LIGHT · written cards ~40.
+- Spot ~50 + ~53 Explorer: finished crown KEEP, no blot, clean cards, clean lamp.
+- Spot ~118–126 PUBLISH continuous: one solid lamp / flasks / grid / magnifier — NO horizontal ghost jitter.
+- Part 01–03 LOCKED. Flow account benoats@googlemail.com.
+- Do NOT declare PASS here. Scores → CoS. No Ben ping.
+
+Reject with stills from THIS file only.
+keep_p03_sha=30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e
+parent_v18_sha=05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5
+parent_v17_sha=e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd
+reminted=06_explorer_leaves_gap,11_publish_gaps,11b_wait_and_hunt
+explorer_picture=45.300-53.200
+plate10_picture=105.700-113.600
+plate11_picture=113.250-121.150
+plate11b_picture=120.800-128.700
+sha256=69d48f6e5fac419df5c23c17df5d0ef628cb4e8d533ba085bb3c8a173016bcdf
+bytes=80789230
+duration=127.760

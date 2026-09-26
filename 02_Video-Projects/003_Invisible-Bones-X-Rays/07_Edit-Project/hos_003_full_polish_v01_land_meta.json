@@ -1,0 +1,47 @@
+{
+  "cut": "hos_003_full_polish_v01.mp4",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_full_polish_v01.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_003_full_polish_v01.mp4",
+  "bytes": 319758493,
+  "sha256": "be6d156296dcfbf0ed632632109edc71e3dc7ed60bced442e1cfa9bc44dc4f98",
+  "duration_s": 425.708333,
+  "av": {
+    "v": 425.708333,
+    "a": 425.6
+  },
+  "brief": "HOS_003_FULL_JOIN_BRIEF_v01.md",
+  "parts": [
+    {
+      "file": "hos_003_part01_rough_v03.mp4",
+      "sha256": "d9d82de54962a36ae86c94a17b34764109d0fa1a1b8a383d9edc21dc3cc9f11a"
+    },
+    {
+      "file": "hos_003_part02_rough_v03.mp4",
+      "sha256": "c95daf407bf336e0bf14b163c341a568a4efa7659644b34d5b503362d623260d"
+    },
+    {
+      "file": "hos_003_part03_rough_v02.mp4",
+      "sha256": "572d498f7b70cd00fc18c68eac1a17c98b4a89b5a6c473772b12fb42053fd262"
+    },
+    {
+      "file": "hos_003_part04_rough_v03.mp4",
+      "sha256": "d2b5946221343cb3012077d44b970f91d6002039c73c06ceb06d2972189b8508"
+    },
+    {
+      "file": "hos_003_part05_rough_v02.mp4",
+      "sha256": "d1db0f31a220fe6d79f083ea6f285a74217b5b3940641ca7b615cf5659821169"
+    }
+  ],
+  "cards": [
+    "The Cardboard",
+    "Bones Without a Knife",
+    "Bertha\u2019s Ring",
+    "A New Kind of Seeing"
+  ],
+  "breath_s": 1.5,
+  "xfade_s": 0.55,
+  "outro_hold_s": 18.0,
+  "bed": "hos_001_part04_lab_bed_v06.wav",
+  "ts": "2026-09-22T22:48:23.329194+00:00",
+  "note": "P05 soft spectrum parked; no remint; no Ben ping mid-cut"
+}

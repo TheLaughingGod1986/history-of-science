@@ -1,0 +1,15 @@
+{
+  "plate": "07_why_groundbreaking",
+  "version": "v08",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part05/07_why_groundbreaking_v08.mp4",
+  "bytes": 2236866,
+  "sha256": "e2a4e79d61c8e67f92f21b7c217a0e006a0e01193522461d1eba06411ba64f24",
+  "duration_s": 8.0,
+  "model": "Veo 3.1 - Quality",
+  "account": "benoats@googlemail.com",
+  "project": "https://flow.google.com/u/0/project/d2ebe084-78fb-4d48-9006-2d897c5a80fb",
+  "source_paste": "PART05_PLATE07_CREATE_v01.md (supersedes board paste; VOID prior v08 sha 536660b0)",
+  "remint_reason": "CoS/Showrunner: hardened Create flat bone silhouette + closed tray; plate-first before rough_v02",
+  "assemble": "HOLD until 07_v08 UAT PASS then rough_v02",
+  "ts": "2026-09-22T22:16:49.458714+00:00"
+}

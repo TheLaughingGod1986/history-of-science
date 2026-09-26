@@ -1,0 +1,15 @@
+{
+  "plate": "01_chapter_new_seeing",
+  "version": "v13",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part05/01_chapter_new_seeing_v13.mp4",
+  "bytes": 1626925,
+  "sha256": "c40d813306040aa19bb7eef72ef28d7f38c277c86fd4ff4415ffd7cf72089bd8",
+  "duration_s": 8.0,
+  "model": "Veo 3.1 - Quality",
+  "account": "benoats@googlemail.com",
+  "project": "https://flow.google.com/u/0/project/d2ebe084-78fb-4d48-9006-2d897c5a80fb",
+  "source_paste": "PART05_PLATE01_CREATE_v10.md + v13 mid-bench spiral-stand wipe",
+  "remint_reason": "UAT revoked 01_v12 PASS \u2014 freestanding corkscrew/spiral coil stand mid-bench behind purple tube entire 8s",
+  "assemble": "CLOSED",
+  "ts": "2026-09-22T21:05:04.766772+00:00"
+}

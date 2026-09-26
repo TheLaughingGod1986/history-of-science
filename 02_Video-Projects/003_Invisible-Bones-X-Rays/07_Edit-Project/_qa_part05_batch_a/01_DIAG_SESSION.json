@@ -1,0 +1,28 @@
+{
+  "credit_count_this_session": 50,
+  "credit_line": "50 Google Flow credits",
+  "emails_in_account_menu": [
+    "Closebenoats86@gmail.com",
+    "Oatsbenoats86@gmail.com",
+    "benoats86@gmail.com",
+    "benoats@googlemail.com"
+  ],
+  "google_account_chip": "Google Account: Benjamin Oats  \n(benoats86@gmail.com)",
+  "email_still_benoats_googlemail": false,
+  "account_menu_shows_googlemail": true,
+  "account_menu_shows_benoats86_gmail": true,
+  "create_enabled_after_soft_refresh": false,
+  "insufficient_credits_warning": true,
+  "submitted": false,
+  "stopped": true,
+  "no_fast": true,
+  "no_upgrade_click": true,
+  "no_topup_ask": true,
+  "project_url": "https://flow.google.com/u/1/project/2ed989c7-688d-46cc-91f3-1ffc65526fc1",
+  "evidence": [
+    "_qa_part05_batch_a/01_DIAG_credits_menu.png",
+    "_qa_part05_batch_a/01_DIAG_credits_menu_v2.png",
+    "_qa_part05_batch_a/01_DIAG_after_refresh.png",
+    "_qa_part05_batch_a/01_DIAG_SESSION.json"
+  ]
+}

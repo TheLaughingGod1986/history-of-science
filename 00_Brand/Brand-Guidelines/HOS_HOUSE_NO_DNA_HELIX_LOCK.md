@@ -5,7 +5,7 @@
 
 ## HARD FAIL forever
 
-1. **No DNA helix** — no double helix, no Periodic-table DNA desk prop, no yellow/purple helix garnish, no DNA model, no orrery-helix desk bleed on X-ray / Würzburg plates.
+1. **No DNA helix** — no double helix, no spiral DNA prop, no Periodic-table DNA desk prop, no yellow/purple helix garnish, **no glowing yellow helix in an X-ray palm**, no DNA model, no orrery-helix desk bleed on X-ray / Würzburg plates. (Reinforced 22 Sep after Part 04 Batch A UAT.)
 2. **No helix garnish behind Explorer** — soft-garnish does **not** stand (P03 rough_v01 overturned a soft KEEP).
 3. **Never open a Create prompt with** `Same DNA soft background` (exact phrase banned — that opener caused P03 plate 07 bleed).
 

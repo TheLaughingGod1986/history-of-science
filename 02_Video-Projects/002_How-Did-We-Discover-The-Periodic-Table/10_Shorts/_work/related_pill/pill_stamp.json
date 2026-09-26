@@ -1,0 +1,27 @@
+[
+  {
+    "id": "s01_empty_chairs",
+    "file": "hos_002_s01_empty_chairs_punch_pill_v01.mp4",
+    "duration": 24.083333
+  },
+  {
+    "id": "s02_predict_metal",
+    "file": "hos_002_s02_predict_metal_punch_pill_v01.mp4",
+    "duration": 24.083333
+  },
+  {
+    "id": "s03_gallium",
+    "file": "hos_002_s03_gallium_punch_pill_v01.mp4",
+    "duration": 25.291667
+  },
+  {
+    "id": "s04_tellurium",
+    "file": "hos_002_s04_tellurium_punch_pill_v01.mp4",
+    "duration": 24.083333
+  },
+  {
+    "id": "s05_other_table",
+    "file": "hos_002_s05_other_table_punch_pill_v01.mp4",
+    "duration": 25.083333
+  }
+]

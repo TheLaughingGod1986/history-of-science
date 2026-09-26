@@ -5,9 +5,10 @@
 **Chapter:** Bertha’s Ring (~90–110s · VO v02 ~232 words)  
 **Parents:** P01 + P02 + P03 **KEEP/LOCK** (`hos_003_part03_rough_v02.mp4` sha `572d498f…`) — **no remint**  
 **Channel:** @HistoryOfScienceYT only  
-**Mint:** **OPEN** — Ben mint-green Batch A (21 Sep 2026). CoS Create in flight. Assemble still CLOSED.  
+**Mint:** **KEEP/LOCK** — Ben KEEP rough_v03 (`hos_003_part04_rough_v03.mp4` sha `d2b594622134…`). No remint.  
 **Board:** `parts/part-04_plates_v01.json`  
-**Handoff sheet:** `PART04_BATCH_A_MINT_GREEN.md`
+**Handoff sheet:** `PART04_BATCH_A_MINT_GREEN.md`  
+**Remint sheets:** `PART04_BATCH_A_REMINT_v01.md` (helix, done) · `PART04_PLATES_070809_BULLET_REMINT_v01.md` (active)
 
 This brief does **not** pass/fail cuts as Ben PASS.
 
@@ -17,11 +18,14 @@ This brief does **not** pass/fail cuts as Ben PASS.
 
 - **Silent-readable picture** — every plate portrays the VO beat with sound OFF (`HOS_HOUSE_SILENT_READABLE_PICTURE_LOCK.md`).
 - **Teaching density** — Animistry side label or short teach card whenever name/place/idea needs explaining (`HOS_HOUSE_TEACHING_DENSITY_LOCK.md`).
-- **No DNA helix** — never open Create with `Same DNA soft background`; prefer `Same Würzburg lab` (`HOS_HOUSE_NO_DNA_HELIX_LOCK.md`).
+- **No DNA helix / spiral / prop** — includes glowing yellow helix in X-ray palm; never open Create with `Same DNA soft background`; prefer `Same Würzburg lab` (`HOS_HOUSE_NO_DNA_HELIX_LOCK.md`). Part 04 specifics: plate 02 = hand on proof plate (not glowing disk); plate 04 = no Explorer/face-hero + PROOF label; plate 10 = no wall-of-text / garbled floats.
 - **Veo 3.1 Quality / CLEAN LIGHT** for proof-plate / bone+ring / beam beats.
 - **Flow Mini only** — `benoats@googlemail.com`; no cloud Flow.
 - **No Explorer** this part.
-- **Assemble CLOSED** until all Batch A lands + plate-first UAT PASS.
+- **Readable cartoon faces** on character plates — simple Animistry eyes/nose; HARD FAIL blank mannequin ovals (`PART04_PLATE07_FACES_REMINT_v01.md`). “Faceless” means no Explorer / no face-hero close-up, not blank ovals.
+- **Bullet-in-radiograph** — flat **2D radiographic denser shadow INSIDE ribs** (same graphic language as bones; part of the scan). HARD FAIL: luminous **3D rifle cartridge ON TOP of** the X-ray; flat sticker next to a hand; Ken Burns-only; helix/spiral tube filaments. Create opener: `Same Würzburg lab` only (`PART04_PLATES_070809_BULLET_REMINT_v01.md`).
+- **SHOW letters** when mail/correspondence/spread is the story (`HOS_HOUSE_SHOW_LETTERS_LOCK.md`).
+- **Assemble DONE** — Ben KEEP/LOCK rough_v03.
 - Bed: ominous lab (death-ward cousin under VO). Picture with VO. No Orbit / Germs ward / Periodic desk / lava / Ken Burns ship.
 
 ### Studio (plate-library) — Ben LOCK 9 Sep 2026

@@ -1,0 +1,15 @@
+{
+  "plate": "01_chapter_new_seeing",
+  "version": "v14",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part05/01_chapter_new_seeing_v14.mp4",
+  "bytes": 2498959,
+  "sha256": "6087823a67acbe76ebaee11363c75be07c0112d94c056718ee79b05e64074595",
+  "duration_s": 8.0,
+  "model": "Veo 3.1 - Quality",
+  "account": "benoats@googlemail.com",
+  "project": "https://flow.google.com/u/0/project/d2ebe084-78fb-4d48-9006-2d897c5a80fb",
+  "source_paste": "PART05_PLATE01_CREATE_v10.md + v14 all-bench freestanding-spiral wipe",
+  "remint_reason": "UAT HARD FAIL 01_v13 \u2014 freestanding spiral/corkscrew on background-right bench entire 8s",
+  "assemble": "CLOSED",
+  "ts": "2026-09-22T21:14:17.922043+00:00"
+}

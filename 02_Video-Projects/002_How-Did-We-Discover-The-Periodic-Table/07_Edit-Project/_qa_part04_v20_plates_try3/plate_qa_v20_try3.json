@@ -1,0 +1,78 @@
+{
+  "06_explorer_leaves_gap": {
+    "sha256": "dd4bd8e6f1e6ff905ef1c197137394110667f318045997d79359d13831dd45ef",
+    "bytes": 848201,
+    "ghost_fracs": [
+      0.29302212665603106,
+      0.30960492932221817,
+      0.30835913312693497,
+      0.30276854127511926,
+      0.3059197312201001,
+      0.30586739327883744
+    ],
+    "ghost_peak": 0.30960492932221817,
+    "contact": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try3/06_explorer_leaves_gap_contact.jpg",
+    "scalp_pits": [
+      [
+        0,
+        0.0,
+        1.5
+      ],
+      [
+        0,
+        0.0,
+        3.5
+      ],
+      [
+        0,
+        0.0,
+        5.5
+      ]
+    ],
+    "scalp_pit_frac_peak": 0.0,
+    "reject": false,
+    "reason": "",
+    "try": 3,
+    "model": "Veo 3.1 - Quality"
+  },
+  "11_publish_gaps": {
+    "sha256": "7c8c56e49abcf0a8636b281df63ee6cda1d36b2d5e10b42ee1d23705785c9349",
+    "bytes": 672738,
+    "ghost_fracs": [
+      0.4291429197720298,
+      0.4206078147612156,
+      0.419870723280954,
+      0.41986331569664903,
+      0.419143380923282,
+      0.4197292069632495
+    ],
+    "ghost_peak": 0.4291429197720298,
+    "contact": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try3/11_publish_gaps_contact.jpg",
+    "scalp_pits": [],
+    "scalp_pit_frac_peak": null,
+    "reject": true,
+    "reason": "ghost_peak 0.429>=0.40",
+    "try": 3,
+    "model": "Veo 3.1 - Quality"
+  },
+  "11b_wait_and_hunt": {
+    "sha256": "13d59baad09ce6ed9b3919c4ca747243b3c354698a07d3389761dc5751542264",
+    "bytes": 794355,
+    "ghost_fracs": [
+      0.48913613939330325,
+      0.4917667056198874,
+      0.48418079096045197,
+      0.49168923583452817,
+      0.493546103153423,
+      0.49602238437482854
+    ],
+    "ghost_peak": 0.49602238437482854,
+    "contact": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/_qa_part04_v20_plates_try3/11b_wait_and_hunt_contact.jpg",
+    "scalp_pits": [],
+    "scalp_pit_frac_peak": null,
+    "reject": true,
+    "reason": "ghost_peak 0.496>=0.40",
+    "try": 3,
+    "model": "Veo 3.1 - Quality"
+  }
+}

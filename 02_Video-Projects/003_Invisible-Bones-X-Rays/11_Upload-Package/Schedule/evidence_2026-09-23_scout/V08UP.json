@@ -1,0 +1,242 @@
+{
+  "s1": {
+    "slot": "s1",
+    "vid": "oowAOWTBoq0",
+    "target": "8A9BF9F53C4181EE7102FCBAAA4E0143",
+    "before": {
+      "href": "https://studio.youtube.com/video/oowAOWTBoq0/edit",
+      "hasSched": true,
+      "titleOk": true,
+      "imgs": [
+        "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+        "https://i9.ytimg.com/vi/oowAOWTBoq0/mqdefault.jpg?v=6ab3de93&sqp=CMDJz9UG-oaymwEoCMACELQB8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYciBbKC8wDw==&rs=AOn4CLA-P7ynbfRrWEWl7_4b7Vqkp9BSTA",
+        "https://i9.ytimg.com/vi/oowAOWTBoq0/sddefault.jpg?v=6ab3de93&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYciBbKC8wDw==&rs=AOn4CLCaKwwrSlOlGzMt8TW8AFeT3cOfcg",
+        "https://i9.ytimg.com/vi/oowAOWTBoq0/sddefault.jpg?v=6ab3de93&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYciBbKC8wDw==&rs=AOn4CLCaKwwrSlOlGzMt8TW8AFeT3cOfcg"
+      ],
+      "buttons": [
+        "Ask Studio",
+        "Ask Studio",
+        "Create",
+        "Create",
+        "Undo changes",
+        "Undo changes",
+        "Save",
+        "Save",
+        "Get suggestions",
+        "Get suggestions"
+      ]
+    },
+    "attach": true,
+    "midButtons": [
+      "Ask Studio",
+      "Ask Studio",
+      "Create",
+      "Create",
+      "Undo changes",
+      "Undo changes",
+      "Save",
+      "Save",
+      "Get suggestions",
+      "Get suggestions"
+    ],
+    "save": {
+      "x": 1241.703125,
+      "y": 81,
+      "w": 62.296875,
+      "h": 36,
+      "dis": "false"
+    },
+    "clicked": true,
+    "after": {
+      "hasSched": true,
+      "titleOk": true,
+      "imgs": [
+        "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj"
+      ],
+      "save": {
+        "x": 1241.703125,
+        "y": 81,
+        "w": 62.296875,
+        "h": 36,
+        "dis": "false"
+      },
+      "buttons": [
+        "Ask Studio",
+        "Ask Studio",
+        "Create",
+        "Create",
+        "Undo changes",
+        "Undo changes",
+        "Save",
+        "Save",
+        "Get suggestions",
+        "Get suggestions"
+      ],
+      "toast": false
+    },
+    "shot": 60529,
+    "ok": true
+  },
+  "s2": {
+    "slot": "s2",
+    "vid": "xvanpsLeADE",
+    "target": "860AA1BE4182FF3F1F759D08D9B0AD3F",
+    "before": {
+      "href": "https://studio.youtube.com/video/xvanpsLeADE/edit",
+      "hasSched": true,
+      "titleOk": true,
+      "imgs": [
+        "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+        "https://i9.ytimg.com/vi/xvanpsLeADE/mqdefault.jpg?v=6ab3dec9&sqp=CMDJz9UG-oaymwEoCMACELQB8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYfyBXKBkwDw==&rs=AOn4CLCjfipCcJzhlpPRAhCCArjOKUHLlQ",
+        "https://i9.ytimg.com/vi/xvanpsLeADE/sddefault.jpg?v=6ab3dec9&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYfyBXKBkwDw==&rs=AOn4CLAoOk5h_imNdgkGtHF5rydU3TEI4Q",
+        "https://i9.ytimg.com/vi/xvanpsLeADE/sddefault.jpg?v=6ab3dec9&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYfyBXKBkwDw==&rs=AOn4CLAoOk5h_imNdgkGtHF5rydU3TEI4Q"
+      ],
+      "buttons": [
+        "Ask Studio",
+        "Ask Studio",
+        "Create",
+        "Create",
+        "Undo changes",
+        "Undo changes",
+        "Save",
+        "Save",
+        "Get suggestions",
+        "Get suggestions"
+      ]
+    },
+    "attach": true,
+    "midButtons": [
+      "Ask Studio",
+      "Ask Studio",
+      "Create",
+      "Create",
+      "Undo changes",
+      "Undo changes",
+      "Save",
+      "Save",
+      "Get suggestions",
+      "Get suggestions"
+    ],
+    "save": {
+      "x": 1241.703125,
+      "y": 81,
+      "w": 62.296875,
+      "h": 36,
+      "dis": "false"
+    },
+    "clicked": true,
+    "after": {
+      "hasSched": true,
+      "titleOk": true,
+      "imgs": [
+        "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+        "https://i9.ytimg.com/vi/xvanpsLeADE/mqdefault.jpg?v=6ab3e51b&sqp=CMDJz9UG-oaymwEoCMACELQB8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYfyBXKCIwDw==&rs=AOn4CLDwnQxEtk7q5VrF74HqOrxqmk5Bag",
+        "https://i9.ytimg.com/vi/xvanpsLeADE/sddefault.jpg?v=6ab3e51b&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYfyBXKCIwDw==&rs=AOn4CLADkscCXzdkHl0wd7yGVePSzxpjNg",
+        "https://i9.ytimg.com/vi/xvanpsLeADE/sddefault.jpg?v=6ab3e51b&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYfyBXKCIwDw==&rs=AOn4CLADkscCXzdkHl0wd7yGVePSzxpjNg"
+      ],
+      "save": {
+        "x": 1241.703125,
+        "y": 81,
+        "w": 62.296875,
+        "h": 36,
+        "dis": "true"
+      },
+      "buttons": [
+        "Ask Studio",
+        "Ask Studio",
+        "Create",
+        "Create",
+        "Undo changes",
+        "Undo changes",
+        "Save",
+        "Save",
+        "Get suggestions",
+        "Get suggestions"
+      ],
+      "toast": true
+    },
+    "shot": 91527,
+    "ok": true
+  },
+  "s3": {
+    "slot": "s3",
+    "vid": "zI_eD3vFWmE",
+    "target": "B8A206F33C640AAA58B1B0F4A734C84C",
+    "before": {
+      "href": "https://studio.youtube.com/video/zI_eD3vFWmE/edit",
+      "hasSched": true,
+      "titleOk": true,
+      "imgs": [
+        "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+        "https://i9.ytimg.com/vi/zI_eD3vFWmE/mqdefault.jpg?v=6ab3dee6&sqp=CMDJz9UG-oaymwEoCMACELQB8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYciBaKDEwDw==&rs=AOn4CLDEzkgaAERU9B5D6hKOS8_vOkA9DQ",
+        "https://i9.ytimg.com/vi/zI_eD3vFWmE/sddefault.jpg?v=6ab3dee6&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYciBaKDEwDw==&rs=AOn4CLD6EI7Xmnm_DWcg6CJkMubcTSSYBg",
+        "https://i9.ytimg.com/vi/zI_eD3vFWmE/sddefault.jpg?v=6ab3dee6&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYciBaKDEwDw==&rs=AOn4CLD6EI7Xmnm_DWcg6CJkMubcTSSYBg"
+      ],
+      "buttons": [
+        "Ask Studio",
+        "Ask Studio",
+        "Create",
+        "Create",
+        "Undo changes",
+        "Undo changes",
+        "Save",
+        "Save",
+        "Get suggestions",
+        "Get suggestions"
+      ]
+    },
+    "attach": true,
+    "midButtons": [
+      "Ask Studio",
+      "Ask Studio",
+      "Create",
+      "Create",
+      "Undo changes",
+      "Undo changes",
+      "Save",
+      "Save",
+      "Get suggestions",
+      "Get suggestions"
+    ],
+    "save": {
+      "x": 1241.703125,
+      "y": 81,
+      "w": 62.296875,
+      "h": 36,
+      "dis": "false"
+    },
+    "clicked": true,
+    "after": {
+      "hasSched": true,
+      "titleOk": true,
+      "imgs": [
+        "https://yt3.ggpht.com/966-HEenIA2XBEINlP_Y-ZRjXZymAVW2o37sHxTT5AB34slaAGAZa2z-3iV6dtUuGy1oMPNZlA=s48-c-k-c0x00ffffff-no-rj",
+        "https://i9.ytimg.com/vi/zI_eD3vFWmE/mqdefault.jpg?v=6ab3e537&sqp=CMDJz9UG-oaymwEoCMACELQB8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYfyBRKBMwDw==&rs=AOn4CLCtVdm2GltmslhtuzZw1wT-PUCqzA",
+        "https://i9.ytimg.com/vi/zI_eD3vFWmE/sddefault.jpg?v=6ab3e537&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYfyBRKBMwDw==&rs=AOn4CLBeLVPYfQkvlSY6XbvFjhGefAqzQQ",
+        "https://i9.ytimg.com/vi/zI_eD3vFWmE/sddefault.jpg?v=6ab3e537&sqp=CMDJz9UG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAL-DooCDAgAEAEYfyBRKBMwDw==&rs=AOn4CLBeLVPYfQkvlSY6XbvFjhGefAqzQQ"
+      ],
+      "save": {
+        "x": 1241.703125,
+        "y": 81,
+        "w": 62.296875,
+        "h": 36,
+        "dis": "true"
+      },
+      "buttons": [
+        "Ask Studio",
+        "Ask Studio",
+        "Create",
+        "Create",
+        "Undo changes",
+        "Undo changes",
+        "Save",
+        "Save",
+        "Get suggestions",
+        "Get suggestions"
+      ],
+      "toast": true
+    },
+    "shot": 93197,
+    "ok": true
+  }
+}

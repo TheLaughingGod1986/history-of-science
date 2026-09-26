@@ -1,0 +1,70 @@
+ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers
+  built with Apple clang version 21.0.0 (clang-2100.1.1.101)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/9.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      61.  1.101 / 61.  1.101
+  libavcodec     63.  1.101 / 63.  1.101
+  libavformat    63.  1.101 / 63.  1.101
+  libavdevice    63.  1.101 / 63.  1.101
+  libavfilter    12.  1.101 / 12.  1.101
+  libswscale     10.  1.101 / 10.  1.101
+  libswresample   7.  1.101 /  7.  1.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_part02_rough_v03.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.101
+  Duration: 00:01:01.58, start: 0.000000, bitrate: 5540 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 5340 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 194 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0x924c35180] using SAR=1216/1215
+[libx264 @ 0x924c35180] using cpu capabilities: ARMv8 NEON DotProd I8MM
+[libx264 @ 0x924c35180] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x924c35180] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s1_cardboard_glow_v01.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.101
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1216:1215 DAR 76:135], q=2-31, 24 fps, 12288 tbn (default)
+    Metadata:
+      encoder         : Lavc63.1.101 libx264
+      handler_name    : VideoHandler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.101 aac
+      handler_name    : SoundHandler
+frame=    5 fps=0.0 q=23.0 size=       0KiB time=00:00:00.29 bitrate=   1.3kbits/s speed=0.588x elapsed=0:00:00.50    frame=   59 fps= 58 q=23.0 size=    1280KiB time=00:00:02.49 bitrate=4201.2kbits/s speed=2.45x elapsed=0:00:01.01    frame=  108 fps= 71 q=23.0 size=    2048KiB time=00:00:04.56 bitrate=3675.0kbits/s speed=   3x elapsed=0:00:01.51    frame=  151 fps= 75 q=23.0 size=    3072KiB time=00:00:06.40 bitrate=3932.2kbits/s speed=3.16x elapsed=0:00:02.02    frame=  200 fps= 79 q=23.0 size=    4608KiB time=00:00:08.40 bitrate=4491.1kbits/s speed=3.32x elapsed=0:00:02.53    frame=  249 fps= 82 q=23.0 size=    5888KiB time=00:00:10.41 bitrate=4633.2kbits/s speed=3.43x elapsed=0:00:03.03    frame=  304 fps= 86 q=23.0 size=    6656KiB time=00:00:12.71 bitrate=4288.5kbits/s speed=3.59x elapsed=0:00:03.54    frame=  365 fps= 90 q=23.0 size=    7936KiB time=00:00:15.31 bitrate=4244.3kbits/s speed=3.78x elapsed=0:00:04.05    frame=  420 fps= 92 q=23.0 size=    8960KiB time=00:00:17.53 bitrate=4185.7kbits/s speed=3.85x elapsed=0:00:04.55    frame=  475 fps= 94 q=23.0 size=    9984KiB time=00:00:19.77 bitrate=4135.8kbits/s speed=3.91x elapsed=0:00:05.05    frame=  515 fps= 93 q=23.0 size=   11008KiB time=00:00:21.71 bitrate=4152.3kbits/s speed=3.91x elapsed=0:00:05.55    frame=  564 fps= 93 q=-1.0 size=   12544KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:06.06    [mp4 @ 0x92501bc00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x924c38300] video:12532KiB audio:566KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.133744%
+frame=  576 fps= 93 q=-1.0 Lsize=   13115KiB time=00:00:24.00 bitrate=4476.7kbits/s speed=3.89x elapsed=0:00:06.17    
+[libx264 @ 0x924c35180] frame I:4     Avg QP:14.33  size: 86337
+[libx264 @ 0x924c35180] frame P:170   Avg QP:15.20  size: 40227
+[libx264 @ 0x924c35180] frame B:402   Avg QP:16.84  size: 14049
+[libx264 @ 0x924c35180] consecutive B-frames:  4.2%  7.6%  2.1% 86.1%
+[libx264 @ 0x924c35180] mb I  I16..4: 16.4% 70.3% 13.3%
+[libx264 @ 0x924c35180] mb P  I16..4: 10.7% 26.4%  2.9%  P16..4: 26.6% 11.3%  4.0%  0.0%  0.0%    skip:18.0%
+[libx264 @ 0x924c35180] mb B  I16..4:  2.5%  2.4%  0.2%  B16..8: 27.0%  5.8%  0.6%  direct: 8.3%  skip:53.3%  L0:46.4% L1:46.6% BI: 7.0%
+[libx264 @ 0x924c35180] 8x8 transform intra:62.1% inter:79.6%
+[libx264 @ 0x924c35180] coded y,uvDC,uvAC intra: 32.6% 58.5% 32.3% inter: 13.6% 24.5% 0.9%
+[libx264 @ 0x924c35180] i16 v,h,dc,p: 50% 26%  5% 19%
+[libx264 @ 0x924c35180] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 25% 27%  2%  3%  3%  5%  3%  3%
+[libx264 @ 0x924c35180] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 31% 22%  2%  5%  3%  4%  2%  1%
+[libx264 @ 0x924c35180] i8c dc,h,v,p: 51% 22% 21%  5%
+[libx264 @ 0x924c35180] Weighted P-Frames: Y:8.2% UV:8.2%
+[libx264 @ 0x924c35180] ref P L0: 63.3% 10.4% 20.0%  6.2%  0.0%
+[libx264 @ 0x924c35180] ref B L0: 85.0% 12.2%  2.8%
+[libx264 @ 0x924c35180] ref B L1: 96.2%  3.8%
+[libx264 @ 0x924c35180] kb/s:4277.21
+[aac @ 0x924d2c380] Qavg: 603.079

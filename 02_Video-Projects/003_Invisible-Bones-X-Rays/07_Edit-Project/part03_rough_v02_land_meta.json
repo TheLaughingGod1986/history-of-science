@@ -85,5 +85,13 @@
       "body": "Invisible light that writes bones can also burn."
     }
   ],
-  "house": "Explorer only on 07. Silent-readable + teaching density. Continuous 1x motion. Ominous ward bed. No DNA helix. No Veo mint."
+  "house": "Explorer only on 07. Silent-readable + teaching density. Continuous 1x motion. Ominous ward bed. No DNA helix. No Veo mint.",
+  "ben_status": "KEEP/LOCK",
+  "ben_keep_date": "2026-09-21",
+  "soft_notes_non_blocking": [
+    "VO overhang ~18.3s",
+    "SOFT TISSUE typo risk",
+    "CRT-lean glow"
+  ],
+  "house_lesson": "HOS_HOUSE_NO_DNA_HELIX_LOCK.md"
 }

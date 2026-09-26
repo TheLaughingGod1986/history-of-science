@@ -1,0 +1,16 @@
+{
+  "plate": "07_explorer_hand_beam",
+  "version": "v02",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part03/07_explorer_hand_beam_v02.mp4",
+  "bytes": 2397959,
+  "sha256": "380c97035d99898cc4055abc5d062f86decbf7e130447630d7af8ab232a6018f",
+  "duration_s": 8.0,
+  "model": "Veo 3.1 - Quality",
+  "project": "https://flow.google.com/project/537a3344-5ba3-46c3-b727-4e166601d9d0",
+  "account": "benoats@googlemail.com",
+  "mute_note": "Mute: on-model Explorer (glasses, crown, teal trenchcoat) raises hand into safe beam then lowers; clean empty lab behind him \u2014 NO DNA helix / purple helix garnish.",
+  "remint_reason": "rough_v01 full-cut HARD FAIL purple DNA helix behind Explorer",
+  "ts": "2026-09-21T18:12:24.362738+00:00",
+  "uat": "FAIL \u2014 white DNA helix still left of Explorer on start/mid/end",
+  "rejected_to": "04_Generated-Clips/part03/_rejected_helix/07_explorer_hand_beam_v02_helix_left.mp4"
+}

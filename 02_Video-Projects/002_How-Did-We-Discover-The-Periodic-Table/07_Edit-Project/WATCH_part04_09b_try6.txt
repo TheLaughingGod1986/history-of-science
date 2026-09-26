@@ -1,0 +1,8 @@
+PLATE-FIRST 09b_risk_hold try6
+mp4: .../09b_risk_hold_v20_try6.mp4
+sha256: 3c967af868e875a12e5a8d9b49b14dd06690fcf24761f93f05fa8e2778e7a25d
+gate: REJECT_FLAT_CARDS
+flame: PASS (spit=0; continuous contact clean vs try5 UAT flames t4.5–t7.2)
+flat_cards: SELF-REJECT (unfinished flat / garbled overlays remain)
+next: try7 remint — ban fire + ban flat card overlays
+NO assemble.

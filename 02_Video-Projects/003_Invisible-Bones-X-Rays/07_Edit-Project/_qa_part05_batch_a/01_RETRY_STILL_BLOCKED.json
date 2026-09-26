@@ -1,0 +1,18 @@
+{
+  "status": "STOP_CREATE_STILL_DISABLED",
+  "plate": "01_chapter_new_seeing",
+  "account_email_myaccount": "benoats@googlemail.com",
+  "flow_home_badge": "ULTRA",
+  "model_locked_ui": "Video \u00b7 720p \u00b7 8s \u00b7 x1 (Veo 3.1 Quality locked before submit)",
+  "ben_reported_balance": 13682,
+  "credit_count_visible_in_create_ui": null,
+  "create_button": "disabled / replaced by info icon",
+  "aria_label_exact": "Insufficient credits warning",
+  "tooltip_exact": "Not enough credits to perform this action. Try other settings or upgrade for more credits.",
+  "overlay_exact": "error\nNot enough credits to perform this action. Try other settings or upgrade for more credits.\nSettings\nUpgrade",
+  "screenshots_mini": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/07_Edit-Project/_qa_part05_batch_a/01_RETRY_BLOCK_armed.png",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/07_Edit-Project/_qa_part05_batch_a/01_RETRY_BLOCK_info_hover.png",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/07_Edit-Project/_qa_part05_batch_a/01_RETRY_BLOCK_myaccount.png"
+  ]
+}

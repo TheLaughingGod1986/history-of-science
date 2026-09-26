@@ -42,3 +42,7 @@ Use the `prompt` on `07_explorer_hand_beam` in `parts/part-03_plates_v01.json`. 
 - Prior remint (8 plates): `PART03_BATCH_A_REMINT_v01.md` (07 was KEEP — superseded for 07 only)
 - Brief: `PRODUCTION_BRIEF_PART03_v01.md`
 - Assemble cues: `PART03_ASSEMBLE_V01_CUES.md` (swap 07 clip to reminted land when ready)
+
+---
+
+**KEEP/LOCK stamp (21 Sep evening):** `hos_003_part03_rough_v02.mp4` sha `572d498f…` — Ben KEEP. Soft notes non-blocking. No further remint this part.

@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/11_Upload-Package/Schedule/_finish_hos_002_shorts_v01.py", line 398, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/11_Upload-Package/Schedule/_finish_hos_002_shorts_v01.py", line 375, in main
+    result["longThumb"] = u.apply_long_thumb(page)
+                          ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/11_Upload-Package/Schedule/_upload_hos_002_shorts_v01.py", line 792, in apply_long_thumb
+    save.first.click(force=True)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/sync_api/_generated.py", line 17876, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        )
+        ^
+    )
+    ^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_locator.py", line 165, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_frame.py", line 593, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_connection.py", line 76, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/benjaminoats/Library/Python/3.14/lib/python/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name=re.compile(r"^Save$", re.IGNORECASE)).first
+

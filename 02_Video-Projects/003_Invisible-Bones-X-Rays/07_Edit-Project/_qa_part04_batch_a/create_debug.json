@@ -1,0 +1,43 @@
+{
+  "url": "https://flow.google.com/u/1/project/2ed989c7-688d-46cc-91f3-1ffc65526fc1",
+  "editor_usable": true,
+  "buttons": [
+    {
+      "t": "add",
+      "aria": "Add ingredients to the prompt box",
+      "disabled": false,
+      "x": 879,
+      "y": 1085,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "t": "article_spark",
+      "aria": "Agent instructions",
+      "disabled": false,
+      "x": 1083,
+      "y": 1085,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "t": "tune",
+      "aria": "Settings",
+      "disabled": false,
+      "x": 1119,
+      "y": 1085,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "t": "stop",
+      "aria": "Stop",
+      "disabled": false,
+      "x": 1155,
+      "y": 1085,
+      "w": 32,
+      "h": 32
+    }
+  ],
+  "body_tail": "Skip to main content\nStart creating or drop media\nhome\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\ndashboard\nAll media\naccessibility_new\nCharacters\nmovie\nScenes\napps_spark_2\nTools\ndelete\nBin\nleft_panel_close\nCollapse\nmenu\nUntitled session\nedit_square\nclose\nOrganise my grid into collections\n\nAnimistry 3D. W\u00fcrzburg 1895 physics lab \u2014 dark wood, dark curtains, coils, one Crookes tube, soft green-violet glow. MUTE-TEST: empty proof plate waiting near the beam must immediately read as the chapter open for Bertha's Ring (sound OFF). Continuous motion. Silent. No Explorer. HARD REJECT: Orbit, photoreal archive paste, Germs ward, Periodic desk. HARD FAIL \u2014 no DNA helix / double helix / Periodic DNA desk prop; never open Create with Same DNA soft background; prefer Same W\u00fcrzburg lab. Quality CLEAN LIGHT.Animistry 3D. W\u00fcrzburg 1895 physics lab \u2014 dark wood, dark curtains, coils, one Crookes tube, soft green-violet glow. MUTE-TEST: empty proof plate waiting near the beam must immediately read as the chapter open for Bertha's Ring (sound OFF). Continuous motion. Silent. No Explorer. HARD REJECT: Orbit, photoreal archive paste, Germs ward, Periodic desk. HARD FAIL \u2014 no DNA helix / double helix / Periodic DNA desk prop; never open Create with Same DNA soft background; prefer Same W\u00fcrzburg lab. Quality CLEAN LIGHT.\n\nclose\nadd\narticle_spark\ntune\nstop\n\nGoogle Flow can make mistakes, so double-check it"
+}

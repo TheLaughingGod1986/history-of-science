@@ -38,3 +38,16 @@ For 002 Part 04+ (and similar):
 
 - Bake this into every Showrunner brief from Part 04 onward.
 - Part 03 KEEP / lock path is separate (see film 002 edit status) — do **not** rewrite shipped P03 VO for this note unless Ben asks.
+
+## Teaching density (20 Sep 2026 · Ben)
+
+Whenever a name, place, or idea needs explaining: Animistry **side label** or **short teach card** on that beat. Kurzgesagt-level density; Animistry look only (Didot italic side, one at a time). Not flat Kurzgesagt UI unless Ben unlocks.
+
+Full rule: `HOS_HOUSE_TEACHING_DENSITY_LOCK.md`. Bake into every future brief (003 Part 02+ and later films).
+
+## Silent-readable picture (21 Sep 2026 · Ben)
+
+Plates must portray what the narrator says so a watcher understands the beat with sound off. VO-literal action on screen. Labels/teach cards stay but do not replace clear picture. Applies to **new** parts (Part 03+); not a remint of locked Part 02.
+
+Full rule: `HOS_HOUSE_SILENT_READABLE_PICTURE_LOCK.md`.
+

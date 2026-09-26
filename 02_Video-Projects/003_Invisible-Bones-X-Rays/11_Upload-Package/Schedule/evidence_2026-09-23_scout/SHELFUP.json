@@ -1,0 +1,27 @@
+{
+  "s1": {
+    "attach": true,
+    "reason": null,
+    "saveDis": "false",
+    "title": true,
+    "scheduled": true,
+    "saved": false
+  },
+  "s2": {
+    "attach": true,
+    "reason": null,
+    "saveDis": "false",
+    "title": true,
+    "scheduled": true,
+    "saved": false
+  },
+  "s3": {
+    "attach": true,
+    "reason": null,
+    "saveDis": "false",
+    "title": true,
+    "scheduled": true,
+    "saved": false
+  },
+  "dashboardFound": false
+}

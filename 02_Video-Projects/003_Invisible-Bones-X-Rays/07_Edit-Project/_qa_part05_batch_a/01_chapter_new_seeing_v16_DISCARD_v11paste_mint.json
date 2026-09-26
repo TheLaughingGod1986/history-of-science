@@ -1,0 +1,15 @@
+{
+  "plate": "01_chapter_new_seeing",
+  "version": "v16",
+  "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/04_Generated-Clips/part05/01_chapter_new_seeing_v16.mp4",
+  "bytes": 1503716,
+  "sha256": "10c8dce20d41fc14afbec7e56b2a9ab23be83e6f0706d8ce0b871e04b550c1f4",
+  "duration_s": 8.0,
+  "model": "Veo 3.1 - Quality",
+  "account": "benoats@googlemail.com",
+  "project": "https://flow.google.com/u/0/project/d2ebe084-78fb-4d48-9006-2d897c5a80fb",
+  "source_paste": "PART05_PLATE01_CREATE_v11.md Option A (v16 remint after c2ff7426 FAIL spirals)",
+  "remint_reason": "UAT HARD FAIL c2ff7426 \u2014 freestanding corkscrew/spiral on desks + right shelf",
+  "assemble": "CLOSED",
+  "ts": "2026-09-22T21:43:31.066812+00:00"
+}
