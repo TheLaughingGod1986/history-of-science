@@ -1,0 +1,28 @@
+HOS 004 Part 04 mint tries summary
+
+credits 1162 → 162 spent 1000
+paths {'flow-cdp': 22}
+summary {'keep': 22, 'fail_or_missing': 0, 'total_board_plates': 22, 'path_counts': {'flow-cdp': 22}}
+
+01_manchester_1909: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+02_alpha_bullets: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Quality
+03_fire_at_gold: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+04_thin_gold_foil: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+05_lights_off: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+06_eyes_adjust_scope: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+07_green_flash_count: KEEP try=2/2 path=flow-cdp model=Veo 3.1 - Quality
+08_pudding_punch: KEEP try=2/2 path=flow-cdp model=Veo 3.1 - Fast
+09_almost_all_pass: KEEP try=2/2 path=flow-cdp model=Veo 3.1 - Fast
+10_one_bounces: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Quality
+11_shell_tissue: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+12_shell_comes_back: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+13_mass_packed: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Quality
+14_nucleus_electrons: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Quality
+15_almost_empty: KEEP try=2/2 path=flow-cdp model=Veo 3.1 - Fast
+16_explorer_stadium_pea: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+17_electrons_past_seats: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+18_nothing_at_all: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+19_nucleus_question: KEEP try=2/2 path=flow-cdp model=Veo 3.1 - Fast
+20_lawyer_amateur: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
+21_place_equals_charge: KEEP try=2/2 path=flow-cdp model=Veo 3.1 - Quality
+22_cannot_measure_yet: KEEP try=1/1 path=flow-cdp model=Veo 3.1 - Fast
