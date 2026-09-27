@@ -12,7 +12,7 @@
 | Episode gate | Passed by Ben (manual), 26 Sep 2026 |
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
-| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–03 `mint: false` (03 rough v01 pending Ben) · 04/05 `mint: false` · Explorer used ×1 (P02); remaining P04/P05 · no Explorer in Part 03 |
+| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–03 `mint: false` · 04 `mint: true` (minting) · 05 `mint: false` · Explorer used ×1 (P02); P04 stadium pea = 2/3 · no Explorer in Part 03 |
 | Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”) · **Part 03 rough v01 PASS** (Ben: “fine”). **Part 04 minting** next. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
@@ -51,7 +51,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 01 Cold open | 0:00–1:10 | none | 17 (split 07 at 0:32) | false (PASS) |
 | 02 The Table That Broke Its Own Rule | 1:10–2:41 | 1:10 · ~1.5 s | **20** (4–6 s splits) | false (PASS) |
 | 03 The Crumb Inside the Atom | 2:41–4:05 | 2:41 · ~1.5 s | **19** (4–6 s splits) | false (PASS) |
-| 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
+| 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | **22** (4–6 s splits) | true (minting) |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
 **Next:** Part 04 Flow mint → `hos_004_part04_rough_v01.mp4`. STOP for Ben after Part 04 rough. Do not start Part 05.
