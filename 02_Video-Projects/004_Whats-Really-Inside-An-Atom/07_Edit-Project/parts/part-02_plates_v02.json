@@ -1,9 +1,9 @@
 {
   "status": "READY_FOR_MINT",
-  "mint": true,
+  "mint": false,
   "film": "004_Whats-Really-Inside-An-Atom",
   "working_title": "Why Is the Periodic Table in This Order?",
-  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v04 KEEP",
+  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v04 KEEP",
   "clip_use_s": 7.9,
   "xfade_s": 0.35,
   "always_fails": [
@@ -21,7 +21,7 @@
     "ATOMOS or SEE <film> text labels in plate",
     "Explorer parked all minute"
   ],
-  "notes": "Re-timed from VO v04. Board split 27 Sep for picture-change every 4–6 s (no hold >~6 s). t_s is PART-LOCAL (0 = Part 02 VO start / film 1:10). mint:true after Part 01 v05 PASS. Explorer once: 16_explorer_te_before_i.",
+  "notes": "Re-timed from VO v04. Board split 27 Sep for picture-change every 4\u20136 s (no hold >~6 s). t_s is PART-LOCAL (0 = Part 02 VO start / film 1:10). mint:true after Part 01 v05 PASS. Explorer once: 16_explorer_te_before_i.",
   "part": "02",
   "title": "The Table That Broke Its Own Rule",
   "vo_file": "02_Voiceover/part02_the_table_that_broke_its_own_rule_v02.txt",
@@ -34,14 +34,14 @@
     "text": "The Table That Broke Its Own Rule",
     "at_s": 69.813
   },
-  "film_window": "1:10–2:41",
+  "film_window": "1:10\u20132:41",
   "set_language": "TWO sets: Manchester 1808 schoolroom (Dalton, wooden balls, balance); St Petersburg 1869 desk (element cards, Mendeleev). Say 'same 1808 schoolroom set' / 'same 1869 card desk set'. Never 'same DNA'.",
-  "continuity_lock": "Picture change every ~4–6 s. Explorer once only on the Te-before-I card swap. Readable faces for Dalton and Mendeleev. Real element symbols only (H O Au Te I Co Ni Cl Br) — never garbled tiles.",
-  "explorer_lock": "Exactly ONE Explorer plate: 16_explorer_te_before_i. On model — round gold glasses, teal coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
+  "continuity_lock": "Picture change every ~4\u20136 s. Explorer once only on the Te-before-I card swap. Readable faces for Dalton and Mendeleev. Real element symbols only (H O Au Te I Co Ni Cl Br) \u2014 never garbled tiles.",
+  "explorer_lock": "Exactly ONE Explorer plate: 16_explorer_te_before_i. On model \u2014 round gold glasses, teal coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
   "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; garbled/fake element letters; unfinished Explorer hair; DNA helix; ATOMOS or SEE labels; twin Explorer; never say 'same DNA' or 'lab DNA' in a Veo prompt. No Explorer except plate 16.",
   "motion_lock": "Real Veo motion every plate. No freeze-pad.",
   "quality_note": "Quality only if a plate is clearly glowing/emissive (final table glow). Fast for schoolroom, card sorts, Explorer swap without lamp glow.",
-  "board_split_2026_09_27": "Split long holds from prior 10-plate board (02/03/05/06/07/10) into 20 plates ≤~5.7 s each.",
+  "board_split_2026_09_27": "Split long holds from prior 10-plate board (02/03/05/06/07/10) into 20 plates \u2264~5.7 s each.",
   "plates": [
     {
       "id": "01_dalton_schoolroom",
@@ -50,10 +50,10 @@
       "explorer": false,
       "i2v": false,
       "quality": "Fast",
-      "side_label": "JOHN DALTON · 1808",
+      "side_label": "JOHN DALTON \u00b7 1808",
       "vo_land": "Manchester, eighteen-oh-eight. A schoolteacher named John Dalton puts the old idea to work.",
       "prompt": "Animistry premium 3D cartoon. Manchester 1808 schoolroom. John Dalton (readable finished face, period coat) sets wooden balls of different sizes onto a brass balance. Continuous place-on-balance motion. Silent. No Explorer. No text labels in plate. HARD REJECT: Orbit, unfinished face, garbled cards, ATOMOS.",
-      "prompt_try2": "Animistry premium 3D cartoon. ECU: Dalton's hands place graded wooden balls on the balance pans — face soft in background. Same 1808 schoolroom. Continuous place. Silent. No Explorer. HARD REJECT: Orbit, garbled text."
+      "prompt_try2": "Animistry premium 3D cartoon. ECU: Dalton's hands place graded wooden balls on the balance pans \u2014 face soft in background. Same 1808 schoolroom. Continuous place. Silent. No Explorer. HARD REJECT: Orbit, garbled text."
     },
     {
       "id": "02_atomic_theory",
@@ -76,7 +76,7 @@
       "quality": "Fast",
       "side_label": null,
       "vo_land": "and each kind has its own weight. Hydrogen is the lightest. Oxygen is heavier.",
-      "prompt": "Same 1808 schoolroom set. Wooden balls lined light-to-heavy: tiny light ball (hydrogen feel) then larger (oxygen feel). Continuous line-up. Silent. Real feel only — no fake tile letters. HARD REJECT: Orbit, Explorer, garbled H/O tiles.",
+      "prompt": "Same 1808 schoolroom set. Wooden balls lined light-to-heavy: tiny light ball (hydrogen feel) then larger (oxygen feel). Continuous line-up. Silent. Real feel only \u2014 no fake tile letters. HARD REJECT: Orbit, Explorer, garbled H/O tiles.",
       "prompt_try2": "Same 1808 set. Balance tips slightly as a heavier wooden ball replaces a light one. Continuous tip. Silent. HARD REJECT: Orbit, garbled signs."
     },
     {
@@ -89,7 +89,7 @@
       "side_label": null,
       "vo_land": "Gold is heavier still.",
       "prompt": "Same 1808 schoolroom set. A dense gold-coloured wooden ball is clearly the heaviest in the line; camera settles on it. Continuous settle. Silent. HARD REJECT: Orbit, Explorer, lava drip.",
-      "prompt_try2": "Same 1808 set. ECU gold-coloured heavy ball on the balance — pan sinks. Continuous sink. Silent. HARD REJECT: Orbit."
+      "prompt_try2": "Same 1808 set. ECU gold-coloured heavy ball on the balance \u2014 pan sinks. Continuous sink. Silent. HARD REJECT: Orbit."
     },
     {
       "id": "05_fixed_amounts",
@@ -146,10 +146,11 @@
       "explorer": false,
       "i2v": false,
       "quality": "Fast",
-      "side_label": "DMITRI MENDELEEV · 1869",
+      "side_label": "DMITRI MENDELEEV \u00b7 1869",
       "vo_land": "Sixty years later in Saint Petersburg, Dmitri Mendeleev does exactly that.",
-      "prompt": "Animistry premium 3D cartoon. St Petersburg 1869 desk. Dmitri Mendeleev (readable finished face, beard, period frock) sits at a wooden desk with blank-then-writing element cards. Continuous write. Silent. No Explorer. HARD REJECT: Orbit, garbled cards, unfinished face.",
-      "prompt_try2": "Same 1869 desk. MCU Mendeleev writing on a card — finished face, warm lamp glow careful (no lava drip). Continuous write. Silent. HARD REJECT: Orbit, Explorer, lamp lava."
+      "prompt": "Same 1869 card desk set. Wide shot: bearded chemist in dark period frock at a wooden desk, warm lamp, stacks of blank element cards, quill writing on a card. Continuous write. Readable finished face. Silent. No Explorer. No Orbit. No garbled card letters.",
+      "prompt_try2": "Same 1869 desk, over-shoulder framing. Chemist's hand writes a blank card while more cards slide into a tidy stack. Warm lamp, continuous write-and-stack. Finished face visible in profile. Silent. No Explorer. No Orbit. No lava drip lamp.",
+      "framing_note": "v03 remint after Flow silent-fail on named Mendeleev prompts; desk grammar match to KEEP 14/16"
     },
     {
       "id": "10_cards_by_weight",
@@ -208,7 +209,7 @@
       "quality": "Fast",
       "side_label": null,
       "vo_land": "Then he prints his table and mails it to chemists across Europe.",
-      "prompt": "Same 1869 card desk set. Printed table sheets fold into letters that fly across a stylised map of Europe. Continuous print-then-fly. Silent. No readable body text as hero — table shapes only. HARD REJECT: Orbit, Explorer, ATOMOS, SEE labels.",
+      "prompt": "Same 1869 card desk set. Printed table sheets fold into letters that fly across a stylised map of Europe. Continuous print-then-fly. Silent. No readable body text as hero \u2014 table shapes only. HARD REJECT: Orbit, Explorer, ATOMOS, SEE labels.",
       "prompt_try2": "Same 1869 set. Letters lift from the desk and arc over a Europe map. Continuous arc. Silent. HARD REJECT: Orbit, garbled postage."
     },
     {
@@ -221,7 +222,7 @@
       "side_label": "Te BEFORE I",
       "vo_land": "But look closer. Tellurium is heavier than iodine, so by weight tellurium should come after it.",
       "prompt": "Same 1869 card desk set. Readable Te and I cards: Te card feels heavier on a tiny scale beside I. Continuous weigh compare. Silent. No Explorer yet. HARD REJECT: Orbit, garbled Te/I, Explorer this plate.",
-      "prompt_try2": "Same 1869 set. ECU Te card vs I card — Te side of the scale sinks. Continuous sink. Silent. HARD REJECT: Orbit, Explorer."
+      "prompt_try2": "Same 1869 set. ECU Te card vs I card \u2014 Te side of the scale sinks. Continuous sink. Silent. HARD REJECT: Orbit, Explorer."
     },
     {
       "id": "16_explorer_te_before_i",
@@ -280,8 +281,9 @@
       "quality": "Fast",
       "side_label": null,
       "vo_land": "If weight isn't the real order, what is?",
-      "prompt": "Same 1869 set. Open question: empty space beyond the glowing table — soft push into unresolved dark. Continuous soft push. Silent. HARD REJECT: Orbit, Explorer, Ken Burns only, SEE labels.",
+      "prompt": "Same 1869 set. Open question: empty space beyond the glowing table \u2014 soft push into unresolved dark. Continuous soft push. Silent. HARD REJECT: Orbit, Explorer, Ken Burns only, SEE labels.",
       "prompt_try2": "Same 1869 set. Cards settle; camera lifts toward unanswered dark above the desk. Continuous lift. Silent. HARD REJECT: Orbit."
     }
-  ]
+  ],
+  "mint_note": "mint complete 27 Sep \u2014 rough v01 pending Ben UAT; do not remint unless FAIL+stills"
 }

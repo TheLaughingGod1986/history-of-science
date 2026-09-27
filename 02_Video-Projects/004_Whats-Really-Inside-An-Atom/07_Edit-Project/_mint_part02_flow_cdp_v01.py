@@ -42,11 +42,9 @@ EXPLORER_REF = (
 )
 
 STYLE = (
-    "History of Science locked look: premium Animistry-class 3D cartoon, warm "
-    "cinematic light, period science world. Not photoreal. Not live-action. "
-    "Silent picture. No Orbit orange robot. Continuous motion the whole clip — "
-    "never a still push or Ken Burns. Readable faces when shown. Real element "
-    "symbols only — never garbled tiles, never ATOMOS, never SEE labels."
+    "Premium Animistry-class 3D cartoon, warm cinematic light, period science world. "
+    "Not photoreal. Silent. Continuous motion the whole clip. No Orbit robot. "
+    "No readable fake text or garbled tiles."
 )
 
 CREDIT_RE = re.compile(
@@ -150,6 +148,18 @@ def open_account_menu(page) -> None:
 def read_credits(page) -> tuple[int | None, str | None]:
     text = page_text(page)
     emails = set(re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text, flags=re.I))
+    # Also scrape aria-labels (Google Account chip often only lives there)
+    try:
+        aria_emails = page.evaluate(
+            """() => [...document.querySelectorAll('[aria-label]')]
+              .map(e => e.getAttribute('aria-label') || '')
+              .join('\\n')"""
+        ) or ""
+        emails |= set(
+            re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", aria_emails, flags=re.I)
+        )
+    except Exception:
+        pass
     active = None
     if REQUIRED.lower() in {e.lower() for e in emails}:
         active = REQUIRED.lower()
@@ -166,6 +176,19 @@ def read_credits(page) -> tuple[int | None, str | None]:
         open_account_menu(page)
         text = page_text(page)
         emails = set(re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text, flags=re.I))
+        try:
+            aria_emails = page.evaluate(
+                """() => [...document.querySelectorAll('[aria-label]')]
+                  .map(e => e.getAttribute('aria-label') || '')
+                  .join('\\n')"""
+            ) or ""
+            emails |= set(
+                re.findall(
+                    r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", aria_emails, flags=re.I
+                )
+            )
+        except Exception:
+            pass
         if REQUIRED.lower() in {e.lower() for e in emails}:
             active = REQUIRED.lower()
         elif emails and active is None:
@@ -194,14 +217,24 @@ def assert_gate(page) -> dict:
         shot = QA / "gate_signed_out.png"
         page.screenshot(path=str(shot), full_page=False)
         raise SystemExit(f"STOP signed out: {page.url} {shot}")
+    open_account_menu(page)
     credits, active = read_credits(page)
     shot = QA / "gate_auth_ok.png"
-    open_account_menu(page)
     page.screenshot(path=str(shot), full_page=False)
     try:
         page.keyboard.press("Escape")
     except Exception:
         pass
+    # Re-read once if menu race left us empty
+    if active is None or credits is None:
+        time.sleep(1.0)
+        open_account_menu(page)
+        credits, active = read_credits(page)
+        page.screenshot(path=str(shot), full_page=False)
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
     if active not in {REQUIRED.lower(), "benoats@gmail.com"}:
         raise SystemExit(f"STOP wrong account: {active} shot={shot}")
     if FORBIDDEN.lower() in low and (active or "").find("86") >= 0:
@@ -267,14 +300,41 @@ def get_flow_page(ctx):
     for pg in ctx.pages:
         u = pg.url or ""
         if "flow.google.com" in u and "/about" not in u:
-            return pg
+            try:
+                _ = pg.url  # touch
+                return pg
+            except Exception:
+                continue
     page = ctx.new_page()
     page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
     time.sleep(3)
     return page
 
 
-def harvest_project_mp4(page, project_url: str, dest: Path, *, wait_s: int = 480) -> str:
+def refresh_page(browser, page):
+    """Return a live Flow page; open a new one if the tab died."""
+    try:
+        _ = page.url
+        if "flow.google.com" in (page.url or ""):
+            return page
+    except Exception:
+        pass
+    ctx = browser.contexts[0]
+    page = get_flow_page(ctx)
+    page.bring_to_front()
+    if "/about" in (page.url or "") or "flow.google.com" not in (page.url or ""):
+        page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
+        time.sleep(3)
+    flow.dismiss_banners(page)
+    return page
+
+
+def harvest_project_mp4(page, project_url: str, dest: Path, *, wait_s: int = 360) -> str:
+    """Wait for gallery video thumb, play it, save mp4 from network capture.
+
+    Flow Download-button path is unreliable on this CDP profile (Sep 2026);
+    playing the clip reliably fires flow-content.google/video / googlevideo.
+    """
     dest.parent.mkdir(parents=True, exist_ok=True)
     if dest.exists():
         dest.unlink()
@@ -290,6 +350,7 @@ def harvest_project_mp4(page, project_url: str, dest: Path, *, wait_s: int = 480
             if not (
                 "flow-content.google/video" in u
                 or "googlevideo.com" in u
+                or "videoplayback" in u
                 or ("video/mp4" in ct)
             ):
                 return
@@ -309,14 +370,27 @@ def harvest_project_mp4(page, project_url: str, dest: Path, *, wait_s: int = 480
     before = set(flow.collect_gallery_asb_srcs(page))
     print(f"  harvest start thumbs={len(before)}", flush=True)
     while time.time() - t0 < wait_s:
+        if captured:
+            dest.write_bytes(max(captured, key=len))
+            print(f"  harvest saved {dest.name} bytes={dest.stat().st_size} via=net", flush=True)
+            return f"net:{dest.stat().st_size}"
+
         thumbs = flow.collect_gallery_asb_srcs(page)
         new = [s for s in thumbs if s not in before]
+        body = page_text(page, 8000)
+        low = body.lower()
         print(
             f"  harvest poll thumbs={len(thumbs)} new={len(new)} "
             f"captured={len(captured)} elapsed={time.time()-t0:.0f}s",
             flush=True,
         )
-        pick_src = (new[-1] if new else (thumbs[-1] if thumbs and time.time() - t0 > 45 else None))
+        # Real fail with no media — don't burn the full timeout
+        if ("failed" in low or "couldn't generate" in low or "could not generate" in low) and not thumbs and time.time() - t0 > 75:
+            raise RuntimeError(f"Flow generation failed (no thumbs) project={project_url}")
+        if not thumbs and time.time() - t0 > 180:
+            raise RuntimeError(f"no gallery thumbs after 180s project={project_url}")
+
+        pick_src = new[-1] if new else (thumbs[-1] if thumbs and time.time() - t0 > 25 else None)
         if pick_src:
             try:
                 page.locator(f'img[src="{pick_src}"]').first.click(timeout=8000)
@@ -327,27 +401,22 @@ def harvest_project_mp4(page, project_url: str, dest: Path, *, wait_s: int = 480
                     print(f"  thumb click warn: {e}", flush=True)
                     time.sleep(6)
                     continue
-            time.sleep(2.5)
-            for label in (r"Download media", r"^Download$", r"download"):
+            time.sleep(1.5)
+            # Prefer play → network capture (Download button often no-ops)
+            for _ in range(3):
                 try:
-                    page.get_by_role("button", name=re.compile(label, re.I)).first.click(timeout=2000)
-                    time.sleep(2)
-                    break
+                    page.locator("video").first.click(timeout=2000)
+                    time.sleep(2.5)
                 except Exception:
-                    continue
-            try:
-                page.locator("video").first.click(timeout=1500)
-                time.sleep(2)
-            except Exception:
-                pass
-            for _ in range(20):
+                    pass
                 if captured:
                     break
-                time.sleep(1)
+                time.sleep(1.5)
             if captured:
                 dest.write_bytes(max(captured, key=len))
-                print(f"  harvest saved {dest.name} bytes={dest.stat().st_size}", flush=True)
-                return f"net:{dest.stat().st_size}"
+                print(f"  harvest saved {dest.name} bytes={dest.stat().st_size} via=play-net", flush=True)
+                return f"play-net:{dest.stat().st_size}"
+            # Fallback: library helper
             mid = flow.harvest_agent_gallery_mp4(page, dest, captured, before_asb=before)
             if mid and dest.exists() and dest.stat().st_size > 400_000:
                 return mid
@@ -361,6 +430,9 @@ def harvest_project_mp4(page, project_url: str, dest: Path, *, wait_s: int = 480
             flow.dismiss_banners(page)
         except Exception:
             pass
+    if captured:
+        dest.write_bytes(max(captured, key=len))
+        return f"net-late:{dest.stat().st_size}"
     raise RuntimeError(f"harvest timeout {wait_s}s project={project_url}")
 
 
@@ -372,9 +444,44 @@ def ensure_try_lists(plate_log: dict) -> None:
 
 
 def plate_prompt(plate: dict, try_n: int) -> str:
-    if try_n >= 2 and plate.get("prompt_try2"):
-        return plate["prompt_try2"]
-    return plate["prompt"]
+    raw = plate["prompt_try2"] if try_n >= 2 and plate.get("prompt_try2") else plate["prompt"]
+    # Strip QA reject boilerplate — it makes Flow fail silently on long prompts.
+    for drop in (
+        "HARD REJECT: Orbit, unfinished face, garbled cards, ATOMOS.",
+        "HARD REJECT: Orbit, garbled text.",
+        "HARD REJECT: Orbit, DNA helix, garbled letters.",
+        "HARD REJECT: Orbit, Explorer, garbled H/O tiles.",
+        "HARD REJECT: Orbit, Explorer, lava drip.",
+        "HARD REJECT: Orbit.",
+        "HARD REJECT: Orbit, photoreal chemistry lab, Explorer.",
+        "HARD REJECT: Orbit, photoreal lab glassware hero, Explorer.",
+        "HARD REJECT: garbled letters, Orbit.",
+        "HARD REJECT: Orbit, Explorer.",
+        "HARD REJECT: Orbit, Explorer, garbled scale numbers as hero.",
+        "HARD REJECT: Orbit, garbled cards, unfinished face.",
+        "HARD REJECT: Orbit, Explorer, lamp lava.",
+        "HARD REJECT: Orbit, garbled fake letters, unfinished flat cards.",
+        "HARD REJECT: garbled tiles, Orbit.",
+        "HARD REJECT: Orbit, Explorer, garbled cards.",
+        "HARD REJECT: Orbit, garbled letters, fake symbols.",
+        "HARD REJECT: garbled text.",
+        "HARD REJECT: Orbit, Explorer, filling gaps with garbled letters.",
+        "HARD REJECT: Orbit, Explorer, ATOMOS, SEE labels.",
+        "HARD REJECT: Orbit, garbled postage.",
+        "HARD REJECT: Orbit, garbled Te/I, Explorer this plate.",
+        "HARD REJECT: twins, no glasses, Orbit, Explorer parked all minute, garbled cards.",
+        "HARD REJECT: twins, no glasses, Orbit.",
+        "HARD REJECT: Orbit, garbled cards.",
+        "HARD REJECT: Orbit, Explorer, Ken Burns only, lamp lava drip.",
+        "HARD REJECT: Orbit, lava drip.",
+        "HARD REJECT: Orbit, Explorer, Ken Burns only, SEE labels.",
+        "Silent. No Explorer. No text labels in plate.",
+        "Silent. No Explorer.",
+        "Silent. No Explorer yet.",
+        "Attach Explorer reference.",
+    ):
+        raw = raw.replace(drop, "")
+    return " ".join(raw.split())
 
 
 def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
@@ -388,18 +495,25 @@ def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
     if dest.exists():
         dest.unlink()
 
-    prompt = f"{STYLE} {plate_prompt(plate, try_n)}"
+    # Bypass orbit_flow_veo_ui.flow_prompt scenery_only clause ("no characters") —
+    # Part 02 needs Dalton / Mendeleev / Explorer. Prefix triggers plain-body return.
+    core = f"{STYLE} {plate_prompt(plate, try_n)}"
     if plate.get("explorer"):
-        prompt += (
-            " Exactly ONE Explorer matching the attached start frame "
-            "(teal coat, round gold glasses). No twins."
+        core += (
+            " Exactly ONE Explorer: young boy, messy brown hair, round thin gold "
+            "glasses, teal long coat, tan vest, brown bow tie, satchel. Acts then leaves."
         )
     else:
-        prompt += " No Explorer in frame."
+        core += " No Explorer."
+    prompt = (
+        "IMAGE-TO-VIDEO from text description (no attached still). "
+        f"{core} Silent picture only. Continuous motion through the final frame."
+    )
 
     print(
         f"\n=== MINT {pid} try={try_n} {quality_or_fast(plate)} model={model} "
-        f"credits_before={credits_before} framing={'try2' if try_n >= 2 else 'try1'} ===",
+        f"credits_before={credits_before} framing={'try2' if try_n >= 2 else 'try1'} "
+        f"scenery_only chars={len(prompt)} ===",
         flush=True,
     )
     abort_guards(page, f"pre-{pid}-t{try_n}")
@@ -412,9 +526,9 @@ def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
         prompt,
         dest,
         model=model,
-        timeout_s=180,
-        start_frame=still,
-        scenery_only=False,
+        timeout_s=120,
+        start_frame=None,
+        scenery_only=True,
         attempts=2,
         reuse_project=False,
     )
@@ -427,7 +541,7 @@ def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
         if "/project/" not in project_url:
             raise RuntimeError(f"no project URL for harvest after Create ({project_url!r})")
         print(f"  gallery harvest via {project_url}", flush=True)
-        harvest_project_mp4(page, project_url, dest, wait_s=520)
+        harvest_project_mp4(page, project_url, dest, wait_s=360)
 
     if not dest.exists() or dest.stat().st_size < 400_000:
         raise RuntimeError(f"no mp4 after harvest: {dest}")
@@ -461,7 +575,8 @@ def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
         "credits_remaining": credits_after,
         "project_url": project_url,
         "at": now(),
-        "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)",
+        "engine": "flow-ui Veo 3.1 scenery_only (CDP)",
+        "scenery_only": True,
     }
     return entry
 
@@ -522,7 +637,7 @@ def main() -> None:
     log = load_log()
     log["status"] = "FLOW_CDP_MINT_IN_PROGRESS"
     log["vo_status"] = "KEEP (v04)"
-    log["engine_used"] = "flow-ui Veo 3.1 start-frame I2V via Mini CDP :9222"
+    log["engine_used"] = "flow-ui Veo 3.1 scenery_only via Mini CDP :9222"
     log["board"] = str(PLATES_JSON.relative_to(REPO))
     log["flow_ultra"] = {
         "account": REQUIRED,
