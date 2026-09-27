@@ -40,7 +40,7 @@ One long (7–9 min) on Thursday at 18:00 UK as a **normal publish, never a Prem
 - **Titles:** hashtags, suffixes, hedged claims, or a copy of a live title.
 - **Links:** `/go/` or a pinned comment on a Short; `/go/` on a long that doesn't name the product.
 - **Picture:** the Orbit robot; Omni, Seedance, Kling or ElevenLabs Image & Video; Veo Fast on fragile light; paint-patching; "same DNA" in a prompt; Ken Burns when Flow is capped.
-- **Voice:** anything but Ben Orbit Narrator; a video model's speech.
+- **Voice:** anything but Ben Orbit Narrator; a video model's speech; changing a word of the signed-off script; `atempo` above 1.06. Run `tools/vo_check.py` on every take.
 - **TikTok:** any upload while `TikTok/TIKTOK_UPLOAD_BLOCK.json` is paused.
 - **Secrets:** printing or committing them.
 

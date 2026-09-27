@@ -50,9 +50,11 @@ cd 07_Content-Ops && npm run youtube:package -- --package <…/11_Upload-Package
 cd 07_Content-Ops && npx tsx --env-file=.env scripts/retitle-videos.ts --file <fixes.json> --dry-run
 cd 07_Content-Ops && npx tsx --env-file=.env scripts/update-pinned-comment.ts --dry-run
 python3 00_Brand/Channel-Setup/tools/weekly_public_audit.py          # every Monday
+python3 00_Brand/Channel-Setup/tools/public_search.py "<title>" "<angle>" --out <film>/11_Upload-Package/evidence_<date>_public_search.json
+python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_Script/<slug>_script_master_vNN.md [--part N]
 ```
 
-The Python tools need `ffmpeg`/`ffprobe` and Pillow. The YouTube scripts need `07_Content-Ops/.env` (see `.env.example`). Never print or commit its values.
+The Python tools need `ffmpeg`/`ffprobe` and Pillow; `vo_check.py` also uses `faster-whisper` for the word check. The YouTube scripts need `07_Content-Ops/.env` (see `.env.example`). Never print or commit its values.
 
 ## Stop and ask Ben at each of these points
 
@@ -87,7 +89,7 @@ The Python tools need `ffmpeg`/`ffprobe` and Pillow. The YouTube scripts need `0
   - Paint-patching a plate instead of reminting it.
   - "Same DNA" or "lab DNA" in a Veo prompt.
   - Ken Burns or a still push when Flow is capped. Wait for the reset.
-- **Voice:** a video model's speech as VO, or any voice other than Ben Orbit Narrator.
+- **Voice:** a video model's speech as VO, or any voice other than Ben Orbit Narrator; changing a word of the signed-off script in VO (regenerate the sentence instead); `atempo` above 1.06.
 - **TikTok:** upload or retry while it's paused.
 - **Secrets:** commit or print them.
 
