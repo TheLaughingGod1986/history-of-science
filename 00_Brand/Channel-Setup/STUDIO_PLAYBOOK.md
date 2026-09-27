@@ -96,7 +96,7 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 
 ### Speed and length (27 Sep 2026, from the HOS 004 takes)
 
-- **Speed:** `SPEED_BODY` 1.12 for Parts 02–05 and `SPEED_COLD_OPEN` 1.15 for Part 01 (`orbit_voice.py`). At the old 1.04 the narrator ran about 140 words a minute: 1,283 words took 8:58. `eleven_v3` honours the speed setting only partly (1.15 gave about 5% shorter, not 10%), so always measure the real take.
+- **Speed:** record every part at the base 1.04 (`orbit_voice.py`). `eleven_v3` ignores speed settings above 1.04 (reported while generating the HOS 004 v03/v04 takes; corrected 27 Sep 2026, the earlier 1.12/1.15 rule is withdrawn). At 1.04 the narrator runs about 140–155 words a minute, so length is fixed after recording, with the steps below. Always measure the real take.
 - **Target:** the full VO about 8:15–8:30 for a 1,200–1,300-word script, so the film with end card and end screen stays inside 9 minutes. The title question lands as close to 0:08 as the text allows.
 - **If a take runs long,** fix it in this order and say which you used:
   1. trim pauses over 0.6 s to about 0.6 s (not the part joins);
