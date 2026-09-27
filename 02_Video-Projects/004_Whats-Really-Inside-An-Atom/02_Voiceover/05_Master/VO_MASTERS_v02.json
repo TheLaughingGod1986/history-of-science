@@ -1,0 +1,78 @@
+{
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "version": "v02",
+  "route": "breath_tighten_from_v01 + 0.35s beat before 'count'",
+  "note": "eleven_v3 ignored speed (EL attempt 9:19 > v01 8:56). Fallback: cap silences to 0.60s on v01. Inserted 0.35s silence before 'count' for clarity. No atempo.",
+  "elevenlabs_speed_attempt_total_s": 559.76,
+  "v01_total_s": 536.16,
+  "keep_silence_s": 0.6,
+  "atempo": null,
+  "count_beat_insert_s": 0.35,
+  "total_duration_s": 510.212,
+  "title_question_s": 9.04,
+  "dalton_check": "PASS \u2014 STT: 'Then Dalton gave each kind a weight' (not 'kind of')",
+  "its_a_count_check": "PASS \u2014 STT 'it's a count' (not account); 0.48s gap a\u2192count after 0.35s silence insert",
+  "listen_mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_vo_all_parts_listen_v02.mp3",
+  "listen_mp3_sha256": "48b04b75fcc653f133a6684dd5cb2dcf893fd54e6d7f94903ee15d4c224970ae",
+  "listen_wav_sha256": "ffe51f1a5db45f87742a034602c5e1d8795adefe4d16ef6fe9d57d7f79481ca9",
+  "parts": [
+    {
+      "part": "01",
+      "start_s": 0.0,
+      "duration_s": 71.762,
+      "mean_db": -23.6,
+      "peak_db": -3.9,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v02.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v02.wav",
+      "mp3_sha256": "8a30d3aea460e425e14fd92bb5432c4b85cec812ea2d8f253ceb7d3de8536f62",
+      "wav_sha256": "5c18719b413b55cbcd64e4893841a0e7685a66a32bfc8401f09685612dd6f208"
+    },
+    {
+      "part": "02",
+      "start_s": 71.762,
+      "duration_s": 93.097,
+      "mean_db": -21.8,
+      "peak_db": -3.8,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part02_vo_v02.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part02_vo_v02.wav",
+      "mp3_sha256": "20a407be43a632c604a752263b69ea126130f9c2cb6dc5af0915ed94b3e11335",
+      "wav_sha256": "ba857fafbfd06f1974907cf768a741ad9ad391288daa2a29f37d40f0e48d293a"
+    },
+    {
+      "part": "03",
+      "start_s": 164.858,
+      "duration_s": 85.835,
+      "mean_db": -23.2,
+      "peak_db": -3.8,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part03_vo_v02.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part03_vo_v02.wav",
+      "mp3_sha256": "cf5848379a5ffc43128cccb013d5b92b1a702e37ee2a0e18b6100040d64be349",
+      "wav_sha256": "d821949adfef55c0169cc714f75a7f9b87d10ce176339c3250af32bada3267d6"
+    },
+    {
+      "part": "04",
+      "start_s": 250.693,
+      "duration_s": 111.561,
+      "mean_db": -24.5,
+      "peak_db": -3.8,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part04_vo_v02.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part04_vo_v02.wav",
+      "mp3_sha256": "c18a83b04319d566aaad557e75fe5d54bcf671feae1668d22046994dc7cab14b",
+      "wav_sha256": "4443003f0182acfaa8bfcb7c1cd9833de759a9d32edba8951cbc1fb07ad5562d"
+    },
+    {
+      "part": "05",
+      "start_s": 362.254,
+      "duration_s": 147.957,
+      "mean_db": -24.1,
+      "peak_db": -4.1,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part05_vo_v02.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part05_vo_v02.wav",
+      "mp3_sha256": "9c853d06df24e67fd6873f7b276591a8f4a5e1327957dc0fa85c150c02aeba27",
+      "wav_sha256": "486223acd9fcd03a79d4a3fc96bfa9594fc72994e7c3c6141a2f728b532e8e59"
+    }
+  ],
+  "title_question_source": "scribe_v2 STT on part01 breath-tightened v02 (EL align was from failed speed mint \u2014 ignore)",
+  "total_mmss": "8:30",
+  "loudness_note": "means \u221221.8\u2026\u221224.5 (spread 2.7 dB); peaks \u22123.8\u2026\u22124.1; no in-part silences >1.0s @ \u221240dB"
+}

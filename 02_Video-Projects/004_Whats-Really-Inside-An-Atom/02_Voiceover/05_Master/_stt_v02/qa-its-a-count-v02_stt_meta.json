@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-27T09:16:42.942139+00:00",
+  "audio": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/_qa_its_a_count_v02.wav",
+  "model_id": "scribe_v2",
+  "language_code": "eng",
+  "status": "generated",
+  "files": {
+    "raw_json": "qa-its-a-count-v02_stt_raw.json",
+    "transcript": "qa-its-a-count-v02_transcript.txt",
+    "srt": "qa-its-a-count-v02.srt"
+  },
+  "duration_seconds": 3.5,
+  "word_count": 7
+}
