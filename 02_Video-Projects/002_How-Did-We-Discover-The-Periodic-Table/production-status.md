@@ -1,6 +1,6 @@
 # Production status — 002 How Did We Discover the Periodic Table?
 
-## Live (checked 25 Sep 2026 on the public channel)
+## Live (updated 27 Sep 2026)
 
 | Asset | Id | State |
 |---|---|---|
@@ -10,6 +10,20 @@
 | Short *Gallium sat where the table said* | `CnHwX1L9XHg` | Public |
 | Short *Why tellurium sat before iodine* | `nba0-f7PPeU` | Public |
 | Short *What other table has empty chairs?* | `LanTHJckYx8` | Public |
+
+### Title + thumbnail A/B/C (Studio Test & Compare)
+
+| Field | Value |
+|---|---|
+| Test | **Title and thumbnail** · RUNNING |
+| Started | Sun **2026-09-27 18:49** Europe/London (Showrunner verified 18:49:35) |
+| Studio ETA | ~13d 23h remaining → about **Sun 11 Oct 2026** |
+| V1 (control) | *How Did We Discover the Periodic Table?* · thumb A gallium live v02 |
+| V2 | *Why Did Mendeleev Leave Gaps in the Periodic Table?* · thumb B v03 HE PREDICTED THIS |
+| V3 | *Mendeleev's Periodic Table: The Elements He Predicted* · thumb C v05 LEFT EMPTY ON PURPOSE |
+| Description | v02 live on watch page · 5 chapters detected · old backup `~/hos002ab/desc_old_backup.txt` |
+| Pack | `11_Upload-Package/AB_TEST_2026-09-27.md` · `PACKAGE_MANIFEST.json` |
+| Rule | **Do not judge before ~500 impressions per variant.** Film file locked — no Replace / remint. |
 
 The film is finished and live. Do not remint or re-upload. The board below is the build history (last updated 9 Sep); any "blocked" or "next" line in it is stale.
 
