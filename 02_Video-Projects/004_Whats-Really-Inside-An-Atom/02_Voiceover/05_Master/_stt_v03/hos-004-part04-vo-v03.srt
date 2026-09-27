@@ -1,0 +1,151 @@
+1
+00:00:00,080 --> 00:00:03,540
+Manchester, 1909. Ernest Rutherford has a
+
+2
+00:00:03,620 --> 00:00:07,300
+new kind of bullet. Alpha particles, tiny
+
+3
+00:00:07,320 --> 00:00:10,420
+and fast, thrown out by radioactive rocks.
+
+4
+00:00:11,060 --> 00:00:13,420
+His assistant, Hans Geiger, and a young
+
+5
+00:00:13,540 --> 00:00:16,420
+student called Ernest Marsden fire them at
+
+6
+00:00:16,480 --> 00:00:19,220
+gold beaten thinner than paper. Picture
+
+7
+00:00:19,260 --> 00:00:21,840
+yourself in that room. The lights are off,
+
+8
+00:00:22,120 --> 00:00:23,960
+and you sit in the dark until your eyes
+
+9
+00:00:24,000 --> 00:00:26,740
+adjust. You look through a microscope at a
+
+10
+00:00:26,800 --> 00:00:29,760
+small screen. Each time a particle hits
+
+11
+00:00:29,860 --> 00:00:32,960
+it, you see a tiny green flash, and you
+
+12
+00:00:33,040 --> 00:00:36,140
+count it. Now, if Thompson's pudding is
+
+13
+00:00:36,200 --> 00:00:38,860
+right, every bullet should punch straight
+
+14
+00:00:38,920 --> 00:00:42,200
+through. Almost all of them do. But about
+
+15
+00:00:42,280 --> 00:00:46,080
+one in 8,000 bounces back. Rutherford said
+
+16
+00:00:46,120 --> 00:00:48,660
+it was as if you fired a huge shell at a
+
+17
+00:00:48,700 --> 00:00:51,100
+piece of tissue paper, and it came back
+
+18
+00:00:51,120 --> 00:00:55,020
+and hit you. Then, in 1911, he explains
+
+19
+00:00:55,100 --> 00:00:58,120
+it. Nearly all of an atom's mass is packed
+
+20
+00:00:58,180 --> 00:01:01,280
+into a tiny, positive center, which he
+
+21
+00:01:01,340 --> 00:01:04,700
+calls the nucleus. The electrons sit far
+
+22
+00:01:04,780 --> 00:01:07,380
+outside it. Everything in between is
+
+23
+00:01:07,480 --> 00:01:10,940
+almost empty. How empty? Imagine you are
+
+24
+00:01:11,020 --> 00:01:12,440
+standing in the middle of a football
+
+25
+00:01:12,540 --> 00:01:15,560
+stadium holding a pea. If the atom were
+
+26
+00:01:15,600 --> 00:01:18,080
+the whole stadium, the nucleus would be
+
+27
+00:01:18,140 --> 00:01:20,740
+that pea. The electrons would be somewhere
+
+28
+00:01:20,820 --> 00:01:23,740
+out past the back row of seats. Everything
+
+29
+00:01:23,820 --> 00:01:26,920
+else, all around you, is nothing at all.
+
+30
+00:01:27,600 --> 00:01:30,140
+That raised a new question. If every
+
+31
+00:01:30,280 --> 00:01:33,280
+element has its own nucleus, what makes
+
+32
+00:01:33,340 --> 00:01:35,840
+one nucleus different from another? A
+
+33
+00:01:35,880 --> 00:01:38,080
+Dutch lawyer and amateur scientist,
+
+34
+00:01:38,420 --> 00:01:41,460
+Antonius Van den Broek, had a bold guess.
+
+35
+00:01:42,140 --> 00:01:44,660
+An element's place in the table might
+
+36
+00:01:44,740 --> 00:01:47,240
+equal the positive charge in its nucleus.
+
+37
+00:01:47,940 --> 00:01:50,560
+It was a brilliant guess, but nobody could
+
+38
+00:01:50,600 --> 00:01:52,240
+measure it, yet
