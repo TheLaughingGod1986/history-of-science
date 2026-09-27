@@ -1,0 +1,388 @@
+{
+  "status": "STOPPED",
+  "stopped_at": "2026-09-27T13:11:28.020645+00:00",
+  "stop_reason": "Ben 27 Sep 14:10 UK \u2014 no more Flow/Veo spend on Part 01 until Ben KEEP on VO. Mid-flight: none (batch already finished).",
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "part": "01",
+  "vo_status": "PENDING BEN LISTEN (v04) \u2014 not KEEP. Hold notes: 7:39 each kind a weight \u00b7 6:06 a living hand \u00b7 3:38 But atoms",
+  "flow_ultra": {
+    "account": "benoats@googlemail.com",
+    "profile": "~/.playwright-hos-flow-profile",
+    "result": "BLOCKED \u2014 Insufficient credits (Fast + Lite + Quality). 0 Flow clips landed."
+  },
+  "engine_used": "gemini-api-veo start-frame I2V (Flow Ultra fallback only). Stills: gemini-2.5-flash-image.",
+  "summary": {
+    "keep": 10,
+    "fail_or_missing": 7,
+    "total_board_plates": 17
+  },
+  "plates": {
+    "01_coin_halves": {
+      "id": "01_coin_halves",
+      "status": "KEEP",
+      "tries": 1,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "KEEP",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "motion_ok scene_hits=4 dur=8.00s"
+        }
+      ],
+      "model_keep": "veo-3.1-lite-generate-preview",
+      "quality_or_fast": "Fast/Lite (veo-3.1-lite-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/01_coin_halves_v01.mp4",
+      "sha256": "12ded4f11b9ae1076dc5dfb34d62f3dbfe78b12b7cd050cad5d5e71abf067ff2",
+      "duration_s": 8.0,
+      "bytes": 1711123,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/01_coin_halves_v01.jpg",
+      "start_frame_sha256": "103f93aef65af319c1a06b8a8b125709cf743e2819555d8a45086d611211625d",
+      "note": "motion_ok scene_hits=4 dur=8.00s"
+    },
+    "02_atom_answer": {
+      "id": "02_atom_answer",
+      "status": "KEEP",
+      "tries": 1,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "KEEP",
+          "model": "veo-3.1-generate-preview",
+          "note": "motion_ok scene_hits=7 dur=8.00s"
+        }
+      ],
+      "model_keep": "veo-3.1-generate-preview",
+      "quality_or_fast": "Quality (veo-3.1-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/02_atom_answer_v01.mp4",
+      "sha256": "b197bf1ffb498ebe5919e78294f5ac7be47107eeaa9dc94d8cb3ebb91dcbfca2",
+      "duration_s": 8.0,
+      "bytes": 4045916,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/02_atom_answer_v01.jpg",
+      "start_frame_sha256": "19bb79c99e314a8de54b744a58fc7753d8b0a6e7ca8409c4ef3cd06ffc074bae",
+      "note": "motion_ok scene_hits=7 dur=8.00s"
+    },
+    "03_atom_turns": {
+      "id": "03_atom_turns",
+      "status": "KEEP",
+      "tries": 1,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "KEEP",
+          "model": "veo-3.1-generate-preview",
+          "note": "motion_ok scene_hits=4 dur=8.00s"
+        }
+      ],
+      "model_keep": "veo-3.1-generate-preview",
+      "quality_or_fast": "Quality (veo-3.1-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/03_atom_turns_v01.mp4",
+      "sha256": "2db2051a73ce1c007883344a33cdb5e902f53ef9faee175a4a13eb01e1d598bf",
+      "duration_s": 8.0,
+      "bytes": 2986412,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/03_atom_turns_v01.jpg",
+      "start_frame_sha256": "3c4e47473e4df1d76fa63e04b31cf047cbe2ffc12056b1b07a25d4497c2e516b",
+      "note": "motion_ok scene_hits=4 dur=8.00s"
+    },
+    "04_table_slams": {
+      "id": "04_table_slams",
+      "status": "KEEP",
+      "tries": 1,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "KEEP",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "motion_ok scene_hits=10 dur=8.00s"
+        }
+      ],
+      "model_keep": "veo-3.1-lite-generate-preview",
+      "quality_or_fast": "Fast/Lite (veo-3.1-lite-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/04_table_slams_v01.mp4",
+      "sha256": "f6356d15de4a84b4d47ed6d630439eb4feb2f9d6c2fe739c3e35379e37de4d6c",
+      "duration_s": 8.0,
+      "bytes": 2304799,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/04_table_slams_v01.jpg",
+      "start_frame_sha256": "029cf3beaefed96576014ff1a73781bace0ca4b033a94cd0257ed87fa2b6d636",
+      "note": "motion_ok scene_hits=10 dur=8.00s"
+    },
+    "05_hand_tap_te_i": {
+      "id": "05_hand_tap_te_i",
+      "status": "KEEP",
+      "tries": 3,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "FAIL",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "near-still scene_hits=1"
+        },
+        {
+          "try": 2,
+          "status": "FAIL",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "near-still scene_hits=1"
+        },
+        {
+          "try": 3,
+          "status": "FAIL",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "near-still scene_hits=1"
+        }
+      ],
+      "model_keep": "veo-3.1-lite-generate-preview",
+      "quality_or_fast": "Fast/Lite (veo-3.1-lite-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/05_hand_tap_te_i_v01.mp4",
+      "sha256": "6dc96067a51da30759c87ea07a593ecdf15ca376ac5cb75b265fa17b3be7279f",
+      "duration_s": 8.0,
+      "bytes": 1442168,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/05_hand_tap_te_i_v01.jpg",
+      "start_frame_sha256": "07139fe48861fdd842e5662d3974ca1e5a57b50c81195d9ed06ebdc2f132c1c6",
+      "note": null
+    },
+    "06_scale_tips": {
+      "id": "06_scale_tips",
+      "status": "KEEP",
+      "tries": 3,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "FAIL",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "near-still scene_hits=1"
+        },
+        {
+          "try": 2,
+          "status": "FAIL",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "near-still scene_hits=1"
+        },
+        {
+          "try": 3,
+          "status": "FAIL",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "near-still scene_hits=1"
+        }
+      ],
+      "model_keep": "veo-3.1-lite-generate-preview",
+      "quality_or_fast": "Fast/Lite (veo-3.1-lite-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/06_scale_tips_v01.mp4",
+      "sha256": "b81cd73f98c9d813ba42ea3740f0435234decb6a816987f51cf8937775caaa16",
+      "duration_s": 8.0,
+      "bytes": 1960756,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/06_scale_tips_v01.jpg",
+      "start_frame_sha256": "4234be5ae5a83000016daac1371ff6cb3e34b38f2559f0cad606bada4c583ab7",
+      "note": null
+    },
+    "07_greek_atomos": {
+      "id": "07_greek_atomos",
+      "status": "KEEP",
+      "tries": 3,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "FAIL",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "near-still scene_hits=1"
+        },
+        {
+          "try": 2,
+          "status": "FAIL",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "near-still scene_hits=1"
+        },
+        {
+          "try": 3,
+          "status": "FAIL",
+          "model": "veo-3.1-lite-generate-preview",
+          "note": "exception ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. "
+        }
+      ],
+      "model_keep": "veo-3.1-lite-generate-preview",
+      "quality_or_fast": "Fast/Lite (veo-3.1-lite-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/07_greek_atomos_v01.mp4",
+      "sha256": "7fb59619f74490f2eadf1306faa6d02c9a2a8c05ff8944ab59dd665557e4bf2e",
+      "duration_s": 8.0,
+      "bytes": 2081965,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/07_greek_atomos_v01.jpg",
+      "start_frame_sha256": "8fd94cd9dad7ff59b52bad9aeaa7efe8539de09061fec616660617bff2228f09",
+      "note": null
+    },
+    "08_smallest_uncuttable": {
+      "id": "08_smallest_uncuttable",
+      "status": "FAIL",
+      "tries": 0,
+      "try_detail": [],
+      "model_keep": null,
+      "quality_or_fast": "\u2014",
+      "file": null,
+      "sha256": null,
+      "duration_s": null,
+      "bytes": null,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/08_smallest_uncuttable_v01.jpg",
+      "start_frame_sha256": "3c3f0e72b6cda06d82e181b8e1efe65da8a3fa5cc025aec2e10ed28b6e840751",
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+    },
+    "09_uncuttable_blur": {
+      "id": "09_uncuttable_blur",
+      "status": "FAIL",
+      "tries": 0,
+      "try_detail": [],
+      "model_keep": null,
+      "quality_or_fast": "\u2014",
+      "file": null,
+      "sha256": null,
+      "duration_s": null,
+      "bytes": null,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/09_uncuttable_blur_v01.jpg",
+      "start_frame_sha256": "735a90ec9c8db62920832f8022859e9cab09c879b0c33d582062f2f735fc3eed",
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+    },
+    "10_electron_tube": {
+      "id": "10_electron_tube",
+      "status": "KEEP",
+      "tries": 1,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "KEEP",
+          "model": "veo-3.1-generate-preview",
+          "note": "motion_ok scene_hits=4 dur=8.00s"
+        }
+      ],
+      "model_keep": "veo-3.1-generate-preview",
+      "quality_or_fast": "Quality (veo-3.1-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/10_electron_tube_v01.mp4",
+      "sha256": "8adcd0e8eedd240ecac04dd72f8a0c2eaf832fbd45f231ecec1a5f22a0c0ba56",
+      "duration_s": 8.0,
+      "bytes": 3649517,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/10_electron_tube_v01.jpg",
+      "start_frame_sha256": "6c6e85b6c4b37d6bc80c9bc4a47ca08cf2d9d5a2dca8acc0e644b88d370922d8",
+      "note": "motion_ok scene_hits=4 dur=8.00s"
+    },
+    "11_gold_foil_bounce": {
+      "id": "11_gold_foil_bounce",
+      "status": "FAIL",
+      "tries": 0,
+      "try_detail": [],
+      "model_keep": null,
+      "quality_or_fast": "\u2014",
+      "file": null,
+      "sha256": null,
+      "duration_s": null,
+      "bytes": null,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/11_gold_foil_bounce_v01.jpg",
+      "start_frame_sha256": "b7911420dd8c6d8b7a5e772ec4baa022608223d18efc630a2ead19179b6bffa8",
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+    },
+    "12_1913_targets": {
+      "id": "12_1913_targets",
+      "status": "KEEP",
+      "tries": 2,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "FAIL",
+          "model": "veo-3.1-generate-preview",
+          "note": "near-still scene_hits=1"
+        },
+        {
+          "try": 2,
+          "status": "KEEP",
+          "model": "veo-3.1-generate-preview",
+          "note": "motion_ok scene_hits=4 dur=8.00s"
+        }
+      ],
+      "model_keep": "veo-3.1-generate-preview",
+      "quality_or_fast": "Quality (veo-3.1-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/12_1913_targets_v01.mp4",
+      "sha256": "c9cd2506985d3427411f97ed62ebd23e0e717261d94a20ffdcc89f72b4558202",
+      "duration_s": 8.0,
+      "bytes": 3379309,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/12_1913_targets_v01.jpg",
+      "start_frame_sha256": "971812b892abbf46aebcf1e0e8889841a39b312075fd495681ef727c7ba18044",
+      "note": "motion_ok scene_hits=4 dur=8.00s"
+    },
+    "13_numbered_cards": {
+      "id": "13_numbered_cards",
+      "status": "KEEP",
+      "tries": 1,
+      "try_detail": [
+        {
+          "try": 1,
+          "status": "KEEP",
+          "model": "veo-3.1-generate-preview",
+          "note": "motion_ok scene_hits=4 dur=8.00s"
+        }
+      ],
+      "model_keep": "veo-3.1-generate-preview",
+      "quality_or_fast": "Quality (veo-3.1-generate-preview)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/13_numbered_cards_v01.mp4",
+      "sha256": "c77fd7601e00965c3f62980728df96d9adacf2a7e429a5629beb5bdf3f267709",
+      "duration_s": 8.0,
+      "bytes": 4382403,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/13_numbered_cards_v01.jpg",
+      "start_frame_sha256": "a09f1cf07803b561df248847fe10c122120bf632b7ef1a3e2e0daf6f64f63460",
+      "note": "motion_ok scene_hits=4 dur=8.00s"
+    },
+    "14_te_i_pullback": {
+      "id": "14_te_i_pullback",
+      "status": "FAIL",
+      "tries": 0,
+      "try_detail": [],
+      "model_keep": null,
+      "quality_or_fast": "\u2014",
+      "file": null,
+      "sha256": null,
+      "duration_s": null,
+      "bytes": null,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/14_te_i_pullback_v01.jpg",
+      "start_frame_sha256": "c1896c114b7a58e3abf04a3acfbda7a78ea48b196562dd39f3a2e534bd3c1f6e",
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+    },
+    "15_knife_coin_return": {
+      "id": "15_knife_coin_return",
+      "status": "FAIL",
+      "tries": 0,
+      "try_detail": [],
+      "model_keep": null,
+      "quality_or_fast": "\u2014",
+      "file": null,
+      "sha256": null,
+      "duration_s": null,
+      "bytes": null,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/15_knife_coin_return_v01.jpg",
+      "start_frame_sha256": "8f1ecadd84b76768324a4a1c379b9ffc25fd098915d88a205b7e584120108588",
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+    },
+    "16_why_wrong_order": {
+      "id": "16_why_wrong_order",
+      "status": "FAIL",
+      "tries": 0,
+      "try_detail": [],
+      "model_keep": null,
+      "quality_or_fast": "\u2014",
+      "file": null,
+      "sha256": null,
+      "duration_s": null,
+      "bytes": null,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/16_why_wrong_order_v01.jpg",
+      "start_frame_sha256": "aaf2d429e8485b32247931896e916a6bf994d1702c68f5d75c2f438aef6de43a",
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+    },
+    "17_ledger_bridge": {
+      "id": "17_ledger_bridge",
+      "status": "FAIL",
+      "tries": 0,
+      "try_detail": [],
+      "model_keep": null,
+      "quality_or_fast": "\u2014",
+      "file": null,
+      "sha256": null,
+      "duration_s": null,
+      "bytes": null,
+      "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/17_ledger_bridge_v01.jpg",
+      "start_frame_sha256": "4e766a6e1479b80a763a43a35e0aff875751b33736697efe38dc3fc8a2668710",
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+    }
+  }
+}

@@ -33,6 +33,8 @@ If weight was the rule, the rule was broken, and nobody knew why.
 
 For two thousand years the atom was just an idea: the smallest piece, the one you can't cut.
 
+[VISUAL MUST: 0:32 — framing change: push in on the last chip; chisel slips — it will not cut; carved ATOMOS readable]
+
 [VISUAL MUST: 0:36 — the chip shrinks to a grey bead; the chisel slips off it, and a magnifying glass shows nothing but blur]
 
 Nobody had ever seen one.
