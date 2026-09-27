@@ -1,0 +1,191 @@
+{
+  "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part01_rough_v02.mp4",
+  "sha256": "b74ab21d3820ebcad62a2872c56f00fd37d0e2024474ee15b19c381f934d8050",
+  "duration_s": 69.813,
+  "video_stream_s": 69.8,
+  "audio_stream_s": 69.813,
+  "vo": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v04.wav",
+  "vo_duration_s": 69.813,
+  "fps": 30,
+  "size": "1920x1080",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part01_rough_v02.mp4",
+  "icloud_sha256": "b74ab21d3820ebcad62a2872c56f00fd37d0e2024474ee15b19c381f934d8050",
+  "kept_v01": true,
+  "v01_bug": "7.9s\u00d717\u2212xfade=128.7s picture vs 69.81s VO",
+  "reason": "v01 assembly error: `_assemble_part01_rough_v01.py` used hardcoded `CLIP_USE=7.9` per plate \u00d7 17 with 0.35s xfade \u2192 **128.7s** picture. VO v04 is **69.81s**; audio stream ended at VO while video kept playing (no black pad \u2014 full Veo clips). v02 cuts each plate to `part-01_plates_v02.json` `t_s` windows (hard concat, no freeze-pad) so A/V both \u224870s. v01 kept.",
+  "xfade": false,
+  "plates": [
+    {
+      "id": "01_coin_halves",
+      "file": "01_coin_halves_v01.mp4",
+      "sha256": "12ded4f11b9ae1076dc5dfb34d62f3dbfe78b12b7cd050cad5d5e71abf067ff2",
+      "window_t0": 0.0,
+      "window_t1": 4.627,
+      "window_s": 4.627,
+      "used_s": 4.633,
+      "vo_land": "Cut a gold coin in half. Then cut it again. And again."
+    },
+    {
+      "id": "02_atom_answer",
+      "file": "02_atom_answer_v01.mp4",
+      "sha256": "b197bf1ffb498ebe5919e78294f5ac7be47107eeaa9dc94d8cb3ebb91dcbfca2",
+      "window_t0": 4.627,
+      "window_t1": 9.254,
+      "window_s": 4.627,
+      "used_s": 4.633,
+      "vo_land": "How small can you go before it stops being gold?"
+    },
+    {
+      "id": "03_atom_turns",
+      "file": "03_atom_turns_v01.mp4",
+      "sha256": "2db2051a73ce1c007883344a33cdb5e902f53ef9faee175a4a13eb01e1d598bf",
+      "window_t0": 9.254,
+      "window_t1": 12.03,
+      "window_s": 2.776,
+      "used_s": 2.767,
+      "vo_land": "What's really inside an atom?"
+    },
+    {
+      "id": "04_table_slams",
+      "file": "04_table_slams_v01.mp4",
+      "sha256": "f6356d15de4a84b4d47ed6d630439eb4feb2f9d6c2fe739c3e35379e37de4d6c",
+      "window_t0": 12.03,
+      "window_t1": 16.657,
+      "window_s": 4.627,
+      "used_s": 4.633,
+      "vo_land": "By the end of this film you'll know why the periodic table is in the order it is, and how we proved it."
+    },
+    {
+      "id": "05_hand_tap_te_i",
+      "file": "05_hand_tap_te_i_v01.mp4",
+      "sha256": "6dc96067a51da30759c87ea07a593ecdf15ca376ac5cb75b265fa17b3be7279f",
+      "window_t0": 16.657,
+      "window_t1": 22.21,
+      "window_s": 5.553,
+      "used_s": 5.567,
+      "vo_land": "Because in 1869 the table had a secret problem. It was sorted by weight, and some elements refused to fit."
+    },
+    {
+      "id": "06_scale_tips",
+      "file": "06_scale_tips_v01.mp4",
+      "sha256": "b81cd73f98c9d813ba42ea3740f0435234decb6a816987f51cf8937775caaa16",
+      "window_t0": 22.21,
+      "window_t1": 27.762,
+      "window_s": 5.552,
+      "used_s": 5.567,
+      "vo_land": "If weight was the rule, the rule was broken, and nobody knew why."
+    },
+    {
+      "id": "07_greek_atomos",
+      "file": "07_greek_atomos_v01.mp4",
+      "sha256": "7fb59619f74490f2eadf1306faa6d02c9a2a8c05ff8944ab59dd665557e4bf2e",
+      "window_t0": 27.762,
+      "window_t1": 32.1,
+      "window_s": 4.338,
+      "used_s": 4.333,
+      "vo_land": "For two thousand years the atom was just an idea."
+    },
+    {
+      "id": "08_smallest_uncuttable",
+      "file": "08_smallest_uncuttable_v01.mp4",
+      "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+      "window_t0": 32.1,
+      "window_t1": 36.091,
+      "window_s": 3.991,
+      "used_s": 4.0,
+      "vo_land": "the smallest piece, the one you can't cut."
+    },
+    {
+      "id": "09_uncuttable_blur",
+      "file": "09_uncuttable_blur_v01.mp4",
+      "sha256": "39156158204bc77a4283d05d08184060f584370f45c0fbf561779229f2b05ff8",
+      "window_t0": 36.091,
+      "window_t1": 41.643,
+      "window_s": 5.552,
+      "used_s": 5.567,
+      "vo_land": "Nobody had ever seen one."
+    },
+    {
+      "id": "10_electron_tube",
+      "file": "10_electron_tube_v01.mp4",
+      "sha256": "8adcd0e8eedd240ecac04dd72f8a0c2eaf832fbd45f231ecec1a5f22a0c0ba56",
+      "window_t0": 41.643,
+      "window_t1": 47.196,
+      "window_s": 5.553,
+      "used_s": 5.567,
+      "vo_land": "Then, in a glowing glass tube, someone found a piece smaller than the atom."
+    },
+    {
+      "id": "11_gold_foil_bounce",
+      "file": "11_gold_foil_bounce_v01.mp4",
+      "sha256": "5436abd10fa19bdd0f48f69d1c6d56a02ae25de30598d8ae739ef309c3e9f437",
+      "window_t0": 47.196,
+      "window_t1": 52.748,
+      "window_s": 5.552,
+      "used_s": 5.567,
+      "vo_land": "Then a tiny bullet bounced back off a sheet of gold, as if it had hit a wall."
+    },
+    {
+      "id": "12_1913_targets",
+      "file": "12_1913_targets_v01.mp4",
+      "sha256": "c9cd2506985d3427411f97ed62ebd23e0e717261d94a20ffdcc89f72b4558202",
+      "window_t0": 52.748,
+      "window_t1": 57.375,
+      "window_s": 4.627,
+      "used_s": 4.633,
+      "vo_land": "And the final proof came from a young physicist with a beam of X-rays,"
+    },
+    {
+      "id": "13_numbered_cards",
+      "file": "13_numbered_cards_v01.mp4",
+      "sha256": "c77fd7601e00965c3f62980728df96d9adacf2a7e429a5629beb5bdf3f267709",
+      "window_t0": 57.375,
+      "window_t1": 61.077,
+      "window_s": 3.702,
+      "used_s": 3.7,
+      "vo_land": "who counted what was inside every element."
+    },
+    {
+      "id": "14_te_i_pullback",
+      "file": "14_te_i_pullback_v01.mp4",
+      "sha256": "6bcdc994f28d14e0c8f96c1936fa74b0ffef6eb163188f78f6a6d4fb23409420",
+      "window_t0": 61.077,
+      "window_t1": 63.853,
+      "window_s": 2.776,
+      "used_s": 2.767,
+      "vo_land": "Four people, one century,"
+    },
+    {
+      "id": "15_knife_coin_return",
+      "file": "15_knife_coin_return_v01.mp4",
+      "sha256": "234dfd7d2508cdb699fc5b09daaad34ff2188ba8da1fb40c2a0fc7c3c4dec7e4",
+      "window_t0": 63.853,
+      "window_t1": 66.63,
+      "window_s": 2.777,
+      "used_s": 2.767,
+      "vo_land": "and a question that started with a knife and a coin."
+    },
+    {
+      "id": "16_why_wrong_order",
+      "file": "16_why_wrong_order_v01.mp4",
+      "sha256": "e8be3d361b89da4a4f18ab67b7c156dda4ca6ede977833c012df41cd385881b6",
+      "window_t0": 66.63,
+      "window_t1": 68.48,
+      "window_s": 1.85,
+      "used_s": 1.867,
+      "vo_land": "So why was the table in the wrong order?"
+    },
+    {
+      "id": "17_ledger_bridge",
+      "file": "17_ledger_bridge_v01.mp4",
+      "sha256": "c4f8830b85f743869d2357fa12fabe657914efcab189de12623fe6e30addf41d",
+      "window_t0": 68.48,
+      "window_t1": 69.813,
+      "window_s": 1.333,
+      "used_s": 1.333,
+      "vo_land": "(bridge into Part 02 chapter card)"
+    }
+  ],
+  "cold_open_cuts_gt_6s": [],
+  "gaps": []
+}
