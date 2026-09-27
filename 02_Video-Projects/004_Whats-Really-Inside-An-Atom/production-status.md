@@ -12,8 +12,8 @@
 | Episode gate | Passed by Ben (manual), 26 Sep 2026 |
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
-| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Part 02 `mint: true` (20 plates, 4–6 s splits) · Parts 01/03–05 `mint: false` · Explorer ×3 (P02/P04/P05) · no SEE labels · no Explorer in first minute |
-| Picture | **Part 01 rough v05 PASS** (Ben, Sun 27 Sep 17:11 UK, in motion). Garbled jar “lpod” accepted. **Part 02 rough v01 READY for Ben UAT** — STOP; do not start Part 03. |
+| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–03 `mint: false` (03 rough v01 pending Ben) · 04/05 `mint: false` · Explorer used ×1 (P02); remaining P04/P05 · no Explorer in Part 03 |
+| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”). **Part 03 rough v01 READY for Ben UAT** — STOP; do not start Part 04. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
@@ -49,12 +49,12 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | Part | Film window | Chapter card | Plates | mint |
 |---|---|---|---|---|
 | 01 Cold open | 0:00–1:10 | none | 17 (split 07 at 0:32) | false (PASS) |
-| 02 The Table That Broke Its Own Rule | 1:10–2:41 | 1:10 · ~1.5 s | **20** (4–6 s splits) | false (rough v01) |
-| 03 The Crumb Inside the Atom | 2:41–4:05 | 2:41 · ~1.5 s | 8 | false |
+| 02 The Table That Broke Its Own Rule | 1:10–2:41 | 1:10 · ~1.5 s | **20** (4–6 s splits) | false (PASS) |
+| 03 The Crumb Inside the Atom | 2:41–4:05 | 2:41 · ~1.5 s | **19** (4–6 s splits) | false (rough v01) |
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Ben UAT Part 02 rough v01. Do not start Part 03 until he passes.
+**Next:** Ben UAT Part 03 rough v01. Do not start Part 04 until he passes.
 
 ---
 
@@ -74,21 +74,37 @@ iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/`
 
 ---
 
-## Part 02 rough UAT (27 Sep 2026) — PENDING Ben
+## Part 02 rough UAT (27 Sep 2026) — PASS
 
 | Cut | Duration | sha256 | Notes |
 |---|---|---|---|
-| `hos_004_part02_rough_v01.mp4` | **91.204 s** | `620ce51250028495a588f25967dddfaa9c6136dc4172c7b0ce1ee609f103f1d2` | 20 board windows · v04 VO · TEMP bed −20 dB sidechain · Flow Veo 3.1 scenery_only CDP |
+| `hos_004_part02_rough_v01.mp4` | **91.204 s** | `620ce51250028495a588f25967dddfaa9c6136dc4172c7b0ce1ee609f103f1d2` | 20 board windows · v04 VO · TEMP bed · Flow Veo 3.1 scenery_only CDP |
 
-**Mint:** Flow Ultra `benoats@googlemail.com` CDP :9222. Credits user-start **2502** → after **2162** (spent **340** incl. probes). KEEP **20**/20. Quality only on glow plate `19_table_breaks_rule`. Explorer plate `16_explorer_te_before_i` KEEP. Plate `09_mendeleev_desk` needed framing remint (named-Mendeleev prompts silent-failed; unnamed chemist desk KEEP).
+**Ben PASS Part 02 rough v01** — judged “best yet”. Do not remint Part 02 unless CoS sends a later FAIL with stills.
+
+**Mint record:** credits **2502 → 2162**. KEEP **20**/20. Explorer plate `16_explorer_te_before_i` used (film-wide 1 of 3). Named-Mendeleev Flow prompts silent-fail — describe people instead going forward.
 
 **Log:** `07_Edit-Project/PART02_MINT_LOG_v01.json`
 
 iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part02_rough_v01.mp4`
 
-**STOP for Ben.** Do not start Part 03.
+## Part 03 rough UAT (27 Sep 2026) — PENDING Ben
 
-### Ben UAT fixes → v04 (27 Sep 16:00 UK)
+| Cut | Duration | sha256 | Notes |
+|---|---|---|---|
+| `hos_004_part03_rough_v01.mp4` | **83.733 s** | `d62e0ed096ead8ec52666ca07476f973aeaae7635b70a16faaac45f14ec518e0` | 19 board windows · v04 VO · TEMP bed −20 dB sidechain · Flow Veo 3.1 scenery_only CDP |
+
+**Mint:** credits **2162 → 1162** (spent **1000**). Plate KEEP **19**/19 (plate 19 explosion framing remint after near-still FAILs). Quality on tube-glow plates. No Explorer. Unnamed physicist in prompts.
+
+**Log:** `07_Edit-Project/PART03_MINT_LOG_v01.json`
+
+iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part03_rough_v01.mp4`
+
+**STOP for Ben.** Do not start Part 04. Do not label the rough KEEP/LOCKED — plate-level KEEP only in the mint log.
+
+---
+
+### Ben UAT fixes → v04 (27 Sep 16:00 UK) · Part 01 record
 
 **Plate mapping (v03 screenshots → board):**
 

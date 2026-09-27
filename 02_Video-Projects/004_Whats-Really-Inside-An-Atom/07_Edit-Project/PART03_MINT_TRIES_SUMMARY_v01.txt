@@ -1,0 +1,24 @@
+01_cambridge_tube_setup	try1	KEEP	Veo 3.1 - Fast	try1	bef=2162	motion_ok scene_hits=10 dur=8.00s
+02_tube_glow	try1	KEEP	Veo 3.1 - Quality	try1	bef=2152	motion_ok scene_hits=4 dur=8.00s
+03_beam_shoots	try1	FAIL	Veo 3.1 - Quality	try1	bef=2052	near-still scene_hits=1
+03_beam_shoots	try2	KEEP	Veo 3.1 - Quality	try2_alt	bef=1952	motion_ok scene_hits=16 dur=8.00s
+04_cathode_rays_question	try1	KEEP	Veo 3.1 - Fast	try1	bef=1852	motion_ok scene_hits=4 dur=8.00s
+05_magnet_bends	try1	FAIL	Veo 3.1 - Quality	try1	bef=1842	near-still scene_hits=1
+05_magnet_bends	try2	KEEP	Veo 3.1 - Quality	try2_alt	bef=1742	motion_ok scene_hits=4 dur=8.00s
+06_plates_bend	try1	KEEP	Veo 3.1 - Quality	try1	bef=1642	motion_ok scene_hits=7 dur=8.00s
+07_light_doesnt	try1	KEEP	Veo 3.1 - Fast	try1	bef=1542	motion_ok scene_hits=4 dur=8.00s
+08_measures_bend	try1	KEEP	Veo 3.1 - Fast	try1	bef=1532	motion_ok scene_hits=7 dur=8.00s
+09_crumb_vs_hydrogen	try1	KEEP	Veo 3.1 - Fast	try1	bef=1522	motion_ok scene_hits=4 dur=8.00s
+10_two_thousand_lighter	try1	KEEP	Veo 3.1 - Fast	try1	bef=1512	motion_ok scene_hits=4 dur=8.00s
+11_swap_electrodes	try1	KEEP	Veo 3.1 - Fast	try1	bef=1502	motion_ok scene_hits=10 dur=8.00s
+12_same_particles	try1	FAIL	Veo 3.1 - Quality	try1	bef=1492	near-still scene_hits=1
+12_same_particles	try2	KEEP	Veo 3.1 - Quality	try2_alt	bef=1392	motion_ok scene_hits=7 dur=8.00s
+13_atom_cracks	try1	FAIL	Veo 3.1 - Fast	try1	bef=1292	near-still scene_hits=1
+13_atom_cracks	try2	KEEP	Veo 3.1 - Fast	try2_alt	bef=1282	motion_ok scene_hits=4 dur=8.00s
+14_electrons_named	try1	KEEP	Veo 3.1 - Fast	try1	bef=1272	motion_ok scene_hits=4 dur=8.00s
+15_positive_balance	try1	KEEP	Veo 3.1 - Fast	try1	bef=1262	motion_ok scene_hits=4 dur=8.00s
+16_plum_pudding	try1	FAIL	Veo 3.1 - Fast	try1	bef=1252	near-still scene_hits=1
+16_plum_pudding	try2	KEEP	Veo 3.1 - Fast	try2_alt	bef=1242	motion_ok scene_hits=4 dur=8.00s
+17_raisins_settle	try1	KEEP	Veo 3.1 - Fast	try1	bef=1232	motion_ok scene_hits=4 dur=8.00s
+18_pudding_rotate	try1	KEEP	Veo 3.1 - Fast	try1	bef=1222	motion_ok scene_hits=4 dur=8.00s
+19_lovely_and_wrong	try1	KEEP	Veo 3.1 - Fast	try1	bef=1172	motion_ok scene_hits=19 dur=8.00s
