@@ -54,4 +54,32 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** VO v04 is KEEP (27 Sep). Before any more picture spend, Ben decides how to finish Part 01's 7 missing plates (Flow credits vs the Gemini API Veo fallback) and reviews the 10 kept plates in motion. Do not assemble rough. Do not start Part 02.
+**Next:** Part 01 UAT preview with TEMP music bed is in iCloud (`hos_004_part01_rough_v03.mp4`). STOP for Ben review. Do not start Part 02 until Ben passes Part 01.
+
+---
+
+## Part 01 rough UAT (27 Sep 2026)
+
+| Cut | Duration | Notes |
+|---|---|---|
+| `hos_004_part01_rough_v01.mp4` | 128.7 s | assembly bug (kept) — full Veo lengths |
+| `hos_004_part01_rough_v02.mp4` | 69.813 s | board windows; silent plates + VO |
+| `hos_004_part01_rough_v03.mp4` | 69.813 s | v02 picture + TEMP music bed |
+
+iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/`
+
+### TEMP music bed (UAT only — final bed at full-film assembly)
+
+| Field | Value |
+|---|---|
+| Status | **TEMP** |
+| File | `05_Music/hos004-part01-temp_score_bed_v01.mp3` |
+| sha256 | `dfcedde16055c3046ad45db7090f90466621d16e9b594b11edec61713ff08a97` |
+| Generator | `04_Audio/tools/generate_music_bed.py --generate` (ElevenLabs `music_v2`, force_instrumental) |
+| Prompt | `warm curious documentary underscore, soft strings, light piano, gentle wonder, no vocals, leaves room for voice` |
+| Length | 75.05 s (requested 75000 ms) |
+| Mix | bed **-20 dB** relative to VO (`volume=0.1`); `sidechaincompress` threshold=0.018 ratio=8 attack=20 release=500 under speech; **2.5 s** fade-out at part end; plates silent (no Veo audio); VO level unchanged |
+| v03 sha256 | `a4902dacbd99c8411921ac8e60898d79697dcbeea09a5c50c9c61215286248df` |
+| Levels (measured) | VO mean **-23.6 dB** / peak **-4.0 dB**; bed under speech mean **~-51.5 dB**; bed in gaps mean **~-40.8 dB**; mix peak **-4.0 dB** (below −1 dB) |
+
+Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · assembler `_assemble_part01_rough_v03_music.py`
