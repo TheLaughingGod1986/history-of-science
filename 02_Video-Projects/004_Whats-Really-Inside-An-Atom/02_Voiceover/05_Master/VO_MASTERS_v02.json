@@ -1,35 +1,35 @@
 {
   "film": "004_Whats-Really-Inside-An-Atom",
   "version": "v02",
-  "route": "breath_tighten_from_v01 + 0.35s beat before 'count'",
-  "note": "eleven_v3 ignored speed (EL attempt 9:19 > v01 8:56). Fallback: cap silences to 0.60s on v01. Inserted 0.35s silence before 'count' for clarity. No atempo.",
-  "elevenlabs_speed_attempt_total_s": 559.76,
-  "v01_total_s": 536.16,
+  "route": "breath_tighten_from_v01 + 0.35s beat before 'count' + 0.18s beat before 'had' (Part 01)",
+  "note": "eleven_v3 ignored speed. Fallback breath-tighten. Part 01: 'had' was present but tight; inserted 0.18s before 'had' so Ben hears it. No atempo yet (Ben can request ~1.03 after word KEEP).",
   "keep_silence_s": 0.6,
   "atempo": null,
-  "count_beat_insert_s": 0.35,
-  "total_duration_s": 510.212,
-  "title_question_s": 9.04,
+  "had_check": "PASS \u2014 STT 'as if it had hit a wall'; clarified with 0.18s beat (gap it\u2192had now ~0.14s)",
   "dalton_check": "PASS \u2014 STT: 'Then Dalton gave each kind a weight' (not 'kind of')",
-  "its_a_count_check": "PASS \u2014 STT 'it's a count' (not account); 0.48s gap a\u2192count after 0.35s silence insert",
+  "its_a_count_check": "PASS \u2014 STT 'it's a count'; 0.35s beat before 'count'",
+  "title_question_s": 9.04,
+  "title_question_note": "STT on Part 01; Ben measured ~0:09.4",
+  "total_duration_s": 510.352,
+  "listen_duration_s": 511.751,
   "listen_mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_vo_all_parts_listen_v02.mp3",
-  "listen_mp3_sha256": "48b04b75fcc653f133a6684dd5cb2dcf893fd54e6d7f94903ee15d4c224970ae",
-  "listen_wav_sha256": "ffe51f1a5db45f87742a034602c5e1d8795adefe4d16ef6fe9d57d7f79481ca9",
+  "listen_mp3_sha256": "646c6eff8eaf7e280c9c1c97b54fe1f11b30ed7428bd7372d20952f929063c89",
+  "listen_wav_sha256": "fcde5a769f12b547693c72055250cd804688ae712c085ab54289e80785d6193a",
   "parts": [
     {
       "part": "01",
       "start_s": 0.0,
-      "duration_s": 71.762,
+      "duration_s": 71.902,
       "mean_db": -23.6,
       "peak_db": -3.9,
       "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v02.mp3",
       "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v02.wav",
-      "mp3_sha256": "8a30d3aea460e425e14fd92bb5432c4b85cec812ea2d8f253ceb7d3de8536f62",
-      "wav_sha256": "5c18719b413b55cbcd64e4893841a0e7685a66a32bfc8401f09685612dd6f208"
+      "mp3_sha256": "8b4b0da95c3a253e3a981bc37f19e253b262a8b8f5673379698aa901f31d5bd1",
+      "wav_sha256": "70a825d3307e3f1600f770c214c430c1211f11ce2b81e928c680324517674369"
     },
     {
       "part": "02",
-      "start_s": 71.762,
+      "start_s": 71.902,
       "duration_s": 93.097,
       "mean_db": -21.8,
       "peak_db": -3.8,
@@ -40,7 +40,7 @@
     },
     {
       "part": "03",
-      "start_s": 164.858,
+      "start_s": 164.998,
       "duration_s": 85.835,
       "mean_db": -23.2,
       "peak_db": -3.8,
@@ -51,7 +51,7 @@
     },
     {
       "part": "04",
-      "start_s": 250.693,
+      "start_s": 250.833,
       "duration_s": 111.561,
       "mean_db": -24.5,
       "peak_db": -3.8,
@@ -62,7 +62,7 @@
     },
     {
       "part": "05",
-      "start_s": 362.254,
+      "start_s": 362.394,
       "duration_s": 147.957,
       "mean_db": -24.1,
       "peak_db": -4.1,
@@ -71,8 +71,5 @@
       "mp3_sha256": "9c853d06df24e67fd6873f7b276591a8f4a5e1327957dc0fa85c150c02aeba27",
       "wav_sha256": "486223acd9fcd03a79d4a3fc96bfa9594fc72994e7c3c6141a2f728b532e8e59"
     }
-  ],
-  "title_question_source": "scribe_v2 STT on part01 breath-tightened v02 (EL align was from failed speed mint \u2014 ignore)",
-  "total_mmss": "8:30",
-  "loudness_note": "means \u221221.8\u2026\u221224.5 (spread 2.7 dB); peaks \u22123.8\u2026\u22124.1; no in-part silences >1.0s @ \u221240dB"
+  ]
 }
