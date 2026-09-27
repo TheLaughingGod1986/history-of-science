@@ -41,6 +41,11 @@ node_modules/
 !00_Brand/Channel-Setup/inspiration/*.jpeg
 !00_Brand/Channel-Setup/inspiration/*.png
 !00_Brand/Channel-Setup/inspiration/*.webp
+# HOS 002 A/B test pack (27 Sep 2026) — selected long thumbs + phone preview sheets only
+!02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_predicted_v03.jpg
+!02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_predicted_v03_preview.jpg
+!02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_C_empty_on_purpose_v03.jpg
+!02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_C_empty_on_purpose_v03_preview.jpg
 
 # Playwright / caches
 .playwright-mcp/
