@@ -157,9 +157,10 @@
       "i2v": false,
       "side_label": "1913",
       "vo_land": "And the final proof came from a young physicist with a beam of X-rays,",
-      "prompt": "Animistry premium 3D cartoon. VO: young physicist with a beam of X-rays (Moseley / early X-ray spectroscopy). Readable-faced young man in 1910s lab coat beside a glass X-ray / cathode tube on a wooden bench. Soft glow CONTAINED INSIDE the glass tube only — a pale beam bends slightly toward a metal target plate INSIDE or at the mouth of the apparatus. Camera slowly pushes past tube to a short row of metal target samples that light one after another. NO beam through open air. NOTHING touching a person's head or body. NO 'ATOMOS' plinths, signs, or carved labels. Continuous tube glow + target chase. Quality clean glow. Silent. HARD REJECT: laser to head, air beam, ATOMOS text, Explorer, Orbit, lava, photoreal.",
+      "prompt": "Animistry premium 3D cartoon. VO: young physicist with a beam of X-rays (Moseley / early X-ray spectroscopy). KEEP the good brass-and-glass apparatus on a wooden bench and the metal target samples on the bench. Soft glow CONTAINED INSIDE the glass tube only. If a beam is visible: it must be a STRAIGHT, STEADY, clean straight line of pale light inside the glass, falling on the target in a clean straight line — straight beam, no curls, no wiggle, no squiggle, no S-curve, no loop, no serpentine path. Real cathode-ray / X-ray beams run straight. Optional: tube glowing evenly with the fluorescent target lit and no separate beam line. Camera slowly pushes past tube to targets that light one after another. NO person in the beam path. NO beam through open air. NO 'ATOMOS' plinths or signs. Continuous motion. Quality clean glow. Silent. HARD REJECT: S-shaped beam, curly beam, wiggle, squiggle, laser to head, air beam, ATOMOS text, Explorer, Orbit, lava, photoreal.",
       "t_s": 52.748,
-      "ben_fix_2026_09_27": "Image 1 — rebuild: glow inside tube; no laser-to-head; drop ATOMOS"
+      "ben_fix_2026_09_27": "Image 1 — rebuild: glow inside tube; no laser-to-head; drop ATOMOS",
+      "ben_fix_2026_09_27_1633": "straight beam only — no S-wiggle/squiggle inside tube"
     },
     {
       "id": "13_numbered_cards",

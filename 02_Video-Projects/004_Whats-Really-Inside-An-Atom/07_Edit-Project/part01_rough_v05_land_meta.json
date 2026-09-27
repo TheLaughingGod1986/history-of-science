@@ -1,0 +1,222 @@
+{
+  "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part01_rough_v05.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part01_rough_v05.mp4",
+  "sha256": "71d7c70798c77ce2ecb02c37ad043fd98117a2209a84899236337fee8b952add",
+  "icloud_sha256": "71d7c70798c77ce2ecb02c37ad043fd98117a2209a84899236337fee8b952add",
+  "duration_s": 69.812813,
+  "video_stream_note": "1080p30 silent plates + TEMP bed + v04 VO",
+  "fps": 30,
+  "size": "1920x1080",
+  "vo": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v04.wav",
+  "vo_duration_s": 69.812813,
+  "vo_level": "unchanged",
+  "music": {
+    "temp": true,
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-part01-temp_score_bed_v01.mp3",
+    "sha256": "dfcedde16055c3046ad45db7090f90466621d16e9b594b11edec61713ff08a97",
+    "bed_relative_db_vs_vo": -20.0,
+    "sidechain": "threshold=0.018:ratio=8:attack=20:release=500:level_sc=1",
+    "fade_out_s": 2.5,
+    "same_as_v03": true
+  },
+  "ben_fix_plates": [
+    "12_1913_targets"
+  ],
+  "ben_fix_12_straight": true,
+  "parent": "v04 + reminted 12 straight beam",
+  "plate_mapping": {
+    "Image_1_beam_ATOMOS": "12_1913_targets @ 52.748s",
+    "Image_2_helmet_fake_tiles": "09_uncuttable_blur @ 36.091s",
+    "Image_3_coin_knife": "01_coin_halves @ 0.000s + 15_knife_coin_return @ 63.853s"
+  },
+  "kept_v01_v02_v03": true,
+  "plates": [
+    {
+      "id": "01_coin_halves",
+      "file": "01_coin_halves_v01.mp4",
+      "sha256": "d150385532c69ea4e4ce3df731fae5c32585f5fc3318158b62bbf0d7db235c7b",
+      "window_t0": 0.0,
+      "window_t1": 4.627,
+      "window_s": 4.627,
+      "used_s": 4.633333333333334,
+      "ben_fix": true,
+      "vo_land": "Cut a gold coin in half. Then cut it again. And again."
+    },
+    {
+      "id": "02_atom_answer",
+      "file": "02_atom_answer_v01.mp4",
+      "sha256": "b197bf1ffb498ebe5919e78294f5ac7be47107eeaa9dc94d8cb3ebb91dcbfca2",
+      "window_t0": 4.627,
+      "window_t1": 9.254,
+      "window_s": 4.627,
+      "used_s": 4.633333333333334,
+      "ben_fix": false,
+      "vo_land": "How small can you go before it stops being gold?"
+    },
+    {
+      "id": "03_atom_turns",
+      "file": "03_atom_turns_v01.mp4",
+      "sha256": "2db2051a73ce1c007883344a33cdb5e902f53ef9faee175a4a13eb01e1d598bf",
+      "window_t0": 9.254,
+      "window_t1": 12.03,
+      "window_s": 2.776,
+      "used_s": 2.7666666666666666,
+      "ben_fix": false,
+      "vo_land": "What's really inside an atom?"
+    },
+    {
+      "id": "04_table_slams",
+      "file": "04_table_slams_v01.mp4",
+      "sha256": "f6356d15de4a84b4d47ed6d630439eb4feb2f9d6c2fe739c3e35379e37de4d6c",
+      "window_t0": 12.03,
+      "window_t1": 16.657,
+      "window_s": 4.627000000000001,
+      "used_s": 4.633333333333334,
+      "ben_fix": false,
+      "vo_land": "By the end of this film you'll know why the periodic table is in the order it is, and how we proved it."
+    },
+    {
+      "id": "05_hand_tap_te_i",
+      "file": "05_hand_tap_te_i_v01.mp4",
+      "sha256": "6dc96067a51da30759c87ea07a593ecdf15ca376ac5cb75b265fa17b3be7279f",
+      "window_t0": 16.657,
+      "window_t1": 22.21,
+      "window_s": 5.553000000000001,
+      "used_s": 5.566666666666666,
+      "ben_fix": false,
+      "vo_land": "Because in 1869 the table had a secret problem. It was sorted by weight, and some elements refused to fit."
+    },
+    {
+      "id": "06_scale_tips",
+      "file": "06_scale_tips_v01.mp4",
+      "sha256": "b81cd73f98c9d813ba42ea3740f0435234decb6a816987f51cf8937775caaa16",
+      "window_t0": 22.21,
+      "window_t1": 27.762,
+      "window_s": 5.552,
+      "used_s": 5.566666666666666,
+      "ben_fix": false,
+      "vo_land": "If weight was the rule, the rule was broken, and nobody knew why."
+    },
+    {
+      "id": "07_greek_atomos",
+      "file": "07_greek_atomos_v01.mp4",
+      "sha256": "7fb59619f74490f2eadf1306faa6d02c9a2a8c05ff8944ab59dd665557e4bf2e",
+      "window_t0": 27.762,
+      "window_t1": 32.1,
+      "window_s": 4.338000000000001,
+      "used_s": 4.333333333333333,
+      "ben_fix": false,
+      "vo_land": "For two thousand years the atom was just an idea."
+    },
+    {
+      "id": "08_smallest_uncuttable",
+      "file": "08_smallest_uncuttable_v01.mp4",
+      "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+      "window_t0": 32.1,
+      "window_t1": 36.091,
+      "window_s": 3.9909999999999997,
+      "used_s": 4.0,
+      "ben_fix": false,
+      "vo_land": "the smallest piece, the one you can't cut."
+    },
+    {
+      "id": "09_uncuttable_blur",
+      "file": "09_uncuttable_blur_v01.mp4",
+      "sha256": "7b119a4a424ca6ead73246ed0129fe51e4a1396b40a003e7aadfb391648f8028",
+      "window_t0": 36.091,
+      "window_t1": 41.643,
+      "window_s": 5.552,
+      "used_s": 5.566666666666666,
+      "ben_fix": true,
+      "vo_land": "Nobody had ever seen one."
+    },
+    {
+      "id": "10_electron_tube",
+      "file": "10_electron_tube_v01.mp4",
+      "sha256": "8adcd0e8eedd240ecac04dd72f8a0c2eaf832fbd45f231ecec1a5f22a0c0ba56",
+      "window_t0": 41.643,
+      "window_t1": 47.196,
+      "window_s": 5.552999999999997,
+      "used_s": 5.566666666666666,
+      "ben_fix": false,
+      "vo_land": "Then, in a glowing glass tube, someone found a piece smaller than the atom."
+    },
+    {
+      "id": "11_gold_foil_bounce",
+      "file": "11_gold_foil_bounce_v01.mp4",
+      "sha256": "5436abd10fa19bdd0f48f69d1c6d56a02ae25de30598d8ae739ef309c3e9f437",
+      "window_t0": 47.196,
+      "window_t1": 52.748,
+      "window_s": 5.552,
+      "used_s": 5.566666666666666,
+      "ben_fix": false,
+      "vo_land": "Then a tiny bullet bounced back off a sheet of gold, as if it had hit a wall."
+    },
+    {
+      "id": "12_1913_targets",
+      "file": "12_1913_targets_v01.mp4",
+      "sha256": "3359871bc0c33af06c87072e4384b054f2254f0de5c464e5eb97b406d9a5c4de",
+      "window_t0": 52.748,
+      "window_t1": 57.375,
+      "window_s": 4.6270000000000024,
+      "used_s": 4.633333333333334,
+      "ben_fix": true,
+      "vo_land": "And the final proof came from a young physicist with a beam of X-rays,"
+    },
+    {
+      "id": "13_numbered_cards",
+      "file": "13_numbered_cards_v01.mp4",
+      "sha256": "c77fd7601e00965c3f62980728df96d9adacf2a7e429a5629beb5bdf3f267709",
+      "window_t0": 57.375,
+      "window_t1": 61.077,
+      "window_s": 3.701999999999998,
+      "used_s": 3.7,
+      "ben_fix": false,
+      "vo_land": "who counted what was inside every element."
+    },
+    {
+      "id": "14_te_i_pullback",
+      "file": "14_te_i_pullback_v01.mp4",
+      "sha256": "6bcdc994f28d14e0c8f96c1936fa74b0ffef6eb163188f78f6a6d4fb23409420",
+      "window_t0": 61.077,
+      "window_t1": 63.853,
+      "window_s": 2.7760000000000034,
+      "used_s": 2.7666666666666666,
+      "ben_fix": false,
+      "vo_land": "Four people, one century,"
+    },
+    {
+      "id": "15_knife_coin_return",
+      "file": "15_knife_coin_return_v01.mp4",
+      "sha256": "b115c2a9ea4eba817a598fa7b67b16cb2a6ee5eb55d2b64038e5a17b366d3a01",
+      "window_t0": 63.853,
+      "window_t1": 66.63,
+      "window_s": 2.776999999999994,
+      "used_s": 2.7666666666666666,
+      "ben_fix": true,
+      "vo_land": "and a question that started with a knife and a coin."
+    },
+    {
+      "id": "16_why_wrong_order",
+      "file": "16_why_wrong_order_v01.mp4",
+      "sha256": "e8be3d361b89da4a4f18ab67b7c156dda4ca6ede977833c012df41cd385881b6",
+      "window_t0": 66.63,
+      "window_t1": 68.48,
+      "window_s": 1.8500000000000085,
+      "used_s": 1.8666666666666667,
+      "ben_fix": false,
+      "vo_land": "So why was the table in the wrong order?"
+    },
+    {
+      "id": "17_ledger_bridge",
+      "file": "17_ledger_bridge_v01.mp4",
+      "sha256": "c4f8830b85f743869d2357fa12fabe657914efcab189de12623fe6e30addf41d",
+      "window_t0": 68.48,
+      "window_t1": 69.812813,
+      "window_s": 1.3328130000000016,
+      "used_s": 1.3333333333333333,
+      "ben_fix": false,
+      "vo_land": "(bridge into Part 02 chapter card)"
+    }
+  ]
+}
