@@ -41,7 +41,7 @@ WPM_WARN = 145
 # sides before the diff (the script spells them out, the transcriber writes digits).
 ALIASES = {"thompson": "thomson", "thompson's": "thomson's", "center": "centre", "st": "saint",
            "dimitri": "dmitri", "vandenbroek": "van den broek", "vandenbroek's": "van den broek's",
-           "schoolteacher": "school teacher", "p": "pea", "dmitry": "dmitri"}
+           "schoolteacher": "school teacher", "p": "pea", "pee": "pea", "dmitry": "dmitri"}
 NUMBER_WORDS = set(("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen "
                     "fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty "
                     "ninety hundred thousand oh").split())
@@ -105,6 +105,26 @@ def transcribe(path: Path):
     return [(round(w.start, 2), w.word.strip()) for s in segs for w in s.words]
 
 
+def recheck_window(path: Path, start: float, length: float) -> list[str] | None:
+    """Transcribe just [start, start+length] and return its normalised words."""
+    import tempfile
+    try:
+        from faster_whisper import WhisperModel  # type: ignore
+    except ImportError:
+        return None
+    with tempfile.TemporaryDirectory() as td:
+        clip = Path(td) / "clip.wav"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{start:.2f}", "-t", f"{length:.2f}", "-i", str(path), str(clip)],
+                       check=True)
+        segs, _ = WhisperModel("small.en", device="cpu", compute_type="int8").transcribe(str(clip))
+        return norm(" ".join(s.text for s in segs))
+
+
+def contains_in_order(haystack: list[str], needle: list[str]) -> bool:
+    it = iter(haystack)
+    return all(any(w == h for h in it) for w in needle)
+
+
 def first_time(words, phrase: str) -> float | None:
     p = norm(phrase)[:3]
     seq = [(t, norm(w)) for t, w in words]
@@ -160,6 +180,20 @@ def main() -> int:
             diffs.append({"at": f"{int(where // 60)}:{where % 60:05.2f}", "op": op, "sounds_alike": alike,
                           "script": " ".join(script_words[max(a1 - 3, 0):a2 + 3]),
                           "heard": " ".join(heard[max(b1 - 3, 0):b2 + 3])})
+        # A long transcription sometimes skips a stretch it heard fine. Before reporting a
+        # missing run of 4+ words, re-transcribe a 40 s window around it and look again.
+        kept = []
+        for d, (op, a1, a2, b1, b2) in zip(diffs, [o for o in difflib.SequenceMatcher(None, script_words, heard, autojunk=False).get_opcodes() if o[0] != "equal"]):
+            if (a2 - a1) - (b2 - b1) >= 4:
+                where = words[min(b1, len(words) - 1)][0]
+                start = max(where - 10.0, 0.0)
+                clip = recheck_window(ns.audio, start, 40.0)
+                span = script_words[a1:a2]
+                if clip is not None and contains_in_order(clip, span):
+                    res["warns"].append(f"re-checked {d['at']}: '{' '.join(span)}' is present (the full-file transcription skipped it)")
+                    continue
+            kept.append(d)
+        diffs = kept
         res["word_diffs"] = diffs
         for d in diffs:
             msg = f"{d['op']} at ~{d['at']}: script '{d['script']}' / heard '{d['heard']}'"
