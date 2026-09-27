@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-09-27T14:56:42.086165+00:00",
+  "project": "hos004_part01_temp",
+  "script": null,
+  "music_cues": [],
+  "prompt": "warm curious documentary underscore, soft strings, light piano, gentle wonder, no vocals, leaves room for voice",
+  "length_ms": 75000,
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "generate": true,
+  "audio_file": "hos004-part01-temp_score_bed_v01.mp3",
+  "status": "generated",
+  "bytes": 1200841,
+  "song_id": "Lh1W9jOUA6A1v1OFflkC",
+  "sha256": "dfcedde16055c3046ad45db7090f90466621d16e9b594b11edec61713ff08a97",
+  "temp": true,
+  "note": "TEMP Part 01 UAT bed \u2014 final bed at full-film assembly"
+}

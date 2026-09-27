@@ -1,0 +1,39 @@
+{
+  "temp": true,
+  "note": "TEMP UAT bed only \u2014 final bed at full-film assembly",
+  "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part01_rough_v03.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part01_rough_v03.mp4",
+  "sha256": "a4902dacbd99c8411921ac8e60898d79697dcbeea09a5c50c9c61215286248df",
+  "icloud_sha256": "a4902dacbd99c8411921ac8e60898d79697dcbeea09a5c50c9c61215286248df",
+  "duration_s": 69.812813,
+  "fps": 30,
+  "size": "1920x1080",
+  "picture_source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part01_rough_v02.mp4",
+  "vo": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v04.wav",
+  "vo_duration_s": 69.812813,
+  "vo_level": "unchanged (no volume filter on VO)",
+  "music": {
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-part01-temp_score_bed_v01.mp3",
+    "sha256": "dfcedde16055c3046ad45db7090f90466621d16e9b594b11edec61713ff08a97",
+    "generator": "04_Audio/tools/generate_music_bed.py --generate (ElevenLabs music_v2)",
+    "prompt": "warm curious documentary underscore, soft strings, light piano, gentle wonder, no vocals, leaves room for voice",
+    "length_s": 75.04975,
+    "length_ms_requested": 75000,
+    "bed_relative_db_vs_vo": -20.0,
+    "bed_volume_linear": 0.1,
+    "sidechain": "threshold=0.018:ratio=8:attack=20:release=500:level_sc=1",
+    "fade_out_s": 2.5,
+    "fade_out_start_s": 67.312813,
+    "plates_audio": "silent (no Veo audio)"
+  },
+  "kept_v01_v02": true,
+  "levels": {
+    "vo_mean_db": -23.6,
+    "vo_peak_db": -4.0,
+    "bed_under_speech_mean_db": -51.5125,
+    "bed_in_gaps_mean_db": -40.75,
+    "mix_mean_db": -23.6,
+    "mix_peak_db": -4.0,
+    "overall_peak_below_minus_1_db": true
+  }
+}
