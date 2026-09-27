@@ -1,0 +1,14 @@
+{
+  "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v04.mp3",
+  "part": 1,
+  "fails": [],
+  "warns": [
+    "word check skipped: pip install faster-whisper"
+  ],
+  "duration_s": 69.81,
+  "duration": "1:09.81",
+  "mean_db": -23.8,
+  "peak_db": -4.2,
+  "pauses_over_1s": [],
+  "verdict": "PASS"
+}

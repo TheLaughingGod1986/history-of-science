@@ -1,0 +1,153 @@
+{
+  "status": "DRAFT_PENDING_PART01_UAT",
+  "mint": false,
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "working_title": "Why Is the Periodic Table in This Order?",
+  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v04 LOCKED KEEP",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship",
+    "Explorer in Part 01 / first minute"
+  ],
+  "notes": "Re-timed from VO v04 (atempo 1.03 on v03 KEEP). Same plate intent as v01 boards. No on-screen SEE labels. Explorer only on marked plates (never Part 01). mint:false until Part 01 UAT PASS.",
+  "part": "05",
+  "title": "Counting With X-rays",
+  "vo_file": "02_Voiceover/part05_counting_with_x_rays_v02.txt",
+  "vo_duration_s": 144.516,
+  "vo_master": "02_Voiceover/05_Master/hos_004_part05_vo_v04.wav",
+  "chapter_card": {
+    "at": "5:54",
+    "duration_s": 1.5,
+    "text": "Counting With X-rays",
+    "at_s": 353.769
+  },
+  "film_window": "6:19\u20138:56",
+  "set_language": "Manchester 1913 Moseley tube with toy-train metal targets; crystal spectrometer ladder; periodic table re-sort; quiet memorial desk (no battle). Say 'same 1913 Moseley tube set' / 'same numbered table set'. Never 'same DNA'.",
+  "continuity_lock": "Explorer once only at the final numbered table. One X-rays callback flash (~4 s), no SEE label.",
+  "explorer_lock": "Exactly ONE Explorer plate: final glowing numbered table. On model. Attach Explorer reference.",
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels added in edit); twin Explorer; never say 'same DNA' or 'lab DNA' in a Veo prompt. No battle gore. No on-screen SEE X-rays label. No Explorer except final table.",
+  "motion_lock": "Real Veo motion; Quality for X-ray / target glow.",
+  "quality_note": "Quality for tube beam and ladder lines. Fast OK for table re-sort garnish if glow is soft.",
+  "plates": [
+    {
+      "id": "01_moseley_train_tube",
+      "t": "5:54",
+      "explorer": false,
+      "i2v": false,
+      "side_label": "HENRY MOSELEY \u00b7 1913",
+      "vo_land": "Manchester, nineteen thirteen. Henry Moseley is twenty-five. He builds a tube with a little train inside, carrying a different metal target into the beam each time.",
+      "prompt": "Animistry premium 3D cartoon. Manchester 1913. Young Henry Moseley (readable face, neat hair) at a long tube with a little toy-train carriage carrying metal targets into the beam. Continuous train move. Silent. No Explorer. HARD REJECT: Orbit, unfinished face, lava.",
+      "t_s": 353.769
+    },
+    {
+      "id": "02_xray_callback_hand",
+      "t": "6:08",
+      "explorer": false,
+      "i2v": false,
+      "side_label": null,
+      "vo_land": "It's the same invisible light R\u00f6ntgen used to see the bones in a living hand.",
+      "prompt": "Animistry premium 3D cartoon. Quick ~4s flash: stylised R\u00f6ntgen hand with ring visible (X-rays callback; wonder, not gore). Continuous. Silent. No on-screen SEE label. HARD REJECT: gore, Orbit, Explorer, photoreal medical photo dump.",
+      "t_s": 368.449
+    },
+    {
+      "id": "03_crystal_ladder",
+      "t": "6:13",
+      "explorer": false,
+      "i2v": true,
+      "side_label": "ATOMIC NUMBER",
+      "vo_land": "Moseley splits the X-rays with a crystal and measures their wavelength. Then he finds a pattern. Element by element, the X-rays step up in perfectly even jumps, like the rungs of a ladder.",
+      "prompt": "Same 1913 set. Crystal splits X-rays into lines that step like ladder rungs, one rung per element. Continuous step. Silent. HARD REJECT: Orbit, Explorer, garbled spectra.",
+      "t_s": 373.048
+    },
+    {
+      "id": "04_count_the_rungs",
+      "t": "6:29",
+      "explorer": false,
+      "i2v": true,
+      "side_label": "CHARGE IN NUCLEUS",
+      "vo_land": "Count the rungs and you get a whole number for every element: the positive charge in its nucleus. Van den Broek's guess was right.",
+      "prompt": "Same ladder set. Whole numbers appear rung by rung = charge in the nucleus. Continuous count. Silent. HARD REJECT: Orbit, Explorer.",
+      "t_s": 388.684
+    },
+    {
+      "id": "05_table_resorts",
+      "t": "6:39",
+      "explorer": false,
+      "i2v": false,
+      "side_label": null,
+      "vo_land": "Now sort the table by that number. Tellurium is fifty-two and iodine is fifty-three. Cobalt is twenty-seven and nickel is twenty-eight. The broken rule fixes itself.",
+      "prompt": "Animistry premium 3D cartoon. Periodic table re-sorts; Te 52 and I 53 click into place; Co 27 Ni 28. Continuous click. Readable numbers. Silent. HARD REJECT: garbled numbers, Orbit, Explorer.",
+      "t_s": 398.801
+    },
+    {
+      "id": "06_missing_rungs",
+      "t": "6:56",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "And the ladder had missing rungs, at forty-three, sixty-one, seventy-two and seventy-five. Those were elements nobody had found yet. Over the next thirty-odd years, every one of them was found in nature or made in a lab.",
+      "prompt": "Same numbered table set. Gaps glow at 43, 61, 72, 75 then fill over time. Continuous. Silent. HARD REJECT: Orbit, Explorer.",
+      "t_s": 416.277
+    },
+    {
+      "id": "07_columns_repeat",
+      "t": "7:13",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "Why do the columns repeat? The charge in the nucleus decides how many electrons an atom holds, and the outer electrons decide how it behaves. Elements with the same kind of outer electrons end up in the same column.",
+      "prompt": "Same table set. Outer-electron shells align down a column; soft metals fizz together. Continuous. Silent. HARD REJECT: Orbit, DNA helix, Explorer.",
+      "t_s": 432.833
+    },
+    {
+      "id": "08_moseley_quiet_desk",
+      "t": "7:33",
+      "explorer": false,
+      "i2v": false,
+      "side_label": "MOSELEY \u00b7 1887\u20131915",
+      "vo_land": "Two years later, in nineteen fifteen, Moseley was killed in the First World War at Gallipoli. He was twenty-seven. Many scientists believe he would have won a Nobel Prize.",
+      "prompt": "Animistry premium 3D cartoon. Quiet desk: young soldier's cap and a notebook \u2014 no battle, no gore. Continuous soft settle. Silent. HARD REJECT: battle gore, Orbit, Explorer, blood.",
+      "t_s": 453.069
+    },
+    {
+      "id": "09_explorer_final_table",
+      "t": "7:45",
+      "explorer": true,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "So this is what's really inside an atom. First it was an idea. Then Dalton gave each kind a weight. Thomson found a piece inside it. Rutherford found its tiny centre. And Moseley counted it. Every element has its own number, and that number is the order of the periodic table. It isn't a list of weights. It's a count.",
+      "prompt": "Same numbered table set glowing. Exactly ONE Explorer steps back to see the whole table with numbers. Continuous step-back + look. Attach Explorer reference. Silent. HARD REJECT: twins, no glasses, Orbit, Explorer dominating the whole part.",
+      "t_s": 465.026
+    },
+    {
+      "id": "10_next_story_handoff",
+      "t": "8:08",
+      "explorer": false,
+      "i2v": false,
+      "side_label": null,
+      "vo_land": "But the nucleus had one more secret. Some nuclei don't sit still. They break apart and throw out rays of their own. That's the next story.",
+      "prompt": "Animistry premium 3D cartoon. Nucleus trembles and throws soft rays \u2014 handoff to the next film, wonder not horror. Continuous. Silent. No Explorer. HARD REJECT: bomb/mushroom cloud, Orbit, gore, Ken Burns only.",
+      "t_s": 488.02
+    },
+    {
+      "id": "11_end_card",
+      "t": "8:18",
+      "explorer": false,
+      "i2v": false,
+      "side_label": null,
+      "vo_land": "(end card \u2014 not Veo; assemble graphic)",
+      "prompt": "NOT A VEO PLATE. Assemble cream-on-brown end card 3\u20134s: History of Science / DISCOVERY. WONDER. PROOF. Then Studio end screen 20s only.",
+      "t_s": 498.138
+    }
+  ]
+}

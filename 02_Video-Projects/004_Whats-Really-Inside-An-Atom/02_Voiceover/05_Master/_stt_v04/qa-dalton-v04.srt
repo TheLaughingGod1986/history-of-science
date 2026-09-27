@@ -1,0 +1,23 @@
+1
+00:00:00,760 --> 00:00:02,740
+Thomson found a piece inside it.
+
+2
+00:00:03,380 --> 00:00:06,020
+Rutherford found its tiny center, and
+
+3
+00:00:06,120 --> 00:00:09,000
+Moseley counted it. Every element has its
+
+4
+00:00:09,060 --> 00:00:11,680
+own number, and that number is the order
+
+5
+00:00:11,740 --> 00:00:14,420
+of the periodic table. It isn't a list of
+
+6
+00:00:14,480 --> 00:00:14,900
+weights

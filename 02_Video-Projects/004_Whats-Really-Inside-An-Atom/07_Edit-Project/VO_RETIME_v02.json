@@ -1,0 +1,80 @@
+{
+  "status": "LOCKED_TO_VO_V04_KEEP",
+  "source_vo": "02_Voiceover/05_Master/hos_004_part0N_vo_v04.wav",
+  "total_vo_s": 498.285,
+  "total_vo_clock": "8:18",
+  "atempo_from": "v03",
+  "atempo": 1.03,
+  "parts": [
+    {
+      "part": "01",
+      "start_s": 0.0,
+      "end_s": 69.813,
+      "clock": "0:00\u20131:10",
+      "chapter_card": null
+    },
+    {
+      "part": "02",
+      "start_s": 69.813,
+      "end_s": 161.017,
+      "clock": "1:10\u20132:41",
+      "chapter_card": {
+        "at_s": 69.813,
+        "title": "The Table That Broke Its Own Rule",
+        "duration_s": 1.5
+      }
+    },
+    {
+      "part": "03",
+      "start_s": 161.017,
+      "end_s": 244.747,
+      "clock": "2:41\u20134:05",
+      "chapter_card": {
+        "at_s": 161.017,
+        "title": "The Crumb Inside the Atom",
+        "duration_s": 1.5
+      }
+    },
+    {
+      "part": "04",
+      "start_s": 244.747,
+      "end_s": 353.769,
+      "clock": "4:05\u20135:54",
+      "chapter_card": {
+        "at_s": 244.747,
+        "title": "The Shell That Bounced Back",
+        "duration_s": 1.5
+      }
+    },
+    {
+      "part": "05",
+      "start_s": 353.769,
+      "end_s": 498.285,
+      "clock": "5:54\u20138:18",
+      "chapter_card": {
+        "at_s": 353.769,
+        "title": "Counting With X-rays",
+        "duration_s": 1.5
+      }
+    }
+  ],
+  "cold_open_note": "Picture change every ~4\u20136 s; knife/coin \u00b7 why-wrong \u00b7 ledger bridge at end of Part 01 (no slow hold).",
+  "explorer_beats": [
+    {
+      "part": "02",
+      "plate": "07_explorer_te_before_i",
+      "act": "Te card swap"
+    },
+    {
+      "part": "04",
+      "plate": "07_explorer_stadium_pea",
+      "act": "stadium pea"
+    },
+    {
+      "part": "05",
+      "plate": "09_explorer_final_table",
+      "act": "final numbered table"
+    }
+  ],
+  "note": "Re-timed from VO v04 LOCKED KEEP (atempo 1.03 on v03). Part 01 plates mint:true; 02\u201305 mint:false until Part 01 UAT."
+}
