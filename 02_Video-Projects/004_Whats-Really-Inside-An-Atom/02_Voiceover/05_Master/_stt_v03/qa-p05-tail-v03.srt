@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:02,460
+Counted it. Every element has its own
+
+2
+00:00:02,520 --> 00:00:05,100
+number, and that number is the order of
+
+3
+00:00:05,140 --> 00:00:07,780
+the periodic table. It isn't a list of
+
+4
+00:00:07,840 --> 00:00:11,320
+weights. It's a count. But the nucleus had
+
+5
+00:00:11,380 --> 00:00:14,320
+one more secret. Some nuclei don't sit
+
+6
+00:00:14,500 --> 00:00:17,500
+still. They break apart and throw out rays
+
+7
+00:00:17,540 --> 00:00:19,940
+of their own. That's the next story

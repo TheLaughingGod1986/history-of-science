@@ -1,0 +1,115 @@
+1
+00:00:00,080 --> 00:00:04,040
+Cambridge, 1897. J.J. Thompson is studying
+
+2
+00:00:04,100 --> 00:00:06,580
+a strange glow. Pump the air out of a
+
+3
+00:00:06,620 --> 00:00:08,940
+glass tube, run electricity through it,
+
+4
+00:00:09,280 --> 00:00:10,980
+and a beam shoots from one end to the
+
+5
+00:00:11,060 --> 00:00:13,520
+other. Scientists called them cathode
+
+6
+00:00:13,620 --> 00:00:17,020
+rays. But what were they made of? Light or
+
+7
+00:00:17,240 --> 00:00:20,700
+stuff? Thompson brings a magnet close. The
+
+8
+00:00:20,740 --> 00:00:23,980
+beam bends. He tries two charged metal
+
+9
+00:00:24,080 --> 00:00:27,500
+plates. It bends again. Light doesn't do
+
+10
+00:00:27,560 --> 00:00:31,600
+that. Tiny charged particles do. Then he
+
+11
+00:00:31,640 --> 00:00:33,920
+measures how far they bend and works out
+
+12
+00:00:33,980 --> 00:00:36,420
+how heavy they must be. The answer is
+
+13
+00:00:36,460 --> 00:00:39,380
+astonishing. Far lighter than a hydrogen
+
+14
+00:00:39,460 --> 00:00:42,980
+atom, the lightest thing anyone knew. We
+
+15
+00:00:43,040 --> 00:00:45,360
+now know each one is about two thousand
+
+16
+00:00:45,460 --> 00:00:47,820
+times lighter. But here is the strange
+
+17
+00:00:47,940 --> 00:00:50,480
+part. It doesn't matter which metal he
+
+18
+00:00:50,560 --> 00:00:53,400
+uses, the same particles come out every
+
+19
+00:00:53,500 --> 00:00:57,160
+time. So the uncuttable thing can be cut.
+
+20
+00:00:57,880 --> 00:01:00,220
+Every atom carries these tiny negative
+
+21
+00:01:00,340 --> 00:01:02,720
+particles. Thompson called them
+
+22
+00:01:02,860 --> 00:01:06,220
+corpuscles. Today, we call them electrons.
+
+23
+00:01:06,880 --> 00:01:09,500
+But atoms have no overall charge, so
+
+24
+00:01:09,540 --> 00:01:11,740
+something positive must balance them out.
+
+25
+00:01:12,400 --> 00:01:15,720
+A few years later, in 1904, Thompson made
+
+26
+00:01:15,760 --> 00:01:19,000
+his guess, a soft ball of positive stuff
+
+27
+00:01:19,340 --> 00:01:21,440
+with electrons dotted through it, like
+
+28
+00:01:21,480 --> 00:01:23,840
+raisins in a pudding. It was a lovely
+
+29
+00:01:23,920 --> 00:01:26,200
+idea. It was also wrong.
