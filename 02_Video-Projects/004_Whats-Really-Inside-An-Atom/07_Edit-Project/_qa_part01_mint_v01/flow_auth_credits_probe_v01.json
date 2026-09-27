@@ -1,0 +1,27 @@
+{
+  "cdp": "http://127.0.0.1:9222",
+  "required": "benoats@googlemail.com",
+  "url": "https://flow.google.com/about#pricing",
+  "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+  "emails": [],
+  "active": null,
+  "credits": null,
+  "ultra": true,
+  "passkey": false,
+  "signed_out": false,
+  "forbidden86": false,
+  "clicked": [
+    "text=Credits",
+    "[aria-label*=\"ULTRA\" i]",
+    "text=ULTRA"
+  ],
+  "body_snip": "Skip to main content\nOverview\nModels\nCapabilities\nTools\nFlow Sessions\nPricing\nmore_vert\nGoogle Flow\n\nYour AI creative studio built with Google's advanced generative models.\n\nCreate with Google Flow\n\nExplore Google AI Subscriptions. See FAQ.\nFeatures may vary by Google AI subscription tier, platform (web vs. mobile), and region. 18+.\n\nkeyboard_arrow_down\nUnlock your\nbest creative work\nplay_arrow\nOur Models\n\nGoogle Flow collaborates with creatives at every stage, from idea to execution\u2014all using Google\u2019s advanced generative models.\n\nGemini Omni\n\nCreate and edit videos from any input reference \u2014 real or generated. Omni is a leap forward in world understanding, multimodality, and conversational editing.\n\nTry in Google Flow\nLearn more\nNano Banana\n\nPowerful image generation and precise editing control. Our image models excel at subject consistency, text rendering, enhanced reasoning, and much more.\n\nTry in Google Flow\nLearn more\nVeo 3.1\n\nVeo delivers expanded creative controls, native audio, and quality videos. It excels in physics, realism and prompt adherence.\n\nTry in Google Flow\nLearn more\nGemini Omni\n\nCreate and edit videos from any input reference \u2014 real or generated. Omni is a leap forward in world understanding, multimodality, and conversational editing.\n\nTry in Google Flow\nLearn more\nNano Banana\n\nPowerful image generation and precise editing control. Our image models excel at subject consistency, text rendering, enhanced reasoning, and much more.\n\nTry in Google Flow\nLearn more\nVeo 3.1\n\nVeo delivers expanded creative controls, native audio, and quality videos. It excels in physics, realism and prompt adherence.\n\nTry in Google Flow\nLearn more\nGemini Omni\n\nCreate and edit videos from any input reference \u2014 real or generated. Omni is a leap forward in world understanding, multimodality, and conversational editing.\n\nTry in Google Flow\nLearn more\nNano Banana\n\nPowerful image generation and precise editing control. Our image models excel at subject consistency, text rendering, enhanced reasoning, and much more.\n\nTry in Google Flow\nLearn more\nVeo 3.1\n\nVeo delivers expanded creative controls, native audio, and quality videos. It excels in physics, realism and prompt adherence.\n\nTry in Google Flow\nLearn more\nGemini Omni",
+  "shot": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/flow_auth_credits_probe.png",
+  "one_google_url": "https://accounts.google.com/v3/signin/identifier?continue=https://one.google.com/ai?g1_st%3Dgau&followup=https://one.google.com/ai?g1_st%3Dgau&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S254270303:1790516455973795",
+  "one_google_snip": "Loading\nSign in\nwith your Google Account. This account will be available to other Google apps in the browser.\nEmail or phone\nForgot email?\nNot your computer? Use Guest mode to sign in privately. Learn more about using Guest mode\nNext\nCreate account\nEnglish (United States)\nHelp\nPrivacy\nTerms",
+  "ok": false,
+  "stop_reasons": [
+    "account_unknown",
+    "credits_unreadable"
+  ]
+}

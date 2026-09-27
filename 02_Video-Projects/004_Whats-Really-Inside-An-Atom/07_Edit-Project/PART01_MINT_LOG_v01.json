@@ -1,16 +1,25 @@
 {
-  "status": "STOPPED",
-  "stopped_at": "2026-09-27T13:11:28.020645+00:00",
-  "stop_reason": "Ben 27 Sep 14:10 UK \u2014 no more Flow/Veo spend on Part 01 until Ben KEEP on VO. Mid-flight: none (batch already finished).",
+  "status": "STOPPED_AUTH",
+  "stopped_at": "2026-09-27T13:43:04.449177+00:00",
+  "stop_reason": "Ben 27 Sep 14:35 UK Flow remint gate FAIL. Mini CDP Chrome (~/.hos-chrome-flow-benoats-googlemail-cdp :9222) is SIGNED OUT \u2014 Flow lands on /about pricing marketing page; AccountChooser shows blank Sign in. Credits not readable (not ~3492). No plates minted. Diagnostic: ~/.playwright-hos-flow-profile is logged in as benoats86@gmail.com (FORBIDDEN for HOS Veo) \u2014 not used for mint.",
   "film": "004_Whats-Really-Inside-An-Atom",
   "part": "01",
-  "vo_status": "PENDING BEN LISTEN (v04) \u2014 not KEEP. Hold notes: 7:39 each kind a weight \u00b7 6:06 a living hand \u00b7 3:38 But atoms",
+  "vo_status": "KEEP (v04) \u2014 Ben 27 Sep 2026; PR #144/#145 on main",
   "flow_ultra": {
-    "account": "benoats@googlemail.com",
-    "profile": "~/.playwright-hos-flow-profile",
-    "result": "BLOCKED \u2014 Insufficient credits (Fast + Lite + Quality). 0 Flow clips landed."
+    "account_required": "benoats@googlemail.com",
+    "cdp_profile": "~/.hos-chrome-flow-benoats-googlemail-cdp",
+    "cdp_port": 9222,
+    "cdp_result": "SIGNED OUT \u2014 /about pricing; blank Sign in; credits unreadable",
+    "playwright_profile_diagnostic": {
+      "path": "~/.playwright-hos-flow-profile",
+      "active_email_seen": "benoats86@gmail.com",
+      "note": "FORBIDDEN account for HOS Veo \u2014 not used; mint aborted"
+    },
+    "credits_before": null,
+    "credits_after": null,
+    "expected_credits": 3492
   },
-  "engine_used": "gemini-api-veo start-frame I2V (Flow Ultra fallback only). Stills: gemini-2.5-flash-image.",
+  "engine_used": "none \u2014 STOP before mint (CDP auth gate)",
   "summary": {
     "keep": 10,
     "fail_or_missing": 7,
@@ -384,5 +393,23 @@
       "start_frame_sha256": "4e766a6e1479b80a763a43a35e0aff875751b33736697efe38dc3fc8a2668710",
       "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
     }
-  }
+  },
+  "mint_attempt_2026_09_27_1435": {
+    "plates_requested": [
+      "08_smallest_uncuttable",
+      "09_uncuttable_blur",
+      "11_gold_foil_bounce",
+      "14_te_i_pullback",
+      "15_knife_coin_return",
+      "16_why_wrong_order",
+      "17_ledger_bridge"
+    ],
+    "minted": [],
+    "probe_artifacts": [
+      "07_Edit-Project/_qa_part01_mint_v01/flow_auth_credits_probe_v01.json",
+      "07_Edit-Project/_qa_part01_mint_v01/auth_url_sweep_v01.json",
+      "07_Edit-Project/_qa_part01_mint_v01/playwright_profile_auth_probe_v01.json"
+    ]
+  },
+  "updated_at": "2026-09-27T13:43:04.449306+00:00"
 }
