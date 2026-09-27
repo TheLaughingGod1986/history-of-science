@@ -1,0 +1,100 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "weights, it's a count. But the nucleus",
+  "words": [
+    {
+      "text": "weights,",
+      "start": 0.12,
+      "end": 0.58,
+      "type": "word",
+      "logprob": -0.3041396960616112
+    },
+    {
+      "text": " ",
+      "start": 0.58,
+      "end": 1.14,
+      "type": "spacing",
+      "logprob": -0.0008175606490112841
+    },
+    {
+      "text": "it's",
+      "start": 1.14,
+      "end": 1.26,
+      "type": "word",
+      "logprob": -0.00041035984281556637
+    },
+    {
+      "text": " ",
+      "start": 1.26,
+      "end": 1.3,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "a",
+      "start": 1.3,
+      "end": 1.38,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 1.38,
+      "end": 1.48,
+      "type": "spacing",
+      "logprob": -2.145764938177308e-06
+    },
+    {
+      "text": "count.",
+      "start": 1.48,
+      "end": 1.94,
+      "type": "word",
+      "logprob": -0.0003344868678899123
+    },
+    {
+      "text": " ",
+      "start": 1.94,
+      "end": 2.54,
+      "type": "spacing",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": "But",
+      "start": 2.54,
+      "end": 2.62,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": " ",
+      "start": 2.62,
+      "end": 2.66,
+      "type": "spacing",
+      "logprob": -2.861018856492592e-06
+    },
+    {
+      "text": "the",
+      "start": 2.66,
+      "end": 2.74,
+      "type": "word",
+      "logprob": -2.861018856492592e-06
+    },
+    {
+      "text": " ",
+      "start": 2.74,
+      "end": 2.8,
+      "type": "spacing",
+      "logprob": -3.957670196541585e-05
+    },
+    {
+      "text": "nucleus",
+      "start": 2.8,
+      "end": 3.3,
+      "type": "word",
+      "logprob": -3.957670196541585e-05
+    }
+  ],
+  "transcription_id": "Vr9BKgBZwWl80JVquxbE",
+  "audio_duration_secs": 3.5
+}

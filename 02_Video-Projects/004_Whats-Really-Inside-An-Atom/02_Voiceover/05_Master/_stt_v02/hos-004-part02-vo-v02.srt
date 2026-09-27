@@ -1,0 +1,131 @@
+1
+00:00:00,100 --> 00:00:03,440
+Manchester 1808. A school teacher named
+
+2
+00:00:03,500 --> 00:00:06,340
+John Dalton puts the old idea to work. His
+
+3
+00:00:06,380 --> 00:00:08,660
+atomic theory says every element is made
+
+4
+00:00:08,700 --> 00:00:11,460
+of its own kind of atom, and each kind has
+
+5
+00:00:11,500 --> 00:00:14,320
+its own weight. Hydrogen is the lightest.
+
+6
+00:00:14,840 --> 00:00:18,160
+Oxygen is heavier. Gold is heavier still.
+
+7
+00:00:18,760 --> 00:00:21,200
+Why believe him? Because elements always
+
+8
+00:00:21,220 --> 00:00:24,240
+combine in the same fixed amounts. Water
+
+9
+00:00:24,280 --> 00:00:26,240
+is always the same mix of hydrogen and
+
+10
+00:00:26,320 --> 00:00:28,960
+oxygen however you make it. That only
+
+11
+00:00:29,000 --> 00:00:30,940
+makes sense if both are made of tiny
+
+12
+00:00:31,040 --> 00:00:34,060
+pieces with fixed weights. Now chemists
+
+13
+00:00:34,100 --> 00:00:36,320
+had a ruler. Compare the weights of the
+
+14
+00:00:36,400 --> 00:00:39,340
+atoms and line them up. Sixty years later
+
+15
+00:00:39,380 --> 00:00:42,140
+in St. Petersburg, Dmitri Mendeleev does
+
+16
+00:00:42,200 --> 00:00:45,160
+exactly that. He writes each element on a
+
+17
+00:00:45,220 --> 00:00:48,500
+card and sorts the cards by weight. The
+
+18
+00:00:48,540 --> 00:00:51,340
+properties repeat. Soft metals that fizz
+
+19
+00:00:51,400 --> 00:00:54,100
+in water line up in one column. Harsh,
+
+20
+00:00:54,220 --> 00:00:56,840
+reactive chlorine, bromine, and iodine
+
+21
+00:00:57,300 --> 00:01:00,160
+line up in another. He even leaves gaps
+
+22
+00:01:00,200 --> 00:01:02,900
+for elements nobody has found yet. Then he
+
+23
+00:01:02,940 --> 00:01:05,680
+prints his table and mails it to chemists
+
+24
+00:01:05,740 --> 00:01:09,240
+across Europe. But look closer. Tellurium
+
+25
+00:01:09,300 --> 00:01:11,720
+is heavier than iodine, so by weight,
+
+26
+00:01:12,060 --> 00:01:15,000
+tellurium should come after it. Mendeleev
+
+27
+00:01:15,100 --> 00:01:17,520
+puts it before anyway because that's where
+
+28
+00:01:17,560 --> 00:01:20,440
+it behaves right. Cobalt and nickel have
+
+29
+00:01:20,480 --> 00:01:23,000
+the same trouble. Mendeleev guessed the
+
+30
+00:01:23,040 --> 00:01:25,120
+weights had been measured wrong. They
+
+31
+00:01:25,180 --> 00:01:28,440
+hadn't. So the table works, but it breaks
+
+32
+00:01:28,500 --> 00:01:29,300
+its own rule.
+
+33
+00:01:30,160 --> 00:01:32,960
+If weight isn't the real order, what is?

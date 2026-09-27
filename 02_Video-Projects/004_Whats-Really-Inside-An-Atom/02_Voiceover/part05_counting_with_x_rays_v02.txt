@@ -1,0 +1,19 @@
+Manchester, nineteen thirteen. Henry Moseley is twenty-five. He builds a tube with a little train inside, carrying a different metal target into the beam each time. He fires electrons at each target, and each metal gives off X-rays.
+
+It's the same invisible light Röntgen used to see the bones in a living hand.
+
+Moseley splits the X-rays with a crystal and measures their wavelength. Then he finds a pattern. Element by element, the X-rays step up in perfectly even jumps, like the rungs of a ladder. One rung per element, no matter how heavy it is.
+
+Count the rungs and you get a whole number for every element: the positive charge in its nucleus. Van den Broek's guess was right.
+
+Now sort the table by that number. Tellurium is fifty-two and iodine is fifty-three. Cobalt is twenty-seven and nickel is twenty-eight. The broken rule fixes itself. Mendeleev's instinct was right all along. He was just using the wrong ruler.
+
+And the ladder had missing rungs, at forty-three, sixty-one, seventy-two and seventy-five. Those were elements nobody had found yet. Over the next thirty-odd years, every one of them was found in nature or made in a lab.
+
+Why do the columns repeat? The charge in the nucleus decides how many electrons an atom holds, and the outer electrons decide how it behaves. Elements with the same kind of outer electrons end up in the same column. That's why the soft metals fizz together, and why chlorine and iodine react alike.
+
+Two years later, in nineteen fifteen, Moseley was killed in the First World War at Gallipoli. He was twenty-seven. Many scientists believe he would have won a Nobel Prize.
+
+So this is what's really inside an atom. First it was an idea. Then Dalton gave each kind a weight. Thomson found a piece inside it. Rutherford found its tiny centre. And Moseley counted it. Every element has its own number, and that number is the order of the periodic table. It isn't a list of weights. It's a count.
+
+But the nucleus had one more secret. Some nuclei don't sit still. They break apart and throw out rays of their own. That's the next story.

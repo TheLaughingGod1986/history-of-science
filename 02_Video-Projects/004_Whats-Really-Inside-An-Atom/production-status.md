@@ -6,26 +6,51 @@
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | Ben picked 26 Sep 2026 (the atom; why the periodic table has its order) |
 | Title | *Why Is the Periodic Table in This Order?* (main); Test & Compare *What's Really Inside an Atom?* and *How Small Can You Cut Gold?* |
-| Script | `01_Script/atom_script_master_v02.md`. **Ben: KEEP spoken words (26 Sep 2026).** VISUAL MUST times **re-timed 27 Sep from VO v01** (DRAFT pending VO listen KEEP). |
+| Script | `01_Script/atom_script_master_v02.md`. **Ben: KEEP spoken words (26 Sep 2026).** VISUAL MUST times **re-timed 27 Sep from VO v01** (DRAFT pending VO listen KEEP — re-time again after v02 KEEP). |
 | Script review | 88.9. Passed by hand by Ben, 26 Sep 2026 |
 | Pre-build vidIQ audit | Signed off by Ben, 26 Sep 2026 (vidIQ waived) |
 | Episode gate | Passed by Ben (manual), 26 Sep 2026 |
-| VO | **READY — awaiting Ben listen (STOP).** Masters in `02_Voiceover/05_Master/`. iCloud copy for phone. |
-| Re-time (Step 3) | **DRAFT pending VO KEEP.** `07_Edit-Project/VO_RETIME_v01.json` · script VISUAL MUST updated from measured VO · cold open every ~4–6 s (no 1:08–1:15 hold) |
+| VO | **v02 READY — awaiting Ben listen (STOP).** Route: breath-tighten from v01 (eleven_v3 ignored speed). Masters in `02_Voiceover/05_Master/`. iCloud copy for phone. v01 kept. |
+| Re-time (Step 3) | **DRAFT pending VO KEEP.** Still from v01 timings. Re-time from v02 after Ben KEEP. |
 | Plate boards (Step 4) | **DRAFT pending VO KEEP.** `07_Edit-Project/parts/part-0N_plates_v01.json` · `mint: false` · Explorer ×3 only (P02 Te swap · P04 stadium pea · P05 final table) |
-| Picture | **not started** — no Flow / no mint until Ben PASS on VO |
-| Runtime (recorded VO) | **536.160 s = 8:56** |
+| Picture | **not started** — no Flow / no mint until Ben PASS on VO v02 |
+| Runtime (VO v02) | **510.212 s = 8:30** (parts sum; listen with joins 511.611 s) |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
 ---
 
-## STOP — VO ready, awaiting Ben listen (27 Sep 2026)
+## STOP — VO v02 ready, awaiting Ben listen (27 Sep 2026)
 
-**Do not Flow / mint / spend picture until Ben passes the five VO masters.**
+**Do not Flow / mint / spend picture / re-time plate boards until Ben says KEEP on v02.**
 
-If Ben asks for a VO redo: re-time `atom_script_master_v02.md` VISUAL MUST + rebuild plate boards before any mint.
+If Ben asks for a VO redo: re-mint or edit, then re-time `atom_script_master_v02.md` VISUAL MUST + rebuild plate boards before any mint.
 
-### VO masters (v01)
+### VO masters (v02) — current listen
+
+**Route:** breath_tighten_from_v01 (cap silences to 0.60 s) + 0.35 s beat before “count”.  
+eleven_v3 speed attempt (Part 01 @ 1.15 / Parts 02–05 @ 1.12) ignored speed → 559.76 s / 9:19 — discarded. **No atempo.**
+
+| Part | Start | Duration | Mean dB | Peak dB | WAV sha256 |
+|---|---|---|---|---|---|
+| 01 | 0:00 | 71.762 s (1:11) | −23.6 | −3.9 | `5c18719b413b55cbcd64e4893841a0e7685a66a32bfc8401f09685612dd6f208` |
+| 02 | 1:11 | 93.097 s (1:33) | −21.8 | −3.8 | `ba857fafbfd06f1974907cf768a741ad9ad391288daa2a29f37d40f0e48d293a` |
+| 03 | 2:44 | 85.835 s (1:25) | −23.2 | −3.8 | `d821949adfef55c0169cc714f75a7f9b87d10ce176339c3250af32bada3267d6` |
+| 04 | 4:10 | 111.561 s (1:51) | −24.5 | −3.8 | `4443003f0182acfaa8bfcb7c1cd9833de759a9d32edba8951cbc1fb07ad5562d` |
+| 05 | 6:02 | 147.957 s (2:27) | −24.1 | −4.1 | `486223acd9fcd03a79d4a3fc96bfa9594fc72994e7c3c6141a2f728b532e8e59` |
+| **Total** | — | **510.212 s (8:30)** | spread 2.7 dB | — | meta `02_Voiceover/05_Master/VO_MASTERS_v02.json` |
+
+| Check | Result |
+|---|---|
+| Title question “What's really inside an atom?” | **0:09.04** (STT; ≤0:10) |
+| Dalton “each kind a weight” | **PASS** (not “kind of”) |
+| “It's a count.” | **PASS** (not “account”; 0.48 s gap a→count) |
+| Loudness | means −21.8…−24.5; peaks −3.8…−4.1; no in-part silence >1.0 s |
+| Listen mp3 sha256 | `48b04b75fcc653f133a6684dd5cb2dcf893fd54e6d7f94903ee15d4c224970ae` |
+
+Phone: `iCloud Drive/HOS UAT/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/`  
+Listen file: `hos_004_vo_all_parts_listen_v02.mp3`
+
+### VO masters (v01) — kept, superseded for listen
 
 | Part | Duration | Mean dB | WAV sha256 |
 |---|---|---|---|
@@ -36,9 +61,7 @@ If Ben asks for a VO redo: re-time `atom_script_master_v02.md` VISUAL MUST + reb
 | 05 | 157.120 s (2:37) | −24.3 | `8806482c4cbe96cf47d9c0962ac7f409c71040326f4b0ed9ad702b0b33180287` |
 | **Total** | **536.160 s (8:56)** | — | meta `02_Voiceover/05_Master/VO_MASTERS_v01.json` |
 
-Phone: `iCloud Drive/HOS UAT/004_Whats-Really-Inside-An-Atom/02_Voiceover/`
-
-### Re-time + chapter cards (from VO v01)
+### Re-time + chapter cards (from VO v01 — DRAFT until v02 KEEP)
 
 | Part | Film window | Chapter card |
 |---|---|---|
@@ -60,4 +83,4 @@ Cold open: picture change every ~4–6 s. Replaced the old 1:08–1:15 slow Te h
 | 04 | 10 | plate `07_explorer_stadium_pea` |
 | 05 | 11 | plate `09_explorer_final_table` (+ end card note) |
 
-**Next after Ben VO PASS:** mint Part 01 plates (Flow Veo 3.1) one at a time per STUDIO_PLAYBOOK §5.
+**Next after Ben VO v02 KEEP:** re-time VISUAL MUST + plate boards from v02, then mint Part 01 plates (Flow Veo 3.1) one at a time per STUDIO_PLAYBOOK §5.

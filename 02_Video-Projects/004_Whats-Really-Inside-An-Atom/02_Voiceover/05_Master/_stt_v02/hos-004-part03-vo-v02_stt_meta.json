@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-27T09:14:58.322269+00:00",
+  "audio": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part03_vo_v02.mp3",
+  "model_id": "scribe_v2",
+  "language_code": "eng",
+  "status": "generated",
+  "files": {
+    "raw_json": "hos-004-part03-vo-v02_stt_raw.json",
+    "transcript": "hos-004-part03-vo-v02_transcript.txt",
+    "srt": "hos-004-part03-vo-v02.srt"
+  },
+  "duration_seconds": 85.834875,
+  "word_count": 202
+}

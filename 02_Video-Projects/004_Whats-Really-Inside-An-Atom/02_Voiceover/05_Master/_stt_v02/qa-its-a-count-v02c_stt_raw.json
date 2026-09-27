@@ -1,0 +1,156 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "weights, it's a count. But the nucleus had one more se-",
+  "words": [
+    {
+      "text": "weights,",
+      "start": 0.12,
+      "end": 0.58,
+      "type": "word",
+      "logprob": -0.13182758260518312
+    },
+    {
+      "text": " ",
+      "start": 0.58,
+      "end": 1.14,
+      "type": "spacing",
+      "logprob": -0.0021892646327614784
+    },
+    {
+      "text": "it's",
+      "start": 1.14,
+      "end": 1.24,
+      "type": "word",
+      "logprob": -0.0010999966766576108
+    },
+    {
+      "text": " ",
+      "start": 1.24,
+      "end": 1.3,
+      "type": "spacing",
+      "logprob": -2.5152843591058627e-05
+    },
+    {
+      "text": "a",
+      "start": 1.3,
+      "end": 1.38,
+      "type": "word",
+      "logprob": -2.5152843591058627e-05
+    },
+    {
+      "text": " ",
+      "start": 1.38,
+      "end": 1.44,
+      "type": "spacing",
+      "logprob": -0.00026675479602999985
+    },
+    {
+      "text": "count.",
+      "start": 1.86,
+      "end": 2.3,
+      "type": "word",
+      "logprob": -0.00030278223372685414
+    },
+    {
+      "text": " ",
+      "start": 2.3,
+      "end": 2.88,
+      "type": "spacing",
+      "logprob": -3.4570634852570947e-06
+    },
+    {
+      "text": "But",
+      "start": 2.88,
+      "end": 2.98,
+      "type": "word",
+      "logprob": -3.4570634852570947e-06
+    },
+    {
+      "text": " ",
+      "start": 2.98,
+      "end": 3.0,
+      "type": "spacing",
+      "logprob": -1.7881377516459906e-06
+    },
+    {
+      "text": "the",
+      "start": 3.0,
+      "end": 3.1,
+      "type": "word",
+      "logprob": -1.7881377516459906e-06
+    },
+    {
+      "text": " ",
+      "start": 3.1,
+      "end": 3.14,
+      "type": "spacing",
+      "logprob": -0.0011064843274652958
+    },
+    {
+      "text": "nucleus",
+      "start": 3.14,
+      "end": 3.68,
+      "type": "word",
+      "logprob": -0.0011064843274652958
+    },
+    {
+      "text": " ",
+      "start": 3.68,
+      "end": 3.74,
+      "type": "spacing",
+      "logprob": -5.3165931603871286e-05
+    },
+    {
+      "text": "had",
+      "start": 3.74,
+      "end": 3.9,
+      "type": "word",
+      "logprob": -5.3165931603871286e-05
+    },
+    {
+      "text": " ",
+      "start": 3.9,
+      "end": 3.96,
+      "type": "spacing",
+      "logprob": -2.1219027985353023e-05
+    },
+    {
+      "text": "one",
+      "start": 3.96,
+      "end": 4.12,
+      "type": "word",
+      "logprob": -2.1219027985353023e-05
+    },
+    {
+      "text": " ",
+      "start": 4.12,
+      "end": 4.18,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "more",
+      "start": 4.18,
+      "end": 4.32,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 4.32,
+      "end": 4.44,
+      "type": "spacing",
+      "logprob": -0.7229411005973816
+    },
+    {
+      "text": "se-",
+      "start": 4.44,
+      "end": 4.48,
+      "type": "word",
+      "logprob": -0.48304611374624074
+    }
+  ],
+  "transcription_id": "UuwDLDwzPy3bolMn94kb",
+  "audio_duration_secs": 4.5
+}
