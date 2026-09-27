@@ -54,7 +54,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Part 01 UAT preview with TEMP music bed is in iCloud (`hos_004_part01_rough_v03.mp4`). STOP for Ben review. Do not start Part 02 until Ben passes Part 01.
+**Next:** Part 01 UAT preview **v04** (Ben's three scene fixes) is in iCloud. STOP for Ben review. Do not start Part 02 until Ben passes Part 01.
 
 ---
 
@@ -65,8 +65,32 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | `hos_004_part01_rough_v01.mp4` | 128.7 s | assembly bug (kept) — full Veo lengths |
 | `hos_004_part01_rough_v02.mp4` | 69.813 s | board windows; silent plates + VO |
 | `hos_004_part01_rough_v03.mp4` | 69.813 s | v02 picture + TEMP music bed |
+| `hos_004_part01_rough_v04.mp4` | 69.813 s | Ben 3-scene remints + same TEMP bed as v03 |
 
 iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/`
+
+### Ben UAT fixes → v04 (27 Sep 16:00 UK)
+
+**Plate mapping (v03 screenshots → board):**
+
+| Ben image | Plate | t_s |
+|---|---|---|
+| Image 1 — scientist + golden beam to head + ATOMOS plinths | `12_1913_targets` | 52.748 |
+| Image 2 — helmeted blue-suit little man + fake wall tiles | `09_uncuttable_blur` | 36.091 |
+| Image 3 — coin/knife + ATOM on table (open) | `01_coin_halves` (+ spine `15_knife_coin_return` @ 63.853) | 0.000 |
+
+**Remints (Flow Ultra CDP `benoats@googlemail.com`, scenery_only, strip Veo audio):**
+
+| Plate | Tries | Model | Change |
+|---|---|---|---|
+| `01_coin_halves` | 1 KEEP | Fast | Successive gold-coin halvings emphasised |
+| `09_uncuttable_blur` | 2 KEEP (try2 framing) | Fast | No character; ECU magnifier blur (no Explorer) |
+| `12_1913_targets` | 1 KEEP | **Quality** | Glow inside tube/apparatus; no laser-to-head; no ATOMOS |
+| `15_knife_coin_return` | 1 KEEP | Fast | Knife + coin halves return (open spine) |
+
+Credits: before **2692** → after **2602** (spent **~90**). Log: `PART01_MINT_LOG_v01.json` · `ben_fix_2026_09_27`.
+
+v04 sha256: `63cc242eeeb2ce2cd38d69a7f0459f03ab8791c2d8892912a8971cd74e49927c`
 
 ### TEMP music bed (UAT only — final bed at full-film assembly)
 
@@ -82,4 +106,4 @@ iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/`
 | v03 sha256 | `a4902dacbd99c8411921ac8e60898d79697dcbeea09a5c50c9c61215286248df` |
 | Levels (measured) | VO mean **-23.6 dB** / peak **-4.0 dB**; bed under speech mean **~-51.5 dB**; bed in gaps mean **~-40.8 dB**; mix peak **-4.0 dB** (below −1 dB) |
 
-Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · assembler `_assemble_part01_rough_v03_music.py`
+Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · `part01_rough_v04_land_meta.json` · assemblers `_assemble_part01_rough_v03_music.py` · `_assemble_part01_rough_v04.py`
