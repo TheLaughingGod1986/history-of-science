@@ -29,9 +29,11 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 
 1. **Use the channel's data:** the latest `audits/weekly/<date>/REPORT.md` and `audits/SHORTS_LOG.md`.
 2. **The lane** (`HOS_STRATEGY.md`): a familiar thing, and the moment we found out the truth about it. One person to follow, one room to set it in, one proof.
-3. **Competition check:** search the exact title signed out. If the top five are all channels with millions of subscribers, narrow the angle.
+3. **Competition check:** run `python3 00_Brand/Channel-Setup/tools/public_search.py "<title>" "<angle>" … --out <film>/11_Upload-Package/evidence_<date>_public_search.json` (YouTube autocomplete + top GB results, no login). If the top five for a phrase are all channels with millions of subscribers, narrow the angle.
+   - **Choosing the title for traction** (27 Sep 2026, HOS 004): the main title is the question the film actually answers, phrased the way people search, with the least big-channel competition. Broad umbrella titles and picture-led titles go into Test & Compare, not the main slot. Never the *How Did We Discover X?* formula.
 4. **Score it:** `templates/TOPIC_OPPORTUNITY_SCORE.md`.
-5. **Pre-build vidIQ audit:** copy `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` to the project's `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`.
+5. **Pre-build vidIQ audit:** copy `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` to the project's `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`. Fill the keyword section from `public_search.py`; vidIQ scores need Ben's login. **Ben may waive vidIQ:** then write "vidIQ waived by Ben, <date>" in the sign-off.
+   - **Gate overrides are Ben's alone.** If Ben passes a script under 90 by hand, record it in the audit sign-off ("script passed by hand at NN.N") and in `production-status.md` (Episode gate: passed by Ben, manual). `gate:episode` will still print REJECT on the score; that line is overridden, every other check must be OK.
 6. **Scaffold:** copy `02_Video-Projects/_template_NNN_Episode-Slug/` to `02_Video-Projects/NNN_Slug/`.
 7. **Ben picks.**
 
@@ -86,10 +88,33 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 
 ## 4. Voice
 
-- **ElevenLabs "Ben Orbit Narrator" only.** Voice id `kDch6ACCIpqgQ0NsU9kk`. Settings from `04_Audio/tools/orbit_voice.py`.
+- **ElevenLabs "Ben Orbit Narrator" only.** Voice id `kDch6ACCIpqgQ0NsU9kk`, model `eleven_v3`. Settings from `04_Audio/tools/orbit_voice.py`.
 - British spelling and pronunciation. Warm, upbeat, clear. Never a trailer voice.
 - **VO before picture.** Speech around −19 to −28 dB mean. **A silent or stripped narration never ships.**
 - Never use a video model's own speech as VO.
+- **The text is locked.** VO never changes a word of the signed-off script. If a take drops, adds or blurs a word, regenerate **that sentence alone** until it matches; don't rewrite it.
+
+### Speed and length (27 Sep 2026, from the HOS 004 takes)
+
+- **Speed:** `SPEED_BODY` 1.12 for Parts 02–05 and `SPEED_COLD_OPEN` 1.15 for Part 01 (`orbit_voice.py`). At the old 1.04 the narrator ran about 140 words a minute: 1,283 words took 8:58. `eleven_v3` honours the speed setting only partly (1.15 gave about 5% shorter, not 10%), so always measure the real take.
+- **Target:** the full VO about 8:15–8:30 for a 1,200–1,300-word script, so the film with end card and end screen stays inside 9 minutes. The title question lands as close to 0:08 as the text allows.
+- **If a take runs long,** fix it in this order and say which you used:
+  1. trim pauses over 0.6 s to about 0.6 s (not the part joins);
+  2. `atempo` on the assembled VO, **never above 1.06** (pitch-safe);
+  3. only then ask Ben about a text cut.
+
+### Check every take (before Ben listens)
+
+```bash
+python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_Script/<slug>_script_master_vNN.md [--part N]
+```
+
+- It transcribes the take and diffs it against the script (spelling and number differences are ignored), measures loudness, pauses and pace, and reports when the title question, promise and stakes land.
+- **FAIL** = a word missing or added, loudness outside −19 to −28 dB mean, peak above −1 dB, or a silence over 1.5 s inside a part. Listen to each flagged line; if the word really is wrong, regenerate that sentence.
+- "Sounds alike" warnings (names, digits) are usually the transcriber; listen anyway.
+- It can't judge warmth or delivery: **Ben listens to every VO before any picture spend.**
+- **Files:** `02_Voiceover/partNN_<slug>_vNN.mp3`, a full listen file `hos_NNN_vo_all_parts_listen_vNN.mp3`, single-line fixes as `_qa_<what>_vNN<letter>.wav`. Versions only go up; never overwrite.
+- **Record** each part's duration, start time in the full VO and sha256 in `production-status.md` (VO row), then re-time every part and chapter card from the real VO.
 
 ## 5. Picture
 
