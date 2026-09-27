@@ -1,0 +1,422 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "Nobel Prize. So this is what's really inside an atom. First it was an idea, then Dalton gave each kind a weight. Thompson found a piece inside it. Rutherford found",
+  "words": [
+    {
+      "text": "Nobel",
+      "start": 0.0,
+      "end": 0.12,
+      "type": "word",
+      "logprob": -0.027959740904225327
+    },
+    {
+      "text": " ",
+      "start": 0.12,
+      "end": 0.24,
+      "type": "spacing",
+      "logprob": -0.0011706650257110596
+    },
+    {
+      "text": "Prize.",
+      "start": 0.24,
+      "end": 0.76,
+      "type": "word",
+      "logprob": -0.0009847727851592936
+    },
+    {
+      "text": " ",
+      "start": 0.76,
+      "end": 0.76,
+      "type": "spacing",
+      "logprob": -3.3378546504536644e-06
+    },
+    {
+      "text": "So",
+      "start": 1.42,
+      "end": 1.56,
+      "type": "word",
+      "logprob": -3.3378546504536644e-06
+    },
+    {
+      "text": " ",
+      "start": 1.56,
+      "end": 1.62,
+      "type": "spacing",
+      "logprob": -0.00012337400403339416
+    },
+    {
+      "text": "this",
+      "start": 1.62,
+      "end": 1.74,
+      "type": "word",
+      "logprob": -0.00012337400403339416
+    },
+    {
+      "text": " ",
+      "start": 1.74,
+      "end": 1.78,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "is",
+      "start": 1.78,
+      "end": 1.9,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 1.9,
+      "end": 1.94,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "what's",
+      "start": 1.94,
+      "end": 2.2,
+      "type": "word",
+      "logprob": -1.788139141941277e-07
+    },
+    {
+      "text": " ",
+      "start": 2.2,
+      "end": 2.26,
+      "type": "spacing",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": "really",
+      "start": 2.26,
+      "end": 2.52,
+      "type": "word",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": " ",
+      "start": 2.52,
+      "end": 2.56,
+      "type": "spacing",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": "inside",
+      "start": 2.56,
+      "end": 2.98,
+      "type": "word",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": " ",
+      "start": 2.98,
+      "end": 3.02,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "an",
+      "start": 3.02,
+      "end": 3.1,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 3.1,
+      "end": 3.18,
+      "type": "spacing",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": "atom.",
+      "start": 3.18,
+      "end": 3.52,
+      "type": "word",
+      "logprob": -4.529941816144856e-06
+    },
+    {
+      "text": " ",
+      "start": 3.52,
+      "end": 3.52,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "First",
+      "start": 4.24,
+      "end": 4.5,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 4.5,
+      "end": 4.54,
+      "type": "spacing",
+      "logprob": -0.07889074087142944
+    },
+    {
+      "text": "it",
+      "start": 4.54,
+      "end": 4.6,
+      "type": "word",
+      "logprob": -0.07889074087142944
+    },
+    {
+      "text": " ",
+      "start": 4.6,
+      "end": 4.64,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "was",
+      "start": 4.64,
+      "end": 4.72,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 4.72,
+      "end": 4.74,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "an",
+      "start": 4.74,
+      "end": 4.8,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 4.8,
+      "end": 4.88,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "idea,",
+      "start": 4.88,
+      "end": 5.34,
+      "type": "word",
+      "logprob": -0.004649684950527444
+    },
+    {
+      "text": " ",
+      "start": 5.34,
+      "end": 5.88,
+      "type": "spacing",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": "then",
+      "start": 5.88,
+      "end": 6.08,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": " ",
+      "start": 6.08,
+      "end": 6.1,
+      "type": "spacing",
+      "logprob": -0.0013385392958298326
+    },
+    {
+      "text": "Dalton",
+      "start": 6.1,
+      "end": 6.58,
+      "type": "word",
+      "logprob": -0.0013385392958298326
+    },
+    {
+      "text": " ",
+      "start": 6.58,
+      "end": 6.7,
+      "type": "spacing",
+      "logprob": -1.07287787614041e-05
+    },
+    {
+      "text": "gave",
+      "start": 6.7,
+      "end": 6.96,
+      "type": "word",
+      "logprob": -1.07287787614041e-05
+    },
+    {
+      "text": " ",
+      "start": 6.96,
+      "end": 7.02,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "each",
+      "start": 7.02,
+      "end": 7.2,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 7.2,
+      "end": 7.3,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "kind",
+      "start": 7.3,
+      "end": 7.6,
+      "type": "word",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": " ",
+      "start": 7.6,
+      "end": 7.66,
+      "type": "spacing",
+      "logprob": -0.006715467199683189
+    },
+    {
+      "text": "a",
+      "start": 7.66,
+      "end": 7.72,
+      "type": "word",
+      "logprob": -0.006715467199683189
+    },
+    {
+      "text": " ",
+      "start": 7.72,
+      "end": 7.78,
+      "type": "spacing",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": "weight.",
+      "start": 7.78,
+      "end": 8.14,
+      "type": "word",
+      "logprob": -1.158032448854231e-06
+    },
+    {
+      "text": " ",
+      "start": 8.14,
+      "end": 8.14,
+      "type": "spacing",
+      "logprob": -0.2254871279001236
+    },
+    {
+      "text": "Thompson",
+      "start": 8.8,
+      "end": 9.22,
+      "type": "word",
+      "logprob": -0.2254871279001236
+    },
+    {
+      "text": " ",
+      "start": 9.22,
+      "end": 9.34,
+      "type": "spacing",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": "found",
+      "start": 9.34,
+      "end": 9.54,
+      "type": "word",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": " ",
+      "start": 9.54,
+      "end": 9.58,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "a",
+      "start": 9.58,
+      "end": 9.66,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 9.66,
+      "end": 9.72,
+      "type": "spacing",
+      "logprob": -8.34461570775602e-06
+    },
+    {
+      "text": "piece",
+      "start": 9.72,
+      "end": 10.0,
+      "type": "word",
+      "logprob": -8.34461570775602e-06
+    },
+    {
+      "text": " ",
+      "start": 10.0,
+      "end": 10.06,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "inside",
+      "start": 10.06,
+      "end": 10.54,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 10.54,
+      "end": 10.6,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "it.",
+      "start": 10.6,
+      "end": 10.74,
+      "type": "word",
+      "logprob": -5.642526346605337e-06
+    },
+    {
+      "text": " ",
+      "start": 10.74,
+      "end": 11.38,
+      "type": "spacing",
+      "logprob": -1.4305104514278355e-06
+    },
+    {
+      "text": "Rutherford",
+      "start": 11.38,
+      "end": 11.84,
+      "type": "word",
+      "logprob": -1.4305104514278355e-06
+    },
+    {
+      "text": " ",
+      "start": 11.84,
+      "end": 11.94,
+      "type": "spacing",
+      "logprob": -0.014013348147273064
+    },
+    {
+      "text": "found",
+      "start": 11.94,
+      "end": 11.98,
+      "type": "word",
+      "logprob": -0.014013348147273064
+    }
+  ],
+  "transcription_id": "xzDDnK1MLNnHlkUKPrSy",
+  "audio_duration_secs": 12.0
+}

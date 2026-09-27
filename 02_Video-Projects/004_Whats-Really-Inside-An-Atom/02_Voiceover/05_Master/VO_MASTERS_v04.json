@@ -1,0 +1,80 @@
+{
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "version": "v04",
+  "status": "LOCKED KEEP",
+  "route": "atempo=1.03 on each v03 part master (pitch-safe)",
+  "atempo": 1.03,
+  "source": "v03",
+  "total_duration_s": 498.285,
+  "listen_duration_s": 499.685,
+  "listen_mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_vo_all_parts_listen_v04.mp3",
+  "listen_mp3_sha256": "e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd",
+  "listen_wav_sha256": "25eaa4ce91dd705e3c646db5b5a7bd25a8289716c26ad3334a6482e92bc14245",
+  "parts": [
+    {
+      "part": "01",
+      "start_s": 0.0,
+      "duration_s": 69.813,
+      "mean_db": -23.8,
+      "peak_db": -4.2,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v04.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part01_vo_v04.wav",
+      "mp3_sha256": "3b1484c7ca5822bec2748929b4a9c29caf59fc4e1465d6ebcc68c091de659360",
+      "wav_sha256": "9bd187b1dfb7dfd7e95071d10db34a020d7f3bfe99feb66040fab47eda36d44e"
+    },
+    {
+      "part": "02",
+      "start_s": 69.813,
+      "duration_s": 91.204,
+      "mean_db": -22.0,
+      "peak_db": -4.1,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part02_vo_v04.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part02_vo_v04.wav",
+      "mp3_sha256": "a9bfe7e731c16bda48a7193319cfb0672ae5201f05f91a0bbdacec31b82cd0d9",
+      "wav_sha256": "683aa97018b1acadc2beccffdc975441a60e21f2b11ed96e0c6b98d684bc85a2"
+    },
+    {
+      "part": "03",
+      "start_s": 161.017,
+      "duration_s": 83.73,
+      "mean_db": -23.4,
+      "peak_db": -4.1,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part03_vo_v04.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part03_vo_v04.wav",
+      "mp3_sha256": "d1582cafb2f231ee5d484655fb531175450ece1549642144250714fca12bb8b8",
+      "wav_sha256": "74fcf8c2278ba170b46f132998067ce0e9a56ed8883e2b92442ebd49471eec36"
+    },
+    {
+      "part": "04",
+      "start_s": 244.747,
+      "duration_s": 109.022,
+      "mean_db": -24.7,
+      "peak_db": -4.1,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part04_vo_v04.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part04_vo_v04.wav",
+      "mp3_sha256": "84280dc45cf0f89964dda5d7c25f4f2c5f7e5e2ca9435d0785f708093b0cc3e9",
+      "wav_sha256": "461f384a6a4c7b6c7ff100587113f63541dd5f6dd68e8da2a765daec20fecf0a"
+    },
+    {
+      "part": "05",
+      "start_s": 353.769,
+      "duration_s": 144.516,
+      "mean_db": -24.3,
+      "peak_db": -4.4,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part05_vo_v04.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/hos_004_part05_vo_v04.wav",
+      "mp3_sha256": "16e761964d8bd11c3a5f7a4c167feb45f8a1a50747eed8f2772e02f6ce0e9bb0",
+      "wav_sha256": "191d07c4c7f1430ac8d1da465a40793ab898d935d9b4e9571623df7e69953ca8"
+    }
+  ],
+  "title_question_s": 8.78,
+  "dalton_check": "PASS \u2014 STT: 'then Dalton gave each kind a weight'",
+  "its_a_count_check": "PASS \u2014 STT: \"it's a count\" (not account)",
+  "vo_check": {
+    "tool": "00_Brand/Channel-Setup/tools/vo_check.py",
+    "parts": "PASS \u00d75 (word check skipped: no faster-whisper)",
+    "listen": "PASS",
+    "listen_mean_db": -23.6,
+    "listen_peak_db": -4.1
+  }
+}

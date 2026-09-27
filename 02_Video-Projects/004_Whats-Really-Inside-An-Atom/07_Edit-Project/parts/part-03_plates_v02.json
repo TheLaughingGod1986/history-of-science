@@ -1,0 +1,123 @@
+{
+  "status": "DRAFT_PENDING_PART01_UAT",
+  "mint": false,
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "working_title": "Why Is the Periodic Table in This Order?",
+  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v04 LOCKED KEEP",
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship",
+    "Explorer in Part 01 / first minute"
+  ],
+  "notes": "Re-timed from VO v04 (atempo 1.03 on v03 KEEP). Same plate intent as v01 boards. No on-screen SEE labels. Explorer only on marked plates (never Part 01). mint:false until Part 01 UAT PASS.",
+  "part": "03",
+  "title": "The Crumb Inside the Atom",
+  "vo_file": "02_Voiceover/part03_the_crumb_inside_the_atom_v02.txt",
+  "vo_duration_s": 83.73,
+  "vo_master": "02_Voiceover/05_Master/hos_004_part03_vo_v04.wav",
+  "chapter_card": {
+    "at": "2:41",
+    "duration_s": 1.5,
+    "text": "The Crumb Inside the Atom",
+    "at_s": 161.017
+  },
+  "film_window": "2:51\u20134:20",
+  "set_language": "ONE persistent Cambridge 1897 cathode-ray lab set: long glass tube, glowing beam, magnet, charged plates, swap-in electrodes. Later beat: 1904 plum-pudding model as a clear cartoon. Say 'same 1897 Cambridge tube set'. Never 'same DNA'.",
+  "continuity_lock": "No Explorer this part. Readable J.J. Thomson face (moustache, round glasses).",
+  "explorer_lock": "NONE this part.",
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels added in edit); twin Explorer; never say 'same DNA' or 'lab DNA' in a Veo prompt. No Explorer. No Orbit.",
+  "motion_lock": "Real Veo motion; Quality for tube beam glow.",
+  "quality_note": "Veo 3.1 Quality for beam / glow. No lava.",
+  "plates": [
+    {
+      "id": "01_thomson_tube",
+      "t": "2:41",
+      "explorer": false,
+      "i2v": false,
+      "side_label": "J.J. THOMSON \u00b7 1897",
+      "vo_land": "Cambridge, eighteen ninety-seven. J.J. Thomson is studying a strange glow.",
+      "prompt": "Animistry premium 3D cartoon. Cambridge 1897 lab. J.J. Thomson (readable face, moustache, round glasses) at a long glass tube with a glowing beam. Continuous. Silent. No Explorer. HARD REJECT: Orbit, unfinished face, lava.",
+      "t_s": 161.017
+    },
+    {
+      "id": "02_cathode_rays_question",
+      "t": "2:49",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "Pump the air out of a glass tube, run electricity through it, and a beam shoots from one end to the other. Scientists called them cathode rays. But what were they made of? Light, or stuff?",
+      "prompt": "Same 1897 Cambridge tube set. Beam shoots end to end; question mood. Continuous beam. Quality clean glow. Silent. HARD REJECT: Orbit, Explorer, underside bulb.",
+      "t_s": 169.3
+    },
+    {
+      "id": "03_magnet_bends",
+      "t": "2:59",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "Thomson brings a magnet close. The beam bends. He tries two charged metal plates. It bends again. Light doesn't do that. Tiny charged particles do.",
+      "prompt": "Same tube set. Magnet approaches \u2014 beam bends; then two metal plates \u2014 bends again. Continuous bend. Silent. HARD REJECT: Orbit, Explorer, lava.",
+      "t_s": 178.712
+    },
+    {
+      "id": "04_far_lighter",
+      "t": "3:11",
+      "explorer": false,
+      "i2v": true,
+      "side_label": "FAR LIGHTER",
+      "vo_land": "Then he measures how far they bend, and works out how heavy they must be. The answer is astonishing: far lighter than a hydrogen atom, the lightest thing anyone knew. We now know each one is about two thousand times lighter.",
+      "prompt": "Same tube set. Measurement of bend; crumb visual far lighter than a hydrogen ball. Continuous. Silent. HARD REJECT: Orbit, garbled dials.",
+      "t_s": 190.947
+    },
+    {
+      "id": "05_same_from_every_metal",
+      "t": "3:26",
+      "explorer": false,
+      "i2v": true,
+      "side_label": "ELECTRON",
+      "vo_land": "But here is the strange part. It doesn't matter which metal he uses. The same particles come out every time.",
+      "prompt": "Same tube set. Different metal electrodes swap in; same tiny particles stream out each time. Continuous swap. Silent. HARD REJECT: Orbit, Explorer.",
+      "t_s": 206.007
+    },
+    {
+      "id": "06_uncuttable_cut",
+      "t": "3:34",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "So the uncuttable thing can be cut. Every atom carries these tiny negative particles. Thomson called them corpuscles. Today we call them electrons.",
+      "prompt": "Cartoon atom cracks open; tiny negative crumbs inside. Continuous crack. Silent. HARD REJECT: Orbit, gore, DNA helix.",
+      "t_s": 213.536
+    },
+    {
+      "id": "07_plum_pudding",
+      "t": "3:46",
+      "explorer": false,
+      "i2v": false,
+      "side_label": "PLUM PUDDING \u00b7 1904",
+      "vo_land": "But atoms have no overall charge, so something positive must balance them out. A few years later, in nineteen-oh-four, Thomson made his guess: a soft ball of positive stuff with electrons dotted through it, like raisins in a pudding.",
+      "prompt": "Animistry premium 3D cartoon. 1904 plum pudding model: soft positive sphere with electron raisins. Continuous gentle rotate. Silent. HARD REJECT: photoreal food only, Orbit, Explorer.",
+      "t_s": 225.772
+    },
+    {
+      "id": "08_lovely_and_wrong",
+      "t": "4:02",
+      "explorer": false,
+      "i2v": true,
+      "side_label": null,
+      "vo_land": "It was a lovely idea. It was also wrong.",
+      "prompt": "Same pudding model cracks / dissolves \u2014 lovely, and wrong. Continuous fail. Silent. HARD REJECT: Orbit, Explorer, Ken Burns only.",
+      "t_s": 241.773
+    }
+  ]
+}
