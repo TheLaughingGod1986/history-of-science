@@ -10,16 +10,16 @@
 | Script review | 88.9. Passed by hand by Ben, 26 Sep 2026 |
 | Pre-build vidIQ audit | Signed off by Ben, 26 Sep 2026 (vidIQ waived) |
 | Episode gate | Passed by Ben (manual), 26 Sep 2026 |
-| VO | **v04 LOCKED KEEP** (Ben 27 Sep 13:11). `atempo=1.03` on each v03 part. Masters in `02_Voiceover/05_Master/`. iCloud listen for phone. |
+| VO | **v04 PENDING BEN LISTEN** (not KEEP). Hold: 7:39 “each kind a weight” · 6:06 “a living hand” · 3:38 “But atoms”. Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
 | Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Part 01 `mint: true` · Parts 02–05 `mint: false` · Explorer ×3 (P02/P04/P05) · no SEE labels · no Explorer in first minute |
-| Picture | **Part 01 minting** (step C, Ben go-ahead 27 Sep 13:11). Board split + word-diff landed first. |
+| Picture | **Part 01 STOPPED** (Ben 27 Sep 14:10). Flow Ultra out of credits; Gemini Veo fallback: **10 KEEP / 7 FAIL**. No more Veo until Ben VO KEEP. See `PART01_MINT_STOP_2026-09-27.md`. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
 ---
 
-## VO v04 — LOCKED KEEP (27 Sep 2026)
+## VO v04 — PENDING BEN LISTEN (27 Sep 2026)
 
 **Route:** `ffmpeg -af atempo=1.03` on each v03 part master (pitch-safe). v01–v03 kept.
 
@@ -54,4 +54,4 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Part 01 Flow mint in progress → assemble rough → STOP for Ben UAT. Do not start Part 02.
+**Next:** Ben listen on VO v04. No Flow/Veo Part 01 spend until Ben KEEP on VO. Do not assemble rough. Do not start Part 02.
