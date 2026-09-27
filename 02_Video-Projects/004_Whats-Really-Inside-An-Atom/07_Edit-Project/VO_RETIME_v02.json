@@ -76,6 +76,6 @@
       "act": "final numbered table"
     }
   ],
-  "note": "Re-timed from VO v04 PENDING BEN LISTEN (atempo 1.03 on v03). Not VO KEEP until Ben says so. Part 01 plates mint:true was the Ben-allowed exception; mint STOPPED 27 Sep 14:10. 02\u201305 mint:false.",
-  "vo_status": "PENDING BEN LISTEN"
+  "note": "Re-timed from VO v04 KEEP (Ben, 27 Sep; atempo 1.03 on v03). Part 01 plates mint:true was the Ben-allowed exception; mint STOPPED 27 Sep 14:10. 02\u201305 mint:false.",
+  "vo_status": "KEEP"
 }

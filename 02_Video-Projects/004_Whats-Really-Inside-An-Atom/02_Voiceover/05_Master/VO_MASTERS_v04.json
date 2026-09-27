@@ -1,7 +1,7 @@
 {
   "film": "004_Whats-Really-Inside-An-Atom",
   "version": "v04",
-  "status": "PENDING BEN LISTEN",
+  "status": "KEEP",
   "route": "atempo=1.03 on each v03 part master (pitch-safe)",
   "atempo": 1.03,
   "source": "v03",
@@ -68,18 +68,18 @@
     }
   ],
   "title_question_s": 8.78,
-  "dalton_check": "PASS \u2014 STT: 'then Dalton gave each kind a weight'",
-  "its_a_count_check": "PASS \u2014 STT: \"it's a count\" (not account)",
+  "dalton_check": "PASS — STT: 'then Dalton gave each kind a weight'",
+  "its_a_count_check": "PASS — STT: \"it's a count\" (not account)",
   "vo_check": {
     "tool": "00_Brand/Channel-Setup/tools/vo_check.py",
-    "parts": "PASS \u00d75 (word check skipped: no faster-whisper)",
-    "listen": "PASS",
+    "parts": "Rerun 27 Sep with faster-whisper: Parts 01-04 PASS; Part 05 FAIL at 6:06 and 7:39 (transcriber, Ben KEEP)",
+    "listen": "FAIL at 3:38, 6:06, 7:39 (transcriber, Ben KEEP); see VO_CHECK_v04_RERUN.md",
     "listen_mean_db": -23.6,
     "listen_peak_db": -4.1
   },
-  "keep": false,
-  "note": "",
-  "ben_status": "PENDING BEN LISTEN",
+  "keep": true,
+  "note": "Ben listened at 3:38, 6:06 and 7:39 and said keep; the vo_check word FAILs there are the transcriber.",
+  "ben_status": "KEEP (Ben, 27 Sep 2026)",
   "listen_holds": [
     {
       "t": "7:39",

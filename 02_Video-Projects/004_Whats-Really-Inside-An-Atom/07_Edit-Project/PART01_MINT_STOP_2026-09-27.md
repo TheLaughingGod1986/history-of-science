@@ -1,5 +1,7 @@
 # HOS 004 Part 01 mint — STOP (Ben 27 Sep 14:10 UK)
 
+> **Update 27 Sep:** Ben said KEEP on VO v04. The stop stays until Ben decides how to finish the 7 missing plates and reviews the 10 kept plates in motion.
+
 **Status:** STOPPED. No further Flow / Veo spend on Part 01 until Ben KEEP on VO.
 **VO:** v04 = **PENDING BEN LISTEN** (not KEEP). Hold: 7:39 “each kind a weight” · 6:06 “a living hand” · 3:38 “But atoms”.
 **Flow Ultra (`benoats@googlemail.com`):** Insufficient credits — 0 Flow clips. Fallback was Gemini API Veo.
