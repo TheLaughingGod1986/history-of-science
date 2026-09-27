@@ -45,8 +45,9 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Cut a gold coin in half. Then cut it again. And again.",
-      "prompt": "Animistry premium 3D cartoon. Wooden bench, a gold coin; a knife halves it, then halves a half — continuous cutting motion at frame 0. Silent. No Explorer. No Orbit. No readable text. HARD REJECT: photoreal, Ken Burns only, Explorer face.",
-      "t_s": 0.0
+      "prompt": "Animistry premium 3D cartoon. Cold-open SPINE: successive gold-coin halvings as a clear repeated beat. Wooden bench close-up. A knife cuts a thick gold coin cleanly in HALF; camera pushes closer; the half is cut again into a quarter; closer still; that piece is cut again — each piece smaller, rhythm of cut-cut-cut. Hands and knife only — NO full body, NO Explorer, NO helmet figure. No 'ATOM' lettering on the table edge. Continuous cutting motion from frame 0. Silent. HARD REJECT: photoreal, Ken Burns only, Explorer, Orbit, fake element tiles, one weak single cut.",
+      "t_s": 0.0,
+      "ben_fix_2026_09_27": "Image 3 — emphasise successive halvings; spine of cold open"
     },
     {
       "id": "02_atom_answer",
@@ -122,11 +123,12 @@
       "id": "09_uncuttable_blur",
       "t": "0:36",
       "explorer": false,
-      "i2v": true,
+      "i2v": false,
       "side_label": null,
       "vo_land": "Nobody had ever seen one.",
-      "prompt": "Animistry premium 3D cartoon. Chip shrinks to a grey bead; chisel slips off; magnifying glass shows nothing but blur. Continuous slip + blur. Silent. HARD REJECT: Orbit, Explorer, Ken Burns only.",
-      "t_s": 36.091
+      "prompt": "Animistry premium 3D cartoon. VO beat: nobody had ever SEEN an atom. NO characters, NO Explorer, NO helmeted little man, NO blue suit figure. Macro of the last tiny gold/stone chip under a magnifying glass — the glass shows empty blur / soft haze, nothing readable. Camera drifts closer through the blur. If any wall tiles appear they must show REAL element symbols only (H He Li C O Fe Au) with clear letters — never fake symbols like Re Fr MP Gt Op. Continuous drift + blur. Silent. HARD REJECT: Explorer, Orbit, tiny mascot, fake element letters, Ken Burns only, photoreal.",
+      "t_s": 36.091,
+      "ben_fix_2026_09_27": "Image 2 — remove little man; no Explorer in first minute; real element letters only"
     },
     {
       "id": "10_electron_tube",
@@ -155,8 +157,9 @@
       "i2v": false,
       "side_label": "1913",
       "vo_land": "And the final proof came from a young physicist with a beam of X-rays,",
-      "prompt": "Animistry premium 3D cartoon. 1913 lab; a row of metal targets glows one after another under a beam. Continuous glow chase. Quality clean light. Silent. HARD REJECT: lava, Orbit, Explorer.",
-      "t_s": 52.748
+      "prompt": "Animistry premium 3D cartoon. VO: young physicist with a beam of X-rays (Moseley / early X-ray spectroscopy). Readable-faced young man in 1910s lab coat beside a glass X-ray / cathode tube on a wooden bench. Soft glow CONTAINED INSIDE the glass tube only — a pale beam bends slightly toward a metal target plate INSIDE or at the mouth of the apparatus. Camera slowly pushes past tube to a short row of metal target samples that light one after another. NO beam through open air. NOTHING touching a person's head or body. NO 'ATOMOS' plinths, signs, or carved labels. Continuous tube glow + target chase. Quality clean glow. Silent. HARD REJECT: laser to head, air beam, ATOMOS text, Explorer, Orbit, lava, photoreal.",
+      "t_s": 52.748,
+      "ben_fix_2026_09_27": "Image 1 — rebuild: glow inside tube; no laser-to-head; drop ATOMOS"
     },
     {
       "id": "13_numbered_cards",
@@ -185,8 +188,9 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "and a question that started with a knife and a coin.",
-      "prompt": "Animistry premium 3D cartoon. Knife and coin halves return beside the giant table. Continuous settle. Silent. No Explorer. HARD REJECT: Ken Burns only, Orbit.",
-      "t_s": 63.853
+      "prompt": "Animistry premium 3D cartoon. Cold-open spine RETURN: knife and successive gold-coin halves settle on the wooden bench — the same cutting story closing. Camera eases in on the knife resting across smaller and smaller coin pieces. NO Explorer, NO other scientist, NO periodic-table wall. Continuous settle. Silent. HARD REJECT: Ken Burns only, Orbit, Explorer, fake tiles, ATOMOS signs.",
+      "t_s": 63.853,
+      "ben_fix_2026_09_27": "Image 3 spine — knife/coin return near end"
     },
     {
       "id": "16_why_wrong_order",
