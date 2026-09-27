@@ -3,7 +3,7 @@
   "mint": false,
   "film": "004_Whats-Really-Inside-An-Atom",
   "working_title": "Why Is the Periodic Table in This Order?",
-  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v04 KEEP",
+  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v04 KEEP",
   "clip_use_s": 7.9,
   "xfade_s": 0.35,
   "always_fails": [
@@ -31,7 +31,7 @@
     "text": "The Shell That Bounced Back",
     "at_s": 244.747
   },
-  "film_window": "4:20–6:19",
+  "film_window": "4:20\u20136:19",
   "set_language": "Manchester 1909 dark scattering room (Rutherford, Geiger, Marsden, gold foil, green scintillation screen); then empty football stadium pea metaphor. Say 'same 1909 dark scattering set' / 'same empty stadium set'. Never 'same DNA'.",
   "continuity_lock": "Explorer once only on stadium pea beat. Readable Rutherford face (big moustache).",
   "explorer_lock": "Exactly ONE Explorer plate: stadium pea. On model. Attach Explorer reference. Not in first minute (already past).",
@@ -44,7 +44,7 @@
       "t": "4:05",
       "explorer": false,
       "i2v": false,
-      "side_label": "ERNEST RUTHERFORD · 1909",
+      "side_label": "ERNEST RUTHERFORD \u00b7 1909",
       "vo_land": "Manchester, nineteen-oh-nine. Ernest Rutherford has a new kind of bullet: alpha particles, tiny and fast, thrown out by radioactive rocks.",
       "prompt": "Animistry premium 3D cartoon. Manchester 1909 dark room. Rutherford (readable face, big moustache) with Geiger and young Marsden at gold foil apparatus. Continuous setup. Silent. No Explorer. HARD REJECT: Orbit, unfinished faces, gore.",
       "t_s": 244.747
@@ -76,7 +76,7 @@
       "i2v": true,
       "side_label": null,
       "vo_land": "But about one in eight thousand bounces back.",
-      "prompt": "Same set. One bullet bounces back at a steep angle — surprise. Continuous. Silent. HARD REJECT: Orbit, Explorer.",
+      "prompt": "Same set. One bullet bounces back at a steep angle \u2014 surprise. Continuous. Silent. HARD REJECT: Orbit, Explorer.",
       "t_s": 284.035
     },
     {
@@ -94,7 +94,7 @@
       "t": "4:55",
       "explorer": false,
       "i2v": false,
-      "side_label": "NUCLEUS · 1911",
+      "side_label": "NUCLEUS \u00b7 1911",
       "vo_land": "Then, in nineteen-eleven, he explains it. Nearly all of an atom's mass is packed into a tiny, positive centre, which he calls the nucleus. The electrons sit far outside it. Everything in between is almost empty.",
       "prompt": "Animistry premium 3D cartoon. Cutaway atom: tiny positive centre, electrons far out, empty between. Continuous. Silent. HARD REJECT: Orbit, DNA helix, Explorer.",
       "t_s": 295.039
@@ -116,7 +116,7 @@
       "i2v": true,
       "side_label": null,
       "vo_land": "The electrons would be somewhere out past the back row of seats. Everything else, all around you, is nothing at all.",
-      "prompt": "Same empty stadium set. Camera lifts past empty seats — vast nothing. Continuous. Silent. No Explorer required. HARD REJECT: Orbit, crowd fill.",
+      "prompt": "Same empty stadium set. Camera lifts past empty seats \u2014 vast nothing. Continuous. Silent. No Explorer required. HARD REJECT: Orbit, crowd fill.",
       "t_s": 319.801
     },
     {
@@ -126,7 +126,7 @@
       "i2v": false,
       "side_label": "CHARGE?",
       "vo_land": "That raised a new question. If every element has its own nucleus, what makes one nucleus different from another? A Dutch lawyer and amateur scientist, Antonius van den Broek, had a bold guess: an element's place in the table might equal the positive charge in its nucleus.",
-      "prompt": "Animistry premium 3D cartoon. Table place linked to a glowing positive charge in a nucleus — guess, not proof yet. Continuous. Silent. HARD REJECT: Orbit, Explorer, DNA helix.",
+      "prompt": "Animistry premium 3D cartoon. Table place linked to a glowing positive charge in a nucleus \u2014 guess, not proof yet. Continuous. Silent. HARD REJECT: Orbit, Explorer, DNA helix.",
       "t_s": 329.888
     },
     {

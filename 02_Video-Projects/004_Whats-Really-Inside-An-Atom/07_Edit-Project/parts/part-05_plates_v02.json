@@ -3,7 +3,7 @@
   "mint": false,
   "film": "004_Whats-Really-Inside-An-Atom",
   "working_title": "Why Is the Periodic Table in This Order?",
-  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v04 KEEP",
+  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v04 KEEP",
   "clip_use_s": 7.9,
   "xfade_s": 0.35,
   "always_fails": [
@@ -31,7 +31,7 @@
     "text": "Counting With X-rays",
     "at_s": 353.769
   },
-  "film_window": "6:19–8:56",
+  "film_window": "6:19\u20138:56",
   "set_language": "Manchester 1913 Moseley tube with toy-train metal targets; crystal spectrometer ladder; periodic table re-sort; quiet memorial desk (no battle). Say 'same 1913 Moseley tube set' / 'same numbered table set'. Never 'same DNA'.",
   "continuity_lock": "Explorer once only at the final numbered table. One X-rays callback flash (~4 s), no SEE label.",
   "explorer_lock": "Exactly ONE Explorer plate: final glowing numbered table. On model. Attach Explorer reference.",
@@ -44,7 +44,7 @@
       "t": "5:54",
       "explorer": false,
       "i2v": false,
-      "side_label": "HENRY MOSELEY · 1913",
+      "side_label": "HENRY MOSELEY \u00b7 1913",
       "vo_land": "Manchester, nineteen thirteen. Henry Moseley is twenty-five. He builds a tube with a little train inside, carrying a different metal target into the beam each time.",
       "prompt": "Animistry premium 3D cartoon. Manchester 1913. Young Henry Moseley (readable face, neat hair) at a long tube with a little toy-train carriage carrying metal targets into the beam. Continuous train move. Silent. No Explorer. HARD REJECT: Orbit, unfinished face, lava.",
       "t_s": 353.769
@@ -55,8 +55,8 @@
       "explorer": false,
       "i2v": false,
       "side_label": null,
-      "vo_land": "It's the same invisible light Röntgen used to see the bones in a living hand.",
-      "prompt": "Animistry premium 3D cartoon. Quick ~4s flash: stylised Röntgen hand with ring visible (X-rays callback; wonder, not gore). Continuous. Silent. No on-screen SEE label. HARD REJECT: gore, Orbit, Explorer, photoreal medical photo dump.",
+      "vo_land": "It's the same invisible light R\u00f6ntgen used to see the bones in a living hand.",
+      "prompt": "Animistry premium 3D cartoon. Quick ~4s flash: stylised R\u00f6ntgen hand with ring visible (X-rays callback; wonder, not gore). Continuous. Silent. No on-screen SEE label. HARD REJECT: gore, Orbit, Explorer, photoreal medical photo dump.",
       "t_s": 368.449
     },
     {
@@ -114,9 +114,9 @@
       "t": "7:33",
       "explorer": false,
       "i2v": false,
-      "side_label": "MOSELEY · 1887–1915",
+      "side_label": "MOSELEY \u00b7 1887\u20131915",
       "vo_land": "Two years later, in nineteen fifteen, Moseley was killed in the First World War at Gallipoli. He was twenty-seven. Many scientists believe he would have won a Nobel Prize.",
-      "prompt": "Animistry premium 3D cartoon. Quiet desk: young soldier's cap and a notebook — no battle, no gore. Continuous soft settle. Silent. HARD REJECT: battle gore, Orbit, Explorer, blood.",
+      "prompt": "Animistry premium 3D cartoon. Quiet desk: young soldier's cap and a notebook \u2014 no battle, no gore. Continuous soft settle. Silent. HARD REJECT: battle gore, Orbit, Explorer, blood.",
       "t_s": 453.069
     },
     {
@@ -136,7 +136,7 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "But the nucleus had one more secret. Some nuclei don't sit still. They break apart and throw out rays of their own. That's the next story.",
-      "prompt": "Animistry premium 3D cartoon. Nucleus trembles and throws soft rays — handoff to the next film, wonder not horror. Continuous. Silent. No Explorer. HARD REJECT: bomb/mushroom cloud, Orbit, gore, Ken Burns only.",
+      "prompt": "Animistry premium 3D cartoon. Nucleus trembles and throws soft rays \u2014 handoff to the next film, wonder not horror. Continuous. Silent. No Explorer. HARD REJECT: bomb/mushroom cloud, Orbit, gore, Ken Burns only.",
       "t_s": 488.02
     },
     {
@@ -145,8 +145,8 @@
       "explorer": false,
       "i2v": false,
       "side_label": null,
-      "vo_land": "(end card — not Veo; assemble graphic)",
-      "prompt": "NOT A VEO PLATE. Assemble cream-on-brown end card 3–4s: History of Science / DISCOVERY. WONDER. PROOF. Then Studio end screen 20s only.",
+      "vo_land": "(end card \u2014 not Veo; assemble graphic)",
+      "prompt": "NOT A VEO PLATE. Assemble cream-on-brown end card 3\u20134s: History of Science / DISCOVERY. WONDER. PROOF. Then Studio end screen 20s only.",
       "t_s": 498.138
     }
   ]

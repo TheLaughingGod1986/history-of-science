@@ -1,0 +1,14 @@
+{
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "part": "03",
+  "status": "FLOW_CDP_MINT_PENDING",
+  "vo_status": "KEEP (v04)",
+  "engine_used": "flow-ui Veo 3.1 scenery_only via Mini CDP :9222",
+  "note": "Part 02 PASS \u2192 Part 03. No Explorer. Do not name real people in prompts. Quality for glow.",
+  "credits_user_reported_start": 2162,
+  "credits_before_mint": null,
+  "credits_after_mint": null,
+  "board": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/parts/part-03_plates_v02.json",
+  "plates": {},
+  "updated_at": "2026-09-27T21:25:54.814338+00:00"
+}
