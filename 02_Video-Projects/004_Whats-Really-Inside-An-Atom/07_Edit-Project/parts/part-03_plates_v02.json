@@ -1,6 +1,6 @@
 {
   "status": "READY_FOR_MINT",
-  "mint": true,
+  "mint": false,
   "film": "004_Whats-Really-Inside-An-Atom",
   "working_title": "Why Is the Periodic Table in This Order?",
   "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v04 KEEP",
@@ -262,11 +262,13 @@
       "quality": "Fast",
       "vo_land": "It was also wrong.",
       "side_label": null,
-      "prompt": "Same plum-pudding model cracks and dissolves \u2014 lovely, and wrong. Continuous fail-dissolve. Silent. No Explorer. No Orbit. No Ken Burns only.",
-      "prompt_try2": "Same pudding collapses into crumbs and light. Continuous collapse. Silent. No Explorer.",
+      "prompt": "Animistry premium 3D cartoon. The plum-pudding atom EXPLODES: soft positive sphere shatters and electron raisins SHOOT outward across the frame in every direction. Fast continuous explosion, crumbs flying past camera. Silent. No Explorer. No Orbit. No text.",
+      "prompt_try2": "Same explosion beat, tracking shot: camera races with flying electron crumbs as the pudding model blows apart behind them. Continuous fly-through. Silent. No Explorer. No Orbit.",
       "explorer": false,
       "i2v": false,
-      "t": "4:02"
+      "t": "4:02",
+      "framing_note": "v03 remint \u2014 explosion/fly-out for motion QA (prior dissolves scored near-still)"
     }
-  ]
+  ],
+  "mint_note": "mint complete \u2014 rough v01 pending Ben UAT; do not remint unless FAIL+stills"
 }

@@ -13,7 +13,7 @@
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
 | Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Part 03 `mint: true` (19 plates, 4–6 s) · Parts 01/02/04/05 `mint: false` · Explorer used ×1 (P02); remaining P04/P05 · no Explorer in Part 03 |
-| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (Ben: “best yet”). **Part 03 minting** next. |
+| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”). **Part 03 rough v01 READY for Ben UAT** — STOP; do not start Part 04. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
@@ -50,11 +50,11 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 |---|---|---|---|---|
 | 01 Cold open | 0:00–1:10 | none | 17 (split 07 at 0:32) | false (PASS) |
 | 02 The Table That Broke Its Own Rule | 1:10–2:41 | 1:10 · ~1.5 s | **20** (4–6 s splits) | false (PASS) |
-| 03 The Crumb Inside the Atom | 2:41–4:05 | 2:41 · ~1.5 s | **19** (4–6 s splits) | **true** |
+| 03 The Crumb Inside the Atom | 2:41–4:05 | 2:41 · ~1.5 s | **19** (4–6 s splits) | false (rough v01) |
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Part 03 Flow mint → `hos_004_part03_rough_v01.mp4`. STOP for Ben after Part 03 rough. Do not start Part 04.
+**Next:** Ben UAT Part 03 rough v01. Do not start Part 04 until he passes.
 
 ---
 
@@ -88,7 +88,7 @@ iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/`
 
 iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part02_rough_v01.mp4`
 
-## Part 03 rough UAT — minting
+## Part 03 rough UAT (27 Sep 2026) — PENDING Ben
 
 Board: `part-03_plates_v02.json` (19 plates, 4–6 s). No Explorer. Quality for tube glow. Credits start **2162**. Target: `hos_004_part03_rough_v01.mp4` (83.730 s VO). STOP for Ben after rough — do not start Part 04.
 

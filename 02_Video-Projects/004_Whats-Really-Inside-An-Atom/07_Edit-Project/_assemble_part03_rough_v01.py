@@ -214,7 +214,7 @@ def main() -> None:
         },
         "part": "03",
         "parent_part02_pass": "hos_004_part02_rough_v01.mp4",
-        "explorer_plate": null,
+        "explorer_plate": None,
         "plates": plate_meta,
     }
     META.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")

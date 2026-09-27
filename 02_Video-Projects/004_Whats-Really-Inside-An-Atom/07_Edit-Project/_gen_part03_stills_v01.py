@@ -129,7 +129,8 @@ def gen_still(key: str, plate: dict, dest: Path) -> None:
         prompt = (
             f"Image {img_n} is the locked History of Science 3D cartoon style — match "
             "that material and light. This scene is NOT a hospital ward; it is the "
-            "1808 schoolroom / 1869 card-desk atom story world. " + prompt
+            "Cambridge 1897 cathode-ray tube lab / 1904 plum-pudding atom story world. "
+            + prompt
         )
     if plate.get("explorer") and EXPLORER_REF.exists():
         mime, b64 = b64_file(EXPLORER_REF)
@@ -147,26 +148,32 @@ def gen_still(key: str, plate: dict, dest: Path) -> None:
         "contents": [{"role": "user", "parts": parts}],
         "generationConfig": {"responseModalities": ["TEXT", "IMAGE"]},
     }).encode()
-    print(f"  still gen {plate['id']}", flush=True)
-    req = urllib.request.Request(
-        f"{API}?key={key}",
-        data=body,
-        headers={"Content-Type": "application/json"},
-        method="POST",
+    last_payload = None
+    for attempt in range(1, 4):
+        print(f"  still gen {plate['id']} try={attempt}", flush=True)
+        req = urllib.request.Request(
+            f"{API}?key={key}",
+            data=body,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                payload = json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            raise SystemExit(f"still HTTP {e.code}: {e.read()[:500]!r}") from e
+        last_payload = payload
+        for cand in payload.get("candidates") or []:
+            for part in (cand.get("content") or {}).get("parts") or []:
+                inline = part.get("inlineData") or part.get("inline_data")
+                if inline and inline.get("data"):
+                    save_image(base64.b64decode(inline["data"]), dest)
+                    print(f"  saved {dest.name} ({dest.stat().st_size})", flush=True)
+                    return
+        print(f"  retry {plate['id']} (text-only response)", flush=True)
+    raise RuntimeError(
+        f"no still for {plate['id']}: {json.dumps(last_payload)[:500]}"
     )
-    try:
-        with urllib.request.urlopen(req, timeout=180) as r:
-            payload = json.loads(r.read().decode())
-    except urllib.error.HTTPError as e:
-        raise SystemExit(f"still HTTP {e.code}: {e.read()[:500]!r}") from e
-    for cand in payload.get("candidates") or []:
-        for part in (cand.get("content") or {}).get("parts") or []:
-            inline = part.get("inlineData") or part.get("inline_data")
-            if inline and inline.get("data"):
-                save_image(base64.b64decode(inline["data"]), dest)
-                print(f"  saved {dest.name} ({dest.stat().st_size})", flush=True)
-                return
-    raise RuntimeError(f"no still for {plate['id']}: {json.dumps(payload)[:500]}")
 
 
 def main() -> None:
@@ -201,10 +208,13 @@ def main() -> None:
     REFS.mkdir(parents=True, exist_ok=True)
     for plate in plates:
         dest = REFS / f"{plate['id']}_v01.jpg"
+        if dest.exists() and dest.stat().st_size >= 80_000 and not only:
+            print(f"  skip existing {dest.name}", flush=True)
+            continue
         gen_still(key, plate, dest)
         if not dest.exists() or dest.stat().st_size < 80_000:
             raise SystemExit(f"missing/small {dest}")
-    print(f"DONE {len(plates)} stills → {REFS}", flush=True)
+    print(f"DONE stills → {REFS}", flush=True)
 
 
 if __name__ == "__main__":
