@@ -1,7 +1,7 @@
 {
   "film": "004_Whats-Really-Inside-An-Atom",
   "version": "v04",
-  "status": "LOCKED KEEP",
+  "status": "PENDING BEN LISTEN",
   "route": "atempo=1.03 on each v03 part master (pitch-safe)",
   "atempo": 1.03,
   "source": "v03",
@@ -76,5 +76,25 @@
     "listen": "PASS",
     "listen_mean_db": -23.6,
     "listen_peak_db": -4.1
-  }
+  },
+  "keep": false,
+  "note": "",
+  "ben_status": "PENDING BEN LISTEN",
+  "listen_holds": [
+    {
+      "t": "7:39",
+      "line": "each kind a weight",
+      "transcriber_hears": "kind of weight"
+    },
+    {
+      "t": "6:06",
+      "line": "a living hand",
+      "transcriber_hears": "the living hand"
+    },
+    {
+      "t": "3:38",
+      "line": "But atoms",
+      "transcriber_hears": "for atoms (vo_check) / But atoms (hold)"
+    }
+  ]
 }

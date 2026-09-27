@@ -3,7 +3,7 @@
   "mint": false,
   "film": "004_Whats-Really-Inside-An-Atom",
   "working_title": "Why Is the Periodic Table in This Order?",
-  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v04 LOCKED KEEP",
+  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v04 PENDING BEN LISTEN",
   "clip_use_s": 7.9,
   "xfade_s": 0.35,
   "always_fails": [
@@ -19,7 +19,7 @@
     "Ken Burns ship",
     "Explorer in Part 01 / first minute"
   ],
-  "notes": "Re-timed from VO v04 (atempo 1.03 on v03 KEEP). Same plate intent as v01 boards. No on-screen SEE labels. Explorer only on marked plates (never Part 01). mint:false until Part 01 UAT PASS.",
+  "notes": "Re-timed from VO v04 (atempo 1.03 on v03). Same plate intent as v01 boards. No on-screen SEE labels. Explorer only on marked plates (never Part 01). mint:false until Part 01 UAT PASS.",
   "part": "02",
   "title": "The Table That Broke Its Own Rule",
   "vo_file": "02_Voiceover/part02_the_table_that_broke_its_own_rule_v02.txt",
@@ -31,10 +31,10 @@
     "text": "The Table That Broke Its Own Rule",
     "at_s": 69.813
   },
-  "film_window": "1:15\u20132:51",
+  "film_window": "1:15–2:51",
   "set_language": "TWO sets: Manchester 1808 schoolroom (Dalton, wooden balls, balance); St Petersburg 1869 desk (element cards, Mendeleev). Say 'same 1808 schoolroom set' / 'same 1869 card desk set'. Never 'same DNA'.",
   "continuity_lock": "Explorer once only on the Te-before-I card swap beat. Readable faces for Dalton and Mendeleev.",
-  "explorer_lock": "Exactly ONE Explorer plate this film-part: Te card swap. On model \u2014 round gold glasses, teal coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
+  "explorer_lock": "Exactly ONE Explorer plate this film-part: Te card swap. On model — round gold glasses, teal coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
   "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels added in edit); twin Explorer; never say 'same DNA' or 'lab DNA' in a Veo prompt. No Explorer except the Te card swap plate.",
   "motion_lock": "Real Veo motion every plate when mint opens.",
   "quality_note": "Quality for candle/desk lamps if any; Fast OK for card sorts without emissive glow.",
@@ -44,7 +44,7 @@
       "t": "1:10",
       "explorer": false,
       "i2v": false,
-      "side_label": "JOHN DALTON \u00b7 1808",
+      "side_label": "JOHN DALTON · 1808",
       "vo_land": "Manchester, eighteen-oh-eight. A schoolteacher named John Dalton puts the old idea to work.",
       "prompt": "Animistry premium 3D cartoon. Manchester 1808 schoolroom. John Dalton (readable finished face) sets wooden balls of different sizes on a balance. Continuous place-on-balance. Silent. No Explorer. HARD REJECT: Orbit, unfinished face, garbled cards.",
       "t_s": 69.813
@@ -84,7 +84,7 @@
       "t": "1:47",
       "explorer": false,
       "i2v": false,
-      "side_label": "DMITRI MENDELEEV \u00b7 1869",
+      "side_label": "DMITRI MENDELEEV · 1869",
       "vo_land": "Sixty years later in Saint Petersburg, Dmitri Mendeleev does exactly that. He writes each element on a card and sorts the cards by weight.",
       "prompt": "Animistry premium 3D cartoon. St Petersburg 1869 desk. Dmitri Mendeleev (readable finished face, period) writes and sorts element cards by weight. Continuous sort. Silent. No Explorer yet. HARD REJECT: Orbit, garbled cards, unfinished face.",
       "t_s": 107.491
@@ -136,7 +136,7 @@
       "i2v": true,
       "side_label": null,
       "vo_land": "So the table works, but it breaks its own rule. If weight isn't the real order, what is?",
-      "prompt": "Same 1869 set. Finished table glows but Te/I still feel wrong \u2014 open question. Continuous soft push. Silent. HARD REJECT: Orbit, Explorer, Ken Burns only.",
+      "prompt": "Same 1869 set. Finished table glows but Te/I still feel wrong — open question. Continuous soft push. Silent. HARD REJECT: Orbit, Explorer, Ken Burns only.",
       "t_s": 154.16
     }
   ]
