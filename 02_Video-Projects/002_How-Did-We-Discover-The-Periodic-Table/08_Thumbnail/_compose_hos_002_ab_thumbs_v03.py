@@ -190,10 +190,45 @@ def compose_c_v04() -> Path:
     return dest
 
 
+def compose_c_v05() -> Path:
+    """C v05 from Flow Nano Banana still — same type layout as v04, no wash.
+
+    Source already composed at hero scale (~1/4-width glowing slot, right of
+    centre, calm top-left). Only a gentle downscale 1376×768 → 1280×720.
+    """
+    src = load_src(
+        [
+            HERE / "_stills_v05" / "hos_002_empty_slot_hero_v01.jpg",
+        ]
+    )
+    sw, sh = src.size
+    # Minimal geometry tweak: keep nearly full frame (slot already ~1/4 width).
+    # Optional 2% trim from bottom bookshelf only if needed — default full frame.
+    scale = 1280 / sw
+    print(
+        f"C v05 source {sw}x{sh} scale={scale:.3f}x (downscale, no hero crop)",
+        flush=True,
+    )
+    im = src.resize((1280, 720), Image.Resampling.LANCZOS)
+    im = grade_left(im, width=500, alpha=125)
+    draw_words(
+        im,
+        [[("LEFT", WHITE)], [("EMPTY", YELLOW)], [("ON PURPOSE", WHITE)]],
+        x=36,
+        y=40,
+        size=96,
+        max_w=560,
+        gap=0.96,
+    )
+    dest = SELECTED / "hos_002_thumb_C_empty_on_purpose_v05.jpg"
+    save_jpg(im, dest)
+    return dest
+
+
 def main() -> None:
     SELECTED.mkdir(parents=True, exist_ok=True)
     # B v03 is Ben-approved — do not regenerate unless asked.
-    c = compose_c_v04()
+    c = compose_c_v05()
     print("DONE", c.name, flush=True)
 
 
