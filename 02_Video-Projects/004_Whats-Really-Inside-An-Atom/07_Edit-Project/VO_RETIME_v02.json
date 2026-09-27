@@ -62,7 +62,7 @@
   "explorer_beats": [
     {
       "part": "02",
-      "plate": "07_explorer_te_before_i",
+      "plate": "16_explorer_te_before_i",
       "act": "Te card swap"
     },
     {
@@ -76,6 +76,6 @@
       "act": "final numbered table"
     }
   ],
-  "note": "Re-timed from VO v04 KEEP (Ben, 27 Sep; atempo 1.03 on v03). Part 01 plates mint:true was the Ben-allowed exception; mint STOPPED 27 Sep 14:10. 02\u201305 mint:false.",
+  "note": "Re-timed from VO v04 KEEP (Ben, 27 Sep; atempo 1.03 on v03). Part 01 rough v05 PASS 27 Sep 17:11 UK. Part 02 mint:true (20-plate board); 03\u201305 mint:false.",
   "vo_status": "KEEP"
 }

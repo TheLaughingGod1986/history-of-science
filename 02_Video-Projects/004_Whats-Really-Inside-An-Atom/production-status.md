@@ -12,8 +12,8 @@
 | Episode gate | Passed by Ben (manual), 26 Sep 2026 |
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
-| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Part 01 `mint: true` · Parts 02–05 `mint: false` · Explorer ×3 (P02/P04/P05) · no SEE labels · no Explorer in first minute |
-| Picture | **Part 01 STOPPED** (Ben 27 Sep 14:10). Flow Ultra out of credits; Gemini Veo fallback: **10 KEEP / 7 FAIL**. VO now KEEP; picture restarts only on Ben's go (moving-picture sign-off, point 5). See `PART01_MINT_STOP_2026-09-27.md`. |
+| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Part 02 `mint: true` (20 plates, 4–6 s splits) · Parts 01/03–05 `mint: false` · Explorer ×3 (P02/P04/P05) · no SEE labels · no Explorer in first minute |
+| Picture | **Part 01 rough v05 PASS** (Ben, Sun 27 Sep 17:11 UK, in motion). Garbled jar “lpod” label accepted as-is. **Part 02 minting** next. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
@@ -48,13 +48,13 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 
 | Part | Film window | Chapter card | Plates | mint |
 |---|---|---|---|---|
-| 01 Cold open | 0:00–1:10 | none | 17 (split 07 at 0:32) | **true** |
-| 02 The Table That Broke Its Own Rule | 1:10–2:41 | 1:10 · ~1.5 s | 10 | false |
+| 01 Cold open | 0:00–1:10 | none | 17 (split 07 at 0:32) | false (PASS) |
+| 02 The Table That Broke Its Own Rule | 1:10–2:41 | 1:10 · ~1.5 s | **20** (4–6 s splits) | **true** |
 | 03 The Crumb Inside the Atom | 2:41–4:05 | 2:41 · ~1.5 s | 8 | false |
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Part 01 UAT preview **v05** (plate 12 straight-beam remint) is in iCloud. STOP for Ben review. Do not start Part 02 until Ben passes Part 01.
+**Next:** Part 02 Flow mint → `hos_004_part02_rough_v01.mp4`. STOP for Ben after Part 02 rough. Do not start Part 03.
 
 ---
 
@@ -67,6 +67,8 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | `hos_004_part01_rough_v03.mp4` | 69.813 s | v02 picture + TEMP music bed |
 | `hos_004_part01_rough_v04.mp4` | 69.813 s | Ben 3-scene remints + same TEMP bed as v03 |
 | `hos_004_part01_rough_v05.mp4` | 69.813 s | plate 12 straight-beam remint + same TEMP bed |
+
+**Ben PASS Part 01 rough v05** — Sun 27 Sep **17:11 UK**, judged **in motion** (not stills). Garbled background jar label **“lpod”** accepted as-is. Do not remint Part 01 unless CoS sends a later FAIL with stills. Locked cut for Part 01 UAT: `hos_004_part01_rough_v05.mp4` sha256 `71d7c70798c77ce2ecb02c37ad043fd98117a2209a84899236337fee8b952add`.
 
 iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/`
 
