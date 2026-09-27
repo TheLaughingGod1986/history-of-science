@@ -284,6 +284,108 @@ def get_flow_page(ctx):
     return page
 
 
+def harvest_project_mp4(page, project_url: str, dest: Path, *, wait_s: int = 480) -> str:
+    """Wait for gallery thumb(s) then save newest mp4 via network capture / Download."""
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if dest.exists():
+        dest.unlink()
+
+    captured: list[bytes] = []
+
+    def on_resp(resp) -> None:
+        try:
+            if resp.status != 200:
+                return
+            u = (resp.url or "").lower()
+            ct = (resp.headers.get("content-type") or "").lower()
+            if not (
+                "flow-content.google/video" in u
+                or "googlevideo.com" in u
+                or ("video/mp4" in ct)
+            ):
+                return
+            body = resp.body()
+            if body and len(body) > 400_000 and b"ftyp" in body[:64]:
+                captured.append(body)
+                print(f"  net mp4 {len(body)}", flush=True)
+        except Exception:
+            pass
+
+    page.on("response", on_resp)
+    page.goto(project_url, wait_until="domcontentloaded", timeout=120_000)
+    time.sleep(3)
+    flow.dismiss_banners(page)
+
+    t0 = time.time()
+    before = set(flow.collect_gallery_asb_srcs(page))
+    print(f"  harvest start thumbs={len(before)}", flush=True)
+    while time.time() - t0 < wait_s:
+        thumbs = flow.collect_gallery_asb_srcs(page)
+        new = [s for s in thumbs if s not in before]
+        print(
+            f"  harvest poll thumbs={len(thumbs)} new={len(new)} "
+            f"captured={len(captured)} elapsed={time.time()-t0:.0f}s",
+            flush=True,
+        )
+        # Prefer a NEW thumb; else newest overall once gen had time
+        pick_src = (new[-1] if new else (thumbs[-1] if thumbs and time.time() - t0 > 45 else None))
+        if pick_src:
+            try:
+                page.locator(f'img[src="{pick_src}"]').first.click(timeout=8000)
+            except Exception:
+                try:
+                    page.locator('img[src*="/asb/"]').last.click(timeout=8000)
+                except Exception as e:
+                    print(f"  thumb click warn: {e}", flush=True)
+                    time.sleep(6)
+                    continue
+            time.sleep(2.5)
+            for label in (r"Download media", r"^Download$", r"download"):
+                try:
+                    page.get_by_role("button", name=re.compile(label, re.I)).first.click(timeout=2000)
+                    time.sleep(2)
+                    break
+                except Exception:
+                    continue
+            try:
+                page.locator("video").first.click(timeout=1500)
+                time.sleep(2)
+            except Exception:
+                pass
+            # give network a moment
+            for _ in range(20):
+                if captured:
+                    break
+                time.sleep(1)
+            if captured:
+                dest.write_bytes(max(captured, key=len))
+                print(f"  harvest saved {dest.name} bytes={dest.stat().st_size}", flush=True)
+                return f"net:{dest.stat().st_size}"
+            # fallback helper
+            mid = flow.harvest_agent_gallery_mp4(page, dest, captured, before_asb=before)
+            if mid and dest.exists() and dest.stat().st_size > 400_000:
+                return mid
+            if captured:
+                dest.write_bytes(max(captured, key=len))
+                return f"net-fallback:{dest.stat().st_size}"
+        time.sleep(8)
+        try:
+            page.reload(wait_until="domcontentloaded", timeout=60_000)
+            time.sleep(2)
+            flow.dismiss_banners(page)
+        except Exception:
+            pass
+    raise RuntimeError(f"harvest timeout {wait_s}s project={project_url}")
+
+
+def ensure_try_lists(plate_log: dict) -> None:
+    if not isinstance(plate_log.get("try_detail"), list):
+        plate_log["try_detail"] = []
+    if not isinstance(plate_log.get("tries"), list):
+        # Gemini log used tries as an int count — replace with list
+        plate_log["tries"] = []
+
+
 def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
     pid = plate["id"]
     model = model_for(pid)
@@ -307,12 +409,26 @@ def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
         prompt,
         dest,
         model=model,
-        timeout_s=900,
+        timeout_s=120,
         start_frame=still,
         scenery_only=False,
         attempts=2,
+        reuse_project=True,
     )
     abort_guards(page, f"post-{pid}-t{try_n}")
+
+    project_url = (info or {}).get("project_url") or (info or {}).get("url") or ""
+    if (info or {}).get("needs_gallery_harvest") or not dest.exists() or dest.stat().st_size < 400_000:
+        if not project_url or "/project/" not in project_url:
+            project_url = getattr(page, "_orbit_flow_project_url", None) or page.url or ""
+        if "/project/" not in project_url:
+            raise RuntimeError(f"no project URL for harvest after Create ({project_url!r})")
+        print(f"  gallery harvest via {project_url}", flush=True)
+        harvest_project_mp4(page, project_url, dest, wait_s=520)
+
+    if not dest.exists() or dest.stat().st_size < 400_000:
+        raise RuntimeError(f"no mp4 after harvest: {dest}")
+
     veo.strip_audio(dest)
 
     status, note = auto_qa(dest)
@@ -338,9 +454,10 @@ def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
         "credits_before": credits_before,
         "credits_used": used,
         "credits_remaining": credits_after,
+        "project_url": project_url,
         "flow_meta": {
             k: info.get(k)
-            for k in ("model", "elapsed_s", "media_id")
+            for k in ("model", "elapsed_s", "media_id", "needs_gallery_harvest")
             if info and k in info
         },
         "at": now(),
@@ -437,14 +554,20 @@ def main() -> None:
                 pid,
                 {"id": pid, "tries": [], "try_detail": [], "status": "PENDING"},
             )
-            # clear stale Gemini FAIL status for remint
-            plate_log["status"] = "PENDING"
-            plate_log.pop("keep", None)
+            ensure_try_lists(plate_log)
+            # clear stale Gemini FAIL status for remint (keep flow-cdp KEEP)
+            if not (plate_log.get("keep") or {}).get("engine") == "flow-cdp":
+                plate_log["status"] = "PENDING"
+                plate_log.pop("keep", None)
 
             kept = False
             for try_n in range(1, 3):
+                ensure_try_lists(plate_log)
                 # skip duplicate try records already KEEP
-                if any(t.get("try") == try_n and t.get("status") == "KEEP" for t in plate_log.get("try_detail", [])):
+                if any(
+                    isinstance(t, dict) and t.get("try") == try_n and t.get("status") == "KEEP"
+                    for t in plate_log.get("try_detail", [])
+                ):
                     kept = True
                     break
                 credits_before = credits_cursor
@@ -474,14 +597,16 @@ def main() -> None:
                     }
                     print(f"  FAIL exception: {e}", flush=True)
                     if "Insufficient credits" in str(e) or "Not enough credits" in str(e):
-                        plate_log.setdefault("try_detail", []).append(entry)
-                        plate_log.setdefault("tries", []).append(entry)
+                        ensure_try_lists(plate_log)
+                        plate_log["try_detail"].append(entry)
+                        plate_log["tries"].append(entry)
                         plate_log["status"] = "FAIL"
                         save_log(log)
                         raise SystemExit("STOP: Flow Ultra out of credits")
 
-                plate_log.setdefault("try_detail", []).append(entry)
-                plate_log.setdefault("tries", []).append(entry)
+                ensure_try_lists(plate_log)
+                plate_log["try_detail"].append(entry)
+                plate_log["tries"].append(entry)
                 if entry.get("credits_remaining") is not None:
                     credits_cursor = entry["credits_remaining"]
                 save_log(log)

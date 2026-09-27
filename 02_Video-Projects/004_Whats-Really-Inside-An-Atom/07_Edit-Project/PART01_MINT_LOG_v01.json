@@ -1,25 +1,19 @@
 {
-  "status": "STOPPED_AUTH",
+  "status": "FLOW_CDP_MINT_IN_PROGRESS",
   "stopped_at": "2026-09-27T13:43:04.449177+00:00",
   "stop_reason": "Ben 27 Sep 14:35 UK Flow remint gate FAIL. Mini CDP Chrome (~/.hos-chrome-flow-benoats-googlemail-cdp :9222) is SIGNED OUT \u2014 Flow lands on /about pricing marketing page; AccountChooser shows blank Sign in. Credits not readable (not ~3492). No plates minted. Diagnostic: ~/.playwright-hos-flow-profile is logged in as benoats86@gmail.com (FORBIDDEN for HOS Veo) \u2014 not used for mint.",
   "film": "004_Whats-Really-Inside-An-Atom",
   "part": "01",
-  "vo_status": "KEEP (v04) \u2014 Ben 27 Sep 2026; PR #144/#145 on main",
+  "vo_status": "KEEP (v04)",
   "flow_ultra": {
-    "account_required": "benoats@googlemail.com",
-    "cdp_profile": "~/.hos-chrome-flow-benoats-googlemail-cdp",
-    "cdp_port": 9222,
-    "cdp_result": "SIGNED OUT \u2014 /about pricing; blank Sign in; credits unreadable",
-    "playwright_profile_diagnostic": {
-      "path": "~/.playwright-hos-flow-profile",
-      "active_email_seen": "benoats86@gmail.com",
-      "note": "FORBIDDEN account for HOS Veo \u2014 not used; mint aborted"
-    },
-    "credits_before": null,
-    "credits_after": null,
-    "expected_credits": 3492
+    "account": "benoats@googlemail.com",
+    "profile": "~/.hos-chrome-flow-benoats-googlemail-cdp",
+    "cdp": "http://127.0.0.1:9222",
+    "credits_before": 3492,
+    "account_confirmed": "benoats@googlemail.com",
+    "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/gate_auth_ok.png"
   },
-  "engine_used": "none \u2014 STOP before mint (CDP auth gate)",
+  "engine_used": "flow-ui Veo 3.1 start-frame I2V via Mini CDP :9222",
   "summary": {
     "keep": 10,
     "fail_or_missing": 7,
@@ -218,18 +212,68 @@
     },
     "08_smallest_uncuttable": {
       "id": "08_smallest_uncuttable",
-      "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
-      "model_keep": null,
-      "quality_or_fast": "\u2014",
-      "file": null,
-      "sha256": null,
-      "duration_s": null,
-      "bytes": null,
+      "status": "KEEP",
+      "tries": [
+        {
+          "id": "08_smallest_uncuttable",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s | harvested after gallery-pending",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+          "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+          "bytes": 1735819,
+          "duration_s": 8.0,
+          "credits_before": 3492,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:08:11.379018+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)",
+          "project_url": "https://flow.google.com/project/14bfed61-794d-40f1-b9d2-ae7bb98fe234"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "08_smallest_uncuttable",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s | harvested after gallery-pending",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+          "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+          "bytes": 1735819,
+          "duration_s": 8.0,
+          "credits_before": 3492,
+          "credits_used": 100,
+          "credits_remaining": 3392,
+          "at": "2026-09-27T14:08:11.379018+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)",
+          "project_url": "https://flow.google.com/project/14bfed61-794d-40f1-b9d2-ae7bb98fe234"
+        }
+      ],
+      "model_keep": "Veo 3.1 - Fast",
+      "quality_or_fast": "Fast",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+      "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+      "duration_s": 8.0,
+      "bytes": 1735819,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/08_smallest_uncuttable_v01.jpg",
       "start_frame_sha256": "3c3f0e72b6cda06d82e181b8e1efe65da8a3fa5cc025aec2e10ed28b6e840751",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "keep": {
+        "file": "08_smallest_uncuttable_v01.mp4",
+        "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+        "try": 1,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-cdp",
+        "credits_used": 100,
+        "credits_remaining": 3392
+      }
     },
     "09_uncuttable_blur": {
       "id": "09_uncuttable_blur",
@@ -411,5 +455,7 @@
       "07_Edit-Project/_qa_part01_mint_v01/playwright_profile_auth_probe_v01.json"
     ]
   },
-  "updated_at": "2026-09-27T13:43:04.449306+00:00"
+  "updated_at": "2026-09-27T14:08:11.380117+00:00",
+  "credits_before_mint": 3492,
+  "credits_mid_after_08": 3392
 }
