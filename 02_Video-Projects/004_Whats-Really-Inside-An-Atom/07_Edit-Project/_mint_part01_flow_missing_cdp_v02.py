@@ -404,16 +404,21 @@ def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
         flush=True,
     )
     abort_guards(page, f"pre-{pid}-t{try_n}")
+    # Fresh project each try — reusing a post-Create project loses the model dropdown.
+    try:
+        flow.recover_flow_home(page)
+    except Exception:
+        pass
     info = flow.generate_clip(
         page,
         prompt,
         dest,
         model=model,
-        timeout_s=120,
+        timeout_s=180,
         start_frame=still,
         scenery_only=False,
         attempts=2,
-        reuse_project=True,
+        reuse_project=False,
     )
     abort_guards(page, f"post-{pid}-t{try_n}")
 
@@ -555,10 +560,38 @@ def main() -> None:
                 {"id": pid, "tries": [], "try_detail": [], "status": "PENDING"},
             )
             ensure_try_lists(plate_log)
+            # UI-only FAILs (model dropdown) don't count as gen tries — reset for remint.
+            ui_only = [
+                t
+                for t in plate_log.get("try_detail", [])
+                if isinstance(t, dict)
+                and t.get("status") == "FAIL"
+                and "video model dropdown not found" in (t.get("note") or "")
+            ]
+            if ui_only and not plate_log.get("keep"):
+                print(
+                    f"RESET {pid}: clearing {len(ui_only)} UI-only FAIL tries",
+                    flush=True,
+                )
+                plate_log["try_detail"] = [
+                    t
+                    for t in plate_log.get("try_detail", [])
+                    if not (
+                        isinstance(t, dict)
+                        and t.get("status") == "FAIL"
+                        and "video model dropdown not found" in (t.get("note") or "")
+                    )
+                ]
+                plate_log["tries"] = list(plate_log["try_detail"])
+                plate_log["status"] = "PENDING"
+                plate_log.pop("fail_reason", None)
+                plate_log.pop("keep", None)
+                save_log(log)
             # clear stale Gemini FAIL status for remint (keep flow-cdp KEEP)
             if not (plate_log.get("keep") or {}).get("engine") == "flow-cdp":
                 plate_log["status"] = "PENDING"
-                plate_log.pop("keep", None)
+                if not plate_log.get("keep"):
+                    plate_log.pop("keep", None)
 
             kept = False
             for try_n in range(1, 3):

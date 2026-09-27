@@ -1,5 +1,5 @@
 {
-  "status": "FLOW_CDP_MINT_IN_PROGRESS",
+  "status": "FLOW_CDP_MINT_DONE",
   "stopped_at": "2026-09-27T13:43:04.449177+00:00",
   "stop_reason": "Ben 27 Sep 14:35 UK Flow remint gate FAIL. Mini CDP Chrome (~/.hos-chrome-flow-benoats-googlemail-cdp :9222) is SIGNED OUT \u2014 Flow lands on /about pricing marketing page; AccountChooser shows blank Sign in. Credits not readable (not ~3492). No plates minted. Diagnostic: ~/.playwright-hos-flow-profile is logged in as benoats86@gmail.com (FORBIDDEN for HOS Veo) \u2014 not used for mint.",
   "film": "004_Whats-Really-Inside-An-Atom",
@@ -9,15 +9,18 @@
     "account": "benoats@googlemail.com",
     "profile": "~/.hos-chrome-flow-benoats-googlemail-cdp",
     "cdp": "http://127.0.0.1:9222",
-    "credits_before": 3492,
+    "credits_before": 3392,
     "account_confirmed": "benoats@googlemail.com",
-    "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/gate_auth_ok.png"
+    "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/gate_auth_ok.png",
+    "credits_after": 3392
   },
   "engine_used": "flow-ui Veo 3.1 start-frame I2V via Mini CDP :9222",
   "summary": {
-    "keep": 10,
-    "fail_or_missing": 7,
-    "total_board_plates": 17
+    "keep": 11,
+    "fail_or_missing": 6,
+    "total_board_plates": 17,
+    "flow_remint_keep": 1,
+    "flow_remint_fail": 6
   },
   "plates": {
     "01_coin_halves": {
@@ -278,8 +281,62 @@
     "09_uncuttable_blur": {
       "id": "09_uncuttable_blur",
       "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
+      "tries": [
+        {
+          "id": "09_uncuttable_blur",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:09:52.377788+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "09_uncuttable_blur",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:10:05.976151+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "09_uncuttable_blur",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:09:52.377788+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "09_uncuttable_blur",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:10:05.976151+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
       "model_keep": null,
       "quality_or_fast": "\u2014",
       "file": null,
@@ -288,7 +345,8 @@
       "bytes": null,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/09_uncuttable_blur_v01.jpg",
       "start_frame_sha256": "735a90ec9c8db62920832f8022859e9cab09c879b0c33d582062f2f735fc3eed",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "fail_reason": "exhausted 2 tries without KEEP"
     },
     "10_electron_tube": {
       "id": "10_electron_tube",
@@ -315,8 +373,62 @@
     "11_gold_foil_bounce": {
       "id": "11_gold_foil_bounce",
       "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
+      "tries": [
+        {
+          "id": "11_gold_foil_bounce",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:10:19.581722+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "11_gold_foil_bounce",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:10:33.149196+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "11_gold_foil_bounce",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:10:19.581722+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "11_gold_foil_bounce",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:10:33.149196+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
       "model_keep": null,
       "quality_or_fast": "\u2014",
       "file": null,
@@ -325,7 +437,8 @@
       "bytes": null,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/11_gold_foil_bounce_v01.jpg",
       "start_frame_sha256": "b7911420dd8c6d8b7a5e772ec4baa022608223d18efc630a2ead19179b6bffa8",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "fail_reason": "exhausted 2 tries without KEEP"
     },
     "12_1913_targets": {
       "id": "12_1913_targets",
@@ -380,8 +493,62 @@
     "14_te_i_pullback": {
       "id": "14_te_i_pullback",
       "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
+      "tries": [
+        {
+          "id": "14_te_i_pullback",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:10:46.714032+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "14_te_i_pullback",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:00.310766+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "14_te_i_pullback",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:10:46.714032+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "14_te_i_pullback",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:00.310766+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
       "model_keep": null,
       "quality_or_fast": "\u2014",
       "file": null,
@@ -390,13 +557,68 @@
       "bytes": null,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/14_te_i_pullback_v01.jpg",
       "start_frame_sha256": "c1896c114b7a58e3abf04a3acfbda7a78ea48b196562dd39f3a2e534bd3c1f6e",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "fail_reason": "exhausted 2 tries without KEEP"
     },
     "15_knife_coin_return": {
       "id": "15_knife_coin_return",
       "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
+      "tries": [
+        {
+          "id": "15_knife_coin_return",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:13.890309+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "15_knife_coin_return",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:27.459060+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "15_knife_coin_return",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:13.890309+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "15_knife_coin_return",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:27.459060+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
       "model_keep": null,
       "quality_or_fast": "\u2014",
       "file": null,
@@ -405,13 +627,68 @@
       "bytes": null,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/15_knife_coin_return_v01.jpg",
       "start_frame_sha256": "8f1ecadd84b76768324a4a1c379b9ffc25fd098915d88a205b7e584120108588",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "fail_reason": "exhausted 2 tries without KEEP"
     },
     "16_why_wrong_order": {
       "id": "16_why_wrong_order",
       "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
+      "tries": [
+        {
+          "id": "16_why_wrong_order",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:41.000580+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "16_why_wrong_order",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:54.563240+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "16_why_wrong_order",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:41.000580+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "16_why_wrong_order",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:11:54.563240+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
       "model_keep": null,
       "quality_or_fast": "\u2014",
       "file": null,
@@ -420,13 +697,68 @@
       "bytes": null,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/16_why_wrong_order_v01.jpg",
       "start_frame_sha256": "aaf2d429e8485b32247931896e916a6bf994d1702c68f5d75c2f438aef6de43a",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "fail_reason": "exhausted 2 tries without KEEP"
     },
     "17_ledger_bridge": {
       "id": "17_ledger_bridge",
       "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
+      "tries": [
+        {
+          "id": "17_ledger_bridge",
+          "try": 1,
+          "model": "Veo 3.1 - Quality",
+          "quality_or_fast": "Quality",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:12:08.131958+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "17_ledger_bridge",
+          "try": 2,
+          "model": "Veo 3.1 - Quality",
+          "quality_or_fast": "Quality",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:12:21.700729+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "17_ledger_bridge",
+          "try": 1,
+          "model": "Veo 3.1 - Quality",
+          "quality_or_fast": "Quality",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:12:08.131958+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "17_ledger_bridge",
+          "try": 2,
+          "model": "Veo 3.1 - Quality",
+          "quality_or_fast": "Quality",
+          "status": "FAIL",
+          "note": "exception RuntimeError: Flow video model dropdown not found",
+          "credits_before": 3392,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:12:21.700729+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
       "model_keep": null,
       "quality_or_fast": "\u2014",
       "file": null,
@@ -435,7 +767,8 @@
       "bytes": null,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/17_ledger_bridge_v01.jpg",
       "start_frame_sha256": "4e766a6e1479b80a763a43a35e0aff875751b33736697efe38dc3fc8a2668710",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "fail_reason": "exhausted 2 tries without KEEP"
     }
   },
   "mint_attempt_2026_09_27_1435": {
@@ -455,7 +788,11 @@
       "07_Edit-Project/_qa_part01_mint_v01/playwright_profile_auth_probe_v01.json"
     ]
   },
-  "updated_at": "2026-09-27T14:08:11.380117+00:00",
-  "credits_before_mint": 3492,
-  "credits_mid_after_08": 3392
+  "updated_at": "2026-09-27T14:12:23.601229+00:00",
+  "credits_before_mint": 3392,
+  "credits_mid_after_08": 3392,
+  "credits_after_mint": 3392,
+  "credits_spent_total": 0,
+  "credits_before_session": 3492,
+  "credits_after_08": 3392
 }
