@@ -3,7 +3,7 @@
 **Env:** `.venv-hos` · `faster-whisper 1.2.1` installed · PR **#141** on main (`45333fe`)  
 **Command base:** `00_Brand/Channel-Setup/tools/vo_check.py`  
 **Script:** `01_Script/atom_script_master_v02.md`  
-**VO status:** **PENDING BEN LISTEN** (not KEEP)
+**VO status:** **KEEP** (Ben listened at 3:38, 6:06 and 7:39, 27 Sep 2026; the three FAILs are the transcriber)
 
 Every check below **ran** (word diff + loudness + pauses + pace). Nothing SKIPPED.
 
