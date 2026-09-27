@@ -54,7 +54,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Part 01 UAT preview **v04** (Ben's three scene fixes) is in iCloud. STOP for Ben review. Do not start Part 02 until Ben passes Part 01.
+**Next:** Part 01 UAT preview **v05** (plate 12 straight-beam remint) is in iCloud. STOP for Ben review. Do not start Part 02 until Ben passes Part 01.
 
 ---
 
@@ -66,6 +66,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | `hos_004_part01_rough_v02.mp4` | 69.813 s | board windows; silent plates + VO |
 | `hos_004_part01_rough_v03.mp4` | 69.813 s | v02 picture + TEMP music bed |
 | `hos_004_part01_rough_v04.mp4` | 69.813 s | Ben 3-scene remints + same TEMP bed as v03 |
+| `hos_004_part01_rough_v05.mp4` | 69.813 s | plate 12 straight-beam remint + same TEMP bed |
 
 iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/`
 
@@ -91,6 +92,22 @@ iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/`
 Credits: before **2692** → after **2602** (spent **~90**). Log: `PART01_MINT_LOG_v01.json` · `ben_fix_2026_09_27`.
 
 v04 sha256: `63cc242eeeb2ce2cd38d69a7f0459f03ab8791c2d8892912a8971cd74e49927c`
+
+
+### Plate 12 straight-beam remint → v05 (Ben 27 Sep 16:33 UK)
+
+Problem: tube glow had an S-shaped wiggle. Real X-ray/cathode beams run straight.
+
+| Field | Value |
+|---|---|
+| Plate | `12_1913_targets` @ 52.748 s |
+| Tries | **1 KEEP** (Quality) |
+| Credits | before **2602** → after **2502** (spent **100**) |
+| Account | `benoats@googlemail.com` Flow Ultra CDP |
+| Keep | brass+glass apparatus, targets on bench, no person in beam, no ATOMOS; prompt locks **straight beam, no curls, no wiggle, no squiggle** |
+| v05 sha256 | `71d7c70798c77ce2ecb02c37ad043fd98117a2209a84899236337fee8b952add` |
+| Log | `PART01_MINT_LOG_v01.json` · `ben_fix_12_straight_2026_09_27` |
+
 
 ### TEMP music bed (UAT only — final bed at full-film assembly)
 

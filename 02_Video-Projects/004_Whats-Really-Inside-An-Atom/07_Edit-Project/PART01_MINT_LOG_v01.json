@@ -1,5 +1,5 @@
 {
-  "status": "FLOW_CDP_BEN_FIX_DONE",
+  "status": "FLOW_CDP_12_STRAIGHT_DONE",
   "stopped_at": "2026-09-27T13:43:04.449177+00:00",
   "stop_reason": "Ben 27 Sep 14:35 UK Flow remint gate FAIL. Mini CDP Chrome (~/.hos-chrome-flow-benoats-googlemail-cdp :9222) is SIGNED OUT \u2014 Flow lands on /about pricing marketing page; AccountChooser shows blank Sign in. Credits not readable (not ~3492). No plates minted. Diagnostic: ~/.playwright-hos-flow-profile is logged in as benoats86@gmail.com (FORBIDDEN for HOS Veo) \u2014 not used for mint.",
   "film": "004_Whats-Really-Inside-An-Atom",
@@ -628,6 +628,29 @@
           "at": "2026-09-27T15:16:19.269085+00:00",
           "engine": "flow-ui Veo 3.1 scenery_only (CDP) ben-fix",
           "image_map": "Image 1 beam-to-head / ATOMOS"
+        },
+        {
+          "id": "12_1913_targets",
+          "try": 1,
+          "model": "Veo 3.1 - Quality",
+          "quality_or_fast": "Quality",
+          "ben_fix": true,
+          "scenery_only": true,
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/12_1913_targets_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/12_1913_targets_v01.mp4",
+          "sha256": "3359871bc0c33af06c87072e4384b054f2254f0de5c464e5eb97b406d9a5c4de",
+          "bytes": 3600538,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 2602,
+          "credits_used": 2552,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/0833d787-08ae-451e-9cd9-aec54f5c55e6",
+          "at": "2026-09-27T15:37:12.212591+00:00",
+          "engine": "flow-ui Veo 3.1 scenery_only (CDP) ben-fix",
+          "image_map": "Image 1 beam-to-head / ATOMOS",
+          "ben_fix_12_straight": true
         }
       ],
       "try_detail": [
@@ -664,28 +687,52 @@
           "at": "2026-09-27T15:16:19.269085+00:00",
           "engine": "flow-ui Veo 3.1 scenery_only (CDP) ben-fix",
           "image_map": "Image 1 beam-to-head / ATOMOS"
+        },
+        {
+          "id": "12_1913_targets",
+          "try": 1,
+          "model": "Veo 3.1 - Quality",
+          "quality_or_fast": "Quality",
+          "ben_fix": true,
+          "scenery_only": true,
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/12_1913_targets_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/12_1913_targets_v01.mp4",
+          "sha256": "3359871bc0c33af06c87072e4384b054f2254f0de5c464e5eb97b406d9a5c4de",
+          "bytes": 3600538,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 2602,
+          "credits_used": 2552,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/0833d787-08ae-451e-9cd9-aec54f5c55e6",
+          "at": "2026-09-27T15:37:12.212591+00:00",
+          "engine": "flow-ui Veo 3.1 scenery_only (CDP) ben-fix",
+          "image_map": "Image 1 beam-to-head / ATOMOS",
+          "ben_fix_12_straight": true
         }
       ],
       "model_keep": "Veo 3.1 - Quality",
       "quality_or_fast": "Quality",
       "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/12_1913_targets_v01.mp4",
-      "sha256": "a658b93cf9c194d74ed5fc0f9d9b9555382f33bd18d0b420aeae25eecab8e7ed",
+      "sha256": "3359871bc0c33af06c87072e4384b054f2254f0de5c464e5eb97b406d9a5c4de",
       "duration_s": 8.0,
-      "bytes": 3004805,
+      "bytes": 3600538,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/12_1913_targets_v01.jpg",
       "start_frame_sha256": "971812b892abbf46aebcf1e0e8889841a39b312075fd495681ef727c7ba18044",
       "note": "motion_ok scene_hits=4 dur=8.00s",
       "ben_fix_2026_09_27": true,
       "keep": {
         "file": "12_1913_targets_v01.mp4",
-        "sha256": "a658b93cf9c194d74ed5fc0f9d9b9555382f33bd18d0b420aeae25eecab8e7ed",
+        "sha256": "3359871bc0c33af06c87072e4384b054f2254f0de5c464e5eb97b406d9a5c4de",
         "try": 1,
         "model": "Veo 3.1 - Quality",
         "quality_or_fast": "Quality",
         "engine": "flow-cdp-ben-fix",
-        "credits_used": 32,
-        "credits_remaining": 2562,
-        "credits_note": "allocated from session delta (mid-mint reads hit daily-50 chip)"
+        "credits_used": 100,
+        "credits_remaining": 2502,
+        "credits_note": "session menu 2602\u21922502 (\u2212100 Quality try1 straight-beam)",
+        "ben_fix_12_straight": true
       }
     },
     "13_numbered_cards": {
@@ -1145,7 +1192,7 @@
       "07_Edit-Project/_qa_part01_mint_v01/playwright_profile_auth_probe_v01.json"
     ]
   },
-  "updated_at": "2026-09-27T15:25:57.315386+00:00",
+  "updated_at": "2026-09-27T15:37:20.639147+00:00",
   "credits_before_mint": 3392,
   "credits_mid_after_08": 3392,
   "credits_after_mint": 2692,
@@ -1238,5 +1285,27 @@
     }
   },
   "credits_before_ben_fix": 2692,
-  "credits_after_ben_fix": 2602
+  "credits_after_ben_fix": 2602,
+  "ben_fix_12_straight_2026_09_27": {
+    "at": "2026-09-27T15:35:23.156599+00:00",
+    "reason": "S-wiggle in tube glow; remint straight beam only",
+    "credits_before": 2602,
+    "account": "benoats@googlemail.com",
+    "credits_after": 2502,
+    "credits_spent": 100,
+    "kept": true,
+    "results": [
+      {
+        "try": 1,
+        "status": "KEEP",
+        "note": "motion_ok scene_hits=4 dur=8.00s",
+        "sha256": "3359871bc0c33af06c87072e4384b054f2254f0de5c464e5eb97b406d9a5c4de",
+        "quality_or_fast": "Quality",
+        "credits_before": 2602,
+        "credits_used": 100,
+        "credits_remaining": 2502,
+        "project_url": "https://flow.google.com/project/0833d787-08ae-451e-9cd9-aec54f5c55e6"
+      }
+    ]
+  }
 }
