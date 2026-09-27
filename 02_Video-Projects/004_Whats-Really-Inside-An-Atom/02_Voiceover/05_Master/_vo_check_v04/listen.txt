@@ -1,0 +1,9 @@
+FAIL  hos_004_vo_all_parts_listen_v04.mp3  8:19.69  mean -23.6 dB  peak -4.1 dB  154 wpm
+   first minute: title_question 8.64s  promise 11.34s  stakes 17.74s
+   FAIL  replace at ~3:38.50: script 'call them electrons but atoms have no' / heard 'call them electrons for atoms have no' — listen, then regenerate that sentence alone if real
+   FAIL  replace at ~6:06.38: script 'the bones in a living hand moseley' / heard 'the bones in the living hand moseley' — listen, then regenerate that sentence alone if real
+   FAIL  replace at ~7:39.70: script 'gave each kind a weight thomson found' / heard 'gave each kind of weight thomson found' — listen, then regenerate that sentence alone if real
+   warn  re-checked 6:31.38: 'sort the table by that number tellurium is and iodine is cobalt is and nickel is' is present (the full-file transcription skipped it)
+   warn  replace at ~2:38.42: script 'what is cambridge j j thomson is studying' / heard 'what is cambridge jj thomson is studying' — sounds alike (likely the transcriber); listen
+   warn  replace at ~3:34.98: script 'thomson called them corpuscles today we call' / heard 'thomson called them core puzzles today we call' — sounds alike (likely the transcriber); listen
+   warn  replace at ~6:03.60: script 'same invisible light rontgen used to see' / heard 'same invisible light runt gun used to see' — sounds alike (likely the transcriber); listen

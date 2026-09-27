@@ -1,0 +1,2 @@
+PASS  hos_004_part01_vo_v04.mp3  1:09.81  mean -23.8 dB  peak -4.2 dB  158 wpm
+   first minute: title_question 8.64s  promise 11.32s  stakes 17.98s

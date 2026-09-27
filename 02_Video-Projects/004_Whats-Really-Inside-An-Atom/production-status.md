@@ -37,7 +37,7 @@
 | Title question | **0:08.78** |
 | Dalton “each kind a weight” | **PASS** |
 | “It's a count.” | **PASS** |
-| `vo_check.py` | **PASS** ×5 parts + listen (loudness/silence). Word check via ElevenLabs Scribe: **PASS** Parts 01–04 exact; Part 05 one Scribe `a`↔`the` article only — see `VO_WORD_DIFF_v04.md` |
+| `vo_check.py` | **Rerun 27 Sep** with faster-whisper + PR #141. Parts 01–04 **PASS** (word check ran). Part 05 **FAIL** + listen **FAIL** at Ben holds 3:38 / 6:06 / 7:39 — see `VO_CHECK_v04_RERUN.md`. Status **PENDING BEN LISTEN**, not KEEP. |
 | Loudness | means −22.0…−24.7; peaks −4.1…−4.4; no in-part silence >1.5 s |
 
 Phone: `iCloud Drive/HOS UAT/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/`  

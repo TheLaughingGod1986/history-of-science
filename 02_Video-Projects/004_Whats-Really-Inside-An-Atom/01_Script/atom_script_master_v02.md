@@ -1,6 +1,6 @@
 # Why Is the Periodic Table in This Order? (script master v02)
 
-[VISUAL MUST: TIMING NOTE — LOCKED to VO v04 KEEP (27 Sep 2026). Times re-timed from `hos_004_part0N_vo_v04.wav` (atempo 1.03 on v03). Total VO **8:18** (498.285 s). Cold open: picture change every ~4–6 s.]
+[VISUAL MUST: TIMING NOTE — timed to VO v04 PENDING BEN LISTEN (27 Sep 2026; not KEEP until Ben says so). Times from `hos_004_part0N_vo_v04.wav` (atempo 1.03 on v03). Total VO **8:18** (498.285 s). Cold open: picture change every ~4–6 s.]
 
 
 ## PART 01: Cold open (0:00–1:10). No chapter card.
