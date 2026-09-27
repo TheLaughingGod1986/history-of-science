@@ -12,7 +12,7 @@
 | Episode gate | Passed by Ben (manual), 26 Sep 2026 |
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
-| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Part 03 `mint: true` (19 plates, 4–6 s) · Parts 01/02/04/05 `mint: false` · Explorer used ×1 (P02); remaining P04/P05 · no Explorer in Part 03 |
+| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–03 `mint: false` (03 rough v01 pending Ben) · 04/05 `mint: false` · Explorer used ×1 (P02); remaining P04/P05 · no Explorer in Part 03 |
 | Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”). **Part 03 rough v01 READY for Ben UAT** — STOP; do not start Part 04. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
@@ -90,9 +90,21 @@ iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part02_
 
 ## Part 03 rough UAT (27 Sep 2026) — PENDING Ben
 
-Board: `part-03_plates_v02.json` (19 plates, 4–6 s). No Explorer. Quality for tube glow. Credits start **2162**. Target: `hos_004_part03_rough_v01.mp4` (83.730 s VO). STOP for Ben after rough — do not start Part 04.
+| Cut | Duration | sha256 | Notes |
+|---|---|---|---|
+| `hos_004_part03_rough_v01.mp4` | **83.733 s** | `d62e0ed096ead8ec52666ca07476f973aeaae7635b70a16faaac45f14ec518e0` | 19 board windows · v04 VO · TEMP bed −20 dB sidechain · Flow Veo 3.1 scenery_only CDP |
 
-### Ben UAT fixes → v04 (27 Sep 16:00 UK)
+**Mint:** credits **2162 → 1162** (spent **1000**). Plate KEEP **19**/19 (plate 19 explosion framing remint after near-still FAILs). Quality on tube-glow plates. No Explorer. Unnamed physicist in prompts.
+
+**Log:** `07_Edit-Project/PART03_MINT_LOG_v01.json`
+
+iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part03_rough_v01.mp4`
+
+**STOP for Ben.** Do not start Part 04. Do not label the rough KEEP/LOCKED — plate-level KEEP only in the mint log.
+
+---
+
+### Ben UAT fixes → v04 (27 Sep 16:00 UK) · Part 01 record
 
 **Plate mapping (v03 screenshots → board):**
 
