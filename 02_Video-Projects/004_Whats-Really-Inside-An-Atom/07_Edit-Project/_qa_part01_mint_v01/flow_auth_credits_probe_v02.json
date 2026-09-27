@@ -1,0 +1,27 @@
+{
+  "cdp": "http://127.0.0.1:9222",
+  "required": "benoats@googlemail.com",
+  "one_google_hits": [],
+  "one_google_snip": "One\nhelp_outline\n\t\nsettings\nSettings\nYou're already subscribed\nYou can access your membership benefits at any time. Learn how to manage your Google\u00a0One plan.\nExplore Google\u00a0One",
+  "url": "https://flow.google.com/?pli=1",
+  "title": "Google Flow \u2013 AI creative studio for video, images and custom tools",
+  "emails": [
+    "benoats@googlemail.com"
+  ],
+  "active": "benoats@googlemail.com",
+  "credit_hits": [],
+  "credits": null,
+  "ultra": true,
+  "passkey": false,
+  "signed_out": false,
+  "forbidden86": false,
+  "clicked": [
+    "[aria-label*=\"Account details\" i]"
+  ],
+  "body_snip": "Skip to main content\nGoogle Flow\nFlow Music\ntv\nFlow TV\nhelp\nmore_vert\nULTRA\nSept 22 - 20:38\nedit\ndelete\nHOS 003 Part 05 Batch A\nedit\ndelete\nSept 22 - 16:30\nedit\ndelete\nSept 22 - 16:29\nedit\ndelete\nHOS 003 Part 04 Batch A\nedit\ndelete\nSept 21 - 20:02\nedit\ndelete\nSept 21 - 20:01\nedit\ndelete\nSept 21 - 20:00\nedit\ndelete\nHOS 003 Part 03 Batch A\nedit\ndelete\nHOS 003 Part 02 Batch B\nedit\ndelete\nHOS 003 Part 02 Batch A\nedit\ndelete\nHOS 003 Part 01 Batch A\nedit\ndelete\nAndromeda 019 Veo Fast v01\nedit\ndelete\nSep 14 - 13:50\nedit\ndelete\nMint Moon Leaving Part 04\nedit\ndelete\nMoon P02 remint\nedit\ndelete\nSept 10 - 23:10\nedit\ndelete\nSept 10 - 23:09\nedit\ndelete\nSept 10 - 21:35\nedit\ndelete\nSept 10 - 21:29\nedit\ndelete\nSept 10 - 21:28\nedit\ndelete\nadd\nNew project\nclose\nBenjamin Oats\nbenoats@googlemail.com\nSwitch account\nmovie_filter_auto\n3,492 Google Flow credits\nUpgrade",
+  "shot": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/auth_v02_account.png",
+  "ok": false,
+  "stop_reasons": [
+    "credits_unreadable"
+  ]
+}

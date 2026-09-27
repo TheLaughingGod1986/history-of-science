@@ -198,14 +198,27 @@ def main() -> None:
 
     plate_meta = []
     for pl, clip in zip(plates, clips):
+        plog = log.get("plates", {}).get(pl["id"], {})
+        tries = plog.get("tries")
+        td = plog.get("try_detail")
+        if isinstance(tries, list):
+            n_tries = len(tries)
+        elif isinstance(tries, int):
+            n_tries = tries
+        elif isinstance(td, list):
+            n_tries = len(td)
+        else:
+            n_tries = 0
+        keep = plog.get("keep") or {}
         plate_meta.append({
             "id": pl["id"],
             "file": clip.name,
             "sha256": sha256(clip),
             "duration_s": round(probe(clip), 3),
-            "model": log.get("plates", {}).get(pl["id"], {}).get("keep", {}).get("model"),
-            "engine": log.get("plates", {}).get(pl["id"], {}).get("keep", {}).get("engine"),
-            "tries": len(log.get("plates", {}).get(pl["id"], {}).get("tries", [])),
+            "model": keep.get("model") or plog.get("model_keep"),
+            "engine": keep.get("engine") or plog.get("engine"),
+            "quality_or_fast": keep.get("quality_or_fast") or plog.get("quality_or_fast"),
+            "tries": n_tries,
         })
 
     meta = {

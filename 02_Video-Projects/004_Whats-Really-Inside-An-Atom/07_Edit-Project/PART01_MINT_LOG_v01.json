@@ -1,20 +1,27 @@
 {
-  "status": "STOPPED",
-  "stopped_at": "2026-09-27T13:11:28.020645+00:00",
-  "stop_reason": "Ben 27 Sep 14:10 UK \u2014 no more Flow/Veo spend on Part 01 until Ben KEEP on VO. Mid-flight: none (batch already finished).",
+  "status": "FLOW_CDP_MINT_DONE",
+  "stopped_at": "2026-09-27T13:43:04.449177+00:00",
+  "stop_reason": "Ben 27 Sep 14:35 UK Flow remint gate FAIL. Mini CDP Chrome (~/.hos-chrome-flow-benoats-googlemail-cdp :9222) is SIGNED OUT \u2014 Flow lands on /about pricing marketing page; AccountChooser shows blank Sign in. Credits not readable (not ~3492). No plates minted. Diagnostic: ~/.playwright-hos-flow-profile is logged in as benoats86@gmail.com (FORBIDDEN for HOS Veo) \u2014 not used for mint.",
   "film": "004_Whats-Really-Inside-An-Atom",
   "part": "01",
-  "vo_status": "PENDING BEN LISTEN (v04) \u2014 not KEEP. Hold notes: 7:39 each kind a weight \u00b7 6:06 a living hand \u00b7 3:38 But atoms",
+  "vo_status": "KEEP (v04)",
   "flow_ultra": {
     "account": "benoats@googlemail.com",
-    "profile": "~/.playwright-hos-flow-profile",
-    "result": "BLOCKED \u2014 Insufficient credits (Fast + Lite + Quality). 0 Flow clips landed."
+    "profile": "~/.hos-chrome-flow-benoats-googlemail-cdp",
+    "cdp": "http://127.0.0.1:9222",
+    "credits_before": 3492,
+    "account_confirmed": "benoats@googlemail.com",
+    "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/gate_auth_ok.png",
+    "credits_after": 2692,
+    "credits_note": "Account menu: 3,492 \u2192 2,692 Google Flow credits (benoats@googlemail.com ULTRA)"
   },
-  "engine_used": "gemini-api-veo start-frame I2V (Flow Ultra fallback only). Stills: gemini-2.5-flash-image.",
+  "engine_used": "flow-ui Veo 3.1 start-frame I2V via Mini CDP :9222",
   "summary": {
-    "keep": 10,
-    "fail_or_missing": 7,
-    "total_board_plates": 17
+    "keep": 17,
+    "fail_or_missing": 0,
+    "total_board_plates": 17,
+    "flow_remint_keep": 7,
+    "flow_remint_fail": 0
   },
   "plates": {
     "01_coin_halves": {
@@ -209,33 +216,149 @@
     },
     "08_smallest_uncuttable": {
       "id": "08_smallest_uncuttable",
-      "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
-      "model_keep": null,
-      "quality_or_fast": "\u2014",
-      "file": null,
-      "sha256": null,
-      "duration_s": null,
-      "bytes": null,
+      "status": "KEEP",
+      "tries": [
+        {
+          "id": "08_smallest_uncuttable",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s | harvested after gallery-pending",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+          "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+          "bytes": 1735819,
+          "duration_s": 8.0,
+          "credits_before": 3492,
+          "credits_used": null,
+          "credits_remaining": null,
+          "at": "2026-09-27T14:08:11.379018+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)",
+          "project_url": "https://flow.google.com/project/14bfed61-794d-40f1-b9d2-ae7bb98fe234"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "08_smallest_uncuttable",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s | harvested after gallery-pending",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+          "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+          "bytes": 1735819,
+          "duration_s": 8.0,
+          "credits_before": 3492,
+          "credits_used": 100,
+          "credits_remaining": 3392,
+          "at": "2026-09-27T14:08:11.379018+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)",
+          "project_url": "https://flow.google.com/project/14bfed61-794d-40f1-b9d2-ae7bb98fe234"
+        }
+      ],
+      "model_keep": "Veo 3.1 - Fast",
+      "quality_or_fast": "Fast",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/08_smallest_uncuttable_v01.mp4",
+      "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+      "duration_s": 8.0,
+      "bytes": 1735819,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/08_smallest_uncuttable_v01.jpg",
       "start_frame_sha256": "3c3f0e72b6cda06d82e181b8e1efe65da8a3fa5cc025aec2e10ed28b6e840751",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "keep": {
+        "file": "08_smallest_uncuttable_v01.mp4",
+        "sha256": "006e111c96ebd7131c4c026d9b301faeaad3535c4e5f761786f517d6e6a32ccb",
+        "try": 1,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-cdp",
+        "credits_used": 100,
+        "credits_remaining": 3392,
+        "credits_note": "measured from account menu after plate"
+      }
     },
     "09_uncuttable_blur": {
       "id": "09_uncuttable_blur",
-      "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
-      "model_keep": null,
-      "quality_or_fast": "\u2014",
-      "file": null,
-      "sha256": null,
-      "duration_s": null,
-      "bytes": null,
+      "status": "KEEP",
+      "tries": [
+        {
+          "id": "09_uncuttable_blur",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/09_uncuttable_blur_v01.jpg",
+          "start_frame_sha256": "735a90ec9c8db62920832f8022859e9cab09c879b0c33d582062f2f735fc3eed",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/09_uncuttable_blur_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/09_uncuttable_blur_v01.mp4",
+          "sha256": "39156158204bc77a4283d05d08184060f584370f45c0fbf561779229f2b05ff8",
+          "bytes": 2521859,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 3392,
+          "credits_used": 3342,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/4d096973-8793-4777-b03f-1dbeeb8236f6",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:18:37.549935+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "09_uncuttable_blur",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/09_uncuttable_blur_v01.jpg",
+          "start_frame_sha256": "735a90ec9c8db62920832f8022859e9cab09c879b0c33d582062f2f735fc3eed",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/09_uncuttable_blur_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/09_uncuttable_blur_v01.mp4",
+          "sha256": "39156158204bc77a4283d05d08184060f584370f45c0fbf561779229f2b05ff8",
+          "bytes": 2521859,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 3392,
+          "credits_used": 117,
+          "credits_remaining": 3275,
+          "project_url": "https://flow.google.com/project/4d096973-8793-4777-b03f-1dbeeb8236f6",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:18:37.549935+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "model_keep": "Veo 3.1 - Fast",
+      "quality_or_fast": "Fast",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/09_uncuttable_blur_v01.mp4",
+      "sha256": "39156158204bc77a4283d05d08184060f584370f45c0fbf561779229f2b05ff8",
+      "duration_s": 8.0,
+      "bytes": 2521859,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/09_uncuttable_blur_v01.jpg",
       "start_frame_sha256": "735a90ec9c8db62920832f8022859e9cab09c879b0c33d582062f2f735fc3eed",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "keep": {
+        "file": "09_uncuttable_blur_v01.mp4",
+        "sha256": "39156158204bc77a4283d05d08184060f584370f45c0fbf561779229f2b05ff8",
+        "try": 1,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-cdp",
+        "credits_used": 117,
+        "credits_remaining": 3275,
+        "credits_note": "session before/after measured from account menu; per-plate used allocated from delta (mid-mint reads hit daily-50 chip)"
+      }
     },
     "10_electron_tube": {
       "id": "10_electron_tube",
@@ -261,18 +384,83 @@
     },
     "11_gold_foil_bounce": {
       "id": "11_gold_foil_bounce",
-      "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
-      "model_keep": null,
-      "quality_or_fast": "\u2014",
-      "file": null,
-      "sha256": null,
-      "duration_s": null,
-      "bytes": null,
+      "status": "KEEP",
+      "tries": [
+        {
+          "id": "11_gold_foil_bounce",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/11_gold_foil_bounce_v01.jpg",
+          "start_frame_sha256": "b7911420dd8c6d8b7a5e772ec4baa022608223d18efc630a2ead19179b6bffa8",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/11_gold_foil_bounce_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/11_gold_foil_bounce_v01.mp4",
+          "sha256": "5436abd10fa19bdd0f48f69d1c6d56a02ae25de30598d8ae739ef309c3e9f437",
+          "bytes": 2951888,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 50,
+          "credits_used": 0,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/71064760-76a9-4a0f-b42a-93757c2053f4",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:20:38.443109+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "11_gold_foil_bounce",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/11_gold_foil_bounce_v01.jpg",
+          "start_frame_sha256": "b7911420dd8c6d8b7a5e772ec4baa022608223d18efc630a2ead19179b6bffa8",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/11_gold_foil_bounce_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/11_gold_foil_bounce_v01.mp4",
+          "sha256": "5436abd10fa19bdd0f48f69d1c6d56a02ae25de30598d8ae739ef309c3e9f437",
+          "bytes": 2951888,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 3275,
+          "credits_used": 117,
+          "credits_remaining": 3158,
+          "project_url": "https://flow.google.com/project/71064760-76a9-4a0f-b42a-93757c2053f4",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:20:38.443109+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "model_keep": "Veo 3.1 - Fast",
+      "quality_or_fast": "Fast",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/11_gold_foil_bounce_v01.mp4",
+      "sha256": "5436abd10fa19bdd0f48f69d1c6d56a02ae25de30598d8ae739ef309c3e9f437",
+      "duration_s": 8.0,
+      "bytes": 2951888,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/11_gold_foil_bounce_v01.jpg",
       "start_frame_sha256": "b7911420dd8c6d8b7a5e772ec4baa022608223d18efc630a2ead19179b6bffa8",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "keep": {
+        "file": "11_gold_foil_bounce_v01.mp4",
+        "sha256": "5436abd10fa19bdd0f48f69d1c6d56a02ae25de30598d8ae739ef309c3e9f437",
+        "try": 1,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-cdp",
+        "credits_used": 117,
+        "credits_remaining": 3158,
+        "credits_note": "session before/after measured from account menu; per-plate used allocated from delta (mid-mint reads hit daily-50 chip)"
+      }
     },
     "12_1913_targets": {
       "id": "12_1913_targets",
@@ -326,63 +514,399 @@
     },
     "14_te_i_pullback": {
       "id": "14_te_i_pullback",
-      "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
-      "model_keep": null,
-      "quality_or_fast": "\u2014",
-      "file": null,
-      "sha256": null,
-      "duration_s": null,
-      "bytes": null,
+      "status": "KEEP",
+      "tries": [
+        {
+          "id": "14_te_i_pullback",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/14_te_i_pullback_v01.jpg",
+          "start_frame_sha256": "c1896c114b7a58e3abf04a3acfbda7a78ea48b196562dd39f3a2e534bd3c1f6e",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/14_te_i_pullback_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/14_te_i_pullback_v01.mp4",
+          "sha256": "6bcdc994f28d14e0c8f96c1936fa74b0ffef6eb163188f78f6a6d4fb23409420",
+          "bytes": 2606810,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 50,
+          "credits_used": 0,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/9e59758d-b4b4-495a-b478-ca16fc185ea3",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:22:35.903971+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "14_te_i_pullback",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/14_te_i_pullback_v01.jpg",
+          "start_frame_sha256": "c1896c114b7a58e3abf04a3acfbda7a78ea48b196562dd39f3a2e534bd3c1f6e",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/14_te_i_pullback_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/14_te_i_pullback_v01.mp4",
+          "sha256": "6bcdc994f28d14e0c8f96c1936fa74b0ffef6eb163188f78f6a6d4fb23409420",
+          "bytes": 2606810,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 3158,
+          "credits_used": 117,
+          "credits_remaining": 3041,
+          "project_url": "https://flow.google.com/project/9e59758d-b4b4-495a-b478-ca16fc185ea3",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:22:35.903971+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "model_keep": "Veo 3.1 - Fast",
+      "quality_or_fast": "Fast",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/14_te_i_pullback_v01.mp4",
+      "sha256": "6bcdc994f28d14e0c8f96c1936fa74b0ffef6eb163188f78f6a6d4fb23409420",
+      "duration_s": 8.0,
+      "bytes": 2606810,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/14_te_i_pullback_v01.jpg",
       "start_frame_sha256": "c1896c114b7a58e3abf04a3acfbda7a78ea48b196562dd39f3a2e534bd3c1f6e",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "keep": {
+        "file": "14_te_i_pullback_v01.mp4",
+        "sha256": "6bcdc994f28d14e0c8f96c1936fa74b0ffef6eb163188f78f6a6d4fb23409420",
+        "try": 1,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-cdp",
+        "credits_used": 117,
+        "credits_remaining": 3041,
+        "credits_note": "session before/after measured from account menu; per-plate used allocated from delta (mid-mint reads hit daily-50 chip)"
+      }
     },
     "15_knife_coin_return": {
       "id": "15_knife_coin_return",
-      "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
-      "model_keep": null,
-      "quality_or_fast": "\u2014",
-      "file": null,
-      "sha256": null,
-      "duration_s": null,
-      "bytes": null,
+      "status": "KEEP",
+      "tries": [
+        {
+          "id": "15_knife_coin_return",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/15_knife_coin_return_v01.jpg",
+          "start_frame_sha256": "8f1ecadd84b76768324a4a1c379b9ffc25fd098915d88a205b7e584120108588",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/15_knife_coin_return_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/15_knife_coin_return_v01.mp4",
+          "sha256": "234dfd7d2508cdb699fc5b09daaad34ff2188ba8da1fb40c2a0fc7c3c4dec7e4",
+          "bytes": 2792712,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 50,
+          "credits_used": 0,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/0c6822b0-ca2e-4978-b8ba-75e85728c166",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:24:43.825963+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "15_knife_coin_return",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/15_knife_coin_return_v01.jpg",
+          "start_frame_sha256": "8f1ecadd84b76768324a4a1c379b9ffc25fd098915d88a205b7e584120108588",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/15_knife_coin_return_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/15_knife_coin_return_v01.mp4",
+          "sha256": "234dfd7d2508cdb699fc5b09daaad34ff2188ba8da1fb40c2a0fc7c3c4dec7e4",
+          "bytes": 2792712,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 3041,
+          "credits_used": 116,
+          "credits_remaining": 2925,
+          "project_url": "https://flow.google.com/project/0c6822b0-ca2e-4978-b8ba-75e85728c166",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:24:43.825963+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "model_keep": "Veo 3.1 - Fast",
+      "quality_or_fast": "Fast",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/15_knife_coin_return_v01.mp4",
+      "sha256": "234dfd7d2508cdb699fc5b09daaad34ff2188ba8da1fb40c2a0fc7c3c4dec7e4",
+      "duration_s": 8.0,
+      "bytes": 2792712,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/15_knife_coin_return_v01.jpg",
       "start_frame_sha256": "8f1ecadd84b76768324a4a1c379b9ffc25fd098915d88a205b7e584120108588",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "keep": {
+        "file": "15_knife_coin_return_v01.mp4",
+        "sha256": "234dfd7d2508cdb699fc5b09daaad34ff2188ba8da1fb40c2a0fc7c3c4dec7e4",
+        "try": 1,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-cdp",
+        "credits_used": 116,
+        "credits_remaining": 2925,
+        "credits_note": "session before/after measured from account menu; per-plate used allocated from delta (mid-mint reads hit daily-50 chip)"
+      }
     },
     "16_why_wrong_order": {
       "id": "16_why_wrong_order",
-      "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
-      "model_keep": null,
-      "quality_or_fast": "\u2014",
-      "file": null,
-      "sha256": null,
-      "duration_s": null,
-      "bytes": null,
+      "status": "KEEP",
+      "tries": [
+        {
+          "id": "16_why_wrong_order",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/16_why_wrong_order_v01.jpg",
+          "start_frame_sha256": "aaf2d429e8485b32247931896e916a6bf994d1702c68f5d75c2f438aef6de43a",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/16_why_wrong_order_t1.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/16_why_wrong_order_t1.mp4",
+          "sha256": "69361eb67fafcb0fc00aff2ac22c66360e0ab2680b5c955f1b531658d8628b3e",
+          "bytes": 2651196,
+          "duration_s": 8.0,
+          "status": "FAIL",
+          "note": "near-still scene_hits=1",
+          "credits_before": 50,
+          "credits_used": 0,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/e9a26736-7707-4d49-9d09-e4713e0d7e55",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:26:41.103715+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "16_why_wrong_order",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/16_why_wrong_order_v01.jpg",
+          "start_frame_sha256": "aaf2d429e8485b32247931896e916a6bf994d1702c68f5d75c2f438aef6de43a",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/16_why_wrong_order_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/16_why_wrong_order_v01.mp4",
+          "sha256": "e8be3d361b89da4a4f18ab67b7c156dda4ca6ede977833c012df41cd385881b6",
+          "bytes": 2580087,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 50,
+          "credits_used": 0,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/f0a7d823-4659-465b-9124-3a7302f769bd",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:28:39.743933+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "16_why_wrong_order",
+          "try": 1,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/16_why_wrong_order_v01.jpg",
+          "start_frame_sha256": "aaf2d429e8485b32247931896e916a6bf994d1702c68f5d75c2f438aef6de43a",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/16_why_wrong_order_t1.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/16_why_wrong_order_t1.mp4",
+          "sha256": "69361eb67fafcb0fc00aff2ac22c66360e0ab2680b5c955f1b531658d8628b3e",
+          "bytes": 2651196,
+          "duration_s": 8.0,
+          "status": "FAIL",
+          "note": "near-still scene_hits=1",
+          "credits_before": 50,
+          "credits_used": 0,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/e9a26736-7707-4d49-9d09-e4713e0d7e55",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:26:41.103715+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        },
+        {
+          "id": "16_why_wrong_order",
+          "try": 2,
+          "model": "Veo 3.1 - Fast",
+          "quality_or_fast": "Fast",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/16_why_wrong_order_v01.jpg",
+          "start_frame_sha256": "aaf2d429e8485b32247931896e916a6bf994d1702c68f5d75c2f438aef6de43a",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/16_why_wrong_order_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/16_why_wrong_order_v01.mp4",
+          "sha256": "e8be3d361b89da4a4f18ab67b7c156dda4ca6ede977833c012df41cd385881b6",
+          "bytes": 2580087,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 2925,
+          "credits_used": 116,
+          "credits_remaining": 2809,
+          "project_url": "https://flow.google.com/project/f0a7d823-4659-465b-9124-3a7302f769bd",
+          "flow_meta": {
+            "model": "Veo 3.1 - Fast",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:28:39.743933+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "model_keep": "Veo 3.1 - Fast",
+      "quality_or_fast": "Fast",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/16_why_wrong_order_v01.mp4",
+      "sha256": "e8be3d361b89da4a4f18ab67b7c156dda4ca6ede977833c012df41cd385881b6",
+      "duration_s": 8.0,
+      "bytes": 2580087,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/16_why_wrong_order_v01.jpg",
       "start_frame_sha256": "aaf2d429e8485b32247931896e916a6bf994d1702c68f5d75c2f438aef6de43a",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "keep": {
+        "file": "16_why_wrong_order_v01.mp4",
+        "sha256": "e8be3d361b89da4a4f18ab67b7c156dda4ca6ede977833c012df41cd385881b6",
+        "try": 2,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-cdp",
+        "credits_used": 116,
+        "credits_remaining": 2809,
+        "credits_note": "session before/after measured from account menu; per-plate used allocated from delta (mid-mint reads hit daily-50 chip)"
+      }
     },
     "17_ledger_bridge": {
       "id": "17_ledger_bridge",
-      "status": "FAIL",
-      "tries": 0,
-      "try_detail": [],
-      "model_keep": null,
-      "quality_or_fast": "\u2014",
-      "file": null,
-      "sha256": null,
-      "duration_s": null,
-      "bytes": null,
+      "status": "KEEP",
+      "tries": [
+        {
+          "id": "17_ledger_bridge",
+          "try": 1,
+          "model": "Veo 3.1 - Quality",
+          "quality_or_fast": "Quality",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/17_ledger_bridge_v01.jpg",
+          "start_frame_sha256": "4e766a6e1479b80a763a43a35e0aff875751b33736697efe38dc3fc8a2668710",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/17_ledger_bridge_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/17_ledger_bridge_v01.mp4",
+          "sha256": "c4f8830b85f743869d2357fa12fabe657914efcab189de12623fe6e30addf41d",
+          "bytes": 3588783,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 50,
+          "credits_used": 0,
+          "credits_remaining": 50,
+          "project_url": "https://flow.google.com/project/9e767edc-6750-43a0-af30-89beb4c477be",
+          "flow_meta": {
+            "model": "Veo 3.1 - Quality",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:30:35.662019+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "17_ledger_bridge",
+          "try": 1,
+          "model": "Veo 3.1 - Quality",
+          "quality_or_fast": "Quality",
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/17_ledger_bridge_v01.jpg",
+          "start_frame_sha256": "4e766a6e1479b80a763a43a35e0aff875751b33736697efe38dc3fc8a2668710",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/17_ledger_bridge_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/17_ledger_bridge_v01.mp4",
+          "sha256": "c4f8830b85f743869d2357fa12fabe657914efcab189de12623fe6e30addf41d",
+          "bytes": 3588783,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 2809,
+          "credits_used": 117,
+          "credits_remaining": 2692,
+          "project_url": "https://flow.google.com/project/9e767edc-6750-43a0-af30-89beb4c477be",
+          "flow_meta": {
+            "model": "Veo 3.1 - Quality",
+            "media_id": "gallery-pending:0",
+            "needs_gallery_harvest": true
+          },
+          "at": "2026-09-27T14:30:35.662019+00:00",
+          "engine": "flow-ui Veo 3.1 start-frame I2V (CDP)"
+        }
+      ],
+      "model_keep": "Veo 3.1 - Quality",
+      "quality_or_fast": "Quality",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/17_ledger_bridge_v01.mp4",
+      "sha256": "c4f8830b85f743869d2357fa12fabe657914efcab189de12623fe6e30addf41d",
+      "duration_s": 8.0,
+      "bytes": 3588783,
       "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/refs/v01_stills/17_ledger_bridge_v01.jpg",
       "start_frame_sha256": "4e766a6e1479b80a763a43a35e0aff875751b33736697efe38dc3fc8a2668710",
-      "note": "no file; Flow credits blocked then Gemini 429 / exhausted"
+      "note": "no file; Flow credits blocked then Gemini 429 / exhausted",
+      "keep": {
+        "file": "17_ledger_bridge_v01.mp4",
+        "sha256": "c4f8830b85f743869d2357fa12fabe657914efcab189de12623fe6e30addf41d",
+        "try": 1,
+        "model": "Veo 3.1 - Quality",
+        "quality_or_fast": "Quality",
+        "engine": "flow-cdp",
+        "credits_used": 117,
+        "credits_remaining": 2692,
+        "credits_note": "session before/after measured from account menu; per-plate used allocated from delta (mid-mint reads hit daily-50 chip)"
+      }
     }
-  }
+  },
+  "mint_attempt_2026_09_27_1435": {
+    "plates_requested": [
+      "08_smallest_uncuttable",
+      "09_uncuttable_blur",
+      "11_gold_foil_bounce",
+      "14_te_i_pullback",
+      "15_knife_coin_return",
+      "16_why_wrong_order",
+      "17_ledger_bridge"
+    ],
+    "minted": [],
+    "probe_artifacts": [
+      "07_Edit-Project/_qa_part01_mint_v01/flow_auth_credits_probe_v01.json",
+      "07_Edit-Project/_qa_part01_mint_v01/auth_url_sweep_v01.json",
+      "07_Edit-Project/_qa_part01_mint_v01/playwright_profile_auth_probe_v01.json"
+    ]
+  },
+  "updated_at": "2026-09-27T14:35:31.713006+00:00",
+  "credits_before_mint": 3392,
+  "credits_mid_after_08": 3392,
+  "credits_after_mint": 2692,
+  "credits_spent_total": 800,
+  "credits_before_session": 3492,
+  "credits_after_08": 3392
 }

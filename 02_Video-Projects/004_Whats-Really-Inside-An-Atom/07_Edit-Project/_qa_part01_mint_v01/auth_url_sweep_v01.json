@@ -1,0 +1,67 @@
+[
+  {
+    "tried": "https://labs.google/fx/tools/flow",
+    "final": "https://flow.google.com/about",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "emails": [],
+    "credits": null,
+    "passkey": false,
+    "sign_in": false,
+    "ultra": true,
+    "about": true,
+    "shot": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/auth_try_0.png",
+    "snip": "Skip to main content\nOverview\nModels\nCapabilities\nTools\nFlow Sessions\nPricing\nmore_vert\nGoogle Flow\n\nYour AI creative studio built with Google's advanced generative models.\n\nCreate with Google Flow\n\nExplore Google AI Subscriptions. See FAQ.\nFeatures may vary by Google AI subscription tier, platform (web vs. mobile), and region. 18+.\n\nkeyboard_arrow_down\nUnlock your\nbest creative work\nplay_arrow\nOur Models\n\nGoogle Flow collaborates with creatives at every stage, from idea to execution\u2014all using Google\u2019s advanced generative models.\n\nGemini Omni\n\nCreate and edit videos from any input reference \u2014 real or generated. Omni is a leap forward in world understanding, multimodality, and conversational editing.\n\nTry in Google Flow"
+  },
+  {
+    "tried": "https://flow.google.com/fx/tools/flow",
+    "final": "https://flow.google.com/404",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools: Page not found",
+    "emails": [],
+    "credits": null,
+    "passkey": false,
+    "sign_in": false,
+    "ultra": false,
+    "about": false,
+    "shot": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/auth_try_1.png",
+    "snip": "Skip to main content\nError: 404\n\nWe don't know what you're looking for, but we hope you find it.\n\nopen_in_new\nHome"
+  },
+  {
+    "tried": "https://flow.google.com/u/0/",
+    "final": "https://flow.google.com/about",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "emails": [],
+    "credits": null,
+    "passkey": false,
+    "sign_in": false,
+    "ultra": true,
+    "about": true,
+    "shot": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/auth_try_2.png",
+    "snip": "Skip to main content\nOverview\nModels\nCapabilities\nTools\nFlow Sessions\nPricing\nmore_vert\nGoogle Flow\n\nYour AI creative studio built with Google's advanced generative models.\n\nCreate with Google Flow\n\nExplore Google AI Subscriptions. See FAQ.\nFeatures may vary by Google AI subscription tier, platform (web vs. mobile), and region. 18+.\n\nkeyboard_arrow_down\nUnlock your\nbest creative work\nplay_arrow\nOur Models\n\nGoogle Flow collaborates with creatives at every stage, from idea to execution\u2014all using Google\u2019s advanced generative models.\n\nGemini Omni\n\nCreate and edit videos from any input reference \u2014 real or generated. Omni is a leap forward in world understanding, multimodality, and conversational editing.\n\nTry in Google Flow"
+  },
+  {
+    "tried": "https://flow.google.com/u/1/",
+    "final": "https://flow.google.com/about",
+    "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+    "emails": [],
+    "credits": null,
+    "passkey": false,
+    "sign_in": false,
+    "ultra": true,
+    "about": true,
+    "shot": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/auth_try_3.png",
+    "snip": "Skip to main content\nOverview\nModels\nCapabilities\nTools\nFlow Sessions\nPricing\nmore_vert\nGoogle Flow\n\nYour AI creative studio built with Google's advanced generative models.\n\nCreate with Google Flow\n\nExplore Google AI Subscriptions. See FAQ.\nFeatures may vary by Google AI subscription tier, platform (web vs. mobile), and region. 18+.\n\nkeyboard_arrow_down\nUnlock your\nbest creative work\nplay_arrow\nOur Models\n\nGoogle Flow collaborates with creatives at every stage, from idea to execution\u2014all using Google\u2019s advanced generative models.\n\nGemini Omni\n\nCreate and edit videos from any input reference \u2014 real or generated. Omni is a leap forward in world understanding, multimodality, and conversational editing.\n\nTry in Google Flow"
+  },
+  {
+    "tried": "https://accounts.google.com/AccountChooser?continue=https://flow.google.com/",
+    "final": "https://accounts.google.com/v3/signin/identifier?continue=https://flow.google.com/&dsh=S-2094728504:1790516506414824&rip=1&sacu=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin",
+    "title": "Sign in - Google Accounts",
+    "emails": [],
+    "credits": null,
+    "passkey": false,
+    "sign_in": true,
+    "ultra": false,
+    "about": false,
+    "shot": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part01_mint_v01/auth_try_4.png",
+    "snip": "Loading\nSign in\nwith your Google Account. This account will be available to other Google apps in the browser.\nEmail or phone\nForgot email?\nNot your computer? Use Guest mode to sign in privately. Learn more about using Guest mode\nNext\nCreate account\nEnglish (United States)\nHelp\nPrivacy\nTerms"
+  }
+]
