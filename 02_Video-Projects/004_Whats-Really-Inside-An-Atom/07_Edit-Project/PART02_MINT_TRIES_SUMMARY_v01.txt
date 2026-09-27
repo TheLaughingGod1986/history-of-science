@@ -1,0 +1,23 @@
+01_dalton_schoolroom	try1	KEEP	Veo 3.1 - Fast	try1	bef=2482	motion_ok scene_hits=4 dur=8.00s
+02_atomic_theory	try1	FAIL	Veo 3.1 - Fast	try1	bef=2472	near-still scene_hits=1
+02_atomic_theory	try2	KEEP	Veo 3.1 - Fast	try2_alt	bef=2462	motion_ok scene_hits=4 dur=8.00s
+03_weights_line	try1	KEEP	Veo 3.1 - Fast	try1	bef=2452	motion_ok scene_hits=4 dur=8.00s
+04_gold_heavier	try1	KEEP	Veo 3.1 - Fast	try1	bef=2442	motion_ok scene_hits=4 dur=8.00s
+05_fixed_amounts	try1	KEEP	Veo 3.1 - Fast	try1	bef=2432	motion_ok scene_hits=4 dur=8.00s
+06_water_ratio	try1	KEEP	Veo 3.1 - Fast	try1	bef=2422	motion_ok scene_hits=10 dur=8.00s
+07_water_always	try1	FAIL	Veo 3.1 - Fast	try1	bef=2412	near-still scene_hits=1
+07_water_always	try2	KEEP	Veo 3.1 - Fast	try2_alt	bef=2402	motion_ok scene_hits=7 dur=8.00s
+08_ruler_of_weights	try1	KEEP	Veo 3.1 - Fast	try1	bef=2392	motion_ok scene_hits=4 dur=8.00s
+09_mendeleev_desk	try1	KEEP	Veo 3.1 - Fast	try1	bef=2172	motion_ok scene_hits=4 dur=8.00s
+10_cards_by_weight	try1	KEEP	Veo 3.1 - Fast	try1	bef=2382	motion_ok scene_hits=4 dur=8.00s
+11_properties_repeat	try1	KEEP	Veo 3.1 - Fast	try1	bef=2372	motion_ok scene_hits=4 dur=8.00s
+12_halogen_column	try1	KEEP	Veo 3.1 - Fast	try1	bef=2362	motion_ok scene_hits=4 dur=8.00s
+13_gaps_left	try1	KEEP	Veo 3.1 - Fast	try1	bef=2352	motion_ok scene_hits=4 dur=8.00s
+14_prints_mails	try1	KEEP	Veo 3.1 - Fast	try1	bef=2342	motion_ok scene_hits=4 dur=8.00s
+15_te_heavier_than_i	try1	KEEP	Veo 3.1 - Fast	try1	bef=2332	motion_ok scene_hits=4 dur=8.00s
+16_explorer_te_before_i	try1	KEEP	Veo 3.1 - Fast	try1	bef=2322	motion_ok scene_hits=4 dur=8.00s
+17_cobalt_nickel	try1	KEEP	Veo 3.1 - Fast	try1	bef=2312	motion_ok scene_hits=4 dur=8.00s
+18_weights_not_wrong	try1	FAIL	Veo 3.1 - Fast	try1	bef=2302	near-still scene_hits=1
+18_weights_not_wrong	try2	KEEP	Veo 3.1 - Fast	try2_alt	bef=2292	motion_ok scene_hits=4 dur=8.00s
+19_table_breaks_rule	try1	KEEP	Veo 3.1 - Quality	try1	bef=2282	motion_ok scene_hits=4 dur=8.00s
+20_what_is_order	try1	KEEP	Veo 3.1 - Fast	try1	bef=2182	motion_ok scene_hits=13 dur=8.00s

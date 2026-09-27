@@ -1,0 +1,2 @@
+2026-09-27T17:20:24.412616+00:00 HOS002_AB_THUMB_C_STILL Image/NanoBanana via CDP new-tab only; credits_before=2482 used=0 after=2482 (shared :9222; 002 A/B pack — do not treat as Part 02 spend)
+2026-09-27T17:21:30+00:00 HOS002_AB_THUMB_C_STILL CORRECTED Image/NanoBanana CDP new-tab; credits_session_open=2492 used=10 after=2482 (Δ10 = 002 thumb-C still; not Part 02 spend)
