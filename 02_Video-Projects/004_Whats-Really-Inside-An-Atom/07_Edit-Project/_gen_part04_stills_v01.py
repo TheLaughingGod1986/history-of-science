@@ -116,7 +116,7 @@ def still_prompt(plate: dict) -> str:
 
 
 def gen_still(key: str, plate: dict, dest: Path) -> None:
-    if dest.exists() and dest.stat().st_size > 80_000:
+    if dest.exists() and dest.stat().st_size > 20_000:
         print(f"  skip {dest.name}", flush=True)
         return
     prompt = f"{still_prompt(plate)} {STYLE}"
@@ -208,11 +208,11 @@ def main() -> None:
     REFS.mkdir(parents=True, exist_ok=True)
     for plate in plates:
         dest = REFS / f"{plate['id']}_v01.jpg"
-        if dest.exists() and dest.stat().st_size >= 80_000 and not only:
+        if dest.exists() and dest.stat().st_size >= 20_000 and not only:
             print(f"  skip existing {dest.name}", flush=True)
             continue
         gen_still(key, plate, dest)
-        if not dest.exists() or dest.stat().st_size < 80_000:
+        if not dest.exists() or dest.stat().st_size < 20_000:
             raise SystemExit(f"missing/small {dest}")
     print(f"DONE stills → {REFS}", flush=True)
 

@@ -219,8 +219,9 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Everything in between is almost empty. How empty?",
-      "prompt": "Same atom cutaway. Vast empty space between the tiny centre and distant electrons \u2014 almost nothing. Continuous soft pull-back revealing emptiness. Silent. No Explorer. No Orbit. No DNA.",
-      "prompt_try2": "Same cutaway. Extreme wide: centre is a pinprick in black void. Continuous pull-back. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Atom cutaway: tiny bright centre, distant electron dots on a faint outer rim, vast empty middle as deep navy void with soft vignette. Continuous soft pull-back revealing emptiness. Silent. No Explorer. No Orbit. No DNA helix.",
+      "prompt_try2": "Same cutaway. Extreme wide: centre is a pinprick in black void. Continuous pull-back. Silent. No Explorer.",
+      "still_prompt": "Finished 3D cartoon still. Atom cutaway with a tiny bright nucleus pinprick at centre and two distant electron dots on a faint outer rim \u2014 vast empty middle space visible as deep navy void with soft vignette, not pure black flat. Readable depth, warm edge light on the outer rim. No Explorer. No Orbit. No DNA. No text."
     },
     {
       "id": "16_explorer_stadium_pea",

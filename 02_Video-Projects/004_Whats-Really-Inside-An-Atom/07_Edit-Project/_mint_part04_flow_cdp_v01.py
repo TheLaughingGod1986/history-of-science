@@ -558,7 +558,7 @@ def mint_one(page, plate: dict, try_n: int, credits_before: int | None) -> dict:
     pid = plate["id"]
     model = model_for(plate)
     still = REFS / f"{pid}_v01.jpg"
-    if not still.exists() or still.stat().st_size < 80_000:
+    if not still.exists() or still.stat().st_size < 20_000:
         raise SystemExit(f"STOP: missing start frame {still}")
 
     dest = RAW / f"{pid}_t{try_n}.mp4"
@@ -659,7 +659,7 @@ def mint_one_gemini(client, plate: dict, try_n: int, credits_before: int | None)
     pid = plate["id"]
     model = gemini_model_for(plate)
     still = REFS / f"{pid}_v01.jpg"
-    if not still.exists() or still.stat().st_size < 80_000:
+    if not still.exists() or still.stat().st_size < 20_000:
         raise SystemExit(f"STOP: missing start frame for Gemini I2V {still}")
 
     dest = RAW / f"{pid}_t{try_n}.mp4"
@@ -798,7 +798,7 @@ def main() -> None:
     missing_stills = [
         p["id"] for p in plates
         if not (REFS / f"{p['id']}_v01.jpg").exists()
-        or (REFS / f"{p['id']}_v01.jpg").stat().st_size < 80_000
+        or (REFS / f"{p['id']}_v01.jpg").stat().st_size < 20_000
     ]
     if missing_stills:
         raise SystemExit(f"STOP missing stills: {missing_stills}")
