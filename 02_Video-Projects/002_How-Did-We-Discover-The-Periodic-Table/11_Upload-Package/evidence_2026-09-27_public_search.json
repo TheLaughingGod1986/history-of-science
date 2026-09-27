@@ -110,7 +110,7 @@
     },
     {
      "id": "sK8kDmR57UQ",
-     "title": "Mendeleev Predicted Missing Elements in 1869 — Here's How",
+     "title": "Mendeleev Predicted Missing Elements in 1869 \u2014 Here's How",
      "channel": "Curious Spark",
      "views": "13 views",
      "age": "1 mo ago",
@@ -215,6 +215,76 @@
      "length": "18:51"
     }
    ]
+  },
+  "Mendeleev's Periodic Table: The Elements He Predicted": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "fPnwBITSmgU",
+     "title": "The genius of Mendeleev's periodic table - Lou Serico",
+     "channel": "TED-Ed",
+     "views": "3,642,558 views",
+     "age": "13 yr ago",
+     "length": "4:25"
+    },
+    {
+     "id": "IoldeyRWgz8",
+     "title": "GCSE Chemistry Revision \"Development of the Periodic Table\"",
+     "channel": "Freesciencelessons",
+     "views": "232,029 views",
+     "age": "2 yr ago",
+     "length": "5:20"
+    },
+    {
+     "id": "aXwpjX8shug",
+     "title": "Dmitri Mendeleev: Did a Dream Create the Periodic Table?",
+     "channel": "Personality Matters",
+     "views": "745 views",
+     "age": "5 mo ago",
+     "length": "2:28"
+    },
+    {
+     "id": "-wu0LixSBpk",
+     "title": "Mendeleev's Periodic Table",
+     "channel": "SciShow",
+     "views": "560,585 views",
+     "age": "14 yr ago",
+     "length": "3:52"
+    },
+    {
+     "id": "JhmRvAm9YGQ",
+     "title": "Which element is named after creator of the periodic table? Explained",
+     "channel": "Quick Answer Now!",
+     "views": "43 views",
+     "age": "4 hr ago",
+     "length": "4:15"
+    },
+    {
+     "id": "rz4Dd1I_fX0",
+     "title": "The Periodic Table Song (2018 Update!) | SCIENCE SONGS",
+     "channel": "AsapSCIENCE",
+     "views": "63,992,780 views",
+     "age": "8 yr ago",
+     "length": "3:05"
+    },
+    {
+     "id": "0p6cpV1GN7s",
+     "title": "How the Periodic Table Predicted the Future",
+     "channel": "Chemistorian",
+     "views": "161,701 views",
+     "age": "1 yr ago",
+     "length": "32:18"
+    },
+    {
+     "id": "PLNwX9U4yYc",
+     "title": "Dmitri Mendeleev (The Mystery of Matter: Unruly Elements)",
+     "channel": "Matthew Batz",
+     "views": "15,486 views",
+     "age": "5 yr ago",
+     "length": "21:02"
+    }
+   ]
   }
- }
+ },
+ "note_title_c_v04": "Added 27 Sep evening: retitled variant C after Ben. Old C phrase had no autocomplete; film search terms are 'history of the periodic table' and 'mendeleev'."
 }

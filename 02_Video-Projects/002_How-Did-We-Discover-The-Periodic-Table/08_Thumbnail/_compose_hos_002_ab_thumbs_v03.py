@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Compose HOS 002 A/B-test long thumbs B + C (v03).
+"""Compose HOS 002 A/B-test long thumbs B (v03 APPROVED) + C (v04 crop attempt).
 
 Reuse live listing art (gallium / empty slot). No remint. No Flow. No Studio.
 Rules: THUMBNAIL_AND_TITLE_RULES.md §2 — heavy sans caps, yellow hook word,
 text off subject and out of bottom-right duration badge.
+
+C v04: crop-only (no wash). If the crop is soft at 1280×720, STOP — Ben mints.
 """
 from __future__ import annotations
 
@@ -13,7 +15,6 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 HERE = Path(__file__).resolve().parent
 SELECTED = HERE / "Selected"
-# Live art lives on the Mini checkout (gitignored); fall back to worktree if present.
 MAIN_SEL = Path(
     "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/"
     "002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected"
@@ -25,7 +26,6 @@ YELLOW = (255, 214, 46)
 INK = (18, 12, 8)
 SHADOW = (10, 6, 4, 220)
 
-# Heavy sans — house lock for phone-readable thumbs.
 FONT = "/System/Library/Fonts/Supplemental/Arial Black.ttf"
 FONT_FALLBACK = "/System/Library/Fonts/Supplemental/Impact.ttf"
 
@@ -47,7 +47,7 @@ def load_src(candidates: list[Path]) -> Image.Image:
 
 
 def wash(im: Image.Image, box: tuple[int, int, int, int], sample: tuple[int, int, int, int], blur: int = 14) -> None:
-    """Paint a soft scene-matched wash over a region (covers old type / garnish)."""
+    """Paint a soft scene-matched wash (B only — C v04 forbids wash)."""
     x0, y0, x1, y1 = box
     patch = im.crop(sample).resize((x1 - x0, y1 - y0), Image.Resampling.LANCZOS)
     patch = patch.filter(ImageFilter.GaussianBlur(blur))
@@ -80,7 +80,6 @@ def draw_words(
     max_w: int,
     gap: float = 1.02,
 ) -> None:
-    """Draw stacked lines of coloured words. Every word must read at 168×94."""
     draw = ImageDraw.Draw(im)
     cy = y
     for line in lines:
@@ -111,7 +110,7 @@ def save_jpg(im: Image.Image, dest: Path) -> None:
 
 
 def compose_b() -> Path:
-    """Gallium blob only — HE PREDICTED THIS (PREDICTED yellow). No Explorer."""
+    """Gallium blob only — HE PREDICTED THIS (PREDICTED yellow). No Explorer. Ben APPROVED v03."""
     src = load_src(
         [
             MAIN_SEL / "hos_002_thumb_A_gallium_live_v02.png",
@@ -120,11 +119,8 @@ def compose_b() -> Path:
             SELECTED / "hos_002_thumb_A_gallium_live_v02.png",
         ]
     )
-    # Crop out Explorer (lower-left) and most baked title — blob becomes sole hero.
-    # Source layout: Explorer ~x0–380, blob ~x420–1180.
     im = src.resize((1280, 720), Image.Resampling.LANCZOS)
     im = im.crop((360, 40, 1240, 700)).resize((1280, 720), Image.Resampling.LANCZOS)
-    # Kill any leftover title fragment on the far left of the crop
     wash(im, (0, 0, 280, 220), sample=(400, 40, 700, 200), blur=22)
     im = grade_left(im, width=520, alpha=130)
     draw_words(
@@ -141,8 +137,13 @@ def compose_b() -> Path:
     return dest
 
 
-def compose_c() -> Path:
-    """Glowing empty slot — LEFT EMPTY ON PURPOSE (EMPTY yellow)."""
+def compose_c_v04() -> Path:
+    """Glowing empty slot — LEFT EMPTY ON PURPOSE. Crop-only, no wash.
+
+    Slot ~25% frame width, a little right of centre. Source is 1280×720 only;
+    the crop needed for 1/4-width hero is ~3.4× upscale — check sharpness at
+    100% before shipping. Soft → STOP; Ben mints a new still.
+    """
     src = load_src(
         [
             MAIN_SEL / "hos_002_thumb_C_empty_slot_live_v02.png",
@@ -151,30 +152,49 @@ def compose_c() -> Path:
             SELECTED / "hos_002_thumb_C_empty_slot_live_v02.png",
         ]
     )
-    im = src.resize((1280, 720), Image.Resampling.LANCZOS)
-    # Cover baked title thoroughly (cream + gold flourishes + TABLE?)
-    wash(im, (0, 0, 700, 380), sample=(720, 80, 1080, 300), blur=20)
-    wash(im, (40, 200, 620, 420), sample=(780, 200, 1050, 360), blur=18)
-    im = grade_left(im, width=600, alpha=140)
+    src = src.resize((1280, 720), Image.Resampling.LANCZOS)
+    # Slot + glow bbox in source (detector + visual)
+    slot = (760, 270, 855, 395)
+    slot_w = slot[2] - slot[0]
+    slot_cx = (slot[0] + slot[2]) / 2
+    slot_cy = (slot[1] + slot[3]) / 2
+    # ≥25% of 1280 → crop_w ≤ slot_w * 1280 / 320
+    crop_w = min(int(slot_w * 1280 / 320), 380)
+    crop_h = int(round(crop_w * 9 / 16))
+    scale = 1280 / crop_w
+    out_slot_cx = 1280 * 0.58
+    crop_left = int(round(slot_cx - out_slot_cx / scale))
+    crop_top = int(round(slot_cy - (720 * 0.48) / scale))
+    crop_left = max(0, min(crop_left, 1280 - crop_w))
+    crop_top = max(0, min(crop_top, 720 - crop_h))
+    box = (crop_left, crop_top, crop_left + crop_w, crop_top + crop_h)
+    print(
+        f"C v04 crop {box} scale={scale:.2f}x "
+        f"slot_share={100 * slot_w * scale / 1280:.1f}%",
+        flush=True,
+    )
+    im = src.crop(box).resize((1280, 720), Image.Resampling.LANCZOS)
+    # No wash — grade only
+    im = grade_left(im, width=500, alpha=125)
     draw_words(
         im,
         [[("LEFT", WHITE)], [("EMPTY", YELLOW)], [("ON PURPOSE", WHITE)]],
         x=36,
         y=40,
         size=96,
-        max_w=640,
+        max_w=560,
         gap=0.96,
     )
-    dest = SELECTED / "hos_002_thumb_C_empty_on_purpose_v03.jpg"
+    dest = SELECTED / "hos_002_thumb_C_empty_on_purpose_v04.jpg"
     save_jpg(im, dest)
     return dest
 
 
 def main() -> None:
     SELECTED.mkdir(parents=True, exist_ok=True)
-    b = compose_b()
-    c = compose_c()
-    print("DONE", b.name, c.name, flush=True)
+    # B v03 is Ben-approved — do not regenerate unless asked.
+    c = compose_c_v04()
+    print("DONE", c.name, flush=True)
 
 
 if __name__ == "__main__":
