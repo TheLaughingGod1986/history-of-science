@@ -10,42 +10,43 @@
 | Script review | 88.9. Passed by hand by Ben, 26 Sep 2026 |
 | Pre-build vidIQ audit | Signed off by Ben, 26 Sep 2026 (vidIQ waived) |
 | Episode gate | Passed by Ben (manual), 26 Sep 2026 |
-| VO | **v02 READY — awaiting Ben listen (STOP).** Route: breath-tighten from v01 (eleven_v3 ignored speed). Masters in `02_Voiceover/05_Master/`. iCloud copy for phone. v01 kept. |
+| VO | **v02 READY — awaiting Ben listen on full file (STOP).** Part 01 KEEP pending “had” ear-check (STT PASS + clarified). Parts 02–05 same route. iCloud listen refreshed. |
 | Re-time (Step 3) | **DRAFT pending VO KEEP.** Still from v01 timings. Re-time from v02 after Ben KEEP. |
 | Plate boards (Step 4) | **DRAFT pending VO KEEP.** `07_Edit-Project/parts/part-0N_plates_v01.json` · `mint: false` · Explorer ×3 only (P02 Te swap · P04 stadium pea · P05 final table) |
 | Picture | **not started** — no Flow / no mint until Ben PASS on VO v02 |
-| Runtime (VO v02) | **510.212 s = 8:30** (parts sum; listen with joins 511.611 s) |
+| Runtime (VO v02) | **510.352 s = 8:30** (parts sum; listen with joins 511.751 s). Optional atempo ~1.03 after word KEEP → ~8:15. |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
 ---
 
-## STOP — VO v02 ready, awaiting Ben listen (27 Sep 2026)
+## STOP — VO v02 full listen ready (27 Sep 2026)
 
 **Do not Flow / mint / spend picture / re-time plate boards until Ben says KEEP on v02.**
 
-If Ben asks for a VO redo: re-mint or edit, then re-time `atom_script_master_v02.md` VISUAL MUST + rebuild plate boards before any mint.
+Ben Part 01 notes (27 Sep): ~5% shorter (eleven_v3 speed only partly / breath-tighten). Title Q ~0:09.4. “had” at ~0:52 flagged by ear — STT had it; clarified with 0.18 s beat. Parts 02–05 already on same route. Optional atempo ~1.03 after word KEEP.
 
 ### VO masters (v02) — current listen
 
-**Route:** breath_tighten_from_v01 (cap silences to 0.60 s) + 0.35 s beat before “count”.  
-eleven_v3 speed attempt (Part 01 @ 1.15 / Parts 02–05 @ 1.12) ignored speed → 559.76 s / 9:19 — discarded. **No atempo.**
+**Route:** breath_tighten_from_v01 (cap silences to 0.60 s) + 0.35 s beat before “count” + **0.18 s beat before “had” (Part 01)**.  
+eleven_v3 speed attempt discarded. **No atempo yet.**
 
 | Part | Start | Duration | Mean dB | Peak dB | WAV sha256 |
 |---|---|---|---|---|---|
-| 01 | 0:00 | 71.762 s (1:11) | −23.6 | −3.9 | `5c18719b413b55cbcd64e4893841a0e7685a66a32bfc8401f09685612dd6f208` |
-| 02 | 1:11 | 93.097 s (1:33) | −21.8 | −3.8 | `ba857fafbfd06f1974907cf768a741ad9ad391288daa2a29f37d40f0e48d293a` |
-| 03 | 2:44 | 85.835 s (1:25) | −23.2 | −3.8 | `d821949adfef55c0169cc714f75a7f9b87d10ce176339c3250af32bada3267d6` |
+| 01 | 0:00 | 71.902 s (1:12) | −23.6 | −3.9 | `70a825d3307e3f1600f770c214c430c1211f11ce2b81e928c680324517674369` |
+| 02 | 1:12 | 93.097 s (1:33) | −21.8 | −3.8 | `ba857fafbfd06f1974907cf768a741ad9ad391288daa2a29f37d40f0e48d293a` |
+| 03 | 2:45 | 85.835 s (1:25) | −23.2 | −3.8 | `d821949adfef55c0169cc714f75a7f9b87d10ce176339c3250af32bada3267d6` |
 | 04 | 4:10 | 111.561 s (1:51) | −24.5 | −3.8 | `4443003f0182acfaa8bfcb7c1cd9833de759a9d32edba8951cbc1fb07ad5562d` |
 | 05 | 6:02 | 147.957 s (2:27) | −24.1 | −4.1 | `486223acd9fcd03a79d4a3fc96bfa9594fc72994e7c3c6141a2f728b532e8e59` |
-| **Total** | — | **510.212 s (8:30)** | spread 2.7 dB | — | meta `02_Voiceover/05_Master/VO_MASTERS_v02.json` |
+| **Total** | — | **510.352 s (8:30)** | spread 2.7 dB | — | meta `02_Voiceover/05_Master/VO_MASTERS_v02.json` |
 
 | Check | Result |
 |---|---|
-| Title question “What's really inside an atom?” | **0:09.04** (STT; ≤0:10) |
+| Title question “What's really inside an atom?” | **~0:09.4** (Ben / STT ≤0:10) |
+| “as if it **had** hit a wall” | **PASS** (STT); clarified 0.18 s beat before “had” — QA clip `_qa_had_wall_v02d.wav` on iCloud |
 | Dalton “each kind a weight” | **PASS** (not “kind of”) |
 | “It's a count.” | **PASS** (not “account”; 0.48 s gap a→count) |
 | Loudness | means −21.8…−24.5; peaks −3.8…−4.1; no in-part silence >1.0 s |
-| Listen mp3 sha256 | `48b04b75fcc653f133a6684dd5cb2dcf893fd54e6d7f94903ee15d4c224970ae` |
+| Listen mp3 sha256 | `646c6eff8eaf7e280c9c1c97b54fe1f11b30ed7428bd7372d20952f929063c89` |
 
 Phone: `iCloud Drive/HOS UAT/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/`  
 Listen file: `hos_004_vo_all_parts_listen_v02.mp3`
