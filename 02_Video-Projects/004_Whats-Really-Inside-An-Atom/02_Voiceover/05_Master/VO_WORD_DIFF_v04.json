@@ -1,0 +1,68 @@
+{
+  "parts": [
+    {
+      "part": 1,
+      "script_words": 177,
+      "heard_words": 177,
+      "diffs": [],
+      "pass": true,
+      "audio": "hos_004_part01_vo_v04.wav",
+      "stt": "hos-004-part01-vo-v04_transcript.txt"
+    },
+    {
+      "part": 2,
+      "script_words": 230,
+      "heard_words": 230,
+      "diffs": [],
+      "pass": true,
+      "audio": "hos_004_part02_vo_v04.wav",
+      "stt": "hos-004-part02-vo-v04_transcript.txt"
+    },
+    {
+      "part": 3,
+      "script_words": 196,
+      "heard_words": 196,
+      "diffs": [],
+      "pass": true,
+      "audio": "hos_004_part03_vo_v04.wav",
+      "stt": "hos-004-part03-vo-v04_transcript.txt"
+    },
+    {
+      "part": 4,
+      "script_words": 270,
+      "heard_words": 270,
+      "diffs": [],
+      "pass": true,
+      "audio": "hos_004_part04_vo_v04.wav",
+      "stt": "hos-004-part04-vo-v04_transcript.txt"
+    },
+    {
+      "part": 5,
+      "script_words": 349,
+      "heard_words": 349,
+      "diffs": [
+        {
+          "op": "replace",
+          "script": "a",
+          "heard": "the"
+        }
+      ],
+      "pass": false,
+      "audio": "hos_004_part05_vo_v04.wav",
+      "stt": "hos-004-part05-vo-v04_transcript.txt"
+    }
+  ],
+  "listen": {
+    "script_words": 1222,
+    "heard_words": 1221,
+    "diffs": [
+      {
+        "op": "replace",
+        "script": "a",
+        "heard": "the"
+      }
+    ],
+    "pass": false
+  },
+  "transcriber": "elevenlabs-scribe"
+}

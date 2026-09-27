@@ -13,7 +13,7 @@
 | VO | **v04 LOCKED KEEP** (Ben 27 Sep 13:11). `atempo=1.03` on each v03 part. Masters in `02_Voiceover/05_Master/`. iCloud listen for phone. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
 | Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Part 01 `mint: true` · Parts 02–05 `mint: false` · Explorer ×3 (P02/P04/P05) · no SEE labels · no Explorer in first minute |
-| Picture | **not started** — wait for Ben mint go-ahead (step C). No Flow this run. |
+| Picture | **Part 01 minting** (step C, Ben go-ahead 27 Sep 13:11). Board split + word-diff landed first. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
@@ -37,7 +37,7 @@
 | Title question | **0:08.78** |
 | Dalton “each kind a weight” | **PASS** |
 | “It's a count.” | **PASS** |
-| `vo_check.py` | **PASS** ×5 parts + listen (word check skipped: no faster-whisper; loudness/silence PASS) |
+| `vo_check.py` | **PASS** ×5 parts + listen (loudness/silence). Word check via ElevenLabs Scribe: **PASS** Parts 01–04 exact; Part 05 one Scribe `a`↔`the` article only — see `VO_WORD_DIFF_v04.md` |
 | Loudness | means −22.0…−24.7; peaks −4.1…−4.4; no in-part silence >1.5 s |
 
 Phone: `iCloud Drive/HOS UAT/004_Whats-Really-Inside-An-Atom/02_Voiceover/05_Master/`  
@@ -48,10 +48,10 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 
 | Part | Film window | Chapter card | Plates | mint |
 |---|---|---|---|---|
-| 01 Cold open | 0:00–1:10 | none | 16 | **true** |
+| 01 Cold open | 0:00–1:10 | none | 17 (split 07 at 0:32) | **true** |
 | 02 The Table That Broke Its Own Rule | 1:10–2:41 | 1:10 · ~1.5 s | 10 | false |
 | 03 The Crumb Inside the Atom | 2:41–4:05 | 2:41 · ~1.5 s | 8 | false |
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Ben mint go-ahead (step C) → Flow Veo Part 01 plates one at a time. No Flow until then.
+**Next:** Part 01 Flow mint in progress → assemble rough → STOP for Ben UAT. Do not start Part 02.
