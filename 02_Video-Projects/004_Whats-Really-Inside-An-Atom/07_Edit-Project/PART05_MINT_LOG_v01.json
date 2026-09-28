@@ -560,7 +560,11 @@
     "gemini_quality": "veo-3.1-generate-preview",
     "rule": "Gemini probe first; Flow reserve while credits\u226520. When Flow out \u2192 Gemini-only; on 429 retry \u22642\u00d7 ~2m apart then STOP (no 3h backoff \u2014 Ben evening override).",
     "gemini_429_short_retries": 2,
-    "gemini_429_short_wait_s": 120
+    "gemini_429_short_wait_s": 120,
+    "vertex_fast": "veo-3.1-fast-generate-001",
+    "vertex_quality": "veo-3.1-generate-001",
+    "vertex_location": "us-central1",
+    "vertex_cli": "--vertex-test [plate_id]  # ONE plate only until Ben billing confirm"
   },
   "board": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/parts/part-05_plates_v02.json",
   "flow_ultra": {
@@ -571,7 +575,7 @@
     "account_confirmed": "benoats@googlemail.com",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
-  "updated_at": "2026-09-28T18:32:26.460642+00:00",
+  "updated_at": "2026-09-28T19:37:50.802165+00:00",
   "credits_before_mint": 12,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
@@ -725,10 +729,45 @@
       "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
       "wait_s": 0,
       "wait_min": 0.0
+    },
+    {
+      "at": "2026-09-28T19:33:49.569592+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 120,
+      "wait_min": 2.0
+    },
+    {
+      "at": "2026-09-28T19:35:50.158255+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 120,
+      "wait_min": 2.0
+    },
+    {
+      "at": "2026-09-28T19:37:50.798730+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 0,
+      "wait_min": 0.0
     }
   ],
   "stopped_at_plate": "08_ladder_pattern",
   "stop_reason": "Gemini 429 after 3 short retries at 08_ladder_pattern; Flow=12",
   "gemini_429_exact_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
-  "assemble": "BLOCKED \u2014 need 27/27 KEEP"
+  "assemble": "BLOCKED \u2014 need 27/27 KEEP",
+  "vertex_setup": {
+    "at": "2026-09-28T19:38:12.573936+00:00",
+    "gcloud_installed": true,
+    "adc_authorized": false,
+    "status": "STOP_NEED_BEN_BROWSER_ADC",
+    "test_plate_planned": "09_one_rung_each",
+    "reason_skip_08": "08_ladder_pattern is Quality glow; Ben asked Fast test",
+    "models": {
+      "fast": "veo-3.1-fast-generate-001",
+      "quality": "veo-3.1-generate-001"
+    },
+    "location": "us-central1",
+    "doc": "07_Edit-Project/PART05_VERTEX_SETUP.md"
+  }
 }

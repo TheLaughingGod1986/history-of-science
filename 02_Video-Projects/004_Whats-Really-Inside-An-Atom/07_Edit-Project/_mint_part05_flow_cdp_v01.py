@@ -64,6 +64,10 @@ GEMINI_FAST_MODEL = os.environ.get("HOS_VEO_FAST_MODEL", "veo-3.1-lite-generate-
 GEMINI_QUALITY_MODEL = os.environ.get(
     "HOS_VEO_QUALITY_MODEL", "veo-3.1-generate-preview"
 )
+# Vertex AI Veo 3.1 (Ben Free Trial test — same engine, different billing path)
+VERTEX_FAST_MODEL = os.environ.get("HOS_VERTEX_VEO_FAST", "veo-3.1-fast-generate-001")
+VERTEX_QUALITY_MODEL = os.environ.get("HOS_VERTEX_VEO_QUALITY", "veo-3.1-generate-001")
+VERTEX_LOCATION = os.environ.get("GOOGLE_CLOUD_LOCATION", "us-central1")
 ENV_CANDIDATES = [
     REPO / "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/07_Edit-Project/.env",
     REPO / "02_Video-Projects/001_How-Did-We-Discover-Germs/07_Edit-Project/.env",
@@ -162,6 +166,78 @@ def gemini_model_for(plate: dict) -> str:
         if quality_or_fast(plate) == "Quality"
         else GEMINI_FAST_MODEL
     )
+
+
+def vertex_model_for(plate: dict) -> str:
+    return (
+        VERTEX_QUALITY_MODEL
+        if quality_or_fast(plate) == "Quality"
+        else VERTEX_FAST_MODEL
+    )
+
+
+def resolve_vertex_project() -> str:
+    """Project id from env only — never invent. Never print keys."""
+    for env in ENV_CANDIDATES:
+        if not env.exists():
+            continue
+        for line in env.read_text().splitlines():
+            s = line.strip()
+            if not s or s.startswith("#") or "=" not in s:
+                continue
+            k, v = s.split("=", 1)
+            k, v = k.strip(), v.strip().strip('"').strip("'")
+            if k in ("GOOGLE_CLOUD_PROJECT", "VERTEX_PROJECT", "GCLOUD_PROJECT") and v:
+                os.environ.setdefault("GOOGLE_CLOUD_PROJECT", v)
+    project = (
+        os.environ.get("GOOGLE_CLOUD_PROJECT")
+        or os.environ.get("VERTEX_PROJECT")
+        or os.environ.get("GCLOUD_PROJECT")
+        or ""
+    ).strip()
+    if not project:
+        raise SystemExit(
+            "STOP: set GOOGLE_CLOUD_PROJECT (or VERTEX_PROJECT) to the Orbit API / "
+            "History of Science GCP project that owns the Gemini key. "
+            "Also run: gcloud auth application-default login"
+        )
+    return project
+
+
+def load_vertex_client():
+    """Vertex AI Veo client via ADC. Never print tokens/keys."""
+    from google import genai
+
+    project = resolve_vertex_project()
+    location = (
+        os.environ.get("GOOGLE_CLOUD_LOCATION") or VERTEX_LOCATION or "us-central1"
+    ).strip()
+    # Probe ADC without printing
+    try:
+        import google.auth
+
+        creds, adc_project = google.auth.default(
+            scopes=["https://www.googleapis.com/auth/cloud-platform"]
+        )
+        if not creds:
+            raise RuntimeError("no ADC credentials")
+        if adc_project and not os.environ.get("GOOGLE_CLOUD_PROJECT"):
+            os.environ["GOOGLE_CLOUD_PROJECT"] = adc_project
+            project = adc_project
+    except Exception as e:
+        raise SystemExit(
+            "STOP: Vertex needs Application Default Credentials. "
+            "On Mini run: gcloud auth application-default login "
+            f"(detail: {type(e).__name__})"
+        ) from e
+
+    client = genai.Client(vertexai=True, project=project, location=location)
+    print(
+        f"Vertex client ready project={project} location={location} "
+        f"(ADC; never printing tokens)",
+        flush=True,
+    )
+    return client, project, location
 
 
 def flow_would_breach_buffer(credits: int | None, plate: dict) -> bool:
@@ -733,32 +809,24 @@ def mint_one_gemini(client, plate: dict, try_n: int, credits_before: int | None)
     )
     op = None
     last_err = None
-    # Short probe only — if still 429, caller falls through to Flow reserve.
-    for attempt in range(1, 3):
-        try:
-            op = client.models.generate_videos(
-                model=model,
-                prompt=prompt,
-                image=types.Image.from_file(location=str(still)),
-                config=config,
-            )
-            while not op.done:
-                time.sleep(12)
-                op = client.operations.get(op)
-                print(f"  gemini poll {pid} … {int(time.time() - t0)}s", flush=True)
-            if getattr(op, "error", None):
-                raise RuntimeError(op.error)
-            last_err = None
-            break
-        except Exception as e:
-            last_err = e
-            msg = str(e)
-            if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
-                wait_s = 20 * attempt
-                print(f"  gemini 429 — sleep {wait_s}s probe ({attempt}/2) then Flow if still blocked", flush=True)
-                time.sleep(wait_s)
-                continue
-            raise
+    # Single request — outer loop owns short 429 retries (~2m × ≤2).
+    try:
+        op = client.models.generate_videos(
+            model=model,
+            prompt=prompt,
+            image=types.Image.from_file(location=str(still)),
+            config=config,
+        )
+        while not op.done:
+            time.sleep(12)
+            op = client.operations.get(op)
+            print(f"  gemini poll {pid} … {int(time.time() - t0)}s", flush=True)
+        if getattr(op, "error", None):
+            raise RuntimeError(op.error)
+        last_err = None
+    except Exception as e:
+        last_err = e
+        raise
     if last_err is not None or op is None:
         raise last_err or RuntimeError("gemini failed")
     resp = getattr(op, "response", None) or getattr(op, "result", None)
@@ -804,6 +872,301 @@ def mint_one_gemini(client, plate: dict, try_n: int, credits_before: int | None)
     return entry
 
 
+def _save_vertex_video(client, video_obj, dest: Path) -> None:
+    """Download Vertex/Gemini generated video to dest. Never print URIs with tokens."""
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    # Prefer SDK download helpers when present
+    try:
+        client.files.download(file=video_obj.video)
+        video_obj.video.save(str(dest))
+        return
+    except Exception:
+        pass
+    video = getattr(video_obj, "video", video_obj)
+    # GCS URI (Vertex often returns gs://…)
+    uri = getattr(video, "uri", None) or getattr(video, "gcs_uri", None)
+    if uri and str(uri).startswith("gs://"):
+        from google.cloud import storage  # type: ignore
+
+        # gs://bucket/path
+        parts = str(uri)[5:].split("/", 1)
+        bucket_name, blob_name = parts[0], parts[1]
+        storage.Client().bucket(bucket_name).blob(blob_name).download_to_filename(
+            str(dest)
+        )
+        return
+    # Inline bytes
+    data = getattr(video, "video_bytes", None) or getattr(video, "bytes", None)
+    if data:
+        dest.write_bytes(data)
+        return
+    raise RuntimeError(f"cannot save Vertex video object type={type(video_obj)!r}")
+
+
+def mint_one_vertex(
+    client,
+    plate: dict,
+    try_n: int,
+    *,
+    project: str,
+    location: str,
+    credits_before: int | None,
+) -> dict:
+    """Veo 3.1 via Vertex AI (us-central1). Log path=vertex. Never print tokens."""
+    from google.genai import types
+
+    pid = plate["id"]
+    model = vertex_model_for(plate)
+    still = REFS / f"{pid}_v01.jpg"
+    if not still.exists() or still.stat().st_size < 20_000:
+        raise SystemExit(f"STOP: missing start frame for Vertex I2V {still}")
+
+    dest = RAW / f"{pid}_t{try_n}.mp4"
+    if dest.exists():
+        dest.unlink()
+
+    core = f"{STYLE} {plate_prompt(plate, try_n)}"
+    if plate.get("explorer"):
+        core += (
+            " Exactly ONE Explorer: young boy, messy brown hair, round thin gold "
+            "glasses, teal long coat, tan vest, brown bow tie, satchel. Acts then leaves."
+        )
+    else:
+        core += " No Explorer."
+    prompt = (
+        f"{core} Silent picture only. Continuous motion through the final frame. "
+        "HARD REJECT: photoreal, Ken Burns only, freeze frame, Orbit orange robot, "
+        "DNA helix, lava drip, war gore, garbled text."
+    )
+
+    print(
+        f"\n=== MINT {pid} try={try_n} {quality_or_fast(plate)} model={model} "
+        f"path=vertex project={project} location={location} "
+        f"credits_before={credits_before} "
+        f"framing={'try2' if try_n >= 2 else 'try1'} ===",
+        flush=True,
+    )
+    t0 = time.time()
+    config = types.GenerateVideosConfig(
+        number_of_videos=1,
+        duration_seconds=8,
+        aspect_ratio="16:9",
+        resolution="720p",
+    )
+    op = client.models.generate_videos(
+        model=model,
+        prompt=prompt,
+        image=types.Image.from_file(location=str(still)),
+        config=config,
+    )
+    while not op.done:
+        time.sleep(12)
+        op = client.operations.get(op)
+        print(f"  vertex poll {pid} … {int(time.time() - t0)}s", flush=True)
+    if getattr(op, "error", None):
+        raise RuntimeError(op.error)
+    resp = getattr(op, "response", None) or getattr(op, "result", None)
+    videos = getattr(resp, "generated_videos", None) if resp else None
+    if not videos:
+        raise RuntimeError(f"no videos from Vertex: {resp!r}")
+    _save_vertex_video(client, videos[0], dest)
+    veo.strip_audio(dest)
+
+    if not dest.exists() or dest.stat().st_size < 400_000:
+        raise RuntimeError(f"no mp4 after Vertex download: {dest}")
+
+    status, note = auto_qa(dest)
+    entry = {
+        "id": pid,
+        "try": try_n,
+        "model": model,
+        "quality_or_fast": quality_or_fast(plate),
+        "framing": "try2_alt" if try_n >= 2 else "try1",
+        "explorer": bool(plate.get("explorer")),
+        "start_frame": str(still.relative_to(REPO)) if still.is_relative_to(REPO) else str(still),
+        "start_frame_sha256": sha256_file(still),
+        "out": str(dest),
+        "file": str(dest.relative_to(REPO)) if dest.is_relative_to(REPO) else str(dest),
+        "sha256": sha256_file(dest),
+        "bytes": dest.stat().st_size,
+        "duration_s": round(probe_dur(dest), 3),
+        "status": status,
+        "note": note,
+        "credits_before": credits_before,
+        "credits_used": None,
+        "credits_remaining": credits_before,
+        "flow_credits_spent": 0,
+        "api_seconds": round(time.time() - t0, 1),
+        "at": now(),
+        "engine": f"vertex Veo 3.1 ({model})",
+        "path": "vertex",
+        "vertex_project": project,
+        "vertex_location": location,
+        "reason": "ben_free_trial_vertex_test",
+    }
+    return entry
+
+
+def pick_vertex_test_plate(board: dict) -> dict:
+    """ONE Fast test plate: prefer 08 if Fast, else next pending non-glow Fast."""
+    plates = [p for p in board["plates"] if p.get("veo", True)]
+    log = load_log()
+    kept = {
+        pid
+        for pid, row in (log.get("plates") or {}).items()
+        if isinstance(row, dict) and (row.get("status") == "KEEP" or row.get("keep"))
+    }
+    # Prefer explicit Fast pending
+    for p in plates:
+        if p["id"] in kept:
+            continue
+        if quality_or_fast(p) == "Fast":
+            return p
+    # Fallback: any pending
+    for p in plates:
+        if p["id"] not in kept:
+            return p
+    raise SystemExit("STOP: no pending plates for Vertex test")
+
+
+def run_vertex_one_plate_test(plate_id: str | None = None) -> None:
+    """Ben Free Trial test: mint exactly ONE plate on Vertex, then STOP.
+
+    Do not continue the board. Await Ben billing confirmation before more Vertex.
+    """
+    RAW.mkdir(parents=True, exist_ok=True)
+    QA.mkdir(parents=True, exist_ok=True)
+    board = json.loads(PLATES_JSON.read_text())
+    if plate_id:
+        matches = [p for p in board["plates"] if p["id"] == plate_id]
+        if not matches:
+            raise SystemExit(f"STOP: unknown plate {plate_id}")
+        plate = matches[0]
+    else:
+        plate = pick_vertex_test_plate(board)
+        # House rule: 08 is Quality glow — skip to next Fast unless forced
+        if quality_or_fast(plate) == "Quality" and not plate_id:
+            plate = pick_vertex_test_plate(board)
+
+    if quality_or_fast(plate) != "Fast" and not plate_id:
+        # Force next Fast
+        for p in board["plates"]:
+            if p.get("veo", True) and quality_or_fast(p) == "Fast":
+                keep = (load_log().get("plates") or {}).get(p["id"], {})
+                if keep.get("status") == "KEEP" or keep.get("keep"):
+                    continue
+                plate = p
+                break
+
+    pid = plate["id"]
+    print(
+        f"VERTEX TEST one plate only → {pid} quality={quality_or_fast(plate)} "
+        f"(Ben Free Trial; no further Vertex until billing confirm)",
+        flush=True,
+    )
+    if quality_or_fast(plate) != "Fast":
+        print(
+            f"WARN: minting Quality plate {pid} on Vertex because no Fast pending "
+            f"or --vertex-test forced it",
+            flush=True,
+        )
+
+    client, project, location = load_vertex_client()
+    # Billing account lookup (best-effort; never print secrets)
+    billing_account = None
+    try:
+        r = subprocess.run(
+            [
+                "gcloud",
+                "billing",
+                "projects",
+                "describe",
+                project,
+                "--format=value(billingAccountName)",
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60,
+        )
+        if r.returncode == 0:
+            billing_account = (r.stdout or "").strip() or None
+    except Exception:
+        billing_account = None
+
+    log = load_log()
+    log["status"] = "VERTEX_ONE_PLATE_TEST"
+    log["vertex"] = {
+        "project": project,
+        "location": location,
+        "billing_account": billing_account,
+        "fast_model": VERTEX_FAST_MODEL,
+        "quality_model": VERTEX_QUALITY_MODEL,
+        "test_plate": pid,
+        "note": "ONE Fast test only; wait Ben Free Trial credit confirm before more",
+    }
+    save_log(log)
+
+    plate_log = log["plates"].setdefault(
+        pid, {"id": pid, "tries": [], "try_detail": [], "status": "PENDING"}
+    )
+    ensure_try_lists(plate_log)
+    try:
+        entry = mint_one_vertex(
+            client,
+            plate,
+            1,
+            project=project,
+            location=location,
+            credits_before=log.get("credits_after_mint") or log.get("credits_before_mint"),
+        )
+    except Exception as e:
+        msg = str(e)
+        print(f"VERTEX TEST FAIL: {type(e).__name__}: {msg}", flush=True)
+        log["status"] = "VERTEX_TEST_FAIL"
+        log["vertex"]["error"] = msg[:2000]
+        log["vertex"]["error_type"] = type(e).__name__
+        plate_log["status"] = "FAIL"
+        plate_log["try_detail"].append(
+            {
+                "try": 1,
+                "status": "FAIL",
+                "path": "vertex",
+                "note": msg[:1000],
+                "at": now(),
+                "model": vertex_model_for(plate),
+            }
+        )
+        save_log(log)
+        raise SystemExit(f"STOP Vertex test fail at {pid}: {msg[:400]}")
+
+    ensure_try_lists(plate_log)
+    plate_log["try_detail"].append(entry)
+    plate_log["tries"].append(entry)
+    save_log(log)
+    if entry["status"] == "KEEP":
+        promote_keep(log, pid, 1, entry)
+        print(f"KEEP {pid} path=vertex → {pid}_v01.mp4", flush=True)
+        log["status"] = "VERTEX_TEST_KEEP"
+    else:
+        plate_log["status"] = "FAIL"
+        log["status"] = "VERTEX_TEST_AUTO_FAIL"
+        if entry.get("out") and Path(entry["out"]).exists():
+            archive_reject(Path(entry["out"]), "vertex_auto_fail")
+    log["vertex"]["result"] = entry["status"]
+    log["vertex"]["sha256"] = entry.get("sha256")
+    log["vertex"]["model"] = entry.get("model")
+    save_log(log)
+    print(
+        f"VERTEX TEST DONE status={entry['status']} project={project} "
+        f"billing={billing_account} location={location} model={entry.get('model')}",
+        flush=True,
+    )
+    print(
+        "STOP: do not mint further Vertex plates until Ben confirms trial credit applied",
+        flush=True,
+    )
+
+
 def promote_keep(log: dict, pid: str, try_n: int, entry: dict) -> Path:
     src = RAW / f"{pid}_t{try_n}.mp4"
     dest = RAW / f"{pid}_v01.mp4"
@@ -839,7 +1202,15 @@ def promote_keep(log: dict, pid: str, try_n: int, entry: dict) -> Path:
 
 
 def main() -> None:
-    only = set(sys.argv[1:])  # optional plate ids
+    argv = list(sys.argv[1:])
+    # Ben Free Trial: --vertex-test [optional_plate_id]
+    if "--vertex-test" in argv:
+        idx = argv.index("--vertex-test")
+        plate_arg = argv[idx + 1] if idx + 1 < len(argv) and not argv[idx + 1].startswith("-") else None
+        run_vertex_one_plate_test(plate_arg)
+        return
+
+    only = {a for a in argv if not a.startswith("-")}  # optional plate ids
     RAW.mkdir(parents=True, exist_ok=True)
     QA.mkdir(parents=True, exist_ok=True)
     board = json.loads(PLATES_JSON.read_text())
@@ -876,6 +1247,10 @@ def main() -> None:
         ),
         "gemini_429_short_retries": GEMINI_429_SHORT_RETRIES,
         "gemini_429_short_wait_s": GEMINI_429_SHORT_WAIT_S,
+        "vertex_fast": VERTEX_FAST_MODEL,
+        "vertex_quality": VERTEX_QUALITY_MODEL,
+        "vertex_location": VERTEX_LOCATION,
+        "vertex_cli": "--vertex-test [plate_id]  # ONE plate only until Ben billing confirm",
     }
     log["board"] = str(PLATES_JSON.relative_to(REPO))
     log["flow_ultra"] = {
