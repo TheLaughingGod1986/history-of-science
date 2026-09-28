@@ -68,3 +68,123 @@ BATCH continue → 02_train_in_tube
   scenery-only (no Orbit identity ref)
   dismissed banner via 'Agree'
   dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  pinned project_url=https://flow.google.com/project/0027c145-6e84-4714-85a8-499388c9d50a
+  flow: https://flow.google.com/project/0027c145-6e84-4714-85a8-499388c9d50a
+  dismissed banner via 'Agree'
+  create-mode: Agent OFF video_settings=True
+  Agent settings path failed (Flow Settings (tune) button not found); trying prompt pill…
+  outputs clicked x1=None
+  video model locked: Veo 3.1 - Fast
+  settings closed via escape (prompt pill)
+  post-settings…
+  setting scenery-only prompt (no Orbit chip)…
+  set_prompt insert_text chars=482 dirty=False
+  set_prompt ok head='IMAGE-TO-VIDEO from text description (no attached still). Pr'
+  submitting Create…
+  create-mode: Agent OFF video_settings=True
+  clicking Flow send ('arrow_forward')
+  submitted Create (scenery-only, no Orbit ref)
+  wait 0s status=10% new_media=0 gen=True
+  wait 4s status=14% new_media=0 gen=True
+  wait 8s status=17% new_media=0 gen=True
+  waiting for gallery thumbs (#1) pct=22 thumbs=0
+  wait 12s status=22% new_media=0 gen=True
+  wait 16s status=25% new_media=0 gen=True
+  gen running (29% @ 20s) — defer to fresh-browser harvest (thumbs=0 new=0)
+  gallery-pending:0 — caller must fresh-browser harvest
+  gallery harvest via https://flow.google.com/project/0027c145-6e84-4714-85a8-499388c9d50a
+  dismissed banner via 'Agree'
+  harvest start thumbs=0
+  harvest poll thumbs=0 new=0 captured=0 elapsed=0s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=0 new=0 captured=0 elapsed=11s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=1 new=1 captured=0 elapsed=21s
+  net mp4 3350939
+  net mp4 3350939
+  harvest saved 02_train_in_tube_t1.mp4 bytes=3350939 via=play-net
+  → KEEP path=flow-cdp motion_ok scene_hits=4 dur=8.00s used=None rem=None sha=4982a3d0c845
+  KEEP 02_train_in_tube → 02_train_in_tube_v01.mp4 path=flow-cdp
+BATCH continue → 03_targets_swap
+  Gemini probe first for 03_targets_swap try=1…
+
+=== MINT 03_targets_swap try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=122 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  Gemini still 429 → Flow reserve
+
+=== MINT 03_targets_swap try=1 Fast model=Veo 3.1 - Fast credits_before=122 framing=try1 scenery_only chars=456 ===
+  dismissed banner via 'Agree'
+  scenery-only (no Orbit identity ref)
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  pinned project_url=https://flow.google.com/project/b604bd3e-aba4-4ae4-9495-9f7cd3e86f56
+  flow: https://flow.google.com/project/b604bd3e-aba4-4ae4-9495-9f7cd3e86f56
+  dismissed banner via 'Agree'
+  create-mode: Agent OFF video_settings=True
+  Agent settings path failed (Flow Settings (tune) button not found); trying prompt pill…
+  outputs clicked x1=None
+  video model locked: Veo 3.1 - Fast
+  settings closed via escape (prompt pill)
+  post-settings…
+  setting scenery-only prompt (no Orbit chip)…
+  set_prompt insert_text chars=456 dirty=False
+  set_prompt ok head='IMAGE-TO-VIDEO from text description (no attached still). Pr'
+  submitting Create…
+  create-mode: Agent OFF video_settings=True
+  clicking Flow send ('arrow_forward')
+  submitted Create (scenery-only, no Orbit ref)
+  wait 0s status=9% new_media=0 gen=True
+  wait 4s status=12% new_media=0 gen=True
+  wait 8s status=17% new_media=0 gen=True
+  waiting for gallery thumbs (#1) pct=22 thumbs=0
+  wait 12s status=22% new_media=0 gen=True
+  wait 16s status=25% new_media=0 gen=True
+  gen running (28% @ 20s) — defer to fresh-browser harvest (thumbs=0 new=0)
+  gallery-pending:0 — caller must fresh-browser harvest
+  gallery harvest via https://flow.google.com/project/b604bd3e-aba4-4ae4-9495-9f7cd3e86f56
+  dismissed banner via 'Agree'
+  harvest start thumbs=0
+  harvest poll thumbs=0 new=0 captured=0 elapsed=0s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=0 new=0 captured=0 elapsed=11s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=0 new=0 captured=0 elapsed=21s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=1 new=1 captured=0 elapsed=32s
+  net mp4 3097696
+  net mp4 3097696
+  net mp4 3097696
+  harvest saved 03_targets_swap_t1.mp4 bytes=3097696 via=play-net
+  → KEEP path=flow-cdp motion_ok scene_hits=4 dur=8.00s used=None rem=None sha=d49616d58511
+  KEEP 03_targets_swap → 03_targets_swap_v01.mp4 path=flow-cdp
+BATCH continue → 04_electrons_fire
+  Gemini probe first for 04_electrons_fire try=1…
+
+=== MINT 04_electrons_fire try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=112 framing=try1 ===
+  gemini poll 04_electrons_fire … 13s
+  gemini poll 04_electrons_fire … 25s
+  gemini poll 04_electrons_fire … 37s
+  gemini poll 04_electrons_fire … 50s
+  gemini poll 04_electrons_fire … 62s
+  gemini poll 04_electrons_fire … 74s
+  gemini poll 04_electrons_fire … 86s
+  → KEEP path=gemini-api motion_ok scene_hits=25 dur=8.00s used=None rem=112 sha=ba6ec31f97cb
+  KEEP 04_electrons_fire → 04_electrons_fire_v01.mp4 path=gemini-api
+BATCH continue → 05_xrays_from_metal
+  Gemini probe first for 05_xrays_from_metal try=1…
+
+=== MINT 05_xrays_from_metal try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=112 framing=try1 ===
+  gemini poll 05_xrays_from_metal … 13s
+  gemini poll 05_xrays_from_metal … 26s
+  gemini poll 05_xrays_from_metal … 38s
+  gemini poll 05_xrays_from_metal … 50s
+  gemini poll 05_xrays_from_metal … 62s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=112 sha=cd521fa7434e
+  KEEP 05_xrays_from_metal → 05_xrays_from_metal_v01.mp4 path=gemini-api
+BATCH continue → 06_rontgen_hand
+  Gemini probe first for 06_rontgen_hand try=1…
+
+=== MINT 06_rontgen_hand try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=112 framing=try1 ===
