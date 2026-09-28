@@ -284,3 +284,65 @@ Gemini client ready (key from .env)
   gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
   GEMINI 429 retry logged at=2026-09-28T16:09:20.539307+00:00 plate=08_ladder_pattern wait=1709s (~28.5m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
   Flow out (credits=12) — Gemini 429; sleep 1709s then retry (solid 0.0m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T16:38:50.691950+00:00 plate=08_ladder_pattern wait=1563s (~26.1m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1563s then retry (solid 29.5m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T17:05:54.631703+00:00 plate=08_ladder_pattern wait=1330s (~22.2m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1330s then retry (solid 56.6m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T17:29:05.685095+00:00 plate=08_ladder_pattern wait=1295s (~21.6m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1295s then retry (solid 79.8m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T17:51:41.919777+00:00 plate=08_ladder_pattern wait=1635s (~27.2m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1635s then retry (solid 102.4m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T18:19:57.927003+00:00 plate=08_ladder_pattern wait=1233s (~20.6m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1233s then retry (solid 130.6m / 180m)
+
+===== SHORT RETRY RESUME 2026-09-28T18:26:42Z =====
+  dismissed banner via 'Agree'
+GATE PASS account=benoats@googlemail.com credits=12
+BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=12
+SKIP 01_manchester_1913 already KEEP 01_manchester_1913_v01.mp4
+SKIP 02_train_in_tube already KEEP 02_train_in_tube_v01.mp4
+SKIP 03_targets_swap already KEEP 03_targets_swap_v01.mp4
+SKIP 04_electrons_fire already KEEP 04_electrons_fire_v01.mp4
+SKIP 05_xrays_from_metal already KEEP 05_xrays_from_metal_v01.mp4
+SKIP 06_rontgen_hand already KEEP 06_rontgen_hand_v01.mp4
+SKIP 07_crystal_split already KEEP 07_crystal_split_v01.mp4
+BATCH continue → 08_ladder_pattern
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Gemini client ready (key from .env)
+  Gemini probe first for 08_ladder_pattern try=1…
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_mint_part05_flow_cdp_v01.py:738: DeprecationWarning: The generate_videos method with prompt/image/video arguments is deprecated and will be removed in a future major release (not before 2026-07-31). Please use the source argument instead.
+  op = client.models.generate_videos(
+  GEMINI 429 retry logged at=2026-09-28T18:26:51.603664+00:00 plate=08_ladder_pattern wait=120s (~2.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; short retry 1/3 after 120s
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-28T18:28:52.088816+00:00 plate=08_ladder_pattern wait=120s (~2.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; short retry 2/3 after 120s
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-28T18:30:52.612499+00:00 plate=08_ladder_pattern wait=0s (~0.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+STOP Gemini 429 after 3 attempts at 08_ladder_pattern (Flow=12)
+EXACT_ERROR: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}
+STOP Gemini 429 at 08_ladder_pattern: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}

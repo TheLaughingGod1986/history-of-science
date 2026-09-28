@@ -548,7 +548,7 @@
       "note": "short-retry resume"
     }
   },
-  "status": "FLOW_CDP_MINT_IN_PROGRESS",
+  "status": "STOPPED_GEMINI_429",
   "note": "fresh after buffer waive; prior blocked log in .blocked_pre_waive",
   "vo_status": "KEEP (v04)",
   "engine_used": "flow-ui Veo 3.1 scenery_only via Mini CDP :9222",
@@ -558,10 +558,9 @@
     "quality_est": 100,
     "gemini_fast": "veo-3.1-lite-generate-preview",
     "gemini_quality": "veo-3.1-generate-preview",
-    "rule": "Gemini probe first; Flow reserve while credits\u226520. When Flow out \u2192 Gemini-only with 20\u201330m 429 backoff up to 3h solid.",
-    "gemini_429_backoff_min_s": 1200,
-    "gemini_429_backoff_max_s": 1800,
-    "gemini_429_solid_limit_s": 10800
+    "rule": "Gemini probe first; Flow reserve while credits\u226520. When Flow out \u2192 Gemini-only; on 429 retry \u22642\u00d7 ~2m apart then STOP (no 3h backoff \u2014 Ben evening override).",
+    "gemini_429_short_retries": 2,
+    "gemini_429_short_wait_s": 120
   },
   "board": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/parts/part-05_plates_v02.json",
   "flow_ultra": {
@@ -572,7 +571,7 @@
     "account_confirmed": "benoats@googlemail.com",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
-  "updated_at": "2026-09-28T18:26:28.408916+00:00",
+  "updated_at": "2026-09-28T18:32:26.460642+00:00",
   "credits_before_mint": 12,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
@@ -617,10 +616,41 @@
       "flow-cdp": 4,
       "gemini-api": 3
     },
-    "credits_before": 142,
+    "paths_detail": {
+      "01_manchester_1913": {
+        "path": "flow-cdp",
+        "quality": "Fast"
+      },
+      "02_train_in_tube": {
+        "path": "flow-cdp",
+        "quality": "Fast"
+      },
+      "03_targets_swap": {
+        "path": "flow-cdp",
+        "quality": "Fast"
+      },
+      "04_electrons_fire": {
+        "path": "gemini-api",
+        "quality": "Quality"
+      },
+      "05_xrays_from_metal": {
+        "path": "gemini-api",
+        "quality": "Quality"
+      },
+      "06_rontgen_hand": {
+        "path": "gemini-api",
+        "quality": "Quality"
+      },
+      "07_crystal_split": {
+        "path": "flow-cdp",
+        "quality": "Quality"
+      }
+    },
+    "credits_before": 12,
     "credits_after": 12,
-    "credits_spent": 130,
-    "stop_reason": "Flow=12 < Fast est 20; Gemini lite/Fast still 429; Quality Gemini worked for 04\u201306"
+    "credits_spent": 0,
+    "stop_reason": "Gemini 429 after 3 short retries at 08_ladder_pattern; Flow=12",
+    "gemini_429_exact_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}"
   },
   "resume_note": "Ben evening: immediate Gemini + \u22642\u00d7~2m 429 then STOP (no 3h)",
   "gemini_429_solid_started_at": null,
@@ -674,6 +704,31 @@
       "wait_s": 0,
       "wait_min": 0,
       "note": "killed 3h backoff; Ben asked immediate retry \u22642\u00d72m"
+    },
+    {
+      "at": "2026-09-28T18:26:51.603664+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 120,
+      "wait_min": 2.0
+    },
+    {
+      "at": "2026-09-28T18:28:52.088816+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 120,
+      "wait_min": 2.0
+    },
+    {
+      "at": "2026-09-28T18:30:52.612499+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 0,
+      "wait_min": 0.0
     }
-  ]
+  ],
+  "stopped_at_plate": "08_ladder_pattern",
+  "stop_reason": "Gemini 429 after 3 short retries at 08_ladder_pattern; Flow=12",
+  "gemini_429_exact_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+  "assemble": "BLOCKED \u2014 need 27/27 KEEP"
 }
