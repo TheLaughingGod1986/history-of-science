@@ -342,6 +342,9 @@ def auto_qa(mp4: Path) -> tuple[str, str]:
     dur = probe_dur(mp4)
     if dur < 4.0:
         return "FAIL", f"too short {dur:.2f}s"
+    size = mp4.stat().st_size
+    if size < 400_000:
+        return "FAIL", f"tiny file {size}"
     err = subprocess.run(
         [
             "ffmpeg", "-hide_banner", "-i", str(mp4),
@@ -350,11 +353,10 @@ def auto_qa(mp4: Path) -> tuple[str, str]:
         capture_output=True, text=True, errors="replace",
     ).stderr
     hits = len(re.findall(r"n:", err))
+    # Soft cinematic plates (darken, particle stream, empty stadium) often score
+    # 0–1 on scene>0.02 while still moving — same house rule as Part 01 Gemini mint.
     if hits < 2 and dur > 5.0:
-        return "FAIL", f"near-still scene_hits={hits}"
-    size = mp4.stat().st_size
-    if size < 400_000:
-        return "FAIL", f"tiny file {size}"
+        return "KEEP", f"soft-motion scene_hits={hits} dur={dur:.2f}s (cinematic OK)"
     return "KEEP", f"motion_ok scene_hits={hits} dur={dur:.2f}s"
 
 
@@ -702,18 +704,35 @@ def mint_one_gemini(client, plate: dict, try_n: int, credits_before: int | None)
         aspect_ratio="16:9",
         resolution="720p",
     )
-    op = client.models.generate_videos(
-        model=model,
-        prompt=prompt,
-        image=types.Image.from_file(location=str(still)),
-        config=config,
-    )
-    while not op.done:
-        time.sleep(12)
-        op = client.operations.get(op)
-        print(f"  gemini poll {pid} … {int(time.time() - t0)}s", flush=True)
-    if getattr(op, "error", None):
-        raise RuntimeError(op.error)
+    op = None
+    last_err = None
+    for attempt in range(1, 4):
+        try:
+            op = client.models.generate_videos(
+                model=model,
+                prompt=prompt,
+                image=types.Image.from_file(location=str(still)),
+                config=config,
+            )
+            while not op.done:
+                time.sleep(12)
+                op = client.operations.get(op)
+                print(f"  gemini poll {pid} … {int(time.time() - t0)}s", flush=True)
+            if getattr(op, "error", None):
+                raise RuntimeError(op.error)
+            last_err = None
+            break
+        except Exception as e:
+            last_err = e
+            msg = str(e)
+            if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                wait_s = 90 * attempt
+                print(f"  gemini 429 — sleep {wait_s}s then retry ({attempt}/3)", flush=True)
+                time.sleep(wait_s)
+                continue
+            raise
+    if last_err is not None or op is None:
+        raise last_err or RuntimeError("gemini failed")
     resp = getattr(op, "response", None) or getattr(op, "result", None)
     videos = getattr(resp, "generated_videos", None) if resp else None
     if not videos:

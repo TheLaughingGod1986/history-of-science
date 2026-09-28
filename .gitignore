@@ -72,3 +72,4 @@ node_modules/
 
 00_Brand/Channel-Setup/audits/playback_lag_in_place_replace/
 00_Brand/Channel-Setup/audits/playback_lag_remaster_report.json
+.venv_hos_veo/

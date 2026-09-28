@@ -173,3 +173,15 @@ Problem: tube glow had an S-shaped wiggle. Real X-ray/cathode beams run straight
 | Levels (measured) | VO mean **-23.6 dB** / peak **-4.0 dB**; bed under speech mean **~-51.5 dB**; bed in gaps mean **~-40.8 dB**; mix peak **-4.0 dB** (below −1 dB) |
 
 Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · `part01_rough_v04_land_meta.json` · assemblers `_assemble_part01_rough_v03_music.py` · `_assemble_part01_rough_v04.py`
+
+## Part 04 rough v02 — awaiting Ben UAT (v01 was FAIL)
+
+- **Cut:** `hos_004_part04_rough_v02.mp4`
+- **sha256:** `157feaef7bd21236aeafc3e953fe461fe2ee95896bb868d57357c9c1c2c1e1f5`
+- **Duration:** 109.033 s · VO v04 KEEP · TEMP bed −20 dB sidechain
+- **Audit:** `07_Edit-Project/PART04_V01_AUDIT.md` (KEEP 4 · FIX 18)
+- **Mint log:** `07_Edit-Project/PART04_MINT_LOG_v02.json`
+- **Paths:** Gemini API Veo 3.1 for most FIX plates; Flow Fast for tail after Gemini 429; Flow credits ~162→~92
+- **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part04_rough_v02.mp4`
+- **Do not land PR #154 as PASS. Do not start Part 05.** STOP for Ben.
+

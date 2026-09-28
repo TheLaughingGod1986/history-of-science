@@ -108,11 +108,12 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Picture yourself in that room. The lights are off,",
-      "prompt": "Animistry premium 3D cartoon. Same 1909 scattering room. Overhead gas lamps and desk lamps extinguish one after another until the lab is nearly black \u2014 only faint brass glints remain. Continuous darken. Silent. No Explorer. No Orbit. No flames flaring up. No festive multi-lamp flare.",
-      "prompt_try2": "Same 1909 room. Wider: the last lamp dies; deep darkness settles over the foil apparatus. Continuous fade-to-dark. Silent. No Explorer. No fire.",
-      "still_prompt": "Finished 3D cartoon still. 1909 lab mid-darken: lamps going out, deep shadows, foil apparatus faintly visible. No flames. No Explorer. No text.",
+      "prompt": "Animistry premium 3D cartoon. Same 1909 dark scattering laboratory ONLY (wooden benches, brass foil apparatus) \u2014 NOT a hospital ward, NOT beds. Overhead lamps extinguish until the room is nearly black; only faint brass glints remain. Continuous darken. Silent. No Explorer. No Orbit. No flames. No beds. No ward.",
+      "prompt_try2": "Same 1909 lab only. ECU: last lamp dies over the gold-foil frame; deep darkness. Continuous fade-to-dark. Silent. No beds. No Explorer.",
+      "still_prompt": "Finished 3D cartoon still. 1909 lab darkening: lamps going out over gold-foil apparatus. No hospital beds. No ward. No Explorer. No text.",
       "remint_v02": true,
-      "v01_verdict": "FIX"
+      "v01_verdict": "FIX",
+      "remint_v02b": true
     },
     {
       "id": "06_eyes_adjust_scope",
@@ -168,11 +169,12 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Almost all of them do.",
-      "prompt": "Animistry premium 3D cartoon. Same 1909 gold-foil apparatus. A dense stream of tiny glowing particles hits the paper-thin gold foil \u2014 almost every particle passes straight through and continues. Continuous pass-through. Silent. No Explorer. No Orbit. No rockets. No city. No smoke trails. No battle.",
-      "prompt_try2": "Same foil. Side tracking: glowing particles keep going past the foil. Continuous follow. Silent. No Explorer. No steampunk city.",
-      "still_prompt": "Finished 3D cartoon still. 1909 gold foil: glowing particle stream passing straight through the thin leaf. No city. No rockets. No Explorer. No text.",
+      "prompt": "Animistry premium 3D cartoon. Close on the 1909 gold-foil apparatus ONLY on a wooden lab bench \u2014 no stadium, no city, no ward, no beds. Dense stream of tiny glowing particles passes straight through the paper-thin gold foil. Continuous pass-through. Silent. No Explorer. No Orbit. No rockets. No smoke trails.",
+      "prompt_try2": "Same close foil only. Side view: glowing particles keep going past the leaf. Continuous follow. Silent. No stadium. No city. No Explorer.",
+      "still_prompt": "Finished 3D cartoon still. Close gold foil on lab bench; glowing particles mid-pass-through. No stadium. No city. No Explorer. No text.",
       "remint_v02": true,
-      "v01_verdict": "FIX"
+      "v01_verdict": "FIX",
+      "remint_v02b": true
     },
     {
       "id": "10_one_bounces",
@@ -198,9 +200,9 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Rutherford said it was as if you fired a huge shell at a piece of tissue paper,",
-      "prompt": "Animistry premium 3D cartoon. Wonder metaphor only (not war gore): a huge brass artillery shell races toward a delicate sheet of tissue paper floating in soft neutral space. Continuous approach. Silent. No Explorer. No Orbit. No blood. No laboratory projector. No seashell. No clocks in space.",
-      "prompt_try2": "Same metaphor. Wider: tissue paper fills frame; huge shell enters from depth toward it. Continuous approach. Silent. No Explorer. No gore.",
-      "still_prompt": "Finished 3D cartoon still. Huge brass artillery shell approaching a thin sheet of tissue paper. Wonder, not gore. No lab. No seashell. No Explorer. No text.",
+      "prompt": "Animistry premium 3D cartoon on a plain soft neutral void. A huge pointed brass cannon projectile (artillery round) races toward a delicate sheet of white tissue paper. Continuous approach. Wonder metaphor only, not war gore. Silent. No Explorer. No Orbit. No desk. No stadium. No lab. No seashell. No clocks. No blood.",
+      "prompt_try2": "Same plain void metaphor. Wider: tissue paper fills frame; pointed brass cannon projectile enters from depth toward it. Continuous approach. Silent. No Explorer. No lab. No stadium. No seashell.",
+      "still_prompt": "Finished 3D cartoon still on a plain soft neutral grey void background only. A huge pointed brass cannon projectile (artillery round) flies toward a single delicate sheet of white tissue paper. No desk. No stadium. No lab. No books. No soccer. No rugby. No seashell. No clocks. No Explorer. No text.",
       "remint_v02": true,
       "v01_verdict": "FIX"
     },
@@ -213,11 +215,12 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "and it came back and hit you.",
-      "prompt": "Animistry premium 3D cartoon. Same shell-vs-tissue metaphor. The huge brass shell kisses the tissue paper and BOUNCES BACK toward camera \u2014 impossible surprise, wonder not gore. Continuous rebound. Silent. No Explorer. No Orbit. No seashell. No blue waves. No clock machines. No outer space scenery.",
-      "prompt_try2": "Same metaphor. Side view: shell arcs back after touching the tissue. Continuous arc. Silent. No Explorer. No clocks. No waves.",
-      "still_prompt": "Finished 3D cartoon still. Huge brass shell mid-rebound away from tissue paper toward camera. No seashell. No clocks. No waves. No Explorer. No text.",
+      "prompt": "Animistry premium 3D cartoon on plain soft neutral void. A huge pointed brass cannon projectile BOUNCES BACK toward camera after touching a delicate tissue-paper sheet \u2014 rebound, not punching through. Continuous rebound toward camera. Wonder not gore. Silent. No Explorer. No Orbit. No flames. No lab hall. No seashell. No clocks.",
+      "prompt_try2": "Same plain void. Side view: pointed brass cannon projectile arcs BACK after kissing the tissue. Continuous arc toward camera. Silent. No flames. No lab. No seashell.",
+      "still_prompt": "Finished 3D cartoon still on plain void. Pointed brass cannon projectile mid-rebound toward camera away from tissue paper. No flames. No lab. No seashell. No Explorer. No text.",
       "remint_v02": true,
-      "v01_verdict": "FIX"
+      "v01_verdict": "FIX",
+      "remint_v02b": true
     },
     {
       "id": "13_mass_packed",

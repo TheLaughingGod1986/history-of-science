@@ -35,3 +35,13 @@
 **Summary:** KEEP **4** · FIX **18**
 
 **Remint path:** Flow CDP first (gate). Credits ~162 → next Fast would breach ~150 buffer → **Gemini API same Veo 3.1** (`veo-3.1-lite-generate-preview` / `veo-3.1-generate-preview`). Log path + spend per plate in `PART04_MINT_LOG_v02.json`.
+
+
+## v02 remint notes
+
+- Reminted 18 FIX plates; KEEP 4 carried from v01.
+- Path mix: mostly `gemini-api` Veo 3.1; Flow Fast for plates after Gemini `429 RESOURCE_EXHAUSTED`; Flow credits ended ~92 (I2V Quality blocked).
+- Stadium lock (16–18): UK soccer pitch + rectangular goal + empty stands — Explorer pea beat reminted.
+- City rockets (09) replaced with foil pass-through; seashell/clock space (12) replaced with artillery-shell metaphor.
+- Soft residual risk for Ben UAT: `05_lights_off` can still drift toward a lit hall; `09` sometimes bleeds stadium bokeh behind the foil; `12` rebound vs punch-through can be soft. Further remints need Flow credits or Gemini quota reset.
+
