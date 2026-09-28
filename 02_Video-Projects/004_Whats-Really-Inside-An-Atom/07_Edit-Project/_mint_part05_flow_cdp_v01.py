@@ -54,8 +54,8 @@ STYLE = (
     "No readable fake text or garbled tiles."
 )
 
-# Flow credit buffer (Ben-approved). Keep ~150 spare before switching to Gemini API.
-FLOW_CREDIT_BUFFER = 150
+# Flow credit buffer — WAIVED this run only (Ben 28 Sep 2026). Resume 150 after Part 05.
+FLOW_CREDIT_BUFFER = 0  # waived for Part 05 mint run
 FLOW_COST_FAST_EST = 20
 FLOW_COST_QUALITY_EST = 100
 GEMINI_FAST_MODEL = os.environ.get("HOS_VEO_FAST_MODEL", "veo-3.1-lite-generate-preview")
@@ -703,7 +703,8 @@ def mint_one_gemini(client, plate: dict, try_n: int, credits_before: int | None)
     )
     op = None
     last_err = None
-    for attempt in range(1, 4):
+    # Short probe only — if still 429, caller falls through to Flow reserve.
+    for attempt in range(1, 3):
         try:
             op = client.models.generate_videos(
                 model=model,
@@ -723,8 +724,8 @@ def mint_one_gemini(client, plate: dict, try_n: int, credits_before: int | None)
             last_err = e
             msg = str(e)
             if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
-                wait_s = 90 * attempt
-                print(f"  gemini 429 — sleep {wait_s}s then retry ({attempt}/3)", flush=True)
+                wait_s = 20 * attempt
+                print(f"  gemini 429 — sleep {wait_s}s probe ({attempt}/2) then Flow if still blocked", flush=True)
                 time.sleep(wait_s)
                 continue
             raise
@@ -849,7 +850,6 @@ def main() -> None:
     save_log(log)
 
     gemini_client = None
-    use_gemini_rest = False
 
     with sync_playwright() as p:
         browser = p.chromium.connect_over_cdp(CDP)
@@ -868,12 +868,13 @@ def main() -> None:
         save_log(log)
 
         credits_cursor = gate["credits"]
-        use_gemini_rest = bool(gate.get("force_gemini"))
-        if use_gemini_rest:
-            print(
-                f"Gemini primary from gate (Flow credits={credits_cursor} < buffer={FLOW_CREDIT_BUFFER})",
-                flush=True,
-            )
+        print(
+            f"BUFFER WAIVED this run (FLOW_CREDIT_BUFFER={FLOW_CREDIT_BUFFER}). "
+            f"Gemini probe → Flow reserve. credits={credits_cursor}",
+            flush=True,
+        )
+        log["buffer_waived"] = True
+        log["buffer_waive_note"] = "Ben 28 Sep 2026 — Part 05 only"
         first_keep_seen = any(
             (log.get("plates", {}).get(pl["id"], {}).get("status") == "KEEP")
             for pl in board["plates"]
@@ -905,31 +906,7 @@ def main() -> None:
             ensure_try_lists(plate_log)
             plate_log["status"] = "PENDING"
 
-            if not use_gemini_rest:
-                bal_check = credits_cursor
-                try:
-                    bal, _ = read_credits(page)
-                    if bal is not None:
-                        bal_check = bal
-                        credits_cursor = bal
-                except Exception:
-                    pass
-                if flow_would_breach_buffer(bal_check, plate):
-                    print(
-                        f"  FLOW BUFFER: credits={bal_check} "
-                        f"next_est={estimate_flow_cost(plate)} "
-                        f"buffer={FLOW_CREDIT_BUFFER} → Gemini Veo 3.1 API",
-                        flush=True,
-                    )
-                    use_gemini_rest = True
-                    log["credit_fallback"]["switched_at_plate"] = pid
-                    log["credit_fallback"]["credits_at_switch"] = bal_check
-                    log["engine_used"] = (
-                        "flow-ui Veo 3.1 CDP until buffer; then gemini-api Veo 3.1"
-                    )
-                    save_log(log)
-
-            if use_gemini_rest and gemini_client is None:
+            if gemini_client is None:
                 gemini_client = load_gemini_client()
 
             kept = False
@@ -941,100 +918,76 @@ def main() -> None:
                 ):
                     kept = True
                     break
-                credits_before = credits_cursor
+                # Refresh Flow balance
                 try:
-                    if use_gemini_rest:
-                        entry = mint_one_gemini(
-                            gemini_client, plate, try_n, credits_before
-                        )
+                    bal, _ = read_credits(page)
+                    if bal is not None:
+                        credits_cursor = bal
+                except Exception:
+                    pass
+                credits_before = credits_cursor
+
+                # Quality only if Flow credits can cover Quality; else Fast for glowing too
+                plate_eff = dict(plate)
+                if quality_or_fast(plate) == "Quality" and credits_before < FLOW_COST_QUALITY_EST:
+                    print(
+                        f"  Quality→Fast (credits={credits_before} < Quality est {FLOW_COST_QUALITY_EST})",
+                        flush=True,
+                    )
+                    plate_eff["quality"] = "Fast"
+
+                # Stop if Flow cannot afford even Fast AND we will need Flow
+                flow_can = credits_before >= FLOW_COST_FAST_EST
+
+                entry = None
+                # 1) Gemini first (retry in case 429 cleared)
+                print(f"  Gemini probe first for {pid} try={try_n}…", flush=True)
+                try:
+                    entry = mint_one_gemini(gemini_client, plate_eff, try_n, credits_before)
+                except Exception as ge:
+                    msg = str(ge)
+                    if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                        print(f"  Gemini still 429 → Flow reserve", flush=True)
                     else:
-                        bal, _ = read_credits(page)
-                        if bal is not None:
-                            credits_before = bal
-                            credits_cursor = bal
-                        if flow_would_breach_buffer(credits_before, plate):
-                            print(
-                                f"  FLOW BUFFER mid-plate → Gemini for {pid}",
-                                flush=True,
-                            )
-                            use_gemini_rest = True
-                            if gemini_client is None:
-                                gemini_client = load_gemini_client()
-                            entry = mint_one_gemini(
-                                gemini_client, plate, try_n, credits_before
-                            )
-                        else:
-                            entry = mint_one(page, plate, try_n, credits_before)
-                except SystemExit:
-                    raise
-                except Exception as e:
-                    bal = credits_cursor
-                    if not use_gemini_rest:
-                        try:
-                            bal, _ = read_credits(page)
-                        except Exception:
-                            pass
-                    entry = {
-                        "id": pid,
-                        "try": try_n,
-                        "model": (
-                            gemini_model_for(plate)
-                            if use_gemini_rest
-                            else model_for(plate)
-                        ),
-                        "quality_or_fast": quality_or_fast(plate),
-                        "framing": "try2_alt" if try_n >= 2 else "try1",
-                        "status": "FAIL",
-                        "note": f"exception {type(e).__name__}: {e}",
-                        "credits_before": credits_before,
-                        "credits_used": None,
-                        "credits_remaining": bal,
-                        "at": now(),
-                        "engine": (
-                            f"gemini-api Veo 3.1 ({gemini_model_for(plate)})"
-                            if use_gemini_rest
-                            else "flow-ui Veo 3.1 scenery_only (CDP)"
-                        ),
-                        "path": "gemini-api" if use_gemini_rest else "flow-cdp",
-                    }
-                    print(f"  FAIL exception: {e}", flush=True)
-                    if (
-                        not use_gemini_rest
-                        and (
-                            "Insufficient credits" in str(e)
-                            or "Not enough credits" in str(e)
+                        print(f"  Gemini fail ({type(ge).__name__}: {ge}) → Flow reserve", flush=True)
+                    entry = None
+
+                # 2) Flow reserve if Gemini failed
+                if entry is None:
+                    if not flow_can:
+                        print(
+                            f"STOP out of credits: Flow={credits_before} "
+                            f"(need ≥{FLOW_COST_FAST_EST} Fast) and Gemini 429",
+                            flush=True,
                         )
-                    ):
-                        print("  Flow out of credits → switch to Gemini", flush=True)
-                        use_gemini_rest = True
-                        ensure_try_lists(plate_log)
-                        plate_log["try_detail"].append(entry)
-                        plate_log["tries"].append(entry)
+                        log["status"] = "STOPPED_OUT_OF_CREDITS"
+                        log["credits_after_mint"] = credits_before
+                        log["stopped_at_plate"] = pid
                         save_log(log)
-                        if gemini_client is None:
-                            gemini_client = load_gemini_client()
-                        # retry this try_n via Gemini
-                        try:
-                            entry = mint_one_gemini(
-                                gemini_client, plate, try_n, credits_before
-                            )
-                        except Exception as e2:
-                            entry = {
-                                "id": pid,
-                                "try": try_n,
-                                "model": gemini_model_for(plate),
-                                "quality_or_fast": quality_or_fast(plate),
-                                "framing": "try2_alt" if try_n >= 2 else "try1",
-                                "status": "FAIL",
-                                "note": f"exception {type(e2).__name__}: {e2}",
-                                "credits_before": credits_before,
-                                "credits_used": None,
-                                "credits_remaining": credits_before,
-                                "at": now(),
-                                "engine": f"gemini-api Veo 3.1 ({gemini_model_for(plate)})",
-                                "path": "gemini-api",
-                            }
-                            print(f"  FAIL gemini exception: {e2}", flush=True)
+                        raise SystemExit(
+                            f"STOP out of credits at {pid}: Flow={credits_before}"
+                        )
+                    try:
+                        entry = mint_one(page, plate_eff, try_n, credits_before)
+                    except SystemExit:
+                        raise
+                    except Exception as e:
+                        entry = {
+                            "id": pid,
+                            "try": try_n,
+                            "model": model_for(plate_eff),
+                            "quality_or_fast": quality_or_fast(plate_eff),
+                            "framing": "try2_alt" if try_n >= 2 else "try1",
+                            "status": "FAIL",
+                            "note": f"exception {type(e).__name__}: {e}",
+                            "credits_before": credits_before,
+                            "credits_used": None,
+                            "credits_remaining": credits_cursor,
+                            "at": now(),
+                            "engine": "flow-ui Veo 3.1 scenery_only (CDP)",
+                            "path": "flow-cdp",
+                        }
+                        print(f"  FAIL exception: {e}", flush=True)
 
                 ensure_try_lists(plate_log)
                 plate_log["try_detail"].append(entry)
@@ -1064,17 +1017,16 @@ def main() -> None:
                 if out_path and Path(out_path).exists():
                     archive_reject(Path(out_path), "auto_fail")
                 note = entry.get("note") or ""
-                if (
-                    not use_gemini_rest
-                    and (
-                        "Insufficient credits" in note
-                        or "Not enough credits" in note
+                if "Insufficient credits" in note or "Not enough credits" in note:
+                    print(
+                        f"STOP out of credits mid-try at {pid}: Flow note={note}",
+                        flush=True,
                     )
-                ):
-                    print("  Flow insufficient → Gemini for remaining", flush=True)
-                    use_gemini_rest = True
-                    if gemini_client is None:
-                        gemini_client = load_gemini_client()
+                    log["status"] = "STOPPED_OUT_OF_CREDITS"
+                    log["credits_after_mint"] = credits_cursor
+                    log["stopped_at_plate"] = pid
+                    save_log(log)
+                    raise SystemExit(f"STOP out of credits at {pid}")
 
             if not kept:
                 plate_log["status"] = "FAIL"
