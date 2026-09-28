@@ -558,20 +558,22 @@
     "quality_est": 100,
     "gemini_fast": "veo-3.1-lite-generate-preview",
     "gemini_quality": "veo-3.1-generate-preview",
-    "rule": "if flow_credits - next_cost < 150 \u2192 gemini-api same Veo 3.1"
+    "rule": "Gemini probe first; Flow reserve while credits\u226520. When Flow out \u2192 Gemini-only with 20\u201330m 429 backoff up to 3h solid.",
+    "gemini_429_backoff_min_s": 1200,
+    "gemini_429_backoff_max_s": 1800,
+    "gemini_429_solid_limit_s": 10800
   },
   "board": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/parts/part-05_plates_v02.json",
   "flow_ultra": {
     "account": "benoats@googlemail.com",
     "profile": "~/.hos-chrome-flow-benoats-googlemail-cdp",
     "cdp": "http://127.0.0.1:9222",
-    "credits_before": 142,
+    "credits_before": 12,
     "account_confirmed": "benoats@googlemail.com",
-    "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png",
-    "credits_after": 12
+    "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
-  "updated_at": "2026-09-28T16:07:52.709544+00:00",
-  "credits_before_mint": 142,
+  "updated_at": "2026-09-28T16:09:20.539337+00:00",
+  "credits_before_mint": 12,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
   "credits_after_mint": 12,
@@ -621,6 +623,14 @@
     "stop_reason": "Flow=12 < Fast est 20; Gemini lite/Fast still 429; Quality Gemini worked for 04\u201306"
   },
   "resume_note": "Ben 28 Sep 2026: Flow out \u2192 Gemini-only with 20\u201330m 429 backoff up to 3h solid",
-  "gemini_429_solid_started_at": null,
-  "gemini_429_retries": []
+  "gemini_429_solid_started_at": "2026-09-28T16:09:20.537724+00:00",
+  "gemini_429_retries": [
+    {
+      "at": "2026-09-28T16:09:20.539307+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 1709,
+      "wait_min": 28.5
+    }
+  ]
 }
