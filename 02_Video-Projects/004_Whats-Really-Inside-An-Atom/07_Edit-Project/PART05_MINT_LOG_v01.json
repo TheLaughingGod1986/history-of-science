@@ -545,7 +545,7 @@
       "tries": [],
       "try_detail": [],
       "status": "PENDING",
-      "note": "resume after Flow-out \u2192 Gemini backoff"
+      "note": "short-retry resume"
     }
   },
   "status": "FLOW_CDP_MINT_IN_PROGRESS",
@@ -572,7 +572,7 @@
     "account_confirmed": "benoats@googlemail.com",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
-  "updated_at": "2026-09-28T16:09:20.539337+00:00",
+  "updated_at": "2026-09-28T18:26:28.408916+00:00",
   "credits_before_mint": 12,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
@@ -622,8 +622,8 @@
     "credits_spent": 130,
     "stop_reason": "Flow=12 < Fast est 20; Gemini lite/Fast still 429; Quality Gemini worked for 04\u201306"
   },
-  "resume_note": "Ben 28 Sep 2026: Flow out \u2192 Gemini-only with 20\u201330m 429 backoff up to 3h solid",
-  "gemini_429_solid_started_at": "2026-09-28T16:09:20.537724+00:00",
+  "resume_note": "Ben evening: immediate Gemini + \u22642\u00d7~2m 429 then STOP (no 3h)",
+  "gemini_429_solid_started_at": null,
   "gemini_429_retries": [
     {
       "at": "2026-09-28T16:09:20.539307+00:00",
@@ -631,6 +631,49 @@
       "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
       "wait_s": 1709,
       "wait_min": 28.5
+    },
+    {
+      "at": "2026-09-28T16:38:50.691950+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 1563,
+      "wait_min": 26.1
+    },
+    {
+      "at": "2026-09-28T17:05:54.631703+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 1330,
+      "wait_min": 22.2
+    },
+    {
+      "at": "2026-09-28T17:29:05.685095+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 1295,
+      "wait_min": 21.6
+    },
+    {
+      "at": "2026-09-28T17:51:41.919777+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 1635,
+      "wait_min": 27.2
+    },
+    {
+      "at": "2026-09-28T18:19:57.927003+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+      "wait_s": 1233,
+      "wait_min": 20.6
+    },
+    {
+      "at": "2026-09-28T18:26:28.408652+00:00",
+      "plate": "08_ladder_pattern",
+      "error": "RESUME_SHORT_RETRY_MODE",
+      "wait_s": 0,
+      "wait_min": 0,
+      "note": "killed 3h backoff; Ben asked immediate retry \u22642\u00d72m"
     }
   ]
 }
