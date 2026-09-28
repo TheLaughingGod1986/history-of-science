@@ -108,12 +108,13 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Picture yourself in that room. The lights are off,",
-      "prompt": "Animistry premium 3D cartoon. Same 1909 dark scattering laboratory ONLY (wooden benches, brass foil apparatus) \u2014 NOT a hospital ward, NOT beds. Overhead lamps extinguish until the room is nearly black; only faint brass glints remain. Continuous darken. Silent. No Explorer. No Orbit. No flames. No beds. No ward.",
-      "prompt_try2": "Same 1909 lab only. ECU: last lamp dies over the gold-foil frame; deep darkness. Continuous fade-to-dark. Silent. No beds. No Explorer.",
-      "still_prompt": "Finished 3D cartoon still. 1909 lab darkening: lamps going out over gold-foil apparatus. No hospital beds. No ward. No Explorer. No text.",
+      "prompt": "Animistry premium 3D cartoon. Same 1909 scattering laboratory ONLY (wooden benches, brass gold-foil apparatus). The room is ALREADY DARK \u2014 lamps are extinguished, only faint brass glints and soft vignette remain. Continuous soft camera drift in darkness. Silent. No Explorer. No Orbit. No flames. No lit desk lamps. No hospital beds. No ward. Lights are OFF.",
+      "prompt_try2": "Same 1909 lab in deep darkness. ECU: extinguished lamp shade over the gold-foil frame; near-black room. Continuous tiny drift. Silent. No lit lamps. No beds. No Explorer.",
+      "still_prompt": "Finished 3D cartoon still. 1909 lab in near darkness: lamps off, faint brass glints on gold-foil apparatus. No lit lamps. No beds. No Explorer. No text.",
       "remint_v02": true,
       "v01_verdict": "FIX",
-      "remint_v02b": true
+      "remint_v02b": true,
+      "polish_v03": true
     },
     {
       "id": "06_eyes_adjust_scope",
@@ -174,7 +175,9 @@
       "still_prompt": "Finished 3D cartoon still. Close gold foil on lab bench; glowing particles mid-pass-through. No stadium. No city. No Explorer. No text.",
       "remint_v02": true,
       "v01_verdict": "FIX",
-      "remint_v02b": true
+      "remint_v02b": true,
+      "polish_v03": false,
+      "polish_hold": true
     },
     {
       "id": "10_one_bounces",
@@ -215,12 +218,13 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "and it came back and hit you.",
-      "prompt": "Animistry premium 3D cartoon on plain soft neutral void. A huge pointed brass cannon projectile BOUNCES BACK toward camera after touching a delicate tissue-paper sheet \u2014 rebound, not punching through. Continuous rebound toward camera. Wonder not gore. Silent. No Explorer. No Orbit. No flames. No lab hall. No seashell. No clocks.",
-      "prompt_try2": "Same plain void. Side view: pointed brass cannon projectile arcs BACK after kissing the tissue. Continuous arc toward camera. Silent. No flames. No lab. No seashell.",
-      "still_prompt": "Finished 3D cartoon still on plain void. Pointed brass cannon projectile mid-rebound toward camera away from tissue paper. No flames. No lab. No seashell. No Explorer. No text.",
+      "prompt": "Animistry premium 3D cartoon on plain soft neutral void. A huge pointed brass cannon projectile (artillery round) BOUNCES BACK toward the camera after kissing a delicate white tissue-paper sheet \u2014 clear rebound toward camera, not punching through. Continuous rebound. Wonder not gore. Silent. No Explorer. No Orbit. No telescope. No picture frame. No flames. No lab hall. No seashell. No clocks.",
+      "prompt_try2": "Same plain void. Side view: pointed brass cannon projectile arcs BACK toward camera after touching tissue. Continuous arc toward camera. Silent. No telescope. No frame. No flames. No seashell.",
+      "still_prompt": "Finished 3D cartoon still on plain void. Pointed brass cannon projectile mid-rebound toward camera, away from a tissue-paper sheet. No telescope. No picture frame. No flames. No Explorer. No text.",
       "remint_v02": true,
       "v01_verdict": "FIX",
-      "remint_v02b": true
+      "remint_v02b": true,
+      "polish_v03": true
     },
     {
       "id": "13_mass_packed",
