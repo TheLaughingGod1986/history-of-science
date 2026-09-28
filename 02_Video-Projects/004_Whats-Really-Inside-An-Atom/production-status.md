@@ -12,8 +12,8 @@
 | Episode gate | Passed by Ben (manual), 26 Sep 2026 |
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
-| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–03 `mint: false` (03 rough v01 pending Ben) · 04/05 `mint: false` · Explorer used ×1 (P02); remaining P04/P05 · no Explorer in Part 03 |
-| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”). **Part 03 rough v01 READY for Ben UAT** — STOP; do not start Part 04. |
+| Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–04 `mint: false` (04 rough v01 pending Ben) · 05 `mint: false` · Explorer used ×2 (P02 + P04 stadium pea); remaining P05 · no Explorer in Part 03 |
+| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”) · **Part 03 rough v01 PASS** (Ben: “fine”). **Part 04 rough v02 PASS** (Ben 28 Sep). Part 05 unlocked. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
@@ -50,11 +50,11 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 |---|---|---|---|---|
 | 01 Cold open | 0:00–1:10 | none | 17 (split 07 at 0:32) | false (PASS) |
 | 02 The Table That Broke Its Own Rule | 1:10–2:41 | 1:10 · ~1.5 s | **20** (4–6 s splits) | false (PASS) |
-| 03 The Crumb Inside the Atom | 2:41–4:05 | 2:41 · ~1.5 s | **19** (4–6 s splits) | false (rough v01) |
-| 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | 10 | false |
+| 03 The Crumb Inside the Atom | 2:41–4:05 | 2:41 · ~1.5 s | **19** (4–6 s splits) | false (PASS) |
+| 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | **22** (4–6 s splits) | false (rough v01) |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Ben UAT Part 03 rough v01. Do not start Part 04 until he passes.
+**Next:** Part 05 (Moseley / X-rays). Part 04 v02 PASS.
 
 ---
 
@@ -88,7 +88,7 @@ iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/`
 
 iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part02_rough_v01.mp4`
 
-## Part 03 rough UAT (27 Sep 2026) — PENDING Ben
+## Part 03 rough UAT (27 Sep 2026) — PASS
 
 | Cut | Duration | sha256 | Notes |
 |---|---|---|---|
@@ -100,7 +100,22 @@ iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part02_
 
 iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part03_rough_v01.mp4`
 
-**STOP for Ben.** Do not start Part 04. Do not label the rough KEEP/LOCKED — plate-level KEEP only in the mint log.
+**Ben PASS Part 03 rough v01** — “fine”. Do not remint Part 03 unless CoS sends a later FAIL with stills.
+
+## Part 04 rough UAT (27 Sep 2026) — PENDING Ben
+
+| Cut | Duration | sha256 | Notes |
+|---|---|---|---|
+| `hos_004_part04_rough_v01.mp4` | **109.033 s** | `49efa91a197aa74dd67d686a5d2df1b6d48eeac4cfc2d898d82e03c314e7f9fa` | 22 board windows · v04 VO · TEMP bed −20 dB sidechain · Flow Veo 3.1 scenery_only CDP |
+
+**Mint:** credits **1162 → 162** (spent **1000**). Plate KEEP **22**/22. All path=`flow-cdp` (Gemini fallback armed but not needed — stayed above ~150 buffer). Quality on glow plates. Explorer once: `16_explorer_stadium_pea` (film-wide 2/3). Unnamed physicists in prompts.
+
+**Log:** `07_Edit-Project/PART04_MINT_LOG_v01.json`
+
+iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part04_rough_v01.mp4`
+
+**STOP for Ben.** Do not start Part 05. Do not label the rough KEEP/LOCKED — plate-level KEEP only in the mint log.
+
 
 ---
 
@@ -158,3 +173,24 @@ Problem: tube glow had an S-shaped wiggle. Real X-ray/cathode beams run straight
 | Levels (measured) | VO mean **-23.6 dB** / peak **-4.0 dB**; bed under speech mean **~-51.5 dB**; bed in gaps mean **~-40.8 dB**; mix peak **-4.0 dB** (below −1 dB) |
 
 Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · `part01_rough_v04_land_meta.json` · assemblers `_assemble_part01_rough_v03_music.py` · `_assemble_part01_rough_v04.py`
+
+## Part 04 rough v02 — awaiting Ben UAT (v01 was FAIL)
+
+- **Cut:** `hos_004_part04_rough_v02.mp4`
+- **sha256:** `157feaef7bd21236aeafc3e953fe461fe2ee95896bb868d57357c9c1c2c1e1f5`
+- **Duration:** 109.033 s · VO v04 KEEP · TEMP bed −20 dB sidechain
+- **Audit:** `07_Edit-Project/PART04_V01_AUDIT.md` (KEEP 4 · FIX 18)
+- **Mint log:** `07_Edit-Project/PART04_MINT_LOG_v02.json`
+- **Paths:** Gemini API Veo 3.1 for most FIX plates; Flow Fast for tail after Gemini 429; Flow credits ~162→~92
+- **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part04_rough_v02.mp4`
+- **SUPERSEDED:** Ben PASS on v02 (28 Sep). Land PR #154. Part 05 unlocked.
+
+## Part 04 PASS (Ben 28 Sep 2026)
+
+- **Passed cut:** `hos_004_part04_rough_v02.mp4`
+- **sha256:** `157feaef7bd21236aeafc3e953fe461fe2ee95896bb868d57357c9c1c2c1e1f5`
+- **Duration:** 109.033 s · VO v04 KEEP · TEMP bed −20 dB sidechain
+- **Polish check:** `PART04_V02_POLISH_CHECK.md` — `09` HOLD; `05`/`12` would improve but Gemini 429 + Flow credits=3 (buffer 150) blocked remint → **v02 stays the passed cut** (no v03).
+- iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part04_rough_v02.mp4`
+- Land PR #154. Next: Part 05.
+
