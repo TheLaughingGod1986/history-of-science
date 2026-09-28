@@ -544,11 +544,11 @@
       "id": "08_ladder_pattern",
       "tries": [],
       "try_detail": [],
-      "status": "NOT_STARTED",
-      "note": "stopped before spend \u2014 Flow 12 + Gemini Fast 429"
+      "status": "PENDING",
+      "note": "resume after Flow-out \u2192 Gemini backoff"
     }
   },
-  "status": "STOPPED_OUT_OF_CREDITS",
+  "status": "FLOW_CDP_MINT_IN_PROGRESS",
   "note": "fresh after buffer waive; prior blocked log in .blocked_pre_waive",
   "vo_status": "KEEP (v04)",
   "engine_used": "flow-ui Veo 3.1 scenery_only via Mini CDP :9222",
@@ -570,12 +570,11 @@
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png",
     "credits_after": 12
   },
-  "updated_at": "2026-09-28T16:02:41.455147+00:00",
+  "updated_at": "2026-09-28T16:07:52.709544+00:00",
   "credits_before_mint": 142,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
   "credits_after_mint": 12,
-  "stopped_at_plate": "08_ladder_pattern",
   "credits_spent_total": 130,
   "summary": {
     "keep": 7,
@@ -621,5 +620,7 @@
     "credits_spent": 130,
     "stop_reason": "Flow=12 < Fast est 20; Gemini lite/Fast still 429; Quality Gemini worked for 04\u201306"
   },
-  "assemble": "BLOCKED \u2014 need 27/27 KEEP before hos_004_part05_rough_v01"
+  "resume_note": "Ben 28 Sep 2026: Flow out \u2192 Gemini-only with 20\u201330m 429 backoff up to 3h solid",
+  "gemini_429_solid_started_at": null,
+  "gemini_429_retries": []
 }

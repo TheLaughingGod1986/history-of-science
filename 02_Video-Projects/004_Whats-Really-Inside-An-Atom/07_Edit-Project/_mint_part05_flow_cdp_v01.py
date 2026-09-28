@@ -58,6 +58,10 @@ STYLE = (
 FLOW_CREDIT_BUFFER = 0  # waived for Part 05 mint run
 FLOW_COST_FAST_EST = 20
 FLOW_COST_QUALITY_EST = 100
+# Ben 28 Sep 2026: when Flow is out, stay on Gemini Veo 3.1 with long 429 backoff.
+GEMINI_429_BACKOFF_MIN_S = 20 * 60  # 20 min
+GEMINI_429_BACKOFF_MAX_S = 30 * 60  # 30 min
+GEMINI_429_SOLID_LIMIT_S = 3 * 60 * 60  # 3 hours of solid 429s then STOP
 GEMINI_FAST_MODEL = os.environ.get("HOS_VEO_FAST_MODEL", "veo-3.1-lite-generate-preview")
 GEMINI_QUALITY_MODEL = os.environ.get(
     "HOS_VEO_QUALITY_MODEL", "veo-3.1-generate-preview"
@@ -88,6 +92,31 @@ SIGNED_OUT_RE = re.compile(
 
 def now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def gemini_backoff_sleep_s() -> int:
+    """20–30 min jitter between solid-429 retries (Ben)."""
+    import random
+
+    return int(random.randint(GEMINI_429_BACKOFF_MIN_S, GEMINI_429_BACKOFF_MAX_S))
+
+
+def log_gemini_429_retry(log: dict, *, plate_id: str, err: str, wait_s: int) -> None:
+    row = {
+        "at": now(),
+        "plate": plate_id,
+        "error": (err or "")[:500],
+        "wait_s": wait_s,
+        "wait_min": round(wait_s / 60, 1),
+    }
+    retries = log.setdefault("gemini_429_retries", [])
+    retries.append(row)
+    save_log(log)
+    print(
+        f"  GEMINI 429 retry logged at={row['at']} plate={plate_id} "
+        f"wait={wait_s}s (~{row['wait_min']}m) err={(err or '')[:160]}",
+        flush=True,
+    )
 
 
 def sha256_file(path: Path) -> str:
@@ -931,38 +960,108 @@ def main() -> None:
                 except Exception:
                     pass
                 credits_before = credits_cursor
+                flow_can = credits_before >= FLOW_COST_FAST_EST
 
-                # Quality only if Flow credits can cover Quality; else Fast for glowing too
+                # Quality→Fast only when we still need Flow for this try.
+                # When Flow is out, keep Quality on Gemini (glow path worked earlier).
                 plate_eff = dict(plate)
-                if quality_or_fast(plate) == "Quality" and credits_before < FLOW_COST_QUALITY_EST:
+                if (
+                    flow_can
+                    and quality_or_fast(plate) == "Quality"
+                    and credits_before < FLOW_COST_QUALITY_EST
+                ):
                     print(
-                        f"  Quality→Fast (credits={credits_before} < Quality est {FLOW_COST_QUALITY_EST})",
+                        f"  Quality→Fast (Flow path; credits={credits_before} "
+                        f"< Quality est {FLOW_COST_QUALITY_EST})",
                         flush=True,
                     )
                     plate_eff["quality"] = "Fast"
 
-                # Stop if Flow cannot afford even Fast AND we will need Flow
-                flow_can = credits_before >= FLOW_COST_FAST_EST
-
                 entry = None
-                # 1) Gemini first (retry in case 429 cleared)
+                # 1) Gemini first (always). When Flow is out, long-backoff on 429.
                 print(f"  Gemini probe first for {pid} try={try_n}…", flush=True)
-                try:
-                    entry = mint_one_gemini(gemini_client, plate_eff, try_n, credits_before)
-                except Exception as ge:
-                    msg = str(ge)
-                    if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
-                        print(f"  Gemini still 429 → Flow reserve", flush=True)
-                    else:
-                        print(f"  Gemini fail ({type(ge).__name__}: {ge}) → Flow reserve", flush=True)
-                    entry = None
+                solid_429_t0: float | None = None
+                while entry is None:
+                    try:
+                        entry = mint_one_gemini(
+                            gemini_client, plate_eff, try_n, credits_before
+                        )
+                        # success clears solid-429 clock
+                        log["gemini_429_solid_started_at"] = None
+                        solid_429_t0 = None
+                        break
+                    except Exception as ge:
+                        msg = str(ge)
+                        is_429 = "429" in msg or "RESOURCE_EXHAUSTED" in msg
+                        if not is_429:
+                            if flow_can:
+                                print(
+                                    f"  Gemini fail ({type(ge).__name__}: {ge}) → Flow reserve",
+                                    flush=True,
+                                )
+                                break  # fall through to Flow
+                            print(
+                                f"  Gemini fail with Flow out ({type(ge).__name__}: {ge})",
+                                flush=True,
+                            )
+                            raise
+                        # 429
+                        if flow_can:
+                            print("  Gemini still 429 → Flow reserve", flush=True)
+                            break  # fall through to Flow
+                        # Flow out — Ben: stay on Gemini, backoff 20–30m up to 3h solid 429s
+                        if solid_429_t0 is None:
+                            if log.get("gemini_429_solid_started_at"):
+                                try:
+                                    solid_429_t0 = datetime.fromisoformat(
+                                        log["gemini_429_solid_started_at"]
+                                    ).timestamp()
+                                except Exception:
+                                    solid_429_t0 = time.time()
+                                    log["gemini_429_solid_started_at"] = now()
+                            else:
+                                solid_429_t0 = time.time()
+                                log["gemini_429_solid_started_at"] = now()
+                                save_log(log)
+                        elapsed = time.time() - solid_429_t0
+                        if elapsed >= GEMINI_429_SOLID_LIMIT_S:
+                            print(
+                                f"STOP: solid Gemini 429 for ≥3h "
+                                f"(elapsed={elapsed/3600:.2f}h) at {pid}",
+                                flush=True,
+                            )
+                            log["status"] = "STOPPED_GEMINI_429_3H"
+                            log["credits_after_mint"] = credits_before
+                            log["stopped_at_plate"] = pid
+                            log["stop_reason"] = (
+                                f"solid Gemini 429 ≥3h at {pid}; Flow={credits_before}"
+                            )
+                            save_log(log)
+                            raise SystemExit(
+                                f"STOP solid Gemini 429 ≥3h at {pid}"
+                            )
+                        wait_s = gemini_backoff_sleep_s()
+                        # don't overshoot the 3h solid window by much
+                        remaining = max(60, int(GEMINI_429_SOLID_LIMIT_S - elapsed))
+                        wait_s = min(wait_s, remaining)
+                        log_gemini_429_retry(
+                            log, plate_id=pid, err=msg, wait_s=wait_s
+                        )
+                        print(
+                            f"  Flow out (credits={credits_before}) — Gemini 429; "
+                            f"sleep {wait_s}s then retry "
+                            f"(solid {elapsed/60:.1f}m / 180m)",
+                            flush=True,
+                        )
+                        time.sleep(wait_s)
 
-                # 2) Flow reserve if Gemini failed
+                # 2) Flow reserve if Gemini failed and Flow can pay
                 if entry is None:
                     if not flow_can:
+                        # Should not reach here — loop either KEPT or SystemExit
                         print(
-                            f"STOP out of credits: Flow={credits_before} "
-                            f"(need ≥{FLOW_COST_FAST_EST} Fast) and Gemini 429",
+                            f"STOP out of credits + Gemini exhausted at {pid}: "
+                            f"Flow={credits_before}",
                             flush=True,
                         )
                         log["status"] = "STOPPED_OUT_OF_CREDITS"
@@ -977,22 +1076,71 @@ def main() -> None:
                     except SystemExit:
                         raise
                     except Exception as e:
-                        entry = {
-                            "id": pid,
-                            "try": try_n,
-                            "model": model_for(plate_eff),
-                            "quality_or_fast": quality_or_fast(plate_eff),
-                            "framing": "try2_alt" if try_n >= 2 else "try1",
-                            "status": "FAIL",
-                            "note": f"exception {type(e).__name__}: {e}",
-                            "credits_before": credits_before,
-                            "credits_used": None,
-                            "credits_remaining": credits_cursor,
-                            "at": now(),
-                            "engine": "flow-ui Veo 3.1 scenery_only (CDP)",
-                            "path": "flow-cdp",
-                        }
-                        print(f"  FAIL exception: {e}", flush=True)
+                        note = str(e)
+                        if (
+                            "Insufficient credits" in note
+                            or "Not enough credits" in note
+                        ):
+                            # Flow died mid-try — fall into Gemini-only long backoff
+                            print(
+                                f"  Flow insufficient mid-try → Gemini-only backoff "
+                                f"for {pid}",
+                                flush=True,
+                            )
+                            credits_cursor = min(credits_cursor, FLOW_COST_FAST_EST - 1)
+                            flow_can = False
+                            # re-enter Gemini long wait for this try_n
+                            solid_429_t0 = None
+                            while entry is None:
+                                try:
+                                    entry = mint_one_gemini(
+                                        gemini_client, plate, try_n, credits_cursor
+                                    )
+                                    log["gemini_429_solid_started_at"] = None
+                                    break
+                                except Exception as ge2:
+                                    msg2 = str(ge2)
+                                    if "429" not in msg2 and "RESOURCE_EXHAUSTED" not in msg2:
+                                        raise
+                                    if solid_429_t0 is None:
+                                        solid_429_t0 = time.time()
+                                        log["gemini_429_solid_started_at"] = now()
+                                        save_log(log)
+                                    elapsed = time.time() - solid_429_t0
+                                    if elapsed >= GEMINI_429_SOLID_LIMIT_S:
+                                        log["status"] = "STOPPED_GEMINI_429_3H"
+                                        log["credits_after_mint"] = credits_cursor
+                                        log["stopped_at_plate"] = pid
+                                        save_log(log)
+                                        raise SystemExit(
+                                            f"STOP solid Gemini 429 ≥3h at {pid}"
+                                        )
+                                    wait_s = gemini_backoff_sleep_s()
+                                    remaining = max(
+                                        60, int(GEMINI_429_SOLID_LIMIT_S - elapsed)
+                                    )
+                                    wait_s = min(wait_s, remaining)
+                                    log_gemini_429_retry(
+                                        log, plate_id=pid, err=msg2, wait_s=wait_s
+                                    )
+                                    time.sleep(wait_s)
+                        else:
+                            entry = {
+                                "id": pid,
+                                "try": try_n,
+                                "model": model_for(plate_eff),
+                                "quality_or_fast": quality_or_fast(plate_eff),
+                                "framing": "try2_alt" if try_n >= 2 else "try1",
+                                "status": "FAIL",
+                                "note": f"exception {type(e).__name__}: {e}",
+                                "credits_before": credits_before,
+                                "credits_used": None,
+                                "credits_remaining": credits_cursor,
+                                "at": now(),
+                                "engine": "flow-ui Veo 3.1 scenery_only (CDP)",
+                                "path": "flow-cdp",
+                            }
+                            print(f"  FAIL exception: {e}", flush=True)
 
                 ensure_try_lists(plate_log)
                 plate_log["try_detail"].append(entry)
@@ -1023,15 +1171,12 @@ def main() -> None:
                     archive_reject(Path(out_path), "auto_fail")
                 note = entry.get("note") or ""
                 if "Insufficient credits" in note or "Not enough credits" in note:
+                    # Do not hard-stop — next try / next plate uses Gemini-only path
                     print(
-                        f"STOP out of credits mid-try at {pid}: Flow note={note}",
+                        f"  Flow insufficient note on {pid}; continuing via Gemini-only",
                         flush=True,
                     )
-                    log["status"] = "STOPPED_OUT_OF_CREDITS"
-                    log["credits_after_mint"] = credits_cursor
-                    log["stopped_at_plate"] = pid
-                    save_log(log)
-                    raise SystemExit(f"STOP out of credits at {pid}")
+                    credits_cursor = min(credits_cursor, FLOW_COST_FAST_EST - 1)
 
             if not kept:
                 plate_log["status"] = "FAIL"
