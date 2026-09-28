@@ -1,6 +1,6 @@
 {
-  "status": "ROUGH_V01_PENDING_BEN",
-  "mint": false,
+  "status": "REMINT_V02",
+  "mint": true,
   "film": "004_Whats-Really-Inside-An-Atom",
   "working_title": "Why Is the Periodic Table in This Order?",
   "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v04 KEEP",
@@ -19,7 +19,7 @@
     "Explorer twins / no glasses",
     "war gore on shell metaphor"
   ],
-  "notes": "Part 03 rough v01 PASS (Ben: fine). Part 04 mint:true. t_s PART-LOCAL (0 = film 4:05). Split to 4\u20136 s. Explorer once: 16_explorer_stadium_pea (film-wide 2/3). Do not name Rutherford/Geiger/Marsden/Thomson/van den Broek in Flow prompts \u2014 describe. Quality for green flash / glow / nucleus glow. Flow CDP primary; Gemini Veo 3.1 API fallback if Flow would drop below ~150 buffer.",
+  "notes": "Part 04 rough v01 FAIL (Ben). Remint FIX plates for rough v02. Stadium lock: UK soccer only on 16\u201318. VO-literal only. Flow CDP first; Gemini Veo 3.1 if credits would drop below ~150.",
   "part": "04",
   "title": "The Shell That Bounced Back",
   "vo_file": "02_Voiceover/part04_the_shell_that_bounced_back_v02.txt",
@@ -52,7 +52,9 @@
       "side_label": "MANCHESTER \u00b7 1909",
       "vo_land": "Manchester, nineteen-oh-nine. Ernest Rutherford has a new kind of bullet.",
       "prompt": "Animistry premium 3D cartoon. Manchester 1909 dark scattering lab. Bearded physicist with a big moustache stands at a gold-foil apparatus on a wooden bench \u2014 readable finished face. Continuous soft approach. Silent. No Explorer. No Orbit. No readable fake text.",
-      "prompt_try2": "Same 1909 lab. Wider: apparatus fills frame, physicist soft in background. Continuous soft push. Silent. No Explorer."
+      "prompt_try2": "Same 1909 lab. Wider: apparatus fills frame, physicist soft in background. Continuous soft push. Silent. No Explorer.",
+      "remint_v02": false,
+      "v01_verdict": "KEEP"
     },
     {
       "id": "02_alpha_bullets",
@@ -63,8 +65,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Alpha particles, tiny and fast, thrown out by radioactive rocks.",
-      "prompt": "Same 1909 scattering set. Tiny glowing alpha bullets stream from rough radioactive rock samples toward the apparatus. Continuous stream. Quality clean glow \u2014 no lava drip. Silent. No Explorer. No Orbit.",
-      "prompt_try2": "Same set. ECU: glowing particle trails leave the rock samples. Continuous trails. Quality. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same 1909 dark scattering lab. Rough radioactive rock samples on the bench emit tiny glowing alpha particles that stream toward the foil apparatus \u2014 ONE clear action. Continuous particle stream. Quality clean glow, no lava drip. Silent. No Explorer. No Orbit. No room-wide tube flare.",
+      "prompt_try2": "Same 1909 lab. ECU: rough rock samples; tiny glowing particles leave the rock surface one after another. Continuous leave. Quality. Silent. No Explorer. No multi-lamp flare.",
+      "still_prompt": "Finished 3D cartoon still. 1909 lab bench: rough radioactive rocks emit a thin stream of tiny glowing particles toward a gold-foil frame. One action. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "03_fire_at_gold",
@@ -76,7 +81,9 @@
       "side_label": null,
       "vo_land": "His assistant Hans Geiger and a young student called Ernest Marsden fire them at gold beaten thinner than paper.",
       "prompt": "Same 1909 dark lab. A moustached assistant and a young student fire glowing particles at a paper-thin gold foil in a frame. Continuous fire. Silent. Readable finished faces. No Explorer. No Orbit. No text signs.",
-      "prompt_try2": "Same lab. Side view: foil frame centre, two figures at the source. Continuous soft push. Silent. No Explorer."
+      "prompt_try2": "Same lab. Side view: foil frame centre, two figures at the source. Continuous soft push. Silent. No Explorer.",
+      "remint_v02": false,
+      "v01_verdict": "KEEP"
     },
     {
       "id": "04_thin_gold_foil",
@@ -88,7 +95,9 @@
       "side_label": null,
       "vo_land": "\u2026gold beaten thinner than paper. Picture yourself in that room.",
       "prompt": "Same 1909 set. ECU of paper-thin gold foil held in a brass frame \u2014 light catches the leaf. Continuous gentle shimmer. Silent. No Explorer. No Orbit.",
-      "prompt_try2": "Same set. Hands adjust the foil frame; leaf flutters once. Continuous. Silent. No Explorer."
+      "prompt_try2": "Same set. Hands adjust the foil frame; leaf flutters once. Continuous. Silent. No Explorer.",
+      "remint_v02": false,
+      "v01_verdict": "KEEP"
     },
     {
       "id": "05_lights_off",
@@ -99,8 +108,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Picture yourself in that room. The lights are off,",
-      "prompt": "Same 1909 scattering room. Gas lamps extinguish \u2014 the lab falls into deep darkness with only faint apparatus glints. Continuous darken. Silent. No Explorer. No Orbit.",
-      "prompt_try2": "Same room. Wider dark: benches and foil frame as silhouettes. Continuous fade-to-dark. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same 1909 scattering room. Overhead gas lamps and desk lamps extinguish one after another until the lab is nearly black \u2014 only faint brass glints remain. Continuous darken. Silent. No Explorer. No Orbit. No flames flaring up. No festive multi-lamp flare.",
+      "prompt_try2": "Same 1909 room. Wider: the last lamp dies; deep darkness settles over the foil apparatus. Continuous fade-to-dark. Silent. No Explorer. No fire.",
+      "still_prompt": "Finished 3D cartoon still. 1909 lab mid-darken: lamps going out, deep shadows, foil apparatus faintly visible. No flames. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "06_eyes_adjust_scope",
@@ -111,8 +123,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "and you sit in the dark until your eyes adjust. You look through a microscope at a small screen.",
-      "prompt": "Same dark 1909 room. POV settles toward a microscope eyepiece aimed at a small scintillation screen. Continuous lean-in. Silent. No Explorer. No Orbit.",
-      "prompt_try2": "Same dark room. ECU eyepiece rim; screen soft beyond. Continuous soft push into the eyepiece. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same dark 1909 room. POV leans slowly toward a microscope eyepiece aimed at a small dark scintillation screen \u2014 eyes adjusting, screen still quiet. Continuous lean-in. Silent. No Explorer. No Orbit. No green flashes yet. No multi-lamp flare.",
+      "prompt_try2": "Same dark room. ECU brass eyepiece rim; dark screen soft beyond. Continuous soft push into the eyepiece. Silent. No Explorer. No flashes.",
+      "still_prompt": "Finished 3D cartoon still. Dark 1909 lab: POV into quiet brass microscope eyepiece toward a dark small screen. No green flashes yet. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "07_green_flash_count",
@@ -123,8 +138,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Each time a particle hits it, you see a tiny green flash, and you count it.",
-      "prompt": "Same dark room through the eyepiece. Tiny clean green scintillation flashes appear one by one on the small screen \u2014 count them. Continuous flashes. Quality green glow. Silent. No Explorer. No Orbit. No lava.",
-      "prompt_try2": "Same eyepiece POV. Closer on the screen: sparse green pin-flashes. Continuous count rhythm. Quality. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same dark 1909 room through the eyepiece. On a small dark scintillation screen, tiny clean green pin-flashes appear ONE BY ONE so you can count them \u2014 sparse, not a grid. Continuous sparse flashes. Quality green glow. Silent. No Explorer. No Orbit. No lava. No dense LED grid.",
+      "prompt_try2": "Same eyepiece POV. Closer on the dark screen: a single green pin-flash, then another after a beat. Continuous count rhythm. Quality. Silent. No Explorer.",
+      "still_prompt": "Finished 3D cartoon still. Through brass eyepiece: dark screen with one or two tiny green pin-flashes only. No grid. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "08_pudding_punch",
@@ -135,8 +153,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Now, if Thomson's pudding is right, every bullet should punch straight through.",
-      "prompt": "Same set. Diagram-feel cutaway: glowing bullets punch straight through a soft pudding-like atom model into the foil. Continuous punch-through. Silent. No Explorer. No Orbit. No named labels.",
-      "prompt_try2": "Same idea. Wider: stream of bullets races through a soft sphere toward open space. Continuous race. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Soft plum-pudding atom model (soft cloudy sphere with faint crumbs) \u2014 glowing bullets punch STRAIGHT THROUGH it and keep going. Continuous punch-through. Silent. No Explorer. No Orbit. No space battle. No planets. No fire trails. No city.",
+      "prompt_try2": "Same idea. Side view: stream of glowing bullets races through a soft translucent pudding sphere into empty space beyond. Continuous race. Silent. No Explorer. No cosmic backdrop.",
+      "still_prompt": "Finished 3D cartoon still. Soft cloudy plum-pudding atom sphere; glowing bullets mid-punch straight through. No space battle. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "09_almost_all_pass",
@@ -147,8 +168,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Almost all of them do.",
-      "prompt": "Same 1909 foil set. A dense stream of glowing bullets passes straight through the gold foil \u2014 almost every one. Continuous stream. Silent. No Explorer. No Orbit.",
-      "prompt_try2": "Same foil. Side tracking shot following bullets that keep going. Continuous follow. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same 1909 gold-foil apparatus. A dense stream of tiny glowing particles hits the paper-thin gold foil \u2014 almost every particle passes straight through and continues. Continuous pass-through. Silent. No Explorer. No Orbit. No rockets. No city. No smoke trails. No battle.",
+      "prompt_try2": "Same foil. Side tracking: glowing particles keep going past the foil. Continuous follow. Silent. No Explorer. No steampunk city.",
+      "still_prompt": "Finished 3D cartoon still. 1909 gold foil: glowing particle stream passing straight through the thin leaf. No city. No rockets. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "10_one_bounces",
@@ -159,8 +183,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "But about one in eight thousand bounces back.",
-      "prompt": "Same foil set. Almost all bullets pass; ONE glowing bullet ricochets steeply back toward camera \u2014 surprise. Continuous bounce. Quality glow. Silent. No Explorer. No Orbit.",
-      "prompt_try2": "Same foil. ECU: single bullet hits and reverses hard. Continuous reverse. Quality. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same 1909 gold-foil set. Almost all glowing particles pass through; ONE particle hits and ricochets steeply BACK toward camera \u2014 clear surprise bounce. Continuous bounce. Quality glow. Silent. No Explorer. No Orbit. No city rockets. No chaotic swarm filling the room.",
+      "prompt_try2": "Same foil. ECU: single glowing particle reverses hard off the foil. Continuous reverse. Quality. Silent. No Explorer.",
+      "still_prompt": "Finished 3D cartoon still. Gold foil: one glowing particle mid-bounce back toward camera while others pass through. No city. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "11_shell_tissue",
@@ -171,8 +198,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Rutherford said it was as if you fired a huge shell at a piece of tissue paper,",
-      "prompt": "Animistry premium 3D cartoon. Wonder metaphor (not war gore): a huge artillery shell races toward a sheet of tissue paper. Continuous approach. Silent. No Explorer. No Orbit. No blood.",
-      "prompt_try2": "Same metaphor. Wider: tissue paper fills frame; shell enters from depth. Continuous approach. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Wonder metaphor only (not war gore): a huge brass artillery shell races toward a delicate sheet of tissue paper floating in soft neutral space. Continuous approach. Silent. No Explorer. No Orbit. No blood. No laboratory projector. No seashell. No clocks in space.",
+      "prompt_try2": "Same metaphor. Wider: tissue paper fills frame; huge shell enters from depth toward it. Continuous approach. Silent. No Explorer. No gore.",
+      "still_prompt": "Finished 3D cartoon still. Huge brass artillery shell approaching a thin sheet of tissue paper. Wonder, not gore. No lab. No seashell. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "12_shell_comes_back",
@@ -183,8 +213,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "and it came back and hit you.",
-      "prompt": "Same metaphor set. The huge shell bounces off the tissue and flies back toward camera \u2014 impossible surprise, wonder not gore. Continuous rebound. Silent. No Explorer. No Orbit.",
-      "prompt_try2": "Same metaphor. Side view: shell arcs back after the tissue kiss. Continuous arc. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same shell-vs-tissue metaphor. The huge brass shell kisses the tissue paper and BOUNCES BACK toward camera \u2014 impossible surprise, wonder not gore. Continuous rebound. Silent. No Explorer. No Orbit. No seashell. No blue waves. No clock machines. No outer space scenery.",
+      "prompt_try2": "Same metaphor. Side view: shell arcs back after touching the tissue. Continuous arc. Silent. No Explorer. No clocks. No waves.",
+      "still_prompt": "Finished 3D cartoon still. Huge brass shell mid-rebound away from tissue paper toward camera. No seashell. No clocks. No waves. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "13_mass_packed",
@@ -195,8 +228,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Then, in nineteen-eleven, he explains it. Nearly all of an atom's mass is packed into a tiny, positive centre,",
-      "prompt": "Animistry premium 3D cartoon. Cutaway atom: nearly all mass gathers into a tiny bright positive centre. Continuous pack-in. Quality soft glow. Silent. No Explorer. No Orbit. No DNA helix.",
-      "prompt_try2": "Same cutaway. Camera pushes toward the tiny centre as mass concentrates. Continuous push. Quality. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Atom cutaway on dark void: diffuse mass visibly packs inward into a tiny bright positive centre. Continuous pack-in. Quality soft glow. Silent. No Explorer. No Orbit. No DNA helix. No gauges. No steampunk clutter.",
+      "prompt_try2": "Same cutaway. Camera pushes toward the tiny centre as mass concentrates. Continuous push. Quality. Silent. No DNA. No Explorer.",
+      "still_prompt": "Finished 3D cartoon still. Atom cutaway: mass concentrating into a tiny bright positive centre on dark void. No DNA. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "14_nucleus_electrons",
@@ -208,7 +244,9 @@
       "side_label": null,
       "vo_land": "which he calls the nucleus. The electrons sit far outside it.",
       "prompt": "Same atom cutaway. Tiny glowing nucleus at centre; a few electrons sit far out on distant orbits. Continuous orbit drift. Quality. Silent. No Explorer. No Orbit robot. No DNA.",
-      "prompt_try2": "Same cutaway. Wider empty middle; electrons tiny on the far rim. Continuous slow orbit. Quality. Silent. No Explorer."
+      "prompt_try2": "Same cutaway. Wider empty middle; electrons tiny on the far rim. Continuous slow orbit. Quality. Silent. No Explorer.",
+      "remint_v02": false,
+      "v01_verdict": "KEEP"
     },
     {
       "id": "15_almost_empty",
@@ -219,9 +257,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Everything in between is almost empty. How empty?",
-      "prompt": "Animistry premium 3D cartoon. Atom cutaway: tiny bright centre, distant electron dots on a faint outer rim, vast empty middle as deep navy void with soft vignette. Continuous soft pull-back revealing emptiness. Silent. No Explorer. No Orbit. No DNA helix.",
-      "prompt_try2": "Same cutaway. Extreme wide: centre is a pinprick in black void. Continuous pull-back. Silent. No Explorer.",
-      "still_prompt": "Finished 3D cartoon still. Atom cutaway with a tiny bright nucleus pinprick at centre and two distant electron dots on a faint outer rim \u2014 vast empty middle space visible as deep navy void with soft vignette, not pure black flat. Readable depth, warm edge light on the outer rim. No Explorer. No Orbit. No DNA. No text."
+      "prompt": "Animistry premium 3D cartoon. Atom cutaway: tiny bright centre, two distant electron dots on a faint outer rim, vast empty deep-navy middle with soft vignette. Continuous soft pull-back revealing emptiness. Silent. No Explorer. No Orbit. No DNA. No orrery. No planets. No glass dome machine.",
+      "prompt_try2": "Same cutaway. Extreme wide: centre is a pinprick in empty void; electrons tiny on far rim. Continuous pull-back. Silent. No Explorer. No mechanical solar system.",
+      "still_prompt": "Finished 3D cartoon still. Atom cutaway with tiny centre, distant electrons, vast empty middle. No orrery. No planets. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "16_explorer_stadium_pea",
@@ -232,8 +272,11 @@
       "i2v": false,
       "side_label": "NUCLEUS",
       "vo_land": "Imagine you are standing in the middle of a football stadium holding a pea. If the atom were the whole stadium, the nucleus would be that pea.",
-      "prompt": "Animistry premium 3D cartoon. Giant empty football stadium at dusk. Exactly ONE Explorer on the centre spot holds up a tiny pea, looking up at the far stands. Continuous look-up. Attach Explorer reference. Silent. No Orbit. No twins.",
-      "prompt_try2": "Same empty stadium. Wider: Explorer tiny in the middle holding the pea aloft. Continuous soft orbit around him. Silent. Exactly ONE Explorer."
+      "prompt": "Animistry premium 3D cartoon. empty UK football (soccer) stadium: green pitch with white soccer markings (centre circle, halfway line, penalty box), ONE rectangular soccer goal with white posts and a net at the far end, EMPTY stands with no crowd, warm dusk light. Never American football uprights or yard lines. Never rugby H-posts. Never a different stadium. Exactly ONE Explorer on the centre spot of the pitch holds up a tiny green pea, looking up at the empty stands \u2014 the pea stands for the nucleus. Continuous look-up. Attach Explorer reference. Silent. No Orbit. No twins. No crowd. No American football.",
+      "prompt_try2": "Same empty UK football (soccer) stadium: green pitch with white soccer markings (centre circle, halfway line, penalty box), ONE rectangular soccer goal with white posts and a net at the far end, EMPTY stands with no crowd, warm dusk light. Never American football uprights or yard lines. Never rugby H-posts. Never a different stadium. Wider: Explorer tiny in the middle holding the pea aloft; soccer goal visible in depth. Continuous soft orbit. Silent. Exactly ONE Explorer. No crowd. No yard lines.",
+      "still_prompt": "Finished 3D cartoon still. empty UK football (soccer) stadium: green pitch with white soccer markings (centre circle, halfway line, penalty box), ONE rectangular soccer goal with white posts and a net at the far end, EMPTY stands with no crowd, warm dusk light. Never American football uprights or yard lines. Never rugby H-posts. Never a different stadium. Exactly ONE Explorer (teal coat, round gold glasses, messy brown hair) on centre spot holding a pea. Soccer goal visible. Empty stands. No crowd. No American football. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "17_electrons_past_seats",
@@ -244,8 +287,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "The electrons would be somewhere out past the back row of seats.",
-      "prompt": "Same empty stadium set. Camera lifts past empty back-row seats toward the far rim \u2014 electrons would live out there. Continuous lift. Silent. No Explorer required. No Orbit. No crowd fill.",
-      "prompt_try2": "Same stadium. Tracking along empty seats toward the outer bowl. Continuous track. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same empty UK football (soccer) stadium: green pitch with white soccer markings (centre circle, halfway line, penalty box), ONE rectangular soccer goal with white posts and a net at the far end, EMPTY stands with no crowd, warm dusk light. Never American football uprights or yard lines. Never rugby H-posts. Never a different stadium. Camera lifts from the empty pitch past empty back-row seats toward the far rim \u2014 electrons would live out there. Continuous lift. Silent. No Explorer required. No Orbit. No crowd fill. No American football. No rugby posts.",
+      "prompt_try2": "Same empty UK football (soccer) stadium: green pitch with white soccer markings (centre circle, halfway line, penalty box), ONE rectangular soccer goal with white posts and a net at the far end, EMPTY stands with no crowd, warm dusk light. Never American football uprights or yard lines. Never rugby H-posts. Never a different stadium. Tracking along empty seats toward the outer bowl; soccer goal distant below. Continuous track. Silent. No Explorer. No crowd.",
+      "still_prompt": "Finished 3D cartoon still. Same empty UK football (soccer) stadium: green pitch with white soccer markings (centre circle, halfway line, penalty box), ONE rectangular soccer goal with white posts and a net at the far end, EMPTY stands with no crowd, warm dusk light. Never American football uprights or yard lines. Never rugby H-posts. Never a different stadium. View past empty back-row seats looking out. Soccer goal on pitch below. No crowd. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "18_nothing_at_all",
@@ -256,8 +302,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Everything else, all around you, is nothing at all.",
-      "prompt": "Same empty stadium set. Vast empty pitch and stands \u2014 nothing at all around the centre spot. Continuous slow spin revealing emptiness. Silent. No Explorer. No Orbit. No crowd.",
-      "prompt_try2": "Same stadium. Extreme wide empty bowl under dusk sky. Continuous soft drift. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same empty UK football (soccer) stadium: green pitch with white soccer markings (centre circle, halfway line, penalty box), ONE rectangular soccer goal with white posts and a net at the far end, EMPTY stands with no crowd, warm dusk light. Never American football uprights or yard lines. Never rugby H-posts. Never a different stadium. Vast empty pitch and empty stands \u2014 nothing at all around the centre spot. Continuous slow spin revealing emptiness. Silent. No Explorer. No Orbit. No crowd. No clocks. No steampunk clutter. No American football.",
+      "prompt_try2": "Same empty UK football (soccer) stadium: green pitch with white soccer markings (centre circle, halfway line, penalty box), ONE rectangular soccer goal with white posts and a net at the far end, EMPTY stands with no crowd, warm dusk light. Never American football uprights or yard lines. Never rugby H-posts. Never a different stadium. Extreme wide empty bowl under dusk sky; soccer goal tiny in depth. Continuous soft drift. Silent. No Explorer. No crowd.",
+      "still_prompt": "Finished 3D cartoon still. Same empty UK football (soccer) stadium: green pitch with white soccer markings (centre circle, halfway line, penalty box), ONE rectangular soccer goal with white posts and a net at the far end, EMPTY stands with no crowd, warm dusk light. Never American football uprights or yard lines. Never rugby H-posts. Never a different stadium. Wide empty pitch and empty stands. Soccer goal. Nothing else. No crowd. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "19_nucleus_question",
@@ -268,8 +317,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "That raised a new question. If every element has its own nucleus, what makes one nucleus different from another?",
-      "prompt": "Animistry premium 3D cartoon. Two tiny glowing nuclei side by side \u2014 same size, different soft charge colour \u2014 question mood. Continuous soft compare drift. Silent. No Explorer. No Orbit. No text signs.",
-      "prompt_try2": "Same idea. Wider: several nuclei floating; camera picks two. Continuous drift. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Two tiny glowing nuclei side by side \u2014 same size, different soft charge colours (warm gold vs cool blue) \u2014 question mood. Continuous soft compare drift. Silent. No Explorer. No Orbit. No text. No letters on atoms. No fake element symbols. No jar labels.",
+      "prompt_try2": "Same idea. Wider: two bare nuclei floating; camera picks between them. Continuous drift. Silent. No Explorer. No readable symbols.",
+      "still_prompt": "Finished 3D cartoon still. Two bare glowing nuclei, different soft colours, no letters. No text. No Explorer.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "20_lawyer_amateur",
@@ -280,8 +332,11 @@
       "i2v": false,
       "side_label": "CHARGE?",
       "vo_land": "A Dutch lawyer and amateur scientist, Antonius van den Broek, had a bold guess:",
-      "prompt": "Animistry premium 3D cartoon. 1910s study desk. A Dutch lawyer-amateur scientist (readable finished face, period suit, no powdered wig) studies a blank periodic-table board beside a glowing nucleus sketch. Continuous lean-in. Silent. No Explorer. No Orbit. No garbled letters \u2014 blank board only.",
-      "prompt_try2": "Same study. ECU: hands hover over blank table board and nucleus sketch. Continuous hover. Silent. No Explorer. No fake text."
+      "prompt": "Animistry premium 3D cartoon. 1910s study desk. A Dutch lawyer-amateur scientist (readable finished face, period suit, no powdered wig) studies a completely BLANK periodic-table board on an easel beside a glowing nucleus sketch. Continuous lean-in. Silent. No Explorer. No Orbit. No garbled letters. No fake element tiles. Blank board only.",
+      "prompt_try2": "Same study. ECU: hands hover over blank table board and nucleus sketch. Continuous hover. Silent. No Explorer. No fake text.",
+      "still_prompt": "Finished 3D cartoon still. 1910s study: lawyer-amateur at blank table board + nucleus sketch. No fake element letters. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "21_place_equals_charge",
@@ -292,8 +347,11 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "An element's place in the table might equal the positive charge in its nucleus.",
-      "prompt": "Same study desk idea. A blank table place marker links by a soft glow-line to a tiny positive charge inside a nucleus \u2014 guess, not proof. Continuous glow connect. Quality. Silent. No Explorer. No Orbit. No fake element letters.",
-      "prompt_try2": "Same idea. Closer on the glowing positive centre tied to a blank place slot. Continuous pulse. Quality. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same study desk idea. A blank empty place slot on a blank table board links by a soft glow-line to a tiny positive charge inside a nucleus \u2014 guess, not proof. Continuous glow connect. Quality. Silent. No Explorer. No Orbit. No fake letters. No embossed gibberish. No multi-machine flare.",
+      "prompt_try2": "Same idea. Closer on the glowing positive centre tied to a blank place slot. Continuous pulse. Quality. Silent. No Explorer. No text.",
+      "still_prompt": "Finished 3D cartoon still. Blank place slot glow-linked to tiny positive nucleus charge. No text. No Explorer.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     },
     {
       "id": "22_cannot_measure_yet",
@@ -304,8 +362,12 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "It was a brilliant guess, but nobody could measure it. Yet.",
-      "prompt": "Same study set. The glow-link dims; measuring instruments sit unused on the desk \u2014 the guess hangs unanswered. Continuous soft settle-with-motion. Silent. No Explorer. No Orbit. No Ken Burns-only still.",
-      "prompt_try2": "Same desk. Wider: unanswered glow fades while camera drifts. Continuous drift. Silent. No Explorer."
+      "prompt": "Animistry premium 3D cartoon. Same study set. The glow-link dims; unused measuring instruments sit quiet on the desk \u2014 the guess hangs unanswered. Continuous soft settle-with-motion. Silent. No Explorer. No Orbit. No Ken Burns-only still. No busy multi-lamp flare. One quiet unanswered mood.",
+      "prompt_try2": "Same desk. Wider: unanswered glow fades while camera drifts past unused instruments. Continuous drift. Silent. No Explorer.",
+      "still_prompt": "Finished 3D cartoon still. Study desk: unused instruments, dim unanswered glow. Quiet. No Explorer. No text.",
+      "remint_v02": true,
+      "v01_verdict": "FIX"
     }
-  ]
+  ],
+  "v01_audit": "07_Edit-Project/PART04_V01_AUDIT.md"
 }

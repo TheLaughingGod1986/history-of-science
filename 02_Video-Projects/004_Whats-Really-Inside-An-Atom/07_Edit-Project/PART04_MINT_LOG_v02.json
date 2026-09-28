@@ -1,0 +1,225 @@
+{
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "part": "04",
+  "status": "REMINT_V02_SEEDED",
+  "parent_rough": "hos_004_part04_rough_v01.mp4",
+  "audit": "PART04_V01_AUDIT.md",
+  "vo_status": "KEEP (v04)",
+  "credit_fallback": {
+    "buffer": 150,
+    "fast_est": 20,
+    "quality_est": 100,
+    "gemini_fast": "veo-3.1-lite-generate-preview",
+    "gemini_quality": "veo-3.1-generate-preview",
+    "rule": "if flow_credits - next_cost < 150 \u2192 gemini-api same Veo 3.1"
+  },
+  "credits_before_mint": 162,
+  "plates": {
+    "01_manchester_1909": {
+      "id": "01_manchester_1909",
+      "status": "KEEP",
+      "v01_verdict": "KEEP",
+      "keep": {
+        "file": "01_manchester_1909_v01.mp4",
+        "sha256": "2e63f68807ccfcde9617b7bae20a2192a9da9b3959851762f7a3d50ee491a093",
+        "try": 1,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-ui Veo 3.1 scenery_only (CDP)",
+        "path": "flow-cdp",
+        "credits_used": null,
+        "credits_remaining": null,
+        "carried_from": "v01"
+      },
+      "tries": [],
+      "try_detail": [],
+      "note": "carried from v01 PASS plate"
+    },
+    "02_alpha_bullets": {
+      "id": "02_alpha_bullets",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "03_fire_at_gold": {
+      "id": "03_fire_at_gold",
+      "status": "KEEP",
+      "v01_verdict": "KEEP",
+      "keep": {
+        "file": "03_fire_at_gold_v01.mp4",
+        "sha256": "d64e1b33fd9339cb7635610a52dffa11b7dc1bbacc3713a958e0d1869434cdba",
+        "try": 1,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-ui Veo 3.1 scenery_only (CDP)",
+        "path": "flow-cdp",
+        "credits_used": null,
+        "credits_remaining": null,
+        "carried_from": "v01"
+      },
+      "tries": [],
+      "try_detail": [],
+      "note": "carried from v01 PASS plate"
+    },
+    "04_thin_gold_foil": {
+      "id": "04_thin_gold_foil",
+      "status": "KEEP",
+      "v01_verdict": "KEEP",
+      "keep": {
+        "file": "04_thin_gold_foil_v01.mp4",
+        "sha256": "d5414eb87b5bbd7e00e0bb74fa4ec4b748cd3b28bb7425c74906788a9295f8d5",
+        "try": 1,
+        "model": "Veo 3.1 - Fast",
+        "quality_or_fast": "Fast",
+        "engine": "flow-ui Veo 3.1 scenery_only (CDP)",
+        "path": "flow-cdp",
+        "credits_used": null,
+        "credits_remaining": null,
+        "carried_from": "v01"
+      },
+      "tries": [],
+      "try_detail": [],
+      "note": "carried from v01 PASS plate"
+    },
+    "05_lights_off": {
+      "id": "05_lights_off",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "06_eyes_adjust_scope": {
+      "id": "06_eyes_adjust_scope",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "07_green_flash_count": {
+      "id": "07_green_flash_count",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "08_pudding_punch": {
+      "id": "08_pudding_punch",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "09_almost_all_pass": {
+      "id": "09_almost_all_pass",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "10_one_bounces": {
+      "id": "10_one_bounces",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "11_shell_tissue": {
+      "id": "11_shell_tissue",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "12_shell_comes_back": {
+      "id": "12_shell_comes_back",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "13_mass_packed": {
+      "id": "13_mass_packed",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "14_nucleus_electrons": {
+      "id": "14_nucleus_electrons",
+      "status": "KEEP",
+      "v01_verdict": "KEEP",
+      "keep": {
+        "file": "14_nucleus_electrons_v01.mp4",
+        "sha256": "6adae499e687d7cb8a085c8944feb71a5a6123e79f1c3eebed5189137b681b06",
+        "try": 1,
+        "model": "Veo 3.1 - Quality",
+        "quality_or_fast": "Quality",
+        "engine": "flow-ui Veo 3.1 scenery_only (CDP)",
+        "path": "flow-cdp",
+        "credits_used": null,
+        "credits_remaining": null,
+        "carried_from": "v01"
+      },
+      "tries": [],
+      "try_detail": [],
+      "note": "carried from v01 PASS plate"
+    },
+    "15_almost_empty": {
+      "id": "15_almost_empty",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "16_explorer_stadium_pea": {
+      "id": "16_explorer_stadium_pea",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "17_electrons_past_seats": {
+      "id": "17_electrons_past_seats",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "18_nothing_at_all": {
+      "id": "18_nothing_at_all",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "19_nucleus_question": {
+      "id": "19_nucleus_question",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "20_lawyer_amateur": {
+      "id": "20_lawyer_amateur",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "21_place_equals_charge": {
+      "id": "21_place_equals_charge",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    },
+    "22_cannot_measure_yet": {
+      "id": "22_cannot_measure_yet",
+      "status": "PENDING_REMINT",
+      "tries": [],
+      "try_detail": [],
+      "v01_verdict": "FIX"
+    }
+  }
+}
