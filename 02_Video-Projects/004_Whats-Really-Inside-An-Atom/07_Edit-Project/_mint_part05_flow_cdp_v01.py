@@ -311,14 +311,22 @@ def assert_gate(page) -> dict:
         raise SystemExit(f"STOP forbidden account: {active}")
     if credits is None:
         raise SystemExit(f"STOP credits unreadable shot={shot}")
-    if credits == 0 or credits < 100:
-        raise SystemExit(f"STOP low/zero credits={credits} shot={shot}")
+    # Low Flow credits are OK when Gemini Veo 3.1 fallback is available.
+    # Still require a signed-in Ultra account for the gate; mint will use Gemini.
+    if credits == 0:
+        print(f"GATE WARN Flow credits=0 — will use Gemini Veo 3.1 API only", flush=True)
+    elif credits < FLOW_CREDIT_BUFFER:
+        print(
+            f"GATE WARN Flow credits={credits} < buffer={FLOW_CREDIT_BUFFER} — Gemini Veo 3.1 primary",
+            flush=True,
+        )
     info = {
         "account": active,
         "credits": credits,
         "ultra": "ultra" in low,
         "shot": str(shot),
         "url": page.url,
+        "force_gemini": bool(credits < FLOW_CREDIT_BUFFER),
     }
     print(f"GATE PASS account={active} credits={credits}", flush=True)
     return info
@@ -693,18 +701,35 @@ def mint_one_gemini(client, plate: dict, try_n: int, credits_before: int | None)
         aspect_ratio="16:9",
         resolution="720p",
     )
-    op = client.models.generate_videos(
-        model=model,
-        prompt=prompt,
-        image=types.Image.from_file(location=str(still)),
-        config=config,
-    )
-    while not op.done:
-        time.sleep(12)
-        op = client.operations.get(op)
-        print(f"  gemini poll {pid} … {int(time.time() - t0)}s", flush=True)
-    if getattr(op, "error", None):
-        raise RuntimeError(op.error)
+    op = None
+    last_err = None
+    for attempt in range(1, 4):
+        try:
+            op = client.models.generate_videos(
+                model=model,
+                prompt=prompt,
+                image=types.Image.from_file(location=str(still)),
+                config=config,
+            )
+            while not op.done:
+                time.sleep(12)
+                op = client.operations.get(op)
+                print(f"  gemini poll {pid} … {int(time.time() - t0)}s", flush=True)
+            if getattr(op, "error", None):
+                raise RuntimeError(op.error)
+            last_err = None
+            break
+        except Exception as e:
+            last_err = e
+            msg = str(e)
+            if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                wait_s = 90 * attempt
+                print(f"  gemini 429 — sleep {wait_s}s then retry ({attempt}/3)", flush=True)
+                time.sleep(wait_s)
+                continue
+            raise
+    if last_err is not None or op is None:
+        raise last_err or RuntimeError("gemini failed")
     resp = getattr(op, "response", None) or getattr(op, "result", None)
     videos = getattr(resp, "generated_videos", None) if resp else None
     if not videos:
@@ -843,6 +868,12 @@ def main() -> None:
         save_log(log)
 
         credits_cursor = gate["credits"]
+        use_gemini_rest = bool(gate.get("force_gemini"))
+        if use_gemini_rest:
+            print(
+                f"Gemini primary from gate (Flow credits={credits_cursor} < buffer={FLOW_CREDIT_BUFFER})",
+                flush=True,
+            )
         first_keep_seen = any(
             (log.get("plates", {}).get(pl["id"], {}).get("status") == "KEEP")
             for pl in board["plates"]

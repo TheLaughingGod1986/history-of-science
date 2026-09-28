@@ -194,3 +194,11 @@ Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · `part01_rough_v04_lan
 - iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part04_rough_v02.mp4`
 - Land PR #154. Next: Part 05.
 
+## Part 05 — mint blocked (28 Sep 2026)
+
+- Pre-mint VO audit: `PART05_PRE_MINT_AUDIT.md` · board `part-05_plates_v02.json` (27 Veo @ ~5.2s + end card)
+- Stills ready under `04_Generated-Clips/part05/refs/v01_stills/`
+- **Mint blocked:** Flow credits **92** (<150 buffer) · Gemini API **429 RESOURCE_EXHAUSTED**
+- No Ken Burns / stills ship. Wait for Flow reset or Gemini quota, then mint → assemble `hos_004_part05_rough_v01.mp4`
+- PR #155 open for Part 05 tooling + audit. **STOP for Ben** on picture mint.
+

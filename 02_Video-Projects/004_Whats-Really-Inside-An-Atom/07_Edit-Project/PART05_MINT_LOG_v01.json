@@ -1,0 +1,18 @@
+{
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "part": "05",
+  "status": "MINT_BLOCKED_CREDITS",
+  "at": "2026-09-28T14:50:46.345354+00:00",
+  "credits_before_mint": 92,
+  "flow_account": "benoats@googlemail.com",
+  "block": {
+    "flow_credits": 92,
+    "buffer": 150,
+    "gemini": "429 RESOURCE_EXHAUSTED after retries",
+    "note": "Cannot mint without breaching Flow ~150 buffer; Gemini quota not reset. Board+audit+stills ready."
+  },
+  "board": "parts/part-05_plates_v02.json",
+  "audit": "PART05_PRE_MINT_AUDIT.md",
+  "stills": "04_Generated-Clips/part05/refs/v01_stills (27)",
+  "plates_ready": 27
+}
