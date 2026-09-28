@@ -173,12 +173,17 @@ def load_gemini_client():
 
 def load_log() -> dict:
     if LOG.exists():
-        return json.loads(LOG.read_text())
-    return {
-        "film": "004_Whats-Really-Inside-An-Atom",
-        "part": "04",
-        "plates": {},
-    }
+        data = json.loads(LOG.read_text())
+    else:
+        data = {}
+    data.setdefault("film", "004_Whats-Really-Inside-An-Atom")
+    data.setdefault("part", "05")
+    data.setdefault("plates", {})
+    # Drop prior MINT_BLOCKED shell so a fresh waive run can proceed
+    if data.get("status") == "MINT_BLOCKED_CREDITS":
+        data["status"] = "FLOW_CDP_MINT_IN_PROGRESS"
+        data.pop("block", None)
+    return data
 
 
 def save_log(log: dict) -> None:
