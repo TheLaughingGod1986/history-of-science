@@ -1,0 +1,20 @@
+HOS 004 full join v03 — UAT (mix restore)
+
+Cut: hos_004_full_join_v03.mp4
+sha256: f88cb9d47e910425519a40a6af7649626c47afbcdddf1f0f3293564c59f65244
+Duration: 524.700 s
+Same picture/cards/seams/end as v02. Only fix: amix normalize=0 (v02 halved VO+bed).
+
+Levels:
+  full vo_check: mean -23.7 dB · peak -3.7 dB (peak OK ≤ -1)
+  film 0:00–8:20.69 (t=500.69): mean -23.5 dB · max -3.7 dB
+
+Word flags (full):
+  FAIL ~6:07.34 a living → the living
+  FAIL ~6:31.88 sort → sought
+  (v02 wrong→rock at ~3:59 is GONE on v03)
+
+wrong window: Ben 3:55–4:03 ends at "pudding"; "wrong" lands ~4:05.64.
+Wider STT: both v03 and Part 03 rough hear "wrong" (not rock).
+
+NOT KEEP/LOCKED. No upload. STOP for Ben.

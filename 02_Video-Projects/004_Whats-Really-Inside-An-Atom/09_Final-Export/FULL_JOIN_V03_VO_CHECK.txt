@@ -1,0 +1,9 @@
+FAIL  hos_004_full_join_v03_audio.wav  8:44.70  mean -23.7 dB  peak -3.7 dB  147 wpm
+   first minute: title_question 8.66s  promise 11.36s  stakes 17.98s
+   FAIL  replace at ~6:07.34: script 'the bones in a living hand moseley' / heard 'the bones in the living hand moseley' — listen, then regenerate that sentence alone if real
+   FAIL  replace at ~6:31.88: script 'was right now sort the table by' / heard 'was right now sought the table by' — listen, then regenerate that sentence alone if real
+   warn  silence 21.0s at 8:23.70 (part join?)
+   warn  replace at ~2:37.54: script 'what is cambridge j j thomson is studying' / heard 'what is cambridge jj thomson is studying' — sounds alike (likely the transcriber); listen
+   warn  replace at ~6:04.66: script 'same invisible light rontgen used to see' / heard 'same invisible light runtgen used to see' — sounds alike (likely the transcriber); listen
+   warn  replace at ~7:23.20: script 'years later in moseley was killed in' / heard 'years later in mosley was killed in' — sounds alike (likely the transcriber); listen
+   warn  replace at ~7:45.58: script 'tiny centre and moseley counted it every' / heard 'tiny centre and mosley counted it every' — sounds alike (likely the transcriber); listen
