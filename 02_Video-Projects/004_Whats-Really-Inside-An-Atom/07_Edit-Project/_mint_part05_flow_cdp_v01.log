@@ -346,3 +346,69 @@ Gemini client ready (key from .env)
 STOP Gemini 429 after 3 attempts at 08_ladder_pattern (Flow=12)
 EXACT_ERROR: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}
 STOP Gemini 429 at 08_ladder_pattern: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}
+
+===== GEMINI RESUME FROM 08 2026-09-29T07:40:49Z =====
+  dismissed banner via 'Agree'
+GATE PASS account=benoats@googlemail.com credits=12
+BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=12
+SKIP 01_manchester_1913 already KEEP 01_manchester_1913_v01.mp4
+SKIP 02_train_in_tube already KEEP 02_train_in_tube_v01.mp4
+SKIP 03_targets_swap already KEEP 03_targets_swap_v01.mp4
+SKIP 04_electrons_fire already KEEP 04_electrons_fire_v01.mp4
+SKIP 05_xrays_from_metal already KEEP 05_xrays_from_metal_v01.mp4
+SKIP 06_rontgen_hand already KEEP 06_rontgen_hand_v01.mp4
+SKIP 07_crystal_split already KEEP 07_crystal_split_v01.mp4
+BATCH continue → 08_ladder_pattern
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Gemini client ready (key from .env)
+  Gemini probe first for 08_ladder_pattern try=1…
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_mint_part05_flow_cdp_v01.py:814: DeprecationWarning: The generate_videos method with prompt/image/video arguments is deprecated and will be removed in a future major release (not before 2026-07-31). Please use the source argument instead.
+  op = client.models.generate_videos(
+  gemini poll 08_ladder_pattern … 13s
+  gemini poll 08_ladder_pattern … 25s
+  gemini poll 08_ladder_pattern … 37s
+  gemini poll 08_ladder_pattern … 50s
+  gemini poll 08_ladder_pattern … 62s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=8a4d0f683c27
+  KEEP 08_ladder_pattern → 08_ladder_pattern_v01.mp4 path=gemini-api
+SKIP 09_one_rung_each already KEEP 09_one_rung_each_v01.mp4
+BATCH continue → 10_count_rungs
+  Gemini probe first for 10_count_rungs try=1…
+
+=== MINT 10_count_rungs try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 10_count_rungs … 13s
+  gemini poll 10_count_rungs … 25s
+  gemini poll 10_count_rungs … 38s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=ff052cdd1073
+  KEEP 10_count_rungs → 10_count_rungs_v01.mp4 path=gemini-api
+BATCH continue → 11_charge_nucleus
+  Gemini probe first for 11_charge_nucleus try=1…
+
+=== MINT 11_charge_nucleus try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 11_charge_nucleus … 13s
+  gemini poll 11_charge_nucleus … 26s
+  gemini poll 11_charge_nucleus … 38s
+  gemini poll 11_charge_nucleus … 50s
+  gemini poll 11_charge_nucleus … 62s
+  gemini poll 11_charge_nucleus … 75s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=d0c19f2208d0
+  KEEP 11_charge_nucleus → 11_charge_nucleus_v01.mp4 path=gemini-api
+BATCH continue → 12_sort_table
+  Gemini probe first for 12_sort_table try=1…
+
+=== MINT 12_sort_table try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 12_sort_table … 13s
+  gemini poll 12_sort_table … 25s
+  gemini poll 12_sort_table … 38s
+  gemini poll 12_sort_table … 50s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=589a7d8bbd17
+  KEEP 12_sort_table → 12_sort_table_v01.mp4 path=gemini-api
+BATCH continue → 13_te_i
+  Gemini probe first for 13_te_i try=1…
+
+=== MINT 13_te_i try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 13_te_i … 13s
+  gemini poll 13_te_i … 25s
+  gemini poll 13_te_i … 38s
