@@ -1,0 +1,50 @@
+{
+  "at": "2026-09-29T19:22:45",
+  "videoId": "GHZDsiH7L7A",
+  "channel_ok": true,
+  "desc_empty_before": false,
+  "desc_via": "DIV:tell viewers about your video (type @ to",
+  "thumbA": true,
+  "saved_details": true,
+  "desc_restored": true,
+  "slots": {
+    "u2": null,
+    "t2": {
+      "ok": false,
+      "count": 0
+    },
+    "u3": null,
+    "t3": {
+      "ok": false,
+      "count": 0
+    }
+  },
+  "needs": true,
+  "set_enabled": false,
+  "ab_running": false,
+  "ab_still_required": true,
+  "template_click": {
+    "w": 960,
+    "h": 533,
+    "y": 108,
+    "t": "Element Import from video 1 video, 1 sub"
+  },
+  "end_saved": true,
+  "end": {
+    "has_002": true,
+    "has_subscribe": true,
+    "error": false,
+    "best_for_viewer": false,
+    "most_recent": true
+  },
+  "desc_final": true,
+  "title_final": true,
+  "schedule": {
+    "err": "TimeoutError"
+  },
+  "pin": {
+    "ok": false,
+    "reason": "watch_page_not_commentable_while_scheduled_or_private",
+    "note": "Pin on launch day 15 Oct 2026"
+  }
+}
