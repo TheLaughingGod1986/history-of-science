@@ -1,0 +1,150 @@
+{
+  "status": "PRE-MUSIC-PASS",
+  "commandAttempted": "npm run youtube:package -- --package …/11_Upload-Package --video …/hos_004_full_v02.mp4 --dry-run",
+  "npmBlockedReason": "07_Content-Ops/.env absent on this machine (DATABASE_URL). Package resolved locally via loadYouTubePackage — no upload, no API, secrets not printed.",
+  "dryRun": true,
+  "upload": false,
+  "premiere": false,
+  "channel": "@HistoryOfScienceYT",
+  "scheduledAt": "2026-10-15T17:00:00.000Z",
+  "scheduleISO": "2026-10-15T17:00:00.000Z",
+  "privacy": "private",
+  "madeForKids": false,
+  "title": "What's Really Inside an Atom?",
+  "titleAbc": [
+    "What's Really Inside an Atom?",
+    "Why Is the Periodic Table in This Order?",
+    "How Small Can You Cut Gold?"
+  ],
+  "thumbnailPath": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
+  "thumbnailAbc": [
+    "hos_004_thumb_A_atom_live_v04.jpg",
+    "hos_004_thumb_C_hidden_number_live_v05.jpg",
+    "hos_004_thumb_B_cut_gold_live_v04.jpg"
+  ],
+  "relatedVideoId": "AL_-qlWko_g",
+  "endScreen": "Studio: 002 How Did We Discover the Periodic Table? (AL_-qlWko_g) + Subscribe",
+  "videoPath": "hos_004_full_v02.mp4",
+  "videoSha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
+  "videoBytes": 417817365,
+  "descriptionFirst100": "What's really inside an atom, and why is the periodic table in this order? Four discoveries, one cen",
+  "descriptionKeywordGate": {
+    "inside an atom": true,
+    "periodic table": true,
+    "order": true
+  },
+  "description": "What's really inside an atom, and why is the periodic table in this order? Four discoveries, one century — from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element — and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\nChapters\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays",
+  "pinnedComment": "What's really inside an atom — and why is the periodic table in this order?",
+  "tagsCount": 28,
+  "tags": [
+    "what's really inside an atom",
+    "what is inside an atom",
+    "why is the periodic table in this order",
+    "periodic table order",
+    "atomic number",
+    "henry moseley",
+    "rutherford gold foil experiment",
+    "jj thomson electron",
+    "john dalton atomic theory",
+    "how small can you cut gold",
+    "atoms are mostly empty space",
+    "tellurium iodine",
+    "atomic number discovery",
+    "history of the atom",
+    "moseley x-rays",
+    "history of science",
+    "history of chemistry",
+    "periodic table explained",
+    "nucleus discovery",
+    "electron discovery",
+    "dalton atomic weight",
+    "mendeleev periodic table",
+    "science documentary",
+    "chemistry history",
+    "atomic structure history",
+    "gold foil experiment",
+    "counting with x-rays",
+    "history of science youtube"
+  ],
+  "studioFinish": {
+    "videoId": null,
+    "studioEditUrl": null,
+    "items": [
+      {
+        "id": "api_metadata",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Title · description · tags · schedule · video",
+        "detail": "Run package upload first"
+      },
+      {
+        "id": "primary_thumbnail",
+        "required": true,
+        "status": "api_done",
+        "title": "Primary thumbnail",
+        "detail": "Set via thumbnails.set"
+      },
+      {
+        "id": "title_thumb_abc",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Title + thumbnail ABC (Test & Compare)",
+        "detail": "Studio A/B Testing — titles (3) · thumbs (3). Not available via Data API."
+      },
+      {
+        "id": "first_comment",
+        "required": true,
+        "status": "pending_studio",
+        "title": "First / pinned comment text",
+        "detail": "Post + pin in Studio Comments (API post failed or scope missing)"
+      },
+      {
+        "id": "pin_comment",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Pin the comment",
+        "detail": "Studio only — no official Data API pin endpoint"
+      },
+      {
+        "id": "related_watch_next",
+        "required": false,
+        "status": "n/a",
+        "title": "Related / watch next (full film)",
+        "detail": "Set Related video to AL_-qlWko_g in Studio (Shorts)"
+      },
+      {
+        "id": "end_screens_cards",
+        "required": true,
+        "status": "pending_studio",
+        "title": "End screen + cards",
+        "detail": "Studio only — subscribe + best next video"
+      },
+      {
+        "id": "playlist",
+        "required": false,
+        "status": "n/a",
+        "title": "Add to playlist",
+        "detail": "No playlistId in manifest"
+      }
+    ],
+    "summary": "Package resolved; upload not run yet."
+  },
+  "testAndCompare": [
+    {
+      "slot": 1,
+      "title": "What's Really Inside an Atom?",
+      "thumb": "A atom v04"
+    },
+    {
+      "slot": 2,
+      "title": "Why Is the Periodic Table in This Order?",
+      "thumb": "C hidden number v05"
+    },
+    {
+      "slot": 3,
+      "title": "How Small Can You Cut Gold?",
+      "thumb": "B cut gold v04"
+    }
+  ],
+  "musicGate": "full_v02 NOT KEEP — Ben must pass music before live upload"
+}
