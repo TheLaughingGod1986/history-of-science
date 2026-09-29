@@ -13,7 +13,7 @@
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
 | Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–04 `mint: false` (04 rough v01 pending Ben) · 05 `mint: false` · Explorer used ×2 (P02 + P04 stadium pea); remaining P05 · no Explorer in Part 03 |
-| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”) · **Part 03 rough v01 PASS** (Ben: “fine”). **Part 04 rough v02 PASS** (Ben 28 Sep). **Part 05 rough v03 PASS** (Ben 29 Sep). Full join next. |
+| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”) · **Part 03 rough v01 PASS** (Ben: “fine”). **Part 04 rough v02 PASS** (Ben 28 Sep). **Part 05 rough v03 PASS** (Ben 29 Sep). **Full join v02 UAT** (Ben OVERRIDE — cards kept; STOP for continuous watch). |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
@@ -54,7 +54,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | **22** (4–6 s splits) | false (rough v01) |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Ben UAT on `hos_004_full_join_v02` (v01 FAIL — abrupt seams + bridge text). Do not label KEEP/LOCKED.
+**Next:** Ben continuous UAT on override `hos_004_full_join_v02` (sha `02cf4a10…`). Do not label KEEP/LOCKED.
 
 ---
 
@@ -223,15 +223,21 @@ Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · `part01_rough_v04_lan
 - Builder: `07_Edit-Project/_join_hos_004_full_v01.py` · notes `09_Final-Export/FULL_JOIN_V01_NOTES.md`
 - Do **not** label KEEP/LOCKED. No remint. **STOP for Ben.**
 
-## Full join v02 (29 Sep 2026) — STOP for Ben
+## Full join v02 (29 Sep 2026) — Ben OVERRIDE · STOP for Ben
 
-Supersedes v01 (Ben FAIL: abrupt seams + on-screen “BRIDGES TO PART 02 / CHAPTER CARD” at ~1:09).
+Supersedes v01 FAIL and the discarded continuous-bed/J-cut v02 (`b20ac5a4…`).
 
 - **Cut:** `hos_004_full_join_v02.mp4`
-- **sha256:** `b20ac5a4ae8941884383fba4df50403c6718d24b742abc8ab81f8333ea6791da`
-- **Duration:** 522.067 s (8:42.07) · A/V delta **0.0**
-- **Fixes:** P01 bridge text plate removed · no chapter cards · VO gap ~0.45 s · continuous TEMP bed · J-cut (VO leads 0.5 s) + 0.5 s dissolve · cream then 20 s Studio hold
-- **Seams:** 01→02 VO **1:10.25** / dissolve **1:10.77** · 02→03 VO **2:41.83** / dissolve **2:42.87** · 03→04 VO **4:06.01** / dissolve **4:07.57** · 04→05 VO **5:55.47** / dissolve **5:57.53**
-- **Cream:** **8:18.03** · **20 s hold from 8:22.07**
-- **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v02.mp4`
-- Do **not** label KEEP/LOCKED. **STOP for Ben.**
+- **sha256:** `02cf4a107caff44f08093a4231ef9dacafdde868483680df3bdc28ad8194b90a`
+- **Duration:** **524.700 s** (8:44.70) · A/V delta **0.000** s (≤0.033)
+- **OVERRIDE:** KEEP chapter cards (real titles) · TEMP bed **per part** · **no** continuous bed · **no** J-cut · picture xfade **0.40 s** · cream **after** last VO word (4 s, bed fades) then **20 s** quiet Studio hold
+- **P01:** bridge text plate cut @ 68.480 s
+- **P05:** cream-out from 140.50 replaced; story+VO through last word (~144.5) · land meta `parent_part04` = `hos_004_part04_rough_v02.mp4`
+- **Chapter cards (~1.5 s):** card02 **1:09.43** *The Table That Broke Its Own Rule* · card03 **2:41.31** *The Crumb Inside the Atom* · card04 **4:05.74** *The Shell That Bounced Back* · card05 **5:55.48** *Counting With X-rays*
+- **Part starts:** p02 **1:10.53** · p03 **2:42.41** · p04 **4:06.84** · p05 **5:56.58**
+- **Seams (xfade 0.40):** p01→card02 **69.433** · p02→card03 **161.311** · p03→card04 **245.744** · p04→card05 **355.478** · p05→cream4 **500.694**
+- **Cream 4 s @ 8:20.69** · **Studio hold from 8:24.70** · out **8:44.70**
+- **vo_check** (full audio vs `atom_script_master_v02.md`): speech-mean FAIL (−29.7 dB from quiet hold); word FAILs at ~3:59.50 / ~6:07.36 / ~6:31.88 are **not** within ±1 s of seams 69.4 / 160.2 / 243.6 / 352.2 → no VO butt rebuild. Known VO v04 KEEP transcriber misses.
+- **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v02.mp4` (+ `WATCH_full_join_v02.txt`)
+- Builder: `07_Edit-Project/_join_hos_004_full_v02.py` · notes `09_Final-Export/FULL_JOIN_V02_NOTES.md`
+- Do **not** label KEEP/LOCKED. No upload. **STOP for Ben** continuous playback.
