@@ -1,0 +1,54 @@
+{
+  "id": "s02_every_eighth",
+  "version": "v06",
+  "air_date": "2026-10-18",
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s02_every_eighth_punch_v06.mp4",
+  "sha256": "0321e6c0ab8ce45668e907ca975b07f005989bb6591933e2092876b69e2a001d",
+  "duration_s": 26.4,
+  "vo_duration_s": 22.397,
+  "story_s": 22.397,
+  "loop_s": 4.0,
+  "fps": 30,
+  "parent": "How Did We Discover the Periodic Table?",
+  "hook": "EVERY EIGHTH?",
+  "caption_chunks": 18,
+  "caption_check": {
+    "ok": true,
+    "unique_vo_captions_in_0p5_samples": 18,
+    "text_changes": 18,
+    "crop_change_ratio": 1.0,
+    "sheet": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/_work_v06/s02_every_eighth/hos_004_s02_every_eighth_punch_v06_caption_sheet.jpg"
+  },
+  "gate": {
+    "pass": true
+  },
+  "smooth": {
+    "ok": true,
+    "open_mean_0_2p5": 2.937,
+    "still_plate": {
+      "ok": true,
+      "mean": 2.12,
+      "sd": 0.552,
+      "cv": 0.26,
+      "near_zero_frac": 0.0,
+      "d2_mean": 0.626,
+      "d2_max": 1.944,
+      "wobble_fail": false,
+      "frozen_fail": false,
+      "vf": "scale=1920:1080:flags=lanczos,scale=w='1920*(1+0.07000*(n/90.000))':h='1080*(1+0.07000*(n/90.000))':eval=frame:flags=lanczos,crop=608:1080:'(iw-608)/2+(0.00)':0,scale=1080:1920:flags=lanczos,setsar=1"
+    },
+    "windows": [
+      {
+        "window": "mid_seg",
+        "mean": 0.87,
+        "d2_max": 2.489,
+        "spike_fail": false
+      }
+    ],
+    "note": "gentle scale push-in/out (eval=frame); static crop; no zoompan; no setpts"
+  },
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s02_every_eighth_punch_v06.mp4",
+  "icloud_sheet": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s02_every_eighth_punch_v06_caption_sheet.jpg",
+  "s01_s03": "unchanged v05 Ben PASS",
+  "note": "Ben phone UAT FAIL on v05 shake. v06 gentle scale push (no crop-pan). STOP for Ben. No schedule."
+}

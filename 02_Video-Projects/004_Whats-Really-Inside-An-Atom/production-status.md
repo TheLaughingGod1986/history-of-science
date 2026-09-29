@@ -320,7 +320,7 @@ Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish o
 | Captions | **OK** — `hos_004_full_v02.en.srt` uploaded (toast “English subtitles uploaded”). Proof: `FINISH_captions.png` (`finish_v01e_13_captions_after.png`) |
 | End screen | **Blocked by Studio** — template places Subscribe + Video (last 20 s), Specific `AL_-qlWko_g` attempted; Save → **“problem in processing… edits were not saved”** + NaN; reopen empty. Re-set after processing settles. Proof: `finish_v01d_25_end_after_save.png` · `FINISH_endscreen.png` |
 | Pinned comment | **Blocked while Private/Scheduled** — Studio: “This account doesn't have permission to create comments.” Textarea disabled. Package text ready, no links. **Pin on launch day 15 Oct** after Public. Proof: `BEN_004_pin_blocked_permission.png` · `COMMENTS_V09_PIN.json` |
-| Shorts | **v05 done** — `gate_shorts_open.py check` **PASS** ×3 · iCloud `HOS UAT/004_…/10_Shorts/`. **STOP — Ben phone watch. Schedule nothing until he says yes.** |
+| Shorts | **s01/s03 v05 Ben PASS** (29 Sep 20:48). **s02 v05 FAIL** (shaky) → **s02 punch v06** rebuilt · `gate_shorts_open.py check` **PASS** · iCloud `HOS UAT/004_…/10_Shorts/hos_004_s02_every_eighth_punch_v06.mp4` · `WATCH_shorts_s02_v06.txt`. **STOP — Ben phone watch s02 v06. Schedule nothing until he OKs s02.** |
 | `.env` / API | **Not used.** Orbit never touched. |
 
 ## Made for Kids — URGENT audit (Ben 29 Sep 20:00)
@@ -399,7 +399,11 @@ Ben’s full growth-settings list. Overrides: **(a) Altered/AI use = NO** (not Y
 
 ### D — Shorts
 
-**Not scheduled.** `gate_shorts_open.py check` **PASS** ×3 (v05). iCloud `HOS UAT/004_…/10_Shorts/` has v05. **STOP for Ben phone watch.** Schedule Fri 16 / Sun 18 / Tue 20 Oct 11:30 UK only after his yes (after 004 public).
+**Not scheduled.** Ben phone UAT 29 Sep 20:48: **s01 How Small v05 PASS** · **s03 Her Ring v05 PASS** · **s02 Every Eighth v05 FAIL** (“still shaky”).
+
+**s02 punch v06** (30 Sep): gentle `scale` push-in/out (`eval=frame`) + static 9:16 crop — **no** crop-pan / zoompan / setpts. Still-plate frame-diff QA **PASS** (near_zero=0, cv=0.26). Kept v05 word-timed captions, hook `EVERY EIGHTH?`, title ~9–14 s, Davy Medal last VO line, last-4 s loop, 1080×1920 30 fps. `gate_shorts_open.py check` **PASS** (dur=26.4s). Index `10_Shorts/SHORTS_PUNCH_INDEX_s02_v06.json` · sha256 `0321e6c0ab8ce456…`. iCloud: `HOS UAT/004_…/10_Shorts/hos_004_s02_every_eighth_punch_v06.mp4` + `WATCH_shorts_s02_v06.txt`. **s01/s03 v05 untouched.**
+
+**STOP for Ben phone watch on s02 v06.** Schedule Fri 16 / Sun 18 / Tue 20 Oct 11:30 UK only after he OKs s02 (after 004 public).
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
@@ -417,7 +421,7 @@ Ben’s full growth-settings list. Overrides: **(a) Altered/AI use = NO** (not Y
 - **Superseded (kept):** `UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json` · `DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json` → status `SUPERSEDED`.
 - **FINISH Studio:** Visibility + Audience + description/chapters + captions **OK**. Thumb A / T&C / end screen / pin still need Ben or launch-day (Studio Ineligible / processing error / private). Screenshots for Ben below.
 - **Thumbs (files):** A v04 · B v04 · **C v06** — Ben PASS. **Live Studio still C**.
-- **Shorts v05:** `gate_shorts_open.py check` **PASS** ×3 · iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/` · **STOP phone watch**. Schedule nothing until Ben yes.
+- **Shorts:** s01/s03 **v05 Ben PASS**. s02 **v06** (shake fix) · gate **PASS** · iCloud `…/10_Shorts/` + `WATCH_shorts_s02_v06.txt` · **STOP phone watch s02 v06**. Schedule nothing until Ben OKs s02.
 
 ### Screenshots for Ben / CoS (exact paths)
 
