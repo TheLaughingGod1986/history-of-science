@@ -13,7 +13,7 @@
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
 | Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–04 `mint: false` (04 rough v01 pending Ben) · 05 `mint: false` · Explorer used ×2 (P02 + P04 stadium pea); remaining P05 · no Explorer in Part 03 |
-| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”) · **Part 03 rough v01 PASS** (Ben: “fine”). **Part 04 rough v02 PASS** (Ben 28 Sep). **Part 05 rough v03 PASS** (Ben 29 Sep). **Full join v03 UAT** (mix restore after v02 −6 dB amix bug). |
+| Picture | **Part 01–05 PASS.** **Full join v03 PASS (Ben, 29 Sep 2026)** sha `f88cb9d4…65244`. Finishing: final music bed + captions → `hos_004_full_v01` (UAT). |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
@@ -54,7 +54,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | **22** (4–6 s splits) | false (rough v01) |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Ben continuous UAT on `hos_004_full_join_v03` (sha `f88cb9d4…`, mix restored). Do not label KEEP/LOCKED.
+**Next:** STOP for Ben — listen to music on `hos_004_full_v01`. Captions ready. STEP 3 title not started.
 
 ---
 
@@ -228,7 +228,7 @@ Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · `part01_rough_v04_lan
 - **Cut:** `hos_004_full_join_v02.mp4` · sha `02cf4a107caff44f08093a4231ef9dacafdde868483680df3bdc28ad8194b90a` · 524.700 s
 - Picture/cards/seams/end OK, but `amix` without `normalize=0` halved VO+bed (~−6 dB): mean **−29.7** / peak **−9.7**. Superseded by v03.
 
-## Full join v03 (29 Sep 2026) — mix restore · STOP for Ben
+## Full join v03 (29 Sep 2026) — **PASS** (Ben) · mix restore
 
 Same picture, cards, seams and end as override v02. **Only** fix: `amix=inputs=2:weights=1 1:normalize=0` (same as part assemblers).
 
@@ -238,6 +238,7 @@ Same picture, cards, seams and end as override v02. **Only** fix: `amix=inputs=2
 - **Levels:** full `vo_check` mean **−23.7 dB** / peak **−3.7 dB** (peak ≤ −1 OK) · film `ffmpeg -t 500.69` mean **−23.5 dB** / max **−3.7 dB** (matches parts ~−22…−24)
 - **Word flags (full):** FAIL ~6:07.34 `a living`→`the living` · FAIL ~6:31.88 `sort`→`sought` · (v02 `wrong`→`rock` at ~3:59 **gone**)
 - **wrong window:** Ben 3:55–4:03 ends on “pudding”; “wrong” ~**4:05.64**. Wider STT: **both** v03 and Part 03 rough hear **“wrong”** (not rock).
+- **Ben PASS (29 Sep 2026)** on full join v03 (sha `f88cb9d4…65244`). Picture LOCKED for finishing. Next: final continuous music bed → `hos_004_full_v01.mp4` + captions (steps 1–2). Title / thumbs / package / Shorts wait.
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v03.mp4`
 - Builder: `07_Edit-Project/_join_hos_004_full_v03.py` · notes `09_Final-Export/FULL_JOIN_V03_NOTES.md`
-- Do **not** label KEEP/LOCKED. No upload. **STOP for Ben.**
+- Do **not** label KEEP/LOCKED on the music remaster until Ben says so. No upload.
