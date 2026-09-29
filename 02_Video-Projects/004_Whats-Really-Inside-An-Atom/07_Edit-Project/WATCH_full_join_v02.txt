@@ -1,0 +1,25 @@
+HOS 004 full join v02 — UAT (Ben OVERRIDE 29 Sep 2026)
+
+Cut: hos_004_full_join_v02.mp4
+sha256: 02cf4a107caff44f08093a4231ef9dacafdde868483680df3bdc28ad8194b90a
+Duration: 524.700 s (8:44.70)
+A/V delta (audio−video): 0.000 s
+
+KEEP chapter cards (real titles). TEMP bed PER PART. NO J-cut. Picture xfade 0.40 s.
+Cream AFTER last VO word (4 s, bed fades) then 20 s quiet Studio hold.
+
+Chapter cards (~1.5 s):
+  card02 1:09.43  The Table That Broke Its Own Rule
+  card03 2:41.31  The Crumb Inside the Atom
+  card04 4:05.74  The Shell That Bounced Back
+  card05 5:55.48  Counting With X-rays
+
+Part starts: p01 0:00 · p02 1:10.53 · p03 2:42.41 · p04 4:06.84 · p05 5:56.58
+Cream 4s @ 8:20.69 · Studio hold @ 8:24.70 · out 8:44.70
+
+vo_check (full audio vs atom_script_master_v02.md):
+  FAIL speech mean -29.7 dB (quiet 20s end hold pulls mean)
+  No word FAIL within ±1 s of seams 69.4 / 160.2 / 243.6 / 352.2 → VO stays acrossfade-with-mix (no butt rebuild)
+  Word FAILs elsewhere are known VO v04 KEEP transcriber misses (wrong/rock, a/the, sort/sought)
+
+Status: UAT for Ben continuous playback. NOT KEEP/LOCKED. Do not upload.

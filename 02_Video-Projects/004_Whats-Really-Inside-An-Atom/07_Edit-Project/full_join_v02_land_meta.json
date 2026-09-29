@@ -1,0 +1,156 @@
+{
+  "file": "hos_004_full_join_v02.mp4",
+  "sha256": "02cf4a107caff44f08093a4231ef9dacafdde868483680df3bdc28ad8194b90a",
+  "duration": 524.7,
+  "bytes": 381924174,
+  "xfade": 0.4,
+  "card_hold": 1.5,
+  "cream_after_vo": 4.0,
+  "end_hold_s": 20.0,
+  "p01_bridge_cut": 68.48,
+  "p05_cream_removed_from": 140.5,
+  "starts": {
+    "p01": 0.0,
+    "card02": 69.43333299999999,
+    "p02": 70.53333299999998,
+    "card03": 161.311166,
+    "p03": 162.41116599999998,
+    "card04": 245.744499,
+    "p04": 246.84449899999998,
+    "card05": 355.47783200000003,
+    "p05": 356.57783200000006,
+    "cream4": 500.6937700000001
+  },
+  "card_times": {
+    "card02": 69.43333299999999,
+    "card03": 161.311166,
+    "card04": 245.744499,
+    "card05": 355.47783200000003
+  },
+  "part_times": {
+    "p01": 0.0,
+    "p02": 70.53333299999998,
+    "p03": 162.41116599999998,
+    "p04": 246.84449899999998,
+    "p05": 356.57783200000006
+  },
+  "join_offsets": [
+    {
+      "a": "p01",
+      "b": "card02",
+      "offset": 69.43333299999999
+    },
+    {
+      "a": "card02",
+      "b": "p02",
+      "offset": 70.533333
+    },
+    {
+      "a": "p02",
+      "b": "card03",
+      "offset": 161.31116600000001
+    },
+    {
+      "a": "card03",
+      "b": "p03",
+      "offset": 162.411166
+    },
+    {
+      "a": "p03",
+      "b": "card04",
+      "offset": 245.74449900000002
+    },
+    {
+      "a": "card04",
+      "b": "p04",
+      "offset": 246.844499
+    },
+    {
+      "a": "p04",
+      "b": "card05",
+      "offset": 355.477832
+    },
+    {
+      "a": "card05",
+      "b": "p05",
+      "offset": 356.577832
+    },
+    {
+      "a": "p05",
+      "b": "cream4",
+      "offset": 500.69377
+    }
+  ],
+  "hold_in": 504.7,
+  "video_duration": 524.7,
+  "audio_duration": 524.7,
+  "sync_delta_a_minus_v": 0.0,
+  "seam_vo_mode": {
+    "01\u219202": "butt",
+    "02\u219203": "butt",
+    "03\u219204": "butt",
+    "04\u219205": "butt"
+  },
+  "status": "UAT_FOR_BEN",
+  "keep_locked_label": false,
+  "upload": false,
+  "parents": [
+    {
+      "id": "01",
+      "name": "hos_004_part01_rough_v05.mp4",
+      "sha": "71d7c70798c77ce2ecb02c37ad043fd98117a2209a84899236337fee8b952add",
+      "vo": "hos_004_part01_vo_v04.wav",
+      "bed": "hos004-part01-temp_score_bed_v01.mp3",
+      "card": null
+    },
+    {
+      "id": "02",
+      "name": "hos_004_part02_rough_v01.mp4",
+      "sha": "620ce51250028495a588f25967dddfaa9c6136dc4172c7b0ce1ee609f103f1d2",
+      "vo": "hos_004_part02_vo_v04.wav",
+      "bed": "hos004-part02-temp_score_bed_v01.mp3",
+      "card": {
+        "part": "PART 02",
+        "date": "1808",
+        "title": "The Table That Broke Its Own Rule"
+      }
+    },
+    {
+      "id": "03",
+      "name": "hos_004_part03_rough_v01.mp4",
+      "sha": "d62e0ed096ead8ec52666ca07476f973aeaae7635b70a16faaac45f14ec518e0",
+      "vo": "hos_004_part03_vo_v04.wav",
+      "bed": "hos004-part03-temp_score_bed_v01.mp3",
+      "card": {
+        "part": "PART 03",
+        "date": "1897",
+        "title": "The Crumb Inside the Atom"
+      }
+    },
+    {
+      "id": "04",
+      "name": "hos_004_part04_rough_v02.mp4",
+      "sha": "157feaef7bd21236aeafc3e953fe461fe2ee95896bb868d57357c9c1c2c1e1f5",
+      "vo": "hos_004_part04_vo_v04.wav",
+      "bed": "hos004-part04-temp_score_bed_v01.mp3",
+      "card": {
+        "part": "PART 04",
+        "date": "1909",
+        "title": "The Shell That Bounced Back"
+      }
+    },
+    {
+      "id": "05",
+      "name": "hos_004_part05_rough_v03.mp4",
+      "sha": "b391bff0dbe8a8ae0130adef4f7f3d7b79aca2cb34a934d9cf42d76e1d03363f",
+      "vo": "hos_004_part05_vo_v04.wav",
+      "bed": "hos004-part05-temp_score_bed_v01.mp3",
+      "card": {
+        "part": "PART 05",
+        "date": "1913",
+        "title": "Counting With X-rays"
+      }
+    }
+  ],
+  "audio_wav_for_vo_check": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_004_join_v02b_2drrggbn/full_v02_audio.wav"
+}
