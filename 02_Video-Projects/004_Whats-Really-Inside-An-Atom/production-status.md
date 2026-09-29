@@ -290,17 +290,19 @@ Same picture/cards/end as v01. VO untouched. Music join at the Part 05 chapter c
 
 Written into this file + `11_Upload-Package/LAUNCH_PLAN.md`.
 
-## Long thumbs (STEP 4) — **v02 STOP for Ben pick** (nothing to Studio)
+## Long thumbs (STEP 4) — **v03 STOP for Ben pick** (nothing to Studio)
 
-Composer: `08_Thumbnail/_compose_hos_004_thumbs_v02.py`. JPGs + preview sheets in `08_Thumbnail/Selected/`.
+Composer: `08_Thumbnail/_compose_hos_004_thumbs_v03.py`. Index: `THUMBS_INDEX_v03.json`.
+
+v03 restores the film’s **3D cartoon** look (v02 went flat/graphic). Keeps v02 fixes: correct Z, one clear idea, text off subject. Full-bleed only — no split panels, no flat vector tiles. v01 + v02 remain in Selected for side-by-side.
 
 | Variant | File | Hook | Notes |
 |---|---|---|---|
-| **B (main)** | `hos_004_thumb_B_cut_gold_v02.jpg` | **CUT GOLD?** | KEEP subject; hook up/left, clear of knife (§2.5) |
-| A | `hos_004_thumb_A_hidden_number_v02.jpg` | **THE HIDDEN NUMBER** | Two blank tiles; house-font **Te 52** / **I 53** only (I glowing). No baked numbers. |
-| C | `hos_004_thumb_C_bounced_back_v02.jpg` | **IT BOUNCED BACK** | Dark void · gold foil · thin stream · one bright rebound toward camera |
+| **B (main)** | `hos_004_thumb_B_cut_gold_v03.jpg` | **CUT GOLD?** | Full-frame coin/knife from v01 plate; hook up/left, clear of blade; no side panel |
+| A | `hos_004_thumb_A_hidden_number_v03.jpg` | **THE HIDDEN NUMBER** | Film 3D Te/I cubes; house-font **Te 52** / **I 53** only (I glowing); no other numbers |
+| C | `hos_004_thumb_C_bounced_back_v03.jpg` | **IT BOUNCED BACK** | Part 04 foil plate · one bright rebound particle + short trail · no beds/constellations |
 
-### Test & Compare pairs (locked for listing)
+### Test & Compare pairs (as recorded — pending Ben pick)
 
 | # | Title | Thumb |
 |---|---|---|
@@ -308,7 +310,7 @@ Composer: `08_Thumbnail/_compose_hos_004_thumbs_v02.py`. JPGs + preview sheets i
 | 2 | Why Is the Periodic Table in This Order? | A THE HIDDEN NUMBER |
 | 3 | How Small Can You Cut Gold? | C IT BOUNCED BACK |
 
-**iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/`
+**iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/` (v01 · v02 · v03 side by side)
 
-**STOP for Ben** — thumbnail pick (and music on `hos_004_full_v02`). Do **not** push to Studio. Do **not** start STEP 5/6 until Ben signs off.
+**STOP for Ben** — thumbnail pick (and music on `hos_004_full_v02`). Do **not** push to Studio. Do **not** start STEP 5/6 until Ben signs off. Do **not** label KEEP/LOCKED.
 
