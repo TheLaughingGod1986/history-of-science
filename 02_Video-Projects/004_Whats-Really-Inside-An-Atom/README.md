@@ -1,11 +1,11 @@
-# HOS 004 — Why Is the Periodic Table in This Order?
+# HOS 004 — What's Really Inside an Atom?
 
 Film brief. The script is `01_Script/atom_script_master_v02.md` (spoken lines and picture markers only, so the reviewer scores what is said). Teach and fact notes: `01_Script/FACT_NOTES_v02.md`. Launch: `11_Upload-Package/LAUNCH_PLAN.md`. Ben's v01 is kept as `01_Script/atom_script_v01_ben.md` for history.
 
 | Field | Value |
 |---|---|
-| Title (main) | Why Is the Periodic Table in This Order? (chosen 26 Sep for traction; see `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` §3) |
-| Title (Test & Compare) | What's Really Inside an Atom? · How Small Can You Cut Gold? |
+| Title (main) | **What's Really Inside an Atom?** (Ben pick STEP 3, 29 Sep 2026) |
+| Title (Test & Compare) | Why Is the Periodic Table in This Order? · How Small Can You Cut Gold? |
 | Old title | How Did We Discover the Atom? (dropped: retired formula, THUMBNAIL_AND_TITLE_RULES.md §1) |
 | Angle | Why does the periodic table have its order? The answer was inside the atom, and Moseley's X-ray work proved it. |
 | Scout words | atom · atomic theory · J.J. Thomson · nucleus · atomic number (spoken and on labels) |
@@ -13,13 +13,13 @@ Film brief. The script is `01_Script/atom_script_master_v02.md` (spoken lines an
 | Style | Animistry 3D cartoon · readable faces · silent-readable, VO-literal picture · one side label at a time |
 | Explorer | 3 beats (P02 card swap · P04 stadium pea · P05 final table). The 0:15 table tap is a hand only. |
 | X-rays callback | one picture beat in P05 (about 4 s), no on-screen "SEE" label. The Studio end screen links the film. |
-| Status | SCRIPT v02 spoken KEEP · **VO READY — STOP awaiting Ben listen** · Steps 3–4 DRAFT (re-time + plate boards) pending VO KEEP · **no Flow / no mint**. |
+| Status | Picture join v03 PASS · full_v01 music UAT + thumbs A/B/C UAT — **STOP for Ben**. Title locked. No STEP 5/6 until sign-off. |
 | Non-goals | not a Periodic Table retell · not radioactivity (next film) · no bomb or fission · no Orbit |
 | First minute | STUDIO_PLAYBOOK.md §3 → "The first minute" (answer image by 0:05 · title question by 0:08 · promise by 0:15 · stakes by 0:25 · first real fact before 0:45 · picture change every 4–6 s · no intro, logo or title card · Part 01 has no chapter card) |
 
 ## Changes from v01
 
-- **Title:** *Why Is the Periodic Table in This Order?* (main, 26 Sep, after the audit), Test & Compare against *What's Really Inside an Atom?* and *How Small Can You Cut Gold?*. *How Did We Discover the Atom?* is dropped.
+- **Title:** *What's Really Inside an Atom?* (main — Ben STEP 3, 29 Sep), Test & Compare *Why Is the Periodic Table in This Order?* and *How Small Can You Cut Gold?*. *How Did We Discover the Atom?* is dropped.
 - **Launch:** normal publish, no Premiere; Shorts Fri 16 / Sun 18 / Tue 20 Oct, each promoting a different film; the gold coin Short leads.
 - **Explorer:** 3 beats. The 0:15 table tap is now a hand with no face.
 - **First-minute rule:** moved into `STUDIO_PLAYBOOK.md` §3 with a picture change every 4–6 s; cold-open picture now changes about every 5 s. The separate lock doc is withdrawn.

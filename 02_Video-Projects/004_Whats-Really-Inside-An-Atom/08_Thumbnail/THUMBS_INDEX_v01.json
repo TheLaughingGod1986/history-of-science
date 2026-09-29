@@ -1,0 +1,42 @@
+{
+  "parentTitle": "What's Really Inside an Atom?",
+  "titleTestAndCompare": [
+    "Why Is the Periodic Table in This Order?",
+    "How Small Can You Cut Gold?"
+  ],
+  "style": "House Arial Black · yellow hook word · white rest · heavy outline. Subject from the film's own plates. No Explorer on A/B/C v01.",
+  "composer": "_compose_hos_004_thumbs_v01.py",
+  "status": "STOP for Ben UAT with music (hos_004_full_v01). Do not upload until Ben signs off.",
+  "recommend": "Run Studio Thumbnail ABC after upload. Prefer A (THE HIDDEN NUMBER) with main title; B pairs with How Small Can You Cut Gold?; C is the Rutherford bounce beat.",
+  "long": [
+    {
+      "id": "A",
+      "hook": "THE HIDDEN NUMBER",
+      "yellow": "HIDDEN",
+      "subject": "Te + I crates (frame_18.0)",
+      "jpg": "Selected/hos_004_thumb_A_hidden_number_v01.jpg",
+      "preview": "Previews/hos_004_thumb_A_hidden_number_preview_v01.jpg",
+      "sha256": "fb6445471b9ef9157044654ba65f888395befeef5861e87fab5daab4b3d3724b"
+    },
+    {
+      "id": "B",
+      "hook": "CUT GOLD?",
+      "yellow": "GOLD?",
+      "subject": "coin halves + knife (frame_3.0)",
+      "jpg": "Selected/hos_004_thumb_B_cut_gold_v01.jpg",
+      "preview": "Previews/hos_004_thumb_B_cut_gold_preview_v01.jpg",
+      "sha256": "43ef72800f818b285fd802c22564f16b5209a6bc3ed5fc4c56c7d3d0ca67dad9"
+    },
+    {
+      "id": "C",
+      "hook": "IT BOUNCED BACK",
+      "yellow": "BOUNCED",
+      "subject": "gold-foil bounce (frame_50.5)",
+      "jpg": "Selected/hos_004_thumb_C_bounced_back_v01.jpg",
+      "preview": "Previews/hos_004_thumb_C_bounced_back_preview_v01.jpg",
+      "sha256": "473ab6a212d59e685a66ed1d7042595a1478195ce8434c3b5f0e064a475e344d"
+    }
+  ],
+  "upload": false,
+  "icloud": "HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/"
+}

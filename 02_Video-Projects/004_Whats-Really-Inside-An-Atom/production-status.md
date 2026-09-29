@@ -1,11 +1,11 @@
-# Production status — 004 Why Is the Periodic Table in This Order?
+# Production status — 004 What's Really Inside an Atom?
 
 | Field | Value |
 |---|---|
 | Slug | `004_Whats-Really-Inside-An-Atom` |
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | Ben picked 26 Sep 2026 (the atom; why the periodic table has its order) |
-| Title | *Why Is the Periodic Table in This Order?* (main); Test & Compare *What's Really Inside an Atom?* and *How Small Can You Cut Gold?* |
+| Title | **What's Really Inside an Atom?** (main — Ben pick STEP 3, 29 Sep 2026); Test & Compare *Why Is the Periodic Table in This Order?* and *How Small Can You Cut Gold?* |
 | Script | `01_Script/atom_script_master_v02.md`. **Spoken words LOCKED.** VISUAL MUST **re-timed from VO v04** (27 Sep). |
 | Script review | 88.9. Passed by hand by Ben, 26 Sep 2026 |
 | Pre-build vidIQ audit | Signed off by Ben, 26 Sep 2026 (vidIQ waived) |
@@ -54,7 +54,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | **22** (4–6 s splits) | false (rough v01) |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** STOP for Ben — listen to music on `hos_004_full_v01`. Captions ready. STEP 3 title not started.
+**Next:** STOP for Ben — music on `hos_004_full_v01` **and** long thumbs A/B/C together. Captions ready. Title locked (STEP 3). Do **not** start STEP 5 (upload package) or STEP 6 (schedule) until Ben signs off.
 
 ---
 
@@ -239,11 +239,11 @@ Same picture, cards, seams and end as override v02. **Only** fix: `amix=inputs=2
 - **Word flags (full):** FAIL ~6:07.34 `a living`→`the living` · FAIL ~6:31.88 `sort`→`sought` · (v02 `wrong`→`rock` at ~3:59 **gone**)
 - **wrong window:** Ben 3:55–4:03 ends on “pudding”; “wrong” ~**4:05.64**. Wider STT: **both** v03 and Part 03 rough hear **“wrong”** (not rock).
 - **Ben PASS (29 Sep 2026)** on full join v03 (sha `f88cb9d4…65244`). Picture LOCKED for finishing.
-- Finishing STEP 1–2 done: `hos_004_full_v01.mp4` (music UAT) + captions. **STOP for Ben music listen.** Steps 3–6 not started.
+- Finishing STEP 1–2 done: `hos_004_full_v01.mp4` (music UAT) + captions. Picture LOCKED for finishing.
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v03.mp4`
 - Builder: `07_Edit-Project/_join_hos_004_full_v03.py` · notes `09_Final-Export/FULL_JOIN_V03_NOTES.md`
 
-## Full_v01 (29 Sep 2026) — final continuous bed · STOP for Ben music
+## Full_v01 (29 Sep 2026) — final continuous bed · music UAT pending
 
 Replaces the five TEMP part beds. Picture = locked v03. VO v04 untouched.
 
@@ -256,5 +256,31 @@ Replaces the five TEMP part beds. Picture = locked v03. VO v04 untouched.
 - **Word flags:** known ~6:08 `a living`→`the living` · ~6:33 `sort`→`sought` · also transcriber `van den`→`van der` Broek · `a weight`→`of weight`
 - **Captions (STEP 2):** `11_Upload-Package/Captions/hos_004_full_v01.en.srt` (script-locked, 90 cues, no cream/hold)
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v01.mp4` (+ `WATCH_full_v01.txt`)
-- Do **not** mark KEEP until Ben says so. No upload. **STOP for Ben** (music listen). Steps 3–6 not started.
+- Do **not** mark KEEP until Ben says so. No upload.
+
+## Title (STEP 3) — Ben pick 29 Sep 2026
+
+| Role | Title |
+|---|---|
+| **Main (listing)** | **What's Really Inside an Atom?** |
+| Test & Compare alt 1 | *Why Is the Periodic Table in This Order?* |
+| Test & Compare alt 2 | *How Small Can You Cut Gold?* |
+
+Written into this file + `11_Upload-Package/LAUNCH_PLAN.md`.
+
+## Long thumbs (STEP 4) — STOP for Ben with music
+
+Three Studio ABC variants from the film's own plates. Composer: `08_Thumbnail/_compose_hos_004_thumbs_v01.py`.
+
+| Variant | File | Hook | Subject |
+|---|---|---|---|
+| A | `08_Thumbnail/Selected/hos_004_thumb_A_hidden_number_v01.jpg` | **THE HIDDEN NUMBER** (HIDDEN yellow) | Te/I crates swapped + glowing |
+| B | `08_Thumbnail/Selected/hos_004_thumb_B_cut_gold_v01.jpg` | **CUT GOLD?** (GOLD yellow) | coin halves + knife |
+| C | `08_Thumbnail/Selected/hos_004_thumb_C_bounced_back_v01.jpg` | **IT BOUNCED BACK** (BOUNCED yellow) | gold-foil bounce |
+
+Phone preview sheets: `08_Thumbnail/Previews/hos_004_thumb_*_preview_v01.jpg` (+ artifacts copies).
+
+**iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/`
+
+**STOP for Ben** — music (`hos_004_full_v01`) **and** thumbs A/B/C together. Do **not** start STEP 5 (upload package) or STEP 6 (schedule) until Ben signs off.
 
