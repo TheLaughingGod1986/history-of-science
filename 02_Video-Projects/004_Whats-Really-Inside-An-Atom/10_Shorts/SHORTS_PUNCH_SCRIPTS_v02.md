@@ -45,13 +45,13 @@ Watch What's Really Inside an Atom?
 Before Mendeleev, John Newlands lined the elements up like notes on a piano.
 He said every eighth element repeats — the law of octaves.
 Other chemists laughed at him for comparing chemistry to music.
-He was nearly right. The repeating pattern was real; only the ruler was still wrong.
+He was nearly right. The repeating pattern was real; only the ruler for atoms was still wrong.
 Watch How Did We Discover the Periodic Table?
 
 | | |
 |---|---|
-| Word count | **58** |
-| Est. seconds @ 1.04 | **~22.3 s** (breath on the laugh; do not pad) |
+| Word count | **60** |
+| Est. seconds @ 1.04 | **~23.1 s** (breath on the laugh; do not pad) |
 
 ---
 
@@ -67,14 +67,14 @@ Watch How Did We Discover the Periodic Table?
 The first X-ray of a person was his wife's hand.
 Bertha Röntgen held still while the plate recorded her bones —
 and her wedding ring sat clear around the living bone.
-Proof you could see inside a body without a knife.
+Proof you could see inside a living body without a knife.
 Wonder, not dread. A new kind of seeing.
 Watch How Did We Discover X-rays?
 
 | | |
 |---|---|
-| Word count | **59** |
-| Est. seconds @ 1.04 | **~22.7 s** (pause on the ring; do not stretch holds) |
+| Word count | **60** |
+| Est. seconds @ 1.04 | **~23.1 s** (pause on the ring; do not stretch holds) |
 
 ---
 
