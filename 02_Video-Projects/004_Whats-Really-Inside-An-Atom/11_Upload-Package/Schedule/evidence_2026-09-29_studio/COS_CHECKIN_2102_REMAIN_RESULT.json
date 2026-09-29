@@ -1,0 +1,122 @@
+{
+  "at": "2026-09-30T00:41:17",
+  "phase": "remain",
+  "audience_0": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "cancelled_new_test_dialog": false,
+  "audience_after_tc": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "tc": {
+    "actions": [
+      {
+        "clicked_ab": "A/B Testing"
+      },
+      "cancelled_replace_dialog"
+    ],
+    "after": {
+      "ineligible": true,
+      "has_ab_testing": true,
+      "titles_present": [
+        "What's Really Inside an Atom?",
+        "Why Is the Periodic Table in This Order?"
+      ],
+      "title_count": 2,
+      "two_slot_title_test": true,
+      "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nIneligible\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, you're legally required to comply with the Children's Online Privacy Protection Act (COPPA) and/or other laws. You're required to tell us whether your videos are 'Made for Kids'. What is 'Made for Kids' content?\nFeatures like personalised ads and notificat"
+    },
+    "blocker": "Studio shows Ineligible A/B testing titles (2 slots: Atom + Periodic). No Remove/End control while Ineligible. Do NOT Continue 'Run a new test' (would scramble). Clear/re-arm after 15 Oct public: 3 pairs or Thumbnail-only."
+  },
+  "audience_final": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "altered_final": {
+    "radios": [
+      {
+        "label": "Yes, AI was used",
+        "checked": false,
+        "isNo": false,
+        "isYes": true
+      },
+      {
+        "label": "No, AI wasn't used",
+        "checked": true,
+        "isNo": true,
+        "isYes": false
+      }
+    ],
+    "no": true,
+    "yes": false,
+    "section": "AI use"
+  },
+  "endscreen": {
+    "actions": [
+      {
+        "open": {
+          "t": "End screen",
+          "y": 845
+        }
+      },
+      "IMPORT FROM VIDEO|Import from video",
+      "specific_deep",
+      "picked_002",
+      "subscribe_deep"
+    ],
+    "oops": false,
+    "url": "https://studio.youtube.com/video/GHZDsiH7L7A/edit",
+    "saved": true,
+    "processing_error": false,
+    "has_002": true,
+    "has_subscribe": true,
+    "ok": true
+  },
+  "summary": {
+    "audience_not_kids": true,
+    "altered_no": true,
+    "tc_two_slot": true,
+    "tc_ineligible": true,
+    "tc_blocker": "Studio shows Ineligible A/B testing titles (2 slots: Atom + Periodic). No Remove/End control while Ineligible. Do NOT Continue 'Run a new test' (would scramble). Clear/re-arm after 15 Oct public: 3 pairs or Thumbnail-only.",
+    "endscreen_ok": true,
+    "endscreen_blocker": null
+  }
+}

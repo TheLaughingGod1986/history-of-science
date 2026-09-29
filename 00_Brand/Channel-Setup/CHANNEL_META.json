@@ -78,6 +78,19 @@
     },
     "branding_watermark": "not_added",
     "evidence_dir": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/",
-    "summary_json": "GROWTH_ALL_RESULT.json"
+    "summary_json": "GROWTH_ALL_RESULT.json",
+    "cos_checkin_2102": {
+      "at_uk": "2026-09-30T00:39",
+      "order": "Ben 20:03 growth-settings unchanged",
+      "audience_not_kids": true,
+      "altered_ai_use": "No, AI wasn't used",
+      "visibility_scheduled_15_oct": true,
+      "premiere_off": true,
+      "tc": "Ineligible; 2 titles listed; cancelled Run-a-new-test; re-arm 3 pairs or Thumbnail-only after public",
+      "end_screen_specific_002": "blocked_studio_processing_error",
+      "selector_policy": "aria-label/own-text only; one control per save; audience re-read after every save",
+      "shorts_s02_v06": "gate PASS; iCloud; STOP phone watch",
+      "result_json": "COS_CHECKIN_2102_RESULT.json"
+    }
   }
 }

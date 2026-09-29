@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-30T00:48:00",
+  "cos": "21:02 check-in",
+  "order": "Ben 20:03 growth-settings (re-sent unchanged)",
+  "videoId": "GHZDsiH7L7A",
+  "channel": "@HistoryOfScienceYT",
+  "cdp": 9460,
+  "confirmed_ok": {
+    "audience_not_made_for_kids": true,
+    "altered_ai_use_no": true,
+    "visibility_scheduled_15_oct": true,
+    "premiere_off": true,
+    "shorts_s02_v06_delivered": true
+  },
+  "blocked_studio": {
+    "tc": {
+      "status": "Ineligible",
+      "titles_listed": [
+        "What's Really Inside an Atom?",
+        "Why Is the Periodic Table in This Order?"
+      ],
+      "action": "Cancelled Run a new test dialog; did not Continue; did not scramble further",
+      "next": "After 15 Oct public: 3 pairs (A+Atom, C v06+Periodic, B v04+Gold) OR Thumbnail-only A/B/C with main title"
+    },
+    "end_screen": {
+      "status": "processing_error",
+      "message": "There was a problem in processing your video. As a result, your recent edits were not saved.",
+      "elements_seen": ["Subscribe: History of Science", "Video: Best for viewer"],
+      "wanted": "Specific AL_-qlWko_g + Subscribe",
+      "next": "Re-set Specific 002 after processing settles / launch day"
+    },
+    "pin": "Still blocked while Private/Scheduled"
+  },
+  "selector_policy": {
+    "no_broad_first_yes": true,
+    "kids_and_ai_by_aria_or_own_text": true,
+    "one_control_per_save": true,
+    "audience_reread_after_every_save": true
+  },
+  "evidence": [
+    "COS2102_B1_audience.png",
+    "COS2102_B4_altered_AFTER.png",
+    "COS2102_B2_visibility.png",
+    "COS2102_B9_tc_DIALOG.png",
+    "COS2102ES4_06_saved.png",
+    "COS_CHECKIN_2102_RESULT.json",
+    "COS_CHECKIN_2102_REMAIN_RESULT.json",
+    "COS_CHECKIN_2102_ENDSCREEN_V04.json"
+  ],
+  "scripts": [
+    "_cos_checkin_2102_growth_fix_v01.py",
+    "_cos_checkin_2102_remain_v01.py",
+    "_cos_checkin_2102_endscreen_v03.py"
+  ]
+}

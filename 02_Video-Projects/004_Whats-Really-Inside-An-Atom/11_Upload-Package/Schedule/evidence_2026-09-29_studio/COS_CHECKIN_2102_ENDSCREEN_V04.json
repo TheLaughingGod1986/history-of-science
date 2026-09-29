@@ -1,0 +1,96 @@
+{
+  "at": "2026-09-30T00:47:32",
+  "steps": [
+    {
+      "open_click": {
+        "x": 1168,
+        "y": 869,
+        "score": 845,
+        "t": "End screen"
+      }
+    },
+    {
+      "opened": false
+    },
+    {
+      "retry_opened": true
+    },
+    {
+      "template": {
+        "t": "1 video, 1 subscribe",
+        "x": 384,
+        "y": 168
+      }
+    },
+    {
+      "specific": null
+    },
+    {
+      "filled": {
+        "aria": "",
+        "y": 180
+      }
+    },
+    {
+      "picked": null
+    },
+    {
+      "saved": true
+    }
+  ],
+  "audience_0": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "processing_error": true,
+  "modal_has_002": false,
+  "modal_has_subscribe": true,
+  "ok": false,
+  "audience_final": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "altered_final": {
+    "radios": [
+      {
+        "label": "Yes, AI was used",
+        "checked": false,
+        "isNo": false,
+        "isYes": true
+      },
+      {
+        "label": "No, AI wasn't used",
+        "checked": true,
+        "isNo": true,
+        "isYes": false
+      }
+    ],
+    "no": true,
+    "yes": false,
+    "section": "AI use"
+  }
+}
