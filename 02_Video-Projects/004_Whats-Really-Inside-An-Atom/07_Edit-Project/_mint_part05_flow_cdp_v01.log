@@ -412,3 +412,109 @@ BATCH continue → 13_te_i
   gemini poll 13_te_i … 13s
   gemini poll 13_te_i … 25s
   gemini poll 13_te_i … 38s
+  gemini poll 13_te_i … 50s
+  → KEEP path=gemini-api motion_ok scene_hits=13 dur=8.00s used=None rem=12 sha=de6cbe1fa7e9
+  KEEP 13_te_i → 13_te_i_v01.mp4 path=gemini-api
+BATCH continue → 14_co_ni
+  Gemini probe first for 14_co_ni try=1…
+
+=== MINT 14_co_ni try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 14_co_ni … 13s
+  gemini poll 14_co_ni … 25s
+  gemini poll 14_co_ni … 38s
+  gemini poll 14_co_ni … 50s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=15e44c2ef7eb
+  KEEP 14_co_ni → 14_co_ni_v01.mp4 path=gemini-api
+BATCH continue → 15_rule_fixes
+  Gemini probe first for 15_rule_fixes try=1…
+
+=== MINT 15_rule_fixes try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 15_rule_fixes … 14s
+  gemini poll 15_rule_fixes … 26s
+  gemini poll 15_rule_fixes … 38s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=4fbbada6cd8b
+  KEEP 15_rule_fixes → 15_rule_fixes_v01.mp4 path=gemini-api
+BATCH continue → 16_wrong_ruler
+  Gemini probe first for 16_wrong_ruler try=1…
+
+=== MINT 16_wrong_ruler try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 16_wrong_ruler … 13s
+  gemini poll 16_wrong_ruler … 25s
+  gemini poll 16_wrong_ruler … 38s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=0c6ca22e66e6
+  KEEP 16_wrong_ruler → 16_wrong_ruler_v01.mp4 path=gemini-api
+BATCH continue → 17_missing_rungs
+  Gemini probe first for 17_missing_rungs try=1…
+
+=== MINT 17_missing_rungs try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 17_missing_rungs … 13s
+  gemini poll 17_missing_rungs … 25s
+  gemini poll 17_missing_rungs … 37s
+  gemini poll 17_missing_rungs … 50s
+  gemini poll 17_missing_rungs … 62s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=9a89544136e8
+  KEEP 17_missing_rungs → 17_missing_rungs_v01.mp4 path=gemini-api
+BATCH continue → 18_gaps_fill
+  Gemini probe first for 18_gaps_fill try=1…
+
+=== MINT 18_gaps_fill try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 18_gaps_fill … 13s
+  gemini poll 18_gaps_fill … 25s
+  gemini poll 18_gaps_fill … 37s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=b1e91bcd3a2c
+  KEEP 18_gaps_fill → 18_gaps_fill_v01.mp4 path=gemini-api
+BATCH continue → 19_columns_why
+  Gemini probe first for 19_columns_why try=1…
+
+=== MINT 19_columns_why try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 19_columns_why … 13s
+  gemini poll 19_columns_why … 25s
+  gemini poll 19_columns_why … 37s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=181f406e7085
+  KEEP 19_columns_why → 19_columns_why_v01.mp4 path=gemini-api
+BATCH continue → 20_charge_electrons
+  Gemini probe first for 20_charge_electrons try=1…
+
+=== MINT 20_charge_electrons try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 20_charge_electrons … 13s
+  gemini poll 20_charge_electrons … 25s
+  gemini poll 20_charge_electrons … 38s
+  gemini poll 20_charge_electrons … 50s
+  gemini poll 20_charge_electrons … 62s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=73a78ddddacd
+  KEEP 20_charge_electrons → 20_charge_electrons_v01.mp4 path=gemini-api
+BATCH continue → 21_same_column
+  Gemini probe first for 21_same_column try=1…
+
+=== MINT 21_same_column try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 21_same_column … 13s
+  gemini poll 21_same_column … 25s
+  gemini poll 21_same_column … 37s
+  gemini poll 21_same_column … 50s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=be3a9db259ad
+  KEEP 21_same_column → 21_same_column_v01.mp4 path=gemini-api
+BATCH continue → 22_soft_metals_halogens
+  Gemini probe first for 22_soft_metals_halogens try=1…
+
+=== MINT 22_soft_metals_halogens try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 22_soft_metals_halogens … 13s
+  gemini poll 22_soft_metals_halogens … 25s
+  gemini poll 22_soft_metals_halogens … 38s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=7170ae0a5176
+  KEEP 22_soft_metals_halogens → 22_soft_metals_halogens_v01.mp4 path=gemini-api
+BATCH continue → 23_quiet_memorial
+  Gemini probe first for 23_quiet_memorial try=1…
+
+=== MINT 23_quiet_memorial try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-29T07:52:39.599194+00:00 plate=23_quiet_memorial wait=120s (~2.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; short retry 1/3 after 120s
+
+=== MINT 23_quiet_memorial try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-29T07:54:40.085485+00:00 plate=23_quiet_memorial wait=120s (~2.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; short retry 2/3 after 120s
+
+=== MINT 23_quiet_memorial try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-29T07:56:40.784553+00:00 plate=23_quiet_memorial wait=0s (~0.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+STOP Gemini 429 after 3 attempts at 23_quiet_memorial (Flow=12)
+EXACT_ERROR: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}
+STOP Gemini 429 at 23_quiet_memorial: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}
