@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-09-29T15:42:09.760423+00:00",
+  "project": "hos004-full-sect2",
+  "script": null,
+  "music_cues": [],
+  "prompt": "Warm curious documentary underscore for History of Science. Soft strings, light piano, gentle wonder, a quiet sense of discovery. Builds a little under the reveals, leaves room for voice. Gentle lift toward a quiet resolution. Strictly instrumental only: no choir, no voices, no vocal pads, no humming, no oooohs, no aahs, no whispered speech, no lyrics, no singing.",
+  "length_ms": 160000,
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "generate": true,
+  "audio_file": "hos004-full-sect2_score_bed_v02.mp3",
+  "status": "generated",
+  "bytes": 2560462,
+  "song_id": "mHqRQxYNLjx0BMlMewJJ"
+}

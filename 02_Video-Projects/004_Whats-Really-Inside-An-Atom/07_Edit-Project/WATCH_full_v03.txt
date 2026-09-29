@@ -1,0 +1,11 @@
+WATCH THIS FILE (HOS 004 full_v03 — sect2 regen, no choir/voices):
+  hos_004_full_v03.mp4
+  sha256: 503e228745d4cf87fe6f504522cbad99f6af0f9c8b038c1ed8c52da493428157
+  duration: 524.700s · A/V Δ 0.000000s
+  picture: hos_004_full_join_v03.mp4 (Ben PASS)
+  bed: hos004-full_score_bed_v01.mp3 → card05 355.48s xfade 1.5s → hos004-full-sect2_score_bed_v02.mp3 → cream fade (NO LOOP)
+  sect2 prompt: no choir, no voices, no vocal pads, no humming
+  gap −20 dB · extra ~3 dB duck under speech · amix normalize=0
+
+Listen at 8:06 (and the Part 05 card join). Plain VO has no extra "you". Do NOT mark KEEP.
+No upload.

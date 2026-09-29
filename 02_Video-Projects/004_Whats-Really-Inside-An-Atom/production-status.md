@@ -258,44 +258,34 @@ Replaces the five TEMP part beds. Picture = locked v03. VO v04 untouched.
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v01.mp4` (+ `WATCH_full_v01.txt`)
 - Do **not** mark KEEP until Ben says so. No upload. **STOP for Ben** (music listen). Steps 3–6 not started.
 
-## Full_v02 music (STEP 1 remake) — **UAT · STOP for Ben listen** (not KEEP)
+## Full_v03 music — **UAT · STOP for Ben listen at 8:06** (not KEEP)
 
-- **Cut:** `hos_004_full_v02.mp4`
-- **sha256:** `ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e`
+- **Cut:** `hos_004_full_v03.mp4`
+- **sha256:** `503e228745d4cf87fe6f504522cbad99f6af0f9c8b038c1ed8c52da493428157`
 - **Duration:** **524.700 s** · A/V Δ **0.000** s
-- **Bed (no loop):** sect1 `hos004-full_score_bed_v01.mp3` → card05 **5:55.48** (355.478) acrossfade **1.5 s** → sect2 `hos004-full-sect2_score_bed_v01.mp3` (~160 s) → cream fade · silent under hold
-- **Levels:** gap **−20 dB** · extra ~**3 dB** duck under speech (`threshold=0.012:ratio=12`) · `amix normalize=0`
-- **Reconfirm 29 Sep:** film `−t 500.69` mean **−23.4** / max **−3.8** dB · `vo_check` mean **−23.6** / peak **−3.8** dB
-- **Word flags:** ~**6:07** `a living`→`the living` · ~**7:40** `a weight`→`of weight` · ~**8:06** insert `you` (transcriber / known VO holds — not a mix fault)
-- Builder: `07_Edit-Project/_mix_hos_004_full_v02_music.py` · notes `FULL_V02_NOTES.md` · watch `WATCH_full_v02.txt`
-- **Do not** label KEEP. **Do not** upload. Package dry-run is **PRE-MUSIC-PASS** until Ben passes this mix.
+- **Why:** plain v04 VO has **no** extra “you” at the next-story line → regen sect2 with **no choir / no voices / no vocal pads / no humming** → rebuild full_v03
+- **Bed (no loop):** sect1 → card05 **5:55.48** ×fade 1.5 s → `hos004-full-sect2_score_bed_v02.mp3` → cream
+- **Levels:** film `−t 500.69` mean **−23.4** / max **−3.8** · `vo_check` mean **−23.6** / peak **−3.8**
+- **Word flags:** ~**6:07** `a living`→`the living` · ~**7:40** `a weight`→`of weight` · ~**8:06** vo_check still inserts `you` (faster-whisper on mix end hears **no** “you” — Ben decides)
+- Builder: `_mix_hos_004_full_v03_music.py` · `FULL_V03_NOTES.md` · `WATCH_full_v03.txt`
+- Package **held** until Ben passes this mix.
 
-## Long thumbs (STEP 4) — **A/B v04 Ben PASS · C v05 for Ben look** (nothing to Studio)
+## Long thumbs — **A/B v04 PASS · C v06 STOP look**
 
-C lander: `08_Thumbnail/_land_hos_004_thumb_C_live_v05.py`. Index: `THUMBS_INDEX_v05.json`. Prior C v05 renamed `*_v05_superseded.jpg`.
+C lander: `_land_hos_004_thumb_C_live_v06.py`. Index: `THUMBS_INDEX_v06.json`.
 
 | Variant | File | Status | Notes |
 |---|---|---|---|
 | **A (main)** | `hos_004_thumb_A_atom_live_v04.jpg` | **Ben PASS** | Giant glowing 3D atom |
 | **B** | `hos_004_thumb_B_cut_gold_live_v04.jpg` | **Ben PASS** | Giant gold coin mid-cut |
-| **C** | `hos_004_thumb_C_hidden_number_live_v05.jpg` | **STOP look** | Tiles scaled + left; both fully in frame; clear BR; lining **52** / **53** top-left in tiles |
+| **C** | `hos_004_thumb_C_hidden_number_live_v06.jpg` | **STOP look** | Painted Georgia **52**/**53** top-left; **Te**/**I** fill tiles; clear BR |
 
-### Test & Compare pairs (Ben — recorded)
+T&C: 1 Atom+A · 2 Periodic+C v06 · 3 Gold+B. Family: `hos_004_thumbs_v06_family_vs_002_live.jpg`.
 
-| # | Title | Thumb |
-|---|---|---|
-| **1 main** | What's Really Inside an Atom? | A atom v04 |
-| 2 | Why Is the Periodic Table in This Order? | C Te/I v05 |
-| 3 | How Small Can You Cut Gold? | B coin v04 |
+## STEP 5 package — held (music not passed)
 
-**Family sheet:** `hos_004_thumbs_v05_family_vs_002_live.jpg`  
-**Selected on main:** A/B v04 + C v05 JPGs + preview sheets.
+No upload. After music PASS: dry-run → private schedule 15 Oct 18:00 UK · end screen → 002.
 
-## STEP 5 package — PRE-MUSIC-PASS dry-run only
+## STEP 6 Short scripts v02 — **STOP for Ben approve**
 
-Manifest: `11_Upload-Package/PACKAGE_MANIFEST.json` — private · no Premiere · `@HistoryOfScienceYT` · `publishAt` **2026-10-15T17:00:00Z** · end screen → **002** `AL_-qlWko_g` · video `hos_004_full_v02.mp4`.  
-**STOP:** no live upload until Ben passes music **and** says go.
-
-## STEP 6 Short scripts — **STOP for Ben approve**
-
-`10_Shorts/SHORTS_PUNCH_SCRIPTS_v01.md` — Fri 16 (004 HOW SMALL?) · Sun 18 (002) · Tue 20 (003). Scripts only; no VO/cut yet.
+`10_Shorts/SHORTS_PUNCH_SCRIPTS_v02.md` — Fri 004 gold (~60 w) · Sun 002 Newlands octaves · Tue 003 Bertha’s hand only.

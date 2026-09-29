@@ -1,0 +1,40 @@
+{
+  "parentTitle": "What's Really Inside an Atom?",
+  "version": "v06",
+  "status": "C v06 for Ben look — painted Georgia 52/53 top-left; Te/I fill tiles. A/B v04 PASS. Nothing to Studio.",
+  "factLock": {"Te": 52, "I": 53},
+  "testAndComparePairs": [
+    {
+      "slot": 1,
+      "role": "main",
+      "title": "What's Really Inside an Atom?",
+      "thumbId": "A",
+      "jpg": "Selected/hos_004_thumb_A_atom_live_v04.jpg",
+      "version": "v04"
+    },
+    {
+      "slot": 2,
+      "role": "alt",
+      "title": "Why Is the Periodic Table in This Order?",
+      "thumbId": "C",
+      "jpg": "Selected/hos_004_thumb_C_hidden_number_live_v06.jpg",
+      "version": "v06"
+    },
+    {
+      "slot": 3,
+      "role": "alt",
+      "title": "How Small Can You Cut Gold?",
+      "thumbId": "B",
+      "jpg": "Selected/hos_004_thumb_B_cut_gold_live_v04.jpg",
+      "version": "v04"
+    }
+  ],
+  "upload": false,
+  "studio": false,
+  "icloud": "HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/",
+  "familySheet": "Selected/hos_004_thumbs_v06_family_vs_002_live.jpg",
+  "superseded": [
+    "hos_004_thumb_C_hidden_number_live_v05_superseded.jpg",
+    "hos_004_thumb_C_hidden_number_live_v05.jpg"
+  ]
+}
