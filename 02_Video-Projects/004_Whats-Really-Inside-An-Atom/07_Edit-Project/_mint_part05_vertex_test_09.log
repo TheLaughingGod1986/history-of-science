@@ -1,0 +1,14 @@
+VERTEX TEST one plate only → 09_one_rung_each quality=Fast (Ben Free Trial; no further Vertex until billing confirm)
+Vertex client ready project=gen-lang-client-0538779324 location=us-central1 (ADC; never printing tokens)
+
+=== MINT 09_one_rung_each try=1 Fast model=veo-3.1-fast-generate-001 path=vertex project=gen-lang-client-0538779324 location=us-central1 credits_before=12 framing=try1 ===
+/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_mint_part05_flow_cdp_v01.py:959: DeprecationWarning: The generate_videos method with prompt/image/video arguments is deprecated and will be removed in a future major release (not before 2026-07-31). Please use the source argument instead.
+  op = client.models.generate_videos(
+  vertex poll 09_one_rung_each … 14s
+  vertex poll 09_one_rung_each … 27s
+  vertex poll 09_one_rung_each … 40s
+  vertex poll 09_one_rung_each … 52s
+  vertex poll 09_one_rung_each … 66s
+KEEP 09_one_rung_each path=vertex → 09_one_rung_each_v01.mp4
+VERTEX TEST DONE status=KEEP project=gen-lang-client-0538779324 billing=None location=us-central1 model=veo-3.1-fast-generate-001
+STOP: do not mint further Vertex plates until Ben confirms trial credit applied

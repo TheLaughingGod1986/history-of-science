@@ -13,7 +13,7 @@
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
 | Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–04 `mint: false` (04 rough v01 pending Ben) · 05 `mint: false` · Explorer used ×2 (P02 + P04 stadium pea); remaining P05 · no Explorer in Part 03 |
-| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”) · **Part 03 rough v01 PASS** (Ben: “fine”). **Part 04 rough v02 PASS** (Ben 28 Sep). Part 05 unlocked. |
+| Picture | **Part 01 rough v05 PASS** · **Part 02 rough v01 PASS** (“best yet”) · **Part 03 rough v01 PASS** (Ben: “fine”). **Part 04 rough v02 PASS** (Ben 28 Sep). **Part 05 rough v03 PASS** (Ben 29 Sep). Full join next. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
@@ -54,7 +54,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | **22** (4–6 s splits) | false (rough v01) |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Part 05 (Moseley / X-rays). Part 04 v02 PASS.
+**Next:** full-film join `hos_004_full_join_v01` (Parts 01–05 passed). Part 05 v03 PASS.
 
 ---
 
@@ -193,4 +193,21 @@ Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · `part01_rough_v04_lan
 - **Polish check:** `PART04_V02_POLISH_CHECK.md` — `09` HOLD; `05`/`12` would improve but Gemini 429 + Flow credits=3 (buffer 150) blocked remint → **v02 stays the passed cut** (no v03).
 - iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part04_rough_v02.mp4`
 - Land PR #154. Next: Part 05.
+
+## Part 05 — mint blocked (28 Sep 2026)
+
+- Pre-mint VO audit: `PART05_PRE_MINT_AUDIT.md` · board `part-05_plates_v02.json` (27 Veo @ ~5.2s + end card)
+- Stills ready under `04_Generated-Clips/part05/refs/v01_stills/`
+- **Mint blocked (superseded):** Flow credits were low / Gemini 429 — Ben waived buffer; mint completed via Flow → Gemini → Vertex.
+- PR #155 carried Part 05 tooling + roughs.
+
+## Part 05 PASS (Ben 29 Sep 2026)
+
+- **Passed cut:** `hos_004_part05_rough_v03.mp4`
+- **sha256:** `b391bff0dbe8a8ae0130adef4f7f3d7b79aca2cb34a934d9cf42d76e1d03363f`
+- **Duration:** 144.516 s · VO v04 · TEMP bed −20 dB sidechain
+- **Path:** Flow CDP → Gemini API → Vertex for last plates; remints 14 / 22 / 26 (stadium purge)
+- **Mint log:** `07_Edit-Project/PART05_MINT_LOG_v01.json` (`PART05_PASSED_V03`)
+- **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v03.mp4`
+- Do **not** label KEEP/LOCKED. Land PR #155. **Next:** full-film join `hos_004_full_join_v01` for Thu 15 Oct 18:00.
 

@@ -1,0 +1,520 @@
+  dismissed banner via 'Agree'
+GATE PASS account=benoats@googlemail.com credits=142
+BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=142
+SERIAL (await first KEEP) → 01_manchester_1913
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Gemini client ready (key from .env)
+  Gemini probe first for 01_manchester_1913 try=1…
+
+=== MINT 01_manchester_1913 try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=142 framing=try1 ===
+/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_mint_part05_flow_cdp_v01.py:714: DeprecationWarning: The generate_videos method with prompt/image/video arguments is deprecated and will be removed in a future major release (not before 2026-07-31). Please use the source argument instead.
+  op = client.models.generate_videos(
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  Gemini still 429 → Flow reserve
+
+=== MINT 01_manchester_1913 try=1 Fast model=Veo 3.1 - Fast credits_before=142 framing=try1 scenery_only chars=548 ===
+  dismissed banner via 'Agree'
+  scenery-only (no Orbit identity ref)
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  pinned project_url=https://flow.google.com/project/cbc41963-9177-4d22-8c96-6eec4e2f26f5
+  flow: https://flow.google.com/project/cbc41963-9177-4d22-8c96-6eec4e2f26f5
+  dismissed banner via 'Agree'
+  create-mode: Agent OFF video_settings=True
+  Agent settings path failed (Flow Settings (tune) button not found); trying prompt pill…
+  outputs clicked x1=None
+  video model locked: Veo 3.1 - Fast
+  settings closed via escape (prompt pill)
+  post-settings…
+  setting scenery-only prompt (no Orbit chip)…
+  set_prompt insert_text chars=548 dirty=False
+  set_prompt ok head='IMAGE-TO-VIDEO from text description (no attached still). Pr'
+  submitting Create…
+  create-mode: Agent OFF video_settings=True
+  clicking Flow send ('arrow_forward')
+  submitted Create (scenery-only, no Orbit ref)
+  wait 0s status=9% new_media=0 gen=True
+  wait 4s status=13% new_media=0 gen=True
+  wait 8s status=17% new_media=0 gen=True
+  waiting for gallery thumbs (#1) pct=22 thumbs=0
+  wait 12s status=22% new_media=0 gen=True
+  wait 16s status=25% new_media=0 gen=True
+  gen running (28% @ 20s) — defer to fresh-browser harvest (thumbs=0 new=0)
+  gallery-pending:0 — caller must fresh-browser harvest
+  gallery harvest via https://flow.google.com/project/cbc41963-9177-4d22-8c96-6eec4e2f26f5
+  dismissed banner via 'Agree'
+  harvest start thumbs=0
+  harvest poll thumbs=0 new=0 captured=0 elapsed=0s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=0 new=0 captured=0 elapsed=11s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=1 new=1 captured=0 elapsed=21s
+  net mp4 4006423
+  harvest saved 01_manchester_1913_t1.mp4 bytes=4006423 via=play-net
+  → KEEP path=flow-cdp motion_ok scene_hits=19 dur=8.00s used=None rem=None sha=c6c41704dff9
+  KEEP 01_manchester_1913 → 01_manchester_1913_v01.mp4 path=flow-cdp
+BATCH continue → 02_train_in_tube
+  Gemini probe first for 02_train_in_tube try=1…
+
+=== MINT 02_train_in_tube try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=132 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  Gemini still 429 → Flow reserve
+
+=== MINT 02_train_in_tube try=1 Fast model=Veo 3.1 - Fast credits_before=132 framing=try1 scenery_only chars=482 ===
+  dismissed banner via 'Agree'
+  scenery-only (no Orbit identity ref)
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  pinned project_url=https://flow.google.com/project/0027c145-6e84-4714-85a8-499388c9d50a
+  flow: https://flow.google.com/project/0027c145-6e84-4714-85a8-499388c9d50a
+  dismissed banner via 'Agree'
+  create-mode: Agent OFF video_settings=True
+  Agent settings path failed (Flow Settings (tune) button not found); trying prompt pill…
+  outputs clicked x1=None
+  video model locked: Veo 3.1 - Fast
+  settings closed via escape (prompt pill)
+  post-settings…
+  setting scenery-only prompt (no Orbit chip)…
+  set_prompt insert_text chars=482 dirty=False
+  set_prompt ok head='IMAGE-TO-VIDEO from text description (no attached still). Pr'
+  submitting Create…
+  create-mode: Agent OFF video_settings=True
+  clicking Flow send ('arrow_forward')
+  submitted Create (scenery-only, no Orbit ref)
+  wait 0s status=10% new_media=0 gen=True
+  wait 4s status=14% new_media=0 gen=True
+  wait 8s status=17% new_media=0 gen=True
+  waiting for gallery thumbs (#1) pct=22 thumbs=0
+  wait 12s status=22% new_media=0 gen=True
+  wait 16s status=25% new_media=0 gen=True
+  gen running (29% @ 20s) — defer to fresh-browser harvest (thumbs=0 new=0)
+  gallery-pending:0 — caller must fresh-browser harvest
+  gallery harvest via https://flow.google.com/project/0027c145-6e84-4714-85a8-499388c9d50a
+  dismissed banner via 'Agree'
+  harvest start thumbs=0
+  harvest poll thumbs=0 new=0 captured=0 elapsed=0s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=0 new=0 captured=0 elapsed=11s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=1 new=1 captured=0 elapsed=21s
+  net mp4 3350939
+  net mp4 3350939
+  harvest saved 02_train_in_tube_t1.mp4 bytes=3350939 via=play-net
+  → KEEP path=flow-cdp motion_ok scene_hits=4 dur=8.00s used=None rem=None sha=4982a3d0c845
+  KEEP 02_train_in_tube → 02_train_in_tube_v01.mp4 path=flow-cdp
+BATCH continue → 03_targets_swap
+  Gemini probe first for 03_targets_swap try=1…
+
+=== MINT 03_targets_swap try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=122 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  Gemini still 429 → Flow reserve
+
+=== MINT 03_targets_swap try=1 Fast model=Veo 3.1 - Fast credits_before=122 framing=try1 scenery_only chars=456 ===
+  dismissed banner via 'Agree'
+  scenery-only (no Orbit identity ref)
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  pinned project_url=https://flow.google.com/project/b604bd3e-aba4-4ae4-9495-9f7cd3e86f56
+  flow: https://flow.google.com/project/b604bd3e-aba4-4ae4-9495-9f7cd3e86f56
+  dismissed banner via 'Agree'
+  create-mode: Agent OFF video_settings=True
+  Agent settings path failed (Flow Settings (tune) button not found); trying prompt pill…
+  outputs clicked x1=None
+  video model locked: Veo 3.1 - Fast
+  settings closed via escape (prompt pill)
+  post-settings…
+  setting scenery-only prompt (no Orbit chip)…
+  set_prompt insert_text chars=456 dirty=False
+  set_prompt ok head='IMAGE-TO-VIDEO from text description (no attached still). Pr'
+  submitting Create…
+  create-mode: Agent OFF video_settings=True
+  clicking Flow send ('arrow_forward')
+  submitted Create (scenery-only, no Orbit ref)
+  wait 0s status=9% new_media=0 gen=True
+  wait 4s status=12% new_media=0 gen=True
+  wait 8s status=17% new_media=0 gen=True
+  waiting for gallery thumbs (#1) pct=22 thumbs=0
+  wait 12s status=22% new_media=0 gen=True
+  wait 16s status=25% new_media=0 gen=True
+  gen running (28% @ 20s) — defer to fresh-browser harvest (thumbs=0 new=0)
+  gallery-pending:0 — caller must fresh-browser harvest
+  gallery harvest via https://flow.google.com/project/b604bd3e-aba4-4ae4-9495-9f7cd3e86f56
+  dismissed banner via 'Agree'
+  harvest start thumbs=0
+  harvest poll thumbs=0 new=0 captured=0 elapsed=0s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=0 new=0 captured=0 elapsed=11s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=0 new=0 captured=0 elapsed=21s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=1 new=1 captured=0 elapsed=32s
+  net mp4 3097696
+  net mp4 3097696
+  net mp4 3097696
+  harvest saved 03_targets_swap_t1.mp4 bytes=3097696 via=play-net
+  → KEEP path=flow-cdp motion_ok scene_hits=4 dur=8.00s used=None rem=None sha=d49616d58511
+  KEEP 03_targets_swap → 03_targets_swap_v01.mp4 path=flow-cdp
+BATCH continue → 04_electrons_fire
+  Gemini probe first for 04_electrons_fire try=1…
+
+=== MINT 04_electrons_fire try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=112 framing=try1 ===
+  gemini poll 04_electrons_fire … 13s
+  gemini poll 04_electrons_fire … 25s
+  gemini poll 04_electrons_fire … 37s
+  gemini poll 04_electrons_fire … 50s
+  gemini poll 04_electrons_fire … 62s
+  gemini poll 04_electrons_fire … 74s
+  gemini poll 04_electrons_fire … 86s
+  → KEEP path=gemini-api motion_ok scene_hits=25 dur=8.00s used=None rem=112 sha=ba6ec31f97cb
+  KEEP 04_electrons_fire → 04_electrons_fire_v01.mp4 path=gemini-api
+BATCH continue → 05_xrays_from_metal
+  Gemini probe first for 05_xrays_from_metal try=1…
+
+=== MINT 05_xrays_from_metal try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=112 framing=try1 ===
+  gemini poll 05_xrays_from_metal … 13s
+  gemini poll 05_xrays_from_metal … 26s
+  gemini poll 05_xrays_from_metal … 38s
+  gemini poll 05_xrays_from_metal … 50s
+  gemini poll 05_xrays_from_metal … 62s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=112 sha=cd521fa7434e
+  KEEP 05_xrays_from_metal → 05_xrays_from_metal_v01.mp4 path=gemini-api
+BATCH continue → 06_rontgen_hand
+  Gemini probe first for 06_rontgen_hand try=1…
+
+=== MINT 06_rontgen_hand try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=112 framing=try1 ===
+  gemini poll 06_rontgen_hand … 14s
+  gemini poll 06_rontgen_hand … 26s
+  gemini poll 06_rontgen_hand … 38s
+  gemini poll 06_rontgen_hand … 51s
+  gemini poll 06_rontgen_hand … 63s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=112 sha=2f2f6b087ed6
+  KEEP 06_rontgen_hand → 06_rontgen_hand_v01.mp4 path=gemini-api
+BATCH continue → 07_crystal_split
+  Gemini probe first for 07_crystal_split try=1…
+
+=== MINT 07_crystal_split try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=112 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  Gemini still 429 → Flow reserve
+
+=== MINT 07_crystal_split try=1 Quality model=Veo 3.1 - Quality credits_before=112 framing=try1 scenery_only chars=486 ===
+  dismissed banner via 'Agree'
+  scenery-only (no Orbit identity ref)
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  dismissed banner via 'Agree'
+  pinned project_url=https://flow.google.com/project/bc8e39df-810c-4968-b9c8-d20b41976336
+  flow: https://flow.google.com/project/bc8e39df-810c-4968-b9c8-d20b41976336
+  dismissed banner via 'Agree'
+  create-mode: Agent OFF video_settings=True
+  Agent settings path failed (Flow Settings (tune) button not found); trying prompt pill…
+  outputs clicked x1=None
+  video model locked: Veo 3.1 - Quality
+  settings closed via escape (prompt pill)
+  post-settings…
+  setting scenery-only prompt (no Orbit chip)…
+  set_prompt insert_text chars=486 dirty=False
+  set_prompt ok head='IMAGE-TO-VIDEO from text description (no attached still). Pr'
+  submitting Create…
+  create-mode: Agent OFF video_settings=True
+  clicking Flow send ('arrow_forward')
+  submitted Create (scenery-only, no Orbit ref)
+  wait 0s status=8% new_media=0 gen=True
+  wait 4s status=10% new_media=0 gen=True
+  wait 8s status=14% new_media=0 gen=True
+  waiting for gallery thumbs (#1) pct=17 thumbs=0
+  wait 12s status=17% new_media=0 gen=True
+  wait 16s status=21% new_media=0 gen=True
+  gen running (23% @ 20s) — defer to fresh-browser harvest (thumbs=0 new=0)
+  gallery-pending:0 — caller must fresh-browser harvest
+  gallery harvest via https://flow.google.com/project/bc8e39df-810c-4968-b9c8-d20b41976336
+  dismissed banner via 'Agree'
+  harvest start thumbs=0
+  harvest poll thumbs=0 new=0 captured=0 elapsed=0s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=0 new=0 captured=0 elapsed=11s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=0 new=0 captured=0 elapsed=21s
+  dismissed banner via 'Agree'
+  harvest poll thumbs=1 new=1 captured=0 elapsed=32s
+  net mp4 3544419
+  net mp4 3544419
+  net mp4 3544419
+  net mp4 3544419
+  harvest saved 07_crystal_split_t1.mp4 bytes=3544419 via=play-net
+  → KEEP path=flow-cdp motion_ok scene_hits=10 dur=8.00s used=None rem=None sha=8e0bcb7e9a4d
+  KEEP 07_crystal_split → 07_crystal_split_v01.mp4 path=flow-cdp
+BATCH continue → 08_ladder_pattern
+  Quality→Fast (credits=12 < Quality est 100)
+  Gemini probe first for 08_ladder_pattern try=1…
+
+=== MINT 08_ladder_pattern try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  Gemini still 429 → Flow reserve
+STOP out of credits: Flow=12 (need ≥20 Fast) and Gemini 429
+STOP out of credits at 08_ladder_pattern: Flow=12
+
+===== RESUME 2026-09-28T16:08:10Z Flow-out→Gemini backoff =====
+  dismissed banner via 'Agree'
+GATE PASS account=benoats@googlemail.com credits=12
+BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=12
+SKIP 01_manchester_1913 already KEEP 01_manchester_1913_v01.mp4
+SKIP 02_train_in_tube already KEEP 02_train_in_tube_v01.mp4
+SKIP 03_targets_swap already KEEP 03_targets_swap_v01.mp4
+SKIP 04_electrons_fire already KEEP 04_electrons_fire_v01.mp4
+SKIP 05_xrays_from_metal already KEEP 05_xrays_from_metal_v01.mp4
+SKIP 06_rontgen_hand already KEEP 06_rontgen_hand_v01.mp4
+SKIP 07_crystal_split already KEEP 07_crystal_split_v01.mp4
+BATCH continue → 08_ladder_pattern
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Gemini client ready (key from .env)
+  Gemini probe first for 08_ladder_pattern try=1…
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_mint_part05_flow_cdp_v01.py:740: DeprecationWarning: The generate_videos method with prompt/image/video arguments is deprecated and will be removed in a future major release (not before 2026-07-31). Please use the source argument instead.
+  op = client.models.generate_videos(
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T16:09:20.539307+00:00 plate=08_ladder_pattern wait=1709s (~28.5m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1709s then retry (solid 0.0m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T16:38:50.691950+00:00 plate=08_ladder_pattern wait=1563s (~26.1m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1563s then retry (solid 29.5m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T17:05:54.631703+00:00 plate=08_ladder_pattern wait=1330s (~22.2m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1330s then retry (solid 56.6m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T17:29:05.685095+00:00 plate=08_ladder_pattern wait=1295s (~21.6m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1295s then retry (solid 79.8m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T17:51:41.919777+00:00 plate=08_ladder_pattern wait=1635s (~27.2m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1635s then retry (solid 102.4m / 180m)
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini 429 — sleep 20s probe (1/2) then Flow if still blocked
+  gemini 429 — sleep 40s probe (2/2) then Flow if still blocked
+  GEMINI 429 retry logged at=2026-09-28T18:19:57.927003+00:00 plate=08_ladder_pattern wait=1233s (~20.6m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; sleep 1233s then retry (solid 130.6m / 180m)
+
+===== SHORT RETRY RESUME 2026-09-28T18:26:42Z =====
+  dismissed banner via 'Agree'
+GATE PASS account=benoats@googlemail.com credits=12
+BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=12
+SKIP 01_manchester_1913 already KEEP 01_manchester_1913_v01.mp4
+SKIP 02_train_in_tube already KEEP 02_train_in_tube_v01.mp4
+SKIP 03_targets_swap already KEEP 03_targets_swap_v01.mp4
+SKIP 04_electrons_fire already KEEP 04_electrons_fire_v01.mp4
+SKIP 05_xrays_from_metal already KEEP 05_xrays_from_metal_v01.mp4
+SKIP 06_rontgen_hand already KEEP 06_rontgen_hand_v01.mp4
+SKIP 07_crystal_split already KEEP 07_crystal_split_v01.mp4
+BATCH continue → 08_ladder_pattern
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Gemini client ready (key from .env)
+  Gemini probe first for 08_ladder_pattern try=1…
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_mint_part05_flow_cdp_v01.py:738: DeprecationWarning: The generate_videos method with prompt/image/video arguments is deprecated and will be removed in a future major release (not before 2026-07-31). Please use the source argument instead.
+  op = client.models.generate_videos(
+  GEMINI 429 retry logged at=2026-09-28T18:26:51.603664+00:00 plate=08_ladder_pattern wait=120s (~2.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; short retry 1/3 after 120s
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-28T18:28:52.088816+00:00 plate=08_ladder_pattern wait=120s (~2.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; short retry 2/3 after 120s
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-28T18:30:52.612499+00:00 plate=08_ladder_pattern wait=0s (~0.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+STOP Gemini 429 after 3 attempts at 08_ladder_pattern (Flow=12)
+EXACT_ERROR: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}
+STOP Gemini 429 at 08_ladder_pattern: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}
+
+===== GEMINI RESUME FROM 08 2026-09-29T07:40:49Z =====
+  dismissed banner via 'Agree'
+GATE PASS account=benoats@googlemail.com credits=12
+BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=12
+SKIP 01_manchester_1913 already KEEP 01_manchester_1913_v01.mp4
+SKIP 02_train_in_tube already KEEP 02_train_in_tube_v01.mp4
+SKIP 03_targets_swap already KEEP 03_targets_swap_v01.mp4
+SKIP 04_electrons_fire already KEEP 04_electrons_fire_v01.mp4
+SKIP 05_xrays_from_metal already KEEP 05_xrays_from_metal_v01.mp4
+SKIP 06_rontgen_hand already KEEP 06_rontgen_hand_v01.mp4
+SKIP 07_crystal_split already KEEP 07_crystal_split_v01.mp4
+BATCH continue → 08_ladder_pattern
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Gemini client ready (key from .env)
+  Gemini probe first for 08_ladder_pattern try=1…
+
+=== MINT 08_ladder_pattern try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_mint_part05_flow_cdp_v01.py:814: DeprecationWarning: The generate_videos method with prompt/image/video arguments is deprecated and will be removed in a future major release (not before 2026-07-31). Please use the source argument instead.
+  op = client.models.generate_videos(
+  gemini poll 08_ladder_pattern … 13s
+  gemini poll 08_ladder_pattern … 25s
+  gemini poll 08_ladder_pattern … 37s
+  gemini poll 08_ladder_pattern … 50s
+  gemini poll 08_ladder_pattern … 62s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=8a4d0f683c27
+  KEEP 08_ladder_pattern → 08_ladder_pattern_v01.mp4 path=gemini-api
+SKIP 09_one_rung_each already KEEP 09_one_rung_each_v01.mp4
+BATCH continue → 10_count_rungs
+  Gemini probe first for 10_count_rungs try=1…
+
+=== MINT 10_count_rungs try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 10_count_rungs … 13s
+  gemini poll 10_count_rungs … 25s
+  gemini poll 10_count_rungs … 38s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=ff052cdd1073
+  KEEP 10_count_rungs → 10_count_rungs_v01.mp4 path=gemini-api
+BATCH continue → 11_charge_nucleus
+  Gemini probe first for 11_charge_nucleus try=1…
+
+=== MINT 11_charge_nucleus try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 11_charge_nucleus … 13s
+  gemini poll 11_charge_nucleus … 26s
+  gemini poll 11_charge_nucleus … 38s
+  gemini poll 11_charge_nucleus … 50s
+  gemini poll 11_charge_nucleus … 62s
+  gemini poll 11_charge_nucleus … 75s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=d0c19f2208d0
+  KEEP 11_charge_nucleus → 11_charge_nucleus_v01.mp4 path=gemini-api
+BATCH continue → 12_sort_table
+  Gemini probe first for 12_sort_table try=1…
+
+=== MINT 12_sort_table try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 12_sort_table … 13s
+  gemini poll 12_sort_table … 25s
+  gemini poll 12_sort_table … 38s
+  gemini poll 12_sort_table … 50s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=589a7d8bbd17
+  KEEP 12_sort_table → 12_sort_table_v01.mp4 path=gemini-api
+BATCH continue → 13_te_i
+  Gemini probe first for 13_te_i try=1…
+
+=== MINT 13_te_i try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 13_te_i … 13s
+  gemini poll 13_te_i … 25s
+  gemini poll 13_te_i … 38s
+  gemini poll 13_te_i … 50s
+  → KEEP path=gemini-api motion_ok scene_hits=13 dur=8.00s used=None rem=12 sha=de6cbe1fa7e9
+  KEEP 13_te_i → 13_te_i_v01.mp4 path=gemini-api
+BATCH continue → 14_co_ni
+  Gemini probe first for 14_co_ni try=1…
+
+=== MINT 14_co_ni try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 14_co_ni … 13s
+  gemini poll 14_co_ni … 25s
+  gemini poll 14_co_ni … 38s
+  gemini poll 14_co_ni … 50s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=15e44c2ef7eb
+  KEEP 14_co_ni → 14_co_ni_v01.mp4 path=gemini-api
+BATCH continue → 15_rule_fixes
+  Gemini probe first for 15_rule_fixes try=1…
+
+=== MINT 15_rule_fixes try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 15_rule_fixes … 14s
+  gemini poll 15_rule_fixes … 26s
+  gemini poll 15_rule_fixes … 38s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=4fbbada6cd8b
+  KEEP 15_rule_fixes → 15_rule_fixes_v01.mp4 path=gemini-api
+BATCH continue → 16_wrong_ruler
+  Gemini probe first for 16_wrong_ruler try=1…
+
+=== MINT 16_wrong_ruler try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 16_wrong_ruler … 13s
+  gemini poll 16_wrong_ruler … 25s
+  gemini poll 16_wrong_ruler … 38s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=0c6ca22e66e6
+  KEEP 16_wrong_ruler → 16_wrong_ruler_v01.mp4 path=gemini-api
+BATCH continue → 17_missing_rungs
+  Gemini probe first for 17_missing_rungs try=1…
+
+=== MINT 17_missing_rungs try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 17_missing_rungs … 13s
+  gemini poll 17_missing_rungs … 25s
+  gemini poll 17_missing_rungs … 37s
+  gemini poll 17_missing_rungs … 50s
+  gemini poll 17_missing_rungs … 62s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=9a89544136e8
+  KEEP 17_missing_rungs → 17_missing_rungs_v01.mp4 path=gemini-api
+BATCH continue → 18_gaps_fill
+  Gemini probe first for 18_gaps_fill try=1…
+
+=== MINT 18_gaps_fill try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 18_gaps_fill … 13s
+  gemini poll 18_gaps_fill … 25s
+  gemini poll 18_gaps_fill … 37s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=b1e91bcd3a2c
+  KEEP 18_gaps_fill → 18_gaps_fill_v01.mp4 path=gemini-api
+BATCH continue → 19_columns_why
+  Gemini probe first for 19_columns_why try=1…
+
+=== MINT 19_columns_why try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 19_columns_why … 13s
+  gemini poll 19_columns_why … 25s
+  gemini poll 19_columns_why … 37s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=181f406e7085
+  KEEP 19_columns_why → 19_columns_why_v01.mp4 path=gemini-api
+BATCH continue → 20_charge_electrons
+  Gemini probe first for 20_charge_electrons try=1…
+
+=== MINT 20_charge_electrons try=1 Quality model=veo-3.1-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 20_charge_electrons … 13s
+  gemini poll 20_charge_electrons … 25s
+  gemini poll 20_charge_electrons … 38s
+  gemini poll 20_charge_electrons … 50s
+  gemini poll 20_charge_electrons … 62s
+  → KEEP path=gemini-api soft-motion scene_hits=1 dur=8.00s (cinematic OK) used=None rem=12 sha=73a78ddddacd
+  KEEP 20_charge_electrons → 20_charge_electrons_v01.mp4 path=gemini-api
+BATCH continue → 21_same_column
+  Gemini probe first for 21_same_column try=1…
+
+=== MINT 21_same_column try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 21_same_column … 13s
+  gemini poll 21_same_column … 25s
+  gemini poll 21_same_column … 37s
+  gemini poll 21_same_column … 50s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=be3a9db259ad
+  KEEP 21_same_column → 21_same_column_v01.mp4 path=gemini-api
+BATCH continue → 22_soft_metals_halogens
+  Gemini probe first for 22_soft_metals_halogens try=1…
+
+=== MINT 22_soft_metals_halogens try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  gemini poll 22_soft_metals_halogens … 13s
+  gemini poll 22_soft_metals_halogens … 25s
+  gemini poll 22_soft_metals_halogens … 38s
+  → KEEP path=gemini-api motion_ok scene_hits=4 dur=8.00s used=None rem=12 sha=7170ae0a5176
+  KEEP 22_soft_metals_halogens → 22_soft_metals_halogens_v01.mp4 path=gemini-api
+BATCH continue → 23_quiet_memorial
+  Gemini probe first for 23_quiet_memorial try=1…
+
+=== MINT 23_quiet_memorial try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-29T07:52:39.599194+00:00 plate=23_quiet_memorial wait=120s (~2.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; short retry 1/3 after 120s
+
+=== MINT 23_quiet_memorial try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-29T07:54:40.085485+00:00 plate=23_quiet_memorial wait=120s (~2.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+  Flow out (credits=12) — Gemini 429; short retry 2/3 after 120s
+
+=== MINT 23_quiet_memorial try=1 Fast model=veo-3.1-lite-generate-preview path=gemini-api credits_before=12 framing=try1 ===
+  GEMINI 429 retry logged at=2026-09-29T07:56:40.784553+00:00 plate=23_quiet_memorial wait=0s (~0.0m) err=429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on
+STOP Gemini 429 after 3 attempts at 23_quiet_memorial (Flow=12)
+EXACT_ERROR: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}
+STOP Gemini 429 at 23_quiet_memorial: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}
