@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "method": "youtube_studio_playwright_cdp",
+  "channel": {
+    "name": "History of Science",
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "studioUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": [
+    "@OrbitWithBen",
+    "@OpptiAI",
+    "Orbit .env",
+    "HOS Content Ops .env / API package upload"
+  ],
+  "video": {
+    "file": "hos_004_full_v02.mp4",
+    "sha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
+    "durationSec": 524.7,
+    "title": "What's Really Inside an Atom?",
+    "thumb": "hos_004_thumb_A_atom_live_v04.jpg",
+    "platformPostId": "GHZDsiH7L7A",
+    "platformUrl": "https://youtu.be/GHZDsiH7L7A",
+    "watchUrl": "https://www.youtube.com/watch?v=GHZDsiH7L7A",
+    "studioEdit": "https://studio.youtube.com/video/GHZDsiH7L7A/edit"
+  },
+  "schedule": {
+    "label": "Thursday 15 Oct 2026 18:00 Europe/London",
+    "publishAt": "2026-10-15T17:00:00.000Z",
+    "type": "schedule",
+    "premiere": false,
+    "visibilityUntilThen": "private",
+    "studioTooltip": "You scheduled this video. This video is currently private, and is scheduled to become public on 15 October 2026 at 18:00.",
+    "verifiedAt": "2026-09-29T19:24:00+01:00",
+    "screenshot": "evidence_2026-09-29_studio/689_schedule_proof.png",
+    "screenshotAlt": "evidence_2026-09-29_studio/146_proof.png"
+  },
+  "madeForKids": false,
+  "affiliate": null,
+  "shortsUploaded": false,
+  "shortsNote": "Shorts stay on hold until Ben phone watch. Do not upload.",
+  "testAndCompare": {
+    "wanted": "Title and thumbnail",
+    "studioOffers": [
+      "Title only",
+      "Thumbnail only",
+      "Title and thumbnail"
+    ],
+    "chosen": "Title and thumbnail",
+    "pairsWanted": [
+      {
+        "title": "What's Really Inside an Atom?",
+        "thumb": "hos_004_thumb_A_atom_live_v04.jpg"
+      },
+      {
+        "title": "Why Is the Periodic Table in This Order?",
+        "thumb": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+      },
+      {
+        "title": "How Small Can You Cut Gold?",
+        "thumb": "hos_004_thumb_B_cut_gold_live_v04.jpg"
+      }
+    ],
+    "running": false,
+    "ok": false,
+    "note": "Studio A/B dialog opens and offers Title and thumbnail (plus Title only / Thumbnail only). Set test stayed disabled — second/third title+thumbnail pairs could not be completed reliably via CDP (file inputs overwrite the same slot; title fields not always exposed). Do not guess. Manual Set test in Studio on launch prep is required."
+  },
+  "endScreen": {
+    "wanted": {
+      "relatedVideoId": "AL_-qlWko_g",
+      "relatedTitle": "How Did We Discover the Periodic Table?",
+      "subscribe": true
+    },
+    "lastSeen": {
+      "video": "Most recent upload",
+      "subscribe": "History of Science",
+      "studioWarning": "End screen elements won't display on the watch page for private videos.",
+      "studioError": "There was a problem in processing your video. As a result, your recent edits were not saved."
+    },
+    "ok": false,
+    "note": "Subscribe + video element were placed (Most recent upload, not confirmed Specific video AL_-qlWko_g). Studio then showed a processing error and NaN timestamps; save may not have persisted. Re-set end screen (002 Specific + Subscribe) after processing settles / on launch day."
+  },
+  "pinnedComment": {
+    "ok": false,
+    "reason": "watch_page_not_commentable_while_scheduled_or_private",
+    "textFile": "Pinned-Comments/atom_long_pinned-comment_v01.txt",
+    "note": "Pin on launch day 15 Oct 2026 — Studio blocks comments while the video is private/scheduled."
+  },
+  "captions": {
+    "file": "Captions/hos_004_full_v02.en.srt",
+    "ok": false,
+    "note": "Studio translations file input not found in this session; captions may still need manual upload."
+  },
+  "tagsTrimmedTo": 493,
+  "evidenceDir": "evidence_2026-09-29_studio/",
+  "scripts": [
+    "_upload_hos_004_studio_schedule_v01.py",
+    "_finish_hos_004_studio_schedule_v01.py",
+    "_finish3_hos_004_tc_endscreen_v01.py",
+    "_finish5_hos_004_tc_endscreen_v01.py",
+    "_finish6_hos_004_tc_endscreen_v01.py"
+  ]
+}

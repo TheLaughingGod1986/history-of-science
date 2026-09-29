@@ -287,27 +287,33 @@ C lander: `_land_hos_004_thumb_C_live_v06.py`. Index: `THUMBS_INDEX_v06.json`.
 
 T&C: 1 Atom+A · 2 Periodic+C v06 · 3 Gold+B. Family: `hos_004_thumbs_v06_family_vs_002_live.jpg`.
 
-## STEP 5 package — **UPLOAD BLOCKED** (Ben yes received · dry-run not clean)
+## STEP 5 package — **UPLOADED via Studio** (29 Sep 2026)
 
-Ben explicit yes (29 Sep 2026): *“Yes, upload private and schedule Thu 15 Oct 18:00 as soon as the dry run is clean, no need to show me first.”*
+Ben (29 Sep 18:33): skip API/`.env` — upload through YouTube Studio CDP on Mini (HOS Chrome profile). Never Orbit.
 
-**Gate failed → no upload.** Package metadata from the music-PASS dry-run is correct (title · private · `publishAt` 2026-10-15T17:00:00Z · no Premiere · full_v02 sha `ed870939…` · C v06 T&C), but the **live npm dry-run is not clean**:
-
-| Check | Result |
+| Field | Value |
 |---|---|
-| Title / privacy / publishAt / no Premiere / v02 sha | OK in resolved package |
-| `npm run youtube:package -- --dry-run` | **FAIL** — `DATABASE_URL` undefined |
-| HOS `07_Content-Ops/.env` | **absent** |
-| Orbit `.env` used? | **No** (forbidden) |
-| Video id | **none** — nothing uploaded |
+| Method | Playwright CDP `:9460` · `~/.hos-chrome-youtube-studio` |
+| Channel | **@HistoryOfScienceYT** · `UCXp7HkBIl1LgaznXuZHJyRg` (checked first) |
+| Cut | `hos_004_full_v02.mp4` sha `ed870939…e98e` · 524.7 s |
+| Title | What's Really Inside an Atom? |
+| Thumb | A v04 |
+| Video id | **`GHZDsiH7L7A`** · https://youtu.be/GHZDsiH7L7A |
+| Visibility | **Scheduled** · private until then · **not Premiere** |
+| Air | **Thu 15 Oct 2026 18:00 Europe/London** (`2026-10-15T17:00:00.000Z`) |
+| Made for kids | No |
+| Proof | `11_Upload-Package/Schedule/evidence_2026-09-29_studio/689_schedule_proof.png` (tooltip: public 15 October 2026 at 18:00) |
+| Result JSON | `11_Upload-Package/Schedule/PACKAGE_UPLOAD_RESULT_2026-09-29.json` |
 
-**Env path required (HOS only):**  
-`/Users/benjaminoats/YouTube/History Of Science/07_Content-Ops/.env`  
-Do **not** copy or load `orbit-with-ben/07_Content-Ops/.env`. Do not print secrets.
+### Studio finish (partial)
 
-**Next:** Ben places HOS Content Ops `.env` at that path → re-run `npm run youtube:package -- --dry-run` clean → then private schedule upload (no Premiere · no Shorts). Record video id on main after that.
-
-Evidence: `Schedule/PACKAGE_DRY_RUN_MUSIC_PASS_2026-09-29.json` · `Schedule/UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json`
+| Item | Status |
+|---|---|
+| Test & Compare | Studio offers **Title only / Thumbnail only / Title and thumbnail**. Chose Title and thumbnail. **Set test not armed** — 2nd/3rd pairs not completed via CDP. Manual finish needed. |
+| End screen | Attempted Subscribe + video. Studio processing error / NaN times; last UI showed **Most recent upload** + Subscribe (not confirmed Specific `AL_-qlWko_g`). **Re-set 002 Specific + Subscribe** after processing settles. |
+| Pinned comment | **Deferred to launch day** — watch page not commentable while private/scheduled. |
+| Shorts | **Hold** — Ben phone watch. Do not upload. |
+| `.env` / API | **Not used.** Orbit never touched. |
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
@@ -321,6 +327,7 @@ Evidence: `Schedule/PACKAGE_DRY_RUN_MUSIC_PASS_2026-09-29.json` · `Schedule/UPL
 
 ## Upload / Shorts status (29 Sep 2026)
 
-- **Long upload:** STOPPED. Ben said go + claimed HOS `07_Content-Ops/.env` in place, but the file is **absent** on the Mini. `npm run youtube:package --dry-run` fails (`DATABASE_URL` undefined). Orbit `.env` not used. See `11_Upload-Package/Schedule/DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json`.
+- **Long upload:** **DONE via Studio** — id `GHZDsiH7L7A` · Scheduled **15 Oct 2026 18:00 UK** · no Premiere · no `.env`. See STEP 5 above + `PACKAGE_UPLOAD_RESULT_2026-09-29.json`.
+- **T&C / end screen / pin:** partial — finish manually (T&C Set test · end screen 002 Specific · pin on launch day).
 - **Thumbs:** A v04 · B v04 · **C v06** — Ben PASS (order 29 Sep).
-- **Shorts v04:** built 30 fps · gate PASS · iCloud HOS UAT `10_Shorts/` · **STOP phone watch**. Sun line ends “…Davy Medal for it.” No Shorts upload until Ben yes.
+- **Shorts v04:** built 30 fps · gate PASS · iCloud HOS UAT `10_Shorts/` · **STOP phone watch**. No Shorts upload until Ben yes.
