@@ -20,3 +20,8 @@ Scanned mid (~4s) frames of all 27 KEEP plates after Ben FAIL on Co/Ni lab shot.
 `01`–`13`, `15`–`21`, `23`–`25`, `27` — mid frames show interior lab/study or abstract science; windows are plain bright sky or closed walls. Single scientist on `01` only (not twins).
 
 Note: still-gen STYLE string still mentions “empty football stadium” (Part 04 leftover) — likely seed for stadium contamination on numbered-table plates.
+
+## Reminted (v03)
+
+- `22_soft_metals_halogens` — try1 windows stadium-ish → closed-wall remint KEEP
+- `26_explorer_count_table` — Vertex remint KEEP, single Explorer, city windows

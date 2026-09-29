@@ -1,9 +1,8 @@
-# HOS 004 Part 05 — plate path table (rough v02)
+# HOS 004 Part 05 — plate path table (rough v03)
 
-Rough: `hos_004_part05_rough_v02.mp4` · sha256 `31f9e77a99085a1323fc55c21e3327305dae387b71ef0ca11c87e5b068380cb8` · 144.516s
+Rough: `hos_004_part05_rough_v03.mp4` · sha256 `b391bff0dbe8a8ae0130adef4f7f3d7b79aca2cb34a934d9cf42d76e1d03363f` · 144.516s
 
-Remint: `14_co_ni` Vertex after Ben FAIL (stadium + twin scientists) on v01.
-Flag only (not reminted): `22_soft_metals_halogens`, `26_explorer_count_table` — stadium in mid frame.
+Remints: `14_co_ni` (v02) · `22_soft_metals_halogens` + `26_explorer_count_table` (v03, stadium purge).
 
 | Plate | Path | Model | Q/F | Dur | API s |
 |---|---|---|---|---:|---:|
@@ -20,7 +19,7 @@ Flag only (not reminted): `22_soft_metals_halogens`, `26_explorer_count_table` �
 | `11_charge_nucleus` | gemini-api | `veo-3.1-generate-preview` | Quality | 8.0 | 75.9 |
 | `12_sort_table` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 51.5 |
 | `13_te_i` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 50.9 |
-| `14_co_ni` | vertex | `veo-3.1-fast-generate-001` | Fast | 8.0 | 66.2 |
+| `14_co_ni` | vertex | `veo-3.1-fast-generate-001` | Fast | 8.0 | 66.3 |
 | `15_rule_fixes` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 39.4 |
 | `16_wrong_ruler` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 38.8 |
 | `17_missing_rungs` | gemini-api | `veo-3.1-generate-preview` | Quality | 8.0 | 63.0 |
@@ -28,7 +27,7 @@ Flag only (not reminted): `22_soft_metals_halogens`, `26_explorer_count_table` �
 | `19_columns_why` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 38.5 |
 | `20_charge_electrons` | gemini-api | `veo-3.1-generate-preview` | Quality | 8.0 | 63.4 |
 | `21_same_column` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 51.1 |
-| `22_soft_metals_halogens` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 38.8 |
+| `22_soft_metals_halogens` | vertex | `veo-3.1-fast-generate-001` | Fast | 8.0 | 66.5 |
 | `23_quiet_memorial` | vertex | `veo-3.1-fast-generate-001` | Fast | 8.0 | 66.4 |
 | `24_nobel_belief` | vertex | `veo-3.1-fast-generate-001` | Fast | 8.0 | 66.1 |
 | `25_atom_recap` | vertex | `veo-3.1-fast-generate-001` | Fast | 8.0 | 66.2 |

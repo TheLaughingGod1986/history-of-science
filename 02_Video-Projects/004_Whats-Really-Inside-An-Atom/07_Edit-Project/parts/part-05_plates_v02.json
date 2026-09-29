@@ -339,11 +339,12 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "That's why the soft metals fizz together, and why chlorine and iodine react alike.",
-      "prompt": "Animistry premium 3D cartoon. Soft metals fizz in water (cheerful fizz); Cl and I tiles glow alike. Continuous fizz + match. Silent. No Explorer. No Orbit. Real symbols Cl and I only.",
-      "prompt_try2": "Wider framing. Animistry premium 3D cartoon. Soft metals fizz in water (cheerful fizz); Cl and I tiles glow alike. Continuous fizz + match. Silent. No Explorer. No Orbit. Real symbols Cl and I only.",
-      "still_prompt": "Finished 3D cartoon still matching: That's why the soft metals fizz together, and why chlorine and iodine react alik. Set=chemistry_behave. No Explorer unless marked. No text signs. Real element symbols only.",
+      "prompt": "Close medium shot on two fizzing flasks. Animistry premium 3D cartoon. Interior lab with CLOSED solid wood back wall and shelves \u2014 NO windows, NO openings to outdoors, NO sky visible. Cl and I flasks glow and fizz. Continuous cheerful fizz. Silent. HARD REJECT: stadium, goalposts, sports field, crowd, bleachers, outdoor view, windows to arena. No Explorer. No Orbit. No other text.",
+      "prompt_try2": "Wider but still CLOSED solid back wall, no windows. Close medium shot on two fizzing flasks. Animistry premium 3D cartoon. Interior lab with CLOSED solid wood back wall and shelves \u2014 NO windows, NO openings to outdoors, NO sky visible. Cl and I flasks glow and fizz. Continuous cheerful fizz. Silent. HARD REJECT: stadium, goalposts, sports field, crowd, bleachers, outdoor view, windows to arena. No Explorer. No Orbit. No other text.",
+      "still_prompt": "Finished 3D cartoon still: interior chemistry lab, CLOSED solid wood back wall with shelves \u2014 NO windows, NO outdoor view. Cl and I fizzing flasks only. No stadium. No goalposts. No sports field. No crowd. No Explorer. No other text.",
       "set": "chemistry_behave",
-      "veo": true
+      "veo": true,
+      "ben_fail_stadium": "Ben FAIL flag: stadium through lab back on rough v01/v02"
     },
     {
       "id": "23_quiet_memorial",
@@ -399,11 +400,12 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Every element has its own number, and that number is the order of the periodic table. It isn't a list of weights. It's a count.",
-      "prompt": "Same numbered table set glowing with clean numbers. Exactly ONE Explorer (teal coat, round gold glasses, messy brown hair) steps back to see the whole table \u2014 the 3rd film-wide Explorer beat. Continuous step-back + look. Attach Explorer reference. Silent. No twins. No Orbit. Real element symbols only.",
-      "prompt_try2": "Wider framing. Same numbered table set glowing with clean numbers. Exactly ONE Explorer (teal coat, round gold glasses, messy brown hair) steps back to see the whole table \u2014 the 3rd film-wide Explorer beat. Continuous step-back + look. Attach Explorer reference. Silent. No twins. No Orbit. Real element symbols only.",
-      "still_prompt": "Finished 3D cartoon still. Exactly ONE Explorer stepping back from glowing numbered periodic table. Real symbols only. No twins.",
+      "prompt": "Animistry premium 3D cartoon. Interior period science hall only \u2014 closed solid wood back wall or tall windows showing plain pale sky / distant city rooftops. Numbered table glowing with clean numbers / real element symbols only. Exactly ONE Explorer (messy brown hair, round gold glasses, teal overcoat, tan vest, brown bow tie, satchel) steps back to see the whole table \u2014 film-wide Explorer beat #3 only. Continuous step-back + look. Silent. HARD REJECT: second Explorer, twins, American football stadium, goalposts, sports field, bleachers, crowd, outdoor arena. No Orbit. No other text signs.",
+      "prompt_try2": "Wider framing but keep Explorer small in interior lab. Animistry premium 3D cartoon. Closed back wall with shelves \u2014 no arena. Exactly ONE Explorer steps back from numbered table. Continuous motion. Silent. HARD REJECT: stadium, goalposts, sports field, crowd, twin Explorer. No Orbit. No other text.",
+      "still_prompt": "Finished 3D cartoon still: interior period lab or science hall, closed back wall or windows to plain sky/city only. Exactly ONE Explorer (teal coat, gold glasses, messy brown hair) before a glowing numbered element table. No stadium. No goalposts. No sports field. No crowd. No twin Explorer. Real element symbols only. No other text signs.",
       "set": "numbered_table",
-      "veo": true
+      "veo": true,
+      "ben_fail_stadium": "Ben FAIL flag: stadium surrounds Explorer table on rough v01/v02"
     },
     {
       "id": "27_next_story_rays",

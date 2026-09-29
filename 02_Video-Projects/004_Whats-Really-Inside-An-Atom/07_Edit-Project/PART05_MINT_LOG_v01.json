@@ -1720,28 +1720,30 @@
         {
           "id": "22_soft_metals_halogens",
           "try": 1,
-          "model": "veo-3.1-lite-generate-preview",
+          "model": "veo-3.1-fast-generate-001",
           "quality_or_fast": "Fast",
           "framing": "try1",
           "explorer": false,
           "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/22_soft_metals_halogens_v01.jpg",
-          "start_frame_sha256": "f4491e347e6f352c0b930482d59daca5375b7d799502306efd0f4e7c5623fa67",
+          "start_frame_sha256": "e773228638698a3382cc46df609bd86b3ee3890286514741a7c32d2e121bd594",
           "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/22_soft_metals_halogens_v01.mp4",
           "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/22_soft_metals_halogens_v01.mp4",
-          "sha256": "7170ae0a517692667185421842868c8dd8b69f4624d54ba405fc1d4f27c46273",
-          "bytes": 3740535,
+          "sha256": "3294170c288d8891561545c0e4bf1db813c1e9de98f3c80281c04fe809546e42",
+          "bytes": 2430874,
           "duration_s": 8.0,
           "status": "KEEP",
-          "note": "motion_ok scene_hits=4 dur=8.00s",
-          "credits_before": 12,
+          "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK)",
+          "credits_before": null,
           "credits_used": null,
-          "credits_remaining": 12,
+          "credits_remaining": null,
           "flow_credits_spent": 0,
-          "api_seconds": 38.8,
-          "at": "2026-09-29T07:52:39.204953+00:00",
-          "engine": "gemini-api Veo 3.1 (veo-3.1-lite-generate-preview)",
-          "path": "gemini-api",
-          "reason": "flow_credit_buffer"
+          "api_seconds": 66.5,
+          "at": "2026-09-29T09:32:13.606319+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
         }
       ],
       "try_detail": [
@@ -1759,8 +1761,8 @@
           "sha256": "7170ae0a517692667185421842868c8dd8b69f4624d54ba405fc1d4f27c46273",
           "bytes": 3740535,
           "duration_s": 8.0,
-          "status": "KEEP",
-          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "status": "BEN_FAIL_STADIUM_ARCHIVED",
+          "note": "motion_ok scene_hits=4 dur=8.00s | Ben FAIL stadium remint",
           "credits_before": 12,
           "credits_used": null,
           "credits_remaining": 12,
@@ -1770,27 +1772,87 @@
           "engine": "gemini-api Veo 3.1 (veo-3.1-lite-generate-preview)",
           "path": "gemini-api",
           "reason": "flow_credit_buffer"
+        },
+        {
+          "id": "22_soft_metals_halogens",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/22_soft_metals_halogens_v01.jpg",
+          "start_frame_sha256": "5bd11dd7aac2cc3046b2a22bac3fa92842b2a8eb6a7e1e60471187abb0aa9c97",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/22_soft_metals_halogens_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/22_soft_metals_halogens_v01.mp4",
+          "sha256": "98870c0741560a9643e26924268a29d09eb14cfd0d2000458d672f8b6f88a399",
+          "bytes": 3839266,
+          "duration_s": 8.0,
+          "status": "AUTO_FAIL_STADIUM_WINDOW",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.4,
+          "at": "2026-09-29T09:26:36.332271+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        },
+        {
+          "id": "22_soft_metals_halogens",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/22_soft_metals_halogens_v01.jpg",
+          "start_frame_sha256": "e773228638698a3382cc46df609bd86b3ee3890286514741a7c32d2e121bd594",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/22_soft_metals_halogens_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/22_soft_metals_halogens_v01.mp4",
+          "sha256": "3294170c288d8891561545c0e4bf1db813c1e9de98f3c80281c04fe809546e42",
+          "bytes": 2430874,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK)",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.5,
+          "at": "2026-09-29T09:32:13.606319+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
         }
       ],
       "status": "KEEP",
+      "quality_or_fast": "Fast",
+      "path": "vertex",
+      "duration_s": 8.0,
+      "bytes": 2430874,
+      "ben_fail": {
+        "issue": "stadium/sports field through lab back",
+        "at": "2026-09-29T09:24:00.794824+00:00"
+      },
+      "model_keep": "veo-3.1-fast-generate-001",
       "keep": {
         "file": "22_soft_metals_halogens_v01.mp4",
-        "sha256": "7170ae0a517692667185421842868c8dd8b69f4624d54ba405fc1d4f27c46273",
+        "sha256": "3294170c288d8891561545c0e4bf1db813c1e9de98f3c80281c04fe809546e42",
         "try": 1,
-        "model": "veo-3.1-lite-generate-preview",
+        "model": "veo-3.1-fast-generate-001",
         "quality_or_fast": "Fast",
-        "engine": "gemini-api Veo 3.1 (veo-3.1-lite-generate-preview)",
-        "path": "gemini-api",
+        "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+        "path": "vertex",
         "credits_used": null,
-        "credits_remaining": 12
+        "credits_remaining": null
       },
-      "model_keep": "veo-3.1-lite-generate-preview",
-      "quality_or_fast": "Fast",
-      "path": "gemini-api",
       "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/22_soft_metals_halogens_v01.mp4",
-      "sha256": "7170ae0a517692667185421842868c8dd8b69f4624d54ba405fc1d4f27c46273",
-      "duration_s": 8.0,
-      "bytes": 3740535
+      "sha256": "3294170c288d8891561545c0e4bf1db813c1e9de98f3c80281c04fe809546e42"
     },
     "23_quiet_memorial": {
       "id": "23_quiet_memorial",
@@ -2049,11 +2111,11 @@
           "framing": "try1",
           "explorer": true,
           "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/26_explorer_count_table_v01.jpg",
-          "start_frame_sha256": "d41d199a1f9aabb08ecd8e508f5d0611e1d85b4e686b37a8ed6021a891118731",
+          "start_frame_sha256": "03f6d42c3563a2decbf286375410c4e8d48923e2ac7e0fe0fd3475fde9762630",
           "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
           "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
-          "sha256": "0029ed897460340b764ee7e389141ff32a6ec96f6c7713780f909e9c49c5fedc",
-          "bytes": 2528812,
+          "sha256": "b81a1103ad170ce20710ce50df799a333af2eb23adf0417ce9ffc09ad3879601",
+          "bytes": 3706905,
           "duration_s": 8.0,
           "status": "KEEP",
           "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK)",
@@ -2062,7 +2124,7 @@
           "credits_remaining": null,
           "flow_credits_spent": 0,
           "api_seconds": 66.0,
-          "at": "2026-09-29T08:48:09.525596+00:00",
+          "at": "2026-09-29T09:27:42.322504+00:00",
           "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
           "path": "vertex",
           "vertex_project": "gen-lang-client-0538779324",
@@ -2085,8 +2147,8 @@
           "sha256": "0029ed897460340b764ee7e389141ff32a6ec96f6c7713780f909e9c49c5fedc",
           "bytes": 2528812,
           "duration_s": 8.0,
-          "status": "KEEP",
-          "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK)",
+          "status": "BEN_FAIL_STADIUM_ARCHIVED",
+          "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK) | Ben FAIL stadium remint",
           "credits_before": null,
           "credits_used": null,
           "credits_remaining": null,
@@ -2098,12 +2160,48 @@
           "vertex_project": "gen-lang-client-0538779324",
           "vertex_location": "us-central1",
           "reason": "ben_vertex_last5_authorized"
+        },
+        {
+          "id": "26_explorer_count_table",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": true,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/26_explorer_count_table_v01.jpg",
+          "start_frame_sha256": "03f6d42c3563a2decbf286375410c4e8d48923e2ac7e0fe0fd3475fde9762630",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
+          "sha256": "b81a1103ad170ce20710ce50df799a333af2eb23adf0417ce9ffc09ad3879601",
+          "bytes": 3706905,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK)",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.0,
+          "at": "2026-09-29T09:27:42.322504+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
         }
       ],
       "status": "KEEP",
+      "quality_or_fast": "Fast",
+      "path": "vertex",
+      "duration_s": 8.0,
+      "bytes": 3706905,
+      "ben_fail": {
+        "issue": "stadium/sports field through lab back",
+        "at": "2026-09-29T09:24:00.794907+00:00"
+      },
       "keep": {
         "file": "26_explorer_count_table_v01.mp4",
-        "sha256": "0029ed897460340b764ee7e389141ff32a6ec96f6c7713780f909e9c49c5fedc",
+        "sha256": "b81a1103ad170ce20710ce50df799a333af2eb23adf0417ce9ffc09ad3879601",
         "try": 1,
         "model": "veo-3.1-fast-generate-001",
         "quality_or_fast": "Fast",
@@ -2113,12 +2211,8 @@
         "credits_remaining": null
       },
       "model_keep": "veo-3.1-fast-generate-001",
-      "quality_or_fast": "Fast",
-      "path": "vertex",
       "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
-      "sha256": "0029ed897460340b764ee7e389141ff32a6ec96f6c7713780f909e9c49c5fedc",
-      "duration_s": 8.0,
-      "bytes": 2528812
+      "sha256": "b81a1103ad170ce20710ce50df799a333af2eb23adf0417ce9ffc09ad3879601"
     },
     "27_next_story_rays": {
       "id": "27_next_story_rays",
@@ -2203,7 +2297,7 @@
       "bytes": 2639315
     }
   },
-  "status": "ROUGH_V02_READY_FOR_BEN",
+  "status": "ROUGH_V03_READY_FOR_BEN",
   "note": "fresh after buffer waive; prior blocked log in .blocked_pre_waive",
   "vo_status": "KEEP (v04)",
   "engine_used": "flow-ui Veo 3.1 scenery_only via Mini CDP :9222",
@@ -2230,7 +2324,7 @@
     "account_confirmed": "benoats@googlemail.com",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
-  "updated_at": "2026-09-29T09:21:29.494597+00:00",
+  "updated_at": "2026-09-29T09:35:43.992117+00:00",
   "credits_before_mint": 12,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
@@ -2240,7 +2334,7 @@
     "keep": 27,
     "target": 27,
     "vertex_batch_keep": [
-      "14_co_ni"
+      "22_soft_metals_halogens"
     ]
   },
   "resume_note": "29 Sep: resume Gemini Veo from plate 08; Ben may have switched billing to Cloud Free Trial",
@@ -2416,13 +2510,13 @@
     "fast_model": "veo-3.1-fast-generate-001",
     "quality_model": "veo-3.1-generate-001",
     "plate_ids": [
-      "14_co_ni"
+      "22_soft_metals_halogens"
     ],
     "note": "Ben authorized Vertex for last 5 Part 05 plates; small real charge OK if Free Trial insufficient",
-    "started_at": "2026-09-29T09:17:52.354391+00:00",
-    "finished_at": "2026-09-29T09:18:58.632228+00:00",
+    "started_at": "2026-09-29T09:31:07.113926+00:00",
+    "finished_at": "2026-09-29T09:32:13.608606+00:00",
     "batch_keep": [
-      "14_co_ni"
+      "22_soft_metals_halogens"
     ],
     "film_keep_count": 27
   },
@@ -2441,5 +2535,20 @@
     ],
     "note": "Ben reviews rough v02 \u2014 plate QA only; do not label film KEEP/LOCKED",
     "at": "2026-09-29T09:21:29.494470+00:00"
+  },
+  "assemble_v03": {
+    "status": "ROUGH_V03_BUILT",
+    "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v03.mp4",
+    "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v03.mp4",
+    "sha256": "b391bff0dbe8a8ae0130adef4f7f3d7b79aca2cb34a934d9cf42d76e1d03363f",
+    "icloud_sha256": "b391bff0dbe8a8ae0130adef4f7f3d7b79aca2cb34a934d9cf42d76e1d03363f",
+    "icloud_copy_ok": true,
+    "duration_s": 144.515938,
+    "remint": [
+      "22_soft_metals_halogens",
+      "26_explorer_count_table"
+    ],
+    "note": "Ben reviews rough v03 \u2014 plate QA only; do not label film KEEP/LOCKED",
+    "at": "2026-09-29T09:35:43.992002+00:00"
   }
 }
