@@ -1,7 +1,7 @@
 {
   "status": "PRE-MUSIC-PASS",
-  "commandAttempted": "npm run youtube:package -- --package …/11_Upload-Package --video …/hos_004_full_v02.mp4 --dry-run",
-  "npmBlockedReason": "07_Content-Ops/.env absent on this machine (DATABASE_URL). Package resolved locally via loadYouTubePackage — no upload, no API, secrets not printed.",
+  "commandAttempted": "npm run youtube:package -- --package \u2026/11_Upload-Package --video \u2026/hos_004_full_v02.mp4 --dry-run",
+  "npmBlockedReason": "HOS 07_Content-Ops/.env absent on this machine (DATABASE_URL). Package resolved locally via loadYouTubePackage \u2014 no upload, no API, secrets not printed. Do not substitute orbit-with-ben/07_Content-Ops/.env.",
   "dryRun": true,
   "upload": false,
   "premiere": false,
@@ -33,8 +33,8 @@
     "periodic table": true,
     "order": true
   },
-  "description": "What's really inside an atom, and why is the periodic table in this order? Four discoveries, one century — from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element — and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\nChapters\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays",
-  "pinnedComment": "What's really inside an atom — and why is the periodic table in this order?",
+  "description": "What's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\nChapters\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays",
+  "pinnedComment": "What's really inside an atom \u2014 and why is the periodic table in this order?",
   "tagsCount": 28,
   "tags": [
     "what's really inside an atom",
@@ -74,7 +74,7 @@
         "id": "api_metadata",
         "required": true,
         "status": "pending_studio",
-        "title": "Title · description · tags · schedule · video",
+        "title": "Title \u00b7 description \u00b7 tags \u00b7 schedule \u00b7 video",
         "detail": "Run package upload first"
       },
       {
@@ -89,7 +89,7 @@
         "required": true,
         "status": "pending_studio",
         "title": "Title + thumbnail ABC (Test & Compare)",
-        "detail": "Studio A/B Testing — titles (3) · thumbs (3). Not available via Data API."
+        "detail": "Studio A/B Testing \u2014 titles (3) \u00b7 thumbs (3). Not available via Data API."
       },
       {
         "id": "first_comment",
@@ -103,7 +103,7 @@
         "required": true,
         "status": "pending_studio",
         "title": "Pin the comment",
-        "detail": "Studio only — no official Data API pin endpoint"
+        "detail": "Studio only \u2014 no official Data API pin endpoint"
       },
       {
         "id": "related_watch_next",
@@ -117,7 +117,7 @@
         "required": true,
         "status": "pending_studio",
         "title": "End screen + cards",
-        "detail": "Studio only — subscribe + best next video"
+        "detail": "Studio only \u2014 subscribe + best next video"
       },
       {
         "id": "playlist",
@@ -146,5 +146,9 @@
       "thumb": "B cut gold v04"
     }
   ],
-  "musicGate": "full_v02 NOT KEEP — Ben must pass music before live upload"
+  "musicGate": "full_v02 NOT KEEP \u2014 Ben must pass music before live upload",
+  "envPathExpected": "/Users/benjaminoats/YouTube/History Of Science/07_Content-Ops/.env",
+  "envPathForbidden": "/Users/benjaminoats/YouTube/orbit-with-ben/07_Content-Ops/.env",
+  "hosEnvPresent": false,
+  "channelSplit": "history-of-science repo + HOS UAT only; never Orbit/OWB"
 }

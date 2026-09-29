@@ -286,6 +286,17 @@ T&C: 1 Atom+A · 2 Periodic+C v06 · 3 Gold+B. Family: `hos_004_thumbs_v06_famil
 
 No upload. After music PASS: dry-run → private schedule 15 Oct 18:00 UK · end screen → 002.
 
+**Env path (HOS only):** dry-run expects  
+`/Users/benjaminoats/YouTube/History Of Science/07_Content-Ops/.env`  
+(cwd = that `07_Content-Ops`). Do **not** load Orbit’s `orbit-with-ben/07_Content-Ops/.env`. Do not print secrets. As of 29 Sep 2026 the HOS `.env` file is **absent** on this machine — npm package stays blocked until Ben places HOS’s own env there.
+
+## Channel split — HOS only (Ben reminder 29 Sep 2026)
+
+- Channel: **@HistoryOfScienceYT**. Repo: **history-of-science**. UAT: **`HOS UAT/004_…`** only.
+- Do **not** write 004 status, schedules, or deliverables into Orbit With Ben / OWB UAT / orbit agent stores.
+- Shorts VO = HOS house voice (ElevenLabs Ben Orbit Narrator IVC) — voice reuse is intentional; **no** Orbit branding, links, or picture rules.
+- Cursor run for this work: history-of-science worker `904fedbb…` · repo `TheLaughingGod1986/history-of-science`.
+
 ## STEP 6 Short scripts v02 — **STOP for Ben approve**
 
 `10_Shorts/SHORTS_PUNCH_SCRIPTS_v02.md` — Fri 004 gold (~60 w) · Sun 002 Newlands octaves · Tue 003 Bertha’s hand only.

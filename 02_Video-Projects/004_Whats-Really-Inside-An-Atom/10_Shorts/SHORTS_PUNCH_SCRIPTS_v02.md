@@ -2,7 +2,7 @@
 
 **Cadence (UK):** after the 004 long is public (Thu 15 Oct 18:00). Never schedule a Short before that.  
 **Length target:** ~60 spoken words → **23–24 s** at VO speed **1.04**. Punch-first. Captions the whole way. Zero `/go/`.  
-**VO:** Ben Orbit Narrator · 1.04 (after script PASS).  
+**VO:** HOS house voice — ElevenLabs **Ben Orbit Narrator** (`kDch6ACCIpqgQ0NsU9kk`) · speed **1.04** (after script PASS). Same British IVC as the long; HOS channel only — no Orbit branding, links, or picture rules.  
 **Related:** Studio Related → the film each Short promotes (exact live title).
 
 Do **not** mint VO or cut until Ben approves these three scripts. No KEEP/LOCKED labels.
