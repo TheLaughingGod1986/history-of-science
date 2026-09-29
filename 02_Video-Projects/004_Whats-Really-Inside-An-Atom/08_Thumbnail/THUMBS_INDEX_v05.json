@@ -1,7 +1,7 @@
 {
   "parentTitle": "What's Really Inside an Atom?",
   "version": "v05",
-  "status": "Ben PASS A/B v04; C v05 tiles fully in frame + lining Te52/I53 (STOP look). T&C pairs in LAUNCH_PLAN. Package dry-run PRE-MUSIC-PASS until Ben passes full_v02. Nothing to Studio.",
+  "status": "Ben PASS A/B v04. C v05 tiles scaled left, both in frame, 52/53 top-left, badge corner clear. Nothing to Studio.",
   "factLock": {
     "Te": 52,
     "I": 53
@@ -22,7 +22,7 @@
       "title": "Why Is the Periodic Table in This Order?",
       "thumbId": "C",
       "jpg": "Selected/hos_004_thumb_C_hidden_number_live_v05.jpg",
-      "sha256": "436636e866b8074d07230179574e6de1140945f667269b51d88404ecb8e294ee",
+      "sha256": "98be0386ea402591efba28fc79db70a3a7aa22d719fab14eca9141ba075d6e84",
       "version": "v05"
     },
     {

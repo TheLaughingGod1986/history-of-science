@@ -16,7 +16,7 @@ Rules: `HOS_STRATEGY.md` → The week.
   | # | Title | Thumbnail |
   |---|---|---|
   | **1 (main)** | What's Really Inside an Atom? | **A** `hos_004_thumb_A_atom_live_v04.jpg` |
-  | 2 | Why Is the Periodic Table in This Order? | **C** `hos_004_thumb_C_hidden_number_live_v05.jpg` — lining **Te 52** / **I 53**, tiles fully in frame, clear bottom-right |
+  | 2 | Why Is the Periodic Table in This Order? | **C** `hos_004_thumb_C_hidden_number_live_v05.jpg` |
   | 3 | How Small Can You Cut Gold? | **B** `hos_004_thumb_B_cut_gold_live_v04.jpg` |
 
   Letters **reassigned** vs v01–v03 (A=atom, B=coin, C=Te/I). Family sheet: `hos_004_thumbs_v05_family_vs_002_live.jpg`.

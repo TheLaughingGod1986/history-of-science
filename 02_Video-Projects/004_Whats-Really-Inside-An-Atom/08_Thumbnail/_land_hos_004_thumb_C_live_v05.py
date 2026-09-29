@@ -1,42 +1,29 @@
 #!/usr/bin/env python3
-"""HOS 004 thumb C v05 ONLY — fix Te/I number overlays.
+"""HOS 004 thumb C v05 — scale both tiles left, paint 52 / 53.
 
-Ben: v04 C "52" read as 5² (Georgia oldstyle figures, uneven heights) and
-numbers were small/jammed to the top edge. Redo both number overlays with
-lining figures, bigger, top-left inside each tile with padding.
+Ben PASS on A and B v04. C only:
+- Scale the two element tiles down and move them left so both sit fully
+  in frame, clear of the bottom-right duration badge.
+- Paint 52 and 53 inside the tiles, top-left (periodic-table position),
+  in the same painted serif treatment as the title. Digits are lining
+  figures (Times New Roman Bold) so "52" does not read as 5². Symbols
+  stay Georgia Bold, matching THE HIDDEN NUMBER.
+- Picture, title treatment, and colours stay.
 
-A and B v04 untouched. Art / Explorer / THE HIDDEN NUMBER type unchanged.
-Nothing to Studio. No KEEP/LOCKED.
+Nothing to Studio. No upload.
 """
 from __future__ import annotations
 
-import hashlib
-import json
 import subprocess
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 HERE = Path(__file__).resolve().parent
 ASSETS = HERE / "_assets_v04"
 SELECTED = HERE / "Selected"
 PREVIEWS = HERE / "Previews"
-DRAFTS = HERE / "Drafts"
-WALK = Path(
-    "/Users/benjaminoats/Library/Application Support/Cursor/AgentStores/"
-    "cursor_agent_stores/bc-958ae0f3-be07-568f-a2ab-eb7f422d8839/files/artifacts"
-)
-ICLOUD = (
-    Path.home()
-    / "Library/Mobile Documents/com~apple~CloudDocs/HOS UAT"
-    / "004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected"
-)
-LIVE_002 = (
-    Path(__file__).resolve().parents[2]
-    / "002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected"
-    / "hos_002_thumb_A_gallium_live_v02.jpg"
-)
 PREVIEW_TOOL = (
     Path(__file__).resolve().parents[3]
     / "00_Brand/Channel-Setup/tools/thumb_preview.py"
@@ -47,301 +34,201 @@ CREAM = (245, 232, 200)
 GOLD = (232, 178, 48)
 INK = (28, 18, 10)
 SHADOW = (12, 8, 4)
+GEORGIA = "/System/Library/Fonts/Supplemental/Georgia Bold.ttf"
+# Lining figures. Georgia Bold's oldstyle "2" is short and read as 5².
+TIMES = "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf"
 
-# Serif for symbols (painted feel). Modern lining-figure font for Z —
-# Georgia Bold oldstyle "2" sat higher/shorter and read as 5².
-SYMBOL_FONT = "/System/Library/Fonts/Supplemental/Georgia Bold.ttf"
-# Arial Black: clear lining figures, equal digit box heights.
-NUMBER_FONT = "/System/Library/Fonts/Supplemental/Arial Black.ttf"
-FALLBACK = "/System/Library/Fonts/Supplemental/Impact.ttf"
-
-BLANK_C = "hos_004_thumb_C_hidden_number_live_v04.png"
+BLANK = ASSETS / "hos_004_thumb_C_hidden_number_live_v04.png"
 STEM = "hos_004_thumb_C_hidden_number_live_v05"
 
-# Cream/gold PANEL interiors (inside wood rims) — measured on blank plate
-TE_FACE = (600, 175, 810, 490)
-I_FACE = (960, 200, 1200, 505)
-TE_Z, I_Z = 52, 53
-PAD = 52  # clear padding from panel edges (stroke must stay inside)
+# Outer wooden tiles on the blank plate (measured edges, 29 Sep 2026).
+TE_BOX = (528, 92, 848, 655)
+I_BOX = (832, 148, 1278, 708)
+TE_FACE = (552, 216, 798, 556)
+I_FACE = (872, 196, 1184, 588)
+
+# Pair sits just right of the title and above the duration badge.
+DEST = (524, 88)
+ORIGIN = (TE_BOX[0], TE_BOX[1])
+SCALE = 0.72
 
 
-def load_font(path: str, size: int) -> ImageFont.FreeTypeFont:
-    for p in (path, FALLBACK):
-        try:
-            return ImageFont.truetype(p, size)
-        except OSError:
-            continue
-    return ImageFont.load_default()
+def xf(x: int, y: int) -> tuple[int, int]:
+    return (
+        int(round(DEST[0] + (x - ORIGIN[0]) * SCALE)),
+        int(round(DEST[1] + (y - ORIGIN[1]) * SCALE)),
+    )
 
 
-def paint_text(
+def is_title(rgb: tuple[int, int, int]) -> bool:
+    r, g, b = rgb
+    return r > 190 and g > 120 and r > b + 40
+
+
+def cover_holes(im: Image.Image) -> Image.Image:
+    """Replace the original tiles with a blend of the wood beside them."""
+    out = im.copy()
+    op = out.load()
+    src = im.load()
+    hole = Image.new("L", (W, H), 0)
+    hd = ImageDraw.Draw(hole)
+    for box in (TE_BOX, I_BOX):
+        x0, y0, x1, y1 = box
+        hd.rectangle((x0 - 4, y0 - 4, x1 + 6, y1 + 8), fill=255)
+    hp = hole.load()
+    for y in range(H):
+        for x in range(560):
+            if is_title(src[x, y]):
+                hp[x, y] = 0
+    for y in range(H):
+        x = 0
+        while x < W:
+            if hp[x, y] == 0:
+                x += 1
+                continue
+            x0 = x
+            while x < W and hp[x, y]:
+                x += 1
+            x1 = x
+            left = op[x0 - 1, y] if x0 > 0 else (36, 20, 8)
+            right = op[x1, y] if x1 < W else left
+            span = max(1, x1 - x0)
+            for i, xx in enumerate(range(x0, x1)):
+                t = i / span
+                op[xx, y] = tuple(int(left[c] * (1 - t) + right[c] * t) for c in range(3))
+    soft = out.filter(ImageFilter.GaussianBlur(5))
+    out = Image.composite(soft, out, hole.filter(ImageFilter.GaussianBlur(3)))
+    bp = im.load()
+    op = out.load()
+    for y in range(H):
+        for x in range(560):
+            if is_title(bp[x, y]):
+                op[x, y] = bp[x, y]
+    return out
+
+
+def sprite(im: Image.Image, box: tuple[int, int, int, int]) -> tuple[Image.Image, Image.Image]:
+    x0, y0, x1, y1 = box
+    crop = im.crop(box)
+    alpha = Image.new("L", crop.size, 0)
+    ap = alpha.load()
+    cp = crop.load()
+    cw, ch = crop.size
+    for y in range(ch):
+        for x in range(cw):
+            r, g, b = cp[x, y]
+            if (r + g + b) // 3 >= 26 or (r > 70 and r > b + 20):
+                ap[x, y] = 255
+    alpha = alpha.filter(ImageFilter.GaussianBlur(0.6))
+    nw = max(1, int(round(cw * SCALE)))
+    nh = max(1, int(round(ch * SCALE)))
+    return (
+        crop.resize((nw, nh), Image.Resampling.LANCZOS),
+        alpha.resize((nw, nh), Image.Resampling.LANCZOS),
+    )
+
+
+def paint(
     draw: ImageDraw.ImageDraw,
     text: str,
-    *,
     x: int,
     y: int,
     size: int,
     fill: tuple[int, int, int],
-    font_path: str,
+    path: str,
 ) -> tuple[int, int, int, int]:
-    f = load_font(font_path, size)
-    stroke = max(4, size // 14)
-    # Soft shadow below-right only (does not eat top padding)
-    draw.text((x + 4, y + 5), text, font=f, fill=SHADOW, anchor="lt")
-    draw.text(
-        (x, y),
-        text,
-        font=f,
-        fill=INK,
-        stroke_width=stroke + 2,
-        stroke_fill=INK,
-        anchor="lt",
+    font = ImageFont.truetype(path, size)
+    stroke = max(3, size // 14)
+    draw.text((x + 3, y + 4), text, font=font, fill=SHADOW, anchor="lt")
+    draw.text((x, y), text, font=font, fill=INK, stroke_width=stroke + 1, stroke_fill=INK, anchor="lt")
+    draw.text((x, y), text, font=font, fill=fill, stroke_width=max(2, stroke - 1), stroke_fill=INK, anchor="lt")
+    return draw.textbbox((x, y), text, font=font, anchor="lt")
+
+
+def face_is_light(px, x: int, y: int) -> bool:
+    r, g, b = px[x, y]
+    return r > 160 and g > 110 and (r + g + b) > 400
+
+
+def build() -> Image.Image:
+    if not BLANK.exists():
+        raise SystemExit(f"missing blank plate {BLANK}")
+    src = Image.open(BLANK).convert("RGB")
+    if src.size != (W, H):
+        raise SystemExit(f"blank is {src.size}, expected {(W, H)}")
+    base = cover_holes(src)
+    for box in (TE_BOX, I_BOX):
+        crop, alpha = sprite(src, box)
+        pos = xf(box[0], box[1])
+        base.paste(crop, pos, alpha)
+        print(f"  tile {box} -> {pos} {crop.size} end ({pos[0]+crop.size[0]}, {pos[1]+crop.size[1]})", flush=True)
+
+    draw = ImageDraw.Draw(base)
+    px = base.load()
+    for sym, num, face, col in (
+        ("Te", "52", TE_FACE, CREAM),
+        ("I", "53", I_FACE, GOLD),
+    ):
+        x0, y0, x1, y1 = face
+        dx0, dy0 = xf(x0, y0)
+        dx1, dy1 = xf(x1, y1)
+        fw, fh = dx1 - dx0, dy1 - dy0
+        pad = max(8, int(fw * 0.07))
+        nx, ny = dx0 + pad, dy0 + pad
+        # Nudge onto the parchment if the top-left is still wooden frame.
+        for _ in range(12):
+            if face_is_light(px, min(W - 1, nx + 8), min(H - 1, ny + 8)):
+                break
+            ny += 4
+        n_size = max(48, int(fh * 0.28))
+        paint(draw, num, nx, ny, n_size, col, TIMES)
+        s_size = max(64, int(fh * 0.42))
+        sf = ImageFont.truetype(GEORGIA, s_size)
+        sw = sf.getlength(sym)
+        sx = int(dx0 + (fw - sw) / 2)
+        sy = int(dy0 + fh * 0.48)
+        paint(draw, sym, sx, sy, s_size, col, GEORGIA)
+        print(f"  {sym} {num} face ({dx0},{dy0})-({dx1},{dy1}) num@({nx},{ny})", flush=True)
+
+    # Guards: parchment/gold faces end clear of the duration corner.
+    # Brown table grain is not a face (it fails g>175 and b>110 together).
+    def is_face(rgb: tuple[int, int, int]) -> bool:
+        r, g, b = rgb
+        return r > 215 and g > 175 and b > 110 and (r - b) > 25
+
+    px = base.load()
+    # Old iodine face lived past x=1100. Those pixels must be gone.
+    leftovers = []
+    for pt in ((1100, 280), (1100, 400), (1180, 360), (1220, 480)):
+        if is_face(px[pt]):
+            leftovers.append((pt, px[pt]))
+    corner_face = sum(
+        1
+        for y in range(600, H)
+        for x in range(1100, W)
+        if is_face(px[x, y])
     )
-    draw.text((x, y), text, font=f, fill=fill, stroke_width=stroke, stroke_fill=INK, anchor="lt")
-    return draw.textbbox((x, y), text, font=f, stroke_width=stroke + 2, anchor="lt")
-
-
-def paint_lining_number(
-    draw: ImageDraw.ImageDraw,
-    number: int,
-    *,
-    x: int,
-    y: int,
-    size: int,
-    fill: tuple[int, int, int],
-) -> tuple[int, int, int, int]:
-    """Draw Z with lining figures, digit-by-digit on one baseline (no 5²)."""
-    f = load_font(NUMBER_FONT, size)
-    # Prove equal ink heights before paint
-    heights = []
-    for ch in str(number):
-        b = f.getbbox(ch)
-        heights.append(b[3] - b[1])
-    if max(heights) - min(heights) > 2:
-        raise SystemExit(f"uneven lining figures for {number}: {heights}")
-    # Shared top using anchor lt — each digit same em box
-    stroke = max(4, size // 14)
-    cursor = x
-    first_box = None
-    last_box = None
-    for ch in str(number):
-        draw.text((cursor + 4, y + 5), ch, font=f, fill=SHADOW, anchor="lt")
-        draw.text(
-            (cursor, y),
-            ch,
-            font=f,
-            fill=INK,
-            stroke_width=stroke + 2,
-            stroke_fill=INK,
-            anchor="lt",
-        )
-        draw.text(
-            (cursor, y),
-            ch,
-            font=f,
-            fill=fill,
-            stroke_width=stroke,
-            stroke_fill=INK,
-            anchor="lt",
-        )
-        box = draw.textbbox((cursor, y), ch, font=f, stroke_width=stroke + 2, anchor="lt")
-        if first_box is None:
-            first_box = box
-        last_box = box
-        cursor = box[2] + max(2, size // 40)
-    assert first_box and last_box
-    return (first_box[0], first_box[1], last_box[2], max(first_box[3], last_box[3]))
-
-
-def overlay_tile_labels(im: Image.Image) -> Image.Image:
-    """Te 52 / I 53 only. Lining figures, bigger, top-left with padding."""
-    assert TE_Z == 52 and I_Z == 53
-    draw = ImageDraw.Draw(im)
-    specs = [
-        ("Te", TE_Z, TE_FACE, CREAM, CREAM),
-        ("I", I_Z, I_FACE, GOLD, GOLD),
-    ]
-    for symbol, number, box, scol, ncol in specs:
-        x0, y0, x1, y1 = box
-        tw, th = x1 - x0, y1 - y0
-        # Numbers: top-left inside cream panel, padded — lining, clearly bigger
-        n_size = max(88, th // 4)
-        nx = x0 + PAD
-        ny = y0 + PAD
-        nbox = paint_lining_number(draw, number, x=nx, y=ny, size=n_size, fill=ncol)
-        # Guard: number stroke must stay inside panel
-        if nbox[1] < y0 + 8 or nbox[0] < x0 + 8:
-            raise SystemExit(f"{symbol} number clipped into rim: {nbox} vs face {box}")
-        # Symbol centred lower on face
-        s_size = max(110, th // 3)
-        sf = load_font(SYMBOL_FONT, s_size)
-        sw = sf.getlength(symbol)
-        sx = int(x0 + (tw - sw) / 2)
-        sy = int(y0 + th * 0.40)
-        paint_text(
-            draw,
-            symbol,
-            x=sx,
-            y=sy,
-            size=s_size,
-            fill=scol,
-            font_path=SYMBOL_FONT,
-        )
-    return im
-
-
-def save_jpg(im: Image.Image, dest: Path) -> Path:
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    rgb = im.convert("RGB").resize((W, H), Image.Resampling.LANCZOS)
-    q = 90
-    rgb.save(dest, "JPEG", quality=q, optimize=True, subsampling=1)
-    while dest.stat().st_size > 1_900_000 and q > 70:
-        q -= 4
-        rgb.save(dest, "JPEG", quality=q, optimize=True, subsampling=1)
-    print(f"  {dest.name}  {dest.stat().st_size} B  q={q}", flush=True)
-    return dest
-
-
-def family_sheet() -> Path:
-    refs = [
-        (LIVE_002, "002 LIVE A"),
-        (SELECTED / "hos_004_thumb_A_atom_live_v04.jpg", "004 A v04"),
-        (SELECTED / "hos_004_thumb_B_cut_gold_live_v04.jpg", "004 B v04"),
-        (SELECTED / f"{STEM}.jpg", "004 C v05"),
-    ]
-    tw, th = 420, 236
-    gap = 16
-    label_h = 36
-    sheet_w = gap + len(refs) * (tw + gap)
-    sheet_h = gap + label_h + th + gap
-    sheet = Image.new("RGB", (sheet_w, sheet_h), (18, 14, 10))
-    draw = ImageDraw.Draw(sheet)
-    f = load_font(SYMBOL_FONT, 22)
-    x = gap
-    for path, lab in refs:
-        if not path.exists():
-            raise SystemExit(f"missing family tile {path}")
-        tile = Image.open(path).convert("RGB").resize((tw, th), Image.Resampling.LANCZOS)
-        draw.text((x, gap + 4), lab, font=f, fill=CREAM)
-        sheet.paste(tile, (x, gap + label_h))
-        x += tw + gap
-    out = SELECTED / "hos_004_thumbs_v05_family_vs_002_live.jpg"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    sheet.save(out, "JPEG", quality=92, optimize=True)
-    print(f"  FAMILY {out.name}  {out.stat().st_size} B  {sheet.size}", flush=True)
-    return out
-
-
-def write_index(c_jpg: Path) -> Path:
-    a = SELECTED / "hos_004_thumb_A_atom_live_v04.jpg"
-    b = SELECTED / "hos_004_thumb_B_cut_gold_live_v04.jpg"
-    pairs = [
-        {
-            "slot": 1,
-            "role": "main",
-            "title": "What's Really Inside an Atom?",
-            "thumbId": "A",
-            "hook": "WHAT'S REALLY INSIDE AN ATOM?",
-            "jpg": f"Selected/{a.name}",
-            "preview": f"Selected/{a.stem}_preview.jpg",
-            "sha256": hashlib.sha256(a.read_bytes()).hexdigest(),
-            "bytes": a.stat().st_size,
-            "version": "v04",
-        },
-        {
-            "slot": 2,
-            "role": "alt",
-            "title": "Why Is the Periodic Table in This Order?",
-            "thumbId": "C",
-            "hook": "THE HIDDEN NUMBER",
-            "jpg": f"Selected/{c_jpg.name}",
-            "preview": f"Selected/{c_jpg.stem}_preview.jpg",
-            "sha256": hashlib.sha256(c_jpg.read_bytes()).hexdigest(),
-            "bytes": c_jpg.stat().st_size,
-            "version": "v05",
-            "note": "lining-figure Te 52 / I 53; bigger; top-left padded",
-        },
-        {
-            "slot": 3,
-            "role": "alt",
-            "title": "How Small Can You Cut Gold?",
-            "thumbId": "B",
-            "hook": "CUT GOLD?",
-            "jpg": f"Selected/{b.name}",
-            "preview": f"Selected/{b.stem}_preview.jpg",
-            "sha256": hashlib.sha256(b.read_bytes()).hexdigest(),
-            "bytes": b.stat().st_size,
-            "version": "v04",
-        },
-    ]
-    idx = {
-        "parentTitle": "What's Really Inside an Atom?",
-        "version": "v05",
-        "status": "STOP for Ben pick. Proposed only. Nothing to Studio. No KEEP/LOCKED.",
-        "note": (
-            "C v05 ONLY — lining-figure Te 52 / I 53 (fixed 5² read). "
-            "A and B remain v04. Live Studio grammar."
-        ),
-        "composer": "_land_hos_004_thumb_C_live_v05.py",
-        "factLock": {
-            "Te": 52,
-            "I": 53,
-            "numberFont": "Arial Black (lining figures, digit-by-digit baseline)",
-        },
-        "testAndComparePairs": pairs,
-        "upload": False,
-        "studio": False,
-        "icloud": "HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/",
-        "familySheet": "Selected/hos_004_thumbs_v05_family_vs_002_live.jpg",
-    }
-    out = HERE / "THUMBS_INDEX_v05.json"
-    out.write_text(json.dumps(idx, indent=2) + "\n")
-    print(f"  INDEX {out.name}", flush=True)
-    return out
+    if leftovers or corner_face:
+        raise SystemExit(f"old tile still showing {leftovers} corner={corner_face}")
+    print("  GUARD old tile cleared, badge corner empty", flush=True)
+    return base
 
 
 def main() -> None:
-    blank = ASSETS / BLANK_C
-    if not blank.exists():
-        raise SystemExit(f"missing blank C plate {blank}")
-    # Prove lining figures are level before paint
-    nf = load_font(NUMBER_FONT, 80)
-    h5 = nf.getbbox("5")[3] - nf.getbbox("5")[1]
-    h2 = nf.getbbox("2")[3] - nf.getbbox("2")[1]
-    h3 = nf.getbbox("3")[3] - nf.getbbox("3")[1]
-    if abs(h5 - h2) > 2 or abs(h5 - h3) > 2:
-        raise SystemExit(f"number font still uneven: 5={h5} 2={h2} 3={h3}")
-    print(f"LINING_OK Arial Black digit heights 5={h5} 2={h2} 3={h3}", flush=True)
-
-    im = Image.open(blank).convert("RGB")
-    im = overlay_tile_labels(im)
+    im = build()
     SELECTED.mkdir(parents=True, exist_ok=True)
-    DRAFTS.mkdir(parents=True, exist_ok=True)
     PREVIEWS.mkdir(parents=True, exist_ok=True)
     png = SELECTED / f"{STEM}.png"
+    jpg = SELECTED / f"{STEM}.jpg"
     im.save(png, "PNG")
-    jpg = save_jpg(im, SELECTED / f"{STEM}.jpg")
-    (DRAFTS / jpg.name).write_bytes(jpg.read_bytes())
-
+    im.save(jpg, "JPEG", quality=90, optimize=True, subsampling=1)
+    print(f"  {jpg.name} {jpg.stat().st_size} B", flush=True)
     preview = SELECTED / f"{STEM}_preview.jpg"
     subprocess.check_call(
         [sys.executable, str(PREVIEW_TOOL), "long", str(jpg), "--out", str(preview)]
     )
     (PREVIEWS / "hos_004_thumb_C_hidden_number_preview_v05.jpg").write_bytes(preview.read_bytes())
-
-    family = family_sheet()
-    write_index(jpg)
-
-    WALK.mkdir(parents=True, exist_ok=True)
-    for p in (jpg, preview, family):
-        (WALK / p.name).write_bytes(p.read_bytes())
-
-    ICLOUD.mkdir(parents=True, exist_ok=True)
-    for p in (jpg, preview, family):
-        (ICLOUD / p.name).write_bytes(p.read_bytes())
-        print(f"  iCloud ← {p.name}", flush=True)
-
-    print("DONE C v05 only · A/B v04 untouched · STOP for Ben · no Studio")
+    print(f"  preview {preview.name}", flush=True)
 
 
 if __name__ == "__main__":

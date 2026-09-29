@@ -15,7 +15,7 @@ Do **not** mint VO or cut until Ben approves these three scripts.
 **Parent on screen ~9–14s:** What's Really Inside an Atom?  
 **Related ▶** 004 (once the long listing exists).
 
-Cut a gold coin in half. Then again.
+Cut gold in half. Then again.
 How small can you go before it stops being gold?
 Keep going and you find what everything is made of —
 and why the periodic table is in the order it is.
