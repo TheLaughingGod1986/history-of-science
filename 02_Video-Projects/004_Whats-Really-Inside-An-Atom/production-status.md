@@ -13,7 +13,7 @@
 | VO | **v04 KEEP** (Ben, 27 Sep 2026, after listening at 3:38, 6:06 and 7:39; the three `vo_check` word FAILs there are the transcriber, not the take). Masters in `02_Voiceover/05_Master/`. |
 | Re-time (Step 3) | **DONE from v04.** `07_Edit-Project/VO_RETIME_v02.json` · script VISUAL MUST + chapter cards updated |
 | Plate boards (Step 4) | **`part-0N_plates_v02.json`.** Parts 01–04 `mint: false` (04 rough v01 pending Ben) · 05 `mint: false` · Explorer used ×2 (P02 + P04 stadium pea); remaining P05 · no Explorer in Part 03 |
-| Picture | **Part 01–05 PASS.** **Full join v03 PASS (Ben, 29 Sep 2026)** sha `f88cb9d4…65244`. Finishing: final music bed + captions → `hos_004_full_v01` (UAT). |
+| Picture | **Part 01–05 PASS.** **Full join v03 PASS** sha `f88cb9d4…65244`. Finishing UAT: `hos_004_full_v02` (two-section bed) + thumbs A/B/C. |
 | Runtime (VO v04) | **498.285 s = 8:18** |
 | Air | Thu 15 Oct 2026 18:00 UK, normal publish. Fallback Thu 22 Oct |
 
@@ -54,7 +54,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | **22** (4–6 s splits) | false (rough v01) |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** STOP for Ben — music on `hos_004_full_v01` **and** long thumbs A/B/C together. Captions ready. Title locked (STEP 3). Do **not** start STEP 5 (upload package) or STEP 6 (schedule) until Ben signs off.
+**Next:** STOP for Ben — music on `hos_004_full_v02` (two-section bed, no loop) **and** long thumbs A/B/C together. Captions ready. Title locked. Do **not** start STEP 5 or STEP 6 until Ben signs off.
 
 ---
 
@@ -243,20 +243,42 @@ Same picture, cards, seams and end as override v02. **Only** fix: `amix=inputs=2
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v03.mp4`
 - Builder: `07_Edit-Project/_join_hos_004_full_v03.py` · notes `09_Final-Export/FULL_JOIN_V03_NOTES.md`
 
-## Full_v01 (29 Sep 2026) — final continuous bed · music UAT pending
+## Full_v01 (29 Sep 2026) — continuous bed with loop (superseded for music UAT by v02)
 
-Replaces the five TEMP part beds. Picture = locked v03. VO v04 untouched.
+Picture = locked v03. VO v04 untouched. **Music join used a loop** (EL bed ~390.8 s) — Ben rejected the loop → v02.
 
-- **Cut:** `hos_004_full_v01.mp4`
-- **sha256:** `058e1ba7a4a986de0dec4fe1a6e0e6f47a47449ad314f979e8224a8a5ef1b4d5`
-- **Duration:** **524.700 s** · A/V Δ **0.000** s · 1920×1080 30 fps CFR
-- **Bed:** `05_Music/hos004-full_score_bed_v01.mp3` (−20 dB, sidechain, fade across cream, silent under hold). EL returned ~390.8 s for 506 s request → looped through cream.
-- **amix:** `inputs=2:weights=1 1:normalize=0`
-- **Levels:** `vo_check` mean **−23.6** / peak **−3.8** dB · film `−t 500.69` mean **−23.4** / max **−3.8** dB
-- **Word flags:** known ~6:08 `a living`→`the living` · ~6:33 `sort`→`sought` · also transcriber `van den`→`van der` Broek · `a weight`→`of weight`
-- **Captions (STEP 2):** `11_Upload-Package/Captions/hos_004_full_v01.en.srt` (script-locked, 90 cues, no cream/hold)
-- **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v01.mp4` (+ `WATCH_full_v01.txt`)
-- Do **not** mark KEEP until Ben says so. No upload.
+| Field | Value |
+|---|---|
+| Cut | `hos_004_full_v01.mp4` |
+| sha256 | `058e1ba7a4a986de0dec4fe1a6e0e6f47a47449ad314f979e8224a8a5ef1b4d5` |
+| Duration | **524.700 s** · A/V Δ **0.000** s · 1920×1080 30 fps CFR |
+| Bed | `05_Music/hos004-full_score_bed_v01.mp3` (−20 dB, sidechain, fade across cream, silent under hold). EL ~390.8 s → **looped** through cream |
+| amix | `inputs=2:weights=1 1:normalize=0` |
+| Levels | `vo_check` mean **−23.6** / peak **−3.8** dB · film `−t 500.69` mean **−23.4** / max **−3.8** dB |
+| Captions | `11_Upload-Package/Captions/hos_004_full_v01.en.srt` (still valid for picture; reuse until regen) |
+| iCloud | `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v01.mp4` |
+| Status | **Superseded for music listen by full_v02.** Not KEEP. No upload. |
+
+## Full_v02 (29 Sep 2026) — two-section bed, no loop · **STOP for Ben music**
+
+Same picture/cards/end as v01. VO untouched. Music join at the Part 05 chapter card.
+
+| Field | Value |
+|---|---|
+| Cut | `hos_004_full_v02.mp4` |
+| sha256 | `ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e` |
+| Duration | **524.700 s** · A/V Δ **0.000** s · 1920×1080 30 fps CFR |
+| Bed §1 | `hos004-full_score_bed_v01.mp3` · 0:00 → card05 **5:55.48** (355.478 s) |
+| Bed §2 | `hos004-full-sect2_score_bed_v01.mp3` (~160.0 s) · card05 → cream end · prompt + “gentle lift toward a quiet resolution” |
+| Join | **1.5 s** crossfade under Part 05 chapter card · **no loop** |
+| Duck | gap **−20 dB** · extra ~3 dB under speech (`threshold=0.012:ratio=12…`) · `amix normalize=0` |
+| vo_check | mean **−23.6** / peak **−3.8** dB · 147 wpm |
+| Mean 0:00–8:20.69 | mean **−23.4** / max **−3.8** dB |
+| Word FAILs | ~**6:07** `a living`→`the living` · ~**7:40** `a weight`→`of weight` · ~**8:06** insert `you` · **no 6:31** this run · **no 5:34** on full |
+| 7:40 window | full_v02 and plain P05 v04 VO hear the **same** (“kind of [a]…”); STT not a mix fault. Plain P04 still hears `van der` at local ~1:33 (5:34 film) but full_v02 did not flag it. |
+| Builder | `07_Edit-Project/_mix_hos_004_full_v02_music.py` · notes `09_Final-Export/FULL_V02_NOTES.md` · check `FULL_V02_VO_CHECK.txt` |
+| iCloud | `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v02.mp4` (+ `WATCH_full_v02.txt`) |
+| Status | **UAT — STOP for Ben music listen.** Not KEEP. No upload. |
 
 ## Title (STEP 3) — Ben pick 29 Sep 2026
 
@@ -270,17 +292,15 @@ Written into this file + `11_Upload-Package/LAUNCH_PLAN.md`.
 
 ## Long thumbs (STEP 4) — STOP for Ben with music
 
-Three Studio ABC variants from the film's own plates. Composer: `08_Thumbnail/_compose_hos_004_thumbs_v01.py`.
+Three Studio ABC variants from the film's own plates. Composer: `08_Thumbnail/_compose_hos_004_thumbs_v01.py`. JPGs + preview sheets live in `08_Thumbnail/Selected/`.
 
-| Variant | File | Hook | Subject |
-|---|---|---|---|
-| A | `08_Thumbnail/Selected/hos_004_thumb_A_hidden_number_v01.jpg` | **THE HIDDEN NUMBER** (HIDDEN yellow) | Te/I crates swapped + glowing |
-| B | `08_Thumbnail/Selected/hos_004_thumb_B_cut_gold_v01.jpg` | **CUT GOLD?** (GOLD yellow) | coin halves + knife |
-| C | `08_Thumbnail/Selected/hos_004_thumb_C_bounced_back_v01.jpg` | **IT BOUNCED BACK** (BOUNCED yellow) | gold-foil bounce |
+| Variant | File | Preview sheet | Hook | Subject |
+|---|---|---|---|---|
+| A | `hos_004_thumb_A_hidden_number_v01.jpg` | `…_v01_preview.jpg` | **THE HIDDEN NUMBER** (HIDDEN yellow) | Te/I crates |
+| B | `hos_004_thumb_B_cut_gold_v01.jpg` | `…_v01_preview.jpg` | **CUT GOLD?** (GOLD yellow) | coin halves + knife |
+| C | `hos_004_thumb_C_bounced_back_v01.jpg` | `…_v01_preview.jpg` | **IT BOUNCED BACK** (BOUNCED yellow) | gold-foil bounce |
 
-Phone preview sheets: `08_Thumbnail/Previews/hos_004_thumb_*_preview_v01.jpg` (+ artifacts copies).
+**iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/`
 
-**iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/`
-
-**STOP for Ben** — music (`hos_004_full_v01`) **and** thumbs A/B/C together. Do **not** start STEP 5 (upload package) or STEP 6 (schedule) until Ben signs off.
+**STOP for Ben** — music (`hos_004_full_v02`) **and** thumbnail pick A/B/C together. Do **not** start STEP 5 (upload package) or STEP 6 (schedule) until Ben signs off.
 

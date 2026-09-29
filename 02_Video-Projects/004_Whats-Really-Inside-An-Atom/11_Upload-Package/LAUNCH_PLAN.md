@@ -11,7 +11,8 @@ Rules: `HOS_STRATEGY.md` → The week.
 
 - Each Short's Studio Related points at the film it promotes. One Short a day at most; none before the 004 long is public.
 - **Title (locked):** main *What's Really Inside an Atom?*; T&C *Why Is the Periodic Table in This Order?* · *How Small Can You Cut Gold?*
-- Long thumbnails (STEP 4, pending Ben UAT): Studio ABC — **A THE HIDDEN NUMBER** (Te/I swapped+glowing) · **B CUT GOLD?** (coin halves) · **C IT BOUNCED BACK** (foil bounce). Files under `08_Thumbnail/Selected/`.
+- Long thumbnails (STEP 4, pending Ben pick): Studio ABC in `08_Thumbnail/Selected/` — **A THE HIDDEN NUMBER** · **B CUT GOLD?** · **C IT BOUNCED BACK** (each with `_preview.jpg` phone sheet alongside).
+- Music UAT cut: `hos_004_full_v02.mp4` (two-section bed, join at Part 05 chapter card, no loop).
 - Before 15 Oct there is no new long. Weeks without one run on three back-catalogue Shorts (HOS_STRATEGY.md → The week).
 - Fallback: Thu 22 Oct, same pattern moved one week.
 - Gates: Ben script review → `review:script` ≥90 and `gate:episode` PASS → VO → plate-first mint by part → rough KEEPs → join → UAT → thumbs → upload.
