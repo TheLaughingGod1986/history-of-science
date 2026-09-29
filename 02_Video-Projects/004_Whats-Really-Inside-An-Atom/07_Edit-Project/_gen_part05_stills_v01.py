@@ -128,8 +128,9 @@ def gen_still(key: str, plate: dict, dest: Path) -> None:
         img_n += 1
         prompt = (
             f"Image {img_n} is the locked History of Science 3D cartoon style — match "
-            "that material and light. This scene is NOT a hospital ward; it is the "
-            "Manchester 1909 dark scattering lab / empty football stadium / 1910s study desk story world. "
+            "that material and light. This scene is NOT a hospital ward; it is a period "
+            "science lab / numbered-table study world. HARD REJECT: American football "
+            "stadium, goalposts, sports field, bleachers, crowd, outdoor arena. "
             + prompt
         )
     if plate.get("explorer") and EXPLORER_REF.exists():

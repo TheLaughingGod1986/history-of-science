@@ -1,6 +1,9 @@
-# HOS 004 Part 05 — plate path table (rough v01)
+# HOS 004 Part 05 — plate path table (rough v02)
 
-Rough: `hos_004_part05_rough_v01.mp4` · sha256 `6f3cccc568779be20b1e208ffc367d0652597051b9dce709fce81b75d3cb68e4` · 144.516s
+Rough: `hos_004_part05_rough_v02.mp4` · sha256 `af96d76b5a2488c406837bbb7018f30e173cc5ba749bfcc28c37b020f088c7c5` · 144.516s
+
+Remint: `14_co_ni` Vertex after Ben FAIL (stadium + twin scientists) on v01.
+Flag only (not reminted): `22_soft_metals_halogens`, `26_explorer_count_table` — stadium in mid frame.
 
 | Plate | Path | Model | Q/F | Dur | API s |
 |---|---|---|---|---:|---:|
@@ -17,7 +20,7 @@ Rough: `hos_004_part05_rough_v01.mp4` · sha256 `6f3cccc568779be20b1e208ffc367d0
 | `11_charge_nucleus` | gemini-api | `veo-3.1-generate-preview` | Quality | 8.0 | 75.9 |
 | `12_sort_table` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 51.5 |
 | `13_te_i` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 50.9 |
-| `14_co_ni` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 51.5 |
+| `14_co_ni` | vertex | `veo-3.1-fast-generate-001` | Fast | 8.0 | 66.2 |
 | `15_rule_fixes` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 39.4 |
 | `16_wrong_ruler` | gemini-api | `veo-3.1-lite-generate-preview` | Fast | 8.0 | 38.8 |
 | `17_missing_rungs` | gemini-api | `veo-3.1-generate-preview` | Quality | 8.0 | 63.0 |

@@ -218,11 +218,12 @@
       "i2v": false,
       "side_label": null,
       "vo_land": "Cobalt is twenty-seven and nickel is twenty-eight.",
-      "prompt": "Same numbered table set. Tiles Co and Ni click into places 27 and 28 (real symbols Co and Ni only). Continuous click. Silent. No Explorer. No Orbit.",
-      "prompt_try2": "Wider framing. Same numbered table set. Tiles Co and Ni click into places 27 and 28 (real symbols Co and Ni only). Continuous click. Silent. No Explorer. No Orbit.",
-      "still_prompt": "Finished 3D cartoon still matching: Cobalt is twenty-seven and nickel is twenty-eight.. Set=numbered_table. No Explorer unless marked. No text signs. Real element symbols only.",
+      "prompt": "Animistry premium 3D cartoon. Interior period science lab only \u2014 closed back wall or tall windows showing plain sky or distant city rooftops. Exactly ONE young scientist (readable finished face, neat dark hair, period waistcoat \u2014 do not name him) stands between two wooden lab tables numbered 27 and 28. Large metallic discs show real element symbols Co and Ni only. Continuous small gesture toward the discs. Silent. HARD REJECT: second identical twin scientist, American football stadium, goalposts, sports field, bleachers, crowd, outdoor arena. No Explorer. No Orbit. No other text signs.",
+      "prompt_try2": "Wider framing, camera slightly closer on the two tables. Animistry premium 3D cartoon. Closed interior lab \u2014 solid wood back wall with shelves, no open arena. Exactly ONE scientist (readable finished face) at tables 27 and 28 with Co and Ni discs only. Continuous motion. Silent. HARD REJECT: twin/clone scientists, stadium, goalposts, sports field, crowd. No Explorer. No Orbit. No other text.",
+      "still_prompt": "Finished 3D cartoon still: interior period lab, closed back wall or windows to plain sky/city only. Exactly ONE scientist (readable face) between tables labeled 27 and 28 with large Co and Ni metal discs. No twins. No stadium. No goalposts. No sports field. No crowd. No Explorer. Real element symbols Co and Ni only. No other text signs.",
       "set": "numbered_table",
-      "veo": true
+      "veo": true,
+      "ben_fail_v01": "Ben FAIL rough v01: twin scientists + football stadium/goalposts through lab back"
     },
     {
       "id": "15_rule_fixes",
