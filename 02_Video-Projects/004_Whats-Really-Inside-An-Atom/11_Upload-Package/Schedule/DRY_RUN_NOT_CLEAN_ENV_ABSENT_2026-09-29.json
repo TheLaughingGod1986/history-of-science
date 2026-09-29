@@ -1,5 +1,9 @@
 {
-  "status": "DRY_RUN_NOT_CLEAN_STOP",
+  "status": "SUPERSEDED",
+  "supersededBy": "PACKAGE_UPLOAD_RESULT_2026-09-29.json",
+  "supersededAt": "2026-09-29T22:30:00+01:00",
+  "supersededNote": "Long uploaded via Studio CDP as GHZDsiH7L7A (no .env). Keep for history; do not treat as current stop.",
+  "priorStatus": "DRY_RUN_NOT_CLEAN_STOP",
   "at": "2026-09-29T16:37:32.302716+00:00",
   "channelRequired": "@HistoryOfScienceYT",
   "channelIdRequired": "UCXp7HkBIl1LgaznXuZHJyRg",

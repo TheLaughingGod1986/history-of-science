@@ -1,0 +1,106 @@
+{
+  "at": "2026-09-29T21:40:03",
+  "videoId": "GHZDsiH7L7A",
+  "thumb": {
+    "file": "hos_004_thumb_A_atom_live_v04.jpg",
+    "inputs_shown": 1,
+    "via": "input[0]",
+    "ok": true,
+    "saved": true,
+    "body_has_hidden": false
+  },
+  "schedule": {
+    "has_15": false,
+    "has_1800": false,
+    "has_30": false,
+    "proof": "v20_20_visibility.png",
+    "ok": true
+  },
+  "content": {
+    "content_15": true,
+    "content_30": false,
+    "is_list": true,
+    "proof": "v24_22_content.png"
+  },
+  "end": {
+    "related": "AL_-qlWko_g",
+    "tracks_open": [],
+    "template": "1 video, 1 subscribe",
+    "bind": {
+      "video_click": "Subscribe: History of Science\nVideo: Best for viewer",
+      "specific": null,
+      "filled": true,
+      "pick": null
+    },
+    "tracks_bound": [
+      "Subscribe: History of Science\nShow hovercard outline",
+      "Subscribe: History of Science",
+      "Subscribe: History of Science\nVideo: Best for viewer\n0:00:00",
+      "Subscribe: History of Science\nVideo: Best for viewer",
+      "Video: Best for viewer"
+    ],
+    "save": {
+      "pair": {
+        "discard": {
+          "x": 1101.65625,
+          "y": 60,
+          "w": 104.046875,
+          "h": 36,
+          "t": "Discard changes"
+        },
+        "save": {
+          "x": 1264.8515625,
+          "y": 78,
+          "w": 30.296875,
+          "h": 36,
+          "disabled": false,
+          "t": "Save"
+        }
+      },
+      "clicked": true
+    },
+    "tracks_verify": [],
+    "template2": "1 video, 1 subscribe",
+    "bind2": {
+      "video_click": "Subscribe: History of Science\nVideo: Best for viewer",
+      "specific": null,
+      "filled": true,
+      "pick": null
+    },
+    "save2": {
+      "pair": {
+        "discard": {
+          "x": 1101.65625,
+          "y": 60,
+          "w": 104.046875,
+          "h": 36,
+          "t": "Discard changes"
+        },
+        "save": {
+          "x": 1264.8515625,
+          "y": 78,
+          "w": 30.296875,
+          "h": 36,
+          "disabled": false,
+          "t": "Save"
+        }
+      },
+      "clicked": true
+    },
+    "has_subscribe": false,
+    "has_video": false,
+    "has_002": false,
+    "best_for_viewer": false,
+    "ok": false
+  },
+  "pin": {
+    "ok": false,
+    "reason": "deferred_while_private_scheduled",
+    "note": "Pin on launch 15 Oct 2026"
+  },
+  "ab": {
+    "ok": false,
+    "ineligible": true,
+    "note": "Studio A/B Testing Ineligible on scheduled/private; pairs wanted A/C/B + 3 titles; arm when eligible"
+  }
+}

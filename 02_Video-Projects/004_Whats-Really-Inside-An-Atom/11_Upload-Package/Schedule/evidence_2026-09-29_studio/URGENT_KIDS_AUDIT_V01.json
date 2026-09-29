@@ -1,0 +1,221 @@
+{
+  "at": "2026-09-29T22:05:43",
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "urgent": "Ben 20:00 Made for Kids",
+  "channelCheck": {
+    "ok": true,
+    "has_orbit": false,
+    "snip": "Channel content\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n8:45\nWhat's Really Inside an Atom?\nWhat's really inside an atom, and why is the periodic table in this order?"
+  },
+  "004_before": {
+    "videoId": "GHZDsiH7L7A",
+    "tag": "004_before",
+    "set_to_not": true,
+    "set_to_yes": false,
+    "radios": {
+      "audY": 1065,
+      "radios": [
+        {
+          "t": "Yes, it's Made for Kids\n.\nFeatures like personalised ads and notifications won't",
+          "checked": false,
+          "y": 1274
+        },
+        {
+          "t": "No, it's not 'Made for Kids'",
+          "checked": true,
+          "y": 1308
+        }
+      ]
+    },
+    "no_checked": true,
+    "yes_checked": false,
+    "ok_not_kids": true,
+    "made_for_kids": false
+  },
+  "004_fix": {
+    "already_ok": true,
+    "after": {
+      "videoId": "GHZDsiH7L7A",
+      "tag": "004_before",
+      "set_to_not": true,
+      "set_to_yes": false,
+      "radios": {
+        "audY": 1065,
+        "radios": [
+          {
+            "t": "Yes, it's Made for Kids\n.\nFeatures like personalised ads and notifications won't",
+            "checked": false,
+            "y": 1274
+          },
+          {
+            "t": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "y": 1308
+          }
+        ]
+      },
+      "no_checked": true,
+      "yes_checked": false,
+      "ok_not_kids": true,
+      "made_for_kids": false
+    }
+  },
+  "channelAdvanced": {
+    "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 2 days 10 hours\nRanking by views\n6 of 10\nViews\n8\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\n\nCreate your first post to start a conversation and get feedback from your community.\n\nCreate post\nChannel analytics\nCurrent subscribers\n1\n+1 in last 28 days\nSummary\nLast 28 days\nViews\t549\t\n\u2014\n\nWatch time (hours)\t1.5\t\n\u2014\nTop content\nLast 48 hours \u00b7 Views\nHow Did We Discover the Periodic Table?\n\t\n23\n\n\nThe first X-ray showed a wedding ring\n\t\n8\n\n\nHow did R\u00f6ntgen see bones without cutting\n\t\n7\nGo to channel analytics\nNews\nMonthly Roundup: Made on YouTube edition\nLearn about all the exciting launches from Made on YouTube with this month's Roundup\nCheck it out\n1 / 4\nCreator Insider\nInside YouTube Brand Products\nJoin @hopescope, Romana, and @ReneRitchie as they break down brand deals, ads, and how to turn your audience into a sustainable career\nWatch on YouTube\nTerms of use \nPrivacy Policy \nPolicies and Safety ",
+    "has_audience_section": true,
+    "radios": [],
+    "channel_default_made_for_kids": false,
+    "channel_default_not_for_kids": false,
+    "stop_for_ben": false,
+    "note": "Channel default is not Made for Kids (or unclear \u2014 see screenshot/radios)"
+  },
+  "audits": {
+    "001_long": {
+      "videoId": "_C92tIJCk8A",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "001_short_8uBR-9oxeWs": {
+      "videoId": "8uBR-9oxeWs",
+      "ok_not_kids": false,
+      "made_for_kids": false,
+      "no_checked": false,
+      "yes_checked": false,
+      "set_to_not": false,
+      "set_to_yes": false
+    },
+    "001_short_YX2UR1u-JCQ": {
+      "videoId": "YX2UR1u-JCQ",
+      "ok_not_kids": false,
+      "made_for_kids": false,
+      "no_checked": false,
+      "yes_checked": false,
+      "set_to_not": false,
+      "set_to_yes": false
+    },
+    "001_short_Fnb3p81u-wY": {
+      "videoId": "Fnb3p81u-wY",
+      "ok_not_kids": false,
+      "made_for_kids": false,
+      "no_checked": false,
+      "yes_checked": false,
+      "set_to_not": false,
+      "set_to_yes": false
+    },
+    "001_short_vpuRgKXtFlY": {
+      "videoId": "vpuRgKXtFlY",
+      "ok_not_kids": false,
+      "made_for_kids": false,
+      "no_checked": false,
+      "yes_checked": false,
+      "set_to_not": false,
+      "set_to_yes": false
+    },
+    "001_short_Lcmh5y2KMQM": {
+      "videoId": "Lcmh5y2KMQM",
+      "ok_not_kids": false,
+      "made_for_kids": false,
+      "no_checked": false,
+      "yes_checked": false,
+      "set_to_not": false,
+      "set_to_yes": false
+    },
+    "002_long": {
+      "videoId": "AL_-qlWko_g",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "002_short_uU12JA5rMWg": {
+      "videoId": "uU12JA5rMWg",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "002_short_nFQRWmpulTQ": {
+      "videoId": "nFQRWmpulTQ",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "002_short_CnHwX1L9XHg": {
+      "videoId": "CnHwX1L9XHg",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "002_short_nba0-f7PPeU": {
+      "videoId": "nba0-f7PPeU",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "002_short_LanTHJckYx8": {
+      "videoId": "LanTHJckYx8",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "003_long": {
+      "videoId": "frP_YrNShsU",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "003_short_oowAOWTBoq0": {
+      "videoId": "oowAOWTBoq0",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "003_short_xvanpsLeADE": {
+      "videoId": "xvanpsLeADE",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    },
+    "003_short_zI_eD3vFWmE": {
+      "videoId": "zI_eD3vFWmE",
+      "ok_not_kids": true,
+      "made_for_kids": false,
+      "no_checked": true,
+      "yes_checked": false,
+      "set_to_not": true,
+      "set_to_yes": false
+    }
+  },
+  "made_for_kids_hits": [],
+  "004_ok": true
+}

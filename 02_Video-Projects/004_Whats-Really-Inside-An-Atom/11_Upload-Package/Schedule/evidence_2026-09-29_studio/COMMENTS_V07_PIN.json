@@ -1,0 +1,8 @@
+{
+  "text": "What's really inside an atom \u2014 and why is the periodic table in this order?",
+  "ok": false,
+  "steps": [
+    "miss:textarea:TimeoutError"
+  ],
+  "reason": "no_box:TimeoutError"
+}

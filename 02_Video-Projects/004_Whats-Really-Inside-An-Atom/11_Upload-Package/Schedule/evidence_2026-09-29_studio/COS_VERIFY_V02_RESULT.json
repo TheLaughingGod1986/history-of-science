@@ -1,0 +1,100 @@
+{
+  "at": "2026-09-29T21:58:57",
+  "videoId": "GHZDsiH7L7A",
+  "open": "edit video visibility status",
+  "state_before": {
+    "inputs": [
+      {
+        "aria": "",
+        "ph": "",
+        "value": "18:00",
+        "x": 1229,
+        "y": 857,
+        "type": "text"
+      }
+    ],
+    "premiere": {
+      "aria": "Set as Premiere",
+      "t": "",
+      "ariaChecked": "false",
+      "checkedAttr": false,
+      "className": "style-scope ytcp-checkbox-lit"
+    },
+    "texts": [
+      "15 Oct 2026",
+      "15 Oct 2026",
+      "15 Oct 2026",
+      "15 Oct 2026",
+      "15 Oct 2026",
+      "15 Oct 2026",
+      "Set as Premiere",
+      "Set as Premiere",
+      "Set as Premiere",
+      "Set as Premiere"
+    ]
+  },
+  "premiere_was_checked": false,
+  "time_inputs_before": [
+    {
+      "aria": "",
+      "ph": "",
+      "value": "18:00",
+      "x": 1229,
+      "y": 857,
+      "type": "text"
+    }
+  ],
+  "time_set": {
+    "ok": true,
+    "old": "18:00",
+    "aria": "",
+    "y": 857
+  },
+  "state_after": {
+    "inputs": [
+      {
+        "aria": "",
+        "value": "18:00",
+        "y": 857
+      }
+    ],
+    "premiere": {
+      "aria": "Set as Premiere",
+      "ariaChecked": "false",
+      "tag": "DIV"
+    },
+    "has15": true,
+    "has1800": true
+  },
+  "done": "mouse",
+  "save": false,
+  "final": {
+    "has15": true,
+    "has1800": true,
+    "premiereChecked": false,
+    "inputs": [
+      {
+        "aria": "",
+        "v": "18:00",
+        "y": 857
+      }
+    ],
+    "bodyHasPremiereLabel": true,
+    "premiereAria": "Set as Premiere"
+  },
+  "ai": {
+    "aiY": null,
+    "yes": null,
+    "no": null
+  },
+  "thumb": {
+    "uploaded": true
+  },
+  "ok": false,
+  "ok_note": {
+    "schedule_15": true,
+    "time_1800": true,
+    "premiere_off": true,
+    "ai_yes": null
+  }
+}

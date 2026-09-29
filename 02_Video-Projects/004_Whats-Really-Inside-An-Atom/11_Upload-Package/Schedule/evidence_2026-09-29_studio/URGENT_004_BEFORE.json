@@ -1,0 +1,25 @@
+{
+  "videoId": "GHZDsiH7L7A",
+  "tag": "004_before",
+  "set_to_not": true,
+  "set_to_yes": false,
+  "radios": {
+    "audY": 1065,
+    "radios": [
+      {
+        "t": "Yes, it's Made for Kids\n.\nFeatures like personalised ads and notifications won't",
+        "checked": false,
+        "y": 1274
+      },
+      {
+        "t": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "y": 1308
+      }
+    ]
+  },
+  "no_checked": true,
+  "yes_checked": false,
+  "ok_not_kids": true,
+  "made_for_kids": false
+}

@@ -1,0 +1,18 @@
+{
+  "text": "What's really inside an atom \u2014 and why is the periodic table in this order?",
+  "ok": false,
+  "steps": [
+    "clicked_commentbox",
+    "focus_js:{'tag': 'TEXTAREA', 'ph': 'Add a comment\u2026', 'id': 'textarea'}",
+    "typed_len:0",
+    "submit:clicked:Comment"
+  ],
+  "at": "2026-09-29T23:11:55",
+  "typed_val": "",
+  "has_text": false,
+  "reason": "post_failed_text_missing",
+  "debug": {
+    "html": "<ytcp-commentbox id=\"commentbox\" hide-unfocused-buttons=\"\" class=\"style-scope ytcp-comments-section\" is-disabled=\"\"><!--css-build:shady--><!--css_build_scope:ytcp-commentbox--><div id=\"body\" class=\"style-scope ytcp-commentbox\">\n  <yt-img-shadow class=\"author-thumbnail style-scope ytcp-commentbox no-transition\" fit=\"\" height=\"40\" width=\"40\" style=\"background-color: transparent;\" loaded=\"\"><!--css-build:shady--><!--css_build_scope:yt-img-shadow--><!--css_build_styles:video.youtube.src.web.polymer.shared.ui.styles.yt_base_styles.yt.base.styles.css.js,video.youtube.src.web.polymer.shared.ui.yt_img_shadow.yt.img.shadow.css.js--><img id=\"img\" draggable=\"false\" class=\"style-scope yt-img-shadow\" alt=\"OpptiAI\" height=\"40\" width=\"40\" src=\"https://yt3.ggpht.com/o4Ee4YFbM9cH021aksI9ZMtqYmtZl2aQHkORvBmlNyxceQ8xPN5BQVGD6cihG25DQHOyd17JTA=s48-c-k-c0x00ffffff-no-rj\"></yt-img-shadow>\n  <div id=\"main\" class=\"style-scope ytcp-commentbox\">\n    <ytcp-form-input-container id=\"input-container\" class=\"style-scope ytcp-commentbox\" label-icon-style=\"default\" disabled=\"\" aria-describedby=\"goog_695669626\"><!--css-build:shady--><!--css_build_scope:ytcp-form-input-container--><div id=\"outer\" class=\"style-scope ytcp-form-input-container\"><div id=\"label\" class=\"style-scope ytcp-form-input-container\"><ps-dom-if class=\"style-scope ytcp-form-input-container\"><template is=\"dom-if\"></template></ps-dom-if><span id=\"label-text\" class=\"style-scope ytcp-form-input-container\">Comment</span><ps-dom-if class=\"style-sco",
+    "bodySnip": "Removed filter \u2018Response status: Unresponded\u2019\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo comments\nPublished\nMost relevant\nSearch\nComment\nNo comments found. Try searching for something else or removing filters.\nNo comments found. Try searching for something else or removing filters.\nModeration status\nPublished\nHeld\nApply"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "phase": "C",
+  "at": "2026-09-30T00:02:26",
+  "changed_to_not_kids": [],
+  "already_not_kids": [
+    "001_long",
+    "002_long",
+    "003_long",
+    "002_short_uU12JA5rMWg",
+    "002_short_nFQRWmpulTQ",
+    "002_short_CnHwX1L9XHg",
+    "002_short_nba0-f7PPeU",
+    "002_short_LanTHJckYx8",
+    "003_short_oowAOWTBoq0",
+    "003_short_xvanpsLeADE",
+    "003_short_zI_eD3vFWmE"
+  ],
+  "oops": [
+    "001_short_8uBR-9oxeWs",
+    "001_short_YX2UR1u-JCQ",
+    "001_short_Fnb3p81u-wY",
+    "001_short_vpuRgKXtFlY",
+    "001_short_Lcmh5y2KMQM"
+  ],
+  "longs": {
+    "001_long": {
+      "videoId": "_C92tIJCk8A",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false,
+      "long_settings_saved": false
+    },
+    "002_long": {
+      "videoId": "AL_-qlWko_g",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false,
+      "long_settings_saved": false
+    },
+    "003_long": {
+      "videoId": "frP_YrNShsU",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false,
+      "long_settings_saved": false
+    }
+  },
+  "audits": {
+    "001_long": {
+      "videoId": "_C92tIJCk8A",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false,
+      "long_settings_saved": false
+    },
+    "002_long": {
+      "videoId": "AL_-qlWko_g",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false,
+      "long_settings_saved": false
+    },
+    "003_long": {
+      "videoId": "frP_YrNShsU",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false,
+      "long_settings_saved": false
+    },
+    "002_short_uU12JA5rMWg": {
+      "videoId": "uU12JA5rMWg",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false
+    },
+    "002_short_nFQRWmpulTQ": {
+      "videoId": "nFQRWmpulTQ",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false
+    },
+    "002_short_CnHwX1L9XHg": {
+      "videoId": "CnHwX1L9XHg",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false
+    },
+    "002_short_nba0-f7PPeU": {
+      "videoId": "nba0-f7PPeU",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false
+    },
+    "002_short_LanTHJckYx8": {
+      "videoId": "LanTHJckYx8",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false
+    },
+    "003_short_oowAOWTBoq0": {
+      "videoId": "oowAOWTBoq0",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false
+    },
+    "003_short_xvanpsLeADE": {
+      "videoId": "xvanpsLeADE",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false
+    },
+    "003_short_zI_eD3vFWmE": {
+      "videoId": "zI_eD3vFWmE",
+      "before": {
+        "not_kids": true,
+        "kids": false
+      },
+      "changed": false
+    }
+  },
+  "note_C4": "AFTER 004 public (15 Oct 18:05): set end screen video on 001/002/003 \u2192 004 + Subscribe",
+  "made_for_kids_changed": [],
+  "summary": {
+    "changed_to_not_kids": [],
+    "already_not_kids_count": 11,
+    "oops_001_shorts": [
+      "001_short_8uBR-9oxeWs",
+      "001_short_YX2UR1u-JCQ",
+      "001_short_Fnb3p81u-wY",
+      "001_short_vpuRgKXtFlY",
+      "001_short_Lcmh5y2KMQM"
+    ],
+    "note": "001 Shorts Studio Oops \u2014 could not open edit; longs 001-003 + 002/003 Shorts already not Made for Kids",
+    "C4_after_15_oct": "AFTER 004 public (15 Oct 18:05): set end screen video on 001/002/003 \u2192 004 + Subscribe"
+  }
+}

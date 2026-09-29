@@ -1,0 +1,73 @@
+{
+  "at": "2026-09-29T21:34:04",
+  "videoId": "GHZDsiH7L7A",
+  "thumb": {
+    "file": "hos_004_thumb_A_atom_live_v04.jpg",
+    "before": {
+      "has_hidden_number": false,
+      "has_atomic_number": false,
+      "has_atom_title_overlay": true
+    },
+    "inputs": [
+      {
+        "acc": "image/jpeg,image/png",
+        "y": 0,
+        "x": 0,
+        "w": 0,
+        "h": 0,
+        "disabled": false
+      }
+    ],
+    "upload_btns": [],
+    "via": "input[0]",
+    "ok": true,
+    "saved": true,
+    "after": {
+      "has_hidden_number": false,
+      "has_atomic_number": false,
+      "has_atom_title_overlay": true
+    }
+  },
+  "schedule": {
+    "click": {
+      "x": 1045,
+      "y": 728,
+      "t": "Scheduled",
+      "y0": 708
+    },
+    "has_15": false,
+    "has_1800": false,
+    "has_30": false,
+    "ok": true,
+    "proof": "v20_20_visibility.png (fallback)"
+  },
+  "content": {
+    "content_15": false,
+    "content_30": false,
+    "title": true,
+    "ab_running": false
+  },
+  "end": {
+    "related": "AL_-qlWko_g",
+    "import": "Import from video",
+    "import_confirm": "^Select$",
+    "after_import_elements": false,
+    "template": "1 video, 1 subscribe",
+    "nan_before": true,
+    "save_enabled": false,
+    "save": "Save",
+    "tracks": [],
+    "nan": false,
+    "error": false,
+    "has_subscribe_track": false,
+    "has_video_track": false,
+    "has_002_in_track": false,
+    "best_for_viewer": false,
+    "ok": false
+  },
+  "pin": {
+    "ok": false,
+    "reason": "deferred_while_private_scheduled",
+    "note": "Pin on launch 15 Oct 2026"
+  }
+}

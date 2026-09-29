@@ -53,7 +53,7 @@
     }
   ],
   "captionsFile": "Captions/hos_004_full_v02.en.srt",
-  "note": "MUSIC PASS on hos_004_full_v02.mp4 sha ed870939\u2026. Thumbs A/B v04 + C v06 Ben PASS. Ben ordered upload 2026-09-29 but npm dry-run NOT CLEAN: HOS 07_Content-Ops/.env absent (DATABASE_URL). Never Orbit .env. STOP long upload until local HOS .env exists. Intended: private + publishAt 2026-10-15T17:00:00Z \u00b7 no Premiere \u00b7 zero /go/.",
+  "note": "MUSIC PASS on hos_004_full_v02.mp4 sha ed870939\u2026. Thumbs A/B v04 + C v06 Ben PASS. Uploaded 2026-09-29 via YouTube Studio CDP (Playwright \u00b7 HOS Chrome profile :9460). No .env / no API / never Orbit. Shorts on hold for Ben phone watch.",
   "musicPass": {
     "cut": "hos_004_full_v02.mp4",
     "sha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
@@ -71,10 +71,34 @@
     "C": "v06",
     "passedAt": "2026-09-29"
   },
-  "uploadBlocked": {
-    "reason": "HOS 07_Content-Ops/.env absent \u2014 npm youtube:package dry-run fails DATABASE_URL",
-    "hosEnvPresent": false,
+  "youtubeId": "GHZDsiH7L7A",
+  "upload": {
+    "method": "youtube_studio_playwright_cdp",
+    "platformPostId": "GHZDsiH7L7A",
+    "youtubeId": "GHZDsiH7L7A",
+    "platformUrl": "https://youtu.be/GHZDsiH7L7A",
+    "uploadedAt": "2026-09-29",
+    "schedule": "2026-10-15T17:00:00.000Z",
+    "scheduleUK": "Thu 15 Oct 2026 18:00 Europe/London",
+    "premiere": false,
+    "premiereNote": "Package premiere false — Studio Set as Premiere OFF (verified FINISH 29 Sep 22:19)",
+    "madeForKids": false,
+    "channel": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "resultFile": "Schedule/PACKAGE_UPLOAD_RESULT_2026-09-29.json",
+    "scheduleScreenshot": "Schedule/evidence_2026-09-29_studio/FINISH_visibility_15oct_1800_premiere_off.png",
+    "audienceScreenshot": "Schedule/evidence_2026-09-29_studio/URGENT_audience_004_not_made_for_kids.png",
+    "testAndCompareScreenshot": "Schedule/evidence_2026-09-29_studio/FINISH_test_and_compare.png",
+    "testAndCompare": "Ineligible on scheduled/private — none of Title and thumbnail / Thumbnail only offered; no title test until after launch",
+    "captions": "hos_004_full_v02.en.srt English uploaded (toast confirmed)",
+    "endScreen": "Subscribe + Specific AL_-qlWko_g place then Studio processing error — reopen empty; re-set when processing healthy",
+    "pinnedComment": "deferred to launch day (private/scheduled)",
+    "shortsUploaded": false,
     "orbitEnvUsed": false,
-    "recordedAt": "2026-09-29"
+    "hosEnvUsed": false,
+    "supersedes": [
+      "Schedule/UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json",
+      "Schedule/DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json"
+    ]
   }
 }

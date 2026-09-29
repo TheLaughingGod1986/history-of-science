@@ -1,0 +1,90 @@
+{
+  "finished": "2026-09-29T21:48:00",
+  "videoId": "GHZDsiH7L7A",
+  "channel": "@HistoryOfScienceYT",
+  "method": "youtube_studio_playwright_cdp_9460",
+  "ben_phone_uat": "29 Sep 18:51 Studio app — auto thumb, no Altered, date looked like 30 Sep",
+  "thumbnail": {
+    "wanted": "hos_004_thumb_A_atom_live_v04.jpg",
+    "ok": false,
+    "live": "Still shows C / THE HIDDEN NUMBER (Te 52 / I 53) on Details + Content after repeated A v04 uploads",
+    "blocker": "Studio toast: We had trouble saving your video / save retry. File input accepts A but UI reverts to Hidden Number.",
+    "proof": "evidence_2026-09-29_studio/v25b_reload.png",
+    "note": "Manual upload of A v04 in Studio Details thumbnail when save is healthy."
+  },
+  "ai_use": {
+    "ok": true,
+    "label": "AI use = Yes (Studio renamed Altered content)",
+    "proof": "evidence_2026-09-29_studio/FINAL_ai_use_yes.png"
+  },
+  "madeForKids": {
+    "ok": true,
+    "value": "No",
+    "proof": "evidence_2026-09-29_studio/FINAL_kids_no.png / v22_03_ai_yes context"
+  },
+  "schedule": {
+    "ok": true,
+    "label": "Thu 15 Oct 2026 18:00 Europe/London (2026-10-15T17:00:00.000Z)",
+    "premiere": false,
+    "premiereCheckboxAriaChecked": false,
+    "not_30_sep": true,
+    "cos_note": "finish2 19:05 probe logged has1800=False premiere=True from Content list text without opening Visibility — false alarm. Live Visibility panel (CoS v02) shows 15 Oct 2026 · 18:00 · Set as Premiere UNCHECKED.",
+    "proof_visibility": "evidence_2026-09-29_studio/COS_visibility_15oct_1800_premiere_off.png",
+    "proof_content": "evidence_2026-09-29_studio/FINAL_content_15oct.png (Content list: 15 Oct 2026 Scheduled)",
+    "verify_json": "evidence_2026-09-29_studio/COS_VERIFY_V02_RESULT.json"
+  },
+  "testAndCompare": {
+    "wanted": "Title and thumbnail ×3",
+    "pairs": [
+      {
+        "title": "What's Really Inside an Atom?",
+        "thumb": "hos_004_thumb_A_atom_live_v04.jpg"
+      },
+      {
+        "title": "Why Is the Periodic Table in This Order?",
+        "thumb": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+      },
+      {
+        "title": "How Small Can You Cut Gold?",
+        "thumb": "hos_004_thumb_B_cut_gold_live_v04.jpg"
+      }
+    ],
+    "ok": false,
+    "ineligible": true,
+    "titles_listed_partial": [
+      "What's Really Inside an Atom?",
+      "Why Is the Periodic Table in This Order?"
+    ],
+    "note": "Studio A/B Testing shows Ineligible on this scheduled/private video. Cannot arm Title+thumbnail×3 until eligible (often after public)."
+  },
+  "endScreen": {
+    "wanted": {
+      "relatedVideoId": "AL_-qlWko_g",
+      "relatedTitle": "How Did We Discover the Periodic Table?",
+      "subscribe": true
+    },
+    "ok": false,
+    "blocker": "Studio: There was a problem in processing your video. As a result, your recent edits were not saved. NaN timestamps on elements; Save after place then rejected; reopen shows empty timeline.",
+    "proof": "evidence_2026-09-29_studio/v24_33_after_save.png",
+    "note": "Re-set Specific 002 + Subscribe after Studio processing settles / on launch prep."
+  },
+  "pinnedComment": {
+    "ok": false,
+    "reason": "deferred_while_private_scheduled",
+    "note": "Pin on launch day 15 Oct 2026"
+  },
+  "shorts": {
+    "ok": true,
+    "version": "v05",
+    "note": "Word-timed captions; gate PASS all three; iCloud HOS UAT 10_Shorts; STOP — do not upload",
+    "index": "10_Shorts/SHORTS_PUNCH_INDEX_v05.json"
+  },
+  "scripts": [
+    "_fix_hos_004_studio_phone_uat_v20.py",
+    "_fix_hos_004_studio_phone_uat_v21.py",
+    "_fix_hos_004_studio_phone_uat_v22.py",
+    "_fix_hos_004_studio_phone_uat_v23.py",
+    "_fix_hos_004_studio_phone_uat_v24.py",
+    "_fix_hos_004_studio_phone_uat_v25_thumb.py"
+  ]
+}

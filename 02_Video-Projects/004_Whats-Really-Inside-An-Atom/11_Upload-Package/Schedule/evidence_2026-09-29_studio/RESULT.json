@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "method": "youtube_studio_hos_session",
+  "channel": {
+    "name": "History of Science",
+    "handle": "@HistoryOfScienceYT",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "studioUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "not": [
+    "@OrbitWithBen",
+    "@OpptiAI",
+    "@HistoryOfScience",
+    "Orbit .env"
+  ],
+  "video": {
+    "file": "hos_004_full_v02.mp4",
+    "sha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
+    "title": "What's Really Inside an Atom?",
+    "thumb": "hos_004_thumb_A_atom_live_v04.jpg",
+    "platformPostId": "GHZDsiH7L7A",
+    "platformUrl": "https://youtu.be/GHZDsiH7L7A",
+    "watchUrl": "https://www.youtube.com/watch?v=GHZDsiH7L7A",
+    "studioEdit": "https://studio.youtube.com/video/GHZDsiH7L7A/edit"
+  },
+  "schedule": {
+    "label": "Thursday 15 Oct 2026 18:00 Europe/London",
+    "publishAt": "2026-10-15T17:00:00.000Z",
+    "type": "schedule",
+    "premiere": false
+  },
+  "madeForKids": false,
+  "affiliate": "none",
+  "shortsUploaded": false,
+  "staged": "/tmp/hos_004_full_v02.mp4",
+  "channelCheck": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Channel dashboard - YouTube Studio",
+    "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 2 days 7 hours\nRanking by views\n6 of 10\nViews\n8\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\nPublished videos\nHow did R\u00f6ntgen see bones without cutting\n35\n0\n0\nHow X-rays Were Discovered by Accident\n26\n0\n1\nHow Did We Discover X-rays?\n0\n0\n0\nWhat other table has empty chairs?\n4\n0\n0\nGo "
+  },
+  "openUpload": {
+    "fileInputs": 1
+  },
+  "pick": {
+    "path": "/tmp/hos_004_full_v02.mp4",
+    "ok": true,
+    "via": "cdp_setFileInputFiles"
+  },
+  "uploadWait": {
+    "waited_s": 4.2,
+    "ok": true
+  },
+  "titleDesc": {
+    "title": "fill",
+    "desc": true,
+    "desc_chars": 867
+  },
+  "kidsAi": {
+    "kids": "err:TimeoutError",
+    "ai": "skip"
+  },
+  "thumb": {
+    "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
+    "ok": true,
+    "via": "input_0"
+  },
+  "tags": {
+    "chars": 657,
+    "ok": true
+  },
+  "next": "no_vis",
+  "scheduleRadio": "",
+  "when": {
+    "premiere": false,
+    "date_picked": null,
+    "time_focus": {
+      "ok": false
+    },
+    "premiere_state": null
+  },
+  "visibilityText": "What's Really Inside an Atom?\nSaving\u2026\nDetails\nVideo elements\nInitial check\nVisibility\nDetails\nReuse details\nTitle (required)\nWhat's Really Inside an Atom?\nA/B Testing\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nPlaylists\nAdd your video to one or more playlists to organise your co",
+  "doneClick": "",
+  "videoId": "GHZDsiH7L7A",
+  "visibilityVerify": "Video details\nSkip navigation\nAsk Studio\nCreate\nThis video is in a draft state\nEdit draft\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nWhat's Really Inside an Atom?\nA/B Testing\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nUpload file\nSelect from video\nA/B Testing\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made",
+  "scheduledOk": false,
+  "premiereInVisibility": false,
+  "note": "verify schedule text manually from screenshot"
+}

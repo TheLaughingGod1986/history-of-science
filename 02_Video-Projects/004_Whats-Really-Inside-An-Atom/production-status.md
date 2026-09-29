@@ -287,27 +287,119 @@ C lander: `_land_hos_004_thumb_C_live_v06.py`. Index: `THUMBS_INDEX_v06.json`.
 
 T&C: 1 Atom+A · 2 Periodic+C v06 · 3 Gold+B. Family: `hos_004_thumbs_v06_family_vs_002_live.jpg`.
 
-## STEP 5 package — **UPLOAD BLOCKED** (Ben yes received · dry-run not clean)
+## STEP 5 package — **UPLOADED via Studio** (29 Sep 2026)
 
-Ben explicit yes (29 Sep 2026): *“Yes, upload private and schedule Thu 15 Oct 18:00 as soon as the dry run is clean, no need to show me first.”*
+Ben (29 Sep 18:33): skip API/`.env` — upload through YouTube Studio CDP on Mini (HOS Chrome profile). Never Orbit.
 
-**Gate failed → no upload.** Package metadata from the music-PASS dry-run is correct (title · private · `publishAt` 2026-10-15T17:00:00Z · no Premiere · full_v02 sha `ed870939…` · C v06 T&C), but the **live npm dry-run is not clean**:
-
-| Check | Result |
+| Field | Value |
 |---|---|
-| Title / privacy / publishAt / no Premiere / v02 sha | OK in resolved package |
-| `npm run youtube:package -- --dry-run` | **FAIL** — `DATABASE_URL` undefined |
-| HOS `07_Content-Ops/.env` | **absent** |
-| Orbit `.env` used? | **No** (forbidden) |
-| Video id | **none** — nothing uploaded |
+| Method | Playwright CDP `:9460` · `~/.hos-chrome-youtube-studio` |
+| Channel | **@HistoryOfScienceYT** · `UCXp7HkBIl1LgaznXuZHJyRg` (checked first) |
+| Cut | `hos_004_full_v02.mp4` sha `ed870939…e98e` · 524.7 s |
+| Title | What's Really Inside an Atom? |
+| Thumb | A v04 |
+| Video id | **`GHZDsiH7L7A`** · https://youtu.be/GHZDsiH7L7A |
+| Visibility | **Scheduled** · private until then · **not Premiere** |
+| Air | **Thu 15 Oct 2026 18:00 Europe/London** (`2026-10-15T17:00:00.000Z`) |
+| Made for kids | No |
+| Proof | `11_Upload-Package/Schedule/evidence_2026-09-29_studio/689_schedule_proof.png` (tooltip: public 15 October 2026 at 18:00) |
+| Result JSON | `11_Upload-Package/Schedule/PACKAGE_UPLOAD_RESULT_2026-09-29.json` |
 
-**Env path required (HOS only):**  
-`/Users/benjaminoats/YouTube/History Of Science/07_Content-Ops/.env`  
-Do **not** copy or load `orbit-with-ben/07_Content-Ops/.env`. Do not print secrets.
+### Studio finish — phone UAT (29 Sep 18:51 → CDP v20–v25) · FINISH order 20:00
 
-**Next:** Ben places HOS Content Ops `.env` at that path → re-run `npm run youtube:package -- --dry-run` clean → then private schedule upload (no Premiere · no Shorts). Record video id on main after that.
+Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish on Mini (`:9460`, HOS Chrome). FINISH result: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/FINISH_V01C_RESULT.json`.
 
-Evidence: `Schedule/PACKAGE_DRY_RUN_MUSIC_PASS_2026-09-29.json` · `Schedule/UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json`
+| Item | Status |
+|---|---|
+| Audience (Made for Kids) | **OK — No, not Made for Kids** (checked after every save). See Made for Kids section. Proof: `URGENT_audience_004_not_made_for_kids.png` |
+| Visibility | **OK — leave alone** — Scheduled **15 Oct 2026 18:00 UK**, **Set as Premiere OFF** (`aria-checked=false`, input `18:00`), title *What's Really Inside an Atom?*, private until then. Proof: `FINISH_visibility_15oct_1800_premiere_off.png` · `finish_v01c_91_visibility_final.png` |
+| Altered / AI use | **OK — No** (Ben 20:03 override; was Yes earlier). Proof: `BEN_growth_B4_altered_AFTER.png` |
+| Custom thumb A v04 | **Still not persisted** — Studio still shows **C / THE HIDDEN NUMBER** after A image-input uploads + Save. Ben: set A manually when Studio save is healthy. Proof: `finish_v01d_03_thumb_reload.png` |
+| Test & Compare | **Ineligible** on scheduled/private. Studio offered **none** (Ineligible). Details lists 2 titles (Atom · Periodic); third (Gold) not listed. Wanted Title+thumbnail×3 — cannot arm until eligible. No title test until after launch. Proof: `FINISH_test_and_compare.png` |
+| Description + chapters | **OK** — package description + chapters, no `/go/` links. |
+| Captions | **OK** — `hos_004_full_v02.en.srt` uploaded (toast “English subtitles uploaded”). Proof: `FINISH_captions.png` (`finish_v01e_13_captions_after.png`) |
+| End screen | **Blocked by Studio** — template places Subscribe + Video (last 20 s), Specific `AL_-qlWko_g` attempted; Save → **“problem in processing… edits were not saved”** + NaN; reopen empty. Re-set after processing settles. Proof: `finish_v01d_25_end_after_save.png` · `FINISH_endscreen.png` |
+| Pinned comment | **Blocked while Private/Scheduled** — Studio: “This account doesn't have permission to create comments.” Textarea disabled. Package text ready, no links. **Pin on launch day 15 Oct** after Public. Proof: `BEN_004_pin_blocked_permission.png` · `COMMENTS_V09_PIN.json` |
+| Shorts | **v05 done** — `gate_shorts_open.py check` **PASS** ×3 · iCloud `HOS UAT/004_…/10_Shorts/`. **STOP — Ben phone watch. Schedule nothing until he says yes.** |
+| `.env` / API | **Not used.** Orbit never touched. |
+
+## Made for Kids — URGENT audit (Ben 29 Sep 20:00)
+
+Package says `madeForKids: false`. Studio had shown “Made for Kids” on `GHZDsiH7L7A` — audited via CDP `:9460` HOS Chrome.
+
+| Check | Result | Proof |
+|---|---|---|
+| **004 `GHZDsiH7L7A` Audience** | **No, it's not 'Made for Kids'** (radio checked; banner “set to not Made for Kids”). Already OK when opened — Ben may have fixed on phone. | `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_audience_004_not_made_for_kids.png` · `urgent_kids_004_force_after.png` · artifacts `~/.local/share/cursor-mac-mini-hos-worker/artifacts/hos004_studio_phone_uat/URGENT_audience_004_not_made_for_kids.png` |
+| **Channel → Settings → Channel → Advanced → Audience default** | **No, set this channel as not Made for Kids** (checked). Yes unchecked. **Did not STOP** — not “Yes, made for kids”. Channel settings **not changed**. | `URGENT_channel_advanced_audience.png` · `URGENT_CHANNEL_ADVANCED_V03.json` |
+| **001 long `_C92tIJCk8A`** | Not Made for Kids | `urgent_kids_001_long.png` |
+| **001 Shorts** (`8uBR-9oxeWs` · `YX2UR1u-JCQ` · `Fnb3p81u-wY` · `vpuRgKXtFlY` · `Lcmh5y2KMQM`) | Edit URLs returned Studio “Oops” — **not verified via edit pages**. Content list showed no Made-for-Kids badge on those Shorts. | `urgent_kids_001_short_*.png` · `URGENT_KIDS_FIX_V02.json` |
+| **002 long `AL_-qlWko_g` + 5 Shorts** | All **Not Made for Kids** | `urgent_kids_002_*.png` |
+| **003 long `frP_YrNShsU` + 3 Shorts** | All **Not Made for Kids** | `urgent_kids_003_*.png` |
+| **Made-for-Kids hits** | **None** among verified videos | `URGENT_KIDS_AUDIT_V01.json` |
+
+**Policy (every upload from now on):** after each Studio save, open Details → Audience and confirm **“No, it's not made for kids”** before end screen / pin / other finish steps. End screens and pinned comments do not work on kids’ videos — Audience first.
+
+JSON: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_KIDS_AUDIT_V01.json` · `URGENT_KIDS_FIX_V02.json` · `URGENT_CHANNEL_ADVANCED_V03.json`
+
+## Comments — Ben 20:03 (29 Sep)
+
+Kids-locked comments theory confirmed for 004 earlier blank UI; after Audience **No**, Comments section is editable.
+
+| Check | Result | Proof |
+|---|---|---|
+| **004 `GHZDsiH7L7A` Comments** | **On** · Moderation **Basic** · Who can comment **Anyone** · Sort **Top** · likes checkbox on | `BEN_004_comments_on.png` · `comments_v06_004_comments_on.png` · `COMMENTS_V06_RESULT.json` |
+| **001 long `_C92tIJCk8A`** | Comments **On** | `comments_v06_audit_001_long.png` |
+| **002 long `AL_-qlWko_g`** | Comments **On** | `comments_v06_audit_002_long.png` |
+| **003 long `frP_YrNShsU`** | Comments **On** | `comments_v06_audit_003_long.png` |
+| **002 Shorts** (5) | All Comments **On** | `comments_v06_audit_002_short_*.png` |
+| **003 Shorts** (3) | All Comments **On** | `comments_v06_audit_003_short_*.png` |
+| **001 Shorts** (5) | Edit “Oops” — **not audited** via Details (same as kids audit) | `comments_v06_audit_001_short_*_oops.png` |
+| **Comments OFF list** | **None** among auditable longs + 002/003 Shorts | `COMMENTS_BEN_2003_SUMMARY.json` |
+| **Pinned comment** | **Not posted** — Studio permission banner while Private/Scheduled. Do on launch day. | `BEN_004_pin_blocked_permission.png` · `COMMENTS_V09_PIN.json` |
+
+Summary: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/COMMENTS_BEN_2003_SUMMARY.json`
+
+## Studio growth settings — Ben 20:03 (29 Sep) · full order
+
+Ben’s full growth-settings list. Overrides: **(a) Altered/AI use = NO** (not Yes); **(b) channel Audience change authorised** (record before). CDP `:9460` HOS only. Summary JSON: `GROWTH_ALL_RESULT.json` · `CHANNEL_META.json` key `studio_growth_settings_2026-09-29`.
+
+### A — Channel settings
+
+| Item | Result | Proof |
+|---|---|---|
+| **A1 Audience** | **BEFORE: already not_kids** (“No, set this channel as not Made for Kids” checked). **AFTER: same.** No change needed; re-confirmed. | `BEN_growth_A1_audience_BEFORE.png` · `BEN_growth_A1_audience_AFTER.png` |
+| **A2 Upload defaults Basic** | Visibility **Private**; Category **Education**; Language **English (UK)**; Caption cert **never aired on US TV**; Licence **Standard YouTube**; title/desc templates empty | `BEN_growth_A2_basic_AFTER.png` · `BEN_growth_A2_advanced_fields_AFTER.png` |
+| **A3 Upload defaults Advanced** | Comments **On**; Moderation **Basic** (Studio UI had no “Hold potentially inappropriate” option in this dropdown); automatic chapters **ON**; caption cert set | `BEN_growth_A3_advanced_AFTER.png` · `BEN_growth_A3_comments_menu.png` |
+| **A4 Channel Basic info** | Country **United Kingdom**; keywords from `channel_keywords.txt`; description left (no Orbit) | `BEN_growth_A4_basic_AFTER.png` |
+| **A5 Branding watermark** | **Not added** (no subscribe graphics) | `BEN_growth_A5_branding.png` |
+
+### B — Long `GHZDsiH7L7A`
+
+| Item | Result | Proof |
+|---|---|---|
+| **B1 Audience** | Not Made for Kids; Comments/Notifications disabled notices **gone** | `BEN_growth_B1_audience.png` |
+| **B2 Visibility** | **Scheduled 15 Oct 2026 18:00**; **Set as Premiere OFF**; private until then | `BEN_growth_B2_visibility_PROOF.png` |
+| **B3 Details** | Title Atom; package description+chapters (no `/go/`); thumb A upload attempted; tags set | `BEN_growth_B3_details.png` |
+| **B4 AI use / Altered** | **No** (“No, AI wasn't used” / not altered) — **overrides earlier Yes** | `BEN_growth_B4_altered_AFTER.png` |
+| **B5 Subtitles** | English present / upload path used (`hos_004_full_v02.en.srt`) | `BEN_growth_B5_subtitles_AFTER.png` |
+| **B6 End screen** | **Partial** — Studio still flaky (processing); re-set if empty | `BEN_growth_B6_endscreen_AFTER.png` |
+| **B7 Cards** | Attempted ~1:30→002 + ~6:00→003; verify in Studio | `BEN_growth_B7_cards_AFTER.png` |
+| **B8 Playlist** | Create/add attempted for “History of Science: How We Found Out”; Studio **Oops** on playlist page after — **re-check manually** | `BEN_growth_B8_playlist_AFTER.png` |
+| **B9 Test & Compare** | **Ineligible** (scheduled); mode noted Thumbnail / titles listed | `BEN_growth_B9_tc_AFTER.png` |
+| **B10 Pin** | **Blocked** while Private/Scheduled — do **15 Oct 18:05** | `BEN_growth_B10_pin.png` |
+
+### C — Older films
+
+| Item | Result |
+|---|---|
+| Made for Kids → No changes | **None changed** — all auditable already not_kids |
+| Already not_kids | 001/002/003 longs + all 002/003 Shorts |
+| 001 Shorts edit Oops | `8uBR-9oxeWs` · `YX2UR1u-JCQ` · `Fnb3p81u-wY` · `vpuRgKXtFlY` · `Lcmh5y2KMQM` — unverified via edit |
+| C4 end screens → 004 | **Deferred** until after 15 Oct 18:05 |
+
+### D — Shorts
+
+**Not scheduled.** `gate_shorts_open.py check` **PASS** ×3 (v05). iCloud `HOS UAT/004_…/10_Shorts/` has v05. **STOP for Ben phone watch.** Schedule Fri 16 / Sun 18 / Tue 20 Oct 11:30 UK only after his yes (after 004 public).
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
@@ -319,8 +411,30 @@ Evidence: `Schedule/PACKAGE_DRY_RUN_MUSIC_PASS_2026-09-29.json` · `Schedule/UPL
 
 `10_Shorts/SHORTS_PUNCH_SCRIPTS_v02.md` — Fri 004 gold (~60 w) · Sun 002 Newlands octaves · Tue 003 Bertha’s hand only. Shorts **not** uploaded.
 
-## Upload / Shorts status (29 Sep 2026)
+## Upload / Shorts status (29 Sep 2026 · FINISH 20:00)
 
-- **Long upload:** STOPPED. Ben said go + claimed HOS `07_Content-Ops/.env` in place, but the file is **absent** on the Mini. `npm run youtube:package --dry-run` fails (`DATABASE_URL` undefined). Orbit `.env` not used. See `11_Upload-Package/Schedule/DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json`.
-- **Thumbs:** A v04 · B v04 · **C v06** — Ben PASS (order 29 Sep).
-- **Shorts v04:** built 30 fps · gate PASS · iCloud HOS UAT `10_Shorts/` · **STOP phone watch**. Sun line ends “…Davy Medal for it.” No Shorts upload until Ben yes.
+- **Long upload:** **DONE via Studio** — id **`GHZDsiH7L7A`** · Scheduled **15 Oct 2026 18:00 UK** · **Premiere OFF** · Audience **not Made for Kids** · no `.env`. Records: `PACKAGE_UPLOAD_RESULT_2026-09-29.json` · `PACKAGE_MANIFEST.json` (`youtubeId`, `premiere: false`).
+- **Superseded (kept):** `UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json` · `DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json` → status `SUPERSEDED`.
+- **FINISH Studio:** Visibility + Audience + description/chapters + captions **OK**. Thumb A / T&C / end screen / pin still need Ben or launch-day (Studio Ineligible / processing error / private). Screenshots for Ben below.
+- **Thumbs (files):** A v04 · B v04 · **C v06** — Ben PASS. **Live Studio still C**.
+- **Shorts v05:** `gate_shorts_open.py check` **PASS** ×3 · iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/` · **STOP phone watch**. Schedule nothing until Ben yes.
+
+### Screenshots for Ben / CoS (exact paths)
+
+| What | Repo evidence | Artifacts (Ben share) |
+|---|---|---|
+| Audience 004 not kids | `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_audience_004_not_made_for_kids.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/hos004_studio_phone_uat/URGENT_audience_004_not_made_for_kids.png` |
+| Channel Advanced audience default No | `…/URGENT_channel_advanced_audience.png` | `…/artifacts/hos004_studio_phone_uat/URGENT_channel_advanced_audience.png` |
+| Visibility 15 Oct 18:00 Premiere OFF | `…/FINISH_visibility_15oct_1800_premiere_off.png` | `…/artifacts/hos004_studio_phone_uat/FINISH_visibility_15oct_1800_premiere_off.png` |
+| Test & Compare Ineligible | `…/FINISH_test_and_compare.png` | `…/artifacts/hos004_studio_phone_uat/FINISH_test_and_compare.png` |
+| Comments On (004) | `…/BEN_004_comments_on.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_004_comments_on.png` |
+| Pin blocked (permission) | `…/BEN_004_pin_blocked_permission.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_004_pin_blocked_permission.png` |
+| Growth A1 channel Audience | `…/BEN_growth_A1_audience_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_A1_audience_AFTER.png` |
+| Growth A2 upload defaults | `…/BEN_growth_A2_basic_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_A2_basic_AFTER.png` |
+| Growth B2 Visibility 15 Oct 18:00 Premiere OFF | `…/BEN_growth_B2_visibility_PROOF.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B2_visibility_PROOF.png` |
+| Growth B1 Audience not kids | `…/BEN_growth_B1_audience.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B1_audience.png` |
+| Growth B4 AI use No | `…/BEN_growth_B4_altered_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B4_altered_AFTER.png` |
+| Growth B9 T&C Ineligible | `…/BEN_growth_B9_tc_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B9_tc_AFTER.png` |
+| Growth B6 end screen | `…/BEN_growth_B6_endscreen_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B6_endscreen_AFTER.png` |
+| Growth B7 cards | `…/BEN_growth_B7_cards_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B7_cards_AFTER.png` |
+| Growth B8 playlist | `…/BEN_growth_B8_playlist_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B8_playlist_AFTER.png` |
