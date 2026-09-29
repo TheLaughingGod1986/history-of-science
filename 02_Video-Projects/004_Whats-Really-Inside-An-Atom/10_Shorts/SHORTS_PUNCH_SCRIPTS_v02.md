@@ -50,8 +50,8 @@ Watch How Did We Discover the Periodic Table?
 
 | | |
 |---|---|
-| Word count | **60** |
-| Est. seconds @ 1.04 | **~23.1 s** (breath on the laugh; do not pad) |
+| Word count | **58** |
+| Est. seconds @ 1.04 | **~22.3 s** (breath on the laugh; do not pad) |
 
 ---
 
@@ -67,14 +67,14 @@ Watch How Did We Discover the Periodic Table?
 The first X-ray of a person was his wife's hand.
 Bertha Röntgen held still while the plate recorded her bones —
 and her wedding ring sat clear around the living bone.
-Proof you could see inside a living body without a knife.
+That single plate proved you could see inside a living body without a knife.
 Wonder, not dread. A new kind of seeing.
 Watch How Did We Discover X-rays?
 
 | | |
 |---|---|
-| Word count | **60** |
-| Est. seconds @ 1.04 | **~23.1 s** (pause on the ring; do not stretch holds) |
+| Word count | **61** |
+| Est. seconds @ 1.04 | **~23.5 s** (pause on the ring; do not stretch holds) |
 
 ---
 
