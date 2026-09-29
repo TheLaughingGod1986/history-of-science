@@ -36,9 +36,22 @@
     "screenshotAlt": "evidence_2026-09-29_studio/146_proof.png"
   },
   "madeForKids": false,
+  "alteredContentAiUse": {
+    "ok": true,
+    "value": "Yes, AI was used",
+    "proof": "evidence_2026-09-29_studio/FINAL_ai_use_yes.png"
+  },
   "affiliate": null,
   "shortsUploaded": false,
-  "shortsNote": "Shorts stay on hold until Ben phone watch. Do not upload.",
+  "shortsNote": "Shorts v05 word-timed captions built + gate PASS; iCloud HOS UAT. Do not upload until Ben phone watch yes.",
+  "phoneUatFinal": "PHONE_UAT_FINAL_STATUS.json",
+  "thumbnailLive": {
+    "wanted": "hos_004_thumb_A_atom_live_v04.jpg",
+    "ok": false,
+    "observed": "THE HIDDEN NUMBER (C) still on Details/Content after A v04 upload attempts",
+    "proof": "evidence_2026-09-29_studio/v25b_reload.png",
+    "blocker": "Studio save trouble / retry toast; custom thumb not persisting as A"
+  },
   "testAndCompare": {
     "wanted": "Title and thumbnail",
     "studioOffers": [
@@ -63,7 +76,8 @@
     ],
     "running": false,
     "ok": false,
-    "note": "Studio A/B dialog opens and offers Title and thumbnail (plus Title only / Thumbnail only). Set test stayed disabled — second/third title+thumbnail pairs could not be completed reliably via CDP (file inputs overwrite the same slot; title fields not always exposed). Do not guess. Manual Set test in Studio on launch prep is required."
+    "ineligible": true,
+    "note": "Studio shows A/B Testing Ineligible on this scheduled/private video. Two titles listed; Set test / Title+thumbnail×3 cannot arm until eligible. Manual on launch prep."
   },
   "endScreen": {
     "wanted": {
@@ -72,19 +86,25 @@
       "subscribe": true
     },
     "lastSeen": {
-      "video": "Most recent upload",
-      "subscribe": "History of Science",
+      "video": "Best for viewer (not persisted)",
+      "subscribe": "History of Science (not persisted)",
       "studioWarning": "End screen elements won't display on the watch page for private videos.",
       "studioError": "There was a problem in processing your video. As a result, your recent edits were not saved."
     },
     "ok": false,
-    "note": "Subscribe + video element were placed (Most recent upload, not confirmed Specific video AL_-qlWko_g). Studio then showed a processing error and NaN timestamps; save may not have persisted. Re-set end screen (002 Specific + Subscribe) after processing settles / on launch day."
+    "proof": "evidence_2026-09-29_studio/v24_33_after_save.png",
+    "note": "Elements placeable; modal Save clicked; Studio processing error + NaN times reject persistence (empty timeline on reopen). Re-set Specific 002 + Subscribe after processing settles."
   },
   "pinnedComment": {
     "ok": false,
     "reason": "watch_page_not_commentable_while_scheduled_or_private",
     "textFile": "Pinned-Comments/atom_long_pinned-comment_v01.txt",
     "note": "Pin on launch day 15 Oct 2026 — Studio blocks comments while the video is private/scheduled."
+  },
+  "scheduleProofUpdated": {
+    "visibilityPanel": "evidence_2026-09-29_studio/FINAL_visibility_panel_15oct_1800.png",
+    "contentList": "evidence_2026-09-29_studio/FINAL_content_15oct.png",
+    "confirmedNot30Sep": true
   },
   "captions": {
     "file": "Captions/hos_004_full_v02.en.srt",
@@ -98,6 +118,12 @@
     "_finish_hos_004_studio_schedule_v01.py",
     "_finish3_hos_004_tc_endscreen_v01.py",
     "_finish5_hos_004_tc_endscreen_v01.py",
-    "_finish6_hos_004_tc_endscreen_v01.py"
+    "_finish6_hos_004_tc_endscreen_v01.py",
+    "_fix_hos_004_studio_phone_uat_v20.py",
+    "_fix_hos_004_studio_phone_uat_v21.py",
+    "_fix_hos_004_studio_phone_uat_v22.py",
+    "_fix_hos_004_studio_phone_uat_v23.py",
+    "_fix_hos_004_studio_phone_uat_v24.py",
+    "_fix_hos_004_studio_phone_uat_v25_thumb.py"
   ]
 }

@@ -1,0 +1,89 @@
+{
+  "at": "2026-09-29T21:30:18",
+  "videoId": "GHZDsiH7L7A",
+  "channel": "@HistoryOfScienceYT",
+  "thumb": {
+    "file": "hos_004_thumb_A_atom_live_v04.jpg",
+    "targets": [],
+    "via": "input[0]",
+    "ok": true
+  },
+  "ai_kids": {
+    "ai_hit": {
+      "hit": false,
+      "aiY": 681
+    },
+    "kids_no": true,
+    "ai_yes": true,
+    "snip": "my video doesn't include paid promotion\nAI use\nWas AI used to generate or edit your content in any of the following ways?\nMakes a real person appear to say or do something that they didn't say or do\nAlters footage of a real event or place\nGenerates a realistic-looking scene that didn't actually occur\nYes\nNo\nTo follow YouTube's policy, you're required to tell us about your use of AI. This includes realistic sounds or visuals made or edit"
+  },
+  "schedule": {
+    "vis_click": {
+      "x": 1152,
+      "y": 700,
+      "t": "Visibility",
+      "y0": 692,
+      "x0": 1005
+    },
+    "has_15": false,
+    "has_1800": false,
+    "has_30": false,
+    "premiere": false,
+    "ok": true,
+    "fallback_proof": "v20_20_visibility.png",
+    "note": "Used prior v20 Visibility panel proof (15 Oct 2026 \u00b7 18:00 \u00b7 Premiere off)",
+    "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler t"
+  },
+  "content_15": false,
+  "content_30": false,
+  "ab": {
+    "wanted_pairs": [
+      {
+        "title": "What's Really Inside an Atom?",
+        "thumb": "hos_004_thumb_A_atom_live_v04.jpg"
+      },
+      {
+        "title": "Why Is the Periodic Table in This Order?",
+        "thumb": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+      },
+      {
+        "title": "How Small Can You Cut Gold?",
+        "thumb": "hos_004_thumb_B_cut_gold_live_v04.jpg"
+      }
+    ],
+    "ineligible": true,
+    "titles_listed": {
+      "t1": true,
+      "t2": true,
+      "t3": false
+    },
+    "tip_snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their",
+    "dialog_has_title_and_thumb": false,
+    "dialog_ineligible": true,
+    "ok": false,
+    "note": "Studio shows A/B Testing Ineligible on this scheduled/private video. Title pairs partially listed; cannot arm Title+thumbnail\u00d73 until eligible (often after public/premiere)."
+  },
+  "end": {
+    "related": "AL_-qlWko_g",
+    "open": "End screen",
+    "import_click": "Import from video",
+    "import_fill": true,
+    "had_nan": false,
+    "save_enabled": false,
+    "save": "disabled",
+    "has_002": true,
+    "has_subscribe": true,
+    "best_for_viewer": false,
+    "most_recent": false,
+    "nan": false,
+    "error": false,
+    "element_track": false,
+    "ok": true,
+    "after": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler t"
+  },
+  "pin": {
+    "ok": false,
+    "reason": "deferred_while_private_scheduled",
+    "note": "Pin on launch 15 Oct 2026"
+  }
+}

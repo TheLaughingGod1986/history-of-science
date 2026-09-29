@@ -1,0 +1,102 @@
+{
+  "at": "2026-09-29T21:25:07",
+  "videoId": "GHZDsiH7L7A",
+  "channel": "@HistoryOfScienceYT",
+  "note": "v21 finish pass after Ben phone UAT 18:51",
+  "title_ok": false,
+  "ineligible_on_load": false,
+  "thumb": {
+    "file": "hos_004_thumb_A_atom_live_v04.jpg",
+    "via": "input[0]",
+    "ok": true
+  },
+  "kids": {
+    "via": null
+  },
+  "ai": {
+    "hit": {
+      "hit": false,
+      "aiY": null
+    }
+  },
+  "kids_no": false,
+  "kids_yes_bad": false,
+  "ai_yes": false,
+  "ab": {
+    "pairs": [
+      {
+        "title": "What's Really Inside an Atom?",
+        "thumb": "hos_004_thumb_A_atom_live_v04.jpg"
+      },
+      {
+        "title": "Why Is the Periodic Table in This Order?",
+        "thumb": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+      },
+      {
+        "title": "How Small Can You Cut Gold?",
+        "thumb": "hos_004_thumb_B_cut_gold_live_v04.jpg"
+      }
+    ],
+    "mode": null,
+    "uploads": [
+      {
+        "slot": 1,
+        "via": "input",
+        "file": "hos_004_thumb_A_atom_live_v04.jpg"
+      },
+      {
+        "slot": 2,
+        "err": "fail"
+      },
+      {
+        "slot": 3,
+        "err": "fail"
+      }
+    ],
+    "vals": [],
+    "ready": false,
+    "ineligible": false,
+    "set": "missing",
+    "banner": {
+      "title_and_thumb": false,
+      "title_only": false,
+      "save_or_publish": false,
+      "ineligible": false
+    },
+    "saved": true,
+    "titles_match": false,
+    "slots_uploaded": 1,
+    "ok": false
+  },
+  "schedule": {
+    "has_15": false,
+    "has_1800": false,
+    "has_30": false,
+    "premiere_off": true,
+    "snip": "\n",
+    "ok": false
+  },
+  "content_15": false,
+  "content_30": false,
+  "content_ab": false,
+  "end": {
+    "related": "AL_-qlWko_g",
+    "panel": false,
+    "kids_block": false,
+    "template": "1 video, 1 subscribe",
+    "search_fill": true,
+    "save": true,
+    "has_002": false,
+    "has_subscribe": false,
+    "best_for_viewer": false,
+    "most_recent": false,
+    "error": false,
+    "ok": false,
+    "after": "\n"
+  },
+  "pin": {
+    "ok": false,
+    "reason": "deferred_while_private_scheduled",
+    "note": "Pin on launch 15 Oct 2026"
+  }
+}

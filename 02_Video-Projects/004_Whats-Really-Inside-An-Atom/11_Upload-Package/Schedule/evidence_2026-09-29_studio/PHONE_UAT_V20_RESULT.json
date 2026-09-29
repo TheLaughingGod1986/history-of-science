@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-29T21:17:54",
+  "videoId": "GHZDsiH7L7A",
+  "title_ok": true,
+  "ineligible": true,
+  "thumb_upload": true,
+  "kids_no": true,
+  "kids_yes_bad": false,
+  "ai_yes": false,
+  "ab": {
+    "uploads": [
+      {
+        "slot": 1,
+        "via": "input",
+        "file": "hos_004_thumb_A_atom_live_v04.jpg"
+      },
+      {
+        "slot": 2,
+        "err": "fail"
+      },
+      {
+        "slot": 3,
+        "err": "fail"
+      }
+    ],
+    "vals": [],
+    "ready": false,
+    "set": "missing",
+    "banner": {
+      "title_and_thumb": false,
+      "title_only": false,
+      "save_or_publish": false
+    },
+    "saved": true
+  },
+  "schedule": {
+    "has_15": true,
+    "has_1800": false,
+    "has_30": false
+  },
+  "content_15": true,
+  "content_30": false,
+  "content_ab": false,
+  "end": {
+    "has_002": true,
+    "has_subscribe": true,
+    "best_for_viewer": true,
+    "error": false
+  },
+  "pin": {
+    "ok": false,
+    "reason": "deferred_while_private_scheduled",
+    "note": "Pin on launch 15 Oct 2026"
+  }
+}

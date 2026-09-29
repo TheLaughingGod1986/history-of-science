@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-29T21:44:52",
+  "ab_body_has_ineligible": true,
+  "cands": [
+    {
+      "t": "Thumbnail",
+      "aria": "",
+      "x": 620,
+      "y": 716,
+      "w": 696,
+      "h": 22
+    },
+    {
+      "t": "Learn more",
+      "aria": "Learn more about thumbnails",
+      "x": 689.9140625,
+      "y": 737,
+      "w": 71.296875,
+      "h": 16
+    }
+  ],
+  "attempts": [
+    {
+      "cand": {
+        "t": "Thumbnail",
+        "aria": "",
+        "x": 620,
+        "y": 716
+      },
+      "err": "Timeout 5000ms exceeded while waiting for event \"filechooser\"\n=================="
+    },
+    {
+      "cand": {
+        "t": "Learn more",
+        "aria": "Learn more about thumbnails",
+        "x": 689.9140625,
+        "y": 737
+      },
+      "err": "Timeout 5000ms exceeded while waiting for event \"filechooser\"\n=================="
+    },
+    {
+      "input": 0,
+      "ok": true
+    }
+  ],
+  "uploaded": true,
+  "saved": true,
+  "still_hidden_number": false
+}

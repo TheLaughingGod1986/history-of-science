@@ -305,14 +305,19 @@ Ben (29 Sep 18:33): skip API/`.env` — upload through YouTube Studio CDP on Min
 | Proof | `11_Upload-Package/Schedule/evidence_2026-09-29_studio/689_schedule_proof.png` (tooltip: public 15 October 2026 at 18:00) |
 | Result JSON | `11_Upload-Package/Schedule/PACKAGE_UPLOAD_RESULT_2026-09-29.json` |
 
-### Studio finish (partial)
+### Studio finish — phone UAT (29 Sep 18:51 → CDP v20–v25)
+
+Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish on Mini (`:9460`, HOS Chrome). Status: `11_Upload-Package/Schedule/PHONE_UAT_FINAL_STATUS.json`.
 
 | Item | Status |
 |---|---|
-| Test & Compare | Studio offers **Title only / Thumbnail only / Title and thumbnail**. Chose Title and thumbnail. **Set test not armed** — 2nd/3rd pairs not completed via CDP. Manual finish needed. |
-| End screen | Attempted Subscribe + video. Studio processing error / NaN times; last UI showed **Most recent upload** + Subscribe (not confirmed Specific `AL_-qlWko_g`). **Re-set 002 Specific + Subscribe** after processing settles. |
-| Pinned comment | **Deferred to launch day** — watch page not commentable while private/scheduled. |
-| Shorts | **Hold** — Ben phone watch. Do not upload. |
+| Schedule | **OK** — **15 Oct 2026 18:00 UK**, Premiere off, **not 30 Sep**. Proof: `FINAL_visibility_panel_15oct_1800.png` + `FINAL_content_15oct.png`. |
+| Altered / AI use | **OK** — AI use **Yes**. Proof: `FINAL_ai_use_yes.png`. Kids stay **No**. |
+| Custom thumb A v04 | **Not persisted** — Details/Content still show **C / THE HIDDEN NUMBER** after A uploads. Studio save trouble toast. Manual A when save healthy. Proof: `v25b_reload.png`. |
+| Test & Compare | **Ineligible** on scheduled/private. Wanted Title+thumbnail×3 (A/C/B + 3 titles). Cannot arm via CDP until eligible. |
+| End screen | **Blocked** — place Subscribe + video, modal Save clicked, then Studio **processing error** + NaN; reopen empty. Re-set Specific `AL_-qlWko_g` + Subscribe after processing settles. Proof: `v24_33_after_save.png`. |
+| Pinned comment | **Deferred to launch day** — not commentable while private/scheduled. |
+| Shorts | **v05 done** (word-timed captions, gate PASS, iCloud). **Hold upload** — Ben phone watch. |
 | `.env` / API | **Not used.** Orbit never touched. |
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
@@ -328,6 +333,6 @@ Ben (29 Sep 18:33): skip API/`.env` — upload through YouTube Studio CDP on Min
 ## Upload / Shorts status (29 Sep 2026)
 
 - **Long upload:** **DONE via Studio** — id `GHZDsiH7L7A` · Scheduled **15 Oct 2026 18:00 UK** · no Premiere · no `.env`. See STEP 5 above + `PACKAGE_UPLOAD_RESULT_2026-09-29.json`.
-- **T&C / end screen / pin:** partial — finish manually (T&C Set test · end screen 002 Specific · pin on launch day).
-- **Thumbs:** A v04 · B v04 · **C v06** — Ben PASS (order 29 Sep).
-- **Shorts v04:** built 30 fps · gate PASS · iCloud HOS UAT `10_Shorts/` · **STOP phone watch**. No Shorts upload until Ben yes.
+- **Phone UAT finish:** schedule + AI YES proved; thumb A / T&C / end screen still need manual when Studio save/processing healthy (see Studio finish table + `PHONE_UAT_FINAL_STATUS.json`). Pin on launch day.
+- **Thumbs (files):** A v04 · B v04 · **C v06** — Ben PASS (order 29 Sep). **Live Studio still C** until A upload sticks.
+- **Shorts v05:** word-timed captions · gate PASS · iCloud HOS UAT `10_Shorts/` · **STOP phone watch**. No Shorts upload until Ben yes.
