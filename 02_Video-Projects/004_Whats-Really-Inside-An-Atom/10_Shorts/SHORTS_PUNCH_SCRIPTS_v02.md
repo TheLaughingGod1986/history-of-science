@@ -80,6 +80,6 @@ Watch How Did We Discover X-rays?
 
 ## After Ben PASS on scripts
 
-1. VO (Ben Orbit Narrator, 1.04) → cut → `gate_shorts_open.py check` PASS → iCloud. **STOP:** Ben watches.
-2. On Ben's yes: upload **PRIVATE** + schedule each slot (**after** Thu 15 Oct 18:00). Set Studio Related. Register with `gate_shorts_open.py add`.
-3. Never Premiere. Never publish immediately. Never `/go/`.
+1. VO (HOS house voice · Ben Orbit Narrator IVC · 1.04) → cut → `gate_shorts_open.py check` PASS → **HOS UAT** iCloud only. **STOP:** Ben watches.
+2. On Ben's yes: upload **PRIVATE** + schedule each slot (**after** Thu 15 Oct 18:00) on **@HistoryOfScienceYT** only. Set Studio Related. Register with `gate_shorts_open.py add`.
+3. Never Premiere. Never publish immediately. Never `/go/`. Never write Shorts into Orbit/OWB.
