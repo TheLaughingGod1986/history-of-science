@@ -238,7 +238,23 @@ Same picture, cards, seams and end as override v02. **Only** fix: `amix=inputs=2
 - **Levels:** full `vo_check` mean **−23.7 dB** / peak **−3.7 dB** (peak ≤ −1 OK) · film `ffmpeg -t 500.69` mean **−23.5 dB** / max **−3.7 dB** (matches parts ~−22…−24)
 - **Word flags (full):** FAIL ~6:07.34 `a living`→`the living` · FAIL ~6:31.88 `sort`→`sought` · (v02 `wrong`→`rock` at ~3:59 **gone**)
 - **wrong window:** Ben 3:55–4:03 ends on “pudding”; “wrong” ~**4:05.64**. Wider STT: **both** v03 and Part 03 rough hear **“wrong”** (not rock).
-- **Ben PASS (29 Sep 2026)** on full join v03 (sha `f88cb9d4…65244`). Picture LOCKED for finishing. Next: final continuous music bed → `hos_004_full_v01.mp4` + captions (steps 1–2). Title / thumbs / package / Shorts wait.
+- **Ben PASS (29 Sep 2026)** on full join v03 (sha `f88cb9d4…65244`). Picture LOCKED for finishing.
+- Finishing STEP 1–2 done: `hos_004_full_v01.mp4` (music UAT) + captions. **STOP for Ben music listen.** Steps 3–6 not started.
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v03.mp4`
 - Builder: `07_Edit-Project/_join_hos_004_full_v03.py` · notes `09_Final-Export/FULL_JOIN_V03_NOTES.md`
-- Do **not** label KEEP/LOCKED on the music remaster until Ben says so. No upload.
+
+## Full_v01 (29 Sep 2026) — final continuous bed · STOP for Ben music
+
+Replaces the five TEMP part beds. Picture = locked v03. VO v04 untouched.
+
+- **Cut:** `hos_004_full_v01.mp4`
+- **sha256:** `058e1ba7a4a986de0dec4fe1a6e0e6f47a47449ad314f979e8224a8a5ef1b4d5`
+- **Duration:** **524.700 s** · A/V Δ **0.000** s · 1920×1080 30 fps CFR
+- **Bed:** `05_Music/hos004-full_score_bed_v01.mp3` (−20 dB, sidechain, fade across cream, silent under hold). EL returned ~390.8 s for 506 s request → looped through cream.
+- **amix:** `inputs=2:weights=1 1:normalize=0`
+- **Levels:** `vo_check` mean **−23.6** / peak **−3.8** dB · film `−t 500.69` mean **−23.4** / max **−3.8** dB
+- **Word flags:** known ~6:08 `a living`→`the living` · ~6:33 `sort`→`sought` · also transcriber `van den`→`van der` Broek · `a weight`→`of weight`
+- **Captions (STEP 2):** `11_Upload-Package/Captions/hos_004_full_v01.en.srt` (script-locked, 90 cues, no cream/hold)
+- **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v01.mp4` (+ `WATCH_full_v01.txt`)
+- Do **not** mark KEEP until Ben says so. No upload. **STOP for Ben** (music listen). Steps 3–6 not started.
+
