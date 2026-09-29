@@ -26,6 +26,11 @@ Full rules: `STUDIO_PLAYBOOK.md` §9–§12.
   - a recut gets a new id, and the old one goes private (not deleted).
 - **Long:** normal publish, Thursday 18:00 UK, never a Premiere. Test & Compare with 3 thumbs, end screen, captions from the script. Pinned comment: `07_Content-Ops/scripts/update-pinned-comment.ts --create --video <id> --question "…?"`, then pin it in Studio.
 - **Short:** Studio Related → the long it promotes. No pinned comment, zero `/go/`.
+- **Studio settings on every video** (`STUDIO_PLAYBOOK.md` §9, 30 Sep 2026; HOS 004 went up as Made for Kids):
+  - **Audience "not made for kids"** (channel default too). Re-read Audience and Visibility after **every** save; one setting per save.
+  - Scheduled with Premiere off, notify subscribers on; altered/synthetic content **Yes**; category Education; English (UK); captions `.srt`; comments on (hold inappropriate).
+  - Longs: Test & Compare, end screen, **2 cards** (not in the first minute), the "How We Found Out" playlist, pinned comment. After publish, point the older longs' end screens at the new film.
+  - Screenshot Visibility, Audience, T&C, end screen and cards; record them in `production-status.md`.
 - **Title-only fixes:** `07_Content-Ops/scripts/retitle-videos.ts` (dry run first, Ben OK).
 - **Studio-only jobs** go through desktop Studio CDP (`00_Brand/Channel-Setup/audits/start_studio_chrome_cdp.sh`). Never Replace.
 - **Affiliate:** only on a long that names the product in VO or on screen; one product per film; never invent ASINs; never commit the Amazon tag.
