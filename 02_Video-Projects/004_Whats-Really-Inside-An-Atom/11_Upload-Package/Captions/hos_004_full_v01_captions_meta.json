@@ -1,0 +1,43 @@
+{
+  "file": "hos_004_full_v01.en.srt",
+  "script": "atom_script_master_v02.md",
+  "cream_cutoff_s": 500.69377,
+  "max_chars": 42,
+  "max_lines": 2,
+  "part_starts": {
+    "1": 0.0,
+    "2": 70.533333,
+    "3": 162.411166,
+    "4": 246.844499,
+    "5": 356.577832
+  },
+  "per_part": {
+    "1": {
+      "script_words": 183,
+      "whisper_words": 184,
+      "cues": 12
+    },
+    "2": {
+      "script_words": 232,
+      "whisper_words": 232,
+      "cues": 17
+    },
+    "3": {
+      "script_words": 203,
+      "whisper_words": 201,
+      "cues": 15
+    },
+    "4": {
+      "script_words": 276,
+      "whisper_words": 276,
+      "cues": 20
+    },
+    "5": {
+      "script_words": 364,
+      "whisper_words": 365,
+      "cues": 26
+    }
+  },
+  "cue_count": 90,
+  "source": "script-locked + faster-whisper timings on VO v04"
+}

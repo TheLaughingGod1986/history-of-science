@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-09-29T13:04:33.394974+00:00",
+  "project": "hos004-full",
+  "script": null,
+  "music_cues": [],
+  "prompt": "Warm curious documentary underscore for History of Science. Soft strings, light piano, gentle wonder, a quiet sense of discovery. Builds a little under the reveals, leaves room for voice. No vocals, no drums, no risers.",
+  "length_ms": 506000,
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "generate": true,
+  "audio_file": "hos004-full_score_bed_v01.mp3",
+  "status": "generated",
+  "bytes": 6253550,
+  "song_id": "v1AkAkLE7onQheZzv5rw"
+}

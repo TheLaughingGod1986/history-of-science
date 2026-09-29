@@ -1,0 +1,11 @@
+FAIL  hos_004_full_v01_audio.wav  8:44.70  mean -23.6 dB  peak -3.8 dB  147 wpm
+   first minute: title_question 8.68s  promise 11.36s  stakes 17.76s
+   FAIL  replace at ~5:34.36: script 'scientist antonius van den broek had a' / heard 'scientist antonius van der broek had a' — listen, then regenerate that sentence alone if real
+   FAIL  replace at ~6:08.24: script 'the bones in a living hand moseley' / heard 'the bones in the living hand moseley' — listen, then regenerate that sentence alone if real
+   FAIL  replace at ~6:31.06: script 'its nucleus van den broek's guess was' / heard 'its nucleus van der broek's guess was' — listen, then regenerate that sentence alone if real
+   FAIL  replace at ~6:33.28: script 'was right now sort the table by' / heard 'was right now sought the table by' — listen, then regenerate that sentence alone if real
+   FAIL  replace at ~7:40.66: script 'gave each kind a weight thomson found' / heard 'gave each kind of weight thomson found' — listen, then regenerate that sentence alone if real
+   warn  silence 21.86s at 8:22.84 (part join?)
+   warn  replace at ~6:05.72: script 'same invisible light rontgen used to see' / heard 'same invisible light runtgun used to see' — sounds alike (likely the transcriber); listen
+   warn  replace at ~7:24.50: script 'years later in moseley was killed in' / heard 'years later in mosley was killed in' — sounds alike (likely the transcriber); listen
+   warn  replace at ~7:46.04: script 'tiny centre and moseley counted it every' / heard 'tiny centre and mosley counted it every' — sounds alike (likely the transcriber); listen

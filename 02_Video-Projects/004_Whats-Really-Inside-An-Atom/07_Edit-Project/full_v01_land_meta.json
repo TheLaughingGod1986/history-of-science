@@ -1,0 +1,25 @@
+{
+  "file": "hos_004_full_v01.mp4",
+  "sha256": "058e1ba7a4a986de0dec4fe1a6e0e6f47a47449ad314f979e8224a8a5ef1b4d5",
+  "duration": 524.7,
+  "bytes": 417941859,
+  "sync_delta_a_minus_v": 0.0,
+  "picture_source": "hos_004_full_join_v03.mp4",
+  "picture_sha256": "f88cb9d47e910425519a40a6af7649626c47afbcdddf1f0f3293564c59f65244",
+  "bed": "hos004-full_score_bed_v01.mp3",
+  "bed_sha256": "90bc69f8246923a7dd85575d2e05861d5a90ab549f8fc6a95db2ff30f9c3d3bc",
+  "bed_generated_duration_s": 390.844,
+  "bed_note": "ElevenLabs returned ~390.8s for 506000ms request; looped under stream_loop to cover through cream (~504.7s)",
+  "bed_rel_db": -20.0,
+  "sidechain": "threshold=0.018:ratio=8:attack=20:release=500:level_sc=1",
+  "amix": "inputs=2:weights=1 1:normalize=0",
+  "levels": {
+    "vo_check_mean_db": -23.6,
+    "vo_check_peak_db": -3.8,
+    "film_t500_69_mean_db": -23.4,
+    "film_t500_69_max_db": -3.8
+  },
+  "status": "UAT_MUSIC_FOR_BEN",
+  "keep_locked_label": false,
+  "upload": false
+}

@@ -1,0 +1,14 @@
+WATCH THIS FILE (HOS 004 full_v01 — final continuous bed UAT)
+
+Cut: hos_004_full_v01.mp4
+sha256: 058e1ba7a4a986de0dec4fe1a6e0e6f47a47449ad314f979e8224a8a5ef1b4d5
+Duration: 524.700 s · A/V Δ 0.000 s
+Picture: hos_004_full_join_v03.mp4 (Ben PASS)
+Bed: hos004-full_score_bed_v01.mp3 (−20 dB, sidechain, fade across cream, silent under hold)
+  Note: EL returned ~390.8s for 506s request; looped to cover through cream.
+
+Levels:
+  vo_check mean −23.6 / peak −3.8 dB
+  film −t 500.69 mean −23.4 / max −3.8 dB
+
+Listen to the music in full. Do NOT mark KEEP until Ben says so. No upload.
