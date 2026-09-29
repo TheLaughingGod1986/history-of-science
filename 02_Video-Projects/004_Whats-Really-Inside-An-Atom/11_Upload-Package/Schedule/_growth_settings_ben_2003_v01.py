@@ -519,14 +519,26 @@ def phase_a(page) -> dict:
     result["A4"] = a4
     log(f"A4 keywords={a4.get('keywords')} orbit={a4.get('has_orbit_in_desc')}")
 
-    # A5 Branding — confirm no watermark (do not add)
-    open_settings(page)
-    # Branding may be under Channel → Branding or Settings → Branding
-    deep_click(page, r"^Branding$", y_min=0, max_len=20)
-    page.wait_for_timeout(2000)
+    # A5 Branding — confirm no watermark (do not add). Customisation → Branding page.
+    try:
+        if settings_dialog_open(page):
+            page.locator("ytcp-settings-dialog").get_by_role(
+                "button", name=re.compile(r"^Close$")
+            ).first.click(timeout=1500)
+            page.wait_for_timeout(600)
+    except Exception:
+        pass
+    page.goto(
+        f"https://studio.youtube.com/channel/{CHANNEL}/editing/images",
+        wait_until="commit",
+        timeout=90000,
+    )
+    page.wait_for_timeout(3500)
     shot(page, "growth_A5_branding.png", ben=True)
+    shot(page, "BEN_growth_A5_branding.png", ben=True)
     body = page.inner_text("body")
     result["A5"] = {
+        "url": page.url,
         "has_watermark_section": bool(re.search(r"Video watermark|Watermark", body, re.I)),
         "note": "Did not add watermark / subscribe graphics",
         "snip": body[:1000],
