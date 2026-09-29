@@ -511,12 +511,12 @@ def main() -> None:
     final_tmp = work / "full_v02.mp4"
     fc = (
         f"[1:a]apad=pad_dur={vo_pad:.6f},atrim=0:{pic_dur:.6f},asetpts=PTS-STARTPTS,"
-        f"aformat=sample_rates=48000:channel_layouts=stereo[vo];"
+        f"aformat=sample_rates=48000:channel_layouts=stereo,asplit=2[vo_sc][vo_mix];"
         f"[2:a]atrim=0:{pic_dur:.6f},asetpts=PTS-STARTPTS,"
         f"aformat=sample_rates=48000:channel_layouts=stereo,"
         f"volume={BED_VOLUME:.8f}[bed];"
-        f"[bed][vo]sidechaincompress={SIDECHAIN}[ducked];"
-        f"[vo][ducked]amix=inputs=2:duration=first:dropout_transition=0,"
+        f"[bed][vo_sc]sidechaincompress={SIDECHAIN}[ducked];"
+        f"[vo_mix][ducked]amix=inputs=2:duration=first:dropout_transition=0,"
         f"alimiter=limit=0.8912509:level=false[a];"
         f"[0:v]fps=30,format=yuv420p,setsar=1[v]"
     )
@@ -553,9 +553,6 @@ def main() -> None:
     for i in range(1, 5):
         part_pic_in[f"0{i+1}"] = seam_dissolve_start[i - 1] + XFADE
 
-    cream_in_abs = part_pic_in["05"] + max(0.0, P05_CREAM_IN - J_LEAD)
-    # P05 video was J-trimmed by J_LEAD, so cream at part-local 140.5 appears at 140.5 - J_LEAD into P05 picture,
-    # and P05 picture starts at part_pic_in['05']
     cream_in_abs = part_pic_in["05"] + (P05_CREAM_IN - J_LEAD)
     end_hold_in = story_vd  # cream hold concat after story
     # story_vd already includes P05 through its cream; end_hold is the extra 20s

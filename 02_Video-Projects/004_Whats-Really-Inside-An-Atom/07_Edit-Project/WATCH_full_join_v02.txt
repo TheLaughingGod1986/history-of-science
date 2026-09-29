@@ -1,0 +1,10 @@
+WATCH THIS FILE (HOS 004 full join v02 — seamless seams):
+  hos_004_full_join_v02.mp4
+  iCloud: HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v02.mp4
+
+sha256=b20ac5a4ae8941884383fba4df50403c6718d24b742abc8ab81f8333ea6791da
+duration=522.067
+bytes=377133093
+P01 bridge text plate REMOVED. No chapter cards.
+VO gap 0.45s · J-lead 0.50s · picture xfade 0.50s · continuous TEMP bed.
+Do NOT label KEEP/LOCKED. STOP for Ben.

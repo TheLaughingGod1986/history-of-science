@@ -54,7 +54,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | **22** (4–6 s splits) | false (rough v01) |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** Ben UAT on `hos_004_full_join_v01`. Do not label KEEP/LOCKED.
+**Next:** Ben UAT on `hos_004_full_join_v02` (v01 FAIL — abrupt seams + bridge text). Do not label KEEP/LOCKED.
 
 ---
 
@@ -222,3 +222,16 @@ Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · `part01_rough_v04_lan
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v01.mp4`
 - Builder: `07_Edit-Project/_join_hos_004_full_v01.py` · notes `09_Final-Export/FULL_JOIN_V01_NOTES.md`
 - Do **not** label KEEP/LOCKED. No remint. **STOP for Ben.**
+
+## Full join v02 (29 Sep 2026) — STOP for Ben
+
+Supersedes v01 (Ben FAIL: abrupt seams + on-screen “BRIDGES TO PART 02 / CHAPTER CARD” at ~1:09).
+
+- **Cut:** `hos_004_full_join_v02.mp4`
+- **sha256:** `b20ac5a4ae8941884383fba4df50403c6718d24b742abc8ab81f8333ea6791da`
+- **Duration:** 522.067 s (8:42.07) · A/V delta **0.0**
+- **Fixes:** P01 bridge text plate removed · no chapter cards · VO gap ~0.45 s · continuous TEMP bed · J-cut (VO leads 0.5 s) + 0.5 s dissolve · cream then 20 s Studio hold
+- **Seams:** 01→02 VO **1:10.25** / dissolve **1:10.77** · 02→03 VO **2:41.83** / dissolve **2:42.87** · 03→04 VO **4:06.01** / dissolve **4:07.57** · 04→05 VO **5:55.47** / dissolve **5:57.53**
+- **Cream:** **8:18.03** · **20 s hold from 8:22.07**
+- **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v02.mp4`
+- Do **not** label KEEP/LOCKED. **STOP for Ben.**

@@ -1,0 +1,41 @@
+{
+  "file": "hos_004_full_join_v02.mp4",
+  "sha256": "b20ac5a4ae8941884383fba4df50403c6718d24b742abc8ab81f8333ea6791da",
+  "duration": 522.066667,
+  "bytes": 377133093,
+  "gap": 0.45,
+  "j_lead": 0.5,
+  "xfade": 0.5,
+  "end_hold_s": 20.0,
+  "p01_bridge_cut": 68.48,
+  "vo_starts": {
+    "01": 0.0,
+    "02": 70.245,
+    "03": 161.834,
+    "04": 246.014,
+    "05": 355.471
+  },
+  "dissolve_starts": {
+    "01\u219202": 70.767,
+    "02\u219203": 162.867,
+    "03\u219204": 247.567,
+    "04\u219205": 357.533
+  },
+  "part_picture_full": {
+    "01": 0.0,
+    "02": 71.267,
+    "03": 163.367,
+    "04": 248.067,
+    "05": 358.033
+  },
+  "cream_in_abs": 498.033,
+  "end_hold_in": 502.067,
+  "video_duration": 522.066667,
+  "audio_duration": 522.066667,
+  "sync_delta_a_minus_v": 0.0,
+  "status": "UAT_FOR_BEN",
+  "keep_locked_label": false,
+  "upload": false,
+  "supersedes": "hos_004_full_join_v01.mp4",
+  "ben_fail_v01": "abrupt seams + Bridges to Part 02 / Chapter Card text"
+}
