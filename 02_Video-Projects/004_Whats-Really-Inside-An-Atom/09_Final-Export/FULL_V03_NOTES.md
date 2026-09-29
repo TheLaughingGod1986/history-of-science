@@ -3,7 +3,7 @@
 **Cut:** `hos_004_full_v03.mp4`  
 **sha256:** `503e228745d4cf87fe6f504522cbad99f6af0f9c8b038c1ed8c52da493428157`  
 **Duration:** 524.700 s · **A/V Δ:** 0.000000 s  
-**Status:** UAT for Ben music listen at **8:06**. Do **not** label KEEP. No upload.
+**Status:** **UNUSED / PARKED.** Ben PASSed music on **full_v02** (sha `ed870939…`), not v03. Keep file aside; do not upload; do not regenerate. No KEEP label.
 
 Picture locked from `hos_004_full_join_v03.mp4` (Ben PASS). VO v04 masters untouched.
 

@@ -1,10 +1,9 @@
-WATCH THIS FILE (HOS 004 full_v02 — two-section bed, no loop):
+WATCH THIS FILE (HOS 004 full_v02 — MUSIC PASS):
   hos_004_full_v02.mp4
   sha256: ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e
   duration: 524.700s · A/V Δ 0.000000s
-  picture: hos_004_full_join_v03.mp4 (Ben PASS v03)
-  bed: hos004-full_score_bed_v01.mp3 → card05 355.48s xfade 1.5s → hos004-full-sect2_score_bed_v01.mp3 → cream fade (NO LOOP)
-  gap −20 dB · extra ~3 dB duck under speech · amix normalize=0
+  Ben: "music is a pass, lets go." (29 Sep 2026)
+  Ship cut for package dry-run. Do NOT upload until Ben says yes to dry-run.
+  full_v03 parked unused — do not upload.
 
-Listen to the music join at the Part 05 chapter card. Do NOT mark KEEP.
-No upload. Also pick thumbnail A/B/C.
+Package dry-run: 11_Upload-Package/Schedule/PACKAGE_DRY_RUN_MUSIC_PASS_2026-09-29.json

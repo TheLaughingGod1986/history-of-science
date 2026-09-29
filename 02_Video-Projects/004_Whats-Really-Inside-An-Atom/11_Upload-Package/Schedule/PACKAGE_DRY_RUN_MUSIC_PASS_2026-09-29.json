@@ -1,0 +1,174 @@
+{
+  "status": "MUSIC_PASS_DRY_RUN",
+  "upload": false,
+  "premiere": false,
+  "dryRun": true,
+  "channel": "@HistoryOfScienceYT",
+  "commandAttempted": "cd 07_Content-Ops && npm run youtube:package -- --package ../02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package --video ../02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v02.mp4 --dry-run",
+  "envPathExpected": "/Users/benjaminoats/YouTube/History Of Science/07_Content-Ops/.env",
+  "envPathForbidden": "/Users/benjaminoats/YouTube/orbit-with-ben/07_Content-Ops/.env",
+  "hosEnvPresent": false,
+  "owbEnvNotUsed": true,
+  "npmApiPath": "blocked — HOS 07_Content-Ops/.env absent (DATABASE_URL). Resolved locally via loadYouTubePackage. Secrets not printed. Do not substitute Orbit .env.",
+  "npmAttemptLog": "artifacts/hos_004_npm_package_dryrun_attempt.log — Invalid environment configuration: DATABASE_URL undefined",
+  "musicPass": {
+    "cut": "hos_004_full_v02.mp4",
+    "sha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
+    "ben": "music is a pass, lets go.",
+    "passedAt": "2026-09-29"
+  },
+  "unusedMix": {
+    "cut": "hos_004_full_v03.mp4",
+    "sha256": "503e228745d4cf87fe6f504522cbad99f6af0f9c8b038c1ed8c52da493428157",
+    "status": "parked unused — do not upload"
+  },
+  "scheduledAt": "2026-10-15T17:00:00.000Z",
+  "scheduleISO": "2026-10-15T17:00:00.000Z",
+  "scheduleUK": "Thu 15 Oct 2026 18:00 Europe/London",
+  "privacy": "private",
+  "madeForKids": false,
+  "title": "What's Really Inside an Atom?",
+  "titleAbc": [
+    "What's Really Inside an Atom?",
+    "Why Is the Periodic Table in This Order?",
+    "How Small Can You Cut Gold?"
+  ],
+  "thumbnailPath": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
+  "thumbnailAbc": [
+    "hos_004_thumb_A_atom_live_v04.jpg",
+    "hos_004_thumb_C_hidden_number_live_v06.jpg",
+    "hos_004_thumb_B_cut_gold_live_v04.jpg"
+  ],
+  "captionsFile": "Captions/hos_004_full_v02.en.srt",
+  "captionsPresent": true,
+  "relatedVideoId": "AL_-qlWko_g",
+  "endScreen": {
+    "relatedVideoId": "AL_-qlWko_g",
+    "relatedTitle": "How Did We Discover the Periodic Table?",
+    "subscribe": true,
+    "note": "Studio end screen only — 002 long + Subscribe. No Premiere."
+  },
+  "pinnedComment": "What's really inside an atom — and why is the periodic table in this order?",
+  "descriptionFirst100": "What's really inside an atom, and why is the periodic table in this order? Four discoveries, one cen",
+  "descriptionKeywordGate": {
+    "inside an atom": true,
+    "periodic table": true,
+    "order": true
+  },
+  "description": "What's really inside an atom, and why is the periodic table in this order? Four discoveries, one century — from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element — and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\nChapters\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays",
+  "tagsCount": 28,
+  "tags": [
+    "what's really inside an atom",
+    "what is inside an atom",
+    "why is the periodic table in this order",
+    "periodic table order",
+    "atomic number",
+    "henry moseley",
+    "rutherford gold foil experiment",
+    "jj thomson electron",
+    "john dalton atomic theory",
+    "how small can you cut gold",
+    "atoms are mostly empty space",
+    "tellurium iodine",
+    "atomic number discovery",
+    "history of the atom",
+    "moseley x-rays",
+    "history of science",
+    "history of chemistry",
+    "periodic table explained",
+    "nucleus discovery",
+    "electron discovery",
+    "dalton atomic weight",
+    "mendeleev periodic table",
+    "science documentary",
+    "chemistry history",
+    "atomic structure history",
+    "gold foil experiment",
+    "counting with x-rays",
+    "history of science youtube"
+  ],
+  "videoPath": "hos_004_full_v02.mp4",
+  "videoSha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
+  "videoBytes": 417817365,
+  "testAndCompare": [
+    {
+      "slot": 1,
+      "title": "What's Really Inside an Atom?",
+      "thumb": "A atom v04"
+    },
+    {
+      "slot": 2,
+      "title": "Why Is the Periodic Table in This Order?",
+      "thumb": "C hidden number v06"
+    },
+    {
+      "slot": 3,
+      "title": "How Small Can You Cut Gold?",
+      "thumb": "B cut gold v04"
+    }
+  ],
+  "studioFinish": {
+    "videoId": null,
+    "studioEditUrl": null,
+    "items": [
+      {
+        "id": "api_metadata",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Title · description · tags · schedule · video",
+        "detail": "Run package upload first"
+      },
+      {
+        "id": "primary_thumbnail",
+        "required": true,
+        "status": "api_done",
+        "title": "Primary thumbnail",
+        "detail": "Set via thumbnails.set"
+      },
+      {
+        "id": "title_thumb_abc",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Title + thumbnail ABC (Test & Compare)",
+        "detail": "Studio A/B Testing — titles (3) · thumbs (3). Not available via Data API."
+      },
+      {
+        "id": "first_comment",
+        "required": true,
+        "status": "pending_studio",
+        "title": "First / pinned comment text",
+        "detail": "Post + pin in Studio Comments (API post failed or scope missing)"
+      },
+      {
+        "id": "pin_comment",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Pin the comment",
+        "detail": "Studio only — no official Data API pin endpoint"
+      },
+      {
+        "id": "related_watch_next",
+        "required": false,
+        "status": "n/a",
+        "title": "Related / watch next (full film)",
+        "detail": "Set Related video to AL_-qlWko_g in Studio (Shorts)"
+      },
+      {
+        "id": "end_screens_cards",
+        "required": true,
+        "status": "pending_studio",
+        "title": "End screen + cards",
+        "detail": "Studio only — subscribe + best next video"
+      },
+      {
+        "id": "playlist",
+        "required": false,
+        "status": "n/a",
+        "title": "Add to playlist",
+        "detail": "No playlistId in manifest"
+      }
+    ],
+    "summary": "Package resolved; upload not run yet."
+  },
+  "stop": "No upload until Ben says yes to this dry-run."
+}

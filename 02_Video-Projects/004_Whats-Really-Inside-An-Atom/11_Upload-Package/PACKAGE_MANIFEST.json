@@ -10,7 +10,7 @@
   "thumbnail": "../08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
   "thumbnailAbc": [
     "../08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
-    "../08_Thumbnail/Selected/hos_004_thumb_C_hidden_number_live_v05.jpg",
+    "../08_Thumbnail/Selected/hos_004_thumb_C_hidden_number_live_v06.jpg",
     "../08_Thumbnail/Selected/hos_004_thumb_B_cut_gold_live_v04.jpg"
   ],
   "titleAbc": [
@@ -30,7 +30,7 @@
     "relatedVideoId": "AL_-qlWko_g",
     "relatedTitle": "How Did We Discover the Periodic Table?",
     "subscribe": true,
-    "note": "Studio end screen only — 002 long + Subscribe. No Premiere."
+    "note": "Studio end screen only \u2014 002 long + Subscribe. No Premiere."
   },
   "testAndCompare": [
     {
@@ -43,7 +43,7 @@
       "slot": 2,
       "role": "alt",
       "title": "Why Is the Periodic Table in This Order?",
-      "thumb": "../08_Thumbnail/Selected/hos_004_thumb_C_hidden_number_live_v05.jpg"
+      "thumb": "../08_Thumbnail/Selected/hos_004_thumb_C_hidden_number_live_v06.jpg"
     },
     {
       "slot": 3,
@@ -52,6 +52,17 @@
       "thumb": "../08_Thumbnail/Selected/hos_004_thumb_B_cut_gold_live_v04.jpg"
     }
   ],
-  "captionsFile": "Captions/hos_004_full_v01.en.srt",
-  "note": "PRE-MUSIC-PASS dry-run only until Ben passes full_v02 music. Private + publishAt 2026-10-15T17:00:00Z (Thu 15 Oct 18:00 UK). No Premiere. Zero /go/. Mix file hos_004_full_v02.mp4 sha ed870939…. Do not upload until Ben says yes."
+  "captionsFile": "Captions/hos_004_full_v02.en.srt",
+  "note": "MUSIC PASS on hos_004_full_v02.mp4 sha ed870939\u2026. Dry-run only \u2014 no upload until Ben says yes. Private + publishAt 2026-10-15T17:00:00Z (Thu 15 Oct 18:00 UK). No Premiere. Zero /go/. T&C C = v06. full_v03 parked unused.",
+  "musicPass": {
+    "cut": "hos_004_full_v02.mp4",
+    "sha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
+    "passedAt": "2026-09-29",
+    "ben": "music is a pass, lets go."
+  },
+  "unusedMix": {
+    "cut": "hos_004_full_v03.mp4",
+    "sha256": "503e228745d4cf87fe6f504522cbad99f6af0f9c8b038c1ed8c52da493428157",
+    "status": "built earlier; unused \u2014 do not upload"
+  }
 }

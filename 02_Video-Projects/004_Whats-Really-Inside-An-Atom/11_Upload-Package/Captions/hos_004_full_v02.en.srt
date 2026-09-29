@@ -1,0 +1,447 @@
+1
+00:00:00,000 --> 00:00:06,240
+Cut a gold coin in half. Then cut it
+again. And again. How small can you go
+
+2
+00:00:06,240 --> 00:00:12,400
+before it stops being gold? What's really
+inside an atom? By the end of this film
+
+3
+00:00:12,400 --> 00:00:17,660
+you'll know why the periodic table is in
+the order it is, and how we proved it.
+
+4
+00:00:17,980 --> 00:00:24,760
+Because in 1869 the table had a secret
+problem. It was sorted by weight, and some
+
+5
+00:00:24,760 --> 00:00:30,980
+elements refused to fit. If weight was the
+rule, the rule was broken, and nobody knew
+
+6
+00:00:30,980 --> 00:00:37,620
+why. For two thousand years the atom was
+just an idea: the smallest piece, the one
+
+7
+00:00:37,620 --> 00:00:44,640
+you can't cut. Nobody had ever seen one.
+Then, in a glowing glass tube, someone
+
+8
+00:00:44,640 --> 00:00:50,260
+found a piece smaller than the atom. Then
+a tiny bullet bounced back off a sheet of
+
+9
+00:00:50,260 --> 00:00:55,640
+gold, as if it had hit a wall. And the
+final proof came from a young physicist
+
+10
+00:00:55,640 --> 00:01:02,720
+with a beam of X-rays, who counted what
+was inside every element. Four people, one
+
+11
+00:01:02,720 --> 00:01:08,620
+century, and a question that started with
+a knife and a coin. So why was the table
+
+12
+00:01:08,620 --> 00:01:09,640
+in the wrong order?
+
+13
+00:01:10,533 --> 00:01:15,033
+Manchester, eighteen-oh-eight. A
+schoolteacher named John Dalton puts the
+
+14
+00:01:15,033 --> 00:01:19,673
+old idea to work. His atomic theory
+says every element is made of its own kind
+
+15
+00:01:19,673 --> 00:01:25,593
+of atom, and each kind has its own weight.
+Hydrogen is the lightest. Oxygen is
+
+16
+00:01:25,593 --> 00:01:31,213
+heavier. Gold is heavier still. Why
+believe him? Because elements always
+
+17
+00:01:31,213 --> 00:01:36,253
+combine in the same fixed amounts. Water
+is always the same mix of hydrogen and
+
+18
+00:01:36,253 --> 00:01:40,693
+oxygen, however you make it. That only
+makes sense if both are made of tiny
+
+19
+00:01:40,693 --> 00:01:46,073
+pieces with fixed weights. Now chemists
+had a ruler. Compare the weights of the
+
+20
+00:01:46,073 --> 00:01:51,813
+atoms and line them up. Sixty years later
+in Saint Petersburg, Dmitri Mendeleev does
+
+21
+00:01:51,813 --> 00:01:58,013
+exactly that. He writes each element on a
+card and sorts the cards by weight. The
+
+22
+00:01:58,013 --> 00:02:03,393
+properties repeat. Soft metals that fizz
+in water line up in one column. Harsh,
+
+23
+00:02:03,573 --> 00:02:09,593
+reactive chlorine, bromine and iodine line
+up in another. He even leaves gaps for
+
+24
+00:02:09,593 --> 00:02:14,753
+elements nobody has found yet. Then he
+prints his table and mails it to chemists
+
+25
+00:02:14,753 --> 00:02:20,653
+across Europe. But look closer. Tellurium
+is heavier than iodine, so by weight
+
+26
+00:02:20,653 --> 00:02:26,113
+tellurium should come after it. Mendeleev
+puts it before anyway, because that's
+
+27
+00:02:26,113 --> 00:02:31,393
+where it behaves right. Cobalt and nickel
+have the same trouble. Mendeleev guessed
+
+28
+00:02:31,393 --> 00:02:37,093
+the weights had been measured wrong. They
+hadn't. So the table works, but it breaks
+
+29
+00:02:37,093 --> 00:02:41,393
+its own rule. If weight isn't the real
+order, what is?
+
+30
+00:02:42,411 --> 00:02:48,071
+Cambridge, eighteen ninety-seven. J.J.
+Thomson is studying a strange glow. Pump
+
+31
+00:02:48,071 --> 00:02:52,231
+the air out of a glass tube, run
+electricity through it, and a beam shoots
+
+32
+00:02:52,231 --> 00:02:56,991
+from one end to the other. Scientists
+called them cathode rays. But what were
+
+33
+00:02:56,991 --> 00:03:04,271
+they made of? Light, or stuff? Thomson
+brings a magnet close. The beam bends. He
+
+34
+00:03:04,271 --> 00:03:10,771
+tries two charged metal plates. It bends
+again. Light doesn't do that. Tiny charged
+
+35
+00:03:10,771 --> 00:03:15,991
+particles do. Then he measures how far
+they bend, and works out how heavy they
+
+36
+00:03:15,991 --> 00:03:22,071
+must be. The answer is astonishing: far
+lighter than a hydrogen atom, the lightest
+
+37
+00:03:22,071 --> 00:03:28,251
+thing anyone knew. We now know each one is
+about two thousand times lighter. But here
+
+38
+00:03:28,251 --> 00:03:33,231
+is the strange part. It doesn't matter
+which metal he uses. The same particles
+
+39
+00:03:33,231 --> 00:03:39,891
+come out every time. So the uncuttable
+thing can be cut. Every atom carries these
+
+40
+00:03:39,891 --> 00:03:45,911
+tiny negative particles. Thomson called
+them corpuscles. Today we call them
+
+41
+00:03:45,911 --> 00:03:51,391
+electrons. But atoms have no overall
+charge, so something positive must balance
+
+42
+00:03:51,391 --> 00:03:56,431
+them out. A few years later, in
+nineteen-oh-four, Thomson made his guess:
+
+43
+00:03:57,051 --> 00:04:01,931
+a soft ball of positive stuff with
+electrons dotted through it, like raisins
+
+44
+00:04:01,931 --> 00:04:06,111
+in a pudding. It was a lovely idea. It was
+also wrong.
+
+45
+00:04:06,844 --> 00:04:12,264
+Manchester, nineteen-oh-nine. Ernest
+Rutherford has a new kind of bullet: alpha
+
+46
+00:04:12,264 --> 00:04:18,604
+particles, tiny and fast, thrown out by
+radioactive rocks. His assistant Hans
+
+47
+00:04:18,604 --> 00:04:23,964
+Geiger and a young student called Ernest
+Marsden fire them at gold beaten thinner
+
+48
+00:04:23,964 --> 00:04:28,964
+than paper. Picture yourself in that room.
+The lights are off, and you sit in the
+
+49
+00:04:28,964 --> 00:04:33,624
+dark until your eyes adjust. You look
+through a microscope at a small screen.
+
+50
+00:04:34,364 --> 00:04:40,364
+Each time a particle hits it, you see a
+tiny green flash, and you count it. Now,
+
+51
+00:04:40,704 --> 00:04:44,944
+if Thomson's pudding is right, every
+bullet should punch straight through.
+
+52
+00:04:45,564 --> 00:04:51,164
+Almost all of them do. But about one in
+eight thousand bounces back. Rutherford
+
+53
+00:04:51,164 --> 00:04:56,044
+said it was as if you fired a huge shell
+at a piece of tissue paper, and it came
+
+54
+00:04:56,044 --> 00:05:01,264
+back and hit you. Then, in
+nineteen-eleven, he explains it. Nearly
+
+55
+00:05:01,264 --> 00:05:06,904
+all of an atom's mass is packed into a
+tiny, positive centre, which he calls the
+
+56
+00:05:06,904 --> 00:05:13,084
+nucleus. The electrons sit far outside
+it. Everything in between is almost empty.
+
+57
+00:05:13,724 --> 00:05:18,464
+How empty? Imagine you are standing in the
+middle of a football stadium, holding a
+
+58
+00:05:18,464 --> 00:05:23,944
+pea. If the atom were the whole stadium,
+the nucleus would be that pea. The
+
+59
+00:05:23,944 --> 00:05:29,144
+electrons would be somewhere out past the
+back row of seats. Everything else, all
+
+60
+00:05:29,144 --> 00:05:35,244
+around you, is nothing at all. That raised
+a new question. If every element has its
+
+61
+00:05:35,244 --> 00:05:40,884
+own nucleus, what makes one nucleus
+different from another? A Dutch lawyer and
+
+62
+00:05:40,884 --> 00:05:47,084
+amateur scientist, Antonius van den Broek,
+had a bold guess: an element's place in
+
+63
+00:05:47,084 --> 00:05:52,844
+the table might equal the positive charge
+in its nucleus. It was a brilliant guess,
+
+64
+00:05:53,264 --> 00:05:55,624
+but nobody could measure it. Yet.
+
+65
+00:05:56,578 --> 00:06:02,098
+Manchester, nineteen thirteen. Henry
+Moseley is twenty-five. He builds a tube
+
+66
+00:06:02,098 --> 00:06:06,338
+with a little train inside, carrying a
+different metal target into the beam each
+
+67
+00:06:06,338 --> 00:06:12,358
+time. He fires electrons at each target,
+and each metal gives off X-rays. It's the
+
+68
+00:06:12,358 --> 00:06:17,558
+same invisible light Röntgen used to see
+the bones in a living hand. Moseley splits
+
+69
+00:06:17,558 --> 00:06:22,278
+the X-rays with a crystal and measures
+their wavelength. Then he finds a pattern.
+
+70
+00:06:23,098 --> 00:06:28,338
+Element by element, the X-rays step up in
+perfectly even jumps, like the rungs of a
+
+71
+00:06:28,338 --> 00:06:34,238
+ladder. One rung per element, no matter
+how heavy it is. Count the rungs and you
+
+72
+00:06:34,238 --> 00:06:39,818
+get a whole number for every element: the
+positive charge in its nucleus. Van den
+
+73
+00:06:39,818 --> 00:06:45,118
+Broek's guess was right. Now sort the
+table by that number. Tellurium is
+
+74
+00:06:45,118 --> 00:06:50,998
+fifty-two and iodine is fifty-three.
+Cobalt is twenty-seven and nickel is
+
+75
+00:06:50,998 --> 00:06:57,078
+twenty-eight. The broken rule fixes
+itself. Mendeleev's instinct was right all
+
+76
+00:06:57,078 --> 00:07:02,438
+along. He was just using the wrong ruler.
+And the ladder had missing rungs, at
+
+77
+00:07:02,438 --> 00:07:08,558
+forty-three, sixty-one, seventy-two and
+seventy-five. Those were elements nobody
+
+78
+00:07:08,558 --> 00:07:14,018
+had found yet. Over the next thirty-odd
+years, every one of them was found in
+
+79
+00:07:14,018 --> 00:07:19,658
+nature or made in a lab. Why do the
+columns repeat? The charge in the nucleus
+
+80
+00:07:19,658 --> 00:07:24,638
+decides how many electrons an atom holds,
+and the outer electrons decide how it
+
+81
+00:07:24,638 --> 00:07:30,138
+behaves. Elements with the same kind of
+outer electrons end up in the same column.
+
+82
+00:07:30,758 --> 00:07:36,018
+That's why the soft metals fizz together,
+and why chlorine and iodine react alike.
+
+83
+00:07:36,758 --> 00:07:41,478
+Two years later, in nineteen fifteen,
+Moseley was killed in the First World War
+
+84
+00:07:41,478 --> 00:07:46,378
+at Gallipoli. He was twenty-seven. Many
+scientists believe he would have won a
+
+85
+00:07:46,378 --> 00:07:52,598
+Nobel Prize. So this is what's really
+inside an atom. First it was an idea. Then
+
+86
+00:07:52,598 --> 00:07:59,138
+Dalton gave each kind a weight. Thomson
+found a piece inside it. Rutherford found
+
+87
+00:08:01,558 --> 00:08:05,638
+its tiny centre. And Moseley counted it.
+Every element has its own number, and that
+
+88
+00:08:05,638 --> 00:08:10,818
+number is the order of the periodic table.
+It isn't a list of weights. It's a count.
+
+89
+00:08:11,558 --> 00:08:17,498
+But the nucleus had one more secret. Some
+nuclei don't sit still. They break apart
+
+90
+00:08:17,498 --> 00:08:20,644
+and throw out rays of their own. That's
+the next story.

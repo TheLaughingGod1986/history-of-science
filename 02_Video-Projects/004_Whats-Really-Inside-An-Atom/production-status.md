@@ -258,17 +258,22 @@ Replaces the five TEMP part beds. Picture = locked v03. VO v04 untouched.
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v01.mp4` (+ `WATCH_full_v01.txt`)
 - Do **not** mark KEEP until Ben says so. No upload. **STOP for Ben** (music listen). Steps 3–6 not started.
 
-## Full_v03 music — **UAT · STOP for Ben listen at 8:06** (not KEEP)
+## Full_v02 music — **PASS** (Ben, 29 Sep 2026)
 
-- **Cut:** `hos_004_full_v03.mp4`
-- **sha256:** `503e228745d4cf87fe6f504522cbad99f6af0f9c8b038c1ed8c52da493428157`
+Ben: “music is a pass, lets go.”
+
+- **Ship cut:** `hos_004_full_v02.mp4`
+- **sha256:** `ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e`
 - **Duration:** **524.700 s** · A/V Δ **0.000** s
-- **Why:** plain v04 VO has **no** extra “you” at the next-story line → regen sect2 with **no choir / no voices / no vocal pads / no humming** → rebuild full_v03
-- **Bed (no loop):** sect1 → card05 **5:55.48** ×fade 1.5 s → `hos004-full-sect2_score_bed_v02.mp3` → cream
-- **Levels:** film `−t 500.69` mean **−23.4** / max **−3.8** · `vo_check` mean **−23.6** / peak **−3.8**
-- **Word flags:** ~**6:07** `a living`→`the living` · ~**7:40** `a weight`→`of weight` · ~**8:06** vo_check still inserts `you` (faster-whisper on mix end hears **no** “you” — Ben decides)
-- Builder: `_mix_hos_004_full_v03_music.py` · `FULL_V03_NOTES.md` · `WATCH_full_v03.txt`
-- Package **held** until Ben passes this mix.
+- **Bed (no loop):** sect1 → card05 **5:55.48** ×fade 1.5 s → `hos004-full-sect2_score_bed_v01.mp3` → cream
+- Do **not** regenerate sect2. Do **not** build another mix for music. No KEEP/LOCKED label. No upload until Ben says yes to the package dry-run.
+- Notes: `FULL_V02_NOTES.md` · `WATCH_full_v02.txt`
+- iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v02.mp4`
+
+## Full_v03 — **UNUSED / PARKED**
+
+- **Cut:** `hos_004_full_v03.mp4` · sha `503e228745d4cf87fe6f504522cbad99f6af0f9c8b038c1ed8c52da493428157`
+- Built earlier (no-choir sect2 experiment). Ben PASSed **v02**, not v03. Keep aside; do not upload; do not regenerate.
 
 ## Long thumbs — **A/B v04 PASS · C v06 STOP look**
 
@@ -282,20 +287,25 @@ C lander: `_land_hos_004_thumb_C_live_v06.py`. Index: `THUMBS_INDEX_v06.json`.
 
 T&C: 1 Atom+A · 2 Periodic+C v06 · 3 Gold+B. Family: `hos_004_thumbs_v06_family_vs_002_live.jpg`.
 
-## STEP 5 package — held (music not passed)
+## STEP 5 package — **dry-run STOP for Ben** (music PASS on v02)
 
-No upload. After music PASS: dry-run → private schedule 15 Oct 18:00 UK · end screen → 002.
+Upload **blocked** until Ben says yes to this dry-run.
 
-**Env path (HOS only):** dry-run expects  
+- Video: `hos_004_full_v02.mp4` sha `ed870939…`
+- Private · normal publish `publishAt` **2026-10-15T17:00:00Z** (Thu 15 Oct 18:00 UK) · **no Premiere**
+- T&C: 1 A+atom · 2 Periodic+C **v06** · 3 Gold+B
+- Captions: `Captions/hos_004_full_v02.en.srt` · end screen: 002 `AL_-qlWko_g` + Subscribe · pinned comment in package
+- Result: `11_Upload-Package/Schedule/PACKAGE_DRY_RUN_MUSIC_PASS_2026-09-29.json`
+
+**Env path (HOS only):**  
 `/Users/benjaminoats/YouTube/History Of Science/07_Content-Ops/.env`  
-(cwd = that `07_Content-Ops`). Do **not** load Orbit’s `orbit-with-ben/07_Content-Ops/.env`. Do not print secrets. As of 29 Sep 2026 the HOS `.env` file is **absent** on this machine — npm package stays blocked until Ben places HOS’s own env there.
+Do **not** load Orbit’s. Do not print secrets. HOS `.env` **absent** on this machine → npm `youtube:package` cannot open the API path; package resolved locally via `loadYouTubePackage` for the dry-run report.
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
 - Channel: **@HistoryOfScienceYT**. Repo: **history-of-science**. UAT: **`HOS UAT/004_…`** only.
 - Do **not** write 004 status, schedules, or deliverables into Orbit With Ben / OWB UAT / orbit agent stores.
 - Shorts VO = HOS house voice (ElevenLabs Ben Orbit Narrator IVC) — voice reuse is intentional; **no** Orbit branding, links, or picture rules.
-- Cursor run for this work: history-of-science worker `904fedbb…` · repo `TheLaughingGod1986/history-of-science`.
 
 ## STEP 6 Short scripts v02 — **STOP for Ben approve**
 
