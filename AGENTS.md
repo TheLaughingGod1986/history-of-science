@@ -75,6 +75,7 @@ The Python tools need `ffmpeg`/`ffprobe` and Pillow; `vo_check.py` also uses `fa
   - Delete a video. The old id goes private instead.
 - **Publishing:**
   - Premiere a long (until subscribers are in the hundreds).
+  - Leave any video or Short marked **Made for Kids**. Re-check Audience after every Studio save (`STUDIO_PLAYBOOK.md` §9).
   - Air more than one Short a day, or a Short before its long is public.
   - Ship a Short of 40 s or more.
   - Ship a silent or near-silent file.

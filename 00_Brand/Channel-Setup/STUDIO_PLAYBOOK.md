@@ -223,6 +223,32 @@ Follow `THUMBNAIL_AND_TITLE_RULES.md`. Check every thumb with `python3 00_Brand/
 5. **Title-only changes:** `npx tsx --env-file=.env scripts/retitle-videos.ts --file <fixes.json> --dry-run` (keeps the description, tags and schedule).
 6. **Studio-only jobs** (Related, Test & Compare, end screens, covers) go through the desktop Studio CDP launcher `00_Brand/Channel-Setup/audits/start_studio_chrome_cdp.sh`. Never Replace.
 
+### Studio settings for every upload (30 Sep 2026, from the HOS 004 upload)
+
+HOS 004 went up marked **Made for Kids**, which switched off comments, notifications, end screens and cards, and cuts recommendations (78% of 002's views). An agent click also flipped it back once after it was fixed. So these are checked on every video, and the check is repeated after every save.
+
+**Channel (set once, re-check monthly):**
+- Settings → Channel → Advanced → Audience: **"No, set this channel as not made for kids"**. Country: United Kingdom.
+- Upload defaults: category **Education**; language **English (United Kingdom)**; licence Standard; visibility Private; comments **On, hold potentially inappropriate for review**, sort by Top, show likes; embedding on; notify subscribers on; Shorts remixing **video and audio**; automatic chapters on.
+- No branding watermark (no subscribe graphics).
+
+**Every long:**
+- **Audience: "No, it's not made for kids".** Age restriction: no. The page shows no "Comments disabled / Notifications disabled" notice.
+- Visibility: **Scheduled**, Thursday 18:00 UK, **Premiere off**, notify subscribers on.
+- **Altered or synthetic content: Yes** (AI visuals and an AI clone of Ben's voice), the same on every film and Short. Paid promotion: no.
+- Category Education, language English (UK), captions uploaded from the script `.srt`.
+- Description: the first line answers the title question, then chapters. No `/go/` unless the film names the product.
+- Test & Compare: "Title and thumbnail" pairs if offered, otherwise thumbnails only with the main title.
+- End screen (last 20 s): one related long + Subscribe, clear of the cream card's words.
+- **Cards: two**, none in the first minute, each at the moment the film touches another HOS film.
+- Playlist: "History of Science: How We Found Out", in film order.
+- Pinned comment: the open question, posted as the channel (at publish if Studio won't allow it while scheduled).
+- **After it goes public:** point the end screens of the older longs at the new one (keep Subscribe).
+
+**Every Short:** the same Audience, altered content and category; comments on; Related video = the long it promotes; remixing on; no pinned comment, no `/go/`; scheduled 11:30 UK, never before its long is public.
+
+**How to set them (agents):** one setting per save. After each save, re-read **Audience** and **Visibility** on the video. Screenshot the final Visibility, Audience, Test & Compare, end screen and cards, and record the video id, schedule and settings in the film's `production-status.md`. Ben checks Audience and Visibility on his phone before the day.
+
 ## 10. Measure
 
 - **Every Monday:** `python3 00_Brand/Channel-Setup/tools/weekly_public_audit.py` writes `audits/weekly/<date>/REPORT.md`.
