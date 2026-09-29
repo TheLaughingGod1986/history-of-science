@@ -546,9 +546,91 @@
       "try_detail": [],
       "status": "PENDING",
       "note": "short-retry resume"
+    },
+    "09_one_rung_each": {
+      "id": "09_one_rung_each",
+      "tries": [
+        {
+          "id": "09_one_rung_each",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/09_one_rung_each_v01.jpg",
+          "start_frame_sha256": "4d9a55de0f8d1aa12635604afc99b8d77b632527a9f47de8f809b019ee314276",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/09_one_rung_each_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/09_one_rung_each_v01.mp4",
+          "sha256": "a99770285f7bb456f809b7abfa6538c22fd15a0765041c03c15d13c607a7c901",
+          "bytes": 4633221,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 12,
+          "credits_used": null,
+          "credits_remaining": 12,
+          "flow_credits_spent": 0,
+          "api_seconds": 67.1,
+          "at": "2026-09-29T07:36:34.169436+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_free_trial_vertex_test"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "09_one_rung_each",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/09_one_rung_each_v01.jpg",
+          "start_frame_sha256": "4d9a55de0f8d1aa12635604afc99b8d77b632527a9f47de8f809b019ee314276",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/09_one_rung_each_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/09_one_rung_each_v01.mp4",
+          "sha256": "a99770285f7bb456f809b7abfa6538c22fd15a0765041c03c15d13c607a7c901",
+          "bytes": 4633221,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": 12,
+          "credits_used": null,
+          "credits_remaining": 12,
+          "flow_credits_spent": 0,
+          "api_seconds": 67.1,
+          "at": "2026-09-29T07:36:34.169436+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_free_trial_vertex_test"
+        }
+      ],
+      "status": "KEEP",
+      "keep": {
+        "file": "09_one_rung_each_v01.mp4",
+        "sha256": "a99770285f7bb456f809b7abfa6538c22fd15a0765041c03c15d13c607a7c901",
+        "try": 1,
+        "model": "veo-3.1-fast-generate-001",
+        "quality_or_fast": "Fast",
+        "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+        "path": "vertex",
+        "credits_used": null,
+        "credits_remaining": 12
+      },
+      "model_keep": "veo-3.1-fast-generate-001",
+      "quality_or_fast": "Fast",
+      "path": "vertex",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/09_one_rung_each_v01.mp4",
+      "sha256": "a99770285f7bb456f809b7abfa6538c22fd15a0765041c03c15d13c607a7c901",
+      "duration_s": 8.0,
+      "bytes": 4633221
     }
   },
-  "status": "STOPPED_GEMINI_429",
+  "status": "VERTEX_TEST_KEEP_STOP",
   "note": "fresh after buffer waive; prior blocked log in .blocked_pre_waive",
   "vo_status": "KEEP (v04)",
   "engine_used": "flow-ui Veo 3.1 scenery_only via Mini CDP :9222",
@@ -575,15 +657,15 @@
     "account_confirmed": "benoats@googlemail.com",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
-  "updated_at": "2026-09-28T19:37:50.802165+00:00",
+  "updated_at": "2026-09-29T07:36:55.015121+00:00",
   "credits_before_mint": 12,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
   "credits_after_mint": 12,
   "credits_spent_total": 130,
   "summary": {
-    "keep": 7,
-    "remaining": 20,
+    "keep": 8,
+    "remaining": 19,
     "total_board_plates": 27,
     "keeps": [
       "01_manchester_1913",
@@ -592,34 +674,9 @@
       "04_electrons_fire",
       "05_xrays_from_metal",
       "06_rontgen_hand",
-      "07_crystal_split"
+      "07_crystal_split",
+      "09_one_rung_each"
     ],
-    "remaining_ids": [
-      "08_ladder_pattern",
-      "09_one_rung_each",
-      "10_count_rungs",
-      "11_charge_nucleus",
-      "12_sort_table",
-      "13_te_i",
-      "14_co_ni",
-      "15_rule_fixes",
-      "16_wrong_ruler",
-      "17_missing_rungs",
-      "18_gaps_fill",
-      "19_columns_why",
-      "20_charge_electrons",
-      "21_same_column",
-      "22_soft_metals_halogens",
-      "23_quiet_memorial",
-      "24_nobel_belief",
-      "25_atom_recap",
-      "26_explorer_count_table",
-      "27_next_story_rays"
-    ],
-    "path_counts": {
-      "flow-cdp": 4,
-      "gemini-api": 3
-    },
     "paths_detail": {
       "01_manchester_1913": {
         "path": "flow-cdp",
@@ -648,13 +705,14 @@
       "07_crystal_split": {
         "path": "flow-cdp",
         "quality": "Quality"
+      },
+      "09_one_rung_each": {
+        "path": "vertex",
+        "quality": "Fast"
       }
     },
-    "credits_before": 12,
-    "credits_after": 12,
-    "credits_spent": 0,
-    "stop_reason": "Gemini 429 after 3 short retries at 08_ladder_pattern; Flow=12",
-    "gemini_429_exact_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}"
+    "credits_after_flow": 12,
+    "vertex_test": "KEEP 09_one_rung_each"
   },
   "resume_note": "Ben evening: immediate Gemini + \u22642\u00d7~2m 429 then STOP (no 3h)",
   "gemini_429_solid_started_at": null,
@@ -757,9 +815,9 @@
   "gemini_429_exact_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
   "assemble": "BLOCKED \u2014 need 27/27 KEEP",
   "vertex_setup": {
-    "at": "2026-09-28T19:38:12.573936+00:00",
+    "at": "2026-09-29T07:36:55.015046+00:00",
     "gcloud_installed": true,
-    "adc_authorized": false,
+    "adc_authorized": true,
     "status": "STOP_NEED_BEN_BROWSER_ADC",
     "test_plate_planned": "09_one_rung_each",
     "reason_skip_08": "08_ladder_pattern is Quality glow; Ben asked Fast test",
@@ -768,6 +826,27 @@
       "quality": "veo-3.1-generate-001"
     },
     "location": "us-central1",
-    "doc": "07_Edit-Project/PART05_VERTEX_SETUP.md"
+    "doc": "07_Edit-Project/PART05_VERTEX_SETUP.md",
+    "account": "benoats@googlemail.com",
+    "project": "gen-lang-client-0538779324",
+    "project_name": "History of Science",
+    "billing_account": "billingAccounts/0124D1-E6EFD6-40F6DA",
+    "aiplatform_enabled": true,
+    "test_plate": "09_one_rung_each",
+    "test_result": "KEEP",
+    "test_model": "veo-3.1-fast-generate-001",
+    "note": "ONE Vertex Fast test KEEP. No further Vertex until Ben confirms Free Trial credit."
+  },
+  "vertex": {
+    "project": "gen-lang-client-0538779324",
+    "location": "us-central1",
+    "billing_account": null,
+    "fast_model": "veo-3.1-fast-generate-001",
+    "quality_model": "veo-3.1-generate-001",
+    "test_plate": "09_one_rung_each",
+    "note": "ONE Fast test only; wait Ben Free Trial credit confirm before more",
+    "result": "KEEP",
+    "sha256": "a99770285f7bb456f809b7abfa6538c22fd15a0765041c03c15d13c607a7c901",
+    "model": "veo-3.1-fast-generate-001"
   }
 }
