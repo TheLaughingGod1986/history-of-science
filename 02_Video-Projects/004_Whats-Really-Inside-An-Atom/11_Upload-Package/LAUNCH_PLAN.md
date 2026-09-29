@@ -21,7 +21,7 @@ Rules: `HOS_STRATEGY.md` → The week.
 
   Letters **reassigned** vs v01–v03 (A=atom, B=coin, C=Te/I). Family sheet: `hos_004_thumbs_v06_family_vs_002_live.jpg`.
 - Long thumbs in `08_Thumbnail/Selected/` (A/B v04 + C v06). Index: `THUMBS_INDEX_v06.json`.
-- **Package:** music PASS on **full_v02**. Dry-run from **this** repo only → private · no Premiere · end screen → 002 · `2026-10-15T17:00:00Z`. **STOP** for Ben yes before any upload. `full_v03` parked unused.
+- **Package:** Ben yes to upload when dry-run clean — **blocked**: HOS `07_Content-Ops/.env` absent. No video id. See `Schedule/UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json`. `full_v03` parked unused.
 - **Content Ops env (HOS only):** `npm run youtube:package` must run under `History Of Science/07_Content-Ops/` and load **`/Users/benjaminoats/YouTube/History Of Science/07_Content-Ops/.env`**. Do **not** use `orbit-with-ben/07_Content-Ops/.env`. Do **not** print `.env`.
 - **Channel split:** every 004 record, status line, deliverable, and UAT file lives in the **history-of-science** repo and **`HOS UAT/004_Whats-Really-Inside-An-Atom/`** only. Never write HOS 004 into Orbit/OWB project, agent store, schedule file, `OWB UAT`, or the orbit-with-ben repo.
 - Before 15 Oct there is no new long. Weeks without one run on three back-catalogue Shorts (HOS_STRATEGY.md → The week).

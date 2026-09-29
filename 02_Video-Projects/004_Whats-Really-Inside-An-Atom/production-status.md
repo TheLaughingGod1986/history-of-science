@@ -287,19 +287,27 @@ C lander: `_land_hos_004_thumb_C_live_v06.py`. Index: `THUMBS_INDEX_v06.json`.
 
 T&C: 1 Atom+A · 2 Periodic+C v06 · 3 Gold+B. Family: `hos_004_thumbs_v06_family_vs_002_live.jpg`.
 
-## STEP 5 package — **dry-run STOP for Ben** (music PASS on v02)
+## STEP 5 package — **UPLOAD BLOCKED** (Ben yes received · dry-run not clean)
 
-Upload **blocked** until Ben says yes to this dry-run.
+Ben explicit yes (29 Sep 2026): *“Yes, upload private and schedule Thu 15 Oct 18:00 as soon as the dry run is clean, no need to show me first.”*
 
-- Video: `hos_004_full_v02.mp4` sha `ed870939…`
-- Private · normal publish `publishAt` **2026-10-15T17:00:00Z** (Thu 15 Oct 18:00 UK) · **no Premiere**
-- T&C: 1 A+atom · 2 Periodic+C **v06** · 3 Gold+B
-- Captions: `Captions/hos_004_full_v02.en.srt` · end screen: 002 `AL_-qlWko_g` + Subscribe · pinned comment in package
-- Result: `11_Upload-Package/Schedule/PACKAGE_DRY_RUN_MUSIC_PASS_2026-09-29.json`
+**Gate failed → no upload.** Package metadata from the music-PASS dry-run is correct (title · private · `publishAt` 2026-10-15T17:00:00Z · no Premiere · full_v02 sha `ed870939…` · C v06 T&C), but the **live npm dry-run is not clean**:
 
-**Env path (HOS only):**  
+| Check | Result |
+|---|---|
+| Title / privacy / publishAt / no Premiere / v02 sha | OK in resolved package |
+| `npm run youtube:package -- --dry-run` | **FAIL** — `DATABASE_URL` undefined |
+| HOS `07_Content-Ops/.env` | **absent** |
+| Orbit `.env` used? | **No** (forbidden) |
+| Video id | **none** — nothing uploaded |
+
+**Env path required (HOS only):**  
 `/Users/benjaminoats/YouTube/History Of Science/07_Content-Ops/.env`  
-Do **not** load Orbit’s. Do not print secrets. HOS `.env` **absent** on this machine → npm `youtube:package` cannot open the API path; package resolved locally via `loadYouTubePackage` for the dry-run report.
+Do **not** copy or load `orbit-with-ben/07_Content-Ops/.env`. Do not print secrets.
+
+**Next:** Ben places HOS Content Ops `.env` at that path → re-run `npm run youtube:package -- --dry-run` clean → then private schedule upload (no Premiere · no Shorts). Record video id on main after that.
+
+Evidence: `Schedule/PACKAGE_DRY_RUN_MUSIC_PASS_2026-09-29.json` · `Schedule/UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json`
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
@@ -309,4 +317,4 @@ Do **not** load Orbit’s. Do not print secrets. HOS `.env` **absent** on this m
 
 ## STEP 6 Short scripts v02 — **STOP for Ben approve**
 
-`10_Shorts/SHORTS_PUNCH_SCRIPTS_v02.md` — Fri 004 gold (~60 w) · Sun 002 Newlands octaves · Tue 003 Bertha’s hand only.
+`10_Shorts/SHORTS_PUNCH_SCRIPTS_v02.md` — Fri 004 gold (~60 w) · Sun 002 Newlands octaves · Tue 003 Bertha’s hand only. Shorts **not** uploaded.
