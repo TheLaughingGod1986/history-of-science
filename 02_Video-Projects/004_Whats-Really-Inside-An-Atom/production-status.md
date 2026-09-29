@@ -54,7 +54,7 @@ Listen sha256: `e9e47e32f4db1838794bc84e86ed37be882982c43ff8c4707862e29a54af1dbd
 | 04 The Shell That Bounced Back | 4:05–5:54 | 4:05 · ~1.5 s | **22** (4–6 s splits) | false (rough v01) |
 | 05 Counting With X-rays | 5:54–8:18 | 5:54 · ~1.5 s | 11 | false |
 
-**Next:** full-film join `hos_004_full_join_v01` (Parts 01–05 passed). Part 05 v03 PASS.
+**Next:** Ben UAT on `hos_004_full_join_v01`. Do not label KEEP/LOCKED.
 
 ---
 
@@ -211,3 +211,14 @@ Meta: `07_Edit-Project/part01_rough_v03_land_meta.json` · `part01_rough_v04_lan
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v03.mp4`
 - Do **not** label KEEP/LOCKED. Land PR #155. **Next:** full-film join `hos_004_full_join_v01` for Thu 15 Oct 18:00.
 
+## Full join v01 (29 Sep 2026) — STOP for Ben
+
+- **Cut:** `hos_004_full_join_v01.mp4`
+- **sha256:** `70622869f9bc52c0599564bc4f2338f7dec3b547e141d084f59fcd3a199cd605`
+- **Duration:** 516.685 s (8:36.69) · video 516.600 / audio 516.685 (Δ ~85 ms)
+- **Parents:** 01 v05 · 02 v01 · 03 v01 · 04 v02 · 05 v03 (hash-checked, not reminted) · VO v04
+- **Seams (xfade 0.40s):** 01→02 **1:09.41** · 02→03 **2:40.22** · 03→04 **4:03.55** · 04→05 **5:52.18**
+- **Cream card (in P05):** **8:12.68** · **20s Studio hold from 8:16.70**
+- **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v01.mp4`
+- Builder: `07_Edit-Project/_join_hos_004_full_v01.py` · notes `09_Final-Export/FULL_JOIN_V01_NOTES.md`
+- Do **not** label KEEP/LOCKED. No remint. **STOP for Ben.**

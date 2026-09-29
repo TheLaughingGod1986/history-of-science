@@ -233,8 +233,6 @@ def main() -> None:
         *ENC,
         str(tmp),
     )
-    tmp.replace(OUT) if False else None
-    # copy out of temp (replace may cross volumes)
     subprocess.run(["cp", "-f", str(tmp), str(OUT)], check=True)
 
     digest = sha256(OUT)

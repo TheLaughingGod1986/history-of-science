@@ -1,0 +1,68 @@
+{
+  "file": "hos_004_full_join_v01.mp4",
+  "sha256": "70622869f9bc52c0599564bc4f2338f7dec3b547e141d084f59fcd3a199cd605",
+  "duration": 516.685396,
+  "bytes": 398023017,
+  "xfade": 0.4,
+  "end_hold_s": 20.0,
+  "p05_cream_in_part_local": 140.5,
+  "starts": {
+    "01": 0.0,
+    "02": 69.412813,
+    "03": 160.216834,
+    "04": 243.550167,
+    "05": 352.1835
+  },
+  "seams": {
+    "01\u219202": 69.412813,
+    "02\u219203": 160.216834,
+    "03\u219204": 243.550167,
+    "04\u219205": 352.1835
+  },
+  "cream_in_abs": 492.6835,
+  "end_hold_in": 496.699438,
+  "video_duration": 516.6,
+  "audio_duration": 516.685396,
+  "sync_delta_a_minus_v": 0.08539599999994607,
+  "parents": [
+    {
+      "id": "01",
+      "name": "hos_004_part01_rough_v05.mp4",
+      "sha": "71d7c70798c77ce2ecb02c37ad043fd98117a2209a84899236337fee8b952add",
+      "chapter": "Cold open",
+      "duration": 69.812813
+    },
+    {
+      "id": "02",
+      "name": "hos_004_part02_rough_v01.mp4",
+      "sha": "620ce51250028495a588f25967dddfaa9c6136dc4172c7b0ce1ee609f103f1d2",
+      "chapter": "The Table That Broke Its Own Rule",
+      "duration": 91.204021
+    },
+    {
+      "id": "03",
+      "name": "hos_004_part03_rough_v01.mp4",
+      "sha": "d62e0ed096ead8ec52666ca07476f973aeaae7635b70a16faaac45f14ec518e0",
+      "chapter": "The Crumb Inside the Atom",
+      "duration": 83.733333
+    },
+    {
+      "id": "04",
+      "name": "hos_004_part04_rough_v02.mp4",
+      "sha": "157feaef7bd21236aeafc3e953fe461fe2ee95896bb868d57357c9c1c2c1e1f5",
+      "chapter": "The Shell That Bounced Back",
+      "duration": 109.033333
+    },
+    {
+      "id": "05",
+      "name": "hos_004_part05_rough_v03.mp4",
+      "sha": "b391bff0dbe8a8ae0130adef4f7f3d7b79aca2cb34a934d9cf42d76e1d03363f",
+      "chapter": "Counting With X-rays",
+      "duration": 144.515938
+    }
+  ],
+  "status": "UAT_FOR_BEN",
+  "keep_locked_label": false,
+  "upload": false,
+  "air_target": "Thu 15 Oct 2026 18:00 Europe/London"
+}

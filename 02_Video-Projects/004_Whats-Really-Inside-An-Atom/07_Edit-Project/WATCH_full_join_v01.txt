@@ -1,0 +1,10 @@
+WATCH THIS FILE (HOS 004 full join v01 — soft joins + cream + 20s Studio hold):
+  hos_004_full_join_v01.mp4
+  iCloud: HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_join_v01.mp4
+
+sha256=70622869f9bc52c0599564bc4f2338f7dec3b547e141d084f59fcd3a199cd605
+duration=516.685
+bytes=398023017
+seams: 01→02 1:09.41 · 02→03 2:40.22 · 03→04 4:03.55 · 04→05 5:52.18
+cream card in P05 @ 8:12.68 · 20s Studio hold from 8:16.70
+Parents passed (not reminted). VO v04. Do NOT label KEEP/LOCKED. STOP for Ben.
