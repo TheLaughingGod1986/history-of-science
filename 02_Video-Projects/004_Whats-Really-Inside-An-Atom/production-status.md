@@ -258,28 +258,44 @@ Replaces the five TEMP part beds. Picture = locked v03. VO v04 untouched.
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v01.mp4` (+ `WATCH_full_v01.txt`)
 - Do **not** mark KEEP until Ben says so. No upload. **STOP for Ben** (music listen). Steps 3–6 not started.
 
-## Long thumbs (STEP 4) — **v05 proposed · STOP for Ben** (nothing to Studio)
+## Full_v02 music (STEP 1 remake) — **UAT · STOP for Ben listen** (not KEEP)
 
-C lander: `08_Thumbnail/_land_hos_004_thumb_C_live_v05.py`. Index: `THUMBS_INDEX_v05.json`.
+- **Cut:** `hos_004_full_v02.mp4`
+- **sha256:** `ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e`
+- **Duration:** **524.700 s** · A/V Δ **0.000** s
+- **Bed (no loop):** sect1 `hos004-full_score_bed_v01.mp3` → card05 **5:55.48** (355.478) acrossfade **1.5 s** → sect2 `hos004-full-sect2_score_bed_v01.mp3` (~160 s) → cream fade · silent under hold
+- **Levels:** gap **−20 dB** · extra ~**3 dB** duck under speech (`threshold=0.012:ratio=12`) · `amix normalize=0`
+- **Reconfirm 29 Sep:** film `−t 500.69` mean **−23.4** / max **−3.8** dB · `vo_check` mean **−23.6** / peak **−3.8** dB
+- **Word flags:** ~**6:07** `a living`→`the living` · ~**7:40** `a weight`→`of weight` · ~**8:06** insert `you` (transcriber / known VO holds — not a mix fault)
+- Builder: `07_Edit-Project/_mix_hos_004_full_v02_music.py` · notes `FULL_V02_NOTES.md` · watch `WATCH_full_v02.txt`
+- **Do not** label KEEP. **Do not** upload. Package dry-run is **PRE-MUSIC-PASS** until Ben passes this mix.
 
-Matches live 001/002 Studio grammar. Letters **reassigned** vs v01–v03. **C v05 ONLY** — lining-figure Te 52 / I 53 (fixed Georgia oldstyle 5² read); bigger; top-left padded inside cream panel. A and B remain v04. No KEEP/LOCKED labels.
+## Long thumbs (STEP 4) — **A/B v04 Ben PASS · C v05 for Ben look** (nothing to Studio)
 
-| Variant | File | Hook | Notes |
+C lander: `08_Thumbnail/_land_hos_004_thumb_C_live_v05.py`. Index: `THUMBS_INDEX_v05.json`. Prior C v05 renamed `*_v05_superseded.jpg`.
+
+| Variant | File | Status | Notes |
 |---|---|---|---|
-| **A (main)** | `hos_004_thumb_A_atom_live_v04.jpg` | **WHAT'S REALLY / INSIDE / AN ATOM?** | Giant glowing 3D atom on desk |
-| B | `hos_004_thumb_B_cut_gold_live_v04.jpg` | **CUT / GOLD?** | Giant gold coin mid-cut; blank face |
-| C | `hos_004_thumb_C_hidden_number_live_v05.jpg` | **THE HIDDEN / NUMBER** | Two blank tiles + lining-figure **Te 52** / **I 53** (I glowing) |
+| **A (main)** | `hos_004_thumb_A_atom_live_v04.jpg` | **Ben PASS** | Giant glowing 3D atom |
+| **B** | `hos_004_thumb_B_cut_gold_live_v04.jpg` | **Ben PASS** | Giant gold coin mid-cut |
+| **C** | `hos_004_thumb_C_hidden_number_live_v05.jpg` | **STOP look** | Tiles scaled + left; both fully in frame; clear BR; lining **52** / **53** top-left in tiles |
 
-### Test & Compare pairs (proposed — pending Ben)
+### Test & Compare pairs (Ben — recorded)
 
 | # | Title | Thumb |
 |---|---|---|
-| **1 main** | What's Really Inside an Atom? | A atom (painted title) |
+| **1 main** | What's Really Inside an Atom? | A atom v04 |
 | 2 | Why Is the Periodic Table in This Order? | C Te/I v05 |
-| 3 | How Small Can You Cut Gold? | B coin |
+| 3 | How Small Can You Cut Gold? | B coin v04 |
 
-**Family sheet:** `hos_004_thumbs_v05_family_vs_002_live.jpg` (002 live A + 004 A v04 + B v04 + C v05)
+**Family sheet:** `hos_004_thumbs_v05_family_vs_002_live.jpg`  
+**Selected on main:** A/B v04 + C v05 JPGs + preview sheets.
 
-**iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/` (v01 · v02 · v03 · v04 · v05 side by side)
+## STEP 5 package — PRE-MUSIC-PASS dry-run only
 
-**STOP for Ben** — thumbnail pick. Do **not** push to Studio. Do **not** start STEP 5/6 until Ben signs off.
+Manifest: `11_Upload-Package/PACKAGE_MANIFEST.json` — private · no Premiere · `@HistoryOfScienceYT` · `publishAt` **2026-10-15T17:00:00Z** · end screen → **002** `AL_-qlWko_g` · video `hos_004_full_v02.mp4`.  
+**STOP:** no live upload until Ben passes music **and** says go.
+
+## STEP 6 Short scripts — **STOP for Ben approve**
+
+`10_Shorts/SHORTS_PUNCH_SCRIPTS_v01.md` — Fri 16 (004 HOW SMALL?) · Sun 18 (002) · Tue 20 (003). Scripts only; no VO/cut yet.

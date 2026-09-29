@@ -1,0 +1,40 @@
+{
+  "file": "hos_004_full_v02.mp4",
+  "sha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
+  "duration": 524.7,
+  "bytes": 417817365,
+  "sync_delta_a_minus_v": 0.0,
+  "picture_source": "hos_004_full_join_v03.mp4",
+  "picture_sha256": "f88cb9d47e910425519a40a6af7649626c47afbcdddf1f0f3293564c59f65244",
+  "bed_section_1": "hos004-full_score_bed_v01.mp3",
+  "bed_section_1_sha256": "90bc69f8246923a7dd85575d2e05861d5a90ab549f8fc6a95db2ff30f9c3d3bc",
+  "bed_section_2": "hos004-full-sect2_score_bed_v01.mp3",
+  "bed_section_2_sha256": "ccfa2a500be9cb956cc158115ad59fec7ceb7320ab0a8b5bbd2451df8af98daa",
+  "bed_join_at": 355.477832,
+  "bed_xfade_s": 1.5,
+  "bed_loop": false,
+  "bed_rel_db": -20.0,
+  "sidechain": "threshold=0.012:ratio=12:attack=20:release=500:level_sc=1",
+  "sidechain_note": "extra ~3 dB duck under speech vs ungated \u221220 dB gap level",
+  "amix": "inputs=2:weights=1 1:normalize=0",
+  "cream_at": 500.69377,
+  "cream_fade_s": 4.0,
+  "hold_silent_s": 20.0,
+  "part_starts": {
+    "01": 0.0,
+    "02": 70.533333,
+    "03": 162.411166,
+    "04": 246.844499,
+    "05": 356.577832
+  },
+  "vo": {
+    "01": "hos_004_part01_vo_v04.wav",
+    "02": "hos_004_part02_vo_v04.wav",
+    "03": "hos_004_part03_vo_v04.wav",
+    "04": "hos_004_part04_vo_v04.wav",
+    "05": "hos_004_part05_vo_v04.wav"
+  },
+  "status": "UAT_MUSIC_FOR_BEN",
+  "keep_locked_label": false,
+  "upload": false
+}

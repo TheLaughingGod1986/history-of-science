@@ -1,0 +1,57 @@
+{
+  "format": "longform",
+  "video": "../09_Final-Export/hos_004_full_v02.mp4",
+  "title": "What's Really Inside an Atom?",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/atom_long_description_v01.txt",
+  "tagsFile": "Tags/atom_long_tags_v01.txt",
+  "chaptersFile": "Chapters/atom_long_chapters_v01.txt",
+  "pinnedCommentFile": "Pinned-Comments/atom_long_pinned-comment_v01.txt",
+  "thumbnail": "../08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
+  "thumbnailAbc": [
+    "../08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
+    "../08_Thumbnail/Selected/hos_004_thumb_C_hidden_number_live_v05.jpg",
+    "../08_Thumbnail/Selected/hos_004_thumb_B_cut_gold_live_v04.jpg"
+  ],
+  "titleAbc": [
+    "What's Really Inside an Atom?",
+    "Why Is the Periodic Table in This Order?",
+    "How Small Can You Cut Gold?"
+  ],
+  "schedule": "2026-10-15T17:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": "AL_-qlWko_g",
+  "privacy": "private",
+  "madeForKids": false,
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "endScreen": {
+    "relatedVideoId": "AL_-qlWko_g",
+    "relatedTitle": "How Did We Discover the Periodic Table?",
+    "subscribe": true,
+    "note": "Studio end screen only — 002 long + Subscribe. No Premiere."
+  },
+  "testAndCompare": [
+    {
+      "slot": 1,
+      "role": "main",
+      "title": "What's Really Inside an Atom?",
+      "thumb": "../08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg"
+    },
+    {
+      "slot": 2,
+      "role": "alt",
+      "title": "Why Is the Periodic Table in This Order?",
+      "thumb": "../08_Thumbnail/Selected/hos_004_thumb_C_hidden_number_live_v05.jpg"
+    },
+    {
+      "slot": 3,
+      "role": "alt",
+      "title": "How Small Can You Cut Gold?",
+      "thumb": "../08_Thumbnail/Selected/hos_004_thumb_B_cut_gold_live_v04.jpg"
+    }
+  ],
+  "captionsFile": "Captions/hos_004_full_v01.en.srt",
+  "note": "PRE-MUSIC-PASS dry-run only until Ben passes full_v02 music. Private + publishAt 2026-10-15T17:00:00Z (Thu 15 Oct 18:00 UK). No Premiere. Zero /go/. Mix file hos_004_full_v02.mp4 sha ed870939…. Do not upload until Ben says yes."
+}

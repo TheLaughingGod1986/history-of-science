@@ -1,13 +1,10 @@
 {
   "parentTitle": "What's Really Inside an Atom?",
   "version": "v05",
-  "status": "STOP for Ben pick. Proposed only. Nothing to Studio. No KEEP/LOCKED.",
-  "note": "C v05 ONLY \u2014 lining-figure Te 52 / I 53 (fixed 5\u00b2 read). A and B remain v04. Live Studio grammar.",
-  "composer": "_land_hos_004_thumb_C_live_v05.py",
+  "status": "Ben PASS A/B v04; C v05 tiles fully in frame + lining Te52/I53 (STOP look). T&C pairs in LAUNCH_PLAN. Package dry-run PRE-MUSIC-PASS until Ben passes full_v02. Nothing to Studio.",
   "factLock": {
     "Te": 52,
-    "I": 53,
-    "numberFont": "Arial Black (lining figures, digit-by-digit baseline)"
+    "I": 53
   },
   "testAndComparePairs": [
     {
@@ -15,11 +12,8 @@
       "role": "main",
       "title": "What's Really Inside an Atom?",
       "thumbId": "A",
-      "hook": "WHAT'S REALLY INSIDE AN ATOM?",
       "jpg": "Selected/hos_004_thumb_A_atom_live_v04.jpg",
-      "preview": "Selected/hos_004_thumb_A_atom_live_v04_preview.jpg",
       "sha256": "e97c8d3efbd10ad90aad555e1868233532ec4541986b142a2a085048c324c9be",
-      "bytes": 267009,
       "version": "v04"
     },
     {
@@ -27,29 +21,23 @@
       "role": "alt",
       "title": "Why Is the Periodic Table in This Order?",
       "thumbId": "C",
-      "hook": "THE HIDDEN NUMBER",
       "jpg": "Selected/hos_004_thumb_C_hidden_number_live_v05.jpg",
-      "preview": "Selected/hos_004_thumb_C_hidden_number_live_v05_preview.jpg",
-      "sha256": "41e14ab383460d8f7aa103fba593667393819e193b1a60441541cbf49ae35782",
-      "bytes": 227177,
-      "version": "v05",
-      "note": "lining-figure Te 52 / I 53; bigger; top-left padded"
+      "sha256": "436636e866b8074d07230179574e6de1140945f667269b51d88404ecb8e294ee",
+      "version": "v05"
     },
     {
       "slot": 3,
       "role": "alt",
       "title": "How Small Can You Cut Gold?",
       "thumbId": "B",
-      "hook": "CUT GOLD?",
       "jpg": "Selected/hos_004_thumb_B_cut_gold_live_v04.jpg",
-      "preview": "Selected/hos_004_thumb_B_cut_gold_live_v04_preview.jpg",
       "sha256": "901f9ee365405ca09871e70688c6266bc037d267f5c892e462574418fadf1fcf",
-      "bytes": 276881,
       "version": "v04"
     }
   ],
   "upload": false,
   "studio": false,
   "icloud": "HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/",
-  "familySheet": "Selected/hos_004_thumbs_v05_family_vs_002_live.jpg"
+  "familySheet": "Selected/hos_004_thumbs_v05_family_vs_002_live.jpg",
+  "superseded": "hos_004_thumb_C_hidden_number_live_v05_superseded.jpg"
 }
