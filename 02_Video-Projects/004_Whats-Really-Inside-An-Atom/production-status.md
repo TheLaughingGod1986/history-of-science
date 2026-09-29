@@ -313,7 +313,7 @@ Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish o
 |---|---|
 | Audience (Made for Kids) | **OK — No, not Made for Kids** (checked after every save). See Made for Kids section. Proof: `URGENT_audience_004_not_made_for_kids.png` |
 | Visibility | **OK — leave alone** — Scheduled **15 Oct 2026 18:00 UK**, **Set as Premiere OFF** (`aria-checked=false`, input `18:00`), title *What's Really Inside an Atom?*, private until then. Proof: `FINISH_visibility_15oct_1800_premiere_off.png` · `finish_v01c_91_visibility_final.png` |
-| Altered / AI use | **OK** — AI use **Yes**. Proof: `FINAL_ai_use_yes.png` |
+| Altered / AI use | **OK — No** (Ben 20:03 override; was Yes earlier). Proof: `BEN_growth_B4_altered_AFTER.png` |
 | Custom thumb A v04 | **Still not persisted** — Studio still shows **C / THE HIDDEN NUMBER** after A image-input uploads + Save. Ben: set A manually when Studio save is healthy. Proof: `finish_v01d_03_thumb_reload.png` |
 | Test & Compare | **Ineligible** on scheduled/private. Studio offered **none** (Ineligible). Details lists 2 titles (Atom · Periodic); third (Gold) not listed. Wanted Title+thumbnail×3 — cannot arm until eligible. No title test until after launch. Proof: `FINISH_test_and_compare.png` |
 | Description + chapters | **OK** — package description + chapters, no `/go/` links. |
