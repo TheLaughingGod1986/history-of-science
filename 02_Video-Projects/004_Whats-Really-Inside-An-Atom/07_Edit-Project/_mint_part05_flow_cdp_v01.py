@@ -1002,9 +1002,252 @@ def mint_one_vertex(
         "path": "vertex",
         "vertex_project": project,
         "vertex_location": location,
-        "reason": "ben_free_trial_vertex_test",
+        "reason": "ben_vertex_last5_authorized",
     }
     return entry
+
+
+def _is_quota_err(msg: str) -> bool:
+    u = msg.upper()
+    return (
+        "429" in msg
+        or "RESOURCE_EXHAUSTED" in u
+        or "QUOTA" in u
+        or "RATE LIMIT" in u
+        or "RATE_LIMIT" in u
+    )
+
+
+def run_vertex_batch(plate_ids: list[str]) -> None:
+    """Mint named plates on Vertex (Ben authorized last 5; charge OK).
+
+    Max 2 tries/plate (try2 = framing change). On 429/quota: retry twice ~2 min
+    apart, then STOP. Quality model only when plate.quality == Quality (glow).
+    Never print keys.
+    """
+    RAW.mkdir(parents=True, exist_ok=True)
+    QA.mkdir(parents=True, exist_ok=True)
+    board = json.loads(PLATES_JSON.read_text())
+    by_id = {p["id"]: p for p in board["plates"] if p.get("veo", True)}
+    missing = [pid for pid in plate_ids if pid not in by_id]
+    if missing:
+        raise SystemExit(f"STOP: unknown plate ids for Vertex batch: {missing}")
+
+    stills_missing = [
+        pid
+        for pid in plate_ids
+        if not (REFS / f"{pid}_v01.jpg").exists()
+        or (REFS / f"{pid}_v01.jpg").stat().st_size < 20_000
+    ]
+    if stills_missing:
+        raise SystemExit(f"STOP missing stills for Vertex batch: {stills_missing}")
+
+    client, project, location = load_vertex_client()
+    billing_account = None
+    try:
+        r = subprocess.run(
+            [
+                "gcloud",
+                "billing",
+                "projects",
+                "describe",
+                project,
+                "--format=value(billingAccountName)",
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60,
+        )
+        if r.returncode == 0:
+            billing_account = (r.stdout or "").strip() or None
+    except Exception:
+        billing_account = None
+
+    log = load_log()
+    log["status"] = "VERTEX_BATCH_IN_PROGRESS"
+    log["vertex_batch"] = {
+        "project": project,
+        "location": location,
+        "billing_account": billing_account,
+        "fast_model": VERTEX_FAST_MODEL,
+        "quality_model": VERTEX_QUALITY_MODEL,
+        "plate_ids": plate_ids,
+        "note": (
+            "Ben authorized Vertex for last 5 Part 05 plates; "
+            "small real charge OK if Free Trial insufficient"
+        ),
+        "started_at": now(),
+    }
+    save_log(log)
+
+    print(
+        f"VERTEX BATCH → {len(plate_ids)} plates project={project} "
+        f"location={location} billing={billing_account}",
+        flush=True,
+    )
+
+    for pid in plate_ids:
+        plate = by_id[pid]
+        existing = log.get("plates", {}).get(pid, {})
+        keep = existing.get("keep")
+        keep_path = RAW / (keep["file"] if keep else f"{pid}_v01.mp4")
+        if keep and keep_path.exists() and keep_path.stat().st_size > 400_000:
+            print(f"SKIP {pid} already KEEP {keep_path.name}", flush=True)
+            continue
+        if keep_path.exists() and keep_path.stat().st_size > 400_000 and not keep:
+            # File on disk from prior path — do not remint; mark KEEP from file
+            print(f"SKIP {pid} file present {keep_path.name}", flush=True)
+            continue
+
+        plate_log = log["plates"].setdefault(
+            pid, {"id": pid, "tries": [], "try_detail": [], "status": "PENDING"}
+        )
+        ensure_try_lists(plate_log)
+        plate_log["status"] = "PENDING"
+        save_log(log)
+
+        kept = False
+        for try_n in range(1, 3):
+            ensure_try_lists(plate_log)
+            if any(
+                isinstance(t, dict) and t.get("try") == try_n and t.get("status") == "KEEP"
+                for t in plate_log.get("try_detail", [])
+            ):
+                kept = True
+                break
+
+            entry = None
+            last_err = ""
+            # First attempt + up to 2 short retries on 429/quota (~2 min apart)
+            max_attempts = 1 + GEMINI_429_SHORT_RETRIES
+            for attempt in range(1, max_attempts + 1):
+                try:
+                    entry = mint_one_vertex(
+                        client,
+                        plate,
+                        try_n,
+                        project=project,
+                        location=location,
+                        credits_before=None,
+                    )
+                    break
+                except Exception as e:
+                    msg = str(e)
+                    last_err = msg
+                    if not _is_quota_err(msg):
+                        print(
+                            f"  Vertex FAIL {pid} try={try_n} "
+                            f"{type(e).__name__}: {msg[:400]}",
+                            flush=True,
+                        )
+                        plate_log["try_detail"].append(
+                            {
+                                "try": try_n,
+                                "status": "FAIL",
+                                "path": "vertex",
+                                "note": msg[:1000],
+                                "at": now(),
+                                "model": vertex_model_for(plate),
+                            }
+                        )
+                        save_log(log)
+                        break
+                    remaining = max_attempts - attempt
+                    print(
+                        f"  Vertex 429/quota {pid} try={try_n} "
+                        f"attempt={attempt}/{max_attempts}",
+                        flush=True,
+                    )
+                    print(f"EXACT_ERROR: {msg}", flush=True)
+                    if remaining <= 0:
+                        log["status"] = "STOPPED_VERTEX_429"
+                        log["stopped_at_plate"] = pid
+                        log["stop_reason"] = (
+                            f"Vertex 429/quota after {attempt} attempts at {pid}"
+                        )
+                        log["vertex_429_exact_error"] = msg[:2000]
+                        plate_log["status"] = "FAIL"
+                        plate_log["try_detail"].append(
+                            {
+                                "try": try_n,
+                                "status": "FAIL",
+                                "path": "vertex",
+                                "note": f"429 after {attempt} attempts: {msg[:800]}",
+                                "at": now(),
+                                "model": vertex_model_for(plate),
+                            }
+                        )
+                        save_log(log)
+                        raise SystemExit(
+                            f"STOP Vertex 429/quota at {pid}: {msg[:400]}"
+                        )
+                    wait_s = gemini_backoff_sleep_s()
+                    print(f"  retry after {wait_s}s…", flush=True)
+                    time.sleep(wait_s)
+
+            if entry is None:
+                # Non-quota fail already logged; go to next try or plate
+                continue
+
+            ensure_try_lists(plate_log)
+            plate_log["try_detail"].append(entry)
+            plate_log["tries"].append(entry)
+            save_log(log)
+
+            if entry["status"] == "KEEP":
+                promote_keep(log, pid, try_n, entry)
+                print(
+                    f"KEEP {pid} path=vertex model={entry.get('model')} "
+                    f"dur={entry.get('duration_s')}s api_s={entry.get('api_seconds')} "
+                    f"→ {pid}_v01.mp4",
+                    flush=True,
+                )
+                kept = True
+                break
+
+            print(f"AUTO_FAIL {pid} try={try_n}: {entry.get('note')}", flush=True)
+            plate_log["status"] = "FAIL"
+            if entry.get("out") and Path(entry["out"]).exists():
+                archive_reject(Path(entry["out"]), f"vertex_auto_fail_t{try_n}")
+            save_log(log)
+
+        if not kept:
+            plate_log["status"] = "FAIL"
+            print(
+                f"FAIL {pid} after 2 Vertex tries — change framing next board pass",
+                flush=True,
+            )
+            save_log(log)
+
+    # Summary
+    plates_log = log.get("plates") or {}
+    keep_n = sum(
+        1
+        for row in plates_log.values()
+        if isinstance(row, dict) and (row.get("status") == "KEEP" or row.get("keep"))
+    )
+    batch_keep = [
+        pid
+        for pid in plate_ids
+        if (plates_log.get(pid) or {}).get("status") == "KEEP"
+        or (plates_log.get(pid) or {}).get("keep")
+    ]
+    log["status"] = (
+        "VERTEX_BATCH_DONE_ALL_KEEP" if keep_n >= 27 else "VERTEX_BATCH_DONE_PARTIAL"
+    )
+    log["vertex_batch"]["finished_at"] = now()
+    log["vertex_batch"]["batch_keep"] = batch_keep
+    log["vertex_batch"]["film_keep_count"] = keep_n
+    log["summary"] = {
+        "keep": keep_n,
+        "target": 27,
+        "vertex_batch_keep": batch_keep,
+    }
+    save_log(log)
+    print(
+        f"VERTEX BATCH DONE keep_film={keep_n}/27 batch_keep={batch_keep}",
+        flush=True,
+    )
 
 
 def pick_vertex_test_plate(board: dict) -> dict:
@@ -1210,6 +1453,18 @@ def main() -> None:
         run_vertex_one_plate_test(plate_arg)
         return
 
+    # Ben authorized Vertex batch (last 5 Part 05): --vertex plate_id [plate_id…]
+    if "--vertex" in argv:
+        idx = argv.index("--vertex")
+        ids = [a for a in argv[idx + 1 :] if not a.startswith("-")]
+        if not ids:
+            raise SystemExit(
+                "STOP: --vertex needs plate ids "
+                "(e.g. --vertex 23_quiet_memorial 24_nobel_belief …)"
+            )
+        run_vertex_batch(ids)
+        return
+
     only = {a for a in argv if not a.startswith("-")}  # optional plate ids
     RAW.mkdir(parents=True, exist_ok=True)
     QA.mkdir(parents=True, exist_ok=True)
@@ -1250,7 +1505,10 @@ def main() -> None:
         "vertex_fast": VERTEX_FAST_MODEL,
         "vertex_quality": VERTEX_QUALITY_MODEL,
         "vertex_location": VERTEX_LOCATION,
-        "vertex_cli": "--vertex-test [plate_id]  # ONE plate only until Ben billing confirm",
+        "vertex_cli": (
+            "--vertex-test [plate_id]  # ONE plate; "
+            "--vertex id [id…]  # batch (Ben-authorized last 5)"
+        ),
     }
     log["board"] = str(PLATES_JSON.relative_to(REPO))
     log["flow_ultra"] = {
