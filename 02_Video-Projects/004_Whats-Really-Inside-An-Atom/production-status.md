@@ -290,17 +290,25 @@ Same picture/cards/end as v01. VO untouched. Music join at the Part 05 chapter c
 
 Written into this file + `11_Upload-Package/LAUNCH_PLAN.md`.
 
-## Long thumbs (STEP 4) — STOP for Ben with music
+## Long thumbs (STEP 4) — **v02 STOP for Ben pick** (nothing to Studio)
 
-Three Studio ABC variants from the film's own plates. Composer: `08_Thumbnail/_compose_hos_004_thumbs_v01.py`. JPGs + preview sheets live in `08_Thumbnail/Selected/`.
+Composer: `08_Thumbnail/_compose_hos_004_thumbs_v02.py`. JPGs + preview sheets in `08_Thumbnail/Selected/`.
 
-| Variant | File | Preview sheet | Hook | Subject |
-|---|---|---|---|---|
-| A | `hos_004_thumb_A_hidden_number_v01.jpg` | `…_v01_preview.jpg` | **THE HIDDEN NUMBER** (HIDDEN yellow) | Te/I crates |
-| B | `hos_004_thumb_B_cut_gold_v01.jpg` | `…_v01_preview.jpg` | **CUT GOLD?** (GOLD yellow) | coin halves + knife |
-| C | `hos_004_thumb_C_bounced_back_v01.jpg` | `…_v01_preview.jpg` | **IT BOUNCED BACK** (BOUNCED yellow) | gold-foil bounce |
+| Variant | File | Hook | Notes |
+|---|---|---|---|
+| **B (main)** | `hos_004_thumb_B_cut_gold_v02.jpg` | **CUT GOLD?** | KEEP subject; hook up/left, clear of knife (§2.5) |
+| A | `hos_004_thumb_A_hidden_number_v02.jpg` | **THE HIDDEN NUMBER** | Two blank tiles; house-font **Te 52** / **I 53** only (I glowing). No baked numbers. |
+| C | `hos_004_thumb_C_bounced_back_v02.jpg` | **IT BOUNCED BACK** | Dark void · gold foil · thin stream · one bright rebound toward camera |
+
+### Test & Compare pairs (locked for listing)
+
+| # | Title | Thumb |
+|---|---|---|
+| **1 main** | What's Really Inside an Atom? | B CUT GOLD? |
+| 2 | Why Is the Periodic Table in This Order? | A THE HIDDEN NUMBER |
+| 3 | How Small Can You Cut Gold? | C IT BOUNCED BACK |
 
 **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/`
 
-**STOP for Ben** — music (`hos_004_full_v02`) **and** thumbnail pick A/B/C together. Do **not** start STEP 5 (upload package) or STEP 6 (schedule) until Ben signs off.
+**STOP for Ben** — thumbnail pick (and music on `hos_004_full_v02`). Do **not** push to Studio. Do **not** start STEP 5/6 until Ben signs off.
 

@@ -1,0 +1,42 @@
+{
+  "parentTitle": "What's Really Inside an Atom?",
+  "version": "v02",
+  "status": "STOP for Ben pick. Nothing to Studio.",
+  "composer": "_compose_hos_004_thumbs_v02.py",
+  "factLock": {"Te": 52, "I": 53, "note": "house-font overlays only; no baked tile text; no atomic weights"},
+  "testAndComparePairs": [
+    {
+      "slot": 1,
+      "role": "main",
+      "title": "What's Really Inside an Atom?",
+      "thumbId": "B",
+      "hook": "CUT GOLD?",
+      "jpg": "Selected/hos_004_thumb_B_cut_gold_v02.jpg",
+      "preview": "Selected/hos_004_thumb_B_cut_gold_v02_preview.jpg",
+      "sha256": "cca2f205b9fa8b449f80350069323397c6b25935d57281e08bc0999fb0be59f3"
+    },
+    {
+      "slot": 2,
+      "role": "alt",
+      "title": "Why Is the Periodic Table in This Order?",
+      "thumbId": "A",
+      "hook": "THE HIDDEN NUMBER",
+      "jpg": "Selected/hos_004_thumb_A_hidden_number_v02.jpg",
+      "preview": "Selected/hos_004_thumb_A_hidden_number_v02_preview.jpg",
+      "sha256": "b99f229976cc890abd22f93a7d6093bf7c6c1a2b146250c5f457b46cfec6e27f"
+    },
+    {
+      "slot": 3,
+      "role": "alt",
+      "title": "How Small Can You Cut Gold?",
+      "thumbId": "C",
+      "hook": "IT BOUNCED BACK",
+      "jpg": "Selected/hos_004_thumb_C_bounced_back_v02.jpg",
+      "preview": "Selected/hos_004_thumb_C_bounced_back_v02_preview.jpg",
+      "sha256": "ee35122e8279e8227fd93dd0f87cd45c2eeb2b569246260f7fb0109f7d3b3cbe"
+    }
+  ],
+  "upload": false,
+  "studio": false,
+  "icloud": "HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/"
+}

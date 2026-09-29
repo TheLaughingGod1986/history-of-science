@@ -11,7 +11,15 @@ Rules: `HOS_STRATEGY.md` → The week.
 
 - Each Short's Studio Related points at the film it promotes. One Short a day at most; none before the 004 long is public.
 - **Title (locked):** main *What's Really Inside an Atom?*; T&C *Why Is the Periodic Table in This Order?* · *How Small Can You Cut Gold?*
-- Long thumbnails (STEP 4, pending Ben pick): Studio ABC in `08_Thumbnail/Selected/` — **A THE HIDDEN NUMBER** · **B CUT GOLD?** · **C IT BOUNCED BACK** (each with `_preview.jpg` phone sheet alongside).
+- **Test & Compare pairs (title + thumbnail) — v02, pending Ben pick. Nothing to Studio yet:**
+
+  | # | Title | Thumbnail |
+  |---|---|---|
+  | **1 (main)** | What's Really Inside an Atom? | **B CUT GOLD?** (`hos_004_thumb_B_cut_gold_v02.jpg`) |
+  | 2 | Why Is the Periodic Table in This Order? | **A THE HIDDEN NUMBER** (`hos_004_thumb_A_hidden_number_v02.jpg`) — Te **52** / I **53** overlays only |
+  | 3 | How Small Can You Cut Gold? | **C IT BOUNCED BACK** (`hos_004_thumb_C_bounced_back_v02.jpg`) |
+
+- Long thumbs live in `08_Thumbnail/Selected/` (JPG + `_preview.jpg` phone sheet each). Composer: `_compose_hos_004_thumbs_v02.py`.
 - Music UAT cut: `hos_004_full_v02.mp4` (two-section bed, join at Part 05 chapter card, no loop).
 - Before 15 Oct there is no new long. Weeks without one run on three back-catalogue Shorts (HOS_STRATEGY.md → The week).
 - Fallback: Thu 22 Oct, same pattern moved one week.
