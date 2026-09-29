@@ -1,8 +1,8 @@
 {
   "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v02.mp4",
   "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v02.mp4",
-  "sha256": "af96d76b5a2488c406837bbb7018f30e173cc5ba749bfcc28c37b020f088c7c5",
-  "icloud_sha256": "af96d76b5a2488c406837bbb7018f30e173cc5ba749bfcc28c37b020f088c7c5",
+  "sha256": "31f9e77a99085a1323fc55c21e3327305dae387b71ef0ca11c87e5b068380cb8",
+  "icloud_sha256": "31f9e77a99085a1323fc55c21e3327305dae387b71ef0ca11c87e5b068380cb8",
   "duration_s": 144.515938,
   "video_stream_note": "1080p30 silent plates + TEMP bed + v04 VO",
   "fps": 30,
@@ -22,7 +22,7 @@
   "part": "05",
   "parent_part04": "hos_004_part04_rough_v02.mp4",
   "explorer_plate": "26_explorer_count_table",
-  "remint_note": "14_co_ni Vertex remint after Ben FAIL stadium+twins on v01",
+  "remint_note": "14_co_ni Vertex remint after Ben FAIL stadium+twins on v01; reassembled after raw restore",
   "plates": [
     {
       "id": "01_manchester_1913",

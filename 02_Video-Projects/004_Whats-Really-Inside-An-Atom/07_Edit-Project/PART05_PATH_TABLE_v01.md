@@ -1,6 +1,6 @@
 # HOS 004 Part 05 — plate path table (rough v02)
 
-Rough: `hos_004_part05_rough_v02.mp4` · sha256 `af96d76b5a2488c406837bbb7018f30e173cc5ba749bfcc28c37b020f088c7c5` · 144.516s
+Rough: `hos_004_part05_rough_v02.mp4` · sha256 `31f9e77a99085a1323fc55c21e3327305dae387b71ef0ca11c87e5b068380cb8` · 144.516s
 
 Remint: `14_co_ni` Vertex after Ben FAIL (stadium + twin scientists) on v01.
 Flag only (not reminted): `22_soft_metals_halogens`, `26_explorer_count_table` — stadium in mid frame.

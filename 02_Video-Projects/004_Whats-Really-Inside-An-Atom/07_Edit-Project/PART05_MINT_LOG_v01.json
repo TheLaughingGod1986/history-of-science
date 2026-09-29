@@ -1027,8 +1027,8 @@
           "start_frame_sha256": "e4da6c3f08524a26af5297643d7aafb39699b03c176c2224200544eba5efadd3",
           "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/14_co_ni_v01.mp4",
           "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/14_co_ni_v01.mp4",
-          "sha256": "ed69be659484a8e4871628cb18de1b82e2babce9e9fef1659605ff90facb2d00",
-          "bytes": 1888217,
+          "sha256": "eddc77e2e37be66362a98032df67207422f6911739e37f2d7d45eaf7e10898be",
+          "bytes": 1524774,
           "duration_s": 8.0,
           "status": "KEEP",
           "note": "motion_ok scene_hits=4 dur=8.00s",
@@ -1036,8 +1036,8 @@
           "credits_used": null,
           "credits_remaining": null,
           "flow_credits_spent": 0,
-          "api_seconds": 66.2,
-          "at": "2026-09-29T09:12:48.440101+00:00",
+          "api_seconds": 66.3,
+          "at": "2026-09-29T09:18:58.630418+00:00",
           "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
           "path": "vertex",
           "vertex_project": "gen-lang-client-0538779324",
@@ -1086,7 +1086,7 @@
           "sha256": "ed69be659484a8e4871628cb18de1b82e2babce9e9fef1659605ff90facb2d00",
           "bytes": 1888217,
           "duration_s": 8.0,
-          "status": "KEEP",
+          "status": "SUPERSEDED_FILE_LOST",
           "note": "motion_ok scene_hits=4 dur=8.00s",
           "credits_before": null,
           "credits_used": null,
@@ -1099,13 +1099,41 @@
           "vertex_project": "gen-lang-client-0538779324",
           "vertex_location": "us-central1",
           "reason": "ben_vertex_last5_authorized"
+        },
+        {
+          "id": "14_co_ni",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/14_co_ni_v01.jpg",
+          "start_frame_sha256": "e4da6c3f08524a26af5297643d7aafb39699b03c176c2224200544eba5efadd3",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/14_co_ni_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/14_co_ni_v01.mp4",
+          "sha256": "eddc77e2e37be66362a98032df67207422f6911739e37f2d7d45eaf7e10898be",
+          "bytes": 1524774,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.3,
+          "at": "2026-09-29T09:18:58.630418+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
         }
       ],
       "status": "KEEP",
       "quality_or_fast": "Fast",
       "path": "vertex",
       "duration_s": 8.0,
-      "bytes": 1888217,
+      "bytes": 1524774,
       "ben_fail": {
         "rough": "hos_004_part05_rough_v01.mp4",
         "issues": [
@@ -1125,9 +1153,10 @@
         "credits_used": null,
         "credits_remaining": 12
       },
+      "model_keep": "veo-3.1-fast-generate-001",
       "keep": {
         "file": "14_co_ni_v01.mp4",
-        "sha256": "ed69be659484a8e4871628cb18de1b82e2babce9e9fef1659605ff90facb2d00",
+        "sha256": "eddc77e2e37be66362a98032df67207422f6911739e37f2d7d45eaf7e10898be",
         "try": 1,
         "model": "veo-3.1-fast-generate-001",
         "quality_or_fast": "Fast",
@@ -1136,9 +1165,8 @@
         "credits_used": null,
         "credits_remaining": null
       },
-      "model_keep": "veo-3.1-fast-generate-001",
       "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/14_co_ni_v01.mp4",
-      "sha256": "ed69be659484a8e4871628cb18de1b82e2babce9e9fef1659605ff90facb2d00"
+      "sha256": "eddc77e2e37be66362a98032df67207422f6911739e37f2d7d45eaf7e10898be"
     },
     "15_rule_fixes": {
       "id": "15_rule_fixes",
@@ -2202,7 +2230,7 @@
     "account_confirmed": "benoats@googlemail.com",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
-  "updated_at": "2026-09-29T09:15:37.379703+00:00",
+  "updated_at": "2026-09-29T09:21:29.494597+00:00",
   "credits_before_mint": 12,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
@@ -2391,8 +2419,8 @@
       "14_co_ni"
     ],
     "note": "Ben authorized Vertex for last 5 Part 05 plates; small real charge OK if Free Trial insufficient",
-    "started_at": "2026-09-29T09:11:42.200811+00:00",
-    "finished_at": "2026-09-29T09:12:48.442035+00:00",
+    "started_at": "2026-09-29T09:17:52.354391+00:00",
+    "finished_at": "2026-09-29T09:18:58.632228+00:00",
     "batch_keep": [
       "14_co_ni"
     ],
@@ -2402,7 +2430,9 @@
     "status": "ROUGH_V02_BUILT",
     "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v02.mp4",
     "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v02.mp4",
-    "sha256": "af96d76b5a2488c406837bbb7018f30e173cc5ba749bfcc28c37b020f088c7c5",
+    "sha256": "31f9e77a99085a1323fc55c21e3327305dae387b71ef0ca11c87e5b068380cb8",
+    "icloud_sha256": "31f9e77a99085a1323fc55c21e3327305dae387b71ef0ca11c87e5b068380cb8",
+    "icloud_copy_ok": true,
     "duration_s": 144.515938,
     "remint": "14_co_ni vertex after Ben FAIL stadium+twins",
     "flag_only": [
@@ -2410,6 +2440,6 @@
       "26_explorer_count_table"
     ],
     "note": "Ben reviews rough v02 \u2014 plate QA only; do not label film KEEP/LOCKED",
-    "at": "2026-09-29T09:15:37.379570+00:00"
+    "at": "2026-09-29T09:21:29.494470+00:00"
   }
 }
