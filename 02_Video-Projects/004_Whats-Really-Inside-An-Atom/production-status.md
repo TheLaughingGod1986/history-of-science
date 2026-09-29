@@ -311,8 +311,8 @@ Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish o
 
 | Item | Status |
 |---|---|
-| Schedule | **OK** — **15 Oct 2026 18:00 UK**, Premiere off, **not 30 Sep**. Proof: `FINAL_visibility_panel_15oct_1800.png` + `FINAL_content_15oct.png`. |
-| Altered / AI use | **OK** — AI use **Yes**. Proof: `FINAL_ai_use_yes.png`. Kids stay **No**. |
+| Schedule | **OK** — **15 Oct 2026 18:00 UK**, **Set as Premiere UNCHECKED** (normal publish), **not 30 Sep**. CoS re-verify: `COS_visibility_15oct_1800_premiere_off.png` (aria-checked=false · input value 18:00). finish2 19:05 `has1800=False/premiere=True` was a false Content-list probe. |
+| Altered / AI use | **OK** — AI use **Yes**. Proof: `cos_v02b_ai_yes.png` / `FINAL_ai_use_yes.png`. Kids stay **No**. |
 | Custom thumb A v04 | **Not persisted** — Details/Content still show **C / THE HIDDEN NUMBER** after A uploads. Studio save trouble toast. Manual A when save healthy. Proof: `v25b_reload.png`. |
 | Test & Compare | **Ineligible** on scheduled/private. Wanted Title+thumbnail×3 (A/C/B + 3 titles). Cannot arm via CDP until eligible. |
 | End screen | **Blocked** — place Subscribe + video, modal Save clicked, then Studio **processing error** + NaN; reopen empty. Re-set Specific `AL_-qlWko_g` + Subscribe after processing settles. Proof: `v24_33_after_save.png`. |

@@ -26,9 +26,12 @@
     "ok": true,
     "label": "Thu 15 Oct 2026 18:00 Europe/London (2026-10-15T17:00:00.000Z)",
     "premiere": false,
+    "premiereCheckboxAriaChecked": false,
     "not_30_sep": true,
-    "proof_visibility": "evidence_2026-09-29_studio/FINAL_visibility_panel_15oct_1800.png (from v20_20: 15 Oct 2026 · 18:00 · Premiere off)",
-    "proof_content": "evidence_2026-09-29_studio/FINAL_content_15oct.png (Content list: 15 Oct 2026 Scheduled)"
+    "cos_note": "finish2 19:05 probe logged has1800=False premiere=True from Content list text without opening Visibility — false alarm. Live Visibility panel (CoS v02) shows 15 Oct 2026 · 18:00 · Set as Premiere UNCHECKED.",
+    "proof_visibility": "evidence_2026-09-29_studio/COS_visibility_15oct_1800_premiere_off.png",
+    "proof_content": "evidence_2026-09-29_studio/FINAL_content_15oct.png (Content list: 15 Oct 2026 Scheduled)",
+    "verify_json": "evidence_2026-09-29_studio/COS_VERIFY_V02_RESULT.json"
   },
   "testAndCompare": {
     "wanted": "Title and thumbnail ×3",
