@@ -2297,7 +2297,7 @@
       "bytes": 2639315
     }
   },
-  "status": "ROUGH_V03_READY_FOR_BEN",
+  "status": "PART05_PASSED_V03",
   "note": "fresh after buffer waive; prior blocked log in .blocked_pre_waive",
   "vo_status": "KEEP (v04)",
   "engine_used": "flow-ui Veo 3.1 scenery_only via Mini CDP :9222",
@@ -2324,7 +2324,7 @@
     "account_confirmed": "benoats@googlemail.com",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
-  "updated_at": "2026-09-29T09:35:43.992117+00:00",
+  "updated_at": "2026-09-29T10:16:07.215698+00:00",
   "credits_before_mint": 12,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
@@ -2537,7 +2537,7 @@
     "at": "2026-09-29T09:21:29.494470+00:00"
   },
   "assemble_v03": {
-    "status": "ROUGH_V03_BUILT",
+    "status": "PART05_PASSED_V03",
     "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v03.mp4",
     "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v03.mp4",
     "sha256": "b391bff0dbe8a8ae0130adef4f7f3d7b79aca2cb34a934d9cf42d76e1d03363f",
@@ -2548,7 +2548,17 @@
       "22_soft_metals_halogens",
       "26_explorer_count_table"
     ],
-    "note": "Ben reviews rough v03 \u2014 plate QA only; do not label film KEEP/LOCKED",
-    "at": "2026-09-29T09:35:43.992002+00:00"
+    "note": "Ben PASSED rough v03 \u2014 Part 05 done. Do not label KEEP/LOCKED. Land PR #155.",
+    "at": "2026-09-29T09:35:43.992002+00:00",
+    "ben_pass": true,
+    "ben_pass_at": "2026-09-29T10:16:07.215698+00:00"
+  },
+  "ben_pass": {
+    "status": "PASSED",
+    "cut": "hos_004_part05_rough_v03.mp4",
+    "sha256": "b391bff0dbe8a8ae0130adef4f7f3d7b79aca2cb34a934d9cf42d76e1d03363f",
+    "duration_s": 144.516,
+    "at": "2026-09-29T10:16:07.215698+00:00",
+    "note": "Ben PASSED rough v03 (29 Sep). Do not label KEEP/LOCKED. PR #155 land."
   }
 }
