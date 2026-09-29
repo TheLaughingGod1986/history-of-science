@@ -1,0 +1,2 @@
+PASS  hos_004_s02_every_eighth_vo_v03.wav  0:21.94  mean -23.0 dB  peak -4.1 dB
+   warn  word check skipped: pip install faster-whisper
