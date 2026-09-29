@@ -258,3 +258,28 @@ Replaces the five TEMP part beds. Picture = locked v03. VO v04 untouched.
 - **iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v01.mp4` (+ `WATCH_full_v01.txt`)
 - Do **not** mark KEEP until Ben says so. No upload. **STOP for Ben** (music listen). Steps 3–6 not started.
 
+## Long thumbs (STEP 4) — **v04 proposed · STOP for Ben** (nothing to Studio)
+
+Lander: `08_Thumbnail/_land_hos_004_thumbs_live_v04.py`. Index: `THUMBS_INDEX_v04.json`.
+
+Matches live 001/002 Studio grammar (`002/08_Thumbnail/LIVE_THUMB_LOCK.md`): premium 3D cartoon painting, object ~2/3 right, Explorer garnish lower-left, cream + one gold punch painted type. Letters **reassigned** vs v01–v03. §2.4 heavy-sans/yellow ignored for this pass (Ben changing it). No KEEP/LOCKED labels.
+
+| Variant | File | Hook | Notes |
+|---|---|---|---|
+| **A (main)** | `hos_004_thumb_A_atom_live_v04.jpg` | **WHAT'S REALLY / INSIDE / AN ATOM?** | Giant glowing 3D atom on desk |
+| B | `hos_004_thumb_B_cut_gold_live_v04.jpg` | **CUT / GOLD?** | Giant gold coin mid-cut; blank face |
+| C | `hos_004_thumb_C_hidden_number_live_v04.jpg` | **THE HIDDEN / NUMBER** | Two blank tiles + painted **Te 52** / **I 53** (I glowing) |
+
+### Test & Compare pairs (proposed — pending Ben)
+
+| # | Title | Thumb |
+|---|---|---|
+| **1 main** | What's Really Inside an Atom? | A atom (painted title) |
+| 2 | Why Is the Periodic Table in This Order? | C Te/I |
+| 3 | How Small Can You Cut Gold? | B coin |
+
+**Family sheet:** `hos_004_thumbs_v04_family_vs_002_live.jpg` (002 live A + 004 A/B/C)
+
+**iCloud:** `HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/` (v01 · v02 · v03 · v04 side by side)
+
+**STOP for Ben** — thumbnail pick. Do **not** push to Studio. Do **not** start STEP 5/6 until Ben signs off.

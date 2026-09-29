@@ -1,0 +1,52 @@
+{
+  "parentTitle": "What's Really Inside an Atom?",
+  "version": "v04",
+  "status": "STOP for Ben pick. Proposed only. Nothing to Studio. No KEEP/LOCKED.",
+  "note": "Letters REASSIGNED vs v01\u2013v03: A=atom, B=coin, C=Te/I. Live 001/002 Studio grammar (cream + gold punch painted type). Ignores THUMBNAIL_AND_TITLE_RULES \u00a72.4 heavy-sans/yellow for now.",
+  "composer": "_land_hos_004_thumbs_live_v04.py",
+  "styleLock": "002 LIVE_THUMB_LOCK.md + README Hard rules",
+  "factLock": {
+    "Te": 52,
+    "I": 53,
+    "note": "painted overlays on blank tiles only"
+  },
+  "testAndComparePairs": [
+    {
+      "slot": 1,
+      "role": "main",
+      "title": "What's Really Inside an Atom?",
+      "thumbId": "A",
+      "hook": "WHAT'S REALLY INSIDE AN ATOM?",
+      "jpg": "Selected/hos_004_thumb_A_atom_live_v04.jpg",
+      "preview": "Selected/hos_004_thumb_A_atom_live_v04_preview.jpg",
+      "sha256": "e97c8d3efbd10ad90aad555e1868233532ec4541986b142a2a085048c324c9be",
+      "bytes": 267009
+    },
+    {
+      "slot": 2,
+      "role": "alt",
+      "title": "Why Is the Periodic Table in This Order?",
+      "thumbId": "C",
+      "hook": "THE HIDDEN NUMBER",
+      "jpg": "Selected/hos_004_thumb_C_hidden_number_live_v04.jpg",
+      "preview": "Selected/hos_004_thumb_C_hidden_number_live_v04_preview.jpg",
+      "sha256": "dfbe3efee705163c5ff7492157d6f0497134922b63e371d943a2fbfe8baa5571",
+      "bytes": 222683
+    },
+    {
+      "slot": 3,
+      "role": "alt",
+      "title": "How Small Can You Cut Gold?",
+      "thumbId": "B",
+      "hook": "CUT GOLD?",
+      "jpg": "Selected/hos_004_thumb_B_cut_gold_live_v04.jpg",
+      "preview": "Selected/hos_004_thumb_B_cut_gold_live_v04_preview.jpg",
+      "sha256": "901f9ee365405ca09871e70688c6266bc037d267f5c892e462574418fadf1fcf",
+      "bytes": 276881
+    }
+  ],
+  "upload": false,
+  "studio": false,
+  "icloud": "HOS UAT/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/",
+  "familySheet": "Selected/hos_004_thumbs_v04_family_vs_002_live.jpg"
+}
