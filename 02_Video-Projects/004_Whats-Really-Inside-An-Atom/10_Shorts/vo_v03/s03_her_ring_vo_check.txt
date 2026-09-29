@@ -1,0 +1,2 @@
+PASS  hos_004_s03_her_ring_vo_v03.wav  0:23.13  mean -21.8 dB  peak -3.8 dB
+   warn  word check skipped: pip install faster-whisper

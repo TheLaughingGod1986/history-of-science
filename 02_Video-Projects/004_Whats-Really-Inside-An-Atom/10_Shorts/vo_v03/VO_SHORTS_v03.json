@@ -1,0 +1,82 @@
+{
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "scripts": "SHORTS_PUNCH_SCRIPTS_v03.md",
+  "version": "v03",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "speed": 1.04,
+  "shorts": [
+    {
+      "id": "s01",
+      "slug": "how_small",
+      "txt": "10_Shorts/vo_v03/s01_how_small.txt",
+      "txt_sha256": "b76414504ea053e332f4fe970e93ff275ad110bfae3cba82d1fd2814106d5f55",
+      "speed": 1.04,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/vo_v03/hos_004_s01_how_small_vo_v03.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/vo_v03/hos_004_s01_how_small_vo_v03.wav",
+      "align": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/vo_v03/hos_004_s01_how_small_vo_v03_align.json",
+      "mp3_sha256": "48d5322ccde03ea09550cbd918695dd0d6bc3912b3c80db959e94421b496408f",
+      "wav_sha256": "9f855bc0b65963ecdb366ca5510b7e8ae5051f91a343fb5f02b55183773bda60",
+      "duration_s": 22.32,
+      "mean_db": -22.1,
+      "peak_db": -4.3,
+      "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.34,
+        "similarity_boost": 0.78,
+        "style": 0.42,
+        "speed": 1.04,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "id": "s02",
+      "slug": "every_eighth",
+      "txt": "10_Shorts/vo_v03/s02_every_eighth.txt",
+      "txt_sha256": "b18b552b7bdf308faaa75cbe324f666c398feb2a9433b25f96fb4002814fd498",
+      "speed": 1.04,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/vo_v03/hos_004_s02_every_eighth_vo_v03.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/vo_v03/hos_004_s02_every_eighth_vo_v03.wav",
+      "align": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/vo_v03/hos_004_s02_every_eighth_vo_v03_align.json",
+      "mp3_sha256": "d73f29c489a31ebb5216979ef63511ab083f1347f23785026ce66127f9edb9a0",
+      "wav_sha256": "85474d45f95c884169db586a05c90ae3e775c30b50b0ceb150095791427f2758",
+      "duration_s": 24.32,
+      "mean_db": -23.2,
+      "peak_db": -4.1,
+      "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.34,
+        "similarity_boost": 0.78,
+        "style": 0.42,
+        "speed": 1.04,
+        "use_speaker_boost": true
+      }
+    },
+    {
+      "id": "s03",
+      "slug": "her_ring",
+      "txt": "10_Shorts/vo_v03/s03_her_ring.txt",
+      "txt_sha256": "7f72e24ffa090ebce2dc1713e8f209132a1c6912dcdd17e324c2b4d99e24182a",
+      "speed": 1.04,
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/vo_v03/hos_004_s03_her_ring_vo_v03.mp3",
+      "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/vo_v03/hos_004_s03_her_ring_vo_v03.wav",
+      "align": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/vo_v03/hos_004_s03_her_ring_vo_v03_align.json",
+      "mp3_sha256": "a108488751740d77ca53f9b48f9e734cdff83c5299aedfc21f5676c02c4cd7da",
+      "wav_sha256": "e20014c006f6b9f015510edabc7226d75d16b0531f716947627d6dbbe2d15b52",
+      "duration_s": 28.24,
+      "mean_db": -22.5,
+      "peak_db": -3.8,
+      "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+      "model_id": "eleven_v3",
+      "voice_settings": {
+        "stability": 0.34,
+        "similarity_boost": 0.78,
+        "style": 0.42,
+        "speed": 1.04,
+        "use_speaker_boost": true
+      }
+    }
+  ]
+}

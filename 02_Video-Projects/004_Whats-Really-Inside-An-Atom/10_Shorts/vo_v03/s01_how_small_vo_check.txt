@@ -1,0 +1,2 @@
+PASS  hos_004_s01_how_small_vo_v03.wav  0:20.86  mean -21.8 dB  peak -4.3 dB
+   warn  word check skipped: pip install faster-whisper

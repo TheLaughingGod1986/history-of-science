@@ -1,0 +1,26 @@
+[
+  {
+    "stem": "hos_004_s01_how_small_vo_v03",
+    "raw_s": 22.32,
+    "after_silence_s": 20.862,
+    "atempo": 1.0,
+    "final_s": 20.862,
+    "total_with_loop_est": 24.862
+  },
+  {
+    "stem": "hos_004_s02_every_eighth_vo_v03",
+    "raw_s": 24.32,
+    "after_silence_s": 23.251,
+    "atempo": 1.06,
+    "final_s": 21.945,
+    "total_with_loop_est": 25.945
+  },
+  {
+    "stem": "hos_004_s03_her_ring_vo_v03",
+    "raw_s": 28.24,
+    "after_silence_s": 25.65,
+    "atempo": 1.06,
+    "final_s": 24.212,
+    "total_with_loop_est": 28.212
+  }
+]
