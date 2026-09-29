@@ -115,20 +115,27 @@ def main() -> None:
     if missing:
         raise SystemExit(f"STOP missing KEEP plates: {missing}")
 
-    # Render cream-on-brown end card for non-veo plate(s)
+    # Render cream-on-brown end card for non-veo plate(s).
+    # Homebrew ffmpeg here has no drawtext — use house Swift PNG → looped mp4.
     end_card = WORK / "end_card.mp4"
     if any(str(c) == "__END_CARD__" for c in clips):
-        # duration from last window
         end_hold = wins[-1][2]
-        # solid brown + cream text via drawtext
-        subprocess.run([
+        end_png = (
+            PROJ / "04_Generated-Clips/part05/refs/hos_end_card_v01.png"
+        )
+        if not end_png.exists() or end_png.stat().st_size < 10_000:
+            raise SystemExit(f"STOP missing end card still {end_png}")
+        run([
             "ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
-            "-f", "lavfi", "-i", f"color=c=0x3B2F2F:s={W}x{H}:d={end_hold}:r={FPS}",
-            "-vf",
-            "drawtext=text='History of Science':fontcolor=0xF5F0E6:fontsize=64:x=(w-text_w)/2:y=(h-text_h)/2-40,"
-            "drawtext=text='DISCOVERY. WONDER. PROOF.':fontcolor=0xF5F0E6:fontsize=36:x=(w-text_w)/2:y=(h-text_h)/2+40",
-            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-an", str(end_card),
-        ], check=True)
+            "-loop", "1", "-i", str(end_png),
+            "-vf", (
+                f"scale={W}:{H}:force_original_aspect_ratio=decrease,"
+                f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,fps={FPS},format=yuv420p"
+            ),
+            "-t", f"{end_hold:.6f}",
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-an",
+            str(end_card),
+        ])
         clips = [end_card if str(c) == "__END_CARD__" else c for c in clips]
 
     normed: list[Path] = []
@@ -236,9 +243,9 @@ def main() -> None:
             "fade_out_s": FADE_OUT_S,
             "same_treatment_as_part01": True,
         },
-        "part": "04",
-        "parent_part03_pass": "hos_004_part03_rough_v01.mp4",
-        "explorer_plate": "16_explorer_stadium_pea",
+        "part": "05",
+        "parent_part04": "hos_004_part04_rough_v02.mp4",
+        "explorer_plate": "26_explorer_count_table",
         "plates": plate_meta,
     }
     META.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")

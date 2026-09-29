@@ -1717,12 +1717,416 @@
     },
     "23_quiet_memorial": {
       "id": "23_quiet_memorial",
-      "tries": [],
-      "try_detail": [],
-      "status": "PENDING"
+      "tries": [
+        {
+          "id": "23_quiet_memorial",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/23_quiet_memorial_v01.jpg",
+          "start_frame_sha256": "6f27b06f69f6c3a2da996a0e2fdf52e037777be8192e37b6f49f419632705f43",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/23_quiet_memorial_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/23_quiet_memorial_v01.mp4",
+          "sha256": "8bdded6f09133f9e2095656f71e19ee2d5d12095469ec33780138c2ff323eaf7",
+          "bytes": 1838216,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.4,
+          "at": "2026-09-29T08:44:51.290820+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "23_quiet_memorial",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/23_quiet_memorial_v01.jpg",
+          "start_frame_sha256": "6f27b06f69f6c3a2da996a0e2fdf52e037777be8192e37b6f49f419632705f43",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/23_quiet_memorial_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/23_quiet_memorial_v01.mp4",
+          "sha256": "8bdded6f09133f9e2095656f71e19ee2d5d12095469ec33780138c2ff323eaf7",
+          "bytes": 1838216,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.4,
+          "at": "2026-09-29T08:44:51.290820+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "status": "KEEP",
+      "keep": {
+        "file": "23_quiet_memorial_v01.mp4",
+        "sha256": "8bdded6f09133f9e2095656f71e19ee2d5d12095469ec33780138c2ff323eaf7",
+        "try": 1,
+        "model": "veo-3.1-fast-generate-001",
+        "quality_or_fast": "Fast",
+        "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+        "path": "vertex",
+        "credits_used": null,
+        "credits_remaining": null
+      },
+      "model_keep": "veo-3.1-fast-generate-001",
+      "quality_or_fast": "Fast",
+      "path": "vertex",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/23_quiet_memorial_v01.mp4",
+      "sha256": "8bdded6f09133f9e2095656f71e19ee2d5d12095469ec33780138c2ff323eaf7",
+      "duration_s": 8.0,
+      "bytes": 1838216
+    },
+    "24_nobel_belief": {
+      "id": "24_nobel_belief",
+      "tries": [
+        {
+          "id": "24_nobel_belief",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/24_nobel_belief_v01.jpg",
+          "start_frame_sha256": "d5d4e087c2f11603e29fc364448978848faa54f2387530398c25b7db7f345050",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/24_nobel_belief_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/24_nobel_belief_v01.mp4",
+          "sha256": "3aeb196fc65da283785997d1166ae68aff81a5789e9921431dcc7686e5fcb939",
+          "bytes": 2523016,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.1,
+          "at": "2026-09-29T08:45:57.349380+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "24_nobel_belief",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/24_nobel_belief_v01.jpg",
+          "start_frame_sha256": "d5d4e087c2f11603e29fc364448978848faa54f2387530398c25b7db7f345050",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/24_nobel_belief_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/24_nobel_belief_v01.mp4",
+          "sha256": "3aeb196fc65da283785997d1166ae68aff81a5789e9921431dcc7686e5fcb939",
+          "bytes": 2523016,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=4 dur=8.00s",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.1,
+          "at": "2026-09-29T08:45:57.349380+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "status": "KEEP",
+      "keep": {
+        "file": "24_nobel_belief_v01.mp4",
+        "sha256": "3aeb196fc65da283785997d1166ae68aff81a5789e9921431dcc7686e5fcb939",
+        "try": 1,
+        "model": "veo-3.1-fast-generate-001",
+        "quality_or_fast": "Fast",
+        "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+        "path": "vertex",
+        "credits_used": null,
+        "credits_remaining": null
+      },
+      "model_keep": "veo-3.1-fast-generate-001",
+      "quality_or_fast": "Fast",
+      "path": "vertex",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/24_nobel_belief_v01.mp4",
+      "sha256": "3aeb196fc65da283785997d1166ae68aff81a5789e9921431dcc7686e5fcb939",
+      "duration_s": 8.0,
+      "bytes": 2523016
+    },
+    "25_atom_recap": {
+      "id": "25_atom_recap",
+      "tries": [
+        {
+          "id": "25_atom_recap",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/25_atom_recap_v01.jpg",
+          "start_frame_sha256": "e795c5b3c796bd33b0bf4d371a91a4325e992f33e6ba0095aef930f8cccd616d",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/25_atom_recap_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/25_atom_recap_v01.mp4",
+          "sha256": "49f0c51cc69cc52ae91fff852964f80fc2565cd214e0024189146554bd91cc8f",
+          "bytes": 3225098,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK)",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.2,
+          "at": "2026-09-29T08:47:03.561120+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "25_atom_recap",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/25_atom_recap_v01.jpg",
+          "start_frame_sha256": "e795c5b3c796bd33b0bf4d371a91a4325e992f33e6ba0095aef930f8cccd616d",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/25_atom_recap_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/25_atom_recap_v01.mp4",
+          "sha256": "49f0c51cc69cc52ae91fff852964f80fc2565cd214e0024189146554bd91cc8f",
+          "bytes": 3225098,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK)",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.2,
+          "at": "2026-09-29T08:47:03.561120+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "status": "KEEP",
+      "keep": {
+        "file": "25_atom_recap_v01.mp4",
+        "sha256": "49f0c51cc69cc52ae91fff852964f80fc2565cd214e0024189146554bd91cc8f",
+        "try": 1,
+        "model": "veo-3.1-fast-generate-001",
+        "quality_or_fast": "Fast",
+        "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+        "path": "vertex",
+        "credits_used": null,
+        "credits_remaining": null
+      },
+      "model_keep": "veo-3.1-fast-generate-001",
+      "quality_or_fast": "Fast",
+      "path": "vertex",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/25_atom_recap_v01.mp4",
+      "sha256": "49f0c51cc69cc52ae91fff852964f80fc2565cd214e0024189146554bd91cc8f",
+      "duration_s": 8.0,
+      "bytes": 3225098
+    },
+    "26_explorer_count_table": {
+      "id": "26_explorer_count_table",
+      "tries": [
+        {
+          "id": "26_explorer_count_table",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": true,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/26_explorer_count_table_v01.jpg",
+          "start_frame_sha256": "d41d199a1f9aabb08ecd8e508f5d0611e1d85b4e686b37a8ed6021a891118731",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
+          "sha256": "0029ed897460340b764ee7e389141ff32a6ec96f6c7713780f909e9c49c5fedc",
+          "bytes": 2528812,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK)",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.0,
+          "at": "2026-09-29T08:48:09.525596+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "26_explorer_count_table",
+          "try": 1,
+          "model": "veo-3.1-fast-generate-001",
+          "quality_or_fast": "Fast",
+          "framing": "try1",
+          "explorer": true,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/26_explorer_count_table_v01.jpg",
+          "start_frame_sha256": "d41d199a1f9aabb08ecd8e508f5d0611e1d85b4e686b37a8ed6021a891118731",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
+          "sha256": "0029ed897460340b764ee7e389141ff32a6ec96f6c7713780f909e9c49c5fedc",
+          "bytes": 2528812,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "soft-motion scene_hits=1 dur=8.00s (cinematic OK)",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 66.0,
+          "at": "2026-09-29T08:48:09.525596+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "status": "KEEP",
+      "keep": {
+        "file": "26_explorer_count_table_v01.mp4",
+        "sha256": "0029ed897460340b764ee7e389141ff32a6ec96f6c7713780f909e9c49c5fedc",
+        "try": 1,
+        "model": "veo-3.1-fast-generate-001",
+        "quality_or_fast": "Fast",
+        "engine": "vertex Veo 3.1 (veo-3.1-fast-generate-001)",
+        "path": "vertex",
+        "credits_used": null,
+        "credits_remaining": null
+      },
+      "model_keep": "veo-3.1-fast-generate-001",
+      "quality_or_fast": "Fast",
+      "path": "vertex",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/26_explorer_count_table_v01.mp4",
+      "sha256": "0029ed897460340b764ee7e389141ff32a6ec96f6c7713780f909e9c49c5fedc",
+      "duration_s": 8.0,
+      "bytes": 2528812
+    },
+    "27_next_story_rays": {
+      "id": "27_next_story_rays",
+      "tries": [
+        {
+          "id": "27_next_story_rays",
+          "try": 1,
+          "model": "veo-3.1-generate-001",
+          "quality_or_fast": "Quality",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/27_next_story_rays_v01.jpg",
+          "start_frame_sha256": "90d02a3238184abc1eebc58adacb4f154f707f494ac8ae26946fea29de1570f6",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/27_next_story_rays_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/27_next_story_rays_v01.mp4",
+          "sha256": "f4bf4c77829e09a2de2795564290a165ffdc62d4ad1f1fd2d6c1ddeee03b2303",
+          "bytes": 2639315,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=13 dur=8.00s",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 65.7,
+          "at": "2026-09-29T08:49:15.255021+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "try_detail": [
+        {
+          "id": "27_next_story_rays",
+          "try": 1,
+          "model": "veo-3.1-generate-001",
+          "quality_or_fast": "Quality",
+          "framing": "try1",
+          "explorer": false,
+          "start_frame": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/refs/v01_stills/27_next_story_rays_v01.jpg",
+          "start_frame_sha256": "90d02a3238184abc1eebc58adacb4f154f707f494ac8ae26946fea29de1570f6",
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/27_next_story_rays_v01.mp4",
+          "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/27_next_story_rays_v01.mp4",
+          "sha256": "f4bf4c77829e09a2de2795564290a165ffdc62d4ad1f1fd2d6c1ddeee03b2303",
+          "bytes": 2639315,
+          "duration_s": 8.0,
+          "status": "KEEP",
+          "note": "motion_ok scene_hits=13 dur=8.00s",
+          "credits_before": null,
+          "credits_used": null,
+          "credits_remaining": null,
+          "flow_credits_spent": 0,
+          "api_seconds": 65.7,
+          "at": "2026-09-29T08:49:15.255021+00:00",
+          "engine": "vertex Veo 3.1 (veo-3.1-generate-001)",
+          "path": "vertex",
+          "vertex_project": "gen-lang-client-0538779324",
+          "vertex_location": "us-central1",
+          "reason": "ben_vertex_last5_authorized"
+        }
+      ],
+      "status": "KEEP",
+      "keep": {
+        "file": "27_next_story_rays_v01.mp4",
+        "sha256": "f4bf4c77829e09a2de2795564290a165ffdc62d4ad1f1fd2d6c1ddeee03b2303",
+        "try": 1,
+        "model": "veo-3.1-generate-001",
+        "quality_or_fast": "Quality",
+        "engine": "vertex Veo 3.1 (veo-3.1-generate-001)",
+        "path": "vertex",
+        "credits_used": null,
+        "credits_remaining": null
+      },
+      "model_keep": "veo-3.1-generate-001",
+      "quality_or_fast": "Quality",
+      "path": "vertex",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part05/raw/v01/27_next_story_rays_v01.mp4",
+      "sha256": "f4bf4c77829e09a2de2795564290a165ffdc62d4ad1f1fd2d6c1ddeee03b2303",
+      "duration_s": 8.0,
+      "bytes": 2639315
     }
   },
-  "status": "STOPPED_GEMINI_429",
+  "status": "ROUGH_V01_READY_FOR_BEN",
   "note": "fresh after buffer waive; prior blocked log in .blocked_pre_waive",
   "vo_status": "KEEP (v04)",
   "engine_used": "flow-ui Veo 3.1 scenery_only via Mini CDP :9222",
@@ -1749,148 +2153,22 @@
     "account_confirmed": "benoats@googlemail.com",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
-  "updated_at": "2026-09-29T08:00:10.015321+00:00",
+  "updated_at": "2026-09-29T08:56:25.208860+00:00",
   "credits_before_mint": 12,
   "buffer_waived": true,
   "buffer_waive_note": "Ben 28 Sep 2026 \u2014 Part 05 only",
   "credits_after_mint": 12,
   "credits_spent_total": 130,
   "summary": {
-    "keep": 22,
-    "remaining": 5,
-    "total_board_plates": 27,
-    "keeps": [
-      "01_manchester_1913",
-      "02_train_in_tube",
-      "03_targets_swap",
-      "04_electrons_fire",
-      "05_xrays_from_metal",
-      "06_rontgen_hand",
-      "07_crystal_split",
-      "08_ladder_pattern",
-      "09_one_rung_each",
-      "10_count_rungs",
-      "11_charge_nucleus",
-      "12_sort_table",
-      "13_te_i",
-      "14_co_ni",
-      "15_rule_fixes",
-      "16_wrong_ruler",
-      "17_missing_rungs",
-      "18_gaps_fill",
-      "19_columns_why",
-      "20_charge_electrons",
-      "21_same_column",
-      "22_soft_metals_halogens"
-    ],
-    "remaining_ids": [
+    "keep": 27,
+    "target": 27,
+    "vertex_batch_keep": [
       "23_quiet_memorial",
       "24_nobel_belief",
       "25_atom_recap",
       "26_explorer_count_table",
       "27_next_story_rays"
-    ],
-    "path_counts": {
-      "flow-cdp": 4,
-      "gemini-api": 17,
-      "vertex": 1
-    },
-    "paths_detail": {
-      "01_manchester_1913": {
-        "path": "flow-cdp",
-        "quality": "Fast"
-      },
-      "02_train_in_tube": {
-        "path": "flow-cdp",
-        "quality": "Fast"
-      },
-      "03_targets_swap": {
-        "path": "flow-cdp",
-        "quality": "Fast"
-      },
-      "04_electrons_fire": {
-        "path": "gemini-api",
-        "quality": "Quality"
-      },
-      "05_xrays_from_metal": {
-        "path": "gemini-api",
-        "quality": "Quality"
-      },
-      "06_rontgen_hand": {
-        "path": "gemini-api",
-        "quality": "Quality"
-      },
-      "07_crystal_split": {
-        "path": "flow-cdp",
-        "quality": "Quality"
-      },
-      "08_ladder_pattern": {
-        "path": "gemini-api",
-        "quality": "Quality"
-      },
-      "09_one_rung_each": {
-        "path": "vertex",
-        "quality": "Fast"
-      },
-      "10_count_rungs": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      },
-      "11_charge_nucleus": {
-        "path": "gemini-api",
-        "quality": "Quality"
-      },
-      "12_sort_table": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      },
-      "13_te_i": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      },
-      "14_co_ni": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      },
-      "15_rule_fixes": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      },
-      "16_wrong_ruler": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      },
-      "17_missing_rungs": {
-        "path": "gemini-api",
-        "quality": "Quality"
-      },
-      "18_gaps_fill": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      },
-      "19_columns_why": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      },
-      "20_charge_electrons": {
-        "path": "gemini-api",
-        "quality": "Quality"
-      },
-      "21_same_column": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      },
-      "22_soft_metals_halogens": {
-        "path": "gemini-api",
-        "quality": "Fast"
-      }
-    },
-    "credits_after_flow": 12,
-    "stop_reason": "Gemini 429 after 3 short retries at 23_quiet_memorial; Flow=12",
-    "gemini_429_exact_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
-    "billing_note": "Gemini worked for plates 08\u201322 then 429 on 23 \u2014 quota/billing may still be capped or rate-limited; Free Trial switch may be incomplete",
-    "assemble": "BLOCKED \u2014 need 27/27 KEEP",
-    "api_cost": "unknown (Gemini API does not return per-call spend in response)"
+    ]
   },
   "resume_note": "29 Sep: resume Gemini Veo from plate 08; Ben may have switched billing to Cloud Free Trial",
   "gemini_429_solid_started_at": null,
@@ -2009,7 +2287,17 @@
       "wait_min": 0.0
     }
   ],
-  "assemble": "BLOCKED \u2014 need 27/27 KEEP",
+  "assemble": {
+    "status": "ROUGH_V01_BUILT",
+    "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v01.mp4",
+    "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part05_rough_v01.mp4",
+    "sha256": "6f3cccc568779be20b1e208ffc367d0652597051b9dce709fce81b75d3cb68e4",
+    "duration_s": 144.515938,
+    "vo": "hos_004_part05_vo_v04.wav",
+    "bed": "TEMP hos004-part05-temp_score_bed_v01.mp3 -20dB",
+    "note": "Ben reviews rough \u2014 do not label KEEP/LOCKED beyond plate QA",
+    "at": "2026-09-29T08:56:25.208772+00:00"
+  },
   "vertex_setup": {
     "at": "2026-09-29T07:36:55.015046+00:00",
     "gcloud_installed": true,
@@ -2047,5 +2335,30 @@
   },
   "stopped_at_plate": "23_quiet_memorial",
   "stop_reason": "Gemini 429 after 3 short retries at 23_quiet_memorial; Flow=12",
-  "gemini_429_exact_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}"
+  "gemini_429_exact_error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+  "vertex_batch": {
+    "project": "gen-lang-client-0538779324",
+    "location": "us-central1",
+    "billing_account": null,
+    "fast_model": "veo-3.1-fast-generate-001",
+    "quality_model": "veo-3.1-generate-001",
+    "plate_ids": [
+      "23_quiet_memorial",
+      "24_nobel_belief",
+      "25_atom_recap",
+      "26_explorer_count_table",
+      "27_next_story_rays"
+    ],
+    "note": "Ben authorized Vertex for last 5 Part 05 plates; small real charge OK if Free Trial insufficient",
+    "started_at": "2026-09-29T08:43:44.876044+00:00",
+    "finished_at": "2026-09-29T08:49:15.257163+00:00",
+    "batch_keep": [
+      "23_quiet_memorial",
+      "24_nobel_belief",
+      "25_atom_recap",
+      "26_explorer_count_table",
+      "27_next_story_rays"
+    ],
+    "film_keep_count": 27
+  }
 }
