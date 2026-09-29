@@ -318,3 +318,9 @@ Evidence: `Schedule/PACKAGE_DRY_RUN_MUSIC_PASS_2026-09-29.json` · `Schedule/UPL
 ## STEP 6 Short scripts v02 — **STOP for Ben approve**
 
 `10_Shorts/SHORTS_PUNCH_SCRIPTS_v02.md` — Fri 004 gold (~60 w) · Sun 002 Newlands octaves · Tue 003 Bertha’s hand only. Shorts **not** uploaded.
+
+## Upload / Shorts status (29 Sep 2026)
+
+- **Long upload:** STOPPED. Ben said go + claimed HOS `07_Content-Ops/.env` in place, but the file is **absent** on the Mini. `npm run youtube:package --dry-run` fails (`DATABASE_URL` undefined). Orbit `.env` not used. See `11_Upload-Package/Schedule/DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json`.
+- **Thumbs:** A v04 · B v04 · **C v06** — Ben PASS (order 29 Sep).
+- **Shorts v04:** built 30 fps · gate PASS · iCloud HOS UAT `10_Shorts/` · **STOP phone watch**. Sun line ends “…Davy Medal for it.” No Shorts upload until Ben yes.

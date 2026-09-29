@@ -1,0 +1,24 @@
+{
+  "status": "DRY_RUN_NOT_CLEAN_STOP",
+  "at": "2026-09-29T16:37:32.302716+00:00",
+  "channelRequired": "@HistoryOfScienceYT",
+  "channelIdRequired": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "hosEnvPath": "/Users/benjaminoats/YouTube/History Of Science/07_Content-Ops/.env",
+  "hosEnvPresent": false,
+  "orbitEnvUsed": false,
+  "vercelHosContentOpsEnvs": "empty (filter_project_envs returned [])",
+  "npmDryRun": "FAIL \u2014 Invalid environment configuration: DATABASE_URL undefined",
+  "upload": false,
+  "premiere": false,
+  "benSaidEnvInPlace": true,
+  "action": "STOP Part 1 long upload per Ben order (dry-run must be clean). Never substitute Orbit .env.",
+  "priorHOSLongMethod": "youtube_studio_hos_session (001/002/003) \u2014 not used this turn without Ben override of the npm dry-run gate",
+  "intended": {
+    "video": "hos_004_full_v02.mp4",
+    "sha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
+    "privacy": "private",
+    "publishAt": "2026-10-15T17:00:00.000Z",
+    "scheduleUK": "Thu 15 Oct 2026 18:00 Europe/London",
+    "title": "What's Really Inside an Atom?"
+  }
+}

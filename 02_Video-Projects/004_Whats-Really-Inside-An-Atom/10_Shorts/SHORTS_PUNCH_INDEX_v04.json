@@ -1,0 +1,43 @@
+{
+  "scripts": "SHORTS_PUNCH_SCRIPTS_v04.md",
+  "version": "v04",
+  "note": "Ben PASS. S02 ends Davy Medal for it. 30fps CFR. Quiet bed. No stadium on S01. Do not upload until phone UAT.",
+  "shorts": [
+    {
+      "id": "s01_how_small",
+      "air_date": "2026-10-16",
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s01_how_small_punch_v04.mp4",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s01_how_small_punch_v04.mp4",
+      "sha256": "9f93700f362e307a15954f295f23ea1ab6de1c3bd12aca65d0f98f2479ec6580",
+      "duration_s": 24.867,
+      "vo_duration_s": 20.862,
+      "fps": 30,
+      "parent": "What's Really Inside an Atom?",
+      "hook": "HOW SMALL?"
+    },
+    {
+      "id": "s02_every_eighth",
+      "air_date": "2026-10-18",
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s02_every_eighth_punch_v04.mp4",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s02_every_eighth_punch_v04.mp4",
+      "sha256": "bea429c5f42f2daed23a6caedeab46105726b0a9b162a16a8fc28b7b8e8e8895",
+      "duration_s": 26.4,
+      "vo_duration_s": 22.397,
+      "fps": 30,
+      "parent": "How Did We Discover the Periodic Table?",
+      "hook": "EVERY EIGHTH?"
+    },
+    {
+      "id": "s03_her_ring",
+      "air_date": "2026-10-20",
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s03_her_ring_punch_v04.mp4",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s03_her_ring_punch_v04.mp4",
+      "sha256": "d9fdb9a8b583f0549a418fc03f4079f6631980a043fefb1a1209adf3ddc8411f",
+      "duration_s": 27.0,
+      "vo_duration_s": 23.132,
+      "fps": 30,
+      "parent": "How Did We Discover X-rays?",
+      "hook": "HER RING"
+    }
+  ]
+}

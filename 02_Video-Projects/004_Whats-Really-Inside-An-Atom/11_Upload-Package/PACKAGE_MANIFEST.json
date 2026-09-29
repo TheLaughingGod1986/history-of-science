@@ -53,7 +53,7 @@
     }
   ],
   "captionsFile": "Captions/hos_004_full_v02.en.srt",
-  "note": "MUSIC PASS on hos_004_full_v02.mp4 sha ed870939\u2026. Dry-run only \u2014 no upload until Ben says yes. Private + publishAt 2026-10-15T17:00:00Z (Thu 15 Oct 18:00 UK). No Premiere. Zero /go/. T&C C = v06. full_v03 parked unused.",
+  "note": "MUSIC PASS on hos_004_full_v02.mp4 sha ed870939\u2026. Thumbs A/B v04 + C v06 Ben PASS. Ben ordered upload 2026-09-29 but npm dry-run NOT CLEAN: HOS 07_Content-Ops/.env absent (DATABASE_URL). Never Orbit .env. STOP long upload until local HOS .env exists. Intended: private + publishAt 2026-10-15T17:00:00Z \u00b7 no Premiere \u00b7 zero /go/.",
   "musicPass": {
     "cut": "hos_004_full_v02.mp4",
     "sha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
@@ -64,5 +64,17 @@
     "cut": "hos_004_full_v03.mp4",
     "sha256": "503e228745d4cf87fe6f504522cbad99f6af0f9c8b038c1ed8c52da493428157",
     "status": "built earlier; unused \u2014 do not upload"
+  },
+  "thumbsPass": {
+    "A": "v04",
+    "B": "v04",
+    "C": "v06",
+    "passedAt": "2026-09-29"
+  },
+  "uploadBlocked": {
+    "reason": "HOS 07_Content-Ops/.env absent \u2014 npm youtube:package dry-run fails DATABASE_URL",
+    "hosEnvPresent": false,
+    "orbitEnvUsed": false,
+    "recordedAt": "2026-09-29"
   }
 }
