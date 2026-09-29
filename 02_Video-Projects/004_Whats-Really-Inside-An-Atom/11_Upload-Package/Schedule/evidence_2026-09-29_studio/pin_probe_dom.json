@@ -1,0 +1,32 @@
+{
+  "hits": [
+    {
+      "tag": "TP-YT-IRON-AUTOGROW-TEXTAREA",
+      "cls": "paper-input-input style-scope ytcp-commentbox",
+      "aria": "Add a comment\u2026",
+      "role": "",
+      "ce": null,
+      "t": "",
+      "id": "textarea",
+      "via": "aria"
+    }
+  ],
+  "ph": [
+    {
+      "tag": "INPUT",
+      "cls": "style-scope ytcp-omnisearch",
+      "ph": "Search across your channel",
+      "id": "query-input",
+      "aria": null
+    },
+    {
+      "tag": "TEXTAREA",
+      "cls": "style-scope tp-yt-iron-autogrow-textarea",
+      "ph": "Add a comment\u2026",
+      "id": "textarea",
+      "aria": null
+    }
+  ],
+  "bodyHas": false,
+  "url": "https://studio.youtube.com/video/GHZDsiH7L7A/comments"
+}

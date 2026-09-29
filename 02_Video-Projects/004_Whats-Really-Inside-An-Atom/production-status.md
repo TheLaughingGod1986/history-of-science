@@ -319,7 +319,7 @@ Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish o
 | Description + chapters | **OK** — package description + chapters, no `/go/` links. |
 | Captions | **OK** — `hos_004_full_v02.en.srt` uploaded (toast “English subtitles uploaded”). Proof: `FINISH_captions.png` (`finish_v01e_13_captions_after.png`) |
 | End screen | **Blocked by Studio** — template places Subscribe + Video (last 20 s), Specific `AL_-qlWko_g` attempted; Save → **“problem in processing… edits were not saved”** + NaN; reopen empty. Re-set after processing settles. Proof: `finish_v01d_25_end_after_save.png` · `FINISH_endscreen.png` |
-| Pinned comment | **Deferred to launch day** — comments unavailable while private/scheduled. Package text ready, no links. |
+| Pinned comment | **Blocked while Private/Scheduled** — Studio: “This account doesn't have permission to create comments.” Textarea disabled. Package text ready, no links. **Pin on launch day 15 Oct** after Public. Proof: `BEN_004_pin_blocked_permission.png` · `COMMENTS_V09_PIN.json` |
 | Shorts | **v05 done** — `gate_shorts_open.py check` **PASS** ×3 · iCloud `HOS UAT/004_…/10_Shorts/`. **STOP — Ben phone watch. Schedule nothing until he says yes.** |
 | `.env` / API | **Not used.** Orbit never touched. |
 
@@ -340,6 +340,24 @@ Package says `madeForKids: false`. Studio had shown “Made for Kids” on `GHZD
 **Policy (every upload from now on):** after each Studio save, open Details → Audience and confirm **“No, it's not made for kids”** before end screen / pin / other finish steps. End screens and pinned comments do not work on kids’ videos — Audience first.
 
 JSON: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_KIDS_AUDIT_V01.json` · `URGENT_KIDS_FIX_V02.json` · `URGENT_CHANNEL_ADVANCED_V03.json`
+
+## Comments — Ben 20:03 (29 Sep)
+
+Kids-locked comments theory confirmed for 004 earlier blank UI; after Audience **No**, Comments section is editable.
+
+| Check | Result | Proof |
+|---|---|---|
+| **004 `GHZDsiH7L7A` Comments** | **On** · Moderation **Basic** · Who can comment **Anyone** · Sort **Top** · likes checkbox on | `BEN_004_comments_on.png` · `comments_v06_004_comments_on.png` · `COMMENTS_V06_RESULT.json` |
+| **001 long `_C92tIJCk8A`** | Comments **On** | `comments_v06_audit_001_long.png` |
+| **002 long `AL_-qlWko_g`** | Comments **On** | `comments_v06_audit_002_long.png` |
+| **003 long `frP_YrNShsU`** | Comments **On** | `comments_v06_audit_003_long.png` |
+| **002 Shorts** (5) | All Comments **On** | `comments_v06_audit_002_short_*.png` |
+| **003 Shorts** (3) | All Comments **On** | `comments_v06_audit_003_short_*.png` |
+| **001 Shorts** (5) | Edit “Oops” — **not audited** via Details (same as kids audit) | `comments_v06_audit_001_short_*_oops.png` |
+| **Comments OFF list** | **None** among auditable longs + 002/003 Shorts | `COMMENTS_BEN_2003_SUMMARY.json` |
+| **Pinned comment** | **Not posted** — Studio permission banner while Private/Scheduled. Do on launch day. | `BEN_004_pin_blocked_permission.png` · `COMMENTS_V09_PIN.json` |
+
+Summary: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/COMMENTS_BEN_2003_SUMMARY.json`
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
@@ -367,3 +385,5 @@ JSON: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_KIDS_AUDIT_V
 | Channel Advanced audience default No | `…/URGENT_channel_advanced_audience.png` | `…/artifacts/hos004_studio_phone_uat/URGENT_channel_advanced_audience.png` |
 | Visibility 15 Oct 18:00 Premiere OFF | `…/FINISH_visibility_15oct_1800_premiere_off.png` | `…/artifacts/hos004_studio_phone_uat/FINISH_visibility_15oct_1800_premiere_off.png` |
 | Test & Compare Ineligible | `…/FINISH_test_and_compare.png` | `…/artifacts/hos004_studio_phone_uat/FINISH_test_and_compare.png` |
+| Comments On (004) | `…/BEN_004_comments_on.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_004_comments_on.png` |
+| Pin blocked (permission) | `…/BEN_004_pin_blocked_permission.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_004_pin_blocked_permission.png` |

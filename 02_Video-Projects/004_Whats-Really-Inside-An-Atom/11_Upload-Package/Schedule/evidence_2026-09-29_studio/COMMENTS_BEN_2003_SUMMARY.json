@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-29T23:14:21",
+  "order": "Ben 20:03 comments + pin",
+  "004": {
+    "videoId": "GHZDsiH7L7A",
+    "audience_not_kids": true,
+    "comments": "On",
+    "moderation": "Basic",
+    "who": "Anyone",
+    "sort": "Top",
+    "proof": "BEN_004_comments_on.png"
+  },
+  "comments_off": [],
+  "all_on": [
+    "001_long:_C92tIJCk8A",
+    "002_long:AL_-qlWko_g",
+    "003_long:frP_YrNShsU",
+    "002_shorts:uU12JA5rMWg,nFQRWmpulTQ,CnHwX1L9XHg,nba0-f7PPeU,LanTHJckYx8",
+    "003_shorts:oowAOWTBoq0,xvanpsLeADE,zI_eD3vFWmE"
+  ],
+  "oops_edit_pages_001_shorts": [
+    "8uBR-9oxeWs",
+    "YX2UR1u-JCQ",
+    "Fnb3p81u-wY",
+    "vpuRgKXtFlY",
+    "Lcmh5y2KMQM"
+  ],
+  "pin": {
+    "at": "2026-09-29T23:14:21",
+    "ok": false,
+    "reason": "studio_no_permission_to_create_comments_while_private_scheduled",
+    "banner_text_present": true,
+    "textarea_disabled": true,
+    "visibility": "Private/Scheduled until 15 Oct 2026 18:00 UK",
+    "note": "Pin on launch day after Public. Text ready in Pinned-Comments/atom_long_pinned-comment_v01.txt \u2014 no links.",
+    "text": "What's really inside an atom \u2014 and why is the periodic table in this order?",
+    "snip": "ry searching for something else or removing filters.\n\nThis account doesn't have permission to create comments.\n\nLearn more"
+  },
+  "full": "COMMENTS_V06_RESULT.json"
+}
