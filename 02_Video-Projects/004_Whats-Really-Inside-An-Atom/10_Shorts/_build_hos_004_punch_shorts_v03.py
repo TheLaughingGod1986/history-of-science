@@ -290,27 +290,24 @@ def caption_pngs(work: Path, item: dict, total: float) -> list[tuple[Path, float
 
 
 def fit_story_and_loop(vo_dur: float) -> tuple[float, float, float]:
-    """Return (story_pic, loop, total) in 22–27 band."""
+    """Return (story_pic, loop, total) in 22–27 band.
+
+    Story carries VO; last ~4s is a silent open-picture loop.
+    """
     loop = 4.0
-    # Story picture covers VO; total = VO (with audio through story) + silent open loop
-    # If VO already ≥22, loop still appended → may exceed 27. Prefer:
-    #   total = max(22, min(27, vo_dur + loop)) with story = total - loop
-    #   and VO trimmed/padded to story length.
-    if vo_dur + loop <= 27.0:
-        story = max(vo_dur, 18.0)
+    story = vo_dur
+    total = story + loop
+    if total > 27.0:
+        over = total - 27.0
+        cut_loop = min(over, max(0.0, loop - 3.5))
+        loop -= cut_loop
+        over -= cut_loop
+        if over > 0:
+            story = max(18.0, story - over)
         total = story + loop
-        if total < 22.0:
-            story = 22.0 - loop
-            total = 22.0
-        if total > 27.0:
-            over = total - 27.0
-            loop = max(3.5, loop - over)
-            total = story + loop
-    else:
-        # Long VO: keep VO as story, shrink loop
-        story = min(vo_dur, 23.5)
-        loop = max(3.5, 27.0 - story)
-        total = story + loop
+    if total < 22.0:
+        story = 22.0 - loop
+        total = 22.0
     if not (22.0 <= total <= 27.05):
         raise SystemExit(f"cannot fit vo={vo_dur:.2f} into 22–27 (got {total:.2f})")
     return story, loop, total
