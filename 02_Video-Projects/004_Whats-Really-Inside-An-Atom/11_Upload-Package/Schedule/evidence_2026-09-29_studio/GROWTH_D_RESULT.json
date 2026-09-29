@@ -1,0 +1,33 @@
+{
+  "phase": "D",
+  "at": "2026-09-30T00:10:22",
+  "scheduled": false,
+  "stop": true,
+  "note": "Nothing scheduled before Ben yes. Fri 16 / Sun 18 / Tue 20 Oct 11:30 UK after 004 public.",
+  "gate_log_tail": "[\n  {\n    \"file\": \"/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s01_how_small_punch_v05.mp4\",\n    \"air_date\": \"2026-10-16\",\n    \"fails\": [],\n    \"warns\": [],\n    \"duration_s\": 24.87,\n    \"audio\": {\n      \"stream\": true,\n      \"mean_db\": -22.5,\n      \"open_mean_db\": -20.0\n    },\n    \"motion_0_1s\": 19.89,\n    \"dhash\": \"2ba8e04011800400\",\n    \"near_opens\": [],\n    \"contact_sheet\": \"/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s01_how_small_punch_v05_open_sheet.jpg\",\n    \"verdict\": \"PASS\"\n  }\n]\n[\n  {\n    \"file\": \"/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s02_every_eighth_punch_v05.mp4\",\n    \"air_date\": \"2026-10-16\",\n    \"fails\": [],\n    \"warns\": [],\n    \"duration_s\": 26.4,\n    \"audio\": {\n      \"stream\": true,\n      \"mean_db\": -23.1,\n      \"open_mean_db\": -19.8\n    },\n    \"motion_0_1s\": 32.43,\n    \"dhash\": \"d37fffdfff1f5e7e\",\n    \"near_opens\": [],\n    \"contact_sheet\": \"/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s02_every_eighth_punch_v05_open_sheet.jpg\",\n    \"verdict\": \"PASS\"\n  }\n]\n[\n  {\n    \"file\": \"/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s03_her_ring_punch_v05.mp4\",\n    \"air_date\": \"2026-10-16\",\n    \"fails\": [],\n    \"warns\": [],\n    \"duration_s\": 27.0,\n    \"audio\": {\n      \"stream\": true,\n      \"mean_db\": -22.4,\n      \"open_mean_db\": -17.7\n    },\n    \"motion_0_1s\": 23.67,\n    \"dhash\": \"d5f51f990fbf3bc7\",\n    \"near_opens\": [],\n    \"contact_sheet\": \"/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s03_her_ring_punch_v05_open_sheet.jpg\",\n    \"verdict\": \"PASS\"\n  }\n]\n",
+  "icloud_exists": true,
+  "icloud_path": "~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts",
+  "icloud_files": [
+    "hos_004_s01_how_small_punch_v03.mp4",
+    "hos_004_s01_how_small_punch_v04.mp4",
+    "hos_004_s01_how_small_punch_v05.mp4",
+    "hos_004_s02_every_eighth_punch_v03.mp4",
+    "hos_004_s02_every_eighth_punch_v04.mp4",
+    "hos_004_s02_every_eighth_punch_v05.mp4",
+    "hos_004_s03_her_ring_punch_v03.mp4",
+    "hos_004_s03_her_ring_punch_v04.mp4",
+    "hos_004_s03_her_ring_punch_v05.mp4"
+  ],
+  "checked_files": [
+    "hos_004_s01_how_small_punch_v05.mp4",
+    "hos_004_s02_every_eighth_punch_v05.mp4",
+    "hos_004_s03_her_ring_punch_v05.mp4"
+  ],
+  "air_date_assumed": "2026-10-16",
+  "gate_pass": true,
+  "gate_verdicts": {
+    "s01_v05": "PASS",
+    "s02_v05": "PASS",
+    "s03_v05": "PASS"
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "at": "2026-09-30T00:10:22",
+  "A": {
+    "at": "2026-09-29T23:49:33",
+    "phase": "A_v03",
+    "A1": {
+      "status": "ok",
+      "state": "not_kids"
+    },
+    "A2": {
+      "ok": true,
+      "proof": {
+        "private": true,
+        "private_raw": true,
+        "education": true,
+        "en_uk": true,
+        "caption": true,
+        "licence": true,
+        "basic": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nTitle \nDescription \nVisibility\nPrivate\nTags\nEnter comma-separated values\nClose\nSave",
+        "adv": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nAutomatic chapters\nChapters and key moments make your video easier to watch. You can overwrite automatic suggestions by creating your own chapters in the video description. Learn more\nAllow automatic chapters and key moments\nLicence\nStandard YouTube licence\nCategory\nEducation\nLanguage and captions certification\nVideo language\nEnglish (United Kingdom)\nCaption certification\nNone\nTitle and description language\nSelect\nComments \nComments\nOn\nModeration\nBasic\nShow how many viewers like this video\nClose\nSave",
+        "a3": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nAutomatic chapters\nChapters and key moments make your video easier to watch. You can overwrite automatic suggestions by creating your own chapters in the video description. Learn more\nAllow automatic chapters and key moments\nLicence\nStandard YouTube licence\nCategory\nEducation\nLanguage and captions certification\nVideo language\nEnglish (United Kingdom)\nCaption certification\nNone\nTitle and description language\nSelect\nComments \nComments\nOn\nModeration\nBasic\nShow how many viewers like this video\nClose\nSave"
+      },
+      "private_picked": true,
+      "caption_picked": true,
+      "vis_saved": true
+    },
+    "A3": {
+      "ok": false,
+      "hold_picked": false,
+      "chapters": {
+        "label": "Allow automatic chapters and key moments",
+        "wasOn": true
+      },
+      "saved": true,
+      "snip": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nAutomatic chapters\nChapters and key moments make your video easier to watch. You can overwrite automatic suggestions by creating your own chapters in the video description. Learn more\nAllow automatic chapters and key moments\nLicence\nStandard YouTube licence\nCategory\nEducation\nLanguage and captions certification\nVideo language\nEnglish (United Kingdom)\nCaption certification\nThis content has never aired on television in the US\nTitle and description language\nSelect\nComments \nComments\nOn\nModeration\nBasic\nShow how many viewers like this video\nClose\nSave",
+      "snip_note": "Comments On + Moderation Basic (Hold option not in this Studio UI dropdown); chapters ON; caption cert set"
+    },
+    "A4": {
+      "ok": true,
+      "country": "United Kingdom",
+      "note": "from prior A_v04"
+    },
+    "A5": {
+      "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/editing/profile",
+      "has_watermark_section": true,
+      "note": "Did not add watermark",
+      "ok": true,
+      "snip": "Channel customisation\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel customisation\nProfile\nHome tab\nView channel\nCancel\nPublish\nBanner image\nThis image will appear across the top of your channel.\nFor the best results on all devices, use an image that's at least 2048 x 1152 pixels and 6\u00a0MB or less.\nChange\nRemove\nPicture\nYour profile picture will appear where your channel is presented on YouTube, such as next to your videos and comments\nIt's recommended that you use a picture that's at least 98 x 98 pixels and 4\u00a0MB or less. Use a PNG or GIF (no animations) file. Make sure that your picture follows the YouTube Community Guidelines.\nChange\nRemove\n"
+    },
+    "summary": {
+      "A1": "ok",
+      "A2": "ok",
+      "A3": "partial",
+      "A4": "ok",
+      "A5": "ok"
+    },
+    "blockers": [
+      "upload_defaults_moderation_hold_unconfirmed"
+    ]
+  },
+  "B": {
+    "phase": "B",
+    "at": "2026-09-30T00:02:25",
+    "videoId": "GHZDsiH7L7A",
+    "B1": {
+      "audience_clicked": true,
+      "saved": false,
+      "not_kids": true,
+      "notices_comments_disabled": false,
+      "notices_notifications_disabled": false,
+      "ok": true
+    },
+    "B2": {
+      "premiere": "off_attempted",
+      "notify": "on_attempted",
+      "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nIneligible\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kid",
+      "has_15_oct": false,
+      "has_1800": false,
+      "premiere_checked": false,
+      "scheduled_word": true,
+      "premiere_on": false,
+      "ok": true
+    },
+    "B3": {
+      "title": "What's Really Inside an Atom?",
+      "description_len": 867,
+      "has_go": false,
+      "file_inputs": 1,
+      "thumb_a_uploaded": true,
+      "tags": true,
+      "saved": true
+    },
+    "B4": {
+      "steps": [
+        "paid_no",
+        "altered_no",
+        "chapters_places_concepts",
+        "comments_hold_top"
+      ],
+      "altered_no": true,
+      "saved": true,
+      "altered_is_no": true,
+      "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nIneligible\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, you're legally required to comply with the Children's Online Privacy Protection Act (COPPA) and/or other laws. You're required to tell us whether your videos are 'Made for Kids'. What is 'Made for Kids' content?\nFeatures like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nYes, it's Made for Kids\n.\nFeatures like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nNo, it's not 'Made for Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:45\nVideo link\nhttps://youtu.be/GHZDsiH7L7A\nFilename\nhos_004_full_v02.mp4\nVideo quality\nGet video feedback\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCar",
+      "clicked_no": false,
+      "altered_is_yes": false,
+      "altered_line": "",
+      "ok": true,
+      "blocker": "altered_section_not_visible_after_show_more",
+      "note": "CRITICAL override: set AI use = No (was Yes in earlier phone UAT)",
+      "field": "AI use (Studio label for altered/synthetic)",
+      "radios": [
+        {
+          "t": "Yes, AI was used Yes",
+          "checked": false
+        },
+        {
+          "t": "No, AI wasn't used No",
+          "checked": true
+        }
+      ]
+    },
+    "B5": {
+      "snip": "Video subtitles\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nLanguages\nVideo language: English\nEnglish subtitles are the default source for auto-translation of subtitles and audio.\nEdit subtitles\nUpload manual\nTranslations\nAdd language\nTable that allows managing translations for audio, subtitles, title and description, and thumbnail for each language\nLanguage\nAudio\nSubtitles\nTitle and description\nThumbnail",
+      "has_english": true
+    },
+    "B6": {
+      "saved": false,
+      "processing_error": false,
+      "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bo",
+      "has_subscribe": false,
+      "note": "Prior UAT end screens often fail while processing; record state only"
+    },
+    "B7": {
+      "cards": [
+        {
+          "teaser": "How the table was found",
+          "videoId": "AL_-qlWko_g",
+          "time": "1:30"
+        },
+        {
+          "teaser": "How X-rays were discovered",
+          "videoId": "frP_YrNShsU",
+          "time": "6:00"
+        }
+      ],
+      "saved": false
+    },
+    "B8": {
+      "exists": false,
+      "created": true,
+      "004_added": false,
+      "001_added": true,
+      "002_added": true,
+      "003_added": true,
+      "playlist_visible": false,
+      "004_saved": false,
+      "snip": "Oops, something went wrong."
+    },
+    "B9": {
+      "ineligible": true,
+      "mode": "Thumbnail",
+      "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bo"
+    },
+    "B10": {
+      "text": "What's really inside an atom \u2014 and why is the periodic table in this order?",
+      "ok": false,
+      "reason": "studio_no_permission_while_private_scheduled",
+      "note": "If blocked, pin at 18:05 on 15 Oct",
+      "blocked": true,
+      "textarea_disabled": true
+    },
+    "B_remain": {
+      "at": "2026-09-29T23:56:29",
+      "phase": "B_remain",
+      "videoId": "GHZDsiH7L7A",
+      "prior": {
+        "B1": {
+          "audience_clicked": true,
+          "saved": false,
+          "not_kids": true,
+          "notices_comments_disabled": false,
+          "notices_notifications_disabled": false,
+          "ok": true
+        },
+        "B9": {
+          "ineligible": true,
+          "mode": "Thumbnail",
+          "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bo"
+        },
+        "B10": {
+          "text": "What's really inside an atom \u2014 and why is the periodic table in this order?",
+          "ok": false,
+          "reason": "studio_no_permission_while_private_scheduled",
+          "note": "If blocked, pin at 18:05 on 15 Oct",
+          "blocked": true,
+          "textarea_disabled": true
+        }
+      },
+      "B4": {
+        "clicked_no": false,
+        "saved": false,
+        "altered_is_no": false,
+        "altered_is_yes": false,
+        "altered_line": "",
+        "ok": false
+      },
+      "B2": {
+        "has_15_oct": false,
+        "has_1800": false,
+        "scheduled_word": true,
+        "premiere_on": false,
+        "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nIneligible\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kid",
+        "ok": true
+      },
+      "B5": {
+        "snip": "Video subtitles\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nLanguages\nVideo language: English\nEnglish subtitles are the default source for auto-translation of subtitles and audio.\nEdit subtitles\nUpload manual\nTranslations\nAdd language\nTable that allows managing translations for audio, subtitles, title and description, and thumbnail for each language\nLanguage\nAudio\nSubtitles\nTitle and description\nThumbnail",
+        "has_english": true
+      },
+      "B8": {
+        "playlist_visible": false,
+        "004_saved": false,
+        "snip": "Oops, something went wrong."
+      },
+      "B6": {
+        "processing_error": false,
+        "has_subscribe": false,
+        "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bo",
+        "note": "Prior UAT end screens often fail while processing; record state only"
+      },
+      "B1": {
+        "not_kids": true,
+        "notices_comments_disabled": false,
+        "ok": true
+      }
+    },
+    "summary": {
+      "B1": "ok",
+      "B2": "ok",
+      "B3": "ok",
+      "B4_altered_no": "ok",
+      "B5": "partial",
+      "B6": "partial",
+      "B7": "partial",
+      "B8": "partial",
+      "B9": "ineligible",
+      "B10": "blocked_known"
+    }
+  },
+  "C": {
+    "phase": "C",
+    "at": "2026-09-30T00:02:26",
+    "changed_to_not_kids": [],
+    "already_not_kids": [
+      "001_long",
+      "002_long",
+      "003_long",
+      "002_short_uU12JA5rMWg",
+      "002_short_nFQRWmpulTQ",
+      "002_short_CnHwX1L9XHg",
+      "002_short_nba0-f7PPeU",
+      "002_short_LanTHJckYx8",
+      "003_short_oowAOWTBoq0",
+      "003_short_xvanpsLeADE",
+      "003_short_zI_eD3vFWmE"
+    ],
+    "oops": [
+      "001_short_8uBR-9oxeWs",
+      "001_short_YX2UR1u-JCQ",
+      "001_short_Fnb3p81u-wY",
+      "001_short_vpuRgKXtFlY",
+      "001_short_Lcmh5y2KMQM"
+    ],
+    "longs": {
+      "001_long": {
+        "videoId": "_C92tIJCk8A",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false,
+        "long_settings_saved": false
+      },
+      "002_long": {
+        "videoId": "AL_-qlWko_g",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false,
+        "long_settings_saved": false
+      },
+      "003_long": {
+        "videoId": "frP_YrNShsU",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false,
+        "long_settings_saved": false
+      }
+    },
+    "audits": {
+      "001_long": {
+        "videoId": "_C92tIJCk8A",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false,
+        "long_settings_saved": false
+      },
+      "002_long": {
+        "videoId": "AL_-qlWko_g",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false,
+        "long_settings_saved": false
+      },
+      "003_long": {
+        "videoId": "frP_YrNShsU",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false,
+        "long_settings_saved": false
+      },
+      "002_short_uU12JA5rMWg": {
+        "videoId": "uU12JA5rMWg",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false
+      },
+      "002_short_nFQRWmpulTQ": {
+        "videoId": "nFQRWmpulTQ",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false
+      },
+      "002_short_CnHwX1L9XHg": {
+        "videoId": "CnHwX1L9XHg",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false
+      },
+      "002_short_nba0-f7PPeU": {
+        "videoId": "nba0-f7PPeU",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false
+      },
+      "002_short_LanTHJckYx8": {
+        "videoId": "LanTHJckYx8",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false
+      },
+      "003_short_oowAOWTBoq0": {
+        "videoId": "oowAOWTBoq0",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false
+      },
+      "003_short_xvanpsLeADE": {
+        "videoId": "xvanpsLeADE",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false
+      },
+      "003_short_zI_eD3vFWmE": {
+        "videoId": "zI_eD3vFWmE",
+        "before": {
+          "not_kids": true,
+          "kids": false
+        },
+        "changed": false
+      }
+    },
+    "note_C4": "AFTER 004 public (15 Oct 18:05): set end screen video on 001/002/003 \u2192 004 + Subscribe",
+    "made_for_kids_changed": [],
+    "summary": {
+      "changed_to_not_kids": [],
+      "already_not_kids_count": 11,
+      "oops_001_shorts": [
+        "001_short_8uBR-9oxeWs",
+        "001_short_YX2UR1u-JCQ",
+        "001_short_Fnb3p81u-wY",
+        "001_short_vpuRgKXtFlY",
+        "001_short_Lcmh5y2KMQM"
+      ],
+      "note": "001 Shorts Studio Oops \u2014 could not open edit; longs 001-003 + 002/003 Shorts already not Made for Kids",
+      "C4_after_15_oct": "AFTER 004 public (15 Oct 18:05): set end screen video on 001/002/003 \u2192 004 + Subscribe"
+    }
+  },
+  "D": {
+    "phase": "D",
+    "at": "2026-09-30T00:10:22",
+    "scheduled": false,
+    "stop": true,
+    "note": "Nothing scheduled before Ben yes. Fri 16 / Sun 18 / Tue 20 Oct 11:30 UK after 004 public.",
+    "gate_log_tail": "[\n  {\n    \"file\": \"/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s01_how_small_punch_v05.mp4\",\n    \"air_date\": \"2026-10-16\",\n    \"fails\": [],\n    \"warns\": [],\n    \"duration_s\": 24.87,\n    \"audio\": {\n      \"stream\": true,\n      \"mean_db\": -22.5,\n      \"open_mean_db\": -20.0\n    },\n    \"motion_0_1s\": 19.89,\n    \"dhash\": \"2ba8e04011800400\",\n    \"near_opens\": [],\n    \"contact_sheet\": \"/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s01_how_small_punch_v05_open_sheet.jpg\",\n    \"verdict\": \"PASS\"\n  }\n]\n[\n  {\n    \"file\": \"/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s02_every_eighth_punch_v05.mp4\",\n    \"air_date\": \"2026-10-16\",\n    \"fails\": [],\n    \"warns\": [],\n    \"duration_s\": 26.4,\n    \"audio\": {\n      \"stream\": true,\n      \"mean_db\": -23.1,\n      \"open_mean_db\": -19.8\n    },\n    \"motion_0_1s\": 32.43,\n    \"dhash\": \"d37fffdfff1f5e7e\",\n    \"near_opens\": [],\n    \"contact_sheet\": \"/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s02_every_eighth_punch_v05_open_sheet.jpg\",\n    \"verdict\": \"PASS\"\n  }\n]\n[\n  {\n    \"file\": \"/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s03_her_ring_punch_v05.mp4\",\n    \"air_date\": \"2026-10-16\",\n    \"fails\": [],\n    \"warns\": [],\n    \"duration_s\": 27.0,\n    \"audio\": {\n      \"stream\": true,\n      \"mean_db\": -22.4,\n      \"open_mean_db\": -17.7\n    },\n    \"motion_0_1s\": 23.67,\n    \"dhash\": \"d5f51f990fbf3bc7\",\n    \"near_opens\": [],\n    \"contact_sheet\": \"/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s03_her_ring_punch_v05_open_sheet.jpg\",\n    \"verdict\": \"PASS\"\n  }\n]\n",
+    "icloud_exists": true,
+    "icloud_path": "~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts",
+    "icloud_files": [
+      "hos_004_s01_how_small_punch_v03.mp4",
+      "hos_004_s01_how_small_punch_v04.mp4",
+      "hos_004_s01_how_small_punch_v05.mp4",
+      "hos_004_s02_every_eighth_punch_v03.mp4",
+      "hos_004_s02_every_eighth_punch_v04.mp4",
+      "hos_004_s02_every_eighth_punch_v05.mp4",
+      "hos_004_s03_her_ring_punch_v03.mp4",
+      "hos_004_s03_her_ring_punch_v04.mp4",
+      "hos_004_s03_her_ring_punch_v05.mp4"
+    ],
+    "checked_files": [
+      "hos_004_s01_how_small_punch_v05.mp4",
+      "hos_004_s02_every_eighth_punch_v05.mp4",
+      "hos_004_s03_her_ring_punch_v05.mp4"
+    ],
+    "air_date_assumed": "2026-10-16",
+    "gate_pass": true,
+    "gate_verdicts": {
+      "s01_v05": "PASS",
+      "s02_v05": "PASS",
+      "s03_v05": "PASS"
+    }
+  }
+}

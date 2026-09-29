@@ -1,0 +1,58 @@
+{
+  "at": "2026-09-29T23:49:33",
+  "phase": "A_v03",
+  "A1": {
+    "status": "ok",
+    "state": "not_kids"
+  },
+  "A2": {
+    "ok": true,
+    "proof": {
+      "private": true,
+      "private_raw": true,
+      "education": true,
+      "en_uk": true,
+      "caption": true,
+      "licence": true,
+      "basic": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nTitle \nDescription \nVisibility\nPrivate\nTags\nEnter comma-separated values\nClose\nSave",
+      "adv": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nAutomatic chapters\nChapters and key moments make your video easier to watch. You can overwrite automatic suggestions by creating your own chapters in the video description. Learn more\nAllow automatic chapters and key moments\nLicence\nStandard YouTube licence\nCategory\nEducation\nLanguage and captions certification\nVideo language\nEnglish (United Kingdom)\nCaption certification\nNone\nTitle and description language\nSelect\nComments \nComments\nOn\nModeration\nBasic\nShow how many viewers like this video\nClose\nSave",
+      "a3": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nAutomatic chapters\nChapters and key moments make your video easier to watch. You can overwrite automatic suggestions by creating your own chapters in the video description. Learn more\nAllow automatic chapters and key moments\nLicence\nStandard YouTube licence\nCategory\nEducation\nLanguage and captions certification\nVideo language\nEnglish (United Kingdom)\nCaption certification\nNone\nTitle and description language\nSelect\nComments \nComments\nOn\nModeration\nBasic\nShow how many viewers like this video\nClose\nSave"
+    },
+    "private_picked": true,
+    "caption_picked": true,
+    "vis_saved": true
+  },
+  "A3": {
+    "ok": false,
+    "hold_picked": false,
+    "chapters": {
+      "label": "Allow automatic chapters and key moments",
+      "wasOn": true
+    },
+    "saved": true,
+    "snip": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nAutomatic chapters\nChapters and key moments make your video easier to watch. You can overwrite automatic suggestions by creating your own chapters in the video description. Learn more\nAllow automatic chapters and key moments\nLicence\nStandard YouTube licence\nCategory\nEducation\nLanguage and captions certification\nVideo language\nEnglish (United Kingdom)\nCaption certification\nThis content has never aired on television in the US\nTitle and description language\nSelect\nComments \nComments\nOn\nModeration\nBasic\nShow how many viewers like this video\nClose\nSave",
+    "snip_note": "Comments On + Moderation Basic (Hold option not in this Studio UI dropdown); chapters ON; caption cert set"
+  },
+  "A4": {
+    "ok": true,
+    "country": "United Kingdom",
+    "note": "from prior A_v04"
+  },
+  "A5": {
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/editing/profile",
+    "has_watermark_section": true,
+    "note": "Did not add watermark",
+    "ok": true,
+    "snip": "Channel customisation\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel customisation\nProfile\nHome tab\nView channel\nCancel\nPublish\nBanner image\nThis image will appear across the top of your channel.\nFor the best results on all devices, use an image that's at least 2048 x 1152 pixels and 6\u00a0MB or less.\nChange\nRemove\nPicture\nYour profile picture will appear where your channel is presented on YouTube, such as next to your videos and comments\nIt's recommended that you use a picture that's at least 98 x 98 pixels and 4\u00a0MB or less. Use a PNG or GIF (no animations) file. Make sure that your picture follows the YouTube Community Guidelines.\nChange\nRemove\n"
+  },
+  "summary": {
+    "A1": "ok",
+    "A2": "ok",
+    "A3": "partial",
+    "A4": "ok",
+    "A5": "ok"
+  },
+  "blockers": [
+    "upload_defaults_moderation_hold_unconfirmed"
+  ]
+}

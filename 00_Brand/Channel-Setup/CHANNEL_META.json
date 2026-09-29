@@ -27,7 +27,7 @@
   "runtime_minutes": "8-9",
   "inspiration_channel": "https://www.youtube.com/@ytAnimistry",
   "inspiration_shorts_funnel": "https://www.youtube.com/@heyhistorically",
-  "inspiration_shorts_note": "Studio Related pill on every Short → parent long (see HOS_STRATEGY.md)",
+  "inspiration_shorts_note": "Studio Related pill on every Short \u2192 parent long (see HOS_STRATEGY.md)",
   "mascot": "explorer_side_character",
   "mascot_ref": "01_Character/01_Master-References/hos-explorer-character-sheet-v01.jpg",
   "vo_stack": "elevenlabs_ben_orbit_narrator",
@@ -48,5 +48,36 @@
     "facebook_orbit_page_id": "61592833318203",
     "note": "This workspace was cloned from Orbit with Ben. Never upload or schedule to that channel from here. Never mirror HOS films to @orbitwithben socials."
   },
-  "notes": "Live Brand Account confirmed 28 Aug 2026 from Studio: History of Science, @HistoryOfScienceYT, Explorer avatar, DISCOVERY. WONDER. PROOF. banner, About live. Channel ID still unset. Explorer is a sparse side character. First public video locked 2 Sep 2026: Germs full v02 — premiere Thu 3 Sep 2026 18:00 Europe/London on @HistoryOfScienceYT only. Shorts start Fri 4 Sep 11:30 London after the long listing exists. Do not lead with a Short."
+  "notes": "Live Brand Account confirmed 28 Aug 2026 from Studio: History of Science, @HistoryOfScienceYT, Explorer avatar, DISCOVERY. WONDER. PROOF. banner, About live. Channel ID still unset. Explorer is a sparse side character. First public video locked 2 Sep 2026: Germs full v02 \u2014 premiere Thu 3 Sep 2026 18:00 Europe/London on @HistoryOfScienceYT only. Shorts start Fri 4 Sep 11:30 London after the long listing exists. Do not lead with a Short.",
+  "studio_growth_settings_2026-09-29": {
+    "ordered_by": "Ben",
+    "at_uk": "2026-09-29T20:03",
+    "recorded_at": "2026-09-29T23:13:50.177378+00:00",
+    "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "handle": "@HistoryOfScienceYT",
+    "A1_channel_audience_before": "not_kids",
+    "A1_channel_audience_after": "No, set this channel as not Made for Kids",
+    "A1_changed": false,
+    "A1_note": "Already No before this order; re-confirmed and saved state unchanged",
+    "upload_defaults": {
+      "visibility": "Private",
+      "category": "Education",
+      "video_language": "English (United Kingdom)",
+      "caption_certification": "This content has never aired on television in the US",
+      "licence": "Standard YouTube licence",
+      "comments": "On",
+      "moderation": "Basic (Hold potentially inappropriate not offered as separate option in this Studio UI)",
+      "automatic_chapters": true,
+      "title_description_templates": "empty"
+    },
+    "channel_basic_info": {
+      "country": "United Kingdom",
+      "keywords_file": "00_Brand/Channel-Setup/channel_keywords.txt",
+      "description_left_as_is": true,
+      "orbit_in_description": false
+    },
+    "branding_watermark": "not_added",
+    "evidence_dir": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/",
+    "summary_json": "GROWTH_ALL_RESULT.json"
+  }
 }

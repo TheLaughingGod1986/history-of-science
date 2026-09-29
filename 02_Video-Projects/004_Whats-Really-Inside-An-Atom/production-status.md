@@ -359,6 +359,48 @@ Kids-locked comments theory confirmed for 004 earlier blank UI; after Audience *
 
 Summary: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/COMMENTS_BEN_2003_SUMMARY.json`
 
+## Studio growth settings — Ben 20:03 (29 Sep) · full order
+
+Ben’s full growth-settings list. Overrides: **(a) Altered/AI use = NO** (not Yes); **(b) channel Audience change authorised** (record before). CDP `:9460` HOS only. Summary JSON: `GROWTH_ALL_RESULT.json` · `CHANNEL_META.json` key `studio_growth_settings_2026-09-29`.
+
+### A — Channel settings
+
+| Item | Result | Proof |
+|---|---|---|
+| **A1 Audience** | **BEFORE: already not_kids** (“No, set this channel as not Made for Kids” checked). **AFTER: same.** No change needed; re-confirmed. | `BEN_growth_A1_audience_BEFORE.png` · `BEN_growth_A1_audience_AFTER.png` |
+| **A2 Upload defaults Basic** | Visibility **Private**; Category **Education**; Language **English (UK)**; Caption cert **never aired on US TV**; Licence **Standard YouTube**; title/desc templates empty | `BEN_growth_A2_basic_AFTER.png` · `BEN_growth_A2_advanced_fields_AFTER.png` |
+| **A3 Upload defaults Advanced** | Comments **On**; Moderation **Basic** (Studio UI had no “Hold potentially inappropriate” option in this dropdown); automatic chapters **ON**; caption cert set | `BEN_growth_A3_advanced_AFTER.png` · `BEN_growth_A3_comments_menu.png` |
+| **A4 Channel Basic info** | Country **United Kingdom**; keywords from `channel_keywords.txt`; description left (no Orbit) | `BEN_growth_A4_basic_AFTER.png` |
+| **A5 Branding watermark** | **Not added** (no subscribe graphics) | `BEN_growth_A5_branding.png` |
+
+### B — Long `GHZDsiH7L7A`
+
+| Item | Result | Proof |
+|---|---|---|
+| **B1 Audience** | Not Made for Kids; Comments/Notifications disabled notices **gone** | `BEN_growth_B1_audience.png` |
+| **B2 Visibility** | **Scheduled 15 Oct 2026 18:00**; **Set as Premiere OFF**; private until then | `BEN_growth_B2_visibility_PROOF.png` |
+| **B3 Details** | Title Atom; package description+chapters (no `/go/`); thumb A upload attempted; tags set | `BEN_growth_B3_details.png` |
+| **B4 AI use / Altered** | **No** (“No, AI wasn't used” / not altered) — **overrides earlier Yes** | `BEN_growth_B4_altered_AFTER.png` |
+| **B5 Subtitles** | English present / upload path used (`hos_004_full_v02.en.srt`) | `BEN_growth_B5_subtitles_AFTER.png` |
+| **B6 End screen** | **Partial** — Studio still flaky (processing); re-set if empty | `BEN_growth_B6_endscreen_AFTER.png` |
+| **B7 Cards** | Attempted ~1:30→002 + ~6:00→003; verify in Studio | `BEN_growth_B7_cards_AFTER.png` |
+| **B8 Playlist** | Create/add attempted for “History of Science: How We Found Out”; Studio **Oops** on playlist page after — **re-check manually** | `BEN_growth_B8_playlist_AFTER.png` |
+| **B9 Test & Compare** | **Ineligible** (scheduled); mode noted Thumbnail / titles listed | `BEN_growth_B9_tc_AFTER.png` |
+| **B10 Pin** | **Blocked** while Private/Scheduled — do **15 Oct 18:05** | `BEN_growth_B10_pin.png` |
+
+### C — Older films
+
+| Item | Result |
+|---|---|
+| Made for Kids → No changes | **None changed** — all auditable already not_kids |
+| Already not_kids | 001/002/003 longs + all 002/003 Shorts |
+| 001 Shorts edit Oops | `8uBR-9oxeWs` · `YX2UR1u-JCQ` · `Fnb3p81u-wY` · `vpuRgKXtFlY` · `Lcmh5y2KMQM` — unverified via edit |
+| C4 end screens → 004 | **Deferred** until after 15 Oct 18:05 |
+
+### D — Shorts
+
+**Not scheduled.** `gate_shorts_open.py check` **PASS** ×3 (v05). iCloud `HOS UAT/004_…/10_Shorts/` has v05. **STOP for Ben phone watch.** Schedule Fri 16 / Sun 18 / Tue 20 Oct 11:30 UK only after his yes (after 004 public).
+
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
 - Channel: **@HistoryOfScienceYT**. Repo: **history-of-science**. UAT: **`HOS UAT/004_…`** only.
@@ -387,3 +429,12 @@ Summary: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/COMMENTS_BEN_200
 | Test & Compare Ineligible | `…/FINISH_test_and_compare.png` | `…/artifacts/hos004_studio_phone_uat/FINISH_test_and_compare.png` |
 | Comments On (004) | `…/BEN_004_comments_on.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_004_comments_on.png` |
 | Pin blocked (permission) | `…/BEN_004_pin_blocked_permission.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_004_pin_blocked_permission.png` |
+| Growth A1 channel Audience | `…/BEN_growth_A1_audience_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_A1_audience_AFTER.png` |
+| Growth A2 upload defaults | `…/BEN_growth_A2_basic_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_A2_basic_AFTER.png` |
+| Growth B2 Visibility 15 Oct 18:00 Premiere OFF | `…/BEN_growth_B2_visibility_PROOF.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B2_visibility_PROOF.png` |
+| Growth B1 Audience not kids | `…/BEN_growth_B1_audience.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B1_audience.png` |
+| Growth B4 AI use No | `…/BEN_growth_B4_altered_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B4_altered_AFTER.png` |
+| Growth B9 T&C Ineligible | `…/BEN_growth_B9_tc_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B9_tc_AFTER.png` |
+| Growth B6 end screen | `…/BEN_growth_B6_endscreen_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B6_endscreen_AFTER.png` |
+| Growth B7 cards | `…/BEN_growth_B7_cards_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B7_cards_AFTER.png` |
+| Growth B8 playlist | `…/BEN_growth_B8_playlist_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B8_playlist_AFTER.png` |
