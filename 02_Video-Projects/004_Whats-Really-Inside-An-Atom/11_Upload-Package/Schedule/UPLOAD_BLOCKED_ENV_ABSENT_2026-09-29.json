@@ -1,5 +1,9 @@
 {
-  "status": "UPLOAD_BLOCKED",
+  "status": "SUPERSEDED",
+  "supersededBy": "PACKAGE_UPLOAD_RESULT_2026-09-29.json",
+  "supersededAt": "2026-09-29T22:30:00+01:00",
+  "supersededNote": "Long uploaded via Studio CDP as GHZDsiH7L7A. Scheduled 15 Oct 2026 18:00 UK, premiere false. Do not use this blocked file.",
+  "priorStatus": "UPLOAD_BLOCKED",
   "reason": "Step 5 dry-run not clean for live upload \u2014 HOS 07_Content-Ops/.env absent; npm youtube:package fails (DATABASE_URL undefined).",
   "benYes": "Yes, upload private and schedule Thu 15 Oct 18:00 as soon as the dry run is clean, no need to show me first.",
   "upload": false,

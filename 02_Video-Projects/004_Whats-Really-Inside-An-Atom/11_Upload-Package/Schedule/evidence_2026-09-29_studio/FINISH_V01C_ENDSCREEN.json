@@ -1,0 +1,24 @@
+{
+  "related": "AL_-qlWko_g",
+  "template": "1 video, 1 subscribe",
+  "nan_before": true,
+  "modal_save": {
+    "discard": {
+      "x": 1101.65625,
+      "y": 60
+    },
+    "save": {
+      "x": 1264.8515625,
+      "y": 78,
+      "disabled": false
+    }
+  },
+  "save": "modal",
+  "tracks": [],
+  "nan": false,
+  "error": false,
+  "has_subscribe_track": false,
+  "has_video_track": false,
+  "has_002": true,
+  "ok": false
+}

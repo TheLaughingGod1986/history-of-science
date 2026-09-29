@@ -1,0 +1,39 @@
+{
+  "related": "AL_-qlWko_g",
+  "template": "1 video, 1 subscribe",
+  "tracks_after_template": [
+    "Subscribe: History of Science\nShow hovercard outline",
+    "Subscribe: History of Science",
+    "Video: Best for viewer",
+    "Subscribe: History of Science\nVideo: Best for viewer\n0:00:00",
+    "Subscribe: History of Science\nVideo: Best for viewer"
+  ],
+  "search_filled": true,
+  "modal": {
+    "discard": {
+      "x": 1101.65625,
+      "y": 60
+    },
+    "save": {
+      "x": 1264.8515625,
+      "y": 78,
+      "disabled": false
+    }
+  },
+  "tracks_before_save": [
+    "Subscribe: History of Science\nShow hovercard outline",
+    "Subscribe: History of Science",
+    "Subscribe: History of Science\nVideo: Best for viewer\n0:00:00",
+    "Subscribe: History of Science\nVideo: Best for viewer",
+    "Video: Best for viewer"
+  ],
+  "save": "modal",
+  "error_toast": true,
+  "tracks_verify": [],
+  "nan": false,
+  "error": false,
+  "has_subscribe": false,
+  "has_video": false,
+  "has_002": true,
+  "ok": false
+}

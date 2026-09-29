@@ -1,0 +1,59 @@
+{
+  "at": "2026-09-29T22:24:54",
+  "thumb_ups": {
+    "thumbY": 837,
+    "ups": []
+  },
+  "thumb_via": "input[0] accept=image/jpeg,image/png",
+  "thumb_ok": true,
+  "saved": true,
+  "captions_url": "https://studio.youtube.com/video/GHZDsiH7L7A/translations",
+  "captions_before_english": true,
+  "captions_click1": "Add language",
+  "captions": {
+    "file": "hos_004_full_v02.en.srt",
+    "chooser_err": "Timeout 5000ms exceeded while waiting for event \"filechooser\"\n==================",
+    "has_english": true,
+    "published": false,
+    "snip": "Video subtitles\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nLanguages\nVideo language: English\nEnglish subtitles are the default source for auto-translation of subtitles and audio.\nEdit subtitles\nUpload manual\nTranslations\nAdd language\nTable that allows managing translations for audio, subtitles, title and description, and thumbnail for each language\nLanguage\nAudio\nSubtitles\nTitle and description\nThumbnail"
+  },
+  "endScreen": {
+    "related": "AL_-qlWko_g",
+    "template": "1 video, 1 subscribe",
+    "tracks_after_template": [
+      "Subscribe: History of Science\nShow hovercard outline",
+      "Subscribe: History of Science",
+      "Video: Best for viewer",
+      "Subscribe: History of Science\nVideo: Best for viewer\n0:00:00",
+      "Subscribe: History of Science\nVideo: Best for viewer"
+    ],
+    "search_filled": true,
+    "modal": {
+      "discard": {
+        "x": 1101.65625,
+        "y": 60
+      },
+      "save": {
+        "x": 1264.8515625,
+        "y": 78,
+        "disabled": false
+      }
+    },
+    "tracks_before_save": [
+      "Subscribe: History of Science\nShow hovercard outline",
+      "Subscribe: History of Science",
+      "Subscribe: History of Science\nVideo: Best for viewer\n0:00:00",
+      "Subscribe: History of Science\nVideo: Best for viewer",
+      "Video: Best for viewer"
+    ],
+    "save": "modal",
+    "error_toast": true,
+    "tracks_verify": [],
+    "nan": false,
+    "error": false,
+    "has_subscribe": false,
+    "has_video": false,
+    "has_002": true,
+    "ok": false
+  }
+}

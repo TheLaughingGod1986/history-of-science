@@ -20,6 +20,7 @@
     "title": "What's Really Inside an Atom?",
     "thumb": "hos_004_thumb_A_atom_live_v04.jpg",
     "platformPostId": "GHZDsiH7L7A",
+    "youtubeId": "GHZDsiH7L7A",
     "platformUrl": "https://youtu.be/GHZDsiH7L7A",
     "watchUrl": "https://www.youtube.com/watch?v=GHZDsiH7L7A",
     "studioEdit": "https://studio.youtube.com/video/GHZDsiH7L7A/edit"
@@ -31,11 +32,20 @@
     "premiere": false,
     "visibilityUntilThen": "private",
     "studioTooltip": "You scheduled this video. This video is currently private, and is scheduled to become public on 15 October 2026 at 18:00.",
-    "verifiedAt": "2026-09-29T19:24:00+01:00",
-    "screenshot": "evidence_2026-09-29_studio/689_schedule_proof.png",
-    "screenshotAlt": "evidence_2026-09-29_studio/146_proof.png"
+    "verifiedAt": "2026-09-29T22:19:03+01:00",
+    "screenshot": "evidence_2026-09-29_studio/FINISH_visibility_15oct_1800_premiere_off.png",
+    "screenshotAlt": "evidence_2026-09-29_studio/finish_v01c_91_visibility_final.png",
+    "note": "Premiere OFF (package premiere false). Left alone after FINISH verify."
   },
   "madeForKids": false,
+  "audience": {
+    "ok": true,
+    "value": "No, it's not 'Made for Kids'",
+    "channelDefault": "No, set this channel as not Made for Kids",
+    "proofVideo": "evidence_2026-09-29_studio/URGENT_audience_004_not_made_for_kids.png",
+    "proofChannel": "evidence_2026-09-29_studio/URGENT_channel_advanced_audience.png",
+    "audit": "evidence_2026-09-29_studio/URGENT_KIDS_AUDIT_V01.json"
+  },
   "alteredContentAiUse": {
     "ok": true,
     "value": "Yes, AI was used",
@@ -43,23 +53,22 @@
   },
   "affiliate": null,
   "shortsUploaded": false,
-  "shortsNote": "Shorts v05 word-timed captions built + gate PASS; iCloud HOS UAT. Do not upload until Ben phone watch yes.",
-  "phoneUatFinal": "PHONE_UAT_FINAL_STATUS.json",
+  "shortsNote": "Shorts v05 word-timed captions · gate_shorts_open PASS ×3 · iCloud HOS UAT/004_…/10_Shorts/. STOP for Ben phone watch. Do not schedule/upload until Ben yes.",
   "thumbnailLive": {
     "wanted": "hos_004_thumb_A_atom_live_v04.jpg",
     "ok": false,
-    "observed": "THE HIDDEN NUMBER (C) still on Details/Content after A v04 upload attempts",
-    "proof": "evidence_2026-09-29_studio/v25b_reload.png",
-    "blocker": "Studio save trouble / retry toast; custom thumb not persisting as A"
+    "observed": "THE HIDDEN NUMBER (C) still on Details after A v04 uploads",
+    "proof": "evidence_2026-09-29_studio/finish_v01d_03_thumb_reload.png",
+    "blocker": "Studio custom thumb A not persisting; Ben set A manually when save healthy"
   },
   "testAndCompare": {
-    "wanted": "Title and thumbnail",
-    "studioOffers": [
-      "Title only",
-      "Thumbnail only",
-      "Title and thumbnail"
+    "wanted": "Title and thumbnail ×3 pairs",
+    "optionOffered": "none_ineligible",
+    "ineligible": true,
+    "titlesListedOnDetails": [
+      "What's Really Inside an Atom?",
+      "Why Is the Periodic Table in This Order?"
     ],
-    "chosen": "Title and thumbnail",
     "pairsWanted": [
       {
         "title": "What's Really Inside an Atom?",
@@ -76,54 +85,47 @@
     ],
     "running": false,
     "ok": false,
-    "ineligible": true,
-    "note": "Studio shows A/B Testing Ineligible on this scheduled/private video. Two titles listed; Set test / Title+thumbnail×3 cannot arm until eligible. Manual on launch prep."
+    "proof": "evidence_2026-09-29_studio/FINISH_test_and_compare.png",
+    "note": "A/B Testing Ineligible on scheduled/private. No Title and thumbnail / Thumbnail only dialog. No title test until after launch."
+  },
+  "description": {
+    "ok": true,
+    "file": "Descriptions/atom_long_description_v01.txt",
+    "chapters": "Chapters/atom_long_chapters_v01.txt",
+    "noGoLinks": true
+  },
+  "captions": {
+    "ok": true,
+    "file": "Captions/hos_004_full_v02.en.srt",
+    "language": "English",
+    "toast": "English subtitles uploaded",
+    "proof": "evidence_2026-09-29_studio/FINISH_captions.png"
   },
   "endScreen": {
-    "wanted": {
-      "relatedVideoId": "AL_-qlWko_g",
-      "relatedTitle": "How Did We Discover the Periodic Table?",
-      "subscribe": true
-    },
-    "lastSeen": {
-      "video": "Best for viewer (not persisted)",
-      "subscribe": "History of Science (not persisted)",
-      "studioWarning": "End screen elements won't display on the watch page for private videos.",
-      "studioError": "There was a problem in processing your video. As a result, your recent edits were not saved."
-    },
     "ok": false,
-    "proof": "evidence_2026-09-29_studio/v24_33_after_save.png",
-    "note": "Elements placeable; modal Save clicked; Studio processing error + NaN times reject persistence (empty timeline on reopen). Re-set Specific 002 + Subscribe after processing settles."
+    "wanted": "last 20s · Specific AL_-qlWko_g + Subscribe",
+    "blocker": "Studio processing error on Save — edits not saved; reopen empty",
+    "proof": "evidence_2026-09-29_studio/finish_v01d_25_end_after_save.png"
   },
   "pinnedComment": {
     "ok": false,
-    "reason": "watch_page_not_commentable_while_scheduled_or_private",
+    "deferred": true,
+    "reason": "comments unavailable while private/scheduled",
     "textFile": "Pinned-Comments/atom_long_pinned-comment_v01.txt",
-    "note": "Pin on launch day 15 Oct 2026 — Studio blocks comments while the video is private/scheduled."
+    "note": "Pin on launch day 15 Oct 2026 as channel, no links"
   },
-  "scheduleProofUpdated": {
-    "visibilityPanel": "evidence_2026-09-29_studio/FINAL_visibility_panel_15oct_1800.png",
-    "contentList": "evidence_2026-09-29_studio/FINAL_content_15oct.png",
-    "confirmedNot30Sep": true
-  },
-  "captions": {
-    "file": "Captions/hos_004_full_v02.en.srt",
-    "ok": false,
-    "note": "Studio translations file input not found in this session; captions may still need manual upload."
-  },
-  "tagsTrimmedTo": 493,
-  "evidenceDir": "evidence_2026-09-29_studio/",
-  "scripts": [
-    "_upload_hos_004_studio_schedule_v01.py",
-    "_finish_hos_004_studio_schedule_v01.py",
-    "_finish3_hos_004_tc_endscreen_v01.py",
-    "_finish5_hos_004_tc_endscreen_v01.py",
-    "_finish6_hos_004_tc_endscreen_v01.py",
-    "_fix_hos_004_studio_phone_uat_v20.py",
-    "_fix_hos_004_studio_phone_uat_v21.py",
-    "_fix_hos_004_studio_phone_uat_v22.py",
-    "_fix_hos_004_studio_phone_uat_v23.py",
-    "_fix_hos_004_studio_phone_uat_v24.py",
-    "_fix_hos_004_studio_phone_uat_v25_thumb.py"
-  ]
+  "supersedes": [
+    "UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json",
+    "DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json"
+  ],
+  "evidenceDir": "evidence_2026-09-29_studio",
+  "finishScripts": [
+    "_finish_hos_004_studio_v01.py",
+    "FINISH_V01B_VISIBILITY.json",
+    "FINISH_V01C_RESULT.json",
+    "FINISH_V01D_RESULT.json",
+    "FINISH_V01E_RESULT.json"
+  ],
+  "orbitEnvUsed": false,
+  "hosEnvUsed": false
 }

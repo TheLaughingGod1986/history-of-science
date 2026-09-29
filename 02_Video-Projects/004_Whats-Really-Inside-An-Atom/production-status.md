@@ -305,20 +305,41 @@ Ben (29 Sep 18:33): skip API/`.env` — upload through YouTube Studio CDP on Min
 | Proof | `11_Upload-Package/Schedule/evidence_2026-09-29_studio/689_schedule_proof.png` (tooltip: public 15 October 2026 at 18:00) |
 | Result JSON | `11_Upload-Package/Schedule/PACKAGE_UPLOAD_RESULT_2026-09-29.json` |
 
-### Studio finish — phone UAT (29 Sep 18:51 → CDP v20–v25)
+### Studio finish — phone UAT (29 Sep 18:51 → CDP v20–v25) · FINISH order 20:00
 
-Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish on Mini (`:9460`, HOS Chrome). Status: `11_Upload-Package/Schedule/PHONE_UAT_FINAL_STATUS.json`.
+Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish on Mini (`:9460`, HOS Chrome). FINISH result: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/FINISH_V01C_RESULT.json`.
 
 | Item | Status |
 |---|---|
-| Schedule | **OK** — **15 Oct 2026 18:00 UK**, **Set as Premiere UNCHECKED** (normal publish), **not 30 Sep**. CoS re-verify: `COS_visibility_15oct_1800_premiere_off.png` (aria-checked=false · input value 18:00). finish2 19:05 `has1800=False/premiere=True` was a false Content-list probe. |
-| Altered / AI use | **OK** — AI use **Yes**. Proof: `cos_v02b_ai_yes.png` / `FINAL_ai_use_yes.png`. Kids stay **No**. |
-| Custom thumb A v04 | **Not persisted** — Details/Content still show **C / THE HIDDEN NUMBER** after A uploads. Studio save trouble toast. Manual A when save healthy. Proof: `v25b_reload.png`. |
-| Test & Compare | **Ineligible** on scheduled/private. Wanted Title+thumbnail×3 (A/C/B + 3 titles). Cannot arm via CDP until eligible. |
-| End screen | **Blocked** — place Subscribe + video, modal Save clicked, then Studio **processing error** + NaN; reopen empty. Re-set Specific `AL_-qlWko_g` + Subscribe after processing settles. Proof: `v24_33_after_save.png`. |
-| Pinned comment | **Deferred to launch day** — not commentable while private/scheduled. |
-| Shorts | **v05 done** (word-timed captions, gate PASS, iCloud). **Hold upload** — Ben phone watch. |
+| Audience (Made for Kids) | **OK — No, not Made for Kids** (checked after every save). See Made for Kids section. Proof: `URGENT_audience_004_not_made_for_kids.png` |
+| Visibility | **OK — leave alone** — Scheduled **15 Oct 2026 18:00 UK**, **Set as Premiere OFF** (`aria-checked=false`, input `18:00`), title *What's Really Inside an Atom?*, private until then. Proof: `FINISH_visibility_15oct_1800_premiere_off.png` · `finish_v01c_91_visibility_final.png` |
+| Altered / AI use | **OK** — AI use **Yes**. Proof: `FINAL_ai_use_yes.png` |
+| Custom thumb A v04 | **Still not persisted** — Studio still shows **C / THE HIDDEN NUMBER** after A image-input uploads + Save. Ben: set A manually when Studio save is healthy. Proof: `finish_v01d_03_thumb_reload.png` |
+| Test & Compare | **Ineligible** on scheduled/private. Studio offered **none** (Ineligible). Details lists 2 titles (Atom · Periodic); third (Gold) not listed. Wanted Title+thumbnail×3 — cannot arm until eligible. No title test until after launch. Proof: `FINISH_test_and_compare.png` |
+| Description + chapters | **OK** — package description + chapters, no `/go/` links. |
+| Captions | **OK** — `hos_004_full_v02.en.srt` uploaded (toast “English subtitles uploaded”). Proof: `FINISH_captions.png` (`finish_v01e_13_captions_after.png`) |
+| End screen | **Blocked by Studio** — template places Subscribe + Video (last 20 s), Specific `AL_-qlWko_g` attempted; Save → **“problem in processing… edits were not saved”** + NaN; reopen empty. Re-set after processing settles. Proof: `finish_v01d_25_end_after_save.png` · `FINISH_endscreen.png` |
+| Pinned comment | **Deferred to launch day** — comments unavailable while private/scheduled. Package text ready, no links. |
+| Shorts | **v05 done** — `gate_shorts_open.py check` **PASS** ×3 · iCloud `HOS UAT/004_…/10_Shorts/`. **STOP — Ben phone watch. Schedule nothing until he says yes.** |
 | `.env` / API | **Not used.** Orbit never touched. |
+
+## Made for Kids — URGENT audit (Ben 29 Sep 20:00)
+
+Package says `madeForKids: false`. Studio had shown “Made for Kids” on `GHZDsiH7L7A` — audited via CDP `:9460` HOS Chrome.
+
+| Check | Result | Proof |
+|---|---|---|
+| **004 `GHZDsiH7L7A` Audience** | **No, it's not 'Made for Kids'** (radio checked; banner “set to not Made for Kids”). Already OK when opened — Ben may have fixed on phone. | `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_audience_004_not_made_for_kids.png` · `urgent_kids_004_force_after.png` · artifacts `~/.local/share/cursor-mac-mini-hos-worker/artifacts/hos004_studio_phone_uat/URGENT_audience_004_not_made_for_kids.png` |
+| **Channel → Settings → Channel → Advanced → Audience default** | **No, set this channel as not Made for Kids** (checked). Yes unchecked. **Did not STOP** — not “Yes, made for kids”. Channel settings **not changed**. | `URGENT_channel_advanced_audience.png` · `URGENT_CHANNEL_ADVANCED_V03.json` |
+| **001 long `_C92tIJCk8A`** | Not Made for Kids | `urgent_kids_001_long.png` |
+| **001 Shorts** (`8uBR-9oxeWs` · `YX2UR1u-JCQ` · `Fnb3p81u-wY` · `vpuRgKXtFlY` · `Lcmh5y2KMQM`) | Edit URLs returned Studio “Oops” — **not verified via edit pages**. Content list showed no Made-for-Kids badge on those Shorts. | `urgent_kids_001_short_*.png` · `URGENT_KIDS_FIX_V02.json` |
+| **002 long `AL_-qlWko_g` + 5 Shorts** | All **Not Made for Kids** | `urgent_kids_002_*.png` |
+| **003 long `frP_YrNShsU` + 3 Shorts** | All **Not Made for Kids** | `urgent_kids_003_*.png` |
+| **Made-for-Kids hits** | **None** among verified videos | `URGENT_KIDS_AUDIT_V01.json` |
+
+**Policy (every upload from now on):** after each Studio save, open Details → Audience and confirm **“No, it's not made for kids”** before end screen / pin / other finish steps. End screens and pinned comments do not work on kids’ videos — Audience first.
+
+JSON: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_KIDS_AUDIT_V01.json` · `URGENT_KIDS_FIX_V02.json` · `URGENT_CHANNEL_ADVANCED_V03.json`
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
@@ -330,9 +351,19 @@ Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish o
 
 `10_Shorts/SHORTS_PUNCH_SCRIPTS_v02.md` — Fri 004 gold (~60 w) · Sun 002 Newlands octaves · Tue 003 Bertha’s hand only. Shorts **not** uploaded.
 
-## Upload / Shorts status (29 Sep 2026)
+## Upload / Shorts status (29 Sep 2026 · FINISH 20:00)
 
-- **Long upload:** **DONE via Studio** — id `GHZDsiH7L7A` · Scheduled **15 Oct 2026 18:00 UK** · no Premiere · no `.env`. See STEP 5 above + `PACKAGE_UPLOAD_RESULT_2026-09-29.json`.
-- **Phone UAT finish:** schedule + AI YES proved; thumb A / T&C / end screen still need manual when Studio save/processing healthy (see Studio finish table + `PHONE_UAT_FINAL_STATUS.json`). Pin on launch day.
-- **Thumbs (files):** A v04 · B v04 · **C v06** — Ben PASS (order 29 Sep). **Live Studio still C** until A upload sticks.
-- **Shorts v05:** word-timed captions · gate PASS · iCloud HOS UAT `10_Shorts/` · **STOP phone watch**. No Shorts upload until Ben yes.
+- **Long upload:** **DONE via Studio** — id **`GHZDsiH7L7A`** · Scheduled **15 Oct 2026 18:00 UK** · **Premiere OFF** · Audience **not Made for Kids** · no `.env`. Records: `PACKAGE_UPLOAD_RESULT_2026-09-29.json` · `PACKAGE_MANIFEST.json` (`youtubeId`, `premiere: false`).
+- **Superseded (kept):** `UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json` · `DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json` → status `SUPERSEDED`.
+- **FINISH Studio:** Visibility + Audience + description/chapters + captions **OK**. Thumb A / T&C / end screen / pin still need Ben or launch-day (Studio Ineligible / processing error / private). Screenshots for Ben below.
+- **Thumbs (files):** A v04 · B v04 · **C v06** — Ben PASS. **Live Studio still C**.
+- **Shorts v05:** `gate_shorts_open.py check` **PASS** ×3 · iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/` · **STOP phone watch**. Schedule nothing until Ben yes.
+
+### Screenshots for Ben / CoS (exact paths)
+
+| What | Repo evidence | Artifacts (Ben share) |
+|---|---|---|
+| Audience 004 not kids | `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_audience_004_not_made_for_kids.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/hos004_studio_phone_uat/URGENT_audience_004_not_made_for_kids.png` |
+| Channel Advanced audience default No | `…/URGENT_channel_advanced_audience.png` | `…/artifacts/hos004_studio_phone_uat/URGENT_channel_advanced_audience.png` |
+| Visibility 15 Oct 18:00 Premiere OFF | `…/FINISH_visibility_15oct_1800_premiere_off.png` | `…/artifacts/hos004_studio_phone_uat/FINISH_visibility_15oct_1800_premiere_off.png` |
+| Test & Compare Ineligible | `…/FINISH_test_and_compare.png` | `…/artifacts/hos004_studio_phone_uat/FINISH_test_and_compare.png` |
