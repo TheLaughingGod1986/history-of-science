@@ -27,13 +27,17 @@ Evidence: **[HOS]** means our own channel. **[Orbit]** means Orbit's 48 Shorts; 
 
 ## 2. Long thumbnails (16:9)
 
-1. **One subject, big:** one object or face filling at least a third of the frame, on a simple warm background. The glowing hand, the flask, the one card in the gap.
-2. **2–4 words, one or two lines,** every word readable at **168×94** (a phone search result). Check with `python3 00_Brand/Channel-Setup/tools/thumb_preview.py long <thumb.jpg> --out <sheet.jpg>`.
-3. **The thumb adds to the title, never repeats it.** Title: *How X-rays Let Us See Inside the Body*. Thumb: **HIS WIFE'S HAND** or **BONES?!**, not X-RAYS.
-4. **One heavy sans font in capitals on every thumbnail,** yellow on the hook word, white on the rest, heavy outline. The same font every week is how a returning viewer spots us.
-5. **Text off the subject and out of the bottom-right corner** (the duration badge).
-6. **The Explorer may appear on a long thumb** as a reaction beside the subject, never instead of it. Test it with Test & Compare against a subject-only variant; don't assume.
-7. **Test & Compare with 3 variants on every long.** Judge CTR only past about 500 impressions.
+Changed 30 Sep 2026 to match the live look (001 flask, 002 gallium; `02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/LIVE_THUMB_LOCK.md`). The 25 Sep version asked for a flat sans yellow/white style; three rounds of HOS 004 thumbs built to it looked like another channel, and Ben rejected them. The first set built to the live look (HOS 004 v04) he passed.
+
+1. **Painted key art, not a film frame and not a graphic.** Premium 3D cartoon painting, full bleed, warm golden library or lab light, the same world as the film. Never flat shapes, split panels or a plain dark background.
+2. **One giant hero object, about two thirds of the frame, on the right:** the flask, the gallium, the atom, the coin under the knife. It must read at a glance at phone size.
+3. **The Explorer small in the lower left,** on model (teal coat, round gold glasses, satchel; attach `01_Character/05_Generation-References/hos-explorer-reference-v01.jpg`), looking at the object. A garnish, never the subject, never filling the right half.
+4. **Painted lettering on the left:** cream words with **one gold punch word**, the same serif display lettering and small gold flourishes on every thumb. The same lettering every week is how a returning viewer spots us. 2–5 words, readable at **168×94** (check with `python3 00_Brand/Channel-Setup/tools/thumb_preview.py long <thumb.jpg> --out <sheet.jpg>`).
+5. **Words:** the main thumb may carry the title painted in, as the live ones do. The other variants carry 2–3 hook words that add to the title (*CUT GOLD?*, *THE HIDDEN NUMBER*). Test & Compare decides which works; don't assume.
+6. **Facts on the picture must be right.** No AI-made text anywhere except the painted lettering: blank tiles, plain coins, no fake element symbols. Any symbol or number (Te 52, I 53) is checked and, if the model gets it wrong, added by hand in the same lettering.
+7. **Keep the subject and lettering out of the bottom-right corner** (the duration badge), and every object fully in frame.
+8. **Make it** with an image model (Gemini / Flow image), attaching a live thumb as the style reference and the Explorer reference. Put each new thumb next to a live one on one sheet to check it's the same family.
+9. **Test & Compare with 3 variants on every long.** Judge CTR only past about 500 impressions.
 
 ## 3. Shorts: frame 0 is the thumbnail
 
@@ -54,7 +58,7 @@ In the Shorts feed nobody sees the custom cover. They see frame 0.
 
 - [ ] Title: familiar noun first, one of the shapes, no hedge, hashtag, formula or repeat.
 - [ ] Thumb: 2–4 words that add to the title; `thumb_preview.py` sheet checked at the smallest tile.
-- [ ] One subject, house font, yellow hook word.
+- [ ] Longs: painted key art in the live look (one giant hero object, the Explorer small lower left, cream and gold painted lettering); facts on it checked; next to a live thumb on one sheet.
 - [ ] Shorts: frame 0 passes `gate_shorts_open.py`; the frame-0 caption is the promise.
 - [ ] Longs: Test & Compare with 3 variants.
 - [ ] After 7 days: log impressions and CTR in `audits/SHORTS_LOG.md` (Shorts) or the film's `11_Upload-Package/` (longs).

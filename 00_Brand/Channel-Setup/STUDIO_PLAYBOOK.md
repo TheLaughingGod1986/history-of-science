@@ -172,7 +172,7 @@ Any one of these fails the cut. Check them on continuous playback.
 - **Bible:** `01_Character/CHARACTER_BIBLE.md`. **Sheet:** `01_Character/01_Master-References/hos-explorer-character-sheet-v01.jpg`. **Generation reference:** `01_Character/05_Generation-References/hos-explorer-reference-v01.jpg`. Attach it to every Explorer plate.
 - **Look:** a young boy, messy wavy brown hair, round thin gold glasses, **teal long coat**, gold atom pin, tan waistcoat, brown bow tie, rolled brown trousers, brown boots, satchel, brass compass. Optional blue book *IDEAS · OBSERVE · QUESTION · DISCOVER*.
 - **Role:** a side character. The story is the star. Mute test: the story reads without him.
-- **Dosage:** longs, 1–3 beats (about every 3–5 scenes), walking through, touching one or two props, reacting, then leaving. Shorts, never at frame 0. Long thumbs, only as a tested variant.
+- **Dosage:** longs, 1–3 beats (about every 3–5 scenes), walking through, touching one or two props, reacting, then leaving. Shorts, never at frame 0. Long thumbs, small in the lower left beside the hero object (`THUMBNAIL_AND_TITLE_RULES.md` §2).
 - **Reject:** twins, clones or reflections; no glasses; wrong coat or age; flat 2D; parked centre-frame through a VO block; a second face.
 
 ## 7. Assembly and the open and out
@@ -197,7 +197,7 @@ Any one of these fails the cut. Check them on continuous playback.
 
 ## 8. Titles and thumbnails
 
-Follow `THUMBNAIL_AND_TITLE_RULES.md`. Check every thumb with `python3 00_Brand/Channel-Setup/tools/thumb_preview.py long|short <thumb> --out <sheet>`. The plate is the strongest frame from the film's own master; text always comes from the edit, never from the model. Short covers: see `02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/_compose_hos_short_cover_safe_v02.py` for the feed-safe composer.
+Follow `THUMBNAIL_AND_TITLE_RULES.md`. Check every thumb with `python3 00_Brand/Channel-Setup/tools/thumb_preview.py long|short <thumb> --out <sheet>`. Long thumbs are painted key art in the live look (§2 of that file), made with an image model from a live thumb and the Explorer reference; any symbol or number is checked and fixed by hand. Short covers: see `02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/_compose_hos_short_cover_safe_v02.py` for the feed-safe composer.
 
 ## 9. Upload and Studio finish
 

@@ -1,5 +1,5 @@
 ---
-description: Titles and thumbnails — familiar noun first, one concrete promise, 2–4 word thumbs readable at phone size, frame 0 is the Shorts thumbnail
+description: Titles and thumbnails — familiar noun first, one concrete promise, painted 3D key-art thumbs in the live look readable at phone size, frame 0 is the Shorts thumbnail
 globs:
   - 02_Video-Projects/**/08_Thumbnail/**
   - 02_Video-Projects/**/10_Shorts/**
@@ -19,12 +19,14 @@ Readable copy with the evidence: `00_Brand/Channel-Setup/THUMBNAIL_AND_TITLE_RUL
 - Longs: the searched phrase, subject in the first five words, the thing over the method. Not *How Did We Discover X?* every week.
 - **FAIL:** abstract labels or riddles (*What other table has empty chairs?* 4 views), hedged claims, hashtags, series suffixes, a copy of a live title, fear framing. Under about 60 characters.
 
-## Long thumbs
+## Long thumbs (the live look, 30 Sep 2026)
 
-- One subject filling at least a third of the frame, simple warm background.
-- **2–4 words**, readable at 168×94: `python3 00_Brand/Channel-Setup/tools/thumb_preview.py long <thumb> --out <sheet>`.
-- The thumb adds to the title, never repeats it. One heavy capitals font, yellow hook word, white rest. Text off the subject and out of the bottom-right corner.
-- The Explorer only as a tested variant. Test & Compare with 3; judge CTR past about 500 impressions.
+- **Painted 3D cartoon key art**, full bleed, warm library/lab light. Never flat graphics, split panels or a plain dark background. Reference: `02_…002…/08_Thumbnail/LIVE_THUMB_LOCK.md`.
+- **One giant hero object, ~2/3 of the frame, right.** The Explorer **small, lower left**, on model, looking at it.
+- **Painted lettering left:** cream words + one gold punch word, serif display, small gold flourishes, same on every thumb. 2–5 words readable at 168×94: `python3 00_Brand/Channel-Setup/tools/thumb_preview.py long <thumb> --out <sheet>`.
+- Main thumb may paint the title in; the other variants use 2–3 hook words that add to it.
+- No AI-made text or numbers except the lettering; any symbol or number checked and fixed by hand. Nothing in the bottom-right corner; every object fully in frame.
+- Make with an image model using a live thumb + the Explorer reference as references. Test & Compare with 3; judge CTR past about 500 impressions.
 
 ## Shorts
 
