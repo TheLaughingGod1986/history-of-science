@@ -216,9 +216,12 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
     const description = post.caption || "";
     const madeForKids = Boolean(post.madeForKids);
 
+    // HOS release contract (hos-contract/rules.ts): AI visuals + AI voice → disclose;
+    // never Made for Kids unless the package says so explicitly.
     const statusPayload: Record<string, unknown> = {
       privacyStatus,
       selfDeclaredMadeForKids: madeForKids,
+      containsSyntheticMedia: true,
     };
     if (schedule.usePublishAt && schedule.publishAtIso) {
       statusPayload.publishAt = schedule.publishAtIso;
@@ -239,7 +242,9 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
             snippet: {
               title,
               description,
-              categoryId: "28",
+              categoryId: "27", // Education (HOS contract)
+              defaultLanguage: "en-GB",
+              defaultAudioLanguage: "en-GB",
               tags: safeTags(post.hashtags),
             },
             status: statusPayload,

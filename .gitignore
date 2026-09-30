@@ -96,3 +96,7 @@ node_modules/
 !02_Video-Projects/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/hos_004_thumb_C_hidden_number_live_v06_preview.jpg
 !02_Video-Projects/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/hos_004_thumbs_v06_family_vs_002_live.jpg
 !02_Video-Projects/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Previews/hos_004_thumb_C_hidden_number_preview_v06.jpg
+# Style references: the live approved look (THUMBNAIL_AND_TITLE_RULES §2/§4, style/README.md)
+!00_Brand/Channel-Setup/style/long/*.jpg
+!00_Brand/Channel-Setup/style/shorts/*.jpg
+!00_Brand/Channel-Setup/style/shorts/*.png
