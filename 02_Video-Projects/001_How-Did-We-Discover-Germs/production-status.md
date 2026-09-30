@@ -16,7 +16,7 @@ Channel: `@HistoryOfScienceYT` / `UCXp7HkBIl1LgaznXuZHJyRg` only. Evidence: `02_
 ### 001 videos touched
 | id | kind | title | applied | would not save |
 |---|---|---|---|---|
-| `_C92tIJCk8A` | long | How Did We Discover Germs? | Audience not-kids · Altered YES · Paid No · Education · caption never-aired · places OFF · chapters/concepts ON · tags fixed (5–8 subject-only) · comments On/Basic · embedding on · remix video+audio · licence Standard | Academic system **United Kingdom** not in Studio taxonomy (England is; left UAE) · GCSE Biology not in exam taxonomy · Level secondary leaf does not persist · playlist **History of Science: How We Found Out** missing (long already in *How Did We Discover…? \| History of Science*) · Type concept flaky |
+| `_C92tIJCk8A` | long | How Did We Discover Germs? | Audience not-kids · Altered YES · Paid No · Education · caption never-aired · places OFF · chapters/concepts ON · tags fixed (5–8 subject-only) · comments On/Basic · embedding on · remix video+audio · licence Standard | Academic system **United Kingdom** not in Studio taxonomy (England is; left UAE) · GCSE Biology not in exam taxonomy · Level secondary leaf does not persist · playlist **History of Science: How We Found Out** missing (long already in *How Did We Discover…? | History of Science*) · Type concept flaky |
 | `H1y0DXFVmw8` | Short | Germs don't cast a shadow | same core + Related → 001 long · tags fixed | Academic UK · GCSE Biology · Level |
 | `iqToagXnjX0` | Short | Microbes in a drop of pond water | same + Related · tags fixed | Academic UK · GCSE Biology · Level |
 | `8_Edn_HCi1s` | Short | Germs hitch a ride on you | same + Related · tags fixed | Academic UK · GCSE Biology · Level |

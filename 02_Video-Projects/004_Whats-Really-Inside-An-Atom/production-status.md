@@ -504,6 +504,6 @@ Channel: `@HistoryOfScienceYT` only. Supersedes narrower Fri/Sun/language orders
 | `29bpGAI0wb8` | Short (Fri) | Core §9; title already *What happens if you keep cutting gold in half?*; tags already OK; **Related deferred to 15 Oct 18:05** |
 | (no other 004 Shorts live yet beyond Fri) | | |
 
-**Would not save (channel-wide education taxonomy):** Academic system **United Kingdom** absent (England listed; left as UAE per “if listed”). GCSE Chemistry/Physics/Biology exams absent. Level “Secondary school” is a non-selectable header; Grade 10 leaf does not persist after reload. Playlist **History of Science: How We Found Out** does not exist; Studio “New playlist” submenu did not expose a title field — longs remain on *How Did We Discover…? \| History of Science*.
+**Would not save (channel-wide education taxonomy):** Academic system **United Kingdom** absent (England listed; left as UAE per “if listed”). GCSE Chemistry/Physics/Biology exams absent. Level “Secondary school” is a non-selectable header; Grade 10 leaf does not persist after reload. Playlist **History of Science: How We Found Out** does not exist; Studio “New playlist” submenu did not expose a title field — longs remain on *How Did We Discover…? | History of Science*.
 
 **Was Made for Kids / AI=No before:** none in sweep lists. Tag concatenation bug from first pass **repaired** (22/22 verified after reload). STOP.
