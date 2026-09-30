@@ -1,0 +1,56 @@
+{
+  "started": "2026-09-30T16:28:53+01:00",
+  "before": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system England",
+    "Level None",
+    "Exam, course or standard"
+  ],
+  "opened": {
+    "t": "Level None"
+  },
+  "option_count_Key stage 4": 1,
+  "picked_want": "Key stage 4",
+  "selects_after_pick": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system England",
+    "Level Key stage 4",
+    "Exam, course or standard"
+  ],
+  "save_poll": [
+    {
+      "disabled": false,
+      "aria": "false",
+      "classes": "style-scope ytcp-video-details-section"
+    }
+  ],
+  "save": {
+    "enabled": true,
+    "clicked": true,
+    "confirm": "Save"
+  },
+  "selects_after_save": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system England",
+    "Level Key stage 4",
+    "Exam, course or standard"
+  ],
+  "after_reload": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system England",
+    "Level None",
+    "Exam, course or standard"
+  ]
+}
