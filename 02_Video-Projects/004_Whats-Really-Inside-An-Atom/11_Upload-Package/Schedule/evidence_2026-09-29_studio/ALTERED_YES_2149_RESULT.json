@@ -1,0 +1,1178 @@
+{
+  "at": "2026-09-30T00:59:15",
+  "order": "Ben 21:49 CHANGE \u2014 Altered/synthetic = YES (overrides 20:03 No)",
+  "reason": "AI-generated visuals and an AI clone of Ben's voice",
+  "channel": "@HistoryOfScienceYT",
+  "policy_from_now": "every upload: Altered/synthetic YES; Audience not Made for Kids after every save",
+  "videos": [
+    {
+      "key": "004_long",
+      "videoId": "GHZDsiH7L7A",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "already_yes": true,
+      "clicked": null,
+      "saved": false,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      }
+    },
+    {
+      "key": "001_long",
+      "videoId": "_C92tIJCk8A",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "already_yes": true,
+      "clicked": null,
+      "saved": false,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      }
+    },
+    {
+      "key": "002_long",
+      "videoId": "AL_-qlWko_g",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    },
+    {
+      "key": "003_long",
+      "videoId": "frP_YrNShsU",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    },
+    {
+      "key": "001_short_8uBR",
+      "videoId": "8uBR-9oxeWs",
+      "ok": false,
+      "oops": true,
+      "note": "Studio Oops on edit page"
+    },
+    {
+      "key": "001_short_YX2U",
+      "videoId": "YX2UR1u-JCQ",
+      "ok": false,
+      "oops": true,
+      "note": "Studio Oops on edit page"
+    },
+    {
+      "key": "001_short_Fnb3",
+      "videoId": "Fnb3p81u-wY",
+      "ok": false,
+      "oops": true,
+      "note": "Studio Oops on edit page"
+    },
+    {
+      "key": "001_short_vpuR",
+      "videoId": "vpuRgKXtFlY",
+      "ok": false,
+      "oops": true,
+      "note": "Studio Oops on edit page"
+    },
+    {
+      "key": "001_short_Lcmh",
+      "videoId": "Lcmh5y2KMQM",
+      "ok": false,
+      "oops": true,
+      "note": "Studio Oops on edit page"
+    },
+    {
+      "key": "002_short_uU12",
+      "videoId": "uU12JA5rMWg",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    },
+    {
+      "key": "002_short_nFQR",
+      "videoId": "nFQRWmpulTQ",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    },
+    {
+      "key": "002_short_CnHw",
+      "videoId": "CnHwX1L9XHg",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    },
+    {
+      "key": "002_short_nba0",
+      "videoId": "nba0-f7PPeU",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    },
+    {
+      "key": "002_short_LanT",
+      "videoId": "LanTHJckYx8",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    },
+    {
+      "key": "003_short_oowA",
+      "videoId": "oowAOWTBoq0",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    },
+    {
+      "key": "003_short_xvan",
+      "videoId": "xvanpsLeADE",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    },
+    {
+      "key": "003_short_zI_e",
+      "videoId": "zI_eD3vFWmE",
+      "ok": true,
+      "audience_before": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_before": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": false,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": false,
+        "section": "AI use"
+      },
+      "clicked": {
+        "label": "^Yes, AI was used$",
+        "via": "playwright_role"
+      },
+      "ai_mid_before_save": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      },
+      "saved": true,
+      "audience_after": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      },
+      "ai_after": {
+        "radios": [
+          {
+            "label": "Yes, AI was used",
+            "checked": true,
+            "isNo": false,
+            "isYes": true
+          },
+          {
+            "label": "No, AI wasn't used",
+            "checked": false,
+            "isNo": true,
+            "isYes": false
+          }
+        ],
+        "no": false,
+        "yes": true,
+        "section": "AI use"
+      }
+    }
+  ],
+  "summary": {
+    "total": 17,
+    "ok": 12,
+    "oops": [
+      "001_short_8uBR",
+      "001_short_YX2U",
+      "001_short_Fnb3",
+      "001_short_vpuR",
+      "001_short_Lcmh"
+    ],
+    "fail": [],
+    "ok_keys": [
+      "004_long",
+      "001_long",
+      "002_long",
+      "003_long",
+      "002_short_uU12",
+      "002_short_nFQR",
+      "002_short_CnHw",
+      "002_short_nba0",
+      "002_short_LanT",
+      "003_short_oowA",
+      "003_short_xvan",
+      "003_short_zI_e"
+    ]
+  }
+}

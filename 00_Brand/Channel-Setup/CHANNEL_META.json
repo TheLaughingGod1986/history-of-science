@@ -83,7 +83,7 @@
       "at_uk": "2026-09-30T00:39",
       "order": "Ben 20:03 growth-settings unchanged",
       "audience_not_kids": true,
-      "altered_ai_use": "No, AI wasn't used",
+      "altered_ai_use": "SUPERSEDED by ben_2149_altered_yes — was No, AI wasn't used",
       "visibility_scheduled_15_oct": true,
       "premiere_off": true,
       "tc": "Ineligible; 2 titles listed; cancelled Run-a-new-test; re-arm 3 pairs or Thumbnail-only after public",
@@ -91,6 +91,36 @@
       "selector_policy": "aria-label/own-text only; one control per save; audience re-read after every save",
       "shorts_s02_v06": "gate PASS; iCloud; STOP phone watch",
       "result_json": "COS_CHECKIN_2102_RESULT.json"
+    },
+    "ben_2149_altered_yes": {
+      "at_uk": "2026-09-30T21:49",
+      "recorded_at": "2026-09-30T00:02:00+00:00",
+      "order": "CHANGE OF ORDER — Altered or synthetic content = YES (overrides 20:03 No and CoS 21:02 No)",
+      "reason": "AI-generated visuals and an AI clone of Ben's voice",
+      "studio_label": "Yes, AI was used",
+      "policy_every_upload": "Altered/synthetic YES; after every save re-check Audience not Made for Kids",
+      "applied_ok": [
+        "GHZDsiH7L7A",
+        "_C92tIJCk8A",
+        "AL_-qlWko_g",
+        "frP_YrNShsU",
+        "uU12JA5rMWg",
+        "nFQRWmpulTQ",
+        "CnHwX1L9XHg",
+        "nba0-f7PPeU",
+        "LanTHJckYx8",
+        "oowAOWTBoq0",
+        "xvanpsLeADE",
+        "zI_eD3vFWmE"
+      ],
+      "studio_oops_not_set": [
+        "8uBR-9oxeWs",
+        "YX2UR1u-JCQ",
+        "Fnb3p81u-wY",
+        "vpuRgKXtFlY",
+        "Lcmh5y2KMQM"
+      ],
+      "result_json": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/ALTERED_YES_2149_RESULT.json"
     }
   }
 }

@@ -313,7 +313,7 @@ Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish o
 |---|---|
 | Audience (Made for Kids) | **OK — No, not Made for Kids** (checked after every save). See Made for Kids section. Proof: `URGENT_audience_004_not_made_for_kids.png` |
 | Visibility | **OK — leave alone** — Scheduled **15 Oct 2026 18:00 UK**, **Set as Premiere OFF** (`aria-checked=false`, input `18:00`), title *What's Really Inside an Atom?*, private until then. Proof: `FINISH_visibility_15oct_1800_premiere_off.png` · `finish_v01c_91_visibility_final.png` |
-| Altered / AI use | **OK — No** (Ben 20:03 override; CoS 21:02 re-confirmed “No, AI wasn't used”). Proof: `COS2102_B4_altered_AFTER.png` · `BEN_growth_B4_altered_AFTER.png` |
+| Altered / AI use | **OK — YES** (Ben **21:49 CHANGE OF ORDER** — overrides 20:03 No / CoS 21:02 No). “Yes, AI was used” — AI visuals + AI clone of Ben's voice. Audience re-checked not-kids after save. Proof: `ALTERED_YES_004_long_VERIFY.png` · `ALTERED_YES_2149_RESULT.json` |
 | Custom thumb A v04 | **Still not persisted** — Studio still shows **C / THE HIDDEN NUMBER** after A image-input uploads + Save. Ben: set A manually when Studio save is healthy. Proof: `finish_v01d_03_thumb_reload.png` |
 | Test & Compare | **Ineligible** (scheduled/private). Details still lists **2 titles** (Atom · Periodic) — **not** the wanted 3 pairs. CoS 21:02: Cancelled “Run a new test?” (did **not** Continue / scramble). No Remove/End while Ineligible. **Do not leave a new 2-slot title test.** After 15 Oct public: arm **3 pairs** (A+Atom · C v06+Periodic · B v04+Gold) or **Thumbnail-only A/B/C**. Proof: `COS2102_B9_tc_DIALOG.png` · `COS_CHECKIN_2102_REMAIN_RESULT.json` |
 | Description + chapters | **OK** — package description + chapters, no `/go/` links. |
@@ -337,7 +337,26 @@ Package says `madeForKids: false`. Studio had shown “Made for Kids” on `GHZD
 | **003 long `frP_YrNShsU` + 3 Shorts** | All **Not Made for Kids** | `urgent_kids_003_*.png` |
 | **Made-for-Kids hits** | **None** among verified videos | `URGENT_KIDS_AUDIT_V01.json` |
 
-**Policy (every upload from now on):** after each Studio save, open Details → Audience and confirm **“No, it's not made for kids”** before end screen / pin / other finish steps. End screens and pinned comments do not work on kids’ videos — Audience first.
+**Policy (every upload from now on):**
+1. **Altered / synthetic content = YES** (“Yes, AI was used”) — Ben 21:49 (AI visuals + AI voice clone). One setting per save.
+2. After **every** Studio save, re-check Audience = **“No, it's not made for kids”** (named selectors only — never broad “first Yes”).
+End screens and pinned comments do not work on kids’ videos — Audience first.
+
+## Altered / AI use = YES — Ben 21:49 CHANGE OF ORDER
+
+Overrides Ben 20:03 “Altered content: No” and CoS 21:02 note to set No. Reason: AI-generated visuals and an AI clone of Ben's voice.
+
+| Video | Result | Audience after |
+|---|---|---|
+| **004 long `GHZDsiH7L7A`** | **YES** (“Yes, AI was used”) | not Made for Kids |
+| **001 long `_C92tIJCk8A`** | **YES** (already Yes) | not Made for Kids |
+| **002 long `AL_-qlWko_g`** | **YES** | not Made for Kids |
+| **003 long `frP_YrNShsU`** | **YES** | not Made for Kids |
+| **002 Shorts** (5) | **YES** ×5 | not Made for Kids |
+| **003 Shorts** (3) | **YES** ×3 | not Made for Kids |
+| **001 Shorts** (5) | **Studio Oops** on all edit URLs — **not settable via Details** (same as kids audit). Retry after Studio fixes edit pages. | n/a |
+
+CDP `:9460` · named radio `Yes, AI was used` · one save · Audience re-read. JSON: `ALTERED_YES_2149_RESULT.json` · `ALTERED_YES_2149_001SHORTS_RETRY.json`. Script: `_ben_2149_altered_yes_v01.py`.
 
 JSON: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_KIDS_AUDIT_V01.json` · `URGENT_KIDS_FIX_V02.json` · `URGENT_CHANNEL_ADVANCED_V03.json`
 
@@ -394,7 +413,7 @@ Ben re-sent the growth order unchanged. Live CDP pass with **named selectors onl
 | **B1 Audience** | Not Made for Kids; Comments/Notifications disabled notices **gone** | `BEN_growth_B1_audience.png` |
 | **B2 Visibility** | **Scheduled 15 Oct 2026 18:00**; **Set as Premiere OFF**; private until then | `BEN_growth_B2_visibility_PROOF.png` |
 | **B3 Details** | Title Atom; package description+chapters (no `/go/`); thumb A upload attempted; tags set | `BEN_growth_B3_details.png` |
-| **B4 AI use / Altered** | **No** (“No, AI wasn't used”) — CoS 21:02 re-confirmed | `COS2102_B4_altered_AFTER.png` · `BEN_growth_B4_altered_AFTER.png` |
+| **B4 AI use / Altered** | **YES** (“Yes, AI was used”) — Ben **21:49** overrides 20:03/21:02 No | `ALTERED_YES_004_long_VERIFY.png` |
 | **B5 Subtitles** | English present / upload path used (`hos_004_full_v02.en.srt`) | `BEN_growth_B5_subtitles_AFTER.png` |
 | **B6 End screen** | **Blocked** — processing error; Specific 002 not saved (Subscribe template only) | `COS2102ES4_06_saved.png` |
 | **B7 Cards** | Attempted ~1:30→002 + ~6:00→003; verify in Studio | `BEN_growth_B7_cards_AFTER.png` |

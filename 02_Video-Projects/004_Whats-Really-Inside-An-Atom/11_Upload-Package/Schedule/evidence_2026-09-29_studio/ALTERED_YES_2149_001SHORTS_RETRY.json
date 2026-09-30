@@ -1,0 +1,104 @@
+{
+  "at": "2026-09-30T01:03:10",
+  "retries": [
+    {
+      "key": "001_short_8uBR",
+      "videoId": "8uBR-9oxeWs",
+      "oops_urls": [
+        "https://studio.youtube.com/video/8uBR-9oxeWs/edit",
+        "https://studio.youtube.com/video/8uBR-9oxeWs/edit?o=U",
+        "https://studio.youtube.com/video/8uBR-9oxeWs/details"
+      ],
+      "content_click": null,
+      "oops": true,
+      "ok": false
+    },
+    {
+      "key": "001_short_YX2U",
+      "videoId": "YX2UR1u-JCQ",
+      "oops_urls": [
+        "https://studio.youtube.com/video/YX2UR1u-JCQ/edit",
+        "https://studio.youtube.com/video/YX2UR1u-JCQ/edit?o=U",
+        "https://studio.youtube.com/video/YX2UR1u-JCQ/details"
+      ],
+      "content_click": null,
+      "oops": true,
+      "ok": false
+    },
+    {
+      "key": "001_short_Fnb3",
+      "videoId": "Fnb3p81u-wY",
+      "oops_urls": [
+        "https://studio.youtube.com/video/Fnb3p81u-wY/edit",
+        "https://studio.youtube.com/video/Fnb3p81u-wY/edit?o=U",
+        "https://studio.youtube.com/video/Fnb3p81u-wY/details"
+      ],
+      "content_click": null,
+      "oops": true,
+      "ok": false
+    },
+    {
+      "key": "001_short_vpuR",
+      "videoId": "vpuRgKXtFlY",
+      "oops_urls": [
+        "https://studio.youtube.com/video/vpuRgKXtFlY/edit",
+        "https://studio.youtube.com/video/vpuRgKXtFlY/edit?o=U",
+        "https://studio.youtube.com/video/vpuRgKXtFlY/details"
+      ],
+      "content_click": null,
+      "oops": true,
+      "ok": false
+    },
+    {
+      "key": "001_short_Lcmh",
+      "videoId": "Lcmh5y2KMQM",
+      "oops_urls": [
+        "https://studio.youtube.com/video/Lcmh5y2KMQM/edit",
+        "https://studio.youtube.com/video/Lcmh5y2KMQM/edit?o=U",
+        "https://studio.youtube.com/video/Lcmh5y2KMQM/details"
+      ],
+      "content_click": null,
+      "oops": true,
+      "ok": false
+    }
+  ],
+  "paid_promo_004": null,
+  "004_verify": {
+    "ai": {
+      "radios": [
+        {
+          "label": "Yes, AI was used",
+          "checked": true,
+          "isNo": false,
+          "isYes": true
+        },
+        {
+          "label": "No, AI wasn't used",
+          "checked": false,
+          "isNo": true,
+          "isYes": false
+        }
+      ],
+      "no": false,
+      "yes": true,
+      "section": "AI use"
+    },
+    "audience": {
+      "yes_checked": null,
+      "no_checked": true,
+      "banner": true,
+      "radios": [
+        {
+          "label": "No, it's not 'Made for Kids'",
+          "checked": true,
+          "kidsYes": false,
+          "kidsNo": true,
+          "via": "own"
+        }
+      ],
+      "ok_not_kids": true,
+      "fail_kids": false
+    },
+    "paid_promo": null
+  }
+}
