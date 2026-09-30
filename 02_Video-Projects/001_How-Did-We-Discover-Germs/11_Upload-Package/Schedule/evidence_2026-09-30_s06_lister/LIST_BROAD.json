@@ -1,0 +1,5 @@
+{
+  "len": 308,
+  "snip": "{\n  \"error\": {\n    \"code\": 401,\n    \"message\": \"You must be signed in to perform this operation.\",\n    \"errors\": [\n      {\n        \"message\": \"You must be signed in to perform this operation.\",\n        \"domain\": \"global\",\n        \"reason\": \"unauthorized\"\n      }\n    ],\n    \"status\": \"UNAUTHENTICATED\"\n  }\n}\n",
+  "ids": []
+}

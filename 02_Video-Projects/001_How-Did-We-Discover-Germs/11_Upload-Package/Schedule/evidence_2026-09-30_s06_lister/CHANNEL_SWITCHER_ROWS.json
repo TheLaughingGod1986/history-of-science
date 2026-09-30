@@ -1,0 +1,66 @@
+[
+  {
+    "tag": "YTD-ACCOUNT-ITEM-RENDERER",
+    "t": "OpptiAI @OpptiAI 3 subscribers",
+    "x": 899,
+    "y": 168,
+    "w": 298,
+    "h": 64
+  },
+  {
+    "tag": "YT-FORMATTED-STRING",
+    "t": "OpptiAI",
+    "x": 903,
+    "y": 146,
+    "w": 161,
+    "h": 20
+  },
+  {
+    "tag": "YT-FORMATTED-STRING",
+    "t": "@OpptiAI",
+    "x": 903,
+    "y": 165,
+    "w": 161,
+    "h": 18
+  },
+  {
+    "tag": "YTD-ACCOUNT-ITEM-RENDERER",
+    "t": "Orbit With Ben @OrbitWithBen 11 subscribers",
+    "x": 1197,
+    "y": 168,
+    "w": 298,
+    "h": 64
+  },
+  {
+    "tag": "YT-FORMATTED-STRING",
+    "t": "Orbit With Ben",
+    "x": 1225,
+    "y": 146,
+    "w": 210,
+    "h": 20
+  },
+  {
+    "tag": "YT-FORMATTED-STRING",
+    "t": "@OrbitWithBen",
+    "x": 1225,
+    "y": 165,
+    "w": 210,
+    "h": 18
+  },
+  {
+    "tag": "YTD-ACCOUNT-ITEM-RENDERER",
+    "t": "History of Science @HistoryOfScienceYT 1 subscriber",
+    "x": 601,
+    "y": 232,
+    "w": 298,
+    "h": 64
+  },
+  {
+    "tag": "YT-FORMATTED-STRING",
+    "t": "History of Science",
+    "x": 629,
+    "y": 210,
+    "w": 209,
+    "h": 20
+  }
+]

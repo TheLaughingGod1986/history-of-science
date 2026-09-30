@@ -1,0 +1,162 @@
+[
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_videos?alt=json",
+    "ids": [
+      "clV6E10NLPw"
+    ],
+    "titles": [],
+    "has_germs_id": true,
+    "has_germs_title": true,
+    "len": 21587
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_videos?alt=json",
+    "ids": [
+      "clV6E10NLPw"
+    ],
+    "titles": [],
+    "has_germs_id": true,
+    "has_germs_title": true,
+    "len": 22506
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_videos?alt=json",
+    "ids": [],
+    "titles": [],
+    "has_germs_id": false,
+    "has_germs_title": false,
+    "len": 3379
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_videos?alt=json",
+    "ids": [],
+    "titles": [],
+    "has_germs_id": false,
+    "has_germs_title": false,
+    "len": 3379
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_videos?alt=json",
+    "ids": [],
+    "titles": [],
+    "has_germs_id": false,
+    "has_germs_title": false,
+    "len": 3379
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_videos?alt=json",
+    "ids": [],
+    "titles": [],
+    "has_germs_id": false,
+    "has_germs_title": false,
+    "len": 3379
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_videos?alt=json",
+    "ids": [],
+    "titles": [],
+    "has_germs_id": false,
+    "has_germs_title": false,
+    "len": 3379
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_videos?alt=json",
+    "ids": [],
+    "titles": [],
+    "has_germs_id": false,
+    "has_germs_title": false,
+    "len": 3379
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_videos?alt=json",
+    "ids": [],
+    "titles": [],
+    "has_germs_id": false,
+    "has_germs_title": false,
+    "len": 3379
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_videos?alt=json",
+    "ids": [
+      "clV6E10NLPw"
+    ],
+    "titles": [],
+    "has_germs_id": true,
+    "has_germs_title": true,
+    "len": 21589
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_videos?alt=json",
+    "ids": [
+      "clV6E10NLPw"
+    ],
+    "titles": [],
+    "has_germs_id": true,
+    "has_germs_title": true,
+    "len": 22485
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/list_creator_videos?alt=json",
+    "ids": [],
+    "titles": [],
+    "has_germs_id": false,
+    "has_germs_title": false,
+    "len": 3370
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_videos?alt=json",
+    "ids": [
+      "clV6E10NLPw"
+    ],
+    "titles": [],
+    "has_germs_id": true,
+    "has_germs_title": true,
+    "len": 21583
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_videos?alt=json",
+    "ids": [
+      "clV6E10NLPw"
+    ],
+    "titles": [],
+    "has_germs_id": true,
+    "has_germs_title": true,
+    "len": 22476
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_videos?alt=json",
+    "ids": [
+      "clV6E10NLPw"
+    ],
+    "titles": [],
+    "has_germs_id": true,
+    "has_germs_title": true,
+    "len": 21591
+  },
+  {
+    "status": 200,
+    "url": "https://studio.youtube.com/youtubei/v1/creator/get_creator_videos?alt=json",
+    "ids": [
+      "clV6E10NLPw"
+    ],
+    "titles": [],
+    "has_germs_id": true,
+    "has_germs_title": true,
+    "len": 22499
+  }
+]

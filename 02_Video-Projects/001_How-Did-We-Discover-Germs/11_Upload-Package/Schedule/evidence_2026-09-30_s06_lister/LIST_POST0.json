@@ -1,0 +1,108 @@
+{
+  "filter": {
+    "and": {
+      "operands": [
+        {
+          "channelIdIs": {
+            "value": "UCXp7HkBIl1LgaznXuZHJyRg"
+          }
+        },
+        {
+          "or": {
+            "operands": [
+              {
+                "statusIs": {
+                  "value": "VIDEO_STATUS_PROCESSED"
+                }
+              },
+              {
+                "statusIs": {
+                  "value": "VIDEO_STATUS_UPLOADED"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "not": {
+            "operand": {
+              "privacyIs": {
+                "value": "VIDEO_PRIVACY_PRIVATE"
+              }
+            }
+          }
+        },
+        {
+          "not": {
+            "operand": {
+              "or": {
+                "operands": [
+                  {
+                    "videoIdIs": {
+                      "value": "clV6E10NLPw"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "order": "VIDEO_ORDER_DISPLAY_TIME_DESC",
+  "pageSize": 50,
+  "mask": {
+    "videoId": true,
+    "title": true,
+    "status": true,
+    "thumbnailDetails": {
+      "all": true
+    },
+    "permissions": {
+      "all": true
+    },
+    "responseStatus": {
+      "all": true
+    }
+  },
+  "context": {
+    "client": {
+      "clientName": 62,
+      "clientVersion": "1.20260929.02.00",
+      "hl": "en-GB",
+      "gl": "GB",
+      "experimentsToken": "",
+      "utcOffsetMinutes": 60,
+      "userInterfaceTheme": "USER_INTERFACE_THEME_LIGHT",
+      "screenWidthPoints": 1680,
+      "screenHeightPoints": 709,
+      "screenPixelDensity": 1,
+      "screenDensityFloat": 1
+    },
+    "request": {
+      "returnLogEntry": true,
+      "internalExperimentFlags": [],
+      "eats": "AXoBSW8hWN7vmNcqJn5amW1BgVg5L6h46a13TNWiMDmpplh9sz58iFOQ5DcDA57QpBdEIAyZmTiQt2HCXjgfEFDamRDOqTnOUJXRnHsIGhv-e2lLOIs=",
+      "consistencyTokenJars": [],
+      "sessionInfo": {
+        "token": "YR1SZJKFZR"
+      }
+    },
+    "user": {
+      "delegationContext": {
+        "externalChannelId": "UCXRVwrCxXpN_o9gvuHPKAPQ",
+        "roleType": {
+          "channelRoleType": "CREATOR_CHANNEL_ROLE_TYPE_OWNER"
+        }
+      },
+      "serializedDelegationContext": "EhhVQ1hSVndyQ3hYcE5fbzlndnVIUEtBUFEqAggI"
+    },
+    "clickTracking": {
+      "visualElement": {
+        "veType": 74615
+      }
+    },
+    "clientScreenNonce": "XLsaxkxwl3GjU_oO"
+  }
+}

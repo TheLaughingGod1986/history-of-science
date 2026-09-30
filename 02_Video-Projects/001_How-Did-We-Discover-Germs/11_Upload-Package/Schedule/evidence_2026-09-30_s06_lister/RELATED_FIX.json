@@ -1,0 +1,43 @@
+{
+  "vid": "clV6E10NLPw",
+  "related_id": "_C92tIJCk8A",
+  "wizard_related": "no_add",
+  "save": "save_not_found_or_grey",
+  "body_has_germs_related": true,
+  "body_related_none": true,
+  "ai": {
+    "radios": [
+      {
+        "label": "Yes, AI was used",
+        "checked": true,
+        "isNo": false,
+        "isYes": true
+      },
+      {
+        "label": "No, AI wasn't used",
+        "checked": false,
+        "isNo": true,
+        "isYes": false
+      }
+    ],
+    "no": false,
+    "yes": true,
+    "section": "AI use"
+  },
+  "audience": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  }
+}
