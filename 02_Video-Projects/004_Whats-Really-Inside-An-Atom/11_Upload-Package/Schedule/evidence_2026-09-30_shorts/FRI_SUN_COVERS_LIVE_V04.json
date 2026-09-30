@@ -1,0 +1,71 @@
+{
+  "ts": "2026-09-30T11:44:55.754519+00:00",
+  "note": "cover only",
+  "results": [
+    {
+      "ok": true,
+      "slot": "fri",
+      "id": "29bpGAI0wb8",
+      "title": "How small can you cut gold?",
+      "upload": {
+        "ok": true,
+        "method": "set_input_files:0",
+        "notes": [
+          "scroll:Locator.scroll_into_view_if_needed: Timeout 4978ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    9 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 500ms\n",
+          "file_inputs=1",
+          {
+            "inputs": [
+              {
+                "acc": "image/jpeg,image/png",
+                "id": "file-loader",
+                "name": "",
+                "aria": "",
+                "near": "YTCP-THUMBNAIL-UPLOADER",
+                "path": ""
+              }
+            ]
+          },
+          "light_inputs=1",
+          "set_input_files_i=0_acc=image/jpeg,image/png"
+        ]
+      },
+      "save": "js_Save",
+      "before": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_fri_29bpGAI0wb8_01_before.png",
+      "after_upload": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_fri_29bpGAI0wb8_02_after_upload.png",
+      "after_save": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_fri_29bpGAI0wb8_03_after_save.png"
+    },
+    {
+      "ok": true,
+      "slot": "sun",
+      "id": "TbMMJSRKC3U",
+      "title": "He said every eighth element repeats",
+      "upload": {
+        "ok": true,
+        "method": "set_input_files:0",
+        "notes": [
+          "scroll:Locator.scroll_into_view_if_needed: Timeout 4980ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    9 \u00d7 waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 500ms\n",
+          "file_inputs=1",
+          {
+            "inputs": [
+              {
+                "acc": "image/jpeg,image/png",
+                "id": "file-loader",
+                "name": "",
+                "aria": "",
+                "near": "YTCP-THUMBNAIL-UPLOADER",
+                "path": ""
+              }
+            ]
+          },
+          "light_inputs=1",
+          "set_input_files_i=0_acc=image/jpeg,image/png"
+        ]
+      },
+      "save": "js_Save",
+      "before": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_sun_TbMMJSRKC3U_01_before.png",
+      "after_upload": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_sun_TbMMJSRKC3U_02_after_upload.png",
+      "after_save": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_sun_TbMMJSRKC3U_03_after_save.png"
+    }
+  ],
+  "ok": true
+}
