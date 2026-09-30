@@ -1,0 +1,56 @@
+{
+  "at": "2026-09-30T01:29:01",
+  "url": "https://studio.youtube.com/video/GHZDsiH7L7A/edit",
+  "audience": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "altered": {
+    "radios": [
+      {
+        "label": "Yes, AI was used",
+        "checked": true,
+        "isNo": false,
+        "isYes": true
+      },
+      {
+        "label": "No, AI wasn't used",
+        "checked": false,
+        "isNo": true,
+        "isYes": false
+      }
+    ],
+    "no": false,
+    "yes": true,
+    "section": "AI use"
+  },
+  "tc": {
+    "ineligible": false,
+    "has_ab_testing": true,
+    "titles_present": [
+      "What's Really Inside an Atom?"
+    ],
+    "title_count": 1,
+    "two_slot_title_test": false
+  },
+  "summary": {
+    "audience_not_kids": true,
+    "altered_yes": true,
+    "tc_two_slot": false,
+    "titles": [
+      "What's Really Inside an Atom?"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "at": "2026-09-30T01:27:53",
+  "order": "Ben 22:26 soft verify \u2014 thumb A primary done; T&C not re-looped",
+  "videoId": "GHZDsiH7L7A",
+  "content": {
+    "has_title": true,
+    "mentions_hidden_number": false,
+    "ab_test_running_on_004": false
+  },
+  "undid_unsaved": false,
+  "staged_titles": false,
+  "tc": {
+    "ineligible": false,
+    "has_ab_testing": false,
+    "titles_present": [
+      "What's Really Inside an Atom?"
+    ],
+    "title_count": 1,
+    "two_slot_title_test": false,
+    "snip": "Channel content\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n8:45\nWhat's Really Inside an Atom?\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table. Cut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight. A 3D cartoon film about the\n\u2014\nScheduled\n15 Oct 2026\nScheduled\n6\n0\n7:06\nHow Did We Discover X-rays?\nHow Did We Discover X-rays? In a dark W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen covered a cathode tube so nothing should escape. Across the room, a cardboard screen painted to glow under light\u2026 glowed anyway. Something invisible had left the tube. He called it X \u2014 for unknown. This is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha R\u00f6ntgen\u2019s hand \u2014 bones and wedding ring \u2014 that turned a haunted glow into proof th\n\u2014\nPublic\n24 Sept 2026\nPremiered\n1\n0\n9:01\nHow Did We Discover the Periodic Table?\nA/B test running\n\u2014\nPublic\n17 Sept 2026\nPremiered\n118\n0\n6:05\nHow Did We Discover Germs?\nA/B test completed\n\u2014\nPublic\n3 Sept 2026\nPremiered\n6\n1\nRows per page:\n30\n1\u20134 of 4"
+  },
+  "audience": {
+    "yes_checked": null,
+    "no_checked": null,
+    "banner": false,
+    "radios": [],
+    "ok_not_kids": false,
+    "fail_kids": false
+  },
+  "altered": {
+    "radios": [],
+    "no": null,
+    "yes": null,
+    "section": null
+  },
+  "visibility_snip": {
+    "scheduled": true,
+    "premiere_off_guess": true
+  },
+  "summary": {
+    "main_thumb_content_ok": true,
+    "audience_not_kids": false,
+    "altered_yes": false,
+    "tc_two_slot": false,
+    "tc_ineligible": false,
+    "titles": [
+      "What's Really Inside an Atom?"
+    ],
+    "staged_cleared": true,
+    "tc_rearm": "blocked_studio_trouble_saving_after_one_retry \u2014 re-arm after 15 Oct public (3 pairs or Thumbnail-only)"
+  }
+}

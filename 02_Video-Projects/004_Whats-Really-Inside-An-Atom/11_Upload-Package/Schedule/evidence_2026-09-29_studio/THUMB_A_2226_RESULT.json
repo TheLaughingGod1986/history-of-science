@@ -1,0 +1,155 @@
+{
+  "at": "2026-09-30T01:13:19",
+  "order": "Ben 22:26 TOP PRIORITY thumb A on GHZDsiH7L7A",
+  "videoId": "GHZDsiH7L7A",
+  "thumb_a": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
+  "tc_clear": {
+    "actions": [
+      {
+        "open_ab": "A/B Testing"
+      },
+      "continue_delete_current_test",
+      "cancel_new_^Close$"
+    ],
+    "had_two_slot": true,
+    "ended": true,
+    "titles_present": [
+      "What's Really Inside an Atom?",
+      "Why Is the Periodic Table in This Order?"
+    ],
+    "titles_after": [
+      "What's Really Inside an Atom?"
+    ],
+    "still_two_slot": false
+  },
+  "upload": {
+    "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
+    "uploaded": true,
+    "saved": false,
+    "file_inputs": [
+      {
+        "al": "",
+        "acc": "image/jpeg,image/png",
+        "name": "",
+        "y": 0,
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "clicked_upload_btn": false,
+    "input_count": 1,
+    "uploaded_via": {
+      "i": 0,
+      "accept": "image/jpeg,image/png",
+      "aria": ""
+    },
+    "saved_click": true,
+    "changes_saved": true,
+    "trouble_saving": false
+  },
+  "confirm": {
+    "has_title": true,
+    "row": {
+      "src": "",
+      "alt": "",
+      "y": 111,
+      "t": "What's Really Inside an Atom?"
+    },
+    "edit_preview": null,
+    "page_mentions_hidden_number": false,
+    "ok_guess": null
+  },
+  "audience": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "altered": {
+    "radios": [
+      {
+        "label": "Yes, AI was used",
+        "checked": true,
+        "isNo": false,
+        "isYes": true
+      },
+      {
+        "label": "No, AI wasn't used",
+        "checked": false,
+        "isNo": true,
+        "isYes": false
+      }
+    ],
+    "no": false,
+    "yes": true,
+    "section": "AI use"
+  },
+  "tc_rearm": {
+    "mode": "Title and thumbnail",
+    "actions": [
+      "opened_tc_deep",
+      "uploaded_0",
+      "uploaded_1",
+      "uploaded_2",
+      "filled_titles",
+      "tc_^Set test$"
+    ],
+    "ineligible": false,
+    "file_inputs": 4
+  },
+  "audience_final": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "altered_final": {
+    "radios": [
+      {
+        "label": "Yes, AI was used",
+        "checked": true,
+        "isNo": false,
+        "isYes": true
+      },
+      {
+        "label": "No, AI wasn't used",
+        "checked": false,
+        "isNo": true,
+        "isYes": false
+      }
+    ],
+    "no": false,
+    "yes": true,
+    "section": "AI use"
+  },
+  "summary": {
+    "tc_ended": true,
+    "still_two_slot": false,
+    "uploaded": true,
+    "changes_saved": true,
+    "trouble_saving": false,
+    "audience_not_kids": true,
+    "altered_yes": true,
+    "tc_rearm_mode": "Title and thumbnail"
+  }
+}
