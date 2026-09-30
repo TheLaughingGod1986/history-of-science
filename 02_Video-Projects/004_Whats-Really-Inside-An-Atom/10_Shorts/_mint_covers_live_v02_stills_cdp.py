@@ -712,8 +712,16 @@ def download_newest_portrait(
             flow.dismiss_soft_prompts(page)
         except Exception:
             pass
-        body_snip = page_text(page, 3000)
-        gen_hint = bool(
+        # Progress % often sits as a bare "12%" tile label — read via evaluate too.
+        pct = page.evaluate(
+            """() => {
+              const t = (document.body && document.body.innerText) || '';
+              const m = t.match(/\\b(\\d{1,3})%/);
+              return m ? Number(m[1]) : null;
+            }"""
+        )
+        body_snip = page_text(page, 2500)
+        gen_hint = pct is not None or bool(
             re.search(
                 r"\b\d{1,3}%\b|in the queue|generat(?:ing|e)|rendering|Creating your",
                 body_snip,
@@ -725,26 +733,27 @@ def download_newest_portrait(
         srcs = gallery_media_srcs(page)
         new_srcs = [s for s in srcs if s not in before_srcs]
         print(
-            f"  image poll new_srcs={len(new_srcs)} gen_hint={gen_hint} "
+            f"  image poll new_srcs={len(new_srcs)} pct={pct} gen_hint={gen_hint} "
             f"saw_progress={saw_progress} elapsed={int(time.time()-t0)}s",
             flush=True,
         )
-        if gen_hint:
-            page.wait_for_timeout(3000)
+        if gen_hint and (pct is None or pct < 100):
+            page.wait_for_timeout(2500)
             continue
-        ready = len(new_srcs) > 0 and (saw_progress or (time.time() - t0 > 35))
+        # After progress completes (or long wait), capture leftmost newest portrait
+        ready = saw_progress or (time.time() - t0 > 40)
         if ready:
-            for _ in range(2):
-                try:
-                    page.keyboard.press("Escape")
-                except Exception:
-                    pass
-                page.wait_for_timeout(100)
+            # Prefer NEW srcs; if none detected yet, still try clip of leftmost tall tile
             if _screenshot_largest_new_portrait(page, dest, before_srcs):
-                return dest
-            # Mark these srcs seen so we don't tight-loop the same miss
-            before_srcs = before_srcs | set(new_srcs)
-        page.wait_for_timeout(3500)
+                from PIL import Image
+
+                im = Image.open(dest)
+                # Reject explorer sheet and known style-cover text boards by size/warmth later in qa
+                if im.size != (1122, 1402) and im.size[1] > im.size[0]:
+                    return dest
+            if len(new_srcs) > 0:
+                before_srcs = before_srcs | set(new_srcs)
+        page.wait_for_timeout(3000)
     try:
         page.screenshot(path=str(QA_DIR / "download_timeout.png"), full_page=False)
     except Exception:
@@ -930,18 +939,14 @@ def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> d
         raise RuntimeError("chips cleared before send — abort try")
     submit_create(page)
     page.wait_for_timeout(900)
-    confirmed = flow.confirm_generation_spend(page, timeout_s=25.0)
+    confirmed = flow.confirm_generation_spend(page, timeout_s=12.0)
     print(f"  confirm_spend={confirmed}", flush=True)
-    flow.dismiss_soft_prompts(page)
-    for lab in (r"^Create$", r"^Generate$", r"^Continue$", r"^OK$", r"^Confirm$"):
-        try:
-            btn = page.get_by_role("button", name=re.compile(lab, re.I))
-            if btn.count():
-                btn.first.click(timeout=1500)
-                page.wait_for_timeout(400)
-        except Exception:
-            pass
-    page.wait_for_timeout(5000)
+    # Do NOT click generic Create/OK/Continue — that cancels the Image gen.
+    try:
+        flow.dismiss_soft_prompts(page)
+    except Exception:
+        pass
+    page.wait_for_timeout(2000)
 
     download_newest_portrait(
         page, raw_path, before_srcs=before_srcs, timeout_s=240
