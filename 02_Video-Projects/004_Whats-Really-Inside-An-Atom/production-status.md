@@ -491,3 +491,33 @@ Ben re-sent the growth order unchanged. Live CDP pass with **named selectors onl
 | Growth B6 end screen | `…/BEN_growth_B6_endscreen_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B6_endscreen_AFTER.png` |
 | Growth B7 cards | `…/BEN_growth_B7_cards_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B7_cards_AFTER.png` |
 | Growth B8 playlist | `…/BEN_growth_B8_playlist_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B8_playlist_AFTER.png` |
+
+
+## Ben 14:47 whole-channel Studio §9 (recorded 2026-09-30T17:58:08+01:00)
+
+Channel: `@HistoryOfScienceYT` only. Supersedes narrower Fri/Sun/language orders where they overlap. Evidence: `11_Upload-Package/Schedule/evidence_2026-09-30_whole_channel_1447/` · artifacts `BEN_1447_whole_channel/` · `CONTACT_final_states.jpg` · `SWEEP_RESULT.json` · `TAGS4_RESULT.json`.
+
+### 004 videos
+| id | kind | notes |
+|---|---|---|
+| `GHZDsiH7L7A` | long | Core §9; tags fixed; Test & Compare **not touched**; schedule 15 Oct unchanged; How We Found Out playlist missing |
+| `29bpGAI0wb8` | Short (Fri) | Core §9; title already *What happens if you keep cutting gold in half?*; tags already OK; **Related deferred to 15 Oct 18:05** |
+| (no other 004 Shorts live yet beyond Fri) | | |
+
+**Would not save (channel-wide education taxonomy):** Academic system **United Kingdom** absent (England listed; left as UAE per “if listed”). GCSE Chemistry/Physics/Biology exams absent. Level “Secondary school” is a non-selectable header; Grade 10 leaf does not persist after reload. Playlist **History of Science: How We Found Out** does not exist; Studio “New playlist” submenu did not expose a title field — longs remain on *How Did We Discover…? | History of Science*.
+
+**Was Made for Kids / AI=No before:** none in sweep lists. Tag concatenation bug from first pass **repaired** (22/22 verified after reload). STOP.
+
+
+### Fri probe follow-up (2026-09-30T18:05:47+01:00)
+
+[Studio dropdown probe Fri](bc-73025afe-d117-5442-9891-fb3cac39f1d3) found Academic **United Kingdom** is not listed (England/Scotland/Wales are). Fri `29bpGAI0wb8` set to **Academic England** + **English (United Kingdom)** languages + Type Concept overview. Whole-channel 14:47 pass had reverted Academic to UAE — **restored England** and verified after reload (Scheduled, not-kids). Level still None (Key stage picks do not persist). GCSE Chemistry still not in exam taxonomy. Evidence: `11_Upload-Package/Schedule/evidence_2026-09-30_studio_fixes/FRI_ENGLAND_RESTORE_RESULT.json`.
+
+
+## Ben 19:54 Academic England + playlist + AI warn (recorded 2026-09-30T20:14:06+01:00)
+
+- **Academic system = England** on all 22 HOS videos (was UAE on 21; Fri already England).
+- **Level:** Key stage 4 (14–16) selects and saves in-session, then **reverts to None** on reload → left blank.
+- **Exam:** GCSE Chemistry/Physics/Biology **not in taxonomy** under England → left blank.
+- **Playlist:** `How Did We Discover…? | History of Science` has 001/002/003. **Add 004 `GHZDsiH7L7A` on launch day 15 Oct 18:05** — see `11_Upload-Package/Schedule/LAUNCH_DAY_15_OCT_1805.md`.
+- Evidence: `11_Upload-Package/Schedule/evidence_2026-09-30_england_1954/ENGLAND_1954_RESULT.json`.

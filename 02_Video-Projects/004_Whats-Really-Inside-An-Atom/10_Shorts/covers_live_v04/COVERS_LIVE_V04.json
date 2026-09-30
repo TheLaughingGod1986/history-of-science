@@ -1,0 +1,102 @@
+{
+  "ok": true,
+  "font": "/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf",
+  "teal": [
+    55,
+    168,
+    172
+  ],
+  "jobs": [
+    {
+      "spans": [
+        0.36,
+        0.082,
+        0.808
+      ],
+      "sizes": [
+        156,
+        78,
+        218
+      ],
+      "punch_span": 0.808,
+      "ink_bbox": [
+        83,
+        56,
+        1018,
+        516
+      ],
+      "edge_ok": true,
+      "has_teal": true,
+      "id": "s01",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v04/hos_004_s01_how_small_cover_live_v04.jpg",
+      "lines": [
+        "HOW",
+        "so",
+        "SMALL?"
+      ]
+    },
+    {
+      "spans": [
+        0.339,
+        0.16,
+        0.801
+      ],
+      "sizes": [
+        109,
+        57,
+        160
+      ],
+      "punch_span": 0.801,
+      "ink_bbox": [
+        97,
+        59,
+        1007,
+        397
+      ],
+      "edge_ok": true,
+      "has_teal": true,
+      "id": "s02",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v04/hos_004_s02_every_eighth_cover_live_v04.jpg",
+      "lines": [
+        "EVERY",
+        "eighth",
+        "ELEMENT?"
+      ]
+    },
+    {
+      "spans": [
+        0.313,
+        0.359,
+        0.769
+      ],
+      "sizes": [
+        165,
+        97,
+        244
+      ],
+      "punch_span": 0.769,
+      "ink_bbox": [
+        102,
+        56,
+        1003,
+        566
+      ],
+      "edge_ok": true,
+      "has_teal": true,
+      "id": "s06",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/covers_live_v01/hos_001_s06_carbolic_spray_cover_live_v01.jpg",
+      "lines": [
+        "THE",
+        "carbolic",
+        "SPRAY"
+      ]
+    }
+  ],
+  "eight_up": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v04/hos_004_shorts_covers_live_v04_eight_up.jpg",
+  "thumb_preview": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v04/hos_004_shorts_covers_live_v04_thumb_preview.jpg",
+  "fri_sun_for_studio": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v04/hos_004_s01_how_small_cover_live_v04.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v04/hos_004_s02_every_eighth_cover_live_v04.jpg"
+  ],
+  "tue_cover_no_upload": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/covers_live_v01/hos_001_s06_carbolic_spray_cover_live_v01.jpg"
+}

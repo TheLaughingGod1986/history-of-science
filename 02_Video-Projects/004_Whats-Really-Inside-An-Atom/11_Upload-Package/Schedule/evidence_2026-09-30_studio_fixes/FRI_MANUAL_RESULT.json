@@ -1,0 +1,131 @@
+{
+  "video": "29bpGAI0wb8",
+  "channel": "@HistoryOfScienceYT",
+  "final_selects": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system England",
+    "Level None",
+    "Exam, course or standard"
+  ],
+  "final_tags": [
+    "how small can you cut gold",
+    "what's really inside an atom",
+    "atom",
+    "gold",
+    "periodic table",
+    "history of science"
+  ],
+  "paid": [
+    {
+      "lab": "Yes, my video includes paid promotion",
+      "checked": false
+    },
+    {
+      "lab": "No, my video doesn't include paid promotion",
+      "checked": true
+    }
+  ],
+  "places": {
+    "lab": "Allow automatic places",
+    "checked": false
+  },
+  "visibility": "Visibility Scheduled",
+  "audience_not_kids": true,
+  "level_persist_tests": {
+    "Year 10": {
+      "clicked": true,
+      "after_pick": [
+        "Video language English (United Kingdom)",
+        "Title and description language English (United Kingdom)",
+        "Education",
+        "Type Concept overview",
+        "Academic system England",
+        "Level Year 10",
+        "Exam, course or standard"
+      ],
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "after_save": [
+        "Video language English (United Kingdom)",
+        "Title and description language English (United Kingdom)",
+        "Education",
+        "Type Concept overview",
+        "Academic system England",
+        "Level Year 10",
+        "Exam, course or standard"
+      ],
+      "after_reload": [
+        "Video language English (United Kingdom)",
+        "Title and description language English (United Kingdom)",
+        "Education",
+        "Type Concept overview",
+        "Academic system England",
+        "Level None",
+        "Exam, course or standard"
+      ],
+      "persisted": false
+    },
+    "Key stage 3": {
+      "clicked": true,
+      "after_pick": [
+        "Video language English (United Kingdom)",
+        "Title and description language English (United Kingdom)",
+        "Education",
+        "Type Concept overview",
+        "Academic system England",
+        "Level Key stage 3",
+        "Exam, course or standard"
+      ],
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "after_save": [
+        "Video language English (United Kingdom)",
+        "Title and description language English (United Kingdom)",
+        "Education",
+        "Type Concept overview",
+        "Academic system England",
+        "Level Key stage 3",
+        "Exam, course or standard"
+      ],
+      "after_reload": [
+        "Video language English (United Kingdom)",
+        "Title and description language English (United Kingdom)",
+        "Education",
+        "Type Concept overview",
+        "Academic system England",
+        "Level None",
+        "Exam, course or standard"
+      ],
+      "persisted": false
+    }
+  },
+  "targets": {
+    "paid_no": true,
+    "places_off": true,
+    "tags_ok": true,
+    "lang_uk": true,
+    "lang_ukrainian_bad": false,
+    "academic_england_uk": true,
+    "academic_uae_bad": false,
+    "academic_note": "Studio academic list has England/Scotland/Wales \u2014 no literal 'United Kingdom'. England set (not UAE).",
+    "type_concept": true,
+    "level_ok": false,
+    "level_note": "Under England, Studio shows Key stages not 'Secondary school'. Key stage 4 / Year 10 / Key stage 3 select+Save in UI but revert to None after reload (server does not persist without a matching Exam).",
+    "exam_gcse": false,
+    "exam_ap_bad": false,
+    "exam_note": "GCSE Chemistry not in Studio exam taxonomy (search GCSE\u2192CBSE only; Chemistry\u2192AP Chemistry + Indian exams; AQA/OCR/Edexcel\u2192none).",
+    "visibility_scheduled": true,
+    "audience_not_kids": true
+  },
+  "ok": true,
+  "ok_all_requested": false
+}

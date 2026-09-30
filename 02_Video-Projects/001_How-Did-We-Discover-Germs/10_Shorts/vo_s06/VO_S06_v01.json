@@ -1,0 +1,17 @@
+{
+  "id": "s06",
+  "slug": "carbolic_spray",
+  "words": 52,
+  "duration_s": 24.96,
+  "mean_db": -23.7,
+  "peak_db": -4.1,
+  "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/vo_s06/hos_001_s06_carbolic_spray_vo_v01.mp3",
+  "wav": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/vo_s06/hos_001_s06_carbolic_spray_vo_v01.wav",
+  "align": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/vo_s06/hos_001_s06_carbolic_spray_vo_v01_align.json",
+  "wav_sha256": "4ea4d7107e22ee798a26b8d106a02d76e5ccab54167989ad40dd82d5e8f0519e",
+  "speed": 1.04,
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "under_22s": false,
+  "added_line": "Antiseptic surgery began there."
+}

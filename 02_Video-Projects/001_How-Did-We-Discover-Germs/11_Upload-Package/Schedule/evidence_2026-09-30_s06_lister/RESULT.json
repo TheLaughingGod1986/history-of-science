@@ -1,0 +1,106 @@
+{
+  "ok": true,
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "job": {
+    "slot": "s06",
+    "title": "The spray that stopped surgery killing patients",
+    "related_id": "_C92tIJCk8A",
+    "air": "Tuesday 20 Oct 2026 11:30 Europe/London",
+    "cover": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/covers_live_v01/hos_001_s06_carbolic_spray_cover_live_v06.jpg"
+  },
+  "do_not_touch": [
+    "CUu8k38iAMc"
+  ],
+  "affiliate": "none",
+  "madeForKids": false,
+  "altered": "YES",
+  "category": "Education",
+  "comments": "ON",
+  "remixing": "ON",
+  "premiere": false,
+  "started": "2026-09-30T14:48:30+01:00",
+  "shorts": [
+    {
+      "slot": "s06",
+      "title": "The spray that stopped surgery killing patients",
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s06_carbolic_spray_punch_v01.mp4",
+      "thumb": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/covers_live_v01/hos_001_s06_carbolic_spray_cover_live_v06.jpg",
+      "cover": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/covers_live_v01/hos_001_s06_carbolic_spray_cover_live_v06.jpg",
+      "desc": true,
+      "related_id": "_C92tIJCk8A",
+      "related_title": "How Did We Discover Germs?",
+      "day": 20,
+      "month_re": "Oct|October",
+      "date_typed": "20 October 2026",
+      "time": "11:30",
+      "label": "Tuesday 20 Oct 2026 11:30 Europe/London",
+      "air_date": "2026-10-20",
+      "parent": "_C92tIJCk8A",
+      "relatedTitle": "How Did We Discover Germs?",
+      "resumed": false,
+      "openUpload": {
+        "intercept": "on",
+        "create": "Create",
+        "uploadVideos": "Upload videos",
+        "picker": true,
+        "details": false,
+        "fileInputs": 1
+      },
+      "attach": {
+        "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s06_carbolic_spray_punch_v01.mp4",
+        "image": false,
+        "ok": true,
+        "via": "cdp_setFileInputFiles"
+      },
+      "detailsStep": "already_details",
+      "titleFill": "fill",
+      "kids": "err:TimeoutError",
+      "tags": true,
+      "thumbAttempt": {
+        "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/covers_live_v01/hos_001_s06_carbolic_spray_cover_live_v06.jpg",
+        "image": true,
+        "ok": true,
+        "via": "cdp_setFileInputFiles"
+      },
+      "wizard": {
+        "related": "picked",
+        "visAt": "tab",
+        "schedule": {
+          "after": {
+            "date": "20 Oct 2026",
+            "time": "11:30"
+          },
+          "ok": true
+        },
+        "schedule_retry": {
+          "after": {
+            "date": "20 Oct 2026",
+            "time": "11:30"
+          },
+          "ok": true
+        },
+        "ok": true
+      },
+      "platformPostId": "clV6E10NLPw",
+      "platformUrl": "https://youtube.com/shorts/clV6E10NLPw",
+      "uploadUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/upload?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+      "related": "picked",
+      "relatedDeferred": false,
+      "ok": true,
+      "settings": {
+        "ok": false,
+        "error": "FileNotFoundError:[Errno 2] No such file or directory: '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/Schedule/_cos_checkin_2102_growth_fix_v01.py'"
+      }
+    }
+  ],
+  "hos": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Channel dashboard - YouTube Studio",
+    "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 3 days 3 hours\nRanking by views\n8 of 10\nViews\n8\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\n\nCreate your first post to start a conversation and get feedback from your community.\n\nCre"
+  },
+  "finished": "2026-09-30T14:49:15+01:00",
+  "platformPostId": "clV6E10NLPw",
+  "platformUrl": "https://youtube.com/shorts/clV6E10NLPw"
+}

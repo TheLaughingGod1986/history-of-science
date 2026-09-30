@@ -1,0 +1,162 @@
+{
+  "003": {
+    "id": "frP_YrNShsU",
+    "title": "How Did We Discover X-rays?",
+    "ai": [
+      {
+        "lab": "Yes, AI was used",
+        "aria": "true",
+        "checked": true
+      },
+      {
+        "lab": "No, AI wasn't used",
+        "aria": "false",
+        "checked": false
+      }
+    ],
+    "age": [
+      {
+        "lab": "Yes, restrict my video to viewers over 18",
+        "aria": "false",
+        "checked": false
+      },
+      {
+        "lab": "No, don't restrict my video to viewers over 18 only",
+        "aria": "true",
+        "checked": true
+      }
+    ],
+    "audience": [
+      {
+        "lab": "Yes, it's Made for Kids . Features like personalised ads and notifications won't",
+        "aria": "false",
+        "checked": false
+      },
+      {
+        "lab": "No, it's not 'Made for Kids'",
+        "aria": "true",
+        "checked": true
+      }
+    ],
+    "chip": "Visibility Public",
+    "comments_disabled": false,
+    "notifications_disabled": false,
+    "altered_snip": null,
+    "vis_dialog": "Save or publish\n\nPrivate\nUnlisted\nPublic\n\nSchedule",
+    "vis_controls": [
+      {
+        "lab": "Private",
+        "aria": "false",
+        "role": "radio",
+        "checked": false
+      },
+      {
+        "lab": "Unlisted",
+        "aria": "false",
+        "role": "radio",
+        "checked": false
+      },
+      {
+        "lab": "Public",
+        "aria": "true",
+        "role": "radio",
+        "checked": true
+      }
+    ],
+    "reach_snip": "Video analytics\nSkip navigation\nAsk Studio\nCreate\nChannel content\n7:06\nYour video\nHow Did We Discover X-rays?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo analytics\nAdvanced mode\nOverview\nReach\nEngagement\nAudience\n24 Sept 2026 \u2013 Now\nSince published\nThumbnail impressions\nThumbnail impressions\n18\nTotal number of times your video thumbnail was shown to viewers since the video was published.\nThumbnail click-through rate\n\u2014\nHow often viewers chose to watch a video after seeing a thumbnail. This is calculated as views per impression shown. Previously called 'impressions click-through rate'.\nViews\n1\nTotal views since the video was published.\nUnique viewers\n\u2014\nEstimated number of people that watched your content within the selected date range.\n0\n1\n2\n3\n4\n5\n6\n7 days\n18\n12\n6\n0\nThumbnail impressions\nSee more\nHow viewers find this video\nViews \u00b7 Since published\nTraffic Sources\n\t\nDirect or unknown\n\t\n\t\n100.0%\nSee more\nExternal sites or apps\nViews \u00b7 Since published\nNot enough traffic data to show this report\nSee more\nContent suggesting this video\nViews \u00b7 Since published\nNot enough traffic data to show this report\nSee more\nPlaylists featuring this video\nViews \u00b7 Since published\nNot enough traffic data to show this report\nSee more\nImpressions and how they led to watch time\nData available 24\u2009\u2013\u200929 Sept 2026 (6 days)\nThumbnail impressions\n17\n0.0% thumbnail click-through rate\nEngaged views from impressions\n0\n\u2014 average view duration\nWatch time from impressions\n0\nYouTube search terms\nViews \u00b7 Since published\nNot enough traffic data to show this report\nSee more\nAdvanced mode\nReport\nTraffic source\nAdd comparison\nControls\nHow Did We Discover X-rays?\n24 Sept 2026 \u2013 Now\nSince published\nBreakdown\nTraffic source\nMetrics\nViews, Watch time (hours), Average view duration, Thumbnail impressions and Thumbnail click-through rate\nFilter\nViews by: Traffic source\nShow chart\n0\n1\n2\n3\n4\n5\n6\n7 days\n3\n2\n1\n0\nViews\nTraffic source\nThumbnail impressions\nThumbnail click-through rate\nViews\nAverage view duration\nWatch time (hours)\nTotal\n18\n0%\n1\n0:03\n0.0\nDirect or unknown\n\u2014\n\u2014\n1\n0:03\n0.0\nYouTube search\n17\n0%\n\u2014\n\u2014\n\u2014\nSuggested videos\n1\n0%\n\u2014\n\u2014\n\u2014",
+    "traffic": [
+      "Clips and Shorts",
+      "Direct or unknown",
+      "External sites or apps",
+      "Playlists featuring this video",
+      "YouTube search terms",
+      "YouTube search",
+      "Suggested videos"
+    ],
+    "explore_snip": "Video analytics\nSkip navigation\nAsk Studio\nCreate\nChannel content\n7:06\nYour video\nHow Did We Discover X-rays?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo analytics\nAdvanced mode",
+    "explore_traffic": [
+      "Channel content",
+      "Clips and Shorts"
+    ]
+  },
+  "001": {
+    "id": "_C92tIJCk8A",
+    "title": "How Did We Discover Germs?",
+    "ai": [
+      {
+        "lab": "Yes, AI was used",
+        "aria": "true",
+        "checked": true
+      },
+      {
+        "lab": "No, AI wasn't used",
+        "aria": "false",
+        "checked": false
+      }
+    ],
+    "age": [
+      {
+        "lab": "Yes, restrict my video to viewers over 18",
+        "aria": "false",
+        "checked": false
+      },
+      {
+        "lab": "No, don't restrict my video to viewers over 18 only",
+        "aria": "true",
+        "checked": true
+      }
+    ],
+    "audience": [
+      {
+        "lab": "Yes, it's Made for Kids . Features like personalised ads and notifications won't",
+        "aria": "false",
+        "checked": false
+      },
+      {
+        "lab": "No, it's not 'Made for Kids'",
+        "aria": "true",
+        "checked": true
+      }
+    ],
+    "chip": "Visibility Public",
+    "comments_disabled": false,
+    "notifications_disabled": false,
+    "altered_snip": null,
+    "vis_dialog": "Save or publish\n\nPrivate\nUnlisted\nPublic\n\nSchedule",
+    "vis_controls": [
+      {
+        "lab": "Private",
+        "aria": "false",
+        "role": "radio",
+        "checked": false
+      },
+      {
+        "lab": "Unlisted",
+        "aria": "false",
+        "role": "radio",
+        "checked": false
+      },
+      {
+        "lab": "Public",
+        "aria": "true",
+        "role": "radio",
+        "checked": true
+      }
+    ],
+    "reach_snip": "Video analytics\nSkip navigation\nAsk Studio\nCreate\nChannel content\n6:05\nYour video\nHow Did We Discover Germs?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo analytics\nAdvanced mode\nOverview\nReach\nEngagement\nAudience\n3 Sept 2026 \u2013 Now\nSince published\nThumbnail impressions\nThumbnail impressions\n24\nTotal number of times your video thumbnail was shown to viewers since the video was published.\nThumbnail click-through rate\n8.3%\nHow often viewers chose to watch a video after seeing a thumbnail. This is calculated as views per impression shown. Previously called 'impressions click-through rate'.\nViews\n6\nTotal views since the video was published.\nUnique viewers\n3\nEstimated number of people that watched your content within the selected date range.\n0\n5\n10\n15\n20\n25\n30 days\n24\n16\n8\n0\nThumbnail impressions\nSee more\nHow viewers find this video\nViews \u00b7 Since published\nTraffic Sources\n\t\nDirect or unknown\n\t\n\t\n50.0%\n\n\n\t\nYouTube search\n\t\n\t\n33.3%\n\n\n\t\nSuggested videos\n\t\n\t\n16.7%\nSee more\nExternal sites or apps\nViews \u00b7 Since published\nNot enough traffic data to show this report\nSee more\nContent suggesting this video\nViews \u00b7 Since published\n\nProportion of your total traffic:\n\n16.7%\n\n\t\nEP. 03 \u2014 ALICE BALL | The 23-Year-Old Chemist History Nearly Erased\n\t\n\t\n100.0%\nSee more\nPlaylists featuring this video\nViews \u00b7 Since published\nNot enough traffic data to show this report\nSee more\nA/B test\nSend feedback\nTest finished. Ran from 3 September 2026 at 18:08 to 17 September 2026 at 18:47.\nThumbnails\tTitles\t\t\nWatch-time share\n\n\n\t\nHow Did We Discover Germs?\nNow visible to all viewers\n\t\u2013\n\n\t\nHow Did We Discover Germs?\n\t\u2013\n\n\t\nHow Did We Discover Germs?\n\t\u2013\nManage test\nImpressions and how they led to watch time\nData available 3\u2009\u2013\u200929 Sept 2026 (27 days)\nThumbnail impressions\n26\n3.8% from YouTube recommending your content\n7.7% thumbnail click-through rate\nEngaged views from impressions\n2\n1:17 average view duration\nWatch time from impressions\n0.04\nYouTube search terms\nViews \u00b7 Since published\n\nProportion of your total traffic:\n\n33.3%\n\nNot enough traffic data to show this report\nSee more\nAdvanced mode\nReport\nTraffic source\nAdd comparison\nControls\nHow Did We Discover Germs?\n3 Sept 2026 \u2013 Now\nSince published\nBreakdown\nTraffic source\nMetrics\nViews, Watch time (hours), Average view duration, Thumbnail impressions and Thumbnail click-through rate\nFilter\nViews by: Traffic source\nShow chart\n0\n5\n10\n15\n20\n25\n30 days\n3\n2\n1\n0\nViews\nTraffic source\nThumbnail impressio",
+    "traffic": [
+      "Clips and Shorts",
+      "Direct or unknown",
+      "YouTube search",
+      "Suggested videos",
+      "External sites or apps",
+      "Playlists featuring this video",
+      "YouTube search terms"
+    ],
+    "explore_snip": "Video analytics\nSkip navigation\nAsk Studio\nCreate\nChannel content\n6:05\nYour video\nHow Did We Discover Germs?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo analytics\nAdvanced mode",
+    "explore_traffic": [
+      "Channel content",
+      "Clips and Shorts"
+    ]
+  }
+}

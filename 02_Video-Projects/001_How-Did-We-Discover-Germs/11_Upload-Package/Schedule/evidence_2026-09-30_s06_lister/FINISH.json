@@ -1,0 +1,166 @@
+{
+  "vid": "clV6E10NLPw",
+  "ts": "2026-09-30T14:51:59+01:00",
+  "steps": [],
+  "hos": true,
+  "cover_upload": {
+    "ok": true,
+    "method": "set_input_files:0",
+    "notes": [
+      "file_inputs=1",
+      {
+        "inputs": [
+          {
+            "acc": "image/jpeg,image/png",
+            "id": "file-loader",
+            "name": "",
+            "aria": "",
+            "near": "YTCP-THUMBNAIL-UPLOADER",
+            "path": ""
+          }
+        ]
+      },
+      "light_inputs=1",
+      "set_input_files_i=0_acc=image/jpeg,image/png"
+    ]
+  },
+  "cover_save": "clicked_Save",
+  "settings": {
+    "id": "clV6E10NLPw",
+    "slot": "s06",
+    "steps": [
+      "altered_yes",
+      "remixing_on"
+    ],
+    "hos": {
+      "ok": true,
+      "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Channel dashboard - YouTube Studio",
+      "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 3 days 3 hours\nRanking by views\n8 of 10\nViews\n8\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\n\nCreate your first post to start a conversation and get feedback from your community.\n\nCre"
+    },
+    "audience0": {
+      "yes_checked": null,
+      "no_checked": true,
+      "banner": true,
+      "radios": [
+        {
+          "label": "No, it's not 'Made for Kids'",
+          "checked": true,
+          "kidsYes": false,
+          "kidsNo": true,
+          "via": "own"
+        }
+      ],
+      "ok_not_kids": true,
+      "fail_kids": false
+    },
+    "ai_before": {
+      "radios": [
+        {
+          "label": "Yes, AI was used",
+          "checked": false,
+          "isNo": false,
+          "isYes": true
+        },
+        {
+          "label": "No, AI wasn't used",
+          "checked": false,
+          "isNo": true,
+          "isYes": false
+        }
+      ],
+      "no": false,
+      "yes": false,
+      "section": "AI use"
+    },
+    "altered_click": "^Yes, AI was used$",
+    "altered_save": {
+      "saved": true,
+      "audience": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      }
+    },
+    "altered": "set_yes",
+    "category": "already_or_present",
+    "comments": "already_on_or_default",
+    "remix_save": {
+      "saved": true,
+      "audience": {
+        "yes_checked": null,
+        "no_checked": true,
+        "banner": true,
+        "radios": [
+          {
+            "label": "No, it's not 'Made for Kids'",
+            "checked": true,
+            "kidsYes": false,
+            "kidsNo": true,
+            "via": "own"
+          }
+        ],
+        "ok_not_kids": true,
+        "fail_kids": false
+      }
+    },
+    "remixing": "set_allow",
+    "related_edit": "err:TimeoutError:Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator(\"tp-yt-paper-input input, input[type='text'], input[aria-label*='Search' i]\").first\n",
+    "audience_final": {
+      "yes_checked": null,
+      "no_checked": true,
+      "banner": true,
+      "radios": [
+        {
+          "label": "No, it's not 'Made for Kids'",
+          "checked": true,
+          "kidsYes": false,
+          "kidsNo": true,
+          "via": "own"
+        }
+      ],
+      "ok_not_kids": true,
+      "fail_kids": false
+    },
+    "chip": "Visibility Scheduled",
+    "ok": true
+  },
+  "kids_click": null,
+  "ai_read": {
+    "radios": [
+      {
+        "label": "Yes, AI was used",
+        "checked": true,
+        "isNo": false,
+        "isYes": true
+      },
+      {
+        "label": "No, AI wasn't used",
+        "checked": false,
+        "isNo": true,
+        "isYes": false
+      }
+    ],
+    "no": false,
+    "yes": true,
+    "section": "AI use"
+  },
+  "visibility_snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n0:25\nYour video\nThe spray that stopped surgery killing patients\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nThe spray that stopped surgery killing patients\nSuggested hashtags\nDescription\nThe spray that stopped surgery killing patients\n\nBefore Lister, nearly half his amputation patients died. He sprayed carbolic acid over the operation, because germs, not bad air, got into the wound.\n\nWatch the full film \u2014 How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n@HistoryOfScienceYT\n\n#Germs #Antiseptic #Lister #HistoryOfScience #Science #Shorts\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, you're legally required to comply with the Children's Online Privacy Protection Act (COPPA) and/or other laws. You're required to tell us whether your videos are 'Made for Kids'. What is 'Made for Kids' content?\nFeatures like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nYes, it's Made for Kids\n.\nFeatures like p",
+  "schedule_ok": true,
+  "private_or_sched": true,
+  "related_snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n0:25\nYour video\nThe spray that stopped surgery killing patients\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nThe spray that stopped surgery killing patients\nSuggested hashtags\nDescription\nThe spray that stopped surgery killing patients\n\nBefore Lister, nearly half his amputation patients died. He sprayed carbolic acid over the operation, because germs, not bad air, got into the wound.\n\nWatch the full film \u2014 How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n@HistoryOfScienceYT\n\n#Germs #Antiseptic #Lister #HistoryOfScience #Science #Shorts\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, you're legally required to comply with the Children's Online Privacy Protection Act (COPPA) and/or other laws. You're required to tell us whether your videos are 'Made for Kids'. ",
+  "related_has_germs": true,
+  "title_ok": true,
+  "final_snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n0:25\nYour video\nThe spray that stopped surgery killing patients\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nThe spray that stopped surgery killing patients\nSuggested hashtags\nDescription\nThe spray that stopped surgery killing patients\n\nBefore Lister, nearly half his amputation patients died. He sprayed carbolic acid over the operation, because germs, not bad air, got into the wound.\n\nWatch the full film \u2014 How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n@HistoryOfScienceYT\n\n#Germs #Antiseptic #Lister #HistoryOfScience #Science #Shorts\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, you're legally required to comply with the Children's Online Privacy Protection Act (COPPA) and/or other laws. You're required to tell us whether your videos are 'Made for Kids'. "
+}

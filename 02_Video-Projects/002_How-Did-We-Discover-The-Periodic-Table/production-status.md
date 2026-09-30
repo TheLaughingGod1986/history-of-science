@@ -105,3 +105,18 @@ Clearer educational scripts · VO + picture sync · any-age friendly · teach ch
 - Rewrite shipped P03 VO for the VO/teach house note unless Ben asks
 - Upload · Studio · Orbit / Oppti
 - Invent Mini paths here — Picture owns path; P03 sha is locked above
+
+
+## Ben 14:47 whole-channel Studio §9 (recorded 2026-09-30T17:58:08+01:00)
+
+Channel: `@HistoryOfScienceYT` only. Evidence under `004_…/evidence_2026-09-30_whole_channel_1447/` + artifacts `BEN_1447_whole_channel/`.
+
+### 002 videos
+| id | kind | notes |
+|---|---|---|
+| `AL_-qlWko_g` | long | Core §9 applied; tags fixed; **How We Found Out** playlist missing (already in How Did We Discover…?); Academic UK / GCSE Chemistry / Level won't-save |
+| `uU12JA5rMWg` `nFQRWmpulTQ` `CnHwX1L9XHg` `nba0-f7PPeU` `LanTHJckYx8` | Shorts | Core §9 + Related → 002 long; tags fixed (no competitor names) |
+| `kzDiVk4603s` | Short (private dup) | Settings only; visibility left Private; tags fixed |
+| `TbMMJSRKC3U` | Short (Sun) | Core §9; tags fixed to Newlands/octaves subject; schedule unchanged |
+
+002 A/B test **not touched**. Academic UK not in taxonomy · GCSE Chemistry not listed · Level secondary does not persist.

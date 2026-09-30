@@ -1,0 +1,146 @@
+{
+  "source": "scripts/channel-audit.ts --write-live (YouTube Data API, owner view)",
+  "pulledAt": "2026-09-30T19:15:49.474Z",
+  "videos": [
+    {
+      "id": "clV6E10NLPw",
+      "kind": "Short",
+      "title": "The spray that stopped surgery killing patients",
+      "privacy": "private",
+      "scheduled": "2026-10-20 11:30 UK"
+    },
+    {
+      "id": "TbMMJSRKC3U",
+      "kind": "Short",
+      "title": "He said every eighth element repeats",
+      "privacy": "private",
+      "scheduled": "2026-10-18 11:30 UK"
+    },
+    {
+      "id": "29bpGAI0wb8",
+      "kind": "Short",
+      "title": "What happens if you keep cutting gold in half?",
+      "privacy": "private",
+      "scheduled": "2026-10-16 11:30 UK"
+    },
+    {
+      "id": "GHZDsiH7L7A",
+      "kind": "long",
+      "title": "What's Really Inside an Atom?",
+      "privacy": "private",
+      "scheduled": "2026-10-15 18:00 UK"
+    },
+    {
+      "id": "zI_eD3vFWmE",
+      "kind": "Short",
+      "title": "The first X-ray showed a wedding ring",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "xvanpsLeADE",
+      "kind": "Short",
+      "title": "How did Röntgen see bones without cutting",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "oowAOWTBoq0",
+      "kind": "Short",
+      "title": "How X-rays Were Discovered by Accident",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "frP_YrNShsU",
+      "kind": "long",
+      "title": "How Did We Discover X-rays?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "LanTHJckYx8",
+      "kind": "Short",
+      "title": "What other table has empty chairs?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "nba0-f7PPeU",
+      "kind": "Short",
+      "title": "Why tellurium sat before iodine",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "CnHwX1L9XHg",
+      "kind": "Short",
+      "title": "Gallium sat where the table said",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "nFQRWmpulTQ",
+      "kind": "Short",
+      "title": "He predicted a metal before it was found",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "uU12JA5rMWg",
+      "kind": "Short",
+      "title": "The periodic table's empty chairs",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "AL_-qlWko_g",
+      "kind": "long",
+      "title": "How Did We Discover the Periodic Table?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "kind": "Short",
+      "title": "A flask that proved germs come from outside",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "kind": "Short",
+      "title": "Invisible life is still everywhere",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "kind": "Short",
+      "title": "Germs hitch a ride on you",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "iqToagXnjX0",
+      "kind": "Short",
+      "title": "Microbes in a drop of pond water",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "kind": "Short",
+      "title": "Germs don't cast a shadow",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "_C92tIJCk8A",
+      "kind": "long",
+      "title": "How Did We Discover Germs?",
+      "privacy": "public",
+      "scheduled": ""
+    }
+  ]
+}

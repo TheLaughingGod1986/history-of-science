@@ -1,0 +1,5 @@
+# S06 — The carbolic spray (Tue 20 Oct)
+
+## PART 01
+
+Before Lister, nearly half his amputation patients died. He sprayed carbolic acid over the operation, because germs, not bad air, got into the wound. Afterwards, about one in seven. Antiseptic surgery began there. You live inside that win every time a theatre is cleaned. The full story: How Did We Discover Germs?

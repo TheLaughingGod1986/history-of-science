@@ -34,3 +34,17 @@ The part notes below are the build history (last updated 21 Sep).
 ## New house
 
 `00_Brand/Brand-Guidelines/HOS_HOUSE_SILENT_READABLE_PICTURE_LOCK.md` — Part 03+ only (not P02 remint).
+
+
+## Ben 14:47 whole-channel Studio §9 (recorded 2026-09-30T17:58:08+01:00)
+
+Channel: `@HistoryOfScienceYT` only. Evidence: `004_…/evidence_2026-09-30_whole_channel_1447/` · `BEN_1447_whole_channel/`.
+
+### 003 videos
+| id | kind | notes |
+|---|---|---|
+| `frP_YrNShsU` | long | Core §9; tags cut from 25+ down to 5 subject tags; playlist How We Found Out missing |
+| `oowAOWTBoq0` `xvanpsLeADE` `zI_eD3vFWmE` | Shorts | Core §9 + Related → 003; tags fixed |
+| `CUu8k38iAMc` | Short (private dup) | **Left Private** (CoS). Settings only. Tags fixed. |
+
+Academic UK / GCSE Physics / Level won't-save (taxonomy). Visibility unchanged.

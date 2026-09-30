@@ -1,0 +1,2525 @@
+{
+  "video": "29bpGAI0wb8",
+  "started": "2026-09-30T16:20:46+01:00",
+  "note": "Level under England academic = Key stage 4 (GCSE secondary), not 'Secondary school'",
+  "Title and description language": {
+    "want": "English (United Kingdom)",
+    "opened": {
+      "ok": true,
+      "clicked": {
+        "t": "Ukrainian",
+        "y": 489.53125,
+        "x": 284,
+        "score": 10
+      }
+    },
+    "picked": {
+      "t": "English (United Kingdom)",
+      "y": 0,
+      "x": 272,
+      "w": 340,
+      "h": 32
+    },
+    "via": "top",
+    "options": [
+      {
+        "t": "Abkhazian",
+        "y": -6794
+      },
+      {
+        "t": "Afar",
+        "y": -6762
+      },
+      {
+        "t": "Afrikaans",
+        "y": -6730
+      },
+      {
+        "t": "Akan",
+        "y": -6698
+      },
+      {
+        "t": "Akkadian",
+        "y": -6666
+      },
+      {
+        "t": "Albanian",
+        "y": -6634
+      },
+      {
+        "t": "American Sign Language",
+        "y": -6602
+      },
+      {
+        "t": "Amharic",
+        "y": -6570
+      },
+      {
+        "t": "Arabic",
+        "y": -6538
+      },
+      {
+        "t": "Aramaic",
+        "y": -6506
+      },
+      {
+        "t": "Armenian",
+        "y": -6474
+      },
+      {
+        "t": "Arpitan",
+        "y": -6442
+      },
+      {
+        "t": "Assamese",
+        "y": -6410
+      },
+      {
+        "t": "Aymara",
+        "y": -6378
+      },
+      {
+        "t": "Azerbaijani",
+        "y": -6346
+      },
+      {
+        "t": "Bambara",
+        "y": -6314
+      },
+      {
+        "t": "Bangla",
+        "y": -6282
+      },
+      {
+        "t": "Bangla (India)",
+        "y": -6250
+      },
+      {
+        "t": "Bashkir",
+        "y": -6218
+      },
+      {
+        "t": "Basque",
+        "y": -6186
+      },
+      {
+        "t": "Belarusian",
+        "y": -6154
+      },
+      {
+        "t": "Bhojpuri",
+        "y": -6122
+      },
+      {
+        "t": "Bislama",
+        "y": -6090
+      },
+      {
+        "t": "Bodo",
+        "y": -6058
+      },
+      {
+        "t": "Bosnian",
+        "y": -6026
+      },
+      {
+        "t": "Breton",
+        "y": -5994
+      },
+      {
+        "t": "Bulgarian",
+        "y": -5962
+      },
+      {
+        "t": "Burmese",
+        "y": -5930
+      },
+      {
+        "t": "Cantonese",
+        "y": -5898
+      },
+      {
+        "t": "Cantonese (Hong Kong)",
+        "y": -5866
+      },
+      {
+        "t": "Catalan",
+        "y": -5834
+      },
+      {
+        "t": "Cherokee",
+        "y": -5802
+      },
+      {
+        "t": "Chinese",
+        "y": -5770
+      },
+      {
+        "t": "Chinese (China)",
+        "y": -5738
+      },
+      {
+        "t": "Chinese (Hong Kong)",
+        "y": -5706
+      },
+      {
+        "t": "Chinese (Simplified)",
+        "y": -5674
+      },
+      {
+        "t": "Chinese (Singapore)",
+        "y": -5642
+      },
+      {
+        "t": "Chinese (Taiwan)",
+        "y": -5610
+      },
+      {
+        "t": "Chinese (Traditional)",
+        "y": -5578
+      },
+      {
+        "t": "Choctaw",
+        "y": -5546
+      },
+      {
+        "t": "Coptic",
+        "y": -5514
+      },
+      {
+        "t": "Corsican",
+        "y": -5482
+      },
+      {
+        "t": "Cree",
+        "y": -5450
+      },
+      {
+        "t": "Croatian",
+        "y": -5418
+      },
+      {
+        "t": "Czech",
+        "y": -5386
+      },
+      {
+        "t": "Danish",
+        "y": -5354
+      },
+      {
+        "t": "Dogri",
+        "y": -5322
+      },
+      {
+        "t": "Dutch",
+        "y": -5290
+      },
+      {
+        "t": "Dutch (Belgium)",
+        "y": -5258
+      },
+      {
+        "t": "Dutch (Netherlands)",
+        "y": -5226
+      },
+      {
+        "t": "Dzongkha",
+        "y": -5194
+      },
+      {
+        "t": "English",
+        "y": -5162
+      },
+      {
+        "t": "English (Australia)",
+        "y": -5130
+      },
+      {
+        "t": "English (Canada)",
+        "y": -5098
+      },
+      {
+        "t": "English (India)",
+        "y": -5066
+      },
+      {
+        "t": "English (Ireland)",
+        "y": -5034
+      },
+      {
+        "t": "English (United Kingdom)",
+        "y": -5002
+      },
+      {
+        "t": "English (United States)",
+        "y": -4970
+      },
+      {
+        "t": "Esperanto",
+        "y": -4938
+      },
+      {
+        "t": "Estonian",
+        "y": -4906
+      },
+      {
+        "t": "Ewe",
+        "y": -4874
+      },
+      {
+        "t": "Faroese",
+        "y": -4842
+      },
+      {
+        "t": "Fijian",
+        "y": -4810
+      },
+      {
+        "t": "Filipino",
+        "y": -4778
+      },
+      {
+        "t": "Finnish",
+        "y": -4746
+      },
+      {
+        "t": "French",
+        "y": -4714
+      },
+      {
+        "t": "French (Belgium)",
+        "y": -4682
+      },
+      {
+        "t": "French (Canada)",
+        "y": -4650
+      },
+      {
+        "t": "French (France)",
+        "y": -4618
+      },
+      {
+        "t": "French (Switzerland)",
+        "y": -4586
+      },
+      {
+        "t": "Fulah",
+        "y": -4554
+      },
+      {
+        "t": "Galician",
+        "y": -4522
+      },
+      {
+        "t": "Ganda",
+        "y": -4490
+      },
+      {
+        "t": "Georgian",
+        "y": -4458
+      },
+      {
+        "t": "German",
+        "y": -4426
+      },
+      {
+        "t": "German (Austria)",
+        "y": -4394
+      },
+      {
+        "t": "German (Germany)",
+        "y": -4362
+      },
+      {
+        "t": "German (Switzerland)",
+        "y": -4330
+      },
+      {
+        "t": "Greek",
+        "y": -4298
+      },
+      {
+        "t": "Guarani",
+        "y": -4266
+      },
+      {
+        "t": "Gujarati",
+        "y": -4234
+      },
+      {
+        "t": "Gusii",
+        "y": -4202
+      },
+      {
+        "t": "Haitian Creole",
+        "y": -4170
+      },
+      {
+        "t": "Hakka Chinese",
+        "y": -4138
+      },
+      {
+        "t": "Hakka Chinese (Taiwan)",
+        "y": -4106
+      },
+      {
+        "t": "Haryanvi",
+        "y": -4074
+      },
+      {
+        "t": "Hausa",
+        "y": -4042
+      },
+      {
+        "t": "Hawaiian",
+        "y": -4010
+      },
+      {
+        "t": "Hebrew",
+        "y": -3978
+      },
+      {
+        "t": "Hindi",
+        "y": -3946
+      },
+      {
+        "t": "Hindi (Latin)",
+        "y": -3914
+      },
+      {
+        "t": "Hiri Motu",
+        "y": -3882
+      },
+      {
+        "t": "Hungarian",
+        "y": -3850
+      },
+      {
+        "t": "Icelandic",
+        "y": -3818
+      },
+      {
+        "t": "Igbo",
+        "y": -3786
+      },
+      {
+        "t": "Indonesian",
+        "y": -3754
+      },
+      {
+        "t": "Interlingua",
+        "y": -3722
+      },
+      {
+        "t": "Interlingue",
+        "y": -3690
+      },
+      {
+        "t": "Inuktitut",
+        "y": -3658
+      },
+      {
+        "t": "Inupiaq",
+        "y": -3626
+      },
+      {
+        "t": "Irish",
+        "y": -3594
+      },
+      {
+        "t": "Italian",
+        "y": -3562
+      },
+      {
+        "t": "Japanese",
+        "y": -3530
+      },
+      {
+        "t": "Javanese",
+        "y": -3498
+      },
+      {
+        "t": "Kalaallisut",
+        "y": -3466
+      },
+      {
+        "t": "Kalenjin",
+        "y": -3434
+      },
+      {
+        "t": "Kamba",
+        "y": -3402
+      },
+      {
+        "t": "Kannada",
+        "y": -3370
+      },
+      {
+        "t": "Kashmiri",
+        "y": -3338
+      },
+      {
+        "t": "Kazakh",
+        "y": -3306
+      },
+      {
+        "t": "Khmer",
+        "y": -3274
+      },
+      {
+        "t": "Kikuyu",
+        "y": -3242
+      },
+      {
+        "t": "Kinyarwanda",
+        "y": -3210
+      },
+      {
+        "t": "Klingon",
+        "y": -3178
+      },
+      {
+        "t": "Konkani",
+        "y": -3146
+      },
+      {
+        "t": "Korean",
+        "y": -3114
+      },
+      {
+        "t": "Kurdish",
+        "y": -3082
+      },
+      {
+        "t": "Kyrgyz",
+        "y": -3050
+      },
+      {
+        "t": "Ladino",
+        "y": -3018
+      },
+      {
+        "t": "Lao",
+        "y": -2986
+      },
+      {
+        "t": "Latin",
+        "y": -2954
+      },
+      {
+        "t": "Latvian",
+        "y": -2922
+      },
+      {
+        "t": "Lingala",
+        "y": -2890
+      },
+      {
+        "t": "Lithuanian",
+        "y": -2858
+      },
+      {
+        "t": "Lojban",
+        "y": -2826
+      },
+      {
+        "t": "Lower Sorbian",
+        "y": -2794
+      },
+      {
+        "t": "Luba-Katanga",
+        "y": -2762
+      },
+      {
+        "t": "Luo",
+        "y": -2730
+      },
+      {
+        "t": "Luxembourgish",
+        "y": -2698
+      },
+      {
+        "t": "Luyia",
+        "y": -2666
+      },
+      {
+        "t": "Macedonian",
+        "y": -2634
+      },
+      {
+        "t": "Maithili",
+        "y": -2602
+      },
+      {
+        "t": "Malagasy",
+        "y": -2570
+      },
+      {
+        "t": "Malay",
+        "y": -2538
+      },
+      {
+        "t": "Malay (Singapore)",
+        "y": -2506
+      },
+      {
+        "t": "Malayalam",
+        "y": -2474
+      },
+      {
+        "t": "Maltese",
+        "y": -2442
+      },
+      {
+        "t": "Manipuri",
+        "y": -2410
+      },
+      {
+        "t": "M\u0101ori",
+        "y": -2378
+      },
+      {
+        "t": "Marathi",
+        "y": -2346
+      },
+      {
+        "t": "Masai",
+        "y": -2314
+      },
+      {
+        "t": "Meru",
+        "y": -2282
+      },
+      {
+        "t": "Min Nan Chinese",
+        "y": -2250
+      },
+      {
+        "t": "Min Nan Chinese (Taiwan)",
+        "y": -2218
+      },
+      {
+        "t": "Mixe",
+        "y": -2186
+      },
+      {
+        "t": "Mizo",
+        "y": -2154
+      },
+      {
+        "t": "Mongolian",
+        "y": -2122
+      },
+      {
+        "t": "Mongolian (Mongolian)",
+        "y": -2090
+      },
+      {
+        "t": "Nauru",
+        "y": -2058
+      },
+      {
+        "t": "Navajo",
+        "y": -2026
+      },
+      {
+        "t": "Nepali",
+        "y": -1994
+      },
+      {
+        "t": "Nigerian Pidgin",
+        "y": -1962
+      },
+      {
+        "t": "North Ndebele",
+        "y": -1930
+      },
+      {
+        "t": "Northern Sotho",
+        "y": -1898
+      },
+      {
+        "t": "Norwegian",
+        "y": -1866
+      },
+      {
+        "t": "Occitan",
+        "y": -1834
+      },
+      {
+        "t": "Odia",
+        "y": -1802
+      },
+      {
+        "t": "Oromo",
+        "y": -1770
+      },
+      {
+        "t": "Papiamento",
+        "y": -1738
+      },
+      {
+        "t": "Pashto",
+        "y": -1706
+      },
+      {
+        "t": "Persian",
+        "y": -1674
+      },
+      {
+        "t": "Persian (Afghanistan)",
+        "y": -1642
+      },
+      {
+        "t": "Persian (Iran)",
+        "y": -1610
+      },
+      {
+        "t": "Polish",
+        "y": -1578
+      },
+      {
+        "t": "Portuguese",
+        "y": -1546
+      },
+      {
+        "t": "Portuguese (Brazil)",
+        "y": -1514
+      },
+      {
+        "t": "Portuguese (Portugal)",
+        "y": -1482
+      },
+      {
+        "t": "Punjabi",
+        "y": -1450
+      },
+      {
+        "t": "Quechua",
+        "y": -1418
+      },
+      {
+        "t": "Romanian",
+        "y": -1386
+      },
+      {
+        "t": "Romanian (Moldova)",
+        "y": -1354
+      },
+      {
+        "t": "Romansh",
+        "y": -1322
+      },
+      {
+        "t": "Rundi",
+        "y": -1290
+      },
+      {
+        "t": "Russian",
+        "y": -1258
+      },
+      {
+        "t": "Russian (Latin)",
+        "y": -1226
+      },
+      {
+        "t": "Samoan",
+        "y": -1194
+      },
+      {
+        "t": "Sango",
+        "y": -1162
+      },
+      {
+        "t": "Sanskrit",
+        "y": -1130
+      },
+      {
+        "t": "Santali",
+        "y": -1098
+      },
+      {
+        "t": "Sardinian",
+        "y": -1066
+      },
+      {
+        "t": "Scottish Gaelic",
+        "y": -1034
+      },
+      {
+        "t": "Serbian",
+        "y": -1002
+      },
+      {
+        "t": "Serbian (Cyrillic)",
+        "y": -970
+      },
+      {
+        "t": "Serbian (Latin)",
+        "y": -938
+      },
+      {
+        "t": "Serbo-Croatian",
+        "y": -906
+      },
+      {
+        "t": "Sherdukpen",
+        "y": -874
+      },
+      {
+        "t": "Shona",
+        "y": -842
+      },
+      {
+        "t": "Sicilian",
+        "y": -810
+      },
+      {
+        "t": "Sindhi",
+        "y": -778
+      },
+      {
+        "t": "Sinhala",
+        "y": -746
+      },
+      {
+        "t": "Slovak",
+        "y": -714
+      },
+      {
+        "t": "Slovenian",
+        "y": -682
+      },
+      {
+        "t": "Somali",
+        "y": -650
+      },
+      {
+        "t": "South Ndebele",
+        "y": -618
+      },
+      {
+        "t": "Southern Sotho",
+        "y": -586
+      },
+      {
+        "t": "Spanish",
+        "y": -554
+      },
+      {
+        "t": "Spanish (Latin America)",
+        "y": -522
+      },
+      {
+        "t": "Spanish (Mexico)",
+        "y": -490
+      },
+      {
+        "t": "Spanish (Spain)",
+        "y": -458
+      },
+      {
+        "t": "Spanish (United States)",
+        "y": -426
+      },
+      {
+        "t": "Sundanese",
+        "y": -394
+      },
+      {
+        "t": "Swahili",
+        "y": -362
+      },
+      {
+        "t": "Swati",
+        "y": -330
+      },
+      {
+        "t": "Swedish",
+        "y": -298
+      },
+      {
+        "t": "Tagalog",
+        "y": -266
+      },
+      {
+        "t": "Tajik",
+        "y": -234
+      },
+      {
+        "t": "Tamil",
+        "y": -202
+      },
+      {
+        "t": "Tatar",
+        "y": -170
+      },
+      {
+        "t": "Telugu",
+        "y": -138
+      },
+      {
+        "t": "Thai",
+        "y": -106
+      },
+      {
+        "t": "Tibetan",
+        "y": -74
+      },
+      {
+        "t": "Tigrinya",
+        "y": -42
+      },
+      {
+        "t": "Tok Pisin",
+        "y": -10
+      },
+      {
+        "t": "Toki Pona",
+        "y": 22
+      },
+      {
+        "t": "Tongan",
+        "y": 54
+      },
+      {
+        "t": "Tsonga",
+        "y": 86
+      },
+      {
+        "t": "Tswana",
+        "y": 118
+      },
+      {
+        "t": "Turkish",
+        "y": 150
+      },
+      {
+        "t": "Turkmen",
+        "y": 182
+      },
+      {
+        "t": "Twi",
+        "y": 214
+      },
+      {
+        "t": "Ukrainian",
+        "y": 246
+      },
+      {
+        "t": "Upper Sorbian",
+        "y": 278
+      },
+      {
+        "t": "Urdu",
+        "y": 310
+      },
+      {
+        "t": "Uyghur",
+        "y": 342
+      },
+      {
+        "t": "Uzbek",
+        "y": 374
+      },
+      {
+        "t": "Venda",
+        "y": 406
+      },
+      {
+        "t": "Vietnamese",
+        "y": 438
+      },
+      {
+        "t": "Volap\u00fck",
+        "y": 470
+      },
+      {
+        "t": "V\u00f5ro",
+        "y": 502
+      },
+      {
+        "t": "Walloon",
+        "y": 534
+      },
+      {
+        "t": "Welsh",
+        "y": 566
+      },
+      {
+        "t": "Western Frisian",
+        "y": 598
+      },
+      {
+        "t": "Wolaytta",
+        "y": 630
+      },
+      {
+        "t": "Wolof",
+        "y": 662
+      },
+      {
+        "t": "Xhosa",
+        "y": 694
+      },
+      {
+        "t": "Yiddish",
+        "y": 726
+      },
+      {
+        "t": "Yoruba",
+        "y": 758
+      },
+      {
+        "t": "Zulu",
+        "y": 790
+      }
+    ]
+  },
+  "Academic system": {
+    "want": "England",
+    "opened": {
+      "ok": true,
+      "clicked": {
+        "t": "United Arab Emirates",
+        "y": 489.53125,
+        "x": 284,
+        "score": 10
+      }
+    },
+    "picked": {
+      "t": "England",
+      "y": 0,
+      "x": 272,
+      "w": 696,
+      "h": 32
+    },
+    "via": "top",
+    "options": [
+      {
+        "t": "None",
+        "y": -3047
+      },
+      {
+        "t": "Algeria",
+        "y": -3007
+      },
+      {
+        "t": "Argentina",
+        "y": -2975
+      },
+      {
+        "t": "Australia",
+        "y": -2943
+      },
+      {
+        "t": "Austria",
+        "y": -2911
+      },
+      {
+        "t": "Azerbaijan",
+        "y": -2879
+      },
+      {
+        "t": "Bahrain",
+        "y": -2847
+      },
+      {
+        "t": "Bangladesh",
+        "y": -2815
+      },
+      {
+        "t": "Belarus",
+        "y": -2783
+      },
+      {
+        "t": "Belgium",
+        "y": -2751
+      },
+      {
+        "t": "Bolivia",
+        "y": -2719
+      },
+      {
+        "t": "Bosnia and Herzegovina",
+        "y": -2687
+      },
+      {
+        "t": "Brazil",
+        "y": -2655
+      },
+      {
+        "t": "Bulgaria",
+        "y": -2623
+      },
+      {
+        "t": "Canada",
+        "y": -2591
+      },
+      {
+        "t": "Chile",
+        "y": -2559
+      },
+      {
+        "t": "Colombia",
+        "y": -2527
+      },
+      {
+        "t": "Costa Rica",
+        "y": -2495
+      },
+      {
+        "t": "Croatia",
+        "y": -2463
+      },
+      {
+        "t": "Cyprus",
+        "y": -2431
+      },
+      {
+        "t": "Czechia",
+        "y": -2399
+      },
+      {
+        "t": "Denmark",
+        "y": -2367
+      },
+      {
+        "t": "Dominican Republic",
+        "y": -2335
+      },
+      {
+        "t": "Ecuador",
+        "y": -2303
+      },
+      {
+        "t": "Egypt",
+        "y": -2271
+      },
+      {
+        "t": "El Salvador",
+        "y": -2239
+      },
+      {
+        "t": "England",
+        "y": -2207
+      },
+      {
+        "t": "Estonia",
+        "y": -2175
+      },
+      {
+        "t": "Finland",
+        "y": -2143
+      },
+      {
+        "t": "France",
+        "y": -2111
+      },
+      {
+        "t": "Georgia",
+        "y": -2079
+      },
+      {
+        "t": "Germany",
+        "y": -2047
+      },
+      {
+        "t": "Ghana",
+        "y": -2015
+      },
+      {
+        "t": "Greece",
+        "y": -1983
+      },
+      {
+        "t": "Guatemala",
+        "y": -1951
+      },
+      {
+        "t": "Honduras",
+        "y": -1919
+      },
+      {
+        "t": "Hong Kong",
+        "y": -1887
+      },
+      {
+        "t": "Hungary",
+        "y": -1855
+      },
+      {
+        "t": "Iceland",
+        "y": -1823
+      },
+      {
+        "t": "India",
+        "y": -1791
+      },
+      {
+        "t": "Indonesia",
+        "y": -1759
+      },
+      {
+        "t": "Iraq",
+        "y": -1727
+      },
+      {
+        "t": "Ireland",
+        "y": -1695
+      },
+      {
+        "t": "Israel",
+        "y": -1663
+      },
+      {
+        "t": "Italy",
+        "y": -1631
+      },
+      {
+        "t": "Jamaica",
+        "y": -1599
+      },
+      {
+        "t": "Japan",
+        "y": -1567
+      },
+      {
+        "t": "Jordan",
+        "y": -1535
+      },
+      {
+        "t": "Kazakhstan",
+        "y": -1503
+      },
+      {
+        "t": "Kenya",
+        "y": -1471
+      },
+      {
+        "t": "Kuwait",
+        "y": -1439
+      },
+      {
+        "t": "Latvia",
+        "y": -1407
+      },
+      {
+        "t": "Lebanon",
+        "y": -1375
+      },
+      {
+        "t": "Libya",
+        "y": -1343
+      },
+      {
+        "t": "Liechtenstein",
+        "y": -1311
+      },
+      {
+        "t": "Lithuania",
+        "y": -1279
+      },
+      {
+        "t": "Luxembourg",
+        "y": -1247
+      },
+      {
+        "t": "Malaysia",
+        "y": -1215
+      },
+      {
+        "t": "Malta",
+        "y": -1183
+      },
+      {
+        "t": "Mexico",
+        "y": -1151
+      },
+      {
+        "t": "Montenegro",
+        "y": -1119
+      },
+      {
+        "t": "Morocco",
+        "y": -1087
+      },
+      {
+        "t": "Nepal",
+        "y": -1055
+      },
+      {
+        "t": "New Zealand",
+        "y": -1023
+      },
+      {
+        "t": "Nicaragua",
+        "y": -991
+      },
+      {
+        "t": "Nigeria",
+        "y": -959
+      },
+      {
+        "t": "North Macedonia",
+        "y": -927
+      },
+      {
+        "t": "Northern Ireland",
+        "y": -895
+      },
+      {
+        "t": "Norway",
+        "y": -863
+      },
+      {
+        "t": "Oman",
+        "y": -831
+      },
+      {
+        "t": "Pakistan",
+        "y": -799
+      },
+      {
+        "t": "Panama",
+        "y": -767
+      },
+      {
+        "t": "Papua New Guinea",
+        "y": -735
+      },
+      {
+        "t": "Paraguay",
+        "y": -703
+      },
+      {
+        "t": "Peru",
+        "y": -671
+      },
+      {
+        "t": "Philippines",
+        "y": -639
+      },
+      {
+        "t": "Poland",
+        "y": -607
+      },
+      {
+        "t": "Portugal",
+        "y": -575
+      },
+      {
+        "t": "Puerto Rico",
+        "y": -543
+      },
+      {
+        "t": "Qatar",
+        "y": -511
+      },
+      {
+        "t": "Romania",
+        "y": -479
+      },
+      {
+        "t": "Russia",
+        "y": -447
+      },
+      {
+        "t": "Saudi Arabia",
+        "y": -415
+      },
+      {
+        "t": "Scotland",
+        "y": -383
+      },
+      {
+        "t": "Senegal",
+        "y": -351
+      },
+      {
+        "t": "Serbia",
+        "y": -319
+      },
+      {
+        "t": "Singapore",
+        "y": -287
+      },
+      {
+        "t": "Slovakia",
+        "y": -255
+      },
+      {
+        "t": "Slovenia",
+        "y": -223
+      },
+      {
+        "t": "South Africa",
+        "y": -191
+      },
+      {
+        "t": "South Korea",
+        "y": -159
+      },
+      {
+        "t": "Spain",
+        "y": -127
+      },
+      {
+        "t": "Sri Lanka",
+        "y": -95
+      },
+      {
+        "t": "Sweden",
+        "y": -63
+      },
+      {
+        "t": "Switzerland",
+        "y": -31
+      },
+      {
+        "t": "Taiwan",
+        "y": 1
+      },
+      {
+        "t": "Tanzania",
+        "y": 33
+      },
+      {
+        "t": "Thailand",
+        "y": 65
+      },
+      {
+        "t": "The Netherlands",
+        "y": 97
+      },
+      {
+        "t": "Tunisia",
+        "y": 129
+      },
+      {
+        "t": "Turkey",
+        "y": 161
+      },
+      {
+        "t": "Uganda",
+        "y": 193
+      },
+      {
+        "t": "Ukraine",
+        "y": 225
+      },
+      {
+        "t": "United Arab Emirates",
+        "y": 257
+      },
+      {
+        "t": "United States",
+        "y": 289
+      },
+      {
+        "t": "Venezuela",
+        "y": 321
+      },
+      {
+        "t": "Vietnam",
+        "y": 353
+      },
+      {
+        "t": "Wales",
+        "y": 385
+      },
+      {
+        "t": "Yemen",
+        "y": 417
+      },
+      {
+        "t": "Zimbabwe",
+        "y": 449
+      },
+      {
+        "t": "Other",
+        "y": 481
+      }
+    ]
+  },
+  "Type": {
+    "want": "Concept overview",
+    "opened": {
+      "ok": true,
+      "clicked": {
+        "t": "Concept overview",
+        "y": 489.53125,
+        "x": 284,
+        "score": 10
+      }
+    },
+    "picked": {
+      "t": "Concept overview",
+      "y": 546.53125,
+      "x": 272,
+      "w": 696,
+      "h": 32
+    },
+    "via": "top",
+    "options": [
+      {
+        "t": "None",
+        "y": 474.53125
+      },
+      {
+        "t": "Activity",
+        "y": 514.53125
+      },
+      {
+        "t": "Concept overview",
+        "y": 546.53125
+      },
+      {
+        "t": "How-to",
+        "y": 578.53125
+      },
+      {
+        "t": "Lecture",
+        "y": 610.53125
+      },
+      {
+        "t": "Problem walkthrough",
+        "y": 642.53125
+      },
+      {
+        "t": "Real-life application",
+        "y": 674.53125
+      },
+      {
+        "t": "Science experiment",
+        "y": 706.53125
+      },
+      {
+        "t": "Tips",
+        "y": 738.53125
+      },
+      {
+        "t": "Other",
+        "y": 770.53125
+      }
+    ]
+  },
+  "Level": {
+    "want": "Key stage 4",
+    "picked": {
+      "t": "Key stage 4",
+      "x": 620,
+      "y": 684,
+      "top": 668,
+      "h": 32
+    },
+    "via": "mouse_visible_wheel0",
+    "options": [
+      {
+        "t": "Intermediate",
+        "y": 84
+      },
+      {
+        "t": "Advanced",
+        "y": 116
+      },
+      {
+        "t": "Early years",
+        "y": 156
+      },
+      {
+        "t": "Nursery",
+        "y": 188
+      },
+      {
+        "t": "Foundation",
+        "y": 220
+      },
+      {
+        "t": "Key stage 1",
+        "y": 260
+      },
+      {
+        "t": "Year 1",
+        "y": 292
+      },
+      {
+        "t": "Year 2",
+        "y": 324
+      },
+      {
+        "t": "Key stage 2",
+        "y": 364
+      },
+      {
+        "t": "Year 3",
+        "y": 396
+      },
+      {
+        "t": "Year 4",
+        "y": 428
+      },
+      {
+        "t": "Year 5",
+        "y": 460
+      },
+      {
+        "t": "Year 6",
+        "y": 492
+      },
+      {
+        "t": "Key stage 3",
+        "y": 532
+      },
+      {
+        "t": "Year 7",
+        "y": 564
+      },
+      {
+        "t": "Year 8",
+        "y": 596
+      },
+      {
+        "t": "Year 9",
+        "y": 628
+      },
+      {
+        "t": "Key stage 4",
+        "y": 668
+      },
+      {
+        "t": "Year 10",
+        "y": 700
+      },
+      {
+        "t": "Year 11",
+        "y": 732
+      },
+      {
+        "t": "Key stage 5",
+        "y": 772
+      },
+      {
+        "t": "Year 12",
+        "y": 804
+      }
+    ]
+  },
+  "Exam, course or standard": {
+    "want": "GCSE Chemistry",
+    "typed": "GCSE Chemistry",
+    "picked": null,
+    "options": []
+  },
+  "Exam, course or standard __retry": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      },
+      {
+        "t": "CBSE Exam, class 10",
+        "y": 601.53125
+      }
+    ],
+    "picked": null
+  },
+  "v07": true,
+  "Exam attempt 0 typed=GCSE Chemistry": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      }
+    ]
+  },
+  "Exam attempt 1 typed=GCSE Chemistry": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      }
+    ]
+  },
+  "Exam attempt 2 typed=GCSE": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      },
+      {
+        "t": "CBSE Exam, class 10",
+        "y": 601.53125
+      }
+    ]
+  },
+  "Exam attempt 3 typed=Chemistry": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 12
+      },
+      {
+        "t": "AP Chemistry",
+        "y": 52
+      },
+      {
+        "t": "NEET",
+        "y": 84
+      },
+      {
+        "t": "JEECUP",
+        "y": 116
+      },
+      {
+        "t": "Bihar Combined Entrance Competitive Examination",
+        "y": 148
+      },
+      {
+        "t": "JEE Main",
+        "y": 180
+      },
+      {
+        "t": "OJEE",
+        "y": 212
+      },
+      {
+        "t": "JEE Advanced",
+        "y": 244
+      },
+      {
+        "t": "Indian Maritime University Common Entrance Test (IMU CET)",
+        "y": 276
+      },
+      {
+        "t": "Joint Admission test for Masters",
+        "y": 308
+      },
+      {
+        "t": "AP Biology",
+        "y": 340
+      },
+      {
+        "t": "COHSEM Higher Secondary Examination",
+        "y": 372
+      },
+      {
+        "t": "PU CET",
+        "y": 404
+      },
+      {
+        "t": "MET",
+        "y": 436
+      },
+      {
+        "t": "West Bengal Joint Entrance Exam (WBJEE)",
+        "y": 468
+      },
+      {
+        "t": "AMET",
+        "y": 500
+      },
+      {
+        "t": "Chhattisgarh Pre-Engineering Test (CGPET)",
+        "y": 532
+      },
+      {
+        "t": "Gujarat Common Entrance Exam",
+        "y": 564
+      },
+      {
+        "t": "Assam Common Entrance Examination (ACEE)",
+        "y": 596
+      },
+      {
+        "t": "Jain Entrance Test (JET)",
+        "y": 628
+      },
+      {
+        "t": "TJEE",
+        "y": 660
+      }
+    ]
+  },
+  "Exam attempt 0 typed=GCSE Chem": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      }
+    ]
+  },
+  "v08_reread": {
+    "selects": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ],
+    "final_selects": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ],
+    "exam_n": 0,
+    "exam_gcse_like": [],
+    "exam_pick": null,
+    "level_pick": {
+      "t": "Key stage 4",
+      "y": 493,
+      "x": 272
+    },
+    "tags": [
+      "how small can you cut gold",
+      "what's really inside an atom",
+      "atom",
+      "gold",
+      "periodic table",
+      "history of science"
+    ],
+    "paid_places": {
+      "paid": [
+        {
+          "lab": "Yes, my video includes paid promotion",
+          "checked": false
+        },
+        {
+          "lab": "No, my video doesn't include paid promotion",
+          "checked": true
+        }
+      ],
+      "places": {
+        "lab": "Allow automatic places",
+        "checked": false
+      }
+    }
+  },
+  "Exam full list": {
+    "want": "GCSE Chemistry",
+    "options": []
+  },
+  "v09_level_exam": {
+    "before": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ],
+    "level_open": {
+      "ok": true,
+      "clicked": {
+        "t": "None",
+        "y": 489.53125
+      }
+    },
+    "level_pick": {
+      "t": "Key stage 4",
+      "y": 493
+    },
+    "level_opts_sample": [
+      "None",
+      "Beginner",
+      "Intermediate",
+      "Advanced",
+      "Early years",
+      "Nursery",
+      "Foundation",
+      "Key stage 1",
+      "Year 1",
+      "Year 2",
+      "Key stage 2",
+      "Year 3",
+      "Year 4",
+      "Year 5",
+      "Year 6",
+      "Key stage 3",
+      "Year 7",
+      "Year 8",
+      "Year 9",
+      "Key stage 4",
+      "Year 10",
+      "Year 11",
+      "Key stage 5",
+      "Year 12",
+      "Year 13",
+      "Higher education",
+      "Research",
+      "Professional training",
+      "Other"
+    ],
+    "selects_after_pick": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level Key stage 4",
+      "Exam, course or standard"
+    ],
+    "level_save": {
+      "enabled": false,
+      "clicked": false
+    },
+    "selects_after_save": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level Key stage 4",
+      "Exam, course or standard"
+    ],
+    "selects_after_reload": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ],
+    "exam_trials": {
+      "GCSE Chemistry": [
+        {
+          "t": "None",
+          "y": 561.53125
+        }
+      ],
+      "GCSE": [
+        {
+          "t": "None",
+          "y": 561.53125
+        },
+        {
+          "t": "CBSE Exam, class 10",
+          "y": 601.53125
+        }
+      ],
+      "AQA": [
+        {
+          "t": "None",
+          "y": 561.53125
+        }
+      ],
+      "OCR": [
+        {
+          "t": "None",
+          "y": 561.53125
+        }
+      ],
+      "Edexcel": [
+        {
+          "t": "None",
+          "y": 561.53125
+        }
+      ],
+      "Chemistry": [
+        {
+          "t": "None",
+          "y": 12
+        },
+        {
+          "t": "AP Chemistry",
+          "y": 52
+        },
+        {
+          "t": "NEET",
+          "y": 84
+        },
+        {
+          "t": "JEECUP",
+          "y": 116
+        },
+        {
+          "t": "Bihar Combined Entrance Competitive Examination",
+          "y": 148
+        },
+        {
+          "t": "JEE Main",
+          "y": 180
+        },
+        {
+          "t": "OJEE",
+          "y": 212
+        },
+        {
+          "t": "JEE Advanced",
+          "y": 244
+        },
+        {
+          "t": "Indian Maritime University Common Entrance Test (IMU CET)",
+          "y": 276
+        },
+        {
+          "t": "Joint Admission test for Masters",
+          "y": 308
+        },
+        {
+          "t": "AP Biology",
+          "y": 340
+        },
+        {
+          "t": "COHSEM Higher Secondary Examination",
+          "y": 372
+        },
+        {
+          "t": "PU CET",
+          "y": 404
+        },
+        {
+          "t": "MET",
+          "y": 436
+        },
+        {
+          "t": "West Bengal Joint Entrance Exam (WBJEE)",
+          "y": 468
+        },
+        {
+          "t": "AMET",
+          "y": 500
+        },
+        {
+          "t": "Chhattisgarh Pre-Engineering Test (CGPET)",
+          "y": 532
+        },
+        {
+          "t": "Gujarat Common Entrance Exam",
+          "y": 564
+        },
+        {
+          "t": "Assam Common Entrance Examination (ACEE)",
+          "y": 596
+        },
+        {
+          "t": "Jain Entrance Test (JET)",
+          "y": 628
+        },
+        {
+          "t": "TJEE",
+          "y": 660
+        }
+      ]
+    },
+    "final_selects": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ]
+  },
+  "Exam probe typed=GCSE Chemistry": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      }
+    ]
+  },
+  "Exam probe typed=GCSE": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      },
+      {
+        "t": "CBSE Exam, class 10",
+        "y": 601.53125
+      }
+    ]
+  },
+  "Exam probe typed=AQA": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      }
+    ]
+  },
+  "Exam probe typed=OCR": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      }
+    ]
+  },
+  "Exam probe typed=Edexcel": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 561.53125
+      }
+    ]
+  },
+  "Exam probe typed=Chemistry": {
+    "want": "GCSE Chemistry",
+    "options": [
+      {
+        "t": "None",
+        "y": 12
+      },
+      {
+        "t": "AP Chemistry",
+        "y": 52
+      },
+      {
+        "t": "NEET",
+        "y": 84
+      },
+      {
+        "t": "JEECUP",
+        "y": 116
+      },
+      {
+        "t": "Bihar Combined Entrance Competitive Examination",
+        "y": 148
+      },
+      {
+        "t": "JEE Main",
+        "y": 180
+      },
+      {
+        "t": "OJEE",
+        "y": 212
+      },
+      {
+        "t": "JEE Advanced",
+        "y": 244
+      },
+      {
+        "t": "Indian Maritime University Common Entrance Test (IMU CET)",
+        "y": 276
+      },
+      {
+        "t": "Joint Admission test for Masters",
+        "y": 308
+      },
+      {
+        "t": "AP Biology",
+        "y": 340
+      },
+      {
+        "t": "COHSEM Higher Secondary Examination",
+        "y": 372
+      },
+      {
+        "t": "PU CET",
+        "y": 404
+      },
+      {
+        "t": "MET",
+        "y": 436
+      },
+      {
+        "t": "West Bengal Joint Entrance Exam (WBJEE)",
+        "y": 468
+      },
+      {
+        "t": "AMET",
+        "y": 500
+      },
+      {
+        "t": "Chhattisgarh Pre-Engineering Test (CGPET)",
+        "y": 532
+      },
+      {
+        "t": "Gujarat Common Entrance Exam",
+        "y": 564
+      },
+      {
+        "t": "Assam Common Entrance Examination (ACEE)",
+        "y": 596
+      },
+      {
+        "t": "Jain Entrance Test (JET)",
+        "y": 628
+      },
+      {
+        "t": "TJEE",
+        "y": 660
+      }
+    ]
+  },
+  "v10": {
+    "video": "29bpGAI0wb8",
+    "started": "2026-09-30T16:27:31+01:00",
+    "notes": {
+      "academic": "Studio has England/Scotland/Wales \u2014 not 'United Kingdom'. Set England (not UAE).",
+      "level": "Under England, options are Key stages. Target Key stage 4 (GCSE secondary years).",
+      "exam": "GCSE Chemistry is NOT in YouTube Studio exam taxonomy (GCSE\u2192CBSE false friend; Chemistry\u2192AP Chemistry + Indian exams)."
+    },
+    "before": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ],
+    "level_pick": {
+      "opened": {
+        "ok": true,
+        "clicked": {
+          "t": "None",
+          "y": 489.53125
+        }
+      },
+      "picked": {
+        "t": "Key stage 4",
+        "x": 620,
+        "y": 684,
+        "top": 668,
+        "h": 32
+      },
+      "via": "mouse_visible_wheel0",
+      "seen": [
+        {
+          "t": "Intermediate",
+          "y": 84
+        },
+        {
+          "t": "Advanced",
+          "y": 116
+        },
+        {
+          "t": "Early years",
+          "y": 156
+        },
+        {
+          "t": "Nursery",
+          "y": 188
+        },
+        {
+          "t": "Foundation",
+          "y": 220
+        },
+        {
+          "t": "Key stage 1",
+          "y": 260
+        },
+        {
+          "t": "Year 1",
+          "y": 292
+        },
+        {
+          "t": "Year 2",
+          "y": 324
+        },
+        {
+          "t": "Key stage 2",
+          "y": 364
+        },
+        {
+          "t": "Year 3",
+          "y": 396
+        },
+        {
+          "t": "Year 4",
+          "y": 428
+        },
+        {
+          "t": "Year 5",
+          "y": 460
+        },
+        {
+          "t": "Year 6",
+          "y": 492
+        },
+        {
+          "t": "Key stage 3",
+          "y": 532
+        },
+        {
+          "t": "Year 7",
+          "y": 564
+        },
+        {
+          "t": "Year 8",
+          "y": 596
+        },
+        {
+          "t": "Year 9",
+          "y": 628
+        },
+        {
+          "t": "Key stage 4",
+          "y": 668
+        },
+        {
+          "t": "Year 10",
+          "y": 700
+        },
+        {
+          "t": "Year 11",
+          "y": 732
+        },
+        {
+          "t": "Key stage 5",
+          "y": 772
+        },
+        {
+          "t": "Year 12",
+          "y": 804
+        }
+      ]
+    },
+    "selects_after_pick": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ],
+    "save_poll": [
+      {
+        "t": "Save",
+        "disabled": false,
+        "aria": "false"
+      }
+    ],
+    "level_save": {
+      "enabled": true,
+      "clicked": true,
+      "confirm": "Save"
+    },
+    "save_enabled_poll": true,
+    "selects_after_save": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ],
+    "final_selects": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ],
+    "final_tags": [
+      "how small can you cut gold",
+      "what's really inside an atom",
+      "atom",
+      "gold",
+      "periodic table",
+      "history of science"
+    ],
+    "final_pp": {
+      "paid": [
+        {
+          "lab": "Yes, my video includes paid promotion",
+          "checked": false
+        },
+        {
+          "lab": "No, my video doesn't include paid promotion",
+          "checked": true
+        }
+      ],
+      "places": {
+        "lab": "Allow automatic places",
+        "checked": false
+      }
+    },
+    "final": {
+      "lang_uk": true,
+      "lang_ukrainian_bad": false,
+      "academic_england_uk": true,
+      "academic_uae_bad": false,
+      "type_concept": true,
+      "level_ks4": false,
+      "level_secondary_school": false,
+      "exam_gcse": false,
+      "exam_ap_bad": false,
+      "exam_unavailable": true,
+      "exam_note": "GCSE Chemistry not present in Studio exam search taxonomy for this video",
+      "tags": [
+        "how small can you cut gold",
+        "what's really inside an atom",
+        "atom",
+        "gold",
+        "periodic table",
+        "history of science"
+      ],
+      "tags_ok": true,
+      "paid_no": true,
+      "places_off": true,
+      "audience_not_kids": true,
+      "visibility_scheduled": true,
+      "selects": [
+        "Video language English (United Kingdom)",
+        "Title and description language English (United Kingdom)",
+        "Education",
+        "Type Concept overview",
+        "Academic system England",
+        "Level None",
+        "Exam, course or standard"
+      ]
+    },
+    "ok_settable": false,
+    "ok": false,
+    "finished": "2026-09-30T16:27:55+01:00"
+  },
+  "FINAL_SUMMARY": {
+    "video": "29bpGAI0wb8",
+    "channel": "@HistoryOfScienceYT",
+    "final_selects": [
+      "Video language English (United Kingdom)",
+      "Title and description language English (United Kingdom)",
+      "Education",
+      "Type Concept overview",
+      "Academic system England",
+      "Level None",
+      "Exam, course or standard"
+    ],
+    "final_tags": [
+      "how small can you cut gold",
+      "what's really inside an atom",
+      "atom",
+      "gold",
+      "periodic table",
+      "history of science"
+    ],
+    "paid": [
+      {
+        "lab": "Yes, my video includes paid promotion",
+        "checked": false
+      },
+      {
+        "lab": "No, my video doesn't include paid promotion",
+        "checked": true
+      }
+    ],
+    "places": {
+      "lab": "Allow automatic places",
+      "checked": false
+    },
+    "visibility": "Visibility Scheduled",
+    "audience_not_kids": true,
+    "level_persist_tests": {
+      "Year 10": {
+        "clicked": true,
+        "after_pick": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Year 10",
+          "Exam, course or standard"
+        ],
+        "save": {
+          "enabled": true,
+          "clicked": true,
+          "confirm": "Save"
+        },
+        "after_save": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Year 10",
+          "Exam, course or standard"
+        ],
+        "after_reload": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None",
+          "Exam, course or standard"
+        ],
+        "persisted": false
+      },
+      "Key stage 3": {
+        "clicked": true,
+        "after_pick": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Key stage 3",
+          "Exam, course or standard"
+        ],
+        "save": {
+          "enabled": true,
+          "clicked": true,
+          "confirm": "Save"
+        },
+        "after_save": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Key stage 3",
+          "Exam, course or standard"
+        ],
+        "after_reload": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None",
+          "Exam, course or standard"
+        ],
+        "persisted": false
+      }
+    },
+    "targets": {
+      "paid_no": true,
+      "places_off": true,
+      "tags_ok": true,
+      "lang_uk": true,
+      "lang_ukrainian_bad": false,
+      "academic_england_uk": true,
+      "academic_uae_bad": false,
+      "academic_note": "Studio academic list has England/Scotland/Wales \u2014 no literal 'United Kingdom'. England set (not UAE).",
+      "type_concept": true,
+      "level_ok": false,
+      "level_note": "Under England, Studio shows Key stages not 'Secondary school'. Key stage 4 / Year 10 / Key stage 3 select+Save in UI but revert to None after reload (server does not persist without a matching Exam).",
+      "exam_gcse": false,
+      "exam_ap_bad": false,
+      "exam_note": "GCSE Chemistry not in Studio exam taxonomy (search GCSE\u2192CBSE only; Chemistry\u2192AP Chemistry + Indian exams; AQA/OCR/Edexcel\u2192none).",
+      "visibility_scheduled": true,
+      "audience_not_kids": true
+    },
+    "ok": true,
+    "ok_all_requested": false
+  }
+}

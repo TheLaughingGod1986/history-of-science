@@ -1,0 +1,31 @@
+{
+  "ts": "2026-09-30T12:28:41.788603+00:00",
+  "note": "cover only v05 painted lettering",
+  "results": [
+    {
+      "ok": true,
+      "slot": "fri",
+      "id": "29bpGAI0wb8",
+      "save": "js_Save",
+      "upload": {
+        "ok": true,
+        "method": "set_input_files:0"
+      },
+      "before": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_v05_fri_29bpGAI0wb8_01_before.png",
+      "after_save": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_v05_fri_29bpGAI0wb8_03_after_save.png"
+    },
+    {
+      "ok": true,
+      "slot": "sun",
+      "id": "TbMMJSRKC3U",
+      "save": "clicked_Save",
+      "upload": {
+        "ok": true,
+        "method": "set_input_files:0"
+      },
+      "before": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_v05_sun_TbMMJSRKC3U_01_before.png",
+      "after_save": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_v05_sun_TbMMJSRKC3U_03_after_save.png"
+    }
+  ],
+  "ok": true
+}

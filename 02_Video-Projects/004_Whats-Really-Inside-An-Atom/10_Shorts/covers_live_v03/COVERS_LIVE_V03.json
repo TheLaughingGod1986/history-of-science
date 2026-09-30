@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "font": "/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf",
+  "fri_sun": [
+    {
+      "spans": [
+        0.455,
+        0.938
+      ],
+      "sizes": [
+        197,
+        253
+      ],
+      "punch_span": 0.938,
+      "id": "s01",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v03/hos_004_s01_how_small_cover_live_v03.jpg",
+      "lines": [
+        "HOW",
+        "SMALL?"
+      ]
+    },
+    {
+      "spans": [
+        0.544,
+        0.935
+      ],
+      "sizes": [
+        175,
+        225
+      ],
+      "punch_span": 0.935,
+      "id": "s02",
+      "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v03/hos_004_s02_every_eighth_cover_live_v03.jpg",
+      "lines": [
+        "EVERY",
+        "EIGHTH?"
+      ]
+    }
+  ],
+  "tue": "kept live_v02 THEY LAUGHED? \u2014 Ben still picking A/B",
+  "eight_up": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v03/hos_004_shorts_covers_live_v03_eight_up.jpg",
+  "thumb_preview": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v03/hos_004_shorts_covers_live_v03_thumb_preview.jpg",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts",
+  "stop": "STOP for Ben \u2014 lettering redo Fri/Sun only; no Studio upload"
+}

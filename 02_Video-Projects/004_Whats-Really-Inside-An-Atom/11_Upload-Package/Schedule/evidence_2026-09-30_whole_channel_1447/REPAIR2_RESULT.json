@@ -1,0 +1,999 @@
+{
+  "at": "2026-09-30T17:31:09+01:00",
+  "uk_probe": {
+    "united_kingdom_listed": false,
+    "england_listed_elsewhere": true,
+    "sample": []
+  },
+  "level_leaf": "Grade 10",
+  "note": "United Kingdom absent from Academic system; Secondary school is non-selectable header \u2192 Grade 10 leaf",
+  "results": [
+    {
+      "id": "clV6E10NLPw",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "uk_probe": {
+        "united_kingdom_listed": false,
+        "england_listed_elsewhere": true,
+        "sample": []
+      },
+      "level": {
+        "before": [
+          "Academic system Algeria",
+          "Level Intermediate"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 596
+        },
+        "mid": [
+          "Academic system Algeria",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system Algeria",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system Algeria",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5062, 5072), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "CUu8k38iAMc",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(4846, 4856), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "TbMMJSRKC3U",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(4945, 4955), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "29bpGAI0wb8",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(4915, 4925), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "GHZDsiH7L7A",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy",
+        "playlist_how_we_found_out_missing_or_uncheckable"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "playlist": {
+        "before": "Select",
+        "dialog": "How Did We Discover\u2026? | History of Science\nNew playlist\nDone",
+        "new_click": {
+          "clicked": true
+        },
+        "input": null,
+        "check": null,
+        "after_text": "Select",
+        "ok": false,
+        "would_not_save": "playlist_how_we_found_out_missing_or_uncheckable"
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5636, 5646), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "zI_eD3vFWmE",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(4999, 5009), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "xvanpsLeADE",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(4995, 5005), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "oowAOWTBoq0",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5039, 5049), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "frP_YrNShsU",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy",
+        "playlist_how_we_found_out_missing_or_uncheckable"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "playlist": {
+        "before": "How Did We Discover\u2026? | History of Science",
+        "dialog": "How Did We Discover\u2026? | History of Science\nNew playlist\nDone",
+        "new_click": {
+          "clicked": true
+        },
+        "input": null,
+        "check": null,
+        "after_text": "How Did We Discover\u2026? | History of Science",
+        "ok": false,
+        "would_not_save": "playlist_how_we_found_out_missing_or_uncheckable"
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(6250, 6260), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "LanTHJckYx8",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5071, 5081), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "nba0-f7PPeU",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5070, 5080), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "CnHwX1L9XHg",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5009, 5019), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "nFQRWmpulTQ",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5098, 5108), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "uU12JA5rMWg",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5078, 5088), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "AL_-qlWko_g",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy",
+        "playlist_how_we_found_out_missing_or_uncheckable"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "playlist": {
+        "before": "How Did We Discover\u2026? | History of Science",
+        "dialog": "How Did We Discover\u2026? | History of Science\nNew playlist\nDone",
+        "new_click": {
+          "clicked": true
+        },
+        "input": null,
+        "check": null,
+        "after_text": "How Did We Discover\u2026? | History of Science",
+        "ok": false,
+        "would_not_save": "playlist_how_we_found_out_missing_or_uncheckable"
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5789, 5799), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "kzDiVk4603s",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": null,
+      "not_kids": false
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "changed": [],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy",
+        "level_grade10_pick_failed"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": null,
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "ok": false,
+        "would_not_save": "level_grade10_pick_failed"
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level None"
+      ],
+      "visibility_snip": "<re.Match object; span=(4617, 4627), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(4833, 4843), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(4837, 4847), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "iqToagXnjX0",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(4820, 4830), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(4842, 4852), match='Visibility'>",
+      "not_kids": false
+    },
+    {
+      "id": "_C92tIJCk8A",
+      "changed": [
+        "level_grade10"
+      ],
+      "would_not_save": [
+        "academic_system:United Kingdom_not_in_taxonomy",
+        "playlist_how_we_found_out_missing_or_uncheckable"
+      ],
+      "level": {
+        "before": [
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "click": {
+          "ok": true,
+          "t": "Grade 10",
+          "y": 660
+        },
+        "mid": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "save": {
+          "via": "u.page_save",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after": [
+          "Academic system United Arab Emirates",
+          "Level Grade 10"
+        ],
+        "ok": true
+      },
+      "playlist": {
+        "before": "How Did We Discover\u2026? | History of Science",
+        "dialog": "How Did We Discover\u2026? | History of Science\nNew playlist\nDone",
+        "new_click": {
+          "clicked": true
+        },
+        "input": null,
+        "check": null,
+        "after_text": "How Did We Discover\u2026? | History of Science",
+        "ok": false,
+        "would_not_save": "playlist_how_we_found_out_missing_or_uncheckable"
+      },
+      "edu_after": [
+        "Academic system United Arab Emirates",
+        "Level Grade 10"
+      ],
+      "visibility_snip": "<re.Match object; span=(5672, 5682), match='Visibility'>",
+      "not_kids": false
+    }
+  ]
+}

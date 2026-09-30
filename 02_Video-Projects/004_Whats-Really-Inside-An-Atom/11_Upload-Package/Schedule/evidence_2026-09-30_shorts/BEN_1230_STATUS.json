@@ -1,0 +1,29 @@
+{
+  "ts": "2026-09-30T12:50:00+01:00",
+  "fri_sun_covers": {
+    "ok": true,
+    "condition": "teal middle word + no edge touch",
+    "fri": {
+      "id": "29bpGAI0wb8",
+      "lines": ["HOW", "so", "SMALL?"],
+      "cover": "10_Shorts/covers_live_v04/hos_004_s01_how_small_cover_live_v04.jpg",
+      "studio": "cover uploaded + Changes saved; no schedule/visibility/audience/AI/Related changes"
+    },
+    "sun": {
+      "id": "TbMMJSRKC3U",
+      "lines": ["EVERY", "eighth", "ELEMENT?"],
+      "cover": "10_Shorts/covers_live_v04/hos_004_s02_every_eighth_cover_live_v04.jpg",
+      "studio": "cover uploaded + Changes saved; no schedule/visibility/audience/AI/Related changes"
+    }
+  },
+  "tue_lister": {
+    "title": "The spray that stopped surgery killing patients",
+    "title_vs_live": "PASS (no duplicate)",
+    "script": "B — Lister carbolic spray (Ben 12:30 text + short line)",
+    "cover": "READY THE/carbolic/SPRAY",
+    "vo": "BLOCKED — ElevenLabs past_due / open invoice requires_payment_method",
+    "upload": false,
+    "related_when_upload": "_C92tIJCk8A"
+  },
+  "stop": "STOP for Ben — Fri/Sun covers live on Studio. Clear ElevenLabs invoice to finish Tue VO→cut→gate."
+}

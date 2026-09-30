@@ -19,8 +19,9 @@ One row per Short. Fill stayed-to-watch and average view duration from Studio at
 | 25 Sep 2026 | `oowAOWTBoq0` | How X-rays Were Discovered by Accident | 003 | | | | 6 | Public |
 | 26 Sep 2026 | `xvanpsLeADE` | How did Röntgen see bones without cutting | 003 | | | | | Public · was missing from this log |
 | 27 Sep 2026 | `zI_eD3vFWmE` | The first X-ray showed a wedding ring | 003 | | | | | Public · was missing from this log |
-| 16 Oct 2026 11:30 UK | `29bpGAI0wb8` | How small can you cut gold? | 004 `GHZDsiH7L7A` | | | | | Scheduled · Related 004 deferred to 15 Oct 18:05 · Altered YES · not kids |
+| 16 Oct 2026 11:30 UK | `29bpGAI0wb8` | What happens if you keep cutting gold in half? | 004 `GHZDsiH7L7A` | | | | | Scheduled · title renamed 30 Sep 15:29 (was How small can you cut gold?) · Related 004 deferred to 15 Oct 18:05 · Altered YES · not kids |
 | 18 Oct 2026 11:30 UK | `TbMMJSRKC3U` | He said every eighth element repeats | 002 `AL_-qlWko_g` | | | | | Scheduled · Related 002 set · Altered YES · not kids · s02 punch v06 |
-| — (Private) | `CUu8k38iAMc` | The first X-ray showed a wedding ring | 003 | | | | | **PRIVATE 30 Sep 10:45** — duplicate of public `zI_eD3vFWmE`; unsched from Tue 20 Oct. Do not delete. Tue slot → 001 Germs (new script — STOP for Ben) |
+| 20 Oct 2026 11:30 UK | `clV6E10NLPw` | The spray that stopped surgery killing patients | 001 `_C92tIJCk8A` | carbolic spray / THE CARBOLIC SPRAY cover live_v06 | | | | Scheduled · Altered YES · not kids · Related still wrong (Short “Germs hitch a ride on you” — long pick save failed; retry) · do not touch Private `CUu8k38iAMc` |
+| — (Private) | `CUu8k38iAMc` | The first X-ray showed a wedding ring | 003 | | | | | **PRIVATE 30 Sep 10:45** — duplicate of public `zI_eD3vFWmE`; unsched from Tue 20 Oct. Do not delete. |
 
 Live scrape: `02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/LIVE_SHORTS_LIST.json`

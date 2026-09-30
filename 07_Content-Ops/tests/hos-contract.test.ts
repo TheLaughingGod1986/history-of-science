@@ -155,16 +155,35 @@ describe("channel audit", () => {
     expect(rules(auditVideo(good))).toEqual([]);
   });
   it("flags Made for Kids, no AI label, Science category, unset language, Premiere", () => {
-    const r = rules(
-      auditVideo({
-        ...good,
-        snippet: { ...good.snippet, categoryId: "28", defaultLanguage: undefined, liveBroadcastContent: "upcoming" },
-        status: { ...good.status, madeForKids: true, containsSyntheticMedia: false },
-      }),
+    // Data API omits containsSyntheticMedia even when Studio shows Yes — warn only, confirm by eye.
+    const { containsSyntheticMedia: _drop, ...statusNoAiLabel } = good.status!;
+    const findings = auditVideo({
+      ...good,
+      snippet: { ...good.snippet, categoryId: "28", defaultLanguage: undefined, liveBroadcastContent: "upcoming" },
+      status: { ...statusNoAiLabel, madeForKids: true },
+    });
+    const errors = rules(findings);
+    expect(errors).toEqual(
+      expect.arrayContaining(["audience", "category", "language.title", "premiere"]),
     );
-    expect(r).toEqual(
-      expect.arrayContaining(["audience", "ai-disclosure", "category", "language.title", "premiere"]),
-    );
+    expect(errors).not.toContain("ai-disclosure");
+    expect(findings.filter((f) => f.rule === "ai-disclosure")[0]?.severity).toBe("warn");
+  });
+  it("errors when altered/synthetic is explicitly No", () => {
+    expect(
+      rules(
+        auditVideo({
+          ...good,
+          status: { ...good.status, containsSyntheticMedia: false },
+        }),
+      ),
+    ).toContain("ai-disclosure");
+  });
+  it("warns (not errors) when Data API omits containsSyntheticMedia", () => {
+    const { containsSyntheticMedia: _drop, ...status } = good.status!;
+    const findings = auditVideo({ ...good, status });
+    expect(findings.filter((f) => f.severity === "error").map((f) => f.rule)).not.toContain("ai-disclosure");
+    expect(findings.filter((f) => f.rule === "ai-disclosure")[0]?.severity).toBe("warn");
   });
   it("flags a Short scheduled at midnight, and two Shorts on one day, and duplicate titles", () => {
     const short = (id: string, when: string, title: string): ApiVideo => ({

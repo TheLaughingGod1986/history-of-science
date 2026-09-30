@@ -1,0 +1,65 @@
+{
+  "ts": "2026-09-30T13:15:34.701890+00:00",
+  "note": "direct cover put v06b",
+  "results": [
+    {
+      "ok": true,
+      "slot": "fri",
+      "id": "29bpGAI0wb8",
+      "upload": {
+        "ok": true,
+        "method": "set_input_files:0",
+        "notes": [
+          "file_inputs=1",
+          {
+            "inputs": [
+              {
+                "acc": "image/jpeg,image/png",
+                "id": "file-loader",
+                "name": "",
+                "aria": "",
+                "near": "YTCP-THUMBNAIL-UPLOADER",
+                "path": ""
+              }
+            ]
+          },
+          "light_inputs=1",
+          "set_input_files_i=0_acc=image/jpeg,image/png"
+        ]
+      },
+      "save": "clicked_Save",
+      "before": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_v06b_fri_29bpGAI0wb8_01_before.png",
+      "after_save": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_v06b_fri_29bpGAI0wb8_03_after_save.png"
+    },
+    {
+      "ok": true,
+      "slot": "sun",
+      "id": "TbMMJSRKC3U",
+      "upload": {
+        "ok": true,
+        "method": "set_input_files:0",
+        "notes": [
+          "file_inputs=1",
+          {
+            "inputs": [
+              {
+                "acc": "image/jpeg,image/png",
+                "id": "file-loader",
+                "name": "",
+                "aria": "",
+                "near": "YTCP-THUMBNAIL-UPLOADER",
+                "path": ""
+              }
+            ]
+          },
+          "light_inputs=1",
+          "set_input_files_i=0_acc=image/jpeg,image/png"
+        ]
+      },
+      "save": "clicked_Save",
+      "before": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_v06b_sun_TbMMJSRKC3U_01_before.png",
+      "after_save": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/COVER_v06b_sun_TbMMJSRKC3U_03_after_save.png"
+    }
+  ],
+  "ok": true
+}

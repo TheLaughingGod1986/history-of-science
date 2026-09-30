@@ -279,8 +279,17 @@ export function auditVideo(v: ApiVideo): Finding[] {
     f.push(err("channel", `on channel ${sn.channelId}, not HOS`));
   if (st.madeForKids || st.selfDeclaredMadeForKids)
     f.push(err("audience", "marked Made for Kids (no comments, notifications, end screens; cut reach)"));
-  if (st.containsSyntheticMedia !== true)
-    f.push(err("ai-disclosure", "altered/synthetic content is not Yes"));
+  // videos.list does not return containsSyntheticMedia even when Studio shows Altered YES
+  // and even after videos.update sets it. Fail only on an explicit No; otherwise confirm in Studio.
+  if (st.containsSyntheticMedia === false)
+    f.push(err("ai-disclosure", "altered/synthetic content is No"));
+  else if (st.containsSyntheticMedia !== true)
+    f.push(
+      warn(
+        "ai-disclosure",
+        "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)",
+      ),
+    );
   if (sn.categoryId && sn.categoryId !== CATEGORY_EDUCATION)
     f.push(err("category", `category ${sn.categoryId}, want ${CATEGORY_EDUCATION} (Education)`));
   if (sn.defaultLanguage !== LANGUAGE)
@@ -340,6 +349,8 @@ export function auditChannel(videos: ApiVideo[]): Map<string, Finding[]> {
 
 /** Things the Data API cannot read: a person or agent checks these in Studio every time. */
 export const STUDIO_ONLY_CHECKS = [
+  "AI disclosure = Yes (confirm by eye)",
+  "Every video: Altered / synthetic content = Yes (Data API videos.list omits this field)",
   "Shorts: Related video points at the long it promotes (set at 18:05 on the long's day if needed)",
   "Longs: end screen (related long + Subscribe) and 2 cards, none in the first minute",
   "Longs: Test & Compare (title+thumbnail pairs, or thumbnails only) running after publish",
