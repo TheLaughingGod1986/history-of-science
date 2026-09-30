@@ -308,7 +308,16 @@ def ensure_hos(page) -> dict:
 
 
 def extract_new_id(page, exclude: str = "") -> str | None:
-    banned = {exclude, "frP_YrNShsU", "AL_-qlWko_g", "LanTHJckYx8", "nba0-f7PPeU"}
+    # Never steal live/scheduled long ids from the Content page hinterland.
+    banned = {
+        exclude,
+        "frP_YrNShsU",  # 003 X-rays
+        "AL_-qlWko_g",  # 002 Periodic Table
+        "GHZDsiH7L7A",  # 004 Atom (scheduled)
+        "_C92tIJCk8A",  # 001 Germs
+        "LanTHJckYx8",
+        "nba0-f7PPeU",
+    }
 
     def keep(vid: str | None) -> str | None:
         if not vid or vid in banned or len(vid) != 11:
@@ -781,8 +790,10 @@ def open_upload(page) -> dict:
     dismiss(page)
     try:
         session = page.context.new_cdp_session(page)
-        session.send("Page.setInterceptFileChooserDialog", {"enabled": False})
-        info["intercept"] = "off"
+        # Keep chooser interception ON so Playwright expect_file_chooser works
+        # as a fallback. Primary attach uses CDP DOM.setFileInputFiles.
+        session.send("Page.setInterceptFileChooserDialog", {"enabled": True})
+        info["intercept"] = "on"
     except Exception as e:
         info["intercept"] = f"err:{type(e).__name__}"
     info["create"] = click_shadow_text(page, r"^Create$")
