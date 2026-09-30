@@ -469,8 +469,6 @@ def main():
             result["steps"].append(save_rr(page, u, "level_ks4"))
             shot(page, "fri_manual_level.png")
             if "Key stage 4" not in " | ".join(selects(page)):
-                lev2 = set_dd(page, "Level", "Key stage 3", trigger_value := "None")
-                # re-open current
                 cur = "None"
                 for s in selects(page):
                     if s.startswith("Level"):
