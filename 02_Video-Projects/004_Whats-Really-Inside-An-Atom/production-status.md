@@ -512,3 +512,12 @@ Channel: `@HistoryOfScienceYT` only. Supersedes narrower Fri/Sun/language orders
 ### Fri probe follow-up (2026-09-30T18:05:47+01:00)
 
 [Studio dropdown probe Fri](bc-73025afe-d117-5442-9891-fb3cac39f1d3) found Academic **United Kingdom** is not listed (England/Scotland/Wales are). Fri `29bpGAI0wb8` set to **Academic England** + **English (United Kingdom)** languages + Type Concept overview. Whole-channel 14:47 pass had reverted Academic to UAE — **restored England** and verified after reload (Scheduled, not-kids). Level still None (Key stage picks do not persist). GCSE Chemistry still not in exam taxonomy. Evidence: `11_Upload-Package/Schedule/evidence_2026-09-30_studio_fixes/FRI_ENGLAND_RESTORE_RESULT.json`.
+
+
+## Ben 19:54 Academic England + playlist + AI warn (recorded 2026-09-30T20:14:06+01:00)
+
+- **Academic system = England** on all 22 HOS videos (was UAE on 21; Fri already England).
+- **Level:** Key stage 4 (14–16) selects and saves in-session, then **reverts to None** on reload → left blank.
+- **Exam:** GCSE Chemistry/Physics/Biology **not in taxonomy** under England → left blank.
+- **Playlist:** `How Did We Discover…? | History of Science` has 001/002/003. **Add 004 `GHZDsiH7L7A` on launch day 15 Oct 18:05** — see `11_Upload-Package/Schedule/LAUNCH_DAY_15_OCT_1805.md`.
+- Evidence: `11_Upload-Package/Schedule/evidence_2026-09-30_england_1954/ENGLAND_1954_RESULT.json`.

@@ -1,0 +1,3857 @@
+{
+  "at": "2026-09-30T20:12:08+01:00",
+  "ordered_by": "Ben 19:54",
+  "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "playlist_policy": "How Did We Discover\u2026? | History of Science (001\u2192003 now; 004 on launch day 15 Oct 18:00)",
+  "results": [
+    {
+      "id": "clV6E10NLPw",
+      "film": "001",
+      "kind": "Short",
+      "exam_want": "GCSE Biology",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type Concept overview",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Scheduled",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type Concept overview",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Scheduled",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Biology",
+        "input": {
+          "x": 620,
+          "y": 466.53125
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Biology_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Scheduled",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Scheduled"
+    },
+    {
+      "id": "CUu8k38iAMc",
+      "film": "003",
+      "kind": "Short",
+      "exam_want": "GCSE Physics",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Private",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Private",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Physics",
+        "input": {
+          "x": 620,
+          "y": 466.53125
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Physics_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Private",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Private"
+    },
+    {
+      "id": "TbMMJSRKC3U",
+      "film": "002",
+      "kind": "Short",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Scheduled",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Scheduled",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 466.53125
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Scheduled",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Scheduled"
+    },
+    {
+      "id": "29bpGAI0wb8",
+      "film": "004",
+      "kind": "Short",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "already": true,
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None"
+        ]
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type Concept overview",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Scheduled",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 466.53125
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Scheduled",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Scheduled"
+    },
+    {
+      "id": "GHZDsiH7L7A",
+      "film": "004",
+      "kind": "long",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type Concept overview",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Scheduled",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type Concept overview",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Scheduled",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 466.53125
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type Concept overview",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Scheduled",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Scheduled"
+    },
+    {
+      "id": "zI_eD3vFWmE",
+      "film": "003",
+      "kind": "Short",
+      "exam_want": "GCSE Physics",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Physics",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Physics_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "xvanpsLeADE",
+      "film": "003",
+      "kind": "Short",
+      "exam_want": "GCSE Physics",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Physics",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Physics_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "oowAOWTBoq0",
+      "film": "003",
+      "kind": "Short",
+      "exam_want": "GCSE Physics",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Physics",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Physics_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "frP_YrNShsU",
+      "film": "003",
+      "kind": "long",
+      "exam_want": "GCSE Physics",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Physics",
+        "input": {
+          "x": 620,
+          "y": 466.53125
+        },
+        "before": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Physics_not_in_taxonomy"
+      },
+      "playlist": {
+        "before": "How Did We Discover\u2026? | History of Science",
+        "already": true,
+        "ok": true
+      },
+      "final": {
+        "edu": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "LanTHJckYx8",
+      "film": "002",
+      "kind": "Short",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "nba0-f7PPeU",
+      "film": "002",
+      "kind": "Short",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "CnHwX1L9XHg",
+      "film": "002",
+      "kind": "Short",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "nFQRWmpulTQ",
+      "film": "002",
+      "kind": "Short",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "uU12JA5rMWg",
+      "film": "002",
+      "kind": "Short",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "AL_-qlWko_g",
+      "film": "002",
+      "kind": "long",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 466.53125
+        },
+        "before": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "playlist": {
+        "before": "How Did We Discover\u2026? | History of Science",
+        "already": true,
+        "ok": true
+      },
+      "final": {
+        "edu": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "kzDiVk4603s",
+      "film": "002",
+      "kind": "Short",
+      "exam_want": "GCSE Chemistry",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Chemistry",
+        "input": {
+          "x": 620,
+          "y": 490.53125
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Chemistry_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": ""
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "film": "001",
+      "kind": "Short",
+      "exam_want": "GCSE Biology",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Biology",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Biology_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "film": "001",
+      "kind": "Short",
+      "exam_want": "GCSE Biology",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language Select",
+          "Title and description language Select",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Biology",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Biology_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "film": "001",
+      "kind": "Short",
+      "exam_want": "GCSE Biology",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Biology",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Biology_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "iqToagXnjX0",
+      "film": "001",
+      "kind": "Short",
+      "exam_want": "GCSE Biology",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Biology",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Biology_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "film": "001",
+      "kind": "Short",
+      "exam_want": "GCSE Biology",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Select",
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Biology",
+        "input": {
+          "x": 620,
+          "y": 466.359375
+        },
+        "before": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Biology_not_in_taxonomy"
+      },
+      "final": {
+        "edu": [
+          "Select",
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    },
+    {
+      "id": "_C92tIJCk8A",
+      "film": "001",
+      "kind": "long",
+      "exam_want": "GCSE Biology",
+      "title": "Video details - YouTube Studio",
+      "england": {
+        "before": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system United Arab Emirates",
+          "Level None"
+        ],
+        "pick": {
+          "ok": true,
+          "t": "England",
+          "y": 852
+        },
+        "mid": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level None"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "level": {
+        "before": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "opts_sample": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Early years",
+          "Nursery",
+          "Foundation",
+          "Key stage 1",
+          "Year 1",
+          "Year 2",
+          "Key stage 2",
+          "Year 3",
+          "Year 4",
+          "Year 5",
+          "Year 6",
+          "Key stage 3",
+          "Year 7",
+          "Year 8",
+          "Year 9",
+          "Key stage 4",
+          "Year 10",
+          "Year 11",
+          "Key stage 5",
+          "Year 12",
+          "Year 13",
+          "Higher education",
+          "Research",
+          "Professional training",
+          "Other"
+        ],
+        "want": "Key stage 4",
+        "click": {
+          "ok": true,
+          "t": "Key stage 4",
+          "y": 668
+        },
+        "mid": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "save": {
+          "via": "u",
+          "result": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          }
+        },
+        "after_save": {
+          "edu": [
+            "Video language English (United Kingdom)",
+            "Title and description language English (United Kingdom)",
+            "Education",
+            "Type None",
+            "Academic system England",
+            "Level Key stage 4"
+          ],
+          "not_kids": true,
+          "visibility": "Public",
+          "kids_yes": false
+        },
+        "ok": true
+      },
+      "exam": {
+        "exam_want": "GCSE Biology",
+        "input": {
+          "x": 620,
+          "y": 466.53125
+        },
+        "before": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level Key stage 4"
+        ],
+        "opts": [
+          "None"
+        ],
+        "ok": false,
+        "blank": true,
+        "would_not_save": "exam_GCSE Biology_not_in_taxonomy"
+      },
+      "playlist": {
+        "before": "How Did We Discover\u2026? | History of Science",
+        "already": true,
+        "ok": true
+      },
+      "final": {
+        "edu": [
+          "Video language English (United Kingdom)",
+          "Title and description language English (United Kingdom)",
+          "Education",
+          "Type None",
+          "Academic system England",
+          "Level None"
+        ],
+        "not_kids": true,
+        "visibility": "Public",
+        "kids_yes": false
+      },
+      "saved_fields": {
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None"
+      },
+      "audience_ok": true,
+      "visibility": "Public"
+    }
+  ]
+}

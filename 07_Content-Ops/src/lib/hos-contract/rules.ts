@@ -349,6 +349,7 @@ export function auditChannel(videos: ApiVideo[]): Map<string, Finding[]> {
 
 /** Things the Data API cannot read: a person or agent checks these in Studio every time. */
 export const STUDIO_ONLY_CHECKS = [
+  "AI disclosure = Yes (confirm by eye)",
   "Every video: Altered / synthetic content = Yes (Data API videos.list omits this field)",
   "Shorts: Related video points at the long it promotes (set at 18:05 on the long's day if needed)",
   "Longs: end screen (related long + Subscribe) and 2 cards, none in the first minute",

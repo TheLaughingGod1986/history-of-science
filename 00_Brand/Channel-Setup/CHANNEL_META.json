@@ -228,5 +228,269 @@
     "restore_after_1447_uae_regression": true,
     "evidence": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_studio_fixes/FRI_ENGLAND_RESTORE_RESULT.json",
     "artifacts": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_1447_whole_channel/fri_restore_england_99_final.png"
+  },
+  "ben_1954_academic_england": {
+    "at_uk": "2026-09-30T20:14:06+01:00",
+    "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "academic_system": "England",
+    "n_videos": 22,
+    "england_ok": 22,
+    "level": "Key stage 4 selected+saved then reverted to None on reload \u2014 left blank per Ben (if one saves)",
+    "exam": "GCSE subjects not in Studio taxonomy under England \u2014 left blank",
+    "playlist": {
+      "name": "How Did We Discover\u2026? | History of Science",
+      "in_now": [
+        "_C92tIJCk8A",
+        "AL_-qlWko_g",
+        "frP_YrNShsU"
+      ],
+      "add_004_on_launch_day": "GHZDsiH7L7A at 15 Oct 18:05 UK",
+      "launch_day_list": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/LAUNCH_DAY_15_OCT_1805.md"
+    },
+    "table": [
+      {
+        "id": "clV6E10NLPw",
+        "film": "001",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Scheduled",
+        "playlist": null
+      },
+      {
+        "id": "CUu8k38iAMc",
+        "film": "003",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Private",
+        "playlist": null
+      },
+      {
+        "id": "TbMMJSRKC3U",
+        "film": "002",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Scheduled",
+        "playlist": null
+      },
+      {
+        "id": "29bpGAI0wb8",
+        "film": "004",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Scheduled",
+        "playlist": null
+      },
+      {
+        "id": "GHZDsiH7L7A",
+        "film": "004",
+        "kind": "long",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Scheduled",
+        "playlist": null
+      },
+      {
+        "id": "zI_eD3vFWmE",
+        "film": "003",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "xvanpsLeADE",
+        "film": "003",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "oowAOWTBoq0",
+        "film": "003",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "frP_YrNShsU",
+        "film": "003",
+        "kind": "long",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": true
+      },
+      {
+        "id": "LanTHJckYx8",
+        "film": "002",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "nba0-f7PPeU",
+        "film": "002",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "CnHwX1L9XHg",
+        "film": "002",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "nFQRWmpulTQ",
+        "film": "002",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "uU12JA5rMWg",
+        "film": "002",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "AL_-qlWko_g",
+        "film": "002",
+        "kind": "long",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": true
+      },
+      {
+        "id": "kzDiVk4603s",
+        "film": "002",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "",
+        "playlist": null
+      },
+      {
+        "id": "sILtQxgYQk8",
+        "film": "001",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "93fPUG-hW0A",
+        "film": "001",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "8_Edn_HCi1s",
+        "film": "001",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "iqToagXnjX0",
+        "film": "001",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "H1y0DXFVmw8",
+        "film": "001",
+        "kind": "Short",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": null
+      },
+      {
+        "id": "_C92tIJCk8A",
+        "film": "001",
+        "kind": "long",
+        "academic": "Academic system England",
+        "level": "Level None",
+        "exam": "Exam blank/None",
+        "audience_ok": true,
+        "visibility": "Public",
+        "playlist": true
+      }
+    ],
+    "evidence": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_england_1954/ENGLAND_1954_RESULT.json"
   }
 }
