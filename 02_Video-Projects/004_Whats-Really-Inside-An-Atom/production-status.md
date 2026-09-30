@@ -430,13 +430,21 @@ Ben re-sent the growth order unchanged. Live CDP pass with **named selectors onl
 | 001 Shorts edit Oops | `8uBR-9oxeWs` · `YX2UR1u-JCQ` · `Fnb3p81u-wY` · `vpuRgKXtFlY` · `Lcmh5y2KMQM` — unverified via edit |
 | C4 end screens → 004 | **Deferred** until after 15 Oct 18:05 |
 
-### D — Shorts
+### D — Shorts — **SCHEDULED** (Ben 30 Sep 09:02 · V06 OK)
 
-**Not scheduled.** Ben phone UAT 29 Sep 20:48: **s01 How Small v05 PASS** · **s03 Her Ring v05 PASS** · **s02 Every Eighth v05 FAIL** (“still shaky”).
+All three Ben-PASSED cuts uploaded PRIVATE + scheduled on `@HistoryOfScienceYT` only. No Premiere. No Replace. No publish-now. No `/go/`. No pinned comment.
 
-**s02 punch v06** (30 Sep): gentle `scale` push-in/out (`eval=frame`) + static 9:16 crop — **no** crop-pan / zoompan / setpts. Still-plate frame-diff QA **PASS** (near_zero=0, cv=0.26). Kept v05 word-timed captions, hook `EVERY EIGHTH?`, title ~9–14 s, Davy Medal last VO line, last-4 s loop, 1080×1920 30 fps. `gate_shorts_open.py check` **PASS** (dur=26.4s). Index `10_Shorts/SHORTS_PUNCH_INDEX_s02_v06.json` · sha256 `0321e6c0ab8ce456…`. iCloud: `HOS UAT/004_…/10_Shorts/hos_004_s02_every_eighth_punch_v06.mp4` + `WATCH_shorts_s02_v06.txt`. **s01/s03 v05 untouched.**
+| Slot | Cut | Id | Schedule (UK) | Related | Cover | Proof |
+|---|---|---|---|---|---|---|
+| s01 How Small | v05 | **`29bpGAI0wb8`** | **Fri 16 Oct 2026 11:30** | **004 `GHZDsiH7L7A` DEFERRED** (Studio won't accept while 004 still scheduled) → retry **15 Oct 18:05** | `10_Shorts/covers_final/hos_004_s01_how_small_cover_final.jpg` · HOW SMALL? | `BEN_0902_s01_scheduled_list.png` · `BEN_0902_s01_final_edit.png` |
+| s02 Every Eighth | v06 | **`TbMMJSRKC3U`** | **Sun 18 Oct 2026 11:30** | **002 `AL_-qlWko_g` SET** | `…/hos_004_s02_every_eighth_cover_final.jpg` · EVERY EIGHTH? | `BEN_0902_s02_list.png` · `BEN_0902_s02_final_edit.png` |
+| s03 Her Ring | v05 | **`CUu8k38iAMc`** | **Tue 20 Oct 2026 11:30** | **003 `frP_YrNShsU` SET** | `…/hos_004_s03_her_ring_cover_final.jpg` · HER RING | `BEN_0902_s03_list.png` · `BEN_0902_s03_final_edit.png` |
 
-**STOP for Ben phone watch on s02 v06.** Schedule Fri 16 / Sun 18 / Tue 20 Oct 11:30 UK only after he OKs s02 (after 004 public).
+**Per Short settings (verified):** Audience **not Made for Kids** · Altered/AI **YES** · Category **Education** (present) · Comments **not disabled** · Remixing ON (channel Advanced default) · covers painted live-002 house look §4 · preview sheet in iCloud `HOS UAT/004_…/10_Shorts/`.
+
+**gate_shorts_open.py add:** all three registered `status=scheduled` in `audits/shorts_open_library/`. **SHORTS_LOG:** rows added.
+
+**Evidence:** `11_Upload-Package/Schedule/evidence_2026-09-30_shorts/` · artifacts `BEN_0902_*`.
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
@@ -454,7 +462,7 @@ Ben re-sent the growth order unchanged. Live CDP pass with **named selectors onl
 - **Superseded (kept):** `UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json` · `DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json` → status `SUPERSEDED`.
 - **FINISH Studio:** Visibility + Audience + description/chapters + captions **OK**. **Thumb A LIVE** (Ben 22:26). T&C re-arm / end screen / pin still launch-day or after Studio save healthy.
 - **Thumbs (files):** A v04 · B v04 · **C v06** — Ben PASS. **Live Studio main thumb = A (atom v04)** — Content list confirmed.
-- **Shorts:** s01/s03 **v05 Ben PASS**. s02 **v06** (shake fix) · gate **PASS** · iCloud `…/10_Shorts/` + `WATCH_shorts_s02_v06.txt` · **STOP phone watch s02 v06**. Schedule nothing until Ben OKs s02.
+- **Shorts:** **SCHEDULED** (Ben 09:02). s01 `29bpGAI0wb8` Fri 16 Oct 11:30 · s02 `TbMMJSRKC3U` Sun 18 Oct 11:30 · s03 `CUu8k38iAMc` Tue 20 Oct 11:30. Related s01→004 deferred to 15 Oct 18:05.
 
 ### Ben 22:26 — main thumb A NOW (30 Sep)
 

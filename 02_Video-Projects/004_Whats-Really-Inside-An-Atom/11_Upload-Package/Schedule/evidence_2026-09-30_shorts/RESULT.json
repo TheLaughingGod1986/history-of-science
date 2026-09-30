@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "order": "Ben 30 Sep 09:02 — covers + PRIVATE schedule Shorts",
+  "affiliate": "none",
+  "madeForKids": false,
+  "altered": "YES",
+  "category": "Education",
+  "comments": "ON",
+  "remixing": "ON",
+  "shorts": [
+    {
+      "slot": "s01",
+      "title": "How small can you cut gold?",
+      "cut": "v05",
+      "platformPostId": "29bpGAI0wb8",
+      "platformUrl": "https://youtube.com/shorts/29bpGAI0wb8",
+      "schedule": "Friday 16 Oct 2026 11:30 Europe/London",
+      "related_id": "GHZDsiH7L7A",
+      "related_title": "What's Really Inside an Atom?",
+      "related": "blocked_scheduled_004_defer_15oct1805",
+      "relatedDeferred": true,
+      "audience_ok": true,
+      "altered_yes": true,
+      "cover": "10_Shorts/covers_final/hos_004_s01_how_small_cover_final.jpg",
+      "ok": true
+    },
+    {
+      "slot": "s02",
+      "title": "He said every eighth element repeats",
+      "cut": "v06",
+      "platformPostId": "TbMMJSRKC3U",
+      "platformUrl": "https://youtube.com/shorts/TbMMJSRKC3U",
+      "schedule": "Sunday 18 Oct 2026 11:30 Europe/London",
+      "related_id": "AL_-qlWko_g",
+      "related_title": "How Did We Discover the Periodic Table?",
+      "related": "already_set",
+      "relatedDeferred": false,
+      "audience_ok": true,
+      "altered_yes": true,
+      "cover": "10_Shorts/covers_final/hos_004_s02_every_eighth_cover_final.jpg",
+      "ok": true
+    },
+    {
+      "slot": "s03",
+      "title": "The first X-ray showed a wedding ring",
+      "cut": "v05",
+      "platformPostId": "CUu8k38iAMc",
+      "platformUrl": "https://youtube.com/shorts/CUu8k38iAMc",
+      "schedule": "Tuesday 20 Oct 2026 11:30 Europe/London",
+      "related_id": "frP_YrNShsU",
+      "related_title": "How Did We Discover X-rays?",
+      "related": "already_set",
+      "relatedDeferred": false,
+      "audience_ok": true,
+      "altered_yes": true,
+      "cover": "10_Shorts/covers_final/hos_004_s03_her_ring_cover_final.jpg",
+      "ok": true
+    }
+  ],
+  "screenshots": {
+    "covers_preview": "BEN_0902_shorts_covers_final_preview_sheet.jpg",
+    "list_final": "BEN_0902_shorts_list_final.png",
+    "s01_list": "BEN_0902_s01_scheduled_list.png",
+    "s01_edit": "BEN_0902_s01_final_edit.png",
+    "s02_list": "BEN_0902_s02_list.png",
+    "s02_edit": "BEN_0902_s02_final_edit.png",
+    "s03_list": "BEN_0902_s03_list.png",
+    "s03_edit": "BEN_0902_s03_final_edit.png"
+  }
+}

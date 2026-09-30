@@ -172,7 +172,11 @@ def details_open(page) -> bool:
         if not dlg.count():
             return False
         t = dlg.first.inner_text()
-        return bool(re.search(r"Title \(required\)|Details", t, re.I))
+        # Require actual Details fields — tab label "Details" alone is not enough
+        return bool(
+            re.search(r"Title \(required\)", t, re.I)
+            or re.search(r"Tell viewers about your (video|Short)", t, re.I)
+        )
     except Exception:
         return False
 
@@ -897,6 +901,7 @@ def wizard_schedule(page, job: dict) -> dict:
         }"""
     )
     info["after"] = after
+    # Accept "16 Oct 2026" or "16 October 2026"
     if str(job["day"]) not in str(after.get("date") or ""):
         info["ok"] = False
         info["error"] = f"date_not_set:{after}"
@@ -919,40 +924,196 @@ def wizard_schedule(page, job: dict) -> dict:
     return info
 
 
+def jump_visibility_tab(page) -> bool:
+    """Click Visibility stepper tab inside uploads dialog."""
+    ok = page.evaluate(
+        """() => {
+          let hit=false;
+          const walk=(r,d=0)=>{
+            if(!r||d>50||hit) return;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('button,[role=tab]') : [])) {
+              if ((el.innerText||'').trim()==='Visibility') {
+                el.click(); hit=true; return;
+              }
+            }
+            for (const el of (r.querySelectorAll?r.querySelectorAll('*'):[]))
+              if (el.shadowRoot) walk(el.shadowRoot,d+1);
+          };
+          walk(document.querySelector('ytcp-uploads-dialog')||document);
+          return hit;
+        }"""
+    )
+    page.wait_for_timeout(1000)
+    return bool(ok)
+
+
 def wizard_to_schedule(page, job: dict) -> dict:
     out: dict = {}
-    nxt0 = click_dialog_next(page)
-    out["next0"] = nxt0
-    page.wait_for_timeout(800)
-    out["related"] = wizard_related(
-        page, job["related_title"], job["related_id"]
-    )
+    # Related on Video elements (best-effort; 004 may be blocked while scheduled)
+    try:
+        # Ensure Video elements for Related Add
+        page.evaluate(
+            """() => {
+              const walk=(r,d=0)=>{
+                if(!r||d>50) return false;
+                for (const el of (r.querySelectorAll?r.querySelectorAll('button,[role=tab]'):[])) {
+                  if ((el.innerText||'').trim()==='Video elements') { el.click(); return true; }
+                }
+                for (const el of (r.querySelectorAll?r.querySelectorAll('*'):[]))
+                  if (el.shadowRoot && walk(el.shadowRoot,d+1)) return true;
+                return false;
+              };
+              return walk(document.querySelector('ytcp-uploads-dialog')||document);
+            }"""
+        )
+        page.wait_for_timeout(700)
+        out["related"] = wizard_related(
+            page, job["related_title"], job["related_id"]
+        )
+    except Exception as e:
+        out["related"] = f"err:{type(e).__name__}"
+    # Close any Related picker without killing the uploads dialog
+    try:
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(300)
+    except Exception:
+        pass
     page.screenshot(path=str(EV / f"{job['slot']}_related.png"), full_page=True)
-    for i in range(8):
-        t = ""
-        try:
-            t = page.locator("ytcp-uploads-dialog").first.inner_text()
-        except Exception:
-            t = snip(page, 2500)
-        if re.search(r"Save or publish", t, re.I):
-            out["visAt"] = i
-            break
-        nxt = click_dialog_next(page)
-        out[f"next_{i}"] = nxt
-        if not nxt:
-            break
-        page.wait_for_timeout(400)
+
+    if not jump_visibility_tab(page):
+        # Fallback Next loop
+        for i in range(8):
+            t = ""
+            try:
+                t = page.locator("ytcp-uploads-dialog").first.inner_text()
+            except Exception:
+                t = snip(page, 2500)
+            if re.search(r"Save or publish", t, re.I):
+                out["visAt"] = i
+                break
+            nxt = click_dialog_next(page)
+            out[f"next_{i}"] = nxt
+            if not nxt:
+                break
+            page.wait_for_timeout(400)
+        else:
+            out["ok"] = False
+            out["error"] = "no_vis"
+            return out
     else:
-        out["ok"] = False
-        out["error"] = "no_vis"
-        return out
+        out["visAt"] = "tab"
     page.screenshot(path=str(EV / f"{job['slot']}_visibility.png"), full_page=True)
     out["schedule"] = wizard_schedule(page, job)
+    # If date regex failed but UI shows Oct day, retry with short-month type
+    if not (out.get("schedule") or {}).get("ok"):
+        out["schedule_retry"] = schedule_visibility_direct(page, job)
+        if (out.get("schedule_retry") or {}).get("ok"):
+            out["schedule"] = out["schedule_retry"]
     page.screenshot(path=str(EV / f"{job['slot']}_after_schedule.png"), full_page=True)
     out["ok"] = bool((out.get("schedule") or {}).get("ok"))
     if not out["ok"]:
         out["error"] = (out.get("schedule") or {}).get("error") or "schedule_fail"
     return out
+
+
+def schedule_visibility_direct(page, job: dict) -> dict:
+    """Proven path: Schedule radio → type 'D Mon YYYY' → time → click Schedule btn."""
+    info: dict = {}
+    click_schedule_radio(page)
+    page.wait_for_timeout(600)
+    short_date = f"{job['day']} Oct 2026"
+    # Date dropdown
+    page.evaluate(
+        """() => {
+          const walk=(r,d=0)=>{
+            if(!r||d>50) return false;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('ytcp-text-dropdown-trigger,ytcp-dropdown-trigger') : [])) {
+              const t=(el.innerText||'').replace(/\\s+/g,' ').trim();
+              if (/\\d{1,2}\\s+(Oct|October|Sept|Sep|September)\\s+2026/i.test(t)) {
+                el.click(); return true;
+              }
+            }
+            for (const el of (r.querySelectorAll?r.querySelectorAll('*'):[]))
+              if (el.shadowRoot && walk(el.shadowRoot,d+1)) return true;
+            return false;
+          };
+          return walk(document.querySelector('ytcp-uploads-dialog')||document);
+        }"""
+    )
+    page.wait_for_timeout(350)
+    page.keyboard.press("Meta+A")
+    page.keyboard.type(short_date, delay=25)
+    page.keyboard.press("Enter")
+    page.wait_for_timeout(500)
+    # Time
+    times = page.evaluate(
+        """() => {
+          const hits=[];
+          const walk=(r,d=0)=>{
+            if(!r||d>50) return;
+            for (const inp of (r.querySelectorAll?r.querySelectorAll('input'):[])) {
+              if (/^\\d{1,2}:\\d{2}$/.test(inp.value||'')) {
+                const b=inp.getBoundingClientRect();
+                hits.push({x:b.x,y:b.y,w:b.width,h:b.height,v:inp.value});
+              }
+            }
+            for (const el of (r.querySelectorAll?r.querySelectorAll('*'):[]))
+              if (el.shadowRoot) walk(el.shadowRoot,d+1);
+          };
+          walk(document.querySelector('ytcp-uploads-dialog')||document);
+          return hits;
+        }"""
+    )
+    if times:
+        tm = times[0]
+        page.mouse.click(tm["x"] + 10, tm["y"] + tm["h"] / 2, click_count=3)
+        page.keyboard.type(job["time"], delay=35)
+        page.wait_for_timeout(200)
+        # close time menu by clicking dialog title area — never Escape (closes dialog)
+        page.mouse.click(700, 200)
+        page.wait_for_timeout(400)
+    after = page.evaluate(
+        """() => {
+          let date='', time='';
+          const walk=(r,d=0)=>{
+            if(!r||d>40) return;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('ytcp-text-dropdown-trigger,input,span,div') : [])) {
+              const t=(el.innerText||el.value||'').replace(/\\s+/g,' ').trim();
+              if (/^\\d{1,2}\\s+(Sept|Sep|September|Oct|October)\\s+2026$/i.test(t) && t.length<28) date=t;
+              if (/^\\d{1,2}:\\d{2}$/.test(el.value||'')) time=el.value;
+            }
+            for (const n of (r.querySelectorAll?r.querySelectorAll('*'):[]))
+              if (n.shadowRoot) walk(n.shadowRoot,d+1);
+          };
+          walk(document.querySelector('ytcp-uploads-dialog'));
+          return {date, time};
+        }"""
+    )
+    info["after"] = after
+    if str(job["day"]) not in str(after.get("date") or ""):
+        info["ok"] = False
+        info["error"] = f"date_not_set:{after}"
+        return info
+    btns = [
+        h
+        for h in mouse_hits(page)
+        if h["t"].strip() == "Schedule"
+        and h["tag"] in ("YTCP-BUTTON", "BUTTON")
+        and h["y"] > 500
+        and h["w"] > 50
+    ]
+    if not btns:
+        info["ok"] = False
+        info["error"] = "no_schedule_btn"
+        return info
+    btns.sort(key=lambda h: h["y"] * 1000 + h["x"])
+    mouse_click_hit(page, btns[-1])
+    page.wait_for_timeout(5000)
+    info["ok"] = True
+    return info
 
 
 def upload_one(page, job: dict) -> dict:
@@ -1023,6 +1184,7 @@ def upload_one(page, job: dict) -> dict:
                 return out
         dismiss(page)
 
+    out["detailsStep"] = ensure_details_step(page)
     title_box = page.get_by_role("textbox", name=re.compile(r"title|describe", re.I)).first
     title_box.wait_for(timeout=180000)
     try:
@@ -1050,13 +1212,27 @@ def upload_one(page, job: dict) -> dict:
             dlg_txt = page.locator("ytcp-uploads-dialog").first.inner_text()
         except Exception:
             dlg_txt = snip(page, 4000)
-        if re.search(r"not.?Made for Kids", dlg_txt, re.I):
+        # Prefer aria-checked No radio; text alone can false-positive from nearby copy
+        kids_hit = _click_named_radio(
+            page,
+            [
+                r"^No, it.?s not.?Made for Kids",
+                r"No, it.?s not.?Made for Kids",
+                r"No, set this channel as not.?Made for Kids",
+            ],
+            skip_kids=False,
+        )
+        if kids_hit:
+            out["kids"] = f"not_kids:{kids_hit[:60]}"
+        elif re.search(r"No, it.?s not.?Made for Kids", dlg_txt, re.I) and re.search(
+            r"aria-checked=\"true\"|checked", dlg_txt, re.I
+        ):
             out["kids"] = "already_not_kids"
         else:
-            page.get_by_text(re.compile(r"No, it.?s not.?Made for Kids", re.I)).click(
+            page.get_by_text(re.compile(r"No, it.?s not.?Made for Kids", re.I)).first.click(
                 timeout=8000, force=True
             )
-            out["kids"] = "not_kids"
+            out["kids"] = "not_kids_text"
     except Exception as e:
         out["kids"] = f"err:{type(e).__name__}"
 
@@ -1130,7 +1306,9 @@ def _shot(page, name: str) -> None:
     page.screenshot(path=str(EV / name), full_page=True)
 
 
-def _click_named_radio(page, patterns: list[str]) -> str | None:
+def _click_named_radio(
+    page, patterns: list[str], *, skip_kids: bool = False
+) -> str | None:
     for name in patterns:
         try:
             loc = page.get_by_role("radio", name=re.compile(name, re.I))
@@ -1141,7 +1319,7 @@ def _click_named_radio(page, patterns: list[str]) -> str | None:
         except Exception:
             continue
     hit = page.evaluate(
-        """(pats) => {
+        """({pats, skipKids}) => {
           const res = pats.map(p => new RegExp(p, 'i'));
           let hit=null;
           const walk=(r,d=0)=>{
@@ -1151,8 +1329,13 @@ def _click_named_radio(page, patterns: list[str]) -> str | None:
               : [])) {
               const al=(el.getAttribute('aria-label')||'').trim();
               let own=(el.innerText||'').trim().replace(/\\s+/g,' ');
+              if (!own) {
+                const fs=el.querySelector && el.querySelector('yt-formatted-string,.label,span');
+                if (fs) own=(fs.innerText||'').trim().replace(/\\s+/g,' ');
+              }
               const label = al || own;
-              if (!label || /Made for Kids/i.test(label)) continue;
+              if (!label) continue;
+              if (skipKids && /Made for Kids/i.test(label)) continue;
               for (const re of res) {
                 if (re.test(label)) { el.click(); hit=label.slice(0,140); return; }
               }
@@ -1160,11 +1343,46 @@ def _click_named_radio(page, patterns: list[str]) -> str | None:
             for (const el of (r.querySelectorAll?r.querySelectorAll('*'):[]))
               if (el.shadowRoot) walk(el.shadowRoot,d+1);
           };
-          walk(document); return hit;
+          walk(document.querySelector('ytcp-uploads-dialog')||document);
+          return hit;
         }""",
-        patterns,
+        {"pats": patterns, "skipKids": skip_kids},
     )
     return hit
+
+
+def ensure_details_step(page) -> str:
+    """If mid-wizard (Video elements / Checks), jump back to Details tab."""
+    try:
+        t = page.locator("ytcp-uploads-dialog").first.inner_text()
+    except Exception:
+        t = snip(page, 2500)
+    if re.search(r"Title \(required\)", t, re.I):
+        return "already_details"
+    # Click Details tab in dialog header
+    hit = page.evaluate(
+        """() => {
+          let hit=null;
+          const walk=(r,d=0)=>{
+            if(!r||d>50||hit) return;
+            for (const el of (r.querySelectorAll
+              ? r.querySelectorAll('button,[role=tab],ytcp-button,div,span') : [])) {
+              const t=(el.innerText||'').trim();
+              const al=el.getAttribute('aria-label')||'';
+              if (t==='Details' || /^Details$/i.test(al)) {
+                const b=el.getBoundingClientRect();
+                if (b.width>30 && b.height>12 && b.y<220) { el.click(); hit=t||al; return; }
+              }
+            }
+            for (const el of (r.querySelectorAll?r.querySelectorAll('*'):[]))
+              if (el.shadowRoot) walk(el.shadowRoot,d+1);
+          };
+          walk(document.querySelector('ytcp-uploads-dialog')||document);
+          return hit;
+        }"""
+    )
+    page.wait_for_timeout(900)
+    return f"clicked:{hit}" if hit else "no_details_tab"
 
 
 def _fix_not_kids_on_vid(page, cos, vid: str, context: str) -> dict:
@@ -1274,6 +1492,7 @@ def apply_edit_settings(page, vid: str, job: dict) -> dict:
                 r"Yes, it has altered or synthetic content",
                 r"Yes, this video has altered or synthetic content",
             ],
+            skip_kids=True,
         )
         out["altered_click"] = clicked
         if clicked:

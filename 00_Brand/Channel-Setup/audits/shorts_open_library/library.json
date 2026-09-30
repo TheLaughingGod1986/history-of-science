@@ -1,0 +1,36 @@
+{
+  "about": "first-frame dHash of every HOS Short (live + scheduled) — gate_shorts_open.py",
+  "entries": [
+    {
+      "id": "29bpGAI0wb8",
+      "date": "2026-10-16",
+      "title": "How small can you cut gold?",
+      "dhash": "2ba8e04011800400",
+      "source": "local_export",
+      "frame": "00_Brand/Channel-Setup/audits/shorts_open_library/frames/29bpGAI0wb8.jpg",
+      "status": "scheduled",
+      "added_at": "2026-09-30T09:53:49+01:00"
+    },
+    {
+      "id": "TbMMJSRKC3U",
+      "date": "2026-10-18",
+      "title": "He said every eighth element repeats",
+      "dhash": "d27fffdfff1f5e7e",
+      "source": "local_export",
+      "frame": "00_Brand/Channel-Setup/audits/shorts_open_library/frames/TbMMJSRKC3U.jpg",
+      "status": "scheduled",
+      "added_at": "2026-09-30T09:53:49+01:00"
+    },
+    {
+      "id": "CUu8k38iAMc",
+      "date": "2026-10-20",
+      "title": "The first X-ray showed a wedding ring",
+      "dhash": "d5f51f990fbf3bc7",
+      "source": "local_export",
+      "frame": "00_Brand/Channel-Setup/audits/shorts_open_library/frames/CUu8k38iAMc.jpg",
+      "status": "scheduled",
+      "added_at": "2026-09-30T09:53:49+01:00"
+    }
+  ],
+  "updated_at": "2026-09-30T09:53:49+01:00"
+}
