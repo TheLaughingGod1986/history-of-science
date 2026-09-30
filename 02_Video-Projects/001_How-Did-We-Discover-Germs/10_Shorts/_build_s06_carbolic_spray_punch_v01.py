@@ -369,14 +369,20 @@ def main() -> int:
         dest_dir.mkdir(parents=True, exist_ok=True)
         shutil.copy2(final, dest_dir / final.name)
         shutil.copy2(sheet, dest_dir / sheet.name)
-    shutil.copy2(final, ART / "BEN_1230_hos_001_s06_carbolic_spray_punch_v01.mp4")
-    shutil.copy2(sheet, ART / "BEN_1230_s06_carbolic_spray_caption_sheet_v01.md")
-    shutil.copy2(final, AGENT / "BEN_1230_hos_001_s06_carbolic_spray_punch_v01.mp4")
+    shutil.copy2(final, ART / "BEN_1438_hos_001_s06_carbolic_spray_punch_v01.mp4")
+    shutil.copy2(sheet, ART / "BEN_1438_s06_carbolic_spray_caption_sheet_v01.md")
+    shutil.copy2(final, AGENT / "BEN_1438_hos_001_s06_carbolic_spray_punch_v01.mp4")
+    shutil.copy2(sheet, AGENT / "BEN_1438_s06_carbolic_spray_caption_sheet_v01.md")
 
     # Frame 0 still for Ben
-    f0 = ART / "BEN_1230_s06_frame0.jpg"
-    ff("-i", str(final), "-frames:v", "1", str(f0))
+    f0 = ART / "BEN_1438_s06_frame0.jpg"
+    ff("-i", str(final), "-frames:v", "1", "-q:v", "2", str(f0))
     shutil.copy2(f0, AGENT / f0.name)
+    # Also keep cover copy next to cut for Ben
+    cover = HERE / "covers_live_v01" / "hos_001_s06_carbolic_spray_cover_live_v06.jpg"
+    if cover.exists():
+        shutil.copy2(cover, ART / "BEN_1438_s06_cover_live_v06.jpg")
+        shutil.copy2(cover, AGENT / "BEN_1438_s06_cover_live_v06.jpg")
 
     meta = {
         "ok": True,
