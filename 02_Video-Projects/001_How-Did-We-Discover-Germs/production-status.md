@@ -25,3 +25,9 @@ Channel: `@HistoryOfScienceYT` / `UCXp7HkBIl1LgaznXuZHJyRg` only. Evidence: `02_
 | `clV6E10NLPw` | Short (Tue Lister) | The spray that stopped surgery killing patients | same + Related → 001 · tags fixed · Scheduled unchanged | Academic UK · GCSE Biology · Level |
 
 **Was Made for Kids before:** none detected. **Was AI = No before:** none flagged in sweep (Altered YES applied/confirmed on all). Visibility unchanged (incl. Scheduled). No Oops loops on 001 Shorts this pass. Titles/descriptions/thumbs/schedules/files untouched.
+
+## Media on Mini (not in git) — Ben 20:16
+
+Path: `02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s06_carbolic_spray_punch_v01.mp4`  
+sha256: `ac24f66b14f32d5dfa1055d97647e6ce1fcb3d62b5bb7456c5e11d4466325a77`  
+Kept on disk; removed from git index (`git rm --cached`). Never re-add media with `git add -f`.
