@@ -39,27 +39,6 @@ EV = SCHED / "evidence_2026-09-30_shorts"
 TAGS = (SCHED / "hos_004_shorts_tags_v01.txt").read_text().strip()
 # Fallback only — each job carries its own related title/id
 PARENT_TITLE = "What's Really Inside an Atom?"
-# #region agent log
-_DBG_LOG = Path("/opt/cursor/logs/debug.log")
-
-
-def _dbg(hypothesis_id: str, location: str, message: str, data: dict | None = None) -> None:
-    try:
-        _DBG_LOG.parent.mkdir(parents=True, exist_ok=True)
-        payload = {
-            "hypothesisId": hypothesis_id,
-            "location": location,
-            "message": message,
-            "data": data or {},
-            "timestamp": int(time.time() * 1000),
-        }
-        with open(_DBG_LOG, "a") as f:
-            f.write(json.dumps(payload, default=str) + "\n")
-    except Exception:
-        pass
-
-
-# #endregion
 
 JOBS = [
     {
@@ -616,92 +595,6 @@ def file_input_count(page) -> int:
 
 def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
     info: dict = {"path": str(path), "image": image}
-    # #region agent log
-    probe = page.evaluate(
-        """(wantImage) => {
-          const describe=(inp)=>({
-            accept:(inp.getAttribute('accept')||''),
-            aria:(inp.getAttribute('aria-label')||'').slice(0,80),
-            inDlg:!!inp.closest('ytcp-uploads-dialog'),
-          });
-          const listAll=(r,d=0,out=[])=>{
-            if(!r||d>50) return out;
-            if (r.querySelectorAll) {
-              for (const inp of r.querySelectorAll('input[type=file]')) out.push(describe(inp));
-            }
-            // IMPORTANT: also enter the root's own shadowRoot when r is a host element
-            if (r.shadowRoot) listAll(r.shadowRoot, d+1, out);
-            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
-              if (el.shadowRoot) listAll(el.shadowRoot, d+1, out);
-            }
-            return out;
-          };
-          const walkOld=(r,d=0)=>{
-            if(!r||d>50) return null;
-            if (r.querySelectorAll) {
-              for (const inp of r.querySelectorAll('input[type=file]')) {
-                const acc=(inp.getAttribute('accept')||'').toLowerCase();
-                if (wantImage && acc && !acc.includes('image')) continue;
-                if (!wantImage && acc.includes('image') && !acc.includes('video')) continue;
-                return {found:true, accept:acc, path:'old_walk_light_only'};
-              }
-            }
-            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
-              if (el.shadowRoot) {
-                const x=walkOld(el.shadowRoot, d+1);
-                if (x) return x;
-              }
-            }
-            return null;
-          };
-          const walkFixed=(r,d=0)=>{
-            if(!r||d>50) return null;
-            if (r.querySelectorAll) {
-              for (const inp of r.querySelectorAll('input[type=file]')) {
-                const acc=(inp.getAttribute('accept')||'').toLowerCase();
-                if (wantImage && acc && !acc.includes('image')) continue;
-                if (!wantImage && acc.includes('image') && !acc.includes('video')) continue;
-                return {found:true, accept:acc};
-              }
-            }
-            if (r.shadowRoot) {
-              const x=walkFixed(r.shadowRoot, d+1);
-              if (x) return x;
-            }
-            for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
-              if (el.shadowRoot) {
-                const x=walkFixed(el.shadowRoot, d+1);
-                if (x) return x;
-              }
-            }
-            return null;
-          };
-          const dlg=document.querySelector('ytcp-uploads-dialog');
-          const allDoc=listAll(document);
-          const allDlgHost=dlg?listAll(dlg):[];
-          const allDlgShadow=dlg&&dlg.shadowRoot?listAll(dlg.shadowRoot):[];
-          return {
-            dlgExists:!!dlg,
-            dlgHasShadow:!!(dlg&&dlg.shadowRoot),
-            allDoc,
-            allDlgHost,
-            allDlgShadow,
-            oldWalkDlg: walkOld(dlg),
-            oldWalkDoc: walkOld(document),
-            fixedWalkDlg: walkFixed(dlg),
-            fixedWalkDoc: walkFixed(document),
-            oldExprWouldReturn: !!(walkOld(dlg) || (!dlg && walkOld(document))),
-          };
-        }""",
-        image,
-    )
-    _dbg(
-        "A,B,C",
-        "cdp_set_files:probe",
-        "file input shadow/accept probe before CDP evaluate",
-        {"image": image, "probe": probe},
-    )
-    # #endregion
     # Walk document (and host.shadowRoot) like the working 004 studio uploader.
     # Do not scope exclusively to ytcp-uploads-dialog host light-DOM — the file
     # input lives in the dialog's shadow root.
@@ -737,22 +630,6 @@ def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
         ev = session.send("Runtime.evaluate", {"expression": expr})
         obj = (ev or {}).get("result") or {}
         oid = obj.get("objectId")
-        # #region agent log
-        _dbg(
-            "A,C,D",
-            "cdp_set_files:cdp_eval",
-            "Runtime.evaluate result for file input",
-            {
-                "hasObjectId": bool(oid),
-                "type": obj.get("type"),
-                "subtype": obj.get("subtype"),
-                "value": obj.get("value"),
-                "description": (obj.get("description") or "")[:120],
-                "exception": (ev or {}).get("exceptionDetails"),
-                "runId": "post-fix",
-            },
-        )
-        # #endregion
         if not oid:
             return {"ok": False, "reason": "no_file_input_object", **info}
         session.send("DOM.setFileInputFiles", {"objectId": oid, "files": [str(path)]})
@@ -760,14 +637,6 @@ def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
         info["via"] = "cdp_setFileInputFiles"
         return info
     except Exception as e:
-        # #region agent log
-        _dbg(
-            "E",
-            "cdp_set_files:exception",
-            "CDP set files threw",
-            {"err": f"{type(e).__name__}:{e}", "runId": "post-fix"},
-        )
-        # #endregion
         return {"ok": False, "err": f"{type(e).__name__}:{e}", **info}
 
 
@@ -816,29 +685,6 @@ def open_upload(page) -> dict:
     info["picker"] = picker_open(page)
     info["details"] = details_open(page)
     info["fileInputs"] = file_input_count(page)
-    # #region agent log
-    try:
-        info["url"] = page.url
-        dlg_txt = ""
-        if page.locator("ytcp-uploads-dialog").count():
-            dlg_txt = page.locator("ytcp-uploads-dialog").first.inner_text()[:400]
-        _dbg(
-            "A,D,E",
-            "open_upload:exit",
-            "upload dialog state after Create/Upload",
-            {
-                "picker": info["picker"],
-                "details": info["details"],
-                "fileInputs": info["fileInputs"],
-                "create": info.get("create"),
-                "uploadVideos": info.get("uploadVideos"),
-                "url": info["url"],
-                "dlgTxt": dlg_txt,
-            },
-        )
-    except Exception as e:
-        _dbg("E", "open_upload:exit_err", "probe failed", {"err": str(e)})
-    # #endregion
     return info
 
 
@@ -1127,22 +973,6 @@ def upload_one(page, job: dict) -> dict:
         out["openUpload"] = open_upload(page)
         # Attach BEFORE dismiss. dismiss() used to click Close on the upload
         # dialog and wipe the file input (no_file_input_object).
-        # #region agent log
-        _dbg(
-            "D",
-            "upload_one:pre_attach",
-            "about to attach mp4 (before dismiss)",
-            {
-                "slot": job["slot"],
-                "picker": picker_open(page),
-                "fileInputs": file_input_count(page),
-                "locatorCount": page.locator('input[type="file"]').count(),
-                "pathExists": path.exists(),
-                "pathBytes": path.stat().st_size if path.exists() else 0,
-                "runId": "post-fix",
-            },
-        )
-        # #endregion
         if is_glue(page):
             out["ok"] = False
             out["glue"] = True
@@ -1161,14 +991,6 @@ def upload_one(page, job: dict) -> dict:
                     attach = {"ok": True, "via": "locator"}
                 else:
                     # Prefer Playwright file-chooser over native dialog click.
-                    # #region agent log
-                    _dbg(
-                        "E",
-                        "upload_one:select_files_fallback",
-                        "locator empty; using expect_file_chooser around Select files",
-                        {"attach": attach, "runId": "post-fix"},
-                    )
-                    # #endregion
                     try:
                         with page.expect_file_chooser(timeout=5000) as fc_info:
                             click_shadow_text(page, r"^Select files$")
@@ -1185,19 +1007,6 @@ def upload_one(page, job: dict) -> dict:
                                 **{k: v for k, v in attach.items() if k != "ok"},
                             }
             out["attach"] = attach
-            # #region agent log
-            _dbg(
-                "A,B,C,D,E",
-                "upload_one:post_attach",
-                "attach attempt finished",
-                {
-                    "attach": attach,
-                    "detailsNow": details_open(page),
-                    "pickerNow": picker_open(page),
-                    "runId": "post-fix",
-                },
-            )
-            # #endregion
             if not attach.get("ok"):
                 out["ok"] = False
                 out["error"] = f"attach_failed:{attach}"
