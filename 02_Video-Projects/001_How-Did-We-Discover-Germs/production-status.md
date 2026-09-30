@@ -7,3 +7,21 @@
 **Evening polish (4 Sep):** Long pinned comment · cleaned EN captions published · pin ritual ready for s02–s05 (`Schedule/PIN_RITUAL_S02_S05.md`).
 
 **Full audit:** `11_Upload-Package/Schedule/FULL_AUDIT_2026-09-04.md` — SEO PASS. Pin PASS on s01. Pin s02–s05 when each goes public.
+
+
+## Ben 14:47 whole-channel Studio §9 (recorded 2026-09-30T17:58:08+01:00)
+
+Channel: `@HistoryOfScienceYT` / `UCXp7HkBIl1LgaznXuZHJyRg` only. Evidence: `02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_whole_channel_1447/` · artifacts `…/BEN_1447_whole_channel/` · contact sheet `CONTACT_final_states.jpg`.
+
+### 001 videos touched
+| id | kind | title | applied | would not save |
+|---|---|---|---|---|
+| `_C92tIJCk8A` | long | How Did We Discover Germs? | Audience not-kids · Altered YES · Paid No · Education · caption never-aired · places OFF · chapters/concepts ON · tags fixed (5–8 subject-only) · comments On/Basic · embedding on · remix video+audio · licence Standard | Academic system **United Kingdom** not in Studio taxonomy (England is; left UAE) · GCSE Biology not in exam taxonomy · Level secondary leaf does not persist · playlist **History of Science: How We Found Out** missing (long already in *How Did We Discover…? \| History of Science*) · Type concept flaky |
+| `H1y0DXFVmw8` | Short | Germs don't cast a shadow | same core + Related → 001 long · tags fixed | Academic UK · GCSE Biology · Level |
+| `iqToagXnjX0` | Short | Microbes in a drop of pond water | same + Related · tags fixed | Academic UK · GCSE Biology · Level |
+| `8_Edn_HCi1s` | Short | Germs hitch a ride on you | same + Related · tags fixed | Academic UK · GCSE Biology · Level |
+| `93fPUG-hW0A` | Short | Invisible life is still everywhere | same + Related · tags fixed | Academic UK · GCSE Biology · Level |
+| `sILtQxgYQk8` | Short | A flask that proved germs come from outside | same + Related · tags fixed | Academic UK · GCSE Biology · Level |
+| `clV6E10NLPw` | Short (Tue Lister) | The spray that stopped surgery killing patients | same + Related → 001 · tags fixed · Scheduled unchanged | Academic UK · GCSE Biology · Level |
+
+**Was Made for Kids before:** none detected. **Was AI = No before:** none flagged in sweep (Altered YES applied/confirmed on all). Visibility unchanged (incl. Scheduled). No Oops loops on 001 Shorts this pass. Titles/descriptions/thumbs/schedules/files untouched.

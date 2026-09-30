@@ -83,7 +83,7 @@
       "at_uk": "2026-09-30T00:39",
       "order": "Ben 20:03 growth-settings unchanged",
       "audience_not_kids": true,
-      "altered_ai_use": "SUPERSEDED by ben_2149_altered_yes — was No, AI wasn't used",
+      "altered_ai_use": "SUPERSEDED by ben_2149_altered_yes \u2014 was No, AI wasn't used",
       "visibility_scheduled_15_oct": true,
       "premiere_off": true,
       "tc": "Ineligible; 2 titles listed; cancelled Run-a-new-test; re-arm 3 pairs or Thumbnail-only after public",
@@ -95,7 +95,7 @@
     "ben_2149_altered_yes": {
       "at_uk": "2026-09-30T21:49",
       "recorded_at": "2026-09-30T01:02:00+01:00",
-      "order": "CHANGE OF ORDER — Altered or synthetic content = YES (overrides 20:03 No and CoS 21:02 No)",
+      "order": "CHANGE OF ORDER \u2014 Altered or synthetic content = YES (overrides 20:03 No and CoS 21:02 No)",
       "reason": "AI-generated visuals and an AI clone of Ben's voice",
       "studio_label": "Yes, AI was used",
       "policy_every_upload": "Altered/synthetic YES; after every save re-check Audience not Made for Kids",
@@ -125,17 +125,73 @@
     "ben_2226_thumb_A": {
       "at_uk": "2026-09-30T22:26",
       "recorded_at": "2026-09-30T01:29:00+01:00",
-      "order": "TOP PRIORITY — set main thumbnail on GHZDsiH7L7A to A (atom v04); end 2-slot T&C first; one Save; Content list confirm A; Audience + Altered YES; re-arm T&C",
+      "order": "TOP PRIORITY \u2014 set main thumbnail on GHZDsiH7L7A to A (atom v04); end 2-slot T&C first; one Save; Content list confirm A; Audience + Altered YES; re-arm T&C",
       "videoId": "GHZDsiH7L7A",
       "thumb_file": "08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
       "main_thumb": "A_atom_v04_LIVE",
       "tc_two_slot_ended": true,
-      "tc_rearm": "blocked_studio_trouble_saving_after_one_retry — re-arm 3 pairs or Thumbnail-only after 15 Oct public",
+      "tc_rearm": "blocked_studio_trouble_saving_after_one_retry \u2014 re-arm 3 pairs or Thumbnail-only after 15 Oct public",
       "audience_not_kids": true,
       "altered_yes": true,
       "result_json": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/THUMB_A_2226_RESULT.json",
       "verify_json": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/FORCE_2226_RESULT.json",
       "content_list_proof": "artifacts/BEN_2226_thumb_A_content_list.png"
     }
+  },
+  "ben_1447_whole_channel_studio": {
+    "ordered_by": "Ben 14:47",
+    "at_uk": "2026-09-30T17:58:08+01:00",
+    "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "handle": "@HistoryOfScienceYT",
+    "scope": "every long and Short (public, scheduled, private) \u2014 22 videos",
+    "playbook": "STUDIO_PLAYBOOK.md \u00a79",
+    "applied": [
+      "audience_not_made_for_kids",
+      "altered_synthetic_yes",
+      "paid_promotion_no",
+      "caption_cert_never_aired_tv",
+      "category_education",
+      "automatic_places_off",
+      "automatic_chapters_on",
+      "automatic_concepts_on",
+      "tags_5_to_8_subject_only_verified",
+      "comments_on_basic_anyone_top",
+      "embedding_on",
+      "remix_video_and_audio",
+      "licence_standard",
+      "shorts_related_to_parent_long_except_fri_deferred"
+    ],
+    "would_not_save": [
+      "academic_system_United_Kingdom_not_in_taxonomy",
+      "exam_GCSE_Biology_Chemistry_Physics_not_in_taxonomy",
+      "level_secondary_does_not_persist",
+      "playlist_History_of_Science_How_We_Found_Out_missing_create_UI_blocked",
+      "type_concept_overview_flaky_on_some",
+      "api_defaultLanguage_stays_en_not_en-GB"
+    ],
+    "was_made_for_kids_before": [],
+    "was_ai_no_before": [],
+    "private_left_private": [
+      "CUu8k38iAMc",
+      "kzDiVk4603s"
+    ],
+    "fri_related_deferred_until": "2026-10-15T18:05:00+01:00",
+    "fri_related_video": "29bpGAI0wb8",
+    "evidence_dir": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_whole_channel_1447/",
+    "artifacts_dir": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_1447_whole_channel/",
+    "contact_sheet": "CONTACT_final_states.jpg",
+    "sweep_result": "SWEEP_RESULT.json",
+    "tags_result": "TAGS4_RESULT.json",
+    "untouched": [
+      "titles",
+      "descriptions",
+      "thumbnails",
+      "covers",
+      "schedules",
+      "video_files",
+      "002_AB_test",
+      "004_Test_and_Compare"
+    ],
+    "stop": true
   }
 }
