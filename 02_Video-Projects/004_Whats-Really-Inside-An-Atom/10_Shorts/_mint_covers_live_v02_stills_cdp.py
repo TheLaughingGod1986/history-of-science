@@ -300,71 +300,173 @@ def select_image_9x16(page) -> None:
         print(f"  image-mode pill retry={pill!r}", flush=True)
 
 
-def _find_upload_control(page):
-    for pattern in (
-        r"^Upload media$",
-        r"Upload media",
-        r"^Upload$",
-        r"From (device|computer)",
-    ):
-        loc = page.get_by_role("button", name=re.compile(pattern, re.I))
-        if loc.count():
-            return loc.last
-    loc = page.locator(
-        'button[aria-label*="Upload" i], button:has-text("Upload"), '
-        'button:has-text("cloud_upload")'
+def ingredient_chip_count(page) -> int:
+    """Count Image-mode ingredient chips near the prompt (wider than Veo start frames)."""
+    return int(
+        page.evaluate(
+            """() => {
+              const h = window.innerHeight || 900;
+              return [...document.querySelectorAll('img')].filter(i => {
+                const r = i.getBoundingClientRect();
+                const src = i.currentSrc || i.src || '';
+                if (r.width < 28 || r.height < 28 || r.width > 320) return false;
+                if (r.y < h * 0.55) return false;  // prompt composer lower band
+                return /flow-content\\.google|googleusercontent|blob:|media\\.getMediaUrlRedirect|flow\\.google\\.com\\/asb/i.test(src);
+              }).length;
+            }"""
+        )
+        or 0
+    )
+
+
+def open_ingredients_panel(page) -> None:
+    """Open Image-mode Add-ingredients assets panel."""
+    loc = page.get_by_role(
+        "button",
+        name=re.compile(r"Add ingredients|ingredients to the prompt", re.I),
     )
     if loc.count():
-        return loc.last
-    return None
+        loc.last.click(force=True, timeout=5000)
+        page.wait_for_timeout(800)
+        return
+    # Fallback: bare add near prompt bar
+    clicked = page.evaluate(
+        """() => {
+          const h = window.innerHeight || 900;
+          for (const b of document.querySelectorAll('button')) {
+            const t = ((b.innerText||'')+' '+(b.getAttribute('aria-label')||'')).trim();
+            const r = b.getBoundingClientRect();
+            if (r.y < h * 0.7) continue;
+            if (/ingredient/i.test(t) || (t === 'add' && r.width < 48)) {
+              b.click(); return t.slice(0,60);
+            }
+          }
+          return null;
+        }"""
+    )
+    print(f"  ingredients open fallback={clicked!r}", flush=True)
+    page.wait_for_timeout(800)
+
+
+def click_add_to_prompt(page) -> bool:
+    add = page.locator('button:has-text("Add to prompt"), button:has-text("Add to Prompt")')
+    if not add.count():
+        return False
+    try:
+        st = page.evaluate(
+            """() => {
+              const b=[...document.querySelectorAll('button')].filter(x=>/Add to [Pp]rompt/i.test(x.innerText||''));
+              if (!b.length) return {found:false, dis:true};
+              const el=b[b.length-1];
+              return {found:true, dis:!!(el.disabled||el.getAttribute('aria-disabled')==='true')};
+            }"""
+        )
+        if not st.get("found") or st.get("dis"):
+            return False
+        add.last.click(force=True, timeout=4000)
+        page.wait_for_timeout(1100)
+        return True
+    except Exception as e:
+        print(f"  Add to prompt warn: {e}", flush=True)
+        return False
 
 
 def attach_style_ref_image_mode(page, ref: Path) -> bool:
-    """Upload a style ref while staying in Image / Nano Banana (no Frames/Veo switch)."""
+    """Attach a style ref via Image Ingredients panel (library select or upload)."""
     ref = Path(ref).resolve()
     if not ref.exists():
         raise FileNotFoundError(ref)
-    before = flow._prompt_attachment_count(page)
-    print(f"  attach style ref: {ref.name} (before={before})", flush=True)
-    flow.ensure_agent_session(page)
-    flow._open_create_picker(page)
-    page.wait_for_timeout(500)
-    uploads_tab = page.locator('button:has-text("Uploads")')
-    if uploads_tab.count():
+    before = ingredient_chip_count(page)
+    stem = ref.name[:28]
+    print(f"  attach style ref: {ref.name} (chips_before={before})", flush=True)
+    open_ingredients_panel(page)
+
+    # Prefer existing library tile by filename — click the dedicated Image button only
+    # (not the huge search/recent container that lists every asset).
+    selected = page.evaluate(
+        """(stem) => {
+          const needle = String(stem||'').toLowerCase().replace(/\\.jpg$|\\.png$|\\.webp$/,'');
+          const short = needle.slice(0, 22);
+          const candidates = [];
+          for (const b of document.querySelectorAll('button')) {
+            const label = (b.getAttribute('aria-label') || '').trim();
+            const text = (b.innerText || '').trim().replace(/\\n/g, ' ');
+            const t = (label + ' ' + text).toLowerCase();
+            if (!short || !t.includes(short)) continue;
+            // Reject mega-containers that list many files
+            if (t.length > 140) continue;
+            if ((t.match(/\\.jpg|\\.png|image/g) || []).length > 3) continue;
+            const r = b.getBoundingClientRect();
+            if (r.width < 60 || r.height < 20 || r.width > 520) continue;
+            // Prefer "...jpg Image" asset rows
+            const score = (/image/i.test(t) ? 10 : 0) + (/\\.jpg|\\.png/.test(t) ? 5 : 0)
+              + (t.startsWith(short.slice(0,12)) ? 8 : 0) - Math.floor(t.length/40);
+            candidates.push({t: (label||text).slice(0,100), score, x:r.x+r.width/2, y:r.y+r.height/2});
+          }
+          if (!candidates.length) return null;
+          candidates.sort((a,b)=>b.score-a.score);
+          const best = candidates[0];
+          // mouse coords returned for Playwright click reliability
+          return best;
+        }""",
+        stem,
+    )
+    if selected and selected.get("x"):
         try:
-            uploads_tab.first.click(timeout=3000)
-            page.wait_for_timeout(400)
+            page.mouse.click(selected["x"], selected["y"])
+            selected = selected.get("t")
+        except Exception:
+            selected = None
+    print(f"  library select={selected!r}", flush=True)
+    if selected:
+        page.wait_for_timeout(500)
+        click_add_to_prompt(page)
+        after = ingredient_chip_count(page)
+        if after > before:
+            print(f"  attach via library {ref.name}: True (chips={after})", flush=True)
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            page.wait_for_timeout(250)
+            return True
+        # Double-click Add once more if selection stuck
+        click_add_to_prompt(page)
+        after = ingredient_chip_count(page)
+        if after > before:
+            print(f"  attach via library retry {ref.name}: True (chips={after})", flush=True)
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            return True
+
+    # Upload media path
+    up = page.get_by_role("button", name=re.compile(r"Upload media|^Upload$", re.I))
+    uploaded = False
+    if up.count():
+        try:
+            with page.expect_file_chooser(timeout=12_000) as fc:
+                up.last.click(force=True)
+            fc.value.set_files(str(ref))
+            uploaded = True
+            print("  uploaded via Upload media", flush=True)
+        except Exception as e:
+            print(f"  upload chooser warn: {e}", flush=True)
+    if not uploaded:
+        fi = page.locator('input[type="file"]')
+        if fi.count():
+            fi.last.set_input_files(str(ref))
+            uploaded = True
+            print("  uploaded via file input", flush=True)
+    if not uploaded:
+        try:
+            page.keyboard.press("Escape")
         except Exception:
             pass
-    # Reveal Upload via Add if needed
-    if _find_upload_control(page) is None:
-        for pattern in (r"^Add$", r"Add (media|image|file|to prompt)", r"^Create$"):
-            loc = page.get_by_role("button", name=re.compile(pattern, re.I))
-            if loc.count():
-                try:
-                    loc.last.click(force=True, timeout=3000)
-                    page.wait_for_timeout(600)
-                except Exception:
-                    pass
-                if _find_upload_control(page) is not None:
-                    break
-    up = _find_upload_control(page)
-    if up is None:
-        fi = page.locator('input[type="file"]')
-        if fi.count() == 0:
-            raise RuntimeError(f"Upload control missing for {ref.name}")
-        fi.last.set_input_files(str(ref))
-    else:
-        try:
-            with page.expect_file_chooser(timeout=15_000) as fc:
-                up.click(force=True)
-            fc.value.set_files(str(ref))
-        except Exception:
-            fi = page.locator('input[type="file"]')
-            if fi.count() == 0:
-                raise RuntimeError(f"Could not upload {ref.name}")
-            fi.last.set_input_files(str(ref))
-    # Consent
+        print(f"  attach FAIL {ref.name}: no upload path", flush=True)
+        return False
+
     for _ in range(6):
         agree = page.get_by_role(
             "button", name=re.compile(r"^(I agree|Agree|Accept)$", re.I)
@@ -376,38 +478,24 @@ def attach_style_ref_image_mode(page, ref: Path) -> bool:
             page.wait_for_timeout(800)
         except Exception:
             break
-    page.wait_for_timeout(2200)
-    if flow._prompt_attachment_count(page) > before:
-        print(f"  auto-attached {ref.name}", flush=True)
-        return True
-    # Select newest tile + Add to Prompt
+    page.wait_for_timeout(1800)
+    # Re-select uploaded stem if needed
     page.evaluate(
-        """() => {
-          const imgs = [...document.querySelectorAll('img')].filter(i => {
-            const r = i.getBoundingClientRect();
-            return r.width > 48 && r.height > 48 && r.y > 60;
-          });
-          if (!imgs.length) return false;
-          imgs[imgs.length-1].click();
-          return true;
-        }"""
+        """(stem) => {
+          const needle = String(stem||'').toLowerCase();
+          for (const b of document.querySelectorAll('button')) {
+            const t=((b.innerText||'')+' '+(b.getAttribute('aria-label')||'')).toLowerCase();
+            if (needle && t.includes(needle.slice(0,18))) { try{b.click();}catch(e){} return true; }
+          }
+          return false;
+        }""",
+        stem,
     )
-    page.wait_for_timeout(600)
-    enabled = False
-    try:
-        enabled = flow._wait_add_to_prompt_enabled(page, timeout_s=25)
-    except Exception:
-        pass
-    add = page.locator('button:has-text("Add to Prompt")')
-    if add.count() and enabled:
-        try:
-            add.last.click(force=True, timeout=4000)
-            page.wait_for_timeout(1200)
-        except Exception as e:
-            print(f"  Add to Prompt warn: {e}", flush=True)
-    after = flow._prompt_attachment_count(page)
+    page.wait_for_timeout(400)
+    click_add_to_prompt(page)
+    after = ingredient_chip_count(page)
     ok = after > before
-    print(f"  attach result {ref.name}: {ok} (after={after})", flush=True)
+    print(f"  attach result {ref.name}: {ok} (chips={after})", flush=True)
     try:
         page.keyboard.press("Escape")
     except Exception:
@@ -418,20 +506,18 @@ def attach_style_ref_image_mode(page, ref: Path) -> bool:
 
 def clear_prompt_attachments(page) -> None:
     """Best-effort remove prior chips so each still starts clean."""
-    for _ in range(8):
+    for _ in range(10):
         removed = page.evaluate(
             """() => {
+              const h = window.innerHeight || 900;
               const btns = [...document.querySelectorAll('button')].filter(b => {
                 const t = ((b.innerText||'')+' '+(b.getAttribute('aria-label')||'')).trim();
                 const r = b.getBoundingClientRect();
-                return r.width > 10 && r.height > 10 && r.width < 48 &&
-                  (/close|clear|remove|delete|cancel/i.test(t) || t === '×' || t === 'x');
+                return r.y > h * 0.55 && r.width > 10 && r.height > 10 && r.width < 48 &&
+                  (/close|clear|remove|delete/i.test(t) || t === '×' || t === 'x');
               });
-              // Prefer chips near the prompt bar (lower half)
-              const near = btns.filter(b => b.getBoundingClientRect().y > 400);
-              const target = near[0] || btns[0];
-              if (!target) return false;
-              try { target.click(); return true; } catch (e) { return false; }
+              if (!btns.length) return false;
+              try { btns[0].click(); return true; } catch (e) { return false; }
             }"""
         )
         if not removed:
@@ -439,41 +525,80 @@ def clear_prompt_attachments(page) -> None:
         page.wait_for_timeout(250)
 
 
-def download_newest_image(page, dest: Path, timeout_s: float = 220) -> Path:
+def gallery_media_srcs(page) -> set[str]:
+    return set(
+        page.evaluate(
+            """() => [...document.querySelectorAll('img')].map(i => {
+              const r=i.getBoundingClientRect();
+              const src=i.currentSrc||i.src||'';
+              if (r.width<60||r.height<60||r.y<80||r.y>720) return null;
+              if (!src || src.length < 20) return null;
+              return src;
+            }).filter(Boolean)"""
+        )
+        or []
+    )
+
+
+def download_newest_portrait(
+    page, dest: Path, *, before_srcs: set[str], timeout_s: float = 240
+) -> Path:
+    """Wait for a NEW portrait generation, then download it (never grab old 16:9)."""
     dest.parent.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
+    saw_progress = False
     while time.time() - t0 < timeout_s:
         try:
             flow.dismiss_soft_prompts(page)
         except Exception:
             pass
-        hit = page.evaluate(
-            """() => {
-              const imgs=[...document.querySelectorAll('img')].map(i=>{
-                const r=i.getBoundingClientRect();
-                return {x:r.x+r.width/2,y:r.y+r.height/2,w:r.width,h:r.height,y0:r.y,
-                        src:i.currentSrc||i.src||''};
-              }).filter(i=>i.w>100&&i.h>120&&i.y0>60);  // portrait-friendly
-              imgs.sort((a,b)=>b.y0-a.y0 || b.w*b.h-a.w*a.h);
-              return imgs[0]||null;
-            }"""
-        )
-        body_snip = page_text(page, 2500)
+        body_snip = page_text(page, 3000)
         gen_hint = bool(
             re.search(
-                r"\b\d{1,3}%\b|in the queue|generat(?:ing|e)|rendering",
+                r"\b\d{1,3}%\b|in the queue|generat(?:ing|e)|rendering|Creating your",
                 body_snip,
                 re.I,
             )
-        ) and "Start creating or drop media" not in body_snip
+        )
+        if gen_hint:
+            saw_progress = True
+        srcs = gallery_media_srcs(page)
+        new_srcs = [s for s in srcs if s not in before_srcs]
+        # Portrait tiles in gallery (h > w)
+        hit = page.evaluate(
+            """(beforeList) => {
+              const before = new Set(beforeList || []);
+              const imgs=[...document.querySelectorAll('img')].map(i=>{
+                const r=i.getBoundingClientRect();
+                const src=i.currentSrc||i.src||'';
+                return {x:r.x+r.width/2,y:r.y+r.height/2,w:r.width,h:r.height,y0:r.y,x0:r.x,src};
+              }).filter(i => i.w>70 && i.h>90 && i.y0>80 && i.y0<700 && i.h > i.w * 1.05);
+              // Prefer NEW srcs, then left-most (newest often first)
+              const neu = imgs.filter(i => i.src && !before.has(i.src));
+              const pool = neu.length ? neu : [];
+              pool.sort((a,b)=>a.y0-b.y0 || a.x0-b.x0);
+              return pool[0]||null;
+            }""",
+            list(before_srcs),
+        )
         print(
-            f"  image poll hit={'yes' if hit else 'no'} "
-            f"gen_hint={gen_hint} elapsed={int(time.time()-t0)}s",
+            f"  image poll new_srcs={len(new_srcs)} portrait_hit={'yes' if hit else 'no'} "
+            f"gen_hint={gen_hint} saw_progress={saw_progress} elapsed={int(time.time()-t0)}s",
             flush=True,
         )
-        if hit:
+        # Do not download until we saw progress OR enough time + a new portrait src
+        ready = hit and (
+            saw_progress
+            or (time.time() - t0 > 12 and len(new_srcs) > 0)
+            or (time.time() - t0 > 25 and hit)
+        )
+        # If still generating, keep waiting
+        if gen_hint and not (hit and time.time() - t0 > 8 and len(new_srcs) > 0):
+            page.wait_for_timeout(3000)
+            continue
+        if ready and hit:
             page.mouse.click(hit["x"], hit["y"])
-            page.wait_for_timeout(1100)
+            page.wait_for_timeout(1200)
             for label in ("Download", "download", "Save"):
                 btn = page.get_by_role("button", name=re.compile(label, re.I))
                 if btn.count():
@@ -483,43 +608,48 @@ def download_newest_image(page, dest: Path, timeout_s: float = 220) -> Path:
                         d = dl.value
                         d.save_as(str(dest))
                         if dest.exists() and dest.stat().st_size > 40000:
-                            return dest
+                            # Quick dimension gate before return
+                            from PIL import Image
+
+                            im = Image.open(dest)
+                            w, h = im.size
+                            if h > w * 1.05:
+                                return dest
+                            print(
+                                f"  reject landscape download {w}x{h} — keep polling",
+                                flush=True,
+                            )
+                            before_srcs = before_srcs | {hit.get("src") or ""}
                     except Exception as e:
                         print(f"  download via {label} failed: {e}", flush=True)
-            src = hit.get("src") or page.evaluate(
-                """() => {
-                  const imgs=[...document.querySelectorAll('img')].map(i=>{
-                    const r=i.getBoundingClientRect();
-                    return {src:i.currentSrc||i.src,w:r.width,h:r.height};
-                  }).filter(i=>i.w>200&&i.h>240&&i.src);
-                  imgs.sort((a,b)=>b.w*b.h-a.w*a.h);
-                  return imgs[0]?.src||null;
-                }"""
-            )
+            src = hit.get("src")
             if src and str(src).startswith("http"):
-                data = page.evaluate(
-                    """async (url) => {
-                      const r = await fetch(url); const b = await r.arrayBuffer();
-                      const u = new Uint8Array(b); let s='';
-                      for (let i=0;i<u.length;i++) s+=String.fromCharCode(u[i]);
-                      return btoa(s);
-                    }""",
-                    src,
-                )
-                dest.write_bytes(base64.b64decode(data))
-                if dest.stat().st_size > 40000:
-                    return dest
-            if src and str(src).startswith("data:image"):
-                b64 = str(src).split(",", 1)[-1]
-                dest.write_bytes(base64.b64decode(b64))
-                if dest.stat().st_size > 40000:
-                    return dest
-        page.wait_for_timeout(4000)
+                try:
+                    data = page.evaluate(
+                        """async (url) => {
+                          const r = await fetch(url, {credentials:'include'});
+                          const b = await r.arrayBuffer();
+                          const u = new Uint8Array(b); let s='';
+                          for (let i=0;i<u.length;i++) s+=String.fromCharCode(u[i]);
+                          return btoa(s);
+                        }""",
+                        src,
+                    )
+                    dest.write_bytes(base64.b64decode(data))
+                    if dest.stat().st_size > 40000:
+                        from PIL import Image
+
+                        im = Image.open(dest)
+                        if im.size[1] > im.size[0] * 1.05:
+                            return dest
+                except Exception as e:
+                    print(f"  fetch src fail: {e}", flush=True)
+        page.wait_for_timeout(3500)
     try:
         page.screenshot(path=str(QA_DIR / "download_timeout.png"), full_page=False)
     except Exception:
         pass
-    raise RuntimeError(f"Timed out waiting for Flow image still → {dest}")
+    raise RuntimeError(f"Timed out waiting for NEW portrait Flow still → {dest}")
 
 
 def qa_still(path: Path) -> tuple[str, str, dict]:
@@ -614,40 +744,44 @@ def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> d
     close_overlays(page)
     select_image_9x16(page)
     try:
-        flow.force_outputs_x1(page)
-    except Exception as e:
-        print(f"  force_outputs_x1 warn: {e}", flush=True)
-    try:
         flow._ensure_create_prompt_mode(page)
     except Exception as e:
         print(f"  create-mode warn: {e}", flush=True)
 
-    # Fresh attachments each try
+    # Fresh attachments each try — prefer the three hard style refs (skip optional if chips full)
     clear_prompt_attachments(page)
     refs = [p for p in STYLE_REFS if p.exists()]
     if OPTIONAL_STYLE.exists():
         refs.append(OPTIONAL_STYLE)
     attached = 0
-    for ref in refs:
+    for ref in refs[:3]:  # three hard refs first
         try:
             if attach_style_ref_image_mode(page, ref):
                 attached += 1
-            # Re-assert Image 9:16 after attach (some uploads flip settings)
             select_image_9x16(page)
         except Exception as e:
             print(f"  attach fail {ref.name}: {e}", flush=True)
+    if attached < 2 and OPTIONAL_STYLE.exists():
+        try:
+            if attach_style_ref_image_mode(page, OPTIONAL_STYLE):
+                attached += 1
+        except Exception as e:
+            print(f"  optional attach fail: {e}", flush=True)
 
     credits_before, active = read_credits(page)
+    chips = ingredient_chip_count(page)
     print(
-        f"  credits_before={credits_before} account={active} attached={attached}",
+        f"  credits_before={credits_before} account={active} "
+        f"attached={attached} chips={chips}",
         flush=True,
     )
+    if attached < 1 and chips < 1:
+        raise RuntimeError("No style refs attached — abort try (would look film/wrong)")
 
     armed = False
     last_err: Exception | None = None
     for attempt in range(1, 4):
         try:
-            flow.ensure_agent_session(page)
             flow.set_prompt(page, prompt)
             armed = True
             break
@@ -658,23 +792,40 @@ def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> d
     if not armed:
         raise RuntimeError(f"Could not arm prompt: {last_err}")
 
-    for _ in range(3):
+    # Re-lock 9:16 immediately before send
+    select_image_9x16(page)
+    for _ in range(2):
         try:
             page.keyboard.press("Escape")
         except Exception:
             pass
-        page.wait_for_timeout(150)
+        page.wait_for_timeout(120)
 
+    before_srcs = gallery_media_srcs(page)
     page.screenshot(path=str(QA_DIR / f"{key}_try{try_n}_armed.png"), full_page=False)
-    print("  submitting Image Create…", flush=True)
+    print(
+        f"  submitting Image Create… pill={pill_text(page)!r} gallery_srcs={len(before_srcs)}",
+        flush=True,
+    )
     submit_create(page)
     page.wait_for_timeout(800)
-    confirmed = flow.confirm_generation_spend(page, timeout_s=20.0)
+    confirmed = flow.confirm_generation_spend(page, timeout_s=25.0)
     print(f"  confirm_spend={confirmed}", flush=True)
     flow.dismiss_soft_prompts(page)
-    page.wait_for_timeout(3000)
+    # Soft confirm labels unique to Image
+    for lab in (r"^Create$", r"^Generate$", r"^Continue$", r"^OK$"):
+        try:
+            btn = page.get_by_role("button", name=re.compile(lab, re.I))
+            if btn.count():
+                btn.first.click(timeout=1500)
+                page.wait_for_timeout(400)
+        except Exception:
+            pass
+    page.wait_for_timeout(4000)
 
-    download_newest_image(page, raw_path, timeout_s=220)
+    download_newest_portrait(
+        page, raw_path, before_srcs=before_srcs, timeout_s=240
+    )
     # Convert whatever format Flow gave us
     tmp_img = QA_DIR / f"{key}_try{try_n}_decoded.png"
     from PIL import Image
