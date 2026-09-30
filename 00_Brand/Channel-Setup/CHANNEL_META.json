@@ -121,6 +121,21 @@
         "Lcmh5y2KMQM"
       ],
       "result_json": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/ALTERED_YES_2149_RESULT.json"
+    },
+    "ben_2226_thumb_A": {
+      "at_uk": "2026-09-30T22:26",
+      "recorded_at": "2026-09-30T01:29:00+01:00",
+      "order": "TOP PRIORITY — set main thumbnail on GHZDsiH7L7A to A (atom v04); end 2-slot T&C first; one Save; Content list confirm A; Audience + Altered YES; re-arm T&C",
+      "videoId": "GHZDsiH7L7A",
+      "thumb_file": "08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
+      "main_thumb": "A_atom_v04_LIVE",
+      "tc_two_slot_ended": true,
+      "tc_rearm": "blocked_studio_trouble_saving_after_one_retry — re-arm 3 pairs or Thumbnail-only after 15 Oct public",
+      "audience_not_kids": true,
+      "altered_yes": true,
+      "result_json": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/THUMB_A_2226_RESULT.json",
+      "verify_json": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/FORCE_2226_RESULT.json",
+      "content_list_proof": "artifacts/BEN_2226_thumb_A_content_list.png"
     }
   }
 }
