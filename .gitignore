@@ -27,6 +27,13 @@ node_modules/
 **/*.mov
 **/*.wav
 **/*.mp3
+**/*.m4a
+**/*.aac
+**/*.aif
+**/*.aiff
+**/*.flac
+**/*.m4v
+**/*.webm
 **/*.png
 **/*.jpg
 **/*.jpeg
