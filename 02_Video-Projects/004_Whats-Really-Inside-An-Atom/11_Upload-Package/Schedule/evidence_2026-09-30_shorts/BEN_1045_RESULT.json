@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "ended": "2026-09-30T11:01:09+01:00",
+  "tue_private": {
+    "id": "CUu8k38iAMc",
+    "title": "The first X-ray showed a wedding ring",
+    "private_ok": true,
+    "chip_before": "Visibility Scheduled",
+    "chip_after": "Visibility Private",
+    "audience_not_kids": true,
+    "altered_yes": true,
+    "deleted": false,
+    "published": false
+  },
+  "fri": {
+    "id": "29bpGAI0wb8",
+    "title": "How small can you cut gold?",
+    "visibility": "Scheduled",
+    "date": "16 Oct 2026",
+    "time_studio": "00:15",
+    "time_expected": "11:30",
+    "time_matches_1130": false,
+    "audience_not_kids": true,
+    "altered_yes": true,
+    "related_status": "deferred_or_unset",
+    "related_detail": "Related video None (004 GHZDsiH7L7A deferred until after 15 Oct 18:00)",
+    "after_004_15oct1800": true
+  },
+  "sun": {
+    "id": "TbMMJSRKC3U",
+    "title": "He said every eighth element repeats",
+    "visibility": "Scheduled",
+    "date": "18 Oct 2026",
+    "time_studio": "00:00",
+    "time_expected": "11:30",
+    "time_matches_1130": false,
+    "audience_not_kids": true,
+    "altered_yes": true,
+    "related_status": "set",
+    "related_detail": "How Did We Discover the Periodic Table? (AL_-qlWko_g)",
+    "after_004_15oct1800": true
+  },
+  "shorts_count": 16,
+  "time_warning": "Studio visibility dialog shows Fri 00:15 and Sun 00:00 \u2014 not 11:30 Europe/London. Dates 16/18 Oct confirmed Scheduled."
+}

@@ -1,0 +1,233 @@
+{
+  "radios": [
+    {
+      "al": "",
+      "own": "Yes, it's Made for Kids . Features like personalised ads and notifications won't",
+      "checked": false,
+      "x": 274,
+      "y": 1276,
+      "w": 213,
+      "h": 24,
+      "tag": "TP-YT-PAPER-RADIO-BUTTON"
+    },
+    {
+      "al": "",
+      "own": "No, it's not 'Made for Kids'",
+      "checked": true,
+      "x": 274,
+      "y": 1310,
+      "w": 213,
+      "h": 24,
+      "tag": "TP-YT-PAPER-RADIO-BUTTON"
+    },
+    {
+      "al": "",
+      "own": "Private",
+      "checked": true,
+      "x": 1067,
+      "y": 333,
+      "w": 79,
+      "h": 26,
+      "tag": "TP-YT-PAPER-RADIO-BUTTON"
+    },
+    {
+      "al": "",
+      "own": "Unlisted",
+      "checked": false,
+      "x": 1067,
+      "y": 415,
+      "w": 500,
+      "h": 26,
+      "tag": "TP-YT-PAPER-RADIO-BUTTON"
+    },
+    {
+      "al": "",
+      "own": "Public",
+      "checked": false,
+      "x": 1067,
+      "y": 453,
+      "w": 500,
+      "h": 26,
+      "tag": "TP-YT-PAPER-RADIO-BUTTON"
+    }
+  ],
+  "clicks": [
+    {
+      "t": "Save or publish",
+      "tag": "DIV",
+      "x": 1037,
+      "y": 287,
+      "w": 530,
+      "h": 34
+    },
+    {
+      "t": "Save or publish",
+      "tag": "P",
+      "x": 1037,
+      "y": 299,
+      "w": 530,
+      "h": 22
+    },
+    {
+      "t": "Private",
+      "tag": "TP-YT-PAPER-RADIO-BUTTON",
+      "x": 1067,
+      "y": 333,
+      "w": 79,
+      "h": 26
+    },
+    {
+      "t": "Private",
+      "tag": "DIV",
+      "x": 1097,
+      "y": 335,
+      "w": 49,
+      "h": 19
+    },
+    {
+      "t": "Share privately",
+      "tag": "DIV",
+      "x": 1097,
+      "y": 359,
+      "w": 470,
+      "h": 44
+    },
+    {
+      "t": "Share privately",
+      "tag": "YTCP-BUTTON",
+      "x": 1097,
+      "y": 367,
+      "w": 149,
+      "h": 36
+    },
+    {
+      "t": "Share privately",
+      "tag": "YTCP-BUTTON-SHAPE",
+      "x": 1097,
+      "y": 367,
+      "w": 149,
+      "h": 36
+    },
+    {
+      "t": "Share privately",
+      "tag": "BUTTON",
+      "x": 1097,
+      "y": 367,
+      "w": 149,
+      "h": 36
+    },
+    {
+      "t": "Share privately",
+      "tag": "DIV",
+      "x": 1137,
+      "y": 367,
+      "w": 93,
+      "h": 36
+    },
+    {
+      "t": "Unlisted",
+      "tag": "TP-YT-PAPER-RADIO-BUTTON",
+      "x": 1067,
+      "y": 415,
+      "w": 500,
+      "h": 26
+    },
+    {
+      "t": "Unlisted",
+      "tag": "DIV",
+      "x": 1097,
+      "y": 417,
+      "w": 58,
+      "h": 19
+    },
+    {
+      "t": "Public",
+      "tag": "TP-YT-PAPER-RADIO-BUTTON",
+      "x": 1067,
+      "y": 453,
+      "w": 500,
+      "h": 26
+    },
+    {
+      "t": "Public",
+      "tag": "DIV",
+      "x": 1097,
+      "y": 455,
+      "w": 44,
+      "h": 19
+    },
+    {
+      "t": "Schedule",
+      "tag": "DIV",
+      "x": 1016,
+      "y": 512,
+      "w": 572,
+      "h": 76
+    },
+    {
+      "t": "Schedule",
+      "tag": "DIV",
+      "x": 1037,
+      "y": 517,
+      "w": 530,
+      "h": 54
+    },
+    {
+      "t": "Schedule",
+      "tag": "DIV",
+      "x": 1037,
+      "y": 527,
+      "w": 490,
+      "h": 34
+    },
+    {
+      "t": "Schedule",
+      "tag": "P",
+      "x": 1037,
+      "y": 539,
+      "w": 490,
+      "h": 22
+    },
+    {
+      "t": "Done",
+      "tag": "DIV",
+      "x": 992,
+      "y": 609,
+      "w": 620,
+      "h": 52
+    },
+    {
+      "t": "Done",
+      "tag": "YTCP-BUTTON",
+      "x": 1536,
+      "y": 617,
+      "w": 64,
+      "h": 36
+    },
+    {
+      "t": "Done",
+      "tag": "YTCP-BUTTON-SHAPE",
+      "x": 1536,
+      "y": 617,
+      "w": 64,
+      "h": 36
+    },
+    {
+      "t": "Done",
+      "tag": "BUTTON",
+      "x": 1536,
+      "y": 617,
+      "w": 64,
+      "h": 36
+    },
+    {
+      "t": "Done",
+      "tag": "DIV",
+      "x": 1552,
+      "y": 617,
+      "w": 32,
+      "h": 36
+    }
+  ],
+  "allText": []
+}

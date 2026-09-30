@@ -1,0 +1,260 @@
+2026-09-30T11:07:39+01:00 CHANNEL_OK https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg
+2026-09-30T11:07:39+01:00 === FIX s01 29bpGAI0wb8 → 16 Oct 2026 11:30 ===
+2026-09-30T11:07:43+01:00 CHANNEL_OK https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg
+2026-09-30T11:07:48+01:00 s01 chip_before='Visibility Scheduled'
+2026-09-30T11:07:50+01:00 s01 before date=16 Oct 2026 time=00:15 dlg=Save or publish Schedule Schedule as public 16 Oct 2026 Time zone Video is private before publishing Done
+2026-09-30T11:07:53+01:00 s01 time_set={'before': None, 'ok': False, 'error': 'no_time_input'}
+2026-09-30T11:07:57+01:00 s01 save={'done': {'y': 617}, 'save': True, 'confirm': 'Save'}
+2026-09-30T11:08:08+01:00 s01 DONE ok=False time=None date=None chip='Visibility Private' related=deferred_or_unset
+2026-09-30T11:08:08+01:00 === FIX s02 TbMMJSRKC3U → 18 Oct 2026 11:30 ===
+2026-09-30T11:08:11+01:00 CHANNEL_OK https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg
+2026-09-30T11:08:16+01:00 s02 chip_before='Visibility Scheduled'
+2026-09-30T11:08:19+01:00 s02 before date=18 Oct 2026 time=00:00 dlg=Save or publish Schedule Schedule as public 18 Oct 2026 Time zone Video is private before publishing Done
+2026-09-30T11:08:21+01:00 s02 time_set={'before': None, 'ok': False, 'error': 'no_time_input'}
+2026-09-30T11:08:26+01:00 s02 save={'done': {'y': 617}, 'save': True, 'confirm': 'Save'}
+2026-09-30T11:08:37+01:00 s02 DONE ok=False time=None date=None chip='Visibility Private' related=set
+2026-09-30T11:08:37+01:00 DONE ok=False fri=None sun=None
+{
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "started": "2026-09-30T11:07:36+01:00",
+  "do_not_touch": "CUu8k38iAMc",
+  "fri": {
+    "slot": "s01",
+    "id": "29bpGAI0wb8",
+    "title": "How small can you cut gold?",
+    "wanted": "16 Oct 2026 11:30 Europe/London",
+    "chip_before": "Visibility Scheduled",
+    "sched_radio": "",
+    "fields_before": {
+      "dialog": "Save or publish Schedule Schedule as public 16 Oct 2026 Time zone Video is private before publishing Done",
+      "date": "16 Oct 2026",
+      "time": "00:15",
+      "times": [
+        {
+          "v": "00:15",
+          "x": 1229,
+          "y": 506,
+          "w": 96,
+          "h": 22
+        }
+      ],
+      "dates": [
+        "16 Oct 2026",
+        "16 Oct 2026"
+      ]
+    },
+    "date_set": {
+      "wanted": "16 Oct 2026",
+      "date_click": "16 Oct 2026",
+      "after": {
+        "dialog": "Save or publish Private Share privately Unlisted Public Schedule Done",
+        "date": null,
+        "time": null,
+        "times": [],
+        "dates": []
+      },
+      "ok": false
+    },
+    "time_set": {
+      "before": null,
+      "ok": false,
+      "error": "no_time_input"
+    },
+    "fields_mid": {
+      "dialog": "Save or publish Private Share privately Unlisted Public Schedule Done",
+      "date": null,
+      "time": null,
+      "times": [],
+      "dates": []
+    },
+    "time_retry": {
+      "before": null,
+      "ok": false,
+      "error": "no_time_input"
+    },
+    "save": {
+      "done": {
+        "y": 617
+      },
+      "save": true,
+      "confirm": "Save"
+    },
+    "chip_after": "Visibility Private",
+    "fields_after_save": {
+      "dialog": "Save or publish Private Share privately Unlisted Public Schedule Done",
+      "date": null,
+      "time": null,
+      "times": [],
+      "dates": []
+    },
+    "time_after_save": null,
+    "date_after_save": null,
+    "audience": {
+      "yes_checked": null,
+      "no_checked": true,
+      "banner": true,
+      "radios": [
+        {
+          "label": "No, it's not 'Made for Kids'",
+          "checked": true,
+          "kidsYes": false,
+          "kidsNo": true,
+          "via": "own"
+        }
+      ],
+      "ok_not_kids": true,
+      "fail_kids": false
+    },
+    "audience_not_kids": true,
+    "altered": {
+      "radios": [
+        {
+          "label": "Yes, AI was used",
+          "checked": true,
+          "isNo": false,
+          "isYes": true
+        },
+        {
+          "label": "No, AI wasn't used",
+          "checked": false,
+          "isNo": true,
+          "isYes": false
+        }
+      ],
+      "no": false,
+      "yes": true,
+      "section": "AI use"
+    },
+    "altered_yes": true,
+    "related": {
+      "window": "Related video None Subtitles",
+      "status": "none"
+    },
+    "related_status": "deferred_or_unset",
+    "ok": false
+  },
+  "sun": {
+    "slot": "s02",
+    "id": "TbMMJSRKC3U",
+    "title": "He said every eighth element repeats",
+    "wanted": "18 Oct 2026 11:30 Europe/London",
+    "chip_before": "Visibility Scheduled",
+    "sched_radio": "",
+    "fields_before": {
+      "dialog": "Save or publish Schedule Schedule as public 18 Oct 2026 Time zone Video is private before publishing Done",
+      "date": "18 Oct 2026",
+      "time": "00:00",
+      "times": [
+        {
+          "v": "00:00",
+          "x": 1229,
+          "y": 506,
+          "w": 96,
+          "h": 22
+        }
+      ],
+      "dates": [
+        "18 Oct 2026",
+        "18 Oct 2026"
+      ]
+    },
+    "date_set": {
+      "wanted": "18 Oct 2026",
+      "date_click": "18 Oct 2026",
+      "after": {
+        "dialog": "Save or publish Private Share privately Unlisted Public Schedule Done",
+        "date": null,
+        "time": null,
+        "times": [],
+        "dates": []
+      },
+      "ok": false
+    },
+    "time_set": {
+      "before": null,
+      "ok": false,
+      "error": "no_time_input"
+    },
+    "fields_mid": {
+      "dialog": "Save or publish Private Share privately Unlisted Public Schedule Done",
+      "date": null,
+      "time": null,
+      "times": [],
+      "dates": []
+    },
+    "time_retry": {
+      "before": null,
+      "ok": false,
+      "error": "no_time_input"
+    },
+    "save": {
+      "done": {
+        "y": 617
+      },
+      "save": true,
+      "confirm": "Save"
+    },
+    "chip_after": "Visibility Private",
+    "fields_after_save": {
+      "dialog": "Save or publish Private Share privately Unlisted Public Schedule Done",
+      "date": null,
+      "time": null,
+      "times": [],
+      "dates": []
+    },
+    "time_after_save": null,
+    "date_after_save": null,
+    "audience": {
+      "yes_checked": null,
+      "no_checked": true,
+      "banner": true,
+      "radios": [
+        {
+          "label": "No, it's not 'Made for Kids'",
+          "checked": true,
+          "kidsYes": false,
+          "kidsNo": true,
+          "via": "own"
+        }
+      ],
+      "ok_not_kids": true,
+      "fail_kids": false
+    },
+    "audience_not_kids": true,
+    "altered": {
+      "radios": [
+        {
+          "label": "Yes, AI was used",
+          "checked": true,
+          "isNo": false,
+          "isYes": true
+        },
+        {
+          "label": "No, AI wasn't used",
+          "checked": false,
+          "isNo": true,
+          "isYes": false
+        }
+      ],
+      "no": false,
+      "yes": true,
+      "section": "AI use"
+    },
+    "altered_yes": true,
+    "related": {
+      "window": "Related video How Did We Discover the Periodic Table? Subtitles",
+      "status": "set",
+      "title": "How Did We Discover the Periodic Table?",
+      "id": "AL_-qlWko_g"
+    },
+    "related_status": "set",
+    "ok": false
+  },
+  "fri_time_shown": null,
+  "sun_time_shown": null,
+  "fri_date_shown": null,
+  "sun_date_shown": null,
+  "ok": false,
+  "ended": "2026-09-30T11:08:37+01:00"
+}

@@ -1,0 +1,83 @@
+{
+  "started_at": "2026-09-30T10:21:00+00:00",
+  "finished_at": "2026-09-30T10:59:40.479784+00:00",
+  "cdp": "http://127.0.0.1:9222",
+  "account": "benoats@googlemail.com",
+  "engine": "Flow Image / Nano Banana 2 / 9:16 / x1",
+  "credits_before_batch": 62,
+  "credits_after_batch": 62,
+  "credits_used_batch": 0,
+  "page_tabs_rule": "NEW tab only; never close other Flow tabs; never touch :9460",
+  "style_refs": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Shorts/hos_002_s04_tellurium_cover_live_v02.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Shorts/hos_002_s05_other_table_cover_live_v02.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/01_Character/05_Generation-References/hos-explorer-reference-v01.jpg"
+  ],
+  "stills": {
+    "s01": {
+      "status": "KEEP",
+      "kept": {
+        "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v02/stills/s01_how_small_scene.png",
+        "bytes": 1551099,
+        "qa": "KEEP",
+        "qa_reason": "1080x1920 look=painted",
+        "qa_meta": {
+          "avg_rgb": [
+            68,
+            46,
+            23
+          ],
+          "ratio": 0.5625,
+          "look_guess": "painted"
+        }
+      },
+      "source_note": "salvaged Nano Banana gallery tile after gen (download path flaky); style refs attached during Create; portrait clip screenshot \u2192 1080x1920",
+      "look": "painted"
+    },
+    "s02": {
+      "status": "KEEP",
+      "kept": {
+        "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v02/stills/s02_every_eighth_scene.png",
+        "bytes": 1126797,
+        "qa": "KEEP",
+        "qa_reason": "1080x1920 look=painted",
+        "qa_meta": {
+          "avg_rgb": [
+            73,
+            54,
+            33
+          ],
+          "ratio": 0.5625,
+          "look_guess": "painted"
+        }
+      },
+      "source_note": "salvaged Nano Banana gallery tile after gen (download path flaky); style refs attached during Create; portrait clip screenshot \u2192 1080x1920",
+      "look": "painted"
+    },
+    "s03": {
+      "status": "KEEP",
+      "kept": {
+        "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v02/stills/s03_they_laughed_scene.png",
+        "bytes": 1334017,
+        "qa": "KEEP",
+        "qa_reason": "1080x1920 look=painted",
+        "qa_meta": {
+          "avg_rgb": [
+            105,
+            79,
+            53
+          ],
+          "ratio": 0.5625,
+          "look_guess": "painted"
+        }
+      },
+      "source_note": "salvaged Nano Banana gallery tile after gen (download path flaky); style refs attached during Create; portrait clip screenshot \u2192 1080x1920",
+      "look": "painted"
+    }
+  },
+  "notes": [
+    "s01/s02/s03 all Animistry painted 3D cartoon \u2014 not film-frame",
+    "Home Flow tab F86779BD left untouched throughout",
+    "Max 2 tries respected; several early tries failed download (.bin mime / menu pulled explorer sheet) but gens landed in gallery and were salvaged"
+  ]
+}

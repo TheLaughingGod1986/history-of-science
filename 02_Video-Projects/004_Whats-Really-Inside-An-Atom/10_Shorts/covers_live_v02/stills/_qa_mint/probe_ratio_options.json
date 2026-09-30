@@ -1,0 +1,135 @@
+[
+  {
+    "t": "Images",
+    "w": 147,
+    "h": 24,
+    "role": null,
+    "tag": "SPAN"
+  },
+  {
+    "t": "\ud83c\udf4c Nano Banana 2 crop_16_9 x1 Settings trigger",
+    "w": 157,
+    "h": 32,
+    "role": null,
+    "tag": "BUTTON"
+  },
+  {
+    "t": "\ud83c\udf4c Nano Banana 2 crop_16_9 x1",
+    "w": 133,
+    "h": 24,
+    "role": null,
+    "tag": "SPAN"
+  },
+  {
+    "t": "image Image",
+    "w": 140,
+    "h": 34,
+    "role": "radio",
+    "tag": "BUTTON"
+  },
+  {
+    "t": "Image",
+    "w": 35,
+    "h": 34,
+    "role": null,
+    "tag": "SPAN"
+  },
+  {
+    "t": "videocam Video",
+    "w": 140,
+    "h": 34,
+    "role": "radio",
+    "tag": "BUTTON"
+  },
+  {
+    "t": "Video",
+    "w": 32,
+    "h": 34,
+    "role": null,
+    "tag": "SPAN"
+  },
+  {
+    "t": "crop_16_9 16:9",
+    "w": 55,
+    "h": 34,
+    "role": "radio",
+    "tag": "BUTTON"
+  },
+  {
+    "t": "16:9",
+    "w": 22,
+    "h": 16,
+    "role": null,
+    "tag": "SPAN"
+  },
+  {
+    "t": "crop_landscape 4:3",
+    "w": 55,
+    "h": 34,
+    "role": "radio",
+    "tag": "BUTTON"
+  },
+  {
+    "t": "4:3",
+    "w": 17,
+    "h": 16,
+    "role": null,
+    "tag": "SPAN"
+  },
+  {
+    "t": "crop_square 1:1",
+    "w": 55,
+    "h": 34,
+    "role": "radio",
+    "tag": "BUTTON"
+  },
+  {
+    "t": "1:1",
+    "w": 14,
+    "h": 16,
+    "role": null,
+    "tag": "SPAN"
+  },
+  {
+    "t": "crop_portrait 3:4",
+    "w": 55,
+    "h": 34,
+    "role": "radio",
+    "tag": "BUTTON"
+  },
+  {
+    "t": "3:4",
+    "w": 17,
+    "h": 16,
+    "role": null,
+    "tag": "SPAN"
+  },
+  {
+    "t": "crop_9_16 9:16",
+    "w": 55,
+    "h": 34,
+    "role": "radio",
+    "tag": "BUTTON"
+  },
+  {
+    "t": "9:16",
+    "w": 22,
+    "h": 16,
+    "role": null,
+    "tag": "SPAN"
+  },
+  {
+    "t": "\ud83c\udf4c Nano Banana 2 arrow_drop_down Select model family",
+    "w": 280,
+    "h": 34,
+    "role": null,
+    "tag": "BUTTON"
+  },
+  {
+    "t": "\ud83c\udf4c Nano Banana 2 arrow_drop_down",
+    "w": 256,
+    "h": 20,
+    "role": null,
+    "tag": "SPAN"
+  }
+]

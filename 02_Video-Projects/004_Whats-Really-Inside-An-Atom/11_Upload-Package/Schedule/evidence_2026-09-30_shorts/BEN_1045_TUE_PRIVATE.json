@@ -1,0 +1,28 @@
+{
+  "chip_before": "Visibility Scheduled",
+  "expand": {
+    "t": "Save or publish",
+    "y": 318,
+    "tag": "DIV"
+  },
+  "priv": {
+    "t": "Private",
+    "own": "Private",
+    "y": 333,
+    "x": 1067
+  },
+  "done": {
+    "dis": false,
+    "y": 617
+  },
+  "save": true,
+  "chip_after": "Visibility Private",
+  "checks": {
+    "kids_no": true,
+    "kids_yes": false,
+    "ai_yes": true,
+    "ai_no": false,
+    "banner": true
+  },
+  "private_ok": true
+}

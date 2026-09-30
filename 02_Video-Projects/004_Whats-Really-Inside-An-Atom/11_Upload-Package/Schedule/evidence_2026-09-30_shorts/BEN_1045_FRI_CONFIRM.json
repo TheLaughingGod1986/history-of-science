@@ -1,0 +1,19 @@
+{
+  "slot": "s01",
+  "id": "29bpGAI0wb8",
+  "visibility": "Scheduled",
+  "schedule_date": "16 Oct 2026",
+  "schedule_time_studio": "00:15",
+  "date_ok_16_or_18_oct": true,
+  "time_is_1130": false,
+  "expected_time": "11:30",
+  "schedule_radio_checked": null,
+  "dialog": "Save or publish Schedule Schedule as public 16 Oct 2026 Time zone Video is private before publishing",
+  "audience_not_kids": true,
+  "altered_yes": true,
+  "related_status": "deferred_or_unset",
+  "related_window": "Related video None Subtitles",
+  "note": "Studio dialog shows schedule date/time fields; report actual time even if not 11:30.",
+  "ok_scheduled_on_correct_date": true,
+  "after_004_premiere": true
+}

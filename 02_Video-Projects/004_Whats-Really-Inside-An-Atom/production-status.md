@@ -430,21 +430,17 @@ Ben re-sent the growth order unchanged. Live CDP pass with **named selectors onl
 | 001 Shorts edit Oops | `8uBR-9oxeWs` · `YX2UR1u-JCQ` · `Fnb3p81u-wY` · `vpuRgKXtFlY` · `Lcmh5y2KMQM` — unverified via edit |
 | C4 end screens → 004 | **Deferred** until after 15 Oct 18:05 |
 
-### D — Shorts — **SCHEDULED** (Ben 30 Sep 09:02 · V06 OK)
+### D — Shorts (Ben 30 Sep 10:45 fixes)
 
-All three Ben-PASSED cuts uploaded PRIVATE + scheduled on `@HistoryOfScienceYT` only. No Premiere. No Replace. No publish-now. No `/go/`. No pinned comment.
+| Slot | Id | Status | Notes |
+|---|---|---|---|
+| Fri How Small v05 | **`29bpGAI0wb8`** | **Scheduled 16 Oct 2026 11:30 UK** (after 004 15 Oct 18:00) | Audience not kids · Altered YES · Related 004 **still deferred** → 15 Oct 18:05 · proof `BEN_1045_s01_1130.png` |
+| Sun Every Eighth v06 | **`TbMMJSRKC3U`** | **Scheduled 18 Oct 2026 11:30 UK** | Audience not kids · Altered YES · Related **002 set** · proof `BEN_1045_s02_1130.png` |
+| Tue (was Her Ring) | **`CUu8k38iAMc`** | **PRIVATE** (30 Sep 10:45) — not deleted | Duplicate of public `zI_eD3vFWmE` (27 Sep). Tue 20 Oct now → **001 Germs**. Script ideas STOP: `10_Shorts/SHORTS_TUE_001_GERMS_IDEAS_v01.md` |
 
-| Slot | Cut | Id | Schedule (UK) | Related | Cover | Proof |
-|---|---|---|---|---|---|---|
-| s01 How Small | v05 | **`29bpGAI0wb8`** | **Fri 16 Oct 2026 11:30** | **004 `GHZDsiH7L7A` DEFERRED** (Studio won't accept while 004 still scheduled) → retry **15 Oct 18:05** | `10_Shorts/covers_final/hos_004_s01_how_small_cover_final.jpg` · HOW SMALL? | `BEN_0902_s01_scheduled_list.png` · `BEN_0902_s01_final_edit.png` |
-| s02 Every Eighth | v06 | **`TbMMJSRKC3U`** | **Sun 18 Oct 2026 11:30** | **002 `AL_-qlWko_g` SET** | `…/hos_004_s02_every_eighth_cover_final.jpg` · EVERY EIGHTH? | `BEN_0902_s02_list.png` · `BEN_0902_s02_final_edit.png` |
-| s03 Her Ring | v05 | **`CUu8k38iAMc`** | **Tue 20 Oct 2026 11:30** | **003 `frP_YrNShsU` SET** | `…/hos_004_s03_her_ring_cover_final.jpg` · HER RING | `BEN_0902_s03_list.png` · `BEN_0902_s03_final_edit.png` |
+**Covers live-v02 (STOP for Ben — not uploaded):** painted scenes + TOP chunky type (no text box), matching live 002 Short covers. Fri `HOW SMALL?` · Sun `EVERY EIGHTH?` · Tue provisional `THEY LAUGHED?` (Idea A). Eight-up sheet (5 live 002 + 3 new): `10_Shorts/covers_live_v02/hos_004_shorts_covers_live_v02_eight_up.jpg` · `thumb_preview.py short` sheet alongside. iCloud `HOS UAT/004_…/10_Shorts/`.
 
-**Per Short settings (verified):** Audience **not Made for Kids** · Altered/AI **YES** · Category **Education** (present) · Comments **not disabled** · Remixing ON (channel Advanced default) · covers painted live-002 house look §4 · preview sheet in iCloud `HOS UAT/004_…/10_Shorts/`.
-
-**gate_shorts_open.py add:** all three registered `status=scheduled` in `audits/shorts_open_library/`. **SHORTS_LOG:** rows added.
-
-**Evidence:** `11_Upload-Package/Schedule/evidence_2026-09-30_shorts/` · artifacts `BEN_0902_*`.
+**SHORTS_LOG:** synced from live Studio Shorts scrape (`LIVE_SHORTS_LIST.json`) — added missing public `zI_eD3vFWmE` + `xvanpsLeADE`. From now: check live Shorts page before any new script.
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
