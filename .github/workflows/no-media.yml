@@ -1,0 +1,24 @@
+# Records on main, media on the Mini and in iCloud (AGENTS.md → Git). A PR may not ADD video or audio.
+# Existing tracked media is untracked on the Mini with `git rm --cached` (keeps the local files).
+name: No media in git
+
+on:
+  pull_request:
+
+jobs:
+  no-media:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Block newly added video/audio files
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          added=$(git diff --name-only --diff-filter=A "$base"...HEAD | grep -iE '\.(mp4|mov|m4v|webm|wav|mp3|m4a|aac|aif|aiff|flac)$' || true)
+          if [ -n "$added" ]; then
+            echo "These media files may not be committed (keep them on the Mini / in iCloud; record path + sha256 instead):"
+            echo "$added"
+            exit 1
+          fi
+          echo "No new media files."
