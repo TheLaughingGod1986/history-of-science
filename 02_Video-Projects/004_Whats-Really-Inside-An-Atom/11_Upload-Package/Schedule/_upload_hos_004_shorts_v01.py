@@ -134,7 +134,20 @@ def snip(page, n: int = 2500) -> str:
 
 
 def dismiss(page) -> None:
-    for name in ["Got it", "Dismiss", "Not now", "Close", "No thanks", "Skip", "Done"]:
+    # Never click Close/Done while the upload picker/details dialog is open —
+    # those labels match the dialog chrome and destroy the file input.
+    upload_open = False
+    try:
+        upload_open = bool(
+            page.locator("ytcp-uploads-dialog").count()
+            and (picker_open(page) or details_open(page))
+        )
+    except Exception:
+        upload_open = False
+    names = ["Got it", "Dismiss", "Not now", "No thanks", "Skip"]
+    if not upload_open:
+        names.extend(["Close", "Done"])
+    for name in names:
         try:
             b = page.get_by_role("button", name=re.compile(rf"^{name}$", re.I))
             if b.count() and b.first.is_visible():
@@ -680,6 +693,9 @@ def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
         {"image": image, "probe": probe},
     )
     # #endregion
+    # Walk document (and host.shadowRoot) like the working 004 studio uploader.
+    # Do not scope exclusively to ytcp-uploads-dialog host light-DOM — the file
+    # input lives in the dialog's shadow root.
     expr = """(() => {
       const wantImage = %s;
       const walk=(r,d=0)=>{
@@ -692,6 +708,10 @@ def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
             return inp;
           }
         }
+        if (r.shadowRoot) {
+          const x=walk(r.shadowRoot, d+1);
+          if (x) return x;
+        }
         for (const el of (r.querySelectorAll ? r.querySelectorAll('*') : [])) {
           if (el.shadowRoot) {
             const x=walk(el.shadowRoot, d+1);
@@ -701,7 +721,7 @@ def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
         return null;
       };
       const dlg = document.querySelector('ytcp-uploads-dialog');
-      return walk(dlg) || (!dlg && walk(document));
+      return walk(dlg) || walk(document);
     })()""" % ("true" if image else "false")
     try:
         session = page.context.new_cdp_session(page)
@@ -720,6 +740,7 @@ def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
                 "value": obj.get("value"),
                 "description": (obj.get("description") or "")[:120],
                 "exception": (ev or {}).get("exceptionDetails"),
+                "runId": "post-fix",
             },
         )
         # #endregion
@@ -735,7 +756,7 @@ def cdp_set_files(page, path: Path, *, image: bool = False) -> dict:
             "E",
             "cdp_set_files:exception",
             "CDP set files threw",
-            {"err": f"{type(e).__name__}:{e}"},
+            {"err": f"{type(e).__name__}:{e}", "runId": "post-fix"},
         )
         # #endregion
         return {"ok": False, "err": f"{type(e).__name__}:{e}", **info}
@@ -1093,7 +1114,24 @@ def upload_one(page, job: dict) -> dict:
         out["openUpload"] = {"alreadyDetails": True}
     else:
         out["openUpload"] = open_upload(page)
-        dismiss(page)
+        # Attach BEFORE dismiss. dismiss() used to click Close on the upload
+        # dialog and wipe the file input (no_file_input_object).
+        # #region agent log
+        _dbg(
+            "D",
+            "upload_one:pre_attach",
+            "about to attach mp4 (before dismiss)",
+            {
+                "slot": job["slot"],
+                "picker": picker_open(page),
+                "fileInputs": file_input_count(page),
+                "locatorCount": page.locator('input[type="file"]').count(),
+                "pathExists": path.exists(),
+                "pathBytes": path.stat().st_size if path.exists() else 0,
+                "runId": "post-fix",
+            },
+        )
+        # #endregion
         if is_glue(page):
             out["ok"] = False
             out["glue"] = True
@@ -1101,21 +1139,9 @@ def upload_one(page, job: dict) -> dict:
         if details_open(page):
             out["attach"] = {"ok": True, "via": "open_upload_details"}
         else:
-            # #region agent log
-            _dbg(
-                "A,D",
-                "upload_one:pre_attach",
-                "about to attach mp4",
-                {
-                    "slot": job["slot"],
-                    "picker": picker_open(page),
-                    "fileInputs": file_input_count(page),
-                    "locatorCount": page.locator('input[type="file"]').count(),
-                    "pathExists": path.exists(),
-                    "pathBytes": path.stat().st_size if path.exists() else 0,
-                },
-            )
-            # #endregion
+            # Wait briefly if Create/Upload just opened the picker
+            if not file_input_count(page):
+                wait_file_inputs(page, 12)
             attach = cdp_set_files(page, path)
             if not attach.get("ok"):
                 inputs = page.locator('input[type="file"]')
@@ -1123,24 +1149,42 @@ def upload_one(page, job: dict) -> dict:
                     inputs.first.set_input_files(str(path))
                     attach = {"ok": True, "via": "locator"}
                 else:
+                    # Prefer Playwright file-chooser over native dialog click.
                     # #region agent log
                     _dbg(
                         "E",
                         "upload_one:select_files_fallback",
-                        "locator empty; clicking Select files (intercept may open native dialog)",
-                        {"attach": attach},
+                        "locator empty; using expect_file_chooser around Select files",
+                        {"attach": attach, "runId": "post-fix"},
                     )
                     # #endregion
-                    click_shadow_text(page, r"^Select files$")
-                    page.wait_for_timeout(800)
-                    attach = cdp_set_files(page, path)
+                    try:
+                        with page.expect_file_chooser(timeout=5000) as fc_info:
+                            click_shadow_text(page, r"^Select files$")
+                        fc_info.value.set_files(str(path))
+                        attach = {"ok": True, "via": "file_chooser"}
+                    except Exception as e:
+                        page.wait_for_timeout(800)
+                        attach = cdp_set_files(page, path)
+                        if not attach.get("ok"):
+                            attach = {
+                                "ok": False,
+                                "reason": "no_file_input_object",
+                                "chooser_err": f"{type(e).__name__}:{e}",
+                                **{k: v for k, v in attach.items() if k != "ok"},
+                            }
             out["attach"] = attach
             # #region agent log
             _dbg(
                 "A,B,C,D,E",
                 "upload_one:post_attach",
                 "attach attempt finished",
-                {"attach": attach, "detailsNow": details_open(page), "pickerNow": picker_open(page)},
+                {
+                    "attach": attach,
+                    "detailsNow": details_open(page),
+                    "pickerNow": picker_open(page),
+                    "runId": "post-fix",
+                },
             )
             # #endregion
             if not attach.get("ok"):
@@ -1157,6 +1201,7 @@ def upload_one(page, job: dict) -> dict:
                     path=str(EV / f"{job['slot']}_attach_no_details.png"), full_page=True
                 )
                 return out
+        dismiss(page)
 
     title_box = page.get_by_role("textbox", name=re.compile(r"title|describe", re.I)).first
     title_box.wait_for(timeout=180000)
