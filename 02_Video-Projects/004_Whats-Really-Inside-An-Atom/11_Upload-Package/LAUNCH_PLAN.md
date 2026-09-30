@@ -10,6 +10,7 @@ Rules: `HOS_STRATEGY.md` → The week.
 | Tue 20 Oct 11:30 | Short: Bertha’s hand only (not cardboard accident) | 003 `frP_YrNShsU` |
 
 - Each Short's Studio Related points at the film it promotes. One Short a day at most; none before the 004 long is public.
+- **At 18:05 on 15 Oct:** Fri Related → 004; add 004 to playlist **How Did We Discover…? | History of Science** (001–003 already in). Full checklist: `Schedule/LAUNCH_DAY_15_OCT_1805.md`.
 - **Title (Ben):** main *What's Really Inside an Atom?*; T&C *Why Is the Periodic Table in This Order?* · *How Small Can You Cut Gold?*
 - **Test & Compare pairs (title + thumbnail) — Ben PASS A/B v04; C v06 for look. Nothing to Studio until upload go:**
 
