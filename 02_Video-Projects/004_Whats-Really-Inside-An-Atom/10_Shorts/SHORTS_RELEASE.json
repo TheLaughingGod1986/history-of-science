@@ -44,7 +44,7 @@
       "cover": "EVERY eighth ELEMENT?"
     },
     {
-      "id": null,
+      "id": "clV6E10NLPw",
       "title": "The spray that stopped surgery killing patients",
       "airDate": "2026-10-20T10:30:00Z",
       "promotes": "001",
@@ -60,8 +60,9 @@
       ],
       "madeForKids": false,
       "alteredContent": true,
+      "durationSeconds": 25,
       "cover": "THE carbolic SPRAY",
-      "note": "Fill id once uploaded."
+      "note": "Uploaded 30 Sep; scheduled Tue 20 Oct 11:30 UK. Related long save still needs retry."
     }
   ]
 }
