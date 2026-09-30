@@ -247,6 +247,16 @@ HOS 004 went up marked **Made for Kids**, which switched off comments, notificat
 
 **Every Short:** the same Audience, altered content and category; comments on; Related video = the long it promotes; remixing on; no pinned comment, no `/go/`; scheduled 11:30 UK, never before its long is public.
 
+**Every video, long or Short, including the back catalogue (30 Sep 2026):**
+- Paid promotion: **No** (never left blank).
+- Video language **and** title-and-description language: **English (United Kingdom)**. Caption certification: never aired on TV.
+- Education fields: Type = concept overview/explainer; Level = secondary; Exam/course = the GCSE subject (**GCSE Chemistry** for atoms and the periodic table, **GCSE Physics** for X-rays, **GCSE Biology** for germs); Academic system = United Kingdom if listed.
+- Automatic places **off**; automatic chapters and concepts on.
+- **Tags:** 5–8, only about this video's own subject (a Short's tags never carry another Short's topic). **Never another channel's or creator's name** (e.g. Crash Course, vlogbrothers): that breaks YouTube's misleading-metadata rule.
+- **Titles:** never a vidIQ or other tool suggestion with hashtags. A Short never uses a title the long is testing in Test & Compare.
+- **Times:** always state UK time with the UTC beside it (UK summer time runs to the last Sunday in October: 11:30 UK = 10:30 UTC; after that they're the same). The Studio time zone reads London.
+- **New Short ideas and titles** are checked against the **live channel's Shorts page**, not only `audits/SHORTS_LOG.md`.
+
 **How to set them (agents):** one setting per save. After each save, re-read **Audience** and **Visibility** on the video. Screenshot the final Visibility, Audience, Test & Compare, end screen and cards, and record the video id, schedule and settings in the film's `production-status.md`. Ben checks Audience and Visibility on his phone before the day.
 
 ## 10. Measure
