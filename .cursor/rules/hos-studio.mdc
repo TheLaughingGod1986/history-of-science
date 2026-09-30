@@ -44,6 +44,10 @@ One long (7–9 min) on Thursday at 18:00 UK as a **normal publish, never a Prem
 - **TikTok:** any upload while `TikTok/TIKTOK_UPLOAD_BLOCK.json` is paused.
 - **Secrets:** printing or committing them.
 
+## Definition of done
+
+A stage is done only when its check prints PASS and you paste the output (table in `AGENTS.md`): `review:script` ≥ 90 + `gate:episode`, `vo_check.py`, `gate_shorts_open.py`, `style_sheet.py` + `thumb_preview.py`, `npm run lint:package` before any upload or schedule, `npm run channel:audit` after every Studio session. Never skip, edit or swap a check to get a PASS.
+
 ## Every Short export
 
 `python3 00_Brand/Channel-Setup/tools/gate_shorts_open.py check <mp4> --air-date YYYY-MM-DD` must PASS. Then watch it once on a phone with the sound on.

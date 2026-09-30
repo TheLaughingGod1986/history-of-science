@@ -32,7 +32,9 @@
     "affiliate:verify": "tsx scripts/affiliate-go-live.ts",
     "affiliate:apply-urls": "tsx scripts/apply-amazon-live-urls.ts",
     "affiliate:wire-topic-books": "tsx scripts/wire-topic-book-placements.ts",
-    "verify:growth-v2": "vitest run tests/growth-system-v2.test.ts tests/episode-ops-v2.test.ts && tsx scripts/diagnose-youtube-growth.ts --file content/samples/json/youtube_growth_metrics_sample.json && tsx scripts/next-episode-brief.ts --file content/samples/json/youtube_growth_metrics_sample.json --out ../docs/NEXT_EPISODE_BRIEF.md"
+    "verify:growth-v2": "vitest run tests/growth-system-v2.test.ts tests/episode-ops-v2.test.ts && tsx scripts/diagnose-youtube-growth.ts --file content/samples/json/youtube_growth_metrics_sample.json && tsx scripts/next-episode-brief.ts --file content/samples/json/youtube_growth_metrics_sample.json --out ../docs/NEXT_EPISODE_BRIEF.md",
+    "lint:package": "tsx scripts/package-lint.ts",
+    "channel:audit": "tsx --env-file=.env scripts/channel-audit.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

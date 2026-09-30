@@ -23,6 +23,9 @@
   "relatedVideoId": "AL_-qlWko_g",
   "privacy": "private",
   "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
@@ -30,7 +33,7 @@
     "relatedVideoId": "AL_-qlWko_g",
     "relatedTitle": "How Did We Discover the Periodic Table?",
     "subscribe": true,
-    "note": "Studio end screen only \u2014 002 long + Subscribe. No Premiere."
+    "note": "Studio end screen only — 002 long + Subscribe. No Premiere."
   },
   "testAndCompare": [
     {
@@ -53,7 +56,7 @@
     }
   ],
   "captionsFile": "Captions/hos_004_full_v02.en.srt",
-  "note": "MUSIC PASS on hos_004_full_v02.mp4 sha ed870939\u2026. Thumbs A/B v04 + C v06 Ben PASS. Uploaded 2026-09-29 via YouTube Studio CDP (Playwright \u00b7 HOS Chrome profile :9460). No .env / no API / never Orbit. Shorts on hold for Ben phone watch.",
+  "note": "MUSIC PASS on hos_004_full_v02.mp4 sha ed870939…. Thumbs A/B v04 + C v06 Ben PASS. Uploaded 2026-09-29 via YouTube Studio CDP (Playwright · HOS Chrome profile :9460). No .env / no API / never Orbit. Shorts on hold for Ben phone watch.",
   "musicPass": {
     "cut": "hos_004_full_v02.mp4",
     "sha256": "ed870939f476d326197cdaf1403ce7064850d4286ff63aa81bc5a7584761e98e",
@@ -63,7 +66,7 @@
   "unusedMix": {
     "cut": "hos_004_full_v03.mp4",
     "sha256": "503e228745d4cf87fe6f504522cbad99f6af0f9c8b038c1ed8c52da493428157",
-    "status": "built earlier; unused \u2014 do not upload"
+    "status": "built earlier; unused — do not upload"
   },
   "thumbsPass": {
     "A": "v04",

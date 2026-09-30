@@ -257,6 +257,8 @@ HOS 004 went up marked **Made for Kids**, which switched off comments, notificat
 - **Times:** always state UK time with the UTC beside it (UK summer time runs to the last Sunday in October: 11:30 UK = 10:30 UTC; after that they're the same). The Studio time zone reads London.
 - **New Short ideas and titles** are checked against the **live channel's Shorts page**, not only `audits/SHORTS_LOG.md`.
 
+**Checked by code (30 Sep 2026):** `npm run lint:package` must PASS before any upload, schedule or metadata change (it reads `11_Upload-Package/PACKAGE_MANIFEST.json` and `10_Shorts/SHORTS_RELEASE.json`), and `npm run channel:audit` must show 0 errors after every Studio session and every Monday. The rules are in `07_Content-Ops/src/lib/hos-contract/rules.ts`; a GitHub check runs the lint on every PR that touches a package. Every week's Shorts are declared in `10_Shorts/SHORTS_RELEASE.json` (title, UTC air time, promotes, tags, audience, AI, Related) before any of them is uploaded.
+
 **How to set them (agents):** one setting per save. After each save, re-read **Audience** and **Visibility** on the video. Screenshot the final Visibility, Audience, Test & Compare, end screen and cards, and record the video id, schedule and settings in the film's `production-status.md`. Ben checks Audience and Visibility on his phone before the day.
 
 ## 10. Measure

@@ -62,7 +62,7 @@ In the Shorts feed nobody sees the custom cover. They see frame 0.
 | Long thumbnail (16:9) | Serif painted lettering: cream words, one gold punch word, small gold flourishes | Decides CTR on home and search; the distinctive "History of Science" look |
 | Shorts cover (9:16) | Chunky rounded gold/cream, thick outline, one small teal word | Channel page and search only (the feed shows frame 0); punchier |
 
-Before any new thumb or cover goes to Ben, put it on one sheet next to live ones **of the same format** and check that it's the same family.
+Before any new thumb or cover goes to Ben, put it on one sheet next to live ones **of the same format** and check that it's the same family: `python3 00_Brand/Channel-Setup/tools/style_sheet.py long|short <new.jpg> --out <sheet.jpg>` builds it from the reference set in `00_Brand/Channel-Setup/style/`. Approved new ones are added to that set.
 
 ## 5. Checklist before upload
 

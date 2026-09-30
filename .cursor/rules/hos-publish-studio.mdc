@@ -26,6 +26,7 @@ Full rules: `STUDIO_PLAYBOOK.md` §9–§12.
   - a recut gets a new id, and the old one goes private (not deleted).
 - **Long:** normal publish, Thursday 18:00 UK, never a Premiere. Test & Compare with 3 thumbs, end screen, captions from the script. Pinned comment: `07_Content-Ops/scripts/update-pinned-comment.ts --create --video <id> --question "…?"`, then pin it in Studio.
 - **Short:** Studio Related → the long it promotes. No pinned comment, zero `/go/`.
+- **Contract checks (paste the PASS):** `cd 07_Content-Ops && npm run lint:package` before any upload/schedule/metadata change; `npm run channel:audit` (0 errors) after every Studio session and every Monday. Shorts are declared first in `10_Shorts/SHORTS_RELEASE.json`.
 - **Studio settings on every video** (`STUDIO_PLAYBOOK.md` §9, 30 Sep 2026; HOS 004 went up as Made for Kids):
   - **Audience "not made for kids"** (channel default too). Re-read Audience and Visibility after **every** save; one setting per save.
   - Scheduled with Premiere off, notify subscribers on; altered/synthetic content **Yes**; category Education; English (UK); captions `.srt`; comments on (hold inappropriate).

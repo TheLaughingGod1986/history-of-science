@@ -27,7 +27,9 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 | Path | What |
 |---|---|
 | `00_Brand/Channel-Setup/` | The docs above, `VIDEO_BACKLOG.json`, `CHANNEL_META.json`, `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`, `templates/`, channel description and keywords |
-| `00_Brand/Channel-Setup/tools/` | `weekly_public_audit.py`, `gate_shorts_open.py` (Shorts ship gate), `thumb_preview.py` |
+| `00_Brand/Channel-Setup/tools/` | `weekly_public_audit.py`, `gate_shorts_open.py` (Shorts ship gate), `thumb_preview.py`, `style_sheet.py`, `vo_check.py`, `public_search.py` |
+| `00_Brand/Channel-Setup/style/` | The live approved thumbnails and covers, as images: the style reference set |
+| `07_Content-Ops/src/lib/hos-contract/` | The release contract as code (`rules.ts`): what `lint:package` and `channel:audit` enforce |
 | `00_Brand/Channel-Setup/audits/` | The current audit, `SHORTS_LOG.md`, `weekly/` reports, the Studio Chrome launcher |
 | `00_Brand/Channel-Setup/{Meta,Threads,TikTok,social}/` | Social mirror ops. TikTok is paused (`TikTok/TIKTOK_UPLOAD_BLOCK.json`). |
 | `00_Brand/Brand-Guidelines/` | Brand snapshot, the Showrunner brief studio block |
@@ -52,9 +54,28 @@ cd 07_Content-Ops && npx tsx --env-file=.env scripts/update-pinned-comment.ts --
 python3 00_Brand/Channel-Setup/tools/weekly_public_audit.py          # every Monday
 python3 00_Brand/Channel-Setup/tools/public_search.py "<title>" "<angle>" --out <film>/11_Upload-Package/evidence_<date>_public_search.json
 python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_Script/<slug>_script_master_vNN.md [--part N]
+python3 00_Brand/Channel-Setup/tools/style_sheet.py long|short <new.jpg> --out <sheet.jpg>   # new vs the live look
+cd 07_Content-Ops && npm run lint:package [-- --film NNN]              # release contract, before any upload/schedule
+cd 07_Content-Ops && npm run channel:audit [-- --write-live]           # what's really on YouTube (needs HOS .env)
 ```
 
 The Python tools need `ffmpeg`/`ffprobe` and Pillow; `vo_check.py` also uses `faster-whisper` for the word check. The YouTube scripts need `07_Content-Ops/.env` (see `.env.example`). Never print or commit its values.
+
+## Definition of done (the contract)
+
+A stage is done only when its check prints PASS **and the agent pastes that output** in its report and the film's `production-status.md`. "Done" without a pasted PASS is not done. A check can't be skipped, edited to pass, or swapped for another tool; if a check is wrong, say so and fix the check in its own PR with Ben's OK.
+
+| Stage | Must PASS | Then |
+|---|---|---|
+| Topic | `public_search.py` evidence saved; not a subject that already has a long | Ben picks |
+| Long script | `npm run review:script` ≥ 90 and `npm run gate:episode` | Ben signs off |
+| Every VO take | `vo_check.py` (word diff, loudness, pace, first minute) | Ben listens |
+| Each Short | `gate_shorts_open.py check` | Ben watches on his phone |
+| Thumbnails and covers | `style_sheet.py` (new next to live, same format) and `thumb_preview.py` (168×94) | Ben approves |
+| Before any upload, schedule or Studio metadata change | `npm run lint:package` | Upload private + schedule; Ben OKs anything public |
+| After every Studio session, and every Monday | `npm run channel:audit` (0 errors) + its Studio-only checklist | Record in `production-status.md` |
+
+The uploader itself sets the channel defaults on every API upload: Education, English (UK), altered/synthetic content Yes, never Made for Kids unless a package says so.
 
 ## Stop and ask Ben at each of these points
 
