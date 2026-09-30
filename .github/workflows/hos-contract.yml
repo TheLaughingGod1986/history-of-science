@@ -1,0 +1,43 @@
+# HOS release contract: upload packages and the contract code must pass before a PR can merge.
+# Rules: 07_Content-Ops/src/lib/hos-contract/rules.ts · STUDIO_PLAYBOOK.md §9 · AGENTS.md "Definition of done".
+name: HOS release contract
+
+on:
+  pull_request:
+    paths:
+      - "02_Video-Projects/**/11_Upload-Package/**"
+      - "02_Video-Projects/**/10_Shorts/SHORTS_RELEASE.json"
+      - "00_Brand/Channel-Setup/audits/SHORTS_LOG.md"
+      - "00_Brand/Channel-Setup/audits/LIVE_VIDEOS.json"
+      - "07_Content-Ops/src/lib/hos-contract/**"
+      - "07_Content-Ops/src/lib/publishing/**"
+      - "07_Content-Ops/scripts/package-lint.ts"
+      - "07_Content-Ops/scripts/channel-audit.ts"
+      - "07_Content-Ops/tests/hos-contract.test.ts"
+      - ".github/workflows/hos-contract.yml"
+  push:
+    branches: [main]
+    paths:
+      - "02_Video-Projects/**/11_Upload-Package/**"
+      - "02_Video-Projects/**/10_Shorts/SHORTS_RELEASE.json"
+      - "07_Content-Ops/src/lib/hos-contract/**"
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 07_Content-Ops
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: 07_Content-Ops/package-lock.json
+      # --ignore-scripts: the contract needs no database or Prisma client.
+      - run: npm ci --ignore-scripts
+      - name: Contract tests
+        run: npx vitest run tests/hos-contract.test.ts
+      - name: Package lint (every film's long package + Shorts release)
+        run: npx tsx scripts/package-lint.ts

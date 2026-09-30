@@ -1,0 +1,67 @@
+{
+  "film": "004",
+  "about": "The week's Shorts for film 004 (HOS release contract). Checked by `npm run lint:package` before any upload or schedule change. Times are UTC; 10:30Z = 11:30 UK until 25 Oct.",
+  "shorts": [
+    {
+      "id": "29bpGAI0wb8",
+      "title": "What happens if you keep cutting gold in half?",
+      "airDate": "2026-10-16T10:30:00Z",
+      "promotes": "004",
+      "promotesVideoId": "GHZDsiH7L7A",
+      "relatedVideoId": null,
+      "tags": [
+        "how small can you cut gold",
+        "what's really inside an atom",
+        "atom",
+        "gold",
+        "periodic table",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 24.9,
+      "cover": "HOW so SMALL?",
+      "note": "Rename from 'How small can you cut gold?' (a 004 T&C title) ordered 30 Sep. Related → 004 at 15 Oct 18:05."
+    },
+    {
+      "id": "TbMMJSRKC3U",
+      "title": "He said every eighth element repeats",
+      "airDate": "2026-10-18T10:30:00Z",
+      "promotes": "002",
+      "promotesVideoId": "AL_-qlWko_g",
+      "relatedVideoId": "AL_-qlWko_g",
+      "tags": [
+        "john newlands",
+        "law of octaves",
+        "periodic table",
+        "davy medal",
+        "history of chemistry",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 27,
+      "cover": "EVERY eighth ELEMENT?"
+    },
+    {
+      "id": null,
+      "title": "The spray that stopped surgery killing patients",
+      "airDate": "2026-10-20T10:30:00Z",
+      "promotes": "001",
+      "promotesVideoId": "_C92tIJCk8A",
+      "relatedVideoId": "_C92tIJCk8A",
+      "tags": [
+        "joseph lister",
+        "carbolic spray",
+        "antiseptic surgery",
+        "germ theory",
+        "history of medicine",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "cover": "THE carbolic SPRAY",
+      "note": "Fill id once uploaded."
+    }
+  ]
+}

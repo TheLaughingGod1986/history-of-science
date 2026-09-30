@@ -26,11 +26,13 @@ Full rules: `STUDIO_PLAYBOOK.md` §9–§12.
   - a recut gets a new id, and the old one goes private (not deleted).
 - **Long:** normal publish, Thursday 18:00 UK, never a Premiere. Test & Compare with 3 thumbs, end screen, captions from the script. Pinned comment: `07_Content-Ops/scripts/update-pinned-comment.ts --create --video <id> --question "…?"`, then pin it in Studio.
 - **Short:** Studio Related → the long it promotes. No pinned comment, zero `/go/`.
+- **Contract checks (paste the PASS):** `cd 07_Content-Ops && npm run lint:package` before any upload/schedule/metadata change; `npm run channel:audit` (0 errors) after every Studio session and every Monday. Shorts are declared first in `10_Shorts/SHORTS_RELEASE.json`.
 - **Studio settings on every video** (`STUDIO_PLAYBOOK.md` §9, 30 Sep 2026; HOS 004 went up as Made for Kids):
   - **Audience "not made for kids"** (channel default too). Re-read Audience and Visibility after **every** save; one setting per save.
   - Scheduled with Premiere off, notify subscribers on; altered/synthetic content **Yes**; category Education; English (UK); captions `.srt`; comments on (hold inappropriate).
   - Longs: Test & Compare, end screen, **2 cards** (not in the first minute), the "How We Found Out" playlist, pinned comment. After publish, point the older longs' end screens at the new film.
   - Screenshot Visibility, Audience, T&C, end screen and cards; record them in `production-status.md`.
+  - **Every video, long or Short, old or new:** paid promotion No; video and title/description language English (UK); education fields (concept overview, secondary, GCSE Chemistry/Physics/Biology); automatic places off; 5–8 tags on this video's own subject only, **never another channel's name**; no hashtag titles from vidIQ; a Short never reuses a title the long is testing. Times in UK with UTC beside them, Studio time zone London. New Short ideas are checked against the **live** Shorts page.
 - **Title-only fixes:** `07_Content-Ops/scripts/retitle-videos.ts` (dry run first, Ben OK).
 - **Studio-only jobs** go through desktop Studio CDP (`00_Brand/Channel-Setup/audits/start_studio_chrome_cdp.sh`). Never Replace.
 - **Affiliate:** only on a long that names the product in VO or on screen; one product per film; never invent ASINs; never commit the Amazon tag.
