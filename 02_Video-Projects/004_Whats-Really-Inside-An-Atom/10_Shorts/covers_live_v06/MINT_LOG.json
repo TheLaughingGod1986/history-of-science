@@ -1,0 +1,159 @@
+{
+  "started_at": "2026-09-30T13:10:16.195137+00:00",
+  "cdp": "http://127.0.0.1:9222",
+  "engine": "Flow Image / Nano Banana / 9:16 lettered covers v06 ALLCAPS teal",
+  "style_refs": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Shorts/hos_002_s03_gallium_cover_live_v02.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Shorts/hos_002_s04_tellurium_cover_live_v02.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Shorts/hos_002_s05_other_table_cover_live_v02.jpg"
+  ],
+  "covers": {
+    "s02": {
+      "kept": {
+        "key": "s02",
+        "try": 1,
+        "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/hos_004_s02_every_eighth_cover_live_v06.jpg",
+        "expect": [
+          "EVERY",
+          "EIGHTH",
+          "ELEMENT?"
+        ],
+        "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/_qa_mint/s02_try1_decoded.png",
+        "account": null,
+        "credits_before": null,
+        "credits_after": null,
+        "credits_used": null,
+        "attached_refs": 3,
+        "qa": "KEEP",
+        "qa_reason": "768x1376 ratio=0.558 look=painted; cream=0.102 gold=0.111 teal=0.056 expect=EVERY/EIGHTH/ELEMENT?; s02 silver=0.000 ok",
+        "qa_meta": {
+          "w": 768,
+          "h": 1376,
+          "ratio": 0.5581,
+          "avg_rgb": [
+            90,
+            71,
+            43
+          ],
+          "look_guess": "painted",
+          "spell_heuristic": "cream=0.102 gold=0.111 teal=0.056 expect=EVERY/EIGHTH/ELEMENT?",
+          "scene_heuristic": "s02 silver=0.000 ok"
+        },
+        "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+        "pulled": "2026-09-30T13:11:07.501914+00:00"
+      },
+      "attempts": [
+        {
+          "key": "s02",
+          "try": 1,
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/hos_004_s02_every_eighth_cover_live_v06.jpg",
+          "expect": [
+            "EVERY",
+            "EIGHTH",
+            "ELEMENT?"
+          ],
+          "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/_qa_mint/s02_try1_decoded.png",
+          "account": null,
+          "credits_before": null,
+          "credits_after": null,
+          "credits_used": null,
+          "attached_refs": 3,
+          "qa": "KEEP",
+          "qa_reason": "768x1376 ratio=0.558 look=painted; cream=0.102 gold=0.111 teal=0.056 expect=EVERY/EIGHTH/ELEMENT?; s02 silver=0.000 ok",
+          "qa_meta": {
+            "w": 768,
+            "h": 1376,
+            "ratio": 0.5581,
+            "avg_rgb": [
+              90,
+              71,
+              43
+            ],
+            "look_guess": "painted",
+            "spell_heuristic": "cream=0.102 gold=0.111 teal=0.056 expect=EVERY/EIGHTH/ELEMENT?",
+            "scene_heuristic": "s02 silver=0.000 ok"
+          },
+          "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+          "pulled": "2026-09-30T13:11:07.501914+00:00"
+        }
+      ],
+      "status": "KEEP"
+    },
+    "s06": {
+      "kept": {
+        "key": "s06",
+        "try": 1,
+        "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/hos_001_s06_carbolic_spray_cover_live_v06.jpg",
+        "expect": [
+          "THE",
+          "CARBOLIC",
+          "SPRAY"
+        ],
+        "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/_qa_mint/s06_try1_decoded.png",
+        "account": null,
+        "credits_before": null,
+        "credits_after": null,
+        "credits_used": null,
+        "attached_refs": 3,
+        "qa": "KEEP",
+        "qa_reason": "768x1376 ratio=0.558 look=painted; cream=0.067 gold=0.123 teal=0.055 expect=THE/CARBOLIC/SPRAY; s06 gold=0.040 white=0.099",
+        "qa_meta": {
+          "w": 768,
+          "h": 1376,
+          "ratio": 0.5581,
+          "avg_rgb": [
+            101,
+            88,
+            72
+          ],
+          "look_guess": "painted",
+          "spell_heuristic": "cream=0.067 gold=0.123 teal=0.055 expect=THE/CARBOLIC/SPRAY",
+          "scene_heuristic": "s06 gold=0.040 white=0.099"
+        },
+        "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+        "pulled": "2026-09-30T13:11:56.076118+00:00"
+      },
+      "attempts": [
+        {
+          "key": "s06",
+          "try": 1,
+          "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/hos_001_s06_carbolic_spray_cover_live_v06.jpg",
+          "expect": [
+            "THE",
+            "CARBOLIC",
+            "SPRAY"
+          ],
+          "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/_qa_mint/s06_try1_decoded.png",
+          "account": null,
+          "credits_before": null,
+          "credits_after": null,
+          "credits_used": null,
+          "attached_refs": 3,
+          "qa": "KEEP",
+          "qa_reason": "768x1376 ratio=0.558 look=painted; cream=0.067 gold=0.123 teal=0.055 expect=THE/CARBOLIC/SPRAY; s06 gold=0.040 white=0.099",
+          "qa_meta": {
+            "w": 768,
+            "h": 1376,
+            "ratio": 0.5581,
+            "avg_rgb": [
+              101,
+              88,
+              72
+            ],
+            "look_guess": "painted",
+            "spell_heuristic": "cream=0.067 gold=0.123 teal=0.055 expect=THE/CARBOLIC/SPRAY",
+            "scene_heuristic": "s06 gold=0.040 white=0.099"
+          },
+          "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+          "pulled": "2026-09-30T13:11:56.076118+00:00"
+        }
+      ],
+      "status": "KEEP"
+    }
+  },
+  "note": "Ben Almost \u2014 teal middles ALL-CAPS chunky like live BEFORE/IN THE/TABLE",
+  "credits_before_batch": 62,
+  "account": "benoats@googlemail.com",
+  "credits_after_batch": null,
+  "finished_at": "2026-09-30T13:11:59.456316+00:00"
+}
