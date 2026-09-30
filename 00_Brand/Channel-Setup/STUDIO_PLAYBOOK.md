@@ -241,7 +241,7 @@ HOS 004 went up marked **Made for Kids**, which switched off comments, notificat
 - Test & Compare: "Title and thumbnail" pairs if offered, otherwise thumbnails only with the main title.
 - End screen (last 20 s): one related long + Subscribe, clear of the cream card's words.
 - **Cards: two**, none in the first minute, each at the moment the film touches another HOS film.
-- Playlist: "History of Science: How We Found Out", in film order.
+- Playlist: the existing **"How Did We Discover…? | History of Science"**, in film order.
 - Pinned comment: the open question, posted as the channel (at publish if Studio won't allow it while scheduled).
 - **After it goes public:** point the end screens of the older longs at the new one (keep Subscribe).
 
@@ -250,7 +250,7 @@ HOS 004 went up marked **Made for Kids**, which switched off comments, notificat
 **Every video, long or Short, including the back catalogue (30 Sep 2026):**
 - Paid promotion: **No** (never left blank).
 - Video language **and** title-and-description language: **English (United Kingdom)**. Caption certification: never aired on TV.
-- Education fields: Type = concept overview/explainer; Level = secondary; Exam/course = the GCSE subject (**GCSE Chemistry** for atoms and the periodic table, **GCSE Physics** for X-rays, **GCSE Biology** for germs); Academic system = United Kingdom if listed.
+- Education fields: Type = concept overview/explainer; **Academic system = England** (Studio has no "United Kingdom"; GCSE is England's system; never another country); Level = the closest England option to ages 14–16 if one saves; Exam/course = the GCSE subject if Studio lists it (**GCSE Chemistry** atoms and the periodic table, **GCSE Physics** X-rays, **GCSE Biology** germs), otherwise blank.
 - Automatic places **off**; automatic chapters and concepts on.
 - **Tags:** 5–8, only about this video's own subject (a Short's tags never carry another Short's topic). **Never another channel's or creator's name** (e.g. Crash Course, vlogbrothers): that breaks YouTube's misleading-metadata rule.
 - **Titles:** never a vidIQ or other tool suggestion with hashtags. A Short never uses a title the long is testing in Test & Compare.
@@ -258,6 +258,8 @@ HOS 004 went up marked **Made for Kids**, which switched off comments, notificat
 - **New Short ideas and titles** are checked against the **live channel's Shorts page**, not only `audits/SHORTS_LOG.md`.
 
 **Checked by code (30 Sep 2026):** `npm run lint:package` must PASS before any upload, schedule or metadata change (it reads `11_Upload-Package/PACKAGE_MANIFEST.json` and `10_Shorts/SHORTS_RELEASE.json`), and `npm run channel:audit` must show 0 errors after every Studio session and every Monday. The rules are in `07_Content-Ops/src/lib/hos-contract/rules.ts`; a GitHub check runs the lint on every PR that touches a package. Every week's Shorts are declared in `10_Shorts/SHORTS_RELEASE.json` (title, UTC air time, promotes, tags, audience, AI, Related) before any of them is uploaded.
+
+**Not readable through the API:** the AI disclosure (altered or synthetic content) setting. `channel:audit` can only warn when it's blank, so AI = Yes is confirmed by eye in Studio on every video, with the other Studio-only checks.
 
 **How to set them (agents):** one setting per save. After each save, re-read **Audience** and **Visibility** on the video. Screenshot the final Visibility, Audience, Test & Compare, end screen and cards, and record the video id, schedule and settings in the film's `production-status.md`. Ben checks Audience and Visibility on his phone before the day.
 
