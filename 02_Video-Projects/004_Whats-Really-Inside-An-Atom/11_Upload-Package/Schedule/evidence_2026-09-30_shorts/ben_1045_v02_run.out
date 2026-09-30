@@ -1,0 +1,315 @@
+2026-09-30T10:53:21+01:00 CHANNEL_GATE {'ok': True, 'url': 'https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg', 'snip': 'Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 2'}
+2026-09-30T10:53:21+01:00 === PRIVATIZE TUE ===
+2026-09-30T10:53:26+01:00 OPEN_EDIT CUu8k38iAMc url=https://studio.youtube.com/video/CUu8k38iAMc/edit
+2026-09-30T10:53:26+01:00 TUE before chip='Visibility Scheduled' title='The first X-ray showed a wedding ring'
+2026-09-30T10:53:29+01:00 TUE dialog radios=[{'t': "Yes, it's Made for Kids . Features like personalised ads and notifications won't be available on vid", 'checked': False}, {'t': "No, it's not 'Made for Kids'", 'checked': True}, {'t': 'Yes, restrict my video to viewers over 18', 'checked': False}, {'t': "No, don't restrict my video to viewers over 18 only", 'checked': True}]
+2026-09-30T10:53:30+01:00 TUE checked={'priv': None, 'sched': None, 'pub': None, 'unl': None}
+2026-09-30T10:53:38+01:00 TUE save={'dialog': None, 'confirm': 'Save', 'page_save': {'enabled': False, 'clicked': False}}
+2026-09-30T10:53:43+01:00 OPEN_EDIT CUu8k38iAMc url=https://studio.youtube.com/video/CUu8k38iAMc/edit
+2026-09-30T10:53:43+01:00 TUE after chip='Visibility Scheduled' private_ok=False
+2026-09-30T10:53:47+01:00 === CONFIRM FRI ===
+2026-09-30T10:53:52+01:00 OPEN_EDIT 29bpGAI0wb8 url=https://studio.youtube.com/video/29bpGAI0wb8/edit
+2026-09-30T10:53:57+01:00 s01 chip='Visibility Scheduled' scheduled_ok=False aud_ok=True altered=True related=deferred_or_unset
+2026-09-30T10:53:57+01:00 === CONFIRM SUN ===
+2026-09-30T10:54:02+01:00 OPEN_EDIT TbMMJSRKC3U url=https://studio.youtube.com/video/TbMMJSRKC3U/edit
+2026-09-30T10:54:07+01:00 s02 chip='Visibility Scheduled' scheduled_ok=False aud_ok=True altered=True related=set
+2026-09-30T10:54:07+01:00 === RESCRAPE SHORTS ===
+2026-09-30T10:54:17+01:00 DONE ok=False tue=False fri=False sun=False
+{
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "started": "2026-09-30T10:53:17+01:00",
+  "tue_private": {
+    "title": "The first X-ray showed a wedding ring",
+    "chip_before": "Visibility Scheduled",
+    "url": "https://studio.youtube.com/video/CUu8k38iAMc/edit",
+    "open_via": "icon",
+    "dialog_radios": [
+      {
+        "t": "Yes, it's Made for Kids . Features like personalised ads and notifications won't be available on vid",
+        "checked": false
+      },
+      {
+        "t": "No, it's not 'Made for Kids'",
+        "checked": true
+      },
+      {
+        "t": "Yes, restrict my video to viewers over 18",
+        "checked": false
+      },
+      {
+        "t": "No, don't restrict my video to viewers over 18 only",
+        "checked": true
+      }
+    ],
+    "radio": "",
+    "checked_before_save": {
+      "priv": null,
+      "sched": null,
+      "pub": null,
+      "unl": null
+    },
+    "retry_text_click_err": "Locator.click: Timeout 3000ms exceeded.\nCall log:\n  - waiting for get_by_text(re.compile(r\"^Private$\")).first\n",
+    "save": {
+      "dialog": null,
+      "confirm": "Save",
+      "page_save": {
+        "enabled": false,
+        "clicked": false
+      }
+    },
+    "chip_after": "Visibility Scheduled",
+    "private_ok": false,
+    "audience": {
+      "yes_checked": null,
+      "no_checked": true,
+      "banner": true,
+      "radios": [
+        {
+          "label": "No, it's not 'Made for Kids'",
+          "checked": true,
+          "kidsYes": false,
+          "kidsNo": true,
+          "via": "own"
+        }
+      ],
+      "ok_not_kids": true,
+      "fail_kids": false
+    },
+    "altered": {
+      "radios": [
+        {
+          "label": "Yes, AI was used",
+          "checked": true,
+          "isNo": false,
+          "isYes": true
+        },
+        {
+          "label": "No, AI wasn't used",
+          "checked": false,
+          "isNo": true,
+          "isYes": false
+        }
+      ],
+      "no": false,
+      "yes": true,
+      "section": "AI use"
+    },
+    "audience_not_kids": true,
+    "altered_yes": true,
+    "chip_final": "Visibility Scheduled"
+  },
+  "fri": {
+    "slot": "s01",
+    "id": "29bpGAI0wb8",
+    "title": "How small can you cut gold?",
+    "visibility_chip": "Visibility Scheduled",
+    "url": "https://studio.youtube.com/video/29bpGAI0wb8/edit",
+    "date_ok": false,
+    "time_ok": false,
+    "scheduled_ok": false,
+    "audience": {
+      "yes_checked": null,
+      "no_checked": true,
+      "banner": true,
+      "radios": [
+        {
+          "label": "No, it's not 'Made for Kids'",
+          "checked": true,
+          "kidsYes": false,
+          "kidsNo": true,
+          "via": "own"
+        }
+      ],
+      "ok_not_kids": true,
+      "fail_kids": false
+    },
+    "audience_not_kids": true,
+    "altered": {
+      "radios": [
+        {
+          "label": "Yes, AI was used",
+          "checked": true,
+          "isNo": false,
+          "isYes": true
+        },
+        {
+          "label": "No, AI wasn't used",
+          "checked": false,
+          "isNo": true,
+          "isYes": false
+        }
+      ],
+      "no": false,
+      "yes": true,
+      "section": "AI use"
+    },
+    "altered_yes": true,
+    "related": {
+      "line": "Related video",
+      "window": "Related video None Subtitles",
+      "set": true,
+      "title": null,
+      "id_hint": null
+    },
+    "related_status": "deferred_or_unset",
+    "ok": false
+  },
+  "sun": {
+    "slot": "s02",
+    "id": "TbMMJSRKC3U",
+    "title": "He said every eighth element repeats",
+    "visibility_chip": "Visibility Scheduled",
+    "url": "https://studio.youtube.com/video/TbMMJSRKC3U/edit",
+    "date_ok": false,
+    "time_ok": false,
+    "scheduled_ok": false,
+    "audience": {
+      "yes_checked": null,
+      "no_checked": true,
+      "banner": true,
+      "radios": [
+        {
+          "label": "No, it's not 'Made for Kids'",
+          "checked": true,
+          "kidsYes": false,
+          "kidsNo": true,
+          "via": "own"
+        }
+      ],
+      "ok_not_kids": true,
+      "fail_kids": false
+    },
+    "audience_not_kids": true,
+    "altered": {
+      "radios": [
+        {
+          "label": "Yes, AI was used",
+          "checked": true,
+          "isNo": false,
+          "isYes": true
+        },
+        {
+          "label": "No, AI wasn't used",
+          "checked": false,
+          "isNo": true,
+          "isYes": false
+        }
+      ],
+      "no": false,
+      "yes": true,
+      "section": "AI use"
+    },
+    "altered_yes": true,
+    "related": {
+      "line": "Related video",
+      "window": "Related video How Did We Discover the Periodic Table? Subtitles",
+      "set": true,
+      "title": "How Did We Discover the Periodic Table?",
+      "id_hint": "AL_-qlWko_g"
+    },
+    "related_status": "set",
+    "ok": false
+  },
+  "shorts_count": 16,
+  "shorts": [
+    {
+      "id": "CUu8k38iAMc",
+      "title": "The first X-ray showed a wedding ring",
+      "visibility": "Scheduled",
+      "date": "20 Oct 2026"
+    },
+    {
+      "id": "TbMMJSRKC3U",
+      "title": "He said every eighth element repeats",
+      "visibility": "Scheduled",
+      "date": "18 Oct 2026"
+    },
+    {
+      "id": "29bpGAI0wb8",
+      "title": "How small can you cut gold?",
+      "visibility": "Scheduled",
+      "date": "16 Oct 2026"
+    },
+    {
+      "id": "zI_eD3vFWmE",
+      "title": "The first X-ray showed a wedding ring",
+      "visibility": "Public",
+      "date": "27 Sept 2026"
+    },
+    {
+      "id": "xvanpsLeADE",
+      "title": "How did R\u00f6ntgen see bones without cutting",
+      "visibility": "Public",
+      "date": "26 Sept 2026"
+    },
+    {
+      "id": "oowAOWTBoq0",
+      "title": "How X-rays Were Discovered by Accident",
+      "visibility": "Public",
+      "date": "25 Sept 2026"
+    },
+    {
+      "id": "LanTHJckYx8",
+      "title": "What other table has empty chairs?",
+      "visibility": "Public",
+      "date": "22 Sept 2026"
+    },
+    {
+      "id": "nba0-f7PPeU",
+      "title": "Why tellurium sat before iodine",
+      "visibility": "Public",
+      "date": "21 Sept 2026"
+    },
+    {
+      "id": "CnHwX1L9XHg",
+      "title": "Gallium sat where the table said",
+      "visibility": "Public",
+      "date": "20 Sept 2026"
+    },
+    {
+      "id": "nFQRWmpulTQ",
+      "title": "He predicted a metal before it was found",
+      "visibility": "Public",
+      "date": "19 Sept 2026"
+    },
+    {
+      "id": "uU12JA5rMWg",
+      "title": "The periodic table's empty chairs",
+      "visibility": "Public",
+      "date": "18 Sept 2026"
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "title": "A flask that proved germs come from outside",
+      "visibility": "Public",
+      "date": "6 Sept 2026"
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "title": "Invisible life is still everywhere",
+      "visibility": "Public",
+      "date": "6 Sept 2026"
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "title": "Germs hitch a ride on you",
+      "visibility": "Public",
+      "date": "6 Sept 2026"
+    },
+    {
+      "id": "iqToagXnjX0",
+      "title": "Microbes in a drop of pond water",
+      "visibility": "Public",
+      "date": "6 Sept 2026"
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "title": "Germs don't cast a shadow",
+      "visibility": "Public",
+      "date": "6 Sept 2026"
+    }
+  ],
+  "ended": "2026-09-30T10:54:17+01:00",
+  "ok": false
+}

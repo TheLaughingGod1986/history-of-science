@@ -1,0 +1,186 @@
+{
+  "texts": [
+    {
+      "t": "Visibility Scheduled",
+      "tag": "DIV",
+      "y": 897,
+      "x": 992
+    },
+    {
+      "t": "Visibility Scheduled",
+      "tag": "YTCP-VIDEO-METADATA-VISIBILITY",
+      "y": 897,
+      "x": 992
+    },
+    {
+      "t": "Visibility Scheduled",
+      "tag": "DIV",
+      "y": 898,
+      "x": 993
+    },
+    {
+      "t": "Visibility",
+      "tag": "DIV",
+      "y": 906,
+      "x": 1005
+    },
+    {
+      "t": "Scheduled",
+      "tag": "DIV",
+      "y": 922,
+      "x": 1005
+    },
+    {
+      "t": "Scheduled",
+      "tag": "DIV",
+      "y": 922,
+      "x": 1037
+    },
+    {
+      "t": "Save or publish Schedule Schedule as public 20 Oct 2026 Time zone Video is private before publishing Done",
+      "tag": "TP-YT-PAPER-DIALOG",
+      "y": 298,
+      "x": 992
+    },
+    {
+      "t": "Save or publish Schedule Schedule as public 20 Oct 2026 Time zone Video is private before publishing",
+      "tag": "YTCP-VIDEO-VISIBILITY-SELECT",
+      "y": 298,
+      "x": 992
+    },
+    {
+      "t": "Save or publish",
+      "tag": "DIV",
+      "y": 318,
+      "x": 1016
+    },
+    {
+      "t": "Save or publish",
+      "tag": "DIV",
+      "y": 323,
+      "x": 1037
+    },
+    {
+      "t": "Save or publish",
+      "tag": "DIV",
+      "y": 333,
+      "x": 1037
+    },
+    {
+      "t": "Save or publish",
+      "tag": "P",
+      "y": 345,
+      "x": 1037
+    },
+    {
+      "t": "Schedule Schedule as public 20 Oct 2026 Time zone Video is private before publishing",
+      "tag": "DIV",
+      "y": 410,
+      "x": 1016
+    },
+    {
+      "t": "Schedule",
+      "tag": "DIV",
+      "y": 415,
+      "x": 1037
+    },
+    {
+      "t": "Schedule",
+      "tag": "P",
+      "y": 427,
+      "x": 1037
+    },
+    {
+      "t": "Schedule as public 20 Oct 2026 Time zone Video is private before publishing",
+      "tag": "DIV",
+      "y": 463,
+      "x": 1037
+    },
+    {
+      "t": "Schedule as public",
+      "tag": "P",
+      "y": 463,
+      "x": 1037
+    },
+    {
+      "t": "20 Oct 2026 Time zone Video is private before publishing",
+      "tag": "YTCP-VISIBILITY-SCHEDULER",
+      "y": 493,
+      "x": 1037
+    },
+    {
+      "t": "20 Oct 2026 Time zone Video is private before publishing",
+      "tag": "DIV",
+      "y": 493,
+      "x": 1037
+    },
+    {
+      "t": "Video is private before publishing",
+      "tag": "DIV",
+      "y": 551,
+      "x": 1037
+    },
+    {
+      "t": "private",
+      "tag": "B",
+      "y": 553,
+      "x": 1090
+    },
+    {
+      "t": "Done",
+      "tag": "DIV",
+      "y": 609,
+      "x": 992
+    },
+    {
+      "t": "Done",
+      "tag": "YTCP-BUTTON",
+      "y": 617,
+      "x": 1536
+    },
+    {
+      "t": "Done",
+      "tag": "YTCP-BUTTON-SHAPE",
+      "y": 617,
+      "x": 1536
+    },
+    {
+      "t": "Done",
+      "tag": "BUTTON",
+      "y": 617,
+      "x": 1536
+    },
+    {
+      "t": "Done",
+      "tag": "DIV",
+      "y": 617,
+      "x": 1552
+    }
+  ],
+  "radios": [
+    {
+      "t": "Yes, it's Made for Kids . Features like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that ",
+      "checked": false,
+      "y": 1254,
+      "x": 274
+    },
+    {
+      "t": "No, it's not 'Made for Kids'",
+      "checked": true,
+      "y": 1288,
+      "x": 274
+    }
+  ],
+  "buttons": [
+    {
+      "t": "Save",
+      "y": 81,
+      "dis": true
+    },
+    {
+      "t": "Done",
+      "y": 617,
+      "dis": true
+    }
+  ]
+}
