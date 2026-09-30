@@ -208,7 +208,8 @@ def pill_text(page) -> str:
     )
 
 
-def _pill_is_image_9x16(pill: str) -> bool:
+def _pill_is_image_tall(pill: str) -> bool:
+    """True for Image/Nano Banana with tall ratio (9:16 preferred, 3:4 OK to crop)."""
     if not pill:
         return False
     image_ok = bool(re.search(r"Nano Banana|Banana|\bImage\b", pill, re.I))
@@ -216,7 +217,13 @@ def _pill_is_image_9x16(pill: str) -> bool:
         r"Banana|Nano", pill, re.I
     ):
         return False
-    ratio_ok = bool(re.search(r"9:16|crop_9_16|9\s*[:×x]\s*16", pill, re.I))
+    ratio_ok = bool(
+        re.search(
+            r"9:16|crop_9_16|9\s*[:×x]\s*16|3:4|crop_portrait|3\s*[:×x]\s*4",
+            pill,
+            re.I,
+        )
+    )
     return image_ok and ratio_ok
 
 
@@ -228,8 +235,9 @@ def select_image_9x16(page) -> None:
             break
         page.wait_for_timeout(400)
     print(f"  pill before={pill0!r}", flush=True)
-    if _pill_is_image_9x16(pill0):
-        print("  already Image/Nano Banana 9:16 — skip settings", flush=True)
+    # Prefer 9:16, but accept 3:4 portrait — do NOT reopen settings (clears chips).
+    if _pill_is_image_tall(pill0):
+        print("  already Image/Nano Banana tall (9:16 or 3:4) — skip settings", flush=True)
         return
     flow._open_prompt_settings_pill(page)
     page.wait_for_timeout(900)
@@ -247,19 +255,22 @@ def select_image_9x16(page) -> None:
         }"""
     )
     page.wait_for_timeout(600)
-    # 9:16 ratio
+    # Prefer 9:16, else 3:4
     clicked = page.evaluate(
         """() => {
           for (const b of document.querySelectorAll('button,[role=radio],[role=option]')) {
             const t = ((b.innerText||'')+' '+(b.getAttribute('aria-label')||'')).trim();
             if (/crop_9_16|\\b9:16\\b/.test(t)) { b.click(); return t.slice(0,60); }
           }
+          for (const b of document.querySelectorAll('button,[role=radio],[role=option]')) {
+            const t = ((b.innerText||'')+' '+(b.getAttribute('aria-label')||'')).trim();
+            if (/crop_portrait|\\b3:4\\b/.test(t)) { b.click(); return t.slice(0,60); }
+          }
           return null;
         }"""
     )
     print(f"  ratio click={clicked!r}", flush=True)
     page.wait_for_timeout(400)
-    # x1 if visible
     page.evaluate(
         """() => {
           for (const b of document.querySelectorAll('button')) {
@@ -278,26 +289,6 @@ def select_image_9x16(page) -> None:
     print(f"  image-mode pill={pill!r}", flush=True)
     if pill and re.search(r"\bVideo\b", pill) and not re.search(r"Banana|Image", pill, re.I):
         raise RuntimeError(f"Failed to switch to Image mode: {pill!r}")
-    if pill and not re.search(r"9:16|crop_9_16", pill, re.I):
-        # Retry open + click 9:16 once
-        flow._open_prompt_settings_pill(page)
-        page.wait_for_timeout(700)
-        page.evaluate(
-            """() => {
-              for (const b of document.querySelectorAll('button,[role=radio]')) {
-                const t = ((b.innerText||'')+' '+(b.getAttribute('aria-label')||'')).trim();
-                if (/crop_9_16|\\b9:16\\b/.test(t)) { b.click(); return true; }
-              }
-              return false;
-            }"""
-        )
-        page.wait_for_timeout(400)
-        try:
-            page.keyboard.press("Escape")
-        except Exception:
-            pass
-        pill = pill_text(page)
-        print(f"  image-mode pill retry={pill!r}", flush=True)
 
 
 def ingredient_chip_count(page) -> int:
@@ -540,10 +531,176 @@ def gallery_media_srcs(page) -> set[str]:
     )
 
 
+def _download_selected_media(page, dest: Path) -> bool:
+    """Flow Image uses a Download media *menu* — open it, then pick Download."""
+    # Dismiss leftover backdrops
+    page.evaluate(
+        """() => {
+          for (const el of document.querySelectorAll('.cdk-overlay-backdrop')) {
+            try { el.click(); } catch (e) {}
+          }
+        }"""
+    )
+    page.wait_for_timeout(200)
+
+    menu_btn = page.get_by_role("button", name=re.compile(r"Download media", re.I))
+    if menu_btn.count() == 0:
+        menu_btn = page.locator('button[aria-label*="Download" i]')
+    if menu_btn.count() == 0:
+        print("  no Download media control", flush=True)
+        return False
+
+    try:
+        menu_btn.last.click(force=True, timeout=4000)
+        page.wait_for_timeout(500)
+    except Exception as e:
+        print(f"  Download media open warn: {e}", flush=True)
+        # force JS click
+        page.evaluate(
+            """() => {
+              const b=[...document.querySelectorAll('button')].find(x=>
+                /Download media/i.test((x.getAttribute('aria-label')||'')+(x.innerText||'')));
+              if (b) b.click();
+            }"""
+        )
+        page.wait_for_timeout(500)
+
+    # Menu items: Download / Download original / Save
+    item = page.get_by_role("menuitem", name=re.compile(r"Download", re.I))
+    if item.count() == 0:
+        item = page.locator('[role="menuitem"]:has-text("Download")')
+    try:
+        with page.expect_download(timeout=25000) as dl:
+            if item.count():
+                item.first.click(force=True, timeout=4000)
+            else:
+                # Click any visible Download text in open menu
+                clicked = page.evaluate(
+                    """() => {
+                      for (const el of document.querySelectorAll('[role=menuitem],button,a')) {
+                        const t=(el.innerText||'').trim();
+                        if (/^Download/i.test(t) && t.length < 40) { el.click(); return t; }
+                      }
+                      return null;
+                    }"""
+                )
+                if not clicked:
+                    raise RuntimeError("Download menu item missing")
+        d = dl.value
+        d.save_as(str(dest))
+        ok = dest.exists() and dest.stat().st_size > 40000
+        print(f"  menu download ok={ok} bytes={dest.stat().st_size if dest.exists() else 0}", flush=True)
+        return ok
+    except Exception as e:
+        print(f"  menu download fail: {e}", flush=True)
+        return False
+
+
+def _screenshot_largest_new_portrait(
+    page, dest: Path, before_srcs: set[str]
+) -> bool:
+    """Screenshot the largest on-screen NEW portrait img (avoids Download-menu wrong asset)."""
+    hit = page.evaluate(
+        """(beforeList) => {
+          const before = new Set(beforeList || []);
+          const imgs=[...document.querySelectorAll('img')].map(i=>{
+            const r=i.getBoundingClientRect();
+            const src=i.currentSrc||i.src||'';
+            return {src,w:r.width,h:r.height,y:r.y,x:r.x,area:r.width*r.height,
+                    portrait:r.height>r.width*1.05, neu: !!(src && !before.has(src))};
+          }).filter(i => i.w>90 && i.h>120 && i.y>70 && i.y<780 && i.portrait);
+          const neu = imgs.filter(i => i.neu);
+          const pool = neu.length ? neu : imgs;
+          pool.sort((a,b)=>b.area-a.area);
+          return pool[0]||null;
+        }""",
+        list(before_srcs),
+    )
+    if not hit:
+        return False
+    # Click to focus/enlarge, then screenshot the biggest portrait
+    try:
+        page.mouse.click(hit["x"] + hit["w"] / 2, hit["y"] + hit["h"] / 2)
+        page.wait_for_timeout(700)
+    except Exception:
+        pass
+    big = page.evaluate(
+        """(beforeList) => {
+          const before = new Set(beforeList || []);
+          const imgs=[...document.querySelectorAll('img')].map(i=>{
+            const r=i.getBoundingClientRect();
+            const src=i.currentSrc||i.src||'';
+            return {src,w:r.width,h:r.height,y:r.y,area:r.width*r.height,
+                    portrait:r.height>r.width*1.05, neu: !!(src && !before.has(src))};
+          }).filter(i => i.w>200 && i.h>280 && i.portrait);
+          const neu = imgs.filter(i => i.neu);
+          const pool = neu.length ? neu : imgs;
+          pool.sort((a,b)=>b.area-a.area);
+          return pool[0]||null;
+        }""",
+        list(before_srcs),
+    )
+    target = big or hit
+    src = target.get("src") or ""
+    if not src:
+        return False
+    try:
+        # Exact src match can break on query strings — use evaluate handle screenshot via coords crop
+        box = page.evaluate(
+            """(src) => {
+              for (const i of document.querySelectorAll('img')) {
+                const s=i.currentSrc||i.src||'';
+                if (s === src || (src && s.includes(src.slice(-40)))) {
+                  const r=i.getBoundingClientRect();
+                  if (r.width>80&&r.height>100)
+                    return {x:r.x,y:r.y,w:r.width,h:r.height};
+                }
+              }
+              return null;
+            }""",
+            src,
+        )
+        if not box:
+            return False
+        page.screenshot(
+            path=str(dest),
+            clip={
+                "x": max(0, box["x"]),
+                "y": max(0, box["y"]),
+                "width": box["w"],
+                "height": box["h"],
+            },
+        )
+        if dest.exists() and dest.stat().st_size > 30000:
+            from PIL import Image
+
+            im = Image.open(dest)
+            if im.size[1] > im.size[0] * 1.05 and im.size[0] >= 200:
+                print(
+                    f"  clipped screenshot {im.size[0]}x{im.size[1]} "
+                    f"from {int(box['w'])}x{int(box['h'])} tile",
+                    flush=True,
+                )
+                return True
+    except Exception as e:
+        print(f"  clip screenshot warn: {e}", flush=True)
+    # Fallback: Download media menu
+    if _download_selected_media(page, dest):
+        from PIL import Image
+
+        im = Image.open(dest)
+        # Reject known Explorer sheet size from style ref
+        if im.size == (1122, 1402):
+            print("  reject explorer-sheet download", flush=True)
+            return False
+        return im.size[1] > im.size[0] * 1.05
+    return False
+
+
 def download_newest_portrait(
     page, dest: Path, *, before_srcs: set[str], timeout_s: float = 240
 ) -> Path:
-    """Wait for a NEW portrait generation, then download it (never grab old 16:9)."""
+    """Wait for a NEW portrait generation, then capture it (never grab old 16:9)."""
     dest.parent.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
     saw_progress = False
@@ -564,86 +721,26 @@ def download_newest_portrait(
             saw_progress = True
         srcs = gallery_media_srcs(page)
         new_srcs = [s for s in srcs if s not in before_srcs]
-        # Portrait tiles in gallery (h > w)
-        hit = page.evaluate(
-            """(beforeList) => {
-              const before = new Set(beforeList || []);
-              const imgs=[...document.querySelectorAll('img')].map(i=>{
-                const r=i.getBoundingClientRect();
-                const src=i.currentSrc||i.src||'';
-                return {x:r.x+r.width/2,y:r.y+r.height/2,w:r.width,h:r.height,y0:r.y,x0:r.x,src};
-              }).filter(i => i.w>70 && i.h>90 && i.y0>80 && i.y0<700 && i.h > i.w * 1.05);
-              // Prefer NEW srcs, then left-most (newest often first)
-              const neu = imgs.filter(i => i.src && !before.has(i.src));
-              const pool = neu.length ? neu : [];
-              pool.sort((a,b)=>a.y0-b.y0 || a.x0-b.x0);
-              return pool[0]||null;
-            }""",
-            list(before_srcs),
-        )
         print(
-            f"  image poll new_srcs={len(new_srcs)} portrait_hit={'yes' if hit else 'no'} "
-            f"gen_hint={gen_hint} saw_progress={saw_progress} elapsed={int(time.time()-t0)}s",
+            f"  image poll new_srcs={len(new_srcs)} gen_hint={gen_hint} "
+            f"saw_progress={saw_progress} elapsed={int(time.time()-t0)}s",
             flush=True,
         )
-        # Do not download until we saw progress OR enough time + a new portrait src
-        ready = hit and (
-            saw_progress
-            or (time.time() - t0 > 12 and len(new_srcs) > 0)
-            or (time.time() - t0 > 25 and hit)
-        )
-        # If still generating, keep waiting
-        if gen_hint and not (hit and time.time() - t0 > 8 and len(new_srcs) > 0):
+        if gen_hint:
             page.wait_for_timeout(3000)
             continue
-        if ready and hit:
-            page.mouse.click(hit["x"], hit["y"])
-            page.wait_for_timeout(1200)
-            for label in ("Download", "download", "Save"):
-                btn = page.get_by_role("button", name=re.compile(label, re.I))
-                if btn.count():
-                    try:
-                        with page.expect_download(timeout=20000) as dl:
-                            btn.first.click(timeout=4000)
-                        d = dl.value
-                        d.save_as(str(dest))
-                        if dest.exists() and dest.stat().st_size > 40000:
-                            # Quick dimension gate before return
-                            from PIL import Image
-
-                            im = Image.open(dest)
-                            w, h = im.size
-                            if h > w * 1.05:
-                                return dest
-                            print(
-                                f"  reject landscape download {w}x{h} — keep polling",
-                                flush=True,
-                            )
-                            before_srcs = before_srcs | {hit.get("src") or ""}
-                    except Exception as e:
-                        print(f"  download via {label} failed: {e}", flush=True)
-            src = hit.get("src")
-            if src and str(src).startswith("http"):
+        ready = len(new_srcs) > 0 and (saw_progress or (time.time() - t0 > 35))
+        if ready:
+            for _ in range(2):
                 try:
-                    data = page.evaluate(
-                        """async (url) => {
-                          const r = await fetch(url, {credentials:'include'});
-                          const b = await r.arrayBuffer();
-                          const u = new Uint8Array(b); let s='';
-                          for (let i=0;i<u.length;i++) s+=String.fromCharCode(u[i]);
-                          return btoa(s);
-                        }""",
-                        src,
-                    )
-                    dest.write_bytes(base64.b64decode(data))
-                    if dest.stat().st_size > 40000:
-                        from PIL import Image
-
-                        im = Image.open(dest)
-                        if im.size[1] > im.size[0] * 1.05:
-                            return dest
-                except Exception as e:
-                    print(f"  fetch src fail: {e}", flush=True)
+                    page.keyboard.press("Escape")
+                except Exception:
+                    pass
+                page.wait_for_timeout(100)
+            if _screenshot_largest_new_portrait(page, dest, before_srcs):
+                return dest
+            # Mark these srcs seen so we don't tight-loop the same miss
+            before_srcs = before_srcs | set(new_srcs)
         page.wait_for_timeout(3500)
     try:
         page.screenshot(path=str(QA_DIR / "download_timeout.png"), full_page=False)
@@ -782,8 +879,8 @@ def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> d
     )
     if attached < 1 and chips < 1:
         raise RuntimeError("No style refs attached — abort try (would look film/wrong)")
-    # Ensure still Image 9:16 without clearing chips if already correct
-    if not _pill_is_image_9x16(pill_text(page)):
+    # Only reopen settings if we fell out of Image/tall — never for crop_portrait↔9:16
+    if not _pill_is_image_tall(pill_text(page)):
         select_image_9x16(page)
 
     armed = False
