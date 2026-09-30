@@ -313,14 +313,14 @@ Ben app check: auto thumb · no Altered · date looked like 30 Sep. CDP finish o
 |---|---|
 | Audience (Made for Kids) | **OK — No, not Made for Kids** (checked after every save). See Made for Kids section. Proof: `URGENT_audience_004_not_made_for_kids.png` |
 | Visibility | **OK — leave alone** — Scheduled **15 Oct 2026 18:00 UK**, **Set as Premiere OFF** (`aria-checked=false`, input `18:00`), title *What's Really Inside an Atom?*, private until then. Proof: `FINISH_visibility_15oct_1800_premiere_off.png` · `finish_v01c_91_visibility_final.png` |
-| Altered / AI use | **OK — No** (Ben 20:03 override; was Yes earlier). Proof: `BEN_growth_B4_altered_AFTER.png` |
-| Custom thumb A v04 | **Still not persisted** — Studio still shows **C / THE HIDDEN NUMBER** after A image-input uploads + Save. Ben: set A manually when Studio save is healthy. Proof: `finish_v01d_03_thumb_reload.png` |
-| Test & Compare | **Ineligible** on scheduled/private. Studio offered **none** (Ineligible). Details lists 2 titles (Atom · Periodic); third (Gold) not listed. Wanted Title+thumbnail×3 — cannot arm until eligible. No title test until after launch. Proof: `FINISH_test_and_compare.png` |
+| Altered / AI use | **OK — YES** (Ben **21:49 CHANGE OF ORDER** — overrides 20:03 No / CoS 21:02 No). “Yes, AI was used” — AI visuals + AI clone of Ben's voice. Audience re-checked not-kids after save. Proof: `ALTERED_YES_004_long_VERIFY.png` · `ALTERED_YES_2149_RESULT.json` |
+| Custom thumb A v04 | **OK — LIVE** (Ben **22:26**). Ended scrambled 2-slot T&C first → uploaded `hos_004_thumb_A_atom_live_v04.jpg` via Thumbnail image input → one Save → **Changes saved** → Content list shows **A (atom)**. Audience not-kids + Altered YES re-checked. Proof: `THUMB_A_2226_08_content_list.png` · `THUMB_A_2226_07_after_save.png` · `THUMB_A_2226_RESULT.json` · artifacts `BEN_2226_thumb_A_content_list.png` |
+| Test & Compare | **Cleared 2-slot** (Ben 22:26). Title+thumb / Thumbnail-only re-arm hit Studio **trouble saving** (one wait+retry, stop). No active 2-slot left; single title Atom. **Re-arm after 15 Oct public:** 3 pairs (A+Atom · C v06+Periodic · B v04+Gold) or Thumbnail-only A/B/C. Proof: `FORCE_2226_RESULT.json` · `FINISH_2226_tc_after_save.png` |
 | Description + chapters | **OK** — package description + chapters, no `/go/` links. |
 | Captions | **OK** — `hos_004_full_v02.en.srt` uploaded (toast “English subtitles uploaded”). Proof: `FINISH_captions.png` (`finish_v01e_13_captions_after.png`) |
-| End screen | **Blocked by Studio** — template places Subscribe + Video (last 20 s), Specific `AL_-qlWko_g` attempted; Save → **“problem in processing… edits were not saved”** + NaN; reopen empty. Re-set after processing settles. Proof: `finish_v01d_25_end_after_save.png` · `FINISH_endscreen.png` |
+| End screen | **Still blocked by Studio processing** (CoS 21:02). Modal opens; template **1 video, 1 subscribe** applies; Specific `AL_-qlWko_g` not persisted — Save → **“problem in processing… edits were not saved”** + NaN times; element left **Best for viewer** + Subscribe. **Re-set Specific 002 after processing settles / launch day.** Proof: `COS2102ES4_06_saved.png` · `COS_CHECKIN_2102_ENDSCREEN_V04.json` |
 | Pinned comment | **Blocked while Private/Scheduled** — Studio: “This account doesn't have permission to create comments.” Textarea disabled. Package text ready, no links. **Pin on launch day 15 Oct** after Public. Proof: `BEN_004_pin_blocked_permission.png` · `COMMENTS_V09_PIN.json` |
-| Shorts | **v05 done** — `gate_shorts_open.py check` **PASS** ×3 · iCloud `HOS UAT/004_…/10_Shorts/`. **STOP — Ben phone watch. Schedule nothing until he says yes.** |
+| Shorts | **s01/s03 v05 Ben PASS** (29 Sep 20:48). **s02 v05 FAIL** (shaky) → **s02 punch v06** rebuilt · `gate_shorts_open.py check` **PASS** · iCloud `HOS UAT/004_…/10_Shorts/hos_004_s02_every_eighth_punch_v06.mp4` · `WATCH_shorts_s02_v06.txt`. **STOP — Ben phone watch s02 v06. Schedule nothing until he OKs s02.** |
 | `.env` / API | **Not used.** Orbit never touched. |
 
 ## Made for Kids — URGENT audit (Ben 29 Sep 20:00)
@@ -337,7 +337,26 @@ Package says `madeForKids: false`. Studio had shown “Made for Kids” on `GHZD
 | **003 long `frP_YrNShsU` + 3 Shorts** | All **Not Made for Kids** | `urgent_kids_003_*.png` |
 | **Made-for-Kids hits** | **None** among verified videos | `URGENT_KIDS_AUDIT_V01.json` |
 
-**Policy (every upload from now on):** after each Studio save, open Details → Audience and confirm **“No, it's not made for kids”** before end screen / pin / other finish steps. End screens and pinned comments do not work on kids’ videos — Audience first.
+**Policy (every upload from now on):**
+1. **Altered / synthetic content = YES** (“Yes, AI was used”) — Ben 21:49 (AI visuals + AI voice clone). One setting per save.
+2. After **every** Studio save, re-check Audience = **“No, it's not made for kids”** (named selectors only — never broad “first Yes”).
+End screens and pinned comments do not work on kids’ videos — Audience first.
+
+## Altered / AI use = YES — Ben 21:49 CHANGE OF ORDER
+
+Overrides Ben 20:03 “Altered content: No” and CoS 21:02 note to set No. Reason: AI-generated visuals and an AI clone of Ben's voice.
+
+| Video | Result | Audience after |
+|---|---|---|
+| **004 long `GHZDsiH7L7A`** | **YES** (“Yes, AI was used”) | not Made for Kids |
+| **001 long `_C92tIJCk8A`** | **YES** (already Yes) | not Made for Kids |
+| **002 long `AL_-qlWko_g`** | **YES** | not Made for Kids |
+| **003 long `frP_YrNShsU`** | **YES** | not Made for Kids |
+| **002 Shorts** (5) | **YES** ×5 | not Made for Kids |
+| **003 Shorts** (3) | **YES** ×3 | not Made for Kids |
+| **001 Shorts** (5) | **Studio Oops** on all edit URLs — **not settable via Details** (same as kids audit). Retry after Studio fixes edit pages. | n/a |
+
+CDP `:9460` · named radio `Yes, AI was used` · one save · Audience re-read. JSON: `ALTERED_YES_2149_RESULT.json` · `ALTERED_YES_2149_001SHORTS_RETRY.json`. Script: `_ben_2149_altered_yes_v01.py`.
 
 JSON: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/URGENT_KIDS_AUDIT_V01.json` · `URGENT_KIDS_FIX_V02.json` · `URGENT_CHANNEL_ADVANCED_V03.json`
 
@@ -363,6 +382,20 @@ Summary: `11_Upload-Package/Schedule/evidence_2026-09-29_studio/COMMENTS_BEN_200
 
 Ben’s full growth-settings list. Overrides: **(a) Altered/AI use = NO** (not Yes); **(b) channel Audience change authorised** (record before). CDP `:9460` HOS only. Summary JSON: `GROWTH_ALL_RESULT.json` · `CHANNEL_META.json` key `studio_growth_settings_2026-09-29`.
 
+### CoS check-in 21:02 (30 Sep) — live re-verify
+
+Ben re-sent the growth order unchanged. Live CDP pass with **named selectors only** (no “first Yes”); Audience re-read after every save.
+
+| Check | Result | Proof |
+|---|---|---|
+| **Audience** | **No, it's not 'Made for Kids'** (checked) + banner | `COS2102_B1_audience.png` · `COS_CHECKIN_2102_RESULT.json` |
+| **AI use / Altered** | Was No at 21:02 — **superseded by Ben 21:49 → YES** (see Altered section) | `ALTERED_YES_004_long_VERIFY.png` |
+| **Visibility** | Scheduled **15 Oct**; Premiere **OFF** | `COS2102_B2_visibility.png` |
+| **T&C** | Was Ineligible 2-slot — **cleared Ben 22:26**; re-arm blocked by Studio trouble saving (retry once). Re-arm after public | `FORCE_2226_RESULT.json` · `THUMB_A_2226_RESULT.json` |
+| **End screen Specific 002** | **Blocked** — processing error + NaN (template Subscribe ok; video stuck Best for viewer) | `COS2102ES4_06_saved.png` |
+| **Selector policy** | aria-label / exact own-text for kids + AI radios; one control per save | `_cos_checkin_2102_growth_fix_v01.py` |
+| **Short s02 v06** | Already delivered — gate PASS · iCloud · STOP phone watch | `SHORTS_PUNCH_INDEX_s02_v06.json` |
+
 ### A — Channel settings
 
 | Item | Result | Proof |
@@ -379,13 +412,13 @@ Ben’s full growth-settings list. Overrides: **(a) Altered/AI use = NO** (not Y
 |---|---|---|
 | **B1 Audience** | Not Made for Kids; Comments/Notifications disabled notices **gone** | `BEN_growth_B1_audience.png` |
 | **B2 Visibility** | **Scheduled 15 Oct 2026 18:00**; **Set as Premiere OFF**; private until then | `BEN_growth_B2_visibility_PROOF.png` |
-| **B3 Details** | Title Atom; package description+chapters (no `/go/`); thumb A upload attempted; tags set | `BEN_growth_B3_details.png` |
-| **B4 AI use / Altered** | **No** (“No, AI wasn't used” / not altered) — **overrides earlier Yes** | `BEN_growth_B4_altered_AFTER.png` |
+| **B3 Details** | Title Atom; package description+chapters (no `/go/`); **thumb A v04 LIVE** (Ben 22:26) | `THUMB_A_2226_08_content_list.png` · `BEN_growth_B3_details.png` |
+| **B4 AI use / Altered** | **YES** (“Yes, AI was used”) — Ben **21:49** overrides 20:03/21:02 No; re-confirmed after thumb A | `FORCE_2226_RESULT.json` · `ALTERED_YES_004_long_VERIFY.png` |
 | **B5 Subtitles** | English present / upload path used (`hos_004_full_v02.en.srt`) | `BEN_growth_B5_subtitles_AFTER.png` |
-| **B6 End screen** | **Partial** — Studio still flaky (processing); re-set if empty | `BEN_growth_B6_endscreen_AFTER.png` |
+| **B6 End screen** | **Blocked** — processing error; Specific 002 not saved (Subscribe template only) | `COS2102ES4_06_saved.png` |
 | **B7 Cards** | Attempted ~1:30→002 + ~6:00→003; verify in Studio | `BEN_growth_B7_cards_AFTER.png` |
 | **B8 Playlist** | Create/add attempted for “History of Science: How We Found Out”; Studio **Oops** on playlist page after — **re-check manually** | `BEN_growth_B8_playlist_AFTER.png` |
-| **B9 Test & Compare** | **Ineligible** (scheduled); mode noted Thumbnail / titles listed | `BEN_growth_B9_tc_AFTER.png` |
+| **B9 Test & Compare** | **2-slot cleared** (Ben 22:26). Re-arm blocked by Studio trouble saving after one retry. **After 15 Oct public:** 3 pairs or Thumbnail-only | `FORCE_2226_RESULT.json` |
 | **B10 Pin** | **Blocked** while Private/Scheduled — do **15 Oct 18:05** | `BEN_growth_B10_pin.png` |
 
 ### C — Older films
@@ -397,9 +430,21 @@ Ben’s full growth-settings list. Overrides: **(a) Altered/AI use = NO** (not Y
 | 001 Shorts edit Oops | `8uBR-9oxeWs` · `YX2UR1u-JCQ` · `Fnb3p81u-wY` · `vpuRgKXtFlY` · `Lcmh5y2KMQM` — unverified via edit |
 | C4 end screens → 004 | **Deferred** until after 15 Oct 18:05 |
 
-### D — Shorts
+### D — Shorts — **SCHEDULED** (Ben 30 Sep 09:02 · V06 OK)
 
-**Not scheduled.** `gate_shorts_open.py check` **PASS** ×3 (v05). iCloud `HOS UAT/004_…/10_Shorts/` has v05. **STOP for Ben phone watch.** Schedule Fri 16 / Sun 18 / Tue 20 Oct 11:30 UK only after his yes (after 004 public).
+All three Ben-PASSED cuts uploaded PRIVATE + scheduled on `@HistoryOfScienceYT` only. No Premiere. No Replace. No publish-now. No `/go/`. No pinned comment.
+
+| Slot | Cut | Id | Schedule (UK) | Related | Cover | Proof |
+|---|---|---|---|---|---|---|
+| s01 How Small | v05 | **`29bpGAI0wb8`** | **Fri 16 Oct 2026 11:30** | **004 `GHZDsiH7L7A` DEFERRED** (Studio won't accept while 004 still scheduled) → retry **15 Oct 18:05** | `10_Shorts/covers_final/hos_004_s01_how_small_cover_final.jpg` · HOW SMALL? | `BEN_0902_s01_scheduled_list.png` · `BEN_0902_s01_final_edit.png` |
+| s02 Every Eighth | v06 | **`TbMMJSRKC3U`** | **Sun 18 Oct 2026 11:30** | **002 `AL_-qlWko_g` SET** | `…/hos_004_s02_every_eighth_cover_final.jpg` · EVERY EIGHTH? | `BEN_0902_s02_list.png` · `BEN_0902_s02_final_edit.png` |
+| s03 Her Ring | v05 | **`CUu8k38iAMc`** | **Tue 20 Oct 2026 11:30** | **003 `frP_YrNShsU` SET** | `…/hos_004_s03_her_ring_cover_final.jpg` · HER RING | `BEN_0902_s03_list.png` · `BEN_0902_s03_final_edit.png` |
+
+**Per Short settings (verified):** Audience **not Made for Kids** · Altered/AI **YES** · Category **Education** (present) · Comments **not disabled** · Remixing ON (channel Advanced default) · covers painted live-002 house look §4 · preview sheet in iCloud `HOS UAT/004_…/10_Shorts/`.
+
+**gate_shorts_open.py add:** all three registered `status=scheduled` in `audits/shorts_open_library/`. **SHORTS_LOG:** rows added.
+
+**Evidence:** `11_Upload-Package/Schedule/evidence_2026-09-30_shorts/` · artifacts `BEN_0902_*`.
 
 ## Channel split — HOS only (Ben reminder 29 Sep 2026)
 
@@ -415,9 +460,19 @@ Ben’s full growth-settings list. Overrides: **(a) Altered/AI use = NO** (not Y
 
 - **Long upload:** **DONE via Studio** — id **`GHZDsiH7L7A`** · Scheduled **15 Oct 2026 18:00 UK** · **Premiere OFF** · Audience **not Made for Kids** · no `.env`. Records: `PACKAGE_UPLOAD_RESULT_2026-09-29.json` · `PACKAGE_MANIFEST.json` (`youtubeId`, `premiere: false`).
 - **Superseded (kept):** `UPLOAD_BLOCKED_ENV_ABSENT_2026-09-29.json` · `DRY_RUN_NOT_CLEAN_ENV_ABSENT_2026-09-29.json` → status `SUPERSEDED`.
-- **FINISH Studio:** Visibility + Audience + description/chapters + captions **OK**. Thumb A / T&C / end screen / pin still need Ben or launch-day (Studio Ineligible / processing error / private). Screenshots for Ben below.
-- **Thumbs (files):** A v04 · B v04 · **C v06** — Ben PASS. **Live Studio still C**.
-- **Shorts v05:** `gate_shorts_open.py check` **PASS** ×3 · iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/` · **STOP phone watch**. Schedule nothing until Ben yes.
+- **FINISH Studio:** Visibility + Audience + description/chapters + captions **OK**. **Thumb A LIVE** (Ben 22:26). T&C re-arm / end screen / pin still launch-day or after Studio save healthy.
+- **Thumbs (files):** A v04 · B v04 · **C v06** — Ben PASS. **Live Studio main thumb = A (atom v04)** — Content list confirmed.
+- **Shorts:** **SCHEDULED** (Ben 09:02). s01 `29bpGAI0wb8` Fri 16 Oct 11:30 · s02 `TbMMJSRKC3U` Sun 18 Oct 11:30 · s03 `CUu8k38iAMc` Tue 20 Oct 11:30. Related s01→004 deferred to 15 Oct 18:05.
+
+### Ben 22:26 — main thumb A NOW (30 Sep)
+
+| Step | Result | Proof |
+|---|---|---|
+| End 2-slot T&C holding thumb | **Ended** (Continue delete → Cancel new wizard); still_two=False | `THUMB_A_2226_01_before_tc.png` · `THUMB_A_2226_04_after_tc_clear.png` |
+| Upload A + one Save | **Changes saved** (no trouble) | `THUMB_A_2226_07_after_save.png` |
+| Content list shows A | **Confirmed** — atom / “WHAT'S REALLY INSIDE AN ATOM?” (not HIDDEN NUMBER) | `THUMB_A_2226_08_content_list.png` · `BEN_2226_thumb_A_content_list.png` |
+| Audience + Altered | **not Made for Kids** · **Yes, AI was used** | `FORCE_2226_RESULT.json` |
+| Re-arm T&C | **Blocked** — Title+thumb / Thumbnail-only → Studio trouble saving; waited 2–3 min, retried once, stopped. No 2-slot left. Re-arm after 15 Oct public | `FINISH_2226_tc_after_save.png` |
 
 ### Screenshots for Ben / CoS (exact paths)
 
@@ -435,6 +490,8 @@ Ben’s full growth-settings list. Overrides: **(a) Altered/AI use = NO** (not Y
 | Growth B1 Audience not kids | `…/BEN_growth_B1_audience.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B1_audience.png` |
 | Growth B4 AI use No | `…/BEN_growth_B4_altered_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B4_altered_AFTER.png` |
 | Growth B9 T&C Ineligible | `…/BEN_growth_B9_tc_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B9_tc_AFTER.png` |
+| Ben 22:26 thumb A Content list | `…/THUMB_A_2226_08_content_list.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_2226_thumb_A_content_list.png` |
+| Ben 22:26 thumb A Changes saved | `…/THUMB_A_2226_07_after_save.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_2226_thumb_A_changes_saved.png` |
 | Growth B6 end screen | `…/BEN_growth_B6_endscreen_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B6_endscreen_AFTER.png` |
 | Growth B7 cards | `…/BEN_growth_B7_cards_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B7_cards_AFTER.png` |
 | Growth B8 playlist | `…/BEN_growth_B8_playlist_AFTER.png` | `/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_growth_B8_playlist_AFTER.png` |

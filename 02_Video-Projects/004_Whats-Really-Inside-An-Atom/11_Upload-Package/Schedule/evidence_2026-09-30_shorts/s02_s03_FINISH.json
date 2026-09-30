@@ -1,0 +1,261 @@
+{
+  "started": "2026-09-30T09:48:33+01:00",
+  "shorts": [
+    {
+      "slot": "s02",
+      "title": "He said every eighth element repeats",
+      "id": "TbMMJSRKC3U",
+      "schedule": {
+        "after": {
+          "date": "18 Oct 2026",
+          "time": "00:00"
+        },
+        "ok": true
+      },
+      "chip": "Visibility Scheduled",
+      "ok": true,
+      "settings": {
+        "id": "TbMMJSRKC3U",
+        "slot": "s02",
+        "steps": [
+          "altered_yes",
+          "remixing_on"
+        ],
+        "hos": {
+          "ok": true,
+          "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+          "title": "Channel dashboard - YouTube Studio",
+          "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 2 days 22 hours\nRanking by views\n8 of 10\nViews\n8\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\n\nCreate your first post to start a conversation and get feedback from your community.\n\nCr"
+        },
+        "audience0": {
+          "yes_checked": null,
+          "no_checked": true,
+          "banner": true,
+          "radios": [
+            {
+              "label": "No, it's not 'Made for Kids'",
+              "checked": true,
+              "kidsYes": false,
+              "kidsNo": true,
+              "via": "own"
+            }
+          ],
+          "ok_not_kids": true,
+          "fail_kids": false
+        },
+        "ai_before": {
+          "radios": [
+            {
+              "label": "Yes, AI was used",
+              "checked": false,
+              "isNo": false,
+              "isYes": true
+            },
+            {
+              "label": "No, AI wasn't used",
+              "checked": false,
+              "isNo": true,
+              "isYes": false
+            }
+          ],
+          "no": false,
+          "yes": false,
+          "section": "AI use"
+        },
+        "altered_click": "^Yes, AI was used$",
+        "altered_save": {
+          "saved": true,
+          "audience": {
+            "yes_checked": null,
+            "no_checked": true,
+            "banner": true,
+            "radios": [
+              {
+                "label": "No, it's not 'Made for Kids'",
+                "checked": true,
+                "kidsYes": false,
+                "kidsNo": true,
+                "via": "own"
+              }
+            ],
+            "ok_not_kids": true,
+            "fail_kids": false
+          }
+        },
+        "altered": "set_yes",
+        "category": "already_or_present",
+        "comments": "already_on_or_default",
+        "remix_save": {
+          "saved": true,
+          "audience": {
+            "yes_checked": null,
+            "no_checked": true,
+            "banner": true,
+            "radios": [
+              {
+                "label": "No, it's not 'Made for Kids'",
+                "checked": true,
+                "kidsYes": false,
+                "kidsNo": true,
+                "via": "own"
+              }
+            ],
+            "ok_not_kids": true,
+            "fail_kids": false
+          }
+        },
+        "remixing": "set_allow",
+        "related_edit": "err:TimeoutError:Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator(\"tp-yt-paper-input input, input[type='text'], input[aria-label*='Search' i]\").first\n",
+        "audience_final": {
+          "yes_checked": null,
+          "no_checked": true,
+          "banner": true,
+          "radios": [
+            {
+              "label": "No, it's not 'Made for Kids'",
+              "checked": true,
+              "kidsYes": false,
+              "kidsNo": true,
+              "via": "own"
+            }
+          ],
+          "ok_not_kids": true,
+          "fail_kids": false
+        },
+        "chip": "Visibility Scheduled",
+        "ok": true
+      },
+      "listSnippet": "He said every eighth element repeats | He said every eighth element repeats Newlands lined the elements up and heard a pattern: every eighth repeats. Twenty-two years later, the Royal Society gave him the Davy Medal for it. Full film: How Did We Discover the Periodic Table? https://youtu.be/AL_-qlWko_g @HistoryOfScienceYT | \u2014 | Scheduled | 18 Oct 2026 | Sche",
+      "listScheduled": true
+    },
+    {
+      "slot": "s03",
+      "title": "The first X-ray showed a wedding ring",
+      "id": "CUu8k38iAMc",
+      "schedule": {
+        "after": {
+          "date": "20 Oct 2026",
+          "time": "00:00"
+        },
+        "ok": true
+      },
+      "chip": "Visibility Scheduled",
+      "ok": true,
+      "settings": {
+        "id": "CUu8k38iAMc",
+        "slot": "s03",
+        "steps": [
+          "altered_yes",
+          "remixing_on"
+        ],
+        "hos": {
+          "ok": true,
+          "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+          "title": "Channel dashboard - YouTube Studio",
+          "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 2 days 22 hours\nRanking by views\n8 of 10\nViews\n8\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\n\nCreate your first post to start a conversation and get feedback from your community.\n\nCr"
+        },
+        "audience0": {
+          "yes_checked": null,
+          "no_checked": true,
+          "banner": true,
+          "radios": [
+            {
+              "label": "No, it's not 'Made for Kids'",
+              "checked": true,
+              "kidsYes": false,
+              "kidsNo": true,
+              "via": "own"
+            }
+          ],
+          "ok_not_kids": true,
+          "fail_kids": false
+        },
+        "ai_before": {
+          "radios": [
+            {
+              "label": "Yes, AI was used",
+              "checked": false,
+              "isNo": false,
+              "isYes": true
+            },
+            {
+              "label": "No, AI wasn't used",
+              "checked": false,
+              "isNo": true,
+              "isYes": false
+            }
+          ],
+          "no": false,
+          "yes": false,
+          "section": "AI use"
+        },
+        "altered_click": "^Yes, AI was used$",
+        "altered_save": {
+          "saved": true,
+          "audience": {
+            "yes_checked": null,
+            "no_checked": true,
+            "banner": true,
+            "radios": [
+              {
+                "label": "No, it's not 'Made for Kids'",
+                "checked": true,
+                "kidsYes": false,
+                "kidsNo": true,
+                "via": "own"
+              }
+            ],
+            "ok_not_kids": true,
+            "fail_kids": false
+          }
+        },
+        "altered": "set_yes",
+        "category": "already_or_present",
+        "comments": "already_on_or_default",
+        "remix_save": {
+          "saved": true,
+          "audience": {
+            "yes_checked": null,
+            "no_checked": true,
+            "banner": true,
+            "radios": [
+              {
+                "label": "No, it's not 'Made for Kids'",
+                "checked": true,
+                "kidsYes": false,
+                "kidsNo": true,
+                "via": "own"
+              }
+            ],
+            "ok_not_kids": true,
+            "fail_kids": false
+          }
+        },
+        "remixing": "set_allow",
+        "related_edit": "err:TimeoutError:Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator(\"tp-yt-paper-input input, input[type='text'], input[aria-label*='Search' i]\").first\n",
+        "audience_final": {
+          "yes_checked": null,
+          "no_checked": true,
+          "banner": true,
+          "radios": [
+            {
+              "label": "No, it's not 'Made for Kids'",
+              "checked": true,
+              "kidsYes": false,
+              "kidsNo": true,
+              "via": "own"
+            }
+          ],
+          "ok_not_kids": true,
+          "fail_kids": false
+        },
+        "chip": "Visibility Scheduled",
+        "ok": true
+      },
+      "listSnippet": "The first X-ray showed a wedding ring | The first X-ray showed a wedding ring Bertha's hand. Soft tissue fades. Bone holds. And her wedding ring sits clear on the plate. Full film: How Did We Discover X-rays? https://youtu.be/frP_YrNShsU @HistoryOfScienceYT | \u2014 | Scheduled | 20 Oct 2026 | Scheduled | 0 | 0 | 0:27 | He said every eighth element repeats | He said every ",
+      "listScheduled": true
+    }
+  ],
+  "finished": "2026-09-30T09:51:42+01:00",
+  "ok": true
+}

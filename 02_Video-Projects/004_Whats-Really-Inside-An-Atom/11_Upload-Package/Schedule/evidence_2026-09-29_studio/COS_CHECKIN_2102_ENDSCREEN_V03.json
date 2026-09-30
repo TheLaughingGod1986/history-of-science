@@ -1,0 +1,98 @@
+{
+  "at": "2026-09-30T00:45:20",
+  "steps": [
+    {
+      "open": {
+        "x": 1168,
+        "y": 869,
+        "t": "End screen",
+        "score": 855
+      }
+    },
+    {
+      "template": null
+    },
+    {
+      "specific": null
+    },
+    {
+      "filled": null
+    },
+    {
+      "picked": null
+    },
+    {
+      "picked_id": null
+    },
+    "added_subscribe",
+    "save_disabled",
+    {
+      "save_find": {
+        "x": 1272.8515625,
+        "y": 99,
+        "t": "Save",
+        "score": 85
+      }
+    }
+  ],
+  "audience_0": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "after_snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bo",
+  "processing_error": false,
+  "has_002_title": true,
+  "has_subscribe": false,
+  "best_for_viewer": false,
+  "most_recent": false,
+  "specific_set": false,
+  "saved": true,
+  "ok": false,
+  "audience_final": {
+    "yes_checked": null,
+    "no_checked": true,
+    "banner": true,
+    "radios": [
+      {
+        "label": "No, it's not 'Made for Kids'",
+        "checked": true,
+        "kidsYes": false,
+        "kidsNo": true,
+        "via": "own"
+      }
+    ],
+    "ok_not_kids": true,
+    "fail_kids": false
+  },
+  "altered_final": {
+    "radios": [
+      {
+        "label": "Yes, AI was used",
+        "checked": false,
+        "isNo": false,
+        "isYes": true
+      },
+      {
+        "label": "No, AI wasn't used",
+        "checked": true,
+        "isNo": true,
+        "isYes": false
+      }
+    ],
+    "no": true,
+    "yes": false,
+    "section": "AI use"
+  }
+}

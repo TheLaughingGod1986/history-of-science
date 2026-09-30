@@ -1,0 +1,53 @@
+{
+  "related": {
+    "s01": {
+      "id": "29bpGAI0wb8",
+      "status": "deferred_15oct1805",
+      "related_id": "GHZDsiH7L7A"
+    },
+    "s02": {
+      "id": "TbMMJSRKC3U",
+      "status": "already_set",
+      "related_id": "AL_-qlWko_g",
+      "related_title": "How Did We Discover the Periodic Table?"
+    },
+    "s03": {
+      "id": "CUu8k38iAMc",
+      "status": "already_set",
+      "related_id": "frP_YrNShsU",
+      "related_title": "How Did We Discover X-rays?"
+    }
+  },
+  "verify": {
+    "s01": {
+      "id": "29bpGAI0wb8",
+      "chip": "Visibility Scheduled",
+      "audience_ok": true,
+      "altered_yes": true,
+      "related_title_present": false,
+      "related_deferred": true,
+      "education_present": false,
+      "comments_disabled": false
+    },
+    "s02": {
+      "id": "TbMMJSRKC3U",
+      "chip": "Visibility Scheduled",
+      "audience_ok": true,
+      "altered_yes": true,
+      "related_title_present": true,
+      "related_deferred": false,
+      "education_present": false,
+      "comments_disabled": false
+    },
+    "s03": {
+      "id": "CUu8k38iAMc",
+      "chip": "Visibility Scheduled",
+      "audience_ok": true,
+      "altered_yes": true,
+      "related_title_present": true,
+      "related_deferred": false,
+      "education_present": false,
+      "comments_disabled": false
+    }
+  }
+}
