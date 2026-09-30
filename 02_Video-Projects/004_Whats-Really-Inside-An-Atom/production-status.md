@@ -389,7 +389,7 @@ Ben re-sent the growth order unchanged. Live CDP pass with **named selectors onl
 | Check | Result | Proof |
 |---|---|---|
 | **Audience** | **No, it's not 'Made for Kids'** (checked) + banner | `COS2102_B1_audience.png` · `COS_CHECKIN_2102_RESULT.json` |
-| **AI use / Altered** | **No, AI wasn't used** (already No; left No) | `COS2102_B4_altered_AFTER.png` |
+| **AI use / Altered** | Was No at 21:02 — **superseded by Ben 21:49 → YES** (see Altered section) | `ALTERED_YES_004_long_VERIFY.png` |
 | **Visibility** | Scheduled **15 Oct**; Premiere **OFF** | `COS2102_B2_visibility.png` |
 | **T&C** | **Ineligible**; 2 titles still listed; Cancelled replace-dialog; **no new test started** | `COS2102_B9_tc_DIALOG.png` · `COS_CHECKIN_2102_REMAIN_RESULT.json` |
 | **End screen Specific 002** | **Blocked** — processing error + NaN (template Subscribe ok; video stuck Best for viewer) | `COS2102ES4_06_saved.png` |
