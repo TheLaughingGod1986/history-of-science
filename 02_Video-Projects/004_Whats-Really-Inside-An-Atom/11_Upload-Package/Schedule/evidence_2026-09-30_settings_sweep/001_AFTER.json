@@ -1,0 +1,66 @@
+{
+  "key": "001",
+  "id": "_C92tIJCk8A",
+  "phase": "APPLY",
+  "steps": [
+    {
+      "label": "audience_skip",
+      "radios": [
+        {
+          "lab": "Yes, it's Made for Kids . Features like personalised ads and notifications won't",
+          "aria": "false",
+          "checked": false
+        },
+        {
+          "lab": "No, it's not 'Made for Kids'",
+          "aria": "true",
+          "checked": true
+        }
+      ]
+    }
+  ],
+  "ts": "2026-09-30T15:29:26+01:00",
+  "audience_click": "already_or_missing",
+  "age_click": "already_or_missing",
+  "ai_click": "already_or_missing",
+  "comments_click": "already_or_missing",
+  "audience_final": [
+    {
+      "lab": "Yes, it's Made for Kids . Features like personalised ads and notifications won't",
+      "aria": "false",
+      "checked": false
+    },
+    {
+      "lab": "No, it's not 'Made for Kids'",
+      "aria": "true",
+      "checked": true
+    }
+  ],
+  "ai_final": [],
+  "age_final": [
+    {
+      "lab": "Yes, restrict my video to viewers over 18",
+      "aria": "false",
+      "checked": false
+    },
+    {
+      "lab": "No, don't restrict my video to viewers over 18 only",
+      "aria": "true",
+      "checked": true
+    }
+  ],
+  "chip": "Visibility Public",
+  "banner_not_kids": true,
+  "visibility_after": {
+    "opened": true,
+    "snip": " \n  \n  \n\n Close\n",
+    "premiere": false,
+    "premiere_on": false,
+    "premiere_boxes": [],
+    "visibility_public": false,
+    "visibility_private": false,
+    "visibility_unlisted": false,
+    "visibility_scheduled": false
+  },
+  "ok": true
+}

@@ -1,0 +1,59 @@
+{
+  "key": "001",
+  "id": "_C92tIJCk8A",
+  "titleWanted": "How Did We Discover Germs?",
+  "phase": "BEFORE",
+  "ts": "2026-09-30T15:28:49+01:00",
+  "url": "https://studio.youtube.com/video/_C92tIJCk8A/edit",
+  "title_ok": true,
+  "chip": "Visibility Public",
+  "notices": [
+    "age_restricted_notice",
+    "made_for_kids_mention"
+  ],
+  "audience_radios": [
+    {
+      "lab": "Yes, it's Made for Kids . Features like personalised ads and notifications won't",
+      "aria": "false",
+      "checked": false
+    },
+    {
+      "lab": "No, it's not 'Made for Kids'",
+      "aria": "true",
+      "checked": true
+    }
+  ],
+  "audience_banner_not_kids": true,
+  "made_for_kids": false,
+  "age_radios": [
+    {
+      "lab": "Yes, restrict my video to viewers over 18",
+      "aria": "false",
+      "checked": false
+    },
+    {
+      "lab": "No, don't restrict my video to viewers over 18 only",
+      "aria": "true",
+      "checked": true
+    }
+  ],
+  "age_restricted": false,
+  "ai_radios": [],
+  "premiere_word_on_details": false,
+  "visibility": {
+    "opened": true,
+    "snip": " \n  \n  \n\n Close\n",
+    "premiere": false,
+    "premiere_on": false,
+    "premiere_boxes": [],
+    "visibility_public": false,
+    "visibility_private": false,
+    "visibility_unlisted": false,
+    "visibility_scheduled": false
+  },
+  "analytics_url": "https://studio.youtube.com/video/_C92tIJCk8A/analytics/tab-reach/period-default",
+  "analytics_snip": "Video analytics\nSkip navigation\nAsk Studio\nCreate\nChannel content\n6:05\nYour video\nHow Did We Discover Germs?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo analytics\nAdvanced mode",
+  "traffic_lines": [
+    "Clips and Shorts"
+  ]
+}
