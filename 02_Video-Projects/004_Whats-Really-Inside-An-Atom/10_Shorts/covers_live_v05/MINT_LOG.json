@@ -1,0 +1,183 @@
+{
+  "started_at": "2026-09-30T12:09:29.145930+00:00",
+  "cdp": "http://127.0.0.1:9222",
+  "engine": "Flow Image / Nano Banana / 9:16 lettered covers",
+  "style_refs": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Shorts/hos_002_s03_gallium_cover_live_v02.jpg",
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Shorts/hos_002_s04_tellurium_cover_live_v02.jpg"
+  ],
+  "covers": {
+    "s01": {
+      "kept": null,
+      "attempts": [
+        {
+          "key": "s01",
+          "try": 1,
+          "out": null,
+          "expect": [
+            "HOW",
+            "so",
+            "SMALL?"
+          ],
+          "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v05/_qa_mint/s01_try1_decoded.png",
+          "account": "benoats@googlemail.com",
+          "credits_before": 62,
+          "credits_after": null,
+          "credits_used": null,
+          "attached_refs": 3,
+          "qa": "FAIL",
+          "qa_reason": "too small 378x678",
+          "qa_meta": {
+            "w": 378,
+            "h": 678,
+            "ratio": 0.5575
+          },
+          "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+          "pulled": "2026-09-30T12:10:31.085768+00:00"
+        },
+        {
+          "key": "s01",
+          "try": 2,
+          "out": null,
+          "expect": [
+            "HOW",
+            "so",
+            "SMALL?"
+          ],
+          "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v05/_qa_mint/s01_try2_decoded.png",
+          "account": null,
+          "credits_before": null,
+          "credits_after": null,
+          "credits_used": null,
+          "attached_refs": 3,
+          "qa": "FAIL",
+          "qa_reason": "too small 378x678",
+          "qa_meta": {
+            "w": 378,
+            "h": 678,
+            "ratio": 0.5575
+          },
+          "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+          "pulled": "2026-09-30T12:11:15.667868+00:00"
+        }
+      ],
+      "status": "FAIL"
+    },
+    "s02": {
+      "kept": null,
+      "attempts": [
+        {
+          "key": "s02",
+          "try": 1,
+          "out": null,
+          "expect": [
+            "EVERY",
+            "eighth",
+            "ELEMENT?"
+          ],
+          "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v05/_qa_mint/s02_try1_decoded.png",
+          "account": null,
+          "credits_before": null,
+          "credits_after": null,
+          "credits_used": null,
+          "attached_refs": 3,
+          "qa": "FAIL",
+          "qa_reason": "too small 378x678",
+          "qa_meta": {
+            "w": 378,
+            "h": 678,
+            "ratio": 0.5575
+          },
+          "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+          "pulled": "2026-09-30T12:11:59.592049+00:00"
+        },
+        {
+          "key": "s02",
+          "try": 2,
+          "out": null,
+          "expect": [
+            "EVERY",
+            "eighth",
+            "ELEMENT?"
+          ],
+          "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v05/_qa_mint/s02_try2_decoded.png",
+          "account": null,
+          "credits_before": null,
+          "credits_after": null,
+          "credits_used": null,
+          "attached_refs": 3,
+          "qa": "FAIL",
+          "qa_reason": "too small 378x678",
+          "qa_meta": {
+            "w": 378,
+            "h": 678,
+            "ratio": 0.5575
+          },
+          "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+          "pulled": "2026-09-30T12:12:40.506225+00:00"
+        }
+      ],
+      "status": "FAIL"
+    },
+    "s06": {
+      "kept": null,
+      "attempts": [
+        {
+          "key": "s06",
+          "try": 1,
+          "out": null,
+          "expect": [
+            "THE",
+            "carbolic",
+            "SPRAY"
+          ],
+          "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v05/_qa_mint/s06_try1_decoded.png",
+          "account": null,
+          "credits_before": null,
+          "credits_after": null,
+          "credits_used": null,
+          "attached_refs": 3,
+          "qa": "FAIL",
+          "qa_reason": "too small 378x678",
+          "qa_meta": {
+            "w": 378,
+            "h": 678,
+            "ratio": 0.5575
+          },
+          "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+          "pulled": "2026-09-30T12:13:24.486023+00:00"
+        },
+        {
+          "key": "s06",
+          "try": 2,
+          "out": null,
+          "expect": [
+            "THE",
+            "carbolic",
+            "SPRAY"
+          ],
+          "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v05/_qa_mint/s06_try2_decoded.png",
+          "account": null,
+          "credits_before": null,
+          "credits_after": null,
+          "credits_used": null,
+          "attached_refs": 3,
+          "qa": "FAIL",
+          "qa_reason": "too small 378x678",
+          "qa_meta": {
+            "w": 378,
+            "h": 678,
+            "ratio": 0.5575
+          },
+          "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+          "pulled": "2026-09-30T12:14:16.942100+00:00"
+        }
+      ],
+      "status": "FAIL"
+    }
+  },
+  "credits_before_batch": 62,
+  "account": "benoats@googlemail.com",
+  "credits_after_batch": null,
+  "finished_at": "2026-09-30T12:14:20.337935+00:00"
+}
