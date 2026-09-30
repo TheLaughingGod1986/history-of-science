@@ -292,7 +292,7 @@ def select_image_9x16(page) -> None:
 
 
 def ingredient_chip_count(page) -> int:
-    """Count Image-mode ingredient chips near the prompt (wider than Veo start frames)."""
+    """Count Image-mode ingredient chips near prompt (incl. expanded agent modal)."""
     return int(
         page.evaluate(
             """() => {
@@ -300,8 +300,11 @@ def ingredient_chip_count(page) -> int:
               return [...document.querySelectorAll('img')].filter(i => {
                 const r = i.getBoundingClientRect();
                 const src = i.currentSrc || i.src || '';
-                if (r.width < 28 || r.height < 28 || r.width > 320) return false;
-                if (r.y < h * 0.55) return false;  // prompt composer lower band
+                if (r.width < 24 || r.height < 24 || r.width > 220 || r.height > 220) return false;
+                if (r.y < 80) return false;
+                const lower = r.y > h * 0.45;
+                const modalBand = r.y > h * 0.18 && r.y < h * 0.75 && r.width <= 120;
+                if (!(lower || modalBand)) return false;
                 return /flow-content\\.google|googleusercontent|blob:|media\\.getMediaUrlRedirect|flow\\.google\\.com\\/asb/i.test(src);
               }).length;
             }"""
@@ -855,14 +858,14 @@ def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> d
     print(f"\n=== MINT {key} try={try_n} → {final_path.name} ===", flush=True)
 
     close_overlays(page)
-    # Lock Image 9:16 FIRST (before attach/prompt) — do not reopen settings after arming
+    # Lock Image tall FIRST — do not reopen settings after arming.
     select_image_9x16(page)
-    # Do NOT call _ensure_create_prompt_mode — it flips Video settings and kills Image send.
+    # Do NOT call _ensure_create_prompt_mode — flips Video settings / kills Image send.
 
-    # Read credits early (account menu Escape can disturb chips later)
     credits_before, active = read_credits(page)
     close_overlays(page)
 
+    # Attach FIRST (empty prompt). Then insert prompt WITHOUT Meta+A (keeps chips).
     clear_prompt_attachments(page)
     attached = 0
     for ref in [p for p in STYLE_REFS if p.exists()][:3]:
@@ -879,31 +882,52 @@ def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> d
     )
     if attached < 1 and chips < 1:
         raise RuntimeError("No style refs attached — abort try (would look film/wrong)")
-    # Only reopen settings if we fell out of Image/tall — never for crop_portrait↔9:16
-    if not _pill_is_image_tall(pill_text(page)):
-        select_image_9x16(page)
 
-    armed = False
-    last_err: Exception | None = None
-    for attempt in range(1, 4):
-        try:
-            flow.set_prompt(page, prompt)
-            armed = True
-            break
-        except Exception as e:
-            last_err = e
-            print(f"  set_prompt attempt {attempt}/3 failed: {e}", flush=True)
-            page.wait_for_timeout(700)
-    if not armed:
-        raise RuntimeError(f"Could not arm prompt: {last_err}")
+    # Chip-safe prompt: click editor right side, End, insert — no select-all wipe
+    box = flow.editor_box(page)
+    if not box:
+        raise RuntimeError("prompt editor missing after attach")
+    page.mouse.click(
+        box["x"] + min(box["w"] - 40, 200),
+        box["y"] + max(8, box["h"] / 2),
+    )
+    page.wait_for_timeout(150)
+    page.keyboard.press("End")
+    page.wait_for_timeout(80)
+    # Never Meta+A — that wipes Image ingredient chips. Empty editor → insert.
+    existing = flow._editor_prompt_text(page) or ""
+    if existing and not existing.lower().startswith("what do you want"):
+        print(f"  editor already has {len(existing)} chars — appending scene prompt", flush=True)
+        page.keyboard.insert_text("\n\n")
+    page.keyboard.insert_text(prompt)
+    page.wait_for_timeout(350)
+    got = flow._editor_prompt_text(page) or ""
+    chips_after_prompt = ingredient_chip_count(page)
+    print(
+        f"  prompt_len={len(got)} chips_after_prompt={chips_after_prompt}",
+        flush=True,
+    )
+    if len(got) < 40:
+        raise RuntimeError("prompt not armed after chip-safe insert")
+    if chips_after_prompt < 1:
+        # Last chance re-attach
+        print("  WARN chips lost after prompt — re-attaching", flush=True)
+        for ref in [p for p in STYLE_REFS if p.exists()][:3]:
+            try:
+                attach_style_ref_image_mode(page, ref)
+            except Exception as e:
+                print(f"  re-attach warn: {e}", flush=True)
 
     before_srcs = gallery_media_srcs(page)
     page.screenshot(path=str(QA_DIR / f"{key}_try{try_n}_armed.png"), full_page=False)
+    chips_final = ingredient_chip_count(page)
     print(
         f"  submitting Image Create… pill={pill_text(page)!r} "
-        f"chips={ingredient_chip_count(page)} gallery_srcs={len(before_srcs)}",
+        f"chips={chips_final} gallery_srcs={len(before_srcs)}",
         flush=True,
     )
+    if chips_final < 1:
+        raise RuntimeError("chips cleared before send — abort try")
     submit_create(page)
     page.wait_for_timeout(900)
     confirmed = flow.confirm_generation_spend(page, timeout_s=25.0)
