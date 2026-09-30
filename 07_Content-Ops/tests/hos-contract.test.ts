@@ -154,7 +154,7 @@ describe("channel audit", () => {
   it("passes a correct video", () => {
     expect(rules(auditVideo(good))).toEqual([]);
   });
-  it("flags Made for Kids, no AI label, Science category, unset language, Premiere", () => {
+  it("flags Made for Kids, AI No, Science category, unset language, Premiere", () => {
     const r = rules(
       auditVideo({
         ...good,
@@ -165,6 +165,12 @@ describe("channel audit", () => {
     expect(r).toEqual(
       expect.arrayContaining(["audience", "ai-disclosure", "category", "language.title", "premiere"]),
     );
+  });
+  it("warns (not errors) when Data API omits containsSyntheticMedia", () => {
+    const { containsSyntheticMedia: _drop, ...status } = good.status!;
+    const findings = auditVideo({ ...good, status });
+    expect(findings.filter((f) => f.severity === "error").map((f) => f.rule)).not.toContain("ai-disclosure");
+    expect(findings.filter((f) => f.rule === "ai-disclosure")[0]?.severity).toBe("warn");
   });
   it("flags a Short scheduled at midnight, and two Shorts on one day, and duplicate titles", () => {
     const short = (id: string, when: string, title: string): ApiVideo => ({
