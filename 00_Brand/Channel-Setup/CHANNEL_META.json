@@ -192,6 +192,41 @@
       "002_AB_test",
       "004_Test_and_Compare"
     ],
-    "stop": true
+    "stop": true,
+    "academic_uk_followup": {
+      "note": "Studio lists England/Scotland/Wales not United Kingdom. Fri 29bpGAI0wb8 restored to Academic England after 14:47 left UAE. Channel-wide England roll-out not ordered \u2014 STOP unless Ben asks.",
+      "fri_england_restored": true
+    }
+  },
+  "ben_1445_fri_dropdown_probe": {
+    "at_uk": "2026-09-30T18:05:47+01:00",
+    "videoId": "29bpGAI0wb8",
+    "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "source": "Studio dropdown probe Fri subagent + restore after 14:47 whole-channel pass",
+    "taxonomy": {
+      "academic_united_kingdom": "not_listed",
+      "academic_uk_stand_in": "England",
+      "also_listed": [
+        "Scotland",
+        "Wales"
+      ],
+      "level_under_england": "Key stages; Secondary school absent; Key stage 4/Year 10 select then revert to None after reload",
+      "exam_gcse_chemistry": "not_in_taxonomy"
+    },
+    "fri_final": {
+      "video_language": "English (United Kingdom)",
+      "title_description_language": "English (United Kingdom)",
+      "type": "Concept overview",
+      "academic_system": "England",
+      "level": "None",
+      "paid": "No",
+      "places": "off",
+      "tags_ok": true,
+      "visibility": "Scheduled",
+      "audience": "not Made for Kids"
+    },
+    "restore_after_1447_uae_regression": true,
+    "evidence": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_studio_fixes/FRI_ENGLAND_RESTORE_RESULT.json",
+    "artifacts": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/BEN_1447_whole_channel/fri_restore_england_99_final.png"
   }
 }

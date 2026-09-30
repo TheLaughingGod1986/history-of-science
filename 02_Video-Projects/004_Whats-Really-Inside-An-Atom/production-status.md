@@ -507,3 +507,8 @@ Channel: `@HistoryOfScienceYT` only. Supersedes narrower Fri/Sun/language orders
 **Would not save (channel-wide education taxonomy):** Academic system **United Kingdom** absent (England listed; left as UAE per “if listed”). GCSE Chemistry/Physics/Biology exams absent. Level “Secondary school” is a non-selectable header; Grade 10 leaf does not persist after reload. Playlist **History of Science: How We Found Out** does not exist; Studio “New playlist” submenu did not expose a title field — longs remain on *How Did We Discover…? | History of Science*.
 
 **Was Made for Kids / AI=No before:** none in sweep lists. Tag concatenation bug from first pass **repaired** (22/22 verified after reload). STOP.
+
+
+### Fri probe follow-up (2026-09-30T18:05:47+01:00)
+
+[Studio dropdown probe Fri](bc-73025afe-d117-5442-9891-fb3cac39f1d3) found Academic **United Kingdom** is not listed (England/Scotland/Wales are). Fri `29bpGAI0wb8` set to **Academic England** + **English (United Kingdom)** languages + Type Concept overview. Whole-channel 14:47 pass had reverted Academic to UAE — **restored England** and verified after reload (Scheduled, not-kids). Level still None (Key stage picks do not persist). GCSE Chemistry still not in exam taxonomy. Evidence: `11_Upload-Package/Schedule/evidence_2026-09-30_studio_fixes/FRI_ENGLAND_RESTORE_RESULT.json`.

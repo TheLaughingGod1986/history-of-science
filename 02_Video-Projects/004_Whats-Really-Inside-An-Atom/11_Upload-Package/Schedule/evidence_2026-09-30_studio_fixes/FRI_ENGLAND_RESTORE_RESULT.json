@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-30T18:05:32+01:00",
+  "video": "29bpGAI0wb8",
+  "channel": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "before": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Type Concept overview",
+    "Academic system United Arab Emirates",
+    "Level None"
+  ],
+  "pick": {
+    "ok": true,
+    "t": "England",
+    "y": 852
+  },
+  "mid": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Type Concept overview",
+    "Academic system England",
+    "Level None"
+  ],
+  "save": {
+    "ok": true
+  },
+  "after": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Type Concept overview",
+    "Academic system England",
+    "Level None"
+  ],
+  "audience_ok": true,
+  "visibility": "Scheduled",
+  "visibility_unchanged": true,
+  "england_ok": true,
+  "uae_bad": false,
+  "lang_uk": true,
+  "note": "Restored Academic England after whole-channel pass reverted to UAE. Per Fri probe: UK not listed; England is UK stand-in."
+}
