@@ -711,27 +711,43 @@ def normalize_to_png(src: Path, dest: Path) -> Path:
 
 
 def submit_create(page) -> None:
-    clicked = page.evaluate(
+    """Click Image-mode Start generation (arrow_forward) — never fall into Veo submit."""
+    # Prefer accessible name used by Image mode
+    for pattern in (
+        r"Start generation",
+        r"arrow_forward",
+    ):
+        loc = page.get_by_role("button", name=re.compile(pattern, re.I))
+        if loc.count():
+            try:
+                loc.last.click(force=True, timeout=4000)
+                print(f"  clicked send role={pattern!r}", flush=True)
+                return
+            except Exception as e:
+                print(f"  send role {pattern!r} warn: {e}", flush=True)
+    box = page.evaluate(
         """() => {
           const ranked = [];
           for (const b of document.querySelectorAll('button')) {
-            const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-            if (!/arrow_forward/i.test(t)) continue;
-            if (b.disabled || b.getAttribute('aria-disabled') === 'true') continue;
+            const t = ((b.innerText || '') + ' ' + (b.getAttribute('aria-label') || ''))
+              .trim().replace(/\\n/g, ' ');
+            if (!/arrow_forward|Start generation/i.test(t)) continue;
+            const dis = b.disabled || b.getAttribute('aria-disabled') === 'true';
             const r = b.getBoundingClientRect();
             if (r.width < 8 || r.height < 8) continue;
-            ranked.push({b, y: r.y, t});
+            ranked.push({x:r.x+r.width/2, y:r.y+r.height/2, t:t.slice(0,60), dis});
           }
           if (!ranked.length) return null;
           ranked.sort((a, c) => c.y - a.y);
-          ranked[0].b.click();
-          return ranked[0].t;
+          // Prefer enabled; else try the disabled one anyway (sometimes stale aria)
+          ranked.sort((a, c) => Number(a.dis) - Number(c.dis) || c.y - a.y);
+          return ranked[0];
         }"""
     )
-    if not clicked:
-        flow.submit_create(page)
-    else:
-        print(f"  js-clicked send ({clicked!r})", flush=True)
+    if not box:
+        raise RuntimeError("Image Start generation / arrow_forward not found")
+    page.mouse.click(box["x"], box["y"])
+    print(f"  mouse-clicked send ({box.get('t')!r} dis={box.get('dis')})", flush=True)
 
 
 def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> dict:
@@ -742,41 +758,33 @@ def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> d
     print(f"\n=== MINT {key} try={try_n} → {final_path.name} ===", flush=True)
 
     close_overlays(page)
+    # Lock Image 9:16 FIRST (before attach/prompt) — do not reopen settings after arming
     select_image_9x16(page)
-    try:
-        flow._ensure_create_prompt_mode(page)
-    except Exception as e:
-        print(f"  create-mode warn: {e}", flush=True)
+    # Do NOT call _ensure_create_prompt_mode — it flips Video settings and kills Image send.
 
-    # Fresh attachments each try — prefer the three hard style refs (skip optional if chips full)
+    # Read credits early (account menu Escape can disturb chips later)
+    credits_before, active = read_credits(page)
+    close_overlays(page)
+
     clear_prompt_attachments(page)
-    refs = [p for p in STYLE_REFS if p.exists()]
-    if OPTIONAL_STYLE.exists():
-        refs.append(OPTIONAL_STYLE)
     attached = 0
-    for ref in refs[:3]:  # three hard refs first
+    for ref in [p for p in STYLE_REFS if p.exists()][:3]:
         try:
             if attach_style_ref_image_mode(page, ref):
                 attached += 1
-            select_image_9x16(page)
         except Exception as e:
             print(f"  attach fail {ref.name}: {e}", flush=True)
-    if attached < 2 and OPTIONAL_STYLE.exists():
-        try:
-            if attach_style_ref_image_mode(page, OPTIONAL_STYLE):
-                attached += 1
-        except Exception as e:
-            print(f"  optional attach fail: {e}", flush=True)
-
-    credits_before, active = read_credits(page)
     chips = ingredient_chip_count(page)
     print(
         f"  credits_before={credits_before} account={active} "
-        f"attached={attached} chips={chips}",
+        f"attached={attached} chips={chips} pill={pill_text(page)!r}",
         flush=True,
     )
     if attached < 1 and chips < 1:
         raise RuntimeError("No style refs attached — abort try (would look film/wrong)")
+    # Ensure still Image 9:16 without clearing chips if already correct
+    if not _pill_is_image_9x16(pill_text(page)):
+        select_image_9x16(page)
 
     armed = False
     last_err: Exception | None = None
@@ -792,28 +800,19 @@ def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> d
     if not armed:
         raise RuntimeError(f"Could not arm prompt: {last_err}")
 
-    # Re-lock 9:16 immediately before send
-    select_image_9x16(page)
-    for _ in range(2):
-        try:
-            page.keyboard.press("Escape")
-        except Exception:
-            pass
-        page.wait_for_timeout(120)
-
     before_srcs = gallery_media_srcs(page)
     page.screenshot(path=str(QA_DIR / f"{key}_try{try_n}_armed.png"), full_page=False)
     print(
-        f"  submitting Image Create… pill={pill_text(page)!r} gallery_srcs={len(before_srcs)}",
+        f"  submitting Image Create… pill={pill_text(page)!r} "
+        f"chips={ingredient_chip_count(page)} gallery_srcs={len(before_srcs)}",
         flush=True,
     )
     submit_create(page)
-    page.wait_for_timeout(800)
+    page.wait_for_timeout(900)
     confirmed = flow.confirm_generation_spend(page, timeout_s=25.0)
     print(f"  confirm_spend={confirmed}", flush=True)
     flow.dismiss_soft_prompts(page)
-    # Soft confirm labels unique to Image
-    for lab in (r"^Create$", r"^Generate$", r"^Continue$", r"^OK$"):
+    for lab in (r"^Create$", r"^Generate$", r"^Continue$", r"^OK$", r"^Confirm$"):
         try:
             btn = page.get_by_role("button", name=re.compile(lab, re.I))
             if btn.count():
@@ -821,7 +820,7 @@ def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> d
                 page.wait_for_timeout(400)
         except Exception:
             pass
-    page.wait_for_timeout(4000)
+    page.wait_for_timeout(5000)
 
     download_newest_portrait(
         page, raw_path, before_srcs=before_srcs, timeout_s=240
