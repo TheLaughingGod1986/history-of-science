@@ -862,7 +862,7 @@ def submit_create(page) -> None:
 def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> dict:
     spec = STILLS[key]
     prompt = spec["try1"] if try_n == 1 else spec["try2"]
-    raw_path = QA_DIR / f"{key}_try{try_n}_raw.bin"
+    raw_path = QA_DIR / f"{key}_try{try_n}_raw.png"
     final_path = OUT_DIR / spec["out"]
     print(f"\n=== MINT {key} try={try_n} → {final_path.name} ===", flush=True)
 
