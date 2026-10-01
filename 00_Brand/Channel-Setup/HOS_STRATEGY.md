@@ -82,11 +82,7 @@ Then one hard fact. The promoted film's exact live title is on screen at 9–14 
 
 1. Read the latest `audits/weekly/<date>/REPORT.md`. Which Shorts and topics held?
 2. Choose a familiar thing with a clear moment of proof, a person to follow, and one room to set it in.
-<<<<<<< HEAD
-3. **Neighbour pool (1 Oct 2026):** every future film must be one YouTube can recommend next to big education videos. `neighbours.py` must PASS with **≥ 3 education videos at 1M+ views** on the topic before topic lock (`STUDIO_PLAYBOOK.md` §2). Use their subject words in title, description and tags — never their channel names.
-=======
 3. **Neighbour pool (1 Oct 2026):** every future film must be one YouTube can recommend next to big education videos. `neighbours.py` must PASS with **≥ 3 education videos at 1M+ views** on the topic before topic lock (`STUDIO_PLAYBOOK.md` §2). Use their subject words in title, description and tags, never their channel names.
->>>>>>> origin/main
 4. Competition check: search the exact title signed out. If the top five are all channels with millions of subscribers, narrow the angle.
 5. Fill the vidIQ pre-build audit and the topic score. **Ben picks.**
 
