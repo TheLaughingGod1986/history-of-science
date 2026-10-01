@@ -45,7 +45,7 @@
     "a flame, lantern or lamp in frame on a Fast plate (remint on Quality or reframe)"
   ],
   "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns.",
-  "quality_note": "Flow Veo 3.1 on the Mac Mini CDP worker, benoats@googlemail.com only. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns) or the Explorer is in shot (explorer fidelity); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+  "quality_note": "Vertex AI Veo 3.1 for 005 (Ben's OK, 1 Oct 2026), project gen-lang-client-0538779324. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns) or the Explorer is in shot (explorer fidelity); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing. Fast plates are lit by daylight from a window out of frame (2 Oct light fix). Fast plates are lit by daylight from a window out of frame (2 Oct light fix). Fast plates are lit by daylight from a window out of frame (2 Oct light fix).",
   "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
   "credits_try1": {
     "Quality": 7,
@@ -71,7 +71,8 @@
       "vo_land": [
         "Picture yourself in his lecture room in London.",
         "It's cold, the candles are lit, and you're on a hard wooden bench."
-      ]
+      ],
+      "harvey_ref": true
     },
     {
       "id": "02_slow_hearts",
@@ -85,11 +86,14 @@
         "03_slow_hearts",
         "04_ink_heart_beats"
       ],
-      "prompt": "Premium Animistry-class 3D cartoon. Harvey's notebook on his desk: brown-ink drawings of the slow hearts of a frog and an eel with little sketch arrows; pages turn gently, and on the last page the ink drawing of the heart slowly squeezes and relaxes on the paper. Ink drawings only, no live animal, no readable text. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. Harvey's notebook on his desk: brown-ink drawings of the slow hearts of a frog and an eel with little sketch arrows; pages turn gently, and on the last page the ink drawing of the heart slowly squeezes and relaxes on the paper. Ink drawings only, no live animal, no readable text. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 7.9,
       "vo_land": [
         "Harvey has spent years watching the slow hearts of cold-blooded animals, like frogs and eels, where each beat is easy to see."
-      ]
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Harvey's notebook on his desk: brown-ink drawings of the slow hearts of a frog and an eel with little sketch arrows; pages turn gently, and on the last page the ink drawing of the heart slowly squeezes and relaxes on the paper. Ink drawings only, no live animal, no readable text. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
     },
     {
       "id": "03_stove_to_muscle",
@@ -109,7 +113,8 @@
         "And what he saw was simple.",
         "The heart isn't a stove.",
         "It's a muscle, and it squeezes."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "04_squeeze_pulse",
@@ -126,7 +131,8 @@
       "use_s": 7.22,
       "vo_land": [
         "Each squeeze pushes blood out into the arteries, and that push is the pulse you feel in your wrist."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "05_how_much",
@@ -139,12 +145,15 @@
       "merged_from_v01": [
         "07_how_much"
       ],
-      "prompt": "Premium Animistry-class 3D cartoon. Same Harvey study: William Harvey, a short man of about forty, olive skin, black hair to the collar, small pointed black beard and moustache, dark keen eyes, black physician's gown with a plain white falling collar, dips his quill and looks from a drawing of the heart to a blank page, thinking. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same Harvey study: William Harvey, a short man of about forty, olive skin, black hair to the collar, small pointed black beard and moustache, dark keen eyes, black physician's gown with a plain white falling collar, dips his quill and looks from a drawing of the heart to a blank page, thinking. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 6.48,
       "vo_land": [
         "Then he asks how much blood each squeeze pushes out.",
         "He picks small numbers on purpose."
-      ]
+      ],
+      "harvey_ref": true,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Same Harvey study: William Harvey, a short man of about forty, olive skin, black hair to the collar, small pointed black beard and moustache, dark keen eyes, black physician's gown with a plain white falling collar, dips his quill and looks from a drawing of the heart to a blank page, thinking. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
     },
     {
       "id": "06_two_ounces_eighth",
@@ -158,12 +167,15 @@
         "08_two_ounces",
         "09_one_eighth"
       ],
-      "prompt": "Premium Animistry-class 3D cartoon. Close on a cream page: Harvey's quill writes '2 oz' in large clear brown ink, then writes '1/8' underneath it. The numbers stay sharp and correct. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on a cream page: Harvey's quill writes '2 oz' in large clear brown ink, then writes '1/8' underneath it. The numbers stay sharp and correct. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 7.4,
       "vo_land": [
         "Say the left side of the heart holds about two ounces.",
         "Say just one eighth of that goes out with each beat."
-      ]
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Close on a cream page: Harvey's quill writes '2 oz' in large clear brown ink, then writes '1/8' underneath it. The numbers stay sharp and correct. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
     },
     {
       "id": "07_thousand_beats",
@@ -176,11 +188,14 @@
       "merged_from_v01": [
         "10_thousand_beats"
       ],
-      "prompt": "Premium Animistry-class 3D cartoon. Same page: the quill writes '1000' under '2 oz' and '1/8' in large clear brown ink; a brass clock ticks beside the page. The numbers stay sharp and correct. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same page: the quill writes '1000' under '2 oz' and '1/8' in large clear brown ink; a brass clock ticks beside the page. The numbers stay sharp and correct. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 4.54,
       "vo_land": [
         "In half an hour, a heart beats more than a thousand times."
-      ]
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Same page: the quill writes '1000' under '2 oz' and '1/8' in large clear brown ink; a brass clock ticks beside the page. The numbers stay sharp and correct. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
     },
     {
       "id": "08_explorer_jugs",
@@ -198,7 +213,8 @@
       "vo_land": [
         "Multiply it out.",
         "In half an hour, the heart pushes out more blood than there is in the whole body."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "09_jug_tower",
@@ -216,7 +232,8 @@
       "vo_land": [
         "Why does that matter?",
         "Because if the liver made all that blood fresh from food, you'd have to eat more than your own weight every single day."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "10_eat_weight",
@@ -234,7 +251,8 @@
       "vo_land": [
         "(continues) Because if the liver made all that blood fresh from food, you'd have to eat more than your own weight every single day.",
         "Nobody does."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "11_where_go",
@@ -254,7 +272,8 @@
         "And if the body used it all up, where would it go?",
         "There's only one answer that works.",
         "It's the same blood."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "12_glowing_loop",
@@ -273,7 +292,8 @@
       "vo_land": [
         "The heart pumps it out through the arteries, and it comes back through the veins, round and round.",
         "It circulates."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "13_one_minute",
@@ -291,7 +311,8 @@
       "vo_land": [
         "(continues) It circulates.",
         "We now know he was being very careful: your heart pumps all of your blood round your body in about a minute."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "14_not_proof",
@@ -304,13 +325,17 @@
       "merged_from_v01": [
         "19_not_proof"
       ],
-      "prompt": "Premium Animistry-class 3D cartoon. Same Harvey study: William Harvey, a short man of about forty, olive skin, black hair to the collar, small pointed black beard and moustache, dark keen eyes, black physician's gown with a plain white falling collar, looks from his page of sums to a strip of cream linen on the desk and picks it up. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same Harvey study: William Harvey, a short man of about forty, olive skin, black hair to the collar, small pointed black beard and moustache, dark keen eyes, black physician's gown with a plain white falling collar, looks from his page of sums to a strip of cream linen on the desk and picks it up. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 6.76,
       "vo_land": [
         "(continues) We now know he was being very careful: your heart pumps all of your blood round your body in about a minute.",
         "But a sum isn't proof.",
         "Harvey needed something people could see with their own eyes."
-      ]
+      ],
+      "harvey_ref": true,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Same Harvey study: William Harvey, a short man of about forty, olive skin, black hair to the collar, small pointed black beard and moustache, dark keen eyes, black physician's gown with a plain white falling collar, looks from his page of sums to a strip of cream linen on the desk and picks it up. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
     }
-  ]
+  ],
+  "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
 }

@@ -12,14 +12,15 @@
 | Episode gate | Every line OK except `script_review` 89.8 (Ben's recorded override, as on 004), 1 Oct 2026 |
 | lint:package | PASS, 1 Oct 2026, schedule 29 Oct (captions warning) |
 | VO | **Voice v01 (listen file sha `a19569f4…`, 8:15.33) OK'd by Ben, 1 Oct 2026** ("waive vidIQ, merge #186 and voice OK", in chat with Claude; relayed on desk PR #180). All `vo_check.py` PASS |
-| Picture | **Part 01 rough v01 built on Vertex AI Veo 3.1 (Ben's OK for 005, 1 Oct 2026): 9/9 plates KEEP, awaiting Ben's look on the real file** (`09_Final-Export/hos_005_part01_rough_v01.mp4`). Spend $25.58 at list price (25 takes, 21 start frames; log `07_Edit-Project/PART01_MINT_LOG_v01.json`). Boards v02 for all 5 parts (75 plates: 29 Quality, 46 Fast). Parts 02–05 wait for Ben on Part 01 |
+| Picture | **Part 01 rough v01 passed by Ben, 1 Oct 2026** ("Part 1 OK", in chat with Claude; relayed on desk PR #180 comment 5942662028), as it is, including the ECG-style pulse and the quill: `09_Final-Export/hos_005_part01_rough_v01.mp4`, sha256 `7661b6cf1897c6dabe60e09592b297f9ed21b253cb7c2946cc12f58732a9d098`. Parts 02–05 on Vertex AI Veo 3.1 in progress (boards v02 + Fast-plate light fix). Ben's moving-picture sign-off for the film is the full join |
 | Runtime target | 7–9 min, 5 parts. Film VO timeline 8:21.33 with the four chapter cards (`07_Edit-Project/VO_RETIME_v01.json`), + 3–4 s end card ≈ 8:25 |
 | Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct. Not yet uploaded |
 | Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). Not built yet: cut from the long's plates once those exist |
 
 ## STOP
 
-- **Picture, 2 Oct 2026: Part 01 rough v01 waits for Ben** (sign-off 5, moving picture, on the real file). Parts 02–05 are not minted until Ben passes Part 01.
+- **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £60.
+- Resolved: Part 01 rough v01 passed by Ben, 1 Oct 2026 ("Part 1 OK").
 - Resolved: the Flow-credits STOP (1 Oct 23:45) is replaced by Vertex AI Veo for 005 with Ben's OK. Shorts scripts signed off by Ben, 1 Oct 2026.
 
 **Rule record:** Vertex AI Veo used for 005 with Ben's OK, 1 Oct 2026 (Flow at 62 credits, Gemini 402). Vertex isn't in `STUDIO_PLAYBOOK.md` §5's engine table yet; Claude adds it in its own docs PR.
@@ -408,12 +409,39 @@ PASS  hos_005_part01_rough_v01.mp4  0:59.53  mean -21.6 dB  peak -2.3 dB  141 wp
 
 005 always_fails: no gore (the heart in 01 is a clean cartoon heart under a translucent chest); no face in the first two seconds; no flame on any Fast plate inside its window.
 
+## 2 Oct 2026 — Part 01 passed; Parts 02–05 on Vertex (Grok, desk task from Claude, comment 5942662028)
+
+**Ben, 1 Oct, in chat with Claude: "Part 1 OK".** Part 01 rough v01 is passed as it is, including the ECG-style pulse and the quill: `09_Final-Export/hos_005_part01_rough_v01.mp4`, sha256 `7661b6cf1897c6dabe60e09592b297f9ed21b253cb7c2946cc12f58732a9d098`.
+
+### Setup for Parts 02–05
+
+- **Boards:** v02 with the approved Fast-plate light fix (`python3 07_Edit-Project/_board_v02_light_fix.py`): on every Fast plate the candlelight/lamplight sentence is now "Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room." Two Fast plates set at dusk/evening that the VO doesn't put at night (04/19 `19_gap_open`, 05/03 `03_old_harvey`) move to afternoon daylight. The one plate the VO puts in candlelight (03/01 `01_cold_lecture_room`, "the candles are lit") was already Quality and keeps its light. The old text stays in each plate's `prompt_v02_before_light_fix`. Changed prompts: Part 02 8, Part 03 5, Part 04 12, Part 05 4.
+- **Harvey:** the same man as Part 01. Plates with Harvey on screen carry `harvey_ref: true` (02/15, 03/01, 03/05, 03/14, 04/01, 04/02, 04/17, 04/19, 05/03) and their start frames attach `04_Generated-Clips/refs/harvey_ref_v01.jpg` (a crop of Part 01's `07_harvey_college_door_v02.jpg` start frame: readable face, black gown, small pointed beard). The young Harvey on the ship (02/15) now asks for the same face, collar-length black hair, small pointed beard and a black gown.
+- **Explorer:** his three plates (02/11, 03/08, 05/05) attach the Explorer sheet (`01_Character/01_Master-References/hos-explorer-character-sheet-v01.jpg`) and the generation reference.
+- **Tool:** `07_Edit-Project/_mint_vertex_v02.py --part N` (Part 01's tool per part: `still`, `mint`, `auto`, `resume`, `verdict`, `total`). Same project, models, prices and op-name-at-submit logging; the full Veo prompt is now saved with each take. Logs `07_Edit-Project/PART0N_MINT_LOG_v01.json`.
+- **Credit guard:** every still and take is refused if the projected Free Trial credit would fall below £60. Projected = the lower of (£209.53 before any 005 spend − all 005 logged spend × 0.80 £/$) and the latest console reading. Console readings: `07_Edit-Project/_vertex_credit_v01.py <label>` (Cloud Billing → Credits via the Mini's Chrome, screenshot in `_evidence/`, log `07_Edit-Project/VERTEX_CREDIT_LOG_v01.json`).
+
+### Credit before Part 02
+
+`~/.venvs/hos-vertex/bin/python 07_Edit-Project/_vertex_credit_v01.py before_part02_2026-10-02`
+
+```
+CREDIT free_trial_remaining_gbp=209.53 status=Available floor=60
+```
+
+The console hasn't posted Part 01's spend yet. `_mint_vertex_v02.py --part 2 total`:
+
+```
+part 02: takes=0 stills=0 keep=0/15 cost_usd=$0.00 (lost $0.00)
+film 005 Vertex spend $25.58 · projected Free Trial £189.07 (floor £60, £/$ 0.8)
+```
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F) | `09_Final-Export/hos_005_part01_rough_v01.mp4` (`7661b6cf…`, 59.53 s) | 9/9 KEEP on Vertex ($25.58); **awaiting Ben** on the real file |
-| 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | — | board v02; waits for Ben to pass Part 01 |
+| 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F) | `09_Final-Export/hos_005_part01_rough_v01.mp4` (`7661b6cf…`, 59.53 s) | 9/9 KEEP on Vertex ($25.58); **passed by Ben, 1 Oct 2026** |
+| 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | — | board v02 + light fix; minting on Vertex |
 | 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | — | board v02 |
 | 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | — | board v02 |
 | 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | — | board v02 |

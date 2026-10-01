@@ -41,7 +41,7 @@
     "a flame, lantern or lamp in frame on a Fast plate (remint on Quality or reframe)"
   ],
   "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns.",
-  "quality_note": "Flow Veo 3.1 on the Mac Mini CDP worker, benoats@googlemail.com only. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns) or the Explorer is in shot (explorer fidelity); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+  "quality_note": "Vertex AI Veo 3.1 for 005 (Ben's OK, 1 Oct 2026), project gen-lang-client-0538779324. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns) or the Explorer is in shot (explorer fidelity); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing. Fast plates are lit by daylight from a window out of frame (2 Oct light fix). Fast plates are lit by daylight from a window out of frame (2 Oct light fix). Fast plates are lit by daylight from a window out of frame (2 Oct light fix).",
   "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
   "credits_try1": {
     "Quality": 8,
@@ -66,7 +66,8 @@
       "vo_land": [
         "Harvey's circle had a hole in it.",
         "How did the blood get from the arteries into the veins?"
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "02_tiny_gaps",
@@ -83,7 +84,8 @@
       "use_s": 5.12,
       "vo_land": [
         "Harvey guessed the blood passed through tiny gaps in the flesh, too small to see."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "03_old_harvey",
@@ -96,12 +98,15 @@
       "merged_from_v01": [
         "03_old_harvey"
       ],
-      "prompt": "Premium Animistry-class 3D cartoon. London in the 1650s, soft evening window light: old William Harvey, about seventy-five, white hair and small white pointed beard, same olive skin and dark eyes, black gown, at a window with his book; he closes it gently. No candle or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. London in the 1650s, soft warm afternoon window light: old William Harvey, about seventy-five, white hair and small white pointed beard, same olive skin and dark eyes, black gown, at a window with his book; he closes it gently. No candle or lamp in shot. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 7.84,
       "vo_land": [
         "He never saw them.",
         "He died in sixteen fifty-seven, with his great idea still missing one piece."
-      ]
+      ],
+      "harvey_ref": true,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. London in the 1650s, soft evening window light: old William Harvey, about seventy-five, white hair and small white pointed beard, same olive skin and dark eyes, black gown, at a window with his book; he closes it gently. No candle or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
     },
     {
       "id": "04_malpighi_slide",
@@ -119,7 +124,8 @@
       "use_s": 7.9,
       "vo_land": [
         "Four years later, in Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "05_explorer_scope",
@@ -138,7 +144,8 @@
         "(continues) Four years later, in Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope.",
         "And there it was.",
         "A net of tiny vessels, finer than hairs, carrying blood from the smallest arteries into the smallest veins."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "06_eyepiece_mesh",
@@ -155,7 +162,8 @@
       "use_s": 5.92,
       "vo_land": [
         "(continues) A net of tiny vessels, finer than hairs, carrying blood from the smallest arteries into the smallest veins."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "07_capillaries_loop",
@@ -175,7 +183,8 @@
         "We call them capillaries, from the Latin word for hair.",
         "The circle was closed.",
         "Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "08_your_blood",
@@ -192,7 +201,8 @@
       "use_s": 6.29,
       "vo_land": [
         "(continues) Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "09_question",
@@ -209,7 +219,8 @@
       "use_s": 3.17,
       "vo_land": [
         "So why was this so groundbreaking?"
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "10_one_vein",
@@ -226,7 +237,8 @@
       "use_s": 7.16,
       "vo_land": [
         "Because once you know the blood goes round, you know that anything put into one vein reaches the whole body."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "11_transfusion",
@@ -239,11 +251,14 @@
       "merged_from_v01": [
         "13_transfusion"
       ],
-      "prompt": "Premium Animistry-class 3D cartoon. 1660s: two physicians in wigs bend over a table with a slender silver tube, a quill and a pewter bowl. Tools only: no animal, no patient, no blood. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. 1660s: two physicians in wigs bend over a table with a slender silver tube, a quill and a pewter bowl. Tools only: no animal, no patient, no blood. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 5.5,
       "vo_land": [
         "Within ten years of Harvey's death, doctors in England and France were trying the first blood transfusions."
-      ]
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. 1660s: two physicians in wigs bend over a table with a slender silver tube, a quill and a pewter bowl. Tools only: no animal, no patient, no blood. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
     },
     {
       "id": "12_tools",
@@ -256,12 +271,15 @@
       "merged_from_v01": [
         "14_tools"
       ],
-      "prompt": "Premium Animistry-class 3D cartoon. Close on the silver tube and quills laid out on linen; a hand writes in a ledger (no readable text). Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the silver tube and quills laid out on linen; a hand writes in a ledger (no readable text). Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 5.76,
       "vo_land": [
         "(continues) Within ten years of Harvey's death, doctors in England and France were trying the first blood transfusions.",
         "That makes no sense unless your blood circulates."
-      ]
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Close on the silver tube and quills laid out on linen; a hand writes in a ledger (no readable text). Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
     },
     {
       "id": "13_cuff",
@@ -279,7 +297,8 @@
       "vo_land": [
         "And the next time a nurse wraps a cuff round your arm, think of Harvey.",
         "A blood pressure cuff is his band."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "14_cuff_release",
@@ -296,7 +315,8 @@
       "use_s": 7.54,
       "vo_land": [
         "It squeezes until the blood stops getting in, then lets go, and listens for the moment it starts to flow again."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "15_band_table",
@@ -309,11 +329,14 @@
       "merged_from_v01": [
         "17_band_table"
       ],
-      "prompt": "Premium Animistry-class 3D cartoon. Harvey's linen band on the old oak table, beside the page of sums and Fabricius's vein drawing. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. Harvey's linen band on the old oak table, beside the page of sums and Fabricius's vein drawing. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 4.28,
       "vo_land": [
         "A sum, a band, and a row of little doors."
-      ]
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Harvey's linen band on the old oak table, beside the page of sums and Fabricius's vein drawing. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
     },
     {
       "id": "16_proved_last_link",
@@ -331,7 +354,8 @@
       "use_s": 7.9,
       "vo_land": [
         "Harvey proved that your heart is a pump and that your blood goes round, long before anyone saw the last link."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "17_dutch_lens",
@@ -349,7 +373,8 @@
       "vo_land": [
         "(continues) Harvey proved that your heart is a pump and that your blood goes round, long before anyone saw the last link.",
         "Thirteen years later, a Dutch cloth merchant with an even better lens looked into a drop of pond water, and found it full of life."
-      ]
+      ],
+      "harvey_ref": false
     },
     {
       "id": "18_pond_life",
@@ -367,7 +392,9 @@
       "vo_land": [
         "(continues) Thirteen years later, a Dutch cloth merchant with an even better lens looked into a drop of pond water, and found it full of life.",
         "That is where the story of germs begins."
-      ]
+      ],
+      "harvey_ref": false
     }
-  ]
+  ],
+  "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
 }
