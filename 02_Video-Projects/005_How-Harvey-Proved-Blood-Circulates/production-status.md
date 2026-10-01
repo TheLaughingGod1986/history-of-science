@@ -6,21 +6,21 @@
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | Ben picked: **Blood (Harvey)**, 1 Oct 2026 (chat with Claude) |
 | Neighbour gate | PASS: 8 education videos with 1M+ views, TED-Ed yes (`11_Upload-Package/evidence_2026-10-01_neighbours.json`) |
-| Pre-build vidIQ audit | filled from public signals; **vidIQ pending Ben**; not signed |
+| Pre-build vidIQ audit | filled from public signals; **vidIQ waived by Ben, 1 Oct 2026**; signed |
 | Script sign-off | **Script v02 signed off by Ben, 1 Oct 2026** ("1–5 yes, 29 Oct", in chat with Claude; relayed on desk PR #180) |
 | Script review | 89.8 with the fixed reviewer (#185). v02 signed off by Ben, 1 Oct 2026 (gate override, STUDIO_PLAYBOOK §2) |
-| Episode gate | **BLOCK** on the old reviewer score and the unsigned vidIQ audit; VO went ahead on Ben's script sign-off (desk task, 1 Oct) |
+| Episode gate | Every line OK except `script_review` 89.8 (Ben's recorded override, as on 004), 1 Oct 2026 |
 | lint:package | PASS, 1 Oct 2026, schedule 29 Oct (captions warning) |
-| VO | **v01 done, all `vo_check.py` PASS, 8:15.33, waiting for Ben to listen** (`02_Voiceover/hos_005_vo_all_parts_listen_v01.mp3`) |
-| Picture | pending (Flow Veo 3.1, plate library). **No picture until Ben OKs the voice** |
-| Runtime target | 7–9 min, 5 parts (v02: 1,250 spoken words; VO v01 8:15.33 with 1 s part joins) |
+| VO | **Voice v01 (listen file sha `a19569f4…`, 8:15.33) OK'd by Ben, 1 Oct 2026** ("waive vidIQ, merge #186 and voice OK", in chat with Claude; relayed on desk PR #180). All `vo_check.py` PASS |
+| Picture | Plate boards v01 for all 5 parts (97 plates), re-timed from VO v01. **Part 01 mint STOPPED: Flow has 62 credits** (see STOP) |
+| Runtime target | 7–9 min, 5 parts. Film VO timeline 8:21.33 with the four chapter cards (`07_Edit-Project/VO_RETIME_v01.json`), + 3–4 s end card ≈ 8:25 |
 | Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct. Not yet uploaded |
-| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. Scripts pending (sign-off 3) |
+| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. Scripts v01 written (`10_Shorts/SHORTS_SCRIPTS_v01.md`), **waiting for Ben** (sign-off 3) |
 
 ## STOP
 
-- **Voice: waiting for Ben to listen** to `hos_005_vo_all_parts_listen_v01.mp3` (sign-off point 4). No picture spend until he OKs it.
-- **vidIQ audit** still unsigned (gate:episode BLOCK on it).
+- **Picture, 1 Oct 2026 23:45 UK: Part 01 mint not started. Flow (`benoats@googlemail.com`, Mini CDP :9222) shows 62 Google Flow credits, "running low… reset monthly"** (`gate_auth_ok.png`). A Veo 3.1 Quality clip costs about 100 credits and Fast about 20; Part 01 is 12 plates, 11 of them Quality (candles, glows, hero plates). No Fast swap on fragile light, no Ken Burns. The Gemini API fallback is also out (HTTP 402 "prepayment credits are depleted"), so the start-frame stills could not be made either. Needs Ben: wait for the monthly reset, or top up Flow credits.
+- **Shorts scripts v01** waiting for Ben (sign-off point 3).
 
 ## 1 Oct 2026 — topic, script v01, gates (Grok)
 
@@ -215,14 +215,78 @@ Words: 1257 · Est. min: 8.4 · Chapters: 4
 
 The first question ("So how did a band tied round an arm prove them wrong?") lands just after the opening window. Ben signed off v02 on 1 Oct 2026, so 89.8 stands as a gate override (STUDIO_PLAYBOOK §2).
 
+## 1 Oct 2026 — voice OK, gate, re-time, plate boards, Part 01 mint STOP, Shorts scripts (Grok, desk task from Claude, comment 5942013813)
+
+Ben, 1 Oct, in chat with Claude: "waive vidIQ, merge #186 and voice OK".
+
+- **vidIQ:** `PRE_BUILD_VIDIQ_AUDIT.md` signed "vidIQ waived by Ben, 1 Oct 2026"; title ticked as locked with the v02 sign-off; the script-reviewer box stays unticked at 89.8 (override).
+- **Voice:** Voice v01 (listen file sha `a19569f4…`, 8:15.33) OK'd by Ben, 1 Oct 2026. Part table (duration, start, sha256) is in the VO v01 section above.
+- **Branch:** merged `origin/main` (with #185's reviewer) into `grok/hos-005-blood-script`, merge commit, no rebase.
+
+`npm run gate:episode -- --project ../02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates` (after the re-time; script score is Ben's recorded override, as on 004):
+
+```
+**Decision:** BLOCK — VO / Gemini Veo blocked
+
+| Check | Status | Detail |
+|---|---|---|
+| project_dir | OK | Project: /Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates |
+| prebuild_vidiq | OK | Pre-build vidIQ audit present and looks signed off. |
+| script_file | OK | Script: 01_Script/blood_script_master_v02.md |
+| script_review | FAIL | Script reviewer REJECT 89.8/90 (need ≥90). |
+| explorer_acts | OK | [EXPLORER ACTS] beats 3 (need ≥1). |
+| visual_must | OK | [VISUAL MUST] count 45 (need ≥4). |
+| teach | OK | [TEACH] count 5 (need ≥4). |
+| chapters | OK | [CHAPTER CARD] count 4 (aim 4–6 film acts). |
+| production_checklist | OK | Checklist present: 11_Upload-Package/PRODUCTION_CHECKLIST_V2.md |
+
+Script score: **89.8/100** · REJECT
+```
+
+### Re-time from the real VO
+
+`~/.venvs/hos-vo/bin/python 07_Edit-Project/_retime_vo_v01.py` (faster-whisper small.en word timestamps on the five part takes) → `07_Edit-Project/VO_RETIME_v01.json`, every sentence's start in its take and on the film timeline. Each chapter card fades in 0.6 s after the previous part's last word, holds 1.5 s, and the next part's VO starts 1.9 s after the card comes in (2.5 s per join, replacing the listen file's 1.0 s joins).
+
+| Part | Chapter card in | VO on the film timeline | Plates |
+|---|---|---|---:|
+| 01 The Used-Up Blood | — (no card) | 0:00.00–0:57.02 | 12 |
+| 02 The Liver That Made Blood | 0:57.62 | 0:59.52–2:37.10 | 18 |
+| 03 The Sum That Broke the Old Idea | 2:37.70 | 2:39.60–4:15.80 | 19 |
+| 04 The Tied Arm | 4:16.40 | 4:18.30–6:24.54 | 27 |
+| 05 The Vessels He Never Saw | 6:25.14 | 6:27.04–8:21.33 | 21 |
+
+The film's VO ends at 8:21.33; with the 3–4 s end card it runs about 8:25. First minute from the take: title question 0:12.02, promise 0:15.94, stakes 0:27.22, Harvey named about 0:41. The script's part headers, chapter-card times and all 45 `[VISUAL MUST]` cue times now follow the VO. No spoken word changed; `review:script` still reads 89.8, 1,257 words.
+
+### Plate boards v01 (all five parts)
+
+`python3 07_Edit-Project/_build_plate_boards_v01.py` writes `07_Edit-Project/parts/part-0N_plates_v01.json` from the re-time: one plate per VO beat with `t_s`, `use_s` (every plate 2.4–7.9 s), `vo_land`, `prompt`, `quality`, `explorer`, `side_label`, plus each part's `forbidden` and `always_fails` (gore, faces in the first two seconds and wrong sums added for 005). The template `part-01_plates_v01.json` is kept as `parts/_replaced/part-01_plates_v01_template_REPLACED.json`.
+
+- **Part 01:** 12 plates, no Explorer, no face before plate 07 (0:27); frame 0 is the wrist and pulse, moving. 11 Quality, 1 Fast (`06_vein_press`).
+- **Explorer:** Part 02 plate 13 (Padua rail and Fabricius's drawing), Part 03 plate 11 (the jugs), Part 05 plate 06 (Malpighi's microscope). Three beats, all on model.
+- **Wonder, not gore:** the arm plates are arm and hand only on clean skin; animal hearts appear only as ink drawings (Part 03 plate 03); the transfusion is tools only (Part 05 plate 13).
+- **Readable writing:** the sums plates (Part 01 `04_sum_page`, Part 03 `08`–`10`) ask for large *2 oz*, *1/8*, *1000*, to be checked by hand on every take. *De Motu Cordis* is a text overlay on Part 04 `23_press_1628` (plate title page left plain).
+- **Labels:** white Didot italic, 1–4 words, one at a time, on the plate's first beat (added in the edit).
+- **Spend for the whole film:** 84 Quality + 13 Fast plates on try 1, roughly 8,700 Flow credits before any remints.
+
+### Part 01 mint: STOPPED before any spend
+
+- Flow gate on the Mini (`benoats@googlemail.com`, CDP :9222): `GATE PASS account=benoats@googlemail.com credits=62`. The page shows "You're running low on Google Flow credits. Your credits will reset monthly, or top up to get more now."
+- 62 credits won't buy one Quality plate (about 100). Part 01's light plates must be Quality, and the playbook says to wait for the reset rather than drop to Fast or Ken Burns. Nothing was minted.
+- Start-frame stills (`07_Edit-Project/_gen_part01_stills_v01.py`, Gemini Flash Image) also failed: `HTTP 402 … Your prepayment credits are depleted`. No stills were made.
+- The mint is ready to run as soon as credits exist: board `mint: true`, one plate at a time from `01_pulse_wrist` until the first KEEP.
+
+### Shorts scripts v01
+
+`10_Shorts/SHORTS_SCRIPTS_v01.md`: A, the sum (63 words, lead Short for Fri 30 Oct); B, the tied arm (63); C, the capillaries Harvey never saw (57). Each one has the named thing at frame 0, moving, with the claim first, the long's title at 9–14 s, and a loop back to the opening. Checked against the live Shorts page (13 public, 1 Oct 23:55) and `SHORTS_LOG.md`: no blood, heart or vein Short exists. Waiting for Ben (sign-off 3).
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 | `07_Edit-Project/parts/part-01_plates_v01.json` | — | stale (built on script v01); VO v01 0:57.02 |
-| 02 | | | script v02 |
-| 03 | | | script v02 |
-| 04 | | | script v02 |
-| 05 | | | script v02 |
+| 01 | `07_Edit-Project/parts/part-01_plates_v01.json` (12 plates, mint: true) | — | board v01; mint STOPPED on Flow credits |
+| 02 | `07_Edit-Project/parts/part-02_plates_v01.json` (18) | — | board v01; waits for Ben to pass Part 01 |
+| 03 | `07_Edit-Project/parts/part-03_plates_v01.json` (19) | — | board v01 |
+| 04 | `07_Edit-Project/parts/part-04_plates_v01.json` (27) | — | board v01 |
+| 05 | `07_Edit-Project/parts/part-05_plates_v01.json` (21) | — | board v01 |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.

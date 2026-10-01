@@ -46,7 +46,7 @@ Filled 1 Oct 2026 from public signals: `evidence_2026-10-01_public_search.json` 
 | Reject | Your Blood Goes Round in a Circle… | — | Too close to The Field Notebook's live title | **Reject** |
 | Reject | How Did We Discover Blood Circulation? | — | Retired formula | **Reject** |
 
-**Locked title:** pending Ben (sign-off point 2, with the script).
+**Locked title:** *The Tied Arm That Proved Your Blood Circulates* (Ben, 1 Oct 2026, with the script v02). T&C: *Why Doctors Thought Your Blood Was Used Up*.
 
 ## 3b. Script reviewer
 
@@ -96,9 +96,9 @@ cd 07_Content-Ops && npm run review:script -- --file ../02_Video-Projects/005_Ho
 
 ## 7. Sign-off (block production until checked)
 
-- [ ] Keywords pulled and primary locked: public signals done (§2); **vidIQ pending Ben**
-- [ ] Title locked: **pending Ben**
-- [ ] Script reviewer ≥ 90: **84.4, not passed**
+- [x] Keywords pulled and primary locked: public signals done (§2); **vidIQ waived by Ben, 1 Oct 2026**
+- [x] Title locked: *The Tied Arm That Proved Your Blood Circulates*, with the script v02 sign-off (Ben, 1 Oct 2026, "1–5 yes, 29 Oct")
+- [ ] Script reviewer ≥ 90: **89.8** on v02 with the fixed reviewer (#185). Not ≥ 90; Ben signed off v02 on 1 Oct 2026 (gate override, STUDIO_PLAYBOOK §2)
 - [x] Outlier patterns mapped into the chapter arc
 - [x] Thumb concepts match the title promise (one object · one emotion)
 - [x] Chapter teach-points listed (5 acts)
@@ -106,9 +106,9 @@ cd 07_Content-Ops && npm run review:script -- --file ../02_Video-Projects/005_Ho
 - [x] Retention plan filled
 - [x] Production checklist path noted: `11_Upload-Package/PRODUCTION_CHECKLIST_V2.md`
 
-**Signed off by:** —
-**Date:** —
+**Signed off by:** vidIQ waived by Ben, 1 Oct 2026 (in chat with Claude: "waive vidIQ, merge #186 and voice OK"; relayed on desk PR #180)
+**Date:** 1 Oct 2026
 
-Pending Ben: vidIQ, the title lock and the script score.
+The script score stays 89.8 on Ben's recorded override (as on 004).
 
 **Only then:** VO (Ben Orbit Narrator) → Flow Veo plates → edit.
