@@ -70,7 +70,7 @@ def relevant(title: str, phrases: list[str]) -> bool:
     """On the subject: the title holds a topic phrase or one of its key words (4+ letters)."""
     t = title.lower()
     keys = {w for p in phrases for w in re.findall(r"[a-z]{4,}", p.lower()) if w not in STOP}
-    return any(p.lower() in t for p in phrases) or any(re.search(rf"\b{re.escape(k)}", t) for k in keys)
+    return any(p.lower() in t for p in phrases) or any(re.search(rf"\b{re.escape(k)}s?\b", t) for k in keys)
 
 
 def queries(phrases: list[str]) -> list[str]:
