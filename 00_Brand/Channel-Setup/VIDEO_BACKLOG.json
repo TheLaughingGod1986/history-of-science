@@ -2,7 +2,7 @@
   "channel": "History of Science",
   "handle": "@HistoryOfScienceYT",
   "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
-  "updated": "2026-09-25",
+  "updated": "2026-10-01",
   "note": "HOS only. Orbit's old space backlog is in _archive/00_Brand/Channel-Setup/VIDEO_BACKLOG.json. Status 'idea' means proposed, not picked: Ben picks every topic (AGENTS.md sign-off 1).",
   "cadence": {
     "strategy": "HOS_STRATEGY.md",
@@ -36,6 +36,17 @@
       "public": "2026-09-24 (Premiere)"
     },
     {
+      "id": "005",
+      "working_title": "The Tied Arm That Proved Your Blood Circulates",
+      "status": "in production",
+      "folder": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates",
+      "picked": "2026-10-01 (Ben: \"Blood\")",
+      "familiar_thing": "your heartbeat",
+      "moment": "Harvey proves blood circulates, De Motu Cordis 1628",
+      "person": "William Harvey",
+      "room": "the Royal College of Physicians, London"
+    },
+    {
       "id": "idea-penicillin",
       "status": "idea",
       "familiar_thing": "the mould on old bread",
@@ -58,14 +69,6 @@
       "moment": "the first public ether operation, Boston, 1846",
       "person": "William Morton",
       "room": "the domed operating theatre"
-    },
-    {
-      "id": "idea-blood",
-      "status": "idea",
-      "familiar_thing": "your heartbeat",
-      "moment": "Harvey proves blood goes round in a circle, 1628",
-      "person": "William Harvey",
-      "room": "an anatomy theatre"
     },
     {
       "id": "idea-lightning",

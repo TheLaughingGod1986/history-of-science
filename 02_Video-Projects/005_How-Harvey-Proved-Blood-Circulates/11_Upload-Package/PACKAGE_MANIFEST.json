@@ -1,0 +1,67 @@
+{
+  "format": "longform",
+  "video": null,
+  "title": "The Tied Arm That Proved Your Blood Circulates",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/blood_long_description_v01.txt",
+  "tagsFile": "Tags/blood_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "The Tied Arm That Proved Your Blood Circulates",
+    "Why Doctors Thought Your Blood Was Used Up"
+  ],
+  "schedule": "2026-10-22T17:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": "_C92tIJCk8A",
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "Draft at script stage (1 Oct 2026). Titles and the Thu 22 Oct 18:00 UK (17:00 UTC) slot are proposals pending Ben. Nothing uploaded or scheduled on YouTube.",
+  "neighbours": {
+    "phrases": [
+      "blood",
+      "heart"
+    ],
+    "checked": "2026-10-01",
+    "videos": [
+      {
+        "id": "Ab9OZsDECZw",
+        "channel": "TED-Ed",
+        "title": "How blood pressure works - Wilfred Manzano",
+        "views": 17958434
+      },
+      {
+        "id": "3_PYnWVoUzM",
+        "channel": "TED-Ed",
+        "title": "What happens during a heart attack? - Krishna Sudhir",
+        "views": 9114588
+      },
+      {
+        "id": "xfZhb6lmxjk",
+        "channel": "TED-Ed",
+        "title": "Why do blood types matter? - Natalie S. Hodge",
+        "views": 6733953
+      },
+      {
+        "id": "ruM4Xxhx32U",
+        "channel": "TED-Ed",
+        "title": "How the heart actually pumps blood - Edmond Hui",
+        "views": 4458863
+      },
+      {
+        "id": "qcZKbjYyOfE",
+        "channel": "TED-Ed",
+        "title": "What happens if you're injected with the wrong blood type? - Bill Schutt",
+        "views": 1419018
+      }
+    ]
+  }
+}
