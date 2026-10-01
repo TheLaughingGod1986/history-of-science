@@ -78,3 +78,39 @@ PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
 ```
 
 Still Studio-only: Altered content = Yes (by eye; the Data API omits it).
+
+
+## 1 Oct 2026 — duplicate description line removed + Test & Compare (Grok, desk task 5941493885)
+
+Ben, 1 Oct, in chat with Claude: "1–5 yes" (the 003 duplicate line and the T&C thumbnails v02 approved). Desktop Studio over CDP (port 9460), `@HistoryOfScienceYT` only. One setting per save; Audience and Visibility re-read after each save and after reopening.
+
+**1. Description (23:20 London):** deleted only the paragraph "Something invisible had left the tube. He called it X — for unknown." (it repeated "named the unknown ray X"). Opening, story paragraph, chapters and sign-off unchanged; reopened and matched (`evidence_2026-10-01_studio/DESC_DUP_RESULT_2026-10-01.json`).
+
+**2. Test & Compare, title and thumbnail. Started Thu 1 Oct 2026, 23:27 London (22:27 UTC). Judge nothing before about 500 impressions per variant.**
+
+| Variant | Title | Thumbnail |
+|---|---|---|
+| A (control) | How Did We Discover X-rays? | current live thumbnail (unchanged) |
+| B | Why did a screen glow in a dark room? | `08_Thumbnail/Selected/hos_003_tc_thumb_v02.jpg` (1280×720, sha256 `75b8a7a951a5b5e33f71d3402bdd58ef65b73c4313b59bfdc82d21f23a5d0250`; jpgs are git-ignored) |
+
+| Save | Result | After save | After reopen |
+|---|---|---|---|
+| description | saved, reopened and matched | Visibility Public · not made for kids: True | Visibility Public · not made for kids: True |
+| Test & Compare (Title and thumbnail, 2 variants) | Set test + Save; reopened: "A/B testing titles · Running…" with both titles | Visibility Public · not made for kids: True | Visibility Public · not made for kids: True |
+
+Evidence: `11_Upload-Package/evidence_2026-10-01_studio/TC_RESULT_2026-10-01.json`, `TC_VERIFY_2026-10-01.json`.
+
+`npm run lint:package` before the session: PASS (001 and 003 are SKIP as already-public longs; 004 and 005 PASS).
+
+`npm run channel:audit` after the session (full output on the Mini: `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-01_tc/channel_audit_2026-10-01.txt`):
+
+```
+PASS  long  frP_YrNShsU  public  How Did We Discover X-rays?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+
+22 videos, 0 errors.
+```
+
+Screenshots on the Mini under `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-01_tc/` (`VERIFY_<film>_01_details_top.png`, `<film>_tc_commit_04_filled.png`), and on the desk (PR #180). Altered content was not touched in this session (Yes since the 30 Sep sweep; by eye, the Data API omits it).

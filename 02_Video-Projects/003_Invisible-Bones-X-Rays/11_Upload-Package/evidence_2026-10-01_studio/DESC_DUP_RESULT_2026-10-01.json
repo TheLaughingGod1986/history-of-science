@@ -1,0 +1,51 @@
+{
+  "vid": "frP_YrNShsU",
+  "setting": "description: delete duplicate paragraph",
+  "av_start": {
+    "chip": "Visibility Public",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "before": "X-rays let us see through skin. This is how Röntgen found them: a tube wrapped in black cardboard, a screen across a dark room that glowed when it shouldn't have, and a wedding ring on the first plate.\n\nIn a Würzburg lab in 1895, Wilhelm Röntgen chased a glow that had no business being there, and named the unknown ray X.\n\nSomething invisible had left the tube. He called it X — for unknown.\n\nThis is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha Röntgen’s hand — bones and wedding ring — that turned a haunted glow into proof the world could not argue with.\n\nChapters\n0:00 A Dark Lab, 1895\n1:27 The Cardboard\n2:32 Bones Without a Knife\n3:59 Bertha’s Ring\n5:25 A New Kind of Seeing\n\nHistory of Science\nDISCOVERY. WONDER. PROOF.\n\n@HistoryOfScienceYT",
+  "dup_count": 1,
+  "typed_ok": true,
+  "save": {
+    "enabled": true,
+    "clicked": true,
+    "confirm": "Save"
+  },
+  "av_after_save": {
+    "chip": "Visibility Public",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "av_reopen": {
+    "chip": "Visibility Public",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "after": "X-rays let us see through skin. This is how Röntgen found them: a tube wrapped in black cardboard, a screen across a dark room that glowed when it shouldn't have, and a wedding ring on the first plate.\n\nIn a Würzburg lab in 1895, Wilhelm Röntgen chased a glow that had no business being there, and named the unknown ray X.\n\nThis is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha Röntgen’s hand — bones and wedding ring — that turned a haunted glow into proof the world could not argue with.\n\nChapters\n0:00 A Dark Lab, 1895\n1:27 The Cardboard\n2:32 Bones Without a Knife\n3:59 Bertha’s Ring\n5:25 A New Kind of Seeing\n\nHistory of Science\nDISCOVERY. WONDER. PROOF.\n\n@HistoryOfScienceYT",
+  "verified": true,
+  "av_final": {
+    "chip": "Visibility Public",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "at": "2026-10-01T23:20:05+01:00"
+}

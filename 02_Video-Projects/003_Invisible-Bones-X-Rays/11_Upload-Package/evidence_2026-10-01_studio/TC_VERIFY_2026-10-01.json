@@ -1,0 +1,17 @@
+{
+  "vid": "frP_YrNShsU",
+  "running": true,
+  "titles": [
+    "How Did We Discover X-rays?",
+    "Why did a screen glow in a dark room?"
+  ],
+  "av": {
+    "chip": "Visibility Public",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+      "no": false,
+      "yes": false
+    }
+  }
+}
