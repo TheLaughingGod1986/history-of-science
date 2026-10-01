@@ -132,6 +132,7 @@ python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_S
 | Fragile light (lamps, flasks, glows, anything emissive) | **Veo 3.1 Quality**. Never Fast. |
 | Low-risk motion garnish | Veo 3.1 Fast |
 | Fallback, only when Flow is broken | Gemini API `orbit_gemini_veo.py` with `veo-3.1-lite-generate-preview` or `veo-3.1-generate-preview` (not the Fast API model: its quota 429s) |
+| Fallback when Flow is out of credits (1 Oct 2026, Ben's OK; used for 004 Part 05 and 005) | **Vertex AI Veo** in Google Cloud project `gen-lang-client-0538779324` ("History of Science", `us-central1`, ADC as `benoats@googlemail.com`): `veo-3.1-generate-001` for Quality plates, `veo-3.1-fast-generate-001` for Fast. Setup: `02_Video-Projects/004_…/07_Edit-Project/PART05_VERTEX_SETUP.md`. Check the remaining credit before a part and log every take's cost. Never an Orbit project, although the billing account is shared. |
 
 - **Auth:** the Mac Mini CDP worker on `benoats@googlemail.com` (AI Ultra) only. Never `benoats86` or a prepaid-dry account for HOS Veo. If Flow asks for a passkey or signs out, stop and report; don't work around it.
 - **Daily Flow limits** can block even with credits left. Wait for the reset. Never ship Ken Burns or a still push as a substitute.
