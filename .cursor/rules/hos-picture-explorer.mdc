@@ -14,7 +14,7 @@ alwaysApply: false
 
 Full rules: `STUDIO_PLAYBOOK.md` §5–§6.
 
-- **Engine:** Google Flow, Veo 3.1, start-frame I2V (`04_Audio/tools/orbit_flow_veo_ui.py --start-frame …`). **Quality** for fragile light (lamps, flasks, glows); Fast only for low-risk garnish. Mac Mini CDP on `benoats@googlemail.com` (Ultra) only; stop and report on a passkey or sign-out. Gemini API Veo Lite only when Flow is broken. No Omni, Seedance, Kling or ElevenLabs Image & Video.
+- **Engine:** Google Flow, Veo 3.1, start-frame I2V (`04_Audio/tools/orbit_flow_veo_ui.py --start-frame …`). **Quality** for fragile light (lamps, flasks, glows); Fast only for low-risk garnish. Mac Mini CDP on `benoats@googlemail.com` (Ultra) only; stop and report on a passkey or sign-out. Gemini API Veo Lite only when Flow is broken. When Flow is out of credits: Vertex AI Veo in the HOS Cloud project `gen-lang-client-0538779324` (`veo-3.1-generate-001` Quality, `veo-3.1-fast-generate-001` Fast; never an Orbit project; check credit first, log each take's cost; Ben's OK 1 Oct 2026). No Omni, Seedance, Kling or ElevenLabs Image & Video.
 - **Plate library:** a plate board per part (`parts/part-NN_plates_v01.json`); seed from the last KEEP plate; one plate at a time until the first KEEP, then parallel; after two same-framing FAILs change the framing; plate UAT on continuous playback (start, middle, end), never stills; assemble only when every plate passed; never paint-patch.
 - **Prompts:** say "same <place> <year> set"; never "same DNA" or "lab DNA".
 - **The look:** premium finished 3D cartoon, warm light, one style per part. Continuous motion. Silent picture; no text or logos in plates.
