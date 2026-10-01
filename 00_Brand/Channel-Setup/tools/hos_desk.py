@@ -109,11 +109,22 @@ def comments(r: str, pr: int) -> list[dict]:
     return [json.loads(line) for line in out.splitlines() if line.strip()]
 
 
+def sparse_clone(r: str, dest: Path, branch: str | None = None) -> None:
+    """Clone only `_desk/` (no other blobs): the Mini's disk can't hold a full second copy of the repo."""
+    cmd = ["git", "clone", "--quiet", "--filter=blob:none", "--no-checkout", "--single-branch", "--depth", "1"]
+    if branch:
+        cmd += ["--branch", branch]
+    sh(*cmd, f"https://github.com/{r}.git", str(dest))
+    sh("git", "sparse-checkout", "set", "--no-cone", "/_desk/", cwd=dest)
+    sh("git", "checkout", "--quiet", branch or "HEAD", cwd=dest)
+
+
 def worktree(r: str) -> Path:
     wt = HOME / "worktree"
     if not (wt / ".git").exists():
         HOME.mkdir(parents=True, exist_ok=True)
-        sh("git", "clone", "--quiet", "--branch", BRANCH, "--single-branch", f"https://github.com/{r}.git", str(wt))
+        shutil.rmtree(wt, ignore_errors=True)
+        sparse_clone(r, wt, BRANCH)
     sh("git", "pull", "--quiet", "--ff-only", cwd=wt)
     return wt
 
@@ -134,7 +145,8 @@ def push_images(r: str, film: str, stage: str, paths: list[str]) -> list[str]:
         rel = rel_dir / (p.stem + ".jpg")
         im.save(wt / rel, "JPEG", quality=85)
         rels.append(rel)
-    sh("git", "add", *map(str, rels), cwd=wt)
+    # .gitignore ignores **/*.jpg; desk stills are allowed (MEDIA above keeps video/audio out).
+    sh("git", "add", "-f", *map(str, rels), cwd=wt)
     sh("git", "commit", "--quiet", "-m", f"desk: {film} {stage} images", cwd=wt)
     sh("git", "push", "--quiet", "origin", BRANCH, cwd=wt)
     sha = sh("git", "rev-parse", "HEAD", cwd=wt)
@@ -153,7 +165,7 @@ def cmd_init(ns) -> None:
         sh("gh", "label", "create", name, "-R", r, "--color", colour, "--description", desc, "--force")
     tmp = HOME / "init"
     shutil.rmtree(tmp, ignore_errors=True)
-    sh("git", "clone", "--quiet", "--depth", "1", f"https://github.com/{r}.git", str(tmp))
+    sparse_clone(r, tmp)
     sh("git", "checkout", "--quiet", "-b", BRANCH, cwd=tmp)
     (tmp / "_desk").mkdir(exist_ok=True)
     (tmp / "_desk" / "README.md").write_text(
@@ -267,6 +279,8 @@ def cmd_thread(ns) -> None:
 
 
 def main() -> None:
+    # launchd writes stdout to a file; without line buffering watch.log stays empty.
+    sys.stdout.reconfigure(line_buffering=True)
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("init").set_defaults(fn=cmd_init)
