@@ -8,7 +8,7 @@
 | Neighbour gate | PASS: 8 education videos with 1M+ views, TED-Ed yes (`11_Upload-Package/evidence_2026-10-01_neighbours.json`) |
 | Pre-build vidIQ audit | filled from public signals; **vidIQ pending Ben**; not signed |
 | Script sign-off | **Script v02 signed off by Ben, 1 Oct 2026** ("1–5 yes, 29 Oct", in chat with Claude; relayed on desk PR #180) |
-| Script review | pending reviewer fix (Claude, PR #185). Last run: 84.4 / 90 REJECT on v02 with the old reviewer |
+| Script review | 89.8 with the fixed reviewer (#185). v02 signed off by Ben, 1 Oct 2026 (gate override, STUDIO_PLAYBOOK §2) |
 | Episode gate | **BLOCK** on the old reviewer score and the unsigned vidIQ audit; VO went ahead on Ben's script sign-off (desk task, 1 Oct) |
 | lint:package | PASS, 1 Oct 2026, schedule 29 Oct (captions warning) |
 | VO | **v01 done, all `vo_check.py` PASS, 8:15.33, waiting for Ben to listen** (`02_Voiceover/hos_005_vo_all_parts_listen_v01.mp3`) |
@@ -20,7 +20,6 @@
 ## STOP
 
 - **Voice: waiting for Ben to listen** to `hos_005_vo_all_parts_listen_v01.mp3` (sign-off point 4). No picture spend until he OKs it.
-- **Script score row** waits for the fixed reviewer (PR #185).
 - **vidIQ audit** still unsigned (gate:episode BLOCK on it).
 
 ## 1 Oct 2026 — topic, script v01, gates (Grok)
@@ -200,6 +199,21 @@ PASS  hos_005_vo_all_parts_listen_v01.mp3  8:15.33  mean -21.5 dB  peak -2.3 dB 
 ```
 
 Part and chapter times in the script are estimates; re-time every part and chapter card from these starts before plate boards.
+
+## 1 Oct 2026 — script v02 with the fixed reviewer (Grok, desk task from Claude)
+
+Reviewer from `main` after #185 merged; script text unchanged. `npm run review:script -- --file ../02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/01_Script/blood_script_master_v02.md`:
+
+```
+**Decision:** REJECT · **Score:** 89.8 / 100
+hook 7.5 · curiosity 7.5 · storytelling 8 · scientificAccuracy 10 · emotion 9.6 · escalation 10 · retentionPotential 9 · searchPotential 9.1 · visualOpportunities 9.5 · narrationFlow 9.6
+Words: 1257 · Est. min: 8.4 · Chapters: 4
+- [warn] hook: No question mark in the first spoken window — consider an immediate unanswered question.
+- [info] overall: Structure gates 8/8 — applied +1.05 completeness boost to supporting dimensions.
+- [fail] overall: Total 89.8/100 is below pass threshold 90. Rewrite before VO or picture gen.
+```
+
+The first question ("So how did a band tied round an arm prove them wrong?") lands just after the opening window. Ben signed off v02 on 1 Oct 2026, so 89.8 stands as a gate override (STUDIO_PLAYBOOK §2).
 
 ## Parts
 
