@@ -18,12 +18,13 @@ Evidence: **[HOS]** means our own channel. **[Orbit]** means Orbit's 48 Shorts; 
    | One real number or object | *The flask that has stayed sterile since the 1860s* |
    | An accident that changed everything | *The glowing screen that showed a skeleton* |
 
-3. **Longs: the phrase people search, as a question or a promise,** with the subject in the first five words. Prefer the thing over the method: *How X-rays Let Us See Inside the Body*, *Why Doctors Laughed at Handwashing*. **Don't use *How Did We Discover X?* every week.** It reads as a series label and competes with the largest education channels on the same phrase. [HOS: the three formula titles have 88 views between them] [Orbit: series formulas and "Everything you need to know" lose]
-4. **No abstract labels or riddles.** *What other table has empty chairs?* (4 views) and *Invisible life is still everywhere* (6) make the viewer decode the title. If it could be a caption under a still, rewrite it. [HOS] [Orbit]
-5. **No hedged claims.** "We may have…", "It might…", "What if…". A yes/no question starting "Did…" or "Could…" is fine. [Orbit]
-6. **No hashtags, no series suffix, and never the title of a live video.** [Orbit]
-7. **Under about 60 characters,** so it isn't cut off on a phone. Length is not the lever; the shape is. [Orbit]
-8. **Wonder, not fear.** Proof and discovery, not "deadly" or "horror".
+3. **Longs share the neighbours' words (1 Oct 2026).** The title, the description's first two lines and the tags each hold one of the film's neighbour phrases: the subject noun the big TED-Ed/education videos on the topic use (never their channel names) (*periodic table*, *atom*, *X-rays*, *germs*). That is how YouTube knows to suggest us beside them. [HOS 002: 108 of 126 views from "suggested", 55.6% of those from TED-Ed's *The genius of Mendeleev's periodic table*] `npm run lint:package` checks it against the manifest's `neighbours` block (`tools/neighbours.py`). Test & Compare variants should keep the phrase too; one picture-led variant without it is allowed.
+4. **Longs: the phrase people search, as a question or a promise,** with the subject in the first five words. Prefer the thing over the method: *How X-rays Let Us See Inside the Body*, *Why Doctors Laughed at Handwashing*. **Don't use *How Did We Discover X?* every week.** It reads as a series label and competes with the largest education channels on the same phrase. [HOS: the three formula titles had 88 views between them by 25 Sep; 002 then took off through TED-Ed suggestions because *periodic table* is in its title, not because of the formula] [Orbit: series formulas and "Everything you need to know" lose]
+5. **No abstract labels or riddles.** *What other table has empty chairs?* (4 views) and *Invisible life is still everywhere* (6) make the viewer decode the title. If it could be a caption under a still, rewrite it. [HOS] [Orbit]
+6. **No hedged claims.** "We may have…", "It might…", "What if…". A yes/no question starting "Did…" or "Could…" is fine. [Orbit]
+7. **No hashtags, no series suffix, and never the title of a live video.** [Orbit]
+8. **Under about 60 characters,** so it isn't cut off on a phone. Length is not the lever; the shape is. [Orbit]
+9. **Wonder, not fear.** Proof and discovery, not "deadly" or "horror".
 
 ## 2. Long thumbnails (16:9)
 

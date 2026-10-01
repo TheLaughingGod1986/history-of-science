@@ -31,3 +31,33 @@ Channel: `@HistoryOfScienceYT` / `UCXp7HkBIl1LgaznXuZHJyRg` only. Evidence: `02_
 Path: `02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s06_carbolic_spray_punch_v01.mp4`  
 sha256: `ac24f66b14f32d5dfa1055d97647e6ce1fcb3d62b5bb7456c5e11d4466325a77`  
 Kept on disk; removed from git index (`git rm --cached`). Never re-add media with `git add -f`.
+
+
+## 1 Oct 2026 — Studio: description opening + tags (Grok, desk task on PR #180)
+
+Ben approved in chat with Claude on 1 Oct ("Blood, approve 001/003"). Approved text: `00_Brand/Channel-Setup/audits/NEIGHBOUR_PROPOSALS_2026-10-01.md` (commit 3577b81). Desktop Studio over CDP (port 9460), channel `@HistoryOfScienceYT` only. One setting per save. Title, thumbnail, schedule and file untouched. Test & Compare not touched (two T&C thumbnails made for review on the desk, **not added to Studio**).
+
+`_C92tIJCk8A`: new description opening (rest kept):
+
+> Disease was once blamed on bad air. Germ theory, and Pasteur's swan-neck flask, proved the air carried living things that get into wounds.
+>
+> This film is how we found that out: a death ward, a drop of pond water, Semmelweis’s hands, Pasteur’s swan-neck flask, and Lister’s spray.
+
+Tags: germs, germ theory, louis pasteur, joseph lister, microbes, history of medicine, history of science
+
+| Save | Result | After save | After reopen |
+|---|---|---|---|
+| description | saved, reopened and matched | Visibility Public · not made for kids: True | Visibility Public · not made for kids: True |
+| tags | saved, reopened and matched | Visibility Public · not made for kids: True | Visibility Public · not made for kids: True |
+
+Evidence: `11_Upload-Package/evidence_2026-10-01_studio/` (`RESULT_001.json`, `before_api.json`, `after_api.json`). Studio screenshots of the description and tags are on the desk (PR #180); originals on the Mini under `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-01_001_003/`.
+
+`npm run channel:audit` after the session:
+
+```
+PASS  long  frP_YrNShsU  public  How Did We Discover X-rays?
+PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
+22 videos, 0 errors.
+```
+
+Still Studio-only: Altered content = Yes (by eye; the Data API omits it).

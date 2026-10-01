@@ -16,6 +16,7 @@ Readable copy with the evidence: `00_Brand/Channel-Setup/THUMBNAIL_AND_TITLE_RUL
 
 - A familiar noun in the first four words (your hands, your bones, a table, a drop of water, you).
 - One concrete promise: a familiar thing turned strange; the body or the everyday seen for the first time; a yes/no about what everyone believed; a prediction that came true; one real number or object; an accident that changed everything.
+- Longs share the neighbours' words (1 Oct 2026): the title, description's first two lines and tags each hold a `neighbours.phrases` noun from the manifest (`tools/neighbours.py`). 002 gets daily views beside TED-Ed's Mendeleev video because *periodic table* is in its title.
 - Longs: the searched phrase, subject in the first five words, the thing over the method. Not *How Did We Discover X?* every week.
 - **FAIL:** abstract labels or riddles (*What other table has empty chairs?* 4 views), hedged claims, hashtags, series suffixes, a copy of a live title, fear framing. Under about 60 characters.
 
