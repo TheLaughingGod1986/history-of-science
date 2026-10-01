@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 3,282,746 views | [Myths and misconceptions about evolution - Alex Gendler](https://youtu.be/mZt1Gn0R22Q) | evolution |
+| 2 | TED-Ed ★ | 2,530,398 views | [Is human evolution speeding up or slowing down? - Laurence Hurst](https://youtu.be/NTeOhj6dxsU) | ted-ed evolution |
+| 3 | TEDx Talks ★ | 2,158,813 views | [How we found out evolution is true: John van Wyhe at TEDxNTU](https://youtu.be/18YwBwIK_no) | evolution ted |
+| 4 | TED-Ed ★ | 1,915,478 views | [Five fingers of evolution - Paul Andersen](https://youtu.be/5NdMnlt2keE) | ted-ed evolution |
+| 5 | TED-Ed ★ | 1,529,995 views | [The evolution of the human eye - Joshua Harvey](https://youtu.be/qrKZBh8BL_U) | ted-ed evolution |
+| 6 | TED-Ed ★ | 657,538 views | [Evolution’s great mystery - Michael Corballis](https://youtu.be/lz0lQ58QMzQ) | ted-ed evolution |
+| 7 | TED ★ | 554,642 views | [Four billion years of evolution in six minutes | Prosanta Chakrabarty](https://youtu.be/XyTcINLKq4c) | ted-ed evolution |
+| 8 | TEDx Talks ★ | 244,175 views | [Beyond the "creation vs. evolution" debate | Denis Lamoureux | TEDxEdmonton](https://youtu.be/QaeGfV-N2kM) | evolution ted |
+| 9 | TEDx Talks ★ | 130,013 views | [Clues about the evolution of our extraordinary minds: Thomas Suddendorf at TEDxUQ](https://youtu.be/LLBfJYnXFU4) | evolution ted |
+| 10 | Primer | 15,710,085 views | [Simulating Natural Selection](https://youtu.be/0ZGbIKd0XrM) | natural selection |
+| 11 | Kurzgesagt – In a Nutshell | 11,435,357 views | [How Evolution works](https://youtu.be/hOfRN0KihOU) | evolution |
+| 12 | Amoeba Sisters | 4,590,216 views | [Natural Selection](https://youtu.be/7VM9YxmULuo) | natural selection |
+
+Words the top neighbours share: of evolution, the evolution, evolution of
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 13 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: audits/topic_packs_2026-10-01/evolution/neighbours.json

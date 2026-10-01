@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 17,958,392 views | [How blood pressure works - Wilfred Manzano](https://youtu.be/Ab9OZsDECZw) | ted-ed blood circulation |
+| 2 | TED-Ed ★ | 9,114,497 views | [What happens during a heart attack? - Krishna Sudhir](https://youtu.be/3_PYnWVoUzM) | ted-ed blood circulation |
+| 3 | TED-Ed ★ | 6,733,920 views | [Why do blood types matter? - Natalie S. Hodge](https://youtu.be/xfZhb6lmxjk) | ted-ed blood circulation |
+| 4 | TED-Ed ★ | 4,458,684 views | [How the heart actually pumps blood - Edmond Hui](https://youtu.be/ruM4Xxhx32U) | blood circulation |
+| 5 | TED-Ed ★ | 1,419,016 views | [What happens if you're injected with the wrong blood type? - Bill Schutt](https://youtu.be/qcZKbjYyOfE) | ted-ed blood circulation |
+| 6 | TEDx Talks ★ | 578,917 views | [Your brain on music | Alan Harvey | TEDxPerth](https://youtu.be/MZFFwy5fwYI) | william harvey ted |
+| 7 | TED ★ | 420,190 views | [Prince William | This decade calls for Earthshots to repair our planet](https://youtu.be/3w6Ztmpm910) | william harvey ted |
+| 8 | TED-Ed ★ | 277,655 views | [Harvey Milk's radical vision of equality - Lillian Faderman](https://youtu.be/wr3kUfW2fM0) | ted-ed william harvey |
+| 9 | TED ★ | 110,031 views | [Del Harvey: The strangeness of scale at Twitter](https://youtu.be/mAvSoNUgMno) | william harvey ted |
+| 10 | CrashCourse | 8,070,685 views | [The Heart, Part 1 - Under Pressure: Crash Course Anatomy & Physiology #25](https://youtu.be/X9ZZ6tcxArI) | how the heart pumps blood |
+| 11 | Amoeba Sisters | 7,386,944 views | [Circulatory System and Pathway of Blood Through the Heart](https://youtu.be/_vZ0lefPg_0) | blood circulation |
+| 12 | Khan Academy | 1,332,527 views | [Circulatory system and the heart | Human anatomy and physiology | Health & Medicine | Khan Academy](https://youtu.be/QhiVnFvshZg) | khan academy blood circulation |
+
+Words the top neighbours share: what happens, the heart
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 8 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: audits/topic_packs_2026-10-01/blood/neighbours.json

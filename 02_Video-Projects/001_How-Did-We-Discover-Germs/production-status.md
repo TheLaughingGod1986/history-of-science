@@ -61,3 +61,38 @@ PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
 ```
 
 Still Studio-only: Altered content = Yes (by eye; the Data API omits it).
+
+
+## 1 Oct 2026 — Test & Compare: title and thumbnail (Grok, desk task 5941493885)
+
+Ben, 1 Oct, in chat with Claude: "1–5 yes" (T&C thumbnails v02 approved, no dust detail). Desktop Studio over CDP (port 9460), `@HistoryOfScienceYT` only. One save; Audience and Visibility re-read after the save and after reopening.
+
+**Test started Thu 1 Oct 2026, 23:25 London (22:25 UTC). Judge nothing before about 500 impressions per variant.**
+
+| Variant | Title | Thumbnail |
+|---|---|---|
+| A (control) | How Did We Discover Germs? | current live thumbnail (unchanged) |
+| B | What proved germs were real? | `08_Thumbnail/Selected/hos_001_tc_thumb_v02.jpg` (1280×720, sha256 `9a3548e08e39efaf4a382091eac72824f0261405ab62611e2bb01d3421a69394`; jpgs are git-ignored) |
+
+| Save | Result | After save | After reopen |
+|---|---|---|---|
+| Test & Compare (Title and thumbnail, 2 variants) | Set test + Save; reopened: "A/B testing titles · Running…" with both titles | Visibility Public · not made for kids: True | Visibility Public · not made for kids: True |
+
+The earlier thumbnail-only test (ran 3 Sep 18:08 to 17 Sep 18:47, "Not enough impressions to declare a winner") was deleted by Studio when the new test was created; Studio keeps one test per video.
+
+Evidence: `11_Upload-Package/evidence_2026-10-01_studio/TC_RESULT_2026-10-01.json`, `TC_VERIFY_2026-10-01.json`.
+
+`npm run lint:package` before the session: PASS (001 and 003 are SKIP as already-public longs; 004 and 005 PASS).
+
+`npm run channel:audit` after the session (full output on the Mini: `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-01_tc/channel_audit_2026-10-01.txt`):
+
+```
+PASS  long  frP_YrNShsU  public  How Did We Discover X-rays?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+
+22 videos, 0 errors.
+```
+
+Screenshots on the Mini under `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-01_tc/` (`VERIFY_<film>_01_details_top.png`, `<film>_tc_commit_04_filled.png`), and on the desk (PR #180). Altered content was not touched in this session (Yes since the 30 Sep sweep; by eye, the Data API omits it).

@@ -1,0 +1,7 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| how did newton discover gravity | yes | BBC Studios 158,424 · ScienceClic English 89,583 · BBC Bitesize for Teachers 135,548 · UNSW Physics 33,046 · Whimsy Wonders 2,705 |
+| newton apple | yes | Stile Education 8,838 · x9 68,649 · Sweet Dreams 5,474 · Whimsy Wonders 2,707 · learning junction 2,518,935 |
+| law of universal gravitation | yes | Professor Dave Explains 540,269 · Sabins 1,795,731 · Khan Academy 101,773 · Physics Done Phast 6,594 · CrashCourse 1,386,639 |
+
+Raw pull: audits/topic_packs_2026-10-01/gravity/public_search.json
