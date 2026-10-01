@@ -1,0 +1,74 @@
+{
+  "film": "001",
+  "vid": "_C92tIJCk8A",
+  "commit": true,
+  "steps": [
+    {
+      "shot": "001_tc_commit_01_opened.png"
+    },
+    {
+      "shot": "001_tc_commit_02_setup.png"
+    },
+    {
+      "shot": "001_tc_commit_03_mode.png"
+    },
+    {
+      "shot": "001_tc_commit_04_filled.png"
+    },
+    {
+      "shot": "001_tc_commit_05_set.png"
+    },
+    {
+      "shot": "001_tc_commit_06_verify_dialog.png"
+    },
+    {
+      "shot": "001_tc_commit_07_audience.png"
+    }
+  ],
+  "av_start": {
+    "chip": "Visibility Public",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "slot1_title": "How Did We Discover Germs?",
+  "slot2_title": "What proved germs were real?",
+  "slot3_title": "",
+  "set_enabled": true,
+  "save": {
+    "enabled": true,
+    "clicked": true,
+    "confirm": "Save"
+  },
+  "av_after_save": {
+    "chip": "Visibility Public",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "av_reopen": {
+    "chip": "Visibility Public",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "av_final": {
+    "chip": "Visibility Public",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "at": "2026-10-01T23:25:28+01:00"
+}
