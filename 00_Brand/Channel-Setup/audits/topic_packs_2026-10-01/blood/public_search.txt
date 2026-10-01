@@ -1,0 +1,7 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| how did harvey prove blood circulates | no | Few Minutes Knowledge 11,505 · HomeschoolingresourcesUK 48 · The Field Notebook 2 · Royal College of Physicians 46,079 · Scientists to Sleep 7 |
+| william harvey | yes | Royal College of Physicians 46,079 · East Kent Hospitals University NHS Foundation Trust 4,046 · de Nicola Center for Ethics and Culture 1,775 · BBC Bitesize for Teachers 319,678 · World Science Festival 126,430 |
+| blood circulation discovery | related: william harvey blood circulation discovery | Royal College of Physicians 46,079 · OpenMind 887,946 · Few Minutes Knowledge 11,517 · Mayo Clinic 8,223,081 · Learn Bright 3,385,709 |
+
+Raw pull: audits/topic_packs_2026-10-01/blood/public_search.json

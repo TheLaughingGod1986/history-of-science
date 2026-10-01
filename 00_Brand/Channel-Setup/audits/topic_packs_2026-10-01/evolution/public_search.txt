@@ -1,0 +1,7 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| how did darwin discover evolution | yes | BBC News 1,684,643 · OpenMind 568,911 · Natural History Museum 6,994 · The People Profiles 1,265,306 · StarTalk Plus 361,762 |
+| natural selection | yes | Freesciencelessons 466,762 · Amoeba Sisters 4,590,140 · Natural History Museum 147,443 · Cornerstones Education 1,307,916 · FuseSchool - Global Education 731,371 |
+| darwin finches | yes | FuseSchool - Global Education 731,366 · OpenLearn from The Open University 331,518 · The Genetic Basis of Stuff and Things 50,541 · Galapagos 131,957 · BBC Earth 618,065 |
+
+Raw pull: audits/topic_packs_2026-10-01/evolution/public_search.json

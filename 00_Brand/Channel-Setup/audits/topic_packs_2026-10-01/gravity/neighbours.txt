@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 9,909,433 views | [Newton’s three-body problem explained - Fabio Pacucci](https://youtu.be/D89ngRr4uZg) | ted-ed gravity |
+| 2 | TED-Ed ★ | 2,913,074 views | [Newton's 3 Laws, with a bicycle - Joshua Manley](https://youtu.be/JGO_zDWmkvk) | ted-ed gravity |
+| 3 | TED-Ed ★ | 1,657,509 views | [How do geckos defy gravity? - Eleanor Nelsen](https://youtu.be/YeSuQm7KfaE) | ted-ed gravity |
+| 4 | TED-Ed ★ | 596,944 views | [How far would you have to go to escape gravity? - Rene Laufer](https://youtu.be/YlxKh4oCKhw) | ted-ed gravity |
+| 5 | TED-Ed ★ | 542,926 views | [How to think about gravity - Jon Bergmann](https://youtu.be/lY3XV_GGV0M) | ted-ed gravity |
+| 6 | TED-Ed ★ | 459,449 views | [Gravity and the human body - Jay Buckey](https://youtu.be/7CuYx9mZCQA) | ted-ed gravity |
+| 7 | TED-Ed ★ | 204,896 views | [Gravity vs. Pressure: The battle that formed the universe - Fabio Pacucci](https://youtu.be/kU8s_4HBG98) | ted-ed gravity |
+| 8 | Veritasium | 15,454,556 views | [What Everyone Gets Wrong About Gravity](https://youtu.be/XRr1kaXKBsU) | gravity |
+| 9 | CrashCourse | 6,022,897 views | [Newton's Laws: Crash Course Physics #5](https://youtu.be/kKKM8Y-u7ds) | ted-ed isaac newton |
+| 10 | CrashCourse | 1,386,639 views | [Newtonian Gravity: Crash Course Physics #8](https://youtu.be/7gf6YpdvtE0) | newton's law of gravity |
+| 11 | Khan Academy | 1,331,675 views | [Inclined plane force components | Forces and Newton's laws of motion | Physics | Khan Academy](https://youtu.be/TC23wD34C7k) | khan academy newton's law of gravity |
+| 12 | Khan Academy | 1,281,126 views | [More on Newton's first law of motion | Physics | Khan Academy](https://youtu.be/CQYELiTtUs8) | khan academy isaac newton |
+
+Words the top neighbours share: fabio pacucci, newton's laws, about gravity, crash course, course physics
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 8 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: audits/topic_packs_2026-10-01/gravity/neighbours.json
