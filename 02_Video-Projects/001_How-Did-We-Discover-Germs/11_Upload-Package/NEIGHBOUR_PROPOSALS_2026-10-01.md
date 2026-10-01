@@ -7,7 +7,7 @@ Neighbour (gate PASS): TED-Ed — *How do germs spread (and why do they make us 
 ## (a) Description — first two lines (proposed)
 
 ```
-Germs were once blamed on bad air. Germ theory — and Pasteur’s flask — proved the air was full of living things that get into wounds.
+Disease was once blamed on bad air. Germ theory, and Pasteur's swan-neck flask, proved the air carried living things that get into wounds.
 
 This film is how we found that out: a death ward, a drop of pond water, Semmelweis’s hands, Pasteur’s swan-neck flask, and Lister’s spray.
 ```
