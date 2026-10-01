@@ -1,0 +1,203 @@
+{
+ "pulled": "2026-10-01",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "penicillin",
+  "alexander fleming",
+  "antibiotics discovery"
+ ],
+ "autocomplete": {
+  "penicillin": [
+   "penicillin",
+   "penicillin pharmacology",
+   "penicillin injection",
+   "penicillin soup",
+   "penicillin cocktail",
+   "penicillin tablet",
+   "penicillin football khela",
+   "penicillin discovery",
+   "penicillin video",
+   "penicillin ki khoj kisne ki thi"
+  ],
+  "alexander fleming": [
+   "alexander fleming",
+   "alexander fleming discovery of penicillin",
+   "alexander fleming story",
+   "alexander fleming information in english",
+   "alexander fleming contribution in microbiology",
+   "alexander fleming biography",
+   "alexander fleming penicillin",
+   "alexander fleming drawing",
+   "alexander fleming 10 lines",
+   "alexander fleming marathi mahiti"
+  ],
+  "antibiotics discovery": [
+   "antibiotic discovery",
+   "antibiotic discovery history",
+   "antibiotic dosing"
+  ]
+ },
+ "sharedTitleWords": [],
+ "neighbours": [
+  {
+   "id": "bVjKL1zd-vQ",
+   "title": "Was Alexander the Great really that great? - Stephanie Honchell Smith",
+   "channel": "TED-Ed",
+   "views": "437,582 views",
+   "age": "9 mo ago",
+   "length": "6:27",
+   "tier": 1,
+   "viewCount": 437582,
+   "foundBy": "ted-ed alexander fleming",
+   "onTopic": true
+  },
+  {
+   "id": "o3oDpCb7VqI",
+   "title": "Maryn McKenna: What do we do when antibiotics don’t work any more?",
+   "channel": "TED",
+   "views": "334,184 views",
+   "age": "11 yr ago",
+   "length": "17:00",
+   "tier": 1,
+   "viewCount": 334184,
+   "foundBy": "ted-ed penicillin",
+   "onTopic": true
+  },
+  {
+   "id": "tFfYh9THuGo",
+   "title": "How a long-forgotten virus could help us solve the antibiotics crisis | Alexander Belcredi",
+   "channel": "TED",
+   "views": "331,109 views",
+   "age": "7 yr ago",
+   "length": "11:14",
+   "tier": 1,
+   "viewCount": 331109,
+   "foundBy": "penicillin ted",
+   "onTopic": true
+  },
+  {
+   "id": "iWHq2m_Hwhw",
+   "title": "Ramanan Laxminarayan: The coming crisis in antibiotics",
+   "channel": "TED",
+   "views": "107,060 views",
+   "age": "11 yr ago",
+   "length": "14:47",
+   "tier": 1,
+   "viewCount": 107060,
+   "foundBy": "penicillin ted",
+   "onTopic": true
+  },
+  {
+   "id": "uVUf_pt7Sh0",
+   "title": "Antibiotics, Antivirals, and Vaccines",
+   "channel": "Amoeba Sisters",
+   "views": "1,376,847 views",
+   "age": "7 yr ago",
+   "length": "9:29",
+   "tier": 2,
+   "viewCount": 1376847,
+   "foundBy": "khan academy penicillin",
+   "onTopic": true
+  },
+  {
+   "id": "JRl7iJqFGiw",
+   "title": "Penicillin | Microorganisms | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "208,802 views",
+   "age": "6 yr ago",
+   "length": "4:16",
+   "tier": 2,
+   "viewCount": 208802,
+   "foundBy": "penicillin",
+   "onTopic": true
+  },
+  {
+   "id": "oxVzNcGP7M8",
+   "title": "How we're using AI to discover new antibiotics | Jim Collins",
+   "channel": "TED",
+   "views": "42,013 views",
+   "age": "6 yr ago",
+   "length": "7:16",
+   "tier": 1,
+   "viewCount": 42013,
+   "foundBy": "penicillin ted",
+   "onTopic": true
+  },
+  {
+   "id": "ALryAB_AYiA",
+   "title": "Antibiotics \"just-in-case\" | Debbie Goff | TEDxColumbus",
+   "channel": "TEDx Talks",
+   "views": "35,210 views",
+   "age": "9 yr ago",
+   "length": "12:39",
+   "tier": 1,
+   "viewCount": 35210,
+   "foundBy": "antibiotics discovery ted",
+   "onTopic": true
+  },
+  {
+   "id": "yDrI8q98YpU",
+   "title": "What would the world be like without antibiotics? | BBC Ideas",
+   "channel": "BBC Ideas",
+   "views": "29,412 views",
+   "age": "4 yr ago",
+   "length": "6:36",
+   "tier": 2,
+   "viewCount": 29412,
+   "foundBy": "antibiotics discovery",
+   "onTopic": true
+  },
+  {
+   "id": "vJd_oHdMzEM",
+   "title": "Prudent Prescribing of Antibiotics (Experiment with Dr. Prober)",
+   "channel": "Khan Academy",
+   "views": "26,377 views",
+   "age": "15 yr ago",
+   "length": "16:02",
+   "tier": 2,
+   "viewCount": 26377,
+   "foundBy": "khan academy penicillin",
+   "onTopic": true
+  },
+  {
+   "id": "makV286ZFDk",
+   "title": "Finding new antibiotics in deep, dark and wonderous places  | Mat Upton | TEDxTruro",
+   "channel": "TEDx Talks",
+   "views": "4,404 views",
+   "age": "7 yr ago",
+   "length": "14:22",
+   "tier": 1,
+   "viewCount": 4404,
+   "foundBy": "antibiotics discovery ted",
+   "onTopic": true
+  },
+  {
+   "id": "7VuoCVbXDm8",
+   "title": "Antibiotics: Cherish or Perish | Dr. Elizabeth Hermsen | TEDxOmaha",
+   "channel": "TEDx Talks",
+   "views": "2,338 views",
+   "age": "6 yr ago",
+   "length": "17:11",
+   "tier": 1,
+   "viewCount": 2338,
+   "foundBy": "penicillin ted",
+   "onTopic": true
+  },
+  {
+   "id": "LBSGjt4rFnY",
+   "title": "Penicillin: Saving Lives | Alyssa Shahin | TEDxPascoCountySchools",
+   "channel": "TEDx Talks",
+   "views": "217 views",
+   "age": "7 yr ago",
+   "length": "3:09",
+   "tier": 1,
+   "viewCount": 217,
+   "foundBy": "penicillin ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 1,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

@@ -1,0 +1,271 @@
+{
+ "pulled": "2026-10-01",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "dinosaurs",
+  "how dinosaurs went extinct"
+ ],
+ "autocomplete": {
+  "dinosaurs": [
+   "dinosaurs",
+   "dinosaurs for kids🦖🦕",
+   "dinosaurs for toddlers",
+   "dinosaurs fighting",
+   "dinosaurs documentary",
+   "dinosaurs toys",
+   "dinosaurs tv show",
+   "dinosaurs song",
+   "dinosaurs eggs",
+   "dinosaurs roar"
+  ],
+  "how dinosaurs went extinct": [
+   "how dinosaurs went extinct",
+   "how dinosaurs went extinct in hindi",
+   "how dinosaurs went extinct read aloud",
+   "how dinosaurs went extinct animation",
+   "how dinosaurs went extinct according to",
+   "how dinosaurs went extinct meme",
+   "how dinosaurs went extinct malayalam",
+   "how dinosaurs went extinct in telugu",
+   "how dinosaurs went extinct tamil",
+   "how dinosaurs went extinct dhruv rathee"
+  ]
+ },
+ "sharedTitleWords": [
+  "the last"
+ ],
+ "neighbours": [
+  {
+   "id": "yQduHyiWe9o",
+   "title": "Jellyfish predate dinosaurs. How have they survived so long? - David Gruber",
+   "channel": "TED-Ed",
+   "views": "3,516,758 views",
+   "age": "9 yr ago",
+   "length": "5:26",
+   "tier": 1,
+   "viewCount": 3516758,
+   "foundBy": "ted-ed dinosaurs",
+   "onTopic": true
+  },
+  {
+   "id": "8RI0JnB_OaE",
+   "title": "The ferocious predatory dinosaurs of Cretaceous Sahara - Nizar Ibrahim",
+   "channel": "TED-Ed",
+   "views": "2,006,039 views",
+   "age": "9 yr ago",
+   "length": "4:20",
+   "tier": 1,
+   "viewCount": 2006039,
+   "foundBy": "ted-ed dinosaurs",
+   "onTopic": true
+  },
+  {
+   "id": "kQa11RMCeSI",
+   "title": "Jack Horner: Shape-shifting dinosaurs",
+   "channel": "TED",
+   "views": "1,685,695 views",
+   "age": "14 yr ago",
+   "length": "18:24",
+   "tier": 1,
+   "viewCount": 1685695,
+   "foundBy": "dinosaurs ted",
+   "onTopic": true
+  },
+  {
+   "id": "6LGCk08zMbg",
+   "title": "Why did Megalodon go extinct? - Jack Cooper and Catalina Pimiento",
+   "channel": "TED-Ed",
+   "views": "1,576,962 views",
+   "age": "3 yr ago",
+   "length": "5:25",
+   "tier": 1,
+   "viewCount": 1576962,
+   "foundBy": "ted-ed dinosaurs",
+   "onTopic": true
+  },
+  {
+   "id": "hNNqht30TDo",
+   "title": "The last living members of an extinct species - Jan Stejskal",
+   "channel": "TED-Ed",
+   "views": "1,121,979 views",
+   "age": "6 yr ago",
+   "length": "5:32",
+   "tier": 1,
+   "viewCount": 1121979,
+   "foundBy": "ted-ed how dinosaurs went extinct",
+   "onTopic": true
+  },
+  {
+   "id": "qYijAZWdnBk",
+   "title": "How do we know what color dinosaurs were? - Len Bloch",
+   "channel": "TED-Ed",
+   "views": "924,550 views",
+   "age": "10 yr ago",
+   "length": "4:24",
+   "tier": 1,
+   "viewCount": 924550,
+   "foundBy": "ted-ed dinosaurs",
+   "onTopic": true
+  },
+  {
+   "id": "o1Z4F4e2Bw4",
+   "title": "Hunting for dinosaurs showed me our place in the universe | Kenneth Lacovara | TED",
+   "channel": "TED",
+   "views": "922,831 views",
+   "age": "10 yr ago",
+   "length": "15:50",
+   "tier": 1,
+   "viewCount": 922831,
+   "foundBy": "dinosaurs ted",
+   "onTopic": true
+  },
+  {
+   "id": "0EBFpj60LRY",
+   "title": "The real reason dodo birds went extinct - Leon Claessens",
+   "channel": "TED-Ed",
+   "views": "783,278 views",
+   "age": "2 yr ago",
+   "length": "5:32",
+   "tier": 1,
+   "viewCount": 783278,
+   "foundBy": "ted-ed how dinosaurs went extinct",
+   "onTopic": true
+  },
+  {
+   "id": "_0J10j46-qQ",
+   "title": "A brief tour of the last 4 billion years (dinosaurs not included) | Lauren Sallan",
+   "channel": "TED",
+   "views": "128,551 views",
+   "age": "6 yr ago",
+   "length": "8:49",
+   "tier": 1,
+   "viewCount": 128551,
+   "foundBy": "how dinosaurs went extinct ted",
+   "onTopic": true
+  },
+  {
+   "id": "dFCbJmgeHmA",
+   "title": "The Day the Dinosaurs Died – Minute by Minute",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "23,026,069 views",
+   "age": "5 yr ago",
+   "length": "12:02",
+   "tier": 2,
+   "viewCount": 23026069,
+   "foundBy": "how dinosaurs went extinct",
+   "onTopic": true
+  },
+  {
+   "id": "xaQJbozY_Is",
+   "title": "What Dinosaurs ACTUALLY Looked Like?",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "14,732,370 views",
+   "age": "4 yr ago",
+   "length": "9:53",
+   "tier": 2,
+   "viewCount": 14732370,
+   "foundBy": "khan academy dinosaurs",
+   "onTopic": true
+  },
+  {
+   "id": "pjoQdz0nxf4",
+   "title": "How The Dinosaurs Actually Died",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "8,813,986 views",
+   "age": "2 yr ago",
+   "length": "11:40",
+   "tier": 2,
+   "viewCount": 8813986,
+   "foundBy": "how dinosaurs went extinct",
+   "onTopic": true
+  },
+  {
+   "id": "1iNcRJGzzxs",
+   "title": "How the Dinosaurs Actually Went Extinct",
+   "channel": "SciShow",
+   "views": "3,102,137 views",
+   "age": "12 yr ago",
+   "length": "10:45",
+   "tier": 2,
+   "viewCount": 3102137,
+   "foundBy": "khan academy how dinosaurs went extinct",
+   "onTopic": true
+  },
+  {
+   "id": "oXwoy-Ce1ZE",
+   "title": "What Happened to the Dinosaurs?",
+   "channel": "SciShow Kids",
+   "views": "2,200,837 views",
+   "age": "8 yr ago",
+   "length": "4:39",
+   "tier": 2,
+   "viewCount": 2200837,
+   "foundBy": "ted-ed how dinosaurs went extinct",
+   "onTopic": true
+  },
+  {
+   "id": "0u8O9692y6g",
+   "title": "Bringing dinosaurs back to life – with fossil footprints | Martin Lockley | TEDxMileHigh",
+   "channel": "TEDx Talks",
+   "views": "33,472 views",
+   "age": "3 yr ago",
+   "length": "12:18",
+   "tier": 1,
+   "viewCount": 33472,
+   "foundBy": "dinosaurs ted",
+   "onTopic": true
+  },
+  {
+   "id": "WqkFIIoa_V8",
+   "title": "Shape-shifting dinosaurs - Jack Horner",
+   "channel": "TED-Ed",
+   "views": "11,853 views",
+   "age": "13 yr ago",
+   "length": "18:23",
+   "tier": 1,
+   "viewCount": 11853,
+   "foundBy": "dinosaurs ted",
+   "onTopic": true
+  },
+  {
+   "id": "OIarqUj_4tE",
+   "title": "Why it matters that dinosaurs went extinct in the spring | Melanie During | TEDxStockholm",
+   "channel": "TEDx Talks",
+   "views": "7,298 views",
+   "age": "3 yr ago",
+   "length": "9:18",
+   "tier": 1,
+   "viewCount": 7298,
+   "foundBy": "dinosaurs ted",
+   "onTopic": true
+  },
+  {
+   "id": "0mH2TBSnaAI",
+   "title": "Can lessons from the dinosaurs save us from another mass extinction? | Kenneth Lacovara | TEDxBoston",
+   "channel": "TEDx Talks",
+   "views": "4,547 views",
+   "age": "2 yr ago",
+   "length": "9:13",
+   "tier": 1,
+   "viewCount": 4547,
+   "foundBy": "dinosaurs ted",
+   "onTopic": true
+  },
+  {
+   "id": "67hHzCpFUSk",
+   "title": "Dinosaurs, Asteroids, and Climate Change | Page Quinton | TEDxSUNYPotsdam",
+   "channel": "TEDx Talks",
+   "views": "2,722 views",
+   "age": "7 yr ago",
+   "length": "15:20",
+   "tier": 1,
+   "viewCount": 2722,
+   "foundBy": "how dinosaurs went extinct ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 10,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

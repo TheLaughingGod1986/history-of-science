@@ -1,0 +1,240 @@
+{
+ "pulled": "2026-10-01",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "fossils",
+  "mary anning",
+  "ichthyosaur"
+ ],
+ "autocomplete": {
+  "fossils": [
+   "fossils for kids",
+   "fossils",
+   "fossils and archeology mod",
+   "fossils song",
+   "fossils all song",
+   "fossils band",
+   "fossils live",
+   "fossils and archeology revival",
+   "fossils bishakto manush",
+   "fossils new song"
+  ],
+  "mary anning": [
+   "mary anning",
+   "mary anning for kids",
+   "mary anning fossil hunter",
+   "mary anning ks2",
+   "mary anning song",
+   "mary anning film",
+   "mary anning book",
+   "mary anning story",
+   "mary anning trailer",
+   "mary anning fossils"
+  ],
+  "ichthyosaur": [
+   "ichthyosaurus",
+   "ichthyosaur",
+   "ichthyosaurus ark",
+   "ichthyosaurus sound",
+   "ichthyosaur half life",
+   "ichthyosaurus taming ark",
+   "ichthyosaurus reading explorer",
+   "ichthyosaurus fossil",
+   "ichthyosaurus pronunciation",
+   "ichthyosauria"
+  ]
+ },
+ "sharedTitleWords": [
+  "mary anning",
+  "how do",
+  "fossils form",
+  "do fossils",
+  "anning the"
+ ],
+ "neighbours": [
+  {
+   "id": "87E8bQrX4Wg",
+   "title": "How do dinosaur fossils form? | Natural History Museum",
+   "channel": "Natural History Museum",
+   "views": "5,207,588 views",
+   "age": "7 yr ago",
+   "length": "3:49",
+   "tier": 2,
+   "viewCount": 5207588,
+   "foundBy": "fossils",
+   "onTopic": true
+  },
+  {
+   "id": "a-CW0B4YeBQ",
+   "title": "Mary Anning - Princess of Paleontology - Extra History",
+   "channel": "Extra History",
+   "views": "1,163,005 views",
+   "age": "9 yr ago",
+   "length": "9:35",
+   "tier": 2,
+   "viewCount": 1163005,
+   "foundBy": "mary anning",
+   "onTopic": true
+  },
+  {
+   "id": "ID7qhn1ipmw",
+   "title": "How Do Fossils Form | Evolution | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "673,513 views",
+   "age": "7 yr ago",
+   "length": "2:49",
+   "tier": 2,
+   "viewCount": 673513,
+   "foundBy": "fossils",
+   "onTopic": true
+  },
+  {
+   "id": "koota_lwU_4",
+   "title": "Mary Anning: Fossil Hunter | Science for Kids",
+   "channel": "SciShow Kids",
+   "views": "606,198 views",
+   "age": "9 yr ago",
+   "length": "4:14",
+   "tier": 2,
+   "viewCount": 606198,
+   "foundBy": "mary anning",
+   "onTopic": true
+  },
+  {
+   "id": "jBuc8VnZShY",
+   "title": "Great Minds: Mary Anning, \"The Greatest Fossilist in the World\"",
+   "channel": "SciShow",
+   "views": "336,679 views",
+   "age": "12 yr ago",
+   "length": "4:30",
+   "tier": 2,
+   "viewCount": 336679,
+   "foundBy": "mary anning",
+   "onTopic": true
+  },
+  {
+   "id": "g8s1ReE0rZ0",
+   "title": "This Ichthyosaur Terrorized the Triassic Seas",
+   "channel": "SciShow",
+   "views": "164,808 views",
+   "age": "6 yr ago",
+   "length": "5:23",
+   "tier": 2,
+   "viewCount": 164808,
+   "foundBy": "ichthyosaur ted",
+   "onTopic": true
+  },
+  {
+   "id": "BEbgTpdwRgI",
+   "title": "The true story of Mary Anning: The girl who helped discover dinosaurs | BBC Ideas",
+   "channel": "BBC Ideas",
+   "views": "160,813 views",
+   "age": "7 yr ago",
+   "length": "3:40",
+   "tier": 2,
+   "viewCount": 160813,
+   "foundBy": "mary anning",
+   "onTopic": true
+  },
+  {
+   "id": "iWUp2kMCv6o",
+   "title": "How Do Fossils Form?: Crash Course Geology #18",
+   "channel": "CrashCourse",
+   "views": "116,194 views",
+   "age": "3 wk ago",
+   "length": "10:20",
+   "tier": 2,
+   "viewCount": 116194,
+   "foundBy": "khan academy fossils",
+   "onTopic": true
+  },
+  {
+   "id": "3LObb5WxMdw",
+   "title": "Fossils and rock layers | The geosphere | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "106,676 views",
+   "age": "4 yr ago",
+   "length": "4:35",
+   "tier": 2,
+   "viewCount": 106676,
+   "foundBy": "khan academy fossils",
+   "onTopic": true
+  },
+  {
+   "id": "_AkfWlXK20A",
+   "title": "GCSE Biology - Fossils & Extinction (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "41,656 views",
+   "age": "1 yr ago",
+   "length": "5:06",
+   "tier": 2,
+   "viewCount": 41656,
+   "foundBy": "fossils",
+   "onTopic": true
+  },
+  {
+   "id": "cn7valyK3_0",
+   "title": "What did Mary Anning discover in fossilised poo? | Surprising Science",
+   "channel": "Natural History Museum",
+   "views": "33,791 views",
+   "age": "8 yr ago",
+   "length": "1:10",
+   "tier": 2,
+   "viewCount": 33791,
+   "foundBy": "mary anning",
+   "onTopic": true
+  },
+  {
+   "id": "TgxLl-jBAjY",
+   "title": "Paul Sereno: What can fossils teach us?",
+   "channel": "TED",
+   "views": "30,229 views",
+   "age": "17 yr ago",
+   "length": "22:18",
+   "tier": 1,
+   "viewCount": 30229,
+   "foundBy": "fossils ted",
+   "onTopic": true
+  },
+  {
+   "id": "-fT57zGsXZ8",
+   "title": "Fossils | Evolution | Middle school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "18,754 views",
+   "age": "4 yr ago",
+   "length": "5:02",
+   "tier": 2,
+   "viewCount": 18754,
+   "foundBy": "khan academy fossils",
+   "onTopic": true
+  },
+  {
+   "id": "yP8IdptL-mo",
+   "title": "Who was Mary Anning and what did she discover? | Natural History Museum",
+   "channel": "Natural History Museum",
+   "views": "7,564 views",
+   "age": "4 mo ago",
+   "length": "6:08",
+   "tier": 2,
+   "viewCount": 7564,
+   "foundBy": "mary anning",
+   "onTopic": true
+  },
+  {
+   "id": "eZjaq1UnQ9k",
+   "title": "CSI for Fossils | Caitlin Syme | TEDxUQ",
+   "channel": "TEDx Talks",
+   "views": "1,197 views",
+   "age": "8 yr ago",
+   "length": "16:10",
+   "tier": 1,
+   "viewCount": 1197,
+   "foundBy": "fossils ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 2,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

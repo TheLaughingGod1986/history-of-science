@@ -27,7 +27,7 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 | Path | What |
 |---|---|
 | `00_Brand/Channel-Setup/` | The docs above, `VIDEO_BACKLOG.json`, `CHANNEL_META.json`, `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md`, `templates/`, channel description and keywords |
-| `00_Brand/Channel-Setup/tools/` | `weekly_public_audit.py`, `gate_shorts_open.py` (Shorts ship gate), `thumb_preview.py`, `style_sheet.py`, `vo_check.py`, `public_search.py` |
+| `00_Brand/Channel-Setup/tools/` | `weekly_public_audit.py`, `gate_shorts_open.py` (Shorts ship gate), `thumb_preview.py`, `style_sheet.py`, `vo_check.py`, `public_search.py`, `neighbours.py` (TED-Ed/education neighbours), `hos_desk.py` (the Claude ↔ Grok desk) |
 | `00_Brand/Channel-Setup/style/` | The live approved thumbnails and covers, as images: the style reference set |
 | `07_Content-Ops/src/lib/hos-contract/` | The release contract as code (`rules.ts`): what `lint:package` and `channel:audit` enforce |
 | `00_Brand/Channel-Setup/audits/` | The current audit, `SHORTS_LOG.md`, `weekly/` reports, the Studio Chrome launcher |
@@ -53,6 +53,8 @@ cd 07_Content-Ops && npx tsx --env-file=.env scripts/retitle-videos.ts --file <f
 cd 07_Content-Ops && npx tsx --env-file=.env scripts/update-pinned-comment.ts --dry-run
 python3 00_Brand/Channel-Setup/tools/weekly_public_audit.py          # every Monday
 python3 00_Brand/Channel-Setup/tools/public_search.py "<title>" "<angle>" --out <film>/11_Upload-Package/evidence_<date>_public_search.json
+python3 00_Brand/Channel-Setup/tools/neighbours.py "<subject>" "<person>" --out <film>/11_Upload-Package/evidence_<date>_neighbours.json [--phrase <noun> --manifest <manifest>]
+python3 00_Brand/Channel-Setup/tools/hos_desk.py post --to claude --film NNN --stage <stage> --status review --body-file <report.md> [--image <jpg>]
 python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_Script/<slug>_script_master_vNN.md [--part N]
 python3 00_Brand/Channel-Setup/tools/style_sheet.py long|short <new.jpg> --out <sheet.jpg>   # new vs the live look
 cd 07_Content-Ops && npm run lint:package [-- --film NNN]              # release contract, before any upload/schedule
@@ -67,7 +69,7 @@ A stage is done only when its check prints PASS **and the agent pastes that outp
 
 | Stage | Must PASS | Then |
 |---|---|---|
-| Topic | `public_search.py` evidence saved; not a subject that already has a long | Ben picks |
+| Topic | `public_search.py` evidence saved; `neighbours.py` gate PASS (**≥ 3 education videos with 1M+ views** on the topic — TED-Ed, Kurzgesagt, Khan Academy, SciShow, Veritasium, Crash Course, etc.; TED-Ed/TED preferred); title/description/tags use their subject words, never channel names; not a subject that already has a long | Ben picks |
 | Long script | `npm run review:script` ≥ 90 and `npm run gate:episode` | Ben signs off |
 | Every VO take | `vo_check.py` (word diff, loudness, pace, first minute) | Ben listens |
 | Each Short | `gate_shorts_open.py check` | Ben watches on his phone |
@@ -76,6 +78,10 @@ A stage is done only when its check prints PASS **and the agent pastes that outp
 | After every Studio session, and every Monday | `npm run channel:audit` (0 errors) + its Studio-only checklist | Record in `production-status.md` |
 
 The uploader itself sets the channel defaults on every API upload: Education, English (UK), altered/synthetic content Yes, never Made for Kids unless a package says so.
+
+## The desk (Claude ↔ Grok)
+
+Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged), instead of Ben copying between them. Grok reports there with `hos_desk.py post` (stills and sheets attached), Claude reviews and sends the next task there, and Ben is pinged only at the sign-off points below. Rules: `STUDIO_PLAYBOOK.md` §15.
 
 ## Stop and ask Ben at each of these points
 

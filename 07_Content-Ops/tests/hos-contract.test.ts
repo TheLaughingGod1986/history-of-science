@@ -3,6 +3,7 @@ import {
   auditChannel,
   auditVideo,
   checkTags,
+  checkNeighbours,
   checkTitle,
   lintLongPackage,
   lintShortsRelease,
@@ -201,5 +202,59 @@ describe("channel audit", () => {
     ]);
     expect(rules(cross.get("a") || [])).toEqual(expect.arrayContaining(["schedule.one-a-day", "title.duplicate-live"]));
     expect(rules(cross.get("c") || [])).toContain("title.duplicate-live");
+  });
+});
+
+describe("neighbours (HOS 002: 55.6% of suggested views from TED-Ed's Mendeleev video; ≥3 at 1M+)", () => {
+  const neighbours = {
+    phrases: ["atom"],
+    videos: [
+      { id: "yQP4UJhNn0I", channel: "TED-Ed", title: "Just How Small is an Atom?", views: 7_960_719 },
+      { id: "a1", channel: "Kurzgesagt – In a Nutshell", title: "The Atom", views: 3_100_000 },
+      { id: "a2", channel: "Veritasium", title: "What's Inside an Atom?", views: 2_400_000 },
+    ],
+  };
+  const base = {
+    neighbours,
+    title: "What's Really Inside an Atom?",
+    titleAbc: ["What's Really Inside an Atom?", "How Small Can You Cut Gold?"],
+    tags: ["atom", "rutherford"],
+    description: "What's inside an atom? Mostly nothing.\n\nChapters",
+    required: true,
+  };
+  it("passes a long that shares the neighbour's words, and warns on a T&C title that drops them", () => {
+    const f = checkNeighbours(base);
+    expect(rules(f)).toEqual([]);
+    expect(rules(f, "warn")).toEqual(["neighbours.tc-title"]);
+  });
+  it("fails a new film with no neighbours block; an older film only warns", () => {
+    expect(rules(checkNeighbours({ ...base, neighbours: undefined }))).toEqual(["neighbours.missing"]);
+    expect(rules(checkNeighbours({ ...base, neighbours: undefined, required: false }), "warn")).toEqual(["neighbours.missing"]);
+  });
+  it("fails when fewer than 3 neighbours have 1M+ views", () => {
+    const r = checkNeighbours({
+      ...base,
+      neighbours: {
+        phrases: ["atom"],
+        videos: [
+          { id: "yQP4UJhNn0I", channel: "TED-Ed", title: "Just How Small is an Atom?", views: 7_960_719 },
+          { id: "a1", channel: "SciShow", title: "Atoms", views: 500_000 },
+        ],
+      },
+    });
+    expect(rules(r)).toContain("neighbours.size");
+  });
+  it("fails a title, description or tags without the phrase, and a small or non-TED neighbour pool", () => {
+    const r = checkNeighbours({
+      ...base,
+      title: "How Small Can You Cut Gold?",
+      description: "Cut gold in half.",
+      tags: ["gold"],
+      neighbours: { phrases: ["atom"], videos: [{ id: "x", channel: "SciShow", title: "Atoms", views: 5000 }] },
+    });
+    expect(rules(r)).toEqual(
+      expect.arrayContaining(["neighbours.title", "neighbours.description", "neighbours.tags", "neighbours.size"]),
+    );
+    expect(rules(r, "warn")).toContain("neighbours.ted");
   });
 });
