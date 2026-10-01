@@ -1,13 +1,15 @@
-# 005 launch plan (draft, 1 Oct 2026, pending Ben)
+# 005 launch plan (1 Oct 2026)
 
-Nothing here is scheduled. Dates are the next free Thursday after 004 (15 Oct) and need Ben's OK.
+Ben approved the air date on 1 Oct ("1–5 yes, 29 Oct", relayed by Claude on the desk, PR #180). Nothing is uploaded or scheduled on YouTube yet. UK clocks go back on Sun 25 Oct, so every slot below is UK time = UTC.
 
 | What | When (UK / UTC) | Notes |
 |---|---|---|
-| Long: *The Tied Arm That Proved Your Blood Circulates* | Thu 22 Oct 2026 18:00 UK / 17:00 UTC | Normal publish, **no Premiere**. Test & Compare: main title + *Why Doctors Thought Your Blood Was Used Up* (3 thumbs). End screen: the germs long + Subscribe. |
-| Short 1 (lead, promotes 005) | Fri 23 Oct 2026 11:30 UK / 10:30 UTC | From this film: the sum ("more blood in half an hour than your body holds"). |
-| Short 2 (promotes another film) | Sun 25 Oct 2026 11:30 UK / 11:30 UTC (clocks go back that morning) | Different film from Shorts 1 and 3; picked against the live Shorts page. |
-| Short 3 (promotes another film) | Tue 27 Oct 2026 11:30 UK / 11:30 UTC | Different film again. |
+| Long: *The Tied Arm That Proved Your Blood Circulates* | Thu 29 Oct 2026 18:00 UK / 18:00 UTC (`2026-10-29T18:00:00.000Z`) | Normal publish, **no Premiere**. Test & Compare: main title + *Why Doctors Thought Your Blood Was Used Up* (3 thumbs). End screen: the germs long + Subscribe. |
+| Short 1 (lead, promotes 005) | Fri 30 Oct 2026 11:30 UK / 11:30 UTC | From this film: the sum ("more blood in half an hour than your body holds"). Airs after the long is public. |
+| Short 2 (promotes another film) | Sun 1 Nov 2026 11:30 UK / 11:30 UTC | Different film from Shorts 1 and 3; picked against the live Shorts page. |
+| Short 3 (promotes another film) | Tue 3 Nov 2026 11:30 UK / 11:30 UTC | Different film again. |
+
+Short dates are drafts until the Short scripts are signed off (sign-off point 3) and declared in `10_Shorts/SHORTS_RELEASE.json`.
 
 Short ideas from this film (scripts go to Ben separately, sign-off point 3):
 

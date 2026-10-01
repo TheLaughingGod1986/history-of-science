@@ -1,0 +1,69 @@
+{
+  "listen": "hos_005_vo_all_parts_listen_v01.mp3",
+  "listen_sha256": "a19569f46d9556a21fa0e1aea4427b5841f78d2e8d2d2bc1f4ddb30f08e53b9b",
+  "duration_s": 495.33,
+  "join_s": 1.0,
+  "max_pause_s": 0.6,
+  "peak_db": -2.0,
+  "atempo": null,
+  "parts": [
+    {
+      "part": 1,
+      "file": "part01_the_used_up_blood_v01.mp3",
+      "raw": "part01_the_used_up_blood_v01_raw.mp3",
+      "raw_sha256": "66330a1e98d6e199a9d893d49d48beb108a0ba03880c3baef6b720d8bba96769",
+      "fixes": [],
+      "pause_trim_s": 3.78,
+      "start_s": 0.0,
+      "duration_s": 57.02,
+      "sha256": "17ef3c420ba0239e7df30cddfa33f61fb480b72661c43ea81effadefd17f4c15"
+    },
+    {
+      "part": 2,
+      "file": "part02_the_liver_that_made_blood_v01.mp3",
+      "raw": "part02_the_liver_that_made_blood_v01_raw.mp3",
+      "raw_sha256": "a1afe99111361b4a89d75daa6c483379eb7819294e3087ab2ca3923329a9da5d",
+      "fixes": [],
+      "pause_trim_s": 4.74,
+      "start_s": 58.02,
+      "duration_s": 97.58,
+      "sha256": "c99d1e5fbd0a0ab7cbd95bce2f796d5050be507c9358483b4900b34cb60436dd"
+    },
+    {
+      "part": 3,
+      "file": "part03_the_sum_that_broke_the_old_idea_v01.mp3",
+      "raw": "part03_the_sum_that_broke_the_old_idea_v01_raw.mp3",
+      "raw_sha256": "0c1f5c5467a01ccc3d21dc59183c069ade6c6ec100138491617692eb86cf4e89",
+      "fixes": [
+        "_qa_picture_yourself_v01b.mp3",
+        "_qa_what_he_saw_v01a.mp3"
+      ],
+      "pause_trim_s": 3.39,
+      "start_s": 156.6,
+      "duration_s": 96.2,
+      "sha256": "480a3d57070c24e73b60f3a1ec8974c394d75033ad69eab59fdd381e2603e743"
+    },
+    {
+      "part": 4,
+      "file": "part04_the_tied_arm_v01.mp3",
+      "raw": "part04_the_tied_arm_v01_raw.mp3",
+      "raw_sha256": "4fb91ae612d7f3fa02ff6b6b4f965a9b024f22f0d9a8f2f4d24cf61c5c604281",
+      "fixes": [],
+      "pause_trim_s": 3.84,
+      "start_s": 253.8,
+      "duration_s": 126.24,
+      "sha256": "51b0ffcaeea3ac1b0269744cf77d5294e0545987b25e8378f44c1bda568a391e"
+    },
+    {
+      "part": 5,
+      "file": "part05_the_vessels_he_never_saw_v01.mp3",
+      "raw": "part05_the_vessels_he_never_saw_v01_raw.mp3",
+      "raw_sha256": "49445e57c79b48bcf55775be901aca509236298b160f8543640227c4a75f252d",
+      "fixes": [],
+      "pause_trim_s": 7.63,
+      "start_s": 381.04,
+      "duration_s": 114.29,
+      "sha256": "e848049790b84710abe40b4a375662ec23a4ec9dfd370891c1f1fee9fcf6253b"
+    }
+  ]
+}

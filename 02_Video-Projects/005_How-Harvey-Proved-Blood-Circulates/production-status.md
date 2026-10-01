@@ -7,19 +7,21 @@
 | Topic | Ben picked: **Blood (Harvey)**, 1 Oct 2026 (chat with Claude) |
 | Neighbour gate | PASS: 8 education videos with 1M+ views, TED-Ed yes (`11_Upload-Package/evidence_2026-10-01_neighbours.json`) |
 | Pre-build vidIQ audit | filled from public signals; **vidIQ pending Ben**; not signed |
-| Script review | **84.4 / 90, REJECT** (v02, 1 Oct 2026; v01 also 84.4) |
-| Episode gate | **BLOCK** (script score; audit not signed) |
-| lint:package | PASS (draft manifest; captions warning) |
-| VO | pending (Ben Orbit Narrator), blocked by the gate |
-| Picture | pending (Flow Veo 3.1, plate library), blocked by the gate |
-| Runtime target | 7–9 min, 5 parts (v02: 1,257 spoken words, ~8:28 at 150 wpm) |
-| Air | Proposed Thu 22 Oct 2026 18:00 UK, normal publish (no Premiere); pending Ben |
-| Shorts | 3 planned (Fri 23, Sun 25, Tue 27 Oct, 11:30 UK), one a day at most, Related → this long |
+| Script sign-off | **Script v02 signed off by Ben, 1 Oct 2026** ("1–5 yes, 29 Oct", in chat with Claude; relayed on desk PR #180) |
+| Script review | pending reviewer fix (Claude, PR #185). Last run: 84.4 / 90 REJECT on v02 with the old reviewer |
+| Episode gate | **BLOCK** on the old reviewer score and the unsigned vidIQ audit; VO went ahead on Ben's script sign-off (desk task, 1 Oct) |
+| lint:package | PASS, 1 Oct 2026, schedule 29 Oct (captions warning) |
+| VO | **v01 done, all `vo_check.py` PASS, 8:15.33, waiting for Ben to listen** (`02_Voiceover/hos_005_vo_all_parts_listen_v01.mp3`) |
+| Picture | pending (Flow Veo 3.1, plate library). **No picture until Ben OKs the voice** |
+| Runtime target | 7–9 min, 5 parts (v02: 1,250 spoken words; VO v01 8:15.33 with 1 s part joins) |
+| Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct. Not yet uploaded |
+| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. Scripts pending (sign-off 3) |
 
 ## STOP
 
-- **Script below 90.** v02 scores 84.4 (same as v01). Claude is asking Ben whether to fix the reviewer in its own PR or pass by hand (as for 004 at 88.9). No VO until then.
-- **vidIQ audit and title** need Ben's login and OK.
+- **Voice: waiting for Ben to listen** to `hos_005_vo_all_parts_listen_v01.mp3` (sign-off point 4). No picture spend until he OKs it.
+- **Script score row** waits for the fixed reviewer (PR #185).
+- **vidIQ audit** still unsigned (gate:episode BLOCK on it).
 
 ## 1 Oct 2026 — topic, script v01, gates (Grok)
 
@@ -138,11 +140,72 @@ Cold open: The Tied Arm That Proved Your Blood Circulates (script master v02) PA
 - Fix **script_review**: Script reviewer REJECT 84.4/90 (need ≥90).
 ```
 
+## 1 Oct 2026 — schedule 29 Oct + VO v01 (Grok, desk task from Claude, comment 5941493885)
+
+### Schedule
+
+Ben, 1 Oct, in chat with Claude: "1–5 yes, 29 Oct". Script v02 signed off by Ben, 1 Oct 2026. `PACKAGE_MANIFEST.json` `schedule` = `2026-10-29T18:00:00.000Z` (Thu 18:00 UK; UK = UTC after 25 Oct). Shorts drafted for Fri 30 Oct, Sun 1 Nov and Tue 3 Nov at 11:30 UK = 11:30 UTC (`11_Upload-Package/LAUNCH_PLAN.md`). Nothing uploaded or scheduled on YouTube.
+
+`npm run lint:package -- --film 005`
+
+```
+PASS  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+```
+
+### VO v01
+
+- **Voice:** Ben Orbit Narrator (`kDch6ACCIpqgQ0NsU9kk`, `eleven_v3`), `settings_for_part(n)`, speed 1.04 on every part. Text = `blood_script_master_v02.md` word for word, using the same line filter as `vo_check.py` (`02_Voiceover/partNN_*_v01.txt`). Generator `02_Voiceover/_generate_all_vo_v01.py`, finish `02_Voiceover/_finish_vo_v01.py`, records `VO_TAKES_v01.json` and `VO_FINISH_v01.json`.
+- **First takes:** Part 01 PASS. Parts 02 and 04 peaked at −0.9 / −0.5 dB, Part 05 had a 1.63 s pause, and Part 03 transcribed "Picture yourself" as "pitch yourself" and "what he saw" as "what you saw".
+- **Fixes (sentence alone, same words):** `_qa_what_he_saw_v01a` and `_qa_picture_yourself_v01b` spliced into Part 03 at the silences around each sentence. `_qa_picture_yourself_v01a` was clean on its own but still read "pitch" in the full-part transcription, so v01b–d were made and v01b was the take that read correctly in context (v01c and v01d unused).
+- **Length:** raw total 8:34.56 (over target). Step 1 only: pauses over 0.6 s trimmed to 0.6 s inside each part (23.4 s removed in total). **No `atempo`.** Peak set to −2 dB (uniform gain). Part joins 1.0 s in the listen file.
+- **Listen file:** `02_Voiceover/hos_005_vo_all_parts_listen_v01.mp3`, **8:15.33**, sha256 `a19569f46d9556a21fa0e1aea4427b5841f78d2e8d2d2bc1f4ddb30f08e53b9b`. On the Mini: `/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/`.
+- **First minute (from the take):** title question "So how did a band…" 0:12.0 (line 3 of the script, as early as the text allows), promise 0:15.9, stakes "Every university…" 0:27.2 (rule is by 0:25: a text matter, not VO). `vo_check` labels "Where does all that blood go?" (0:49.5) as the title question because it takes the second question line.
+- **Stumbles and repeats:** no inserted words in any diff (a double or restart would show as an insert). The remaining warnings are the transcriber's spelling of Fabricius, round/around, crack-brained, and believed/believe; "believed" re-checked on a 10 s window and heard correctly.
+
+| Part | File | Start in listen file | Duration | Pause trim | sha256 |
+|---|---|---|---|---|---|
+| 01 | `part01_the_used_up_blood_v01.mp3` | 0:00.00 | 0:57.02 | 3.78 s | `17ef3c420ba0239e7df30cddfa33f61fb480b72661c43ea81effadefd17f4c15` |
+| 02 | `part02_the_liver_that_made_blood_v01.mp3` | 0:58.02 | 1:37.58 | 4.74 s | `c99d1e5fbd0a0ab7cbd95bce2f796d5050be507c9358483b4900b34cb60436dd` |
+| 03 | `part03_the_sum_that_broke_the_old_idea_v01.mp3` | 2:36.60 | 1:36.20 | 3.39 s | `480a3d57070c24e73b60f3a1ec8974c394d75033ad69eab59fdd381e2603e743` |
+| 04 | `part04_the_tied_arm_v01.mp3` | 4:13.80 | 2:06.24 | 3.84 s | `51b0ffcaeea3ac1b0269744cf77d5294e0545987b25e8378f44c1bda568a391e` |
+| 05 | `part05_the_vessels_he_never_saw_v01.mp3` | 6:21.04 | 1:54.29 | 7.63 s | `e848049790b84710abe40b4a375662ec23a4ec9dfd370891c1f1fee9fcf6253b` |
+| All | `hos_005_vo_all_parts_listen_v01.mp3` | — | 8:15.33 | — | `a19569f46d9556a21fa0e1aea4427b5841f78d2e8d2d2bc1f4ddb30f08e53b9b` |
+
+Raw takes (`partNN_*_v01_raw.mp3`) sha256: 01 `66330a1e98d6e199a9d893d49d48beb108a0ba03880c3baef6b720d8bba96769` · 02 `a1afe99111361b4a89d75daa6c483379eb7819294e3087ab2ca3923329a9da5d` · 03 `0c1f5c5467a01ccc3d21dc59183c069ade6c6ec100138491617692eb86cf4e89` · 04 `4fb91ae612d7f3fa02ff6b6b4f965a9b024f22f0d9a8f2f4d24cf61c5c604281` · 05 `49445e57c79b48bcf55775be901aca509236298b160f8543640227c4a75f252d`. Fixes: `_qa_what_he_saw_v01a.mp3` `2153070b921d411a452e6ec7ec413681c878978b26c7e1f2e4e5b64719c2ab37` · `_qa_picture_yourself_v01b.mp3` `9547de40f078fef7868df6e7a77dbcd0f9ae392fc922c12bb659c262c9470241`.
+
+`vo_check.py <take> --script 01_Script/blood_script_master_v02.md --part N` (parts) and without `--part` (listen file), run with faster-whisper 1.2.1 (`~/.venvs/hos-vo`):
+
+```
+PASS  part01_the_used_up_blood_v01.mp3  0:57.02  mean -21.4 dB  peak -2.3 dB  147 wpm
+   first minute: title_question 49.5s  promise 15.94s
+PASS  part02_the_liver_that_made_blood_v01.mp3  1:37.58  mean -21.1 dB  peak -2.3 dB  151 wpm
+   warn  replace at ~0:42.62: script 'those holes doctors believed they had to' / heard 'those holes doctors believe they had to' — sounds alike (likely the transcriber); listen
+   warn  replace at ~1:09.90: script 'old professor called fabricius fabricius had found something' / heard 'old professor called fabrizius fabrizius had found something' — sounds alike (likely the transcriber); listen
+   warn  replace at ~1:22.84: script 'vein need doors fabricius thought they slowed' / heard 'vein need doors fabrizius thought they slowed' — sounds alike (likely the transcriber); listen
+PASS  part03_the_sum_that_broke_the_old_idea_v01.mp3  1:36.20  mean -21.3 dB  peak -2.3 dB  161 wpm
+PASS  part04_the_tied_arm_v01.mp3  2:06.24  mean -21.9 dB  peak -2.3 dB  155 wpm
+   warn  replace at ~0:52.34: script 'valve the flaps fabricius found harvey presses' / heard 'valve the flaps fabriceus found harvey presses' — sounds alike (likely the transcriber); listen
+   warn  replace at ~1:22.58: script 'towards the heart fabricius thought they slowed' / heard 'towards the heart fabriceus thought they slowed' — sounds alike (likely the transcriber); listen
+PASS  part05_the_vessels_he_never_saw_v01.mp3  1:54.29  mean -21.6 dB  peak -2.3 dB  150 wpm
+   warn  replace at ~1:16.08: script 'wraps a cuff round your arm think' / heard 'wraps a cuff around your arm think' — sounds alike (likely the transcriber); listen
+PASS  hos_005_vo_all_parts_listen_v01.mp3  8:15.33  mean -21.5 dB  peak -2.3 dB  152 wpm
+   first minute: title_question 49.52s  promise 15.96s
+   warn  replace at ~2:05.90: script 'old professor called fabricius fabricius had found something' / heard 'old professor called fabrizius fabrizius had found something' — sounds alike (likely the transcriber); listen
+   warn  replace at ~2:18.74: script 'vein need doors fabricius thought they slowed' / heard 'vein need doors fabrizius thought they slowed' — sounds alike (likely the transcriber); listen
+   warn  replace at ~5:01.70: script 'valve the flaps fabricius found harvey presses' / heard 'valve the flaps fabriceus found harvey presses' — sounds alike (likely the transcriber); listen
+   warn  replace at ~5:30.70: script 'towards the heart fabricius thought they slowed' / heard 'towards the heart fabriceus thought they slowed' — sounds alike (likely the transcriber); listen
+   warn  replace at ~6:07.88: script 'thought he was crack brained and gap was' / heard 'thought he was crackbrained and gap was' — sounds alike (likely the transcriber); listen
+   warn  replace at ~7:28.36: script 'wraps a cuff round your arm think' / heard 'wraps a cuff around your arm think' — sounds alike (likely the transcriber); listen
+```
+
+Part and chapter times in the script are estimates; re-time every part and chapter card from these starts before plate boards.
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 | `07_Edit-Project/parts/part-01_plates_v01.json` | — | stale (built on script v01) |
+| 01 | `07_Edit-Project/parts/part-01_plates_v01.json` | — | stale (built on script v01); VO v01 0:57.02 |
 | 02 | | | script v02 |
 | 03 | | | script v02 |
 | 04 | | | script v02 |

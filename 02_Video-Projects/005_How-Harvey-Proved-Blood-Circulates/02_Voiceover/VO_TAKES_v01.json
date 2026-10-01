@@ -1,0 +1,87 @@
+[
+  {
+    "part": 1,
+    "file": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part01_the_used_up_blood_v01.mp3",
+    "duration_s": 60.8,
+    "sha256": "66330a1e98d6e199a9d893d49d48beb108a0ba03880c3baef6b720d8bba96769",
+    "chars": 788,
+    "words": 138,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  },
+  {
+    "part": 2,
+    "file": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part02_the_liver_that_made_blood_v01.mp3",
+    "duration_s": 102.32,
+    "sha256": "a1afe99111361b4a89d75daa6c483379eb7819294e3087ab2ca3923329a9da5d",
+    "chars": 1350,
+    "words": 245,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  },
+  {
+    "part": 3,
+    "file": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01.mp3",
+    "duration_s": 99.44,
+    "sha256": "0c1f5c5467a01ccc3d21dc59183c069ade6c6ec100138491617692eb86cf4e89",
+    "chars": 1357,
+    "words": 257,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  },
+  {
+    "part": 4,
+    "file": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part04_the_tied_arm_v01.mp3",
+    "duration_s": 130.08,
+    "sha256": "4fb91ae612d7f3fa02ff6b6b4f965a9b024f22f0d9a8f2f4d24cf61c5c604281",
+    "chars": 1754,
+    "words": 325,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  },
+  {
+    "part": 5,
+    "file": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part05_the_vessels_he_never_saw_v01.mp3",
+    "duration_s": 121.92,
+    "sha256": "49445e57c79b48bcf55775be901aca509236298b160f8543640227c4a75f252d",
+    "chars": 1574,
+    "words": 285,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  }
+]
