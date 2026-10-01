@@ -1,0 +1,205 @@
+{
+  "out": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part01_rough_v01.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part01_rough_v01.mp4",
+  "sha256": "7661b6cf1897c6dabe60e09592b297f9ed21b253cb7c2946cc12f58732a9d098",
+  "duration_s": 59.533333,
+  "streams": [
+    {
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "duration": "59.533333"
+    },
+    {
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "duration": "59.520000"
+    }
+  ],
+  "vo": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part01_the_used_up_blood_v01.mp3",
+  "vo_sha256": "17ef3c420ba0239e7df30cddfa33f61fb480b72661c43ea81effadefd17f4c15",
+  "vo_duration_s": 57.02,
+  "tail_s": 2.5,
+  "bed": {
+    "temp": true,
+    "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part01-temp_score_bed_v01.mp3",
+    "sha256": "3820baa01b24103d88439e198368f28723f1f241b4eeba6e54df9a35d6153029",
+    "vo_mean_db": -21.4,
+    "bed_mean_db_raw": -23.9,
+    "bed_gain_db": -17.5,
+    "bed_rel_db_vs_vo": -20.0
+  },
+  "labels": [
+    {
+      "t0": 0.6,
+      "t1": 2.8,
+      "text": "Your pulse"
+    },
+    {
+      "t0": 9.4,
+      "t1": 11.8,
+      "text": "Made, then used up"
+    },
+    {
+      "t0": 12.7,
+      "t1": 14.9,
+      "text": "One band"
+    },
+    {
+      "t0": 22.0,
+      "t1": 23.0,
+      "text": "A sum"
+    },
+    {
+      "t0": 23.05,
+      "t1": 24.05,
+      "text": "A band"
+    },
+    {
+      "t0": 24.1,
+      "t1": 26.4,
+      "text": "Tiny doors"
+    },
+    {
+      "t0": 36.8,
+      "t1": 39.4,
+      "text": "London, 1616"
+    },
+    {
+      "t0": 40.9,
+      "t1": 43.4,
+      "text": "William Harvey"
+    }
+  ],
+  "cuts": "hard cuts on the board times (board xfade 0.35 s would need freeze-pad on 7.9 s plates)",
+  "plates": [
+    {
+      "id": "01_pulse_wrist",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+      "sha256": "aa7b65b04fc25ae89a99c8a8994667957ed6befc525ae3a91124f38cf4c1a29e",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "film_t0": 0.0,
+      "use_s": 5.367,
+      "in_s": 1.0,
+      "vo_land": [
+        "Your heart pumps more blood in half an hour than your whole body holds."
+      ]
+    },
+    {
+      "id": "02_bread_liver",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/02_bread_liver_t2.mp4",
+      "sha256": "9de1e6007c5d397c49cbd8e04e92b74c405302fbb0bd42e9ad88c5e0e0fe89ed",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "film_t0": 5.367,
+      "use_s": 6.667,
+      "in_s": 0.0,
+      "vo_land": [
+        "For fourteen hundred years, doctors taught that blood was made fresh from food and used up."
+      ]
+    },
+    {
+      "id": "03_band_tightens",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+      "sha256": "f33aa4c3d708f8ad6c8561dc243dfd9d894b797e13b102b617be8485063e243e",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "film_t0": 12.033,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "So how did a band tied round an arm prove them wrong?",
+        "By the end of this film, you'll know how one London doctor proved that your blood circulates, with a sum, a band, and tiny doors hidden inside your veins."
+      ]
+    },
+    {
+      "id": "04_sum_band_doors",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/04_sum_band_doors_t4.mp4",
+      "sha256": "6b3ad00b79bb0eb10a671c71e07dfa7fc2763d8a8adec5e461e1ddc72efcf98c",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "film_t0": 19.933,
+      "use_s": 7.3,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) By the end of this film, you'll know how one London doctor proved that your blood circulates, with a sum, a band, and tiny doors hidden inside your veins."
+      ]
+    },
+    {
+      "id": "05_chained_book",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/05_chained_book_t3.mp4",
+      "sha256": "352727e48e83e43a5a1c4dd3a0ce45c43f36cddd6b6cc0fdfe04a0d01f3f1d03",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "film_t0": 27.233,
+      "use_s": 4.933,
+      "in_s": 0.0,
+      "vo_land": [
+        "Every university taught the old idea.",
+        "Every doctor believed it."
+      ]
+    },
+    {
+      "id": "06_body_backwards",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/06_body_backwards_t3.mp4",
+      "sha256": "c33b6e5be612e57d037d535130e0de8cc00391c2d3a4e106306e6264da262400",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "film_t0": 32.167,
+      "use_s": 4.567,
+      "in_s": 0.0,
+      "vo_land": [
+        "If it was wrong, medicine had the human body backwards."
+      ]
+    },
+    {
+      "id": "07_harvey_college_door",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/07_harvey_college_door_t5.mp4",
+      "sha256": "7d8ebe524cd0379cfde878915bca11c2326c74981449462a41776a04c46c735a",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "film_t0": 36.733,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "London, sixteen-sixteen.",
+        "A short, dark-eyed doctor called William Harvey starts teaching anatomy at the Royal College of Physicians."
+      ]
+    },
+    {
+      "id": "08_quill_question",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/08_quill_question_t2.mp4",
+      "sha256": "1b17a7ec398c65d6f237927c5527b4b711c2e4719124cff22f52ac89f2f714d8",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "film_t0": 44.633,
+      "use_s": 7.233,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) A short, dark-eyed doctor called William Harvey starts teaching anatomy at the Royal College of Physicians.",
+        "He will spend the next twelve years on one question.",
+        "Where does all that blood go?"
+      ]
+    },
+    {
+      "id": "09_heart_clock",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/09_heart_clock_t2.mp4",
+      "sha256": "f787f0314cd9c2b4557e7dec4122f051ba7fed752fa8848583a845216dcd53e0",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "film_t0": 51.867,
+      "use_s": 7.667,
+      "in_s": 0.0,
+      "vo_land": [
+        "And to answer it, he did something doctors almost never did.",
+        "He counted."
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-# 005 Shorts scripts v01 (for Ben's sign-off, point 3)
+# 005 Shorts scripts v01 (signed off)
 
-**Status: awaiting Ben** (sign-off point 3). Claude passed them on the desk (PR #180) on 1 Oct 2026 and put them to Ben. No Short VO or picture until Ben OKs.
+**Status: Shorts A–C signed off by Ben, 1 Oct 2026** ("Shorts A–C OK", in chat with Claude; relayed on desk PR #180, comment 5942235177). Not built yet: they're cut from the long's plates once those exist.
 
 Rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STUDIO_PLAYBOOK.md` §3 (Short) and §7. Voice: Ben Orbit Narrator, same settings as the long. Picture is cut from the long's own plates wherever possible.
 

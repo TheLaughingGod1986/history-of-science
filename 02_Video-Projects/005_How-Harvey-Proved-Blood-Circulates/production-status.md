@@ -12,15 +12,17 @@
 | Episode gate | Every line OK except `script_review` 89.8 (Ben's recorded override, as on 004), 1 Oct 2026 |
 | lint:package | PASS, 1 Oct 2026, schedule 29 Oct (captions warning) |
 | VO | **Voice v01 (listen file sha `a19569f4…`, 8:15.33) OK'd by Ben, 1 Oct 2026** ("waive vidIQ, merge #186 and voice OK", in chat with Claude; relayed on desk PR #180). All `vo_check.py` PASS |
-| Picture | **Plate boards v02** for all 5 parts (**75 plates**: 29 Quality, 46 Fast; try 1 ≈ **3,820 Flow credits**, Part 01 ≈ **420**; Explorer plates on Quality, Claude 1 Oct), re-timed from VO v01. v01 (97 plates, ≈8,700) in `parts/_replaced/`. **Part 01 mint STOPPED: Flow has 62 credits** (see STOP) |
+| Picture | **Part 01 rough v01 built on Vertex AI Veo 3.1 (Ben's OK for 005, 1 Oct 2026): 9/9 plates KEEP, awaiting Ben's look on the real file** (`09_Final-Export/hos_005_part01_rough_v01.mp4`). Spend $25.58 at list price (25 takes, 21 start frames; log `07_Edit-Project/PART01_MINT_LOG_v01.json`). Boards v02 for all 5 parts (75 plates: 29 Quality, 46 Fast). Parts 02–05 wait for Ben on Part 01 |
 | Runtime target | 7–9 min, 5 parts. Film VO timeline 8:21.33 with the four chapter cards (`07_Edit-Project/VO_RETIME_v01.json`), + 3–4 s end card ≈ 8:25 |
 | Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct. Not yet uploaded |
-| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. Scripts v01 written (`10_Shorts/SHORTS_SCRIPTS_v01.md`), passed by Claude on the desk, **awaiting Ben** (sign-off 3) |
+| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). Not built yet: cut from the long's plates once those exist |
 
 ## STOP
 
-- **Picture, 1 Oct 2026 23:45 UK: Part 01 mint not started. Flow (`benoats@googlemail.com`, Mini CDP :9222) shows 62 Google Flow credits, "running low… reset monthly"** (`gate_auth_ok.png`). A Veo 3.1 Quality clip costs about 100 credits and Fast about 20; Part 01 is now 9 plates on board v02 (3 Quality, 6 Fast, ≈420 credits on try 1), and the first plate `01_pulse_wrist` is Quality (glowing stream), so 62 credits still can't start it. No Fast swap on fragile light, no Ken Burns. The Gemini API fallback is also out (HTTP 402 "prepayment credits are depleted"), so the start-frame stills could not be made either. Needs Ben: wait for the monthly reset, or top up Flow credits.
-- **Shorts scripts v01** awaiting Ben (sign-off point 3); Claude passed them on the desk.
+- **Picture, 2 Oct 2026: Part 01 rough v01 waits for Ben** (sign-off 5, moving picture, on the real file). Parts 02–05 are not minted until Ben passes Part 01.
+- Resolved: the Flow-credits STOP (1 Oct 23:45) is replaced by Vertex AI Veo for 005 with Ben's OK. Shorts scripts signed off by Ben, 1 Oct 2026.
+
+**Rule record:** Vertex AI Veo used for 005 with Ben's OK, 1 Oct 2026 (Flow at 62 credits, Gemini 402). Vertex isn't in `STUDIO_PLAYBOOK.md` §5's engine table yet; Claude adds it in its own docs PR.
 
 ## 1 Oct 2026 — topic, script v01, gates (Grok)
 
@@ -316,11 +318,101 @@ part 05: 18 plates (8 Quality, 10 Fast, Explorer 1) try-1 1000 credits → part-
 film: 75 plates (29 Quality, 46 Fast) try-1 3820 credits
 ```
 
+## 2 Oct 2026 — Part 01 minted on Vertex AI Veo, rough v01 (Grok, desk task from Claude, comment 5942235177)
+
+Ben, 1 Oct, in chat with Claude: "Orbit used Vertex I believe and we have credit; if this doesn't work for us I'll top up credit Monday. Shorts A–C OK."
+
+### Setup and credit check
+
+- **Project** `gen-lang-client-0538779324` ("History of Science"), `us-central1`, ADC as `benoats@googlemail.com` (checked by token info; gcloud CLI itself has no login). Never an Orbit project. Vertex AI API enabled; Cloud Billing API is off in the project, so the credit was read in the console.
+- **Credit before the mint** (Cloud Billing → Credits, billing account `0124D1-E6EFD6-40F6DA`, 1 Oct 23:05 UK): **Free Trial £209.53 remaining of £225.63** (93%, ends 11 Nov 2026). The Google Developer Program monthly credits are used (0%). Part 01 try 1 estimated $9.60, so clearly enough. Screenshot: `07_Edit-Project/_evidence/vertex_credits_2026-10-01.png` (local, gitignored).
+- **Credit after** (2 Oct ~00:45 UK): still shows £209.53; Cloud usage posts with a delay of hours. Expected after posting ≈ £190 (the $25.58 below).
+- **Models:** Quality → `veo-3.1-generate-001`, Fast → `veo-3.1-fast-generate-001`, image-to-video from the start frame, 8 s, 1080p, `generate_audio=False` (video-only SKU, $0.20/s Quality, $0.10/s Fast at list), audio stream removed again on download. No Quality plate was dropped to Fast.
+- **Start frames:** Gemini API still 402. Vertex Imagen 4 is not available in the project (404); `gemini-2.5-flash-image` on Vertex in the same project works, so start frames were made there with the live look (001 ward still and the 004 live thumbnail) as style references and the previous KEEP still as a seed in the same set ($0.039 each, 21 frames). One frame (`05_chained_book_v04`) is a centre crop of v02 to keep two wall sconces out of shot.
+- **Tool:** `07_Edit-Project/_mint_part01_vertex_v01.py` (`still`, `mint`, `resume`, `verdict`, `total`) on `~/.venvs/hos-vertex`. It saves the Vertex operation name at submit and writes the log under a file lock.
+
+### What happened
+
+- `01_pulse_wrist` was minted alone first (Quality, KEEP on take 1), then the rest in parallel.
+- **Lost takes ($5.60):** the first parallel batch (02, 03, 04, 05, 07) was submitted from background jobs that died when the agent's shell call returned. The operation names weren't saved, so those five clips can't be fetched; they're logged `LOST` and counted as billed. The tool now saves the operation name at submit and has `resume`.
+- **Candles on Fast plates:** the style line in the first prompts said "warm cinematic candlelight", and the board's Fast prompts end "Warm candlelight falls from out of frame…". Veo Fast painted lit candles into 6 of 6 Fast takes (always_fails). Fix for remints: style line now "warm cinematic light", and `--daylight` swaps the board's candlelight sentence for "Soft warm daylight from a window out of frame…" (recorded per take). Every Fast KEEP is a daylight take. **For Parts 02–05 boards:** the Fast candlelight sentence should change the same way.
+- **Lettering:** 07's board prompt names "(the Royal College of Physicians)", and Quality wrote that on the lintel twice. The KEEP take drops the name (`--replace`, logged) and reframes to a medium shot at the door.
+- **Framing changes after two FAILs:** 04 (glide → top-down), 06 (hall with desks → chart alone in an empty room), 07 (lane → medium shot at the door).
+
+### Takes (`07_Edit-Project/PART01_MINT_LOG_v01.json`, path `vertex`, 8 s each)
+
+| Plate | Take | Engine | Model | Status | Cost | Why |
+|---|---|---|---|---|---:|---|
+| `01_pulse_wrist` | t1 | Quality | `veo-3.1-generate-001` | KEEP | $1.60 | Moving wrist and glowing artery at frame 0, hands only; camera rides up to a clean cartoon heart. Watch: heartbeat-trace spike glyph on the wrist ~1–3 s; arms cross ~3 s. Cut starts 1.0 s in |
+| `02_bread_liver` | t1 | Quality | `veo-3.1-generate-001` | LOST | $1.60 | Job killed, op name not saved |
+| `04_sum_band_doors` | t1 | Fast | `veo-3.1-fast-generate-001` | LOST | $0.80 | Job killed, op name not saved |
+| `07_harvey_college_door` | t1 | Quality | `veo-3.1-generate-001` | LOST | $1.60 | Job killed, op name not saved |
+| `03_band_tightens` | t1 | Fast | `veo-3.1-fast-generate-001` | LOST | $0.80 | Job killed, op name not saved |
+| `05_chained_book` | t1 | Fast | `veo-3.1-fast-generate-001` | LOST | $0.80 | Job killed, op name not saved |
+| `02_bread_liver` | t2 | Quality | `veo-3.1-generate-001` | KEEP | $1.60 | Food → glowing stream → liver → red streams to the limbs, then soak away |
+| `04_sum_band_doors` | t2 | Fast | `veo-3.1-fast-generate-001` | FAIL | $0.80 | Lit candle from ~3 s |
+| `07_harvey_college_door` | t2 | Quality | `veo-3.1-generate-001` | FAIL | $1.60 | "Royal College of Physicians" lettering on the lintel; Harvey shrinks at the door |
+| `03_band_tightens` | t2 | Fast | `veo-3.1-fast-generate-001` | FAIL | $0.80 | Lit candle from ~1 s |
+| `05_chained_book` | t2 | Fast | `veo-3.1-fast-generate-001` | FAIL | $0.80 | Lit candles inside the window (~3.6 s) |
+| `06_body_backwards` | t1 | Fast | `veo-3.1-fast-generate-001` | FAIL | $0.80 | Lit candles ~2.7 s; smoke puff |
+| `08_quill_question` | t1 | Fast | `veo-3.1-fast-generate-001` | FAIL | $0.80 | Lit candle ~4.4 s |
+| `09_heart_clock` | t1 | Fast | `veo-3.1-fast-generate-001` | FAIL | $0.80 | Lit candle ~3.5 s |
+| `03_band_tightens` | t3 | Fast | `veo-3.1-fast-generate-001` | KEEP | $0.80 | Band pulled tight, veins swell blue (daylight) |
+| `04_sum_band_doors` | t3 | Fast | `veo-3.1-fast-generate-001` | FAIL | $0.80 | Linen folds the vein drawing shut as "inside your veins" lands (2nd FAIL → new framing) |
+| `05_chained_book` | t3 | Fast | `veo-3.1-fast-generate-001` | KEEP | $0.80 | Glide down the aisle to the chained book (daylight) |
+| `06_body_backwards` | t2 | Fast | `veo-3.1-fast-generate-001` | FAIL | $0.80 | Desk candles ~2.6 s (2nd FAIL → new framing) |
+| `08_quill_question` | t2 | Fast | `veo-3.1-fast-generate-001` | KEEP | $0.80 | One upright "?" written and dotted; no face (daylight) |
+| `09_heart_clock` | t2 | Fast | `veo-3.1-fast-generate-001` | KEEP | $0.80 | Painted heart, brass clock, fingertip counting (daylight) |
+| `07_harvey_college_door` | t3 | Quality | `veo-3.1-generate-001` | ERROR | $0.00 | Vertex "Deadline exceeded", no clip |
+| `07_harvey_college_door` | t4 | Quality | `veo-3.1-generate-001` | FAIL | $1.60 | Lettering again, smoke banks, scale shift (2nd FAIL → new framing) |
+| `04_sum_band_doors` | t4 | Fast | `veo-3.1-fast-generate-001` | KEEP | $0.80 | Top-down: 2 oz / 1/8 / 1000 on "a sum", band on "a band", doors open on "tiny doors" |
+| `06_body_backwards` | t3 | Fast | `veo-3.1-fast-generate-001` | KEEP | $0.80 | Chart alone swings and turns right round (not upside down as boarded; flagged) |
+| `07_harvey_college_door` | t5 | Quality | `veo-3.1-generate-001` | KEEP | $1.60 | Harvey on the lantern-lit step, looks back, goes in; no lettering |
+
+**Running total: $25.58** (Veo $24.80: 7 Quality × $1.60 + 17 Fast × $0.80, of which $5.60 lost; start frames $0.78). 9/9 KEEP.
+
+### Rough cut v01
+
+`~/.venvs/hos-vertex/bin/python 07_Edit-Project/_assemble_part01_rough_v01.py` → **`09_Final-Export/hos_005_part01_rough_v01.mp4`**, sha256 `7661b6cf1897c6dabe60e09592b297f9ed21b253cb7c2946cc12f58732a9d098`, 59.53 s. On the Mini: `/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part01_rough_v01.mp4`; phone copy in iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/`. Meta: `07_Edit-Project/part01_rough_v01_meta.json`.
+
+- Picture: the 9 KEEP plates on the board v02 times, hard cuts (the board's 0.35 s crossfade would need freeze-pad on the 7.9 s plates), 1920×1080, 30 fps CFR (1,786 frames), no freeze (freezedetect 0 events). The last plate runs 2.5 s past the last VO word, then picture and music fade over the final second.
+- VO: `part01_the_used_up_blood_v01.mp3` locked (sha `17ef3c42…` checked by the script), unchanged; mono to both channels at full level.
+- Bed: TEMP ElevenLabs Music v2 bed `05_Music/hos005-part01-temp_score_bed_v01.mp3` (66 s, "warm curious 17th-century documentary underscore… heartbeat-like pulse"), set to VO mean −20 dB (gain −17.5 dB) for the whole runtime: music the whole way, bed alone −38.6 dB in the tail.
+- Labels: white Didot italic, top right, one at a time, on the VO word: *Your pulse* · *Made, then used up* · *One band* · *A sum* · *A band* · *Tiny doors* · *London, 1616* · *William Harvey*.
+
+`vo_check.py hos_005_part01_rough_v01.mp4 --script 01_Script/blood_script_master_v02.md --part 1` (VO intact in the mix):
+
+```
+PASS  hos_005_part01_rough_v01.mp4  0:59.53  mean -21.6 dB  peak -2.3 dB  141 wpm
+   first minute: title_question 49.6s  promise 15.94s
+   warn  pace 141 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+```
+
+(The pace warning counts the 2.5 s picture tail; the take itself is 147 wpm.)
+
+### My UAT against the 11 hard fails (plate playback start/middle/end plus the cut's frames; Ben judges on the real file)
+
+| # | Hard fail | Part 01 rough v01 |
+|---|---|---|
+| 1 | Consistency | One 3D cartoon style throughout; Harvey's black sleeve and white cuff match in 07, 08 and 09. Harvey reads younger than "about forty", with collar-length hair |
+| 2 | Picture explains the VO | Every plate lands its line (table above). Two watch items: 06 turns round rather than upside down; 01 has a heartbeat-trace glyph on the wrist |
+| 3 | Explorer glasses | No Explorer in Part 01 (board, §3) |
+| 4 | Explorer face and hair | No Explorer; Harvey's face is finished in 07 |
+| 5 | Lamps | No lamp in any shot. Lanterns in 07 (Quality) are calm; a small clean candle shows in the background of 01's last second (Quality) |
+| 6 | Readable cards | 2 oz / 1/8 / 1000 correct; the "?" is upright; no lettering on the College door |
+| 7 | Late shots sharp | Sharp to the end, no ghosting |
+| 8 | Finished quality | Finished throughout |
+| 9 | No DNA helix | None |
+| 10 | Microbes | None in Part 01 |
+| 11 | No Orbit robot | None |
+
+005 always_fails: no gore (the heart in 01 is a clean cartoon heart under a translucent chest); no face in the first two seconds; no flame on any Fast plate inside its window.
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F, ≈420 credits; mint: true) | — | board v02; mint STOPPED on Flow credits |
+| 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F) | `09_Final-Export/hos_005_part01_rough_v01.mp4` (`7661b6cf…`, 59.53 s) | 9/9 KEEP on Vertex ($25.58); **awaiting Ben** on the real file |
 | 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | — | board v02; waits for Ben to pass Part 01 |
 | 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | — | board v02 |
 | 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | — | board v02 |

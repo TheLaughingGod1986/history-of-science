@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-01T23:04:30.793593+00:00",
+  "project": "hos005-part01-temp",
+  "script": null,
+  "music_cues": [],
+  "prompt": "warm curious 17th-century documentary underscore, soft strings, harpsichord and light piano, a gentle heartbeat-like pulse in low strings, wonder and quiet tension, no vocals, leaves room for voice",
+  "length_ms": 66000,
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "generate": true,
+  "audio_file": "hos005-part01-temp_score_bed_v01.mp3",
+  "status": "generated",
+  "bytes": 1056645,
+  "song_id": "jMWpHxPaPGoL0CK5KFWx"
+}
