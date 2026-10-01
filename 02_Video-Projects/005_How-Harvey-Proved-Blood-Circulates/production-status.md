@@ -12,7 +12,7 @@
 | Episode gate | Every line OK except `script_review` 89.8 (Ben's recorded override, as on 004), 1 Oct 2026 |
 | lint:package | PASS, 1 Oct 2026, schedule 29 Oct (captions warning) |
 | VO | **Voice v01 (listen file sha `a19569f4…`, 8:15.33) OK'd by Ben, 1 Oct 2026** ("waive vidIQ, merge #186 and voice OK", in chat with Claude; relayed on desk PR #180). All `vo_check.py` PASS |
-| Picture | **Plate boards v02** for all 5 parts (**75 plates**: 26 Quality, 49 Fast; try 1 ≈ **3,580 Flow credits**, Part 01 ≈ **420**), re-timed from VO v01. v01 (97 plates, ≈8,700) in `parts/_replaced/`. **Part 01 mint STOPPED: Flow has 62 credits** (see STOP) |
+| Picture | **Plate boards v02** for all 5 parts (**75 plates**: 29 Quality, 46 Fast; try 1 ≈ **3,820 Flow credits**, Part 01 ≈ **420**; Explorer plates on Quality, Claude 1 Oct), re-timed from VO v01. v01 (97 plates, ≈8,700) in `parts/_replaced/`. **Part 01 mint STOPPED: Flow has 62 credits** (see STOP) |
 | Runtime target | 7–9 min, 5 parts. Film VO timeline 8:21.33 with the four chapter cards (`07_Edit-Project/VO_RETIME_v01.json`), + 3–4 s end card ≈ 8:25 |
 | Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct. Not yet uploaded |
 | Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. Scripts v01 written (`10_Shorts/SHORTS_SCRIPTS_v01.md`), passed by Claude on the desk, **awaiting Ben** (sign-off 3) |
@@ -303,14 +303,27 @@ film: 75 plates (26 Quality, 49 Fast) try-1 3580 credits
 - **Credits on try 1:** Part 01 **420** (was 1,120); whole film **3,580** (was about 8,700). Remints come on top: 004's Parts 02 and 03 each cost about 1,000 credits including remints.
 - Part 01 stays `mint: true` from `01_pulse_wrist` (Quality, ≈100), so the mint starts as soon as Flow has at least 100 credits.
 
+## 1 Oct 2026 — Explorer plates to Quality (Grok, desk task from Claude, comment 5942202586)
+
+Claude accepted boards v02 and moved the three Explorer plates (02/11 `11_padua_explorer`, 03/08 `08_explorer_jugs`, 05/05 `05_explorer_scope`) to Quality, `engine_reason: Quality: explorer fidelity…` (face and hair are UAT hard fail 4; a Fast remint would likely cost more than the +240). Readable-number plates stay Fast with the hand check on every take. No minting and no spend; Part 01 is unchanged and still starts at `01_pulse_wrist` once Flow shows at least 100 credits. `python3 07_Edit-Project/_build_plate_boards_v02.py`:
+
+```
+part 01: 9 plates (3 Quality, 6 Fast, Explorer 0) try-1 420 credits → part-01_plates_v02.json
+part 02: 15 plates (5 Quality, 10 Fast, Explorer 1) try-1 700 credits → part-02_plates_v02.json
+part 03: 14 plates (7 Quality, 7 Fast, Explorer 1) try-1 840 credits → part-03_plates_v02.json
+part 04: 19 plates (6 Quality, 13 Fast, Explorer 0) try-1 860 credits → part-04_plates_v02.json
+part 05: 18 plates (8 Quality, 10 Fast, Explorer 1) try-1 1000 credits → part-05_plates_v02.json
+film: 75 plates (29 Quality, 46 Fast) try-1 3820 credits
+```
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
 | 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F, ≈420 credits; mint: true) | — | board v02; mint STOPPED on Flow credits |
-| 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 4 Q, 11 F, ≈620) | — | board v02; waits for Ben to pass Part 01 |
-| 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 6 Q, 8 F, ≈760) | — | board v02 |
+| 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | — | board v02; waits for Ben to pass Part 01 |
+| 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | — | board v02 |
 | 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | — | board v02 |
-| 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 7 Q, 11 F, ≈920) | — | board v02 |
+| 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | — | board v02 |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.

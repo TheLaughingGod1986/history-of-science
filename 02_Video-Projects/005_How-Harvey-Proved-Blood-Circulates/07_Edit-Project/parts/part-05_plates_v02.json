@@ -41,12 +41,12 @@
     "a flame, lantern or lamp in frame on a Fast plate (remint on Quality or reframe)"
   ],
   "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns.",
-  "quality_note": "Flow Veo 3.1 on the Mac Mini CDP worker, benoats@googlemail.com only. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+  "quality_note": "Flow Veo 3.1 on the Mac Mini CDP worker, benoats@googlemail.com only. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns) or the Explorer is in shot (explorer fidelity); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
   "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
   "credits_try1": {
-    "Quality": 7,
-    "Fast": 11,
-    "credits": 920,
+    "Quality": 8,
+    "Fast": 10,
+    "credits": 1000,
     "rate": "Quality ~100, Fast ~20 Flow credits per clip"
   },
   "plates": [
@@ -126,8 +126,8 @@
       "t_s": 415.42,
       "t": "6:55.42",
       "explorer": true,
-      "quality": "Fast",
-      "engine_reason": "Fast: no flame or lamp in frame. Explorer hard fails (glasses, full hair, one Explorer) checked on UAT; remint if off-model.",
+      "quality": "Quality",
+      "engine_reason": "Quality: explorer fidelity. Face and hair are UAT hard fail 4 (glasses, full hair, one Explorer); a Fast remint would cost more than the difference.",
       "side_label": null,
       "merged_from_v01": [
         "06_explorer_scope"

@@ -8,9 +8,10 @@ words (STUDIO_PLAYBOOK §5 mute test). Every plate is <= 7.9 s (one Veo clip).
 
 Engine per plate: Quality only where the hero of the plate is an emissive or
 fragile light (candle flame in frame, glowing loop or cutaway, stove heart,
-lanterns). Where candlelight is only the room's ambience the plate is Fast and
-its prompt keeps every flame, lantern and lamp out of frame. Reason in
-`engine_reason`.
+lanterns), and on every Explorer plate (explorer fidelity: face and hair are
+UAT hard fail 4; Claude desk, 1 Oct 2026). Where candlelight is only the room's
+ambience the plate is Fast and its prompt keeps every flame, lantern and lamp out
+of frame. Reason in `engine_reason`.
 
 Each plate names the sentence it starts on (`s`, 1-based inside the part) and an
 offset into it (`off`, seconds; negative = that much before the sentence).
@@ -99,7 +100,7 @@ F_AMB = "Fast: candlelight is room ambience only; prompt keeps every flame, lant
 F_DAY = "Fast: daylight or window light; nothing emissive in frame."
 F_INK = "Fast: ink, paper and props; nothing emissive in frame."
 F_ARM = "Fast: real arm and hand on clean skin; nothing emissive in frame."
-F_EXP = "Fast: no flame or lamp in frame. Explorer hard fails (glasses, full hair, one Explorer) checked on UAT; remint if off-model."
+Q_EXP = "Quality: explorer fidelity. Face and hair are UAT hard fail 4 (glasses, full hair, one Explorer); a Fast remint would cost more than the difference."
 
 # (id, s, off, quality, engine_reason, explorer, side_label, merged_from_v01, prompt)
 P = {
@@ -153,7 +154,7 @@ P = {
              "Same open book. Through the magnifying glass the heart wall is solid and smooth: a single tiny drop of red ink beads against it and cannot pass." + AMBIENT),
             ("10_why_believe", 13, 0, "Fast", F_AMB, False, None, ["11_why_believe"],
              "Galen's thick book on a lectern; students keep copying from it and the stack of finished copies beside them grows taller. Camera drifts." + AMBIENT),
-            ("11_padua_explorer", 15, 0, "Fast", F_EXP, True, "PADUA · c. 1600", ["12_padua_theatre", "13_explorer_padua"],
+            ("11_padua_explorer", 15, 0, "Quality", Q_EXP, True, "PADUA · c. 1600", ["12_padua_theatre", "13_explorer_padua"],
              f"Padua around 1600: the steep wooden oval anatomy theatre, rings of carved rails rising around a small empty table. The camera rises slowly up the rails to the top rail, where {EXPLORER} He unrolls a drawing of a vein on the rail, traces its tiny paired flaps with one finger, then slips away into the shadows." + AMBIENT),
             ("12_fabricius", 15, 7.9, "Fast", F_AMB, False, "FABRICIUS", ["14_fabricius"],
              f"Same Padua theatre. {FABRICIUS}, holds up a large drawing of a vein opened along its length and points to the pairs of tiny flaps inside it." + AMBIENT),
@@ -184,7 +185,7 @@ P = {
              "Close on a cream page: Harvey's quill writes '2 oz' in large clear brown ink, then writes '1/8' underneath it. The numbers stay sharp and correct." + AMBIENT),
             ("07_thousand_beats", 12, 0, "Fast", F_INK, False, "1,000 BEATS", ["10_thousand_beats"],
              "Same page: the quill writes '1000' under '2 oz' and '1/8' in large clear brown ink; a brass clock ticks beside the page. The numbers stay sharp and correct." + AMBIENT),
-            ("08_explorer_jugs", 13, 0, "Fast", F_EXP, True, None, ["11_explorer_jugs"],
+            ("08_explorer_jugs", 13, 0, "Quality", Q_EXP, True, None, ["11_explorer_jugs"],
              f"Same Harvey study. {EXPLORER} He sets out a tiny pewter jug for every heartbeat; the jugs fill the desk, spill onto the floor and march in a line out of the door; he turns, wide-eyed, to a single loaf of bread on the table." + AMBIENT),
             ("09_jug_tower", 15, 0, "Fast", F_INK, False, "MORE THAN YOUR WHOLE BODY", ["12_jug_tower"],
              "A tower of tiny red pewter jugs rises beside a plain pale outline of a human body that holds far less; the tower keeps growing past it. Soft daylight, nothing glowing."),
@@ -258,7 +259,7 @@ P = {
              f"London in the 1650s, soft evening window light: {HARVEY_OLD}, at a window with his book; he closes it gently. No candle or lamp in shot."),
             ("04_malpighi_slide", 6, 0, "Fast", F_DAY, False, "MARCELLO MALPIGHI · BOLOGNA 1661", ["04_bologna", "05_slide"],
              f"Bologna, 1661: {MALPIGHI}, at a brass microscope by a bright window, places a thin glass slide with a pale pink film under the lens and adjusts the focus. No animal on screen."),
-            ("05_explorer_scope", 7, -0.8, "Fast", F_EXP, True, None, ["06_explorer_scope"],
+            ("05_explorer_scope", 7, -0.8, "Quality", Q_EXP, True, None, ["06_explorer_scope"],
              f"Same Bologna study by the bright window. {EXPLORER} He leans in to the brass microscope, adjusts his round glasses, looks, then pulls back with a gasp."),
             ("06_eyepiece_mesh", 8, 2.7, "Fast", F_DAY, False, None, ["07_eyepiece_mesh"],
              "Through the eyepiece in a soft round vignette: a mesh of tiny vessels finer than hairs joins a red artery to a blue vein; blood creeps through. Soft daylight look, nothing glowing."),
@@ -357,7 +358,7 @@ def main() -> None:
             "forbidden": FORBIDDEN,
             "always_fails": ALWAYS_FAILS,
             "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns.",
-            "quality_note": "Flow Veo 3.1 on the Mac Mini CDP worker, benoats@googlemail.com only. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+            "quality_note": "Flow Veo 3.1 on the Mac Mini CDP worker, benoats@googlemail.com only. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns) or the Explorer is in shot (explorer fidelity); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
             "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
             "credits_try1": {"Quality": nq, "Fast": len(rows) - nq, "credits": credits,
                              "rate": "Quality ~100, Fast ~20 Flow credits per clip"},
