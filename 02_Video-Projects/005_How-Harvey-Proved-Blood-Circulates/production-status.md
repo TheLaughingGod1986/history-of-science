@@ -12,15 +12,15 @@
 | Episode gate | Every line OK except `script_review` 89.8 (Ben's recorded override, as on 004), 1 Oct 2026 |
 | lint:package | PASS, 1 Oct 2026, schedule 29 Oct (captions warning) |
 | VO | **Voice v01 (listen file sha `a19569f4…`, 8:15.33) OK'd by Ben, 1 Oct 2026** ("waive vidIQ, merge #186 and voice OK", in chat with Claude; relayed on desk PR #180). All `vo_check.py` PASS |
-| Picture | Plate boards v01 for all 5 parts (97 plates), re-timed from VO v01. **Part 01 mint STOPPED: Flow has 62 credits** (see STOP) |
+| Picture | **Plate boards v02** for all 5 parts (**75 plates**: 26 Quality, 49 Fast; try 1 ≈ **3,580 Flow credits**, Part 01 ≈ **420**), re-timed from VO v01. v01 (97 plates, ≈8,700) in `parts/_replaced/`. **Part 01 mint STOPPED: Flow has 62 credits** (see STOP) |
 | Runtime target | 7–9 min, 5 parts. Film VO timeline 8:21.33 with the four chapter cards (`07_Edit-Project/VO_RETIME_v01.json`), + 3–4 s end card ≈ 8:25 |
 | Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct. Not yet uploaded |
-| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. Scripts v01 written (`10_Shorts/SHORTS_SCRIPTS_v01.md`), **waiting for Ben** (sign-off 3) |
+| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. Scripts v01 written (`10_Shorts/SHORTS_SCRIPTS_v01.md`), passed by Claude on the desk, **awaiting Ben** (sign-off 3) |
 
 ## STOP
 
-- **Picture, 1 Oct 2026 23:45 UK: Part 01 mint not started. Flow (`benoats@googlemail.com`, Mini CDP :9222) shows 62 Google Flow credits, "running low… reset monthly"** (`gate_auth_ok.png`). A Veo 3.1 Quality clip costs about 100 credits and Fast about 20; Part 01 is 12 plates, 11 of them Quality (candles, glows, hero plates). No Fast swap on fragile light, no Ken Burns. The Gemini API fallback is also out (HTTP 402 "prepayment credits are depleted"), so the start-frame stills could not be made either. Needs Ben: wait for the monthly reset, or top up Flow credits.
-- **Shorts scripts v01** waiting for Ben (sign-off point 3).
+- **Picture, 1 Oct 2026 23:45 UK: Part 01 mint not started. Flow (`benoats@googlemail.com`, Mini CDP :9222) shows 62 Google Flow credits, "running low… reset monthly"** (`gate_auth_ok.png`). A Veo 3.1 Quality clip costs about 100 credits and Fast about 20; Part 01 is now 9 plates on board v02 (3 Quality, 6 Fast, ≈420 credits on try 1), and the first plate `01_pulse_wrist` is Quality (glowing stream), so 62 credits still can't start it. No Fast swap on fragile light, no Ken Burns. The Gemini API fallback is also out (HTTP 402 "prepayment credits are depleted"), so the start-frame stills could not be made either. Needs Ben: wait for the monthly reset, or top up Flow credits.
+- **Shorts scripts v01** awaiting Ben (sign-off point 3); Claude passed them on the desk.
 
 ## 1 Oct 2026 — topic, script v01, gates (Grok)
 
@@ -279,14 +279,38 @@ The film's VO ends at 8:21.33; with the 3–4 s end card it runs about 8:25. Fir
 
 `10_Shorts/SHORTS_SCRIPTS_v01.md`: A, the sum (63 words, lead Short for Fri 30 Oct); B, the tied arm (63); C, the capillaries Harvey never saw (57). Each one has the named thing at frame 0, moving, with the claim first, the long's title at 9–14 s, and a loop back to the opening. Checked against the live Shorts page (13 public, 1 Oct 23:55) and `SHORTS_LOG.md`: no blood, heart or vein Short exists. Waiting for Ben (sign-off 3).
 
+## 1 Oct 2026 — plate boards v02: 97 → 75 plates, Quality only on emissive light (Grok, desk task from Claude, comment 5942132122)
+
+No minting and no spend. `python3 07_Edit-Project/_build_plate_boards_v02.py` writes `parts/part-0N_plates_v02.json`; the v01 boards are in `parts/_replaced/part-0N_plates_v01_REPLACED.json` (`mint: false`). `_gen_part01_stills_v01.py` now reads the v02 board.
+
+```
+part 01: 9 plates (3 Quality, 6 Fast, Explorer 0) try-1 420 credits → part-01_plates_v02.json
+part 02: 15 plates (4 Quality, 11 Fast, Explorer 1) try-1 620 credits → part-02_plates_v02.json
+part 03: 14 plates (6 Quality, 8 Fast, Explorer 1) try-1 760 credits → part-03_plates_v02.json
+part 04: 19 plates (6 Quality, 13 Fast, Explorer 0) try-1 860 credits → part-04_plates_v02.json
+part 05: 18 plates (7 Quality, 11 Fast, Explorer 1) try-1 920 credits → part-05_plates_v02.json
+film: 75 plates (26 Quality, 49 Fast) try-1 3580 credits
+```
+
+(The builder asserts every plate is 2.4–7.9 s, i.e. one Veo clip.)
+
+- **Merges (22):** two or three neighbouring beats become one plate when they share one location and one action, and the plate's action carries every VO line in its window (`vo_land` now lists them; `merged_from_v01` names the old plates). Examples: the promise is now one desk glide across the sums page, the linen band and Fabricius's vein drawing, in the order the VO names them; the London lane and Harvey's introduction are one plate (Harvey walks up to the lantern-lit College door); the Padua theatre rises to the Explorer on the top rail; the tied arm's push-and-stop and empty-and-refill pairs are one plate each.
+- **Kept separate (mute test, §5):** every place the picture must change on a word: Vesalius, the "why believe" turn, Fabricius and his little doors, each sum number, the jugs, the scale, the loop and the one-minute lap, each step of the arm experiment, Aubrey and the open gap, Malpighi, the eyepiece, the cuff, the Delft lens.
+- **Why 75 and not 65–70:** with every plate at most 7.9 s, the film's five parts need at least 8 + 13 + 13 + 17 + 15 = 66 plates even if cuts could fall anywhere. Cuts have to land on the words, so 75 is the lowest count without a plate arriving 2 s or more away from its line. Apart from Aubrey, every cut is within about 2 s of its line: the biggest moves are the whispers plate 1.9 s early and `01/08_quill_question` 1.3 s early. The Aubrey plate lands 3.9 s into his sentence (v01 was 4.2 s).
+- **Engine:** Quality only where the hero is emissive or fragile light: glowing cutaways, streams and loops; the stove heart; the lantern-lit College door (01/07); the cold room whose line names the lit candles (03/01); the glowing pond life. Everything else is Fast, and every Fast prompt in a candlelit set ends "Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot." A Fast take with a flame or lamp in frame is now in `always_fails` (reframe or remint on Quality). Reason per plate in `engine_reason`.
+- **Explorer plates (02/11, 03/08, 05/05) are Fast** under that rule (no light in frame). Putting them on Quality for face and hair fidelity would add 240 credits; flagged to Claude.
+- **Readable-number plates** (01/04, 03/06, 03/07) are Fast; check '2 oz', '1/8', '1000' by hand on every take.
+- **Credits on try 1:** Part 01 **420** (was 1,120); whole film **3,580** (was about 8,700). Remints come on top: 004's Parts 02 and 03 each cost about 1,000 credits including remints.
+- Part 01 stays `mint: true` from `01_pulse_wrist` (Quality, ≈100), so the mint starts as soon as Flow has at least 100 credits.
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 | `07_Edit-Project/parts/part-01_plates_v01.json` (12 plates, mint: true) | — | board v01; mint STOPPED on Flow credits |
-| 02 | `07_Edit-Project/parts/part-02_plates_v01.json` (18) | — | board v01; waits for Ben to pass Part 01 |
-| 03 | `07_Edit-Project/parts/part-03_plates_v01.json` (19) | — | board v01 |
-| 04 | `07_Edit-Project/parts/part-04_plates_v01.json` (27) | — | board v01 |
-| 05 | `07_Edit-Project/parts/part-05_plates_v01.json` (21) | — | board v01 |
+| 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F, ≈420 credits; mint: true) | — | board v02; mint STOPPED on Flow credits |
+| 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 4 Q, 11 F, ≈620) | — | board v02; waits for Ben to pass Part 01 |
+| 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 6 Q, 8 F, ≈760) | — | board v02 |
+| 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | — | board v02 |
+| 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 7 Q, 11 F, ≈920) | — | board v02 |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.

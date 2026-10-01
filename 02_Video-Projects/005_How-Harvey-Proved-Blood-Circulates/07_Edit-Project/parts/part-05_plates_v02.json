@@ -1,0 +1,373 @@
+{
+  "film": "005_How-Harvey-Proved-Blood-Circulates",
+  "working_title": "The Tied Arm That Proved Your Blood Circulates",
+  "part": "05",
+  "title": "The Vessels He Never Saw",
+  "status": "BOARD_V02",
+  "mint": false,
+  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v01 (VO_RETIME_v01.json) · v02 merges (Claude desk task, 1 Oct 2026)",
+  "script": "01_Script/blood_script_master_v02.md",
+  "vo_file": "02_Voiceover/part05_the_vessels_he_never_saw_v01.mp3",
+  "vo_sha256": "e848049790b84710abe40b4a375662ec23a4ec9dfd370891c1f1fee9fcf6253b",
+  "vo_duration_s": 114.29,
+  "chapter_card": {
+    "text": "The Vessels He Never Saw",
+    "in_s": 385.14,
+    "hold_s": 1.5,
+    "treatment": "soft cross-fade after the last word + 0.6 s breath; music continues"
+  },
+  "vo_film_start_s": 387.04,
+  "part_end_film_s": 501.93,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "open_stamp": null,
+  "set_language": "Warm candlelit 17th-century world: dark oak, cream linen, brass, leather books, London fog. Body cutaways are clean, glowing illustrations (warm red arteries, cool blue veins), never anatomical gore. Say 'same 1616 London lecture room' or 'same Harvey study' for continuity; never 'same DNA'.",
+  "explorer_lock": "ONE beat (plate 05): the Explorer leans in to Malpighi's microscope, adjusts his round glasses, looks, then pulls back with a gasp. Attach the Explorer reference.",
+  "explorer_plates": 1,
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore, wounds, blood on skin, cut flesh or real animal organs (animal hearts only as Harvey's ink drawings); live or dead animals on a table; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; garbled writing; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels and the De Motu Cordis title are added in the edit); twin Explorer; faces in the first two seconds of the film; a flame, lantern or lamp in frame on a Fast plate. Never say 'same DNA' or 'lab DNA' in a Veo prompt.",
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text or wrong sums (2 oz, 1/8, 1000 checked by hand)",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship",
+    "gore: wound, blood on skin, cut flesh, real animal organs",
+    "a face in the first two seconds of the film",
+    "a flame, lantern or lamp in frame on a Fast plate (remint on Quality or reframe)"
+  ],
+  "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns.",
+  "quality_note": "Flow Veo 3.1 on the Mac Mini CDP worker, benoats@googlemail.com only. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+  "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
+  "credits_try1": {
+    "Quality": 7,
+    "Fast": 11,
+    "credits": 920,
+    "rate": "Quality ~100, Fast ~20 Flow credits per clip"
+  },
+  "plates": [
+    {
+      "id": "01_loop_gap",
+      "t_s": 387.04,
+      "t": "6:27.04",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing cutaway, stream or loop is the hero (emissive light).",
+      "side_label": "HOW DOES IT CROSS?",
+      "merged_from_v01": [
+        "01_loop_gap"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. The glowing loop from Part 03: at the far end, where the red arteries should meet the blue veins, there is a dark gap and the glow fades. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.52,
+      "vo_land": [
+        "Harvey's circle had a hole in it.",
+        "How did the blood get from the arteries into the veins?"
+      ]
+    },
+    {
+      "id": "02_tiny_gaps",
+      "t_s": 394.56,
+      "t": "6:34.56",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "02_tiny_gaps"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. A soft, warm magnified view of flesh: red seeps through tiny unseen gaps, blurred and uncertain, as Harvey guessed. Nothing glowing. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.12,
+      "vo_land": [
+        "Harvey guessed the blood passed through tiny gaps in the flesh, too small to see."
+      ]
+    },
+    {
+      "id": "03_old_harvey",
+      "t_s": 399.68,
+      "t": "6:39.68",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "side_label": "WILLIAM HARVEY · 1578–1657",
+      "merged_from_v01": [
+        "03_old_harvey"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. London in the 1650s, soft evening window light: old William Harvey, about seventy-five, white hair and small white pointed beard, same olive skin and dark eyes, black gown, at a window with his book; he closes it gently. No candle or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.84,
+      "vo_land": [
+        "He never saw them.",
+        "He died in sixteen fifty-seven, with his great idea still missing one piece."
+      ]
+    },
+    {
+      "id": "04_malpighi_slide",
+      "t_s": 407.52,
+      "t": "6:47.52",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "side_label": "MARCELLO MALPIGHI · BOLOGNA 1661",
+      "merged_from_v01": [
+        "04_bologna",
+        "05_slide"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Bologna, 1661: Marcello Malpighi, a doctor of about thirty-three, long dark curled wig, brown 1660s coat with white cravat, at a brass microscope by a bright window, places a thin glass slide with a pale pink film under the lens and adjusts the focus. No animal on screen. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.9,
+      "vo_land": [
+        "Four years later, in Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope."
+      ]
+    },
+    {
+      "id": "05_explorer_scope",
+      "t_s": 415.42,
+      "t": "6:55.42",
+      "explorer": true,
+      "quality": "Fast",
+      "engine_reason": "Fast: no flame or lamp in frame. Explorer hard fails (glasses, full hair, one Explorer) checked on UAT; remint if off-model.",
+      "side_label": null,
+      "merged_from_v01": [
+        "06_explorer_scope"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Same Bologna study by the bright window. Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He leans in to the brass microscope, adjusts his round glasses, looks, then pulls back with a gasp. Silent. Continuous motion through the final frame.",
+      "use_s": 5.12,
+      "vo_land": [
+        "(continues) Four years later, in Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope.",
+        "And there it was.",
+        "A net of tiny vessels, finer than hairs, carrying blood from the smallest arteries into the smallest veins."
+      ]
+    },
+    {
+      "id": "06_eyepiece_mesh",
+      "t_s": 420.54,
+      "t": "7:00.54",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "07_eyepiece_mesh"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Through the eyepiece in a soft round vignette: a mesh of tiny vessels finer than hairs joins a red artery to a blue vein; blood creeps through. Soft daylight look, nothing glowing. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.92,
+      "vo_land": [
+        "(continues) A net of tiny vessels, finer than hairs, carrying blood from the smallest arteries into the smallest veins."
+      ]
+    },
+    {
+      "id": "07_capillaries_loop",
+      "t_s": 426.46,
+      "t": "7:06.46",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing cutaway, stream or loop is the hero (emissive light).",
+      "side_label": "CAPILLARIES",
+      "merged_from_v01": [
+        "08_capillaries",
+        "09_loop_closes"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. The mesh of tiny vessels beside a single hair for scale; they light up with a soft glow as the blood creeps through, then the camera pulls back and the glowing mesh becomes the missing link in the glowing loop: heart, arteries, capillaries, veins, and the loop closes. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.9,
+      "vo_land": [
+        "We call them capillaries, from the Latin word for hair.",
+        "The circle was closed.",
+        "Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins."
+      ]
+    },
+    {
+      "id": "08_your_blood",
+      "t_s": 434.36,
+      "t": "7:14.36",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing cutaway, stream or loop is the hero (emissive light).",
+      "side_label": null,
+      "merged_from_v01": [
+        "10_your_blood"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. A simple glowing body outline with the full circuit lit: out through the arteries, across the capillaries, home through the veins. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.29,
+      "vo_land": [
+        "(continues) Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins."
+      ]
+    },
+    {
+      "id": "09_question",
+      "t_s": 440.65,
+      "t": "7:20.65",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing cutaway, stream or loop is the hero (emissive light).",
+      "side_label": null,
+      "merged_from_v01": [
+        "11_question"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the heart of the same glowing circuit, pulsing steadily as the stream runs out and back. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 3.17,
+      "vo_land": [
+        "So why was this so groundbreaking?"
+      ]
+    },
+    {
+      "id": "10_one_vein",
+      "t_s": 443.82,
+      "t": "7:23.82",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing cutaway, stream or loop is the hero (emissive light).",
+      "side_label": "ONE VEIN REACHES ALL",
+      "merged_from_v01": [
+        "12_one_vein"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. A single soft blue glow enters one vein of the glowing body outline and spreads round the whole circuit. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.16,
+      "vo_land": [
+        "Because once you know the blood goes round, you know that anything put into one vein reaches the whole body."
+      ]
+    },
+    {
+      "id": "11_transfusion",
+      "t_s": 450.98,
+      "t": "7:30.98",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: candlelight is room ambience only; prompt keeps every flame, lantern and lamp out of frame.",
+      "side_label": "FIRST TRANSFUSIONS · 1660s",
+      "merged_from_v01": [
+        "13_transfusion"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. 1660s: two physicians in wigs bend over a table with a slender silver tube, a quill and a pewter bowl. Tools only: no animal, no patient, no blood. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.5,
+      "vo_land": [
+        "Within ten years of Harvey's death, doctors in England and France were trying the first blood transfusions."
+      ]
+    },
+    {
+      "id": "12_tools",
+      "t_s": 456.48,
+      "t": "7:36.48",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: candlelight is room ambience only; prompt keeps every flame, lantern and lamp out of frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "14_tools"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the silver tube and quills laid out on linen; a hand writes in a ledger (no readable text). Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.76,
+      "vo_land": [
+        "(continues) Within ten years of Harvey's death, doctors in England and France were trying the first blood transfusions.",
+        "That makes no sense unless your blood circulates."
+      ]
+    },
+    {
+      "id": "13_cuff",
+      "t_s": 462.24,
+      "t": "7:42.24",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "side_label": "HARVEY'S BAND, TODAY",
+      "merged_from_v01": [
+        "15_cuff"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. A modern blood pressure cuff tightens round a bare upper arm, arm only, no face, in a bright clean room. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.58,
+      "vo_land": [
+        "And the next time a nurse wraps a cuff round your arm, think of Harvey.",
+        "A blood pressure cuff is his band."
+      ]
+    },
+    {
+      "id": "14_cuff_release",
+      "t_s": 469.82,
+      "t": "7:49.82",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "16_cuff_release"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Same cuff eases off; a stethoscope disc listens at the inside of the elbow. Arm only, no face. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.54,
+      "vo_land": [
+        "It squeezes until the blood stops getting in, then lets go, and listens for the moment it starts to flow again."
+      ]
+    },
+    {
+      "id": "15_band_table",
+      "t_s": 477.36,
+      "t": "7:57.36",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: candlelight is room ambience only; prompt keeps every flame, lantern and lamp out of frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "17_band_table"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Harvey's linen band on the old oak table, beside the page of sums and Fabricius's vein drawing. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.28,
+      "vo_land": [
+        "A sum, a band, and a row of little doors."
+      ]
+    },
+    {
+      "id": "16_proved_last_link",
+      "t_s": 481.64,
+      "t": "8:01.64",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing cutaway, stream or loop is the hero (emissive light).",
+      "side_label": null,
+      "merged_from_v01": [
+        "18_harvey_proved",
+        "19_last_link"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Harvey's painted heart chart; a glowing loop draws itself over it and runs round, and at the far end the last link, a fine glowing mesh of tiny vessels, lights up softly to close it. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.9,
+      "vo_land": [
+        "Harvey proved that your heart is a pump and that your blood goes round, long before anyone saw the last link."
+      ]
+    },
+    {
+      "id": "17_dutch_lens",
+      "t_s": 489.54,
+      "t": "8:09.54",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "side_label": "DELFT · 1674",
+      "merged_from_v01": [
+        "20_dutch_lens"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. A cloth merchant's hand holds a tiny brass lens up to a window; a drop of pond water on a glass sliver beside it. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.0,
+      "vo_land": [
+        "(continues) Harvey proved that your heart is a pump and that your blood goes round, long before anyone saw the last link.",
+        "Thirteen years later, a Dutch cloth merchant with an even better lens looked into a drop of pond water, and found it full of life."
+      ]
+    },
+    {
+      "id": "18_pond_life",
+      "t_s": 494.54,
+      "t": "8:14.54",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing cutaway, stream or loop is the hero (emissive light).",
+      "side_label": null,
+      "merged_from_v01": [
+        "21_pond_life"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Through the lens: a drop of pond water full of tiny faceless moving shapes (rods, spheres, spirals), soft glow, always moving. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.39,
+      "vo_land": [
+        "(continues) Thirteen years later, a Dutch cloth merchant with an even better lens looked into a drop of pond water, and found it full of life.",
+        "That is where the story of germs begins."
+      ]
+    }
+  ]
+}

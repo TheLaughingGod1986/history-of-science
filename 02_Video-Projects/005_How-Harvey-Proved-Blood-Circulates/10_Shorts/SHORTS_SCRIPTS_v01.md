@@ -1,5 +1,7 @@
 # 005 Shorts scripts v01 (for Ben's sign-off, point 3)
 
+**Status: awaiting Ben** (sign-off point 3). Claude passed them on the desk (PR #180) on 1 Oct 2026 and put them to Ben. No Short VO or picture until Ben OKs.
+
 Rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STUDIO_PLAYBOOK.md` §3 (Short) and §7. Voice: Ben Orbit Narrator, same settings as the long. Picture is cut from the long's own plates wherever possible.
 
 Every Short: 22–27 s; the named thing at frame 0, already moving; the first words are the claim; a visible change by 1 s; a 2–4 word hook caption on frame 0 (yellow on the hook word); the Explorer never at frame 0; captions throughout; the promoted long's **exact live title** on screen at 9–14 s; the last 4 s return to the opening picture so it loops; `gate_shorts_open.py check` PASS; Studio Related → the 005 long; no `/go/`, no pinned comment.
