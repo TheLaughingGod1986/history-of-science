@@ -66,9 +66,13 @@ const TEACH_MARKER = /\[TEACH:/i;
 const CHAPTER_MARKER = /\[CHAPTER CARD:|^\s*#{1,3}\s+chapter\b|^chapter\s+\d+/gim;
 
 const YOU_STAKES = /\b(what would you|would you|you (see|feel|hear|survive)|what happens next|what if)\b/i;
-const ESCALATION = /\b(but |however |then |worse |deeper |beyond |until |suddenly |now )\b/i;
+// Global (g) so .match() counts every hit; without it every script scored at most one (1 Oct 2026).
+const ESCALATION = /\b(but |however |then |worse |deeper |beyond |until |suddenly |now )\b/gi;
 const CURIOSITY = /\b(why |how |what if|nobody|never|secret|mystery|paradox|impossible|unknown)\b/i;
-const SCIENCE = /\b(light[- ]year|gravity|orbit|mass|atmosphere|radiation|wavelength|event horizon|biosignature|parsec|neutron|photon|spectrum)\b/i;
+// Orbit's space words plus HOS's history-of-science method words (how we found out), so a
+// discovery film isn't capped below the bar for not being about space (HOS 004 88.9, 005 84.4).
+const SCIENCE =
+  /\b(light[- ]year|gravity|orbit|mass|atmosphere|radiation|wavelength|event horizon|biosignature|parsec|neutron|photon|spectrum|discover(?:ed|y|ies)?|prov(?:e|ed|es|ing)|proof|experiments?|measur(?:e|ed|es|ing|ement)|microscopes?|evidence|observ(?:ed|ation|ations)|tested|calculat(?:e|ed|ion)|published|anatom(?:y|ist))\b/gi;
 
 function clampScore(n: number): number {
   return Math.max(0, Math.min(10, Math.round(n * 10) / 10));
@@ -78,6 +82,8 @@ function stripMarkdownNoise(text: string): string {
   return text
     .replace(/```[\s\S]*?```/g, " ")
     .replace(/^\s*\|.*$/gm, " ")
+    // Headings (title, "## PART 01: …") are never spoken: keep them out of the word count and the cold open.
+    .replace(/^\s*#{1,6}\s.*$/gm, " ")
     .replace(/\[VISUAL MUST:[^\]]*\]/gi, " ")
     .replace(/\[(?:EXPLORER|ORBIT) ACTS:[^\]]*\]/gi, " ")
     .replace(/\[TEACH:[^\]]*\]/gi, " ")
@@ -225,7 +231,7 @@ export function reviewScript(
   retentionPotential = clampScore(retentionPotential);
 
   let searchPotential = 6.5;
-  if (/\b(what if|could |happen|survive|inside|dyson|mars|moon|alien|black hole|jupiter)\b/i.test(script)) {
+  if (/\b(what if|could |happen|survive|inside|dyson|mars|moon|alien|black hole|jupiter|discover(?:ed|y)?|proved|how did|why did)\b/i.test(script)) {
     searchPotential += 1.5;
   }
   if (SERIES_SUFFIX.test(script)) searchPotential -= 1;
