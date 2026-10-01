@@ -1,0 +1,120 @@
+{
+  "at": "2026-10-01T21:26:07+01:00",
+  "results": {
+    "frP_YrNShsU": {
+      "film": "003",
+      "steps": [
+        {
+          "setting": "description",
+          "ok": true,
+          "typed": "X-rays let us see through skin. This is how R\u00f6ntgen found them: a tube wrapped in black cardboard, a screen across a dark room that glowed when it shouldn't have, and a wedding ring on the first plate.\n\nIn a W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen chased a glow that had no business being there, and named the unknown ray X.\n\nSomething invisible had left the tube. He called it X \u2014 for unknown.\n\nThis is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha R\u00f6ntgen\u2019s hand \u2014 bones and wedding ring \u2014 that turned a haunted glow into proof the world could not argue with.\n\nChapters\n0:00 A Dark Lab, 1895\n1:27 The Cardboard\n2:32 Bones Without a Knife\n3:59 Bertha\u2019s Ring\n5:25 A New Kind of Seeing\n\nHistory of Science\nDISCOVERY. WONDER. PROOF.\n\n@HistoryOfScienceYT\n",
+          "save": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          },
+          "av_after_save": {
+            "chip": "Visibility Public",
+            "not_kids": true,
+            "kids_yes": false,
+            "kids": {
+              "no": false,
+              "yes": false
+            }
+          },
+          "av_reopen": {
+            "chip": "Visibility Public",
+            "not_kids": true,
+            "kids_yes": false,
+            "kids": {
+              "no": false,
+              "yes": false
+            }
+          },
+          "verify": "X-rays let us see through skin. This is how R\u00f6ntgen found them: a tube wrapped in black cardboard, a screen across a dark room that glowed when it shouldn't have, and a wedding ring on the first plate.\n\nIn a W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen chased a glow that had no business being there, and named the unknown ray X.\n\nSomething invisible had left the tube. He called it X \u2014 for unknown.\n\nThis is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha R\u00f6ntgen\u2019s hand \u2014 bones and wedding ring \u2014 that turned a haunted glow into proof the world could not argue with.\n\nChapters\n0:00 A Dark Lab, 1895\n1:27 The Cardboard\n2:32 Bones Without a Knife\n3:59 Bertha\u2019s Ring\n5:25 A New Kind of Seeing\n\nHistory of Science\nDISCOVERY. WONDER. PROOF.\n\n@HistoryOfScienceYT",
+          "verified": true
+        },
+        {
+          "setting": "tags",
+          "before": [
+            "history of physics",
+            "history of science",
+            "radiography",
+            "r\u00f6ntgen",
+            "x-rays"
+          ],
+          "removed": 3,
+          "mid": [],
+          "added": [
+            "x-rays",
+            "r\u00f6ntgen",
+            "roentgen",
+            "wilhelm r\u00f6ntgen",
+            "history of physics",
+            "history of science"
+          ],
+          "chips": [
+            "x-rays",
+            "r\u00f6ntgen",
+            "roentgen",
+            "wilhelm r\u00f6ntgen",
+            "history of physics",
+            "history of science"
+          ],
+          "ok": true,
+          "save": {
+            "enabled": true,
+            "clicked": true,
+            "confirm": "Save"
+          },
+          "av_after_save": {
+            "chip": "Visibility Public",
+            "not_kids": true,
+            "kids_yes": false,
+            "kids": {
+              "no": false,
+              "yes": false
+            }
+          },
+          "av_reopen": {
+            "chip": "Visibility Public",
+            "not_kids": true,
+            "kids_yes": false,
+            "kids": {
+              "no": false,
+              "yes": false
+            }
+          },
+          "verify": [
+            "x-rays",
+            "r\u00f6ntgen",
+            "roentgen",
+            "wilhelm r\u00f6ntgen",
+            "history of physics",
+            "history of science"
+          ],
+          "verified": true
+        }
+      ],
+      "av_start": {
+        "chip": "Visibility Public",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      },
+      "description_before": "How Did We Discover X-rays?\n\nIn a dark W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen covered a cathode tube so nothing should escape. Across the room, a cardboard screen painted to glow under light\u2026 glowed anyway.\n\nSomething invisible had left the tube. He called it X \u2014 for unknown.\n\nThis is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha R\u00f6ntgen\u2019s hand \u2014 bones and wedding ring \u2014 that turned a haunted glow into proof the world could not argue with.\n\nChapters\n0:00 A Dark Lab, 1895\n1:27 The Cardboard\n2:32 Bones Without a Knife\n3:59 Bertha\u2019s Ring\n5:25 A New Kind of Seeing\n\nHistory of Science\nDISCOVERY. WONDER. PROOF.\n\n@HistoryOfScienceYT",
+      "av_final": {
+        "chip": "Visibility Public",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      }
+    }
+  }
+}
