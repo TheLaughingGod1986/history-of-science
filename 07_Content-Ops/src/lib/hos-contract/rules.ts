@@ -135,9 +135,10 @@ export type LongPackageInput = {
 
 /**
  * Neighbours (1 Oct 2026, from HOS 002: 108 of 126 views were "suggested", 55.6% of them from
- * TED-Ed's Mendeleev video). A long names the big education videos it should sit beside
- * (`tools/neighbours.py`) and uses their words: the title, the description's opening and the
- * tags each hold one of `neighbours.phrases`.
+ * TED-Ed's Mendeleev video). Ben evening same day: every future film needs a pool of big
+ * education neighbours so YouTube can recommend it. A long names those videos
+ * (`tools/neighbours.py`) and uses their subject words (never channel names): the title,
+ * the description's opening and the tags each hold one of `neighbours.phrases`.
  */
 export type Neighbours = {
   phrases?: string[];
@@ -146,6 +147,8 @@ export type Neighbours = {
 };
 
 export const NEIGHBOUR_MIN_VIEWS = 1_000_000;
+/** At least this many education neighbours must have NEIGHBOUR_MIN_VIEWS+ (Ben, 1 Oct 2026). */
+export const NEIGHBOUR_MIN_COUNT = 3;
 const TED_CHANNELS = new Set(["TED-Ed", "TED", "TEDx Talks"]);
 
 export function checkNeighbours(input: {
@@ -168,8 +171,14 @@ export function checkNeighbours(input: {
   if (!phrases.length) f.push(missing("neighbours.phrases", "neighbours.phrases is empty"));
   if (!videos.length) f.push(missing("neighbours.videos", "neighbours.videos is empty"));
   else {
-    if (!videos.some((v) => (v.views ?? 0) >= NEIGHBOUR_MIN_VIEWS))
-      f.push(missing("neighbours.size", `no neighbour with ${NEIGHBOUR_MIN_VIEWS.toLocaleString("en-GB")}+ views`));
+    const big = videos.filter((v) => (v.views ?? 0) >= NEIGHBOUR_MIN_VIEWS);
+    if (big.length < NEIGHBOUR_MIN_COUNT)
+      f.push(
+        missing(
+          "neighbours.size",
+          `need ${NEIGHBOUR_MIN_COUNT} education neighbours with ${NEIGHBOUR_MIN_VIEWS.toLocaleString("en-GB")}+ views; found ${big.length}`,
+        ),
+      );
     if (!videos.some((v) => TED_CHANNELS.has(v.channel)))
       f.push(warn("neighbours.ted", "no TED-Ed / TED neighbour; prefer a topic that has one"));
   }

@@ -1,0 +1,170 @@
+{
+ "pulled": "2026-10-01",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "radioactivity",
+  "marie curie",
+  "discovery of radium"
+ ],
+ "autocomplete": {
+  "radioactivity": [
+   "radioactivity",
+   "radioactivity physics",
+   "radioactivity chemistry",
+   "radioactivity kraftwerk",
+   "radioactivity class 10 icse",
+   "radioactivity class 12",
+   "radioactivity class 12 physics",
+   "radioactivity class 10",
+   "radioactivity class 10 icse physics wallah",
+   "radioactivity class 10th icse"
+  ],
+  "marie curie": [
+   "marie curie",
+   "marie curie edit",
+   "marie curie biography",
+   "marie curie for kids",
+   "marie curie nobel prize",
+   "marie curie documentary",
+   "marie curie pierre bourne",
+   "marie curie story",
+   "marie curie movie",
+   "marie curie in hindi"
+  ],
+  "discovery of radium": [
+   "discovery of radium",
+   "discovery of radium by marie curie",
+   "marie curie discovery of radium and polonium"
+  ]
+ },
+ "sharedTitleWords": [
+  "marie curie",
+  "is marie"
+ ],
+ "neighbours": [
+  {
+   "id": "w6JFRi0Qm_s",
+   "title": "The genius of Marie Curie - Shohini Ghose",
+   "channel": "TED-Ed",
+   "views": "4,129,406 views",
+   "age": "9 yr ago",
+   "length": "5:04",
+   "tier": 1,
+   "viewCount": 4129406,
+   "foundBy": "ted-ed radioactivity",
+   "onTopic": true
+  },
+  {
+   "id": "5D3hQS6ezXc",
+   "title": "Why is Marie Antoinette so controversial? - Carolyn Harris",
+   "channel": "TED-Ed",
+   "views": "1,793,158 views",
+   "age": "3 yr ago",
+   "length": "5:49",
+   "tier": 1,
+   "viewCount": 1793158,
+   "foundBy": "ted-ed marie curie",
+   "onTopic": true
+  },
+  {
+   "id": "TJgc28csgV0",
+   "title": "Radioactivity: Expect the unexpected - Steve Weatherall",
+   "channel": "TED-Ed",
+   "views": "1,007,287 views",
+   "age": "13 yr ago",
+   "length": "4:16",
+   "tier": 1,
+   "viewCount": 1007287,
+   "foundBy": "radioactivity",
+   "onTopic": true
+  },
+  {
+   "id": "UtZw9jfIxXM",
+   "title": "Stable and Unstable Nuclei | Radioactivity | Physics | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "1,033,210 views",
+   "age": "7 yr ago",
+   "length": "4:54",
+   "tier": 2,
+   "viewCount": 1033210,
+   "foundBy": "radioactivity",
+   "onTopic": true
+  },
+  {
+   "id": "gaIqlW6VcMY",
+   "title": "The Radium Girls",
+   "channel": "SciShow",
+   "views": "629,848 views",
+   "age": "11 yr ago",
+   "length": "4:39",
+   "tier": 2,
+   "viewCount": 629848,
+   "foundBy": "ted-ed discovery of radium",
+   "onTopic": true
+  },
+  {
+   "id": "r4jCTiGSuwU",
+   "title": "Marie Curie: Great Minds",
+   "channel": "SciShow",
+   "views": "466,593 views",
+   "age": "14 yr ago",
+   "length": "9:42",
+   "tier": 2,
+   "viewCount": 466593,
+   "foundBy": "ted-ed marie curie",
+   "onTopic": true
+  },
+  {
+   "id": "7qlRjqUMX4E",
+   "title": "Marie Curie and Spooky Rays: Crash Course History of Science #31",
+   "channel": "CrashCourse",
+   "views": "343,797 views",
+   "age": "7 yr ago",
+   "length": "11:48",
+   "tier": 2,
+   "viewCount": 343797,
+   "foundBy": "marie curie",
+   "onTopic": true
+  },
+  {
+   "id": "vJzcWmi0erk",
+   "title": "How Radioactive Is Marie Curie’s Lab Today?",
+   "channel": "SciShow",
+   "views": "160,648 views",
+   "age": "10 mo ago",
+   "length": "8:19",
+   "tier": 2,
+   "viewCount": 160648,
+   "foundBy": "marie curie",
+   "onTopic": true
+  },
+  {
+   "id": "lsl8iF5EPBs",
+   "title": "Marie Sklodowska-Curie: Belén Yuste at TEDxGranViaWomen",
+   "channel": "TEDx Talks",
+   "views": "1,666 views",
+   "age": "12 yr ago",
+   "length": "15:16",
+   "tier": 1,
+   "viewCount": 1666,
+   "foundBy": "marie curie ted",
+   "onTopic": true
+  },
+  {
+   "id": "Yy97LyP6aC4",
+   "title": "Marie Curie | Paulina Hernandez & Sofia Alarcon | TEDxColegioAmericanoXalapaWomen",
+   "channel": "TEDx Talks",
+   "views": "93 views",
+   "age": "1 yr ago",
+   "length": "5:35",
+   "tier": 1,
+   "viewCount": 93,
+   "foundBy": "marie curie ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

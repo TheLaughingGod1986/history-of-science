@@ -18,8 +18,9 @@ Usage
   python3 neighbours.py "atom" "rutherford gold foil" --phrase atom --phrase atomic \
       --manifest 02_Video-Projects/004_*/11_Upload-Package/PACKAGE_MANIFEST.json
 
-The topic gate (STUDIO_PLAYBOOK.md §2): at least one neighbour with 1M+ views, TED-Ed or TED
-preferred. `npm run lint:package` then checks the manifest's `neighbours` block.
+The topic gate (STUDIO_PLAYBOOK.md §2): at least three education neighbours with 1M+ views
+each (TED-Ed, Kurzgesagt, Khan Academy, SciShow, Veritasium, Crash Course, …). TED-Ed or TED
+preferred in the pool. `npm run lint:package` then checks the manifest's `neighbours` block.
 """
 from __future__ import annotations
 
@@ -48,6 +49,8 @@ TIER2 = {
     "Physics Girl", "Thoughty2", "Kings and Generals", "Oversimplified", "Extra History", "Simple History",
 }
 MIN_NEIGHBOUR_VIEWS = 1_000_000
+# Ben 1 Oct 2026 (evening): every future film must sit beside a pool of big education videos.
+MIN_BIG_NEIGHBOURS = 3
 
 
 def views(s: str) -> int:
@@ -119,20 +122,39 @@ def find(phrases: list[str], top: int = 20) -> dict:
         "autocomplete": {p: suggest(p) for p in phrases},
         "sharedTitleWords": shared,
         "neighbours": ranked,
-        "gate": "PASS" if any(r["viewCount"] >= MIN_NEIGHBOUR_VIEWS for r in ranked) else "FAIL",
+        "bigCount": sum(1 for r in ranked if r["viewCount"] >= MIN_NEIGHBOUR_VIEWS),
+        "gate": (
+            "PASS"
+            if sum(1 for r in ranked if r["viewCount"] >= MIN_NEIGHBOUR_VIEWS) >= MIN_BIG_NEIGHBOURS
+            else "FAIL"
+        ),
         "hasTed": any(r["tier"] == 1 for r in ranked),
         "failedQueries": failed,
     }
 
 
 def write_manifest(path: Path, pull: dict, phrases: list[str], n: int = 5) -> None:
+    """Prefer neighbours whose titles hold a contract phrase (avoids surname collisions)."""
+    pl = [p.lower() for p in phrases]
+
+    def has_phrase(r: dict) -> bool:
+        t = r["title"].lower()
+        return any(p in t for p in pl)
+
+    def score(r: dict) -> tuple:
+        return (0 if r["tier"] == 1 else 1, -r["viewCount"])
+
+    with_phrase = sorted((r for r in pull["neighbours"] if has_phrase(r)), key=score)
+    # Only fall back to no-phrase hits if we cannot fill n on-phrase neighbours.
+    without = sorted((r for r in pull["neighbours"] if not has_phrase(r)), key=score)
+    ordered = with_phrase + without
     m = json.loads(path.read_text())
     m["neighbours"] = {
         "phrases": phrases,
         "checked": pull["pulled"],
         "videos": [
             {"id": r["id"], "channel": r["channel"], "title": r["title"], "views": r["viewCount"]}
-            for r in pull["neighbours"][:n]
+            for r in ordered[:n]
         ],
     }
     path.write_text(json.dumps(m, indent=2, ensure_ascii=False) + "\n")
@@ -154,11 +176,16 @@ def main() -> int:
     for i, r in enumerate(pull["neighbours"][:12], 1):
         star = " ★" if r["tier"] == 1 else ""
         print(f"| {i} | {r['channel']}{star} | {r['views']} | [{r['title']}](https://youtu.be/{r['id']}) | {r['foundBy']} |")
+    big = [r for r in pull["neighbours"] if r["viewCount"] >= MIN_NEIGHBOUR_VIEWS]
     print(f"\nWords the top neighbours share: {', '.join(pull['sharedTitleWords']) or '—'}")
     print(f"TED-Ed/TED neighbour: {'yes' if pull['hasTed'] else 'NO'}")
+    print(f"Big neighbours (≥ {MIN_NEIGHBOUR_VIEWS:,} views): {len(big)} (need {MIN_BIG_NEIGHBOURS})")
     if pull["failedQueries"]:
         print(f"Queries YouTube refused (re-run later): {'; '.join(pull['failedQueries'])}")
-    print(f"Neighbour gate (one education video ≥ {MIN_NEIGHBOUR_VIEWS:,} views): {pull['gate']}")
+    print(
+        f"Neighbour gate (≥ {MIN_BIG_NEIGHBOURS} education videos with "
+        f"{MIN_NEIGHBOUR_VIEWS:,}+ views): {pull['gate']}"
+    )
     if ns.out:
         ns.out.parent.mkdir(parents=True, exist_ok=True)
         ns.out.write_text(json.dumps(pull, indent=1, ensure_ascii=False) + "\n")

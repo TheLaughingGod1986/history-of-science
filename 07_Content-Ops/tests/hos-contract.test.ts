@@ -205,10 +205,14 @@ describe("channel audit", () => {
   });
 });
 
-describe("neighbours (HOS 002: 55.6% of suggested views from TED-Ed's Mendeleev video)", () => {
+describe("neighbours (HOS 002: 55.6% of suggested views from TED-Ed's Mendeleev video; ≥3 at 1M+)", () => {
   const neighbours = {
     phrases: ["atom"],
-    videos: [{ id: "yQP4UJhNn0I", channel: "TED-Ed", title: "Just How Small is an Atom?", views: 7_960_719 }],
+    videos: [
+      { id: "yQP4UJhNn0I", channel: "TED-Ed", title: "Just How Small is an Atom?", views: 7_960_719 },
+      { id: "a1", channel: "Kurzgesagt – In a Nutshell", title: "The Atom", views: 3_100_000 },
+      { id: "a2", channel: "Veritasium", title: "What's Inside an Atom?", views: 2_400_000 },
+    ],
   };
   const base = {
     neighbours,
@@ -227,7 +231,20 @@ describe("neighbours (HOS 002: 55.6% of suggested views from TED-Ed's Mendeleev 
     expect(rules(checkNeighbours({ ...base, neighbours: undefined }))).toEqual(["neighbours.missing"]);
     expect(rules(checkNeighbours({ ...base, neighbours: undefined, required: false }), "warn")).toEqual(["neighbours.missing"]);
   });
-  it("fails a title, description or tags without the phrase, and a small or non-TED neighbour", () => {
+  it("fails when fewer than 3 neighbours have 1M+ views", () => {
+    const r = checkNeighbours({
+      ...base,
+      neighbours: {
+        phrases: ["atom"],
+        videos: [
+          { id: "yQP4UJhNn0I", channel: "TED-Ed", title: "Just How Small is an Atom?", views: 7_960_719 },
+          { id: "a1", channel: "SciShow", title: "Atoms", views: 500_000 },
+        ],
+      },
+    });
+    expect(rules(r)).toContain("neighbours.size");
+  });
+  it("fails a title, description or tags without the phrase, and a small or non-TED neighbour pool", () => {
     const r = checkNeighbours({
       ...base,
       title: "How Small Can You Cut Gold?",

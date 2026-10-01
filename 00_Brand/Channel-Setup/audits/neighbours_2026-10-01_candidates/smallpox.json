@@ -1,0 +1,198 @@
+{
+ "pulled": "2026-10-01",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "smallpox vaccine",
+  "edward jenner",
+  "cowpox"
+ ],
+ "autocomplete": {
+  "smallpox vaccine": [
+   "smallpox vaccine",
+   "smallpox vaccine scar",
+   "smallpox vaccine story",
+   "smallpox vaccine history",
+   "smallpox vaccine administration",
+   "smallpox vaccine needle",
+   "smallpox vaccine preparation",
+   "smallpox vaccine injection",
+   "smallpox vaccine in hindi",
+   "smallpox vaccine mark"
+  ],
+  "edward jenner": [
+   "edward jenner",
+   "edward jenner information in english",
+   "edward jenner story",
+   "edward jenner marathi mahiti",
+   "edward jenner smallpox",
+   "edward jenner contributions in microbiology",
+   "edward jenner vaccine story",
+   "edward jenner bbc teach",
+   "edward jenner smallpox vaccine story",
+   "edward jenner gcse history"
+  ],
+  "cowpox": [
+   "cowpox",
+   "cowpox treatment",
+   "cowpox disease",
+   "cowpox vaccine",
+   "cowpox in cattle",
+   "cowpox and smallpox",
+   "cowpox virus",
+   "cowpox medicine",
+   "cowpox treatment in bengali",
+   "cowpox kya hota hai"
+  ]
+ },
+ "sharedTitleWords": [],
+ "neighbours": [
+  {
+   "id": "yqUFy-t4MlQ",
+   "title": "How we conquered the deadly smallpox virus - Simona Zompi",
+   "channel": "TED-Ed",
+   "views": "9,141,865 views",
+   "age": "12 yr ago",
+   "length": "4:34",
+   "tier": 1,
+   "viewCount": 9141865,
+   "foundBy": "smallpox vaccine",
+   "onTopic": true
+  },
+  {
+   "id": "rb7TVW77ZCs",
+   "title": "How do vaccines work? - Kelwalin Dhanasarnsombut",
+   "channel": "TED-Ed",
+   "views": "3,529,937 views",
+   "age": "11 yr ago",
+   "length": "4:36",
+   "tier": 1,
+   "viewCount": 3529937,
+   "foundBy": "ted-ed smallpox vaccine",
+   "onTopic": true
+  },
+  {
+   "id": "v-NEr3KCug8",
+   "title": "How the COVID-19 vaccines were created so quickly - Kaitlyn Sadtler and Elizabeth Wayne",
+   "channel": "TED-Ed",
+   "views": "1,264,772 views",
+   "age": "5 yr ago",
+   "length": "5:08",
+   "tier": 1,
+   "viewCount": 1264772,
+   "foundBy": "ted-ed smallpox vaccine",
+   "onTopic": true
+  },
+  {
+   "id": "74WQgNa3OsQ",
+   "title": "How fast can a vaccine be made? - Dan Kwartler",
+   "channel": "TED-Ed",
+   "views": "1,090,194 views",
+   "age": "6 yr ago",
+   "length": "5:52",
+   "tier": 1,
+   "viewCount": 1090194,
+   "foundBy": "ted-ed smallpox vaccine",
+   "onTopic": true
+  },
+  {
+   "id": "oBSandHijDc",
+   "title": "Learning from smallpox: How to eradicate a disease - Julie Garon and Walter A. Orenstein",
+   "channel": "TED-Ed",
+   "views": "500,043 views",
+   "age": "11 yr ago",
+   "length": "5:45",
+   "tier": 1,
+   "viewCount": 500043,
+   "foundBy": "ted-ed smallpox vaccine",
+   "onTopic": true
+  },
+  {
+   "id": "MTW3U-O1nZo",
+   "title": "How Vaccines Are Developed – and Why They’re Safe | Body Stuff with Dr. Jen Gunter | TED",
+   "channel": "TED",
+   "views": "142,459 views",
+   "age": "3 yr ago",
+   "length": "6:42",
+   "tier": 1,
+   "viewCount": 142459,
+   "foundBy": "smallpox vaccine ted",
+   "onTopic": true
+  },
+  {
+   "id": "Ke6tT3_QTuM",
+   "title": "History of Vaccines - Killing Smallpox - Medical History - Extra History",
+   "channel": "Extra History",
+   "views": "856,660 views",
+   "age": "6 yr ago",
+   "length": "10:18",
+   "tier": 2,
+   "viewCount": 856660,
+   "foundBy": "edward jenner",
+   "onTopic": true
+  },
+  {
+   "id": "hyLyxzuTa3g",
+   "title": "Will it be safe? Vaccine safety science from Cowpox to COVID-19 | Helen Petousis-Harris | TEDxUOA",
+   "channel": "TEDx Talks",
+   "views": "80,647 views",
+   "age": "5 yr ago",
+   "length": "17:57",
+   "tier": 1,
+   "viewCount": 80647,
+   "foundBy": "smallpox vaccine ted",
+   "onTopic": true
+  },
+  {
+   "id": "Vz9JMC18LFs",
+   "title": "Your Vaccine Questions Deserve Real Answers | Kizzmekia Corbett | TED",
+   "channel": "TED",
+   "views": "25,740 views",
+   "age": "2 mo ago",
+   "length": "9:56",
+   "tier": 1,
+   "viewCount": 25740,
+   "foundBy": "smallpox vaccine ted",
+   "onTopic": true
+  },
+  {
+   "id": "4sOB0D1aq8k",
+   "title": "The recipe for better vaccines: Farah Samli at TEDxUGA",
+   "channel": "TEDx Talks",
+   "views": "7,050 views",
+   "age": "12 yr ago",
+   "length": "9:01",
+   "tier": 1,
+   "viewCount": 7050,
+   "foundBy": "smallpox vaccine ted",
+   "onTopic": true
+  },
+  {
+   "id": "u7602IU6NSM",
+   "title": "Hippos, measles & smallpox, oh my! | Michelle Medina | TEDxClevelandStateUniversity",
+   "channel": "TEDx Talks",
+   "views": "3,041 views",
+   "age": "11 yr ago",
+   "length": "15:01",
+   "tier": 1,
+   "viewCount": 3041,
+   "foundBy": "ted-ed smallpox vaccine",
+   "onTopic": true
+  },
+  {
+   "id": "bevG_CFoRyc",
+   "title": "Taking a Stand in History, Edward Jenner | Hannah Howery | TEDxPascoCountySchools",
+   "channel": "TEDx Talks",
+   "views": "1,748 views",
+   "age": "8 yr ago",
+   "length": "3:56",
+   "tier": 1,
+   "viewCount": 1748,
+   "foundBy": "smallpox vaccine ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

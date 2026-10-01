@@ -69,7 +69,7 @@ A stage is done only when its check prints PASS **and the agent pastes that outp
 
 | Stage | Must PASS | Then |
 |---|---|---|
-| Topic | `public_search.py` evidence saved; `neighbours.py` gate PASS (an education video with 1M+ views, TED-Ed/TED preferred); not a subject that already has a long | Ben picks |
+| Topic | `public_search.py` evidence saved; `neighbours.py` gate PASS (**≥ 3 education videos with 1M+ views** on the topic — TED-Ed, Kurzgesagt, Khan Academy, SciShow, Veritasium, Crash Course, etc.; TED-Ed/TED preferred); title/description/tags use their subject words, never channel names; not a subject that already has a long | Ben picks |
 | Long script | `npm run review:script` ≥ 90 and `npm run gate:episode` | Ben signs off |
 | Every VO take | `vo_check.py` (word diff, loudness, pace, first minute) | Ben listens |
 | Each Short | `gate_shorts_open.py check` | Ben watches on his phone |
