@@ -1,0 +1,100 @@
+{
+ "pulled": "2026-10-01",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "x-rays",
+  "wilhelm rontgen",
+  "discovery of x-rays"
+ ],
+ "autocomplete": {
+  "x-rays": [
+   "x-rays",
+   "x-rays class 12",
+   "x-rays production properties and uses",
+   "x-rays physics",
+   "x-rays for kids",
+   "x-rays method of production x-ray spectra continuous and characteristic x-rays moseley law",
+   "x-rays class 11",
+   "x-rays explained",
+   "x-rays production",
+   "x-rays and radioactivity"
+  ],
+  "wilhelm rontgen": [
+   "wilhelm roentgen",
+   "wilhelm roentgen x ray discovery",
+   "wilhelm roentgen x ray discovery animation",
+   "wilhelm roentgen pronunciation",
+   "wilhelm roentgen information in english",
+   "wilhelm roentgen biography",
+   "wilhelm roentgen descubrimiento de los rayos x",
+   "wilhelm conrad roentgen",
+   "wilhelm röntgen realschule",
+   "wilhelm röntgen hayatı"
+  ],
+  "discovery of x-rays": [
+   "discovery of x-rays",
+   "discovery of x-rays wilhelm roentgen 1895",
+   "discovery of x rays class 11",
+   "discovery of x rays animation",
+   "invention of x rays by wilhelm roentgen",
+   "discovery of x ray in hindi",
+   "discovery production and properties of x rays"
+  ]
+ },
+ "sharedTitleWords": [
+  "x rays"
+ ],
+ "neighbours": [
+  {
+   "id": "gsV7SJDDCY4",
+   "title": "How X-rays see through your skin - Ge Wang",
+   "channel": "TED-Ed",
+   "views": "2,326,548 views",
+   "age": "11 yr ago",
+   "length": "4:42",
+   "tier": 1,
+   "viewCount": 2326548,
+   "foundBy": "x-rays",
+   "onTopic": true
+  },
+  {
+   "id": "7qlRjqUMX4E",
+   "title": "Marie Curie and Spooky Rays: Crash Course History of Science #31",
+   "channel": "CrashCourse",
+   "views": "343,779 views",
+   "age": "7 yr ago",
+   "length": "11:48",
+   "tier": 2,
+   "viewCount": 343779,
+   "foundBy": "discovery of x-rays",
+   "onTopic": true
+  },
+  {
+   "id": "kp8sBmEqY28",
+   "title": "GCSE Physics - X-Rays & Gamma Rays - Characteristics | Uses (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "32,367 views",
+   "age": "11 mo ago",
+   "length": "4:33",
+   "tier": 2,
+   "viewCount": 32367,
+   "foundBy": "x-rays",
+   "onTopic": true
+  },
+  {
+   "id": "LHQB-yX8tuE",
+   "title": "Seeing the Unseen: Demystifying Radiation from Rainbows to X-Rays | Abram Abdou | TEDxUF",
+   "channel": "TEDx Talks",
+   "views": "1,508 views",
+   "age": "2 yr ago",
+   "length": "15:47",
+   "tier": 1,
+   "viewCount": 1508,
+   "foundBy": "ted-ed discovery of x-rays",
+   "onTopic": true
+  }
+ ],
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

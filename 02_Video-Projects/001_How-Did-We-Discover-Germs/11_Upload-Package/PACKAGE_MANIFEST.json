@@ -24,5 +24,44 @@
   "relatedVideoId": null,
   "privacy": "public",
   "madeForKids": false,
-  "privacyNote": "Long Public post-Premiere (audited 2026-09-04). Short s01 public; s02\u2013s05 scheduled."
+  "privacyNote": "Long Public post-Premiere (audited 2026-09-04). Short s01 public; s02–s05 scheduled.",
+  "neighbours": {
+    "phrases": [
+      "germs",
+      "germ"
+    ],
+    "checked": "2026-10-01",
+    "videos": [
+      {
+        "id": "yxonJTWhBJQ",
+        "channel": "TED-Ed",
+        "title": "How do germs spread (and why do they make us sick)? - Yannay Khaikin and Nicole Mideo",
+        "views": 1030758
+      },
+      {
+        "id": "gjq2BoAF0JA",
+        "channel": "TED",
+        "title": "How germs travel on planes -- and how we can stop them | Raymond Wang",
+        "views": 497699
+      },
+      {
+        "id": "GhduhIbH-iM",
+        "channel": "SciShow",
+        "title": "Germ Theory Is Older Than You Think",
+        "views": 122299
+      },
+      {
+        "id": "176adlNeRy8",
+        "channel": "TED",
+        "title": "Paul Ewald: Can we domesticate germs?",
+        "views": 26035
+      },
+      {
+        "id": "ZejAu_uPxMs",
+        "channel": "The Royal Institution",
+        "title": "How Pasteur Demonstrated Molecular Asymmetry - Christmas Lectures with Charles Stirling",
+        "views": 16207
+      }
+    ]
+  }
 }
