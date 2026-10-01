@@ -1,0 +1,292 @@
+{
+ "pulled": "2026-10-01",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "anaesthesia",
+  "ether anesthesia",
+  "william morton"
+ ],
+ "autocomplete": {
+  "anaesthesia": [
+   "anaesthesia",
+   "anaesthesia machine",
+   "anaesthesia injection",
+   "anaesthesia kya hota hai",
+   "anaesthesia rapid revision",
+   "anaesthesia technician",
+   "anaesthesia simplified",
+   "anaesthesia course",
+   "anaesthesia cartoon",
+   "anaesthesia workstation"
+  ],
+  "ether anesthesia": [
+   "ether anesthesia",
+   "diethyl ether anesthesia",
+   "ether anesthetic"
+  ],
+  "william morton": [
+   "william morton",
+   "william morton collegiate",
+   "william morton anesthesia",
+   "will morton",
+   "will morton wretch like me",
+   "will morton grace in the wrong place",
+   "will morton porch light",
+   "will morton skate",
+   "william tg morton",
+   "william thomas green morton"
+  ]
+ },
+ "sharedTitleWords": [
+  "george zaidan",
+  "zaidan and",
+  "and charles",
+  "charles morton"
+ ],
+ "neighbours": [
+  {
+   "id": "B_tTymvDWXk",
+   "title": "How does anesthesia work? - Steven Zheng",
+   "channel": "TED-Ed",
+   "views": "19,693,053 views",
+   "age": "10 yr ago",
+   "length": "4:56",
+   "tier": 1,
+   "viewCount": 19693053,
+   "foundBy": "anaesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "FBlcU4GdxCc",
+   "title": "What did people do before anesthesia? - Sally Frampton",
+   "channel": "TED-Ed",
+   "views": "2,640,832 views",
+   "age": "3 yr ago",
+   "length": "5:27",
+   "tier": 1,
+   "viewCount": 2640832,
+   "foundBy": "ted-ed anaesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "UukRgqzk-KE",
+   "title": "Why does ice float in water? - George Zaidan and Charles Morton",
+   "channel": "TED-Ed",
+   "views": "2,030,189 views",
+   "age": "12 yr ago",
+   "length": "3:56",
+   "tier": 1,
+   "viewCount": 2030189,
+   "foundBy": "ted-ed william morton",
+   "onTopic": true
+  },
+  {
+   "id": "NgD9yHSJ29I",
+   "title": "How atoms bond - George Zaidan and Charles Morton",
+   "channel": "TED-Ed",
+   "views": "1,499,043 views",
+   "age": "12 yr ago",
+   "length": "3:34",
+   "tier": 1,
+   "viewCount": 1499043,
+   "foundBy": "ted-ed william morton",
+   "onTopic": true
+  },
+  {
+   "id": "dUMmoPdwBy4",
+   "title": "What is chemical equilibrium? - George Zaidan and Charles Morton",
+   "channel": "TED-Ed",
+   "views": "1,060,989 views",
+   "age": "13 yr ago",
+   "length": "3:25",
+   "tier": 1,
+   "viewCount": 1060989,
+   "foundBy": "ted-ed william morton",
+   "onTopic": true
+  },
+  {
+   "id": "8ROHpZ0A70I",
+   "title": "The uncertain location of electrons - George Zaidan and Charles Morton",
+   "channel": "TED-Ed",
+   "views": "934,388 views",
+   "age": "12 yr ago",
+   "length": "3:47",
+   "tier": 1,
+   "viewCount": 934388,
+   "foundBy": "ted-ed william morton",
+   "onTopic": true
+  },
+  {
+   "id": "_uhIhkuh6zo",
+   "title": "How the Mongols used horses to create an empire - William T. Taylor",
+   "channel": "TED-Ed",
+   "views": "851,242 views",
+   "age": "3 yr ago",
+   "length": "5:49",
+   "tier": 1,
+   "viewCount": 851242,
+   "foundBy": "ted-ed william morton",
+   "onTopic": true
+  },
+  {
+   "id": "wYQWh8VGL3M",
+   "title": "How (and why) to read William Faulkner - Sascha Morrell",
+   "channel": "TED-Ed",
+   "views": "325,847 views",
+   "age": "3 yr ago",
+   "length": "4:41",
+   "tier": 1,
+   "viewCount": 325847,
+   "foundBy": "ted-ed william morton",
+   "onTopic": true
+  },
+  {
+   "id": "nQ7QSV4JRSs",
+   "title": "Alcohols | Alcohols, ethers, epoxides, sulfides | Organic chemistry | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "604,251 views",
+   "age": "16 yr ago",
+   "length": "6:51",
+   "tier": 2,
+   "viewCount": 604251,
+   "foundBy": "khan academy ether anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "ZSsYjQeK0qg",
+   "title": "We Finally Know How Anesthesia Works",
+   "channel": "SciShow",
+   "views": "442,901 views",
+   "age": "6 yr ago",
+   "length": "3:44",
+   "tier": 2,
+   "viewCount": 442901,
+   "foundBy": "ether anesthesia ted",
+   "onTopic": true
+  },
+  {
+   "id": "roUGDG1rhPI",
+   "title": "Ether naming and introduction | Organic chemistry | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "360,355 views",
+   "age": "15 yr ago",
+   "length": "10:59",
+   "tier": 2,
+   "viewCount": 360355,
+   "foundBy": "khan academy ether anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "YHuet6imDWI",
+   "title": "The Con Man Who Invented Anesthesia",
+   "channel": "SciShow",
+   "views": "192,131 views",
+   "age": "2 days ago",
+   "length": "10:47",
+   "tier": 2,
+   "viewCount": 192131,
+   "foundBy": "ether anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "HbUeAdVXOVc",
+   "title": "Erica Frenkel: The universal anesthesia machine",
+   "channel": "TED",
+   "views": "59,586 views",
+   "age": "14 yr ago",
+   "length": "11:24",
+   "tier": 1,
+   "viewCount": 59586,
+   "foundBy": "ether anesthesia ted",
+   "onTopic": true
+  },
+  {
+   "id": "XzvGr79eOQM",
+   "title": "Anesthesia dreams | Nancy Oriol | TEDxBeaconStreet",
+   "channel": "TEDx Talks",
+   "views": "15,784 views",
+   "age": "11 yr ago",
+   "length": "12:33",
+   "tier": 1,
+   "viewCount": 15784,
+   "foundBy": "anaesthesia ted",
+   "onTopic": true
+  },
+  {
+   "id": "HV-nP7uvdTM",
+   "title": "Heretics wanted: Donna Morton at TEDxVictoria",
+   "channel": "TEDx Talks",
+   "views": "13,201 views",
+   "age": "13 yr ago",
+   "length": "16:36",
+   "tier": 1,
+   "viewCount": 13201,
+   "foundBy": "william morton ted",
+   "onTopic": true
+  },
+  {
+   "id": "ipJhkZUFoNk",
+   "title": "Anesthesia killed the anesthesiologist  | Fahad Khan | TEDxShinnecockHills",
+   "channel": "TEDx Talks",
+   "views": "11,783 views",
+   "age": "7 yr ago",
+   "length": "17:18",
+   "tier": 1,
+   "viewCount": 11783,
+   "foundBy": "anaesthesia ted",
+   "onTopic": true
+  },
+  {
+   "id": "1-C_MTkZjPM",
+   "title": "What will quantum computers be made of? | John Morton | TEDxYouth@RadleyCollege",
+   "channel": "TEDx Talks",
+   "views": "7,272 views",
+   "age": "3 yr ago",
+   "length": "20:39",
+   "tier": 1,
+   "viewCount": 7272,
+   "foundBy": "william morton ted",
+   "onTopic": true
+  },
+  {
+   "id": "tt8_2Qdhexg",
+   "title": "Solving the Global Anesthesia Crisis | Kelly McQueen, MD, MPH | TEDxNashvilleSalon",
+   "channel": "TEDx Talks",
+   "views": "5,677 views",
+   "age": "9 yr ago",
+   "length": "15:21",
+   "tier": 1,
+   "viewCount": 5677,
+   "foundBy": "anaesthesia ted",
+   "onTopic": true
+  },
+  {
+   "id": "4DI3AAAiF6w",
+   "title": "TEDxMidAtlantic 2011 - Erica Frenkel - Demonstrating the Universal Anesthesia Machine",
+   "channel": "TEDx Talks",
+   "views": "4,467 views",
+   "age": "14 yr ago",
+   "length": "11:34",
+   "tier": 1,
+   "viewCount": 4467,
+   "foundBy": "ether anesthesia ted",
+   "onTopic": true
+  },
+  {
+   "id": "jhjRULCJWVc",
+   "title": "TEDxSanJoaquin - Donna Morton - The End of Poverty and Climate Change through 100% Renewable Energy",
+   "channel": "TEDx Talks",
+   "views": "1,759 views",
+   "age": "14 yr ago",
+   "length": "15:41",
+   "tier": 1,
+   "viewCount": 1759,
+   "foundBy": "william morton ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

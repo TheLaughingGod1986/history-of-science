@@ -1,0 +1,702 @@
+{
+  "top5": [
+    {
+      "key": "evolution",
+      "gate": "PASS",
+      "big": 12,
+      "ted": 5,
+      "top3_views": 7971240,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 3282136,
+          "title": "Myths and misconceptions about evolution - Alex Gendler",
+          "id": "mZt1Gn0R22Q"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 2530398,
+          "title": "Is human evolution speeding up or slowing down? - Laurence Hurst",
+          "id": "NTeOhj6dxsU"
+        },
+        {
+          "channel": "TEDx Talks",
+          "views": 2158706,
+          "title": "How we found out evolution is true: John van Wyhe at TEDxNTU",
+          "id": "18YwBwIK_no"
+        }
+      ],
+      "all_big_titles": [
+        "Myths and misconceptions about evolution - Alex Gendler",
+        "Is human evolution speeding up or slowing down? - Laurence Hurst",
+        "How we found out evolution is true: John van Wyhe at TEDxNTU",
+        "Five fingers of evolution - Paul Andersen",
+        "The evolution of the human eye - Joshua Harvey",
+        "Simulating Natural Selection",
+        "How Evolution works",
+        "Natural Selection"
+      ]
+    },
+    {
+      "key": "dinosaurs",
+      "gate": "PASS",
+      "big": 8,
+      "ted": 3,
+      "top3_views": 7208492,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 3516758,
+          "title": "Jellyfish predate dinosaurs. How have they survived so long? - David Gruber",
+          "id": "yQduHyiWe9o"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 2006039,
+          "title": "The ferocious predatory dinosaurs of Cretaceous Sahara - Nizar Ibrahim",
+          "id": "8RI0JnB_OaE"
+        },
+        {
+          "channel": "TED",
+          "views": 1685695,
+          "title": "Jack Horner: Shape-shifting dinosaurs",
+          "id": "kQa11RMCeSI"
+        }
+      ],
+      "all_big_titles": [
+        "Jellyfish predate dinosaurs. How have they survived so long? - David Gruber",
+        "The ferocious predatory dinosaurs of Cretaceous Sahara - Nizar Ibrahim",
+        "Jack Horner: Shape-shifting dinosaurs",
+        "The Day the Dinosaurs Died \u2013 Minute by Minute",
+        "What Dinosaurs ACTUALLY Looked Like?",
+        "How The Dinosaurs Actually Died",
+        "How the Dinosaurs Actually Went Extinct",
+        "What Happened to the Dinosaurs?"
+      ]
+    },
+    {
+      "key": "gravity",
+      "gate": "PASS",
+      "big": 7,
+      "ted": 3,
+      "top3_views": 14469200,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 9907650,
+          "title": "Newton\u2019s three-body problem explained - Fabio Pacucci",
+          "id": "D89ngRr4uZg"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 2904127,
+          "title": "Newton's 3 Laws, with a bicycle - Joshua Manley",
+          "id": "JGO_zDWmkvk"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 1657423,
+          "title": "How do geckos defy gravity? - Eleanor Nelsen",
+          "id": "YeSuQm7KfaE"
+        }
+      ],
+      "all_big_titles": [
+        "Newton\u2019s three-body problem explained - Fabio Pacucci",
+        "Newton's 3 Laws, with a bicycle - Joshua Manley",
+        "How do geckos defy gravity? - Eleanor Nelsen",
+        "What Everyone Gets Wrong About Gravity",
+        "Newton's Laws: Crash Course Physics #5",
+        "Newtonian Gravity: Crash Course Physics #8",
+        "More on Newton's first law of motion | Physics | Khan Academy"
+      ]
+    },
+    {
+      "key": "blood",
+      "gate": "PASS",
+      "big": 6,
+      "ted": 4,
+      "top3_views": 29148536,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 17957197,
+          "title": "How blood pressure works - Wilfred Manzano",
+          "id": "Ab9OZsDECZw"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 6733210,
+          "title": "Why do blood types matter? - Natalie S. Hodge",
+          "id": "xfZhb6lmxjk"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 4458129,
+          "title": "How the heart actually pumps blood - Edmond Hui",
+          "id": "ruM4Xxhx32U"
+        }
+      ],
+      "all_big_titles": [
+        "How blood pressure works - Wilfred Manzano",
+        "Why do blood types matter? - Natalie S. Hodge",
+        "How the heart actually pumps blood - Edmond Hui",
+        "What happens if you're injected with the wrong blood type? - Bill Schutt",
+        "Circulatory System and Pathway of Blood Through the Heart",
+        "Blood Vessels, Part 1 - Form and Function: Crash Course Anatomy & Physiology #27"
+      ]
+    },
+    {
+      "key": "photosynthesis",
+      "gate": "PASS",
+      "big": 6,
+      "ted": 1,
+      "top3_views": 17627770,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 2217367,
+          "title": "The simple story of photosynthesis and food - Amanda Ooten",
+          "id": "eo5XndJaz-Y"
+        },
+        {
+          "channel": "CrashCourse",
+          "views": 9236658,
+          "title": "Photosynthesis: Crash Course Biology #8",
+          "id": "sQK3Yr4Sc_k"
+        },
+        {
+          "channel": "Amoeba Sisters",
+          "views": 6173745,
+          "title": "Photosynthesis (UPDATED)",
+          "id": "CMiPYHNNg28"
+        }
+      ],
+      "all_big_titles": [
+        "The simple story of photosynthesis and food - Amanda Ooten",
+        "Photosynthesis: Crash Course Biology #8",
+        "Photosynthesis (UPDATED)",
+        "Photosynthesis",
+        "Photosynthesis: Light Reactions 1",
+        "Photosynthesis:  Calvin Cycle"
+      ]
+    }
+  ],
+  "all_ok": [
+    {
+      "key": "evolution",
+      "gate": "PASS",
+      "big": 12,
+      "ted": 5,
+      "top3_views": 7971240,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 3282136,
+          "title": "Myths and misconceptions about evolution - Alex Gendler",
+          "id": "mZt1Gn0R22Q"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 2530398,
+          "title": "Is human evolution speeding up or slowing down? - Laurence Hurst",
+          "id": "NTeOhj6dxsU"
+        },
+        {
+          "channel": "TEDx Talks",
+          "views": 2158706,
+          "title": "How we found out evolution is true: John van Wyhe at TEDxNTU",
+          "id": "18YwBwIK_no"
+        }
+      ],
+      "all_big_titles": [
+        "Myths and misconceptions about evolution - Alex Gendler",
+        "Is human evolution speeding up or slowing down? - Laurence Hurst",
+        "How we found out evolution is true: John van Wyhe at TEDxNTU",
+        "Five fingers of evolution - Paul Andersen",
+        "The evolution of the human eye - Joshua Harvey",
+        "Simulating Natural Selection",
+        "How Evolution works",
+        "Natural Selection"
+      ]
+    },
+    {
+      "key": "004_atom",
+      "gate": "PASS",
+      "big": 8,
+      "ted": 3,
+      "top3_views": 12823192,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 7957833,
+          "title": "Just How Small is an Atom?",
+          "id": "yQP4UJhNn0I"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 3366316,
+          "title": "The 2,400-year search for the atom - Theresa Doud",
+          "id": "xazQRcSCRaY"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 1499043,
+          "title": "How atoms bond - George Zaidan and Charles Morton",
+          "id": "NgD9yHSJ29I"
+        }
+      ],
+      "all_big_titles": [
+        "Just How Small is an Atom?",
+        "The 2,400-year search for the atom - Theresa Doud",
+        "How atoms bond - George Zaidan and Charles Morton",
+        "How Small Is An Atom? Spoiler: Very Small.",
+        "A Better Way To Picture Atoms",
+        "Elements and atoms | Atoms, compounds, and ions | Chemistry | Khan Academy",
+        "Introduction to chemistry | Atoms, compounds, and ions | Chemistry | Khan Academy",
+        "We've never seen an atom. But we know what they look like."
+      ]
+    },
+    {
+      "key": "dinosaurs",
+      "gate": "PASS",
+      "big": 8,
+      "ted": 3,
+      "top3_views": 7208492,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 3516758,
+          "title": "Jellyfish predate dinosaurs. How have they survived so long? - David Gruber",
+          "id": "yQduHyiWe9o"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 2006039,
+          "title": "The ferocious predatory dinosaurs of Cretaceous Sahara - Nizar Ibrahim",
+          "id": "8RI0JnB_OaE"
+        },
+        {
+          "channel": "TED",
+          "views": 1685695,
+          "title": "Jack Horner: Shape-shifting dinosaurs",
+          "id": "kQa11RMCeSI"
+        }
+      ],
+      "all_big_titles": [
+        "Jellyfish predate dinosaurs. How have they survived so long? - David Gruber",
+        "The ferocious predatory dinosaurs of Cretaceous Sahara - Nizar Ibrahim",
+        "Jack Horner: Shape-shifting dinosaurs",
+        "The Day the Dinosaurs Died \u2013 Minute by Minute",
+        "What Dinosaurs ACTUALLY Looked Like?",
+        "How The Dinosaurs Actually Died",
+        "How the Dinosaurs Actually Went Extinct",
+        "What Happened to the Dinosaurs?"
+      ]
+    },
+    {
+      "key": "gravity",
+      "gate": "PASS",
+      "big": 7,
+      "ted": 3,
+      "top3_views": 14469200,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 9907650,
+          "title": "Newton\u2019s three-body problem explained - Fabio Pacucci",
+          "id": "D89ngRr4uZg"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 2904127,
+          "title": "Newton's 3 Laws, with a bicycle - Joshua Manley",
+          "id": "JGO_zDWmkvk"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 1657423,
+          "title": "How do geckos defy gravity? - Eleanor Nelsen",
+          "id": "YeSuQm7KfaE"
+        }
+      ],
+      "all_big_titles": [
+        "Newton\u2019s three-body problem explained - Fabio Pacucci",
+        "Newton's 3 Laws, with a bicycle - Joshua Manley",
+        "How do geckos defy gravity? - Eleanor Nelsen",
+        "What Everyone Gets Wrong About Gravity",
+        "Newton's Laws: Crash Course Physics #5",
+        "Newtonian Gravity: Crash Course Physics #8",
+        "More on Newton's first law of motion | Physics | Khan Academy"
+      ]
+    },
+    {
+      "key": "blood",
+      "gate": "PASS",
+      "big": 6,
+      "ted": 4,
+      "top3_views": 29148536,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 17957197,
+          "title": "How blood pressure works - Wilfred Manzano",
+          "id": "Ab9OZsDECZw"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 6733210,
+          "title": "Why do blood types matter? - Natalie S. Hodge",
+          "id": "xfZhb6lmxjk"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 4458129,
+          "title": "How the heart actually pumps blood - Edmond Hui",
+          "id": "ruM4Xxhx32U"
+        }
+      ],
+      "all_big_titles": [
+        "How blood pressure works - Wilfred Manzano",
+        "Why do blood types matter? - Natalie S. Hodge",
+        "How the heart actually pumps blood - Edmond Hui",
+        "What happens if you're injected with the wrong blood type? - Bill Schutt",
+        "Circulatory System and Pathway of Blood Through the Heart",
+        "Blood Vessels, Part 1 - Form and Function: Crash Course Anatomy & Physiology #27"
+      ]
+    },
+    {
+      "key": "photosynthesis",
+      "gate": "PASS",
+      "big": 6,
+      "ted": 1,
+      "top3_views": 17627770,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 2217367,
+          "title": "The simple story of photosynthesis and food - Amanda Ooten",
+          "id": "eo5XndJaz-Y"
+        },
+        {
+          "channel": "CrashCourse",
+          "views": 9236658,
+          "title": "Photosynthesis: Crash Course Biology #8",
+          "id": "sQK3Yr4Sc_k"
+        },
+        {
+          "channel": "Amoeba Sisters",
+          "views": 6173745,
+          "title": "Photosynthesis (UPDATED)",
+          "id": "CMiPYHNNg28"
+        }
+      ],
+      "all_big_titles": [
+        "The simple story of photosynthesis and food - Amanda Ooten",
+        "Photosynthesis: Crash Course Biology #8",
+        "Photosynthesis (UPDATED)",
+        "Photosynthesis",
+        "Photosynthesis: Light Reactions 1",
+        "Photosynthesis:  Calvin Cycle"
+      ]
+    },
+    {
+      "key": "vaccines",
+      "gate": "PASS",
+      "big": 6,
+      "ted": 3,
+      "top3_views": 9975219,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 5179570,
+          "title": "How does your immune system work? - Emma Bryce",
+          "id": "PSRJfaAYkW4"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 3530812,
+          "title": "How do vaccines work? - Kelwalin Dhanasarnsombut",
+          "id": "rb7TVW77ZCs"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 1264837,
+          "title": "How the COVID-19 vaccines were created so quickly - Kaitlyn Sadtler and Elizabeth Wayne",
+          "id": "v-NEr3KCug8"
+        }
+      ],
+      "all_big_titles": [
+        "How does your immune system work? - Emma Bryce",
+        "How do vaccines work? - Kelwalin Dhanasarnsombut",
+        "How the COVID-19 vaccines were created so quickly - Kaitlyn Sadtler and Elizabeth Wayne",
+        "The Side Effects of Vaccines - How High is the Risk?",
+        "Antibiotics, Antivirals, and Vaccines",
+        "Why Vaccines Work"
+      ]
+    },
+    {
+      "key": "electricity",
+      "gate": "PASS",
+      "big": 5,
+      "ted": 2,
+      "top3_views": 35298269,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 3629235,
+          "title": "How do fish make electricity? - Eleanor Nelsen",
+          "id": "z0M7_HPSi14"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 3568924,
+          "title": "The science of static electricity - Anuradha Bhagwat",
+          "id": "yc2-363MIQs"
+        },
+        {
+          "channel": "Veritasium",
+          "views": 28100110,
+          "title": "The Biggest Misconception About Electricity",
+          "id": "bHIhgxav9LY"
+        }
+      ],
+      "all_big_titles": [
+        "How do fish make electricity? - Eleanor Nelsen",
+        "The science of static electricity - Anuradha Bhagwat",
+        "The Biggest Misconception About Electricity",
+        "How Electricity Actually Works",
+        "Lenz's Law | Magnetic forces, magnetic fields, and Faraday's law | Physics | Khan Academy"
+      ]
+    },
+    {
+      "key": "lightning",
+      "gate": "PASS",
+      "big": 5,
+      "ted": 2,
+      "top3_views": 14007935,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 4819855,
+          "title": "The Cambodian myth of lightning, thunder, and rain - Prumsodun Ok",
+          "id": "Ul9ysDvkuLA"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 3568924,
+          "title": "The science of static electricity - Anuradha Bhagwat",
+          "id": "yc2-363MIQs"
+        },
+        {
+          "channel": "SciShow Kids",
+          "views": 5619156,
+          "title": "What Causes Thunder and Lightning? | Weather Science | SciShow Kids",
+          "id": "fEiVi9TB_RQ"
+        }
+      ],
+      "all_big_titles": [
+        "The Cambodian myth of lightning, thunder, and rain - Prumsodun Ok",
+        "The science of static electricity - Anuradha Bhagwat",
+        "What Causes Thunder and Lightning? | Weather Science | SciShow Kids",
+        "How to Survive a Lightning Strike",
+        "Lightning: Nature\u2019s Plasma Highway"
+      ]
+    },
+    {
+      "key": "smallpox",
+      "gate": "PASS",
+      "big": 4,
+      "ted": 4,
+      "top3_views": 13936574,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 9141865,
+          "title": "How we conquered the deadly smallpox virus - Simona Zompi",
+          "id": "yqUFy-t4MlQ"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 3529937,
+          "title": "How do vaccines work? - Kelwalin Dhanasarnsombut",
+          "id": "rb7TVW77ZCs"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 1264772,
+          "title": "How the COVID-19 vaccines were created so quickly - Kaitlyn Sadtler and Elizabeth Wayne",
+          "id": "v-NEr3KCug8"
+        }
+      ],
+      "all_big_titles": [
+        "How we conquered the deadly smallpox virus - Simona Zompi",
+        "How do vaccines work? - Kelwalin Dhanasarnsombut",
+        "How the COVID-19 vaccines were created so quickly - Kaitlyn Sadtler and Elizabeth Wayne",
+        "How fast can a vaccine be made? - Dan Kwartler"
+      ]
+    },
+    {
+      "key": "radioactivity",
+      "gate": "PASS",
+      "big": 3,
+      "ted": 2,
+      "top3_views": 6169903,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 4129406,
+          "title": "The genius of Marie Curie - Shohini Ghose",
+          "id": "w6JFRi0Qm_s"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 1007287,
+          "title": "Radioactivity: Expect the unexpected - Steve Weatherall",
+          "id": "TJgc28csgV0"
+        },
+        {
+          "channel": "FuseSchool - Global Education",
+          "views": 1033210,
+          "title": "Stable and Unstable Nuclei | Radioactivity | Physics | FuseSchool",
+          "id": "UtZw9jfIxXM"
+        }
+      ],
+      "all_big_titles": [
+        "The genius of Marie Curie - Shohini Ghose",
+        "Radioactivity: Expect the unexpected - Steve Weatherall",
+        "Stable and Unstable Nuclei | Radioactivity | Physics | FuseSchool"
+      ]
+    }
+  ],
+  "fail": [
+    {
+      "key": "dna",
+      "gate": "FAIL",
+      "big": 1,
+      "ted": 1,
+      "top3_views": 1930435,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 1930435,
+          "title": "Rosalind Franklin: DNA's unsung hero - Cl\u00e1udio L. Guerra",
+          "id": "BIP0lYrdirI"
+        }
+      ],
+      "all_big_titles": [
+        "Rosalind Franklin: DNA's unsung hero - Cl\u00e1udio L. Guerra"
+      ]
+    },
+    {
+      "key": "fossils",
+      "gate": "FAIL",
+      "big": 2,
+      "ted": 0,
+      "top3_views": 6370593,
+      "top3": [
+        {
+          "channel": "Natural History Museum",
+          "views": 5207588,
+          "title": "How do dinosaur fossils form? | Natural History Museum",
+          "id": "87E8bQrX4Wg"
+        },
+        {
+          "channel": "Extra History",
+          "views": 1163005,
+          "title": "Mary Anning - Princess of Paleontology - Extra History",
+          "id": "a-CW0B4YeBQ"
+        }
+      ],
+      "all_big_titles": [
+        "How do dinosaur fossils form? | Natural History Museum",
+        "Mary Anning - Princess of Paleontology - Extra History"
+      ]
+    },
+    {
+      "key": "anaesthesia",
+      "gate": "PASS",
+      "big": 2,
+      "ted": 2,
+      "top3_views": 22333885,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 19693053,
+          "title": "How does anesthesia work? - Steven Zheng",
+          "id": "B_tTymvDWXk"
+        },
+        {
+          "channel": "TED-Ed",
+          "views": 2640832,
+          "title": "What did people do before anesthesia? - Sally Frampton",
+          "id": "FBlcU4GdxCc"
+        }
+      ],
+      "all_big_titles": [
+        "How does anesthesia work? - Steven Zheng",
+        "What did people do before anesthesia? - Sally Frampton"
+      ]
+    },
+    {
+      "key": "telescopes",
+      "gate": "PASS",
+      "big": 2,
+      "ted": 0,
+      "top3_views": 10549430,
+      "top3": [
+        {
+          "channel": "Real Engineering",
+          "views": 8813685,
+          "title": "The Insane Engineering of James Webb Telescope",
+          "id": "aICaAEXDJQQ"
+        },
+        {
+          "channel": "CrashCourse",
+          "views": 1735745,
+          "title": "Telescopes: Crash Course Astronomy #6",
+          "id": "mYhy7eaazIk"
+        }
+      ],
+      "all_big_titles": [
+        "The Insane Engineering of James Webb Telescope",
+        "Telescopes: Crash Course Astronomy #6"
+      ]
+    },
+    {
+      "key": "penicillin",
+      "gate": "FAIL",
+      "big": 1,
+      "ted": 0,
+      "top3_views": 1376847,
+      "top3": [
+        {
+          "channel": "Amoeba Sisters",
+          "views": 1376847,
+          "title": "Antibiotics, Antivirals, and Vaccines",
+          "id": "uVUf_pt7Sh0"
+        }
+      ],
+      "all_big_titles": [
+        "Antibiotics, Antivirals, and Vaccines"
+      ]
+    },
+    {
+      "key": "germs",
+      "gate": "FAIL",
+      "big": 1,
+      "ted": 1,
+      "top3_views": 1030758,
+      "top3": [
+        {
+          "channel": "TED-Ed",
+          "views": 1030758,
+          "title": "How do germs spread (and why do they make us sick)? - Yannay Khaikin and Nicole Mideo",
+          "id": "yxonJTWhBJQ"
+        }
+      ],
+      "all_big_titles": [
+        "How do germs spread (and why do they make us sick)? - Yannay Khaikin and Nicole Mideo"
+      ]
+    }
+  ]
+}

@@ -158,6 +158,7 @@ function main() {
           description: readIf(pkgDir, f.manifest.descriptionFile) || String(f.manifest.description || ""),
           liveTitles: live.filter((r) => r.id !== selfId).map((r) => r.title),
           now,
+          requireNeighbours: Number(f.film) >= 5,
         });
         report.push({ target, status: findings.some((x) => x.severity === "error") ? "FAIL" : "PASS", findings });
       }

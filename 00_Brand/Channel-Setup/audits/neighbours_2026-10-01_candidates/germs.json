@@ -1,0 +1,131 @@
+{
+ "pulled": "2026-10-01",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "germs",
+  "germ theory",
+  "louis pasteur"
+ ],
+ "autocomplete": {
+  "germs": [
+   "germs for kids",
+   "germs",
+   "germs song",
+   "germs under microscope",
+   "germs in nails",
+   "germs video for kids",
+   "germs in teeth",
+   "germs in stomach",
+   "germs are not for sharing read aloud",
+   "germs in hands"
+  ],
+  "germ theory": [
+   "germ theory of disease",
+   "germ theory of disease psm",
+   "germ theory louis pasteur",
+   "germ theory of disease in microbiology",
+   "germ theory of disease louis pasteur",
+   "germ theory history",
+   "germ theory gcse history",
+   "germ theory of disease in microbiology in hindi",
+   "germ theory of fermentation",
+   "germ theory of disease community medicine"
+  ],
+  "louis pasteur": [
+   "louis pasteur",
+   "louis pasteur class 8",
+   "louis pasteur experiment",
+   "louis pasteur conqueror of disease class 10",
+   "louis pasteur class 8 question answer",
+   "louis pasteur contributions in microbiology",
+   "louis pasteur microbiology",
+   "louis pasteur swan neck flask experiment",
+   "louis pasteur conqueror of disease class 10 explanation in hindi",
+   "louis pasteur ka prayog"
+  ]
+ },
+ "sharedTitleWords": [
+  "paul ewald",
+  "can we",
+  "we domesticate",
+  "domesticate germs"
+ ],
+ "neighbours": [
+  {
+   "id": "yxonJTWhBJQ",
+   "title": "How do germs spread (and why do they make us sick)? - Yannay Khaikin and Nicole Mideo",
+   "channel": "TED-Ed",
+   "views": "1,030,758 views",
+   "age": "11 yr ago",
+   "length": "5:07",
+   "tier": 1,
+   "viewCount": 1030758,
+   "foundBy": "germs",
+   "onTopic": true
+  },
+  {
+   "id": "gjq2BoAF0JA",
+   "title": "How germs travel on planes -- and how we can stop them | Raymond Wang",
+   "channel": "TED",
+   "views": "497,704 views",
+   "age": "10 yr ago",
+   "length": "6:29",
+   "tier": 1,
+   "viewCount": 497704,
+   "foundBy": "germs ted",
+   "onTopic": true
+  },
+  {
+   "id": "GhduhIbH-iM",
+   "title": "Germ Theory Is Older Than You Think",
+   "channel": "SciShow",
+   "views": "122,299 views",
+   "age": "9 mo ago",
+   "length": "1:00",
+   "tier": 2,
+   "viewCount": 122299,
+   "foundBy": "germ theory",
+   "onTopic": true
+  },
+  {
+   "id": "176adlNeRy8",
+   "title": "Paul Ewald: Can we domesticate germs?",
+   "channel": "TED",
+   "views": "26,035 views",
+   "age": "18 yr ago",
+   "length": "19:19",
+   "tier": 1,
+   "viewCount": 26035,
+   "foundBy": "germs ted",
+   "onTopic": true
+  },
+  {
+   "id": "xCUyYIIG_gM",
+   "title": "Can we domesticate germs? - Paul Ewald",
+   "channel": "TED-Ed",
+   "views": "14,233 views",
+   "age": "13 yr ago",
+   "length": "17:50",
+   "tier": 1,
+   "viewCount": 14233,
+   "foundBy": "germs ted",
+   "onTopic": true
+  },
+  {
+   "id": "0aPZ7Osqnf8",
+   "title": "Germs | Joshua Lutz | TEDxDoralAcademyPrep",
+   "channel": "TEDx Talks",
+   "views": "290 views",
+   "age": "9 yr ago",
+   "length": "3:47",
+   "tier": 1,
+   "viewCount": 290,
+   "foundBy": "germ theory ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 1,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

@@ -73,6 +73,7 @@ Then one hard fact. The promoted film's exact live title is on screen at 9–14 
 ## Packaging
 
 - **The title is one concrete promise about a familiar thing.** Not the *How Did We Discover X?* formula every week (`THUMBNAIL_AND_TITLE_RULES.md` §1).
+- **Every long sits beside big neighbours** (1 Oct 2026): at least 3 TED-Ed or education videos with 1M+ views on the same subject, and our title, description opening and tags use its subject noun. That is where 002's daily views come from (108 of 126 from suggested, 55.6% from TED-Ed's Mendeleev video). `STUDIO_PLAYBOOK.md` §2.
 - The thumbnail adds to the title, never repeats it. 2–4 words.
 - The description opens on the real subject, then chapters, then sources.
 - No hashtags in titles. Never reuse the title of a live video.
@@ -81,8 +82,9 @@ Then one hard fact. The promoted film's exact live title is on screen at 9–14 
 
 1. Read the latest `audits/weekly/<date>/REPORT.md`. Which Shorts and topics held?
 2. Choose a familiar thing with a clear moment of proof, a person to follow, and one room to set it in.
-3. Competition check: search the exact title signed out. If the top five are all channels with millions of subscribers, narrow the angle.
-4. Fill the vidIQ pre-build audit and the topic score. **Ben picks.**
+3. **Neighbour pool (1 Oct 2026):** every future film must be one YouTube can recommend next to big education videos. `neighbours.py` must PASS with **≥ 3 education videos at 1M+ views** on the topic before topic lock (`STUDIO_PLAYBOOK.md` §2). Use their subject words in title, description and tags, never their channel names.
+4. Competition check: search the exact title signed out. If the top five are all channels with millions of subscribers, narrow the angle.
+5. Fill the vidIQ pre-build audit and the topic score. **Ben picks.**
 
 Candidates are in `VIDEO_BACKLOG.json`.
 

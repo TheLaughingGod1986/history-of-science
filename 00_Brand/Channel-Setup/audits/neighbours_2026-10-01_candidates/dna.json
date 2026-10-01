@@ -1,0 +1,146 @@
+{
+ "pulled": "2026-10-01",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "DNA discovery",
+  "double helix",
+  "watson crick",
+  "rosalind franklin"
+ ],
+ "autocomplete": {
+  "DNA discovery": [
+   "dna discovery",
+   "dna discovery documentary",
+   "dna discovery history",
+   "dna discovery and structure",
+   "dna discovery experiments",
+   "dna discovery ks3",
+   "dna discovery timeline",
+   "dna discovery controversy",
+   "jesus dna discovery",
+   "dna ki discovery"
+  ],
+  "double helix": [
+   "double helix",
+   "double helix bl series ep 1 eng sub",
+   "double helix ep 12",
+   "double helix bts",
+   "double helix ep 10",
+   "double helix ep 11",
+   "double helix reaction",
+   "double helix bl series",
+   "double helix kiss",
+   "double helix ep 1"
+  ],
+  "watson crick": [
+   "watson crick model of dna",
+   "watson crick model",
+   "watson cricket academy",
+   "watson crick",
+   "watson cricket player",
+   "watson crick model of dna class 12",
+   "watson crick model of dna class 10",
+   "watson cricketer",
+   "watson crick ka dna model",
+   "watson crick model for semiconservative dna replication"
+  ],
+  "rosalind franklin": [
+   "rosalind franklin",
+   "rosalind franklin dna",
+   "rosalind franklin biography",
+   "rosalind franklin medical school",
+   "rosalind franklin documentary",
+   "rosalind franklin story in hindi",
+   "rosalind franklin information",
+   "rosalind franklin university",
+   "rosalind franklin x ray diffraction",
+   "rosalind franklin costume"
+  ]
+ },
+ "sharedTitleWords": [
+  "rosalind franklin",
+  "discovered dna",
+  "james watson",
+  "of the",
+  "the double",
+  "double helix"
+ ],
+ "neighbours": [
+  {
+   "id": "BIP0lYrdirI",
+   "title": "Rosalind Franklin: DNA's unsung hero - Cláudio L. Guerra",
+   "channel": "TED-Ed",
+   "views": "1,930,435 views",
+   "age": "10 yr ago",
+   "length": "4:10",
+   "tier": 1,
+   "viewCount": 1930435,
+   "foundBy": "DNA discovery",
+   "onTopic": true
+  },
+  {
+   "id": "RvdxGDJogtA",
+   "title": "How I discovered DNA - James Watson",
+   "channel": "TED-Ed",
+   "views": "363,629 views",
+   "age": "13 yr ago",
+   "length": "20:15",
+   "tier": 1,
+   "viewCount": 363629,
+   "foundBy": "DNA discovery",
+   "onTopic": true
+  },
+  {
+   "id": "2HgL5OFip-0",
+   "title": "James Watson: How we discovered DNA",
+   "channel": "TED",
+   "views": "302,114 views",
+   "age": "19 yr ago",
+   "length": "20:55",
+   "tier": 1,
+   "viewCount": 302114,
+   "foundBy": "DNA discovery",
+   "onTopic": true
+  },
+  {
+   "id": "JiME-W58KpU",
+   "title": "Rosalind Franklin: Great Minds",
+   "channel": "SciShow",
+   "views": "381,079 views",
+   "age": "13 yr ago",
+   "length": "3:46",
+   "tier": 2,
+   "viewCount": 381079,
+   "foundBy": "rosalind franklin",
+   "onTopic": true
+  },
+  {
+   "id": "hCUce36Ganc",
+   "title": "The discovery of the double helix structure of DNA",
+   "channel": "Khan Academy",
+   "views": "87,706 views",
+   "age": "10 yr ago",
+   "length": "8:56",
+   "tier": 2,
+   "viewCount": 87706,
+   "foundBy": "khan academy DNA discovery",
+   "onTopic": true
+  },
+  {
+   "id": "pZpHdlORAGw",
+   "title": "The Dark Side of the Double Helix: Andrew Hessel at TEDx Marin 2012",
+   "channel": "TEDx Talks",
+   "views": "50,043 views",
+   "age": "13 yr ago",
+   "length": "19:05",
+   "tier": 1,
+   "viewCount": 50043,
+   "foundBy": "ted-ed double helix",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 1,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

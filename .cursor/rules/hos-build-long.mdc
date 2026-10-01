@@ -27,11 +27,14 @@ Full steps: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md` §2–§4 and §7. Hooks
   - `[CHAPTER CARD]`, `[VISUAL MUST]` and `[TEACH]` on every act; `[EXPLORER ACTS]` on Explorer beats only.
 - **Gates:** `npm run review:script` scores 90 or more, then `npm run gate:episode` PASSes. No VO or picture spend before both.
 - **Voice:** Ben Orbit Narrator (`04_Audio/tools/orbit_voice.py`, `settings_for_part(n)`: speed 1.04 on every part; `eleven_v3` ignores higher speeds). VO before picture; the text is locked (regenerate a single sentence, never rewrite). Target full VO about 8:15–8:30. Run `00_Brand/Channel-Setup/tools/vo_check.py` on every take (word diff, loudness −19 to −28 dB, pauses, pace, first-minute times) before Ben listens. Too long: trim pauses to ~0.6 s, then `atempo` ≤ 1.06. Record part durations, starts and sha256 in `production-status.md`, then re-time from the real VO.
+- **Neighbour gate (1 Oct 2026; bar raised same evening):** before Ben picks a topic, `python3 00_Brand/Channel-Setup/tools/neighbours.py "<subject>" "<person>" --out <film>/11_Upload-Package/evidence_<date>_neighbours.json` must PASS — **≥ 3 education videos with 1M+ views** on the topic (TED-Ed, Kurzgesagt, Khan Academy, SciShow, Veritasium, Crash Course, …; TED-Ed/TED preferred in the pool). Once titled, write the block with `--phrase <noun> --manifest <manifest>`; title/description/tags use subject words, never channel names. `lint:package` fails films from 005 that drop the phrases or have fewer than 3 neighbours at 1M+. The film starts where the neighbours stop: it shows how we found out.
 - **Title for traction:** the question the film answers, phrased as searched, least big-channel competition (`tools/public_search.py`); umbrella and picture-led titles go into Test & Compare. vidIQ may be waived by Ben; gate overrides are Ben's alone and are recorded in the audit and status.
-- **Assembly:**
+- **Assembly** (Orbit edit lessons apply to HOS — 1 Oct 2026):
   - normalise to 1920×1080, 30 fps CFR, stereo; check A/V lengths match;
   - a remint is picture only (keep the locked audio);
-  - no branded intro; soft chapter cards; bed about −20 dB under VO;
+  - no branded intro; bed about −20 dB under VO; music covers the full runtime;
+  - every chapter/part card waits for the VO sentence to finish, holds **0.5–0.8 s**, then cross-fades in; no line clipped by a cut; picture and music run past the last VO word, then fade;
+  - check for repeated or stumbled VO phrases before delivery (regenerate the sentence);
   - out on the 3–4 s cream-on-brown card *History of Science / DISCOVERY. WONDER. PROOF.*; subscribe in the Studio end screen only;
   - export `09_Final-Export/<slug>_full_v0N.mp4`.
 - **Publish:** normal publish, Thursday 18:00 UK, no Premiere. Test & Compare with 3 thumbs; end screen = best related long + Subscribe; captions from the script; a pinned comment with the film's open question.
