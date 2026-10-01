@@ -129,7 +129,63 @@ export type LongPackageInput = {
   description: string;
   liveTitles: string[];
   now?: Date;
+  /** Films from 005 on must name their neighbours; older packages only warn. */
+  requireNeighbours?: boolean;
 };
+
+/**
+ * Neighbours (1 Oct 2026, from HOS 002: 108 of 126 views were "suggested", 55.6% of them from
+ * TED-Ed's Mendeleev video). A long names the big education videos it should sit beside
+ * (`tools/neighbours.py`) and uses their words: the title, the description's opening and the
+ * tags each hold one of `neighbours.phrases`.
+ */
+export type Neighbours = {
+  phrases?: string[];
+  checked?: string;
+  videos?: { id: string; channel: string; title: string; views?: number }[];
+};
+
+export const NEIGHBOUR_MIN_VIEWS = 1_000_000;
+const TED_CHANNELS = new Set(["TED-Ed", "TED", "TEDx Talks"]);
+
+export function checkNeighbours(input: {
+  neighbours: unknown;
+  title: string;
+  titleAbc: string[];
+  tags: string[];
+  description: string;
+  required: boolean;
+}): Finding[] {
+  const f: Finding[] = [];
+  const n = input.neighbours as Neighbours | undefined;
+  const missing = input.required ? err : warn;
+  if (!n || typeof n !== "object") {
+    f.push(missing("neighbours.missing", "no neighbours block: run tools/neighbours.py --manifest (STUDIO_PLAYBOOK.md §2)"));
+    return f;
+  }
+  const phrases = (n.phrases || []).map((p) => p.toLowerCase().trim()).filter(Boolean);
+  const videos = n.videos || [];
+  if (!phrases.length) f.push(missing("neighbours.phrases", "neighbours.phrases is empty"));
+  if (!videos.length) f.push(missing("neighbours.videos", "neighbours.videos is empty"));
+  else {
+    if (!videos.some((v) => (v.views ?? 0) >= NEIGHBOUR_MIN_VIEWS))
+      f.push(missing("neighbours.size", `no neighbour with ${NEIGHBOUR_MIN_VIEWS.toLocaleString("en-GB")}+ views`));
+    if (!videos.some((v) => TED_CHANNELS.has(v.channel)))
+      f.push(warn("neighbours.ted", "no TED-Ed / TED neighbour; prefer a topic that has one"));
+  }
+  if (!phrases.length) return f;
+  const has = (s: string) => phrases.some((p) => s.toLowerCase().includes(p));
+  if (!has(input.title))
+    f.push(missing("neighbours.title", `title "${input.title}" holds none of: ${phrases.join(", ")}`));
+  for (const t of input.titleAbc)
+    if (normTitle(t) !== normTitle(input.title) && !has(t))
+      f.push(warn("neighbours.tc-title", `T&C title "${t}" holds none of: ${phrases.join(", ")}`));
+  const opening = input.description.split(/\n/).filter((l) => l.trim()).slice(0, 2).join(" ");
+  if (!has(opening))
+    f.push(missing("neighbours.description", "description's first two lines hold no neighbour phrase"));
+  if (!input.tags.some(has)) f.push(missing("neighbours.tags", "no tag holds a neighbour phrase"));
+  return f;
+}
 
 /** Published packages are history: audit them with channel-audit, not here. */
 export function isPublished(manifest: Record<string, unknown>, now = new Date()): boolean {
@@ -178,6 +234,16 @@ export function lintLongPackage(input: LongPackageInput): Finding[] {
     f.push(err("description.go-link", "/go/ link in a description with no affiliate product"));
   if (!input.description.trim()) f.push(err("description.missing", "description is empty"));
   if (!m.captionsFile) f.push(warn("captions", "no captionsFile (captions from the script)"));
+  f.push(
+    ...checkNeighbours({
+      neighbours: m.neighbours,
+      title: input.title,
+      titleAbc: input.titleAbc,
+      tags: input.tags,
+      description: input.description,
+      required: input.requireNeighbours ?? false,
+    }),
+  );
   return f;
 }
 

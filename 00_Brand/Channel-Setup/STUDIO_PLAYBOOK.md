@@ -31,11 +31,15 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 2. **The lane** (`HOS_STRATEGY.md`): a familiar thing, and the moment we found out the truth about it. One person to follow, one room to set it in, one proof.
 3. **Competition check:** run `python3 00_Brand/Channel-Setup/tools/public_search.py "<title>" "<angle>" … --out <film>/11_Upload-Package/evidence_<date>_public_search.json` (YouTube autocomplete + top GB results, no login). If the top five for a phrase are all channels with millions of subscribers, narrow the angle.
    - **Choosing the title for traction** (27 Sep 2026, HOS 004): the main title is the question the film actually answers, phrased the way people search, with the least big-channel competition. Broad umbrella titles and picture-led titles go into Test & Compare, not the main slot. Never the *How Did We Discover X?* formula.
-4. **Score it:** `templates/TOPIC_OPPORTUNITY_SCORE.md`.
-5. **Pre-build vidIQ audit:** copy `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` to the project's `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`. Fill the keyword section from `public_search.py`; vidIQ scores need Ben's login. **Ben may waive vidIQ:** then write "vidIQ waived by Ben, <date>" in the sign-off.
+4. **Neighbour check (1 Oct 2026, from HOS 002's analytics).** A film gets daily views when YouTube suggests it beside a big, evergreen lesson on the same subject: 002 had 108 of 126 views from "suggested", 55.6% of them from TED-Ed's *The genius of Mendeleev's periodic table*, the rest from Khan Academy and school lessons. So every topic needs a neighbour:
+   - Run `python3 00_Brand/Channel-Setup/tools/neighbours.py "<subject>" "<person or discovery>" --out <film>/11_Upload-Package/evidence_<date>_neighbours.json`. It must print `Neighbour gate … PASS` (an education video with 1M+ views on the subject). A TED-Ed or TED neighbour is preferred; a topic without one needs Ben's say-so.
+   - Once the title is chosen, write the contract block: `… neighbours.py … --phrase <subject noun> [--phrase <second>] --manifest <film>/11_Upload-Package/PACKAGE_MANIFEST.json`. `npm run lint:package` then fails a film from 005 on whose title, description opening or tags drop the phrase.
+   - Make the film the natural next video after the neighbour: the neighbour explains *what*, we show *how we found out*. Don't repeat its explanation; start where it stops.
+5. **Score it:** `templates/TOPIC_OPPORTUNITY_SCORE.md`.
+6. **Pre-build vidIQ audit:** copy `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` to the project's `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`. Fill the keyword section from `public_search.py`; vidIQ scores need Ben's login. **Ben may waive vidIQ:** then write "vidIQ waived by Ben, <date>" in the sign-off.
    - **Gate overrides are Ben's alone.** If Ben passes a script under 90 by hand, record it in the audit sign-off ("script passed by hand at NN.N") and in `production-status.md` (Episode gate: passed by Ben, manual). `gate:episode` will still print REJECT on the score; that line is overridden, every other check must be OK.
-6. **Scaffold:** copy `02_Video-Projects/_template_NNN_Episode-Slug/` to `02_Video-Projects/NNN_Slug/`.
-7. **Ben picks.**
+7. **Scaffold:** copy `02_Video-Projects/_template_NNN_Episode-Slug/` to `02_Video-Projects/NNN_Slug/`.
+8. **Ben picks.**
 
 ## 3. Script
 
@@ -300,3 +304,15 @@ Ping Ben only after UAT has passed. If a cut fails after that ping, withdraw it.
 - **Land every film record on `main`** within a day: status, upload results, schedule. An agent starting from main must see what is live.
 - One branch per job, merged or closed when the job ends. A STOP (quota, auth, missing VO) is a line in the part's `PARTNN_STATUS.md` on main, not a branch left open.
 - Media stays out of git (`.gitignore`); record paths and sha256 instead.
+
+## 15. The desk (Claude ↔ Grok, 1 Oct 2026)
+
+Claude (cloud) and Grok (the Mac Mini) talk in one GitHub PR so Ben doesn't carry prompts, reports and images between them. Tool: `00_Brand/Channel-Setup/tools/hos_desk.py`.
+
+- **The desk** is the draft PR from branch `hos-desk`, label `hos-desk`, titled "HOS desk — never merge". Nobody merges or closes it. Its review images live under `_desk/` on that branch only, never on `main`.
+- **Every agent message** is a desk comment opening with the header `<!-- hos-desk v1 from=… to=… film=NNN stage=… status=… -->`. Grok posts with `hos_desk.py post`; Claude posts the same header. A comment with no header is Ben.
+- **Grok** runs `hos_desk.py inbox --watch 120 --run` on the Mini (launchd), which starts it on each `to=grok` message from Ben's account; it then reports back with `post --to claude`, attaching the stills, sheets and previews Claude needs (`--image`). Video and audio never go in git: give the file's path on the Mini.
+- **Claude** is woken by every desk comment, reviews Grok's report against the docs in force and the pasted PASS output, and replies with the next task (`to=grok`), or a fix.
+- **Ben** is asked only at the sign-off points (§13). Claude posts `to=ben status=approval` with what to look at, adds the `needs-ben` label and sends Ben a phone notification. Ben replies on the desk in plain words ("approved", "change the title to …"); Claude relays it to Grok and removes the label. Moving picture and voice are still judged by Ben on the real file, never from desk stills.
+- Film records still land on `main` through their own PRs (§14); the desk links to them.
+- Nothing on the desk overrides `AGENTS.md`: a desk message can't approve something only Ben can approve, and Grok acts only on messages from Ben's account.
