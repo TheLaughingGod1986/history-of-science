@@ -32,5 +32,44 @@
     "timeZone": "Europe/London",
     "type": "premiere"
   },
-  "note": "Live public long on @HistoryOfScienceYT. Zero /go/. Title and thumbnail T&C RUNNING since 2026-09-27 18:49 London (A gallium / B predicted v03 / C empty-on-purpose v05). Description v02 live. Film file locked — no Replace. Judge nothing before ~500 impressions/variant."
+  "note": "Live public long on @HistoryOfScienceYT. Zero /go/. Title and thumbnail T&C RUNNING since 2026-09-27 18:49 London (A gallium / B predicted v03 / C empty-on-purpose v05). Description v02 live. Film file locked — no Replace. Judge nothing before ~500 impressions/variant.",
+  "neighbours": {
+    "phrases": [
+      "periodic table",
+      "mendeleev"
+    ],
+    "checked": "2026-10-01",
+    "videos": [
+      {
+        "id": "fPnwBITSmgU",
+        "channel": "TED-Ed",
+        "title": "The genius of Mendeleev's periodic table - Lou Serico",
+        "views": 3651573
+      },
+      {
+        "id": "O-48znAg7VE",
+        "channel": "TED-Ed",
+        "title": "Solving the puzzle of the periodic table - Eric Rosado",
+        "views": 1265774
+      },
+      {
+        "id": "7Vhu433hkys",
+        "channel": "TED-Ed",
+        "title": "The most dangerous elements on the periodic table - Shannon Odell",
+        "views": 1004965
+      },
+      {
+        "id": "0RRVV4Diomg",
+        "channel": "CrashCourse",
+        "title": "The Periodic Table: Crash Course Chemistry #4",
+        "views": 8675258
+      },
+      {
+        "id": "LDHg7Vgzses",
+        "channel": "Khan Academy",
+        "title": "Groups of the Periodic Table",
+        "views": 992526
+      }
+    ]
+  }
 }
