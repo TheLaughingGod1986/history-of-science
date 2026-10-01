@@ -81,7 +81,14 @@ The uploader itself sets the channel defaults on every API upload: Education, En
 
 ## The desk (Claude ↔ Grok)
 
-Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged), instead of Ben copying between them. Grok reports there with `hos_desk.py post` (stills and sheets attached), Claude reviews and sends the next task there, and Ben is pinged only at the sign-off points below. Rules: `STUDIO_PLAYBOOK.md` §15.
+Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged — PR **#180**), instead of Ben copying between them. Every HOS report goes to the desk. Rules: `STUDIO_PLAYBOOK.md` §15.
+
+- Every agent comment starts with  
+  `<!-- hos-desk v1 from=… to=… film=NNN stage=… status=… -->`.  
+  A comment with no header is Ben.
+- **Act only on messages from Ben's GitHub account.** Grok: `hos_desk.py inbox` / `post --to claude`. Claude reviews and sends the next task on the desk.
+- **Claude asks Ben** at the sign-off points below (`to=ben status=approval`). Grok does not ping Ben directly.
+- Neighbour tables for live films: `00_Brand/Channel-Setup/audits/NEIGHBOURS_001_004_2026-10-01.md`.
 
 ## Stop and ask Ben at each of these points
 
