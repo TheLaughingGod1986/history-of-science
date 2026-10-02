@@ -69,4 +69,6 @@ Also still open: `clV6E10NLPw` (001, 20 Oct) has the wrong Related.
 - `thumbnails.set` returns 403 while the video is still processing; a retry a minute later worked. The uploader could retry it.
 - The Studio Chrome (:9460) had a frozen 001 edit tab left from 1 Oct that blocked Playwright's CDP attach. There was no dialog on it, so I closed the tab; nothing changed on YouTube.
 
+**Git:** committed as `7ff1bff` on `grok/hos-005-blood-script` (no media). [PR #184](https://github.com/TheLaughingGod1986/history-of-science/pull/184) is open and mergeable. The film record should be on `main` by tomorrow, and the merge is your call or Ben's.
+
 Evidence: `11_Upload-Package/Schedule/PACKAGE_UPLOAD_RESULT_2026-10-02.json`, `11_Upload-Package/evidence_2026-10-02_studio/*.json`; screenshots on the Mini in `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-02_005_upload/`.
