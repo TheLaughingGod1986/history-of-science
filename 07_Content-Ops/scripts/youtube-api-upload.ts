@@ -69,6 +69,14 @@ async function main() {
   const format = (arg("format") || "shorts") as "shorts" | "longform";
   const dryRun = flag("dry-run") || isDryRun();
 
+  // Re-validate a stored row first, so one failed refresh doesn't leave it stuck at "expired".
+  {
+    const { youtubeAccessToken } = await import("../src/lib/publishing/youtube-token");
+    await youtubeAccessToken().catch((err: unknown) => {
+      console.error(err instanceof Error ? err.message : String(err));
+      process.exit(1);
+    });
+  }
   const connection = await prisma.platformConnection.findFirst({
     where: {
       platform: "youtube_shorts",

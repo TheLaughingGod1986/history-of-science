@@ -435,7 +435,9 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
       });
       const body = await res.json();
       if (!res.ok || !body.access_token) {
-        return { ok: false, message: redactSummary(body) };
+        const { classifyRefreshFailure } = await import("@/lib/publishing/youtube-token");
+        const failure = classifyRefreshFailure(res.status, body);
+        return { ok: false, message: failure.dead ? failure.message : redactSummary(body) };
       }
       const { encryptSecret } = await import("@/lib/security/token-crypto");
       const { prisma } = await import("@/lib/storage/prisma");
