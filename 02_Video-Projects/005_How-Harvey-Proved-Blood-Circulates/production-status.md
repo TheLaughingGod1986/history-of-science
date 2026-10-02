@@ -17,12 +17,12 @@
 | Package | **Signed off by Ben, 2 Oct 2026** ("All ok", relayed on desk PR #180 comment 5948928013): title *The Tied Arm That Proved Your Blood Circulates*; description v02 with 7 tags; thumbnail v02 A (ONE TIGHT BAND, `356f9ea5…`) as main, A + B (IT GOES ROUND, `17672532…`) in Test & Compare |
 | YouTube | **`0IfXGSX7Ypw`** (https://youtu.be/0IfXGSX7Ypw), uploaded 2 Oct 2026 10:34 UK, private, scheduled. Captions `hos_005_master_v01.en.srt` serving; Test & Compare set (Ineligible until public); end screen 001 + Subscribe |
 | Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct |
-| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). **Built v01, 2 Oct 2026** from KEEP plates only (no new mints): gate, `vo_check` and freezedetect PASS on all three; phone copies in iCloud `HOS UAT/005…/10_Shorts/`. **Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean** ("Shorts ok", relayed on desk PR #180 comment 5948897987). **Dates signed off by Ben, 2 Oct 2026** ("All ok"): A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30 UK = 11:30 UTC; B and C re-gated on their dates (PASS). Not uploaded: waits for Ben's covers and titles sign-off. Sun 1 Nov and Tue 3 Nov air back-catalogue Shorts for other films |
+| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). **Built v01, 2 Oct 2026** from KEEP plates only (no new mints): gate, `vo_check` and freezedetect PASS on all three; phone copies in iCloud `HOS UAT/005…/10_Shorts/`. **Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean** ("Shorts ok", relayed on desk PR #180 comment 5948897987). **Dates signed off by Ben, 2 Oct 2026** ("All ok"): A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30 UK = 11:30 UTC; B and C re-gated on their dates (PASS). **v02, 2 Oct 2026** (Claude's desk calls, comment 5949489005): frame-0 hook caption re-set to rules §3.3 (cap height 9.0%, centred) and covers v02 in the live layout (lettering across the top, 86% wide); titles approved by Claude. Gate, `vo_check` and freezedetect PASS; phone copies in iCloud. v02 shas `4dc77bab…`, `2819c5fe…`, `c5610285…`. Not uploaded: waits for Ben's one final OK on the Shorts package. Sun 1 Nov → 004 and Tue 3 Nov → 003 back-catalogue Shorts (decided by Claude) |
 
 ## STOP
 
 - **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
-- **Shorts covers and titles pending Ben:** covers v01 (`10_Shorts/covers_v01/COVERS_INDEX_v01.json`) with the titles *Your Heart Pumps More Blood Than You Have* / *One Tight Band Proved Your Blood Goes Round* / *The Blood Vessels Finer Than a Hair*, plus the frame-0 sheet. No Short goes to Studio until he signs off; then A 30 Oct, B 8 Nov, C 15 Nov, 11:30Z, Related → `0IfXGSX7Ypw`.
+- **Shorts final OK pending Ben (Ben's one check-in, rule of 2 Oct 2026):** Shorts v02 (`10_Shorts/SHORTS_INDEX_v02.json`), covers v02 (`10_Shorts/covers_v02/COVERS_INDEX_v02.json`) and the titles *Your Heart Pumps More Blood Than You Have* / *One Tight Band Proved Your Blood Goes Round* / *The Blood Vessels Finer Than a Hair* (approved by Claude). Claude takes the package to Ben, with the 1 Nov and 3 Nov back-catalogue Shorts. No Short goes to Studio until he OKs it; then A 30 Oct, B 8 Nov, C 15 Nov, 11:30Z, Related → `0IfXGSX7Ypw`.
 - **29 Oct 18:05 jobs (after the long is public):** Test & Compare must read Running (Studio: "Your video is ineligible because: your video is not public"); if it still reads Ineligible, re-arm Thumbnail only with A + B v02. Pinned comment (open question) and the two cards are not set yet: waiting on Claude for the question text and the card targets. Point the older longs' end screens at `0IfXGSX7Ypw`.
 - Resolved: Ben signed off the package and the Shorts dates, 2 Oct 2026 ("All ok"). Long uploaded as `0IfXGSX7Ypw`, scheduled 29 Oct 18:00 UK.
 - Resolved: Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean ("Shorts ok").
@@ -767,3 +767,54 @@ PASS  hos_005_s03_never_saw_v01.mp4  dur=24.83s  audio=-21.7dB  motion=17.01  dh
 | 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | `09_Final-Export/hos_005_part05_rough_v01.mp4` (`52b66c54…`, 115.47 s) | 18/18 KEEP on Vertex ($42.61); accepted by Claude; in full join v01 with Ben |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.
+
+## 2 Oct 2026 — Shorts v02: frame-0 caption and covers (Grok, desk task from Claude, comment 5949489005)
+
+Working rule from Ben, 2 Oct 2026: Claude and Grok decide on the desk; Ben gives one final OK per film before anything is scheduled. Claude's calls for this task: re-set the frame-0 caption to rules §3.3, covers in the live layout (the live set wins over §4.2's centre band until Claude's docs PR), titles approved, gate library fixed in its own PR.
+
+### Shorts v02 (`10_Shorts/_build_shorts_v02.py`, index `10_Shorts/SHORTS_INDEX_v02.json`)
+
+Only the hook layer changed. Plates, in-points, crops, VO (`vo_v01/*_fin.wav`, the audio Ben passed), bed and word captions are v01's. Hook in Didot Bold 243 px, cap height 173 px = **9.01% of the frame**, one word per line (two words don't fit 1080 px at 8–10%), yellow hook word, block centred: A and C 27.7–72.3% of the height, B 33.6–66.4%, all clear of the bottom UI (75%). Air dates in the script are now the approved ones.
+
+| Short | File | Duration | sha256 |
+|---|---|---|---|
+| A, the sum | `10_Shorts/hos_005_s01_the_sum_v02.mp4` | 24.07 s | `4dc77babf234d80de48414520610df8abf47dbf974a0a46f2748080eef7fb3b1` |
+| B, the tied arm | `10_Shorts/hos_005_s02_the_tied_arm_v02.mp4` | 25.83 s | `2819c5fed6e6f0ba40d108f3c5eac8e0df5cc67d484bb7d564b4be3ec926b7d1` |
+| C, never saw | `10_Shorts/hos_005_s03_never_saw_v02.mp4` | 24.83 s | `c561028550852b62e9495716cfe3c3f615b668aba75b7e78dadd7453d74efb5c` |
+
+Gate run against the corrected library (PR #189: carbolic spray `clV6E10NLPw` added, `CUu8k38iAMc` retired):
+
+```
+PASS  hos_005_s01_the_sum_v02.mp4  dur=24.07s  audio=-21.2dB  motion=23.22  dhash=4b590727367b723b   (--air-date 2026-10-30)
+PASS  hos_005_s02_the_tied_arm_v02.mp4  dur=25.83s  audio=-21.6dB  motion=18.38  dhash=270e0e217b230e0e   (--air-date 2026-11-08)
+PASS  hos_005_s03_never_saw_v02.mp4  dur=24.83s  audio=-21.7dB  motion=17.52  dhash=0f0f3bdc484d0f0f   (--air-date 2026-11-15)
+```
+
+`vo_check`:
+
+```
+PASS  hos_005_s01_the_sum_v02.mp4  0:24.07  mean -21.2 dB  peak -2.0 dB  157 wpm
+   warn  replace at ~0:03.22: script 'proved' / heard 'approved' — sounds alike (likely the transcriber); listen
+PASS  hos_005_s02_the_tied_arm_v02.mp4  0:25.83  mean -21.6 dB  peak -1.9 dB  146 wpm
+   warn  replace at ~0:00.26: script 'proved' / heard 'proves' — sounds alike (likely the transcriber); listen
+PASS  hos_005_s03_never_saw_v02.mp4  0:24.83  mean -21.7 dB  peak -2.0 dB  140 wpm
+   warn  pace 140 wpm (< 145)
+```
+
+The "proved" items are the same audio Ben cleared on v01. Freezedetect: 0 events on all three. Caption-change check: A 20 changes ratio 1.0, B 20 / 1.0, C 19 / 1.0. Opens against each other and carbolic spray (dHash bits): A–B 29, A–C 36, B–C 25 (was 17 in v01), carbolic 37 / 40 / 31; nothing within 16.
+
+Phone copies: iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s0*_v02.mp4`, with `covers_v02/` (the three covers and the frame-0 sheet).
+
+### Covers v02 (`10_Shorts/_land_hos_005_covers_v02.py`, index `10_Shorts/covers_v02/COVERS_INDEX_v02.json`)
+
+Same scenes and lettering assets as v01. Stack centred across the top: starts 4.5% down, widest line **86.0%** of the width (6% horizontal stretch allowed), ends 44–46% down.
+
+| Short | Words | Title | sha256 |
+|---|---|---|---|
+| A | MORE / THAN YOU / HAVE | *Your Heart Pumps More Blood Than You Have* | `217e0a659aef889a0677d659bd1af057ddaed148e084e87c5da2c66c09eb42ca` |
+| B | ONE / TIGHT / BAND | *One Tight Band Proved Your Blood Goes Round* | `3360fb47862c5547173fb04368f029874d4df687ececa0fd7726686d1d39d4d2` |
+| C | FINER / THAN A / HAIR | *The Blood Vessels Finer Than a Hair* | `63629344b4812b11259085acce94883b92847b90fd11baac277a8275b01c2ca1` |
+
+`thumb_preview.py short` on each (`covers_v02/*_preview.jpg`) and `style_sheet.py short` (`covers_v02/hos_005_shorts_covers_v02_style_sheet.jpg`, 3 new vs 8 live). Notes: in the Shorts-list 16:9 crop only the bottom word shows, as with the live covers. On A the glass figure's head and the top of the jug tower sit behind the lettering; on B the band still shows beside TIGHT.
+
+**STOP:** Claude takes the Shorts package to Ben for his final OK. Nothing is in Studio.

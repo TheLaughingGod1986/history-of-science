@@ -1,0 +1,318 @@
+{
+  "scripts": "SHORTS_SCRIPTS_v01.md",
+  "task": "PR #180 comment 5949489005",
+  "change": "frame-0 hook caption only (rules \u00a73.3); otherwise v01",
+  "shorts": {
+    "s01_the_sum": {
+      "id": "s01_the_sum",
+      "air_date": "2026-10-30",
+      "file": "10_Shorts/hos_005_s01_the_sum_v02.mp4",
+      "sha256": "4dc77babf234d80de48414520610df8abf47dbf974a0a46f2748080eef7fb3b1",
+      "duration_s": 24.067,
+      "vo": "hos_005_s01_the_sum_vo_v01_fin.wav",
+      "vo_s": 23.497,
+      "bed": "hos005-part03-temp_score_bed_v01.mp3",
+      "bed_gain_db": -19.3,
+      "hook": "MORE THAN YOU HAVE",
+      "hook_layer": {
+        "font_size": 243,
+        "cap_px": 173,
+        "cap_pct": 9.01,
+        "lines": 4,
+        "block_pct": [
+          27.7,
+          72.3
+        ],
+        "widest_pct": 71.9
+      },
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 2.168,
+          "plate": "04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+          "in_s": 1.0,
+          "crop_x": 656,
+          "lands_on": 0
+        },
+        {
+          "t0": 2.168,
+          "t1": 5.047,
+          "plate": "04_Generated-Clips/part03/raw/v01/05_how_much_t1.mp4",
+          "in_s": 0.5,
+          "crop_x": 656,
+          "lands_on": "One"
+        },
+        {
+          "t0": 5.047,
+          "t1": 9.48,
+          "plate": "04_Generated-Clips/part03/raw/v01/07_thousand_beats_t4.mp4",
+          "in_s": 0.3,
+          "crop_x": [
+            540,
+            900
+          ],
+          "lands_on": "Say"
+        },
+        {
+          "t0": 9.48,
+          "t1": 12.12,
+          "plate": "04_Generated-Clips/part03/raw/v01/04_squeeze_pulse_t1.mp4",
+          "in_s": 0.5,
+          "crop_x": 900,
+          "lands_on": "of"
+        },
+        {
+          "t0": 12.12,
+          "t1": 14.483,
+          "plate": "04_Generated-Clips/part01/raw/v01/09_heart_clock_t2.mp4",
+          "in_s": 0.3,
+          "crop_x": 560,
+          "lands_on": "it"
+        },
+        {
+          "t0": 14.483,
+          "t1": 17.188,
+          "plate": "04_Generated-Clips/part03/raw/v01/09_jug_tower_t1.mp4",
+          "in_s": 0.5,
+          "crop_x": 360,
+          "lands_on": "That's"
+        },
+        {
+          "t0": 17.188,
+          "t1": 20.047,
+          "plate": "04_Generated-Clips/part03/raw/v01/12_glowing_loop_t2.mp4",
+          "in_s": 0.5,
+          "crop_x": 656,
+          "lands_on": "Food"
+        },
+        {
+          "t0": 20.047,
+          "t1": 24.047,
+          "plate": "04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+          "in_s": 1.0,
+          "crop_x": 656,
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 20,
+      "caption_check": {
+        "ok": true,
+        "changes": 20,
+        "ratio": 1.0
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_005_s01_the_sum_v02.mp4  dur=24.07s  audio=-21.2dB  motion=23.22  dhash=4b590727367b723b\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s01_the_sum_v02_open_sheet.jpg"
+      },
+      "vo_check": {
+        "exit": 0,
+        "output": "PASS  hos_005_s01_the_sum_v02.mp4  0:24.07  mean -21.2 dB  peak -2.0 dB  157 wpm\n   warn  replace at ~0:03.22: script 'have london doctor proved it with a' / heard 'have london doctor approved it with a' \u2014 sounds alike (likely the transcriber); listen"
+      },
+      "freezedetect_starts": [],
+      "title_still": "10_Shorts/_work_v02/s01_the_sum/hos_005_s01_the_sum_v02_title_frame.jpg",
+      "frame0_still": "10_Shorts/_work_v02/s01_the_sum/hos_005_s01_the_sum_v02_frame0.jpg",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s01_the_sum_v02.mp4"
+    },
+    "s02_the_tied_arm": {
+      "id": "s02_the_tied_arm",
+      "air_date": "2026-11-08",
+      "file": "10_Shorts/hos_005_s02_the_tied_arm_v02.mp4",
+      "sha256": "2819c5fed6e6f0ba40d108f3c5eac8e0df5cc67d484bb7d564b4be3ec926b7d1",
+      "duration_s": 25.833,
+      "vo": "hos_005_s02_the_tied_arm_vo_v01_fin.wav",
+      "vo_s": 25.258,
+      "bed": "hos005-part04-temp_score_bed_v01.mp3",
+      "bed_gain_db": -19.4,
+      "hook": "ONE TIGHT BAND",
+      "hook_layer": {
+        "font_size": 243,
+        "cap_px": 173,
+        "cap_pct": 9.01,
+        "lines": 3,
+        "block_pct": [
+          33.6,
+          66.4
+        ],
+        "widest_pct": 77.0
+      },
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 2.674,
+          "plate": "04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+          "in_s": 0.8,
+          "crop_x": 640,
+          "lands_on": 0
+        },
+        {
+          "t0": 2.674,
+          "t1": 6.613,
+          "plate": "04_Generated-Clips/part04/raw/v01/02_linen_tie_t2.mp4",
+          "in_s": 0.3,
+          "crop_x": 450,
+          "lands_on": "William"
+        },
+        {
+          "t0": 6.613,
+          "t1": 8.14,
+          "plate": "04_Generated-Clips/part04/raw/v01/03_hand_pale_t4.mp4",
+          "in_s": 1.5,
+          "crop_x": 100,
+          "lands_on": "The"
+        },
+        {
+          "t0": 8.14,
+          "t1": 12.767,
+          "plate": "04_Generated-Clips/part04/raw/v01/04_stopped_loosen_t5.mp4",
+          "in_s": 1.5,
+          "crop_x": 560,
+          "lands_on": "No"
+        },
+        {
+          "t0": 12.767,
+          "t1": 16.417,
+          "plate": "04_Generated-Clips/part04/raw/v01/06_veins_swell_t1.mp4",
+          "in_s": 3.0,
+          "crop_x": 560,
+          "lands_on": "The"
+        },
+        {
+          "t0": 16.417,
+          "t1": 21.808,
+          "plate": "04_Generated-Clips/part04/raw/v01/07_in_out_doors_t2.mp4",
+          "in_s": 1.5,
+          "crop_x": 620,
+          "lands_on": "So"
+        },
+        {
+          "t0": 21.808,
+          "t1": 25.808,
+          "plate": "04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+          "in_s": 0.8,
+          "crop_x": 640,
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 21,
+      "caption_check": {
+        "ok": true,
+        "changes": 20,
+        "ratio": 1.0
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_005_s02_the_tied_arm_v02.mp4  dur=25.83s  audio=-21.6dB  motion=18.38  dhash=270e0e217b230e0e\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s02_the_tied_arm_v02_open_sheet.jpg"
+      },
+      "vo_check": {
+        "exit": 0,
+        "output": "PASS  hos_005_s02_the_tied_arm_v02.mp4  0:25.83  mean -21.6 dB  peak -1.9 dB  146 wpm\n   warn  replace at ~0:00.26: script 'band proved your blood goes' / heard 'band proves your blood goes' \u2014 sounds alike (likely the transcriber); listen"
+      },
+      "freezedetect_starts": [],
+      "title_still": "10_Shorts/_work_v02/s02_the_tied_arm/hos_005_s02_the_tied_arm_v02_title_frame.jpg",
+      "frame0_still": "10_Shorts/_work_v02/s02_the_tied_arm/hos_005_s02_the_tied_arm_v02_frame0.jpg",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s02_the_tied_arm_v02.mp4"
+    },
+    "s03_never_saw": {
+      "id": "s03_never_saw",
+      "air_date": "2026-11-15",
+      "file": "10_Shorts/hos_005_s03_never_saw_v02.mp4",
+      "sha256": "c561028550852b62e9495716cfe3c3f615b668aba75b7e78dadd7453d74efb5c",
+      "duration_s": 24.833,
+      "vo": "hos_005_s03_never_saw_vo_v01_fin.wav",
+      "vo_s": 24.259,
+      "bed": "hos005-part05-temp_score_bed_v01.mp3",
+      "bed_gain_db": -20.8,
+      "hook": "HE NEVER SAW THIS",
+      "hook_layer": {
+        "font_size": 243,
+        "cap_px": 173,
+        "cap_pct": 9.01,
+        "lines": 4,
+        "block_pct": [
+          27.7,
+          72.3
+        ],
+        "widest_pct": 81.5
+      },
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 2.042,
+          "plate": "04_Generated-Clips/part05/raw/v01/06_eyepiece_mesh_t1.mp4",
+          "in_s": 0.3,
+          "crop_x": 656,
+          "lands_on": 0
+        },
+        {
+          "t0": 2.042,
+          "t1": 4.208,
+          "plate": "04_Generated-Clips/part05/raw/v01/01_loop_gap_t5.mp4",
+          "in_s": 0.3,
+          "crop_x": 656,
+          "lands_on": "He"
+        },
+        {
+          "t0": 4.208,
+          "t1": 7.499,
+          "plate": "04_Generated-Clips/part05/raw/v01/02_tiny_gaps_t1.mp4",
+          "in_s": 0.5,
+          "crop_x": 656,
+          "lands_on": "but"
+        },
+        {
+          "t0": 7.499,
+          "t1": 10.797,
+          "plate": "04_Generated-Clips/part05/raw/v01/03_old_harvey_t1.mp4",
+          "in_s": 0.3,
+          "crop_x": 656,
+          "lands_on": "He"
+        },
+        {
+          "t0": 10.797,
+          "t1": 15.816,
+          "plate": "04_Generated-Clips/part05/raw/v01/04_malpighi_slide_t1.mp4",
+          "in_s": 0.3,
+          "crop_x": 656,
+          "lands_on": "Four"
+        },
+        {
+          "t0": 15.816,
+          "t1": 20.809,
+          "plate": "04_Generated-Clips/part05/raw/v01/07_capillaries_loop_t2.mp4",
+          "in_s": 0.3,
+          "crop_x": 656,
+          "lands_on": "There"
+        },
+        {
+          "t0": 20.809,
+          "t1": 24.809,
+          "plate": "04_Generated-Clips/part05/raw/v01/06_eyepiece_mesh_t1.mp4",
+          "in_s": 0.3,
+          "crop_x": 656,
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 20,
+      "caption_check": {
+        "ok": true,
+        "changes": 19,
+        "ratio": 1.0
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_005_s03_never_saw_v02.mp4  dur=24.83s  audio=-21.7dB  motion=17.52  dhash=0f0f3bdc484d0f0f\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s03_never_saw_v02_open_sheet.jpg"
+      },
+      "vo_check": {
+        "exit": 0,
+        "output": "PASS  hos_005_s03_never_saw_v02.mp4  0:24.83  mean -21.7 dB  peak -2.0 dB  140 wpm\n   warn  pace 140 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed"
+      },
+      "freezedetect_starts": [],
+      "title_still": "10_Shorts/_work_v02/s03_never_saw/hos_005_s03_never_saw_v02_title_frame.jpg",
+      "frame0_still": "10_Shorts/_work_v02/s03_never_saw/hos_005_s03_never_saw_v02_frame0.jpg",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v02.mp4"
+    }
+  }
+}

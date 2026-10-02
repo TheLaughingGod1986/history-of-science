@@ -1,0 +1,73 @@
+{
+  "version": "covers_v02",
+  "task": "PR #180 comment 5949489005",
+  "covers": {
+    "s01_the_sum": {
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s01_the_sum_cover_v02.jpg",
+      "sha256": "217e0a659aef889a0677d659bd1af057ddaed148e084e87c5da2c66c09eb42ca",
+      "title": "Your Heart Pumps More Blood Than You Have",
+      "words": [
+        "MORE",
+        "THAN YOU",
+        "HAVE"
+      ],
+      "scene": "hos_005_s01_scene_v01h.jpg",
+      "letters": "hos_005_s01_letters_v01.jpg",
+      "stack_width_pct": 86.0,
+      "stack_x_pct": [
+        6.9,
+        93.0
+      ],
+      "stack_y_pct": [
+        4.5,
+        44.3
+      ],
+      "preview": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s01_the_sum_cover_v02_preview.jpg"
+    },
+    "s02_the_tied_arm": {
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s02_the_tied_arm_cover_v02.jpg",
+      "sha256": "3360fb47862c5547173fb04368f029874d4df687ececa0fd7726686d1d39d4d2",
+      "title": "One Tight Band Proved Your Blood Goes Round",
+      "words": [
+        "ONE",
+        "TIGHT",
+        "BAND"
+      ],
+      "scene": "hos_005_s02_scene_v01b.jpg",
+      "letters": "hos_005_s02_letters_v01.jpg",
+      "stack_width_pct": 86.0,
+      "stack_x_pct": [
+        6.9,
+        93.0
+      ],
+      "stack_y_pct": [
+        4.5,
+        45.5
+      ],
+      "preview": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s02_the_tied_arm_cover_v02_preview.jpg"
+    },
+    "s03_never_saw": {
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s03_never_saw_cover_v02.jpg",
+      "sha256": "63629344b4812b11259085acce94883b92847b90fd11baac277a8275b01c2ca1",
+      "title": "The Blood Vessels Finer Than a Hair",
+      "words": [
+        "FINER",
+        "THAN A",
+        "HAIR"
+      ],
+      "scene": "hos_005_s03_scene_v01a.jpg",
+      "letters": "hos_005_s03_letters_v01.jpg",
+      "stack_width_pct": 86.0,
+      "stack_x_pct": [
+        6.9,
+        93.0
+      ],
+      "stack_y_pct": [
+        4.5,
+        45.1
+      ],
+      "preview": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s03_never_saw_cover_v02_preview.jpg"
+    }
+  },
+  "style_sheet": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_shorts_covers_v02_style_sheet.jpg"
+}
