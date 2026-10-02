@@ -5,7 +5,7 @@
 
 Prints `CREDIT free_trial_remaining_gbp=… status=…` and saves a screenshot to
 07_Edit-Project/_evidence/vertex_credits_<label>.png (gitignored). Appends the reading to
-07_Edit-Project/VERTEX_CREDIT_LOG_v01.json. Exits 3 if the remaining credit is below the £60 floor.
+07_Edit-Project/VERTEX_CREDIT_LOG_v01.json. Exits 3 if the remaining credit is below the floor (FLOOR_GBP).
 """
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ EDIT = Path(__file__).resolve().parent
 EVID = EDIT / "_evidence"
 LOG = EDIT / "VERTEX_CREDIT_LOG_v01.json"
 URL = "https://console.cloud.google.com/billing/0124D1-E6EFD6-40F6DA/credits/all?project=gen-lang-client-0538779324"
-FLOOR_GBP = 60.0
+FLOOR_GBP = 20.0  # Ben via desk PR #180 (comment 5944398833), 2 Oct 2026: £60 → £20 for 005
 
 
 def main() -> int:

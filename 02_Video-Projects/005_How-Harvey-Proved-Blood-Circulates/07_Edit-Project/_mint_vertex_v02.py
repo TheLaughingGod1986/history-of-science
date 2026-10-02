@@ -15,7 +15,7 @@ Quality plates → veo-3.1-generate-001, Fast → veo-3.1-fast-generate-001, 108
 8 s, generate_audio=False (video-only SKU), audio stream removed after download.
 Start frames attach the Part 01 Harvey reference on `harvey_ref` plates and the Explorer
 sheet + generation reference on Explorer plates. Every spend is refused if the projected
-Free Trial credit would fall below £60 (see `projected_gbp`).
+Free Trial credit would fall below the floor (£20 for 005 since 2 Oct 2026) (see `projected_gbp`).
 Python: ~/.venvs/hos-vertex/bin/python. Media stays out of git.
 """
 from __future__ import annotations
@@ -69,7 +69,7 @@ CREDIT_LOG = EDIT / "VERTEX_CREDIT_LOG_v01.json"
 # Free Trial on the console before any 005 Vertex spend (1 Oct 23:05 UK, Part 01 section).
 CREDIT_BASE_GBP = 209.53
 GBP_PER_USD = 0.80  # conservative; list prices are in USD, the credit is in GBP
-FLOOR_GBP = 60.0
+FLOOR_GBP = 20.0  # Ben via desk PR #180 (comment 5944398833), 2 Oct 2026: £60 → £20 for 005
 STYLE = (
     "History of Science locked look: premium Animistry-class 3D cartoon, finished "
     "materials, warm cinematic light, 17th-century world. Not photoreal, not flat 2D. "
