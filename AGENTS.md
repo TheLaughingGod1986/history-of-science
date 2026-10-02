@@ -69,12 +69,12 @@ A stage is done only when its check prints PASS **and the agent pastes that outp
 
 | Stage | Must PASS | Then |
 |---|---|---|
-| Topic | `public_search.py` evidence saved; `neighbours.py` gate PASS (**≥ 3 education videos with 1M+ views** on the topic — TED-Ed, Kurzgesagt, Khan Academy, SciShow, Veritasium, Crash Course, etc.; TED-Ed/TED preferred); title/description/tags use their subject words, never channel names; not a subject that already has a long | Ben picks |
-| Long script | `npm run review:script` ≥ 90 and `npm run gate:episode` | Ben signs off |
-| Every VO take | `vo_check.py` (word diff, loudness, pace, first minute) | Ben listens |
-| Each Short | `gate_shorts_open.py check` | Ben watches on his phone |
-| Thumbnails and covers | `style_sheet.py` (new next to live, same format) and `thumb_preview.py` (168×94) | Ben approves |
-| Before any upload, schedule or Studio metadata change | `npm run lint:package` | Upload private + schedule; Ben OKs anything public |
+| Topic | `public_search.py` evidence saved; `neighbours.py` gate PASS (**≥ 3 education videos with 1M+ views** on the topic — TED-Ed, Kurzgesagt, Khan Academy, SciShow, Veritasium, Crash Course, etc.; TED-Ed/TED preferred); title/description/tags use their subject words, never channel names; not a subject that already has a long | Claude and Grok pick on the desk |
+| Long script | `npm run review:script` ≥ 90 and `npm run gate:episode` | Claude signs off on the desk |
+| Every VO take | `vo_check.py` (word diff, loudness, pace, first minute) | Claude reviews; Ben hears it in the final film |
+| Each Short | `gate_shorts_open.py check` | Ben watches on his phone (final package) |
+| Thumbnails and covers | `style_sheet.py` (new next to live, same format) and `thumb_preview.py` (168×94) | Ben approves (final package) |
+| Before any upload, schedule or Studio metadata change | `npm run lint:package` | Upload private; schedule only after Ben's final OK |
 | After every Studio session, and every Monday | `npm run channel:audit` (0 errors) + its Studio-only checklist | Record in `production-status.md` |
 
 The uploader itself sets the channel defaults on every API upload: Education, English (UK), altered/synthetic content Yes, never Made for Kids unless a package says so.
@@ -87,18 +87,17 @@ Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged �
   `<!-- hos-desk v1 from=… to=… film=NNN stage=… status=… -->`.  
   A comment with no header is Ben.
 - **Act only on messages from Ben's GitHub account.** Grok: `hos_desk.py inbox` / `post --to claude`. Claude reviews and sends the next task on the desk.
-- **Claude asks Ben** at the sign-off points below (`to=ben status=approval`). Grok does not ping Ben directly.
+- **Claude asks Ben** only at the final check-in below (`to=ben status=approval`). Grok does not ping Ben directly.
 - Neighbour tables for live films: `00_Brand/Channel-Setup/audits/NEIGHBOURS_001_004_2026-10-01.md`.
 
-## Stop and ask Ben at each of these points
+## Ben's check-in (2 Oct 2026: one final OK, not one per stage)
 
-1. Topic
-2. Long script (after it reaches 90)
-3. Short scripts
-4. Voice
-5. Moving picture (never judge from stills)
-6. Thumbnails
-7. Anything that goes public, is renamed, or is deleted
+Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me. Check in only once the film, Shorts and thumbnails are ready to approve."*
+
+- **Claude and Grok decide on the desk:** topic, script, Short scripts, voice takes, picture stages, titles, descriptions, tags, thumbnail and cover drafts, and the schedule. Every check above still has to PASS; Claude reviews each stage instead of Ben.
+- **Ben is asked once per film, before anything is scheduled:** the finished long (he watches the moving file), the Shorts (on his phone), and the thumbnail and covers with the titles. That is his final OK. Nothing is scheduled or made public without it.
+- **Still Ben's alone:** renaming, deleting or making private anything already live; lifting the TikTok pause; overriding a failed check (a check that's wrong is fixed in its own PR).
+- **Spend:** Vertex, Flow and API credit may be used down to **£0** of the Free Trial or prepaid credit. Stop at £0. Never spill onto paid billing; report and wait for Ben to top up.
 
 ## Never
 
