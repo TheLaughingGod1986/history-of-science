@@ -73,7 +73,14 @@ LABELS: dict[str, dict[str, tuple[float, str]]] = {
         "16_press_book": (2.6, "De Motu Cordis, 1628"),
         "18_aubrey": (0.6, "John Aubrey"),
     },
-    "05": {},
+    "05": {
+        "01_loop_gap": (0.6, "How does it cross?"),
+        "03_old_harvey": (0.6, "William Harvey · 1578–1657"),
+        "04_malpighi_slide": (0.6, "Marcello Malpighi · Bologna 1661"),
+        "06_eyepiece_mesh": (0.6, "Capillaries"),
+        "11_transfusion": (0.6, "First transfusions · 1660s"),
+        "13_cuff": (0.6, "Harvey's band, today"),
+    },
 }
 
 

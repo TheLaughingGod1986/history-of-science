@@ -19,7 +19,7 @@
 
 ## STOP
 
-- **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £60.
+- **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
 - Resolved: Part 01 rough v01 passed by Ben, 1 Oct 2026 ("Part 1 OK").
 - Resolved: the Flow-credits STOP (1 Oct 23:45) is replaced by Vertex AI Veo for 005 with Ben's OK. Shorts scripts signed off by Ben, 1 Oct 2026.
 
@@ -519,7 +519,30 @@ part 04: takes=57 stills=65 keep=19/19 cost_usd=$63.34 (lost $0.00)
 film 005 Vertex spend $147.06 · projected Free Trial £91.88 (floor £60, £/$ 0.8)
 ```
 
-- **STOP (2 Oct 2026):** Part 05 is held at the £60 floor. It has 18 plates (8 Q). First takes cost about $22. With retakes it's about $35–60, which would take the projected credit below £60. Waiting for a decision on the desk.
+- Resolved: the Part 05 hold at the £60 floor. Claude on the desk (PR #180, comment 5944398833): floor £20 for 005, mint Part 05, stop if the Free Trial ends or billing turns paid.
+
+### Part 05: 18/18 KEEP, rough v01
+
+- **Cut:** `09_Final-Export/hos_005_part05_rough_v01.mp4`, sha256 `52b66c546a212ff6d1dd2a96778cc435a9dd248aa4af369b706978df5780f122`, 115.467 s, freezedetect 0, bed −20.80 dB. Phone copy in iCloud.
+- **Takes:** 33 takes and 26 start frames, $42.61, nothing lost. Log: `07_Edit-Project/PART05_MINT_LOG_v01.json`.
+- **16 proved_last_link** is a new picture: from 01's frame, the dark hands fill with a fine net and the circuit runs round (three chart takes failed on helix strands, a sparkle net and a 3D bracelet).
+- **14 cuff_release** starts from 13's last frame; the stethoscope disc is out of the prompt (it kept bringing a second arm).
+- **Retime:** the 14 → 15 cut is 0.5 s earlier (14 settles still in its last second). Recorded as `retime` in the board.
+- **Labels:** the script's LABEL cues (How does it cross? / William Harvey · 1578–1657 / Marcello Malpighi · Bologna 1661 / Capillaries / First transfusions · 1660s / Harvey's band, today).
+- **Watch items for Ben:** 14's hand is a little rubbery as it uncurls; 18 has a few flat swirl-shaped microbes (not helixes).
+- **Report and my 11-hard-fail UAT:** `07_Edit-Project/_desk/part05_report_2026-10-02.md`.
+
+```
+PASS  hos_005_part05_rough_v01.mp4  1:55.47  mean -21.6 dB  peak -2.2 dB  149 wpm
+```
+
+### Credit after Part 05
+
+```
+CREDIT free_trial_remaining_gbp=110.07 status=Available floor=20
+part 05: takes=33 stills=26 keep=18/18 cost_usd=$42.61 (lost $0.00)
+film 005 Vertex spend $190.63 · projected Free Trial £57.03 (floor £20, £/$ 0.8)
+```
 
 ## Parts
 
@@ -529,6 +552,6 @@ film 005 Vertex spend $147.06 · projected Free Trial £91.88 (floor £60, £/$ 
 | 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | `09_Final-Export/hos_005_part02_rough_v02.mp4` (`d813f553…`, 98.23 s) | 15/15 KEEP on Vertex ($25.17); my UAT done; Claude reviewing stills |
 | 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | `09_Final-Export/hos_005_part03_rough_v02.mp4` (`7abfe9ef…`, 98.00 s) | 14/14 KEEP on Vertex ($33.93); accepted by Claude after the 03/07 remint (plain list, sand-glass) |
 | 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | `09_Final-Export/hos_005_part04_rough_v01.mp4` (`c7de24b1…`, 128.24 s) | 19/19 KEEP on Vertex ($63.34); my UAT done; Claude reviewing stills |
-| 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | — | board v02; **held at the £60 credit floor** |
+| 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | `09_Final-Export/hos_005_part05_rough_v01.mp4` (`52b66c54…`, 115.47 s) | 18/18 KEEP on Vertex ($42.61); my UAT done; Claude reviewing stills |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.

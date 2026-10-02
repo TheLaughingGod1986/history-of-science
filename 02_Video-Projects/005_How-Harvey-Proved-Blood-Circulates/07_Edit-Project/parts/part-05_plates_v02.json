@@ -312,16 +312,17 @@
         "16_cuff_release"
       ],
       "prompt": "Premium Animistry-class 3D cartoon. Same cuff eases off; a stethoscope disc listens at the inside of the elbow. Arm only, no face. Silent. Continuous motion through the final frame. No Explorer.",
-      "use_s": 7.54,
+      "use_s": 7.04,
       "vo_land": [
         "It squeezes until the blood stops getting in, then lets go, and listens for the moment it starts to flow again."
       ],
-      "harvey_ref": false
+      "harvey_ref": false,
+      "retime": "2026-10-02 retime: 14/15 cut 0.5 s earlier (14 t4 settles still in its last second; freezedetect)"
     },
     {
       "id": "15_band_table",
-      "t_s": 477.36,
-      "t": "7:57.36",
+      "t_s": 476.86,
+      "t": "7:56.86",
       "explorer": false,
       "quality": "Fast",
       "engine_reason": "Fast: candlelight is room ambience only; prompt keeps every flame, lantern and lamp out of frame.",
@@ -330,13 +331,14 @@
         "17_band_table"
       ],
       "prompt": "Premium Animistry-class 3D cartoon. Harvey's linen band on the old oak table, beside the page of sums and Fabricius's vein drawing. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
-      "use_s": 4.28,
+      "use_s": 4.78,
       "vo_land": [
         "A sum, a band, and a row of little doors."
       ],
       "harvey_ref": false,
       "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Harvey's linen band on the old oak table, beside the page of sums and Fabricius's vein drawing. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
-      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence",
+      "retime": "2026-10-02 retime: 14/15 cut 0.5 s earlier (14 t4 settles still in its last second; freezedetect)"
     },
     {
       "id": "16_proved_last_link",

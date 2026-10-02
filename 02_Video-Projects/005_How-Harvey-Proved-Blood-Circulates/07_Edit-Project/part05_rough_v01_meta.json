@@ -1,0 +1,354 @@
+{
+  "out": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part05_rough_v01.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part05_rough_v01.mp4",
+  "sha256": "52b66c546a212ff6d1dd2a96778cc435a9dd248aa4af369b706978df5780f122",
+  "duration_s": 115.466667,
+  "streams": [
+    {
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "duration": "115.466667"
+    },
+    {
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "duration": "115.450000"
+    }
+  ],
+  "freeze_events_0p8s": 0,
+  "vo": "02_Voiceover/part05_the_vessels_he_never_saw_v01.mp3",
+  "vo_sha256": "e848049790b84710abe40b4a375662ec23a4ec9dfd370891c1f1fee9fcf6253b",
+  "vo_duration_s": 114.29,
+  "vo_film_start_s": 387.04,
+  "tail_s": 1.16,
+  "bed": {
+    "temp": true,
+    "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part05-temp_score_bed_v01.mp3",
+    "sha256": "73c3ff63468e21723bbdc410d958465d3f515a5854a62e4a7679315f00d6d362",
+    "vo_mean_db": -21.6,
+    "bed_mean_db_raw": -20.8,
+    "bed_gain_db": -20.8,
+    "bed_rel_db_vs_vo": -20.0
+  },
+  "labels": [
+    {
+      "t0": 0.6,
+      "t1": 3.0,
+      "text": "How does it cross?"
+    },
+    {
+      "t0": 13.24,
+      "t1": 15.64,
+      "text": "William Harvey · 1578–1657"
+    },
+    {
+      "t0": 21.08,
+      "t1": 23.48,
+      "text": "Marcello Malpighi · Bologna 1661"
+    },
+    {
+      "t0": 34.1,
+      "t1": 36.5,
+      "text": "Capillaries"
+    },
+    {
+      "t0": 64.54,
+      "t1": 66.94,
+      "text": "First transfusions · 1660s"
+    },
+    {
+      "t0": 75.8,
+      "t1": 78.2,
+      "text": "Harvey's band, today"
+    }
+  ],
+  "cuts": "hard cuts on the board times",
+  "plates": [
+    {
+      "id": "01_loop_gap",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/01_loop_gap_t5.mp4",
+      "sha256": "47e51d47a249c4f48f130ef16cbe15a3bee68b86198aa98b57ee3e1dd432a5a5",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 5,
+      "part_t0": 0.0,
+      "film_t0": 387.04,
+      "use_s": 7.533,
+      "in_s": 0.0,
+      "vo_land": [
+        "Harvey's circle had a hole in it.",
+        "How did the blood get from the arteries into the veins?"
+      ]
+    },
+    {
+      "id": "02_tiny_gaps",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/02_tiny_gaps_t1.mp4",
+      "sha256": "968fa441e4ffca09b9f6725d4aabf92632555530f0fea510c9ac7b2a59207092",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 7.533,
+      "film_t0": 394.56,
+      "use_s": 5.1,
+      "in_s": 0.0,
+      "vo_land": [
+        "Harvey guessed the blood passed through tiny gaps in the flesh, too small to see."
+      ]
+    },
+    {
+      "id": "03_old_harvey",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/03_old_harvey_t1.mp4",
+      "sha256": "166572bdc08b455ca788aebd6d61e35ecdfdbc5034665056f4ca641e47f4039e",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 12.633,
+      "film_t0": 399.68,
+      "use_s": 7.833,
+      "in_s": 0.0,
+      "vo_land": [
+        "He never saw them.",
+        "He died in sixteen fifty-seven, with his great idea still missing one piece."
+      ]
+    },
+    {
+      "id": "04_malpighi_slide",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/04_malpighi_slide_t1.mp4",
+      "sha256": "d01321b159fad99b3a6b7aa1ba8581d3f037fe98121c639f7de6e68bfc7a91be",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 20.467,
+      "film_t0": 407.52,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "Four years later, in Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope."
+      ]
+    },
+    {
+      "id": "05_explorer_scope",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/05_explorer_scope_t2.mp4",
+      "sha256": "0a2eda051976df9c3c7bea9ee75343ce39948398cca0e5ebe980e4cfba5663bd",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 28.367,
+      "film_t0": 415.42,
+      "use_s": 5.133,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Four years later, in Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope.",
+        "And there it was.",
+        "A net of tiny vessels, finer than hairs, carrying blood from the smallest arteries into the smallest veins."
+      ]
+    },
+    {
+      "id": "06_eyepiece_mesh",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/06_eyepiece_mesh_t1.mp4",
+      "sha256": "87b4139961fe2a2f44cf7f0c3251f6aa3cfa159837bbcc30473a003241f5de5d",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 33.5,
+      "film_t0": 420.54,
+      "use_s": 5.933,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) A net of tiny vessels, finer than hairs, carrying blood from the smallest arteries into the smallest veins."
+      ]
+    },
+    {
+      "id": "07_capillaries_loop",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/07_capillaries_loop_t2.mp4",
+      "sha256": "ec6ead629983d45a043dfc8e144ac42e05c536c448d18901a18d2b43e5526249",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 39.433,
+      "film_t0": 426.46,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "We call them capillaries, from the Latin word for hair.",
+        "The circle was closed.",
+        "Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins."
+      ]
+    },
+    {
+      "id": "08_your_blood",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/08_your_blood_t2.mp4",
+      "sha256": "c31c84e7cb29bb4322d558073f976bdc17a1f037b997c04a276877a0293da9c9",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 47.333,
+      "film_t0": 434.36,
+      "use_s": 6.267,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins."
+      ]
+    },
+    {
+      "id": "09_question",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/09_question_t1.mp4",
+      "sha256": "0000957ea920743ee543fd5488091cf0349fc751cfdd74c115a395bb319035a3",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 53.6,
+      "film_t0": 440.65,
+      "use_s": 3.167,
+      "in_s": 0.0,
+      "vo_land": [
+        "So why was this so groundbreaking?"
+      ]
+    },
+    {
+      "id": "10_one_vein",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/10_one_vein_t1.mp4",
+      "sha256": "e638585aee6fbda76512d855cd34b4448a79c2f05f2d48f0e76488ec5bbb5c9c",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 56.767,
+      "film_t0": 443.82,
+      "use_s": 7.167,
+      "in_s": 0.0,
+      "vo_land": [
+        "Because once you know the blood goes round, you know that anything put into one vein reaches the whole body."
+      ]
+    },
+    {
+      "id": "11_transfusion",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/11_transfusion_t1.mp4",
+      "sha256": "a7d9ac0f8eff31eb238cd602b16b26b2b1719408c66e5abc0e81d1b4ec2f03e4",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 63.933,
+      "film_t0": 450.98,
+      "use_s": 5.5,
+      "in_s": 0.0,
+      "vo_land": [
+        "Within ten years of Harvey's death, doctors in England and France were trying the first blood transfusions."
+      ]
+    },
+    {
+      "id": "12_tools",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/12_tools_t1.mp4",
+      "sha256": "f10158236fcb915cd1d6d394c1df0e3896044afcbe5ead4ad4d4cbfe4ab6744d",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 69.433,
+      "film_t0": 456.48,
+      "use_s": 5.767,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Within ten years of Harvey's death, doctors in England and France were trying the first blood transfusions.",
+        "That makes no sense unless your blood circulates."
+      ]
+    },
+    {
+      "id": "13_cuff",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/13_cuff_t1.mp4",
+      "sha256": "0faa6e715d62e41894820ecf12f05234b49c60d9813371a0339d68ad7e90666c",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 75.2,
+      "film_t0": 462.24,
+      "use_s": 7.567,
+      "in_s": 0.0,
+      "vo_land": [
+        "And the next time a nurse wraps a cuff round your arm, think of Harvey.",
+        "A blood pressure cuff is his band."
+      ]
+    },
+    {
+      "id": "14_cuff_release",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/14_cuff_release_t4.mp4",
+      "sha256": "b3c170158bdd3afad68c9f9f73c30127327d88fce0f8108c8816dc3a9372db1e",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 4,
+      "part_t0": 82.767,
+      "film_t0": 469.82,
+      "use_s": 7.067,
+      "in_s": 0.0,
+      "vo_land": [
+        "It squeezes until the blood stops getting in, then lets go, and listens for the moment it starts to flow again."
+      ]
+    },
+    {
+      "id": "15_band_table",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/15_band_table_t2.mp4",
+      "sha256": "c74b2fcb5879c07ff6f0c09a24b3390537241fd268592352100fbace737fce38",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 89.833,
+      "film_t0": 476.86,
+      "use_s": 4.767,
+      "in_s": 0.0,
+      "vo_land": [
+        "A sum, a band, and a row of little doors."
+      ]
+    },
+    {
+      "id": "16_proved_last_link",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/16_proved_last_link_t4.mp4",
+      "sha256": "abb8dd846f3409afbf794d28b5cb1468d44a7857d15095a5c9ee7008c184b912",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 4,
+      "part_t0": 94.6,
+      "film_t0": 481.64,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "Harvey proved that your heart is a pump and that your blood goes round, long before anyone saw the last link."
+      ]
+    },
+    {
+      "id": "17_dutch_lens",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/17_dutch_lens_t1.mp4",
+      "sha256": "67c9d0f77a5a008c03b43c249f7dd0dddc70bde4152b0b5c2a524fbeb2602c91",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 102.5,
+      "film_t0": 489.54,
+      "use_s": 5.0,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Harvey proved that your heart is a pump and that your blood goes round, long before anyone saw the last link.",
+        "Thirteen years later, a Dutch cloth merchant with an even better lens looked into a drop of pond water, and found it full of life."
+      ]
+    },
+    {
+      "id": "18_pond_life",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/18_pond_life_t2.mp4",
+      "sha256": "58d3149801e26ecf946e445d998f9ed8a157ee5257dfbbf6550d502daa76a38a",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 107.5,
+      "film_t0": 494.54,
+      "use_s": 7.967,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Thirteen years later, a Dutch cloth merchant with an even better lens looked into a drop of pond water, and found it full of life.",
+        "That is where the story of germs begins."
+      ]
+    }
+  ]
+}
