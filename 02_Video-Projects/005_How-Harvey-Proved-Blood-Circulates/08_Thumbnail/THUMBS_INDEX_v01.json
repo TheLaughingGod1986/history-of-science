@@ -1,0 +1,27 @@
+{
+  "parentTitle": "The Tied Arm That Proved Your Blood Circulates",
+  "version": "v01",
+  "status": "STOP for Ben pick. Proposed only. Nothing to Studio.",
+  "composer": "08_Thumbnail/_land_hos_005_thumbs_v01.py",
+  "factLock": "Tight linen band on the upper arm; red (artery) only on the shoulder side, stopping at the band; no red below it (De Motu Cordis ch. 11, FACT_NOTES_v01 row 26).",
+  "thumbs": [
+    {
+      "id": "A",
+      "hook": "ONE TIGHT BAND",
+      "jpg": "Selected/hos_005_thumb_A_one_tight_band_v01.jpg",
+      "sha256": "c319eec31635e78c292ff0178acca86e95c343f81dd8a1c9f39fe044934c9e61"
+    },
+    {
+      "id": "B",
+      "hook": "IT GOES ROUND",
+      "jpg": "Selected/hos_005_thumb_B_it_goes_round_v01.jpg",
+      "sha256": "49643a2b4561051cd878d57a6c923362d959d4b7420a8fda80cca60f5899be9d"
+    }
+  ],
+  "sources": [
+    "hos_005_thumb_A_one_tight_band_v01c.jpg",
+    "hos_005_thumb_B_it_goes_round_v01d.jpg"
+  ],
+  "upload": false,
+  "studio": false
+}

@@ -1,0 +1,118 @@
+{
+  "out": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_full_join_v01.mp4",
+  "sha256": "84476e06c13e2a010974bc0937a7044374f637065edcf819c5ab5157165192f7",
+  "duration_s": 526.533333,
+  "status": "UAT for Ben's moving-picture sign-off; not a KEEP; no upload",
+  "streams": [
+    {
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "30/1",
+      "duration": "526.533333"
+    },
+    {
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "duration": "526.503250"
+    }
+  ],
+  "parts": [
+    {
+      "part": "01",
+      "film_start_s": 0.0,
+      "segment_s": 59.533,
+      "vo_s": 57.02,
+      "segment_sha256": "f27c8a2b7a74081c64cbb89f629a80f51e68b9ac7a898bc59dca00328677f37c"
+    },
+    {
+      "part": "02",
+      "film_start_s": 59.533,
+      "segment_s": 100.08,
+      "vo_s": 97.58,
+      "segment_sha256": "fa0f4033c45457dc4eeb7bab2a196226d61ca7ecf0d8840bb73dc0b0ac75047a"
+    },
+    {
+      "part": "03",
+      "film_start_s": 159.613,
+      "segment_s": 98.7,
+      "vo_s": 96.197,
+      "segment_sha256": "b7ab02586a027c846c84f94b2b4b58cb98835703e0e564e262f49465b6fcbb6c"
+    },
+    {
+      "part": "04",
+      "film_start_s": 258.313,
+      "segment_s": 128.74,
+      "vo_s": 126.24,
+      "segment_sha256": "600f392ffa7f554d414d57d6ec5c4ee174ca5c0529d3897684d4dc7984bc11d6"
+    },
+    {
+      "part": "05",
+      "film_start_s": 387.053,
+      "segment_s": 119.467,
+      "vo_s": 114.29,
+      "segment_sha256": "1a40763755a2e5c4ed6190f9ad97ddf6dbdeec1ce73a13fbb87e4cab7a043329"
+    }
+  ],
+  "part01_picture": {
+    "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part01_rough_v01.mp4",
+    "sha256": "7661b6cf1897c6dabe60e09592b297f9ed21b253cb7c2946cc12f58732a9d098"
+  },
+  "cards": [
+    {
+      "part": "02",
+      "in_s": 57.62,
+      "out_s": 59.683,
+      "text": "PART 02 · c. AD 170 · The Liver That Made Blood"
+    },
+    {
+      "part": "03",
+      "in_s": 157.713,
+      "out_s": 159.763,
+      "text": "PART 03 · 1616 · The Sum That Broke the Old Idea"
+    },
+    {
+      "part": "04",
+      "in_s": 256.41,
+      "out_s": 258.463,
+      "text": "PART 04 · 1628 · The Tied Arm"
+    },
+    {
+      "part": "05",
+      "in_s": 385.153,
+      "out_s": 387.203,
+      "text": "PART 05 · 1661 · The Vessels He Never Saw"
+    }
+  ],
+  "end_card": {
+    "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/refs/hos_end_card_v01.png",
+    "sha256": "8998cf5230cad7bb696a3f59e68ab42dad14eb3ae48586db8db44d05a5a3ee60",
+    "in_s": 502.52,
+    "hold_s": 20.0
+  },
+  "freezes": [
+    [
+      57.966667,
+      59.433333
+    ],
+    [
+      158.1,
+      159.533333
+    ],
+    [
+      256.766667,
+      258.233333
+    ],
+    [
+      385.5,
+      386.966667
+    ],
+    [
+      503.033333,
+      526.5
+    ]
+  ],
+  "freezes_outside_cards": []
+}

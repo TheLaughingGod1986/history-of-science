@@ -1,0 +1,41 @@
+{
+  "rule": "pauses > 0.6 s \u2192 0.6 s, lead 0.05 s, tail 0.25 s, peak \u22122 dB, no atempo",
+  "shorts": [
+    {
+      "id": "s01_the_sum",
+      "take": "a",
+      "source": "hos_005_s01_the_sum_vo_v01a.wav",
+      "source_s": 23.6,
+      "finished": "hos_005_s01_the_sum_vo_v01_fin.wav",
+      "finished_s": 23.497,
+      "removed_s": 0.103,
+      "gain_db": 2.1,
+      "peak_db": -2.0,
+      "sha256": "e5fe4dc86d402af2b383fe44929ac5faa8156ba878002fd077480499c6331388"
+    },
+    {
+      "id": "s02_the_tied_arm",
+      "take": "a",
+      "source": "hos_005_s02_the_tied_arm_vo_v01a.wav",
+      "source_s": 25.92,
+      "finished": "hos_005_s02_the_tied_arm_vo_v01_fin.wav",
+      "finished_s": 25.258,
+      "removed_s": 0.662,
+      "gain_db": 1.6,
+      "peak_db": -2.0,
+      "sha256": "58426e0f9e67fa210f6544659b72f05651d3b61efc3a45f82599c4595a26476c"
+    },
+    {
+      "id": "s03_never_saw",
+      "take": "b",
+      "source": "hos_005_s03_never_saw_vo_v01b.wav",
+      "source_s": 24.56,
+      "finished": "hos_005_s03_never_saw_vo_v01_fin.wav",
+      "finished_s": 24.259,
+      "removed_s": 0.301,
+      "gain_db": 2.5,
+      "peak_db": -2.0,
+      "sha256": "c7ed3093e37b77c202301b9587dc3d8184a169942d8f12e007efea0d40f73ffa"
+    }
+  ]
+}

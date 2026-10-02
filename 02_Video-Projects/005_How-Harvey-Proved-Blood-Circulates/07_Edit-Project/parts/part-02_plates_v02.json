@@ -1,0 +1,358 @@
+{
+  "film": "005_How-Harvey-Proved-Blood-Circulates",
+  "working_title": "The Tied Arm That Proved Your Blood Circulates",
+  "part": "02",
+  "title": "The Liver That Made Blood",
+  "status": "BOARD_V02",
+  "mint": false,
+  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v01 (VO_RETIME_v01.json) · v02 merges (Claude desk task, 1 Oct 2026)",
+  "script": "01_Script/blood_script_master_v02.md",
+  "vo_file": "02_Voiceover/part02_the_liver_that_made_blood_v01.mp3",
+  "vo_sha256": "c99d1e5fbd0a0ab7cbd95bce2f796d5050be507c9358483b4900b34cb60436dd",
+  "vo_duration_s": 97.58,
+  "chapter_card": {
+    "text": "The Liver That Made Blood",
+    "in_s": 57.62,
+    "hold_s": 1.5,
+    "treatment": "soft cross-fade after the last word + 0.6 s breath; music continues"
+  },
+  "vo_film_start_s": 59.52,
+  "part_end_film_s": 157.7,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "open_stamp": {
+    "after_s": 1.5,
+    "text": "Rome, c. AD 170",
+    "treatment": "Didot italic side label in the edit"
+  },
+  "set_language": "Warm candlelit 17th-century world: dark oak, cream linen, brass, leather books, London fog. Body cutaways are clean, glowing illustrations (warm red arteries, cool blue veins), never anatomical gore. Say 'same 1616 London lecture room' or 'same Harvey study' for continuity; never 'same DNA'.",
+  "explorer_lock": "ONE beat (plate 11): the camera rises up the empty Padua anatomy theatre to the Explorer on the top rail; he traces the little doors on Fabricius's drawing, then slips away. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
+  "explorer_plates": 1,
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore, wounds, blood on skin, cut flesh or real animal organs (animal hearts only as Harvey's ink drawings); live or dead animals on a table; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; garbled writing; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels and the De Motu Cordis title are added in the edit); twin Explorer; faces in the first two seconds of the film; a flame, lantern or lamp in frame on a Fast plate. Never say 'same DNA' or 'lab DNA' in a Veo prompt.",
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text or wrong sums (2 oz, 1/8, 1000 checked by hand)",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship",
+    "gore: wound, blood on skin, cut flesh, real animal organs",
+    "a face in the first two seconds of the film",
+    "a flame, lantern or lamp in frame on a Fast plate (remint on Quality or reframe)"
+  ],
+  "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns.",
+  "quality_note": "Vertex AI Veo 3.1 for 005 (Ben's OK, 1 Oct 2026), project gen-lang-client-0538779324. Quality only where the hero is an emissive or fragile light (flame in frame, glowing cutaway or loop, stove heart, lanterns) or the Explorer is in shot (explorer fidelity); Fast where candlelight is room ambience and no flame, lantern or lamp is in frame. Reason per plate in engine_reason. A Fast take with a flame or lamp in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing. Fast plates are lit by daylight from a window out of frame (2 Oct light fix). Fast plates are lit by daylight from a window out of frame (2 Oct light fix). Fast plates are lit by daylight from a window out of frame (2 Oct light fix).",
+  "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
+  "credits_try1": {
+    "Quality": 5,
+    "Fast": 10,
+    "credits": 700,
+    "rate": "Quality ~100, Fast ~20 Flow credits per clip"
+  },
+  "plates": [
+    {
+      "id": "01_galen_scrolls",
+      "t_s": 59.52,
+      "t": "0:59.52",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: candlelight is room ambience only; prompt keeps every flame, lantern and lamp out of frame.",
+      "side_label": "GALEN · ROME, c. AD 170",
+      "merged_from_v01": [
+        "01_galen_scrolls"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Rome around AD 170, a study full of scroll racks: Galen, a Greek doctor of about fifty, curly grey hair and beard, cream Greek robe, writes on a scroll with a reed pen. Camera drifts in. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.8,
+      "vo_land": [
+        "Galen was a Greek doctor in Rome nearly two thousand years ago, and a brilliant anatomist."
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Rome around AD 170, a study full of scroll racks: Galen, a Greek doctor of about fifty, curly grey hair and beard, cream Greek robe, writes on a scroll with a reed pen. Camera drifts in. Warm lamplight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+    },
+    {
+      "id": "02_galen_centuries",
+      "t_s": 66.32,
+      "t": "1:06.32",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: candlelight is room ambience only; prompt keeps every flame, lantern and lamp out of frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "02_galen_centuries"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Galen's scrolls become heavy leather books down the centuries: shelves fill with copies, monks and then gowned doctors bow over them. A continuous slow pan through time. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.8,
+      "vo_land": [
+        "For fourteen centuries, hardly anyone dared to argue with his books.",
+        "Here is what Galen taught."
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Galen's scrolls become heavy leather books down the centuries: shelves fill with copies, monks and then gowned doctors bow over them. A continuous slow pan through time. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+    },
+    {
+      "id": "03_eat_to_liver",
+      "t_s": 73.12,
+      "t": "1:13.12",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing cutaway, stream or loop is the hero (emissive light).",
+      "side_label": "FOOD → LIVER → BLOOD (on 'liver')",
+      "merged_from_v01": [
+        "03_you_eat",
+        "04_milky_liver"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. A warm, clean cartoon cutaway of a seated person, simple glowing outline of the body: they take a bite of bread and a soft milky glow travels down into the belly, flows into a smooth stylised liver, which glows and turns it warm red. Friendly, clear, no anatomy gore. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.9,
+      "vo_land": [
+        "You eat.",
+        "Your food turns into a milky juice, and your liver turns that juice into blood."
+      ],
+      "harvey_ref": false
+    },
+    {
+      "id": "04_veins_soak",
+      "t_s": 80.02,
+      "t": "1:20.02",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing cutaway, stream or loop is the hero (emissive light).",
+      "side_label": null,
+      "merged_from_v01": [
+        "05_veins_soak"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Same cutaway body. Warm red streams flow out along the veins into the arms and legs and fade away into the flesh like water into sand. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.52,
+      "vo_land": [
+        "Your veins carry the blood out to every part of you, and your flesh soaks it up as nourishment."
+      ],
+      "harvey_ref": false
+    },
+    {
+      "id": "05_heart_stove",
+      "t_s": 86.54,
+      "t": "1:26.54",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing stove heart is the hero (emissive light).",
+      "side_label": "A STOVE, NOT A PUMP",
+      "merged_from_v01": [
+        "06_heart_stove"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Same cutaway body. The heart glows like a little iron stove with a soft warm fire inside, warming the red blood that seeps slowly past it. Clean warm glow, no flames spitting. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.2,
+      "vo_land": [
+        "The heart wasn't a pump at all.",
+        "It was a warm stove, and its job was to heat the blood."
+      ],
+      "harvey_ref": false
+    },
+    {
+      "id": "06_septum_holes",
+      "t_s": 93.74,
+      "t": "1:33.74",
+      "explorer": false,
+      "quality": "Quality",
+      "engine_reason": "Quality: the glowing stove heart is the hero (emissive light).",
+      "side_label": "INVISIBLE HOLES?",
+      "merged_from_v01": [
+        "07_septum_holes"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the same glowing stove heart in the cutaway: a few red drops creep from the right side to the left through tiny imagined pores in the wall between the two sides; the pores flicker as if not really there. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.46,
+      "vo_land": [
+        "A little of it was meant to seep from the right side of the heart to the left, through tiny holes in the wall between them."
+      ],
+      "harvey_ref": false
+    },
+    {
+      "id": "07_doctors_believe",
+      "t_s": 101.2,
+      "t": "1:41.20",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: candlelight is room ambience only; prompt keeps every flame, lantern and lamp out of frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "08_doctors_believe"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. A room of gowned doctors around a chart of the heart with dotted holes drawn in its wall; they nod and point confidently at the holes nobody has seen. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.3,
+      "vo_land": [
+        "Nobody had ever seen those holes.",
+        "Doctors believed they had to be there anyway."
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. A room of gowned doctors around a chart of the heart with dotted holes drawn in its wall; they nod and point confidently at the holes nobody has seen. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+    },
+    {
+      "id": "08_vesalius_book",
+      "t_s": 106.5,
+      "t": "1:46.50",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper and props; nothing emissive in frame.",
+      "side_label": "ANDREAS VESALIUS · 1555",
+      "merged_from_v01": [
+        "09_vesalius_book"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. A great anatomy book lies open on a woodcut-style drawing of the heart (no readable text); a brass magnifying glass slides across the wall between its two sides. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.5,
+      "vo_land": [
+        "Then, in fifteen fifty-five, the great anatomist Andreas Vesalius wrote that he could not see how even the smallest drop could pass through that wall."
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. A great anatomy book lies open on a woodcut-style drawing of the heart (no readable text); a brass magnifying glass slides across the wall between its two sides. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+    },
+    {
+      "id": "09_vesalius_nothing",
+      "t_s": 113.0,
+      "t": "1:53.00",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper and props; nothing emissive in frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "10_vesalius_nothing"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Same open book. Through the magnifying glass the heart wall is solid and smooth: a single tiny drop of red ink beads against it and cannot pass. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.6,
+      "vo_land": [
+        "(continues) Then, in fifteen fifty-five, the great anatomist Andreas Vesalius wrote that he could not see how even the smallest drop could pass through that wall."
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Same open book. Through the magnifying glass the heart wall is solid and smooth: a single tiny drop of red ink beads against it and cannot pass. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+    },
+    {
+      "id": "10_why_believe",
+      "t_s": 117.6,
+      "t": "1:57.60",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: candlelight is room ambience only; prompt keeps every flame, lantern and lamp out of frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "11_why_believe"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Galen's thick book on a lectern; students keep copying from it and the stack of finished copies beside them grows taller. Camera drifts. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.92,
+      "vo_land": [
+        "So why did everyone keep believing it?",
+        "Because nobody had a better answer."
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Galen's thick book on a lectern; students keep copying from it and the stack of finished copies beside them grows taller. Camera drifts. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+    },
+    {
+      "id": "11_padua_explorer",
+      "t_s": 123.52,
+      "t": "2:03.52",
+      "explorer": true,
+      "quality": "Quality",
+      "engine_reason": "Quality: explorer fidelity. Face and hair are UAT hard fail 4 (glasses, full hair, one Explorer); a Fast remint would cost more than the difference.",
+      "side_label": "PADUA · c. 1600",
+      "merged_from_v01": [
+        "12_padua_theatre",
+        "13_explorer_padua"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Padua around 1600: the steep wooden oval anatomy theatre, rings of carved rails rising around a small empty table. The camera rises slowly up the rails to the top rail, where Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He unrolls a drawing of a vein on the rail, traces its tiny paired flaps with one finger, then slips away into the shadows. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame.",
+      "use_s": 7.9,
+      "vo_land": [
+        "Around sixteen hundred, in Padua, a young Englishman named William Harvey studied under an old professor called Fabricius."
+      ],
+      "harvey_ref": false
+    },
+    {
+      "id": "12_fabricius",
+      "t_s": 131.42,
+      "t": "2:11.42",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: candlelight is room ambience only; prompt keeps every flame, lantern and lamp out of frame.",
+      "side_label": "FABRICIUS",
+      "merged_from_v01": [
+        "14_fabricius"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Same Padua theatre. Fabricius, an old Italian professor, long white beard, black scholar's cap and robe, holds up a large drawing of a vein opened along its length and points to the pairs of tiny flaps inside it. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.9,
+      "vo_land": [
+        "(continues) Around sixteen hundred, in Padua, a young Englishman named William Harvey studied under an old professor called Fabricius.",
+        "Fabricius had found something strange inside the veins: tiny flaps, in pairs."
+      ],
+      "harvey_ref": false,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Same Padua theatre. Fabricius, an old Italian professor, long white beard, black scholar's cap and robe, holds up a large drawing of a vein opened along its length and points to the pairs of tiny flaps inside it. Warm candlelight falls from out of frame; no candle, flame, lantern or lamp in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+    },
+    {
+      "id": "13_little_doors",
+      "t_s": 139.32,
+      "t": "2:19.32",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper and props; nothing emissive in frame.",
+      "side_label": "LITTLE DOORS (VALVES)",
+      "merged_from_v01": [
+        "15_little_doors"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Fabricius's drawing comes alive: a vein opened along its length, pairs of tiny flaps inside like little doors gently swinging. Warm parchment and ink look, no readable text. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.9,
+      "vo_land": [
+        "(continues) Fabricius had found something strange inside the veins: tiny flaps, in pairs.",
+        "He called them little doors.",
+        "But why would a vein need doors?"
+      ],
+      "harvey_ref": false
+    },
+    {
+      "id": "14_pool_feet",
+      "t_s": 145.22,
+      "t": "2:25.22",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper and props; nothing emissive in frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "16_pool_feet"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Same living drawing: a faint red trickle runs down a leg vein and the little doors catch it, holding it back from pooling in the foot, as Fabricius imagined. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.58,
+      "vo_land": [
+        "Fabricius thought they slowed the blood, so it wouldn't all pool in your feet.",
+        "He held the most important clue in the story, and he read it the wrong way."
+      ],
+      "harvey_ref": false
+    },
+    {
+      "id": "15_harvey_ship",
+      "t_s": 149.8,
+      "t": "2:29.80",
+      "explorer": false,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "side_label": null,
+      "merged_from_v01": [
+        "17_young_harvey",
+        "18_ship_england"
+      ],
+      "prompt": "Premium Animistry-class 3D cartoon. Deck of a wooden sailing ship at a misty dawn harbour: young William Harvey, about twenty-two, the same face as the older Harvey: olive skin, black hair to the collar, small pointed black beard, dark keen eyes, black student's gown with a white collar, studies Fabricius's vein drawing closely, frowns, rolls it up carefully under his arm and looks out as the sails fill and the ship moves off towards England. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.9,
+      "vo_land": [
+        "(continues) He held the most important clue in the story, and he read it the wrong way.",
+        "Harvey took the clue home to London."
+      ],
+      "harvey_ref": true,
+      "prompt_v02_before_light_fix": "Premium Animistry-class 3D cartoon. Deck of a wooden sailing ship at a misty dawn harbour: young William Harvey, about twenty-two, olive skin, black hair, first thin beard, dark keen eyes, dark student's gown, studies Fabricius's vein drawing closely, frowns, rolls it up carefully under his arm and looks out as the sails fill and the ship moves off towards England. Silent. Continuous motion through the final frame. No Explorer.",
+      "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+    }
+  ],
+  "light_fix": "2026-10-02 light fix (desk 5942662028): Fast plates in daylight, no candle sentence"
+}

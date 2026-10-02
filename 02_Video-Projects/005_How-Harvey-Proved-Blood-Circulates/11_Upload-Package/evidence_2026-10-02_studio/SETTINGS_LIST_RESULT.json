@@ -1,0 +1,88 @@
+{
+ "mode": "list",
+ "steps": [
+  {
+   "key": "caption",
+   "trigger": "Caption certification None",
+   "options": [
+    "None",
+    "This content has never aired on television in the US",
+    "This content has only aired on television in the US without captions",
+    "This content has not aired on US television with captions since 30 September 2012",
+    "This content does not fall within a category of online programming that requires captions ",
+    "The FCC and/or US Congress has granted an exemption from captioning requirements for this "
+   ]
+  },
+  {
+   "key": "type",
+   "trigger": "Type None",
+   "options": [
+    "None",
+    "Activity",
+    "Concept overview",
+    "How-to",
+    "Lecture",
+    "Problem walkthrough",
+    "Real-life application",
+    "Science experiment",
+    "Tips",
+    "Other"
+   ]
+  },
+  {
+   "key": "moderation",
+   "trigger": "Moderation None",
+   "options": [
+    "None Don't hold any comments",
+    "Basic Hold potentially inappropriate comments",
+    "Strict Hold a broader range of potentially inappropriate comments",
+    "Hold all Hold all comments"
+   ]
+  },
+  {
+   "key": "academic",
+   "trigger": "Academic system Other",
+   "options": [
+    "Turkey",
+    "Uganda",
+    "Ukraine",
+    "United Arab Emirates",
+    "United States",
+    "Venezuela",
+    "Vietnam",
+    "Wales",
+    "Yemen",
+    "Zimbabwe",
+    "Other"
+   ]
+  },
+  {
+   "key": "level",
+   "trigger": "Level None",
+   "options": [
+    "None",
+    "Beginner",
+    "Intermediate",
+    "Advanced",
+    "Secondary school",
+    "University",
+    "Research",
+    "Professional training",
+    "Other"
+   ]
+  }
+ ],
+ "start": {
+  "at": "2026-10-02T10:44:07+01:00",
+  "url": "https://studio.youtube.com/video/0IfXGSX7Ypw/edit",
+  "visibility": "Visibility Scheduled",
+  "not_kids": true,
+  "kids_yes": false,
+  "ai": {
+   "radios": [],
+   "yes": false,
+   "no": false
+  }
+ },
+ "at": "2026-10-02T10:44:16+01:00"
+}

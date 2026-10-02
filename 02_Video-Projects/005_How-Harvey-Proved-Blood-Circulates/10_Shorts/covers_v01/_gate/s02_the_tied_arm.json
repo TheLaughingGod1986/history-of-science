@@ -1,0 +1,19 @@
+[
+  {
+    "file": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s02_the_tied_arm_v01.mp4",
+    "air_date": "2026-11-08",
+    "fails": [],
+    "warns": [],
+    "duration_s": 25.83,
+    "audio": {
+      "stream": true,
+      "mean_db": -21.6,
+      "open_mean_db": -17.9
+    },
+    "motion_0_1s": 19.22,
+    "dhash": "070f46033fa90e0e",
+    "near_opens": [],
+    "contact_sheet": "/tmp/hos005_gate/hos_005_s02_the_tied_arm_v01_open_sheet.jpg",
+    "verdict": "PASS"
+  }
+]

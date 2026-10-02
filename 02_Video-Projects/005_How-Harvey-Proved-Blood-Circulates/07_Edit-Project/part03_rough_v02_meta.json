@@ -1,0 +1,309 @@
+{
+  "out": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part03_rough_v02.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part03_rough_v02.mp4",
+  "sha256": "7abfe9ef17caf2bd778c4e006e5b087d9531c5acee0cc64aa0bbd1290c2f01bc",
+  "duration_s": 98.0,
+  "streams": [
+    {
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "duration": "98.000000"
+    },
+    {
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "duration": "97.990000"
+    }
+  ],
+  "freeze_events_0p8s": 0,
+  "vo": "02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01.mp3",
+  "vo_sha256": "480a3d57070c24e73b60f3a1ec8974c394d75033ad69eab59fdd381e2603e743",
+  "vo_duration_s": 96.196508,
+  "vo_film_start_s": 159.6,
+  "tail_s": 1.793,
+  "bed": {
+    "temp": true,
+    "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part03-temp_score_bed_v01.mp3",
+    "sha256": "58b08baf616000ba1376ff81e31ea947d7dc86327f9df4b8537c375c3903ea76",
+    "vo_mean_db": -21.3,
+    "bed_mean_db_raw": -21.8,
+    "bed_gain_db": -19.5,
+    "bed_rel_db_vs_vo": -20.0
+  },
+  "labels": [
+    {
+      "t0": 0.6,
+      "t1": 3.0,
+      "text": "London, 1616"
+    },
+    {
+      "t0": 8.69,
+      "t1": 11.09,
+      "text": "Slow hearts"
+    },
+    {
+      "t0": 19.99,
+      "t1": 22.39,
+      "text": "A muscle"
+    },
+    {
+      "t0": 24.08,
+      "t1": 26.48,
+      "text": "Squeeze = pulse"
+    },
+    {
+      "t0": 44.98,
+      "t1": 47.38,
+      "text": "1,000 beats"
+    },
+    {
+      "t0": 56.92,
+      "t1": 59.32,
+      "text": "More than your whole body"
+    },
+    {
+      "t0": 79.64,
+      "t1": 82.04,
+      "text": "The same blood → it circulates"
+    },
+    {
+      "t0": 83.14,
+      "t1": 85.54,
+      "text": "One lap · one minute"
+    }
+  ],
+  "cuts": "hard cuts on the board times",
+  "plates": [
+    {
+      "id": "01_cold_lecture_room",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/01_cold_lecture_room_t1.mp4",
+      "sha256": "0c693cb10e4c90927b7107e13e4ebb002144203987b85ca53f7853eab9c0b778",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 0.0,
+      "film_t0": 159.6,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "Picture yourself in his lecture room in London.",
+        "It's cold, the candles are lit, and you're on a hard wooden bench."
+      ]
+    },
+    {
+      "id": "02_slow_hearts",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/02_slow_hearts_t2.mp4",
+      "sha256": "97d6d1e8db36af6d7d2b1c1d7c431b66184d148dcc4ffd0d44867c9142664ecc",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 7.9,
+      "film_t0": 167.49,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "Harvey has spent years watching the slow hearts of cold-blooded animals, like frogs and eels, where each beat is easy to see."
+      ]
+    },
+    {
+      "id": "03_stove_to_muscle",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/03_stove_to_muscle_t4.mp4",
+      "sha256": "b90ef315ad45dde77fae3c6a42cc924d02ead4427b5ea49b54dac4a002921914",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 4,
+      "part_t0": 15.8,
+      "film_t0": 175.39,
+      "use_s": 7.467,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Harvey has spent years watching the slow hearts of cold-blooded animals, like frogs and eels, where each beat is easy to see.",
+        "And what he saw was simple.",
+        "The heart isn't a stove.",
+        "It's a muscle, and it squeezes."
+      ]
+    },
+    {
+      "id": "04_squeeze_pulse",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/04_squeeze_pulse_t1.mp4",
+      "sha256": "e21dc11b255e9ac90763b258f02135c6b3cf8d3d8377d3cdd643bf2f800704b2",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 23.267,
+      "film_t0": 182.88,
+      "use_s": 7.233,
+      "in_s": 0.0,
+      "vo_land": [
+        "Each squeeze pushes blood out into the arteries, and that push is the pulse you feel in your wrist."
+      ]
+    },
+    {
+      "id": "05_how_much",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/05_how_much_t1.mp4",
+      "sha256": "291e90a6fc52337b11a89ca02e02d6eb7701f39dba8a7c9c4c3d5a3c032a8acc",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 30.5,
+      "film_t0": 190.1,
+      "use_s": 6.467,
+      "in_s": 0.0,
+      "vo_land": [
+        "Then he asks how much blood each squeeze pushes out.",
+        "He picks small numbers on purpose."
+      ]
+    },
+    {
+      "id": "06_two_ounces_eighth",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/06_two_ounces_eighth_t1.mp4",
+      "sha256": "f888ac4c7a11c876ff8903252e7fc2a716a1689c333a41c5e23332102226c1a7",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 36.967,
+      "film_t0": 196.58,
+      "use_s": 7.4,
+      "in_s": 0.0,
+      "vo_land": [
+        "Say the left side of the heart holds about two ounces.",
+        "Say just one eighth of that goes out with each beat."
+      ]
+    },
+    {
+      "id": "07_thousand_beats",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/07_thousand_beats_t4.mp4",
+      "sha256": "d20e1ad51857b24ea452c846b416d0dc8a8873c87a70507500103c75b67ea5b7",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 4,
+      "part_t0": 44.367,
+      "film_t0": 203.98,
+      "use_s": 4.567,
+      "in_s": 0.0,
+      "vo_land": [
+        "In half an hour, a heart beats more than a thousand times."
+      ]
+    },
+    {
+      "id": "08_explorer_jugs",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/08_explorer_jugs_t1.mp4",
+      "sha256": "0455ca22f2646f69354b3b3377fba2c89a43125ad6afae7902d8ca0998e9ddd5",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 48.933,
+      "film_t0": 208.52,
+      "use_s": 7.4,
+      "in_s": 0.0,
+      "vo_land": [
+        "Multiply it out.",
+        "In half an hour, the heart pushes out more blood than there is in the whole body."
+      ]
+    },
+    {
+      "id": "09_jug_tower",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/09_jug_tower_t1.mp4",
+      "sha256": "488eab22dcfce267e9bc65668a794ed1f0882942b71e9d80187636f0d5ecc334",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 56.333,
+      "film_t0": 215.92,
+      "use_s": 5.3,
+      "in_s": 0.0,
+      "vo_land": [
+        "Why does that matter?",
+        "Because if the liver made all that blood fresh from food, you'd have to eat more than your own weight every single day."
+      ]
+    },
+    {
+      "id": "10_eat_weight",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/10_eat_weight_t1.mp4",
+      "sha256": "af1ca12ff9f8e8e1943f21a68b4de7a70a7720c888d5c7fcd1994173b5869ef9",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 61.633,
+      "film_t0": 221.22,
+      "use_s": 5.1,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Because if the liver made all that blood fresh from food, you'd have to eat more than your own weight every single day.",
+        "Nobody does."
+      ]
+    },
+    {
+      "id": "11_where_go",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/11_where_go_t3.mp4",
+      "sha256": "b39e65e6e1e22b37e862a599688c3ad53a4c167fae57dda1a3f7bda44379ae30",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 66.733,
+      "film_t0": 226.32,
+      "use_s": 7.5,
+      "in_s": 0.0,
+      "vo_land": [
+        "And if the body used it all up, where would it go?",
+        "There's only one answer that works.",
+        "It's the same blood."
+      ]
+    },
+    {
+      "id": "12_glowing_loop",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/12_glowing_loop_t2.mp4",
+      "sha256": "67487492467b0093d06a76d67438b1c6ef542389abeb9d99883a83e70894d791",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 74.233,
+      "film_t0": 233.84,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "The heart pumps it out through the arteries, and it comes back through the veins, round and round.",
+        "It circulates."
+      ]
+    },
+    {
+      "id": "13_one_minute",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/13_one_minute_t3.mp4",
+      "sha256": "57b6a63b49471b3624d332113e9c7e93280f834096526f0a8b7e7c532e6c5cb5",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 82.133,
+      "film_t0": 241.74,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) It circulates.",
+        "We now know he was being very careful: your heart pumps all of your blood round your body in about a minute."
+      ]
+    },
+    {
+      "id": "14_not_proof",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/14_not_proof_t1.mp4",
+      "sha256": "8a9ab44e9e9d456178f9d5a67ccfcb2e4be9e401e1af6ec3ba263b37632c83ec",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 90.033,
+      "film_t0": 249.64,
+      "use_s": 7.967,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) We now know he was being very careful: your heart pumps all of your blood round your body in about a minute.",
+        "But a sum isn't proof.",
+        "Harvey needed something people could see with their own eyes."
+      ]
+    }
+  ]
+}

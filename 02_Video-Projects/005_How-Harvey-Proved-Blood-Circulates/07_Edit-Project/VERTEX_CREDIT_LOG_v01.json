@@ -1,0 +1,45 @@
+{
+  "source": "https://console.cloud.google.com/billing/0124D1-E6EFD6-40F6DA/credits/all?project=gen-lang-client-0538779324",
+  "readings": [
+    {
+      "label": "before_part02_2026-10-02",
+      "at": "2026-10-01T23:30:51+00:00",
+      "free_trial_remaining_gbp": 209.53,
+      "status": "Available",
+      "screenshot": "vertex_credits_before_part02_2026-10-02.png",
+      "floor_gbp": 60.0
+    },
+    {
+      "label": "after_part02_2026-10-02",
+      "at": "2026-10-02T00:16:32+00:00",
+      "free_trial_remaining_gbp": 208.06,
+      "status": "Available",
+      "screenshot": "vertex_credits_after_part02_2026-10-02.png",
+      "floor_gbp": 60.0
+    },
+    {
+      "label": "after_part03_2026-10-02",
+      "at": "2026-10-02T00:54:03+00:00",
+      "free_trial_remaining_gbp": 190.22,
+      "status": "Available",
+      "screenshot": "vertex_credits_after_part03_2026-10-02.png",
+      "floor_gbp": 60.0
+    },
+    {
+      "label": "after_part04_2026-10-02",
+      "at": "2026-10-02T02:16:58+00:00",
+      "free_trial_remaining_gbp": 163.89,
+      "status": "Available",
+      "screenshot": "vertex_credits_after_part04_2026-10-02.png",
+      "floor_gbp": 60.0
+    },
+    {
+      "label": "after_part05_2026-10-02",
+      "at": "2026-10-02T03:24:44+00:00",
+      "free_trial_remaining_gbp": 110.07,
+      "status": "Available",
+      "screenshot": "vertex_credits_after_part05_2026-10-02.png",
+      "floor_gbp": 20.0
+    }
+  ]
+}

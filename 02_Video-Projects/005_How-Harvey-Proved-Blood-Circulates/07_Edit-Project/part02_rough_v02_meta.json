@@ -1,0 +1,319 @@
+{
+  "out": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part02_rough_v02.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part02_rough_v02.mp4",
+  "sha256": "d813f553b4d9d6217f00291e1ccc2715d1fb6b71ebacc05bd028b0d2ac3c0b22",
+  "duration_s": 98.233333,
+  "streams": [
+    {
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "duration": "98.233333"
+    },
+    {
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "duration": "98.230000"
+    }
+  ],
+  "freeze_events_0p8s": 0,
+  "vo": "02_Voiceover/part02_the_liver_that_made_blood_v01.mp3",
+  "vo_sha256": "c99d1e5fbd0a0ab7cbd95bce2f796d5050be507c9358483b4900b34cb60436dd",
+  "vo_duration_s": 97.58,
+  "vo_film_start_s": 59.52,
+  "tail_s": 0.65,
+  "bed": {
+    "temp": true,
+    "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part02-temp_score_bed_v01.mp3",
+    "sha256": "124a76f4c3bfe0d11b5c24e82b845d81b31da57ea7bb4e77e16f458da6a1a4ff",
+    "vo_mean_db": -21.1,
+    "bed_mean_db_raw": -23.4,
+    "bed_gain_db": -17.7,
+    "bed_rel_db_vs_vo": -20.0
+  },
+  "labels": [
+    {
+      "t0": 0.5,
+      "t1": 2.9,
+      "text": "Galen · Rome, c. AD 170"
+    },
+    {
+      "t0": 15.8,
+      "t1": 18.2,
+      "text": "Food → liver → blood"
+    },
+    {
+      "t0": 27.52,
+      "t1": 29.92,
+      "text": "A stove, not a pump"
+    },
+    {
+      "t0": 34.82,
+      "t1": 37.22,
+      "text": "Invisible holes?"
+    },
+    {
+      "t0": 47.58,
+      "t1": 49.98,
+      "text": "Andreas Vesalius, 1555"
+    },
+    {
+      "t0": 64.5,
+      "t1": 66.9,
+      "text": "Padua, c. 1600"
+    },
+    {
+      "t0": 73.9,
+      "t1": 76.3,
+      "text": "Fabricius"
+    },
+    {
+      "t0": 80.4,
+      "t1": 82.8,
+      "text": "Little doors"
+    }
+  ],
+  "cuts": "hard cuts on the board times",
+  "plates": [
+    {
+      "id": "01_galen_scrolls",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/01_galen_scrolls_t2.mp4",
+      "sha256": "c5be92cb3ea154f8d9af7753e74ef7a741dde86fe6445e721aef5441499e0dd8",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 0.0,
+      "film_t0": 59.52,
+      "use_s": 6.8,
+      "in_s": 0.0,
+      "vo_land": [
+        "Galen was a Greek doctor in Rome nearly two thousand years ago, and a brilliant anatomist."
+      ]
+    },
+    {
+      "id": "02_galen_centuries",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/02_galen_centuries_t1.mp4",
+      "sha256": "6c227c3768a71fb0a0bbb493845450df46d4bb43825c83bf3771e212a5f916ca",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 6.8,
+      "film_t0": 66.32,
+      "use_s": 6.8,
+      "in_s": 0.0,
+      "vo_land": [
+        "For fourteen centuries, hardly anyone dared to argue with his books.",
+        "Here is what Galen taught."
+      ]
+    },
+    {
+      "id": "03_eat_to_liver",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/03_eat_to_liver_t1.mp4",
+      "sha256": "a700acc3e0f5080ad72c69f6cf007273f3e39ff6b3e52b335740acbe0254b43a",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 13.6,
+      "film_t0": 73.12,
+      "use_s": 6.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "You eat.",
+        "Your food turns into a milky juice, and your liver turns that juice into blood."
+      ]
+    },
+    {
+      "id": "04_veins_soak",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/04_veins_soak_t1.mp4",
+      "sha256": "e67592e033cd5931c395c8fd190eaf12fb27e9139104b3f356e58ded5911fc88",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 20.5,
+      "film_t0": 80.02,
+      "use_s": 6.533,
+      "in_s": 0.0,
+      "vo_land": [
+        "Your veins carry the blood out to every part of you, and your flesh soaks it up as nourishment."
+      ]
+    },
+    {
+      "id": "05_heart_stove",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/05_heart_stove_t1.mp4",
+      "sha256": "ad274d0a296512e626c6816e170ef10f017da6e1ee6c87e1c9bf8f0f4e5d6904",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 27.033,
+      "film_t0": 86.54,
+      "use_s": 7.2,
+      "in_s": 0.0,
+      "vo_land": [
+        "The heart wasn't a pump at all.",
+        "It was a warm stove, and its job was to heat the blood."
+      ]
+    },
+    {
+      "id": "06_septum_holes",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/06_septum_holes_t1.mp4",
+      "sha256": "91b1d3ad7701462a6468d00794ed65e5abb52d8b328e6027d3aa090bf68b605b",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 34.233,
+      "film_t0": 93.74,
+      "use_s": 7.433,
+      "in_s": 0.0,
+      "vo_land": [
+        "A little of it was meant to seep from the right side of the heart to the left, through tiny holes in the wall between them."
+      ]
+    },
+    {
+      "id": "07_doctors_believe",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/07_doctors_believe_t1.mp4",
+      "sha256": "8db1eb98a0ea62e989a853af7e3e532096dcda14ffdd4c2ca2d772c3c18a35dc",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 41.667,
+      "film_t0": 101.2,
+      "use_s": 5.3,
+      "in_s": 0.0,
+      "vo_land": [
+        "Nobody had ever seen those holes.",
+        "Doctors believed they had to be there anyway."
+      ]
+    },
+    {
+      "id": "08_vesalius_book",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/08_vesalius_book_t1.mp4",
+      "sha256": "acbaf748096b04e735624656793e1915dce5335196d5e9f16c62b28ec115ec58",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 46.967,
+      "film_t0": 106.5,
+      "use_s": 6.5,
+      "in_s": 0.0,
+      "vo_land": [
+        "Then, in fifteen fifty-five, the great anatomist Andreas Vesalius wrote that he could not see how even the smallest drop could pass through that wall."
+      ]
+    },
+    {
+      "id": "09_vesalius_nothing",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/09_vesalius_nothing_t2.mp4",
+      "sha256": "fd478c71ec0c90cbfb9b4cb90914184f6bd88703fd6346c1dc3330b7b4465388",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 53.467,
+      "film_t0": 113.0,
+      "use_s": 4.6,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Then, in fifteen fifty-five, the great anatomist Andreas Vesalius wrote that he could not see how even the smallest drop could pass through that wall."
+      ]
+    },
+    {
+      "id": "10_why_believe",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/10_why_believe_t2.mp4",
+      "sha256": "1c74824d6c0460b6c1f6d736e19279d78520465ffbf4497a567a59db2b28699d",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 58.067,
+      "film_t0": 117.6,
+      "use_s": 5.933,
+      "in_s": 0.0,
+      "vo_land": [
+        "So why did everyone keep believing it?",
+        "Because nobody had a better answer."
+      ]
+    },
+    {
+      "id": "11_padua_explorer",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/11_padua_explorer_t3.mp4",
+      "sha256": "1fc2613e4e48f60baebee72e238d472a03cb6972126067b592f837dac04e3925",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 64.0,
+      "film_t0": 123.52,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "Around sixteen hundred, in Padua, a young Englishman named William Harvey studied under an old professor called Fabricius."
+      ]
+    },
+    {
+      "id": "12_fabricius",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/12_fabricius_t1.mp4",
+      "sha256": "0f939b02152dc470fa4ab6197a7382b1fd06a928fa743bb0b9e1e084a0f37006",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 71.9,
+      "film_t0": 131.42,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Around sixteen hundred, in Padua, a young Englishman named William Harvey studied under an old professor called Fabricius.",
+        "Fabricius had found something strange inside the veins: tiny flaps, in pairs."
+      ]
+    },
+    {
+      "id": "13_little_doors",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/13_little_doors_t1.mp4",
+      "sha256": "7878da50165dd8ac570a03eb629f51fc826d8ce522ccd1946d30221a90292553",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 79.8,
+      "film_t0": 139.32,
+      "use_s": 5.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Fabricius had found something strange inside the veins: tiny flaps, in pairs.",
+        "He called them little doors.",
+        "But why would a vein need doors?"
+      ]
+    },
+    {
+      "id": "14_pool_feet",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/14_pool_feet_t3.mp4",
+      "sha256": "61b677c1dd3dfd5cf8f560428f3f82c3fc88c6be60fddb9a3536213cc829fcc1",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 85.7,
+      "film_t0": 145.22,
+      "use_s": 4.567,
+      "in_s": 0.0,
+      "vo_land": [
+        "Fabricius thought they slowed the blood, so it wouldn't all pool in your feet.",
+        "He held the most important clue in the story, and he read it the wrong way."
+      ]
+    },
+    {
+      "id": "15_harvey_ship",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/raw/v01/15_harvey_ship_t2.mp4",
+      "sha256": "e734c404315c8b43b229cc30aa3ef7a9db3db0a2ed348432951a2e7d6805c8d9",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 90.267,
+      "film_t0": 149.8,
+      "use_s": 7.967,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) He held the most important clue in the story, and he read it the wrong way.",
+        "Harvey took the clue home to London."
+      ]
+    }
+  ]
+}

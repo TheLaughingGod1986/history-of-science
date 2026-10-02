@@ -1,0 +1,55 @@
+{
+  "film": "005_How-Harvey-Proved-Blood-Circulates",
+  "scripts": "SHORTS_SCRIPTS_v01.md",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "voice_settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "takes": [
+    {
+      "id": "s03",
+      "take": "a",
+      "txt": "s03_never_saw.txt",
+      "words": 57,
+      "mp3": "hos_005_s03_never_saw_vo_v01a.mp3",
+      "mp3_sha256": "54dce108121aa0bec6dd749d8fd4fd2ecb151371d00fc96802332dfa213445c2",
+      "wav": "hos_005_s03_never_saw_vo_v01a.wav",
+      "align": "hos_005_s03_never_saw_vo_v01a_align.json",
+      "duration_s": 26.8,
+      "mean_db": -23.2,
+      "peak_db": -4.0
+    },
+    {
+      "id": "s03",
+      "take": "b",
+      "txt": "s03_never_saw.txt",
+      "words": 57,
+      "mp3": "hos_005_s03_never_saw_vo_v01b.mp3",
+      "mp3_sha256": "7f784e9226d77bf89d231d780050b4fe5531afdf69c10e57068070395826fe8c",
+      "wav": "hos_005_s03_never_saw_vo_v01b.wav",
+      "align": "hos_005_s03_never_saw_vo_v01b_align.json",
+      "duration_s": 24.56,
+      "mean_db": -24.2,
+      "peak_db": -4.5
+    },
+    {
+      "id": "s03",
+      "take": "c",
+      "txt": "s03_never_saw.txt",
+      "words": 57,
+      "mp3": "hos_005_s03_never_saw_vo_v01c.mp3",
+      "mp3_sha256": "d09bacac54479dd50170025b4cbb1b5479a2a44b8a604cb00a143182b0f25f22",
+      "wav": "hos_005_s03_never_saw_vo_v01c.wav",
+      "align": "hos_005_s03_never_saw_vo_v01c_align.json",
+      "duration_s": 25.28,
+      "mean_db": -23.1,
+      "peak_db": -3.8
+    }
+  ]
+}
