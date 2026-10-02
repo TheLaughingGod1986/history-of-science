@@ -25,7 +25,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Draft at script v01 (2 Oct 2026). Title, T&C title, description v01 (chapter times are word-count estimates, re-time from the VO), tags v01 and schedule are PROPOSALS for Claude's review and Ben's final OK; nothing is uploaded or scheduled. Proposed air Thu 5 Nov 2026 18:00 UK = 18:00 UTC, normal publish.",
+  "note": "Draft at script v02 (2 Oct 2026). Title, T&C title, description v01 (chapter times are word-count estimates, re-time from the VO), tags v01 and schedule are PROPOSALS for Claude's review and Ben's final OK; nothing is uploaded or scheduled. Proposed air Thu 5 Nov 2026 18:00 UK = 18:00 UTC, normal publish.",
   "neighbours": {
     "phrases": [
       "tree",
@@ -34,16 +34,22 @@
     "checked": "2026-10-02",
     "videos": [
       {
-        "id": "3hxE7Af98AI",
-        "channel": "TED-Ed",
-        "title": "What if there were 1 trillion more trees? - Jean-François Bastin",
-        "views": 4797252
+        "id": "2KZb2_vcNTg",
+        "channel": "Veritasium",
+        "title": "Where Do Trees Get Their Mass?",
+        "views": 2537739
       },
       {
-        "id": "zarll9bx6FI",
-        "channel": "TED-Ed",
-        "title": "What happens if you cut down all of a city's trees? - Stefan Al",
-        "views": 3118737
+        "id": "sQK3Yr4Sc_k",
+        "channel": "CrashCourse",
+        "title": "Photosynthesis: Crash Course Biology #8",
+        "views": 9237499
+      },
+      {
+        "id": "ZSch_NgZpQs",
+        "channel": "Kurzgesagt – In a Nutshell",
+        "title": "Trees Are So Weird",
+        "views": 6713007
       },
       {
         "id": "eo5XndJaz-Y",
@@ -52,17 +58,12 @@
         "views": 2218164
       },
       {
-        "id": "vvtPJKWUb2g",
+        "id": "3hxE7Af98AI",
         "channel": "TED-Ed",
-        "title": "How tall can a tree grow? - Valentin Hammoudi",
-        "views": 1407041
-      },
-      {
-        "id": "V4m9SefyRjg",
-        "channel": "TED-Ed",
-        "title": "The secret language of trees - Camille Defrenne and Suzanne Simard",
-        "views": 856874
+        "title": "What if there were 1 trillion more trees? - Jean-François Bastin",
+        "views": 4797252
       }
-    ]
+    ],
+    "note": "Hand-edited 2 Oct 2026 on Claude's desk review (#180 comment 5950401504): the three exact-question lessons plus two TED-Ed lessons; views from evidence_2026-10-02_neighbours_manifest.json."
   }
 }

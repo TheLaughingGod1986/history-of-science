@@ -1,0 +1,71 @@
+{
+  "listen": "hos_006_vo_all_parts_listen_v02.mp3",
+  "listen_sha256": "304f83b49d0a73b66dca3493f46dccaf98dc16c4fc1b55486e2b5fe3af4bd4f9",
+  "duration_s": 509.35,
+  "join_s": 1.0,
+  "max_pause_s": 0.6,
+  "peak_db": -2.0,
+  "atempo": null,
+  "parts": [
+    {
+      "part": 1,
+      "file": "part01_plants_eat_soil_v02.mp3",
+      "raw": "part01_plants_eat_soil_v01_raw.mp3",
+      "raw_sha256": "330c95cef4ded8766e093a4c32b23ebf7eaa489f4f82f9d18ad863b5656d3d7e",
+      "fixes": [],
+      "pause_trim_s": 3.43,
+      "start_s": 0.0,
+      "duration_s": 61.05,
+      "sha256": "f8d12e8e3fc2dae08abff1b9445681115a06fb0268142438569f8762566e47c1"
+    },
+    {
+      "part": 2,
+      "file": "part02_five_years_and_two_ounces_v02.mp3",
+      "raw": "part02_five_years_and_two_ounces_v01_raw.mp3",
+      "raw_sha256": "532c7b86cab72f6dcd2e8784a224735e374c72a42688b68db425abc272f8b558",
+      "fixes": [
+        "_qa_picture_yourself_v01c.mp3",
+        "_qa_had_come_v01b.mp3"
+      ],
+      "pause_trim_s": 4.56,
+      "start_s": 62.05,
+      "duration_s": 117.0,
+      "sha256": "ddd904b749ae2c30af92b89950e377c7ebb85aec4538858ae21f4ce4928b1a11"
+    },
+    {
+      "part": 3,
+      "file": "part03_the_air_that_mint_repaired_v02.mp3",
+      "raw": "part03_the_air_that_mint_repaired_v01_raw.mp3",
+      "raw_sha256": "a04783762c7116dc9bae148cc1ddd8a9df7353c3331b922055ae98d97591ecf0",
+      "fixes": [
+        "_qa_mice_had_made_v01d.mp3"
+      ],
+      "pause_trim_s": 4.42,
+      "start_s": 180.05,
+      "duration_s": 94.23,
+      "sha256": "6696a9b8bcd0295139a75d59e1d2900189a4c9ed7d4609a592d9959e4a094bd7"
+    },
+    {
+      "part": 4,
+      "file": "part04_bubbles_in_the_sunlight_v02.mp3",
+      "raw": "part04_bubbles_in_the_sunlight_v01_raw.mp3",
+      "raw_sha256": "ae3b37c96ae3b1073900e9e46e0f3c7b289fac5935b77f76056f575295c3eeea",
+      "fixes": [],
+      "pause_trim_s": 6.28,
+      "start_s": 275.27,
+      "duration_s": 91.32,
+      "sha256": "64dea1c0dd63d3fdbbccedef86ee6d8bcf91911f3ca02f4e9665883f32e32ed2"
+    },
+    {
+      "part": 5,
+      "file": "part05_carbon_from_the_sky_v02.mp3",
+      "raw": "part05_carbon_from_the_sky_v01_raw.mp3",
+      "raw_sha256": "c96b74de4373045f669e66911d5424c0d025d94261ebf6afa33420e0b5a140a8",
+      "fixes": [],
+      "pause_trim_s": 5.68,
+      "start_s": 367.59,
+      "duration_s": 141.76,
+      "sha256": "d8f5a499b548252756d39d467134515de2b6ab66ad0e3ba84de6179bd6233eba"
+    }
+  ]
+}
