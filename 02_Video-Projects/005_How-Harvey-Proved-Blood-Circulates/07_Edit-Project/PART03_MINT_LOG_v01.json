@@ -833,6 +833,40 @@
       },
       "api_s": 145.4,
       "uat_at": "2026-10-02T00:52:21+00:00"
+    },
+    {
+      "plate": "07_thousand_beats",
+      "take": 4,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try4_plain_list_sandglass",
+      "extra": "Nothing new is written and nothing on the page changes: '2 oz', '1/8' and '1000' stay exactly as they are, clean and sharp, with no line, bar or rule ever appearing between them. No watch, no clock. No hands, no quill, no people.",
+      "light_fix": true,
+      "replace": [
+        "the quill writes '1000' under '2 oz' and '1/8' in large clear brown ink; a brass clock ticks beside the page.=>the page already reads '2 oz', '1/8' and '1000' as a plain list, one under another; sand trickles through the small brass sand-glass beside the page as the camera pushes slowly in on the numbers."
+      ],
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light, 17th-century world. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Wonder, not gore: no wounds, no blood on skin, no cut flesh, no animal organs. Premium Animistry-class 3D cartoon. Same page: the page already reads '2 oz', '1/8' and '1000' as a plain list, one under another; sand trickles through the small brass sand-glass beside the page as the camera pushes slowly in on the numbers. The numbers stay sharp and correct. Soft warm daylight from a window out of frame. There are no candles, candlesticks, lamps or lanterns anywhere in the room. Silent. Continuous motion through the final frame. No Explorer. Nothing new is written and nothing on the page changes: '2 oz', '1/8' and '1000' stay exactly as they are, clean and sharp, with no line, bar or rule ever appearing between them. No watch, no clock. No hands, no quill, no people. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/07_thousand_beats_v05.jpg",
+      "start_frame_sha256": "edba9f72f48aa36a40fe3eff176e7d230bfa4720ee7b57014ed98e4cee076fd0",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/ae1448df-5732-45e9-a381-877522ac257f",
+      "submitted_at": "2026-10-02T02:22:13+00:00",
+      "cost_usd": 0.8,
+      "status": "KEEP",
+      "why": "Claude's 03/07 fix: '2 oz' / '1/8' / '1000' as a plain list with no dividing line (no fraction reading); all three stay sharp and unchanged; brass sand-glass (03/13's prop) replaces the pocket watch; same flat page and dark table as 06; camera pushes in; no hands, no flame.",
+      "at": "2026-10-02T02:23:58+00:00",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/07_thousand_beats_t4.mp4",
+      "sha256": "d20e1ad51857b24ea452c846b416d0dc8a8873c87a70507500103c75b67ea5b7",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/uat/07_thousand_beats_t4_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 106.3,
+      "uat_at": "2026-10-02T02:24:15+00:00"
     }
   ],
   "stills": [
@@ -1110,6 +1144,64 @@
       "extra": "The same faceless translucent standing figure with its glowing red artery and blue vein loop in the same oak-panelled room; on a small oak stool beside it stands a brass-framed one-minute sand-glass with sand running from the top bulb; one small round red drop glows on the loop at the heart. No clock, no watch, no clock hands. No letters, words, numbers or writing.",
       "cost_usd": 0.039,
       "at": "2026-10-02T00:48:24+00:00"
+    },
+    {
+      "plate": "07_thousand_beats",
+      "v": 2,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/07_thousand_beats_v02.jpg",
+      "sha256": "660fc15fbd017babd2e98424067ce564c5a23c2e8d2cd563e05996f9177c1096",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/07_thousand_beats_v01.jpg",
+      "style_refs": [
+        "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/13_one_minute_v04.jpg"
+      ],
+      "extra": "Same cream page on the same dark oak table in the same warm light and framing. The page shows exactly three lines of large clear brown ink, one under another, left-aligned as a plain list: '2 oz' on the top line, '1/8' on the middle line, '1000' on the bottom line. No dividing line, rule, bar or underline anywhere on the page; nothing else written. Where the pocket watch was, a small brass-framed sand-glass stands on the table with sand running from the top bulb, the same prop as in the reference picture. No watch, no clock. No hands, no quill, no sleeves, no people.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T02:19:46+00:00"
+    },
+    {
+      "plate": "07_thousand_beats",
+      "v": 3,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/07_thousand_beats_v03.jpg",
+      "sha256": "7019c26b2c7a893f99b3e3b86e2a641ebc46a33272924534e6df856870f3c711",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/07_thousand_beats_v01.jpg",
+        "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/13_one_minute_v04.jpg"
+      ],
+      "extra": "Close on a single cream page lying on a dark oak table in warm daylight, oak panelling softly out of focus behind. On the page, three short lines of large clear brown ink, written one under another and left-aligned like a shopping list: '2 oz' / '1/8' / '1000'. There is NO horizontal line on the page at all: no dividing line, no fraction bar, no rule, no underline. Just the three lines of numbers with clear space between them. Beside the page stands a small brass-framed sand-glass with sand running. No watch, no clock. No hands, no quill, no sleeves, no people.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T02:20:14+00:00"
+    },
+    {
+      "plate": "07_thousand_beats",
+      "v": 4,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/07_thousand_beats_v04.jpg",
+      "sha256": "71ab022a40ec2c6a3869b58c441ee279af16d4d539319b9f977a1f3a72608c3c",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/13_one_minute_v04.jpg"
+      ],
+      "extra": "No figure. Close on a single cream page lying on a dark oak table in warm daylight, oak panelling softly out of focus behind. On the page, three short lines of large clear brown ink, written one under another and left-aligned like a list: '2 oz' on the first line, '1/8' on the second line, '1000' on the third line. There is NO horizontal line on the page at all: no dividing line, no fraction bar, no rule, no underline. Just the three lines with clear space between them. Beside the page stands a small brass-framed sand-glass with sand running. No watch, no clock. No hands, no quill, no sleeves, no people.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T02:20:47+00:00"
+    },
+    {
+      "plate": "07_thousand_beats",
+      "v": 5,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/07_thousand_beats_v05.jpg",
+      "sha256": "edba9f72f48aa36a40fe3eff176e7d230bfa4720ee7b57014ed98e4cee076fd0",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/07_thousand_beats_from_06_last.jpg",
+        "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/13_one_minute_v04.jpg"
+      ],
+      "extra": "The same flat cream page with straight clean edges lying flat on the same dark round oak table as the first picture, seen from the same low angle, dark oak panelling softly out of focus behind. On the page, three short lines of large clear brown ink, one under another and left-aligned like a list: '2 oz' on the first line, '1/8' on the second line, '1000' on the third line. NO horizontal line on the page at all: no dividing line, no fraction bar, no rule, no underline. Where the pocket watch was, a small brass-framed sand-glass (as in the second picture) stands on the table with sand running. No watch, no clock. Soft warm daylight from a window out of frame; no candles, sconces, lamps or flames anywhere. No hands, no quill, no sleeves, no people.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T02:21:52+00:00"
     }
   ],
   "plates": {
@@ -1184,9 +1276,9 @@
       "path": "vertex"
     },
     "07_thousand_beats": {
-      "keep": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/07_thousand_beats_t3.mp4",
-      "take": 3,
-      "sha256": "785334e7b01e91ae86e057681870218fc698baeebc85bab6d32b9ce267af9715",
+      "keep": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/07_thousand_beats_t4.mp4",
+      "take": 4,
+      "sha256": "d20e1ad51857b24ea452c846b416d0dc8a8873c87a70507500103c75b67ea5b7",
       "model": "veo-3.1-fast-generate-001",
       "path": "vertex"
     },
@@ -1212,6 +1304,6 @@
       "path": "vertex"
     }
   },
-  "cost_usd_total": 32.975,
-  "updated": "2026-10-02T00:52:21+00:00"
+  "cost_usd_total": 33.931,
+  "updated": "2026-10-02T02:24:15+00:00"
 }

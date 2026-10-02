@@ -481,6 +481,13 @@ film 005 Vertex spend $51.65 · projected Free Trial £168.21 (floor £60, £/$ 
 PASS  hos_005_part03_rough_v01.mp4  1:38.00  mean -21.4 dB  peak -2.2 dB  158 wpm
 ```
 
+- **03/07 remint (Claude's note on the desk, 2 Oct):** the rule under "2 oz" made the page read as a fraction, and the pocket watch was too modern. t4 KEEP: "2 oz / 1/8 / 1000" as a plain list with no line, and 03/13's brass sand-glass in place of the watch. Start frame `07_thousand_beats_v05.jpg` (v02–v04 rejected: two kept the rule, one had a lit wall sconce and a torn upright page). Cost $0.95 (1 take, 4 frames). Part 03 total $33.93.
+- **Cut v02:** `09_Final-Export/hos_005_part03_rough_v02.mp4`, sha256 `7abfe9ef17caf2bd778c4e006e5b087d9531c5acee0cc64aa0bbd1290c2f01bc`, 98.000 s, freezedetect 0.
+
+```
+PASS  hos_005_part03_rough_v02.mp4  1:38.00  mean -21.4 dB  peak -2.2 dB  158 wpm
+```
+
 ### Credit after Part 03 (= before Part 04)
 
 ```
@@ -520,7 +527,7 @@ film 005 Vertex spend $147.06 · projected Free Trial £91.88 (floor £60, £/$ 
 |---|---|---|---|
 | 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F) | `09_Final-Export/hos_005_part01_rough_v01.mp4` (`7661b6cf…`, 59.53 s) | 9/9 KEEP on Vertex ($25.58); **passed by Ben, 1 Oct 2026** |
 | 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | `09_Final-Export/hos_005_part02_rough_v02.mp4` (`d813f553…`, 98.23 s) | 15/15 KEEP on Vertex ($25.17); my UAT done; Claude reviewing stills |
-| 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | `09_Final-Export/hos_005_part03_rough_v01.mp4` (`86867f93…`, 98.00 s) | 14/14 KEEP on Vertex ($32.98); my UAT done; Claude reviewing stills |
+| 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | `09_Final-Export/hos_005_part03_rough_v02.mp4` (`7abfe9ef…`, 98.00 s) | 14/14 KEEP on Vertex ($33.93); accepted by Claude after the 03/07 remint (plain list, sand-glass) |
 | 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | `09_Final-Export/hos_005_part04_rough_v01.mp4` (`c7de24b1…`, 128.24 s) | 19/19 KEEP on Vertex ($63.34); my UAT done; Claude reviewing stills |
 | 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | — | board v02; **held at the £60 credit floor** |
 
