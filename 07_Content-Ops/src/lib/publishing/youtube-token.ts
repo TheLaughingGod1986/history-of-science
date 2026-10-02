@@ -18,7 +18,7 @@ export const RECONNECT_HELP =
 
 /** What a failed token refresh means. `invalid_grant` = the refresh token itself is dead. */
 export function classifyRefreshFailure(status: number, body: unknown): { dead: boolean; message: string } {
-  const err = (body && typeof body === "object" && "error" in body ? String((body as any).error) : "") || "";
+  const err = body && typeof body === "object" && "error" in body ? String((body as { error: unknown }).error) : "";
   if (err === "invalid_grant") {
     return { dead: true, message: `YouTube refresh token expired or revoked (invalid_grant). ${RECONNECT_HELP}` };
   }
