@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 9,142,313 views | [How we conquered the deadly smallpox virus - Simona Zompi](https://youtu.be/yqUFy-t4MlQ) | ted-ed vaccines |
+| 2 | TED-Ed ★ | 3,531,242 views | [How do vaccines work? - Kelwalin Dhanasarnsombut](https://youtu.be/rb7TVW77ZCs) | ted-ed vaccines |
+| 3 | TED-Ed ★ | 1,264,918 views | [How the COVID-19 vaccines were created so quickly - Kaitlyn Sadtler and Elizabeth Wayne](https://youtu.be/v-NEr3KCug8) | ted-ed vaccines |
+| 4 | TED-Ed ★ | 500,120 views | [Learning from smallpox: How to eradicate a disease - Julie Garon and Walter A. Orenstein](https://youtu.be/oBSandHijDc) | ted-ed edward jenner smallpox |
+| 5 | TEDx Talks ★ | 207,714 views | [Why Parents Fear Vaccines | Tara Haelle | TEDxOslo](https://youtu.be/ggtkzkoI3eM) | vaccines ted |
+| 6 | TEDx Talks ★ | 192,442 views | [How vaccines train the immune system in ways no one expected | Christine Stabell Benn | TEDxAarhus](https://youtu.be/_d8PNlXHJ48) | vaccines ted |
+| 7 | TED ★ | 142,497 views | [How Vaccines Are Developed – and Why They’re Safe | Body Stuff with Dr. Jen Gunter | TED](https://youtu.be/MTW3U-O1nZo) | ted-ed vaccines |
+| 8 | Kurzgesagt – In a Nutshell | 17,866,374 views | [The Side Effects of Vaccines - How High is the Risk?](https://youtu.be/zBkVCpbNnkU) | vaccines |
+| 9 | Extra History | 856,761 views | [History of Vaccines - Killing Smallpox - Medical History - Extra History](https://youtu.be/Ke6tT3_QTuM) | edward jenner smallpox |
+| 10 | TED ★ | 98,279 views | [Why we need to fight misinformation about vaccines | Ethan Lindenberger](https://youtu.be/zELJMIQawys) | vaccines ted |
+| 11 | Cognito | 87,610 views | [GCSE Biology - Vaccinations | How Vaccines Work (2027/28 exams)](https://youtu.be/Rz5RxEFo2CM) | vaccines |
+| 12 | TED ★ | 57,748 views | [Why Vaccines are Made Too Late... If They’re Made At All | Seth Berkley | TED Talks](https://youtu.be/a7whovUoYu4) | vaccines ted |
+
+Words the top neighbours share: how vaccines, of vaccines
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 4 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/vaccine/neighbours.json

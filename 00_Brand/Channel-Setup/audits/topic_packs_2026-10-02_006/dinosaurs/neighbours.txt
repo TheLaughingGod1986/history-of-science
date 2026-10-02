@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 3,516,953 views | [Jellyfish predate dinosaurs. How have they survived so long? - David Gruber](https://youtu.be/yQduHyiWe9o) | ted-ed dinosaur extinction |
+| 2 | TED-Ed ★ | 2,006,084 views | [The ferocious predatory dinosaurs of Cretaceous Sahara - Nizar Ibrahim](https://youtu.be/8RI0JnB_OaE) | ted-ed dinosaur extinction |
+| 3 | TED-Ed ★ | 1,776,832 views | [When will the next mass extinction occur? - Borths, D'Emic, and Pritchard](https://youtu.be/RAdNCIIYXvo) | ted-ed dinosaur extinction |
+| 4 | TED ★ | 1,685,718 views | [Jack Horner: Shape-shifting dinosaurs](https://youtu.be/kQa11RMCeSI) | ted-ed dinosaur extinction |
+| 5 | TED-Ed ★ | 924,570 views | [How do we know what color dinosaurs were? - Len Bloch](https://youtu.be/qYijAZWdnBk) | ted-ed dinosaur extinction |
+| 6 | TED ★ | 316,514 views | [Earth's mass extinctions | Peter Ward](https://youtu.be/3lYN_lXU9PA) | asteroid alvarez iridium ted |
+| 7 | TED-Ed ★ | 302,089 views | [The first asteroid ever discovered - Carrie Nugent](https://youtu.be/VKMWqOfbGME) | ted-ed asteroid alvarez iridium |
+| 8 | TED ★ | 272,990 views | [Stewart Brand: The dawn of de-extinction. Are you ready?](https://youtu.be/XKc9MJDeqj0) | dinosaur extinction ted |
+| 9 | TED-Ed ★ | 251,003 views | [The asteroid that almost wiped out life on Earth - Sean P. S. Gulick](https://youtu.be/PUptWlp-hoI) | ted-ed dinosaur extinction |
+| 10 | TED ★ | 128,559 views | [A brief tour of the last 4 billion years (dinosaurs not included) | Lauren Sallan](https://youtu.be/_0J10j46-qQ) | dinosaur extinction ted |
+| 11 | Kurzgesagt – In a Nutshell | 23,031,390 views | [The Day the Dinosaurs Died – Minute by Minute](https://youtu.be/dFCbJmgeHmA) | dinosaur extinction |
+| 12 | Kurzgesagt – In a Nutshell | 8,818,627 views | [How The Dinosaurs Actually Died](https://youtu.be/pjoQdz0nxf4) | dinosaur extinction |
+
+Words the top neighbours share: —
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 7 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/dinosaurs/neighbours.json

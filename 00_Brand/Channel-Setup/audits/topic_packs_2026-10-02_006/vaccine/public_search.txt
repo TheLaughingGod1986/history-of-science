@@ -1,0 +1,7 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| how did edward jenner discover the vaccine | related: how edward jenner discovered vaccine; edward jenner vaccine story; edward jenner and vaccination | The History Of Science 1,116 · BBC Bitesize for Teachers 306,103 · WHO European Region 206,296 · History Of Discovery AI 924 · TED-Ed 9,142,349 |
+| first vaccine smallpox cowpox | related: from smallpox to the coronavirus the history of vaccinations | TED-Ed 9,142,349 · WHO European Region 206,296 · BBC Bitesize for Teachers 306,103 · History times 1,345 · The History Of Science 1,116 |
+| how was the first vaccine made | yes | SciShow 221,365 · WHO European Region 206,296 · tranvyanh 590 · Grunge 12,118 · Akash Vukoti 2,266 |
+
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/vaccine/public_search.json

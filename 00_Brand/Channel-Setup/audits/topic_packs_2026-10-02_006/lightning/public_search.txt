@@ -1,0 +1,7 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| did benjamin franklin really fly a kite | related: the true story of ben franklin and his kite; benjamin franklin kite story | Be Smart 690,489 · Discovery 135,937 · HISTORY 163,865 · Peekaboo Kidz 1,623,883 · MythBusters 85,289 |
+| how did we find out lightning is electricity | related: how does lightning take place; how does a lightning happen; how is lightning caused class 8 | Peekaboo Kidz 1,623,883 · Learn Bright 384,026 · NOAA SciJinks 717,089 · Pecos Hank 2,255,395 · Kurzgesagt – In a Nutshell 2,120,812 |
+| franklin kite experiment | yes | Peekaboo Kidz 1,623,883 · Be Smart 690,488 · Quick History 12,862 · 𝐁𝐘𝐨𝐮 34,744 · Socratica Kids 283,223 |
+
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/lightning/public_search.json

@@ -1,0 +1,220 @@
+{
+ "pulled": "2026-10-02",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "vaccines",
+  "edward jenner smallpox"
+ ],
+ "autocomplete": {
+  "vaccines": [
+   "vaccines",
+   "vaccines for babies",
+   "vaccines and its types",
+   "vaccines if you wanna",
+   "vaccines immunology",
+   "vaccines for kids",
+   "vaccines in pregnancy",
+   "vaccines kurzgesagt",
+   "vaccines wetsuit",
+   "vaccines microbiology"
+  ],
+  "edward jenner smallpox": [
+   "edward jenner smallpox vaccine story",
+   "edward jenner smallpox",
+   "edward jenner smallpox vaccine story in hindi",
+   "edward jenner smallpox story",
+   "edward jenner smallpox vaccine",
+   "edward jenner smallpox vaccine story in urdu"
+  ]
+ },
+ "sharedTitleWords": [
+  "how vaccines",
+  "of vaccines"
+ ],
+ "neighbours": [
+  {
+   "id": "yqUFy-t4MlQ",
+   "title": "How we conquered the deadly smallpox virus - Simona Zompi",
+   "channel": "TED-Ed",
+   "views": "9,142,313 views",
+   "age": "12 yr ago",
+   "length": "4:34",
+   "tier": 1,
+   "viewCount": 9142313,
+   "foundBy": "ted-ed vaccines",
+   "onTopic": true
+  },
+  {
+   "id": "rb7TVW77ZCs",
+   "title": "How do vaccines work? - Kelwalin Dhanasarnsombut",
+   "channel": "TED-Ed",
+   "views": "3,531,242 views",
+   "age": "11 yr ago",
+   "length": "4:36",
+   "tier": 1,
+   "viewCount": 3531242,
+   "foundBy": "ted-ed vaccines",
+   "onTopic": true
+  },
+  {
+   "id": "v-NEr3KCug8",
+   "title": "How the COVID-19 vaccines were created so quickly - Kaitlyn Sadtler and Elizabeth Wayne",
+   "channel": "TED-Ed",
+   "views": "1,264,918 views",
+   "age": "5 yr ago",
+   "length": "5:08",
+   "tier": 1,
+   "viewCount": 1264918,
+   "foundBy": "ted-ed vaccines",
+   "onTopic": true
+  },
+  {
+   "id": "oBSandHijDc",
+   "title": "Learning from smallpox: How to eradicate a disease - Julie Garon and Walter A. Orenstein",
+   "channel": "TED-Ed",
+   "views": "500,120 views",
+   "age": "11 yr ago",
+   "length": "5:45",
+   "tier": 1,
+   "viewCount": 500120,
+   "foundBy": "ted-ed edward jenner smallpox",
+   "onTopic": true
+  },
+  {
+   "id": "ggtkzkoI3eM",
+   "title": "Why Parents Fear Vaccines | Tara Haelle | TEDxOslo",
+   "channel": "TEDx Talks",
+   "views": "207,714 views",
+   "age": "10 yr ago",
+   "length": "12:50",
+   "tier": 1,
+   "viewCount": 207714,
+   "foundBy": "vaccines ted",
+   "onTopic": true
+  },
+  {
+   "id": "_d8PNlXHJ48",
+   "title": "How vaccines train the immune system in ways no one expected | Christine Stabell Benn | TEDxAarhus",
+   "channel": "TEDx Talks",
+   "views": "192,442 views",
+   "age": "7 yr ago",
+   "length": "17:54",
+   "tier": 1,
+   "viewCount": 192442,
+   "foundBy": "vaccines ted",
+   "onTopic": true
+  },
+  {
+   "id": "MTW3U-O1nZo",
+   "title": "How Vaccines Are Developed – and Why They’re Safe | Body Stuff with Dr. Jen Gunter | TED",
+   "channel": "TED",
+   "views": "142,497 views",
+   "age": "3 yr ago",
+   "length": "6:42",
+   "tier": 1,
+   "viewCount": 142497,
+   "foundBy": "ted-ed vaccines",
+   "onTopic": true
+  },
+  {
+   "id": "zBkVCpbNnkU",
+   "title": "The Side Effects of Vaccines - How High is the Risk?",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "17,866,374 views",
+   "age": "7 yr ago",
+   "length": "10:56",
+   "tier": 2,
+   "viewCount": 17866374,
+   "foundBy": "vaccines",
+   "onTopic": true
+  },
+  {
+   "id": "Ke6tT3_QTuM",
+   "title": "History of Vaccines - Killing Smallpox - Medical History - Extra History",
+   "channel": "Extra History",
+   "views": "856,761 views",
+   "age": "6 yr ago",
+   "length": "10:18",
+   "tier": 2,
+   "viewCount": 856761,
+   "foundBy": "edward jenner smallpox",
+   "onTopic": true
+  },
+  {
+   "id": "zELJMIQawys",
+   "title": "Why we need to fight misinformation about vaccines | Ethan Lindenberger",
+   "channel": "TED",
+   "views": "98,279 views",
+   "age": "7 yr ago",
+   "length": "7:22",
+   "tier": 1,
+   "viewCount": 98279,
+   "foundBy": "vaccines ted",
+   "onTopic": true
+  },
+  {
+   "id": "Rz5RxEFo2CM",
+   "title": "GCSE Biology - Vaccinations | How Vaccines Work (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "87,610 views",
+   "age": "1 yr ago",
+   "length": "3:43",
+   "tier": 2,
+   "viewCount": 87610,
+   "foundBy": "vaccines",
+   "onTopic": true
+  },
+  {
+   "id": "a7whovUoYu4",
+   "title": "Why Vaccines are Made Too Late... If They’re Made At All | Seth Berkley | TED Talks",
+   "channel": "TED",
+   "views": "57,748 views",
+   "age": "11 yr ago",
+   "length": "7:18",
+   "tier": 1,
+   "viewCount": 57748,
+   "foundBy": "vaccines ted",
+   "onTopic": true
+  },
+  {
+   "id": "VMWNq9cCXU4",
+   "title": "Rethinking Influenza Vaccines: Nick Kelley at TEDxUMN",
+   "channel": "TEDx Talks",
+   "views": "12,714 views",
+   "age": "14 yr ago",
+   "length": "14:33",
+   "tier": 1,
+   "viewCount": 12714,
+   "foundBy": "vaccines ted",
+   "onTopic": true
+  },
+  {
+   "id": "M95MB6nmnaQ",
+   "title": "Why we can’t agree about vaccines | Bernice Hausman | TEDxPSU",
+   "channel": "TEDx Talks",
+   "views": "8,880 views",
+   "age": "2 yr ago",
+   "length": "16:20",
+   "tier": 1,
+   "viewCount": 8880,
+   "foundBy": "vaccines ted",
+   "onTopic": true
+  },
+  {
+   "id": "bevG_CFoRyc",
+   "title": "Taking a Stand in History, Edward Jenner | Hannah Howery | TEDxPascoCountySchools",
+   "channel": "TEDx Talks",
+   "views": "1,749 views",
+   "age": "8 yr ago",
+   "length": "3:56",
+   "tier": 1,
+   "viewCount": 1749,
+   "foundBy": "ted-ed edward jenner smallpox",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}
