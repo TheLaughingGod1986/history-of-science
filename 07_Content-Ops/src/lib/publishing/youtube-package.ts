@@ -295,6 +295,11 @@ export function buildStudioFinishChecklist(input: {
   return { videoId, studioEditUrl, items, summary };
 }
 
+/** CLI flags that weren't given arrive as `undefined`; they must not wipe manifest values. */
+export function definedOnly<T extends object>(obj: T): Partial<T> {
+  return Object.fromEntries(Object.entries(obj).filter(([, v]) => v !== undefined)) as Partial<T>;
+}
+
 export function loadYouTubePackage(input: {
   packageDir: string;
   videoPath?: string;
@@ -327,7 +332,7 @@ export function loadYouTubePackage(input: {
     manifest = JSON.parse(readText(manifestPath)) as YouTubePackageManifest;
     sources.manifest = manifestPath;
   }
-  const merged: YouTubePackageManifest = { ...manifest, ...input.overrides };
+  const merged: YouTubePackageManifest = { ...manifest, ...definedOnly(input.overrides ?? {}) };
 
   const format = merged.format || "longform";
   const titleVariant = merged.titleVariant || "A";
