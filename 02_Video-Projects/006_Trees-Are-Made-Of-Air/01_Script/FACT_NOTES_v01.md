@@ -1,0 +1,67 @@
+# 006 fact notes (v01, for `trees_script_master_v01.md`)
+
+Every number and claim in the script, with the source. Primary texts: J. B. van Helmont, *Ortus Medicinae* (Amsterdam, 1648, ed. F. M. van Helmont), willow passage in the treatise *Complexionum atque mistionum elementalium figmentum*, English in E. J. Russell, *Soil Conditions and Plant Growth*, and in "Jan Baptista van Helmont", *Plant Physiology* 4 (1929) 542; J. Priestley, "Observations on Different Kinds of Air", *Phil. Trans.* 62 (1772); J. Ingenhousz, *Experiments upon Vegetables* (London, 1779).
+
+| Script line | Fact | Source / note |
+|---|---|---|
+| "A fully grown tree is built almost entirely out of thin air." | Dry wood is about 50% carbon, about 42–44% oxygen, about 6% hydrogen, under 1% minerals (ash). The carbon and the oxygen fixed into sugar come from CO₂; the hydrogen from water. So most of the dry mass comes from the air; a living tree also holds a lot of water. "Almost entirely" refers to the solid wood, as Part 05 spells out. | Any wood-chemistry text (e.g. US Forest Products Laboratory, *Wood Handbook*, ch. 3); Veritasium *Where Do Trees Get Their Mass?* (neighbour). |
+| "For two thousand years, people believed plants ate the soil." | From Aristotle (4th c. BC) to the 17th century, plant nutrition was explained as food drawn from the earth by the roots. | Aristotle, *De Anima* II.4 (roots likened to the mouth/head); *Parts of Animals* II.3 (plants take food from the earth by their roots). Russell (above), historical introduction. |
+| "Aristotle taught that roots take a plant's food from the earth, like a mouth." | As above. | Aristotle, *De Anima* II.4, 416a; *Parts of Animals* II.3, 650a. |
+| "Near Brussels, in the first half of the sixteen-hundreds, … Jan Baptist van Helmont" | Van Helmont (1580–1644), physician and chemist from Brussels, lived at Vilvoorde near Brussels from 1609. The willow experiment is undated; some accounts say it began around 1620. Script says only "first half of the 1600s" (certainly before his death in 1644). | *Plant Physiology* 4 (1929) 542; *Dictionary of Scientific Biography*, "Helmont"; Wikipedia, "Jan Baptist van Helmont". |
+| "a big clay pot … two hundred pounds of soil, dried in a furnace first" | "I took an earthen vessel in which I put 200 pounds of soil dried in an oven." | *Ortus Medicinae* (Russell translation, as quoted in *Plant Physiology* 4, 1929). |
+| "a young willow that weighed five pounds" | "a shoot of willow weighing five pounds". | Same. |
+| "a metal lid full of tiny holes, so rain could get in, but dust could not" | "covered with a sheet of iron coated with tin but perforated with many holes", "lest any dust from outside should get into the soil". | Same. |
+| "for five years, he gave that tree nothing but pure water" | "never received anything but rain water or distilled water". | Same. |
+| "A hundred and sixty-nine pounds" | "the tree … weighed 169 pounds and about three ounces". | Same. |
+| "about the weight of a grown man" | 169 lb ≈ 77 kg (his pounds may differ a little from the modern pound; the comparison stays fair). | Arithmetic. |
+| "didn't even count the leaves that had fallen in four autumns" | "I did not take the weight of the leaves that fell in the four autumns." | Same. |
+| "Two hundred pounds, less about two ounces." | "…got the same 200 pounds that I started with, less about two ounces." | Same. |
+| "A hundred and sixty-four pounds of new tree" | "Therefore the 164 pounds of wood, bark, and root arose from the water alone." | Same. |
+| "the wood, the bark and the roots had come from water alone" | As above. | Same. |
+| "his answer was mostly wrong" / "Van Helmont wasn't completely wrong. Water does go into a tree." | Water supplies the hydrogen of the sugars (and the released oxygen), and a living tree is heavy with water; the carbon, about half the dry mass, comes from CO₂, which van Helmont could not have known. | Modern plant physiology (e.g. Taiz & Zeiger, *Plant Physiology*). |
+| "burned sixty-two pounds of charcoal and found just one pound of ash" | "Suppose thou, that of 62 pounds of Oaken coal, one pound of ashes is composed: Therefore the 61 remaining pounds, are the wild spirit…" | *Ortus Medicinae*, "Complexionum…", 1662 English translation (*Oriatrike*), quoted at web.lemoyne.edu/giunta/helmont.html. |
+| "a wild, invisible spirit. He gave it a new name: gas." | "I call this Spirit, unknown hitherto, by the new name of Gas." He coined the word, probably from Greek *chaos*. His *gas sylvestre* ("wild gas"). | Same. |
+| "We now know that gas was mostly carbon dioxide." | Burning charcoal gives mainly CO₂ (with some CO). He also noted the same gas from fermenting wine. | Partington, *A History of Chemistry* vol. 2; Creighton history of gas chemistry page (mattson.creighton.edu). |
+| "He never put the two together." | No passage in his works links gas sylvestre to plant growth; he held the tree came from water. | *Plant Physiology* 4 (1929) 542; Russell. |
+| "Nearly a century later, … in seventeen twenty-seven, a country parson called Stephen Hales" | Stephen Hales (1677–1761), perpetual curate of Teddington, Middlesex (then just outside London). *Vegetable Staticks*, 1727. | S. Hales, *Vegetable Staticks* (1727); ODNB, "Hales, Stephen". |
+| "careful measurements of how much water plants drink up and give off through their leaves" | His transpiration and root-pressure measurements (sunflower, vine). | *Vegetable Staticks*, ch. 1–3. |
+| "Plants, he wrote, probably take some of their food from the air." | "…plants very probably draw through their leaves some part of their nourishment from the air." | *Vegetable Staticks*, ch. 6 (1727). |
+| "Leeds, seventeen seventy-one. Joseph Priestley, a minister who lived next door to a brewery" | Priestley was minister of Mill Hill Chapel, Leeds, 1767–1773, and lived in Meadow Lane beside Jakes and Nell's brewery, whose fixed air he used. | R. E. Schofield, *The Enlightenment of Joseph Priestley* (1997). |
+| Candle in a sealed jar goes out; a second candle won't burn; "Priestley called that air injured" | Priestley's language: air "injured" or made "noxious" by burning and breathing. | Priestley (1772). |
+| "on the seventeenth of August, he slipped a sprig of mint into a jar of that injured air … Ten days later, … It burned perfectly well." | "On the 17th of August, 1771, I put a sprig of mint into a quantity of air, in which a wax candle had burned out, and found that, on the 27th of the same month, another candle burned perfectly well in it." | Priestley (1772), section "Of Air in which a Candle has burned out". |
+| "air that mice had made stale with their breathing. In the jar where mint had grown, a mouse lived perfectly well." | Priestley split air made noxious by mice; "eight or nine days after, I found that a mouse lived perfectly well in that part of the air in which the sprig of mint had grown." On screen the mouse is only ever alive and well. | Priestley (1772). |
+| "the damage animals do to the air is repaired by 'the vegetable creation.'" | "…the injury which is continually done to the atmosphere by the respiration of such a number of animals … is, in part at least, repaired by the vegetable creation." | Priestley (1772). |
+| "Sometimes his plants repaired the air. Sometimes they didn't." | Priestley later reported he could not always repeat the result. | Priestley, *Experiments and Observations on Different Kinds of Air* vol. 1 (1774/1775); Ingenhousz (1779) preface. |
+| "Summer, seventeen seventy-nine. A Dutch doctor called Jan Ingenhousz took a house in the countryside just outside London" | Ingenhousz (1730–1799), Dutch-born physician (court physician in Vienna), "retired to a small villa" near London in summer 1779. Often placed at Southall; the book doesn't name it, so the label says only "a villa near London". | Ingenhousz (1779), preface; Magiels, *From Sunlight to Insight* (2010). |
+| "in about three months, he ran more than five hundred experiments" | "…the result of above 500 experiments, all which were made in less than three months." | Ingenhousz (1779), preface. |
+| Leaves in water, silver bubbles in the sun | His standard method: leaves submerged in jars of water, set in sunlight; the gas collected. | Ingenhousz (1779). |
+| "A candle flame burned brighter in it than in ordinary air." | He tested the gas by its fitness for flame and with the nitrous-air test; leaves in sun gave "dephlogisticated air", in which a candle burns more brightly. | Ingenhousz (1779); Priestley, *Phil. Trans.* 65 (1775) on dephlogisticated air. |
+| "the gas Priestley had discovered a few years earlier, which we now call oxygen" | Priestley isolated "dephlogisticated air" in August 1774 (Scheele independently, c. 1771–72, published 1777); Lavoisier named it oxygen. | Partington, *A History of Chemistry* vol. 3. |
+| Shade stops the bubbles; sun starts them | "No dephlogisticated air is obtained in a warm room, if the sun does not shine upon the jar containing the leaves." | Ingenhousz (1779). |
+| "Only the green parts made bubbles. Roots and flowers didn't." | Only green parts improve the air in light; flowers, roots and ripe fruit "injure" it in light and dark. | Ingenhousz (1779). |
+| "at night, the plant did the opposite … just like an animal" | Title: "…of Injuring it in the Shade and at Night." (Respiration, in modern terms.) | Ingenhousz (1779). |
+| "photosynthesis, from the Greek for putting together with light" | *phōs/phōtos* (light) + *synthesis* (putting together). The word dates from the 1890s (C. R. Barnes, 1893). | OED, "photosynthesis". |
+| "In seventeen eighty-two, in Geneva, a pastor called Jean Senebier showed that leaves only made their bubbles when the water held fixed air" | Jean Senebier (1742–1809), Genevan pastor and librarian. *Mémoires physico-chymiques* (1782): leaves give off the improved air only in water containing fixed air; boiled water gives none. | J. Senebier, *Mémoires physico-chymiques* (Geneva, 1782); Nash, "Plants and the atmosphere" in *Harvard Case Histories in Experimental Science* (1957). |
+| "fixed air, the gas we now call carbon dioxide" | Joseph Black's "fixed air" (1756) is CO₂. | Partington. |
+| "in eighteen-oh-four, another Genevan, Nicolas-Théodore de Saussure, … weighed the plant, the water, and the air around it" | N.-T. de Saussure (1767–1845), *Recherches chimiques sur la végétation* (Paris, 1804): quantitative gas exchange; plants gain carbon from CO₂ and also fix water into their dry matter. | de Saussure (1804); Nash (1957). |
+| "a leaf takes in carbon dioxide through tiny pores … joins them together into sugar, and lets the spare oxygen go" | 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂; CO₂ enters through stomata. Said as "we now know". The released O₂ comes from water (Ruben & Kamen, 1941), which the script doesn't need to say. | Taiz & Zeiger; Ruben et al., *JACS* 63 (1941) 877. |
+| "About half of dry wood is carbon, and every bit of that carbon came out of the air." | Dry wood ≈ 50% carbon; trees get their carbon from atmospheric CO₂ (roots take up negligible carbon). | *Wood Handbook* (USDA FPL); IPCC default carbon fraction of dry wood 0.47–0.50. |
+| "Most of the rest is oxygen and hydrogen, from carbon dioxide and water." | ≈ 42–44% O, ≈ 6% H. | Same. |
+| "The soil gave only a pinch of minerals" | Wood ash is about 0.2–1% of dry weight. The script doesn't equate it to the two ounces (his scales could not resolve it). | *Wood Handbook*; Misra et al., *Biomass and Bioenergy* 4 (1993). |
+| "almost every bite of food you have ever eaten began as air and sunlight … even meat" | Nearly all food chains start with photosynthesis ("almost": chemosynthetic food webs exist). | Any ecology text. |
+| "The oxygen in every breath you take was given out by plants on land and tiny algae in the sea." | Atmospheric O₂ comes from oxygenic photosynthesis, roughly half on land and half by marine phytoplankton (algae and cyanobacteria). | NOAA Ocean Service, "How much oxygen comes from the ocean?". |
+| "only about four molecules in every ten thousand in the air are carbon dioxide" | ≈ 420–425 ppm in 2025–26 (Mauna Loa). | NOAA Global Monitoring Laboratory. |
+| "a willow builds a hundred and sixty-nine pounds of tree" | Van Helmont's figure (with water); used as a wonder image, not a carbon budget. | *Ortus Medicinae*. |
+| "Every one of those carbon atoms is billions of years old." | Carbon is made in stars; Earth's carbon predates the Solar System (≈ 4.6 billion years). | Burbidge, Burbidge, Fowler & Hoyle, *Rev. Mod. Phys.* 29 (1957). |
+| "a young student fired tiny particles at gold beaten thinner than paper" | Ernest Marsden (aged 20) with Hans Geiger, Manchester, 1909, under Rutherford: alpha particles at gold foil. Same wording as the 004 script. | Geiger & Marsden, *Proc. R. Soc. A* 82 (1909) 495; `004_…/01_Script/FACT_NOTES_v02.md`. |
+
+## Sources for the description
+
+- J. B. van Helmont, *Ortus Medicinae* (1648).
+- S. Hales, *Vegetable Staticks* (1727).
+- J. Priestley, "Observations on Different Kinds of Air", *Philosophical Transactions* 62 (1772).
+- J. Ingenhousz, *Experiments upon Vegetables* (1779).
+- J. Senebier, *Mémoires physico-chymiques* (1782).
+- N.-T. de Saussure, *Recherches chimiques sur la végétation* (1804).
+- "Jan Baptista van Helmont", *Plant Physiology* 4 (1929) 542.
+- G. Magiels, *From Sunlight to Insight: Jan IngenHousz, the Discovery of Photosynthesis and Science in the Light of Ecology* (2010).

@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 4,797,252 views | [What if there were 1 trillion more trees? - Jean-François Bastin](https://youtu.be/3hxE7Af98AI) | ted-ed photosynthesis |
+| 2 | TED-Ed ★ | 2,218,166 views | [The simple story of photosynthesis and food - Amanda Ooten](https://youtu.be/eo5XndJaz-Y) | ted-ed photosynthesis |
+| 3 | TED-Ed ★ | 1,407,040 views | [How tall can a tree grow? - Valentin Hammoudi](https://youtu.be/vvtPJKWUb2g) | ted-ed van helmont willow tree |
+| 4 | TED-Ed ★ | 856,871 views | [The secret language of trees - Camille Defrenne and Suzanne Simard](https://youtu.be/V4m9SefyRjg) | ted-ed van helmont willow tree |
+| 5 | TED-Ed ★ | 828,659 views | [What's hidden among the tallest trees on Earth? - Wendell Oshiro](https://youtu.be/KMudRLPZidg) | ted-ed van helmont willow tree |
+| 6 | TED-Ed ★ | 619,293 views | [Does planting trees actually cool the planet? - Carolyn Beans](https://youtu.be/bbxmH_Kj7fk) | ted-ed van helmont willow tree |
+| 7 | TED-Ed ★ | 526,380 views | [No one really knows what a tree is - Max G. Levy](https://youtu.be/j1EXBeBA89w) | ted-ed van helmont willow tree |
+| 8 | CrashCourse | 9,237,525 views | [Photosynthesis: Crash Course Biology #8](https://youtu.be/sQK3Yr4Sc_k) | photosynthesis |
+| 9 | Kurzgesagt – In a Nutshell | 6,712,945 views | [Trees Are So Weird](https://youtu.be/ZSch_NgZpQs) | ted-ed van helmont willow tree |
+| 10 | Amoeba Sisters | 6,179,114 views | [Photosynthesis (UPDATED)](https://youtu.be/CMiPYHNNg28) | photosynthesis |
+| 11 | Veritasium | 2,537,739 views | [Where Do Trees Get Their Mass?](https://youtu.be/2KZb2_vcNTg) | van helmont willow tree |
+| 12 | Khan Academy | 2,175,782 views | [Photosynthesis](https://youtu.be/-rsYk4eCKnA) | khan academy photosynthesis |
+
+Words the top neighbours share: a tree
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 11 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/trees/neighbours.json

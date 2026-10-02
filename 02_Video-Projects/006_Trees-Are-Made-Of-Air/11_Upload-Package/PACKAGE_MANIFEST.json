@@ -1,0 +1,68 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "The Willow Tree That Was Made of Air",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/trees_long_description_v01.txt",
+  "tagsFile": "Tags/trees_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "The Willow Tree That Was Made of Air",
+    "Where Does a Tree's Weight Come From?"
+  ],
+  "schedule": "2026-11-05T18:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "Draft at script v01 (2 Oct 2026). Title, T&C title, description v01 (chapter times are word-count estimates, re-time from the VO), tags v01 and schedule are PROPOSALS for Claude's review and Ben's final OK; nothing is uploaded or scheduled. Proposed air Thu 5 Nov 2026 18:00 UK = 18:00 UTC, normal publish.",
+  "neighbours": {
+    "phrases": [
+      "tree",
+      "photosynthesis"
+    ],
+    "checked": "2026-10-02",
+    "videos": [
+      {
+        "id": "3hxE7Af98AI",
+        "channel": "TED-Ed",
+        "title": "What if there were 1 trillion more trees? - Jean-François Bastin",
+        "views": 4797252
+      },
+      {
+        "id": "zarll9bx6FI",
+        "channel": "TED-Ed",
+        "title": "What happens if you cut down all of a city's trees? - Stefan Al",
+        "views": 3118737
+      },
+      {
+        "id": "eo5XndJaz-Y",
+        "channel": "TED-Ed",
+        "title": "The simple story of photosynthesis and food - Amanda Ooten",
+        "views": 2218164
+      },
+      {
+        "id": "vvtPJKWUb2g",
+        "channel": "TED-Ed",
+        "title": "How tall can a tree grow? - Valentin Hammoudi",
+        "views": 1407041
+      },
+      {
+        "id": "V4m9SefyRjg",
+        "channel": "TED-Ed",
+        "title": "The secret language of trees - Camille Defrenne and Suzanne Simard",
+        "views": 856874
+      }
+    ]
+  }
+}
