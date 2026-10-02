@@ -1,0 +1,217 @@
+{
+  "film": "005_How-Harvey-Proved-Blood-Circulates",
+  "part": "04",
+  "board": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/07_Edit-Project/parts/part-04_plates_v02.json",
+  "path": "vertex",
+  "vertex_project": "gen-lang-client-0538779324",
+  "vertex_location": "us-central1",
+  "account": "benoats@googlemail.com",
+  "authority": "Ben, 1 Oct 2026 (chat with Claude): Vertex for 005; Part 01 OK'd by Ben 1 Oct; Parts 02–05 desk PR #180 comment 5942662028",
+  "models": {
+    "Quality": "veo-3.1-generate-001",
+    "Fast": "veo-3.1-fast-generate-001"
+  },
+  "image_model": "gemini-2.5-flash-image",
+  "pricing_usd": {
+    "veo_per_s_video_only_1080p": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "still": 0.039,
+    "source": "Vertex AI generative pricing page, video-only rows, Sept 2026"
+  },
+  "credit_check": null,
+  "takes": [],
+  "stills": [
+    {
+      "plate": "02_linen_tie",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/02_linen_tie_v01.jpg",
+      "sha256": "e40cabd9b578ddecda7d95a7858fb8a106a8896762bd4166d21655492b5a53ef",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": "Harvey seen from chest down, only his hands and black sleeves with white cuffs, tying a plain cream linen band round the bare upper arm of a seated man whose face is out of frame. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:36:57+00:00"
+    },
+    {
+      "plate": "03_hand_pale",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/03_hand_pale_v01.jpg",
+      "sha256": "c0ad6fe7110395f388f892fbfaf08717033ce337c5edb4fc46218174d84b3263",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/02_linen_tie_v01.jpg",
+      "extra": "A man's bare forearm and hand resting palm-up on a dark oak table in soft window daylight, seen close; no face, no person beyond the arm; clean smooth cartoon skin, no wounds, no blood on skin, no cuts. The cream linen band is tied tight round the upper arm at the top of frame; the hand below is slightly pale. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:37:11+00:00"
+    },
+    {
+      "plate": "06_veins_swell",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/06_veins_swell_v01.jpg",
+      "sha256": "e7bbcb17f2272e86c608312ef8cf2d8f75d7424fa32371f39030e3957358ffd4",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/03_hand_pale_v01.jpg",
+      "extra": "A man's bare forearm and hand resting palm-up on a dark oak table in soft window daylight, seen close; no face, no person beyond the arm; clean smooth cartoon skin, no wounds, no blood on skin, no cuts. The same arm and band; the veins on the forearm below the band stand out as soft blue cords, the hand pink. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:38:39+00:00"
+    },
+    {
+      "plate": "09_push_stops",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/09_push_stops_v01.jpg",
+      "sha256": "0dcbfc6c8fbaa62de28707c773d5215922d4a9daf27686d7f8f07fe16e49b08b",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/03_hand_pale_v01.jpg",
+      "extra": "A man's bare forearm and hand resting palm-up on a dark oak table in soft window daylight, seen close; no face, no person beyond the arm; clean smooth cartoon skin, no wounds, no blood on skin, no cuts. The same arm and band, closer on the forearm: a raised blue vein with small knots along it; one fingertip of another hand rests on the vein. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:38:59+00:00"
+    },
+    {
+      "plate": "10_slides_heart",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/10_slides_heart_v01.jpg",
+      "sha256": "023ca4f1228329a419c17c20ef877aeb8728070b9f93f8a54560da221327fd6d",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/03_hand_pale_v01.jpg",
+      "extra": "A man's bare forearm and hand resting palm-up on a dark oak table in soft window daylight, seen close; no face, no person beyond the arm; clean smooth cartoon skin, no wounds, no blood on skin, no cuts. The same raised blue vein with knots; one fingertip rests on the vein, ready to stroke towards the elbow. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:40:24+00:00"
+    },
+    {
+      "plate": "11_two_fingers",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/11_two_fingers_v01.jpg",
+      "sha256": "2753ac4c159ac0fbb60514f59dd01c65f4031ba2b3159a74400c2324f985e10a",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/03_hand_pale_v01.jpg",
+      "extra": "A man's bare forearm and hand resting palm-up on a dark oak table in soft window daylight, seen close; no face, no person beyond the arm; clean smooth cartoon skin, no wounds, no blood on skin, no cuts. The same raised blue vein; two fingertips of another hand press side by side on a short stretch of it. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:41:03+00:00"
+    },
+    {
+      "plate": "12_stays_fills",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/12_stays_fills_v01.jpg",
+      "sha256": "bcff7d7e6da50acccdf801497611e8d940054b58777740f8df6982703dd0376e",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/03_hand_pale_v01.jpg",
+      "extra": "A man's bare forearm and hand resting palm-up on a dark oak table in soft window daylight, seen close; no face, no person beyond the arm; clean smooth cartoon skin, no wounds, no blood on skin, no cuts. The same raised blue vein; two fingertips a short way apart press it, and the stretch between them is flat and empty. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:42:30+00:00"
+    },
+    {
+      "plate": "04_stopped_loosen",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/04_stopped_loosen_v01.jpg",
+      "sha256": "c30ddc5f31651e93c5b8fad6b30409b2a98d6e27ab329f62f47c1c109550c443",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/04_squeeze_pulse_v03.jpg",
+      "extra": "Clean glowing cutaway illustration of a forearm on the oak table, as in the earlier cutaways: translucent skin, warm red arteries deep inside, cool blue veins near the surface. No gore, no wounds, no open flesh. A cream linen band tied tight round the upper arm; the red stream stops at the band. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:43:12+00:00"
+    },
+    {
+      "plate": "05_arteries_veins_shut",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/05_arteries_veins_shut_v01.jpg",
+      "sha256": "60670036fb3b73d6b4fccbe67979502055f98e476c16c1e50c76992ad0261038",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/04_squeeze_pulse_v03.jpg",
+      "extra": "Clean glowing cutaway illustration of a forearm on the oak table, as in the earlier cutaways: translucent skin, warm red arteries deep inside, cool blue veins near the surface. No gore, no wounds, no open flesh. A loosened cream linen band round the upper arm; deep red arteries pass under it, the blue surface veins pinched under it. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:43:58+00:00"
+    },
+    {
+      "plate": "07_in_out_doors",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/07_in_out_doors_v01.jpg",
+      "sha256": "ef40e99a6b289ccef5a14a5c634dede5211cbc4a8acb855e478b9b26775b3e5f",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/04_squeeze_pulse_v03.jpg",
+      "extra": "Clean glowing cutaway illustration of a forearm on the oak table, as in the earlier cutaways: translucent skin, warm red arteries deep inside, cool blue veins near the surface. No gore, no wounds, no open flesh. Red flows deep, blue flows near the skin in a simple loop; inside one blue vein a pair of small cup-shaped valve flaps. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:45:25+00:00"
+    },
+    {
+      "plate": "08_knots_valve",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/08_knots_valve_v01.jpg",
+      "sha256": "24d88a4c8edffdb6761375e326356af4a992057ba16bdfb809f30a371e49a85e",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/03_hand_pale_v01.jpg",
+      "extra": "A man's bare forearm and hand resting palm-up on a dark oak table in soft window daylight, seen close; no face, no person beyond the arm; clean smooth cartoon skin, no wounds, no blood on skin, no cuts. Close on the swollen blue vein on the forearm with small knots standing out along it. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:46:05+00:00"
+    },
+    {
+      "plate": "13_one_way",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/13_one_way_v01.jpg",
+      "sha256": "19bd4b8b2edd0f98da0dbca7062ed09a0bed8934d601bfd37ec61f0161a9b76b",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/04_squeeze_pulse_v03.jpg",
+      "extra": "Clean glowing cutaway illustration of a forearm on the oak table, as in the earlier cutaways: translucent skin, warm red arteries deep inside, cool blue veins near the surface. No gore, no wounds, no open flesh. One long blue vein runs up the forearm with many pairs of small cup-shaped valve flaps, all open towards the elbow. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:50:06+00:00"
+    },
+    {
+      "plate": "14_steering_home",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/14_steering_home_v01.jpg",
+      "sha256": "0a06bf1f708278a8f067f3f597b5df8addd1511f79db7dcfe7ac440fc43c4fc2",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/refs/v02_vertex_stills/14_pool_feet_v04.jpg",
+      "extra": "Two ink drawings side by side on an oak desk: on the left an old brown ink drawing of a leg vein with cup valves, on the right a fresh drawing of a vein with cup valves and a thin red ink line running up through them. Plain line drawings. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:50:20+00:00"
+    },
+    {
+      "plate": "15_your_hand_glow",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/15_your_hand_glow_v01.jpg",
+      "sha256": "da35c9b4cdafd63624c2077e3eaf1880b9f6f3e0455dc3c440c8fc1341c55f2f",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": "Close on the back of a relaxed hand and inside of the wrist resting on dark oak in soft daylight; faint blue veins under clean smooth cartoon skin; no face. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:51:42+00:00"
+    },
+    {
+      "plate": "16_press_book",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/16_press_book_v01.jpg",
+      "sha256": "ff4ff59ddc6bea2a1776af4869b21a369ba5550fe17fc9863fd5bf54fcfbae2b",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": "A wooden hand printing press in a timbered Frankfurt workshop by day; a small printed sheet lies on the press bed, its type shown only as soft grey blocks, nothing readable. Plain blank title page. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:52:22+00:00"
+    },
+    {
+      "plate": "18_aubrey",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/18_aubrey_v01.jpg",
+      "sha256": "bad174baf41336dcf626f0facbf2432eae79936885a2085bc631b88feddc6af5",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": "John Aubrey, a man with a long brown wig and brown coat, writes in a notebook at a window desk; through the window across the street a plain dark door. The notebook page is seen edge-on. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:53:09+00:00"
+    },
+    {
+      "plate": "01_college_demo",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/01_college_demo_v01.jpg",
+      "sha256": "497bcbb5502d3e2f1d27820b291b2946bfd9e111460d99f3baf513c640561cef",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": "Harvey at the front of the same panelled lecture room by day, rows of gowned physicians on benches seen from behind; a plain blank linen strip in his hands. No letters, words, numbers or writing anywhere in the picture.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:54:37+00:00"
+    }
+  ],
+  "plates": {},
+  "cost_usd_total": 0.663,
+  "updated": "2026-10-02T00:54:37+00:00"
+}

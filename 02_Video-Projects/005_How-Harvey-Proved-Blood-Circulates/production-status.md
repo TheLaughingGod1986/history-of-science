@@ -466,14 +466,37 @@ part 02: takes=23 stills=30 keep=15/15 cost_usd=$25.17 (lost $0.00)
 film 005 Vertex spend $51.65 · projected Free Trial £168.21 (floor £60, £/$ 0.8)
 ```
 
+### Part 03: 14/14 KEEP, rough v01
+
+- **Cut:** `09_Final-Export/hos_005_part03_rough_v01.mp4`, sha256 `86867f9305111b51d5d861ee2160cd96ff1e72a09e7542a7436ceef21b7e511e`, 98.000 s, freezedetect 0, bed −19.50 dB. Phone copy in iCloud.
+- **Takes:** 25 takes and 25 start frames, $32.98, nothing lost. Log: `07_Edit-Project/PART03_MINT_LOG_v01.json`.
+- **Number pages:** checked by hand. 06 writes "2 oz" then "1/8". 07 holds "2 oz / 1/8 / 1000" already written.
+- **Framing changes after two FAILs:**
+  - 03 opens on the heart alone: the stove melted with molten drips, or the heart didn't move.
+  - 11 uses the standing loop figure.
+  - 13 uses a one-minute sand-glass instead of a clock that kept growing hands.
+- **Report and my 11-hard-fail UAT:** `07_Edit-Project/_desk/part03_report_2026-10-02.md`.
+
+```
+PASS  hos_005_part03_rough_v01.mp4  1:38.00  mean -21.4 dB  peak -2.2 dB  158 wpm
+```
+
+### Credit after Part 03 (= before Part 04)
+
+```
+CREDIT free_trial_remaining_gbp=190.22 status=Available floor=60
+part 03: takes=25 stills=25 keep=14/14 cost_usd=$32.98 (lost $0.00)
+film 005 Vertex spend $84.35 · projected Free Trial £142.05 (floor £60, £/$ 0.8)
+```
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
 | 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F) | `09_Final-Export/hos_005_part01_rough_v01.mp4` (`7661b6cf…`, 59.53 s) | 9/9 KEEP on Vertex ($25.58); **passed by Ben, 1 Oct 2026** |
 | 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | `09_Final-Export/hos_005_part02_rough_v02.mp4` (`d813f553…`, 98.23 s) | 15/15 KEEP on Vertex ($25.17); my UAT done; Claude reviewing stills |
-| 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | — | start frames checked; minting on Vertex |
-| 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | — | board v02 |
+| 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | `09_Final-Export/hos_005_part03_rough_v01.mp4` (`86867f93…`, 98.00 s) | 14/14 KEEP on Vertex ($32.98); my UAT done; Claude reviewing stills |
+| 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | — | start frames made; minting on Vertex |
 | 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | — | board v02 |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.

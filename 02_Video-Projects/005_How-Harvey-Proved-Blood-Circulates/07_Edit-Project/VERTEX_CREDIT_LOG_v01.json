@@ -16,6 +16,14 @@
       "status": "Available",
       "screenshot": "vertex_credits_after_part02_2026-10-02.png",
       "floor_gbp": 60.0
+    },
+    {
+      "label": "after_part03_2026-10-02",
+      "at": "2026-10-02T00:54:03+00:00",
+      "free_trial_remaining_gbp": 190.22,
+      "status": "Available",
+      "screenshot": "vertex_credits_after_part03_2026-10-02.png",
+      "floor_gbp": 60.0
     }
   ]
 }

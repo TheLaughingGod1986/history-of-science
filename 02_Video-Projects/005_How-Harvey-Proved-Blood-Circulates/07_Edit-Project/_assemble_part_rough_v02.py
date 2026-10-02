@@ -50,7 +50,16 @@ LABELS: dict[str, dict[str, tuple[float, str]]] = {
         "12_fabricius": (2.0, "Fabricius"),
         "13_little_doors": (0.6, "Little doors"),
     },
-    "03": {},
+    "03": {
+        "01_cold_lecture_room": (0.6, "London, 1616"),
+        "02_slow_hearts": (0.8, "Slow hearts"),
+        "03_stove_to_muscle": (4.2, "A muscle"),
+        "04_squeeze_pulse": (0.8, "Squeeze = pulse"),
+        "07_thousand_beats": (0.6, "1,000 beats"),
+        "09_jug_tower": (0.6, "More than your whole body"),
+        "12_glowing_loop": (5.4, "The same blood → it circulates"),
+        "13_one_minute": (1.0, "One lap · one minute"),
+    },
     "04": {},
     "05": {},
 }
