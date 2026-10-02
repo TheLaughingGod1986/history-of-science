@@ -23,7 +23,14 @@
 
 - **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
 - **Shorts final OK pending Ben (Ben's one check-in, rule of 2 Oct 2026):** Shorts v02 (`10_Shorts/SHORTS_INDEX_v02.json`), covers v02 (`10_Shorts/covers_v02/COVERS_INDEX_v02.json`) and the titles *Your Heart Pumps More Blood Than You Have* / *One Tight Band Proved Your Blood Goes Round* / *The Blood Vessels Finer Than a Hair* (approved by Claude). Claude takes the package to Ben, with the 1 Nov and 3 Nov back-catalogue Shorts. No Short goes to Studio until he OKs it; then A 30 Oct, B 8 Nov, C 15 Nov, 11:30Z, Related → `0IfXGSX7Ypw`.
-- **29 Oct 18:05 jobs (after the long is public):** Test & Compare must read Running (Studio: "Your video is ineligible because: your video is not public"); if it still reads Ineligible, re-arm Thumbnail only with A + B v02. Pinned comment (open question) and the two cards are not set yet: waiting on Claude for the question text and the card targets. Point the older longs' end screens at `0IfXGSX7Ypw`.
+- **29 Oct 18:05 jobs (after the long is public), decided by Claude on the desk (5949692500, 2 Oct 2026):**
+  1. **Test & Compare** must read Running (Studio said "Your video is ineligible because: your video is not public"). If it still reads Ineligible, re-arm Thumbnail only with A + B v02.
+  2. **Pinned comment** (`update-pinned-comment.ts --create`, then pin in Studio): "For 1,400 years doctors taught that blood was made from food and used up. If you'd been in Harvey's lecture room in 1616, which would have convinced you: the sum, or the tied arm?"
+  3. **Two cards** (neither in the first minute):
+     - *How Did We Discover Germs?* (`_C92tIJCk8A`) at about 8:14;
+     - *How Did We Discover X-rays?* (`frP_YrNShsU`) 1 s after the 1661 chapter card fades. The card is in at 6:25.15 and holds 1.5 s, so this card goes at about 6:27.7; re-read the fade on the live file.
+  4. **End screens of 001–004** → `0IfXGSX7Ypw`.
+  5. `npm run lint:package -- --film 005` before, and `npm run channel:audit` after, with the outputs pasted here.
 - Resolved: Ben signed off the package and the Shorts dates, 2 Oct 2026 ("All ok"). Long uploaded as `0IfXGSX7Ypw`, scheduled 29 Oct 18:00 UK.
 - Resolved: Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean ("Shorts ok").
 - Resolved: full join v01 passed by Ben, 2 Oct 2026 ("005 OK"): listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim.
