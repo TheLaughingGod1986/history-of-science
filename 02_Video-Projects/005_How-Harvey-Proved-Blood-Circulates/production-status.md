@@ -14,15 +14,17 @@
 | VO | **Voice v01 (listen file sha `a19569f4…`, 8:15.33) OK'd by Ben, 1 Oct 2026** ("waive vidIQ, merge #186 and voice OK", in chat with Claude; relayed on desk PR #180). All `vo_check.py` PASS |
 | Picture | **Part 01 rough v01 passed by Ben, 1 Oct 2026** ("Part 1 OK", in chat with Claude; relayed on desk PR #180 comment 5942662028), as it is, including the ECG-style pulse and the quill: `09_Final-Export/hos_005_part01_rough_v01.mp4`, sha256 `7661b6cf1897c6dabe60e09592b297f9ed21b253cb7c2946cc12f58732a9d098`. **Ben passed full join v01 (sha `84476e06…`, 8:46.5), 2 Oct 2026; listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim** ("005 OK", relayed on desk PR #180 comment 5948300560). Master: `09_Final-Export/hos_005_master_v01.mp4` (byte copy of the join, sha256 `84476e06c13e2a010974bc0937a7044374f637065edcf819c5ab5157165192f7`) |
 | Runtime target | 7–9 min, 5 parts. Film VO timeline 8:21.33 with the four chapter cards (`07_Edit-Project/VO_RETIME_v01.json`), + 3–4 s end card ≈ 8:25 |
-| Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct. Not yet uploaded |
-| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). **Built v01, 2 Oct 2026** from KEEP plates only (no new mints): gate, `vo_check` and freezedetect PASS on all three; phone copies in iCloud `HOS UAT/005…/10_Shorts/`. **Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean** ("Shorts ok", relayed on desk PR #180 comment 5948897987). Proposed dates A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30Z: pending Ben, not re-gated, not scheduled |
+| Package | **Signed off by Ben, 2 Oct 2026** ("All ok", relayed on desk PR #180 comment 5948928013): title *The Tied Arm That Proved Your Blood Circulates*; description v02 with 7 tags; thumbnail v02 A (ONE TIGHT BAND, `356f9ea5…`) as main, A + B (IT GOES ROUND, `17672532…`) in Test & Compare |
+| YouTube | **`0IfXGSX7Ypw`** (https://youtu.be/0IfXGSX7Ypw), uploaded 2 Oct 2026 10:34 UK, private, scheduled. Captions `hos_005_master_v01.en.srt` serving; Test & Compare set (Ineligible until public); end screen 001 + Subscribe |
+| Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct |
+| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). **Built v01, 2 Oct 2026** from KEEP plates only (no new mints): gate, `vo_check` and freezedetect PASS on all three; phone copies in iCloud `HOS UAT/005…/10_Shorts/`. **Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean** ("Shorts ok", relayed on desk PR #180 comment 5948897987). **Dates signed off by Ben, 2 Oct 2026** ("All ok"): A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30 UK = 11:30 UTC; B and C re-gated on their dates (PASS). Not uploaded: waits for Ben's covers and titles sign-off. Sun 1 Nov and Tue 3 Nov air back-catalogue Shorts for other films |
 
 ## STOP
 
 - **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
-- **Shorts dates pending Ben:** A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30Z, proposed only. No re-gate and no scheduling until he confirms.
-- **Shorts covers and titles pending Ben:** covers v01 (`10_Shorts/covers_v01/COVERS_INDEX_v01.json`) with the titles *Your Heart Pumps More Blood Than You Have* / *One Tight Band Proved Your Blood Goes Round* / *The Blood Vessels Finer Than a Hair*, plus the frame-0 sheet. Nothing goes to Studio until he signs off.
-- **Package: Ben signs off the title, thumbnail and description v02** before anything is uploaded or scheduled. Thumbnail v02 A/B (`08_Thumbnail/THUMBS_INDEX_v02.json`) going to Ben via Claude, 2 Oct 2026.
+- **Shorts covers and titles pending Ben:** covers v01 (`10_Shorts/covers_v01/COVERS_INDEX_v01.json`) with the titles *Your Heart Pumps More Blood Than You Have* / *One Tight Band Proved Your Blood Goes Round* / *The Blood Vessels Finer Than a Hair*, plus the frame-0 sheet. No Short goes to Studio until he signs off; then A 30 Oct, B 8 Nov, C 15 Nov, 11:30Z, Related → `0IfXGSX7Ypw`.
+- **29 Oct 18:05 jobs (after the long is public):** Test & Compare must read Running (Studio: "Your video is ineligible because: your video is not public"); if it still reads Ineligible, re-arm Thumbnail only with A + B v02. Pinned comment (open question) and the two cards are not set yet: waiting on Claude for the question text and the card targets. Point the older longs' end screens at `0IfXGSX7Ypw`.
+- Resolved: Ben signed off the package and the Shorts dates, 2 Oct 2026 ("All ok"). Long uploaded as `0IfXGSX7Ypw`, scheduled 29 Oct 18:00 UK.
 - Resolved: Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean ("Shorts ok").
 - Resolved: full join v01 passed by Ben, 2 Oct 2026 ("005 OK"): listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim.
 - Resolved: Part 01 rough v01 passed by Ben, 1 Oct 2026 ("Part 1 OK").
@@ -677,6 +679,82 @@ PASS  hos_005_s03_never_saw_v01.mp4  dur=24.83s  audio=-21.7dB  motion=17.01  dh
 - **Gate library is stale:** it's missing carbolic spray `clV6E10NLPw` (20 Oct) and still lists private `CUu8k38iAMc` as scheduled. Checked by hand, carbolic spray vs A/B/C is 39/35/34 bits.
 
 **STOP:** Ben signs off covers and titles together. Nothing is in Studio.
+
+## 2 Oct 2026 — Long uploaded and scheduled (Grok, desk task from Claude, comment 5948928013)
+
+**Ben, 2 Oct, in chat with Claude: "All ok".** He signed off:
+- the title *The Tied Arm That Proved Your Blood Circulates*;
+- description v02 with the 7 tags;
+- thumbnail v02 A (ONE TIGHT BAND) as the main thumbnail, with A and B (IT GOES ROUND) in Test & Compare;
+- the Shorts dates: A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30 UK = 11:30 UTC.
+
+### Package changes before upload
+
+- `PACKAGE_MANIFEST.json`: thumbnail A v02, `thumbnailAbc` A + B v02, `titleAbc` reduced to the one approved title (the second title, *Why Doctors Thought Your Blood Was Used Up*, was never approved), `captionsFile`, `playlistId` `PLEbpfUzWzcXU` (*How Did We Discover…? | History of Science*), `youtubeId`.
+- **Captions:** `11_Upload-Package/Captions/hos_005_master_v01.en.srt` (sha256 `e2169dcdaa7a79f38ada69ac3e9008a10bff6f2a31341f35e297465cb3a8141e`), built by `07_Edit-Project/_build_captions_v01.py`. It is script-locked (sentence text from `VO_RETIME_v01.json`, i.e. script v02) and timed by each part's offset in the master. 137 cues, 0:00.000–8:20.913, none spanning a chapter card coming in and none in the end card or hold. *Fabricius* is spelled as in the script.
+- Shas checked before upload: master `84476e06…`, thumb A `356f9ea5…`, thumb B `17672532…`.
+
+### Upload
+
+1. **Channel check** (`11_Upload-Package/Schedule/_check_channel_v01.ts`, the uploader's own connection): `PASS  channel UCXp7HkBIl1LgaznXuZHJyRg` ("History of Science", `@historyofscienceyt`).
+2. `npm run lint:package -- --film 005`: `PASS  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package/PACKAGE_MANIFEST.json`, with no warnings (captions now set).
+3. Dry run, then the live upload, with `scripts/youtube-package-upload.ts`. **Uploader bug:** `loadYouTubePackage` merges `{...manifest, ...overrides}`, and CLI flags that aren't given arrive as `undefined`, which wipes the manifest's title, schedule, thumbnail and playlist. The manifest-only dry run failed "No title found". So every value was passed explicitly as a flag (`--title --schedule --thumbnail --playlist-id --related-video-id --format longform --privacy private --made-for-kids false --skip-comment`). The npm script also doesn't load `.env` and `.env` has `PUBLISHING_DRY_RUN` on, so the live run was `PUBLISHING_DRY_RUN=false npx tsx --env-file=.env …`. The bug is flagged to Claude and not fixed here.
+4. **Result** (`11_Upload-Package/Schedule/PACKAGE_UPLOAD_RESULT_2026-10-02.json`): `0IfXGSX7Ypw`, "Uploaded to YouTube; scheduled to go live at 2026-10-29T18:00:00.000Z", added to the playlist. The thumbnail call got 403 while the video was processing. It was re-set a minute later with `_api_finish_v01.ts thumb`: 200, maxres present.
+5. **Captions** (`_api_finish_v01.ts captions`, `captions.insert`): 200, track `en-GB`, `isDraft: false`, `status: serving`.
+
+API read-back (`_check_channel_v01.ts 0IfXGSX7Ypw`): channel `UCXp7HkBIl1LgaznXuZHJyRg`, title as approved, 7 tags, category 27, `defaultLanguage`/`defaultAudioLanguage` en-GB, `privacyStatus: private`, `publishAt: 2026-10-29T18:00:00Z`, `madeForKids: false`, `selfDeclaredMadeForKids: false`, duration PT8M47S.
+
+### Studio (desktop Studio CDP :9460, `@HistoryOfScienceYT`)
+
+The Studio Chrome's leftover 001 edit tab (`_C92tIJCk8A`, from 1 Oct 23:28) had a frozen renderer that blocked Playwright's attach. There was no dialog on it, so the tab was closed; nothing on YouTube changed. Tools: `_studio_step_v01.py`, `_studio_tc_v01.py`, `_studio_settings_v01.py`, `_es_lib_v01.py` (all in `11_Upload-Package/Schedule/`); results in `11_Upload-Package/evidence_2026-10-02_studio/`; screenshots on the Mini in `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-02_005_upload/`. Visibility and Audience were re-read after every save. Every read: **Visibility Scheduled · not made for kids · Made for Kids not set**.
+
+| Setting | Result |
+|---|---|
+| Already right from the upload | Audience not made for kids; age restriction none; **altered content "Yes, AI was used"**; video and title/description language English (UK); category Education; playlist *How Did We Discover…?*; automatic chapters and concepts on; embedding on; notify subscribers on; remixing video and audio; comments on, sort Top |
+| Test & Compare | **Thumbnail only, A v02 (live main) + B v02, one title.** Dry run first, then Set test → Studio: "The test is ready and will start once you save your changes" → Save. Reopen: A/B Testing asks "Run a new test? Your current test will be deleted" (Cancelled), so the test is stored. The thumbnail panel reads **Ineligible: "Your A/B test cannot run. Your video is ineligible because: Your video is not public"**. Check at 29 Oct 18:05 |
+| Paid promotion | No (saved) |
+| Caption certification | This content has never aired on television in the US (saved) |
+| Education type | Concept overview (saved) |
+| Academic system | England (saved, persisted) |
+| Level | Key stage 4 saved in session, **reads None after reopen**: the same Studio behaviour as 004 (§9 "if one saves"), so it's left blank |
+| Exam | *GCSE Biology* is not in Studio's list (only "None"); blank |
+| Automatic places | Off. The click registered late, so it was saved together with the moderation save (two settings in one save) |
+| Comment moderation | Basic: hold potentially inappropriate comments (saved) |
+| End screen | Template "1 video, 1 subscribe", **8:26:16–8:46:16** (the 20 s hold): Subscribe (History of Science) + **Specific video *How Did We Discover Germs?* (`_C92tIJCk8A`)**, which the film's last line leads into. The video element was moved to the top left, clear of the card's words; it's at its minimum size. Saved with no processing error; it reopens with both elements and no NaN times |
+| Visibility panel | Schedule as public **29 Oct 2026, 18:00**, private before publishing, **Set as Premiere unticked** (closed without saving) |
+| Cards, pinned comment | Not set (see STOP) |
+
+`npm run channel:audit` (after the session):
+
+```
+PASS  long  0IfXGSX7Ypw  private 2026-10-29 18:00 UK  The Tied Arm That Proved Your Blood Circulates
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+23 videos, 0 errors.
+```
+
+Altered content = Yes confirmed by eye in Studio ("Yes, AI was used" checked).
+
+`npm run lint:package -- --film 005` (after, with `youtubeId`):
+
+```
+PASS  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package/PACKAGE_MANIFEST.json
+```
+
+### Shorts: B and C re-gated on their dates (no upload)
+
+Files unchanged (`e2eacb0c…`, `5839c4dd…`).
+
+```
+PASS  hos_005_s02_the_tied_arm_v01.mp4  dur=25.83s  audio=-21.6dB  motion=19.22  dhash=070f46033fa90e0e   (--air-date 2026-11-08)
+PASS  hos_005_s03_never_saw_v01.mp4  dur=24.83s  audio=-21.7dB  motion=17.01  dhash=0f0f0d1f6e030f0f   (--air-date 2026-11-15)
+```
+
+### Sun 1 Nov and Tue 3 Nov: back-catalogue picks for Claude to put to Ben
+
+`SHORTS_LOG.md` (on main): 001 had a Short on 20 Oct (carbolic spray) and 002 on 18 Oct (every eighth). 004 has had one, gold on 16 Oct. 003 hasn't had one since 27 Sep. The only built Short that hasn't aired is 004's `s03_her_ring` v05 (`a36c77ce…`), and it's the wedding-ring idea already public as `zI_eD3vFWmE`, so it can't air. Both slots need a new Short from KEEP plates, which means a Shorts script sign-off (3).
+
+- **Sun 1 Nov → 004** *What's Really Inside an Atom?* (`GHZDsiH7L7A`): Rutherford's shell that bounced back off tissue paper. The gold foil plates are in Part 04 (`atom_script_master_v02.md` lines 131–151), and there's no live Short on it (the live 004 Short is about cutting gold in half). Fallback: the pea in a football stadium (line 155).
+- **Tue 3 Nov → 003** *How Did We Discover X-rays?* (`frP_YrNShsU`): "he called it X, for unknown": the locked-door tests with a book, a hand and metal (`invisible_bones_script_master_v01.md` lines 72–76). It's the least-used angle, but close to the live accident and bones Shorts, so it needs a live-page check. Fallback: Tue 3 Nov → 002 or 001 with a new idea.
 
 ## Parts
 

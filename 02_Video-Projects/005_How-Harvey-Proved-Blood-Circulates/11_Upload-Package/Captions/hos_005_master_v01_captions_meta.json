@@ -1,0 +1,11 @@
+{
+  "srt": "hos_005_master_v01.en.srt",
+  "sha256": "e2169dcdaa7a79f38ada69ac3e9008a10bff6f2a31341f35e297465cb3a8141e",
+  "master": "hos_005_master_v01.mp4",
+  "master_sha256": "84476e06c13e2a010974bc0937a7044374f637065edcf819c5ab5157165192f7",
+  "source_text": "01_Script/blood_script_master_v02.md via 07_Edit-Project/VO_RETIME_v01.json",
+  "cues": 137,
+  "first": "00:00:00,000",
+  "last_end": "00:08:20,913",
+  "end_card_in": "00:08:22,520"
+}

@@ -1,0 +1,286 @@
+{
+ "commit": false,
+ "steps": [
+  {
+   "shot": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-02_005_upload/tc_dry_01_mode.png",
+   "dom": [
+    {
+     "tag": "ytcp-icon-button",
+     "type": "",
+     "text": "",
+     "aria": "Close",
+     "checked": "",
+     "disabled": false,
+     "x": 1264,
+     "y": 60
+    },
+    {
+     "tag": "ytcp-chip",
+     "type": "",
+     "text": "Title only",
+     "aria": "",
+     "checked": "false",
+     "disabled": false,
+     "x": 404,
+     "y": 184
+    },
+    {
+     "tag": "ytcp-chip",
+     "type": "",
+     "text": "Thumbnail only",
+     "aria": "",
+     "checked": "true",
+     "disabled": false,
+     "x": 493,
+     "y": 184
+    },
+    {
+     "tag": "ytcp-chip",
+     "type": "",
+     "text": "Title and thumbnail",
+     "aria": "",
+     "checked": "false",
+     "disabled": false,
+     "x": 622,
+     "y": 184
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "",
+     "aria": "Uploaded thumbnail",
+     "checked": "",
+     "disabled": false,
+     "x": 416,
+     "y": 252
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "",
+     "aria": "Options",
+     "checked": "",
+     "disabled": false,
+     "x": 647,
+     "y": 256
+    },
+    {
+     "tag": "div",
+     "type": "",
+     "text": "",
+     "aria": "Add title 1",
+     "checked": "",
+     "disabled": false,
+     "x": 711,
+     "y": 279
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "Add thumbnail",
+     "aria": "Upload thumbnail 2",
+     "checked": "",
+     "disabled": false,
+     "x": 417,
+     "y": 443
+    },
+    {
+     "tag": "div",
+     "type": "",
+     "text": "",
+     "aria": "Add title 2",
+     "checked": "",
+     "disabled": false,
+     "x": 711,
+     "y": 469
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "Add thumbnail",
+     "aria": "Upload thumbnail 3",
+     "checked": "",
+     "disabled": false,
+     "x": 417,
+     "y": 633
+    },
+    {
+     "tag": "div",
+     "type": "",
+     "text": "",
+     "aria": "Add title 3",
+     "checked": "",
+     "disabled": false,
+     "x": 711,
+     "y": 659
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "Set test",
+     "aria": "Set test",
+     "checked": "",
+     "disabled": true,
+     "x": 1216,
+     "y": 609
+    }
+   ]
+  },
+  {
+   "shot": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-02_005_upload/tc_dry_02_filled.png",
+   "dom": [
+    {
+     "tag": "ytcp-icon-button",
+     "type": "",
+     "text": "",
+     "aria": "Close",
+     "checked": "",
+     "disabled": false,
+     "x": 1264,
+     "y": 60
+    },
+    {
+     "tag": "ytcp-chip",
+     "type": "",
+     "text": "Title only",
+     "aria": "",
+     "checked": "false",
+     "disabled": false,
+     "x": 404,
+     "y": 184
+    },
+    {
+     "tag": "ytcp-chip",
+     "type": "",
+     "text": "Thumbnail only",
+     "aria": "",
+     "checked": "true",
+     "disabled": false,
+     "x": 493,
+     "y": 184
+    },
+    {
+     "tag": "ytcp-chip",
+     "type": "",
+     "text": "Title and thumbnail",
+     "aria": "",
+     "checked": "false",
+     "disabled": false,
+     "x": 622,
+     "y": 184
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "",
+     "aria": "Uploaded thumbnail",
+     "checked": "",
+     "disabled": false,
+     "x": 416,
+     "y": 252
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "",
+     "aria": "Options",
+     "checked": "",
+     "disabled": false,
+     "x": 647,
+     "y": 256
+    },
+    {
+     "tag": "div",
+     "type": "",
+     "text": "",
+     "aria": "Add title 1",
+     "checked": "",
+     "disabled": false,
+     "x": 711,
+     "y": 279
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "",
+     "aria": "hos_005_thumb_B_it_goes_round_v02.jpg",
+     "checked": "",
+     "disabled": false,
+     "x": 416,
+     "y": 442
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "",
+     "aria": "Options",
+     "checked": "",
+     "disabled": false,
+     "x": 647,
+     "y": 446
+    },
+    {
+     "tag": "div",
+     "type": "",
+     "text": "",
+     "aria": "Add title 2",
+     "checked": "",
+     "disabled": false,
+     "x": 711,
+     "y": 469
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "Add thumbnail",
+     "aria": "Upload thumbnail 3",
+     "checked": "",
+     "disabled": false,
+     "x": 417,
+     "y": 633
+    },
+    {
+     "tag": "div",
+     "type": "",
+     "text": "",
+     "aria": "Add title 3",
+     "checked": "",
+     "disabled": false,
+     "x": 711,
+     "y": 659
+    },
+    {
+     "tag": "button",
+     "type": "submit",
+     "text": "Set test",
+     "aria": "Set test",
+     "checked": "",
+     "disabled": false,
+     "x": 1216,
+     "y": 609
+    }
+   ]
+  }
+ ],
+ "av_start": {
+  "at": "2026-10-02T10:41:42+01:00",
+  "url": "https://studio.youtube.com/video/0IfXGSX7Ypw/edit",
+  "visibility": "Visibility Scheduled",
+  "not_kids": true,
+  "kids_yes": false,
+  "ai": {
+   "radios": [],
+   "yes": false,
+   "no": false
+  }
+ },
+ "uploaded_slots": [
+  "Uploaded thumbnail"
+ ],
+ "upload_slots_left": [
+  "Upload thumbnail 3"
+ ],
+ "set_enabled": true,
+ "body_title_ok": true,
+ "at": "2026-10-02T10:41:57+01:00"
+}

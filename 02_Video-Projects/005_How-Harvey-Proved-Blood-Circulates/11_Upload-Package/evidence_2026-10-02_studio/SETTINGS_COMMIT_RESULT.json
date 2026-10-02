@@ -1,0 +1,331 @@
+{
+ "mode": "commit",
+ "steps": [
+  {
+   "key": "paid",
+   "hit": {
+    "lab": "No, my video doesn't include paid promotion",
+    "x": 445.9296875,
+    "y": 1793,
+    "checked": false
+   },
+   "saved": {
+    "label": "paid_no",
+    "save": {
+     "enabled": true,
+     "clicked": true,
+     "confirm": "Save"
+    },
+    "visibility": "Visibility Scheduled",
+    "not_kids": true,
+    "kids_yes": false
+   }
+  },
+  {
+   "key": "caption",
+   "before": "Caption certification None",
+   "options": [
+    "None",
+    "This content has never aired on television in the US",
+    "This content has only aired on television in the US without captions",
+    "This content has not aired on US television with captions since 30 September 2012",
+    "This content does not fall within a category of online programming that requires captions ",
+    "The FCC and/or US Congress has granted an exemption from captioning requirements for this "
+   ],
+   "pick": "This content has never aired on television in the US",
+   "click": {
+    "ok": true,
+    "t": "This content has never aired on television in the US",
+    "y": 399.53125
+   },
+   "mid": "Caption certification This content has never aired on television in the US",
+   "saved": {
+    "label": "caption",
+    "save": {
+     "enabled": true,
+     "clicked": true,
+     "confirm": "Save"
+    },
+    "visibility": "Visibility Scheduled",
+    "not_kids": true,
+    "kids_yes": false
+   },
+   "after": "Caption certification This content has never aired on television in the US"
+  },
+  {
+   "key": "type",
+   "before": "Type None",
+   "options": [
+    "None",
+    "Activity",
+    "Concept overview",
+    "How-to",
+    "Lecture",
+    "Problem walkthrough",
+    "Real-life application",
+    "Science experiment",
+    "Tips",
+    "Other"
+   ],
+   "pick": "Concept overview",
+   "click": {
+    "ok": true,
+    "t": "Concept overview",
+    "y": 439.53125
+   },
+   "mid": "Type Concept overview",
+   "saved": {
+    "label": "type",
+    "save": {
+     "enabled": true,
+     "clicked": true,
+     "confirm": "Save"
+    },
+    "visibility": "Visibility Scheduled",
+    "not_kids": true,
+    "kids_yes": false
+   },
+   "after": "Type Concept overview"
+  },
+  {
+   "before": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system Other",
+    "Level None"
+   ],
+   "pick": {
+    "ok": true,
+    "t": "England",
+    "y": 852
+   },
+   "mid": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system England",
+    "Level None"
+   ],
+   "save": {
+    "via": "u",
+    "result": {
+     "enabled": true,
+     "clicked": true,
+     "confirm": "Save"
+    }
+   },
+   "after_save": {
+    "edu": [
+     "Video language English (United Kingdom)",
+     "Title and description language English (United Kingdom)",
+     "Education",
+     "Type Concept overview",
+     "Academic system England",
+     "Level None"
+    ],
+    "not_kids": true,
+    "visibility": "Scheduled",
+    "kids_yes": false
+   },
+   "ok": true,
+   "av": {
+    "chip": "Visibility Scheduled",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+     "no": false,
+     "yes": false
+    }
+   }
+  },
+  {
+   "before": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system England",
+    "Level None"
+   ],
+   "opts_sample": [
+    "Beginner",
+    "Intermediate",
+    "Advanced",
+    "Early years",
+    "Nursery",
+    "Foundation",
+    "Key stage 1",
+    "Year 1",
+    "Year 2",
+    "Key stage 2",
+    "Year 3",
+    "Year 4",
+    "Year 5",
+    "Year 6",
+    "Key stage 3",
+    "Year 7",
+    "Year 8",
+    "Year 9",
+    "Key stage 4",
+    "Year 10",
+    "Year 11",
+    "Key stage 5",
+    "Year 12",
+    "Year 13",
+    "Higher education",
+    "Research",
+    "Professional training",
+    "Other"
+   ],
+   "want": "Key stage 4",
+   "click": {
+    "ok": true,
+    "t": "Key stage 4",
+    "y": 668
+   },
+   "mid": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system England",
+    "Level Key stage 4"
+   ],
+   "save": {
+    "via": "u",
+    "result": {
+     "enabled": true,
+     "clicked": true,
+     "confirm": "Save"
+    }
+   },
+   "after_save": {
+    "edu": [
+     "Video language English (United Kingdom)",
+     "Title and description language English (United Kingdom)",
+     "Education",
+     "Type Concept overview",
+     "Academic system England",
+     "Level Key stage 4"
+    ],
+    "not_kids": true,
+    "visibility": "Scheduled",
+    "kids_yes": false
+   },
+   "ok": true,
+   "av": {
+    "chip": "Visibility Scheduled",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+     "no": false,
+     "yes": false
+    }
+   }
+  },
+  {
+   "exam_want": "GCSE Biology",
+   "input": {
+    "x": 620,
+    "y": 338.53125
+   },
+   "before": [
+    "Video language English (United Kingdom)",
+    "Title and description language English (United Kingdom)",
+    "Education",
+    "Type Concept overview",
+    "Academic system England",
+    "Level Key stage 4"
+   ],
+   "opts": [
+    "None"
+   ],
+   "ok": false,
+   "blank": true,
+   "would_not_save": "exam_GCSE Biology_not_in_taxonomy",
+   "av": {
+    "chip": "Visibility Scheduled",
+    "not_kids": true,
+    "kids_yes": false,
+    "kids": {
+     "no": false,
+     "yes": false
+    }
+   }
+  },
+  {
+   "key": "places",
+   "check": {
+    "lab": "Allow automatic places",
+    "before": true,
+    "after": true
+   }
+  },
+  {
+   "key": "moderation",
+   "before": "Moderation None",
+   "options": [
+    "None Don't hold any comments",
+    "Basic Hold potentially inappropriate comments",
+    "Strict Hold a broader range of potentially inappropriate comments",
+    "Hold all Hold all comments"
+   ],
+   "pick": "Basic Hold potentially inappropriate comments",
+   "click": {
+    "ok": true,
+    "t": "Basic Hold potentially inappropriate comments",
+    "y": 489.53125
+   },
+   "mid": "Moderation Basic",
+   "saved": {
+    "label": "moderation",
+    "save": {
+     "enabled": true,
+     "clicked": true,
+     "confirm": "Save"
+    },
+    "visibility": "Visibility Scheduled",
+    "not_kids": true,
+    "kids_yes": false
+   },
+   "after": "Moderation Basic"
+  }
+ ],
+ "start": {
+  "at": "2026-10-02T10:44:46+01:00",
+  "url": "https://studio.youtube.com/video/0IfXGSX7Ypw/edit",
+  "visibility": "Visibility Scheduled",
+  "not_kids": true,
+  "kids_yes": false,
+  "ai": {
+   "radios": [],
+   "yes": false,
+   "no": false
+  }
+ },
+ "reopen": {
+  "at": "2026-10-02T10:45:55+01:00",
+  "url": "https://studio.youtube.com/video/0IfXGSX7Ypw/edit",
+  "visibility": "Visibility Scheduled",
+  "not_kids": true,
+  "kids_yes": false,
+  "ai": {
+   "radios": [],
+   "yes": false,
+   "no": false
+  },
+  "edu": [
+   "Video language English (United Kingdom)",
+   "Title and description language English (United Kingdom)",
+   "Education",
+   "Type Concept overview",
+   "Academic system England",
+   "Level None"
+  ]
+ },
+ "reopen_shot": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-02_005_upload/settings_reopen.png",
+ "at": "2026-10-02T10:45:56+01:00"
+}

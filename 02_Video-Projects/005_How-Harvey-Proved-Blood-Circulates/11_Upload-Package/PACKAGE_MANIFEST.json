@@ -1,20 +1,23 @@
 {
   "format": "longform",
   "video": "../09_Final-Export/hos_005_master_v01.mp4",
+  "youtubeId": "0IfXGSX7Ypw",
   "title": "The Tied Arm That Proved Your Blood Circulates",
   "titleVariant": "A",
   "descriptionFile": "Descriptions/blood_long_description_v02.txt",
   "tagsFile": "Tags/blood_long_tags_v01.txt",
   "chaptersFile": null,
   "pinnedCommentFile": null,
-  "thumbnail": null,
-  "thumbnailAbc": [],
+  "thumbnail": "../08_Thumbnail/Selected/hos_005_thumb_A_one_tight_band_v02.jpg",
+  "thumbnailAbc": [
+    "../08_Thumbnail/Selected/hos_005_thumb_A_one_tight_band_v02.jpg",
+    "../08_Thumbnail/Selected/hos_005_thumb_B_it_goes_round_v02.jpg"
+  ],
   "titleAbc": [
-    "The Tied Arm That Proved Your Blood Circulates",
-    "Why Doctors Thought Your Blood Was Used Up"
+    "The Tied Arm That Proved Your Blood Circulates"
   ],
   "schedule": "2026-10-29T18:00:00.000Z",
-  "playlistId": null,
+  "playlistId": "PLEbpfUzWzcXU",
   "relatedVideoId": "_C92tIJCk8A",
   "privacy": "private",
   "madeForKids": false,
@@ -24,7 +27,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Master = full join v01 passed by Ben 2 Oct 2026 (sha 84476e06…, 8:46.5), copied byte-for-byte to 09_Final-Export/hos_005_master_v01.mp4. Air approved by Ben 1 Oct: Thu 29 Oct 2026 18:00 UK = 18:00 UTC, normal publish. Title, thumbnail and description wait for Ben's sign-off. Nothing uploaded or scheduled on YouTube.",
+  "note": "Master = full join v01 passed by Ben 2 Oct 2026 (sha 84476e06…, 8:46.5), byte copy at 09_Final-Export/hos_005_master_v01.mp4. Package signed off by Ben 2 Oct 2026 (\"All ok\", desk PR #180 comment 5948928013): title, description v02, 7 tags, thumbnail A v02 main, Test & Compare thumbnails A + B v02 with the one title. Air Thu 29 Oct 2026 18:00 UK = 18:00 UTC, normal publish.",
   "neighbours": {
     "phrases": [
       "blood",
@@ -63,5 +66,6 @@
         "views": 7390037
       }
     ]
-  }
+  },
+  "captionsFile": "Captions/hos_005_master_v01.en.srt"
 }
