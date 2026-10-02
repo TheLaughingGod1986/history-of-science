@@ -436,13 +436,43 @@ part 02: takes=0 stills=0 keep=0/15 cost_usd=$0.00 (lost $0.00)
 film 005 Vertex spend $25.58 · projected Free Trial £189.07 (floor £60, £/$ 0.8)
 ```
 
+### Part 02: 15/15 KEEP, rough v02
+
+- **Cut:** `09_Final-Export/hos_005_part02_rough_v02.mp4`, sha256 `d813f553b4d9d6217f00291e1ccc2715d1fb6b71ebacc05bd028b0d2ac3c0b22`, 98.233 s, freezedetect 0, bed −17.70 dB. Phone copy in iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/`. Built by `07_Edit-Project/_assemble_part_rough_v02.py --part 2 --version v02`.
+- **v01** (`c4ccab76…`) was replaced the same hour: in my UAT, plate 14 had glyph marks on its little doors (hard fail 6), so it was reminted to take 3 with plain cup valves.
+- **Takes:** 23 takes and 30 start frames, $25.17, nothing lost. Log: `07_Edit-Project/PART02_MINT_LOG_v01.json`. Failed takes: 01 t1 (candle and lamp), 09 t1 and 10 t1 (garbled lettering), 11 t1 and t2 (scroll lettering, then a new framing), 14 t1 and t2 (glyph doors, blobs), 15 t1 (modern warship).
+- **Tool changes from Part 02:**
+  - Style references are Part 01's passed frames only.
+  - Fast plates carry the no-flame line.
+  - "No letters…" goes wherever text could appear.
+  - Every start frame is checked before a take.
+  - After two FAILs on one framing, the framing changes.
+- **Report and my 11-hard-fail UAT:** `07_Edit-Project/_desk/part02_report_2026-10-02.md` (posted to the desk).
+
+`vo_check.py` (hos-vo venv):
+
+```
+PASS  hos_005_part02_rough_v02.mp4  1:38.23  mean -21.1 dB  peak -2.3 dB  150 wpm
+   warn  replace at ~0:42.62: 'believed' / 'believe' — sounds alike (likely the transcriber); listen
+   warn  replace at ~1:09.90: 'fabricius' / 'fabrizius' — sounds alike (likely the transcriber); listen
+   warn  replace at ~1:22.84: 'fabricius' / 'fabrizius' — sounds alike (likely the transcriber); listen
+```
+
+### Credit after Part 02 (= before Part 03)
+
+```
+CREDIT free_trial_remaining_gbp=208.06 status=Available floor=60
+part 02: takes=23 stills=30 keep=15/15 cost_usd=$25.17 (lost $0.00)
+film 005 Vertex spend $51.65 · projected Free Trial £168.21 (floor £60, £/$ 0.8)
+```
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
 | 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F) | `09_Final-Export/hos_005_part01_rough_v01.mp4` (`7661b6cf…`, 59.53 s) | 9/9 KEEP on Vertex ($25.58); **passed by Ben, 1 Oct 2026** |
-| 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | — | board v02 + light fix; minting on Vertex |
-| 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | — | board v02 |
+| 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | `09_Final-Export/hos_005_part02_rough_v02.mp4` (`d813f553…`, 98.23 s) | 15/15 KEEP on Vertex ($25.17); my UAT done; Claude reviewing stills |
+| 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | — | start frames checked; minting on Vertex |
 | 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | — | board v02 |
 | 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | — | board v02 |
 

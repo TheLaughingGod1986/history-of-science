@@ -1,0 +1,283 @@
+{
+  "film": "005_How-Harvey-Proved-Blood-Circulates",
+  "part": "03",
+  "board": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/07_Edit-Project/parts/part-03_plates_v02.json",
+  "path": "vertex",
+  "vertex_project": "gen-lang-client-0538779324",
+  "vertex_location": "us-central1",
+  "account": "benoats@googlemail.com",
+  "authority": "Ben, 1 Oct 2026 (chat with Claude): Vertex for 005; Part 01 OK'd by Ben 1 Oct; Parts 02–05 desk PR #180 comment 5942662028",
+  "models": {
+    "Quality": "veo-3.1-generate-001",
+    "Fast": "veo-3.1-fast-generate-001"
+  },
+  "image_model": "gemini-2.5-flash-image",
+  "pricing_usd": {
+    "veo_per_s_video_only_1080p": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "still": 0.039,
+    "source": "Vertex AI generative pricing page, video-only rows, Sept 2026"
+  },
+  "credit_check": null,
+  "takes": [],
+  "stills": [
+    {
+      "plate": "01_cold_lecture_room",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/01_cold_lecture_room_v01.jpg",
+      "sha256": "a2bc6834f204f1283140b66d4011b7171e3ed40bea74ff181e791f48c1c17c1c",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": null,
+      "cost_usd": 0.039,
+      "at": "2026-10-01T23:54:47+00:00"
+    },
+    {
+      "plate": "05_how_much",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/05_how_much_v01.jpg",
+      "sha256": "c777e59124d226bdd89010d5915a40e261743ed4b555be69ebfdf9d696f94566",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": null,
+      "cost_usd": 0.039,
+      "at": "2026-10-01T23:57:23+00:00"
+    },
+    {
+      "plate": "03_stove_to_muscle",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/03_stove_to_muscle_v01.jpg",
+      "sha256": "4459d71dfd75ebdf7410ce226cdf6fdc9ccf1e4b864fce9f91c96afe7d983275",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/refs/v02_vertex_stills/05_heart_stove_v02.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles.",
+      "cost_usd": 0.039,
+      "at": "2026-10-01T23:58:05+00:00"
+    },
+    {
+      "plate": "09_jug_tower",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/09_jug_tower_v01.jpg",
+      "sha256": "32bd7b0173eacf383311a9aa1df3855c1daeb1cb8eed56bee40e2f4019a2c7a3",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": "Plain warm oak-panelled room; the body outline is a simple pale translucent silhouette; the jugs are small pewter jugs tinted red.",
+      "cost_usd": 0.039,
+      "at": "2026-10-01T23:58:45+00:00"
+    },
+    {
+      "plate": "10_eat_weight",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/10_eat_weight_v01.jpg",
+      "sha256": "949b5505f196ace9426cdd8574ee8460cee176ddd19e6d3e866f2656ebe77310",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": null,
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:02:44+00:00"
+    },
+    {
+      "plate": "11_where_go",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/11_where_go_v01.jpg",
+      "sha256": "3f55694c3839928e164be5cd3e6d0419c6067f8cb6293eb726496313f827f3a3",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/refs/v02_vertex_stills/04_veins_soak_v02.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:02:56+00:00"
+    },
+    {
+      "plate": "06_two_ounces_eighth",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/06_two_ounces_eighth_v01.jpg",
+      "sha256": "7b6dbac45cf7fe0867e280a6119c8a124474fb6f17af93a5c05ade4f2979388c",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/refs/v02_vertex_stills/04_sum_band_doors_v02.jpg",
+      "extra": "Only '2 oz' is written so far, large and correct, the quill just finishing it; the rest of the page is blank.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:04:22+00:00"
+    },
+    {
+      "plate": "02_slow_hearts",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/02_slow_hearts_v01.jpg",
+      "sha256": "f1a893d1852b002c3a940de0ed1225001c4695880a20e16a781604b595b3d21b",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/05_how_much_v01.jpg",
+      "extra": null,
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:05:02+00:00"
+    },
+    {
+      "plate": "08_explorer_jugs",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/08_explorer_jugs_v01.jpg",
+      "sha256": "1216ed84d9900f11e0d4abce94fbf2b5c09049b54760ce5b1f54b7250760c12d",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/05_how_much_v01.jpg",
+      "extra": "Harvey is not in this shot.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:05:49+00:00"
+    },
+    {
+      "plate": "14_not_proof",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/14_not_proof_v01.jpg",
+      "sha256": "f8955b0aaab6bff3cc009effd5c262ab33c5da0d7f94238e03cab9a6adba3e0b",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/05_how_much_v01.jpg",
+      "extra": null,
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:07:19+00:00"
+    },
+    {
+      "plate": "04_squeeze_pulse",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/04_squeeze_pulse_v01.jpg",
+      "sha256": "44b8abfc2a021c257a128ecb605cb60314fa7de51956b27f8cbc8b77f561323b",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/03_stove_to_muscle_v01.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:08:00+00:00"
+    },
+    {
+      "plate": "07_thousand_beats",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/07_thousand_beats_v01.jpg",
+      "sha256": "152bc65ec0f523cd4b55509db254e0887d129d57f10f62756896be4c66e79fba",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/06_two_ounces_eighth_v01.jpg",
+      "extra": "The page shows '2 oz' and '1/8' already written; the quill is starting the '1' of 1000 below them.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:08:46+00:00"
+    },
+    {
+      "plate": "12_glowing_loop",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/12_glowing_loop_v01.jpg",
+      "sha256": "ee1a953837b3c6cae704fff634aedaad175e076a72e57f15ea5d9f8deea956f5",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/11_where_go_v01.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:10:11+00:00"
+    },
+    {
+      "plate": "13_one_minute",
+      "v": 1,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/13_one_minute_v01.jpg",
+      "sha256": "1d765d6b53822286221b62731befb7cc413725348f785aeca78bda1ee0b80fe2",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/12_glowing_loop_v01.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:11:43+00:00"
+    },
+    {
+      "plate": "02_slow_hearts",
+      "v": 2,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/02_slow_hearts_v02.jpg",
+      "sha256": "d519826e5adce7090d48886e214b7212c5b35c36efce091fd92eb39f3d95ef55",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": "Close-up, slightly top-down, on the open notebook alone: brown-ink sketches of a frog's heart and an eel's heart with little arrows. No person, no hands, no live animal, no writing.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:12:55+00:00"
+    },
+    {
+      "plate": "04_squeeze_pulse",
+      "v": 2,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/04_squeeze_pulse_v02.jpg",
+      "sha256": "7c9a20d5d88e5a3e83b6f2a002cdc16edd779d15c0fb88e13c45e826ee960d7f",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/refs/v02_vertex_stills/04_veins_soak_v02.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles. The same translucent glowing outline figure as the earlier cutaways, seated side-on at the oak table with one arm resting on it; the cartoon heart glows in the chest and a warm red artery runs down the arm to the wrist, where two fingertips of the figure's other hand rest. No floating organ.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:14:24+00:00"
+    },
+    {
+      "plate": "09_jug_tower",
+      "v": 2,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/09_jug_tower_v02.jpg",
+      "sha256": "f6c19b42f0bfb061767cfdf16fdf1327790127b9aa28450531bac7d39b88ba5a",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/refs/v02_vertex_stills/03_eat_to_liver_v02.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles. A standing translucent glowing outline figure (same look as the earlier cutaways) stands beside a tower of tiny red pewter jugs on the floor, already as tall as its waist. Nothing lying down, no outline on the table.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:15:03+00:00"
+    },
+    {
+      "plate": "02_slow_hearts",
+      "v": 3,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/02_slow_hearts_v03.jpg",
+      "sha256": "ffaf6fe657778c8c66d36590cc6c97da8f96fbcfbc7fc25e0bf0c3705301f602",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/02_slow_hearts_v02.jpg",
+      "extra": "Close-up, slightly top-down, on the open notebook alone: two plain anatomical brown-ink sketches of small hearts (heart shapes only, with vessels) and little curved arrows. The hearts have no faces, no eyes, no heads, no animal bodies. No person, no hands, no live animal, no writing.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:23:04+00:00"
+    },
+    {
+      "plate": "04_squeeze_pulse",
+      "v": 3,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/04_squeeze_pulse_v03.jpg",
+      "sha256": "cf768d5acad710db3f184ab6492a1e15eecbdf22badbc10bd549ac7f48478145",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/04_squeeze_pulse_v02.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles. The figure is a smooth faceless translucent mannequin outline: no eyes, no glowing eyes, no mouth, no facial features at all. Seated side-on at the oak table with one arm resting on it; the cartoon heart glows in the chest and a warm red artery runs down the arm to the wrist, where two fingertips of the figure's other hand rest.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:23:17+00:00"
+    },
+    {
+      "plate": "09_jug_tower",
+      "v": 3,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/09_jug_tower_v03.jpg",
+      "sha256": "6a2284ae6c8f9b6ace38c3e535ec5d1efa1fc248291c0186e227859582a54795",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/09_jug_tower_v02.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles. The figure is a smooth faceless translucent mannequin outline: no eyes, no glowing eyes, no mouth, no facial features at all. A standing plain pale translucent outline figure beside a tower of tiny red pewter jugs on the floor, already as tall as its waist. Soft daylight, nothing glowing, no glowing heart.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:24:44+00:00"
+    },
+    {
+      "plate": "13_one_minute",
+      "v": 2,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/13_one_minute_v02.jpg",
+      "sha256": "6f98a588bd616c9e7daa3ed3577e76cd0924b1a0a1ea653e18c08b3962f68832",
+      "model": "gemini-2.5-flash-image",
+      "seed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part02/refs/v02_vertex_stills/04_veins_soak_v02.jpg",
+      "extra": "Plain warm dark oak-panelled room behind, softly out of focus: no beds, no chandeliers, no wall lamps, no candles. The figure is a smooth faceless translucent mannequin outline: no eyes, no glowing eyes, no mouth, no facial features at all. A standing glowing translucent figure with a red loop of arteries and blue veins; a large brass clock face lies flat on the oak table in front of it with one brass hand. A single small round RED blood drop glows on the loop. No flame shapes, no candles, no teardrop of fire. No letters, words or numbers; the clock has plain tick marks only.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:25:23+00:00"
+    },
+    {
+      "plate": "02_slow_hearts",
+      "v": 4,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/02_slow_hearts_v04.jpg",
+      "sha256": "d37f5150a73d93a5dbee6d769783249388f1e947762188019c732795e68f28e2",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "extra": "Close-up, slightly top-down, on the open notebook alone. Each page shows one plain anatomical brown-ink sketch of a heart (just the heart organ with its vessels) with a few small curved arrows. Every drawing is a heart only: no faces, no eyes, no heads, no frogs, no fish, no animals. No person, no hands, no writing.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:26:12+00:00"
+    },
+    {
+      "plate": "13_one_minute",
+      "v": 3,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/refs/v02_vertex_stills/13_one_minute_v03.jpg",
+      "sha256": "4cedb45443e4b099f0acb32a7d435d08841954608dd7c88711cb4d572195d3f2",
+      "model": "gemini-2.5-flash-image",
+      "seed": "04_Generated-Clips/part03/refs/v02_vertex_stills/12_glowing_loop_v01.jpg",
+      "extra": "The same faceless translucent figure with its red artery and blue vein loop, standing in the same oak-panelled room; a large plain brass clock face with a single brass hand floats flat in front of its chest, the loop running round behind it, and one small round RED glowing blood drop sits on the loop. No flame shapes, no candles. The clock has plain tick marks only, no numbers or letters.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T00:27:38+00:00"
+    }
+  ],
+  "plates": {},
+  "cost_usd_total": 0.897,
+  "updated": "2026-10-02T00:27:38+00:00"
+}

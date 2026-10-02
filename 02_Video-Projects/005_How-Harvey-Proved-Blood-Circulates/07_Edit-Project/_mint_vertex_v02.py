@@ -63,6 +63,8 @@ LIVE_THUMB = REPO / "00_Brand/Channel-Setup/style/long/004_whats_really_inside_a
 EXPLORER_REF = REPO / "01_Character/05_Generation-References/hos-explorer-reference-v01.jpg"
 EXPLORER_SHEET = REPO / "01_Character/01_Master-References/hos-explorer-character-sheet-v01.jpg"
 HARVEY_REF = PROJ / "04_Generated-Clips/refs/harvey_ref_v01.jpg"
+STYLE_REFS_005 = (PROJ / "04_Generated-Clips/part01/refs/v02_vertex_stills/09_heart_clock_v02.jpg",
+                   PROJ / "04_Generated-Clips/part01/refs/v02_vertex_stills/03_band_tightens_v02.jpg")
 CREDIT_LOG = EDIT / "VERTEX_CREDIT_LOG_v01.json"
 # Free Trial on the console before any 005 Vertex spend (1 Oct 23:05 UK, Part 01 section).
 CREDIT_BASE_GBP = 209.53
@@ -191,6 +193,19 @@ def client():
     return genai.Client(vertexai=True, project=PROJECT, location=LOCATION)
 
 
+def with_retry(fn, what: str, tries: int = 8):
+    """Vertex answers 429 RESOURCE_EXHAUSTED under parallel load: back off and try again."""
+    for i in range(tries):
+        try:
+            return fn()
+        except Exception as e:  # noqa: BLE001
+            if "429" not in str(e) and "RESOURCE_EXHAUSTED" not in str(e) or i == tries - 1:
+                raise
+            wait = min(20 * (i + 1), 120)
+            print(f"  429 on {what}; retry in {wait}s", flush=True)
+            time.sleep(wait)
+
+
 def img_part(p: Path):
     from google.genai import types
     mime = "image/png" if p.suffix.lower() == ".png" else "image/jpeg"
@@ -212,6 +227,9 @@ def still_prompt(pl: dict, extra: str) -> str:
     for drop in ("Silent.", "Continuous motion through the final frame.", "Premium Animistry-class 3D cartoon."):
         p = p.replace(drop, "")
     tail = "" if pl.get("explorer") else " No boy explorer character in this image."
+    if pl["quality"] == "Fast":
+        tail += (" ABSOLUTELY NO candles, candlesticks, oil lamps, table lamps, lanterns, fireplaces "
+                 "or any flame anywhere in the image; the only light is daylight from a window.")
     return ("Finished 3D cartoon still: the FIRST frame of this moving shot, key subject "
             f"mid-action and readable, no motion blur. {p.strip()} {extra} {STYLE}{tail}").strip()
 
@@ -227,7 +245,10 @@ def cmd_still(a) -> None:
     dest = STILLS / f"{a.plate}_v{n:02d}.jpg"
     dest.touch()
     parts, lead, k = [], "", 0
-    for ref, what in ((STYLE_REF, "the locked channel style"), (LIVE_THUMB, "the live channel look")):
+    # The 001 ward and the 004 thumb pull in their rooms and lit lamps; Part 01's passed frames
+    # are this film's look.
+    refs = tuple((r, "this film's locked look (passed by Ben)") for r in STYLE_REFS_005)
+    for ref, what in refs:
         if ref.exists():
             parts.append(img_part(ref)); k += 1
             lead += (f"Image {k} shows {what} only: match its 3D cartoon material, finish and warm "
@@ -254,16 +275,22 @@ def cmd_still(a) -> None:
     parts.append(lead + still_prompt(pl, a.extra or ""))
     c = client()
     print(f"STILL {a.plate} v{n:02d} model={IMAGE_MODEL} path=vertex project={PROJECT}", flush=True)
-    r = c.models.generate_content(
-        model=IMAGE_MODEL, contents=parts,
-        config=types.GenerateContentConfig(response_modalities=["IMAGE"],
-                                           image_config=types.ImageConfig(aspect_ratio="16:9")))
+    try:
+        r = with_retry(lambda: c.models.generate_content(
+            model=IMAGE_MODEL, contents=parts,
+            config=types.GenerateContentConfig(response_modalities=["IMAGE"],
+                                               image_config=types.ImageConfig(aspect_ratio="16:9"))),
+            f"still {a.plate}")
+    except BaseException:
+        dest.unlink(missing_ok=True)
+        raise
     data = None
     for cand in r.candidates or []:
         for part in (cand.content.parts if cand.content else []) or []:
             if part.inline_data and part.inline_data.data:
                 data = part.inline_data.data
     if not data:
+        dest.unlink(missing_ok=True)
         raise SystemExit(f"STOP: no image for {a.plate}")
     to_1080(data, dest)
     rec = {"plate": a.plate, "v": n, "file": rel(dest), "sha256": sha256(dest),
@@ -327,13 +354,17 @@ def cmd_mint(a) -> None:
           f"location={LOCATION} res={RESOLUTION} framing={a.framing} ===", flush=True)
     c = client()
     t0 = time.time()
-    op = c.models.generate_videos(
-        model=model,
-        source=types.GenerateVideosSource(prompt=prompt, image=types.Image.from_file(location=str(still))),
-        config=types.GenerateVideosConfig(number_of_videos=1, duration_seconds=CLIP_S,
-                                          aspect_ratio="16:9", resolution=RESOLUTION,
-                                          generate_audio=False),
-    )
+    try:
+        op = with_retry(lambda: c.models.generate_videos(
+            model=model,
+            source=types.GenerateVideosSource(prompt=prompt, image=types.Image.from_file(location=str(still))),
+            config=types.GenerateVideosConfig(number_of_videos=1, duration_seconds=CLIP_S,
+                                              aspect_ratio="16:9", resolution=RESOLUTION,
+                                              generate_audio=False),
+        ), f"mint {a.plate}")
+    except BaseException:
+        dest.unlink(missing_ok=True)
+        raise
     entry = {
         "plate": a.plate, "take": take, "model": model, "quality": q, "path": "vertex",
         "seconds": CLIP_S, "resolution": RESOLUTION, "generate_audio": False,
