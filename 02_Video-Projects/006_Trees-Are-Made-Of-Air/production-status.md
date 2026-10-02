@@ -11,25 +11,25 @@
 | Episode gate | **PASS** on v02, 2 Oct 2026 (output below) |
 | lint:package | PASS on the draft package after the neighbours block edit (captions warning only), 2 Oct 2026. Title, description v01, tags v01 and schedule are proposals |
 | Script sign-off | v01 approved by Claude on the desk with 3 accuracy fixes (#180 comment 5950401504); **v02** = those fixes, `01_Script/trees_script_master_v02.md` |
-| VO | **v02 finish for Claude's review** (listen file `02_Voiceover/hos_006_vo_all_parts_listen_v02.mp3`, 8:29.35, sha `304f83b4…`). Loudness, peak and pauses PASS on every part; `vo_check` word diff FAILs only on spelled-out numbers (check bug, see 2 Oct VO section) |
-| Picture | pending. Flow shows **62 credits** (not reset) on 2 Oct; boards after Claude's VO review, Flow first, Vertex top-up only, stop at £0 |
+| VO | **v02 accepted** by Claude (#180 comment 5951184558) on the fixed `vo_check` (`358d9c7`, PR #188): **PASS** on all five parts and the listen file, 2 Oct (output below). "Genevan" confirmed in the take (whisper large-v3, 0.98) |
+| Picture | **boards v01 for Claude's review with a priced plan** (`07_Edit-Project/parts/part-0N_plates_v01.json`, `PICTURE_PLAN_v01.json`). 92 rows = 23 Quality + 59 Fast + 10 reuse. Vertex Free Trial **£65.73** before boarding; Flow **62 credits**. Expected £138.37 with 005's retake rate, so **£72.64 over the £0 floor** unless the 0-credit Flow options are approved. Nothing minted |
 | Runtime target | 7–9 min, 5 parts. Script 1,284 spoken words ≈ 8:34 at 150 wpm (nearer 8:15 at the channel's VO pace) |
 | Air | proposed **Thu 5 Nov 2026 18:00 UK = 18:00 UTC**, normal publish (no Premiere); not signed off |
 | Shorts | 3 planned (lead Fri 6 Nov proposed), one a day at most, Related → this long; dates around the 005 and back-catalogue Shorts set by Claude |
 
 ## STOP
 
-- **VO v02 waits for Claude's review on the desk** (in Ben's place). No boards or picture spend until he accepts it. Credit can run to £0, never onto paid billing.
+- **Boards v01 and the priced plan wait for Claude's review on the desk.** No picture spend until he accepts the boards and Ben decides the top-up, or the 0-credit Flow options. Credit can run to £0, never onto paid billing.
 
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 Plants Eat Soil | `07_Edit-Project/parts/part-01_plates_v01.json` (template) | — | script v02 · VO v02 |
-| 02 Five Years and Two Ounces | | | script v02 · VO v02 |
-| 03 The Air That Mint Repaired | | | script v02 · VO v02 |
-| 04 Bubbles in the Sunlight | | | script v02 · VO v02 |
-| 05 Carbon From the Sky | | | script v02 · VO v02 |
+| 01 Plants Eat Soil | `07_Edit-Project/parts/part-01_plates_v01.json` (12 rows: 3 Q, 9 F) | — | script v02 · VO v02 PASS · board v01 |
+| 02 Five Years and Two Ounces | `part-02_plates_v01.json` (22: 4 Q, 17 F, 1 reuse) | | script v02 · VO v02 PASS · board v01 |
+| 03 The Air That Mint Repaired | `part-03_plates_v01.json` (18: 4 Q, 13 F, 1 reuse) | | script v02 · VO v02 PASS · board v01 |
+| 04 Bubbles in the Sunlight | `part-04_plates_v01.json` (16: 6 Q, 8 F, 2 reuse) | | script v02 · VO v02 PASS · board v01 |
+| 05 Carbon From the Sky | `part-05_plates_v01.json` (24: 6 Q, 12 F, 6 reuse) | | script v02 · VO v02 PASS · board v01 |
 
 ## 2 Oct 2026 — scaffold, script v01, gates (Grok)
 
@@ -254,5 +254,105 @@ The audio says the script's words. The check is unchanged: per AGENTS.md, a fix 
 ### Flow credits (before boards)
 
 The Flow page on the Mini's CDP Chrome (`benoats@googlemail.com`, ULTRA tier) reads **"62 Google Flow credits"** with the banner "You're running low on Google Flow credits. Your credits will reset monthly". So the monthly credits **have not reset** as of 2 Oct, about 12:30 UK. Vertex Free Trial remaining: still to read before boarding.
+
+## 2 Oct 2026 — VO accepted on the fixed vo_check, boards v01 and priced plan (Grok, desk task 5951184558)
+
+Branch `grok/hos-006-trees-script` (worktree on the Mini, `/Users/benjaminoats/YouTube/hos-006-trees`). Nothing has been minted. Film records are in `02_Video-Projects/006_Trees-Are-Made-Of-Air/production-status.md`.
+
+### 1. VO v02: `vo_check` PASS
+
+I ran `git checkout origin/claude/hos-repo-access-qdfmrk -- 00_Brand/Channel-Setup/tools/vo_check.py` (`358d9c7`). Then `vo_check.py <take> --script 01_Script/trees_script_master_v02.md --part N`, and the same without `--part` for the listen file (faster-whisper, `~/.venvs/hos-vo`). I didn't commit the file on the 006 branch, so it stays in #188.
+
+```
+PASS  part01_plants_eat_soil_v02.mp3  1:01.05  mean -21.3 dB  peak -2.3 dB  160 wpm
+   first minute: title_question 4.28s  promise 7.36s
+PASS  part02_five_years_and_two_ounces_v02.mp3  1:57.00  mean -21.5 dB  peak -2.3 dB  158 wpm
+PASS  part03_the_air_that_mint_repaired_v02.mp3  1:34.23  mean -21.7 dB  peak -2.3 dB  150 wpm
+   warn  replace at ~0:21.22: script 'he wrote probably take some of their' / heard 'he wrote probably takes some of their' — sounds alike (likely the transcriber); listen
+PASS  part04_bubbles_in_the_sunlight_v02.mp3  1:31.32  mean -22.9 dB  peak -2.3 dB  142 wpm
+   warn  pace 142 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+   warn  replace at ~0:04.04: script 'doctor called jan ingenhousz took a house' / heard 'doctor called jan ingenhaus took a house' — sounds alike (likely the transcriber); listen
+PASS  part05_carbon_from_the_sky_v02.mp3  2:21.76  mean -22.1 dB  peak -2.2 dB  151 wpm
+   warn  replace at ~0:12.66: script 'then in another genevan nicolas theodore de' / heard 'then in another geneva nicolas theodor de' — sounds alike (likely the transcriber); listen
+   warn  replace at ~0:14.20: script 'another genevan nicolas theodore de saussure did' / heard 'another geneva nicolas theodor de saussure did' — sounds alike (likely the transcriber); listen
+   warn  replace at ~1:59.06: script 'sun together they proved that a tree' / heard 'sun together they prove that a tree' — sounds alike (likely the transcriber); listen
+PASS  hos_006_vo_all_parts_listen_v02.mp3  8:29.35  mean -21.9 dB  peak -2.2 dB  151 wpm
+   first minute: title_question 133.48s  promise 7.34s
+   warn  replace at ~4:26.68: script 'doctor called jan ingenhousz took a house' / heard 'doctor called jan ingenhaus took a house' — sounds alike (likely the transcriber); listen
+   warn  replace at ~6:07.76: script 'then in another genevan nicolas theodore de' / heard 'then in another geneva nicolas theodore de' — sounds alike (likely the transcriber); listen
+   warn  replace at ~7:55.04: script 'sun together they proved that a tree' / heard 'sun together they prove that a tree' — sounds alike (likely the transcriber); listen
+```
+
+The listen file's `title_question 133.48s` is the whole-film search finding a later question. Part 01 puts the title question at 4.28 s.
+
+**"Genevan" (Part 05, about 0:12).** I cut 0:09–0:18 out of the Part 05 take and re-transcribed it on its own with word timings. Both models hear the "-n":
+
+```
+large-v3  plain   … Then, in 1804, another Genevan, Nicolas Theodore de Saussure, did what   ('Genevan,' 14.02–14.68 s, p=0.98)
+large-v3  prompt  … another Genevan, Nicolas Theodore de Saussure, did                      ('Genevan,' p=0.98)
+medium.en plain   … another Genevan, Nicolas Théodore de Saussure, did what he called …    ('Genevan,' 14.20–14.88 s, p=0.79)
+```
+
+A short pause follows "Genevan" ("Nicolas" starts at 14.84 s), so the "-n" isn't swallowed by the next word. The small model's "Geneva" comes from the full-take context, so I didn't regenerate anything. I can't listen myself; this is the transcriber evidence. Ben's ear on that one word at about 6:09 in the listen file would settle it.
+
+### 2. Boards v01, re-timed from VO v02
+
+- `07_Edit-Project/_retime_vo_v02.py` writes `VO_RETIME_v02.json`, timing every sentence from the v02 takes with the same method as 005. It uses `vo_check.norm()`, so spoken numbers don't shift sentence starts.
+  - **Film timeline:** VO runs 0:00–8:35.36. Chapter cards come in at 1:01.65, 3:01.15, 4:37.88 and 6:11.70; each part's VO starts 1.9 s after its card.
+- `07_Edit-Project/_build_plate_boards_v01.py` writes `parts/part-0N_plates_v01.json` and `PICTURE_PLAN_v01.json`.
+  - **Each plate records:** its start time, the VO lines it lands on, a side label, and Quality or Fast with the reason.
+  - **Pricing per plate:** route, clip length, first-take cost, expected cost and the running total.
+  - **Limits:** every plate is 2.4–7.9 s, and the Explorer appears in 3 beats (Part 02 snow garden, Part 04 shade jar, Part 05 willow). None is in the first minute, and there are no faces before Aristotle at 0:24.
+- **Quality only for faces and fragile light.** That means:
+  - each named person's first readable face: Aristotle, van Helmont, Hales, Priestley, Ingenhousz, Senebier and de Saussure;
+  - the 3 Explorer plates;
+  - flames or fire as the hero light: furnace, desk candle, charcoal fire, Priestley's candles, the oxygen blaze and the night candle;
+  - glows: the air threads at 0:00, the bubbles in a sunbeam, the leaf glow, sugar and oxygen, the glowing food and the carbon atom.
+  - **Made Fast instead:** the leaf cutaways, the shimmer off the cold coals and the closing "pulled down" rise. Their prompts keep every glow, flame and lamp out of frame.
+- **10 free reuse rows.** Each cuts a later window of a KEEP clip as a callback, and the source is minted long enough to hold both windows:
+  - Part 02's `11_furnace_again` reuses `01_furnace_soil`.
+  - Part 03's "PLANTS REPAIR THE AIR" reuses `14_trees_breathe`.
+  - Part 04: "the gas Priestley had found" reuses his candle burning tall from Part 03, and "back into the sun" reuses the bubbles macro.
+  - Part 05 reuses the garden willow, the air threads from 0:00, the scale pointer, the watering, and the pot, jar and leaf table from Part 01.
+  - The last line, "fired tiny particles at gold…", uses **004's live KEEP `11_gold_foil_bounce_v01.mp4`** (sha `5436abd1…`). It hands off to the atom film for free; if you'd rather have new picture there, that's one more Quality mint.
+- **Shorter clips on Vertex.** Each plate is minted as the shortest 4, 6 or 8 s Veo clip that holds its window plus 0.5 s. That's 180 s of Quality and 370 s of Fast in total.
+
+| Part | Rows | Quality | Fast | Reuse | On Flow | First take | Expected |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 01 Plants Eat Soil | 12 | 3 | 9 | 0 | 1 | £7.84 | £18.58 |
+| 02 Five Years and Two Ounces | 22 | 4 | 17 | 1 | 0 | £13.76 | £31.31 |
+| 03 The Air That Mint Repaired | 18 | 4 | 13 | 1 | 1 | £11.36 | £26.66 |
+| 04 Bubbles in the Sunlight | 16 | 6 | 8 | 2 | 0 | £11.52 | £28.44 |
+| 05 Carbon From the Sky | 24 | 6 | 12 | 6 | 1 | £13.92 | £33.38 |
+| **Film** | **92** | **23** | **59** | **10** | **3** | **£58.40** | **£138.37** |
+
+### 3. Priced plan
+
+**Vertex balance before boarding:** Free Trial **£65.73**, Available. I read it with `_vertex_credit_v01.py before_boards_006_2026-10-02` at about 12:30 UK and logged it in `VERTEX_CREDIT_LOG_v01.json`; the screenshot is on the Mini and gitignored. The balance was £209.53 before 005 Part 02, so **005 really cost £143.80** against \$193.87 logged, about £0.742 per dollar.
+
+**Flow, read from the picker today on the Mini's Chrome:** the account shows **62 credits**. A clip costs 5 credits on Veo 3.1 Lite, 10 on Fast and 100 on Quality; **Lite [Lower Priority] costs 0**, and **Nano Banana 2 stills cost 0**. Flow doesn't show the reset date, only "resets monthly".
+
+- **On Flow's 62 credits:** the three held establishing shots, on Fast with 2 takes each (60 credits): `P1:09_vilvoorde`, `P3:06_leeds_brewery` and `P5:01_geneva_lake`. A third take on any of them moves to Vertex Fast. Quality isn't possible on Flow at 100 credits.
+- **On Vertex:** the other 79 mints. Quality uses `veo-3.1-generate-001`, Fast uses `veo-3.1-fast-generate-001`, with start frames from `gemini-2.5-flash-image`.
+- **Rates:** \$0.20 a second for Quality, \$0.10 for Fast and \$0.039 a still. I converted at the minter's conservative £0.80 per dollar; at 005's real rate everything is about 7% lower.
+- **First-take cost: £58.40.** Every plate's first take fits under £65.73.
+- **Retake allowance at 005's average rate:** 2.59 takes per kept Quality plate and 1.96 per kept Fast plate, plus 2.28 stills per plate. That gives **£138.37 expected, £72.64 over the £0 floor**. At 005's real exchange rate it's about £128, or £63 over.
+
+**Plates beyond the floor,** taken in minting order (Part 01 → 05) with expected cost: 39 plates, £73.56 expected. Reuse rows and Flow plates cost nothing and aren't in this list.
+
+- **Part 03 (8):** `10_mint_jar` F, `11_candle_tall` Q, `12_mouse_mint` F, `13_fires_breath` F, `14_trees_breathe` F, `15_quill_vegetable` F, `17_notebook_tick` F, `18_dark_window` F
+- **Part 04 (14):** `01_villa` F, `02_ingenhousz_jars` Q, `03_plunge_leaf` F, `04_sunny_window` F, `05_bubbles_macro` Q, `06_collect_blaze` Q, `08_explorer_shade` Q, `10_only_green` F, `11_night_jars` Q, `12_shutters_open` F, `13_sun_canopy` F, `14_leaf_glow` Q, `15_leaf_turns_sun` F, `16_pores_question` F
+- **Part 05 (17):** `02_senebier_jars` Q, `03_de_saussure` Q, `04_fine_scales` F, `05_sums_add_up` F, `06_leaf_in` F, `07_sugar_oxygen` Q, `08_sugar_wood` F, `11_trunk_pie` F, `14_built_from_sky` F, `15_food_glow` Q, `16_cow_grass` F, `17_wind_air` F, `18_forest_sea` F, `19_dots_crowd` F, `20_explorer_willow` Q, `22_pulled_down` F, `23_carbon_atom` Q
+
+**Top-up for Ben: £73** (to cover the 005 retake rate at the conservative exchange rate).
+
+### 4. Cheaper options that need your OK (not in the plan)
+
+1. **Flow "Veo 3.1 Lite [Lower Priority]" at 0 credits** for the 56 Fast plates now on Vertex. This would save £62.06 expected. Lite isn't in the playbook's model table, so it needs your OK (and Ben's, if it's a rule change). I'd test one plate first and judge it on continuous playback, keeping Lite off anything with a face, a hand action or fine detail.
+2. **Start frames from Flow's Nano Banana 2 at 0 credits** instead of Vertex stills. This saves £5.62.
+
+With both, the expected cost is about **£70.69, around £5 over** (or about £65.6 at 005's real rate, right at the floor). A smaller top-up of about £10 would then cover the retake risk.
+
+Next on your word: mint Part 01 (Vertex, from `01_willow_air`) and read the credit after each part, as with 005. I'll do any merges you want in the boards first.
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.

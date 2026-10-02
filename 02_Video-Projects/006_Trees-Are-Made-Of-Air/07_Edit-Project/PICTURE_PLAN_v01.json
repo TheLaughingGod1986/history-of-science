@@ -1,0 +1,408 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "written": "2026-10-02",
+  "task": "Claude desk PR #180 comment 5951184558",
+  "vertex_balance_before_boards": {
+    "label": "before_boards_006_2026-10-02",
+    "at": "2026-10-02T11:28:23+00:00",
+    "free_trial_remaining_gbp": 65.73,
+    "status": "Available",
+    "screenshot": "vertex_credits_before_boards_006_2026-10-02.png",
+    "floor_gbp": 0.0
+  },
+  "floor_gbp": 0.0,
+  "flow": {
+    "credits_left": 62,
+    "cost_per_clip": {
+      "Lite [Lower Priority]": 0,
+      "Lite": 5,
+      "Fast": 10,
+      "Quality": 100,
+      "Nano Banana 2 still": 0
+    },
+    "plates": [
+      "P1:09_vilvoorde",
+      "P3:06_leeds_brewery",
+      "P5:01_geneva_lake"
+    ],
+    "credits_planned": 60
+  },
+  "rates": {
+    "vertex_usd_per_s": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "usd_per_still": 0.039,
+    "gbp_per_usd_planning": 0.8,
+    "gbp_per_usd_005_actual": 0.742,
+    "takes_per_keep_005": {
+      "Quality": 2.59,
+      "Fast": 1.96
+    },
+    "stills_per_plate_005": 2.28
+  },
+  "totals": {
+    "rows": 92,
+    "mints": 82,
+    "Quality": 23,
+    "Fast": 59,
+    "reuse": 10,
+    "flow": 3,
+    "vertex_s": {
+      "Quality": 180,
+      "Fast": 370
+    },
+    "try1_gbp": 58.4,
+    "expected_gbp": 138.37
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "rows": 12,
+      "Quality": 3,
+      "Fast": 9,
+      "reuse": 0,
+      "flow": 1,
+      "try1_gbp": 7.84,
+      "expected_gbp": 18.58
+    },
+    {
+      "part": 2,
+      "rows": 22,
+      "Quality": 4,
+      "Fast": 17,
+      "reuse": 1,
+      "flow": 0,
+      "try1_gbp": 13.76,
+      "expected_gbp": 31.31
+    },
+    {
+      "part": 3,
+      "rows": 18,
+      "Quality": 4,
+      "Fast": 13,
+      "reuse": 1,
+      "flow": 1,
+      "try1_gbp": 11.36,
+      "expected_gbp": 26.66
+    },
+    {
+      "part": 4,
+      "rows": 16,
+      "Quality": 6,
+      "Fast": 8,
+      "reuse": 2,
+      "flow": 0,
+      "try1_gbp": 11.52,
+      "expected_gbp": 28.44
+    },
+    {
+      "part": 5,
+      "rows": 24,
+      "Quality": 6,
+      "Fast": 12,
+      "reuse": 6,
+      "flow": 1,
+      "try1_gbp": 13.92,
+      "expected_gbp": 33.38
+    }
+  ],
+  "top_up_needed_gbp": 72.64,
+  "beyond_floor": [
+    {
+      "key": "P3:10_mint_jar",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 66.08
+    },
+    {
+      "key": "P3:11_candle_tall",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 69.47
+    },
+    {
+      "key": "P3:12_mouse_mint",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 70.8
+    },
+    {
+      "key": "P3:13_fires_breath",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 72.12
+    },
+    {
+      "key": "P3:14_trees_breathe",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 73.45
+    },
+    {
+      "key": "P3:15_quill_vegetable",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 74.46
+    },
+    {
+      "key": "P3:17_notebook_tick",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 75.47
+    },
+    {
+      "key": "P3:18_dark_window",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 76.48
+    },
+    {
+      "key": "P4:01_villa",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 77.81
+    },
+    {
+      "key": "P4:02_ingenhousz_jars",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 81.2
+    },
+    {
+      "key": "P4:03_plunge_leaf",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 82.21
+    },
+    {
+      "key": "P4:04_sunny_window",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 83.22
+    },
+    {
+      "key": "P4:05_bubbles_macro",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 86.61
+    },
+    {
+      "key": "P4:06_collect_blaze",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 89.99
+    },
+    {
+      "key": "P4:08_explorer_shade",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 93.38
+    },
+    {
+      "key": "P4:10_only_green",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 94.39
+    },
+    {
+      "key": "P4:11_night_jars",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 97.78
+    },
+    {
+      "key": "P4:12_shutters_open",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 98.79
+    },
+    {
+      "key": "P4:13_sun_canopy",
+      "quality": "Fast",
+      "clip_s": 4,
+      "expected_gbp": 0.7,
+      "cum_expected_gbp": 99.49
+    },
+    {
+      "key": "P4:14_leaf_glow",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 102.87
+    },
+    {
+      "key": "P4:15_leaf_turns_sun",
+      "quality": "Fast",
+      "clip_s": 4,
+      "expected_gbp": 0.7,
+      "cum_expected_gbp": 103.57
+    },
+    {
+      "key": "P4:16_pores_question",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 104.9
+    },
+    {
+      "key": "P5:02_senebier_jars",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 108.28
+    },
+    {
+      "key": "P5:03_de_saussure",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 111.67
+    },
+    {
+      "key": "P5:04_fine_scales",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 113.0
+    },
+    {
+      "key": "P5:05_sums_add_up",
+      "quality": "Fast",
+      "clip_s": 4,
+      "expected_gbp": 0.7,
+      "cum_expected_gbp": 113.69
+    },
+    {
+      "key": "P5:06_leaf_in",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 115.02
+    },
+    {
+      "key": "P5:07_sugar_oxygen",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 118.41
+    },
+    {
+      "key": "P5:08_sugar_wood",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 119.73
+    },
+    {
+      "key": "P5:11_trunk_pie",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 120.74
+    },
+    {
+      "key": "P5:14_built_from_sky",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 122.07
+    },
+    {
+      "key": "P5:15_food_glow",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 125.45
+    },
+    {
+      "key": "P5:16_cow_grass",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 126.78
+    },
+    {
+      "key": "P5:17_wind_air",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 127.79
+    },
+    {
+      "key": "P5:18_forest_sea",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 129.12
+    },
+    {
+      "key": "P5:19_dots_crowd",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 130.13
+    },
+    {
+      "key": "P5:20_explorer_willow",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 133.52
+    },
+    {
+      "key": "P5:22_pulled_down",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 134.84
+    },
+    {
+      "key": "P5:23_carbon_atom",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 138.23
+    }
+  ],
+  "options_not_in_plan": {
+    "flow_lite_lower_priority": {
+      "credits": 0,
+      "plates": 56,
+      "would_save_gbp": 62.06,
+      "note": "Flow shows 'Veo 3.1 - Lite [Lower Priority]' at 0 credits. Not in the playbook's model table; needs Claude/Ben's OK and a one-plate trial judged on continuous playback."
+    },
+    "flow_nano_banana_stills": {
+      "credits": 0,
+      "would_save_gbp": 5.62,
+      "note": "Start frames from Flow's Nano Banana 2 (0 credits) instead of Vertex gemini-2.5-flash-image."
+    }
+  },
+  "external_reuse": {
+    "004:part01/11_gold_foil_bounce": {
+      "quality": "KEEP (live in 004)",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part01/raw/v01/11_gold_foil_bounce_v01.mp4",
+      "sha256": "5436abd10fa19bdd0f48f69d1c6d56a02ae25de30598d8ae739ef309c3e9f437",
+      "duration_s": 8.0,
+      "note": "The hand-off line to the atom film: 004's live gold-foil plate. Alternative if Claude wants new picture: one Quality plate (+1 Quality mint)."
+    }
+  }
+}

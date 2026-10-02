@@ -1,0 +1,390 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "working_title": "The Willow Tree That Was Made of Air",
+  "part": "04",
+  "title": "Bubbles in the Sunlight",
+  "status": "BOARD_V01",
+  "mint": false,
+  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v02 (VO_RETIME_v02.json) · priced (Claude desk task 5951184558, 2 Oct 2026)",
+  "script": "01_Script/trees_script_master_v02.md",
+  "vo_file": "02_Voiceover/part04_bubbles_in_the_sunlight_v02.mp3",
+  "vo_sha256": "64dea1c0dd63d3fdbbccedef86ee6d8bcf91911f3ca02f4e9665883f32e32ed2",
+  "vo_duration_s": 91.32,
+  "chapter_card": {
+    "text": "Bubbles in the Sunlight",
+    "in_s": 277.88,
+    "hold_s": 1.5,
+    "treatment": "soft cross-fade after the last word + 0.6 s breath; music continues"
+  },
+  "vo_film_start_s": 279.78,
+  "part_end_film_s": 371.7,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "open_stamp": {
+    "after_s": 1.5,
+    "text": "Summer 1779",
+    "treatment": "Didot italic side label in the edit"
+  },
+  "set_language": "Warm, sunlit natural-history world: oak, red brick, clay pots, glass jars, brass balances, green willow leaves. Van Helmont's walled garden at Vilvoorde (grey Flemish light, 1600s); Georgian English rooms (1700s); Geneva by the lake (1780s-1800s). Leaf cutaways are clean illustrated cross-sections. Say 'same Vilvoorde garden', 'same Priestley room' or 'same Ingenhousz sill' for continuity; never 'same DNA'.",
+  "explorer_lock": "ONE beat (plate 08): the Explorer lifts a fizzing jar from the sunny sill, carries it into the shadow where the bubbles stop, steps back into the sunbeam where they start again, grins and sets it down. Attach the Explorer reference.",
+  "explorer_plates": 1,
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; a mouse or any animal hurt, dying or still (Priestley's mouse is only ever alive and lively); lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; garbled writing; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels, numbers and dates are added in the edit unless the plate says a quill writes them); twin Explorer; faces in the first two seconds of the film; a flame, lamp, furnace glow or glowing cutaway on a Fast plate. Never say 'same DNA' or 'lab DNA' in a Veo prompt.",
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text or wrong numbers (200, 5, 169, 62 checked by hand)",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship",
+    "an animal hurt, dying or limp",
+    "a face in the first two seconds of the film",
+    "a flame, lamp or glow in frame on a Fast plate (remint on Quality or reframe)"
+  ],
+  "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns. A reuse row cuts a different window of a KEEP clip; never a still.",
+  "quality_note": "Flow Veo 3.1 Fast on the Mini's CDP worker (benoats@googlemail.com) for the held establishing shots; Vertex AI Veo 3.1 (gen-lang-client-0538779324) for the rest: veo-3.1-generate-001 for Quality, veo-3.1-fast-generate-001 for Fast, 4/6/8 s clips. Quality only for a named person's face, the Explorer, or a flame/furnace/glow/sunbeam hero. A Fast take with a flame, lamp or glow in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+  "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
+  "counts": {
+    "rows": 16,
+    "mints": 14,
+    "Quality": 6,
+    "Fast": 8,
+    "reuse": 2
+  },
+  "plates": [
+    {
+      "id": "01_villa",
+      "t_s": 279.78,
+      "t": "4:39.78",
+      "explorer": false,
+      "side_label": "A VILLA NEAR LONDON · 1779",
+      "quality": "Fast",
+      "engine_reason": "Fast: held establishing shot, slow push, no readable faces, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Summer 1779: a Georgian country house with tall windows in green fields; glass jars of water and leaves crowd every windowsill and glint in the sun. Held wide shot, slow push. No people. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.98,
+      "vo_land": [
+        "Summer, seventeen seventy-nine.",
+        "A Dutch doctor called Jan Ingenhousz took a house in the countryside just outside London, and in about three months, he ran more than five hundred experiments."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 77.81,
+      "beyond_floor": true
+    },
+    {
+      "id": "02_ingenhousz_jars",
+      "t_s": 285.76,
+      "t": "4:45.76",
+      "explorer": false,
+      "side_label": "JAN INGENHOUSZ",
+      "quality": "Quality",
+      "engine_reason": "Quality: a named person's readable face is the hero (first appearance).",
+      "prompt": "Premium Animistry-class 3D cartoon. Inside the sunny house, jars of leaves on every sill and table: Jan Ingenhousz, a Dutch doctor of about fifty, clean-shaven, round cheeks, powdered grey wig, brown coat, moves briskly along the rows, peering into each jar and noting it down. Readable, finished face. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.82,
+      "vo_land": [
+        "(continues) A Dutch doctor called Jan Ingenhousz took a house in the countryside just outside London, and in about three months, he ran more than five hundred experiments."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 81.2,
+      "beyond_floor": true
+    },
+    {
+      "id": "03_plunge_leaf",
+      "t_s": 293.58,
+      "t": "4:53.58",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: hands and props only, no face, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on Ingenhousz's hands plunging a fresh green leaf into a clear jar of water on a sunny sill. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.54,
+      "vo_land": [
+        "He plunged fresh leaves into jars of water and watched."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 82.21,
+      "beyond_floor": true
+    },
+    {
+      "id": "04_sunny_window",
+      "t_s": 298.12,
+      "t": "4:58.12",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Point of view at the tall sunny window: a row of jars with green leaves on the sill, warm sunlight falling across them, the summer fields beyond. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.52,
+      "vo_land": [
+        "Picture yourself at his window.",
+        "In the sunshine you see tiny silver bubbles appear on the green leaf and rise to the top."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 83.22,
+      "beyond_floor": true
+    },
+    {
+      "id": "05_bubbles_macro",
+      "t_s": 302.64,
+      "t": "5:02.64",
+      "explorer": false,
+      "side_label": "BUBBLES",
+      "quality": "Quality",
+      "engine_reason": "Quality: sunbeam glints on bubbles or a leaf are the hero (fragile light).",
+      "prompt": "Premium Animistry-class 3D cartoon. Macro: tiny silver bubbles bead on a green leaf under water in a sunbeam, swell, let go and rise to the top, glinting. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.12,
+      "vo_land": [
+        "(continues) In the sunshine you see tiny silver bubbles appear on the green leaf and rise to the top."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 86.61,
+      "beyond_floor": true
+    },
+    {
+      "id": "06_collect_blaze",
+      "t_s": 306.76,
+      "t": "5:06.76",
+      "explorer": false,
+      "side_label": "OXYGEN (on the blaze)",
+      "quality": "Quality",
+      "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
+      "prompt": "Premium Animistry-class 3D cartoon. Ingenhousz's hands hold a small upside-down glass tube over the leaf jar to collect the rising bubbles; then a small candle flame lowered into the tube blazes up bright and tall. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.88,
+      "vo_land": [
+        "He collected the bubbles and tested the gas.",
+        "A candle flame burned brighter in it than in ordinary air."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 89.99,
+      "beyond_floor": true
+    },
+    {
+      "id": "07_priestley_callback",
+      "t_s": 314.64,
+      "t": "5:14.64",
+      "explorer": false,
+      "side_label": null,
+      "quality": "reuse",
+      "reuse_of": "P3:11_candle_tall",
+      "clip_in_s": 0.0,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 6.9,
+      "vo_land": [
+        "It was the gas Priestley had found in seventeen seventy-four, which we now call oxygen."
+      ],
+      "reuse_window": "0.00-6.90 s of P3:11_candle_tall",
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    },
+    {
+      "id": "08_explorer_shade",
+      "t_s": 321.54,
+      "t": "5:21.54",
+      "explorer": true,
+      "side_label": "NO LIGHT, NO BUBBLES",
+      "quality": "Quality",
+      "engine_reason": "Quality: explorer fidelity. Face and hair are UAT hard fail 4 (glasses, full hair, one Explorer); a Fast remint would cost more than the difference.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same sunny room. Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He lifts a fizzing jar of leaves from the sunny sill and carries it into the shadow, where the bubbles stop; he steps back into the sunbeam where they start again, grins and sets it down. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame.",
+      "use_s": 7.18,
+      "vo_land": [
+        "Then came the clue that solved Priestley's puzzle.",
+        "Move the jar into the shade, and the bubbles stop."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 93.38,
+      "beyond_floor": true
+    },
+    {
+      "id": "09_bubbles_again",
+      "t_s": 328.72,
+      "t": "5:28.72",
+      "explorer": false,
+      "side_label": null,
+      "quality": "reuse",
+      "reuse_of": "P4:05_bubbles_macro",
+      "clip_in_s": 4.2,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 3.42,
+      "vo_land": [
+        "Move it back into the sun, and they start again."
+      ],
+      "reuse_window": "4.20-7.62 s of P4:05_bubbles_macro",
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    },
+    {
+      "id": "10_only_green",
+      "t_s": 332.14,
+      "t": "5:32.14",
+      "explorer": false,
+      "side_label": "ONLY THE GREEN PARTS",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Three jars of water on the sunny sill: a pale root, a red flower and a green leaf; only the green leaf fizzes with bubbles. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.6,
+      "vo_land": [
+        "Only the green parts made bubbles.",
+        "Roots and flowers didn't."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 94.39,
+      "beyond_floor": true
+    },
+    {
+      "id": "11_night_jars",
+      "t_s": 336.74,
+      "t": "5:36.74",
+      "explorer": false,
+      "side_label": "AT NIGHT, LIKE US",
+      "quality": "Quality",
+      "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
+      "prompt": "Premium Animistry-class 3D cartoon. The same room at night, moonlight on the jars; a small candle burning inside a sealed plant jar slowly dims and shrinks. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.84,
+      "vo_land": [
+        "And at night, the plant did the opposite: it made the air slightly worse, just like an animal."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 97.78,
+      "beyond_floor": true
+    },
+    {
+      "id": "12_shutters_open",
+      "t_s": 344.58,
+      "t": "5:44.58",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Morning: a hand swings open a wooden shutter and daylight floods across the jars on the sill; the leaves lift a little. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.42,
+      "vo_land": [
+        "(continues) And at night, the plant did the opposite: it made the air slightly worse, just like an animal.",
+        "So that was why Priestley's plants sometimes failed.",
+        "They needed light."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 98.79,
+      "beyond_floor": true
+    },
+    {
+      "id": "13_sun_canopy",
+      "t_s": 350.0,
+      "t": "5:50.00",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Looking straight up through a sunny tree canopy, leaves fluttering, light dappling between them. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 3.38,
+      "vo_land": [
+        "Why light?",
+        "Because light is energy."
+      ],
+      "route": "vertex",
+      "clip_s": 4,
+      "cost_try1_gbp": 0.32,
+      "cost_expected_gbp": 0.7,
+      "cum_expected_gbp": 99.49,
+      "beyond_floor": true
+    },
+    {
+      "id": "14_leaf_glow",
+      "t_s": 353.38,
+      "t": "5:53.38",
+      "explorer": false,
+      "side_label": "PHOTOSYNTHESIS (on the word, +4.6 s)",
+      "quality": "Quality",
+      "engine_reason": "Quality: glowing threads of air, a lit cutaway or a glowing atom is the hero (emissive light).",
+      "prompt": "Premium Animistry-class 3D cartoon. A sunbeam pours into a clean illustrated cutaway of a leaf; the green cells inside glow as they catch the light, and tiny golden specks gather and join together. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.86,
+      "vo_land": [
+        "A plant catches sunlight and uses it to make its own food.",
+        "We now call that photosynthesis, from the Greek for putting together with light."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 102.87,
+      "beyond_floor": true
+    },
+    {
+      "id": "15_leaf_turns_sun",
+      "t_s": 361.24,
+      "t": "6:01.24",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. A potted plant on the sunny sill slowly turns its leaves towards the window. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 2.92,
+      "vo_land": [
+        "(continues) We now call that photosynthesis, from the Greek for putting together with light."
+      ],
+      "route": "vertex",
+      "clip_s": 4,
+      "cost_try1_gbp": 0.32,
+      "cost_expected_gbp": 0.7,
+      "cum_expected_gbp": 103.57,
+      "beyond_floor": true
+    },
+    {
+      "id": "16_pores_question",
+      "t_s": 364.16,
+      "t": "6:04.16",
+      "explorer": false,
+      "side_label": "WHAT GOES IN?",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close-up of the underside of a green leaf: tiny pores open and close like little mouths; a faint drift of clear air hangs just outside them. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.54,
+      "vo_land": [
+        "But one question still remained.",
+        "The bubbles were something the leaf was giving out.",
+        "What was it taking in?"
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 104.9,
+      "beyond_floor": true
+    }
+  ]
+}

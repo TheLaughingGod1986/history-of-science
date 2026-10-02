@@ -1,0 +1,548 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "working_title": "The Willow Tree That Was Made of Air",
+  "part": "05",
+  "title": "Carbon From the Sky",
+  "status": "BOARD_V01",
+  "mint": false,
+  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v02 (VO_RETIME_v02.json) · priced (Claude desk task 5951184558, 2 Oct 2026)",
+  "script": "01_Script/trees_script_master_v02.md",
+  "vo_file": "02_Voiceover/part05_carbon_from_the_sky_v02.mp3",
+  "vo_sha256": "d8f5a499b548252756d39d467134515de2b6ab66ad0e3ba84de6179bd6233eba",
+  "vo_duration_s": 141.76,
+  "chapter_card": {
+    "text": "Carbon From the Sky",
+    "in_s": 371.7,
+    "hold_s": 1.5,
+    "treatment": "soft cross-fade after the last word + 0.6 s breath; music continues"
+  },
+  "vo_film_start_s": 373.6,
+  "part_end_film_s": 515.96,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "open_stamp": {
+    "after_s": 1.5,
+    "text": "Geneva, 1782",
+    "treatment": "Didot italic side label in the edit"
+  },
+  "set_language": "Warm, sunlit natural-history world: oak, red brick, clay pots, glass jars, brass balances, green willow leaves. Van Helmont's walled garden at Vilvoorde (grey Flemish light, 1600s); Georgian English rooms (1700s); Geneva by the lake (1780s-1800s). Leaf cutaways are clean illustrated cross-sections. Say 'same Vilvoorde garden', 'same Priestley room' or 'same Ingenhousz sill' for continuity; never 'same DNA'.",
+  "explorer_lock": "ONE beat (plate 20): under a great willow by a river the Explorer holds up an open hand in a sunbeam as if feeling invisible threads of air, watches a leaf turn to the light, smiles and walks away along the bank. Attach the Explorer reference.",
+  "explorer_plates": 1,
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; a mouse or any animal hurt, dying or still (Priestley's mouse is only ever alive and lively); lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; garbled writing; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels, numbers and dates are added in the edit unless the plate says a quill writes them); twin Explorer; faces in the first two seconds of the film; a flame, lamp, furnace glow or glowing cutaway on a Fast plate. Never say 'same DNA' or 'lab DNA' in a Veo prompt.",
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text or wrong numbers (200, 5, 169, 62 checked by hand)",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship",
+    "an animal hurt, dying or limp",
+    "a face in the first two seconds of the film",
+    "a flame, lamp or glow in frame on a Fast plate (remint on Quality or reframe)"
+  ],
+  "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns. A reuse row cuts a different window of a KEEP clip; never a still.",
+  "quality_note": "Flow Veo 3.1 Fast on the Mini's CDP worker (benoats@googlemail.com) for the held establishing shots; Vertex AI Veo 3.1 (gen-lang-client-0538779324) for the rest: veo-3.1-generate-001 for Quality, veo-3.1-fast-generate-001 for Fast, 4/6/8 s clips. Quality only for a named person's face, the Explorer, or a flame/furnace/glow/sunbeam hero. A Fast take with a flame, lamp or glow in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+  "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
+  "counts": {
+    "rows": 24,
+    "mints": 18,
+    "Quality": 6,
+    "Fast": 12,
+    "reuse": 6
+  },
+  "plates": [
+    {
+      "id": "01_geneva_lake",
+      "t_s": 373.6,
+      "t": "6:13.60",
+      "explorer": false,
+      "side_label": "GENEVA · 1782",
+      "quality": "Fast",
+      "engine_reason": "Fast: held establishing shot, slow push, no readable faces, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Geneva in the 1780s: the old town above the blue lake with snowy mountains beyond, boats with white sails. Held wide shot, slow push. No readable faces. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.5,
+      "vo_land": [
+        "In seventeen eighty-two, in Geneva, a pastor called Jean Senebier showed that leaves only made their bubbles when the water held fixed air, the gas we now call carbon dioxide."
+      ],
+      "route": "flow",
+      "clip_s": 8,
+      "flow_credits": 20,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0,
+      "route_note": "Flow Veo 3.1 Fast, 2 takes x 10 credits; a third take moves to Vertex Fast"
+    },
+    {
+      "id": "02_senebier_jars",
+      "t_s": 378.1,
+      "t": "6:18.10",
+      "explorer": false,
+      "side_label": "JEAN SENEBIER → FIXED AIR = CARBON DIOXIDE (+4.5 s)",
+      "quality": "Quality",
+      "engine_reason": "Quality: a named person's readable face is the hero (first appearance).",
+      "prompt": "Premium Animistry-class 3D cartoon. A bright room above the lake: Jean Senebier, a thin Genevan pastor of about forty, short dark hair, dark clerical coat with white bands at the neck, bubbles gas from a bellows tube into one of two jars of water with leaves in the sun; that jar fizzes with bubbles while the other stays still. Readable, finished face. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.46,
+      "vo_land": [
+        "(continues) In seventeen eighty-two, in Geneva, a pastor called Jean Senebier showed that leaves only made their bubbles when the water held fixed air, the gas we now call carbon dioxide."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 108.28,
+      "beyond_floor": true
+    },
+    {
+      "id": "03_de_saussure",
+      "t_s": 385.56,
+      "t": "6:25.56",
+      "explorer": false,
+      "side_label": "DE SAUSSURE · 1804",
+      "quality": "Quality",
+      "engine_reason": "Quality: a named person's readable face is the hero (first appearance).",
+      "prompt": "Premium Animistry-class 3D cartoon. A neat Geneva laboratory: Nicolas-Théodore de Saussure, a young man of about thirty-five, dark hair, high white collar, dark coat, lowers a glass bell over a small potted plant and seals its rim. Readable, finished face. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.0,
+      "vo_land": [
+        "Then, in eighteen-oh-four, another Genevan, Nicolas-Théodore de Saussure, did what van Helmont had done, but far more carefully."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 111.67,
+      "beyond_floor": true
+    },
+    {
+      "id": "04_fine_scales",
+      "t_s": 391.56,
+      "t": "6:31.56",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: hands and props only, no face, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on fine brass scales: de Saussure's hands weigh the sealed plant, a flask of water and a glass globe of air in turn, adding tiny weights with tweezers. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.54,
+      "vo_land": [
+        "(continues) Then, in eighteen-oh-four, another Genevan, Nicolas-Théodore de Saussure, did what van Helmont had done, but far more carefully.",
+        "He weighed the plant, the water, and the air around it."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 113.0,
+      "beyond_floor": true
+    },
+    {
+      "id": "05_sums_add_up",
+      "t_s": 399.1,
+      "t": "6:39.10",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper, props or a flat illustrated diagram; nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on a ledger: a quill draws a firm line under two columns of marks that balance exactly; no readable numbers. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 2.93,
+      "vo_land": [
+        "And at last, the sums added up.",
+        "We now know that a leaf takes in carbon dioxide through tiny pores."
+      ],
+      "route": "vertex",
+      "clip_s": 4,
+      "cost_try1_gbp": 0.32,
+      "cost_expected_gbp": 0.7,
+      "cum_expected_gbp": 113.69,
+      "beyond_floor": true
+    },
+    {
+      "id": "06_leaf_in",
+      "t_s": 402.03,
+      "t": "6:42.03",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: clean illustrated cutaway in soft daylight colours; nothing glows.",
+      "prompt": "Premium Animistry-class 3D cartoon. A clean illustrated cutaway of a willow leaf: little pale bubbles of carbon dioxide drift in through tiny pores on its underside, and water rises up from the stem. Soft daylight colours; nothing glows. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.67,
+      "vo_land": [
+        "(continues) We now know that a leaf takes in carbon dioxide through tiny pores.",
+        "It draws up water through its roots."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 115.02,
+      "beyond_floor": true
+    },
+    {
+      "id": "07_sugar_oxygen",
+      "t_s": 408.7,
+      "t": "6:48.70",
+      "explorer": false,
+      "side_label": "AIR + WATER + LIGHT → SUGAR + OXYGEN",
+      "quality": "Quality",
+      "engine_reason": "Quality: glowing threads of air, a lit cutaway or a glowing atom is the hero (emissive light).",
+      "prompt": "Premium Animistry-class 3D cartoon. Same leaf cutaway: sunlight pours in and the leaf glows warm green; the carbon dioxide and water join into tiny golden grains of sugar, and small clear bubbles of oxygen float out of the pores. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.82,
+      "vo_land": [
+        "Then, with the energy of sunlight, it joins them together into sugar, and lets the spare oxygen go."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 118.41,
+      "beyond_floor": true
+    },
+    {
+      "id": "08_sugar_wood",
+      "t_s": 415.52,
+      "t": "6:55.52",
+      "explorer": false,
+      "side_label": "SUGAR BECOMES WOOD",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. A cutaway willow in a riverside meadow: honey-coloured sap flows down from the leaves through the branches and trunk and lays down new rings of wood, bark and roots. Nothing glows. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.62,
+      "vo_land": [
+        "That sugar becomes everything else: leaves, roots, bark and wood."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 119.73,
+      "beyond_floor": true
+    },
+    {
+      "id": "09_helmont_willow",
+      "t_s": 421.14,
+      "t": "7:01.14",
+      "explorer": false,
+      "side_label": null,
+      "quality": "reuse",
+      "reuse_of": "P2:06_garden_years",
+      "clip_in_s": 4.0,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 3.42,
+      "vo_land": [
+        "So here is what van Helmont's willow was really made of."
+      ],
+      "reuse_window": "4.00-7.42 s of P2:06_garden_years",
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    },
+    {
+      "id": "10_air_threads",
+      "t_s": 424.56,
+      "t": "7:04.56",
+      "explorer": false,
+      "side_label": "HALF IS CARBON · FROM THE AIR",
+      "quality": "reuse",
+      "reuse_of": "P1:01_willow_air",
+      "clip_in_s": 0.5,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 7.0,
+      "vo_land": [
+        "About half of dry wood is carbon, and every bit of that carbon came out of the air."
+      ],
+      "reuse_window": "0.50-7.50 s of P1:01_willow_air",
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    },
+    {
+      "id": "11_trunk_pie",
+      "t_s": 431.56,
+      "t": "7:11.56",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper, props or a flat illustrated diagram; nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. A clean cross-section slice of a willow trunk on a plain cream background: the rings divide into wedges like a pie chart, one half dark, most of the rest two lighter wedges, and a thin sliver. No letters (labels added in the edit). Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.94,
+      "vo_land": [
+        "Most of the rest is oxygen and hydrogen, from carbon dioxide and water."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 120.74,
+      "beyond_floor": true
+    },
+    {
+      "id": "12_scales_barely",
+      "t_s": 436.5,
+      "t": "7:16.50",
+      "explorer": false,
+      "side_label": null,
+      "quality": "reuse",
+      "reuse_of": "P2:12_pointer_short",
+      "clip_in_s": 1.0,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 5.52,
+      "vo_land": [
+        "The soil gave only a pinch of minerals, which is why his scales barely moved."
+      ],
+      "reuse_window": "1.00-6.52 s of P2:12_pointer_short",
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    },
+    {
+      "id": "13_water_in_tree",
+      "t_s": 442.02,
+      "t": "7:22.02",
+      "explorer": false,
+      "side_label": null,
+      "quality": "reuse",
+      "reuse_of": "P2:05_pure_water",
+      "clip_in_s": 0.0,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 5.08,
+      "vo_land": [
+        "Van Helmont wasn't completely wrong.",
+        "Water does go into a tree."
+      ],
+      "reuse_window": "0.00-5.08 s of P2:05_pure_water",
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    },
+    {
+      "id": "14_built_from_sky",
+      "t_s": 447.1,
+      "t": "7:27.10",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. The camera rises slowly up a great willow's trunk from its roots into the leaves against a bright open sky. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.02,
+      "vo_land": [
+        "But the solid wood is mostly built from the sky.",
+        "Why was this so groundbreaking?"
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 122.07,
+      "beyond_floor": true
+    },
+    {
+      "id": "15_food_glow",
+      "t_s": 453.12,
+      "t": "7:33.12",
+      "explorer": false,
+      "side_label": "YOUR FOOD BEGAN AS AIR",
+      "quality": "Quality",
+      "engine_reason": "Quality: glowing threads of air, a lit cutaway or a glowing atom is the hero (emissive light).",
+      "prompt": "Premium Animistry-class 3D cartoon. A loaf of bread, a bowl of rice and a red apple on a wooden table, each with a little warm sunbeam glowing softly inside it; the camera glides along them. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.5,
+      "vo_land": [
+        "Because it means almost every bite of food you have ever eaten began as air and sunlight, caught by a leaf."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 125.45,
+      "beyond_floor": true
+    },
+    {
+      "id": "16_cow_grass",
+      "t_s": 459.62,
+      "t": "7:39.62",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. A brown cow grazing on bright green grass in a sunny meadow, chewing contentedly; the camera drifts past. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.46,
+      "vo_land": [
+        "(continues) Because it means almost every bite of food you have ever eaten began as air and sunlight, caught by a leaf.",
+        "Bread, rice, apples, even meat, because the animal ate plants first."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 126.78,
+      "beyond_floor": true
+    },
+    {
+      "id": "17_wind_air",
+      "t_s": 466.08,
+      "t": "7:46.08",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Wind ripples across a wheat field towards a wood; birds lift and wheel in the clear air. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.4,
+      "vo_land": [
+        "(continues) Bread, rice, apples, even meat, because the animal ate plants first.",
+        "And it explained why the air never runs out."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 127.79,
+      "beyond_floor": true
+    },
+    {
+      "id": "18_forest_sea",
+      "t_s": 471.48,
+      "t": "7:51.48",
+      "explorer": false,
+      "side_label": "EVERY BREATH",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. A green forest running down to a sunlit sea full of drifting green algae; tiny clear oxygen bubbles rise from the leaves and the water. Slow aerial drift. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.18,
+      "vo_land": [
+        "The oxygen in every breath you take was given out by plants on land and tiny algae in the sea."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 129.12,
+      "beyond_floor": true
+    },
+    {
+      "id": "19_dots_crowd",
+      "t_s": 478.66,
+      "t": "7:58.66",
+      "explorer": false,
+      "side_label": "4 IN 10,000",
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper, props or a flat illustrated diagram; nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. A flat cream field filled with a crowd of ten thousand tiny pale dots jostling gently; four of them turn a solid bright gold colour. Flat illustration, nothing glows. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.0,
+      "vo_land": [
+        "Today, only about four molecules in every ten thousand in the air are carbon dioxide."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 130.13,
+      "beyond_floor": true
+    },
+    {
+      "id": "20_explorer_willow",
+      "t_s": 482.66,
+      "t": "8:02.66",
+      "explorer": true,
+      "side_label": null,
+      "quality": "Quality",
+      "engine_reason": "Quality: explorer fidelity. Face and hair are UAT hard fail 4 (glasses, full hair, one Explorer); a Fast remint would cost more than the difference.",
+      "prompt": "Premium Animistry-class 3D cartoon. Under a great willow by a river in warm sun. Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He holds up an open hand in a sunbeam as if feeling invisible threads of air, watches a willow leaf turn towards the light, smiles and walks away along the bank. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame.",
+      "use_s": 6.56,
+      "vo_land": [
+        "(continues) Today, only about four molecules in every ten thousand in the air are carbon dioxide.",
+        "Out of that thin trace, a willow builds its wood."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 133.52,
+      "beyond_floor": true
+    },
+    {
+      "id": "21_three_objects",
+      "t_s": 489.22,
+      "t": "8:09.22",
+      "explorer": false,
+      "side_label": null,
+      "quality": "reuse",
+      "reuse_of": "P1:03_pot_jar_leaf",
+      "clip_in_s": 2.3,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 5.12,
+      "vo_land": [
+        "A pot of soil, a sprig of mint, and a leaf in the sun."
+      ],
+      "reuse_window": "2.30-7.42 s of P1:03_pot_jar_leaf",
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    },
+    {
+      "id": "22_pulled_down",
+      "t_s": 494.34,
+      "t": "8:14.34",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Low angle from the soil at the foot of a great willow: the camera rises up the trunk into the canopy, the leaves rippling against a bright sky. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.42,
+      "vo_land": [
+        "Together, they proved that a tree isn't pulled up out of the ground.",
+        "It's pulled down out of the air."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 134.84,
+      "beyond_floor": true
+    },
+    {
+      "id": "23_carbon_atom",
+      "t_s": 501.76,
+      "t": "8:21.76",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Quality",
+      "engine_reason": "Quality: glowing threads of air, a lit cutaway or a glowing atom is the hero (emissive light).",
+      "prompt": "Premium Animistry-class 3D cartoon. Extreme close-up of a green willow leaf: one tiny carbon atom inside it glows softly gold; the camera zooms in and in until the atom fills the frame, a soft glowing ball. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.76,
+      "vo_land": [
+        "Every one of those carbon atoms is billions of years old.",
+        "So what is an atom actually made of?"
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 138.23,
+      "beyond_floor": true
+    },
+    {
+      "id": "24_gold_foil",
+      "t_s": 509.52,
+      "t": "8:29.52",
+      "explorer": false,
+      "side_label": null,
+      "quality": "reuse",
+      "reuse_of": "004:part01/11_gold_foil_bounce",
+      "clip_in_s": 0.0,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 6.44,
+      "vo_land": [
+        "To find out, a young student fired tiny particles at gold beaten thinner than paper."
+      ],
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    }
+  ]
+}
