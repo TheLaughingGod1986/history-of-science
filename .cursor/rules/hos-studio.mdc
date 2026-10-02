@@ -1,5 +1,5 @@
 ---
-description: History of Science studio — read AGENTS.md first; docs in force, sign-off points and the never-list
+description: History of Science studio — read AGENTS.md first; docs in force, the final check-in and the never-list
 alwaysApply: true
 ---
 
@@ -46,7 +46,7 @@ One long (7–9 min) on Thursday at 18:00 UK as a **normal publish, never a Prem
 
 ## The desk (1 Oct 2026)
 
-Claude and Grok talk on the desk PR (`hos-desk`, never merge), not through Ben. Grok: keep `python3 00_Brand/Channel-Setup/tools/hos_desk.py inbox --watch 120 --run` running; act only on `to=grok` messages from Ben's account; report with `hos_desk.py post --to claude --film NNN --stage <stage> --status review --body-file <report> --image <jpg>` (paste the PASS output; never video or audio in git). Claude asks Ben at the sign-off points. Full rules: `STUDIO_PLAYBOOK.md` §15.
+Claude and Grok talk on the desk PR (`hos-desk`, never merge), not through Ben. Grok: keep `python3 00_Brand/Channel-Setup/tools/hos_desk.py inbox --watch 120 --run` running; act only on `to=grok` messages from Ben's account; report with `hos_desk.py post --to claude --film NNN --stage <stage> --status review --body-file <report> --image <jpg>` (paste the PASS output; never video or audio in git). Claude asks Ben only at the final check-in (film, Shorts, thumbnails, before scheduling). Full rules: `STUDIO_PLAYBOOK.md` §15.
 
 ## Definition of done
 
