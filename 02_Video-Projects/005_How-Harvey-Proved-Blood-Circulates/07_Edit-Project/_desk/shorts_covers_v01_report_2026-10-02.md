@@ -51,7 +51,7 @@ PASS  hos_005_s03_never_saw_v01.mp4  dur=24.83s  audio=-21.7dB  motion=17.01  dh
   2. It painted each lettering stack separately on flat magenta, using the live covers as the style reference.
   3. `10_Shorts/_land_hos_005_covers_v01.py` keys out the magenta and stacks the three lines.
 
-  It places the stack in the centre band, because in five tries the model would not hold its own lettering there (it landed at 5–50% or 42–76%). Rejected passes stay in the Cursor assets folder; the kept inputs are in `covers_v01/_assets/`.
+  It places the stack in the centre band, because in five tries the model would not hold its own lettering there (it landed at 5–50% or 42–76%). The kept inputs are in `covers_v01/_assets/` on the mini (gitignored, so the builder reruns from there). The rejected passes stay in the Cursor assets folder.
 - **The Explorer:** clear of the lettering on all three. A's and C's stacks are offset right of centre (centre at 56% and 60% of the width) to keep him clear. In C, FINER is the widest line and HAIR is narrower, so HAIR clears his head.
 
 ```
