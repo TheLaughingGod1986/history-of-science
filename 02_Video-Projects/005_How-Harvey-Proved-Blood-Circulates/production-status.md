@@ -610,6 +610,20 @@ PASS  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package
 
 The title, thumbnail (not made yet) and description wait for Ben. Nothing is uploaded or scheduled.
 
+## 2 Oct 2026 — Long thumbnail v01, two options for Ben (Grok, desk task from Claude, comment 5948700711)
+
+Schedule per Claude: Short A on Fri 30 Oct 11:30Z. B on Sun 8 Nov and C on Sun 15 Nov, both pending Ben and re-gated on those dates. Sun 1 and Tue 3 Nov use back-catalogue Shorts. Nothing is scheduled.
+
+Both options use one painting in the live look: the tied arm is the giant hero object on the right, the red stops at the band, the hand is at full brightness, and the Explorer is small in the lower left. A = ONE TIGHT **BAND** (`c319eec3…`). B = IT GOES **ROUND** (`49643a2b…`), which is A's painting with B's lettering panel spliced in. Files are in `08_Thumbnail/Selected/`, and the index is `THUMBS_INDEX_v01.json`. Report: `07_Edit-Project/_desk/thumb_v01_report_2026-10-02.md`.
+
+```
+$ thumb_preview.py long hos_005_thumb_A_one_tight_band_v01.jpg / hos_005_thumb_B_it_goes_round_v01.jpg  (previews written)
+$ style_sheet.py long A B
+…/hos_005_thumbs_v01_style_sheet.jpg  (2 new vs 4 live long references)
+```
+
+**STOP:** waiting for Ben's thumbnail and title pick. Nothing is in Studio.
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
