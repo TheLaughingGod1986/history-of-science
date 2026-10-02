@@ -247,7 +247,8 @@ def cmd_still(a) -> None:
     parts, lead, k = [], "", 0
     # The 001 ward and the 004 thumb pull in their rooms and lit lamps; Part 01's passed frames
     # are this film's look.
-    refs = tuple((r, "this film's locked look (passed by Ben)") for r in STYLE_REFS_005)
+    style = tuple(Path(r) for r in getattr(a, "style_ref", None) or ()) or STYLE_REFS_005
+    refs = tuple((r, "this film's locked look (passed by Ben)") for r in style)
     for ref, what in refs:
         if ref.exists():
             parts.append(img_part(ref)); k += 1
@@ -295,6 +296,7 @@ def cmd_still(a) -> None:
     to_1080(data, dest)
     rec = {"plate": a.plate, "v": n, "file": rel(dest), "sha256": sha256(dest),
            "model": IMAGE_MODEL, "seed": a.seed and rel(Path(a.seed)),
+           "style_refs": [rel(r) for r, _ in refs],
            "extra": a.extra, "cost_usd": USD_PER_STILL, "at": now()}
     update_log(lambda log: log["stills"].append(rec))
     print(f"SAVED {dest}")
@@ -322,7 +324,7 @@ def motion_stats(mp4: Path) -> dict:
 def cmd_mint(a) -> None:
     from google.genai import types
     pl = plate(a.plate)
-    q = pl["quality"]
+    q = getattr(a, "quality", None) or pl["quality"]
     model = MODELS[q]
     guard(CLIP_S * USD_PER_S[q])
     log = load_log()
@@ -472,9 +474,13 @@ def main() -> None:
     ap.add_argument("--part", required=True)
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("still"); s.add_argument("plate"); s.add_argument("--seed"); s.add_argument("--extra")
+    s.add_argument("--style-ref", action="append",
+                   help="look reference replacing STYLE_REFS_005 (repeatable; e.g. drop a ref whose props would leak)")
     for name in ("mint", "auto"):
         m = sub.add_parser(name); m.add_argument("plate"); m.add_argument("--still")
         m.add_argument("--framing", default="try1"); m.add_argument("--extra")
+        m.add_argument("--quality", choices=sorted(MODELS),
+                       help="engine override for this take (logged), e.g. a plate reframed as a glowing cutaway")
         m.add_argument("--replace", action="append", help="'old=>new' edit of the board prompt for this take (logged)")
         if name == "auto":
             m.add_argument("--seed"); m.add_argument("--still-extra")

@@ -31,13 +31,15 @@ ICLOUD_DIR = (Path.home() / "Library/Mobile Documents/com~apple~CloudDocs/HOS UA
 
 FPS, W, H = 30, 1920, 1080
 TAIL_S = 2.5
+# Part → shorter tail where the VO's own trailing silence + TAIL_S would exceed vo_check's 1.5 s silence limit.
+TAIL_S_PART: dict[str, float] = {"04": 2.0}
 BED_REL_DB = -20.0
 DIDOT = "/System/Library/Fonts/Supplemental/Didot.ttc"
 LABEL_FADE = 0.28
 LABEL_HOLD = 2.4
 
 # Part → plate id → in-point into the KEEP clip (s).
-IN_S: dict[str, dict[str, float]] = {"02": {}, "03": {}, "04": {}, "05": {}}
+IN_S: dict[str, dict[str, float]] = {"02": {}, "03": {}, "04": {"01_college_demo": 1.9, "08_knots_valve": 0.1, "11_two_fingers": 4.0}, "05": {}}
 # Part → plate id → (offset into the plate's window, label text).
 LABELS: dict[str, dict[str, tuple[float, str]]] = {
     "02": {
@@ -60,7 +62,17 @@ LABELS: dict[str, dict[str, tuple[float, str]]] = {
         "12_glowing_loop": (5.4, "The same blood → it circulates"),
         "13_one_minute": (1.0, "One lap · one minute"),
     },
-    "04": {},
+    "04": {
+        "01_college_demo": (0.6, "Nine years"),
+        "02_linen_tie": (3.5, "A tight band"),
+        "03_hand_pale": (0.6, "No blood in"),
+        "05_arteries_veins_shut": (0.6, "Deep arteries"),
+        "07_in_out_doors": (0.6, "In: arteries · out: veins"),
+        "08_knots_valve": (3.6, "A valve"),
+        "13_one_way": (0.6, "One way: to the heart"),
+        "16_press_book": (2.6, "De Motu Cordis, 1628"),
+        "18_aubrey": (0.6, "John Aubrey"),
+    },
     "05": {},
 }
 
@@ -130,7 +142,7 @@ def main() -> None:
     last = plates[-1]["id"]
     last_left = (probe(REPO / log["plates"][last]["keep"]) - IN_S[part].get(last, 0.0)
                  - (vo_dur - starts[-1]))
-    tail_s = round(min(TAIL_S, last_left - 0.05), 3)
+    tail_s = round(min(TAIL_S_PART.get(part, TAIL_S), last_left - 0.05), 3)
     if tail_s < 0.5:
         raise SystemExit(f"STOP: last plate leaves only {last_left:.2f}s after the last word")
     total = vo_dur + tail_s

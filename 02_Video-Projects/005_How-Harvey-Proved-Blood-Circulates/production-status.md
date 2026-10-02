@@ -489,6 +489,31 @@ part 03: takes=25 stills=25 keep=14/14 cost_usd=$32.98 (lost $0.00)
 film 005 Vertex spend $84.35 · projected Free Trial £142.05 (floor £60, £/$ 0.8)
 ```
 
+### Part 04: 19/19 KEEP, rough v01
+
+- **Cut:** `09_Final-Export/hos_005_part04_rough_v01.mp4`, sha256 `c7de24b10684390e543d088ffe56fb182224e75b27cd7f3a8a6c7cedc05ca087`, 128.240 s, freezedetect 0, bed −19.80 dB. Phone copy in iCloud.
+- **Takes:** 57 takes and 65 start frames, $63.34. Nothing lost: one take was filtered by Google and one lost to Vertex overload, neither charged. Log: `07_Edit-Project/PART04_MINT_LOG_v01.json`.
+- **Valve plates 08–14:** ink and paper on parchment, in Part 02's passed `13_little_doors` look. On skin, Veo kept turning the valves into eggs, hearts or eyes, and put blood beads on the skin.
+- **Arm cutaways 03–05:** the start frames chain from 03's KEEP, with a grey forearm below the band.
+- **In-points:** 01 1.9 s, 08 0.1 s, 11 4.0 s.
+- **Tail:** 2.0 s (`TAIL_S_PART`). With 2.5 s, the trailing silence was 1.59 s.
+- **Watch items for Ben:** the grey → real → skin-tone shift across 03–07, and the faint handwriting texture in 18.
+- **Report and my 11-hard-fail UAT:** `07_Edit-Project/_desk/part04_report_2026-10-02.md`.
+
+```
+PASS  hos_005_part04_rough_v01.mp4  2:08.24  mean -22.0 dB  peak -2.3 dB  153 wpm
+```
+
+### Credit after Part 04 (= before Part 05)
+
+```
+CREDIT free_trial_remaining_gbp=163.89 status=Available floor=60
+part 04: takes=57 stills=65 keep=19/19 cost_usd=$63.34 (lost $0.00)
+film 005 Vertex spend $147.06 · projected Free Trial £91.88 (floor £60, £/$ 0.8)
+```
+
+- **STOP (2 Oct 2026):** Part 05 is held at the £60 floor. It has 18 plates (8 Q). First takes cost about $22. With retakes it's about $35–60, which would take the projected credit below £60. Waiting for a decision on the desk.
+
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
@@ -496,7 +521,7 @@ film 005 Vertex spend $84.35 · projected Free Trial £142.05 (floor £60, £/$ 
 | 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F) | `09_Final-Export/hos_005_part01_rough_v01.mp4` (`7661b6cf…`, 59.53 s) | 9/9 KEEP on Vertex ($25.58); **passed by Ben, 1 Oct 2026** |
 | 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | `09_Final-Export/hos_005_part02_rough_v02.mp4` (`d813f553…`, 98.23 s) | 15/15 KEEP on Vertex ($25.17); my UAT done; Claude reviewing stills |
 | 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | `09_Final-Export/hos_005_part03_rough_v01.mp4` (`86867f93…`, 98.00 s) | 14/14 KEEP on Vertex ($32.98); my UAT done; Claude reviewing stills |
-| 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | — | start frames made; minting on Vertex |
-| 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | — | board v02 |
+| 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | `09_Final-Export/hos_005_part04_rough_v01.mp4` (`c7de24b1…`, 128.24 s) | 19/19 KEEP on Vertex ($63.34); my UAT done; Claude reviewing stills |
+| 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | — | board v02; **held at the £60 credit floor** |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.

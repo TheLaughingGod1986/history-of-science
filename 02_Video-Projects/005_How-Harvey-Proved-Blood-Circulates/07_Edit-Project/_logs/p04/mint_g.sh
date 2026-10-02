@@ -1,0 +1,5 @@
+#!/bin/zsh
+M=/tmp/h5/m
+L=/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/07_Edit-Project/_logs/p04
+$M --part 4 mint 14_steering_home --still /Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/refs/v02_vertex_stills/14_steering_home_v03.jpg --framing try3_two_sheets_flaps --replace "in Harvey's, the little ink doors turn like lock gates and a red ink stream flows through them home to the heart.=>on the right-hand sheet, Harvey's, the small upright pairs of 3D paper flaps swing open one after another like lock gates as a red ink stream flows along the drawn vein through them; the older faded drawing on the left stays still. The camera drifts slowly towards the right-hand sheet." --extra "Every flap keeps exactly its shape and size the whole time: upright paired paper petals, never flattening, never turning into hearts or other shapes. No hands, no people. No letters, words, numbers, arrows or writing anywhere in the picture." > $L/14_t3.log 2>&1
+echo MINT_G_DONE
