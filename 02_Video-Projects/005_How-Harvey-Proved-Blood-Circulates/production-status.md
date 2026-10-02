@@ -15,13 +15,14 @@
 | Picture | **Part 01 rough v01 passed by Ben, 1 Oct 2026** ("Part 1 OK", in chat with Claude; relayed on desk PR #180 comment 5942662028), as it is, including the ECG-style pulse and the quill: `09_Final-Export/hos_005_part01_rough_v01.mp4`, sha256 `7661b6cf1897c6dabe60e09592b297f9ed21b253cb7c2946cc12f58732a9d098`. **Ben passed full join v01 (sha `84476e06…`, 8:46.5), 2 Oct 2026; listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim** ("005 OK", relayed on desk PR #180 comment 5948300560). Master: `09_Final-Export/hos_005_master_v01.mp4` (byte copy of the join, sha256 `84476e06c13e2a010974bc0937a7044374f637065edcf819c5ab5157165192f7`) |
 | Runtime target | 7–9 min, 5 parts. Film VO timeline 8:21.33 with the four chapter cards (`07_Edit-Project/VO_RETIME_v01.json`), + 3–4 s end card ≈ 8:25 |
 | Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct. Not yet uploaded |
-| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). **Built v01, 2 Oct 2026** from KEEP plates only (no new mints): gate, `vo_check` and freezedetect PASS on all three; phone copies in iCloud `HOS UAT/005…/10_Shorts/`. Waiting for Ben's phone watch |
+| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). **Built v01, 2 Oct 2026** from KEEP plates only (no new mints): gate, `vo_check` and freezedetect PASS on all three; phone copies in iCloud `HOS UAT/005…/10_Shorts/`. **Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean** ("Shorts ok", relayed on desk PR #180 comment 5948897987). Proposed dates A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30Z: pending Ben, not re-gated, not scheduled |
 
 ## STOP
 
 - **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
-- **Shorts A–C v01 with Ben for his phone watch (2 Oct 2026).** Listen items: "proved" at 0:03 in A and 0:00 in B (`vo_check` sounds-alike warnings).
+- **Shorts dates pending Ben:** A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30Z, proposed only. No re-gate and no scheduling until he confirms.
 - **Package: Ben signs off the title, thumbnail and description v02** before anything is uploaded or scheduled. Thumbnail v02 A/B (`08_Thumbnail/THUMBS_INDEX_v02.json`) going to Ben via Claude, 2 Oct 2026.
+- Resolved: Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean ("Shorts ok").
 - Resolved: full join v01 passed by Ben, 2 Oct 2026 ("005 OK"): listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim.
 - Resolved: Part 01 rough v01 passed by Ben, 1 Oct 2026 ("Part 1 OK").
 - Resolved: the Flow-credits STOP (1 Oct 23:45) is replaced by Vertex AI Veo for 005 with Ben's OK. Shorts scripts signed off by Ben, 1 Oct 2026.
@@ -634,6 +635,21 @@ $ thumb_preview.py long hos_005_thumb_A_one_tight_band_v02.jpg / hos_005_thumb_B
 ```
 
 **STOP:** Claude takes A and B v02 to Ben with the title and description (Claude's recommendation: A as main, A and B as the Test & Compare pair). Nothing is in Studio.
+
+## 2 Oct 2026 — Ben passed Shorts A–C v01 (Grok, desk task from Claude, comment 5948897987)
+
+> Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean
+
+The files on disk still match the passed shas:
+
+```
+$ shasum -a 256 10_Shorts/*.mp4
+732bca40629e9854800c6a7e8f400a6cde821a1183a7fe0803c7c83bca16d97b  10_Shorts/hos_005_s01_the_sum_v01.mp4
+e2eacb0c6d3e8b5828c69dc534860ce4e3d17544fed457f30c59ae3a144e0baf  10_Shorts/hos_005_s02_the_tied_arm_v01.mp4
+5839c4dd1e93dd0d11ae9c2c1191559662845b0c8d07731b2058365a25becbc4  10_Shorts/hos_005_s03_never_saw_v01.mp4
+```
+
+Dates are proposed only (A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30Z) and pending Ben, so nothing was re-gated or scheduled. Thumbnail v02 A/B is unchanged from the section above (`356f9ea5…` / `17672532…`), with no further edit asked for. Nothing is in Studio.
 
 ## Parts
 
