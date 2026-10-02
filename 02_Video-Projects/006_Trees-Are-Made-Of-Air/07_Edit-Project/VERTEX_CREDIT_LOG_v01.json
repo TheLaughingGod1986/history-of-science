@@ -8,6 +8,14 @@
       "status": "Available",
       "screenshot": "vertex_credits_before_boards_006_2026-10-02.png",
       "floor_gbp": 0.0
+    },
+    {
+      "label": "after_part01_006_2026-10-02",
+      "at": "2026-10-02T12:23:29+00:00",
+      "free_trial_remaining_gbp": 63.29,
+      "status": "Available",
+      "screenshot": "vertex_credits_after_part01_006_2026-10-02.png",
+      "floor_gbp": 0.0
     }
   ]
 }

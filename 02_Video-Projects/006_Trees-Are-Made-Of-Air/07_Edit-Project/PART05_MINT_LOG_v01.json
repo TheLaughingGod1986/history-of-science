@@ -1,0 +1,86 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "part": "05",
+  "board": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/parts/part-05_plates_v01.json",
+  "path": "vertex",
+  "vertex_project": "gen-lang-client-0538779324",
+  "vertex_location": "us-central1",
+  "account": "benoats@googlemail.com",
+  "authority": "Claude on desk PR #180 comment 5951520953 (2 Oct 2026): mint 006 on Vertex to a £0 floor",
+  "models": {
+    "Quality": "veo-3.1-generate-001",
+    "Fast": "veo-3.1-fast-generate-001"
+  },
+  "image_model": "gemini-2.5-flash-image",
+  "pricing_usd": {
+    "veo_per_s_video_only_1080p": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "still": 0.039,
+    "source": "Vertex AI generative pricing page, video-only rows, Sept 2026"
+  },
+  "credit_check": null,
+  "takes": [
+    {
+      "plate": "18_forest_sea",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": "lite_test_control",
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. A green forest running down to a sunlit sea full of drifting green algae; tiny clear oxygen bubbles rise from the leaves and the water. Slow aerial drift. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/refs/v01_vertex_stills/18_forest_sea_v01.jpg",
+      "start_frame_sha256": "6be268260ad4fd4c181bc54005c88ee249e93920670887d4572cb49291f7c73f",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/22ba02be-ddda-40a0-aaab-e8193d959013",
+      "submitted_at": "2026-10-02T11:44:36+00:00",
+      "cost_usd": 0.8,
+      "status": "KEEP",
+      "why": "Lite-test control (Vertex Fast). Slow aerial drift over forest to a turquoise sea with algae beds; small bubbles rise from the water; finished, no flame, no face; deer alive and grazing; no freeze.",
+      "at": "2026-10-02T11:55:15+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/18_forest_sea_t1.mp4",
+      "sha256": "8e3670cd36e6cec5298caa3b86d2bc8da66a874bbd889536ead3271b3ae4b5be",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/uat/18_forest_sea_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 1.6,
+      "uat_at": "2026-10-02T11:59:26+00:00"
+    }
+  ],
+  "stills": [
+    {
+      "plate": "18_forest_sea",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/refs/v01_vertex_stills/18_forest_sea_v01.jpg",
+      "sha256": "6be268260ad4fd4c181bc54005c88ee249e93920670887d4572cb49291f7c73f",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg",
+        "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/refs/v02_vertex_stills/03_band_tightens_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph. High aerial view.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:42:56+00:00"
+    }
+  ],
+  "plates": {
+    "18_forest_sea": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/18_forest_sea_t1.mp4",
+      "take": 1,
+      "sha256": "8e3670cd36e6cec5298caa3b86d2bc8da66a874bbd889536ead3271b3ae4b5be",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex"
+    }
+  },
+  "cost_usd_total": 0.839,
+  "updated": "2026-10-02T11:59:26+00:00"
+}
