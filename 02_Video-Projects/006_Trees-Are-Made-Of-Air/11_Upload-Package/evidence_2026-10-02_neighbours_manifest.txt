@@ -1,0 +1,21 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 4,797,252 views | [What if there were 1 trillion more trees? - Jean-François Bastin](https://youtu.be/3hxE7Af98AI) | ted-ed photosynthesis |
+| 2 | TED-Ed ★ | 3,118,737 views | [What happens if you cut down all of a city's trees? - Stefan Al](https://youtu.be/zarll9bx6FI) | ted-ed where do trees get their mass |
+| 3 | TED-Ed ★ | 2,218,164 views | [The simple story of photosynthesis and food - Amanda Ooten](https://youtu.be/eo5XndJaz-Y) | photosynthesis |
+| 4 | TED-Ed ★ | 1,407,041 views | [How tall can a tree grow? - Valentin Hammoudi](https://youtu.be/vvtPJKWUb2g) | ted-ed where do trees get their mass |
+| 5 | TED-Ed ★ | 856,874 views | [The secret language of trees - Camille Defrenne and Suzanne Simard](https://youtu.be/V4m9SefyRjg) | ted-ed where do trees get their mass |
+| 6 | TED-Ed ★ | 619,296 views | [Does planting trees actually cool the planet? - Carolyn Beans](https://youtu.be/bbxmH_Kj7fk) | ted-ed where do trees get their mass |
+| 7 | TED-Ed ★ | 526,380 views | [No one really knows what a tree is - Max G. Levy](https://youtu.be/j1EXBeBA89w) | ted-ed where do trees get their mass |
+| 8 | TED-Ed ★ | 357,552 views | [Let’s plant 20 million trees together! #TeamTrees](https://youtu.be/TRIBbTo5Svc) | ted-ed where do trees get their mass |
+| 9 | CrashCourse | 9,237,499 views | [Photosynthesis: Crash Course Biology #8](https://youtu.be/sQK3Yr4Sc_k) | photosynthesis |
+| 10 | Kurzgesagt – In a Nutshell | 6,713,007 views | [Trees Are So Weird](https://youtu.be/ZSch_NgZpQs) | where do trees get their mass |
+| 11 | Amoeba Sisters | 6,179,145 views | [Photosynthesis (UPDATED)](https://youtu.be/CMiPYHNNg28) | photosynthesis |
+| 12 | Veritasium | 2,537,739 views | [Where Do Trees Get Their Mass?](https://youtu.be/2KZb2_vcNTg) | where do trees get their mass |
+
+Words the top neighbours share: a tree
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 11 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 02_Video-Projects/006_Trees-Are-Made-Of-Air/11_Upload-Package/evidence_2026-10-02_neighbours_manifest.json
+Wrote neighbours block to 02_Video-Projects/006_Trees-Are-Made-Of-Air/11_Upload-Package/PACKAGE_MANIFEST.json

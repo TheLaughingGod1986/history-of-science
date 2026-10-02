@@ -1,0 +1,1002 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "source": "VO v02 part takes (VO_FINISH_v02.json), faster-whisper small.en word timestamps, vo_check.norm()",
+  "card_breath_s": 0.6,
+  "card_to_vo_s": 1.9,
+  "vo_film_total_s": 515.36,
+  "vo_film_total": "8:35.36",
+  "parts": [
+    {
+      "part": 1,
+      "file": "part01_plants_eat_soil_v02.mp3",
+      "sha256": "f8d12e8e3fc2dae08abff1b9445681115a06fb0268142438569f8762566e47c1",
+      "duration_s": 61.05,
+      "chapter_card": null,
+      "card_in_film_s": null,
+      "card_in_film": null,
+      "vo_film_start_s": 0.0,
+      "vo_film_start": "0:00.00",
+      "vo_film_end_s": 61.05,
+      "vo_film_end": "1:01.05",
+      "last_word_s": 60.92,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "The wood of a tree is built mostly out of thin air.",
+          "start_s": 0.0,
+          "end_s": 3.56,
+          "film_s": 0.0,
+          "film": "0:00.00"
+        },
+        {
+          "i": 2,
+          "text": "So where does a tree's weight really come from?",
+          "start_s": 4.28,
+          "end_s": 6.74,
+          "film_s": 4.28,
+          "film": "0:04.28"
+        },
+        {
+          "i": 3,
+          "text": "By the end of this film, you'll know how a willow in a pot, a sprig of mint and a sunny window cracked one of nature's oldest secrets, and why it took more than a hundred and fifty years.",
+          "start_s": 7.36,
+          "end_s": 19.66,
+          "film_s": 7.36,
+          "film": "0:07.36"
+        },
+        {
+          "i": 4,
+          "text": "For two thousand years, people believed plants ate the soil.",
+          "start_s": 20.34,
+          "end_s": 23.88,
+          "film_s": 20.34,
+          "film": "0:20.34"
+        },
+        {
+          "i": 5,
+          "text": "The Greek thinker Aristotle taught that roots take a plant's food from the earth, like a mouth.",
+          "start_s": 24.54,
+          "end_s": 30.1,
+          "film_s": 24.54,
+          "film": "0:24.54"
+        },
+        {
+          "i": 6,
+          "text": "It seemed obvious.",
+          "start_s": 30.78,
+          "end_s": 31.72,
+          "film_s": 30.78,
+          "film": "0:30.78"
+        },
+        {
+          "i": 7,
+          "text": "But if it was wrong, nobody really knew where wood, or food, or even the air we breathe came from.",
+          "start_s": 32.52,
+          "end_s": 39.06,
+          "film_s": 32.52,
+          "film": "0:32.52"
+        },
+        {
+          "i": 8,
+          "text": "Near Brussels, in the first half of the sixteen-hundreds, a doctor called Jan Baptist van Helmont decided to test it.",
+          "start_s": 39.74,
+          "end_s": 48.1,
+          "film_s": 39.74,
+          "film": "0:39.74"
+        },
+        {
+          "i": 9,
+          "text": "He didn't argue.",
+          "start_s": 48.56,
+          "end_s": 49.36,
+          "film_s": 48.56,
+          "film": "0:48.56"
+        },
+        {
+          "i": 10,
+          "text": "He weighed.",
+          "start_s": 49.9,
+          "end_s": 50.44,
+          "film_s": 49.9,
+          "film": "0:49.90"
+        },
+        {
+          "i": 11,
+          "text": "He would spend five years watching one tree in one pot.",
+          "start_s": 51.18,
+          "end_s": 55.3,
+          "film_s": 51.18,
+          "film": "0:51.18"
+        },
+        {
+          "i": 12,
+          "text": "What he found broke the old idea, and then led him straight to the wrong answer.",
+          "start_s": 55.98,
+          "end_s": 60.92,
+          "film_s": 55.98,
+          "film": "0:55.98"
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "file": "part02_five_years_and_two_ounces_v02.mp3",
+      "sha256": "ddd904b749ae2c30af92b89950e377c7ebb85aec4538858ae21f4ce4928b1a11",
+      "duration_s": 117.0,
+      "chapter_card": "Five Years and Two Ounces",
+      "card_in_film_s": 61.65,
+      "card_in_film": "1:01.65",
+      "vo_film_start_s": 63.55,
+      "vo_film_start": "1:03.55",
+      "vo_film_end_s": 180.55,
+      "vo_film_end": "3:00.55",
+      "last_word_s": 116.78,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Here is exactly what he did.",
+          "start_s": 0.0,
+          "end_s": 1.52,
+          "film_s": 63.55,
+          "film": "1:03.55"
+        },
+        {
+          "i": 2,
+          "text": "He took a big clay pot and filled it with two hundred pounds of soil, dried in a furnace first, so no hidden water could fool the scales.",
+          "start_s": 1.96,
+          "end_s": 10.48,
+          "film_s": 65.51,
+          "film": "1:05.51"
+        },
+        {
+          "i": 3,
+          "text": "Then he planted a young willow that weighed five pounds.",
+          "start_s": 11.3,
+          "end_s": 15.0,
+          "film_s": 74.85,
+          "film": "1:14.85"
+        },
+        {
+          "i": 4,
+          "text": "He covered the pot with a metal lid full of tiny holes, so rain could get in, but dust could not.",
+          "start_s": 15.58,
+          "end_s": 21.3,
+          "film_s": 79.13,
+          "film": "1:19.13"
+        },
+        {
+          "i": 5,
+          "text": "And for five years, he gave that tree nothing but pure water.",
+          "start_s": 21.96,
+          "end_s": 26.56,
+          "film_s": 85.51,
+          "film": "1:25.51"
+        },
+        {
+          "i": 6,
+          "text": "Picture yourself in that garden.",
+          "start_s": 26.94,
+          "end_s": 28.46,
+          "film_s": 90.49,
+          "film": "1:30.49"
+        },
+        {
+          "i": 7,
+          "text": "Every spring, the leaves burst out.",
+          "start_s": 29.18,
+          "end_s": 31.44,
+          "film_s": 92.73,
+          "film": "1:32.73"
+        },
+        {
+          "i": 8,
+          "text": "Every autumn, they fall.",
+          "start_s": 31.94,
+          "end_s": 33.24,
+          "film_s": 95.49,
+          "film": "1:35.49"
+        },
+        {
+          "i": 9,
+          "text": "Year after year the willow grows taller, and the pot of soil never changes.",
+          "start_s": 33.92,
+          "end_s": 38.56,
+          "film_s": 97.47,
+          "film": "1:37.47"
+        },
+        {
+          "i": 10,
+          "text": "Then, after five years, he pulled the tree out and weighed it.",
+          "start_s": 39.3,
+          "end_s": 43.9,
+          "film_s": 102.85,
+          "film": "1:42.85"
+        },
+        {
+          "i": 11,
+          "text": "A hundred and sixty-nine pounds, about the weight of a grown man.",
+          "start_s": 45.18,
+          "end_s": 48.46,
+          "film_s": 108.73,
+          "film": "1:48.73"
+        },
+        {
+          "i": 12,
+          "text": "And that didn't even count the leaves that had fallen in four autumns.",
+          "start_s": 49.08,
+          "end_s": 53.24,
+          "film_s": 112.63,
+          "film": "1:52.63"
+        },
+        {
+          "i": 13,
+          "text": "Now came the moment that mattered.",
+          "start_s": 53.5,
+          "end_s": 55.14,
+          "film_s": 117.05,
+          "film": "1:57.05"
+        },
+        {
+          "i": 14,
+          "text": "He dried the soil again and put it back on the scales.",
+          "start_s": 55.54,
+          "end_s": 58.74,
+          "film_s": 119.09,
+          "film": "1:59.09"
+        },
+        {
+          "i": 15,
+          "text": "Two hundred pounds, less about two ounces.",
+          "start_s": 59.94,
+          "end_s": 62.82,
+          "film_s": 123.49,
+          "film": "2:03.49"
+        },
+        {
+          "i": 16,
+          "text": "A hundred and sixty-four pounds of new tree, and only two ounces of soil gone.",
+          "start_s": 63.82,
+          "end_s": 68.58,
+          "film_s": 127.37,
+          "film": "2:07.37"
+        },
+        {
+          "i": 17,
+          "text": "The tree had not eaten the soil.",
+          "start_s": 69.2,
+          "end_s": 70.98,
+          "film_s": 132.75,
+          "film": "2:12.75"
+        },
+        {
+          "i": 18,
+          "text": "So why had it grown?",
+          "start_s": 70.98,
+          "end_s": 72.7,
+          "film_s": 134.53,
+          "film": "2:14.53"
+        },
+        {
+          "i": 19,
+          "text": "Van Helmont's answer seemed obvious.",
+          "start_s": 73.6,
+          "end_s": 75.58,
+          "film_s": 137.15,
+          "film": "2:17.15"
+        },
+        {
+          "i": 20,
+          "text": "The only thing he had added was water.",
+          "start_s": 76.2,
+          "end_s": 78.58,
+          "film_s": 139.75,
+          "film": "2:19.75"
+        },
+        {
+          "i": 21,
+          "text": "So, he wrote, the wood, the bark and the roots had come from water alone.",
+          "start_s": 79.06,
+          "end_s": 84.2,
+          "film_s": 142.61,
+          "film": "2:22.61"
+        },
+        {
+          "i": 22,
+          "text": "It was a brilliant experiment, and his answer was mostly wrong.",
+          "start_s": 84.2,
+          "end_s": 88.76,
+          "film_s": 147.75,
+          "film": "2:27.75"
+        },
+        {
+          "i": 23,
+          "text": "And here is the strangest part of the mystery.",
+          "start_s": 89.52,
+          "end_s": 91.94,
+          "film_s": 153.07,
+          "film": "2:33.07"
+        },
+        {
+          "i": 24,
+          "text": "Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind.",
+          "start_s": 92.7,
+          "end_s": 99.32,
+          "film_s": 156.25,
+          "film": "2:36.25"
+        },
+        {
+          "i": 25,
+          "text": "The rest had vanished into the air, as a wild, invisible spirit.",
+          "start_s": 99.84,
+          "end_s": 104.42,
+          "film_s": 163.39,
+          "film": "2:43.39"
+        },
+        {
+          "i": 26,
+          "text": "He gave it a new name: gas.",
+          "start_s": 105.0,
+          "end_s": 107.36,
+          "film_s": 168.55,
+          "film": "2:48.55"
+        },
+        {
+          "i": 27,
+          "text": "We now know that gas was mostly carbon dioxide.",
+          "start_s": 108.18,
+          "end_s": 111.08,
+          "film_s": 171.73,
+          "film": "2:51.73"
+        },
+        {
+          "i": 28,
+          "text": "He had discovered the very thing his tree was made of.",
+          "start_s": 111.64,
+          "end_s": 115.04,
+          "film_s": 175.19,
+          "film": "2:55.19"
+        },
+        {
+          "i": 29,
+          "text": "He never put the two together.",
+          "start_s": 115.58,
+          "end_s": 116.78,
+          "film_s": 179.13,
+          "film": "2:59.13"
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "file": "part03_the_air_that_mint_repaired_v02.mp3",
+      "sha256": "6696a9b8bcd0295139a75d59e1d2900189a4c9ed7d4609a592d9959e4a094bd7",
+      "duration_s": 94.23,
+      "chapter_card": "The Air That Mint Repaired",
+      "card_in_film_s": 181.15,
+      "card_in_film": "3:01.15",
+      "vo_film_start_s": 183.05,
+      "vo_film_start": "3:03.05",
+      "vo_film_end_s": 277.28,
+      "vo_film_end": "4:37.28",
+      "last_word_s": 94.14,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Nearly a century later, the question moved from the soil to the sky.",
+          "start_s": 0.0,
+          "end_s": 4.32,
+          "film_s": 183.05,
+          "film": "3:03.05"
+        },
+        {
+          "i": 2,
+          "text": "Just outside London, in seventeen twenty-seven, a country parson called Stephen Hales published careful measurements of how much water plants drink up and give off through their leaves.",
+          "start_s": 5.04,
+          "end_s": 16.76,
+          "film_s": 188.09,
+          "film": "3:08.09"
+        },
+        {
+          "i": 3,
+          "text": "And he made a bold guess.",
+          "start_s": 16.76,
+          "end_s": 19.04,
+          "film_s": 199.81,
+          "film": "3:19.81"
+        },
+        {
+          "i": 4,
+          "text": "Plants, he wrote, probably take some of their food from the air.",
+          "start_s": 19.88,
+          "end_s": 23.84,
+          "film_s": 202.93,
+          "film": "3:22.93"
+        },
+        {
+          "i": 5,
+          "text": "But a guess isn't proof.",
+          "start_s": 23.84,
+          "end_s": 26.32,
+          "film_s": 206.89,
+          "film": "3:26.89"
+        },
+        {
+          "i": 6,
+          "text": "Leeds, seventeen seventy-one.",
+          "start_s": 27.12,
+          "end_s": 27.12,
+          "film_s": 210.17,
+          "film": "3:30.17"
+        },
+        {
+          "i": 7,
+          "text": "Joseph Priestley, a minister who lived next door to a brewery, was fascinated by air.",
+          "start_s": 27.12,
+          "end_s": 35.22,
+          "film_s": 210.17,
+          "film": "3:30.17"
+        },
+        {
+          "i": 8,
+          "text": "He knew that if you burn a candle inside a sealed glass jar, the flame soon dies, and the air left behind won't let another candle burn.",
+          "start_s": 35.78,
+          "end_s": 44.56,
+          "film_s": 218.83,
+          "film": "3:38.83"
+        },
+        {
+          "i": 9,
+          "text": "Priestley called that air injured.",
+          "start_s": 45.42,
+          "end_s": 47.5,
+          "film_s": 228.47,
+          "film": "3:48.47"
+        },
+        {
+          "i": 10,
+          "text": "So, on the seventeenth of August, he slipped a sprig of mint into a jar of that injured air, and waited.",
+          "start_s": 48.14,
+          "end_s": 54.68,
+          "film_s": 231.19,
+          "film": "3:51.19"
+        },
+        {
+          "i": 11,
+          "text": "Ten days later, he lowered in another candle.",
+          "start_s": 55.36,
+          "end_s": 58.06,
+          "film_s": 238.41,
+          "film": "3:58.41"
+        },
+        {
+          "i": 12,
+          "text": "It burned perfectly well.",
+          "start_s": 58.72,
+          "end_s": 60.14,
+          "film_s": 241.77,
+          "film": "4:01.77"
+        },
+        {
+          "i": 13,
+          "text": "Then he tried air that mice had made stale with their breathing.",
+          "start_s": 60.84,
+          "end_s": 64.14,
+          "film_s": 243.89,
+          "film": "4:03.89"
+        },
+        {
+          "i": 14,
+          "text": "In the jar where mint had grown, a mouse lived perfectly well.",
+          "start_s": 64.68,
+          "end_s": 68.34,
+          "film_s": 247.73,
+          "film": "4:07.73"
+        },
+        {
+          "i": 15,
+          "text": "Why does that matter?",
+          "start_s": 68.96,
+          "end_s": 69.78,
+          "film_s": 252.01,
+          "film": "4:12.01"
+        },
+        {
+          "i": 16,
+          "text": "Because every fire and every animal on Earth uses the air up.",
+          "start_s": 70.42,
+          "end_s": 74.98,
+          "film_s": 253.47,
+          "film": "4:13.47"
+        },
+        {
+          "i": 17,
+          "text": "Something had to be putting it back.",
+          "start_s": 75.58,
+          "end_s": 77.5,
+          "film_s": 258.63,
+          "film": "4:18.63"
+        },
+        {
+          "i": 18,
+          "text": "Priestley wrote that the damage animals do to the air is repaired by \"the vegetable creation.\" Plants repair the air.",
+          "start_s": 78.3,
+          "end_s": 86.04,
+          "film_s": 261.35,
+          "film": "4:21.35"
+        },
+        {
+          "i": 19,
+          "text": "But there was a problem.",
+          "start_s": 86.64,
+          "end_s": 87.6,
+          "film_s": 269.69,
+          "film": "4:29.69"
+        },
+        {
+          "i": 20,
+          "text": "Sometimes his plants repaired the air.",
+          "start_s": 88.44,
+          "end_s": 90.36,
+          "film_s": 271.49,
+          "film": "4:31.49"
+        },
+        {
+          "i": 21,
+          "text": "Sometimes they didn't.",
+          "start_s": 90.82,
+          "end_s": 92.04,
+          "film_s": 273.87,
+          "film": "4:33.87"
+        },
+        {
+          "i": 22,
+          "text": "And nobody could say why.",
+          "start_s": 92.54,
+          "end_s": 94.14,
+          "film_s": 275.59,
+          "film": "4:35.59"
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "file": "part04_bubbles_in_the_sunlight_v02.mp3",
+      "sha256": "64dea1c0dd63d3fdbbccedef86ee6d8bcf91911f3ca02f4e9665883f32e32ed2",
+      "duration_s": 91.32,
+      "chapter_card": "Bubbles in the Sunlight",
+      "card_in_film_s": 277.88,
+      "card_in_film": "4:37.88",
+      "vo_film_start_s": 279.78,
+      "vo_film_start": "4:39.78",
+      "vo_film_end_s": 371.1,
+      "vo_film_end": "6:11.10",
+      "last_word_s": 91.2,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Summer, seventeen seventy-nine.",
+          "start_s": 0.0,
+          "end_s": 0.38,
+          "film_s": 279.78,
+          "film": "4:39.78"
+        },
+        {
+          "i": 2,
+          "text": "A Dutch doctor called Jan Ingenhousz took a house in the countryside just outside London, and in about three months, he ran more than five hundred experiments.",
+          "start_s": 0.38,
+          "end_s": 12.98,
+          "film_s": 280.16,
+          "film": "4:40.16"
+        },
+        {
+          "i": 3,
+          "text": "He plunged fresh leaves into jars of water and watched.",
+          "start_s": 13.8,
+          "end_s": 17.64,
+          "film_s": 293.58,
+          "film": "4:53.58"
+        },
+        {
+          "i": 4,
+          "text": "Picture yourself at his window.",
+          "start_s": 18.34,
+          "end_s": 19.76,
+          "film_s": 298.12,
+          "film": "4:58.12"
+        },
+        {
+          "i": 5,
+          "text": "In the sunshine you see tiny silver bubbles appear on the green leaf and rise to the top.",
+          "start_s": 20.36,
+          "end_s": 26.44,
+          "film_s": 300.14,
+          "film": "5:00.14"
+        },
+        {
+          "i": 6,
+          "text": "He collected the bubbles and tested the gas.",
+          "start_s": 26.98,
+          "end_s": 29.56,
+          "film_s": 306.76,
+          "film": "5:06.76"
+        },
+        {
+          "i": 7,
+          "text": "A candle flame burned brighter in it than in ordinary air.",
+          "start_s": 29.92,
+          "end_s": 34.26,
+          "film_s": 309.7,
+          "film": "5:09.70"
+        },
+        {
+          "i": 8,
+          "text": "It was the gas Priestley had found in seventeen seventy-four, which we now call oxygen.",
+          "start_s": 34.86,
+          "end_s": 40.92,
+          "film_s": 314.64,
+          "film": "5:14.64"
+        },
+        {
+          "i": 9,
+          "text": "Then came the clue that solved Priestley's puzzle.",
+          "start_s": 41.76,
+          "end_s": 44.24,
+          "film_s": 321.54,
+          "film": "5:21.54"
+        },
+        {
+          "i": 10,
+          "text": "Move the jar into the shade, and the bubbles stop.",
+          "start_s": 44.98,
+          "end_s": 48.28,
+          "film_s": 324.76,
+          "film": "5:24.76"
+        },
+        {
+          "i": 11,
+          "text": "Move it back into the sun, and they start again.",
+          "start_s": 48.94,
+          "end_s": 51.82,
+          "film_s": 328.72,
+          "film": "5:28.72"
+        },
+        {
+          "i": 12,
+          "text": "Only the green parts made bubbles.",
+          "start_s": 52.36,
+          "end_s": 54.58,
+          "film_s": 332.14,
+          "film": "5:32.14"
+        },
+        {
+          "i": 13,
+          "text": "Roots and flowers didn't.",
+          "start_s": 55.46,
+          "end_s": 56.96,
+          "film_s": 335.24,
+          "film": "5:35.24"
+        },
+        {
+          "i": 14,
+          "text": "And at night, the plant did the opposite: it made the air slightly worse, just like an animal.",
+          "start_s": 56.96,
+          "end_s": 64.3,
+          "film_s": 336.74,
+          "film": "5:36.74"
+        },
+        {
+          "i": 15,
+          "text": "So that was why Priestley's plants sometimes failed.",
+          "start_s": 64.9,
+          "end_s": 67.7,
+          "film_s": 344.68,
+          "film": "5:44.68"
+        },
+        {
+          "i": 16,
+          "text": "They needed light.",
+          "start_s": 68.26,
+          "end_s": 69.34,
+          "film_s": 348.04,
+          "film": "5:48.04"
+        },
+        {
+          "i": 17,
+          "text": "Why light?",
+          "start_s": 70.22,
+          "end_s": 70.78,
+          "film_s": 350.0,
+          "film": "5:50.00"
+        },
+        {
+          "i": 18,
+          "text": "Because light is energy.",
+          "start_s": 71.66,
+          "end_s": 72.98,
+          "film_s": 351.44,
+          "film": "5:51.44"
+        },
+        {
+          "i": 19,
+          "text": "A plant catches sunlight and uses it to make its own food.",
+          "start_s": 73.6,
+          "end_s": 77.5,
+          "film_s": 353.38,
+          "film": "5:53.38"
+        },
+        {
+          "i": 20,
+          "text": "We now call that photosynthesis, from the Greek for putting together with light.",
+          "start_s": 78.16,
+          "end_s": 83.66,
+          "film_s": 357.94,
+          "film": "5:57.94"
+        },
+        {
+          "i": 21,
+          "text": "But one question still remained.",
+          "start_s": 84.38,
+          "end_s": 86.0,
+          "film_s": 364.16,
+          "film": "6:04.16"
+        },
+        {
+          "i": 22,
+          "text": "The bubbles were something the leaf was giving out.",
+          "start_s": 86.66,
+          "end_s": 89.16,
+          "film_s": 366.44,
+          "film": "6:06.44"
+        },
+        {
+          "i": 23,
+          "text": "What was it taking in?",
+          "start_s": 89.94,
+          "end_s": 91.2,
+          "film_s": 369.72,
+          "film": "6:09.72"
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "file": "part05_carbon_from_the_sky_v02.mp3",
+      "sha256": "d8f5a499b548252756d39d467134515de2b6ab66ad0e3ba84de6179bd6233eba",
+      "duration_s": 141.76,
+      "chapter_card": "Carbon From the Sky",
+      "card_in_film_s": 371.7,
+      "card_in_film": "6:11.70",
+      "vo_film_start_s": 373.6,
+      "vo_film_start": "6:13.60",
+      "vo_film_end_s": 515.36,
+      "vo_film_end": "8:35.36",
+      "last_word_s": 141.6,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "In seventeen eighty-two, in Geneva, a pastor called Jean Senebier showed that leaves only made their bubbles when the water held fixed air, the gas we now call carbon dioxide.",
+          "start_s": 0.0,
+          "end_s": 11.2,
+          "film_s": 373.6,
+          "film": "6:13.60"
+        },
+        {
+          "i": 2,
+          "text": "Then, in eighteen-oh-four, another Genevan, Nicolas-Théodore de Saussure, did what van Helmont had done, but far more carefully.",
+          "start_s": 11.96,
+          "end_s": 20.74,
+          "film_s": 385.56,
+          "film": "6:25.56"
+        },
+        {
+          "i": 3,
+          "text": "He weighed the plant, the water, and the air around it.",
+          "start_s": 21.34,
+          "end_s": 25.16,
+          "film_s": 394.94,
+          "film": "6:34.94"
+        },
+        {
+          "i": 4,
+          "text": "And at last, the sums added up.",
+          "start_s": 25.5,
+          "end_s": 27.46,
+          "film_s": 399.1,
+          "film": "6:39.10"
+        },
+        {
+          "i": 5,
+          "text": "We now know that a leaf takes in carbon dioxide through tiny pores.",
+          "start_s": 27.83,
+          "end_s": 31.88,
+          "film_s": 401.43,
+          "film": "6:41.43"
+        },
+        {
+          "i": 6,
+          "text": "It draws up water through its roots.",
+          "start_s": 32.46,
+          "end_s": 34.48,
+          "film_s": 406.06,
+          "film": "6:46.06"
+        },
+        {
+          "i": 7,
+          "text": "Then, with the energy of sunlight, it joins them together into sugar, and lets the spare oxygen go.",
+          "start_s": 35.1,
+          "end_s": 41.32,
+          "film_s": 408.7,
+          "film": "6:48.70"
+        },
+        {
+          "i": 8,
+          "text": "That sugar becomes everything else: leaves, roots, bark and wood.",
+          "start_s": 41.92,
+          "end_s": 46.86,
+          "film_s": 415.52,
+          "film": "6:55.52"
+        },
+        {
+          "i": 9,
+          "text": "So here is what van Helmont's willow was really made of.",
+          "start_s": 47.54,
+          "end_s": 50.96,
+          "film_s": 421.14,
+          "film": "7:01.14"
+        },
+        {
+          "i": 10,
+          "text": "About half of dry wood is carbon, and every bit of that carbon came out of the air.",
+          "start_s": 50.96,
+          "end_s": 57.24,
+          "film_s": 424.56,
+          "film": "7:04.56"
+        },
+        {
+          "i": 11,
+          "text": "Most of the rest is oxygen and hydrogen, from carbon dioxide and water.",
+          "start_s": 57.96,
+          "end_s": 62.16,
+          "film_s": 431.56,
+          "film": "7:11.56"
+        },
+        {
+          "i": 12,
+          "text": "The soil gave only a pinch of minerals, which is why his scales barely moved.",
+          "start_s": 62.9,
+          "end_s": 67.64,
+          "film_s": 436.5,
+          "film": "7:16.50"
+        },
+        {
+          "i": 13,
+          "text": "Van Helmont wasn't completely wrong.",
+          "start_s": 68.42,
+          "end_s": 70.6,
+          "film_s": 442.02,
+          "film": "7:22.02"
+        },
+        {
+          "i": 14,
+          "text": "Water does go into a tree.",
+          "start_s": 71.46,
+          "end_s": 72.96,
+          "film_s": 445.06,
+          "film": "7:25.06"
+        },
+        {
+          "i": 15,
+          "text": "But the solid wood is mostly built from the sky.",
+          "start_s": 73.5,
+          "end_s": 76.38,
+          "film_s": 447.1,
+          "film": "7:27.10"
+        },
+        {
+          "i": 16,
+          "text": "Why was this so groundbreaking?",
+          "start_s": 76.38,
+          "end_s": 78.48,
+          "film_s": 449.98,
+          "film": "7:29.98"
+        },
+        {
+          "i": 17,
+          "text": "Because it means almost every bite of food you have ever eaten began as air and sunlight, caught by a leaf.",
+          "start_s": 79.52,
+          "end_s": 87.48,
+          "film_s": 453.12,
+          "film": "7:33.12"
+        },
+        {
+          "i": 18,
+          "text": "Bread, rice, apples, even meat, because the animal ate plants first.",
+          "start_s": 88.48,
+          "end_s": 93.78,
+          "film_s": 462.08,
+          "film": "7:42.08"
+        },
+        {
+          "i": 19,
+          "text": "And it explained why the air never runs out.",
+          "start_s": 94.56,
+          "end_s": 97.32,
+          "film_s": 468.16,
+          "film": "7:48.16"
+        },
+        {
+          "i": 20,
+          "text": "The oxygen in every breath you take was given out by plants on land and tiny algae in the sea.",
+          "start_s": 97.88,
+          "end_s": 104.34,
+          "film_s": 471.48,
+          "film": "7:51.48"
+        },
+        {
+          "i": 21,
+          "text": "Today, only about four molecules in every ten thousand in the air are carbon dioxide.",
+          "start_s": 105.06,
+          "end_s": 110.42,
+          "film_s": 478.66,
+          "film": "7:58.66"
+        },
+        {
+          "i": 22,
+          "text": "Out of that thin trace, a willow builds its wood.",
+          "start_s": 111.22,
+          "end_s": 114.94,
+          "film_s": 484.82,
+          "film": "8:04.82"
+        },
+        {
+          "i": 23,
+          "text": "A pot of soil, a sprig of mint, and a leaf in the sun.",
+          "start_s": 115.62,
+          "end_s": 119.92,
+          "film_s": 489.22,
+          "film": "8:09.22"
+        },
+        {
+          "i": 24,
+          "text": "Together, they proved that a tree isn't pulled up out of the ground.",
+          "start_s": 120.74,
+          "end_s": 124.62,
+          "film_s": 494.34,
+          "film": "8:14.34"
+        },
+        {
+          "i": 25,
+          "text": "It's pulled down out of the air.",
+          "start_s": 125.18,
+          "end_s": 127.52,
+          "film_s": 498.78,
+          "film": "8:18.78"
+        },
+        {
+          "i": 26,
+          "text": "Every one of those carbon atoms is billions of years old.",
+          "start_s": 128.16,
+          "end_s": 132.14,
+          "film_s": 501.76,
+          "film": "8:21.76"
+        },
+        {
+          "i": 27,
+          "text": "So what is an atom actually made of?",
+          "start_s": 132.58,
+          "end_s": 135.34,
+          "film_s": 506.18,
+          "film": "8:26.18"
+        },
+        {
+          "i": 28,
+          "text": "To find out, a young student fired tiny particles at gold beaten thinner than paper.",
+          "start_s": 135.92,
+          "end_s": 141.6,
+          "film_s": 509.52,
+          "film": "8:29.52"
+        }
+      ]
+    }
+  ]
+}

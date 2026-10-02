@@ -1,0 +1,69 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "The Willow Tree That Was Made of Air",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/trees_long_description_v01.txt",
+  "tagsFile": "Tags/trees_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "The Willow Tree That Was Made of Air",
+    "Where Does a Tree's Weight Come From?"
+  ],
+  "schedule": "2026-11-05T18:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "Draft at script v02 (2 Oct 2026). Title, T&C title, description v01 (chapter times are word-count estimates, re-time from the VO), tags v01 and schedule are PROPOSALS for Claude's review and Ben's final OK; nothing is uploaded or scheduled. Proposed air Thu 5 Nov 2026 18:00 UK = 18:00 UTC, normal publish.",
+  "neighbours": {
+    "phrases": [
+      "tree",
+      "photosynthesis"
+    ],
+    "checked": "2026-10-02",
+    "videos": [
+      {
+        "id": "2KZb2_vcNTg",
+        "channel": "Veritasium",
+        "title": "Where Do Trees Get Their Mass?",
+        "views": 2537739
+      },
+      {
+        "id": "sQK3Yr4Sc_k",
+        "channel": "CrashCourse",
+        "title": "Photosynthesis: Crash Course Biology #8",
+        "views": 9237499
+      },
+      {
+        "id": "ZSch_NgZpQs",
+        "channel": "Kurzgesagt – In a Nutshell",
+        "title": "Trees Are So Weird",
+        "views": 6713007
+      },
+      {
+        "id": "eo5XndJaz-Y",
+        "channel": "TED-Ed",
+        "title": "The simple story of photosynthesis and food - Amanda Ooten",
+        "views": 2218164
+      },
+      {
+        "id": "3hxE7Af98AI",
+        "channel": "TED-Ed",
+        "title": "What if there were 1 trillion more trees? - Jean-François Bastin",
+        "views": 4797252
+      }
+    ],
+    "note": "Hand-edited 2 Oct 2026 on Claude's desk review (#180 comment 5950401504): the three exact-question lessons plus two TED-Ed lessons; views from evidence_2026-10-02_neighbours_manifest.json."
+  }
+}

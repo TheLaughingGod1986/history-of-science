@@ -1,0 +1,509 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "working_title": "The Willow Tree That Was Made of Air",
+  "part": "02",
+  "title": "Five Years and Two Ounces",
+  "status": "BOARD_V01",
+  "mint": false,
+  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v02 (VO_RETIME_v02.json) · priced (Claude desk task 5951184558, 2 Oct 2026)",
+  "script": "01_Script/trees_script_master_v02.md",
+  "vo_file": "02_Voiceover/part02_five_years_and_two_ounces_v02.mp3",
+  "vo_sha256": "ddd904b749ae2c30af92b89950e377c7ebb85aec4538858ae21f4ce4928b1a11",
+  "vo_duration_s": 117.0,
+  "chapter_card": {
+    "text": "Five Years and Two Ounces",
+    "in_s": 61.65,
+    "hold_s": 1.5,
+    "treatment": "soft cross-fade after the last word + 0.6 s breath; music continues"
+  },
+  "vo_film_start_s": 63.55,
+  "part_end_film_s": 181.15,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "open_stamp": {
+    "after_s": 1.5,
+    "text": "Vilvoorde",
+    "treatment": "Didot italic side label in the edit"
+  },
+  "set_language": "Warm, sunlit natural-history world: oak, red brick, clay pots, glass jars, brass balances, green willow leaves. Van Helmont's walled garden at Vilvoorde (grey Flemish light, 1600s); Georgian English rooms (1700s); Geneva by the lake (1780s-1800s). Leaf cutaways are clean illustrated cross-sections. Say 'same Vilvoorde garden', 'same Priestley room' or 'same Ingenhousz sill' for continuity; never 'same DNA'.",
+  "explorer_lock": "ONE beat (plate 07): in the snowy garden the Explorer lifts a corner of the pierced lid, rubs a pinch of soil, looks up the tall willow, scratches his head and walks off through the gate. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
+  "explorer_plates": 1,
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; a mouse or any animal hurt, dying or still (Priestley's mouse is only ever alive and lively); lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; garbled writing; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels, numbers and dates are added in the edit unless the plate says a quill writes them); twin Explorer; faces in the first two seconds of the film; a flame, lamp, furnace glow or glowing cutaway on a Fast plate. Never say 'same DNA' or 'lab DNA' in a Veo prompt.",
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text or wrong numbers (200, 5, 169, 62 checked by hand)",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship",
+    "an animal hurt, dying or limp",
+    "a face in the first two seconds of the film",
+    "a flame, lamp or glow in frame on a Fast plate (remint on Quality or reframe)"
+  ],
+  "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns. A reuse row cuts a different window of a KEEP clip; never a still.",
+  "quality_note": "Flow Veo 3.1 Fast on the Mini's CDP worker (benoats@googlemail.com) for the held establishing shots; Vertex AI Veo 3.1 (gen-lang-client-0538779324) for the rest: veo-3.1-generate-001 for Quality, veo-3.1-fast-generate-001 for Fast, 4/6/8 s clips. Quality only for a named person's face, the Explorer, or a flame/furnace/glow/sunbeam hero. A Fast take with a flame, lamp or glow in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+  "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
+  "counts": {
+    "rows": 22,
+    "mints": 21,
+    "Quality": 4,
+    "Fast": 17,
+    "reuse": 1
+  },
+  "plates": [
+    {
+      "id": "01_furnace_soil",
+      "t_s": 63.55,
+      "t": "1:03.55",
+      "explorer": false,
+      "side_label": "DRIED SOIL",
+      "quality": "Quality",
+      "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
+      "prompt": "Premium Animistry-class 3D cartoon. A brick furnace in a Flemish workroom glows orange; Jan Baptist van Helmont, a Flemish doctor of about forty, long dark wavy hair to the shoulders, moustache and small pointed beard, black coat with a plain white falling collar, slides out an iron tray of steaming dark soil with tongs and tips it into a big clay pot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.46,
+      "vo_land": [
+        "Here is exactly what he did.",
+        "He took a big clay pot and filled it with two hundred pounds of soil, dried in a furnace first, so no hidden water could fool the scales."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 21.95,
+      "beyond_floor": false
+    },
+    {
+      "id": "02_balance_200",
+      "t_s": 69.01,
+      "t": "1:09.01",
+      "explorer": false,
+      "side_label": "200 POUNDS OF SOIL",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same workroom by a grey window: the big clay pot of soil on one pan of a brass balance, iron weights stacked on the other until the beam is level; a quill writes a large clear '200' in a ledger. The number stays sharp. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.84,
+      "vo_land": [
+        "(continues) He took a big clay pot and filled it with two hundred pounds of soil, dried in a furnace first, so no hidden water could fool the scales."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 23.28,
+      "beyond_floor": false
+    },
+    {
+      "id": "03_willow_shoot_scale",
+      "t_s": 74.85,
+      "t": "1:14.85",
+      "explorer": false,
+      "side_label": "A 5-POUND WILLOW",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same balance: a young willow shoot with bare roots lies alone on the pan, balanced by one small iron weight; the beam steadies. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.28,
+      "vo_land": [
+        "Then he planted a young willow that weighed five pounds."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 24.29,
+      "beyond_floor": false
+    },
+    {
+      "id": "04_lid_rain",
+      "t_s": 79.13,
+      "t": "1:19.13",
+      "explorer": false,
+      "side_label": "WATER IN, DUST OUT",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same Vilvoorde garden: a round metal lid pierced with many tiny holes slides over the clay pot round the willow's stem; rain patters through the holes, while a puff of dust blown by the wind bounces off the lid. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.38,
+      "vo_land": [
+        "He covered the pot with a metal lid full of tiny holes, so rain could get in, but dust could not."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 25.62,
+      "beyond_floor": false
+    },
+    {
+      "id": "05_pure_water",
+      "t_s": 85.51,
+      "t": "1:25.51",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the pierced lid of the pot: a copper watering can pours clear water that sparkles softly as it runs through the tiny holes into the soil. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.98,
+      "vo_land": [
+        "And for five years, he gave that tree nothing but pure water."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 26.63,
+      "beyond_floor": false
+    },
+    {
+      "id": "06_garden_years",
+      "t_s": 90.49,
+      "t": "1:30.49",
+      "explorer": false,
+      "side_label": "FIVE YEARS",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same Vilvoorde garden in one continuous time-lapse: spring leaves burst out on the willow in the clay pot, autumn leaves fall, snow settles, spring again; the willow climbs past the garden wall while the pot never changes. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.98,
+      "vo_land": [
+        "Picture yourself in that garden.",
+        "Every spring, the leaves burst out.",
+        "Every autumn, they fall."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 27.95,
+      "beyond_floor": false
+    },
+    {
+      "id": "07_explorer_snow",
+      "t_s": 97.47,
+      "t": "1:37.47",
+      "explorer": true,
+      "side_label": null,
+      "quality": "Quality",
+      "engine_reason": "Quality: explorer fidelity. Face and hair are UAT hard fail 4 (glasses, full hair, one Explorer); a Fast remint would cost more than the difference.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same Vilvoorde garden in snow, the willow now tall in its clay pot. Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He lifts a corner of the pierced lid, rubs a pinch of soil between finger and thumb, looks up and up the tall willow, scratches his head and walks off through the garden gate. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame.",
+      "use_s": 5.38,
+      "vo_land": [
+        "Year after year the willow grows taller, and the pot of soil never changes."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.96,
+      "cost_expected_gbp": 2.56,
+      "cum_expected_gbp": 30.51,
+      "beyond_floor": false
+    },
+    {
+      "id": "08_haul_tree",
+      "t_s": 102.85,
+      "t": "1:42.85",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: wide shot, figures small and faces not readable, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same garden, wide: van Helmont and two helpers, small in frame, haul the tall dripping willow, roots and all, out of the clay pot and onto the big brass balance; iron weights pile up on the other pan. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.88,
+      "vo_land": [
+        "Then, after five years, he pulled the tree out and weighed it."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 31.84,
+      "beyond_floor": false
+    },
+    {
+      "id": "09_weights_169",
+      "t_s": 108.73,
+      "t": "1:48.73",
+      "explorer": false,
+      "side_label": "169 POUNDS",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the balance: one more iron weight lands and the beam levels; a quill writes a large clear '169' in the ledger. The number stays sharp. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 3.9,
+      "vo_land": [
+        "A hundred and sixty-nine pounds, about the weight of a grown man."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 32.85,
+      "beyond_floor": false
+    },
+    {
+      "id": "10_fallen_leaves",
+      "t_s": 112.63,
+      "t": "1:52.63",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same garden corner: four little heaps of dry willow leaves from four autumns, swept against the wall; a breeze lifts a few and lets them fall. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.42,
+      "vo_land": [
+        "And that didn't even count the leaves that had fallen in four autumns."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 33.86,
+      "beyond_floor": false
+    },
+    {
+      "id": "11_furnace_again",
+      "t_s": 117.05,
+      "t": "1:57.05",
+      "explorer": false,
+      "side_label": null,
+      "quality": "reuse",
+      "reuse_of": "P2:01_furnace_soil",
+      "clip_in_s": 2.0,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 3.54,
+      "vo_land": [
+        "Now came the moment that mattered.",
+        "He dried the soil again and put it back on the scales."
+      ],
+      "reuse_window": "2.00-5.54 s of P2:01_furnace_soil",
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    },
+    {
+      "id": "12_pointer_short",
+      "t_s": 120.59,
+      "t": "2:00.59",
+      "explorer": false,
+      "side_label": "SOIL LOST: ABOUT 2 OUNCES",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the brass balance's pointer as the dried soil goes back on: it swings, slows and stops a hair short of its old mark. The camera pushes in on the tiny gap. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.78,
+      "vo_land": [
+        "(continues) He dried the soil again and put it back on the scales.",
+        "Two hundred pounds, less about two ounces."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 35.19,
+      "beyond_floor": false
+    },
+    {
+      "id": "13_tree_vs_pinch",
+      "t_s": 127.37,
+      "t": "2:07.37",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. The tall willow lies across a long oak table; at the far end a tiny pinch of dark soil sits in a silver spoon. The camera glides from the huge tree to the tiny pinch. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.38,
+      "vo_land": [
+        "A hundred and sixty-four pounds of new tree, and only two ounces of soil gone."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 36.2,
+      "beyond_floor": false
+    },
+    {
+      "id": "14_why_grown",
+      "t_s": 132.75,
+      "t": "2:12.75",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: wide shot, figures small and faces not readable, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same garden, wide: van Helmont, small in frame with his back to us, stands beside the empty clay pot and looks up at the willow towering over the wall. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.4,
+      "vo_land": [
+        "The tree had not eaten the soil.",
+        "So why had it grown?"
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 37.21,
+      "beyond_floor": false
+    },
+    {
+      "id": "15_desk_candle",
+      "t_s": 137.15,
+      "t": "2:17.15",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Quality",
+      "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
+      "prompt": "Premium Animistry-class 3D cartoon. Van Helmont's study at night: Jan Baptist van Helmont, a Flemish doctor of about forty, long dark wavy hair to the shoulders, moustache and small pointed beard, black coat with a plain white falling collar, writes by a single candle; its flame flickers on the page and on his thoughtful face. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.46,
+      "vo_land": [
+        "Van Helmont's answer seemed obvious.",
+        "The only thing he had added was water."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.96,
+      "cost_expected_gbp": 2.56,
+      "cum_expected_gbp": 39.77,
+      "beyond_floor": false
+    },
+    {
+      "id": "16_water_drawing",
+      "t_s": 142.61,
+      "t": "2:22.61",
+      "explorer": false,
+      "side_label": "\"FROM WATER ALONE\"",
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper, props or a flat illustrated diagram; nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on a page with a brown-ink drawing of a tree; an inked stream of water pours into its roots and fills the trunk, the bark and the branches with blue. Ink and paper only, no readable text. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.14,
+      "vo_land": [
+        "So, he wrote, the wood, the bark and the roots had come from water alone."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 40.78,
+      "beyond_floor": false
+    },
+    {
+      "id": "17_mostly_wrong",
+      "t_s": 147.75,
+      "t": "2:27.75",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Low angle up the tall willow from the empty clay pot; the wind shakes the leaves and a single leaf spins down onto the open ledger on the garden bench. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.32,
+      "vo_land": [
+        "It was a brilliant experiment, and his answer was mostly wrong."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 41.79,
+      "beyond_floor": false
+    },
+    {
+      "id": "18_charcoal_hearth",
+      "t_s": 153.07,
+      "t": "2:33.07",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Quality",
+      "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
+      "prompt": "Premium Animistry-class 3D cartoon. A wide brick hearth: Jan Baptist van Helmont, a Flemish doctor of about forty, long dark wavy hair to the shoulders, moustache and small pointed beard, black coat with a plain white falling collar, tips a heap of black charcoal onto it from a scoop; it catches and burns brightly, then sinks down and down. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.78,
+      "vo_land": [
+        "And here is the strangest part of the mystery.",
+        "Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 45.18,
+      "beyond_floor": false
+    },
+    {
+      "id": "19_ash_mound",
+      "t_s": 159.85,
+      "t": "2:39.85",
+      "explorer": false,
+      "side_label": "62 POUNDS → 1 POUND OF ASH",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the cold hearth: one small mound of pale grey ash where the great heap of charcoal had been; a brush sweeps it into a little dish on a balance. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 3.54,
+      "vo_land": [
+        "(continues) Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 46.19,
+      "beyond_floor": false
+    },
+    {
+      "id": "20_shimmer_coals",
+      "t_s": 163.39,
+      "t": "2:43.39",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same hearth, the fire out: a clear, invisible shimmer like heat haze rises off the grey coals and curls upward. Nothing glows; the shimmer only bends the bricks behind it. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.16,
+      "vo_land": [
+        "The rest had vanished into the air, as a wild, invisible spirit."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 47.2,
+      "beyond_floor": false
+    },
+    {
+      "id": "21_gas_window",
+      "t_s": 168.55,
+      "t": "2:48.55",
+      "explorer": false,
+      "side_label": "GAS",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same study by day: the clear shimmer drifts past van Helmont, small at his desk with his back to us, and slips out of the open window. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.64,
+      "vo_land": [
+        "He gave it a new name: gas.",
+        "We now know that gas was mostly carbon dioxide."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 48.53,
+      "beyond_floor": false
+    },
+    {
+      "id": "22_shimmer_willow",
+      "t_s": 175.19,
+      "t": "2:55.19",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. The clear shimmer drifts across the Vilvoorde garden and into the willow's leaves, which tremble as it arrives; nobody notices. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.96,
+      "vo_land": [
+        "He had discovered the very thing his tree was made of.",
+        "He never put the two together."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 49.85,
+      "beyond_floor": false
+    }
+  ]
+}

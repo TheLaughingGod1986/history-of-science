@@ -1,0 +1,87 @@
+[
+  {
+    "part": 1,
+    "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/02_Voiceover/part01_plants_eat_soil_v01.mp3",
+    "duration_s": 64.48,
+    "sha256": "330c95cef4ded8766e093a4c32b23ebf7eaa489f4f82f9d18ad863b5656d3d7e",
+    "chars": 851,
+    "words": 162,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  },
+  {
+    "part": 2,
+    "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/02_Voiceover/part02_five_years_and_two_ounces_v01.mp3",
+    "duration_s": 122.88,
+    "sha256": "532c7b86cab72f6dcd2e8784a224735e374c72a42688b68db425abc272f8b558",
+    "chars": 1614,
+    "words": 305,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  },
+  {
+    "part": 3,
+    "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/02_Voiceover/part03_the_air_that_mint_repaired_v01.mp3",
+    "duration_s": 99.44,
+    "sha256": "a04783762c7116dc9bae148cc1ddd8a9df7353c3331b922055ae98d97591ecf0",
+    "chars": 1323,
+    "words": 233,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  },
+  {
+    "part": 4,
+    "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/02_Voiceover/part04_bubbles_in_the_sunlight_v01.mp3",
+    "duration_s": 97.6,
+    "sha256": "ae3b37c96ae3b1073900e9e46e0f3c7b289fac5935b77f76056f575295c3eeea",
+    "chars": 1230,
+    "words": 214,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  },
+  {
+    "part": 5,
+    "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/02_Voiceover/part05_carbon_from_the_sky_v01.mp3",
+    "duration_s": 147.44,
+    "sha256": "c96b74de4373045f669e66911d5424c0d025d94261ebf6afa33420e0b5a140a8",
+    "chars": 1897,
+    "words": 351,
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "voice_settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  }
+]

@@ -1,0 +1,428 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "working_title": "The Willow Tree That Was Made of Air",
+  "part": "03",
+  "title": "The Air That Mint Repaired",
+  "status": "BOARD_V01",
+  "mint": false,
+  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v02 (VO_RETIME_v02.json) · priced (Claude desk task 5951184558, 2 Oct 2026)",
+  "script": "01_Script/trees_script_master_v02.md",
+  "vo_file": "02_Voiceover/part03_the_air_that_mint_repaired_v02.mp3",
+  "vo_sha256": "6696a9b8bcd0295139a75d59e1d2900189a4c9ed7d4609a592d9959e4a094bd7",
+  "vo_duration_s": 94.23,
+  "chapter_card": {
+    "text": "The Air That Mint Repaired",
+    "in_s": 181.15,
+    "hold_s": 1.5,
+    "treatment": "soft cross-fade after the last word + 0.6 s breath; music continues"
+  },
+  "vo_film_start_s": 183.05,
+  "part_end_film_s": 277.88,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "open_stamp": {
+    "after_s": 1.5,
+    "text": "Teddington",
+    "treatment": "Didot italic side label in the edit"
+  },
+  "set_language": "Warm, sunlit natural-history world: oak, red brick, clay pots, glass jars, brass balances, green willow leaves. Van Helmont's walled garden at Vilvoorde (grey Flemish light, 1600s); Georgian English rooms (1700s); Geneva by the lake (1780s-1800s). Leaf cutaways are clean illustrated cross-sections. Say 'same Vilvoorde garden', 'same Priestley room' or 'same Ingenhousz sill' for continuity; never 'same DNA'.",
+  "explorer_lock": "NONE this part.",
+  "explorer_plates": 0,
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; a mouse or any animal hurt, dying or still (Priestley's mouse is only ever alive and lively); lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; garbled writing; unfinished Explorer hair; DNA helix; readable text or logos baked into the plate (labels, numbers and dates are added in the edit unless the plate says a quill writes them); twin Explorer; faces in the first two seconds of the film; a flame, lamp, furnace glow or glowing cutaway on a Fast plate. Never say 'same DNA' or 'lab DNA' in a Veo prompt.",
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text or wrong numbers (200, 5, 169, 62 checked by hand)",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship",
+    "an animal hurt, dying or limp",
+    "a face in the first two seconds of the film",
+    "a flame, lamp or glow in frame on a Fast plate (remint on Quality or reframe)"
+  ],
+  "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns. A reuse row cuts a different window of a KEEP clip; never a still.",
+  "quality_note": "Flow Veo 3.1 Fast on the Mini's CDP worker (benoats@googlemail.com) for the held establishing shots; Vertex AI Veo 3.1 (gen-lang-client-0538779324) for the rest: veo-3.1-generate-001 for Quality, veo-3.1-fast-generate-001 for Fast, 4/6/8 s clips. Quality only for a named person's face, the Explorer, or a flame/furnace/glow/sunbeam hero. A Fast take with a flame, lamp or glow in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+  "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
+  "counts": {
+    "rows": 18,
+    "mints": 17,
+    "Quality": 4,
+    "Fast": 13,
+    "reuse": 1
+  },
+  "plates": [
+    {
+      "id": "01_soil_to_sky",
+      "t_s": 183.05,
+      "t": "3:03.05",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on dark garden soil; the camera rises slowly up a plant stem, through leaves and out into a wide blue sky with drifting clouds. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.04,
+      "vo_land": [
+        "Nearly a century later, the question moved from the soil to the sky."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 50.87,
+      "beyond_floor": false
+    },
+    {
+      "id": "02_hales_branch",
+      "t_s": 188.09,
+      "t": "3:08.09",
+      "explorer": false,
+      "side_label": "STEPHEN HALES · 1727",
+      "quality": "Quality",
+      "engine_reason": "Quality: a named person's readable face is the hero (first appearance).",
+      "prompt": "Premium Animistry-class 3D cartoon. A riverside churchyard garden at Teddington in the 1720s: Stephen Hales, a round-faced, clean-shaven English parson of about fifty, short white wig, black clergyman's coat with white bands, seals a glass tube over the cut end of a leafy branch with wax and peers at the water level inside. Readable, finished face. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.5,
+      "vo_land": [
+        "Just outside London, in seventeen twenty-seven, a country parson called Stephen Hales published careful measurements of how much water plants drink up and give off through their leaves."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 54.25,
+      "beyond_floor": false
+    },
+    {
+      "id": "03_water_level",
+      "t_s": 194.59,
+      "t": "3:14.59",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: hands and props only, no face, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the glass tube: the water level inside creeps down as the leafy branch drinks; Hales's finger marks the level with a little scratch. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.22,
+      "vo_land": [
+        "(continues) Just outside London, in seventeen twenty-seven, a country parson called Stephen Hales published careful measurements of how much water plants drink up and give off through their leaves."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 55.26,
+      "beyond_floor": false
+    },
+    {
+      "id": "04_leaf_mist",
+      "t_s": 199.81,
+      "t": "3:19.81",
+      "explorer": false,
+      "side_label": "FOOD FROM THE AIR?",
+      "quality": "Fast",
+      "engine_reason": "Fast: clean illustrated cutaway in soft daylight colours; nothing glows.",
+      "prompt": "Premium Animistry-class 3D cartoon. A clean illustrated cutaway of a leaf on its stem: water rises up the stem and drifts out of the leaf as fine mist, while a faint pale arrow of air drifts in towards it. Soft daylight colours; nothing glows. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.08,
+      "vo_land": [
+        "And he made a bold guess.",
+        "Plants, he wrote, probably take some of their food from the air."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 56.59,
+      "beyond_floor": false
+    },
+    {
+      "id": "05_guess",
+      "t_s": 206.89,
+      "t": "3:26.89",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper, props or a flat illustrated diagram; nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on a page: a quill draws one large question mark beside a sketch of a leaf; a draught lifts the page's corner. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 3.28,
+      "vo_land": [
+        "But a guess isn't proof."
+      ],
+      "route": "vertex",
+      "clip_s": 4,
+      "cost_try1_gbp": 0.32,
+      "cost_expected_gbp": 0.7,
+      "cum_expected_gbp": 57.29,
+      "beyond_floor": false
+    },
+    {
+      "id": "06_leeds_brewery",
+      "t_s": 210.17,
+      "t": "3:30.17",
+      "explorer": false,
+      "side_label": "LEEDS · 1771",
+      "quality": "Fast",
+      "engine_reason": "Fast: held establishing shot, slow push, no readable faces, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Leeds, 1771: a plain stone house beside a busy brewery, white steam rising from the vats into a grey sky. Held wide shot, slow push. No readable faces. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.5,
+      "vo_land": [
+        "Leeds, seventeen seventy-one.",
+        "Joseph Priestley, a minister who lived next door to a brewery, was fascinated by air."
+      ],
+      "route": "flow",
+      "clip_s": 8,
+      "flow_credits": 20,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0,
+      "route_note": "Flow Veo 3.1 Fast, 2 takes x 10 credits; a third take moves to Vertex Fast"
+    },
+    {
+      "id": "07_priestley",
+      "t_s": 214.67,
+      "t": "3:34.67",
+      "explorer": false,
+      "side_label": "JOSEPH PRIESTLEY",
+      "quality": "Quality",
+      "engine_reason": "Quality: a named person's readable face is the hero (first appearance).",
+      "prompt": "Premium Animistry-class 3D cartoon. Inside the brewery beside a great steaming vat: Joseph Priestley, a man of about thirty-eight, long face, strong nose, short grey wig, plain dark coat, holds a glass jar up into the rising air and studies it with delight. Readable, finished face. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.16,
+      "vo_land": [
+        "(continues) Leeds, seventeen seventy-one.",
+        "He knew that if you burn a candle inside a sealed glass jar, the flame soon dies, and the air left behind won't let another candle burn."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 60.67,
+      "beyond_floor": false
+    },
+    {
+      "id": "08_candles_out",
+      "t_s": 220.83,
+      "t": "3:40.83",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Quality",
+      "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
+      "prompt": "Premium Animistry-class 3D cartoon. Priestley's room: his hand lowers a lit candle on a wire into a tall glass jar standing in a bowl of water; the flame shrinks and goes out; a second lit candle lowered into the same jar goes out at once. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.64,
+      "vo_land": [
+        "(continues) He knew that if you burn a candle inside a sealed glass jar, the flame soon dies, and the air left behind won't let another candle burn."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 64.06,
+      "beyond_floor": false
+    },
+    {
+      "id": "09_injured_air",
+      "t_s": 228.47,
+      "t": "3:48.47",
+      "explorer": false,
+      "side_label": "\"INJURED\" AIR",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the sealed glass jar in its bowl of water: a thin wisp of smoke curls from a dead wick inside and hangs, trapped. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 2.72,
+      "vo_land": [
+        "Priestley called that air injured."
+      ],
+      "route": "vertex",
+      "clip_s": 4,
+      "cost_try1_gbp": 0.32,
+      "cost_expected_gbp": 0.7,
+      "cum_expected_gbp": 64.76,
+      "beyond_floor": false
+    },
+    {
+      "id": "10_mint_jar",
+      "t_s": 231.19,
+      "t": "3:51.19",
+      "explorer": false,
+      "side_label": "ONE SPRIG OF MINT · 17 AUGUST",
+      "quality": "Fast",
+      "engine_reason": "Fast: hands and props only, no face, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same jar: Priestley's hands slide a bright green sprig of mint in a little pot under it and seal it; beside it a small blank calendar card stands on the table (the date is added in the edit). Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.22,
+      "vo_land": [
+        "So, on the seventeenth of August, he slipped a sprig of mint into a jar of that injured air, and waited."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 66.08,
+      "beyond_floor": true
+    },
+    {
+      "id": "11_candle_tall",
+      "t_s": 238.41,
+      "t": "3:58.41",
+      "explorer": false,
+      "side_label": "TEN DAYS LATER → THE AIR IS BACK",
+      "quality": "Quality",
+      "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
+      "prompt": "Premium Animistry-class 3D cartoon. Same jar, the mint now fuller: Priestley's hand lowers a lit candle on a wire into it and the flame burns tall and steady; the camera eases in on the flame. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.48,
+      "vo_land": [
+        "Ten days later, he lowered in another candle.",
+        "It burned perfectly well."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 69.47,
+      "beyond_floor": true
+    },
+    {
+      "id": "12_mouse_mint",
+      "t_s": 243.89,
+      "t": "4:03.89",
+      "explorer": false,
+      "side_label": "THE MOUSE LIVED",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Two glass jars side by side on Priestley's table: in the one with the mint, a small brown mouse sniffs about, lively and well, washing its whiskers. Wonder, not cruelty: the mouse is bright-eyed and busy. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.87,
+      "vo_land": [
+        "Then he tried air that mice had made stale with their breathing.",
+        "In the jar where mint had grown, a mouse lived perfectly well."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 70.8,
+      "beyond_floor": true
+    },
+    {
+      "id": "13_fires_breath",
+      "t_s": 251.76,
+      "t": "4:11.76",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: wide shot, figures small and faces not readable, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. A wide 1770s town at morning: chimneys smoking, people and cows breathing misty breath in the cold, carts moving. Small figures, no readable faces. The smoke stays in the chimney tops; no flames in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.87,
+      "vo_land": [
+        "(continues) In the jar where mint had grown, a mouse lived perfectly well.",
+        "Why does that matter?",
+        "Because every fire and every animal on Earth uses the air up."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 72.12,
+      "beyond_floor": true
+    },
+    {
+      "id": "14_trees_breathe",
+      "t_s": 258.63,
+      "t": "4:18.63",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. The camera pans from the smoky town to green countryside: woods and hedges gently breathing a faint clear shimmer back into the air. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 2.72,
+      "vo_land": [
+        "Something had to be putting it back."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 73.45,
+      "beyond_floor": true
+    },
+    {
+      "id": "15_quill_vegetable",
+      "t_s": 261.35,
+      "t": "4:21.35",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: hands and props only, no face, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on Priestley's hand writing with a quill in a notebook, the mint jar blurred beside it; no readable text. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.5,
+      "vo_land": [
+        "Priestley wrote that the damage animals do to the air is repaired by \"the vegetable creation.\" Plants repair the air."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 74.46,
+      "beyond_floor": true
+    },
+    {
+      "id": "16_repair_reuse",
+      "t_s": 265.85,
+      "t": "4:25.85",
+      "explorer": false,
+      "side_label": "PLANTS REPAIR THE AIR",
+      "quality": "reuse",
+      "reuse_of": "P3:14_trees_breathe",
+      "clip_in_s": 3.0,
+      "engine_reason": "Reuse: a later window of a KEEP clip (callback), no new mint.",
+      "use_s": 3.84,
+      "vo_land": [
+        "(continues) Priestley wrote that the damage animals do to the air is repaired by \"the vegetable creation.\" Plants repair the air."
+      ],
+      "reuse_window": "3.00-6.84 s of P3:14_trees_breathe",
+      "route": "reuse",
+      "clip_s": 0,
+      "cost_try1_gbp": 0.0,
+      "cost_expected_gbp": 0.0
+    },
+    {
+      "id": "17_notebook_tick",
+      "t_s": 269.69,
+      "t": "4:29.69",
+      "explorer": false,
+      "side_label": "WHY ONLY SOMETIMES?",
+      "quality": "Fast",
+      "engine_reason": "Fast: ink, paper, props or a flat illustrated diagram; nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on Priestley's notebook: one line gets a firm tick, the next line is crossed out; the quill hesitates. Marks only, no readable words. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.18,
+      "vo_land": [
+        "But there was a problem.",
+        "Sometimes his plants repaired the air."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 75.47,
+      "beyond_floor": true
+    },
+    {
+      "id": "18_dark_window",
+      "t_s": 273.87,
+      "t": "4:33.87",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. The mint jar on the sill beside a dark evening window, the mint a little limp; the room grows dim and blue. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.01,
+      "vo_land": [
+        "Sometimes they didn't.",
+        "And nobody could say why."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 76.48,
+      "beyond_floor": true
+    }
+  ]
+}

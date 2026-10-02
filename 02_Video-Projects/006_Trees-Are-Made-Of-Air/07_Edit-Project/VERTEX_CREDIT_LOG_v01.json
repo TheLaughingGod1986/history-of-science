@@ -1,0 +1,13 @@
+{
+  "source": "https://console.cloud.google.com/billing/0124D1-E6EFD6-40F6DA/credits/all?project=gen-lang-client-0538779324",
+  "readings": [
+    {
+      "label": "before_boards_006_2026-10-02",
+      "at": "2026-10-02T11:28:23+00:00",
+      "free_trial_remaining_gbp": 65.73,
+      "status": "Available",
+      "screenshot": "vertex_credits_before_boards_006_2026-10-02.png",
+      "floor_gbp": 0.0
+    }
+  ]
+}
