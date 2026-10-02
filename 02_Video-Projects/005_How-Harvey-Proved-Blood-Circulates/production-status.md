@@ -20,7 +20,7 @@
 ## STOP
 
 - **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
-- **Full join v01 built (2 Oct 2026), held before Ben:** its `vo_check` prints FAIL on two transcriber misses of "Fabricius" (Part 04 alone PASSes). Waiting on a listen and a decision on the desk (see "Full join v01" below).
+- **Full join v01 with Ben for his watch (2 Oct 2026).** Parts 02–05 accepted by Claude on the desk. Claude's decision (desk, 2 Oct 03:40 UTC): full-join `vo_check` FAIL = transcriber drift on "Fabricius" (Part 04 window PASS); listen-pass at 5:06/5:35 = Ben's watch. If Ben hears a fault, regenerate those two sentences alone. Watch item: a small yellow curl top centre at about 8:20; if Ben calls it a helix, trim the tail of 05/18 (no remint). No Shorts and no changes until Ben passes the join.
 - Resolved: Part 01 rough v01 passed by Ben, 1 Oct 2026 ("Part 1 OK").
 - Resolved: the Flow-credits STOP (1 Oct 23:45) is replaced by Vertex AI Veo for 005 with Ben's OK. Shorts scripts signed off by Ben, 1 Oct 2026.
 
@@ -552,6 +552,7 @@ film 005 Vertex spend $190.63 · projected Free Trial £57.03 (floor £20, £/$ 
 - **Cards:** 0:57.62 c. AD 170 · 2:37.71 1616 · 4:16.41 1628 · 6:25.15 1661, each 0.6 s after the last word. End card 8:22.52 (4 s), then the 20 s end-screen hold.
 - **freezedetect:** 5 events, all inside the card and end-card holds.
 - **STOP:** `vo_check` on the full join prints FAIL on two transcriber misses of "Fabricius" in Part 04 (heard "vibrisius" at 5:06 and 5:35). The same Part 04 window cut from the join PASSes ("fabriceus", sounds alike). Waiting on a listen and a decision on the desk before Ben's sign-off. Report: `07_Edit-Project/_desk/full_join_v01_report_2026-10-02.md`.
+- **Decision (Claude, desk, 2 Oct 03:40 UTC):** goes to Ben as built, no regeneration. Full-join `vo_check` FAIL = transcriber drift on "Fabricius" (Part 04 window PASS); listen-pass at 5:06/5:35 = Ben's watch. Card dates kept (c. AD 170 / 1616 / 1628 / 1661).
 
 ```
 FAIL  hos_005_full_join_v01.mp4  8:46.53  mean -21.8 dB  peak -2.1 dB  143 wpm
@@ -565,9 +566,9 @@ PASS  join_p04_window.mp4  2:08.27  mean -22.0 dB  peak -2.2 dB  153 wpm
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
 | 01 | `07_Edit-Project/parts/part-01_plates_v02.json` (9 plates: 3 Q, 6 F) | `09_Final-Export/hos_005_part01_rough_v01.mp4` (`7661b6cf…`, 59.53 s) | 9/9 KEEP on Vertex ($25.58); **passed by Ben, 1 Oct 2026** |
-| 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | `09_Final-Export/hos_005_part02_rough_v02.mp4` (`d813f553…`, 98.23 s) | 15/15 KEEP on Vertex ($25.17); my UAT done; Claude reviewing stills |
+| 02 | `07_Edit-Project/parts/part-02_plates_v02.json` (15: 5 Q, 10 F, ≈700) | `09_Final-Export/hos_005_part02_rough_v02.mp4` (`d813f553…`, 98.23 s) | 15/15 KEEP on Vertex ($25.17); accepted by Claude |
 | 03 | `07_Edit-Project/parts/part-03_plates_v02.json` (14: 7 Q, 7 F, ≈840) | `09_Final-Export/hos_005_part03_rough_v02.mp4` (`7abfe9ef…`, 98.00 s) | 14/14 KEEP on Vertex ($33.93); accepted by Claude after the 03/07 remint (plain list, sand-glass) |
-| 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | `09_Final-Export/hos_005_part04_rough_v01.mp4` (`c7de24b1…`, 128.24 s) | 19/19 KEEP on Vertex ($63.34); my UAT done; Claude reviewing stills |
-| 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | `09_Final-Export/hos_005_part05_rough_v01.mp4` (`52b66c54…`, 115.47 s) | 18/18 KEEP on Vertex ($42.61); my UAT done; Claude reviewing stills |
+| 04 | `07_Edit-Project/parts/part-04_plates_v02.json` (19: 6 Q, 13 F, ≈860) | `09_Final-Export/hos_005_part04_rough_v01.mp4` (`c7de24b1…`, 128.24 s) | 19/19 KEEP on Vertex ($63.34); accepted by Claude (desk 5944398833) |
+| 05 | `07_Edit-Project/parts/part-05_plates_v02.json` (18: 8 Q, 10 F, ≈1000) | `09_Final-Export/hos_005_part05_rough_v01.mp4` (`52b66c54…`, 115.47 s) | 18/18 KEEP on Vertex ($42.61); accepted by Claude; in full join v01 with Ben |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.
