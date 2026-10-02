@@ -21,6 +21,7 @@
 
 - **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
 - **Shorts dates pending Ben:** A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30Z, proposed only. No re-gate and no scheduling until he confirms.
+- **Shorts covers and titles pending Ben:** covers v01 (`10_Shorts/covers_v01/COVERS_INDEX_v01.json`) with the titles *Your Heart Pumps More Blood Than You Have* / *One Tight Band Proved Your Blood Goes Round* / *The Blood Vessels Finer Than a Hair*, plus the frame-0 sheet. Nothing goes to Studio until he signs off.
 - **Package: Ben signs off the title, thumbnail and description v02** before anything is uploaded or scheduled. Thumbnail v02 A/B (`08_Thumbnail/THUMBS_INDEX_v02.json`) going to Ben via Claude, 2 Oct 2026.
 - Resolved: Ben passed Shorts A–C v01 (shas `732bca40…`, `e2eacb0c…`, `5839c4dd…`), 2 Oct 2026; "proved" listen items clean ("Shorts ok").
 - Resolved: full join v01 passed by Ben, 2 Oct 2026 ("005 OK"): listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim.
@@ -650,6 +651,32 @@ e2eacb0c6d3e8b5828c69dc534860ce4e3d17544fed457f30c59ae3a144e0baf  10_Shorts/hos_
 ```
 
 Dates are proposed only (A Fri 30 Oct, B Sun 8 Nov, C Sun 15 Nov, all 11:30Z) and pending Ben, so nothing was re-gated or scheduled. Thumbnail v02 A/B is unchanged from the section above (`356f9ea5…` / `17672532…`), with no further edit asked for. Nothing is in Studio.
+
+## 2 Oct 2026 — Shorts frame-0 sheet, covers v01 and titles (Grok, desk task from Claude, comment 5948916050)
+
+- **Frame-0 sheet:** `10_Shorts/covers_v01/hos_005_shorts_v01_frame0_sheet.jpg`. It shows the passed v01 files at phone width; there's no new build.
+- **Covers v01:** A MORE / **THAN YOU** / HAVE (jug tower, `e67dc816…`), B ONE / **TIGHT** / BAND (veins below the band, no red, `4bd0fa6c…`), C FINER / **THAN A** / HAIR (lens over a vessel net and a hair, `77e34ab7…`). Builder: `10_Shorts/_land_hos_005_covers_v01.py`.
+- **Titles:**
+  - A: *Your Heart Pumps More Blood Than You Have*
+  - B: *One Tight Band Proved Your Blood Goes Round*
+  - C: *The Blood Vessels Finer Than a Hair*
+- **Report:** `07_Edit-Project/_desk/shorts_covers_v01_report_2026-10-02.md`.
+
+```
+PASS  hos_005_s01_the_sum_v01.mp4  dur=24.07s  audio=-21.2dB  motion=27.31  dhash=4b5307236a79723b   (--air-date 2026-10-30)
+PASS  hos_005_s02_the_tied_arm_v01.mp4  dur=25.83s  audio=-21.6dB  motion=19.22  dhash=070f46033fa90e0e   (--air-date 2026-11-08)
+PASS  hos_005_s03_never_saw_v01.mp4  dur=24.83s  audio=-21.7dB  motion=17.01  dhash=0f0f0d1f6e030f0f   (--air-date 2026-11-15)
+…/covers_v01/hos_005_shorts_covers_v01_style_sheet.jpg  (3 new vs 8 live short references)
+  hos_005_s01_the_sum_cover_v01.jpg  width 62.7%  y [34.5, 65.5]  in 34–66% band: True
+  hos_005_s02_the_tied_arm_cover_v01.jpg  width 60.8%  y [34.5, 65.5]  in 34–66% band: True
+  hos_005_s03_never_saw_cover_v01.jpg  width 61.4%  y [34.5, 65.5]  in 34–66% band: True
+```
+
+**Flagged, not changed:**
+- **Hook captions:** the yellow hook word's cap height is 4.6% of frame height (§3.3: 8–10%), and the block sits at about 13–26% from the top.
+- **Gate library is stale:** it's missing carbolic spray `clV6E10NLPw` (20 Oct) and still lists private `CUu8k38iAMc` as scheduled. Checked by hand, carbolic spray vs A/B/C is 39/35/34 bits.
+
+**STOP:** Ben signs off covers and titles together. Nothing is in Studio.
 
 ## Parts
 

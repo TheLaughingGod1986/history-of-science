@@ -1,0 +1,79 @@
+{
+  "version": "covers_v01",
+  "task": "PR #180 comment 5948916050",
+  "covers": {
+    "s01_the_sum": {
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v01/hos_005_s01_the_sum_cover_v01.jpg",
+      "sha256": "e67dc81682302a3b09f93797c7968901bc9ec9425cff9dc5d88ec7a040c6f1d4",
+      "title": "Your Heart Pumps More Blood Than You Have",
+      "words": [
+        "MORE",
+        "THAN YOU",
+        "HAVE"
+      ],
+      "scene": "hos_005_s01_scene_v01h.jpg",
+      "letters": "hos_005_s01_letters_v01.jpg",
+      "stack_width_pct": 62.7,
+      "stack_x_pct": [
+        24.6,
+        87.3
+      ],
+      "stack_y_pct": [
+        34.5,
+        65.5
+      ],
+      "inside_centre_band": true,
+      "horizontal_stretch": 1.0,
+      "preview": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v01/hos_005_s01_the_sum_cover_v01_preview.jpg"
+    },
+    "s02_the_tied_arm": {
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v01/hos_005_s02_the_tied_arm_cover_v01.jpg",
+      "sha256": "4bd0fa6c98073082318ae7b55a882a0eb8a9fa858b77135e0d64a0cdd5fab03c",
+      "title": "One Tight Band Proved Your Blood Goes Round",
+      "words": [
+        "ONE",
+        "TIGHT",
+        "BAND"
+      ],
+      "scene": "hos_005_s02_scene_v01b.jpg",
+      "letters": "hos_005_s02_letters_v01.jpg",
+      "stack_width_pct": 60.8,
+      "stack_x_pct": [
+        29.6,
+        90.5
+      ],
+      "stack_y_pct": [
+        34.5,
+        65.5
+      ],
+      "inside_centre_band": true,
+      "horizontal_stretch": 1.0,
+      "preview": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v01/hos_005_s02_the_tied_arm_cover_v01_preview.jpg"
+    },
+    "s03_never_saw": {
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v01/hos_005_s03_never_saw_cover_v01.jpg",
+      "sha256": "77e34ab738e3d2d1978b6cd69d102175e9b61772453c262f9ef6070a74de6112",
+      "title": "The Blood Vessels Finer Than a Hair",
+      "words": [
+        "FINER",
+        "THAN A",
+        "HAIR"
+      ],
+      "scene": "hos_005_s03_scene_v01a.jpg",
+      "letters": "hos_005_s03_letters_v01.jpg",
+      "stack_width_pct": 61.4,
+      "stack_x_pct": [
+        29.3,
+        90.6
+      ],
+      "stack_y_pct": [
+        34.5,
+        65.5
+      ],
+      "inside_centre_band": true,
+      "horizontal_stretch": 1.0,
+      "preview": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v01/hos_005_s03_never_saw_cover_v01_preview.jpg"
+    }
+  },
+  "style_sheet": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v01/hos_005_shorts_covers_v01_style_sheet.jpg"
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "file": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v01.mp4",
+    "air_date": "2026-11-15",
+    "fails": [],
+    "warns": [],
+    "duration_s": 24.83,
+    "audio": {
+      "stream": true,
+      "mean_db": -21.7,
+      "open_mean_db": -19.6
+    },
+    "motion_0_1s": 17.01,
+    "dhash": "0f0f0d1f6e030f0f",
+    "near_opens": [],
+    "contact_sheet": "/tmp/hos005_gate/hos_005_s03_never_saw_v01_open_sheet.jpg",
+    "verdict": "PASS"
+  }
+]
