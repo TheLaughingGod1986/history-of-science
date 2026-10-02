@@ -52,7 +52,7 @@ In the Shorts feed nobody sees the custom cover. They see frame 0.
 ## 4. Shorts: custom cover (search, channel page, Related)
 
 1. **Use the title's hook words,** not a new poetic line.
-2. **2–4 words, big.** The stack spans at least 60% of the frame width and sits in the vertical centre, so it survives the 16:9 crop. Check with `thumb_preview.py short`.
+2. **2–4 words, big, like the live covers.** The stack spans about 85–90% of the frame width across the top third, as on *GALLIUM / in the / GAP* and *THE / CARBOLIC / SPRAY* in `style/shorts/` (2 Oct 2026: the live set is the approved look; 005 v01's centred 61% stacks read small next to it). Check with `thumb_preview.py short` and `style_sheet.py short`.
 3. Use a different still from frame 0 when you can: the cover is a second chance.
 4. **The Shorts lettering is not the long lettering** (30 Sep 2026, Ben). Covers use **chunky rounded bold display letters in gold/cream with a thick dark outline, one small teal middle word** (*GALLIUM / in the / GAP*, *TELLURIUM / before / IODINE*), on a painted 3D scene with the Explorer as a small reaction. Never the long thumbs' serif, and never a film-frame crop with a text box. The two styles share the painted world, the gold and the Explorer; each format stays in its own lettering.
 
