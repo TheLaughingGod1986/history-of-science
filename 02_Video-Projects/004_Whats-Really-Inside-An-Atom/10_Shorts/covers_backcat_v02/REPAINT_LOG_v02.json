@@ -1,0 +1,17 @@
+{
+  "task": "desk PR #180 comment 5950838060",
+  "path": "vertex",
+  "project": "gen-lang-client-0538779324",
+  "location": "us-central1",
+  "model": "gemini-2.5-flash-image",
+  "src": "hos_004_backcat_scene_v01.jpg",
+  "prompt": "Image 1 is a finished History of Science cover scene. Image 2 is the Explorer character sheet. Repaint Image 1 keeping the same composition, camera, warm lab light, dark empty top half, ornate wooden frame, wooden table, blurred brass lab apparatus behind, and the Explorer exactly as he is (bottom left, teal coat, round gold glasses, messy brown hair, arms up in surprise, same size and pose). Change only the action inside the frame: a sheet of thin GOLD FOIL fills the frame, fully INTACT, smooth and bright, catching the warm light, with only one small shallow dent and a soft ripple ring where it was struck, in the centre. The same ornate brass shell is REBOUNDING BACK OUT of the foil towards the viewer: it is in front of the foil, a little apart from it, its pointed nose aimed out of the picture towards the camera and slightly down-left, clearly flying away from the foil, never touching or entering it. Curved motion streaks run from the dent outwards along the shell's path, pointing back towards the viewer. A few small golden sparks at the dent. NO tear, NO hole, NO ripped paper, NO paper or tissue anywhere, NO fragments or flying scraps. Premium 3D cartoon, warm cinematic light, NOT photoreal. No text, no letters, no logos. Exactly one Explorer. No orange robot. Tall 9:16 portrait, same framing as Image 1.",
+  "takes": [
+    {
+      "file": "hos_004_backcat_scene_v02a.jpg",
+      "sha256": "61e9f292d3c9606fcec63fcbb6de689fbf669d403169e6aa6fd8747b2fae2b52",
+      "cost_usd": 0.039
+    }
+  ],
+  "cost_usd_total": 0.039
+}

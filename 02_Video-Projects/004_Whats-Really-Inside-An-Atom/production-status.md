@@ -543,3 +543,14 @@ freezedetect (n=0.003, d=0.8): 0 events · caption-change check 20/20
 ```
 
 Frame-0 dHash: 29 bits from the 002 Short (3 Nov), 29/26/31 from 005 A/B/C (30 Oct, 8 Nov, 15 Nov); nearest in the library 32 (`CUu8k38iAMc`).
+
+### Cover v02 for the gold-foil Short: picture repainted (2 Oct 2026)
+
+Claude accepted the Short (splice, 1.58 s loop) with one fix (desk PR #180 comment 5950838060): the v01 cover painted the shell **tearing through** the foil, the opposite of GOLD / *threw it* / BACK. v02 repaints the picture only: the shell rebounds back out towards the viewer with motion lines pointing back, the foil is intact with a small ripple dent, and there's no tear or paper. Lettering, layout and Explorer are unchanged.
+
+- **Cover:** `10_Shorts/covers_backcat_v02/hos_004_backcat_gold_foil_cover_v02.jpg`, sha256 `fa7247a391b1a751dc469970e04bd038d988e570443d4a2aa81fd20e05803e10`; stack 86.0% wide, x 6.9–93.0%, y 4.5–45.3% (same as v01). Index `COVERS_INDEX_BACKCAT_v02.json`.
+- **Scene:** Vertex `gemini-2.5-flash-image` (project `gen-lang-client-0538779324`, us-central1), the v01 scene and the Explorer sheet as references, 1 take, **$0.039** (`REPAINT_LOG_v02.json`). The Gemini API key's prepay is depleted (HTTP 402), so Vertex. Scripts: `_repaint_backcat_004_scene_v02.py`, `_land_backcat_cover_004_v02.py`.
+- **Checks:** `thumb_preview.py short` → `hos_004_backcat_gold_foil_cover_v02_preview.jpg`; `style_sheet.py short` (004 v02 + 002 v01 vs 8 live) → `hos_backcat_nov_covers_v02_style_sheet.jpg`.
+- **Phone copy:** iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v02/` (sha matches).
+
+**STOP: Ben's final OK** on both back-catalogue Shorts, covers and titles (Claude sends the package). Nothing uploaded or scheduled.
