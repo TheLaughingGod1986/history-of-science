@@ -28,9 +28,19 @@
       "dhash": "d5f51f990fbf3bc7",
       "source": "local_export",
       "frame": "00_Brand/Channel-Setup/audits/shorts_open_library/frames/CUu8k38iAMc.jpg",
-      "status": "scheduled",
+      "status": "retired",
       "added_at": "2026-09-30T09:53:49+01:00"
+    },
+    {
+      "id": "clV6E10NLPw",
+      "date": "2026-10-20",
+      "title": "The spray that stopped surgery killing patients",
+      "dhash": "e8e1e05807df074d",
+      "source": "local_export",
+      "frame": "00_Brand/Channel-Setup/audits/shorts_open_library/frames/clV6E10NLPw.jpg",
+      "status": "scheduled",
+      "added_at": "2026-10-02T10:57:22+01:00"
     }
   ],
-  "updated_at": "2026-09-30T09:53:49+01:00"
+  "updated_at": "2026-10-02T10:57:22+01:00"
 }
