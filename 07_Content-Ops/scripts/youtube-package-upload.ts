@@ -10,6 +10,8 @@
  *     --dry-run
  *
  * Optional: PACKAGE_MANIFEST.json inside the package dir, or --manifest path.
+ * Loads 07_Content-Ops/.env. `.env` keeps PUBLISHING_DRY_RUN on; a live upload is
+ *   PUBLISHING_DRY_RUN=false npm run youtube:package -- …
  * After a live upload, writes *_PACKAGE_UPLOAD_RESULT.json into Schedule/ (or package root).
  */
 import fs from "fs";

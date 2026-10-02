@@ -2,8 +2,10 @@ import { describe, expect, it } from "vitest";
 import fs from "fs";
 import os from "os";
 import path from "path";
+import { retryOn403 } from "../src/lib/publishing/adapters/youtube";
 import {
   buildStudioFinishChecklist,
+  definedOnly,
   loadYouTubePackage,
   mergeDescriptionWithChapters,
   parseTagsFile,
@@ -108,5 +110,99 @@ describe("loadYouTubePackage", () => {
     expect(pkg.tags).toContain("jwst");
     expect(pkg.pinnedComment).toBe("Please pin");
     expect(pkg.scheduledAt?.toISOString()).toBe("2026-08-20T18:00:00.000Z");
+  });
+
+  it("keeps manifest values when CLI flags are not given (undefined overrides)", () => {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), "yt-pkg-"));
+    const video = path.join(root, "video.mp4");
+    fs.writeFileSync(video, "fake");
+    fs.writeFileSync(
+      path.join(root, "PACKAGE_MANIFEST.json"),
+      JSON.stringify({
+        title: "The Tied Arm That Proved Your Blood Circulates",
+        description: "Desc body",
+        schedule: "2026-10-29T18:00:00.000Z",
+      }),
+    );
+
+    const pkg = loadYouTubePackage({
+      packageDir: root,
+      videoPath: video,
+      overrides: {
+        schedule: undefined,
+        thumbnail: undefined,
+        playlistId: undefined,
+        relatedVideoId: undefined,
+        title: undefined,
+        format: undefined,
+        privacy: undefined,
+        madeForKids: undefined,
+      },
+    });
+    expect(pkg.title).toBe("The Tied Arm That Proved Your Blood Circulates");
+    expect(pkg.scheduledAt?.toISOString()).toBe("2026-10-29T18:00:00.000Z");
+
+    const flagged = loadYouTubePackage({
+      packageDir: root,
+      videoPath: video,
+      overrides: { title: "From the flag", schedule: undefined },
+    });
+    expect(flagged.title).toBe("From the flag");
+    expect(flagged.scheduledAt?.toISOString()).toBe("2026-10-29T18:00:00.000Z");
+  });
+
+  it("definedOnly drops undefined keys but keeps false and empty values", () => {
+    expect(definedOnly({ a: undefined, b: false, c: "", d: 0, e: "x" })).toEqual({
+      b: false,
+      c: "",
+      d: 0,
+      e: "x",
+    });
+  });
+});
+
+describe("thumbnails.set retry", () => {
+  it("retries a 403 up to 3 tries, 60 s apart", async () => {
+    const results = [
+      { ok: false, message: "processing", status: 403 },
+      { ok: false, message: "processing", status: 403 },
+      { ok: true, message: "ok", status: 200 },
+    ];
+    let calls = 0;
+    const sleeps: number[] = [];
+    const res = await retryOn403(async () => results[calls++], {
+      sleep: async (ms) => {
+        sleeps.push(ms);
+      },
+    });
+    expect(res.ok).toBe(true);
+    expect(calls).toBe(3);
+    expect(sleeps).toEqual([60_000, 60_000]);
+  });
+
+  it("gives up after 3 tries of 403", async () => {
+    let calls = 0;
+    const res = await retryOn403(
+      async () => {
+        calls++;
+        return { ok: false, message: "processing", status: 403 };
+      },
+      { sleep: async () => {} },
+    );
+    expect(res.ok).toBe(false);
+    expect(calls).toBe(3);
+  });
+
+  it("does not retry other errors", async () => {
+    let calls = 0;
+    const res = await retryOn403(
+      async () => {
+        calls++;
+        return { ok: false, message: "bad image", status: 400 };
+      },
+      { sleep: async () => {} },
+    );
+    expect(res.status).toBe(400);
+    expect(calls).toBe(1);
   });
 });
