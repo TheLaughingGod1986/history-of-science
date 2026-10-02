@@ -45,6 +45,11 @@ ALIASES = {"thompson": "thomson", "thompson's": "thomson's", "center": "centre",
 NUMBER_WORDS = set(("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen "
                     "fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty "
                     "ninety hundred thousand oh").split())
+# Whisper writes "seventeenth" as "17th" and "the sixteen-hundreds" as "1600s"; drop both spellings.
+NUMBER_WORDS |= {w + "s" for w in ("hundred", "thousand")}
+NUMBER_WORDS |= set(("third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth thirteenth fourteenth "
+                     "fifteenth sixteenth seventeenth eighteenth nineteenth twentieth thirtieth").split())
+NUMERAL = re.compile(r"^\d+(st|nd|rd|th|s)?$")
 
 
 def run(cmd: list[str]) -> str:
@@ -85,14 +90,20 @@ def norm(text: str) -> list[str]:
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()  # Röntgen -> Rontgen
     text = text.lower().replace("’", "'").replace("**", "")
     words = re.sub(r"[^a-z0-9' -]+", " ", text).replace("-", " ").split()
+    pieces = [p.strip("'") for w in words for p in ALIASES.get(w, w).split()]
+    is_num = [bool(NUMERAL.match(p)) or p in NUMBER_WORDS for p in pieces]
     out: list[str] = []
-    for w in words:
-        w = ALIASES.get(w, w)
-        for piece in w.split():
-            if piece.isdigit() or piece in NUMBER_WORDS or not piece:
-                continue
-            out.append(piece.strip("'"))
-    return [w for w in out if w]
+    for i, piece in enumerate(pieces):
+        if not piece or is_num[i]:
+            continue
+        nxt = i + 1 < len(pieces) and is_num[i + 1]
+        # "a hundred and sixty-nine" is heard as "169": drop the "a"/"and" that only belong to the number.
+        if piece in ("a", "an") and nxt:
+            continue
+        if piece == "and" and nxt and i > 0 and is_num[i - 1]:
+            continue
+        out.append(piece)
+    return out
 
 
 def transcribe(path: Path):
