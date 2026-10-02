@@ -1,0 +1,10 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| the willow tree that was made of air | related: of the willow tree scary; the willow tree meme; the willow tree experiment | Willow Tree - Topic 2 · Treasure Of World 🌎 881 · Trojan Records Official 719,108 · Mind of Matter 251 · EnchantedWood 2,034 |
+| why vaccines are named after a cow | no | Alyssa Dice Flipper 858 · DailyHistory 1 view · Lingua History  283 · Dan Limb 196 · Used To Mean 777 |
+| the thin clay line that killed the dinosaurs | no | biointeractive 14,738,165 · Jason K. Watkins 9,056 · BBC Earth Science 2,025,519 · BBC Earth 1,232,046 · BBC 26,821 |
+| the kite that proved lightning is electricity | related: kite struck by lightning | Peekaboo Kidz 1,623,883 · Be Smart 690,489 · Quick History 12,861 · HISTORY 163,865 · 𝐁𝐘𝐨𝐮 34,743 |
+| how gravity keeps the moon falling | related: why doesn't the moon crash into the earth; what would happen if the moon fell to earth | Mr Verse 36,798 · eHowEducation 12,968 · ENJOYLIFE  75 · MooMooMath and Science 969,937 · Learn Bright 1,531,466 |
+| the stick that measured the whole earth | no | Code of the Universe 73 · Dijital Yer Küre 352 · ArtGift 4 · Business Insider 788,428 · How Do We Know? – The Story Behind the Science 403 |
+
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/titles_public_search.json

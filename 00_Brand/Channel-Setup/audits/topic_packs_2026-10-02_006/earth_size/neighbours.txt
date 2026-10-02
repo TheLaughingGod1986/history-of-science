@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 5,002,653 views | [Meet the tardigrade, the toughest animal on Earth - Thomas Boothby](https://youtu.be/IxndOd3kmSs) | size of the earth ted |
+| 2 | TED-Ed ★ | 1,522,027 views | [What Earth in 2050 could look like - Shannon Odell](https://youtu.be/2njn71TqkjA) | ted-ed size of the earth |
+| 3 | TED-Ed ★ | 1,373,992 views | [Climate change: Earth's giant game of Tetris - Joss Fong](https://youtu.be/ztWHqUFJRTs) | ted-ed size of the earth |
+| 4 | TED-Ed ★ | 1,367,041 views | [A guide to the energy of the Earth - Joshua M. Sneideman](https://youtu.be/fHztd6k5ZXY) | ted-ed size of the earth |
+| 5 | TED-Ed ★ | 768,043 views | [Four ways to understand the Earth's age - Joshua M. Sneideman](https://youtu.be/tkxWmh-tFGs) | ted-ed size of the earth |
+| 6 | TED-Ed ★ | 441,741 views | [What's happening to Earth's core? - Shannon Odell](https://youtu.be/XLjdNXBZm3I) | ted-ed size of the earth |
+| 7 | TED-Ed ★ | 175,602 views | [One big reason that life on Earth exists - Elise Cutts](https://youtu.be/vCbx5jtZ_qI) | ted-ed size of the earth |
+| 8 | Kurzgesagt – In a Nutshell | 14,047,313 views | [Everything You Need to Know About Planet Earth](https://youtu.be/JGXi_9A__Vc) | ted-ed size of the earth |
+| 9 | MinuteEarth | 1,542,211 views | [MinuteEarth Explains: Size](https://youtu.be/DME1vicSb1M) | size of the earth ted |
+| 10 | Khan Academy | 780,708 views | [Scale of earth and sun | Scale of the universe | Cosmology & Astronomy | Khan Academy](https://youtu.be/GZx3U0dbASg) | khan academy size of the earth |
+| 11 | Khan Academy | 366,236 views | [Structure of the Earth](https://youtu.be/4AxZ-6MOznY) | khan academy eratosthenes |
+| 12 | Khan Academy | 266,899 views | [Compositional and mechanical layers of the earth | Cosmology & Astronomy | Khan Academy](https://youtu.be/hHteUIS0OFY) | khan academy size of the earth |
+
+Words the top neighbours share: on earth, shannon odell, of the, joshua m, m sneideman, scale of
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 6 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/earth_size/neighbours.json

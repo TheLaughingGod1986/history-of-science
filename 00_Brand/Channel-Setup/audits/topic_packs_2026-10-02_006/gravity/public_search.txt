@@ -1,0 +1,7 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| how did newton discover gravity | yes | BBC Studios 158,455 · ScienceClic English 89,608 · BBC Bitesize for Teachers 135,556 · UNSW Physics 33,080 · Whimsy Wonders 2,748 |
+| why doesn't the moon fall | related: why doesn't the moon fall to the earth; why doesn't the moon fall into the earth; why doesn't the moon fall down | Mr Verse 36,799 · NASA Night Sky Network 2,206,168 · STEM Spark Zone 596 · ExploreAstro 26,455 · BYJU'S 1,001,917 |
+| newton apple moon | no | learning junction 2,519,051 · SciManDan 35,930 · Sabins 1,795,955 · Dan Burns 3,639 · REALITY side quest 👀 ) 300 |
+
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/gravity/public_search.json

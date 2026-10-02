@@ -1,0 +1,7 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| how do we know an asteroid killed the dinosaurs | yes | PBS Eons 854,552 · American Museum of Natural History 58,400 · BBC Earth Science 2,025,519 · CBC Kids 874,199 · Kurzgesagt – In a Nutshell 8,818,627 |
+| alvarez iridium layer | no | Triple A Science 2,377 · Jason K. Watkins 9,056 · Virtual Field Trips 3,078 · Earth Sciences New Zealand 7,882 · Learn Fast 50 |
+| what killed the dinosaurs | yes | BBC Earth Science 2,025,519 · Kurzgesagt – In a Nutshell 8,818,627 · CBC Kids 874,194 · Astrum Earth 3,090,791 · Kurzgesagt – In a Nutshell 23,031,400 |
+
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/dinosaurs/public_search.json

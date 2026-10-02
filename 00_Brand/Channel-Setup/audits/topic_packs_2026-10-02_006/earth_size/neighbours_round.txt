@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TEDx Talks ★ | 1,915,413 views | [The Unusual Earth Orbit Circling Above Our Ancient Past | Roger G. Gilbertson | TEDxColoradoSprings](https://youtu.be/_HytJn6uaRk) | earth is round ted |
+| 2 | TED-Ed ★ | 1,579,773 views | [The mysterious origins of life on Earth - Luka Seamus Wright](https://youtu.be/de1hiS_XjWg) | ted-ed earth is round |
+| 3 | TED-Ed ★ | 1,522,027 views | [What Earth in 2050 could look like - Shannon Odell](https://youtu.be/2njn71TqkjA) | ted-ed earth is round |
+| 4 | TED-Ed ★ | 1,373,992 views | [Climate change: Earth's giant game of Tetris - Joss Fong](https://youtu.be/ztWHqUFJRTs) | ted-ed earth is round |
+| 5 | TED-Ed ★ | 1,367,046 views | [A guide to the energy of the Earth - Joshua M. Sneideman](https://youtu.be/fHztd6k5ZXY) | ted-ed earth is round |
+| 6 | TED-Ed ★ | 768,043 views | [Four ways to understand the Earth's age - Joshua M. Sneideman](https://youtu.be/tkxWmh-tFGs) | ted-ed earth is round |
+| 7 | TED-Ed ★ | 441,744 views | [What's happening to Earth's core? - Shannon Odell](https://youtu.be/XLjdNXBZm3I) | ted-ed earth is round |
+| 8 | TED-Ed ★ | 175,602 views | [One big reason that life on Earth exists - Elise Cutts](https://youtu.be/vCbx5jtZ_qI) | ted-ed earth is round |
+| 9 | Vsauce | 38,639,354 views | [Is Earth Actually Flat?](https://youtu.be/VNqNnUJVcVs) | earth is round |
+| 10 | minutephysics | 2,719,873 views | [TOP 10 REASONS Why We Know the Earth is Round](https://youtu.be/o_W280R_Jt8) | earth is round |
+| 11 | Khan Academy | 366,239 views | [Structure of the Earth](https://youtu.be/4AxZ-6MOznY) | khan academy earth is round |
+| 12 | Khan Academy | 266,899 views | [Compositional and mechanical layers of the earth | Cosmology & Astronomy | Khan Academy](https://youtu.be/hHteUIS0OFY) | khan academy earth is round |
+
+Words the top neighbours share: life on, on earth, shannon odell, the earth, joshua m, m sneideman
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 7 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/earth_size/neighbours_round.json

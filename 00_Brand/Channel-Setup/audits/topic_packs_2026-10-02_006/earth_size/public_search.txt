@@ -1,0 +1,7 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| how eratosthenes measured the earth | related: how eratosthenes calculated the earth's circumference | Business Insider 788,432 · furdong 188,875 · Math Centre 162,383 · carlsagandotcom 2,959,877 · It's Just Astronomical! 19,967 |
+| how did we measure the size of the earth | related: how earth diameter is measured | Business Insider 788,428 · It's Just Astronomical! 19,969 · furdong 188,875 · kidomind 1,205,944 · Thunderf00t 56,948 |
+| eratosthenes shadow experiment | yes | Evgeni Aleksiev 454 · Chuse Your Own Adventure 1,799 · Cosmos Chronicles 189 · Eames Office 149,655 · sevi malamou 1,856 |
+
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/earth_size/public_search.json

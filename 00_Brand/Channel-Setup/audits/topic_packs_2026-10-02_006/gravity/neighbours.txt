@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 9,910,111 views | [Newton’s three-body problem explained - Fabio Pacucci](https://youtu.be/D89ngRr4uZg) | ted-ed gravity |
+| 2 | TED-Ed ★ | 2,915,188 views | [Newton's 3 Laws, with a bicycle - Joshua Manley](https://youtu.be/JGO_zDWmkvk) | ted-ed gravity |
+| 3 | TED-Ed ★ | 1,657,602 views | [How do geckos defy gravity? - Eleanor Nelsen](https://youtu.be/YeSuQm7KfaE) | ted-ed gravity |
+| 4 | TED-Ed ★ | 597,092 views | [How far would you have to go to escape gravity? - Rene Laufer](https://youtu.be/YlxKh4oCKhw) | ted-ed gravity |
+| 5 | TED-Ed ★ | 543,189 views | [How to think about gravity - Jon Bergmann](https://youtu.be/lY3XV_GGV0M) | ted-ed gravity |
+| 6 | TED-Ed ★ | 459,461 views | [Gravity and the human body - Jay Buckey](https://youtu.be/7CuYx9mZCQA) | ted-ed gravity |
+| 7 | TED-Ed ★ | 204,947 views | [Gravity vs. Pressure: The battle that formed the universe - Fabio Pacucci](https://youtu.be/kU8s_4HBG98) | ted-ed gravity |
+| 8 | Veritasium | 15,460,910 views | [What Everyone Gets Wrong About Gravity](https://youtu.be/XRr1kaXKBsU) | gravity |
+| 9 | Khan Academy | 662,592 views | [Normal force in an elevator | Forces and Newton's laws of motion | Physics | Khan Academy](https://youtu.be/hoRsHNSrMpc) | khan academy newton moon apple |
+| 10 | The Royal Institution | 634,470 views | [Solving the secrets of gravity - with Claudia de Rham](https://youtu.be/O7MN64JlsMw) | gravity ted |
+| 11 | Khan Academy | 555,269 views | [Balanced and unbalanced forces | Forces and Newton's laws of motion | Physics | Khan Academy](https://youtu.be/oNgo9bbDi7Q) | khan academy newton moon apple |
+| 12 | Khan Academy | 287,842 views | [Gravity for astronauts in orbit | Centripetal force and gravitation | Physics | Khan Academy](https://youtu.be/oIZV-ixRTcY) | khan academy gravity |
+
+Words the top neighbours share: fabio pacucci, newton's laws, about gravity
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 4 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/gravity/neighbours.json

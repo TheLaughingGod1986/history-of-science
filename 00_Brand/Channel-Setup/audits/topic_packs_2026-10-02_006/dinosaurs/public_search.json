@@ -1,0 +1,224 @@
+{
+ "pulled": "2026-10-02",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "how do we know an asteroid killed the dinosaurs": {
+   "suggest": [
+    "how do we know an asteroid killed the dinosaurs"
+   ],
+   "search": [
+    {
+     "id": "TJY5vWXZHgI",
+     "title": "How We Figured Out an Asteroid Killed the Dinosaurs",
+     "channel": "PBS Eons",
+     "views": "854,552 views",
+     "age": "10 mo ago",
+     "length": "12:40"
+    },
+    {
+     "id": "gAdzVTqURdM",
+     "title": "How do we know an asteroid hit Earth 66 million years ago?",
+     "channel": "American Museum of Natural History",
+     "views": "58,400 views",
+     "age": "7 yr ago",
+     "length": "2:57"
+    },
+    {
+     "id": "DGu6ZPyKyJ0",
+     "title": "What Exactly Killed The Dinosaurs? | Earth | BBC Earth Science",
+     "channel": "BBC Earth Science",
+     "views": "2,025,519 views",
+     "age": "3 yr ago",
+     "length": "3:55"
+    },
+    {
+     "id": "4ygKsG59tqY",
+     "title": "What Happened to the Dinosaurs? | CBC Kids",
+     "channel": "CBC Kids",
+     "views": "874,199 views",
+     "age": "3 yr ago",
+     "length": "2:27"
+    },
+    {
+     "id": "pjoQdz0nxf4",
+     "title": "How The Dinosaurs Actually Died",
+     "channel": "Kurzgesagt – In a Nutshell",
+     "views": "8,818,627 views",
+     "age": "2 yr ago",
+     "length": "11:40"
+    },
+    {
+     "id": "dFCbJmgeHmA",
+     "title": "The Day the Dinosaurs Died – Minute by Minute",
+     "channel": "Kurzgesagt – In a Nutshell",
+     "views": "23,031,400 views",
+     "age": "5 yr ago",
+     "length": "12:02"
+    },
+    {
+     "id": "kpLY0YwMACE",
+     "title": "How Asteroids Really Killed The Dinosaurs - Part 2 | Last Day Of The Dinosaurs",
+     "channel": "Your Discovery Science",
+     "views": "26,324,780 views",
+     "age": "9 yr ago",
+     "length": "4:29"
+    },
+    {
+     "id": "V7PMqCFPjS8",
+     "title": "How Do We Know An Asteroid Killed The Dinosaurs?",
+     "channel": "Seven Rasmussen",
+     "views": "50 views",
+     "age": "1 yr ago",
+     "length": "2:17"
+    }
+   ]
+  },
+  "alvarez iridium layer": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "QgdIjyhJHLk",
+     "title": "The Iridium Anomaly & The Alvarez Hypothesis",
+     "channel": "Triple A Science",
+     "views": "2,377 views",
+     "age": "2 yr ago",
+     "length": "6:18"
+    },
+    {
+     "id": "pDg3I04S148",
+     "title": "The KT Boundary: The layer of ash that killed the dinosaurs",
+     "channel": "Jason K. Watkins",
+     "views": "9,056 views",
+     "age": "3 yr ago",
+     "length": "1:15"
+    },
+    {
+     "id": "h1y-pZz2vdI",
+     "title": "What caused the high level of iridium in the clay layer",
+     "channel": "Virtual Field Trips",
+     "views": "3,078 views",
+     "age": "10 yr ago",
+     "length": "1:14"
+    },
+    {
+     "id": "pASB81WN2pw",
+     "title": "Global Catastrophe in a Thin Rock Layer",
+     "channel": "Earth Sciences New Zealand",
+     "views": "7,882 views",
+     "age": "12 yr ago",
+     "length": "2:53"
+    },
+    {
+     "id": "oMvm66ZryDU",
+     "title": "The Iridium Anomaly: How We Found the Dinosaur Killer",
+     "channel": "Learn Fast",
+     "views": "50 views",
+     "age": "8 mo ago",
+     "length": "8:36"
+    },
+    {
+     "id": "rYxdts1cjq0",
+     "title": "Were dinosaurs wiped out by a massive asteroid impact? Walter and Luis Alvarez  in 1981.",
+     "channel": "GBH Archives",
+     "views": "2,800 views",
+     "age": "10 yr ago",
+     "length": "2:13"
+    },
+    {
+     "id": "10S2HbzU0kY",
+     "title": "What Really Killed the Dinosaurs? The 30-Year War to Bury the Truth",
+     "channel": "WizDome",
+     "views": "158 views",
+     "age": "2 mo ago",
+     "length": "12:48"
+    },
+    {
+     "id": "nd4tgJWnu7s",
+     "title": "Luis Alvarez Biography | The Scientist Behind The Asteroid Theory",
+     "channel": "Pulse X",
+     "views": "311 views",
+     "age": "7 mo ago",
+     "length": "15:53"
+    }
+   ]
+  },
+  "what killed the dinosaurs": {
+   "suggest": [
+    "what killed the dinosaurs",
+    "what killed the dinosaurs the ice age",
+    "what killed the dinosaurs futurama",
+    "what killed the dinosaurs the ice age batman",
+    "what killed the dinosaurs the ice age meme",
+    "what killed the dinosaurs documentary",
+    "what killed the dinosaurs meme",
+    "what killed the dinosaurs mr freeze"
+   ],
+   "search": [
+    {
+     "id": "DGu6ZPyKyJ0",
+     "title": "What Exactly Killed The Dinosaurs? | Earth | BBC Earth Science",
+     "channel": "BBC Earth Science",
+     "views": "2,025,519 views",
+     "age": "3 yr ago",
+     "length": "3:55"
+    },
+    {
+     "id": "pjoQdz0nxf4",
+     "title": "How The Dinosaurs Actually Died",
+     "channel": "Kurzgesagt – In a Nutshell",
+     "views": "8,818,627 views",
+     "age": "2 yr ago",
+     "length": "11:40"
+    },
+    {
+     "id": "4ygKsG59tqY",
+     "title": "What Happened to the Dinosaurs? | CBC Kids",
+     "channel": "CBC Kids",
+     "views": "874,194 views",
+     "age": "3 yr ago",
+     "length": "2:27"
+    },
+    {
+     "id": "U1DedLVjeE0",
+     "title": "This New Evidence Could Rewrite the Dinosaur Extinction",
+     "channel": "Astrum Earth",
+     "views": "3,090,791 views",
+     "age": "2 wk ago",
+     "length": "30:00"
+    },
+    {
+     "id": "dFCbJmgeHmA",
+     "title": "The Day the Dinosaurs Died – Minute by Minute",
+     "channel": "Kurzgesagt – In a Nutshell",
+     "views": "23,031,400 views",
+     "age": "5 yr ago",
+     "length": "12:02"
+    },
+    {
+     "id": "NY2UpcZemHU",
+     "title": "What Killed the Dinosaurs? | #aumsum #kids #cartoon #science",
+     "channel": "It's AumSum Time",
+     "views": "200,251 views",
+     "age": "1 yr ago",
+     "length": "2:02"
+    },
+    {
+     "id": "jCRNQfjtIyA",
+     "title": "Can we see evidence of what killed the dinosaurs? 🦕 | Earth - BBC",
+     "channel": "BBC",
+     "views": "26,816 views",
+     "age": "3 yr ago",
+     "length": "3:43"
+    },
+    {
+     "id": "TJY5vWXZHgI",
+     "title": "How We Figured Out an Asteroid Killed the Dinosaurs",
+     "channel": "PBS Eons",
+     "views": "854,551 views",
+     "age": "10 mo ago",
+     "length": "12:40"
+    }
+   ]
+  }
+ }
+}

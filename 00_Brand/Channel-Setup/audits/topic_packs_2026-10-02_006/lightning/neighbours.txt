@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 4,819,989 views | [The Cambodian myth of lightning, thunder, and rain - Prumsodun Ok](https://youtu.be/Ul9ysDvkuLA) | ted-ed lightning electricity |
+| 2 | TED-Ed ★ | 3,629,441 views | [How do fish make electricity? - Eleanor Nelsen](https://youtu.be/z0M7_HPSi14) | ted-ed lightning electricity |
+| 3 | TED-Ed ★ | 3,569,491 views | [The science of static electricity - Anuradha Bhagwat](https://youtu.be/yc2-363MIQs) | ted-ed lightning electricity |
+| 4 | TED-Ed ★ | 691,440 views | [The vocabulary of electricity - James Sheils](https://youtu.be/MBRTR2dlwvA) | ted-ed lightning electricity |
+| 5 | TED-Ed ★ | 585,708 views | [The most lightning-struck place on Earth - Graeme Anderson](https://youtu.be/doy2BsHc-44) | ted-ed lightning electricity |
+| 6 | TED-Ed ★ | 472,776 views | [How much electricity does it take to power the world?](https://youtu.be/tjwrG4Debc4) | ted-ed lightning electricity |
+| 7 | TED-Ed ★ | 325,498 views | [Why are AI data centers using so much electricity? - Sajan Saini](https://youtu.be/z3Y-gsBKChc) | ted-ed benjamin franklin kite |
+| 8 | SciShow Kids | 5,620,446 views | [What Causes Thunder and Lightning? | Weather Science | SciShow Kids](https://youtu.be/fEiVi9TB_RQ) | lightning electricity |
+| 9 | MinuteEarth | 4,041,559 views | [How to Survive a Lightning Strike](https://youtu.be/eNxDgd3D_bU) | ted-ed lightning electricity |
+| 10 | Kurzgesagt – In a Nutshell | 2,120,812 views | [Lightning: Nature’s Plasma Highway](https://youtu.be/mCAm38dSD78) | lightning electricity |
+| 11 | Be Smart | 690,488 views | [The TRUE Story of Ben Franklin & His Kite](https://youtu.be/f0oc4gUCOQI) | benjamin franklin kite |
+| 12 | SciShow | 413,100 views | [Great Minds: Benjamin Franklin: Founding Nerd](https://youtu.be/Ki9mY6gMFpA) | ted-ed benjamin franklin kite |
+
+Words the top neighbours share: thunder and, much electricity
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 6 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 00_Brand/Channel-Setup/audits/topic_packs_2026-10-02_006/lightning/neighbours.json
