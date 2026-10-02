@@ -1,0 +1,157 @@
+{
+  "scripts": "SHORTS_SCRIPTS_BACKCAT_v02.md",
+  "task": "PR #180 comment 5950150517",
+  "builder": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/_build_backcat_nov_v01.py",
+  "shorts": {
+    "004_gold_foil": {
+      "id": "004_gold_foil",
+      "air_date": "2026-11-01",
+      "short_title": "Why Gold Foil Bounced Rutherford's Particles Back",
+      "promotes": "GHZDsiH7L7A",
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_backcat_gold_foil_v01.mp4",
+      "sha256": "fbb4b458d6c9a1cb3908437eb708f15c578b92617dfe494672ee12b03bc9d24f",
+      "duration_s": 26.967,
+      "vo": "hos_004_backcat_gold_foil_vo_v01_fin.wav",
+      "vo_sha256": "9d0a47114d4ed34c08717f781e64d8d09d7529c49fb5a557b942cd31bccc2b40",
+      "vo_s": 25.497,
+      "loop_from_s": 25.367,
+      "loop_s": 1.583,
+      "bed": "hos004-part04-temp_score_bed_v01.mp3",
+      "bed_gain_db": -20.6,
+      "hook": "IT CAME BACK",
+      "hook_layer": {
+        "font": "Didot Bold",
+        "font_size": 243,
+        "cap_px": 173,
+        "cap_pct": 9.01,
+        "h_squeeze": 1.0,
+        "lines": 3,
+        "block_pct": [
+          33.6,
+          66.4
+        ],
+        "widest_pct": 70.3
+      },
+      "title_on_screen": "What's Really Inside an Atom?",
+      "plates": [
+        {
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/12_shell_comes_back_v02.mp4",
+          "sha256": "3764483d53c6f56d54f6b044fdd11ca8615fde4bc31f6227d0bbb1dcbf49c2f4"
+        },
+        {
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/03_fire_at_gold_v01.mp4",
+          "sha256": "d64e1b33fd9339cb7635610a52dffa11b7dc1bbacc3713a958e0d1869434cdba"
+        },
+        {
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/09_almost_all_pass_v02.mp4",
+          "sha256": "c73023c9eab54d22f940b8ca3e2ba2c789f8a0e6d9f2d517f89b4b6d1dbbb4e4"
+        },
+        {
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/07_green_flash_count_v02.mp4",
+          "sha256": "3c388ef194065a14640ce0a47a4adce795b296984f2577aac15953ea44da635e"
+        },
+        {
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/11_shell_tissue_v02.mp4",
+          "sha256": "78ee7164bbf5a441975040f38c6fbebeaecccffafe58b53ddbcbcbf37466ce42"
+        },
+        {
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/13_mass_packed_v02.mp4",
+          "sha256": "a770491d2b78f52490a32cf52ca543f84921fea686b0750f36bbf3ca683d47b2"
+        },
+        {
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/12_shell_comes_back_v02.mp4",
+          "sha256": "3764483d53c6f56d54f6b044fdd11ca8615fde4bc31f6227d0bbb1dcbf49c2f4"
+        }
+      ],
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 3.203,
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/12_shell_comes_back_v02.mp4",
+          "in_s": 1.5,
+          "out_s": 4.703,
+          "crop_x": 560,
+          "lands_on": 0
+        },
+        {
+          "t0": 3.203,
+          "t1": 8.83,
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/03_fire_at_gold_v01.mp4",
+          "in_s": 0.5,
+          "out_s": 6.127,
+          "crop_x": 640,
+          "lands_on": "In"
+        },
+        {
+          "t0": 8.83,
+          "t1": 11.271,
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/09_almost_all_pass_v02.mp4",
+          "in_s": 3.0,
+          "out_s": 5.441,
+          "crop_x": 520,
+          "lands_on": "Almost"
+        },
+        {
+          "t0": 11.271,
+          "t1": 14.61,
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/07_green_flash_count_v02.mp4",
+          "in_s": 0.1,
+          "out_s": 3.439,
+          "crop_x": 656,
+          "lands_on": "About"
+        },
+        {
+          "t0": 14.61,
+          "t1": 20.515,
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/11_shell_tissue_v02.mp4",
+          "in_s": 1.2,
+          "out_s": 7.105,
+          "crop_x": 900,
+          "lands_on": "Rutherford"
+        },
+        {
+          "t0": 20.515,
+          "t1": 25.367,
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/13_mass_packed_v02.mp4",
+          "in_s": 2.55,
+          "out_s": 7.402,
+          "crop_x": 656,
+          "lands_on": "An"
+        },
+        {
+          "t0": 25.367,
+          "t1": 26.95,
+          "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/12_shell_comes_back_v02.mp4",
+          "in_s": 1.5,
+          "out_s": 3.083,
+          "crop_x": 560,
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 20,
+      "caption_check": {
+        "ok": true,
+        "changes": 20,
+        "ratio": 1.0
+      },
+      "gate": {
+        "main": {
+          "exit": 0,
+          "output": "PASS  hos_004_backcat_gold_foil_v01.mp4  dur=26.97s  audio=-20.9dB  motion=33.15  dhash=00b7157f72228207\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_backcat_gold_foil_v01_open_sheet.jpg"
+        },
+        "pr189_library": {
+          "exit": 0,
+          "output": "PASS  hos_004_backcat_gold_foil_v01.mp4  dur=26.97s  audio=-20.9dB  motion=33.15  dhash=00b7157f72228207\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_backcat_gold_foil_v01_open_sheet.jpg"
+        }
+      },
+      "vo_check": {
+        "exit": 0,
+        "output": "PASS  hos_004_backcat_gold_foil_v01.mp4  0:26.97  mean -20.9 dB  peak -2.1 dB  140 wpm\n   warn  pace 140 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed"
+      },
+      "freezedetect_starts": [],
+      "frame0_still": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/_work_backcat_v01/004_gold_foil/hos_004_backcat_gold_foil_v01_frame0.jpg",
+      "title_frame_still": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/_work_backcat_v01/004_gold_foil/hos_004_backcat_gold_foil_v01_title_frame.jpg",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_backcat_gold_foil_v01.mp4"
+    }
+  }
+}

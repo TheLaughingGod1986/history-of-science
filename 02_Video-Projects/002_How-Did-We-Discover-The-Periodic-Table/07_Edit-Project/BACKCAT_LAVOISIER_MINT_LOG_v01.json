@@ -1,0 +1,91 @@
+{
+  "film": "002_How-Did-We-Discover-The-Periodic-Table",
+  "plate": "lavoisier_list",
+  "use": "Short Tue 3 Nov 2026 (four elements), Lavoisier beat",
+  "authority": "Claude, desk PR #180 comment 5950150517 (one Vertex Quality mint, at most 2 takes)",
+  "path": "vertex",
+  "vertex_project": "gen-lang-client-0538779324",
+  "vertex_location": "us-central1",
+  "account": "benoats@googlemail.com",
+  "model": "veo-3.1-generate-001",
+  "image_model": "gemini-2.5-flash-image",
+  "pricing_usd": {
+    "veo_quality_per_s_video_only_1080p": 0.2,
+    "still": 0.039
+  },
+  "credit_before_gbp": 57.03,
+  "floor_gbp": 0.0,
+  "stills": [
+    {
+      "v": 1,
+      "file": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/stills/lavoisier_list_v01.jpg",
+      "sha256": "0bdfe96e715dff3facafc7f5cb2865b4ca10aaab2fbd6807ea0021d345b9df46",
+      "model": "gemini-2.5-flash-image",
+      "style_refs": [
+        "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/refs/style_02_workshop_jars_4s.jpg",
+        "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/refs/style_10_rock_not_fire_3s.jpg"
+      ],
+      "prompt": "Image 1 is this film's locked look (passed by Ben): match its 3D cartoon material, finish and soft daylight. Do NOT copy its objects or any text. Image 2 is this film's locked look (passed by Ben): match its 3D cartoon material, finish and soft daylight. Do NOT copy its objects or any text. Finished 3D cartoon still, the FIRST frame of a moving shot, subject mid-action and readable, no motion blur. Antoine Lavoisier in 1780s Paris: a slim man in his forties with a kind, focused, readable face, a powdered grey wig with side curls tied back, a dark blue-black coat and a white cravat. He stands at a long wooden laboratory bench with glass retorts, flasks and a large polished brass balance with two pans. He writes a list with a quill on a sheet of paper; the page is soft, angled away from the camera, so no writing can be read. Calm daylight from a tall window on the left; NO flame, no candles, no lamps, no fire, no glow.  History of Science locked look: premium Animistry-class 3D cartoon, finished materials, soft cinematic daylight, 18th-century Paris laboratory. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI, no readable text or letters anywhere. No Orbit orange robot. No DNA helix. No boy explorer character.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T10:31:56+00:00"
+    }
+  ],
+  "takes": [
+    {
+      "take": 1,
+      "model": "veo-3.1-generate-001",
+      "quality": "Quality",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, soft cinematic daylight, 18th-century Paris laboratory. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI, no readable text or letters anywhere. No Orbit orange robot. No DNA helix. No boy explorer character. Antoine Lavoisier in 1780s Paris: a slim man in his forties with a kind, focused, readable face, a powdered grey wig with side curls tied back, a dark blue-black coat and a white cravat. He stands at a long wooden laboratory bench with glass retorts, flasks and a large polished brass balance with two pans. He writes a list with a quill on a sheet of paper; the page is soft, angled away from the camera, so no writing can be read. Calm daylight from a tall window on the left; NO flame, no candles, no lamps, no fire, no glow. He writes steadily down the page with the quill, pauses, looks up at the brass balance as its pans settle level, gives a small satisfied nod, then dips the quill and writes the next line. Slow continuous camera dolly from the side towards him.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, readable or garbled text, extra people, flame, Orbit orange robot, DNA helix.",
+      "start_frame": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/stills/lavoisier_list_v01.jpg",
+      "start_frame_sha256": "0bdfe96e715dff3facafc7f5cb2865b4ca10aaab2fbd6807ea0021d345b9df46",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/7dfb8f5b-19cb-4789-bdbd-37c25841c1ca",
+      "submitted_at": "2026-10-02T10:32:09+00:00",
+      "cost_usd": 1.6,
+      "status": "KEEP",
+      "file": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/raw/lavoisier_list_t1.mp4",
+      "sha256": "1f545b7acd5f7da529cf54e828db24ebcd24733ebeace58dc9f4697ed95f9e91",
+      "uat_sheet": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/uat/lavoisier_list_t1_sheet.jpg",
+      "freeze_events_0p8s": 0,
+      "api_s": 120.1,
+      "at": "2026-10-02T10:34:07+00:00",
+      "why": "Head only, 0.2–2.85 s (the builder refuses an out-point past 2.85 s). Whole plate first FAILED: a lit candle appears on the back shelf from ~3.0 s. Before that: on-model Lavoisier writing, continuous motion, page unreadable, daylight, no flame.",
+      "uat_at": "2026-10-02T10:37:50+00:00"
+    },
+    {
+      "take": 2,
+      "model": "veo-3.1-generate-001",
+      "quality": "Quality",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, soft cinematic daylight, 18th-century Paris laboratory. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI, no readable text or letters anywhere. No Orbit orange robot. No DNA helix. No boy explorer character. Antoine Lavoisier in 1780s Paris: a slim man in his forties with a kind, focused, readable face, a powdered grey wig with side curls tied back, a dark blue-black coat and a white cravat. He stands at a long wooden laboratory bench with glass retorts, flasks and a large polished brass balance with two pans. He writes a list with a quill on a sheet of paper; the page is soft, angled away from the camera, so no writing can be read. Calm daylight from a tall window on the left; NO flame, no candles, no lamps, no fire, no glow. He writes steadily down the page with the quill, pauses, looks up at the brass balance as its pans settle level, gives a small satisfied nod, then dips the quill and writes the next line. Slow continuous camera dolly from the side towards him. The background stays exactly as in the start frame: shelves of plain glassware and jars only. There are NO candles, candlesticks, lamps or flames anywhere in the room at any moment; all light is grey-gold daylight from the window. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, readable or garbled text, extra people, flame, Orbit orange robot, DNA helix.",
+      "start_frame": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/stills/lavoisier_list_v01.jpg",
+      "start_frame_sha256": "0bdfe96e715dff3facafc7f5cb2865b4ca10aaab2fbd6807ea0021d345b9df46",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/ddd5822c-bc2d-4ef0-a72e-6f57d9a05b39",
+      "submitted_at": "2026-10-02T10:35:31+00:00",
+      "cost_usd": 1.6,
+      "status": "FAIL",
+      "file": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/raw/lavoisier_list_t2.mp4",
+      "sha256": "7794387f7ea737274e59aa80ff3b9d7d3765be700330ed504ff215e0413b8893",
+      "uat_sheet": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/uat/lavoisier_list_t2_sheet.jpg",
+      "freeze_events_0p8s": 0,
+      "api_s": 107.0,
+      "at": "2026-10-02T10:37:16+00:00",
+      "why": "Lit candles on the back shelf from ~2.75 s despite the no-flame instruction; its clean head is no better than take 1's.",
+      "uat_at": "2026-10-02T10:37:50+00:00"
+    }
+  ],
+  "keep": {
+    "take": 1,
+    "file": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/raw/lavoisier_list_t1.mp4",
+    "sha256": "1f545b7acd5f7da529cf54e828db24ebcd24733ebeace58dc9f4697ed95f9e91",
+    "model": "veo-3.1-generate-001",
+    "path": "vertex"
+  },
+  "cost_usd_total": 3.239,
+  "projected_credit_after_gbp": 54.44,
+  "updated": "2026-10-02T10:37:50+00:00"
+}

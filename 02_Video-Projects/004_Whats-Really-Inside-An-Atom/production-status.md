@@ -521,3 +521,36 @@ Channel: `@HistoryOfScienceYT` only. Supersedes narrower Fri/Sun/language orders
 - **Exam:** GCSE Chemistry/Physics/Biology **not in taxonomy** under England → left blank.
 - **Playlist:** `How Did We Discover…? | History of Science` has 001/002/003. **Add 004 `GHZDsiH7L7A` on launch day 15 Oct 18:05** — see `11_Upload-Package/Schedule/LAUNCH_DAY_15_OCT_1805.md`.
 - Evidence: `11_Upload-Package/Schedule/evidence_2026-09-30_england_1954/ENGLAND_1954_RESULT.json`.
+
+## Back-catalogue Short for Sun 1 Nov 2026: gold foil, built v01 (2 Oct 2026)
+
+**STOP: Ben's final OK** (second package, via Claude on the desk). Nothing uploaded or scheduled.
+
+Claude approved the script with one accuracy fix (desk PR #180 comment 5950150517): nobody fired a bullet. Title **_Why Gold Foil Bounced Rutherford's Particles Back_**; first line "Tiny particles bounced back off gold foil." Script v02: `10_Shorts/SHORTS_SCRIPTS_BACKCAT_v02.md`. Builder `10_Shorts/_build_backcat_nov_v01.py`, index `10_Shorts/SHORTS_INDEX_BACKCAT_v01.json`.
+
+- **File:** `10_Shorts/hos_004_backcat_gold_foil_v01.mp4` (main checkout, not in git), sha256 `fbb4b458d6c9a1cb3908437eb708f15c578b92617dfe494672ee12b03bc9d24f`, 26.97 s. Promotes `GHZDsiH7L7A` (public 15 Oct); exact title on screen 9–14 s; Studio Related → `GHZDsiH7L7A`; no `/go/`, no pinned comment.
+- **Picture:** Part 04 KEEP plates only (12, 03, 09, 07, 11, 13, then 12 to loop), shas checked against the land meta. Frame 0: the shell striking the tissue, hook IT CAME **BACK** in Didot Bold, 9.0% cap, centred (33.6–66.4%). The loop runs the last 1.58 s (the VO leaves no more room under 27 s).
+- **VO:** Ben Orbit Narrator, `eleven_v3`, speed 1.04. Six takes; Whisper heard "bounce back" in the opening of takes b–f, so the first sentence is take a and the rest take e, cut in the pause before "In nineteen-oh-nine" (`VO_BACKCAT_SPLICE_004_gold_foil.json`). Finish step 1 only, no atempo. VO sha `9d0a4711…`.
+- **Cover:** `10_Shorts/covers_backcat_v01/hos_004_backcat_gold_foil_cover_v01.jpg` (GOLD / *threw it* / BACK, live layout: top, 86.0% wide, 4.5–45.3%), sha in `COVERS_INDEX_BACKCAT_v01.json`; `thumb_preview.py short` and `style_sheet.py short` run.
+- **Phone copy:** iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_backcat_gold_foil_v01.mp4` (sha matches) + `covers_backcat_v01/`.
+
+```
+PASS  hos_004_backcat_gold_foil_v01.mp4  dur=26.97s  audio=-20.9dB  motion=33.15  dhash=00b7157f72228207   (gate_shorts_open --air-date 2026-11-01; main library and the #189 library)
+PASS  hos_004_backcat_gold_foil_vo_v01_fin.wav  0:25.50  mean -20.7 dB  peak -2.0 dB  148 wpm   (vo_check on the finished VO)
+PASS  hos_004_backcat_gold_foil_v01.mp4  0:26.97  mean -20.9 dB  peak -2.1 dB  140 wpm
+   warn  pace 140 wpm (< 145)   (vo_check on the export; the wpm counts the silent loop tail)
+freezedetect (n=0.003, d=0.8): 0 events · caption-change check 20/20
+```
+
+Frame-0 dHash: 29 bits from the 002 Short (3 Nov), 29/26/31 from 005 A/B/C (30 Oct, 8 Nov, 15 Nov); nearest in the library 32 (`CUu8k38iAMc`).
+
+### Cover v02 for the gold-foil Short: picture repainted (2 Oct 2026)
+
+Claude accepted the Short (splice, 1.58 s loop) with one fix (desk PR #180 comment 5950838060): the v01 cover painted the shell **tearing through** the foil, the opposite of GOLD / *threw it* / BACK. v02 repaints the picture only: the shell rebounds back out towards the viewer with motion lines pointing back, the foil is intact with a small ripple dent, and there's no tear or paper. Lettering, layout and Explorer are unchanged.
+
+- **Cover:** `10_Shorts/covers_backcat_v02/hos_004_backcat_gold_foil_cover_v02.jpg`, sha256 `fa7247a391b1a751dc469970e04bd038d988e570443d4a2aa81fd20e05803e10`; stack 86.0% wide, x 6.9–93.0%, y 4.5–45.3% (same as v01). Index `COVERS_INDEX_BACKCAT_v02.json`.
+- **Scene:** Vertex `gemini-2.5-flash-image` (project `gen-lang-client-0538779324`, us-central1), the v01 scene and the Explorer sheet as references, 1 take, **$0.039** (`REPAINT_LOG_v02.json`). The Gemini API key's prepay is depleted (HTTP 402), so Vertex. Scripts: `_repaint_backcat_004_scene_v02.py`, `_land_backcat_cover_004_v02.py`.
+- **Checks:** `thumb_preview.py short` → `hos_004_backcat_gold_foil_cover_v02_preview.jpg`; `style_sheet.py short` (004 v02 + 002 v01 vs 8 live) → `hos_backcat_nov_covers_v02_style_sheet.jpg`.
+- **Phone copy:** iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v02/` (sha matches).
+
+**STOP: Ben's final OK** on both back-catalogue Shorts, covers and titles (Claude sends the package). Nothing uploaded or scheduled.

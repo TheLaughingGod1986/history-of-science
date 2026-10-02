@@ -120,3 +120,27 @@ Channel: `@HistoryOfScienceYT` only. Evidence under `004_…/evidence_2026-09-30
 | `TbMMJSRKC3U` | Short (Sun) | Core §9; tags fixed to Newlands/octaves subject; schedule unchanged |
 
 002 A/B test **not touched**. Academic UK not in taxonomy · GCSE Chemistry not listed · Level secondary does not persist.
+
+## Back-catalogue Short for Tue 3 Nov 2026: the four elements, built v01 (2 Oct 2026)
+
+**STOP: Ben's final OK** (second package, via Claude on the desk). Nothing uploaded or scheduled.
+
+Claude approved title *The Four Elements Were Wrong*, hook NOT **ELEMENTS**, cover FOUR / *elements were* / WRONG and the script as written, with one Vertex Quality Lavoisier mint (desk PR #180 comment 5950150517). Script v02: `10_Shorts/SHORTS_SCRIPTS_BACKCAT_v02.md`. Builder `004_…/10_Shorts/_build_backcat_nov_v01.py`, index `10_Shorts/SHORTS_INDEX_BACKCAT_v01.json`.
+
+- **File:** `10_Shorts/hos_002_backcat_four_elements_v01.mp4` (main checkout, not in git), sha256 `484df604ad6a3ba5217950121da32b91bcdff3046656f380187814c98dbb82a9`, 25.63 s. Promotes `AL_-qlWko_g`; exact title on screen 9–14 s; Studio Related → `AL_-qlWko_g`; no `/go/`, no pinned comment.
+- **Picture:** Part 01 KEEP plates (03, 04, 10, 02, 08, 07, then 03 to loop) + the Lavoisier mint. Frame 0: the four carved shapes starting to burst. Loop 2.0 s.
+- **Hook:** NOT **ELEMENTS**. ELEMENTS is wider than the frame in Didot Bold even at 8% cap (1,276 px), so this hook is **Bodoni 72 Bold, 8.0% cap, 0.92 horizontal squeeze**, centred (40.7–59.3%). For Claude's call.
+- **Lavoisier mint (Vertex, `veo-3.1-generate-001`, 1080p, 8 s):** start frame `gemini-2.5-flash-image` with Part 01 look refs; 2 takes (the cap). Both took a lit candle onto the back shelf from about 3 s despite "no flame". Take 1 is used for its clean head only, 0.1–2.77 s (the builder refuses past 2.85 s), on "Antoine Lavoisier threw out the four,"; the labelled-jars KEEP plate carries "and listed only what couldn't be broken down." Log `07_Edit-Project/BACKCAT_LAVOISIER_MINT_LOG_v01.json`. **Spend $3.24 (≈ £2.59): still $0.04 + 2 × $1.60.** Projected Free Trial after: about £54.44 (above the £0 floor).
+- **VO:** Ben Orbit Narrator, `eleven_v3`, speed 1.04, take a. Finish step 1 only, no atempo. VO sha `8361c712…`.
+- **Cover:** `10_Shorts/covers_backcat_v01/hos_002_backcat_four_elements_cover_v01.jpg` (live layout: top, 86.0% wide, 4.5–44.0%); `thumb_preview.py short` and `style_sheet.py short` run.
+- **Phone copy:** iCloud `HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v01.mp4` (sha matches) + `covers_backcat_v01/`.
+
+```
+PASS  hos_002_backcat_four_elements_v01.mp4  dur=25.63s  audio=-21.0dB  motion=27.45  dhash=14502254d90a0c17   (gate_shorts_open --air-date 2026-11-03; main library and the #189 library)
+PASS  hos_002_backcat_four_elements_vo_v01_fin.wav  0:23.51  mean -20.7 dB  peak -2.0 dB  153 wpm   (vo_check on the finished VO)
+PASS  hos_002_backcat_four_elements_v01.mp4  0:25.63  mean -21.0 dB  peak -1.7 dB  140 wpm
+   warn  pace 140 wpm (< 145)   (vo_check on the export; the wpm counts the loop tail)
+freezedetect (n=0.003, d=0.8): 0 events · caption-change check 19/19
+```
+
+Frame-0 dHash: 29 bits from the 004 Short (1 Nov), 36/27/26 from 005 A/B/C; nearest in the library 27 (`29bpGAI0wb8`).

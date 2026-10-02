@@ -1,0 +1,34 @@
+{
+  "version": "covers_backcat_v02",
+  "task": "PR #180 comment 5950838060",
+  "change": "004 scene repainted: shell rebounding out, foil intact with a small dent, no tear or paper; lettering, layout and Explorer unchanged",
+  "covers": {
+    "004_gold_foil": {
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v02/hos_004_backcat_gold_foil_cover_v02.jpg",
+      "sha256": "fa7247a391b1a751dc469970e04bd038d988e570443d4a2aa81fd20e05803e10",
+      "title": "Why Gold Foil Bounced Rutherford's Particles Back",
+      "words": [
+        "GOLD",
+        "THREW IT",
+        "BACK"
+      ],
+      "scene": "hos_004_backcat_scene_v02a.jpg",
+      "letters": "hos_004_backcat_letters_v01.jpg",
+      "stack_width_pct": 86.0,
+      "stack_x_pct": [
+        6.9,
+        93.0
+      ],
+      "stack_y_pct": [
+        4.5,
+        45.3
+      ],
+      "preview": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v02/hos_004_backcat_gold_foil_cover_v02_preview.jpg"
+    },
+    "002_four_elements": {
+      "file": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/covers_backcat_v01/hos_002_backcat_four_elements_cover_v01.jpg",
+      "unchanged": "covers_backcat_v01"
+    }
+  },
+  "style_sheet": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v02/hos_backcat_nov_covers_v02_style_sheet.jpg"
+}
