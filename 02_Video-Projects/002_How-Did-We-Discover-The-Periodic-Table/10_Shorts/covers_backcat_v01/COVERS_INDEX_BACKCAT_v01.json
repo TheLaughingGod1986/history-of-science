@@ -1,0 +1,51 @@
+{
+  "version": "covers_backcat_v01",
+  "task": "PR #180 comment 5950150517",
+  "covers": {
+    "004_gold_foil": {
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v01/hos_004_backcat_gold_foil_cover_v01.jpg",
+      "sha256": "ba25ace9b060d3eaa464100197104253f4782da66dc55ef2f603d7b18811d115",
+      "title": "Why Gold Foil Bounced Rutherford's Particles Back",
+      "words": [
+        "GOLD",
+        "THREW IT",
+        "BACK"
+      ],
+      "scene": "hos_004_backcat_scene_v01.jpg",
+      "letters": "hos_004_backcat_letters_v01.jpg",
+      "stack_width_pct": 86.0,
+      "stack_x_pct": [
+        6.9,
+        93.0
+      ],
+      "stack_y_pct": [
+        4.5,
+        45.3
+      ],
+      "preview": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v01/hos_004_backcat_gold_foil_cover_v01_preview.jpg"
+    },
+    "002_four_elements": {
+      "file": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/covers_backcat_v01/hos_002_backcat_four_elements_cover_v01.jpg",
+      "sha256": "3daf253b9dc9a0431bc6c9829da2f75ec389b2d6245e124cc39f3b720e2b7c75",
+      "title": "The Four Elements Were Wrong",
+      "words": [
+        "FOUR",
+        "ELEMENTS WERE",
+        "WRONG"
+      ],
+      "scene": "hos_002_backcat_scene_v01.jpg",
+      "letters": "hos_002_backcat_letters_v01.jpg",
+      "stack_width_pct": 86.0,
+      "stack_x_pct": [
+        6.9,
+        93.0
+      ],
+      "stack_y_pct": [
+        4.5,
+        44.0
+      ],
+      "preview": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/covers_backcat_v01/hos_002_backcat_four_elements_cover_v01_preview.jpg"
+    }
+  },
+  "style_sheet": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v01/hos_backcat_nov_covers_v01_style_sheet.jpg"
+}

@@ -1,0 +1,170 @@
+{
+  "scripts": "SHORTS_SCRIPTS_BACKCAT_v02.md",
+  "task": "PR #180 comment 5950150517",
+  "builder": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/_build_backcat_nov_v01.py",
+  "shorts": {
+    "002_four_elements": {
+      "id": "002_four_elements",
+      "air_date": "2026-11-03",
+      "short_title": "The Four Elements Were Wrong",
+      "promotes": "AL_-qlWko_g",
+      "file": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v01.mp4",
+      "sha256": "484df604ad6a3ba5217950121da32b91bcdff3046656f380187814c98dbb82a9",
+      "duration_s": 25.633,
+      "vo": "hos_002_backcat_four_elements_vo_v01_fin.wav",
+      "vo_sha256": "8361c7122ed32ac51a13c40c73009f29bc71342b4f707805c9c26ec3f76b6517",
+      "vo_s": 23.509,
+      "loop_from_s": 23.629,
+      "loop_s": 2.0,
+      "bed": "hos_002_part01_curious_workshop_v02_norm.wav",
+      "bed_gain_db": -18.6,
+      "hook": "NOT ELEMENTS",
+      "hook_layer": {
+        "font": "Bodoni 72 Bold",
+        "font_size": 223,
+        "cap_px": 154,
+        "cap_pct": 8.02,
+        "h_squeeze": 0.918,
+        "lines": 2,
+        "block_pct": [
+          40.7,
+          59.3
+        ],
+        "widest_pct": 92.6
+      },
+      "title_on_screen": "How Did We Discover the Periodic Table?",
+      "plates": [
+        {
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/03_four_elements_crumble_v01.mp4",
+          "sha256": "576186399a0f346ba0a88495eb02137a1d89fe6713d1810db1106f34cec27b3b"
+        },
+        {
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/04_iron_salt_flame_air_v01.mp4",
+          "sha256": "a0bc722bd12ec628f6ce3ac681e871b4e39a383c2047de4fca0ec0a7988a6da8"
+        },
+        {
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/10_rock_not_fire_v01.mp4",
+          "sha256": "053c59999225666f58f6a172a3e5b30c9f292eef019160635c128c418d941704"
+        },
+        {
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/02_workshop_jars_v01.mp4",
+          "sha256": "52689953911d4c822d2354e4c2aff9b7154a06d34c7d800122a56cec4373535e"
+        },
+        {
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/raw/lavoisier_list_t1.mp4",
+          "sha256": "1f545b7acd5f7da529cf54e828db24ebcd24733ebeace58dc9f4697ed95f9e91"
+        },
+        {
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/08_labelled_zoo_v01.mp4",
+          "sha256": "d6c31fae7fc12853c95c926ea6c4472ade1a45e1545b4fc11819c6134e2e1e75"
+        },
+        {
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/07_shelf_names_grow_v01.mp4",
+          "sha256": "9817941e2ee0060df5b7df3cf3a9d7518757a27ed28ee532dac60e46cd58f1f0"
+        },
+        {
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/03_four_elements_crumble_v01.mp4",
+          "sha256": "576186399a0f346ba0a88495eb02137a1d89fe6713d1810db1106f34cec27b3b"
+        }
+      ],
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 3.393,
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/03_four_elements_crumble_v01.mp4",
+          "in_s": 1.1,
+          "out_s": 4.493,
+          "crop_x": 656,
+          "lands_on": 0
+        },
+        {
+          "t0": 3.393,
+          "t1": 7.792,
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/04_iron_salt_flame_air_v01.mp4",
+          "in_s": 0.3,
+          "out_s": 4.699,
+          "crop_x": 250,
+          "lands_on": "For"
+        },
+        {
+          "t0": 7.792,
+          "t1": 10.814,
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/10_rock_not_fire_v01.mp4",
+          "in_s": 0.3,
+          "out_s": 3.322,
+          "crop_x": 300,
+          "lands_on": "But"
+        },
+        {
+          "t0": 10.814,
+          "t1": 13.064,
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/02_workshop_jars_v01.mp4",
+          "in_s": 0.5,
+          "out_s": 2.75,
+          "crop_x": 760,
+          "lands_on": "Air"
+        },
+        {
+          "t0": 13.064,
+          "t1": 15.728,
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/shorts_backcat/raw/lavoisier_list_t1.mp4",
+          "in_s": 0.1,
+          "out_s": 2.764,
+          "crop_x": 430,
+          "lands_on": "Antoine"
+        },
+        {
+          "t0": 15.728,
+          "t1": 18.688,
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/08_labelled_zoo_v01.mp4",
+          "in_s": 1.0,
+          "out_s": 3.96,
+          "crop_x": 700,
+          "lands_on": "and"
+        },
+        {
+          "t0": 18.688,
+          "t1": 23.629,
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/07_shelf_names_grow_v01.mp4",
+          "in_s": 0.5,
+          "out_s": 5.441,
+          "crop_x": 656,
+          "lands_on": "His"
+        },
+        {
+          "t0": 23.629,
+          "t1": 25.629,
+          "plate": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/04_Generated-Clips/part01/raw/v01_fast/03_four_elements_crumble_v01.mp4",
+          "in_s": 1.1,
+          "out_s": 3.1,
+          "crop_x": 656,
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 19,
+      "caption_check": {
+        "ok": true,
+        "changes": 19,
+        "ratio": 1.0
+      },
+      "gate": {
+        "main": {
+          "exit": 0,
+          "output": "PASS  hos_002_backcat_four_elements_v01.mp4  dur=25.63s  audio=-21.0dB  motion=27.45  dhash=14502254d90a0c17\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_backcat_four_elements_v01_open_sheet.jpg"
+        },
+        "pr189_library": {
+          "exit": 0,
+          "output": "PASS  hos_002_backcat_four_elements_v01.mp4  dur=25.63s  audio=-21.0dB  motion=27.45  dhash=14502254d90a0c17\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_backcat_four_elements_v01_open_sheet.jpg"
+        }
+      },
+      "vo_check": {
+        "exit": 0,
+        "output": "PASS  hos_002_backcat_four_elements_v01.mp4  0:25.63  mean -21.0 dB  peak -1.7 dB  140 wpm\n   warn  pace 140 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed"
+      },
+      "freezedetect_starts": [],
+      "frame0_still": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_work_backcat_v01/002_four_elements/hos_002_backcat_four_elements_v01_frame0.jpg",
+      "title_frame_still": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_work_backcat_v01/002_four_elements/hos_002_backcat_four_elements_v01_title_frame.jpg",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v01.mp4"
+    }
+  }
+}
