@@ -20,6 +20,7 @@
 ## STOP
 
 - **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
+- **Full join v01 built (2 Oct 2026), held before Ben:** its `vo_check` prints FAIL on two transcriber misses of "Fabricius" (Part 04 alone PASSes). Waiting on a listen and a decision on the desk (see "Full join v01" below).
 - Resolved: Part 01 rough v01 passed by Ben, 1 Oct 2026 ("Part 1 OK").
 - Resolved: the Flow-credits STOP (1 Oct 23:45) is replaced by Vertex AI Veo for 005 with Ben's OK. Shorts scripts signed off by Ben, 1 Oct 2026.
 
@@ -542,6 +543,21 @@ PASS  hos_005_part05_rough_v01.mp4  1:55.47  mean -21.6 dB  peak -2.2 dB  149 wp
 CREDIT free_trial_remaining_gbp=110.07 status=Available floor=20
 part 05: takes=33 stills=26 keep=18/18 cost_usd=$42.61 (lost $0.00)
 film 005 Vertex spend $190.63 · projected Free Trial £57.03 (floor £20, £/$ 0.8)
+```
+
+### Full join v01 (not yet to Ben)
+
+- **File:** `09_Final-Export/hos_005_full_join_v01.mp4`, sha256 `84476e06c13e2a010974bc0937a7044374f637065edcf819c5ab5157165192f7`, 526.533 s (8:46.5). Phone copy in iCloud. Built by `07_Edit-Project/_join_full_v01.py`; record `07_Edit-Project/full_join_v01_meta.json`.
+- **Parts:** 01 Ben's passed rough v01 picture; 02 rough v02; 03 rough v02; 04 rough v01; 05 rough v01 (`--join` segments: no fade, the bed runs on under the card).
+- **Cards:** 0:57.62 c. AD 170 · 2:37.71 1616 · 4:16.41 1628 · 6:25.15 1661, each 0.6 s after the last word. End card 8:22.52 (4 s), then the 20 s end-screen hold.
+- **freezedetect:** 5 events, all inside the card and end-card holds.
+- **STOP:** `vo_check` on the full join prints FAIL on two transcriber misses of "Fabricius" in Part 04 (heard "vibrisius" at 5:06 and 5:35). The same Part 04 window cut from the join PASSes ("fabriceus", sounds alike). Waiting on a listen and a decision on the desk before Ben's sign-off. Report: `07_Edit-Project/_desk/full_join_v01_report_2026-10-02.md`.
+
+```
+FAIL  hos_005_full_join_v01.mp4  8:46.53  mean -21.8 dB  peak -2.1 dB  143 wpm
+   FAIL  replace at ~5:06.28: … heard 'valve the flaps vibrisius found harvey presses'
+   FAIL  replace at ~5:35.24: … heard 'towards the heart vibrisius thought they slowed'
+PASS  join_p04_window.mp4  2:08.27  mean -22.0 dB  peak -2.2 dB  153 wpm
 ```
 
 ## Parts

@@ -8,8 +8,11 @@ has left, at least 0.5 s), then picture and music fade.
 VO: the board's vo_file unchanged (sha checked) + TEMP bed BED_REL_DB under the VO mean.
 Labels: white Didot italic, top right, one at a time (LABELS: plate id → offset into the plate, text).
 Chapter cards are added in the full join, not here.
+--join: a join segment for `_join_full_v01.py` (work dir, no iCloud): no picture fade, the part runs
+JOIN_TAIL_S past its VO (the chapter card's breath + hold), and the last plate clone-pads any shortfall
+(only ever under the opaque card). Part 05 instead runs its tail + END_CARD_S with the bed fading.
 
-  ~/.venvs/hos-vertex/bin/python 07_Edit-Project/_assemble_part_rough_v02.py --part N
+  ~/.venvs/hos-vertex/bin/python 07_Edit-Project/_assemble_part_rough_v02.py --part N [--join]
 """
 from __future__ import annotations
 
@@ -37,6 +40,9 @@ BED_REL_DB = -20.0
 DIDOT = "/System/Library/Fonts/Supplemental/Didot.ttc"
 LABEL_FADE = 0.28
 LABEL_HOLD = 2.4
+JOIN_TAIL_S = 2.5  # VO_RETIME card_breath_s 0.6 + card_to_vo_s 1.9
+END_CARD_S = 4.0
+JOIN_BED_XFADE_S = 0.4
 
 # Part → plate id → in-point into the KEEP clip (s).
 IN_S: dict[str, dict[str, float]] = {"02": {}, "03": {}, "04": {"01_college_demo": 1.9, "08_knots_valve": 0.1, "11_two_fingers": 4.0}, "05": {}}
@@ -125,15 +131,21 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--part", required=True)
     ap.add_argument("--version", default="v01")
+    ap.add_argument("--join", action="store_true")
     a = ap.parse_args()
     part = f"{int(a.part):02d}"
     board = json.loads((EDIT / f"parts/part-{part}_plates_v02.json").read_text())
     log = json.loads((EDIT / f"PART{part}_MINT_LOG_v01.json").read_text())
     vo = PROJ / board["vo_file"]
     bed = PROJ / f"05_Music/hos005-part{part}-temp_score_bed_v01.mp3"
-    out = PROJ / f"09_Final-Export/hos_005_part{part}_rough_{a.version}.mp4"
-    meta_path = EDIT / f"part{part}_rough_{a.version}_meta.json"
-    work = EDIT / f"_part{part}_rough_{a.version}_work"
+    if a.join:
+        work = EDIT / "_join_full_work" / f"part{part}"
+        out = work / f"part{part}_join.mp4"
+        meta_path = work / "join_meta.json"
+    else:
+        out = PROJ / f"09_Final-Export/hos_005_part{part}_rough_{a.version}.mp4"
+        meta_path = EDIT / f"part{part}_rough_{a.version}_meta.json"
+        work = EDIT / f"_part{part}_rough_{a.version}_work"
     if sha256(vo) != board["vo_sha256"]:
         raise SystemExit(f"STOP: Part {part} VO is not the locked v01 take")
     plates = board["plates"]
@@ -153,6 +165,8 @@ def main() -> None:
     if tail_s < 0.5:
         raise SystemExit(f"STOP: last plate leaves only {last_left:.2f}s after the last word")
     total = vo_dur + tail_s
+    if a.join:
+        total = vo_dur + (tail_s + END_CARD_S if part == "05" else JOIN_TAIL_S)
     if probe(bed) < total:
         raise SystemExit("STOP: bed shorter than the part")
 
@@ -178,12 +192,16 @@ def main() -> None:
         keep = log["plates"][pl["id"]]
         src = REPO / keep["keep"]
         in_s = IN_S[part].get(pl["id"], 0.0)
+        pad = ""
         if in_s + use > probe(src) + 1e-3:
-            raise SystemExit(f"STOP: {pl['id']} needs {in_s + use:.2f}s of an {probe(src):.2f}s clip (no freeze-pad)")
+            short = in_s + use - probe(src)
+            if not (a.join and i == len(plates) - 1 and t0 + probe(src) - in_s >= vo_dur + 0.5):
+                raise SystemExit(f"STOP: {pl['id']} needs {in_s + use:.2f}s of an {probe(src):.2f}s clip (no freeze-pad)")
+            pad = f",tpad=stop_mode=clone:stop_duration={short + 0.1:.3f}"
         dst = work / f"n{i:02d}_{pl['id']}.mp4"
         run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-ss", f"{in_s:.3f}", "-i", str(src),
              "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},"
-                    f"setsar=1,format=yuv420p",
+                    f"setsar=1,format=yuv420p{pad}",
              "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "16",
              "-r", str(FPS), str(dst)])
         normed.append(dst)
@@ -217,8 +235,11 @@ def main() -> None:
                      f"setpts=PTS+{t0:.3f}/TB[lb{k}]")
         parts.append(f"{cur}[lb{k}]overlay=0:0:eof_action=pass[ov{k}]")
         cur = f"[ov{k}]"
-    parts.append(f"{cur}fade=t=out:st={total - 1.0:.3f}:d=1.0,format=yuv420p,setsar=1[v]")
+    vfade = "" if a.join else f"fade=t=out:st={total - 1.0:.3f}:d=1.0,"
+    parts.append(f"{cur}{vfade}format=yuv420p,setsar=1[v]")
     afade = vo_dur + 0.3
+    if a.join:
+        afade = total - (END_CARD_S if part == "05" else JOIN_BED_XFADE_S)
     parts.append(f"[1:a]aresample=48000,pan=stereo|c0=c0|c1=c0,apad,atrim=0:{total:.3f}[vo]")
     parts.append(f"[2:a]atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={bed_gain_db:.2f}dB,"
                  f"afade=t=in:st=0:d=0.4,afade=t=out:st={afade:.3f}:d={total - afade:.3f},"
@@ -231,8 +252,9 @@ def main() -> None:
          "-t", f"{total:.3f}", "-movflags", "+faststart", str(out)])
 
     icloud = ICLOUD_DIR / out.name
-    ICLOUD_DIR.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(out, icloud)
+    if not a.join:
+        ICLOUD_DIR.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(out, icloud)
     streams = json.loads(subprocess.check_output(
         ["ffprobe", "-v", "error", "-show_entries", "stream=codec_type,width,height,r_frame_rate,"
          "avg_frame_rate,duration,channels,sample_rate", "-of", "json", str(out)], text=True))["streams"]
@@ -251,7 +273,7 @@ def main() -> None:
         "plates": plate_meta,
     }
     meta_path.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n")
-    print(f"SAVED {out}\nICLOUD {icloud}\nsha256 {meta['sha256']}\nduration {meta['duration_s']:.3f}s "
+    print(f"SAVED {out}\n{'' if a.join else f'ICLOUD {icloud}' + chr(10)}sha256 {meta['sha256']}\nduration {meta['duration_s']:.3f}s "
           f"freeze_events {meta['freeze_events_0p8s']} bed_gain {bed_gain_db:.2f} dB")
 
 
