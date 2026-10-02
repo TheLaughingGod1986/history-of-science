@@ -1,9 +1,9 @@
 {
   "format": "longform",
-  "video": null,
+  "video": "../09_Final-Export/hos_005_master_v01.mp4",
   "title": "The Tied Arm That Proved Your Blood Circulates",
   "titleVariant": "A",
-  "descriptionFile": "Descriptions/blood_long_description_v01.txt",
+  "descriptionFile": "Descriptions/blood_long_description_v02.txt",
   "tagsFile": "Tags/blood_long_tags_v01.txt",
   "chaptersFile": null,
   "pinnedCommentFile": null,
@@ -24,43 +24,43 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Draft at VO stage (1 Oct 2026). Air approved by Ben 1 Oct (\"1–5 yes, 29 Oct\", relayed by Claude on desk PR #180): Thu 29 Oct 2026 18:00 UK = 18:00 UTC (clocks go back 25 Oct). Titles still proposals. Nothing uploaded or scheduled on YouTube.",
+  "note": "Master = full join v01 passed by Ben 2 Oct 2026 (sha 84476e06…, 8:46.5), copied byte-for-byte to 09_Final-Export/hos_005_master_v01.mp4. Air approved by Ben 1 Oct: Thu 29 Oct 2026 18:00 UK = 18:00 UTC, normal publish. Title, thumbnail and description wait for Ben's sign-off. Nothing uploaded or scheduled on YouTube.",
   "neighbours": {
     "phrases": [
       "blood",
       "heart"
     ],
-    "checked": "2026-10-01",
+    "checked": "2026-10-02",
     "videos": [
       {
         "id": "Ab9OZsDECZw",
         "channel": "TED-Ed",
         "title": "How blood pressure works - Wilfred Manzano",
-        "views": 17958434
-      },
-      {
-        "id": "3_PYnWVoUzM",
-        "channel": "TED-Ed",
-        "title": "What happens during a heart attack? - Krishna Sudhir",
-        "views": 9114588
+        "views": 17959080
       },
       {
         "id": "xfZhb6lmxjk",
         "channel": "TED-Ed",
         "title": "Why do blood types matter? - Natalie S. Hodge",
-        "views": 6733953
+        "views": 6734275
       },
       {
         "id": "ruM4Xxhx32U",
         "channel": "TED-Ed",
         "title": "How the heart actually pumps blood - Edmond Hui",
-        "views": 4458863
+        "views": 4459222
       },
       {
         "id": "qcZKbjYyOfE",
         "channel": "TED-Ed",
         "title": "What happens if you're injected with the wrong blood type? - Bill Schutt",
-        "views": 1419018
+        "views": 1419073
+      },
+      {
+        "id": "_vZ0lefPg_0",
+        "channel": "Amoeba Sisters",
+        "title": "Circulatory System and Pathway of Blood Through the Heart",
+        "views": 7390037
       }
     ]
   }

@@ -1,0 +1,165 @@
+{
+ "pulled": "2026-10-02",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "blood circulation",
+  "william harvey"
+ ],
+ "autocomplete": {
+  "blood circulation": [
+   "blood circulation frequency",
+   "blood circulation exercise",
+   "blood circulation in human body",
+   "blood circulation heart",
+   "blood circulation",
+   "blood circulation system",
+   "blood circulation machine",
+   "blood circulation working model",
+   "blood circulation in human body class 11",
+   "blood circulation kaise badhaye"
+  ],
+  "william harvey": [
+   "william harvey",
+   "william harvey information in english",
+   "william harvey marathi mahiti",
+   "william harvey gcse history",
+   "william harvey mahiti english",
+   "william harvey method",
+   "william harvey mahiti",
+   "william harvey circulation of blood",
+   "william harvey information",
+   "william harvey hospital ashford"
+  ]
+ },
+ "sharedTitleWords": [
+  "the heart",
+  "circulatory system",
+  "gcse biology"
+ ],
+ "neighbours": [
+  {
+   "id": "Ab9OZsDECZw",
+   "title": "How blood pressure works - Wilfred Manzano",
+   "channel": "TED-Ed",
+   "views": "17,959,080 views",
+   "age": "11 yr ago",
+   "length": "4:32",
+   "tier": 1,
+   "viewCount": 17959080,
+   "foundBy": "ted-ed blood circulation",
+   "onTopic": true
+  },
+  {
+   "id": "xfZhb6lmxjk",
+   "title": "Why do blood types matter? - Natalie S. Hodge",
+   "channel": "TED-Ed",
+   "views": "6,734,275 views",
+   "age": "11 yr ago",
+   "length": "4:42",
+   "tier": 1,
+   "viewCount": 6734275,
+   "foundBy": "ted-ed blood circulation",
+   "onTopic": true
+  },
+  {
+   "id": "ruM4Xxhx32U",
+   "title": "How the heart actually pumps blood - Edmond Hui",
+   "channel": "TED-Ed",
+   "views": "4,459,222 views",
+   "age": "12 yr ago",
+   "length": "4:28",
+   "tier": 1,
+   "viewCount": 4459222,
+   "foundBy": "ted-ed blood circulation",
+   "onTopic": true
+  },
+  {
+   "id": "saXfavo1OQo",
+   "title": "The power of listening | William Ury | TEDxSanDiego",
+   "channel": "TEDx Talks",
+   "views": "2,933,824 views",
+   "age": "11 yr ago",
+   "length": "15:41",
+   "tier": 1,
+   "viewCount": 2933824,
+   "foundBy": "william harvey ted",
+   "onTopic": true
+  },
+  {
+   "id": "qcZKbjYyOfE",
+   "title": "What happens if you're injected with the wrong blood type? - Bill Schutt",
+   "channel": "TED-Ed",
+   "views": "1,419,073 views",
+   "age": "6 yr ago",
+   "length": "4:52",
+   "tier": 1,
+   "viewCount": 1419073,
+   "foundBy": "ted-ed blood circulation",
+   "onTopic": true
+  },
+  {
+   "id": "wr3kUfW2fM0",
+   "title": "Harvey Milk's radical vision of equality - Lillian Faderman",
+   "channel": "TED-Ed",
+   "views": "277,672 views",
+   "age": "7 yr ago",
+   "length": "5:24",
+   "tier": 1,
+   "viewCount": 277672,
+   "foundBy": "ted-ed william harvey",
+   "onTopic": true
+  },
+  {
+   "id": "_vZ0lefPg_0",
+   "title": "Circulatory System and Pathway of Blood Through the Heart",
+   "channel": "Amoeba Sisters",
+   "views": "7,390,037 views",
+   "age": "6 yr ago",
+   "length": "8:14",
+   "tier": 2,
+   "viewCount": 7390037,
+   "foundBy": "blood circulation",
+   "onTopic": true
+  },
+  {
+   "id": "AlSQEs694qY",
+   "title": "GCSE Biology - Blood Vessels (2026/27 exams)",
+   "channel": "Cognito",
+   "views": "868,358 views",
+   "age": "7 yr ago",
+   "length": "4:02",
+   "tier": 2,
+   "viewCount": 868358,
+   "foundBy": "blood circulation",
+   "onTopic": true
+  },
+  {
+   "id": "c-6ZhcHkB4s",
+   "title": "GCSE Biology - The Circulatory System | The Blood (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "167,087 views",
+   "age": "1 yr ago",
+   "length": "5:08",
+   "tier": 2,
+   "viewCount": 167087,
+   "foundBy": "blood circulation",
+   "onTopic": true
+  },
+  {
+   "id": "Bp05RuefBqM",
+   "title": "Alone, Together: How Technology Separates Us | Henry Williams | TEDxTheMastersSchool",
+   "channel": "TEDx Talks",
+   "views": "55,756 views",
+   "age": "8 yr ago",
+   "length": "11:38",
+   "tier": 1,
+   "viewCount": 55756,
+   "foundBy": "william harvey ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 6,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

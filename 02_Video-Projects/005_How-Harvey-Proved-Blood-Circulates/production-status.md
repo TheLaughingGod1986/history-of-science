@@ -5,22 +5,24 @@
 | Slug | `005_How-Harvey-Proved-Blood-Circulates` |
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | Ben picked: **Blood (Harvey)**, 1 Oct 2026 (chat with Claude) |
-| Neighbour gate | PASS: 8 education videos with 1M+ views, TED-Ed yes (`11_Upload-Package/evidence_2026-10-01_neighbours.json`) |
+| Neighbour gate | PASS: 8 education videos with 1M+ views, TED-Ed yes (`11_Upload-Package/evidence_2026-10-01_neighbours.json`). Re-run 2 Oct for the package ("blood circulation" / "william harvey"): PASS, 5 on-topic at 1M+ in the manifest block (`evidence_2026-10-02_neighbours.json`) |
 | Pre-build vidIQ audit | filled from public signals; **vidIQ waived by Ben, 1 Oct 2026**; signed |
 | Script sign-off | **Script v02 signed off by Ben, 1 Oct 2026** ("1–5 yes, 29 Oct", in chat with Claude; relayed on desk PR #180) |
 | Script review | 89.8 with the fixed reviewer (#185). v02 signed off by Ben, 1 Oct 2026 (gate override, STUDIO_PLAYBOOK §2) |
 | Episode gate | Every line OK except `script_review` 89.8 (Ben's recorded override, as on 004), 1 Oct 2026 |
-| lint:package | PASS, 1 Oct 2026, schedule 29 Oct (captions warning) |
+| lint:package | PASS, 2 Oct 2026, description v02, video = master v01 (captions warning) |
 | VO | **Voice v01 (listen file sha `a19569f4…`, 8:15.33) OK'd by Ben, 1 Oct 2026** ("waive vidIQ, merge #186 and voice OK", in chat with Claude; relayed on desk PR #180). All `vo_check.py` PASS |
-| Picture | **Part 01 rough v01 passed by Ben, 1 Oct 2026** ("Part 1 OK", in chat with Claude; relayed on desk PR #180 comment 5942662028), as it is, including the ECG-style pulse and the quill: `09_Final-Export/hos_005_part01_rough_v01.mp4`, sha256 `7661b6cf1897c6dabe60e09592b297f9ed21b253cb7c2946cc12f58732a9d098`. Parts 02–05 on Vertex AI Veo 3.1 in progress (boards v02 + Fast-plate light fix). Ben's moving-picture sign-off for the film is the full join |
+| Picture | **Part 01 rough v01 passed by Ben, 1 Oct 2026** ("Part 1 OK", in chat with Claude; relayed on desk PR #180 comment 5942662028), as it is, including the ECG-style pulse and the quill: `09_Final-Export/hos_005_part01_rough_v01.mp4`, sha256 `7661b6cf1897c6dabe60e09592b297f9ed21b253cb7c2946cc12f58732a9d098`. **Ben passed full join v01 (sha `84476e06…`, 8:46.5), 2 Oct 2026; listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim** ("005 OK", relayed on desk PR #180 comment 5948300560). Master: `09_Final-Export/hos_005_master_v01.mp4` (byte copy of the join, sha256 `84476e06c13e2a010974bc0937a7044374f637065edcf819c5ab5157165192f7`) |
 | Runtime target | 7–9 min, 5 parts. Film VO timeline 8:21.33 with the four chapter cards (`07_Edit-Project/VO_RETIME_v01.json`), + 3–4 s end card ≈ 8:25 |
 | Air | **Thu 29 Oct 2026 18:00 UK = 18:00 UTC** (`2026-10-29T18:00:00.000Z`; clocks go back 25 Oct), normal publish (no Premiere). Ben, 1 Oct. Not yet uploaded |
-| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). Not built yet: cut from the long's plates once those exist |
+| Shorts | 3 planned (Fri 30 Oct, Sun 1 Nov, Tue 3 Nov, 11:30 UK = 11:30 UTC), one a day, none before the long is public, Related → this long. **Shorts A–C signed off by Ben, 1 Oct 2026** (`10_Shorts/SHORTS_SCRIPTS_v01.md`). **Built v01, 2 Oct 2026** from KEEP plates only (no new mints): gate, `vo_check` and freezedetect PASS on all three; phone copies in iCloud `HOS UAT/005…/10_Shorts/`. Waiting for Ben's phone watch |
 
 ## STOP
 
 - **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
-- **Full join v01 with Ben for his watch (2 Oct 2026).** Parts 02–05 accepted by Claude on the desk. Claude's decision (desk, 2 Oct 03:40 UTC): full-join `vo_check` FAIL = transcriber drift on "Fabricius" (Part 04 window PASS); listen-pass at 5:06/5:35 = Ben's watch. If Ben hears a fault, regenerate those two sentences alone. Watch item: a small yellow curl top centre at about 8:20; if Ben calls it a helix, trim the tail of 05/18 (no remint). No Shorts and no changes until Ben passes the join.
+- **Shorts A–C v01 with Ben for his phone watch (2 Oct 2026).** Listen items: "proved" at 0:03 in A and 0:00 in B (`vo_check` sounds-alike warnings).
+- **Package: Ben signs off the title, thumbnail and description v02** before anything is uploaded or scheduled. No thumbnail yet.
+- Resolved: full join v01 passed by Ben, 2 Oct 2026 ("005 OK"): listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim.
 - Resolved: Part 01 rough v01 passed by Ben, 1 Oct 2026 ("Part 1 OK").
 - Resolved: the Flow-credits STOP (1 Oct 23:45) is replaced by Vertex AI Veo for 005 with Ben's OK. Shorts scripts signed off by Ben, 1 Oct 2026.
 
@@ -560,6 +562,53 @@ FAIL  hos_005_full_join_v01.mp4  8:46.53  mean -21.8 dB  peak -2.1 dB  143 wpm
    FAIL  replace at ~5:35.24: … heard 'towards the heart vibrisius thought they slowed'
 PASS  join_p04_window.mp4  2:08.27  mean -22.0 dB  peak -2.2 dB  153 wpm
 ```
+
+## 2 Oct 2026 — Ben passed the join; Shorts A–C v01; package prep (Grok, desk task from Claude, comment 5948300560)
+
+**Ben passed full join v01 (sha `84476e06…`, 8:46.5), 2 Oct 2026; listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim.** Master `09_Final-Export/hos_005_master_v01.mp4` is a byte copy (sha256 `84476e06c13e2a010974bc0937a7044374f637065edcf819c5ab5157165192f7`, 526.533 s).
+
+### Shorts A–C v01
+
+The Shorts are built from KEEP plates only, with no mints. The VO is new takes with Ben Orbit Narrator: the Shorts scripts differ from the long, and the text is each script paragraph word for word. A and B use take a, C uses take b. The finish is pauses ≤ 0.6 s and peak −2 dB, with no `atempo`. Crops are static 9:16. The exact title is on screen at 9–14 s, and the last 4 s loop to the opening plate. Full plan and changes from the script tables: `07_Edit-Project/_desk/shorts_v01_report_2026-10-02.md` and `10_Shorts/SHORTS_INDEX_v01.json`. Phone copies are in iCloud `HOS UAT/005…/10_Shorts/`.
+
+| Short | File | Length | sha256 |
+|---|---|---|---|
+| A, the sum | `10_Shorts/hos_005_s01_the_sum_v01.mp4` | 24.07 s | `732bca40629e9854800c6a7e8f400a6cde821a1183a7fe0803c7c83bca16d97b` |
+| B, the tied arm | `10_Shorts/hos_005_s02_the_tied_arm_v01.mp4` | 25.83 s | `e2eacb0c6d3e8b5828c69dc534860ce4e3d17544fed457f30c59ae3a144e0baf` |
+| C, never saw | `10_Shorts/hos_005_s03_never_saw_v01.mp4` | 24.83 s | `5839c4dd1e93dd0d11ae9c2c1191559662845b0c8d07731b2058365a25becbc4` |
+
+```
+PASS  hos_005_s01_the_sum_v01.mp4  dur=24.07s  audio=-21.2dB  motion=27.31  dhash=4b5307236a79723b
+PASS  hos_005_s02_the_tied_arm_v01.mp4  dur=25.83s  audio=-21.6dB  motion=19.22  dhash=070f46033fa90e0e
+PASS  hos_005_s03_never_saw_v01.mp4  dur=24.83s  audio=-21.7dB  motion=17.01  dhash=0f0f0d1f6e030f0f
+```
+
+```
+PASS  hos_005_s01_the_sum_v01.mp4  0:24.07  mean -21.2 dB  peak -2.0 dB  157 wpm
+   warn  replace at ~0:03.22: script 'have london doctor proved it with a' / heard 'have london doctor approved it with a' — sounds alike (likely the transcriber); listen
+PASS  hos_005_s02_the_tied_arm_v01.mp4  0:25.83  mean -21.6 dB  peak -1.9 dB  146 wpm
+   warn  replace at ~0:00.26: script 'band proved your blood goes' / heard 'band proves your blood goes' — sounds alike (likely the transcriber); listen
+PASS  hos_005_s03_never_saw_v01.mp4  0:24.83  mean -21.7 dB  peak -2.0 dB  140 wpm
+   warn  pace 140 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+```
+
+freezedetect (n 0.003, d 0.8): 0 events on all three.
+
+**Open question:** three 005 Shorts in the 29 Oct week (Fri/Sun/Tue) clash with "each Short in a week promotes a different film" (`HOS_STRATEGY.md`). This was raised with Claude on the desk. Nothing is scheduled.
+
+### Package prep
+
+- `neighbours.py "blood circulation" "william harvey" --phrase blood --phrase heart --manifest …`: gate PASS, 6 at 1M+, TED-Ed yes. The manifest block keeps 5 on-topic videos (TED-Ed ×4, Amoeba Sisters).
+- Description v02: a two-line opening holding *blood* and *heart*, with chapters re-timed from the master's cards (0:00 · 0:57 · 2:37 · 4:16 · 6:25).
+- Tags: 7, unchanged.
+- The manifest `video` is the master.
+
+```
+PASS  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+```
+
+The title, thumbnail (not made yet) and description wait for Ben. Nothing is uploaded or scheduled.
 
 ## Parts
 
