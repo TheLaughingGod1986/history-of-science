@@ -1,0 +1,54 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "task": "Claude desk PR #180 comment 5951520953",
+  "model": "Veo 3.1 - Fast",
+  "account": "benoats@googlemail.com",
+  "takes": [
+    {
+      "part": "01",
+      "plate": "09_vilvoorde",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "path": "flow-cdp",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Early 1600s, grey Flemish light: a red-brick town house with stepped gables and a walled garden behind it. Held wide shot, slow push towards the garden gate. No people in shot. No people. Silent.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/09_vilvoorde_v01.jpg",
+      "start_frame_sha256": "f3223248e623b238327c07c6229e84d4ff7034767b2f24152b7491966fed54b8",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/09_vilvoorde_flowfast_t1.mp4",
+      "sha256": "a8353fba020c712690cc2413a0173f876a6725169706cd446173c70af68b443a",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/09_vilvoorde_flowfast_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "project_url": "https://flow.google.com/project/f642c105-8286-49f9-b342-8483a9d28d35",
+      "flow_credits_before": {
+        "hits": [
+          62
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_flowfast_09_vilvoorde_t1_before.png",
+        "at": "2026-10-02T12:24:55+00:00"
+      },
+      "flow_credits_after": {
+        "hits": [],
+        "account_seen": null,
+        "screenshot": "flow_credits_flowfast_09_vilvoorde_t1_after.png",
+        "at": "2026-10-02T12:26:33+00:00"
+      },
+      "seconds": 107.1,
+      "status": "KEEP",
+      "at": "2026-10-02T12:26:34+00:00",
+      "flow_credits_after_reread": {
+        "hits": [
+          52
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_flowfast_09_vilvoorde_t1_after_reread.png",
+        "at": "2026-10-02T12:26:53+00:00"
+      },
+      "why": "Slow push to the garden gate, gables and brickwork hold, no people, no flame, no freeze; finished look matches the garden plates. Board uses the first 5.0 s. Flow download is 720p (credits 62 -> 52).",
+      "uat_at": "2026-10-02T12:27:11+00:00"
+    }
+  ],
+  "updated": "2026-10-02T12:27:11+00:00"
+}

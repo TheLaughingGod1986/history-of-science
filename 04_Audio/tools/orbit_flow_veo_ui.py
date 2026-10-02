@@ -49,7 +49,9 @@ DEFAULT_PROFILE = Path(
 )
 DEFAULT_MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Quality")
 # Flow video CG must stay on Veo 3.x — never Omni Flash / Nano Banana for Orbit motion.
-VEO3_MODEL_RE = re.compile(r"^Veo\s*3(\.\d+)?\s*-\s*(Lite|Fast|Quality)$", re.I)
+VEO3_MODEL_RE = re.compile(r"^Veo\s*3(\.\d+)?\s*-\s*(Lite|Fast|Quality)( \[Lower Priority\])?$", re.I)
+# "Veo 3.1 - Lite [Lower Priority]" costs 0 credits (Oct 2026); never let it fall back to a paid model.
+LOWER_PRIORITY = "[Lower Priority]"
 FORBIDDEN_VIDEO_MODELS = ("Omni Flash", "Nano Banana", "Nano Banana 2")
 MEDIA_REDIRECT_RE = re.compile(r"media\.getMediaUrlRedirect\?name=([a-f0-9\-]+)", re.I)
 
@@ -652,13 +654,21 @@ def _lock_veo_in_agent_settings(page, model: str) -> str:
     print(f"  video model dropdown: {opened!r}", flush=True)
     page.wait_for_timeout(700)
 
-    wanted = [model, "Veo 3.1 - Fast", "Veo 3.1 - Lite", "Veo 3.1 - Quality", "Veo 3.1"]
+    if LOWER_PRIORITY in model:
+        wanted = [model]
+    else:
+        wanted = [model, "Veo 3.1 - Fast", "Veo 3.1 - Lite", "Veo 3.1 - Quality", "Veo 3.1"]
     selected = page.evaluate(
         r"""(wanted) => {
+          const items = [...document.querySelectorAll('[role=menuitem], button')];
+          const txt = b => (b.innerText || '').replace(/\n/g, ' ').replace(/^volume_up\s*/, '').trim();
           for (const label of wanted) {
-            for (const b of document.querySelectorAll('[role=menuitem], button')) {
-              const t = (b.innerText || '').replace(/\n/g, ' ').trim();
-              if (t === label || t.includes(label)) { b.click(); return t; }
+            for (const b of items) { if (txt(b) === label) { b.click(); return txt(b); } }
+          }
+          for (const label of wanted) {
+            for (const b of items) {
+              const t = txt(b);
+              if (t.includes(label) && !t.includes('[Lower Priority]')) { b.click(); return t; }
             }
           }
           return null;
@@ -667,6 +677,8 @@ def _lock_veo_in_agent_settings(page, model: str) -> str:
     )
     if not selected:
         raise RuntimeError(f"Could not select video model from {wanted}")
+    if (LOWER_PRIORITY in model) != (LOWER_PRIORITY in selected):
+        raise RuntimeError(f"Selected {selected!r}, wanted {model!r}")
     print(f"  video model selected: {selected}", flush=True)
     page.wait_for_timeout(400)
 
@@ -760,12 +772,11 @@ def _select_veo_from_dropdown(page, model: str) -> str:
         raise RuntimeError("Flow video model dropdown not found")
 
     current = (model_dd.last.inner_text() or "").replace("\n", " ")
-    if model not in current:
+    current = re.sub(r"\s*arrow_drop_down\s*", "", current).strip()
+    if not current.endswith(model):
         model_dd.last.click(timeout=5000, force=True)
         page.wait_for_timeout(800)
-        item = page.get_by_role("menuitem", name=re.compile(re.escape(model), re.I))
-        if item.count() == 0:
-            item = page.locator(f'[role="menuitem"]:has-text("{model}")')
+        item = page.get_by_role("menuitem", name=re.compile(re.escape(model) + r"\s*$", re.I))
         if item.count() == 0:
             # Menuitem text may include a leading volume_up icon glyph
             clicked = page.evaluate(
@@ -773,7 +784,7 @@ def _select_veo_from_dropdown(page, model: str) -> str:
                   const needle = String(model || '').toLowerCase();
                   for (const el of document.querySelectorAll('[role=menuitem],button')) {
                     const t = (el.innerText || '').trim().replace(/\\n/g, ' ');
-                    if (t.length < 80 && t.toLowerCase().includes(needle)) {
+                    if (t.length < 80 && t.toLowerCase().endsWith(needle)) {
                       el.click();
                       return t;
                     }
@@ -798,6 +809,8 @@ def _select_veo_from_dropdown(page, model: str) -> str:
             f"Flow video model is still {selected!r} — must be Veo 3.x "
             f"(not Omni Flash / Nano Banana)"
         )
+    if not selected.endswith(model):
+        raise RuntimeError(f"Flow video model is {selected!r}, wanted {model!r}")
     return selected
 
 
@@ -1140,7 +1153,7 @@ def _wait_add_to_prompt_enabled(page, *, timeout_s: float = 90) -> bool:
     return False
 
 
-def attach_image_to_prompt(page, ref: Path) -> bool:
+def attach_image_to_prompt(page, ref: Path, *, model: str | None = None) -> bool:
     """Attach an arbitrary still to the Flow agent prompt (HOS start-frame I2V).
 
     Same upload path as Orbit identity attach, without Orbit filename asserts.
@@ -1354,7 +1367,7 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
     try:
         configure_veo_settings(
             page,
-            model=os.environ.get("ORBIT_FLOW_VEO_MODEL", DEFAULT_MODEL),
+            model=model or os.environ.get("ORBIT_FLOW_VEO_MODEL", DEFAULT_MODEL),
             frames_mode=True,
             ingredients_mode=False,
         )
@@ -2876,7 +2889,7 @@ def _generate_clip_once(
     if start_frame is not None:
         ensure_agent_session(page)
         print("  attaching start frame…", flush=True)
-        attached = attach_image_to_prompt(page, ref)
+        attached = attach_image_to_prompt(page, ref, model=model)
         # Frames Start attach is trusted. Do NOT right-click Animate afterward —
         # it often wipes the Start slot / closes the page (Sep 2026).
         if not attached and not _start_frame_present(page):
@@ -2893,7 +2906,7 @@ def _generate_clip_once(
         present = _start_frame_present(page)
         if not present and not attached:
             print("  start frame missing after prompt paste — re-attaching", flush=True)
-            attached = attach_image_to_prompt(page, ref)
+            attached = attach_image_to_prompt(page, ref, model=model)
             present = _start_frame_present(page)
         if not present and not attached:
             raise RuntimeError("Start-frame prompt chip missing after attach — aborting")
