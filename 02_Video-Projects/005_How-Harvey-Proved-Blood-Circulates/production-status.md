@@ -21,7 +21,7 @@
 
 - **Picture:** Ben's moving-picture sign-off (5) for the film is on the full join v01, after Parts 02–05 pass Claude's still review and my UAT. Spend stops if the projected Vertex Free Trial credit would fall below £20 (Claude on the desk, 2 Oct 2026; was £60), or at once if the Free Trial ends or billing turns paid.
 - **Shorts A–C v01 with Ben for his phone watch (2 Oct 2026).** Listen items: "proved" at 0:03 in A and 0:00 in B (`vo_check` sounds-alike warnings).
-- **Package: Ben signs off the title, thumbnail and description v02** before anything is uploaded or scheduled. No thumbnail yet.
+- **Package: Ben signs off the title, thumbnail and description v02** before anything is uploaded or scheduled. Thumbnail v02 A/B (`08_Thumbnail/THUMBS_INDEX_v02.json`) going to Ben via Claude, 2 Oct 2026.
 - Resolved: full join v01 passed by Ben, 2 Oct 2026 ("005 OK"): listen-pass at 5:06/5:35 = clean; 8:20 curl = no trim.
 - Resolved: Part 01 rough v01 passed by Ben, 1 Oct 2026 ("Part 1 OK").
 - Resolved: the Flow-credits STOP (1 Oct 23:45) is replaced by Vertex AI Veo for 005 with Ben's OK. Shorts scripts signed off by Ben, 1 Oct 2026.
@@ -623,6 +623,17 @@ $ style_sheet.py long A B
 ```
 
 **STOP:** waiting for Ben's thumbnail and title pick. Nothing is in Studio.
+
+## 2 Oct 2026 — Long thumbnail v02, the red fix (Grok, desk task from Claude, comment 5948809563)
+
+Claude's fix: the thin red surface stripe became a wide, glowing artery under the skin, running from the shoulder to the band and ending there. The forearm and hand below the band are a touch paler and cooler. Nothing else changed. A = ONE TIGHT **BAND** (`356f9ea5…`). B = IT GOES **ROUND** (`17672532…`), which is A's v02 painting with the v01 B lettering panel spliced in. Index: `08_Thumbnail/THUMBS_INDEX_v02.json`. Report: `07_Edit-Project/_desk/thumb_v02_report_2026-10-02.md`. The film and template `08_Thumbnail/README.md` now point to `THUMBNAIL_AND_TITLE_RULES.md` §2 for lettering.
+
+```
+$ thumb_preview.py long hos_005_thumb_A_one_tight_band_v02.jpg / hos_005_thumb_B_it_goes_round_v02.jpg  (previews written)
+…/Selected/hos_005_thumbs_v02_style_sheet.jpg  (2 new vs 4 live long references)
+```
+
+**STOP:** Claude takes A and B v02 to Ben with the title and description (Claude's recommendation: A as main, A and B as the Test & Compare pair). Nothing is in Studio.
 
 ## Parts
 
