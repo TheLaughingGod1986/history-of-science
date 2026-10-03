@@ -23,16 +23,17 @@ One row per Short. Fill stayed-to-watch and average view duration from Studio at
 | 18 Oct 2026 11:30 UK | `TbMMJSRKC3U` | He said every eighth element repeats | 002 `AL_-qlWko_g` | | | | | Scheduled · Related 002 set · Altered YES · not kids · s02 punch v06 |
 | 20 Oct 2026 11:30 UK | `clV6E10NLPw` | The spray that stopped surgery killing patients | 001 `_C92tIJCk8A` | carbolic spray / THE CARBOLIC SPRAY cover live_v06 | | | | Scheduled · Altered YES · not kids · Related → 001 *How Did We Discover Germs?* (verified in Studio 2 Oct 2026 11:15 UK after a reload; Save grey, nothing pending; `001_…/11_Upload-Package/Schedule/evidence_2026-09-30_s06_lister/s06_related_verified_2026-10-02.png`) · do not touch Private `CUu8k38iAMc` |
 | — (Private) | `CUu8k38iAMc` | The first X-ray showed a wedding ring | 003 | | | | | **PRIVATE 30 Sep 10:45** — duplicate of public `zI_eD3vFWmE`; unsched from Tue 20 Oct. Do not delete. |
-| 30 Oct 2026 11:30 UK | `1lszTrYRp-8` | Your Heart Pumps More Blood Than You Have | 005 | MORE / than you / HAVE cover `hos_005_s01_the_sum_cover_v02.jpg` | | | | Scheduled · cover swapped from 002's by mistake to the 005 v02 cover 2 Oct 17:06 UK (sha checked) · Related → 005 on 29 Oct 18:05 |
+| 30 Oct 2026 11:30 UK | `1lszTrYRp-8` | Your Heart Pumps More Blood Than You Have | 005 | MORE / than you / HAVE cover `hos_005_s01_the_sum_cover_v02.jpg` | | | | Scheduled · cover swapped from 002's by mistake to the 005 v02 cover 2 Oct 17:06 UK (sha checked) · Related → 005 `wwcjcFfC-5M` on 29 Oct 18:05 |
 | 1 Nov 2026 11:30 UK | `JyRjM-9Yc8g` | Why Gold Foil Bounced Rutherford's Particles Back | 004 `GHZDsiH7L7A` | | | | | Scheduled · Related → 004 on or after 15 Oct |
 | 3 Nov 2026 11:30 UK | `Pp5LmjsduI4` | The Four Elements Were Wrong | 002 `AL_-qlWko_g` | | | | | Scheduled · not kids |
-| 8 Nov 2026 (planned) | — | 005 B (the tied arm) | 005 | | | | | Not uploaded · held for the 005 v02 pale-line fix ("Below the band, the pulse stopped.") |
-| 15 Nov 2026 11:30 UK | `x_3L_IdYgEc` | The Blood Vessels Finer Than a Hair | 005 | | | | | Scheduled · Related → 005 on 29 Oct 18:05 |
+| 8 Nov 2026 11:30 UK | `mTY67qet7cM` | One Tight Band Proved Your Blood Goes Round | 005 `wwcjcFfC-5M` | | | | | Scheduled · v03 ("Below the band, the pulse stopped.") KEEP by Claude 3 Oct on Ben's delegation · not kids · en-GB · Related → `wwcjcFfC-5M` on 29 Oct 18:05 |
+| 15 Nov 2026 11:30 UK | `x_3L_IdYgEc` | The Blood Vessels Finer Than a Hair | 005 | | | | | Scheduled · Related → 005 `wwcjcFfC-5M` on 29 Oct 18:05 |
 | — (Private) | `kzDiVk4603s` | He predicted a metal before it was found | 002 | | | | | Private copy of public `nFQRWmpulTQ`. Do not delete. |
 | — (Draft) | `K0TQHg4XCHY` | The Four Elements Were Wrong (duplicate) | 002 | | | | | Upload-retry copy of `Pp5LmjsduI4`, 1 Oct. Keep as draft. Do not delete. |
 | — (Draft) | `JI2ewIT1KSM` | The Four Elements Were Wrong (duplicate) | 002 | | | | | Upload-retry copy of `Pp5LmjsduI4`, 1 Oct. Keep as draft. Do not delete. |
 | — (Draft) | `6btaax7wp2E` | The Blood Vessels Finer Than a Hair (duplicate) | 005 | | | | | Upload-retry copy of `x_3L_IdYgEc`, 1 Oct. Keep as draft. Do not delete. |
 | — (Draft) | `DdggTdAzk84` | Why Gold Foil Bounced Rutherford's Particles Back (duplicate) | 004 | | | | | Upload-retry copy of `JyRjM-9Yc8g`, 1 Oct. Keep as draft. Do not delete. |
 | — (Draft) | `VZsUxmzGyyE` | hos 005 s01 the sum v02 (duplicate) | 005 | | | | | Stray upload of the 005 A file, 1 Oct. Keep as draft. Do not delete. |
+| — (Draft) | `KIWJRl0dzjw` | One Tight Band Proved Your Blood Goes Round (duplicate) | 005 | | | | | Wizard-retry copy of `mTY67qet7cM`, 3 Oct. Schedule cleared. Keep as draft. Do not delete. |
 
 Live scrape: `02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/LIVE_SHORTS_LIST.json`
