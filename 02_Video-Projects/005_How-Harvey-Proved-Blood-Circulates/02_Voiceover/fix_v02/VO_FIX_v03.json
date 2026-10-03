@@ -1,0 +1,21 @@
+{
+  "file": "part04_the_tied_arm_v03.mp3",
+  "sha256": "2cbb3d1a0a1b716baeeeaa98f5c049b53e54086ed1727576e0b140d8fb6e83e7",
+  "duration_s": 128.017,
+  "from": "part04_the_tied_arm_v01.mp3",
+  "take": "fix_v02/p04_pulse_ctx_a.mp3",
+  "take_span_s": [
+    4.789,
+    9.306
+  ],
+  "new_sentence_part_s": [
+    13.5,
+    18.017
+  ],
+  "shift_after_s": 1.777,
+  "shift_from_part_s": 16.82,
+  "peak_db": -2.27,
+  "limited_samples": 128,
+  "whole_file_gain_db": 0.0,
+  "desk": "PR #180 comments 5952762841 / 5953047660"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "part04_the_tied_arm_v02.mp3",
+  "sha256": "64300dcbb691835c635bead28d9c492121a70716d4c7f31b3090953b8644dfe3",
+  "duration_s": 128.017,
+  "from": "part04_the_tied_arm_v01.mp3",
+  "take": "fix_v02/p04_pulse_ctx_a.mp3",
+  "take_span_s": [
+    4.789,
+    9.306
+  ],
+  "new_sentence_part_s": [
+    13.5,
+    18.017
+  ],
+  "shift_after_s": 1.777,
+  "shift_from_part_s": 16.82,
+  "peak_db": -2.0,
+  "desk": "PR #180 comments 5952762841 / 5953047660"
+}

@@ -132,10 +132,12 @@ def main() -> None:
     ap.add_argument("--part", required=True)
     ap.add_argument("--version", default="v01")
     ap.add_argument("--join", action="store_true")
+    ap.add_argument("--board", default="v02", help="board version (parts/part-NN_plates_<v>.json); v03 = 005 v02 pale fix")
+    ap.add_argument("--log", default="v01", help="mint log version (PARTNN_MINT_LOG_<v>.json)")
     a = ap.parse_args()
     part = f"{int(a.part):02d}"
-    board = json.loads((EDIT / f"parts/part-{part}_plates_v02.json").read_text())
-    log = json.loads((EDIT / f"PART{part}_MINT_LOG_v01.json").read_text())
+    board = json.loads((EDIT / f"parts/part-{part}_plates_{a.board}.json").read_text())
+    log = json.loads((EDIT / f"PART{part}_MINT_LOG_{a.log}.json").read_text())
     vo = PROJ / board["vo_file"]
     bed = PROJ / f"05_Music/hos005-part{part}-temp_score_bed_v01.mp3"
     if a.join:
@@ -147,7 +149,7 @@ def main() -> None:
         meta_path = EDIT / f"part{part}_rough_{a.version}_meta.json"
         work = EDIT / f"_part{part}_rough_{a.version}_work"
     if sha256(vo) != board["vo_sha256"]:
-        raise SystemExit(f"STOP: Part {part} VO is not the locked v01 take")
+        raise SystemExit(f"STOP: Part {part} VO is not the board's locked take")
     plates = board["plates"]
     t_film0 = float(board["vo_film_start_s"])
     starts = [round(float(p["t_s"]) - t_film0, 3) for p in plates]

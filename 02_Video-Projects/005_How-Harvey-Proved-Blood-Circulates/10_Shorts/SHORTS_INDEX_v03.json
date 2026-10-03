@@ -1,0 +1,95 @@
+{
+  "scripts": "SHORTS_SCRIPTS_v02.md",
+  "task": "PR #180 comments 5952762841 / 5953047660",
+  "change": "Short B only: 'The hand went pale.' -> 'Below the band, the pulse stopped.' (vo_v03b take a); arm plates 03/04 graded_v04; otherwise v02",
+  "shorts": {
+    "s02_the_tied_arm": {
+      "id": "s02_the_tied_arm",
+      "air_date": "2026-11-08",
+      "file": "10_Shorts/hos_005_s02_the_tied_arm_v03.mp4",
+      "sha256": "6151ea799c366e2d12670df2c1d087a3454e02660c5f8522061351f1954d4a4f",
+      "duration_s": 26.933,
+      "vo": "10_Shorts/vo_v03b/hos_005_s02_the_tied_arm_vo_v03_fin.wav",
+      "vo_sha256": "0e26cfc6019a5ec4fd1ca450db4899d898daa496b9c35159734f8a0ad64035da",
+      "vo_s": 26.379,
+      "hook": "ONE TIGHT BAND",
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 2.674,
+          "plate": "04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+          "in_s": 0.8,
+          "crop_x": 640,
+          "lands_on": 0
+        },
+        {
+          "t0": 2.674,
+          "t1": 6.753,
+          "plate": "04_Generated-Clips/part04/raw/v01/02_linen_tie_t2.mp4",
+          "in_s": 0.3,
+          "crop_x": 450,
+          "lands_on": "William"
+        },
+        {
+          "t0": 6.753,
+          "t1": 9.262,
+          "plate": "04_Generated-Clips/part04/graded_v04/03_hand_pale_t4_graded_v04.mp4",
+          "in_s": 1.5,
+          "crop_x": 100,
+          "lands_on": "Below"
+        },
+        {
+          "t0": 9.262,
+          "t1": 13.889,
+          "plate": "04_Generated-Clips/part04/graded_v04/04_stopped_loosen_t5_graded_v04.mp4",
+          "in_s": 1.5,
+          "crop_x": 560,
+          "lands_on": "No"
+        },
+        {
+          "t0": 13.889,
+          "t1": 17.538,
+          "plate": "04_Generated-Clips/part04/raw/v01/06_veins_swell_t1.mp4",
+          "in_s": 3.0,
+          "crop_x": 560,
+          "lands_on": "The"
+        },
+        {
+          "t0": 17.538,
+          "t1": 22.929,
+          "plate": "04_Generated-Clips/part04/raw/v01/07_in_out_doors_t2.mp4",
+          "in_s": 1.5,
+          "crop_x": 620,
+          "lands_on": "So"
+        },
+        {
+          "t0": 22.929,
+          "t1": 26.929,
+          "plate": "04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+          "in_s": 0.8,
+          "crop_x": 640,
+          "lands_on": "loop"
+        }
+      ],
+      "caption_check": {
+        "ok": true,
+        "changes": 21,
+        "ratio": 1.0
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_005_s02_the_tied_arm_v03.mp4  dur=26.93s  audio=-21.5dB  motion=18.38  dhash=270e0e217b230e0e\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s02_the_tied_arm_v03_open_sheet.jpg"
+      },
+      "vo_check": {
+        "exit": 0,
+        "output": "PASS  hos_005_s02_the_tied_arm_v03.mp4  0:26.93  mean -21.5 dB  peak -1.9 dB  145 wpm\n   warn  replace at ~0:00.26: script 'band proved your blood goes' / heard 'band proves your blood goes' \u2014 sounds alike (likely the transcriber); listen"
+      },
+      "freezedetect_starts": [],
+      "title_frame_still": "10_Shorts/_work_v03/s02_the_tied_arm/hos_005_s02_the_tied_arm_v03_title_frame.jpg",
+      "frame0_still": "10_Shorts/_work_v03/s02_the_tied_arm/hos_005_s02_the_tied_arm_v03_frame0.jpg",
+      "pulse_beat_still": "10_Shorts/_work_v03/s02_the_tied_arm/hos_005_s02_the_tied_arm_v03_pulse_beat.jpg",
+      "loosen_beat_still": "10_Shorts/_work_v03/s02_the_tied_arm/hos_005_s02_the_tied_arm_v03_loosen_beat.jpg",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s02_the_tied_arm_v03.mp4"
+    }
+  }
+}

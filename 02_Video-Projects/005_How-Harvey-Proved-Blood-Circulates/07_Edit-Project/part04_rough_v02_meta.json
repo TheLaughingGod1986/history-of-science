@@ -1,0 +1,392 @@
+{
+  "out": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part04_rough_v02.mp4",
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_part04_rough_v02.mp4",
+  "sha256": "a910376f0bc19112a138e89f58d0372edab44ce7f29d2a2fa7a60423d179f23a",
+  "duration_s": 130.017,
+  "streams": [
+    {
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "duration": "130.000000"
+    },
+    {
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "duration": "130.017000"
+    }
+  ],
+  "freeze_events_0p8s": 0,
+  "vo": "02_Voiceover/part04_the_tied_arm_v03.mp3",
+  "vo_sha256": "2cbb3d1a0a1b716baeeeaa98f5c049b53e54086ed1727576e0b140d8fb6e83e7",
+  "vo_duration_s": 128.017007,
+  "vo_film_start_s": 258.3,
+  "tail_s": 2.0,
+  "bed": {
+    "temp": true,
+    "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part04-temp_score_bed_v01.mp3",
+    "sha256": "c4f024b8832b67e2ed107b76906a0b4d3dd4666cb797d1afa0db0fddf80d4b96",
+    "vo_mean_db": -21.9,
+    "bed_mean_db_raw": -22.1,
+    "bed_gain_db": -19.8,
+    "bed_rel_db_vs_vo": -20.0
+  },
+  "labels": [
+    {
+      "t0": 0.6,
+      "t1": 3.0,
+      "text": "Nine years"
+    },
+    {
+      "t0": 9.08,
+      "t1": 11.48,
+      "text": "A tight band"
+    },
+    {
+      "t0": 14.08,
+      "t1": 16.48,
+      "text": "No blood in"
+    },
+    {
+      "t0": 28.297,
+      "t1": 30.697,
+      "text": "Deep arteries"
+    },
+    {
+      "t0": 43.457,
+      "t1": 45.857,
+      "text": "In: arteries · out: veins"
+    },
+    {
+      "t0": 53.357,
+      "t1": 55.757,
+      "text": "A valve"
+    },
+    {
+      "t0": 82.457,
+      "t1": 84.857,
+      "text": "One way: to the heart"
+    },
+    {
+      "t0": 104.557,
+      "t1": 106.957,
+      "text": "De Motu Cordis, 1628"
+    },
+    {
+      "t0": 118.357,
+      "t1": 120.757,
+      "text": "John Aubrey"
+    }
+  ],
+  "cuts": "hard cuts on the board times",
+  "plates": [
+    {
+      "id": "01_college_demo",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/01_college_demo_t2.mp4",
+      "sha256": "b5cf3d154e5bbd92ac48994ba53c7217d316dbeabd4ae67c9739035406f75461",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 0.0,
+      "film_t0": 258.3,
+      "use_s": 5.567,
+      "in_s": 1.9,
+      "vo_land": [
+        "Harvey showed his experiments at the College for more than nine years before he printed a word."
+      ]
+    },
+    {
+      "id": "02_linen_tie",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/02_linen_tie_t2.mp4",
+      "sha256": "0f71afe7c4347e106abc222ba7a1f21fb1ef369fdde393b1523a4cc83bbf21ac",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 5.567,
+      "film_t0": 263.88,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "The most famous one needs nothing but a strip of linen.",
+        "He ties a band round a man's upper arm and pulls it tight."
+      ]
+    },
+    {
+      "id": "03_hand_pale",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/graded_v04/03_hand_pale_t4_graded_v04.mp4",
+      "sha256": "3a9dfca122208c4eed158cccdc54b5e2b6343a9944b5c59b15d6f6445b62bba6",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 4,
+      "part_t0": 13.467,
+      "film_t0": 271.78,
+      "use_s": 7.833,
+      "in_s": 0.0,
+      "vo_land": [
+        "Below the band, the hand goes pale and cold.",
+        "Above it, the artery throbs."
+      ]
+    },
+    {
+      "id": "04_stopped_loosen",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/graded_v04/04_stopped_loosen_t5_graded_v04.mp4",
+      "sha256": "29f43912da47dd208bb05a8721c6a61d2344e17ff3897522966d2c770ace421b",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 5,
+      "part_t0": 21.3,
+      "film_t0": 279.597,
+      "use_s": 6.4,
+      "in_s": 0.0,
+      "vo_land": [
+        "Why?",
+        "The tight band has stopped the blood getting in.",
+        "Then he loosens it, just a little."
+      ]
+    },
+    {
+      "id": "05_arteries_veins_shut",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/graded_v04/05_arteries_veins_shut_t7_graded_v04.mp4",
+      "sha256": "fd51f1345eab3ace67f00ab1b15898ec2e6c5038bb0da937991b38db3e65b906",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 7,
+      "part_t0": 27.7,
+      "film_t0": 285.997,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "Now the arteries, which run deep inside the arm, can push blood under the band.",
+        "But the veins near the skin are still squeezed shut."
+      ]
+    },
+    {
+      "id": "06_veins_swell",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/06_veins_swell_t1.mp4",
+      "sha256": "f697ff926035b60d9f459752decbd611d3556981edea8a7fae4ce74c43466a0b",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 35.6,
+      "film_t0": 293.897,
+      "use_s": 7.267,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) But the veins near the skin are still squeezed shut.",
+        "The hand flushes red, and the veins below the band swell up like ropes."
+      ]
+    },
+    {
+      "id": "07_in_out_doors",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/07_in_out_doors_t2.mp4",
+      "sha256": "8fc5b8035c03134a6f8b1a157bc1f88bd3c461fb45980fa860c6fa3a280455d1",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex",
+      "take": 2,
+      "part_t0": 42.867,
+      "film_t0": 301.157,
+      "use_s": 6.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "So blood comes in through the arteries and leaves through the veins.",
+        "Now the little doors."
+      ]
+    },
+    {
+      "id": "08_knots_valve",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/08_knots_valve_t4.mp4",
+      "sha256": "86a56a66f1c569a5e3ebc80f89e81ed42d112f8f69420ff10a68f23d3ed4ff5a",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 4,
+      "part_t0": 49.767,
+      "film_t0": 308.057,
+      "use_s": 7.9,
+      "in_s": 0.1,
+      "vo_land": [
+        "Along the swollen veins you can see small knots.",
+        "Each one is a valve, the flaps Fabricius found."
+      ]
+    },
+    {
+      "id": "09_push_stops",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/09_push_stops_t3.mp4",
+      "sha256": "ab9cbfc1b529f33164720df27d86041e2e38ec0fea7ccca4cb14f3afcdcaa224",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 57.667,
+      "film_t0": 315.957,
+      "use_s": 7.833,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) Each one is a valve, the flaps Fabricius found.",
+        "Harvey presses a finger on a vein and pushes the blood towards the hand.",
+        "It stops dead at the next valve."
+      ]
+    },
+    {
+      "id": "10_slides_heart",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/10_slides_heart_t3.mp4",
+      "sha256": "f44ee7371aa0bc71ce9aaf81f8fa5f1419615d7155276a6f3bafc200ffd1de5a",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 65.5,
+      "film_t0": 323.797,
+      "use_s": 5.033,
+      "in_s": 0.0,
+      "vo_land": [
+        "He pushes it the other way, towards the heart, and it slides through easily."
+      ]
+    },
+    {
+      "id": "11_two_fingers",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/11_two_fingers_t3.mp4",
+      "sha256": "8d8c9ab49bb8bf24a90dd08041b447455399efa714e2edd3ae1f4aded5287cef",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 70.533,
+      "film_t0": 328.817,
+      "use_s": 3.933,
+      "in_s": 4.0,
+      "vo_land": [
+        "He empties a short stretch of vein between two fingers."
+      ]
+    },
+    {
+      "id": "12_stays_fills",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/12_stays_fills_t3.mp4",
+      "sha256": "115bd85b518cc565bcb5a2d3ced68cde48b6138b3bd5bdbba543893c2595c1eb",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 74.467,
+      "film_t0": 332.777,
+      "use_s": 7.4,
+      "in_s": 0.0,
+      "vo_land": [
+        "It stays empty until he lifts the finger nearer the hand.",
+        "Then it fills straight back up, from below."
+      ]
+    },
+    {
+      "id": "13_one_way",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/13_one_way_t3.mp4",
+      "sha256": "9e09c5e1dd7e8a1634d854ba99897f155b041e3009f2e71d8ce604ff589fc2d3",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 81.867,
+      "film_t0": 340.157,
+      "use_s": 6.2,
+      "in_s": 0.0,
+      "vo_land": [
+        "Every door in every vein opens one way: towards the heart."
+      ]
+    },
+    {
+      "id": "14_steering_home",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/14_steering_home_t3.mp4",
+      "sha256": "1cbf01213c51fbf7dd34266b8f898d94865266d6fdb067d552e8b36ebd260e1a",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 88.067,
+      "film_t0": 346.377,
+      "use_s": 6.0,
+      "in_s": 0.0,
+      "vo_land": [
+        "Fabricius thought they slowed the blood.",
+        "Harvey saw they were steering it home.",
+        "You can see a little of this yourself."
+      ]
+    },
+    {
+      "id": "15_your_hand_glow",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/15_your_hand_glow_t5.mp4",
+      "sha256": "45536422cc90ef4eeeb77b8c6fd14f622563756c017f824a1376bfdbf399d2ec",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 5,
+      "part_t0": 94.067,
+      "film_t0": 352.357,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) You can see a little of this yourself.",
+        "Look at the veins on the back of your hand.",
+        "The blood inside them is on its way back to your heart."
+      ]
+    },
+    {
+      "id": "16_press_book",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/16_press_book_t1.mp4",
+      "sha256": "95801414c985fb8d859134b6c8b09e5bd1e6bc85ff9a39f6e76c8d7f57007619",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 101.967,
+      "film_t0": 360.257,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "In sixteen twenty-eight, Harvey published it all in a small Latin book, printed in Frankfurt: On the Motion of the Heart and Blood."
+      ]
+    },
+    {
+      "id": "17_whispers",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/17_whispers_t1.mp4",
+      "sha256": "603bebdf9677ddd34b30f2512ffd7a414833a67ee00fc6f3acdaff01ad74e5a1",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 109.867,
+      "film_t0": 368.157,
+      "use_s": 7.9,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) In sixteen twenty-eight, Harvey published it all in a small Latin book, printed in Frankfurt: On the Motion of the Heart and Blood.",
+        "Not everyone was impressed.",
+        "John Aubrey, who knew him, later wrote that after the book came out, Harvey \"fell mightily in his practice\", and many people thought he was crack-brained."
+      ]
+    },
+    {
+      "id": "18_aubrey",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/18_aubrey_t3.mp4",
+      "sha256": "b2d80a78b6e61e49e834790424da67442d5f42c9738a625463e73ad58dd39879",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 3,
+      "part_t0": 117.767,
+      "film_t0": 376.057,
+      "use_s": 6.3,
+      "in_s": 0.0,
+      "vo_land": [
+        "(continues) John Aubrey, who knew him, later wrote that after the book came out, Harvey \"fell mightily in his practice\", and many people thought he was crack-brained."
+      ]
+    },
+    {
+      "id": "19_gap_open",
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/19_gap_open_t1.mp4",
+      "sha256": "44dd0b1b2510a54832149534a17a1b77b8bb1996664e80efe4c8ed86bf7df4b6",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex",
+      "take": 1,
+      "part_t0": 124.067,
+      "film_t0": 382.357,
+      "use_s": 5.967,
+      "in_s": 0.0,
+      "vo_land": [
+        "And one gap was still open.",
+        "Harvey knew it."
+      ]
+    }
+  ]
+}

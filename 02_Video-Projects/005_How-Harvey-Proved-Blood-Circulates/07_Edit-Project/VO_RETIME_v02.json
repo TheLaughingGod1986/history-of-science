@@ -1,0 +1,898 @@
+{
+  "film": "005_How-Harvey-Proved-Blood-Circulates",
+  "source": "VO v01 part takes (VO_FINISH_v01.json), faster-whisper small.en word timestamps | v02 3 Oct 2026: Part 04 sentence 4 re-voiced (script v03), later Part 04 sentences +1.777 s",
+  "card_breath_s": 0.6,
+  "card_to_vo_s": 1.9,
+  "parts": [
+    {
+      "part": 1,
+      "file": "part01_the_used_up_blood_v01.mp3",
+      "sha256": "17ef3c420ba0239e7df30cddfa33f61fb480b72661c43ea81effadefd17f4c15",
+      "duration_s": 57.02,
+      "chapter_card": null,
+      "last_word_s": 56.7,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Your heart pumps more blood in half an hour than your whole body holds.",
+          "start_s": 0.0,
+          "end_s": 4.54,
+          "film_s": 0.0,
+          "film": "0:00.00"
+        },
+        {
+          "i": 2,
+          "text": "For fourteen hundred years, doctors taught that blood was made fresh from food and used up.",
+          "start_s": 5.36,
+          "end_s": 11.58,
+          "film_s": 5.36,
+          "film": "0:05.36"
+        },
+        {
+          "i": 3,
+          "text": "So how did a band tied round an arm prove them wrong?",
+          "start_s": 12.02,
+          "end_s": 15.32,
+          "film_s": 12.02,
+          "film": "0:12.02"
+        },
+        {
+          "i": 4,
+          "text": "By the end of this film, you'll know how one London doctor proved that your blood circulates, with a sum, a band, and tiny doors hidden inside your veins.",
+          "start_s": 15.94,
+          "end_s": 26.5,
+          "film_s": 15.94,
+          "film": "0:15.94"
+        },
+        {
+          "i": 5,
+          "text": "Every university taught the old idea.",
+          "start_s": 27.22,
+          "end_s": 29.6,
+          "film_s": 27.22,
+          "film": "0:27.22"
+        },
+        {
+          "i": 6,
+          "text": "Every doctor believed it.",
+          "start_s": 30.26,
+          "end_s": 31.68,
+          "film_s": 30.26,
+          "film": "0:30.26"
+        },
+        {
+          "i": 7,
+          "text": "If it was wrong, medicine had the human body backwards.",
+          "start_s": 32.16,
+          "end_s": 35.5,
+          "film_s": 32.16,
+          "film": "0:32.16"
+        },
+        {
+          "i": 8,
+          "text": "London, sixteen-sixteen.",
+          "start_s": 36.74,
+          "end_s": 36.74,
+          "film_s": 36.74,
+          "film": "0:36.74"
+        },
+        {
+          "i": 9,
+          "text": "A short, dark-eyed doctor called William Harvey starts teaching anatomy at the Royal College of Physicians.",
+          "start_s": 38.3,
+          "end_s": 45.0,
+          "film_s": 38.3,
+          "film": "0:38.30"
+        },
+        {
+          "i": 10,
+          "text": "He will spend the next twelve years on one question.",
+          "start_s": 45.92,
+          "end_s": 48.74,
+          "film_s": 45.92,
+          "film": "0:45.92"
+        },
+        {
+          "i": 11,
+          "text": "Where does all that blood go?",
+          "start_s": 49.5,
+          "end_s": 51.22,
+          "film_s": 49.5,
+          "film": "0:49.50"
+        },
+        {
+          "i": 12,
+          "text": "And to answer it, he did something doctors almost never did.",
+          "start_s": 51.88,
+          "end_s": 55.58,
+          "film_s": 51.88,
+          "film": "0:51.88"
+        },
+        {
+          "i": 13,
+          "text": "He counted.",
+          "start_s": 55.58,
+          "end_s": 56.7,
+          "film_s": 55.58,
+          "film": "0:55.58"
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "file": "part02_the_liver_that_made_blood_v01.mp3",
+      "sha256": "c99d1e5fbd0a0ab7cbd95bce2f796d5050be507c9358483b4900b34cb60436dd",
+      "duration_s": 97.58,
+      "chapter_card": "The Liver That Made Blood",
+      "last_word_s": 97.3,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Galen was a Greek doctor in Rome nearly two thousand years ago, and a brilliant anatomist.",
+          "start_s": 0.0,
+          "end_s": 6.24,
+          "film_s": 59.52,
+          "film": "0:59.52"
+        },
+        {
+          "i": 2,
+          "text": "For fourteen centuries, hardly anyone dared to argue with his books.",
+          "start_s": 6.8,
+          "end_s": 10.68,
+          "film_s": 66.32,
+          "film": "1:06.32"
+        },
+        {
+          "i": 3,
+          "text": "Here is what Galen taught.",
+          "start_s": 11.48,
+          "end_s": 12.8,
+          "film_s": 71.0,
+          "film": "1:11.00"
+        },
+        {
+          "i": 4,
+          "text": "You eat.",
+          "start_s": 13.6,
+          "end_s": 14.06,
+          "film_s": 73.12,
+          "film": "1:13.12"
+        },
+        {
+          "i": 5,
+          "text": "Your food turns into a milky juice, and your liver turns that juice into blood.",
+          "start_s": 14.76,
+          "end_s": 19.82,
+          "film_s": 74.28,
+          "film": "1:14.28"
+        },
+        {
+          "i": 6,
+          "text": "Your veins carry the blood out to every part of you, and your flesh soaks it up as nourishment.",
+          "start_s": 20.5,
+          "end_s": 26.36,
+          "film_s": 80.02,
+          "film": "1:20.02"
+        },
+        {
+          "i": 7,
+          "text": "The heart wasn't a pump at all.",
+          "start_s": 27.02,
+          "end_s": 29.24,
+          "film_s": 86.54,
+          "film": "1:26.54"
+        },
+        {
+          "i": 8,
+          "text": "It was a warm stove, and its job was to heat the blood.",
+          "start_s": 29.8,
+          "end_s": 33.44,
+          "film_s": 89.32,
+          "film": "1:29.32"
+        },
+        {
+          "i": 9,
+          "text": "A little of it was meant to seep from the right side of the heart to the left, through tiny holes in the wall between them.",
+          "start_s": 34.22,
+          "end_s": 41.08,
+          "film_s": 93.74,
+          "film": "1:33.74"
+        },
+        {
+          "i": 10,
+          "text": "Nobody had ever seen those holes.",
+          "start_s": 41.68,
+          "end_s": 43.46,
+          "film_s": 101.2,
+          "film": "1:41.20"
+        },
+        {
+          "i": 11,
+          "text": "Doctors believed they had to be there anyway.",
+          "start_s": 44.46,
+          "end_s": 46.32,
+          "film_s": 103.98,
+          "film": "1:43.98"
+        },
+        {
+          "i": 12,
+          "text": "Then, in fifteen fifty-five, the great anatomist Andreas Vesalius wrote that he could not see how even the smallest drop could pass through that wall.",
+          "start_s": 46.98,
+          "end_s": 57.26,
+          "film_s": 106.5,
+          "film": "1:46.50"
+        },
+        {
+          "i": 13,
+          "text": "So why did everyone keep believing it?",
+          "start_s": 58.08,
+          "end_s": 60.4,
+          "film_s": 117.6,
+          "film": "1:57.60"
+        },
+        {
+          "i": 14,
+          "text": "Because nobody had a better answer.",
+          "start_s": 60.94,
+          "end_s": 63.26,
+          "film_s": 120.46,
+          "film": "2:00.46"
+        },
+        {
+          "i": 15,
+          "text": "Around sixteen hundred, in Padua, a young Englishman named William Harvey studied under an old professor called Fabricius.",
+          "start_s": 64.0,
+          "end_s": 71.64,
+          "film_s": 123.52,
+          "film": "2:03.52"
+        },
+        {
+          "i": 16,
+          "text": "Fabricius had found something strange inside the veins: tiny flaps, in pairs.",
+          "start_s": 74.0,
+          "end_s": 79.26,
+          "film_s": 133.52,
+          "film": "2:13.52"
+        },
+        {
+          "i": 17,
+          "text": "He called them little doors.",
+          "start_s": 79.92,
+          "end_s": 81.52,
+          "film_s": 139.44,
+          "film": "2:19.44"
+        },
+        {
+          "i": 18,
+          "text": "But why would a vein need doors?",
+          "start_s": 82.32,
+          "end_s": 84.18,
+          "film_s": 141.84,
+          "film": "2:21.84"
+        },
+        {
+          "i": 19,
+          "text": "Fabricius thought they slowed the blood, so it wouldn't all pool in your feet.",
+          "start_s": 85.7,
+          "end_s": 89.38,
+          "film_s": 145.22,
+          "film": "2:25.22"
+        },
+        {
+          "i": 20,
+          "text": "He held the most important clue in the story, and he read it the wrong way.",
+          "start_s": 90.08,
+          "end_s": 94.9,
+          "film_s": 149.6,
+          "film": "2:29.60"
+        },
+        {
+          "i": 21,
+          "text": "Harvey took the clue home to London.",
+          "start_s": 95.56,
+          "end_s": 97.3,
+          "film_s": 155.08,
+          "film": "2:35.08"
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "file": "part03_the_sum_that_broke_the_old_idea_v01.mp3",
+      "sha256": "480a3d57070c24e73b60f3a1ec8974c394d75033ad69eab59fdd381e2603e743",
+      "duration_s": 96.2,
+      "chapter_card": "The Sum That Broke the Old Idea",
+      "last_word_s": 95.86,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Picture yourself in his lecture room in London.",
+          "start_s": 0.0,
+          "end_s": 2.36,
+          "film_s": 159.6,
+          "film": "2:39.60"
+        },
+        {
+          "i": 2,
+          "text": "It's cold, the candles are lit, and you're on a hard wooden bench.",
+          "start_s": 3.18,
+          "end_s": 7.14,
+          "film_s": 162.78,
+          "film": "2:42.78"
+        },
+        {
+          "i": 3,
+          "text": "Harvey has spent years watching the slow hearts of cold-blooded animals, like frogs and eels, where each beat is easy to see.",
+          "start_s": 7.94,
+          "end_s": 15.72,
+          "film_s": 167.54,
+          "film": "2:47.54"
+        },
+        {
+          "i": 4,
+          "text": "And what he saw was simple.",
+          "start_s": 15.96,
+          "end_s": 17.62,
+          "film_s": 175.56,
+          "film": "2:55.56"
+        },
+        {
+          "i": 5,
+          "text": "The heart isn't a stove.",
+          "start_s": 18.28,
+          "end_s": 19.56,
+          "film_s": 177.88,
+          "film": "2:57.88"
+        },
+        {
+          "i": 6,
+          "text": "It's a muscle, and it squeezes.",
+          "start_s": 19.96,
+          "end_s": 22.6,
+          "film_s": 179.56,
+          "film": "2:59.56"
+        },
+        {
+          "i": 7,
+          "text": "Each squeeze pushes blood out into the arteries, and that push is the pulse you feel in your wrist.",
+          "start_s": 23.28,
+          "end_s": 29.84,
+          "film_s": 182.88,
+          "film": "3:02.88"
+        },
+        {
+          "i": 8,
+          "text": "Then he asks how much blood each squeeze pushes out.",
+          "start_s": 30.5,
+          "end_s": 33.7,
+          "film_s": 190.1,
+          "film": "3:10.10"
+        },
+        {
+          "i": 9,
+          "text": "He picks small numbers on purpose.",
+          "start_s": 34.28,
+          "end_s": 36.32,
+          "film_s": 193.88,
+          "film": "3:13.88"
+        },
+        {
+          "i": 10,
+          "text": "Say the left side of the heart holds about two ounces.",
+          "start_s": 36.98,
+          "end_s": 39.94,
+          "film_s": 196.58,
+          "film": "3:16.58"
+        },
+        {
+          "i": 11,
+          "text": "Say just one eighth of that goes out with each beat.",
+          "start_s": 40.68,
+          "end_s": 43.64,
+          "film_s": 200.28,
+          "film": "3:20.28"
+        },
+        {
+          "i": 12,
+          "text": "In half an hour, a heart beats more than a thousand times.",
+          "start_s": 44.38,
+          "end_s": 48.3,
+          "film_s": 203.98,
+          "film": "3:23.98"
+        },
+        {
+          "i": 13,
+          "text": "Multiply it out.",
+          "start_s": 48.92,
+          "end_s": 50.0,
+          "film_s": 208.52,
+          "film": "3:28.52"
+        },
+        {
+          "i": 14,
+          "text": "In half an hour, the heart pushes out more blood than there is in the whole body.",
+          "start_s": 50.54,
+          "end_s": 55.72,
+          "film_s": 210.14,
+          "film": "3:30.14"
+        },
+        {
+          "i": 15,
+          "text": "Why does that matter?",
+          "start_s": 56.32,
+          "end_s": 57.38,
+          "film_s": 215.92,
+          "film": "3:35.92"
+        },
+        {
+          "i": 16,
+          "text": "Because if the liver made all that blood fresh from food, you'd have to eat more than your own weight every single day.",
+          "start_s": 58.12,
+          "end_s": 64.62,
+          "film_s": 217.72,
+          "film": "3:37.72"
+        },
+        {
+          "i": 17,
+          "text": "Nobody does.",
+          "start_s": 65.38,
+          "end_s": 66.02,
+          "film_s": 224.98,
+          "film": "3:44.98"
+        },
+        {
+          "i": 18,
+          "text": "And if the body used it all up, where would it go?",
+          "start_s": 66.72,
+          "end_s": 69.54,
+          "film_s": 226.32,
+          "film": "3:46.32"
+        },
+        {
+          "i": 19,
+          "text": "There's only one answer that works.",
+          "start_s": 70.18,
+          "end_s": 71.8,
+          "film_s": 229.78,
+          "film": "3:49.78"
+        },
+        {
+          "i": 20,
+          "text": "It's the same blood.",
+          "start_s": 72.4,
+          "end_s": 73.62,
+          "film_s": 232.0,
+          "film": "3:52.00"
+        },
+        {
+          "i": 21,
+          "text": "The heart pumps it out through the arteries, and it comes back through the veins, round and round.",
+          "start_s": 74.24,
+          "end_s": 80.2,
+          "film_s": 233.84,
+          "film": "3:53.84"
+        },
+        {
+          "i": 22,
+          "text": "It circulates.",
+          "start_s": 80.76,
+          "end_s": 81.82,
+          "film_s": 240.36,
+          "film": "4:00.36"
+        },
+        {
+          "i": 23,
+          "text": "We now know he was being very careful: your heart pumps all of your blood round your body in about a minute.",
+          "start_s": 82.7,
+          "end_s": 89.76,
+          "film_s": 242.3,
+          "film": "4:02.30"
+        },
+        {
+          "i": 24,
+          "text": "But a sum isn't proof.",
+          "start_s": 90.48,
+          "end_s": 92.18,
+          "film_s": 250.08,
+          "film": "4:10.08"
+        },
+        {
+          "i": 25,
+          "text": "Harvey needed something people could see with their own eyes.",
+          "start_s": 93.14,
+          "end_s": 95.86,
+          "film_s": 252.74,
+          "film": "4:12.74"
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "file": "part04_the_tied_arm_v03.mp3",
+      "sha256": "2cbb3d1a0a1b716baeeeaa98f5c049b53e54086ed1727576e0b140d8fb6e83e7",
+      "duration_s": 128.017,
+      "chapter_card": "The Tied Arm",
+      "last_word_s": 127.917,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Harvey showed his experiments at the College for more than nine years before he printed a word.",
+          "start_s": 0.0,
+          "end_s": 4.94
+        },
+        {
+          "i": 2,
+          "text": "The most famous one needs nothing but a strip of linen.",
+          "start_s": 5.58,
+          "end_s": 8.4
+        },
+        {
+          "i": 3,
+          "text": "He ties a band round a man's upper arm and pulls it tight.",
+          "start_s": 9.1,
+          "end_s": 12.78
+        },
+        {
+          "i": 4,
+          "text": "Below the band, the pulse is gone, and slowly the hand grows cool.",
+          "start_s": 13.5,
+          "end_s": 18.017
+        },
+        {
+          "i": 5,
+          "text": "Above it, the artery throbs.",
+          "start_s": 18.597,
+          "end_s": 20.717
+        },
+        {
+          "i": 6,
+          "text": "Why?",
+          "start_s": 21.297,
+          "end_s": 21.677
+        },
+        {
+          "i": 7,
+          "text": "The tight band has stopped the blood getting in.",
+          "start_s": 22.317,
+          "end_s": 24.857
+        },
+        {
+          "i": 8,
+          "text": "Then he loosens it, just a little.",
+          "start_s": 25.297,
+          "end_s": 27.057
+        },
+        {
+          "i": 9,
+          "text": "Now the arteries, which run deep inside the arm, can push blood under the band.",
+          "start_s": 27.697,
+          "end_s": 32.977
+        },
+        {
+          "i": 10,
+          "text": "But the veins near the skin are still squeezed shut.",
+          "start_s": 33.617,
+          "end_s": 36.757
+        },
+        {
+          "i": 11,
+          "text": "The hand flushes red, and the veins below the band swell up like ropes.",
+          "start_s": 37.377,
+          "end_s": 41.897
+        },
+        {
+          "i": 12,
+          "text": "So blood comes in through the arteries and leaves through the veins.",
+          "start_s": 42.857,
+          "end_s": 46.937
+        },
+        {
+          "i": 13,
+          "text": "Now the little doors.",
+          "start_s": 47.837,
+          "end_s": 49.057
+        },
+        {
+          "i": 14,
+          "text": "Along the swollen veins you can see small knots.",
+          "start_s": 49.757,
+          "end_s": 52.717
+        },
+        {
+          "i": 15,
+          "text": "Each one is a valve, the flaps Fabricius found.",
+          "start_s": 53.377,
+          "end_s": 56.977
+        },
+        {
+          "i": 16,
+          "text": "Harvey presses a finger on a vein and pushes the blood towards the hand.",
+          "start_s": 57.937,
+          "end_s": 62.117
+        },
+        {
+          "i": 17,
+          "text": "It stops dead at the next valve.",
+          "start_s": 62.717,
+          "end_s": 64.837
+        },
+        {
+          "i": 18,
+          "text": "He pushes it the other way, towards the heart, and it slides through easily.",
+          "start_s": 65.497,
+          "end_s": 69.897
+        },
+        {
+          "i": 19,
+          "text": "He empties a short stretch of vein between two fingers.",
+          "start_s": 70.517,
+          "end_s": 73.957
+        },
+        {
+          "i": 20,
+          "text": "It stays empty until he lifts the finger nearer the hand.",
+          "start_s": 74.477,
+          "end_s": 78.097
+        },
+        {
+          "i": 21,
+          "text": "Then it fills straight back up, from below.",
+          "start_s": 78.537,
+          "end_s": 81.097
+        },
+        {
+          "i": 22,
+          "text": "Every door in every vein opens one way: towards the heart.",
+          "start_s": 81.857,
+          "end_s": 86.597
+        },
+        {
+          "i": 23,
+          "text": "Fabricius thought they slowed the blood.",
+          "start_s": 88.077,
+          "end_s": 89.477
+        },
+        {
+          "i": 24,
+          "text": "Harvey saw they were steering it home.",
+          "start_s": 90.557,
+          "end_s": 92.517
+        },
+        {
+          "i": 25,
+          "text": "You can see a little of this yourself.",
+          "start_s": 93.277,
+          "end_s": 94.837
+        },
+        {
+          "i": 26,
+          "text": "Look at the veins on the back of your hand.",
+          "start_s": 95.677,
+          "end_s": 97.577
+        },
+        {
+          "i": 27,
+          "text": "The blood inside them is on its way back to your heart.",
+          "start_s": 98.157,
+          "end_s": 101.317
+        },
+        {
+          "i": 28,
+          "text": "In sixteen twenty-eight, Harvey published it all in a small Latin book, printed in Frankfurt: On the Motion of the Heart and Blood.",
+          "start_s": 101.957,
+          "end_s": 110.957
+        },
+        {
+          "i": 29,
+          "text": "Not everyone was impressed.",
+          "start_s": 111.717,
+          "end_s": 112.937
+        },
+        {
+          "i": 30,
+          "text": "John Aubrey, who knew him, later wrote that after the book came out, Harvey \"fell mightily in his practice\", and many people thought he was crack-brained.",
+          "start_s": 113.817,
+          "end_s": 124.057
+        },
+        {
+          "i": 31,
+          "text": "And one gap was still open.",
+          "start_s": 124.057,
+          "end_s": 126.537
+        },
+        {
+          "i": 32,
+          "text": "Harvey knew it.",
+          "start_s": 127.197,
+          "end_s": 127.917
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "file": "part05_the_vessels_he_never_saw_v01.mp3",
+      "sha256": "e848049790b84710abe40b4a375662ec23a4ec9dfd370891c1f1fee9fcf6253b",
+      "duration_s": 114.29,
+      "chapter_card": "The Vessels He Never Saw",
+      "last_word_s": 113.86,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Harvey's circle had a hole in it.",
+          "start_s": 0.0,
+          "end_s": 2.64,
+          "film_s": 387.04,
+          "film": "6:27.04"
+        },
+        {
+          "i": 2,
+          "text": "How did the blood get from the arteries into the veins?",
+          "start_s": 3.02,
+          "end_s": 6.48,
+          "film_s": 390.06,
+          "film": "6:30.06"
+        },
+        {
+          "i": 3,
+          "text": "Harvey guessed the blood passed through tiny gaps in the flesh, too small to see.",
+          "start_s": 7.52,
+          "end_s": 12.14,
+          "film_s": 394.56,
+          "film": "6:34.56"
+        },
+        {
+          "i": 4,
+          "text": "He never saw them.",
+          "start_s": 12.64,
+          "end_s": 13.74,
+          "film_s": 399.68,
+          "film": "6:39.68"
+        },
+        {
+          "i": 5,
+          "text": "He died in sixteen fifty-seven, with his great idea still missing one piece.",
+          "start_s": 14.26,
+          "end_s": 19.74,
+          "film_s": 401.3,
+          "film": "6:41.30"
+        },
+        {
+          "i": 6,
+          "text": "Four years later, in Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope.",
+          "start_s": 20.48,
+          "end_s": 28.44,
+          "film_s": 407.52,
+          "film": "6:47.52"
+        },
+        {
+          "i": 7,
+          "text": "And there it was.",
+          "start_s": 29.18,
+          "end_s": 30.28,
+          "film_s": 416.22,
+          "film": "6:56.22"
+        },
+        {
+          "i": 8,
+          "text": "A net of tiny vessels, finer than hairs, carrying blood from the smallest arteries into the smallest veins.",
+          "start_s": 30.8,
+          "end_s": 38.7,
+          "film_s": 417.84,
+          "film": "6:57.84"
+        },
+        {
+          "i": 9,
+          "text": "We call them capillaries, from the Latin word for hair.",
+          "start_s": 39.42,
+          "end_s": 42.84,
+          "film_s": 426.46,
+          "film": "7:06.46"
+        },
+        {
+          "i": 10,
+          "text": "The circle was closed.",
+          "start_s": 43.42,
+          "end_s": 44.78,
+          "film_s": 430.46,
+          "film": "7:10.46"
+        },
+        {
+          "i": 11,
+          "text": "Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins.",
+          "start_s": 45.52,
+          "end_s": 52.82,
+          "film_s": 432.56,
+          "film": "7:12.56"
+        },
+        {
+          "i": 12,
+          "text": "So why was this so groundbreaking?",
+          "start_s": 53.61,
+          "end_s": 55.74,
+          "film_s": 440.65,
+          "film": "7:20.65"
+        },
+        {
+          "i": 13,
+          "text": "Because once you know the blood goes round, you know that anything put into one vein reaches the whole body.",
+          "start_s": 56.78,
+          "end_s": 63.22,
+          "film_s": 443.82,
+          "film": "7:23.82"
+        },
+        {
+          "i": 14,
+          "text": "Within ten years of Harvey's death, doctors in England and France were trying the first blood transfusions.",
+          "start_s": 63.94,
+          "end_s": 70.3,
+          "film_s": 450.98,
+          "film": "7:30.98"
+        },
+        {
+          "i": 15,
+          "text": "That makes no sense unless your blood circulates.",
+          "start_s": 70.96,
+          "end_s": 74.5,
+          "film_s": 458.0,
+          "film": "7:38.00"
+        },
+        {
+          "i": 16,
+          "text": "And the next time a nurse wraps a cuff round your arm, think of Harvey.",
+          "start_s": 75.2,
+          "end_s": 79.36,
+          "film_s": 462.24,
+          "film": "7:42.24"
+        },
+        {
+          "i": 17,
+          "text": "A blood pressure cuff is his band.",
+          "start_s": 80.18,
+          "end_s": 82.12,
+          "film_s": 467.22,
+          "film": "7:47.22"
+        },
+        {
+          "i": 18,
+          "text": "It squeezes until the blood stops getting in, then lets go, and listens for the moment it starts to flow again.",
+          "start_s": 82.78,
+          "end_s": 89.56,
+          "film_s": 469.82,
+          "film": "7:49.82"
+        },
+        {
+          "i": 19,
+          "text": "A sum, a band, and a row of little doors.",
+          "start_s": 90.32,
+          "end_s": 93.72,
+          "film_s": 477.36,
+          "film": "7:57.36"
+        },
+        {
+          "i": 20,
+          "text": "Harvey proved that your heart is a pump and that your blood goes round, long before anyone saw the last link.",
+          "start_s": 94.6,
+          "end_s": 101.48,
+          "film_s": 481.64,
+          "film": "8:01.64"
+        },
+        {
+          "i": 21,
+          "text": "Thirteen years later, a Dutch cloth merchant with an even better lens looked into a drop of pond water, and found it full of life.",
+          "start_s": 102.7,
+          "end_s": 111.02,
+          "film_s": 489.74,
+          "film": "8:09.74"
+        },
+        {
+          "i": 22,
+          "text": "That is where the story of germs begins.",
+          "start_s": 111.8,
+          "end_s": 113.86,
+          "film_s": 498.84,
+          "film": "8:18.84"
+        }
+      ]
+    }
+  ]
+}
