@@ -1,0 +1,71 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "Why Vaccines Are Named After a Cow",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/vaccine_long_description_v01.txt",
+  "tagsFile": "Tags/vaccine_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "Why Vaccines Are Named After a Cow",
+    "How Was the First Vaccine Made?"
+  ],
+  "schedule": "2026-11-12T18:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "Planning scaffold only (3 Oct 2026). Titles, schedule and neighbours are PROPOSALS for Claude's review on PR #180; nothing uploaded or scheduled. Proposed air Thu 12 Nov 2026 18:00 UK = 18:00 UTC (GMT). No Vertex/Veo minting — 006 Trees keeps picture priority. Neighbours auto-written by neighbours.py 2026-10-03 (gate PASS, 7 education videos ≥1M).",
+  "neighbours": {
+    "phrases": [
+      "vaccine",
+      "vaccines",
+      "smallpox",
+      "cowpox"
+    ],
+    "checked": "2026-10-03",
+    "videos": [
+      {
+        "id": "yqUFy-t4MlQ",
+        "channel": "TED-Ed",
+        "title": "How we conquered the deadly smallpox virus - Simona Zompi",
+        "views": 9143120
+      },
+      {
+        "id": "rb7TVW77ZCs",
+        "channel": "TED-Ed",
+        "title": "How do vaccines work? - Kelwalin Dhanasarnsombut",
+        "views": 3531985
+      },
+      {
+        "id": "v-NEr3KCug8",
+        "channel": "TED-Ed",
+        "title": "How the COVID-19 vaccines were created so quickly - Kaitlyn Sadtler and Elizabeth Wayne",
+        "views": 1265045
+      },
+      {
+        "id": "74WQgNa3OsQ",
+        "channel": "TED-Ed",
+        "title": "How fast can a vaccine be made? - Dan Kwartler",
+        "views": 1090270
+      },
+      {
+        "id": "oBSandHijDc",
+        "channel": "TED-Ed",
+        "title": "Learning from smallpox: How to eradicate a disease - Julie Garon and Walter A. Orenstein",
+        "views": 500156
+      }
+    ],
+    "note": "Auto from neighbours.py 2026-10-03. Gate PASS: 7 education ≥1M. Top TED-Ed: How we conquered the deadly smallpox virus (9.14M); How do vaccines work? (3.53M). Also Kurzgesagt vaccines side-effects 17.9M, Amoeba Sisters 1.38M, Be Smart 1.12M. Title/description/tags must share phrases vaccine/vaccines/smallpox/cowpox. Script stays off present-day vaccine politics even though some neighbour titles mention COVID."
+  }
+}
