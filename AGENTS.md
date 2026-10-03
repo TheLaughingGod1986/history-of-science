@@ -98,6 +98,13 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 - **Ben is asked once per film, before anything is scheduled:** the finished long (he watches the moving file), the Shorts (on his phone), and the thumbnail and covers with the titles. That is his final OK. Nothing is scheduled or made public without it.
 - **Still Ben's alone:** renaming, deleting or making private anything already live; lifting the TikTok pause; overriding a failed check (a check that's wrong is fixed in its own PR).
 - **Spend:** Vertex, Flow and API credit may be used down to **£0** of the Free Trial or prepaid credit. Stop at £0. Never spill onto paid billing; report and wait for Ben to top up.
+- **Ask Claude first** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."*). Anything an agent would mark NEEDS BEN goes to Claude on the desk first. Claude decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
+  - money: a top-up, or anything past £0;
+  - anything that can't be undone: the live-video list above, Studio Replace, a force-push;
+  - merging a PR;
+  - the TikTok pause, and overriding a check;
+  - things only he can physically do: Vercel env vars, OAuth reconnects, waking the Mac Mini, logins and 2FA;
+  - the final OK above.
 
 ## Never
 
