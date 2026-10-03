@@ -118,3 +118,7 @@ node_modules/
 !00_Brand/Channel-Setup/style/long/*.jpg
 !00_Brand/Channel-Setup/style/shorts/*.jpg
 !00_Brand/Channel-Setup/style/shorts/*.png
+
+# Local vision precheck artefacts (pilot; summary md may be force-added elsewhere)
+**/_precheck/
+07_Edit-Project/_precheck/
