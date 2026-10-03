@@ -12,7 +12,7 @@
   "thumbnailAbc": [],
   "titleAbc": [
     "Why Vaccines Are Named After a Cow",
-    "The Milkmaid's Hands That Made the First Vaccine"
+    "How Was the First Vaccine Made?"
   ],
   "schedule": "2026-11-12T18:00:00.000Z",
   "playlistId": null,
@@ -25,7 +25,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Planning scaffold only (3 Oct 2026). Titles, schedule and neighbours are PROPOSALS for Claude's review on PR #180; nothing uploaded or scheduled. Proposed air Thu 12 Nov 2026 18:00 UK = 18:00 UTC (GMT). No Vertex/Veo minting \u2014 006 Trees keeps picture priority. Neighbours auto-written by neighbours.py 2026-10-03 (gate PASS, 7 education videos \u22651M).",
+  "note": "Planning scaffold only (3 Oct 2026). Titles, schedule and neighbours are PROPOSALS for Claude's review on PR #180; nothing uploaded or scheduled. Proposed air Thu 12 Nov 2026 18:00 UK = 18:00 UTC (GMT). No Vertex/Veo minting — 006 Trees keeps picture priority. Neighbours auto-written by neighbours.py 2026-10-03 (gate PASS, 7 education videos ≥1M).",
   "neighbours": {
     "phrases": [
       "vaccine",
@@ -66,6 +66,6 @@
         "views": 500156
       }
     ],
-    "note": "Auto from neighbours.py 2026-10-03. Gate PASS: 7 education \u22651M. Top TED-Ed: How we conquered the deadly smallpox virus (9.14M); How do vaccines work? (3.53M). Also Kurzgesagt vaccines side-effects 17.9M, Amoeba Sisters 1.38M, Be Smart 1.12M. Title/description/tags must share phrases vaccine/vaccines/smallpox/cowpox. Script stays off present-day vaccine politics even though some neighbour titles mention COVID."
+    "note": "Auto from neighbours.py 2026-10-03. Gate PASS: 7 education ≥1M. Top TED-Ed: How we conquered the deadly smallpox virus (9.14M); How do vaccines work? (3.53M). Also Kurzgesagt vaccines side-effects 17.9M, Amoeba Sisters 1.38M, Be Smart 1.12M. Title/description/tags must share phrases vaccine/vaccines/smallpox/cowpox. Script stays off present-day vaccine politics even though some neighbour titles mention COVID."
   }
 }
