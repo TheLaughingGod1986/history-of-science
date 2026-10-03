@@ -1,0 +1,121 @@
+{
+  "ok": false,
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "jobs": [
+    {
+      "slot": "005a",
+      "related_id": "0IfXGSX7Ypw",
+      "related_title": "How Harvey Proved Blood Circulates",
+      "air": "Friday 30 Oct 2026 11:30 Europe/London"
+    },
+    {
+      "slot": "004gold",
+      "related_id": "GHZDsiH7L7A",
+      "related_title": "What's Really Inside an Atom?",
+      "air": "Sunday 1 Nov 2026 11:30 Europe/London"
+    },
+    {
+      "slot": "002four",
+      "related_id": "AL_-qlWko_g",
+      "related_title": "How Did We Discover the Periodic Table?",
+      "air": "Tuesday 3 Nov 2026 11:30 Europe/London"
+    },
+    {
+      "slot": "005c",
+      "related_id": "0IfXGSX7Ypw",
+      "related_title": "How Harvey Proved Blood Circulates",
+      "air": "Sunday 15 Nov 2026 11:30 Europe/London"
+    }
+  ],
+  "affiliate": "none",
+  "madeForKids": false,
+  "altered": "YES",
+  "category": "Education",
+  "comments": "ON",
+  "remixing": "ON",
+  "started": "2026-10-02T13:54:00+01:00",
+  "shorts": [
+    {
+      "slot": "002four",
+      "title": "The Four Elements Were Wrong",
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v01.mp4",
+      "thumb": "/Users/benjaminoats/YouTube/hos-backcat-nov/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/covers_backcat_v01/hos_002_backcat_four_elements_cover_v01.jpg",
+      "cover": "/Users/benjaminoats/YouTube/hos-backcat-nov/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/covers_backcat_v01/hos_002_backcat_four_elements_cover_v01.jpg",
+      "desc": true,
+      "related_id": "AL_-qlWko_g",
+      "related_title": "How Did We Discover the Periodic Table?",
+      "day": 3,
+      "month_re": "Nov|November",
+      "date_typed": "3 November 2026",
+      "time": "11:30",
+      "label": "Tuesday 3 Nov 2026 11:30 Europe/London",
+      "air_date": "2026-11-03",
+      "parent": "AL_-qlWko_g",
+      "relatedTitle": "How Did We Discover the Periodic Table?",
+      "resumed": false,
+      "openUpload": {
+        "intercept": "on",
+        "create": "Create",
+        "uploadVideos": "Upload videos",
+        "picker": true,
+        "details": false,
+        "fileInputs": 1
+      },
+      "attach": {
+        "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v01.mp4",
+        "image": false,
+        "ok": true,
+        "via": "cdp_setFileInputFiles"
+      },
+      "detailsStep": "already_details",
+      "titleFill": "fill",
+      "kids": "err:TimeoutError",
+      "tags": true,
+      "thumbAttempt": {
+        "path": "/Users/benjaminoats/YouTube/hos-backcat-nov/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/covers_backcat_v01/hos_002_backcat_four_elements_cover_v01.jpg",
+        "image": true,
+        "ok": true,
+        "via": "cdp_setFileInputFiles"
+      },
+      "wizard": {
+        "related": "picked",
+        "visAt": "tab",
+        "schedule": {
+          "open": "Select a date to make your video public.",
+          "after": {
+            "date": "",
+            "time": ""
+          },
+          "ok": false,
+          "error": "date_not_set:{'date': '', 'time': ''}"
+        },
+        "schedule_retry": {
+          "after": {
+            "date": "",
+            "time": ""
+          },
+          "ok": false,
+          "error": "date_not_set:{'date': '', 'time': ''}"
+        },
+        "ok": false,
+        "error": "date_not_set:{'date': '', 'time': ''}"
+      },
+      "platformPostId": "0IfXGSX7Ypw",
+      "platformUrl": "https://youtube.com/shorts/0IfXGSX7Ypw",
+      "uploadUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+      "related": "picked",
+      "relatedDeferred": false,
+      "ok": false,
+      "error": "date_not_set:{'date': '', 'time': ''}"
+    }
+  ],
+  "hos": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Channel dashboard - YouTube Studio",
+    "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 5 days 2 hours\nRanking by views\n8 of 10\nViews\n8\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\nPublished videos\nHow did R\u00f6ntgen see bones without cutting\n37\n0\n0\nHow X-rays Were Discover"
+  },
+  "stopped": "date_not_set:{'date': '', 'time': ''}",
+  "finished": "2026-10-02T13:54:54+01:00"
+}

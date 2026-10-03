@@ -1,0 +1,119 @@
+{
+  "vid": "wwcjcFfC-5M",
+  "log": [
+    {
+      "at": "2026-10-03T22:45:08+01:00",
+      "msg": "after_pick",
+      "snip": "nt\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nMost recent upload\nAutomatically feature the most recently uploaded long-form video\nBest for viewer\nAllow YouTube to select a video from your channel to best suit the viewer\nVideo: How Did We Discover Germs?\nHow Did We Discover Germs?\n6:05\n8:28:08\nUndo\nRedo\nSubscribe: History of Science\nVideo: How Did We Discover Germs?\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:45:08+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es11_01.png"
+    },
+    {
+      "at": "2026-10-03T22:45:08+01:00",
+      "msg": "box",
+      "box": {
+        "x": 866.234375,
+        "y": 251.515625,
+        "w": 134.171875,
+        "h": 28,
+        "area": 3756.8125,
+        "t": "How Did We Discover Germs?"
+      }
+    },
+    {
+      "at": "2026-10-03T22:45:09+01:00",
+      "msg": "moved"
+    },
+    {
+      "at": "2026-10-03T22:45:09+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es11_02_moved.png"
+    },
+    {
+      "at": "2026-10-03T22:45:09+01:00",
+      "msg": "save_info",
+      "save_info": [
+        {
+          "y": 81,
+          "x": 1242,
+          "disabled": true,
+          "ariaDisabled": "true",
+          "ariaDescribedby": null,
+          "title": null,
+          "class": "style-scope ytcp-video-details-section"
+        },
+        {
+          "y": 81,
+          "x": 1242,
+          "disabled": true,
+          "ariaDisabled": "true",
+          "ariaDescribedby": null,
+          "title": "",
+          "class": "ytcpButtonShapeImplHost ytcpButtonShapeImpl--filled ytcpButtonShapeImpl--size-m "
+        },
+        {
+          "y": 60,
+          "x": 1234,
+          "disabled": false,
+          "ariaDisabled": "false",
+          "ariaDescribedby": null,
+          "title": null,
+          "class": "style-scope ytve-modal-host"
+        },
+        {
+          "y": 60,
+          "x": 1234,
+          "disabled": false,
+          "ariaDisabled": "false",
+          "ariaDescribedby": null,
+          "title": "",
+          "class": "ytcpButtonShapeImplHost ytcpButtonShapeImpl--filled ytcpButtonShapeImpl--mono yt"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-03T22:45:09+01:00",
+      "msg": "forced",
+      "forced": {
+        "y": 81,
+        "forced": true
+      }
+    },
+    {
+      "at": "2026-10-03T22:45:14+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es11_03_forced_save.png"
+    },
+    {
+      "at": "2026-10-03T22:45:14+01:00",
+      "msg": "after_force",
+      "snip": "e videos.\nDiscard changes\nSave\nElement\nVideo element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nMost recent upload\nAutomatically feature the most recently uploaded long-form video\nBest for viewer\nAllow YouTube to select a video from your channel to best suit the viewer\nVideo: How Did We Discover Germs?\nHow Did We Discover Germs?\n6:05\n8:28:08\nUndo\nRedo\nSubscribe: History of Science\nVideo: How Did We Discover Germs?\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:45:17+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es11_04_cmds.png"
+    },
+    {
+      "at": "2026-10-03T22:45:25+01:00",
+      "msg": "reopen",
+      "germs": false,
+      "sub": true,
+      "best": true,
+      "lines": [
+        "Subscribe: History of Science",
+        "Video: Best for viewer",
+        "Subscribe: History of Science",
+        "Video: Best for viewer"
+      ]
+    },
+    {
+      "at": "2026-10-03T22:45:25+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es11_05_reopen.png"
+    }
+  ]
+}

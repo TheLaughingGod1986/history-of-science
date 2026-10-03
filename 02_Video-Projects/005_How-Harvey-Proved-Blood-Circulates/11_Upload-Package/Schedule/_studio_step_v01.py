@@ -22,14 +22,14 @@ from zoneinfo import ZoneInfo
 
 from playwright.sync_api import sync_playwright
 
-VID = "0IfXGSX7Ypw"
+VID = "wwcjcFfC-5M"
 HOS = "UCXp7HkBIl1LgaznXuZHJyRg"
 CDP = "http://127.0.0.1:9460"
 LONDON = ZoneInfo("Europe/London")
 MAIN = Path("/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule")
 DESK_TC = Path.home() / ".local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-01_tc"
-OUT = Path(__file__).resolve().parents[1] / "evidence_2026-10-02_studio"
-ART = Path.home() / ".local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-02_005_upload"
+OUT = Path(__file__).resolve().parents[1] / "evidence_2026-10-03_v02_studio"
+ART = Path.home() / ".local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload"
 
 
 def load(name, path):

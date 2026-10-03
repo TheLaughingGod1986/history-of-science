@@ -1,0 +1,131 @@
+{
+  "vid": "wwcjcFfC-5M",
+  "log": [
+    {
+      "at": "2026-10-03T22:41:52+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es8_01.png"
+    },
+    {
+      "at": "2026-10-03T22:41:52+01:00",
+      "msg": "el_dd",
+      "el_dd": null
+    },
+    {
+      "at": "2026-10-03T22:41:53+01:00",
+      "msg": "video_el",
+      "ve": null
+    },
+    {
+      "at": "2026-10-03T22:41:54+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es8_02_video_el.png"
+    },
+    {
+      "at": "2026-10-03T22:41:54+01:00",
+      "msg": "panel",
+      "snip": " available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nNo, it's not 'Made for Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\nEnd Screens\nEnd screen elements won't display on the watch page for private videos.\nDiscard changes\nSave\nElement\nSubscribe element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nSubscribe: History of Science\nShow hovercard outline\nVideo: Best for viewer\n8:28:08\nUndo\nRedo\nSubscribe: History of Science\nVideo: Best for viewer\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:41:54+01:00",
+      "msg": "timeline",
+      "tl": {
+        "t": "Video: Best for viewer",
+        "y": 506,
+        "tag": "YTVE-ENDSCREEN-ROW"
+      }
+    },
+    {
+      "at": "2026-10-03T22:41:55+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es8_03_timeline.png"
+    },
+    {
+      "at": "2026-10-03T22:41:55+01:00",
+      "msg": "panel2",
+      "snip": "Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\nEnd Screens\nEnd screen elements won't display on the watch page for private videos.\nDiscard changes\nSave\nElement\nVideo element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nMost recent upload\nAutomatically feature the most recently uploaded long-form video\nBest for viewer\nAllow YouTube to select a video from your channel to best suit the viewer\nChoose specific video\nSelect from your videos or from any video on YouTube\nVideo: Best for viewer\n8:28:08\nUndo\nRedo\nSubscribe: History of Science\nVideo: Best for viewer\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:41:55+01:00",
+      "msg": "src_cands",
+      "src": []
+    },
+    {
+      "at": "2026-10-03T22:41:55+01:00",
+      "msg": "src_click",
+      "clicked": {
+        "t": "Video: Best for viewer",
+        "y": 251.515625,
+        "x": 866.234375
+      }
+    },
+    {
+      "at": "2026-10-03T22:41:56+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es8_04_src.png"
+    },
+    {
+      "at": "2026-10-03T22:41:56+01:00",
+      "msg": "specific",
+      "sp": null
+    },
+    {
+      "at": "2026-10-03T22:41:58+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es8_05_specific.png"
+    },
+    {
+      "at": "2026-10-03T22:41:58+01:00",
+      "msg": "after_sp",
+      "snip": " more likely to be recommended alongside other children's videos. Learn more\nNo, it's not 'Made for Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\nEnd Screens\nEnd screen elements won't display on the watch page for private videos.\nDiscard changes\nSave\nElement\nVideo element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nMost recent upload\nAutomatically feature the most recently uploaded long-form video\nBest for viewer\nAllow YouTube to select a video from your channel to best suit the viewer\nChoose specific video\nSelect from your videos or from any video on YouTube\nVideo: Best for viewer\n8:28:08\nUndo\nRedo\nSubscribe: History of Science\nVideo: Best for viewer\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:41:58+01:00",
+      "msg": "inputs",
+      "inputs": [
+        {
+          "aria": "Search across your channel",
+          "y": 12,
+          "w": 672,
+          "type": "text"
+        },
+        {
+          "aria": "",
+          "y": 180,
+          "w": 45,
+          "type": "text"
+        },
+        {
+          "aria": "",
+          "y": 180,
+          "w": 45,
+          "type": "text"
+        },
+        {
+          "aria": " 8 minutes 28 seconds 8 frames",
+          "y": 382,
+          "w": 83,
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-03T22:42:06+01:00",
+      "msg": "final",
+      "germs": false,
+      "sub": true,
+      "best": true,
+      "lines": [
+        "Subscribe: History of Science",
+        "Video: Best for viewer",
+        "Subscribe: History of Science",
+        "Video: Best for viewer"
+      ]
+    },
+    {
+      "at": "2026-10-03T22:42:06+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es8_09_final.png"
+    }
+  ]
+}

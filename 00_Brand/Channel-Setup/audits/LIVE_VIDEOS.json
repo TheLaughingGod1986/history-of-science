@@ -1,6 +1,6 @@
 {
-  "source": "scripts/channel-audit.ts --write-live (YouTube Data API, owner view)",
-  "pulledAt": "2026-09-30T19:15:49.474Z",
+  "source": "KEEP upload route 2026-10-03 + prior channel-audit",
+  "pulledAt": "2026-10-03T22:00:16.412215Z",
   "videos": [
     {
       "id": "clV6E10NLPw",
@@ -40,7 +40,7 @@
     {
       "id": "xvanpsLeADE",
       "kind": "Short",
-      "title": "How did Röntgen see bones without cutting",
+      "title": "How did R\u00f6ntgen see bones without cutting",
       "privacy": "public",
       "scheduled": ""
     },
@@ -141,6 +141,54 @@
       "title": "How Did We Discover Germs?",
       "privacy": "public",
       "scheduled": ""
+    },
+    {
+      "id": "wwcjcFfC-5M",
+      "kind": "long",
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "privacy": "private",
+      "scheduled": "2026-10-29 18:00 UK",
+      "note": "005 KEEP v02 Claude 5973531607; replaces 0IfXGSX7Ypw"
+    },
+    {
+      "id": "0IfXGSX7Ypw",
+      "kind": "long",
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "privacy": "private",
+      "scheduled": "",
+      "note": "005 v01 RETIRED 2026-10-03 \u2014 private+unscheduled; never delete"
+    },
+    {
+      "id": "mTY67qet7cM",
+      "kind": "Short",
+      "title": "One Tight Band Proved Your Blood Goes Round",
+      "privacy": "private",
+      "scheduled": "2026-11-08 11:30 UK",
+      "note": "005 Short B v03; Related deferred 29 Oct 18:05 \u2192 wwcjcFfC-5M"
+    },
+    {
+      "id": "KIWJRl0dzjw",
+      "kind": "Short",
+      "title": "One Tight Band Proved Your Blood Goes Round",
+      "privacy": "private",
+      "scheduled": "",
+      "note": "005 Short B duplicate draft from failed wizard; leave private; never delete"
+    },
+    {
+      "id": "1lszTrYRp-8",
+      "kind": "Short",
+      "title": "Your Heart Pumps More Blood Than You Have",
+      "privacy": "private",
+      "scheduled": "2026-10-30 11:30 UK",
+      "note": "005 Short A; Related retarget 29 Oct 18:05 \u2192 wwcjcFfC-5M"
+    },
+    {
+      "id": "x_3L_IdYgEc",
+      "kind": "Short",
+      "title": "The Blood Vessels Finer Than a Hair",
+      "privacy": "private",
+      "scheduled": "2026-11-15 11:30 UK",
+      "note": "005 Short C; Related retarget 29 Oct 18:05 \u2192 wwcjcFfC-5M"
     }
   ]
 }

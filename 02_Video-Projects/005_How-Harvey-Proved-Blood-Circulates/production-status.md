@@ -825,3 +825,14 @@ Same scenes and lettering assets as v01. Stack centred across the top: starts 4.
 `thumb_preview.py short` on each (`covers_v02/*_preview.jpg`) and `style_sheet.py short` (`covers_v02/hos_005_shorts_covers_v02_style_sheet.jpg`, 3 new vs 8 live). Notes: in the Shorts-list 16:9 crop only the bottom word shows, as with the live covers. On A the glass figure's head and the top of the jug tower sit behind the lettering; on B the band still shows beside TIGHT.
 
 **STOP:** Claude takes the Shorts package to Ben for his final OK. Nothing is in Studio.
+
+
+## KEEP upload route — 2026-10-03 (Claude KEEP 5973531607)
+
+- **Claude KEEP:** PR #180 comment 5973531607 (Ben delegated final OK). Chief ack 5973550474.
+- **NEW long:** `wwcjcFfC-5M` — https://youtu.be/wwcjcFfC-5M — private + scheduled **29 Oct 2026 18:00 UK** (`2026-10-29T18:00:00.000Z`). Master v02 sha `2c9cb450…892d7d`. Captions v02. Studio: Altered Yes, Education, T&C thumbs A/B v02, end screen Subscribe + Germs `_C92tIJCk8A`.
+- **Old long retired:** `0IfXGSX7Ypw` — private, publishAt cleared (will NOT go live 29 Oct). Never deleted / never Replace.
+- **Short B v03:** `mTY67qet7cM` — title *One Tight Band Proved Your Blood Goes Round* — private + scheduled **8 Nov 2026 11:30 UK** (`2026-11-08T11:30:00.000Z`). Cover v02. Related deferred to 29 Oct 18:05 → NEW long. Duplicate draft from failed wizard attempt `KIWJRl0dzjw` left private (never deleted).
+- **Shorts A/C Related retarget:** still deferred to 29 Oct 18:05 jobs → `wwcjcFfC-5M` (A `1lszTrYRp-8`, C `x_3L_IdYgEc`).
+- Evidence: `11_Upload-Package/evidence_2026-10-03_v02_studio/`, `Schedule/evidence_2026-10-03_short_b/`, `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/`.
+- Updated: 2026-10-03 22:59 BST

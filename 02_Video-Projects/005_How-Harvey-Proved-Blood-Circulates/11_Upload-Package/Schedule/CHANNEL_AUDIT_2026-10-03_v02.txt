@@ -1,0 +1,108 @@
+
+> content-ops@0.1.0 channel:audit
+> tsx --env-file=.env scripts/channel-audit.ts
+
+FAIL  Short mTY67qet7cM  private 2026-11-08 11:30 UK  One Tight Band Proved Your Blood Goes Round
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 11 tags (want 5–8)
+FAIL  Short KIWJRl0dzjw  private  One Tight Band Proved Your Blood Goes Round
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 11 tags (want 5–8)
+PASS  long  wwcjcFfC-5M  private 2026-10-29 18:00 UK  The Tied Arm That Proved Your Blood Circulates
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+FAIL  Short K0TQHg4XCHY  private  The Four Elements Were Wrong
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 11 tags (want 5–8)
+FAIL  Short JI2ewIT1KSM  private  The Four Elements Were Wrong
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 0 tags (want 5–8)
+FAIL  Short x_3L_IdYgEc  private 2026-11-15 11:30 UK  The Blood Vessels Finer Than a Hair
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 0 tags (want 5–8)
+FAIL  Short 6btaax7wp2E  private  The Blood Vessels Finer Than a Hair
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 13 tags (want 5–8)
+FAIL  Short Pp5LmjsduI4  private 2026-11-03 11:30 UK  The Four Elements Were Wrong
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 13 tags (want 5–8)
+FAIL  Short DdggTdAzk84  private  Why Gold Foil Bounced Rutherford's Particles Back
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 13 tags (want 5–8)
+FAIL  Short VZsUxmzGyyE  private  hos 005 s01 the sum v02
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 0 tags (want 5–8)
+FAIL  Short JyRjM-9Yc8g  private 2026-11-01 11:30 UK  Why Gold Foil Bounced Rutherford's Particles Back
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 11 tags (want 5–8)
+FAIL  Short 1lszTrYRp-8  private 2026-10-30 11:30 UK  Your Heart Pumps More Blood Than You Have
+   FAIL  [language.title] title/description language unset, want en-GB
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 11 tags (want 5–8)
+PASS  long  0IfXGSX7Ypw  private  The Tied Arm That Proved Your Blood Circulates
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [embeddable] embedding is off
+PASS  Short clV6E10NLPw  private 2026-10-20 11:30 UK  The spray that stopped surgery killing patients
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short CUu8k38iAMc  private  The first X-ray showed a wedding ring
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short TbMMJSRKC3U  private 2026-10-18 11:30 UK  He said every eighth element repeats
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 29bpGAI0wb8  private 2026-10-16 11:30 UK  What happens if you keep cutting gold in half?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  GHZDsiH7L7A  private 2026-10-15 18:00 UK  What's Really Inside an Atom?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short zI_eD3vFWmE  public  The first X-ray showed a wedding ring
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short xvanpsLeADE  public  How did Röntgen see bones without cutting
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short oowAOWTBoq0  public  How X-rays Were Discovered by Accident
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  frP_YrNShsU  public  How Did We Discover X-rays?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short LanTHJckYx8  public  What other table has empty chairs?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short nba0-f7PPeU  public  Why tellurium sat before iodine
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short CnHwX1L9XHg  public  Gallium sat where the table said
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short nFQRWmpulTQ  public  He predicted a metal before it was found
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short uU12JA5rMWg  public  The periodic table's empty chairs
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  AL_-qlWko_g  public  How Did We Discover the Periodic Table?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short kzDiVk4603s  private  He predicted a metal before it was found
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short sILtQxgYQk8  public  A flask that proved germs come from outside
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 93fPUG-hW0A  public  Invisible life is still everywhere
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 8_Edn_HCi1s  public  Germs hitch a ride on you
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short iqToagXnjX0  public  Microbes in a drop of pond water
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short H1y0DXFVmw8  public  Germs don't cast a shadow
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+
+35 videos, 11 errors.
+Confirm in Studio (not readable through the API):
+  - AI disclosure = Yes (confirm by eye)
+  - Every video: Altered / synthetic content = Yes (Data API videos.list omits this field)
+  - Shorts: Related video points at the long it promotes (set at 18:05 on the long's day if needed)
+  - Longs: end screen (related long + Subscribe) and 2 cards, none in the first minute
+  - Longs: Test & Compare (title+thumbnail pairs, or thumbnails only) running after publish
+  - Longs: pinned comment posted as the channel
+  - Paid promotion = No; education fields (concept overview, secondary, GCSE subject)
+  - Automatic places off; comments on (Basic moderation); Studio time zone London

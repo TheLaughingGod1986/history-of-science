@@ -1,0 +1,418 @@
+{
+  "vid": "wwcjcFfC-5M",
+  "log": [
+    {
+      "at": "2026-10-03T22:37:57+01:00",
+      "msg": "av0",
+      "av": {
+        "chip": "Visibility Scheduled",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T22:37:58+01:00",
+      "msg": "open1",
+      "hit": {
+        "t": "End screen",
+        "tag": "YTCP-TEXT-DROPDOWN-TRIGGER",
+        "y": 737,
+        "x": 992
+      }
+    },
+    {
+      "at": "2026-10-03T22:38:02+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es5_01_open.png"
+    },
+    {
+      "at": "2026-10-03T22:38:02+01:00",
+      "msg": "flags",
+      "import_": true,
+      "element": true,
+      "discard": true,
+      "templates": true,
+      "specific": false,
+      "end_screens": true
+    },
+    {
+      "at": "2026-10-03T22:38:02+01:00",
+      "msg": "cards",
+      "cards": [
+        {
+          "t": "Video details",
+          "tag": "DIV",
+          "y": 0,
+          "x": 0,
+          "w": 58,
+          "h": 11
+        },
+        {
+          "t": "8:49 Your video The Tied Arm That Proved Your Blood Circulates",
+          "tag": "DIV",
+          "y": 112,
+          "x": 0,
+          "w": 240,
+          "h": 208
+        },
+        {
+          "t": "Video thumbnail: The Tied Arm That Proved Your Blood Circulates",
+          "tag": "IMG",
+          "y": 120,
+          "x": 16,
+          "w": 208,
+          "h": 127
+        },
+        {
+          "t": "Your video The Tied Arm That Proved Your Blood Circulates",
+          "tag": "DIV",
+          "y": 247,
+          "x": 0,
+          "w": 239,
+          "h": 52
+        },
+        {
+          "t": "Your video",
+          "tag": "DIV",
+          "y": 247,
+          "x": 24,
+          "w": 191,
+          "h": 32
+        },
+        {
+          "t": "Video details Undo changes Save",
+          "tag": "YTCP-STICKY-HEADER",
+          "y": 64,
+          "x": 248,
+          "w": 1432,
+          "h": 70
+        },
+        {
+          "t": "Video details",
+          "tag": "DIV",
+          "y": 64,
+          "x": 272,
+          "w": 832,
+          "h": 70
+        },
+        {
+          "t": "This video is set to not 'Made for Kids' Set by you",
+          "tag": "DIV",
+          "y": 1280,
+          "x": 272,
+          "w": 696,
+          "h": 33
+        },
+        {
+          "t": "0:00 / 8:49 Video link https://youtu.be/wwcjcFfC-5M Video quality",
+          "tag": "YTCP-VIDEO-INFO",
+          "y": 134,
+          "x": 992,
+          "w": 352,
+          "h": 329
+        },
+        {
+          "t": "Video link https://youtu.be/wwcjcFfC-5M Video quality",
+          "tag": "DIV",
+          "y": 336,
+          "x": 992,
+          "w": 352,
+          "h": 127
+        },
+        {
+          "t": "Video link https://youtu.be/wwcjcFfC-5M",
+          "tag": "DIV",
+          "y": 336,
+          "x": 992,
+          "w": 352,
+          "h": 55
+        },
+        {
+          "t": "Video link",
+          "tag": "DIV",
+          "y": 348,
+          "x": 992,
+          "w": 304,
+          "h": 16
+        },
+        {
+          "t": "Copy video link",
+          "tag": "YTCP-ICON-BUTTON",
+          "y": 344,
+          "x": 1296,
+          "w": 40,
+          "h": 40
+        },
+        {
+          "t": "Video quality",
+          "tag": "DIV",
+          "y": 403,
+          "x": 992,
+          "w": 352,
+          "h": 16
+        },
+        {
+          "t": "Edit video visibility status",
+          "tag": "YTCP-ICON-BUTTON",
+          "y": 588,
+          "x": 1299,
+          "w": 40,
+          "h": 40
+        },
+        {
+          "t": "Element Import from video",
+          "tag": "DIV",
+          "y": 108,
+          "x": 360,
+          "w": 552,
+          "h": 60
+        },
+        {
+          "t": "Import from video",
+          "tag": "YTCP-BUTTON",
+          "y": 120,
+          "x": 744,
+          "w": 145,
+          "h": 36
+        },
+        {
+          "t": "1 video, 1 subscribe",
+          "tag": "DIV",
+          "y": 168,
+          "x": 384,
+          "w": 240,
+          "h": 165
+        },
+        {
+          "t": "1 video, 1 subscribe",
+          "tag": "DIV",
+          "y": 305,
+          "x": 384,
+          "w": 240,
+          "h": 28
+        },
+        {
+          "t": "1 video, 1 subscribe",
+          "tag": "DIV",
+          "y": 345,
+          "x": 384,
+          "w": 240,
+          "h": 165
+        },
+        {
+          "t": "1 video, 1 subscribe",
+          "tag": "DIV",
+          "y": 482,
+          "x": 384,
+          "w": 240,
+          "h": 28
+        },
+        {
+          "t": "2 videos",
+          "tag": "DIV",
+          "y": 345,
+          "x": 648,
+          "w": 240,
+          "h": 165
+        },
+        {
+          "t": "2 videos",
+          "tag": "DIV",
+          "y": 482,
+          "x": 648,
+          "w": 240,
+          "h": 28
+        },
+        {
+          "t": "2 videos",
+          "tag": "DIV",
+          "y": 522,
+          "x": 384,
+          "w": 240,
+          "h": 165
+        },
+        {
+          "t": "2 videos",
+          "tag": "DIV",
+          "y": 659,
+          "x": 384,
+          "w": 240,
+          "h": 28
+        },
+        {
+          "t": "1 video, 1 playlist, 1 subscribe",
+          "tag": "DIV",
+          "y": 522,
+          "x": 648,
+          "w": 240,
+          "h": 165
+        },
+        {
+          "t": "1 video, 1 playlist, 1 subscribe",
+          "tag": "DIV",
+          "y": 659,
+          "x": 648,
+          "w": 240,
+          "h": 28
+        },
+        {
+          "t": "Video player",
+          "tag": "DIV",
+          "y": 139,
+          "x": 913,
+          "w": 407,
+          "h": 229
+        }
+      ]
+    },
+    {
+      "at": "2026-10-03T22:38:02+01:00",
+      "msg": "tmpl",
+      "tmpl": {
+        "t": "1 video, 1 subscribe",
+        "tag": "DIV",
+        "y": 168,
+        "x": 384,
+        "w": 240,
+        "h": 165
+      }
+    },
+    {
+      "at": "2026-10-03T22:38:04+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es5_02_template.png"
+    },
+    {
+      "at": "2026-10-03T22:38:04+01:00",
+      "msg": "after_tmpl_flags",
+      "best": true,
+      "specific": false,
+      "sub": true,
+      "snip": "that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nYes, it's Made for Kids\n.\nFeatures like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nNo, it's not 'Made for Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\nEnd Screens\nEnd screen elements won't display on the watch page for private videos.\nDiscard changes\nSave\nElement\nSubscribe element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nSubscribe: History of Science\nShow hovercard outline\nVideo: Best for viewer\n8:28:08\nUndo\nRedo\nSubscribe: History of Science\nVideo: Best for viewer\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:38:04+01:00",
+      "msg": "video_src",
+      "v": {
+        "t": "Element Subscribe element : : \u2012 : : Subscribe: History of Sc",
+        "y": 108
+      }
+    },
+    {
+      "at": "2026-10-03T22:38:05+01:00",
+      "msg": "specific",
+      "sp": null
+    },
+    {
+      "at": "2026-10-03T22:38:07+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es5_03_specific.png"
+    },
+    {
+      "at": "2026-10-03T22:38:07+01:00",
+      "msg": "inputs",
+      "inputs": [
+        {
+          "aria": "Search across your channel",
+          "y": 12,
+          "x": 504,
+          "w": 672,
+          "type": "text",
+          "value": ""
+        },
+        {
+          "aria": "",
+          "y": 180,
+          "x": 675,
+          "w": 45,
+          "type": "text",
+          "value": "8:28:09"
+        },
+        {
+          "aria": "",
+          "y": 180,
+          "x": 760,
+          "w": 45,
+          "type": "text",
+          "value": "8:48:09"
+        },
+        {
+          "aria": " 8 minutes 28 seconds 8 frames",
+          "y": 382,
+          "x": 384,
+          "w": 83,
+          "type": "text",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "at": "2026-10-03T22:38:07+01:00",
+      "msg": "filled",
+      "filled": null
+    },
+    {
+      "at": "2026-10-03T22:38:11+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es5_04_search.png"
+    },
+    {
+      "at": "2026-10-03T22:38:11+01:00",
+      "msg": "after_search",
+      "snip": "ids' content?\nFeatures like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nYes, it's Made for Kids\n.\nFeatures like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nNo, it's not 'Made for Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\nEnd Screens\nEnd screen elements won't display on the watch page for private videos.\nDiscard changes\nSave\nElement\nSubscribe element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nSubscribe: History of Science\nShow hovercard outline\n8:20:18\nUndo\nRedo\nSubscribe: History of Science\nVideo: Best for viewer\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:38:11+01:00",
+      "msg": "picked",
+      "picked": null
+    },
+    {
+      "at": "2026-10-03T22:38:13+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es5_05_picked.png"
+    },
+    {
+      "at": "2026-10-03T22:38:13+01:00",
+      "msg": "save",
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:38:17+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es5_06_save.png"
+    },
+    {
+      "at": "2026-10-03T22:38:22+01:00",
+      "msg": "av",
+      "av": {
+        "chip": "Visibility Scheduled",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T22:38:26+01:00",
+      "msg": "reopen",
+      "germs": false,
+      "sub": false,
+      "best": false,
+      "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:49\nYour video\nThe Tied Arm That Proved Your Blood Circulates\nDetails\nAnalytics\nEditor\nComments\nLanguages\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nThe Tied Arm That Proved Your Blood Circulates\nA/B Testing\nDescription\nYour heart pumps more blood in half an hour than your whole body holds. So where does it all go?\nFor 1,400 years doctors taught that blood was made from food and used up, until William Harvey proved it circulates, with a sum and a band tied round an arm.\n\nThis film is how he did it: Galen's liver, Fabricius's little doors in the veins, Harvey's sum at the Royal College of Physicians, the tied arm in De Motu Cordis (1628), and the capillaries Malpighi found in 1661.\n\nChapters\n0:00 The used-up blood\n0:57 The liver that made blood\n2:37 The sum that broke the old idea\n4:16 The tied arm\n6:25 The vessels he never saw\n\nSources\nWilliam Harvey, De Motu Cordis (Frankfurt, 1628), ch. 9, 11, 13 and dedication\nHieronymus Fabricius, De Venarum Ostiolis (1603)\nAndreas Vesalius, De humani corporis fabrica, 2nd ed. (1555)\nMarcello Malpighi, De pulmonibus (1661)\nJohn "
+    },
+    {
+      "at": "2026-10-03T22:38:26+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es5_07_reopen.png"
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "vid": "wwcjcFfC-5M",
+  "log": [
+    {
+      "at": "2026-10-03T22:39:10+01:00",
+      "msg": "av0",
+      "av": {
+        "chip": "Visibility Scheduled",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T22:39:13+01:00",
+      "msg": "open",
+      "has_es": true,
+      "has_best": false,
+      "has_sub": false
+    },
+    {
+      "at": "2026-10-03T22:39:13+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es6_01_open.png"
+    },
+    {
+      "at": "2026-10-03T22:39:15+01:00",
+      "msg": "tmpl_applied",
+      "best": true
+    },
+    {
+      "at": "2026-10-03T22:39:15+01:00",
+      "msg": "click_video",
+      "v": {
+        "t": "Video: Best for viewer",
+        "y": 251.515625,
+        "x": 933.3203125
+      }
+    },
+    {
+      "at": "2026-10-03T22:39:17+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es6_02_dropdown.png"
+    },
+    {
+      "at": "2026-10-03T22:39:17+01:00",
+      "msg": "opts",
+      "opts": [
+        {
+          "t": "Playlists",
+          "y": 1136,
+          "x": 272,
+          "tag": "DIV"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 108,
+          "x": 841,
+          "tag": "YTVE-PREVIEW-PANEL"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 108,
+          "x": 841,
+          "tag": "DIV"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 108,
+          "x": 841,
+          "tag": "YTCP-VIDEO-PLAYER-CONTROLS"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 108,
+          "x": 847,
+          "tag": "DIV"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 108,
+          "x": 847,
+          "tag": "DIV"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 108,
+          "x": 847,
+          "tag": "DIV"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 108,
+          "x": 847,
+          "tag": "YTVE-ENDSCREEN-EDITOR-PREVIEW-OVERLAY"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 108,
+          "x": 847,
+          "tag": "DIV"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 246,
+          "x": 858,
+          "tag": "YTVE-ENDSCREEN-EDITOR-PREVIEW-OVERLAY-ITEM"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 245,
+          "x": 857,
+          "tag": "DIV"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 246,
+          "x": 858,
+          "tag": "A"
+        },
+        {
+          "t": "Video: Best for viewer",
+          "y": 252,
+          "x": 866,
+          "tag": "DIV"
+        },
+        {
+          "t": "Subscribe: History of Science Video: Best for viewer 0:00:00",
+          "y": 414,
+          "x": 360,
+          "tag": "YTVE-TIMELINE"
+        },
+        {
+          "t": "Subscribe: History of Science Video: Best for viewer",
+          "y": 465,
+          "x": 360,
+          "tag": "DIV"
+        },
+        {
+          "t": "Subscribe: History of Science Video: Best for viewer",
+          "y": 465,
+          "x": 360,
+          "tag": "DIV"
+        },
+        {
+          "t": "Subscribe: History of Science Video: Best for viewer",
+          "y": 466,
+          "x": 360,
+          "tag": "YTVE-ENDSCREEN-EDITOR-TIMELINE"
+        },
+        {
+          "t": "Subscribe: History of Science Video: Best for viewer",
+          "y": 466,
+          "x": 360,
+          "tag": "YTVE-TIMELINE-BASE"
+        },
+        {
+          "t": "Subscribe: History of Science Video: Best for viewer",
+          "y": 466,
+          "x": 495,
+          "tag": "DIV"
+        },
+        {
+          "t": "Subscribe: History of Science Video: Best for viewer",
+          "y": 466,
+          "x": 495,
+          "tag": "DIV"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-03T22:39:17+01:00",
+      "msg": "specific",
+      "sp": null
+    },
+    {
+      "at": "2026-10-03T22:39:18+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es6_03_specific.png"
+    },
+    {
+      "at": "2026-10-03T22:39:18+01:00",
+      "msg": "inputs",
+      "inputs": [
+        {
+          "aria": "Search across your channel",
+          "y": 12,
+          "x": 504,
+          "w": 672,
+          "type": "text",
+          "value": ""
+        },
+        {
+          "aria": "",
+          "y": 180,
+          "x": 675,
+          "w": 45,
+          "type": "text",
+          "value": "8:28:09"
+        },
+        {
+          "aria": "",
+          "y": 180,
+          "x": 760,
+          "w": 45,
+          "type": "text",
+          "value": "8:48:09"
+        },
+        {
+          "aria": " 8 minutes 28 seconds 8 frames",
+          "y": 382,
+          "x": 384,
+          "w": 83,
+          "type": "text",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "at": "2026-10-03T22:39:18+01:00",
+      "msg": "focused",
+      "focused": null
+    },
+    {
+      "at": "2026-10-03T22:39:23+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es6_04_search.png"
+    },
+    {
+      "at": "2026-10-03T22:39:23+01:00",
+      "msg": "search_snip",
+      "snip": " Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nYes, it's Made for Kids\n.\nFeatures like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nNo, it's not 'Made for Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\nEnd Screens\nEnd screen elements won't display on the watch page for private videos.\nDiscard changes\nSave\nElement\nSubscribe element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nSubscribe: History of Science\nShow hovercard outline\n8:21:28\nUndo\nRedo\nSubscribe: History of Science\nVideo: Best for viewer\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:39:23+01:00",
+      "msg": "picked",
+      "picked": null
+    },
+    {
+      "at": "2026-10-03T22:39:25+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es6_05_picked.png"
+    },
+    {
+      "at": "2026-10-03T22:39:25+01:00",
+      "msg": "after_pick",
+      "snip": "Kids by you are more likely to be recommended alongside other children's videos. Learn more\nNo, it's not 'Made for Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\nEnd Screens\nEnd screen elements won't display on the watch page for private videos.\nDiscard changes\nSave\nElement\nSubscribe element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nSubscribe: History of Science\nShow hovercard outline\n8:24:21\nUndo\nRedo\nSubscribe: History of Science\nVideo: Best for viewer\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:39:25+01:00",
+      "msg": "save",
+      "save": {
+        "dis": false,
+        "y": 60
+      }
+    },
+    {
+      "at": "2026-10-03T22:39:29+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es6_06_save.png"
+    },
+    {
+      "at": "2026-10-03T22:39:34+01:00",
+      "msg": "av",
+      "av": {
+        "chip": "Visibility Scheduled",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T22:39:38+01:00",
+      "msg": "reopen",
+      "germs": false,
+      "sub": true,
+      "best": true,
+      "video_line": "Video: Best for viewer",
+      "snip": "deos. Learn more\nYes, it's Made for Kids\n.\nFeatures like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nNo, it's not 'Made for Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\nEnd Screens\nEnd screen elements won't display on the watch page for private videos.\nDiscard changes\nSave\nElement\nSubscribe element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nSubscribe: History of Science\nShow hovercard outline\nVideo: Best for viewer\n8:28:08\nUndo\nRedo\nSubscribe: History of Science\nVideo: Best for viewer\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:39:38+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es6_07_reopen.png"
+    }
+  ]
+}

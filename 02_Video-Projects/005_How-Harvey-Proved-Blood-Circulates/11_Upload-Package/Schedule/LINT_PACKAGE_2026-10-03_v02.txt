@@ -1,0 +1,5 @@
+
+> content-ops@0.1.0 lint:package
+> tsx scripts/package-lint.ts --film 005
+
+PASS  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package/PACKAGE_MANIFEST.json

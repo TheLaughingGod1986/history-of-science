@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-03T22:51:16+01:00",
+  "upload": {
+    "slot": "005b",
+    "title": "One Tight Band Proved Your Blood Goes Round",
+    "file": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s02_the_tied_arm_v03.mp4",
+    "thumb": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s02_the_tied_arm_cover_v02.jpg",
+    "cover": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s02_the_tied_arm_cover_v02.jpg",
+    "desc": true,
+    "related_id": "wwcjcFfC-5M",
+    "related_title": "The Tied Arm That Proved Your Blood Circulates",
+    "day": 8,
+    "month_re": "Nov|November",
+    "date_typed": "8 November 2026",
+    "time": "11:30",
+    "label": "Sunday 8 Nov 2026 11:30 Europe/London",
+    "air_date": "2026-11-08",
+    "parent": "wwcjcFfC-5M",
+    "relatedTitle": "The Tied Arm That Proved Your Blood Circulates",
+    "resumed": false,
+    "openUpload": {
+      "intercept": "on",
+      "create": "Create",
+      "uploadVideos": "Upload videos",
+      "picker": true,
+      "details": false,
+      "fileInputs": 1
+    },
+    "attach": {
+      "path": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s02_the_tied_arm_v03.mp4",
+      "image": false,
+      "ok": true,
+      "via": "cdp_setFileInputFiles"
+    },
+    "detailsStep": "already_details",
+    "titleFill": "fill",
+    "kids": "err:TimeoutError",
+    "tags": true,
+    "thumbAttempt": {
+      "path": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s02_the_tied_arm_cover_v02.jpg",
+      "image": true,
+      "ok": true,
+      "via": "cdp_setFileInputFiles"
+    },
+    "wizard": {
+      "related": "deferred_to_29oct1805_new_long",
+      "visAt": "tab",
+      "schedule": {
+        "after": {
+          "date": "",
+          "time": ""
+        },
+        "ok": false,
+        "error": "date_not_set:{'date': '', 'time': ''}"
+      },
+      "schedule_retry": {
+        "after": {
+          "date": "",
+          "time": ""
+        },
+        "ok": false,
+        "error": "date_not_set:{'date': '', 'time': ''}"
+      },
+      "ok": false,
+      "error": "date_not_set:{'date': '', 'time': ''}"
+    },
+    "platformPostId": null,
+    "platformUrl": null,
+    "uploadUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+    "related": "deferred_to_29oct1805_new_long",
+    "relatedDeferred": false,
+    "ok": false,
+    "error": "date_not_set:{'date': '', 'time': ''}"
+  },
+  "SHORT_B_ID": null
+}

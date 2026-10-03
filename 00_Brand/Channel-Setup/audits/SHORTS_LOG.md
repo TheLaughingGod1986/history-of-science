@@ -6,6 +6,10 @@ One row per Short. Fill stayed-to-watch and average view duration from Studio at
 
 | Aired | Id | Title | Promotes | Frame 0 | Stayed 48 h | AVD | Views | Note |
 |---|---|---|---|---|---:|---:|---:|---|
+| 8 Nov 2026 11:30 UK | `mTY67qet7cM` | One Tight Band Proved Your Blood Goes Round | 005 `wwcjcFfC-5M` | tied arm cover v02 | | | | Scheduled · Short B v03 · Related deferred to 29 Oct 18:05 → NEW long · not kids · duplicate draft `KIWJRl0dzjw` left private |
+| 30 Oct 2026 11:30 UK | `1lszTrYRp-8` | Your Heart Pumps More Blood Than You Have | 005 `wwcjcFfC-5M` | | | | | Scheduled · Short A · Related retarget 29 Oct 18:05 → NEW long |
+| 15 Nov 2026 11:30 UK | `x_3L_IdYgEc` | The Blood Vessels Finer Than a Hair | 005 `wwcjcFfC-5M` | | | | | Scheduled · Short C · Related retarget 29 Oct 18:05 → NEW long |
+| — (Private draft) | `KIWJRl0dzjw` | One Tight Band Proved Your Blood Goes Round | 005 | | | | | **PRIVATE draft** duplicate of `mTY67qet7cM` from failed schedule wizard 3 Oct; never delete |
 | 6 Sep 2026 | `H1y0DXFVmw8` | Germs don't cast a shadow | 001 | germs moving through a ward | | | 78 | Public |
 | 6 Sep 2026 | `iqToagXnjX0` | Microbes in a drop of pond water | 001 | microscope and lamp | | | 110 | Public · best so far |
 | 6 Sep 2026 | `8_Edn_HCi1s` | Germs hitch a ride on you | 001 | ward, doctor in foreground | | | 26 | Public |

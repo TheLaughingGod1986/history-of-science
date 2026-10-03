@@ -1,0 +1,219 @@
+{
+  "vid": "wwcjcFfC-5M",
+  "log": [
+    {
+      "at": "2026-10-03T22:43:53+01:00",
+      "msg": "picked",
+      "picked": {
+        "t": "How Did We Discover Germs?",
+        "y": 1370
+      }
+    },
+    {
+      "at": "2026-10-03T22:43:55+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es10_01_picked.png"
+    },
+    {
+      "at": "2026-10-03T22:43:55+01:00",
+      "msg": "state",
+      "snip": "e videos.\nDiscard changes\nSave\nElement\nVideo element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nMost recent upload\nAutomatically feature the most recently uploaded long-form video\nBest for viewer\nAllow YouTube to select a video from your channel to best suit the viewer\nVideo: How Did We Discover Germs?\nHow Did We Discover Germs?\n6:05\n8:28:08\nUndo\nRedo\nSubscribe: History of Science\nVideo: How Did We Discover Germs?\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:43:55+01:00",
+      "msg": "close_btn",
+      "label": "Done",
+      "st": null
+    },
+    {
+      "at": "2026-10-03T22:43:55+01:00",
+      "msg": "close_btn",
+      "label": "Close",
+      "st": {
+        "t": "Close",
+        "dis": false
+      }
+    },
+    {
+      "at": "2026-10-03T22:43:56+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es10_02_after_close.png"
+    },
+    {
+      "at": "2026-10-03T22:43:56+01:00",
+      "msg": "state2",
+      "snip": "lements won't display on the watch page for private videos.\nDiscard changes\nSave\nElement\nVideo element\n\u2007:\u2007\u2007:\u2007\u2007\n\u2012\n\u2007:\u2007\u2007:\u2007\u2007\nMost recent upload\nAutomatically feature the most recently uploaded long-form video\nBest for viewer\nAllow YouTube to select a video from your channel to best suit the viewer\nVideo: How Did We Discover Germs?\nHow Did We Discover Germs?\n6:05\n8:28:08\nUndo\nRedo\nSubscribe: History of Science\nVideo: How Did We Discover Germs?\n0:00:00"
+    },
+    {
+      "at": "2026-10-03T22:43:56+01:00",
+      "msg": "save_poll",
+      "i": 0,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:43:57+01:00",
+      "msg": "save_poll",
+      "i": 1,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:43:58+01:00",
+      "msg": "save_poll",
+      "i": 2,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:43:59+01:00",
+      "msg": "save_poll",
+      "i": 3,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:43:59+01:00",
+      "msg": "save_poll",
+      "i": 4,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:00+01:00",
+      "msg": "save_poll",
+      "i": 5,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:01+01:00",
+      "msg": "save_poll",
+      "i": 6,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:02+01:00",
+      "msg": "save_poll",
+      "i": 7,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:03+01:00",
+      "msg": "save_poll",
+      "i": 8,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:04+01:00",
+      "msg": "save_poll",
+      "i": 9,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:05+01:00",
+      "msg": "save_poll",
+      "i": 10,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:05+01:00",
+      "msg": "save_poll",
+      "i": 11,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:06+01:00",
+      "msg": "save_poll",
+      "i": 12,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:07+01:00",
+      "msg": "save_poll",
+      "i": 13,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:08+01:00",
+      "msg": "save_poll",
+      "i": 14,
+      "save": {
+        "dis": true,
+        "y": 81
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:09+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es10_03_save.png"
+    },
+    {
+      "at": "2026-10-03T22:44:14+01:00",
+      "msg": "av",
+      "av": {
+        "chip": "Visibility Scheduled",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T22:44:17+01:00",
+      "msg": "reopen",
+      "germs": false,
+      "sub": true,
+      "best": true,
+      "lines": [
+        "Subscribe: History of Science",
+        "Video: Best for viewer",
+        "Subscribe: History of Science",
+        "Video: Best for viewer"
+      ]
+    },
+    {
+      "at": "2026-10-03T22:44:17+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es10_04_reopen.png"
+    }
+  ]
+}

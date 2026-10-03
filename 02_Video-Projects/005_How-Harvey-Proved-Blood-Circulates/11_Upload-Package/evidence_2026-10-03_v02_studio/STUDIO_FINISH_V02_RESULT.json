@@ -1,0 +1,117 @@
+{
+  "vid": "wwcjcFfC-5M",
+  "log": [
+    {
+      "at": "2026-10-03T22:26:17+01:00",
+      "msg": "hos_ok",
+      "hos": {
+        "ok": true,
+        "url": "https://studio.youtube.com/video/wwcjcFfC-5M/edit",
+        "has_hos_name": true
+      }
+    },
+    {
+      "at": "2026-10-03T22:26:18+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/00_start.png"
+    },
+    {
+      "at": "2026-10-03T22:26:18+01:00",
+      "msg": "av_start",
+      "av": {
+        "chip": "Visibility Scheduled",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T22:26:18+01:00",
+      "msg": "ai_before",
+      "ai": {
+        "radios": [],
+        "yes": false,
+        "no": false
+      }
+    },
+    {
+      "at": "2026-10-03T22:26:20+01:00",
+      "msg": "altered_click",
+      "hit": {
+        "al": "Yes, AI was used",
+        "own": "Yes",
+        "x": 272,
+        "y": 1969.765625
+      }
+    },
+    {
+      "at": "2026-10-03T22:26:21+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/altered_clicked.png"
+    },
+    {
+      "at": "2026-10-03T22:26:28+01:00",
+      "msg": "SAVE",
+      "label": "altered",
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "visibility": "Visibility Scheduled",
+      "not_kids": true,
+      "kids_yes": false
+    },
+    {
+      "at": "2026-10-03T22:26:28+01:00",
+      "msg": "ai_after",
+      "ai": {
+        "radios": [],
+        "yes": false,
+        "no": false
+      }
+    },
+    {
+      "at": "2026-10-03T22:26:28+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/altered_saved.png"
+    },
+    {
+      "at": "2026-10-03T22:26:33+01:00",
+      "msg": "final",
+      "av": {
+        "chip": "Visibility Scheduled",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      },
+      "ai": {
+        "radios": [],
+        "yes": false,
+        "no": false
+      }
+    },
+    {
+      "at": "2026-10-03T22:26:34+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/final_details.png"
+    },
+    {
+      "at": "2026-10-03T22:26:36+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/visibility_schedule.png"
+    },
+    {
+      "at": "2026-10-03T22:26:36+01:00",
+      "msg": "visibility_panel",
+      "premiere_mentioned": true,
+      "snip": "using content from this video. If you don't allow remixing, Shorts remixed from this video will be permanently deleted. Learn more\nAllow video and audio remixing\nAllow only audio remixing\nDon't allow remixing\nCategory\nAdd your video to a category so that viewers can find it more easily\nEducation\nType\nNone\nProblems \nAcademic system\nOther\nLevel\nNone\nExam, course or standard\nComments and ratings\nChoose if and how you want to show comments\nComments\nOn\nModeration\nNone\nWho can comment\nAnyone\nSort by\nTop\nShow how many viewers like this video\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\n\nSave or publish\n\nSchedule\n\nSchedule as public\n\n29 Oct 2026\nTime zone\nVideo is private before publishing\nSet as Premiere\nDone"
+    }
+  ]
+}

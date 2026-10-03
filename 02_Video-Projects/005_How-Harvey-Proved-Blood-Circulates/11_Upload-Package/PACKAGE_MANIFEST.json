@@ -1,7 +1,7 @@
 {
   "format": "longform",
-  "video": "../09_Final-Export/hos_005_master_v01.mp4",
-  "youtubeId": "0IfXGSX7Ypw",
+  "video": "../09_Final-Export/hos_005_master_v02.mp4",
+  "youtubeId": "wwcjcFfC-5M",
   "title": "The Tied Arm That Proved Your Blood Circulates",
   "titleVariant": "A",
   "descriptionFile": "Descriptions/blood_long_description_v02.txt",
@@ -27,7 +27,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Master = full join v01 passed by Ben 2 Oct 2026 (sha 84476e06…, 8:46.5), byte copy at 09_Final-Export/hos_005_master_v01.mp4. Package signed off by Ben 2 Oct 2026 (\"All ok\", desk PR #180 comment 5948928013): title, description v02, 7 tags, thumbnail A v02 main, Test & Compare thumbnails A + B v02 with the one title. Air Thu 29 Oct 2026 18:00 UK = 18:00 UTC, normal publish.",
+  "note": "Claude KEEP 5973531607 (3 Oct 2026): master v02 sha 2c9cb45085c20765cc1b6534247cdf1509af709e31e9235f089d06e884892d7d (pale-line fix; captions b6aa82d2\u2026). Same title/description/tags/thumb/schedule/playlist/privacy/house as v01 package Ben signed off 2 Oct (\"All ok\", desk PR #180 comment 5948928013). youtubeId cleared pending new private upload; old 0IfXGSX7Ypw to be privatized+unscheduled after NEW id confirmed. Air Thu 29 Oct 2026 18:00 UK = 2026-10-29T18:00:00.000Z, normal publish. Never Replace. | Claude KEEP 5973531607; NEW long wwcjcFfC-5M master v02; old 0IfXGSX7Ypw retired private+unscheduled; Short B mTY67qet7cM scheduled 8 Nov 11:30 UK; duplicate draft KIWJRl0dzjw left private (never deleted).",
   "neighbours": {
     "phrases": [
       "blood",
@@ -67,5 +67,13 @@
       }
     ]
   },
-  "captionsFile": "Captions/hos_005_master_v01.en.srt"
+  "captionsFile": "Captions/hos_005_master_v02.en.srt",
+  "retiredYoutubeId": "0IfXGSX7Ypw",
+  "shortB": {
+    "id": "mTY67qet7cM",
+    "title": "One Tight Band Proved Your Blood Goes Round",
+    "publishAt": "2026-11-08T11:30:00.000Z",
+    "related": "deferred_to_29oct1805"
+  },
+  "updatedAt": "2026-10-03T22:59:55+01:00"
 }

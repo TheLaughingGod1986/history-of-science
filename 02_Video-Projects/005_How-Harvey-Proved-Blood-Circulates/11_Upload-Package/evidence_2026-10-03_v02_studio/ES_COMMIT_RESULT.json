@@ -1,0 +1,204 @@
+{
+  "vid": "wwcjcFfC-5M",
+  "log": [
+    {
+      "at": "2026-10-03T22:34:53+01:00",
+      "msg": "av0",
+      "av": {
+        "chip": "Visibility Scheduled",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T22:34:57+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es2_01_open.png"
+    },
+    {
+      "at": "2026-10-03T22:34:57+01:00",
+      "msg": "es_body_snip",
+      "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:49\nYour video\nThe Tied Arm That Proved Your Blood Circulates\nDetails\nAnalytics\nEditor\nComments\nLanguages\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nThe Tied Arm That Proved Your Blood Circulates\nA/B Testing\nDescription\nYour heart pumps more blood in half an hour than your whole body holds. So where does it all go?\nFor 1,400 years doctors taught that blood was made from food and used up, until William Harvey proved it circulates, with a sum and a band tied round an arm.\n\nThis film is how he did it: Galen's liver, Fabricius's little doors in the veins, Harvey's sum at the Royal College of Physicians, the tied arm in De Motu Cordis (1628), and the capillaries Malpighi found in 1661.\n\nChapters\n0:00 The used-up blood\n0:57 The liver that made blood\n2:37 The sum that broke the old idea\n4:16 The tied arm\n6:25 The vessels he never saw\n\nSources\nWilliam Harvey, De Motu Cordis (Frankfurt, 1628), ch. 9, 11, 13 and dedication\nHieronymus Fabricius, De Venarum Ostiolis (1603)\nAndreas Vesalius, De humani corporis fabrica, 2nd ed. (1555)\nMarcello Malpighi, De pulmonibus (1661)\nJohn "
+    },
+    {
+      "at": "2026-10-03T22:34:59+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es2_02_template.png"
+    },
+    {
+      "at": "2026-10-03T22:35:01+01:00",
+      "msg": "src_open",
+      "src": {
+        "t": "Video: Best for viewer",
+        "y": 108
+      }
+    },
+    {
+      "at": "2026-10-03T22:35:03+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es2_03_specific.png"
+    },
+    {
+      "at": "2026-10-03T22:35:03+01:00",
+      "msg": "es_info",
+      "info": {
+        "inputs": [
+          {
+            "aria": "Search across your channel",
+            "y": 12,
+            "x": 504,
+            "w": 672,
+            "type": "text",
+            "value": ""
+          },
+          {
+            "aria": "",
+            "y": 180,
+            "x": 675,
+            "w": 45,
+            "type": "text",
+            "value": "8:28:09"
+          },
+          {
+            "aria": "",
+            "y": 180,
+            "x": 760,
+            "w": 45,
+            "type": "text",
+            "value": "8:48:09"
+          },
+          {
+            "aria": " 8 minutes 28 seconds 8 frames",
+            "y": 382,
+            "x": 384,
+            "w": 83,
+            "type": "text",
+            "value": ""
+          }
+        ],
+        "texts": []
+      }
+    },
+    {
+      "at": "2026-10-03T22:35:03+01:00",
+      "msg": "filled_url",
+      "filled": {
+        "aria": "",
+        "y": 180
+      }
+    },
+    {
+      "at": "2026-10-03T22:35:07+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es2_04_search.png"
+    },
+    {
+      "at": "2026-10-03T22:35:07+01:00",
+      "msg": "germs_hits",
+      "hits": []
+    },
+    {
+      "at": "2026-10-03T22:35:07+01:00",
+      "msg": "picked",
+      "picked": null
+    },
+    {
+      "at": "2026-10-03T22:35:09+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es2_05_picked.png"
+    },
+    {
+      "at": "2026-10-03T22:35:09+01:00",
+      "msg": "save_state",
+      "save_state": {
+        "t": "Save",
+        "disabled": true,
+        "aria": null
+      }
+    },
+    {
+      "at": "2026-10-03T22:35:09+01:00",
+      "msg": "try_btn",
+      "label": "Done",
+      "st": null
+    },
+    {
+      "at": "2026-10-03T22:35:11+01:00",
+      "msg": "try_btn",
+      "label": "Select",
+      "st": null
+    },
+    {
+      "at": "2026-10-03T22:35:12+01:00",
+      "msg": "try_btn",
+      "label": "Add",
+      "st": null
+    },
+    {
+      "at": "2026-10-03T22:35:14+01:00",
+      "msg": "try_btn",
+      "label": "Save",
+      "st": {
+        "t": "Save",
+        "dis": false
+      }
+    },
+    {
+      "at": "2026-10-03T22:35:15+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es2_06_after_btns.png"
+    },
+    {
+      "at": "2026-10-03T22:35:15+01:00",
+      "msg": "save_state2",
+      "save_state": {
+        "t": "Save",
+        "disabled": true
+      }
+    },
+    {
+      "at": "2026-10-03T22:35:19+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es2_07_saved.png"
+    },
+    {
+      "at": "2026-10-03T22:35:24+01:00",
+      "msg": "final_av",
+      "av": {
+        "chip": "Visibility Scheduled",
+        "not_kids": true,
+        "kids_yes": false,
+        "kids": {
+          "no": false,
+          "yes": false
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T22:35:27+01:00",
+      "msg": "reopen",
+      "germs": false,
+      "sub": false,
+      "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:49\nYour video\nThe Tied Arm That Proved Your Blood Circulates\nDetails\nAnalytics\nEditor\nComments\nLanguages\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nThe Tied Arm That Proved Your Blood Circulates\nA/B Testing\nDescription\nYour heart pumps more blood in half an hour than your whole body holds. So where does it all go?\nFor 1,400 years doctors taught that blood was made from food and used up, until William Harvey proved it circulates, with a sum and a band tied round an arm.\n\nThis film is how he did it: Galen's liver, Fabricius's little doors in the veins, Harvey's sum at the Royal College of Physicians, the tied arm in De Motu Cordis (1628), and the capillaries Malpighi found in 1661.\n\nChapters\n0:00 The used-up blood\n0:57 The liver that made blood\n2:37 The sum that broke the "
+    },
+    {
+      "at": "2026-10-03T22:35:28+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/es2_08_reopen.png"
+    },
+    {
+      "at": "2026-10-03T22:35:30+01:00",
+      "msg": "shot",
+      "path": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/visibility_final.png"
+    },
+    {
+      "at": "2026-10-03T22:35:30+01:00",
+      "msg": "vis",
+      "snip": "'s videos. Learn more\nYes, it's Made for Kids\n.\nFeatures like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more\nNo, it's not 'Made for Kids'\nAge restriction\nShow more\nPaid promotion, collaboration and more\n \n0:00 / 8:49\nVideo link\nhttps://youtu.be/wwcjcFfC-5M\nVideo quality\nNotices\n\u2014\nVisibility\nScheduled\nSubtitles\nEnd screen\nCards\nQuizzes\nEnd Screens\nDiscard changes\nSave\nElement\nImport from video\n1 video, 1 subscribe\n1 video, 1 subscribe\n1 video, 1 subscribe\n2 videos\n2 videos\n1 video, 1 playlist, 1 subscribe\n8:28:08\nUndo\nRedo\n0:00:00"
+    }
+  ]
+}

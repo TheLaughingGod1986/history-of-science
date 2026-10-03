@@ -1,0 +1,226 @@
+{
+  "ok": true,
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "jobs": [
+    {
+      "slot": "005a",
+      "related_id": "0IfXGSX7Ypw",
+      "related_title": "How Harvey Proved Blood Circulates",
+      "air": "Friday 30 Oct 2026 11:30 Europe/London"
+    },
+    {
+      "slot": "004gold",
+      "related_id": "GHZDsiH7L7A",
+      "related_title": "What's Really Inside an Atom?",
+      "air": "Sunday 1 Nov 2026 11:30 Europe/London"
+    },
+    {
+      "slot": "002four",
+      "related_id": "AL_-qlWko_g",
+      "related_title": "How Did We Discover the Periodic Table?",
+      "air": "Tuesday 3 Nov 2026 11:30 Europe/London"
+    },
+    {
+      "slot": "005c",
+      "related_id": "0IfXGSX7Ypw",
+      "related_title": "How Harvey Proved Blood Circulates",
+      "air": "Sunday 15 Nov 2026 11:30 Europe/London"
+    }
+  ],
+  "affiliate": "none",
+  "madeForKids": false,
+  "altered": "YES",
+  "category": "Education",
+  "comments": "ON",
+  "remixing": "ON",
+  "started": "2026-10-02T13:49:57+01:00",
+  "shorts": [
+    {
+      "slot": "005c",
+      "title": "The Blood Vessels Finer Than a Hair",
+      "file": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v02.mp4",
+      "thumb": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s03_never_saw_cover_v02.jpg",
+      "cover": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s03_never_saw_cover_v02.jpg",
+      "desc": true,
+      "related_id": "0IfXGSX7Ypw",
+      "related_title": "How Harvey Proved Blood Circulates",
+      "day": 15,
+      "month_re": "Nov|November",
+      "date_typed": "15 November 2026",
+      "time": "11:30",
+      "label": "Sunday 15 Nov 2026 11:30 Europe/London",
+      "air_date": "2026-11-15",
+      "parent": "0IfXGSX7Ypw",
+      "relatedTitle": "How Harvey Proved Blood Circulates",
+      "resumed": false,
+      "openUpload": {
+        "intercept": "on",
+        "create": "Create",
+        "uploadVideos": "Upload videos",
+        "picker": true,
+        "details": false,
+        "fileInputs": 1
+      },
+      "attach": {
+        "path": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v02.mp4",
+        "image": false,
+        "ok": true,
+        "via": "cdp_setFileInputFiles"
+      },
+      "detailsStep": "already_details",
+      "titleFill": "fill",
+      "kids": "err:TimeoutError",
+      "tags": false,
+      "thumbAttempt": {
+        "path": "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s03_never_saw_cover_v02.jpg",
+        "image": true,
+        "ok": true,
+        "via": "cdp_setFileInputFiles"
+      },
+      "wizard": {
+        "related": "no_card",
+        "visAt": "tab",
+        "schedule": {
+          "after": {
+            "date": "15 Nov 2026",
+            "time": "11:30"
+          },
+          "ok": true
+        },
+        "schedule_retry": {
+          "after": {
+            "date": "15 Nov 2026",
+            "time": "11:30"
+          },
+          "ok": true
+        },
+        "ok": true
+      },
+      "platformPostId": "x_3L_IdYgEc",
+      "platformUrl": "https://youtube.com/shorts/x_3L_IdYgEc",
+      "uploadUrl": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/upload?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+      "related": "no_card",
+      "relatedDeferred": false,
+      "ok": true,
+      "settings": {
+        "id": "x_3L_IdYgEc",
+        "slot": "005c",
+        "steps": [
+          "altered_yes",
+          "remixing_on"
+        ],
+        "hos": {
+          "ok": true,
+          "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+          "title": "Channel dashboard - YouTube Studio",
+          "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 5 days 2 hours\nRanking by views\n8 of 10\nViews\n8\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\nPublished videos\nHow did R\u00f6ntgen see bones without cutting\n37\n0\n0\nHow X-rays Were Discover"
+        },
+        "audience0": {
+          "yes_checked": null,
+          "no_checked": true,
+          "banner": true,
+          "radios": [
+            {
+              "label": "No, it's not 'Made for Kids'",
+              "checked": true,
+              "kidsYes": false,
+              "kidsNo": true,
+              "via": "own"
+            }
+          ],
+          "ok_not_kids": true,
+          "fail_kids": false
+        },
+        "ai_before": {
+          "radios": [
+            {
+              "label": "Yes, AI was used",
+              "checked": false,
+              "isNo": false,
+              "isYes": true
+            },
+            {
+              "label": "No, AI wasn't used",
+              "checked": false,
+              "isNo": true,
+              "isYes": false
+            }
+          ],
+          "no": false,
+          "yes": false,
+          "section": "AI use"
+        },
+        "altered_click": "^Yes, AI was used$",
+        "altered_save": {
+          "saved": true,
+          "audience": {
+            "yes_checked": null,
+            "no_checked": true,
+            "banner": true,
+            "radios": [
+              {
+                "label": "No, it's not 'Made for Kids'",
+                "checked": true,
+                "kidsYes": false,
+                "kidsNo": true,
+                "via": "own"
+              }
+            ],
+            "ok_not_kids": true,
+            "fail_kids": false
+          }
+        },
+        "altered": "set_yes",
+        "category": "already_or_present",
+        "comments": "already_on_or_default",
+        "remix_save": {
+          "saved": true,
+          "audience": {
+            "yes_checked": null,
+            "no_checked": true,
+            "banner": true,
+            "radios": [
+              {
+                "label": "No, it's not 'Made for Kids'",
+                "checked": true,
+                "kidsYes": false,
+                "kidsNo": true,
+                "via": "own"
+              }
+            ],
+            "ok_not_kids": true,
+            "fail_kids": false
+          }
+        },
+        "remixing": "set_allow",
+        "related_edit": "err:TimeoutError:Locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator(\"tp-yt-paper-input input, input[type='text'], input[aria-label*='Search' i]\").first\n",
+        "audience_final": {
+          "yes_checked": null,
+          "no_checked": true,
+          "banner": true,
+          "radios": [
+            {
+              "label": "No, it's not 'Made for Kids'",
+              "checked": true,
+              "kidsYes": false,
+              "kidsNo": true,
+              "via": "own"
+            }
+          ],
+          "ok_not_kids": true,
+          "fail_kids": false
+        },
+        "chip": "Visibility Scheduled",
+        "ok": true
+      }
+    }
+  ],
+  "hos": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "Channel dashboard - YouTube Studio",
+    "snip": "Channel dashboard\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel dashboard\nLatest Short performance\nThe first X-ray showed a wedding ring\n8\n0\n0\nFirst 5 days 2 hours\nRanking by views\n8 of 10\nViews\n8\nAverage percentage viewed\n0%\nLikes\n0\nCatch me up on this video\nPublished videos\nHow did R\u00f6ntgen see bones without cutting\n37\n0\n0\nHow X-rays Were Discover"
+  },
+  "finished": "2026-10-02T13:51:53+01:00"
+}
