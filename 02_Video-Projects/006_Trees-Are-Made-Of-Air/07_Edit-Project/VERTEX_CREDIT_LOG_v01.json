@@ -8,6 +8,38 @@
       "status": "Available",
       "screenshot": "vertex_credits_before_boards_006_2026-10-02.png",
       "floor_gbp": 0.0
+    },
+    {
+      "label": "after_part01_006_2026-10-02",
+      "at": "2026-10-02T12:23:29+00:00",
+      "free_trial_remaining_gbp": 63.29,
+      "status": "Available",
+      "screenshot": "vertex_credits_after_part01_006_2026-10-02.png",
+      "floor_gbp": 0.0,
+      "note": "From PART01 mint STOP (beb688c); lagging vs projected ~\u00a353.49. Recorded here at hold-lift for continuity."
+    },
+    {
+      "label": "desk_007_topic_2026-10-03",
+      "at": "2026-10-03T13:47:19+00:00",
+      "free_trial_remaining_gbp": 37.84,
+      "status": "Available",
+      "screenshot": "vertex_credits_desk_007_topic_2026-10-03.png",
+      "floor_gbp": 0.0,
+      "note": "From hos-006-trees local credit log; Free Trial already at \u00a337.84 before hold."
+    },
+    {
+      "label": "hold_lift_reprice_006_2026-10-04",
+      "at": "2026-10-04T15:33:36+01:00",
+      "free_trial_remaining_gbp": 37.84,
+      "status": "Available",
+      "screenshot": "_desk/credit/vertex_credits_2026-10-04_free_trial.png",
+      "floor_gbp": 5.0,
+      "usable_gbp": 32.84,
+      "hard_stop_uk": "2026-11-10T23:59:00 Europe/London",
+      "hold": "LIFTED",
+      "authority": "HOS PR #180 comment 5981064652",
+      "reprice": "_desk/006/006_VERTEX_FLOW_SPLIT_REPRICE_20261004.json",
+      "note": "Vertex hold lifted with \u00a35 lag floor. Live Free Trial \u00a337.84 (same as credit-confirm screenshot). No mint this reading."
     }
   ]
 }
