@@ -73,7 +73,7 @@ In May seventeen ninety-six, a young dairymaid called Sarah Nelmes came to Jenne
 
 Jenner saw his chance.
 
-On the fourteenth of May, he took a little matter from one of the spots on Sarah's hand, and placed it in two small scratches on the arm of a boy called James Phipps. Jenner described him as a healthy boy, about eight years old, the son of a local labourer.
+On the fourteenth of May, he took a little matter from one of the spots on Sarah's hand, and placed it in two small scratches on the arm of a boy called James Phipps. In his own notes, Jenner described him simply as a healthy boy, about eight years old.
 
 Over the next week, James felt a little unwell. A slight fever, a poor appetite, a night of restlessness. Then, just as Jenner had hoped, he was perfectly well again.
 
@@ -146,7 +146,7 @@ Long before Jenner, another mystery frightened people every summer. To solve it,
 | John Hunter to Jenner: "But why think, why not try the experiment?" (letter, 1775) | Hunter letters; Royal College of Surgeons |
 | Jenner collected cowpox cases for years before 1796 | *Inquiry* (1798), Cases I–XV |
 | Sarah Nelmes caught cowpox from her master's cow | *Inquiry*, Case XVI |
-| Phipps: "son of a labourer" (check exact *Inquiry* wording vs "gardener") | *Inquiry*, Case XVII |
+| Phipps: "a healthy boy, about eight years old" (labourer/gardener line cut: not in the *Inquiry*) | *Inquiry*, Case XVII |
 | Phipps's mild symptoms around day 7–9 (slight fever, poor appetite, restless night) | *Inquiry*, Case XVII |
 | Variolated again "some months afterwards", no effect | *Inquiry*, Case XVII |
 | Jenner paid to print the *Inquiry* himself (1798) | ODNB / Baron, *Life of Jenner* |
