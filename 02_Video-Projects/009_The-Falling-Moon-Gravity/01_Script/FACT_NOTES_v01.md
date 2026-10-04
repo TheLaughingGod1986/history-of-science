@@ -1,6 +1,6 @@
 # 009 fact notes (v01, for `moon_script_master_v01.md` on PR #208 / branch `claude/hos-repo-access-qdfmrk`)
 
-Every number and claim in the #208 script new-claims table, with the source. Primary texts: Newton, *Principia* (1687) Book III Prop. IV; Newton memorandum Add. MS 3968; Stukeley, *Memoirs of Sir Isaac Newton's Life* (1752); Conduitt Keynes MS 130 (Newton Project); Halley, *Synopsis of the Astronomy of Comets* (1705). Sourced for VO by write lane 4 Oct 2026 (Claude desk claim 5982314076 / #180). **UNSIGNED — Claude audit required before VO.**
+Every number and claim in the #208 script new-claims table, with the source. Primary texts: Newton, *Principia* (1687) Book III Prop. IV; Newton memorandum Add. MS 3968; Stukeley, *Memoirs of Sir Isaac Newton's Life* (1752); Conduitt Keynes MS 130 (Newton Project); Halley, *Synopsis of the Astronomy of Comets* (1705). Sourced for VO by write lane 4 Oct 2026 (Claude desk claim 5982314076 / #180). **Confirmed by Claude, 4 Oct 2026; VO allowed (subject to the ElevenLabs pause).**
 
 Script SoT: PR #208 (open; may still be only on `claude/hos-repo-access-qdfmrk` until CI merges). This file does **not** rewrite the script. If #208 is not yet on main, FACT_NOTES still sources against the published script content on that branch.
 
@@ -74,5 +74,5 @@ Script SoT: PR #208 (open; may still be only on `claude/hos-repo-access-qdfmrk` 
 ## VO gate
 
 - Write lane: new-claims → FACT_NOTES **done** (this file, 4 Oct 2026; desk claim 5982314076).
-- **Claude audit UNSIGNED** — 009 VO waits on Claude FACT_NOTES + script audit sign-off (claim order: 007 gates → 008 VO first; 009 after).
-- Do **not** record VO from this PR alone. No picture mint.
+- **Claude confirmed all rows, 4 Oct 2026**, and signed the pre-build audit. VO order: 007 → 008 → 009, and only once the ElevenLabs credit pause is lifted.
+- No picture mint.

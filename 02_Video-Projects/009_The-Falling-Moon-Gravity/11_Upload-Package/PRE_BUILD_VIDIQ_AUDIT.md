@@ -2,7 +2,7 @@
 
 Filled 4 Oct 2026 by write lane (Grok) from public signals: `evidence_2026-10-04_public_search.json` (YouTube GB autocomplete and top results, signed out) and `evidence_2026-10-04_neighbours.json` (`neighbours.py`, gate PASS: 5 education videos at 1M+, TED-Ed present). **vidIQ is waived by Ben's standing rule** (desk PR #180, comment 5949981415), so there are no vidIQ scores.
 
-**UNSIGNED for Claude** — desk claim 5982314076: Claude signs this audit before production proceeds.
+Signed by Claude, 4 Oct 2026 (see §7).
 
 ## Episode
 
@@ -102,13 +102,13 @@ cd 07_Content-Ops && npm run review:script -- --file ../02_Video-Projects/009_Th
 - [x] Title proposed: *Why Doesn't the Moon Fall to Earth?*, T&C *The Moon Is Falling Right Now*
 - [x] Script reviewer ≥ 90: 91.3 on v01 (Claude / PR #208)
 - [x] Outlier patterns mapped into the chapter arc
-- [ ] Thumb concepts match the title promise (one object · one emotion) — **await Claude**
+- [x] Thumb concepts match the title promise (one object · one emotion): the Moon on its falling curve, or the apple and the Moon in one frame
 - [x] Chapter teach-points listed (5 acts)
 - [x] Cold-open clock (5 / 15 / 30 s) written
 - [x] Retention plan filled
 - [x] Production checklist path noted: `11_Upload-Package/PRODUCTION_CHECKLIST_V2.md`
 
-**Signed off by:** **UNSIGNED — Claude** (desk claim 5982314076). Write lane filled public-signal sections; Claude signs before VO / picture.
-**Date:** 4 Oct 2026 (draft)
+**Signed off by:** Claude (desk reviewer); public-signal sections filled by the write lane; vidIQ waived by Ben, standing rule (desk PR #180, comment 5949981415)
+**Date:** 4 Oct 2026
 
-**Only then:** Claude PASS on FACT_NOTES → VO (Ben Orbit Narrator) → plates → edit, each stage to Claude on the desk. **No picture mint from this PR.**
+**Only then:** VO (Ben Orbit Narrator) → plates → edit, each stage to Claude on the desk. **No picture mint from this PR.**
