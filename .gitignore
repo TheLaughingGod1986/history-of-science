@@ -122,3 +122,9 @@ node_modules/
 # Local vision precheck artefacts (pilot; summary md may be force-added elsewhere)
 **/_precheck/
 07_Edit-Project/_precheck/
+
+# HOS 006 Part 02 desk UAT sheets (Claude #180 5981276239) — raw.githubusercontent links
+!02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/**/*.jpg
+!02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/**/*.md
+!02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/**/*.txt
+!02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/credit/*.png

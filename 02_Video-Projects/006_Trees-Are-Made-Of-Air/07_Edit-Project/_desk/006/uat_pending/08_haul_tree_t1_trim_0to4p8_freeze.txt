@@ -1,1 +1,1 @@
-motion=n/a freezes_gt_0.5s=0 verdict=MOVING (t1 trim 0–4.8s primary)
+motion=2.09 freezes_gt_0.5s=0 verdict=MOVING (t1 trim 0–4.8s primary)

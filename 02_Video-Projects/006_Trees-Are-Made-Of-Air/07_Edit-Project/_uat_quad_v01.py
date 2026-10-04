@@ -31,7 +31,7 @@ def main() -> None:
     args = ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error"]
     for t in a.times:
         args += ["-ss", f"{t}", "-i", str(p)]
-    fc = ";".join(f"[{i}]scale=960:-2,trim=end_frame=1[v{i}]" for i in range(4))
+    fc = ";".join(f"[{i}]scale=960:-2,format=yuvj420p,trim=end_frame=1[v{i}]" for i in range(4))
     fc += ";[v0][v1][v2][v3]xstack=inputs=4:layout=0_0|w0_0|0_h0|w0_h0"
     subprocess.run(args + ["-filter_complex", fc, "-frames:v", "1", "-q:v", "3", str(out)], check=True)
     print(f"{p.stem}: motion {motion(p, a.use_s):.2f} over 0-{a.use_s} s · {out}")

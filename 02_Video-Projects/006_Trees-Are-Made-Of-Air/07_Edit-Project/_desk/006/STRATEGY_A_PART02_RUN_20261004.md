@@ -45,3 +45,9 @@ Part 02 mint log cost_usd_total ≈ **$21.62**. No card spend.
 - Twin-FAIL: see `TWIN_FAIL_DISPOSITION_20261004.md`.
 - UAT quads 12+14–22: `uat_pending/` + `UAT_PENDING_12_14_22_20261004.md`.
 - No new mints.
+
+## Follow-up — Claude GO 5981276239 (Grok executed)
+- Credit lag formula patched; usable **£23.37** (rate 0.8). See `VERTEX_CREDIT_LAG_FIX_20261004.md`.
+- Twin-FAILs: `07` CUT; `08` t1 trim 0–4.8s → UAT; `02` PARK Tuesday Flow. See `TWIN_FAIL_DECISIONS_20261004.md`.
+- PENDING UAT quads (12, 14–22 + 08 trim): `_desk/006/uat_pending/`.
+- No further Vertex mint. Do not merge #180.
