@@ -1,0 +1,156 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "task": "Flow Fast fair-test 2026-10-04 (Vertex left vs Flow Fast right)",
+  "model": "Veo 3.1 - Fast",
+  "account": "benoats@googlemail.com",
+  "max_spend_credits": 10,
+  "takes": [
+    {
+      "part": "01",
+      "plate": "01_willow_air",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "path": "flow-cdp",
+      "board_quality": "Quality",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Frame 0, already moving: a huge willow on a riverbank at golden hour. Fine glittering threads of air stream in through its leaves from every side and run down along the branches into the trunk, which glows faintly from within. Slow continuous push towards the trunk. No people. No people. Silent.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg",
+      "start_frame_sha256": "bc49a9e35bfa39dde8d75c2c586e2d94365ac1c5c5ac995ceba60fc4182754b6",
+      "vertex_control": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/01_willow_air_t1.mp4",
+      "vertex_sha256": "19b78371f472bef6ee193d3f87aa5afd5c3ae5b51a2d4f91f9ea2c5d733c9711",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/01_willow_air_flow_fast_t1.mp4",
+      "sha256": "171cb2dec930e3c7a53a90746e8d53f3a5198a65f0750d2e345eefd2e0863628",
+      "duration_s": 8.0,
+      "resolution": "1280x720",
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/01_willow_air_flow_fast_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "project_url": "https://flow.google.com/project/13a1c85a-c0dc-4985-8987-1da05a35a295",
+      "flow_credits_before": {
+        "hits": [
+          62
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_fair_01_willow_air_t1_before.png",
+        "at": "2026-10-04T00:07:48+00:00"
+      },
+      "flow_credits_after": {
+        "hits": [
+          52
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_fair_01_willow_air_t1_after_reread.png",
+        "at": "2026-10-04T00:09:29+00:00"
+      },
+      "credit_delta": 10,
+      "seconds": 109.9,
+      "status": "PENDING_UAT",
+      "at": "2026-10-04T00:09:30+00:00"
+    },
+    {
+      "part": "01",
+      "plate": "06_aristotle",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "path": "flow-cdp",
+      "board_quality": "Quality",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. A sunny stone courtyard in ancient Athens: Aristotle, a Greek thinker of about fifty, short grey curly hair and a neat grey beard, cream Greek robe, stands beside a young olive tree and points down at its roots while explaining to two listening students. Readable, finished face. Camera eases in. No people. Silent.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/06_aristotle_v01.jpg",
+      "start_frame_sha256": "ced7d70f67d5a9a5c362481a0d006917029195672e5dd41e20b1c94704b32689",
+      "vertex_control": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/06_aristotle_t1.mp4",
+      "vertex_sha256": "ad1aae4cecd1a6e312ad771769c1de0d538b514937e6989fbab27d871de4b368",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/06_aristotle_flow_fast_t1.mp4",
+      "sha256": "fb1ae0417d67e6ff16a1735cdd4a8929bd0e8bdec32b867f82dc8d96c50a5f07",
+      "duration_s": 8.0,
+      "resolution": "1280x720",
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/06_aristotle_flow_fast_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "project_url": "https://flow.google.com/project/7f451500-60ff-4ecc-9aeb-83fd997fa16f",
+      "flow_credits_before": {
+        "hits": [
+          52
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_fair_06_aristotle_t1_before.png",
+        "at": "2026-10-04T00:09:37+00:00"
+      },
+      "flow_credits_after": {
+        "hits": [
+          42
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_fair_06_aristotle_t1_after_reread.png",
+        "at": "2026-10-04T00:11:16+00:00"
+      },
+      "credit_delta": 10,
+      "seconds": 107.2,
+      "status": "PENDING_UAT",
+      "at": "2026-10-04T00:11:17+00:00"
+    },
+    {
+      "part": "01",
+      "plate": "07_roots_mouths",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "path": "flow-cdp",
+      "board_quality": "Fast",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. Cutaway below the young olive tree: its roots in dark earth open little round mouths and drink the soil, gulping as the camera sinks slowly down through the layers. Friendly, not creepy. No people. Silent.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/07_roots_mouths_v03.jpg",
+      "start_frame_sha256": "82b189685d9fb224666cacd918668d6ff37f3298c170f4e458a52cf48ba7e422",
+      "vertex_control": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/07_roots_mouths_t1.mp4",
+      "vertex_sha256": "d1690730c0975b973b6ca884780466ec685d33c184c13a24e6f9c2b0f3bdaa07",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/07_roots_mouths_flow_fast_t1.mp4",
+      "sha256": "d5f4f607c00c26d080a279b50740fd328b8845bb0cb1488e2bb280121c06cccb",
+      "duration_s": 8.0,
+      "resolution": "1280x720",
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/07_roots_mouths_flow_fast_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "project_url": "https://flow.google.com/project/9fccb66a-0781-4dc6-b335-15a22ac3eb35",
+      "flow_credits_before": {
+        "hits": [
+          42
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_fair_07_roots_mouths_t1_before.png",
+        "at": "2026-10-04T00:11:25+00:00"
+      },
+      "flow_credits_after": {
+        "hits": [
+          32
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_fair_07_roots_mouths_t1_after_reread.png",
+        "at": "2026-10-04T00:12:54+00:00"
+      },
+      "credit_delta": 10,
+      "seconds": 97.3,
+      "status": "PENDING_UAT",
+      "at": "2026-10-04T00:12:54+00:00"
+    }
+  ],
+  "updated": "2026-10-04T00:12:59+00:00",
+  "sheets": [
+    {
+      "plate": "01_willow_air",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/01_willow_air_vertex_vs_flow_sheet.jpg",
+      "sha256": "e8a2c44ba5d342cecc752b6ecc3dcba36a4b378ae80cdc66f9d56c809215b150",
+      "at": "2026-10-04T00:12:56+00:00"
+    },
+    {
+      "plate": "06_aristotle",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/06_aristotle_vertex_vs_flow_sheet.jpg",
+      "sha256": "44c76086e0385c979a5505e63aed37022d1d516301ac3779eedf1d2de1819a9e",
+      "at": "2026-10-04T00:12:57+00:00"
+    },
+    {
+      "plate": "07_roots_mouths",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/07_roots_mouths_vertex_vs_flow_sheet.jpg",
+      "sha256": "6414fca9101b4e091194b570e644685e940fcdbb485f84438f30fed4a01bc36c",
+      "at": "2026-10-04T00:12:59+00:00"
+    }
+  ]
+}
