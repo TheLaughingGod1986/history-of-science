@@ -1,0 +1,76 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "Why Did Franklin Fly a Kite in a Storm?",
+  "titleVariant": "A",
+  "descriptionFile": null,
+  "tagsFile": null,
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "Why Did Franklin Fly a Kite in a Storm?",
+    "How Does a Lightning Rod Work?"
+  ],
+  "schedule": null,
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "Planning scaffold only (4 Oct 2026). Titles and neighbours are PROPOSALS for Claude review; nothing uploaded. Neighbours auto-written by neighbours.py 2026-10-04 (gate PASS, 6 education \u22651M). No VO/script yet \u2014 FACT_NOTES first.",
+  "neighbours": {
+    "phrases": [
+      "lightning",
+      "franklin",
+      "kite"
+    ],
+    "checked": "2026-10-04",
+    "videos": [
+      {
+        "id": "Ul9ysDvkuLA",
+        "channel": "TED-Ed",
+        "title": "The Cambodian myth of lightning, thunder, and rain - Prumsodun Ok",
+        "views": 4820603
+      },
+      {
+        "id": "yc2-363MIQs",
+        "channel": "TED-Ed",
+        "title": "The science of static electricity - Anuradha Bhagwat",
+        "views": 3571003
+      },
+      {
+        "id": "BIP0lYrdirI",
+        "channel": "TED-Ed",
+        "title": "Rosalind Franklin: DNA's unsung hero - Cl\u00e1udio L. Guerra",
+        "views": 1931868
+      },
+      {
+        "id": "fEiVi9TB_RQ",
+        "channel": "SciShow Kids",
+        "title": "What Causes Thunder and Lightning? | Weather Science | SciShow Kids",
+        "views": 5622201
+      },
+      {
+        "id": "eNxDgd3D_bU",
+        "channel": "MinuteEarth",
+        "title": "How to Survive a Lightning Strike",
+        "views": 4045276
+      },
+      {
+        "id": "mCAm38dSD78",
+        "channel": "Kurzgesagt \u2013 In a Nutshell",
+        "title": "Lightning: Nature\u2019s Plasma Highway",
+        "views": 2121750
+      }
+    ],
+    "note": "Auto from neighbours.py 2026-10-04. Gate PASS: 6 education \u22651M. Prefer SciShow Kids / MinuteEarth / Kurzgesagt / TED-Ed static electricity over weak TED-Ed name collisions (Rosalind Franklin; Cambodian lightning myth). Be Smart Franklin kite ~691k is on-topic under the 1M cut."
+  }
+}
