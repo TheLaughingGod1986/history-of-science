@@ -16,7 +16,7 @@ By the end of this film, you'll know how a geologist, his father, and a rare met
 
 [VISUAL MUST: 0:15 — three things appear one after another on a workbench: a geologist's hammer, a vial of clay, a printed science paper · LABEL: A HAMMER · A VIAL · A PAPER]
 
-For more than a hundred and sixty million years, dinosaurs ruled the land. Then, about sixty-six million years ago, they disappeared, along with most of the other kinds of life on Earth. In the seas, on land, in the air. Gone.
+For more than a hundred and sixty million years, dinosaurs walked the Earth. Then, about sixty-six million years ago, they disappeared, along with most of the other kinds of life on Earth. In the seas, on land, in the air. Gone.
 
 For a long time, nobody knew why. Some scientists said the climate slowly changed. Some said volcanoes. Others said disease, or that mammals ate their eggs. There were dozens of ideas, and almost no way to test them.
 
@@ -138,7 +138,7 @@ A hammer, a vial and a paper. Together, they found a catastrophe hidden in a lin
 | Claim in script | Proposed source |
 |---|---|
 | Clay layer "as thin as a pencil", about a centimetre thick, at Gubbio (Bottaccione Gorge) | Alvarez et al., *Science* 208 (1980); W. Alvarez, *T. rex and the Crater of Doom* (1997) |
-| Dinosaurs ruled for more than 160 million years; died out about 66 million years ago with most other kinds of life (~75% of species) | Geological Society / Natural History Museum; Renne et al., *Science* 339 (2013) for 66.0 Ma |
+| Dinosaurs walked the Earth for more than 160 million years (c. 230–66 Ma; "ruled" dropped, NHM says dominated 140+); died out about 66 million years ago with most other kinds of life (~75% of species) | Geological Society / Natural History Museum; Renne et al., *Science* 339 (2013) for 66.0 Ma |
 | Earlier ideas: slow climate change, volcanoes, disease, mammals eating eggs ("dozens of ideas") | Standard histories; W. Alvarez (1997) |
 | Walter Alvarez was studying the Gubbio rocks in the 1970s (palaeomagnetism) | W. Alvarez (1997); ODNB/Berkeley biography |
 | Below the clay, limestone full of foraminifera the size of sand grains; above, almost all gone except a few very small ones | Alvarez et al. (1980); W. Alvarez (1997) |

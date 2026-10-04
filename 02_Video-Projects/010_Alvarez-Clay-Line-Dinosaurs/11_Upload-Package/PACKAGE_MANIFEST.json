@@ -1,0 +1,100 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/clay_long_description_v01.txt",
+  "tagsFile": "Tags/clay_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "What Killed the Dinosaurs Was Hidden in a Line of Clay",
+    "The Line of Clay That Ended the Dinosaurs"
+  ],
+  "schedule": "2026-12-03T18:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "Scaffold only (4 Oct 2026 write lane). Script on main via #208 (review 92.1 PASS). FACT_NOTES + HARD_CHECKS this PR (desk #180 claim 5982333546). Titles/schedule DRAFT for Claude rewrite; nothing uploaded. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 10 education \u22651M). No VO yet \u2014 waits Claude. No picture mint. Proposed air Thu 3 Dec 2026 18:00 UK = 18:00 UTC (GMT).",
+  "neighbours": {
+    "phrases": [
+      "dinosaurs",
+      "asteroid",
+      "iridium"
+    ],
+    "checked": "2026-10-04",
+    "videos": [
+      {
+        "id": "dFCbJmgeHmA",
+        "channel": "Kurzgesagt \u2013 In a Nutshell",
+        "title": "The Day the Dinosaurs Died \u2013 Minute by Minute",
+        "views": 23044479
+      },
+      {
+        "id": "pjoQdz0nxf4",
+        "channel": "Kurzgesagt \u2013 In a Nutshell",
+        "title": "How The Dinosaurs Actually Died",
+        "views": 8826146
+      },
+      {
+        "id": "87E8bQrX4Wg",
+        "channel": "Natural History Museum",
+        "title": "How do dinosaur fossils form? | Natural History Museum",
+        "views": 5210220
+      },
+      {
+        "id": "3_RLz0whDv4",
+        "channel": "Be Smart",
+        "title": "Did Dinosaurs Really Go Extinct?",
+        "views": 3873083
+      },
+      {
+        "id": "yQduHyiWe9o",
+        "channel": "TED-Ed",
+        "title": "Jellyfish predate dinosaurs. How have they survived so long? - David Gruber",
+        "views": 3517418
+      },
+      {
+        "id": "1iNcRJGzzxs",
+        "channel": "SciShow",
+        "title": "How the Dinosaurs Actually Went Extinct",
+        "views": 3102174
+      },
+      {
+        "id": "oXwoy-Ce1ZE",
+        "channel": "SciShow Kids",
+        "title": "What Happened to the Dinosaurs?",
+        "views": 2202050
+      },
+      {
+        "id": "8RI0JnB_OaE",
+        "channel": "TED-Ed",
+        "title": "The ferocious predatory dinosaurs of Cretaceous Sahara - Nizar Ibrahim",
+        "views": 2006347
+      },
+      {
+        "id": "RAdNCIIYXvo",
+        "channel": "TED-Ed",
+        "title": "When will the next mass extinction occur? - Borths, D'Emic, and Pritchard",
+        "views": 1777207
+      },
+      {
+        "id": "kQa11RMCeSI",
+        "channel": "TED",
+        "title": "Jack Horner: Shape-shifting dinosaurs",
+        "views": 1685788
+      }
+    ],
+    "note": "From evidence_2026-10-04_neighbours.json (gate PASS: 10 education \u22651M; TED-Ed/TED yes). Prefer Kurzgesagt / SciShow / Be Smart impact explainers and clay/iridium/Alvarez angle over off-topic dinosaur colour or de-extinction hits. Crowded public search on bare 'what killed the dinosaurs'."
+  }
+}
