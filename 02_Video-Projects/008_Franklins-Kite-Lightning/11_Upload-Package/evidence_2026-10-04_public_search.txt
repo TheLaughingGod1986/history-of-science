@@ -1,8 +1,0 @@
-| Phrase | Autocomplete? | Top results (GB) |
-|---|---|---|
-| benjamin franklin kite | yes | Be Smart 690,768 · HISTORY 163,925 · Quick History 12,922 · Peekaboo Kidz 1,626,301 · Discovery 136,011 |
-| how does a kite prove lightning is electricity | related: how does a lightning happen | Peekaboo Kidz 1,626,301 · Be Smart 690,768 · Quick History 12,922 · Discovery 136,013 · Kathy Loves Physics 37,659 |
-| why vaccines named after a cow franklin | no | DailyHistory 1 view · Alyssa Dice Flipper 858 · Dan Limb 196 · WHO European Region 206,805 · HalfDeadGallery 58 |
-| franklin lightning experiment | related: benjamin franklin lightning experiment; benjamin franklin lightning rod experiment | Peekaboo Kidz 1,626,301 · Be Smart 690,768 · Quick History 12,922 · Discovery 136,015 · HISTORY 163,924 |
-
-Raw pull: 02_Video-Projects/008_Franklins-Kite-Lightning/11_Upload-Package/evidence_2026-10-04_public_search.json
