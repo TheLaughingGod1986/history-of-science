@@ -80,3 +80,16 @@ One TTS retake each for A and B after v01 FAIL; C one take. B's remaining silenc
 Evidence dir: `_desk/006/shorts_vo_20261004/wordcheck_20261004/` (vo_check_A_v02.json, vo_check_B_v03b.json, vo_check_C_v01.json, *_whisper.json).
 
 No picture spend. 007 long VO not touched (other lane).
+
+
+## Provenance correction (4 Oct 2026 ~18:02 — one-process)
+
+Earlier table briefly mis-labelled the **21.60 s / f11b88…** race overwrite as “v03 raw”. Live filenames now:
+
+| name | sha | dur | status |
+|---|---|---|---|
+| `t2_mint_fixed_vo_v03.mp3` | cb45356… | 23.20 s | PASS (also good; not the lock) |
+| `t2_mint_fixed_vo_v03b.mp3` | 0f10992… | 23.20 s | **LOCK** PASS peak −1.5 |
+| `t2_mint_fixed_vo_v03_OVERWRITE_21s.mp3` | f11b88… | 21.60 s | REJECT peak −0.8 |
+
+See `PROVENANCE_B_ONEPROC_20261004.md`.
