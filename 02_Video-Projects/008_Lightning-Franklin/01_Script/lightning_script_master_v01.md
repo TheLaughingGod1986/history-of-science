@@ -25,7 +25,7 @@ The tallest buildings were hit most of all. Church steeples were struck again an
 [VISUAL MUST: 0:48 — inside a stone bell tower, two ringers haul on the ropes as rain lashes the louvres; a flash lights the tower white · LABEL: RING THE BELLS]
 [TEACH: Lightning set fire to buildings and killed people and animals. Tall church towers were hit most often, and the bell-ringers inside were in real danger.]
 
-It was the worst place to stand. In Germany alone, one count found more than a hundred bell-ringers killed by lightning in just over thirty years.
+It was the worst place to stand. One eighteenth-century count found more than a hundred bell-ringers killed by lightning in just a few decades.
 
 So what was lightning? A punishment? A kind of fire? Or something else, something you could catch and study?
 
@@ -138,7 +138,7 @@ Long before Franklin, a young man in an English garden asked a different questio
 | Claim in script | Proposed source |
 |---|---|
 | Bell-ringers rang church bells in storms to drive lightning away | Standard histories; Franklin-era accounts of storm-ringing |
-| "In Germany alone, one count found more than a hundred bell-ringers killed… in just over thirty years" | J. A. Fischer (1784): 386 towers struck, 103 bell-ringers killed in 33 years; cited in Krider, *Physics Today* (2006) and Cohen, *Benjamin Franklin's Science* |
+| "One eighteenth-century count found more than a hundred bell-ringers killed… in just a few decades" (softened 4 Oct from "Germany alone… just over thirty years") | J. N. Fischer (München, 1784); secondary tallies vary (FACT_NOTES soft flag) |
 | Travelling lecturers' electrical shows; Franklin saw one (Spencer, 1743/1746) | Franklin, *Autobiography*; Founders Online headnotes |
 | Franklin handed his printing business to a partner (David Hall, 1748) to study science | *Autobiography*; Founders Online (Franklin–Hall partnership, 1 Jan 1748) |
 | Leyden jar: glass lined with foil, stores charge, released as a spark | Standard; Franklin's "phial" experiments, *Experiments and Observations* |
