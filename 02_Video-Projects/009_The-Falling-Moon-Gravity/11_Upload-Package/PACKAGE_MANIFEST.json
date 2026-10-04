@@ -1,0 +1,70 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "Why Doesn't the Moon Fall to Earth?",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/moon_long_description_v01.txt",
+  "tagsFile": "Tags/moon_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "Why Doesn't the Moon Fall to Earth?",
+    "The Moon Is Falling Right Now"
+  ],
+  "schedule": "2026-11-26T18:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "Planning scaffold only (4 Oct 2026). Description, tags and schedule are DRAFTS for Claude rewrite after FACT_NOTES audit (desk claim 5982314076); nothing uploaded. Titles and neighbours are PROPOSALS for Claude review. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 5 education ≥1M, TED-Ed yes). Script on PR #208 / branch claude/hos-repo-access-qdfmrk (may not be on main yet). No VO until Claude FACT_NOTES + script PASS. Proposed air Thu 26 Nov 2026 18:00 UK = 18:00 UTC (GMT).",
+  "neighbours": {
+    "phrases": [
+      "gravity",
+      "moon",
+      "newton"
+    ],
+    "checked": "2026-10-04",
+    "videos": [
+      {
+        "id": "D89ngRr4uZg",
+        "channel": "TED-Ed",
+        "title": "Newton's three-body problem explained - Fabio Pacucci",
+        "views": 9912318
+      },
+      {
+        "id": "JGO_zDWmkvk",
+        "channel": "TED-Ed",
+        "title": "Newton's 3 Laws, with a bicycle - Joshua Manley",
+        "views": 2921138
+      },
+      {
+        "id": "YeSuQm7KfaE",
+        "channel": "TED-Ed",
+        "title": "How do geckos defy gravity? - Eleanor Nelsen",
+        "views": 1657796
+      },
+      {
+        "id": "XRr1kaXKBsU",
+        "channel": "Veritasium",
+        "title": "What Everyone Gets Wrong About Gravity",
+        "views": 15476982
+      },
+      {
+        "id": "7gf6YpdvtE0",
+        "channel": "CrashCourse",
+        "title": "Newtonian Gravity: Crash Course Physics #8",
+        "views": 1387363
+      }
+    ],
+    "note": "Reuse from evidence_2026-10-04_neighbours.json. Gate PASS: 5 education ≥1M; TED-Ed yes. Prefer TED-Ed Newton/gravity, Veritasium gravity, Crash Course Newtonian Gravity over weak moon-phase / gecko off-topic neighbours for packaging."
+  }
+}
