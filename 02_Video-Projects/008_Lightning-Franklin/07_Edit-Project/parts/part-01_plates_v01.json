@@ -1,0 +1,54 @@
+{
+  "part": "01",
+  "title": "Part 01 — Title",
+  "film": "NNN_Slug",
+  "working_title": "Working title",
+  "mint": false,
+  "house": "STUDIO_PLAYBOOK.md §5",
+  "vo_file": "02_Voiceover/part01_<slug>_v01.txt",
+  "vo_duration_s": null,
+  "clip_use_s": 7.9,
+  "xfade_s": 0.35,
+  "open_stamp": {
+    "after_s": 1.5,
+    "text": "<Place>, <year>",
+    "treatment": "Didot italic overlay added in the edit, not a Veo plate"
+  },
+  "set_language": "ONE persistent set: <period, room, materials, light>. Say 'same <place> <year> set' for continuity; never 'same DNA' in a prompt.",
+  "continuity_lock": "Every scenery plate matches plate 02's set. Prefer start-frame I2V from the last KEEP plate. Camera moves only; no furniture reset.",
+  "explorer_lock": "At most one plate in this part. Exactly one Explorer, on model (01_Character/CHARACTER_BIBLE.md): round gold glasses, teal long coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
+  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; unfinished Explorer hair; DNA helix; readable text or logos in the plate; twin Explorer.",
+  "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop. If Create fails, stop and log it in production-status.md.",
+  "quality_note": "Flow Veo 3.1. Quality for fragile light (lamps, flasks, glows); Fast only for low-risk garnish. Mac Mini CDP benoats@googlemail.com (Ultra). One plate per FAIL cycle; after 2 same-framing FAILs change the framing.",
+  "always_fails": [
+    "lava drip / molten bead",
+    "underside lamp bulb / shade cup",
+    "unfinished flat cards",
+    "garbled card text",
+    "unfinished Explorer hair or melted face",
+    "Explorer without glasses",
+    "horizontal ghosting in late shots",
+    "DNA helix",
+    "Orbit robot",
+    "Ken Burns ship"
+  ],
+  "notes": "Plate UAT on continuous playback (start, middle, end), never from stills. Assemble rough only when every plate has passed.",
+  "plates": [
+    {
+      "id": "01_open",
+      "explorer": false,
+      "i2v": false,
+      "side_label": null,
+      "vo_land": "<Sentence one: the surprising truth about a familiar thing.>",
+      "prompt": "Animistry premium 3D cartoon. <The named thing, already moving, at frame 0.> Continuous slow push. Silent. No Explorer. No Orbit. No readable text. HARD REJECT: photoreal, Ken Burns only."
+    },
+    {
+      "id": "02_set",
+      "explorer": false,
+      "i2v": true,
+      "side_label": "<Person, place or year>",
+      "vo_land": "<The line that names the person or place.>",
+      "prompt": "Animistry premium 3D cartoon. Same <place> <year> set. <What the line says, happening on screen.> Silent. No readable text."
+    }
+  ]
+}
