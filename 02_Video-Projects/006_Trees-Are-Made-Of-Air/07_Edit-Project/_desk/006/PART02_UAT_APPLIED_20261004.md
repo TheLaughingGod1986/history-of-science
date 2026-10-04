@@ -47,3 +47,11 @@ Advisory freezedetect + chapter stills → `PART02_CUTCHECK_RESULT_20261004.md`.
 - No spend
 - #180 not merged / not closed
 - No Ben ping; parent posts from=grok reply
+
+## Evidence / local-only paths (gitignored mp4/png)
+
+- Rough local: `07_Edit-Project/_precheck/hos_006_part02_rough_v02.mp4` (**gitignored** via `_precheck/`)
+- Assemble: `07_Edit-Project/_precheck/part02_full_assemble/` (**gitignored**; meta copied to `_desk/006/ROUGH_META_part02_v02.json`)
+- iCloud: `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/hos_006_part02_rough_v02.mp4`
+- Finder screenshot (full PNG gitignored): `_desk/006/_evidence/hos_006_part02_rough_v02_icloud_finder_20261004.png`
+- Finder screenshot (JPG in git): `_desk/006/_evidence/hos_006_part02_rough_v02_icloud_finder_20261004.jpg`
