@@ -4,8 +4,8 @@
   "youtubeId": null,
   "title": "Why Did Franklin Fly a Kite in a Storm?",
   "titleVariant": "A",
-  "descriptionFile": null,
-  "tagsFile": null,
+  "descriptionFile": "Descriptions/lightning_long_description_v01.txt",
+  "tagsFile": "Tags/lightning_long_tags_v01.txt",
   "chaptersFile": null,
   "pinnedCommentFile": null,
   "thumbnail": null,
@@ -14,7 +14,7 @@
     "Why Did Franklin Fly a Kite in a Storm?",
     "How Does a Lightning Rod Work?"
   ],
-  "schedule": null,
+  "schedule": "2026-11-19T18:00:00.000Z",
   "playlistId": null,
   "relatedVideoId": null,
   "privacy": "private",
@@ -25,7 +25,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Planning scaffold only (4 Oct 2026). Titles and neighbours are PROPOSALS for Claude review; nothing uploaded. Neighbours auto-written by neighbours.py 2026-10-04 (gate PASS, 6 education \u22651M). No VO/script yet \u2014 FACT_NOTES first.",
+  "note": "Planning scaffold only (4 Oct 2026). Description, tags and schedule are DRAFTS for Claude rewrite with the 008 script (contract fix Claude 5982161988); nothing uploaded. Titles and neighbours are PROPOSALS for Claude review. Neighbours auto-written by neighbours.py 2026-10-04 (gate PASS, 6 education ≥1M). No VO/script yet — FACT_NOTES first. Proposed air Thu 19 Nov 2026 18:00 UK = 18:00 UTC (GMT).",
   "neighbours": {
     "phrases": [
       "lightning",
@@ -49,7 +49,7 @@
       {
         "id": "BIP0lYrdirI",
         "channel": "TED-Ed",
-        "title": "Rosalind Franklin: DNA's unsung hero - Cl\u00e1udio L. Guerra",
+        "title": "Rosalind Franklin: DNA's unsung hero - Cláudio L. Guerra",
         "views": 1931868
       },
       {
@@ -66,11 +66,11 @@
       },
       {
         "id": "mCAm38dSD78",
-        "channel": "Kurzgesagt \u2013 In a Nutshell",
-        "title": "Lightning: Nature\u2019s Plasma Highway",
+        "channel": "Kurzgesagt – In a Nutshell",
+        "title": "Lightning: Nature’s Plasma Highway",
         "views": 2121750
       }
     ],
-    "note": "Auto from neighbours.py 2026-10-04. Gate PASS: 6 education \u22651M. Prefer SciShow Kids / MinuteEarth / Kurzgesagt / TED-Ed static electricity over weak TED-Ed name collisions (Rosalind Franklin; Cambodian lightning myth). Be Smart Franklin kite ~691k is on-topic under the 1M cut."
+    "note": "Auto from neighbours.py 2026-10-04. Gate PASS: 6 education ≥1M. Prefer SciShow Kids / MinuteEarth / Kurzgesagt / TED-Ed static electricity over weak TED-Ed name collisions (Rosalind Franklin; Cambodian lightning myth). Be Smart Franklin kite ~691k is on-topic under the 1M cut."
   }
 }
