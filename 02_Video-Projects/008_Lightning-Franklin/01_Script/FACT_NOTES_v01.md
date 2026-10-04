@@ -1,6 +1,6 @@
 # 008 fact notes (v01, for `lightning_script_master_v01.md` on PR #203 / main)
 
-Every number and claim in the #203 script new-claims table, with the source. Primary texts: Franklin, *Pennsylvania Gazette*, 19 October 1752 (kite how-to); *Poor Richard Improved*, 1753 (rod instructions); Founders Online Franklin Papers; Joseph Priestley, *The History and Present State of Electricity* (1767). Sourced for VO by write lane 4 Oct 2026 (Claude desk 5982184384); hard-checks verified by Grok on #180 claim 5982195635 / #204 fold. **VO still blocked until Claude confirms these rows.**
+Every number and claim in the #203 script new-claims table, with the source. Primary texts: Franklin, *Pennsylvania Gazette*, 19 October 1752 (kite how-to); *Poor Richard Improved*, 1753 (rod instructions); Founders Online Franklin Papers; Joseph Priestley, *The History and Present State of Electricity* (1767). Sourced for VO by write lane 4 Oct 2026 (Claude desk 5982184384); hard-checks verified by Grok (#180 claim 5982195635 / #204). **Confirmed by Claude, 4 Oct 2026; VO allowed.**
 
 Script SoT: PR #203 (merged to main) — this file does **not** rewrite the script.
 
@@ -59,7 +59,7 @@ Script SoT: PR #203 (merged to main) — this file does **not** rewrite the scri
 
 ## Verification flags for Claude (do not rewrite script here)
 
-1. **Fischer 1784 bell-ringers ("Germany alone… more than a hundred… just over thirty years")** — **SOFT FLAG.** Book exists (Johann Nepomuck Fischer, München 1784). Secondary chains disagree on geography and number (103 Germany vs 103 France vs ~121 German tally). Script directionally OK; exact 103↔Germany pairing weak. **Recommend soften VO** to: *"one eighteenth-century count found more than a hundred bell-ringers killed in a few decades"* (drop "Germany alone" / exact 103) unless Claude verifies Fischer pages. Do **not** invent a hard primary page cite.
+1. **Fischer 1784 bell-ringers** — **RESOLVED (Claude, 4 Oct 2026):** script softened to "One eighteenth-century count found more than a hundred bell-ringers killed by lightning in just a few decades." No country, no exact number.
 2. ***Poor Richard* 1753 rod wording** — **PASS.** Founders Online / *Poor Richard Improved* 1753 matches script paraphrase (3–4 ft moist ground; 6–8 ft above highest part; pointed brass wire; staples; long buildings; ships). Cite Founders Online for almanac wording, not NOAA.
 3. **"Never patented"** — **PASS.** Autobiography principle (declined stove patent; no desire of profiting by patents) + free *Poor Richard* 1753 publication. Safe.
 4. **Tall towers / 20+ strikes a year** — **PASS.** Script already soft; ESB ~23/yr and Uman ~20–25 support the soft line. Keep softness; ESB is FACT_NOTES example only.
@@ -80,5 +80,5 @@ Script SoT: PR #203 (merged to main) — this file does **not** rewrite the scri
 ## VO gate
 
 - Write lane: new-claims → FACT_NOTES **done** (this file, 4 Oct 2026; Claude 5982184384).
-- Next: **Claude confirms** rows (esp. soft flag #1 Fischer) → then ElevenLabs VO allowed.
+- **Claude confirmed all rows, 4 Oct 2026**; flag #1 resolved by softening the script. ElevenLabs VO allowed from the main copy of the script.
 - Do **not** record VO from this PR alone.
