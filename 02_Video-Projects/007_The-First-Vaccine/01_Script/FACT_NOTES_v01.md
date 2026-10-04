@@ -1,6 +1,6 @@
 # 007 fact notes (v01, for `vaccine_script_master_v01.md` on PR #201)
 
-Every number and claim in the #201 script new-claims table, with the source. Primary text: Edward Jenner, *An Inquiry into the Causes and Effects of the Variolæ Vaccinæ* (London: Sampson Low, for the author, 1798), cited below as *Inquiry* (Wikisource / James Lind Library text of the 1798 edition). Sourced for VO by write lane 4 Oct 2026. **VO still blocked until Claude confirms these rows.**
+Every number and claim in the #201 script new-claims table, with the source. Primary text: Edward Jenner, *An Inquiry into the Causes and Effects of the Variolæ Vaccinæ* (London: Sampson Low, for the author, 1798), cited below as *Inquiry* (Wikisource / James Lind Library text of the 1798 edition). Sourced for VO by write lane 4 Oct 2026. **Confirmed by Claude, 4 Oct 2026; VO allowed.**
 
 Script SoT: PR #201 (`claude/hos-repo-access-qdfmrk`) — this file does **not** rewrite the script.
 
@@ -47,7 +47,7 @@ Script SoT: PR #201 (`claude/hos-repo-access-qdfmrk`) — this file does **not**
 
 ## Verification flags for Claude (do not rewrite script here)
 
-1. **Phipps "son of a local labourer"** — SOFT FLAG: not in *Inquiry*; secondary/museum OK if Claude keeps it; else soften to Inquiry wording.
+1. **Phipps "son of a local labourer"** — **RESOLVED (Claude, 4 Oct 2026, #203):** cut. The script now says "In his own notes, Jenner described him simply as a healthy boy, about eight years old."
 2. **Hunter quote** — PASS with note: exact letter is hedgehog science, Aug 1775; traditional application to Jenner's method is fine if VO does not claim Hunter said it about cowpox.
 3. All other new-claims table rows: **PASS** with cites above.
 4. Case XVI / XVII numbering: confirmed against Wikisource 1798 text.
@@ -61,5 +61,4 @@ Script SoT: PR #201 (`claude/hos-repo-access-qdfmrk`) — this file does **not**
 ## VO gate
 
 - Write lane: new-claims → FACT_NOTES **done** (this file, 4 Oct 2026).
-- Next: **Claude confirms** rows (esp. soft flag #1) → then ElevenLabs VO allowed.
-- Do **not** record VO from this PR alone.
+- **Claude confirmed all rows, 4 Oct 2026** (desk 5982161988); flag #1 resolved in #203. ElevenLabs VO allowed from the main copy of the script.

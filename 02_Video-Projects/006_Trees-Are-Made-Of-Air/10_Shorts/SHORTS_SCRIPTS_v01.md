@@ -2,7 +2,7 @@
 
 **Status: written by Claude, 4 Oct 2026.** Script PASS by Claude is the VO gate (Ben, 4 Oct 16:52, relayed on desk PR #180, comment 5981814178). Ben's final OK comes on the finished Shorts.
 
-A and B keep the exact wording of the two ElevenLabs test Shorts T1 and T2 (desk 5981204697), so their existing VO takes (`~/_desk/006/elevenlabs_test_shorts_20261004/vo/`, T1 24.08 s, T2 21.52 s) can be kept if `vo_check` passes. Picture is cut from the long's own plates. The ElevenLabs test video stays paused (Ben, 4 Oct 16:25).
+A keeps the exact wording of test Short T1, and B keeps T2's wording plus one closing line (test Shorts: desk 5981204697), so A's existing take can be kept if `vo_check` passes. **The long's title is on screen only, never spoken:** trim any spoken title from a take before the edit. Picture is cut from the long's own plates. The ElevenLabs test video stays paused (Ben, 4 Oct 16:25).
 
 Rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STUDIO_PLAYBOOK.md` §3 and §7. Every Short: 22–27 s; the named thing at frame 0, already moving; the first words are the claim; a visible change by 1 s; a 2–4 word hook caption on frame 0; the Explorer never at frame 0; captions throughout; the promoted long's **exact live title** on screen at 9–14 s; the last 4 s loop to the opening; `gate_shorts_open.py` PASS; Studio Related → the 006 long.
 
@@ -49,14 +49,14 @@ A tree is built from thin air. One man spent five years proving the soil wasn't 
 | 2–8 | Priestley lowers a candle into the jar; it dies | Joseph Priestley burned a candle in a sealed jar until the flame died, and no new flame would light. |
 | 8–12 | the mint slides in; calendar 17 AUGUST | He slid in a sprig of mint and waited. |
 | 9–14 | **title on screen:** *The Willow Tree That Was Made of Air* | |
-| 12–20 | calendar 27 AUGUST; the candle burns tall | Ten days later, a candle burned bright in that same air. |
-| 20–24 | back to the mint (loop) | |
+| 12–19 | calendar 27 AUGUST; the candle burns tall | Ten days later, a candle burned bright in that same air. |
+| 19–24 | back to the mint, bubbles rising (loop) | Somehow, the little green plant had made the air good again. |
 
-**Script (46 words, same as test T2):**
+**Script (56 words; test T2 plus one closing line):**
 
-A sprig of mint repaired the air. Joseph Priestley burned a candle in a sealed jar until the flame died, and no new flame would light. He slid in a sprig of mint and waited. Ten days later, a candle burned bright in that same air.
+A sprig of mint repaired the air. Joseph Priestley burned a candle in a sealed jar until the flame died, and no new flame would light. He slid in a sprig of mint and waited. Ten days later, a candle burned bright in that same air. Somehow, the little green plant had made the air good again.
 
-*Fact check:* Priestley, *Phil. Trans.* 62 (1772): mint put in on 17 August 1771, a candle burned in the air on 27 August. Same as the long. At 21.5 s it's short of 22 s, so hold the loop 1 s longer.
+*Fact check:* Priestley, *Phil. Trans.* 62 (1772): mint put in on 17 August 1771, a candle burned in the air on 27 August. Same as the long. Priestley's own word was that the mint had *restored* the air. v02 adds the closing line because the T2 wording alone runs about 16.5 s without the title, short of 22 s (VO review, 4 Oct).
 
 ---
 
