@@ -106,7 +106,7 @@ cd 07_Content-Ops && npm run review:script -- --file ../02_Video-Projects/010_Al
 - [x] Retention plan filled
 - [x] Production checklist path noted: `11_Upload-Package/PRODUCTION_CHECKLIST_V2.md`
 
-**Signed off by:** write lane (Grok Bot) scaffold; vidIQ waived by Ben, standing rule (desk PR #180, comment 5949981415). Claude still confirms FACT_NOTES / hard-checks before VO.
+**Signed off by:** Claude (desk reviewer), 4 Oct 2026; public-signal sections filled by the write lane; vidIQ waived by Ben, standing rule (desk PR #180, comment 5949981415). FACT_NOTES and HARD_CHECKS confirmed by Claude.
 **Date:** 4 Oct 2026
 
 **Only then:** Claude PASS on FACT_NOTES + HARD_CHECKS → VO (Ben Orbit Narrator) → plates → edit, each stage to Claude on the desk.

@@ -28,9 +28,9 @@
   "note": "Scaffold only (4 Oct 2026 write lane). Script on main via #208 (review 92.1 PASS). FACT_NOTES + HARD_CHECKS this PR (desk #180 claim 5982333546). Titles/schedule DRAFT for Claude rewrite; nothing uploaded. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 10 education \u22651M). No VO yet \u2014 waits Claude. No picture mint. Proposed air Thu 3 Dec 2026 18:00 UK = 18:00 UTC (GMT).",
   "neighbours": {
     "phrases": [
-      "dinosaur extinction",
-      "asteroid alvarez iridium",
-      "alvarez dinosaurs"
+      "dinosaurs",
+      "asteroid",
+      "iridium"
     ],
     "checked": "2026-10-04",
     "videos": [

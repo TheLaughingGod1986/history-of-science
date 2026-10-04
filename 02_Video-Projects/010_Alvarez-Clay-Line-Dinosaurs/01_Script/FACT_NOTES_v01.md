@@ -1,6 +1,6 @@
 # 010 fact notes (v01, for `clay_script_master_v01.md` on PR #208 / main)
 
-Every number and claim in the #208 script new-claims table, with the source. Primary text: L. W. Alvarez, W. Alvarez, F. Asaro, H. V. Michel, "Extraterrestrial Cause for the Cretaceous-Tertiary Extinction," *Science* 208 (4448): 1095–1108 (6 June 1980). Solid secondaries: W. Alvarez, *T. rex and the Crater of Doom* (1997); NASA/USGS Chicxulub materials; Natural History Museum dinosaur pages; Larson et al. / Field et al. *Current Biology*. Sourced for VO by write lane 4 Oct 2026 (Claude desk #180 claim 5982333546). **Hard-checks in `HARD_CHECKS.md` — awaiting Claude confirm before VO.**
+Every number and claim in the #208 script new-claims table, with the source. Primary text: L. W. Alvarez, W. Alvarez, F. Asaro, H. V. Michel, "Extraterrestrial Cause for the Cretaceous-Tertiary Extinction," *Science* 208 (4448): 1095–1108 (6 June 1980). Solid secondaries: W. Alvarez, *T. rex and the Crater of Doom* (1997); NASA/USGS Chicxulub materials; Natural History Museum dinosaur pages; Larson et al. / Field et al. *Current Biology*. Sourced for VO by write lane 4 Oct 2026 (Claude desk #180 claim 5982333546). **Hard-checks in `HARD_CHECKS.md`. Confirmed by Claude, 4 Oct 2026; VO allowed (subject to the ElevenLabs pause).**
 
 Script SoT: PR #208 (merged to main, review **92.1 PASS**) — this file does **not** rewrite the script.
 
@@ -75,5 +75,5 @@ Script SoT: PR #208 (merged to main, review **92.1 PASS**) — this file does **
 ## VO gate
 
 - Write lane: new-claims → FACT_NOTES **done** (this file, 4 Oct 2026; Claude desk 5982333546).
-- **VO waits Claude confirm** on FACT_NOTES + hard-checks. Do **not** record VO from this PR alone.
+- **Claude confirmed FACT_NOTES and hard-checks, 4 Oct 2026.** One script fix: "dinosaurs ruled the land" became "walked the Earth" (160 Myr is their span, not their dominance). VO order: after 007, 008, 009, once the ElevenLabs pause lifts.
 - No picture mint.
