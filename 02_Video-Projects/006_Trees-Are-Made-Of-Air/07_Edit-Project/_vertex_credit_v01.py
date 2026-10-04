@@ -5,7 +5,7 @@
 
 Prints `CREDIT free_trial_remaining_gbp=… status=…` and saves a screenshot to
 07_Edit-Project/_evidence/vertex_credits_<label>.png (gitignored). Appends the reading to
-07_Edit-Project/VERTEX_CREDIT_LOG_v01.json. Exits 3 if the remaining credit is below the floor (FLOOR_GBP).
+07_Edit-Project/VERTEX_CREDIT_LOG_v01.json. Exits 3 if the remaining credit is below the £5 lag floor (FLOOR_GBP). Authority: Claude 5981064652 + 5981112327.
 """
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ EDIT = Path(__file__).resolve().parent
 EVID = EDIT / "_evidence"
 LOG = EDIT / "VERTEX_CREDIT_LOG_v01.json"
 URL = "https://console.cloud.google.com/billing/0124D1-E6EFD6-40F6DA/credits/all?project=gen-lang-client-0538779324"
-FLOOR_GBP = 0.0  # Claude/Ben on desk PR #180, 2 Oct 2026: 006 may run the Free Trial to £0, never onto paid billing
+FLOOR_GBP = 5.0  # Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): usable = remaining − £5 lag floor; never onto paid billing
 
 
 def main() -> int:

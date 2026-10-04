@@ -15,7 +15,7 @@ Each plate is minted at its board `clip_s` (4, 6 or 8 s). Flow and reuse rows ar
 Quality plates → veo-3.1-generate-001, Fast → veo-3.1-fast-generate-001, 1080p,
 generate_audio=False (video-only SKU), audio stream removed after download.
 Start frames attach the Explorer sheet + generation reference on Explorer plates. Every spend
-is refused if the projected Free Trial credit would fall below the floor (£0 for 006: never
+is refused if the projected Free Trial credit would fall below the floor (£5 lag floor for 006 per Claude 5981064652/5981112327: never
 onto paid billing) (see `projected_gbp`).
 Python: ~/.venvs/hos-vertex/bin/python. Media stays out of git.
 """
@@ -70,7 +70,7 @@ CREDIT_LOG = EDIT / "VERTEX_CREDIT_LOG_v01.json"
 # Free Trial on the console before any 006 Vertex spend (2 Oct 12:28 UK, before boards).
 CREDIT_BASE_GBP = 65.73
 GBP_PER_USD = 0.80  # conservative; list prices are in USD, the credit is in GBP
-FLOOR_GBP = 0.0  # Claude/Ben on desk PR #180, 2 Oct 2026: 006 may run the Free Trial to £0, never onto paid billing
+FLOOR_GBP = 5.0  # Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): usable = remaining − £5 lag floor; never onto paid billing
 STYLE = (
     "History of Science locked look: premium Animistry-class 3D cartoon, finished "
     "materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. "
@@ -162,7 +162,7 @@ def load_log() -> dict:
         "vertex_project": PROJECT,
         "vertex_location": LOCATION,
         "account": ACCOUNT,
-        "authority": "Claude on desk PR #180 comment 5951520953 (2 Oct 2026): mint 006 on Vertex to a £0 floor",
+        "authority": "Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): mint 006 Part 02 on Vertex with £5 lag floor; usable = remaining − 5",
         "models": MODELS,
         "image_model": IMAGE_MODEL,
         "pricing_usd": {"veo_per_s_video_only_1080p": USD_PER_S, "still": USD_PER_STILL,

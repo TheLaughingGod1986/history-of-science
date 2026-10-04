@@ -16,6 +16,38 @@
       "status": "Available",
       "screenshot": "vertex_credits_after_part01_006_2026-10-02.png",
       "floor_gbp": 0.0
+    },
+    {
+      "label": "desk_007_topic_2026-10-03",
+      "at": "2026-10-03T13:47:19+00:00",
+      "free_trial_remaining_gbp": 37.84,
+      "status": "Available",
+      "screenshot": "vertex_credits_desk_007_topic_2026-10-03.png",
+      "floor_gbp": 0.0
+    },
+    {
+      "label": "before_part02_resume_2026-10-04",
+      "at": "2026-10-04T14:37:25+00:00",
+      "free_trial_remaining_gbp": 37.48,
+      "status": "Available",
+      "screenshot": "vertex_credits_before_part02_resume_2026-10-04.png",
+      "floor_gbp": 5.0
+    },
+    {
+      "label": "after_part02_batch2_2026-10-04",
+      "at": "2026-10-04T14:45:10+00:00",
+      "free_trial_remaining_gbp": 37.48,
+      "status": "Available",
+      "screenshot": "vertex_credits_after_part02_batch2_2026-10-04.png",
+      "floor_gbp": 5.0
+    },
+    {
+      "label": "after_part02_remints_2026-10-04",
+      "at": "2026-10-04T14:51:31+00:00",
+      "free_trial_remaining_gbp": 37.48,
+      "status": "Available",
+      "screenshot": "vertex_credits_after_part02_remints_2026-10-04.png",
+      "floor_gbp": 5.0
     }
   ]
 }
