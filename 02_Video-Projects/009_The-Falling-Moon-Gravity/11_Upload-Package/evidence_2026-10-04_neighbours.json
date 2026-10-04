@@ -1,0 +1,353 @@
+{
+ "pulled": "2026-10-04",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "gravity",
+  "newton moon apple",
+  "newton gravity moon"
+ ],
+ "autocomplete": {
+  "gravity": [
+   "gravity falls",
+   "gravity",
+   "gravity falls season 2 full episodes",
+   "gravity falls theme song",
+   "gravity falls full episode",
+   "gravity hazbin hotel",
+   "gravity falls theory",
+   "gravity falls intro",
+   "gravity falls reaction",
+   "gravity john mayer"
+  ],
+  "newton moon apple": [
+   "newton and the apple tree ost",
+   "newton and the apple"
+  ],
+  "newton gravity moon": [
+   "newton gravity"
+  ]
+ },
+ "sharedTitleWords": [
+  "fabio pacucci",
+  "the moon",
+  "about gravity"
+ ],
+ "neighbours": [
+  {
+   "id": "D89ngRr4uZg",
+   "title": "Newton’s three-body problem explained - Fabio Pacucci",
+   "channel": "TED-Ed",
+   "views": "9,912,318 views",
+   "age": "6 yr ago",
+   "length": "5:31",
+   "tier": 1,
+   "viewCount": 9912318,
+   "foundBy": "ted-ed gravity",
+   "onTopic": true
+  },
+  {
+   "id": "JGO_zDWmkvk",
+   "title": "Newton's 3 Laws, with a bicycle - Joshua Manley",
+   "channel": "TED-Ed",
+   "views": "2,921,138 views",
+   "age": "14 yr ago",
+   "length": "3:33",
+   "tier": 1,
+   "viewCount": 2921138,
+   "foundBy": "ted-ed gravity",
+   "onTopic": true
+  },
+  {
+   "id": "YeSuQm7KfaE",
+   "title": "How do geckos defy gravity? - Eleanor Nelsen",
+   "channel": "TED-Ed",
+   "views": "1,657,796 views",
+   "age": "11 yr ago",
+   "length": "4:30",
+   "tier": 1,
+   "viewCount": 1657796,
+   "foundBy": "ted-ed gravity",
+   "onTopic": true
+  },
+  {
+   "id": "RXkYjL_7jME",
+   "title": "The moon illusion - Andrew Vanden Heuvel",
+   "channel": "TED-Ed",
+   "views": "813,006 views",
+   "age": "13 yr ago",
+   "length": "4:09",
+   "tier": 1,
+   "viewCount": 813006,
+   "foundBy": "ted-ed newton gravity moon",
+   "onTopic": true
+  },
+  {
+   "id": "YlxKh4oCKhw",
+   "title": "How far would you have to go to escape gravity? - Rene Laufer",
+   "channel": "TED-Ed",
+   "views": "597,158 views",
+   "age": "7 yr ago",
+   "length": "4:56",
+   "tier": 1,
+   "viewCount": 597158,
+   "foundBy": "ted-ed gravity",
+   "onTopic": true
+  },
+  {
+   "id": "lY3XV_GGV0M",
+   "title": "How to think about gravity - Jon Bergmann",
+   "channel": "TED-Ed",
+   "views": "543,420 views",
+   "age": "14 yr ago",
+   "length": "4:44",
+   "tier": 1,
+   "viewCount": 543420,
+   "foundBy": "ted-ed gravity",
+   "onTopic": true
+  },
+  {
+   "id": "I5V2tcg1BvQ",
+   "title": "Could you live on the moon? - Alex Gendler",
+   "channel": "TED-Ed",
+   "views": "534,073 views",
+   "age": "8 yr ago",
+   "length": "4:52",
+   "tier": 1,
+   "viewCount": 534073,
+   "foundBy": "ted-ed newton gravity moon",
+   "onTopic": true
+  },
+  {
+   "id": "7CuYx9mZCQA",
+   "title": "Gravity and the human body - Jay Buckey",
+   "channel": "TED-Ed",
+   "views": "459,518 views",
+   "age": "13 yr ago",
+   "length": "4:46",
+   "tier": 1,
+   "viewCount": 459518,
+   "foundBy": "ted-ed gravity",
+   "onTopic": true
+  },
+  {
+   "id": "kU8s_4HBG98",
+   "title": "Gravity vs. Pressure: The battle that formed the universe - Fabio Pacucci",
+   "channel": "TED-Ed",
+   "views": "204,984 views",
+   "age": "3 yr ago",
+   "length": "5:14",
+   "tier": 1,
+   "viewCount": 204984,
+   "foundBy": "ted-ed gravity",
+   "onTopic": true
+  },
+  {
+   "id": "XRr1kaXKBsU",
+   "title": "What Everyone Gets Wrong About Gravity",
+   "channel": "Veritasium",
+   "views": "15,476,982 views",
+   "age": "5 yr ago",
+   "length": "17:34",
+   "tier": 2,
+   "viewCount": 15476982,
+   "foundBy": "gravity ted",
+   "onTopic": true
+  },
+  {
+   "id": "7gf6YpdvtE0",
+   "title": "Newtonian Gravity: Crash Course Physics #8",
+   "channel": "CrashCourse",
+   "views": "1,387,363 views",
+   "age": "10 yr ago",
+   "length": "9:20",
+   "tier": 2,
+   "viewCount": 1387363,
+   "foundBy": "newton gravity moon",
+   "onTopic": true
+  },
+  {
+   "id": "U78NOo-oxOY",
+   "title": "Weight, Force, Mass &  Gravity | Forces & Motion | Physics | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "596,810 views",
+   "age": "6 yr ago",
+   "length": "7:34",
+   "tier": 2,
+   "viewCount": 596810,
+   "foundBy": "ted-ed newton gravity moon",
+   "onTopic": true
+  },
+  {
+   "id": "oNgo9bbDi7Q",
+   "title": "Balanced and unbalanced forces | Forces and Newton's laws of motion | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "555,476 views",
+   "age": "14 yr ago",
+   "length": "8:11",
+   "tier": 2,
+   "viewCount": 555476,
+   "foundBy": "khan academy newton moon apple",
+   "onTopic": true
+  },
+  {
+   "id": "oIZV-ixRTcY",
+   "title": "Gravity for astronauts in orbit | Centripetal force and gravitation | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "287,868 views",
+   "age": "15 yr ago",
+   "length": "7:12",
+   "tier": 2,
+   "viewCount": 287868,
+   "foundBy": "khan academy gravity",
+   "onTopic": true
+  },
+  {
+   "id": "R8qygu1RUOI",
+   "title": "LeBron asks about Newton's 3rd Law",
+   "channel": "Khan Academy",
+   "views": "148,311 views",
+   "age": "14 yr ago",
+   "length": "4:01",
+   "tier": 2,
+   "viewCount": 148311,
+   "foundBy": "khan academy newton moon apple",
+   "onTopic": true
+  },
+  {
+   "id": "f592IgRzq2E",
+   "title": "Phases of the moon | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "123,243 views",
+   "age": "4 yr ago",
+   "length": "4:14",
+   "tier": 2,
+   "viewCount": 123243,
+   "foundBy": "khan academy newton moon apple",
+   "onTopic": true
+  },
+  {
+   "id": "PIpnGilqefE",
+   "title": "Newton's law of gravitation | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "102,615 views",
+   "age": "2 yr ago",
+   "length": "13:05",
+   "tier": 2,
+   "viewCount": 102615,
+   "foundBy": "khan academy gravity",
+   "onTopic": true
+  },
+  {
+   "id": "D8XOm4swxOU",
+   "title": "GCSE Physics - Newton's 1st & 2nd Laws | Circular Motion | Inertia (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "98,764 views",
+   "age": "1 yr ago",
+   "length": "6:37",
+   "tier": 2,
+   "viewCount": 98764,
+   "foundBy": "newton gravity moon",
+   "onTopic": true
+  },
+  {
+   "id": "rjkQcfw5fkM",
+   "title": "Newton's first law | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "72,673 views",
+   "age": "2 yr ago",
+   "length": "8:58",
+   "tier": 2,
+   "viewCount": 72673,
+   "foundBy": "khan academy newton moon apple",
+   "onTopic": true
+  },
+  {
+   "id": "ZQcf9xLABa0",
+   "title": "The Moon",
+   "channel": "Khan Academy",
+   "views": "70,276 views",
+   "age": "9 yr ago",
+   "length": "5:34",
+   "tier": 2,
+   "viewCount": 70276,
+   "foundBy": "khan academy newton moon apple",
+   "onTopic": true
+  },
+  {
+   "id": "dd1IeIHA0S8",
+   "title": "My quest to defy gravity and fly | Elizabeth Streb",
+   "channel": "TED",
+   "views": "57,447 views",
+   "age": "7 yr ago",
+   "length": "9:14",
+   "tier": 1,
+   "viewCount": 57447,
+   "foundBy": "gravity ted",
+   "onTopic": true
+  },
+  {
+   "id": "16StQAx83kA",
+   "title": "Newton's Laws",
+   "channel": "Khan Academy",
+   "views": "45,570 views",
+   "age": "18 yr ago",
+   "length": "9:55",
+   "tier": 2,
+   "viewCount": 45570,
+   "foundBy": "khan academy newton moon apple",
+   "onTopic": true
+  },
+  {
+   "id": "EwGGh1dC3kQ",
+   "title": "Newton's second law | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "43,882 views",
+   "age": "2 yr ago",
+   "length": "11:24",
+   "tier": 2,
+   "viewCount": 43882,
+   "foundBy": "khan academy newton gravity moon",
+   "onTopic": true
+  },
+  {
+   "id": "WXSHQK56Bfs",
+   "title": "Lunar eclipses | The Earth-sun-moon system | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "35,818 views",
+   "age": "4 yr ago",
+   "length": "2:07",
+   "tier": 2,
+   "viewCount": 35818,
+   "foundBy": "khan academy newton moon apple",
+   "onTopic": true
+  },
+  {
+   "id": "tNGVqoOLl-k",
+   "title": "Galaxies and gravity | Earth in space | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "33,516 views",
+   "age": "4 yr ago",
+   "length": "3:56",
+   "tier": 2,
+   "viewCount": 33516,
+   "foundBy": "khan academy newton gravity moon",
+   "onTopic": true
+  },
+  {
+   "id": "a0XHi4tCovg",
+   "title": "Gravity and the solar system | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "6,494 views",
+   "age": "3 mo ago",
+   "length": "11:43",
+   "tier": 2,
+   "viewCount": 6494,
+   "foundBy": "khan academy gravity",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

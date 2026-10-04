@@ -1,6 +1,6 @@
 # 008 fact notes (v01, for `lightning_script_master_v01.md` on PR #203 / main)
 
-Every number and claim in the #203 script new-claims table, with the source. Primary texts: Franklin, *Pennsylvania Gazette*, 19 October 1752 (kite how-to); *Poor Richard Improved*, 1753 (rod instructions); Founders Online Franklin Papers; Joseph Priestley, *The History and Present State of Electricity* (1767). Sourced for VO by write lane 4 Oct 2026 (Claude desk 5982184384). **Confirmed by Claude, 4 Oct 2026; VO allowed.**
+Every number and claim in the #203 script new-claims table, with the source. Primary texts: Franklin, *Pennsylvania Gazette*, 19 October 1752 (kite how-to); *Poor Richard Improved*, 1753 (rod instructions); Founders Online Franklin Papers; Joseph Priestley, *The History and Present State of Electricity* (1767). Sourced for VO by write lane 4 Oct 2026 (Claude desk 5982184384); hard-checks verified by Grok (#180 claim 5982195635 / #204). **Confirmed by Claude, 4 Oct 2026; VO allowed.**
 
 Script SoT: PR #203 (merged to main) — this file does **not** rewrite the script.
 
@@ -41,7 +41,7 @@ Script SoT: PR #203 (merged to main) — this file does **not** rewrite the scri
 | *Poor Richard* wording: rod up the wall, sharp point 6–8 ft above the roof, foot 3–4 ft in moist ground; how a rod works: an easy path round the building | **PASS (hard check #2).** Almanac: iron rod, one end **three or four feet** in moist earth, other **six or eight feet** above the highest part; ~1 ft brass wire sharpened to a point; staples; long buildings rods at both ends + ridge wire; ships: pointed mast rod with wire to the water. Script paraphrase matches. "Easy path round the building" is plain-language teaching (NFPA 780 / modern safety paraphrase OK beside the almanac). | Founders Online / *Poor Richard Improved* 1753 (almanac wording). Do **not** cite NOAA for the 1753 wording. |
 | Franklin never patented the lightning rod | **PASS (hard check #3).** Autobiography: declined a patent for the Pennsylvania fireplace from the principle that inventions should serve others "freely and generously"; "no Desire of profiting by Patents myself". Lightning rod published free in *Poor Richard* 1753; no Franklin patent. Safe as "Franklin never patented his lightning rod" with Autobiography as attitude cite. | *Autobiography*; Founders Online; *Poor Richard* 1753 free how-to. |
 | Within a few years, rods on churches, houses and ships | Rapid uptake of pointed rods on buildings and ships after mid-1750s publications; standard in Cohen and lightning histories. Script "within a few years" is fair compression. | Cohen, *Benjamin Franklin's Science*; standard histories. |
-| Some tall towers are struck more than twenty times a year | **PASS (hard check #4).** Script already soft ("Some tall towers… more than twenty"). Empire State Building public materials ~**23**/year average; researchers (e.g. Uman) cite ~**20–25**/year. Keep softness; FACT_NOTES notes ESB as familiar example — do not force the name into VO. | ESB public materials (~23/yr); Uman / Live Science ~20–25; NWS tall-structure framing. |
+| Some tall towers are struck more than twenty times a year | **PASS (hard check #4).** Script already soft ("Some tall towers… more than twenty"). **NWS** *Lightning Myths and Facts*: Empire State Building "hit an average of **23** times a year". Researchers (e.g. Uman) cite ~**20–25**/year; ESB site often ~25. Keep softness; FACT_NOTES notes ESB as familiar example — do not force the name into VO. | NWS [Lightning Myths](https://www.weather.gov/safety/lightning-myths) (23/yr); Uman / Live Science ~20–25; ESB public materials. |
 | Hand-off: Newton, the apple and the Moon (009 Gravity) | Topic lock (Claude, 4 Oct 2026): **009 = Gravity (Newton)**. Apple / Moon beat from Stukeley's *Memoirs* (1752) — wording check belongs to 009 FACT_NOTES, not this file. | Desk plan / topic lock — not a Franklin historical cite. |
 
 ## Already locked earlier (planning FACT_NOTES → still hold)
@@ -69,7 +69,8 @@ Script SoT: PR #203 (merged to main) — this file does **not** rewrite the scri
 ## Neighbour / public gate (pointer)
 
 - Neighbours: **PASS** (4 Oct 2026) — evidence `11_Upload-Package/evidence_2026-10-04_neighbours.json` / `evidence_2026-10-04_public_search.json`.
-- Prefer static-electricity / thunder / lightning / Franklin-kite neighbours for title/tags (noise: some TED-Ed weak topical matches).
+- Folded from duplicate `008_Franklins-Kite-Lightning` pull on #204: **8× ≥1M** education neighbours (was 6× on earlier main pull) — extras Veritasium *How Electricity Actually Works* + TED-Ed fish electricity; keep noise note on weak TED-Ed topical matches.
+- Prefer static-electricity / thunder / lightning / Franklin-kite neighbours for title/tags.
 
 ## Picture / tone (unchanged — no mint)
 

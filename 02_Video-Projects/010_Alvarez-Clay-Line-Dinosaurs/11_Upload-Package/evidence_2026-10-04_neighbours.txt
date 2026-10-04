@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 3,517,418 views | [Jellyfish predate dinosaurs. How have they survived so long? - David Gruber](https://youtu.be/yQduHyiWe9o) | ted-ed dinosaur extinction |
+| 2 | TED-Ed ★ | 2,006,347 views | [The ferocious predatory dinosaurs of Cretaceous Sahara - Nizar Ibrahim](https://youtu.be/8RI0JnB_OaE) | ted-ed dinosaur extinction |
+| 3 | TED-Ed ★ | 1,777,207 views | [When will the next mass extinction occur? - Borths, D'Emic, and Pritchard](https://youtu.be/RAdNCIIYXvo) | ted-ed dinosaur extinction |
+| 4 | TED ★ | 1,685,788 views | [Jack Horner: Shape-shifting dinosaurs](https://youtu.be/kQa11RMCeSI) | ted-ed dinosaur extinction |
+| 5 | TED-Ed ★ | 924,753 views | [How do we know what color dinosaurs were? - Len Bloch](https://youtu.be/qYijAZWdnBk) | ted-ed dinosaur extinction |
+| 6 | TED ★ | 923,163 views | [Hunting for dinosaurs showed me our place in the universe | Kenneth Lacovara | TED](https://youtu.be/o1Z4F4e2Bw4) | ted-ed alvarez dinosaurs |
+| 7 | TED ★ | 316,528 views | [Earth's mass extinctions | Peter Ward](https://youtu.be/3lYN_lXU9PA) | ted-ed asteroid alvarez iridium |
+| 8 | TED-Ed ★ | 302,115 views | [The first asteroid ever discovered - Carrie Nugent](https://youtu.be/VKMWqOfbGME) | ted-ed asteroid alvarez iridium |
+| 9 | TED ★ | 273,036 views | [Stewart Brand: The dawn of de-extinction. Are you ready?](https://youtu.be/XKc9MJDeqj0) | dinosaur extinction ted |
+| 10 | TED-Ed ★ | 251,083 views | [The asteroid that almost wiped out life on Earth - Sean P. S. Gulick](https://youtu.be/PUptWlp-hoI) | ted-ed dinosaur extinction |
+| 11 | TED ★ | 128,564 views | [A brief tour of the last 4 billion years (dinosaurs not included) | Lauren Sallan](https://youtu.be/_0J10j46-qQ) | dinosaur extinction ted |
+| 12 | TED ★ | 120,943 views | [The secret weapon that let dinosaurs take over the planet | Emma Schachner](https://youtu.be/xnfEBUI_YTE) | alvarez dinosaurs ted |
+
+Words the top neighbours share: —
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 10 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/evidence_2026-10-04_neighbours.json
