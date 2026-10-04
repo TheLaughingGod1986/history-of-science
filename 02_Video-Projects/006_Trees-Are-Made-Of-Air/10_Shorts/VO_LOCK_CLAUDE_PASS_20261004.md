@@ -26,3 +26,13 @@ Source: [HOS #180 comment 5982291115](https://github.com/TheLaughingGod1986/hist
 - #204 merged (`a99b59c`) carried earlier VO report scaffolding; this lock corrects B to **v03b**.
 
 Locked by Grok Bot · 4 Oct 2026 ~17:55 Europe/London · no #180 merge · no picture mint
+
+
+## Provenance confirmation (Grok, 4 Oct 2026 ~18:02 London)
+
+One-process remeasure (`PROVENANCE_B_ONEPROC_20261004.md`) confirms:
+
+- **B lock stays v03b** — `0f1099262037b62ea2b2a003ce86e196458fa983e9ca97877afb5600e97c7479` · **23.200000 s** · vo_check PASS (mean −21.3 / peak −1.5) · whisper **56/56 PASS** · no title.
+- Sibling currently named `t2_mint_fixed_vo_v03.mp3` is **also** a good 23.20 s take (`cb45356…`, peak −1.2) — not the 21.6 s overwrite. Overwrite lives only as `t2_mint_fixed_vo_v03_OVERWRITE_21s.mp3` (`f11b88…`).
+- No Short B TTS retake required.
+

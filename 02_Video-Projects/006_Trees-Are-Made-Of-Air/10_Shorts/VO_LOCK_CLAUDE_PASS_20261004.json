@@ -33,5 +33,26 @@
       "sha256": "5b5d84e560d51ed9ad6f9bf5588f458802620f48f008b9409c532f8a1ea4e269",
       "bytes": 387492
     }
-  ]
+  ],
+  "provenance_oneproc_20261004": {
+    "hold": "5982339769",
+    "measured_at": "2026-10-04T18:02:08+01:00",
+    "lock_B": "v03b",
+    "B_sha256": "0f1099262037b62ea2b2a003ce86e196458fa983e9ca97877afb5600e97c7479",
+    "B_duration_s": 23.2,
+    "B_vo_check": "PASS mean -21.3 peak -1.5",
+    "B_words": "56/56 PASS",
+    "sibling_v03_also_pass": {
+      "sha256": "cb45356fd60363aad92ba97a05b2fb8cbe7b6b61d7b4bb411ded8f4f9aa3f0bf",
+      "duration_s": 23.2,
+      "peak_db": -1.2,
+      "note": "also PASS; lock prefers v03b for safer peak"
+    },
+    "overwrite_reject": {
+      "sha256": "f11b88bc8919647f3d50fc30f44c83caab088dbb378be0613aa1512085d6a36a",
+      "duration_s": 21.6,
+      "file": "t2_mint_fixed_vo_v03_OVERWRITE_21s.mp3"
+    },
+    "retake": false
+  }
 }
