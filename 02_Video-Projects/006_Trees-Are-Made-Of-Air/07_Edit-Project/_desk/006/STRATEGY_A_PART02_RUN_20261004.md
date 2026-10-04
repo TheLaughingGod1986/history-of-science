@@ -39,3 +39,9 @@ Part 02 mint log cost_usd_total ≈ **$21.62**. No card spend.
 - Local Wan/LTX test queued (`LOCAL_WAN_LTX_TEST_QUEUE_20261004.md`); mint clear for ~22:19.
 - Parts 03–05 parked. Remotion + 007 still queued.
 - Do not merge #180.
+
+## Desk follow-up (Claude 5981276239) — Grok same day
+- Credit lag patch in `_vertex_credit_v01.py` (console − spend since plateau − £5).
+- Twin-FAIL: see `TWIN_FAIL_DISPOSITION_20261004.md`.
+- UAT quads 12+14–22: `uat_pending/` + `UAT_PENDING_12_14_22_20261004.md`.
+- No new mints.

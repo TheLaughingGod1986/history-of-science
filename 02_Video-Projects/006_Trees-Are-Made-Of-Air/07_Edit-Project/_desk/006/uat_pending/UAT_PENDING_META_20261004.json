@@ -1,0 +1,167 @@
+[
+  {
+    "stem": "12_pointer_short_t1",
+    "dur_s": 8.0,
+    "times": [
+      0.0,
+      2.64,
+      5.28,
+      7.92
+    ],
+    "motion": 1.476,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/12_pointer_short_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "14_why_grown_t1",
+    "dur_s": 6.0,
+    "times": [
+      0.0,
+      1.98,
+      3.96,
+      5.92
+    ],
+    "motion": 1.831,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/14_why_grown_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "15_desk_candle_t1",
+    "dur_s": 6.0,
+    "times": [
+      0.0,
+      1.98,
+      3.96,
+      5.92
+    ],
+    "motion": 0.932,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/15_desk_candle_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "16_water_drawing_t1",
+    "dur_s": 6.0,
+    "times": [
+      0.0,
+      1.98,
+      3.96,
+      5.92
+    ],
+    "motion": 1.445,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/16_water_drawing_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "17_mostly_wrong_t1",
+    "dur_s": 6.0,
+    "times": [
+      0.0,
+      1.98,
+      3.96,
+      5.92
+    ],
+    "motion": 6.899,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/17_mostly_wrong_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "18_charcoal_hearth_t1",
+    "dur_s": 8.0,
+    "times": [
+      0.0,
+      2.64,
+      5.28,
+      7.92
+    ],
+    "motion": 2.305,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/18_charcoal_hearth_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "19_ash_mound_t1",
+    "dur_s": 6.0,
+    "times": [
+      0.0,
+      1.98,
+      3.96,
+      5.92
+    ],
+    "motion": 0.708,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/19_ash_mound_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "20_shimmer_coals_t1",
+    "dur_s": 6.0,
+    "times": [
+      0.0,
+      1.98,
+      3.96,
+      5.92
+    ],
+    "motion": 2.344,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/20_shimmer_coals_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "21_gas_window_t1",
+    "dur_s": 8.0,
+    "times": [
+      0.0,
+      2.64,
+      5.28,
+      7.92
+    ],
+    "motion": 3.969,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/21_gas_window_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "22_shimmer_willow_t1",
+    "dur_s": 8.0,
+    "times": [
+      0.0,
+      2.64,
+      5.28,
+      7.92
+    ],
+    "motion": 5.999,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/22_shimmer_willow_t1_quad.jpg",
+    "pass_freeze": true
+  },
+  {
+    "stem": "08_haul_tree_t1_trim_0to4p8",
+    "dur_s": 4.833,
+    "times": [
+      0.0,
+      1.595,
+      3.19,
+      4.753
+    ],
+    "motion": 2.093,
+    "freeze_gt_0_5s": 0,
+    "freeze_detail": "",
+    "quad": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/uat_pending/08_haul_tree_t1_trim_0to4p8_quad.jpg",
+    "pass_freeze": true
+  }
+]

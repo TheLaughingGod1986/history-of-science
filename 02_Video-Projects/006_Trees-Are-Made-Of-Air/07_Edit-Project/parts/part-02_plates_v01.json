@@ -5,7 +5,7 @@
   "title": "Five Years and Two Ounces",
   "status": "BOARD_V01",
   "mint": false,
-  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v02 (VO_RETIME_v02.json) · priced (Claude desk task 5951184558, 2 Oct 2026)",
+  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v02 (VO_RETIME_v02.json) \u00b7 priced (Claude desk task 5951184558, 2 Oct 2026)",
   "script": "01_Script/trees_script_master_v02.md",
   "vo_file": "02_Voiceover/part02_five_years_and_two_ounces_v02.mp3",
   "vo_sha256": "ddd904b749ae2c30af92b89950e377c7ebb85aec4538858ae21f4ce4928b1a11",
@@ -94,7 +94,10 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 23.28,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "park": "tuesday_flow_quality",
+      "stand_in": "09_weights_169",
+      "edit_note": "PARK 2026-10-04 Claude 5981276239 twin-FAIL (no pot on pan). Tuesday Flow Quality if credits allow; until then hold 09_weights_169 balance composition as rough stand-in. No Vertex re-roll."
     },
     {
       "id": "03_willow_shoot_scale",
@@ -165,7 +168,7 @@
       "quality": "Fast",
       "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
       "prompt": "Premium Animistry-class 3D cartoon. Same Vilvoorde garden in one continuous time-lapse: spring leaves burst out on the willow in the clay pot, autumn leaves fall, snow settles, spring again; the willow climbs past the garden wall while the pot never changes. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
-      "use_s": 6.98,
+      "use_s": 7.9,
       "vo_land": [
         "Picture yourself in that garden.",
         "Every spring, the leaves burst out.",
@@ -176,7 +179,9 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 27.95,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "use_s_before_cut07": 6.98,
+      "edit_note": "2026-10-04 Claude 5981276239: extend use_s over 07 VO line; 07_explorer_snow CUT \u2014 t2 KEEP snow covers that line."
     },
     {
       "id": "07_explorer_snow",
@@ -187,7 +192,7 @@
       "quality": "Quality",
       "engine_reason": "Quality: explorer fidelity. Face and hair are UAT hard fail 4 (glasses, full hair, one Explorer); a Fast remint would cost more than the difference.",
       "prompt": "Premium Animistry-class 3D cartoon. Same Vilvoorde garden in snow, the willow now tall in its clay pot. Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He lifts a corner of the pierced lid, rubs a pinch of soil between finger and thumb, looks up and up the tall willow, scratches his head and walks off through the garden gate. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame.",
-      "use_s": 5.38,
+      "use_s": 0.0,
       "vo_land": [
         "Year after year the willow grows taller, and the pot of soil never changes."
       ],
@@ -196,7 +201,10 @@
       "cost_try1_gbp": 0.96,
       "cost_expected_gbp": 2.56,
       "cum_expected_gbp": 30.51,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "cut": true,
+      "use_s_before_cut": 5.38,
+      "edit_note": "CUT 2026-10-04 Claude 5981276239 twin-FAIL. 06_garden_years t2 KEEP snow covers the VO line; no Vertex re-roll."
     },
     {
       "id": "08_haul_tree",
@@ -216,7 +224,14 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 31.84,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "edit_note": "2026-10-04 Claude 5981276239: t1 trim in=0.00 out=4.80 (\u22653s clean before vanish) \u2192 UAT; t2 also has ~0\u20133.8s clean. Lock retry prompt if FAIL: 'tree stays on the balance pan for the whole shot, no one leaves frame'.",
+      "uat_trim": {
+        "take": 1,
+        "in_s": 0.0,
+        "out_s": 4.8,
+        "file": "raw/v01_trim/08_haul_tree_t1_trim_0to4p8.mp4"
+      }
     },
     {
       "id": "09_weights_169",
@@ -428,7 +443,7 @@
       "t_s": 159.85,
       "t": "2:39.85",
       "explorer": false,
-      "side_label": "62 POUNDS → 1 POUND OF ASH",
+      "side_label": "62 POUNDS \u2192 1 POUND OF ASH",
       "quality": "Fast",
       "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
       "prompt": "Premium Animistry-class 3D cartoon. Close on the cold hearth: one small mound of pale grey ash where the great heap of charcoal had been; a brush sweeps it into a little dish on a balance. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",

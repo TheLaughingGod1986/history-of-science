@@ -6,7 +6,7 @@
   "vertex_project": "gen-lang-client-0538779324",
   "vertex_location": "us-central1",
   "account": "benoats@googlemail.com",
-  "authority": "Claude on desk PR #180 comment 5951520953 (2 Oct 2026): mint 006 on Vertex to a £0 floor",
+  "authority": "Claude on desk PR #180 comment 5951520953 (2 Oct 2026): mint 006 on Vertex to a \u00a30 floor",
   "models": {
     "Quality": "veo-3.1-generate-001",
     "Fast": "veo-3.1-fast-generate-001"
@@ -138,7 +138,7 @@
       "submitted_at": "2026-10-03T09:58:43+00:00",
       "cost_usd": 0.8,
       "status": "FAIL",
-      "why": "Haul starts OK but willow+pot vanish ~last 1–2s (empty left pan). Subject loss. Remint once.",
+      "why": "Haul starts OK but willow+pot vanish ~last 1\u20132s (empty left pan). Subject loss. Remint once.",
       "at": "2026-10-03T10:05:09+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/08_haul_tree_t1.mp4",
       "sha256": "b497ba614359b97c62e0a10edcc07d1be6ed6d01e6e8f26f0fe6058d70d43c5f",
@@ -234,7 +234,7 @@
       "submitted_at": "2026-10-03T09:58:44+00:00",
       "cost_usd": 0.6,
       "status": "KEEP",
-      "why": "Copper can pours through pierced lid; pot locked. Minor can-scale glitch last ~0.5s — usable window clean.",
+      "why": "Copper can pours through pierced lid; pot locked. Minor can-scale glitch last ~0.5s \u2014 usable window clean.",
       "at": "2026-10-03T10:03:25+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/05_pure_water_t1.mp4",
       "sha256": "299f21946b2edee5b9f3c54f9f1dd3f449cddbdd693daf06dbbbb6b4c0a0055e",
@@ -266,7 +266,7 @@
       "submitted_at": "2026-10-03T09:58:45+00:00",
       "cost_usd": 0.8,
       "status": "FAIL",
-      "why": "200 ledger sharp but clay pot sits beside the balance, left pan empty — story needs soil ON the pan opposite weights. Remint once.",
+      "why": "200 ledger sharp but clay pot sits beside the balance, left pan empty \u2014 story needs soil ON the pan opposite weights. Remint once.",
       "at": "2026-10-03T10:03:53+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/02_balance_200_t1.mp4",
       "sha256": "783ec6e23f4d839673dee85e3149a7f9736f946999bca73840ddbf5a3007b896",
@@ -362,7 +362,7 @@
       "submitted_at": "2026-10-03T09:59:34+00:00",
       "cost_usd": 1.2,
       "status": "FAIL",
-      "why": "Explorer on-model and lid pinch OK, but scene is sunny spring garden — board requires snow. Remint once with snow lock.",
+      "why": "Explorer on-model and lid pinch OK, but scene is sunny spring garden \u2014 board requires snow. Remint once with snow lock.",
       "at": "2026-10-03T10:05:02+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/07_explorer_snow_t1.mp4",
       "sha256": "a83da3a80f0cefd874ef3d5bae3148ddb56c7893c3a03bd8bbc3e984e8111066",
@@ -774,7 +774,7 @@
       "submitted_at": "2026-10-04T14:48:29+00:00",
       "cost_usd": 1.2,
       "status": "FAIL",
-      "why": "Twin FAIL stop (no 3rd). Still sunny spring garden; only light white particles late — not board snow / winter lock.",
+      "why": "Twin FAIL stop (no 3rd). Still sunny spring garden; only light white particles late \u2014 not board snow / winter lock.",
       "at": "2026-10-04T14:50:27+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/07_explorer_snow_t2.mp4",
       "sha256": "5c938f0b0b50f5b67b28c1fe07be47cb798e8951340da060a8aed9d00327ec8f",
@@ -1174,8 +1174,32 @@
       "sha256": "9a3d8911b87ac0935ac069bcca0493ab87c11ffdf6e724bfbf0dc587d40b3b8f",
       "model": "veo-3.1-fast-generate-001",
       "path": "vertex"
+    },
+    "07_explorer_snow": {
+      "disposition": "CUT",
+      "authority": "Claude 5981276239",
+      "note": "extend 06_garden_years t2 use_s over 07 line; no Vertex remint"
+    },
+    "08_haul_tree": {
+      "disposition": "TRIM_UAT",
+      "take": 2,
+      "use_s": 3.5,
+      "path": "07_Edit-Project/_desk/006/08_haul_tree_t2_trim/08_haul_tree_t2_use_3p5s.mp4",
+      "authority": "Claude 5981276239",
+      "note": "\u22653s clean before vanish; else park post-Tue with lock prompt"
+    },
+    "02_balance_200": {
+      "disposition": "FLOW_AFTER_TUESDAY",
+      "stand_in": "09_weights_169 t1 balance composition",
+      "authority": "Claude 5981276239",
+      "note": "no characters \u2192 Flow Quality if credits; pot on pan in start still; no Vertex remint"
     }
   },
   "cost_usd_total": 21.619,
-  "updated": "2026-10-04T14:51:24+00:00"
+  "updated": "2026-10-04T14:51:24+00:00",
+  "desk_followup_5981276239": {
+    "at": "2026-10-04T15:01:35+00:00",
+    "from": "grok",
+    "no_new_mints": true
+  }
 }

@@ -1,0 +1,1 @@
+motion=6.90 freezes_gt_0.5s=0 verdict=MOVING

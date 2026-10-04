@@ -133,22 +133,65 @@ def film_spend_usd() -> float:
     return total
 
 
+def spend_usd_since(iso_at: str) -> float:
+    """Sum take + still costs across PART mint logs with timestamp > iso_at (lag accounting)."""
+    total = 0.0
+    for f in sorted(EDIT.glob("PART0*_MINT_LOG_v01.json")):
+        log = json.loads(f.read_text())
+        for t in log.get("takes", []):
+            ts = t.get("submitted_at") or t.get("at") or ""
+            if ts > iso_at:
+                total += float(t.get("cost_usd") or 0.0)
+        for s in log.get("stills", []):
+            ts = s.get("at") or ""
+            if ts > iso_at:
+                total += float(s.get("cost_usd") or 0.0)
+    return total
+
+
+def lag_plateau_reading() -> dict:
+    """First reading of the equal-£ lag plateau ending at the latest console reading."""
+    if not CREDIT_LOG.exists():
+        raise SystemExit("STOP: no VERTEX_CREDIT_LOG_v01.json — run _vertex_credit_v01.py first")
+    rs = json.loads(CREDIT_LOG.read_text()).get("readings", [])
+    if not rs:
+        raise SystemExit("STOP: credit log has no readings")
+    last = rs[-1]
+    plateau = last
+    for r in reversed(rs):
+        if abs(float(r["free_trial_remaining_gbp"]) - float(last["free_trial_remaining_gbp"])) < 0.005:
+            plateau = r
+        else:
+            break
+    return plateau
+
+
 def projected_gbp(extra_usd: float = 0.0) -> float:
-    """Free Trial left after everything 006 has spent: the lower of (base − all logged spend) and
-    the latest console reading (which lags by hours, and the billing account is shared)."""
-    est = CREDIT_BASE_GBP - (film_spend_usd() + extra_usd) * GBP_PER_USD
-    if CREDIT_LOG.exists():
-        rs = json.loads(CREDIT_LOG.read_text()).get("readings", [])
-        if rs:
-            est = min(est, float(rs[-1]["free_trial_remaining_gbp"]) - extra_usd * GBP_PER_USD)
-    return est
+    """Lag-aware Free Trial estimate (Claude #180 5981276239).
+
+    est_remaining = last_console − (logged Vertex spend since that reading) − extra
+    When consecutive readings share the same £ (console lag), baseline is the FIRST of them.
+    NEVER trust the console figure alone.
+    """
+    plateau = lag_plateau_reading()
+    spend = spend_usd_since(plateau["at"]) + extra_usd
+    return float(plateau["free_trial_remaining_gbp"]) - spend * GBP_PER_USD
+
+
+def usable_gbp(extra_usd: float = 0.0) -> float:
+    """Usable = est_remaining − FLOOR_GBP (Claude #180 credit-lag fix)."""
+    return projected_gbp(extra_usd) - FLOOR_GBP
 
 
 def guard(cost_usd: float) -> None:
     left = projected_gbp(cost_usd)
+    use = left - FLOOR_GBP
     if left < FLOOR_GBP:
-        raise SystemExit(f"STOP: projected Free Trial £{left:.2f} after this ${cost_usd:.2f} would fall "
-                         f"below the £{FLOOR_GBP:.0f} floor. Report to the desk.")
+        raise SystemExit(
+            f"STOP: lag-aware Free Trial £{left:.2f} after this ${cost_usd:.2f} would fall "
+            f"below the £{FLOOR_GBP:.0f} floor (usable £{use:.2f}). "
+            f"Formula: console_plateau − spend_since − job. Report to the desk."
+        )
 
 
 def load_log() -> dict:
@@ -162,7 +205,7 @@ def load_log() -> dict:
         "vertex_project": PROJECT,
         "vertex_location": LOCATION,
         "account": ACCOUNT,
-        "authority": "Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): mint 006 Part 02 on Vertex with £5 lag floor; usable = remaining − 5",
+        "authority": "Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): mint 006 Part 02 on Vertex with £5 lag floor; usable = console_plateau − spend_since − 5 (5981276239)",
         "models": MODELS,
         "image_model": IMAGE_MODEL,
         "pricing_usd": {"veo_per_s_video_only_1080p": USD_PER_S, "still": USD_PER_STILL,
@@ -463,7 +506,8 @@ def cmd_total(_a) -> None:
     print(f"part {PART}: takes={len(log['takes'])} stills={len(log['stills'])} keep={keeps}/{n} "
           f"cost_usd=${log['cost_usd_total']:.2f} (lost ${lost:.2f})")
     print(f"film 006 Vertex spend ${film_spend_usd():.2f} · projected Free Trial "
-          f"£{projected_gbp():.2f} (floor £{FLOOR_GBP:.0f}, £/$ {GBP_PER_USD})")
+          f"£{projected_gbp():.2f} usable £{usable_gbp():.2f} "
+          f"(floor £{FLOOR_GBP:.0f}, £/$ {GBP_PER_USD}, lag-aware)")
 
 
 def cmd_auto(a) -> None:
