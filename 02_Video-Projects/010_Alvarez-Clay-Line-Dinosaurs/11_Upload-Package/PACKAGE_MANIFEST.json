@@ -25,24 +25,24 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Scaffold only (4 Oct 2026 write lane). Script on main via #208 (review 92.1 PASS). FACT_NOTES + HARD_CHECKS this PR (desk #180 claim 5982333546). Titles/schedule DRAFT for Claude rewrite; nothing uploaded. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 10 education \u22651M). No VO yet \u2014 waits Claude. No picture mint. Proposed air Thu 3 Dec 2026 18:00 UK = 18:00 UTC (GMT).",
+  "note": "Scaffold only (4 Oct 2026 write lane). Script on main via #208 (review 92.1 PASS). FACT_NOTES + HARD_CHECKS this PR (desk #180 claim 5982333546). Titles/schedule DRAFT for Claude rewrite; nothing uploaded. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 10 education ≥1M). No VO yet — waits Claude. No picture mint. Proposed air Thu 3 Dec 2026 18:00 UK = 18:00 UTC (GMT).",
   "neighbours": {
     "phrases": [
       "dinosaurs",
-      "asteroid",
-      "iridium"
+      "clay",
+      "line"
     ],
     "checked": "2026-10-04",
     "videos": [
       {
         "id": "dFCbJmgeHmA",
-        "channel": "Kurzgesagt \u2013 In a Nutshell",
-        "title": "The Day the Dinosaurs Died \u2013 Minute by Minute",
+        "channel": "Kurzgesagt – In a Nutshell",
+        "title": "The Day the Dinosaurs Died – Minute by Minute",
         "views": 23044479
       },
       {
         "id": "pjoQdz0nxf4",
-        "channel": "Kurzgesagt \u2013 In a Nutshell",
+        "channel": "Kurzgesagt – In a Nutshell",
         "title": "How The Dinosaurs Actually Died",
         "views": 8826146
       },
@@ -95,6 +95,6 @@
         "views": 1685788
       }
     ],
-    "note": "From evidence_2026-10-04_neighbours.json (gate PASS: 10 education \u22651M; TED-Ed/TED yes). Prefer Kurzgesagt / SciShow / Be Smart impact explainers and clay/iridium/Alvarez angle over off-topic dinosaur colour or de-extinction hits. Crowded public search on bare 'what killed the dinosaurs'."
+    "note": "From evidence_2026-10-04_neighbours.json (gate PASS: 10 education ≥1M; TED-Ed/TED yes). Prefer Kurzgesagt / SciShow / Be Smart impact explainers and clay/iridium/Alvarez angle over off-topic dinosaur colour or de-extinction hits. Crowded public search on bare 'what killed the dinosaurs'."
   }
 }
