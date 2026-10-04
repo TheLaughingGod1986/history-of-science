@@ -50,21 +50,26 @@ One TTS retake each for A and B after v01 FAIL; C one take. B's remaining silenc
 
 ---
 
+---
+
 ## Follow-up 4 Oct 2026 ~17:52 London — Short B retake after #205 merge
 
-#205 merged (Claude Shorts scripts + closing line). Recorded **one new TTS take** of Short B with the 56-word script including *"Somehow, the little green plant had made the air good again."* Title not spoken. No silence-gap squeeze (peak trim only).
+#205 merged (Claude Shorts scripts + closing line). Recorded **one new TTS take** of Short B with the 56-word script including "Somehow, the little green plant had made the air good again." Title not spoken. No silence-gap squeeze (peak trim only).
 
 ### Voice lock (unchanged)
-- Ben Orbit Narrator /  /  / speed 1.04
+- Name: Ben Orbit Narrator
+- VOICE_ID: kDch6ACCIpqgQ0NsU9kk
+- MODEL_ID: eleven_v3
+- Settings: stability 0.34, similarity_boost 0.78, style 0.42, speed 1.04
 
 ### Short B v03
 
 | Take | Duration | vo_check | Path | sha256 |
 |---|---|---|---|---|
-| v03 raw TTS | 21.60 s | FAIL peak −0.8 dB |  | f11b88bc8919647f3d50fc30f44c83caab088dbb378be0613aa1512085d6a36a |
-| **v03b KEEP** (volume −0.3 dB only; no gap squeeze) | **23.20 s** | **PASS** mean −21.3 / peak −1.5; words 56/56 |  | 0f1099262037b62ea2b2a003ce86e196458fa983e9ca97877afb5600e97c7479 |
+| v03 raw TTS | 21.60 s | FAIL peak −0.8 dB | vo/t2_mint_fixed_vo_v03.mp3 | f11b88bc8919647f3d50fc30f44c83caab088dbb378be0613aa1512085d6a36a |
+| **v03b KEEP** (volume −0.3 dB only; no gap squeeze) | **23.20 s** | **PASS** mean −21.3 / peak −1.5; words 56/56 | vo/t2_mint_fixed_vo_v03b.mp3 | 0f1099262037b62ea2b2a003ce86e196458fa983e9ca97877afb5600e97c7479 |
 
-### Word checks (faster-whisper small.en under Py 3.12 )
+### Word checks (faster-whisper small.en under Py 3.12 .venv312)
 
 | Short | Take | vo_check | Whisper note |
 |---|---|---|---|
@@ -72,6 +77,6 @@ One TTS retake each for A and B after v01 FAIL; C one take. B's remaining silenc
 | B | **v03b** | **PASS** | Closing line heard: "Somehow the little green plant had made the air good again." |
 | C | v01 | **PASS** (warn: pace 139; sounds-alike Ingenhousz→Ingenhaus) | Keep |
 
-Evidence dir:  (, , , ).
+Evidence dir: `_desk/006/shorts_vo_20261004/wordcheck_20261004/` (vo_check_A_v02.json, vo_check_B_v03b.json, vo_check_C_v01.json, *_whisper.json).
 
 No picture spend. 007 long VO not touched (other lane).
