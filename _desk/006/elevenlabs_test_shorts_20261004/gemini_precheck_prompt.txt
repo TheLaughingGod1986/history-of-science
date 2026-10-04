@@ -1,0 +1,24 @@
+You are the HOS Shorts critic (Gemini). Check TWO test Short scripts against HOS_STRATEGY.md Short hook (22–27s) and FACT_NOTES for film 006.
+
+Return: PASS or FAIL per Short, 3–6 bullet notes each, and one line overall GO/NO-GO for minting as **test files only** (not for upload). Cite which FACT_NOTES rows the numbers match. Do not invent numbers.
+
+## Short hook rules (from HOS_STRATEGY)
+- 22–27 s. Two lines then one hard fact. No greeting.
+- Line 1 (5–7 words): surprising truth in first second.
+- Frame 0 already moving; thing the title names on screen.
+- First words are the claim. Hook caption 2–4 words, yellow on hook word.
+- Title card around mid Short; loop ending preferred.
+
+## FACT_NOTES anchors (006 Trees Are Made Of Air)
+- Van Helmont: 200 lb dried soil; willow 5 lb start; later 169 lb (~3 oz); soil ~200 lb less ~2 oz; *Ortus Medicinae* 1648.
+- Priestley: 17 Aug 1771 mint into injured air; 27 Aug candle burns well; *Phil. Trans.* 62 (1772). Called air "injured". No mouse required in Short T2.
+
+## Short T1 VO
+"A tree is built from thin air. One man spent five years proving the soil wasn't feeding it. He planted a willow in two hundred pounds of dried soil and gave it only water. Five years later the tree weighed a hundred and sixty-nine pounds, and the soil had lost just two ounces. The Willow Tree That Was Made of Air."
+
+Shots: willow+air 0–3 MADE OF AIR; van Helmont soil/balance 3–7 200 POUNDS OF SOIL; seasons lock 7–11 FIVE YEARS; title card 11–15; weigh tree 15–20 169 POUNDS; loop pinch soil 20–25 ONLY 2 OUNCES GONE.
+
+## Short T2 VO
+"A sprig of mint repaired the air. Joseph Priestley burned a candle in a sealed jar until the flame died, and no new flame would light. He slid in a sprig of mint and waited. Ten days later, a candle burned bright in that same air. The Willow Tree That Was Made of Air."
+
+Shots: mint under jar 0–3 MINT FIXED THE AIR; Priestley candle dies 3–7 "INJURED" AIR; second candle + mint + 17 AUGUST 7–11; title 11–15; 27 AUGUST candle burns 15–20; loop 20–25 PLANTS REPAIR THE AIR. No mouse.
