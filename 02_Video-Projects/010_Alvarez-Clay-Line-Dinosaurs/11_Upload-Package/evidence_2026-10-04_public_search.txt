@@ -1,0 +1,8 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| what killed the dinosaurs | yes | BBC Earth Science 2,039,692 · Kurzgesagt – In a Nutshell 8,826,146 · CBC Kids 875,423 · Kurzgesagt – In a Nutshell 23,044,479 · The Shadow Priest 88,020 |
+| alvarez asteroid iridium | no | GBH Archives 2,804 · Triple A Science 2,390 · Learn Fast 50 · Discovery Everyday 58 · chronozoom 19,254 |
+| clay line dinosaurs | related: clay animal figures | Super Toons TV - Kids Learning Videos 586,159 · ChupiChapa 2,457,326 · Sanding Shit 14,217,042 · Art & Craft 306,742 · Fritz Hoppe 87,212 |
+| dinosaur extinction asteroid | related: dinosaur extinction asteroid impact place; extinction dinosaurs asteroid impact; asteroid dinosaur extinction documentary | Your Discovery Science 26,336,330 · PBS Eons 855,749 · Kurzgesagt – In a Nutshell 23,044,479 · ExtinctZoo  4,567,026 · ExtinctZoo  685,690 |
+
+Raw pull: 02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/evidence_2026-10-04_public_search.json

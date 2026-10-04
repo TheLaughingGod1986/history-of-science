@@ -1,0 +1,8 @@
+| Phrase | Autocomplete? | Top results (GB) |
+|---|---|---|
+| why does the moon not fall | related: why does the moon not fall to earth; why moon not fall on earth in hindi; what if the moon never existed | Mr Verse 36,924 · NASA Night Sky Network 2,206,328 · BYJU'S 1,001,943 · StarTalk 1,328,556 · Physics Daily 5,431 |
+| newton gravity moon | related: newton gravity | Mr Verse 36,924 · Learn Bright 1,533,958 · Klonusk 2,900,396 · Sabins 1,796,796 · VideoFromSpace 457,757 |
+| what is gravity newton | no | Learn Bright 1,533,958 · Peekaboo Kidz 2,377,303 · Science Time 933,468 · CrashCourse 1,387,363 · ScienceClic English 89,666 |
+| falling moon gravity | related: moon falling on earth; moon gravity moon gravity | Science News 695,579 · MetaBallStudios 29,837,727 · Mr Verse 36,924 · NASA Solar System 842,603 · JoBlo Movie Clips 167,458 |
+
+Raw pull: 02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/evidence_2026-10-04_public_search.json

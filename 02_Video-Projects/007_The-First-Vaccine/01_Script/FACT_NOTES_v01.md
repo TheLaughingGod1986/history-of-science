@@ -1,6 +1,6 @@
 # FACT_NOTES_v01 — 007 The First Vaccine (Jenner, cowpox, 1796)
 
-Planning notes only. No full script yet. Every claim below needs a primary or solid secondary before it enters VO.
+Planning + verification notes. Script master v01 exists on branch `claude/hos-repo-access-qdfmrk` (PR #201). Every claim below needs a primary or solid secondary before it enters VO — see **New claims** section (sourced 4 Oct 2026).
 
 ## Script rules (lock before drafting)
 
@@ -45,7 +45,7 @@ Planning notes only. No full script yet. Every claim below needs a primary or so
 1. ~~Exact *Inquiry* sentence on Phipps's age~~ — **LOCKED:** "a healthy boy, about eight years old" (*Inquiry*, Case XVII).
 2. ~~Exact *Inquiry* wording for Blossom~~ — **LOCKED:** name is **absent** from the *Inquiry*; tradition/museum only. Rule: "later called Blossom" or omit; never on-screen as primary.
 3. ~~Exact date of the later smallpox test~~ — **LOCKED:** **1 July 1796** (*Inquiry*, Case XVII). Calm one-line wording still to draft in script v01.
-4. Confirm Case XVI / Case XVII numbering against the Sampson Low 1798 edition we cite (Wikisource / James Lind Library agree; flag if a different printing renumbers).
+4. ~~Confirm Case XVI / Case XVII numbering against the Sampson Low 1798 edition~~ — **LOCKED 4 Oct 2026:** Wikisource / Sampson Low 1798: XVI = Nelmes, XVII = Phipps boy.
 5. After-act: 1980 eradication + *vacca* — no modern politics.
 6. One-line "first" care beat (Jesty 1774 + variolation context → Jenner's test + publication) — draft in script v01; do not overclaim "first ever".
 
@@ -54,3 +54,42 @@ Planning notes only. No full script yet. Every claim below needs a primary or so
 - Person · room · proof: **Jenner · Berkeley · cowpox → Phipps (1 July 1796 challenge)**.
 - Prefer milkmaid's hand, dairy, Inquiry page, teach cards — not gore.
 - 006 Trees keeps Vertex/Veo picture priority; this film stays planning-only until Claude accepts boards and Ben decides credit.
+
+
+## New claims from script master v01 (verified 4 Oct 2026 — Grok desk)
+
+Every row from `vaccine_script_master_v01.md` § "New claims for FACT_NOTES (verify before VO)". Sourced or flagged. Do **not** mint 007 VO until Claude clears any FLAG rows.
+
+| Claim in script | Verdict | Cite / notes |
+|---|---|---|
+| About three in ten people who caught smallpox died (variola major) | **OK** | WHO: variola major fatality ~30%; CDC overview same ("about 30%"). WHO Q&A: fatal in up to 30% of cases. [WHO clinical diagnosis; CDC Smallpox Overview] |
+| "The speckled monster" as a period name for smallpox | **OK** | Standard historical nickname (also "spotted death" / "great fire" in Hopkins framing). Yale HIST 234 uses the title; Irwin Sherman ch. "Smallpox: the Speckled Monster". Safe as period colour, not a primary Jenner quote. |
+| Variolation: matter from a smallpox sore scratched into a healthy arm; usually milder; some died; could spread smallpox | **OK** | Standard medical history. Jenner *Inquiry* itself treats variolous inoculation as familiar practice and warns mismanaged matter still killed. ODNB / Riedel (PMC1200696) summarise risks: milder course usual, but deaths and onward spread occurred. |
+| Jenner was variolated as a boy | **OK** | Riedel (PMC1200696) and standard bios: Jenner inoculated with smallpox in **1757**, aged about eight; mild disease, thereafter immune. ODNB-class secondary. |
+| Jenner studied cuckoos (Royal Society paper 1788) and hedgehogs, launched a hydrogen balloon (1784), wrote verse | **OK** (keep light) | Cuckoo: Jenner, "Observations on the Natural History of the Cuckoo", *Phil. Trans.* 1788 (via Hunter). Hedgehogs: Hunter–Jenner letters 1775–77 on vital heat. Hydrogen balloon launch **1784** (local/Berkeley tradition; Jenner Museum / bios). Verse: secondary; one colour beat only. |
+| John Hunter to Jenner: "But why think, why not try the experiment?" (letter, 1775) | **OK** with context | Hunter letter **2 Aug 1775** (hedgehog heat experiments): "I thank you for your experiment on the hedgehog… I think your solution is just; but why think? why not try the experiment?" (RCS / Baron tradition; quoted across Hunter–Jenner correspondence). **Not** about cowpox — about testing a hedgehog hypothesis. Script may use the quote; do not imply Hunter was coaching the 1796 vaccination. |
+| Jenner collected cowpox cases for years before 1796 | **OK** | *Inquiry* (1798) Cases **I–XV** are prior observational / challenge histories before the May 1796 transfer (Case XVI–XVII). |
+| Sarah Nelmes caught cowpox from her master's cow | **OK** | *Inquiry* **Case XVI**: "SARAH NELMES, a dairymaid… was infected with the Cow Pox from her master's cows in May, 1796." Case XVII note: matter from her hand sore. |
+| Phipps: "son of a labourer" | **FLAG — script overclaims Inquiry wording** | *Inquiry* **Case XVII** wording locked: **"a healthy boy, about eight years old"** only. No father, labourer, or gardener in the *Inquiry*. Later biography (e.g. Wikipedia citing parish/secondary) calls him son of a poor landless labourer / Jenner's gardener — that is **secondary**, not Jenner's description. **Script line ~76** currently: "Jenner described him as a healthy boy, about eight years old, the son of a local labourer" — **rewrite**: drop "Jenner described… son of a local labourer", or split: Inquiry quote for age/health; labourer/gardener only if attributed to later sources. |
+| Phipps's mild symptoms around day 7–9 (slight fever, poor appetite, restless night) | **OK** | *Inquiry* Case XVII: 7th day uneasiness in axilla; 9th day "a little chilly, lost his appetite, and had a slight head-ach… spent the night with some degree of restlessness"; next day "perfectly well." |
+| Variolated again "some months afterwards", no effect | **OK** | *Inquiry* Case XVII: after 1 July 1796 challenge, "Several months afterwards, he was again inoculated with variolous matter, but no sensible effect was produced on the constitution." |
+| Jenner paid to print the *Inquiry* himself (1798) | **OK** | Title page: **"PRINTED, FOR THE AUTHOR, BY SAMPSON LOW"** (London, 1798). Self-published / author-paid printing is the correct reading. Baron *Life of Jenner* supports personal cost of printing/distribution. |
+| Smallpox could leave survivors blind | **OK** | Standard complication. JAMA Ophthalmology / clinical reviews: ocular disease in ~5–9%; blindness ~1% historically via keratitis / secondary infection. WHO/CDC clinical material lists eye involvement. Phrase as "could leave survivors blind", not "usually". |
+| Cartoons of people sprouting cow heads (Gillray, *The Cow-Pock*, 1802) | **OK** | James Gillray, *The Cow-Pock—or—the Wonderful Effects of the New Inoculation!* (1802). British Museum / Loc holdings. Satire of St Pancras Smallpox and Inoculation Hospital fears. |
+| Jenner sent cowpox matter freely and vaccinated the poor free in a hut in his Berkeley garden (the "Temple of Vaccinia") | **OK** | Jenner Museum / Historic England: rustic garden summerhouse at The Chantry ("Temple of Vaccinia") where Jenner vaccinated local poor free. Matter shared widely by post — standard ODNB / museum accounts. |
+| Vaccination spread across Britain, Europe and the Americas within a few years | **OK** | Standard histories. Anchor example: Balmis / Spanish Royal Philanthropic Vaccine Expedition **1803–1813** carried cowpox vaccine to Spanish America and the Philippines. |
+| Pasteur proposed "vaccine" for all such treatments in Jenner's honour, 1881 | **OK** | Pasteur, address to 7th International Medical Congress, London, Aug 1881 (*Br Med J* 1881;2:283): extended "vaccination" as homage to Jenner ("immense services… one of the greatest men of England"). |
+| Ring vaccination ("vaccinating everyone around each new case") | **OK** | WHO Intensified Smallpox Eradication Programme (from **1967**): surveillance + containment / ring vaccination of contacts and surrounding community. |
+| Smallpox killed hundreds of millions over the centuries; ~300 million in the 20th century alone | **OK** (as estimate) | WHO commemorative materials and standard eradication histories cite **~300 million** 20th-century deaths. "Hundreds of millions over the centuries" is the usual order-of-magnitude framing — keep as estimate, not a census. |
+| Declared eradicated 8 May 1980 (World Health Assembly) | **OK** | WHA33.3 / WHO: World Health Assembly declared smallpox eradicated **8 May 1980** (global commission certified Dec 1979). |
+| Hand-off: Franklin's kite (provisional, if 008 is Lightning) | **OK / topic lock** | Claude desk lock 4 Oct 2026: **008 = Lightning (Franklin's kite)**. Scaffold separately; no picture spend. |
+
+### FLAG summary for Claude rewrite (blocks 007 VO)
+
+1. **Phipps / "son of a labourer"** — *Inquiry* does **not** say this. Script currently attributes it to Jenner's description. Fix before VO.
+2. Optional soft note (not a hard fail): Hunter's "why not try the experiment?" is **1775 hedgehog**, not cowpox coaching — keep quote, avoid false causal link.
+
+### Case numbering check (open check #4)
+
+Sampson Low 1798 / Wikisource text: **Case XVI = Sarah Nelmes**, **Case XVII = Phipps (unnamed in text; "healthy boy…")**. Agrees with prior lock. No renumber flag.
+

@@ -1,0 +1,20 @@
+| # | Channel | Views | Title | Found by |
+|---|---|---|---|---|
+| 1 | TED-Ed ★ | 9,912,318 views | [Newton’s three-body problem explained - Fabio Pacucci](https://youtu.be/D89ngRr4uZg) | ted-ed gravity |
+| 2 | TED-Ed ★ | 2,921,138 views | [Newton's 3 Laws, with a bicycle - Joshua Manley](https://youtu.be/JGO_zDWmkvk) | ted-ed gravity |
+| 3 | TED-Ed ★ | 1,657,796 views | [How do geckos defy gravity? - Eleanor Nelsen](https://youtu.be/YeSuQm7KfaE) | ted-ed gravity |
+| 4 | TED-Ed ★ | 813,006 views | [The moon illusion - Andrew Vanden Heuvel](https://youtu.be/RXkYjL_7jME) | ted-ed newton gravity moon |
+| 5 | TED-Ed ★ | 597,158 views | [How far would you have to go to escape gravity? - Rene Laufer](https://youtu.be/YlxKh4oCKhw) | ted-ed gravity |
+| 6 | TED-Ed ★ | 543,420 views | [How to think about gravity - Jon Bergmann](https://youtu.be/lY3XV_GGV0M) | ted-ed gravity |
+| 7 | TED-Ed ★ | 534,073 views | [Could you live on the moon? - Alex Gendler](https://youtu.be/I5V2tcg1BvQ) | ted-ed newton gravity moon |
+| 8 | TED-Ed ★ | 459,518 views | [Gravity and the human body - Jay Buckey](https://youtu.be/7CuYx9mZCQA) | ted-ed gravity |
+| 9 | TED-Ed ★ | 204,984 views | [Gravity vs. Pressure: The battle that formed the universe - Fabio Pacucci](https://youtu.be/kU8s_4HBG98) | ted-ed gravity |
+| 10 | Veritasium | 15,476,982 views | [What Everyone Gets Wrong About Gravity](https://youtu.be/XRr1kaXKBsU) | gravity ted |
+| 11 | CrashCourse | 1,387,363 views | [Newtonian Gravity: Crash Course Physics #8](https://youtu.be/7gf6YpdvtE0) | newton gravity moon |
+| 12 | FuseSchool - Global Education | 596,810 views | [Weight, Force, Mass &  Gravity | Forces & Motion | Physics | FuseSchool](https://youtu.be/U78NOo-oxOY) | ted-ed newton gravity moon |
+
+Words the top neighbours share: fabio pacucci, the moon, about gravity
+TED-Ed/TED neighbour: yes
+Big neighbours (≥ 1,000,000 views): 5 (need 3)
+Neighbour gate (≥ 3 education videos with 1,000,000+ views): PASS
+Raw pull: 02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/evidence_2026-10-04_neighbours.json
