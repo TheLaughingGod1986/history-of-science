@@ -4,7 +4,7 @@
 
 Rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STUDIO_PLAYBOOK.md` §3 (Short) and §7. Voice: Ben Orbit Narrator, same settings as the long. Picture is cut from the long's own plates wherever possible.
 
-Every Short: 22–27 s; the named thing at frame 0, already moving; the first words are the claim; a visible change by 1 s; a 2–4 word hook caption on frame 0 (yellow on the hook word); the Explorer never at frame 0; captions throughout; the promoted long's **exact live title** on screen at 9–14 s; the last 4 s return to the opening picture so it loops; `gate_shorts_open.py check` PASS; Studio Related → the 007 long; no `/go/`, no pinned comment.
+Every Short: 22–27 s; the named thing at frame 0, already moving; the first words are the claim; a visible change by 1 s; a 2–4 word hook caption on frame 0 (yellow on the hook word); the Explorer never at frame 0; captions throughout; the promoted long's **exact live title** on screen at 9–14 s, never spoken; the last 4 s return to the opening picture so it loops; `gate_shorts_open.py check` PASS; Studio Related → the 007 long; no `/go/`, no pinned comment.
 
 **Promoted long (title on screen at 9–14 s):** *Why Vaccines Are Named After a Cow* (proposed; re-read the live title before export).
 
