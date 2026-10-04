@@ -3,9 +3,9 @@
   "working_title": "The Willow Tree That Was Made of Air",
   "part": "02",
   "title": "Five Years and Two Ounces",
-  "status": "BOARD_V01",
+  "status": "UAT_APPLIED_PART02_ROUGH_V02",
   "mint": false,
-  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v02 (VO_RETIME_v02.json) \u00b7 priced (Claude desk task 5951184558, 2 Oct 2026)",
+  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v02 (VO_RETIME_v02.json) · priced (Claude desk task 5951184558, 2 Oct 2026)",
   "script": "01_Script/trees_script_master_v02.md",
   "vo_file": "02_Voiceover/part02_five_years_and_two_ounces_v02.mp3",
   "vo_sha256": "ddd904b749ae2c30af92b89950e377c7ebb85aec4538858ae21f4ce4928b1a11",
@@ -74,7 +74,8 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 21.95,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP"
     },
     {
       "id": "02_balance_200",
@@ -97,7 +98,8 @@
       "beyond_floor": false,
       "park": "tuesday_flow_quality",
       "stand_in": "09_weights_169",
-      "edit_note": "PARK 2026-10-04 Claude 5981276239 twin-FAIL (no pot on pan). Tuesday Flow Quality if credits allow; until then hold 09_weights_169 balance composition as rough stand-in. No Vertex re-roll."
+      "edit_note": "PARK 2026-10-04 Claude 5981276239 twin-FAIL (no pot on pan). Tuesday Flow Quality if credits allow; until then hold 09_weights_169 balance composition as rough stand-in. No Vertex re-roll.",
+      "uat_disposition": "PARK_STANDIN"
     },
     {
       "id": "03_willow_shoot_scale",
@@ -117,7 +119,8 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 24.29,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP"
     },
     {
       "id": "04_lid_rain",
@@ -137,7 +140,8 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 25.62,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP"
     },
     {
       "id": "05_pure_water",
@@ -157,7 +161,8 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 26.63,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP"
     },
     {
       "id": "06_garden_years",
@@ -181,7 +186,8 @@
       "cum_expected_gbp": 27.95,
       "beyond_floor": false,
       "use_s_before_cut07": 6.98,
-      "edit_note": "2026-10-04 Claude 5981276239: extend use_s over 07 VO line; 07_explorer_snow CUT \u2014 t2 KEEP snow covers that line."
+      "edit_note": "2026-10-04 Claude 5981276239: extend use_s over 07 VO line; 07_explorer_snow CUT — t2 KEEP snow covers that line.",
+      "uat_disposition": "KEEP"
     },
     {
       "id": "07_explorer_snow",
@@ -204,7 +210,8 @@
       "beyond_floor": false,
       "cut": true,
       "use_s_before_cut": 5.38,
-      "edit_note": "CUT 2026-10-04 Claude 5981276239 twin-FAIL. 06_garden_years t2 KEEP snow covers the VO line; no Vertex re-roll."
+      "edit_note": "CUT 2026-10-04 Claude 5981276239 twin-FAIL. 06_garden_years t2 KEEP snow covers the VO line; no Vertex re-roll.",
+      "uat_disposition": "CUT"
     },
     {
       "id": "08_haul_tree",
@@ -215,7 +222,7 @@
       "quality": "Fast",
       "engine_reason": "Fast: wide shot, figures small and faces not readable, nothing emissive.",
       "prompt": "Premium Animistry-class 3D cartoon. Same garden, wide: van Helmont and two helpers, small in frame, haul the tall dripping willow, roots and all, out of the clay pot and onto the big brass balance; iron weights pile up on the other pan. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
-      "use_s": 5.88,
+      "use_s": 4.8,
       "vo_land": [
         "Then, after five years, he pulled the tree out and weighed it."
       ],
@@ -225,13 +232,16 @@
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 31.84,
       "beyond_floor": false,
-      "edit_note": "2026-10-04 Claude 5981276239: t1 trim in=0.00 out=4.80 (\u22653s clean before vanish) \u2192 UAT; t2 also has ~0\u20133.8s clean. Lock retry prompt if FAIL: 'tree stays on the balance pan for the whole shot, no one leaves frame'.",
+      "edit_note": "KEEP 2026-10-04 Claude 5981378493: t1 trim 0–4.80s (raw/v01_trim/08_haul_tree_t1_trim_0to4p8.mp4). Drop t2 spare. use_s 5.88→4.8. No re-roll.",
       "uat_trim": {
         "take": 1,
         "in_s": 0.0,
         "out_s": 4.8,
         "file": "raw/v01_trim/08_haul_tree_t1_trim_0to4p8.mp4"
-      }
+      },
+      "use_s_before_uat": 5.88,
+      "uat_disposition": "KEEP_TRIM",
+      "drop_spare": "08_haul_tree_t2"
     },
     {
       "id": "09_weights_169",
@@ -251,7 +261,8 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 32.85,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP"
     },
     {
       "id": "10_fallen_leaves",
@@ -271,7 +282,8 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 33.86,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP"
     },
     {
       "id": "11_furnace_again",
@@ -292,7 +304,9 @@
       "route": "reuse",
       "clip_s": 0,
       "cost_try1_gbp": 0.0,
-      "cost_expected_gbp": 0.0
+      "cost_expected_gbp": 0.0,
+      "uat_disposition": "REUSE",
+      "edit_note": "REUSE 2026-10-04: window 2.00–5.54s of 01_furnace_soil (no new file)."
     },
     {
       "id": "12_pointer_short",
@@ -313,7 +327,9 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 35.19,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "edit_note": "KEEP 2026-10-04 Claude 5981378493: full t1. No re-roll.",
+      "uat_disposition": "KEEP"
     },
     {
       "id": "13_tree_vs_pinch",
@@ -333,7 +349,8 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 36.2,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP"
     },
     {
       "id": "14_why_grown",
@@ -354,7 +371,19 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 37.21,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "cut": true,
+      "cut_kind": "cover",
+      "cover_of": "17_mostly_wrong",
+      "cover": {
+        "source_id": "17_mostly_wrong",
+        "source_file": "raw/v01/17_mostly_wrong_t1.mp4",
+        "in_s": 0.0,
+        "out_s": 4.4,
+        "note": "opening wide willow over wall / empty bench"
+      },
+      "edit_note": "FAIL 2026-10-04 Claude 5981378493: do NOT use 14 clip. Cover with 17_mostly_wrong opening wide (willow over wall / empty bench), length ≈ use_s 4.4s from start of 17. No re-roll.",
+      "uat_disposition": "FAIL_COVER"
     },
     {
       "id": "15_desk_candle",
@@ -375,7 +404,9 @@
       "cost_try1_gbp": 0.96,
       "cost_expected_gbp": 2.56,
       "cum_expected_gbp": 39.77,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "edit_note": "KEEP 2026-10-04 Claude 5981378493.",
+      "uat_disposition": "KEEP"
     },
     {
       "id": "16_water_drawing",
@@ -395,7 +426,9 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 40.78,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "edit_note": "KEEP 2026-10-04 Claude 5981378493.",
+      "uat_disposition": "KEEP"
     },
     {
       "id": "17_mostly_wrong",
@@ -415,7 +448,12 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 41.79,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "edit_note": "KEEP 2026-10-04 Claude 5981378493 (leaf spin). Opening also pulled as cover for FAIL 14; plate 17 remains itself.",
+      "uat_disposition": "KEEP",
+      "also_covers": [
+        "14_why_grown"
+      ]
     },
     {
       "id": "18_charcoal_hearth",
@@ -436,14 +474,16 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 45.18,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "edit_note": "KEEP 2026-10-04 Claude 5981378493.",
+      "uat_disposition": "KEEP"
     },
     {
       "id": "19_ash_mound",
       "t_s": 159.85,
       "t": "2:39.85",
       "explorer": false,
-      "side_label": "62 POUNDS \u2192 1 POUND OF ASH",
+      "side_label": "62 POUNDS → 1 POUND OF ASH",
       "quality": "Fast",
       "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
       "prompt": "Premium Animistry-class 3D cartoon. Close on the cold hearth: one small mound of pale grey ash where the great heap of charcoal had been; a brush sweeps it into a little dish on a balance. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
@@ -456,7 +496,15 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 46.19,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_trim": {
+        "take": 1,
+        "in_s": 0.0,
+        "out_s": 4.0,
+        "note": "cut before flame on pan; ~66% of 6.0s clip"
+      },
+      "edit_note": "KEEP TRIM 2026-10-04 Claude 5981378493: use 0→~66% only (clip 6.0s → ≈0–4.0s). Cut before flame on pan. Board use_s 3.54 from that window.",
+      "uat_disposition": "KEEP_TRIM"
     },
     {
       "id": "20_shimmer_coals",
@@ -476,7 +524,12 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 47.2,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "edit_note": "KEEP 2026-10-04 Claude 5981378493. Tail also covers FAIL 21.",
+      "uat_disposition": "KEEP",
+      "also_covers": [
+        "21_gas_window"
+      ]
     },
     {
       "id": "21_gas_window",
@@ -497,7 +550,20 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 48.53,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "cut": true,
+      "cut_kind": "cover",
+      "cover_of": "20_shimmer_coals",
+      "cover": {
+        "source_id": "20_shimmer_coals",
+        "source_file": "raw/v01/20_shimmer_coals_t1.mp4",
+        "in_s": 0.0,
+        "out_s": 6.0,
+        "freeze_pad_s": 0.64,
+        "note": "20 tail drift to open window; freeze last frame to fill use_s 6.64"
+      },
+      "edit_note": "FAIL 2026-10-04 Claude 5981378493: do NOT use 21. Cover with 20's tail (drift to open window), held ~1s longer (freeze last frame) to cover use_s ~6.64. No re-roll.",
+      "uat_disposition": "FAIL_COVER"
     },
     {
       "id": "22_shimmer_willow",
@@ -518,7 +584,25 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 49.85,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_trim": {
+        "take": 1,
+        "in_s": 5.333,
+        "out_s": 8.0,
+        "usable_s": 2.667,
+        "freeze_pad_to_use_s": true,
+        "note": "last third of 8s clip; freeze-pad to board use_s 5.96"
+      },
+      "edit_note": "KEEP TRIM 2026-10-04 Claude 5981378493: last third of 8s clip (in≈5.333 out=8.0 → ~2.67s ≥2s OK). Freeze-pad last frame to fill use_s / VO land. Usable window not <2s so not FAIL.",
+      "uat_disposition": "KEEP_TRIM"
     }
-  ]
+  ],
+  "uat_applied": {
+    "authority": "Claude #180 comment 5981378493",
+    "applied_by": "grok",
+    "date": "2026-10-04",
+    "credit_accepted": "£28.37 real / £23.37 usable",
+    "no_new_mints": true,
+    "rough": "07_Edit-Project/_precheck/hos_006_part02_rough_v02.mp4"
+  }
 }

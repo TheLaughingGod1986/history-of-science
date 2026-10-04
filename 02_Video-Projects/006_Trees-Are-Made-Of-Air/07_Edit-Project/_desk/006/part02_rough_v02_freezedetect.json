@@ -1,0 +1,30 @@
+{
+  "freeze_event_count": 2,
+  "hard_fail_candidates": [
+    {
+      "freeze_start_s": 108.791667,
+      "freeze_end_s": 116.583333,
+      "freeze_duration_s": 7.791667,
+      "note": "freeze >=2s mid-timeline (likely intentional KEEP_TRIM freeze-pad on 22 / cover 21)"
+    }
+  ],
+  "advisory": [
+    {
+      "freeze_start_s": 105.5,
+      "freeze_end_s": 106.166667,
+      "freeze_duration_s": 0.666667
+    }
+  ],
+  "events": [
+    {
+      "freeze_start_s": 105.5,
+      "freeze_end_s": 106.166667,
+      "freeze_duration_s": 0.666667
+    },
+    {
+      "freeze_start_s": 108.791667,
+      "freeze_end_s": 116.583333,
+      "freeze_duration_s": 7.791667
+    }
+  ]
+}

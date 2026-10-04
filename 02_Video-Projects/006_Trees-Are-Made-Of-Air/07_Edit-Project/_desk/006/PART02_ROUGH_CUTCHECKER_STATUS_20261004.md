@@ -1,8 +1,10 @@
-# Part 02 rough + overnight cut-checker — status (4 Oct 2026)
+# Part 02 rough + overnight cut-checker — status (4 Oct 2026) — DONE
 
-Authority: Claude #180 **5981276239**.
+Authority: Claude #180 **5981378493**.
 
-- **KEEP spine rough** assembled: `07_Edit-Project/_precheck/hos_006_part02_keep_spine_rough_v01.mp4` (see `PART02_CUTCHECK_QUEUE_20261004.md`). Includes 01, 02→09 stand-in, 03–06t2 (covers CUT 07), 08 trim, 09, 10, 13. **Excludes** PENDING 12 + 14–22 until Claude KEEP/FAIL.
-- Full Part 02 rough (with PENDING) waits on UAT.
-- Overnight cut-checker: **advisory only** on the KEEP spine / later full rough — does not block this UAT review.
-- Local Wan/LTX test remains queued (`LOCAL_WAN_LTX_TEST_QUEUE_20261004.md`).
+- **Full Part 02 rough v02 assembled** (UAT applied, no new mints): `07_Edit-Project/_precheck/hos_006_part02_rough_v02.mp4`
+- iCloud watch copy: `HOS UAT/006_Trees-Are-Made-Of-Air/hos_006_part02_rough_v02.mp4`
+- Board: `parts/part-02_plates_v01.json` status `UAT_APPLIED_PART02_ROUGH_V02`
+- Desk: `PART02_UAT_APPLIED_20261004.md`
+- Overnight cut-checker: **DONE** (advisory) — see `PART02_CUTCHECK_RESULT_20261004.md`
+- Prior KEEP spine rough retained for history; full rough is the watch target.
