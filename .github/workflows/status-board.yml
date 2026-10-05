@@ -1,0 +1,21 @@
+# The status board (STATUS.md) must match PIPELINE.json. Rules: AGENTS.md "Status board".
+name: Status board
+
+on:
+  pull_request:
+    paths:
+      - "00_Brand/Channel-Setup/PIPELINE.json"
+      - "00_Brand/Channel-Setup/tools/status_board.py"
+      - "STATUS.md"
+      - ".github/workflows/status-board.yml"
+
+jobs:
+  status-board:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: STATUS.md matches PIPELINE.json
+        run: python3 00_Brand/Channel-Setup/tools/status_board.py --check
