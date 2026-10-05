@@ -24,11 +24,24 @@ One long (7–9 min) on Thursday at 18:00 UK as a **normal publish, never a Prem
 
 ## Who decides (AGENTS.md → "Ben's check-in")
 
-- **Claude reviews on the desk (PR #180):** topic, long script (≥90), Short scripts, voice, moving picture (never stills), thumbnails and schedule. Every check still has to PASS.
-- **Ben's final OK, once per film, before anything is scheduled or made public:** the finished long, the Shorts and the thumbnails with titles.
-- **Claude may make a live video private** (never delete), recording the id and reason on the desk and telling Ben.
-- **Still Ben's:** money, renaming a live video, merging a PR, the TikTok pause, overriding a check, changes to the channel's direction.
-- **Claude owns AGENTS.md and the Never list.** Other agents propose changes on the desk.
+<!-- SYNC: AGENTS.md#Ben's check-in (2 Oct 2026: one final OK, not one per stage) -->
+Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me. Check in only once the film, Shorts and thumbnails are ready to approve."*
+
+- **Claude and Grok decide on the desk:** topic, script, Short scripts, voice takes, picture stages, titles, descriptions, tags, thumbnail and cover drafts, and the schedule. Every check above still has to PASS; Claude reviews each stage instead of Ben.
+- **Ben is asked once per film, before anything is scheduled:** the finished long (he watches the moving file), the Shorts (on his phone), and the thumbnail and covers with the titles. That is his final OK. Nothing is scheduled or made public without it.
+- **Still Ben's alone:** renaming anything already live; lifting the TikTok pause; overriding a failed check (a check that's wrong is fixed in its own PR). Deleting a video stays on the Never list.
+- **Claude may make a public HOS or Orbit video private, or take it down, when needed** (Ben to Claude directly, 5 Oct 2026; mirrors orbit-with-ben `bd99085`). A takedown is always done by making the video private, because private can be undone. Claude records the video id and the reason on the desk and tells Ben. Any agent that thinks a live video should go private brings the video id and the reason to Claude on the desk, not to Ben.
+- **Spend:** Vertex, Flow and API credit may be used down to **£0** of the Free Trial or prepaid credit. Stop at £0. Never spill onto paid billing; report and wait for Ben to top up.
+- **Ask Claude first** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."*). Anything an agent would mark NEEDS BEN goes to Claude on the desk first. Claude decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
+  - money: a top-up, or anything past £0;
+  - anything that can't be undone: renaming a live video, Studio Replace, a force-push (making a video private can be undone and is Claude's call, above);
+  - merging a PR that Claude hasn't PASSed;
+  - the TikTok pause, and overriding a check;
+  - things only he can physically do: Vercel env vars, OAuth reconnects, waking the Mac Mini, logins and 2FA;
+  - any change to the channel's direction (a new series, a new format, a change of voice);
+  - the final OK above.
+- **Claude owns `AGENTS.md` and the Never list** (Ben to Claude directly, 5 Oct 2026; mirrors orbit-with-ben `bd99085`): *"you own AGENTS.md and Never-list edits"*. Only Claude changes them, recording each change with its date and reason on the desk and in the commit, and tells Ben. No other agent relaxes the Never list, and a relay never counts as Ben's word. **Real money stays with Ben.**
+<!-- /SYNC -->
 
 ## Never
 
