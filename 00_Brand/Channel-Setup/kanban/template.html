@@ -59,6 +59,28 @@ h1 span{color:var(--accent)}
 .chip.ok{background:var(--done-soft);color:var(--done)}
 .chip.risk{background:var(--accent-soft);color:var(--soon)}
 .chip.bad{background:var(--blocked-soft);color:var(--blocked)}
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-bottom:18px}
+.agent{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow);min-width:0}
+.agent .nm{display:flex;align-items:center;gap:8px;font:700 16px/1 "Bricolage Grotesque",sans-serif;margin-bottom:8px}
+.av{width:24px;height:24px;border-radius:50%;display:inline-grid;place-items:center;font:600 12px "IBM Plex Sans",sans-serif;color:#fff;flex:none}
+.agent ul{list-style:none;margin:0;padding:0;font-size:13px;color:var(--ink-2)}
+.agent li{padding:3px 0;display:flex;gap:6px;align-items:baseline}
+.agent li .k{flex:none;width:68px;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-3)}
+.agent li .v{min-width:0;overflow-wrap:anywhere}
+.agent li .v b{color:var(--ink);font-weight:500}
+.who{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-2)}
+.who .av{width:18px;height:18px;font-size:10px}
+.state{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;padding:1px 8px;border-radius:99px}
+.state.on{background:var(--done-soft);color:var(--done)}
+.state.on::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--done);animation:pulse 1.6s ease-in-out infinite}
+.state.wait{background:var(--accent-soft);color:var(--soon)}
+.state.block{background:var(--blocked-soft);color:var(--blocked)}
+.state.q{background:var(--todo-soft);color:var(--todo)}
+@keyframes pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.state.on::before{animation:none}}
+.card .who-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:8px}
+.card .why{font-size:12px;color:var(--ink-2);margin-top:4px}
+h2.sec{font:600 15px/1 "Bricolage Grotesque",sans-serif;margin:0 0 10px;color:var(--ink-2)}
 .filterline{display:flex;align-items:center;gap:10px;margin:-6px 0 14px;font-size:13px;color:var(--ink-2);min-height:28px}
 
 .board{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:14px;align-items:start}
@@ -116,6 +138,9 @@ footer a{color:var(--ink-2)}
     <div class="src"><span class="dot" id="dot"></span><span id="srctxt">Snapshot</span><button class="btn" id="refresh" hidden>Refresh</button></div>
   </header>
   <div class="banner" id="banner"></div>
+  <h2 class="sec">Who's on what</h2>
+  <div class="agents" id="agents"></div>
+  <h2 class="sec">Films</h2>
   <div class="films" id="films"></div>
   <div class="filterline" id="filterline"></div>
   <div class="board" id="board"></div>
@@ -169,11 +194,63 @@ function health(f, stages){
   return ["ok","on track"];
 }
 
+const AV_COLORS = {Grok:"#2f6fb5", Claude:"#c47a0b", Ben:"#2e7d4f"};
+const ownerOf = (s,st) => st.owner || s.owner || "—";
+function av(name){ const c = AV_COLORS[name] || "#6b7280"; return `<span class="av" style="background:${c}" aria-hidden="true">${esc((name||"?")[0])}</span>`; }
+function pw(s){ if(!s) return null; const d=new Date(String(s).length>10?s:s+"T00:00"); return isNaN(d)?null:d; }
+function fw(s){ const d=pw(s); if(!d) return ""; return fd(d)+(String(s).length>10?" "+d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"}):""); }
+// Same words as status_board.py activity()
+function stateOf(st){
+  if(st.status==="doing"){
+    if(st.underway===true) return ["on","Underway",""];
+    if(st.underway===false) return ["wait","Waiting",st.waiting||""];
+    return ["q","In progress",""];
+  }
+  if(st.status==="blocked") return ["block","Blocked",st.waiting||""];
+  if(st.status==="todo") return ["q","Queued",st.waiting||""];
+  return ["q",WORD[st.status]||st.status,""];
+}
+function stateChip(st){ const [c,t]=stateOf(st); return `<span class="state ${c}">${t}</span>`; }
+
+function renderAgents(){
+  const {films, stages} = data;
+  const names = [];
+  for(const s of stages) if(s.owner && !names.includes(s.owner)) names.push(s.owner);
+  for(const f of films) for(const s of stages){ const o=stOf(f,s).owner; if(o && !names.includes(o)) names.push(o); }
+  $("agents").innerHTML = names.map(who=>{
+    const now=[], wait=[], next=[];
+    for(const f of films){
+      let queued=false;
+      for(const s of stages){
+        const st=stOf(f,s); if(ownerOf(s,st)!==who) continue;
+        const tag=`<b>${esc(f.id)}</b> ${esc(s.label)}`;
+        if(st.status==="doing" && st.underway!==false){
+          const bits=[]; if(st.since) bits.push("since "+fw(st.since));
+          if(Array.isArray(st.steps)) bits.push(`${st.steps[0]}/${st.steps[1]} ${esc(st.steps_unit||"steps")}`);
+          if(st.left) bits.push(esc(st.left)+" left");
+          now.push(tag+(bits.length?` · ${bits.join(" · ")}`:""));
+        } else if(st.status==="doing"||st.status==="blocked"){
+          wait.push(tag+(st.waiting?` · ${md(st.waiting)}`:""));
+        } else if(st.status==="todo" && !queued){
+          queued=true; next.push([st.due||"9999", tag+(st.due?` · due ${fd(pd(st.due))}`:"")]);
+        }
+      }
+    }
+    next.sort((a,b)=>a[0].localeCompare(b[0]));
+    const row=(k,v)=>`<li><span class="k">${k}</span><span class="v">${v}</span></li>`;
+    return `<div class="agent"><div class="nm">${av(who)}${esc(who)} ${now.length?'<span class="state on">Underway</span>':wait.length?'<span class="state wait">Waiting</span>':'<span class="state q">Free</span>'}</div><ul>
+      ${row("Underway", now.length?now.join("<br>"):"nothing right now")}
+      ${wait.length?row("Waiting", wait.join("<br>")):""}
+      ${next.length?row("Next up", next.slice(0,3).map(x=>x[1]).join("<br>")):""}
+    </ul></div>`;
+  }).join("");
+}
+
 function renderFilms(){
   const {films, stages} = data;
   $("films").innerHTML = films.map(f=>{
     const pct=filmPct(f,stages), [hc,ht]=health(f,stages), air=pd(f.air), cur=current(f,stages);
-    const now = cur ? `${esc(cur[0].label)} (${WORD[cur[1].status]||cur[1].status})` : "all done";
+    const now = cur ? `${esc(cur[0].label)} · ${esc(ownerOf(cur[0],cur[1]))} · ${stateOf(cur[1])[1].toLowerCase()}` : "all done";
     return `<button class="film${filter===f.id?" sel":""}" data-film="${esc(f.id)}" aria-pressed="${filter===f.id}">
       <div class="top"><span class="id">${esc(f.id)}</span><span class="pct">${pct}%</span></div>
       <div class="t">${esc(f.title)}</div>
@@ -195,7 +272,6 @@ function renderFilms(){
 function cardHtml(f, s, st){
   const p = progress(st), due=pd(st.due), eta=pd(st.eta);
   const bits=[];
-  if(st.owner) bits.push(`Owner <b>${esc(st.owner)}</b>`);
   if(Array.isArray(st.steps)) bits.push(`<b>${st.steps[0]}/${st.steps[1]}</b> ${esc(st.steps_unit||"steps")}`);
   if(st.left) bits.push(`<b>${esc(st.left)}</b> left`);
   if(eta) bits.push(`ETA <b>${fd(eta)}</b> <span class="${cdCls(eta)}">(${cd(eta)})</span>`);
@@ -204,6 +280,8 @@ function cardHtml(f, s, st){
   return `<div class="card ${st.status}">
     <div class="hd"><span class="stage">${esc(s.label)}</span><span class="fid">${esc(f.id)}</span></div>
     ${filter?"":`<div class="note" style="margin-top:2px">${esc(f.title)}</div>`}
+    <div class="who-row"><span class="who">${av(ownerOf(s,st))}With <b>${esc(ownerOf(s,st))}</b>${st.since?` since ${fw(st.since)}`:""}</span>${stateChip(st)}</div>
+    ${stateOf(st)[2]?`<div class="why">${({Queued:"Starts ",Waiting:"Waiting for: ",Blocked:"Blocked by: "})[stateOf(st)[1]]||""}${md(stateOf(st)[2])}</div>`:""}
     ${prog}
     ${st.note?`<div class="note">${md(st.note)}</div>`:""}
     ${bits.length?`<div class="row">${bits.map(b=>`<span>${b}</span>`).join("")}</div>`:""}
@@ -259,7 +337,7 @@ function renderSource(){
   else t.textContent = "Snapshot built into this page";
 }
 
-function render(){ if(!data) return; renderSource(); renderFilms(); renderBoard(); renderLower(); }
+function render(){ if(!data) return; renderSource(); renderAgents(); renderFilms(); renderBoard(); renderLower(); }
 
 function banner(html){ const b=$("banner"); b.innerHTML=html||""; b.classList.toggle("show",!!html); }
 

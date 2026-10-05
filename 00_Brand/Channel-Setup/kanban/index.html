@@ -59,6 +59,28 @@ h1 span{color:var(--accent)}
 .chip.ok{background:var(--done-soft);color:var(--done)}
 .chip.risk{background:var(--accent-soft);color:var(--soon)}
 .chip.bad{background:var(--blocked-soft);color:var(--blocked)}
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-bottom:18px}
+.agent{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow);min-width:0}
+.agent .nm{display:flex;align-items:center;gap:8px;font:700 16px/1 "Bricolage Grotesque",sans-serif;margin-bottom:8px}
+.av{width:24px;height:24px;border-radius:50%;display:inline-grid;place-items:center;font:600 12px "IBM Plex Sans",sans-serif;color:#fff;flex:none}
+.agent ul{list-style:none;margin:0;padding:0;font-size:13px;color:var(--ink-2)}
+.agent li{padding:3px 0;display:flex;gap:6px;align-items:baseline}
+.agent li .k{flex:none;width:68px;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-3)}
+.agent li .v{min-width:0;overflow-wrap:anywhere}
+.agent li .v b{color:var(--ink);font-weight:500}
+.who{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-2)}
+.who .av{width:18px;height:18px;font-size:10px}
+.state{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;padding:1px 8px;border-radius:99px}
+.state.on{background:var(--done-soft);color:var(--done)}
+.state.on::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--done);animation:pulse 1.6s ease-in-out infinite}
+.state.wait{background:var(--accent-soft);color:var(--soon)}
+.state.block{background:var(--blocked-soft);color:var(--blocked)}
+.state.q{background:var(--todo-soft);color:var(--todo)}
+@keyframes pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.state.on::before{animation:none}}
+.card .who-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:8px}
+.card .why{font-size:12px;color:var(--ink-2);margin-top:4px}
+h2.sec{font:600 15px/1 "Bricolage Grotesque",sans-serif;margin:0 0 10px;color:var(--ink-2)}
 .filterline{display:flex;align-items:center;gap:10px;margin:-6px 0 14px;font-size:13px;color:var(--ink-2);min-height:28px}
 
 .board{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:14px;align-items:start}
@@ -116,6 +138,9 @@ footer a{color:var(--ink-2)}
     <div class="src"><span class="dot" id="dot"></span><span id="srctxt">Snapshot</span><button class="btn" id="refresh" hidden>Refresh</button></div>
   </header>
   <div class="banner" id="banner"></div>
+  <h2 class="sec">Who's on what</h2>
+  <div class="agents" id="agents"></div>
+  <h2 class="sec">Films</h2>
   <div class="films" id="films"></div>
   <div class="filterline" id="filterline"></div>
   <div class="board" id="board"></div>
@@ -127,7 +152,7 @@ footer a{color:var(--ink-2)}
 </div>
 
 <script>
-const SNAPSHOT = {"updated":"2026-10-05","updated_by":"Claude (desk reviewer)","board_url":"https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc","stages":[{"key":"topic","label":"Topic","weight":3},{"key":"script","label":"Script","weight":10},{"key":"facts","label":"Fact check","weight":5},{"key":"package","label":"Audit + upload package","weight":4},{"key":"vo","label":"Voiceover (long)","weight":10},{"key":"shorts_scripts","label":"Shorts scripts","weight":3},{"key":"shorts_vo","label":"Shorts voiceover","weight":5},{"key":"picture","label":"Picture","weight":35},{"key":"edit","label":"Edit + master","weight":10},{"key":"thumbnails","label":"Thumbnails","weight":5},{"key":"ben_ok","label":"Ben's final OK","weight":5},{"key":"scheduled","label":"Scheduled","weight":5}],"next_steps":["008 long voiceover (Grok, recording now) → Claude checks the evidence.","007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.","Tue 6 Oct: Flow and Google credit resets. Grok posts the balances; Claude re-prices 006 Parts 03–05.","006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.","007 picture: shot list v01 is ready (about 58 plates). Its 8 period details are checked (5 Oct). Next the write lane builds the priced plate boards; spend starts once the whole voiceover batch has passed.","Thu 29 Oct 18:05: 005 post-air jobs (Related on its three Shorts, cards, end screen, pinned comment)."],"credits":[{"pool":"ElevenLabs (voice)","left":"≈77k of 209.5k","rule":"voice only; stop at 50k; resets Fri 30 Oct","checked":"5 Oct"},{"pool":"Vertex free trial (picture)","left":"≈£23 usable","rule":"never past £0, keep £5 buffer; trial ends 10 Nov","checked":"4 Oct"},{"pool":"Flow (picture)","left":"resets Tue 6 Oct","rule":"Flow first for picture","checked":"—"}],"films":[{"id":"005","title":"The Tied Arm That Proved Your Blood Circulates","air":"2026-10-29","ready_by":"2026-10-02","summary":"Finished and scheduled. Long `wwcjcFfC-5M` airs Thu 29 Oct 18:00; Shorts A (30 Oct), B `mTY67qet7cM` (8 Nov) and C `x_3L_IdYgEc` (15 Nov) are scheduled.","stages":{"topic":{"status":"done"},"script":{"status":"done"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"done"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"done"},"picture":{"status":"done"},"edit":{"status":"done","note":"master v02"},"thumbnails":{"status":"done","note":"A/B/C in Test & Compare"},"ben_ok":{"status":"done","note":"2 Oct"},"scheduled":{"status":"done","note":"Thu 29 Oct 18:00; post-air jobs at 18:05"}}},{"id":"006","title":"The Willow Tree That Was Made of Air","air":"2026-11-05","ready_by":"2026-11-01","summary":"Words and voice are finished. Picture is the long pole: Part 01 is all kept and Part 02's rough cut is held; Parts 03–05 wait for pricing after Tuesday's credit resets.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v02, 93.7"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"done","note":"v02, all five parts PASS"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"done","note":"A v02 · B v03b · C v01 locked"},"picture":{"status":"doing","progress":0.36,"owner":"Grok","due":"2026-10-25","note":"Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets; pace set by Flow and Vertex credit","steps":[1,5],"steps_unit":"parts kept","left":"about 3 weeks","eta":"2026-10-25"},"edit":{"status":"todo","due":"2026-10-29"},"thumbnails":{"status":"todo","due":"2026-10-29"},"ben_ok":{"status":"todo","due":"2026-11-01"},"scheduled":{"status":"todo","due":"2026-11-02"}}},{"id":"007","title":"Why Vaccines Are Named After a Cow","air":"2026-11-12","ready_by":"2026-11-08","summary":"Script, facts and long voiceover are done. Shorts voiceover is queued; picture waits until the whole voiceover batch has passed.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v01, 92.3"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"done","note":"about 8.4 min; Part 01 v03 with the shut-up-house pickup"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"todo","owner":"Grok","due":"2026-10-07","left":"about 1 hour once started"},"picture":{"status":"todo","due":"2026-11-01","note":"shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates); all 8 period details checked 5 Oct (#222); starts after the voiceover batch passes","steps_unit":"plates"},"edit":{"status":"todo","due":"2026-11-05"},"thumbnails":{"status":"todo","due":"2026-11-05"},"ben_ok":{"status":"todo","due":"2026-11-08"},"scheduled":{"status":"todo","due":"2026-11-09"}}},{"id":"008","title":"Why Did Franklin Fly a Kite in a Storm?","air":"2026-11-19","ready_by":"2026-11-15","summary":"Script, facts, audit and package are done. The long voiceover is being recorded now.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v01, 92.1"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"doing","owner":"Grok","due":"2026-10-06","note":"started 5 Oct; no part reported yet. Each part: record, word check, then Claude's review","steps":[0,5],"steps_unit":"parts passed","left":"about half a day","eta":"2026-10-06"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"todo","due":"2026-10-08"},"picture":{"status":"todo","due":"2026-11-08"},"edit":{"status":"todo","due":"2026-11-12"},"thumbnails":{"status":"todo","due":"2026-11-12"},"ben_ok":{"status":"todo","due":"2026-11-15"},"scheduled":{"status":"todo","due":"2026-11-16"}}},{"id":"009","title":"Why Doesn't the Moon Fall to Earth?","air":"2026-11-26","ready_by":"2026-11-22","summary":"Script, facts, audit and package are done. Voiceover is next in the queue after 008 and the 007 Shorts.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v01, 91.3"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"todo","due":"2026-10-07"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"todo","due":"2026-10-08"},"picture":{"status":"todo","due":"2026-11-15"},"edit":{"status":"todo","due":"2026-11-19"},"thumbnails":{"status":"todo","due":"2026-11-19"},"ben_ok":{"status":"todo","due":"2026-11-22"},"scheduled":{"status":"todo","due":"2026-11-23"}}},{"id":"010","title":"What Killed the Dinosaurs Was Hidden in a Line of Clay","air":"2026-12-03","ready_by":"2026-11-29","summary":"Script, facts, audit and package are done. Voiceover follows 009.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v01, 92.1"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"todo","due":"2026-10-07"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"todo","due":"2026-10-08"},"picture":{"status":"todo","due":"2026-11-22"},"edit":{"status":"todo","due":"2026-11-26"},"thumbnails":{"status":"todo","due":"2026-11-26"},"ben_ok":{"status":"todo","due":"2026-11-29"},"scheduled":{"status":"todo","due":"2026-11-30"}}}]};
+const SNAPSHOT = {"updated":"2026-10-05","updated_by":"Claude (desk reviewer)","board_url":"https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc","stages":[{"key":"topic","label":"Topic","weight":3,"owner":"Claude"},{"key":"script","label":"Script","weight":10,"owner":"Grok"},{"key":"facts","label":"Fact check","weight":5,"owner":"Grok"},{"key":"package","label":"Audit + upload package","weight":4,"owner":"Grok"},{"key":"vo","label":"Voiceover (long)","weight":10,"owner":"Grok"},{"key":"shorts_scripts","label":"Shorts scripts","weight":3,"owner":"Grok"},{"key":"shorts_vo","label":"Shorts voiceover","weight":5,"owner":"Grok"},{"key":"picture","label":"Picture","weight":35,"owner":"Grok"},{"key":"edit","label":"Edit + master","weight":10,"owner":"Grok"},{"key":"thumbnails","label":"Thumbnails","weight":5,"owner":"Grok"},{"key":"ben_ok","label":"Ben's final OK","weight":5,"owner":"Ben"},{"key":"scheduled","label":"Scheduled","weight":5,"owner":"Grok"}],"next_steps":["008 long voiceover: Grok pulls main, then records part by part with vo_take.py → Claude checks each part's evidence.","007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.","Tue 6 Oct: Flow and Google credit resets. Grok posts the balances; Claude re-prices 006 Parts 03–05.","006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.","007 picture: shot list v01 is ready (about 58 plates). Its 8 period details are checked (5 Oct). Next the write lane builds the priced plate boards; spend starts once the whole voiceover batch has passed.","Thu 29 Oct 18:05: 005 post-air jobs (Related on its three Shorts, cards, end screen, pinned comment)."],"credits":[{"pool":"ElevenLabs (voice)","left":"≈77k of 209.5k","rule":"voice only; stop at 50k; resets Fri 30 Oct","checked":"5 Oct"},{"pool":"Vertex free trial (picture)","left":"≈£23 usable","rule":"never past £0, keep £5 buffer; trial ends 10 Nov","checked":"4 Oct"},{"pool":"Flow (picture)","left":"resets Tue 6 Oct","rule":"Flow first for picture","checked":"—"}],"films":[{"id":"005","title":"The Tied Arm That Proved Your Blood Circulates","air":"2026-10-29","ready_by":"2026-10-02","summary":"Finished and scheduled. Long `wwcjcFfC-5M` airs Thu 29 Oct 18:00; Shorts A (30 Oct), B `mTY67qet7cM` (8 Nov) and C `x_3L_IdYgEc` (15 Nov) are scheduled.","stages":{"topic":{"status":"done"},"script":{"status":"done"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"done"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"done"},"picture":{"status":"done"},"edit":{"status":"done","note":"master v02"},"thumbnails":{"status":"done","note":"A/B/C in Test & Compare"},"ben_ok":{"status":"done","note":"2 Oct"},"scheduled":{"status":"done","note":"Thu 29 Oct 18:00; post-air jobs at 18:05"}}},{"id":"006","title":"The Willow Tree That Was Made of Air","air":"2026-11-05","ready_by":"2026-11-01","summary":"Words and voice are finished. Picture is the long pole: Part 01 is all kept and Part 02's rough cut is held; Parts 03–05 wait for pricing after Tuesday's credit resets.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v02, 93.7"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"done","note":"v02, all five parts PASS"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"done","note":"A v02 · B v03b · C v01 locked"},"picture":{"status":"doing","progress":0.36,"owner":"Grok","due":"2026-10-25","note":"Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets; pace set by Flow and Vertex credit","steps":[1,5],"steps_unit":"parts kept","left":"about 3 weeks","eta":"2026-10-25","underway":false,"waiting":"Tue 6 Oct credit resets, then Claude prices Parts 03–05"},"edit":{"status":"todo","due":"2026-10-29"},"thumbnails":{"status":"todo","due":"2026-10-29"},"ben_ok":{"status":"todo","due":"2026-11-01"},"scheduled":{"status":"todo","due":"2026-11-02"}}},{"id":"007","title":"Why Vaccines Are Named After a Cow","air":"2026-11-12","ready_by":"2026-11-08","summary":"Script, facts and long voiceover are done. Shorts voiceover is queued; picture waits until the whole voiceover batch has passed.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v01, 92.3"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"done","note":"about 8.4 min; Part 01 v03 with the shut-up-house pickup"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"todo","owner":"Grok","due":"2026-10-07","left":"about 1 hour once started","waiting":"after 008 long VO"},"picture":{"status":"todo","due":"2026-11-01","note":"shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates); all 8 period details checked 5 Oct (#222); starts after the voiceover batch passes","steps_unit":"plates"},"edit":{"status":"todo","due":"2026-11-05"},"thumbnails":{"status":"todo","due":"2026-11-05"},"ben_ok":{"status":"todo","due":"2026-11-08"},"scheduled":{"status":"todo","due":"2026-11-09"}}},{"id":"008","title":"Why Did Franklin Fly a Kite in a Storm?","air":"2026-11-19","ready_by":"2026-11-15","summary":"Script, facts, audit and package are done. The long voiceover is being recorded now.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v01, 92.1"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"doing","owner":"Grok","due":"2026-10-06","note":"started 5 Oct; no part reported yet. Each part: record, word check, then Claude's review","steps":[0,5],"steps_unit":"parts passed","left":"about half a day","eta":"2026-10-06","underway":false,"waiting":"Grok to pull main and start part 1 with the new take tool","since":"2026-10-05"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"todo","due":"2026-10-08"},"picture":{"status":"todo","due":"2026-11-08"},"edit":{"status":"todo","due":"2026-11-12"},"thumbnails":{"status":"todo","due":"2026-11-12"},"ben_ok":{"status":"todo","due":"2026-11-15"},"scheduled":{"status":"todo","due":"2026-11-16"}}},{"id":"009","title":"Why Doesn't the Moon Fall to Earth?","air":"2026-11-26","ready_by":"2026-11-22","summary":"Script, facts, audit and package are done. Voiceover is next in the queue after 008 and the 007 Shorts.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v01, 91.3"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"todo","due":"2026-10-07","waiting":"after 007 Shorts VO"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"todo","due":"2026-10-08"},"picture":{"status":"todo","due":"2026-11-15"},"edit":{"status":"todo","due":"2026-11-19"},"thumbnails":{"status":"todo","due":"2026-11-19"},"ben_ok":{"status":"todo","due":"2026-11-22"},"scheduled":{"status":"todo","due":"2026-11-23"}}},{"id":"010","title":"What Killed the Dinosaurs Was Hidden in a Line of Clay","air":"2026-12-03","ready_by":"2026-11-29","summary":"Script, facts, audit and package are done. Voiceover follows 009.","stages":{"topic":{"status":"done"},"script":{"status":"done","note":"v01, 92.1"},"facts":{"status":"done"},"package":{"status":"done"},"vo":{"status":"todo","due":"2026-10-07","waiting":"after 009 VO"},"shorts_scripts":{"status":"done"},"shorts_vo":{"status":"todo","due":"2026-10-08"},"picture":{"status":"todo","due":"2026-11-22"},"edit":{"status":"todo","due":"2026-11-26"},"thumbnails":{"status":"todo","due":"2026-11-26"},"ben_ok":{"status":"todo","due":"2026-11-29"},"scheduled":{"status":"todo","due":"2026-11-30"}}}]};
 const REPO = {owner:"TheLaughingGod1986", repo:"history-of-science", path:"00_Brand/Channel-Setup/PIPELINE.json"};
 const WORD = {done:"done", doing:"in progress", blocked:"blocked", todo:"to do", skip:"not needed"};
 const DAY = 86400000;
@@ -169,11 +194,63 @@ function health(f, stages){
   return ["ok","on track"];
 }
 
+const AV_COLORS = {Grok:"#2f6fb5", Claude:"#c47a0b", Ben:"#2e7d4f"};
+const ownerOf = (s,st) => st.owner || s.owner || "—";
+function av(name){ const c = AV_COLORS[name] || "#6b7280"; return `<span class="av" style="background:${c}" aria-hidden="true">${esc((name||"?")[0])}</span>`; }
+function pw(s){ if(!s) return null; const d=new Date(String(s).length>10?s:s+"T00:00"); return isNaN(d)?null:d; }
+function fw(s){ const d=pw(s); if(!d) return ""; return fd(d)+(String(s).length>10?" "+d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"}):""); }
+// Same words as status_board.py activity()
+function stateOf(st){
+  if(st.status==="doing"){
+    if(st.underway===true) return ["on","Underway",""];
+    if(st.underway===false) return ["wait","Waiting",st.waiting||""];
+    return ["q","In progress",""];
+  }
+  if(st.status==="blocked") return ["block","Blocked",st.waiting||""];
+  if(st.status==="todo") return ["q","Queued",st.waiting||""];
+  return ["q",WORD[st.status]||st.status,""];
+}
+function stateChip(st){ const [c,t]=stateOf(st); return `<span class="state ${c}">${t}</span>`; }
+
+function renderAgents(){
+  const {films, stages} = data;
+  const names = [];
+  for(const s of stages) if(s.owner && !names.includes(s.owner)) names.push(s.owner);
+  for(const f of films) for(const s of stages){ const o=stOf(f,s).owner; if(o && !names.includes(o)) names.push(o); }
+  $("agents").innerHTML = names.map(who=>{
+    const now=[], wait=[], next=[];
+    for(const f of films){
+      let queued=false;
+      for(const s of stages){
+        const st=stOf(f,s); if(ownerOf(s,st)!==who) continue;
+        const tag=`<b>${esc(f.id)}</b> ${esc(s.label)}`;
+        if(st.status==="doing" && st.underway!==false){
+          const bits=[]; if(st.since) bits.push("since "+fw(st.since));
+          if(Array.isArray(st.steps)) bits.push(`${st.steps[0]}/${st.steps[1]} ${esc(st.steps_unit||"steps")}`);
+          if(st.left) bits.push(esc(st.left)+" left");
+          now.push(tag+(bits.length?` · ${bits.join(" · ")}`:""));
+        } else if(st.status==="doing"||st.status==="blocked"){
+          wait.push(tag+(st.waiting?` · ${md(st.waiting)}`:""));
+        } else if(st.status==="todo" && !queued){
+          queued=true; next.push([st.due||"9999", tag+(st.due?` · due ${fd(pd(st.due))}`:"")]);
+        }
+      }
+    }
+    next.sort((a,b)=>a[0].localeCompare(b[0]));
+    const row=(k,v)=>`<li><span class="k">${k}</span><span class="v">${v}</span></li>`;
+    return `<div class="agent"><div class="nm">${av(who)}${esc(who)} ${now.length?'<span class="state on">Underway</span>':wait.length?'<span class="state wait">Waiting</span>':'<span class="state q">Free</span>'}</div><ul>
+      ${row("Underway", now.length?now.join("<br>"):"nothing right now")}
+      ${wait.length?row("Waiting", wait.join("<br>")):""}
+      ${next.length?row("Next up", next.slice(0,3).map(x=>x[1]).join("<br>")):""}
+    </ul></div>`;
+  }).join("");
+}
+
 function renderFilms(){
   const {films, stages} = data;
   $("films").innerHTML = films.map(f=>{
     const pct=filmPct(f,stages), [hc,ht]=health(f,stages), air=pd(f.air), cur=current(f,stages);
-    const now = cur ? `${esc(cur[0].label)} (${WORD[cur[1].status]||cur[1].status})` : "all done";
+    const now = cur ? `${esc(cur[0].label)} · ${esc(ownerOf(cur[0],cur[1]))} · ${stateOf(cur[1])[1].toLowerCase()}` : "all done";
     return `<button class="film${filter===f.id?" sel":""}" data-film="${esc(f.id)}" aria-pressed="${filter===f.id}">
       <div class="top"><span class="id">${esc(f.id)}</span><span class="pct">${pct}%</span></div>
       <div class="t">${esc(f.title)}</div>
@@ -195,7 +272,6 @@ function renderFilms(){
 function cardHtml(f, s, st){
   const p = progress(st), due=pd(st.due), eta=pd(st.eta);
   const bits=[];
-  if(st.owner) bits.push(`Owner <b>${esc(st.owner)}</b>`);
   if(Array.isArray(st.steps)) bits.push(`<b>${st.steps[0]}/${st.steps[1]}</b> ${esc(st.steps_unit||"steps")}`);
   if(st.left) bits.push(`<b>${esc(st.left)}</b> left`);
   if(eta) bits.push(`ETA <b>${fd(eta)}</b> <span class="${cdCls(eta)}">(${cd(eta)})</span>`);
@@ -204,6 +280,8 @@ function cardHtml(f, s, st){
   return `<div class="card ${st.status}">
     <div class="hd"><span class="stage">${esc(s.label)}</span><span class="fid">${esc(f.id)}</span></div>
     ${filter?"":`<div class="note" style="margin-top:2px">${esc(f.title)}</div>`}
+    <div class="who-row"><span class="who">${av(ownerOf(s,st))}With <b>${esc(ownerOf(s,st))}</b>${st.since?` since ${fw(st.since)}`:""}</span>${stateChip(st)}</div>
+    ${stateOf(st)[2]?`<div class="why">${({Queued:"Starts ",Waiting:"Waiting for: ",Blocked:"Blocked by: "})[stateOf(st)[1]]||""}${md(stateOf(st)[2])}</div>`:""}
     ${prog}
     ${st.note?`<div class="note">${md(st.note)}</div>`:""}
     ${bits.length?`<div class="row">${bits.map(b=>`<span>${b}</span>`).join("")}</div>`:""}
@@ -259,7 +337,7 @@ function renderSource(){
   else t.textContent = "Snapshot built into this page";
 }
 
-function render(){ if(!data) return; renderSource(); renderFilms(); renderBoard(); renderLower(); }
+function render(){ if(!data) return; renderSource(); renderAgents(); renderFilms(); renderBoard(); renderLower(); }
 
 function banner(html){ const b=$("banner"); b.innerHTML=html||""; b.classList.toggle("show",!!html); }
 

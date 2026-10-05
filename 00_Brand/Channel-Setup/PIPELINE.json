@@ -6,66 +6,78 @@
     {
       "key": "topic",
       "label": "Topic",
-      "weight": 3
+      "weight": 3,
+      "owner": "Claude"
     },
     {
       "key": "script",
       "label": "Script",
-      "weight": 10
+      "weight": 10,
+      "owner": "Grok"
     },
     {
       "key": "facts",
       "label": "Fact check",
-      "weight": 5
+      "weight": 5,
+      "owner": "Grok"
     },
     {
       "key": "package",
       "label": "Audit + upload package",
-      "weight": 4
+      "weight": 4,
+      "owner": "Grok"
     },
     {
       "key": "vo",
       "label": "Voiceover (long)",
-      "weight": 10
+      "weight": 10,
+      "owner": "Grok"
     },
     {
       "key": "shorts_scripts",
       "label": "Shorts scripts",
-      "weight": 3
+      "weight": 3,
+      "owner": "Grok"
     },
     {
       "key": "shorts_vo",
       "label": "Shorts voiceover",
-      "weight": 5
+      "weight": 5,
+      "owner": "Grok"
     },
     {
       "key": "picture",
       "label": "Picture",
-      "weight": 35
+      "weight": 35,
+      "owner": "Grok"
     },
     {
       "key": "edit",
       "label": "Edit + master",
-      "weight": 10
+      "weight": 10,
+      "owner": "Grok"
     },
     {
       "key": "thumbnails",
       "label": "Thumbnails",
-      "weight": 5
+      "weight": 5,
+      "owner": "Grok"
     },
     {
       "key": "ben_ok",
       "label": "Ben's final OK",
-      "weight": 5
+      "weight": 5,
+      "owner": "Ben"
     },
     {
       "key": "scheduled",
       "label": "Scheduled",
-      "weight": 5
+      "weight": 5,
+      "owner": "Grok"
     }
   ],
   "next_steps": [
-    "008 long voiceover (Grok, recording now) → Claude checks the evidence.",
+    "008 long voiceover: Grok pulls main, then records part by part with vo_take.py → Claude checks each part's evidence.",
     "007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.",
     "Tue 6 Oct: Flow and Google credit resets. Grok posts the balances; Claude re-prices 006 Parts 03–05.",
     "006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.",
@@ -185,7 +197,9 @@
           ],
           "steps_unit": "parts kept",
           "left": "about 3 weeks",
-          "eta": "2026-10-25"
+          "eta": "2026-10-25",
+          "underway": false,
+          "waiting": "Tue 6 Oct credit resets, then Claude prices Parts 03–05"
         },
         "edit": {
           "status": "todo",
@@ -236,7 +250,8 @@
           "status": "todo",
           "owner": "Grok",
           "due": "2026-10-07",
-          "left": "about 1 hour once started"
+          "left": "about 1 hour once started",
+          "waiting": "after 008 long VO"
         },
         "picture": {
           "status": "todo",
@@ -293,7 +308,10 @@
           ],
           "steps_unit": "parts passed",
           "left": "about half a day",
-          "eta": "2026-10-06"
+          "eta": "2026-10-06",
+          "underway": false,
+          "waiting": "Grok to pull main and start part 1 with the new take tool",
+          "since": "2026-10-05"
         },
         "shorts_scripts": {
           "status": "done"
@@ -346,7 +364,8 @@
         },
         "vo": {
           "status": "todo",
-          "due": "2026-10-07"
+          "due": "2026-10-07",
+          "waiting": "after 007 Shorts VO"
         },
         "shorts_scripts": {
           "status": "done"
@@ -399,7 +418,8 @@
         },
         "vo": {
           "status": "todo",
-          "due": "2026-10-07"
+          "due": "2026-10-07",
+          "waiting": "after 009 VO"
         },
         "shorts_scripts": {
           "status": "done"
