@@ -49,7 +49,7 @@ Every vaccine is named after a cow. In 1796, a milkmaid caught a mild disease fr
 |---|---|---|
 | 0–2 | milkmaid walks past the shuttered house | Milkmaids never caught smallpox. |
 | 2–7 | a cow's udder, then the milkmaid's healed hand | They caught cowpox from the cows instead, a few sore spots and nothing more. |
-| 7–12 | the village street, doors marked | And farmers swore that anyone who'd had it was safe from smallpox for life. |
+| 7–12 | the quiet village street, shutters closed | And farmers swore that anyone who'd had it was safe from smallpox for life. |
 | 9–14 | **title on screen:** *Why Vaccines Are Named After a Cow* | |
 | 12–19 | Jenner writing cases at his window | One country doctor took the rumour seriously, and tested it. |
 | 19–24 | back to the milkmaid on the street (loop) | He was right, and it became the first vaccine. |
