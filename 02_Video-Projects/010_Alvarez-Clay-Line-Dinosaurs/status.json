@@ -1,0 +1,43 @@
+{
+  "film": "010",
+  "title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
+  "air": "2026-12-03",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done",
+      "note": "v01, 92.1"
+    },
+    "sources": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shots": {
+      "state": "review",
+      "note": "needs Claude's check"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbs": {
+      "state": "todo"
+    },
+    "upload": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": "Script, facts, audit and package are done. Voiceover follows 009. Shots: needs Claude's check.",
+  "seeded_at": "2026-10-05",
+  "evidence": [
+    "00_Brand/Channel-Setup/PIPELINE.json",
+    "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/production-status.md"
+  ]
+}

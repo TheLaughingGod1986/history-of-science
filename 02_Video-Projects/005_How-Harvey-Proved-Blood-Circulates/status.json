@@ -1,0 +1,45 @@
+{
+  "film": "005",
+  "title": "The Tied Arm That Proved Your Blood Circulates",
+  "air": "2026-10-29",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done"
+    },
+    "sources": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "done"
+    },
+    "shots": {
+      "state": "review",
+      "note": "needs Claude's check"
+    },
+    "picture": {
+      "state": "done"
+    },
+    "edit": {
+      "state": "done",
+      "note": "master v02"
+    },
+    "thumbs": {
+      "state": "done",
+      "note": "A/B/C in Test & Compare"
+    },
+    "upload": {
+      "state": "done",
+      "note": "Thu 29 Oct 18:00; post-air jobs at 18:05"
+    }
+  },
+  "claims": [],
+  "next": "Finished and scheduled. Long `wwcjcFfC-5M` airs Thu 29 Oct 18:00; Shorts A (30 Oct), B `mTY67qet7cM` (8 Nov) and C `x_3L_IdYgEc` (15 Nov) are scheduled. Shots: needs Claude's check.",
+  "seeded_at": "2026-10-05",
+  "evidence": [
+    "00_Brand/Channel-Setup/PIPELINE.json",
+    "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/production-status.md"
+  ]
+}

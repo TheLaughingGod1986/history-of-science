@@ -1,0 +1,43 @@
+{
+  "film": "009",
+  "title": "Why Doesn't the Moon Fall to Earth?",
+  "air": "2026-11-26",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done",
+      "note": "v01, 91.3"
+    },
+    "sources": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shots": {
+      "state": "review",
+      "note": "needs Claude's check"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbs": {
+      "state": "todo"
+    },
+    "upload": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": "Script, facts, audit and package are done. Voiceover is next in the queue after 008 and the 007 Shorts. Shots: needs Claude's check.",
+  "seeded_at": "2026-10-05",
+  "evidence": [
+    "00_Brand/Channel-Setup/PIPELINE.json",
+    "02_Video-Projects/009_The-Falling-Moon-Gravity/production-status.md"
+  ]
+}

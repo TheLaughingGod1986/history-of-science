@@ -1,0 +1,44 @@
+{
+  "film": "008",
+  "title": "Why Did Franklin Fly a Kite in a Storm?",
+  "air": "2026-11-19",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done",
+      "note": "v01, 92.1"
+    },
+    "sources": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "doing",
+      "note": "started 5 Oct; evidence pack to Claude"
+    },
+    "shots": {
+      "state": "review",
+      "note": "needs Claude's check"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbs": {
+      "state": "todo"
+    },
+    "upload": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": "Script, facts, audit and package are done. The long voiceover is being recorded now. Shots: needs Claude's check.",
+  "seeded_at": "2026-10-05",
+  "evidence": [
+    "00_Brand/Channel-Setup/PIPELINE.json",
+    "02_Video-Projects/008_Lightning-Franklin/production-status.md"
+  ]
+}

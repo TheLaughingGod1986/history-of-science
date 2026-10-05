@@ -1,0 +1,43 @@
+{
+  "film": "004",
+  "title": "Why Is the Periodic Table in This Order?",
+  "air": "2026-10-15",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done"
+    },
+    "sources": {
+      "state": "review",
+      "note": "FACT_NOTES_v02.md exists; needs Claude's check"
+    },
+    "vo": {
+      "state": "done"
+    },
+    "shots": {
+      "state": "done"
+    },
+    "picture": {
+      "state": "done"
+    },
+    "edit": {
+      "state": "done"
+    },
+    "thumbs": {
+      "state": "done"
+    },
+    "upload": {
+      "state": "done"
+    }
+  },
+  "claims": [],
+  "next": "Launch-day jobs 15 Oct 18:05; back-catalogue Short awaits final OK separately. Sources: needs Claude's check.",
+  "seeded_at": "2026-10-05",
+  "evidence": [
+    "02_Video-Projects/004_Whats-Really-Inside-An-Atom/production-status.md",
+    "02_Video-Projects/004_Whats-Really-Inside-An-Atom/01_Script/FACT_NOTES_v02.md",
+    "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/VO_RETIME_v02.json"
+  ]
+}

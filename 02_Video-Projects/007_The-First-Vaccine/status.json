@@ -1,0 +1,45 @@
+{
+  "film": "007",
+  "title": "Why Vaccines Are Named After a Cow",
+  "air": "2026-11-12",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done",
+      "note": "v01, 92.3"
+    },
+    "sources": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "done",
+      "note": "about 8.4 min; Part 01 v03 with the shut-up-house pickup"
+    },
+    "shots": {
+      "state": "review",
+      "note": "needs Claude's check"
+    },
+    "picture": {
+      "state": "todo",
+      "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details to confirm first); starts after the voiceover batch passes"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbs": {
+      "state": "todo"
+    },
+    "upload": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": "Script, facts and long voiceover are done. Shorts voiceover is queued; picture waits until the whole voiceover batch has passed. Shots: needs Claude's check.",
+  "seeded_at": "2026-10-05",
+  "evidence": [
+    "00_Brand/Channel-Setup/PIPELINE.json",
+    "02_Video-Projects/007_The-First-Vaccine/production-status.md"
+  ]
+}

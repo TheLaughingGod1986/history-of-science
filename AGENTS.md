@@ -112,7 +112,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 - **Ask Claude first** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."*). Anything an agent would mark NEEDS BEN goes to Claude on the desk first. Claude decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
   - money: a top-up, or anything past £0;
   - anything that can't be undone: renaming a live video, Studio Replace, a force-push (making a video private can be undone and is Claude's call, above);
-  - merging a PR;
+  - merging a PR that Claude hasn't PASSed;
   - the TikTok pause, and overriding a check;
   - things only he can physically do: Vercel env vars, OAuth reconnects, waking the Mac Mini, logins and 2FA;
   - any change to the channel's direction (a new series, a new format, a change of voice);

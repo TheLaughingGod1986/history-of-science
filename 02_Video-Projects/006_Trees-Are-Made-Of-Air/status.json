@@ -1,0 +1,45 @@
+{
+  "film": "006",
+  "title": "The Willow Tree That Was Made of Air",
+  "air": "2026-11-05",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done",
+      "note": "v02, 93.7"
+    },
+    "sources": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "done",
+      "note": "v02, all five parts PASS"
+    },
+    "shots": {
+      "state": "review",
+      "note": "needs Claude's check"
+    },
+    "picture": {
+      "state": "doing",
+      "note": "Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03\u201305 not started, re-priced after the Tue 6 Oct resets"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbs": {
+      "state": "todo"
+    },
+    "upload": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": "Words and voice are finished. Picture is the long pole: Part 01 is all kept and Part 02's rough cut is held; Parts 03\u201305 wait for pricing after Tuesday's credit resets. Shots: needs Claude's check.",
+  "seeded_at": "2026-10-05",
+  "evidence": [
+    "00_Brand/Channel-Setup/PIPELINE.json",
+    "02_Video-Projects/006_Trees-Are-Made-Of-Air/production-status.md"
+  ]
+}
