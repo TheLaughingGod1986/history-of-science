@@ -39,7 +39,7 @@ In the countryside, though, farmers had noticed something strange.
 [VISUAL MUST: 1:35 — the dairymaid's hand with two or three small round marks, soft and healing, nothing raw · LABEL: A MILD ILLNESS]
 [VISUAL MUST: 1:50 — a market day: the dairymaid walks calmly past a shuttered house while others hurry by · LABEL: "WE NEVER CATCH IT"]
 [VISUAL MUST: 2:05 — Dorset, 1774: a farmer (readable face, broad hat, work coat) carries a bucket across a farmyard to his wife and two young sons · LABEL: BENJAMIN JESTY · 1774]
-[VISUAL MUST: 2:25 — Berkeley, Gloucestershire: a red-brick country house with a garden; a doctor (readable face: Edward Jenner, about forty-six, grey-powdered hair tied back, dark coat, white neckcloth) writes in a case-book at a window · LABEL: EDWARD JENNER · BERKELEY]
+[VISUAL MUST: 2:25 — Berkeley, Gloucestershire: a Georgian country house with a garden; a doctor (readable face: Edward Jenner, in his late forties, grey-powdered hair tied back, dark coat, white neckcloth) writes in a case-book at a window · LABEL: EDWARD JENNER · BERKELEY]
 [EXPLORER ACTS: once. In the dairy yard the Explorer kneels beside a milking stool, peers at the dairymaid's healed hand, then at the cow, then back again, scratches his head and hurries off towards the doctor's house]
 [TEACH: Cowpox was a mild disease of cows that milkmaids could catch. Farmers believed that anyone who had had cowpox would never catch smallpox.]
 
@@ -63,8 +63,8 @@ But a list of stories isn't proof. Jenner needed a test.
 
 [CHAPTER CARD: A Pail, a Lancet and a Boy · 2:55 · ~1.5 s]
 [VISUAL MUST: 2:58 — May 1796: Sarah Nelmes (readable face, young dairymaid, white cap, rolled sleeves) sits in Jenner's study and shows him her hand · LABEL: SARAH NELMES · MAY 1796]
-[VISUAL MUST: 3:12 — a warm, sunlit study; the cow, later called Blossom, looks in through the open window from the field outside · LABEL: THE COW]
-[VISUAL MUST: 3:25 — James Phipps (readable face, eight-year-old boy, tousled hair, shirt and waistcoat) sits on a stool beside his father, swinging his legs · LABEL: JAMES PHIPPS · AGE ABOUT 8]
+[VISUAL MUST: 3:12 — the cow, later called Blossom, grazes in a field of the nearby farm, seen from a lane · LABEL: THE COW]
+[VISUAL MUST: 3:25 — James Phipps (readable face, eight-year-old boy, tousled hair, shirt and waistcoat) sits on a stool in Jenner's study, swinging his legs · LABEL: JAMES PHIPPS · AGE ABOUT 8]
 [VISUAL MUST: 3:38 — Jenner gently touches the lancet to the boy's arm; a calm cutaway to the case-book where a quill writes 14 MAY 1796; no wound shown · LABEL: 14 MAY 1796]
 [VISUAL MUST: 3:55 — a sequence of days on a calendar card; the boy in bed with a mild fever, then up and playing in the garden · LABEL: A MILD FEVER, THEN WELL]
 [TEACH: Jenner took matter from a cowpox sore on a milkmaid's hand and put it into a healthy boy's arm. The boy caught only mild cowpox and recovered.]

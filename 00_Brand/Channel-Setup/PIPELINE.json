@@ -2,31 +2,94 @@
   "updated": "2026-10-05",
   "updated_by": "Claude (desk reviewer)",
   "stages": [
-    {"key": "topic", "label": "Topic", "weight": 3},
-    {"key": "script", "label": "Script", "weight": 10},
-    {"key": "facts", "label": "Fact check", "weight": 5},
-    {"key": "package", "label": "Audit + upload package", "weight": 4},
-    {"key": "vo", "label": "Voiceover (long)", "weight": 10},
-    {"key": "shorts_scripts", "label": "Shorts scripts", "weight": 3},
-    {"key": "shorts_vo", "label": "Shorts voiceover", "weight": 5},
-    {"key": "picture", "label": "Picture", "weight": 35},
-    {"key": "edit", "label": "Edit + master", "weight": 10},
-    {"key": "thumbnails", "label": "Thumbnails", "weight": 5},
-    {"key": "ben_ok", "label": "Ben's final OK", "weight": 5},
-    {"key": "scheduled", "label": "Scheduled", "weight": 5}
+    {
+      "key": "topic",
+      "label": "Topic",
+      "weight": 3
+    },
+    {
+      "key": "script",
+      "label": "Script",
+      "weight": 10
+    },
+    {
+      "key": "facts",
+      "label": "Fact check",
+      "weight": 5
+    },
+    {
+      "key": "package",
+      "label": "Audit + upload package",
+      "weight": 4
+    },
+    {
+      "key": "vo",
+      "label": "Voiceover (long)",
+      "weight": 10
+    },
+    {
+      "key": "shorts_scripts",
+      "label": "Shorts scripts",
+      "weight": 3
+    },
+    {
+      "key": "shorts_vo",
+      "label": "Shorts voiceover",
+      "weight": 5
+    },
+    {
+      "key": "picture",
+      "label": "Picture",
+      "weight": 35
+    },
+    {
+      "key": "edit",
+      "label": "Edit + master",
+      "weight": 10
+    },
+    {
+      "key": "thumbnails",
+      "label": "Thumbnails",
+      "weight": 5
+    },
+    {
+      "key": "ben_ok",
+      "label": "Ben's final OK",
+      "weight": 5
+    },
+    {
+      "key": "scheduled",
+      "label": "Scheduled",
+      "weight": 5
+    }
   ],
   "next_steps": [
     "008 long voiceover (Grok, recording now) → Claude checks the evidence.",
     "007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.",
     "Tue 6 Oct: Flow and Google credit resets. Grok posts the balances; Claude re-prices 006 Parts 03–05.",
     "006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.",
-    "007 picture starts as soon as the whole voiceover batch has passed (shot list ready, no spend before).",
+    "007 picture: shot list v01 is ready (about 58 plates). The write lane sources its 8 period details and builds the priced plate boards; spend starts once the whole voiceover batch has passed.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its three Shorts, cards, end screen, pinned comment)."
   ],
   "credits": [
-    {"pool": "ElevenLabs (voice)", "left": "≈77k of 209.5k", "rule": "voice only; stop at 50k; resets Fri 30 Oct", "checked": "5 Oct"},
-    {"pool": "Vertex free trial (picture)", "left": "≈£23 usable", "rule": "never past £0, keep £5 buffer; trial ends 10 Nov", "checked": "4 Oct"},
-    {"pool": "Flow (picture)", "left": "resets Tue 6 Oct", "rule": "Flow first for picture", "checked": "—"}
+    {
+      "pool": "ElevenLabs (voice)",
+      "left": "≈77k of 209.5k",
+      "rule": "voice only; stop at 50k; resets Fri 30 Oct",
+      "checked": "5 Oct"
+    },
+    {
+      "pool": "Vertex free trial (picture)",
+      "left": "≈£23 usable",
+      "rule": "never past £0, keep £5 buffer; trial ends 10 Nov",
+      "checked": "4 Oct"
+    },
+    {
+      "pool": "Flow (picture)",
+      "left": "resets Tue 6 Oct",
+      "rule": "Flow first for picture",
+      "checked": "—"
+    }
   ],
   "films": [
     {
@@ -36,18 +99,46 @@
       "ready_by": "2026-10-02",
       "summary": "Finished and scheduled. Long `wwcjcFfC-5M` airs Thu 29 Oct 18:00; Shorts A (30 Oct), B `mTY67qet7cM` (8 Nov) and C `x_3L_IdYgEc` (15 Nov) are scheduled.",
       "stages": {
-        "topic": {"status": "done"},
-        "script": {"status": "done"},
-        "facts": {"status": "done"},
-        "package": {"status": "done"},
-        "vo": {"status": "done"},
-        "shorts_scripts": {"status": "done"},
-        "shorts_vo": {"status": "done"},
-        "picture": {"status": "done"},
-        "edit": {"status": "done", "note": "master v02"},
-        "thumbnails": {"status": "done", "note": "A/B/C in Test & Compare"},
-        "ben_ok": {"status": "done", "note": "2 Oct"},
-        "scheduled": {"status": "done", "note": "Thu 29 Oct 18:00; post-air jobs at 18:05"}
+        "topic": {
+          "status": "done"
+        },
+        "script": {
+          "status": "done"
+        },
+        "facts": {
+          "status": "done"
+        },
+        "package": {
+          "status": "done"
+        },
+        "vo": {
+          "status": "done"
+        },
+        "shorts_scripts": {
+          "status": "done"
+        },
+        "shorts_vo": {
+          "status": "done"
+        },
+        "picture": {
+          "status": "done"
+        },
+        "edit": {
+          "status": "done",
+          "note": "master v02"
+        },
+        "thumbnails": {
+          "status": "done",
+          "note": "A/B/C in Test & Compare"
+        },
+        "ben_ok": {
+          "status": "done",
+          "note": "2 Oct"
+        },
+        "scheduled": {
+          "status": "done",
+          "note": "Thu 29 Oct 18:00; post-air jobs at 18:05"
+        }
       }
     },
     {
@@ -57,18 +148,53 @@
       "ready_by": "2026-11-01",
       "summary": "Words and voice are finished. Picture is the long pole: Part 01 is all kept and Part 02's rough cut is held; Parts 03–05 wait for pricing after Tuesday's credit resets.",
       "stages": {
-        "topic": {"status": "done"},
-        "script": {"status": "done", "note": "v02, 93.7"},
-        "facts": {"status": "done"},
-        "package": {"status": "done"},
-        "vo": {"status": "done", "note": "v02, all five parts PASS"},
-        "shorts_scripts": {"status": "done"},
-        "shorts_vo": {"status": "done", "note": "A v02 · B v03b · C v01 locked"},
-        "picture": {"status": "doing", "progress": 0.36, "owner": "Grok", "due": "2026-10-25", "note": "Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets"},
-        "edit": {"status": "todo", "due": "2026-10-29"},
-        "thumbnails": {"status": "todo", "due": "2026-10-29"},
-        "ben_ok": {"status": "todo", "due": "2026-11-01"},
-        "scheduled": {"status": "todo", "due": "2026-11-02"}
+        "topic": {
+          "status": "done"
+        },
+        "script": {
+          "status": "done",
+          "note": "v02, 93.7"
+        },
+        "facts": {
+          "status": "done"
+        },
+        "package": {
+          "status": "done"
+        },
+        "vo": {
+          "status": "done",
+          "note": "v02, all five parts PASS"
+        },
+        "shorts_scripts": {
+          "status": "done"
+        },
+        "shorts_vo": {
+          "status": "done",
+          "note": "A v02 · B v03b · C v01 locked"
+        },
+        "picture": {
+          "status": "doing",
+          "progress": 0.36,
+          "owner": "Grok",
+          "due": "2026-10-25",
+          "note": "Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets"
+        },
+        "edit": {
+          "status": "todo",
+          "due": "2026-10-29"
+        },
+        "thumbnails": {
+          "status": "todo",
+          "due": "2026-10-29"
+        },
+        "ben_ok": {
+          "status": "todo",
+          "due": "2026-11-01"
+        },
+        "scheduled": {
+          "status": "todo",
+          "due": "2026-11-02"
+        }
       }
     },
     {
@@ -78,18 +204,52 @@
       "ready_by": "2026-11-08",
       "summary": "Script, facts and long voiceover are done. Shorts voiceover is queued; picture waits until the whole voiceover batch has passed.",
       "stages": {
-        "topic": {"status": "done"},
-        "script": {"status": "done", "note": "v01, 92.3"},
-        "facts": {"status": "done"},
-        "package": {"status": "done"},
-        "vo": {"status": "done", "note": "about 8.4 min; Part 01 v03 with the shut-up-house pickup"},
-        "shorts_scripts": {"status": "done"},
-        "shorts_vo": {"status": "todo", "owner": "Grok", "due": "2026-10-07"},
-        "picture": {"status": "todo", "due": "2026-11-01", "note": "starts after the voiceover batch passes"},
-        "edit": {"status": "todo", "due": "2026-11-05"},
-        "thumbnails": {"status": "todo", "due": "2026-11-05"},
-        "ben_ok": {"status": "todo", "due": "2026-11-08"},
-        "scheduled": {"status": "todo", "due": "2026-11-09"}
+        "topic": {
+          "status": "done"
+        },
+        "script": {
+          "status": "done",
+          "note": "v01, 92.3"
+        },
+        "facts": {
+          "status": "done"
+        },
+        "package": {
+          "status": "done"
+        },
+        "vo": {
+          "status": "done",
+          "note": "about 8.4 min; Part 01 v03 with the shut-up-house pickup"
+        },
+        "shorts_scripts": {
+          "status": "done"
+        },
+        "shorts_vo": {
+          "status": "todo",
+          "owner": "Grok",
+          "due": "2026-10-07"
+        },
+        "picture": {
+          "status": "todo",
+          "due": "2026-11-01",
+          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details to confirm first); starts after the voiceover batch passes"
+        },
+        "edit": {
+          "status": "todo",
+          "due": "2026-11-05"
+        },
+        "thumbnails": {
+          "status": "todo",
+          "due": "2026-11-05"
+        },
+        "ben_ok": {
+          "status": "todo",
+          "due": "2026-11-08"
+        },
+        "scheduled": {
+          "status": "todo",
+          "due": "2026-11-09"
+        }
       }
     },
     {
@@ -99,18 +259,53 @@
       "ready_by": "2026-11-15",
       "summary": "Script, facts, audit and package are done. The long voiceover is being recorded now.",
       "stages": {
-        "topic": {"status": "done"},
-        "script": {"status": "done", "note": "v01, 92.1"},
-        "facts": {"status": "done"},
-        "package": {"status": "done"},
-        "vo": {"status": "doing", "progress": 0.1, "owner": "Grok", "due": "2026-10-06", "note": "started 5 Oct; evidence pack to Claude"},
-        "shorts_scripts": {"status": "done"},
-        "shorts_vo": {"status": "todo", "due": "2026-10-08"},
-        "picture": {"status": "todo", "due": "2026-11-08"},
-        "edit": {"status": "todo", "due": "2026-11-12"},
-        "thumbnails": {"status": "todo", "due": "2026-11-12"},
-        "ben_ok": {"status": "todo", "due": "2026-11-15"},
-        "scheduled": {"status": "todo", "due": "2026-11-16"}
+        "topic": {
+          "status": "done"
+        },
+        "script": {
+          "status": "done",
+          "note": "v01, 92.1"
+        },
+        "facts": {
+          "status": "done"
+        },
+        "package": {
+          "status": "done"
+        },
+        "vo": {
+          "status": "doing",
+          "progress": 0.1,
+          "owner": "Grok",
+          "due": "2026-10-06",
+          "note": "started 5 Oct; evidence pack to Claude"
+        },
+        "shorts_scripts": {
+          "status": "done"
+        },
+        "shorts_vo": {
+          "status": "todo",
+          "due": "2026-10-08"
+        },
+        "picture": {
+          "status": "todo",
+          "due": "2026-11-08"
+        },
+        "edit": {
+          "status": "todo",
+          "due": "2026-11-12"
+        },
+        "thumbnails": {
+          "status": "todo",
+          "due": "2026-11-12"
+        },
+        "ben_ok": {
+          "status": "todo",
+          "due": "2026-11-15"
+        },
+        "scheduled": {
+          "status": "todo",
+          "due": "2026-11-16"
+        }
       }
     },
     {
@@ -120,18 +315,50 @@
       "ready_by": "2026-11-22",
       "summary": "Script, facts, audit and package are done. Voiceover is next in the queue after 008 and the 007 Shorts.",
       "stages": {
-        "topic": {"status": "done"},
-        "script": {"status": "done", "note": "v01, 91.3"},
-        "facts": {"status": "done"},
-        "package": {"status": "done"},
-        "vo": {"status": "todo", "due": "2026-10-07"},
-        "shorts_scripts": {"status": "done"},
-        "shorts_vo": {"status": "todo", "due": "2026-10-08"},
-        "picture": {"status": "todo", "due": "2026-11-15"},
-        "edit": {"status": "todo", "due": "2026-11-19"},
-        "thumbnails": {"status": "todo", "due": "2026-11-19"},
-        "ben_ok": {"status": "todo", "due": "2026-11-22"},
-        "scheduled": {"status": "todo", "due": "2026-11-23"}
+        "topic": {
+          "status": "done"
+        },
+        "script": {
+          "status": "done",
+          "note": "v01, 91.3"
+        },
+        "facts": {
+          "status": "done"
+        },
+        "package": {
+          "status": "done"
+        },
+        "vo": {
+          "status": "todo",
+          "due": "2026-10-07"
+        },
+        "shorts_scripts": {
+          "status": "done"
+        },
+        "shorts_vo": {
+          "status": "todo",
+          "due": "2026-10-08"
+        },
+        "picture": {
+          "status": "todo",
+          "due": "2026-11-15"
+        },
+        "edit": {
+          "status": "todo",
+          "due": "2026-11-19"
+        },
+        "thumbnails": {
+          "status": "todo",
+          "due": "2026-11-19"
+        },
+        "ben_ok": {
+          "status": "todo",
+          "due": "2026-11-22"
+        },
+        "scheduled": {
+          "status": "todo",
+          "due": "2026-11-23"
+        }
       }
     },
     {
@@ -141,18 +368,50 @@
       "ready_by": "2026-11-29",
       "summary": "Script, facts, audit and package are done. Voiceover follows 009.",
       "stages": {
-        "topic": {"status": "done"},
-        "script": {"status": "done", "note": "v01, 92.1"},
-        "facts": {"status": "done"},
-        "package": {"status": "done"},
-        "vo": {"status": "todo", "due": "2026-10-07"},
-        "shorts_scripts": {"status": "done"},
-        "shorts_vo": {"status": "todo", "due": "2026-10-08"},
-        "picture": {"status": "todo", "due": "2026-11-22"},
-        "edit": {"status": "todo", "due": "2026-11-26"},
-        "thumbnails": {"status": "todo", "due": "2026-11-26"},
-        "ben_ok": {"status": "todo", "due": "2026-11-29"},
-        "scheduled": {"status": "todo", "due": "2026-11-30"}
+        "topic": {
+          "status": "done"
+        },
+        "script": {
+          "status": "done",
+          "note": "v01, 92.1"
+        },
+        "facts": {
+          "status": "done"
+        },
+        "package": {
+          "status": "done"
+        },
+        "vo": {
+          "status": "todo",
+          "due": "2026-10-07"
+        },
+        "shorts_scripts": {
+          "status": "done"
+        },
+        "shorts_vo": {
+          "status": "todo",
+          "due": "2026-10-08"
+        },
+        "picture": {
+          "status": "todo",
+          "due": "2026-11-22"
+        },
+        "edit": {
+          "status": "todo",
+          "due": "2026-11-26"
+        },
+        "thumbnails": {
+          "status": "todo",
+          "due": "2026-11-26"
+        },
+        "ben_ok": {
+          "status": "todo",
+          "due": "2026-11-29"
+        },
+        "scheduled": {
+          "status": "todo",
+          "due": "2026-11-30"
+        }
       }
     }
   ]

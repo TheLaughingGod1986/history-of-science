@@ -24,7 +24,7 @@
 2. 007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.
 3. Tue 6 Oct: Flow and Google credit resets. Grok posts the balances; Claude re-prices 006 Parts 03–05.
 4. 006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.
-5. 007 picture starts as soon as the whole voiceover batch has passed (shot list ready, no spend before).
+5. 007 picture: shot list v01 is ready (about 58 plates). The write lane sources its 8 period details and builds the priced plate boards; spend starts once the whole voiceover batch has passed.
 6. Thu 29 Oct 18:05: 005 post-air jobs (Related on its three Shorts, cards, end screen, pinned comment).
 
 ## Credit left
@@ -94,7 +94,7 @@ Script, facts and long voiceover are done. Shorts voiceover is queued; picture w
 - ✅ **Voiceover (long)** — done: about 8.4 min; Part 01 v03 with the shut-up-house pickup
 - ✅ **Shorts scripts** — done
 - ⬜ **Shorts voiceover** — to do (Grok, due Wed 7 Oct)
-- ⬜ **Picture** — to do (due Sun 1 Nov): starts after the voiceover batch passes
+- ⬜ **Picture** — to do (due Sun 1 Nov): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details to confirm first); starts after the voiceover batch passes
 - ⬜ **Edit + master** — to do (due Thu 5 Nov)
 - ⬜ **Thumbnails** — to do (due Thu 5 Nov)
 - ⬜ **Ben's final OK** — to do (due Sun 8 Nov)
