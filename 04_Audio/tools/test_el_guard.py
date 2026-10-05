@@ -36,7 +36,8 @@ class GuardTest(unittest.TestCase):
     def test_spend_paths(self):
         self.assertTrue(el_guard.is_spend("POST", "/v1/text-to-speech/abc/with-timestamps"))
         self.assertFalse(el_guard.is_spend("GET", "/v1/user/subscription"))
-        self.assertFalse(el_guard.is_spend("POST", "/v1/speech-to-text"))
+        self.assertTrue(el_guard.is_spend("POST", "/v1/speech-to-text"))  # Scribe bills the pool too
+        self.assertFalse(el_guard.is_spend("GET", "/v1/history"))
 
     def test_spend_logs_to_ledger_and_holds_lock(self):
         el_guard.before_spend("/v1/text-to-speech/x", {"text": "hello world"}, sub(90_000))
@@ -93,6 +94,28 @@ class GuardTest(unittest.TestCase):
         el_guard.acquire_lock()
         el_guard.release_lock()
         self.assertFalse(el_guard.lock_path().exists())
+
+
+
+class MultipartGuardTest(unittest.TestCase):
+    def test_scribe_upload_goes_through_the_guard(self):
+        import el_client
+
+        seen = []
+
+        def refuse(path, data, fetch):
+            seen.append(path)
+            raise el_guard.SpendRefused("test")
+
+        real = el_guard.before_spend
+        el_guard.before_spend = refuse
+        try:
+            with tempfile.NamedTemporaryFile(suffix=".mp3") as f:
+                with self.assertRaises(el_guard.SpendRefused):
+                    el_client.multipart_post("/v1/speech-to-text", "tok", "api_key", fields={}, files=[("file", Path(f.name))])
+        finally:
+            el_guard.before_spend = real
+        self.assertEqual(seen, ["/v1/speech-to-text"])
 
 
 if __name__ == "__main__":

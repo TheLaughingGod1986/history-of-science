@@ -7,6 +7,9 @@ on:
       - "04_Audio/tools/el_guard.py"
       - "04_Audio/tools/el_client.py"
       - "04_Audio/tools/test_el_guard.py"
+      - "04_Audio/tools/vo_take.py"
+      - "04_Audio/tools/hos_voice.py"
+      - "04_Audio/tools/test_vo_take.py"
       - ".github/workflows/audio-tools.yml"
 
 jobs:
@@ -18,3 +21,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 04_Audio/tools/test_el_guard.py
+      - run: python3 -m unittest discover -s 04_Audio/tools -p "test_vo_take.py" -v

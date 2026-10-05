@@ -33,6 +33,7 @@ SPEND_PREFIXES = (
     "/v1/sound-generation",
     "/v1/music",
     "/v1/speech-to-speech",
+    "/v1/speech-to-text",  # Scribe bills the same pool
 )
 DEFAULT_FLOOR = 50_000
 
