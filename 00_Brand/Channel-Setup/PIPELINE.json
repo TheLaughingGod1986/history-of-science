@@ -77,7 +77,7 @@
     }
   ],
   "next_steps": [
-    "008 long voiceover: Grok pulls main, then records part by part with vo_take.py → Claude checks each part's evidence.",
+    "Ben: wake the Mac Mini (offline since 19:57 on 5 Oct). Then Grok pulls main and records 008 part by part with vo_take.py; Claude checks each part's evidence.",
     "007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.",
     "Tue 6 Oct: Flow and Google credit resets. Grok posts the balances; Claude re-prices 006 Parts 03–05.",
     "006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.",
@@ -298,8 +298,8 @@
           "status": "done"
         },
         "vo": {
-          "status": "doing",
-          "owner": "Grok",
+          "status": "blocked",
+          "owner": "Ben",
           "due": "2026-10-06",
           "note": "started 5 Oct; no part reported yet. Each part: record, word check, then Claude's review",
           "steps": [
@@ -309,9 +309,8 @@
           "steps_unit": "parts passed",
           "left": "about half a day",
           "eta": "2026-10-06",
-          "underway": false,
-          "waiting": "Grok to pull main and start part 1 with the new take tool",
-          "since": "2026-10-05"
+          "waiting": "Mac Mini offline since 19:57; Ben to wake it, then back to Grok to record",
+          "since": "2026-10-05T19:57"
         },
         "shorts_scripts": {
           "status": "done"
