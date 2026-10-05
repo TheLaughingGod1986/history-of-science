@@ -16,9 +16,9 @@ By the end of this film, you'll know how a milkmaid's hand, a country doctor and
 
 In the seventeen-hundreds, the most feared disease in the world was smallpox. People called it the speckled monster. It caught kings and farm workers alike, and about three in every ten people who caught it died. Many who lived were scarred for life, and some were left blind.
 
-Picture yourself in an English village in those years. When smallpox arrived, you would see a cross chalked on a neighbour's door, hear the church bell toll day after day, and wonder whose house would be next. Parents counted their children only after they had survived it.
+Picture yourself in an English village in those years. When smallpox arrived, you would see a neighbour's house shut up and silent, hear the church bell toll day after day, and wonder whose house would be next. Parents counted their children only after they had survived it.
 
-[VISUAL MUST: 0:28 — a quiet English village street at dusk; doors marked with chalk crosses; a family looks out from a window, worried · LABEL: SMALLPOX]
+[VISUAL MUST: 0:28 — a quiet English village street at dusk; shutters closed on a house, the street empty; a family looks out from a window, worried · LABEL: SMALLPOX]
 [VISUAL MUST: 0:38 — a soft, painted map of Europe; small grey shadows drift from town to town · LABEL: THE SPECKLED MONSTER]
 
 There was one way to fight back, and it was risky. Doctors took a little matter from a smallpox sore and scratched it into a healthy person's arm. It usually gave a milder illness, and lifelong protection. It was called variolation. But some people died from it, and they could pass full smallpox on to others.
@@ -37,7 +37,7 @@ In the countryside, though, farmers had noticed something strange.
 [CHAPTER CARD: The Milkmaids' Secret · 1:20 · ~1.5 s]
 [VISUAL MUST: 1:23 — a dairymaid milks a cow at dawn; on the cow's udder, a few small pale blisters · LABEL: COWPOX]
 [VISUAL MUST: 1:35 — the dairymaid's hand with two or three small round marks, soft and healing, nothing raw · LABEL: A MILD ILLNESS]
-[VISUAL MUST: 1:50 — a market day: the dairymaid walks calmly past a house with a chalk cross on the door while others hurry by · LABEL: "WE NEVER CATCH IT"]
+[VISUAL MUST: 1:50 — a market day: the dairymaid walks calmly past a shuttered house while others hurry by · LABEL: "WE NEVER CATCH IT"]
 [VISUAL MUST: 2:05 — Dorset, 1774: a farmer (readable face, broad hat, work coat) carries a bucket across a farmyard to his wife and two young sons · LABEL: BENJAMIN JESTY · 1774]
 [VISUAL MUST: 2:25 — Berkeley, Gloucestershire: a red-brick country house with a garden; a doctor (readable face: Edward Jenner, about forty-six, grey-powdered hair tied back, dark coat, white neckcloth) writes in a case-book at a window · LABEL: EDWARD JENNER · BERKELEY]
 [EXPLORER ACTS: once. In the dairy yard the Explorer kneels beside a milking stool, peers at the dairymaid's healed hand, then at the cow, then back again, scratches his head and hurries off towards the doctor's house]
