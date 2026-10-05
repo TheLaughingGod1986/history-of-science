@@ -33,7 +33,7 @@
 ## Being worked on right now
 
 - **006** · 🔄 **Picture** — in progress (36%, 1/5 parts kept · about 3 weeks left · ETA Sun 25 Oct (in 20 d), with Grok, ⏸ waiting: Tue 6 Oct credit resets, then Claude prices Parts 03–05, due Sun 25 Oct (in 20 d)): Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets; pace set by Flow and Vertex credit
-- **008** · ⛔ **Voiceover (long)** — blocked (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow), with Ben since Mon 5 Oct 19:57, ⛔ blocked: Mac Mini offline since 19:57; Ben to wake it, then back to Grok to record, due Tue 6 Oct (tomorrow)): started 5 Oct; no part reported yet. Each part: record, word check, then Claude's review
+- **008** · ⛔ **Voiceover (long)** — blocked (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow), with Ben since Mon 5 Oct 19:57, ⛔ blocked: Mac Mini offline since 19:57; Ben to wake it, then back to Grok to record, due Tue 6 Oct (tomorrow)): not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review
 
 ## Next steps (in order)
 
@@ -123,13 +123,13 @@ Script, facts and long voiceover are done. Shorts voiceover is queued; picture w
 
 Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · ⛔ blocked
 
-Script, facts, audit and package are done. The long voiceover is being recorded now.
+Script, facts, audit and package are done. The long voiceover starts as soon as the Mac mini is back online.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.1
 - ✅ **Fact check** — done
 - ✅ **Audit + upload package** — done
-- ⛔ **Voiceover (long)** — blocked (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow), with Ben since Mon 5 Oct 19:57, ⛔ blocked: Mac Mini offline since 19:57; Ben to wake it, then back to Grok to record, due Tue 6 Oct (tomorrow)): started 5 Oct; no part reported yet. Each part: record, word check, then Claude's review
+- ⛔ **Voiceover (long)** — blocked (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow), with Ben since Mon 5 Oct 19:57, ⛔ blocked: Mac Mini offline since 19:57; Ben to wake it, then back to Grok to record, due Tue 6 Oct (tomorrow)): not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review
 - ✅ **Shorts scripts** — done
 - ⬜ **Shorts voiceover** — to do (with Grok, due Thu 8 Oct (in 3 d))
 - ⬜ **Picture** — to do (with Grok, due Sun 8 Nov (in 34 d))

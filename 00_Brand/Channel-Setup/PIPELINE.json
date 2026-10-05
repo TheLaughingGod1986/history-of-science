@@ -282,7 +282,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Script, facts, audit and package are done. The long voiceover is being recorded now.",
+      "summary": "Script, facts, audit and package are done. The long voiceover starts as soon as the Mac mini is back online.",
       "stages": {
         "topic": {
           "status": "done"
@@ -301,7 +301,7 @@
           "status": "blocked",
           "owner": "Ben",
           "due": "2026-10-06",
-          "note": "started 5 Oct; no part reported yet. Each part: record, word check, then Claude's review",
+          "note": "not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review",
           "steps": [
             0,
             5
