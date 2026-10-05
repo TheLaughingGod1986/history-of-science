@@ -41,15 +41,15 @@ Every vaccine is named after a cow. In 1796, a milkmaid caught a mild disease fr
 
 ## Short B — the milkmaids' secret
 
-- **Frame 0:** a milkmaid's hand on the pail handle, already walking past a door with a chalk cross (long Part 02 plate `03_market_day`).
+- **Frame 0:** a milkmaid's hand on the pail handle, already walking past a shuttered house on a quiet street (long Part 02 plate `03_market_day`).
 - **Hook caption:** THEY NEVER **CAUGHT IT**
-- **Change by 1 s:** the door behind her swings shut.
+- **Change by 1 s:** a shutter behind her swings closed.
 
 | s | Picture | Spoken |
 |---|---|---|
-| 0–2 | milkmaid walks past the chalked door | Milkmaids never caught smallpox. |
+| 0–2 | milkmaid walks past the shuttered house | Milkmaids never caught smallpox. |
 | 2–7 | a cow's udder, then the milkmaid's healed hand | They caught cowpox from the cows instead, a few sore spots and nothing more. |
-| 7–12 | the village street, doors marked | And farmers swore that anyone who'd had it was safe from smallpox for life. |
+| 7–12 | the quiet village street, shutters closed | And farmers swore that anyone who'd had it was safe from smallpox for life. |
 | 9–14 | **title on screen:** *Why Vaccines Are Named After a Cow* | |
 | 12–19 | Jenner writing cases at his window | One country doctor took the rumour seriously, and tested it. |
 | 19–24 | back to the milkmaid on the street (loop) | He was right, and it became the first vaccine. |
@@ -71,7 +71,7 @@ Milkmaids never caught smallpox. They caught cowpox from the cows instead, a few
 | s | Picture | Spoken |
 |---|---|---|
 | 0–2 | globe, lights going out | Smallpox is gone. Forever. |
-| 2–7 | the village street with chalked doors | For centuries it killed about three in every ten people it caught. |
+| 2–7 | a shuttered house on a quiet village street | For centuries it killed about three in every ten people it caught. |
 | 7–12 | the boy running in the garden; the case-book NO DISEASE FOLLOWED | Then, in 1796, one test showed that cowpox could protect you from it. |
 | 9–14 | **title on screen:** *Why Vaccines Are Named After a Cow* | |
 | 12–19 | health workers travel village to village | Health workers spread that idea to every country, until smallpox had nowhere left to hide. |
