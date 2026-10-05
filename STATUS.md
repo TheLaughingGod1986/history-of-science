@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Mon 5 Oct 2026**, updated by Claude (desk reviewer). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Mon 5 Oct 2026**, updated by Grok. Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -11,7 +11,7 @@
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (24 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (31 d) | 53% | Picture (in progress) | **Grok** · ⏸ waiting: Tue 6 Oct credit resets, then Claude prices Parts 03–05 | 1/5 parts kept · about 3 weeks left · ETA Sun 25 Oct (in 20 d) | Sun 1 Nov (in 27 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (38 d) | 35% | Shorts voiceover (to do) | **Grok** · queued (after 008 long VO) | starts later; due in 2 d | Sun 8 Nov (in 34 d) | 🟢 on track |
-| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (45 d) | 25% | Voiceover (long) (in progress) | **Grok** · ⏸ waiting: Grok to pull main and start part 1 with the new take tool | 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow) | Sun 15 Nov (in 41 d) | 🟢 on track |
+| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (45 d) | 25% | Voiceover (long) (in progress) | **Grok** · ⏸ waiting: Mac mini offline since 19:57; Grok starts part 1 when it is back | 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow) | Sun 15 Nov (in 41 d) | 🟢 on track |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (52 d) | 25% | Voiceover (long) (to do) | **Grok** · queued (after 007 Shorts VO) | starts later; due in 2 d | Sun 22 Nov (in 48 d) | 🟢 on track |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (59 d) | 25% | Voiceover (long) (to do) | **Grok** · queued (after 009 VO) | starts later; due in 2 d | Sun 29 Nov (in 55 d) | 🟢 on track |
 
@@ -22,7 +22,7 @@
 
 **Grok**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 006 Picture: Tue 6 Oct credit resets, then Claude prices Parts 03–05; 008 Voiceover (long): Grok to pull main and start part 1 with the new take tool
+- ⏸ Waiting: 006 Picture: Tue 6 Oct credit resets, then Claude prices Parts 03–05; 008 Voiceover (long): Mac mini offline since 19:57; Grok starts part 1 when it is back
 - ⏭ Next up: 007 Shorts voiceover, due Wed 7 Oct; 009 Voiceover (long), due Wed 7 Oct; 010 Voiceover (long), due Wed 7 Oct
 
 **Ben**
@@ -32,7 +32,7 @@
 ## Being worked on right now
 
 - **006** · 🔄 **Picture** — in progress (36%, 1/5 parts kept · about 3 weeks left · ETA Sun 25 Oct (in 20 d), with Grok, ⏸ waiting: Tue 6 Oct credit resets, then Claude prices Parts 03–05, due Sun 25 Oct (in 20 d)): Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets; pace set by Flow and Vertex credit
-- **008** · 🔄 **Voiceover (long)** — in progress (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow), with Grok since Mon 5 Oct, ⏸ waiting: Grok to pull main and start part 1 with the new take tool, due Tue 6 Oct (tomorrow)): started 5 Oct; no part reported yet. Each part: record, word check, then Claude's review
+- **008** · 🔄 **Voiceover (long)** — in progress (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow), with Grok since Mon 5 Oct, ⏸ waiting: Mac mini offline since 19:57; Grok starts part 1 when it is back, due Tue 6 Oct (tomorrow)): not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review
 
 ## Next steps (in order)
 
@@ -122,13 +122,13 @@ Script, facts and long voiceover are done. Shorts voiceover is queued; picture w
 
 Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · 🟢 on track
 
-Script, facts, audit and package are done. The long voiceover is being recorded now.
+Script, facts, audit and package are done. The long voiceover starts as soon as the Mac mini is back online.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.1
 - ✅ **Fact check** — done
 - ✅ **Audit + upload package** — done
-- 🔄 **Voiceover (long)** — in progress (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow), with Grok since Mon 5 Oct, ⏸ waiting: Grok to pull main and start part 1 with the new take tool, due Tue 6 Oct (tomorrow)): started 5 Oct; no part reported yet. Each part: record, word check, then Claude's review
+- 🔄 **Voiceover (long)** — in progress (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (tomorrow), with Grok since Mon 5 Oct, ⏸ waiting: Mac mini offline since 19:57; Grok starts part 1 when it is back, due Tue 6 Oct (tomorrow)): not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review
 - ✅ **Shorts scripts** — done
 - ⬜ **Shorts voiceover** — to do (with Grok, due Thu 8 Oct (in 3 d))
 - ⬜ **Picture** — to do (with Grok, due Sun 8 Nov (in 34 d))
