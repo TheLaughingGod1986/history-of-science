@@ -90,6 +90,14 @@ Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged â
 - **Claude asks Ben** only at the final check-in below (`to=ben status=approval`). Grok does not ping Ben directly.
 - Neighbour tables for live films: `00_Brand/Channel-Setup/audits/NEIGHBOURS_001_004_2026-10-01.md`.
 
+## Status board
+
+`STATUS.md` (repo root) is Ben's one view of every film: how far through it is (%), what is being worked on now, what is next, when it should be ready, and the credit left. It is generated from `00_Brand/Channel-Setup/PIPELINE.json`; never edit `STATUS.md` by hand.
+
+- **Whoever starts or finishes a stage** edits that film's entry in `PIPELINE.json` (status `todo` / `doing` / `done` / `blocked`, `progress` 0â€“1 for a stage in progress, `owner`, `due`, a short `note`), sets `updated`, runs `python3 00_Brand/Channel-Setup/tools/status_board.py`, and commits both files in the same PR. CI (`status-board`) fails if they don't match.
+- Keep `next_steps` and `credits` current. A stage past its `due` date shows the film as behind; a blocked stage shows it as blocked.
+- Ben shouldn't have to ask for progress: if it isn't on the board, it isn't reported.
+
 ## Ben's check-in (2 Oct 2026: one final OK, not one per stage)
 
 Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me. Check in only once the film, Shorts and thumbnails are ready to approve."*
