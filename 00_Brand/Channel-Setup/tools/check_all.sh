@@ -3,6 +3,7 @@
 #
 #   00_Brand/Channel-Setup/tools/check_all.sh                     # repo-wide checks
 #   00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/009_The-Falling-Moon-Gravity
+#   00_Brand/Channel-Setup/tools/check_all.sh 009                 # same, by film number
 #
 # Repo-wide: no media staged, contract tests, package-lint on every manifest,
 # status board in sync, ElevenLabs guard tests.
@@ -35,6 +36,11 @@ run "package-lint" npx tsx scripts/package-lint.ts
 
 if [ -n "$FILM" ]; then
   FILM_DIR="$ROOT/${FILM%/}"
+  if [ ! -d "$FILM_DIR" ]; then
+    # A bare film number ("007") means its folder under 02_Video-Projects.
+    match=("$ROOT"/02_Video-Projects/"${FILM%/}"_*/)
+    [ ${#match[@]} -eq 1 ] && [ -d "${match[0]}" ] && FILM_DIR="${match[0]%/}"
+  fi
   SCRIPT=$(ls "$FILM_DIR"/01_Script/*_script_master_v*.md 2>/dev/null | sort -V | tail -1)
   if [ -z "$SCRIPT" ]; then
     printf '\n== script: no *_script_master_v*.md in %s/01_Script\n' "$FILM"; fail=1
