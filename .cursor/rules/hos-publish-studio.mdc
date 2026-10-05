@@ -37,5 +37,5 @@ Full rules: `STUDIO_PLAYBOOK.md` §9–§12.
 - **Studio-only jobs** go through desktop Studio CDP (`00_Brand/Channel-Setup/audits/start_studio_chrome_cdp.sh`). Never Replace.
 - **Affiliate:** only on a long that names the product in VO or on screen; one product per film; never invent ASINs; never commit the Amazon tag.
 - **Social:**
-  - **TikTok paused** and not created (`TikTok/TIKTOK_UPLOAD_BLOCK.json`): no uploads, retries or "test one".
+  - **TikTok:** Buffer only (Ben, 5 Oct 2026). Direct uploads stay paused (`TikTok/TIKTOK_UPLOAD_BLOCK.json`): no direct uploads, retries or "test one".
   - Instagram and Threads `@historyofscienceyt`: each Short at most once per platform, never before its long is public (`social/uniqueness.py`). Never post to an Orbit account or the Orbit Facebook Page.

@@ -291,7 +291,7 @@ HOS 004 went up marked **Made for Kids**, which switched off comments, notificat
 
 ## 12. Social
 
-- **TikTok is paused** and HOS has no TikTok account: `TikTok/TIKTOK_UPLOAD_BLOCK.json` has `"paused": true`. No uploads, retries or "test one" until Ben lifts it.
+- **TikTok goes through Buffer only** (Ben, 5 Oct 2026). Direct uploads stay paused: `TikTok/TIKTOK_UPLOAD_BLOCK.json` has `"paused": true`. No direct uploads, retries or "test one" until Ben lifts it.
 - **Instagram and Threads** (`@historyofscienceyt`): each Short at most once per platform, never before its long is public, never on an Orbit account (`social/uniqueness.py`). Facebook: no HOS Page yet; the Page in the Meta portfolio is Orbit's.
 
 ## 13. Ben signs off
@@ -303,14 +303,14 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 
 - **Claude and Grok decide on the desk:** topic, script, Short scripts, voice takes, picture stages, titles, descriptions, tags, thumbnail and cover drafts, and the schedule. Every check above still has to PASS; Claude reviews each stage instead of Ben.
 - **Ben is asked once per film, before anything is scheduled:** the finished long (he watches the moving file), the Shorts (on his phone), and the thumbnail and covers with the titles. That is his final OK. Nothing is scheduled or made public without it.
-- **Still Ben's alone:** renaming anything already live; lifting the TikTok pause; overriding a failed check (a check that's wrong is fixed in its own PR). Deleting a video stays on the Never list.
+- **Still Ben's alone:** renaming anything already live; lifting the TikTok pause on direct uploads (Buffer TikTok is allowed, Ben 5 Oct 2026); overriding a failed check (a check that's wrong is fixed in its own PR). Deleting a video stays on the Never list.
 - **Claude may make a public HOS or Orbit video private, or take it down, when needed** (Ben to Claude directly, 5 Oct 2026; mirrors orbit-with-ben `bd99085`). A takedown is always done by making the video private, because private can be undone. Claude records the video id and the reason on the desk and tells Ben. Any agent that thinks a live video should go private brings the video id and the reason to Claude on the desk, not to Ben.
 - **Spend:** Vertex, Flow and API credit may be used down to **£0** of the Free Trial or prepaid credit. Stop at £0. Never spill onto paid billing; report and wait for Ben to top up.
 - **Ask Claude first** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."*). Anything an agent would mark NEEDS BEN goes to Claude on the desk first. Claude decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
   - money: a top-up, or anything past £0;
   - anything that can't be undone: renaming a live video, Studio Replace, a force-push (making a video private can be undone and is Claude's call, above);
   - merging a PR that Claude hasn't PASSed;
-  - the TikTok pause, and overriding a check;
+  - the TikTok pause on direct uploads, and overriding a check;
   - things only he can physically do: Vercel env vars, OAuth reconnects, waking the Mac Mini, logins and 2FA;
   - any change to the channel's direction (a new series, a new format, a change of voice);
   - the final OK above.
