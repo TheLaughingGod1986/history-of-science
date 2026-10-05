@@ -31,7 +31,7 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 | `00_Brand/Channel-Setup/style/` | The live approved thumbnails and covers, as images: the style reference set |
 | `07_Content-Ops/src/lib/hos-contract/` | The release contract as code (`rules.ts`): what `lint:package` and `channel:audit` enforce |
 | `00_Brand/Channel-Setup/audits/` | The current audit, `SHORTS_LOG.md`, `weekly/` reports, the Studio Chrome launcher |
-| `00_Brand/Channel-Setup/{Meta,Threads,TikTok,social}/` | Social mirror ops. Social posts go through Buffer only (HOS org, `BUFFER_HOS_API_KEY`). Direct TikTok uploads stay paused (`TikTok/TIKTOK_UPLOAD_BLOCK.json`); TikTok through Buffer is allowed (Ben, 5 Oct 2026). |
+| `00_Brand/Channel-Setup/{Meta,TikTok,social}/` | Social: bios, the TikTok block file and the uniqueness/destination guards (posting is Buffer, below). Social posts go through Buffer only (HOS org, `BUFFER_HOS_API_KEY`). Direct TikTok uploads stay paused (`TikTok/TIKTOK_UPLOAD_BLOCK.json`); TikTok through Buffer is allowed (Ben, 5 Oct 2026). |
 | `00_Brand/Brand-Guidelines/` | Brand snapshot, the Showrunner brief studio block |
 | `01_Character/` | The Explorer bible, master sheet and generation reference |
 | `02_Video-Projects/NNN_Slug/` | One folder per film. Start from `_template_NNN_Episode-Slug/`. |
@@ -39,6 +39,8 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 | `07_Content-Ops/` | Next.js ops app and CLIs: script review, episode gate, YouTube package upload, retitle, pinned comments |
 | `docs/` | Tech notes (Veo, playback fixes, publishing adapters, affiliate) |
 | `_archive/` | Superseded docs, rules, one-off scripts, old audits and the Orbit leftovers. **Ignore unless asked.** |
+
+**Social posting (5 Oct 2026):** HOS Shorts go out through **Buffer via HOS Showrunner** only (`BUFFER_HOS_API_KEY`, HOS Buffer org). Never the Orbit Buffer org or the Buffer connector. YouTube stays in Studio. Long films are never cross-posted via Buffer. HOS Threads posting stops until Ben adds a Threads channel. Old Meta/Threads/TikTok CDP auto-post trees are under `_archive/00_Brand/Channel-Setup/`. Details: `STUDIO_PLAYBOOK.md` §12.
 
 ## Commands
 
@@ -149,6 +151,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
   - Ken Burns or a still push when Flow is capped. Wait for the reset.
 - **Voice:** a video model's speech as VO, or any voice other than Ben Orbit Narrator; changing a word of the signed-off script in VO (regenerate the sentence instead); `atempo` above 1.06.
 - **TikTok:** a direct upload or retry (browser/CDP or API) while `TIKTOK_UPLOAD_BLOCK.json` is paused. HOS TikTok goes through Buffer only (Ben, 5 Oct 2026).
+- **Social:** post HOS via the Orbit Buffer org or the Buffer connector; revive archived Meta/Threads/TikTok `live_shorts_to_*` / launchd auto-post.
 - **Secrets:** commit or print them.
 
 ## Git
