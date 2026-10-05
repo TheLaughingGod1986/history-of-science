@@ -137,6 +137,8 @@ python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_S
 - **Auth:** the Mac Mini CDP worker on `benoats@googlemail.com` (AI Ultra) only. Never `benoats86` or a prepaid-dry account for HOS Veo. If Flow asks for a passkey or signs out, stop and report; don't work around it.
 - **Daily Flow limits** can block even with credits left. Wait for the reset. Never ship Ken Burns or a still push as a substitute.
 - No Omni, Seedance, Kling or ElevenLabs Image & Video on HOS.
+- No generation on the ElevenLabs website (Image & Video, Flows) by any agent or automation. ElevenLabs credit is for TTS (Ben, 5 Oct 2026).
+- No picture or video spend on a film until Claude has passed its script and its VO (Ben, 4 Oct 16:52).
 
 ### Plate library (how a part gets made)
 

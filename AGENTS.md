@@ -126,6 +126,8 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 - **Picture:**
   - The Orbit robot in any HOS film.
   - Omni, Seedance, Kling or ElevenLabs Image & Video. Picture is Flow Veo 3.1.
+  - Generate anything on the ElevenLabs **website** (Image & Video, Flows), including through browser automation. It bills the shared credit pool, which is kept for TTS (Ben, 5 Oct 2026, after 66.5k credits went on website video on 4 Oct).
+  - Spend picture or video credit on a film before Claude has passed its script **and** its VO (Ben, 4 Oct 16:52).
   - Veo Fast on fragile light (lamps, flasks, glows). Use Quality.
   - Paint-patching a plate instead of reminting it.
   - "Same DNA" or "lab DNA" in a Veo prompt.
