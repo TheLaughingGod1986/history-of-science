@@ -39,6 +39,40 @@ def fmt_date(d: dt.date | None) -> str:
     return d.strftime("%a %-d %b") if d else "—"
 
 
+def parse_when(s: str) -> dt.datetime:
+    """'2026-10-05' or '2026-10-05T17:02' (London time, as agents write it)."""
+    return dt.datetime.fromisoformat(s)
+
+
+def fmt_when(s: str | None) -> str:
+    if not s:
+        return ""
+    w = parse_when(s)
+    return fmt_date(w.date()) + (w.strftime(" %H:%M") if "T" in s else "")
+
+
+def owner_of(s: dict, st: dict) -> str:
+    """Who has the stage now: the film's own owner, else the stage's default owner."""
+    return st.get("owner") or s.get("owner") or "—"
+
+
+def activity(st: dict) -> str:
+    """Is anyone actually on it right now? 'underway', 'waiting: …', 'blocked: …' or 'queued'."""
+    status = st["status"]
+    why = st.get("waiting")
+    if status == "doing":
+        if st.get("underway") is True:
+            return "▶️ underway"
+        if st.get("underway") is False:
+            return "⏸ waiting" + (f": {why}" if why else "")
+        return "in progress"
+    if status == "blocked":
+        return "⛔ blocked" + (f": {why}" if why else "")
+    if status == "todo":
+        return "queued" + (f" ({why})" if why else "")
+    return WORD[status]
+
+
 def bar(pct: int, width: int = 20) -> str:
     filled = round(pct / 100 * width)
     return "█" * filled + "░" * (width - filled)
@@ -51,6 +85,9 @@ def validate(data: dict) -> list[str]:
     total = sum(s["weight"] for s in stages)
     if total != 100:
         errors.append(f"stage weights add up to {total}, not 100")
+    for s in stages:
+        if not s.get("owner"):
+            errors.append(f"stage '{s['key']}': give it a default owner")
     for film in data.get("films", []):
         fid = film.get("id", "?")
         for key, st in film.get("stages", {}).items():
@@ -64,6 +101,15 @@ def validate(data: dict) -> list[str]:
             steps = st.get("steps")
             if steps is not None and not (isinstance(steps, list) and len(steps) == 2 and 0 <= steps[0] <= steps[1]):
                 errors.append(f"{fid}/{key}: steps must be [done, total]")
+            if "underway" in st and not isinstance(st["underway"], bool):
+                errors.append(f"{fid}/{key}: underway must be true or false")
+            if st.get("underway") and st.get("status") != "doing":
+                errors.append(f"{fid}/{key}: only a stage in progress (doing) can be underway")
+            if st.get("since"):
+                try:
+                    parse_when(st["since"])
+                except ValueError:
+                    errors.append(f"{fid}/{key}: since must be YYYY-MM-DD or YYYY-MM-DDTHH:MM")
             for k in ("due", "eta"):
                 if st.get(k):
                     try:
@@ -160,8 +206,13 @@ def stage_line(s: dict, st: dict, today: dt.date) -> str:
         tl = time_left(st, today)
         if tl:
             extra.append(tl)
-    if st.get("owner") and status != "done":
-        extra.append(st["owner"])
+    if status not in ("done", "skip"):
+        who = owner_of(s, st)
+        if st.get("since"):
+            who += f" since {fmt_when(st['since'])}"
+        if status in ("doing", "blocked"):
+            who += f", {activity(st)}"
+        extra.append(f"with {who}")
     if st.get("due") and status not in ("done", "skip"):
         due = parse_date(st["due"])
         extra.append(f"due {fmt_date(due)} ({countdown(due, today)})")
@@ -170,6 +221,48 @@ def stage_line(s: dict, st: dict, today: dt.date) -> str:
         head += " (" + ", ".join(extra) + ")"
     note = st.get("note")
     return f"- {head}" + (f": {note}" if note else "")
+
+
+def agents_view(data: dict, today: dt.date) -> dict[str, list[str]]:
+    """Per agent: what is underway, what is waiting, and what is next in their queue."""
+    stages, films = data["stages"], data["films"]
+    names: list[str] = []
+    for s in stages:
+        if s["owner"] not in names:
+            names.append(s["owner"])
+    for f in films:
+        for s in stages:
+            o = f["stages"][s["key"]].get("owner")
+            if o and o not in names:
+                names.append(o)
+    out: dict[str, list[str]] = {}
+    for who in names:
+        now, waiting, queue = [], [], []
+        for f in films:
+            queued = False  # one "next up" per film: its first to-do stage for this agent
+            for s in stages:
+                st = f["stages"][s["key"]]
+                if owner_of(s, st) != who:
+                    continue
+                tag = f"{f['id']} {s['label']}"
+                if st["status"] == "doing" and st.get("underway") is not False:
+                    since = f", since {fmt_when(st['since'])}" if st.get("since") else ""
+                    tl = time_left(st, today)
+                    now.append(tag + since + (f" ({tl})" if tl else ""))
+                elif st["status"] in ("doing", "blocked"):
+                    waiting.append(tag + (f": {st['waiting']}" if st.get("waiting") else ""))
+                elif st["status"] == "todo" and not queued:
+                    queued = True
+                    queue.append((st.get("due") or "9999", tag + (f", due {fmt_date(parse_date(st['due']))}" if st.get("due") else "")))
+        queue.sort()
+        rows = []
+        rows.append("- ▶️ Underway: " + ("; ".join(now) if now else "nothing right now"))
+        if waiting:
+            rows.append("- ⏸ Waiting: " + "; ".join(waiting))
+        if queue:
+            rows.append("- ⏭ Next up: " + "; ".join(t for _, t in queue[:3]))
+        out[who] = rows
+    return out
 
 
 def render(data: dict) -> str:
@@ -193,12 +286,13 @@ def render(data: dict) -> str:
         lines.append("")
     lines.append("## At a glance")
     lines.append("")
-    lines.append("| Film | Airs | Done | Now | Time left on it | Ready for Ben's OK | Health |")
-    lines.append("|---|---|---:|---|---|---|---|")
+    lines.append("| Film | Airs | Done | Now | With · underway? | Time left on it | Ready for Ben's OK | Health |")
+    lines.append("|---|---|---:|---|---|---|---|---|")
     for f in films:
         pct = film_percent(f, stages)
         cur = current_stage(f, stages)
         now = "all stages done" if cur is None else f"{cur[0]['label']} ({WORD[cur[1]['status']]})"
+        holder = "—" if cur is None else f"**{owner_of(*cur)}** · {activity(cur[1])}"
         air = parse_date(f.get("air"))
         air_txt = fmt_date(air) + (f" ({(air - today).days} d)" if air else "")
         left = "—"
@@ -209,10 +303,17 @@ def render(data: dict) -> str:
         rb = parse_date(f.get("ready_by"))
         rb_txt = fmt_date(rb) + (f" ({countdown(rb, today)})" if rb and rb >= today else "")
         lines.append(
-            f"| **{f['id']}** {f['title']} | {air_txt} | {pct}% | {now} | {left} | "
+            f"| **{f['id']}** {f['title']} | {air_txt} | {pct}% | {now} | {holder} | {left} | "
             f"{rb_txt} | {health(f, stages, today)} |"
         )
     lines.append("")
+
+    lines.append("## Who's on what")
+    lines.append("")
+    for who, lines_for in agents_view(data, today).items():
+        lines.append(f"**{who}**")
+        lines.extend(lines_for)
+        lines.append("")
 
     lines.append("## Being worked on right now")
     lines.append("")
@@ -264,6 +365,8 @@ def render(data: dict) -> str:
     lines.append("## How the % works")
     lines.append("")
     lines.append(
+        "**With** is who has the stage now (the film's `owner`, else the stage's default owner). "
+        "**Underway** means someone is working on it at this moment; **waiting** says what it is waiting on. "
         "**Time left** comes from the stage's `steps` (done/total), `left` (the owner's estimate) and `eta`; "
         "\"due in N d\" counts from the date at the top. "
         "Each stage carries a weight by how much work it is; a film's % is the weight done, "
