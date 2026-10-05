@@ -2,5 +2,8 @@
   "paused": true,
   "reason": "TikTok account posting ban. Ben: no uploads until I say so.",
   "paused_at": "2026-08-25T20:38:00+01:00",
-  "lift": "Set paused to false AND Ben must say so. Then re-enable LaunchAgents."
+  "lift": "Direct uploads: set paused to false only when Ben says so.",
+  "scope": "direct uploads: browser/CDP and the TikTok API",
+  "buffer_allowed": true,
+  "buffer_allowed_by": "Ben, 5 Oct 2026 (to Claude): lift for Buffer only. HOS TikTok posts may go through the HOS Buffer org; direct uploads stay banned."
 }

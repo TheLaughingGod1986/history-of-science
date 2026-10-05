@@ -38,10 +38,12 @@ Full rules: `STUDIO_PLAYBOOK.md` §9–§12.
 - **Studio-only jobs** go through desktop Studio CDP (`00_Brand/Channel-Setup/audits/start_studio_chrome_cdp.sh`). Never Replace.
 - **Affiliate:** only on a long that names the product in VO or on screen; one product per film; never invent ASINs; never commit the Amazon tag.
 - **Social (Buffer / Showrunner only):**
+  - **TikTok:** Buffer only (Ben, 5 Oct 2026). Direct uploads stay paused (`TikTok/TIKTOK_UPLOAD_BLOCK.json`): no direct uploads, retries or "test one".
   - Post HOS social via **Buffer** using **`BUFFER_HOS_API_KEY`** (HOS Buffer org). Never the Orbit Buffer org. Never the Buffer connector (Orbit-only).
   - YouTube stays in Studio / YouTube API — Buffer does not upload to YouTube.
   - Shorts only on Buffer (TikTok / Instagram / Facebook when connected). **Long films are never cross-posted via Buffer.**
   - Captions: Facebook → direct YouTube link to the long; TikTok / Instagram → "Full film on YouTube, link in bio".
+  - Instagram `@historyofscienceyt`: each Short at most once per platform, never before its long is public (`social/uniqueness.py`). Never post to an Orbit account or the Orbit Facebook Page.
   - **HOS Threads posting stops** (no Threads channel in HOS Buffer; do not add one without Ben).
   - Keep `social/uniqueness.py` and `social/destination.py`. Brand bios and `TikTok/TIKTOK_UPLOAD_BLOCK.json` stay in place.
-  - **TikTok direct CDP/API uploads remain paused** (`TikTok/TIKTOK_UPLOAD_BLOCK.json`: `"paused": true`) until Ben lifts them. Do not revive archived `live_shorts_to_*` / launchd plists under `_archive/00_Brand/Channel-Setup/`.
+  - Do not revive archived `live_shorts_to_*` / launchd plists under `_archive/00_Brand/Channel-Setup/`.

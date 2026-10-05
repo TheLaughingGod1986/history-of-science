@@ -31,7 +31,7 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 | `00_Brand/Channel-Setup/style/` | The live approved thumbnails and covers, as images: the style reference set |
 | `07_Content-Ops/src/lib/hos-contract/` | The release contract as code (`rules.ts`): what `lint:package` and `channel:audit` enforce |
 | `00_Brand/Channel-Setup/audits/` | The current audit, `SHORTS_LOG.md`, `weekly/` reports, the Studio Chrome launcher |
-| `00_Brand/Channel-Setup/{Meta,Threads,TikTok,social}/` | Social mirror ops. TikTok is paused (`TikTok/TIKTOK_UPLOAD_BLOCK.json`). |
+| `00_Brand/Channel-Setup/{Meta,Threads,TikTok,social}/` | Social mirror ops. Social posts go through Buffer only (HOS org, `BUFFER_HOS_API_KEY`). Direct TikTok uploads stay paused (`TikTok/TIKTOK_UPLOAD_BLOCK.json`); TikTok through Buffer is allowed (Ben, 5 Oct 2026). |
 | `00_Brand/Brand-Guidelines/` | Brand snapshot, the Showrunner brief studio block |
 | `01_Character/` | The Explorer bible, master sheet and generation reference |
 | `02_Video-Projects/NNN_Slug/` | One folder per film. Start from `_template_NNN_Episode-Slug/`. |
@@ -110,14 +110,14 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 
 - **Claude and Grok decide on the desk:** topic, script, Short scripts, voice takes, picture stages, titles, descriptions, tags, thumbnail and cover drafts, and the schedule. Every check above still has to PASS; Claude reviews each stage instead of Ben.
 - **Ben is asked once per film, before anything is scheduled:** the finished long (he watches the moving file), the Shorts (on his phone), and the thumbnail and covers with the titles. That is his final OK. Nothing is scheduled or made public without it.
-- **Still Ben's alone:** renaming anything already live; lifting the TikTok pause; overriding a failed check (a check that's wrong is fixed in its own PR). Deleting a video stays on the Never list.
+- **Still Ben's alone:** renaming anything already live; lifting the TikTok pause on direct uploads (Buffer TikTok is allowed, Ben 5 Oct 2026); overriding a failed check (a check that's wrong is fixed in its own PR). Deleting a video stays on the Never list.
 - **Claude may make a public HOS or Orbit video private, or take it down, when needed** (Ben to Claude directly, 5 Oct 2026; mirrors orbit-with-ben `bd99085`). A takedown is always done by making the video private, because private can be undone. Claude records the video id and the reason on the desk and tells Ben. Any agent that thinks a live video should go private brings the video id and the reason to Claude on the desk, not to Ben.
 - **Spend:** Vertex, Flow and API credit may be used down to **£0** of the Free Trial or prepaid credit. Stop at £0. Never spill onto paid billing; report and wait for Ben to top up.
 - **Ask Claude first** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."*). Anything an agent would mark NEEDS BEN goes to Claude on the desk first. Claude decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
   - money: a top-up, or anything past £0;
   - anything that can't be undone: renaming a live video, Studio Replace, a force-push (making a video private can be undone and is Claude's call, above);
   - merging a PR that Claude hasn't PASSed;
-  - the TikTok pause, and overriding a check;
+  - the TikTok pause on direct uploads, and overriding a check;
   - things only he can physically do: Vercel env vars, OAuth reconnects, waking the Mac Mini, logins and 2FA;
   - any change to the channel's direction (a new series, a new format, a change of voice);
   - the final OK above.
@@ -150,7 +150,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
   - "Same DNA" or "lab DNA" in a Veo prompt.
   - Ken Burns or a still push when Flow is capped. Wait for the reset.
 - **Voice:** a video model's speech as VO, or any voice other than Ben Orbit Narrator; changing a word of the signed-off script in VO (regenerate the sentence instead); `atempo` above 1.06.
-- **TikTok:** upload or retry while it's paused.
+- **TikTok:** a direct upload or retry (browser/CDP or API) while `TIKTOK_UPLOAD_BLOCK.json` is paused. HOS TikTok goes through Buffer only (Ben, 5 Oct 2026).
 - **Social:** post HOS via the Orbit Buffer org or the Buffer connector; revive archived Meta/Threads/TikTok `live_shorts_to_*` / launchd auto-post.
 - **Secrets:** commit or print them.
 
