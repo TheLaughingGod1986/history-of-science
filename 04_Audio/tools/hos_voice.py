@@ -1,17 +1,7 @@
-"""Locked HOS narrator constants, mirrored 5 Oct 2026.
+"""HOS narrator constants: the locked voice, re-exported from orbit_voice.py.
 
-Sources: 02_Video-Projects/007_The-First-Vaccine/02_Voiceover/README.md
-and 008_Lightning-Franklin/02_Voiceover/README.md both specify this ID
-and settings from 04_Audio/tools/orbit_voice.py (production lock).
-No 007/008 TAKE evidence is present in this checkout. No voice change.
+One source for the voice. HOS records with Ben Orbit Narrator at the base
+settings (speed 1.04, STUDIO_PLAYBOOK.md section 4); change them only in
+orbit_voice.py, and only on a channel-voice change Ben has made.
 """
-VOICE_NAME = "Ben Orbit Narrator"
-VOICE_ID = "kDch6ACCIpqgQ0NsU9kk"
-MODEL_ID = "eleven_v3"
-VOICE_SETTINGS = {
-    "stability": 0.34,
-    "similarity_boost": 0.78,
-    "style": 0.42,
-    "speed": 1.04,
-    "use_speaker_boost": True,
-}
+from orbit_voice import MODEL_ID, VOICE_ID, VOICE_NAME, VOICE_SETTINGS  # noqa: F401

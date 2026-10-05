@@ -85,6 +85,14 @@ def multipart_post(
         chunks.append(b"\r\n")
     chunks.append(f"--{boundary}--\r\n".encode())
     body = b"".join(chunks)
+    spend = el_guard.is_spend("POST", path)
+    if spend:
+        # Same lock, pause file, floor and ledger as request() (el_guard.py). Raises SpendRefused.
+        el_guard.before_spend(
+            path,
+            None,
+            lambda: request("GET", "/v1/user/subscription", token, mode)[:2],
+        )
     headers = auth_headers(token, mode, accept="application/json")
     headers["Content-Type"] = f"multipart/form-data; boundary={boundary}"
     req = urllib.request.Request(
@@ -92,9 +100,12 @@ def multipart_post(
     )
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.status, r.read()
+            result = r.status, r.read()
     except urllib.error.HTTPError as e:
-        return e.code, e.read()
+        result = e.code, e.read()
+    if spend:
+        el_guard.after_spend(result[0])
+    return result
 
 
 def slugify(text: str, *, max_len: int = 48) -> str:

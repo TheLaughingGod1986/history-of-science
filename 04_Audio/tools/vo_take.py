@@ -19,10 +19,8 @@ It always:
 - runs Scribe and diffs the transcript against the script words.
 - writes one `<stem>_TAKE.json` (take, loudness, Scribe diff, vo_check verdict and credits) next to the audio, plus
   `stt/<stem>/`. Audio stays out of git.
-- appends one line to `04_Audio/elevenlabs_ledger.jsonl` with the characters this take spent, so the account
-  counter's lag never hides spend.
-
-Run it under the pool lock on the Mini: `desk-lock elevenlabs -- python3 04_Audio/tools/vo_take.py …`.
+- spends only through `el_client`, so `el_guard.py` holds the one-recorder lock, honours the pause file and the
+  floor, and writes one ledger line per request to `~/_desk/elevenlabs/ledger.jsonl`. Don't wrap it in another lock.
 """
 from __future__ import annotations
 
@@ -31,7 +29,6 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 TOOLS = Path(__file__).resolve().parent
-LEDGER = TOOLS.parent / "elevenlabs_ledger.jsonl"
 sys.path.insert(0, str(TOOLS))
 
 from hos_voice import MODEL_ID, VOICE_ID, VOICE_NAME, VOICE_SETTINGS  # noqa: E402
@@ -228,9 +225,6 @@ def main(argv=None) -> int:
         "text": full, "made_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
     }
     (a.out / f"{a.stem}_TAKE.json").write_text(json.dumps(take, indent=2, ensure_ascii=False) + "\n")
-    with LEDGER.open("a") as f:
-        f.write(json.dumps({"at": take["made_at"], "stem": a.stem, "chars": chars, "orders": a.order,
-                            "remaining_before": before["remaining"]}) + "\n")
     print(f"{take['vo_check']}: {a.stem} {take['duration_s']} s, LUFS {loud['lufs_integrated']}, "
           f"Scribe {diff['match_rate_pct']}% ({len(diff['mismatches'])} mismatch runs), {chars} chars spent")
     return 0 if take["vo_check"] != "FAIL (silent or near-silent)" else 1
