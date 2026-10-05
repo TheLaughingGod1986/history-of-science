@@ -133,6 +133,26 @@ def find(phrases: list[str], top: int = 20) -> dict:
     }
 
 
+COMMON = {"does", "doesn", "from", "with", "that", "this", "were", "into", "they", "when", "where", "your", "fall"}
+
+
+def title_phrase_problem(title: str, phrases: list[str], topics: list[str]) -> str | None:
+    """The contract fails unless the title holds a phrase (rules.ts neighbours.title).
+
+    Returns an error naming single words that would work, or None if the title is fine.
+    Compound phrases like "newton gravity moon" never appear in a real title (009/010, 4 Oct).
+    """
+    t = title.lower()
+    if any(p.lower() in t for p in phrases):
+        return None
+    words = sorted({w for p in topics + phrases for w in re.findall(r"[a-z]{4,}", p.lower())
+                    if w not in STOP | COMMON and re.search(rf"\b{re.escape(w)}\b", t)})
+    hint = f"Words from the topics that are in the title: {', '.join(words)}." if words else \
+        "No topic word is in the title; retitle or pick a phrase the title holds."
+    return (f'title "{title}" holds none of --phrase {", ".join(phrases)}. '
+            f"Use single words the title, description and tags all contain. {hint}")
+
+
 def write_manifest(path: Path, pull: dict, phrases: list[str], n: int = 5) -> None:
     """Prefer neighbours whose titles hold a contract phrase (avoids surname collisions)."""
     pl = [p.lower() for p in phrases]
@@ -193,6 +213,10 @@ def main() -> int:
     if ns.manifest:
         if not ns.phrase:
             ap.error("--manifest needs at least one --phrase (the words the title must share)")
+        title = json.loads(ns.manifest.read_text()).get("title") or ""
+        problem = title_phrase_problem(title, ns.phrase, ns.topics)
+        if problem:
+            ap.error(problem)
         write_manifest(ns.manifest, pull, ns.phrase)
         print(f"Wrote neighbours block to {ns.manifest}")
     return 0 if pull["gate"] == "PASS" else 1

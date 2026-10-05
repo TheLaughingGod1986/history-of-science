@@ -1,0 +1,49 @@
+# The desk (PR #180) is never merged or closed. AGENTS.md "The desk".
+# 1. no-desk-close: fails a PR whose title, description or commit messages would
+#    make GitHub close #180 on merge (it did, 4 Oct 2026: "…merge or close #180").
+# 2. reopen-desk: if #180 is closed anyway, reopen it straight away.
+name: Desk guard
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+  pull_request_target:
+    types: [closed]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  no-desk-close:
+    if: github.event_name == 'pull_request' && github.event.pull_request.number != 180
+    runs-on: ubuntu-latest
+    steps:
+      - name: No closing keyword next to #180
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          jq -r '.pull_request.title + "\n" + (.pull_request.body // "")' "$GITHUB_EVENT_PATH" > text.txt
+          gh api "repos/$REPO/pulls/$PR/commits" --paginate --jq '.[].commit.message' >> text.txt
+          pattern='(close[sd]?|fix(e[sd])?|resolve[sd]?)[[:space:]]*:?[[:space:]]+([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)?#180([^0-9]|$)'
+          url='(close[sd]?|fix(e[sd])?|resolve[sd]?)[[:space:]]*:?[[:space:]]+https://github\.com/[^[:space:]]+/(issues|pull)/180([^0-9]|$)'
+          if grep -inE "$pattern|$url" text.txt; then
+            echo "::error::This PR would close the desk (#180) when merged. Reword it, e.g. 'desk PR 180' or put the phrase in backticks."
+            exit 1
+          fi
+          echo "No closing keyword for #180."
+
+  reopen-desk:
+    if: github.event_name == 'pull_request_target' && github.event.pull_request.number == 180
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reopen the desk
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh api -X PATCH "repos/$REPO/pulls/180" -f state=open --jq '.state'
+          gh api "repos/$REPO/issues/180/comments" -f body="Desk guard: #180 was closed and has been reopened automatically. The desk is never merged or closed (AGENTS.md \"The desk\")."

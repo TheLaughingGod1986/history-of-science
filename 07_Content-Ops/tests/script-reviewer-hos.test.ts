@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { reviewScript } from "@/lib/analytics/script-reviewer";
+import { lengthBonus, reviewScript } from "@/lib/analytics/script-reviewer";
 
 // 1 Oct 2026: the reviewer was built for Orbit (space words) and capped every HOS discovery film
 // below 90 (004 v02 88.9, 005 v01 84.4). These pin the fixes.
@@ -29,5 +29,16 @@ describe("script reviewer on HOS discovery scripts", () => {
     const r = reviewScript(HOS);
     expect(r.estimates.wordCount).toBe(reviewScript(HOS.replace(/^#.*$/gm, "")).estimates.wordCount);
     expect(r.coldOpenExcerpt.startsWith("Why did doctors")).toBe(true);
+  });
+
+  it("has no cliff at 8 minutes: a few words either side barely move the score", () => {
+    expect(lengthBonus(8)).toBe(2);
+    expect(lengthBonus(12)).toBe(2);
+    expect(lengthBonus(6.9)).toBe(0);
+    expect(lengthBonus(7.98)).toBeCloseTo(1.96, 2);
+    const words = (n: number) => Array.from({ length: n }, () => "word").join(" ");
+    const short = reviewScript(words(1197)).total;
+    const long = reviewScript(words(1203)).total;
+    expect(Math.abs(long - short)).toBeLessThan(0.5);
   });
 });

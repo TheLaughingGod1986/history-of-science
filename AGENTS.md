@@ -43,6 +43,8 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 ## Commands
 
 ```bash
+00_Brand/Channel-Setup/tools/check_all.sh [02_Video-Projects/<NNN_Slug>]  # every CI check, locally, before any push
+python3 00_Brand/Channel-Setup/tools/status_board.py                      # after any stage change (STATUS.md)
 cd 07_Content-Ops && npm run review:script -- --file <script.md>          # long script must score ≥90
 cd 07_Content-Ops && npm run gate:episode -- --project ../02_Video-Projects/<NNN_Slug>
 python3 00_Brand/Channel-Setup/tools/gate_shorts_open.py check <short.mp4> --air-date YYYY-MM-DD
@@ -53,7 +55,7 @@ cd 07_Content-Ops && npx tsx --env-file=.env scripts/retitle-videos.ts --file <f
 cd 07_Content-Ops && npx tsx --env-file=.env scripts/update-pinned-comment.ts --dry-run
 python3 00_Brand/Channel-Setup/tools/weekly_public_audit.py          # every Monday
 python3 00_Brand/Channel-Setup/tools/public_search.py "<title>" "<angle>" --out <film>/11_Upload-Package/evidence_<date>_public_search.json
-python3 00_Brand/Channel-Setup/tools/neighbours.py "<subject>" "<person>" --out <film>/11_Upload-Package/evidence_<date>_neighbours.json [--phrase <noun> --manifest <manifest>]
+python3 00_Brand/Channel-Setup/tools/neighbours.py "<subject>" "<person>" --out <film>/11_Upload-Package/evidence_<date>_neighbours.json [--phrase <word in the title> --manifest <manifest>]
 python3 00_Brand/Channel-Setup/tools/hos_desk.py post --to claude --film NNN --stage <stage> --status review --body-file <report.md> [--image <jpg>]
 python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_Script/<slug>_script_master_vNN.md [--part N]
 python3 00_Brand/Channel-Setup/tools/style_sheet.py long|short <new.jpg> --out <sheet.jpg>   # new vs the live look
@@ -61,7 +63,7 @@ cd 07_Content-Ops && npm run lint:package [-- --film NNN]              # release
 cd 07_Content-Ops && npm run channel:audit [-- --write-live]           # what's really on YouTube (needs HOS .env)
 ```
 
-The Python tools need `ffmpeg`/`ffprobe` and Pillow; `vo_check.py` also uses `faster-whisper` for the word check. The YouTube scripts need `07_Content-Ops/.env` (see `.env.example`). Never print or commit its values.
+The Python tools need `ffmpeg`/`ffprobe` and Pillow; `vo_check.py` also uses `faster-whisper` for the word check, and a take whose word check didn't run FAILS (use `vo_check_py312.sh` on the Mini). Every ElevenLabs spend goes through `04_Audio/tools/el_client.py`, which enforces one recorder at a time, the `TTS_PAUSE` file, the 50k credit floor and the spend ledger (`04_Audio/tools/README.md` → *Spend guard*). The YouTube scripts need `07_Content-Ops/.env` (see `.env.example`). Never print or commit its values.
 
 ## Definition of done (the contract)
 
