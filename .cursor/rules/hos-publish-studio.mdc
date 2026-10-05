@@ -9,7 +9,6 @@ globs:
   - 07_Content-Ops/docs/AFFILIATE*
   - 00_Brand/Channel-Setup/CHANNEL_META.json
   - 00_Brand/Channel-Setup/Meta/**
-  - 00_Brand/Channel-Setup/Threads/**
   - 00_Brand/Channel-Setup/TikTok/**
   - 00_Brand/Channel-Setup/social/**
   - 02_Video-Projects/**/Buffer/**

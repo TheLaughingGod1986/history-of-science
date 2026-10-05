@@ -31,7 +31,7 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 | `00_Brand/Channel-Setup/style/` | The live approved thumbnails and covers, as images: the style reference set |
 | `07_Content-Ops/src/lib/hos-contract/` | The release contract as code (`rules.ts`): what `lint:package` and `channel:audit` enforce |
 | `00_Brand/Channel-Setup/audits/` | The current audit, `SHORTS_LOG.md`, `weekly/` reports, the Studio Chrome launcher |
-| `00_Brand/Channel-Setup/{Meta,Threads,TikTok,social}/` | Social mirror ops. Social posts go through Buffer only (HOS org, `BUFFER_HOS_API_KEY`). Direct TikTok uploads stay paused (`TikTok/TIKTOK_UPLOAD_BLOCK.json`); TikTok through Buffer is allowed (Ben, 5 Oct 2026). |
+| `00_Brand/Channel-Setup/{Meta,TikTok,social}/` | Social: bios, the TikTok block file and the uniqueness/destination guards (posting is Buffer, below). Social posts go through Buffer only (HOS org, `BUFFER_HOS_API_KEY`). Direct TikTok uploads stay paused (`TikTok/TIKTOK_UPLOAD_BLOCK.json`); TikTok through Buffer is allowed (Ben, 5 Oct 2026). |
 | `00_Brand/Brand-Guidelines/` | Brand snapshot, the Showrunner brief studio block |
 | `01_Character/` | The Explorer bible, master sheet and generation reference |
 | `02_Video-Projects/NNN_Slug/` | One folder per film. Start from `_template_NNN_Episode-Slug/`. |
