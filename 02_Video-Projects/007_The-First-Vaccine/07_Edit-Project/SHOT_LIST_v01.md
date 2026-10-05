@@ -23,10 +23,10 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 | P2 | Part 03 3:12: the cow "looks in through the window" of Jenner's study (script fixed 5 Oct) | Blossom belonged to the farm where Sarah Nelmes worked, not Jenner's house | The cow in a field of the nearby farm, seen from a lane |
 | P3 | Part 02 2:25: Jenner's house, "red-brick" (script now "Georgian") | Is The Chantry, Berkeley, red brick? | "A Georgian country house with a garden" (no brick colour) |
 | P4 | Part 02 2:25: Jenner "about forty-six" (script now "late forties") | Born 17 May 1749, so 46–47 in May 1796 | "In his late forties" |
-| P5 | Part 05 6:18: Pasteur "black skullcap" | Late portraits show a black skullcap (calotte) | Bare-headed, grey beard |
-| P6 | Part 05 6:18: 1881 congress "hall" | 7th International Medical Congress, London, Aug 1881 | A large, plain Victorian lecture hall |
-| P7 | Part 05 7:00: "a gavel comes down" | Was the 33rd World Health Assembly declaration (8 May 1980) marked by a gavel? | Delegates applauding in a plain hall |
-| P8 | Part 04 5:35: "London printer's shop" | *Inquiry* printed for the author by Sampson Low, London, 1798 | Keep; a generic Georgian press |
+| P5 | Part 05 6:18: Pasteur "black skullcap" | **Resolved 5 Oct (FACT_NOTES P5):** the cap is a lab/field look; nothing puts it at the London lectern | Bare-headed, grey beard, dark frock coat (script fixed) |
+| P6 | Part 05 6:18: 1881 congress "hall" | **Resolved 5 Oct (FACT_NOTES P6):** Pasteur spoke Mon 8 Aug 1881 at a general meeting, most likely the University of London theatre, Burlington Gardens | A crowded, tiered Victorian lecture theatre (script fixed) |
+| P7 | Part 05 7:00: "a gavel comes down" | **Resolved 5 Oct (FACT_NOTES P7):** no source for a gavel; the documented image is the signing (Al-Awadi and Mahler) | Delegates applauding in a plain assembly hall (script fixed; gavel dropped) |
+| P8 | Part 04 5:35: "London printer's shop" | **Resolved 5 Oct (FACT_NOTES P8):** printed for the author by Sampson Low, 7 Berwick Street, Soho | Keep; a Georgian hand-press shop in Soho |
 
 ## Sets (one look each; keep continuity)
 
@@ -100,7 +100,7 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 | 04–05 | 5:05 | Day cards: one day, three days, a week | D | F | overlays |
 | 06 | 5:15 | The case-book: one line underlined | D | F | overlay NO DISEASE FOLLOWED |
 | 07 | 5:25 | Jesty's farm again, briefly ("twenty-two years earlier") | farm | F | reuse Part 02 06 |
-| 08 | 5:35 | London printer's shop, 1798: a slim book comes off the press | F | F | overlay the title page text |
+| 08 | 5:35 | London printer's shop in Soho, 1798: a slim book comes off the press | F | F | overlay the title page text |
 | 09 | 5:45 | Cartoon-style satire: a crowd sprouting small cow heads, played for comedy | painted | F | Gillray *The Cow-Pock* (1802); no real faces |
 | 10 | 5:50 | A garden hut, poor families queuing calmly | E | F | the Temple of Vaccinia |
 | 11 | 5:55 | Copies travel by coach, ship and horse across a painted map | G | F | LABEL: THE NEWS SPREADS |
@@ -110,7 +110,7 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 
 | # | Time | Shot | Set | Eng | Overlay / note |
 |---|---|---|---|---|---|
-| 01 | 6:18 | London 1881: a crowded congress hall; Pasteur (grey beard) at the lectern | H | Q | LABEL: LOUIS PASTEUR · 1881; overlay VACCINE on the board (P5, P6) |
+| 01 | 6:18 | London 1881: a crowded, tiered Victorian lecture theatre; Pasteur (grey beard, bare-headed, dark frock coat) at the lectern | H | Q | LABEL: LOUIS PASTEUR · 1881; overlay VACCINE on the board (P5, P6) |
 | 02 | 6:30 | Back to the meadow cow, briefly ("still carries the name of a cow") | A | F | reuse Part 01 01 |
 | 03–04 | 6:40 | A painted globe turns; lights go out country by country; health workers travel village to village | G | Q | LABEL: THE LAST CASES (glows, so Q) |
 | 05 | 6:55 | A health worker's kit opens, calmly | interior | F | no needles in skin |

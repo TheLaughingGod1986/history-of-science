@@ -7,6 +7,7 @@ on:
       - "00_Brand/Channel-Setup/PIPELINE.json"
       - "00_Brand/Channel-Setup/tools/status_board.py"
       - "STATUS.md"
+      - "00_Brand/Channel-Setup/kanban/**"
       - ".github/workflows/status-board.yml"
 
 jobs:

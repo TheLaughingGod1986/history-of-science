@@ -96,7 +96,8 @@ Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged �
 
 `STATUS.md` (repo root) is Ben's one view of every film: how far through it is (%), what is being worked on now, what is next, when it should be ready, and the credit left. It is generated from `00_Brand/Channel-Setup/PIPELINE.json`; never edit `STATUS.md` by hand.
 
-- **Whoever starts or finishes a stage** edits that film's entry in `PIPELINE.json` (status `todo` / `doing` / `done` / `blocked`, `progress` 0–1 for a stage in progress, `owner`, `due`, a short `note`), sets `updated`, runs `python3 00_Brand/Channel-Setup/tools/status_board.py`, and commits both files in the same PR. CI (`status-board`) fails if they don't match.
+- **Whoever starts or finishes a stage** edits that film's entry in `PIPELINE.json` (status `todo` / `doing` / `done` / `blocked`, `owner`, `due`, a short `note`; for a stage in progress also `steps` [done, total] with `steps_unit`, `left` as a plain estimate such as "about 2 hours", and `eta`; `progress` 0–1 only when steps don't fit), sets `updated`, runs `python3 00_Brand/Channel-Setup/tools/status_board.py`, and commits both files in the same PR. CI (`status-board`) fails if they don't match.
+- **Update an in-progress stage as each step lands** (each VO part, each picture part), not only at the end, so the time left stays true. The Kanban page (`board_url`, linked at the top of `STATUS.md`) reads the same file live from `main`. `status_board.py` also rebuilds its source, `00_Brand/Channel-Setup/kanban/index.html` (from `template.html`, with the data built in as an offline snapshot); never edit `index.html` by hand.
 - Keep `next_steps` and `credits` current. A stage past its `due` date shows the film as behind; a blocked stage shows it as blocked.
 - Ben shouldn't have to ask for progress: if it isn't on the board, it isn't reported.
 

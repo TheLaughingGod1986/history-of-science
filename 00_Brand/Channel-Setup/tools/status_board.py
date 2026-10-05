@@ -23,6 +23,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 DATA = ROOT / "00_Brand/Channel-Setup/PIPELINE.json"
 OUT = ROOT / "STATUS.md"
+KANBAN_TEMPLATE = ROOT / "00_Brand/Channel-Setup/kanban/template.html"
+KANBAN_OUT = ROOT / "00_Brand/Channel-Setup/kanban/index.html"
 
 STATUSES = {"done", "doing", "todo", "blocked", "skip"}
 ICON = {"done": "✅", "doing": "🔄", "todo": "⬜", "blocked": "⛔", "skip": "➖"}
@@ -59,10 +61,42 @@ def validate(data: dict) -> list[str]:
             p = st.get("progress")
             if p is not None and not (0 <= p <= 1):
                 errors.append(f"{fid}/{key}: progress must be between 0 and 1")
+            steps = st.get("steps")
+            if steps is not None and not (isinstance(steps, list) and len(steps) == 2 and 0 <= steps[0] <= steps[1]):
+                errors.append(f"{fid}/{key}: steps must be [done, total]")
+            for k in ("due", "eta"):
+                if st.get(k):
+                    try:
+                        parse_date(st[k][:10])
+                    except ValueError:
+                        errors.append(f"{fid}/{key}: {k} must be YYYY-MM-DD")
         for k in keys:
             if k not in film.get("stages", {}):
                 errors.append(f"{fid}: missing stage '{k}'")
     return errors
+
+
+def stage_progress(st: dict) -> float:
+    """progress if given, else steps done / total, else 0."""
+    if st.get("progress") is not None:
+        return float(st["progress"])
+    steps = st.get("steps")
+    if steps and steps[1]:
+        return steps[0] / steps[1]
+    return 0.0
+
+
+def countdown(d: dt.date | None, today: dt.date) -> str:
+    if not d:
+        return ""
+    n = (d - today).days
+    if n > 1:
+        return f"in {n} d"
+    if n == 1:
+        return "tomorrow"
+    if n == 0:
+        return "today"
+    return f"{-n} d late"
 
 
 def film_percent(film: dict, stages: list[dict]) -> int:
@@ -76,7 +110,7 @@ def film_percent(film: dict, stages: list[dict]) -> int:
         if st["status"] == "done":
             earned += s["weight"]
         elif st["status"] in ("doing", "blocked"):
-            earned += s["weight"] * float(st.get("progress", 0))
+            earned += s["weight"] * stage_progress(st)
     return round(100 * earned / weight_total) if weight_total else 100
 
 
@@ -103,16 +137,34 @@ def health(film: dict, stages: list[dict], today: dt.date) -> str:
     return "🟢 on track"
 
 
-def stage_line(s: dict, st: dict) -> str:
+def time_left(st: dict, today: dt.date) -> str:
+    """'2/5 parts · about 2 h left · ETA Tue 6 Oct' for a stage in progress."""
+    bits = []
+    steps = st.get("steps")
+    if steps:
+        bits.append(f"{steps[0]}/{steps[1]} {st.get('steps_unit', 'steps')}")
+    if st.get("left"):
+        bits.append(f"{st['left']} left")
+    if st.get("eta"):
+        eta = parse_date(st["eta"][:10])
+        bits.append(f"ETA {fmt_date(eta)} ({countdown(eta, today)})")
+    return " · ".join(bits)
+
+
+def stage_line(s: dict, st: dict, today: dt.date) -> str:
     status = st["status"]
     label = s["label"]
     extra = []
-    if status in ("doing", "blocked") and st.get("progress") is not None:
-        extra.append(f"{round(100 * st['progress'])}%")
+    if status in ("doing", "blocked"):
+        extra.append(f"{round(100 * stage_progress(st))}%")
+        tl = time_left(st, today)
+        if tl:
+            extra.append(tl)
     if st.get("owner") and status != "done":
         extra.append(st["owner"])
     if st.get("due") and status not in ("done", "skip"):
-        extra.append(f"due {fmt_date(parse_date(st['due']))}")
+        due = parse_date(st["due"])
+        extra.append(f"due {fmt_date(due)} ({countdown(due, today)})")
     head = f"{ICON[status]} **{label}** — {WORD[status]}"
     if extra:
         head += " (" + ", ".join(extra) + ")"
@@ -133,19 +185,32 @@ def render(data: dict) -> str:
         "`00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand."
     )
     lines.append("")
+    if data.get("board_url"):
+        lines.append(
+            f"**Kanban board (live):** {data['board_url']} — reads this same file from `main` "
+            "every 5 minutes. The first time you open it, allow GitHub when it asks."
+        )
+        lines.append("")
     lines.append("## At a glance")
     lines.append("")
-    lines.append("| Film | Airs | Done | Now | Ready for Ben's OK | Health |")
-    lines.append("|---|---|---:|---|---|---|")
+    lines.append("| Film | Airs | Done | Now | Time left on it | Ready for Ben's OK | Health |")
+    lines.append("|---|---|---:|---|---|---|---|")
     for f in films:
         pct = film_percent(f, stages)
         cur = current_stage(f, stages)
         now = "all stages done" if cur is None else f"{cur[0]['label']} ({WORD[cur[1]['status']]})"
         air = parse_date(f.get("air"))
         air_txt = fmt_date(air) + (f" ({(air - today).days} d)" if air else "")
+        left = "—"
+        if cur is not None and cur[1]["status"] in ("doing", "blocked"):
+            left = time_left(cur[1], today) or "not estimated"
+        elif cur is not None and cur[1].get("due"):
+            left = f"starts later; due {countdown(parse_date(cur[1]['due']), today)}"
+        rb = parse_date(f.get("ready_by"))
+        rb_txt = fmt_date(rb) + (f" ({countdown(rb, today)})" if rb and rb >= today else "")
         lines.append(
-            f"| **{f['id']}** {f['title']} | {air_txt} | {pct}% | {now} | "
-            f"{fmt_date(parse_date(f.get('ready_by')))} | {health(f, stages, today)} |"
+            f"| **{f['id']}** {f['title']} | {air_txt} | {pct}% | {now} | {left} | "
+            f"{rb_txt} | {health(f, stages, today)} |"
         )
     lines.append("")
 
@@ -158,7 +223,7 @@ def render(data: dict) -> str:
     if not doing:
         lines.append("Nothing in progress.")
     for f, s, st in doing:
-        lines.append(f"- **{f['id']}** · {stage_line(s, st)[2:]}")
+        lines.append(f"- **{f['id']}** · {stage_line(s, st, today)[2:]}")
     lines.append("")
 
     lines.append("## Next steps (in order)")
@@ -194,11 +259,13 @@ def render(data: dict) -> str:
             lines.append(f["summary"])
         lines.append("")
         for s in stages:
-            lines.append(stage_line(s, f["stages"][s["key"]]))
+            lines.append(stage_line(s, f["stages"][s["key"]], today))
     lines.append("")
     lines.append("## How the % works")
     lines.append("")
     lines.append(
+        "**Time left** comes from the stage's `steps` (done/total), `left` (the owner's estimate) and `eta`; "
+        "\"due in N d\" counts from the date at the top. "
         "Each stage carries a weight by how much work it is; a film's % is the weight done, "
         "plus part of any stage in progress. Weights: "
         + ", ".join(f"{s['label']} {s['weight']}" for s in stages)
@@ -206,6 +273,16 @@ def render(data: dict) -> str:
     )
     lines.append("")
     return "\n".join(lines)
+
+
+def render_kanban(data: dict) -> str:
+    """The Kanban page with PIPELINE.json built in as its offline snapshot.
+
+    Live, the page reads PIPELINE.json from main through the viewer's GitHub
+    connector; the snapshot is what it shows until then (or if GitHub is off).
+    """
+    snapshot = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    return KANBAN_TEMPLATE.read_text().replace("/*SNAPSHOT*/null", snapshot, 1)
 
 
 def main() -> int:
@@ -218,16 +295,18 @@ def main() -> int:
         for e in errors:
             print(f"PIPELINE.json: {e}", file=sys.stderr)
         return 1
-    text = render(data)
+    outputs = {OUT: render(data), KANBAN_OUT: render_kanban(data)}
     if args.check:
-        current = OUT.read_text() if OUT.exists() else ""
-        if current != text:
-            print("STATUS.md is stale: run python3 00_Brand/Channel-Setup/tools/status_board.py", file=sys.stderr)
+        stale = [p for p, text in outputs.items() if (p.read_text() if p.exists() else "") != text]
+        for p in stale:
+            print(f"{p.relative_to(ROOT)} is stale: run python3 00_Brand/Channel-Setup/tools/status_board.py", file=sys.stderr)
+        if stale:
             return 1
-        print("STATUS.md matches PIPELINE.json")
+        print("STATUS.md and kanban/index.html match PIPELINE.json")
         return 0
-    OUT.write_text(text)
-    print(f"wrote {OUT.relative_to(ROOT)}")
+    for p, text in outputs.items():
+        p.write_text(text)
+        print(f"wrote {p.relative_to(ROOT)}")
     return 0
 
 

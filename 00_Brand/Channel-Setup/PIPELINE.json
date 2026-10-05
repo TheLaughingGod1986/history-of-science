@@ -1,6 +1,7 @@
 {
   "updated": "2026-10-05",
   "updated_by": "Claude (desk reviewer)",
+  "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
       "key": "topic",
@@ -68,7 +69,7 @@
     "007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.",
     "Tue 6 Oct: Flow and Google credit resets. Grok posts the balances; Claude re-prices 006 Parts 03–05.",
     "006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.",
-    "007 picture: shot list v01 is ready (about 58 plates). The write lane sources its 8 period details and builds the priced plate boards; spend starts once the whole voiceover batch has passed.",
+    "007 picture: shot list v01 is ready (about 58 plates). Its 8 period details are checked (5 Oct). Next the write lane builds the priced plate boards; spend starts once the whole voiceover batch has passed.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its three Shorts, cards, end screen, pinned comment)."
   ],
   "credits": [
@@ -177,7 +178,14 @@
           "progress": 0.36,
           "owner": "Grok",
           "due": "2026-10-25",
-          "note": "Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets"
+          "note": "Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets; pace set by Flow and Vertex credit",
+          "steps": [
+            1,
+            5
+          ],
+          "steps_unit": "parts kept",
+          "left": "about 3 weeks",
+          "eta": "2026-10-25"
         },
         "edit": {
           "status": "todo",
@@ -227,12 +235,14 @@
         "shorts_vo": {
           "status": "todo",
           "owner": "Grok",
-          "due": "2026-10-07"
+          "due": "2026-10-07",
+          "left": "about 1 hour once started"
         },
         "picture": {
           "status": "todo",
           "due": "2026-11-01",
-          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details to confirm first); starts after the voiceover batch passes"
+          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates); all 8 period details checked 5 Oct (#222); starts after the voiceover batch passes",
+          "steps_unit": "plates"
         },
         "edit": {
           "status": "todo",
@@ -274,10 +284,16 @@
         },
         "vo": {
           "status": "doing",
-          "progress": 0.1,
           "owner": "Grok",
           "due": "2026-10-06",
-          "note": "started 5 Oct; evidence pack to Claude"
+          "note": "started 5 Oct; no part reported yet. Each part: record, word check, then Claude's review",
+          "steps": [
+            0,
+            5
+          ],
+          "steps_unit": "parts passed",
+          "left": "about half a day",
+          "eta": "2026-10-06"
         },
         "shorts_scripts": {
           "status": "done"

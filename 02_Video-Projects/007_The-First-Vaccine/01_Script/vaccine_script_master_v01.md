@@ -87,7 +87,7 @@ So James had caught cowpox. Now came the question that really mattered. Would it
 [VISUAL MUST: 4:48 — the case-book page turns; a quill writes 1 JULY 1796 · LABEL: 1 JULY 1796]
 [VISUAL MUST: 5:00 — Jenner waits by the window, case-book open; outside, James runs in the garden with a hoop · LABEL: WAITING]
 [VISUAL MUST: 5:15 — the case-book: a single line in Jenner's hand, NO DISEASE FOLLOWED, underlined once · LABEL: NO DISEASE FOLLOWED]
-[VISUAL MUST: 5:35 — a London printer's shop, 1798: a slim book comes off the press; its title page reads AN INQUIRY INTO THE CAUSES AND EFFECTS OF THE VARIOLAE VACCINAE · LABEL: THE INQUIRY · 1798]
+[VISUAL MUST: 5:35 — a London printer's shop in Soho, 1798: a slim book comes off the press; its title page reads AN INQUIRY INTO THE CAUSES AND EFFECTS OF THE VARIOLAE VACCINAE · LABEL: THE INQUIRY · 1798]
 [VISUAL MUST: 5:55 — copies of the book travel by coach, ship and horse to cities across a painted map of Europe · LABEL: THE NEWS SPREADS]
 [EXPLORER ACTS: once. In the printer's shop the Explorer picks up a fresh copy of the book, sniffs the ink, opens it to the page about the cow, grins and tucks it under his arm]
 [TEACH: Jenner tested his idea and published every case, so other doctors could check it and repeat it. That is what turned a farmers' rumour into medicine.]
@@ -109,9 +109,9 @@ Jenner sent cowpox matter to anyone who asked, and in a little hut in his own ga
 ## PART 05: The Word That Saved Millions (6:15–8:15)
 
 [CHAPTER CARD: The Word That Saved Millions · 6:15 · ~1.5 s]
-[VISUAL MUST: 6:18 — London, 1881: a crowded medical congress hall; Louis Pasteur (readable face, grey beard, black skullcap) speaks at the lectern and the word VACCINE appears on a board behind him · LABEL: LOUIS PASTEUR · 1881]
+[VISUAL MUST: 6:18 — London, 1881: a crowded, tiered Victorian lecture theatre; Louis Pasteur (readable face, grey beard, bare-headed, dark frock coat) speaks at the lectern and the word VACCINE appears on a board behind him · LABEL: LOUIS PASTEUR · 1881]
 [VISUAL MUST: 6:40 — a painted globe slowly turns; small lights go out one country at a time as a team of health workers travels from village to village · LABEL: THE LAST CASES]
-[VISUAL MUST: 7:00 — 8 May 1980: a calm conference hall; a gavel comes down; a printed headline reads SMALLPOX IS GONE · LABEL: 8 MAY 1980]
+[VISUAL MUST: 7:00 — 8 May 1980: a calm assembly hall; delegates applaud; a printed headline reads SMALLPOX IS GONE · LABEL: 8 MAY 1980]
 [VISUAL MUST: 7:25 — back in the Gloucestershire meadow at golden hour; the cow grazes beside an open pail; the word VACCINE glows softly above her · LABEL: VACCA → VACCINE]
 [EXPLORER ACTS: once. In the meadow the Explorer pats the cow's neck, holds up the little book beside her as if to compare, laughs and walks away along the hedge]
 [TEACH: Pasteur named all such treatments vaccines in honour of Jenner's cowpox. A worldwide vaccination campaign ended smallpox, which was declared gone in 1980.]
