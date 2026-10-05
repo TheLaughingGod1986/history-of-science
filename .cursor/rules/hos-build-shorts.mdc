@@ -13,13 +13,14 @@ Full rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STU
 - **Two lines, then one hard fact.** Line 1 (5–7 words) is the surprising truth about a familiar thing, said in the first second. Line 2 is the person or moment that proved it. About 55–65 words.
 - **The first two seconds:**
   1. start mid-action (trim the Veo ease-in);
-  2. the named thing at frame 0, moving; never a blank card grid or an empty room;
+  2. the named thing at frame 0, moving; never a blank card grid or an empty room; **its own open**, never an opening background from the last 10 Shorts (R3);
   3. the claim is the first words;
   4. a visible change by about 1 s, with a sound on frame 0;
   5. a hook caption on frame 0 (2–4 words, cap height about 8–10%, yellow hook word);
   6. **never the Explorer at frame 0.**
 - **On screen:** the promoted film's exact live title at 9–14 s. The last 4 s loop to the opening picture. Captions throughout.
-- **Schedule:** one Short a day at most, never before its long is public; each Short in a week promotes a different film.
-- **Ship gate:** `python3 00_Brand/Channel-Setup/tools/gate_shorts_open.py check <mp4> --air-date YYYY-MM-DD` must PASS. A motion warning means re-cut the opening. After upload, run `gate_shorts_open.py add …`.
+- **Schedule:** one Short a day at most, never before its long is public; each Short in a week promotes a different film. **Topic fatigue (R2):** at most 6 in a row on one topic; stop after 2 not-fed in a row, then a 2-week break.
+- **Ship gate:** `python3 00_Brand/Channel-Setup/tools/gate_shorts_open.py check <mp4> --air-date YYYY-MM-DD` must PASS (frame 0 vs ±14 days and the last 10 Shorts). A motion warning means re-cut the opening. After upload, run `gate_shorts_open.py add …`.
 - **Studio:** Related video → the long this Short promotes. No pinned comment, zero `/go/`, a custom cover, altered content: yes.
-- **Measure:** stayed-to-watch at 48 h into `audits/SHORTS_LOG.md`. A weak Short is a result, never a re-upload.
+- **Measure:** stayed-to-watch at 48 h into `audits/SHORTS_LOG.md`. **Day 1 (R1, R5):** Shorts-feed share (50%+ = fed) and average viewed (target 60%+); under ~50 views, % viewed is noise. Reads after publishing, not ship gates. A weak Short is a result, never a re-upload.
+- Rules R1–R5: `HOS_STRATEGY.md` → *Shorts feed rules (Claude ruling, 5 Oct 2026)*.
