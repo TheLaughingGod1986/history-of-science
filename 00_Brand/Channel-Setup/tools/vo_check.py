@@ -17,7 +17,9 @@ Usage
 Without --part the whole script is used (for the all-parts listen file).
 
 Needs ffmpeg/ffprobe. The word check needs `pip install faster-whisper` (downloads the
-small.en model once); without it the word check is skipped and the report says so.
+small.en model once). It listens to the audio; the text that was *sent* to ElevenLabs (an
+align/timestamps JSON) never counts. If the word check can't run (faster-whisper missing, or
+the PyAV crash on Python 3.14), the take FAILS: use `vo_check_py312.sh` (5 Oct 2026).
 It cannot judge warmth or delivery: Ben still listens.
 Exit code 0 = PASS, 1 = FAIL, 2 = tool error.
 """
@@ -106,14 +108,21 @@ def norm(text: str) -> list[str]:
     return out
 
 
+ASR_MODEL = "faster-whisper small.en"
+
+
 def transcribe(path: Path):
+    """Words heard in the audio, or an error string if the word check can't run."""
     try:
         from faster_whisper import WhisperModel  # type: ignore
     except ImportError:
-        return None
-    model = WhisperModel("small.en", device="cpu", compute_type="int8")
-    segs, _ = model.transcribe(str(path), word_timestamps=True)
-    return [(round(w.start, 2), w.word.strip()) for s in segs for w in s.words]
+        return "faster-whisper is not installed"
+    try:
+        model = WhisperModel("small.en", device="cpu", compute_type="int8")
+        segs, _ = model.transcribe(str(path), word_timestamps=True)
+        return [(round(w.start, 2), w.word.strip()) for s in segs for w in s.words]
+    except TypeError as exc:  # PyAV 19 on Python 3.14: open() got 'metadata_errors'
+        return f"transcription crashed ({exc})" 
 
 
 def recheck_window(path: Path, start: float, length: float) -> list[str] | None:
@@ -172,9 +181,13 @@ def main() -> int:
     lines = script_lines(ns.script, ns.part)
     script_words = norm(" ".join(lines))
     words = transcribe(ns.audio)
-    if words is None:
-        res["warns"].append("word check skipped: pip install faster-whisper")
+    if isinstance(words, str):
+        # No PASS without listening to the audio (Ben, 4 Oct 2026: align JSON only proves
+        # what was sent; 007 Part 03 dropped a clause that the align file still held).
+        res["fails"].append(f"word check did not run: {words}. Run vo_check_py312.sh")
+        res["asr"] = None
     else:
+        res["asr"] = ASR_MODEL
         heard = norm(" ".join(w for _, w in words))
         res["script_words"], res["heard_words"] = len(script_words), len(heard)
         spoken = len(re.findall(r"[A-Za-z0-9']+", " ".join(lines)))

@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any
 from uuid import uuid4
 
+import el_guard
 from el_auth import auth_headers
 
 API = "https://api.elevenlabs.io"
@@ -30,6 +31,14 @@ def request(
     url = f"{API}{path}"
     if query:
         url = f"{url}?{query}"
+    spend = el_guard.is_spend(method, path)
+    if spend:
+        # Lock, pause file, credit floor and ledger (el_guard.py). Raises SpendRefused.
+        el_guard.before_spend(
+            path,
+            data,
+            lambda: request("GET", "/v1/user/subscription", token, mode)[:2],
+        )
     headers = auth_headers(token, mode, accept=accept)
     body = None
     if data is not None:
@@ -38,9 +47,12 @@ def request(
     req = urllib.request.Request(url, data=body, headers=headers, method=method)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.status, r.read(), {k.lower(): v for k, v in r.headers.items()}
+            result = r.status, r.read(), {k.lower(): v for k, v in r.headers.items()}
     except urllib.error.HTTPError as e:
-        return e.code, e.read(), {k.lower(): v for k, v in e.headers.items()}
+        result = e.code, e.read(), {k.lower(): v for k, v in e.headers.items()}
+    if spend:
+        el_guard.after_spend(result[0])
+    return result
 
 
 def multipart_post(

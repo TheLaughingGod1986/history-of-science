@@ -1,0 +1,20 @@
+# ElevenLabs spend guard tests (no network). Rules: 04_Audio/tools/README.md "Spend guard".
+name: Audio tools
+
+on:
+  pull_request:
+    paths:
+      - "04_Audio/tools/el_guard.py"
+      - "04_Audio/tools/el_client.py"
+      - "04_Audio/tools/test_el_guard.py"
+      - ".github/workflows/audio-tools.yml"
+
+jobs:
+  el-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 04_Audio/tools/test_el_guard.py

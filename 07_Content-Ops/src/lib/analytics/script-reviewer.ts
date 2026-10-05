@@ -144,6 +144,18 @@ function scoreHook(script: string, open: string): { score: number; findings: Scr
   return { score: clampScore(score), findings };
 }
 
+/**
+ * Length bonus for retention: the full +2 from 8 to 12 minutes, ramping in from 7 and out to 13
+ * (5 Oct 2026). It used to be a cliff at exactly 8:00, so cutting five words from 007
+ * (1,203 → 1,197) dropped the score from 92.3 to 88.5 and rewarded padding.
+ */
+export function lengthBonus(minutes: number): number {
+  if (minutes <= 7 || minutes >= 13) return 0;
+  if (minutes < 8) return 2 * (minutes - 7);
+  if (minutes > 12) return 2 * (13 - minutes);
+  return 2;
+}
+
 function scoreDimension(
   base: number,
   hits: number,
@@ -211,9 +223,8 @@ export function reviewScript(
   const escalationHits = (script.match(ESCALATION) || []).length;
   const escalation = scoreDimension(5.5, escalationHits, 0.2, 4);
 
-  let retentionPotential = 6;
-  if (estimatedMinutes >= 8 && estimatedMinutes <= 12) retentionPotential += 2;
-  else if (estimatedMinutes > 16) {
+  let retentionPotential = 6 + lengthBonus(estimatedMinutes);
+  if (estimatedMinutes > 16) {
     retentionPotential -= 2;
     findings.push({
       dimension: "retentionPotential",
@@ -282,7 +293,7 @@ export function reviewScript(
     VISUAL_MUST.test(script),
     TEACH_MARKER.test(script),
     chapterMarkers >= 4 && chapterMarkers <= 6,
-    estimatedMinutes >= 8 && estimatedMinutes <= 12,
+    lengthBonus(estimatedMinutes) >= 1,
     YOU_STAKES.test(script) || /\byou\b/i.test(open),
     CURIOSITY.test(open),
   ];

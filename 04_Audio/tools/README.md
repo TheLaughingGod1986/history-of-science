@@ -13,6 +13,17 @@ Auth: `ELEVENLABS_API_KEY` **or** Firebase bearer (same caches as VO generators 
 The Cursor ElevenLabs MCP wrapper reads `~/.config/elevenlabs/api_key`. Our CLIs
 use that file automatically (or `ELEVENLABS_API_KEY` / `ELEVENLABS_API_KEY_FILE`).
 
+## Spend guard (every credit spend, 5 Oct 2026)
+
+Every POST that spends ElevenLabs credit through `el_client.request` (text-to-speech, sound effects, music, speech-to-speech) goes through `el_guard.py`:
+
+- **One recorder at a time:** the first spend takes `~/_desk/locks/elevenlabs.lock` for the life of the process. A second live process is refused with the holder's script and pid. A lock left by a dead process is taken over.
+- **Pause:** if `~/_desk/elevenlabs/TTS_PAUSE` exists, nothing is spent.
+- **Floor:** a spend that would leave fewer than 50,000 characters is refused (`EL_CREDIT_FLOOR` to change it).
+- **Ledger:** each spend is appended to `~/_desk/elevenlabs/ledger.jsonl` (time, pid, script, endpoint, characters, status, balance before). Post it with each VO evidence pack.
+
+Generators must call `el_client.request`, never `urllib` straight at the API. Tests: `python3 04_Audio/tools/test_el_guard.py`.
+
 ## Commands
 
 ### 1. SFX from script cues
