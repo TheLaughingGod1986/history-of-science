@@ -40,6 +40,8 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 | `docs/` | Tech notes (Veo, playback fixes, publishing adapters, affiliate) |
 | `_archive/` | Superseded docs, rules, one-off scripts, old audits and the Orbit leftovers. **Ignore unless asked.** |
 
+**Social posting (5 Oct 2026):** HOS Shorts go out through **Buffer via HOS Showrunner** only (`BUFFER_HOS_API_KEY`, HOS Buffer org). Never the Orbit Buffer org or the Buffer connector. YouTube stays in Studio. Long films are never cross-posted via Buffer. HOS Threads posting stops until Ben adds a Threads channel. Old Meta/Threads/TikTok CDP auto-post trees are under `_archive/00_Brand/Channel-Setup/`. Details: `STUDIO_PLAYBOOK.md` §12.
+
 ## Commands
 
 ```bash
@@ -149,6 +151,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
   - Ken Burns or a still push when Flow is capped. Wait for the reset.
 - **Voice:** a video model's speech as VO, or any voice other than Ben Orbit Narrator; changing a word of the signed-off script in VO (regenerate the sentence instead); `atempo` above 1.06.
 - **TikTok:** upload or retry while it's paused.
+- **Social:** post HOS via the Orbit Buffer org or the Buffer connector; revive archived Meta/Threads/TikTok `live_shorts_to_*` / launchd auto-post.
 - **Secrets:** commit or print them.
 
 ## Git

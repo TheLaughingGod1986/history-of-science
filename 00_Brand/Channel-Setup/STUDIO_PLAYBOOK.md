@@ -291,8 +291,18 @@ HOS 004 went up marked **Made for Kids**, which switched off comments, notificat
 
 ## 12. Social
 
-- **TikTok is paused** and HOS has no TikTok account: `TikTok/TIKTOK_UPLOAD_BLOCK.json` has `"paused": true`. No uploads, retries or "test one" until Ben lifts it.
-- **Instagram and Threads** (`@historyofscienceyt`): each Short at most once per platform, never before its long is public, never on an Orbit account (`social/uniqueness.py`). Facebook: no HOS Page yet; the Page in the Meta portfolio is Orbit's.
+HOS social posting is **Buffer via HOS Showrunner only**.
+
+- **Auth:** `BUFFER_HOS_API_KEY` against the **HOS** Buffer org. Never the Orbit Buffer org, and never the Buffer connector (Orbit-only).
+- **YouTube** uploads stay in Studio / the YouTube Data API (`STUDIO_PLAYBOOK.md` §9). Buffer does not upload to YouTube.
+- **What Buffer posts:** Shorts only (TikTok, Instagram, Facebook when those channels are connected in the HOS Buffer org). **Long films are never cross-posted via Buffer.**
+- **Captions point to the full film:**
+  - **Facebook:** include the direct YouTube link to the long.
+  - **TikTok / Instagram:** "Full film on YouTube, link in bio" (no raw YouTube URL in-caption where the platform punishes links).
+- **Threads:** HOS Threads posting **stops**. There is no Threads channel in the HOS Buffer org; do not add one without Ben. The old Threads CDP/Graph auto-poster is archived.
+- **Uniqueness / destination guards stay:** `social/uniqueness.py` (one Short per platform) and `social/destination.py` (refuse Orbit / Wellesley destinations). Brand bios stay under `Meta/`, `TikTok/`.
+- **TikTok direct uploads remain paused** until Ben lifts them: `TikTok/TIKTOK_UPLOAD_BLOCK.json` has `"paused": true`. No CDP/API uploads, retries or "test one". Buffer TikTok scheduling is a separate path Ben/Claude rule on.
+- **Archived:** the Meta / Threads / TikTok launchd + CDP auto-post trees live under `_archive/00_Brand/Channel-Setup/…`. Do not reinstall those plists or run `live_shorts_to_*`.
 
 ## 13. Ben signs off
 
