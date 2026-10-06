@@ -45,7 +45,8 @@ LABEL = "hos-desk"
 NEEDS_BEN = "needs-ben"
 TITLE = "HOS desk — Claude ↔ Grok (never merge)"
 HOME = Path(os.environ.get("HOS_DESK_HOME", Path.home() / ".hos_desk"))
-PARTIES = ("claude", "grok", "ben")
+PARTIES = ("claude", "grok", "cursor", "ben")
+WRITERS = ("grok", "cursor")  # the write lane: Grok, or Cursor while Grok is out (AGENTS.md)
 STATUSES = ("task", "review", "question", "blocked", "approval", "done")
 MEDIA = re.compile(r"\.(mp4|mov|m4v|webm|wav|mp3|m4a|aac|aif|aiff|flac)$", re.I)
 HEADER = re.compile(r"<!--\s*hos-desk v1 (.*?)-->", re.S)
@@ -73,13 +74,13 @@ def compose(frm: str, to: str, film: str, stage: str, status: str, body: str, im
     return "\n".join(parts) + "\n"
 
 
-def for_grok(comments: list[dict], after_id: int, trusted: str) -> list[dict]:
+def for_agent(comments: list[dict], after_id: int, trusted: str, me: str = "grok") -> list[dict]:
     out = []
     for c in comments:
         if c["id"] <= after_id or c["user"]["login"].lower() != trusted.lower():
             continue
         h = parse(c["body"])
-        if h and h.get("to") == "grok":
+        if h and h.get("to") == me:
             out.append({**c, "header": h})
     return out
 
@@ -229,30 +230,32 @@ def check_inbox(ns) -> int:
     r = repo()
     pr = desk_pr(r)
     trusted = os.environ.get("HOS_DESK_TRUSTED") or r.split("/")[0]
+    me = ns.agent
+    key = "last" if me == "grok" else f"last_{me}"
     state = load_state()
-    new = for_grok(comments(r, pr), state.get("last", 0), trusted)
+    new = for_agent(comments(r, pr), state.get(key, 0), trusted, me)
     inbox = HOME / "inbox"
     inbox.mkdir(parents=True, exist_ok=True)
     for c in new:
         h = c["header"]
         f = inbox / f"{c['id']}_{h.get('film', 'x')}_{h.get('stage', 'msg')}.md"
         f.write_text(
-            f"# Desk task for Grok (PR #{pr}, comment {c['id']})\n\n"
+            f"# Desk task for {me.title()} (PR #{pr}, comment {c['id']})\n\n"
             "Follow AGENTS.md. When finished, reply on the desk with:\n"
-            f"  python3 00_Brand/Channel-Setup/tools/hos_desk.py post --to claude --film {h.get('film', '')} "
+            f"  python3 00_Brand/Channel-Setup/tools/hos_desk.py post --from {me} --to claude --film {h.get('film', '')} "
             f"--stage {h.get('stage', '')} --status review --body-file <report.md> [--image <png/jpg> …]\n\n"
             + c["body"])
         print(f"\n=== {f}\n{c['body']}")
         if ns.run:
             rc = run_agent(f)
             if rc == -1:
-                notify(f"Task for Grok: {h.get('film', '')} {h.get('stage', '')}")
+                notify(f"Task for {me.title()}: {h.get('film', '')} {h.get('stage', '')}")
             elif rc:
                 print(f"agent exited {rc}; message left in {f}")
-        state["last"] = c["id"]
+        state[key] = c["id"]
         save_state(state)
     if not new:
-        print("No new messages for Grok.")
+        print(f"No new messages for {me.title()}.")
     return len(new)
 
 
@@ -296,7 +299,8 @@ def main() -> None:
     p.set_defaults(fn=cmd_post)
     p = sub.add_parser("inbox")
     p.add_argument("--watch", type=int, default=0, help="poll every N seconds")
-    p.add_argument("--run", action="store_true", help="start Grok with $HOS_DESK_AGENT_CMD")
+    p.add_argument("--run", action="store_true", help="start the agent with $HOS_DESK_AGENT_CMD")
+    p.add_argument("--as", dest="agent", choices=WRITERS, default="grok", help="whose inbox (cursor while Grok is out)")
     p.set_defaults(fn=cmd_inbox)
     p = sub.add_parser("thread")
     p.add_argument("--last", type=int, default=10)

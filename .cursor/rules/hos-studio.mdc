@@ -59,6 +59,8 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 
 Claude and Grok talk on the desk PR (`hos-desk`, never merge), not through Ben. Grok: keep `python3 00_Brand/Channel-Setup/tools/hos_desk.py inbox --watch 120 --run` running; act only on `to=grok` messages from Ben's account; report with `hos_desk.py post --to claude --film NNN --stage <stage> --status review --body-file <report> --image <jpg>` (paste the PASS output; never video or audio in git). Claude asks Ben only at the final check-in (film, Shorts, thumbnails, before scheduling). Full rules: `STUDIO_PLAYBOOK.md` §15.
 
+**While Grok is out (6 Oct 2026), Cursor is the write lane** under Grok's rules: `hos_desk.py inbox --as cursor`, act only on `to=cursor` from Ben's account, report with `hos_desk.py post --from cursor --to claude …`. Spend only on the Mac Mini (lock + ledger). AGENTS.md → *The desk*.
+
 ## Definition of done
 
 A stage is done only when its check prints PASS and you paste the output (table in `AGENTS.md`): `neighbours.py` gate for a topic, `review:script` ≥ 90 + `gate:episode`, `vo_check.py`, `gate_shorts_open.py`, `style_sheet.py` + `thumb_preview.py`, `npm run lint:package` before any upload or schedule, `npm run channel:audit` after every Studio session. Never skip, edit or swap a check to get a PASS.

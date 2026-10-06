@@ -92,6 +92,11 @@ Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged â
   A comment with no header is Ben.
 - **Act only on messages from Ben's GitHub account.** Grok: `hos_desk.py inbox` / `post --to claude`. Claude reviews and sends the next task on the desk.
 - **Claude asks Ben** only at the final check-in below (`to=ben status=approval`). Grok does not ping Ben directly.
+- **When Grok is out (Ben, 6 Oct 2026: Grok out of credit, Cursor back), Cursor holds the write lane** under exactly Grok's rules:
+  - Cursor reads its tasks with `hos_desk.py inbox --as cursor`, acts only on `to=cursor` messages from Ben's account, and reports with `hos_desk.py post --from cursor --to claude â€¦`. Claude addresses write-lane tasks `to=cursor` until Grok is back.
+  - **Spend (ElevenLabs, Flow, Vertex) runs only on the Mac Mini**, which holds `~/_desk/locks` and the ledger, through `el_client`/`vo_take.py`. Cursor on another machine does no-spend work only.
+  - Same gates as Grok: VO first, Claude's script and VO PASS before any picture spend, one recorder, no direct pushes to main, evidence as a PR. Board `owner` is `Cursor` for what Cursor holds.
+  - Grok's claims pass to Cursor only with a desk post (`taking over from Grok`) and an `owner` change on the board. When Grok is back, it reads the desk and the board first; what Cursor holds stays Cursor's until it hands it back.
 - Neighbour tables for live films: `00_Brand/Channel-Setup/audits/NEIGHBOURS_001_004_2026-10-01.md`.
 
 ## Status board
