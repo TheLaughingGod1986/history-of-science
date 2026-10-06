@@ -1,4 +1,4 @@
-<title>HOS Kanban</title>
+<title>Studio Kanban</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -81,6 +81,14 @@ h1 span{color:var(--accent)}
 .card .who-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:8px}
 .card .why{font-size:12px;color:var(--ink-2);margin-top:4px}
 h2.sec{font:600 15px/1 "Bricolage Grotesque",sans-serif;margin:0 0 10px;color:var(--ink-2)}
+.tabs{display:inline-flex;background:var(--panel-2);border-radius:10px;padding:3px;gap:2px}
+.tabs button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--ink-2);padding:5px 12px;border-radius:8px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--panel);color:var(--ink);box-shadow:var(--shadow);font-weight:600}
+.ch{display:inline-block;font:600 10px/1 "IBM Plex Mono",monospace;letter-spacing:.05em;padding:3px 5px;border-radius:4px;vertical-align:2px;margin-right:4px}
+.ch.HOS{background:var(--accent-soft);color:var(--soon)}
+.ch.OWB{background:var(--doing-soft);color:var(--doing)}
+.chnote{font-size:13px;color:var(--ink-2);margin:-8px 0 12px;display:none}
+.chnote.show{display:block}
 .filterline{display:flex;align-items:center;gap:10px;margin:-6px 0 14px;font-size:13px;color:var(--ink-2);min-height:28px}
 
 .board{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:14px;align-items:start}
@@ -132,12 +140,18 @@ footer a{color:var(--ink-2)}
 <div class="wrap">
   <header>
     <div>
-      <h1>History of Science <span>·</span> Kanban</h1>
+      <h1>Studio <span>·</span> Kanban</h1>
       <div class="sub" id="asof">Loading…</div>
     </div>
-    <div class="src"><span class="dot" id="dot"></span><span id="srctxt">Snapshot</span><button class="btn" id="refresh" hidden>Refresh</button></div>
+    <div class="src" style="flex-direction:column;align-items:flex-end">
+      <div class="tabs" role="group" aria-label="Channel" id="tabs">
+        <button data-ch="all">Both</button><button data-ch="HOS">History of Science</button><button data-ch="OWB">Orbit With Ben</button>
+      </div>
+      <div class="src"><span class="dot" id="dot"></span><span id="srctxt">Snapshot</span><button class="btn" id="refresh" hidden>Refresh</button></div>
+    </div>
   </header>
   <div class="banner" id="banner"></div>
+  <div class="chnote" id="owbnote"></div>
   <h2 class="sec">Who's on what</h2>
   <div class="agents" id="agents"></div>
   <h2 class="sec">Films</h2>
@@ -146,18 +160,20 @@ footer a{color:var(--ink-2)}
   <div class="board" id="board"></div>
   <div class="lower">
     <div class="box"><h3>Next steps</h3><ol id="next"></ol></div>
-    <div class="box"><h3>Credit left</h3><div id="credits"></div></div>
+    <div class="box" id="creditbox"><h3>HOS credit left</h3><div id="credits"></div></div>
   </div>
-  <footer>Reads <span class="mono">00_Brand/Channel-Setup/PIPELINE.json</span> on <span class="mono">main</span> of TheLaughingGod1986/history-of-science, the same file behind <a href="https://github.com/TheLaughingGod1986/history-of-science/blob/main/STATUS.md" target="_blank" rel="noopener">STATUS.md</a>. Claude and Grok update it as each step lands; this page re-reads it every 5 minutes.</footer>
+  <footer><b>HOS</b> reads <span class="mono">00_Brand/Channel-Setup/PIPELINE.json</span> in history-of-science (the file behind <a href="https://github.com/TheLaughingGod1986/history-of-science/blob/main/STATUS.md" target="_blank" rel="noopener">STATUS.md</a>). <b>OWB</b> reads each film's <span class="mono">02_Video-Projects/&lt;film&gt;/status.json</span> in orbit-with-ben (the files behind its <a href="https://github.com/TheLaughingGod1986/orbit-with-ben/blob/main/STATUS.md" target="_blank" rel="noopener">STATUS.md</a>; "chief" is shown as Grok). Both from <span class="mono">main</span>, re-read every 5–10 minutes.</footer>
 </div>
 
 <script>
 const SNAPSHOT = /*SNAPSHOT*/null;
-const REPO = {owner:"TheLaughingGod1986", repo:"history-of-science", path:"00_Brand/Channel-Setup/PIPELINE.json"};
+const OWB_SNAPSHOT = /*OWB_SNAPSHOT*/null;
+const HOS_REPO = {owner:"TheLaughingGod1986", repo:"history-of-science", path:"00_Brand/Channel-Setup/PIPELINE.json"};
+const OWB = {owner:"TheLaughingGod1986", repo:"orbit-with-ben", dir:"02_Video-Projects"};
 const WORD = {done:"done", doing:"in progress", blocked:"blocked", todo:"to do", skip:"not needed"};
 const DAY = 86400000;
-let data = SNAPSHOT, source = "snapshot", fetchedAt = null, filter = null;
-try { filter = localStorage.getItem("hos-kanban-film") || null; } catch (e) {}
+let data = SNAPSHOT, source = "snapshot", fetchedAt = null, filter = null, chan = "all";
+try { filter = localStorage.getItem("studio-kanban-film") || null; chan = localStorage.getItem("studio-kanban-ch") || "all"; } catch (e) {}
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -168,6 +184,44 @@ function fd(d){ return d ? d.toLocaleDateString("en-GB",{weekday:"short",day:"nu
 function days(d){ return Math.round((d - today())/DAY); }
 function cd(d){ if(!d) return ""; const n=days(d); return n<0?`${-n} d late`:n===0?"today":n===1?"tomorrow":`in ${n} d`; }
 function cdCls(d){ if(!d) return ""; const n=days(d); return n<0?"late":n<=1?"soon":""; }
+const tm = ms => new Date(ms).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"});
+
+// ---------- OWB: one status.json per film (scripts/studio.py), normalised to the HOS card model ----------
+const OWB_STAGES = [["topic","Topic"],["script","Script"],["sources","Sources"],["vo","Voiceover"],["shots","Shot list"],
+  ["picture","Picture"],["edit","Edit"],["thumbs","Thumbnails"],["upload","Upload"]].map(([key,label])=>({key,label,weight:100/9}));
+const AGENT = by => { const b=String(by||"").toLowerCase(); return b==="chief"||b.startsWith("chief/")?"Grok":b? b[0].toUpperCase()+b.slice(1):""; };
+function owbFilm(j){
+  const stages = {};
+  for(const s of OWB_STAGES){
+    const raw = (j.stages||{})[s.key] || {}; const state = raw.state || "todo";
+    const st = state==="review" ? {status:"doing", owner:"Claude", review:true} : {status: WORD[state]?state:"todo"};
+    if(raw.ref) st.note = "ref " + raw.ref;
+    stages[s.key] = st;
+  }
+  for(const c of (j.claims||[])){
+    const st = stages[c.stage]; if(!st) continue;
+    const live = new Date(c.eta) > new Date();
+    Object.assign(st, {status: st.status==="done"?st.status:"doing", owner: AGENT(c.by), since: c.at, eta: c.eta, note: c.note || st.note,
+      underway: live, waiting: live ? "" : "claim stalled: its ETA has passed"});
+  }
+  return {id: j.film, title: j.title || "(untitled)", air: j.air || "", summary: j.next ? "Next: " + j.next : "", next: j.next || "",
+    stages, _ch:"OWB", _stages: OWB_STAGES, key: "OWB:" + j.film};
+}
+const owb = {files:{}, missing:new Set(), state: OWB_SNAPSHOT ? "snapshot" : "loading", msg:"", at:null};
+if(OWB_SNAPSHOT) for(const j of OWB_SNAPSHOT) owb.files[j.film] = j;
+
+function view(){
+  const out = [];
+  if(chan!=="OWB" && data) for(const f of data.films) out.push(Object.assign({}, f, {_ch:"HOS", _stages:data.stages, key:"HOS:"+f.id}));
+  if(chan!=="HOS") for(const j of Object.values(owb.files).sort((a,b)=>String(a.film).localeCompare(String(b.film)))){
+    const f = owbFilm(j);
+    if(OWB_STAGES.every(s=>["done","skip"].includes(f.stages[s.key].status))) continue; // finished films stay off the board
+    if(!f.air && OWB_STAGES.filter(s=>f.stages[s.key].status!=="todo").length<=1) continue; // stub files (no air date, nothing started)
+    out.push(f);
+  }
+  return out;
+}
+const chb = f => `<span class="ch ${f._ch}">${f._ch}</span>`;
 
 function progress(st){
   if(st.status==="done") return 1;
@@ -177,31 +231,36 @@ function progress(st){
 }
 // Same rules as status_board.py: skipped stages don't count; "now" is the first stage not done or skipped.
 const stOf = (f,s) => f.stages[s.key] || {status:"todo"};
-function filmPct(f, stages){
+function filmPct(f){
   let tot=0, got=0;
-  for(const s of stages){ const st=stOf(f,s); if(st.status==="skip") continue; tot+=s.weight;
+  for(const s of f._stages){ const st=stOf(f,s); if(st.status==="skip") continue; tot+=s.weight;
     got+=s.weight*(st.status==="done"?1:(st.status==="doing"||st.status==="blocked")?progress(st):0); }
   return tot ? Math.round(100*got/tot) : 100;
 }
-function current(f, stages){
-  for(const s of stages){ const st=stOf(f,s); if(st.status!=="done"&&st.status!=="skip") return [s,st]; }
+function current(f){
+  const live = f._stages.find(s=>{ const st=stOf(f,s); return st.status==="doing"||st.status==="blocked"; });
+  if(f._ch==="OWB" && live) return [live, stOf(f,live)];  // OWB runs stages in parallel; show the live one
+  for(const s of f._stages){ const st=stOf(f,s); if(st.status!=="done"&&st.status!=="skip") return [s,st]; }
   return null;
 }
-function health(f, stages){
-  if(stages.some(s=>stOf(f,s).status==="blocked")) return ["bad","blocked"];
+function health(f){
+  if(f._stages.some(s=>stOf(f,s).status==="blocked")) return ["bad","blocked"];
   const t=today();
-  if(stages.some(s=>{ const st=stOf(f,s); return st.status!=="done"&&st.status!=="skip"&&st.due&&pd(st.due)<t; })) return ["risk","behind"];
+  if(f._stages.some(s=>{ const st=stOf(f,s); return st.status!=="done"&&st.status!=="skip"&&st.due&&pd(st.due)<t; })) return ["risk","behind"];
+  if(f._stages.some(s=>stOf(f,s).underway===false && /stalled/.test(stOf(f,s).waiting||""))) return ["risk","stalled"];
   return ["ok","on track"];
 }
 
 const AV_COLORS = {Grok:"#2f6fb5", Claude:"#c47a0b", Ben:"#2e7d4f"};
 const ownerOf = (s,st) => st.owner || s.owner || "—";
+const whoText = n => n==="—" ? "nobody yet" : n;
 function av(name){ const c = AV_COLORS[name] || "#6b7280"; return `<span class="av" style="background:${c}" aria-hidden="true">${esc((name||"?")[0])}</span>`; }
 function pw(s){ if(!s) return null; const d=new Date(String(s).length>10?s:s+"T00:00"); return isNaN(d)?null:d; }
 function fw(s){ const d=pw(s); if(!d) return ""; return fd(d)+(String(s).length>10?" "+d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"}):""); }
 // Same words as status_board.py activity()
 function stateOf(st){
   if(st.status==="doing"){
+    if(st.review) return ["wait","In review",""];
     if(st.underway===true) return ["on","Underway",""];
     if(st.underway===false) return ["wait","Waiting",st.waiting||""];
     return ["q","In progress",""];
@@ -212,25 +271,24 @@ function stateOf(st){
 }
 function stateChip(st){ const [c,t]=stateOf(st); return `<span class="state ${c}">${t}</span>`; }
 
-function renderAgents(){
-  const {films, stages} = data;
-  const names = [];
-  for(const s of stages) if(s.owner && !names.includes(s.owner)) names.push(s.owner);
-  for(const f of films) for(const s of stages){ const o=stOf(f,s).owner; if(o && !names.includes(o)) names.push(o); }
+function renderAgents(films){
+  const names = ["Claude","Grok","Ben"];
+  for(const f of films) for(const s of f._stages){ const o=ownerOf(s,stOf(f,s)); if(o && o!=="—" && !names.includes(o)) names.push(o); }
   $("agents").innerHTML = names.map(who=>{
     const now=[], wait=[], next=[];
     for(const f of films){
       let queued=false;
-      for(const s of stages){
+      for(const s of f._stages){
         const st=stOf(f,s); if(ownerOf(s,st)!==who) continue;
-        const tag=`<b>${esc(f.id)}</b> ${esc(s.label)}`;
-        if(st.status==="doing" && st.underway!==false){
+        const tag=`${chb(f)}<b>${esc(f.id)}</b> ${esc(s.label)}`;
+        if(st.status==="doing" && st.underway!==false && !st.review){
           const bits=[]; if(st.since) bits.push("since "+fw(st.since));
           if(Array.isArray(st.steps)) bits.push(`${st.steps[0]}/${st.steps[1]} ${esc(st.steps_unit||"steps")}`);
           if(st.left) bits.push(esc(st.left)+" left");
+          if(st.eta && f._ch==="OWB") bits.push("ETA "+fw(st.eta));
           now.push(tag+(bits.length?` · ${bits.join(" · ")}`:""));
         } else if(st.status==="doing"||st.status==="blocked"){
-          wait.push(tag+(st.waiting?` · ${md(st.waiting)}`:""));
+          wait.push(tag+(st.review?" · review":st.waiting?` · ${md(st.waiting)}`:""));
         } else if(st.status==="todo" && !queued){
           queued=true; next.push([st.due||"9999", tag+(st.due?` · due ${fd(pd(st.due))}`:"")]);
         }
@@ -246,27 +304,26 @@ function renderAgents(){
   }).join("");
 }
 
-function renderFilms(){
-  const {films, stages} = data;
+function renderFilms(films){
   $("films").innerHTML = films.map(f=>{
-    const pct=filmPct(f,stages), [hc,ht]=health(f,stages), air=pd(f.air), cur=current(f,stages);
-    const now = cur ? `${esc(cur[0].label)} · ${esc(ownerOf(cur[0],cur[1]))} · ${stateOf(cur[1])[1].toLowerCase()}` : "all done";
-    return `<button class="film${filter===f.id?" sel":""}" data-film="${esc(f.id)}" aria-pressed="${filter===f.id}">
-      <div class="top"><span class="id">${esc(f.id)}</span><span class="pct">${pct}%</span></div>
+    const pct=filmPct(f), [hc,ht]=health(f), air=pd(f.air), cur=current(f);
+    const now = cur ? `${esc(cur[0].label)} · ${esc(whoText(ownerOf(cur[0],cur[1])))} · ${stateOf(cur[1])[1].toLowerCase()}` : "all done";
+    return `<button class="film${filter===f.key?" sel":""}" data-film="${esc(f.key)}" aria-pressed="${filter===f.key}">
+      <div class="top"><span class="id">${chb(f)}${esc(f.id)}</span><span class="pct">${pct}%</span></div>
       <div class="t">${esc(f.title)}</div>
       <div class="bar"><i style="width:${pct}%"></i></div>
       <div class="meta"><span>Airs ${fd(air)}${air&&days(air)>=0?` · ${days(air)} d`:""}</span><span class="chip ${hc}">${ht}</span></div>
       <div class="meta"><span>Now: ${now}</span></div>
     </button>`;
-  }).join("");
+  }).join("") || `<div class="empty">No films to show.</div>`;
   $("films").querySelectorAll(".film").forEach(b=>b.onclick=()=>{
     filter = filter===b.dataset.film ? null : b.dataset.film;
-    try { filter?localStorage.setItem("hos-kanban-film",filter):localStorage.removeItem("hos-kanban-film"); } catch(e){}
+    try { filter?localStorage.setItem("studio-kanban-film",filter):localStorage.removeItem("studio-kanban-film"); } catch(e){}
     render();
   });
-  const f = films.find(x=>x.id===filter);
-  $("filterline").innerHTML = f ? `Showing <b>&nbsp;${esc(f.id)}&nbsp;</b> only · ${md(f.summary||"")} <button class="btn" id="clear">Show all</button>` : "Tap a film to show only its cards.";
-  if(f) $("clear").onclick=()=>{ filter=null; try{localStorage.removeItem("hos-kanban-film");}catch(e){} render(); };
+  const f = films.find(x=>x.key===filter);
+  $("filterline").innerHTML = f ? `Showing ${chb(f)}<b>${esc(f.id)}</b>&nbsp;only · ${md(f.summary||"")} <button class="btn" id="clear">Show all</button>` : "Tap a film to show only its cards.";
+  if(f) $("clear").onclick=()=>{ filter=null; try{localStorage.removeItem("studio-kanban-film");}catch(e){} render(); };
 }
 
 function cardHtml(f, s, st){
@@ -274,31 +331,33 @@ function cardHtml(f, s, st){
   const bits=[];
   if(Array.isArray(st.steps)) bits.push(`<b>${st.steps[0]}/${st.steps[1]}</b> ${esc(st.steps_unit||"steps")}`);
   if(st.left) bits.push(`<b>${esc(st.left)}</b> left`);
-  if(eta) bits.push(`ETA <b>${fd(eta)}</b> <span class="${cdCls(eta)}">(${cd(eta)})</span>`);
+  if(eta) bits.push(`ETA <b>${String(st.eta).length>10?fw(st.eta):fd(eta)}</b> <span class="${cdCls(eta)}">(${cd(eta)})</span>`);
   if(due) bits.push(`Due <b>${fd(due)}</b> <span class="${cdCls(due)}">(${cd(due)})</span>`);
-  const prog = (st.status==="doing"||st.status==="blocked") ? `<div class="prog"><div class="bar"><i style="width:${Math.round(p*100)}%"></i></div><span>${Math.round(p*100)}%</span></div>` : "";
+  const showProg = (st.status==="doing"||st.status==="blocked") && (typeof st.progress==="number"||Array.isArray(st.steps));
+  const prog = showProg ? `<div class="prog"><div class="bar"><i style="width:${Math.round(p*100)}%"></i></div><span>${Math.round(p*100)}%</span></div>` : "";
+  const [, label, why] = stateOf(st);
   return `<div class="card ${st.status}">
-    <div class="hd"><span class="stage">${esc(s.label)}</span><span class="fid">${esc(f.id)}</span></div>
+    <div class="hd"><span class="stage">${esc(s.label)}</span><span class="fid">${chb(f)}${esc(f.id)}</span></div>
     ${filter?"":`<div class="note" style="margin-top:2px">${esc(f.title)}</div>`}
-    <div class="who-row"><span class="who">${av(ownerOf(s,st))}With <b>${esc(ownerOf(s,st))}</b>${st.since?` since ${fw(st.since)}`:""}</span>${stateChip(st)}</div>
-    ${stateOf(st)[2]?`<div class="why">${({Queued:"Starts ",Waiting:"Waiting for: ",Blocked:"Blocked by: "})[stateOf(st)[1]]||""}${md(stateOf(st)[2])}</div>`:""}
+    <div class="who-row"><span class="who">${ownerOf(s,st)==="—"?"Not claimed yet":`${av(ownerOf(s,st))}With <b>${esc(ownerOf(s,st))}</b>`}${st.since?` since ${fw(st.since)}`:""}</span>${stateChip(st)}</div>
+    ${why?`<div class="why">${({Queued:"Starts ",Waiting:"Waiting for: ",Blocked:"Blocked by: "})[label]||""}${md(why)}</div>`:""}
     ${prog}
     ${st.note?`<div class="note">${md(st.note)}</div>`:""}
     ${bits.length?`<div class="row">${bits.map(b=>`<span>${b}</span>`).join("")}</div>`:""}
   </div>`;
 }
 
-function renderBoard(){
-  const {films, stages} = data;
-  const shown = filter ? films.filter(f=>f.id===filter) : films;
+function renderBoard(films){
+  const shown = filter ? films.filter(f=>f.key===filter) : films;
   const cols = {blocked:[], doing:[], todo:[], done:[]};
-  for(const f of shown) for(const [i,s] of stages.entries()){
+  for(const f of shown) for(const [i,s] of f._stages.entries()){
     const st = stOf(f,s);
     if(st.status==="skip") continue;
     (cols[st.status]||cols.todo).push({f,s,st,i});
   }
-  cols.todo.sort((a,b)=>(a.st.due||"9999").localeCompare(b.st.due||"9999") || a.f.id.localeCompare(b.f.id) || a.i-b.i);
-  cols.doing.sort((a,b)=>(a.st.eta||a.st.due||"9999").localeCompare(b.st.eta||b.st.due||"9999"));
+  const air = x => x.f.air || "9999";
+  cols.todo.sort((a,b)=>(a.st.due||air(a)).localeCompare(b.st.due||air(b)) || a.f.key.localeCompare(b.f.key) || a.i-b.i);
+  cols.doing.sort((a,b)=>String(a.st.eta||a.st.due||"9999").localeCompare(String(b.st.eta||b.st.due||"9999")));
   const defs = [
     ...(cols.blocked.length?[["blocked","Blocked","var(--blocked)"]]:[]),
     ["doing","In progress","var(--doing)"],["todo","To do","var(--todo)"],["done","Done","var(--done)"]
@@ -308,9 +367,9 @@ function renderBoard(){
     let body;
     if(k==="done"){
       const byFilm = new Map();
-      for(const x of cols.done){ if(!byFilm.has(x.f.id)) byFilm.set(x.f.id,{f:x.f,items:[]}); byFilm.get(x.f.id).items.push(x); }
+      for(const x of cols.done){ if(!byFilm.has(x.f.key)) byFilm.set(x.f.key,{f:x.f,items:[]}); byFilm.get(x.f.key).items.push(x); }
       body = [...byFilm.values()].map(({f,items})=>`<details class="donegrp"${filter?" open":""}>
-        <summary><span><span class="fid">${esc(f.id)}</span> ${items.length===stages.length?"every stage":items.length+" of "+stages.length+" stages"}</span><span>▾</span></summary>
+        <summary><span>${chb(f)}<span class="fid">${esc(f.id)}</span> ${items.length===f._stages.length?"every stage":items.length+" of "+f._stages.length+" stages"}</span><span>▾</span></summary>
         <ul>${items.map(x=>`<li>${esc(x.s.label)}${x.st.note?` <span>· ${md(x.st.note)}</span>`:""}</li>`).join("")}</ul></details>`).join("");
     } else {
       const list = k==="todo" && !filter ? cols.todo.slice(0,14) : cols[k];
@@ -322,71 +381,116 @@ function renderBoard(){
   }).join("");
 }
 
-function renderLower(){
-  $("next").innerHTML = (data.next_steps||[]).map(s=>`<li>${md(s)}</li>`).join("");
-  $("credits").innerHTML = (data.credits||[]).map(c=>`<div class="credit"><span>${esc(c.pool)}</span><span class="l">${esc(c.left)}</span><span class="r">${esc(c.rule)} · checked ${esc(c.checked)}</span></div>`).join("");
+function renderLower(films){
+  const items = [];
+  if(chan!=="OWB" && data) for(const s of (data.next_steps||[])) items.push(`<span class="ch HOS">HOS</span>${md(s)}`);
+  if(chan!=="HOS") for(const f of films) if(f._ch==="OWB" && f.next) items.push(`${chb(f)}<b>${esc(f.id)}</b> ${md(f.next)}`);
+  $("next").innerHTML = items.map(x=>`<li>${x}</li>`).join("") || "<li>Nothing listed.</li>";
+  $("creditbox").style.display = chan==="OWB" ? "none" : "";
+  $("credits").innerHTML = ((data&&data.credits)||[]).map(c=>`<div class="credit"><span>${esc(c.pool)}</span><span class="l">${esc(c.left)}</span><span class="r">${esc(c.rule)} · checked ${esc(c.checked)}</span></div>`).join("");
 }
 
 function renderSource(){
-  const up = pd(data.updated);
-  $("asof").textContent = `Board last updated ${fd(up)} by ${data.updated_by||"—"} · today is ${fd(today())}`;
+  const bits = [];
+  if(chan!=="OWB" && data) bits.push(`HOS board updated ${fd(pd(data.updated))} by ${data.updated_by||"—"}`);
+  if(chan!=="HOS") bits.push(owb.state==="live" ? `OWB read ${tm(owb.at)}` : owb.state==="snapshot" ? "OWB from the built-in snapshot" : owb.state==="loading" ? "OWB loading…" : "OWB not available");
+  bits.push(`today is ${fd(today())}`);
+  $("asof").textContent = bits.join(" · ");
   const dot=$("dot"), t=$("srctxt");
   dot.className = "dot" + (source==="live"?" live":source==="stale"?" warn":"");
-  if(source==="live") t.textContent = `Live from GitHub · read ${new Date(fetchedAt).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"})}`;
-  else if(source==="stale") t.textContent = `Last good read ${new Date(fetchedAt).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"})} · retrying`;
+  if(source==="live") t.textContent = `Live from GitHub · read ${tm(fetchedAt)}`;
+  else if(source==="stale") t.textContent = `Last good read ${tm(fetchedAt)} · retrying`;
   else t.textContent = "Snapshot built into this page";
+  const n=$("owbnote"); n.innerHTML = chan!=="HOS" && owb.msg ? owb.msg : ""; n.classList.toggle("show", !!(chan!=="HOS" && owb.msg));
+  document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.ch===chan)));
 }
 
-function render(){ if(!data) return; renderSource(); renderAgents(); renderFilms(); renderBoard(); renderLower(); }
+function render(){
+  const films = view();
+  if(filter && !films.some(f=>f.key===filter)) filter = null;
+  renderSource(); renderAgents(films); renderFilms(films); renderBoard(films); renderLower(films);
+}
+document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{ chan=b.dataset.ch; try{localStorage.setItem("studio-kanban-ch",chan);}catch(e){} render(); });
 
 function banner(html){ const b=$("banner"); b.innerHTML=html||""; b.classList.toggle("show",!!html); }
 
-function parsePipeline(result){
-  const tryParse = s => { try { const j=JSON.parse(s); return j&&Array.isArray(j.films)?j:null; } catch(e){ return null; } };
-  if(result.payload && typeof result.payload==="object" && Array.isArray(result.payload.films)) return result.payload;
+function jsonOf(result){
+  if(result.payload && typeof result.payload==="object") return result.payload;
   for(const b of result.content||[]){
-    if(b.type==="text" && typeof b.text==="string"){ const j=tryParse(b.text); if(j) return j; }
-    if(b.type==="resource" && b.resource && typeof b.resource.text==="string"){ const j=tryParse(b.resource.text); if(j) return j; }
+    const txt = b.type==="text" ? b.text : (b.type==="resource" && b.resource) ? b.resource.text : null;
+    if(typeof txt!=="string") continue;
+    try { return JSON.parse(txt); } catch(e) {}
   }
   return null;
 }
+function parsePipeline(result){ const j=jsonOf(result); return j&&Array.isArray(j.films)?j:null; }
 
-function errorCopy(e){
+function errorCopy(e, what){
   switch(e.code){
     case "server_not_connected": case "server_not_found":
-      return "Showing the snapshot built into this page. To see live progress, connect the <b>GitHub</b> connector in claude.ai Settings → Connectors, then reopen this page.";
+      return `To see ${what} live, connect the <b>GitHub</b> connector in claude.ai Settings → Connectors, then reopen this page.`;
     case "needs_reauth":
-      return "GitHub needs you to sign in again (claude.ai Settings → Connectors → GitHub). Showing the snapshot until then.";
+      return `GitHub needs you to sign in again (claude.ai Settings → Connectors → GitHub) to read ${what}.`;
     case "not_granted": case "consent_required": case "approval_required":
-      return "This page reads progress from GitHub only if you allow it. Allow GitHub from this page's <b>Permissions</b> menu to see live progress. Showing the snapshot.";
+      return `This page reads ${what} from GitHub only if you allow it: use this page's <b>Permissions</b> menu.`;
     case "not_in_manifest": case "blocked_by_policy": case "capability_disabled": case "capability_removed":
-      return "Live reading is turned off for this page. Showing the snapshot built into it.";
+      return `Live reading of ${what} is turned off for this page.`;
     default: return null;
   }
+}
+
+function watchOwb(mcp){
+  const subs = {};
+  const watchFile = (name, path) => {
+    if(subs[path] || owb.missing.has(path)) return;
+    subs[path] = mcp.watchTool("github","get_file_contents",{owner:OWB.owner, repo:OWB.repo, path},ev=>{
+      if(ev.type==="data"){
+        const j = jsonOf(ev.result);
+        if(j && j.stages && j.film){ owb.files[j.film]=j; owb.state="live"; owb.at=ev.result.cache?.storedAt||Date.now(); owb.msg=""; render(); }
+      } else if(ev.error?.code==="tool_error" || ev.error?.code==="bad_request"){
+        owb.missing.add(path); subs[path]&&subs[path](); delete subs[path];   // this film has no status.json
+      }
+    },{refetchInterval:600000});
+  };
+  mcp.watchTool("github","get_file_contents",{owner:OWB.owner, repo:OWB.repo, path:OWB.dir},ev=>{
+    if(ev.type==="data"){
+      const list = jsonOf(ev.result);
+      if(!Array.isArray(list)){ owb.msg="GitHub answered, but the OWB film list could not be read."; render(); return; }
+      for(const e of list) if(e.type==="dir" && /^\d{3}_/.test(e.name)) watchFile(e.name, `${e.path}/status.json`);
+    } else {
+      const e=ev.error||{}; if(e.code==="user_changed") return;
+      const copy = errorCopy(e, "Orbit With Ben");
+      owb.msg = copy || "Couldn't reach Orbit With Ben on GitHub just now; it will try again.";
+      if(copy && owb.state==="live"){ owb.files={}; if(OWB_SNAPSHOT) for(const j of OWB_SNAPSHOT) owb.files[j.film]=j; owb.state=OWB_SNAPSHOT?"snapshot":"error"; }
+      else if(owb.state==="loading") owb.state = OWB_SNAPSHOT ? "snapshot" : "error";
+      render();
+    }
+  },{refetchInterval:600000});
 }
 
 let unsub = null;
 async function startLive(){
   let mcp = null;
   try { mcp = await window.claude?.use?.("mcp"); } catch(e){ mcp = null; }
-  if(!mcp){ banner(SNAPSHOT?"":"Live data is not available here."); return; }
+  if(!mcp){ owb.state = OWB_SNAPSHOT ? "snapshot" : "error"; if(!OWB_SNAPSHOT) owb.msg = "Orbit With Ben shows only when this page can read GitHub live."; render(); return; }
   const btn=$("refresh"); btn.hidden=false;
   btn.onclick = async()=>{ btn.disabled=true; try{ await mcp.invalidate?.("github","get_file_contents"); }catch(e){} setTimeout(()=>btn.disabled=false,1500); };
-  unsub = mcp.watchTool("github","get_file_contents",REPO,ev=>{
+  unsub = mcp.watchTool("github","get_file_contents",HOS_REPO,ev=>{
     if(ev.type==="data"){
       const j = parsePipeline(ev.result);
-      if(!j){ banner("GitHub answered, but the board file could not be read. Showing the last good data."); if(source==="live") source="stale"; render(); return; }
+      if(!j){ banner("GitHub answered, but the HOS board file could not be read. Showing the last good data."); if(source==="live") source="stale"; render(); return; }
       data=j; source="live"; fetchedAt = ev.result.cache?.storedAt || Date.now(); banner(""); render();
     } else {
       const e=ev.error||{}; if(e.code==="user_changed"){ unsub&&unsub(); return; }
-      const copy = errorCopy(e);
-      if(copy){ if(source==="live"){ data=SNAPSHOT; source="snapshot"; } banner(copy); render(); }
+      const copy = errorCopy(e, "History of Science");
+      if(copy){ if(source==="live"){ data=SNAPSHOT; source="snapshot"; } banner(copy + " Showing the HOS snapshot."); render(); }
       else { if(source==="live") source="stale"; banner("Couldn't reach GitHub just now. Showing the last good data; it will try again."); render(); }
     }
   },{refetchInterval:300000});
+  watchOwb(mcp);
 }
 
 render();
 startLive();
-setInterval(()=>{ if(data) render(); }, 60*60*1000);
+setInterval(()=>render(), 60*60*1000);
 </script>
