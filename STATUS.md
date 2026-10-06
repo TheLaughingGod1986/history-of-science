@@ -19,7 +19,7 @@
 
 **Claude**
 - ▶️ Underway: nothing right now
-- ⏭ Next up: 009 Picture, due Sun 15 Nov
+- ⏭ Next up: 010 Picture, due Sun 22 Nov
 
 **Grok**
 - ▶️ Underway: nothing right now
@@ -43,7 +43,7 @@
 ## Next steps (in order)
 
 1. Ben: wake the Mac Mini. Grok is out of credit, so Cursor holds the write lane: it pulls main and records 008 part by part with vo_take.py; Claude checks each part.
-2. Claude (no spend): 008 shot list done 6 Oct (P1–P8 to source, Cursor); 009 and 010 shot lists next.
+2. Claude (no spend): 008 and 009 shot lists done 6 Oct (P1–P8 for each to source, Cursor); 010 shot list next.
 3. 007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.
 4. Tue 6 Oct: Flow and Google credit resets. Cursor posts the balances; Claude re-prices 006 Parts 03–05.
 5. 006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.
@@ -159,7 +159,7 @@ Script, facts, audit and package are done. Voiceover is next in the queue after 
 - ⬜ **Voiceover (long)** — to do (with Cursor, due Wed 7 Oct (tomorrow))
 - ✅ **Shorts scripts** — done
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (in 2 d))
-- ⬜ **Picture** — to do (with Claude, due Sun 15 Nov (in 40 d)): shot list: Claude is writing it now (no spend); plates start after the whole VO batch passes
+- ⬜ **Picture** — to do (with Cursor, due Sun 15 Nov (in 40 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
 - ⬜ **Edit + master** — to do (with Grok, due Thu 19 Nov (in 44 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 19 Nov (in 44 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 47 d))
@@ -180,7 +180,7 @@ Script, facts, audit and package are done. Voiceover follows 009.
 - ⬜ **Voiceover (long)** — to do (with Cursor, due Wed 7 Oct (tomorrow))
 - ✅ **Shorts scripts** — done
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (in 2 d))
-- ⬜ **Picture** — to do (with Grok, due Sun 22 Nov (in 47 d))
+- ⬜ **Picture** — to do (with Claude, due Sun 22 Nov (in 47 d)): shot list: Claude is writing it next (no spend)
 - ⬜ **Edit + master** — to do (with Grok, due Thu 26 Nov (in 51 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 26 Nov (in 51 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 29 Nov (in 54 d))
