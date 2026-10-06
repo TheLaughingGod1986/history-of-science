@@ -433,10 +433,24 @@ function errorCopy(e, what){
       return `GitHub needs you to sign in again (claude.ai Settings → Connectors → GitHub) to read ${what}.`;
     case "not_granted": case "consent_required": case "approval_required":
       return `This page reads ${what} from GitHub only if you allow it: use this page's <b>Permissions</b> menu.`;
+    case "selection_required":
+      return `You have more than one GitHub connector. Choose one when this page asks (or reopen the page), so it can read ${what}.`;
     case "not_in_manifest": case "blocked_by_policy": case "capability_disabled": case "capability_removed":
       return `Live reading of ${what} is turned off for this page.`;
+    case "tool_error":
+      return `GitHub answered but refused to read ${what}${e.message?`: <span class="mono">${esc(e.message).slice(0,200)}</span>`:""}. Check that your GitHub connector can see the repository.`;
     default: return null;
   }
+}
+// The code behind every failure, so a screenshot says what went wrong.
+const errTag = e => ` <span class="mono" style="opacity:.7">(${esc(e.code||"error")}${e.message?": "+esc(String(e.message)).slice(0,140):""})</span>`;
+// One automatic retry per page load for retryable failures (e.g. the first call before consent settled).
+const retried = new Set();
+function retryOnce(mcp, key, e, input){
+  if(!e.retryable || retried.has(key)) return false;
+  retried.add(key);
+  setTimeout(()=>{ mcp.invalidate?.("github","get_file_contents",input).catch(()=>{}); }, (e.retryAfterMs||3000) + Math.random()*1500);
+  return true;
 }
 
 function watchOwb(mcp){
@@ -460,7 +474,8 @@ function watchOwb(mcp){
     } else {
       const e=ev.error||{}; if(e.code==="user_changed") return;
       const copy = errorCopy(e, "Orbit With Ben");
-      owb.msg = copy || "Couldn't reach Orbit With Ben on GitHub just now; it will try again.";
+      const again = retryOnce(mcp, "owb", e, {owner:OWB.owner, repo:OWB.repo, path:OWB.dir});
+      owb.msg = (copy || (again ? "Orbit With Ben: GitHub didn't answer; trying again in a few seconds." : "Couldn't read Orbit With Ben from GitHub; it tries again every 10 minutes, or tap Refresh.")) + errTag(e);
       if(copy && owb.state==="live"){ owb.files={}; if(OWB_SNAPSHOT) for(const j of OWB_SNAPSHOT) owb.files[j.film]=j; owb.state=OWB_SNAPSHOT?"snapshot":"error"; }
       else if(owb.state==="loading") owb.state = OWB_SNAPSHOT ? "snapshot" : "error";
       render();
@@ -468,13 +483,16 @@ function watchOwb(mcp){
   },{refetchInterval:600000});
 }
 
+const permBtn = ` <button class="btn" onclick="openPerms()">GitHub permissions</button>`;
+async function openPerms(){ try { const p = await window.claude?.use?.("permissions"); await p?.manage?.(); } catch(e) {} }
+
 let unsub = null;
 async function startLive(){
   let mcp = null;
   try { mcp = await window.claude?.use?.("mcp"); } catch(e){ mcp = null; }
   if(!mcp){ owb.state = OWB_SNAPSHOT ? "snapshot" : "error"; if(!OWB_SNAPSHOT) owb.msg = "Orbit With Ben shows only when this page can read GitHub live."; render(); return; }
   const btn=$("refresh"); btn.hidden=false;
-  btn.onclick = async()=>{ btn.disabled=true; try{ await mcp.invalidate?.("github","get_file_contents"); }catch(e){} setTimeout(()=>btn.disabled=false,1500); };
+  btn.onclick = async()=>{ btn.disabled=true; retried.clear(); try{ await mcp.invalidate?.("github","get_file_contents"); }catch(e){} setTimeout(()=>btn.disabled=false,1500); };
   unsub = mcp.watchTool("github","get_file_contents",HOS_REPO,ev=>{
     if(ev.type==="data"){
       const j = parsePipeline(ev.result);
@@ -483,8 +501,13 @@ async function startLive(){
     } else {
       const e=ev.error||{}; if(e.code==="user_changed"){ unsub&&unsub(); return; }
       const copy = errorCopy(e, "History of Science");
-      if(copy){ if(source==="live"){ data=SNAPSHOT; source="snapshot"; } banner(copy + " Showing the HOS snapshot."); render(); }
-      else { if(source==="live") source="stale"; banner("Couldn't reach GitHub just now. Showing the last good data; it will try again."); render(); }
+      if(copy){ if(source==="live"){ data=SNAPSHOT; source="snapshot"; } banner(copy + " Showing the HOS snapshot." + errTag(e) + permBtn); render(); }
+      else {
+        if(source==="live") source="stale";
+        const again = retryOnce(mcp, "hos", e, HOS_REPO);
+        banner((again ? "GitHub didn't answer; trying again in a few seconds." : "Couldn't read the board from GitHub. Showing the last good data; tap Refresh to try again.") + errTag(e) + permBtn);
+        render();
+      }
     }
   },{refetchInterval:300000});
   watchOwb(mcp);
