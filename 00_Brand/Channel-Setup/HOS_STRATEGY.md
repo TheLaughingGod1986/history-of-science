@@ -97,11 +97,11 @@ Candidates are in `VIDEO_BACKLOG.json`.
 - **Every long at 7 days:** impressions, CTR (judge only past about 500 impressions), average percentage viewed, and views from Shorts (Related).
 - **A weak upload is a result, not a re-upload.** Nothing public is remade or replaced.
 - Change one thing at a time across a week's Shorts, and keep what beats the previous week by 3 points or more.
-- Hold this strategy for four weeks (to 22 Oct); the 5 Oct Shorts feed rules (R1–R5) are additions, not a new lock. The only weekly question is whether stayed-to-watch went up. No new "locked" doc before then.
+- Hold this strategy for four weeks (to 22 Oct); the 5–6 Oct Shorts feed rules (R1–R5, R7, R8) are additions, not a new lock. The only weekly question is whether stayed-to-watch went up. No new "locked" doc before then.
 
 ### Shorts feed rules (Claude ruling, 5 Oct 2026)
 
-Mirrored from Orbit With Ben (`orbit-with-ben` `a909731`: `AGENTS.md` standing lesson 5 and `docs/ORBIT_PLAYBOOK_LESSONS.md` §6). Evidence: a YouTube Analytics read of 60 public Orbit Shorts after the Moon Short `dQlOgsDGmtA` stalled. On day 1 a Short is either fed by the Shorts feed or it isn't: fed Shorts (40) had a median of 85.5 day-1 views, 85% from the feed; not-fed Shorts (20) a median of 13, 15.5% from the feed. Retention did not separate them. Orbit's Moon run was fed for six Shorts, then stopped being fed.
+Mirrored from Orbit With Ben (`orbit-with-ben` `a909731`, plus R7 and R8 from `01880dc` on 6 Oct 2026: `AGENTS.md` standing lesson 5 and `docs/ORBIT_PLAYBOOK_LESSONS.md` §6). Evidence: a YouTube Analytics read of 60 public Orbit Shorts after the Moon Short `dQlOgsDGmtA` stalled. On day 1 a Short is either fed by the Shorts feed or it isn't: fed Shorts (40) had a median of 85.5 day-1 views, 85% from the feed; not-fed Shorts (20) a median of 13, 15.5% from the feed. Retention did not separate them. Orbit's Moon run was fed for six Shorts, then stopped being fed.
 
 | Rule | HOS form |
 |---|---|
@@ -110,5 +110,7 @@ Mirrored from Orbit With Ben (`orbit-with-ben` `a909731`: `AGENTS.md` standing l
 | **R3 · Own open** | Frame 0 shows the subject the title names; no opening background from the last 10 Shorts. `gate_shorts_open.py check` compares frame 0 with the last 10 Shorts as well as ±14 days. |
 | **R4 · Host never at frame 0** | Already HOS rule 6 above: the Explorer can arrive from about 1 s, never at frame 0. |
 | **R5 · Retention target** | Day-1 average viewed 60% or more. A target, not a gate. |
+| **R7 · Ending** | The last card shows the promoted long's **exact live title** (as well as at 9–14 s), and the Short's end link (on a Short, the Related video) points at **that long's id**. Never a generic "watch the full film". (Orbit `dQlOgsDGmtA`, Auditor 6 Oct: generic title, no long id.) |
+| **R8 · Music bed** | Every Short carries a music bed for its full length, under the VO and through the loop hold. A VO-only Short fails the ship gate. |
 
 R6 (re-uploads one at a time) is already covered: one Short a day, and a weak upload is a result, never a re-upload.

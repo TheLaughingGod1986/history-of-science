@@ -19,8 +19,10 @@ Full rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STU
   5. a hook caption on frame 0 (2–4 words, cap height about 8–10%, yellow hook word);
   6. **never the Explorer at frame 0.**
 - **On screen:** the promoted film's exact live title at 9–14 s. The last 4 s loop to the opening picture. Captions throughout.
+- **Ending (R7):** the last card also shows that long's exact live title, and the Related video points at that long's id. Never a generic "watch the full film".
+- **Music bed (R8):** a music bed for the full length, under the VO and through the loop hold. A VO-only Short fails the ship gate.
 - **Schedule:** one Short a day at most, never before its long is public; each Short in a week promotes a different film. **Topic fatigue (R2):** at most 6 in a row on one topic; stop after 2 not-fed in a row, then a 2-week break.
 - **Ship gate:** `python3 00_Brand/Channel-Setup/tools/gate_shorts_open.py check <mp4> --air-date YYYY-MM-DD` must PASS (frame 0 vs ±14 days and the last 10 Shorts). A motion warning means re-cut the opening. After upload, run `gate_shorts_open.py add …`.
 - **Studio:** Related video → the long this Short promotes. No pinned comment, zero `/go/`, a custom cover, altered content: yes.
 - **Measure:** stayed-to-watch at 48 h into `audits/SHORTS_LOG.md`. **Day 1 (R1, R5):** Shorts-feed share (50%+ = fed) and average viewed (target 60%+); under ~50 views, % viewed is noise. Reads after publishing, not ship gates. A weak Short is a result, never a re-upload.
-- Rules R1–R5: `HOS_STRATEGY.md` → *Shorts feed rules (Claude ruling, 5 Oct 2026)*.
+- Rules R1–R5, R7, R8: `HOS_STRATEGY.md` → *Shorts feed rules (Claude ruling, 5 Oct 2026)*.
