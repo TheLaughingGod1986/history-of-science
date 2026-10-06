@@ -11,7 +11,7 @@
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (23 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (30 d) | 53% | Picture (in progress) | **Cursor** · ⏸ waiting: Cursor to post today's Flow and Vertex balances (Tue resets) from the Mini; then Claude prices Parts 03–05 | 1/5 parts kept · about 3 weeks left · ETA Sun 25 Oct (in 19 d) | Sun 1 Nov (in 26 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (37 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 008 long VO) | starts later; due tomorrow | Sun 8 Nov (in 33 d) | 🟢 on track |
-| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (44 d) | 25% | Voiceover (long) (blocked) | **Ben** · ⛔ blocked: Mac Mini offline; Ben to wake it, then Cursor records (Grok is out of credit) | 0/5 parts passed · about half a day left · ETA Tue 6 Oct (today) | Sun 15 Nov (in 40 d) | ⛔ blocked |
+| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (44 d) | 25% | Voiceover (long) (in progress) | **Cursor** · ⏸ waiting: Cursor to post the vo_take dry run on the desk; Claude gives the go before any spend | 0/5 parts passed · about half a day left · ETA Tue 6 Oct (today) | Sun 15 Nov (in 40 d) | 🟢 on track |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (51 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (after 007 Shorts VO) | starts later; due tomorrow | Sun 22 Nov (in 47 d) | 🟢 on track |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (58 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (after 009 VO) | starts later; due tomorrow | Sun 29 Nov (in 54 d) | 🟢 on track |
 
@@ -26,22 +26,21 @@
 
 **Ben**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 008 Voiceover (long): Mac Mini offline; Ben to wake it, then Cursor records (Grok is out of credit)
 - ⏭ Next up: 006 Ben's final OK, due Sun 1 Nov; 007 Ben's final OK, due Sun 8 Nov; 008 Ben's final OK, due Sun 15 Nov
 
 **Cursor**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 006 Picture: Cursor to post today's Flow and Vertex balances (Tue resets) from the Mini; then Claude prices Parts 03–05
+- ⏸ Waiting: 006 Picture: Cursor to post today's Flow and Vertex balances (Tue resets) from the Mini; then Claude prices Parts 03–05; 008 Voiceover (long): Cursor to post the vo_take dry run on the desk; Claude gives the go before any spend
 - ⏭ Next up: 007 Shorts voiceover, due Wed 7 Oct; 009 Voiceover (long), due Wed 7 Oct; 010 Voiceover (long), due Wed 7 Oct
 
 ## Being worked on right now
 
 - **006** · 🔄 **Picture** — in progress (36%, 1/5 parts kept · about 3 weeks left · ETA Sun 25 Oct (in 19 d), with Cursor since Tue 6 Oct, ⏸ waiting: Cursor to post today's Flow and Vertex balances (Tue resets) from the Mini; then Claude prices Parts 03–05, due Sun 25 Oct (in 19 d)): Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets; pace set by Flow and Vertex credit
-- **008** · ⛔ **Voiceover (long)** — blocked (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (today), with Ben since Mon 5 Oct 19:57, ⛔ blocked: Mac Mini offline; Ben to wake it, then Cursor records (Grok is out of credit), due Tue 6 Oct (today)): not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review
+- **008** · 🔄 **Voiceover (long)** — in progress (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (today), with Cursor since Tue 6 Oct 22:30, ⏸ waiting: Cursor to post the vo_take dry run on the desk; Claude gives the go before any spend, due Tue 6 Oct (today)): not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review
 
 ## Next steps (in order)
 
-1. Ben: wake the Mac Mini. Grok is out of credit, so Cursor holds the write lane: it pulls main and records 008 part by part with vo_take.py; Claude checks each part.
+1. 008 long voiceover: the Mac Mini is up (6 Oct). Cursor posts the vo_take dry run, Claude says go, then Cursor records part by part; Claude checks each part.
 2. Shot lists for 007–010 are all written (Claude, no spend). Cursor sources each film's P1–P8 period details into its FACT_NOTES as a PR; Claude confirms.
 3. 007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.
 4. Tue 6 Oct: Flow and Google credit resets. Cursor posts the balances; Claude re-prices 006 Parts 03–05.
@@ -126,7 +125,7 @@ Script, facts and long voiceover are done. Shorts voiceover is queued; picture w
 
 `█████░░░░░░░░░░░░░░░` **25%**
 
-Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · ⛔ blocked
+Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · 🟢 on track
 
 Script, facts, audit and package are done. The long voiceover starts as soon as the Mac mini is back online.
 
@@ -134,7 +133,7 @@ Script, facts, audit and package are done. The long voiceover starts as soon as 
 - ✅ **Script** — done: v01, 92.1
 - ✅ **Fact check** — done
 - ✅ **Audit + upload package** — done
-- ⛔ **Voiceover (long)** — blocked (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (today), with Ben since Mon 5 Oct 19:57, ⛔ blocked: Mac Mini offline; Ben to wake it, then Cursor records (Grok is out of credit), due Tue 6 Oct (today)): not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review
+- 🔄 **Voiceover (long)** — in progress (0%, 0/5 parts passed · about half a day left · ETA Tue 6 Oct (today), with Cursor since Tue 6 Oct 22:30, ⏸ waiting: Cursor to post the vo_take dry run on the desk; Claude gives the go before any spend, due Tue 6 Oct (today)): not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review
 - ✅ **Shorts scripts** — done
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (in 2 d))
 - ⬜ **Picture** — to do (with Cursor, due Sun 8 Nov (in 33 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes

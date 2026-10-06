@@ -77,7 +77,7 @@
     }
   ],
   "next_steps": [
-    "Ben: wake the Mac Mini. Grok is out of credit, so Cursor holds the write lane: it pulls main and records 008 part by part with vo_take.py; Claude checks each part.",
+    "008 long voiceover: the Mac Mini is up (6 Oct). Cursor posts the vo_take dry run, Claude says go, then Cursor records part by part; Claude checks each part.",
     "Shot lists for 007–010 are all written (Claude, no spend). Cursor sources each film's P1–P8 period details into its FACT_NOTES as a PR; Claude confirms.",
     "007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.",
     "Tue 6 Oct: Flow and Google credit resets. Cursor posts the balances; Claude re-prices 006 Parts 03–05.",
@@ -301,8 +301,8 @@
           "status": "done"
         },
         "vo": {
-          "status": "blocked",
-          "owner": "Ben",
+          "status": "doing",
+          "owner": "Cursor",
           "due": "2026-10-06",
           "note": "not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review",
           "steps": [
@@ -312,8 +312,9 @@
           "steps_unit": "parts passed",
           "left": "about half a day",
           "eta": "2026-10-06",
-          "waiting": "Mac Mini offline; Ben to wake it, then Cursor records (Grok is out of credit)",
-          "since": "2026-10-05T19:57"
+          "waiting": "Cursor to post the vo_take dry run on the desk; Claude gives the go before any spend",
+          "since": "2026-10-06T22:30",
+          "underway": false
         },
         "shorts_scripts": {
           "status": "done"
