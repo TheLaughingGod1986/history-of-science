@@ -78,7 +78,7 @@
   ],
   "next_steps": [
     "Ben: wake the Mac Mini. Grok is out of credit, so Cursor holds the write lane: it pulls main and records 008 part by part with vo_take.py; Claude checks each part.",
-    "Claude (no spend, now): 008, then 009 and 010 picture shot lists, the way 007's was done.",
+    "Claude (no spend): 008 shot list done 6 Oct (P1–P8 to source, Cursor); 009 and 010 shot lists next.",
     "007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.",
     "Tue 6 Oct: Flow and Google credit resets. Cursor posts the balances; Claude re-prices 006 Parts 03–05.",
     "006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.",
@@ -325,8 +325,8 @@
         "picture": {
           "status": "todo",
           "due": "2026-11-08",
-          "owner": "Claude",
-          "note": "shot list being written by Claude (no spend); plates start after the whole VO batch passes"
+          "owner": "Cursor",
+          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes"
         },
         "edit": {
           "status": "todo",
@@ -382,7 +382,9 @@
         },
         "picture": {
           "status": "todo",
-          "due": "2026-11-15"
+          "due": "2026-11-15",
+          "owner": "Claude",
+          "note": "shot list: Claude is writing it now (no spend); plates start after the whole VO batch passes"
         },
         "edit": {
           "status": "todo",
