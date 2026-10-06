@@ -64,18 +64,18 @@ In one minute, the Moon falls about as far as an apple falls in one second. Isaa
 
 ## Short C — the comet that came back
 
-- **Frame 0:** a comet already blazing across a Christmas night sky over a snowy farmhouse (long Part 05 plate `comet_1758`).
+- **Frame 0:** a faint comet with a short soft tail already drifting across a telescope's circle of view, stars around it (long Part 05 plate `comet_1758`). It was faint when Palitzsch found it, and there's no source for snow, so it's never shown blazing (shot list P7, 6 Oct).
 - **Hook caption:** RIGHT ON **TIME**
-- **Change by 1 s:** the comet's tail brightens.
+- **Change by 1 s:** the comet glides into the centre of the circle and holds there.
 
 | s | Picture | Spoken |
 |---|---|---|
-| 0–2 | comet over the farmhouse | Edmond Halley predicted that a comet would come back in seventeen fifty-eight. |
+| 0–2 | the faint comet in the telescope's view | Edmond Halley predicted that a comet would come back in seventeen fifty-eight. |
 | 2–7 | Halley at his desk drawing an ellipse | He used Isaac Newton's new law of gravity to work out its path. |
 | 7–11 | a calendar flips past 1742 | Halley died sixteen years before it was due. |
 | 9–14 | **title on screen:** *Why Doesn't the Moon Fall to Earth?* |  |
 | 11–19 | a farmer-astronomer at a small telescope, Christmas 1758 | But on Christmas night, seventeen fifty-eight, a farmer looking through his telescope saw it appear, right on time. |
-| 19–24 | back to the comet (loop) | It has carried Halley's name ever since. |
+| 19–24 | back to the comet in the telescope's view (loop) | It has carried Halley's name ever since. |
 
 **Script (60 words):**
 
