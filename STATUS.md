@@ -22,7 +22,7 @@
 
 **Grok**
 - ▶️ Underway: nothing right now
-- ⏭ Next up: 006 Edit + master, due Thu 29 Oct; 007 Picture, due Sun 1 Nov; 008 Edit + master, due Thu 12 Nov
+- ⏭ Next up: 006 Edit + master, due Thu 29 Oct; 007 Edit + master, due Thu 5 Nov; 008 Edit + master, due Thu 12 Nov
 
 **Ben**
 - ▶️ Underway: nothing right now
@@ -116,7 +116,7 @@ Script, facts and long voiceover are done. Shorts voiceover is queued; picture w
 - ✅ **Voiceover (long)** — done: about 8.4 min; Part 01 v03 with the shut-up-house pickup
 - ✅ **Shorts scripts** — done
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Wed 7 Oct (tomorrow))
-- ⬜ **Picture** — to do (with Grok, due Sun 1 Nov (in 26 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates); all 8 period details checked 5 Oct (#222); starts after the voiceover batch passes
+- ⬜ **Picture** — to do (with Cursor, due Sun 1 Nov (in 26 d)): shot list v01 and plate boards drafted (07_Edit-Project/parts/, 60 rows: 57 mints, 3 reuses; all 8 period details checked 5 Oct). Next: Cursor re-times from the locked VO and prices from live balances; starts after the voiceover batch passes
 - ⬜ **Edit + master** — to do (with Grok, due Thu 5 Nov (in 30 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 5 Nov (in 30 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 8 Nov (in 33 d))
