@@ -100,8 +100,8 @@
     },
     {
       "pool": "Flow (picture)",
-      "left": "52 credits",
-      "rule": "Flow first for picture; account now shows 'Upgrade' instead of ULTRA — Ben to check the plan",
+      "left": "52 credits; refills 12 Oct",
+      "rule": "Flow first for picture; AI Ultra active (renews 12 Oct, Ben 7 Oct) — no picture spend before the refill",
       "checked": "7 Oct"
     }
   ],
