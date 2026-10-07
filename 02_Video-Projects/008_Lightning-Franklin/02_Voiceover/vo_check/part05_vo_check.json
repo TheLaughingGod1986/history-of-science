@@ -1,0 +1,17 @@
+{
+  "file": "02_Video-Projects/008_Lightning-Franklin/02_Voiceover/hos_008_part05_the_rod_on_every_roof_v01b.mp3",
+  "part": 5,
+  "fails": [],
+  "warns": [],
+  "duration_s": 130.78,
+  "duration": "2:10.78",
+  "mean_db": -23.1,
+  "peak_db": -4.1,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 344,
+  "heard_words": 344,
+  "wpm": 162,
+  "word_diffs": [],
+  "verdict": "PASS"
+}

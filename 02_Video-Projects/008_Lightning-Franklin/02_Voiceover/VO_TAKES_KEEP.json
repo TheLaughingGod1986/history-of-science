@@ -1,0 +1,63 @@
+{
+  "film": "008",
+  "script": "01_Script/lightning_script_master_v01.md",
+  "voice": "Ben Orbit Narrator / eleven_v3 / speed 1.04",
+  "locked": {
+    "01": {
+      "file": "hos_008_part01_fire_from_the_sky_v01b.mp3",
+      "sha256": "70d09944dc04d1a5875644fd42496cc25ba042e6ad7b2339ca20fa2678ba5cce",
+      "duration_s": 104.807,
+      "lufs": -20.5,
+      "scribe_pct": 100.0,
+      "vo_check": "PASS mean -24.2 dB peak -4.4 dB 143 wpm",
+      "note": "v01 + paragraph pause at 0:48.14 trimmed 1.513 s -> 0.8 s (rule a, Claude 6035721468)"
+    },
+    "02": {
+      "file": "hos_008_part02_the_sparks_in_a_jar_v01.mp3",
+      "sha256": "59daa3df240a20c098eb0a70f03133ef0e8fbf59a42abf790f8c91410720e7ed",
+      "duration_s": 90.64,
+      "lufs": -19.8,
+      "scribe_pct": 96.9,
+      "vo_check": "PASS mean -23.7 dB peak -4.0 dB 150 wpm",
+      "note": "v01; vo_check word FAIL on 'seventeen-forties' was the decade-word bug (fixed #251); now PASS (Claude 6035849928)"
+    },
+    "03": {
+      "file": "hos_008_part03_a_kite_in_the_storm_v01.mp3",
+      "sha256": "94ca02f76daa22b3a138ecd0977f9e69cff2a71ca270f62b4962a8398758c086",
+      "duration_s": 134.56,
+      "lufs": -20.4,
+      "scribe_pct": 100.0,
+      "vo_check": "FAIL mean -24.3 dB peak -4.3 dB 138 wpm",
+      "note": "v01; vo_check FAIL 'Marly' heard 'Mali' by small.en only; Scribe 100% and medium.en hear Marly: accepted, rule (d) (Claude 6036046520)"
+    },
+    "04": {
+      "file": "hos_008_part04_the_spark_from_the_key_v01.mp3",
+      "sha256": "4f2d3ddc133a9de2d718ee951d7b0f62d70d567d78701ee73642a791eeba1e01",
+      "duration_s": 94.0,
+      "lufs": -20.1,
+      "scribe_pct": 100.0,
+      "vo_check": "PASS mean -24.0 dB peak -4.2 dB 146 wpm",
+      "note": "v01; PASS (Leyden/laden, Richmann/rickman sound-alike warns; Scribe 100%) (Claude 6036122294)"
+    },
+    "05": {
+      "file": "hos_008_part05_the_rod_on_every_roof_v01b.mp3",
+      "sha256": "e5e86140d0b7e5598eb8eeca39d0f260c2dcc9b698b36c119a8c51283c990c38",
+      "duration_s": 130.784,
+      "lufs": -19.5,
+      "scribe_pct": 100.0,
+      "vo_check": "PASS mean -23.1 dB peak -4.1 dB 162 wpm",
+      "note": "v01 + pickup hos_008_part05_pickup_up_v01 for 'Fix an iron rod up the outside wall…' (v01 Scribe heard 'at'); vo_check, Scribe and medium.en all hear 'up' (Claude 6036122294)"
+    }
+  },
+  "total_duration_s": 554.79,
+  "spend": {
+    "tts_chars": 7497,
+    "breakdown": "1352 + 1229 + 1648 + 1262 + 1884 + pickup 122",
+    "scribe_calls": "one per take and per edit (0 chars)",
+    "pool_before": 73760,
+    "pool_after": 70237,
+    "floor": 40000,
+    "ledger": "LEDGER_ROWS_2026-10-07.jsonl"
+  },
+  "ts": "2026-10-07"
+}

@@ -1,0 +1,99 @@
+{
+  "stem": "hos_008_part02_the_sparks_in_a_jar_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6035539310",
+    "6035721468"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1229,
+      "duration_s": 90.64
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1229,
+  "words": 224,
+  "duration_s": 90.64,
+  "loudness": {
+    "lufs_integrated": -19.8,
+    "mean_volume_db": -23.3,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "59daa3df240a20c098eb0a70f03133ef0e8fbf59a42abf790f8c91410720e7ed",
+  "scribe": {
+    "transcript": "In the 1740s, electricity was a party trick. Traveling lecturers rubbed glass tubes with silk and made sparks fly from people's fingers and hair. Audiences paid to feel the shock. In Philadelphia, a printer called Benjamin Franklin saw one of these shows and could not stop thinking about it. He was so curious that he handed his printing business to a partner, so he would have time to study electricity. His most exciting tool was a new invention called a Leyden jar. It was a glass jar lined with metal foil, and it could store electricity, then let it all go at once in a bright spark with a loud crack. And that spark reminded Franklin of something, a flash of light, a crack of noise, a sharp smell in the air. It was like a tiny thunderstorm in a jar. So in November 1749, he wrote a list in his notebook, twelve ways a spark was just like lightning. They both gave light of the same color. They both moved in crooked lines. They both made a crack, set things on fire, and could kill animals. But a list of likenesses isn't proof. At the bottom of the page, Franklin wrote five famous words: \"Let the experiment be made.\" But how do you catch a bolt of lightning without it killing you?",
+    "script_words": 226,
+    "scribe_words": 223,
+    "match_rate_pct": 96.9,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "seventeen",
+          "forties"
+        ],
+        "scribe": [
+          "1740s"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "travelling"
+        ],
+        "scribe": [
+          "traveling"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "seventeen",
+          "forty",
+          "nine"
+        ],
+        "scribe": [
+          "1749"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "colour"
+        ],
+        "scribe": [
+          "color"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 136406,
+      "limit": 209536,
+      "remaining": 73130
+    },
+    "after": {
+      "used": 136982,
+      "limit": 209536,
+      "remaining": 72554
+    },
+    "counter_delta": 576
+  },
+  "text": "In the seventeen-forties, electricity was a party trick. Travelling lecturers rubbed glass tubes with silk and made sparks fly from people's fingers and hair. Audiences paid to feel the shock.\n\nIn Philadelphia, a printer called Benjamin Franklin saw one of these shows, and could not stop thinking about it. He was so curious that he handed his printing business to a partner, so he would have time to study electricity.\n\nHis most exciting tool was a new invention called a Leyden jar. It was a glass jar lined with metal foil, and it could store electricity, then let it all go at once, in a bright spark with a loud crack.\n\nAnd that spark reminded Franklin of something. A flash of light. A crack of noise. A sharp smell in the air. It was like a tiny thunderstorm in a jar.\n\nSo in November seventeen forty-nine, he wrote a list in his notebook. Twelve ways a spark was just like lightning. They both gave light of the same colour. They both moved in crooked lines. They both made a crack, set things on fire and could kill animals.\n\nBut a list of likenesses isn't proof. At the bottom of the page, Franklin wrote five famous words. Let the experiment be made.\n\nBut how do you catch a bolt of lightning, without it killing you?",
+  "made_at": "2026-10-07T11:15:47+0100"
+}
