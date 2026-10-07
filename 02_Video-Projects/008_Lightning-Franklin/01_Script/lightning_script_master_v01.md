@@ -35,8 +35,8 @@ So what was lightning? A punishment? A kind of fire? Or something else, somethin
 
 [CHAPTER CARD: The Sparks in a Jar · 1:25 · ~1.5 s]
 [VISUAL MUST: 1:28 — a fashionable room in the 1740s; a travelling lecturer rubs a glass tube with silk, and a guest's hair lifts towards it; the audience gasps and laughs · LABEL: ELECTRICITY · A PARTY TRICK]
-[VISUAL MUST: 1:45 — Philadelphia: a printer's shop with a press and stacks of paper; Benjamin Franklin (readable face, about forty-five, plain brown coat, long hair, small round spectacles pushed up) leaves the press to a younger partner and carries a glass tube into the back room · LABEL: BENJAMIN FRANKLIN · PHILADELPHIA]
-[VISUAL MUST: 2:05 — a glass jar lined inside and out with metal foil; a spark jumps from a brass rod in its lid to a fingertip with a loud snap · LABEL: THE LEYDEN JAR]
+[VISUAL MUST: 1:45 — Philadelphia: a printer's shop with a press and stacks of paper; Benjamin Franklin (readable face, about forty-five, plain brown coat, a plain short wig, no spectacles) leaves the press to a younger partner and carries a glass tube into the back room · LABEL: BENJAMIN FRANKLIN · PHILADELPHIA]
+[VISUAL MUST: 2:05 — a glass jar lined inside and out with metal foil; a spark jumps from the ring-topped wire through its cork stopper to a fingertip with a loud snap · LABEL: THE LEYDEN JAR]
 [VISUAL MUST: 2:30 — Franklin's notebook; a quill writes a numbered list down the page, 1 to 12; the words LET THE EXPERIMENT BE MADE appear at the bottom · LABEL: 7 NOVEMBER 1749]
 [EXPLORER ACTS: once. In Franklin's back room the Explorer reaches a cautious finger towards the foil jar, flinches at the snap of the spark, shakes his hand, then grins and does it again]
 [TEACH: Electricity could be stored in a Leyden jar and released as a spark. Franklin listed twelve ways a spark was like lightning, then said the idea had to be tested.]
@@ -59,7 +59,7 @@ But how do you catch a bolt of lightning, without it killing you?
 
 [CHAPTER CARD: A Kite in the Storm · 3:05 · ~1.5 s]
 [VISUAL MUST: 3:08 — a drawing on Franklin's desk: a small sentry-box on top of a tall tower, a long pointed iron rod rising from its roof into the clouds · LABEL: THE SENTRY-BOX]
-[VISUAL MUST: 3:25 — Marly, France, May 1752: in a garden, a tall iron rod stands on a wooden stool; a man holds a wire near it and a spark leaps across as storm clouds pass · LABEL: MARLY, FRANCE · MAY 1752]
+[VISUAL MUST: 3:25 — Marly, France, May 1752: in a garden, a tall iron rod held up by silk cords between three wooden poles rises from a small sentry box on a stool set on wine bottles; an old soldier holds a brass wire in a glass handle near it and a spark leaps across as storm clouds pass · LABEL: MARLY, FRANCE · MAY 1752]
 [VISUAL MUST: 3:45 — Franklin at his desk making a kite: a silk handkerchief stretched over two crossed cedar sticks, a sharp wire fixed to the top · LABEL: SILK · CEDAR · WIRE]
 [VISUAL MUST: 4:05 — a field at the edge of Philadelphia under a dark sky; William Franklin (readable face, young man about twenty-one, tricorn hat) runs and lifts the kite into the wind while his father watches from the doorway of a wooden shed · LABEL: JUNE 1752]
 [VISUAL MUST: 4:25 — the bottom of the string: rough hemp twine, an iron key tied where it meets a dry silk ribbon; Franklin holds only the ribbon, standing inside the shed out of the rain · LABEL: KEEP THE SILK DRY]
@@ -87,7 +87,7 @@ For a long time, nothing did. Then Franklin noticed the loose threads of the twi
 [VISUAL MUST: 5:03 — extreme close-up: loose fibres on the wet twine lift and spread apart like the hairs on an arm · LABEL: THE THREADS STAND UP]
 [VISUAL MUST: 5:15 — Franklin slowly brings his knuckle towards the iron key; a small blue spark leaps the gap with a snap · LABEL: A SPARK]
 [VISUAL MUST: 5:30 — Franklin touches the key to the brass rod of a Leyden jar; then a second hand brings a wire near the jar, and the same spark jumps out of it · LABEL: LIGHTNING IN A JAR]
-[VISUAL MUST: 5:55 — the front page of the Pennsylvania Gazette, 19 October 1752, with a column describing the kite · LABEL: PENNSYLVANIA GAZETTE · 1752]
+[VISUAL MUST: 5:55 — an inside page of the Pennsylvania Gazette, 19 October 1752, with a short column describing the kite · LABEL: PENNSYLVANIA GAZETTE · 1752]
 [VISUAL MUST: 6:15 — a calm teach card: a storm cloud, a kite well below it, and gentle lines of charge running down the wet string; no bolt touches the kite · LABEL: NO BOLT, JUST CHARGE]
 [TEACH: The kite was never struck by lightning. It collected electric charge from the storm cloud, which ran down the wet string to the key. That charge behaved exactly like electricity from a jar.]
 

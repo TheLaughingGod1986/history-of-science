@@ -82,7 +82,7 @@ But an idea isn't proof. If the same pull holds the Moon and drops the apple, Ne
 [VISUAL MUST: 4:52 — a hand sprays paint at a wall from close up, a small dark spot; then from twice as far, a patch four times as big and paler · LABEL: TWICE AS FAR, A QUARTER AS STRONG]
 [VISUAL MUST: 5:00 — a square of 60 by 60 small dots fills the screen, then shrinks the pull arrow on the Moon to one tiny dot · LABEL: 3,600 TIMES WEAKER]
 [VISUAL MUST: 5:20 — split screen: on the left, an apple falls for one second beside a ruler; on the right, the Moon falls for one minute along its curve; both drop the same distance · LABEL: 1 MINUTE = 1 SECOND]
-[VISUAL MUST: 5:45 — Cambridge, 1684: a visitor (readable face: Edmond Halley, about twenty-eight, fair wig, travelling coat) sits across from an older Newton in his rooms, books piled everywhere · LABEL: EDMOND HALLEY · 1684]
+[VISUAL MUST: 5:45 — Cambridge, 1684: a visitor (readable face: Edmond Halley, about twenty-eight, long dark natural hair, travelling coat) sits across from an older Newton in his rooms, books piled everywhere · LABEL: EDMOND HALLEY · 1684]
 [VISUAL MUST: 6:10 — a London printer's shop, 1687; a thick book comes off the press; its title page reads PHILOSOPHIAE NATURALIS PRINCIPIA MATHEMATICA · LABEL: PRINCIPIA · 1687]
 [TEACH: The Moon is about sixty times further from the Earth's centre than we are, so the Earth's pull on it is about 3,600 times weaker. Newton showed that this weaker pull is exactly what keeps the Moon in its orbit.]
 

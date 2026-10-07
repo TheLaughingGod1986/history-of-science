@@ -94,15 +94,15 @@
     },
     {
       "pool": "Vertex free trial (picture)",
-      "left": "≈£23 usable",
+      "left": "£25.59 (11%)",
       "rule": "never past £0, keep £5 buffer; trial ends 10 Nov",
-      "checked": "4 Oct"
+      "checked": "7 Oct"
     },
     {
       "pool": "Flow (picture)",
-      "left": "resets Tue 6 Oct",
-      "rule": "Flow first for picture",
-      "checked": "—"
+      "left": "52 credits",
+      "rule": "Flow first for picture; account now shows 'Upgrade' instead of ULTRA — Ben to check the plan",
+      "checked": "7 Oct"
     }
   ],
   "films": [
