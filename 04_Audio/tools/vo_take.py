@@ -37,17 +37,20 @@ from hos_voice import MODEL_ID, VOICE_ID, VOICE_NAME, VOICE_SETTINGS  # noqa: E4
 # ---------- pure helpers (tested in test_vo_take.py) ----------
 
 def spoken_chapters(markdown: str) -> list[dict]:
-    """Split a script master into spoken chapters. Keeps prose only: drops headings, [MARKER] lines and comments.
+    """Split a script master into spoken chapters. Keeps prose only: drops headings, [MARKER] lines, table rows and
+    comments, and stops at the first `---` rule (the notes and FACT_NOTES claims below it are never spoken).
     A new chapter starts at each [CHAPTER CARD: …]; the text before the first card is the open. Paragraphs are
     joined with a blank line."""
     markdown = re.sub(r"<!--.*?-->", "", markdown, flags=re.S)
     chapters = [{"title": "open", "paras": [[]]}]
     for raw in markdown.splitlines():
         line = raw.strip()
+        if re.fullmatch(r"-{3,}|\*{3,}|_{3,}", line):
+            break
         card = re.match(r"\[CHAPTER CARD:\s*(.+?)\]\s*$", line)
         if card:
             chapters.append({"title": card.group(1).strip(), "paras": [[]]})
-        elif not line or line.startswith("#") or line.startswith("["):
+        elif not line or line.startswith(("#", "[", "|")):
             chapters[-1]["paras"].append([])  # markers and blanks end a paragraph
         else:
             chapters[-1]["paras"][-1].append(line)
