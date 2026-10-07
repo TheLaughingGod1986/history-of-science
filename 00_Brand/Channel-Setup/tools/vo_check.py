@@ -102,7 +102,13 @@ def script_lines(script: Path, part: int | None) -> list[str]:
         chunks = re.split(r"^## PART \d+.*$", text, flags=re.M)
         # chunks[0] is the title block; chunk N is part N
         text = chunks[part] if part < len(chunks) else ""
-    return [l for l in text.splitlines() if l.strip() and not re.match(r"\s*(#|\[|<!--)", l)]
+    lines = []
+    for l in text.splitlines():
+        if re.fullmatch(r"\s*(-{3,}|\*{3,}|_{3,})\s*", l):
+            break  # everything after a horizontal rule (FACT_NOTES claims, sources) is notes, not spoken
+        if l.strip() and not re.match(r"\s*(#|\[|<!--|\|)", l):
+            lines.append(l)
+    return lines
 
 
 def norm(text: str) -> list[str]:

@@ -31,5 +31,17 @@ class Norm(unittest.TestCase):
         self.assertNotEqual(vo_check.norm("in the forties"), vo_check.norm("in the fortress"))
 
 
+class ScriptLines(unittest.TestCase):
+    def test_notes_after_rule_are_not_spoken(self):
+        # 008 Part 05, 7 Oct 2026: the FACT_NOTES table after the last part's "---" was read as script (421 wpm)
+        import tempfile
+        md = ("# Title\n\n## PART 01: One\n\nFirst line.\n\n## PART 02: Two\n\n[CHAPTER CARD: Two]\n\nLast line.\n"
+              "| stray | table |\n\n---\n\n## New claims for FACT_NOTES\n\n| Claim | Source |\n|---|---|\n| x | y |\n\nA note.\n")
+        with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False) as f:
+            f.write(md)
+        self.assertEqual(vo_check.script_lines(Path(f.name), 2), ["Last line."])
+        self.assertEqual(vo_check.script_lines(Path(f.name), 1), ["First line."])
+
+
 if __name__ == "__main__":
     unittest.main()
