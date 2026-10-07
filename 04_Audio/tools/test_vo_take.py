@@ -70,6 +70,14 @@ class Checks(unittest.TestCase):
         self.assertTrue(vo_take.verdict(good, -50.0).startswith("FAIL"))
         self.assertTrue(vo_take.verdict(good, None).startswith("FAIL"))
 
+    def test_loudness_reads_summary_not_first_frame(self):
+        err = ("[Parsed_ebur128_1 @ 0x1] t: 0.0999 TARGET:-23 LUFS M: -120.7 S:-120.7 I: -70.0 LUFS LRA: 0.0 LU\n"
+               "[Parsed_ebur128_1 @ 0x1] t: 105.5 TARGET:-23 LUFS M: -19.2 S: -20.1 I: -20.9 LUFS LRA: 6.1 LU\n"
+               "[Parsed_volumedetect_0 @ 0x2] mean_volume: -24.3 dB\n[Parsed_volumedetect_0 @ 0x2] max_volume: -4.4 dB\n"
+               "[Parsed_ebur128_1 @ 0x1] Summary:\n\n  Integrated loudness:\n    I:         -20.9 LUFS\n")
+        self.assertEqual(vo_take.parse_loudness(err), {"lufs_integrated": -20.9, "mean_volume_db": -24.3,
+                                                       "max_volume_db": -4.4})
+
     def test_floor(self):
         self.assertIsNone(vo_take.spend_check(77_155, 6_300, 50_000))
         self.assertIn("STOP", vo_take.spend_check(52_000, 6_300, 50_000))
