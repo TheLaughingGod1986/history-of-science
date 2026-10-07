@@ -19,6 +19,7 @@
 
 **Claude**
 - ▶️ Underway: nothing right now
+- ⏭ Next up: 007 Picture, due Sun 1 Nov
 
 **Grok**
 - ▶️ Underway: nothing right now
@@ -115,7 +116,7 @@ Script, facts and long voiceover are done. Shorts voiceover is queued; picture w
 - ✅ **Voiceover (long)** — done: about 8.4 min; Part 01 v03 with the shut-up-house pickup
 - ✅ **Shorts scripts** — done
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Wed 7 Oct (today))
-- ⬜ **Picture** — to do (with Cursor, due Sun 1 Nov (in 25 d)): shot list v01 and plate boards drafted (07_Edit-Project/parts/, 60 rows: 57 mints, 3 reuses; all 8 period details checked 5 Oct). Next: Cursor re-times from the locked VO and prices from live balances; starts after the voiceover batch passes
+- ⬜ **Picture** — to do (with Claude since Wed 7 Oct, due Sun 1 Nov (in 25 d)): plate boards BOARD_V01: re-timed from the locked VO (8:32) and priced 7 Oct (96 rows: 80 mints = 25 Quality + 55 Fast, 2 of them on Flow, 16 reuses; 36 rows added because the VO runs longer than the script's estimate). First takes about £58, about £139 with usual retakes, against £20.59 usable Vertex. Waits for Claude's review, the voiceover batch and credit; nothing minted
 - ⬜ **Edit + master** — to do (with Grok, due Thu 5 Nov (in 29 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 5 Nov (in 29 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 8 Nov (in 32 d))

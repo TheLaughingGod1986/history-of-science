@@ -1,0 +1,576 @@
+{
+  "film": "007_The-First-Vaccine",
+  "written": "2026-10-07",
+  "task": "Claude desk PR #180, 7 Oct 2026: re-time and price the 007 plate boards; mint nothing",
+  "vertex_balance_gbp": 25.59,
+  "buffer_gbp": 5.0,
+  "floor_gbp": 20.59,
+  "flow": {
+    "credits_left": 52,
+    "fast_credits_per_take": 10,
+    "plates": [
+      "P1:04_church_dusk",
+      "P2:08a_berkeley"
+    ],
+    "credits_planned": 40,
+    "note": "Flow credits are shared with 006 (on hold)."
+  },
+  "rates": {
+    "vertex_usd_per_s": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "usd_per_still": 0.039,
+    "gbp_per_usd_planning": 0.8,
+    "takes_per_keep_005": {
+      "Quality": 2.59,
+      "Fast": 1.96
+    },
+    "stills_per_plate_005": 2.28
+  },
+  "vo_film_total_s": 512.15,
+  "totals": {
+    "rows": 96,
+    "mints": 80,
+    "Quality": 25,
+    "Fast": 55,
+    "reuse": 16,
+    "flow": 2,
+    "added": 36,
+    "vertex_s": {
+      "Quality": 190,
+      "Fast": 348
+    },
+    "try1_gbp": 58.24,
+    "expected_gbp": 139.01
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "rows": 20,
+      "Quality": 4,
+      "Fast": 14,
+      "reuse": 2,
+      "added": 8,
+      "flow": 1,
+      "try1_gbp": 11.84,
+      "expected_gbp": 27.48
+    },
+    {
+      "part": 2,
+      "rows": 22,
+      "Quality": 6,
+      "Fast": 15,
+      "reuse": 1,
+      "added": 8,
+      "flow": 1,
+      "try1_gbp": 15.52,
+      "expected_gbp": 36.73
+    },
+    {
+      "part": 3,
+      "rows": 15,
+      "Quality": 3,
+      "Fast": 10,
+      "reuse": 2,
+      "added": 6,
+      "flow": 0,
+      "try1_gbp": 8.8,
+      "expected_gbp": 20.41
+    },
+    {
+      "part": 4,
+      "rows": 20,
+      "Quality": 3,
+      "Fast": 12,
+      "reuse": 5,
+      "added": 8,
+      "flow": 0,
+      "try1_gbp": 8.96,
+      "expected_gbp": 20.86
+    },
+    {
+      "part": 5,
+      "rows": 19,
+      "Quality": 9,
+      "Fast": 4,
+      "reuse": 6,
+      "added": 6,
+      "flow": 0,
+      "try1_gbp": 13.12,
+      "expected_gbp": 33.53
+    }
+  ],
+  "top_up_needed_gbp": 118.42,
+  "beyond_floor": [
+    {
+      "key": "P1:10_variolation",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 21.13
+    },
+    {
+      "key": "P1:10b_milder",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 22.45
+    },
+    {
+      "key": "P1:10c_doors_close",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 23.78
+    },
+    {
+      "key": "P1:11_mother_window",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 25.1
+    },
+    {
+      "key": "P1:11b_child_cot",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 26.11
+    },
+    {
+      "key": "P1:12_farm_gate",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 27.44
+    },
+    {
+      "key": "P2:01_milking_dawn",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 30.83
+    },
+    {
+      "key": "P2:02_healed_hand",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 34.21
+    },
+    {
+      "key": "P2:02b_well_again",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 35.22
+    },
+    {
+      "key": "P2:04_village_a",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 36.24
+    },
+    {
+      "key": "P2:02c_laughs",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 37.25
+    },
+    {
+      "key": "P2:03a_cap_and_pail",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 38.57
+    },
+    {
+      "key": "P2:03_market_walk",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 39.9
+    },
+    {
+      "key": "P2:05_village_b",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 40.91
+    },
+    {
+      "key": "P2:06_jesty_family",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 44.3
+    },
+    {
+      "key": "P2:06b_jesty_hands",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 45.62
+    },
+    {
+      "key": "P2:07_jesty_table",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 46.95
+    },
+    {
+      "key": "P2:08_jenner_window",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 50.33
+    },
+    {
+      "key": "P2:09_cuckoo",
+      "quality": "Fast",
+      "clip_s": 4,
+      "expected_gbp": 0.7,
+      "cum_expected_gbp": 51.03
+    },
+    {
+      "key": "P2:10_balloon",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 54.42
+    },
+    {
+      "key": "P2:10b_pail_on_desk",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 55.43
+    },
+    {
+      "key": "P2:11_young_jenner",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 56.76
+    },
+    {
+      "key": "P2:12_hunter_letter",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 58.08
+    },
+    {
+      "key": "P2:12b_try_it",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 59.41
+    },
+    {
+      "key": "P2:13_casebook",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 60.73
+    },
+    {
+      "key": "P2:14_explorer_stool",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 64.12
+    },
+    {
+      "key": "P3:01a_garden_path",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 65.13
+    },
+    {
+      "key": "P3:01_sarah_nelmes",
+      "quality": "Quality",
+      "clip_s": 6,
+      "expected_gbp": 2.56,
+      "cum_expected_gbp": 67.69
+    },
+    {
+      "key": "P3:02_cow_from_lane",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 69.02
+    },
+    {
+      "key": "P3:03_phipps_stool",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 72.4
+    },
+    {
+      "key": "P3:03b_lancet_case",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 73.41
+    },
+    {
+      "key": "P3:04_lancet_touch",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 76.8
+    },
+    {
+      "key": "P3:05_quill_writes",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 78.13
+    },
+    {
+      "key": "P3:05b_week_passes",
+      "quality": "Fast",
+      "clip_s": 4,
+      "expected_gbp": 0.7,
+      "cum_expected_gbp": 78.82
+    },
+    {
+      "key": "P3:06_mild_fever",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 79.84
+    },
+    {
+      "key": "P3:07_playing_garden",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 81.16
+    },
+    {
+      "key": "P3:08_jenner_thinks",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 82.17
+    },
+    {
+      "key": "P3:08b_uneasy_hand",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 83.18
+    },
+    {
+      "key": "P3:09_casebook_open",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 84.51
+    },
+    {
+      "key": "P4:01_page_turns",
+      "quality": "Fast",
+      "clip_s": 4,
+      "expected_gbp": 0.7,
+      "cum_expected_gbp": 85.21
+    },
+    {
+      "key": "P4:02_variolation_calm",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 88.6
+    },
+    {
+      "key": "P4:03_waiting",
+      "quality": "Quality",
+      "clip_s": 6,
+      "expected_gbp": 2.56,
+      "cum_expected_gbp": 91.15
+    },
+    {
+      "key": "P4:04_day_one",
+      "quality": "Fast",
+      "clip_s": 4,
+      "expected_gbp": 0.7,
+      "cum_expected_gbp": 91.85
+    },
+    {
+      "key": "P4:05_days_pass",
+      "quality": "Fast",
+      "clip_s": 4,
+      "expected_gbp": 0.7,
+      "cum_expected_gbp": 92.55
+    },
+    {
+      "key": "P4:06_line_underlined",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 93.56
+    },
+    {
+      "key": "P4:06b_still_nothing",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 94.57
+    },
+    {
+      "key": "P4:08_soho_press",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 95.59
+    },
+    {
+      "key": "P4:08b_title_page",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 96.6
+    },
+    {
+      "key": "P4:12_explorer_press",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 99.98
+    },
+    {
+      "key": "P4:08d_doctors_scoff",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 101.0
+    },
+    {
+      "key": "P4:09_satire",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 102.01
+    },
+    {
+      "key": "P4:10a_packets",
+      "quality": "Fast",
+      "clip_s": 4,
+      "expected_gbp": 0.7,
+      "cum_expected_gbp": 102.71
+    },
+    {
+      "key": "P4:10_garden_hut",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 104.03
+    },
+    {
+      "key": "P4:11_news_spreads",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 105.36
+    },
+    {
+      "key": "P5:01_pasteur_1881",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 108.74
+    },
+    {
+      "key": "P5:09_meadow_golden",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 112.13
+    },
+    {
+      "key": "P5:04_health_workers",
+      "quality": "Quality",
+      "clip_s": 6,
+      "expected_gbp": 2.56,
+      "cum_expected_gbp": 114.69
+    },
+    {
+      "key": "P5:05_kit_opens",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 116.01
+    },
+    {
+      "key": "P5:03_globe_lights",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 119.4
+    },
+    {
+      "key": "P5:06_assembly_1980",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 122.79
+    },
+    {
+      "key": "P5:08_body_learns",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 126.17
+    },
+    {
+      "key": "P5:07_childs_arm",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 129.56
+    },
+    {
+      "key": "P5:07c_playground",
+      "quality": "Fast",
+      "clip_s": 8,
+      "expected_gbp": 1.33,
+      "cum_expected_gbp": 130.88
+    },
+    {
+      "key": "P5:10_history_book",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 131.9
+    },
+    {
+      "key": "P5:13_explorer_meadow",
+      "quality": "Quality",
+      "clip_s": 8,
+      "expected_gbp": 3.39,
+      "cum_expected_gbp": 135.28
+    },
+    {
+      "key": "P5:11b_storm_builds",
+      "quality": "Fast",
+      "clip_s": 6,
+      "expected_gbp": 1.01,
+      "cum_expected_gbp": 136.29
+    },
+    {
+      "key": "P5:12_kite_storm",
+      "quality": "Quality",
+      "clip_s": 6,
+      "expected_gbp": 2.56,
+      "cum_expected_gbp": 138.85
+    }
+  ]
+}
