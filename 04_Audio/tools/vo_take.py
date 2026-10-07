@@ -108,12 +108,17 @@ def duration(path: Path) -> float:
                                           "-of", "default=noprint_wrappers=1:nokey=1", str(path)], text=True))
 
 
+def parse_loudness(err: str) -> dict:
+    """ebur128 logs a running `I:` on every frame before its Summary; only the last one is the integrated value."""
+    last = lambda rx: (lambda ms: float(ms[-1]) if ms else None)(re.findall(rx, err))
+    return {"lufs_integrated": last(r"I:\s+(-?[\d.]+)\s+LUFS"), "mean_volume_db": last(r"mean_volume: (-?[\d.]+)"),
+            "max_volume_db": last(r"max_volume: (-?[\d.]+)")}
+
+
 def loudness(path: Path) -> dict:
     err = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(path), "-af", "volumedetect,ebur128",
                           "-f", "null", "-"], capture_output=True, text=True, errors="replace").stderr
-    num = lambda rx: (lambda m: float(m.group(1)) if m else None)(re.search(rx, err))
-    return {"lufs_integrated": num(r"I:\s+(-?[\d.]+)\s+LUFS"), "mean_volume_db": num(r"mean_volume: (-?[\d.]+)"),
-            "max_volume_db": num(r"max_volume: (-?[\d.]+)")}
+    return parse_loudness(err)
 
 
 def credits(token, mode):
