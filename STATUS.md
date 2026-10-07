@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Wed 7 Oct 2026**, updated by Cursor (write lane). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Wed 7 Oct 2026**, updated by Claude (desk reviewer). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -42,7 +42,7 @@
 
 1. 008 long voiceover: the Mac Mini is up (6 Oct). Cursor posts the vo_take dry run, Claude says go, then Cursor records part by part; Claude checks each part.
 2. Shot lists for 007–010 are all written (Claude, no spend). Cursor sources each film's P1–P8 period details into its FACT_NOTES as a PR; Claude confirms.
-3. 007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; stop at the 50k floor.
+3. 007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; floor lowered to 40k until the 30 Oct reset (Ben, 7 Oct) so 010 fits.
 4. Tue 6 Oct: Flow and Google credit resets. Cursor posts the balances; Claude re-prices 006 Parts 03–05.
 5. 006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.
 6. 007 picture: shot list v01 is ready (about 58 plates). Its 8 period details are checked (5 Oct). Next the write lane builds the priced plate boards; spend starts once the whole voiceover batch has passed.
@@ -52,7 +52,7 @@
 
 | Pool | Left | Rule | Checked |
 |---|---|---|---|
-| ElevenLabs (voice) | ≈77k of 209.5k | voice only; stop at 50k; resets Fri 30 Oct | 5 Oct |
+| ElevenLabs (voice) | 73,760 of 209,536 | voice only; floor 40k until the Fri 30 Oct reset (Ben, 7 Oct), then 50k | 7 Oct |
 | Vertex free trial (picture) | ≈£23 usable | never past £0, keep £5 buffer; trial ends 10 Nov | 4 Oct |
 | Flow (picture) | resets Tue 6 Oct | Flow first for picture | — |
 
