@@ -43,12 +43,29 @@ WPM_WARN = 145
 # sides before the diff (the script spells them out, the transcriber writes digits).
 ALIASES = {"thompson": "thomson", "thompson's": "thomson's", "center": "centre", "st": "saint",
            "dimitri": "dmitri", "vandenbroek": "van den broek", "vandenbroek's": "van den broek's",
-           "schoolteacher": "school teacher", "p": "pea", "pee": "pea", "dmitry": "dmitri"}
+           "schoolteacher": "school teacher", "p": "pea", "pee": "pea", "dmitry": "dmitri", "leiden": "leyden"}
+# The transcriber writes US spellings; the script is UK (008 Part 02: traveling, color).
+ALIASES |= {us: uk for uk, us in (
+    ("colour", "color"), ("colours", "colors"), ("coloured", "colored"), ("favour", "favor"),
+    ("favourite", "favorite"), ("honour", "honor"), ("labour", "labor"), ("neighbour", "neighbor"),
+    ("neighbours", "neighbors"), ("behaviour", "behavior"), ("humour", "humor"), ("rumour", "rumor"),
+    ("vapour", "vapor"), ("harbour", "harbor"), ("armour", "armor"), ("splendour", "splendor"),
+    ("travelling", "traveling"), ("travelled", "traveled"), ("traveller", "traveler"),
+    ("travellers", "travelers"), ("modelled", "modeled"), ("labelled", "labeled"), ("signalled", "signaled"),
+    ("grey", "gray"), ("theatre", "theater"), ("centre", "center"), ("metre", "meter"), ("metres", "meters"),
+    ("fibre", "fiber"), ("litre", "liter"), ("sceptic", "skeptic"), ("sceptical", "skeptical"),
+    ("mould", "mold"), ("plough", "plow"), ("jewellery", "jewelry"), ("aluminium", "aluminum"),
+    ("sulphur", "sulfur"), ("defence", "defense"), ("offence", "offense"), ("programme", "program"),
+    ("analyse", "analyze"), ("analysed", "analyzed"), ("realise", "realize"), ("realised", "realized"),
+    ("recognise", "recognize"), ("recognised", "recognized"), ("organise", "organize"),
+    ("organised", "organized"), ("apologise", "apologize"), ("criticise", "criticize"))}
 NUMBER_WORDS = set(("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen "
                     "fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty "
                     "ninety hundred thousand oh").split())
 # Whisper writes "seventeenth" as "17th" and "the sixteen-hundreds" as "1600s"; drop both spellings.
 NUMBER_WORDS |= {w + "s" for w in ("hundred", "thousand")}
+# "the seventeen-forties" is heard as "1740s" (008 Part 02, 7 Oct 2026).
+NUMBER_WORDS |= set("teens twenties thirties forties fifties sixties seventies eighties nineties".split())
 NUMBER_WORDS |= set(("third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth thirteenth fourteenth "
                      "fifteenth sixteenth seventeenth eighteenth nineteenth twentieth thirtieth").split())
 NUMERAL = re.compile(r"^\d+(st|nd|rd|th|s)?$")

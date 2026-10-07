@@ -29,6 +29,7 @@ run "no media" test -z "$media"
 
 run "status board in sync" python3 00_Brand/Channel-Setup/tools/status_board.py --check
 run "ElevenLabs guard tests" python3 04_Audio/tools/test_el_guard.py
+run "vo_check word tests" python3 00_Brand/Channel-Setup/tools/test_vo_check.py
 
 cd "$ROOT/07_Content-Ops"
 run "contract tests" npx vitest run tests/hos-contract.test.ts
