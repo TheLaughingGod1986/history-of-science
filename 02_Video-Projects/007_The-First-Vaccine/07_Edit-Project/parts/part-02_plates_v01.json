@@ -17,7 +17,7 @@
     "treatment": "soft cross-fade after the part's end + 0.6 s breath; music continues"
   },
   "set_language": "Gentle Georgian Gloucestershire, 1770s-1790s: soft green hills and hedgerows, stone cottages with shutters, a timber dairy byre with wooden pails, Jenner's panelled study in Berkeley with a garden window, a Soho hand-press shop in 1798; painted-parchment maps and globe; an 1881 Victorian lecture theatre and a plain 1980 assembly hall. One brown-and-white cow (the same cow every time).",
-  "explorer_lock": "ONE beat (02_explorer_stool): kneels by a milking stool, peers at the healed hand, then the cow, scratches his head and hurries off. Never at a Short's frame 0.",
+  "explorer_lock": "ONE beat (14_explorer_stool): kneels by a milking stool, peers at the healed hand, then the cow, scratches his head and hurries off. Never at a Short's frame 0.",
   "explorer_plates": 1,
   "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; sores, pus, rashes, blood, wounds or needles in skin (cowpox and smallpox are never shown as marks beyond two or three soft healed round marks on a hand); plague imagery (crosses on doors, carts of bodies, sick people); readable text, numbers or logos baked into the plate (VACCA, VACCINE, dates, the case-book, the Inquiry title page, headlines and board text are overlays in the edit); garbled writing; unfinished flat cards; unfinished Explorer hair; twin Explorer; Explorer at a Short's frame 0; a flame, lamp or glow on a Fast plate; a gavel (P7); Pasteur in a skullcap at the lectern (P5). Never say 'same DNA' or 'lab DNA' in a Veo prompt.",
   "always_fails": [
