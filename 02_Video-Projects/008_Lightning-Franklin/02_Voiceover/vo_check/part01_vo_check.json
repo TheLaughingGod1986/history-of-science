@@ -1,0 +1,44 @@
+{
+  "file": "02_Video-Projects/008_Lightning-Franklin/02_Voiceover/hos_008_part01_fire_from_the_sky_v01b.mp3",
+  "part": 1,
+  "fails": [],
+  "warns": [
+    "pace 143 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed"
+  ],
+  "duration_s": 104.81,
+  "duration": "1:44.81",
+  "mean_db": -24.2,
+  "peak_db": -4.4,
+  "pauses_over_1s": [
+    [
+      17.95,
+      1.25
+    ],
+    [
+      32.02,
+      1.24
+    ],
+    [
+      66.69,
+      1.43
+    ],
+    [
+      86.78,
+      1.07
+    ],
+    [
+      95.01,
+      1.27
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 240,
+  "heard_words": 240,
+  "wpm": 143,
+  "word_diffs": [],
+  "first_minute": {
+    "title_question": 96.14,
+    "promise": 19.08
+  },
+  "verdict": "PASS"
+}

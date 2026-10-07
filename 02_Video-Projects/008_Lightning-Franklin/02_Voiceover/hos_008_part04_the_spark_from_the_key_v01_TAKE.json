@@ -1,0 +1,59 @@
+{
+  "stem": "hos_008_part04_the_spark_from_the_key_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6035539310",
+    "6036046520"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1262,
+      "duration_s": 94.0
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1262,
+  "words": 228,
+  "duration_s": 94.0,
+  "loudness": {
+    "lufs_integrated": -20.1,
+    "mean_volume_db": -23.5,
+    "max_volume_db": -3.8
+  },
+  "sha256_mp3": "4f2d3ddc133a9de2d718ee951d7b0f62d70d567d78701ee73642a791eeba1e01",
+  "scribe": {
+    "transcript": "Slowly, Franklin brought his knuckle close to the key. A spark jumped across with a tiny snap, exactly the kind of spark he had made a thousand times in his own room. Then he touched the key to his Leyden jar and filled it with electricity from the sky. It behaved in every way like the electricity he made with glass and silk. Lightning and the spark in the jar were the same thing, electricity. And here is the part that most people get wrong. The kite was never struck by lightning. If it had been, Franklin would almost certainly have died. Instead, the kite gathered a little of the storm's electric charge, which ran quietly down the wet string to the key. It was still dangerous. The next summer, a scientist in Russia called Georg Richmann was trying a similar experiment with a rod during a storm, and he was killed. Franklin had been careful and lucky. In October, Franklin published how to do the kite experiment in his own newspaper. His letters were read at The Royal Society in London, and the next year it gave him its highest award, the Copley Medal. But Franklin wasn't only interested in proving an idea. He wanted to use it. If a pointed rod could pull electricity from the sky, could it also keep lightning away from people's homes?",
+    "script_words": 228,
+    "scribe_words": 228,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 137782,
+      "limit": 209536,
+      "remaining": 71754
+    },
+    "after": {
+      "used": 138337,
+      "limit": 209536,
+      "remaining": 71199
+    },
+    "counter_delta": 555
+  },
+  "text": "Slowly, Franklin brought his knuckle close to the key. A spark jumped across, with a tiny snap. Exactly the kind of spark he had made a thousand times in his own room.\n\nThen he touched the key to his Leyden jar, and filled it, with electricity from the sky. It behaved in every way like the electricity he made with glass and silk.\n\nLightning and the spark in the jar were the same thing. Electricity.\n\nAnd here is the part that most people get wrong. The kite was never struck by lightning. If it had been, Franklin would almost certainly have died. Instead, the kite gathered a little of the storm's electric charge, which ran quietly down the wet string to the key.\n\nIt was still dangerous. The next summer, a scientist in Russia called Georg Richmann was trying a similar experiment with a rod during a storm, and he was killed. Franklin had been careful, and lucky.\n\nIn October, Franklin published how to do the kite experiment in his own newspaper. His letters were read at the Royal Society in London, and the next year it gave him its highest award, the Copley Medal.\n\nBut Franklin wasn't only interested in proving an idea. He wanted to use it. If a pointed rod could pull electricity from the sky, could it also keep lightning away from people's homes?",
+  "made_at": "2026-10-07T11:31:25+0100"
+}

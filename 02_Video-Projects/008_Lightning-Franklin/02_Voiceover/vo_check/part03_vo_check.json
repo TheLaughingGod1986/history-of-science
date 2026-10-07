@@ -1,0 +1,50 @@
+{
+  "file": "02_Video-Projects/008_Lightning-Franklin/02_Voiceover/hos_008_part03_a_kite_in_the_storm_v01.mp3",
+  "part": 3,
+  "fails": [
+    "replace at ~0:26.62: script 'a garden at marly near paris french' / heard 'a garden at mali near paris french' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "pace 138 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed"
+  ],
+  "duration_s": 134.56,
+  "duration": "2:14.56",
+  "mean_db": -24.3,
+  "peak_db": -4.3,
+  "pauses_over_1s": [
+    [
+      75.11,
+      1.04
+    ],
+    [
+      101.4,
+      1.06
+    ],
+    [
+      109.59,
+      1.13
+    ],
+    [
+      122.15,
+      1.16
+    ],
+    [
+      125.94,
+      1.08
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 302,
+  "heard_words": 302,
+  "wpm": 138,
+  "word_diffs": [
+    {
+      "at": "0:26.62",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "a garden at marly near paris french",
+      "heard": "a garden at mali near paris french"
+    }
+  ],
+  "verdict": "FAIL"
+}

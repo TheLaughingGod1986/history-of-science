@@ -11,7 +11,7 @@
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (22 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (29 d) | 53% | Picture (in progress) | **Cursor** · ⏸ waiting: Cursor to post today's Flow and Vertex balances (Tue resets) from the Mini; then Claude prices Parts 03–05 | 1/5 parts kept · about 3 weeks left · ETA Sun 25 Oct (in 18 d) | Sun 1 Nov (in 25 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (36 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 008 long VO) | starts later; due today | Sun 8 Nov (in 32 d) | 🟢 on track |
-| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (43 d) | 25% | Voiceover (long) (in progress) | **Cursor** · ⏸ waiting: Claude: PASS #241 and give the go on the desk before any spend | 0/5 parts passed · about half a day left · ETA Wed 7 Oct (today) | Sun 15 Nov (in 39 d) | 🟢 on track |
+| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (43 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued | starts later; due tomorrow | Sun 15 Nov (in 39 d) | 🟢 on track |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (50 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (after 007 Shorts VO) | starts later; due today | Sun 22 Nov (in 46 d) | 🟢 on track |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (57 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (after 009 VO) | starts later; due today | Sun 29 Nov (in 53 d) | 🟢 on track |
 
@@ -31,13 +31,12 @@
 
 **Cursor**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 006 Picture: Cursor to post today's Flow and Vertex balances (Tue resets) from the Mini; then Claude prices Parts 03–05; 008 Voiceover (long): Claude: PASS #241 and give the go on the desk before any spend
+- ⏸ Waiting: 006 Picture: Cursor to post today's Flow and Vertex balances (Tue resets) from the Mini; then Claude prices Parts 03–05
 - ⏭ Next up: 007 Shorts voiceover, due Wed 7 Oct; 009 Voiceover (long), due Wed 7 Oct; 010 Voiceover (long), due Wed 7 Oct
 
 ## Being worked on right now
 
 - **006** · 🔄 **Picture** — in progress (36%, 1/5 parts kept · about 3 weeks left · ETA Sun 25 Oct (in 18 d), with Cursor since Tue 6 Oct, ⏸ waiting: Cursor to post today's Flow and Vertex balances (Tue resets) from the Mini; then Claude prices Parts 03–05, due Sun 25 Oct (in 18 d)): Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets; pace set by Flow and Vertex credit
-- **008** · 🔄 **Voiceover (long)** — in progress (0%, 0/5 parts passed · about half a day left · ETA Wed 7 Oct (today), with Cursor since Wed 7 Oct 11:10, ⏸ waiting: Claude: PASS #241 and give the go on the desk before any spend, due Wed 7 Oct (today)): dry run posted (5 parts, 7,375 chars; pool 73,760, floor 50k). vo_take bug found and fixed in #241 (it would have read the FACT_NOTES table aloud). Nothing spent
 
 ## Next steps (in order)
 
@@ -124,7 +123,7 @@ Script, facts and long voiceover are done. Shorts voiceover is queued; picture w
 
 ### 008 · Why Did Franklin Fly a Kite in a Storm?
 
-`█████░░░░░░░░░░░░░░░` **25%**
+`███████░░░░░░░░░░░░░` **35%**
 
 Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · 🟢 on track
 
@@ -134,7 +133,7 @@ Script, facts, audit and package are done. The long voiceover starts as soon as 
 - ✅ **Script** — done: v01, 92.1
 - ✅ **Fact check** — done
 - ✅ **Audit + upload package** — done
-- 🔄 **Voiceover (long)** — in progress (0%, 0/5 parts passed · about half a day left · ETA Wed 7 Oct (today), with Cursor since Wed 7 Oct 11:10, ⏸ waiting: Claude: PASS #241 and give the go on the desk before any spend, due Wed 7 Oct (today)): dry run posted (5 parts, 7,375 chars; pool 73,760, floor 50k). vo_take bug found and fixed in #241 (it would have read the FACT_NOTES table aloud). Nothing spent
+- ✅ **Voiceover (long)** — done: long VO locked 7 Oct: 5 parts, 555 s (9:14.8), 7,497 chars; Part 01 pause trimmed, Part 05 one sentence re-recorded; Claude PASS each part (VO_TAKES_KEEP.json)
 - ✅ **Shorts scripts** — done
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (tomorrow))
 - ⬜ **Picture** — to do (with Cursor, due Sun 8 Nov (in 32 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes

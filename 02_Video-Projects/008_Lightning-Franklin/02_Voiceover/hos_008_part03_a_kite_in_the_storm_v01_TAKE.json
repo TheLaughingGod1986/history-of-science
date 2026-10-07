@@ -1,0 +1,59 @@
+{
+  "stem": "hos_008_part03_a_kite_in_the_storm_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6035539310",
+    "6035849928"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1648,
+      "duration_s": 134.56
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1648,
+  "words": 308,
+  "duration_s": 134.56,
+  "loudness": {
+    "lufs_integrated": -20.4,
+    "mean_volume_db": -23.8,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "94ca02f76daa22b3a138ecd0977f9e69cff2a71ca270f62b4962a8398758c086",
+  "scribe": {
+    "transcript": "Franklin had a plan. Points, he had found, were very good at drawing electricity out of the air. So he proposed putting a tall iron rod, sharp at the tip, on top of a high tower. If lightning really was electricity, the rod should pull sparks out of a passing storm cloud. He published the idea, and it crossed the ocean. In May seventeen fifty-two, in a garden at Marly, near Paris, French scientists put up a tall pointed rod and tried it. As a storm cloud passed, sparks jumped from the rod. It worked. But Franklin didn't know yet. News took weeks to cross the Atlantic, and Philadelphia had no tower tall enough. So about a month later, he had another idea. A kite could fly higher than any steeple. He made one from a silk handkerchief and two crossed sticks of cedar, so it would survive the rain. On top, he fixed a sharp wire. The string was ordinary twine, and near his hand he tied an iron key, then a ribbon of silk to hold it by. The silk was the clever part. Wet twine would carry electricity, but dry silk would not. So Franklin stood inside a shed out of the rain and kept the ribbon dry. He told almost no one. He was afraid people would laugh if it failed. Only his son William, a young man of about twenty-one, came along to help. William ran across the field, and the kite climbed into the dark clouds. Then they waited. Imagine standing in that doorway, the storm overhead, holding a string that runs up into the sky. What would you feel waiting for something to happen? For a long time, nothing did. Then Franklin noticed the loose threads of the twine. They were standing up on end and pushing away from each other",
+    "script_words": 310,
+    "scribe_words": 310,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 137012,
+      "limit": 209536,
+      "remaining": 72524
+    },
+    "after": {
+      "used": 137737,
+      "limit": 209536,
+      "remaining": 71799
+    },
+    "counter_delta": 725
+  },
+  "text": "Franklin had a plan. Points, he had found, were very good at drawing electricity out of the air. So he proposed putting a tall iron rod, sharp at the tip, on top of a high tower. If lightning really was electricity, the rod should pull sparks out of a passing storm cloud.\n\nHe published the idea, and it crossed the ocean. In May seventeen fifty-two, in a garden at Marly, near Paris, French scientists put up a tall pointed rod and tried it. As a storm cloud passed, sparks jumped from the rod. It worked.\n\nBut Franklin didn't know yet. News took weeks to cross the Atlantic. And Philadelphia had no tower tall enough. So, about a month later, he had another idea. A kite could fly higher than any steeple.\n\nHe made one from a silk handkerchief and two crossed sticks of cedar, so it would survive the rain. On top he fixed a sharp wire. The string was ordinary twine, and near his hand he tied an iron key, then a ribbon of silk to hold it by.\n\nThe silk was the clever part. Wet twine would carry electricity, but dry silk would not. So Franklin stood inside a shed, out of the rain, and kept the ribbon dry.\n\nHe told almost no one. He was afraid people would laugh if it failed. Only his son William, a young man of about twenty-one, came along to help.\n\nWilliam ran across the field and the kite climbed into the dark clouds. Then they waited. Imagine standing in that doorway, the storm overhead, holding a string that runs up into the sky. What would you feel, waiting for something to happen?\n\nFor a long time, nothing did. Then Franklin noticed the loose threads of the twine. They were standing up on end, and pushing away from each other.",
+  "made_at": "2026-10-07T11:27:58+0100"
+}

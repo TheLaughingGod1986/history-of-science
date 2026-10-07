@@ -1,0 +1,58 @@
+{
+  "stem": "hos_008_part01_fire_from_the_sky_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6035539310"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1352,
+      "duration_s": 105.52
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1352,
+  "words": 245,
+  "duration_s": 105.52,
+  "loudness": {
+    "lufs_integrated": -70.0,
+    "mean_volume_db": -23.8,
+    "max_volume_db": -4.0
+  },
+  "sha256_mp3": "e54af0bcab32e45fc470c7a0de78287f52f6611c91cd4eb49f92b03acbc95dd3",
+  "scribe": {
+    "transcript": "In the summer of seventeen fifty-two, a grown man walked out into a thunderstorm and flew a kite into the clouds on purpose. Why would anyone do that? And why does almost every tall building you have ever seen still carry the answer on its roof? By the end of this film, you'll know how a kite, a key, and a glass jar proved what lightning really is, and how one simple idea stopped it burning our towns down. For thousands of years, lightning was a mystery. It fell without warning, split trees, killed animals in the fields, and set roofs alight. Many people believed it was a punishment sent from the heavens. Picture yourself in a town in those years on a hot summer night. You would see the sky flash white, hear the thunder crack right overhead, and smell the smoke as a barn went up in flames, and you could do nothing but wait for the next strike. The tallest buildings were hit most of all. Church steeples were struck again and again, and when a storm came, the bell ringers were sent up the tower to ring the bells because people believed the sound would drive the lightning away. It was the worst place to stand. One eighteenth century count found more than a hundred bell ringers killed by lightning in just a few decades. So what was lightning? A punishment? A kind of fire? Or something else? Something you could catch and study",
+    "script_words": 249,
+    "scribe_words": 249,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "FAIL (silent or near-silent)",
+  "credits": {
+    "before": {
+      "used": 135776,
+      "limit": 209536,
+      "remaining": 73760
+    },
+    "after": {
+      "used": 135776,
+      "limit": 209536,
+      "remaining": 73760
+    },
+    "counter_delta": 0
+  },
+  "text": "In the summer of seventeen fifty-two, a grown man walked out into a thunderstorm and flew a kite into the clouds, on purpose.\n\nWhy would anyone do that? And why does almost every tall building you have ever seen still carry the answer on its roof?\n\nBy the end of this film, you'll know how a kite, a key and a glass jar proved what lightning really is, and how one simple idea stopped it burning our towns down.\n\nFor thousands of years, lightning was a mystery. It fell without warning, split trees, killed animals in the fields and set roofs alight. Many people believed it was a punishment sent from the heavens.\n\nPicture yourself in a town in those years, on a hot summer night. You would see the sky flash white, hear the thunder crack right overhead, and smell the smoke as a barn went up in flames. And you could do nothing but wait for the next strike.\n\nThe tallest buildings were hit most of all. Church steeples were struck again and again. And when a storm came, the bell-ringers were sent up the tower to ring the bells, because people believed the sound would drive the lightning away.\n\nIt was the worst place to stand. One eighteenth-century count found more than a hundred bell-ringers killed by lightning in just a few decades.\n\nSo what was lightning? A punishment? A kind of fire? Or something else, something you could catch and study?",
+  "made_at": "2026-10-07T11:06:18+0100"
+}

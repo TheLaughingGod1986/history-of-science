@@ -1,0 +1,14 @@
+{"time": "2026-10-07T10:06:07+00:00", "pid": 41448, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1352, "status": 200, "left_before": 73760}
+{"time": "2026-10-07T10:06:13+00:00", "pid": 41448, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 73760}
+{"time": "2026-10-07T10:15:10+00:00", "pid": 45152, "host": "Benjamins-Mac-mini.local", "script": "-", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 73130}
+{"time": "2026-10-07T10:15:37+00:00", "pid": 45228, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1229, "status": 200, "left_before": 73130}
+{"time": "2026-10-07T10:15:41+00:00", "pid": 45228, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 73095}
+{"time": "2026-10-07T10:27:47+00:00", "pid": 46312, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1648, "status": 200, "left_before": 72524}
+{"time": "2026-10-07T10:27:53+00:00", "pid": 46312, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 71799}
+{"time": "2026-10-07T10:31:15+00:00", "pid": 47500, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1262, "status": 200, "left_before": 71754}
+{"time": "2026-10-07T10:31:19+00:00", "pid": 47500, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 71199}
+{"time": "2026-10-07T10:32:13+00:00", "pid": 47659, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1884, "status": 200, "left_before": 71199}
+{"time": "2026-10-07T10:32:18+00:00", "pid": 47659, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 71167}
+{"time": "2026-10-07T10:36:54+00:00", "pid": 48644, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 122, "status": 200, "left_before": 70294}
+{"time": "2026-10-07T10:36:56+00:00", "pid": 48644, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 70294}
+{"time": "2026-10-07T10:38:01+00:00", "pid": 49184, "host": "Benjamins-Mac-mini.local", "script": "-", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 70237}
