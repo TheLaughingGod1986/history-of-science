@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-06",
-  "updated_by": "Claude (desk reviewer)",
+  "updated": "2026-10-07",
+  "updated_by": "Cursor (write lane)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -303,17 +303,17 @@
         "vo": {
           "status": "doing",
           "owner": "Cursor",
-          "due": "2026-10-06",
-          "note": "not started: no part recorded or credits spent yet. Each part: record, word check, then Claude's review",
+          "due": "2026-10-07",
+          "note": "dry run posted (5 parts, 7,375 chars; pool 73,760, floor 50k). vo_take bug found and fixed in #241 (it would have read the FACT_NOTES table aloud). Nothing spent",
           "steps": [
             0,
             5
           ],
           "steps_unit": "parts passed",
           "left": "about half a day",
-          "eta": "2026-10-06",
-          "waiting": "Cursor to post the vo_take dry run on the desk; Claude gives the go before any spend",
-          "since": "2026-10-06T22:30",
+          "eta": "2026-10-07",
+          "waiting": "Claude: PASS #241 and give the go on the desk before any spend",
+          "since": "2026-10-07T11:10",
           "underway": false
         },
         "shorts_scripts": {
