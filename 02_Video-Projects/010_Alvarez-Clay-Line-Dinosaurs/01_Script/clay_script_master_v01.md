@@ -33,7 +33,7 @@ In the nineteen-seventies, a young American geologist started looking very close
 ## PART 02: The Gorge at Gubbio (1:20–2:55)
 
 [CHAPTER CARD: The Gorge at Gubbio · 1:20 · ~1.5 s]
-[VISUAL MUST: 1:23 — Gubbio, Italy, 1970s: Walter Alvarez (readable face, about thirty-five, short beard, open-necked shirt, field bag over his shoulder) taps the cliff with a geologist's hammer · LABEL: WALTER ALVAREZ · GUBBIO]
+[VISUAL MUST: 1:23 — Gubbio, Italy, 1970s: Walter Alvarez (readable face, late thirties, clean-shaven, fair hair, dark-rimmed glasses, short-sleeved field shirt, field bag over his shoulder) taps the cliff with a geologist's hammer · LABEL: WALTER ALVAREZ · GUBBIO]
 [VISUAL MUST: 1:45 — a magnifying lens over the pale limestone below the clay: it's crowded with tiny round fossil shells, each the size of a grain of sand · LABEL: TINY SHELLS]
 [VISUAL MUST: 2:05 — the same lens moves above the clay line: the rock is almost empty, just a few very small shells · LABEL: ALMOST NONE]
 [VISUAL MUST: 2:25 — Walter carefully wraps a small piece of the rock, with its thin clay band, in cloth and puts it in his bag · LABEL: A PIECE TO TAKE HOME]
@@ -57,7 +57,7 @@ He took a piece back home, to California. And he showed it to his father.
 ## PART 03: A Clock Made of Stardust (2:55–4:40)
 
 [CHAPTER CARD: A Clock Made of Stardust · 2:55 · ~1.5 s]
-[VISUAL MUST: 2:58 — Berkeley, California: Luis Alvarez (readable face, late sixties, white hair, glasses, cardigan) turns the rock sample over in his hands at a kitchen table, his son beside him · LABEL: LUIS ALVAREZ · BERKELEY]
+[VISUAL MUST: 2:58 — Berkeley, California: Luis Alvarez (readable face, late sixties, white hair, glasses, cardigan) turns the rock sample over in his hands at a desk in Berkeley, his son beside him · LABEL: LUIS ALVAREZ · BERKELEY]
 [VISUAL MUST: 3:20 — a calm teach scene: a soft, steady rain of glittering space dust falls on the Earth from all directions · LABEL: A STEADY RAIN FROM SPACE]
 [VISUAL MUST: 3:40 — a cutaway Earth forming: molten iron sinks to the centre, carrying silvery iridium with it; the crust above is left almost bare · LABEL: IRIDIUM SANK TO THE CORE]
 [VISUAL MUST: 4:00 — a laboratory at Berkeley, late 1970s: Frank Asaro and Helen Michel (readable faces, lab coats) load tiny powdered samples into a measuring machine · LABEL: FRANK ASARO · HELEN MICHEL]

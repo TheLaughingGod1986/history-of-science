@@ -21,14 +21,14 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 
 | # | Picture cue | Question | Fallback if unsourced |
 |---|---|---|---|
-| P1 | Part 02 1:38: Newton at about 23, "long dark hair, plain dark coat, white collar" | There is no portrait from 1665. The 1689 Kneller shows his own long hair at 46 | His own shoulder-length dark hair, no wig; plain dark coat; simple white band collar |
-| P2 | Part 02 1:23: Cambridge 1665, "college gates swing shut; a notice on the gate" | The university sent students away in summer 1665. Is a gate notice documented? | Gates closing and carts loading trunks; **no notice** |
-| P3 | Part 02 1:38 and 2:00: Woolsthorpe Manor and its orchard | A real building (National Trust) with a known look: small limestone farmhouse, apple tree beside it | A small grey-stone farmhouse with an orchard; not a copy of the present-day building |
-| P4 | Part 03 3:03: "Newton's own drawing comes to life" | The figure is in *A Treatise of the System of the World* (written c. 1685, published 1728). Is it in the public domain and safe to restyle? | A fresh drawing in the house style: a mountain on a small Earth with a cannon on top, no copy of the original figure |
-| P5 | Part 04 5:45: Halley in 1684, "about twenty-eight, fair wig, travelling coat"; Newton's rooms | Halley was born 1656, so 27–28 in Aug 1684. Newton's rooms were at Trinity College | Keep. Halley in a fair periwig; Newton in his own hair, about 41; a panelled college room piled with books |
-| P6 | Part 04 6:10: "a London printer's shop, 1687" | The *Principia* was printed by Joseph Streater, London | Keep: a generic 1680s London hand-press shop |
-| P7 | Part 05 6:45: Christmas night 1758, the comet "with a glowing tail" | Palitzsch, near Dresden, found it on 25 Dec 1758 as a **faint** object in a telescope. It was bright only in spring 1759. Was there snow? | A faint smudge with a short soft tail in the telescope's view; the night sky over a Saxon farmhouse, **no snow**, no blazing comet |
-| P8 | Part 05 7:15: astronauts and a floating apple on the ISS | Fresh fruit is flown to the ISS. Keep astronauts generic | Two generic astronauts (no likeness, no readable patches) and one apple drifting between them |
+| P1 | Part 02 1:38: Newton at about 23 | **Stands (P1):** no wig (Kneller 1689) | His own shoulder-length dark hair, plain dark coat, simple white band collar |
+| P2 | Part 02 1:23: Cambridge 1665 | **Resolved 7 Oct (P2):** no gate notice; the record is Trinity's Conclusion Book, 7 Aug 1665 | Gates closing, carts loading trunks; **no notice** |
+| P3 | Part 02: Woolsthorpe and its orchard | **Resolved 7 Oct (P3):** a two-storey limestone T-plan house, mullioned windows, stone-slate roof; the door plaque is 18th century; Flower of Kent apples are green with a red flush | As resolved; **no plaque; green apples with a red flush** |
+| P4 | Part 03 3:03: the cannon drawing | **Resolved 7 Oct (P4):** the 1728 figure shows the mountain and paths but no cannon; *Principia* Def. V has "a leaden ball, projected from the top of a mountain by the force of gunpowder" | A restyled mountain with a cannon on top |
+| P5 | Part 04 5:45: Halley in 1684 | **Resolved 7 Oct (P5):** Murray's c. 1687–90 portrait shows long dark natural hair; the grey wig is later | **Long dark natural hair, no wig**; Newton in his own hair, about 41 (script fixed) |
+| P6 | Part 04 6:10: the printer | **Stands (P6):** Joseph Streater, London (Pepys's imprimatur, 1686) | A 1680s London hand-press shop |
+| P7 | Part 05: the 1758 comet | **Resolved 7 Oct (P7):** Palitzsch, his own 8-ft wooden reflector, a faint fuzzy object between δ and ε Piscium; one account: cold, clear, windy; no source for snow | A faint smudge in the telescope's view; **an 8-ft wooden telescope; no snow** |
+| P8 | Part 05 7:15: the ISS apple | **Stands (P8):** NASA has photos of fresh apples in the Cupola | Two generic astronauts, one apple drifting |
 
 ## Sets (one look each; keep continuity)
 
@@ -107,7 +107,7 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 | 05 | `minute_second` | 5:20 | Split screen: left, an apple falls for one second beside a ruler; right, the Moon falls for one minute along its curve; both drop the same distance | E | Q | LABEL: 1 MINUTE = 1 SECOND. **Short B frame 0** |
 | 06 | `pretty_nearly` | 5:32 | Newton's page: two short columns of figures that end level; no legible digits | C | F | overlay "pretty nearly" in his words |
 | 07 | `put_aside` | 5:38 | The papers go into a drawer; seasons change at the window | C | F | "aside for almost twenty years" |
-| 08 | `halley_visit` | 5:45 | Cambridge, 1684: Halley (about 28, fair wig, travelling coat) sits across from an older Newton in rooms piled with books | F | Q | LABEL: EDMOND HALLEY · 1684 (P5) |
+| 08 | `halley_visit` | 5:45 | Cambridge, 1684: Halley (about 28, long dark natural hair, travelling coat) sits across from an older Newton in rooms piled with books | F | Q | LABEL: EDMOND HALLEY · 1684 (P5) |
 | 09 | `ellipse_answer` | 5:55 | Newton draws an ellipse in the air with one finger; a soft glowing ellipse appears between them | F | Q | "an ellipse, Newton said at once" |
 | 10 | `write_it_down` | 6:02 | Newton writing late at night, stacks of pages growing | F | F | |
 | 11 | `principia_press` | 6:10 | A London printer's shop, 1687: a thick book comes off the press | G | Q | LABEL: PRINCIPIA · 1687; title page as overlay (P6) |
@@ -120,7 +120,7 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 | 01 | `one_law` | 6:33 | Teach: the solar system; the same faint lines of pull reach from the Sun to each planet and from Jupiter to its moons | E | Q | LABEL: ONE LAW EVERYWHERE |
 | 02 | `tides_harbour` | 6:42 | A harbour at night; the tide slowly rises up the stone wall as the Moon hangs overhead | I | Q | LABEL: THE MOON PULLS BACK |
 | 03 | `halley_comet_path` | 6:50 | Teach: a comet's long ellipse round the Sun, with a marker for 1758 | E | F | overlay 1758 |
-| 04 | `comet_1758` | 6:58 | Christmas night 1758: a farmer-astronomer at a small telescope beside a farmhouse; a faint comet with a short soft tail drifts across the field of view | H | Q | LABEL: HALLEY'S COMET · 1758 (P7: faint, no snow). **Short C frame 0** |
+| 04 | `comet_1758` | 6:58 | Christmas night 1758: a farmer-astronomer at his 8-ft wooden reflecting telescope beside a farmhouse on a cold, clear night; a faint comet with a short soft tail drifts across the field of view | H | Q | LABEL: HALLEY'S COMET · 1758 (P7: faint, no snow). **Short C frame 0** |
 | 05 | `right_on_time` | 7:08 | The eyepiece view: the faint smudge holds steady among the stars | H | Q | "right on time" |
 | 06 | `iss_orbit` | 7:15 | A generic space station glides over a blue Earth | J | Q | LABEL: FALLING, TOGETHER (P8) |
 | 07 | `iss_apple` | 7:25 | Inside, two astronauts and an apple drift together; the apple turns slowly | J | Q | no likeness, no readable patches |

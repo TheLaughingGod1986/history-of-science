@@ -21,14 +21,14 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 
 | # | Picture cue | Question | Fallback if unsourced |
 |---|---|---|---|
-| P1 | Part 02 1:45 and throughout: Franklin "long hair, small round spectacles pushed up" | Did Franklin wear spectacles around 1749–52, and his own hair or a wig? The c. 1746 portrait (attributed to Robert Feke) shows a wig and no spectacles. | Plain brown coat, his own shoulder-length hair or a plain short wig, **no spectacles** |
-| P2 | Part 02 2:05: the Leyden jar's "lid" with a brass rod | Franklin's phials were stoppered with cork, with a wire or rod through it and often a chain inside | A cork stopper with a brass rod and ball; foil inside and out |
-| P3 | Part 03 3:25: Marly, the rod "on a wooden stool"; "a man holds a wire near it" | Dalibard's apparatus: about a 40 ft iron rod on an insulating stand. The sparks were drawn on 10 May 1752 by the retired dragoon Coiffier, with Dalibard away | A tall iron rod on an insulated stand in a garden; one man in 1750s dress draws a spark with a wire on an insulated handle |
-| P4 | Part 03 4:05 and 4:25: the shed | Priestley says Franklin stood "under a shed" to keep dry. Size and type are unknown | A small open-fronted wooden shed at the edge of a field, roof only, no walls on the field side |
-| P5 | Part 03 3:45: kite frame | *Gazette*: two strips of cedar in a cross, a silk handkerchief tied to the four ends, a sharp wire on the upright. That makes a diamond or square kite with a tail | Keep as the script says. Add a tail and a loop of twine, and keep the wire under 1 ft |
-| P6 | Part 04 5:55: "the front page of the *Pennsylvania Gazette*, 19 October 1752" | Was the kite letter on the front page? | A page of the *Gazette*, issue unspecified, with an overlay of the date |
-| P7 | Part 05 7:00: "a page of *Poor Richard's Almanack* with a small drawing of an iron rod" | Did the 1753 almanac print a drawing, or text only? | An almanac page with **no drawing**; the rod diagram is the 7:20 teach card |
-| P8 | Part 05 6:38: Franklin's own house, rod "above the chimney", bells "by the stairs" | In 1752 he rented on Market Street; the bells hung in his house on a wire from the rod | A brick Philadelphia town house; the rod above the roofline; two small bells on a wire by a staircase inside |
+| P1 | Part 02 1:45 and throughout: Franklin's look | **Resolved 7 Oct (FACT_NOTES P1):** Feke c. 1746 and Wilson 1759 show a wig and no glasses; first spectacles portrait is 1767 | **A plain short wig, no spectacles** (script fixed) |
+| P2 | Part 02 2:05: the Leyden jar's stopper | **Resolved 7 Oct (P2):** a cork with a thick wire through it, its top bent into a ring; lead shot or water inside, lead or foil outside | **Cork + ring-topped wire, no brass ball** (script fixed) |
+| P3 | Part 03 3:25: Marly | **Resolved 7 Oct (P3, Dalibard's report 13 May 1752):** a 40 ft iron rod held by silk cords between three 28–29 ft poles, its foot in a small sentry box on a stool over three wine bottles; Coiffier, an old dragoon, drew the spark with a brass wire in a long glass phial, 10 May | As resolved (script fixed) |
+| P4 | Part 03 4:05 and 4:25: the shed | **Stands (P4):** Priestley, "a shed convenient for his purpose" | A small open-fronted wooden shed at the edge of a field |
+| P5 | Part 03 3:45: kite frame | **Resolved 7 Oct (P5):** the *Gazette* puts the wire "a Foot or more" above the wood | Keep as the script says, with a tail; **the wire stands a foot or more above the frame** |
+| P6 | Part 04 5:55: the *Gazette* page | **Resolved 7 Oct (P6, one secondary source):** the kite piece was a short item on page two, not the front page | **An inside page**, date as overlay (script fixed) |
+| P7 | Part 05 7:00: *Poor Richard* drawing | **Stands (P7):** the 1753 almanac has the rod instructions as text only | An almanac page with **no drawing**; the diagram is the 7:20 teach card |
+| P8 | Part 05 6:38: the house, rod and bells | **Resolved 7 Oct (P8, Franklin's words):** rod fixed to the top of his chimney, about nine feet above it; two bells about 6 in apart on the staircase opposite his chamber door, a brass ball on a silk thread between them; rented house, north side of Market St between Third and Fourth | As resolved |
 
 ## Sets (one look each; keep continuity)
 
@@ -74,7 +74,7 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 | 02 | `salon_spark` | 1:35 | A small spark from a guest's fingertip; a ripple of laughter | F | Q | |
 | 03 | `franklin_watches` | 1:40 | Franklin in the audience, leaning forward, fascinated | F | Q | readable face (see P1) |
 | 04 | `print_shop` | 1:45 | Franklin's printing shop: he leaves the press to a younger partner and carries a glass tube into the back room | E | Q | LABEL: BENJAMIN FRANKLIN · PHILADELPHIA (P1) |
-| 05 | `leyden_jar` | 2:05 | A foil-lined glass jar; a spark snaps from its brass rod to a fingertip | D | Q | LABEL: THE LEYDEN JAR (P2) |
+| 05 | `leyden_jar` | 2:05 | A foil-lined glass jar with a cork stopper and a ring-topped wire; a spark snaps from the ring to a fingertip | D | Q | LABEL: THE LEYDEN JAR (P2) |
 | 06 | `jar_crack` | 2:15 | A bigger spark between two jars, a flash in the dark room | D | Q | "like a tiny thunderstorm in a jar" |
 | 07 | `window_storm` | 2:22 | Franklin at the window of the back room, a storm far off over the roofs | D | Q | the moment he links the two |
 | 08 | `notebook_list` | 2:30 | Franklin's notebook: a quill writes a numbered column down the page; no legible words | D | F | overlays 1–12, then LET THE EXPERIMENT BE MADE; LABEL: 7 NOVEMBER 1749 |
@@ -88,7 +88,7 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 |---|---|---|---|---|---|---|
 | 01 | `sentry_box` | 3:08 | A drawing on Franklin's desk: a small sentry-box on a tall tower with a pointed iron rod rising into cloud; the drawing's clouds drift | D | F | LABEL: THE SENTRY-BOX. No legible text on the sheet |
 | 02 | `letter_crosses` | 3:18 | A letter is sealed; a ship crosses the painted Atlantic | K | F | "it crossed the ocean" |
-| 03 | `marly_spark` | 3:25 | Marly garden, May 1752: a tall iron rod on an insulated stand; a man draws a spark with a wire as storm clouds pass | G | Q | LABEL: MARLY, FRANCE · MAY 1752 (P3) |
+| 03 | `marly_spark` | 3:25 | Marly garden, May 1752: a 40 ft iron rod held by silk cords between three poles, its foot in a small sentry box on a stool over wine bottles; an old soldier draws a spark with a brass wire in a glass handle as storm clouds pass | G | Q | LABEL: MARLY, FRANCE · MAY 1752 (P3) |
 | 04 | `slow_news` | 3:38 | Back on the map, the ship still mid-ocean ("news took weeks") | K | F | reuse 02 with the ship moved |
 | 05 | `no_tower` | 3:42 | Philadelphia rooftops, low and even; no tall spire | A-style town | F | "no tower tall enough" |
 | 06 | `kite_build` | 3:45 | Franklin at his desk making the kite: silk handkerchief over two crossed cedar sticks, a sharp wire on top | D | Q | LABEL: SILK · CEDAR · WIRE (P5) |
@@ -118,8 +118,8 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 
 | # | Plate id | Time | Shot | Set | Eng | Overlay / note |
 |---|---|---|---|---|---|---|
-| 01 | `house_rod` | 6:38 | Franklin's house, 1752: an iron rod above the roofline as a storm rolls in | H | Q | LABEL: THE BELLS THAT RING (P8) |
-| 02 | `bells_ring` | 6:48 | Inside, by the stairs, two small bells on a wire begin to ring on their own; a tiny spark between them | H | Q | |
+| 01 | `house_rod` | 6:38 | Franklin's house, 1752: an iron rod fixed to the top of the chimney, about nine feet above it, as a storm rolls in | H | Q | LABEL: THE BELLS THAT RING (P8) |
+| 02 | `bells_ring` | 6:48 | On the staircase opposite his chamber door, two small bells about six inches apart begin to ring as a brass ball on a silk thread swings between them; a tiny spark | H | Q | |
 | 03 | `almanac_page` | 7:00 | An almanac page turned by a hand; no legible words, no drawing | D | F | overlay POOR RICHARD · 1753 (P7) |
 | 04 | `rod_fitting` | 7:10 | A workman fixes an iron rod up the outside wall of a house: point above the roof, foot into damp earth | H-style street | F | |
 | 05 | `safe_path` | 7:20 | Cutaway teach diagram: a bolt hits the tip of a rod on a steeple, runs down the outside wall and into the earth; the wooden spire stays dark and safe | J | Q | LABEL: A SAFE PATH TO THE GROUND |

@@ -20,9 +20,9 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 
 | # | Picture cue | Question | Fallback if unsourced |
 |---|---|---|---|
-| P1 | Part 02 1:23: Walter Alvarez at Gubbio, "about thirty-five, short beard, open-necked shirt, field bag" | Born 1940, so about 37 in 1977. Did he have a beard then? | Late thirties, open-necked field shirt, field bag; **beard only if a 1970s photo shows one** |
-| P2 | Part 03 2:58: Luis Alvarez "late sixties, white hair, glasses, cardigan", "at a kitchen table" | Born 1911, so about 66 in 1977. Glasses? Where did Walter first show him the sample? | White hair, about 66; glasses only if photos of the period show them; **a desk at Berkeley**, not a kitchen |
-| P3 | Part 03 4:00: Asaro and Michel "load tiny powdered samples into a measuring machine" | Neutron activation: the samples were irradiated, then counted on gamma-ray detectors at Lawrence Berkeley Laboratory | A late-1970s lab with sample vials and a detector rack; no reactor shown |
+| P1 | Part 02 1:23: Walter at Gubbio | **Resolved 7 Oct (P1):** LBL's photo at the Bottaccione boundary (c. 1980–81) shows him clean-shaven, fair-haired, in dark-rimmed glasses and a short-sleeved shirt, holding a hammer | **Clean-shaven, fair hair, dark-rimmed glasses** (script fixed) |
+| P2 | Part 03 2:58: Luis and the sample | **Resolved 7 Oct (P2):** the same photo confirms Luis's glasses and white, thinning hair; Walter took the rock to Berkeley in 1977; no source for a kitchen | **A desk at Berkeley** (script fixed) |
+| P3 | Part 03 4:00: the lab | **Resolved 7 Oct (P3, LBL):** samples powdered, pressed into pills, irradiated in UC Berkeley's TRIGA reactor with standards, counted on a germanium gamma detector, data to magnetic tape | Pills, a detector rack and tape drives; **no reactor on screen** |
 | P4 | Part 03 (VO line): Luis's pyramid search | He used cosmic-ray muons to look for hidden chambers in the Second Pyramid (Khafre) at Giza, 1960s | A cutaway of a pyramid with faint particle tracks passing through it; no chamber shown |
 | P5 | Part 04 5:05: the second pin, "a white sea cliff in Denmark" | Stevns Klint: a white chalk cliff with a dark "fish clay" layer | Keep: a white chalk cliff with a thin dark band |
 | P6 | Part 05 6:23: the glass beads "from Haiti" | Beloc, Haiti: tektite-like glass spherules in the boundary clay | Small glassy beads beside a coin for scale; no place name on screen beyond the overlay |
@@ -65,7 +65,7 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 
 | # | Plate id | Time | Shot | Set | Eng | Overlay / note |
 |---|---|---|---|---|---|---|
-| 01 | `walter_hammer` | 1:23 | Gubbio, 1970s: Walter Alvarez taps the cliff with a geologist's hammer | A | Q | LABEL: WALTER ALVAREZ · GUBBIO (P1) |
+| 01 | `walter_hammer` | 1:23 | Gubbio, 1970s: Walter Alvarez (clean-shaven, fair hair, dark-rimmed glasses) taps the cliff with a geologist's hammer | A | Q | LABEL: WALTER ALVAREZ · GUBBIO (P1) |
 | 02 | `layers_build` | 1:35 | Teach: an ancient sea floor; fine layers settle one on another over time | E | F | "layer by layer… millions of years" |
 | 03 | `tiny_shells` | 1:45 | A hand lens over the pale limestone below the clay: crowded with tiny round fossil shells | A | Q | LABEL: TINY SHELLS |
 | 04 | `floating_sea` | 1:55 | Teach: the same tiny shelled creatures drifting in a sunlit ancient sea | E | Q | |
@@ -87,7 +87,7 @@ The write lane adds these to `FACT_NOTES` (STUDIO_PLAYBOOK: pictures are facts t
 | 05 | `iridium_sinks` | 3:40 | A cutaway young Earth: molten iron sinks to the centre, carrying silvery iridium with it; the crust is left almost bare | E | Q | LABEL: IRIDIUM SANK TO THE CORE |
 | 06 | `meteorite_rich` | 3:50 | A meteorite on a velvet cloth, glints of silver in it | B | Q | "in meteorites… much more of it" |
 | 07 | `clock_idea` | 3:55 | Teach: two clay layers, one thick with glitter (slow), one almost bare (fast) | E | F | the clock explained |
-| 08 | `asaro_michel` | 4:00 | A late-1970s lab: Frank Asaro and Helen Michel load tiny powdered samples into a detector rack | D | Q | LABEL: FRANK ASARO · HELEN MICHEL (P3) |
+| 08 | `asaro_michel` | 4:00 | A late-1970s lab: Frank Asaro and Helen Michel press powdered samples into small pills and load them by a detector rack; tape reels turn | D | Q | LABEL: FRANK ASARO · HELEN MICHEL (P3) |
 | 09 | `waiting_result` | 4:25 | A printout begins to feed from a machine; the team leans in | D | F | "what came back was not small at all". No legible numbers |
 
 ### Part 04 · Too Much Iridium · about 100 s · about 11 plates
