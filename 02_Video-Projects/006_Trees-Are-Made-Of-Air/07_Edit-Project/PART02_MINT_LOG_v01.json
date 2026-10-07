@@ -1,0 +1,78 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "part": "02",
+  "board": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/parts/part-02_plates_v01.json",
+  "path": "vertex",
+  "vertex_project": "gen-lang-client-0538779324",
+  "vertex_location": "us-central1",
+  "account": "benoats@googlemail.com",
+  "authority": "Claude on desk PR #180 comment 5951520953 (2 Oct 2026): mint 006 on Vertex to a £0 floor",
+  "models": {
+    "Quality": "veo-3.1-generate-001",
+    "Fast": "veo-3.1-fast-generate-001"
+  },
+  "image_model": "gemini-2.5-flash-image",
+  "pricing_usd": {
+    "veo_per_s_video_only_1080p": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "still": 0.039,
+    "source": "Vertex AI generative pricing page, video-only rows, Sept 2026"
+  },
+  "credit_check": null,
+  "takes": [
+    {
+      "plate": "06_garden_years",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": "lite_test_control",
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Same Vilvoorde garden in one continuous time-lapse: spring leaves burst out on the willow in the clay pot, autumn leaves fall, snow settles, spring again; the willow climbs past the garden wall while the pot never changes. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/refs/v01_vertex_stills/06_garden_years_v01.jpg",
+      "start_frame_sha256": "5fa900a86d676220a2ea2b6e3ff110af90f0332d3926c7c980f6b332414c228c",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/9667b525-7104-4b2d-9409-c98eb890ee36",
+      "submitted_at": "2026-10-02T11:44:36+00:00",
+      "cost_usd": 0.8,
+      "status": "FAIL",
+      "why": "Lite-test control (Vertex Fast). Seasons read beautifully (spring, autumn fall, bare, snow, spring), but the clay pot vanishes at ~4.8 s and the willow grows from the ground while the walls re-form: breaks the one-tree-in-one-pot experiment inside the 6.98 s window.",
+      "at": "2026-10-02T11:55:13+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/06_garden_years_t1.mp4",
+      "sha256": "e4369774a194a725ec7d248889bf540a5d369109756542f2c48ff63216c03055",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/uat/06_garden_years_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 1.3,
+      "uat_at": "2026-10-02T11:59:26+00:00"
+    }
+  ],
+  "stills": [
+    {
+      "plate": "06_garden_years",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/refs/v01_vertex_stills/06_garden_years_v01.jpg",
+      "sha256": "5fa900a86d676220a2ea2b6e3ff110af90f0332d3926c7c980f6b332414c228c",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg",
+        "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/refs/v02_vertex_stills/03_band_tightens_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph. Early 1600s Flemish walled garden of red brick, flagstones, a small willow sapling in a big clay pot in the centre, spring.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:42:56+00:00"
+    }
+  ],
+  "plates": {},
+  "cost_usd_total": 0.839,
+  "updated": "2026-10-02T11:59:26+00:00"
+}
