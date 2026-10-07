@@ -40,19 +40,18 @@
 
 ## Next steps (in order)
 
-1. 008 long voiceover: the Mac Mini is up (6 Oct). Cursor posts the vo_take dry run, Claude says go, then Cursor records part by part; Claude checks each part.
-2. Shot lists for 007–010 are all written (Claude, no spend). Cursor sources each film's P1–P8 period details into its FACT_NOTES as a PR; Claude confirms.
-3. 007 Shorts A–C voiceover, then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. About 30k ElevenLabs credits in all; floor lowered to 40k until the 30 Oct reset (Ben, 7 Oct) so 010 fits.
-4. Tue 6 Oct: Flow and Google credit resets. Cursor posts the balances; Claude re-prices 006 Parts 03–05.
-5. 006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.
-6. 007 picture: shot list v01 is ready (about 58 plates). Its 8 period details are checked (5 Oct). Next the write lane builds the priced plate boards; spend starts once the whole voiceover batch has passed.
-7. Thu 29 Oct 18:05: 005 post-air jobs (Related on its three Shorts, cards, end screen, pinned comment).
+1. 007 Shorts A–C voiceover (Cursor, now), then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. At about 0.47 credits per char the whole queue needs about 12k of the 70k pool; floor 40k until the 30 Oct reset.
+2. Mon 12 Oct: Flow credits refill (AI Ultra). Cursor posts the new balance and re-prices 006 Parts 03–05, then 007, on Flow rates; Claude passes before any mint.
+3. 006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.
+4. 007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.
+5. 008 edit: narration runs 9:14.8, over the 7–9 min window; the §4 pause trim on the assembled film has to bring it in.
+6. Thu 29 Oct 18:05: 005 post-air jobs (Related on its three Shorts, cards, end screen, pinned comment).
 
 ## Credit left
 
 | Pool | Left | Rule | Checked |
 |---|---|---|---|
-| ElevenLabs (voice) | 73,760 of 209,536 | voice only; floor 40k until the Fri 30 Oct reset (Ben, 7 Oct), then 50k | 7 Oct |
+| ElevenLabs (voice) | 70,237 of 209,536 | voice only; floor 40k until the Fri 30 Oct reset (Ben, 7 Oct), then 50k; eleven_v3 bills about 0.47 credits per char (008: 7,497 chars cost 3,523) | 7 Oct |
 | Vertex free trial (picture) | £25.59 (11%) | never past £0, keep £5 buffer; trial ends 10 Nov | 7 Oct |
 | Flow (picture) | 52 credits; refills 12 Oct | Flow first for picture; AI Ultra active (renews 12 Oct, Ben 7 Oct) — no picture spend before the refill | 7 Oct |
 
