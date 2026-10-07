@@ -55,7 +55,7 @@
 |---|---|---|---|
 | ElevenLabs (voice) | 73,760 of 209,536 | voice only; floor 40k until the Fri 30 Oct reset (Ben, 7 Oct), then 50k | 7 Oct |
 | Vertex free trial (picture) | £25.59 (11%) | never past £0, keep £5 buffer; trial ends 10 Nov | 7 Oct |
-| Flow (picture) | 52 credits | Flow first for picture; account now shows 'Upgrade' instead of ULTRA — Ben to check the plan | 7 Oct |
+| Flow (picture) | 52 credits; refills 12 Oct | Flow first for picture; AI Ultra active (renews 12 Oct, Ben 7 Oct) — no picture spend before the refill | 7 Oct |
 
 ## Film by film
 
