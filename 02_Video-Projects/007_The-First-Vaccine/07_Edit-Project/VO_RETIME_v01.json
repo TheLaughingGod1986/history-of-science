@@ -1,0 +1,5681 @@
+{
+  "film": "007_The-First-Vaccine",
+  "source": "Locked VO (VO_TAKES_KEEP.json), faster-whisper small.en word timestamps, vo_check.norm()",
+  "card_breath_s": 0.6,
+  "card_to_vo_s": 1.9,
+  "vo_film_total_s": 512.15,
+  "vo_film_total": "8:32.15",
+  "parts": [
+    {
+      "part": 1,
+      "file": "part01_the_speckled_monster_v03.mp3",
+      "sha256": "3881da7b96b4efaadde58287c4151b31c1dd39d337af4fd5dae0c6925ab5fb83",
+      "duration_s": 100.23,
+      "match_rate_pct": 99.2,
+      "chapter_card": null,
+      "card_in_film_s": null,
+      "card_in_film": null,
+      "vo_film_start_s": 0.0,
+      "vo_film_start": "0:00.00",
+      "vo_film_end_s": 100.23,
+      "vo_film_end": "1:40.23",
+      "last_word_s": 100.0,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Every vaccine in the world is named after a cow.",
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "film_s": 0.0,
+          "film": "0:00.00"
+        },
+        {
+          "i": 2,
+          "text": "So how did a cow end up inside the most important medicine ever made?",
+          "start_s": 4.26,
+          "end_s": 8.38,
+          "film_s": 4.26,
+          "film": "0:04.26"
+        },
+        {
+          "i": 3,
+          "text": "By the end of this film, you'll know how a milkmaid's hand, a country doctor and one careful test turned an old farmyard rumour into the medicine that wiped a disease off the face of the Earth.",
+          "start_s": 9.36,
+          "end_s": 22.2,
+          "film_s": 9.36,
+          "film": "0:09.36"
+        },
+        {
+          "i": 4,
+          "text": "In the seventeen-hundreds, the most feared disease in the world was smallpox.",
+          "start_s": 23.2,
+          "end_s": 28.34,
+          "film_s": 23.2,
+          "film": "0:23.20"
+        },
+        {
+          "i": 5,
+          "text": "People called it the speckled monster.",
+          "start_s": 29.22,
+          "end_s": 31.2,
+          "film_s": 29.22,
+          "film": "0:29.22"
+        },
+        {
+          "i": 6,
+          "text": "It caught kings and farm workers alike, and about three in every ten people who caught it died.",
+          "start_s": 31.94,
+          "end_s": 37.9,
+          "film_s": 31.94,
+          "film": "0:31.94"
+        },
+        {
+          "i": 7,
+          "text": "Many who lived were scarred for life, and some were left blind.",
+          "start_s": 38.96,
+          "end_s": 42.96,
+          "film_s": 38.96,
+          "film": "0:38.96"
+        },
+        {
+          "i": 8,
+          "text": "Picture yourself in an English village in those years.",
+          "start_s": 44.26,
+          "end_s": 46.92,
+          "film_s": 44.26,
+          "film": "0:44.26"
+        },
+        {
+          "i": 9,
+          "text": "When smallpox arrived, you would see a neighbour's house shut up and silent, hear the church bell toll day after day, and wonder whose house would be next.",
+          "start_s": 47.66,
+          "end_s": 57.72,
+          "film_s": 47.66,
+          "film": "0:47.66"
+        },
+        {
+          "i": 10,
+          "text": "Parents counted their children only after they had survived it.",
+          "start_s": 59.36,
+          "end_s": 62.84,
+          "film_s": 59.36,
+          "film": "0:59.36"
+        },
+        {
+          "i": 11,
+          "text": "There was one way to fight back, and it was risky.",
+          "start_s": 63.36,
+          "end_s": 66.48,
+          "film_s": 63.36,
+          "film": "1:03.36"
+        },
+        {
+          "i": 12,
+          "text": "Doctors took a little matter from a smallpox sore and scratched it into a healthy person's arm.",
+          "start_s": 67.7,
+          "end_s": 73.28,
+          "film_s": 67.7,
+          "film": "1:07.70"
+        },
+        {
+          "i": 13,
+          "text": "It usually gave a milder illness, and lifelong protection.",
+          "start_s": 74.1,
+          "end_s": 77.7,
+          "film_s": 74.1,
+          "film": "1:14.10"
+        },
+        {
+          "i": 14,
+          "text": "It was called variolation.",
+          "start_s": 78.28,
+          "end_s": 80.06,
+          "film_s": 78.28,
+          "film": "1:18.28"
+        },
+        {
+          "i": 15,
+          "text": "But some people died from it, and they could pass full smallpox on to others.",
+          "start_s": 80.06,
+          "end_s": 85.22,
+          "film_s": 80.06,
+          "film": "1:20.06"
+        },
+        {
+          "i": 16,
+          "text": "So people faced a terrible choice.",
+          "start_s": 86.26,
+          "end_s": 88.3,
+          "film_s": 86.26,
+          "film": "1:26.26"
+        },
+        {
+          "i": 17,
+          "text": "Risk the treatment, or wait for the monster to come.",
+          "start_s": 88.82,
+          "end_s": 92.06,
+          "film_s": 88.82,
+          "film": "1:28.82"
+        },
+        {
+          "i": 18,
+          "text": "If it were your child, which would you choose?",
+          "start_s": 92.92,
+          "end_s": 95.36,
+          "film_s": 92.92,
+          "film": "1:32.92"
+        },
+        {
+          "i": 19,
+          "text": "In the countryside, though, farmers had noticed something strange.",
+          "start_s": 96.46,
+          "end_s": 100.0,
+          "film_s": 96.46,
+          "film": "1:36.46"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "Every"
+        ],
+        [
+          0.38,
+          "vaccine"
+        ],
+        [
+          0.72,
+          "in"
+        ],
+        [
+          1.14,
+          "the"
+        ],
+        [
+          1.26,
+          "world"
+        ],
+        [
+          1.62,
+          "is"
+        ],
+        [
+          1.92,
+          "named"
+        ],
+        [
+          2.16,
+          "after"
+        ],
+        [
+          2.54,
+          "a"
+        ],
+        [
+          2.72,
+          "cow."
+        ],
+        [
+          4.26,
+          "So"
+        ],
+        [
+          4.28,
+          "how"
+        ],
+        [
+          4.54,
+          "did"
+        ],
+        [
+          4.72,
+          "a"
+        ],
+        [
+          4.88,
+          "cow"
+        ],
+        [
+          5.3,
+          "end"
+        ],
+        [
+          5.7,
+          "up"
+        ],
+        [
+          5.88,
+          "inside"
+        ],
+        [
+          6.2,
+          "the"
+        ],
+        [
+          6.4,
+          "most"
+        ],
+        [
+          6.6,
+          "important"
+        ],
+        [
+          7.14,
+          "medicine"
+        ],
+        [
+          7.62,
+          "ever"
+        ],
+        [
+          7.94,
+          "made?"
+        ],
+        [
+          9.36,
+          "By"
+        ],
+        [
+          9.52,
+          "the"
+        ],
+        [
+          9.66,
+          "end"
+        ],
+        [
+          9.82,
+          "of"
+        ],
+        [
+          9.94,
+          "this"
+        ],
+        [
+          10.12,
+          "film"
+        ],
+        [
+          10.48,
+          "you'll"
+        ],
+        [
+          11.08,
+          "know"
+        ],
+        [
+          11.24,
+          "how"
+        ],
+        [
+          11.46,
+          "a"
+        ],
+        [
+          11.62,
+          "milkmaid's"
+        ],
+        [
+          12.32,
+          "hand,"
+        ],
+        [
+          13.1,
+          "a"
+        ],
+        [
+          13.14,
+          "country"
+        ],
+        [
+          13.46,
+          "doctor"
+        ],
+        [
+          13.86,
+          "and"
+        ],
+        [
+          14.52,
+          "one"
+        ],
+        [
+          14.9,
+          "careful"
+        ],
+        [
+          15.38,
+          "test"
+        ],
+        [
+          15.94,
+          "turned"
+        ],
+        [
+          16.56,
+          "an"
+        ],
+        [
+          16.76,
+          "old"
+        ],
+        [
+          17.08,
+          "farmyard"
+        ],
+        [
+          17.74,
+          "rumour"
+        ],
+        [
+          18.28,
+          "into"
+        ],
+        [
+          18.88,
+          "the"
+        ],
+        [
+          19.1,
+          "medicine"
+        ],
+        [
+          19.58,
+          "that"
+        ],
+        [
+          19.92,
+          "wiped"
+        ],
+        [
+          20.16,
+          "a"
+        ],
+        [
+          20.34,
+          "disease"
+        ],
+        [
+          20.72,
+          "off"
+        ],
+        [
+          21.1,
+          "the"
+        ],
+        [
+          21.3,
+          "face"
+        ],
+        [
+          21.5,
+          "of"
+        ],
+        [
+          21.84,
+          "the"
+        ],
+        [
+          21.96,
+          "earth."
+        ],
+        [
+          23.2,
+          "In"
+        ],
+        [
+          23.76,
+          "the"
+        ],
+        [
+          23.9,
+          "1700s"
+        ],
+        [
+          25.02,
+          "the"
+        ],
+        [
+          25.4,
+          "most"
+        ],
+        [
+          25.64,
+          "feared"
+        ],
+        [
+          26.04,
+          "disease"
+        ],
+        [
+          26.4,
+          "in"
+        ],
+        [
+          26.72,
+          "the"
+        ],
+        [
+          26.86,
+          "world"
+        ],
+        [
+          27.26,
+          "was"
+        ],
+        [
+          27.6,
+          "smallpox."
+        ],
+        [
+          29.22,
+          "People"
+        ],
+        [
+          29.56,
+          "called"
+        ],
+        [
+          29.84,
+          "it"
+        ],
+        [
+          30.0,
+          "the"
+        ],
+        [
+          30.16,
+          "speckled"
+        ],
+        [
+          30.68,
+          "monster."
+        ],
+        [
+          31.94,
+          "It"
+        ],
+        [
+          32.12,
+          "caught"
+        ],
+        [
+          32.4,
+          "kings"
+        ],
+        [
+          32.82,
+          "and"
+        ],
+        [
+          33.14,
+          "farm"
+        ],
+        [
+          33.5,
+          "workers"
+        ],
+        [
+          33.88,
+          "alike"
+        ],
+        [
+          34.28,
+          "and"
+        ],
+        [
+          34.94,
+          "about"
+        ],
+        [
+          35.18,
+          "three"
+        ],
+        [
+          35.56,
+          "in"
+        ],
+        [
+          35.76,
+          "every"
+        ],
+        [
+          36.0,
+          "ten"
+        ],
+        [
+          36.28,
+          "people"
+        ],
+        [
+          36.68,
+          "who"
+        ],
+        [
+          36.9,
+          "caught"
+        ],
+        [
+          37.18,
+          "it"
+        ],
+        [
+          37.5,
+          "died."
+        ],
+        [
+          38.96,
+          "Many"
+        ],
+        [
+          39.22,
+          "who"
+        ],
+        [
+          39.5,
+          "lived"
+        ],
+        [
+          39.8,
+          "were"
+        ],
+        [
+          40.08,
+          "scarred"
+        ],
+        [
+          40.58,
+          "for"
+        ],
+        [
+          40.74,
+          "life"
+        ],
+        [
+          41.02,
+          "and"
+        ],
+        [
+          41.64,
+          "some"
+        ],
+        [
+          41.94,
+          "were"
+        ],
+        [
+          42.2,
+          "left"
+        ],
+        [
+          42.44,
+          "blind."
+        ],
+        [
+          44.26,
+          "Picture"
+        ],
+        [
+          44.42,
+          "yourself"
+        ],
+        [
+          44.86,
+          "in"
+        ],
+        [
+          45.12,
+          "an"
+        ],
+        [
+          45.28,
+          "English"
+        ],
+        [
+          45.6,
+          "village"
+        ],
+        [
+          45.94,
+          "in"
+        ],
+        [
+          46.2,
+          "those"
+        ],
+        [
+          46.46,
+          "years."
+        ],
+        [
+          47.66,
+          "When"
+        ],
+        [
+          47.8,
+          "smallpox"
+        ],
+        [
+          48.4,
+          "arrived"
+        ],
+        [
+          48.92,
+          "you"
+        ],
+        [
+          49.36,
+          "would"
+        ],
+        [
+          49.46,
+          "see"
+        ],
+        [
+          49.64,
+          "a"
+        ],
+        [
+          49.82,
+          "neighbour's"
+        ],
+        [
+          50.28,
+          "house"
+        ],
+        [
+          50.56,
+          "shut"
+        ],
+        [
+          50.9,
+          "up"
+        ],
+        [
+          51.22,
+          "and"
+        ],
+        [
+          51.42,
+          "silent,"
+        ],
+        [
+          52.32,
+          "hear"
+        ],
+        [
+          52.66,
+          "the"
+        ],
+        [
+          52.82,
+          "church"
+        ],
+        [
+          53.16,
+          "bell"
+        ],
+        [
+          53.48,
+          "toll"
+        ],
+        [
+          53.86,
+          "day"
+        ],
+        [
+          54.4,
+          "after"
+        ],
+        [
+          54.66,
+          "day"
+        ],
+        [
+          55.14,
+          "and"
+        ],
+        [
+          55.66,
+          "wonder"
+        ],
+        [
+          55.92,
+          "whose"
+        ],
+        [
+          56.36,
+          "house"
+        ],
+        [
+          56.72,
+          "would"
+        ],
+        [
+          56.98,
+          "be"
+        ],
+        [
+          57.14,
+          "next."
+        ],
+        [
+          59.36,
+          "Parents"
+        ],
+        [
+          59.36,
+          "counted"
+        ],
+        [
+          59.8,
+          "their"
+        ],
+        [
+          60.04,
+          "children"
+        ],
+        [
+          60.48,
+          "only"
+        ],
+        [
+          61.16,
+          "after"
+        ],
+        [
+          61.48,
+          "they"
+        ],
+        [
+          61.76,
+          "had"
+        ],
+        [
+          61.92,
+          "survived"
+        ],
+        [
+          62.4,
+          "it."
+        ],
+        [
+          63.36,
+          "There"
+        ],
+        [
+          63.64,
+          "was"
+        ],
+        [
+          63.76,
+          "one"
+        ],
+        [
+          64.06,
+          "way"
+        ],
+        [
+          64.32,
+          "to"
+        ],
+        [
+          64.56,
+          "fight"
+        ],
+        [
+          64.76,
+          "back"
+        ],
+        [
+          65.14,
+          "and"
+        ],
+        [
+          65.66,
+          "it"
+        ],
+        [
+          65.78,
+          "was"
+        ],
+        [
+          65.94,
+          "risky."
+        ],
+        [
+          67.7,
+          "Doctors"
+        ],
+        [
+          67.9,
+          "took"
+        ],
+        [
+          68.24,
+          "a"
+        ],
+        [
+          68.4,
+          "little"
+        ],
+        [
+          68.62,
+          "matter"
+        ],
+        [
+          68.92,
+          "from"
+        ],
+        [
+          69.28,
+          "a"
+        ],
+        [
+          69.44,
+          "smallpox"
+        ],
+        [
+          69.96,
+          "sore"
+        ],
+        [
+          70.3,
+          "and"
+        ],
+        [
+          70.9,
+          "scratched"
+        ],
+        [
+          71.26,
+          "it"
+        ],
+        [
+          71.6,
+          "into"
+        ],
+        [
+          71.8,
+          "a"
+        ],
+        [
+          72.0,
+          "healthy"
+        ],
+        [
+          72.32,
+          "person's"
+        ],
+        [
+          72.96,
+          "arm."
+        ],
+        [
+          74.1,
+          "It"
+        ],
+        [
+          74.38,
+          "usually"
+        ],
+        [
+          74.68,
+          "gave"
+        ],
+        [
+          75.0,
+          "a"
+        ],
+        [
+          75.2,
+          "milder"
+        ],
+        [
+          75.68,
+          "illness"
+        ],
+        [
+          76.04,
+          "and"
+        ],
+        [
+          76.62,
+          "lifelong"
+        ],
+        [
+          77.02,
+          "protection."
+        ],
+        [
+          78.28,
+          "It"
+        ],
+        [
+          78.58,
+          "was"
+        ],
+        [
+          78.72,
+          "called"
+        ],
+        [
+          79.12,
+          "variolation"
+        ],
+        [
+          80.06,
+          "but"
+        ],
+        [
+          80.96,
+          "some"
+        ],
+        [
+          81.26,
+          "people"
+        ],
+        [
+          81.56,
+          "died"
+        ],
+        [
+          81.86,
+          "from"
+        ],
+        [
+          82.12,
+          "it"
+        ],
+        [
+          82.38,
+          "and"
+        ],
+        [
+          82.78,
+          "they"
+        ],
+        [
+          82.88,
+          "could"
+        ],
+        [
+          83.06,
+          "pass"
+        ],
+        [
+          83.34,
+          "full"
+        ],
+        [
+          83.74,
+          "smallpox"
+        ],
+        [
+          84.34,
+          "onto"
+        ],
+        [
+          84.78,
+          "others."
+        ],
+        [
+          86.26,
+          "So"
+        ],
+        [
+          86.48,
+          "people"
+        ],
+        [
+          86.78,
+          "faced"
+        ],
+        [
+          87.12,
+          "a"
+        ],
+        [
+          87.36,
+          "terrible"
+        ],
+        [
+          87.72,
+          "choice,"
+        ],
+        [
+          88.82,
+          "risk"
+        ],
+        [
+          89.2,
+          "the"
+        ],
+        [
+          89.44,
+          "treatment"
+        ],
+        [
+          89.9,
+          "or"
+        ],
+        [
+          90.52,
+          "wait"
+        ],
+        [
+          90.78,
+          "for"
+        ],
+        [
+          91.04,
+          "the"
+        ],
+        [
+          91.16,
+          "monster"
+        ],
+        [
+          91.48,
+          "to"
+        ],
+        [
+          91.76,
+          "come."
+        ],
+        [
+          92.92,
+          "If"
+        ],
+        [
+          93.12,
+          "it"
+        ],
+        [
+          93.24,
+          "were"
+        ],
+        [
+          93.4,
+          "your"
+        ],
+        [
+          93.6,
+          "child"
+        ],
+        [
+          94.06,
+          "which"
+        ],
+        [
+          94.66,
+          "would"
+        ],
+        [
+          94.86,
+          "you"
+        ],
+        [
+          95.02,
+          "choose?"
+        ],
+        [
+          96.46,
+          "In"
+        ],
+        [
+          96.72,
+          "the"
+        ],
+        [
+          96.82,
+          "countryside"
+        ],
+        [
+          97.24,
+          "though"
+        ],
+        [
+          97.76,
+          "farmers"
+        ],
+        [
+          98.44,
+          "had"
+        ],
+        [
+          98.7,
+          "noticed"
+        ],
+        [
+          99.04,
+          "something"
+        ],
+        [
+          99.54,
+          "strange."
+        ]
+      ]
+    },
+    {
+      "part": 2,
+      "file": "part02_the_milkmaids_secret_v01.mp3",
+      "sha256": "a4c4ad87d73b9ffca9dfc9e7530cfc10f1d4a68f27c612054be4669a9a9ae21e",
+      "duration_s": 129.04,
+      "match_rate_pct": 98.6,
+      "chapter_card": "The Milkmaids' Secret",
+      "card_in_film_s": 100.83,
+      "card_in_film": "1:40.83",
+      "vo_film_start_s": 102.73,
+      "vo_film_start": "1:42.73",
+      "vo_film_end_s": 231.77,
+      "vo_film_end": "3:51.77",
+      "last_word_s": 128.7,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Cows sometimes caught a disease of their own, called cowpox.",
+          "start_s": 0.0,
+          "end_s": 3.52,
+          "film_s": 102.73,
+          "film": "1:42.73"
+        },
+        {
+          "i": 2,
+          "text": "It made small blisters on their udders.",
+          "start_s": 4.22,
+          "end_s": 6.56,
+          "film_s": 106.95,
+          "film": "1:46.95"
+        },
+        {
+          "i": 3,
+          "text": "And the milkmaids who milked them sometimes caught it too, on their hands.",
+          "start_s": 7.24,
+          "end_s": 11.28,
+          "film_s": 109.97,
+          "film": "1:49.97"
+        },
+        {
+          "i": 4,
+          "text": "It was a mild illness.",
+          "start_s": 12.24,
+          "end_s": 13.48,
+          "film_s": 114.97,
+          "film": "1:54.97"
+        },
+        {
+          "i": 5,
+          "text": "A few sore spots, a day or two of feeling unwell, and that was all.",
+          "start_s": 14.06,
+          "end_s": 18.4,
+          "film_s": 116.79,
+          "film": "1:56.79"
+        },
+        {
+          "i": 6,
+          "text": "But in the dairy country, people said something odd.",
+          "start_s": 19.5,
+          "end_s": 22.78,
+          "film_s": 122.23,
+          "film": "2:02.23"
+        },
+        {
+          "i": 7,
+          "text": "Anyone who had had cowpox would never catch smallpox.",
+          "start_s": 23.98,
+          "end_s": 28.22,
+          "film_s": 126.71,
+          "film": "2:06.71"
+        },
+        {
+          "i": 8,
+          "text": "Imagine being a milkmaid in a smallpox year.",
+          "start_s": 29.24,
+          "end_s": 32.32,
+          "film_s": 131.97,
+          "film": "2:11.97"
+        },
+        {
+          "i": 9,
+          "text": "While your neighbours lock their doors, you walk to market without fear, because you had a few sore spots on your hands from the cows.",
+          "start_s": 33.2,
+          "end_s": 40.54,
+          "film_s": 135.93,
+          "film": "2:15.93"
+        },
+        {
+          "i": 10,
+          "text": "It sounds like an old wives' tale.",
+          "start_s": 41.7,
+          "end_s": 43.58,
+          "film_s": 144.43,
+          "film": "2:24.43"
+        },
+        {
+          "i": 11,
+          "text": "But it kept coming true.",
+          "start_s": 44.18,
+          "end_s": 45.64,
+          "film_s": 146.91,
+          "film": "2:26.91"
+        },
+        {
+          "i": 12,
+          "text": "Some farmers even acted on it.",
+          "start_s": 46.76,
+          "end_s": 49.06,
+          "film_s": 149.49,
+          "film": "2:29.49"
+        },
+        {
+          "i": 13,
+          "text": "In seventeen seventy-four, a Dorset farmer called Benjamin Jesty scratched cowpox into the arms of his wife and his two sons, to protect them.",
+          "start_s": 49.82,
+          "end_s": 60.2,
+          "film_s": 152.55,
+          "film": "2:32.55"
+        },
+        {
+          "i": 14,
+          "text": "It worked, but he told almost no one, and he never wrote it down for doctors to read.",
+          "start_s": 60.92,
+          "end_s": 66.62,
+          "film_s": 163.65,
+          "film": "2:43.65"
+        },
+        {
+          "i": 15,
+          "text": "Not far away, in the little town of Berkeley, a country doctor called Edward Jenner had heard the same story from his patients.",
+          "start_s": 67.88,
+          "end_s": 76.58,
+          "film_s": 170.61,
+          "film": "2:50.61"
+        },
+        {
+          "i": 16,
+          "text": "Jenner was a curious man.",
+          "start_s": 77.86,
+          "end_s": 79.34,
+          "film_s": 180.59,
+          "film": "3:00.59"
+        },
+        {
+          "i": 17,
+          "text": "He studied cuckoos and hedgehogs, sent up one of the first hydrogen balloons ever seen in England, and wrote poems for his friends.",
+          "start_s": 80.04,
+          "end_s": 88.24,
+          "film_s": 182.77,
+          "film": "3:02.77"
+        },
+        {
+          "i": 18,
+          "text": "But the milkmaids' story was the puzzle he could not leave alone.",
+          "start_s": 89.36,
+          "end_s": 93.1,
+          "film_s": 192.09,
+          "film": "3:12.09"
+        },
+        {
+          "i": 19,
+          "text": "As a boy, Jenner had been put through variolation himself.",
+          "start_s": 94.36,
+          "end_s": 98.0,
+          "film_s": 197.09,
+          "film": "3:17.09"
+        },
+        {
+          "i": 20,
+          "text": "He knew how hard it was.",
+          "start_s": 98.92,
+          "end_s": 100.8,
+          "film_s": 201.65,
+          "film": "3:21.65"
+        },
+        {
+          "i": 21,
+          "text": "His old teacher in London, the surgeon John Hunter, had once given him some famous advice.",
+          "start_s": 101.92,
+          "end_s": 107.96,
+          "film_s": 204.65,
+          "film": "3:24.65"
+        },
+        {
+          "i": 22,
+          "text": "Why think?",
+          "start_s": 109.14,
+          "end_s": 109.7,
+          "film_s": 211.87,
+          "film": "3:31.87"
+        },
+        {
+          "i": 23,
+          "text": "Why not try the experiment?",
+          "start_s": 110.56,
+          "end_s": 112.12,
+          "film_s": 213.29,
+          "film": "3:33.29"
+        },
+        {
+          "i": 24,
+          "text": "So Jenner started collecting cases, of people who had caught cowpox and then never caught smallpox.",
+          "start_s": 113.04,
+          "end_s": 120.68,
+          "film_s": 215.77,
+          "film": "3:35.77"
+        },
+        {
+          "i": 25,
+          "text": "For years, he wrote them down.",
+          "start_s": 121.7,
+          "end_s": 123.48,
+          "film_s": 224.43,
+          "film": "3:44.43"
+        },
+        {
+          "i": 26,
+          "text": "But a list of stories isn't proof.",
+          "start_s": 123.96,
+          "end_s": 126.34,
+          "film_s": 226.69,
+          "film": "3:46.69"
+        },
+        {
+          "i": 27,
+          "text": "Jenner needed a test.",
+          "start_s": 127.02,
+          "end_s": 128.7,
+          "film_s": 229.75,
+          "film": "3:49.75"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "Cows"
+        ],
+        [
+          0.4,
+          "sometimes"
+        ],
+        [
+          0.86,
+          "caught"
+        ],
+        [
+          1.22,
+          "a"
+        ],
+        [
+          1.4,
+          "disease"
+        ],
+        [
+          1.68,
+          "of"
+        ],
+        [
+          1.92,
+          "their"
+        ],
+        [
+          2.08,
+          "own"
+        ],
+        [
+          2.4,
+          "called"
+        ],
+        [
+          2.82,
+          "cowpox."
+        ],
+        [
+          4.22,
+          "It"
+        ],
+        [
+          4.46,
+          "made"
+        ],
+        [
+          4.68,
+          "small"
+        ],
+        [
+          5.14,
+          "blisters"
+        ],
+        [
+          5.56,
+          "on"
+        ],
+        [
+          5.88,
+          "their"
+        ],
+        [
+          6.08,
+          "udders,"
+        ],
+        [
+          7.24,
+          "and"
+        ],
+        [
+          7.52,
+          "the"
+        ],
+        [
+          7.62,
+          "milkmaids"
+        ],
+        [
+          8.28,
+          "who"
+        ],
+        [
+          8.38,
+          "milk"
+        ],
+        [
+          8.6,
+          "them"
+        ],
+        [
+          8.9,
+          "sometimes"
+        ],
+        [
+          9.36,
+          "caught"
+        ],
+        [
+          9.68,
+          "it"
+        ],
+        [
+          9.92,
+          "too"
+        ],
+        [
+          10.22,
+          "on"
+        ],
+        [
+          10.62,
+          "their"
+        ],
+        [
+          10.8,
+          "hands."
+        ],
+        [
+          12.24,
+          "It"
+        ],
+        [
+          12.48,
+          "was"
+        ],
+        [
+          12.58,
+          "a"
+        ],
+        [
+          12.7,
+          "mild"
+        ],
+        [
+          13.02,
+          "illness,"
+        ],
+        [
+          14.06,
+          "a"
+        ],
+        [
+          14.18,
+          "few"
+        ],
+        [
+          14.38,
+          "sore"
+        ],
+        [
+          14.74,
+          "spots,"
+        ],
+        [
+          15.62,
+          "a"
+        ],
+        [
+          15.76,
+          "day"
+        ],
+        [
+          15.92,
+          "or"
+        ],
+        [
+          16.04,
+          "two"
+        ],
+        [
+          16.26,
+          "of"
+        ],
+        [
+          16.4,
+          "feeling"
+        ],
+        [
+          16.68,
+          "unwell,"
+        ],
+        [
+          17.58,
+          "and"
+        ],
+        [
+          17.72,
+          "that"
+        ],
+        [
+          17.86,
+          "was"
+        ],
+        [
+          18.0,
+          "all."
+        ],
+        [
+          19.5,
+          "But"
+        ],
+        [
+          19.7,
+          "in"
+        ],
+        [
+          19.82,
+          "the"
+        ],
+        [
+          19.98,
+          "dairy"
+        ],
+        [
+          20.26,
+          "country,"
+        ],
+        [
+          21.3,
+          "people"
+        ],
+        [
+          21.6,
+          "said"
+        ],
+        [
+          21.88,
+          "something"
+        ],
+        [
+          22.32,
+          "odd."
+        ],
+        [
+          23.98,
+          "Anyone"
+        ],
+        [
+          24.34,
+          "who"
+        ],
+        [
+          24.68,
+          "had"
+        ],
+        [
+          24.8,
+          "had"
+        ],
+        [
+          25.1,
+          "cowpox"
+        ],
+        [
+          25.9,
+          "would"
+        ],
+        [
+          26.56,
+          "never"
+        ],
+        [
+          26.98,
+          "catch"
+        ],
+        [
+          27.38,
+          "smallpox."
+        ],
+        [
+          29.24,
+          "Imagine"
+        ],
+        [
+          29.84,
+          "being"
+        ],
+        [
+          30.22,
+          "a"
+        ],
+        [
+          30.38,
+          "milkmaid"
+        ],
+        [
+          30.94,
+          "in"
+        ],
+        [
+          31.14,
+          "a"
+        ],
+        [
+          31.3,
+          "smallpox"
+        ],
+        [
+          31.86,
+          "year."
+        ],
+        [
+          33.2,
+          "While"
+        ],
+        [
+          33.4,
+          "your"
+        ],
+        [
+          33.62,
+          "neighbors"
+        ],
+        [
+          33.98,
+          "lock"
+        ],
+        [
+          34.28,
+          "their"
+        ],
+        [
+          34.54,
+          "doors,"
+        ],
+        [
+          35.48,
+          "you"
+        ],
+        [
+          35.72,
+          "walk"
+        ],
+        [
+          35.94,
+          "to"
+        ],
+        [
+          36.16,
+          "market"
+        ],
+        [
+          36.42,
+          "without"
+        ],
+        [
+          36.82,
+          "fear"
+        ],
+        [
+          37.34,
+          "because"
+        ],
+        [
+          37.92,
+          "you"
+        ],
+        [
+          38.08,
+          "had"
+        ],
+        [
+          38.22,
+          "a"
+        ],
+        [
+          38.34,
+          "few"
+        ],
+        [
+          38.5,
+          "sore"
+        ],
+        [
+          38.88,
+          "spots"
+        ],
+        [
+          39.14,
+          "on"
+        ],
+        [
+          39.38,
+          "your"
+        ],
+        [
+          39.52,
+          "hands"
+        ],
+        [
+          39.84,
+          "from"
+        ],
+        [
+          40.08,
+          "the"
+        ],
+        [
+          40.24,
+          "cows."
+        ],
+        [
+          41.7,
+          "It"
+        ],
+        [
+          41.96,
+          "sounds"
+        ],
+        [
+          42.22,
+          "like"
+        ],
+        [
+          42.46,
+          "an"
+        ],
+        [
+          42.56,
+          "old"
+        ],
+        [
+          42.82,
+          "wives'"
+        ],
+        [
+          43.26,
+          "tale,"
+        ],
+        [
+          44.18,
+          "but"
+        ],
+        [
+          44.44,
+          "it"
+        ],
+        [
+          44.58,
+          "kept"
+        ],
+        [
+          44.82,
+          "coming"
+        ],
+        [
+          45.22,
+          "true."
+        ],
+        [
+          46.76,
+          "Some"
+        ],
+        [
+          47.04,
+          "farmers"
+        ],
+        [
+          47.52,
+          "even"
+        ],
+        [
+          47.92,
+          "acted"
+        ],
+        [
+          48.44,
+          "on"
+        ],
+        [
+          48.64,
+          "it."
+        ],
+        [
+          49.82,
+          "In"
+        ],
+        [
+          50.04,
+          "1774,"
+        ],
+        [
+          52.04,
+          "a"
+        ],
+        [
+          52.14,
+          "dorset"
+        ],
+        [
+          52.54,
+          "farmer"
+        ],
+        [
+          53.08,
+          "called"
+        ],
+        [
+          53.44,
+          "Benjamin"
+        ],
+        [
+          54.0,
+          "Jesty"
+        ],
+        [
+          54.58,
+          "scratched"
+        ],
+        [
+          55.54,
+          "cowpox"
+        ],
+        [
+          56.26,
+          "into"
+        ],
+        [
+          56.54,
+          "the"
+        ],
+        [
+          56.74,
+          "arms"
+        ],
+        [
+          57.04,
+          "of"
+        ],
+        [
+          57.2,
+          "his"
+        ],
+        [
+          57.34,
+          "wife"
+        ],
+        [
+          57.68,
+          "and"
+        ],
+        [
+          57.88,
+          "his"
+        ],
+        [
+          58.02,
+          "two"
+        ],
+        [
+          58.3,
+          "sons"
+        ],
+        [
+          58.66,
+          "to"
+        ],
+        [
+          59.34,
+          "protect"
+        ],
+        [
+          59.66,
+          "them."
+        ],
+        [
+          60.92,
+          "It"
+        ],
+        [
+          61.16,
+          "worked,"
+        ],
+        [
+          62.04,
+          "but"
+        ],
+        [
+          62.3,
+          "he"
+        ],
+        [
+          62.42,
+          "told"
+        ],
+        [
+          62.72,
+          "almost"
+        ],
+        [
+          63.06,
+          "no"
+        ],
+        [
+          63.42,
+          "one,"
+        ],
+        [
+          64.14,
+          "and"
+        ],
+        [
+          64.28,
+          "he"
+        ],
+        [
+          64.44,
+          "never"
+        ],
+        [
+          64.68,
+          "wrote"
+        ],
+        [
+          64.92,
+          "it"
+        ],
+        [
+          65.12,
+          "down"
+        ],
+        [
+          65.38,
+          "for"
+        ],
+        [
+          65.68,
+          "doctors"
+        ],
+        [
+          65.96,
+          "to"
+        ],
+        [
+          66.26,
+          "read."
+        ],
+        [
+          67.88,
+          "Not"
+        ],
+        [
+          68.2,
+          "far"
+        ],
+        [
+          68.46,
+          "away,"
+        ],
+        [
+          69.38,
+          "in"
+        ],
+        [
+          69.58,
+          "the"
+        ],
+        [
+          69.68,
+          "little"
+        ],
+        [
+          69.88,
+          "town"
+        ],
+        [
+          70.2,
+          "of"
+        ],
+        [
+          70.42,
+          "Barclay,"
+        ],
+        [
+          71.52,
+          "a"
+        ],
+        [
+          71.68,
+          "country"
+        ],
+        [
+          72.06,
+          "doctor"
+        ],
+        [
+          72.5,
+          "called"
+        ],
+        [
+          72.9,
+          "Edward"
+        ],
+        [
+          73.38,
+          "Jenner"
+        ],
+        [
+          73.66,
+          "had"
+        ],
+        [
+          74.32,
+          "heard"
+        ],
+        [
+          74.52,
+          "the"
+        ],
+        [
+          74.74,
+          "same"
+        ],
+        [
+          74.98,
+          "story"
+        ],
+        [
+          75.4,
+          "from"
+        ],
+        [
+          75.72,
+          "his"
+        ],
+        [
+          75.9,
+          "patients."
+        ],
+        [
+          77.86,
+          "Jenner"
+        ],
+        [
+          77.96,
+          "was"
+        ],
+        [
+          78.22,
+          "a"
+        ],
+        [
+          78.38,
+          "curious"
+        ],
+        [
+          78.82,
+          "man."
+        ],
+        [
+          80.04,
+          "He"
+        ],
+        [
+          80.18,
+          "studied"
+        ],
+        [
+          80.54,
+          "cuckoos"
+        ],
+        [
+          81.12,
+          "and"
+        ],
+        [
+          81.38,
+          "hedgehogs,"
+        ],
+        [
+          82.66,
+          "sent"
+        ],
+        [
+          82.8,
+          "up"
+        ],
+        [
+          83.02,
+          "one"
+        ],
+        [
+          83.18,
+          "of"
+        ],
+        [
+          83.32,
+          "the"
+        ],
+        [
+          83.44,
+          "first"
+        ],
+        [
+          83.76,
+          "hydrogen"
+        ],
+        [
+          84.34,
+          "balloons"
+        ],
+        [
+          84.76,
+          "ever"
+        ],
+        [
+          85.18,
+          "seen"
+        ],
+        [
+          85.52,
+          "in"
+        ],
+        [
+          85.72,
+          "England,"
+        ],
+        [
+          86.7,
+          "and"
+        ],
+        [
+          86.78,
+          "wrote"
+        ],
+        [
+          86.98,
+          "poems"
+        ],
+        [
+          87.38,
+          "for"
+        ],
+        [
+          87.72,
+          "his"
+        ],
+        [
+          87.86,
+          "friends."
+        ],
+        [
+          89.36,
+          "But"
+        ],
+        [
+          89.58,
+          "the"
+        ],
+        [
+          89.72,
+          "milkmaid"
+        ],
+        [
+          90.22,
+          "story"
+        ],
+        [
+          90.66,
+          "was"
+        ],
+        [
+          91.02,
+          "the"
+        ],
+        [
+          91.2,
+          "puzzle"
+        ],
+        [
+          91.58,
+          "he"
+        ],
+        [
+          91.9,
+          "could"
+        ],
+        [
+          92.04,
+          "not"
+        ],
+        [
+          92.3,
+          "leave"
+        ],
+        [
+          92.62,
+          "alone."
+        ],
+        [
+          94.36,
+          "As"
+        ],
+        [
+          94.56,
+          "a"
+        ],
+        [
+          94.72,
+          "boy,"
+        ],
+        [
+          95.7,
+          "Jenner"
+        ],
+        [
+          95.72,
+          "had"
+        ],
+        [
+          95.94,
+          "been"
+        ],
+        [
+          96.14,
+          "put"
+        ],
+        [
+          96.3,
+          "through"
+        ],
+        [
+          96.62,
+          "variolation"
+        ],
+        [
+          97.42,
+          "himself."
+        ],
+        [
+          98.92,
+          "He"
+        ],
+        [
+          99.08,
+          "knew"
+        ],
+        [
+          99.4,
+          "how"
+        ],
+        [
+          99.76,
+          "hard"
+        ],
+        [
+          100.06,
+          "it"
+        ],
+        [
+          100.24,
+          "was."
+        ],
+        [
+          101.92,
+          "His"
+        ],
+        [
+          102.12,
+          "old"
+        ],
+        [
+          102.38,
+          "teacher"
+        ],
+        [
+          102.8,
+          "in"
+        ],
+        [
+          103.04,
+          "London,"
+        ],
+        [
+          103.9,
+          "the"
+        ],
+        [
+          104.0,
+          "surgeon"
+        ],
+        [
+          104.36,
+          "John"
+        ],
+        [
+          104.86,
+          "Hunter,"
+        ],
+        [
+          105.84,
+          "had"
+        ],
+        [
+          106.0,
+          "once"
+        ],
+        [
+          106.28,
+          "given"
+        ],
+        [
+          106.52,
+          "him"
+        ],
+        [
+          106.8,
+          "some"
+        ],
+        [
+          107.04,
+          "famous"
+        ],
+        [
+          107.48,
+          "advice."
+        ],
+        [
+          109.14,
+          "Why"
+        ],
+        [
+          109.36,
+          "think?"
+        ],
+        [
+          110.56,
+          "Why"
+        ],
+        [
+          110.72,
+          "not"
+        ],
+        [
+          110.92,
+          "try"
+        ],
+        [
+          111.32,
+          "the"
+        ],
+        [
+          111.58,
+          "experiment?"
+        ],
+        [
+          113.04,
+          "So"
+        ],
+        [
+          113.84,
+          "Jenner"
+        ],
+        [
+          114.14,
+          "started"
+        ],
+        [
+          114.68,
+          "collecting"
+        ],
+        [
+          115.14,
+          "cases"
+        ],
+        [
+          115.8,
+          "of"
+        ],
+        [
+          116.56,
+          "people"
+        ],
+        [
+          116.92,
+          "who"
+        ],
+        [
+          117.14,
+          "had"
+        ],
+        [
+          117.26,
+          "caught"
+        ],
+        [
+          117.58,
+          "cowpox"
+        ],
+        [
+          118.2,
+          "and"
+        ],
+        [
+          118.9,
+          "then"
+        ],
+        [
+          119.08,
+          "never"
+        ],
+        [
+          119.46,
+          "caught"
+        ],
+        [
+          119.88,
+          "smallpox."
+        ],
+        [
+          121.7,
+          "For"
+        ],
+        [
+          121.9,
+          "years"
+        ],
+        [
+          122.26,
+          "he"
+        ],
+        [
+          122.6,
+          "wrote"
+        ],
+        [
+          122.8,
+          "them"
+        ],
+        [
+          123.02,
+          "down,"
+        ],
+        [
+          123.96,
+          "but"
+        ],
+        [
+          124.4,
+          "a"
+        ],
+        [
+          124.54,
+          "list"
+        ],
+        [
+          124.74,
+          "of"
+        ],
+        [
+          124.94,
+          "stories"
+        ],
+        [
+          125.52,
+          "isn't"
+        ],
+        [
+          126.02,
+          "proof."
+        ],
+        [
+          127.02,
+          "Jenner"
+        ],
+        [
+          127.66,
+          "needed"
+        ],
+        [
+          128.12,
+          "a"
+        ],
+        [
+          128.4,
+          "test."
+        ]
+      ]
+    },
+    {
+      "part": 3,
+      "file": "part03_a_pail_a_lancet_and_a_boy_v02b.mp3",
+      "sha256": "4fff3c55884f94dd0c51294de1eecb2b400450b526a1cca15b18137b1fd23f22",
+      "duration_s": 78.16,
+      "match_rate_pct": 96.6,
+      "chapter_card": "A Pail, a Lancet and a Boy",
+      "card_in_film_s": 232.37,
+      "card_in_film": "3:52.37",
+      "vo_film_start_s": 234.27,
+      "vo_film_start": "3:54.27",
+      "vo_film_end_s": 312.43,
+      "vo_film_end": "5:12.43",
+      "last_word_s": 77.78,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "In May seventeen ninety-six, a young dairymaid called Sarah Nelmes came to Jenner with cowpox on her hand.",
+          "start_s": 0.0,
+          "end_s": 8.76,
+          "film_s": 234.27,
+          "film": "3:54.27"
+        },
+        {
+          "i": 2,
+          "text": "She had caught it from a cow on a nearby farm.",
+          "start_s": 9.48,
+          "end_s": 12.32,
+          "film_s": 243.75,
+          "film": "4:03.75"
+        },
+        {
+          "i": 3,
+          "text": "A cow later remembered by the name Blossom.",
+          "start_s": 12.96,
+          "end_s": 16.06,
+          "film_s": 247.23,
+          "film": "4:07.23"
+        },
+        {
+          "i": 4,
+          "text": "Jenner saw his chance.",
+          "start_s": 17.2,
+          "end_s": 18.9,
+          "film_s": 251.47,
+          "film": "4:11.47"
+        },
+        {
+          "i": 5,
+          "text": "On the fourteenth of May, he took a little matter from one of the spots on Sarah's hand, and placed it in two small scratches on the arm of a boy called James Phipps.",
+          "start_s": 19.8,
+          "end_s": 31.2,
+          "film_s": 254.07,
+          "film": "4:14.07"
+        },
+        {
+          "i": 6,
+          "text": "In his own notes, Jenner described him simply as a healthy boy, about eight years old.",
+          "start_s": 31.96,
+          "end_s": 38.08,
+          "film_s": 266.23,
+          "film": "4:26.23"
+        },
+        {
+          "i": 7,
+          "text": "Over the next week, James felt a little unwell.",
+          "start_s": 39.34,
+          "end_s": 42.12,
+          "film_s": 273.61,
+          "film": "4:33.61"
+        },
+        {
+          "i": 8,
+          "text": "A slight fever, a poor appetite, a night of restlessness.",
+          "start_s": 42.66,
+          "end_s": 46.78,
+          "film_s": 276.93,
+          "film": "4:36.93"
+        },
+        {
+          "i": 9,
+          "text": "Then, just as Jenner had hoped, he was perfectly well again.",
+          "start_s": 47.58,
+          "end_s": 51.86,
+          "film_s": 281.85,
+          "film": "4:41.85"
+        },
+        {
+          "i": 10,
+          "text": "Picture Jenner in those days, watching the boy run about the garden.",
+          "start_s": 53.14,
+          "end_s": 56.86,
+          "film_s": 287.41,
+          "film": "4:47.41"
+        },
+        {
+          "i": 11,
+          "text": "If the old saying was wrong, he had given a child a disease for nothing.",
+          "start_s": 57.7,
+          "end_s": 62.18,
+          "film_s": 291.97,
+          "film": "4:51.97"
+        },
+        {
+          "i": 12,
+          "text": "If it was right, he might be holding the key to the most feared illness on Earth.",
+          "start_s": 62.92,
+          "end_s": 68.38,
+          "film_s": 297.19,
+          "film": "4:57.19"
+        },
+        {
+          "i": 13,
+          "text": "So James had caught cowpox.",
+          "start_s": 69.88,
+          "end_s": 71.84,
+          "film_s": 304.15,
+          "film": "5:04.15"
+        },
+        {
+          "i": 14,
+          "text": "Now came the question that really mattered.",
+          "start_s": 72.62,
+          "end_s": 74.86,
+          "film_s": 306.89,
+          "film": "5:06.89"
+        },
+        {
+          "i": 15,
+          "text": "Would it protect him from smallpox?",
+          "start_s": 75.54,
+          "end_s": 77.78,
+          "film_s": 309.81,
+          "film": "5:09.81"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "In"
+        ],
+        [
+          0.22,
+          "May"
+        ],
+        [
+          0.56,
+          "1796"
+        ],
+        [
+          2.04,
+          "a"
+        ],
+        [
+          2.84,
+          "young"
+        ],
+        [
+          3.14,
+          "dairymaid"
+        ],
+        [
+          3.92,
+          "called"
+        ],
+        [
+          4.34,
+          "Sarah"
+        ],
+        [
+          4.82,
+          "Nelms"
+        ],
+        [
+          5.52,
+          "came"
+        ],
+        [
+          5.98,
+          "to"
+        ],
+        [
+          6.22,
+          "Jenna"
+        ],
+        [
+          6.48,
+          "with"
+        ],
+        [
+          6.98,
+          "cowpox"
+        ],
+        [
+          7.62,
+          "on"
+        ],
+        [
+          8.08,
+          "her"
+        ],
+        [
+          8.3,
+          "hand."
+        ],
+        [
+          9.48,
+          "She"
+        ],
+        [
+          9.6,
+          "had"
+        ],
+        [
+          9.72,
+          "caught"
+        ],
+        [
+          9.94,
+          "it"
+        ],
+        [
+          10.16,
+          "from"
+        ],
+        [
+          10.32,
+          "a"
+        ],
+        [
+          10.44,
+          "cow"
+        ],
+        [
+          10.78,
+          "on"
+        ],
+        [
+          11.28,
+          "a"
+        ],
+        [
+          11.38,
+          "nearby"
+        ],
+        [
+          11.72,
+          "farm,"
+        ],
+        [
+          12.96,
+          "a"
+        ],
+        [
+          13.02,
+          "cow"
+        ],
+        [
+          13.46,
+          "later"
+        ],
+        [
+          14.12,
+          "remembered"
+        ],
+        [
+          14.6,
+          "by"
+        ],
+        [
+          14.98,
+          "the"
+        ],
+        [
+          15.1,
+          "name"
+        ],
+        [
+          15.62,
+          "Blossom."
+        ],
+        [
+          17.2,
+          "Jenna"
+        ],
+        [
+          17.66,
+          "saw"
+        ],
+        [
+          18.18,
+          "his"
+        ],
+        [
+          18.4,
+          "chance."
+        ],
+        [
+          19.8,
+          "On"
+        ],
+        [
+          20.08,
+          "the"
+        ],
+        [
+          20.18,
+          "14th"
+        ],
+        [
+          20.68,
+          "of"
+        ],
+        [
+          20.8,
+          "May"
+        ],
+        [
+          21.1,
+          "he"
+        ],
+        [
+          21.62,
+          "took"
+        ],
+        [
+          21.8,
+          "a"
+        ],
+        [
+          21.94,
+          "little"
+        ],
+        [
+          22.16,
+          "matter"
+        ],
+        [
+          22.5,
+          "from"
+        ],
+        [
+          22.78,
+          "one"
+        ],
+        [
+          22.94,
+          "of"
+        ],
+        [
+          23.08,
+          "the"
+        ],
+        [
+          23.2,
+          "spots"
+        ],
+        [
+          23.48,
+          "on"
+        ],
+        [
+          23.84,
+          "Sarah's"
+        ],
+        [
+          24.36,
+          "hand"
+        ],
+        [
+          24.74,
+          "and"
+        ],
+        [
+          25.38,
+          "placed"
+        ],
+        [
+          25.7,
+          "it"
+        ],
+        [
+          26.04,
+          "in"
+        ],
+        [
+          26.3,
+          "two"
+        ],
+        [
+          26.62,
+          "small"
+        ],
+        [
+          27.08,
+          "scratches"
+        ],
+        [
+          27.68,
+          "on"
+        ],
+        [
+          28.34,
+          "the"
+        ],
+        [
+          28.48,
+          "arm"
+        ],
+        [
+          28.76,
+          "of"
+        ],
+        [
+          28.9,
+          "a"
+        ],
+        [
+          29.04,
+          "boy"
+        ],
+        [
+          29.34,
+          "called"
+        ],
+        [
+          29.94,
+          "James"
+        ],
+        [
+          30.46,
+          "Phipps."
+        ],
+        [
+          31.96,
+          "In"
+        ],
+        [
+          32.16,
+          "his"
+        ],
+        [
+          32.3,
+          "own"
+        ],
+        [
+          32.52,
+          "notes"
+        ],
+        [
+          33.08,
+          "Jenna"
+        ],
+        [
+          33.56,
+          "described"
+        ],
+        [
+          34.04,
+          "him"
+        ],
+        [
+          34.28,
+          "simply"
+        ],
+        [
+          34.72,
+          "as"
+        ],
+        [
+          35.16,
+          "a"
+        ],
+        [
+          35.54,
+          "healthy"
+        ],
+        [
+          35.86,
+          "boy"
+        ],
+        [
+          36.34,
+          "about"
+        ],
+        [
+          36.94,
+          "eight"
+        ],
+        [
+          37.24,
+          "years"
+        ],
+        [
+          37.56,
+          "old."
+        ],
+        [
+          39.34,
+          "Over"
+        ],
+        [
+          39.5,
+          "the"
+        ],
+        [
+          39.62,
+          "next"
+        ],
+        [
+          39.88,
+          "week"
+        ],
+        [
+          40.3,
+          "James"
+        ],
+        [
+          40.92,
+          "felt"
+        ],
+        [
+          41.28,
+          "a"
+        ],
+        [
+          41.44,
+          "little"
+        ],
+        [
+          41.58,
+          "unwell,"
+        ],
+        [
+          42.66,
+          "a"
+        ],
+        [
+          42.76,
+          "slight"
+        ],
+        [
+          43.04,
+          "fever,"
+        ],
+        [
+          43.94,
+          "a"
+        ],
+        [
+          44.08,
+          "poor"
+        ],
+        [
+          44.34,
+          "appetite,"
+        ],
+        [
+          45.38,
+          "a"
+        ],
+        [
+          45.54,
+          "night"
+        ],
+        [
+          45.8,
+          "of"
+        ],
+        [
+          46.1,
+          "restlessness."
+        ],
+        [
+          47.58,
+          "Then"
+        ],
+        [
+          47.98,
+          "just"
+        ],
+        [
+          48.66,
+          "as"
+        ],
+        [
+          48.88,
+          "Jenna"
+        ],
+        [
+          49.12,
+          "had"
+        ],
+        [
+          49.34,
+          "hoped"
+        ],
+        [
+          49.72,
+          "he"
+        ],
+        [
+          50.3,
+          "was"
+        ],
+        [
+          50.42,
+          "perfectly"
+        ],
+        [
+          50.96,
+          "well"
+        ],
+        [
+          51.3,
+          "again."
+        ],
+        [
+          53.14,
+          "Picture"
+        ],
+        [
+          53.24,
+          "Jenna"
+        ],
+        [
+          53.6,
+          "in"
+        ],
+        [
+          53.8,
+          "those"
+        ],
+        [
+          54.08,
+          "days"
+        ],
+        [
+          54.52,
+          "watching"
+        ],
+        [
+          55.18,
+          "the"
+        ],
+        [
+          55.46,
+          "boy"
+        ],
+        [
+          55.72,
+          "run"
+        ],
+        [
+          56.02,
+          "about"
+        ],
+        [
+          56.3,
+          "the"
+        ],
+        [
+          56.46,
+          "garden."
+        ],
+        [
+          57.7,
+          "If"
+        ],
+        [
+          57.94,
+          "the"
+        ],
+        [
+          58.08,
+          "old"
+        ],
+        [
+          58.26,
+          "saying"
+        ],
+        [
+          58.54,
+          "was"
+        ],
+        [
+          58.8,
+          "wrong"
+        ],
+        [
+          59.16,
+          "he"
+        ],
+        [
+          59.72,
+          "had"
+        ],
+        [
+          59.82,
+          "given"
+        ],
+        [
+          60.04,
+          "a"
+        ],
+        [
+          60.26,
+          "child"
+        ],
+        [
+          60.54,
+          "a"
+        ],
+        [
+          60.76,
+          "disease"
+        ],
+        [
+          61.14,
+          "for"
+        ],
+        [
+          61.72,
+          "nothing."
+        ],
+        [
+          62.92,
+          "If"
+        ],
+        [
+          63.18,
+          "it"
+        ],
+        [
+          63.3,
+          "was"
+        ],
+        [
+          63.46,
+          "right"
+        ],
+        [
+          63.82,
+          "he"
+        ],
+        [
+          64.46,
+          "might"
+        ],
+        [
+          64.64,
+          "be"
+        ],
+        [
+          64.82,
+          "holding"
+        ],
+        [
+          65.1,
+          "the"
+        ],
+        [
+          65.36,
+          "key"
+        ],
+        [
+          65.7,
+          "to"
+        ],
+        [
+          66.22,
+          "the"
+        ],
+        [
+          66.34,
+          "most"
+        ],
+        [
+          66.56,
+          "feared"
+        ],
+        [
+          67.06,
+          "illness"
+        ],
+        [
+          67.56,
+          "on"
+        ],
+        [
+          68.06,
+          "earth."
+        ],
+        [
+          69.88,
+          "So"
+        ],
+        [
+          70.1,
+          "James"
+        ],
+        [
+          70.46,
+          "had"
+        ],
+        [
+          70.72,
+          "caught"
+        ],
+        [
+          71.06,
+          "cowpox."
+        ],
+        [
+          72.62,
+          "Now"
+        ],
+        [
+          72.88,
+          "came"
+        ],
+        [
+          73.1,
+          "the"
+        ],
+        [
+          73.32,
+          "question"
+        ],
+        [
+          73.58,
+          "that"
+        ],
+        [
+          73.9,
+          "really"
+        ],
+        [
+          74.28,
+          "mattered."
+        ],
+        [
+          75.54,
+          "Would"
+        ],
+        [
+          75.72,
+          "it"
+        ],
+        [
+          75.88,
+          "protect"
+        ],
+        [
+          76.24,
+          "him"
+        ],
+        [
+          76.56,
+          "from"
+        ],
+        [
+          77.12,
+          "smallpox?"
+        ]
+      ]
+    },
+    {
+      "part": 4,
+      "file": "part04_the_test_v01b.mp3",
+      "sha256": "090676adfb3c3dc9d4ebe94243483702359b71cfbc9f38ec8bfae8f5f532aa8d",
+      "duration_s": 92.16,
+      "match_rate_pct": 97.6,
+      "chapter_card": "The Test",
+      "card_in_film_s": 313.03,
+      "card_in_film": "5:13.03",
+      "vo_film_start_s": 314.93,
+      "vo_film_start": "5:14.93",
+      "vo_film_end_s": 407.09,
+      "vo_film_end": "6:47.09",
+      "last_word_s": 91.7,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "On the first of July, Jenner did the test.",
+          "start_s": 0.0,
+          "end_s": 2.28,
+          "film_s": 314.93,
+          "film": "5:14.93"
+        },
+        {
+          "i": 2,
+          "text": "He gave James a standard variolation, the old treatment that used real smallpox matter, which would normally cause at least a mild illness.",
+          "start_s": 2.88,
+          "end_s": 11.7,
+          "film_s": 317.81,
+          "film": "5:17.81"
+        },
+        {
+          "i": 3,
+          "text": "Then he waited.",
+          "start_s": 12.6,
+          "end_s": 13.3,
+          "film_s": 327.53,
+          "film": "5:27.53"
+        },
+        {
+          "i": 4,
+          "text": "One day.",
+          "start_s": 14.14,
+          "end_s": 14.52,
+          "film_s": 329.07,
+          "film": "5:29.07"
+        },
+        {
+          "i": 5,
+          "text": "Three days.",
+          "start_s": 15.26,
+          "end_s": 15.96,
+          "film_s": 330.19,
+          "film": "5:30.19"
+        },
+        {
+          "i": 6,
+          "text": "A week.",
+          "start_s": 16.7,
+          "end_s": 17.22,
+          "film_s": 331.63,
+          "film": "5:31.63"
+        },
+        {
+          "i": 7,
+          "text": "Nothing happened.",
+          "start_s": 18.36,
+          "end_s": 19.14,
+          "film_s": 333.29,
+          "film": "5:33.29"
+        },
+        {
+          "i": 8,
+          "text": "In Jenner's words, no disease followed.",
+          "start_s": 19.96,
+          "end_s": 22.52,
+          "film_s": 334.89,
+          "film": "5:34.89"
+        },
+        {
+          "i": 9,
+          "text": "Months later, he tried again.",
+          "start_s": 23.56,
+          "end_s": 25.0,
+          "film_s": 338.49,
+          "film": "5:38.49"
+        },
+        {
+          "i": 10,
+          "text": "Still nothing.",
+          "start_s": 25.42,
+          "end_s": 26.04,
+          "film_s": 340.35,
+          "film": "5:40.35"
+        },
+        {
+          "i": 11,
+          "text": "The cowpox had protected the boy.",
+          "start_s": 26.78,
+          "end_s": 28.8,
+          "film_s": 341.71,
+          "film": "5:41.71"
+        },
+        {
+          "i": 12,
+          "text": "Jenner wasn't the first to try cowpox.",
+          "start_s": 28.8,
+          "end_s": 31.56,
+          "film_s": 343.73,
+          "film": "5:43.73"
+        },
+        {
+          "i": 13,
+          "text": "Benjamin Jesty had done it twenty-two years earlier.",
+          "start_s": 32.34,
+          "end_s": 34.98,
+          "film_s": 347.27,
+          "film": "5:47.27"
+        },
+        {
+          "i": 14,
+          "text": "What Jenner did that was new was test it, carefully, and then publish every case, so any doctor could check his work and do it themselves.",
+          "start_s": 35.56,
+          "end_s": 44.16,
+          "film_s": 350.49,
+          "film": "5:50.49"
+        },
+        {
+          "i": 15,
+          "text": "He tested more people, and in seventeen ninety-eight he paid to print a short book.",
+          "start_s": 45.0,
+          "end_s": 49.88,
+          "film_s": 359.93,
+          "film": "5:59.93"
+        },
+        {
+          "i": 16,
+          "text": "He called the disease by a Latin name, variolae vaccinae, which means smallpox of the cow.",
+          "start_s": 50.34,
+          "end_s": 57.74,
+          "film_s": 365.27,
+          "film": "6:05.27"
+        },
+        {
+          "i": 17,
+          "text": "From vacca, the Latin word for cow, came the name for the treatment: vaccination.",
+          "start_s": 58.38,
+          "end_s": 63.74,
+          "film_s": 373.31,
+          "film": "6:13.31"
+        },
+        {
+          "i": 18,
+          "text": "Not everyone believed him.",
+          "start_s": 64.82,
+          "end_s": 66.34,
+          "film_s": 379.75,
+          "film": "6:19.75"
+        },
+        {
+          "i": 19,
+          "text": "Some doctors mocked the idea, and cartoonists drew people sprouting little cow's heads after their jab.",
+          "start_s": 66.76,
+          "end_s": 73.16,
+          "film_s": 381.69,
+          "film": "6:21.69"
+        },
+        {
+          "i": 20,
+          "text": "But the results were hard to argue with.",
+          "start_s": 73.46,
+          "end_s": 75.92,
+          "film_s": 388.39,
+          "film": "6:28.39"
+        },
+        {
+          "i": 21,
+          "text": "Jenner sent cowpox matter to anyone who asked, and in a little hut in his own garden in Berkeley he vaccinated poor families for free.",
+          "start_s": 76.68,
+          "end_s": 85.48,
+          "film_s": 391.61,
+          "film": "6:31.61"
+        },
+        {
+          "i": 22,
+          "text": "Within a few years, doctors were vaccinating people across Britain, Europe and the Americas.",
+          "start_s": 86.34,
+          "end_s": 91.7,
+          "film_s": 401.27,
+          "film": "6:41.27"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "On"
+        ],
+        [
+          0.22,
+          "the"
+        ],
+        [
+          0.32,
+          "1st"
+        ],
+        [
+          0.68,
+          "of"
+        ],
+        [
+          0.82,
+          "July,"
+        ],
+        [
+          1.32,
+          "Jenner"
+        ],
+        [
+          1.4,
+          "did"
+        ],
+        [
+          1.66,
+          "the"
+        ],
+        [
+          1.84,
+          "test."
+        ],
+        [
+          2.88,
+          "He"
+        ],
+        [
+          2.94,
+          "gave"
+        ],
+        [
+          3.18,
+          "James"
+        ],
+        [
+          3.56,
+          "a"
+        ],
+        [
+          3.74,
+          "standard"
+        ],
+        [
+          4.28,
+          "variolation,"
+        ],
+        [
+          5.76,
+          "the"
+        ],
+        [
+          5.84,
+          "old"
+        ],
+        [
+          6.14,
+          "treatment"
+        ],
+        [
+          6.56,
+          "that"
+        ],
+        [
+          6.78,
+          "used"
+        ],
+        [
+          7.04,
+          "real"
+        ],
+        [
+          7.48,
+          "smallpox"
+        ],
+        [
+          8.08,
+          "matter,"
+        ],
+        [
+          9.0,
+          "which"
+        ],
+        [
+          9.18,
+          "would"
+        ],
+        [
+          9.34,
+          "normally"
+        ],
+        [
+          9.68,
+          "cause"
+        ],
+        [
+          10.02,
+          "at"
+        ],
+        [
+          10.22,
+          "least"
+        ],
+        [
+          10.58,
+          "a"
+        ],
+        [
+          10.8,
+          "mild"
+        ],
+        [
+          11.14,
+          "illness."
+        ],
+        [
+          12.6,
+          "Then"
+        ],
+        [
+          12.74,
+          "he"
+        ],
+        [
+          12.88,
+          "waited."
+        ],
+        [
+          14.14,
+          "One"
+        ],
+        [
+          14.22,
+          "day."
+        ],
+        [
+          15.26,
+          "Three"
+        ],
+        [
+          15.58,
+          "days."
+        ],
+        [
+          16.7,
+          "A"
+        ],
+        [
+          16.98,
+          "week."
+        ],
+        [
+          18.36,
+          "Nothing"
+        ],
+        [
+          18.64,
+          "happened."
+        ],
+        [
+          19.96,
+          "In"
+        ],
+        [
+          20.12,
+          "Jenner's"
+        ],
+        [
+          20.52,
+          "words,"
+        ],
+        [
+          21.42,
+          "no"
+        ],
+        [
+          21.62,
+          "disease"
+        ],
+        [
+          21.96,
+          "followed."
+        ],
+        [
+          23.56,
+          "Months"
+        ],
+        [
+          23.68,
+          "later"
+        ],
+        [
+          24.18,
+          "he"
+        ],
+        [
+          24.34,
+          "tried"
+        ],
+        [
+          24.58,
+          "again."
+        ],
+        [
+          25.42,
+          "Still"
+        ],
+        [
+          25.64,
+          "nothing."
+        ],
+        [
+          26.78,
+          "The"
+        ],
+        [
+          26.98,
+          "cowpox"
+        ],
+        [
+          27.6,
+          "had"
+        ],
+        [
+          27.84,
+          "protected"
+        ],
+        [
+          28.26,
+          "the"
+        ],
+        [
+          28.54,
+          "boy."
+        ],
+        [
+          28.8,
+          "Jenner"
+        ],
+        [
+          29.66,
+          "wasn't"
+        ],
+        [
+          29.98,
+          "the"
+        ],
+        [
+          30.12,
+          "first"
+        ],
+        [
+          30.44,
+          "to"
+        ],
+        [
+          30.6,
+          "try"
+        ],
+        [
+          30.94,
+          "cowpox."
+        ],
+        [
+          32.34,
+          "Benjamin"
+        ],
+        [
+          32.56,
+          "Jesty"
+        ],
+        [
+          32.98,
+          "had"
+        ],
+        [
+          33.22,
+          "done"
+        ],
+        [
+          33.36,
+          "it"
+        ],
+        [
+          33.54,
+          "22"
+        ],
+        [
+          33.9,
+          "years"
+        ],
+        [
+          34.4,
+          "earlier."
+        ],
+        [
+          35.56,
+          "What"
+        ],
+        [
+          35.7,
+          "Jenner"
+        ],
+        [
+          35.92,
+          "did"
+        ],
+        [
+          36.16,
+          "that"
+        ],
+        [
+          36.34,
+          "was"
+        ],
+        [
+          36.46,
+          "new"
+        ],
+        [
+          36.82,
+          "was"
+        ],
+        [
+          37.1,
+          "test"
+        ],
+        [
+          37.38,
+          "it"
+        ],
+        [
+          37.82,
+          "carefully"
+        ],
+        [
+          38.44,
+          "and"
+        ],
+        [
+          39.16,
+          "then"
+        ],
+        [
+          39.32,
+          "publish"
+        ],
+        [
+          39.74,
+          "every"
+        ],
+        [
+          40.3,
+          "case"
+        ],
+        [
+          40.78,
+          "so"
+        ],
+        [
+          41.52,
+          "any"
+        ],
+        [
+          41.76,
+          "doctor"
+        ],
+        [
+          42.1,
+          "could"
+        ],
+        [
+          42.36,
+          "check"
+        ],
+        [
+          42.6,
+          "his"
+        ],
+        [
+          42.8,
+          "work"
+        ],
+        [
+          43.16,
+          "and"
+        ],
+        [
+          43.36,
+          "do"
+        ],
+        [
+          43.5,
+          "it"
+        ],
+        [
+          43.66,
+          "themselves."
+        ],
+        [
+          45.0,
+          "He"
+        ],
+        [
+          45.08,
+          "tested"
+        ],
+        [
+          45.36,
+          "more"
+        ],
+        [
+          45.68,
+          "people"
+        ],
+        [
+          46.16,
+          "and"
+        ],
+        [
+          46.7,
+          "in"
+        ],
+        [
+          46.82,
+          "1798"
+        ],
+        [
+          47.9,
+          "he"
+        ],
+        [
+          48.18,
+          "paid"
+        ],
+        [
+          48.5,
+          "to"
+        ],
+        [
+          48.74,
+          "print"
+        ],
+        [
+          48.94,
+          "a"
+        ],
+        [
+          49.14,
+          "short"
+        ],
+        [
+          49.44,
+          "book."
+        ],
+        [
+          50.34,
+          "He"
+        ],
+        [
+          50.56,
+          "called"
+        ],
+        [
+          50.8,
+          "the"
+        ],
+        [
+          50.98,
+          "disease"
+        ],
+        [
+          51.3,
+          "by"
+        ],
+        [
+          51.56,
+          "a"
+        ],
+        [
+          51.7,
+          "Latin"
+        ],
+        [
+          51.96,
+          "name"
+        ],
+        [
+          52.64,
+          "varioli"
+        ],
+        [
+          53.8,
+          "vaccinae,"
+        ],
+        [
+          55.08,
+          "which"
+        ],
+        [
+          55.34,
+          "means"
+        ],
+        [
+          55.92,
+          "smallpox"
+        ],
+        [
+          56.9,
+          "of"
+        ],
+        [
+          57.18,
+          "the"
+        ],
+        [
+          57.34,
+          "cow."
+        ],
+        [
+          58.38,
+          "From"
+        ],
+        [
+          58.68,
+          "Vaca,"
+        ],
+        [
+          59.48,
+          "the"
+        ],
+        [
+          59.66,
+          "Latin"
+        ],
+        [
+          59.94,
+          "word"
+        ],
+        [
+          60.26,
+          "for"
+        ],
+        [
+          60.5,
+          "cow,"
+        ],
+        [
+          61.28,
+          "came"
+        ],
+        [
+          61.5,
+          "the"
+        ],
+        [
+          61.68,
+          "name"
+        ],
+        [
+          61.84,
+          "for"
+        ],
+        [
+          62.08,
+          "the"
+        ],
+        [
+          62.2,
+          "treatment"
+        ],
+        [
+          62.7,
+          "vaccination."
+        ],
+        [
+          64.82,
+          "Not"
+        ],
+        [
+          65.08,
+          "everyone"
+        ],
+        [
+          65.5,
+          "believed"
+        ],
+        [
+          65.92,
+          "him."
+        ],
+        [
+          66.76,
+          "Some"
+        ],
+        [
+          67.02,
+          "doctors"
+        ],
+        [
+          67.42,
+          "mocked"
+        ],
+        [
+          67.8,
+          "the"
+        ],
+        [
+          68.06,
+          "idea"
+        ],
+        [
+          68.48,
+          "and"
+        ],
+        [
+          69.02,
+          "cartoonists"
+        ],
+        [
+          69.76,
+          "drew"
+        ],
+        [
+          69.98,
+          "people"
+        ],
+        [
+          70.4,
+          "sprouting"
+        ],
+        [
+          71.0,
+          "little"
+        ],
+        [
+          71.34,
+          "cows"
+        ],
+        [
+          71.76,
+          "heads"
+        ],
+        [
+          72.06,
+          "after"
+        ],
+        [
+          72.48,
+          "their"
+        ],
+        [
+          72.72,
+          "jab,"
+        ],
+        [
+          73.46,
+          "but"
+        ],
+        [
+          73.94,
+          "the"
+        ],
+        [
+          74.04,
+          "results"
+        ],
+        [
+          74.38,
+          "were"
+        ],
+        [
+          74.72,
+          "hard"
+        ],
+        [
+          74.96,
+          "to"
+        ],
+        [
+          75.16,
+          "argue"
+        ],
+        [
+          75.5,
+          "with."
+        ],
+        [
+          76.68,
+          "Jenner"
+        ],
+        [
+          76.76,
+          "sent"
+        ],
+        [
+          77.08,
+          "cowpox"
+        ],
+        [
+          77.7,
+          "matter"
+        ],
+        [
+          77.96,
+          "to"
+        ],
+        [
+          78.3,
+          "anyone"
+        ],
+        [
+          78.54,
+          "who"
+        ],
+        [
+          78.82,
+          "asked"
+        ],
+        [
+          79.28,
+          "and"
+        ],
+        [
+          79.88,
+          "in"
+        ],
+        [
+          80.02,
+          "a"
+        ],
+        [
+          80.16,
+          "little"
+        ],
+        [
+          80.38,
+          "hut"
+        ],
+        [
+          80.68,
+          "in"
+        ],
+        [
+          80.92,
+          "his"
+        ],
+        [
+          81.04,
+          "own"
+        ],
+        [
+          81.26,
+          "garden"
+        ],
+        [
+          81.78,
+          "in"
+        ],
+        [
+          82.02,
+          "Barkley,"
+        ],
+        [
+          83.1,
+          "he"
+        ],
+        [
+          83.18,
+          "vaccinated"
+        ],
+        [
+          83.72,
+          "poor"
+        ],
+        [
+          84.24,
+          "families"
+        ],
+        [
+          84.78,
+          "for"
+        ],
+        [
+          85.12,
+          "free."
+        ],
+        [
+          86.34,
+          "Within"
+        ],
+        [
+          86.54,
+          "a"
+        ],
+        [
+          86.68,
+          "few"
+        ],
+        [
+          86.86,
+          "years,"
+        ],
+        [
+          87.44,
+          "doctors"
+        ],
+        [
+          87.62,
+          "were"
+        ],
+        [
+          87.9,
+          "vaccinating"
+        ],
+        [
+          88.54,
+          "people"
+        ],
+        [
+          88.86,
+          "across"
+        ],
+        [
+          89.22,
+          "Britain,"
+        ],
+        [
+          90.32,
+          "Europe"
+        ],
+        [
+          90.64,
+          "and"
+        ],
+        [
+          91.12,
+          "the"
+        ],
+        [
+          91.32,
+          "Americas."
+        ]
+      ]
+    },
+    {
+      "part": 5,
+      "file": "part05_the_word_that_saved_millions_v01b.mp3",
+      "sha256": "18b725326c0b40e6bba2250be9f25a2581366a2ff76a2121fa889191f727557f",
+      "duration_s": 102.56,
+      "match_rate_pct": 98.0,
+      "chapter_card": "The Word That Saved Millions",
+      "card_in_film_s": 407.69,
+      "card_in_film": "6:47.69",
+      "vo_film_start_s": 409.59,
+      "vo_film_start": "6:49.59",
+      "vo_film_end_s": 512.15,
+      "vo_film_end": "8:32.15",
+      "last_word_s": 102.44,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "A lifetime later, the French scientist Louis Pasteur made new treatments that trained the body to fight other diseases.",
+          "start_s": 0.0,
+          "end_s": 6.92,
+          "film_s": 409.59,
+          "film": "6:49.59"
+        },
+        {
+          "i": 2,
+          "text": "In honour of Jenner's cowpox, he proposed calling them all by the same name.",
+          "start_s": 7.9,
+          "end_s": 12.6,
+          "film_s": 417.49,
+          "film": "6:57.49"
+        },
+        {
+          "i": 3,
+          "text": "Vaccines.",
+          "start_s": 13.28,
+          "end_s": 13.72,
+          "film_s": 422.87,
+          "film": "7:02.87"
+        },
+        {
+          "i": 4,
+          "text": "So every vaccine, for every disease, still carries the name of a cow.",
+          "start_s": 14.96,
+          "end_s": 19.7,
+          "film_s": 424.55,
+          "film": "7:04.55"
+        },
+        {
+          "i": 5,
+          "text": "And Jenner's idea went further than he could have dreamed.",
+          "start_s": 20.54,
+          "end_s": 23.06,
+          "film_s": 430.13,
+          "film": "7:10.13"
+        },
+        {
+          "i": 6,
+          "text": "In the twentieth century, health workers travelled to every country where smallpox still lived, vaccinating everyone around each new case, until there was nowhere left for it to go.",
+          "start_s": 23.76,
+          "end_s": 34.26,
+          "film_s": 433.35,
+          "film": "7:13.35"
+        },
+        {
+          "i": 7,
+          "text": "On the eighth of May, nineteen eighty, the world's health leaders declared that smallpox was gone.",
+          "start_s": 35.2,
+          "end_s": 40.6,
+          "film_s": 444.79,
+          "film": "7:24.79"
+        },
+        {
+          "i": 8,
+          "text": "A disease that had killed hundreds of millions of people over the centuries had been wiped out, the first ever ended by humans.",
+          "start_s": 41.38,
+          "end_s": 49.0,
+          "film_s": 450.97,
+          "film": "7:30.97"
+        },
+        {
+          "i": 9,
+          "text": "Why was this so groundbreaking?",
+          "start_s": 50.3,
+          "end_s": 51.62,
+          "film_s": 459.89,
+          "film": "7:39.89"
+        },
+        {
+          "i": 10,
+          "text": "Because it showed that the body can learn to fight a disease before it ever meets it.",
+          "start_s": 52.58,
+          "end_s": 58.02,
+          "film_s": 462.17,
+          "film": "7:42.17"
+        },
+        {
+          "i": 11,
+          "text": "A mild, safe cousin of an illness can teach your body to recognise the real thing.",
+          "start_s": 58.66,
+          "end_s": 63.98,
+          "film_s": 468.25,
+          "film": "7:48.25"
+        },
+        {
+          "i": 12,
+          "text": "That one idea is behind every vaccine you have ever had.",
+          "start_s": 64.84,
+          "end_s": 69.22,
+          "film_s": 474.43,
+          "film": "7:54.43"
+        },
+        {
+          "i": 13,
+          "text": "And because no one alive today needs a vaccine against smallpox, most of us have never seen it at all.",
+          "start_s": 70.06,
+          "end_s": 75.62,
+          "film_s": 479.65,
+          "film": "7:59.65"
+        },
+        {
+          "i": 14,
+          "text": "The speckled monster is something you will only ever meet in a history book.",
+          "start_s": 76.3,
+          "end_s": 80.36,
+          "film_s": 485.89,
+          "film": "8:05.89"
+        },
+        {
+          "i": 15,
+          "text": "A milkmaid's hand, a country doctor, and a boy who stayed well.",
+          "start_s": 80.9,
+          "end_s": 85.48,
+          "film_s": 490.49,
+          "film": "8:10.49"
+        },
+        {
+          "i": 16,
+          "text": "Together, they turned a farmyard rumour into proof, and gave a cow's name to medicine.",
+          "start_s": 86.62,
+          "end_s": 92.02,
+          "film_s": 496.21,
+          "film": "8:16.21"
+        },
+        {
+          "i": 17,
+          "text": "Long before Jenner, another mystery frightened people every summer.",
+          "start_s": 93.36,
+          "end_s": 97.34,
+          "film_s": 502.95,
+          "film": "8:22.95"
+        },
+        {
+          "i": 18,
+          "text": "To solve it, a printer in Philadelphia flew a kite into a thunderstorm.",
+          "start_s": 98.14,
+          "end_s": 102.44,
+          "film_s": 507.73,
+          "film": "8:27.73"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "A"
+        ],
+        [
+          0.22,
+          "lifetime"
+        ],
+        [
+          0.52,
+          "later,"
+        ],
+        [
+          1.44,
+          "the"
+        ],
+        [
+          1.5,
+          "French"
+        ],
+        [
+          1.72,
+          "scientist"
+        ],
+        [
+          2.24,
+          "Louis"
+        ],
+        [
+          2.54,
+          "Pasteur"
+        ],
+        [
+          3.2,
+          "made"
+        ],
+        [
+          3.7,
+          "new"
+        ],
+        [
+          4.04,
+          "treatments"
+        ],
+        [
+          4.48,
+          "that"
+        ],
+        [
+          4.8,
+          "trained"
+        ],
+        [
+          5.14,
+          "the"
+        ],
+        [
+          5.36,
+          "body"
+        ],
+        [
+          5.6,
+          "to"
+        ],
+        [
+          5.86,
+          "fight"
+        ],
+        [
+          6.12,
+          "other"
+        ],
+        [
+          6.38,
+          "diseases."
+        ],
+        [
+          7.9,
+          "In"
+        ],
+        [
+          8.16,
+          "honor"
+        ],
+        [
+          8.44,
+          "of"
+        ],
+        [
+          8.76,
+          "Jenner's"
+        ],
+        [
+          9.16,
+          "cowpox,"
+        ],
+        [
+          10.06,
+          "he"
+        ],
+        [
+          10.16,
+          "proposed"
+        ],
+        [
+          10.56,
+          "calling"
+        ],
+        [
+          10.98,
+          "them"
+        ],
+        [
+          11.18,
+          "all"
+        ],
+        [
+          11.4,
+          "by"
+        ],
+        [
+          11.58,
+          "the"
+        ],
+        [
+          11.74,
+          "same"
+        ],
+        [
+          12.02,
+          "name,"
+        ],
+        [
+          13.28,
+          "vaccines."
+        ],
+        [
+          14.96,
+          "So"
+        ],
+        [
+          15.16,
+          "every"
+        ],
+        [
+          15.62,
+          "vaccine"
+        ],
+        [
+          16.18,
+          "for"
+        ],
+        [
+          16.7,
+          "every"
+        ],
+        [
+          17.12,
+          "disease"
+        ],
+        [
+          17.72,
+          "still"
+        ],
+        [
+          18.34,
+          "carries"
+        ],
+        [
+          18.72,
+          "the"
+        ],
+        [
+          18.92,
+          "name"
+        ],
+        [
+          19.1,
+          "of"
+        ],
+        [
+          19.28,
+          "a"
+        ],
+        [
+          19.42,
+          "cow."
+        ],
+        [
+          20.54,
+          "And"
+        ],
+        [
+          20.68,
+          "Jenner's"
+        ],
+        [
+          21.06,
+          "idea"
+        ],
+        [
+          21.36,
+          "went"
+        ],
+        [
+          21.6,
+          "further"
+        ],
+        [
+          21.96,
+          "than"
+        ],
+        [
+          22.28,
+          "he"
+        ],
+        [
+          22.46,
+          "could"
+        ],
+        [
+          22.6,
+          "have"
+        ],
+        [
+          22.72,
+          "dreamed."
+        ],
+        [
+          23.76,
+          "In"
+        ],
+        [
+          23.92,
+          "the"
+        ],
+        [
+          24.04,
+          "20th"
+        ],
+        [
+          24.56,
+          "century,"
+        ],
+        [
+          25.4,
+          "health"
+        ],
+        [
+          25.54,
+          "workers"
+        ],
+        [
+          25.96,
+          "traveled"
+        ],
+        [
+          26.3,
+          "to"
+        ],
+        [
+          26.58,
+          "every"
+        ],
+        [
+          26.92,
+          "country"
+        ],
+        [
+          27.28,
+          "where"
+        ],
+        [
+          27.58,
+          "smallpox"
+        ],
+        [
+          28.08,
+          "still"
+        ],
+        [
+          28.38,
+          "lived,"
+        ],
+        [
+          29.5,
+          "vaccinating"
+        ],
+        [
+          29.92,
+          "everyone"
+        ],
+        [
+          30.48,
+          "around"
+        ],
+        [
+          30.78,
+          "each"
+        ],
+        [
+          31.08,
+          "new"
+        ],
+        [
+          31.38,
+          "case"
+        ],
+        [
+          31.72,
+          "until"
+        ],
+        [
+          32.46,
+          "there"
+        ],
+        [
+          32.64,
+          "was"
+        ],
+        [
+          32.76,
+          "nowhere"
+        ],
+        [
+          33.06,
+          "left"
+        ],
+        [
+          33.44,
+          "for"
+        ],
+        [
+          33.72,
+          "it"
+        ],
+        [
+          33.8,
+          "to"
+        ],
+        [
+          33.98,
+          "go."
+        ],
+        [
+          35.2,
+          "On"
+        ],
+        [
+          35.36,
+          "the"
+        ],
+        [
+          35.46,
+          "8th"
+        ],
+        [
+          35.74,
+          "of"
+        ],
+        [
+          35.88,
+          "May"
+        ],
+        [
+          36.06,
+          "1980,"
+        ],
+        [
+          37.46,
+          "the"
+        ],
+        [
+          37.54,
+          "world's"
+        ],
+        [
+          38.0,
+          "health"
+        ],
+        [
+          38.18,
+          "leaders"
+        ],
+        [
+          38.6,
+          "declared"
+        ],
+        [
+          39.06,
+          "that"
+        ],
+        [
+          39.36,
+          "smallpox"
+        ],
+        [
+          39.98,
+          "was"
+        ],
+        [
+          40.24,
+          "gone."
+        ],
+        [
+          41.38,
+          "A"
+        ],
+        [
+          41.56,
+          "disease"
+        ],
+        [
+          41.86,
+          "that"
+        ],
+        [
+          42.16,
+          "have"
+        ],
+        [
+          42.3,
+          "killed"
+        ],
+        [
+          42.66,
+          "hundreds"
+        ],
+        [
+          43.0,
+          "of"
+        ],
+        [
+          43.28,
+          "millions"
+        ],
+        [
+          43.48,
+          "of"
+        ],
+        [
+          43.74,
+          "people"
+        ],
+        [
+          44.08,
+          "over"
+        ],
+        [
+          44.38,
+          "the"
+        ],
+        [
+          44.52,
+          "centuries"
+        ],
+        [
+          44.98,
+          "had"
+        ],
+        [
+          45.54,
+          "been"
+        ],
+        [
+          45.72,
+          "wiped"
+        ],
+        [
+          46.02,
+          "out,"
+        ],
+        [
+          46.94,
+          "the"
+        ],
+        [
+          47.24,
+          "first"
+        ],
+        [
+          47.58,
+          "ever"
+        ],
+        [
+          47.92,
+          "ended"
+        ],
+        [
+          48.3,
+          "by"
+        ],
+        [
+          48.56,
+          "humans."
+        ],
+        [
+          50.3,
+          "Why"
+        ],
+        [
+          50.52,
+          "was"
+        ],
+        [
+          50.68,
+          "this"
+        ],
+        [
+          50.86,
+          "so"
+        ],
+        [
+          51.06,
+          "groundbreaking?"
+        ],
+        [
+          52.58,
+          "Because"
+        ],
+        [
+          52.88,
+          "it"
+        ],
+        [
+          53.06,
+          "showed"
+        ],
+        [
+          53.34,
+          "that"
+        ],
+        [
+          53.6,
+          "the"
+        ],
+        [
+          53.76,
+          "body"
+        ],
+        [
+          54.06,
+          "can"
+        ],
+        [
+          54.36,
+          "learn"
+        ],
+        [
+          54.66,
+          "to"
+        ],
+        [
+          54.92,
+          "fight"
+        ],
+        [
+          55.16,
+          "a"
+        ],
+        [
+          55.34,
+          "disease"
+        ],
+        [
+          55.96,
+          "before"
+        ],
+        [
+          56.58,
+          "it"
+        ],
+        [
+          56.94,
+          "ever"
+        ],
+        [
+          57.22,
+          "meets"
+        ],
+        [
+          57.46,
+          "it."
+        ],
+        [
+          58.66,
+          "A"
+        ],
+        [
+          58.78,
+          "mild,"
+        ],
+        [
+          59.5,
+          "safe"
+        ],
+        [
+          59.88,
+          "cousin"
+        ],
+        [
+          60.3,
+          "of"
+        ],
+        [
+          60.48,
+          "an"
+        ],
+        [
+          60.6,
+          "illness"
+        ],
+        [
+          60.94,
+          "can"
+        ],
+        [
+          61.48,
+          "teach"
+        ],
+        [
+          61.76,
+          "your"
+        ],
+        [
+          62.04,
+          "body"
+        ],
+        [
+          62.3,
+          "to"
+        ],
+        [
+          62.54,
+          "recognize"
+        ],
+        [
+          63.02,
+          "the"
+        ],
+        [
+          63.34,
+          "real"
+        ],
+        [
+          63.54,
+          "thing."
+        ],
+        [
+          64.84,
+          "That"
+        ],
+        [
+          65.1,
+          "one"
+        ],
+        [
+          65.42,
+          "idea"
+        ],
+        [
+          65.9,
+          "is"
+        ],
+        [
+          66.46,
+          "behind"
+        ],
+        [
+          66.78,
+          "every"
+        ],
+        [
+          67.22,
+          "vaccine"
+        ],
+        [
+          67.72,
+          "you"
+        ],
+        [
+          68.28,
+          "have"
+        ],
+        [
+          68.44,
+          "ever"
+        ],
+        [
+          68.76,
+          "had."
+        ],
+        [
+          70.06,
+          "And"
+        ],
+        [
+          70.18,
+          "because"
+        ],
+        [
+          70.42,
+          "no"
+        ],
+        [
+          70.64,
+          "one"
+        ],
+        [
+          70.82,
+          "alive"
+        ],
+        [
+          71.12,
+          "today"
+        ],
+        [
+          71.54,
+          "needs"
+        ],
+        [
+          71.92,
+          "a"
+        ],
+        [
+          72.14,
+          "vaccine"
+        ],
+        [
+          72.46,
+          "against"
+        ],
+        [
+          72.74,
+          "smallpox,"
+        ],
+        [
+          73.76,
+          "most"
+        ],
+        [
+          73.98,
+          "of"
+        ],
+        [
+          74.2,
+          "us"
+        ],
+        [
+          74.38,
+          "have"
+        ],
+        [
+          74.5,
+          "never"
+        ],
+        [
+          74.7,
+          "seen"
+        ],
+        [
+          74.94,
+          "it"
+        ],
+        [
+          75.12,
+          "at"
+        ],
+        [
+          75.26,
+          "all."
+        ],
+        [
+          76.3,
+          "The"
+        ],
+        [
+          76.5,
+          "speckled"
+        ],
+        [
+          76.96,
+          "monster"
+        ],
+        [
+          77.44,
+          "is"
+        ],
+        [
+          77.92,
+          "something"
+        ],
+        [
+          78.2,
+          "you"
+        ],
+        [
+          78.46,
+          "will"
+        ],
+        [
+          78.56,
+          "only"
+        ],
+        [
+          78.88,
+          "ever"
+        ],
+        [
+          79.08,
+          "meet"
+        ],
+        [
+          79.36,
+          "in"
+        ],
+        [
+          79.58,
+          "a"
+        ],
+        [
+          79.7,
+          "history"
+        ],
+        [
+          79.96,
+          "book,"
+        ],
+        [
+          80.9,
+          "a"
+        ],
+        [
+          81.04,
+          "milkmaid's"
+        ],
+        [
+          81.7,
+          "hand,"
+        ],
+        [
+          82.4,
+          "a"
+        ],
+        [
+          82.58,
+          "country"
+        ],
+        [
+          82.92,
+          "doctor,"
+        ],
+        [
+          83.22,
+          "and"
+        ],
+        [
+          83.92,
+          "a"
+        ],
+        [
+          84.04,
+          "boy"
+        ],
+        [
+          84.34,
+          "who"
+        ],
+        [
+          84.66,
+          "stayed"
+        ],
+        [
+          84.96,
+          "well."
+        ],
+        [
+          86.62,
+          "Together,"
+        ],
+        [
+          87.0,
+          "they"
+        ],
+        [
+          87.26,
+          "turned"
+        ],
+        [
+          87.56,
+          "a"
+        ],
+        [
+          87.74,
+          "farmyard"
+        ],
+        [
+          88.26,
+          "rumor"
+        ],
+        [
+          88.6,
+          "into"
+        ],
+        [
+          89.08,
+          "proof"
+        ],
+        [
+          89.5,
+          "and"
+        ],
+        [
+          90.3,
+          "gave"
+        ],
+        [
+          90.5,
+          "a"
+        ],
+        [
+          90.66,
+          "cow's"
+        ],
+        [
+          91.1,
+          "name"
+        ],
+        [
+          91.3,
+          "to"
+        ],
+        [
+          91.58,
+          "medicine."
+        ],
+        [
+          93.36,
+          "Long"
+        ],
+        [
+          93.56,
+          "before"
+        ],
+        [
+          93.94,
+          "Jenner,"
+        ],
+        [
+          94.88,
+          "another"
+        ],
+        [
+          95.14,
+          "mystery"
+        ],
+        [
+          95.66,
+          "frightened"
+        ],
+        [
+          96.06,
+          "people"
+        ],
+        [
+          96.58,
+          "every"
+        ],
+        [
+          96.98,
+          "summer."
+        ],
+        [
+          98.14,
+          "To"
+        ],
+        [
+          98.3,
+          "solve"
+        ],
+        [
+          98.56,
+          "it,"
+        ],
+        [
+          99.24,
+          "a"
+        ],
+        [
+          99.36,
+          "printer"
+        ],
+        [
+          99.62,
+          "in"
+        ],
+        [
+          99.88,
+          "Philadelphia"
+        ],
+        [
+          100.4,
+          "flew"
+        ],
+        [
+          100.9,
+          "a"
+        ],
+        [
+          101.04,
+          "kite"
+        ],
+        [
+          101.4,
+          "into"
+        ],
+        [
+          101.68,
+          "a"
+        ],
+        [
+          101.88,
+          "thunderstorm."
+        ]
+      ]
+    }
+  ]
+}
