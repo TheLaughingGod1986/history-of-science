@@ -32,6 +32,10 @@ class Chapters(unittest.TestCase):
         self.assertEqual(ch[0]["text"], "Open line one. Open line two.")
         self.assertEqual(ch[1]["text"], "Para one.\n\nPara two continues on a second line.\n\nWe make one of these every week.")
 
+    def test_notes_after_rule_are_not_spoken(self):
+        md = SCRIPT + "\n| stray | table |\n\n---\n\n## New claims for FACT_NOTES\n\n| Claim | Source |\n|---|---|\n| x | y |\n\nA note paragraph.\n"
+        self.assertEqual(vo_take.spoken_chapters(md), vo_take.spoken_chapters(SCRIPT))
+
     def test_matches_hand_built_026_parts(self):
         root = pathlib.Path(__file__).resolve().parents[2]
         try:
