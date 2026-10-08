@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "updated_by": "Claude (desk reviewer)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -77,9 +77,10 @@
     }
   ],
   "next_steps": [
+    "006 Part 03 picture on the free Vertex trial now (Ben, 8 Oct): 16 mints, about £11 first takes of the £20.59 usable; stop at £5 left. Then the VO queue resumes.",
     "007 Shorts A–C voiceover (Cursor, now), then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. At about 0.47 credits per char the whole queue needs about 12k of the 70k pool; floor 40k until the 30 Oct reset.",
+    "006 picture: Parts 04–05 on Flow after the 12 Oct refill, then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.",
     "Mon 12 Oct: Flow credits refill (AI Ultra). Cursor posts the new balance and re-prices 006 Parts 03–05, then 007, on Flow rates; Claude passes before any mint.",
-    "006 picture: Parts 03–05 once priced (Flow first, then free Vertex, never past £0), then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.",
     "007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.",
     "008 edit: narration runs 9:14.8, over the 7–9 min window; the §4 pause trim on the assembled film has to bring it in.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its three Shorts, cards, end screen, pinned comment)."
@@ -94,7 +95,7 @@
     {
       "pool": "Vertex free trial (picture)",
       "left": "£25.59 (11%)",
-      "rule": "never past £0, keep £5 buffer; trial ends 10 Nov",
+      "rule": "free trial, use it before it ends 10 Nov; never past £0, stop at £5 left. Now: 006 Part 03 (Ben, 8 Oct)",
       "checked": "7 Oct"
     },
     {
@@ -190,7 +191,7 @@
           "progress": 0.36,
           "owner": "Cursor",
           "due": "2026-10-25",
-          "note": "Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets; pace set by Flow and Vertex credit",
+          "note": "Part 01 12/12 kept; Part 02 rough v02 held; Part 03 (16 Vertex mints, about £11 first takes) goes on the free Vertex trial now (Ben, 8 Oct); Parts 04–05 on Flow after the 12 Oct refill",
           "steps": [
             1,
             5
@@ -199,8 +200,8 @@
           "left": "about 3 weeks",
           "eta": "2026-10-25",
           "underway": false,
-          "waiting": "Cursor to post today's Flow and Vertex balances (Tue resets) from the Mini; then Claude prices Parts 03–05",
-          "since": "2026-10-06"
+          "waiting": "Cursor: 006 Part 03 on Vertex once the 007 Short in hand is done; stop at £5 left",
+          "since": "2026-10-08"
         },
         "edit": {
           "status": "todo",
