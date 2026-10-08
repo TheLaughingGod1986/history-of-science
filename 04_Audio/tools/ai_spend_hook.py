@@ -29,8 +29,12 @@ def spend(pool: str, amount: float, film: str, what: str, by: str | None = None)
     if not AI_SPEND.exists():
         print(f"  ai_spend: {AI_SPEND} missing; spend not recorded ({pool} {amount} {what})", flush=True)
         return
-    r = subprocess.run([sys.executable, str(AI_SPEND), "spend", "--pool", pool, "--amount", f"{amount:g}",
-                        "--film", film, "--what", what, "--by", by.lower()],
-                       cwd=OWB, capture_output=True, text=True)
+    try:
+        r = subprocess.run([sys.executable, str(AI_SPEND), "spend", "--pool", pool, "--amount", f"{amount:g}",
+                            "--film", film, "--what", what, "--by", by.lower()],
+                           cwd=OWB, capture_output=True, text=True, timeout=30)
+    except (OSError, subprocess.SubprocessError) as e:  # never let measurement stall or stop a paid mint
+        print(f"  ai_spend: not recorded ({type(e).__name__}: {e})"[:240], flush=True)
+        return
     if r.returncode != 0:
         print(f"  ai_spend: not recorded ({(r.stderr or r.stdout).strip()[:200]})", flush=True)

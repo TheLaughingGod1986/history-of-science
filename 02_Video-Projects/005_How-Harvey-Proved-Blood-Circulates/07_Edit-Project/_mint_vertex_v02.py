@@ -424,7 +424,7 @@ def finish(c, op, pid: str, take: int, t0: float) -> None:
     log = set_take(file=rel(dest), sha256=sha256(dest), duration_s=round(dur, 3),
                    uat_sheet=rel(sheet), motion=motion_stats(dest),
                    api_s=round(time.time() - t0, 1), status="PENDING_UAT", at=now())
-    t = next(t for t in log["takes"] if t["plate"] == pid and t["take"] == take)
+    t = next((t for t in log["takes"] if t["plate"] == pid and t["take"] == take), {})
     ai_spend("vertex", round(float(t.get("cost_usd", 0)) * GBP_PER_USD, 2), film_of(PROJ),
              f"P{PART}:{pid} take {take} {t.get('quality')} ({t.get('model')}, {t.get('seconds')} s)")
     print(json.dumps({"file": rel(dest), "duration_s": round(dur, 3), "uat_sheet": rel(sheet)}))
