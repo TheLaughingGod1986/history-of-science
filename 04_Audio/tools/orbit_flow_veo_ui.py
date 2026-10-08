@@ -2799,6 +2799,22 @@ def wait_and_download(
     raise TimeoutError(f"Flow video not ready after {timeout_s}s")
 
 
+
+FLOW_TAKE_CREDITS = {"quality": 100, "fast": 10, "lite": 5}
+
+
+def _record_flow_spend(dest: Path, model: str) -> None:
+    """One ai_spend line per Flow take (AI spend month, 8 Oct 2026), written at Create because Flow charges on submit."""
+    try:
+        from ai_spend_hook import film_of, spend
+    except ImportError as e:
+        print(f"  ai_spend: not recorded ({e})", flush=True)
+        return
+    tier = model.rsplit("-", 1)[-1].strip().lower()
+    credits = 0 if "low" in model.lower() else FLOW_TAKE_CREDITS.get(tier, 0)
+    spend("flow", credits, film_of(dest), f"Flow take {Path(dest).stem} ({model})")
+
+
 def _generate_clip_once(
     page,
     prompt: str,
@@ -2906,6 +2922,7 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (start-frame I2V)", flush=True)
+        _record_flow_spend(dest, model)
         settle_after_nav(page, wait_ms=1200)
         try:
             confirm_generation_spend(page)
@@ -2928,6 +2945,7 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (scenery-only, no Orbit ref)", flush=True)
+        _record_flow_spend(dest, model)
         settle_after_nav(page, wait_ms=1200)
         try:
             confirm_generation_spend(page)
@@ -2953,6 +2971,7 @@ def _generate_clip_once(
         print("  submitting Create…", flush=True)
         submit_create(page)
         print("  submitted Create (identity-locked, Orbit ref attached)", flush=True)
+        _record_flow_spend(dest, model)
         settle_after_nav(page, wait_ms=1200)
         try:
             confirm_generation_spend(page)
