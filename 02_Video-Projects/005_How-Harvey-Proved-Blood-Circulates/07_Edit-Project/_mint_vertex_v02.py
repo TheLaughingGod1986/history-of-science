@@ -31,6 +31,8 @@ from pathlib import Path
 
 PROJ = Path(__file__).resolve().parents[1]
 REPO = PROJ.parents[1]
+sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
+from ai_spend_hook import film_of, spend as ai_spend  # noqa: E402
 EDIT = PROJ / "07_Edit-Project"
 PART = "02"
 BOARD = LOG = STILLS = RAW = UAT = LOCK = Path()
@@ -299,6 +301,8 @@ def cmd_still(a) -> None:
            "style_refs": [rel(r) for r, _ in refs],
            "extra": a.extra, "cost_usd": USD_PER_STILL, "at": now()}
     update_log(lambda log: log["stills"].append(rec))
+    ai_spend("vertex", round(USD_PER_STILL * GBP_PER_USD, 3), film_of(PROJ),
+             f"P{PART}:{a.plate} start still v{n:02d} ({IMAGE_MODEL})")
     print(f"SAVED {dest}")
     return dest
 
@@ -420,6 +424,9 @@ def finish(c, op, pid: str, take: int, t0: float) -> None:
     log = set_take(file=rel(dest), sha256=sha256(dest), duration_s=round(dur, 3),
                    uat_sheet=rel(sheet), motion=motion_stats(dest),
                    api_s=round(time.time() - t0, 1), status="PENDING_UAT", at=now())
+    t = next((t for t in log["takes"] if t["plate"] == pid and t["take"] == take), {})
+    ai_spend("vertex", round(float(t.get("cost_usd", 0)) * GBP_PER_USD, 2), film_of(PROJ),
+             f"P{PART}:{pid} take {take} {t.get('quality')} ({t.get('model')}, {t.get('seconds')} s)")
     print(json.dumps({"file": rel(dest), "duration_s": round(dur, 3), "uat_sheet": rel(sheet)}))
     print(f"running total ${log['cost_usd_total']:.2f}")
 
