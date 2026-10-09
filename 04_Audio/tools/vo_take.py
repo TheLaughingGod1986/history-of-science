@@ -15,7 +15,7 @@ It always:
 - uses the locked voice from `hos_voice.py` (Ben Orbit Narrator, eleven_v3, speed 1.04). There is no voice option.
 - calls the API only (never the ElevenLabs website) and makes one take. It refuses if the stem already exists, unless
   you pass --retake with Claude's comment id.
-- stops before spending if the pool is under --floor characters (default 50,000).
+- stops before spending if the pool is under --floor characters (default 0: no floor, Ben 9 Oct 2026).
 - runs Scribe and diffs the transcript against the script words.
 - writes one `<stem>_TAKE.json` (take, loudness, Scribe diff, vo_check verdict and credits) next to the audio, plus
   `stt/<stem>/`. Audio stays out of git.
@@ -167,7 +167,7 @@ def main(argv=None) -> int:
     ap.add_argument("--stem", required=True)
     ap.add_argument("--order", action="append", default=[], help="Claude comment id(s) that cleared this take")
     ap.add_argument("--gap", type=float, default=0.7, help="seconds of silence between chapters")
-    ap.add_argument("--floor", type=int, default=50_000)
+    ap.add_argument("--floor", type=int, default=0)
     ap.add_argument("--retake", metavar="CLAUDE_COMMENT_ID", help="allow replacing an existing stem")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args(argv)

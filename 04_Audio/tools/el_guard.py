@@ -10,7 +10,8 @@ spends credit (text-to-speech, sound effects, music). Generators need no change.
   the same machine is taken over.
 - **Pause file.** If `<desk>/elevenlabs/TTS_PAUSE` exists, nothing is spent.
 - **Credit floor.** A spend that would leave fewer than `EL_CREDIT_FLOOR`
-  characters (default 50,000) is refused.
+  characters (default 0: no floor, Ben 9 Oct 2026, "keep going until the credit
+  runs out") is refused, so a request never asks for more than is left.
 - **Ledger.** Every spend is appended to `<desk>/elevenlabs/ledger.jsonl`:
   time, pid, script, endpoint, characters, HTTP status, credits before.
 
@@ -35,7 +36,7 @@ SPEND_PREFIXES = (
     "/v1/speech-to-speech",
     "/v1/speech-to-text",  # Scribe bills the same pool
 )
-DEFAULT_FLOOR = 50_000
+DEFAULT_FLOOR = 0  # Ben, 9 Oct 2026: no floor; spend until the credit runs out
 
 
 class SpendRefused(RuntimeError):

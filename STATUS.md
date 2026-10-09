@@ -41,7 +41,7 @@
 ## Next steps (in order)
 
 1. 006 Part 03 picture on the free Vertex trial now (Ben, 8 Oct): 16 mints, about £11 first takes of the £20.59 usable; stop at £5 left. Then the VO queue resumes.
-2. 007 Shorts A–C voiceover (Cursor, now), then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. At about 0.47 credits per char the whole queue needs about 12k of the 70k pool; floor 40k until the 30 Oct reset.
+2. 007 Shorts A–C voiceover (Cursor, now), then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. At about 0.47 credits per char the whole queue needs about 12k; no ElevenLabs floor (Ben, 9 Oct: keep going until the credit runs out), so it goes ahead now.
 3. 006 picture: Parts 04–05 on Flow after the 12 Oct refill, then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.
 4. Mon 12 Oct: Flow credits refill (AI Ultra). Cursor posts the new balance and re-prices 006 Parts 03–05, then 007, on Flow rates; Claude passes before any mint.
 5. 007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.
@@ -52,7 +52,7 @@
 
 | Pool | Left | Rule | Checked |
 |---|---|---|---|
-| ElevenLabs (voice) | 70,237 of 209,536 | voice only; floor 40k until the Fri 30 Oct reset (Ben, 7 Oct), then 50k; eleven_v3 bills about 0.47 credits per char (008: 7,497 chars cost 3,523) | 7 Oct |
+| ElevenLabs (voice) | 70,237 of 209,536 | voice and both channels' music (one account); no floor (Ben, 9 Oct: keep going until the credit runs out), resets Fri 30 Oct; eleven_v3 bills about 0.47 credits per char (008: 7,497 chars cost 3,523) | 7 Oct |
 | Vertex free trial (picture) | £25.59 (11%) | free trial, use it before it ends 10 Nov; never past £0, stop at £5 left. Now: 006 Part 03 (Ben, 8 Oct) | 7 Oct |
 | Flow (picture) | 52 credits; refills 12 Oct | Flow first for picture; AI Ultra active (renews 12 Oct, Ben 7 Oct) — no picture spend before the refill | 7 Oct |
 

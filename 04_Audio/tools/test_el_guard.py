@@ -48,7 +48,15 @@ class GuardTest(unittest.TestCase):
         self.assertEqual(rows[0]["left_before"], 90_000)
         self.assertEqual(rows[0]["status"], 200)
 
-    def test_floor_refuses(self):
+    def test_no_floor_by_default_but_never_more_than_is_left(self):
+        # Ben, 9 Oct 2026: no floor; keep going until the credit runs out.
+        el_guard.before_spend("/v1/text-to-speech/x", {"text": "a" * 2000}, sub(2_500))
+        el_guard._last.clear()
+        with self.assertRaises(el_guard.SpendRefused):
+            el_guard.before_spend("/v1/text-to-speech/x", {"text": "a" * 2000}, sub(1_500))
+
+    def test_floor_refuses_when_set(self):
+        os.environ["EL_CREDIT_FLOOR"] = "50000"
         with self.assertRaises(el_guard.SpendRefused):
             el_guard.before_spend("/v1/text-to-speech/x", {"text": "a" * 2000}, sub(51_000))
 

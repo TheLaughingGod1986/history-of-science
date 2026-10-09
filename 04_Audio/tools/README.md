@@ -19,7 +19,7 @@ Every POST that spends ElevenLabs credit through `el_client.request` (text-to-sp
 
 - **One recorder at a time:** the first spend takes `~/_desk/locks/elevenlabs.lock` for the life of the process. A second live process is refused with the holder's script and pid. A lock left by a dead process is taken over.
 - **Pause:** if `~/_desk/elevenlabs/TTS_PAUSE` exists, nothing is spent.
-- **Floor:** a spend that would leave fewer than 50,000 characters is refused (`EL_CREDIT_FLOOR` to change it).
+- **Floor:** none (Ben, 9 Oct 2026: "no floor, keep going until the credit runs out"). A spend that needs more than is left is refused, so nothing fails half-way. `EL_CREDIT_FLOOR` can still set one for a test.
 - **Ledger:** each spend is appended to `~/_desk/elevenlabs/ledger.jsonl` (time, pid, script, endpoint, characters, status, balance before). Post it with each VO evidence pack.
 
 Generators must call `el_client.request`, never `urllib` straight at the API. Tests: `python3 04_Audio/tools/test_el_guard.py`.
