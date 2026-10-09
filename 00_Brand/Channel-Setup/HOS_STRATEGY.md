@@ -27,7 +27,7 @@ Inspiration: [Animistry](https://www.youtube.com/@ytAnimistry) for the look and 
 
 ## The week
 
-One long and three Shorts. Never more than one Short a day.
+One long and three Shorts (two from 007 on: test B, search-titled; see AGENTS.md). Never more than one Short a day.
 
 | Day (UK) | Type | Job |
 |---|---|---|
