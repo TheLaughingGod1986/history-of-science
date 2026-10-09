@@ -1,0 +1,60 @@
+{
+  "film": "004_Whats-Really-Inside-An-Atom",
+  "what": "thumb C v07 repaint",
+  "authority": "OWB #99 comment 6084771583 (Claude, 9 Oct 2026); job J0097",
+  "model": "gemini-2.5-flash-image",
+  "path": "vertex",
+  "vertex_project": "gen-lang-client-0538779324",
+  "prompt": "Image 1 is the live History of Science long thumbnail: match its premium 3D cartoon painting, warm golden library light, bookshelves, green curtain, arched window, and its painted serif title lettering with gold flourishes exactly. Image 2 is the earlier layout of this thumbnail, for composition only; do not copy its text or its tile positions. Image 3 is the Explorer: match him exactly (round thin gold glasses, teal long coat, tan waistcoat, brown bow tie, messy brown hair, satchel), exactly one Explorer.\n\nPaint a new 16:9 thumbnail in the same golden library. Hero object: two large square periodic-table element tiles side by side, standing upright on a polished wooden desk, painted as solid physical objects in the scene: thick carved wooden frames, smooth cream enamel faces, soft contact shadows on the desk, warm window light and gentle rim glow on their edges, the right-hand tile glowing slightly warmer gold. The tile faces are COMPLETELY BLANK: no letters, no numbers, no symbols, no marks of any kind on them. Together the two tiles fill about the middle-right half of the frame, from about 40% to 88% of the width, tops at about 15% of the height, bottoms resting on the desk at about 78% of the height. Both tiles fully in frame with clear space around them. Keep the bottom-right corner of the frame empty desk and shadow only (a duration badge sits there).\n\nUpper left: the painted title lettering in the same style as Image 1, two lines: 'THE HIDDEN' in cream, and below it 'NUMBER' larger in gold, with small gold flourishes above and below. Spell it exactly THE HIDDEN NUMBER. No other text anywhere in the picture.\n\nLower left: the Explorer small, about a third of the frame height, standing at the desk, looking up at the tiles with curiosity. He is a garnish, not the subject.\n\nHARD REJECT: any text other than THE HIDDEN NUMBER, letters or numbers on the tiles, flat shapes, split panels, photoreal, a plain dark background, objects cut off by the frame edge, anything in the bottom-right corner, logos, an orange robot.",
+  "paints": [
+    {
+      "k": 1,
+      "file": "hos_004_thumb_C_hidden_number_live_v07_plate01.jpg",
+      "cost_usd": 0.039,
+      "at": "2026-10-09T16:27:31+00:00"
+    },
+    {
+      "k": 2,
+      "file": "hos_004_thumb_C_hidden_number_live_v07_plate02.jpg",
+      "cost_usd": 0.039,
+      "at": "2026-10-09T16:27:43+00:00"
+    }
+  ],
+  "lettered": [
+    {
+      "plate": "hos_004_thumb_C_hidden_number_live_v07_plate01.jpg",
+      "te_face": [
+        530,
+        222,
+        818,
+        568
+      ],
+      "i_face": [
+        864,
+        196,
+        1198,
+        598
+      ],
+      "out": "hos_004_thumb_C_hidden_number_live_v07.jpg",
+      "at": "2026-10-09T16:27:58+00:00"
+    },
+    {
+      "plate": "hos_004_thumb_C_hidden_number_live_v07_plate01.jpg",
+      "te_face": [
+        530,
+        222,
+        818,
+        568
+      ],
+      "i_face": [
+        864,
+        196,
+        1198,
+        598
+      ],
+      "out": "hos_004_thumb_C_hidden_number_live_v07.jpg",
+      "at": "2026-10-09T16:28:11+00:00"
+    }
+  ],
+  "cost_usd_total": 0.078
+}

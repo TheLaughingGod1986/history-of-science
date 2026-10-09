@@ -1,0 +1,21 @@
+{
+  "parentTitle": "What's Really Inside an Atom?",
+  "version": "v07",
+  "status": "C v07 for Claude review (OWB #99 comment 6084771583; job J0097). Repainted whole on Vertex gemini-2.5-flash-image: tiles painted into the scene with blank faces, title painted, Te/I in Georgia Bold and 52/53 in Times New Roman Bold (lining figures; Georgia's old-style 52 read as 5 squared) added by hand. A/B v04 unchanged. Nothing to Studio.",
+  "factLock": {"Te": 52, "I": 53},
+  "build": "_paint_hos_004_thumb_C_v07.py (paint, then letter plate01 --te 530 222 818 568 --i 864 196 1198 598)",
+  "plate": "_assets_v07/hos_004_thumb_C_hidden_number_live_v07_plate01.jpg",
+  "testAndComparePairs": [
+    {"slot": 1, "role": "main", "title": "What's Really Inside an Atom?", "thumbId": "A",
+     "jpg": "Selected/hos_004_thumb_A_atom_live_v04.jpg", "version": "v04"},
+    {"slot": 2, "role": "alt", "title": "Why Is the Periodic Table in This Order?", "thumbId": "C",
+     "jpg": "Selected/hos_004_thumb_C_hidden_number_live_v07.jpg", "version": "v07"},
+    {"slot": 3, "role": "alt", "title": "How Small Can You Cut Gold?", "thumbId": "B",
+     "jpg": "Selected/hos_004_thumb_B_cut_gold_live_v04.jpg", "version": "v04"}
+  ],
+  "upload": false,
+  "studio": false,
+  "preview": "Selected/hos_004_thumb_C_hidden_number_live_v07_preview.jpg",
+  "familySheet": "Selected/hos_004_thumbs_v07_family_vs_live.jpg",
+  "superseded": ["Selected/hos_004_thumb_C_hidden_number_live_v06.jpg"]
+}
