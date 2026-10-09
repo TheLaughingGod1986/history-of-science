@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "updated_by": "Chief of Staff",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -77,11 +77,11 @@
     }
   ],
   "next_steps": [
-    "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold — C has no OK. Cursor makes v07b (52/53 at about 2×); Ben OKs it by Wed 14 Oct 18:00 or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
-    "005: the 2 Oct thumbnail/Test & Compare/end-screen settings went on a stray private copy; manifest now points at the scheduled long wwcjcFfC-5M (#262). Check and re-arm them on wwcjcFfC-5M before Thu 29 Oct (OWB J0101).",
-    "006 Part 03 picture on the free Vertex trial (Ben, 8 Oct): approved but not started as of 9 Oct; 16 mints, about £11 first takes; stop at £5 left. Then the VO queue resumes.",
+    "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold — C has no OK. J0106 makes v07b (52/53 at about 2×, file only, due Tue 13 Oct); the Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
+    "005: the 2 Oct thumbnail/Test & Compare/end-screen settings went on a stray private copy; manifest now points at the scheduled long wwcjcFfC-5M (#262). Check and re-arm them on wwcjcFfC-5M before Thu 29 Oct (queue J0101).",
+    "006 Part 03 picture on the free Vertex trial (Ben, 8 Oct): queued as J0107; 16 mints, about £11 first takes, reserved out of £17.70; stop at £5 left.",
     "Shorts test B (Ben: yes, 9 Oct): two search-titled Shorts per film from 007, v02 scripts for 007–010 (titles autocomplete-checked). Shorts voiceover records the v02 pair.",
-    "007 Shorts B + C voiceover (Cursor), then 009 and 010 long voiceover, then the 008–010 Shorts voiceover. At about 0.47 credits per char; no ElevenLabs floor (Ben, 9 Oct: keep going until the credit runs out).",
+    "Voice queue (ElevenLabs 18,653 until 30 Oct): 007 Shorts B + C (J0109), then 009 long (opening to the Chief J0108/J0110, VO J0111), then 010 long (J0112, J0113), then the 008–010 Shorts. Each job checks the balance first; no music beds without the Chief's OK.",
     "Four a month on each channel (Ben, 9 Oct): the channel short of 4 gets work and credits first.",
     "006 picture: Parts 04–05 on Flow after the 12 Oct refill, then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.",
     "Mon 12 Oct: Flow credits refill (AI Ultra). Re-price 006 Parts 03–05, then 007, on Flow rates; reviewed before any mint.",
@@ -92,15 +92,15 @@
   "credits": [
     {
       "pool": "ElevenLabs (voice)",
-      "left": "70,237 of 209,536",
-      "rule": "voice and both channels' music (one account); no floor (Ben, 9 Oct: keep going until the credit runs out), resets Fri 30 Oct; eleven_v3 bills about 0.47 credits per char (008: 7,497 chars cost 3,523)",
-      "checked": "7 Oct"
+      "left": "18,653 of 209,536",
+      "rule": "voice and both channels' music (one account); resets Fri 30 Oct; eleven_v3 bills about 0.47 credits per char. Until the reset (Chief, 9 Oct): HOS voice first, in queue order: 007 Shorts B + C (J0109, ~700 credits), 009 long (J0111, ~3,400), 010 long (J0113, ~3,500). Each VO job reads the balance first and spends nothing if it's below what it needs. No music bed (OWB or HOS) without the Chief's OK.",
+      "checked": "9 Oct"
     },
     {
       "pool": "Vertex free trial (picture)",
-      "left": "£25.59 (11%)",
-      "rule": "free trial, use it before it ends 10 Nov; never past £0, stop at £5 left. Now: 006 Part 03 (Ben, 8 Oct)",
-      "checked": "7 Oct"
+      "left": "£17.70 (£11 reserved for 006 Part 03)",
+      "rule": "free trial, use it before it ends 10 Nov; never past £0, stop at £5 left. £11 reserved for 006 Part 03 (J0107, Ben 8 Oct); until it's done, OWB spends Vertex only down to £5 + what's left of the reserve. Each job reads the balance first.",
+      "checked": "9 Oct"
     },
     {
       "pool": "Flow (picture)",
@@ -110,6 +110,60 @@
     }
   ],
   "films": [
+    {
+      "id": "004",
+      "title": "What's Really Inside an Atom?",
+      "air": "2026-10-15",
+      "ready_by": "2026-09-29",
+      "summary": "Finished and scheduled: long `GHZDsiH7L7A` airs Thu 15 Oct 18:00 (Premiere off). Test & Compare A/B/C armed 9 Oct but C (v07) has no OK; v07b (52/53 about 2x) is J0106, due Tue 13 Oct. The Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then; pin and Related at 18:05 on air day.",
+      "stages": {
+        "topic": {
+          "status": "done"
+        },
+        "script": {
+          "status": "done"
+        },
+        "facts": {
+          "status": "done"
+        },
+        "package": {
+          "status": "done"
+        },
+        "vo": {
+          "status": "done"
+        },
+        "shorts_scripts": {
+          "status": "done"
+        },
+        "shorts_vo": {
+          "status": "done"
+        },
+        "picture": {
+          "status": "done"
+        },
+        "edit": {
+          "status": "done",
+          "note": "master v02"
+        },
+        "thumbnails": {
+          "status": "doing",
+          "owner": "Cursor",
+          "due": "2026-10-13",
+          "since": "2026-10-09",
+          "note": "A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out",
+          "waiting": "J0106: C v07b file (don't touch the armed test), then the Chief's OK",
+          "underway": false
+        },
+        "ben_ok": {
+          "status": "done",
+          "note": "long OK'd before upload (29 Sep); thumb C is the Chief's call now"
+        },
+        "scheduled": {
+          "status": "done",
+          "note": "Thu 15 Oct 18:00; pin + Related at 18:05"
+        }
+      }
+    },
     {
       "id": "005",
       "title": "The Tied Arm That Proved Your Blood Circulates",
@@ -195,7 +249,7 @@
           "progress": 0.36,
           "owner": "Cursor",
           "due": "2026-10-25",
-          "note": "Part 01 12/12 kept; Part 02 rough v02 held; Part 03 (16 Vertex mints, about £11 first takes) approved for the free Vertex trial (Ben, 8 Oct), not started as of 9 Oct; Parts 04–05 on Flow after the 12 Oct refill",
+          "note": "Part 01 12/12 kept; Part 02 rough v02 held; Part 03 (16 Vertex mints, about £11 first takes) approved for the free Vertex trial (Ben, 8 Oct), queued as J0107 (9 Oct); Parts 04–05 on Flow after the 12 Oct refill",
           "steps": [
             1,
             5
@@ -204,7 +258,7 @@
           "left": "about 3 weeks",
           "eta": "2026-10-25",
           "underway": false,
-          "waiting": "Cursor: 006 Part 03 on Vertex (not started as of 9 Oct); stop at £5 left",
+          "waiting": "J0107: 006 Part 03 on Vertex (16 mints, ~£11 reserved); balance first, stop at £5 left",
           "since": "2026-10-08"
         },
         "edit": {
@@ -256,9 +310,9 @@
         "shorts_vo": {
           "status": "todo",
           "owner": "Cursor",
-          "due": "2026-10-07",
+          "due": "2026-10-12",
           "left": "about 1 hour once started",
-          "waiting": "next in the VO queue: v02 Shorts B + C"
+          "waiting": "J0109: v02 Shorts B + C voiceover; ElevenLabs balance first"
         },
         "picture": {
           "status": "todo",
@@ -376,8 +430,8 @@
         },
         "vo": {
           "status": "todo",
-          "due": "2026-10-07",
-          "waiting": "after 007 Shorts VO",
+          "due": "2026-10-14",
+          "waiting": "J0108 posts the opening, the Chief OKs it (J0110), then J0111 records; balance first",
           "owner": "Cursor"
         },
         "shorts_scripts": {
@@ -436,8 +490,8 @@
         },
         "vo": {
           "status": "todo",
-          "due": "2026-10-07",
-          "waiting": "after 009 VO",
+          "due": "2026-10-16",
+          "waiting": "after 009 VO: opening OK (J0112), then J0113 records; balance first",
           "owner": "Cursor"
         },
         "shorts_scripts": {
