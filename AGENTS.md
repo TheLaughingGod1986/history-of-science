@@ -146,7 +146,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
   - Put the Explorer at frame 0 of a Short.
   - Burn subscribe or like graphics into a film. Subscribe lives in the Studio end screen.
 - **Titles:** hashtags, series suffixes, hedged claims, or a title that copies a live video.
-- **Studio:** a `/go/` link or pinned comment on a Short; `/go/` on a long that doesn't name the product in the film.
+- **Studio:** a `/go/` link or pinned comment on a Short; `/go/` on a long that doesn't name the product in the film. Pressing **Continue** on "Run a new test? Your current test will be deleted" when a Test & Compare is already set: Cancel and leave it (004, 9 Oct).
 - **Picture:**
   - The Orbit robot in any HOS film.
   - Omni, Seedance, Kling or ElevenLabs Image & Video. Picture is Flow Veo 3.1.
