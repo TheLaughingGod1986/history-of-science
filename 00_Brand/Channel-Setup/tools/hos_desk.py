@@ -9,7 +9,7 @@ message is a PR comment that starts with a hidden header:
 
   <!-- hos-desk v1 from=grok to=claude film=005 stage=thumbnails status=review -->
 
-  from/to:  claude | grok | ben     status: task | review | question | blocked | approval | done
+  from/to:  claude | grok | cursor | codex | ben     status: task | review | question | blocked | approval | done
 A comment with no header is Ben talking. Claude reads every comment (GitHub wakes its session);
 the Mini's watcher hands Grok every comment addressed to Grok. Images go on the `hos-desk`
 branch under _desk/ (never on main); video and audio never go in git.
@@ -45,8 +45,8 @@ LABEL = "hos-desk"
 NEEDS_BEN = "needs-ben"
 TITLE = "HOS desk — Claude ↔ Grok (never merge)"
 HOME = Path(os.environ.get("HOS_DESK_HOME", Path.home() / ".hos_desk"))
-PARTIES = ("claude", "grok", "cursor", "ben")
-WRITERS = ("grok", "cursor")  # the write lane: Grok, or Cursor while Grok is out (AGENTS.md)
+PARTIES = ("claude", "grok", "cursor", "codex", "ben")
+WRITERS = ("grok", "cursor", "codex")  # the write lane: Grok, or the next Chief in the relay chain while Grok is out (AGENTS.md)
 STATUSES = ("task", "review", "question", "blocked", "approval", "done")
 MEDIA = re.compile(r"\.(mp4|mov|m4v|webm|wav|mp3|m4a|aac|aif|aiff|flac)$", re.I)
 HEADER = re.compile(r"<!--\s*hos-desk v1 (.*?)-->", re.S)
@@ -300,7 +300,7 @@ def main() -> None:
     p = sub.add_parser("inbox")
     p.add_argument("--watch", type=int, default=0, help="poll every N seconds")
     p.add_argument("--run", action="store_true", help="start the agent with $HOS_DESK_AGENT_CMD")
-    p.add_argument("--as", dest="agent", choices=WRITERS, default="grok", help="whose inbox (cursor while Grok is out)")
+    p.add_argument("--as", dest="agent", choices=WRITERS, default="grok", help="whose inbox (cursor or codex while Grok is out)")
     p.set_defaults(fn=cmd_inbox)
     p = sub.add_parser("thread")
     p.add_argument("--last", type=int, default=10)
