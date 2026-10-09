@@ -65,7 +65,7 @@ cd 07_Content-Ops && npm run lint:package [-- --film NNN]              # release
 cd 07_Content-Ops && npm run channel:audit [-- --write-live]           # what's really on YouTube (needs HOS .env)
 ```
 
-The Python tools need `ffmpeg`/`ffprobe` and Pillow; `vo_check.py` also uses `faster-whisper` for the word check, and a take whose word check didn't run FAILS (use `vo_check_py312.sh` on the Mini). Every ElevenLabs spend goes through `04_Audio/tools/el_client.py`, which enforces one recorder at a time, the `TTS_PAUSE` file, the credit floor (50k; **40k until the Fri 30 Oct 2026 reset**, Ben 7 Oct, so the 007–010 voiceover batch can finish: set `EL_CREDIT_FLOOR=40000` and `vo_take.py --floor 40000`, back to 50k after the reset) and the spend ledger (`04_Audio/tools/README.md` → *Spend guard*). The YouTube scripts need `07_Content-Ops/.env` (see `.env.example`). Never print or commit its values.
+The Python tools need `ffmpeg`/`ffprobe` and Pillow; `vo_check.py` also uses `faster-whisper` for the word check, and a take whose word check didn't run FAILS (use `vo_check_py312.sh` on the Mini). Every ElevenLabs spend goes through `04_Audio/tools/el_client.py`, which enforces one recorder at a time, the `TTS_PAUSE` file, no credit floor (Ben, 9 Oct 2026: *"No floor on ElevenLabs. Keep going until the credit runs out."* It's a flat fee, so running out only stops work until the monthly reset; it never adds a bill, and a top-up stays Ben's call) and the spend ledger (`04_Audio/tools/README.md` → *Spend guard*). The YouTube scripts need `07_Content-Ops/.env` (see `.env.example`). Never print or commit its values.
 
 ## Definition of done (the contract)
 
