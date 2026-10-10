@@ -11,7 +11,7 @@
 | **004** What's Really Inside an Atom? | Thu 15 Oct (5 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟢 on track |
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (19 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (26 d) | 53% | Picture (in progress) | **Cursor** · ⏸ waiting: J0107: 006 Part 03 on Vertex (16 mints, ~£11 reserved); balance first, stop at £5 left | 1/5 parts kept · about 3 weeks left · ETA Sun 25 Oct (in 15 d) | Sun 1 Nov (in 22 d) | 🟢 on track |
-| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (33 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (J0109: v02 Shorts B + C voiceover; ElevenLabs balance first) | starts later; due in 2 d | Sun 8 Nov (in 29 d) | 🟢 on track |
+| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (33 d) | 35% | Shorts voiceover (in progress) | **Grok** · in progress | not estimated | Sun 8 Nov (in 29 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (40 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 2 d late | Sun 15 Nov (in 36 d) | 🟠 behind |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (47 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (J0108 posts the opening, the Chief OKs it (J0110), then J0111 records; balance first) | starts later; due in 4 d | Sun 22 Nov (in 43 d) | 🟠 behind |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (54 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (after 009 VO: opening OK (J0112), then J0113 records; balance first) | starts later; due in 6 d | Sun 29 Nov (in 50 d) | 🟠 behind |
@@ -23,7 +23,7 @@
 - ⏭ Next up: 007 Picture, due Sun 1 Nov
 
 **Grok**
-- ▶️ Underway: nothing right now
+- ▶️ Underway: 007 Shorts voiceover, since Sat 10 Oct
 - ⏭ Next up: 006 Edit + master, due Thu 29 Oct; 007 Edit + master, due Thu 5 Nov; 008 Edit + master, due Thu 12 Nov
 
 **Ben**
@@ -33,12 +33,13 @@
 **Cursor**
 - ▶️ Underway: nothing right now
 - ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 006 Picture: J0107: 006 Part 03 on Vertex (16 mints, ~£11 reserved); balance first, stop at £5 left
-- ⏭ Next up: 008 Shorts voiceover, due Thu 8 Oct; 007 Shorts voiceover, due Mon 12 Oct; 009 Voiceover (long), due Wed 14 Oct
+- ⏭ Next up: 008 Shorts voiceover, due Thu 8 Oct; 009 Voiceover (long), due Wed 14 Oct; 010 Voiceover (long), due Fri 16 Oct
 
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (in 3 d)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
 - **006** · 🔄 **Picture** — in progress (36%, 1/5 parts kept · about 3 weeks left · ETA Sun 25 Oct (in 15 d), with Cursor since Thu 8 Oct, ⏸ waiting: J0107: 006 Part 03 on Vertex (16 mints, ~£11 reserved); balance first, stop at £5 left, due Sun 25 Oct (in 15 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03 (16 Vertex mints, about £11 first takes) approved for the free Vertex trial (Ben, 8 Oct), queued as J0107 (9 Oct); Parts 04–05 on Flow after the 12 Oct refill
+- **007** · 🔄 **Shorts voiceover** — in progress (0%, with Grok since Sat 10 Oct, in progress): v02 B 25.5 s, C 24.8 s; both vo_take PASS (Scribe 98.3% / 100%), one take each
 
 ## Next steps (in order)
 
@@ -133,7 +134,7 @@ Words and voice are finished. Picture is the long pole: Part 01 is all kept and 
 
 Airs **Thu 12 Nov** · ready for Ben's OK by **Sun 8 Nov** · 🟢 on track
 
-Script, facts and long voiceover are done. Shorts are now two (v02, test B); their voiceover is next in the queue. Picture waits until the whole voiceover batch has passed.
+Script, facts, long voiceover and both Shorts' voiceover (v02) are done; the Shorts takes wait for the Chief's keep call. Picture waits for Claude's board review and credit.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.3
@@ -141,7 +142,7 @@ Script, facts and long voiceover are done. Shorts are now two (v02, test B); the
 - ✅ **Audit + upload package** — done
 - ✅ **Voiceover (long)** — done: about 8.4 min; Part 01 v03 with the shut-up-house pickup
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
-- ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 12 Oct (in 2 d))
+- 🔄 **Shorts voiceover** — in progress (0%, with Grok since Sat 10 Oct, in progress): v02 B 25.5 s, C 24.8 s; both vo_take PASS (Scribe 98.3% / 100%), one take each
 - ⬜ **Picture** — to do (with Claude since Wed 7 Oct, due Sun 1 Nov (in 22 d)): plate boards BOARD_V01: re-timed from the locked VO (8:32) and priced 7 Oct (96 rows: 80 mints = 25 Quality + 55 Fast, 2 of them on Flow, 16 reuses; 36 rows added because the VO runs longer than the script's estimate). First takes about £58, about £139 with usual retakes, against £20.59 usable Vertex. Waits for Claude's review, the voiceover batch and credit; nothing minted
 - ⬜ **Edit + master** — to do (with Grok, due Thu 5 Nov (in 26 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 5 Nov (in 26 d))
