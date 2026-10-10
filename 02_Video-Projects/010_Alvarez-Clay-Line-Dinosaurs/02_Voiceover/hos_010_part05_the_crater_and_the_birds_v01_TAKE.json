@@ -1,0 +1,112 @@
+{
+  "stem": "hos_010_part05_the_crater_and_the_birds_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0113"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1909,
+      "duration_s": 146.16
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1909,
+  "words": 333,
+  "duration_s": 146.16,
+  "loudness": {
+    "lufs_integrated": -20.6,
+    "mean_volume_db": -24.1,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "7e3c9c4f7122b5a80bad54eb135f08bcc9dba09cbf3da83ca841cebc71d7a67b",
+  "scribe": {
+    "transcript": "For 10 years, scientists searched and argued. The clues slowly piled up. In the clay, they found tiny grains of quartz cracked by a shock far more violent than any volcano could make. Then tiny beads of glass splashed from melted rock turned up in Haiti. They pointed the hunt towards the Caribbean. Could the crater be somewhere nearby? Then in the early 1990s, researchers pieced together the answer. Buried under the Yucatan Peninsula in Mexico, hidden beneath newer rock was an enormous crater about 180 kilometers wide. It's called Chicxulub, and when its rocks were dated, they were 66 million years old, the same moment as the thin clay line in Italy. Not every question has been answered. Scientists still study how volcanoes in India may have added to the damage. But the main story is now clear. A rock from space hit the Earth, and the world of the dinosaurs ended. Why was this so groundbreaking? Because it showed that the history of life on Earth isn't only slow and steady. Sometimes everything changes at once. And it showed that a few grams of clay measured carefully enough can tell you about a moment 66 million years ago. There's one more twist. Not all the dinosaurs died. A few small feathered ones survived. Their descendants are all around you now, the pigeon on the pavement, the robin in the garden. Every bird you have ever seen is a living dinosaur. Why did they survive when the giants didn't? That's still a mystery scientists are working on. Being small, eating seeds that could last through the dark, and nesting on the ground may all have helped. So next time you see a bird, think about that thin line of clay in Italy. Below it, a world of giants. Above it, the survivors, and one of them is singing outside your window. A hammer, a vial, and a paper. Together, they found a catastrophe hidden in a line of clay",
+    "script_words": 336,
+    "scribe_words": 330,
+    "match_rate_pct": 96.43,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "ten"
+        ],
+        "scribe": [
+          "10"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "nineteen",
+          "nineties"
+        ],
+        "scribe": [
+          "1990s"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "a",
+          "hundred",
+          "and",
+          "eighty",
+          "kilometres"
+        ],
+        "scribe": [
+          "180",
+          "kilometers"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "sixty",
+          "six"
+        ],
+        "scribe": [
+          "66"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "sixty",
+          "six"
+        ],
+        "scribe": [
+          "66"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 195965,
+      "limit": 209536,
+      "remaining": 13571
+    },
+    "after": {
+      "used": 197552,
+      "limit": 209536,
+      "remaining": 11984
+    },
+    "counter_delta": 1587
+  },
+  "text": "For ten years, scientists searched and argued. The clues slowly piled up. In the clay, they found tiny grains of quartz, cracked by a shock far more violent than any volcano could make. Then tiny beads of glass, splashed from melted rock, turned up in Haiti. They pointed the hunt towards the Caribbean. Could the crater be somewhere nearby?\n\nThen, in the early nineteen-nineties, researchers pieced together the answer. Buried under the Yucatán Peninsula in Mexico, hidden beneath newer rock, was an enormous crater. About a hundred and eighty kilometres wide.\n\nIt's called Chicxulub. And when its rocks were dated, they were sixty-six million years old. The same moment as the thin clay line in Italy.\n\nNot every question has been answered. Scientists still study how volcanoes in India may have added to the damage. But the main story is now clear. A rock from space hit the Earth, and the world of the dinosaurs ended.\n\nWhy was this so groundbreaking? Because it showed that the history of life on Earth isn't only slow and steady. Sometimes, everything changes at once. And it showed that a few grams of clay, measured carefully enough, can tell you about a moment sixty-six million years ago.\n\nThere's one more twist. Not all the dinosaurs died. A few small, feathered ones survived. Their descendants are all around you now. The pigeon on the pavement. The robin in the garden. Every bird you have ever seen is a living dinosaur.\n\nWhy did they survive, when the giants didn't? That's still a mystery scientists are working on. Being small, eating seeds that could last through the dark, and nesting on the ground may all have helped.\n\nSo next time you see a bird, think about that thin line of clay in Italy. Below it, a world of giants. Above it, the survivors. And one of them is singing outside your window.\n\nA hammer, a vial and a paper. Together, they found a catastrophe hidden in a line of clay.",
+  "made_at": "2026-10-10T21:15:54+0100"
+}

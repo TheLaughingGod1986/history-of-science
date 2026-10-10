@@ -1,0 +1,36 @@
+{
+  "file": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part01_the_line_in_the_rock_v01.mp3",
+  "part": 1,
+  "fails": [],
+  "warns": [
+    "replace at ~0:23.88: script 'of this film you'll know how a' / heard 'of this film you will know how a' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 89.04,
+  "duration": "1:29.04",
+  "mean_db": -23.1,
+  "peak_db": -4.2,
+  "pauses_over_1s": [
+    [
+      5.64,
+      1.11
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 218,
+  "heard_words": 219,
+  "wpm": 153,
+  "word_diffs": [
+    {
+      "at": "0:23.88",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "of this film you'll know how a",
+      "heard": "of this film you will know how a"
+    }
+  ],
+  "first_minute": {
+    "title_question": 15.44,
+    "promise": 22.7
+  },
+  "verdict": "PASS"
+}

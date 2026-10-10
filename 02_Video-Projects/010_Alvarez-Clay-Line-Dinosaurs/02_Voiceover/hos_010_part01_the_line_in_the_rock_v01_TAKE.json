@@ -1,0 +1,91 @@
+{
+  "stem": "hos_010_part01_the_line_in_the_rock_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0113"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1232,
+      "duration_s": 89.04
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1232,
+  "words": 225,
+  "duration_s": 89.04,
+  "loudness": {
+    "lufs_integrated": -19.5,
+    "mean_volume_db": -22.7,
+    "max_volume_db": -3.8
+  },
+  "sha256_mp3": "1ed2e52768aae1486fafbb42d5c7eaa62c705c635a44b3bad5900ae89b97cd41",
+  "scribe": {
+    "transcript": "What killed the dinosaurs? The answer was hidden in a line of rock as thin as a pencil. In a quiet gorge in Italy, you can put your finger on it. Below it, the world of the dinosaurs. Above it, they're gone. So what happened in that thin layer of clay, and how could a few grams of it tell us what killed the dinosaurs? By the end of this film, you'll know how a geologist, his father, and a rare metal hidden in that clay solved one of the biggest mysteries in the history of life. For more than 160 million years, dinosaurs walked the Earth. Then, about 66 million years ago, they disappeared, along with most of the other kinds of life on Earth. In the seas, on land, in the air, gone. For a long time, nobody knew why. Some scientists said the climate slowly changed. Some said volcanoes. Others said disease or that mammals ate their eggs. There were dozens of ideas and almost no way to test them. Picture yourself standing in that gorge with your hand on the rock. Below your fingers, the last days of the dinosaurs. Above, a world without them. What would you look for to find out what happened in between? In the 1970s, a young American geologist started looking very closely",
+    "script_words": 227,
+    "scribe_words": 222,
+    "match_rate_pct": 96.48,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "a",
+          "hundred",
+          "and",
+          "sixty"
+        ],
+        "scribe": [
+          "160"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "sixty",
+          "six"
+        ],
+        "scribe": [
+          "66"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "nineteen",
+          "seventies"
+        ],
+        "scribe": [
+          "1970s"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 194370,
+      "limit": 209536,
+      "remaining": 15166
+    },
+    "after": {
+      "used": 194912,
+      "limit": 209536,
+      "remaining": 14624
+    },
+    "counter_delta": 542
+  },
+  "text": "What killed the dinosaurs? The answer was hidden in a line of rock as thin as a pencil.\n\nIn a quiet gorge in Italy, you can put your finger on it. Below it, the world of the dinosaurs. Above it, they're gone.\n\nSo what happened in that thin layer of clay? And how could a few grams of it tell us what killed the dinosaurs?\n\nBy the end of this film, you'll know how a geologist, his father, and a rare metal hidden in that clay solved one of the biggest mysteries in the history of life.\n\nFor more than a hundred and sixty million years, dinosaurs walked the Earth. Then, about sixty-six million years ago, they disappeared, along with most of the other kinds of life on Earth. In the seas, on land, in the air. Gone.\n\nFor a long time, nobody knew why. Some scientists said the climate slowly changed. Some said volcanoes. Others said disease, or that mammals ate their eggs. There were dozens of ideas, and almost no way to test them.\n\nPicture yourself standing in that gorge, with your hand on the rock. Below your fingers, the last days of the dinosaurs. Above, a world without them. What would you look for, to find out what happened in between?\n\nIn the nineteen-seventies, a young American geologist started looking very closely.",
+  "made_at": "2026-10-10T21:13:39+0100"
+}

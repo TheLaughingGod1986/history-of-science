@@ -473,7 +473,7 @@
       "title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
       "air": "2026-12-03",
       "ready_by": "2026-11-29",
-      "summary": "Script, facts, audit and package are done. Voiceover follows 009; Shorts are now two (v02).",
+      "summary": "Long VO recorded (5 parts, 8:20) and waiting on the Chief's keep call; picture next.",
       "stages": {
         "topic": {
           "status": "done"
@@ -489,10 +489,11 @@
           "status": "done"
         },
         "vo": {
-          "status": "todo",
+          "status": "review",
           "due": "2026-10-16",
-          "waiting": "after 009 VO: opening OK (J0112), then J0113 records; balance first",
-          "owner": "Cursor"
+          "owner": "Cursor",
+          "note": "5 parts v01 recorded 10 Oct (J0113), 8:19.8 speech, 3,182 credits; vo_check 2 PASS, 3 FAIL (two small.en-only word flags; one had/have to hear)",
+          "waiting": "Chief listens to Part 02 ~0:23 and makes the keep call on desk #180"
         },
         "shorts_scripts": {
           "status": "done",

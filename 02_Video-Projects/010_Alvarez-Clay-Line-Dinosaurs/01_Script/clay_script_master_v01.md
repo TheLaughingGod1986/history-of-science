@@ -12,7 +12,7 @@ So what happened in that thin layer of clay? And how could a few grams of it tel
 
 [VISUAL MUST: 0:08 — a small glass vial of grey clay on a lab bench, turning slowly under a lamp · LABEL: ONE SMALL SAMPLE]
 
-By the end of this film, you'll know how a geologist, his father, and a rare metal hidden in that clay solved one of the biggest mysteries on Earth.
+By the end of this film, you'll know how a geologist, his father, and a rare metal hidden in that clay solved one of the biggest mysteries in the history of life.
 
 [VISUAL MUST: 0:15 — three things appear one after another on a workbench: a geologist's hammer, a vial of clay, a printed science paper · LABEL: A HAMMER · A VIAL · A PAPER]
 

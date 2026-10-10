@@ -1,0 +1,57 @@
+{
+  "film": "010",
+  "script": "01_Script/clay_script_master_v01.md",
+  "voice": "Ben Orbit Narrator / eleven_v3 / speed 1.04",
+  "status": "PROPOSED by cursor (J0113, 10 Oct 2026); keep call is the Chief's on desk #180",
+  "script_change": "Opening line per the Chief's OK (J0112, desk #180 6096338312): 'solved one of the biggest mysteries in the history of life.'",
+  "total_speech_s": 499.84,
+  "credits_spent": 3182,
+  "elevenlabs_left_after": 11984,
+  "locked": {
+    "01": {
+      "file": "hos_010_part01_the_line_in_the_rock_v01.mp3",
+      "sha256": "1ed2e52768aae1486fafbb42d5c7eaa62c705c635a44b3bad5900ae89b97cd41",
+      "duration_s": 89.04,
+      "lufs": -19.5,
+      "scribe_pct": 96.48,
+      "vo_check": "PASS mean -23.1 dB peak -4.2 dB 153 wpm",
+      "note": "v01; sound-alike warn only (you'll/you will)"
+    },
+    "02": {
+      "file": "hos_010_part02_the_gorge_at_gubbio_v01.mp3",
+      "sha256": "fc34abf304a6050d110abcd52d7c8da3565fe3da55e5f1734440396d4fb08f10",
+      "duration_s": 79.76,
+      "lufs": -19.8,
+      "scribe_pct": 99.54,
+      "vo_check": "FAIL mean -23.7 dB peak -4.3 dB 163 wpm",
+      "note": "v01; NEEDS CHIEF LISTEN at ~0:23.4: script 'creatures that had floated', small.en AND medium.en hear 'have floated', Scribe hears 'had'. Keep, or a one-sentence pickup. Sound-alike warns otherwise (sea floor/seafloor, centimetre/centimeter)"
+    },
+    "03": {
+      "file": "hos_010_part03_a_clock_made_of_stardust_v01.mp3",
+      "sha256": "9f25fbeb0cd847a0f60e0e21b3a7a1c1072b8900aad4db66114db5bf3cfb0e85",
+      "duration_s": 81.04,
+      "lufs": -19.7,
+      "scribe_pct": 100.0,
+      "vo_check": "FAIL mean -23.5 dB peak -4.2 dB 157 wpm",
+      "note": "v01; vo_check 'he had'/'he'd' at ~0:07.1 is small.en only (medium.en + Scribe hear 'He had'): accept under rule (d) as on 009 part05. Michel/Michelle sound-alike warn"
+    },
+    "04": {
+      "file": "hos_010_part04_too_much_iridium_v01.mp3",
+      "sha256": "245df0013294e64016b66456d838d2538687158d8064f0dbc570587ac30cda40",
+      "duration_s": 103.84,
+      "lufs": -18.9,
+      "scribe_pct": 98.18,
+      "vo_check": "PASS mean -22.7 dB peak -4.2 dB 158 wpm",
+      "note": "v01; sound-alike warns only (Gubbio/Gubio, kilometres/kilometers)"
+    },
+    "05": {
+      "file": "hos_010_part05_the_crater_and_the_birds_v01.mp3",
+      "sha256": "7e3c9c4f7122b5a80bad54eb135f08bcc9dba09cbf3da83ca841cebc71d7a67b",
+      "duration_s": 146.16,
+      "lufs": -20.6,
+      "scribe_pct": 96.43,
+      "vo_check": "FAIL mean -24.6 dB peak -4.3 dB 138 wpm",
+      "note": "v01; vo_check 'still a'/'to the' at ~1:50.7 is small.en only (medium.en + Scribe hear 'That's still a mystery'): accept under rule (d). Pace warn 138 wpm; Scribe misses are numerals only (10, 1990s, 180, 66)"
+    }
+  }
+}
