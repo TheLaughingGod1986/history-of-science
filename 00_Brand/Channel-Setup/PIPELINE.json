@@ -79,7 +79,7 @@
   "next_steps": [
     "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold — C has no OK. J0106 makes v07b (52/53 at about 2×, file only, due Tue 13 Oct); the Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
     "005: the 2 Oct thumbnail/Test & Compare/end-screen settings went on a stray private copy; manifest now points at the scheduled long wwcjcFfC-5M (#262). Check and re-arm them on wwcjcFfC-5M before Thu 29 Oct (queue J0101).",
-    "006 Part 03 picture on the free Vertex trial (Ben, 8 Oct): queued as J0107; 16 mints, about £11 first takes, reserved out of £17.70; stop at £5 left.",
+    "006 Part 03 picture on the free Vertex trial (Ben, 8 Oct): queued as J0107; 16 mints, about £11 first takes, reserved; the trial runs down to £0 (Ben, 10 Oct 22:50: \"use the vertex credit until its £0\"), J0107 unblocked 10 Oct.",
     "Shorts test B (Ben: yes, 9 Oct): two search-titled Shorts per film from 007, v02 scripts for 007–010 (titles autocomplete-checked). Shorts voiceover records the v02 pair.",
     "Voice queue (ElevenLabs 18,653 until 30 Oct): 007 Shorts B + C (J0109), then 009 long (opening to the Chief J0108/J0110, VO J0111), then 010 long (J0112, J0113), then the 008–010 Shorts. Each job checks the balance first; no music beds without the Chief's OK.",
     "Four a month on each channel (Ben, 9 Oct): the channel short of 4 gets work and credits first.",
@@ -99,7 +99,7 @@
     {
       "pool": "Vertex free trial (picture)",
       "left": "£17.70 (£11 reserved for 006 Part 03)",
-      "rule": "free trial, use it before it ends 10 Nov; never past £0, stop at £5 left. £11 reserved for 006 Part 03 (J0107, Ben 8 Oct); until it's done, OWB spends Vertex only down to £5 + what's left of the reserve. Each job reads the balance first.",
+      "rule": "free trial, use it before it ends 10 Nov; spend down to £0, no £5 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 (J0107, ~£11.36) goes first; until it's done, OWB spends only what's left above its estimate. Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben.",
       "checked": "9 Oct"
     },
     {
@@ -258,7 +258,7 @@
           "left": "about 3 weeks",
           "eta": "2026-10-25",
           "underway": false,
-          "waiting": "J0107: 006 Part 03 on Vertex (16 mints, ~£11 reserved); balance first, stop at £5 left",
+          "waiting": "J0107: 006 Part 03 on Vertex (16 mints, ~£11.36), unblocked 10 Oct 22:55: trial runs to £0 (Ben); next worker run",
           "since": "2026-10-08"
         },
         "edit": {
