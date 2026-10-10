@@ -1,0 +1,68 @@
+{
+  "stem": "hos_009_part02_an_apple_in_a_plague_year_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0111"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1284,
+      "duration_s": 89.84
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1284,
+  "words": 241,
+  "duration_s": 89.84,
+  "loudness": {
+    "lufs_integrated": -19.5,
+    "mean_volume_db": -22.9,
+    "max_volume_db": -3.6
+  },
+  "sha256_mp3": "3685590755967b2267d209a2847821df7088d60b1fa602328b0025dfb017eadc",
+  "scribe": {
+    "transcript": "In sixteen sixty-five, a terrible plague swept through England. To keep students safe, the university at Cambridge closed its doors, and a young student called Isaac Newton went home to his family's farmhouse in the village of Woolsthorpe. He had been born in that same house on Christmas Day, sixteen forty-two. His father had died a few months before. Newton was so tiny, his mother later said, that he could have fitted inside a quart pot. For almost two years, he worked alone. He studied light, invented new kinds of mathematics, and asked questions no one had asked before. Many years later, when he was an old man, Newton told a friend how one of those questions began. He was sitting in the garden thinking when an apple fell from a tree. The apple didn't hit him on the head. That part was added later, but it made him wonder. The apple always falls straight down towards the center of the Earth. The pull that drags it down works at the top of the tree. It works at the top of a tall tower and at the top of a mountain. So how far up does it reach? Could it reach all the way to the Moon? It was an extraordinary idea. If the Earth was pulling on the Moon, then the Moon should be falling. But it was still up there night after night. So what was holding it up?",
+    "script_words": 243,
+    "scribe_words": 243,
+    "match_rate_pct": 99.59,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "centre"
+        ],
+        "scribe": [
+          "center"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 191194,
+      "limit": 209536,
+      "remaining": 18342
+    },
+    "after": {
+      "used": 191252,
+      "limit": 209536,
+      "remaining": 18284
+    },
+    "counter_delta": 58
+  },
+  "text": "In sixteen sixty-five, a terrible plague swept through England. To keep students safe, the university at Cambridge closed its doors. And a young student called Isaac Newton went home, to his family's farmhouse in the village of Woolsthorpe.\n\nHe had been born in that same house, on Christmas Day, sixteen forty-two. His father had died a few months before. Newton was so tiny, his mother later said, that he could have fitted inside a quart pot.\n\nFor almost two years, he worked alone. He studied light, invented new kinds of mathematics, and asked questions no one had asked before.\n\nMany years later, when he was an old man, Newton told a friend how one of those questions began. He was sitting in the garden, thinking, when an apple fell from a tree.\n\nThe apple didn't hit him on the head. That part was added later. But it made him wonder. The apple always falls straight down, towards the centre of the Earth. The pull that drags it down works at the top of the tree. It works at the top of a tall tower, and at the top of a mountain.\n\nSo how far up does it reach? Could it reach all the way to the Moon?\n\nIt was an extraordinary idea. If the Earth was pulling on the Moon, then the Moon should be falling. But it was still up there, night after night. So what was holding it up?",
+  "made_at": "2026-10-10T20:57:21+0100"
+}

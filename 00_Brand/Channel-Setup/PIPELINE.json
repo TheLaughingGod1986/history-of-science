@@ -413,7 +413,7 @@
       "title": "Why Doesn't the Moon Fall to Earth?",
       "air": "2026-11-26",
       "ready_by": "2026-11-22",
-      "summary": "Script, facts, audit and package are done. Long voiceover is next after the 007 Shorts; Shorts are now two (v02).",
+      "summary": "Long VO recorded (5 parts, 8:28) and waiting on the Chief's keep call; picture next.",
       "stages": {
         "topic": {
           "status": "done"
@@ -429,10 +429,11 @@
           "status": "done"
         },
         "vo": {
-          "status": "todo",
+          "status": "review",
           "due": "2026-10-14",
-          "waiting": "J0108 posts the opening, the Chief OKs it (J0110), then J0111 records; balance first",
-          "owner": "Cursor"
+          "owner": "Cursor",
+          "note": "5 parts v01 recorded 10 Oct (J0111), 8:28.4 speech, 2,351 credits; vo_check 3 PASS, 2 FAIL (small.en word flags; one a/the to hear)",
+          "waiting": "Chief listens to Part 02 ~0:08 and makes the keep call on desk #180"
         },
         "shorts_scripts": {
           "status": "done",

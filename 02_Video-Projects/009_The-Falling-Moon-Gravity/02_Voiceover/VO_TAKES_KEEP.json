@@ -1,0 +1,56 @@
+{
+  "film": "009",
+  "script": "01_Script/moon_script_master_v01.md",
+  "voice": "Ben Orbit Narrator / eleven_v3 / speed 1.04",
+  "status": "PROPOSED by cursor (J0111, 10 Oct 2026); keep call is the Chief's on desk #180",
+  "total_speech_s": 508.4,
+  "credits_spent": 2351,
+  "elevenlabs_left_after": 15991,
+  "locked": {
+    "01": {
+      "file": "hos_009_part01_the_falling_moon_v01.mp3",
+      "sha256": "81b6c45fa7991d01d804d6bc67703f179ff7d3c989c485871fab13eb498bdd74",
+      "duration_s": 83.84,
+      "lufs": -20.3,
+      "scribe_pct": 97.63,
+      "vo_check": "PASS mean -24.0 dB peak -4.2 dB 151 wpm",
+      "note": "v01; sound-alike warns only (believed/believe, for ever/forever)"
+    },
+    "02": {
+      "file": "hos_009_part02_an_apple_in_a_plague_year_v01.mp3",
+      "sha256": "3685590755967b2267d209a2847821df7088d60b1fa602328b0025dfb017eadc",
+      "duration_s": 89.84,
+      "lufs": -19.5,
+      "scribe_pct": 99.59,
+      "vo_check": "FAIL mean -23.4 dB peak -4.1 dB 162 wpm",
+      "note": "v01; NEEDS CHIEF LISTEN at ~0:08.4: script 'a young student', small.en AND medium.en hear 'the young student', Scribe hears 'a'. 'pull'/'pool' at ~1:01.7 is small.en only (medium.en + Scribe hear 'pull'). Keep, or a one-sentence pickup"
+    },
+    "03": {
+      "file": "hos_009_part03_the_cannon_on_the_mountain_v01.mp3",
+      "sha256": "53235ab062eb782bf1beda7cb5baab2ff472aeb87b4ad2c90ae63ffe35602efb",
+      "duration_s": 80.88,
+      "lufs": -20.4,
+      "scribe_pct": 98.48,
+      "vo_check": "PASS mean -24.3 dB peak -4.4 dB 147 wpm",
+      "note": "v01; sound-alike warn only (for ever/forever)"
+    },
+    "04": {
+      "file": "hos_009_part04_the_moon_test_v01.mp3",
+      "sha256": "2d03f372e0a4b071f547b4c887ea5e1c2edcb7c8bd01618366287fa7708f1a84",
+      "duration_s": 131.2,
+      "lufs": -20.5,
+      "scribe_pct": 96.31,
+      "vo_check": "PASS mean -24.2 dB peak -4.2 dB 149 wpm",
+      "note": "v01; sound-alike warn only (Edmond/Edmund)"
+    },
+    "05": {
+      "file": "hos_009_part05_falling_around_the_world_v01.mp3",
+      "sha256": "10ebaf45388d4041090efe29c678f5689d061b42d1ab88ace84ef9fcf0035171",
+      "duration_s": 122.64,
+      "lufs": -20.9,
+      "scribe_pct": 99.67,
+      "vo_check": "FAIL mean -24.6 dB peak -4.6 dB 150 wpm",
+      "note": "v01; vo_check 'sum'/'sun' at ~1:44.3 is small.en only (medium.en + Scribe hear 'sum'): accept under rule (d) as on 008 part03"
+    }
+  }
+}
