@@ -111,31 +111,33 @@ Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged �
 
 ## Ben's check-in (2 Oct 2026: one final OK, not one per stage)
 
+**Chief owns the studio (Ben's handover to Chief, 9 Oct 2026; Ben, 10 Oct 2026: *"I should not need to give permission all the time"*).** Wherever this section says Claude decides, PASSes, OKs or makes an exception, Chief (Grok Bot) now holds that call in place of Claude. A Chief OK is a plain "[Chief]" post on the desk #180 or orbit-with-ben #99, or an orbit-with-ben job added `--by chief`; a brief saying "Ben approved (relayed by Chief)" counts as Ben's word. Workers act on either and never ask Ben to re-post an OK. Ben is asked only for real money (past £0), what truly can't be undone, and his per-film watch below; deleting a video stays on the Never list.
+
 Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me. Check in only once the film, Shorts and thumbnails are ready to approve."*
 
 - **Claude and Grok decide on the desk:** topic, script, Short scripts, voice takes, picture stages, titles, descriptions, tags, thumbnail and cover drafts, and the schedule. Every check above still has to PASS; Claude reviews each stage instead of Ben.
 - **Ben is asked once per film, before anything is scheduled:** the finished long (he watches the moving file), the Shorts (on his phone), and the thumbnail and covers with the titles. That is his final OK. Nothing is scheduled or made public without it.
 - **Still Ben's alone:** renaming anything already live; lifting the TikTok pause on direct uploads (Buffer TikTok is allowed, Ben 5 Oct 2026); overriding a failed check (a check that's wrong is fixed in its own PR). Deleting a video stays on the Never list.
-- **Claude may make a public HOS or Orbit video private, or take it down, when needed** (Ben to Claude directly, 5 Oct 2026; mirrors orbit-with-ben `bd99085`). A takedown is always done by making the video private, because private can be undone. Claude records the video id and the reason on the desk and tells Ben. Any agent that thinks a live video should go private brings the video id and the reason to Claude on the desk, not to Ben.
+- **Chief may make a public HOS or Orbit video private, or take it down, when needed** (Ben to Claude, 5 Oct 2026; Chief since 9 Oct). A takedown is always done by making the video private, because private can be undone. Chief records the video id and the reason on the desk and tells Ben. Any agent that thinks a live video should go private brings the video id and the reason to Chief on the desk, not to Ben.
 - **Spend:** Vertex, Flow and API credit may be used down to **£0** of the Free Trial or prepaid credit. Stop at £0. Never spill onto paid billing; report and wait for Ben to top up.
 - **Four a month on each channel** (Ben, 9 Oct 2026: *"each channel has 4 videos a month … if we have 4 already set up on Orbit and complete, then we need to work on History of Science … allocate credits accordingly"*). `python3 scripts/channel_balance.py --hos <this checkout>` in orbit-with-ben says which channel is first: the one whose earliest month is short of 4 complete (edit passed). The first channel's desk tasks and credit spends (ElevenLabs, Vertex, Flow) go ahead of the other's. The other channel's work still runs when the first has nothing doable right now.
 - **Test B, search-titled Shorts (Ben, 9 Oct 2026: yes), from 007 on:** two Shorts per film, not three. Each Short's YouTube title is the question people type, checked against signed-out YouTube autocomplete before it's locked, and its first line starts to answer it. Long titles get the same autocomplete check. 005 and 006 stay as planned. Scripts: each film's `10_Shorts/SHORTS_SCRIPTS_v02.md`. Plan, measures and readouts: orbit-with-ben `05_Analytics/tests/SHORTS_TESTS.md`.
 - **Ask Claude first** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."*). Anything an agent would mark NEEDS BEN goes to Claude on the desk first. Claude decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
   - money: a top-up, or anything past £0;
-  - anything that can't be undone: renaming a live video, Studio Replace, a force-push (making a video private can be undone and is Claude's call, above);
-  - merging a PR that Claude hasn't PASSed;
+  - anything that can't be undone: renaming a live video, Studio Replace, a force-push (making a video private can be undone and is Chief's call, above);
+  - merging a PR that neither Chief nor Claude has PASSed;
   - the TikTok pause on direct uploads, and overriding a check;
   - things only he can physically do: Vercel env vars, OAuth reconnects, waking the Mac Mini, logins and 2FA;
   - any change to the channel's direction (a new series, a new format, a change of voice);
   - the final OK above.
-- **Claude owns `AGENTS.md` and the Never list** (Ben to Claude directly, 5 Oct 2026; mirrors orbit-with-ben `bd99085`): *"you own AGENTS.md and Never-list edits"*. Only Claude changes them, recording each change with its date and reason on the desk and in the commit, and tells Ben. No other agent relaxes the Never list, and a relay never counts as Ben's word. **Real money stays with Ben.**
+- **Chief owns `AGENTS.md` and the Never list** (Ben to Claude, 5 Oct 2026; handed to Chief 9 Oct, confirmed 10 Oct). Chief changes them and OKs one-off Never-list exceptions for reversible studio actions (e.g. re-uploading a fixed copy of a broken Short, a video going private), recording each with its date and reason on the desk and in the commit, and telling Ben. Workers (Cursor, Codex) don't relax the Never list themselves. **Real money stays with Ben**, and no OK covers deleting a video.
 
 ## Never
 
 - **Channels:** upload, schedule or post to Orbit With Ben, OpptiAI or the empty `@HistoryOfScience`. HOS is `@HistoryOfScienceYT` only.
 - **Uploads:**
   - Swap the file on an existing YouTube id (no Studio Replace).
-  - Re-upload an idea that already went public.
+  - Re-upload an idea that already went public. (A fixed copy of a broken, e.g. silent, Short may go up on Chief's OK; the broken id goes private.)
   - Delete a video. The old id goes private instead.
 - **Publishing:**
   - Premiere a long (until subscribers are in the hundreds).
@@ -167,4 +169,4 @@ Never commit video or audio (`.mp4`, `.mov`, `.wav`, `.mp3`, `.aiff`…), not ev
 
 ## Changing the rules
 
-Only Claude changes `AGENTS.md` and the Never list (see "Ben's check-in"); other agents propose changes on the desk. Change the doc in force (1–7 above) and its Cursor rule in the same commit, with the date and the evidence. Don't add a new "locked" doc that restates or contradicts one of them. Move anything it supersedes to `_archive/`.
+Only Chief changes `AGENTS.md` and the Never list (see "Ben's check-in"; Claude until 9 Oct); other agents propose changes on the desk. Change the doc in force (1–7 above) and its Cursor rule in the same commit, with the date and the evidence. Don't add a new "locked" doc that restates or contradicts one of them. Move anything it supersedes to `_archive/`.
