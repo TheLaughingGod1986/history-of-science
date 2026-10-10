@@ -1,0 +1,58 @@
+{
+  "stem": "hos_010_part03_a_clock_made_of_stardust_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0113"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1122,
+      "duration_s": 81.04
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1122,
+  "words": 212,
+  "duration_s": 81.04,
+  "loudness": {
+    "lufs_integrated": -19.7,
+    "mean_volume_db": -23.1,
+    "max_volume_db": -3.7
+  },
+  "sha256_mp3": "9f25fbeb0cd847a0f60e0e21b3a7a1c1072b8900aad4db66114db5bf3cfb0e85",
+  "scribe": {
+    "transcript": "Walter's father was Luis Alvarez, a physicist who had won a Nobel Prize. He loved a puzzle. He had once used tiny particles from space to search for hidden rooms inside an Egyptian pyramid, and now he had an idea for a clock. Every day, a gentle rain of dust from space falls on the Earth. It's far too fine to see, but it's always there, settling on land and on the sea floor year after year. That space dust carries a rare metal called iridium. On Earth's surface, iridium is incredibly scarce. When our planet was young and molten, most of it sank down to the core with the iron. But in meteorites and in the dust from space, there's much more of it. So here was the clock. If the clay formed slowly over thousands of years, it would have collected lots of space dust and lots of iridium. If it formed quickly in a few years, there would be almost none. They needed to measure iridium in tiny amounts, a few parts in a billion. So they asked two chemists at Berkeley, Frank Asaro and Helen Michel, who had a machine sensitive enough to do it. They expected a small number. What came back was not small at all.",
+    "script_words": 212,
+    "scribe_words": 212,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 194912,
+      "limit": 209536,
+      "remaining": 14624
+    },
+    "after": {
+      "used": 195965,
+      "limit": 209536,
+      "remaining": 13571
+    },
+    "counter_delta": 1053
+  },
+  "text": "Walter's father was Luis Alvarez, a physicist who had won a Nobel Prize. He loved a puzzle. He had once used tiny particles from space to search for hidden rooms inside an Egyptian pyramid. And now he had an idea for a clock.\n\nEvery day, a gentle rain of dust from space falls on the Earth. It's far too fine to see. But it's always there, settling on land and on the sea floor, year after year.\n\nThat space dust carries a rare metal called iridium. On Earth's surface, iridium is incredibly scarce. When our planet was young and molten, most of it sank down to the core with the iron. But in meteorites, and in the dust from space, there's much more of it.\n\nSo here was the clock. If the clay formed slowly, over thousands of years, it would have collected lots of space dust, and lots of iridium. If it formed quickly, in a few years, there would be almost none.\n\nThey needed to measure iridium in tiny amounts, a few parts in a billion. So they asked two chemists at Berkeley, Frank Asaro and Helen Michel, who had a machine sensitive enough to do it.\n\nThey expected a small number. What came back was not small at all.",
+  "made_at": "2026-10-10T21:14:40+0100"
+}
