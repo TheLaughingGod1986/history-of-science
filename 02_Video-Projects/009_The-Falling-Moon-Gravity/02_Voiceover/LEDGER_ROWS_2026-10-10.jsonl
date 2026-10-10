@@ -1,0 +1,10 @@
+{"time": "2026-10-10T19:56:43+00:00", "pid": 49613, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1080, "status": 200, "left_before": 18342}
+{"time": "2026-10-10T19:56:46+00:00", "pid": 49613, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 18342}
+{"time": "2026-10-10T19:57:11+00:00", "pid": 49716, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1284, "status": 200, "left_before": 18342}
+{"time": "2026-10-10T19:57:16+00:00", "pid": 49716, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 18342}
+{"time": "2026-10-10T19:57:39+00:00", "pid": 49762, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1062, "status": 200, "left_before": 18284}
+{"time": "2026-10-10T19:57:43+00:00", "pid": 49762, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 17244}
+{"time": "2026-10-10T19:58:17+00:00", "pid": 49803, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1725, "status": 200, "left_before": 17244}
+{"time": "2026-10-10T19:58:22+00:00", "pid": 49803, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 17217}
+{"time": "2026-10-10T19:58:56+00:00", "pid": 49849, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/text-to-speech/kDch6ACCIpqgQ0NsU9kk", "chars": 1682, "status": 200, "left_before": 15991}
+{"time": "2026-10-10T19:59:00+00:00", "pid": 49849, "host": "Benjamins-Mac-mini.local", "script": "vo_take.py", "endpoint": "/v1/speech-to-text", "chars": 0, "status": 200, "left_before": 15991}
