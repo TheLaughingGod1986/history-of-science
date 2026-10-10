@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-10T21:49:53.905Z",
+  "job": "J0120",
+  "real": true,
+  "channel": {
+    "id": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "History of Science"
+  },
+  "oldBefore": {
+    "privacy": "public",
+    "publishAt": null
+  },
+  "existingCopies": [],
+  "newMetadata": {
+    "snippet": {
+      "title": "Invisible life is still everywhere",
+      "description": "What else is still invisible? You meet that victory every time soap meets your hands.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #InvisibleLife #HistoryOfScience #Science #Shorts",
+      "tags": [
+        "germ theory",
+        "history of medicine",
+        "history of science",
+        "invisible life",
+        "microbes"
+      ],
+      "categoryId": "27",
+      "defaultLanguage": "en-GB",
+      "defaultAudioLanguage": "en-GB"
+    },
+    "status": {
+      "privacyStatus": "private",
+      "publishAt": "2026-10-13T10:30:00.000Z",
+      "selfDeclaredMadeForKids": false,
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false
+    },
+    "localizations": {
+      "en-GB": {
+        "title": "Invisible life is still everywhere",
+        "description": "What else is still invisible? You meet that victory every time soap meets your hands.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #InvisibleLife #HistoryOfScience #Science #Shorts"
+      }
+    }
+  },
+  "newId": "qOZgess30h0",
+  "thumbnail": {
+    "status": 200,
+    "result": "set",
+    "body": "{\n  \"kind\": \"youtube#thumbnailSetResponse\",\n  \"etag\": \"TeyU8-OGWGwwAsjVeMnXdsvi6Fk\",\n  \"items\": [\n    {\n      \"default\": {\n        \"url\": \"https://i9.ytimg.com/vi/qOZgess30h0/default.jpg?sqp=CNzjqtYG&rs=AOn4CLBU_-aIgP8v2W6379Z7ymnBoVFVng\",\n        \"width\": 120,\n        \"height\": 90\n      },\n      \"m"
+  },
+  "oldPrivateUpdate": 200,
+  "after": [
+    {
+      "id": "qOZgess30h0",
+      "title": "Invisible life is still everywhere",
+      "channel": "History of Science",
+      "privacy": "private",
+      "publishAt": "2026-10-13T10:30:00Z",
+      "uploadStatus": "uploaded",
+      "madeForKids": false
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "title": "Invisible life is still everywhere",
+      "channel": "History of Science",
+      "privacy": "private",
+      "publishAt": null,
+      "uploadStatus": "processed",
+      "madeForKids": false
+    }
+  ]
+}
