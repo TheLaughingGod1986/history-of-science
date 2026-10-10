@@ -54,6 +54,26 @@
       ],
       "out": "hos_004_thumb_C_hidden_number_live_v07.jpg",
       "at": "2026-10-09T16:28:11+00:00"
+    },
+    {
+      "plate": "hos_004_thumb_C_hidden_number_live_v07_plate01.jpg",
+      "te_face": [
+        530,
+        222,
+        818,
+        568
+      ],
+      "i_face": [
+        864,
+        196,
+        1198,
+        598
+      ],
+      "out": "hos_004_thumb_C_hidden_number_live_v07b.jpg",
+      "at": "2026-10-10T09:32:40+00:00",
+      "version": "v07b",
+      "authority": "desk #180 6084986948 + 6085214049; job J0106",
+      "numbers": "52/53 cap ~25% of tile height, Times New Roman Bold, ink + cream outline"
     }
   ],
   "cost_usd_total": 0.078
