@@ -2,5 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "ignoreCommand": "bash scripts/vercel-ignore-build.sh",
   "buildCommand": "node scripts/with-direct-url.mjs prisma generate && node scripts/with-direct-url.mjs prisma migrate deploy && next build",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "git": {
+    "deploymentEnabled": false
+  }
 }
