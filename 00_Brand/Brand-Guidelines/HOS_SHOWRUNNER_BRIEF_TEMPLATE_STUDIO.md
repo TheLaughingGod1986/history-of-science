@@ -32,4 +32,5 @@ Source of truth: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md` §5 (picture) and �
 
 - **Silent-readable:** each plate shows what its `vo_land` says, so the beat reads with the sound off.
 - **Side labels:** white Didot italic, 1–4 words, one at a time, when the VO introduces a person, place/year, tool, idea or why-it-matters turn. Listed in the board's `side_label`.
+- **Teach on screen (Ben, 11 Oct 2026; AGENTS.md):** 3+ DATA graphics (one is the animated timeline), a WHO card (name, years, role) per named person at first mention, a WHEN stamp per date, 2–4 FACT cards. All text is added in the edit, never in a Veo prompt; card text goes in `side_label`.
 - **Clear before clever:** name the thing, say what it is and why it mattered.

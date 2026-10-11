@@ -71,6 +71,7 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 - **Pictures are facts too** (5 Oct 2026, after 007's chalk-crossed doors, a 1665 plague image, reached the visuals and a Short). Every `[VISUAL MUST]`, `LABEL`, Shorts picture cue and thumbnail idea that shows a historical thing (a sign, a custom, a costume, an object, a place) goes on the script's new-claims list beside the spoken claims. The write lane sources them in `FACT_NOTES` with the spoken ones, and nothing goes to picture until they are confirmed. If a period detail can't be sourced, show something plainer.
 - **Length is narration, not holds.** Reach about 8 minutes with real content (evidence, how it was measured, what it felt like), never long pauses. Part times in the script are estimates from the word count; re-time every part and chapter card from the recorded VO before plate boards are built.
 - **The film's end:** last line → the 3–4 s cream end card → the 20 s Studio end screen (§7). No on-screen "SEE <other film>" labels; the end screen links other films.
+- **Teach on screen (Ben, 11 Oct 2026):** at least 3 `DATA:` moments including one animated timeline, a `WHO:` card for every named person at first mention, a `WHEN:` stamp for every date and 2–4 `FACT:` beats, all inside `[VISUAL MUST: … · LABEL: …]`. Full rule in §5, *Teach on screen*.
 - **Markers:** every scene carries `[VISUAL MUST: …]` and `[TEACH: …]`. Explorer beats carry `[EXPLORER ACTS: …]`. Acts start with `[CHAPTER CARD: …]`.
 - **Script file format** (`01_Script/<slug>_script_master_vNN.md`):
   - spoken lines as plain prose, and everything else in markers: `[VISUAL MUST: <time> — <picture> · LABEL: <label>]`, `[TEACH: …]`, `[EXPLORER ACTS: …]`, `[CHAPTER CARD: …]`. The reviewer ignores table rows and counts every other word, so no VO in tables and no notes in the script;
@@ -90,6 +91,7 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 - **Two lines, then one hard fact** (`HOS_STRATEGY.md` → *Short hook*).
 - **The first two seconds:** start mid-action; the named thing at frame 0, moving; the first words are the claim; a visible change by 1 s; a 2–4 word hook caption on frame 0; the Explorer never at frame 0.
 - **The promoted film's exact live title** on screen at 9–14 s. The last 4 s loop back to the opening picture. Captions throughout.
+- **One overlay at most** (fact card, date stamp or one-number scale), only where it helps; never in the first 2 s or over the 9–14 s title, inside the 16:9 centre band, with no added words or seconds (§5, *Teach on screen*).
 - Shorts are cut from the film's own picture and VO wherever possible. The long-form reviewer caps Shorts below 90; don't pad a Short to chase it.
 
 ## 4. Voice
@@ -160,6 +162,43 @@ python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_S
 - **Continuous motion.** Never end or pad on a still, a still-zoom or a freeze.
 - **Silent picture.** Strip Veo audio. No readable text or logos in generated plates, except the Explorer's locked book title. Text is added in the edit.
 - **Never:** reuse a cutscene inside one film, loop scenery to pad, slow-mo stretch, freeze-pad, or Ken-Burns a card.
+
+### Teach on screen (Ben, 11 Oct 2026; generated from AGENTS.md, edit AGENTS.md then run `python3 scripts/sync_rules.py`)
+
+<!-- SYNC: AGENTS.md#Teach on screen (Ben, 11 Oct 2026) -->
+Ben, 11 Oct 2026 21:45, for every future video on both channels: *"add more graphs and charts when needed, more overlays, more animations, and more interesting facts to explain about dates, explain about the people we're mentioning, and make it more educational and more useful."* This applies to every script signed off and every picture part started after 11 Oct 2026. It builds on the teach labels (Ben, 20 Sep; `STUDIO_PLAYBOOK.md` §5 *The look*) and changes no locked rule. The premium 3D cartoon house style, white Didot italic, one label at a time, and "no flat poster or UI cards" all stand.
+
+**Script.** Mark these inside the scene's `[VISUAL MUST: … · LABEL: …]`, the same way LABEL is marked, so `review:script` doesn't count them and `gate:episode` doesn't change. Chief counts them at script review (`grep -o "DATA:" <script> | wc -l`, and the same for each marker).
+- **DATA: at least 3 in every long (aim for 3–5).** Wherever the VO gives a number, a measurement, a scale, a before-and-after or how something was measured, add `· DATA: <what the graphic shows>`. It's shown as an animated graphic in the house style: an ink chart that draws itself on period paper, a brass scale or gauge, a size comparison, or a counter. Every DATA number is in `FACT_NOTES` with its source.
+- **A timeline in every long.** Every HOS film is a story of dates, so each long gets one animated timeline of its key dates. It builds as each date is said, it counts as one DATA moment, and later dates drop onto it.
+- **WHO: a card for every named person at first mention.** Use `· WHO: <name> (<born>–<died>) — <role, 4 words or fewer>`, with the role as it was in the scene's year ("physics professor", not "Nobel laureate" before 1901). Later mentions get no card.
+- **WHEN: every date or era that's said.** Add `· WHEN: <place, year>` for a place-and-year stamp (already allowed in the first 3 s), or a marker dropping onto the timeline.
+- **FACT: 2–4 per long.** Each is one surprising, sourced fact, said in a line and shown as a card: `· FACT: <card text, 4 words or fewer>`. Make it a "huh, I didn't know that" beat, never a list.
+- **Pictures are facts too.** All WHO, WHEN, DATA and FACT text goes on the script's new-claims list and is sourced in `FACT_NOTES` before picture, like any spoken claim.
+- **Shorts (22–27 s): at most one overlay** (a fact card, a date stamp or a one-number scale), and only where it helps the line being said. It adds no words and no seconds, so the Short stays at 22–27 s and 55–65 words. It never appears in the first 2 s (frame 0 has the hook caption only) or over the 9–14 s title, and it stays inside the 16:9 centre band.
+
+**Picture.**
+- **All text is added in the edit,** never by Veo: plates carry no readable text, and garbled card text is a hard fail. In the plate board, the card's text goes in `side_label`, and a DATA graphic is named in the part's edit notes.
+- **House style only.** Cards and charts are white Didot italic over the moving plate, or a soft cream-on-brown teach card that matches the end card, inked or drawn on. They're never a flat poster, a UI panel, a modern slide or infographic look, or photoreal. One label or card at a time; a WHO card counts as one (the name on line one, the years and role on line two, lower third, on screen 3–4 s while the name is spoken).
+- **Everything animates.** A chart draws in time with the spoken number. A card fades or inks in over about 0.3–0.6 s, then out again. An overlay counts toward continuous motion only when it animates over a moving plate, never over a still or a freeze. No card holds still for more than 4 s, and a card is never Ken-Burned (that Never still stands). Never two full-frame teach graphics back to back: a moving plate comes between them.
+- The text stays off the hero object and the Explorer, and the cards never cover the picture that explains the line (the mute test still applies).
+
+**Review gate.** Chief's frame review and stills check score each item PASS or FAIL in the desk report, alongside the UAT hard fails, before the cut goes to Ben's watch:
+1. **DATA:** a long has 3 or more animated data moments, including the timeline. Each matches its line, reads with the sound off, and shows the same number as `FACT_NOTES`.
+2. **WHO:** every named person has a card at first mention, with sourced years and a role right for the year.
+3. **WHEN:** every spoken date or era has a stamp or a timeline marker.
+4. **FACT:** a long has 2–4 fact beats, each one sourced.
+5. **STYLE:** house style, white Didot italic or a cream teach card, 4 words or fewer per label, one at a time, added in the edit, with no flat poster or UI card, off the hero and the Explorer. A Short's overlay sits inside the 16:9 band, clear of 0–2 s and the 9–14 s title.
+6. **MOTION:** every overlay and chart animates in over moving picture, none holds still for more than 4 s, and no two full-frame teach graphics run back to back.
+
+A Short is scored on 5 and 6 only, plus whichever of 1–4 its single overlay is, if it has one. Any FAIL goes back to the plate board or edit before Ben's watch.
+
+**What it applies to.**
+- **All four markers before VO:** 009 and 010. Their scripts are signed off but have no VO yet, so the markers go inside `[VISUAL MUST]` with no spoken word changed, the score is unchanged, and the new card text is fact-checked into `FACT_NOTES`. New FACT lines wait for the next script.
+- **Cards and timeline added in the edit:** 006 (picture under way, edit not started), 007 and 008 (VO locked, picture not started). They ride lines that are already recorded, with no VO change.
+- **Every rule from the start:** topics picked after 11 Oct (011 on).
+- **No rework:** 004 and 005 are finished and scheduled.
+<!-- /SYNC -->
 
 ### Hard fails on every cut (the UAT bible)
 
