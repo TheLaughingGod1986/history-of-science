@@ -19,6 +19,24 @@ Public host for `/go/{slug}` and click persistence. Use the Vercel `*.vercel.app
 
 No repo-root `vercel.json` is required; keep other folders out of this project’s root.
 
+
+## Git auto-deploy is off
+
+Hobby teams get **100 deployments / rolling 24h** (`api-deployments-free-per-day`). Vercel counts **Ignored Build Step CANCELED** deploys toward that quota. This monorepo can push often enough to burn the team's limit even when Content Ops itself did not change.
+
+- `vercel.json` sets `"git": { "deploymentEnabled": false }`.
+- Project Git setting `createDeployments` is **disabled** (repo stays connected; no auto deploys).
+- `ignoreCommand` / `scripts/vercel-ignore-build.sh` remains as a backstop if git deploys are re-enabled.
+
+### Ship a production Content Ops / `/go` change (Chief OK only)
+
+```bash
+cd 07_Content-Ops
+vercel --prod   # linked to history-of-science-content-ops on team ben's projects
+```
+
+Then confirm the production `/go` URL returns 200 and redirects still stamp the Associates tag from env. Do not re-enable git auto-deploy, pause, delete, or change env vars unless Ben asked.
+
 ## Environment variables
 
 Set these on the Vercel project for **Production** and **Preview**:
