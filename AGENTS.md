@@ -63,6 +63,8 @@ python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_S
 python3 00_Brand/Channel-Setup/tools/style_sheet.py long|short <new.jpg> --out <sheet.jpg>   # new vs the live look
 cd 07_Content-Ops && npm run lint:package [-- --film NNN]              # release contract, before any upload/schedule
 cd 07_Content-Ops && npm run channel:audit [-- --write-live]           # what's really on YouTube (needs HOS .env)
+python3 <orbit-with-ben>/scripts/sfx_kit.py make --house hos --out-dir <film>/06_Sound-Effects/kit_v01   # house SFX (own synthesis, no spend)
+python3 <orbit-with-ben>/scripts/sfx_kit.py level --vo <vo stem> --sfx <sfx stem> --bed <music stem>   # SFX level rule (Polish pass)
 ```
 
 The Python tools need `ffmpeg`/`ffprobe` and Pillow; `vo_check.py` also uses `faster-whisper` for the word check, and a take whose word check didn't run FAILS (use `vo_check_py312.sh` on the Mini). Every ElevenLabs spend goes through `04_Audio/tools/el_client.py`, which enforces one recorder at a time, the `TTS_PAUSE` file, no credit floor (Ben, 9 Oct 2026: *"No floor on ElevenLabs. Keep going until the credit runs out."* It's a flat fee, so running out only stops work until the monthly reset; it never adds a bill, and a top-up stays Ben's call) and the spend ledger (`04_Audio/tools/README.md` → *Spend guard*). The YouTube scripts need `07_Content-Ops/.env` (see `.env.example`). Never print or commit its values.
@@ -116,6 +118,67 @@ A Short is scored on 5 and 6 only, plus whichever of 1–4 its single overlay is
 - **All four markers before VO:** 009 and 010. Their scripts are signed off but have no VO yet, so the markers go inside `[VISUAL MUST]` with no spoken word changed, the score is unchanged, and the new card text is fact-checked into `FACT_NOTES`. New FACT lines wait for the next script.
 - **Cards and timeline added in the edit:** 006 (picture under way, edit not started), 007 and 008 (VO locked, picture not started). They ride lines that are already recorded, with no VO change.
 - **Every rule from the start:** topics picked after 11 Oct (011 on).
+- **No rework:** 004 and 005 are finished and scheduled.
+
+## Polish pass (Astrum ref, 11 Oct 2026)
+
+Ben, 11 Oct 2026 22:17, sent Astrum's *What Is It Like on the Surface of a Black Hole Planet?* (`PxJSOWyYWkc`, 27 min, 1.1M views) as a style reference for both channels: *"let me know what you think we can incorporate into our workflow."* Chief adopted five of its techniques the same night. They apply to every picture part and edit started after 11 Oct 2026, in the HOS house style. **Where an Astrum technique meets a HOS lock, the HOS lock wins**: the premium 3D cartoon look, white Didot italic, one label at a time, no flat poster or UI cards, the UAT hard fails and the first-minute timings all stand.
+
+**Not adopted:** Astrum's long shot holds (6–8 s, some 15 s). The picture still changes every 4–6 s, no card holds still for more than 4 s, and length still comes from narration, not holds.
+
+**1. Sound design (SFX).**
+- **Three kinds, where the shot calls for them,** on top of the period foley we already lay (ward walla, glass, wood):
+  - a low rumble under a violent or huge moment (an eruption, a storm, a blast, a vast reveal);
+  - a soft whoosh on a fast camera move or a dive (into a lens, through a room);
+  - a pen-tap tick when a card, chart line or timeline marker inks in. It's never a digital UI blip, because HOS has no UI look.
+- **Source: our own house kit.** Run orbit-with-ben `python3 scripts/sfx_kit.py make --house hos --out-dir <film>/06_Sound-Effects/kit_v01` (it writes `rumble_low`, `whoosh_soft` and `tick_ink`). It synthesises the sounds itself, so there are no samples, no licence to track and no spend. The Mac mini has no licensed SFX library (checked 11 Oct).
+  - A free library may be added only if its licence allows commercial YouTube use with no attribution. Record it in the film's `06_Sound-Effects/SOURCES.md`. Nothing is bought.
+  - ElevenLabs SFX (`generate_sfx_from_script.py`) spends the shared credit through `el_client`, so it waits for the 30 Oct reset and Chief's OK.
+  - Never use Veo's own audio (silent picture).
+- **Restraint:** no whoosh on plain cuts or on every card, at most one tick every 0.5 s, and no cartoon whooshes or comedy stings.
+- **Level rule.** SFX sit under the VO, like the bed. Keep VO, music and SFX as separate stems for each part, and orbit-with-ben `python3 scripts/sfx_kit.py level --vo <vo stem> --sfx <sfx stem> --bed <music stem> --minutes <length>` must PASS:
+  - the SFX stem is at least 12 LU under the VO's integrated loudness;
+  - while the VO speaks, the SFX and the bed are each at least 10 LU under the VO;
+  - in a VO pause, the SFX stay at least 6 LU under the VO's integrated loudness.
+
+  The VO's −19 to −28 dB mean and bed parity (about −20 dB mean under the VO across parts) stay as they are.
+
+**2. Music by part.**
+- Each part's music follows what the part does: an ambient drone under wonder and discovery beats, and a light rhythmic or arpeggiated cue (plucked strings, a soft harpsichord or celesta figure that suits the period) under the "how it works" teach.
+- **Credit hold:** until the 30 Oct reset, no new bed starts without Chief's OK. So the free way is one bed whose prompt asks for both moods, with its sections laid at the part cards. A second cue counts as a new bed.
+- The music changes at a part or chapter card with a 2–4 s crossfade. The music covers the full runtime, never drops out, and keeps bed parity.
+- Shorts keep one bed for their full length (R8).
+
+**3. Explainer look.** For a mechanism (how a lens bends light, why a vaccine works), use the *Teach on screen* house style, not a new picture style: an inked diagram that draws itself on period paper, or a cream-on-brown teach card.
+- **No glowing grid, no flat UI, poster or infographic look.** That's Orbit's look, and the HOS lock wins.
+- The plates keep **one style per part**. The diagram is a teach graphic inside it, never a second rendering style.
+- Text is added in the edit (never by Veo), and garbled letters still hard-fail.
+- One label at a time. Never two full-frame teach graphics back to back: a moving plate comes between them.
+
+**4. Script.**
+- **Every big number gets a scale.** Give it a plain comparison or an everyday analogy in the same or the next sentence ("smaller than a grain of salt"). Mark it on its DATA marker: `· DATA: <graphic> · SCALE: <comparison>`. The comparison goes on the new-claims list and into `FACT_NOTES` like any spoken claim, and it's right for the year in the scene.
+- **The hook doesn't change.** HOS keeps its first-minute timings, which are stricter than Astrum's question by 0:50: the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, and the first real fact before 0:45.
+- **Word counts don't change:** about 1,200–1,300 spoken words, and `review:script` at 90 or more. An analogy replaces words; it doesn't add them. Shorts stay at 55–65 words.
+
+**5. Finishing.**
+- **Crossfades** of 0.5–1.5 s between scenes where the move suits (a change of place or year). Hard cuts elsewhere; they're not required on every cut. A crossfade never stretches a shot past the 4–6 s picture change, and part cards keep their 0.5–0.8 s breath before the crossfade.
+- **Fine film grain** only on dark gradients that band (night skies, dim rooms, lamp fall-off). It's a uniform layer in the edit, never paint-patching, and never an old-film or scratched look over the 3D cartoon.
+- **Depth of field:** only the gentle background softness asked for in the plate prompt. No blur added in post, never on the hero object or the Explorer, and never on late shots. UAT hard fail 7 (no heavy blur) wins.
+- **Corner credit labels:** none on our own 3D cartoon plates (the altered-content setting on upload covers that). A real archive image (a photograph, painting or manuscript) gets a small credit line in white Didot italic, bottom-left. It waits while any other label or card is on screen, because one label at a time wins. Shorts carry none.
+
+**Review gate.** Chief adds six items to the frame review and stills check, scored PASS or FAIL in the desk report alongside the UAT hard fails:
+1. **SFX:** `sfx_kit.py level` PASSes for each part, and the rumbles, whooshes and ink ticks sit on shots that call for them.
+2. **MUSIC:** the music changes between wonder and teach parts at least once, at a card, with full-runtime cover and bed parity.
+3. **GRAIN:** dark gradients show no banding, and no grain reads as an old-film effect.
+4. **SCALE:** every DATA number has its SCALE comparison, spoken and in `FACT_NOTES` (`grep -c "SCALE:"` is at least the DATA count).
+5. **EXPLAINER:** mechanisms use the inked diagram or cream teach card, with no glow grid, UI or poster look, one style per part, and a moving plate between full-frame graphics.
+6. **FINISH:** crossfades are 0.5–1.5 s, there's no added blur, and credit lines are only on archive images, one label at a time.
+
+A Short is scored on 1 and 3 only. Any FAIL goes back to the edit before Ben's watch.
+
+**What it applies to.**
+- **Items 1–3, 5 and 6:** every picture part or edit started from 12 Oct. That's 006's edit, 007 and 008, and 009 and 010 when their picture starts.
+- **Item 4:** spoken analogies start with scripts signed off from 12 Oct (011 on). 009 and 010 have signed-off scripts, so their scales go on screen in their DATA markers with no spoken word changed.
 - **No rework:** 004 and 005 are finished and scheduled.
 
 ## The desk (Claude ↔ Grok)
