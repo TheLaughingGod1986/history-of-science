@@ -26,6 +26,7 @@ Evidence: **[HOS]** means our own channel. **[Orbit]** means Orbit's 48 Shorts; 
 8. **Under about 60 characters,** so it isn't cut off on a phone. Length is not the lever; the shape is. [Orbit]
 9. **Wonder, not fear.** Proof and discovery, not "deadly" or "horror".
 10. **No vague question in a title or thumb** (11 Oct 2026, §2.B). A question names its subject.
+11. **Big subject plus one hook** (HOTU + SEA study, 11 Oct 2026): a famous nickname (*Semmelweis: The Doctor Who Saved Mothers*, *Penicillin: The Accidental Miracle*), the viewer inside the subject, or a journey to the edge. **Catalogue labels fail.** The question mark is optional.
 
 ## 2. Long thumbnails (16:9)
 
@@ -35,7 +36,7 @@ Changed 30 Sep 2026 to match the live look (001 flask, 002 gallium; `02_Video-Pr
 2. **One giant hero object, about two thirds of the frame, on the right:** the flask, the gallium, the atom, the coin under the knife. It must read at a glance at phone size.
 3. **The Explorer small in the lower left,** on model (teal coat, round gold glasses, satchel; attach `01_Character/05_Generation-References/hos-explorer-reference-v01.jpg`), looking at the object. A garnish, never the subject, never filling the right half.
 4. **Painted lettering on the left:** cream words with **one gold punch word**, the same serif display lettering and small gold flourishes on every thumb. The same lettering every week is how a returning viewer spots us. 2–5 words, readable at **168×94** (check with `python3 00_Brand/Channel-Setup/tools/thumb_preview.py long <thumb.jpg> --out <sheet.jpg>`).
-5. **Words:** the main thumb may carry the title painted in, as the live ones do. The other variants carry 2–3 hook words that add to the title (*CUT GOLD?*, *THE HIDDEN NUMBER*). Test & Compare decides which works; don't assume.
+5. **Words: the cover never repeats the title** (11 Oct 2026, HOTU + SEA: their losing covers that have text repeat the title). Every thumb, the main one included, carries 2–3 hook words that add to the title (*CUT GOLD?*, *THE HIDDEN NUMBER*), in the same painted serif lettering with one gold punch word. Live thumbs that paint the title in aren't reworked. Test & Compare decides between variants; don't assume.
 6. **Facts on the picture must be right.** No AI-made text anywhere except the painted lettering: blank tiles, plain coins, no fake element symbols. Any symbol or number (Te 52, I 53) is checked and, if the model gets it wrong, added by hand in the same lettering.
 7. **Keep the subject and lettering out of the bottom-right corner** (the duration badge), and every object fully in frame.
 8. **Make it** with an image model (Gemini / Flow image), attaching a live thumb as the style reference and the Explorer reference. Put each new thumb next to a live one on one sheet to check it's the same family.
@@ -45,7 +46,7 @@ Changed 30 Sep 2026 to match the live look (001 flask, 002 gallium; `02_Video-Pr
 
 Ben asked on 11 Oct 2026 what we can learn from Astrum's thumbnails and packaging. Ben delegates creative calls to Chief and the AIs. Their best thumbs name the object or dare the viewer, their weakest ask a vague question, and their text never sits on the subject. These rules apply in the HOS live look. **The live look (§2.1–2.8) stays: painted key art, serif lettering in cream with one gold punch word, the Explorer small at lower left. There's no saturation push, because the period palette and warm light stay as they are.** Where §2.B and §2.1–2.8 differ on words or placement, §2.B wins.
 
-1. **The hook words name the thing or make a dare.** Examples: THE HIDDEN NUMBER, CUT GOLD, DON'T DRINK IT. **No vague questions or teasers** (WHAT WAS IT?, HOW?, THE ANSWER). A question is fine only if it names the subject: CUT GOLD?, WASH YOUR HANDS?. This covers the 2–3 hook words on the Test & Compare variants and on Shorts covers. A main thumb that paints the title in (§2.5) keeps doing so.
+1. **The hook words name the thing or make a dare.** Examples: THE HIDDEN NUMBER, CUT GOLD, DON'T DRINK IT. **No vague questions or teasers** (WHAT WAS IT?, HOW?, THE ANSWER). A question is fine only if it names the subject: CUT GOLD?, WASH YOUR HANDS?. This covers the 2–3 hook words on the Test & Compare variants and on Shorts covers. Since 11 Oct no new thumb paints the title in (§2.5).
 2. **The lettering sits in a clear band, never over the hero object.**
    - **Longs:** a band across the top, or the clear left edge of the live layout, with the hero object whole and uncovered on the right. Not a letter on the object.
    - **Shorts covers:** they already sit across the top third (§4.2); keep them off the object too.

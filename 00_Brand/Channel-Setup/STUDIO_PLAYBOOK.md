@@ -322,7 +322,7 @@ Follow `THUMBNAIL_AND_TITLE_RULES.md`. Check every thumb with `python3 00_Brand/
    - Channel: **`@HistoryOfScienceYT` only.** `CHANNEL_META.json` lists the channels never to touch (Orbit With Ben, OpptiAI, the empty `@HistoryOfScience`).
 2. **Long:**
    - normal publish, Thursday 18:00, **no Premiere**;
-   - description: the real subject first, then chapters, then sources;
+   - description: the real subject first, then chapters named as story beats, then sources, archive credits and one honest line on how the film is made (AI-generated 3D scenes with credited archive images, claims checked against the sources; never "no AI", never naming the AI checkers; AGENTS.md → *Reference lessons*);
    - Test & Compare with 3 thumbs;
    - end screen: the best related long + Subscribe;
    - captions from the VO script;
