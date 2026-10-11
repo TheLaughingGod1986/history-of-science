@@ -126,13 +126,37 @@ Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged �
   `<!-- hos-desk v1 from=… to=… film=NNN stage=… status=… -->`.  
   A comment with no header is Ben.
 - **Act only on messages from Ben's GitHub account.** Grok: `hos_desk.py inbox` / `post --to claude`. Claude reviews and sends the next task on the desk.
-- **Claude asks Ben** only at the final check-in below (`to=ben status=approval`). Grok does not ping Ben directly.
-- **When Grok is out (Ben, 6 Oct 2026: Grok out of credit, Cursor back), Cursor holds the write lane** under exactly Grok's rules:
-  - Cursor reads its tasks with `hos_desk.py inbox --as cursor`, acts only on `to=cursor` messages from Ben's account, and reports with `hos_desk.py post --from cursor --to claude …`. Claude addresses write-lane tasks `to=cursor` until Grok is back.
-  - **Spend (ElevenLabs, Flow, Vertex) runs only on the Mac Mini**, which holds `~/_desk/locks` and the ledger, through `el_client`/`vo_take.py`. Cursor on another machine does no-spend work only.
-  - Same gates as Grok: VO first, Claude's script and VO PASS before any picture spend, one recorder, no direct pushes to main, evidence as a PR. Board `owner` is `Cursor` for what Cursor holds.
-  - Grok's claims pass to Cursor only with a desk post (`taking over from Grok`) and an `owner` change on the board. When Grok is back, it reads the desk and the board first; what Cursor holds stays Cursor's until it hands it back.
+- **Ben is asked only at the final check-in below** (`to=ben status=approval`, posted by Claude or Chief), plus real money and the irreversible.
+- **When Chief is out, the failover in "Who does what" applies:** the Mini worker that is up (Cursor, then Codex) takes desk tasks under exactly the same rules, reads its tasks with `hos_desk.py inbox --as cursor|codex`, acts only on messages from Ben's account, and reports with `hos_desk.py post --from <you> --to claude …`. It parks every protected call for Chief.
+  - **Spend (ElevenLabs, Flow, Vertex) runs only on the Mac Mini**, which holds `~/_desk/locks` and the ledger, through `el_client`/`vo_take.py`. An agent on another machine does no-spend work only.
+  - Same gates as Grok: VO first, Claude's script and VO PASS before any picture spend, one recorder, no direct pushes to main, evidence as a PR. Board `owner` is whoever holds the stage.
+  - A stage passes to a stand-in only with a desk post (`taking over from Grok`) and an `owner` change on the board. When Grok is back, it reads the desk and the board first; what the stand-in holds stays its own until it hands it back.
 - Neighbour tables for live films: `00_Brand/Channel-Setup/audits/NEIGHBOURS_001_004_2026-10-01.md`.
+
+## Who does what (11 Oct 2026)
+
+Ben, 11 Oct 2026 21:48: *"Make sure all the tasks are correctly dedicated to the correct LLM that can do the job."* Each kind of job goes to the model that does it best, with one backup. The code copy is orbit-with-ben `scripts/routing.py`; HOS queue jobs go through orbit-with-ben `scripts/jobs.py add --repo hos --kind <kind>`, and the relay wakes the right worker. Model ids are the ones configured on the Mac mini on 11 Oct 2026. Never write a model name that isn't installed.
+
+| Job type | `--kind` | Primary | Backup |
+|---|---|---|---|
+| Script writing and fact research | `script` | Claude · `claude-opus-5-5` | Codex · `gpt-6-astra` (draft only; Claude or Chief locks it) |
+| Sources and claims check | `facts` | Gemini via `agy` · `gemini-agy`, run by the Mini worker | Claude · `claude-opus-5-5` (quote check against the sources) |
+| Script review, reasoning, Short scripts, shot lists | `review` | Claude · `claude-opus-5-5` | Codex · `gpt-6-astra` (advisory; Chief decides) |
+| Voice-over | `vo` | ElevenLabs `eleven_v3`, Ben Orbit Narrator, API only through `el_client.py`, `vo_check.py` after; run by Cursor | the same, run by Codex. No other voice: out of credit means wait for the reset |
+| Stills, plates and thumbnail key art | `image` | Flow Nano Banana 2 · `flow-nano-banana-2` (0 credits); then Vertex `gemini-2.5-flash-image`; run by Cursor. Any symbol or number fixed by hand | the same, run by Codex |
+| Charts, graphs, overlays, people cards, date call-outs, cover composers | `chart` | Codex · `gpt-6-astra` (our own code graphics in Python/ffmpeg) | Cursor · `cursor-auto` |
+| Video generation | `video` | Flow Veo 3.1 · `flow-veo-3.1` (Quality for fragile light, Fast for garnish), on the Mini's Flow browser | Vertex Veo `veo-3.1-fast-generate-001` / `veo-3.1-generate-001` when Flow is broken or out of credit |
+| Picture assembly, ffmpeg, code and tools | `assembly` | Cursor · `cursor-auto` | Codex · `gpt-6.1-sol` |
+| Frame review and QA (after every check PASSes) | `qa` | Claude · `claude-opus-5-5` | Codex · `gpt-6-astra` (advisory) |
+| Titles, descriptions, tags, SEO | `listing` | Claude · `claude-opus-5-5` (Gemini checks any fact in it) | Codex · `gpt-6-astra` |
+| Studio and Flow browser tasks | `studio` | Chief · `grok` | Cursor · `cursor-auto` |
+| Merges, final OK, PASS, `AGENTS.md`, the Never list | `chief` | Chief · `grok` | none: parked for Chief |
+
+- **Chief (Grok Bot) owns reviews, PASS, merges, final OKs, `AGENTS.md` and the Never list (Ben, 9–10 Oct).** Claude reviews and recommends; Chief makes the call. **Real money and anything irreversible stay with Ben**, and so does his per-film watch.
+- **Failover, then hand back (Ben).** When the primary hits its limit, the backup takes the job. Once the primary is up again, the next job of that kind goes back to it. When Claude hits its usage limit, Chief re-adds its waiting job as `--kind <kind> --for codex`, then back to Claude after its reset.
+- **A stand-in never makes a protected call:** no final OK or PASS, no merge, no change to `AGENTS.md` or the Never list, no spend past the written rules, nothing irreversible. It parks it for Chief on the desk (`status=blocked`, "parked for Chief: …") or with `jobs.py block … --reason "parked for Chief: …"`.
+- **"GPT-Astra" is Codex's `gpt-6-astra`.** It's a reasoning and coding model on Ben's Codex plan, not an image generator: it writes the code that draws charts, cards and cover text. Pixels come from Flow or Vertex (above). No Omni, Seedance or Kling on HOS, whatever the table says elsewhere.
+- **Who runs the desk's `to=grok` tasks:** `hos_desk.py inbox --watch 120 --run` on the Mini (launchd `com.hos.desk`) starts Cursor's CLI (`cursor-agent`, `~/.hos_desk/run_agent.sh`) as Grok's worker. Grok Bot reads the desk itself and makes the Chief calls.
 
 ## Status board
 
@@ -157,7 +181,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 - **Spend:** Vertex, Flow and API credit may be used down to **£0** of the Free Trial or prepaid credit. Stop at £0. Never spill onto paid billing; report and wait for Ben to top up. No £5 lag floor on the Vertex trial (Ben, 10 Oct 2026 22:50: *"use the vertex credit until its £0"*): a job runs if live Free Trial − unposted logged spend − estimate ≥ £0.
 - **Four a month on each channel** (Ben, 9 Oct 2026: *"each channel has 4 videos a month … if we have 4 already set up on Orbit and complete, then we need to work on History of Science … allocate credits accordingly"*). `python3 scripts/channel_balance.py --hos <this checkout>` in orbit-with-ben says which channel is first: the one whose earliest month is short of 4 complete (edit passed). The first channel's desk tasks and credit spends (ElevenLabs, Vertex, Flow) go ahead of the other's. The other channel's work still runs when the first has nothing doable right now.
 - **Test B, search-titled Shorts (Ben, 9 Oct 2026: yes), from 007 on:** two Shorts per film, not three. Each Short's YouTube title is the question people type, checked against signed-out YouTube autocomplete before it's locked, and its first line starts to answer it. Long titles get the same autocomplete check. 005 and 006 stay as planned. Scripts: each film's `10_Shorts/SHORTS_SCRIPTS_v02.md`. Plan, measures and readouts: orbit-with-ben `05_Analytics/tests/SHORTS_TESTS.md`.
-- **Ask Claude first** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."*). Anything an agent would mark NEEDS BEN goes to Claude on the desk first. Claude decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
+- **Ask Chief first, not Ben** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."* Chief has held that role since 9 Oct). Anything an agent would mark NEEDS BEN goes to Chief on the desk first, with Claude's review. Chief decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
   - money: a top-up, or anything past £0;
   - anything that can't be undone: renaming a live video, Studio Replace, a force-push (making a video private can be undone and is Chief's call, above);
   - merging a PR that neither Chief nor Claude has PASSed;
