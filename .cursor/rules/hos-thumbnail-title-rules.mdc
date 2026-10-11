@@ -25,7 +25,8 @@ Readable copy with the evidence: `00_Brand/Channel-Setup/THUMBNAIL_AND_TITLE_RUL
 - **Painted 3D cartoon key art**, full bleed, warm library/lab light. Never flat graphics, split panels or a plain dark background. Reference: `02_…002…/08_Thumbnail/LIVE_THUMB_LOCK.md`.
 - **One giant hero object, ~2/3 of the frame, right.** The Explorer **small, lower left**, on model, looking at it.
 - **Painted lettering left:** cream words + one gold punch word, serif display, small gold flourishes, same on every thumb. 2–5 words readable at 168×94: `python3 00_Brand/Channel-Setup/tools/thumb_preview.py long <thumb> --out <sheet>`.
-- Main thumb may paint the title in; the other variants use 2–3 hook words that add to it.
+- **Cover text never repeats the title** (11 Oct 2026). Every new thumb, the main one included, uses 2–3 hook words that add to it. Live thumbs aren't reworked.
+- Titles need a big subject plus one hook (a nickname, the viewer inside it, a journey to the edge); catalogue labels fail.
 - No AI-made text or numbers except the lettering; any symbol or number checked and fixed by hand. Nothing in the bottom-right corner; every object fully in frame.
 - Make with an image model using a live thumb + the Explorer reference as references. Test & Compare with 3; judge CTR past about 500 impressions.
 - **Packaging (Astrum study, 11 Oct 2026, §2.B):** hook words name the thing or dare. No vague questions or teasers; a question names its subject. Lettering in a top band or the clear left edge, never over the hero object. No saturation push (period palette). Chief scores HOOK / BAND / PHONE.

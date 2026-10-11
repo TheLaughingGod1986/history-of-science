@@ -181,6 +181,75 @@ A Short is scored on 1 and 3 only. Any FAIL goes back to the edit before Ben's w
 - **Item 4:** spoken analogies start with scripts signed off from 12 Oct (011 on). 009 and 010 have signed-off scripts, so their scales go on screen in their DATA markers with no spoken word changed.
 - **No rework:** 004 and 005 are finished and scheduled.
 
+## Reference lessons (HOTU + SEA, 11 Oct 2026)
+
+Chief studied two more reference channels on 11 Oct 2026. *History of the Universe* (HOTU) was read through `cqGhCCDC_Sw`, *Have We Finally Proven Einstein Wrong?*, and SEA through `7oR0Pmd-WIk`, *Higgs Boson: The God Particle*. The evidence is in `/workspace/hotu-pack/TAKEAWAYS.md` and `/workspace/sea-pack/TAKEAWAYS.md` on the box. Ben delegates creative calls to Chief and the AIs, and these are Chief's calls. They add to *Teach on screen*, *Polish pass* and *Packaging*.
+
+**These HOS locks win wherever a lesson meets them:**
+- **The first-minute timings:** the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, the first real fact before 0:45.
+- **The 22–27 s / under-40 s Shorts lock**, and the yellow hook word on the frame-0 caption.
+- **The house look:** the premium 3D cartoon look, white Didot italic, one label at a time, no flat poster, UI card or photoreal card.
+- **The Explorer's limits:** never in the first minute, 1–3 beats.
+- **The ending:** no goodbye or subscribe ask; the last line hands off to the next film.
+- **The UAT hard fails and the Never list.**
+
+**1. Craft lessons (Claude writes them into scripts and plate boards; Chief scores them at review).**
+- **Structure.**
+  - Each part opens cold, on a period quote, a scene or a question.
+  - Each part ends on a question the next part answers.
+  - At about 60% of the runtime comes a midpoint twist: "Case closed? Wrong."
+  - Near the end, raise the scariest idea, explain it away, then give a short sign-off. That's the existing hand-off line and cream end card, not a goodbye.
+- **People** (HOS's strongest fit).
+  - Every named person gets the WHO year card plus a **cut-out portrait with gentle parallax**: a sourced archive painting or engraving, credited, over a moving plate.
+  - **Rivalries** are told with back-and-forth portrait cuts (HOTU's Einstein vs Bohr), and a witness quote where there is one.
+  - Year first, then one sourced human detail, then the idea.
+- **Hard ideas.**
+  - Put a quirky, concrete, sourced anecdote just before the hard idea.
+  - Show hard maths as a physical object in the house look: a brass slider that stops at a limit and then breaks past it, or a map of inked icons that light up one by one.
+  - Make big numbers tangible on a scale card.
+  - Jump between micro and macro scale.
+  - **Scanned old diagrams with light traced through them** suit HOS: a real archive diagram (credited, one label at a time), with a warm ink or candle-gold trace, never a neon glow grid.
+- **On screen.**
+  - Keywords appear as they're spoken, with a plain-English sub-line, inked in white Didot, one label at a time, 4 words or fewer.
+  - Years that fill the screen are the WHEN stamp.
+  - Give every shot a slow push-in or pull-out, through the Veo camera move. Never a still push or Ken Burns when Flow is capped (Never list), and never on a teach card.
+  - Use a recurring **"case file desk" chapter card**, painted in the house 3D world (a period desk with the case folder, never a UI card), with a low wooden or bass thud.
+- **Sound.**
+  - SFX on name cards and photo reveals (the house ink tick).
+  - Music follows the emotion and changes by part (*Polish pass*). Near-silence at the key reveal is allowed, but for 6 s at most, so the music gate's gap rule still passes.
+  - Cut to a human reaction at the emotional peak: an archive face, or the Explorer outside the first minute.
+- **Banned (weak spots):**
+  - **The same photo or plate used 5 or more times** in a film (a Chief FAIL);
+  - **generic glowing-dot or particle filler** standing in for a real subject;
+  - **holding back the answer.**
+
+**2. Packaging rules.**
+- **Cover text never repeats the title**, from new thumbs on (those not yet made from 006 on). The main thumb no longer paints the title in: it carries 2–3 words that add to it, in the same serif lettering with one gold word (`THUMBNAIL_AND_TITLE_RULES.md` §2.5). The lettering style is unchanged; only the words change.
+- **Titles need a big subject plus one hook:**
+  - a famous nickname (*Semmelweis: The Doctor Who Saved Mothers*);
+  - the viewer inside the subject ("your hands", "your bones");
+  - a journey to the edge.
+
+  Catalogue labels fail (§1 rule 11).
+- **Descriptions** carry, in order:
+  1. the first line answering the title;
+  2. chapters named as story beats (*Bohr vs Einstein*, not *Quantum Theory*);
+  3. sources;
+  4. archive image credits;
+  5. **one honest line on how the film is made**, for example *"Pictures: AI-generated 3D scenes, with archive images credited below. Facts: every claim is checked against the sources listed."*
+
+  Never claim "no AI", and never name the AI checkers. Say a person checked the facts only when one actually did. The altered-content setting stays on.
+
+**3. Shorts rules.**
+- **The myth-bust opener is an allowed format.** Line 1 is the belief ("You were taught Newton's apple hit his head"), and **"No"** or the reversal lands by about 0:15, inside 22–27 s and the first-two-seconds rules.
+- **No straight trailers.** A Short is never a clip trimmed from the long. It has its own open, frame 0, caption, title and loop, and it stands alone.
+
+**4. Graphics go to Codex** (`--kind chart`, `gpt-6-astra`, per *Who does what*): the limit slider, the lit-up icon map, the number scale card, the traced-diagram graphic and the case-file card. Each is built in the house look and rendered per row in the edit.
+
+**5. Suggestions to test, not rule changes.** The no-cover-text Test & Compare and the near-black cap refinement are Orbit tests (orbit-with-ben AGENTS.md). HOS covers keep their painted lettering, and HOS has no near-black cap to refine.
+
+**Applies to:** scripts signed off from 12 Oct (011 on) for structure and people. 009 and 010 get only on-screen items with no spoken change, and 006–008 get edit-stage items. Packaging applies to every new upload package. 004 and 005 aren't reworked.
+
 ## Packaging (Astrum ref, 11 Oct 2026)
 
 Ben, 11 Oct 2026, asked what we can learn from Astrum's thumbnails and Shorts packaging. Chief decided the following for both channels the same night. In HOS it's adapted to the house look, and **the HOS live look wins** (painted key art, serif cream and gold lettering, the Explorer small at lower left, the period palette). Full rules: `THUMBNAIL_AND_TITLE_RULES.md` §2.B.
