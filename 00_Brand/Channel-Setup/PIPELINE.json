@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-10",
-  "updated_by": "Chief of Staff",
+  "updated": "2026-10-12",
+  "updated_by": "Chief (Grok)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -79,12 +79,12 @@
   "next_steps": [
     "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold — C has no OK. J0106 makes v07b (52/53 at about 2×, file only, due Tue 13 Oct); the Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
     "005: the 2 Oct thumbnail/Test & Compare/end-screen settings went on a stray private copy; manifest now points at the scheduled long wwcjcFfC-5M (#262). Check and re-arm them on wwcjcFfC-5M before Thu 29 Oct (queue J0101).",
-    "006 Part 03 picture on the free Vertex trial (Ben, 8 Oct): queued as J0107; 16 mints, about £11 first takes, reserved; the trial runs down to £0 (Ben, 10 Oct 22:50: \"use the vertex credit until its £0\"), J0107 unblocked 10 Oct.",
+    "006 Part 03: all 16 Vertex first takes minted 10 Oct (J0107, about £11.86) and KEPT by the Chief (desk #180, 10 Oct 23:38). Next: Part 03 rough v01 on the Mini (J0137, no spend), with the P3:06 Flow slot held.",
     "Shorts test B (Ben: yes, 9 Oct): two search-titled Shorts per film from 007, v02 scripts for 007–010 (titles autocomplete-checked). Shorts voiceover records the v02 pair.",
     "Voice queue (ElevenLabs 18,653 until 30 Oct): 007 Shorts B + C (J0109), then 009 long (opening to the Chief J0108/J0110, VO J0111), then 010 long (J0112, J0113), then the 008–010 Shorts. Each job checks the balance first; no music beds without the Chief's OK.",
     "Four a month on each channel (Ben, 9 Oct): the channel short of 4 gets work and credits first.",
-    "006 picture: Parts 04–05 on Flow after the 12 Oct refill, then the 006 edit and thumbnails, ready for Ben by Sun 1 Nov.",
-    "Mon 12 Oct: Flow credits refill (AI Ultra). Re-price 006 Parts 03–05, then 007, on Flow rates; reviewed before any mint.",
+    "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04–05 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
+    "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04–05), then 007, on Flow rates; the Chief passes before any mint (J0139).",
     "007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.",
     "008 edit: narration runs 9:14.8, over the 7–9 min window; the §4 pause trim on the assembled film has to bring it in.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment)."
@@ -98,13 +98,13 @@
     },
     {
       "pool": "Vertex free trial (picture)",
-      "left": "£17.70 (£11 reserved for 006 Part 03)",
-      "rule": "free trial, use it before it ends 10 Nov; spend down to £0, no £5 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 (J0107, ~£11.36) goes first; until it's done, OWB spends only what's left above its estimate. Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben.",
-      "checked": "9 Oct"
+      "left": "about £4.25 projected after 006 Part 03 (16 takes about £11.86; last console reading £16.11 at 10 Oct 22:03Z, console lags)",
+      "rule": "free trial, use it before it ends 10 Nov; spend down to £0, no £5 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 is done (J0107). Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben.",
+      "checked": "10 Oct"
     },
     {
       "pool": "Flow (picture)",
-      "left": "52 credits; refills 12 Oct",
+      "left": "52 credits before the refill; refills Mon 12 Oct, balance read by J0138 (not yet read)",
       "rule": "Flow first for picture; AI Ultra active (renews 12 Oct, Ben 7 Oct) — no picture spend before the refill",
       "checked": "7 Oct"
     }
@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Words and voice are finished. Picture is the long pole: Part 01 is all kept and Part 02's rough cut is held; Part 03 is approved for the free Vertex trial but not started yet; Parts 04–05 go on Flow after the 12 Oct refill.",
+      "summary": "Words and voice are finished. Picture is about half done: Part 01 is kept, Part 02's rough cut is held, and Part 03's 16 Vertex first takes are all kept (Chief, 10 Oct). Part 03's rough cut is next; P3:06 and Parts 04–05 go on Flow once Monday's refill is read and priced.",
       "stages": {
         "topic": {
           "status": "done"
@@ -246,20 +246,26 @@
         },
         "picture": {
           "status": "doing",
-          "progress": 0.36,
+          "progress": 0.48,
           "owner": "Cursor",
           "due": "2026-10-25",
-          "note": "Part 01 12/12 kept; Part 02 rough v02 held; Part 03 (16 Vertex mints, about £11 first takes) approved for the free Vertex trial (Ben, 8 Oct), queued as J0107 (9 Oct); Parts 04–05 on Flow after the 12 Oct refill",
+          "note": "Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 queued (J0137); Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)",
           "steps": [
             1,
             5
           ],
           "steps_unit": "parts kept",
-          "left": "about 3 weeks",
+          "left": "about 2 weeks",
           "eta": "2026-10-25",
-          "underway": false,
-          "waiting": "J0107: 006 Part 03 on Vertex (16 mints, ~£11.36), unblocked 10 Oct 22:55: trial runs to £0 (Ben); next worker run",
-          "since": "2026-10-08"
+          "underway": true,
+          "waiting": "J0137: Part 03 rough v01 on the Mini (no spend), then J0138 Flow balance + prices (not before Mon 12 Oct 09:00), the Chief's price pass (J0139) and the Flow mints (J0140)",
+          "since": "2026-10-10",
+          "jobs": [
+            "J0137",
+            "J0138",
+            "J0139",
+            "J0140"
+          ]
         },
         "edit": {
           "status": "todo",
