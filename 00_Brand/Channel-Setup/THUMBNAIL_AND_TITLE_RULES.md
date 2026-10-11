@@ -25,6 +25,7 @@ Evidence: **[HOS]** means our own channel. **[Orbit]** means Orbit's 48 Shorts; 
 7. **No hashtags, no series suffix, and never the title of a live video.** [Orbit]
 8. **Under about 60 characters,** so it isn't cut off on a phone. Length is not the lever; the shape is. [Orbit]
 9. **Wonder, not fear.** Proof and discovery, not "deadly" or "horror".
+10. **No vague question in a title or thumb** (11 Oct 2026, §2.B). A question names its subject.
 
 ## 2. Long thumbnails (16:9)
 
@@ -39,6 +40,17 @@ Changed 30 Sep 2026 to match the live look (001 flask, 002 gallium; `02_Video-Pr
 7. **Keep the subject and lettering out of the bottom-right corner** (the duration badge), and every object fully in frame.
 8. **Make it** with an image model (Gemini / Flow image), attaching a live thumb as the style reference and the Explorer reference. Put each new thumb next to a live one on one sheet to check it's the same family.
 9. **Test & Compare with 3 variants on every long.** Judge CTR only past about 500 impressions.
+
+### 2.B Packaging from the Astrum study (11 Oct 2026, Chief)
+
+Ben asked on 11 Oct 2026 what we can learn from Astrum's thumbnails and packaging. Ben delegates creative calls to Chief and the AIs. Their best thumbs name the object or dare the viewer, their weakest ask a vague question, and their text never sits on the subject. These rules apply in the HOS live look. **The live look (§2.1–2.8) stays: painted key art, serif lettering in cream with one gold punch word, the Explorer small at lower left. There's no saturation push, because the period palette and warm light stay as they are.** Where §2.B and §2.1–2.8 differ on words or placement, §2.B wins.
+
+1. **The hook words name the thing or make a dare.** Examples: THE HIDDEN NUMBER, CUT GOLD, DON'T DRINK IT. **No vague questions or teasers** (WHAT WAS IT?, HOW?, THE ANSWER). A question is fine only if it names the subject: CUT GOLD?, WASH YOUR HANDS?. This covers the 2–3 hook words on the Test & Compare variants and on Shorts covers. A main thumb that paints the title in (§2.5) keeps doing so.
+2. **The lettering sits in a clear band, never over the hero object.**
+   - **Longs:** a band across the top, or the clear left edge of the live layout, with the hero object whole and uncovered on the right. Not a letter on the object.
+   - **Shorts covers:** they already sit across the top third (§4.2); keep them off the object too.
+   - Nothing goes in the bottom-right.
+3. **Review check.** Chief scores HOOK (names or dares), BAND (lettering off the hero, in its band or edge) and PHONE (readable at 168×94 on the `thumb_preview.py` sheet), as PASS or FAIL in the review note, next to the `style_sheet.py` family check. Any FAIL goes back before Ben's final check-in. Live thumbs aren't reworked.
 
 ## 3. Shorts: frame 0 is the thumbnail
 
@@ -69,6 +81,7 @@ Before any new thumb or cover goes to Ben, put it on one sheet next to live ones
 
 - [ ] Title: familiar noun first, one of the shapes, no hedge, hashtag, formula or repeat.
 - [ ] Thumb: 2–4 words that add to the title; `thumb_preview.py` sheet checked at the smallest tile.
+- [ ] Hook words name the thing or dare (no vague question); lettering in its band, off the hero object (§2.B).
 - [ ] Longs: painted key art in the live look (one giant hero object, the Explorer small lower left, cream and gold painted lettering); facts on it checked; next to a live thumb on one sheet.
 - [ ] Shorts: frame 0 passes `gate_shorts_open.py`; the frame-0 caption is the promise.
 - [ ] Longs: Test & Compare with 3 variants.

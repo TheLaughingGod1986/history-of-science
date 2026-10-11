@@ -181,6 +181,15 @@ A Short is scored on 1 and 3 only. Any FAIL goes back to the edit before Ben's w
 - **Item 4:** spoken analogies start with scripts signed off from 12 Oct (011 on). 009 and 010 have signed-off scripts, so their scales go on screen in their DATA markers with no spoken word changed.
 - **No rework:** 004 and 005 are finished and scheduled.
 
+## Packaging (Astrum ref, 11 Oct 2026)
+
+Ben, 11 Oct 2026, asked what we can learn from Astrum's thumbnails and Shorts packaging. Chief decided the following for both channels the same night. In HOS it's adapted to the house look, and **the HOS live look wins** (painted key art, serif cream and gold lettering, the Explorer small at lower left, the period palette). Full rules: `THUMBNAIL_AND_TITLE_RULES.md` §2.B.
+- **Name the thing or dare.** No vague questions or teasers on thumbs, covers or titles. A question names its subject.
+- **Lettering in a clear band** (the top, or the live layout's left edge), never over the hero object.
+- **No saturation push.** The period palette and warm light stay. Orbit's harder grade doesn't apply here.
+- **Review:** Chief scores HOOK / BAND / PHONE on every new thumb and cover, next to `style_sheet.py`. Any FAIL goes back before Ben's final check-in.
+- **Applies to** new thumbs and covers from 12 Oct (006 on). 004 and 005 and the live back catalogue aren't reworked. Shorts length is unchanged: the 22–27 s lock and the 40 s Never line stand (Orbit's one-off 50–60 s test doesn't apply to HOS).
+
 ## The desk (Claude ↔ Grok)
 
 Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged — PR **#180**), instead of Ben copying between them. Every HOS report goes to the desk. Rules: `STUDIO_PLAYBOOK.md` §15.
