@@ -22,6 +22,133 @@ The Explorer: `01_Character/CHARACTER_BIBLE.md`.
 
 One long (7–9 min) on Thursday at 18:00 UK as a **normal publish, never a Premiere**. Three Shorts (22–27 s) at 11:30 UK on Fri, Sun and Tue, each promoting a different film, never before that film's long is public. Never a second long on a subject that already has one.
 
+## Teach on screen (generated from AGENTS.md; edit AGENTS.md, then run `python3 scripts/sync_rules.py`)
+
+<!-- SYNC: AGENTS.md#Teach on screen (Ben, 11 Oct 2026) -->
+Ben, 11 Oct 2026 21:45, for every future video on both channels: *"add more graphs and charts when needed, more overlays, more animations, and more interesting facts to explain about dates, explain about the people we're mentioning, and make it more educational and more useful."* This applies to every script signed off and every picture part started after 11 Oct 2026. It builds on the teach labels (Ben, 20 Sep; `STUDIO_PLAYBOOK.md` §5 *The look*) and changes no locked rule. The premium 3D cartoon house style, white Didot italic, one label at a time, and "no flat poster or UI cards" all stand.
+
+**Script.** Mark these inside the scene's `[VISUAL MUST: … · LABEL: …]`, the same way LABEL is marked, so `review:script` doesn't count them and `gate:episode` doesn't change. Chief counts them at script review (`grep -o "DATA:" <script> | wc -l`, and the same for each marker).
+- **DATA: at least 3 in every long (aim for 3–5).** Wherever the VO gives a number, a measurement, a scale, a before-and-after or how something was measured, add `· DATA: <what the graphic shows>`. It's shown as an animated graphic in the house style: an ink chart that draws itself on period paper, a brass scale or gauge, a size comparison, or a counter. Every DATA number is in `FACT_NOTES` with its source.
+- **A timeline in every long.** Every HOS film is a story of dates, so each long gets one animated timeline of its key dates. It builds as each date is said, it counts as one DATA moment, and later dates drop onto it.
+- **WHO: a card for every named person at first mention.** Use `· WHO: <name> (<born>–<died>) — <role, 4 words or fewer>`, with the role as it was in the scene's year ("physics professor", not "Nobel laureate" before 1901). Later mentions get no card.
+- **WHEN: every date or era that's said.** Add `· WHEN: <place, year>` for a place-and-year stamp (already allowed in the first 3 s), or a marker dropping onto the timeline.
+- **FACT: 2–4 per long.** Each is one surprising, sourced fact, said in a line and shown as a card: `· FACT: <card text, 4 words or fewer>`. Make it a "huh, I didn't know that" beat, never a list.
+- **Pictures are facts too.** All WHO, WHEN, DATA and FACT text goes on the script's new-claims list and is sourced in `FACT_NOTES` before picture, like any spoken claim.
+- **Shorts (22–27 s): at most one overlay** (a fact card, a date stamp or a one-number scale), and only where it helps the line being said. It adds no words and no seconds, so the Short stays at 22–27 s and 55–65 words. It never appears in the first 2 s (frame 0 has the hook caption only) or over the 9–14 s title, and it stays inside the 16:9 centre band.
+
+**Picture.**
+- **All text is added in the edit,** never by Veo: plates carry no readable text, and garbled card text is a hard fail. In the plate board, the card's text goes in `side_label`, and a DATA graphic is named in the part's edit notes.
+- **House style only.** Cards and charts are white Didot italic over the moving plate, or a soft cream-on-brown teach card that matches the end card, inked or drawn on. They're never a flat poster, a UI panel, a modern slide or infographic look, or photoreal. One label or card at a time; a WHO card counts as one (the name on line one, the years and role on line two, lower third, on screen 3–4 s while the name is spoken).
+- **Everything animates.** A chart draws in time with the spoken number. A card fades or inks in over about 0.3–0.6 s, then out again. An overlay counts toward continuous motion only when it animates over a moving plate, never over a still or a freeze. No card holds still for more than 4 s, and a card is never Ken-Burned (that Never still stands). Never two full-frame teach graphics back to back: a moving plate comes between them.
+- The text stays off the hero object and the Explorer, and the cards never cover the picture that explains the line (the mute test still applies).
+
+**Review gate.** Chief's frame review and stills check score each item PASS or FAIL in the desk report, alongside the UAT hard fails, before the cut goes to Ben's watch:
+1. **DATA:** a long has 3 or more animated data moments, including the timeline. Each matches its line, reads with the sound off, and shows the same number as `FACT_NOTES`.
+2. **WHO:** every named person has a card at first mention, with sourced years and a role right for the year.
+3. **WHEN:** every spoken date or era has a stamp or a timeline marker.
+4. **FACT:** a long has 2–4 fact beats, each one sourced.
+5. **STYLE:** house style, white Didot italic or a cream teach card, 4 words or fewer per label, one at a time, added in the edit, with no flat poster or UI card, off the hero and the Explorer. A Short's overlay sits inside the 16:9 band, clear of 0–2 s and the 9–14 s title.
+6. **MOTION:** every overlay and chart animates in over moving picture, none holds still for more than 4 s, and no two full-frame teach graphics run back to back.
+
+A Short is scored on 5 and 6 only, plus whichever of 1–4 its single overlay is, if it has one. Any FAIL goes back to the plate board or edit before Ben's watch.
+
+**What it applies to.**
+- **All four markers before VO:** 009 and 010. Their scripts are signed off but have no VO yet, so the markers go inside `[VISUAL MUST]` with no spoken word changed, the score is unchanged, and the new card text is fact-checked into `FACT_NOTES`. New FACT lines wait for the next script.
+- **Cards and timeline added in the edit:** 006 (picture under way, edit not started), 007 and 008 (VO locked, picture not started). They ride lines that are already recorded, with no VO change.
+- **Every rule from the start:** topics picked after 11 Oct (011 on).
+- **No rework:** 004 and 005 are finished and scheduled.
+<!-- /SYNC -->
+
+## Polish pass (Astrum ref, 11 Oct 2026; generated from AGENTS.md, edit AGENTS.md then run `python3 scripts/sync_rules.py`)
+
+<!-- SYNC: AGENTS.md#Polish pass (Astrum ref, 11 Oct 2026) -->
+Ben, 11 Oct 2026 22:17, sent Astrum's *What Is It Like on the Surface of a Black Hole Planet?* (`PxJSOWyYWkc`, 27 min, 1.1M views) as a style reference for both channels: *"let me know what you think we can incorporate into our workflow."* Chief adopted five of its techniques the same night. They apply to every picture part and edit started after 11 Oct 2026, in the HOS house style. **Where an Astrum technique meets a HOS lock, the HOS lock wins**: the premium 3D cartoon look, white Didot italic, one label at a time, no flat poster or UI cards, the UAT hard fails and the first-minute timings all stand.
+
+**Not adopted:** Astrum's long shot holds (6–8 s, some 15 s). The picture still changes every 4–6 s, no card holds still for more than 4 s, and length still comes from narration, not holds.
+
+**1. Sound design (SFX).**
+- **Three kinds, where the shot calls for them,** on top of the period foley we already lay (ward walla, glass, wood):
+  - a low rumble under a violent or huge moment (an eruption, a storm, a blast, a vast reveal);
+  - a soft whoosh on a fast camera move or a dive (into a lens, through a room);
+  - a pen-tap tick when a card, chart line or timeline marker inks in. It's never a digital UI blip, because HOS has no UI look.
+- **Source: our own house kit.** Run orbit-with-ben `python3 scripts/sfx_kit.py make --house hos --out-dir <film>/06_Sound-Effects/kit_v01` (it writes `rumble_low`, `whoosh_soft` and `tick_ink`). It synthesises the sounds itself, so there are no samples, no licence to track and no spend. The Mac mini has no licensed SFX library (checked 11 Oct).
+  - A free library may be added only if its licence allows commercial YouTube use with no attribution. Record it in the film's `06_Sound-Effects/SOURCES.md`. Nothing is bought.
+  - ElevenLabs SFX (`generate_sfx_from_script.py`) spends the shared credit through `el_client`, so it waits for the 30 Oct reset and Chief's OK.
+  - Never use Veo's own audio (silent picture).
+- **Restraint:** no whoosh on plain cuts or on every card, at most one tick every 0.5 s, and no cartoon whooshes or comedy stings.
+- **Level rule.** SFX sit under the VO, like the bed. Keep VO, music and SFX as separate stems for each part, and orbit-with-ben `python3 scripts/sfx_kit.py level --vo <vo stem> --sfx <sfx stem> --bed <music stem> --minutes <length>` must PASS:
+  - the SFX stem is at least 12 LU under the VO's integrated loudness;
+  - while the VO speaks, the SFX and the bed are each at least 10 LU under the VO;
+  - in a VO pause, the SFX stay at least 6 LU under the VO's integrated loudness.
+
+  The VO's −19 to −28 dB mean and bed parity (about −20 dB mean under the VO across parts) stay as they are.
+
+**2. Music by part.**
+- Each part's music follows what the part does: an ambient drone under wonder and discovery beats, and a light rhythmic or arpeggiated cue (plucked strings, a soft harpsichord or celesta figure that suits the period) under the "how it works" teach.
+- **Credit hold:** until the 30 Oct reset, no new bed starts without Chief's OK. So the free way is one bed whose prompt asks for both moods, with its sections laid at the part cards. A second cue counts as a new bed.
+- The music changes at a part or chapter card with a 2–4 s crossfade. The music covers the full runtime, never drops out, and keeps bed parity.
+- Shorts keep one bed for their full length (R8).
+
+**3. Explainer look.** For a mechanism (how a lens bends light, why a vaccine works), use the *Teach on screen* house style, not a new picture style: an inked diagram that draws itself on period paper, or a cream-on-brown teach card.
+- **No glowing grid, no flat UI, poster or infographic look.** That's Orbit's look, and the HOS lock wins.
+- The plates keep **one style per part**. The diagram is a teach graphic inside it, never a second rendering style.
+- Text is added in the edit (never by Veo), and garbled letters still hard-fail.
+- One label at a time. Never two full-frame teach graphics back to back: a moving plate comes between them.
+
+**4. Script.**
+- **Every big number gets a scale.** Give it a plain comparison or an everyday analogy in the same or the next sentence ("smaller than a grain of salt"). Mark it on its DATA marker: `· DATA: <graphic> · SCALE: <comparison>`. The comparison goes on the new-claims list and into `FACT_NOTES` like any spoken claim, and it's right for the year in the scene.
+- **The hook doesn't change.** HOS keeps its first-minute timings, which are stricter than Astrum's question by 0:50: the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, and the first real fact before 0:45.
+- **Word counts don't change:** about 1,200–1,300 spoken words, and `review:script` at 90 or more. An analogy replaces words; it doesn't add them. Shorts stay at 55–65 words.
+
+**5. Finishing.**
+- **Crossfades** of 0.5–1.5 s between scenes where the move suits (a change of place or year). Hard cuts elsewhere; they're not required on every cut. A crossfade never stretches a shot past the 4–6 s picture change, and part cards keep their 0.5–0.8 s breath before the crossfade.
+- **Fine film grain** only on dark gradients that band (night skies, dim rooms, lamp fall-off). It's a uniform layer in the edit, never paint-patching, and never an old-film or scratched look over the 3D cartoon.
+- **Depth of field:** only the gentle background softness asked for in the plate prompt. No blur added in post, never on the hero object or the Explorer, and never on late shots. UAT hard fail 7 (no heavy blur) wins.
+- **Corner credit labels:** none on our own 3D cartoon plates (the altered-content setting on upload covers that). A real archive image (a photograph, painting or manuscript) gets a small credit line in white Didot italic, bottom-left. It waits while any other label or card is on screen, because one label at a time wins. Shorts carry none.
+
+**Review gate.** Chief adds six items to the frame review and stills check, scored PASS or FAIL in the desk report alongside the UAT hard fails:
+1. **SFX:** `sfx_kit.py level` PASSes for each part, and the rumbles, whooshes and ink ticks sit on shots that call for them.
+2. **MUSIC:** the music changes between wonder and teach parts at least once, at a card, with full-runtime cover and bed parity.
+3. **GRAIN:** dark gradients show no banding, and no grain reads as an old-film effect.
+4. **SCALE:** every DATA number has its SCALE comparison, spoken and in `FACT_NOTES` (`grep -c "SCALE:"` is at least the DATA count).
+5. **EXPLAINER:** mechanisms use the inked diagram or cream teach card, with no glow grid, UI or poster look, one style per part, and a moving plate between full-frame graphics.
+6. **FINISH:** crossfades are 0.5–1.5 s, there's no added blur, and credit lines are only on archive images, one label at a time.
+
+A Short is scored on 1 and 3 only. Any FAIL goes back to the edit before Ben's watch.
+
+**What it applies to.**
+- **Items 1–3, 5 and 6:** every picture part or edit started from 12 Oct. That's 006's edit, 007 and 008, and 009 and 010 when their picture starts.
+- **Item 4:** spoken analogies start with scripts signed off from 12 Oct (011 on). 009 and 010 have signed-off scripts, so their scales go on screen in their DATA markers with no spoken word changed.
+- **No rework:** 004 and 005 are finished and scheduled.
+<!-- /SYNC -->
+
+## Who does what (generated from AGENTS.md; edit AGENTS.md, then run `python3 scripts/sync_rules.py`)
+
+<!-- SYNC: AGENTS.md#Who does what (11 Oct 2026) -->
+Ben, 11 Oct 2026 21:48: *"Make sure all the tasks are correctly dedicated to the correct LLM that can do the job."* Each kind of job goes to the model that does it best, then down a full fallback chain. Ben, 11 Oct 2026 23:40: *"if Claude Code is out of usage you can use a Claude model in Cursor."* 23:47: *"Remember we also have Gemini and Codex."* So a Claude job goes **1) Claude Code → 2) Cursor CLI on the Mini running Claude** (`cursor-claude-opus-5-5` = `agent --model claude-opus-5-5`, the same Opus tier) **→ 3) Gemini** (`agy`) for reasoning, scripts, listings and review notes **→ 4) Codex `gpt-6-astra`** as the last resort; code and graphics go to Codex first. The code copy (`CHAINS`) is orbit-with-ben `scripts/routing.py`; HOS queue jobs go through orbit-with-ben `scripts/jobs.py add --repo hos --kind <kind>`, and the relay wakes the right worker. Model ids are the ones configured on the Mac mini on 11 Oct 2026. Never write a model name that isn't installed.
+
+| Job type | `--kind` | Primary | Fallbacks, in order |
+|---|---|---|---|
+| Script writing and fact research | `script` | Claude · `claude-opus-5-5` | 1. Cursor on Claude · `cursor-claude-opus-5-5` · 2. Gemini · `gemini-agy` · 3. Codex · `gpt-6-astra` (last resort; a stand-in's draft is a draft only, Claude or Chief locks it) |
+| Sources and claims check | `facts` | Gemini via `agy` · `gemini-agy`, run by the Mini worker | 1. Gemini woken directly · `gemini-agy` · 2. Claude · `claude-opus-5-5` (quote check against the sources) · 3. Cursor on Claude · `cursor-claude-opus-5-5` · 4. Codex · `gpt-6-astra` |
+| Script review, reasoning, Short scripts, shot lists | `review` | Claude · `claude-opus-5-5` | 1. Cursor on Claude · `cursor-claude-opus-5-5` · 2. Gemini · `gemini-agy` · 3. Codex · `gpt-6-astra` (advisory; Chief decides) |
+| Voice-over | `vo` | ElevenLabs `eleven_v3`, Ben Orbit Narrator, API only through `el_client.py`, `vo_check.py` after; run by Cursor | the same, run by 1. Codex, 2. Gemini. No other voice: out of credit means wait for the reset |
+| Stills, plates and thumbnail key art | `image` | Flow Nano Banana 2 · `flow-nano-banana-2` (0 credits); then Vertex `gemini-2.5-flash-image`; run by Cursor. Any symbol or number fixed by hand | the same, run by 1. Codex, 2. Gemini |
+| Charts, graphs, overlays, people cards, date call-outs, cover composers | `chart` | Codex · `gpt-6-astra` (our own code graphics in Python/ffmpeg) | 1. Cursor · `cursor-auto` · 2. Gemini · `gemini-agy` |
+| Video generation | `video` | Flow Veo 3.1 · `flow-veo-3.1` (Quality for fragile light, Fast for garnish), on the Mini's Flow browser; run by Cursor | Vertex Veo `veo-3.1-fast-generate-001` / `veo-3.1-generate-001` when Flow is broken or out of credit; run by 1. Codex, 2. Gemini when Cursor is out |
+| Picture assembly, ffmpeg, code and tools | `assembly` | Cursor · `cursor-auto` | 1. Codex · `gpt-6.1-sol` · 2. Gemini · `gemini-agy` |
+| Frame review and QA (after every check PASSes) | `qa` | Claude · `claude-opus-5-5` | 1. Cursor on Claude · `cursor-claude-opus-5-5` · 2. Gemini · `gemini-agy` · 3. Codex · `gpt-6-astra` (advisory) |
+| Titles, descriptions, tags, SEO | `listing` | Claude · `claude-opus-5-5` (Gemini checks any fact in it) | 1. Cursor on Claude · `cursor-claude-opus-5-5` · 2. Gemini · `gemini-agy` · 3. Codex · `gpt-6-astra` |
+| Studio and Flow browser tasks | `studio` | Chief · `grok` | 1. Cursor · `cursor-auto` · 2. Codex · `gpt-6.1-sol` |
+| Merges, final OK, PASS, `AGENTS.md`, the Never list | `chief` | Chief · `grok` | none: parked for Chief |
+
+- **Chief (Grok Bot) owns reviews, PASS, merges, final OKs, `AGENTS.md` and the Never list (Ben, 9–10 Oct).** Claude reviews and recommends; Chief makes the call. **Real money and anything irreversible stay with Ben**, and so does his per-film watch.
+- **Failover down the chain, then hand back (Ben, 11 Oct 23:40 and 23:47).** When a worker is out of usage or rate-limited, the job goes to the next worker up in its chain, never parked while anyone further down is up; once the primary is back, the next job of that kind goes to it. The OWB relay (`chief_relay.py`) does it by itself for HOS queue jobs too. When Claude Code is out of usage (marked `chief_relay.py down claude --reason "usage limit"`, a Claude ledger note saying it hit a limit, or a job Claude blocked with a usage/limit reason), its waiting jobs are rerouted (`jobs.py reroute <id> --to cursor --model cursor-claude-opus-5-5`) and Cursor wakes on `claude-opus-5-5` in the same run; then Gemini (`agy -p`), then Codex `gpt-6-astra`. A Cursor, Codex or Gemini run that hits a usage or limit error hands its job to the next worker up in the same run. The relay logs which worker and model actually ran each job (`~/_desk/state/chief/runs.jsonl`).
+- **A stand-in never makes a protected call:** no final OK or PASS, no merge, no change to `AGENTS.md` or the Never list, no spend past the written rules, nothing irreversible. It parks it for Chief on the desk (`status=blocked`, "parked for Chief: …") or with `jobs.py block … --reason "parked for Chief: …"`.
+- **"GPT-Astra" is Codex's `gpt-6-astra`.** It's a reasoning and coding model on Ben's Codex plan, not an image generator: it writes the code that draws charts, cards and cover text. Pixels come from Flow or Vertex (above). No Omni, Seedance or Kling on HOS, whatever the table says elsewhere.
+- **Who runs the desk's `to=grok` tasks:** `hos_desk.py inbox --watch 120 --run` on the Mini (launchd `com.hos.desk`) starts Cursor's CLI (`cursor-agent`, `~/.hos_desk/run_agent.sh`) as Grok's worker. Grok Bot reads the desk itself and makes the Chief calls.
+<!-- /SYNC -->
+
 ## Who decides (AGENTS.md → "Ben's check-in")
 
 <!-- SYNC: AGENTS.md#Ben's check-in (2 Oct 2026: one final OK, not one per stage) -->
@@ -36,7 +163,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 - **Spend:** Vertex, Flow and API credit may be used down to **£0** of the Free Trial or prepaid credit. Stop at £0. Never spill onto paid billing; report and wait for Ben to top up. No £5 lag floor on the Vertex trial (Ben, 10 Oct 2026 22:50: *"use the vertex credit until its £0"*): a job runs if live Free Trial − unposted logged spend − estimate ≥ £0.
 - **Four a month on each channel** (Ben, 9 Oct 2026: *"each channel has 4 videos a month … if we have 4 already set up on Orbit and complete, then we need to work on History of Science … allocate credits accordingly"*). `python3 scripts/channel_balance.py --hos <this checkout>` in orbit-with-ben says which channel is first: the one whose earliest month is short of 4 complete (edit passed). The first channel's desk tasks and credit spends (ElevenLabs, Vertex, Flow) go ahead of the other's. The other channel's work still runs when the first has nothing doable right now.
 - **Test B, search-titled Shorts (Ben, 9 Oct 2026: yes), from 007 on:** two Shorts per film, not three. Each Short's YouTube title is the question people type, checked against signed-out YouTube autocomplete before it's locked, and its first line starts to answer it. Long titles get the same autocomplete check. 005 and 006 stay as planned. Scripts: each film's `10_Shorts/SHORTS_SCRIPTS_v02.md`. Plan, measures and readouts: orbit-with-ben `05_Analytics/tests/SHORTS_TESTS.md`.
-- **Ask Claude first** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."*). Anything an agent would mark NEEDS BEN goes to Claude on the desk first. Claude decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
+- **Ask Chief first, not Ben** (Ben, 3 Oct 2026: *"Instead of asking me always ask Claude first."* Chief has held that role since 9 Oct). Anything an agent would mark NEEDS BEN goes to Chief on the desk first, with Claude's review. Chief decides it, or passes it to Ben with a recommendation. Only these still reach Ben:
   - money: a top-up, or anything past £0;
   - anything that can't be undone: renaming a live video, Studio Replace, a force-push (making a video private can be undone and is Chief's call, above);
   - merging a PR that neither Chief nor Claude has PASSed;

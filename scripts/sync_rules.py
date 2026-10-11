@@ -42,6 +42,10 @@ STALE = [
     (r"shot list (goes )?to \**Ben before generation", "shot lists go to Claude (3 Oct 2026)"),
     (r"back catalogue needs Ben's OK", "back catalogue goes to Claude (3 Oct 2026)"),
     (r"edit_post` with Ben's OK", "queued Buffer edits go to Claude (3 Oct 2026)"),
+    (r"When Grok is out \(Ben, 6 Oct 2026", "failover follows 'Who does what' (Ben, 11 Oct 2026)"),
+    (r"Grok does not ping Ben directly", "Chief talks to Ben (Chief owns the studio, 9 Oct 2026)"),
+    (r"\*\*Ask Claude first\*\* \(Ben, 3 Oct", "ask Chief first; Chief holds Claude's old role (9 Oct 2026)"),
+    (r"\*\*Claude asks Ben at the final check-in", "Claude or Chief asks Ben at the final check-in (11 Oct 2026)"),
 ]
 BLOCK = re.compile(r"(<!-- SYNC: AGENTS\.md#(?P<head>[^>]+?) -->\n)(?P<body>.*?)(<!-- /SYNC -->)", re.S)
 
