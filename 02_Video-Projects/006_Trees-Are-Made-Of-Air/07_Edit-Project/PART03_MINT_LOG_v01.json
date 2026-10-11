@@ -41,7 +41,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/e95032ef-be3c-4b2e-ba09-c2f73a94dcdd",
       "submitted_at": "2026-10-10T22:05:01+00:00",
       "cost_usd": 0.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:06:32+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
@@ -51,7 +51,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 92.6
+      "api_s": 92.6,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "02_hales_branch",
@@ -72,7 +75,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/0949493d-f7cd-49cb-b831-6069ab4bfa9c",
       "submitted_at": "2026-10-10T22:05:05+00:00",
       "cost_usd": 1.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:07:03+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/02_hales_branch_t1.mp4",
@@ -82,7 +85,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 119.9
+      "api_s": 119.9,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "04_leaf_mist",
@@ -103,7 +109,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/f2947fb0-a42b-403f-b26b-dcecff9255ee",
       "submitted_at": "2026-10-10T22:05:10+00:00",
       "cost_usd": 0.8,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:06:56+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/04_leaf_mist_t1.mp4",
@@ -113,7 +119,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 106.6
+      "api_s": 106.6,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "05_guess",
@@ -134,7 +143,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/cd7437a6-5c0d-4232-ad47-61e21afd31f2",
       "submitted_at": "2026-10-10T22:05:13+00:00",
       "cost_usd": 0.4,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:06:31+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/05_guess_t1.mp4",
@@ -144,7 +153,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 79.9
+      "api_s": 79.9,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "07_priestley",
@@ -165,7 +177,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/32620645-c07e-4381-a225-64da508a8312",
       "submitted_at": "2026-10-10T22:05:17+00:00",
       "cost_usd": 1.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:07:02+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/07_priestley_t1.mp4",
@@ -175,7 +187,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 106.4
+      "api_s": 106.4,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "08_candles_out",
@@ -196,7 +211,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/2e88bb69-6c7e-4792-b47c-4286d1d2e336",
       "submitted_at": "2026-10-10T22:05:21+00:00",
       "cost_usd": 1.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:07:06+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/08_candles_out_t1.mp4",
@@ -206,7 +221,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 106.0
+      "api_s": 106.0,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "13_fires_breath",
@@ -227,7 +245,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/27a86fd7-a38e-4951-9136-03f864d96510",
       "submitted_at": "2026-10-10T22:05:27+00:00",
       "cost_usd": 0.8,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:07:13+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/13_fires_breath_t1.mp4",
@@ -237,7 +255,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 107.6
+      "api_s": 107.6,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "03_water_level",
@@ -258,7 +279,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/d7fa0590-90a1-45a5-b041-72dfd326b67e",
       "submitted_at": "2026-10-10T22:07:32+00:00",
       "cost_usd": 0.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:08:51+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/03_water_level_t1.mp4",
@@ -268,7 +289,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 80.2
+      "api_s": 80.2,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "09_injured_air",
@@ -289,7 +313,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/ffb28cbd-bf6d-4212-8498-f713d61f621b",
       "submitted_at": "2026-10-10T22:07:35+00:00",
       "cost_usd": 0.4,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:08:54+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/09_injured_air_t1.mp4",
@@ -299,7 +323,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 79.8
+      "api_s": 79.8,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "12_mouse_mint",
@@ -320,7 +347,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/2a95d920-733f-42ec-8e14-9d7cce7b2d1d",
       "submitted_at": "2026-10-10T22:07:48+00:00",
       "cost_usd": 0.8,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:09:33+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/12_mouse_mint_t1.mp4",
@@ -330,7 +357,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 106.3
+      "api_s": 106.3,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "10_mint_jar",
@@ -351,7 +381,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/b3378728-4b17-4397-ae59-34556ef90614",
       "submitted_at": "2026-10-10T22:08:55+00:00",
       "cost_usd": 0.8,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:10:40+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
@@ -361,7 +391,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 106.3
+      "api_s": 106.3,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "11_candle_tall",
@@ -382,7 +415,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/9b9a6239-d8dd-4060-94ca-e5623527f7ba",
       "submitted_at": "2026-10-10T22:10:07+00:00",
       "cost_usd": 1.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:11:52+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
@@ -392,7 +425,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 106.9
+      "api_s": 106.9,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "14_trees_breathe",
@@ -413,7 +449,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/8bd38a09-3ba4-45fc-9a49-5a1b26fecc89",
       "submitted_at": "2026-10-10T22:12:12+00:00",
       "cost_usd": 0.8,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:14:37+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/14_trees_breathe_t1.mp4",
@@ -423,7 +459,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 146.8
+      "api_s": 146.8,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "15_quill_vegetable",
@@ -444,7 +483,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/1345b274-da29-4fa4-a748-ee69afa2fe67",
       "submitted_at": "2026-10-10T22:12:15+00:00",
       "cost_usd": 0.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:13:59+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/15_quill_vegetable_t1.mp4",
@@ -454,7 +493,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 105.6
+      "api_s": 105.6,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "17_notebook_tick",
@@ -475,7 +517,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/9080b4ec-8739-4c32-a4e0-a5026256b9f5",
       "submitted_at": "2026-10-10T22:13:34+00:00",
       "cost_usd": 0.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:15:18+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/17_notebook_tick_t1.mp4",
@@ -485,7 +527,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 105.7
+      "api_s": 105.7,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     },
     {
       "plate": "18_dark_window",
@@ -506,7 +551,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/1d9845de-add0-4e1f-9020-e78b6e64990e",
       "submitted_at": "2026-10-10T22:14:45+00:00",
       "cost_usd": 0.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-10T22:16:29+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/18_dark_window_t1.mp4",
@@ -516,7 +561,10 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 105.8
+      "api_s": 105.8,
+      "keep_by": "grok (Chief)",
+      "keep_at": "2026-10-10T22:38:20Z",
+      "keep_ref": "desk #180 comment 6102934743"
     }
   ],
   "stills": [
@@ -747,5 +795,5 @@
   ],
   "plates": {},
   "cost_usd_total": 14.824,
-  "updated": "2026-10-10T22:16:29+00:00"
+  "updated": "2026-10-11T23:20:00+00:00"
 }
