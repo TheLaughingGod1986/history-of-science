@@ -1,0 +1,688 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "In 1669, a man boiled urine to make gold. Hennig Brand in Hamburg hoped to find gold hiding inside it. He boiled down vats of it for days. No gold. Instead, a white paste that glowed in the dark. He'd found phosphorus, the first element with a known discoverer",
+  "words": [
+    {
+      "text": "In",
+      "start": 0.16,
+      "end": 0.24,
+      "type": "word",
+      "logprob": -1.7881377516459906e-06
+    },
+    {
+      "text": " ",
+      "start": 0.24,
+      "end": 0.32,
+      "type": "spacing",
+      "logprob": -1.3828182090946939e-05
+    },
+    {
+      "text": "1669,",
+      "start": 0.34,
+      "end": 1.66,
+      "type": "word",
+      "logprob": -2.2982348920663753e-05
+    },
+    {
+      "text": " ",
+      "start": 1.66,
+      "end": 1.98,
+      "type": "spacing",
+      "logprob": -3.6954811548639555e-06
+    },
+    {
+      "text": "a",
+      "start": 1.98,
+      "end": 2.0,
+      "type": "word",
+      "logprob": -3.6954811548639555e-06
+    },
+    {
+      "text": " ",
+      "start": 2.0,
+      "end": 2.08,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "man",
+      "start": 2.08,
+      "end": 2.32,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 2.32,
+      "end": 2.42,
+      "type": "spacing",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": "boiled",
+      "start": 2.42,
+      "end": 2.7,
+      "type": "word",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": " ",
+      "start": 2.7,
+      "end": 2.82,
+      "type": "spacing",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": "urine",
+      "start": 2.82,
+      "end": 3.22,
+      "type": "word",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": " ",
+      "start": 3.22,
+      "end": 3.3,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "to",
+      "start": 3.3,
+      "end": 3.36,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 3.36,
+      "end": 3.4,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "make",
+      "start": 3.4,
+      "end": 3.6,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 3.6,
+      "end": 3.66,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "gold.",
+      "start": 3.66,
+      "end": 4.1,
+      "type": "word",
+      "logprob": -1.0251977016650926e-06
+    },
+    {
+      "text": " ",
+      "start": 4.1,
+      "end": 4.1,
+      "type": "spacing",
+      "logprob": -0.0009924016194418073
+    },
+    {
+      "text": "Hennig",
+      "start": 4.82,
+      "end": 5.06,
+      "type": "word",
+      "logprob": -0.0006628726429577606
+    },
+    {
+      "text": " ",
+      "start": 5.06,
+      "end": 5.16,
+      "type": "spacing",
+      "logprob": -0.024417264387011528
+    },
+    {
+      "text": "Brand",
+      "start": 5.16,
+      "end": 5.68,
+      "type": "word",
+      "logprob": -0.024417264387011528
+    },
+    {
+      "text": " ",
+      "start": 5.68,
+      "end": 5.74,
+      "type": "spacing",
+      "logprob": -0.0008045773720368743
+    },
+    {
+      "text": "in",
+      "start": 5.74,
+      "end": 5.84,
+      "type": "word",
+      "logprob": -0.0008045773720368743
+    },
+    {
+      "text": " ",
+      "start": 5.84,
+      "end": 5.88,
+      "type": "spacing",
+      "logprob": -5.9960475482512265e-05
+    },
+    {
+      "text": "Hamburg",
+      "start": 5.9,
+      "end": 6.48,
+      "type": "word",
+      "logprob": -5.9960475482512265e-05
+    },
+    {
+      "text": " ",
+      "start": 6.48,
+      "end": 6.54,
+      "type": "spacing",
+      "logprob": -0.00023636408150196075
+    },
+    {
+      "text": "hoped",
+      "start": 6.54,
+      "end": 6.74,
+      "type": "word",
+      "logprob": -0.00023636408150196075
+    },
+    {
+      "text": " ",
+      "start": 6.74,
+      "end": 6.76,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "to",
+      "start": 6.76,
+      "end": 6.84,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 6.84,
+      "end": 6.88,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "find",
+      "start": 6.88,
+      "end": 7.14,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 7.14,
+      "end": 7.2,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "gold",
+      "start": 7.2,
+      "end": 7.64,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 7.64,
+      "end": 7.7,
+      "type": "spacing",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": "hiding",
+      "start": 7.7,
+      "end": 8.0,
+      "type": "word",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": " ",
+      "start": 8.0,
+      "end": 8.039,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "inside",
+      "start": 8.039,
+      "end": 8.48,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 8.48,
+      "end": 8.56,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "it.",
+      "start": 8.56,
+      "end": 8.68,
+      "type": "word",
+      "logprob": -3.97364222711379e-07
+    },
+    {
+      "text": " ",
+      "start": 8.68,
+      "end": 8.78,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "He",
+      "start": 9.52,
+      "end": 9.66,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 9.66,
+      "end": 9.7,
+      "type": "spacing",
+      "logprob": -5.8412379075889476e-06
+    },
+    {
+      "text": "boiled",
+      "start": 9.7,
+      "end": 10.04,
+      "type": "word",
+      "logprob": -5.8412379075889476e-06
+    },
+    {
+      "text": " ",
+      "start": 10.04,
+      "end": 10.08,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "down",
+      "start": 10.08,
+      "end": 10.38,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 10.38,
+      "end": 10.44,
+      "type": "spacing",
+      "logprob": -7.986990567587782e-06
+    },
+    {
+      "text": "vats",
+      "start": 10.44,
+      "end": 10.72,
+      "type": "word",
+      "logprob": -4.231918410368962e-06
+    },
+    {
+      "text": " ",
+      "start": 10.72,
+      "end": 10.78,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "of",
+      "start": 10.78,
+      "end": 10.84,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 10.84,
+      "end": 10.88,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "it",
+      "start": 10.88,
+      "end": 11.0,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 11.0,
+      "end": 11.04,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "for",
+      "start": 11.04,
+      "end": 11.18,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 11.18,
+      "end": 11.24,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "days.",
+      "start": 11.24,
+      "end": 11.82,
+      "type": "word",
+      "logprob": -2.0503934592852603e-06
+    },
+    {
+      "text": " ",
+      "start": 11.82,
+      "end": 11.82,
+      "type": "spacing",
+      "logprob": -7.867782187531702e-06
+    },
+    {
+      "text": "No",
+      "start": 12.54,
+      "end": 12.66,
+      "type": "word",
+      "logprob": -7.867782187531702e-06
+    },
+    {
+      "text": " ",
+      "start": 12.66,
+      "end": 12.76,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "gold.",
+      "start": 12.76,
+      "end": 13.12,
+      "type": "word",
+      "logprob": -5.2213035587556075e-06
+    },
+    {
+      "text": " ",
+      "start": 13.12,
+      "end": 13.76,
+      "type": "spacing",
+      "logprob": -4.172316494077677e-06
+    },
+    {
+      "text": "Instead,",
+      "start": 13.76,
+      "end": 14.28,
+      "type": "word",
+      "logprob": -1.5705235171026288e-05
+    },
+    {
+      "text": " ",
+      "start": 14.28,
+      "end": 14.76,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "a",
+      "start": 14.76,
+      "end": 14.84,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 14.84,
+      "end": 14.88,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "white",
+      "start": 14.88,
+      "end": 15.12,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 15.12,
+      "end": 15.22,
+      "type": "spacing",
+      "logprob": -3.8265450712060556e-05
+    },
+    {
+      "text": "paste",
+      "start": 15.24,
+      "end": 15.7,
+      "type": "word",
+      "logprob": -3.8265450712060556e-05
+    },
+    {
+      "text": " ",
+      "start": 15.7,
+      "end": 15.72,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "that",
+      "start": 15.72,
+      "end": 15.86,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 15.86,
+      "end": 15.9,
+      "type": "spacing",
+      "logprob": -0.00026174934464506805
+    },
+    {
+      "text": "glowed",
+      "start": 15.9,
+      "end": 16.18,
+      "type": "word",
+      "logprob": -0.00017449956309671202
+    },
+    {
+      "text": " ",
+      "start": 16.18,
+      "end": 16.2,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "in",
+      "start": 16.219,
+      "end": 16.28,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 16.28,
+      "end": 16.3,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "the",
+      "start": 16.3,
+      "end": 16.4,
+      "type": "word",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": " ",
+      "start": 16.4,
+      "end": 16.44,
+      "type": "spacing",
+      "logprob": -2.9802276912960224e-06
+    },
+    {
+      "text": "dark.",
+      "start": 16.44,
+      "end": 16.92,
+      "type": "word",
+      "logprob": -3.862371886498295e-06
+    },
+    {
+      "text": " ",
+      "start": 16.92,
+      "end": 16.94,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "He'd",
+      "start": 17.62,
+      "end": 17.76,
+      "type": "word",
+      "logprob": -4.1723239974089665e-07
+    },
+    {
+      "text": " ",
+      "start": 17.76,
+      "end": 17.82,
+      "type": "spacing",
+      "logprob": -3.099436753473128e-06
+    },
+    {
+      "text": "found",
+      "start": 17.82,
+      "end": 18.02,
+      "type": "word",
+      "logprob": -3.099436753473128e-06
+    },
+    {
+      "text": " ",
+      "start": 18.02,
+      "end": 18.18,
+      "type": "spacing",
+      "logprob": -0.004656186792999506
+    },
+    {
+      "text": "phosphorus,",
+      "start": 18.18,
+      "end": 18.92,
+      "type": "word",
+      "logprob": -0.0042334606176320285
+    },
+    {
+      "text": " ",
+      "start": 18.92,
+      "end": 19.4,
+      "type": "spacing",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": "the",
+      "start": 19.4,
+      "end": 19.52,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": " ",
+      "start": 19.52,
+      "end": 19.58,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "first",
+      "start": 19.58,
+      "end": 19.88,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 19.88,
+      "end": 19.94,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "element",
+      "start": 19.94,
+      "end": 20.42,
+      "type": "word",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": " ",
+      "start": 20.42,
+      "end": 20.58,
+      "type": "spacing",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": "with",
+      "start": 20.58,
+      "end": 20.66,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": " ",
+      "start": 20.66,
+      "end": 20.72,
+      "type": "spacing",
+      "logprob": -1.4305104514278355e-06
+    },
+    {
+      "text": "a",
+      "start": 20.72,
+      "end": 20.8,
+      "type": "word",
+      "logprob": -1.4305104514278355e-06
+    },
+    {
+      "text": " ",
+      "start": 20.8,
+      "end": 20.84,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "known",
+      "start": 20.84,
+      "end": 21.14,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 21.14,
+      "end": 21.18,
+      "type": "spacing",
+      "logprob": -0.0013017522869631648
+    },
+    {
+      "text": "discoverer",
+      "start": 21.18,
+      "end": 21.78,
+      "type": "word",
+      "logprob": -0.0010559209942584858
+    }
+  ],
+  "transcription_id": "r0BeB4AQTowLbDlXOfWA",
+  "audio_duration_secs": 21.84
+}

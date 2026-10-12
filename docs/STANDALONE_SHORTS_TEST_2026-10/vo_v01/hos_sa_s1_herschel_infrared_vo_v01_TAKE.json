@@ -1,0 +1,68 @@
+{
+  "stem": "hos_sa_s1_herschel_infrared_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0169-chief-lock"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 288,
+      "duration_s": 23.92
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 288,
+  "words": 51,
+  "duration_s": 23.92,
+  "loudness": {
+    "lufs_integrated": -20.8,
+    "mean_volume_db": -24.0,
+    "max_volume_db": -4.9
+  },
+  "sha256_mp3": "332b35b7893984e34edf24377f03df9d5a94bd9bcc68957ac06c89ec4cf03d1b",
+  "scribe": {
+    "transcript": "In 1800, a thermometer found light no one could see. William Herschel split sunlight with a prism and held thermometers in each color. Red was warmer than violet. Then he moved one past the red into the dark. It got hotter still. He'd found infrared, invisible light just past the red",
+    "script_words": 51,
+    "scribe_words": 51,
+    "match_rate_pct": 98.04,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "colour"
+        ],
+        "scribe": [
+          "color"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 198122,
+      "limit": 209536,
+      "remaining": 11414
+    },
+    "after": {
+      "used": 198122,
+      "limit": 209536,
+      "remaining": 11414
+    },
+    "counter_delta": 0
+  },
+  "text": "In 1800, a thermometer found light no one could see. William Herschel split sunlight with a prism and held thermometers in each colour. Red was warmer than violet. Then he moved one past the red, into the dark. It got hotter still. He'd found infrared: invisible light, just past the red.",
+  "made_at": "2026-10-12T18:52:04+0100"
+}
