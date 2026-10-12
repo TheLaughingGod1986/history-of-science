@@ -26,9 +26,11 @@ BED = HERE / "music_v01/hos-standalone-shorts_score_bed_v01.mp3"
 SFX = HERE / "sfx_kit_v01"
 COVERS = HERE / "covers_j0209_v01"
 GATE = REPO / "00_Brand/Channel-Setup/tools/gate_shorts_open.py"
-# S4 v02 failed the bed rule for 0.4 s on its last word (0:21.6): ramp the bed down 3 dB over 20.5–20.8 s and
-# remix into v03, keeping the Chief-KEEP v02 picture stream as is. (start s, ramp s, dB)
-DUCK = {"s4_curie_notebooks": (20.5, 0.3, -3.0)}
+# S4 v02 failed the bed rule for 0.4 s on its last word (0:21.6), so the bed ducks 3 dB before "strength"
+# (~21.1 s), keeping the Chief-KEEP v02 picture stream as is. v03's 0.3 s ramp sounded like a hard step
+# (Chief, HOS #180 6133314609): the ramp must be at least 1.0 s on a smoothstep curve. (start s, ramp s, dB)
+DUCK = {"s4_curie_notebooks": (19.8, 1.3, -3.0)}
+DUCK_VER = "_v04"
 
 
 def ff(*a: str) -> None:
@@ -48,7 +50,8 @@ def stems(rec: dict, work: Path) -> dict[str, Path]:
     duck = ""
     if rec["id"] in DUCK:
         t0, ramp, db = DUCK[rec["id"]]
-        duck = (f",volume='pow(10,{db}/20*min(max((t-{t0})/{ramp},0),1))':eval=frame")
+        x = f"clip((t-{t0})/{ramp},0,1)"
+        duck = f",asetnsamples=n=240,volume='pow(10,{db}/20*{x}*{x}*(3-2*{x}))':eval=frame"
     ff("-stream_loop", "-1", "-i", str(BED), "-af",
        f"{fmt},atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={rec['bed_gain_db']:.2f}dB{duck},afade=t=in:d=0.05,"
        f"afade=t=out:st={total - 0.25:.3f}:d=0.25", "-t", f"{total:.3f}", "-c:a", "pcm_s16le", str(p["bed"]))
@@ -85,9 +88,9 @@ def main() -> None:
         stem = Path(rec["file"]).stem
         work = WORK / (sid if stem.endswith("_v01") else sid + "_v02")
         p = stems(rec, work)
-        if sid in DUCK and not stem.endswith("_v03"):
+        if sid in DUCK and not stem.endswith(DUCK_VER):
             src = REPO / rec["file"]
-            dst = src.with_name(stem.rsplit("_v", 1)[0] + "_v03.mp4")
+            dst = src.with_name(stem.rsplit("_v", 1)[0] + DUCK_VER + ".mp4")
             remix(rec, p, src, dst)
             g = subprocess.run([sys.executable, str(GATE), "check", str(dst), "--air-date", rec["air_date"]],
                                capture_output=True, text=True)
