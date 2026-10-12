@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-12",
-  "updated_by": "Cursor (merge main into #271)",
+  "updated_by": "Cursor (merge main into #272)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -483,7 +483,7 @@
       "title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
       "air": "2026-12-03",
       "ready_by": "2026-11-29",
-      "summary": "Script, facts, audit and package are done. Voiceover follows 009; Shorts are now two (v02).",
+      "summary": "Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293). Picture next after Claude's board review and credit.",
       "stages": {
         "topic": {
           "status": "done"
@@ -499,10 +499,16 @@
           "status": "done"
         },
         "vo": {
-          "status": "todo",
+          "status": "done",
           "due": "2026-10-16",
-          "waiting": "after 009 VO: opening OK (J0112), then J0113 records; balance first",
-          "owner": "Cursor"
+          "owner": "Cursor",
+          "note": "long VO locked 11 Oct: 5 parts v01, 500 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101773293)",
+          "steps": [
+            5,
+            5
+          ],
+          "steps_unit": "parts passed",
+          "underway": false
         },
         "shorts_scripts": {
           "status": "done",
