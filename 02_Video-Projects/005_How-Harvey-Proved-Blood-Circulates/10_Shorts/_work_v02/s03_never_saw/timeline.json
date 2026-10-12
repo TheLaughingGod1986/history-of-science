@@ -1,0 +1,200 @@
+{
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.042,
+      "plate": "04_Generated-Clips/part05/raw/v01/06_eyepiece_mesh_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.042,
+      "t1": 4.208,
+      "plate": "04_Generated-Clips/part05/raw/v01/01_loop_gap_t5.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "He"
+    },
+    {
+      "t0": 4.208,
+      "t1": 7.499,
+      "plate": "04_Generated-Clips/part05/raw/v01/02_tiny_gaps_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "but"
+    },
+    {
+      "t0": 7.499,
+      "t1": 10.797,
+      "plate": "04_Generated-Clips/part05/raw/v01/03_old_harvey_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "He"
+    },
+    {
+      "t0": 10.797,
+      "t1": 15.816,
+      "plate": "04_Generated-Clips/part05/raw/v01/04_malpighi_slide_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "Four"
+    },
+    {
+      "t0": 15.816,
+      "t1": 20.809,
+      "plate": "04_Generated-Clips/part05/raw/v01/07_capillaries_loop_t2.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "There"
+    },
+    {
+      "t0": 20.809,
+      "t1": 24.809,
+      "plate": "04_Generated-Clips/part05/raw/v01/06_eyepiece_mesh_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "overlays": [
+    {
+      "role": "hook",
+      "text": "HE NEVER SAW THIS",
+      "t0": 0.0,
+      "t1": 2.6
+    },
+    {
+      "role": "vo",
+      "text": "Harvey never saw the last",
+      "t0": 0.0,
+      "t1": 1.579
+    },
+    {
+      "role": "vo",
+      "text": "link.",
+      "t0": 1.579,
+      "t1": 2.192
+    },
+    {
+      "role": "vo",
+      "text": "He proved your blood goes",
+      "t0": 2.192,
+      "t1": 3.631
+    },
+    {
+      "role": "vo",
+      "text": "round, but not how it",
+      "t0": 3.631,
+      "t1": 5.128
+    },
+    {
+      "role": "vo",
+      "text": "crosses from arteries to",
+      "t0": 5.128,
+      "t1": 6.685
+    },
+    {
+      "role": "vo",
+      "text": "veins.",
+      "t0": 6.685,
+      "t1": 7.649
+    },
+    {
+      "role": "vo",
+      "text": "He died in sixteen",
+      "t0": 7.649,
+      "t1": 9.032
+    },
+    {
+      "role": "vo",
+      "text": "fifty-seven, still",
+      "t0": 9.032,
+      "t1": 10.161
+    },
+    {
+      "role": "vo",
+      "text": "guessing.",
+      "t0": 10.161,
+      "t1": 10.947
+    },
+    {
+      "role": "vo",
+      "text": "Four years later,",
+      "t0": 10.947,
+      "t1": 12.316
+    },
+    {
+      "role": "vo",
+      "text": "Marcello Malpighi put a",
+      "t0": 12.316,
+      "t1": 13.843
+    },
+    {
+      "role": "vo",
+      "text": "frog's lung under a",
+      "t0": 13.843,
+      "t1": 15.052
+    },
+    {
+      "role": "vo",
+      "text": "microscope.",
+      "t0": 15.052,
+      "t1": 15.966
+    },
+    {
+      "role": "vo",
+      "text": "There it",
+      "t0": 15.966,
+      "t1": 16.779
+    },
+    {
+      "role": "vo",
+      "text": "was: a net of",
+      "t0": 16.779,
+      "t1": 18.269
+    },
+    {
+      "role": "vo",
+      "text": "vessels finer than",
+      "t0": 18.269,
+      "t1": 19.552
+    },
+    {
+      "role": "vo",
+      "text": "hairs.",
+      "t0": 19.552,
+      "t1": 20.379
+    },
+    {
+      "role": "vo",
+      "text": "Capillaries.",
+      "t0": 20.379,
+      "t1": 21.559
+    },
+    {
+      "role": "vo",
+      "text": "The last link",
+      "t0": 21.559,
+      "t1": 22.83
+    },
+    {
+      "role": "vo",
+      "text": "Harvey never saw.",
+      "t0": 22.83,
+      "t1": 24.509
+    },
+    {
+      "role": "title",
+      "text": "The Tied Arm That Proved Your Blood Circulates",
+      "t0": 9.0,
+      "t1": 14.0
+    },
+    {
+      "role": "cta",
+      "text": "watch the full film \u2192",
+      "t0": 20.809,
+      "t1": 24.729
+    }
+  ]
+}

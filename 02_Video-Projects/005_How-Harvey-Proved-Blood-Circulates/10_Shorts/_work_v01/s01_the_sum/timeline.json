@@ -1,0 +1,211 @@
+{
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.168,
+      "plate": "04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.168,
+      "t1": 5.047,
+      "plate": "04_Generated-Clips/part03/raw/v01/05_how_much_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "One"
+    },
+    {
+      "t0": 5.047,
+      "t1": 9.48,
+      "plate": "04_Generated-Clips/part03/raw/v01/07_thousand_beats_t4.mp4",
+      "in_s": 0.3,
+      "crop_x": [
+        540,
+        900
+      ],
+      "lands_on": "Say"
+    },
+    {
+      "t0": 9.48,
+      "t1": 12.12,
+      "plate": "04_Generated-Clips/part03/raw/v01/04_squeeze_pulse_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 900,
+      "lands_on": "of"
+    },
+    {
+      "t0": 12.12,
+      "t1": 14.483,
+      "plate": "04_Generated-Clips/part01/raw/v01/09_heart_clock_t2.mp4",
+      "in_s": 0.3,
+      "crop_x": 560,
+      "lands_on": "it"
+    },
+    {
+      "t0": 14.483,
+      "t1": 17.188,
+      "plate": "04_Generated-Clips/part03/raw/v01/09_jug_tower_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 360,
+      "lands_on": "That's"
+    },
+    {
+      "t0": 17.188,
+      "t1": 20.047,
+      "plate": "04_Generated-Clips/part03/raw/v01/12_glowing_loop_t2.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Food"
+    },
+    {
+      "t0": 20.047,
+      "t1": 24.047,
+      "plate": "04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "overlays": [
+    {
+      "role": "hook",
+      "text": "MORE THAN YOU HAVE",
+      "t0": 0.0,
+      "t1": 2.6
+    },
+    {
+      "role": "vo",
+      "text": "You pump more blood than",
+      "t0": 0.0,
+      "t1": 1.538
+    },
+    {
+      "role": "vo",
+      "text": "you have.",
+      "t0": 1.538,
+      "t1": 2.318
+    },
+    {
+      "role": "vo",
+      "text": "One London doctor",
+      "t0": 2.318,
+      "t1": 3.686
+    },
+    {
+      "role": "vo",
+      "text": "proved it with a sum.",
+      "t0": 3.686,
+      "t1": 5.197
+    },
+    {
+      "role": "vo",
+      "text": "Say the heart",
+      "t0": 5.197,
+      "t1": 6.444
+    },
+    {
+      "role": "vo",
+      "text": "holds two ounces.",
+      "t0": 6.444,
+      "t1": 7.946
+    },
+    {
+      "role": "vo",
+      "text": "Each beat,",
+      "t0": 7.946,
+      "t1": 9.018
+    },
+    {
+      "role": "vo",
+      "text": "an eighth of that goes",
+      "t0": 9.018,
+      "t1": 10.398
+    },
+    {
+      "role": "vo",
+      "text": "out.",
+      "t0": 10.398,
+      "t1": 11.018
+    },
+    {
+      "role": "vo",
+      "text": "In half an hour,",
+      "t0": 11.018,
+      "t1": 12.271
+    },
+    {
+      "role": "vo",
+      "text": "it beats more than a",
+      "t0": 12.271,
+      "t1": 13.31
+    },
+    {
+      "role": "vo",
+      "text": "thousand times.",
+      "t0": 13.31,
+      "t1": 14.633
+    },
+    {
+      "role": "vo",
+      "text": "That's more blood than your",
+      "t0": 14.633,
+      "t1": 15.938
+    },
+    {
+      "role": "vo",
+      "text": "whole body holds.",
+      "t0": 15.938,
+      "t1": 17.337
+    },
+    {
+      "role": "vo",
+      "text": "Food could never make",
+      "t0": 17.337,
+      "t1": 18.89
+    },
+    {
+      "role": "vo",
+      "text": "that much.",
+      "t0": 18.89,
+      "t1": 19.817
+    },
+    {
+      "role": "vo",
+      "text": "So it's the same",
+      "t0": 19.817,
+      "t1": 20.765
+    },
+    {
+      "role": "vo",
+      "text": "blood, going",
+      "t0": 20.765,
+      "t1": 21.924
+    },
+    {
+      "role": "vo",
+      "text": "round and",
+      "t0": 21.924,
+      "t1": 22.938
+    },
+    {
+      "role": "vo",
+      "text": "round.",
+      "t0": 22.938,
+      "t1": 23.747
+    },
+    {
+      "role": "title",
+      "text": "The Tied Arm That Proved Your Blood Circulates",
+      "t0": 9.0,
+      "t1": 14.0
+    },
+    {
+      "role": "cta",
+      "text": "watch the full film \u2192",
+      "t0": 20.047,
+      "t1": 23.967
+    }
+  ]
+}

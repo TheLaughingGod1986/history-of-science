@@ -1,0 +1,212 @@
+{
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.674,
+      "plate": "04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+      "in_s": 0.8,
+      "crop_x": 640,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.674,
+      "t1": 6.753,
+      "plate": "04_Generated-Clips/part04/raw/v01/02_linen_tie_t2.mp4",
+      "in_s": 0.3,
+      "crop_x": 450,
+      "lands_on": "William"
+    },
+    {
+      "t0": 6.753,
+      "t1": 9.262,
+      "plate": "04_Generated-Clips/part04/graded_v04/03_hand_pale_t4_graded_v04.mp4",
+      "in_s": 1.5,
+      "crop_x": 100,
+      "lands_on": "Below"
+    },
+    {
+      "t0": 9.262,
+      "t1": 13.889,
+      "plate": "04_Generated-Clips/part04/graded_v04/04_stopped_loosen_t5_graded_v04.mp4",
+      "in_s": 1.5,
+      "crop_x": 560,
+      "lands_on": "No"
+    },
+    {
+      "t0": 13.889,
+      "t1": 17.538,
+      "plate": "04_Generated-Clips/part04/raw/v01/06_veins_swell_t1.mp4",
+      "in_s": 3.0,
+      "crop_x": 560,
+      "lands_on": "The"
+    },
+    {
+      "t0": 17.538,
+      "t1": 22.929,
+      "plate": "04_Generated-Clips/part04/raw/v01/07_in_out_doors_t2.mp4",
+      "in_s": 1.5,
+      "crop_x": 620,
+      "lands_on": "So"
+    },
+    {
+      "t0": 22.929,
+      "t1": 26.929,
+      "plate": "04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+      "in_s": 0.8,
+      "crop_x": 640,
+      "lands_on": "loop"
+    }
+  ],
+  "overlays": [
+    {
+      "role": "hook",
+      "text": "ONE TIGHT BAND",
+      "t0": 0.0,
+      "t1": 2.6
+    },
+    {
+      "role": "vo",
+      "text": "One band proved your",
+      "t0": 0.0,
+      "t1": 1.407
+    },
+    {
+      "role": "vo",
+      "text": "blood goes round.",
+      "t0": 1.407,
+      "t1": 2.824
+    },
+    {
+      "role": "vo",
+      "text": "William Harvey",
+      "t0": 2.824,
+      "t1": 4.13
+    },
+    {
+      "role": "vo",
+      "text": "tied it tight round a",
+      "t0": 4.13,
+      "t1": 5.526
+    },
+    {
+      "role": "vo",
+      "text": "man's arm.",
+      "t0": 5.526,
+      "t1": 6.903
+    },
+    {
+      "role": "vo",
+      "text": "Below the band,",
+      "t0": 6.903,
+      "t1": 7.933
+    },
+    {
+      "role": "vo",
+      "text": "the pulse stopped.",
+      "t0": 7.933,
+      "t1": 9.412
+    },
+    {
+      "role": "vo",
+      "text": "No blood was getting",
+      "t0": 9.412,
+      "t1": 10.932
+    },
+    {
+      "role": "vo",
+      "text": "in.",
+      "t0": 10.932,
+      "t1": 11.492
+    },
+    {
+      "role": "vo",
+      "text": "He loosened it,",
+      "t0": 11.492,
+      "t1": 13.007
+    },
+    {
+      "role": "vo",
+      "text": "just a little.",
+      "t0": 13.007,
+      "t1": 14.039
+    },
+    {
+      "role": "vo",
+      "text": "The veins below the",
+      "t0": 14.039,
+      "t1": 15.375
+    },
+    {
+      "role": "vo",
+      "text": "band swelled up like",
+      "t0": 15.375,
+      "t1": 16.73
+    },
+    {
+      "role": "vo",
+      "text": "ropes.",
+      "t0": 16.73,
+      "t1": 17.688
+    },
+    {
+      "role": "vo",
+      "text": "So blood goes in",
+      "t0": 17.688,
+      "t1": 19.009
+    },
+    {
+      "role": "vo",
+      "text": "through the arteries,",
+      "t0": 19.009,
+      "t1": 20.269
+    },
+    {
+      "role": "vo",
+      "text": "and comes home through the",
+      "t0": 20.269,
+      "t1": 21.716
+    },
+    {
+      "role": "vo",
+      "text": "veins.",
+      "t0": 21.716,
+      "t1": 22.505
+    },
+    {
+      "role": "vo",
+      "text": "Look at your",
+      "t0": 22.505,
+      "t1": 23.241
+    },
+    {
+      "role": "vo",
+      "text": "hand.",
+      "t0": 23.241,
+      "t1": 24.139
+    },
+    {
+      "role": "vo",
+      "text": "That blood is heading home",
+      "t0": 24.139,
+      "t1": 25.819
+    },
+    {
+      "role": "vo",
+      "text": "now.",
+      "t0": 25.819,
+      "t1": 26.629
+    },
+    {
+      "role": "title",
+      "text": "The Tied Arm That Proved Your Blood Circulates",
+      "t0": 9.0,
+      "t1": 14.0
+    },
+    {
+      "role": "cta",
+      "text": "watch the full film \u2192",
+      "t0": 22.929,
+      "t1": 26.849
+    }
+  ]
+}

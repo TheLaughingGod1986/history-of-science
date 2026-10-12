@@ -1,0 +1,206 @@
+{
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.674,
+      "plate": "04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+      "in_s": 0.8,
+      "crop_x": 640,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.674,
+      "t1": 6.613,
+      "plate": "04_Generated-Clips/part04/raw/v01/02_linen_tie_t2.mp4",
+      "in_s": 0.3,
+      "crop_x": 450,
+      "lands_on": "William"
+    },
+    {
+      "t0": 6.613,
+      "t1": 8.14,
+      "plate": "04_Generated-Clips/part04/raw/v01/03_hand_pale_t4.mp4",
+      "in_s": 1.5,
+      "crop_x": 100,
+      "lands_on": "The"
+    },
+    {
+      "t0": 8.14,
+      "t1": 12.767,
+      "plate": "04_Generated-Clips/part04/raw/v01/04_stopped_loosen_t5.mp4",
+      "in_s": 1.5,
+      "crop_x": 560,
+      "lands_on": "No"
+    },
+    {
+      "t0": 12.767,
+      "t1": 16.417,
+      "plate": "04_Generated-Clips/part04/raw/v01/06_veins_swell_t1.mp4",
+      "in_s": 3.0,
+      "crop_x": 560,
+      "lands_on": "The"
+    },
+    {
+      "t0": 16.417,
+      "t1": 21.808,
+      "plate": "04_Generated-Clips/part04/raw/v01/07_in_out_doors_t2.mp4",
+      "in_s": 1.5,
+      "crop_x": 620,
+      "lands_on": "So"
+    },
+    {
+      "t0": 21.808,
+      "t1": 25.808,
+      "plate": "04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+      "in_s": 0.8,
+      "crop_x": 640,
+      "lands_on": "loop"
+    }
+  ],
+  "overlays": [
+    {
+      "role": "hook",
+      "text": "ONE TIGHT BAND",
+      "t0": 0.0,
+      "t1": 2.6
+    },
+    {
+      "role": "vo",
+      "text": "One band proved your",
+      "t0": 0.0,
+      "t1": 1.407
+    },
+    {
+      "role": "vo",
+      "text": "blood goes round.",
+      "t0": 1.407,
+      "t1": 2.824
+    },
+    {
+      "role": "vo",
+      "text": "William Harvey",
+      "t0": 2.824,
+      "t1": 4.13
+    },
+    {
+      "role": "vo",
+      "text": "tied it tight round a",
+      "t0": 4.13,
+      "t1": 5.526
+    },
+    {
+      "role": "vo",
+      "text": "man's arm.",
+      "t0": 5.526,
+      "t1": 6.763
+    },
+    {
+      "role": "vo",
+      "text": "The hand went pale.",
+      "t0": 6.763,
+      "t1": 8.29
+    },
+    {
+      "role": "vo",
+      "text": "No blood was getting",
+      "t0": 8.29,
+      "t1": 9.81
+    },
+    {
+      "role": "vo",
+      "text": "in.",
+      "t0": 9.81,
+      "t1": 10.37
+    },
+    {
+      "role": "vo",
+      "text": "He loosened it,",
+      "t0": 10.37,
+      "t1": 11.885
+    },
+    {
+      "role": "vo",
+      "text": "just a little.",
+      "t0": 11.885,
+      "t1": 12.917
+    },
+    {
+      "role": "vo",
+      "text": "The veins below the",
+      "t0": 12.917,
+      "t1": 14.254
+    },
+    {
+      "role": "vo",
+      "text": "band swelled up like",
+      "t0": 14.254,
+      "t1": 15.608
+    },
+    {
+      "role": "vo",
+      "text": "ropes.",
+      "t0": 15.608,
+      "t1": 16.567
+    },
+    {
+      "role": "vo",
+      "text": "So blood goes in",
+      "t0": 16.567,
+      "t1": 17.887
+    },
+    {
+      "role": "vo",
+      "text": "through the arteries,",
+      "t0": 17.887,
+      "t1": 19.147
+    },
+    {
+      "role": "vo",
+      "text": "and comes home through the",
+      "t0": 19.147,
+      "t1": 20.594
+    },
+    {
+      "role": "vo",
+      "text": "veins.",
+      "t0": 20.594,
+      "t1": 21.383
+    },
+    {
+      "role": "vo",
+      "text": "Look at your",
+      "t0": 21.383,
+      "t1": 22.119
+    },
+    {
+      "role": "vo",
+      "text": "hand.",
+      "t0": 22.119,
+      "t1": 23.018
+    },
+    {
+      "role": "vo",
+      "text": "That blood is heading home",
+      "t0": 23.018,
+      "t1": 24.698
+    },
+    {
+      "role": "vo",
+      "text": "now.",
+      "t0": 24.698,
+      "t1": 25.508
+    },
+    {
+      "role": "title",
+      "text": "The Tied Arm That Proved Your Blood Circulates",
+      "t0": 9.0,
+      "t1": 14.0
+    },
+    {
+      "role": "cta",
+      "text": "watch the full film \u2192",
+      "t0": 21.808,
+      "t1": 25.728
+    }
+  ]
+}

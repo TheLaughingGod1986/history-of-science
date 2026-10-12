@@ -6,15 +6,14 @@
    "hit": {
     "lab": "No, my video doesn't include paid promotion",
     "x": 445.9296875,
-    "y": 1793,
+    "y": 1769,
     "checked": false
    },
    "saved": {
     "label": "paid_no",
     "save": {
-     "enabled": true,
-     "clicked": true,
-     "confirm": "Save"
+     "enabled": false,
+     "clicked": false
     },
     "visibility": "Visibility Scheduled",
     "not_kids": true,
@@ -295,8 +294,8 @@
   }
  ],
  "start": {
-  "at": "2026-10-02T10:44:46+01:00",
-  "url": "https://studio.youtube.com/video/0IfXGSX7Ypw/edit",
+  "at": "2026-10-03T22:27:04+01:00",
+  "url": "https://studio.youtube.com/video/wwcjcFfC-5M/edit",
   "visibility": "Visibility Scheduled",
   "not_kids": true,
   "kids_yes": false,
@@ -307,8 +306,8 @@
   }
  },
  "reopen": {
-  "at": "2026-10-02T10:45:55+01:00",
-  "url": "https://studio.youtube.com/video/0IfXGSX7Ypw/edit",
+  "at": "2026-10-03T22:28:08+01:00",
+  "url": "https://studio.youtube.com/video/wwcjcFfC-5M/edit",
   "visibility": "Visibility Scheduled",
   "not_kids": true,
   "kids_yes": false,
@@ -326,6 +325,6 @@
    "Level None"
   ]
  },
- "reopen_shot": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-02_005_upload/settings_reopen.png",
- "at": "2026-10-02T10:45:56+01:00"
+ "reopen_shot": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-03_005_v02_upload/settings_reopen.png",
+ "at": "2026-10-03T22:28:08+01:00"
 }

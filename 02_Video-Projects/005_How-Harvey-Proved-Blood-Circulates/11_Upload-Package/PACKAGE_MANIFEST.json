@@ -11,7 +11,8 @@
   "thumbnail": "../08_Thumbnail/Selected/hos_005_thumb_A_one_tight_band_v02.jpg",
   "thumbnailAbc": [
     "../08_Thumbnail/Selected/hos_005_thumb_A_one_tight_band_v02.jpg",
-    "../08_Thumbnail/Selected/hos_005_thumb_B_it_goes_round_v02.jpg"
+    "../08_Thumbnail/Selected/hos_005_thumb_B_it_goes_round_v02.jpg",
+    "../08_Thumbnail/Selected/hos_005_thumb_C_tie_it_tight_v01.jpg"
   ],
   "titleAbc": [
     "The Tied Arm That Proved Your Blood Circulates"
@@ -75,5 +76,5 @@
     "publishAt": "2026-11-08T11:30:00.000Z",
     "related": "deferred_to_29oct1805"
   },
-  "updatedAt": "2026-10-03T22:59:55+01:00"
+  "updatedAt": "2026-10-03T22:11:50Z"
 }
