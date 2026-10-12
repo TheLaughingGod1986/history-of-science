@@ -1,0 +1,58 @@
+{
+  "stem": "hos_comp_bridge5_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0173-chief-lock"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 219,
+      "duration_s": 14.88
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 219,
+  "words": 41,
+  "duration_s": 14.88,
+  "loudness": {
+    "lufs_integrated": -20.5,
+    "mean_volume_db": -23.4,
+    "max_volume_db": -4.7
+  },
+  "sha256_mp3": "0306470506f4ee2e96d06f02a500c2fa1d3dce11006f81b9c7c9f417eb6c8922",
+  "scribe": {
+    "transcript": "For the first time, we could see inside a living body without cutting it open. But the deepest invisible world was smaller still. It was inside every atom, and the way in was a sheet of gold beaten thinner than paper",
+    "script_words": 41,
+    "scribe_words": 41,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 199355,
+      "limit": 209536,
+      "remaining": 10181
+    },
+    "after": {
+      "used": 199394,
+      "limit": 209536,
+      "remaining": 10142
+    },
+    "counter_delta": 39
+  },
+  "text": "For the first time, we could see inside a living body without cutting it open.\n\nBut the deepest invisible world was smaller still. It was inside every atom. And the way in was a sheet of gold, beaten thinner than paper.",
+  "made_at": "2026-10-12T19:23:22+0100"
+}

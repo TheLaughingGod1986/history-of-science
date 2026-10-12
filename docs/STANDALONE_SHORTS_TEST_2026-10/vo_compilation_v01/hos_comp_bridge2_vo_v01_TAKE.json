@@ -1,0 +1,68 @@
+{
+  "stem": "hos_comp_bridge2_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0173-chief-lock"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 228,
+      "duration_s": 17.04
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 228,
+  "words": 44,
+  "duration_s": 17.04,
+  "loudness": {
+    "lufs_integrated": -20.3,
+    "mean_volume_db": -23.6,
+    "max_volume_db": -5.1
+  },
+  "sha256_mp3": "ec45ef35594d2423aa4bd5948ab45077ef226a26335febbbe1c026965de88b66",
+  "scribe": {
+    "transcript": "The tree isn't pulled up out of the ground, it's pulled down out of the air. But the air carried something else too, something alive, far too small to see and deadly. And for a long time, doctors refused to believe it was there",
+    "script_words": 44,
+    "scribe_words": 44,
+    "match_rate_pct": 97.73,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "a"
+        ],
+        "scribe": [
+          "the"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 199355,
+      "limit": 209536,
+      "remaining": 10181
+    },
+    "after": {
+      "used": 199355,
+      "limit": 209536,
+      "remaining": 10181
+    },
+    "counter_delta": 0
+  },
+  "text": "A tree isn't pulled up out of the ground. It's pulled down out of the air.\n\nBut the air carried something else too. Something alive, far too small to see, and deadly. And for a long time, doctors refused to believe it was there.",
+  "made_at": "2026-10-12T19:22:40+0100"
+}
