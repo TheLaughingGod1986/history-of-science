@@ -1,5 +1,7 @@
 # AGENTS.md — History of Science studio
 
+> **Handover (12 Oct 2026):** read `HANDOVER.md` first; master index in orbit-with-ben `HANDOVER.md`.
+
 Read this first, whatever agent you are (Cursor, Claude Code, Codex or others). It says what this repo is, which docs are in force, and what never to do.
 
 **The channel:** History of Science (`@HistoryOfScienceYT`, `UCXp7HkBIl1LgaznXuZHJyRg`). Premium 3D cartoon films about how we discovered what we know, narrated in Ben's British voice, with the Explorer as a side character. Discovery. Wonder. Proof.
