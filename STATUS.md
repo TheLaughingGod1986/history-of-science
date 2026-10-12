@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Mon 12 Oct 2026**, updated by Chief (Grok). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Mon 12 Oct 2026**, updated by Cursor (merge main into #271). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -13,7 +13,7 @@
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (24 d) | 57% | Picture (in progress) | **Cursor** · ▶️ underway | 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d) | Sun 1 Nov (in 20 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (31 d) | 40% | Picture (to do) | **Claude** · queued (Claude's review of the boards; then the voiceover batch and picture credit) | starts later; due in 20 d | Sun 8 Nov (in 27 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (38 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 4 d late | Sun 15 Nov (in 34 d) | 🟠 behind |
-| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (45 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (J0108 posts the opening, the Chief OKs it (J0110), then J0111 records; balance first) | starts later; due in 2 d | Sun 22 Nov (in 41 d) | 🟠 behind |
+| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (45 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 4 d late | Sun 22 Nov (in 41 d) | 🟠 behind |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (52 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (after 009 VO: opening OK (J0112), then J0113 records; balance first) | starts later; due in 4 d | Sun 29 Nov (in 48 d) | 🟠 behind |
 
 ## Who's on what
@@ -33,7 +33,7 @@
 **Cursor**
 - ▶️ Underway: 006 Picture, since Sat 10 Oct (1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d))
 - ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK
-- ⏭ Next up: 008 Shorts voiceover, due Thu 8 Oct; 009 Voiceover (long), due Wed 14 Oct; 010 Voiceover (long), due Fri 16 Oct
+- ⏭ Next up: 008 Shorts voiceover, due Thu 8 Oct; 009 Shorts voiceover, due Thu 8 Oct; 010 Voiceover (long), due Fri 16 Oct
 
 ## Being worked on right now
 
@@ -171,17 +171,17 @@ Script, facts, package and the long voiceover are done (locked 7 Oct, 9:14.8). S
 
 ### 009 · Why Doesn't the Moon Fall to Earth?
 
-`█████░░░░░░░░░░░░░░░` **25%**
+`███████░░░░░░░░░░░░░` **35%**
 
 Airs **Thu 26 Nov** · ready for Ben's OK by **Sun 22 Nov** · 🟠 behind
 
-Script, facts, audit and package are done. Long voiceover is next after the 007 Shorts; Shorts are now two (v02).
+Long VO v01 locked (5 parts, 508 s speech); Chief KEEP all five, no pickups (desk 6101629662). Picture next after Claude's board review and credit.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 91.3
 - ✅ **Fact check** — done
 - ✅ **Audit + upload package** — done
-- ⬜ **Voiceover (long)** — to do (with Cursor, due Wed 14 Oct (in 2 d))
+- ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 508 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101629662)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (4 d late))
 - ⬜ **Picture** — to do (with Cursor, due Sun 15 Nov (in 34 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
