@@ -29,7 +29,7 @@ EDIT = Path(__file__).resolve().parent
 EVID = EDIT / "_evidence"
 LOG = EDIT / "VERTEX_CREDIT_LOG_v01.json"
 URL = "https://console.cloud.google.com/billing/0124D1-E6EFD6-40F6DA/credits/all?project=gen-lang-client-0538779324"
-FLOOR_GBP = 0.0  # Ben, 10 Oct 2026 22:50 (OWB #117 / HOS #275): spend the Free Trial to £0; never onto paid billing
+FLOOR_GBP = 0.10  # Ben, 12 Oct 2026 14:46: floors to 0, but billing account 0124D1-E6EFD6-40F6DA is a Paid account (could bill the card), so stop at £0.10
 GBP_PER_USD = 0.80  # PICTURE_PLAN_v01.json rates.gbp_per_usd_planning
 
 
