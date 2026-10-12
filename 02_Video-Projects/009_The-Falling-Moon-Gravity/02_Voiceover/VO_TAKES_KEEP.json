@@ -2,7 +2,7 @@
   "film": "009",
   "script": "01_Script/moon_script_master_v01.md",
   "voice": "Ben Orbit Narrator / eleven_v3 / speed 1.04",
-  "status": "PROPOSED by cursor (J0111, 10 Oct 2026); keep call is the Chief's on desk #180",
+  "status": "LOCKED v01: Chief KEEP all five parts, no pickups (desk #180 comment 6101629662, 11 Oct); sha256 re-checked against the Mini files 2026-10-12 (J0208)",
   "total_speech_s": 508.4,
   "credits_spent": 2351,
   "elevenlabs_left_after": 15991,
@@ -52,5 +52,6 @@
       "vo_check": "FAIL mean -24.6 dB peak -4.6 dB 150 wpm",
       "note": "v01; vo_check 'sum'/'sun' at ~1:44.3 is small.en only (medium.en + Scribe hear 'sum'): accept under rule (d) as on 008 part03"
     }
-  }
+  },
+  "chief_comment": 6101629662
 }

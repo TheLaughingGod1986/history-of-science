@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-12",
   "updated_by": "Chief of Staff",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -429,11 +429,16 @@
           "status": "done"
         },
         "vo": {
-          "status": "review",
+          "status": "done",
           "due": "2026-10-14",
           "owner": "Cursor",
-          "note": "5 parts v01 recorded 10 Oct (J0111), 8:28.4 speech, 2,351 credits; vo_check 3 PASS, 2 FAIL (small.en word flags; one a/the to hear)",
-          "waiting": "Chief listens to Part 02 ~0:08 and makes the keep call on desk #180"
+          "note": "long VO locked 11 Oct: 5 parts v01, 508 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101629662)",
+          "steps": [
+            5,
+            5
+          ],
+          "steps_unit": "parts passed",
+          "underway": false
         },
         "shorts_scripts": {
           "status": "done",
