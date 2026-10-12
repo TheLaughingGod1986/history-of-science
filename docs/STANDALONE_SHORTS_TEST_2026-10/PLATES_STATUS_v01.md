@@ -26,3 +26,21 @@ Chief KEEP/FAIL: HOS #180 6131411243 (KEEP S1 01–04, S2 01–02, S3 01–04, S
 | S3-05 handle off | `s3/05_handle_off_v02.jpg` | **Fails again:** the pump still has its curved handle fixed on, and Snow holds a second one. Options: one more take with a prompt showing the bare pump only, nobody holding anything (~£0.03), or close S3 on 04 (map) then 01 (pump, loop). |
 
 Next (v01 note): Chief KEEP/FAIL per plate; a FAIL gets one re-take (~£0.03) or a public-domain fill. Then J0171 assembles S1–S4 (pause-trim VO ~0.4 s on S1/S4). S5–S8 need their VO, then a follow-on plates job, before J0171 covers them.
+
+## Chief rulings applied + S1–S4 v01 assembled (J0171, Cursor, 12 Oct 2026 ~21:30 London)
+
+Rulings HOS #180 6131594106: KEEP S2-03/04/05 v02; S1-05 dropped (S1 runs 01–04, loops to 01); S3-05 one last take.
+
+- **S3-05 v03** (`s3/05_handle_off_v03.jpg`, `--retake-v03`): the bare pump alone on the cobbles, a bolt hole where the handle was, no person, nothing held. Cursor's check: no handle on the pump. Used as S3's "handle taken off" beat. ~£0.03 Vertex trial (console £1.46 lagging; est after ≈ £0.44).
+- **Bed:** `music_v01/hos-standalone-shorts_score_bed_v01.mp3`, 45 s, ElevenLabs music_v2, brief in `music_v01/MUSIC_PROMPT_v01.md` (Pace 72–84, NOT list). ~620 credits est (6,557 before; cap 1,500). Same bed under all four.
+- **SFX:** HOS house kit `sfx_kit_v01/` (own synthesis): soft whoosh on frame 0, ink tick on each plate change.
+- **Assembler:** `_assemble_standalone_shorts_v01.py` → `shorts_v01/hos_sa_<id>_v01.mp4` (gitignored), index `SHORTS_INDEX_v01.json`, sheet `shorts_v01/contact_sheet_v01.jpg`.
+
+| Short | Length | VO pause trim | gate_shorts_open |
+|---|---|---|---|
+| S1 Herschel | 22.43 s | 2.02 s (gaps capped at 0.4 s) | PASS, motion 11.9 |
+| S2 Brand | 22.97 s | none | PASS, motion 13.4 |
+| S3 Snow | 22.17 s | none | PASS, motion 17.7 |
+| S4 Curie | 22.63 s | 1.84 s | PASS, motion 16.7 |
+
+Open for Chief: the hook block sits high (S2's four lines start near the top edge; S3's touches the pump handle on frame 0); no long-title or end card (SCRIPTS_v02); no overlay used; `sfx_kit.py level` not run (stems not kept separately in v01); custom covers not built yet. S5–S8 wait on their VO and plates.

@@ -117,6 +117,16 @@ RETAKES = {
     ],
 }
 
+# Chief's last-take ruling (HOS #180 6131594106): bare pump only, no person, nothing held.
+RETAKES_V03 = {
+    "s3": [
+        ("05_handle_off", "A black cast-iron Victorian street water pump standing alone on wet cobbles on a "
+         "calm, empty Soho street in 1854. The pump has NO handle at all: on its side there is only a short "
+         "bare iron stub with a bolt hole where the handle used to be. No person in the frame, no hands, "
+         "nothing held, no loose handle anywhere. Soft morning light, quiet relief."),
+    ],
+}
+
 
 def now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -155,12 +165,14 @@ def main() -> int:
     ap.add_argument("--only", choices=sorted(PLATES))
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--retake", action="store_true", help="mint Chief's FAIL retakes as _v02")
+    ap.add_argument("--retake-v03", action="store_true", help="mint Chief's last-take ruling as _v03")
     a = ap.parse_args()
 
     log = load_log()
-    ver = "v02" if a.retake else "v01"
+    ver = "v03" if a.retake_v03 else "v02" if a.retake else "v01"
+    table = RETAKES_V03 if a.retake_v03 else RETAKES if a.retake else PLATES
     done = {(s["short"], s["plate"]) for s in log["stills"] if s.get("ok") and s.get("ver", "v01") == ver}
-    todo = [(k, pid, d) for k, rows in (RETAKES if a.retake else PLATES).items() if not a.only or k == a.only
+    todo = [(k, pid, d) for k, rows in table.items() if not a.only or k == a.only
             for pid, d in rows if (k, pid) not in done]
     run_gbp = 0.0
     per = USD_PER_STILL * GBP_PER_USD
