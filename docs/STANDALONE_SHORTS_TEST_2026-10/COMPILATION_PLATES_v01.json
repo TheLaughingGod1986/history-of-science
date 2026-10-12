@@ -1,0 +1,29 @@
+{
+ "version": "v01",
+ "job": "J0175",
+ "by": "cursor",
+ "date": "2026-10-12",
+ "source": "the films' own passed picture, taken from the normalised masters in /private/tmp/hos_comp_v01/film_NNN_norm.mp4 (1080p30). These films have no cut lists, and the raw clip pools mix passed and rejected takes, so the master is the only sure record of a passed shot.",
+ "rule": "Every plate is checked by frame grab for burned-in labels (the masters carry the films' own label boxes, top right). Use only a label-free window, never from the first 30 s of its film, and at least 10 s from where the same footage plays in the compilation (picture_qa repeat rule).",
+ "time_is": "master time (s) of the checked frame; the assembler takes a window around it and checks the window's first and last frame for labels",
+ "plates": [
+  {"use": "intro", "object": "tied arm", "film": "005", "t": 290, "status": "picked", "note": "arm on the table with the band, red and blue vessels, no label"},
+  {"use": "intro", "object": "willow in its pot", "film": "006", "t": null, "status": "missing", "note": "needs 006's master (ETA 25 Oct)"},
+  {"use": "intro", "object": "swan-neck flask", "film": "001", "t": 300, "status": "picked", "note": "flask alone on the bench, no label (310 s has AN ADDRESS, avoid)"},
+  {"use": "intro", "object": "Mendeleev's cards", "film": "002", "t": null, "status": "open", "note": "every 002 frame checked (280, 360, 520 s) carries a label box; next run scans 002 for a label-free window on the cards"},
+  {"use": "intro", "object": "glowing cardboard screen", "film": "003", "t": 130, "status": "picked", "note": "green screen glowing beside the tube, no label"},
+  {"use": "intro", "object": "gold foil", "film": "004", "t": 250, "status": "picked", "note": "Rutherford beside the gold foil, no label"},
+  {"use": "bridge1", "object": "005 last plate, cross to willow", "film": "005", "t": null, "status": "missing", "note": "005 ends on the glowing figure (480 s), which plays just before the bridge; the willow needs 006"},
+  {"use": "bridge2", "object": "sunlit leaf, window", "film": "006", "t": null, "status": "missing", "note": "needs 006"},
+  {"use": "bridge2", "object": "ward (001)", "film": "001", "t": 220, "status": "picked", "note": "sunlit ward with basin and beds, no label; 40 s has GERMS, avoid. Script asks for candlelit: Chief may accept sunlit, or next run finds a candlelit window"},
+  {"use": "bridge3", "object": "theatre light (001)", "film": "001", "t": 310, "status": "open", "note": "the theatre shots near the end (310-320 s) carry labels at 310 s; next run scans 315-330 s"},
+  {"use": "bridge3", "object": "element cards (002)", "film": "002", "t": null, "status": "open", "note": "as the intro cards: label-free window needed"},
+  {"use": "bridge4", "object": "glowing vacancy (002)", "film": "002", "t": null, "status": "open", "note": "the empty-grid shots (480-530 s) carry labels at 520 s; next run scans for a clean window"},
+  {"use": "bridge4", "object": "dark lab, tube and screen (003)", "film": "003", "t": 100, "status": "picked", "note": "dark screen on the bench in the lab, no label"},
+  {"use": "bridge5", "object": "faint glowing screen (003)", "film": "003", "t": 120, "status": "picked", "note": "hand at the screen, faint glow, no label"},
+  {"use": "bridge5", "object": "gold foil (004)", "film": "004", "t": 260, "status": "picked", "note": "foil with sparks, two figures, no label"},
+  {"use": "closing", "object": "cutaway atom (004)", "film": "004", "t": 230, "status": "picked", "note": "atom model under glass, no label (240 s also clean, red nucleus)"},
+  {"use": "closing", "object": "pull back through the six objects", "film": "all", "t": null, "status": "reuse", "note": "reuses the intro plates in order, at least 10 s from each one's last showing"}
+ ],
+ "contact_sheets": "/private/tmp/hos_comp_v01/sheets/ (sheet_NNN.jpg, one tile per 10 s; candidates.jpg), Mini scratch only"
+}
