@@ -1,0 +1,80 @@
+{
+  "stem": "hos_comp_intro_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0173-chief-lock"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 617,
+      "duration_s": 51.68
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 617,
+  "words": 114,
+  "duration_s": 51.68,
+  "loudness": {
+    "lufs_integrated": -21.6,
+    "mean_volume_db": -25.2,
+    "max_volume_db": -4.2
+  },
+  "sha256_mp3": "fc3b6e59958a80b5934f2b5d9a3635b3c2fa29f7c70449276d8274d1d31969a8",
+  "scribe": {
+    "transcript": "For most of history, the things that run your life were invisible. The blood moving round your body, the air a tree is built from, the germs on your hands, the atoms inside everything. Nobody could see them, so people had to prove them with a band round an arm, a willow in a pot, a flask with a curved neck, a table with empty gaps, a glowing screen, and a sheet of gold. This is how we found the invisible world. Six discoveries across almost three hundred years, from a book printed in 1628 to a lab in Manchester in 1911. Each time, the obvious answer was wrong. First, the heart",
+    "script_words": 115,
+    "scribe_words": 112,
+    "match_rate_pct": 95.65,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "sixteen",
+          "twenty",
+          "eight"
+        ],
+        "scribe": [
+          "1628"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "nineteen",
+          "eleven"
+        ],
+        "scribe": [
+          "1911"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 199355,
+      "limit": 209536,
+      "remaining": 10181
+    },
+    "after": {
+      "used": 199355,
+      "limit": 209536,
+      "remaining": 10181
+    },
+    "counter_delta": 0
+  },
+  "text": "For most of history, the things that run your life were invisible.\n\nThe blood moving round your body. The air a tree is built from. The germs on your hands. The atoms inside everything.\n\nNobody could see them. So people had to prove them. With a band round an arm. A willow in a pot. A flask with a curved neck. A table with empty gaps. A glowing screen. And a sheet of gold.\n\nThis is how we found the invisible world. Six discoveries, across almost three hundred years, from a book printed in sixteen twenty-eight to a lab in Manchester in nineteen eleven.\n\nEach time, the obvious answer was wrong. First, the heart.",
+  "made_at": "2026-10-12T19:22:11+0100"
+}

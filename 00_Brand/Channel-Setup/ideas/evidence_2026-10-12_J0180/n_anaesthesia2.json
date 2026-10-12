@@ -1,0 +1,190 @@
+{
+ "pulled": "2026-10-12",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "surgery before anesthesia",
+  "history of surgery",
+  "how anesthesia was discovered"
+ ],
+ "autocomplete": {
+  "surgery before anesthesia": [
+   "surgery before anesthesia",
+   "surgery before anesthesia was invented",
+   "operation before anesthesia",
+   "surgery and anesthesia",
+   "surgery and anesthesia go to therapy",
+   "surgery before anaesthesia",
+   "pre surgery anesthesia"
+  ],
+  "history of surgery": [
+   "history of surgery",
+   "history of surgery in hindi",
+   "history of surgery in the world",
+   "history of surgery english file",
+   "history of surgery in ghana",
+   "history of surgery شرح",
+   "history of plastic surgery",
+   "history of cataract surgery",
+   "history taking of surgery",
+   "history of heart surgery"
+  ],
+  "how anesthesia was discovered": [
+   "how was anesthesia discovered",
+   "how anesthesia was invented"
+  ]
+ },
+ "sharedTitleWords": [
+  "how does",
+  "surgery work"
+ ],
+ "neighbours": [
+  {
+   "id": "B_tTymvDWXk",
+   "title": "How does anesthesia work? - Steven Zheng",
+   "channel": "TED-Ed",
+   "views": "19,706,880 views",
+   "age": "10 yr ago",
+   "length": "4:56",
+   "tier": 1,
+   "viewCount": 19706880,
+   "foundBy": "surgery before anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "XPDVmBg5DeE",
+   "title": "How does laser eye surgery work? - Dan Reinstein",
+   "channel": "TED-Ed",
+   "views": "6,826,194 views",
+   "age": "6 yr ago",
+   "length": "5:37",
+   "tier": 1,
+   "viewCount": 6826194,
+   "foundBy": "ted-ed history of surgery",
+   "onTopic": true
+  },
+  {
+   "id": "o1z2DfFZBS4",
+   "title": "How does heart transplant surgery work? - Roni Shanoada",
+   "channel": "TED-Ed",
+   "views": "4,547,774 views",
+   "age": "4 yr ago",
+   "length": "5:09",
+   "tier": 1,
+   "viewCount": 4547774,
+   "foundBy": "ted-ed history of surgery",
+   "onTopic": true
+  },
+  {
+   "id": "uRhkDN2WjzI",
+   "title": "How aspirin was discovered - Krishna Sudhir",
+   "channel": "TED-Ed",
+   "views": "3,075,796 views",
+   "age": "9 yr ago",
+   "length": "5:45",
+   "tier": 1,
+   "viewCount": 3075796,
+   "foundBy": "ted-ed how anesthesia was discovered",
+   "onTopic": true
+  },
+  {
+   "id": "FBlcU4GdxCc",
+   "title": "What did people do before anesthesia? - Sally Frampton",
+   "channel": "TED-Ed",
+   "views": "2,646,860 views",
+   "age": "3 yr ago",
+   "length": "5:27",
+   "tier": 1,
+   "viewCount": 2646860,
+   "foundBy": "surgery before anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "6d_dtVTs4CM",
+   "title": "How to perform brain surgery without making a single cut - Hyunsoo Joshua No",
+   "channel": "TED-Ed",
+   "views": "280,100 views",
+   "age": "6 yr ago",
+   "length": "5:18",
+   "tier": 1,
+   "viewCount": 280100,
+   "foundBy": "ted-ed surgery before anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "ZSsYjQeK0qg",
+   "title": "We Finally Know How Anesthesia Works",
+   "channel": "SciShow",
+   "views": "443,349 views",
+   "age": "6 yr ago",
+   "length": "3:44",
+   "tier": 2,
+   "viewCount": 443349,
+   "foundBy": "how anesthesia was discovered",
+   "onTopic": true
+  },
+  {
+   "id": "XzvGr79eOQM",
+   "title": "Anesthesia dreams | Nancy Oriol | TEDxBeaconStreet",
+   "channel": "TEDx Talks",
+   "views": "15,838 views",
+   "age": "11 yr ago",
+   "length": "12:33",
+   "tier": 1,
+   "viewCount": 15838,
+   "foundBy": "how anesthesia was discovered ted",
+   "onTopic": true
+  },
+  {
+   "id": "ipJhkZUFoNk",
+   "title": "Anesthesia killed the anesthesiologist  | Fahad Khan | TEDxShinnecockHills",
+   "channel": "TEDx Talks",
+   "views": "11,794 views",
+   "age": "7 yr ago",
+   "length": "17:18",
+   "tier": 1,
+   "viewCount": 11794,
+   "foundBy": "how anesthesia was discovered ted",
+   "onTopic": true
+  },
+  {
+   "id": "tt8_2Qdhexg",
+   "title": "Solving the Global Anesthesia Crisis | Kelly McQueen, MD, MPH | TEDxNashvilleSalon",
+   "channel": "TEDx Talks",
+   "views": "5,699 views",
+   "age": "9 yr ago",
+   "length": "15:21",
+   "tier": 1,
+   "viewCount": 5699,
+   "foundBy": "ted-ed surgery before anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "G6nok4PMsuY",
+   "title": "“A story of surgeons and surgery” | Stu. Abdul Hasib Samadi | TEDxOkanUniversity",
+   "channel": "TEDx Talks",
+   "views": "1,575 views",
+   "age": "6 yr ago",
+   "length": "11:29",
+   "tier": 1,
+   "viewCount": 1575,
+   "foundBy": "history of surgery ted",
+   "onTopic": true
+  },
+  {
+   "id": "nbfQbwn2of4",
+   "title": "Marked Without Feeling: What Tattooing Loses Under Anesthesia | Don Ritson | TEDxWinnipeg",
+   "channel": "TEDx Talks",
+   "views": "1,516 views",
+   "age": "1 yr ago",
+   "length": "10:00",
+   "tier": 1,
+   "viewCount": 1516,
+   "foundBy": "how anesthesia was discovered ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

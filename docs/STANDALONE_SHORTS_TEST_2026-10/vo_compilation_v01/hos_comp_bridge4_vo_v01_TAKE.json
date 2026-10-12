@@ -1,0 +1,58 @@
+{
+  "stem": "hos_comp_bridge4_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0173-chief-lock"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 180,
+      "duration_s": 13.44
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 180,
+  "words": 33,
+  "duration_s": 13.44,
+  "loudness": {
+    "lufs_integrated": -19.4,
+    "mean_volume_db": -23.0,
+    "max_volume_db": -4.9
+  },
+  "sha256_mp3": "fc85b75e25b5b06257d7afaf4a6ef60c621d50fe2ebf0486806297cec118fe30",
+  "scribe": {
+    "transcript": "The table had empty chairs, and the missing elements turned up to fill them. Twenty-six years later, in a dark lab in Germany, a screen that should have stayed dark began to glow",
+    "script_words": 34,
+    "scribe_words": 34,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 199355,
+      "limit": 209536,
+      "remaining": 10181
+    },
+    "after": {
+      "used": 199355,
+      "limit": 209536,
+      "remaining": 10181
+    },
+    "counter_delta": 0
+  },
+  "text": "The table had empty chairs, and the missing elements turned up to fill them.\n\nTwenty-six years later, in a dark lab in Germany, a screen that should have stayed dark began to glow.",
+  "made_at": "2026-10-12T19:23:07+0100"
+}

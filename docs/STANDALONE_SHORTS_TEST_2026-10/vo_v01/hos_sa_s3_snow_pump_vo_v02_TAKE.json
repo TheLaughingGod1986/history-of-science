@@ -1,0 +1,58 @@
+{
+  "stem": "hos_sa_s3_snow_pump_vo_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6127927589"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 269,
+      "duration_s": 21.6
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 269,
+  "words": 51,
+  "duration_s": 21.6,
+  "loudness": {
+    "lufs_integrated": -19.7,
+    "mean_volume_db": -23.2,
+    "max_volume_db": -3.6
+  },
+  "sha256_mp3": "c4f3fe80dbc4573034afef8ba402aa15706608afee5e32cd8758cb9988b5ed68",
+  "scribe": {
+    "transcript": "In 1854, a killer was hiding in a water pump. Cholera was killing hundreds in Soho, London, and many still blamed bad air. John Snow tracked where the dead had lived. They crowded round one pump on Broad Street. He had its handle taken off. The killer was in the water",
+    "script_words": 51,
+    "scribe_words": 51,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 200306,
+      "limit": 209536,
+      "remaining": 9230
+    },
+    "after": {
+      "used": 200306,
+      "limit": 209536,
+      "remaining": 9230
+    },
+    "counter_delta": 0
+  },
+  "text": "In 1854, a killer was hiding in a water pump. Cholera was killing hundreds in Soho, London, and many still blamed bad air. John Snow tracked where the dead had lived. They crowded round one pump on Broad Street. He had its handle taken off. The killer was in the water.",
+  "made_at": "2026-10-12T19:26:51+0100"
+}

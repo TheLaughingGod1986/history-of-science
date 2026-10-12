@@ -1,0 +1,78 @@
+{
+  "stem": "hos_009_short_A_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0159"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 328,
+      "duration_s": 24.32
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 328,
+  "words": 59,
+  "duration_s": 24.32,
+  "loudness": {
+    "lufs_integrated": -19.3,
+    "mean_volume_db": -22.7,
+    "max_volume_db": -3.7
+  },
+  "sha256_mp3": "c2fd407d3aafbe57030b29b213ed128ee4887b785272a2192b4c0809796a1ce6",
+  "scribe": {
+    "transcript": "The moon is falling towards the Earth right now. Every second, it moves sideways about a kilometer and drops a tiny bit towards us. But the Earth curves away beneath it, so it keeps on missing. Isaac Newton worked this out more than three hundred years ago. An orbit isn't floating at all. It's falling and missing forever",
+    "script_words": 59,
+    "scribe_words": 58,
+    "match_rate_pct": 94.92,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "kilometre"
+        ],
+        "scribe": [
+          "kilometer"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "for",
+          "ever"
+        ],
+        "scribe": [
+          "forever"
+        ]
+      }
+    ]
+  },
+  "vo_check": "REVIEW",
+  "credits": {
+    "before": {
+      "used": 200761,
+      "limit": 209536,
+      "remaining": 8775
+    },
+    "after": {
+      "used": 200761,
+      "limit": 209536,
+      "remaining": 8775
+    },
+    "counter_delta": 0
+  },
+  "text": "The Moon is falling towards the Earth right now. Every second, it moves sideways about a kilometre, and drops a tiny bit towards us. But the Earth curves away beneath it, so it keeps on missing. Isaac Newton worked this out, more than three hundred years ago. An orbit isn't floating at all. It's falling, and missing, for ever.",
+  "made_at": "2026-10-12T19:55:49+0100"
+}

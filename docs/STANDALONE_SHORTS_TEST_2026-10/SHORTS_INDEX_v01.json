@@ -1,0 +1,272 @@
+{
+  "job": "J0171",
+  "shorts": {
+    "s1_herschel_infrared": {
+      "id": "s1_herschel_infrared",
+      "air_date": "2026-10-19",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s1_herschel_infrared_v01.mp4",
+      "sha256": "af0b78f64e60c62c34385d3bf50c074aa0c32ed5f1ebedca19a75d1138295e97",
+      "duration_s": 22.433,
+      "vo": "hos_sa_s1_herschel_infrared_vo_v01.wav",
+      "pause_trim_s": 2.02,
+      "bed": "hos-standalone-shorts_score_bed_v01.mp3",
+      "bed_gain_db": -22.0,
+      "hook": "HOTTER IN THE DARK",
+      "hook_layer": {
+        "font_size": 215,
+        "cap_pct": 7.97,
+        "lines": 3,
+        "block_pct": [
+          4.5,
+          33.5
+        ]
+      },
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 4.96,
+          "plate": "plates_v01/s1/01_beyond_red_v01.jpg",
+          "lands_on": 0
+        },
+        {
+          "t0": 4.96,
+          "t1": 7.66,
+          "plate": "plates_v01/s1/02_prism_window_v01.jpg",
+          "lands_on": "William"
+        },
+        {
+          "t0": 7.66,
+          "t1": 12.38,
+          "plate": "plates_v01/s1/03_thermometers_colours_v01.jpg",
+          "lands_on": "and"
+        },
+        {
+          "t0": 12.38,
+          "t1": 19.82,
+          "plate": "plates_v01/s1/04_past_the_red_v01.jpg",
+          "lands_on": "Then"
+        },
+        {
+          "t0": 19.82,
+          "t1": 22.42,
+          "plate": "plates_v01/s1/01_beyond_red_v01.jpg",
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 17,
+      "sfx": {
+        "whoosh_frame0": true,
+        "ticks_on_cuts": 4
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_sa_s1_herschel_infrared_v01.mp4  dur=22.43s  audio=-18.1dB  motion=11.94  dhash=532b2b7beb7b1b03\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s1_herschel_infrared_v01_open_sheet.jpg"
+      }
+    },
+    "s2_brand_phosphorus": {
+      "id": "s2_brand_phosphorus",
+      "air_date": "2026-10-21",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s2_brand_phosphorus_v01.mp4",
+      "sha256": "66462ea906155fb15269a8c471e2fbc3021dd76132d442219295f553ad49eebb",
+      "duration_s": 22.967,
+      "vo": "hos_sa_s2_brand_phosphorus_vo_v02.wav",
+      "pause_trim_s": 0.0,
+      "bed": "hos-standalone-shorts_score_bed_v01.mp3",
+      "bed_gain_db": -21.5,
+      "hook": "BOILING URINE FOR GOLD",
+      "hook_layer": {
+        "font_size": 213,
+        "cap_pct": 7.92,
+        "lines": 4,
+        "block_pct": [
+          -0.7,
+          38.6
+        ]
+      },
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 5.3,
+          "plate": "plates_v01/s2/01_glowing_flask_v01.jpg",
+          "lands_on": 0
+        },
+        {
+          "t0": 5.3,
+          "t1": 10.32,
+          "plate": "plates_v01/s2/02_hamburg_lab_v01.jpg",
+          "lands_on": "Hennig"
+        },
+        {
+          "t0": 10.32,
+          "t1": 12.96,
+          "plate": "plates_v01/s2/03_black_sludge_v02.jpg",
+          "lands_on": "He"
+        },
+        {
+          "t0": 12.96,
+          "t1": 14.08,
+          "plate": "plates_v01/s2/04_no_gold_v02.jpg",
+          "lands_on": "No"
+        },
+        {
+          "t0": 14.08,
+          "t1": 20.36,
+          "plate": "plates_v01/s2/05_first_glow_v02.jpg",
+          "lands_on": "Instead,"
+        },
+        {
+          "t0": 20.36,
+          "t1": 22.96,
+          "plate": "plates_v01/s2/01_glowing_flask_v01.jpg",
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 17,
+      "sfx": {
+        "whoosh_frame0": true,
+        "ticks_on_cuts": 5
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_sa_s2_brand_phosphorus_v01.mp4  dur=22.97s  audio=-18.0dB  motion=13.4  dhash=53572b8f0e0f1e03\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s2_brand_phosphorus_v01_open_sheet.jpg"
+      }
+    },
+    "s3_snow_pump": {
+      "id": "s3_snow_pump",
+      "air_date": "2026-10-26",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v01.mp4",
+      "sha256": "fd7967138f335a292b5679c0577481b1c417eaa6a28b3c0820997a130816bd08",
+      "duration_s": 22.167,
+      "vo": "hos_sa_s3_snow_pump_vo_v02.wav",
+      "pause_trim_s": 0.0,
+      "bed": "hos-standalone-shorts_score_bed_v01.mp3",
+      "bed_gain_db": -21.6,
+      "hook": "THE KILLER PUMP",
+      "hook_layer": {
+        "font_size": 239,
+        "cap_pct": 8.85,
+        "lines": 3,
+        "block_pct": [
+          2.9,
+          35.1
+        ]
+      },
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 4.66,
+          "plate": "plates_v01/s3/01_broad_street_pump_v01.jpg",
+          "lands_on": 0
+        },
+        {
+          "t0": 4.66,
+          "t1": 11.04,
+          "plate": "plates_v01/s3/02_soho_1854_v01.jpg",
+          "lands_on": "Cholera"
+        },
+        {
+          "t0": 11.04,
+          "t1": 14.72,
+          "plate": "plates_v01/s3/03_snow_tracking_v01.jpg",
+          "lands_on": "John"
+        },
+        {
+          "t0": 14.72,
+          "t1": 17.82,
+          "plate": "plates_v01/s3/04_map_bars_v01.jpg",
+          "lands_on": "They"
+        },
+        {
+          "t0": 17.82,
+          "t1": 19.54,
+          "plate": "plates_v01/s3/05_handle_off_v03.jpg",
+          "lands_on": "He"
+        },
+        {
+          "t0": 19.54,
+          "t1": 22.14,
+          "plate": "plates_v01/s3/01_broad_street_pump_v01.jpg",
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 15,
+      "sfx": {
+        "whoosh_frame0": true,
+        "ticks_on_cuts": 5
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_sa_s3_snow_pump_v01.mp4  dur=22.17s  audio=-18.8dB  motion=17.72  dhash=0f17113533333332\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s3_snow_pump_v01_open_sheet.jpg"
+      }
+    },
+    "s4_curie_notebooks": {
+      "id": "s4_curie_notebooks",
+      "air_date": "2026-10-28",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v01.mp4",
+      "sha256": "6eb9fc3826b793af61f16de5b0794b434209128dafb8341c82bfe2ce6b82beeb",
+      "duration_s": 22.633,
+      "vo": "hos_sa_s4_curie_notebooks_vo_v01.wav",
+      "pause_trim_s": 1.84,
+      "bed": "hos-standalone-shorts_score_bed_v01.mp3",
+      "bed_gain_db": -20.9,
+      "hook": "STILL RADIOACTIVE",
+      "hook_layer": {
+        "font_size": 129,
+        "cap_pct": 4.79,
+        "lines": 2,
+        "block_pct": [
+          13.4,
+          24.5
+        ]
+      },
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 3.3,
+          "plate": "plates_v01/s4/01_lead_box_v01.jpg",
+          "lands_on": 0
+        },
+        {
+          "t0": 3.3,
+          "t1": 9.3,
+          "plate": "plates_v01/s4/02_shed_lab_v01.jpg",
+          "lands_on": "In"
+        },
+        {
+          "t0": 9.3,
+          "t1": 10.92,
+          "plate": "plates_v01/s4/03_glowing_vials_v01.jpg",
+          "lands_on": "Radium"
+        },
+        {
+          "t0": 10.92,
+          "t1": 14.16,
+          "plate": "plates_v01/s4/04_bare_hands_v01.jpg",
+          "lands_on": "and"
+        },
+        {
+          "t0": 14.16,
+          "t1": 20.04,
+          "plate": "plates_v01/s4/05_paris_archive_v01.jpg",
+          "lands_on": "Today,"
+        },
+        {
+          "t0": 20.04,
+          "t1": 22.64,
+          "plate": "plates_v01/s4/01_lead_box_v01.jpg",
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 17,
+      "sfx": {
+        "whoosh_frame0": true,
+        "ticks_on_cuts": 5
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_sa_s4_curie_notebooks_v01.mp4  dur=22.63s  audio=-18.0dB  motion=16.72  dhash=7c0f8db3b70f1168\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s4_curie_notebooks_v01_open_sheet.jpg"
+      }
+    }
+  },
+  "contact_sheet": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/contact_sheet_v01.jpg"
+}

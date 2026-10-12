@@ -1,0 +1,506 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "Once the invisible enemy had a name, it could be fought. Chemists had a different problem. They knew more than 60 elements and no order to them at all. Until one man left gaps on purpose",
+  "words": [
+    {
+      "text": "Once",
+      "start": 0.14,
+      "end": 0.32,
+      "type": "word",
+      "logprob": -0.0001436368766007945
+    },
+    {
+      "text": " ",
+      "start": 0.32,
+      "end": 0.34,
+      "type": "spacing",
+      "logprob": -6.6756979322235566e-06
+    },
+    {
+      "text": "the",
+      "start": 0.34,
+      "end": 0.42,
+      "type": "word",
+      "logprob": -6.6756979322235566e-06
+    },
+    {
+      "text": " ",
+      "start": 0.42,
+      "end": 0.46,
+      "type": "spacing",
+      "logprob": -0.0002653246629051864
+    },
+    {
+      "text": "invisible",
+      "start": 0.46,
+      "end": 0.86,
+      "type": "word",
+      "logprob": -0.0002653246629051864
+    },
+    {
+      "text": " ",
+      "start": 0.86,
+      "end": 0.94,
+      "type": "spacing",
+      "logprob": -1.7881377516459906e-06
+    },
+    {
+      "text": "enemy",
+      "start": 0.94,
+      "end": 1.24,
+      "type": "word",
+      "logprob": -1.7881377516459906e-06
+    },
+    {
+      "text": " ",
+      "start": 1.24,
+      "end": 1.28,
+      "type": "spacing",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": "had",
+      "start": 1.28,
+      "end": 1.4,
+      "type": "word",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": " ",
+      "start": 1.4,
+      "end": 1.44,
+      "type": "spacing",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": "a",
+      "start": 1.44,
+      "end": 1.52,
+      "type": "word",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": " ",
+      "start": 1.52,
+      "end": 1.58,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "name,",
+      "start": 1.58,
+      "end": 1.94,
+      "type": "word",
+      "logprob": -0.000235634064029
+    },
+    {
+      "text": " ",
+      "start": 1.94,
+      "end": 2.24,
+      "type": "spacing",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": "it",
+      "start": 2.24,
+      "end": 2.32,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": " ",
+      "start": 2.32,
+      "end": 2.36,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "could",
+      "start": 2.36,
+      "end": 2.5,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 2.5,
+      "end": 2.54,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "be",
+      "start": 2.54,
+      "end": 2.68,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 2.68,
+      "end": 2.74,
+      "type": "spacing",
+      "logprob": -4.768360213347478e-06
+    },
+    {
+      "text": "fought.",
+      "start": 2.74,
+      "end": 3.14,
+      "type": "word",
+      "logprob": -4.904598686802533e-06
+    },
+    {
+      "text": " ",
+      "start": 3.14,
+      "end": 3.16,
+      "type": "spacing",
+      "logprob": -0.0007521660882048309
+    },
+    {
+      "text": "Chemists",
+      "start": 4.019,
+      "end": 4.56,
+      "type": "word",
+      "logprob": -0.0007521660882048309
+    },
+    {
+      "text": " ",
+      "start": 4.56,
+      "end": 4.6,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "had",
+      "start": 4.6,
+      "end": 4.7,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 4.7,
+      "end": 4.76,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "a",
+      "start": 4.76,
+      "end": 4.84,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 4.84,
+      "end": 4.88,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "different",
+      "start": 4.88,
+      "end": 5.2,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 5.2,
+      "end": 5.3,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "problem.",
+      "start": 5.3,
+      "end": 5.76,
+      "type": "word",
+      "logprob": -4.678891755816039e-06
+    },
+    {
+      "text": " ",
+      "start": 5.76,
+      "end": 6.26,
+      "type": "spacing",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": "They",
+      "start": 6.28,
+      "end": 6.4,
+      "type": "word",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": " ",
+      "start": 6.4,
+      "end": 6.44,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "knew",
+      "start": 6.46,
+      "end": 6.66,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 6.66,
+      "end": 6.74,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "more",
+      "start": 6.74,
+      "end": 6.9,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 6.9,
+      "end": 6.94,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "than",
+      "start": 6.94,
+      "end": 7.06,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 7.06,
+      "end": 7.56,
+      "type": "spacing",
+      "logprob": -0.06995223462581635
+    },
+    {
+      "text": "60",
+      "start": 7.56,
+      "end": 7.74,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 7.74,
+      "end": 7.82,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "elements",
+      "start": 7.82,
+      "end": 8.36,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 8.36,
+      "end": 8.68,
+      "type": "spacing",
+      "logprob": -0.0015034097013995051
+    },
+    {
+      "text": "and",
+      "start": 8.68,
+      "end": 8.78,
+      "type": "word",
+      "logprob": -0.0015034097013995051
+    },
+    {
+      "text": " ",
+      "start": 8.78,
+      "end": 8.84,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "no",
+      "start": 8.84,
+      "end": 9.02,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 9.02,
+      "end": 9.1,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "order",
+      "start": 9.1,
+      "end": 9.4,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 9.4,
+      "end": 9.46,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "to",
+      "start": 9.46,
+      "end": 9.54,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 9.54,
+      "end": 9.58,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "them",
+      "start": 9.58,
+      "end": 9.66,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 9.66,
+      "end": 9.68,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "at",
+      "start": 9.68,
+      "end": 9.82,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 9.82,
+      "end": 9.94,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "all.",
+      "start": 9.94,
+      "end": 10.26,
+      "type": "word",
+      "logprob": -0.07510790973901216
+    },
+    {
+      "text": " ",
+      "start": 10.26,
+      "end": 10.26,
+      "type": "spacing",
+      "logprob": -4.172316494077677e-06
+    },
+    {
+      "text": "Until",
+      "start": 10.98,
+      "end": 11.28,
+      "type": "word",
+      "logprob": -4.172316494077677e-06
+    },
+    {
+      "text": " ",
+      "start": 11.28,
+      "end": 11.38,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "one",
+      "start": 11.38,
+      "end": 11.54,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 11.54,
+      "end": 11.62,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "man",
+      "start": 11.62,
+      "end": 11.86,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 11.86,
+      "end": 11.92,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "left",
+      "start": 11.92,
+      "end": 12.14,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 12.14,
+      "end": 12.2,
+      "type": "spacing",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": "gaps",
+      "start": 12.2,
+      "end": 12.64,
+      "type": "word",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": " ",
+      "start": 12.64,
+      "end": 12.94,
+      "type": "spacing",
+      "logprob": -2.9802276912960224e-06
+    },
+    {
+      "text": "on",
+      "start": 12.94,
+      "end": 13.1,
+      "type": "word",
+      "logprob": -2.9802276912960224e-06
+    },
+    {
+      "text": " ",
+      "start": 13.1,
+      "end": 13.18,
+      "type": "spacing",
+      "logprob": -2.0146166207268834e-05
+    },
+    {
+      "text": "purpose",
+      "start": 13.18,
+      "end": 13.78,
+      "type": "word",
+      "logprob": -2.0146166207268834e-05
+    }
+  ],
+  "transcription_id": "seEqJBGPkQysIZPadWcr",
+  "audio_duration_secs": 13.84
+}
