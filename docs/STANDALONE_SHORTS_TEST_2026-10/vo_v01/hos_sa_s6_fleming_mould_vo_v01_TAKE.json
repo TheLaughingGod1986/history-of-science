@@ -1,0 +1,86 @@
+{
+  "stem": "hos_sa_s6_fleming_mould_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6127927589"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 285,
+      "duration_s": 22.8
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 285,
+  "words": 50,
+  "duration_s": 22.8,
+  "loudness": {
+    "lufs_integrated": -19.9,
+    "mean_volume_db": -23.1,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "95d502db14f2f63a99e4527feae30906fa784a482701259952cda06892fe8153",
+  "scribe": {
+    "transcript": "In 1928, a moldy dish gave us penicillin. Alexander Fleming came back from holiday to old dishes of bacteria. On one, a fuzzy mold had landed. All around it, the bacteria were dead. He called it mold juice, penicillin. Others later turned it into a medicine that has saved millions",
+    "script_words": 50,
+    "scribe_words": 50,
+    "match_rate_pct": 94.0,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "mouldy"
+        ],
+        "scribe": [
+          "moldy"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "mould"
+        ],
+        "scribe": [
+          "mold"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "mould"
+        ],
+        "scribe": [
+          "mold"
+        ]
+      }
+    ]
+  },
+  "vo_check": "REVIEW",
+  "credits": {
+    "before": {
+      "used": 203598,
+      "limit": 209536,
+      "remaining": 5938
+    },
+    "after": {
+      "used": 203853,
+      "limit": 209536,
+      "remaining": 5683
+    },
+    "counter_delta": 255
+  },
+  "text": "In 1928, a mouldy dish gave us penicillin. Alexander Fleming came back from holiday to old dishes of bacteria. On one, a fuzzy mould had landed. All around it, the bacteria were dead. He called it mould juice: penicillin. Others later turned it into a medicine that has saved millions.",
+  "made_at": "2026-10-12T23:05:17+0100"
+}
