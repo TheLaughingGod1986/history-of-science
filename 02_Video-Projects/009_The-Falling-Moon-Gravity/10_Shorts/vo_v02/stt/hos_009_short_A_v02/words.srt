@@ -1,0 +1,39 @@
+1
+00:00:00,120 --> 00:00:02,180
+The moon is falling towards the Earth
+
+2
+00:00:02,300 --> 00:00:05,360
+right now. Every second, it moves sideways
+
+3
+00:00:05,420 --> 00:00:08,140
+about a kilometer and drops a tiny bit
+
+4
+00:00:08,180 --> 00:00:08,980
+towards us.
+
+5
+00:00:09,860 --> 00:00:12,600
+But the Earth curves away beneath it, so
+
+6
+00:00:12,640 --> 00:00:13,700
+it keeps on missing.
+
+7
+00:00:15,180 --> 00:00:17,100
+Isaac Newton worked this out more than
+
+8
+00:00:17,160 --> 00:00:20,320
+three hundred years ago. An orbit isn't
+
+9
+00:00:20,360 --> 00:00:23,480
+floating at all. It's falling and missing
+
+10
+00:00:23,800 --> 00:00:24,240
+forever
