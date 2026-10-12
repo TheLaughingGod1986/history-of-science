@@ -115,6 +115,13 @@ RETAKES = {
          "attached. Dr John Snow, Victorian physician with sideburns and a dark frock coat, stands beside "
          "it holding the long detached iron handle in both hands. Only one handle in the picture."),
     ],
+    # Chief AMEND after watch (HOS #180 6132241581): v01 had malformed gloved hands; no people at all.
+    "s4": [
+        ("05_paris_archive", "A grand, quiet Paris library archive with tall wooden shelves of dark "
+         "lead-lined boxes receding down a long vaulted aisle, one box on a reading table in the foreground "
+         "with an old 1890s laboratory notebook lying closed beside it, a faint blue-green glow at its edges. "
+         "No people, no hands, no gloves, no figures anywhere in the frame. Soft warm light. Quiet, awe."),
+    ],
 }
 
 # Chief's last-take ruling (HOS #180 6131594106): bare pump only, no person, nothing held.

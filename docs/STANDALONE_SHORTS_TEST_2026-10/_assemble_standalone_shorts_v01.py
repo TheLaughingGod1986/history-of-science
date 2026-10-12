@@ -3,6 +3,8 @@
 
 Chief rulings (HOS #180 6131411243, 6131594106): plates as kept (S1 runs 01–04 and loops to 01; S2 03–05 are the
 v02 retakes; S3-05 is the v03 last take), one HOS standalone-Shorts bed under all four, pause-trim S1/S4 VO only.
+v02 (Chief AMEND after watch, HOS #180 6132241581): S3 opens and ends on the handle-off plate (the handle never
+returns); S4's archive plate is the no-hands v02 retake. S1/S2 stay v01.
 SCRIPTS_v02: no 9–14 s long-title card and no "watch the full film" end card (the Shorts stand alone).
 Each still moves with a smooth push (zoompan on a 4× upscale, so no wobble); frame 0 opens on a faster push with a
 whoosh so the picture visibly changes by 1 s. Word captions all the way through (UK spelling), hook caption 0–2.6 s.
@@ -53,13 +55,13 @@ SHORTS = [
                (30, "s2/05_first_glow_v02.jpg"), ("loop", "s2/01_glowing_flask_v01.jpg")]},
     {"id": "s3_snow_pump", "air_date": "2026-10-26", "hook": "THE KILLER **PUMP**",
      "vo": "hos_sa_s3_snow_pump_vo_v02", "trim": False,
-     "beats": [(0, "s3/01_broad_street_pump_v01.jpg"), (10, "s3/02_soho_1854_v01.jpg"),
+     "ver": "v02", "beats": [(0, "s3/05_handle_off_v03.jpg"), (10, "s3/02_soho_1854_v01.jpg"),
                (23, "s3/03_snow_tracking_v01.jpg"), (31, "s3/04_map_bars_v01.jpg"),
-               (39, "s3/05_handle_off_v03.jpg"), ("loop", "s3/01_broad_street_pump_v01.jpg")]},
+               (39, "s3/05_handle_off_v03.jpg")]},
     {"id": "s4_curie_notebooks", "air_date": "2026-10-28", "hook": "STILL **RADIOACTIVE**",
-     "vo": "hos_sa_s4_curie_notebooks_vo_v01", "trim": True,
+     "vo": "hos_sa_s4_curie_notebooks_vo_v01", "trim": True, "ver": "v02",
      "beats": [(0, "s4/01_lead_box_v01.jpg"), (6, "s4/02_shed_lab_v01.jpg"), (18, "s4/03_glowing_vials_v01.jpg"),
-               (23, "s4/04_bare_hands_v01.jpg"), (32, "s4/05_paris_archive_v01.jpg"),
+               (23, "s4/04_bare_hands_v01.jpg"), (32, "s4/05_paris_archive_v02.jpg"),
                ("loop", "s4/01_lead_box_v01.jpg")]},
 ]
 
@@ -206,8 +208,8 @@ def seg(src: Path, dst: Path, dur: float, k: int, first: bool) -> None:
 
 
 def build(item: dict) -> dict:
-    sid = item["id"]
-    work = WORK / sid
+    sid, ver = item["id"], item.get("ver", "v01")
+    work = WORK / (sid if ver == "v01" else f"{sid}_{ver}")
     work.mkdir(parents=True, exist_ok=True)
     raw = VO / f"{item['vo']}.wav"
     words = stt_words(item["vo"])
@@ -275,7 +277,7 @@ def build(item: dict) -> dict:
         fc.append(f"{last}[{i}:v]overlay=0:0:enable='between(t,{t0:.3f},{t1:.3f})'[v{i}]")
         last = f"[v{i}]"
     OUT.mkdir(exist_ok=True)
-    mp4 = OUT / f"hos_sa_{sid}_v01.mp4"
+    mp4 = OUT / f"hos_sa_{sid}_{ver}.mp4"
     ff(*inputs, "-filter_complex", ";".join(fc), "-map", last, "-map", "1:a", "-c:v", "libx264",
        "-pix_fmt", "yuv420p", "-profile:v", "high", "-preset", "medium", "-crf", "18", "-r", str(FPS),
        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-t", f"{total:.3f}", "-movflags", "+faststart",
@@ -284,7 +286,7 @@ def build(item: dict) -> dict:
         ff("-ss", f"{t:.3f}", "-i", str(mp4), "-frames:v", "1", "-q:v", "3", str(work / f"{tag}.jpg"))
     timeline = [{"role": r, "text": t, "t0": round(a, 3), "t1": round(b, 3)} for _, a, b, r, t in overlays]
     (work / "timeline.json").write_text(json.dumps({"plan": plan, "overlays": timeline}, indent=2) + "\n")
-    return {"id": sid, "air_date": item["air_date"], "file": mp4.relative_to(REPO).as_posix(),
+    return {"id": sid, "ver": ver, "work": work.relative_to(HERE).as_posix(), "air_date": item["air_date"], "file": mp4.relative_to(REPO).as_posix(),
             "sha256": hashlib.sha256(mp4.read_bytes()).hexdigest(), "duration_s": round(probe(mp4), 3),
             "vo": raw.name, "pause_trim_s": trimmed, "bed": BED.name, "bed_gain_db": round(bed_gain, 2),
             "hook": item["hook"].replace("**", ""), "hook_layer": hook_meta, "plan": plan,
@@ -297,9 +299,9 @@ def sheet(recs: list[dict]) -> Path:
     img = Image.new("RGB", (tw * len(tags), th * len(recs)), (20, 20, 20))
     for r, rec in enumerate(recs):
         for c, tag in enumerate(tags):
-            im = Image.open(WORK / rec["id"] / f"{tag}.jpg").resize((tw, th))
+            im = Image.open(HERE / rec.get("work", f"_work_shorts_v01/{rec['id']}") / f"{tag}.jpg").resize((tw, th))
             img.paste(im, (c * tw, r * th))
-    p = OUT / "contact_sheet_v01.jpg"
+    p = OUT / f"contact_sheet_{max(r.get('ver', 'v01') for r in recs)}.jpg"
     img.save(p, quality=88)
     return p
 
