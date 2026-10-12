@@ -88,6 +88,66 @@ PLATES = {
         ("05_paris_archive", "A grand Paris library archive with rows of lead-lined boxes on shelves, a "
          "reader in protective gloves lifting a notebook. Quiet, awe."),
     ],
+    # J0214: S5-S8 from SCRIPTS_v01 picture notes as amended by SCRIPTS_v02 (S5 VO kept "blamed on pigeons").
+    # S7 and S8 run 4 plates and loop to 01 (Vertex trial balance £0.70 at 22:23Z; 18 stills keeps ≥ £0.10).
+    "s5": [
+        ("01_pigeons_horn", "Two grey pigeons flapping out of the open mouth of a huge horn-shaped metal "
+         "radio antenna on a grassy New Jersey hill in 1964, the horn like a giant square ear trumpet on a "
+         "rotating mount. The hook frame."),
+        ("02_receiver_needle", "Two 1960s radio astronomers in shirt sleeves, Arno Penzias with dark hair and "
+         "glasses and Robert Wilson, tall and lean, at a bank of receiver equipment with glowing valve "
+         "panels, watching an analogue needle tremble on a dial with a blank face. Puzzled."),
+        ("03_nests_inside", "Inside the giant metal horn antenna, looking down its tapering throat: twigs of "
+         "pigeon nests and white droppings on the riveted aluminium floor, one pigeon perched. Soft daylight."),
+        ("04_still_noise", "The same two radio astronomers at the receiver, the analogue needle still "
+         "trembling on its blank dial, both leaning in, baffled, a broom propped against the rack."),
+        ("05_every_direction", "The giant horn antenna on its hill at night, turned up to a starry sky; the "
+         "whole sky glows with a faint, even, warm microwave haze from every direction. Wonder."),
+    ],
+    "s6": [
+        ("01_mouldy_dish", "A cluttered 1920s laboratory bench with stacks of round glass culture dishes, "
+         "one dish on top with a fuzzy blue-green mould spreading across it. The hook frame."),
+        ("02_back_from_holiday", "Alexander Fleming, a 1920s Scottish scientist with a bow tie and white lab "
+         "coat over a suit, back from holiday in his small London lab, sorting through a pile of old glass "
+         "culture dishes by the window."),
+        ("03_fuzzy_mould", "Close on one round glass culture dish held up to window light: a fuzzy "
+         "blue-green mould colony on pale yellow bacteria."),
+        ("04_clear_ring", "Close on the glass culture dish: a clear empty ring all around the fuzzy mould "
+         "where the yellow bacteria colonies have vanished, the rest of the dish dotted with colonies."),
+        ("05_medicine_bottles", "Rows of small 1940s glass medicine vials with plain blank labels on a "
+         "pharmacy shelf in warm light, hopeful."),
+    ],
+    "s7": [
+        ("01_candle_jar", "A candle flame shrinking to almost nothing inside an upturned glass jar standing "
+         "in a dish of water on an 18th-century wooden bench, a wisp of smoke curling. The hook frame."),
+        ("02_priestley_jar", "Joseph Priestley, an 18th-century English minister and scientist in a "
+         "powdered wig and dark coat, at his wooden bench in 1771 lowering an upturned glass jar over a "
+         "lit candle standing in a dish of water."),
+        ("03_mint_sprig", "Priestley's hands slipping a fresh green sprig of mint under the rim of the "
+         "upturned glass jar standing in water, the candle inside burnt out."),
+        ("04_candle_bright", "A fresh candle burning bright and tall inside the upturned glass jar beside a "
+         "healthy green sprig of mint, standing in water on the wooden bench. Quiet triumph."),
+    ],
+    "s8": [
+        ("01_tall_tube", "A very tall upright glass tube against a weathered wooden barn wall in the "
+         "18th century, a red column already rising high inside it. The hook frame. No blood outside the tube."),
+        ("02_hales_sketch", "Stephen Hales, an 18th-century English country vicar in a black clerical coat, "
+         "white bands at the collar and a short grey wig, at a desk by a window sketching a heart with a "
+         "quill. No writing visible."),
+        ("03_calm_mare", "A calm chestnut mare standing in a straw-filled barn, a thin brass pipe joined to "
+         "a very tall glass tube rising up the barn wall beside her. No wound, no procedure, no blood visible."),
+        ("04_taller_than_man", "Stephen Hales, a country vicar in a black clerical coat and short grey wig, "
+         "standing in the barn looking up in wonder at the very tall glass tube whose red column rises "
+         "well above his head. No blood outside the tube."),
+    ],
+}
+
+# J0214 face lock: a later plate takes the named earlier plate (same Short, this run's version) as Image 2.
+LOCKS = {
+    ("s5", "04_still_noise"): ("02_receiver_needle", "Arno Penzias and Robert Wilson"),
+    ("s6", "03_fuzzy_mould"): ("02_back_from_holiday", "Alexander Fleming"),
+    ("s7", "03_mint_sprig"): ("02_priestley_jar", "Joseph Priestley"),
+    ("s8", "04_taller_than_man"): ("02_hales_sketch", "Stephen Hales"),
 }
 
 # Chief FAIL retakes (HOS #180 6131411243): one v02 each. Brand plates take S2-02 as the face/wardrobe lock.
@@ -208,9 +268,16 @@ def main() -> int:
         if a.retake and k == "s2" and BRAND_REF.exists():
             parts.append(m.img_part(BRAND_REF))
             text = ("Image 2 is the character lock for Hennig Brand only (face, beard, age, apron). " + text)
+        lock = LOCKS.get((k, pid))
+        lock_ref = OUT / k / f"{lock[0]}_{ver}.jpg" if lock else None
+        if lock_ref and lock_ref.exists():
+            parts.append(m.img_part(lock_ref))
+            text = (f"Image 2 is the character lock for {lock[1]}: the SAME face, hair, age and clothes as in "
+                    "Image 2. Do not copy its framing. " + text)
         parts.append(text)
         print(f"STILL {k}/{pid} {ver}", flush=True)
-        entry = {"short": k, "plate": pid, "ver": ver, "at": now(), "prompt": text, "cost_usd": USD_PER_STILL}
+        entry = {"short": k, "plate": pid, "ver": ver, "at": now(), "prompt": text, "cost_usd": USD_PER_STILL,
+                 "job": "J0214" if k in ("s5", "s6", "s7", "s8") else log.get("job", "J0203")}
         try:
             r = m.with_retry(lambda: c.models.generate_content(
                 model="gemini-2.5-flash-image", contents=parts,

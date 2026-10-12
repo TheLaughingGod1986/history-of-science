@@ -44,3 +44,19 @@ Rulings HOS #180 6131594106: KEEP S2-03/04/05 v02; S1-05 dropped (S1 runs 01–0
 | S4 Curie | 22.63 s | 1.84 s | PASS, motion 16.7 |
 
 Open for Chief: the hook block sits high (S2's four lines start near the top edge; S3's touches the pump handle on frame 0); no long-title or end card (SCRIPTS_v02); no overlay used; `sfx_kit.py level` not run (stems not kept separately in v01); custom covers not built yet. S5–S8 wait on their VO and plates.
+
+## S5–S8 still plates v01 (J0214, Cursor, 12 Oct 2026 ~23:30 London)
+
+Same method as J0203 (Chief ruling (a)): `_mint_plates_v01.py` rows `s5`–`s8`, logged in `PLATES_MINT_LOG_v01.json` (`"job": "J0214"`). Beats from SCRIPTS_v01 as amended by SCRIPTS_v02. S5's VO kept "blamed on pigeons", so the caption is BLAMED THE **PIGEONS**. Face lock: each later plate with a person takes that person's first plate as Image 2 (`LOCKS`).
+
+- **Spend:** 18 stills × $0.039 ≈ £0.56. Vertex Free Trial live reading £0.70 (22:23Z, `j0214_before`), nothing logged since; est after ≈ £0.14, above the £0.10 margin. 20 stills (£0.62) would have gone under it, so **S7 and S8 run 4 plates** and loop to 01. J0107 is done. Logged in OWB `ai_spend.py` (pool vertex, film HOS:standalone).
+- **Media (gitignored, Mini only):** `plates_v01/s5…s8/*_v01.jpg`, sheets `plates_v01/s{5..8}_sheet_v01.jpg`.
+
+| Short | Plates (VO order) | Cursor's flags (Chief decides KEEP/FAIL) |
+|---|---|---|
+| S5 Penzias pigeons | pigeons leave horn (hook) · receiver, needle · nests inside horn · still the noise · every direction | 04 copies 02's framing almost exactly (only a broom added), so it reads as a repeat; the assembler can push differently or drop 04. Same faces in 02/04. |
+| S6 Fleming mould | mouldy dish on stacked dishes (hook) · back from holiday · fuzzy mould at window · clear ring · medicine vials (blank labels) | 04: the ring with no colonies around the mould is there but faint; the mould is olive, not blue-green. Fleming wears glasses in 03 only. |
+| S7 Priestley mint | candle dying in jar in water (hook) · Priestley lowers jar · mint under rim · fresh candle bright | 03 copies 02's framing and the candle is **still lit** (the line says it burnt out). Never shows or says oxygen. |
+| S8 Hales blood | tall tube on barn wall (hook) · Hales sketching a heart (no text) · calm mare, tube by her · column above Hales's head | none. No blood outside the tube, no procedure shown. |
+
+Next: Chief KEEP/FAIL per plate; a FAIL gets one retake (~£0.03 each, est ≈ £0.14 left, so at most one or two before the £0.10 margin) or a reuse/drop. Then J0171 assembles S5–S8.
