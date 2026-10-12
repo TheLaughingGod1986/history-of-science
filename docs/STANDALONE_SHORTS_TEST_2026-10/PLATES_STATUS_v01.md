@@ -60,3 +60,11 @@ Same method as J0203 (Chief ruling (a)): `_mint_plates_v01.py` rows `s5`–`s8`,
 | S8 Hales blood | tall tube on barn wall (hook) · Hales sketching a heart (no text) · calm mare, tube by her · column above Hales's head | none. No blood outside the tube, no procedure shown. |
 
 Next: Chief KEEP/FAIL per plate; a FAIL gets one retake (~£0.03 each, est ≈ £0.14 left, so at most one or two before the £0.10 margin) or a reuse/drop. Then J0171 assembles S5–S8.
+
+### Chief rulings (HOS #180, 22:33Z and 22:34Z) and the S7-03 retake check (Cursor, 12 Oct ~23:45 London)
+
+- **KEEP:** S5 01, 02, 03, 05 · S6 01–05 · S7 01, 02, 04 · S8 01–04.
+- **S5-04: DROP.** S5 runs 01 · 02 · 03 · 05, looping to 01. "Still the noise" sits on S5-02 with a different, tighter push on the needle dial.
+- **S6-04:** KEEP, with a slow push-in centred on the mould so the clear band fills the frame.
+- **S7-03: FAIL** (the candle is still lit). One retake was allowed only if the estimate stayed at or above £0.10. **Retake skipped, nothing spent.** The console read £0.67 at 22:43Z (`j0214_s7retake`), down only £0.03 since 22:23Z, while J0214 logged £0.56 at 22:29Z. The conservative estimate is ≈ £0.11, and a £0.031 take would leave ≈ £0.08, under the margin (billing account is a Paid account). The console also dropped £0.20 between 21:15Z and 22:23Z with only £0.03 logged, so the lag isn't reliable.
+- **S7 in J0171:** use Chief's no-spend crop from the 22:33Z ruling. That's a 1.5× top-anchored push-in on S7-03 that keeps Priestley's head and the mint and finishes above the flame and the jar rim (the flame sits at ~73% of frame height, so the crop ends by ~67%). Log it as `crop_no_flame`. If the crop still shows the flame or looks soft at 1080×1920, drop 03 and run S7 01 → 02 → 04, looping to 01, per the 22:34Z ruling. A retake waits for a fresh balance that clears the margin.
