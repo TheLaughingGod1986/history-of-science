@@ -112,6 +112,48 @@
       "spend_usd_since_plateau": 14.824,
       "est_remaining_gbp": 4.2508,
       "usable_gbp": 4.2508
+    },
+    {
+      "label": "j0160_before_1518",
+      "at": "2026-10-12T14:18:19+00:00",
+      "free_trial_remaining_gbp": 4.93,
+      "status": "Expiring in 30 days",
+      "screenshot": "vertex_credits_j0160_before_1518.png",
+      "floor_gbp": 0.1,
+      "gbp_per_usd": 0.8,
+      "lag_plateau_label": "j0160_before_1518",
+      "lag_plateau_at": "2026-10-12T14:18:19+00:00",
+      "spend_usd_since_plateau": 0.0,
+      "est_remaining_gbp": 4.93,
+      "usable_gbp": 4.83
+    },
+    {
+      "label": "j0160_A",
+      "at": "2026-10-12T14:21:34+00:00",
+      "free_trial_remaining_gbp": 4.93,
+      "status": "Expiring in 30 days",
+      "screenshot": "vertex_credits_j0160_A.png",
+      "floor_gbp": 0.1,
+      "gbp_per_usd": 0.8,
+      "lag_plateau_label": "j0160_before_1518",
+      "lag_plateau_at": "2026-10-12T14:18:19+00:00",
+      "spend_usd_since_plateau": 3.317,
+      "est_remaining_gbp": 2.2764,
+      "usable_gbp": 2.1764
+    },
+    {
+      "label": "j0160_B",
+      "at": "2026-10-12T14:26:11+00:00",
+      "free_trial_remaining_gbp": 4.93,
+      "status": "Expiring in 30 days",
+      "screenshot": "vertex_credits_j0160_B.png",
+      "floor_gbp": 0.1,
+      "gbp_per_usd": 0.8,
+      "lag_plateau_label": "j0160_before_1518",
+      "lag_plateau_at": "2026-10-12T14:18:19+00:00",
+      "spend_usd_since_plateau": 4.595,
+      "est_remaining_gbp": 1.254,
+      "usable_gbp": 1.154
     }
   ]
 }
