@@ -58,7 +58,7 @@
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s5_penzias_pigeons_v01.mp4",
       "sha256": "77cc187a07947e92f2510fb157efd1cbb8bee9b9cd3476c5d72ea1e42a5831e1",
       "air_date": "2026-11-02",
-      "cover": null,
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s5_cover_v01.png",
       "stems": {
         "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s5_penzias_pigeons/stems/vo.wav",
         "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s5_penzias_pigeons/stems/bed.wav",
@@ -71,7 +71,7 @@
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s6_fleming_mould_v01.mp4",
       "sha256": "fd5bf3469734c1e4a081ac85baa2a3e7ff5a166fd617de79650db35d6a3b6a03",
       "air_date": "2026-11-04",
-      "cover": null,
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s6_cover_v01.png",
       "stems": {
         "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s6_fleming_mould/stems/vo.wav",
         "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s6_fleming_mould/stems/bed.wav",
@@ -84,7 +84,7 @@
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s7_priestley_mint_v01.mp4",
       "sha256": "de43832b1c9505d058d3fc938e9baa504cb929b6c9f06e107b3d6465d4266a70",
       "air_date": "2026-11-09",
-      "cover": null,
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s7_cover_v01.png",
       "stems": {
         "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint/stems/vo.wav",
         "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint/stems/bed.wav",
@@ -97,7 +97,7 @@
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s8_hales_blood_v01.mp4",
       "sha256": "56ea2256cee60ed28d1f8f1e3abb344f65a4557fdaa0edb3e53e8499286b579a",
       "air_date": "2026-11-11",
-      "cover": null,
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s8_cover_v01.png",
       "stems": {
         "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s8_hales_blood/stems/vo.wav",
         "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s8_hales_blood/stems/bed.wav",
@@ -107,5 +107,5 @@
       "level_output": "SFX level PASS: VO -20.0 LUFS, SFX -34.9 LUFS, 1 hits"
     }
   },
-  "all_pass": false
+  "all_pass": true
 }
