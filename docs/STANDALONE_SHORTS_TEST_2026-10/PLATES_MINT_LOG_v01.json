@@ -183,6 +183,56 @@
       "cost_usd": 0.039,
       "ok": true,
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s4/05_paris_archive_v01.jpg"
+    },
+    {
+      "short": "s1",
+      "plate": "05_invisible_glow",
+      "ver": "v02",
+      "at": "2026-10-12T19:53:36+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. The same wooden table in the dark just beyond the red edge of a rainbow spectrum, the thermometer's red column at its highest. The invisible heat is shown only as a very soft warm glow and a faint clear air shimmer over the dark strip. No smoke, no trails, no embers, no sparks, no flame. Quiet wonder. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s1/05_invisible_glow_v02.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "03_black_sludge",
+      "ver": "v02",
+      "at": "2026-10-12T19:53:46+00:00",
+      "prompt": "Image 2 is the character lock for Hennig Brand only (face, beard, age, apron). Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Hennig Brand must be the SAME man as in Image 2: the same bearded face, age and hair, the same brown leather apron and clothes, no glasses. Close on a glass retort over glowing coals, boiled down to thick black sludge, Brand leaning in behind it, peering hopefully. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/03_black_sludge_v02.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "04_no_gold",
+      "ver": "v02",
+      "at": "2026-10-12T19:53:57+00:00",
+      "prompt": "Image 2 is the character lock for Hennig Brand only (face, beard, age, apron). Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Hennig Brand must be the SAME man as in Image 2: the same bearded face, age and hair, the same brown leather apron and clothes, no glasses. Brand by his furnace holding up an empty iron crucible, disappointed: no gold, only dull residue. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/04_no_gold_v02.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "05_first_glow",
+      "ver": "v02",
+      "at": "2026-10-12T19:54:07+00:00",
+      "prompt": "Image 2 is the character lock for Hennig Brand only (face, beard, age, apron). Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Hennig Brand must be the SAME man as in Image 2: the same bearded face, age and hair, the same brown leather apron and clothes, no glasses. In the dark workshop, a white waxy substance in a glass dish glowing eerie green-white, Brand's astonished face lit from below by its glow. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/05_first_glow_v02.jpg"
+    },
+    {
+      "short": "s3",
+      "plate": "05_handle_off",
+      "ver": "v02",
+      "at": "2026-10-12T19:54:16+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A black cast-iron Victorian street water pump on a calm Soho street in 1854 with its handle completely removed: the pump body has only a bare stub where the handle was, nothing attached. Dr John Snow, Victorian physician with sideburns and a dark frock coat, stands beside it holding the long detached iron handle in both hands. Only one handle in the picture. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/05_handle_off_v02.jpg"
     }
   ]
 }

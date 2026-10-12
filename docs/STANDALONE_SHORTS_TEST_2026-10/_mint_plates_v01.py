@@ -90,6 +90,33 @@ PLATES = {
     ],
 }
 
+# Chief FAIL retakes (HOS #180 6131411243): one v02 each. Brand plates take S2-02 as the face/wardrobe lock.
+BRAND_REF = OUT / "s2" / "02_hamburg_lab_v01.jpg"
+BRAND_LOCK = ("Hennig Brand must be the SAME man as in Image 2: the same bearded face, age and hair, the same "
+              "brown leather apron and clothes, no glasses. ")
+RETAKES = {
+    "s1": [
+        ("05_invisible_glow", "The same wooden table in the dark just beyond the red edge of a rainbow "
+         "spectrum, the thermometer's red column at its highest. The invisible heat is shown only as a "
+         "very soft warm glow and a faint clear air shimmer over the dark strip. No smoke, no trails, no "
+         "embers, no sparks, no flame. Quiet wonder."),
+    ],
+    "s2": [
+        ("03_black_sludge", BRAND_LOCK + "Close on a glass retort over glowing coals, boiled down to thick "
+         "black sludge, Brand leaning in behind it, peering hopefully."),
+        ("04_no_gold", BRAND_LOCK + "Brand by his furnace holding up an empty iron crucible, disappointed: "
+         "no gold, only dull residue."),
+        ("05_first_glow", BRAND_LOCK + "In the dark workshop, a white waxy substance in a glass dish "
+         "glowing eerie green-white, Brand's astonished face lit from below by its glow."),
+    ],
+    "s3": [
+        ("05_handle_off", "A black cast-iron Victorian street water pump on a calm Soho street in 1854 with "
+         "its handle completely removed: the pump body has only a bare stub where the handle was, nothing "
+         "attached. Dr John Snow, Victorian physician with sideburns and a dark frock coat, stands beside "
+         "it holding the long detached iron handle in both hands. Only one handle in the picture."),
+    ],
+}
+
 
 def now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -127,11 +154,13 @@ def main() -> int:
     ap.add_argument("--budget-gbp", type=float, required=True)
     ap.add_argument("--only", choices=sorted(PLATES))
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--retake", action="store_true", help="mint Chief's FAIL retakes as _v02")
     a = ap.parse_args()
 
     log = load_log()
-    done = {(s["short"], s["plate"]) for s in log["stills"] if s.get("ok")}
-    todo = [(k, pid, d) for k, rows in PLATES.items() if not a.only or k == a.only
+    ver = "v02" if a.retake else "v01"
+    done = {(s["short"], s["plate"]) for s in log["stills"] if s.get("ok") and s.get("ver", "v01") == ver}
+    todo = [(k, pid, d) for k, rows in (RETAKES if a.retake else PLATES).items() if not a.only or k == a.only
             for pid, d in rows if (k, pid) not in done]
     run_gbp = 0.0
     per = USD_PER_STILL * GBP_PER_USD
@@ -149,7 +178,7 @@ def main() -> int:
         if run_gbp + per > a.budget_gbp:
             print(f"STOP: next still would pass the £{a.budget_gbp:.2f} budget (run £{run_gbp:.2f})")
             break
-        dest = OUT / k / f"{pid}_v01.jpg"
+        dest = OUT / k / f"{pid}_{ver}.jpg"
         dest.parent.mkdir(parents=True, exist_ok=True)
         text = prompt_for(d)
         parts = []
@@ -157,9 +186,12 @@ def main() -> int:
             parts.append(ref)
             text = ("Image 1 shows this channel's locked look only: match its 3D cartoon material, finish "
                     "and warm light. Do NOT copy its room, people, objects or any text. " + text)
+        if a.retake and k == "s2" and BRAND_REF.exists():
+            parts.append(m.img_part(BRAND_REF))
+            text = ("Image 2 is the character lock for Hennig Brand only (face, beard, age, apron). " + text)
         parts.append(text)
-        print(f"STILL {k}/{pid}", flush=True)
-        entry = {"short": k, "plate": pid, "at": now(), "prompt": text, "cost_usd": USD_PER_STILL}
+        print(f"STILL {k}/{pid} {ver}", flush=True)
+        entry = {"short": k, "plate": pid, "ver": ver, "at": now(), "prompt": text, "cost_usd": USD_PER_STILL}
         try:
             r = m.with_retry(lambda: c.models.generate_content(
                 model="gemini-2.5-flash-image", contents=parts,
