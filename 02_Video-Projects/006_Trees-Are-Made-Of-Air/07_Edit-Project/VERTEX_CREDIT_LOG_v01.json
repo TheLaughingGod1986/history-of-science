@@ -238,6 +238,20 @@
       "spend_usd_since_plateau": 0.0,
       "est_remaining_gbp": 0.7,
       "usable_gbp": 0.6
+    },
+    {
+      "label": "s7-03",
+      "at": "2026-10-12T23:06:08+00:00",
+      "free_trial_remaining_gbp": 76.06,
+      "status": "Dev Program \u00a375.39 Available; Free Trial \u00a30.67 Expiring in 30 days",
+      "screenshot": "vertex_credits_s7-03.png",
+      "floor_gbp": 1.0,
+      "gbp_per_usd": 0.8,
+      "lag_plateau_label": "s7-03",
+      "lag_plateau_at": "2026-10-12T23:06:08+00:00",
+      "spend_usd_since_plateau": 0.0,
+      "est_remaining_gbp": 76.06,
+      "usable_gbp": 75.06
     }
   ]
 }

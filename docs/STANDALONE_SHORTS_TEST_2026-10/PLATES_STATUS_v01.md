@@ -68,3 +68,10 @@ Next: Chief KEEP/FAIL per plate; a FAIL gets one retake (~£0.03 each, est ≈ �
 - **S6-04:** KEEP, with a slow push-in centred on the mould so the clear band fills the frame.
 - **S7-03: FAIL** (the candle is still lit). One retake was allowed only if the estimate stayed at or above £0.10. **Retake skipped, nothing spent.** The console read £0.67 at 22:43Z (`j0214_s7retake`), down only £0.03 since 22:23Z, while J0214 logged £0.56 at 22:29Z. The conservative estimate is ≈ £0.11, and a £0.031 take would leave ≈ £0.08, under the margin (billing account is a Paid account). The console also dropped £0.20 between 21:15Z and 22:23Z with only £0.03 logged, so the lag isn't reliable.
 - **S7 in J0171:** use Chief's no-spend crop from the 22:33Z ruling. That's a 1.5× top-anchored push-in on S7-03 that keeps Priestley's head and the mint and finishes above the flame and the jar rim (the flame sits at ~73% of frame height, so the crop ends by ~67%). Log it as `crop_no_flame`. If the crop still shows the flame or looks soft at 1080×1920, drop 03 and run S7 01 → 02 → 04, looping to 01, per the 22:34Z ruling. A retake waits for a fresh balance that clears the margin.
+
+### S7-03 retake v02 (J0215, Cursor, 13 Oct 00:06 London)
+
+- **Credit:** pool read £76.06 at 23:06Z (Dev Program £75.39 + Free Trial £0.67), usable £75.06 after the £1 margin. Run capped at £0.10.
+- **One take, £0.03:** `plates_v01/s7/03_mint_sprig_v02.jpg` (gitignored; Priestley face-locked to S7-02 v01). The prompt asked for a tight close-up on the hands at the jar rim and a burnt-out candle with no flame.
+- **Cursor's flags (Chief decides KEEP/FAIL):** a **small flame is still visible** on the wick, below a smoke wisp. The mint floats inside the jar rather than being slipped under the rim. The framing is mid-shot, tighter than 02 but not the close-up asked for. The face, wig and coat match S7-02.
+- **No second take** (the brief allows one). If it FAILs, the 22:33Z no-spend crop or the 01 → 02 → 04 drop still stands for J0171.

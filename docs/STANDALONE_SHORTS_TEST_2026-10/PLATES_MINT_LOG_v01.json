@@ -451,6 +451,17 @@
       "job": "J0214",
       "ok": true,
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s8/04_taller_than_man_v01.jpg"
+    },
+    {
+      "short": "s7",
+      "plate": "03_mint_sprig",
+      "ver": "v02",
+      "at": "2026-10-12T23:06:37+00:00",
+      "prompt": "Image 2 is the character lock for Joseph Priestley: the SAME face, hair, age and clothes as in Image 2. Do not copy its framing. Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Tight close-up at bench height, not a wide shot: Joseph Priestley's hands in dark coat cuffs slipping a fresh green sprig of mint under the rim of an upturned glass jar that stands in a shallow dish of water. Inside the jar the candle has burnt OUT: a short stub with a black, unlit wick and one thin wisp of grey smoke. NO flame, no glow, no fire anywhere in the frame. Priestley's face only partly in soft focus above. Quiet, curious. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0215",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s7/03_mint_sprig_v02.jpg"
     }
   ]
 }

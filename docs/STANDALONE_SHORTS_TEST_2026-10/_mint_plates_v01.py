@@ -182,6 +182,14 @@ RETAKES = {
          "with an old 1890s laboratory notebook lying closed beside it, a faint blue-green glow at its edges. "
          "No people, no hands, no gloves, no figures anywhere in the frame. Soft warm light. Quiet, awe."),
     ],
+    # Chief FAIL (HOS #180 22:34Z): v01 kept the candle lit and copied 02's framing (J0215).
+    "s7": [
+        ("03_mint_sprig", "Tight close-up at bench height, not a wide shot: Joseph Priestley's hands in dark "
+         "coat cuffs slipping a fresh green sprig of mint under the rim of an upturned glass jar that stands "
+         "in a shallow dish of water. Inside the jar the candle has burnt OUT: a short stub with a black, "
+         "unlit wick and one thin wisp of grey smoke. NO flame, no glow, no fire anywhere in the frame. "
+         "Priestley's face only partly in soft focus above. Quiet, curious."),
+    ],
 }
 
 # Chief's last-take ruling (HOS #180 6131594106): bare pump only, no person, nothing held.
@@ -270,14 +278,17 @@ def main() -> int:
             text = ("Image 2 is the character lock for Hennig Brand only (face, beard, age, apron). " + text)
         lock = LOCKS.get((k, pid))
         lock_ref = OUT / k / f"{lock[0]}_{ver}.jpg" if lock else None
-        if lock_ref and lock_ref.exists():
+        if lock_ref and not lock_ref.exists():
+            lock_ref = OUT / k / f"{lock[0]}_v01.jpg"
+        if lock and lock_ref.exists():
             parts.append(m.img_part(lock_ref))
             text = (f"Image 2 is the character lock for {lock[1]}: the SAME face, hair, age and clothes as in "
                     "Image 2. Do not copy its framing. " + text)
         parts.append(text)
         print(f"STILL {k}/{pid} {ver}", flush=True)
         entry = {"short": k, "plate": pid, "ver": ver, "at": now(), "prompt": text, "cost_usd": USD_PER_STILL,
-                 "job": "J0214" if k in ("s5", "s6", "s7", "s8") else log.get("job", "J0203")}
+                 "job": "J0215" if a.retake and k == "s7" else "J0214" if k in ("s5", "s6", "s7", "s8")
+                 else log.get("job", "J0203")}
         try:
             r = m.with_retry(lambda: c.models.generate_content(
                 model="gemini-2.5-flash-image", contents=parts,
