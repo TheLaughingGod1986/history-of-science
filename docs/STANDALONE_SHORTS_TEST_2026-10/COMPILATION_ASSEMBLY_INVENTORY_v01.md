@@ -65,3 +65,9 @@ VO audio is on the Mini only: main HOS checkout, `docs/STANDALONE_SHORTS_TEST_20
 2. **Code graphics** (timeline ×4, cards ×6): follow-on `chart` job.
 3. **Intro and bridge plates:** pick from each film's passed clips (most now on the NAS); one plate per object, logged in the cut list.
 4. **Assembler** `_assemble_hos_compilation_v01.py` in this folder: normalise, trim, crossfade, lay VO, bed and SFX stems, loudness, then `picture_qa.py`, `polish_gate.py`, `music_gate.py`, `sfx_kit.py level`, and a chapters list from the real cut times.
+
+## Run 3 (Cursor, 12 Oct 2026 21:05): assembler prep and plan stages
+
+- `_assemble_hos_compilation_v01.py prep` normalises and trims each available master into `/private/tmp/hos_comp_v01/film_NNN_norm.mp4` (1080p30, yuv420p, two-pass loudnorm −14 LUFS / −1 dBTP, 0.25 s audio fade on the 005 and 004 trims, inside their measured pauses) and records source sha256, loudness in/out and durations in `prep_report.json`. Started detached on the Mini: tmux `J0175-prep`, log `~/_desk/logs/J0175-prep.log`, exit code in `~/_desk/logs/J0175-prep.done`. 006 is skipped until its master exists.
+- `_assemble_hos_compilation_v01.py plan` writes `cut_plan_v01.json` (segment order, start times, chapters draft, missing inputs). Dry run on inventory lengths with 006 at ~8:20: **49:58**, inside 45–60. Chapters draft: 0:00 Six discoveries, one question · 0:52 The Hidden Circle · 9:22 Built From Air · 18:03 The Invisible Enemy · 24:25 The Empty Chairs · 33:42 A Light Through Skin · 41:07 Inside the Atom (final times come from the real cut).
+- Still missing (17 items in the plan): the 006 master, the ten J0204 graphics, and the intro and bridge plates. The render stage (crossfades, VO, bed and SFX stems, gates) is written once J0204 lands.
