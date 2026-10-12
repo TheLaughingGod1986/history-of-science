@@ -31,3 +31,64 @@ Drafted by Cursor (J0169, 12 Oct 2026) for the Gemini facts pass. **Every row is
 | 8a | 8 | Stephen Hales, a clergyman, measured blood pressure in a horse with a tube in an artery | Hales 1733, *Statical Essays* vol. II, *Haemastaticks*; Univ. of Minnesota Epidemiological Essays | "The Reverend Stephen Hales, a brilliant experimental scientist, left Cambridge in 1709 and began researches on blood pressure at his Parsonage in the Parish of Teddington, Middlesex." http://www.epi.umn.edu/cvdepi/essay/reverend-stephen-hales-on-blood-pressure/ | OK |
 | 8b | 8 | The blood rose about eight feet (8 ft 3 in) up the tube, rising and falling with each beat | as 8a; Univ. of Minnesota Epidemiological Essays | "then untying the ligature on the artery, the blood rose in the tube 8 feet 3 inches perpendicular above the level of the left ventricle of the heart: but it did not attain to its full height at once; . . when it was at its full height, it would rise and fall at and after each pulse 2,3, or 4 inches. . .”" http://www.epi.umn.edu/cvdepi/essay/reverend-stephen-hales-on-blood-pressure/ | OK |
 | 8c | 8 | Published 1733; the first blood pressure measurement | as 8a; PubMed Central (PMC10751046, PMC5975372) | "Stephen Hales published the results of blood pressure measurements in animals in his work “Haemastatics” (1733), which appeared in the second volume of Statical Essays [1]." https://pmc.ncbi.nlm.nih.gov/articles/PMC10751046/ | OK |
+
+## Gemini findings (J0177, 12 Oct 2026)
+- Counts: OK 27, FLAG 0.
+- For each FLAG: the row, the spoken line in SCRIPTS_v01.md affected, and whether it needs cutting or softening (a suggestion for Chief/Claude; do NOT edit SCRIPTS_v01.md):
+  - None. All 27 candidate quotes were verified as exact verbatim matches on their respective live source pages (OK 27, FLAG 0). No spoken lines in SCRIPTS_v01.md require cutting or softening due to unverified or missing source quotes.
+- Rows whose quote supports the claim only in part (e.g. 2a says Hamburg/1669/urine but not "hoping for gold"; 5a says horn antenna/1964 but not "a steady hiss"; 8c says 1733 but not "first"): say which other row's quote covers the missing part, or that it is uncovered:
+  - **1b**: Quote (*"Moreover, he found that the temperatures of the colors increased from the violet to the red part of the spectrum."*) supports that temperatures increased from violet to red, but does not quote splitting sunlight with a prism or putting thermometers in each colour. **Uncovered** in table quotes (present in the surrounding text on the Caltech Cool Cosmos source page for 1a/1b).
+  - **2a**: Quote (*"In 1669, in Hamburg, Brand evaporated the urine he collected to yield a black sludge."*) supports Hamburg, 1669, and boiling/evaporating urine, but not "hoping for gold" / philosopher's stone. The gold-seeking goal is **covered by Row 2b's quote** (*"which, although incapable of producing gold..."*).
+  - **3a**: Quote (*"At the end of September the outbreak was all but over, with the death toll standing at 616 Sohoites."*) supports the death toll ("616 Sohoites" = hundreds died), but does not state the year "1854" or "London". The year 1854 is **uncovered** in table 3's exact quotes (present in the UCLA Snow site context). "Broad Street" is covered as "the pump" in 3c/3d quotes.
+  - **3b**: Quote (*"When a wave of Asiatic cholera first hit England in late 1831, it was thought to be spread by 'miasma in the atmosphere.'"*) supports miasma belief during the 1831 English epidemic, but does not explicitly state that "most doctors" blamed bad air during the 1854 Soho outbreak. **Uncovered** in table quotes.
+  - **3c**: Quote (*"'I found,' he wrote afterwards, 'that nearly all the deaths had taken place within a short distance of the pump.'"*) supports deaths clustering near the pump, but does not contain the phrase "door to door" or name "Broad Street" explicitly. **Uncovered** in table quotes.
+  - **4a**: Quote (*"A second publication, in December 1898, explained their discovery in the barium fraction of another new element, which they named 'radium' from the Latin word for ray."*) supports December 1898 and the discovery of radium, but does not quote polonium or Pierre Curie by name. **Uncovered** in table quotes (both are described in the preceding text on the AIP exhibit page).
+  - **5a**: Quote (*"Bell Labs radio astronomers Arno Penzias and Robert Wilson were using a large horn antenna in 1964 and 1965 to map signals from the Milky Way, when they serendipitously discovered the CMB."*) supports Penzias, Wilson, the horn antenna, 1964, and discovering the CMB, but not "a steady hiss". **Uncovered** across all table 5 quotes (5a, 5b, 5c).
+  - **5b**: Quote (*"Then they found droppings of pigeons nesting in the antenna."*) supports pigeons nesting and droppings, but does not quote cleaning them out or that the hiss stayed. **Uncovered** in table 5 quotes.
+  - **6a**: Quote (*"Alexander Fleming, a bacteriologist at St. Mary’s Hospital, had returned from a vacation when, while talking to a colleague, he noticed a zone around an invading fungus on an agar plate in which the bacteria did not grow."*) supports Fleming returning from vacation and finding fungus inhibiting bacteria on an agar plate, but does not state the year "1928". **Uncovered** in table 6 quotes.
+  - **8a**: Quote (*"The Reverend Stephen Hales, a brilliant experimental scientist, left Cambridge in 1709 and began researches on blood pressure at his Parsonage in the Parish of Teddington, Middlesex."*) supports Reverend Stephen Hales and his blood pressure research at his Parsonage, but does not mention measuring it in a horse/mare or with a tube in an artery. Measuring blood in a mare's artery with a tube is **covered by Row 8b's quote** (*"artery, the blood rose in the tube 8 feet 3 inches perpendicular..."*).
+  - **8c**: Quote (*"Stephen Hales published the results of blood pressure measurements in animals in his work 'Haemastatics' (1733), which appeared in the second volume of Statical Essays [1]."* ) supports publication of blood pressure measurements in animals in 1733, but does not include the word "first". **Uncovered** in the exact quote string of 8c (though stated in the immediately preceding sentence on the PMC10751046 source page: "The first BP measurement was made by an invasive method in animals").
+- Every spoken claim in SCRIPTS_v01.md that is NOT in the SOURCES table (e.g. "hundreds died", "saved millions", "ten days", "taller than a man", "a vicar", "a mare", "two new elements", "invisible light"), with whether an existing row's quote covers it:
+  - **"invisible light" (Short 1):** Spoken: *"He'd found infrared: invisible light, just past the red."*
+    - **Covered** by Row **1c** quote (*"just beyond the red end of the visible spectrum"*), which defines light beyond the visible spectrum.
+  - **"found light no one could see" (Short 1):** Spoken: *"In 1800, a thermometer found light no one could see."*
+    - **Covered** by Row **1c** quote (*"temperature measurement just beyond the red end of the visible spectrum"*).
+  - **"boiled down vats of it for days" (Short 2):** Spoken: *"He boiled down vats of it for days."*
+    - **Uncovered** in table quotes. Row **2a** quote mentions Brand evaporated collected urine to sludge, but does not mention "vats" or "days".
+  - **"a white paste" (Short 2):** Spoken: *"Instead, a white paste that glowed in the dark."*
+    - **Partially covered** by Row **2b** quote (*"yielded white phosphorus, which... glowed in the dark"*); the physical description "paste" is **uncovered** in the quote.
+  - **"Cholera was killing hundreds" / "hundreds died" (Short 3):** Spoken: *"Cholera was killing hundreds in Soho, London..."*
+    - **Covered** by Row **3a** quote (*"death toll standing at 616 Sohoites"*).
+  - **"door to door" (Short 3):** Spoken: *"John Snow went door to door, counting the dead."*
+    - **Uncovered** in table quotes. Row **3c** quote confirms deaths were recorded near the pump, but the phrase "door to door" is not in the quote.
+  - **"The killer was in the water" (Short 3):** Spoken: *"The killer was in the water."*
+    - **Covered in substance** across Rows **3c** and **3d** (tracing Soho deaths to the Broad Street pump and removing the handle).
+  - **"two new elements" / "polonium" (Short 4):** Spoken: *"In 1898, she and Pierre found two new elements: polonium, then radium."*
+    - **Partially covered** by Row **4a** quote (*"discovery in the barium fraction of another new element, which they named 'radium'"*); "polonium" and the count "two new elements" are **uncovered** in table quotes.
+  - **"lose half its strength" (Short 4):** Spoken: *"Radium takes sixteen hundred years to lose half its strength."*
+    - **Covered** by Row **4e** quote (*"radium 226, which has a half life of about 1,600 years"*).
+  - **"blamed on pigeons" (Short 5):** Spoken: *"In 1964, the afterglow of the Big Bang was blamed on pigeons."*
+    - **Partially covered** across Rows **5a** (signal discovery) and **5b** (*"droppings of pigeons nesting in the antenna"*); the explicit word "blamed" is **uncovered** in quotes.
+  - **"a steady hiss" / "The hiss stayed" (Short 5):** Spoken: *"heard a steady hiss in their giant antenna"*, *"The hiss stayed."*
+    - **Uncovered** in table quotes (Rows 5a, 5b, 5c describe detecting the CMB signal and its uniform intensity, but do not use the word "hiss").
+  - **"cleaned out the droppings" (Short 5):** Spoken: *"so they cleaned out the droppings."*
+    - **Uncovered** in table quotes (Row 5b quote notes pigeon droppings in the antenna, but does not quote the cleaning action).
+  - **"a messy lab bench" (Short 6):** Spoken: *"In 1928, a messy lab bench gave us penicillin."*
+    - **Uncovered** in table quotes (Row 6a quote notes Fleming returned from vacation to an agar plate with fungal contamination, but does not characterize the bench as "messy").
+  - **"saved millions" (Short 6):** Spoken: *"Others later turned it into a medicine that has saved millions."*
+    - **Covered** by Row **6d** quote (*"has saved millions of lives"*).
+  - **"fuzzy mould" (Short 6):** Spoken: *"On one, a fuzzy mould had landed."*
+    - **Covered in substance** by Row **6a** (*"invading fungus"*) and Row **6b** (*"mould colonies"*); "fuzzy" is descriptive.
+  - **"waited ten days" (Short 7):** Spoken: *"He slipped in a sprig of mint and waited ten days."*
+    - **Covered** by Rows **7a** and **7b** quote (*"on the 17th of August 1771... on the 27th of the same month"*, exactly 10 days).
+  - **"dead air" / "The air was spent" / "remade the air" (Short 7):** Spoken: *"brought dead air back to life"*, *"The air was spent"*, *"The plant had remade the air."*
+    - **Covered in substance** by Rows **7a** and **7b** quote (*"air, in which a wax candle had burned out... another candle burned perfectly well in it"*).
+  - **"a vicar" (Short 8):** Spoken: *"Stephen Hales, a vicar, wanted to measure the push of a heartbeat."*
+    - **Covered** by Row **8a** quote (*"The Reverend Stephen Hales... at his Parsonage"*).
+  - **"a mare" (Short 8):** Spoken: *"He fixed a tall tube into a mare's artery."*
+    - **Uncovered** in the exact table quote string of Row **8b** (which starts right after the mare is introduced on the source page: *"then untying the ligature on the artery..."*).
+  - **"taller than a man" (Short 8):** Spoken: *"The blood rose taller than a man, bobbing with every beat."*
+    - **Covered** by Row **8b** quote (*"blood rose in the tube 8 feet 3 inches perpendicular"*), as 8 ft 3 in exceeds human height.
+  - **"bobbing with every beat" (Short 8):** Spoken: *"bobbing with every beat."*
+    - **Covered** by Row **8b** quote (*"rise and fall at and after each pulse 2,3, or 4 inches"*).
+
