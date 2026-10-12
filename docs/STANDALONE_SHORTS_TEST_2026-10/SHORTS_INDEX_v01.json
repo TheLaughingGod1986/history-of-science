@@ -200,8 +200,8 @@
       "ver": "v02",
       "work": "_work_shorts_v01/s4_curie_notebooks_v02",
       "air_date": "2026-10-28",
-      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v02.mp4",
-      "sha256": "3b54766d792fb68f16fb8d2e758be2e8bdd56c487b75aa0017052440d61ae91f",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v03.mp4",
+      "sha256": "4c833bbd3dc294f4cfdfb35032fc5e9d98fe5fdf76fca21d7c482802468f94e5",
       "duration_s": 22.633,
       "vo": "hos_sa_s4_curie_notebooks_vo_v01.wav",
       "pause_trim_s": 1.84,
@@ -262,7 +262,13 @@
       },
       "gate": {
         "exit": 0,
-        "output": "PASS  hos_sa_s4_curie_notebooks_v02.mp4  dur=22.63s  audio=-18.0dB  motion=16.72  dhash=7c0f8db3b70f1168\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s4_curie_notebooks_v02_open_sheet.jpg"
+        "output": "PASS  hos_sa_s4_curie_notebooks_v03.mp4  dur=22.63s  audio=-18.0dB  motion=16.72  dhash=7c0f8db3b70f1168\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s4_curie_notebooks_v03_open_sheet.jpg"
+      },
+      "audio_from": "hos_sa_s4_curie_notebooks_v02.mp4",
+      "bed_duck": {
+        "t0": 20.5,
+        "ramp_s": 0.3,
+        "db": -3.0
       }
     }
   },
