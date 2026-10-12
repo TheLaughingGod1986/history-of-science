@@ -1,0 +1,19 @@
+1
+00:00:00,120 --> 00:00:02,420
+The table had empty chairs, and the
+
+2
+00:00:02,480 --> 00:00:04,580
+missing elements turned up to fill them.
+
+3
+00:00:06,440 --> 00:00:09,380
+Twenty-six years later, in a dark lab in
+
+4
+00:00:09,440 --> 00:00:11,860
+Germany, a screen that should have stayed
+
+5
+00:00:11,940 --> 00:00:13,380
+dark began to glow

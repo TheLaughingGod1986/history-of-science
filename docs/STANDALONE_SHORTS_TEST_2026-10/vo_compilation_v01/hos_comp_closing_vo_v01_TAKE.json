@@ -1,0 +1,68 @@
+{
+  "stem": "hos_comp_closing_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0173-chief-lock"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 376,
+      "duration_s": 30.24
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 376,
+  "words": 72,
+  "duration_s": 30.24,
+  "loudness": {
+    "lufs_integrated": -20.9,
+    "mean_volume_db": -24.1,
+    "max_volume_db": -4.2
+  },
+  "sha256_mp3": "0987c6492b1758c81555e45a5a35fd7c70df6667c1753f9219292cb6892e42b5",
+  "scribe": {
+    "transcript": "So that's how we found the invisible world. A circle of blood, a tree made of air, life in a flask, a table with empty chairs, a light that sees through skin, and a tiny center inside every atom. Most of them were proved long before anyone could see them by people who refused to trust the obvious answer. So what is still invisible to us right now, waiting for its proof?",
+    "script_words": 72,
+    "scribe_words": 72,
+    "match_rate_pct": 98.61,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "centre"
+        ],
+        "scribe": [
+          "center"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 200126,
+      "limit": 209536,
+      "remaining": 9410
+    },
+    "after": {
+      "used": 200126,
+      "limit": 209536,
+      "remaining": 9410
+    },
+    "counter_delta": 0
+  },
+  "text": "So that's how we found the invisible world.\n\nA circle of blood. A tree made of air. Life in a flask. A table with empty chairs. A light that sees through skin. And a tiny centre inside every atom.\n\nMost of them were proved long before anyone could see them, by people who refused to trust the obvious answer.\n\nSo what is still invisible to us right now, waiting for its proof?",
+  "made_at": "2026-10-12T19:24:12+0100"
+}
