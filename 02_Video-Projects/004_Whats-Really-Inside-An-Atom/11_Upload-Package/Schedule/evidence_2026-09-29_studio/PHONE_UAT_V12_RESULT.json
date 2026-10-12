@@ -1,0 +1,90 @@
+{
+  "started": "2026-09-29T20:32:08",
+  "videoId": "GHZDsiH7L7A",
+  "channel": "@HistoryOfScienceYT",
+  "thumbnail": {
+    "file": "hos_004_thumb_A_atom_live_v04.jpg",
+    "chooser_err": "TimeoutError",
+    "saved": {
+      "via": "deep_top",
+      "enabled": false
+    },
+    "ok": false
+  },
+  "testAndCompare": {
+    "pairs": [
+      {
+        "title": "What's Really Inside an Atom?",
+        "thumb": "hos_004_thumb_A_atom_live_v04.jpg"
+      },
+      {
+        "title": "Why Is the Periodic Table in This Order?",
+        "thumb": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+      },
+      {
+        "title": "How Small Can You Cut Gold?",
+        "thumb": "hos_004_thumb_B_cut_gold_live_v04.jpg"
+      }
+    ],
+    "open": {
+      "x": 620,
+      "y": 219,
+      "w": 672,
+      "h": 70,
+      "t": "A/B Testing"
+    },
+    "dialog_open": false,
+    "ok": false,
+    "note": "dialog not open"
+  },
+  "aiKids": {
+    "ai_click": null,
+    "saved": {
+      "via": "deep_top",
+      "enabled": false
+    },
+    "ai_use_yes": false,
+    "kids_no": false,
+    "checked": {
+      "ai": false,
+      "kidsNo": false
+    },
+    "ok": false,
+    "snip": ""
+  },
+  "schedule": {
+    "has_15": false,
+    "has_1800": false,
+    "has_30": false,
+    "premiere_on": false,
+    "content_15": true,
+    "content_30": false,
+    "ok": false,
+    "snip": ""
+  },
+  "endScreen": {
+    "related": "AL_-qlWko_g",
+    "template": null,
+    "typed_id": false,
+    "save": "deep",
+    "has_002": false,
+    "has_subscribe": false,
+    "error": false,
+    "ok": false,
+    "after": ""
+  },
+  "pinnedComment": {
+    "ok": false,
+    "reason": "deferred_while_private_scheduled",
+    "note": "Pin on launch day 15 Oct 2026"
+  },
+  "ok": {
+    "thumbnail": false,
+    "testAndCompare": false,
+    "aiKids": false,
+    "schedule": false,
+    "endScreen": false,
+    "pinnedComment": false
+  },
+  "finished": "2026-09-29T20:34:25"
+}

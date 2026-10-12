@@ -1,0 +1,71 @@
+{
+  "related": "AL_-qlWko_g",
+  "tracks_open": [],
+  "template": "1 video, 1 subscribe",
+  "bind": {
+    "video_click": "Subscribe: History of Science\nVideo: Best for viewer",
+    "specific": null,
+    "filled": true,
+    "pick": null
+  },
+  "tracks_bound": [
+    "Subscribe: History of Science\nShow hovercard outline",
+    "Subscribe: History of Science",
+    "Subscribe: History of Science\nVideo: Best for viewer\n0:00:00",
+    "Subscribe: History of Science\nVideo: Best for viewer",
+    "Video: Best for viewer"
+  ],
+  "save": {
+    "pair": {
+      "discard": {
+        "x": 1101.65625,
+        "y": 60,
+        "w": 104.046875,
+        "h": 36,
+        "t": "Discard changes"
+      },
+      "save": {
+        "x": 1264.8515625,
+        "y": 78,
+        "w": 30.296875,
+        "h": 36,
+        "disabled": false,
+        "t": "Save"
+      }
+    },
+    "clicked": true
+  },
+  "tracks_verify": [],
+  "template2": "1 video, 1 subscribe",
+  "bind2": {
+    "video_click": "Subscribe: History of Science\nVideo: Best for viewer",
+    "specific": null,
+    "filled": true,
+    "pick": null
+  },
+  "save2": {
+    "pair": {
+      "discard": {
+        "x": 1101.65625,
+        "y": 60,
+        "w": 104.046875,
+        "h": 36,
+        "t": "Discard changes"
+      },
+      "save": {
+        "x": 1264.8515625,
+        "y": 78,
+        "w": 30.296875,
+        "h": 36,
+        "disabled": false,
+        "t": "Save"
+      }
+    },
+    "clicked": true
+  },
+  "has_subscribe": false,
+  "has_video": false,
+  "has_002": false,
+  "best_for_viewer": false,
+  "ok": false
+}

@@ -1,0 +1,46 @@
+{
+  "ai": {
+    "ok": false,
+    "kids_no": true,
+    "kids_yes_bad": false
+  },
+  "ab": {
+    "uploads": [
+      {
+        "slot": 1,
+        "via": "chooser",
+        "file": "hos_004_thumb_A_atom_live_v04.jpg"
+      },
+      {
+        "slot": 2,
+        "via": "chooser",
+        "file": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+      },
+      {
+        "slot": 3,
+        "err": "TimeoutError"
+      }
+    ],
+    "ready": false,
+    "set": "js",
+    "banner": false,
+    "saved": false,
+    "running": false,
+    "setup_pending": false
+  },
+  "end": {
+    "save": "js",
+    "has_002": true,
+    "has_subscribe": true,
+    "best_for_viewer": true,
+    "error": false
+  },
+  "schedule": {
+    "has_15": true,
+    "has_1800": false,
+    "has_30": false,
+    "premiere": true,
+    "content_15": true,
+    "content_30": false
+  }
+}

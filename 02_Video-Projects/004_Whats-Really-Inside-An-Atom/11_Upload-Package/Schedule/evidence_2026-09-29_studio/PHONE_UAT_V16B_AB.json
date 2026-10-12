@@ -1,0 +1,40 @@
+{
+  "uploads": [
+    {
+      "slot": 1,
+      "via": "chooser",
+      "file": "hos_004_thumb_A_atom_live_v04.jpg"
+    },
+    {
+      "slot": 2,
+      "via": "input",
+      "file": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+    },
+    {
+      "slot": 3,
+      "via": "input",
+      "file": "hos_004_thumb_B_cut_gold_live_v04.jpg"
+    }
+  ],
+  "vals": [
+    {
+      "aria": "Add title 1",
+      "val": "What's Really Inside an Atom?"
+    },
+    {
+      "aria": "Add title 2",
+      "val": "Why Is the Periodic Table in This Order?"
+    },
+    {
+      "aria": "Add title 3",
+      "val": ""
+    }
+  ],
+  "ready": true,
+  "set": "clicked",
+  "banner": true,
+  "saved": true,
+  "running_label": false,
+  "content_15": true,
+  "content_30": false
+}

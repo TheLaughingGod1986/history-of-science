@@ -1,0 +1,94 @@
+{
+  "version": "v02",
+  "videoId": "GHZDsiH7L7A",
+  "ben": "29 Sep 18:51 phone UAT \u2014 auto thumb, no altered, date 30 Sep",
+  "started": "2026-09-29T19:55:11",
+  "thumbnail": {
+    "file": "hos_004_thumb_A_atom_live_v04.jpg",
+    "via": "input_0",
+    "uploaded": true,
+    "save": "saved",
+    "body": "\nChanges saved\nAll changes saved.\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nWhat's Really Inside an Atom?\nA/B Testing\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your conte",
+    "ok": true
+  },
+  "altered": {
+    "wanted": "YES",
+    "show_more": null,
+    "has_altered_section": false,
+    "yes": {
+      "via": "role"
+    },
+    "save": "saved",
+    "proof": "",
+    "ok": false,
+    "note": "Altered YES not confirmed \u2014 see v02_1*.png"
+  },
+  "schedule": {
+    "wanted": "15 October 2026 18:00 Europe/London",
+    "not": "30 September 2026",
+    "open_via": "content_list",
+    "before": "",
+    "had_30": false,
+    "had_15": false,
+    "date_ok_mid": false,
+    "time": "18:00",
+    "ready_snip": "",
+    "ready_has_15": false,
+    "ready_has_30": false,
+    "confirm": null,
+    "proof_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/v02_27_visibility_panel_proof.png",
+    "proof": "\nChannel content\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n8:45\nWhat's Really Inside an Atom?\nComments disabled\nNotifications disabled\nScheduled\n15 Oct 2026\nScheduled\n3\n0\n7:06\nHow Did We Discover X-rays?\nHow Did We Discover X-rays? In a dark W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen covered a cathode tube so nothing should escape. Across the room, a cardboard screen painted to glow under light\u2026 glowed anyway. Something invisible had left the tube. He called it X \u2014 for unknown. This is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha R\u00f6ntgen\u2019s hand \u2014 bones and wedding ring \u2014 that turned a haunted glow into proof th\n\u2014\nPublic\n24 Sept 2026\nPremiered\n0\n0\n9:01\nHow Did We Discover the Periodic Table?\nA/B test running\n\u2014\nPublic\n17 Sept 2026\nPremiered\n117\n0\n6:05\nHow Did We Discover Germs?\nA/B test completed\n\u2014\nPublic\n3 Sept 2026\nPremiered\n4\n1\nRows per page:\n30\n1\u20134 of 4",
+    "has_15": true,
+    "has_30": false,
+    "has_1800": false,
+    "tooltip_15_1800": false,
+    "ok": true,
+    "note": "Date 15 Oct OK; time 18:00 not visible in proof text \u2014 check screenshot"
+  },
+  "testAndCompare": {
+    "wanted": "Title and thumbnail",
+    "pairs": [
+      [
+        "What's Really Inside an Atom?",
+        "hos_004_thumb_A_atom_live_v04.jpg"
+      ],
+      [
+        "Why Is the Periodic Table in This Order?",
+        "hos_004_thumb_C_hidden_number_live_v06.jpg"
+      ],
+      [
+        "How Small Can You Cut Gold?",
+        "hos_004_thumb_B_cut_gold_live_v04.jpg"
+      ]
+    ],
+    "dialog_open": false,
+    "ok": false,
+    "note": "A/B dialog did not open",
+    "snip": ""
+  },
+  "endScreen": {
+    "related": "AL_-qlWko_g",
+    "after": "",
+    "processing_error": false,
+    "ok": false,
+    "note": "End screen not confirmed Specific 002 \u2014 see v02_4*.png"
+  },
+  "pinnedComment": {
+    "textFile": "Pinned-Comments/atom_long_pinned-comment_v01.txt",
+    "chars": 75,
+    "can_comment": false,
+    "watch_private": false,
+    "ok": false,
+    "reason": "watch_page_not_commentable_while_scheduled_or_private",
+    "note": "Pin on launch day 15 Oct 2026."
+  },
+  "finished": "2026-09-29T19:57:11",
+  "ok": {
+    "thumbnail": true,
+    "altered": false,
+    "schedule": true,
+    "testAndCompare": false,
+    "endScreen": false,
+    "pinnedComment": false
+  }
+}

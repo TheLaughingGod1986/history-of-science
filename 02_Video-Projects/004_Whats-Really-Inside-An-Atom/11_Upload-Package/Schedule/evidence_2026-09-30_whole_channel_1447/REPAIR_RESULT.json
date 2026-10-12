@@ -1,0 +1,469 @@
+{
+  "at": "2026-09-30T17:16:53+01:00",
+  "results": [
+    {
+      "id": "clV6E10NLPw",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.53125
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "CUu8k38iAMc",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.53125
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "TbMMJSRKC3U",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.53125
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "29bpGAI0wb8",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.53125
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "GHZDsiH7L7A",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.53125
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "playlist": {
+        "btn": {
+          "x": 442,
+          "y": 449,
+          "t": "Select"
+        },
+        "check": null
+      },
+      "playlist_ok": false,
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "zI_eD3vFWmE",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "xvanpsLeADE",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "oowAOWTBoq0",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "frP_YrNShsU",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.53125
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "playlist": {
+        "btn": null,
+        "check": null
+      },
+      "playlist_ok": false,
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "LanTHJckYx8",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "nba0-f7PPeU",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "CnHwX1L9XHg",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "nFQRWmpulTQ",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "uU12JA5rMWg",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "AL_-qlWko_g",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.53125
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "playlist": {
+        "btn": null,
+        "check": null
+      },
+      "playlist_ok": false,
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "kzDiVk4603s",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 390.53125
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "iqToagXnjX0",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.359375
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    },
+    {
+      "id": "_C92tIJCk8A",
+      "before": {
+        "uk": null,
+        "uae": true
+      },
+      "pick": {
+        "trig": {
+          "x": 559.765625,
+          "y": 366.53125
+        },
+        "opts": [],
+        "picked": null
+      },
+      "would_not_save": "academic_uk_pick_failed",
+      "playlist": {
+        "btn": null,
+        "check": null
+      },
+      "playlist_ok": false,
+      "after": {
+        "uk": null,
+        "uae": false
+      }
+    }
+  ]
+}

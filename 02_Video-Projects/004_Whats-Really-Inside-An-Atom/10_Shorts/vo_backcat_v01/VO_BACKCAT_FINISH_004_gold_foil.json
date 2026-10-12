@@ -1,0 +1,12 @@
+{
+  "id": "004_gold_foil",
+  "take": "ae",
+  "source": "hos_004_backcat_gold_foil_vo_v01ae.wav",
+  "source_s": 25.787,
+  "finished": "hos_004_backcat_gold_foil_vo_v01_fin.wav",
+  "finished_s": 25.497,
+  "gain_db": 2.8,
+  "peak_db": -2.0,
+  "sha256": "9d0a47114d4ed34c08717f781e64d8d09d7529c49fb5a557b942cd31bccc2b40",
+  "rule": "pauses > 0.6 s \u2192 0.6 s, lead 0.05 s, tail 0.25 s, peak \u22122 dB, no atempo"
+}

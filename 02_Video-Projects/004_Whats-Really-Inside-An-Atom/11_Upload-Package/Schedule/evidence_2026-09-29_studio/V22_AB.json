@@ -1,0 +1,27 @@
+{
+  "wanted_pairs": [
+    {
+      "title": "What's Really Inside an Atom?",
+      "thumb": "hos_004_thumb_A_atom_live_v04.jpg"
+    },
+    {
+      "title": "Why Is the Periodic Table in This Order?",
+      "thumb": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+    },
+    {
+      "title": "How Small Can You Cut Gold?",
+      "thumb": "hos_004_thumb_B_cut_gold_live_v04.jpg"
+    }
+  ],
+  "ineligible": true,
+  "titles_listed": {
+    "t1": true,
+    "t2": true,
+    "t3": false
+  },
+  "tip_snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nA/B testing titles\nIneligible\nWhat's Really Inside an Atom?\nWhy Is the Periodic Table in This Order?\nA/B Testing\nEdit title\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their",
+  "dialog_has_title_and_thumb": false,
+  "dialog_ineligible": true,
+  "ok": false,
+  "note": "Studio shows A/B Testing Ineligible on this scheduled/private video. Title pairs partially listed; cannot arm Title+thumbnail\u00d73 until eligible (often after public/premiere)."
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "t": "home Home submit",
+    "tag": "BUTTON",
+    "y": 18,
+    "w": 40,
+    "type": "submit"
+  },
+  {
+    "t": "Editable text text",
+    "tag": "INPUT",
+    "y": 25,
+    "w": 139,
+    "type": "text"
+  },
+  {
+    "t": "more_vert More options for the project submit",
+    "tag": "BUTTON",
+    "y": 18,
+    "w": 40,
+    "type": "submit"
+  },
+  {
+    "t": "search Search submit",
+    "tag": "BUTTON",
+    "y": 21,
+    "w": 34,
+    "type": "submit"
+  },
+  {
+    "t": "Search text",
+    "tag": "INPUT",
+    "y": 25,
+    "w": 382,
+    "type": "text"
+  },
+  {
+    "t": "filter_list Filtering and sorting options submit",
+    "tag": "BUTTON",
+    "y": 18,
+    "w": 42,
+    "type": "submit"
+  },
+  {
+    "t": "add Add media menu submit",
+    "tag": "BUTTON",
+    "y": 18,
+    "w": 40,
+    "type": "submit"
+  },
+  {
+    "t": "help Product help submit",
+    "tag": "BUTTON",
+    "y": 18,
+    "w": 40,
+    "type": "submit"
+  },
+  {
+    "t": "settings_2 Tile grid settings submit",
+    "tag": "BUTTON",
+    "y": 18,
+    "w": 40,
+    "type": "submit"
+  },
+  {
+    "t": "more_vert More options submit",
+    "tag": "BUTTON",
+    "y": 18,
+    "w": 40,
+    "type": "submit"
+  },
+  {
+    "t": "close Dismiss credit banner submit",
+    "tag": "BUTTON",
+    "y": 89,
+    "w": 40,
+    "type": "submit"
+  },
+  {
+    "t": "Favourite button",
+    "tag": "BUTTON",
+    "y": 166,
+    "w": 28,
+    "type": "button"
+  },
+  {
+    "t": "More options button",
+    "tag": "BUTTON",
+    "y": 166,
+    "w": 28,
+    "type": "button"
+  },
+  {
+    "t": "Favourite button",
+    "tag": "BUTTON",
+    "y": 166,
+    "w": 28,
+    "type": "button"
+  },
+  {
+    "t": "More options button",
+    "tag": "BUTTON",
+    "y": 166,
+    "w": 28,
+    "type": "button"
+  },
+  {
+    "t": "Favourite button",
+    "tag": "BUTTON",
+    "y": 166,
+    "w": 28,
+    "type": "button"
+  },
+  {
+    "t": "More options button",
+    "tag": "BUTTON",
+    "y": 166,
+    "w": 28,
+    "type": "button"
+  },
+  {
+    "t": "close Add ingredients to the prompt box button",
+    "tag": "BUTTON",
+    "y": 832,
+    "w": 32,
+    "type": "button"
+  },
+  {
+    "t": "Agent  submit",
+    "tag": "BUTTON",
+    "y": 834,
+    "w": 63,
+    "type": "submit"
+  },
+  {
+    "t": "\ud83c\udf4c Nano Banana 2 crop_9_16 x1 Settings trigger submit",
+    "tag": "BUTTON",
+    "y": 832,
+    "w": 157,
+    "type": "submit"
+  },
+  {
+    "t": "arrow_forward Start generation submit",
+    "tag": "BUTTON",
+    "y": 832,
+    "w": 32,
+    "type": "submit"
+  },
+  {
+    "t": "upload Upload media  button",
+    "tag": "BUTTON",
+    "y": 721,
+    "w": 120,
+    "type": "button"
+  },
+  {
+    "t": "Search assets text",
+    "tag": "INPUT",
+    "y": 206,
+    "w": 456,
+    "type": "text"
+  },
+  {
+    "t": "hos-explorer-reference-v01.jpg Image  button",
+    "tag": "BUTTON",
+    "y": 240,
+    "w": 240,
+    "type": "button"
+  },
+  {
+    "t": "hos_002_s05_other_table_cover_live_v02.jpg Image  button",
+    "tag": "BUTTON",
+    "y": 288,
+    "w": 240,
+    "type": "button"
+  },
+  {
+    "t": "hos_002_s04_tellurium_cover_live_v02.jpg Image  button",
+    "tag": "BUTTON",
+    "y": 336,
+    "w": 240,
+    "type": "button"
+  },
+  {
+    "t": "Add to prompt  button",
+    "tag": "BUTTON",
+    "y": 713,
+    "w": 368,
+    "type": "button"
+  }
+]

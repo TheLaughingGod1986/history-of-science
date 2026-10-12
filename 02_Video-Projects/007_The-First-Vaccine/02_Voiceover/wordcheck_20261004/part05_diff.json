@@ -1,0 +1,36 @@
+{
+  "part": "05",
+  "slug": "the_word_that_saved_millions",
+  "extract_words_norm": 249,
+  "heard_words_norm": 249,
+  "extract_raw_words": 257,
+  "missing": 0,
+  "added": 0,
+  "changed_ops": 0,
+  "soft_spelling": 4,
+  "verdict": "PASS",
+  "notes": [
+    {
+      "op": "soft_replace",
+      "script": "honour",
+      "heard": "honor"
+    },
+    {
+      "op": "soft_replace",
+      "script": "travelled",
+      "heard": "traveled"
+    },
+    {
+      "op": "soft_replace",
+      "script": "recognise",
+      "heard": "recognize"
+    },
+    {
+      "op": "soft_replace",
+      "script": "rumour",
+      "heard": "rumor"
+    }
+  ],
+  "script_norm_preview": "a lifetime later the french scientist louis pasteur made new treatments that trained the body to fight other diseases in honour of jenner's cowpox he proposed calling them all by the same name vaccines so every vaccine for every disease...",
+  "heard_norm_preview": "a lifetime later the french scientist louis pasteur made new treatments that trained the body to fight other diseases in honor of jenner's cowpox he proposed calling them all by the same name vaccines so every vaccine for every disease..."
+}

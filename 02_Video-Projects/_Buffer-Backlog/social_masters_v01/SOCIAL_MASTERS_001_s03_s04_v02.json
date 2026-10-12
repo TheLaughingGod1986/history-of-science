@@ -1,0 +1,27 @@
+{
+  "ver": "001_s03_s04_social_v02",
+  "clips": [
+    {
+      "src": "hos_001_s03_vector_punch_v02.mp4",
+      "social": "hos_001_s03_vector_punch_social_v02.mp4",
+      "sha256": "52281a2cc5f48c9a8e3fe2794dfd34f6cc2bab378947d3d84db3749da2623e84",
+      "duration_s": 17.0,
+      "cut_at_s": 17.0,
+      "freeze_s": 0.0,
+      "mode": "hard_cut_uat_trim",
+      "last_0p5_mean_vol": "-24.4 dB",
+      "note": "end after impossible to sneer away; no hold; no CTA flash"
+    },
+    {
+      "src": "hos_001_s04_flask_punch_v02.mp4",
+      "social": "hos_001_s04_flask_punch_social_v02.mp4",
+      "sha256": "f27b62772bdc0e3e6c8c8947b7d962df48bf67955e8a1bf53f8290e703f26e3a",
+      "duration_s": 19.708,
+      "cut_at_s": 19.7,
+      "freeze_s": 0.0,
+      "mode": "hard_cut_uat_trim",
+      "last_0p5_mean_vol": "-26.5 dB",
+      "note": "end after cloudiness.; drop spoken Watch. lead-in; no hold"
+    }
+  ]
+}

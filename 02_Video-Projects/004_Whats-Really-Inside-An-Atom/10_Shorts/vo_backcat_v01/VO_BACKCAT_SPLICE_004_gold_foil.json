@@ -1,0 +1,11 @@
+{
+  "id": "004_gold_foil",
+  "take": "ae",
+  "head_take": "a",
+  "tail_take": "e",
+  "at_word": 7,
+  "cut_head_s": 3.333,
+  "cut_tail_s": 3.466,
+  "duration_s": 25.787,
+  "sha256": "c20f95acc3e49f35b5a6bf1f4b4076c9948d854b76f05fb2f22888a3c848f816"
+}

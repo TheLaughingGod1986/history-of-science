@@ -1,0 +1,33 @@
+{
+  "key": "s02",
+  "try": 1,
+  "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/hos_004_s02_every_eighth_cover_live_v06.jpg",
+  "expect": [
+    "EVERY",
+    "EIGHTH",
+    "ELEMENT?"
+  ],
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/_qa_mint/s02_try1_decoded.png",
+  "account": null,
+  "credits_before": null,
+  "credits_after": null,
+  "credits_used": null,
+  "attached_refs": 3,
+  "qa": "KEEP",
+  "qa_reason": "768x1376 ratio=0.558 look=painted; cream=0.102 gold=0.111 teal=0.056 expect=EVERY/EIGHTH/ELEMENT?; s02 silver=0.000 ok",
+  "qa_meta": {
+    "w": 768,
+    "h": 1376,
+    "ratio": 0.5581,
+    "avg_rgb": [
+      90,
+      71,
+      43
+    ],
+    "look_guess": "painted",
+    "spell_heuristic": "cream=0.102 gold=0.111 teal=0.056 expect=EVERY/EIGHTH/ELEMENT?",
+    "scene_heuristic": "s02 silver=0.000 ok"
+  },
+  "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+  "pulled": "2026-09-30T13:11:07.501914+00:00"
+}

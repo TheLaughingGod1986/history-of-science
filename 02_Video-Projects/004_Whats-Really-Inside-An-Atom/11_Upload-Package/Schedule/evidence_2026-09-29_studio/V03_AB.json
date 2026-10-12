@@ -1,0 +1,13 @@
+{
+  "wanted": "Title and thumbnail",
+  "open": {
+    "x": 620,
+    "y": 219,
+    "w": 672,
+    "h": 70,
+    "t": "A/B Testing"
+  },
+  "dialog_open": false,
+  "ok": false,
+  "note": "A/B dialog still did not open"
+}

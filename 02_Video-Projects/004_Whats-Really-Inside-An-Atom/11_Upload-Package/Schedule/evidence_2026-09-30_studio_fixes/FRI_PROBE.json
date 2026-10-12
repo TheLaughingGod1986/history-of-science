@@ -1,0 +1,208 @@
+{
+  "labels": [
+    {
+      "Paid promotion": true
+    },
+    {
+      "Tags": true
+    },
+    {
+      "Featured places": true
+    },
+    {
+      "automatic places": true
+    },
+    {
+      "Title and description language": true
+    },
+    {
+      "Video language": true
+    },
+    {
+      "Education": true
+    },
+    {
+      "Academic": true
+    },
+    {
+      "GCSE": false
+    },
+    {
+      "Level": true
+    },
+    {
+      "Exam": true
+    },
+    {
+      "concept overview": false
+    },
+    {
+      "United Kingdom": true
+    },
+    {
+      "Altered": false
+    },
+    {
+      "Audience": true
+    }
+  ],
+  "checks": [
+    {
+      "lab": "Allow automatic chapters",
+      "aria": "true",
+      "checked": true
+    },
+    {
+      "lab": "Allow automatic places",
+      "aria": "true",
+      "checked": true
+    },
+    {
+      "lab": "Allow automatic concepts",
+      "aria": "true",
+      "checked": true
+    }
+  ],
+  "chips": [
+    "what's really inside an atom",
+    "how small can you cut gold",
+    "every eighth element",
+    "periodic table",
+    "history of science",
+    "atom",
+    "newlands octaves",
+    "davy medal",
+    "x-ray wedding ring",
+    "bertha r\u00f6ntgen",
+    "dalton",
+    "mendeleev",
+    "atomic number"
+  ],
+  "selects": [
+    {
+      "t": "Select",
+      "a": "Select playlists"
+    },
+    {
+      "t": "Video language English (United Kingdom)",
+      "a": ""
+    },
+    {
+      "t": "Video language English (United Kingdom)",
+      "a": ""
+    },
+    {
+      "t": "Title and description language Select",
+      "a": ""
+    },
+    {
+      "t": "Title and description language Select",
+      "a": ""
+    },
+    {
+      "t": "Recording date None",
+      "a": ""
+    },
+    {
+      "t": "Video location",
+      "a": ""
+    },
+    {
+      "t": "Licence Standard YouTube licence",
+      "a": ""
+    },
+    {
+      "t": "Licence Standard YouTube licence",
+      "a": ""
+    },
+    {
+      "t": "Education",
+      "a": ""
+    },
+    {
+      "t": "Education",
+      "a": ""
+    },
+    {
+      "t": "Type None",
+      "a": ""
+    },
+    {
+      "t": "Type None",
+      "a": ""
+    },
+    {
+      "t": "Academic system Other",
+      "a": ""
+    },
+    {
+      "t": "Academic system Other",
+      "a": ""
+    },
+    {
+      "t": "Level None",
+      "a": ""
+    },
+    {
+      "t": "Level None",
+      "a": ""
+    },
+    {
+      "t": "Exam, course or standard",
+      "a": ""
+    },
+    {
+      "t": "Comments On",
+      "a": ""
+    },
+    {
+      "t": "Moderation Basic",
+      "a": ""
+    },
+    {
+      "t": "Who can comment Anyone",
+      "a": ""
+    },
+    {
+      "t": "",
+      "a": ""
+    },
+    {
+      "t": "Sort by Top",
+      "a": ""
+    },
+    {
+      "t": "Sort by Top",
+      "a": ""
+    },
+    {
+      "t": "Related video None",
+      "a": ""
+    }
+  ],
+  "edu_lines": [
+    "Paid promotion",
+    "You're required to tell us if your video has a paid promotion, like product placement or sponsorships, and we'll let viewers know. Learn more",
+    "Yes, my video includes paid promotion",
+    "No, my video doesn't include paid promotion",
+    "To follow YouTube's policy, you're required to tell us about your use of AI. This includes realistic sounds or visuals made or edited with AI. View examples",
+    "Featured places",
+    "Help viewers explore key places in your video. These are public places like restaurants and shops \u2013 we don't display your current location or other private info. Learn more",
+    "Allow automatic places",
+    "Automatic concepts",
+    "Help viewers learn more about unfamiliar terms without leaving the video. Concepts mentioned in your video may automatically appear in the description.",
+    "Allow automatic concepts",
+    "Tags",
+    "Tags can be useful if content in your video is commonly misspelt. Otherwise, tags play a minimal role in helping viewers to find your video. Learn more",
+    "Language and captions certification",
+    "Select your video's language and, if needed, a caption certification",
+    "Video language",
+    "Title and description language",
+    "To manage other languages, go to languages.",
+    "Education",
+    "Academic system",
+    "Level",
+    "Exam, course or standard"
+  ],
+  "title_snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n0:25\nYour video\nWhat happens if you keep cutting gold in half?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nWhat happens if you keep cutting gold in half?\nDescription\nHow small can you cut gold?\n\nKeep cutting a gold coin and the pieces still behave like gold \u2014 until they don't. That is the atom.\n\nFull film:\nWhat's Really Inside an Atom?\nht"
+}

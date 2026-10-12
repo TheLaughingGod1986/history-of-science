@@ -1,0 +1,44 @@
+{
+  "parentTitle": "The Tied Arm That Proved Your Blood Circulates",
+  "version": "v06",
+  "status": "Thumb C v04: TIGHT\u2248BAND, line spacing scaled +25% from v02 (fixes TIE/IT overlap). Review only \u2014 no Studio until KEEP.",
+  "composer": "08_Thumbnail/_land_hos_005_thumb_C_v04.py",
+  "factLock": "Tight linen band on the upper arm; red (artery) only on the shoulder side, a wide glowing artery under the skin, stopping at the band; no red below it; forearm and hand paler below the band (De Motu Cordis ch. 11, FACT_NOTES_v01 row 26).",
+  "thumbs": [
+    {
+      "id": "A",
+      "hook": "ONE TIGHT BAND",
+      "jpg": "Selected/hos_005_thumb_A_one_tight_band_v02.jpg",
+      "sha256": "356f9ea5a61390d90496d0cf83262307112be961290ba4c308ca795668e83804"
+    },
+    {
+      "id": "B",
+      "hook": "IT GOES ROUND",
+      "jpg": "Selected/hos_005_thumb_B_it_goes_round_v02.jpg",
+      "sha256": "17672532bf5d6f5f9f62205e75c5dc2b744b93d40139df3d3f0204872deb9c6a"
+    },
+    {
+      "id": "C",
+      "hook": "TIE IT TIGHT",
+      "punch": "TIGHT",
+      "jpg": "Selected/hos_005_thumb_C_tie_it_tight_v04.jpg",
+      "sha256": "72f416bf1913c226b7630dd6d5cc9d4f1af5d56056843a8b49d38c2443962ce6",
+      "method": "reletter_A_painting_GeorgiaBold_no_image_model_v04_scaled_spacing_A_ornaments",
+      "note": "v03 overlapped TIE/IT (size up, spacing not). v04 scales v02 gaps \u00d71.25 + TIGHT\u2248BAND + A ornaments. No Studio until Claude KEEP.",
+      "measures": {
+        "band_full_px": 351,
+        "tight_full_px": 86,
+        "band_phone168_px": 46,
+        "tight_phone168_px": 12,
+        "ratio_full": 0.245
+      }
+    }
+  ],
+  "sources": [
+    "hos_005_thumb_A_one_tight_band_v02.jpg"
+  ],
+  "upload": false,
+  "studio": false,
+  "studioTestAndCompare": false,
+  "studioTestAndCompareVideoId": "wwcjcFfC-5M"
+}

@@ -1,0 +1,68 @@
+{
+  "file": "vo/part05_the_word_that_saved_millions_v01b.mp3",
+  "part": 5,
+  "fails": [
+    "replace at ~0:41.38: script 'a disease that had killed of millions' / heard 'a disease that have killed of millions' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "replace at ~0:08.16: script 'other diseases in honour of jenner's cowpox' / heard 'other diseases in honor of jenner's cowpox' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:25.54: script 'century health workers travelled to every country' / heard 'century health workers traveled to every country' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:01.48: script 'your body to recognise the real thing' / heard 'your body to recognize the real thing' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:24.96: script 'turned a farmyard rumour into proof and' / heard 'turned a farmyard rumor into proof and' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 102.56,
+  "duration": "1:42.56",
+  "mean_db": -21.3,
+  "peak_db": -1.9,
+  "pauses_over_1s": [
+    [
+      49.3,
+      1.09
+    ],
+    [
+      92.15,
+      1.25
+    ]
+  ],
+  "script_words": 250,
+  "heard_words": 250,
+  "wpm": 150,
+  "word_diffs": [
+    {
+      "at": "0:08.16",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "other diseases in honour of jenner's cowpox",
+      "heard": "other diseases in honor of jenner's cowpox"
+    },
+    {
+      "at": "0:25.54",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "century health workers travelled to every country",
+      "heard": "century health workers traveled to every country"
+    },
+    {
+      "at": "0:41.38",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "a disease that had killed of millions",
+      "heard": "a disease that have killed of millions"
+    },
+    {
+      "at": "1:01.48",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "your body to recognise the real thing",
+      "heard": "your body to recognize the real thing"
+    },
+    {
+      "at": "1:24.96",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "turned a farmyard rumour into proof and",
+      "heard": "turned a farmyard rumor into proof and"
+    }
+  ],
+  "verdict": "FAIL"
+}

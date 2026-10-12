@@ -1,0 +1,23 @@
+{
+  "key": "s01",
+  "try": 1,
+  "out": null,
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v02/stills/_qa_mint/s01_try1_decoded.png",
+  "bytes": null,
+  "account": "benoats@googlemail.com",
+  "credits_before": 62,
+  "credits_after": null,
+  "credits_used": null,
+  "credits_session_start": 62,
+  "attached_refs": 0,
+  "qa": "FAIL",
+  "qa_reason": "too small 1280x720",
+  "qa_meta": {
+    "w": 1280,
+    "h": 720,
+    "ratio": 1.7778
+  },
+  "pill": "\ud83c\udf4c Nano Banana 2 crop_portrait",
+  "url": "https://flow.google.com/project/30a34afb-8d9c-4eac-83ba-012d97f6b1b5/edit/8a752a9b-a7ed-4f00-9bfc-cbb34f4584ab",
+  "pulled": "2026-09-30T10:24:07.617589+00:00"
+}

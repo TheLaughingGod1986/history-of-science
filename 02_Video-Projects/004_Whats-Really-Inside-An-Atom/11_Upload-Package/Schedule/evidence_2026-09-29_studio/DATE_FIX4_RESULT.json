@@ -1,0 +1,36 @@
+{
+  "date_nodes": [
+    {
+      "t": "30 Sept 2026 Scheduled",
+      "x": 1318.5625,
+      "y": 342.5,
+      "w": 124,
+      "h": 83,
+      "tag": "DIV"
+    }
+  ],
+  "clicked": {
+    "t": "30 Sept 2026 Scheduled",
+    "x": 1318.5625,
+    "y": 342.5,
+    "w": 124,
+    "h": 83,
+    "tag": "DIV"
+  },
+  "snip": "Skip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n8:45\nWhat's Really Inside an Atom?\n\u2014\nScheduled\n30 Sept 2026\nScheduled\n1\n0\n7:06\nHow Did We Discover X-rays?\nHow Did We Discover X-rays? In a dark W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen covered a cathode tube so nothing should escape. Across the room, a cardboard screen painted to glow under light\u2026 glowed anyway. Something invisible had left the tube. He called it X \u2014 for unknown. This is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha R\u00f6ntgen\u2019s hand \u2014 bones and wedding ring \u2014 that turned a haunted glow into proof th\n\u2014\nPublic\n24 Sept 2026\nPremiered\n0\n0\n9:01\nHow Did We Discover the Periodic Table?\nA/B test running\n\u2014\nPublic\n17 Sept 2026\n",
+  "inputs": [
+    {
+      "aria": "Search across your channel",
+      "val": ""
+    },
+    {
+      "aria": "Filter",
+      "val": ""
+    }
+  ],
+  "focus": null,
+  "has15": false,
+  "has30": false,
+  "match": null,
+  "ok": false
+}

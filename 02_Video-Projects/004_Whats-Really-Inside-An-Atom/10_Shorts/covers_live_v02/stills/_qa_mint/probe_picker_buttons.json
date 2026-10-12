@@ -1,0 +1,20 @@
+[
+  {
+    "t": "add Add media menu",
+    "tag": "BUTTON",
+    "y": 18,
+    "w": 40
+  },
+  {
+    "t": "add Add ingredients to the prompt box button",
+    "tag": "BUTTON",
+    "y": 832,
+    "w": 32
+  },
+  {
+    "t": "arrow_forward Start generation submit",
+    "tag": "BUTTON",
+    "y": 832,
+    "w": 32
+  }
+]

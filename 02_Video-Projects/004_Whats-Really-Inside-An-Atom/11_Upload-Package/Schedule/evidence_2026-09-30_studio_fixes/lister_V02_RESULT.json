@@ -1,0 +1,631 @@
+{
+  "key": "lister",
+  "id": "clV6E10NLPw",
+  "steps": [
+    {
+      "label": "lang_en_uk",
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "chip": "Visibility Scheduled",
+      "not_kids": true,
+      "kids_no_checked": {
+        "no": false,
+        "yes": false
+      }
+    },
+    {
+      "label": "lang_en_uk_retry",
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "chip": "Visibility Scheduled",
+      "not_kids": true,
+      "kids_no_checked": {
+        "no": false,
+        "yes": false
+      }
+    },
+    {
+      "label": "academic_uk",
+      "save": {
+        "enabled": false,
+        "clicked": false
+      },
+      "chip": "Visibility Scheduled",
+      "not_kids": true,
+      "kids_no_checked": {
+        "no": false,
+        "yes": false
+      }
+    },
+    {
+      "label": "type_concept",
+      "save": {
+        "enabled": false,
+        "clicked": false
+      },
+      "chip": "Visibility Scheduled",
+      "not_kids": true,
+      "kids_no_checked": {
+        "no": false,
+        "yes": false
+      }
+    },
+    {
+      "label": "level_secondary",
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "chip": "Visibility Scheduled",
+      "not_kids": true,
+      "kids_no_checked": {
+        "no": false,
+        "yes": false
+      }
+    },
+    {
+      "label": "exam",
+      "save": {
+        "enabled": false,
+        "clicked": false
+      },
+      "chip": "Visibility Scheduled",
+      "not_kids": true,
+      "kids_no_checked": {
+        "no": false,
+        "yes": false
+      }
+    }
+  ],
+  "started": "2026-09-30T15:53:22+01:00",
+  "before_selects": [
+    "Video language English (United Kingdom)",
+    "Title and description language Select",
+    "Education",
+    "Type Concept overview",
+    "Academic system United Arab Emirates",
+    "Level None",
+    "Exam, course or standard"
+  ],
+  "before_tags": [
+    "germs",
+    "antiseptic",
+    "lister",
+    "carbolic",
+    "surgery",
+    "germ theory",
+    "history of science",
+    "science",
+    "shorts",
+    "joseph lister"
+  ],
+  "before_av": {
+    "chip": "Visibility Scheduled",
+    "not_kids": true,
+    "kids_no_checked": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "strip_found": [],
+  "lang": {
+    "label": "Title and description language",
+    "want": "English (United Kingdom)",
+    "trig": {
+      "lab": {
+        "x": 284,
+        "y": 553.53125,
+        "w": 162.328125,
+        "h": 16,
+        "t": "Title and description language"
+      },
+      "best": {
+        "x": 477.2,
+        "y": 573.53125,
+        "t": "Title and description language Select",
+        "score": 24
+      }
+    },
+    "pick": {
+      "picked": {
+        "t": "English (United Kingdom)",
+        "x": 422,
+        "y": 508.53125,
+        "w": 276,
+        "h": 22
+      },
+      "n_opts": 80,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save"
+      ]
+    }
+  },
+  "lang_retry": {
+    "label": "Title and description language",
+    "want": "English (United Kingdom)",
+    "trig": {
+      "lab": {
+        "x": 284,
+        "y": 553.53125,
+        "w": 162.328125,
+        "h": 16,
+        "t": "Title and description language"
+      },
+      "best": {
+        "x": 477.2,
+        "y": 573.53125,
+        "t": "Title and description language Bambara",
+        "score": 24
+      }
+    },
+    "pick": {
+      "picked": {
+        "t": "English (United Kingdom)",
+        "x": 422,
+        "y": 508.53125,
+        "w": 276,
+        "h": 22
+      },
+      "n_opts": 52,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save"
+      ]
+    }
+  },
+  "academic": {
+    "label": "Academic system",
+    "want": "United Kingdom",
+    "trig": {
+      "lab": {
+        "x": 284,
+        "y": 557.53125,
+        "w": 95.765625,
+        "h": 16,
+        "t": "Academic system"
+      },
+      "best": {
+        "x": 504,
+        "y": 577.53125,
+        "t": "Academic system United Arab Emirates",
+        "score": 24
+      }
+    },
+    "pick": {
+      "picked": null,
+      "n_opts": 47,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save",
+        "Undo changes",
+        "Allow only audio remixing",
+        "Category",
+        "Add your video to a category so that viewers can find it more easily",
+        "Education",
+        "Education",
+        "Education",
+        "Type Concept overview"
+      ]
+    },
+    "pick2": {
+      "picked": null,
+      "n_opts": 47,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save",
+        "Undo changes",
+        "Allow only audio remixing",
+        "Category",
+        "Add your video to a category so that viewers can find it more easily",
+        "Education",
+        "Education",
+        "Education",
+        "Type Concept overview"
+      ]
+    }
+  },
+  "academic_retry": {
+    "label": "Academic system",
+    "want": "United Kingdom",
+    "trig": {
+      "lab": {
+        "x": 284,
+        "y": 557.53125,
+        "w": 95.765625,
+        "h": 16,
+        "t": "Academic system"
+      },
+      "best": {
+        "x": 504,
+        "y": 577.53125,
+        "t": "Academic system United Arab Emirates",
+        "score": 24
+      }
+    },
+    "pick": {
+      "picked": null,
+      "n_opts": 47,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save",
+        "Undo changes",
+        "Allow only audio remixing",
+        "Category",
+        "Add your video to a category so that viewers can find it more easily",
+        "Education",
+        "Education",
+        "Education",
+        "Type Concept overview"
+      ]
+    },
+    "pick2": {
+      "picked": null,
+      "n_opts": 47,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save",
+        "Undo changes",
+        "Allow only audio remixing",
+        "Category",
+        "Add your video to a category so that viewers can find it more easily",
+        "Education",
+        "Education",
+        "Education",
+        "Type Concept overview"
+      ]
+    }
+  },
+  "type": {
+    "label": "Type",
+    "want": "Concept overview",
+    "trig": null,
+    "error": "no_trigger"
+  },
+  "level": {
+    "label": "Level",
+    "want": "Secondary school",
+    "trig": {
+      "lab": {
+        "x": 284,
+        "y": 629.53125,
+        "w": 28.203125,
+        "h": 16,
+        "t": "Level"
+      },
+      "best": {
+        "x": 504,
+        "y": 649.53125,
+        "t": "Level None",
+        "score": 24
+      }
+    },
+    "pick": {
+      "picked": {
+        "t": "Secondary school",
+        "x": 620,
+        "y": 612,
+        "w": 696,
+        "h": 32
+      },
+      "n_opts": 72,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save"
+      ]
+    }
+  },
+  "exam": {
+    "label": "Exam, course or standard",
+    "want": "GCSE Biology",
+    "trig": {
+      "lab": {
+        "x": 284,
+        "y": 701.53125,
+        "w": 136.484375,
+        "h": 16,
+        "t": "Exam, course or standard"
+      },
+      "best": {
+        "x": 504,
+        "y": 721.53125,
+        "t": "Exam, course or standard",
+        "score": 24
+      }
+    },
+    "pick": {
+      "picked": null,
+      "n_opts": 48,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save",
+        "Undo changes",
+        "Allow only audio remixing",
+        "Category",
+        "Add your video to a category so that viewers can find it more easily",
+        "Education",
+        "Education",
+        "Education",
+        "Type Concept overview"
+      ]
+    },
+    "pick2": {
+      "picked": null,
+      "n_opts": 49,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save",
+        "Undo changes",
+        "Allow only audio remixing",
+        "Category",
+        "Add your video to a category so that viewers can find it more easily",
+        "Education",
+        "Education",
+        "Education",
+        "Type Concept overview"
+      ]
+    }
+  },
+  "exam_pick3": {
+    "picked": null,
+    "n_opts": 48,
+    "sample": [
+      "Channel content",
+      "Your video The spray that stopped surgery killing patients",
+      "Your video",
+      "The spray that stopped surgery killing patients",
+      "Analytics",
+      "Comments",
+      "Subtitles",
+      "Clips and Shorts",
+      "Settings",
+      "Video details Undo changes Save",
+      "Video details",
+      "Undo changes Save",
+      "Undo changes",
+      "Allow only audio remixing",
+      "Category",
+      "Add your video to a category so that viewers can find it more easily",
+      "Education",
+      "Education",
+      "Education",
+      "Type Concept overview"
+    ]
+  },
+  "exam_retry": {
+    "label": "Exam, course or standard",
+    "want": "GCSE Biology",
+    "trig": {
+      "lab": {
+        "x": 284,
+        "y": 701.53125,
+        "w": 136.484375,
+        "h": 16,
+        "t": "Exam, course or standard"
+      },
+      "best": {
+        "x": 504,
+        "y": 721.53125,
+        "t": "Exam, course or standard",
+        "score": 24
+      }
+    },
+    "pick": {
+      "picked": null,
+      "n_opts": 48,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save",
+        "Undo changes",
+        "Allow only audio remixing",
+        "Category",
+        "Add your video to a category so that viewers can find it more easily",
+        "Education",
+        "Education",
+        "Education",
+        "Type Concept overview"
+      ]
+    },
+    "pick2": {
+      "picked": null,
+      "n_opts": 49,
+      "sample": [
+        "Channel content",
+        "Your video The spray that stopped surgery killing patients",
+        "Your video",
+        "The spray that stopped surgery killing patients",
+        "Analytics",
+        "Comments",
+        "Subtitles",
+        "Clips and Shorts",
+        "Settings",
+        "Video details Undo changes Save",
+        "Video details",
+        "Undo changes Save",
+        "Undo changes",
+        "Allow only audio remixing",
+        "Category",
+        "Add your video to a category so that viewers can find it more easily",
+        "Education",
+        "Education",
+        "Education",
+        "Type Concept overview"
+      ]
+    }
+  },
+  "final_tags": [
+    "germs",
+    "antiseptic",
+    "lister",
+    "carbolic",
+    "surgery",
+    "germ theory",
+    "history of science",
+    "science",
+    "shorts",
+    "joseph lister"
+  ],
+  "final_selects": [
+    "Video language English (United Kingdom)",
+    "Title and description language Ukrainian",
+    "Education",
+    "Type Concept overview",
+    "Academic system United Arab Emirates",
+    "Level None",
+    "Exam, course or standard"
+  ],
+  "final_av": {
+    "chip": "Visibility Scheduled",
+    "not_kids": true,
+    "kids_no_checked": {
+      "no": false,
+      "yes": false
+    }
+  },
+  "final": {
+    "title_ok": null,
+    "paid_no": false,
+    "places_off": true,
+    "lang_uk": false,
+    "video_lang_uk": true,
+    "type_concept": true,
+    "level_secondary": false,
+    "academic_uk": false,
+    "academic_uae_bad": true,
+    "exam_ok": false,
+    "tags": [
+      "germs",
+      "antiseptic",
+      "lister",
+      "carbolic",
+      "surgery",
+      "germ theory",
+      "history of science",
+      "science",
+      "shorts",
+      "joseph lister"
+    ],
+    "other_left": [],
+    "sun_bad_left": [],
+    "paid_radios": [
+      {
+        "lab": "Yes, my video includes paid promotion",
+        "checked": false
+      },
+      {
+        "lab": "No, my video doesn't include paid promotion",
+        "checked": false
+      }
+    ],
+    "places_state": false
+  },
+  "ok": false,
+  "finished": "2026-09-30T15:54:39+01:00"
+}

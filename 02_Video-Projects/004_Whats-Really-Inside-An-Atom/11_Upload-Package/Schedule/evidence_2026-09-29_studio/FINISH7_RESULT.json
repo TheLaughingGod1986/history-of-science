@@ -1,0 +1,68 @@
+{
+  "at": "2026-09-29T19:20:26",
+  "videoId": "GHZDsiH7L7A",
+  "channelCheck": {
+    "ok": true
+  },
+  "ab_role_err": "Error",
+  "ab_open": {
+    "via": "mouse",
+    "box": {
+      "x": 348.640625,
+      "y": 236,
+      "w": 129.28125,
+      "h": 36
+    }
+  },
+  "ab_dialog": true,
+  "ab_offers": [
+    "Title and thumbnail",
+    "Thumbnail only",
+    "Title only"
+  ],
+  "ab_chosen": "Title and thumbnail",
+  "uploads": [
+    {
+      "slot": 1,
+      "file": "hos_004_thumb_A_atom_live_v04.jpg",
+      "i": 3
+    },
+    {
+      "slot": 2,
+      "file": "hos_004_thumb_C_hidden_number_live_v06.jpg",
+      "i": 3
+    },
+    {
+      "slot": 3,
+      "file": "hos_004_thumb_B_cut_gold_live_v04.jpg",
+      "i": 3
+    }
+  ],
+  "titles": [],
+  "needs_third": false,
+  "set": "mouse",
+  "ab_running": false,
+  "ab_ok": false,
+  "template": null,
+  "end": {
+    "has_002": true,
+    "has_subscribe": true,
+    "error": false,
+    "best_for_viewer": false,
+    "most_recent": false,
+    "saved": false,
+    "snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nWhat's Really Inside an Atom?\nA/B Testing\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and",
+    "ok": true
+  },
+  "schedule": {
+    "has15": false,
+    "has1800": false,
+    "tooltip": false,
+    "scheduled": true
+  },
+  "pin": {
+    "ok": false,
+    "reason": "watch_page_not_commentable_while_scheduled_or_private",
+    "note": "Pin on launch day 15 Oct 2026"
+  }
+}

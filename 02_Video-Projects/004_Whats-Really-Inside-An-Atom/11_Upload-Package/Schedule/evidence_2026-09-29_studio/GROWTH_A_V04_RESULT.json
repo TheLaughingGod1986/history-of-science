@@ -1,0 +1,64 @@
+{
+  "at": "2026-09-29T23:36:55",
+  "phase": "A_v04",
+  "A1": {
+    "status": "ok",
+    "state": "not_kids"
+  },
+  "note": "Category/lang/licence/caption are under Upload defaults \u2192 Advanced in current Studio UI",
+  "A2": {
+    "steps": [
+      "category_education",
+      "lang_en_uk",
+      "licence"
+    ],
+    "ui_note": "Basic info only has Title/Desc/Visibility/Tags; rest set on Advanced",
+    "vis_err": "not_found",
+    "saved": "disabled",
+    "saved_advanced": true,
+    "basic_snip": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nTitle \nDescription \nVisibility\nPublic\nTags\nEnter comma-separated values\nClose\nSave",
+    "advanced_snip": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nAutomatic chapters\nChapters and key moments make your video easier to watch. You can overwrite automatic suggestions by creating your own chapters in the video description. Learn more\nAllow automatic chapters and key moments\nLicence\nStandard YouTube licence\nCategory\nEducation\nLanguage and captions certification\nVideo language\nEnglish (United Kingdom)\nCaption certification\nNone\nTitle and description language\nSelect\nComments \nComments\nOn\nModeration\nBasic\nShow how many viewers like this video\nClose\nSave",
+    "ok": false,
+    "proof": {
+      "private": false,
+      "education": true,
+      "en_uk": true,
+      "caption": false,
+      "licence": true
+    }
+  },
+  "A3": {
+    "steps": [
+      "comments_on"
+    ],
+    "toggles": [],
+    "saved": "disabled",
+    "snip": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nAutomatic chapters\nChapters and key moments make your video easier to watch. You can overwrite automatic suggestions by creating your own chapters in the video description. Learn more\nAllow automatic chapters and key moments\nLicence\nStandard YouTube licence\nCategory\nEducation\nLanguage and captions certification\nVideo language\nEnglish (United Kingdom)\nCaption certification\nNone\nTitle and description language\nSelect\nComments \nComments\nOn\nModeration\nBasic\nShow how many viewers like this video\nClose\nSave",
+    "ok": true
+  },
+  "A4": {
+    "steps": [
+      "country_uk",
+      "keywords"
+    ],
+    "has_orbit": false,
+    "keywords": "ok",
+    "saved": "disabled",
+    "snip": "Settings\nGeneral\nChannel\nUpload defaults\nPermissions\nCommunity moderation\nCreator demographics\nAgreements\nBasic info\nAdvanced settings\nFeature eligibility\nCountry of residence\nUnited Kingdom\nChoose the country where you're currently based. Learn more\nKeywords\nEnter comma-separated values\nClose\nSave",
+    "ok": true
+  },
+  "A5": {
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/editing/profile",
+    "has_watermark_section": true,
+    "note": "Did not add branding watermark / subscribe graphics",
+    "ok": true,
+    "snip": "Channel customisation\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nChannel customisation\nProfile\nHome tab\nView channel\nCancel\nPublish\nBanner image\nThis image will appear across the top of your channel.\nFor the best results on all devices, use an image that's at least 2048 x 1152 pixels and 6\u00a0MB or less.\nChange\nRemove\nPicture\nYour profile picture will appear where your channel is presented on YouTube, such as next to your videos and comments\nIt's recommended that you use a picture that's at least 98 x 98 pixels and 4\u00a0MB or less. Use a PNG or GIF (no animations) file. Make sure that your picture follows the YouTube Community Guidelines.\nChange\nRemove\nName\nChoose a channel name that represents you and your content. Changes made to your name and picture are only visible on YouTube and not on other Google services. You can change your name twice in 14 days.\nHandle\nYour handle is a unique @name, different from your channel name, that helps people find your channel. You can change your handle twice within a 14-day period. We hold your previous hand"
+  },
+  "summary": {
+    "A1": "ok",
+    "A2": "partial",
+    "A3": "ok",
+    "A4": "ok",
+    "A5": "ok"
+  }
+}

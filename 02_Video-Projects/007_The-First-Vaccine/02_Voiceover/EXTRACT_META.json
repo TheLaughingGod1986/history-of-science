@@ -1,0 +1,33 @@
+{
+  "total_chars": 6733,
+  "total_words": 1197,
+  "parts": {
+    "1": {
+      "slug": "the_speckled_monster",
+      "words": 246,
+      "chars": 1383
+    },
+    "2": {
+      "slug": "the_milkmaids_secret",
+      "words": 296,
+      "chars": 1634
+    },
+    "3": {
+      "slug": "a_pail_a_lancet_and_a_boy",
+      "words": 183,
+      "chars": 978
+    },
+    "4": {
+      "slug": "the_test",
+      "words": 215,
+      "chars": 1258
+    },
+    "5": {
+      "slug": "the_word_that_saved_millions",
+      "words": 257,
+      "chars": 1480
+    }
+  },
+  "rule": "prose only; drop lines starting # [ | <!--; stop at first ---",
+  "verified_against_align": "parts 1-5 v01 align chars match extract"
+}

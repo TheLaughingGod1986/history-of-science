@@ -1,0 +1,222 @@
+{
+  "film": "007",
+  "title": "The First Vaccine",
+  "voice_lock": {
+    "name": "Ben Orbit Narrator",
+    "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+    "model_id": "eleven_v3",
+    "settings": {
+      "stability": 0.34,
+      "similarity_boost": 0.78,
+      "style": 0.42,
+      "speed": 1.04,
+      "use_speaker_boost": true
+    }
+  },
+  "credits": {
+    "limit": 209536,
+    "tier": "creator",
+    "before_first_snapshot_used": 109367,
+    "before_first_snapshot_remaining": 100169,
+    "tts_start_used": 109976,
+    "tts_start_remaining": 99560,
+    "after_refreshed_used": 114054,
+    "after_refreshed_remaining": 95482,
+    "chars_sent_total": 6733,
+    "api_delta_refreshed_vs_tts_start": 4078,
+    "note": "character_count lagged during mint (same pattern as 006); refreshed remaining 95482; no plan upgrade; stayed above 50k floor"
+  },
+  "script_chars_spoken": 6733,
+  "script_words_spoken": 1197,
+  "no_picture_spend": true,
+  "no_tts_retake": true,
+  "retake_policy": "Peak FAILs fixed by ffmpeg volume \u22120.8 dB (v01b) without new TTS. Word FAILs checked against ElevenLabs alignment JSON \u2014 disputed spans match script; ASR false positives. No v02 TTS (save credits).",
+  "parts": [
+    {
+      "part": 1,
+      "slug": "the_speckled_monster",
+      "keep": "v03",
+      "mp3": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part01_the_speckled_monster_v03.mp3",
+      "duration_s": 100.23,
+      "sha256": "3881da7b96b4efaadde58287c4151b31c1dd39d337af4fd5dae0c6925ab5fb83",
+      "chars": 1383,
+      "words": 246,
+      "mean_db": -20.0,
+      "peak_db": -1.4,
+      "vo_check_verdict": "PASS",
+      "loudness_silence": "PASS",
+      "word_fails": [],
+      "warns": [
+        "replace at ~1:22.78: script 'pass full smallpox on to others so people' / heard 'pass full smallpox onto others so people' \u2014 sounds alike (likely the transcriber); listen"
+      ],
+      "wpm": 148,
+      "script_words": 241,
+      "heard_words": 240,
+      "note": "chalk-cross pickup splice per Claude 5996011402: v02 head 0-44.15 s + one-paragraph pickup (274 chars, same voice lock) + v02 tail 62.12 s-end, 20 ms tri crossfades in silence",
+      "align": null,
+      "txt": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part01_the_speckled_monster.txt",
+      "align_note": "no single align for v03; v02 align + pickup align (part01_pickup_chalk_v01_align.json, offset 44.13 s) cover it",
+      "spoken_line_change": {
+        "from": "you would see a cross chalked on a neighbour's door",
+        "to": "you would see a neighbour's house shut up and silent"
+      },
+      "prev_keep": {
+        "file": "part01_the_speckled_monster_v02.mp3",
+        "sha256": "db541d9ae048f499f49608c0b45bb8feed5e2562621ec18fbdd390629b6f81db",
+        "duration_s": 99.44
+      }
+    },
+    {
+      "part": 2,
+      "slug": "the_milkmaids_secret",
+      "keep": "v01",
+      "mp3": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part02_the_milkmaids_secret_v01.mp3",
+      "duration_s": 129.04,
+      "sha256": "a4c4ad87d73b9ffca9dfc9e7530cfc10f1d4a68f27c612054be4669a9a9ae21e",
+      "chars": 1634,
+      "words": 296,
+      "mean_db": -20.8,
+      "peak_db": -1.3,
+      "vo_check_verdict": "FAIL",
+      "loudness_silence": "PASS",
+      "word_fails": [
+        "replace at ~1:09.58: script 'little town of berkeley a country doctor' / heard 'little town of barclay a country doctor' \u2014 listen, then regenerate that sentence alone if real"
+      ],
+      "warns": [
+        "pace 138 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed",
+        "replace at ~0:08.38: script 'the milkmaids who milked them sometimes caught' / heard 'the milkmaids who milk them sometimes caught' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~0:33.40: script 'year while your neighbours lock their doors' / heard 'year while your neighbors lock their doors' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~1:27.38: script 'friends but the milkmaids story was the' / heard 'friends but the milkmaid story was the' \u2014 sounds alike (likely the transcriber); listen"
+      ],
+      "wpm": 138,
+      "script_words": 290,
+      "heard_words": 290,
+      "note": "raw v01; loudness PASS; berkeley\u2192barclay is ASR",
+      "align": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part02_the_milkmaids_secret_v01_align.json",
+      "txt": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part02_the_milkmaids_secret.txt"
+    },
+    {
+      "part": 3,
+      "slug": "a_pail_a_lancet_and_a_boy",
+      "keep": "v01",
+      "mp3": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part03_a_pail_a_lancet_and_a_boy_v01.mp3",
+      "duration_s": 69.76,
+      "sha256": "afbbe16957cd3f6d33591937b5fc6b5edba02712278c083c260c87f6f03cada0",
+      "chars": 978,
+      "words": 183,
+      "mean_db": -20.4,
+      "peak_db": -1.0,
+      "vo_check_verdict": "FAIL",
+      "loudness_silence": "PASS",
+      "word_fails": [
+        "replace at ~0:15.86: script 'saw his chance on the of may' / heard 'saw his chance now the of may' \u2014 listen, then regenerate that sentence alone if real",
+        "replace at ~0:18.36: script 'the of may he took a little matter from of the spots on sarah's hand' / heard 'the of may he'd on sarah's hand' \u2014 listen, then regenerate that sentence alone if real",
+        "delete at ~0:33.54: script 'week james felt a little unwell a' / heard 'week james felt little unwell a' \u2014 listen, then regenerate that sentence alone if real"
+      ],
+      "warns": [
+        "replace at ~0:05.26: script 'nelmes came to jenner with cowpox on' / heard 'nelmes came to jenna with cowpox on' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~0:07.28: script 'on her hand she had caught it from' / heard 'on her hand she'd caught it from' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~0:13.38: script 'the name blossom jenner saw his chance' / heard 'the name blossom jenna saw his chance' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~0:26.54: script 'his own notes jenner described him simply' / heard 'his own notes jenna described him simply' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~0:39.78: script 'then just as jenner had hoped he' / heard 'then just as jenna had hoped he' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~0:44.02: script 'well again picture jenner in those days' / heard 'well again picture jenna in those days' \u2014 sounds alike (likely the transcriber); listen"
+      ],
+      "wpm": 158,
+      "script_words": 177,
+      "heard_words": 167,
+      "note": "raw v01; loudness PASS; Jenner/matter skips are ASR; Phipps line in align",
+      "align": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part03_a_pail_a_lancet_and_a_boy_v01_align.json",
+      "txt": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part03_a_pail_a_lancet_and_a_boy.txt"
+    },
+    {
+      "part": 4,
+      "slug": "the_test",
+      "keep": "v01b",
+      "mp3": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part04_the_test_v01b.mp3",
+      "duration_s": 92.16,
+      "sha256": "090676adfb3c3dc9d4ebe94243483702359b71cfbc9f38ec8bfae8f5f532aa8d",
+      "chars": 1258,
+      "words": 215,
+      "mean_db": -21.1,
+      "peak_db": -1.7,
+      "vo_check_verdict": "FAIL",
+      "loudness_silence": "PASS",
+      "word_fails": [
+        "delete at ~0:00.32: script 'on the first of july jenner' / heard 'on the of july jenner' \u2014 listen, then regenerate that sentence alone if real"
+      ],
+      "warns": [
+        "pace 141 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed",
+        "replace at ~0:50.98: script 'a latin name variolae vaccinae which means' / heard 'a latin name varioli vaccinae which means' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~0:55.92: script 'the cow from vacca the latin word' / heard 'the cow from vaca the latin word' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~1:09.02: script 'people sprouting little cow's heads after their' / heard 'people sprouting little cows heads after their' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~1:20.68: script 'own garden in berkeley he vaccinated poor' / heard 'own garden in barkley he vaccinated poor' \u2014 sounds alike (likely the transcriber); listen"
+      ],
+      "wpm": 141,
+      "script_words": 210,
+      "heard_words": 209,
+      "note": "peak remaster \u22120.8 dB; 'first' of July in align (whisper drops ordinal-as-digit)",
+      "align": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part04_the_test_v01b_align.json",
+      "txt": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part04_the_test.txt"
+    },
+    {
+      "part": 5,
+      "slug": "the_word_that_saved_millions",
+      "keep": "v01b",
+      "mp3": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part05_the_word_that_saved_millions_v01b.mp3",
+      "duration_s": 102.56,
+      "sha256": "18b725326c0b40e6bba2250be9f25a2581366a2ff76a2121fa889191f727557f",
+      "chars": 1480,
+      "words": 257,
+      "mean_db": -21.3,
+      "peak_db": -1.9,
+      "vo_check_verdict": "FAIL",
+      "loudness_silence": "PASS",
+      "word_fails": [
+        "replace at ~0:41.38: script 'a disease that had killed of millions' / heard 'a disease that have killed of millions' \u2014 listen, then regenerate that sentence alone if real"
+      ],
+      "warns": [
+        "replace at ~0:08.16: script 'other diseases in honour of jenner's cowpox' / heard 'other diseases in honor of jenner's cowpox' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~0:25.54: script 'century health workers travelled to every country' / heard 'century health workers traveled to every country' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~1:01.48: script 'your body to recognise the real thing' / heard 'your body to recognize the real thing' \u2014 sounds alike (likely the transcriber); listen",
+        "replace at ~1:24.96: script 'turned a farmyard rumour into proof and' / heard 'turned a farmyard rumor into proof and' \u2014 sounds alike (likely the transcriber); listen"
+      ],
+      "wpm": 150,
+      "script_words": 250,
+      "heard_words": 250,
+      "note": "peak remaster \u22120.8 dB; spelling honour/honor ASR",
+      "align": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part05_the_word_that_saved_millions_v01b_align.json",
+      "txt": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part05_the_word_that_saved_millions.txt"
+    }
+  ],
+  "listen_file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/hos_007_vo_all_parts_listen_v03.mp3",
+  "listen_duration_s": 502.286,
+  "listen_sha256": "c74822528aa70178d1d2b9562397ecaef75116f929a6053cad105194759a31b3",
+  "script_path": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/01_Script/vaccine_script_master_v01.md",
+  "script_sha256": "8939f2933d33ffc35094beba320c8f61dfe80abf48bbb85b897ab5860cdee9fc",
+  "script_commit": "afcb26dfd53345c1a9a3635becc4a256997b754b 007 Phipps line fix + 008 Lightning script v01 (#203)",
+  "repo_HEAD": "a99b59cf69c9e88cdd46769dc9967c2d7b36c5a3",
+  "phipps_line_ok": true,
+  "phipps_wording": "a healthy boy, about eight years old",
+  "landed_to": "/Users/benjaminoats/code/history-of-science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover",
+  "desk": "/Users/benjaminoats/_desk/007/vo_20261004",
+  "credits_live_at_report": {
+    "used": 114372,
+    "limit": 209536,
+    "remaining": 95164,
+    "tier": "creator",
+    "note": "live query after sibling session; slight drift vs refreshed 95482"
+  },
+  "ready_for_claude_listen": true,
+  "loudness_silence_all_pass": true,
+  "word_fails_classified_as": "ASR false positives vs ElevenLabs align (parts 01+03 hard notes still for Claude ear)",
+  "hold_no_tts": "Claude 5982249531",
+  "ts": "2026-10-04 17:58 ",
+  "revisions": [
+    {
+      "ts": "2026-10-05T15:10+01:00",
+      "what": "Part 01 -> v03 (chalk-cross pickup splice per Claude 5996011402)",
+      "pickup_chars": 274,
+      "desk": "/Users/benjaminoats/_desk/007/vo_20261005_chalk"
+    }
+  ]
+}

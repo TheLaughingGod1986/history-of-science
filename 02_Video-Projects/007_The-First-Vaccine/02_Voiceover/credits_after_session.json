@@ -1,0 +1,10 @@
+{
+  "snapshot": {
+    "used": 114054,
+    "limit": 209536,
+    "remaining": 95482,
+    "tier": "creator"
+  },
+  "ts": 1791132705.0817542,
+  "note": "HOLD stop after full v01 recorded from clean 1197-word extract"
+}

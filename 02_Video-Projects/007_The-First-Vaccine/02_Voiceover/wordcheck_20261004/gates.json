@@ -1,0 +1,126 @@
+[
+  {
+    "part": "01",
+    "file": "part01_the_speckled_monster_v01.mp3",
+    "duration_s": 105.76,
+    "mean_db": -20.9,
+    "mean_gate": "PASS",
+    "peak_db": -0.8,
+    "peak_gate": "FAIL",
+    "pauses_over_1s": [
+      [
+        22.73,
+        1.48
+      ],
+      [
+        45.7,
+        1.29
+      ],
+      [
+        65.22,
+        1.19
+      ],
+      [
+        69.55,
+        1.15
+      ],
+      [
+        100.36,
+        1.49
+      ]
+    ],
+    "silence_fails_gt_1_5s": [],
+    "silence_gate": "PASS",
+    "loudness_overall": "FAIL"
+  },
+  {
+    "part": "02",
+    "file": "part02_the_milkmaids_secret_v01.mp3",
+    "duration_s": 129.04,
+    "mean_db": -20.8,
+    "mean_gate": "PASS",
+    "peak_db": -1.3,
+    "peak_gate": "PASS",
+    "pauses_over_1s": [
+      [
+        18.4,
+        1.22
+      ],
+      [
+        22.99,
+        1.01
+      ],
+      [
+        28.39,
+        1.25
+      ],
+      [
+        66.75,
+        1.29
+      ],
+      [
+        93.28,
+        1.16
+      ],
+      [
+        100.76,
+        1.25
+      ],
+      [
+        112.52,
+        1.15
+      ]
+    ],
+    "silence_fails_gt_1_5s": [],
+    "silence_gate": "PASS",
+    "loudness_overall": "PASS"
+  },
+  {
+    "part": "03",
+    "file": "part03_a_pail_a_lancet_and_a_boy_v01.mp3",
+    "duration_s": 69.76,
+    "mean_db": -20.4,
+    "mean_gate": "PASS",
+    "peak_db": -1.0,
+    "peak_gate": "PASS",
+    "pauses_over_1s": [],
+    "silence_fails_gt_1_5s": [],
+    "silence_gate": "PASS",
+    "loudness_overall": "PASS"
+  },
+  {
+    "part": "04",
+    "file": "part04_the_test_v01.mp3",
+    "duration_s": 92.16,
+    "mean_db": -19.9,
+    "mean_gate": "PASS",
+    "peak_db": -0.6,
+    "peak_gate": "FAIL",
+    "pauses_over_1s": [],
+    "silence_fails_gt_1_5s": [],
+    "silence_gate": "PASS",
+    "loudness_overall": "FAIL"
+  },
+  {
+    "part": "05",
+    "file": "part05_the_word_that_saved_millions_v01.mp3",
+    "duration_s": 102.56,
+    "mean_db": -20.0,
+    "mean_gate": "PASS",
+    "peak_db": -0.6,
+    "peak_gate": "FAIL",
+    "pauses_over_1s": [
+      [
+        49.3,
+        1.09
+      ],
+      [
+        92.15,
+        1.24
+      ]
+    ],
+    "silence_fails_gt_1_5s": [],
+    "silence_gate": "PASS",
+    "loudness_overall": "FAIL"
+  }
+]

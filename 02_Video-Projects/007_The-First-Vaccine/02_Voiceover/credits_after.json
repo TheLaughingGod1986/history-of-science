@@ -1,0 +1,24 @@
+{
+  "snapshot": {
+    "used": 114054,
+    "limit": 209536,
+    "remaining": 95482,
+    "tier": "creator"
+  },
+  "session": {
+    "first_snapshot_used": 109367,
+    "first_snapshot_remaining": 100169,
+    "tts_start_used": 109976,
+    "tts_start_remaining": 99560,
+    "after_parts12_used": 110841,
+    "after_all_immediate_used": 112420,
+    "after_all_immediate_remaining": 97116,
+    "refreshed_used": 114054,
+    "refreshed_remaining": 95482,
+    "limit": 209536,
+    "tier": "creator",
+    "chars_sent_total": 6733,
+    "api_delta_refreshed_vs_tts_start": 4078
+  },
+  "ts": 1791132706.853878
+}

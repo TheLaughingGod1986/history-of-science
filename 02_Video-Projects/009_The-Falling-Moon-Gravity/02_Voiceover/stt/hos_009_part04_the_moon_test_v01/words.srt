@@ -1,0 +1,183 @@
+1
+00:00:00,100 --> 00:00:02,360
+Newton worked out that a pull like this
+
+2
+00:00:02,400 --> 00:00:05,440
+should get weaker with distance. Twice as
+
+3
+00:00:05,480 --> 00:00:07,940
+far away, it should be four times weaker.
+
+4
+00:00:08,480 --> 00:00:12,260
+Three times as far, nine times weaker. Why
+
+5
+00:00:12,280 --> 00:00:13,340
+would it work like that?
+
+6
+00:00:14,280 --> 00:00:16,760
+Think of a can of spray paint. Hold it
+
+7
+00:00:16,840 --> 00:00:19,780
+close to a wall, and you get a small, dark
+
+8
+00:00:19,880 --> 00:00:20,340
+spot.
+
+9
+00:00:21,240 --> 00:00:24,000
+Step back twice as far, and the same paint
+
+10
+00:00:24,120 --> 00:00:27,220
+spreads over a patch four times as big, so
+
+11
+00:00:27,320 --> 00:00:30,060
+every part of it gets only a quarter as
+
+12
+00:00:30,120 --> 00:00:30,500
+much.
+
+13
+00:00:31,400 --> 00:00:34,480
+Newton's pull spreads out in the same way.
+
+14
+00:00:35,020 --> 00:00:37,760
+The moon is about 60 times further from
+
+15
+00:00:37,800 --> 00:00:40,120
+the center of the Earth than you are, so
+
+16
+00:00:40,160 --> 00:00:42,780
+the pull on the moon should be sixty times
+
+17
+00:00:42,860 --> 00:00:43,860
+sixty weaker,
+
+18
+00:00:44,780 --> 00:00:49,180
+3,600 times weaker. Then came the
+
+19
+00:00:49,240 --> 00:00:53,080
+beautiful part. In one second, an apple
+
+20
+00:00:53,220 --> 00:00:56,420
+falls about five meters. If the pull on
+
+21
+00:00:56,460 --> 00:01:00,820
+the moon is 3,600 times weaker, then in
+
+22
+00:01:00,880 --> 00:01:03,460
+one minute, the moon should fall about the
+
+23
+00:01:03,560 --> 00:01:06,620
+same distance, five meters, along its
+
+24
+00:01:06,680 --> 00:01:07,140
+curve.
+
+25
+00:01:08,020 --> 00:01:10,340
+Newton checked it against the real moon.
+
+26
+00:01:11,100 --> 00:01:13,180
+Years later, he wrote that the two
+
+27
+00:01:13,380 --> 00:01:16,200
+answered pretty nearly. The apple and the
+
+28
+00:01:16,260 --> 00:01:19,480
+moon were obeying the same rule. But
+
+29
+00:01:19,520 --> 00:01:22,620
+Newton was a careful, private man, and his
+
+30
+00:01:22,680 --> 00:01:25,500
+numbers weren't yet perfect. He put the
+
+31
+00:01:25,580 --> 00:01:29,820
+idea aside for almost 20 years. Then, in
+
+32
+00:01:29,860 --> 00:01:33,420
+1684, a young astronomer called Edmond
+
+33
+00:01:33,540 --> 00:01:35,780
+Halley came to see him in Cambridge.
+
+34
+00:01:36,580 --> 00:01:39,620
+Halley asked him a question. "If the sun
+
+35
+00:01:39,780 --> 00:01:41,740
+pulled on the planets with a force that
+
+36
+00:01:41,760 --> 00:01:45,200
+got weaker in just this way, what path
+
+37
+00:01:45,240 --> 00:01:47,940
+would they follow?" "An ellipse," Newton
+
+38
+00:01:48,040 --> 00:01:50,420
+said at once. He had worked it out years
+
+39
+00:01:50,460 --> 00:01:54,040
+before. Halley was amazed, and he begged
+
+40
+00:01:54,080 --> 00:01:56,820
+Newton to write it all down. The result,
+
+41
+00:01:57,160 --> 00:01:59,240
+three years later, was one of the most
+
+42
+00:01:59,300 --> 00:02:02,420
+important books ever written. Newton
+
+43
+00:02:02,540 --> 00:02:05,440
+called it the Principia. And because the
+
+44
+00:02:05,460 --> 00:02:07,400
+Royal Society had spent its money on a
+
+45
+00:02:07,440 --> 00:02:10,419
+book about fish, Halley paid to print it
+
+46
+00:02:10,460 --> 00:02:11,060
+himself

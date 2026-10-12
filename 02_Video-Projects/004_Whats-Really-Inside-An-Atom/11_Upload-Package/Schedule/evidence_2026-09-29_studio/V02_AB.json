@@ -1,0 +1,21 @@
+{
+  "wanted": "Title and thumbnail",
+  "pairs": [
+    [
+      "What's Really Inside an Atom?",
+      "hos_004_thumb_A_atom_live_v04.jpg"
+    ],
+    [
+      "Why Is the Periodic Table in This Order?",
+      "hos_004_thumb_C_hidden_number_live_v06.jpg"
+    ],
+    [
+      "How Small Can You Cut Gold?",
+      "hos_004_thumb_B_cut_gold_live_v04.jpg"
+    ]
+  ],
+  "dialog_open": false,
+  "ok": false,
+  "note": "A/B dialog did not open",
+  "snip": ""
+}

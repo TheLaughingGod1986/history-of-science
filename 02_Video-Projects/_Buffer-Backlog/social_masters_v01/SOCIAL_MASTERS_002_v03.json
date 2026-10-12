@@ -1,0 +1,63 @@
+{
+  "ver": "002_social_v03",
+  "clips": [
+    {
+      "src": "hos_002_s01_empty_chairs_punch_v01.mp4",
+      "social": "hos_002_s01_empty_chairs_punch_social_v03.mp4",
+      "sha256": "872746fb21595fe87a1221b6039eb1913c0915c9de9e2492eda78789d9cfe7a8",
+      "duration_s": 19.167,
+      "cut_at_s": 19.15,
+      "freeze_s": 0.0,
+      "mode": "hard_cut_uat_v03",
+      "last_0p5_mean_vol": "-27.2 dB",
+      "note": "end after density."
+    },
+    {
+      "src": "hos_002_s02_predict_metal_punch_v01.mp4",
+      "social": "hos_002_s02_predict_metal_punch_social_v03.mp4",
+      "sha256": "31e5a33beeee0a9d239d36e1b3ea7be0dff7aae4ed240a12a26b35f62fa6265c",
+      "duration_s": 19.917,
+      "cut_at_s": 19.9,
+      "freeze_s": 0.0,
+      "mode": "loop_replace_freeze_then_hard_cut",
+      "freeze_window": "14.1-15.17",
+      "loop_src": "13.5-14.1",
+      "last_0p5_mean_vol": "-29.6 dB",
+      "note": "replace 14.1-15.17 hold with looped prior motion; end after metal.",
+      "max_freeze_hops_0p1": 1
+    },
+    {
+      "src": "hos_002_s03_gallium_punch_v01.mp4",
+      "social": "hos_002_s03_gallium_punch_social_v03.mp4",
+      "sha256": "3f702dee1408114247229d8f1d72b26298e60a31b585746279111f9b70488aef",
+      "duration_s": 19.958,
+      "cut_at_s": 19.95,
+      "freeze_s": 0.0,
+      "mode": "hard_cut_uat_v03",
+      "last_0p5_mean_vol": "-30.7 dB",
+      "note": "end after bluff."
+    },
+    {
+      "src": "hos_002_s04_tellurium_punch_v01.mp4",
+      "social": "hos_002_s04_tellurium_punch_social_v03.mp4",
+      "sha256": "68d1eb318396bb4f609e3b54676b40dd75390480d756fc14e0d84f691e11ef20",
+      "duration_s": 18.667,
+      "cut_at_s": 18.65,
+      "freeze_s": 0.0,
+      "mode": "hard_cut_uat_v03",
+      "last_0p5_mean_vol": "-28.9 dB",
+      "note": "end after refuses to die."
+    },
+    {
+      "src": "hos_002_s05_other_table_punch_v01.mp4",
+      "social": "hos_002_s05_other_table_punch_social_v03.mp4",
+      "sha256": "a19623357464c4c55fb576e831d4f178a2e003792a94f4af2e27bd270480d3ae",
+      "duration_s": 13.958,
+      "cut_at_s": 13.95,
+      "freeze_s": 0.0,
+      "mode": "hard_cut_uat_v03",
+      "last_0p5_mean_vol": "-34.2 dB",
+      "note": "end on leave a chair empty in?"
+    }
+  ]
+}

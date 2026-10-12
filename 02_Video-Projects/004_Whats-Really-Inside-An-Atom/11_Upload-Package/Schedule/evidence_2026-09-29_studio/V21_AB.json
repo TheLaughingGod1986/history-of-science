@@ -1,0 +1,46 @@
+{
+  "pairs": [
+    {
+      "title": "What's Really Inside an Atom?",
+      "thumb": "hos_004_thumb_A_atom_live_v04.jpg"
+    },
+    {
+      "title": "Why Is the Periodic Table in This Order?",
+      "thumb": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+    },
+    {
+      "title": "How Small Can You Cut Gold?",
+      "thumb": "hos_004_thumb_B_cut_gold_live_v04.jpg"
+    }
+  ],
+  "mode": null,
+  "uploads": [
+    {
+      "slot": 1,
+      "via": "input",
+      "file": "hos_004_thumb_A_atom_live_v04.jpg"
+    },
+    {
+      "slot": 2,
+      "err": "fail"
+    },
+    {
+      "slot": 3,
+      "err": "fail"
+    }
+  ],
+  "vals": [],
+  "ready": false,
+  "ineligible": false,
+  "set": "missing",
+  "banner": {
+    "title_and_thumb": false,
+    "title_only": false,
+    "save_or_publish": false,
+    "ineligible": false
+  },
+  "saved": true,
+  "titles_match": false,
+  "slots_uploaded": 1,
+  "ok": false
+}

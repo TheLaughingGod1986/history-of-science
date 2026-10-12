@@ -1,0 +1,80 @@
+{
+ "data": {
+  "posts": {
+   "edges": [
+    {
+     "node": {
+      "id": "6ac3893e53279f4f19be5724",
+      "dueAt": "2026-10-08T10:30:00.000Z",
+      "channelService": "facebook",
+      "text": "The first X-ray showed a wedding ring\n\nThe first famous X-ray photo was Bertha R\u00f6ntgen's hand: the bones of her fingers and the dark band of her wedding ring.\n\nFull film: https://youtu.be/frP_YrNShsU"
+     }
+    },
+    {
+     "node": {
+      "id": "6ac3893e32f9ebfdb1ce0a84",
+      "dueAt": "2026-10-07T10:30:00.000Z",
+      "channelService": "facebook",
+      "text": "How did R\u00f6ntgen see bones without cutting\n\nX-rays pass through skin and muscle but are stopped by bone, so for the first time a doctor could see a living skeleton without a single cut.\n\nFull film: https://youtu.be/frP_YrNShsU"
+     }
+    },
+    {
+     "node": {
+      "id": "6ac3893d1cf337b59da40cb4",
+      "dueAt": "2026-10-06T10:30:00.000Z",
+      "channelService": "facebook",
+      "text": "How X-rays Were Discovered by Accident\n\nIn 1895 Wilhelm R\u00f6ntgen covered his tube in black card, yet a screen nearby lit up. That glow was the first sign of X-rays.\n\nFull film: https://youtu.be/frP_YrNShsU"
+     }
+    },
+    {
+     "node": {
+      "id": "6ac384aa64249b64d1504cd6",
+      "dueAt": "2026-10-08T10:30:00.000Z",
+      "channelService": "instagram",
+      "text": "The first X-ray showed a wedding ring\nThe first X-ray proof was Bertha R\u00f6ntgen's hand: her bones, and the darker shadow of her wedding ring.\nFull film on YouTube, link in bio.\n#xrays #historyofscience #sciencehistory #womeninscience #physics"
+     }
+    },
+    {
+     "node": {
+      "id": "6ac384aa64249b64d1504ca9",
+      "dueAt": "2026-10-08T10:30:00.000Z",
+      "channelService": "tiktok",
+      "text": "The first X-ray showed a wedding ring\nThe first X-ray proof was Bertha R\u00f6ntgen's hand: her bones, and the darker shadow of her wedding ring.\nFull film on YouTube, link in bio.\n#xrays #historyofscience #science #womeninscience #sciencetok"
+     }
+    },
+    {
+     "node": {
+      "id": "6ac384a9432770e2fc1860ec",
+      "dueAt": "2026-10-07T10:30:00.000Z",
+      "channelService": "instagram",
+      "text": "How did R\u00f6ntgen see bones without cutting\nSoft tissue fades. Bone holds. R\u00f6ntgen saw a living skeleton without a knife.\nFull film on YouTube, link in bio.\n#xrays #historyofscience #sciencehistory #r\u00f6ntgen #anatomy"
+     }
+    },
+    {
+     "node": {
+      "id": "6ac384a8f2d73dcd74479ece",
+      "dueAt": "2026-10-06T10:30:00.000Z",
+      "channelService": "instagram",
+      "text": "How X-rays Were Discovered by Accident\nA covered tube. A cardboard screen that should have stayed dark, and glowed anyway. That accident is how X-rays began.\nFull film on YouTube, link in bio.\n#xrays #historyofscience #sciencehistory #r\u00f6ntgen #physics"
+     }
+    },
+    {
+     "node": {
+      "id": "6ac384a8432770e2fc18605e",
+      "dueAt": "2026-10-06T10:30:00.000Z",
+      "channelService": "tiktok",
+      "text": "How X-rays Were Discovered by Accident\nA covered tube. A cardboard screen that should have stayed dark, and glowed anyway. That accident is how X-rays began.\nFull film on YouTube, link in bio.\n#xrays #historyofscience #science #r\u00f6ntgen #sciencetok"
+     }
+    },
+    {
+     "node": {
+      "id": "6ac384a464249b64d1504b7d",
+      "dueAt": "2026-10-07T10:30:00.000Z",
+      "channelService": "tiktok",
+      "text": "How did R\u00f6ntgen see bones without cutting\nSoft tissue fades. Bone holds. R\u00f6ntgen saw a living skeleton without a knife.\nFull film on YouTube, link in bio.\n#xrays #historyofscience #science #r\u00f6ntgen #sciencetok"
+     }
+    }
+   ]
+  }
+ }
+}

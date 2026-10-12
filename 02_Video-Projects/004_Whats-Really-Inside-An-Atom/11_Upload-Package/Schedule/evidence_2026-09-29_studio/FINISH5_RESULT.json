@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "videoId": "GHZDsiH7L7A",
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "at": "2026-09-29T19:15:35",
+  "channelCheck": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+    "snip": "Skip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n8:45\nWhat's Really Inside"
+  },
+  "abTest": {
+    "wanted": "Title and thumbnail",
+    "pairs_wanted": [
+      [
+        "What's Really Inside an Atom?",
+        "hos_004_thumb_A_atom_live_v04.jpg"
+      ],
+      [
+        "Why Is the Periodic Table in This Order?",
+        "hos_004_thumb_C_hidden_number_live_v06.jpg"
+      ],
+      [
+        "How Small Can You Cut Gold?",
+        "hos_004_thumb_B_cut_gold_live_v04.jpg"
+      ]
+    ],
+    "open": "A/B Testing@284,184",
+    "open_snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nWhat's Really Inside an Atom?\nA/B Testing\n29/100\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\nThumbnail\nSet a thumbnail that stands out and draws viewers' attention. Learn more\nGet suggestions\nPlaylists\nAdd your video to one or more playlists to organise your content for viewers. Learn more\nSelect\nAudience\nThis video is set to not 'Made for Kids' \nSet by you\nRegardless of your location, you're legally required t",
+    "offers": [
+      "Thumbnail",
+      "Title"
+    ],
+    "chosen": "Thumbnail",
+    "in_setup": false,
+    "uploads": [
+      {
+        "slot": 1,
+        "err": "TimeoutError"
+      },
+      {
+        "slot": 2,
+        "err": "TimeoutError"
+      },
+      {
+        "slot": 3,
+        "err": "TimeoutError"
+      }
+    ],
+    "titles": [],
+    "filled_snip": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nWhat's Really Inside an Atom?\nA/B Testing\n29/100\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\n\nHistory of Science \u00b7 Discovery. Wonder. Proof. \u00b7 @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\nThumbnail\nSet a thumb",
+    "needs_third": false,
+    "set": null,
+    "after": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nWhat's Really Inside an Atom?\nA/B Testing\n29/100\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Coun",
+    "running": false,
+    "still_required": false,
+    "ok": false
+  },
+  "endScreen": {
+    "related": "AL_-qlWko_g",
+    "subscribe": true,
+    "open": "End screen@992,845",
+    "fill": {
+      "aria": " 8 minutes 24 seconds 20 framestext",
+      "y": 410
+    },
+    "save": "Save@1242,81",
+    "after": "Video details\nSkip navigation\nAsk Studio\nCreate\nChannel content\n8:45\nYour video\nWhat's Really Inside an Atom?\nDetails\nAnalytics\nEditor\nComments\nSubtitles\nClaims\nClips and Shorts\nSettings\nSend feedback\nVideo details\nUndo changes\nSave\nTitle (required)\nWhat's Really Inside an Atom?\nA/B Testing\nDescription\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element \u2014 and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting wi",
+    "has_002": true,
+    "has_subscribe": true,
+    "error_need_video": false,
+    "best_for_viewer": false,
+    "ok": true
+  },
+  "schedule": {
+    "has15": true,
+    "has1800": true,
+    "scheduled": true,
+    "tooltip": true,
+    "tip_snip": "Skip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n8:45\nWhat's Really Inside an Atom?\n\u2014\nScheduled\n15 Oct 2026\nScheduled\n2\n0\n7:06\nHow Did We Discover X-rays?\nHow Did We Discover X-rays? In a dark W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen covered a cathode tube so nothing should es"
+  },
+  "pin": {
+    "ok": false,
+    "reason": "watch_page_not_commentable_while_scheduled_or_private",
+    "note": "Pin on launch day 15 Oct 2026 from manifest pinned comment."
+  }
+}

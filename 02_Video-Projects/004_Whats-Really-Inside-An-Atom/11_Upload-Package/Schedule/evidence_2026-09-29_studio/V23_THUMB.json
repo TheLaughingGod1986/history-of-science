@@ -1,0 +1,27 @@
+{
+  "file": "hos_004_thumb_A_atom_live_v04.jpg",
+  "before": {
+    "has_hidden_number": false,
+    "has_atomic_number": false,
+    "has_atom_title_overlay": true
+  },
+  "inputs": [
+    {
+      "acc": "image/jpeg,image/png",
+      "y": 0,
+      "x": 0,
+      "w": 0,
+      "h": 0,
+      "disabled": false
+    }
+  ],
+  "upload_btns": [],
+  "via": "input[0]",
+  "ok": true,
+  "saved": true,
+  "after": {
+    "has_hidden_number": false,
+    "has_atomic_number": false,
+    "has_atom_title_overlay": true
+  }
+}

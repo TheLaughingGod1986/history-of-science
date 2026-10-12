@@ -1,0 +1,100 @@
+{
+  "slot": "s01",
+  "started": "2026-09-30T09:36:03+01:00",
+  "hos": {
+    "ok": true,
+    "url": "https://studio.youtube.com/channel/UCXp7HkBIl1LgaznXuZHJyRg/videos/upload?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+    "title": "Channel content - YouTube Studio",
+    "snip": "All changes saved.\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n8:45\nWhat's Really Inside an Atom?\nWhat's really inside an atom, and why is the periodic table in this order? Four discoveries, one century \u2014 from a knife and a gold coin to the number that fixed the table.",
+    "skipped_nav": true
+  },
+  "afterDetails": "How small can you cut gold? | Saved as private | Details | Video elements | Initial check | Visibility | Video elements | Use cards and an end screen to show viewers related videos, websites and calls to action. Learn more | Related video | Connect another of your videos to your video | Add | Subtitles | Reach a broader au",
+  "desc": "err:TimeoutError",
+  "kids": null,
+  "thumb": {
+    "ok": false,
+    "reason": "no_file_input_object",
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_final/hos_004_s01_how_small_cover_final.jpg",
+    "image": true
+  },
+  "udvid": null,
+  "wizard": {
+    "next0": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1235,
+      "y": 609
+    },
+    "related": "blocked_scheduled_004_defer_15oct1805",
+    "next_0": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1235,
+      "y": 609
+    },
+    "next_1": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1235,
+      "y": 609
+    },
+    "next_2": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1235,
+      "y": 609
+    },
+    "next_3": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1235,
+      "y": 609
+    },
+    "next_4": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1235,
+      "y": 609
+    },
+    "next_5": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1235,
+      "y": 609
+    },
+    "next_6": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1235,
+      "y": 609
+    },
+    "next_7": {
+      "t": "Next",
+      "tag": "YTCP-BUTTON",
+      "w": 61,
+      "h": 36,
+      "x": 1235,
+      "y": 609
+    },
+    "ok": false,
+    "error": "no_vis"
+  },
+  "platformPostId": null,
+  "ok": false
+}

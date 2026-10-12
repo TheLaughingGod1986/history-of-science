@@ -1,0 +1,25 @@
+{
+  "key": "s06",
+  "try": 1,
+  "out": null,
+  "expect": [
+    "THE",
+    "carbolic",
+    "SPRAY"
+  ],
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v05/_qa_mint/s06_try1_decoded.png",
+  "account": null,
+  "credits_before": null,
+  "credits_after": null,
+  "credits_used": null,
+  "attached_refs": 3,
+  "qa": "FAIL",
+  "qa_reason": "too small 378x678",
+  "qa_meta": {
+    "w": 378,
+    "h": 678,
+    "ratio": 0.5575
+  },
+  "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+  "pulled": "2026-09-30T12:13:24.486023+00:00"
+}

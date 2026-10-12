@@ -1,0 +1,304 @@
+{
+  "key": "long004",
+  "id": "GHZDsiH7L7A",
+  "steps": [
+    {
+      "label": "title_desc_language_en_uk",
+      "save": {
+        "enabled": false,
+        "clicked": false
+      },
+      "chip": "Visibility Scheduled",
+      "audience": [
+        {
+          "lab": "Yes, it's Made for Kids . Features like personalised ads and",
+          "checked": false
+        },
+        {
+          "lab": "No, it's not 'Made for Kids'",
+          "checked": true
+        }
+      ],
+      "banner_not_kids": true
+    },
+    {
+      "label": "academic_uk",
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "chip": "Visibility Scheduled",
+      "audience": [
+        {
+          "lab": "Yes, it's Made for Kids . Features like personalised ads and",
+          "checked": false
+        },
+        {
+          "lab": "No, it's not 'Made for Kids'",
+          "checked": true
+        }
+      ],
+      "banner_not_kids": true
+    },
+    {
+      "label": "edu_type",
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "chip": "Visibility Scheduled",
+      "audience": [
+        {
+          "lab": "Yes, it's Made for Kids . Features like personalised ads and",
+          "checked": false
+        },
+        {
+          "lab": "No, it's not 'Made for Kids'",
+          "checked": true
+        }
+      ],
+      "banner_not_kids": true
+    },
+    {
+      "label": "edu_level",
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "chip": "Visibility Scheduled",
+      "audience": [
+        {
+          "lab": "Yes, it's Made for Kids . Features like personalised ads and",
+          "checked": false
+        },
+        {
+          "lab": "No, it's not 'Made for Kids'",
+          "checked": true
+        }
+      ],
+      "banner_not_kids": true
+    },
+    {
+      "label": "edu_exam",
+      "save": {
+        "enabled": true,
+        "clicked": true,
+        "confirm": "Save"
+      },
+      "chip": "Visibility Scheduled",
+      "audience": [
+        {
+          "lab": "Yes, it's Made for Kids . Features like personalised ads and",
+          "checked": false
+        },
+        {
+          "lab": "No, it's not 'Made for Kids'",
+          "checked": true
+        }
+      ],
+      "banner_not_kids": true
+    }
+  ],
+  "started": "2026-09-30T15:43:48+01:00",
+  "before_av": {
+    "chip": "Visibility Scheduled",
+    "audience": [
+      {
+        "lab": "Yes, it's Made for Kids . Features like personalised ads and",
+        "checked": false
+      },
+      {
+        "lab": "No, it's not 'Made for Kids'",
+        "checked": true
+      }
+    ],
+    "banner_not_kids": true
+  },
+  "before_tags": [],
+  "before_selects": [
+    "Video language English",
+    "Title and description language Select",
+    "Education",
+    "Type None",
+    "Academic system Other",
+    "Level None",
+    "Exam, course or standard"
+  ],
+  "other_channel_tags_found": [],
+  "title_desc_language": {
+    "label": "Title and description language",
+    "coords": {
+      "label": {
+        "x": 284,
+        "y": 553.53125,
+        "w": 162.328125,
+        "h": 16,
+        "t": "Title and description language"
+      },
+      "best": {
+        "x": 463.4,
+        "y": 573.53125,
+        "t": "Title and description language Select",
+        "score": 8
+      }
+    },
+    "option": {
+      "t": "English (United Kingdom)",
+      "x": 386.265625,
+      "y": 1820,
+      "w": 180.53125,
+      "h": 30
+    }
+  },
+  "academic": {
+    "label": "Academic system",
+    "coords": {
+      "label": {
+        "x": 284,
+        "y": 641.53125,
+        "w": 95.765625,
+        "h": 16,
+        "t": "Academic system"
+      },
+      "best": {
+        "x": 484,
+        "y": 661.53125,
+        "t": "Academic system Other",
+        "score": 8
+      }
+    },
+    "option": null,
+    "option_retry": null
+  },
+  "edu_type": {
+    "label": "^Type$",
+    "coords": {
+      "label": {
+        "x": 284,
+        "y": 577.53125,
+        "w": 25.921875,
+        "h": 16,
+        "t": "Type"
+      },
+      "best": {
+        "x": 484,
+        "y": 597.53125,
+        "t": "Type None",
+        "score": 8
+      }
+    },
+    "option": {
+      "t": "Concept overview",
+      "x": 359.140625,
+      "y": 666.53125,
+      "w": 126.28125,
+      "h": 30
+    }
+  },
+  "edu_level": {
+    "label": "^Level$",
+    "coords": {
+      "label": {
+        "x": 284,
+        "y": 629.53125,
+        "w": 28.203125,
+        "h": 16,
+        "t": "Level"
+      },
+      "best": {
+        "x": 484,
+        "y": 649.53125,
+        "t": "Level None",
+        "score": 8
+      }
+    },
+    "option": {
+      "t": "Secondary school",
+      "x": 359.3671875,
+      "y": 612,
+      "w": 126.734375,
+      "h": 30
+    }
+  },
+  "edu_exam": {
+    "label": "Exam, course or standard",
+    "coords": {
+      "label": {
+        "x": 284,
+        "y": 701.53125,
+        "w": 136.484375,
+        "h": 16,
+        "t": "Exam, course or standard"
+      },
+      "best": {
+        "x": 484,
+        "y": 721.53125,
+        "t": "Exam, course or standard",
+        "score": 8
+      }
+    },
+    "option": {
+      "t": "AP Chemistry",
+      "x": 344.3828125,
+      "y": 68,
+      "w": 96.765625,
+      "h": 30
+    },
+    "typed_pick": null
+  },
+  "final_tags": [],
+  "final_selects": [
+    "Video language English",
+    "Title and description language Select",
+    "Education",
+    "Type Concept overview",
+    "Academic system United Arab Emirates",
+    "Level None",
+    "Exam, course or standard"
+  ],
+  "final_av": {
+    "chip": "Visibility Scheduled",
+    "audience": [
+      {
+        "lab": "Yes, it's Made for Kids . Features like personalised ads and",
+        "checked": false
+      },
+      {
+        "lab": "No, it's not 'Made for Kids'",
+        "checked": true
+      }
+    ],
+    "banner_not_kids": true
+  },
+  "final": {
+    "title_ok": null,
+    "paid_no": true,
+    "places_off": true,
+    "en_uk_title_desc": false,
+    "video_lang_uk": false,
+    "exam_present": false,
+    "secondary": false,
+    "type_ok": true,
+    "academic_uk": false,
+    "other_channel_tags_left": [],
+    "sun_forbidden_left": []
+  },
+  "places_checkbox": {
+    "checked": true
+  },
+  "paid_radios": [
+    {
+      "lab": "Yes, my video includes paid promotion",
+      "checked": true
+    },
+    {
+      "lab": "No, my video doesn't include paid promotion",
+      "checked": false
+    }
+  ],
+  "finished": "2026-09-30T15:44:58+01:00",
+  "ok": true
+}

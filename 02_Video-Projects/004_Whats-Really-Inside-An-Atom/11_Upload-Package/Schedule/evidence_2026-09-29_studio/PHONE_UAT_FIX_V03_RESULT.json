@@ -1,0 +1,52 @@
+{
+  "started": "2026-09-29T19:59:30",
+  "thumbnail": {
+    "uploaded": "hos_004_thumb_A_atom_live_v04.jpg",
+    "shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/v03_02_thumb_section_after.png",
+    "has_custom": false,
+    "ok": true
+  },
+  "altered": {
+    "show_more": true,
+    "has_section": false,
+    "yes": null,
+    "saved": true,
+    "proof": "",
+    "ok": false,
+    "note": "clicked Yes+saved; verify v03_13"
+  },
+  "schedule": {
+    "text": "",
+    "has_15": false,
+    "has_30": false,
+    "has_1800": false,
+    "ok": false
+  },
+  "testAndCompare": {
+    "wanted": "Title and thumbnail",
+    "open": {
+      "x": 620,
+      "y": 219,
+      "w": 672,
+      "h": 70,
+      "t": "A/B Testing"
+    },
+    "dialog_open": false,
+    "ok": false,
+    "note": "A/B dialog still did not open"
+  },
+  "endScreen": {
+    "related": "AL_-qlWko_g",
+    "after": "",
+    "processing_error": false,
+    "ok": false
+  },
+  "ok": {
+    "thumbnail": true,
+    "altered": false,
+    "schedule": false,
+    "testAndCompare": false,
+    "endScreen": false
+  },
+  "finished": "2026-09-29T20:01:04"
+}

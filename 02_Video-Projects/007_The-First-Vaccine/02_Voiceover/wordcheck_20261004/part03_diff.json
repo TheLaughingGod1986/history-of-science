@@ -1,0 +1,68 @@
+{
+  "part": "03",
+  "slug": "a_pail_a_lancet_and_a_boy",
+  "extract_words_norm": 177,
+  "heard_words_norm": 167,
+  "extract_raw_words": 183,
+  "missing": 10,
+  "added": 0,
+  "changed_ops": 3,
+  "soft_spelling": 5,
+  "verdict": "FAIL",
+  "notes": [
+    {
+      "op": "soft_replace",
+      "script": "jenner",
+      "heard": "jenna"
+    },
+    {
+      "op": "replace",
+      "script": "her hand she had caught it",
+      "heard": "her hand she'd caught it",
+      "script_span": "she had",
+      "heard_span": "she'd"
+    },
+    {
+      "op": "soft_replace",
+      "script": "jenner",
+      "heard": "jenna"
+    },
+    {
+      "op": "replace",
+      "script": "his chance on the of",
+      "heard": "his chance now the of",
+      "script_span": "on",
+      "heard_span": "now"
+    },
+    {
+      "op": "replace",
+      "script": "of may he took a little matter from of the spots on sarah's",
+      "heard": "of may he'd on sarah's",
+      "script_span": "he took a little matter from of the spots",
+      "heard_span": "he'd"
+    },
+    {
+      "op": "soft_replace",
+      "script": "jenner",
+      "heard": "jenna"
+    },
+    {
+      "op": "delete",
+      "script": "james felt a little unwell",
+      "heard": "james felt little unwell",
+      "script_span": "a"
+    },
+    {
+      "op": "soft_replace",
+      "script": "jenner",
+      "heard": "jenna"
+    },
+    {
+      "op": "soft_replace",
+      "script": "jenner",
+      "heard": "jenna"
+    }
+  ],
+  "script_norm_preview": "in may a young dairymaid called sarah nelmes came to jenner with cowpox on her hand she had caught it from a cow on a nearby farm a cow later remembered by the name blossom jenner saw his chance on...",
+  "heard_norm_preview": "in may a young dairymaid called sarah nelmes came to jenna with cowpox on her hand she'd caught it from a cow on a nearby farm a cow later remembered by the name blossom jenna saw his chance now the..."
+}

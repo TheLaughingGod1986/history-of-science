@@ -1,0 +1,36 @@
+{
+  "part": "02",
+  "slug": "the_milkmaids_secret",
+  "extract_words_norm": 289,
+  "heard_words_norm": 289,
+  "extract_raw_words": 296,
+  "missing": 0,
+  "added": 0,
+  "changed_ops": 0,
+  "soft_spelling": 4,
+  "verdict": "PASS",
+  "notes": [
+    {
+      "op": "soft_replace",
+      "script": "milked",
+      "heard": "milk"
+    },
+    {
+      "op": "soft_replace",
+      "script": "neighbours",
+      "heard": "neighbors"
+    },
+    {
+      "op": "soft_replace",
+      "script": "berkeley",
+      "heard": "barclay"
+    },
+    {
+      "op": "soft_replace",
+      "script": "milkmaids",
+      "heard": "milkmaid"
+    }
+  ],
+  "script_norm_preview": "cows sometimes caught a disease of their own called cowpox it made small blisters on their udders and the milkmaids who milked them sometimes caught it too on their hands it was a mild illness a few sore spots a...",
+  "heard_norm_preview": "cows sometimes caught a disease of their own called cowpox it made small blisters on their udders and the milkmaids who milk them sometimes caught it too on their hands it was a mild illness a few sore spots a..."
+}

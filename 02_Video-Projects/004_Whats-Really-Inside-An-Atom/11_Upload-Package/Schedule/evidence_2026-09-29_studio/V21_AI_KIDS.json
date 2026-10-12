@@ -1,0 +1,14 @@
+{
+  "kids_no": false,
+  "kids_yes_bad": false,
+  "ai_yes": false,
+  "kids": {
+    "via": null
+  },
+  "ai": {
+    "hit": {
+      "hit": false,
+      "aiY": null
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "voice_settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "takes": [
+    {
+      "id": "004_gold_foil",
+      "take": "a",
+      "words": 61,
+      "mp3": "hos_004_backcat_gold_foil_vo_v01a.mp3",
+      "mp3_sha256": "e615bfb5c491d0f5dae718491ce4cf63de4a9199b27b519a134a09aa3a76342b",
+      "duration_s": 27.84,
+      "mean_db": -23.6,
+      "peak_db": -3.9
+    },
+    {
+      "id": "004_gold_foil",
+      "take": "b",
+      "words": 61,
+      "mp3": "hos_004_backcat_gold_foil_vo_v01b.mp3",
+      "mp3_sha256": "d57573489140c0b50e132ce8b55be787eb8ac7f45f7ba2a39755e0102c8c3006",
+      "duration_s": 27.12,
+      "mean_db": -24.1,
+      "peak_db": -4.6
+    },
+    {
+      "id": "004_gold_foil",
+      "take": "c",
+      "words": 61,
+      "mp3": "hos_004_backcat_gold_foil_vo_v01c.mp3",
+      "mp3_sha256": "40e405c158199b99d362b620fb82ac3c25951e214b1f928152dceea6784903a5",
+      "duration_s": 26.16,
+      "mean_db": -23.5,
+      "peak_db": -3.8
+    },
+    {
+      "id": "004_gold_foil",
+      "take": "d",
+      "words": 61,
+      "mp3": "hos_004_backcat_gold_foil_vo_v01d.mp3",
+      "mp3_sha256": "c4a8fec0cb76398e83b405393d36718abb38b24cc4d19fc32d5d27f7b4e0c38d",
+      "duration_s": 27.84,
+      "mean_db": -22.3,
+      "peak_db": -3.5
+    },
+    {
+      "id": "004_gold_foil",
+      "take": "e",
+      "words": 61,
+      "mp3": "hos_004_backcat_gold_foil_vo_v01e.mp3",
+      "mp3_sha256": "27019e1354560ef47a4236a7844e181b4869fd9914b483442611dffcc17e446f",
+      "duration_s": 25.92,
+      "mean_db": -23.5,
+      "peak_db": -4.8
+    },
+    {
+      "id": "004_gold_foil",
+      "take": "f",
+      "words": 61,
+      "mp3": "hos_004_backcat_gold_foil_vo_v01f.mp3",
+      "mp3_sha256": "5c70cae21782907d522c49354366d33ed6eed9bbc34db6f9f3122d0433eebec5",
+      "duration_s": 26.16,
+      "mean_db": -23.3,
+      "peak_db": -3.6
+    }
+  ]
+}

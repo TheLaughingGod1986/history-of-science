@@ -1,0 +1,13 @@
+{
+  "click": {
+    "x": 1045,
+    "y": 728,
+    "t": "Scheduled",
+    "y0": 708
+  },
+  "has_15": false,
+  "has_1800": false,
+  "has_30": false,
+  "ok": true,
+  "proof": "v20_20_visibility.png (fallback)"
+}

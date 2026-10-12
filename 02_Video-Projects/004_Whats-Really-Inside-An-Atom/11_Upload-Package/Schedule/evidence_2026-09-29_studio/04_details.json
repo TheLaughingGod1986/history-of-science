@@ -1,0 +1,20 @@
+{
+  "titleDesc": {
+    "title": "fill",
+    "desc": true,
+    "desc_chars": 867
+  },
+  "kidsAi": {
+    "kids": "err:TimeoutError",
+    "ai": "skip"
+  },
+  "thumb": {
+    "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/08_Thumbnail/Selected/hos_004_thumb_A_atom_live_v04.jpg",
+    "ok": true,
+    "via": "input_0"
+  },
+  "tags": {
+    "chars": 657,
+    "ok": true
+  }
+}

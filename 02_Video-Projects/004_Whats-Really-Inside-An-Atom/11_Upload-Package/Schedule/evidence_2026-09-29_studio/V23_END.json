@@ -1,0 +1,18 @@
+{
+  "related": "AL_-qlWko_g",
+  "import": "Import from video",
+  "import_confirm": "^Select$",
+  "after_import_elements": false,
+  "template": "1 video, 1 subscribe",
+  "nan_before": true,
+  "save_enabled": false,
+  "save": "Save",
+  "tracks": [],
+  "nan": false,
+  "error": false,
+  "has_subscribe_track": false,
+  "has_video_track": false,
+  "has_002_in_track": false,
+  "best_for_viewer": false,
+  "ok": false
+}

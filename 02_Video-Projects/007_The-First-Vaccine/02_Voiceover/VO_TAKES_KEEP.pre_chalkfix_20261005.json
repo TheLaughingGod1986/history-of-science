@@ -1,0 +1,25 @@
+{
+  "film": "007",
+  "locked": {
+    "01": {
+      "file": "part01_the_speckled_monster_v02.mp3",
+      "sha256": "db541d9ae048f499f49608c0b45bb8feed5e2562621ec18fbdd390629b6f81db",
+      "duration_s": 99.44
+    },
+    "02": {
+      "file": "part02_the_milkmaids_secret_v01.mp3"
+    },
+    "03": {
+      "file": "part03_a_pail_a_lancet_and_a_boy_v02b.mp3"
+    },
+    "04": {
+      "file": "part04_the_test_v01b.mp3"
+    },
+    "05": {
+      "file": "part05_the_word_that_saved_millions_v01b.mp3"
+    }
+  },
+  "listen": "hos_007_vo_all_parts_listen_v02.mp3",
+  "ts": "2026-10-04T18:12+01:00",
+  "note": "Part 01 v02 retake after Claude 5982419514 lift; 03=v02b; 02/04/05 prior PASS"
+}

@@ -1,0 +1,77 @@
+{
+  "file": "vo/part01_the_speckled_monster_v01b.mp3",
+  "part": 1,
+  "fails": [
+    "replace at ~0:04.96: script 'so how did a cow end up' / heard 'so how did the cow end up' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "pace 140 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed",
+    "replace at ~0:17.68: script 'an old farmyard rumour into the medicine' / heard 'an old farmyard rumor into the medicine' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:52.74: script 'chalked on a neighbour's door hear the' / heard 'chalked on a neighbor's door hear the' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:26.66: script 'pass full smallpox on to others so people' / heard 'pass full smallpox onto others so people' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 105.76,
+  "duration": "1:45.76",
+  "mean_db": -22.1,
+  "peak_db": -2.0,
+  "pauses_over_1s": [
+    [
+      22.72,
+      1.48
+    ],
+    [
+      45.7,
+      1.29
+    ],
+    [
+      65.22,
+      1.19
+    ],
+    [
+      69.54,
+      1.15
+    ],
+    [
+      100.36,
+      1.49
+    ]
+  ],
+  "script_words": 241,
+  "heard_words": 240,
+  "wpm": 140,
+  "word_diffs": [
+    {
+      "at": "0:04.96",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "so how did a cow end up",
+      "heard": "so how did the cow end up"
+    },
+    {
+      "at": "0:17.68",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "an old farmyard rumour into the medicine",
+      "heard": "an old farmyard rumor into the medicine"
+    },
+    {
+      "at": "0:52.74",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "chalked on a neighbour's door hear the",
+      "heard": "chalked on a neighbor's door hear the"
+    },
+    {
+      "at": "1:26.66",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "pass full smallpox on to others so people",
+      "heard": "pass full smallpox onto others so people"
+    }
+  ],
+  "first_minute": {
+    "title_question": 97.42,
+    "promise": 10.08
+  },
+  "verdict": "FAIL"
+}

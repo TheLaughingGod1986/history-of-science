@@ -1,0 +1,24 @@
+{
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "voice_settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "takes": [
+    {
+      "id": "004_thomson_electron",
+      "take": "a",
+      "words": 56,
+      "mp3": "hos_004_backcat_thomson_electron_vo_v01a.mp3",
+      "mp3_sha256": "2c639a1100e14f30facf1322116f93e9872321ca8b8f50f4ffaba01aa5cc58d8",
+      "duration_s": 23.44,
+      "mean_db": -22.5,
+      "peak_db": -4.0
+    }
+  ]
+}

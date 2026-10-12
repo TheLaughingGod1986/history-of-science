@@ -1,0 +1,26 @@
+{
+  "pairs": [
+    {
+      "title": "What's Really Inside an Atom?",
+      "thumb": "hos_004_thumb_A_atom_live_v04.jpg"
+    },
+    {
+      "title": "Why Is the Periodic Table in This Order?",
+      "thumb": "hos_004_thumb_C_hidden_number_live_v06.jpg"
+    },
+    {
+      "title": "How Small Can You Cut Gold?",
+      "thumb": "hos_004_thumb_B_cut_gold_live_v04.jpg"
+    }
+  ],
+  "open": {
+    "x": 620,
+    "y": 219,
+    "w": 672,
+    "h": 70,
+    "t": "A/B Testing"
+  },
+  "dialog_open": false,
+  "ok": false,
+  "note": "dialog not open"
+}

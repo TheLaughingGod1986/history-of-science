@@ -1,0 +1,81 @@
+{
+  "file": "vo/part02_the_milkmaids_secret_v01.mp3",
+  "part": 2,
+  "fails": [
+    "replace at ~1:09.58: script 'little town of berkeley a country doctor' / heard 'little town of barclay a country doctor' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "pace 138 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed",
+    "replace at ~0:08.38: script 'the milkmaids who milked them sometimes caught' / heard 'the milkmaids who milk them sometimes caught' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:33.40: script 'year while your neighbours lock their doors' / heard 'year while your neighbors lock their doors' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:27.38: script 'friends but the milkmaids story was the' / heard 'friends but the milkmaid story was the' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 129.04,
+  "duration": "2:09.04",
+  "mean_db": -20.8,
+  "peak_db": -1.3,
+  "pauses_over_1s": [
+    [
+      18.4,
+      1.22
+    ],
+    [
+      22.99,
+      1.01
+    ],
+    [
+      28.39,
+      1.25
+    ],
+    [
+      66.75,
+      1.29
+    ],
+    [
+      93.28,
+      1.16
+    ],
+    [
+      100.76,
+      1.25
+    ],
+    [
+      112.52,
+      1.15
+    ]
+  ],
+  "script_words": 290,
+  "heard_words": 290,
+  "wpm": 138,
+  "word_diffs": [
+    {
+      "at": "0:08.38",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "the milkmaids who milked them sometimes caught",
+      "heard": "the milkmaids who milk them sometimes caught"
+    },
+    {
+      "at": "0:33.40",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "year while your neighbours lock their doors",
+      "heard": "year while your neighbors lock their doors"
+    },
+    {
+      "at": "1:09.58",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "little town of berkeley a country doctor",
+      "heard": "little town of barclay a country doctor"
+    },
+    {
+      "at": "1:27.38",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "friends but the milkmaids story was the",
+      "heard": "friends but the milkmaid story was the"
+    }
+  ],
+  "verdict": "FAIL"
+}

@@ -1,0 +1,119 @@
+1
+00:00:00,120 --> 00:00:02,480
+Newton's answer was so simple, it is easy
+
+2
+00:00:02,520 --> 00:00:06,120
+to miss. The moon isn't held up at all. It
+
+3
+00:00:06,180 --> 00:00:09,380
+really is falling. It just never lands.
+
+4
+00:00:10,640 --> 00:00:13,320
+To explain it, he imagined a cannon on top
+
+5
+00:00:13,360 --> 00:00:15,900
+of a mountain so tall it poked above the
+
+6
+00:00:16,000 --> 00:00:19,460
+air. Fire a cannonball sideways gently,
+
+7
+00:00:19,900 --> 00:00:21,800
+and it curves down and hits the ground
+
+8
+00:00:21,880 --> 00:00:23,240
+near the bottom of the mountain.
+
+9
+00:00:24,140 --> 00:00:26,640
+Fire it faster, and it flies further
+
+10
+00:00:26,660 --> 00:00:27,700
+before it lands.
+
+11
+00:00:28,580 --> 00:00:31,760
+Now imagine firing it so fast that as it
+
+12
+00:00:31,820 --> 00:00:34,960
+falls, the round Earth curves away beneath
+
+13
+00:00:35,060 --> 00:00:36,300
+it just as quickly.
+
+14
+00:00:37,260 --> 00:00:38,020
+What would you see?
+
+15
+00:00:39,120 --> 00:00:41,840
+The ball keeps falling and keeps missing
+
+16
+00:00:41,880 --> 00:00:44,700
+the ground. It falls all the way around
+
+17
+00:00:44,740 --> 00:00:47,180
+the world and comes back to the mountain.
+
+18
+00:00:47,960 --> 00:00:51,200
+That is an orbit. Not something floating,
+
+19
+00:00:51,580 --> 00:00:54,240
+but something falling and moving sideways
+
+20
+00:00:54,320 --> 00:00:56,280
+so fast that it never hits.
+
+21
+00:00:57,180 --> 00:00:59,680
+And that's what the moon is doing. Every
+
+22
+00:00:59,780 --> 00:01:01,800
+second, it moves sideways about a
+
+23
+00:01:01,840 --> 00:01:04,920
+kilometer and falls a tiny bit towards the
+
+24
+00:01:05,000 --> 00:01:08,440
+Earth. Sideways and down, sideways and
+
+25
+00:01:08,540 --> 00:01:09,780
+down, forever.
+
+26
+00:01:11,200 --> 00:01:14,540
+But an idea isn't proof. If the same pull
+
+27
+00:01:14,660 --> 00:01:17,380
+holds the moon and drops the apple, Newton
+
+28
+00:01:17,440 --> 00:01:19,300
+should be able to calculate one from the
+
+29
+00:01:19,380 --> 00:01:19,700
+other.
+
+30
+00:01:20,560 --> 00:01:20,860
+Could he?

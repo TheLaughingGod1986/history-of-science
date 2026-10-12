@@ -1,0 +1,44 @@
+{
+  "part": "01",
+  "slug": "the_speckled_monster",
+  "extract_words_norm": 241,
+  "heard_words_norm": 240,
+  "extract_raw_words": 246,
+  "missing": 1,
+  "added": 0,
+  "changed_ops": 1,
+  "soft_spelling": 3,
+  "verdict": "FAIL",
+  "notes": [
+    {
+      "op": "replace",
+      "script": "how did a cow end",
+      "heard": "how did the cow end",
+      "script_span": "a",
+      "heard_span": "the"
+    },
+    {
+      "op": "soft_replace",
+      "script": "rumour",
+      "heard": "rumor"
+    },
+    {
+      "op": "soft_replace",
+      "script": "chalked",
+      "heard": "chocked"
+    },
+    {
+      "op": "soft_replace",
+      "script": "neighbour's",
+      "heard": "neighbor's"
+    },
+    {
+      "op": "delete",
+      "script": "bell toll day after day",
+      "heard": "bell toll after day",
+      "script_span": "day"
+    }
+  ],
+  "script_norm_preview": "every vaccine in the world is named after a cow so how did a cow end up inside the most important medicine ever made by the end of this film you'll know how a milkmaid's hand a country doctor and...",
+  "heard_norm_preview": "every vaccine in the world is named after a cow so how did the cow end up inside the most important medicine ever made by the end of this film you'll know how a milkmaid's hand a country doctor and..."
+}

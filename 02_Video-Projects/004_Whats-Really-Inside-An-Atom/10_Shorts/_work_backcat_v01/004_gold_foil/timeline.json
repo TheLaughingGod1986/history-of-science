@@ -1,0 +1,207 @@
+{
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.203,
+      "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/12_shell_comes_back_v02.mp4",
+      "in_s": 1.5,
+      "out_s": 4.703,
+      "crop_x": 560,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.203,
+      "t1": 8.83,
+      "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/03_fire_at_gold_v01.mp4",
+      "in_s": 0.5,
+      "out_s": 6.127,
+      "crop_x": 640,
+      "lands_on": "In"
+    },
+    {
+      "t0": 8.83,
+      "t1": 11.271,
+      "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/09_almost_all_pass_v02.mp4",
+      "in_s": 3.0,
+      "out_s": 5.441,
+      "crop_x": 520,
+      "lands_on": "Almost"
+    },
+    {
+      "t0": 11.271,
+      "t1": 14.61,
+      "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/07_green_flash_count_v02.mp4",
+      "in_s": 0.1,
+      "out_s": 3.439,
+      "crop_x": 656,
+      "lands_on": "About"
+    },
+    {
+      "t0": 14.61,
+      "t1": 20.515,
+      "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/11_shell_tissue_v02.mp4",
+      "in_s": 1.2,
+      "out_s": 7.105,
+      "crop_x": 900,
+      "lands_on": "Rutherford"
+    },
+    {
+      "t0": 20.515,
+      "t1": 25.367,
+      "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/13_mass_packed_v02.mp4",
+      "in_s": 2.55,
+      "out_s": 7.402,
+      "crop_x": 656,
+      "lands_on": "An"
+    },
+    {
+      "t0": 25.367,
+      "t1": 26.95,
+      "plate": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/04_Generated-Clips/part04/raw/v01/12_shell_comes_back_v02.mp4",
+      "in_s": 1.5,
+      "out_s": 3.083,
+      "crop_x": 560,
+      "lands_on": "loop"
+    }
+  ],
+  "overlays": [
+    {
+      "role": "hook",
+      "text": "IT CAME BACK",
+      "t0": 0.0,
+      "t1": 2.6
+    },
+    {
+      "role": "vo",
+      "text": "Tiny particles",
+      "t0": 0.0,
+      "t1": 1.183
+    },
+    {
+      "role": "vo",
+      "text": "bounced back off gold",
+      "t0": 1.183,
+      "t1": 2.649
+    },
+    {
+      "role": "vo",
+      "text": "foil.",
+      "t0": 2.649,
+      "t1": 3.353
+    },
+    {
+      "role": "vo",
+      "text": "In nineteen-oh-nine,",
+      "t0": 3.353,
+      "t1": 4.54
+    },
+    {
+      "role": "vo",
+      "text": "Rutherford's team fired",
+      "t0": 4.54,
+      "t1": 6.004
+    },
+    {
+      "role": "vo",
+      "text": "tiny particles at gold",
+      "t0": 6.004,
+      "t1": 7.59
+    },
+    {
+      "role": "vo",
+      "text": "thinner than paper.",
+      "t0": 7.59,
+      "t1": 8.98
+    },
+    {
+      "role": "vo",
+      "text": "Almost all went",
+      "t0": 8.98,
+      "t1": 10.444
+    },
+    {
+      "role": "vo",
+      "text": "straight through.",
+      "t0": 10.444,
+      "t1": 11.421
+    },
+    {
+      "role": "vo",
+      "text": "About one in eight",
+      "t0": 11.421,
+      "t1": 12.799
+    },
+    {
+      "role": "vo",
+      "text": "thousand bounced",
+      "t0": 12.799,
+      "t1": 13.944
+    },
+    {
+      "role": "vo",
+      "text": "back.",
+      "t0": 13.944,
+      "t1": 14.76
+    },
+    {
+      "role": "vo",
+      "text": "Rutherford said it was like",
+      "t0": 14.76,
+      "t1": 16.307
+    },
+    {
+      "role": "vo",
+      "text": "firing a shell at tissue",
+      "t0": 16.307,
+      "t1": 17.918
+    },
+    {
+      "role": "vo",
+      "text": "paper, and it came",
+      "t0": 17.918,
+      "t1": 19.262
+    },
+    {
+      "role": "vo",
+      "text": "back and hit you.",
+      "t0": 19.262,
+      "t1": 20.665
+    },
+    {
+      "role": "vo",
+      "text": "An atom's mass sits",
+      "t0": 20.665,
+      "t1": 22.194
+    },
+    {
+      "role": "vo",
+      "text": "almost all in one",
+      "t0": 22.194,
+      "t1": 23.433
+    },
+    {
+      "role": "vo",
+      "text": "tiny centre:",
+      "t0": 23.433,
+      "t1": 24.557
+    },
+    {
+      "role": "vo",
+      "text": "the nucleus.",
+      "t0": 24.557,
+      "t1": 25.747
+    },
+    {
+      "role": "title",
+      "text": "What's Really Inside an Atom?",
+      "t0": 9.0,
+      "t1": 14.0
+    },
+    {
+      "role": "cta",
+      "text": "watch the full film \u2192",
+      "t0": 25.367,
+      "t1": 26.87
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "t": "Visibility\nScheduled",
+    "aria": "",
+    "x": 992,
+    "y": 683,
+    "w": 352,
+    "h": 66,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Visibility\nScheduled",
+    "aria": "",
+    "x": 992,
+    "y": 683,
+    "w": 352,
+    "h": 66,
+    "role": "",
+    "tag": "YTCP-VIDEO-METADATA-VISIBILITY"
+  },
+  {
+    "t": "Visibility\nScheduled",
+    "aria": "",
+    "x": 992,
+    "y": 683,
+    "w": 352,
+    "h": 66,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Visibility\nScheduled",
+    "aria": "",
+    "x": 993,
+    "y": 684,
+    "w": 306,
+    "h": 64,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Scheduled",
+    "aria": "",
+    "x": 1005,
+    "y": 708,
+    "w": 294,
+    "h": 40,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Scheduled",
+    "aria": "",
+    "x": 1005,
+    "y": 708,
+    "w": 106,
+    "h": 40,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Scheduled",
+    "aria": "",
+    "x": 1037,
+    "y": 708,
+    "w": 74,
+    "h": 40,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Schedule",
+    "aria": "",
+    "x": 1037,
+    "y": 766,
+    "w": 530,
+    "h": 34,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Schedule",
+    "aria": "",
+    "x": 1037,
+    "y": 766,
+    "w": 530,
+    "h": 34,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Schedule",
+    "aria": "",
+    "x": 1037,
+    "y": 778,
+    "w": 530,
+    "h": 22,
+    "role": "",
+    "tag": "P"
+  },
+  {
+    "t": "Schedule as public",
+    "aria": "",
+    "x": 1037,
+    "y": 814,
+    "w": 530,
+    "h": 30,
+    "role": "",
+    "tag": "P"
+  },
+  {
+    "t": "15 Oct 2026\nTime zone\nVideo is private before publishing\nSet as Premie",
+    "aria": "",
+    "x": 1037,
+    "y": 844,
+    "w": 530,
+    "h": 118,
+    "role": "",
+    "tag": "YTCP-VISIBILITY-SCHEDULER"
+  },
+  {
+    "t": "15 Oct 2026\nTime zone\nVideo is private before publishing",
+    "aria": "",
+    "x": 1037,
+    "y": 844,
+    "w": 530,
+    "h": 78,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "15 Oct 2026\nTime zone",
+    "aria": "",
+    "x": 1037,
+    "y": 844,
+    "w": 530,
+    "h": 48,
+    "role": "",
+    "tag": "YTCP-DATETIME-PICKER"
+  },
+  {
+    "t": "15 Oct 2026\nTime zone",
+    "aria": "",
+    "x": 1037,
+    "y": 844,
+    "w": 530,
+    "h": 48,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "15 Oct 2026",
+    "aria": "",
+    "x": 1037,
+    "y": 844,
+    "w": 168,
+    "h": 48,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "15 Oct 2026",
+    "aria": "",
+    "x": 1037,
+    "y": 844,
+    "w": 168,
+    "h": 48,
+    "role": "",
+    "tag": "YTCP-TEXT-DROPDOWN-TRIGGER"
+  },
+  {
+    "t": "15 Oct 2026",
+    "aria": "",
+    "x": 1037,
+    "y": 844,
+    "w": 168,
+    "h": 48,
+    "role": "button",
+    "tag": "YTCP-DROPDOWN-TRIGGER"
+  },
+  {
+    "t": "15 Oct 2026",
+    "aria": "",
+    "x": 1037,
+    "y": 844,
+    "w": 168,
+    "h": 48,
+    "role": "button",
+    "tag": "DIV"
+  },
+  {
+    "t": "15 Oct 2026",
+    "aria": "",
+    "x": 1049,
+    "y": 844,
+    "w": 104,
+    "h": 48,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "15 Oct 2026",
+    "aria": "",
+    "x": 1049,
+    "y": 844,
+    "w": 104,
+    "h": 34,
+    "role": "",
+    "tag": "SPAN"
+  },
+  {
+    "t": "Video is private before publishing",
+    "aria": "",
+    "x": 1037,
+    "y": 902,
+    "w": 530,
+    "h": 20,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "private",
+    "aria": "",
+    "x": 1090,
+    "y": 904,
+    "w": 43,
+    "h": 16,
+    "role": "",
+    "tag": "B"
+  },
+  {
+    "t": "Set as Premiere",
+    "aria": "",
+    "x": 1037,
+    "y": 922,
+    "w": 530,
+    "h": 40,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Set as Premiere",
+    "aria": "",
+    "x": 1037,
+    "y": 930,
+    "w": 148,
+    "h": 32,
+    "role": "",
+    "tag": "YTCP-CHECKBOX-LIT"
+  },
+  {
+    "t": "Set as Premiere",
+    "aria": "",
+    "x": 1037,
+    "y": 934,
+    "w": 144,
+    "h": 24,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Set as Premiere",
+    "aria": "",
+    "x": 1061,
+    "y": 934,
+    "w": 120,
+    "h": 24,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "",
+    "aria": "Set as Premiere",
+    "x": 1040,
+    "y": 937,
+    "w": 18,
+    "h": 18,
+    "role": "checkbox",
+    "tag": "DIV"
+  },
+  {
+    "t": "",
+    "aria": "When you set your video as a Premiere, you and viewers can w",
+    "x": 1193,
+    "y": 937,
+    "w": 20,
+    "h": 20,
+    "role": "",
+    "tag": "YT-ICON"
+  },
+  {
+    "t": "Done",
+    "aria": "",
+    "x": 992,
+    "y": 1000,
+    "w": 620,
+    "h": 52,
+    "role": "",
+    "tag": "DIV"
+  },
+  {
+    "t": "Done",
+    "aria": "",
+    "x": 1536,
+    "y": 1008,
+    "w": 64,
+    "h": 36,
+    "role": "",
+    "tag": "YTCP-BUTTON"
+  },
+  {
+    "t": "Done",
+    "aria": "",
+    "x": 1536,
+    "y": 1008,
+    "w": 64,
+    "h": 36,
+    "role": "",
+    "tag": "YTCP-BUTTON-SHAPE"
+  },
+  {
+    "t": "Done",
+    "aria": "Done",
+    "x": 1536,
+    "y": 1008,
+    "w": 64,
+    "h": 36,
+    "role": "",
+    "tag": "BUTTON"
+  },
+  {
+    "t": "Done",
+    "aria": "",
+    "x": 1552,
+    "y": 1008,
+    "w": 32,
+    "h": 36,
+    "role": "",
+    "tag": "DIV"
+  }
+]

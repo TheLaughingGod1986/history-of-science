@@ -1,0 +1,86 @@
+{
+  "file": "vo/part01_the_speckled_monster_v01.mp3",
+  "part": 1,
+  "fails": [
+    "peak -0.8 dB above -1.0 dB",
+    "replace at ~0:04.96: script 'so how did a cow end up' / heard 'so how did the cow end up' — listen, then regenerate that sentence alone if real",
+    "delete at ~0:55.42: script 'church bell toll day after day and' / heard 'church bell toll after day and' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "pace 140 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed",
+    "replace at ~0:17.66: script 'an old farmyard rumour into the medicine' / heard 'an old farmyard rumor into the medicine' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:52.22: script 'see a cross chalked on a neighbour's' / heard 'see a cross chocked on a neighbor's' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:52.78: script 'chalked on a neighbour's door hear the' / heard 'chocked on a neighbor's door hear the' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 105.76,
+  "duration": "1:45.76",
+  "mean_db": -20.9,
+  "peak_db": -0.8,
+  "pauses_over_1s": [
+    [
+      22.73,
+      1.48
+    ],
+    [
+      45.7,
+      1.29
+    ],
+    [
+      65.22,
+      1.19
+    ],
+    [
+      69.55,
+      1.15
+    ],
+    [
+      100.36,
+      1.49
+    ]
+  ],
+  "script_words": 241,
+  "heard_words": 240,
+  "wpm": 140,
+  "word_diffs": [
+    {
+      "at": "0:04.96",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "so how did a cow end up",
+      "heard": "so how did the cow end up"
+    },
+    {
+      "at": "0:17.66",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "an old farmyard rumour into the medicine",
+      "heard": "an old farmyard rumor into the medicine"
+    },
+    {
+      "at": "0:52.22",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "see a cross chalked on a neighbour's",
+      "heard": "see a cross chocked on a neighbor's"
+    },
+    {
+      "at": "0:52.78",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "chalked on a neighbour's door hear the",
+      "heard": "chocked on a neighbor's door hear the"
+    },
+    {
+      "at": "0:55.42",
+      "op": "delete",
+      "sounds_alike": false,
+      "script": "church bell toll day after day and",
+      "heard": "church bell toll after day and"
+    }
+  ],
+  "first_minute": {
+    "title_question": 97.46,
+    "promise": 10.08
+  },
+  "verdict": "FAIL"
+}

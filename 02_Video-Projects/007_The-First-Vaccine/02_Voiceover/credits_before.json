@@ -1,0 +1,34 @@
+{
+  "snapshot": {
+    "used": 110841,
+    "limit": 209536,
+    "remaining": 98695,
+    "tier": "creator",
+    "raw_keys": [
+      "allowed_to_extend_character_limit",
+      "billing_period",
+      "can_extend_character_limit",
+      "can_extend_voice_limit",
+      "can_use_instant_voice_cloning",
+      "can_use_professional_voice_cloning",
+      "character_count",
+      "character_limit",
+      "character_refresh_period",
+      "currency",
+      "current_overage",
+      "max_character_limit_extension",
+      "max_credit_limit_extension",
+      "max_voice_add_edits",
+      "next_character_count_reset_unix",
+      "professional_voice_limit",
+      "professional_voice_slots_used",
+      "professional_voice_slots_used_in_workspace",
+      "status",
+      "tier",
+      "voice_add_edit_counter",
+      "voice_limit",
+      "voice_slots_used"
+    ]
+  },
+  "ts": 1791132611.0682628
+}

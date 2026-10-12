@@ -1,0 +1,35 @@
+1
+00:00:00,100 --> 00:00:03,220
+The first vaccine began with milkmaids who
+
+2
+00:00:03,280 --> 00:00:04,600
+never caught smallpox.
+
+3
+00:00:05,480 --> 00:00:08,060
+They caught cowpox from the cows instead,
+
+4
+00:00:08,620 --> 00:00:11,420
+a few sore spots and nothing more. And
+
+5
+00:00:11,560 --> 00:00:14,000
+farmers swore that anyone who'd had it was
+
+6
+00:00:14,100 --> 00:00:15,980
+safe from smallpox for life.
+
+7
+00:00:17,200 --> 00:00:19,760
+One country doctor, Edward Jenner, took
+
+8
+00:00:19,800 --> 00:00:22,740
+the rumor seriously and tested it. He was
+
+9
+00:00:22,800 --> 00:00:25,480
+right, and it became the first vaccine

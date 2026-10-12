@@ -1,0 +1,32 @@
+{
+  "key": "s01",
+  "try": 1,
+  "out": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/hos_004_s01_how_small_cover_live_v06.jpg",
+  "expect": [
+    "HOW",
+    "SO",
+    "SMALL?"
+  ],
+  "raw": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_live_v06/_qa_mint/s01_try1_decoded.png",
+  "account": null,
+  "credits_before": null,
+  "credits_after": null,
+  "credits_used": null,
+  "attached_refs": 4,
+  "qa": "KEEP",
+  "qa_reason": "768x1376 ratio=0.558 look=painted; cream=0.145 gold=0.086 teal=0.016 expect=HOW/SO/SMALL?",
+  "qa_meta": {
+    "w": 768,
+    "h": 1376,
+    "ratio": 0.5581,
+    "avg_rgb": [
+      91,
+      66,
+      36
+    ],
+    "look_guess": "painted",
+    "spell_heuristic": "cream=0.145 gold=0.086 teal=0.016 expect=HOW/SO/SMALL?"
+  },
+  "pill": "\ud83c\udf4c Nano Banana 2 crop_9_16",
+  "pulled": "2026-09-30T13:02:03.482838+00:00"
+}

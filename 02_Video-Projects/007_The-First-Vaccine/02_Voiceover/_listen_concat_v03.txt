@@ -1,0 +1,5 @@
+file '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part01_the_speckled_monster_v03.mp3'
+file '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part02_the_milkmaids_secret_v01.mp3'
+file '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part03_a_pail_a_lancet_and_a_boy_v02b.mp3'
+file '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part04_the_test_v01b.mp3'
+file '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part05_the_word_that_saved_millions_v01b.mp3'

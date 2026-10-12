@@ -1,0 +1,46 @@
+{
+  "version": "002_social_v02",
+  "note": "hard cut at last VO+40ms; keep film title; zero CTA; no freeze",
+  "clips": [
+    {
+      "file": "hos_002_s01_empty_chairs_punch_social_v02.mp4",
+      "sha256": "78e8c9cfb679d119ef5fae93099ba2462ef6625287a063e41161347bb429aa4d",
+      "dur": 20.042,
+      "last_1p5_mean_vol": "-29.9 dB",
+      "mini": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/_Buffer-Backlog/social_masters_v01/hos_002_s01_empty_chairs_punch_social_v02.mp4",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/Buffer-Backlog/social_masters_v01/hos_002_s01_empty_chairs_punch_social_v02.mp4"
+    },
+    {
+      "file": "hos_002_s02_predict_metal_punch_social_v02.mp4",
+      "sha256": "94e6337b752b111fb25371ef3c488a0c1118604547e297d8f0717dd3cee9ee03",
+      "dur": 20.125,
+      "last_1p5_mean_vol": "-28.9 dB",
+      "mini": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/_Buffer-Backlog/social_masters_v01/hos_002_s02_predict_metal_punch_social_v02.mp4",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/Buffer-Backlog/social_masters_v01/hos_002_s02_predict_metal_punch_social_v02.mp4"
+    },
+    {
+      "file": "hos_002_s03_gallium_punch_social_v02.mp4",
+      "sha256": "37ff3bb113289d09f8b2d2fb13ef90dd00f91fa86fa944b02ba2a772d7b76509",
+      "dur": 21.25,
+      "last_1p5_mean_vol": "-33.7 dB",
+      "mini": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/_Buffer-Backlog/social_masters_v01/hos_002_s03_gallium_punch_social_v02.mp4",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/Buffer-Backlog/social_masters_v01/hos_002_s03_gallium_punch_social_v02.mp4"
+    },
+    {
+      "file": "hos_002_s04_tellurium_punch_social_v02.mp4",
+      "sha256": "47e2cb7e9cc85bc2cedc2916d36d4b83117c776e80acf25791db5465db40edaf",
+      "dur": 20.125,
+      "last_1p5_mean_vol": "-29.5 dB",
+      "mini": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/_Buffer-Backlog/social_masters_v01/hos_002_s04_tellurium_punch_social_v02.mp4",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/Buffer-Backlog/social_masters_v01/hos_002_s04_tellurium_punch_social_v02.mp4"
+    },
+    {
+      "file": "hos_002_s05_other_table_punch_social_v02.mp4",
+      "sha256": "0f4192acd3224668b6bcfda1d6601b4d71515f34a7d0b07f736bb4387f9e0dd0",
+      "dur": 21.125,
+      "last_1p5_mean_vol": "-23.3 dB",
+      "mini": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/_Buffer-Backlog/social_masters_v01/hos_002_s05_other_table_punch_social_v02.mp4",
+      "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/Buffer-Backlog/social_masters_v01/hos_002_s05_other_table_punch_social_v02.mp4"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "wanted": "15 October 2026 18:00 Europe/London",
+  "not": "30 September 2026",
+  "open_via": "content_list",
+  "before": "",
+  "had_30": false,
+  "had_15": false,
+  "date_ok_mid": false,
+  "time": "18:00",
+  "ready_snip": "",
+  "ready_has_15": false,
+  "ready_has_30": false,
+  "confirm": null,
+  "proof_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-29_studio/v02_27_visibility_panel_proof.png",
+  "proof": "\nChannel content\nSkip navigation\nAsk Studio\nCreate\nYour channel\nHistory of Science\nDashboard\nContent\nAnalytics\nCommunity\nLanguages\nContent detection\nEarn\nCustomisation\nAudio library\nSettings\nSend feedback\nVideos\nVideos\nShorts\nLive\nPosts\nPlaylists\nVideo\nNotices\nVisibility\nDate\nViews\nComments\n8:45\nWhat's Really Inside an Atom?\nComments disabled\nNotifications disabled\nScheduled\n15 Oct 2026\nScheduled\n3\n0\n7:06\nHow Did We Discover X-rays?\nHow Did We Discover X-rays? In a dark W\u00fcrzburg lab in 1895, Wilhelm R\u00f6ntgen covered a cathode tube so nothing should escape. Across the room, a cardboard screen painted to glow under light\u2026 glowed anyway. Something invisible had left the tube. He called it X \u2014 for unknown. This is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha R\u00f6ntgen\u2019s hand \u2014 bones and wedding ring \u2014 that turned a haunted glow into proof th\n\u2014\nPublic\n24 Sept 2026\nPremiered\n0\n0\n9:01\nHow Did We Discover the Periodic Table?\nA/B test running\n\u2014\nPublic\n17 Sept 2026\nPremiered\n117\n0\n6:05\nHow Did We Discover Germs?\nA/B test completed\n\u2014\nPublic\n3 Sept 2026\nPremiered\n4\n1\nRows per page:\n30\n1\u20134 of 4",
+  "has_15": true,
+  "has_30": false,
+  "has_1800": false,
+  "tooltip_15_1800": false,
+  "ok": true,
+  "note": "Date 15 Oct OK; time 18:00 not visible in proof text \u2014 check screenshot"
+}

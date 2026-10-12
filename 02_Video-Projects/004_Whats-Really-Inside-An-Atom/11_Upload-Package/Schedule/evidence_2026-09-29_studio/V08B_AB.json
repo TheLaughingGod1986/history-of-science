@@ -1,0 +1,116 @@
+{
+  "running": false,
+  "set_enabled": false,
+  "fields": [
+    {
+      "tag": "YTCP-SOCIAL-SUGGESTIONS-TEXTBOX",
+      "aria": "title-textarea",
+      "t": "Title (required)\nWhat's Really Inside an Atom?\nA/B Testing",
+      "max": "",
+      "y": 134,
+      "x": 272,
+      "w": 696,
+      "h": 131,
+      "ce": null
+    },
+    {
+      "tag": "DIV",
+      "aria": "add a title that describes your video (type @ to mention a channel)textbox",
+      "t": "What's Really Inside an Atom?",
+      "max": "",
+      "y": 161,
+      "x": 284,
+      "w": 672,
+      "h": 23,
+      "ce": "true"
+    },
+    {
+      "tag": "YTCP-SOCIAL-SUGGESTIONS-TEXTBOX",
+      "aria": "",
+      "t": "Title (required)\nWhat's Really Inside an Atom?",
+      "max": "",
+      "y": 252,
+      "x": 699,
+      "w": 555,
+      "h": 150,
+      "ce": null
+    },
+    {
+      "tag": "DIV",
+      "aria": "add title 1textbox",
+      "t": "What's Really Inside an Atom?",
+      "max": "",
+      "y": 279,
+      "x": 711,
+      "w": 531,
+      "h": 100,
+      "ce": "true"
+    },
+    {
+      "tag": "YTCP-SOCIAL-SUGGESTIONS-TEXTBOX",
+      "aria": "description-textarea",
+      "t": "Description\nWhat's really inside an atom, and why is the per",
+      "max": "",
+      "y": 289,
+      "x": 272,
+      "w": 696,
+      "h": 365,
+      "ce": null
+    },
+    {
+      "tag": "DIV",
+      "aria": "tell viewers about your video (type @ to mention a channel)textbox",
+      "t": "What's really inside an atom, and why is the periodic table ",
+      "max": "",
+      "y": 316,
+      "x": 284,
+      "w": 672,
+      "h": 309,
+      "ce": "true"
+    },
+    {
+      "tag": "YTCP-SOCIAL-SUGGESTIONS-TEXTBOX",
+      "aria": "",
+      "t": "Title (required)",
+      "max": "",
+      "y": 442,
+      "x": 699,
+      "w": 555,
+      "h": 150,
+      "ce": null
+    },
+    {
+      "tag": "DIV",
+      "aria": "add title 2textbox",
+      "t": "",
+      "max": "",
+      "y": 469,
+      "x": 711,
+      "w": 531,
+      "h": 100,
+      "ce": "true"
+    },
+    {
+      "tag": "YTCP-SOCIAL-SUGGESTIONS-TEXTBOX",
+      "aria": "",
+      "t": "Title",
+      "max": "",
+      "y": 632,
+      "x": 699,
+      "w": 555,
+      "h": 150,
+      "ce": null
+    },
+    {
+      "tag": "DIV",
+      "aria": "add title 3textbox",
+      "t": "",
+      "max": "",
+      "y": 659,
+      "x": 711,
+      "w": 531,
+      "h": 100,
+      "ce": "true"
+    }
+  ]
+}

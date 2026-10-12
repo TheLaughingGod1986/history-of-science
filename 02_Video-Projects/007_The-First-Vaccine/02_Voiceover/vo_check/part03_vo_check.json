@@ -1,0 +1,91 @@
+{
+  "file": "vo/part03_a_pail_a_lancet_and_a_boy_v01.mp3",
+  "part": 3,
+  "fails": [
+    "replace at ~0:15.86: script 'saw his chance on the of may' / heard 'saw his chance now the of may' — listen, then regenerate that sentence alone if real",
+    "replace at ~0:18.36: script 'the of may he took a little matter from of the spots on sarah's hand' / heard 'the of may he'd on sarah's hand' — listen, then regenerate that sentence alone if real",
+    "delete at ~0:33.54: script 'week james felt a little unwell a' / heard 'week james felt little unwell a' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "replace at ~0:05.26: script 'nelmes came to jenner with cowpox on' / heard 'nelmes came to jenna with cowpox on' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:07.28: script 'on her hand she had caught it from' / heard 'on her hand she'd caught it from' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:13.38: script 'the name blossom jenner saw his chance' / heard 'the name blossom jenna saw his chance' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:26.54: script 'his own notes jenner described him simply' / heard 'his own notes jenna described him simply' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:39.78: script 'then just as jenner had hoped he' / heard 'then just as jenna had hoped he' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:44.02: script 'well again picture jenner in those days' / heard 'well again picture jenna in those days' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 69.76,
+  "duration": "1:09.76",
+  "mean_db": -20.4,
+  "peak_db": -1.0,
+  "pauses_over_1s": [],
+  "script_words": 177,
+  "heard_words": 167,
+  "wpm": 158,
+  "word_diffs": [
+    {
+      "at": "0:05.26",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "nelmes came to jenner with cowpox on",
+      "heard": "nelmes came to jenna with cowpox on"
+    },
+    {
+      "at": "0:07.28",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "on her hand she had caught it from",
+      "heard": "on her hand she'd caught it from"
+    },
+    {
+      "at": "0:13.38",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "the name blossom jenner saw his chance",
+      "heard": "the name blossom jenna saw his chance"
+    },
+    {
+      "at": "0:15.86",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "saw his chance on the of may",
+      "heard": "saw his chance now the of may"
+    },
+    {
+      "at": "0:18.36",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "the of may he took a little matter from of the spots on sarah's hand",
+      "heard": "the of may he'd on sarah's hand"
+    },
+    {
+      "at": "0:26.54",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "his own notes jenner described him simply",
+      "heard": "his own notes jenna described him simply"
+    },
+    {
+      "at": "0:33.54",
+      "op": "delete",
+      "sounds_alike": false,
+      "script": "week james felt a little unwell a",
+      "heard": "week james felt little unwell a"
+    },
+    {
+      "at": "0:39.78",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "then just as jenner had hoped he",
+      "heard": "then just as jenna had hoped he"
+    },
+    {
+      "at": "0:44.02",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "well again picture jenner in those days",
+      "heard": "well again picture jenna in those days"
+    }
+  ],
+  "verdict": "FAIL"
+}

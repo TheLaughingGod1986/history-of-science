@@ -1,0 +1,36 @@
+{
+  "part": "04",
+  "slug": "the_test",
+  "extract_words_norm": 208,
+  "heard_words_norm": 208,
+  "extract_raw_words": 215,
+  "missing": 0,
+  "added": 0,
+  "changed_ops": 0,
+  "soft_spelling": 4,
+  "verdict": "PASS",
+  "notes": [
+    {
+      "op": "soft_replace",
+      "script": "variolae",
+      "heard": "varioli"
+    },
+    {
+      "op": "soft_replace",
+      "script": "vacca",
+      "heard": "vaca"
+    },
+    {
+      "op": "soft_replace",
+      "script": "cow's",
+      "heard": "cows"
+    },
+    {
+      "op": "soft_replace",
+      "script": "berkeley",
+      "heard": "barkley"
+    }
+  ],
+  "script_norm_preview": "on the of july jenner did the test he gave james a standard variolation the old treatment that used real smallpox matter which would normally cause at least a mild illness then he waited day days a week nothing happened...",
+  "heard_norm_preview": "on the of july jenner did the test he gave james a standard variolation the old treatment that used real smallpox matter which would normally cause at least a mild illness then he waited day days a week nothing happened..."
+}
