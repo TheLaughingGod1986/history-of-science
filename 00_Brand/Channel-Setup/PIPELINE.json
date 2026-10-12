@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Words and voice are finished. Picture is about half done: Part 01 is kept, Part 02's rough cut is held, and Part 03's 16 Vertex first takes are all kept (Chief, 10 Oct). Part 03's rough cut is next; P3:06 and Parts 04–05 go on Flow once Monday's refill is read and priced.",
+      "summary": "Words and voice are finished. Picture is about half done: Part 01 is kept, Part 02's rough cut is held, and Part 03's 16 Vertex first takes are all kept (Chief, 10 Oct). Part 03's rough cut v01 is built (12 Oct) and waiting for the Chief's look; P3:06 and Parts 04–05 go on Flow once Monday's refill is read and priced.",
       "stages": {
         "topic": {
           "status": "done"
@@ -249,7 +249,7 @@
           "progress": 0.48,
           "owner": "Cursor",
           "due": "2026-10-25",
-          "note": "Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 queued (J0137); Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)",
+          "note": "Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 built 12 Oct (J0137, desk #180 6116202964: 94.8 s on the locked v02 VO, P3:06 slot held by a plate board, no spend; picture_qa flags row 16 reuse of 14 for the Chief), awaiting the Chief's KEEP call on desk #180; Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)",
           "steps": [
             1,
             5
@@ -258,7 +258,7 @@
           "left": "about 2 weeks",
           "eta": "2026-10-25",
           "underway": true,
-          "waiting": "J0137: Part 03 rough v01 on the Mini (no spend), then J0138 Flow balance + prices (not before Mon 12 Oct 09:00), the Chief's price pass (J0139) and the Flow mints (J0140)",
+          "waiting": "the Chief's KEEP call on Part 03 rough v01 (desk #180), then J0138 Flow balance + prices (not before Mon 12 Oct 09:00), the Chief's price pass (J0139) and the Flow mints (J0140)",
           "since": "2026-10-10",
           "jobs": [
             "J0137",

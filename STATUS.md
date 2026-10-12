@@ -38,7 +38,7 @@
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (tomorrow)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **006** · 🔄 **Picture** — in progress (48%, 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d), with Cursor since Sat 10 Oct, ▶️ underway, due Sun 25 Oct (in 13 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 queued (J0137); Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)
+- **006** · 🔄 **Picture** — in progress (48%, 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d), with Cursor since Sat 10 Oct, ▶️ underway, due Sun 25 Oct (in 13 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 built 12 Oct (J0137, desk #180 6116202964: 94.8 s on the locked v02 VO, P3:06 slot held by a plate board, no spend; picture_qa flags row 16 reuse of 14 for the Chief), awaiting the Chief's KEEP call on desk #180; Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)
 
 ## Next steps (in order)
 
@@ -112,7 +112,7 @@ Finished and scheduled. Long `wwcjcFfC-5M` airs Thu 29 Oct 18:00; Shorts A (30 O
 
 Airs **Thu 5 Nov** · ready for Ben's OK by **Sun 1 Nov** · 🟢 on track
 
-Words and voice are finished. Picture is about half done: Part 01 is kept, Part 02's rough cut is held, and Part 03's 16 Vertex first takes are all kept (Chief, 10 Oct). Part 03's rough cut is next; P3:06 and Parts 04–05 go on Flow once Monday's refill is read and priced.
+Words and voice are finished. Picture is about half done: Part 01 is kept, Part 02's rough cut is held, and Part 03's 16 Vertex first takes are all kept (Chief, 10 Oct). Part 03's rough cut v01 is built (12 Oct) and waiting for the Chief's look; P3:06 and Parts 04–05 go on Flow once Monday's refill is read and priced.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v02, 93.7
@@ -121,7 +121,7 @@ Words and voice are finished. Picture is about half done: Part 01 is kept, Part 
 - ✅ **Voiceover (long)** — done: v02, all five parts PASS
 - ✅ **Shorts scripts** — done
 - ✅ **Shorts voiceover** — done: A v02 · B v03b · C v01 locked
-- 🔄 **Picture** — in progress (48%, 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d), with Cursor since Sat 10 Oct, ▶️ underway, due Sun 25 Oct (in 13 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 queued (J0137); Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)
+- 🔄 **Picture** — in progress (48%, 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d), with Cursor since Sat 10 Oct, ▶️ underway, due Sun 25 Oct (in 13 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 built 12 Oct (J0137, desk #180 6116202964: 94.8 s on the locked v02 VO, P3:06 slot held by a plate board, no spend; picture_qa flags row 16 reuse of 14 for the Chief), awaiting the Chief's KEEP call on desk #180; Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)
 - ⬜ **Edit + master** — to do (with Grok, due Thu 29 Oct (in 17 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 29 Oct (in 17 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 1 Nov (in 20 d))
