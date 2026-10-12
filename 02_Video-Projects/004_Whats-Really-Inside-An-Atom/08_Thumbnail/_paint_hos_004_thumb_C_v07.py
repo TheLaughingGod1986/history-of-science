@@ -6,6 +6,7 @@ OWB #99 (comment 6084771583): repaint C as v07 under HOS rules 2.1-2.8, Te 52 / 
 
   paint [--n N]       Vertex gemini-2.5-flash-image plates (blank tiles, painted title) -> _assets_v07/
   letter <plate.jpg>  hand-letter Te 52 / I 53 on the plate's tile faces -> Selected/ + preview
+  letter ... --v07b   same plate, 52/53 about 2x in one ink style -> ..._v07b (desk #180, J0106)
 
 Python: ~/.venvs/hos-vertex/bin/python for `paint`. Media stays out of git. Nothing to Studio.
 """
@@ -156,28 +157,51 @@ def paint_word(draw: ImageDraw.ImageDraw, text: str, *, cx: int, cy: int, size: 
     draw.text((x, y), text, font=f, fill=fill)
 
 
-def letter(plate: Path, te: tuple[int, int, int, int], i: tuple[int, int, int, int]) -> None:
+def number_v07b(draw: ImageDraw.ImageDraw, text: str, *, x0: int, y0: int, fw: int, fh: int) -> None:
+    """v07b (desk #180 6085214049): 52 and 53 in one neutral style, cap height ~25% of the tile,
+    top-left inside the face, dark ink with a light outline so neither reads as the answer."""
+    size = int(fh * 0.34)
+    f = ImageFont.truetype(NUMERALS, size)
+    l, t, r, b = draw.textbbox((0, 0), text, font=f)
+    x = x0 + int(fw * 0.10) - l
+    y = y0 + int(fh * 0.07) - t
+    stroke = max(3, size // 24)
+    draw.text((x + 4, y + 5), text, font=f, fill=SHADOW, stroke_width=stroke, stroke_fill=SHADOW)
+    draw.text((x, y), text, font=f, fill=INK, stroke_width=stroke, stroke_fill=CREAM)
+
+
+def letter(plate: Path, te: tuple[int, int, int, int], i: tuple[int, int, int, int],
+           v07b: bool = False) -> None:
     im = Image.open(plate).convert("RGB")
     if im.size != (W, H):
         raise SystemExit(f"plate is {im.size}, expected {(W, H)}")
     draw = ImageDraw.Draw(im)
     for sym, num, (x0, y0, x1, y1), col in (("Te", "52", te, CREAM), ("I", "53", i, GOLD)):
         fw, fh = x1 - x0, y1 - y0
-        n_size = max(40, int(fh * 0.19))
-        paint_word(draw, num, cx=x0 + int(fw * 0.21), cy=y0 + int(fh * 0.15), size=n_size, fill=col,
-                   font=NUMERALS)
+        if v07b:
+            number_v07b(draw, num, x0=x0, y0=y0, fw=fw, fh=fh)
+        else:
+            n_size = max(40, int(fh * 0.19))
+            paint_word(draw, num, cx=x0 + int(fw * 0.21), cy=y0 + int(fh * 0.15), size=n_size,
+                       fill=col, font=NUMERALS)
         s_size = max(110, int(min(fw * 0.62, fh * 0.55)))
         paint_word(draw, sym, cx=x0 + fw // 2, cy=y0 + int(fh * 0.58), size=s_size, fill=col)
+    stem = f"{STEM}b" if v07b else STEM
     SELECTED.mkdir(parents=True, exist_ok=True)
-    jpg = SELECTED / f"{STEM}.jpg"
-    im.save(SELECTED / f"{STEM}.png")
+    jpg = SELECTED / f"{stem}.jpg"
+    im.save(SELECTED / f"{stem}.png")
     im.save(jpg, quality=92, optimize=True)
-    preview = SELECTED / f"{STEM}_preview.jpg"
+    preview = SELECTED / f"{stem}_preview.jpg"
     subprocess.run([sys.executable, str(PREVIEW_TOOL), "long", str(jpg), "--out", str(preview)], check=True)
-    family = SELECTED / "hos_004_thumbs_v07_family_vs_live.jpg"
+    family = SELECTED / ("hos_004_thumbs_v07b_family_vs_live.jpg" if v07b
+                         else "hos_004_thumbs_v07_family_vs_live.jpg")
     subprocess.run([sys.executable, str(STYLE_SHEET), "long", str(jpg), "--out", str(family)], check=False)
     log = load_log()
-    log["lettered"].append({"plate": plate.name, "te_face": te, "i_face": i, "out": jpg.name, "at": now()})
+    entry = {"plate": plate.name, "te_face": te, "i_face": i, "out": jpg.name, "at": now()}
+    if v07b:
+        entry.update(version="v07b", authority="desk #180 6084986948 + 6085214049; job J0106",
+                     numbers="52/53 cap ~25% of tile height, Times New Roman Bold, ink + cream outline")
+    log["lettered"].append(entry)
     save_log(log)
     print(f"SAVED {jpg}\nPREVIEW {preview}\nFAMILY {family}", flush=True)
 
@@ -191,11 +215,12 @@ def main() -> None:
     q.add_argument("plate", type=Path)
     q.add_argument("--te", type=int, nargs=4, required=True, metavar=("X0", "Y0", "X1", "Y1"))
     q.add_argument("--i", type=int, nargs=4, required=True, metavar=("X0", "Y0", "X1", "Y1"))
+    q.add_argument("--v07b", action="store_true", help="52/53 ~2x, one neutral style -> ..._v07b")
     a = ap.parse_args()
     if a.cmd == "paint":
         paint(a.n)
     else:
-        letter(a.plate, tuple(a.te), tuple(a.i))
+        letter(a.plate, tuple(a.te), tuple(a.i), v07b=a.v07b)
 
 
 if __name__ == "__main__":

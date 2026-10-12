@@ -18,7 +18,7 @@ npm run dev:all
 
 Open http://localhost:3000 — connect accounts at `/settings/connections`.
 
-Production on Vercel: see `docs/VERCEL_DEPLOY.md` (Root Directory = `07_Content-Ops`).
+Production on Vercel: see `docs/VERCEL_DEPLOY.md` (Root Directory = `07_Content-Ops`). **Git auto-deploy is off** (ignored/canceled deploys still count toward the Hobby 100/day quota); ship with Chief OK via `cd 07_Content-Ops && vercel --prod`.
 
 ## Scripts
 

@@ -4,7 +4,7 @@
   python3 scripts/sync_rules.py           # rewrite every SYNC block from AGENTS.md
   python3 scripts/sync_rules.py --check   # CI: exit 1 if a block is out of date or a stale line is found
 
-AGENTS.md is the source (Claude owns it, Ben 5 Oct 2026). A copy elsewhere sits between markers:
+AGENTS.md is the source (Chief owns it: Ben to Claude 5 Oct 2026, handed to Chief 9 Oct, confirmed 10 Oct). A copy elsewhere sits between markers:
 
   <!-- SYNC: AGENTS.md#Never -->
   ...generated, do not edit by hand...
@@ -31,6 +31,8 @@ SCAN = [
 # (pattern, why it is stale)
 STALE = [
     (r"merging a PR\s*;", "only merging a PR that Claude hasn't PASSed reaches Ben"),
+    (r"\*\*Claude owns `AGENTS\.md`", "Chief owns AGENTS.md and the Never list (Ben, 9-10 Oct 2026)"),
+    (r"relay never counts as Ben's word", "a Chief relay of Ben's OK counts (Ben, 10 Oct 2026)"),
     (r"Stop (and wait )?for Ben's OK", "sign-offs go to Claude first (3 Oct 2026)"),
     (r"NEEDS BEN\*\* → Chief of Staff", "NEEDS BEN goes to Claude first (3 Oct 2026)"),
     (r"Home: Google AI Studio", "picture runs on Vertex (free credit), never AI Studio prepaid"),
@@ -40,6 +42,10 @@ STALE = [
     (r"shot list (goes )?to \**Ben before generation", "shot lists go to Claude (3 Oct 2026)"),
     (r"back catalogue needs Ben's OK", "back catalogue goes to Claude (3 Oct 2026)"),
     (r"edit_post` with Ben's OK", "queued Buffer edits go to Claude (3 Oct 2026)"),
+    (r"When Grok is out \(Ben, 6 Oct 2026", "failover follows 'Who does what' (Ben, 11 Oct 2026)"),
+    (r"Grok does not ping Ben directly", "Chief talks to Ben (Chief owns the studio, 9 Oct 2026)"),
+    (r"\*\*Ask Claude first\*\* \(Ben, 3 Oct", "ask Chief first; Chief holds Claude's old role (9 Oct 2026)"),
+    (r"\*\*Claude asks Ben at the final check-in", "Claude or Chief asks Ben at the final check-in (11 Oct 2026)"),
 ]
 BLOCK = re.compile(r"(<!-- SYNC: AGENTS\.md#(?P<head>[^>]+?) -->\n)(?P<body>.*?)(<!-- /SYNC -->)", re.S)
 
