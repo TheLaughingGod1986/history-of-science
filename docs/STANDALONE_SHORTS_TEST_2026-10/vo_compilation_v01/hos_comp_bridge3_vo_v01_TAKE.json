@@ -1,0 +1,68 @@
+{
+  "stem": "hos_comp_bridge3_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0173-chief-lock"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 192,
+      "duration_s": 13.84
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 192,
+  "words": 36,
+  "duration_s": 13.84,
+  "loudness": {
+    "lufs_integrated": -20.5,
+    "mean_volume_db": -23.7,
+    "max_volume_db": -4.1
+  },
+  "sha256_mp3": "c18fd2afbf9fa1c623e2d308ee0f365ffedc9781af40206ff5aa949366d46265",
+  "scribe": {
+    "transcript": "Once the invisible enemy had a name, it could be fought. Chemists had a different problem. They knew more than 60 elements and no order to them at all. Until one man left gaps on purpose",
+    "script_words": 36,
+    "scribe_words": 36,
+    "match_rate_pct": 97.22,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "sixty"
+        ],
+        "scribe": [
+          "60"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 199355,
+      "limit": 209536,
+      "remaining": 10181
+    },
+    "after": {
+      "used": 199355,
+      "limit": 209536,
+      "remaining": 10181
+    },
+    "counter_delta": 0
+  },
+  "text": "Once the invisible enemy had a name, it could be fought.\n\nChemists had a different problem. They knew more than sixty elements, and no order to them at all. Until one man left gaps on purpose.",
+  "made_at": "2026-10-12T19:22:54+0100"
+}
