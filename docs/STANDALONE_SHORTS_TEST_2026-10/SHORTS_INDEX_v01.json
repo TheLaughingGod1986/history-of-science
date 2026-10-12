@@ -133,9 +133,11 @@
     },
     "s3_snow_pump": {
       "id": "s3_snow_pump",
+      "ver": "v02",
+      "work": "_work_shorts_v01/s3_snow_pump_v02",
       "air_date": "2026-10-26",
-      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v01.mp4",
-      "sha256": "fd7967138f335a292b5679c0577481b1c417eaa6a28b3c0820997a130816bd08",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v02.mp4",
+      "sha256": "1bd61d35e30299f8d85efec843f60a0c5876667014cd53a0e25d6599f2722a51",
       "duration_s": 22.167,
       "vo": "hos_sa_s3_snow_pump_vo_v02.wav",
       "pause_trim_s": 0.0,
@@ -155,7 +157,7 @@
         {
           "t0": 0.0,
           "t1": 4.66,
-          "plate": "plates_v01/s3/01_broad_street_pump_v01.jpg",
+          "plate": "plates_v01/s3/05_handle_off_v03.jpg",
           "lands_on": 0
         },
         {
@@ -178,32 +180,28 @@
         },
         {
           "t0": 17.82,
-          "t1": 19.54,
+          "t1": 22.14,
           "plate": "plates_v01/s3/05_handle_off_v03.jpg",
           "lands_on": "He"
-        },
-        {
-          "t0": 19.54,
-          "t1": 22.14,
-          "plate": "plates_v01/s3/01_broad_street_pump_v01.jpg",
-          "lands_on": "loop"
         }
       ],
       "captions": 15,
       "sfx": {
         "whoosh_frame0": true,
-        "ticks_on_cuts": 5
+        "ticks_on_cuts": 4
       },
       "gate": {
         "exit": 0,
-        "output": "PASS  hos_sa_s3_snow_pump_v01.mp4  dur=22.17s  audio=-18.8dB  motion=17.72  dhash=0f17113533333332\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s3_snow_pump_v01_open_sheet.jpg"
+        "output": "PASS  hos_sa_s3_snow_pump_v02.mp4  dur=22.17s  audio=-18.8dB  motion=18.7  dhash=6c8a563231333373\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s3_snow_pump_v02_open_sheet.jpg"
       }
     },
     "s4_curie_notebooks": {
       "id": "s4_curie_notebooks",
+      "ver": "v02",
+      "work": "_work_shorts_v01/s4_curie_notebooks_v02",
       "air_date": "2026-10-28",
-      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v01.mp4",
-      "sha256": "6eb9fc3826b793af61f16de5b0794b434209128dafb8341c82bfe2ce6b82beeb",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v03.mp4",
+      "sha256": "4c833bbd3dc294f4cfdfb35032fc5e9d98fe5fdf76fca21d7c482802468f94e5",
       "duration_s": 22.633,
       "vo": "hos_sa_s4_curie_notebooks_vo_v01.wav",
       "pause_trim_s": 1.84,
@@ -247,7 +245,7 @@
         {
           "t0": 14.16,
           "t1": 20.04,
-          "plate": "plates_v01/s4/05_paris_archive_v01.jpg",
+          "plate": "plates_v01/s4/05_paris_archive_v02.jpg",
           "lands_on": "Today,"
         },
         {
@@ -264,9 +262,15 @@
       },
       "gate": {
         "exit": 0,
-        "output": "PASS  hos_sa_s4_curie_notebooks_v01.mp4  dur=22.63s  audio=-18.0dB  motion=16.72  dhash=7c0f8db3b70f1168\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s4_curie_notebooks_v01_open_sheet.jpg"
+        "output": "PASS  hos_sa_s4_curie_notebooks_v03.mp4  dur=22.63s  audio=-18.0dB  motion=16.72  dhash=7c0f8db3b70f1168\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s4_curie_notebooks_v03_open_sheet.jpg"
+      },
+      "audio_from": "hos_sa_s4_curie_notebooks_v02.mp4",
+      "bed_duck": {
+        "t0": 20.5,
+        "ramp_s": 0.3,
+        "db": -3.0
       }
     }
   },
-  "contact_sheet": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/contact_sheet_v01.jpg"
+  "contact_sheet": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/contact_sheet_v02.jpg"
 }

@@ -243,6 +243,16 @@
       "cost_usd": 0.039,
       "ok": true,
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/05_handle_off_v03.jpg"
+    },
+    {
+      "short": "s4",
+      "plate": "05_paris_archive",
+      "ver": "v02",
+      "at": "2026-10-12T21:15:27+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A grand, quiet Paris library archive with tall wooden shelves of dark lead-lined boxes receding down a long vaulted aisle, one box on a reading table in the foreground with an old 1890s laboratory notebook lying closed beside it, a faint blue-green glow at its edges. No people, no hands, no gloves, no figures anywhere in the frame. Soft warm light. Quiet, awe. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s4/05_paris_archive_v02.jpg"
     }
   ]
 }
