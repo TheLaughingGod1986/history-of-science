@@ -10,7 +10,8 @@ what is being worked on now, what is next, and when it should be ready.
 Rules for agents (AGENTS.md -> "Status board"): whoever finishes or starts a
 stage edits PIPELINE.json and re-runs this in the same PR. Never edit STATUS.md
 by hand. Dates are counted from PIPELINE.json "updated", never from today's
-clock, so the file only changes when the data does.
+clock. Claim STALLED flags use persisted "as_of" (or updated at midnight UTC),
+so the file only changes when the data does.
 """
 from __future__ import annotations
 
@@ -31,6 +32,17 @@ WORD = {"done": "done", "doing": "in progress", "todo": "to do", "blocked": "blo
 
 def parse_date(s: str | None) -> dt.date | None:
     return dt.date.fromisoformat(s) if s else None
+
+
+def parse_timestamp(value: str) -> dt.datetime:
+    parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if parsed.tzinfo is None:
+        raise ValueError("ISO timestamp must include a timezone")
+    return parsed
+
+
+def claim_reference(data: dict) -> dt.datetime:
+    return parse_timestamp(data.get("as_of", data["updated"] + "T00:00:00Z"))
 
 
 def fmt_date(d: dt.date | None) -> str:
@@ -62,6 +74,36 @@ def validate(data: dict) -> list[str]:
         for k in keys:
             if k not in film.get("stages", {}):
                 errors.append(f"{fid}: missing stage '{k}'")
+    claims = data.get("claims")
+    if not isinstance(claims, list):
+        errors.append("claims must be an array")
+        claims = []
+    try:
+        claim_reference(data)
+    except (ValueError, TypeError, AttributeError):
+        errors.append("as_of must be an ISO timestamp with timezone")
+    known = {f["id"] for f in data.get("films", [])}
+    seen = set()
+    for c in claims:
+        if not isinstance(c, dict):
+            errors.append("claim must be an object")
+            continue
+        if c.get("film") not in known:
+            errors.append(f"claim: unknown film '{c.get('film')}'")
+        if c.get("stage") not in keys:
+            errors.append(f"claim: unknown stage '{c.get('stage')}'")
+        pair = (str(c.get("film")), str(c.get("stage")))
+        if pair in seen:
+            errors.append(f"duplicate claim for {pair}")
+        seen.add(pair)
+        for field in ("at", "eta"):
+            try:
+                parse_timestamp(c.get(field))
+            except (ValueError, TypeError, AttributeError):
+                errors.append(f"claim {pair}: {field} must be an ISO timestamp with timezone")
+        for field in ("by", "note"):
+            if not isinstance(c.get(field), str) or (field == "by" and not c[field]):
+                errors.append(f"claim {pair}: {field} must be a string")
     return errors
 
 
@@ -147,6 +189,20 @@ def render(data: dict) -> str:
             f"| **{f['id']}** {f['title']} | {air_txt} | {pct}% | {now} | "
             f"{fmt_date(parse_date(f.get('ready_by')))} | {health(f, stages, today)} |"
         )
+    lines.append("")
+
+    lines.extend(["## Open claims", "",
+                  "| Film | Stage | Who | Since | ETA | Note |",
+                  "|---|---|---|---|---|---|"])
+    reference = claim_reference(data)
+    for c in data.get("claims", []):
+        flag = "**STALLED** " if parse_timestamp(c["eta"]) < reference else ""
+        cells = [str(c[k]).replace("|", r"\|").replace("\n", " ")
+                 for k in ("film", "stage", "by", "at", "eta", "note")]
+        cells[-1] = flag + cells[-1]
+        lines.append("| " + " | ".join(cells) + " |")
+    if not data.get("claims"):
+        lines.append("| — | — | — | — | — | No open claims |")
     lines.append("")
 
     lines.append("## Being worked on right now")

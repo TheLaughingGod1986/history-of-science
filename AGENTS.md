@@ -97,6 +97,7 @@ Claude and Grok work through one GitHub PR, the desk (`hos-desk`, never merged â
 `STATUS.md` (repo root) is Ben's one view of every film: how far through it is (%), what is being worked on now, what is next, when it should be ready, and the credit left. It is generated from `00_Brand/Channel-Setup/PIPELINE.json`; never edit `STATUS.md` by hand.
 
 - **Whoever starts or finishes a stage** edits that film's entry in `PIPELINE.json` (status `todo` / `doing` / `done` / `blocked`, `progress` 0â€“1 for a stage in progress, `owner`, `due`, a short `note`), sets `updated`, runs `python3 00_Brand/Channel-Setup/tools/status_board.py`, and commits both files in the same PR. CI (`status-board`) fails if they don't match.
+- Claims live only in the top-level `PIPELINE.json` `claims` array (film, stage, by, at, eta, note). `scripts/studio.py` reads this source and regenerates `STATUS.md` on every write; no per-film status files. Stage keys come from the pipeline. Its persisted `as_of` timestamp makes the Open claims STALLED flags deterministic; `studio.py stale` uses the real clock for the watchdog. (5 Oct 2026: Claude decision 5998013650.)
 - Keep `next_steps` and `credits` current. A stage past its `due` date shows the film as behind; a blocked stage shows it as blocked.
 - Ben shouldn't have to ask for progress: if it isn't on the board, it isn't reported.
 

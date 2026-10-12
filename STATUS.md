@@ -13,6 +13,12 @@
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (52 d) | 25% | Voiceover (long) (to do) | Sun 22 Nov | 🟢 on track |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (59 d) | 25% | Voiceover (long) (to do) | Sun 29 Nov | 🟢 on track |
 
+## Open claims
+
+| Film | Stage | Who | Since | ETA | Note |
+|---|---|---|---|---|---|
+| — | — | — | — | — | No open claims |
+
 ## Being worked on right now
 
 - **006** · 🔄 **Picture** — in progress (36%, Grok, due Sun 25 Oct): Part 01 12/12 kept; Part 02 rough v02 held (VO-first order); Parts 03–05 not started, re-priced after the Tue 6 Oct resets
