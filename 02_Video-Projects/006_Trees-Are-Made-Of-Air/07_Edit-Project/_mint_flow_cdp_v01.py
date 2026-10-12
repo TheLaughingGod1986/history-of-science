@@ -6,13 +6,15 @@ J0140, after the Chief's price pass J0139 (desk #180 comment 6133713891):
 No Gemini API, no Vertex, no retakes. Floor 0: stop before a take the live
 balance can't pay; never buy, top up or touch billing.
 
-Flow has no start-frame stills for these rows, so each take is text-to-video
-(same path as HOS 004 Part 05). Media goes to the 006 media checkout
+Text-to-video (the HOS 004 Part 05 path) came out near-photoreal on the P4:10
+probe, so the Chief chose option 1 (desk #180 6134444292): with --stills each
+plate first gets a Flow Image / Nano Banana 2 16:9 start still (0 credits,
+_flow_still_v01.py), then Veo 3.1 image-to-video from it. Never Vertex. Media goes to the 006 media checkout
 (HOS_006_MEDIA, default ~/YouTube/hos-006-trees/...), next to Parts 03-04.
 Each Create writes one ai_spend flow line (orbit_flow_veo_ui._record_flow_spend).
 
     python3 _mint_flow_cdp_v01.py --list
-    python3 _mint_flow_cdp_v01.py --part 04 [--only 05_bubbles_macro] [--max N]
+    python3 _mint_flow_cdp_v01.py --part 04 --stills [--only 10_only_green] [--take 2] [--max N]
 """
 from __future__ import annotations
 
@@ -183,11 +185,17 @@ def flow_page(browser, flow):
     return pg
 
 
-def prompt_for(plate: dict) -> str:
+def core_for(plate: dict) -> str:
     core = " ".join(plate["prompt"].split())
     if plate.get("explorer"):
         core = core.replace("No Explorer.", "") + " " + EXPLORER
-    return (f"IMAGE-TO-VIDEO from text description (no attached still). {LOOK} {core} "
+    return core
+
+
+def prompt_for(plate: dict, i2v: bool = False) -> str:
+    lead = ("Animate the attached start frame; keep its exact cartoon look, objects and light."
+            if i2v else "IMAGE-TO-VIDEO from text description (no attached still).")
+    return (f"{lead} {LOOK} {core_for(plate)} "
             "Silent picture only. Continuous real camera and subject motion through the final frame.")
 
 
@@ -259,7 +267,7 @@ def harvest(page, flow, project_url: str, dest: Path, wait_s: int = 360) -> None
     dest.write_bytes(max(captured, key=len))
 
 
-def mint(part: str, only: set[str], max_n: int | None) -> int:
+def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, take: int = 1) -> int:
     import orbit_flow_veo_ui as flow
     from playwright.sync_api import sync_playwright
 
@@ -267,7 +275,11 @@ def mint(part: str, only: set[str], max_n: int | None) -> int:
     raw, uat, _ = paths(part)
     raw.mkdir(parents=True, exist_ok=True)
     log = load_log(part)
-    todo = [p for p in plates(part) if (not only or p["id"] in only) and p["id"] not in log["takes"]]
+    key = (lambda pid: pid) if take == 1 else (lambda pid: f"{pid}#t{take}")
+    if stills:
+        import _flow_still_v01 as still_tool
+        log["engine"] = "Flow Image Nano Banana 2 16:9 still -> Veo 3.1 image-to-video via CDP :9222"
+    todo = [p for p in plates(part) if (not only or p["id"] in only) and key(p["id"]) not in log["takes"]]
     if max_n:
         todo = todo[:max_n]
     print(f"Part {part}: {len(todo)} plates to mint -> {raw}", flush=True)
@@ -294,19 +306,36 @@ def mint(part: str, only: set[str], max_n: int | None) -> int:
                 return 3
             if UNPAID_RE.search(body_text(page)):
                 raise SystemExit(f"STOP Flow billing/credit banner before {pid}")
-            dest = raw / f"{pid}_t1.mp4"
+            dest = raw / f"{pid}_t{take}.mp4"
             model = f"Veo 3.1 - {q}"
             print(f"\n=== {pid} {model} cost~{cost} balance={credits} ===", flush=True)
-            entry = {"plate": pid, "take": 1, "model": model, "quality": q, "path": "flow-cdp",
-                     "explorer": bool(plate.get("explorer")), "prompt": prompt_for(plate),
+            entry = {"plate": pid, "take": take, "model": model, "quality": q,
+                     "path": "flow-cdp-still-i2v" if stills else "flow-cdp",
+                     "explorer": bool(plate.get("explorer")), "prompt": prompt_for(plate, stills),
                      "credits_before": credits, "submitted_at": now()}
+            start = None
             try:
                 try:
                     flow.recover_flow_home(page)
                 except Exception:
                     pass
+                if stills:
+                    start = raw.parent.parent / "refs/v02_flow_stills" / f"{pid}_t{take}.png"
+                    entry["still_prompt"] = still_tool.still_prompt(LOOK, core_for(plate))
+                    still_tool.make_still(page, entry["still_prompt"], start)
+                    after_still, _ = read_account(page)
+                    entry.update(start_frame=str(start), start_frame_sha256=sha256(start),
+                                 style_ref_chips=getattr(still_tool.make_still, "refs_attached", None),
+                                 credits_after_still=after_still)
+                    if after_still is not None and after_still < credits:
+                        entry.update(status="STOP", why=f"still cost {credits - after_still} credits (passed at 0)")
+                        log["takes"][key(pid)] = entry
+                        log["stopped"] = {"at": now(), "plate": pid, "why": entry["why"]}
+                        save_log(part, log)
+                        print(f"STOP {entry['why']}", flush=True)
+                        return 5
                 info = flow.generate_clip(page, entry["prompt"], dest, model=model, timeout_s=600,
-                                          start_frame=None, scenery_only=True, attempts=1,
+                                          start_frame=start, scenery_only=start is None, attempts=1,
                                           reuse_project=False) or {}
                 entry["project_url"] = info.get("project_url") or info.get("url") or ""
                 if not dest.exists() or dest.stat().st_size < 400_000:
@@ -316,7 +345,7 @@ def mint(part: str, only: set[str], max_n: int | None) -> int:
                     harvest(page, flow, entry["project_url"], dest)
                 import orbit_gemini_veo as veo
                 veo.strip_audio(dest)
-                sheet = uat / f"{pid}_t1_sheet.jpg"
+                sheet = uat / f"{pid}_t{take}_sheet.jpg"
                 contact_sheet(dest, sheet)
                 entry.update(status="PENDING_UAT", file=str(dest), sha256=sha256(dest),
                              duration_s=round(duration(dest), 3), uat_sheet=str(sheet),
@@ -334,14 +363,14 @@ def mint(part: str, only: set[str], max_n: int | None) -> int:
             else:
                 credits -= cost
             entry["at"] = now()
-            log["takes"][pid] = entry
+            log["takes"][key(pid)] = entry
             log.setdefault("balance_reads", []).append({"at": now(), "credits": credits, "after": pid})
             save_log(part, log)
             print(f"  -> {entry['status']} used={entry.get('credits_used')} balance={credits}", flush=True)
             if entry["status"] == "FAIL" and "credit" in entry.get("why", "").lower():
                 return 4
 
-    sheets = sorted(uat.glob("*_t1_sheet.jpg"))
+    sheets = sorted(uat.glob("*_sheet.jpg"))
     print(f"DONE part {part}; sheets in {uat} ({len(sheets)})", flush=True)
     return 0
 
@@ -352,6 +381,8 @@ def main() -> None:
     ap.add_argument("--only", nargs="*", default=[])
     ap.add_argument("--max", type=int)
     ap.add_argument("--list", action="store_true")
+    ap.add_argument("--stills", action="store_true", help="Flow Nano Banana 2 start still, then i2v")
+    ap.add_argument("--take", type=int, default=1)
     a = ap.parse_args()
     if a.list:
         total = 0
@@ -363,7 +394,7 @@ def main() -> None:
         return
     if not a.part:
         ap.error("--part is required")
-    sys.exit(mint(a.part, set(a.only), a.max))
+    sys.exit(mint(a.part, set(a.only), a.max, a.stills, a.take))
 
 
 if __name__ == "__main__":
