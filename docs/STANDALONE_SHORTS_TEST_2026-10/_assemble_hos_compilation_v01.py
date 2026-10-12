@@ -8,12 +8,18 @@ Stages:
   plan  write the cut plan (segment order, film-time starts, chapters list draft)
         from prep_report.json where present, else the inventory lengths. Missing
         inputs (006 master, J0204 graphics, intro/bridge plates) are listed, not faked.
+  segment  render one VO segment (intro, bridge, closing) from its checked shots:
+        0.5 s crossfades between shots, VO at -15 LUFS, the 004 bed 14 LU under it,
+        limiter at -1 dBTP; writes the mp4, VO and bed stems, cuts.json (polish_gate
+        format) and segment_report.json. Refuses a segment whose timeline graphic is
+        missing unless --draft.
 
 Inputs and trim points: COMPILATION_ASSEMBLY_INVENTORY_v01.md. Masters are read
 only; nothing on the NAS is written.
 
   python3 _assemble_hos_compilation_v01.py prep [--only 005,001] [--scratch DIR]
   python3 _assemble_hos_compilation_v01.py plan [--scratch DIR] [--out FILE]
+  python3 _assemble_hos_compilation_v01.py segment bridge4 [--draft] [--scratch DIR]
 """
 from __future__ import annotations
 
@@ -65,6 +71,97 @@ BREATH = 0.6           # picture and bed past a VO segment's last word
 END_CARD_HOLD = 3.5 + 2.5  # closing end card 3-4 s, then hold 2-3 s
 TIMELINE_ROWS = {"bridge1": "code_graphic_comp_timeline_b1", "bridge3": "code_graphic_comp_timeline_b3",
                  "bridge5": "code_graphic_comp_timeline_b5", "closing": "code_graphic_comp_timeline_close"}
+
+# Segment stage. Shots are (film, master in, master out) windows from the normalised masters,
+# each checked frame by frame for burned-in labels (_label_scan_v01.py misses 003's italic
+# labels from ~103 s: CARDBOARD, FLUORESCENT) and the lower-third captions (003 90.5-94.9 s
+# WHY COVER THE TUBE). Only segments whose inputs all exist are listed.
+VO_LEAD = 0.25
+SHOT_XFADE = 0.5
+VO_I, BED_I = -15.0, -29.0  # bed sits 14 LU under the VO; sfx_kit level wants >= 10
+BED = HOS / "02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-full_score_bed_v01.mp3"
+BED_IN = {"intro": 0.0, "bridge1": 60.0, "bridge2": 90.0, "bridge3": 120.0, "bridge4": 150.0,
+          "bridge5": 180.0, "closing": 220.0}  # distinct stretches of the 390.8 s bed
+SEGMENT_SHOTS = {
+    # 9.79 s of shots after the 002 one are needed; 003 95.2-101.8 s is clean (6.6 s), so one
+    # more checked shot of ~3.3 s is still to find before this renders.
+    "bridge4": [("002", 230.0, 235.0), ("003", 95.2, 101.8)],
+}
+
+
+def seg_len(name: str) -> float:
+    tail = BREATH + (END_CARD_HOLD if name == "closing" else 0.0)
+    return VO_LEAD + VO_LEN[name] + tail
+
+
+def cmd_segment(args) -> int:
+    scratch = Path(args.scratch)
+    name = args.name
+    shots = SEGMENT_SHOTS.get(name)
+    if not shots:
+        print(f"{name}: no checked shots yet (see COMPILATION_PLATES_v01.json missing rows)")
+        return 2
+    graphic = None
+    if name in TIMELINE_ROWS:
+        graphic = GRAPHICS_DIR / f"{TIMELINE_ROWS[name]}.mov"
+        if not graphic.exists():
+            if not args.draft:
+                print(f"{name}: {graphic.name} missing (J0204); rerun with --draft for a picture-only test")
+                return 2
+            graphic = None
+    L = seg_len(name)
+    need = L + SHOT_XFADE * (len(shots) - 1)
+    have = sum(b - a for _, a, b in shots)
+    if have + 1e-3 < need:
+        print(f"{name}: shots cover {have:.2f} s, need {need:.2f} s")
+        return 2
+    out_dir = scratch / "segments" / name
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    cmd = ["ffmpeg", "-hide_banner", "-y"]
+    for film, a, b in shots:
+        cmd += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(scratch / f"film_{film}_norm.mp4")]
+    vo = VO_DIR / f"hos_comp_{name}_vo_v01.wav"
+    cmd += ["-i", str(vo), "-ss", f"{BED_IN[name]:.3f}", "-t", f"{L + 1:.3f}", "-i", str(BED)]
+    n = len(shots)
+    fc, prev, t = [], "[0:v]", 0.0
+    for i in range(1, n):
+        t += (shots[i - 1][2] - shots[i - 1][1]) - SHOT_XFADE
+        fc.append(f"{prev}[{i}:v]xfade=transition=fade:duration={SHOT_XFADE}:offset={t:.3f}[x{i}]")
+        prev = f"[x{i}]"
+    fc.append(f"{prev}trim=duration={L:.3f},setpts=PTS-STARTPTS,format=yuv420p[vout]")
+    fc.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,"
+              f"loudnorm=I={VO_I}:TP=-2:LRA=11,adelay={int(VO_LEAD * 1000)}:all=1,"
+              f"apad,atrim=duration={L:.3f},asplit=2[vo][vostem]")
+    fc.append(f"[{n + 1}:a]aresample=48000,aformat=channel_layouts=stereo,loudnorm=I={BED_I}:TP=-6:LRA=11,"
+              f"atrim=duration={L:.3f},afade=t=in:d=1.5,afade=t=out:st={L - 1.5:.3f}:d=1.5,asplit=2[bed][bedstem]")
+    fc.append("[vo][bed]amix=inputs=2:normalize=0,alimiter=limit=0.89:level=false[mix]")
+    mp4 = out_dir / f"hos_comp_{name}_v01{'_draft' if args.draft else ''}.mp4"
+    cmd += ["-filter_complex", ";".join(fc),
+            "-map", "[vout]", "-map", "[mix]", "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-r", "30",
+            "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-movflags", "+faststart", str(mp4),
+            "-map", "[vostem]", "-c:a", "pcm_s24le", str(out_dir / f"{name}_vo_stem.wav"),
+            "-map", "[bedstem]", "-c:a", "pcm_s24le", str(out_dir / f"{name}_bed_stem.wav")]
+    r = run(cmd)
+    if r.returncode != 0:
+        print(r.stderr[-2000:])
+        return 1
+    cuts, t = [], 0.0
+    for i, (film, a, b) in enumerate(shots):
+        d = b - a
+        cuts.append({"row": f"{name}_{i + 1:02d}", "timeline_in": round(t, 3),
+                     "timeline_out": round(min(t + d, L), 3), "source": f"film_{film}_norm.mp4@{a:.2f}",
+                     "framing": {"offset": a, "fit": "full 16:9 from the film's passed master"}})
+        t += d - SHOT_XFADE
+    (out_dir / "cuts.json").write_text(json.dumps(cuts, indent=1))
+    rec = {"segment": name, "length": round(L, 3), "draft": bool(args.draft), "mp4": str(mp4),
+           "graphic": str(graphic) if graphic else (TIMELINE_ROWS.get(name, "") + " missing" if name in TIMELINE_ROWS else None),
+           "shots": shots, "vo": str(vo), "bed": str(BED), "bed_in": BED_IN[name],
+           "loudness_mix": measure(mp4, None), "probe": probe(mp4)}
+    (out_dir / "segment_report.json").write_text(json.dumps(rec, indent=1))
+    lo = rec["loudness_mix"]
+    print(f"{name}: {mp4} {L:.2f} s, mix I={lo['input_i']} TP={lo['input_tp']}")
+    return 0
 
 
 def run(cmd: list[str]) -> subprocess.CompletedProcess:
@@ -232,6 +329,11 @@ def main() -> int:
     p.add_argument("--scratch", default=str(SCRATCH))
     p.add_argument("--out")
     p.set_defaults(fn=cmd_plan)
+    p = sub.add_parser("segment")
+    p.add_argument("name", choices=sorted(VO_LEN))
+    p.add_argument("--draft", action="store_true", help="render without a missing timeline graphic")
+    p.add_argument("--scratch", default=str(SCRATCH))
+    p.set_defaults(fn=cmd_segment)
     args = ap.parse_args()
     return args.fn(args)
 
