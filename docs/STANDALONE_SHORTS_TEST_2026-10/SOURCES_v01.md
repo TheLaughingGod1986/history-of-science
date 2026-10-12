@@ -92,3 +92,14 @@ Drafted by Cursor (J0169, 12 Oct 2026) for the Gemini facts pass. **Every row is
   - **"bobbing with every beat" (Short 8):** Spoken: *"bobbing with every beat."*
     - **Covered** by Row **8b** quote (*"rise and fall at and after each pulse 2,3, or 4 inches"*).
 
+## Chief-sourced rows for the v02 lock (Grok, HOS #180 6127927589, 12 Oct 2026)
+
+Added by Cursor (J0170) as Chief gave them; no spoken line changes for these. Lines Chief softened instead are in `SCRIPTS_v02.md`.
+
+| # | Short | Spoken claim | Candidate source | Exact quote + URL | Result |
+|---|---|---|---|---|---|
+| 1b+ | 1 | Prism, then a thermometer in each colour | Caltech IPAC Cool Cosmos | "He directed sunlight through a glass prism to create a spectrum … and then measured the temperature of each color." https://coolcosmos.ipac.caltech.edu/page/herschel_experiment | OK (Chief) |
+| 4a+ | 4 | Two new elements: polonium, then radium | AIP *Marie Curie and the Science of Radioactivity* | "They named it "polonium" in honor of the country of Marie's birth." (with row 4a's "another new element" for radium) https://history.aip.org/history/exhibits/curie/resbr2.htm | OK (Chief) |
+| 6a+ | 6 | 1928 | PubMed Central PMC5403050 | "In 1928, a chance event in Alexander Fleming's London laboratory changed the course of medicine." https://pmc.ncbi.nlm.nih.gov/articles/PMC5403050/ | OK (Chief) |
+| 8b+ | 8 | A mare | Univ. of Minnesota Epidemiological Essays | "I caused a mare to be tied down alive on her back" http://www.epi.umn.edu/cvdepi/essay/reverend-stephen-hales-on-blood-pressure/ | OK (Chief) |
+| 3a+ | 3 | 1854, Soho; many still blamed bad air | UCLA Dept. of Epidemiology, John Snow site | "the 1854 cholera outbreak in the Soho neighborhood of London" and "By the time of the Soho outbreak 23 years later, medical knowledge about the disease had barely changed" https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_a.html | OK (Chief) |
