@@ -1,0 +1,78 @@
+{
+  "stem": "hos_010_short_A_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0159"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 316,
+      "duration_s": 22.72
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 316,
+  "words": 60,
+  "duration_s": 22.72,
+  "loudness": {
+    "lufs_integrated": -18.9,
+    "mean_volume_db": -22.2,
+    "max_volume_db": -3.8
+  },
+  "sha256_mp3": "68d88b5b5883f2376bcec29c26d77efea7634d5c7705693f41202ca587b927fb",
+  "scribe": {
+    "transcript": "This thin line of clay marks the end of the dinosaurs. It's in a cliff in Italy about a centimeter thick. Below it, the rock is full of tiny fossil shells. Above it, almost all of them are gone. In 1980, scientists found the clay was packed with a rare metal from space. Something huge had hit the Earth",
+    "script_words": 60,
+    "scribe_words": 59,
+    "match_rate_pct": 95.0,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "centimetre"
+        ],
+        "scribe": [
+          "centimeter"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "nineteen",
+          "eighty"
+        ],
+        "scribe": [
+          "1980"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 200761,
+      "limit": 209536,
+      "remaining": 8775
+    },
+    "after": {
+      "used": 200800,
+      "limit": 209536,
+      "remaining": 8736
+    },
+    "counter_delta": 39
+  },
+  "text": "This thin line of clay marks the end of the dinosaurs. It's in a cliff in Italy, about a centimetre thick. Below it, the rock is full of tiny fossil shells. Above it, almost all of them are gone. In nineteen eighty, scientists found the clay was packed with a rare metal from space. Something huge had hit the Earth.",
+  "made_at": "2026-10-12T19:56:20+0100"
+}
