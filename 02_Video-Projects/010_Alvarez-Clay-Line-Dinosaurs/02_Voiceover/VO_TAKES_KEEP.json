@@ -2,7 +2,7 @@
   "film": "010",
   "script": "01_Script/clay_script_master_v01.md",
   "voice": "Ben Orbit Narrator / eleven_v3 / speed 1.04",
-  "status": "PROPOSED by cursor (J0113, 10 Oct 2026); keep call is the Chief's on desk #180",
+  "status": "LOCKED v01: Chief KEEP all five parts, no pickups (desk #180 comment 6101773293, 11 Oct); sha256 re-checked against the Mini files 2026-10-12 (J0208)",
   "script_change": "Opening line per the Chief's OK (J0112, desk #180 6096338312): 'solved one of the biggest mysteries in the history of life.'",
   "total_speech_s": 499.84,
   "credits_spent": 3182,
@@ -53,5 +53,6 @@
       "vo_check": "FAIL mean -24.6 dB peak -4.3 dB 138 wpm",
       "note": "v01; vo_check 'still a'/'to the' at ~1:50.7 is small.en only (medium.en + Scribe hear 'That's still a mystery'): accept under rule (d). Pace warn 138 wpm; Scribe misses are numerals only (10, 1990s, 180, 66)"
     }
-  }
+  },
+  "chief_comment": 6101773293
 }
