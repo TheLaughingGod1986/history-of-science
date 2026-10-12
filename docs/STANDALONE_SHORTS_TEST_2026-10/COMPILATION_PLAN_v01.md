@@ -81,7 +81,7 @@ J0175 writes the final timestamps once the trims are made.
 5. **Masters.** J0175 must find each film's upload master (the films' `09_Final-Export`, or the NAS for moved projects) and check its duration against the YouTube runtime above. Never download from YouTube.
 6. **Duplicate private uploads.** 005 has a second private copy (`0IfXGSX7Ypw`, no publishAt). The compilation's chapter links use the scheduled id `wwcjcFfC-5M`.
 7. **Gemini claims pass** on the script's MUST QUOTE table before VO, per AGENTS.md "Quotes must be real".
-8. **VO budget.** About 330 spoken words, about 1,850 characters, so roughly 1.9k ElevenLabs credits for one take through `el_client.py`. It's queued behind the Shorts-test VO (Chief, 12 Oct 14:53).
+8. **VO budget.** About 385 spoken words, about 2,040 characters, so roughly 2.1k ElevenLabs credits for one take through `el_client.py`. It's queued behind the Shorts-test VO (Chief, 12 Oct 14:53).
 
 ## Measure
 

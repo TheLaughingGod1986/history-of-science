@@ -2,7 +2,7 @@
 
 Draft by Cursor, covering Claude's `script` job, 12 Oct 2026. **Not locked:** Chief locks it after a Gemini claims pass on the MUST QUOTE table below (AGENTS.md "Quotes must be real"). Plan and running order: `COMPILATION_PLAN_v01.md`.
 
-Voice: Ben Orbit Narrator, eleven_v3, the house client (`04_Audio/tools/el_client.py`), then `vo_check.py`. Spoken words: about 330, about 1,850 characters (intro ~120, bridges ~35 each, closing ~60). Discovery, wonder, proof: no goodbye and no subscribe ask. The Explorer doesn't appear in the new material.
+Voice: Ben Orbit Narrator, eleven_v3, the house client (`04_Audio/tools/el_client.py`), then `vo_check.py`. Spoken words: about 385, about 2,040 characters (intro ~115, bridges ~40 each, closing ~65). Discovery, wonder, proof: no goodbye and no subscribe ask. The Explorer doesn't appear in the new material.
 
 ---
 
