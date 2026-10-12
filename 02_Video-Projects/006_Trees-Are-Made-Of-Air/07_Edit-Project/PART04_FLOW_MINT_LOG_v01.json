@@ -1,0 +1,43 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "part": "04",
+  "job": "J0140",
+  "pass": "J0139 desk #180 6133713891",
+  "engine": "Flow Veo 3.1 text-to-video via CDP :9222",
+  "takes": {
+    "10_only_green": {
+      "plate": "10_only_green",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "path": "flow-cdp",
+      "explorer": false,
+      "prompt": "IMAGE-TO-VIDEO from text description (no attached still). History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Three jars of water on the sunny sill: a pale root, a red flower and a green leaf; only the green leaf fizzes with bubbles. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 25050,
+      "submitted_at": "2026-10-12T23:11:51+00:00",
+      "project_url": "https://flow.google.com/project/9245d325-5a8d-4c4d-a2a0-70b0cd55330d",
+      "status": "PENDING_UAT",
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/10_only_green_t1.mp4",
+      "sha256": "9b9be46691d3ae02db128e33a4881845c73f1b4157ce2056bb07b73341c64a3c",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/uat/10_only_green_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "at": "2026-10-12T23:13:24+00:00"
+    }
+  },
+  "balance_reads": [
+    {
+      "at": "2026-10-12T23:11:51+00:00",
+      "credits": 25050,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-12T23:13:24+00:00",
+      "credits": 25040,
+      "after": "10_only_green"
+    }
+  ],
+  "updated": "2026-10-12T23:13:24+00:00"
+}
