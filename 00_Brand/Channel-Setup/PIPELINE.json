@@ -290,7 +290,7 @@
       "title": "Why Vaccines Are Named After a Cow",
       "air": "2026-11-12",
       "ready_by": "2026-11-08",
-      "summary": "Script, facts and long voiceover are done. Shorts are now two (v02, test B); their voiceover is next in the queue. Picture waits until the whole voiceover batch has passed.",
+      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done; the Shorts takes wait for the Chief's keep call. Picture waits for Claude's board review and credit.",
       "stages": {
         "topic": {
           "status": "done"
@@ -314,11 +314,9 @@
           "note": "v02 (test B): two search-titled Shorts, 9 Oct"
         },
         "shorts_vo": {
-          "status": "todo",
+          "status": "done",
           "owner": "Cursor",
-          "due": "2026-10-12",
-          "left": "about 1 hour once started",
-          "waiting": "J0109: v02 Shorts B + C voiceover; ElevenLabs balance first"
+          "note": "B v02 25.5 s + C v02 24.8 s locked 12 Oct; Chief KEEP both (desk 6096257381, VO_LOCK_CHIEF_PASS_20261012.json)"
         },
         "picture": {
           "status": "todo",

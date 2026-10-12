@@ -11,7 +11,7 @@
 | **004** What's Really Inside an Atom? | Thu 15 Oct (3 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟢 on track |
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (17 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (24 d) | 57% | Picture (in progress) | **Cursor** · ▶️ underway | 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d) | Sun 1 Nov (in 20 d) | 🟢 on track |
-| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (31 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (J0109: v02 Shorts B + C voiceover; ElevenLabs balance first) | starts later; due today | Sun 8 Nov (in 27 d) | 🟢 on track |
+| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (31 d) | 40% | Picture (to do) | **Claude** · queued (Claude's review of the boards; then the voiceover batch and picture credit) | starts later; due in 20 d | Sun 8 Nov (in 27 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (38 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 4 d late | Sun 15 Nov (in 34 d) | 🟠 behind |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (45 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (J0108 posts the opening, the Chief OKs it (J0110), then J0111 records; balance first) | starts later; due in 2 d | Sun 22 Nov (in 41 d) | 🟠 behind |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (52 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (after 009 VO: opening OK (J0112), then J0113 records; balance first) | starts later; due in 4 d | Sun 29 Nov (in 48 d) | 🟠 behind |
@@ -33,7 +33,7 @@
 **Cursor**
 - ▶️ Underway: 006 Picture, since Sat 10 Oct (1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d))
 - ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK
-- ⏭ Next up: 008 Shorts voiceover, due Thu 8 Oct; 007 Shorts voiceover, due Mon 12 Oct; 009 Voiceover (long), due Wed 14 Oct
+- ⏭ Next up: 008 Shorts voiceover, due Thu 8 Oct; 009 Voiceover (long), due Wed 14 Oct; 010 Voiceover (long), due Fri 16 Oct
 
 ## Being worked on right now
 
@@ -129,11 +129,11 @@ Words and voice are finished. Picture is about half done: Part 01 is kept, Part 
 
 ### 007 · Why Vaccines Are Named After a Cow
 
-`███████░░░░░░░░░░░░░` **35%**
+`████████░░░░░░░░░░░░` **40%**
 
 Airs **Thu 12 Nov** · ready for Ben's OK by **Sun 8 Nov** · 🟢 on track
 
-Script, facts and long voiceover are done. Shorts are now two (v02, test B); their voiceover is next in the queue. Picture waits until the whole voiceover batch has passed.
+Script, facts, long voiceover and both Shorts' voiceover (v02) are done; the Shorts takes wait for the Chief's keep call. Picture waits for Claude's board review and credit.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.3
@@ -141,7 +141,7 @@ Script, facts and long voiceover are done. Shorts are now two (v02, test B); the
 - ✅ **Audit + upload package** — done
 - ✅ **Voiceover (long)** — done: about 8.4 min; Part 01 v03 with the shut-up-house pickup
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
-- ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 12 Oct (today))
+- ✅ **Shorts voiceover** — done: B v02 25.5 s + C v02 24.8 s locked 12 Oct; Chief KEEP both (desk 6096257381, VO_LOCK_CHIEF_PASS_20261012.json)
 - ⬜ **Picture** — to do (with Claude since Wed 7 Oct, due Sun 1 Nov (in 20 d)): plate boards BOARD_V01: re-timed from the locked VO (8:32) and priced 7 Oct (96 rows: 80 mints = 25 Quality + 55 Fast, 2 of them on Flow, 16 reuses; 36 rows added because the VO runs longer than the script's estimate). First takes about £58, about £139 with usual retakes, against £20.59 usable Vertex. Waits for Claude's review, the voiceover batch and credit; nothing minted
 - ⬜ **Edit + master** — to do (with Grok, due Thu 5 Nov (in 24 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 5 Nov (in 24 d))
