@@ -103,3 +103,13 @@ Added by Cursor (J0170) as Chief gave them; no spoken line changes for these. Li
 | 6a+ | 6 | 1928 | PubMed Central PMC5403050 | "In 1928, a chance event in Alexander Fleming's London laboratory changed the course of medicine." https://pmc.ncbi.nlm.nih.gov/articles/PMC5403050/ | OK (Chief) |
 | 8b+ | 8 | A mare | Univ. of Minnesota Epidemiological Essays | "I caused a mare to be tied down alive on her back" http://www.epi.umn.edu/cvdepi/essay/reverend-stephen-hales-on-blood-pressure/ | OK (Chief) |
 | 3a+ | 3 | 1854, Soho; many still blamed bad air | UCLA Dept. of Epidemiology, John Snow site | "the 1854 cholera outbreak in the Soho neighborhood of London" and "By the time of the Soho outbreak 23 years later, medical knowledge about the disease had barely changed" https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_a.html | OK (Chief) |
+
+## Gemini row for the S5 lock condition (J0212, 12 Oct 2026)
+
+Chief's v02 lock (HOS #180 6127927589) asked for one exact quote that Penzias and Wilson blamed or suspected the pigeons before S5 VO. Gemini (`agy`) found it; Cursor fetched both pages and confirmed each sentence is on its page verbatim. No spoken line changes, so S5 line 1 and its caption stay as locked. (Row number 5b+ because 5c is already the "every direction" row.)
+
+| # | Short | Spoken claim | Candidate source | Exact quote + URL | Result |
+|---|---|---|---|---|---|
+| 5b+ | 5 | The noise was blamed on pigeons (their droppings in the antenna) | AIP *Cosmic Journeys / Tools of Cosmology*; backup Nokia Bell Labs *Arno Penzias* | "At one point, Penzias and Wilson thought that pigeon droppings inside their horn-shaped antenna were the cause of the peculiar readings they were getting." https://history.aip.org/exhibits/cosmology/tools/tools-new.htm · backup: "At some point they even wondered if it was the result of pigeon droppings inside the 20-foot horn antenna they were using." https://www.nokia.com/bell-labs/about/history/arno-penzias/ | OK |
+
+Searched with no usable sentence: Smithsonian *How Scientists Confirmed Big Bang Theory Owe It All to a Pigeon Trap* (pigeons as "new suspects", but only as questions), APS Historic Sites Holmdel (droppings found and cleaned, no "suspected"), Nokia Bell Labs *Confirming the Big Bang*, NASA Imagine *Cosmic Times 1965*, NRAO (no page), Nobel lectures 1978 (Penzias, Wilson: no pigeons).
