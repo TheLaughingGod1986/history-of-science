@@ -1,0 +1,70 @@
+{
+  "stem": "hos_sa_s4_curie_notebooks_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0169-chief-lock"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 306,
+      "duration_s": 23.92
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 306,
+  "words": 51,
+  "duration_s": 23.92,
+  "loudness": {
+    "lufs_integrated": -19.7,
+    "mean_volume_db": -22.9,
+    "max_volume_db": -3.7
+  },
+  "sha256_mp3": "134fc5250d4b6b34a8d30c3dc048e0b3166dc74f4077e303db3e707a15a5f594",
+  "scribe": {
+    "transcript": "Marie Curie's notebooks are still radioactive. In 1898, she and Pierre found two new elements, polonium, then radium. Radium glowed in the dark, and she handled it for years with no protection. Today, her papers sit in lead-lined boxes in Paris. Radium takes 1,600 years to lose half its strength",
+    "script_words": 52,
+    "scribe_words": 52,
+    "match_rate_pct": 96.15,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "sixteen",
+          "hundred"
+        ],
+        "scribe": [
+          "1",
+          "600"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 198144,
+      "limit": 209536,
+      "remaining": 11392
+    },
+    "after": {
+      "used": 198144,
+      "limit": 209536,
+      "remaining": 11392
+    },
+    "counter_delta": 0
+  },
+  "text": "Marie Curie's notebooks are still radioactive. In 1898, she and Pierre found two new elements: polonium, then radium. Radium glowed in the dark, and she handled it for years with no protection. Today her papers sit in lead-lined boxes in Paris. Radium takes sixteen hundred years to lose half its strength.",
+  "made_at": "2026-10-12T18:52:51+0100"
+}

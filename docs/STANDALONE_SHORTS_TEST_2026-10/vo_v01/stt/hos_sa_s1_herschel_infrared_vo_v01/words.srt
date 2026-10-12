@@ -1,0 +1,35 @@
+1
+00:00:00,140 --> 00:00:04,019
+In 1800, a thermometer found light no one
+
+2
+00:00:04,140 --> 00:00:04,680
+could see.
+
+3
+00:00:05,560 --> 00:00:07,440
+William Herschel split sunlight with a
+
+4
+00:00:07,480 --> 00:00:10,160
+prism and held thermometers in each color.
+
+5
+00:00:10,980 --> 00:00:13,000
+Red was warmer than violet.
+
+6
+00:00:13,880 --> 00:00:16,239
+Then he moved one past the red into the
+
+7
+00:00:16,280 --> 00:00:19,620
+dark. It got hotter still. He'd found
+
+8
+00:00:19,820 --> 00:00:23,500
+infrared, invisible light just past the
+
+9
+00:00:23,540 --> 00:00:23,840
+red
