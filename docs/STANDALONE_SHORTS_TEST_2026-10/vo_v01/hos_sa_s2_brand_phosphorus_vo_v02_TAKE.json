@@ -1,0 +1,58 @@
+{
+  "stem": "hos_sa_s2_brand_phosphorus_vo_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6127927589"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 268,
+      "duration_s": 22.4
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 268,
+  "words": 49,
+  "duration_s": 22.4,
+  "loudness": {
+    "lufs_integrated": -20.0,
+    "mean_volume_db": -23.1,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "d43b82c1bf5173909ec358d8792dedbe7feb01a840d5426c2b69f3de7ebd4c38",
+  "scribe": {
+    "transcript": "In 1669, a man boiled urine to make gold. Hennig Brand in Hamburg hoped to find gold hiding inside it. He boiled it down to a black sludge. No gold. Instead, a white substance that glowed in the dark. He'd found phosphorus, the first element with a known discoverer",
+    "script_words": 49,
+    "scribe_words": 49,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 200306,
+      "limit": 209536,
+      "remaining": 9230
+    },
+    "after": {
+      "used": 200306,
+      "limit": 209536,
+      "remaining": 9230
+    },
+    "counter_delta": 0
+  },
+  "text": "In 1669, a man boiled urine to make gold. Hennig Brand, in Hamburg, hoped to find gold hiding inside it. He boiled it down to a black sludge. No gold. Instead, a white substance that glowed in the dark. He'd found phosphorus, the first element with a known discoverer.",
+  "made_at": "2026-10-12T19:26:35+0100"
+}

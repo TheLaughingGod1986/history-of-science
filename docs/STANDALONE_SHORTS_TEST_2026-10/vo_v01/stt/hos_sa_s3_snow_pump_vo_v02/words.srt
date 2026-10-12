@@ -1,0 +1,35 @@
+1
+00:00:00,100 --> 00:00:03,260
+In 1854, a killer was hiding in a water
+
+2
+00:00:03,340 --> 00:00:03,640
+pump.
+
+3
+00:00:04,780 --> 00:00:06,900
+Cholera was killing hundreds in Soho,
+
+4
+00:00:07,000 --> 00:00:09,980
+London, and many still blamed bad air.
+
+5
+00:00:11,160 --> 00:00:13,320
+John Snow tracked where the dead had
+
+6
+00:00:13,380 --> 00:00:13,760
+lived.
+
+7
+00:00:14,840 --> 00:00:16,840
+They crowded round one pump on Broad
+
+8
+00:00:16,960 --> 00:00:20,360
+Street. He had its handle taken off. The
+
+9
+00:00:20,420 --> 00:00:21,540
+killer was in the water
