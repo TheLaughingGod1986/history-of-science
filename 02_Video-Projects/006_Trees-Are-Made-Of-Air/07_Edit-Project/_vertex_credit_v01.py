@@ -94,10 +94,13 @@ def main() -> int:
     for i, ln in enumerate(rows):
         if ln.strip() == "Free Trial":
             window = " ".join(rows[i:i + 8])
-            if "Available" in window:
+            # Active credit reads "Available" or, near its end date, "Expiring in N days" (12 Oct 2026: the trial
+            # ends 11 Nov). Anything else (Expired, Used) is not spendable.
+            act = re.search(r"Available|Expiring in \d+ days?", window)
+            if act and not re.search(r"\bExpired\b|\bUsed\b", window.split("Free Trial")[1][:60] if "Free Trial" in window else ""):
                 m = re.search(r"£([\d,]+\.\d\d)", window)
                 if m:
-                    remaining, status = float(m.group(1).replace(",", "")), "Available"
+                    remaining, status = float(m.group(1).replace(",", "")), act.group(0)
                     break
     if remaining is None:
         print(f"STOP: could not read the Free Trial row (screenshot {shot})")
