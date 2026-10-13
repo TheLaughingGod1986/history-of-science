@@ -356,3 +356,20 @@ With both, the expected cost is about **£70.69, around £5 over** (or about £6
 Next on your word: mint Part 01 (Vertex, from `01_willow_air`) and read the credit after each part, as with 005. I'll do any merges you want in the boards first.
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.
+
+
+## 13 Oct 2026 — J0140 Senebier recovery (Codex covering)
+
+Chief desk rulings 6140112141 / 6140142639 authorize a fresh zero-credit Nano Banana still and one Fast i2v attempt for P5:02. P5:03 uses the Chief-reassigned P5:11 clip. Runner `_probe_senebier_fast_v01.py` uses a fresh t3 filename and refuses another submitted attempt.
+
+Initial run stopped before Create because neither uploaded style reference was attached. Flow remained 23,690 credits (0 spent). `_flow_still_v01.py` now waits for each exact completed upload tile and verifies prompt chips. No-spend live check output:
+
+```text
+attach via library 04_sunny_window_v01.jpg: True (chips=1)
+attach via library 10_mint_jar_v01.jpg: True (chips=2)
+No-spend style-ref attachment check: 2 chips
+```
+
+Both changed Python files compile. `status_board.py --check`: `STATUS.md and kanban/index.html match PIPELINE.json`. These are tool checks only, no creative PASS.
+
+Resumed detached in tmux `j0140-senebier-fast-v02`, under the `flow-cdp-9222` writer lock. Log `/Users/benjaminoats/_desk/logs/j0140-senebier-fast-v02.log`; exit marker same stem `.done`. Read it before continuing; missing marker means still running. No duplicate or further paid retry. P4:08 t2 remains for Chief KEEP; missing paid P4:06 t2 remains for Chief decision. PR #310 records code and board, media stays outside git. Shared checkout changes were preserved; its pull was blocked by them.
