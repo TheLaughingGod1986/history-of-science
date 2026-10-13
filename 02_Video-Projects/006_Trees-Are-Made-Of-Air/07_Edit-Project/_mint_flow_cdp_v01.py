@@ -405,6 +405,12 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
             print(f"  -> {entry['status']} used={entry.get('credits_used')} balance={credits}", flush=True)
             if entry["status"] == "FAIL" and "credit" in entry.get("why", "").lower():
                 return 4
+            if (entry.get("credits_used") or 0) > cost:
+                log["stopped"] = {"at": now(), "plate": pid, "credits": credits,
+                                  "why": f"charged {entry['credits_used']} > priced {cost} (model drift?)"}
+                save_log(part, log)
+                print(f"STOP {log['stopped']['why']}", flush=True)
+                return 6
 
     sheets = sorted(uat.glob("*_sheet.jpg"))
     print(f"DONE part {part}; sheets in {uat} ({len(sheets)})", flush=True)
