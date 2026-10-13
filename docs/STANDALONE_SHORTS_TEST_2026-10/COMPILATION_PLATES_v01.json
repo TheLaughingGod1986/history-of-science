@@ -284,12 +284,12 @@
    "object": "atom in space, then tiny nucleus in the dark hall",
    "film": "004",
    "t": 314.1,
-   "status": "picked",
+   "status": "dropped (run 9)",
    "window": [
     310.0,
     318.3
    ],
-   "note": "Run 8: under the timeline; stadium from 319 s; polish_gate low-detail WARN (film's own shot). Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+   "note": "Run 8: under the timeline; stadium from 319 s; polish_gate low-detail WARN (film's own shot). Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window. Run 9: dropped. 314.5-318.5 s (dark hall) measures mean luma 22-26, so polish_gate FAILs near-black once it is sampled there, and 310-314.4 s is the J0204 closing timeline's own blurred plate. The beam shot now runs 252.0-261.7 s through the film's own cut (~257 s) to the two scientists for 'by people who refused to trust the obvious answer' (0.5 s eye sheet clean)."
   },
   {
    "use": "closing",

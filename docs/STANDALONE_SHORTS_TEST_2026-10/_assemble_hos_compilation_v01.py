@@ -78,10 +78,13 @@ TIMELINE_ROWS = {"bridge1": "code_graphic_comp_timeline_b1", "bridge3": "code_gr
 # WHY COVER THE TUBE). Only segments whose inputs all exist are listed.
 VO_LEAD = 0.25
 SHOT_XFADE = 0.5
-VO_I, BED_I = -15.0, -29.0  # bed sits 14 LU under the VO; sfx_kit level wants >= 10
+VO_I, BED_I = -15.0, -32.0  # bed 17 LU under the VO integrated; at 14 LU, sfx_kit level found pockets inside 10 LU
 BED = HOS / "02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-full_score_bed_v01.mp3"
 BED_IN = {"intro": 0.0, "bridge1": 60.0, "bridge2": 90.0, "bridge3": 120.0, "bridge4": 150.0,
           "bridge5": 180.0, "closing": 220.0}  # distinct stretches of the 390.8 s bed
+TICK = HOS / "docs/STANDALONE_SHORTS_TEST_2026-10/sfx_kit_v01/sfx_hos_tick_ink_v01.wav"
+TICK_GAIN_DB = -14.0
+GFX = "gfx"  # a shot ("gfx", 0, length) is the segment's J0204 timeline, played from its start
 SEGMENT_SHOTS = {
     # 003 uses the italic look plus lower-third captions; both windows checked on a 1 s sheet:
     # dark screen 95.2-101.8 s (CARDBOARD from 103 s), lit screen 145.2-149.4 s (card at 151 s).
@@ -90,18 +93,28 @@ SEGMENT_SHOTS = {
     # 001 330.7 s on is the Explorer in the empty theatre (kept out of new material, script v01),
     # so Bridge 3 opens on Lister at the basin (dissolve in ends 325.4 s). 002 candlelit cards hold
     # to ~130.9 s, then dissolve to the daylit desk (clean 131.5-138.4 s, piano from 138.5 s).
-    "bridge3": [("001", 325.5, 330.3), ("002", 117.0, 124.5), ("002", 131.5, 137.0)],
+    # Each timeline is drawn over its blurred plate from background_offset (GRAPHICS_MANIFEST_v01),
+    # so the sharp shot after it starts at offset + length - xfade: the dissolve reads as a focus pull.
+    "bridge3": [("001", 325.5, 329.8), ("002", 117.0, 121.5), (GFX, 0.0, 4.0), ("002", 135.0, 138.4)],
     # 004: the 1909 date card sits at 246 s and the lab hall cuts in at 267 s; the framed foil
     # arrives ~263 s, on "a sheet of gold". 003's hand-at-screen shot dissolves in until 118.8 s.
-    "bridge5": [("003", 118.9, 124.5), ("004", 240.3, 244.8), ("004", 260.0, 266.7)],
+    "bridge5": [("003", 118.9, 124.5), ("004", 240.3, 245.5), (GFX, 0.0, 4.0), ("004", 263.5, 266.7)],
     # Closing: one plate per spoken object, none reusing an intro or bridge window. The willow
     # ("a tree made of air", ~4-6 s) needs 006, so the arm holds over it until then. 005 "Deep
     # arteries" label ends 286 s; 002 1860 date card from 170 s; 003 SOFT TISSUE from ~168 s;
-    # 004 stadium from 319 s. The tail (310 s on) sits under the J0204 timeline and end card.
+    # The beam runs on through the film's own cut (~257 s) to the two scientists for "by people who
+    # refused to trust the obvious answer" (clean to 262.7 s). The timeline lands on "So what is still
+    # invisible" (VO 25.75 s). Plate 25's dark hall (314.5-318.5 s) is near-black, and its atom in space
+    # is the timeline's own blurred plate, so neither is cut in. The orb sits under the end card.
     "closing": [("004", 227.6, 230.9), ("005", 287.6, 291.3), ("001", 298.0, 300.6),
                 ("002", 162.3, 165.6), ("003", 163.8, 167.6), ("004", 224.0, 227.3),
-                ("004", 252.0, 256.7), ("004", 310.0, 318.3), ("004", 214.6, 222.8)],
+                ("004", 252.0, 261.7), (GFX, 0.0, 4.0), ("004", 214.6, 222.8)],
 }
+
+
+def gfx_manifest() -> dict:
+    p = GRAPHICS_DIR / "GRAPHICS_MANIFEST_v01.json"
+    return {Path(r["file"]).stem: r for r in json.loads(p.read_text())} if p.exists() else {}
 
 
 def seg_len(name: str) -> float:
@@ -116,14 +129,20 @@ def cmd_segment(args) -> int:
     if not shots:
         print(f"{name}: no checked shots yet (see COMPILATION_PLATES_v01.json missing rows)")
         return 2
-    graphic = None
+    graphic, gfx_rec = None, None
     if name in TIMELINE_ROWS:
-        graphic = GRAPHICS_DIR / f"{TIMELINE_ROWS[name]}.mov"
-        if not graphic.exists():
+        row = TIMELINE_ROWS[name]
+        graphic = GRAPHICS_DIR / f"{row}.mp4"
+        gfx_rec = gfx_manifest().get(row)
+        if not graphic.exists() or gfx_rec is None:
             if not args.draft:
                 print(f"{name}: {graphic.name} missing (J0204); rerun with --draft for a picture-only test")
                 return 2
-            graphic = None
+            graphic, gfx_rec = None, None
+            shots = [s for s in shots if s[0] != GFX]
+        elif sha256(graphic) != gfx_rec["sha256"]:
+            print(f"{name}: {graphic.name} sha256 differs from GRAPHICS_MANIFEST_v01 (not the passed render)")
+            return 2
     L = seg_len(name)
     need = L + SHOT_XFADE * (len(shots) - 1)
     have = sum(b - a for _, a, b in shots)
@@ -135,14 +154,24 @@ def cmd_segment(args) -> int:
 
     cmd = ["ffmpeg", "-hide_banner", "-y"]
     for film, a, b in shots:
-        cmd += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(scratch / f"film_{film}_norm.mp4")]
+        if film == GFX:
+            cmd += ["-i", str(graphic)]
+        else:
+            cmd += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(scratch / f"film_{film}_norm.mp4")]
     vo = VO_DIR / f"hos_comp_{name}_vo_v01.wav"
-    cmd += ["-i", str(vo), "-ss", f"{BED_IN[name]:.3f}", "-t", f"{L + 1:.3f}", "-i", str(BED)]
+    cmd += ["-i", str(vo), "-ss", f"{BED_IN[name]:.3f}", "-t", f"{L + 1:.3f}", "-i", str(BED), "-i", str(TICK)]
     n = len(shots)
-    fc, prev, t = [], "[0:v]", 0.0
+    starts, t = [], 0.0
+    for film, a, b in shots:
+        starts.append(t)
+        t += (b - a) - SHOT_XFADE
+    ticks = []
+    for (film, a, b), s in zip(shots, starts):
+        if film == GFX:
+            ticks += [round(s + c, 3) for c in gfx_rec["tick_ink_seconds"]]
+    fc, prev = [], "[0:v]"
     for i in range(1, n):
-        t += (shots[i - 1][2] - shots[i - 1][1]) - SHOT_XFADE
-        fc.append(f"{prev}[{i}:v]xfade=transition=fade:duration={SHOT_XFADE}:offset={t:.3f}[x{i}]")
+        fc.append(f"{prev}[{i}:v]xfade=transition=fade:duration={SHOT_XFADE}:offset={starts[i]:.3f}[x{i}]")
         prev = f"[x{i}]"
     fc.append(f"{prev}trim=duration={L:.3f},setpts=PTS-STARTPTS,format=yuv420p[vout]")
     fc.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,"
@@ -150,27 +179,42 @@ def cmd_segment(args) -> int:
               f"apad,atrim=duration={L:.3f},asplit=2[vo][vostem]")
     fc.append(f"[{n + 1}:a]aresample=48000,aformat=channel_layouts=stereo,loudnorm=I={BED_I}:TP=-6:LRA=11,"
               f"atrim=duration={L:.3f},afade=t=in:d=1.5,afade=t=out:st={L - 1.5:.3f}:d=1.5,asplit=2[bed][bedstem]")
-    fc.append("[vo][bed]amix=inputs=2:normalize=0,alimiter=limit=0.89:level=false[mix]")
+    tick_in = f"[{n + 2}:a]aresample=48000,aformat=channel_layouts=stereo,volume={TICK_GAIN_DB}dB"
+    if ticks:
+        fc.append(f"{tick_in},asplit={len(ticks)}" + "".join(f"[tk{i}]" for i in range(len(ticks))))
+        for i, c in enumerate(ticks):
+            fc.append(f"[tk{i}]adelay={int(c * 1000)}:all=1[td{i}]")
+        fc.append("".join(f"[td{i}]" for i in range(len(ticks))) +
+                  f"amix=inputs={len(ticks)}:normalize=0:duration=longest,apad=whole_dur={L:.3f},asplit=2[sfx][sfxstem]")
+    else:
+        fc.append(f"{tick_in},volume=0,apad=whole_dur={L:.3f},asplit=2[sfx][sfxstem]")
+    fc.append("[vo][bed][sfx]amix=inputs=3:normalize=0:duration=first,alimiter=limit=0.89:level=false[mix]")
     mp4 = out_dir / f"hos_comp_{name}_v01{'_draft' if args.draft else ''}.mp4"
+    # Every output carries -t: an apad branch that atrim fails to end once wrote a 16 GB stem.
+    cap = ["-t", f"{L:.3f}"]
     cmd += ["-filter_complex", ";".join(fc),
-            "-map", "[vout]", "-map", "[mix]", "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-r", "30",
+            "-map", "[vout]", "-map", "[mix]", *cap, "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-r", "30",
             "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-movflags", "+faststart", str(mp4),
-            "-map", "[vostem]", "-c:a", "pcm_s24le", str(out_dir / f"{name}_vo_stem.wav"),
-            "-map", "[bedstem]", "-c:a", "pcm_s24le", str(out_dir / f"{name}_bed_stem.wav")]
+            "-map", "[vostem]", *cap, "-c:a", "pcm_s24le", str(out_dir / f"{name}_vo_stem.wav"),
+            "-map", "[bedstem]", *cap, "-c:a", "pcm_s24le", str(out_dir / f"{name}_bed_stem.wav"),
+            "-map", "[sfxstem]", *cap, "-c:a", "pcm_s24le", str(out_dir / f"{name}_sfx_stem.wav")]
     r = run(cmd)
     if r.returncode != 0:
         print(r.stderr[-2000:])
         return 1
-    cuts, t = [], 0.0
-    for i, (film, a, b) in enumerate(shots):
+    cuts = []
+    for i, ((film, a, b), s) in enumerate(zip(shots, starts)):
         d = b - a
-        cuts.append({"row": f"{name}_{i + 1:02d}", "timeline_in": round(t, 3),
-                     "timeline_out": round(min(t + d, L), 3), "source": f"film_{film}_norm.mp4@{a:.2f}",
-                     "framing": {"offset": a, "fit": "full 16:9 from the film's passed master"}})
-        t += d - SHOT_XFADE
+        if film == GFX:
+            src, framing = graphic.name, {"offset": 0.0, "fit": "J0204 code graphic, own render (Chief PASS 13 Oct)"}
+        else:
+            src, framing = f"film_{film}_norm.mp4@{a:.2f}", {"offset": a, "fit": "full 16:9 from the film's passed master"}
+        cuts.append({"row": f"{name}_{i + 1:02d}", "timeline_in": round(s, 3),
+                     "timeline_out": round(min(s + d, L), 3), "source": src, "framing": framing})
     (out_dir / "cuts.json").write_text(json.dumps(cuts, indent=1))
     rec = {"segment": name, "length": round(L, 3), "draft": bool(args.draft), "mp4": str(mp4),
            "graphic": str(graphic) if graphic else (TIMELINE_ROWS.get(name, "") + " missing" if name in TIMELINE_ROWS else None),
+           "ticks": ticks, "tick": str(TICK), "tick_gain_db": TICK_GAIN_DB,
            "shots": shots, "vo": str(vo), "bed": str(BED), "bed_in": BED_IN[name],
            "loudness_mix": measure(mp4, None), "probe": probe(mp4)}
     (out_dir / "segment_report.json").write_text(json.dumps(rec, indent=1))
