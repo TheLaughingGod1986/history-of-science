@@ -3,7 +3,7 @@
   "part": "04",
   "job": "J0140",
   "pass": "J0139 desk #180 6133713891",
-  "engine": "Flow Veo 3.1 text-to-video via CDP :9222",
+  "engine": "Flow Image Nano Banana 2 16:9 still -> Veo 3.1 image-to-video via CDP :9222",
   "takes": {
     "10_only_green": {
       "plate": "10_only_green",
@@ -16,7 +16,7 @@
       "credits_before": 25050,
       "submitted_at": "2026-10-12T23:11:51+00:00",
       "project_url": "https://flow.google.com/project/9245d325-5a8d-4c4d-a2a0-70b0cd55330d",
-      "status": "PENDING_UAT",
+      "status": "FAIL",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/10_only_green_t1.mp4",
       "sha256": "9b9be46691d3ae02db128e33a4881845c73f1b4157ce2056bb07b73341c64a3c",
       "duration_s": 8.0,
@@ -24,7 +24,40 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "at": "2026-10-12T23:13:24+00:00"
+      "at": "2026-10-12T23:13:24+00:00",
+      "why": "Chief desk #180 6134444292: near-photoreal on text-to-video"
+    },
+    "10_only_green#t2": {
+      "plate": "10_only_green",
+      "take": 2,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "path": "flow-cdp-still-i2v",
+      "explorer": false,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Three jars of water on the sunny sill: a pale root, a red flower and a green leaf; only the green leaf fizzes with bubbles. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 25040,
+      "submitted_at": "2026-10-13T00:46:08+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. Three jars of water on the sunny sill: a pale root, a red flower and a green leaf; only the green leaf fizzes with bubbles. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "still_reused": true,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/10_only_green_t2.png",
+      "start_frame_sha256": "844e36b2507c8470a4842024aba68385bbb53da7a20234c1b0a1343b26bab28c",
+      "style_ref_chips": null,
+      "credits_after_still": 25040,
+      "project_url": "https://flow.google.com/project/f269dd3e-3c5b-43d7-8eb6-569c6f7af99d",
+      "status": "PENDING_UAT",
+      "at": "2026-10-13T00:53:38+00:00",
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/10_only_green_t2.mp4",
+      "sha256": "cfd7a02a6d3f203e9528feef1bcfe1fc9f0e7a5a482a83f791de77daec55334d",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/uat/10_only_green_t2_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "harvested_at": "2026-10-13T01:33:10+00:00",
+      "harvest_note": "re-harvested J0140 run 2026-10-13 01:5xZ: hover tile -> <video> src fetched via browser session (0 cr)",
+      "why_prior_fail": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/f269dd3e-3c5b-43d7-8eb6-569c6f7af99d",
+      "credits_after": 25030,
+      "credits_used": 10
     }
   },
   "balance_reads": [
@@ -37,7 +70,83 @@
       "at": "2026-10-12T23:13:24+00:00",
       "credits": 25040,
       "after": "10_only_green"
+    },
+    {
+      "at": "2026-10-12T23:28:05+00:00",
+      "credits": 25040,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-12T23:28:16+00:00",
+      "credits": 25040,
+      "after": "10_only_green"
+    },
+    {
+      "at": "2026-10-12T23:30:30+00:00",
+      "credits": 25040,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-12T23:30:56+00:00",
+      "credits": 25040,
+      "after": "10_only_green"
+    },
+    {
+      "at": "2026-10-12T23:33:29+00:00",
+      "credits": 25040,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-12T23:39:17+00:00",
+      "credits": 25040,
+      "after": "10_only_green"
+    },
+    {
+      "at": "2026-10-13T00:46:08+00:00",
+      "credits": 25040,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-13T00:53:38+00:00",
+      "credits": 25030,
+      "after": "10_only_green"
     }
   ],
-  "updated": "2026-10-12T23:13:24+00:00"
+  "updated": "2026-10-13T01:33:15+00:00",
+  "attempts_failed": [
+    {
+      "plate": "10_only_green",
+      "take": 2,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "path": "flow-cdp-still-i2v",
+      "explorer": false,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Three jars of water on the sunny sill: a pale root, a red flower and a green leaf; only the green leaf fizzes with bubbles. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 25040,
+      "submitted_at": "2026-10-12T23:28:05+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. Three jars of water on the sunny sill: a pale root, a red flower and a green leaf; only the green leaf fizzes with bubbles. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "status": "FAIL",
+      "why": "RuntimeError: Flow prompt settings pill not found",
+      "credits_after": 25040,
+      "credits_used": 0,
+      "at": "2026-10-12T23:28:16+00:00"
+    },
+    {
+      "plate": "10_only_green",
+      "take": 2,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "path": "flow-cdp-still-i2v",
+      "explorer": false,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Three jars of water on the sunny sill: a pale root, a red flower and a green leaf; only the green leaf fizzes with bubbles. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 25040,
+      "submitted_at": "2026-10-12T23:30:30+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. Three jars of water on the sunny sill: a pale root, a red flower and a green leaf; only the green leaf fizzes with bubbles. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "status": "FAIL",
+      "why": "RuntimeError: no style ref attached",
+      "credits_after": 25040,
+      "credits_used": 0,
+      "at": "2026-10-12T23:30:56+00:00"
+    }
+  ]
 }

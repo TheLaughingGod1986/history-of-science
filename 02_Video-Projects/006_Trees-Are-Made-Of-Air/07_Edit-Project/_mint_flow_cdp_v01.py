@@ -213,6 +213,30 @@ def freeze_events(mp4: Path) -> int:
     return err.count("freeze_start")
 
 
+def hover_fetch(page) -> bytes | None:
+    """Clicking a tile opens no player; hovering the newest (top-left) tile mounts a
+    <video> whose src the signed-in browser session can fetch."""
+    try:
+        tiles = [i for i in page.locator("img").all()
+                 if (i.bounding_box() or {}).get("width", 0) > 80]
+        if not tiles:
+            return None
+        box = min((t.bounding_box() for t in tiles), key=lambda b: (round(b["y"]), b["x"]))
+        page.mouse.move(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
+        time.sleep(2)
+        src = page.evaluate(
+            "() => { const v = document.querySelector('video'); return v ? (v.currentSrc || v.src) : null }")
+        if not src:
+            return None
+        r = page.context.request.get(src, timeout=120_000)
+        body = r.body()
+        if r.status == 200 and len(body) > 400_000 and b"ftyp" in body[:64]:
+            return body
+    except Exception as e:
+        print(f"  hover fetch warn: {e}", flush=True)
+    return None
+
+
 def harvest(page, flow, project_url: str, dest: Path, wait_s: int = 360) -> None:
     """Play the new gallery clip and save the mp4 from the network (HOS 004 path)."""
     captured: list[bytes] = []
@@ -239,6 +263,10 @@ def harvest(page, flow, project_url: str, dest: Path, wait_s: int = 360) -> None
             thumbs = flow.collect_gallery_asb_srcs(page)
             print(f"  harvest poll thumbs={len(thumbs)} elapsed={time.time() - t0:.0f}s", flush=True)
             if thumbs:
+                body = hover_fetch(page)
+                if body:
+                    captured.append(body)
+                    break
                 try:
                     page.locator(f'img[src="{thumbs[-1]}"]').first.click(timeout=8000)
                     time.sleep(1.5)
