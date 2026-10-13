@@ -49,7 +49,11 @@
    "film": "003",
    "t": 130,
    "status": "picked",
-   "note": "green screen glowing beside the tube, no label"
+   "note": "green screen glowing beside the tube, no label. Run 6: 003 uses the italic look; 1 s sheet + lower-third scan clean 129.5-133.5 s (crossfade at 134 s)",
+   "window": [
+    129.8,
+    133.5
+   ]
   },
   {
    "use": "intro",
@@ -113,9 +117,9 @@
    "film": "002",
    "t": 231,
    "status": "picked",
-   "note": "the glowing empty chair, no label (224-229 s has EMPTY CHAIR). The empty-grid shots 480-536 s are labelled throughout; 537.5 s on is the end card",
+   "note": "the glowing empty chair, no label (224-229 s has EMPTY CHAIR). The empty-grid shots 480-536 s are labelled throughout; 537.5 s on is the end card. Run 6: EMPTY CHAIR cuts off between 230.0 and 230.2 s, so the window starts 230.3 s; the chair holds to ~231.2 s, then the empty lecture hall with glowing streams",
    "window": [
-    230.0,
+    230.3,
     235.0
    ]
   },
@@ -123,9 +127,25 @@
    "use": "bridge4",
    "object": "dark lab, tube and screen (003)",
    "film": "003",
-   "t": 100,
+   "t": 98,
    "status": "picked",
-   "note": "dark screen on the bench in the lab, no label"
+   "note": "dark cardboard screen on its stand in the lab, no label: lower third 'WHY COVER THE TUBE' ends 94.9 s, CARDBOARD starts 103 s (run 6, 1 s sheet + lower-third scan)",
+   "window": [
+    95.2,
+    101.8
+   ]
+  },
+  {
+   "use": "bridge4",
+   "object": "lit screen across the lab (003)",
+   "film": "003",
+   "t": 147,
+   "status": "picked",
+   "window": [
+    145.2,
+    149.4
+   ],
+   "note": "the cardboard screen glowing green across the lab, for 'began to glow'; no label. 151-153 s is the chapter card and 154-160 s carries the in-picture title 'Bones Without a Knife', which the scan does not see (run 6, 1 s sheet)"
   },
   {
    "use": "bridge5",
@@ -133,7 +153,11 @@
    "film": "003",
    "t": 120,
    "status": "picked",
-   "note": "hand at the screen, faint glow, no label"
+   "note": "hand at the screen, faint glow, no label. Run 6: clean 118-124.5 s on the 1 s sheet and lower-third scan; from 125 s an X is drawn on the slate. A small labelled anatomy poster sits soft in the top-left background (the film's own passed picture): Chief may prefer 129.8-133.5 s if it matters",
+   "window": [
+    118.3,
+    124.5
+   ]
   },
   {
    "use": "bridge5",
@@ -161,5 +185,5 @@
   }
  ],
  "contact_sheets": "/private/tmp/hos_comp_v01/sheets/ (sheet_NNN.jpg, one tile per 10 s; candidates.jpg), Mini scratch only",
- "scan": "_label_scan_v01.py (box look for 002-005, italic look for 001, plus a 1 s contact sheet by eye for 001); run 4, 12 Oct 2026"
+ "scan": "_label_scan_v01.py: box look for 002, 004, 005; italic look for 001 and 003; every look adds a lower-third caption check (run 6). The scan doesn't see chapter cards or titles inside the picture, so every window is also checked by eye on a 1 s sheet. Keep 0.3 s off each edge (0.5 s sampling). Runs 4-6, 12-13 Oct 2026"
 }

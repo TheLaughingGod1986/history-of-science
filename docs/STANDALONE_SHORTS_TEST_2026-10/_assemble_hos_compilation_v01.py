@@ -83,9 +83,10 @@ BED = HOS / "02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-f
 BED_IN = {"intro": 0.0, "bridge1": 60.0, "bridge2": 90.0, "bridge3": 120.0, "bridge4": 150.0,
           "bridge5": 180.0, "closing": 220.0}  # distinct stretches of the 390.8 s bed
 SEGMENT_SHOTS = {
-    # 9.79 s of shots after the 002 one are needed; 003 95.2-101.8 s is clean (6.6 s), so one
-    # more checked shot of ~3.3 s is still to find before this renders.
-    "bridge4": [("002", 230.0, 235.0), ("003", 95.2, 101.8)],
+    # 003 uses the italic look plus lower-third captions; both windows checked on a 1 s sheet:
+    # dark screen 95.2-101.8 s (CARDBOARD from 103 s), lit screen 145.2-149.4 s (card at 151 s).
+    # 002 EMPTY CHAIR cuts off between 230.0 and 230.2 s; the scan samples at 0.5 s, so edges keep 0.3 s.
+    "bridge4": [("002", 230.3, 235.0), ("003", 95.2, 101.8), ("003", 145.2, 149.4)],
 }
 
 
