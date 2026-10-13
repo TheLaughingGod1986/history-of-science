@@ -494,6 +494,7 @@ def main() -> None:
     ap.add_argument("--take", type=int, default=1)
     ap.add_argument("--harvest", action="store_true",
                     help="0 credits: download paid takes whose harvest timed out")
+    ap.add_argument("--wait", type=int, default=120, help="harvest wait per take, seconds")
     a = ap.parse_args()
     if a.list:
         total = 0
@@ -506,7 +507,7 @@ def main() -> None:
     if not a.part:
         ap.error("--part is required")
     if a.harvest:
-        sys.exit(harvest_spent(a.part))
+        sys.exit(harvest_spent(a.part, a.wait))
     sys.exit(mint(a.part, set(a.only), a.max, a.stills, a.take))
 
 
