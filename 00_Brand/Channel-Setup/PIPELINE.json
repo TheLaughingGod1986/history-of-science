@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-13",
-  "updated_by": "cursor (J0138)",
+  "updated_by": "codex (J0140)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -257,9 +257,9 @@
           "steps_unit": "batches",
           "left": "about 2 weeks",
           "eta": "2026-10-25",
-          "underway": false,
-          "waiting": "J0140 next run: fresh P5:02 still + one Fast take after stale-image guard; Chief review of P4:08 t2 and decision on missing P4:06 t2",
-          "since": "2026-10-10",
+          "underway": true,
+          "waiting": "",
+          "since": "2026-10-13T11:20",
           "jobs": [
             "J0137",
             "J0138",

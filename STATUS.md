@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Tue 13 Oct 2026**, updated by cursor (J0138). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Tue 13 Oct 2026**, updated by codex (J0140). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -10,7 +10,7 @@
 |---|---|---:|---|---|---|---|---|
 | **004** What's Really Inside an Atom? | Thu 15 Oct (2 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟢 on track |
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (16 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
-| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (23 d) | 57% | Picture (in progress) | **codex** · ⏸ waiting: J0140 next run: fresh P5:02 still + one Fast take after stale-image guard; Chief review of P4:08 t2 and decision on missing P4:06 t2 | 3/6 batches · about 2 weeks left · ETA Sun 25 Oct (in 12 d) | Sun 1 Nov (in 19 d) | 🟢 on track |
+| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (23 d) | 57% | Picture (in progress) | **codex** · ▶️ underway | 3/6 batches · about 2 weeks left · ETA Sun 25 Oct (in 12 d) | Sun 1 Nov (in 19 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (30 d) | 40% | Picture (to do) | **Claude** · queued (Claude's review of the boards; then the voiceover batch and picture credit) | starts later; due in 19 d | Sun 8 Nov (in 26 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (37 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 5 d late | Sun 15 Nov (in 33 d) | 🟠 behind |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (44 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 5 d late | Sun 22 Nov (in 40 d) | 🟠 behind |
@@ -36,13 +36,12 @@
 - ⏭ Next up: 008 Shorts voiceover, due Thu 8 Oct; 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
 **codex**
-- ▶️ Underway: nothing right now
-- ⏸ Waiting: 006 Picture: J0140 next run: fresh P5:02 still + one Fast take after stale-image guard; Chief review of P4:08 t2 and decision on missing P4:06 t2
+- ▶️ Underway: 006 Picture, since Tue 13 Oct 11:20 (3/6 batches · about 2 weeks left · ETA Sun 25 Oct (in 12 d))
 
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (today)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **006** · 🔄 **Picture** — in progress (48%, 3/6 batches · about 2 weeks left · ETA Sun 25 Oct (in 12 d), with codex since Sat 10 Oct, ⏸ waiting: J0140 next run: fresh P5:02 still + one Fast take after stale-image guard; Chief review of P4:08 t2 and decision on missing P4:06 t2, due Sun 25 Oct (in 12 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06 first take minted on Vertex by J0160 (12 Oct, pending UAT); Part 03 rough v01 built 12 Oct (J0137, desk #180 6116202964: 94.8 s on the locked v02 VO, P3:06 slot held by a plate board, no spend; picture_qa flags row 16 reuse of 14 for the Chief), awaiting the Chief's KEEP call on desk #180; Part 04 rows 01–04 have Vertex first takes from J0160 (pending UAT); the Flow refill landed (25,050) and J0138 priced the rest of Parts 04–05 at 1,270 credits for one take each (2,680 for two), on desk #180 for the Chief's price pass (J0139), then the Flow mints (J0140); Codex 13 Oct: detached remint exit 1. P4:08 t2 harvested; P4:06 t2, P5:02/03 MISS after 600 s. Chief reassigns P5:03 from P5:11. Stale-still guard committed 9fe9f3e; no spend this run.
+- **006** · 🔄 **Picture** — in progress (48%, 3/6 batches · about 2 weeks left · ETA Sun 25 Oct (in 12 d), with codex since Tue 13 Oct 11:20, ▶️ underway, due Sun 25 Oct (in 12 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06 first take minted on Vertex by J0160 (12 Oct, pending UAT); Part 03 rough v01 built 12 Oct (J0137, desk #180 6116202964: 94.8 s on the locked v02 VO, P3:06 slot held by a plate board, no spend; picture_qa flags row 16 reuse of 14 for the Chief), awaiting the Chief's KEEP call on desk #180; Part 04 rows 01–04 have Vertex first takes from J0160 (pending UAT); the Flow refill landed (25,050) and J0138 priced the rest of Parts 04–05 at 1,270 credits for one take each (2,680 for two), on desk #180 for the Chief's price pass (J0139), then the Flow mints (J0140); Codex 13 Oct: detached remint exit 1. P4:08 t2 harvested; P4:06 t2, P5:02/03 MISS after 600 s. Chief reassigns P5:03 from P5:11. Stale-still guard committed 9fe9f3e; no spend this run.
 
 ## Next steps (in order)
 
@@ -125,7 +124,7 @@ Words and voice are finished. Picture is about half done: Part 01 is kept, Part 
 - ✅ **Voiceover (long)** — done: v02, all five parts PASS
 - ✅ **Shorts scripts** — done
 - ✅ **Shorts voiceover** — done: A v02 · B v03b · C v01 locked
-- 🔄 **Picture** — in progress (48%, 3/6 batches · about 2 weeks left · ETA Sun 25 Oct (in 12 d), with codex since Sat 10 Oct, ⏸ waiting: J0140 next run: fresh P5:02 still + one Fast take after stale-image guard; Chief review of P4:08 t2 and decision on missing P4:06 t2, due Sun 25 Oct (in 12 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06 first take minted on Vertex by J0160 (12 Oct, pending UAT); Part 03 rough v01 built 12 Oct (J0137, desk #180 6116202964: 94.8 s on the locked v02 VO, P3:06 slot held by a plate board, no spend; picture_qa flags row 16 reuse of 14 for the Chief), awaiting the Chief's KEEP call on desk #180; Part 04 rows 01–04 have Vertex first takes from J0160 (pending UAT); the Flow refill landed (25,050) and J0138 priced the rest of Parts 04–05 at 1,270 credits for one take each (2,680 for two), on desk #180 for the Chief's price pass (J0139), then the Flow mints (J0140); Codex 13 Oct: detached remint exit 1. P4:08 t2 harvested; P4:06 t2, P5:02/03 MISS after 600 s. Chief reassigns P5:03 from P5:11. Stale-still guard committed 9fe9f3e; no spend this run.
+- 🔄 **Picture** — in progress (48%, 3/6 batches · about 2 weeks left · ETA Sun 25 Oct (in 12 d), with codex since Tue 13 Oct 11:20, ▶️ underway, due Sun 25 Oct (in 12 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06 first take minted on Vertex by J0160 (12 Oct, pending UAT); Part 03 rough v01 built 12 Oct (J0137, desk #180 6116202964: 94.8 s on the locked v02 VO, P3:06 slot held by a plate board, no spend; picture_qa flags row 16 reuse of 14 for the Chief), awaiting the Chief's KEEP call on desk #180; Part 04 rows 01–04 have Vertex first takes from J0160 (pending UAT); the Flow refill landed (25,050) and J0138 priced the rest of Parts 04–05 at 1,270 credits for one take each (2,680 for two), on desk #180 for the Chief's price pass (J0139), then the Flow mints (J0140); Codex 13 Oct: detached remint exit 1. P4:08 t2 harvested; P4:06 t2, P5:02/03 MISS after 600 s. Chief reassigns P5:03 from P5:11. Stale-still guard committed 9fe9f3e; no spend this run.
 - ⬜ **Edit + master** — to do (with Grok, due Thu 29 Oct (in 16 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 29 Oct (in 16 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 1 Nov (in 19 d))
