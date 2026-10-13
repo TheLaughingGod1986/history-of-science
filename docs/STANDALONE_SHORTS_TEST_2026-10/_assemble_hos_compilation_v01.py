@@ -87,6 +87,13 @@ SEGMENT_SHOTS = {
     # dark screen 95.2-101.8 s (CARDBOARD from 103 s), lit screen 145.2-149.4 s (card at 151 s).
     # 002 EMPTY CHAIR cuts off between 230.0 and 230.2 s; the scan samples at 0.5 s, so edges keep 0.3 s.
     "bridge4": [("002", 230.3, 235.0), ("003", 95.2, 101.8), ("003", 145.2, 149.4)],
+    # 001 330.7 s on is the Explorer in the empty theatre (kept out of new material, script v01),
+    # so Bridge 3 opens on Lister at the basin (dissolve in ends 325.4 s). 002 candlelit cards hold
+    # to ~130.9 s, then dissolve to the daylit desk (clean 131.5-138.4 s, piano from 138.5 s).
+    "bridge3": [("001", 325.5, 330.3), ("002", 117.0, 124.5), ("002", 131.5, 137.0)],
+    # 004: the 1909 date card sits at 246 s and the lab hall cuts in at 267 s; the framed foil
+    # arrives ~263 s, on "a sheet of gold". 003's hand-at-screen shot dissolves in until 118.8 s.
+    "bridge5": [("003", 118.9, 124.5), ("004", 240.3, 244.8), ("004", 260.0, 266.7)],
 }
 
 

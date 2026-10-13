@@ -89,14 +89,14 @@
   },
   {
    "use": "bridge3",
-   "object": "theatre light (001)",
+   "object": "Lister at the basin (001)",
    "film": "001",
-   "t": 331.5,
+   "t": 328,
    "status": "picked",
-   "note": "lamp-lit operating theatre with the guide, no label (checked by eye at 1 s: 315-317 s 'A surgical theatre' and 323-324 s SPRAY carry labels the italic scan misses). Alt: Lister's spray 319.0-322.5 s",
+   "note": "Run 7: the 330.5-334.0 theatre window is the Explorer in the empty theatre from ~330.7 s (PROTOCOL label from 334 s), and the script keeps the Explorer out of new material, so Bridge 3 opens on Lister washing his hands at the basin for 'it could be fought' (dissolve in ends 325.4 s; 1 s sheet + 0.1 s edge sheet clean). Chief may prefer Lister's spray 319.0-320.5 s (SPRAY label from 321 s)",
    "window": [
-    330.5,
-    334.0
+    325.5,
+    330.3
    ]
   },
   {
@@ -105,11 +105,23 @@
    "film": "002",
    "t": 120,
    "status": "picked",
-   "note": "candlelit desk, glowing handwritten cards, no label (clean 85.5-171 s; avoid the chapter card at 85-93 s and the Dobereiner card fading out at 109-116 s)",
+   "note": "candlelit desk, glowing handwritten cards, no label (clean 85.5-171 s; avoid the chapter card at 85-93 s and the Dobereiner card fading out at 109-116 s). Run 7: 1 s sheet clean 116-130.9 s; segment uses 117.0-124.5",
    "window": [
     117.0,
     125.0
    ]
+  },
+  {
+   "use": "bridge3",
+   "object": "daylit desk, quill and paper (002)",
+   "film": "002",
+   "t": 134,
+   "status": "picked",
+   "window": [
+    131.5,
+    137.0
+   ],
+   "note": "run 7: the candlelit cards dissolve to this desk at ~131 s; clean to 138.4 s, then a piano dissolves in (0.5 s sheet)"
   },
   {
    "use": "bridge4",
@@ -153,9 +165,9 @@
    "film": "003",
    "t": 120,
    "status": "picked",
-   "note": "hand at the screen, faint glow, no label. Run 6: clean 118-124.5 s on the 1 s sheet and lower-third scan; from 125 s an X is drawn on the slate. A small labelled anatomy poster sits soft in the top-left background (the film's own passed picture): Chief may prefer 129.8-133.5 s if it matters",
+   "note": "hand at the screen, faint glow, no label. Run 6: clean 118-124.5 s on the 1 s sheet and lower-third scan; from 125 s an X is drawn on the slate. A small labelled anatomy poster sits soft in the top-left background (the film's own passed picture): Chief may prefer 129.8-133.5 s if it matters. Run 7: the shot dissolves in until 118.8 s, so the window starts 118.9 s",
    "window": [
-    118.3,
+    118.9,
     124.5
    ]
   },
@@ -165,7 +177,23 @@
    "film": "004",
    "t": 260,
    "status": "picked",
-   "note": "foil with sparks, two figures, no label"
+   "note": "sparks on the foil with two figures (260-262.7 s), then the gilded foil in its frame from ~263 s on 'a sheet of gold'; lab hall cuts in at 267 s (run 7, 1 s sheet)",
+   "window": [
+    260.0,
+    266.7
+   ]
+  },
+  {
+   "use": "bridge5",
+   "object": "atom models under glass (004)",
+   "film": "004",
+   "t": 242,
+   "status": "picked",
+   "window": [
+    240.3,
+    244.8
+   ],
+   "note": "run 7: glass atom, then the gold atom, for 'inside every atom'; a particle burst at 245 s and the 1909 date card at 246 s are left out (1 s sheet)"
   },
   {
    "use": "closing",
