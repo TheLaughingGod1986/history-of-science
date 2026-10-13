@@ -94,6 +94,13 @@ SEGMENT_SHOTS = {
     # 004: the 1909 date card sits at 246 s and the lab hall cuts in at 267 s; the framed foil
     # arrives ~263 s, on "a sheet of gold". 003's hand-at-screen shot dissolves in until 118.8 s.
     "bridge5": [("003", 118.9, 124.5), ("004", 240.3, 244.8), ("004", 260.0, 266.7)],
+    # Closing: one plate per spoken object, none reusing an intro or bridge window. The willow
+    # ("a tree made of air", ~4-6 s) needs 006, so the arm holds over it until then. 005 "Deep
+    # arteries" label ends 286 s; 002 1860 date card from 170 s; 003 SOFT TISSUE from ~168 s;
+    # 004 stadium from 319 s. The tail (310 s on) sits under the J0204 timeline and end card.
+    "closing": [("004", 227.6, 230.9), ("005", 287.6, 291.3), ("001", 298.0, 300.6),
+                ("002", 162.3, 165.6), ("003", 163.8, 167.6), ("004", 224.0, 227.3),
+                ("004", 252.0, 256.7), ("004", 310.0, 318.3), ("004", 214.6, 222.8)],
 }
 
 
