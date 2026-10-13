@@ -31,7 +31,12 @@ def selected_plates(part):
 def main():
     os.environ["OWB_AGENT"] = "codex"
     key = f"{PLATE}#t{TAKE}"
-    if key in mint.load_log("05")["takes"]:
+    prior = mint.load_log("05")["takes"].get(key)
+    # A style-chip refusal before Create consumes neither still nor Fast attempt.
+    unsubmitted = (prior and prior.get("credits_used") == 0
+                   and not prior.get("project_url") and not prior.get("start_frame")
+                   and "style refs not attached" in prior.get("why", ""))
+    if prior and not unsubmitted:
         raise SystemExit("STOP: Fast attempt already recorded; no automatic retry")
     raw, _, _ = mint.paths("05")
     still = raw.parent.parent / "refs/v02_flow_stills" / f"{PLATE}_t{TAKE}.png"

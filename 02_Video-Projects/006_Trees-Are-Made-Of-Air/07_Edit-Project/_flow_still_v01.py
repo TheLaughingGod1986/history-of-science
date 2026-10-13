@@ -163,6 +163,28 @@ def all_img_srcs(page) -> set[str]:
     return set(page.evaluate("() => [...document.querySelectorAll('img')].map(i => i.currentSrc || i.src || '').filter(s => s.length >= 20)") or [])
 
 
+def attach_completed_style_ref(page, ref: Path, timeout_s: float = 120) -> bool:
+    """Upload once, then wait for the exact completed library tile to be selectable."""
+    before = v02.ingredient_chip_count(page)
+    if v02.attach_style_ref_image_mode(page, ref):
+        return True
+    deadline = time.monotonic() + timeout_s
+    while time.monotonic() < deadline:
+        v02.close_overlays(page)
+        v02.open_ingredients_panel(page)
+        tile = page.get_by_role("button", name=re.compile(
+            r"^" + re.escape(ref.name) + r"\s+Image$"))
+        if tile.count() == 1 and tile.is_visible():
+            tile.click(timeout=3000)
+            if v02.click_add_to_prompt(page):
+                page.wait_for_timeout(500)
+                if v02.ingredient_chip_count(page) > before:
+                    page.keyboard.press("Escape")
+                    return True
+        page.wait_for_timeout(4000)
+    return False
+
+
 def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
     """Arm Flow Image 16:9 with the style refs and prompt, Create once, save the new still."""
     import orbit_flow_veo_ui as flow
@@ -178,7 +200,7 @@ def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
         page.wait_for_timeout(500)
     select_image_16x9(page)
     v02.clear_prompt_attachments(page)
-    attached = sum(1 for ref in STYLE_REFS if ref.exists() and v02.attach_style_ref_image_mode(page, ref))
+    attached = sum(1 for ref in STYLE_REFS if ref.exists() and attach_completed_style_ref(page, ref))
     chips = v02.ingredient_chip_count(page)
     print(f"  style refs attached={attached} chips={chips}", flush=True)
     if attached != len(STYLE_REFS) or chips < len(STYLE_REFS):
