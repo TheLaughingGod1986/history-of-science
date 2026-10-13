@@ -214,27 +214,40 @@ def freeze_events(mp4: Path) -> int:
 
 
 def hover_fetch(page) -> bytes | None:
-    """Clicking a tile opens no player; hovering the newest (top-left) tile mounts a
-    <video> whose src the signed-in browser session can fetch."""
+    """Clicking a tile opens no player; hovering a clip tile mounts a <video> whose src
+    the signed-in browser session can fetch. The uploaded start still is a tile too,
+    so hover every tile (top-left first) until one mounts a video."""
     try:
-        tiles = [i for i in page.locator("img").all()
-                 if (i.bounding_box() or {}).get("width", 0) > 80]
-        if not tiles:
-            return None
-        box = min((t.bounding_box() for t in tiles), key=lambda b: (round(b["y"]), b["x"]))
-        page.mouse.move(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
-        time.sleep(2)
-        src = page.evaluate(
-            "() => { const v = document.querySelector('video'); return v ? (v.currentSrc || v.src) : null }")
-        if not src:
-            return None
-        r = page.context.request.get(src, timeout=120_000)
-        body = r.body()
-        if r.status == 200 and len(body) > 400_000 and b"ftyp" in body[:64]:
-            return body
+        boxes = [b for b in (i.bounding_box() for i in page.locator("img").all())
+                 if b and b.get("width", 0) > 80]
+        for box in sorted(boxes, key=lambda b: (round(b["y"]), b["x"])):
+            page.mouse.move(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
+            time.sleep(2)
+            srcs = page.evaluate(
+                "() => [...document.querySelectorAll('video')].map(v => v.currentSrc || v.src).filter(Boolean)")
+            for src in srcs:
+                r = page.context.request.get(src, timeout=120_000)
+                body = r.body()
+                if r.status == 200 and len(body) > 400_000 and b"ftyp" in body[:64]:
+                    return body
+            page.mouse.move(5, 5)
+            time.sleep(0.5)
     except Exception as e:
         print(f"  hover fetch warn: {e}", flush=True)
     return None
+
+
+def settled_credits(page, wait_s: int = 60) -> int | None:
+    """Flow shows a Create's charge with a lag; wait for two equal reads 10 s apart."""
+    last, _ = read_account(page)
+    t0 = time.time()
+    while time.time() - t0 < wait_s:
+        time.sleep(10)
+        cur, _ = read_account(page)
+        if cur == last:
+            return cur
+        last = cur
+    return last
 
 
 def harvest(page, flow, project_url: str, dest: Path, wait_s: int = 360) -> None:
@@ -308,6 +321,8 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
         import _flow_still_v01 as still_tool
         log["engine"] = "Flow Image Nano Banana 2 16:9 still -> Veo 3.1 image-to-video via CDP :9222"
     def unspent_fail(e: dict) -> bool:
+        if e.get("status") == "STOP" and not e.get("project_url"):
+            return True
         return e.get("status") == "FAIL" and e.get("credits_after") == e.get("credits_before")
 
     todo = [p for p in plates(part) if (not only or p["id"] in only)
@@ -352,6 +367,9 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
                 except Exception:
                     pass
                 if stills:
+                    settled = settled_credits(page)
+                    if settled is not None:
+                        credits = entry["credits_before"] = settled
                     start = raw.parent.parent / "refs/v02_flow_stills" / f"{pid}_t{take}.png"
                     entry["still_prompt"] = still_tool.still_prompt(LOOK, core_for(plate))
                     if start.exists() and start.stat().st_size > 100_000:
@@ -370,6 +388,8 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
                         save_log(part, log)
                         print(f"STOP {entry['why']}", flush=True)
                         return 5
+                # The start-frame attach re-locks the model from this env (default Quality).
+                os.environ["ORBIT_FLOW_VEO_MODEL"] = model
                 info = flow.generate_clip(page, entry["prompt"], dest, model=model, timeout_s=600,
                                           start_frame=start, scenery_only=start is None, attempts=1,
                                           reuse_project=False) or {}
@@ -378,7 +398,7 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
                     if "/project/" not in entry["project_url"]:
                         raise RuntimeError(f"no mp4 and no project URL after Create: {entry['project_url']!r}")
                     print(f"  gallery harvest via {entry['project_url']}", flush=True)
-                    harvest(page, flow, entry["project_url"], dest)
+                    harvest(page, flow, entry["project_url"], dest, wait_s=60)
                 import orbit_gemini_veo as veo
                 veo.strip_audio(dest)
                 sheet = uat / f"{pid}_t{take}_sheet.jpg"
@@ -417,6 +437,53 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
     return 0
 
 
+def harvest_spent(part: str, wait_s: int = 120) -> int:
+    """0 credits: download paid takes whose harvest timed out, from their project_url."""
+    import orbit_flow_veo_ui as flow
+    import orbit_gemini_veo as veo
+    from playwright.sync_api import sync_playwright
+
+    raw, uat, _ = paths(part)
+    log = load_log(part)
+    todo = {k: e for k, e in log["takes"].items()
+            if e.get("status") == "FAIL" and "/project/" in (e.get("project_url") or "")
+            and "harvest timeout" in (e.get("why") or "")}
+    print(f"Part {part}: {len(todo)} paid takes to harvest", flush=True)
+    missed = 0
+    with sync_playwright() as pw:
+        browser = pw.chromium.connect_over_cdp(CDP)
+        page = flow_page(browser, flow)
+        before, account = read_account(page)
+        if account != REQUIRED:
+            raise SystemExit(f"STOP wrong Flow account: {account}")
+        for k, e in todo.items():
+            dest = Path(e.get("file") or raw / f"{e['plate']}_t{e['take']}.mp4")
+            print(f"\n=== harvest {k} {e['project_url']} ===", flush=True)
+            try:
+                harvest(page, flow, e["project_url"], dest, wait_s=wait_s)
+                veo.strip_audio(dest)
+                sheet = uat / f"{e['plate']}_t{e['take']}_sheet.jpg"
+                contact_sheet(dest, sheet)
+                e.update(status="PENDING_UAT", file=str(dest), sha256=sha256(dest),
+                         duration_s=round(duration(dest), 3), uat_sheet=str(sheet),
+                         motion={"freeze_events_0p8s": freeze_events(dest)},
+                         harvested_at=now(), harvest="harvest-only pass, 0 credits")
+                print(f"  OK {dest.name} {e['duration_s']}s", flush=True)
+            except Exception as ex:
+                missed += 1
+                e["harvest_retry"] = f"{now()} {type(ex).__name__}: {str(ex)[:200]}"
+                print(f"  MISS {k}: {ex}", flush=True)
+            save_log(part, log)
+        after, _ = read_account(page)
+        log.setdefault("balance_reads", []).append(
+            {"at": now(), "credits": after, "when": f"harvest-only (before {before})"})
+        save_log(part, log)
+        if before is not None and after is not None and after < before:
+            print(f"WARN credits moved during harvest: {before} -> {after}", flush=True)
+    print(f"DONE harvest part {part}: {len(todo) - missed} ok, {missed} missed", flush=True)
+    return 1 if missed else 0
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--part", choices=sorted(PASSED))
@@ -425,6 +492,8 @@ def main() -> None:
     ap.add_argument("--list", action="store_true")
     ap.add_argument("--stills", action="store_true", help="Flow Nano Banana 2 start still, then i2v")
     ap.add_argument("--take", type=int, default=1)
+    ap.add_argument("--harvest", action="store_true",
+                    help="0 credits: download paid takes whose harvest timed out")
     a = ap.parse_args()
     if a.list:
         total = 0
@@ -436,6 +505,8 @@ def main() -> None:
         return
     if not a.part:
         ap.error("--part is required")
+    if a.harvest:
+        sys.exit(harvest_spent(a.part))
     sys.exit(mint(a.part, set(a.only), a.max, a.stills, a.take))
 
 

@@ -58,6 +58,169 @@
       "why_prior_fail": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/f269dd3e-3c5b-43d7-8eb6-569c6f7af99d",
       "credits_after": 25030,
       "credits_used": 10
+    },
+    "05_bubbles_macro": {
+      "plate": "05_bubbles_macro",
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "path": "flow-cdp-still-i2v",
+      "explorer": false,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Macro: tiny silver bubbles bead on a green leaf under water in a sunbeam, swell, let go and rise to the top, glinting. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 24940,
+      "submitted_at": "2026-10-13T02:39:52+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. Macro: tiny silver bubbles bead on a green leaf under water in a sunbeam, swell, let go and rise to the top, glinting. Silent. Continuous motion through the final frame. No Explorer.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/05_bubbles_macro_t1.png",
+      "start_frame_sha256": "fe17e1fa256ca830c0f916603b164218eb820e5af8d6bb5a82cba7b41d894952",
+      "style_ref_chips": 0,
+      "credits_after_still": 24940,
+      "project_url": "https://flow.google.com/project/03ac76fd-7b3d-4da7-9d1d-4e867952fe5a",
+      "status": "PENDING_UAT",
+      "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/03ac76fd-7b3d-4da7-9d1d-4e867952fe5a",
+      "at": "2026-10-13T02:48:11+00:00",
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+      "sha256": "0596f3b0287f79d36177a1e0c835c8184e001995c7ef0473e903568638851704",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/uat/05_bubbles_macro_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "harvested_at": "2026-10-13T03:25:47+00:00",
+      "harvest": "harvest-only pass, 0 credits"
+    },
+    "06_collect_blaze": {
+      "plate": "06_collect_blaze",
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "path": "flow-cdp-still-i2v",
+      "explorer": false,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Ingenhousz's hands hold a small upside-down glass tube over the leaf jar to collect the rising bubbles; then a small candle flame lowered into the tube blazes up bright and tall. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 24840,
+      "submitted_at": "2026-10-13T02:48:11+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. Ingenhousz's hands hold a small upside-down glass tube over the leaf jar to collect the rising bubbles; then a small candle flame lowered into the tube blazes up bright and tall. Silent. Continuous motion through the final frame. No Explorer.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/06_collect_blaze_t1.png",
+      "start_frame_sha256": "cd595827c028ae10a4e81eb2467f527ff3a39fc6b3e100e79ca0b9138888aa3c",
+      "style_ref_chips": 0,
+      "credits_after_still": 24840,
+      "project_url": "https://flow.google.com/project/21d661b7-a696-4a80-89b1-0fb017a237d0",
+      "status": "PENDING_UAT",
+      "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/21d661b7-a696-4a80-89b1-0fb017a237d0",
+      "at": "2026-10-13T02:56:28+00:00",
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/06_collect_blaze_t1.mp4",
+      "sha256": "fb91a85f51b3d05818ea1eaadf8fcfa6e11afbec648b71ae259d331a90256164",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/uat/06_collect_blaze_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "harvested_at": "2026-10-13T03:25:58+00:00",
+      "harvest": "harvest-only pass, 0 credits"
+    },
+    "08_explorer_shade": {
+      "plate": "08_explorer_shade",
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "path": "flow-cdp-still-i2v",
+      "explorer": true,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Same sunny room. Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He lifts a fizzing jar of leaves from the sunny sill and carries it into the shadow, where the bubbles stop; he steps back into the sunbeam where they start again, grins and sets it down. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. Exactly ONE Explorer: young boy, messy brown hair, round thin gold glasses, teal long coat, tan vest, brown bow tie, satchel. Acts then leaves. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 24740,
+      "submitted_at": "2026-10-13T02:56:28+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. Same sunny room. Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He lifts a fizzing jar of leaves from the sunny sill and carries it into the shadow, where the bubbles stop; he steps back into the sunbeam where they start again, grins and sets it down. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. Exactly ONE Explorer: young boy, messy brown hair, round thin gold glasses, teal long coat, tan vest, brown bow tie, satchel. Acts then leaves.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/08_explorer_shade_t1.png",
+      "start_frame_sha256": "f1bb46ec7ebd24cefcb66ed4433986d2f90c048bb4b677eeda23370f4c374d7b",
+      "style_ref_chips": 0,
+      "credits_after_still": 24740,
+      "project_url": "https://flow.google.com/project/a928d829-507d-4fbb-ae09-34fd2a9383cc",
+      "status": "PENDING_UAT",
+      "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/a928d829-507d-4fbb-ae09-34fd2a9383cc",
+      "at": "2026-10-13T03:04:44+00:00",
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/08_explorer_shade_t1.mp4",
+      "sha256": "e558b0fd64ead56f21e385fa12cca68dcf8917ec695c0a764538a0003d5910f9",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/uat/08_explorer_shade_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "harvested_at": "2026-10-13T03:26:09+00:00",
+      "harvest": "harvest-only pass, 0 credits"
+    },
+    "11_night_jars": {
+      "plate": "11_night_jars",
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "path": "flow-cdp-still-i2v",
+      "explorer": false,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. The same room at night, moonlight on the jars; a small candle burning inside a sealed plant jar slowly dims and shrinks. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 24640,
+      "submitted_at": "2026-10-13T03:04:44+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. The same room at night, moonlight on the jars; a small candle burning inside a sealed plant jar slowly dims and shrinks. Silent. Continuous motion through the final frame. No Explorer.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/11_night_jars_t1.png",
+      "start_frame_sha256": "cd595827c028ae10a4e81eb2467f527ff3a39fc6b3e100e79ca0b9138888aa3c",
+      "style_ref_chips": 0,
+      "credits_after_still": 24640,
+      "project_url": "https://flow.google.com/project/892ed405-69a4-4417-b0b9-37268b9c21a6",
+      "status": "PENDING_UAT",
+      "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/892ed405-69a4-4417-b0b9-37268b9c21a6",
+      "at": "2026-10-13T03:13:01+00:00",
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/11_night_jars_t1.mp4",
+      "sha256": "3461e7512bc3bf61018f42c32cb47dbc55ecf80fd8134a48541f80c9a3e28588",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/uat/11_night_jars_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "harvested_at": "2026-10-13T03:26:20+00:00",
+      "harvest": "harvest-only pass, 0 credits"
+    },
+    "12_shutters_open": {
+      "plate": "12_shutters_open",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "path": "flow-cdp-still-i2v",
+      "explorer": false,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Morning: a hand swings open a wooden shutter and daylight floods across the jars on the sill; the leaves lift a little. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 24540,
+      "submitted_at": "2026-10-13T03:13:01+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. Morning: a hand swings open a wooden shutter and daylight floods across the jars on the sill; the leaves lift a little. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/12_shutters_open_t1.png",
+      "start_frame_sha256": "aa7baf626f349bae16721b95852c6b182392a4b5d2cefd6188988d78ff2b3462",
+      "style_ref_chips": 0,
+      "credits_after_still": 24540,
+      "project_url": "https://flow.google.com/project/280a6cd6-8b72-4727-be16-beebb0dd1213",
+      "status": "PENDING_UAT",
+      "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/280a6cd6-8b72-4727-be16-beebb0dd1213",
+      "at": "2026-10-13T03:21:22+00:00",
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/12_shutters_open_t1.mp4",
+      "sha256": "fc339534bf90405afa369213590f9f9e674eedb7ac11b1f57b7569fbc7885a94",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/uat/12_shutters_open_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "harvested_at": "2026-10-13T03:26:35+00:00",
+      "harvest": "harvest-only pass, 0 credits"
+    },
+    "13_sun_canopy": {
+      "plate": "13_sun_canopy",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "path": "flow-cdp-still-i2v",
+      "explorer": false,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Looking straight up through a sunny tree canopy, leaves fluttering, light dappling between them. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 24530,
+      "submitted_at": "2026-10-13T03:21:22+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. Looking straight up through a sunny tree canopy, leaves fluttering, light dappling between them. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/13_sun_canopy_t1.png",
+      "start_frame_sha256": "201629e793f3ec45bbc50de106290cda9800026c775116f06faf56e99ac1a43a",
+      "style_ref_chips": 0,
+      "credits_after_still": 24440,
+      "status": "STOP",
+      "why": "still cost 90 credits (passed at 0)"
     }
   },
   "balance_reads": [
@@ -110,9 +273,44 @@
       "at": "2026-10-13T00:53:38+00:00",
       "credits": 25030,
       "after": "10_only_green"
+    },
+    {
+      "at": "2026-10-13T02:39:52+00:00",
+      "credits": 24940,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-13T02:48:11+00:00",
+      "credits": 24840,
+      "after": "05_bubbles_macro"
+    },
+    {
+      "at": "2026-10-13T02:56:28+00:00",
+      "credits": 24740,
+      "after": "06_collect_blaze"
+    },
+    {
+      "at": "2026-10-13T03:04:44+00:00",
+      "credits": 24640,
+      "after": "08_explorer_shade"
+    },
+    {
+      "at": "2026-10-13T03:13:01+00:00",
+      "credits": 24540,
+      "after": "11_night_jars"
+    },
+    {
+      "at": "2026-10-13T03:21:22+00:00",
+      "credits": 24530,
+      "after": "12_shutters_open"
+    },
+    {
+      "at": "2026-10-13T03:26:36+00:00",
+      "credits": 24440,
+      "when": "harvest-only (before 24440)"
     }
   ],
-  "updated": "2026-10-13T01:33:15+00:00",
+  "updated": "2026-10-13T03:26:36+00:00",
   "attempts_failed": [
     {
       "plate": "10_only_green",
@@ -148,5 +346,10 @@
       "credits_used": 0,
       "at": "2026-10-12T23:30:56+00:00"
     }
-  ]
+  ],
+  "stopped": {
+    "at": "2026-10-13T03:22:21+00:00",
+    "plate": "13_sun_canopy",
+    "why": "still cost 90 credits (passed at 0)"
+  }
 }
