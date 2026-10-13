@@ -279,7 +279,11 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
     if stills:
         import _flow_still_v01 as still_tool
         log["engine"] = "Flow Image Nano Banana 2 16:9 still -> Veo 3.1 image-to-video via CDP :9222"
-    todo = [p for p in plates(part) if (not only or p["id"] in only) and key(p["id"]) not in log["takes"]]
+    def unspent_fail(e: dict) -> bool:
+        return e.get("status") == "FAIL" and e.get("credits_after") == e.get("credits_before")
+
+    todo = [p for p in plates(part) if (not only or p["id"] in only)
+            and (key(p["id"]) not in log["takes"] or unspent_fail(log["takes"][key(p["id"])]))]
     if max_n:
         todo = todo[:max_n]
     print(f"Part {part}: {len(todo)} plates to mint -> {raw}", flush=True)
@@ -322,7 +326,11 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
                 if stills:
                     start = raw.parent.parent / "refs/v02_flow_stills" / f"{pid}_t{take}.png"
                     entry["still_prompt"] = still_tool.still_prompt(LOOK, core_for(plate))
-                    still_tool.make_still(page, entry["still_prompt"], start)
+                    if start.exists() and start.stat().st_size > 100_000:
+                        print(f"  reuse still {start.name}", flush=True)
+                        entry["still_reused"] = True
+                    else:
+                        still_tool.make_still(page, entry["still_prompt"], start)
                     after_still, _ = read_account(page)
                     entry.update(start_frame=str(start), start_frame_sha256=sha256(start),
                                  style_ref_chips=getattr(still_tool.make_still, "refs_attached", None),

@@ -128,6 +128,11 @@ def _fetch_new_landscape(page, dest: Path, before: set[str]) -> bool:
     return False
 
 
+def all_img_srcs(page) -> set[str]:
+    """Every img src on the page: v02.gallery_media_srcs skips tiles above y=80, the top row in a small viewport."""
+    return set(page.evaluate("() => [...document.querySelectorAll('img')].map(i => i.currentSrc || i.src || '').filter(s => s.length >= 20)") or [])
+
+
 def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
     """Arm Flow Image 16:9 with the style refs and prompt, Create once, save the new still."""
     import orbit_flow_veo_ui as flow
@@ -159,7 +164,7 @@ def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
     page.wait_for_timeout(400)
     if len(flow._editor_prompt_text(page) or "") < 80:
         raise RuntimeError("still prompt not armed")
-    before = v02.gallery_media_srcs(page)
+    before = all_img_srcs(page)
     dest.parent.mkdir(parents=True, exist_ok=True)
     page.screenshot(path=str(dest.with_suffix(".armed.png")))
     v02.submit_create(page)
@@ -168,7 +173,7 @@ def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
     t0 = time.time()
     while time.time() - t0 < timeout_s:
         page.wait_for_timeout(4000)
-        new = v02.gallery_media_srcs(page) - before
+        new = all_img_srcs(page) - before
         print(f"  still poll new={len(new)} elapsed={int(time.time() - t0)}s", flush=True)
         if new and time.time() - t0 > 15 and _fetch_new_landscape(page, dest, before):
             return dest
