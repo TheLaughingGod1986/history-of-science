@@ -9,7 +9,7 @@ Stages:
         from prep_report.json where present, else the inventory lengths. Missing
         inputs (006 master, J0204 graphics, intro/bridge plates) are listed, not faked.
   segment  render one VO segment (intro, bridge, closing) from its checked shots:
-        0.5 s crossfades between shots, VO at -15 LUFS, the 004 bed 14 LU under it,
+        0.5 s crossfades between shots, VO at -15 LUFS, the 004 bed 17 LU under it with narration sidechain ducking,
         limiter at -1 dBTP; writes the mp4, VO and bed stems, cuts.json (polish_gate
         format) and segment_report.json. Refuses a segment whose timeline graphic is
         missing unless --draft.
@@ -176,9 +176,11 @@ def cmd_segment(args) -> int:
     fc.append(f"{prev}trim=duration={L:.3f},setpts=PTS-STARTPTS,format=yuv420p[vout]")
     fc.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,"
               f"loudnorm=I={VO_I}:TP=-2:LRA=11,adelay={int(VO_LEAD * 1000)}:all=1,"
-              f"apad,atrim=duration={L:.3f},asplit=2[vo][vostem]")
+              f"apad,atrim=duration={L:.3f},asplit=3[vo][vostem][duckvo]")
     fc.append(f"[{n + 1}:a]aresample=48000,aformat=channel_layouts=stereo,loudnorm=I={BED_I}:TP=-6:LRA=11,"
-              f"atrim=duration={L:.3f},afade=t=in:d=1.5,afade=t=out:st={L - 1.5:.3f}:d=1.5,asplit=2[bed][bedstem]")
+              f"atrim=duration={L:.3f},afade=t=in:d=1.5,afade=t=out:st={L - 1.5:.3f}:d=1.5[bedraw]")
+    fc.append("[bedraw][duckvo]sidechaincompress=threshold=0.003:ratio=20:attack=5:release=300:"
+              "knee=2.828:makeup=1:link=maximum:detection=rms,asplit=2[bed][bedstem]")
     tick_in = f"[{n + 2}:a]aresample=48000,aformat=channel_layouts=stereo,volume={TICK_GAIN_DB}dB"
     if ticks:
         fc.append(f"{tick_in},asplit={len(ticks)}" + "".join(f"[tk{i}]" for i in range(len(ticks))))
@@ -216,6 +218,7 @@ def cmd_segment(args) -> int:
            "graphic": str(graphic) if graphic else (TIMELINE_ROWS.get(name, "") + " missing" if name in TIMELINE_ROWS else None),
            "ticks": ticks, "tick": str(TICK), "tick_gain_db": TICK_GAIN_DB,
            "shots": shots, "vo": str(vo), "bed": str(BED), "bed_in": BED_IN[name],
+           "bed_ducking": {"threshold": 0.003, "ratio": 20, "attack_ms": 5, "release_ms": 300},
            "loudness_mix": measure(mp4, None), "probe": probe(mp4)}
     (out_dir / "segment_report.json").write_text(json.dumps(rec, indent=1))
     lo = rec["loudness_mix"]
