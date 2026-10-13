@@ -21,3 +21,5 @@ Those lines refer to Bridges 3, 4, 5 and closing, respectively. The bed-level fa
 Next: use `hos_comp_<name>_ducked_v02.mp4` in `/private/tmp/hos_comp_v01/segments/<name>/` when assembly resumes. Still need 006 moving plates/master (J0140), the closing end-card graphic, intro and Bridges 1–2, complete assembly and full-cut QA. J0204 timelines are already wired into B3/B5/closing. Keep step 4/6 until all segment assembly is complete.
 
 HOS main pull was blocked by pre-existing local standalone-Short changes and untracked concat records; these were left untouched. Changes made and committed only in the clean `/private/tmp/j0175-wt` job worktree. Syntax compilation and `git diff --check` succeeded. No protected calls made.
+
+Repository pre-push check: `check_all.sh` printed `ALL CHECKS PASS` (20 contract tests; package lint, board sync, media guard and Python checks). Used the installed HOS node_modules through an ignored worktree symlink and a /private/tmp npm cache after the sandbox blocked the home cache.
