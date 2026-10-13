@@ -81,14 +81,14 @@
       "level_output": "SFX level PASS: VO -19.9 LUFS, SFX -34.9 LUFS, 1 hits"
     },
     "s7_priestley_mint": {
-      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s7_priestley_mint_v01.mp4",
-      "sha256": "de43832b1c9505d058d3fc938e9baa504cb929b6c9f06e107b3d6465d4266a70",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s7_priestley_mint_v02.mp4",
+      "sha256": "6857ac9374bc582c67d642f365cc0a50861c5fb02ab26f151c62936c815dc049",
       "air_date": "2026-11-09",
       "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s7_cover_v01.png",
       "stems": {
-        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint/stems/vo.wav",
-        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint/stems/bed.wav",
-        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint/stems/sfx.wav"
+        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint_v02/stems/vo.wav",
+        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint_v02/stems/bed.wav",
+        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint_v02/stems/sfx.wav"
       },
       "level_exit": 0,
       "level_output": "SFX level PASS: VO -19.2 LUFS, SFX -34.9 LUFS, 1 hits"
