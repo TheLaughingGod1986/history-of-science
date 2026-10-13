@@ -40,7 +40,8 @@ def ff(*a: str) -> None:
 def stems(rec: dict, work: Path) -> dict[str, Path]:
     total = rec["duration_s"]
     vo = work / "vo_trim.wav" if rec["pause_trim_s"] else VO / rec["vo"]
-    cut_times = [p["t0"] for p in json.loads((work / "timeline.json").read_text())["plan"][1:]]
+    plan = json.loads((work / "timeline.json").read_text())["plan"]
+    cut_times = [p["t0"] for k, p in enumerate(plan) if k and p["plate"] != plan[k - 1]["plate"]]
     out = work / "stems"
     out.mkdir(exist_ok=True)
     p = {"vo": out / "vo.wav", "bed": out / "bed.wav", "sfx": out / "sfx.wav"}

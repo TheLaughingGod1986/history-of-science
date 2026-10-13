@@ -50,6 +50,9 @@ DIAL_TIGHT = {"z": (1.60, 1.75), "c": (0.52, 0.60)}
 RING_PUSH = {"z": (1.05, 1.35), "c": (0.505, 0.555)}
 CROP_NO_FLAME = {"z": (1.50, 1.56), "c": (0.53, 0.0), "top": True}
 COLUMN_TIGHT = {"z": (1.45, 1.60), "c": (0.545, 0.30)}
+# S7 v02 (Chief, HOS #180 6134869893): 01 holds through "The air was spent", so its second half carries on from
+# where the opening push ends (≈1.05, centred) as one slow push, with no tick on that join (same plate).
+JAR_HOLD = {"z": (1.05, 1.30), "c": (0.5, 0.5)}
 
 # beats: (word index the plate lands on, plate file[, move]). The "loop" beat starts LOOP_S before the end.
 SHORTS = [
@@ -84,8 +87,8 @@ SHORTS = [
                (19, "s6/03_fuzzy_mould_v01.jpg"), (26, "s6/04_clear_ring_v01.jpg", RING_PUSH),
                (39, "s6/05_medicine_bottles_v01.jpg"), ("loop", "s6/01_mouldy_dish_v01.jpg")]},
     {"id": "s7_priestley_mint", "air_date": "2026-11-09", "hook": "MINT FIXED THE **AIR**",
-     "vo": "hos_sa_s7_priestley_mint_vo_v01", "trim": True,
-     "beats": [(0, "s7/01_candle_jar_v01.jpg"), (12, "s7/02_priestley_jar_v01.jpg"),
+     "vo": "hos_sa_s7_priestley_mint_vo_v01", "trim": True, "ver": "v02",
+     "beats": [(0, "s7/01_candle_jar_v01.jpg"), (12, "s7/01_candle_jar_v01.jpg", JAR_HOLD),
                (27, "s7/03_mint_sprig_v01.jpg", CROP_NO_FLAME), (38, "s7/04_candle_bright_v01.jpg"),
                ("loop", "s7/01_candle_jar_v01.jpg")]},
     {"id": "s8_hales_blood", "air_date": "2026-11-11", "hook": "BLOOD **EIGHT FEET** UP",
@@ -293,7 +296,7 @@ def build(item: dict) -> dict:
 
     bed_gain = (mean_db(vo) - 18.0) - mean_db(BED) + item.get("bed_trim_db", 0.0)
     whoosh_db = item.get("whoosh_db", -14.0)
-    cut_times = [c[0] for c in cuts[1:]]
+    cut_times = [c[0] for k, c in enumerate(cuts) if k and c[1] != cuts[k - 1][1]]
     sfx_in = ["-i", str(SFX / "sfx_hos_whoosh_soft_v01.wav")] + sum(
         (["-i", str(SFX / "sfx_hos_tick_ink_v01.wav")] for _ in cut_times), [])
     sfx_fc = f"[2:a]aformat=sample_rates=48000:channel_layouts=stereo,volume={whoosh_db:.1f}dB[s0];"
