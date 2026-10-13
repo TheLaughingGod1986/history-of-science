@@ -377,6 +377,7 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
                         entry["still_reused"] = True
                     else:
                         still_tool.make_still(page, entry["still_prompt"], start)
+                    entry["start_frame_sha256"] = still_tool.assert_unique_still(start, MEDIA / "04_Generated-Clips")
                     after_still, _ = read_account(page)
                     entry.update(start_frame=str(start), start_frame_sha256=sha256(start),
                                  style_ref_chips=getattr(still_tool.make_still, "refs_attached", None),

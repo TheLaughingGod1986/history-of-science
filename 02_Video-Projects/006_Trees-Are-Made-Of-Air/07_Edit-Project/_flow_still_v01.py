@@ -15,6 +15,7 @@ the batch (the Chief's pass priced stills at 0).
 """
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import io
 import re
@@ -97,6 +98,25 @@ def select_image_16x9(page) -> str:
     return pill
 
 
+def canonical_src(src: str) -> str:
+    """Flow may resize old gallery URLs; a new size is not a new image."""
+    return re.sub(r"=s\d+[^?]*", "=s0", src)
+
+
+def assert_unique_still(dest: Path, refs_root: Path) -> str:
+    """Refuse another plate's saved still before any paid i2v submission."""
+    digest = hashlib.sha256(dest.read_bytes()).hexdigest()
+    plate = re.sub(r"_t\d+$", "", dest.stem.removesuffix(".candidate"))
+    for other in refs_root.rglob("*.png"):
+        if other.resolve() == dest.resolve() or other.stem.endswith(".armed"):
+            continue
+        if other.parent == dest.parent and re.sub(r"_t\d+$", "", other.stem) == plate:
+            continue
+        if hashlib.sha256(other.read_bytes()).hexdigest() == digest:
+            raise RuntimeError(f"stale still matches another plate: {other}")
+    return digest
+
+
 def _fetch_new_landscape(page, dest: Path, before: set[str]) -> bool:
     from PIL import Image
 
@@ -109,7 +129,10 @@ def _fetch_new_landscape(page, dest: Path, before: set[str]) -> bool:
           }).filter(i => i.src && !before.has(i.src) && i.wide && i.w > 120)
             .sort((a,b) => b.area - a.area).map(i => i.src);
         }""", list(before)) or []
+    old_sources = {canonical_src(src) for src in before}
     for url in urls[:6]:
+        if canonical_src(url) in old_sources:
+            continue
         try:
             resp = page.request.get(re.sub(r"=s\d+", "=s0", url), timeout=60_000)
             if not resp.ok or len(resp.body()) < 40_000:
@@ -120,7 +143,14 @@ def _fetch_new_landscape(page, dest: Path, before: set[str]) -> bool:
                 print(f"  skip {w}x{h}", flush=True)
                 continue
             dest.parent.mkdir(parents=True, exist_ok=True)
-            im.save(dest, format="PNG")
+            candidate = dest.with_suffix(".candidate.png")
+            im.save(candidate, format="PNG")
+            try:
+                assert_unique_still(candidate, MEDIA_CLIPS)
+            except RuntimeError:
+                candidate.unlink()
+                raise
+            candidate.replace(dest)
             print(f"  still ok {w}x{h} -> {dest.name}", flush=True)
             return True
         except Exception as e:
@@ -151,9 +181,8 @@ def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
     attached = sum(1 for ref in STYLE_REFS if ref.exists() and v02.attach_style_ref_image_mode(page, ref))
     chips = v02.ingredient_chip_count(page)
     print(f"  style refs attached={attached} chips={chips}", flush=True)
-    if chips == 0:
-        print("  WARN no style ref chip: still runs on the text style lock only", flush=True)
-        v02.close_overlays(page)
+    if attached != len(STYLE_REFS) or chips < len(STYLE_REFS):
+        raise RuntimeError("style refs not attached; refusing Create before upload/selection completes")
     make_still.refs_attached = chips
     box = flow.editor_box(page)
     if not box:
