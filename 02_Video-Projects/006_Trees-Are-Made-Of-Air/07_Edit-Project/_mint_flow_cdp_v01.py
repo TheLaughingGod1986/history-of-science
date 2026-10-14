@@ -259,6 +259,7 @@ def settled_credits(page, wait_s: int = 60) -> int | None:
 
 def harvest(page, flow, project_url: str, dest: Path, wait_s: int = 360) -> None:
     """Play the new gallery clip and save the mp4 from the network (HOS 004 path)."""
+    import _flow_still_v01 as still_tool
     captured: list[bytes] = []
 
     def on_resp(resp) -> None:
@@ -333,7 +334,7 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
         import _flow_still_v01 as still_tool
         log["engine"] = "Flow Image Nano Banana 2 16:9 still -> Veo 3.1 image-to-video via CDP :9222"
     def unspent_fail(e: dict) -> bool:
-        if e.get("status") == "STOP" and not e.get("project_url"):
+        if e.get("status") in ("STOP", "FAIL") and not e.get("project_url") and (e.get("credits_used") or 0) == 0:
             return True
         return e.get("status") == "FAIL" and e.get("credits_after") == e.get("credits_before")
 

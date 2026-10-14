@@ -21,7 +21,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24310,
       "project_url": "https://flow.google.com/project/d0c04ac1-db80-4e85-ac53-474a83a734b7",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/d0c04ac1-db80-4e85-ac53-474a83a734b7",
       "at": "2026-10-13T03:43:25+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/01_geneva_lake_t1.mp4",
@@ -32,7 +32,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T04:43:58+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "02_senebier_jars": {
       "plate": "02_senebier_jars",
@@ -94,7 +95,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24300,
       "project_url": "https://flow.google.com/project/0e6e1ec7-a309-4ce1-bbab-a1bd7d6b9f0a",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/0e6e1ec7-a309-4ce1-bbab-a1bd7d6b9f0a",
       "at": "2026-10-13T03:55:31+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/04_fine_scales_t1.mp4",
@@ -105,7 +106,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:03:06+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "05_sums_add_up": {
       "plate": "05_sums_add_up",
@@ -123,7 +125,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24290,
       "project_url": "https://flow.google.com/project/ac12b630-c619-4e19-ac28-3f8aa37b8247",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/ac12b630-c619-4e19-ac28-3f8aa37b8247",
       "at": "2026-10-13T03:58:54+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/05_sums_add_up_t1.mp4",
@@ -134,7 +136,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:03:18+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "06_leaf_in": {
       "plate": "06_leaf_in",
@@ -152,7 +155,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24280,
       "project_url": "https://flow.google.com/project/ec27a540-d35d-4f0d-bc2c-131f1d586583",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/ec27a540-d35d-4f0d-bc2c-131f1d586583",
       "at": "2026-10-13T04:02:19+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/06_leaf_in_t1.mp4",
@@ -163,7 +166,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:03:29+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "07_sugar_oxygen": {
       "plate": "07_sugar_oxygen",
@@ -181,7 +185,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24270,
       "project_url": "https://flow.google.com/project/e291218a-b740-4d8f-ba76-abdae62ec732",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/e291218a-b740-4d8f-ba76-abdae62ec732",
       "at": "2026-10-13T04:06:17+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/07_sugar_oxygen_t1.mp4",
@@ -192,7 +196,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:03:40+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "08_sugar_wood": {
       "plate": "08_sugar_wood",
@@ -210,7 +215,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24170,
       "project_url": "https://flow.google.com/project/243b32ab-2aef-42ec-8ba6-fd90507c0dba",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/243b32ab-2aef-42ec-8ba6-fd90507c0dba",
       "at": "2026-10-13T04:09:48+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/08_sugar_wood_t1.mp4",
@@ -221,7 +226,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:03:52+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "11_trunk_pie": {
       "plate": "11_trunk_pie",
@@ -239,7 +245,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24160,
       "project_url": "https://flow.google.com/project/7ef5c297-bf7b-4df2-9588-a9e29f21b0ea",
-      "status": "PENDING_UAT",
+      "status": "KEEP_REASSIGNED_TO_03_DE_SAUSSURE",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/7ef5c297-bf7b-4df2-9588-a9e29f21b0ea",
       "at": "2026-10-13T04:13:12+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/11_trunk_pie_t1.mp4",
@@ -250,7 +256,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:04:02+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "Reassigned to P5:03_de_saussure (#180 6140142639)"
     },
     "14_built_from_sky": {
       "plate": "14_built_from_sky",
@@ -268,7 +275,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24150,
       "project_url": "https://flow.google.com/project/1030ff0d-a997-4d77-b920-e5377b7be120",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/1030ff0d-a997-4d77-b920-e5377b7be120",
       "at": "2026-10-13T04:16:36+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/14_built_from_sky_t1.mp4",
@@ -279,7 +286,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:04:14+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "15_food_glow": {
       "plate": "15_food_glow",
@@ -297,7 +305,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24140,
       "project_url": "https://flow.google.com/project/997cd0c6-2d0a-449f-91ec-20072e5f3a51",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/997cd0c6-2d0a-449f-91ec-20072e5f3a51",
       "at": "2026-10-13T04:20:02+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/15_food_glow_t1.mp4",
@@ -308,7 +316,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:04:25+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "16_cow_grass": {
       "plate": "16_cow_grass",
@@ -326,7 +335,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24040,
       "project_url": "https://flow.google.com/project/cb5de4a4-51ea-4625-97c2-3050cc3e92ae",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/cb5de4a4-51ea-4625-97c2-3050cc3e92ae",
       "at": "2026-10-13T04:23:26+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/16_cow_grass_t1.mp4",
@@ -337,7 +346,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:04:36+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "17_wind_air": {
       "plate": "17_wind_air",
@@ -355,7 +365,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24030,
       "project_url": "https://flow.google.com/project/a880d41a-2985-49b3-9e10-ed9c74606932",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/a880d41a-2985-49b3-9e10-ed9c74606932",
       "at": "2026-10-13T04:26:49+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/17_wind_air_t1.mp4",
@@ -366,7 +376,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:04:47+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "18_forest_sea": {
       "plate": "18_forest_sea",
@@ -384,7 +395,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24020,
       "project_url": "https://flow.google.com/project/1cbcc9de-fc0d-4243-9670-abe1ef7b59ff",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/18_forest_sea_t1.mp4",
       "sha256": "8e3670cd36e6cec5298caa3b86d2bc8da66a874bbd889536ead3271b3ae4b5be",
       "duration_s": 8.0,
@@ -394,7 +405,8 @@
       },
       "credits_after": 24010,
       "credits_used": 10,
-      "at": "2026-10-13T04:29:11+00:00"
+      "at": "2026-10-13T04:29:11+00:00",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "19_dots_crowd": {
       "plate": "19_dots_crowd",
@@ -412,7 +424,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24010,
       "project_url": "https://flow.google.com/project/91aa610b-0850-44ef-b7ed-7e5dcf241b55",
-      "status": "PENDING_UAT",
+      "status": "REJECT_REPLACED_BY_CG",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/91aa610b-0850-44ef-b7ed-7e5dcf241b55",
       "at": "2026-10-13T04:32:40+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/19_dots_crowd_t1.mp4",
@@ -423,7 +435,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:04:58+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "Replaced by 0-credit code graphic (#180 6140142639)"
     },
     "20_explorer_willow": {
       "plate": "20_explorer_willow",
@@ -441,7 +454,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24000,
       "project_url": "https://flow.google.com/project/a8930ba0-e50b-4ddd-b225-7c015d94940d",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/a8930ba0-e50b-4ddd-b225-7c015d94940d",
       "at": "2026-10-13T04:36:05+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/20_explorer_willow_t1.mp4",
@@ -452,7 +465,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:05:09+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "22_pulled_down": {
       "plate": "22_pulled_down",
@@ -470,7 +484,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 23900,
       "project_url": "https://flow.google.com/project/c08b3dc9-ab3d-4a03-9a24-a4b76ebc5a55",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/c08b3dc9-ab3d-4a03-9a24-a4b76ebc5a55",
       "at": "2026-10-13T04:39:31+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/22_pulled_down_t1.mp4",
@@ -481,7 +495,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:05:20+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "23_carbon_atom": {
       "plate": "23_carbon_atom",
@@ -499,7 +514,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 23890,
       "project_url": "https://flow.google.com/project/2553a6ab-e25f-4124-b666-d4c7665a0d2b",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/2553a6ab-e25f-4124-b666-d4c7665a0d2b",
       "at": "2026-10-13T04:42:55+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/23_carbon_atom_t1.mp4",
@@ -510,7 +525,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T06:05:32+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6140142639)"
     },
     "02_senebier_jars#t3": {
       "plate": "02_senebier_jars",
@@ -527,6 +543,33 @@
       "why": "RuntimeError: style refs not attached; refusing Create before upload/selection completes",
       "at": "2026-10-13T10:32:04+00:00",
       "chief_authorization": "HOS #180 6140112141 / 6140142639; one Fast attempt only"
+    },
+    "02_senebier_jars#cover_v01": {
+      "plate": "02_senebier_jars",
+      "status": "PENDING_UAT",
+      "credits_used": 0,
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/02_senebier_jars_cover_v01.mp4",
+      "sha256": "9ba297483f3538b10464e1f87763da35f36a44900cd7e1c264e43304565fee53",
+      "contact_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/uat/02_senebier_jars_cover_v01_sheet.jpg",
+      "note": "0-credit cover fallback: P4:04_sunny_window_t1 (1.50-5.25s) + P4:05_bubbles_macro_t1 (3.75-7.46s) per Chief #180 6140112141 / 14 Oct 20:50Z"
+    },
+    "11_trunk_pie#cg_v01": {
+      "plate": "11_trunk_pie",
+      "status": "PENDING_UAT",
+      "credits_used": 0,
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/11_trunk_pie_cg_v01.mp4",
+      "sha256": "60e63c5e5e1d195f5205434ee146d6683796b116e9ab519644d798f6765b20e9",
+      "contact_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/uat/11_trunk_pie_cg_v01_sheet.jpg",
+      "note": "0-credit house-style animated diagram (50% dark wood, 42% lighter wood, 6% second wedge, 2% ash sliver) per Chief #180 6140142639"
+    },
+    "19_dots_crowd#cg_v01": {
+      "plate": "19_dots_crowd",
+      "status": "PENDING_UAT",
+      "credits_used": 0,
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/19_dots_crowd_cg_v01.mp4",
+      "sha256": "1931f67210cd956c6be0ba101ea2e836cc0d4c41ec3aeba2322fad81db49c2ef",
+      "contact_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/uat/19_dots_crowd_cg_v01_sheet.jpg",
+      "note": "0-credit house-style animated diagram (10,000 pale jostling dots, 4 turning solid gold) per Chief #180 6140142639"
     }
   },
   "balance_reads": [

@@ -44,7 +44,7 @@
       "style_ref_chips": null,
       "credits_after_still": 25040,
       "project_url": "https://flow.google.com/project/f269dd3e-3c5b-43d7-8eb6-569c6f7af99d",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "at": "2026-10-13T00:53:38+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/10_only_green_t2.mp4",
       "sha256": "cfd7a02a6d3f203e9528feef1bcfe1fc9f0e7a5a482a83f791de77daec55334d",
@@ -57,7 +57,8 @@
       "harvest_note": "re-harvested J0140 run 2026-10-13 01:5xZ: hover tile -> <video> src fetched via browser session (0 cr)",
       "why_prior_fail": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/f269dd3e-3c5b-43d7-8eb6-569c6f7af99d",
       "credits_after": 25030,
-      "credits_used": 10
+      "credits_used": 10,
+      "chief_ruling": "KEEP (#180 6136917197 / 6137551906)"
     },
     "05_bubbles_macro": {
       "plate": "05_bubbles_macro",
@@ -75,7 +76,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24940,
       "project_url": "https://flow.google.com/project/03ac76fd-7b3d-4da7-9d1d-4e867952fe5a",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/03ac76fd-7b3d-4da7-9d1d-4e867952fe5a",
       "at": "2026-10-13T02:48:11+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
@@ -86,7 +87,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T03:25:47+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6136917197 / 6137551906)"
     },
     "06_collect_blaze": {
       "plate": "06_collect_blaze",
@@ -162,7 +164,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24640,
       "project_url": "https://flow.google.com/project/892ed405-69a4-4417-b0b9-37268b9c21a6",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/892ed405-69a4-4417-b0b9-37268b9c21a6",
       "at": "2026-10-13T03:13:01+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/11_night_jars_t1.mp4",
@@ -173,7 +175,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T03:26:20+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6136917197 / 6137551906)"
     },
     "12_shutters_open": {
       "plate": "12_shutters_open",
@@ -191,7 +194,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24540,
       "project_url": "https://flow.google.com/project/280a6cd6-8b72-4727-be16-beebb0dd1213",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/280a6cd6-8b72-4727-be16-beebb0dd1213",
       "at": "2026-10-13T03:21:22+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/12_shutters_open_t1.mp4",
@@ -202,7 +205,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T03:26:35+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "chief_ruling": "KEEP (#180 6136917197 / 6137551906)"
     },
     "13_sun_canopy": {
       "plate": "13_sun_canopy",
@@ -338,9 +342,9 @@
       "credits_after_still": 23790,
       "project_url": "https://flow.google.com/project/5c3e36ef-8ec6-4338-8343-e137c2e3f2a7",
       "status": "FAIL",
-      "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/5c3e36ef-8ec6-4338-8343-e137c2e3f2a7",
+      "why": "Absent in Flow project 5c3e36ef (verified 14 Oct); replaced by authorized Fast t3",
       "at": "2026-10-13T07:02:49+00:00",
-      "harvest_retry": "2026-10-13T07:37:54+00:00 RuntimeError: harvest timeout 600s project=https://flow.google.com/project/5c3e36ef-8ec6-4338-8343-e137c2e3f2a7"
+      "harvest_retry": "2026-10-14T21:43:30+00:00 RuntimeError: harvest timeout 15s project=https://flow.google.com/project/5c3e36ef-8ec6-4338-8343-e137c2e3f2a7"
     },
     "08_explorer_shade#t2": {
       "plate": "08_explorer_shade",
@@ -369,6 +373,38 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T07:38:05+00:00",
+      "harvest": "harvest-only pass, 0 credits"
+    },
+    "06_collect_blaze#t3": {
+      "plate": "06_collect_blaze",
+      "take": 3,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "path": "flow-cdp-still-i2v",
+      "explorer": false,
+      "prompt": "Animate the attached start frame; keep its exact cartoon look, objects and light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Close-up on a leaf jar on a table; only Ingenhousz's hands and cuffs in frame, no face, no full figure, no bell jar over a plant. His hands hold a small upside-down glass test tube over the leaf jar, catching the silver bubbles as they rise; then one hand lowers a small candle flame into the mouth of that tube and it blazes up bright and tall. Silent. Continuous motion through the final frame. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame.",
+      "credits_before": 23740,
+      "submitted_at": "2026-10-14T22:02:20+00:00",
+      "still_prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nPremium Animistry-class 3D cartoon. Close-up on a leaf jar on a table; only Ingenhousz's hands and cuffs in frame, no face, no full figure, no bell jar over a plant. His hands hold a small upside-down glass test tube over the leaf jar, catching the silver bubbles as they rise; then one hand lowers a small candle flame into the mouth of that tube and it blazes up bright and tall. Silent. Continuous motion through the final frame. No Explorer.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "start_frame_sha256": "add0f074ca63a44f7af479e40a3de59db45fc0ebc7a3470c5cb5bb38f077cd7c",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/06_collect_blaze_t3.png",
+      "style_ref_chips": 2,
+      "credits_after_still": 23740,
+      "project_url": "https://flow.google.com/project/580102ce-29a9-4551-bb88-7beb2ef3f870",
+      "status": "PENDING_UAT",
+      "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/580102ce-29a9-4551-bb88-7beb2ef3f870",
+      "at": "2026-10-14T22:06:42+00:00",
+      "chief_authorization": "Acting-Chief ruling J0140 (Claude, 14 Oct 20:50Z) item 1: P4:06 t2 not in Flow project -> one Fast take",
+      "credits_after": 23730,
+      "credits_used": 10,
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/06_collect_blaze_t3.mp4",
+      "sha256": "69e790e4e14c530f98f07986c35d294e89b6c2d0905d3e513e611d3e4531dd41",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/uat/06_collect_blaze_t3_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "harvested_at": "2026-10-14T22:07:10+00:00",
       "harvest": "harvest-only pass, 0 credits"
     }
   },
@@ -507,9 +543,49 @@
       "at": "2026-10-13T07:38:06+00:00",
       "credits": 23690,
       "when": "harvest-only (before 23690)"
+    },
+    {
+      "at": "2026-10-14T21:39:43+00:00",
+      "credits": null,
+      "when": "harvest-only (before 23740)"
+    },
+    {
+      "at": "2026-10-14T21:39:46+00:00",
+      "credits": 23740,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-14T21:40:58+00:00",
+      "credits": 23730,
+      "after": "06_collect_blaze"
+    },
+    {
+      "at": "2026-10-14T21:43:33+00:00",
+      "credits": null,
+      "when": "harvest-only (before 23740)"
+    },
+    {
+      "at": "2026-10-14T21:43:35+00:00",
+      "credits": 23740,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-14T22:02:20+00:00",
+      "credits": 23740,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-14T22:06:42+00:00",
+      "credits": 23730,
+      "after": "06_collect_blaze"
+    },
+    {
+      "at": "2026-10-14T22:07:12+00:00",
+      "credits": 23730,
+      "when": "harvest-only (before 23730)"
     }
   ],
-  "updated": "2026-10-13T07:38:06+00:00",
+  "updated": "2026-10-14T22:07:12+00:00",
   "attempts_failed": [
     {
       "plate": "10_only_green",

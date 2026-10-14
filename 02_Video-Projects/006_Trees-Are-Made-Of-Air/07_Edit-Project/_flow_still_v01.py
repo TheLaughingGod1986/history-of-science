@@ -163,37 +163,106 @@ def all_img_srcs(page) -> set[str]:
     return set(page.evaluate("() => [...document.querySelectorAll('img')].map(i => i.currentSrc || i.src || '').filter(s => s.length >= 20)") or [])
 
 
+def safe_close_overlays(page) -> None:
+    """Close menus/modals with Escape and exit gallery image-edit mode without clicking gallery tiles."""
+    for _ in range(3):
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+        page.wait_for_timeout(120)
+    try:
+        done = page.locator('button[aria-label="Finished editing"]')
+        if done.count() and done.first.is_visible():
+            done.first.click(timeout=2000)
+            page.wait_for_timeout(400)
+    except Exception:
+        pass
+
+
+def prompt_pill_text(page) -> str:
+    """Read the prompt-bar Settings trigger pill, ignoring the left sidebar 'image Images' tab."""
+    return page.evaluate(
+        """() => {
+          for (const b of document.querySelectorAll('button')) {
+            const aria = (b.getAttribute('aria-label') || '').trim();
+            const t = (b.innerText || '').trim().replace(/\\n+/g, ' ');
+            const r = b.getBoundingClientRect();
+            if (r.width <= 40 || r.height <= 16) continue;
+            if (/Settings trigger/i.test(aria)) return t.slice(0, 160);
+            if (r.y > 400 && /Nano Banana|Video ·|Omni Flash|Omni 1|Veo 3|crop_/i.test(t)) return t.slice(0, 160);
+          }
+          return '';
+        }"""
+    ) or ""
+
+
+def safe_open_ingredients_panel(page) -> None:
+    """Open the Add-ingredients menu without toggling it closed if already open."""
+    loc = page.locator('button[aria-label*="Add ingredients" i]')
+    if loc.count():
+        txt = (loc.first.inner_text() or "").strip().lower()
+        if "close" in txt:
+            return
+        loc.first.click(force=True, timeout=5000)
+        page.wait_for_timeout(800)
+        return
+    v02.open_ingredients_panel(page)
+
+
+def prompt_chip_count(page) -> int:
+    """Count only real attached prompt-bar ingredient chips (alt='Ingredient image' or y > 0.65*h),
+    never the 40x40 asset rows inside the open Ingredients modal."""
+    return int(page.evaluate(
+        """() => [...document.querySelectorAll('img')].filter(i => {
+          const r = i.getBoundingClientRect();
+          if (r.width < 24 || r.height < 24 || r.width > 160 || r.height > 160) return false;
+          return /ingredient image/i.test(i.alt || '') || r.y > (window.innerHeight || 900) * 0.65;
+        }).length"""
+    ) or 0)
+
+
+v02.close_overlays = safe_close_overlays
+v02.pill_text = prompt_pill_text
+v02.open_ingredients_panel = safe_open_ingredients_panel
+v02.ingredient_chip_count = prompt_chip_count
+
+
 def attach_completed_style_ref(page, ref: Path, timeout_s: float = 120) -> bool:
-    """Upload once, then wait for the exact completed library tile to be selectable."""
-    v02.close_overlays(page)
-    page.wait_for_timeout(500)
-    before = v02.ingredient_chip_count(page)
-    if v02.attach_style_ref_image_mode(page, ref):
-        v02.close_overlays(page)
-        page.wait_for_timeout(500)
-        return True
+    """Upload once if needed, then select the completed library asset-item (role=option) and Add to prompt."""
+    safe_close_overlays(page)
+    page.wait_for_timeout(400)
+    before = prompt_chip_count(page)
     deadline = time.monotonic() + timeout_s
+    uploaded = False
     while time.monotonic() < deadline:
-        if v02.ingredient_chip_count(page) > before:
-            v02.close_overlays(page)
-            page.wait_for_timeout(500)
+        if prompt_chip_count(page) > before:
+            safe_close_overlays(page)
+            page.wait_for_timeout(400)
             return True
-        v02.close_overlays(page)
-        page.wait_for_timeout(400)
-        v02.open_ingredients_panel(page)
-        tile = page.get_by_role("button", name=re.compile(
-            r"^" + re.escape(ref.name) + r"\s+Image$", re.I))
+        safe_open_ingredients_panel(page)
+        tile = page.locator(
+            'button.asset-item, button[role="option"]',
+            has_text=re.compile(re.escape(ref.name), re.I),
+        )
         if tile.count() >= 1 and tile.first.is_visible():
             tile.first.click(timeout=3000)
+            page.wait_for_timeout(500)
             if v02.click_add_to_prompt(page):
-                page.wait_for_timeout(800)
-                if v02.ingredient_chip_count(page) > before:
-                    v02.close_overlays(page)
-                    page.wait_for_timeout(500)
+                page.wait_for_timeout(900)
+                if prompt_chip_count(page) > before:
+                    safe_close_overlays(page)
+                    page.wait_for_timeout(400)
                     return True
-        page.wait_for_timeout(3000)
-    v02.close_overlays(page)
-    page.wait_for_timeout(500)
+        elif not uploaded:
+            if v02.attach_style_ref_image_mode(page, ref) and prompt_chip_count(page) > before:
+                safe_close_overlays(page)
+                page.wait_for_timeout(400)
+                return True
+            uploaded = True
+        page.wait_for_timeout(2000)
+    safe_close_overlays(page)
+    page.wait_for_timeout(400)
     return False
 
 
