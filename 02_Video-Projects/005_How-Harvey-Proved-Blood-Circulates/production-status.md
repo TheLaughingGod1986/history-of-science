@@ -825,3 +825,13 @@ Same scenes and lettering assets as v01. Stack centred across the top: starts 4.
 `thumb_preview.py short` on each (`covers_v02/*_preview.jpg`) and `style_sheet.py short` (`covers_v02/hos_005_shorts_covers_v02_style_sheet.jpg`, 3 new vs 8 live). Notes: in the Shorts-list 16:9 crop only the bottom word shows, as with the live covers. On A the glass figure's head and the top of the jug tower sit behind the lettering; on B the band still shows beside TIGHT.
 
 **STOP:** Claude takes the Shorts package to Ben for his final OK. Nothing is in Studio.
+
+
+## J0188 s04 scheduling — Codex, 14 Oct 2026
+
+- Uploaded once: `5n7xFQRBUvI`, **Is the Heart a Pump?**, private + publishAt **2026-10-31T11:30:00Z** (31 Oct 11:30 London). Claude acting Chief authorized first free day on/after 30 Oct in desk #6177253583; live Studio showed 30 Oct occupied and 31 Oct free. Old state: not uploaded.
+- Package lint, Short opening gate and package dry run passed. Channel audit: 37 videos, zero errors after repair of title/description language on five existing private drafts (only defaultLanguage=en-GB; titles/status preserved).
+- API said thumbnail set; Studio cover explicitly uploaded and verified after reopening (IS THE / HEART A / PUMP?). Audience not made for kids, AI Yes, paid promotion No, both languages en-GB, Education / Concept overview / England, comments On / Basic / Top, automatic places off, chapters/concepts on, embedding/notify/remix on.
+- Related pending: Studio selector only offers public videos; ID search for private long `wwcjcFfC-5M` returned no match. Set after long airs 29 Oct 18:00Z and before Short airs.
+- Buffer pending: HOS `BUFFER_HOS_API_KEY` absent from runtime and available env files; Orbit key never used. Copy prepared in package evidence; no social posts made.
+- No spend, delete, retitle or protected call. Prior OWB Short IDs remain scheduled; never re-upload any of these three.
