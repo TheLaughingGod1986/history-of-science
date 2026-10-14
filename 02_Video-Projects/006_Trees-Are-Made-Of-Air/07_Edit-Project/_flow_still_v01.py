@@ -165,23 +165,35 @@ def all_img_srcs(page) -> set[str]:
 
 def attach_completed_style_ref(page, ref: Path, timeout_s: float = 120) -> bool:
     """Upload once, then wait for the exact completed library tile to be selectable."""
+    v02.close_overlays(page)
+    page.wait_for_timeout(500)
     before = v02.ingredient_chip_count(page)
     if v02.attach_style_ref_image_mode(page, ref):
+        v02.close_overlays(page)
+        page.wait_for_timeout(500)
         return True
     deadline = time.monotonic() + timeout_s
     while time.monotonic() < deadline:
+        if v02.ingredient_chip_count(page) > before:
+            v02.close_overlays(page)
+            page.wait_for_timeout(500)
+            return True
         v02.close_overlays(page)
+        page.wait_for_timeout(400)
         v02.open_ingredients_panel(page)
         tile = page.get_by_role("button", name=re.compile(
-            r"^" + re.escape(ref.name) + r"\s+Image$"))
-        if tile.count() == 1 and tile.is_visible():
-            tile.click(timeout=3000)
+            r"^" + re.escape(ref.name) + r"\s+Image$", re.I))
+        if tile.count() >= 1 and tile.first.is_visible():
+            tile.first.click(timeout=3000)
             if v02.click_add_to_prompt(page):
-                page.wait_for_timeout(500)
+                page.wait_for_timeout(800)
                 if v02.ingredient_chip_count(page) > before:
-                    page.keyboard.press("Escape")
+                    v02.close_overlays(page)
+                    page.wait_for_timeout(500)
                     return True
-        page.wait_for_timeout(4000)
+        page.wait_for_timeout(3000)
+    v02.close_overlays(page)
+    page.wait_for_timeout(500)
     return False
 
 

@@ -270,7 +270,340 @@
         "ramp_s": 1.3,
         "db": -3.0
       }
+    },
+    "s5_penzias_pigeons": {
+      "id": "s5_penzias_pigeons",
+      "ver": "v01",
+      "work": "_work_shorts_v01/s5_penzias_pigeons",
+      "air_date": "2026-11-02",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s5_penzias_pigeons_v01.mp4",
+      "sha256": "77cc187a07947e92f2510fb157efd1cbb8bee9b9cd3476c5d72ea1e42a5831e1",
+      "duration_s": 21.5,
+      "vo": "hos_sa_s5_penzias_pigeons_vo_v01.wav",
+      "pause_trim_s": 1.76,
+      "bed": "hos-standalone-shorts_score_bed_v01.mp3",
+      "bed_gain_db": -20.8,
+      "hook": "BLAMED THE PIGEONS",
+      "hook_layer": {
+        "font_size": 205,
+        "cap_pct": 7.6,
+        "lines": 3,
+        "block_pct": [
+          5.1,
+          32.8
+        ]
+      },
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 5.52,
+          "plate": "plates_v01/s5/01_pigeons_horn_v01.jpg",
+          "lands_on": 0
+        },
+        {
+          "t0": 5.52,
+          "t1": 10.9,
+          "plate": "plates_v01/s5/02_receiver_needle_v01.jpg",
+          "lands_on": "Arno"
+        },
+        {
+          "t0": 10.9,
+          "t1": 13.9,
+          "plate": "plates_v01/s5/03_nests_inside_v01.jpg",
+          "lands_on": "Pigeons"
+        },
+        {
+          "t0": 13.9,
+          "t1": 16.04,
+          "plate": "plates_v01/s5/02_receiver_needle_v01.jpg",
+          "lands_on": "But",
+          "move": {
+            "z": [
+              1.6,
+              1.75
+            ],
+            "c": [
+              0.52,
+              0.6
+            ]
+          }
+        },
+        {
+          "t0": 16.04,
+          "t1": 18.9,
+          "plate": "plates_v01/s5/05_every_direction_v01.jpg",
+          "lands_on": "It"
+        },
+        {
+          "t0": 18.9,
+          "t1": 21.5,
+          "plate": "plates_v01/s5/01_pigeons_horn_v01.jpg",
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 16,
+      "sfx": {
+        "whoosh_frame0": true,
+        "whoosh_db": -18.0,
+        "ticks_on_cuts": 5
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_sa_s5_penzias_pigeons_v01.mp4  dur=21.5s  audio=-18.2dB  motion=17.68  dhash=bce0d0b0e6167ffd\n   warn  duration 21.5s outside 22\u201327s band\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s5_penzias_pigeons_v01_open_sheet.jpg"
+      }
+    },
+    "s6_fleming_mould": {
+      "id": "s6_fleming_mould",
+      "ver": "v01",
+      "work": "_work_shorts_v01/s6_fleming_mould",
+      "air_date": "2026-11-04",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s6_fleming_mould_v01.mp4",
+      "sha256": "fd5bf3469734c1e4a081ac85baa2a3e7ff5a166fd617de79650db35d6a3b6a03",
+      "duration_s": 21.5,
+      "vo": "hos_sa_s6_fleming_mould_vo_v01.wav",
+      "pause_trim_s": 1.84,
+      "bed": "hos-standalone-shorts_score_bed_v01.mp3",
+      "bed_gain_db": -23.1,
+      "hook": "SAVED BY MOULD",
+      "hook_layer": {
+        "font_size": 239,
+        "cap_pct": 8.85,
+        "lines": 3,
+        "block_pct": [
+          3.0,
+          35.2
+        ]
+      },
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 4.1,
+          "plate": "plates_v01/s6/01_mouldy_dish_v01.jpg",
+          "lands_on": 0
+        },
+        {
+          "t0": 4.1,
+          "t1": 8.5,
+          "plate": "plates_v01/s6/02_back_from_holiday_v01.jpg",
+          "lands_on": "Alexander"
+        },
+        {
+          "t0": 8.5,
+          "t1": 11.32,
+          "plate": "plates_v01/s6/03_fuzzy_mould_v01.jpg",
+          "lands_on": "On"
+        },
+        {
+          "t0": 11.32,
+          "t1": 16.92,
+          "plate": "plates_v01/s6/04_clear_ring_v01.jpg",
+          "lands_on": "All",
+          "move": {
+            "z": [
+              1.05,
+              1.35
+            ],
+            "c": [
+              0.505,
+              0.555
+            ]
+          }
+        },
+        {
+          "t0": 16.92,
+          "t1": 18.9,
+          "plate": "plates_v01/s6/05_medicine_bottles_v01.jpg",
+          "lands_on": "Others"
+        },
+        {
+          "t0": 18.9,
+          "t1": 21.5,
+          "plate": "plates_v01/s6/01_mouldy_dish_v01.jpg",
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 16,
+      "sfx": {
+        "whoosh_frame0": true,
+        "whoosh_db": -14.0,
+        "ticks_on_cuts": 5
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_sa_s6_fleming_mould_v01.mp4  dur=21.5s  audio=-17.2dB  motion=19.9  dhash=41847c32a28203a1\n   warn  duration 21.5s outside 22\u201327s band\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s6_fleming_mould_v01_open_sheet.jpg"
+      }
+    },
+    "s7_priestley_mint": {
+      "id": "s7_priestley_mint",
+      "ver": "v02",
+      "work": "_work_shorts_v01/s7_priestley_mint_v02",
+      "air_date": "2026-11-09",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s7_priestley_mint_v02.mp4",
+      "sha256": "6857ac9374bc582c67d642f365cc0a50861c5fb02ab26f151c62936c815dc049",
+      "duration_s": 19.967,
+      "vo": "hos_sa_s7_priestley_mint_vo_v01.wav",
+      "pause_trim_s": 1.8,
+      "bed": "hos-standalone-shorts_score_bed_v01.mp3",
+      "bed_gain_db": -20.5,
+      "hook": "MINT FIXED THE AIR",
+      "hook_layer": {
+        "font_size": 216,
+        "cap_pct": 8.02,
+        "lines": 3,
+        "block_pct": [
+          4.4,
+          33.5
+        ]
+      },
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 5.14,
+          "plate": "plates_v01/s7/01_candle_jar_v01.jpg",
+          "lands_on": 0
+        },
+        {
+          "t0": 5.14,
+          "t1": 10.42,
+          "plate": "plates_v01/s7/01_candle_jar_v01.jpg",
+          "lands_on": "Joseph",
+          "move": {
+            "z": [
+              1.05,
+              1.3
+            ],
+            "c": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        {
+          "t0": 10.42,
+          "t1": 13.84,
+          "plate": "plates_v01/s7/03_mint_sprig_v01.jpg",
+          "lands_on": "He",
+          "move": {
+            "z": [
+              1.5,
+              1.56
+            ],
+            "c": [
+              0.53,
+              0.0
+            ],
+            "top": true
+          }
+        },
+        {
+          "t0": 13.84,
+          "t1": 17.34,
+          "plate": "plates_v01/s7/04_candle_bright_v01.jpg",
+          "lands_on": "then"
+        },
+        {
+          "t0": 17.34,
+          "t1": 19.94,
+          "plate": "plates_v01/s7/01_candle_jar_v01.jpg",
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 15,
+      "sfx": {
+        "whoosh_frame0": true,
+        "whoosh_db": -14.0,
+        "ticks_on_cuts": 3
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_sa_s7_priestley_mint_v02.mp4  dur=19.97s  audio=-18.1dB  motion=13.2  dhash=9b57331f2bebbfb1\n   warn  duration 20.0s outside 22\u201327s band\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s7_priestley_mint_v02_open_sheet.jpg"
+      }
+    },
+    "s8_hales_blood": {
+      "id": "s8_hales_blood",
+      "ver": "v01",
+      "work": "_work_shorts_v01/s8_hales_blood",
+      "air_date": "2026-11-11",
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s8_hales_blood_v01.mp4",
+      "sha256": "56ea2256cee60ed28d1f8f1e3abb344f65a4557fdaa0edb3e53e8499286b579a",
+      "duration_s": 21.2,
+      "vo": "hos_sa_s8_hales_blood_vo_v01.wav",
+      "pause_trim_s": 2.18,
+      "bed": "hos-standalone-shorts_score_bed_v01.mp3",
+      "bed_gain_db": -21.4,
+      "hook": "BLOOD EIGHT FEET UP",
+      "hook_layer": {
+        "font_size": 216,
+        "cap_pct": 8.02,
+        "lines": 4,
+        "block_pct": [
+          3.0,
+          42.7
+        ]
+      },
+      "plan": [
+        {
+          "t0": 0.0,
+          "t1": 4.08,
+          "plate": "plates_v01/s8/01_tall_tube_v01.jpg",
+          "lands_on": 0
+        },
+        {
+          "t0": 4.08,
+          "t1": 8.68,
+          "plate": "plates_v01/s8/02_hales_sketch_v01.jpg",
+          "lands_on": "Stephen"
+        },
+        {
+          "t0": 8.68,
+          "t1": 12.06,
+          "plate": "plates_v01/s8/03_calm_mare_v01.jpg",
+          "lands_on": "He"
+        },
+        {
+          "t0": 12.06,
+          "t1": 14.38,
+          "plate": "plates_v01/s8/04_taller_than_man_v01.jpg",
+          "lands_on": "The"
+        },
+        {
+          "t0": 14.38,
+          "t1": 18.6,
+          "plate": "plates_v01/s8/04_taller_than_man_v01.jpg",
+          "lands_on": "bobbing",
+          "move": {
+            "z": [
+              1.45,
+              1.6
+            ],
+            "c": [
+              0.545,
+              0.3
+            ]
+          }
+        },
+        {
+          "t0": 18.6,
+          "t1": 21.2,
+          "plate": "plates_v01/s8/01_tall_tube_v01.jpg",
+          "lands_on": "loop"
+        }
+      ],
+      "captions": 16,
+      "sfx": {
+        "whoosh_frame0": true,
+        "whoosh_db": -14.0,
+        "ticks_on_cuts": 5
+      },
+      "gate": {
+        "exit": 0,
+        "output": "PASS  hos_sa_s8_hales_blood_v01.mp4  dur=21.2s  audio=-17.8dB  motion=11.0  dhash=73571fd6f67734bc\n   warn  duration 21.2s outside 22\u201327s band\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s8_hales_blood_v01_open_sheet.jpg"
+      }
     }
   },
-  "contact_sheet": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/contact_sheet_v02.jpg"
+  "contact_sheet": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/contact_sheet_v02.jpg",
+  "contact_sheets": {
+    "s5-s6-s7-s8": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/contact_sheet_s5-s6-s7-s8_v01.jpg",
+    "s7": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/contact_sheet_s7_v02.jpg"
+  }
 }

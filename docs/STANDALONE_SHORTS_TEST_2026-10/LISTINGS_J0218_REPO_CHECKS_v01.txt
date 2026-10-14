@@ -1,0 +1,61 @@
+
+== no media
+-- no media: PASS
+
+== status board in sync
+STATUS.md is stale: run python3 00_Brand/Channel-Setup/tools/status_board.py
+00_Brand/Channel-Setup/kanban/index.html is stale: run python3 00_Brand/Channel-Setup/tools/status_board.py
+-- status board in sync: FAIL
+
+== ElevenLabs guard tests
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.035s
+
+OK
+-- ElevenLabs guard tests: PASS
+
+== vo_check word tests
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+-- vo_check word tests: PASS
+
+== contract tests
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+ RUN  v4.1.10 /private/tmp/codex-j0211-hos/07_Content-Ops
+
+
+ Test Files  1 passed (1)
+      Tests  20 passed (20)
+   Start at  18:31:41
+   Duration  835ms (transform 26ms, setup 0ms, import 768ms, tests 8ms, environment 0ms)
+
+-- contract tests: PASS
+
+== package-lint
+SKIP  02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+SKIP  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+PASS  02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [neighbours.tc-title] T&C title "How Small Can You Cut Gold?" holds none of: atom, periodic table
+PASS  02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/SHORTS_RELEASE.json
+   warn  [related] What happens if you keep cutting gold in half?: Related video not set yet (set it to the 004 long once that long is public)
+PASS  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package/PACKAGE_MANIFEST.json
+PASS  02_Video-Projects/006_Trees-Are-Made-Of-Air/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+PASS  02_Video-Projects/007_The-First-Vaccine/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+PASS  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+PASS  02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+PASS  02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+-- package-lint: PASS
+
+SOME CHECKS FAILED

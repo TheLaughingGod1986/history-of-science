@@ -75,3 +75,23 @@ Next: Chief KEEP/FAIL per plate; a FAIL gets one retake (~£0.03 each, est ≈ �
 - **One take, £0.03:** `plates_v01/s7/03_mint_sprig_v02.jpg` (gitignored; Priestley face-locked to S7-02 v01). The prompt asked for a tight close-up on the hands at the jar rim and a burnt-out candle with no flame.
 - **Cursor's flags (Chief decides KEEP/FAIL):** a **small flame is still visible** on the wick, below a smoke wisp. The mint floats inside the jar rather than being slipped under the rim. The framing is mid-shot, tighter than 02 but not the close-up asked for. The face, wig and coat match S7-02.
 - **No second take** (the brief allows one). If it FAILs, the 22:33Z no-spend crop or the 01 → 02 → 04 drop still stands for J0171.
+
+## S5–S8 v01 assembled (J0171, Cursor, 13 Oct 2026 ~00:55 London)
+
+Chief's plate rulings (HOS #180 22:33Z, 22:34Z, 22:54Z) applied in `_assemble_standalone_shorts_v01.py` (same bed, same house SFX kit, word captions throughout, UK spelling, no title card, no end card, no overlay). Each beat's move is logged in `SHORTS_INDEX_v01.json` under `plan[].move`. Nothing spent.
+
+- **S5:** 01 → 02 → 03 → 02 again on "But the noise", with a tight push on the dial (1.60→1.75×) → 05 → loop to 01. S5-04 dropped.
+- **S6:** 01–05, with a slow push on 04 (1.05→1.35×) centred on the mould so the clear ring fills the frame.
+- **S7:** 01 → 02 → 03 → 04 → loop to 01. **03 is `crop_no_flame` on the v01 plate**, a 1.50→1.56× crop anchored at the top, so the frame ends by 67% of the height, above the flame at about 72%. Checked at the first and last frame of the beat: Priestley's face and the mint are in, there's no flame, and the picture is sharp at 1080×1920. The J0215 v02 retake isn't used. **Flag:** S7-02 (KEEP) shows the candle still lit under the jar on "The air was spent".
+- **S8:** 01–04, plus 04 again on "bobbing with every beat" with a tight push up the column (1.45→1.60×), so no plate holds 6.5 s. The open push starts at 1.55× (house 1.40×) to clear the gate's frame-0 motion warning (9.9 → 11.0).
+- **Hook:** a four-line hook at a 9% cap ran off the top edge (S7/S8 first pass, block top −3.3%). So four-line hooks now use an 8% cap (the house floor, rule 3.3) and the block starts no higher than 3% from the top. S7 now sets on 3 lines (block 4.4–33.5%) and S8 on 4 (3.0–42.7%). S1–S4 aren't rebuilt.
+- **Level:** first pass FAILed twice. On S5 the frame-0 whoosh was within 10 LU of the first word at 0:00.6, so it now plays at −18 dB (house −14). On S6 the bed was within 10 LU of the VO at 0:03.1 for 0.4 s, so the bed is now 2 dB lower for that Short. `_stems_level_v01.py` reads both values from the index.
+
+| Short | Air (11:30 UK) | Length | VO pause trim | gate_shorts_open | sfx_kit level |
+|---|---|---|---|---|---|
+| S5 Penzias | Mon 2 Nov | 21.50 s | 1.76 s | PASS, motion 17.7 | PASS |
+| S6 Fleming | Wed 4 Nov | 21.50 s | 1.84 s | PASS, motion 19.9 | PASS |
+| S7 Priestley | Mon 9 Nov | 19.97 s | 1.80 s | PASS, motion 13.2 | PASS |
+| S8 Hales | Wed 11 Nov | 21.20 s | 2.18 s | PASS, motion 11.0 | PASS |
+
+The gate's only warning is "outside 22–27 s band", which is the standalone test's ~20 s exception. Media (gitignored, Mini only): `shorts_v01/hos_sa_s{5..8}_*_v01.mp4` and the sheet `shorts_v01/contact_sheet_s5-s6-s7-s8_v01.jpg`. **Still open:** custom covers for S5–S8 (a chart job, like J0209), S5–S8 listings, then Chief's package OK (J0172). No upload.

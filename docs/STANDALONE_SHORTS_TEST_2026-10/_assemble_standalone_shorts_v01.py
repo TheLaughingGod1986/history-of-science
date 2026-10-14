@@ -39,9 +39,22 @@ TAIL_S, LOOP_S = 0.6, 2.6
 PAUSE_CAP = 0.40
 CHUNK_MAX_S, CHUNK_MAX_WORDS, CHUNK_MIN_S = 1.55, 4, 0.45
 HOOK_CAP, HOOK_PITCH, UI_TOP = 0.09, 1.32, 0.75
-UK = {"color.": "colour.", "color": "colour"}
+HOOK_CAP_4LINE, HOOK_TOP_MIN = 0.08, 0.03
+UK = [(re.compile(r"\b([Cc])olor"), r"\1olour"), (re.compile(r"\b([Mm])old"), r"\1ould")]
 
-# beats: (word index the plate lands on, plate file). The "loop" beat starts LOOP_S before the end.
+# S5–S8 (Chief, HOS #180 22:33Z/22:34Z/22:54Z): S5 drops 04 and lands "But the noise" on 02 again with a tighter
+# push on the dial; S6-04 pushes in slowly on the mould so the clear ring fills the frame; S7-03 is the no-spend
+# crop_no_flame (≥1.5× top-anchored, so the frame ends by 67% height, above the flame at ~72%); S8 runs 01–04.
+# A beat's optional third item is its move: z (start, end), c (centre x, y as fractions), top (anchor at y=0).
+DIAL_TIGHT = {"z": (1.60, 1.75), "c": (0.52, 0.60)}
+RING_PUSH = {"z": (1.05, 1.35), "c": (0.505, 0.555)}
+CROP_NO_FLAME = {"z": (1.50, 1.56), "c": (0.53, 0.0), "top": True}
+COLUMN_TIGHT = {"z": (1.45, 1.60), "c": (0.545, 0.30)}
+# S7 v02 (Chief, HOS #180 6134869893): 01 holds through "The air was spent", so its second half carries on from
+# where the opening push ends (≈1.05, centred) as one slow push, with no tick on that join (same plate).
+JAR_HOLD = {"z": (1.05, 1.30), "c": (0.5, 0.5)}
+
+# beats: (word index the plate lands on, plate file[, move]). The "loop" beat starts LOOP_S before the end.
 SHORTS = [
     {"id": "s1_herschel_infrared", "air_date": "2026-10-19", "hook": "HOTTER IN THE **DARK**",
      "vo": "hos_sa_s1_herschel_infrared_vo_v01", "trim": True,
@@ -63,6 +76,26 @@ SHORTS = [
      "beats": [(0, "s4/01_lead_box_v01.jpg"), (6, "s4/02_shed_lab_v01.jpg"), (18, "s4/03_glowing_vials_v01.jpg"),
                (23, "s4/04_bare_hands_v01.jpg"), (32, "s4/05_paris_archive_v02.jpg"),
                ("loop", "s4/01_lead_box_v01.jpg")]},
+    {"id": "s5_penzias_pigeons", "air_date": "2026-11-02", "hook": "BLAMED THE **PIGEONS**",
+     "vo": "hos_sa_s5_penzias_pigeons_vo_v01", "trim": True, "whoosh_db": -18.0,
+     "beats": [(0, "s5/01_pigeons_horn_v01.jpg"), (12, "s5/02_receiver_needle_v01.jpg"),
+               (26, "s5/03_nests_inside_v01.jpg"), (32, "s5/02_receiver_needle_v01.jpg", DIAL_TIGHT),
+               (38, "s5/05_every_direction_v01.jpg"), ("loop", "s5/01_pigeons_horn_v01.jpg")]},
+    {"id": "s6_fleming_mould", "air_date": "2026-11-04", "hook": "SAVED BY **MOULD**",
+     "vo": "hos_sa_s6_fleming_mould_vo_v01", "trim": True, "bed_trim_db": -2.0,
+     "beats": [(0, "s6/01_mouldy_dish_v01.jpg"), (8, "s6/02_back_from_holiday_v01.jpg"),
+               (19, "s6/03_fuzzy_mould_v01.jpg"), (26, "s6/04_clear_ring_v01.jpg", RING_PUSH),
+               (39, "s6/05_medicine_bottles_v01.jpg"), ("loop", "s6/01_mouldy_dish_v01.jpg")]},
+    {"id": "s7_priestley_mint", "air_date": "2026-11-09", "hook": "MINT FIXED THE **AIR**",
+     "vo": "hos_sa_s7_priestley_mint_vo_v01", "trim": True, "ver": "v02",
+     "beats": [(0, "s7/01_candle_jar_v01.jpg"), (12, "s7/01_candle_jar_v01.jpg", JAR_HOLD),
+               (27, "s7/03_mint_sprig_v01.jpg", CROP_NO_FLAME), (38, "s7/04_candle_bright_v01.jpg"),
+               ("loop", "s7/01_candle_jar_v01.jpg")]},
+    {"id": "s8_hales_blood", "air_date": "2026-11-11", "hook": "BLOOD **EIGHT FEET** UP",
+     "vo": "hos_sa_s8_hales_blood_vo_v01", "trim": True, "open_z": 1.55,
+     "beats": [(0, "s8/01_tall_tube_v01.jpg"), (10, "s8/02_hales_sketch_v01.jpg"),
+               (22, "s8/03_calm_mare_v01.jpg"), (31, "s8/04_taller_than_man_v01.jpg"),
+               (38, "s8/04_taller_than_man_v01.jpg", COLUMN_TIGHT), ("loop", "s8/01_tall_tube_v01.jpg")]},
 ]
 
 
@@ -81,9 +114,15 @@ def mean_db(p: Path) -> float:
     return float(re.search(r"mean_volume: (-?[\d.]+)", err).group(1))
 
 
+def uk(text: str) -> str:
+    for pat, rep in UK:
+        text = pat.sub(rep, text)
+    return text
+
+
 def stt_words(stem: str) -> list[list]:
     d = json.loads((VO / "stt" / stem / "stt_raw.json").read_text())
-    return [[UK.get(w["text"], w["text"]), w["start"], w["end"]] for w in d["words"] if w["type"] == "word"]
+    return [[uk(w["text"]), w["start"], w["end"]] for w in d["words"] if w["type"] == "word"]
 
 
 def pause_trim(src: Path, words: list[list], dst: Path) -> tuple[list[list], float]:
@@ -155,15 +194,14 @@ def render(path: Path, text: str, size: int, y: int) -> None:
     img.save(path)
 
 
-def render_hook(path: Path, text: str) -> dict:
+def hook_layout(tokens: list[tuple], cap_target: float) -> tuple:
     size = 100
     while True:
         font = ImageFont.truetype(FONT, size, index=2)
         cap = -font.getbbox("H", anchor="ls")[1]
-        if cap >= HOOK_CAP * H:
+        if cap >= cap_target * H:
             break
         size += 1
-    tokens = [(w.strip("*"), w.startswith("**")) for w in text.split()]
     while max(font.getlength(t) for t, _ in tokens) > W - 100:
         size -= 2
         font = ImageFont.truetype(FONT, size, index=2)
@@ -174,10 +212,18 @@ def render_hook(path: Path, text: str) -> dict:
             lines[-1].append(tok)
         else:
             lines.append([tok])
-    widest = max(font.getlength(" ".join(t for t, _ in l)) for l in lines)
+    return size, font, cap, lines
+
+
+def render_hook(path: Path, text: str) -> dict:
+    tokens = [(w.strip("*"), w.startswith("**")) for w in text.split()]
+    size, font, cap, lines = hook_layout(tokens, HOOK_CAP)
+    if len(lines) >= 4:
+        # A four-line block at 9% runs off the top edge (S7/S8 v01 frame 0); 8% is the house floor (rule 3.3).
+        size, font, cap, lines = hook_layout(tokens, HOOK_CAP_4LINE)
     pitch = round(cap * HOOK_PITCH)
     block = pitch * (len(lines) - 1) + cap
-    top = int(H * 0.19) - block // 2
+    top = max(int(H * HOOK_TOP_MIN), int(H * 0.19) - block // 2)
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
     space = font.getlength(" ")
@@ -192,16 +238,24 @@ def render_hook(path: Path, text: str) -> dict:
             "block_pct": [round(100 * top / H, 1), round(100 * (top + block) / H, 1)]}
 
 
-def seg(src: Path, dst: Path, dur: float, k: int, first: bool) -> None:
+def seg(src: Path, dst: Path, dur: float, k: int, first: bool, move: dict | None = None,
+        open_z: float = 1.40) -> None:
     """Smooth push on a still: zoompan over a 4× upscale (sub-pixel steps, no wobble)."""
     n = max(2, round(dur * FPS))
-    if first:
-        z = f"1.40-0.30*min(on/{FPS * 1.0:.0f},1)-0.06*max(0,on-{FPS})/{n}"
+    x, y = "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
+    if move:
+        z0, z1 = move["z"]
+        z = f"{z0}+{z1 - z0:.4f}*on/{n}"
+        cx, cy = move.get("c", (0.5, 0.5))
+        x = f"max(0,min(iw-iw/zoom,{cx}*iw-iw/zoom/2))"
+        y = "0" if move.get("top") else f"max(0,min(ih-ih/zoom,{cy}*ih-ih/zoom/2))"
+    elif first:
+        z = f"{open_z:.2f}-{open_z - 1.10:.2f}*min(on/{FPS * 1.0:.0f},1)-0.06*max(0,on-{FPS})/{n}"
     elif k % 2:
         z = f"1.0+0.07*on/{n}"
     else:
         z = f"1.07-0.07*on/{n}"
-    vf = (f"scale={W * 4}:{H * 4}:flags=lanczos,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+    vf = (f"scale={W * 4}:{H * 4}:flags=lanczos,zoompan=z='{z}':x='{x}':y='{y}'"
           f":d={n}:s={W}x{H}:fps={FPS},setsar=1,format=yuv420p")
     ff("-loop", "1", "-i", str(src), "-vf", vf, "-frames:v", str(n), "-c:v", "libx264", "-preset", "fast",
        "-crf", "17", "-r", str(FPS), str(dst))
@@ -222,29 +276,30 @@ def build(item: dict) -> dict:
         raise SystemExit(f"{sid}: bad length {total}")
 
     cuts = []
-    for w, rel in item["beats"]:
+    for w, rel, *mv in item["beats"]:
         t = 0.0 if w == 0 else (total - LOOP_S if w == "loop" else max(0.0, words[w][1] - 0.12))
-        cuts.append((round(t, 3), PL / rel, w))
+        cuts.append((round(t, 3), PL / rel, w, mv[0] if mv else None))
     plan, segs = [], []
-    for k, (t, src, w) in enumerate(cuts):
+    for k, (t, src, w, move) in enumerate(cuts):
         end = cuts[k + 1][0] if k + 1 < len(cuts) else total
         if end - t < 1.0:
             raise SystemExit(f"{sid}: beat {k} only {end - t:.2f} s")
         out = work / f"seg_{k:02d}.mp4"
-        seg(src, out, end - t, k, k == 0)
+        seg(src, out, end - t, k, k == 0, move, item.get("open_z", 1.40))
         segs.append(out)
         plan.append({"t0": t, "t1": round(end, 3), "plate": src.relative_to(HERE).as_posix(),
-                     "lands_on": w if w in (0, "loop") else words[w][0]})
+                     "lands_on": w if w in (0, "loop") else words[w][0], **({"move": move} if move else {})})
     (work / "pic.txt").write_text("".join(f"file '{s.name}'\n" for s in segs))
     pic = work / "picture.mp4"
     ff("-f", "concat", "-safe", "0", "-i", str(work / "pic.txt"), "-c:v", "libx264", "-pix_fmt", "yuv420p",
        "-preset", "fast", "-crf", "17", "-r", str(FPS), "-t", f"{total:.3f}", str(pic))
 
-    bed_gain = (mean_db(vo) - 18.0) - mean_db(BED)
-    cut_times = [c[0] for c in cuts[1:]]
+    bed_gain = (mean_db(vo) - 18.0) - mean_db(BED) + item.get("bed_trim_db", 0.0)
+    whoosh_db = item.get("whoosh_db", -14.0)
+    cut_times = [c[0] for k, c in enumerate(cuts) if k and c[1] != cuts[k - 1][1]]
     sfx_in = ["-i", str(SFX / "sfx_hos_whoosh_soft_v01.wav")] + sum(
         (["-i", str(SFX / "sfx_hos_tick_ink_v01.wav")] for _ in cut_times), [])
-    sfx_fc = "[2:a]aformat=sample_rates=48000:channel_layouts=stereo,volume=-14dB[s0];"
+    sfx_fc = f"[2:a]aformat=sample_rates=48000:channel_layouts=stereo,volume={whoosh_db:.1f}dB[s0];"
     for i, t in enumerate(cut_times, 1):
         ms = int(t * 1000)
         sfx_fc += (f"[{2 + i}:a]aformat=sample_rates=48000:channel_layouts=stereo,volume=-24dB,"
@@ -290,10 +345,11 @@ def build(item: dict) -> dict:
             "sha256": hashlib.sha256(mp4.read_bytes()).hexdigest(), "duration_s": round(probe(mp4), 3),
             "vo": raw.name, "pause_trim_s": trimmed, "bed": BED.name, "bed_gain_db": round(bed_gain, 2),
             "hook": item["hook"].replace("**", ""), "hook_layer": hook_meta, "plan": plan,
-            "captions": len(chunks), "sfx": {"whoosh_frame0": True, "ticks_on_cuts": len(cut_times)}}
+            "captions": len(chunks),
+            "sfx": {"whoosh_frame0": True, "whoosh_db": whoosh_db, "ticks_on_cuts": len(cut_times)}}
 
 
-def sheet(recs: list[dict]) -> Path:
+def sheet(recs: list[dict], name: str | None = None) -> Path:
     tags = ("frame0", "t1s", "mid", "end")
     tw, th = 216, 384
     img = Image.new("RGB", (tw * len(tags), th * len(recs)), (20, 20, 20))
@@ -301,7 +357,7 @@ def sheet(recs: list[dict]) -> Path:
         for c, tag in enumerate(tags):
             im = Image.open(HERE / rec.get("work", f"_work_shorts_v01/{rec['id']}") / f"{tag}.jpg").resize((tw, th))
             img.paste(im, (c * tw, r * th))
-    p = OUT / f"contact_sheet_{max(r.get('ver', 'v01') for r in recs)}.jpg"
+    p = OUT / (name or f"contact_sheet_{max(r.get('ver', 'v01') for r in recs)}.jpg")
     img.save(p, quality=88)
     return p
 
@@ -324,7 +380,11 @@ def main() -> None:
         recs.append(rec)
         print(f"BUILT {item['id']} {rec['duration_s']} s trim {rec['pause_trim_s']} gate exit {r.returncode}")
         print(rec["gate"]["output"])
-    if recs:
+    if recs and ns.only:
+        tag = "-".join(r["id"].split("_")[0] for r in recs)
+        index.setdefault("contact_sheets", {})[tag] = sheet(
+            recs, f"contact_sheet_{tag}_{max(r['ver'] for r in recs)}.jpg").relative_to(REPO).as_posix()
+    elif recs:
         index["contact_sheet"] = sheet([index["shorts"][i["id"]] for i in SHORTS if i["id"] in index["shorts"]]
                                        ).relative_to(REPO).as_posix()
     idx_p.write_text(json.dumps(index, indent=2) + "\n")

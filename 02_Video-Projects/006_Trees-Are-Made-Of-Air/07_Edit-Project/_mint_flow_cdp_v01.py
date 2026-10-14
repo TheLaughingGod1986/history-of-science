@@ -216,9 +216,16 @@ def freeze_events(mp4: Path) -> int:
 def hover_fetch(page) -> bytes | None:
     """Clicking a tile opens no player; hovering a clip tile mounts a <video> whose src
     the signed-in browser session can fetch. The uploaded start still is a tile too,
-    so hover every tile (top-left first) until one mounts a video."""
+    so hover every tile (top-left first, including top row y < 80) until one mounts a video."""
     try:
-        boxes = [b for b in (i.bounding_box() for i in page.locator("img").all())
+        srcs = page.evaluate(
+            "() => [...document.querySelectorAll('video')].map(v => v.currentSrc || v.src).filter(Boolean)")
+        for src in srcs:
+            r = page.context.request.get(src, timeout=120_000)
+            body = r.body()
+            if r.status == 200 and len(body) > 400_000 and b"ftyp" in body[:64]:
+                return body
+        boxes = [b for b in (i.bounding_box() for i in page.locator("img, video").all())
                  if b and b.get("width", 0) > 80]
         for box in sorted(boxes, key=lambda b: (round(b["y"]), b["x"])):
             page.mouse.move(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
@@ -274,6 +281,11 @@ def harvest(page, flow, project_url: str, dest: Path, wait_s: int = 360) -> None
         t0 = time.time()
         while time.time() - t0 < wait_s and not captured:
             thumbs = flow.collect_gallery_asb_srcs(page)
+            if not thumbs:
+                thumbs = [
+                    s for s in sorted(still_tool.all_img_srcs(page))
+                    if "/asb/" in s or "flow-content" in s
+                ]
             print(f"  harvest poll thumbs={len(thumbs)} elapsed={time.time() - t0:.0f}s", flush=True)
             if thumbs:
                 body = hover_fetch(page)

@@ -40,7 +40,8 @@ def ff(*a: str) -> None:
 def stems(rec: dict, work: Path) -> dict[str, Path]:
     total = rec["duration_s"]
     vo = work / "vo_trim.wav" if rec["pause_trim_s"] else VO / rec["vo"]
-    cut_times = [p["t0"] for p in json.loads((work / "timeline.json").read_text())["plan"][1:]]
+    plan = json.loads((work / "timeline.json").read_text())["plan"]
+    cut_times = [p["t0"] for k, p in enumerate(plan) if k and p["plate"] != plan[k - 1]["plate"]]
     out = work / "stems"
     out.mkdir(exist_ok=True)
     p = {"vo": out / "vo.wav", "bed": out / "bed.wav", "sfx": out / "sfx.wav"}
@@ -57,7 +58,7 @@ def stems(rec: dict, work: Path) -> dict[str, Path]:
        f"afade=t=out:st={total - 0.25:.3f}:d=0.25", "-t", f"{total:.3f}", "-c:a", "pcm_s16le", str(p["bed"]))
     ins = ["-i", str(SFX / "sfx_hos_whoosh_soft_v01.wav")] + sum(
         (["-i", str(SFX / "sfx_hos_tick_ink_v01.wav")] for _ in cut_times), [])
-    fc = f"[0:a]{fmt},volume=-14dB[s0];"
+    fc = f"[0:a]{fmt},volume={rec.get('sfx', {}).get('whoosh_db', -14.0):.1f}dB[s0];"
     for i, t in enumerate(cut_times, 1):
         ms = int(t * 1000)
         fc += f"[{i}:a]{fmt},volume=-24dB,adelay={ms}|{ms}[s{i}];"
@@ -81,10 +82,16 @@ def remix(rec: dict, p: dict[str, Path], src: Path, dst: Path) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--sfx-kit", required=True)
+    ap.add_argument("--only", nargs="*")
     ns = ap.parse_args()
     index = json.loads((HERE / "SHORTS_INDEX_v01.json").read_text())
-    report, ok = {"job": "J0171", "check": "sfx_kit.py level", "shorts": {}}, True
+    rep_p = HERE / "SFX_LEVEL_v01.json"
+    report = json.loads(rep_p.read_text()) if ns.only and rep_p.exists() else {"job": "J0171",
+                                                                               "check": "sfx_kit.py level", "shorts": {}}
+    ok = True
     for sid, rec in index["shorts"].items():
+        if ns.only and not any(sid.startswith(o) for o in ns.only):
+            continue
         stem = Path(rec["file"]).stem
         work = WORK / (sid if stem.endswith("_v01") else sid + "_v02")
         p = stems(rec, work)
@@ -111,9 +118,9 @@ def main() -> None:
         ok &= r.returncode == 0 and cover.exists()
         print(f"{sid}: level exit {r.returncode} cover {'ok' if cover.exists() else 'MISSING'}")
         print(report["shorts"][sid]["level_output"])
-    report["all_pass"] = ok
+    report["all_pass"] = all(r["level_exit"] == 0 and r["cover"] for r in report["shorts"].values())
     (HERE / "SHORTS_INDEX_v01.json").write_text(json.dumps(index, indent=2) + "\n")
-    (HERE / "SFX_LEVEL_v01.json").write_text(json.dumps(report, indent=2) + "\n")
+    rep_p.write_text(json.dumps(report, indent=2) + "\n")
     sys.exit(0 if ok else 1)
 
 
