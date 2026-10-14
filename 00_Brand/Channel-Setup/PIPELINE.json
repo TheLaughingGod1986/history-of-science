@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-12",
-  "updated_by": "Chief (Grok)",
+  "updated": "2026-10-14",
+  "updated_by": "codex",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -391,10 +391,19 @@
           "waiting": "after 010 long VO"
         },
         "picture": {
-          "status": "todo",
+          "status": "blocked",
           "due": "2026-11-08",
-          "owner": "Cursor",
-          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes"
+          "owner": "Chief",
+          "note": "J0184 v02 price proposal: 15 Quality / 82 Fast / 15 reuse; expected 5,525 Flow cr or £130.95 Vertex; no mint. See PRICE_REVIEW_v02.md.",
+          "underway": false,
+          "since": "2026-10-14",
+          "steps": [
+            4,
+            4
+          ],
+          "steps_unit": "J0184 plan steps",
+          "left": "Chief price review",
+          "waiting": "parked for Chief: price pass; conditional Fast prompts and unused KEEP coverage need review"
         },
         "edit": {
           "status": "todo",
