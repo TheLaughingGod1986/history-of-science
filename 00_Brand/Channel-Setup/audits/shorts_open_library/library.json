@@ -40,7 +40,17 @@
       "frame": "00_Brand/Channel-Setup/audits/shorts_open_library/frames/clV6E10NLPw.jpg",
       "status": "scheduled",
       "added_at": "2026-10-02T10:57:22+01:00"
+    },
+    {
+      "id": "5n7xFQRBUvI",
+      "date": "2026-10-31",
+      "title": "Is the Heart a Pump?",
+      "dhash": "dccb39d96f6d6c7a",
+      "source": "J0188 Claude slot ruling #6177253583",
+      "frame": "00_Brand/Channel-Setup/audits/shorts_open_library/frames/5n7xFQRBUvI.jpg",
+      "status": "scheduled",
+      "added_at": "2026-10-14T21:51:39+01:00"
     }
   ],
-  "updated_at": "2026-10-02T10:57:22+01:00"
+  "updated_at": "2026-10-14T21:51:39+01:00"
 }

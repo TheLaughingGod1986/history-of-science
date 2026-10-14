@@ -1,0 +1,57 @@
+{
+  "radios": [
+    "VIDEO_MADE_FOR_KIDS_NOT_MFK",
+    "VIDEO_AGE_RESTRICTION_NONE",
+    "VIDEO_PAID_PRODUCT_PLACEMENT_NO",
+    "VIDEO_HAS_ALTERED_CONTENT_YES",
+    "REMIX_SOURCE_OPTION_OPT_IN"
+  ],
+  "checkboxes": [
+    {
+      "text": "Allow automatic chapters",
+      "checked": true
+    },
+    {
+      "text": "Allow automatic places",
+      "checked": false
+    },
+    {
+      "text": "Allow automatic concepts",
+      "checked": true
+    },
+    {
+      "text": "Allow embedding",
+      "checked": true
+    },
+    {
+      "text": "Publish to subscriptions feed and notify subscribers",
+      "checked": true
+    },
+    {
+      "text": "Show how many viewers like this video",
+      "checked": true
+    }
+  ],
+  "fields": [
+    "Select",
+    "Video language\nEnglish (United Kingdom)",
+    "Caption certification\nNone",
+    "Title and description language\nEnglish (United Kingdom)",
+    "Recording date\nNone",
+    "Video location",
+    "Licence\nStandard YouTube licence",
+    "Education",
+    "Type\nConcept overview",
+    "Academic system\nEngland",
+    "Level\nNone",
+    "Exam, course or standard",
+    "Comments\nOn",
+    "Moderation\nBasic",
+    "Who can comment\nAnyone",
+    "",
+    "Sort by\nTop",
+    "Related video\nNone",
+    "Subtitles"
+  ],
+  "thumbSrc": "https://i9.ytimg.com/vi/5n7xFQRBUvI/sddefault.jpg?v=6acfeb91&sqp=CPjVv9YG-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYciBNKC0wDw==&rs=AOn4CLDiJdLPsEy6xO5wMke23SfA7Zcbjg"
+}
