@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Mon 12 Oct 2026**, updated by Chief (Grok). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Wed 14 Oct 2026**, updated by codex. Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -8,13 +8,13 @@
 
 | Film | Airs | Done | Now | With · underway? | Time left on it | Ready for Ben's OK | Health |
 |---|---|---:|---|---|---|---|---|
-| **004** What's Really Inside an Atom? | Thu 15 Oct (3 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟢 on track |
-| **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (17 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
-| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (24 d) | 57% | Picture (in progress) | **Cursor** · ▶️ underway | 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d) | Sun 1 Nov (in 20 d) | 🟢 on track |
-| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (31 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (J0109: v02 Shorts B + C voiceover; ElevenLabs balance first) | starts later; due today | Sun 8 Nov (in 27 d) | 🟢 on track |
-| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (38 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 4 d late | Sun 15 Nov (in 34 d) | 🟠 behind |
-| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (45 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (J0108 posts the opening, the Chief OKs it (J0110), then J0111 records; balance first) | starts later; due in 2 d | Sun 22 Nov (in 41 d) | 🟠 behind |
-| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (52 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (after 009 VO: opening OK (J0112), then J0113 records; balance first) | starts later; due in 4 d | Sun 29 Nov (in 48 d) | 🟠 behind |
+| **004** What's Really Inside an Atom? | Thu 15 Oct (1 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟠 behind |
+| **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (15 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
+| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (22 d) | 57% | Picture (in progress) | **Cursor** · ▶️ underway | 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 11 d) | Sun 1 Nov (in 18 d) | 🟢 on track |
+| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (29 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (J0109: v02 Shorts B + C voiceover; ElevenLabs balance first) | starts later; due 2 d late | Sun 8 Nov (in 25 d) | 🟠 behind |
+| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (36 d) | 70% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 6 d late | Sun 15 Nov (in 32 d) | ⛔ blocked |
+| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (43 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (J0108 posts the opening, the Chief OKs it (J0110), then J0111 records; balance first) | starts later; due today | Sun 22 Nov (in 39 d) | 🟠 behind |
+| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (50 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (after 009 VO: opening OK (J0112), then J0113 records; balance first) | starts later; due in 2 d | Sun 29 Nov (in 46 d) | 🟠 behind |
 
 ## Who's on what
 
@@ -31,14 +31,19 @@
 - ⏭ Next up: 006 Ben's final OK, due Sun 1 Nov; 007 Ben's final OK, due Sun 8 Nov; 008 Ben's final OK, due Sun 15 Nov
 
 **Cursor**
-- ▶️ Underway: 006 Picture, since Sat 10 Oct (1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d))
+- ▶️ Underway: 006 Picture, since Sat 10 Oct (1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 11 d))
 - ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK
 - ⏭ Next up: 008 Shorts voiceover, due Thu 8 Oct; 007 Shorts voiceover, due Mon 12 Oct; 009 Voiceover (long), due Wed 14 Oct
 
+**Chief**
+- ▶️ Underway: nothing right now
+- ⏸ Waiting: 008 Picture: parked for Chief: price pass; conditional Fast prompts and unused KEEP coverage need review
+
 ## Being worked on right now
 
-- **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (tomorrow)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **006** · 🔄 **Picture** — in progress (48%, 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d), with Cursor since Sat 10 Oct, ▶️ underway, due Sun 25 Oct (in 13 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 queued (J0137); Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)
+- **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (1 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
+- **006** · 🔄 **Picture** — in progress (48%, 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 11 d), with Cursor since Sat 10 Oct, ▶️ underway, due Sun 25 Oct (in 11 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 queued (J0137); Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)
+- **008** · ⛔ **Picture** — blocked (100%, 4/4 J0184 plan steps · Chief price review left, with Chief since Wed 14 Oct, ⛔ blocked: parked for Chief: price pass; conditional Fast prompts and unused KEEP coverage need review, due Sun 8 Nov (in 25 d)): J0184 v02 price proposal: 15 Quality / 82 Fast / 15 reuse; expected 5,525 Flow cr or £130.95 Vertex; no mint. See PRICE_REVIEW_v02.md.
 
 ## Next steps (in order)
 
@@ -68,7 +73,7 @@
 
 `███████████████████░` **95%**
 
-Airs **Thu 15 Oct** · ready for Ben's OK by **Tue 29 Sep** · 🟢 on track
+Airs **Thu 15 Oct** · ready for Ben's OK by **Tue 29 Sep** · 🟠 behind
 
 Finished and scheduled: long `GHZDsiH7L7A` airs Thu 15 Oct 18:00 (Premiere off). Test & Compare A/B/C armed 9 Oct but C (v07) has no OK; v07b (52/53 about 2x) is J0106, due Tue 13 Oct. The Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then; pin and Related at 18:05 on air day.
 
@@ -81,7 +86,7 @@ Finished and scheduled: long `GHZDsiH7L7A` airs Thu 15 Oct 18:00 (Premiere off).
 - ✅ **Shorts voiceover** — done
 - ✅ **Picture** — done
 - ✅ **Edit + master** — done: master v02
-- 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (tomorrow)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
+- 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (1 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
 - ✅ **Ben's final OK** — done: long OK'd before upload (29 Sep); thumb C is the Chief's call now
 - ✅ **Scheduled** — done: Thu 15 Oct 18:00; pin + Related at 18:05
 
@@ -121,17 +126,17 @@ Words and voice are finished. Picture is about half done: Part 01 is kept, Part 
 - ✅ **Voiceover (long)** — done: v02, all five parts PASS
 - ✅ **Shorts scripts** — done
 - ✅ **Shorts voiceover** — done: A v02 · B v03b · C v01 locked
-- 🔄 **Picture** — in progress (48%, 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 13 d), with Cursor since Sat 10 Oct, ▶️ underway, due Sun 25 Oct (in 13 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 queued (J0137); Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)
-- ⬜ **Edit + master** — to do (with Grok, due Thu 29 Oct (in 17 d))
-- ⬜ **Thumbnails** — to do (with Grok, due Thu 29 Oct (in 17 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 1 Nov (in 20 d))
-- ⬜ **Scheduled** — to do (with Grok, due Mon 2 Nov (in 21 d))
+- 🔄 **Picture** — in progress (48%, 1/5 parts kept · about 2 weeks left · ETA Sun 25 Oct (in 11 d), with Cursor since Sat 10 Oct, ▶️ underway, due Sun 25 Oct (in 11 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP (J0107 10 Oct, about $14.82 / £11.86; Chief KEEP desk #180 comment 6102934743), 16_repair_reuse is a window of 14, P3:06_leeds_brewery left for Flow; Part 03 rough v01 queued (J0137); Parts 04–05 + P3:06 on Flow after the 12 Oct refill is read and priced (J0138 → Chief J0139 → J0140)
+- ⬜ **Edit + master** — to do (with Grok, due Thu 29 Oct (in 15 d))
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 29 Oct (in 15 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 1 Nov (in 18 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 2 Nov (in 19 d))
 
 ### 007 · Why Vaccines Are Named After a Cow
 
 `███████░░░░░░░░░░░░░` **35%**
 
-Airs **Thu 12 Nov** · ready for Ben's OK by **Sun 8 Nov** · 🟢 on track
+Airs **Thu 12 Nov** · ready for Ben's OK by **Sun 8 Nov** · 🟠 behind
 
 Script, facts and long voiceover are done. Shorts are now two (v02, test B); their voiceover is next in the queue. Picture waits until the whole voiceover batch has passed.
 
@@ -141,18 +146,18 @@ Script, facts and long voiceover are done. Shorts are now two (v02, test B); the
 - ✅ **Audit + upload package** — done
 - ✅ **Voiceover (long)** — done: about 8.4 min; Part 01 v03 with the shut-up-house pickup
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
-- ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 12 Oct (today))
-- ⬜ **Picture** — to do (with Claude since Wed 7 Oct, due Sun 1 Nov (in 20 d)): plate boards BOARD_V01: re-timed from the locked VO (8:32) and priced 7 Oct (96 rows: 80 mints = 25 Quality + 55 Fast, 2 of them on Flow, 16 reuses; 36 rows added because the VO runs longer than the script's estimate). First takes about £58, about £139 with usual retakes, against £20.59 usable Vertex. Waits for Claude's review, the voiceover batch and credit; nothing minted
-- ⬜ **Edit + master** — to do (with Grok, due Thu 5 Nov (in 24 d))
-- ⬜ **Thumbnails** — to do (with Grok, due Thu 5 Nov (in 24 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 8 Nov (in 27 d))
-- ⬜ **Scheduled** — to do (with Grok, due Mon 9 Nov (in 28 d))
+- ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 12 Oct (2 d late))
+- ⬜ **Picture** — to do (with Claude since Wed 7 Oct, due Sun 1 Nov (in 18 d)): plate boards BOARD_V01: re-timed from the locked VO (8:32) and priced 7 Oct (96 rows: 80 mints = 25 Quality + 55 Fast, 2 of them on Flow, 16 reuses; 36 rows added because the VO runs longer than the script's estimate). First takes about £58, about £139 with usual retakes, against £20.59 usable Vertex. Waits for Claude's review, the voiceover batch and credit; nothing minted
+- ⬜ **Edit + master** — to do (with Grok, due Thu 5 Nov (in 22 d))
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 5 Nov (in 22 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 8 Nov (in 25 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 9 Nov (in 26 d))
 
 ### 008 · Why Did Franklin Fly a Kite in a Storm?
 
-`███████░░░░░░░░░░░░░` **35%**
+`██████████████░░░░░░` **70%**
 
-Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · 🟠 behind
+Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · ⛔ blocked
 
 Script, facts, package and the long voiceover are done (locked 7 Oct, 9:14.8). Shorts voiceover (v02 pair) comes after 009 and 010; picture waits for the whole voiceover batch.
 
@@ -162,12 +167,12 @@ Script, facts, package and the long voiceover are done (locked 7 Oct, 9:14.8). S
 - ✅ **Audit + upload package** — done
 - ✅ **Voiceover (long)** — done: long VO locked 7 Oct: 5 parts, 555 s (9:14.8), 7,497 chars; Part 01 pause trimmed, Part 05 one sentence re-recorded; Claude PASS each part (VO_TAKES_KEEP.json)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
-- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (4 d late))
-- ⬜ **Picture** — to do (with Cursor, due Sun 8 Nov (in 27 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
-- ⬜ **Edit + master** — to do (with Grok, due Thu 12 Nov (in 31 d))
-- ⬜ **Thumbnails** — to do (with Grok, due Thu 12 Nov (in 31 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 15 Nov (in 34 d))
-- ⬜ **Scheduled** — to do (with Grok, due Mon 16 Nov (in 35 d))
+- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (6 d late))
+- ⛔ **Picture** — blocked (100%, 4/4 J0184 plan steps · Chief price review left, with Chief since Wed 14 Oct, ⛔ blocked: parked for Chief: price pass; conditional Fast prompts and unused KEEP coverage need review, due Sun 8 Nov (in 25 d)): J0184 v02 price proposal: 15 Quality / 82 Fast / 15 reuse; expected 5,525 Flow cr or £130.95 Vertex; no mint. See PRICE_REVIEW_v02.md.
+- ⬜ **Edit + master** — to do (with Grok, due Thu 12 Nov (in 29 d))
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 12 Nov (in 29 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 15 Nov (in 32 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 16 Nov (in 33 d))
 
 ### 009 · Why Doesn't the Moon Fall to Earth?
 
@@ -181,14 +186,14 @@ Script, facts, audit and package are done. Long voiceover is next after the 007 
 - ✅ **Script** — done: v01, 91.3
 - ✅ **Fact check** — done
 - ✅ **Audit + upload package** — done
-- ⬜ **Voiceover (long)** — to do (with Cursor, due Wed 14 Oct (in 2 d))
+- ⬜ **Voiceover (long)** — to do (with Cursor, due Wed 14 Oct (today))
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
-- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (4 d late))
-- ⬜ **Picture** — to do (with Cursor, due Sun 15 Nov (in 34 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
-- ⬜ **Edit + master** — to do (with Grok, due Thu 19 Nov (in 38 d))
-- ⬜ **Thumbnails** — to do (with Grok, due Thu 19 Nov (in 38 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 41 d))
-- ⬜ **Scheduled** — to do (with Grok, due Mon 23 Nov (in 42 d))
+- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (6 d late))
+- ⬜ **Picture** — to do (with Cursor, due Sun 15 Nov (in 32 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
+- ⬜ **Edit + master** — to do (with Grok, due Thu 19 Nov (in 36 d))
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 19 Nov (in 36 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 39 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 23 Nov (in 40 d))
 
 ### 010 · What Killed the Dinosaurs Was Hidden in a Line of Clay
 
@@ -202,14 +207,14 @@ Script, facts, audit and package are done. Voiceover follows 009; Shorts are now
 - ✅ **Script** — done: v01, 92.1
 - ✅ **Fact check** — done
 - ✅ **Audit + upload package** — done
-- ⬜ **Voiceover (long)** — to do (with Cursor, due Fri 16 Oct (in 4 d))
+- ⬜ **Voiceover (long)** — to do (with Cursor, due Fri 16 Oct (in 2 d))
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
-- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (4 d late))
-- ⬜ **Picture** — to do (with Cursor, due Sun 22 Nov (in 41 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
-- ⬜ **Edit + master** — to do (with Grok, due Thu 26 Nov (in 45 d))
-- ⬜ **Thumbnails** — to do (with Grok, due Thu 26 Nov (in 45 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 29 Nov (in 48 d))
-- ⬜ **Scheduled** — to do (with Grok, due Mon 30 Nov (in 49 d))
+- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (6 d late))
+- ⬜ **Picture** — to do (with Cursor, due Sun 22 Nov (in 39 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
+- ⬜ **Edit + master** — to do (with Grok, due Thu 26 Nov (in 43 d))
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 26 Nov (in 43 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 29 Nov (in 46 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 30 Nov (in 47 d))
 
 ## How the % works
 
