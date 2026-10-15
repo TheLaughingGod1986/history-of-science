@@ -6,13 +6,17 @@
  * send status, so privacy and publishAt stay untouched.
  *
  * Input: { "retitle": [{ id, expectCurrentTitle, title }] }. A row whose live title no longer
- * matches expectCurrentTitle is skipped. Ben signs off every retitle (AGENTS.md).
+ * matches expectCurrentTitle is skipped.
  *
  *   npx tsx --env-file=.env scripts/retitle-videos.ts --file <fixes.json> --dry-run
  *   npx tsx --env-file=.env scripts/retitle-videos.ts --file <fixes.json>
+ *
+ * Studio core: identical in orbit-with-ben and history-of-science; the channel's own sign-in and desk guard come from
+ * ./channel-youtube. Edit it in orbit-with-ben only (scripts/core_sync.py).
  */
 import fs from "fs";
 import path from "path";
+import { afterRun, beforeRun, youtubeAccessToken } from "./channel-youtube";
 
 type RetitleRow = {
   id: string;
@@ -34,12 +38,6 @@ function arg(name: string): string | undefined {
   return process.argv[idx + 1];
 }
 
-async function accessToken(): Promise<string> {
-  // Shared helper: retries an "expired" row that still has a refresh token, and explains invalid_grant.
-  const { youtubeAccessToken } = await import("../src/lib/publishing/youtube-token");
-  return youtubeAccessToken();
-}
-
 async function yt(token: string, url: string, init?: RequestInit) {
   const res = await fetch(url, {
     ...init,
@@ -59,7 +57,7 @@ async function main() {
   const dry = process.argv.includes("--dry-run");
   const pack = JSON.parse(fs.readFileSync(path.resolve(file), "utf8"));
   const rows: RetitleRow[] = pack.retitle;
-  const token = await accessToken();
+  const token = await youtubeAccessToken();
   const results: unknown[] = [];
 
   for (const row of rows) {
@@ -124,7 +122,11 @@ async function main() {
   console.log(JSON.stringify({ wrote: out, n: results.length, dry }, null, 2));
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+beforeRun();
+
+main()
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
+  .finally(() => afterRun());
