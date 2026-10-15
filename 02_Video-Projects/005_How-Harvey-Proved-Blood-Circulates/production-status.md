@@ -835,3 +835,22 @@ Same scenes and lettering assets as v01. Stack centred across the top: starts 4.
 - Related pending: Studio selector only offers public videos; ID search for private long `wwcjcFfC-5M` returned no match. Set after long airs 29 Oct 18:00Z and before Short airs.
 - Buffer pending: HOS `BUFFER_HOS_API_KEY` absent from runtime and available env files; Orbit key never used. Copy prepared in package evidence; no social posts made.
 - No spend, delete, retitle or protected call. Prior OWB Short IDs remain scheduled; never re-upload any of these three.
+
+## J0254 s05 valves v01 (test B, second search-titled lift) — Cursor, 15 Oct 2026
+
+- **What:** a second search-titled Short lifted from the long's own Part 04, no new VO, picture or bed, no spend. Build `10_Shorts/_build_short_s05_valves_v01.py`, record `10_Shorts/SHORT_s05_valves_v01.json`.
+- **VO:** `part04_the_tied_arm_v01_raw.mp3` 46.5–69.5 s, "Now the little doors. … and it slides through easily." 57 words, pauses capped at 0.6 s. The Part 04 v02/v03 fix only replaced the earlier "artery throbs" sentence, so this is the long's own take.
+- **Picture:** Part 04 KEEP takes 13 t3 (frame 0 and loop), 06 t1, 08 t4, 09 t3, 10 t3. Hook **DOORS IN VEINS**. Person card **FABRICIUS · Padua, c. 1600** at 5.5–8.95 s over the vein drawing (no figure); the long's title at 9–14 s; captions throughout.
+- **Title draft:** *Why Do Veins Have Valves?* (signed-out GB YouTube autocomplete exact hit, 15 Oct; alt *How Do Valves in Veins Work?*).
+- **File:** `10_Shorts/hos_005_s05_valves_v01.mp4` (in the hos-005-blood worktree), 23.70 s, sha256 `bea80a80838c2c72afa02dc409a978ecc7467749566484929c733aee8e7814cd`; phone copy iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v01.mp4`.
+
+```
+PASS  hos_005_s05_valves_v01.mp4  dur=23.7s  audio=-23.8dB  motion=12.76  dhash=fe1f96eb9c6028aa
+PASS  hos_005_s05_valves_v01.mp4  0:23.70  mean -23.8 dB  peak -3.9 dB  144 wpm
+   warn  pace 144 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+   warn  replace at ~0:07.92: script '... fabricius found ...' / heard '... fabriceus found ...' — sounds alike (likely the transcriber); listen
+```
+
+Gate run with `--air-date 2026-11-29` (gate only). Caption check 19 changes, ratio 1.0. Freezedetect 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
