@@ -7,3 +7,7 @@ HANDLE = "HistoryOfScienceYT"
 ROBOT_FRAME0_CHECK = False
 ROBOT_NAME = "the Explorer"
 SHORTS_LOG = "audits/SHORTS_LOG.md"
+SLUG = "hos"
+# gate_shorts_open's block-SSIM same-background check (built for OWB, 6 Oct 2026). Off here until Chief turns it on:
+# HOS's library has no thumbnails yet (`gate_shorts_open.py thumbs` backfills them), and dHash still catches a reused plate.
+BACKGROUND_SSIM_CHECK = False
