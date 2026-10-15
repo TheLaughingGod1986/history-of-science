@@ -1,0 +1,56 @@
+{
+  "file": "/private/tmp/j0312-join/hos_006_full_join_v01.mp4",
+  "part": null,
+  "fails": [
+    "replace at ~1:08.32: script 'hidden water could fool the scales then' / heard 'hidden water could fall the scales then' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "replace at ~3:11.74: script 'he wrote probably take some of their' / heard 'he wrote probably takes some of their' — sounds alike (likely the transcriber); listen",
+    "replace at ~4:24.82: script 'doctor called jan ingenhousz took a house' / heard 'doctor called jan ingenhaus took a house' — sounds alike (likely the transcriber); listen",
+    "replace at ~6:07.20: script 'another genevan nicolas theodore de saussure did' / heard 'another genevan nicolas theodor de saussure did' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 507.81,
+  "duration": "8:27.81",
+  "mean_db": -21.9,
+  "peak_db": -2.2,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 1213,
+  "heard_words": 1213,
+  "wpm": 151,
+  "word_diffs": [
+    {
+      "at": "1:08.32",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "hidden water could fool the scales then",
+      "heard": "hidden water could fall the scales then"
+    },
+    {
+      "at": "3:11.74",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "he wrote probably take some of their",
+      "heard": "he wrote probably takes some of their"
+    },
+    {
+      "at": "4:24.82",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "doctor called jan ingenhousz took a house",
+      "heard": "doctor called jan ingenhaus took a house"
+    },
+    {
+      "at": "6:07.20",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "another genevan nicolas theodore de saussure did",
+      "heard": "another genevan nicolas theodor de saussure did"
+    }
+  ],
+  "first_minute": {
+    "title_question": 132.72,
+    "promise": 7.38
+  },
+  "verdict": "FAIL"
+}
