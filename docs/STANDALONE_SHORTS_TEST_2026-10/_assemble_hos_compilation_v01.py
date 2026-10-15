@@ -15,7 +15,7 @@ Stages:
         missing unless --draft.
 
 Inputs and trim points: COMPILATION_ASSEMBLY_INVENTORY_v01.md. Masters are read
-only; nothing on the NAS is written.
+only; new render scratch is written to the NAS (Chief, 14 Oct).
 
   python3 _assemble_hos_compilation_v01.py prep [--only 005,001] [--scratch DIR]
   python3 _assemble_hos_compilation_v01.py plan [--scratch DIR] [--out FILE]
@@ -35,7 +35,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 HOS = Path.home() / "YouTube" / "History Of Science"
 NAS = Path("/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects")
-SCRATCH = Path("/private/tmp/hos_comp_v01")
+SCRATCH = Path("/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-15/hos_comp_j0175")
 VO_DIR = HOS / "docs/STANDALONE_SHORTS_TEST_2026-10/vo_compilation_v01"
 GRAPHICS_DIR = HOS / "docs/STANDALONE_SHORTS_TEST_2026-10/graphics_v01"
 
@@ -150,14 +150,21 @@ def cmd_segment(args) -> int:
         print(f"{name}: shots cover {have:.2f} s, need {need:.2f} s")
         return 2
     out_dir = scratch / "segments" / name
-    out_dir.mkdir(parents=True, exist_ok=True)
+    if not out_dir.is_dir():
+        out_dir.mkdir(parents=True, exist_ok=True)
 
     cmd = ["ffmpeg", "-hide_banner", "-y"]
+    input_sources = []
     for film, a, b in shots:
         if film == GFX:
+            input_sources.append(str(graphic))
             cmd += ["-i", str(graphic)]
         else:
-            cmd += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(scratch / f"film_{film}_norm.mp4")]
+            src = scratch / f"film_{film}_norm.mp4"
+            if not src.exists():
+                src = next(f["master"] for f in FILMS if f["film"] == film)
+            input_sources.append(str(src))
+            cmd += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(src)]
     vo = VO_DIR / f"hos_comp_{name}_vo_v01.wav"
     cmd += ["-i", str(vo), "-ss", f"{BED_IN[name]:.3f}", "-t", f"{L + 1:.3f}", "-i", str(BED), "-i", str(TICK)]
     n = len(shots)
@@ -169,11 +176,30 @@ def cmd_segment(args) -> int:
     for (film, a, b), s in zip(shots, starts):
         if film == GFX:
             ticks += [round(s + c, 3) for c in gfx_rec["tick_ink_seconds"]]
-    fc, prev = [], "[0:v]"
+    # Original masters are a safe fallback when macOS has purged old prep scratch.
+    fc = [f"[{i}:v]scale=1920:1080,setsar=1,fps=30,settb=AVTB,setpts=PTS-STARTPTS[p{i}]" for i in range(n)]
+    prev = "[p0]"
+    if name == "bridge4":
+        # The screen lights up at the final shot; one pen-tap marks that reveal.
+        ticks = [round(starts[2] + SHOT_XFADE / 2, 3)]
     for i in range(1, n):
-        fc.append(f"{prev}[{i}:v]xfade=transition=fade:duration={SHOT_XFADE}:offset={starts[i]:.3f}[x{i}]")
+        fc.append(f"{prev}[p{i}]xfade=transition=fade:duration={SHOT_XFADE}:offset={starts[i]:.3f}[x{i}]")
         prev = f"[x{i}]"
-    fc.append(f"{prev}trim=duration={L:.3f},setpts=PTS-STARTPTS,format=yuv420p[vout]")
+    if name == "closing":
+        start, end = L - END_CARD_HOLD, L - END_CARD_HOLD + 3.5
+        from PIL import Image, ImageDraw, ImageFont
+        card = Image.new("RGBA", (1920, 1080))
+        pen = ImageDraw.Draw(card)
+        for text, size, y in [("History of Science", 84, 800), ("More discovery stories", 64, 905)]:
+            font = ImageFont.truetype("/System/Library/Fonts/Supplemental/Didot.ttc", size, index=1)
+            pen.text((960, y), text, font=font, fill=(255,244,218,255), anchor="mm")
+        overlay = out_dir / "code_graphic_comp_closing_end_card.png"
+        card.save(overlay)
+        cmd += ["-loop", "1", "-i", str(overlay)]
+        fc.append(f"[{n+3}:v]format=rgba,fade=t=in:st={start}:d=0.5:alpha=1,fade=t=out:st={end-.5}:d=0.5:alpha=1[card]")
+        fc.append(f"{prev}[card]overlay=shortest=1,trim=duration={L:.3f},setpts=PTS-STARTPTS,fade=t=out:st={L-1.5}:d=1.5,format=yuv420p[vout]")
+    else:
+        fc.append(f"{prev}trim=duration={L:.3f},setpts=PTS-STARTPTS,format=yuv420p[vout]")
     fc.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,"
               f"loudnorm=I={VO_I}:TP=-2:LRA=11,adelay={int(VO_LEAD * 1000)}:all=1,"
               f"apad,atrim=duration={L:.3f},asplit=3[vo][vostem][duckvo]")
@@ -210,11 +236,16 @@ def cmd_segment(args) -> int:
         if film == GFX:
             src, framing = graphic.name, {"offset": 0.0, "fit": "J0204 code graphic, own render (Chief PASS 13 Oct)"}
         else:
-            src, framing = f"film_{film}_norm.mp4@{a:.2f}", {"offset": a, "fit": "full 16:9 from the film's passed master"}
+            src, framing = f"{input_sources[i]}@{a:.2f}", {"offset": a, "fit": "full 16:9 from the film's passed master"}
         cuts.append({"row": f"{name}_{i + 1:02d}", "timeline_in": round(s, 3),
                      "timeline_out": round(min(s + d, L), 3), "source": src, "framing": framing})
+    if name == "closing":
+        cuts.append({"row": "code_graphic_comp_closing_end_card", "timeline_in": round(L-6,3),
+                     "timeline_out": round(L-2.5,3), "source": str(overlay),
+                     "framing": {"fit": "own Didot italic overlay over moving atom; 0.5 s alpha fades"}})
     (out_dir / "cuts.json").write_text(json.dumps(cuts, indent=1))
     rec = {"segment": name, "length": round(L, 3), "draft": bool(args.draft), "mp4": str(mp4),
+           "closing_card": {"text": ["History of Science", "More discovery stories"], "start": L-6, "end": L-2.5, "animation": "0.5 s fade in/out over moving picture"} if name == "closing" else None,
            "graphic": str(graphic) if graphic else (TIMELINE_ROWS.get(name, "") + " missing" if name in TIMELINE_ROWS else None),
            "ticks": ticks, "tick": str(TICK), "tick_gain_db": TICK_GAIN_DB,
            "shots": shots, "vo": str(vo), "bed": str(BED), "bed_in": BED_IN[name],
