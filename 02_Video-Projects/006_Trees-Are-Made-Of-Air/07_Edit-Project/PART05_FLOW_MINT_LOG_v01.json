@@ -546,30 +546,33 @@
     },
     "02_senebier_jars#cover_v01": {
       "plate": "02_senebier_jars",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "credits_used": 0,
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/02_senebier_jars_cover_v01.mp4",
       "sha256": "9ba297483f3538b10464e1f87763da35f36a44900cd7e1c264e43304565fee53",
       "contact_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/uat/02_senebier_jars_cover_v01_sheet.jpg",
-      "note": "0-credit cover fallback: P4:04_sunny_window_t1 (1.50-5.25s) + P4:05_bubbles_macro_t1 (3.75-7.46s) per Chief #180 6140112141 / 14 Oct 20:50Z"
+      "note": "0-credit cover fallback: P4:04_sunny_window_t1 (1.50-5.25s) + P4:05_bubbles_macro_t1 (3.75-7.46s) per Chief #180 6140112141 / 14 Oct 20:50Z",
+      "uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     },
     "11_trunk_pie#cg_v01": {
       "plate": "11_trunk_pie",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "credits_used": 0,
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/11_trunk_pie_cg_v01.mp4",
       "sha256": "60e63c5e5e1d195f5205434ee146d6683796b116e9ab519644d798f6765b20e9",
       "contact_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/uat/11_trunk_pie_cg_v01_sheet.jpg",
-      "note": "0-credit house-style animated diagram (50% dark wood, 42% lighter wood, 6% second wedge, 2% ash sliver) per Chief #180 6140142639"
+      "note": "0-credit house-style animated diagram (50% dark wood, 42% lighter wood, 6% second wedge, 2% ash sliver) per Chief #180 6140142639",
+      "uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     },
     "19_dots_crowd#cg_v01": {
       "plate": "19_dots_crowd",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "credits_used": 0,
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/19_dots_crowd_cg_v01.mp4",
       "sha256": "1931f67210cd956c6be0ba101ea2e836cc0d4c41ec3aeba2322fad81db49c2ef",
       "contact_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/uat/19_dots_crowd_cg_v01_sheet.jpg",
-      "note": "0-credit house-style animated diagram (10,000 pale jostling dots, 4 turning solid gold) per Chief #180 6140142639"
+      "note": "0-credit house-style animated diagram (10,000 pale jostling dots, 4 turning solid gold) per Chief #180 6140142639",
+      "uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     }
   },
   "balance_reads": [
@@ -714,5 +717,5 @@
       "after": "02_senebier_jars"
     }
   ],
-  "updated": "2026-10-13T10:32:04+00:00"
+  "updated": "2026-10-15T10:35:00Z"
 }

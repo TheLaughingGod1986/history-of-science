@@ -12,24 +12,24 @@
 | lint:package | PASS on the draft package after the neighbours block edit (captions warning only), 2 Oct 2026. Title, description v01, tags v01 and schedule are proposals |
 | Script sign-off | v01 approved by Claude on the desk with 3 accuracy fixes (#180 comment 5950401504); **v02** = those fixes, `01_Script/trees_script_master_v02.md` |
 | VO | **v02 accepted** by Claude (#180 comment 5951184558) on the fixed `vo_check` (`358d9c7`, PR #188): **PASS** on all five parts and the listen file, 2 Oct (output below). "Genevan" confirmed in the take (whisper large-v3, 0.98) |
-| Picture | **boards v01 for Claude's review with a priced plan** (`07_Edit-Project/parts/part-0N_plates_v01.json`, `PICTURE_PLAN_v01.json`). 92 rows = 23 Quality + 59 Fast + 10 reuse. Vertex Free Trial **£65.73** before boarding; Flow **62 credits**. Expected £138.37 with 005's retake rate, so **£72.64 over the £0 floor** unless the 0-credit Flow options are approved. Nothing minted |
+| Picture | **All 5 parts (92 rows) KEEP and rough cuts assembled** (Chief KEEP sweep 15 Oct 2026, `#180 IC_kwDOUEPCF88AAAABcNg8Bw`, PR `#310 → 85e16bbb`). Part 01: 12/12 KEEP + `hos_006_part01_rough_v01.mp4` (`picture_qa` PASS); Part 02: UAT applied (`#180 5981378493`) + `hos_006_part02_rough_v02.mp4`; Part 03: 18/18 KEEP/reuse (with top-cropped `P3:06`) + `hos_006_part03_rough_v02.mp4` KEEP; Part 04: 16/16 KEEP/reuse (`P4:06 t3`, `P4:08 t2`, `P4:13–16 t1` KEEP) + `hos_006_part04_rough_v01.mp4` KEEP; Part 05: 24/24 KEEP/reuse/code-graphics (`P5:02` cover, `P5:11/19` code graphics KEEP) + `hos_006_part05_rough_v01.mp4` KEEP (`picture_qa` PASS). Flow balance **23,730**; no top-up needed |
 | Runtime target | 7–9 min, 5 parts. Script 1,284 spoken words ≈ 8:34 at 150 wpm (nearer 8:15 at the channel's VO pace) |
 | Air | proposed **Thu 5 Nov 2026 18:00 UK = 18:00 UTC**, normal publish (no Premiere); not signed off |
 | Shorts | 3 planned (lead Fri 6 Nov proposed), one a day at most, Related → this long; dates around the 005 and back-catalogue Shorts set by Claude |
 
-## STOP
+## Next
 
-- **Boards v01 and the priced plan wait for Claude's review on the desk.** No picture spend until he accepts the boards and Ben decides the top-up, or the 0-credit Flow options. Credit can run to £0, never onto paid billing.
+- **Edit & polish (`J0266`):** zero-spend `picture_qa` / `polish_gate` fixes on Part 03 rough v02 (`16_repair_reuse` offset) and Part 04 rough v01 (`09_bubbles_again` offset + `11_night_jars` shadow lift), then fine cut (side labels, WHO/WHEN/DATA/FACT teach cards, timeline, music bed, house SFX) and thumbnails.
 
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 Plants Eat Soil | `07_Edit-Project/parts/part-01_plates_v01.json` (12 rows: 3 Q, 9 F) | — | script v02 · VO v02 PASS · board v01 |
-| 02 Five Years and Two Ounces | `part-02_plates_v01.json` (22: 4 Q, 17 F, 1 reuse) | | script v02 · VO v02 PASS · board v01 |
-| 03 The Air That Mint Repaired | `part-03_plates_v01.json` (18: 4 Q, 13 F, 1 reuse) | | script v02 · VO v02 PASS · board v01 |
-| 04 Bubbles in the Sunlight | `part-04_plates_v01.json` (16: 6 Q, 8 F, 2 reuse) | | script v02 · VO v02 PASS · board v01 |
-| 05 Carbon From the Sky | `part-05_plates_v01.json` (24: 6 Q, 12 F, 6 reuse) | | script v02 · VO v02 PASS · board v01 |
+| 01 Plants Eat Soil | `07_Edit-Project/parts/part-01_plates_v01.json` (12 rows: 3 Q, 9 F) | `hos_006_part01_rough_v01.mp4` (61.67 s, `69974f305a34…`) | script v02 · VO v02 PASS · board v01 · **plates 12/12 KEEP · rough v01 PASS** |
+| 02 Five Years and Two Ounces | `part-02_plates_v01.json` (22: 4 Q, 17 F, 1 reuse) | `hos_006_part02_rough_v02.mp4` (117.00 s, `da02be4f9100…`) | script v02 · VO v02 PASS · board v01 · **UAT applied (#180 5981378493) · rough v02 KEEP** |
+| 03 The Air That Mint Repaired | `part-03_plates_v01.json` (18: 4 Q, 13 F, 1 reuse) | `hos_006_part03_rough_v02.mp4` (94.83 s, `ff80e9fdf802…`) | script v02 · VO v02 PASS · board v01 · **plates 18/18 KEEP/reuse (with P3:06) · rough v02 KEEP** |
+| 04 Bubbles in the Sunlight | `part-04_plates_v01.json` (16: 6 Q, 8 F, 2 reuse) | `hos_006_part04_rough_v01.mp4` (91.92 s, `fcdcce5fc5ce…`) | script v02 · VO v02 PASS · board v01 · **plates 16/16 KEEP/reuse · rough v01 KEEP** |
+| 05 Carbon From the Sky | `part-05_plates_v01.json` (24: 6 Q, 12 F, 6 reuse) | `hos_006_part05_rough_v01.mp4` (142.38 s, `b3ca1afb9cd9…`) | script v02 · VO v02 PASS · board v01 · **plates 24/24 KEEP/reuse/CG · rough v01 KEEP (PASS)** |
 
 ## 2 Oct 2026 — scaffold, script v01, gates (Grok)
 
@@ -392,4 +392,13 @@ Executed the 4-point Acting-Chief ruling (Claude, 14 Oct 20:50Z) on Flow (CDP 92
    - **Part 04 rough v01** (`hos_006_part04_rough_v01.mp4`, 91.917 s, VO 91.320 s, sha256 `fcdcce5fc5ce…`, 0 freezes): all 16 board plates on the locked v02 VO (`02_ingenhousz_jars_t1` top-cropped 1.10x per Chief #180 6131279209; `06_collect_blaze_t3` bottom-trimmed 1.60x to exclude bottom-edge seam). `picture_qa.py` flags only the board's locked `09_bubbles_again` reuse of `05_bubbles_macro_t1` and the Chief-KEEP night candle shot `11_night_jars_t1` (`mean 19.95, p95 118.0`).
    - **Part 05 rough v01** (`hos_006_part05_rough_v01.mp4`, 142.375 s, VO 141.760 s, sha256 `b3ca1afb9cd9…`, 0 freezes): all 24 board plates on the locked v02 VO (`02` cover fallback, `03` reassigned `11_trunk_pie_t1`, `05` trimmed to 5.00–7.93 s ledger tail, `11` and `19` code graphics, `24` HOS 004 KEEP `11_gold_foil_bounce_v01.mp4`). **`picture_qa.py` verdict: PASS (0 fails).**
 5. **PR #310 conflicts resolved:** merged `main`, regenerated `STATUS.md` and `00_Brand/Channel-Setup/kanban/index.html` via `status_board.py`, and verified `check_all.sh`.
+
+## 15 Oct 2026 — J0140 Chief KEEP sweep applied, Part 01 rough v01 assembled, and Parts 01–05 picture logs consolidated on `main` (Gemini covering)
+
+- **Chief KEEP sweep (`#180 IC_kwDOUEPCF88AAAABcNg8Bw`, 15 Oct 2026 08:47Z; `#310 → 85e16bbb`):**
+  - Applied Chief's `KEEP` rulings across `PART03_MINT_LOG_v01.json`, `PART04_MINT_LOG_v01.json`, `PART04_FLOW_MINT_LOG_v01.json`, `PART05_FLOW_MINT_LOG_v01.json`, `parts/part-01..05_plates_v01.json`, and `ROUGH_META_part03_v02.json` / `ROUGH_META_part04_v01.json` / `ROUGH_META_part05_v01.json` (`P3:06 t1` top-cropped 1.33x, `P4:01–04 t1`, `P4:06 t3` Fast, `P4:08 t2` Quality, `P4:13–16 t1`, `P5:02` cover fallback, `P5:11/19` code graphics, and `Part 03 v02 / Part 04 v01 / Part 05 v01` roughs). Zero `PENDING_UAT` entries remain in any mint log (`0/6` logs have pending UAT).
+- **Consolidated Part 01 and Part 02 logs onto `main` & assembled Part 01 24fps rough v01 (0 spend):**
+  - Brought `PART01_MINT_LOG_v01.json`, `FLOW_FAST_v01.json`, `LITE_TEST_v01.json`, `PART02_MINT_LOG_v01.json`, `PART02_UAT_APPLIED_20261004.md`, `ROUGH_META_part02_v02.json`, and the UAT-applied `parts/part-02_plates_v01.json` from the Mini's `hos-006-trees` worktree onto `main`.
+  - Assembled 24 fps 1080p `hos_006_part01_rough_v01.mp4` (`61.667 s`, VO `61.050 s`, sha256 `69974f305a34…`, 0 freezes, **`picture_qa.py` PASS**, `rc=0`) and wrote its metadata, cut/pool lists, contact sheet and `picture_qa` report to `07_Edit-Project/_desk/006/part01_rough_v01/` (copied to iCloud `HOS UAT`).
+- **Next stage (`006 edit`):** `J0266` is queued for the zero-spend `picture_qa` / `polish_gate` fixes on Part 03 rough v02 (`16_repair_reuse` non-overlapping window) and Part 04 rough v01 (`09_bubbles_again` non-overlapping window + `11_night_jars` gentle shadow lift), followed by full fine cut assembly and thumbnails.
 

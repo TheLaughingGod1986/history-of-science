@@ -93,7 +93,7 @@
   "framing": {
    "offset": 0.0
   },
-  "disposition": "Flow Fast t3, bottom 6% trimmed to exclude frame-edge seam (Acting-Chief ruling 14 Oct 20:50Z item 1; PENDING_UAT on review/j0140)"
+  "disposition": "KEEP (Flow Fast t3, bottom 6% trimmed to exclude frame-edge seam (Acting-Chief ruling 14 Oct 20:50Z item 1; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
  },
  {
   "row": "07_priestley_callback",
@@ -125,7 +125,7 @@
   "framing": {
    "offset": 0.0
   },
-  "disposition": "Flow Quality t2 (Chief ruling #180 6137551906; PENDING_UAT on review/j0140)"
+  "disposition": "KEEP (Flow Quality t2 (Chief ruling #180 6137551906; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
  },
  {
   "row": "09_bubbles_again",
@@ -205,7 +205,7 @@
   "framing": {
    "offset": 0.0
   },
-  "disposition": "Flow t1 (J0140 batch 2; PENDING_UAT on review/j0140)"
+  "disposition": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
  },
  {
   "row": "14_leaf_glow",
@@ -221,7 +221,7 @@
   "framing": {
    "offset": 0.0
   },
-  "disposition": "Flow t1 (J0140 batch 2; PENDING_UAT on review/j0140)"
+  "disposition": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
  },
  {
   "row": "15_leaf_turns_sun",
@@ -237,7 +237,7 @@
   "framing": {
    "offset": 0.0
   },
-  "disposition": "Flow t1 (J0140 batch 2; PENDING_UAT on review/j0140)"
+  "disposition": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
  },
  {
   "row": "16_pores_question",
@@ -253,6 +253,6 @@
   "framing": {
    "offset": 0.0
   },
-  "disposition": "Flow t1 (J0140 batch 2; PENDING_UAT on review/j0140)"
+  "disposition": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
  }
 ]

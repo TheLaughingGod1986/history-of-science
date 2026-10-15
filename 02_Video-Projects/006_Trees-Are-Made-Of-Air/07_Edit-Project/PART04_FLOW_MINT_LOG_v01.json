@@ -106,7 +106,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24840,
       "project_url": "https://flow.google.com/project/21d661b7-a696-4a80-89b1-0fb017a237d0",
-      "status": "PENDING_UAT",
+      "status": "SUPERSEDED",
       "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/21d661b7-a696-4a80-89b1-0fb017a237d0",
       "at": "2026-10-13T02:56:28+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/06_collect_blaze_t1.mp4",
@@ -117,7 +117,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T03:25:58+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "uat_note": "Superseded by retake (Chief #180 6137551906)"
     },
     "08_explorer_shade": {
       "plate": "08_explorer_shade",
@@ -135,7 +136,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24740,
       "project_url": "https://flow.google.com/project/a928d829-507d-4fbb-ae09-34fd2a9383cc",
-      "status": "PENDING_UAT",
+      "status": "SUPERSEDED",
       "why": "RuntimeError: harvest timeout 360s project=https://flow.google.com/project/a928d829-507d-4fbb-ae09-34fd2a9383cc",
       "at": "2026-10-13T03:04:44+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/08_explorer_shade_t1.mp4",
@@ -146,7 +147,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T03:26:09+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "uat_note": "Superseded by retake (Chief #180 6137551906)"
     },
     "11_night_jars": {
       "plate": "11_night_jars",
@@ -225,7 +227,7 @@
       "style_ref_chips": null,
       "credits_after_still": 24440,
       "project_url": "https://flow.google.com/project/0c41e9b8-0b25-43e8-bf19-b9e3cc69d5ac",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/0c41e9b8-0b25-43e8-bf19-b9e3cc69d5ac",
       "at": "2026-10-13T03:29:47+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/13_sun_canopy_t1.mp4",
@@ -236,7 +238,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T04:43:10+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     },
     "14_leaf_glow": {
       "plate": "14_leaf_glow",
@@ -254,7 +257,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24430,
       "project_url": "https://flow.google.com/project/3e6a0374-6ac8-44e6-a76d-92656246c8ea",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/3e6a0374-6ac8-44e6-a76d-92656246c8ea",
       "at": "2026-10-13T03:33:12+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/14_leaf_glow_t1.mp4",
@@ -265,7 +268,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T04:43:21+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     },
     "15_leaf_turns_sun": {
       "plate": "15_leaf_turns_sun",
@@ -283,7 +287,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24330,
       "project_url": "https://flow.google.com/project/03349efd-056a-4024-80e1-cdebaafa8266",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/03349efd-056a-4024-80e1-cdebaafa8266",
       "at": "2026-10-13T03:36:37+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/15_leaf_turns_sun_t1.mp4",
@@ -294,7 +298,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T04:43:32+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     },
     "16_pores_question": {
       "plate": "16_pores_question",
@@ -312,7 +317,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 24320,
       "project_url": "https://flow.google.com/project/01b6b324-3536-4164-a1ae-cc59235fb96e",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/01b6b324-3536-4164-a1ae-cc59235fb96e",
       "at": "2026-10-13T03:40:00+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/16_pores_question_t1.mp4",
@@ -323,7 +328,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T04:43:44+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     },
     "06_collect_blaze#t2": {
       "plate": "06_collect_blaze",
@@ -362,7 +368,7 @@
       "style_ref_chips": 0,
       "credits_after_still": 23790,
       "project_url": "https://flow.google.com/project/abd9091d-ed12-4f2d-a16a-4304ad03fc35",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/abd9091d-ed12-4f2d-a16a-4304ad03fc35",
       "at": "2026-10-13T07:06:14+00:00",
       "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/08_explorer_shade_t2.mp4",
@@ -373,7 +379,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-13T07:38:05+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     },
     "06_collect_blaze#t3": {
       "plate": "06_collect_blaze",
@@ -391,7 +398,7 @@
       "style_ref_chips": 2,
       "credits_after_still": 23740,
       "project_url": "https://flow.google.com/project/580102ce-29a9-4551-bb88-7beb2ef3f870",
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": "RuntimeError: harvest timeout 60s project=https://flow.google.com/project/580102ce-29a9-4551-bb88-7beb2ef3f870",
       "at": "2026-10-14T22:06:42+00:00",
       "chief_authorization": "Acting-Chief ruling J0140 (Claude, 14 Oct 20:50Z) item 1: P4:06 t2 not in Flow project -> one Fast take",
@@ -405,7 +412,8 @@
         "freeze_events_0p8s": 0
       },
       "harvested_at": "2026-10-14T22:07:10+00:00",
-      "harvest": "harvest-only pass, 0 credits"
+      "harvest": "harvest-only pass, 0 credits",
+      "uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     }
   },
   "balance_reads": [
@@ -585,7 +593,7 @@
       "when": "harvest-only (before 23730)"
     }
   ],
-  "updated": "2026-10-14T22:07:12+00:00",
+  "updated": "2026-10-15T10:35:00Z",
   "attempts_failed": [
     {
       "plate": "10_only_green",

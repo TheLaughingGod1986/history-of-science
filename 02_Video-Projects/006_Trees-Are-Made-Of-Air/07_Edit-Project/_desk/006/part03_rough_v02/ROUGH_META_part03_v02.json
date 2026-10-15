@@ -121,7 +121,7 @@
    "framing": {
     "offset": 0.0
    },
-   "disposition": "J0160 Vertex t1 top-cropped 1.33x to exclude vat fireboxes (Chief #180 6131279209 / 6133444306)"
+   "disposition": "KEEP (J0160 Vertex t1 top-cropped 1.33x to exclude vat fireboxes (Chief #180 6131279209 / 6133444306); Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw)"
   },
   {
    "row": "07_priestley",
@@ -317,5 +317,7 @@
   }
  ],
  "picture_qa_rc": 1,
- "picture_qa_stdout": "FAIL   1:25 row 16_repair_reuse 14_trees_breathe_t1.mp4: reuse: same stretch as 1:17 (give it a new stretch, or a new render)\nWARN   0:03 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0222 < film p5 0.0268\npicture QA FAIL: 1 of 18 cuts fail, 1 to look at -> /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part03_rough_v02/PICTURE_QA.md, /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part03_rough_v02/picture_qa_review.jpg"
+ "picture_qa_stdout": "FAIL   1:25 row 16_repair_reuse 14_trees_breathe_t1.mp4: reuse: same stretch as 1:17 (give it a new stretch, or a new render)\nWARN   0:03 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0222 < film p5 0.0268\npicture QA FAIL: 1 of 18 cuts fail, 1 to look at -> /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part03_rough_v02/PICTURE_QA.md, /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part03_rough_v02/picture_qa_review.jpg",
+ "rough_uat_status": "KEEP",
+ "rough_uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
 }

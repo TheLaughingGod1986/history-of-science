@@ -6,7 +6,7 @@
   "vertex_project": "gen-lang-client-0538779324",
   "vertex_location": "us-central1",
   "account": "benoats@googlemail.com",
-  "authority": "Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): mint 006 Part 02 on Vertex with £5 lag floor; usable = console_plateau − spend_since − 5 (5981276239)",
+  "authority": "Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): mint 006 Part 02 on Vertex with \u00a35 lag floor; usable = console_plateau \u2212 spend_since \u2212 5 (5981276239)",
   "models": {
     "Quality": "veo-3.1-generate-001",
     "Fast": "veo-3.1-fast-generate-001"
@@ -585,7 +585,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/37fc5a63-774f-403f-8a17-fb841a47b172",
       "submitted_at": "2026-10-12T14:19:21+00:00",
       "cost_usd": 0.8,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-12T14:21:08+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/06_leeds_brewery_t1.mp4",
@@ -595,7 +595,8 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 108.2
+      "api_s": 108.2,
+      "uat_note": "KEEP top-cropped 1.33x (06_leeds_brewery_nofire_crop_v01.mp4, vat fireboxes excluded; Chief #180 6131279209 / 6133444306 / 15 Oct sweep)"
     }
   ],
   "stills": [

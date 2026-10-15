@@ -10,7 +10,7 @@
 |---|---|---:|---|---|---|---|---|
 | **004** What's Really Inside an Atom? | Thu 15 Oct (1 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟠 behind |
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (15 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
-| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (22 d) | 69% | Picture (blocked) | **chief** · ⛔ blocked: Chief: KEEP calls on review/j0140 (P4:06 t3, P4:08 t2, P4:13-16 t1, P5:02 cover fallback, P5:11/19 code graphics) + Part 03 v02, Part 04 v01 and Part 05 v01 roughs. | 5/6 batches · Chief KEEP + rough review left · ETA Sun 25 Oct (in 11 d) | Sun 1 Nov (in 18 d) | ⛔ blocked |
+| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (22 d) | 75% | Edit + master (to do) | **Grok** · queued | starts later; due in 15 d | Sun 1 Nov (in 18 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (29 d) | 40% | Picture (to do) | **Claude** · queued (Claude's review of the boards; then the voiceover batch and picture credit) | starts later; due in 18 d | Sun 8 Nov (in 25 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (36 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 6 d late | Sun 15 Nov (in 32 d) | 🟠 behind |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (43 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 6 d late | Sun 22 Nov (in 39 d) | 🟠 behind |
@@ -35,14 +35,9 @@
 - ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK
 - ⏭ Next up: 008 Shorts voiceover, due Thu 8 Oct; 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
-**chief**
-- ▶️ Underway: nothing right now
-- ⏸ Waiting: 006 Picture: Chief: KEEP calls on review/j0140 (P4:06 t3, P4:08 t2, P4:13-16 t1, P5:02 cover fallback, P5:11/19 code graphics) + Part 03 v02, Part 04 v01 and Part 05 v01 roughs.
-
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (1 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **006** · ⛔ **Picture** — blocked (83%, 5/6 batches · Chief KEEP + rough review left · ETA Sun 25 Oct (in 11 d), with chief since Wed 14 Oct, ⛔ blocked: Chief: KEEP calls on review/j0140 (P4:06 t3, P4:08 t2, P4:13-16 t1, P5:02 cover fallback, P5:11/19 code graphics) + Part 03 v02, Part 04 v01 and Part 05 v01 roughs., due Sun 25 Oct (in 11 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP + P3:06 top-cropped (1.33x, vat fireboxes excluded) dropped into Part 03 rough v02; Part 04: 01-04 Vertex KEEP, 05/10 t2/11/12 Flow KEEP, 06 t3 Fast minted+harvested (10 cr, Flow 23,730, after verifying t2 absent in project 5c3e36ef per Acting-Chief ruling 14 Oct), 08 t2 and 13-16 t1 harvested and on review/j0140 for KEEP, Part 04 rough v01 assembled; Part 05: 14 Flow takes KEEP (05 trimmed to tail), 03 covered by reassigned 11_trunk_pie_t1, 11/19 0-cr house-style code graphics built, 02 covered by KEEP P4:04+P4:05 fallback (sheets on review/j0140), Part 05 rough v01 assembled.
 
 ## Next steps (in order)
 
@@ -112,11 +107,11 @@ Finished and scheduled. Long `wwcjcFfC-5M` airs Thu 29 Oct 18:00; Shorts A (30 O
 
 ### 006 · The Willow Tree That Was Made of Air
 
-`██████████████░░░░░░` **69%**
+`███████████████░░░░░` **75%**
 
-Airs **Thu 5 Nov** · ready for Ben's OK by **Sun 1 Nov** · ⛔ blocked
+Airs **Thu 5 Nov** · ready for Ben's OK by **Sun 1 Nov** · 🟢 on track
 
-Voice is locked. All Part 03, Part 04 and Part 05 plates and code graphics are minted/harvested (Flow 23,730) and Part 03 rough v02 (with P3:06), Part 04 rough v01 and Part 05 rough v01 are assembled; parked for Chief KEEP on review/j0140.
+Voice and all 5 picture parts (92 rows + roughs) are KEEP on main (Chief KEEP sweep 15 Oct, Flow 23,730). Next: edit + polish (J0266 Part 03/04 rough QA fixes, then fine cut and thumbnails).
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v02, 93.7
@@ -125,8 +120,8 @@ Voice is locked. All Part 03, Part 04 and Part 05 plates and code graphics are m
 - ✅ **Voiceover (long)** — done: v02, all five parts PASS
 - ✅ **Shorts scripts** — done
 - ✅ **Shorts voiceover** — done: A v02 · B v03b · C v01 locked
-- ⛔ **Picture** — blocked (83%, 5/6 batches · Chief KEEP + rough review left · ETA Sun 25 Oct (in 11 d), with chief since Wed 14 Oct, ⛔ blocked: Chief: KEEP calls on review/j0140 (P4:06 t3, P4:08 t2, P4:13-16 t1, P5:02 cover fallback, P5:11/19 code graphics) + Part 03 v02, Part 04 v01 and Part 05 v01 roughs., due Sun 25 Oct (in 11 d)): Part 01 12/12 kept; Part 02 rough v02 held; Part 03: 16/16 Vertex first takes KEEP + P3:06 top-cropped (1.33x, vat fireboxes excluded) dropped into Part 03 rough v02; Part 04: 01-04 Vertex KEEP, 05/10 t2/11/12 Flow KEEP, 06 t3 Fast minted+harvested (10 cr, Flow 23,730, after verifying t2 absent in project 5c3e36ef per Acting-Chief ruling 14 Oct), 08 t2 and 13-16 t1 harvested and on review/j0140 for KEEP, Part 04 rough v01 assembled; Part 05: 14 Flow takes KEEP (05 trimmed to tail), 03 covered by reassigned 11_trunk_pie_t1, 11/19 0-cr house-style code graphics built, 02 covered by KEEP P4:04+P4:05 fallback (sheets on review/j0140), Part 05 rough v01 assembled.
-- ⬜ **Edit + master** — to do (with Grok, due Thu 29 Oct (in 15 d))
+- ✅ **Picture** — done: All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180).
+- ⬜ **Edit + master** — to do (with Grok, due Thu 29 Oct (in 15 d)): J0266 queued (Part 03/04 rough QA fixes, 0 spend), then fine cut + master
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 29 Oct (in 15 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 1 Nov (in 18 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 2 Nov (in 19 d))

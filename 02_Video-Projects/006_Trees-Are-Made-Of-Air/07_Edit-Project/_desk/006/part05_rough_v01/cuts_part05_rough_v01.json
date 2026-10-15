@@ -29,7 +29,7 @@
   "framing": {
    "offset": 0.0
   },
-  "disposition": "COVER fallback: P4:04_sunny_window_t1 (1.50-5.25s) + P4:05_bubbles_macro_t1 (3.75-7.46s) per Chief #180 6140112141 / 14 Oct"
+  "disposition": "KEEP (COVER fallback: P4:04_sunny_window_t1 (1.50-5.25s) + P4:05_bubbles_macro_t1 (3.75-7.46s) per Chief #180 6140112141 / 14 Oct; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw)"
  },
  {
   "row": "03_de_saussure",
@@ -173,7 +173,7 @@
   "framing": {
    "offset": 0.0
   },
-  "disposition": "Code graphic v01 (0 credits, Animistry cream/wood wedges per Chief #180 6140142639)"
+  "disposition": "KEEP (Code graphic v01 (0 credits, Animistry cream/wood wedges per Chief #180 6140142639); Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw)"
  },
  {
   "row": "12_scales_barely",
@@ -301,7 +301,7 @@
   "framing": {
    "offset": 0.0
   },
-  "disposition": "Code graphic v01 (0 credits, 10,000 dots with 4 gold per Chief #180 6140142639)"
+  "disposition": "KEEP (Code graphic v01 (0 credits, 10,000 dots with 4 gold per Chief #180 6140142639); Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw)"
  },
  {
   "row": "20_explorer_willow",

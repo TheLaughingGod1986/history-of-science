@@ -57,7 +57,7 @@
    "framing": {
     "offset": 0.0
    },
-   "disposition": "COVER fallback: P4:04_sunny_window_t1 (1.50-5.25s) + P4:05_bubbles_macro_t1 (3.75-7.46s) per Chief #180 6140112141 / 14 Oct"
+   "disposition": "KEEP (COVER fallback: P4:04_sunny_window_t1 (1.50-5.25s) + P4:05_bubbles_macro_t1 (3.75-7.46s) per Chief #180 6140112141 / 14 Oct; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw)"
   },
   {
    "row": "03_de_saussure",
@@ -201,7 +201,7 @@
    "framing": {
     "offset": 0.0
    },
-   "disposition": "Code graphic v01 (0 credits, Animistry cream/wood wedges per Chief #180 6140142639)"
+   "disposition": "KEEP (Code graphic v01 (0 credits, Animistry cream/wood wedges per Chief #180 6140142639); Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw)"
   },
   {
    "row": "12_scales_barely",
@@ -329,7 +329,7 @@
    "framing": {
     "offset": 0.0
    },
-   "disposition": "Code graphic v01 (0 credits, 10,000 dots with 4 gold per Chief #180 6140142639)"
+   "disposition": "KEEP (Code graphic v01 (0 credits, 10,000 dots with 4 gold per Chief #180 6140142639); Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw)"
   },
   {
    "row": "20_explorer_willow",
@@ -413,5 +413,7 @@
   }
  ],
  "picture_qa_rc": 0,
- "picture_qa_stdout": "WARN   0:27 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0248 < film p5 0.0269\nWARN   2:12 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0232 < film p5 0.0269\npicture QA PASS: 0 of 24 cuts fail, 2 to look at -> /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part05_rough_v01/PICTURE_QA.md, /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part05_rough_v01/picture_qa_review.jpg"
+ "picture_qa_stdout": "WARN   0:27 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0248 < film p5 0.0269\nWARN   2:12 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0232 < film p5 0.0269\npicture QA PASS: 0 of 24 cuts fail, 2 to look at -> /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part05_rough_v01/PICTURE_QA.md, /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part05_rough_v01/picture_qa_review.jpg",
+ "rough_uat_status": "KEEP",
+ "rough_uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
 }
