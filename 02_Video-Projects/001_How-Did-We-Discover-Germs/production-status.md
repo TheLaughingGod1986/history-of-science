@@ -96,3 +96,8 @@ PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
 ```
 
 Screenshots on the Mini under `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-01_tc/` (`VERIFY_<film>_01_details_top.png`, `<film>_tc_commit_04_filled.png`), and on the desk (PR #180). Altered content was not touched in this session (Yes since the 30 Sep sweep; by eye, the Data API omits it).
+
+
+## J0181 listing verification — 14 Oct 2026, Codex
+
+Flask description already matches the approved real-line-break text. Germs end screen already contains Periodic Table, the discovery playlist and Subscribe; saved window reads 5:58:13–6:04:13. No YouTube changes made. Evidence: `00_Brand/Channel-Setup/audits/live_fixes/evidence_J0181_2026-10-14/REPORT.md`. Package lint exited 0; channel audit output: `37 videos, 0 errors.` Chief reviews the existing six-second timing and separate scheduled-Short Related follow-ups.
