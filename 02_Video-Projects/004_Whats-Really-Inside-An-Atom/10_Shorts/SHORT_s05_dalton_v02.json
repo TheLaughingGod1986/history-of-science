@@ -1,0 +1,216 @@
+{
+  "id": "s05_dalton",
+  "job": "J0306",
+  "fixes": "J0298 v01",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-10",
+  "file": "10_Shorts/hos_004_s05_dalton_v02.mp4",
+  "sha256": "9c33636797e06a66bbffa29976028702565fc1e89c2d2473f44d65982c458634",
+  "duration_s": 24.533,
+  "vo_source": "02_Voiceover/05_Master/hos_004_part02_vo_v01.mp3",
+  "vo_take_indices": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ],
+  "dropped": "however you make it.",
+  "route": "claim first: Every element is made of its own kind of atom \u2026 fixed weights. Dateline and 'His atomic theory says' cut at the word boundary.",
+  "vo_s": 23.962,
+  "words": 64,
+  "max_pause_s": 0.45,
+  "atempo": 1.03,
+  "bed": "hos004-part02-temp_score_bed_v01.mp3",
+  "bed_gain_db": -22.5,
+  "hook": "EACH ATOM",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 2,
+    "block_pct": [
+      39.5,
+      60.4
+    ],
+    "widest_pct": 72.5
+  },
+  "who_card": {
+    "name": "JOHN DALTON",
+    "line2": "Manchester, 1808",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.2,
+    "out_s": 6.7,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "What's Really Inside an Atom?",
+  "youtube_title_draft": "What Is Dalton's Atomic Theory?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 4.769,
+      "plate": "04_Generated-Clips/part02/raw/v01/01_dalton_schoolroom_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 4.769,
+      "t1": 8.358,
+      "plate": "04_Generated-Clips/part02/raw/v01/05_fixed_amounts_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "Hydrogen"
+    },
+    {
+      "t0": 8.358,
+      "t1": 10.929,
+      "plate": "04_Generated-Clips/part02/raw/v01/07_water_always_v01.mp4",
+      "in_s": 2.0,
+      "crop_x": 656,
+      "lands_on": "Gold"
+    },
+    {
+      "t0": 10.929,
+      "t1": 13.618,
+      "plate": "04_Generated-Clips/part02/raw/v01/02_atomic_theory_v01.mp4",
+      "in_s": 0.2,
+      "crop_x": 656,
+      "lands_on": "Why"
+    },
+    {
+      "t0": 13.618,
+      "t1": 17.892,
+      "plate": "04_Generated-Clips/part02/raw/v01/04_gold_heavier_v01.mp4",
+      "in_s": 0.15,
+      "crop_x": 656,
+      "lands_on": "combine"
+    },
+    {
+      "t0": 17.892,
+      "t1": 21.312,
+      "plate": "04_Generated-Clips/part02/raw/v01/05_fixed_amounts_v01.mp4",
+      "in_s": 4.3,
+      "crop_x": 656,
+      "lands_on": "hydrogen"
+    },
+    {
+      "t0": 21.312,
+      "t1": 24.512,
+      "plate": "04_Generated-Clips/part02/raw/v01/01_dalton_schoolroom_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 20,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_004_s05_dalton_v02.mp4  dur=24.53s  audio=-22.1dB  motion=10.24  dhash=86db1e1e0e060e19\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s05_dalton_v02_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_004_s05_dalton_v02.mp4  0:24.53  mean -22.1 dB  peak -3.8 dB  157 wpm\n   first minute: title_question 11.3s"
+  },
+  "freezedetect_starts": [],
+  "stills": [
+    "10_Shorts/_work_s05_dalton_v02/hos_004_s05_dalton_v02_t000.0.jpg",
+    "10_Shorts/_work_s05_dalton_v02/hos_004_s05_dalton_v02_t011.5.jpg",
+    "10_Shorts/_work_s05_dalton_v02/hos_004_s05_dalton_v02_t015.8.jpg",
+    "10_Shorts/_work_s05_dalton_v02/hos_004_s05_dalton_v02_t023.5.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v02.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-15",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "what is dalton's atomic theory",
+      "what is dalton's atomic theory class 9",
+      "what is dalton's atomic theory class 11",
+      "what is dalton atomic model"
+    ],
+    "note": "What Is Dalton's Atomic Theory? is a signed-out GB YouTube autocomplete hit (also class 9, class 11, and dalton atomic model). v02 opens on the claim itself: 'Every element is made of its own kind of atom, and each kind has its own weight.' Gold-foil bounce is already scheduled as JyRjM-9Yc8g (1 Nov), so this is 004's second search-titled Short."
+  },
+  "air_date_draft_note": "2026-11-10 used for the gate only; slot is Chief's call. Clear of 004 gold-foil 1 Nov (JyRjM-9Yc8g).",
+  "who_card_note": "card is the long's own label JOHN DALTON \u00b7 Manchester, 1808, on screen 2.2\u20136.7 s, just after the hook, because this lift does not speak the name. Clear of the 0\u20132 s hook and the 9\u201314 s title, so 'Why believe him?' already has a face and a name.",
+  "plate_audit": {
+    "replaced": "03_weights_line_v01 (Hp/Hg/Op tiles) is not in v02",
+    "05_fixed_amounts": "2 fps centre crop of all 8 s: wooden molecule models, no letters. Opening stretch for Hydrogen / Oxygen; a later stretch (in 4.3 s) for Water and tiny pieces.",
+    "07_water_always": "gold sphere for 'Gold is heavier still'. Background chalkboard is a line schematic with no readable words (checked a zoom at 2.2 s and the 2 fps sheet).",
+    "02_atomic_theory": "only 0.2 s through about 3 s, brass stands and wood balls. The later paper close-up is not used.",
+    "04_gold_heavier": "no letters. Wood balls on the 'same fixed amounts' line only. The gold line uses 07, so the soft wood-grain note is cleared.",
+    "06_water_ratio": "rejected: the shelves read 1808.",
+    "08_ruler_of_weights": "rejected: the ruler carries numerals.",
+    "01_dalton_schoolroom": "frame 0 and the loop. Wall charts are illegible line diagrams, the same plate v01 already used and Chief did not fail.",
+    "long": "03_weights_line_v01 is in 07_Edit-Project/part02_rough_v01_land_meta.json at 9.143\u201313.943 s (vo: and each kind has its own weight. Hydrogen is the lightest. Oxygen is heavier.). The long was not touched."
+  }
+}
