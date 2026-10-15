@@ -1,0 +1,149 @@
+{
+  "id": "s04_cathode_rays",
+  "job": "J0233",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-10-27",
+  "file": "10_Shorts/hos_004_s04_cathode_rays_v01.mp4",
+  "sha256": "5a7b3c42a5f83895897034659fa3fe796ff79a678563412c8cef82b322a806bc",
+  "duration_s": 25.7,
+  "vo_source": "02_Voiceover/05_Master/hos_004_part03_vo_v01.mp3",
+  "vo_window_raw_s": [
+    5.3,
+    31.6
+  ],
+  "vo_s": 25.133,
+  "words": 61,
+  "max_pause_s": 0.45,
+  "atempo": 1.03,
+  "bed": "hos004-part03-temp_score_bed_v01.mp3",
+  "bed_gain_db": -24.0,
+  "hook": "THE BEAM BENT",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 69.6
+  },
+  "who_card": {
+    "name": "J.J. THOMSON",
+    "line2": "Cambridge, 1897",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 14.1,
+    "out_s": 17.5,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "What's Really Inside an Atom?",
+  "youtube_title_draft": "What Are Cathode Rays?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.355,
+      "plate": "04_Generated-Clips/part03/raw/v01/05_magnet_bends_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 580,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.355,
+      "t1": 5.932,
+      "plate": "04_Generated-Clips/part03/raw/v01/03_beam_shoots_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "run"
+    },
+    {
+      "t0": 5.932,
+      "t1": 8.899,
+      "plate": "04_Generated-Clips/part03/raw/v01/02_tube_glow_v01.mp4",
+      "in_s": 1.5,
+      "crop_x": 656,
+      "lands_on": "Scientists"
+    },
+    {
+      "t0": 8.899,
+      "t1": 12.747,
+      "plate": "04_Generated-Clips/part03/raw/v01/04_cathode_rays_question_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "But"
+    },
+    {
+      "t0": 12.747,
+      "t1": 16.647,
+      "plate": "04_Generated-Clips/part03/raw/v01/05_magnet_bends_v01.mp4",
+      "in_s": 3.0,
+      "crop_x": 580,
+      "lands_on": "Thomson"
+    },
+    {
+      "t0": 16.647,
+      "t1": 20.582,
+      "plate": "04_Generated-Clips/part03/raw/v01/06_plates_bend_v01.mp4",
+      "in_s": 1.5,
+      "crop_x": 656,
+      "lands_on": "He"
+    },
+    {
+      "t0": 20.582,
+      "t1": 22.483,
+      "plate": "04_Generated-Clips/part03/raw/v01/07_light_doesnt_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Light"
+    },
+    {
+      "t0": 22.483,
+      "t1": 25.683,
+      "plate": "04_Generated-Clips/part03/raw/v01/05_magnet_bends_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 580,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 21,
+  "caption_check": {
+    "ok": true,
+    "changes": 21,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_004_s04_cathode_rays_v01.mp4  dur=25.7s  audio=-23.6dB  motion=16.87  dhash=80c06c1c90a69819\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s04_cathode_rays_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_004_s04_cathode_rays_v01.mp4  0:25.70  mean -23.6 dB  peak -3.8 dB  142 wpm\n   first minute: title_question 9.08s\n   warn  pace 142 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed"
+  },
+  "freezedetect_starts": [],
+  "stills": [
+    "10_Shorts/_work_s04_cathode_rays_v01/hos_004_s04_cathode_rays_v01_t000.0.jpg",
+    "10_Shorts/_work_s04_cathode_rays_v01/hos_004_s04_cathode_rays_v01_t011.5.jpg",
+    "10_Shorts/_work_s04_cathode_rays_v01/hos_004_s04_cathode_rays_v01_t015.8.jpg",
+    "10_Shorts/_work_s04_cathode_rays_v01/hos_004_s04_cathode_rays_v01_t024.7.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s04_cathode_rays_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-15",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "what are cathode rays",
+      "how did thomson discover electrons",
+      "how was the electron discovered",
+      "cathode ray experiment",
+      "jj thomson cathode ray tube experiment"
+    ],
+    "note": "Both 'What Are Cathode Rays?' and 'How Did Thomson Discover Electrons?' are signed-out GB YouTube autocomplete hits. The lifted VO explicitly asks 'Scientists called them cathode rays. But what were they made of? Light, or stuff?' and answers with Thomson's magnet and charged-plate deflections ('Tiny charged particles do.')."
+  },
+  "air_date_draft_note": "2026-10-27 used for the gate only (clear of 004 gold-halves 16 Oct and 004 gold-foil 1 Nov); slot is Chief's call",
+  "who_card_note": "card sits over 05_magnet_bends_v01 (glass tube + horseshoe magnet, no figure on screen) at 14.2\u201317.6 s while 'Thomson brings a magnet close. The beam bends.' is spoken; clear of 0\u20132 s hook and 9\u201314 s title; long's own label text"
+}
