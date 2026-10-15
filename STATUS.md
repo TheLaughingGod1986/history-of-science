@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Thu 15 Oct 2026**, updated by cursor (J0282). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Thu 15 Oct 2026**, updated by cursor (J0336). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -13,7 +13,7 @@
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (21 d) | 75% | Edit + master (to do) | **Grok** · queued | starts later; due in 14 d | Sun 1 Nov (in 17 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (28 d) | 40% | Picture (to do) | **Claude** · queued (Claude's review of the boards; then the voiceover batch and picture credit) | starts later; due in 17 d | Sun 8 Nov (in 24 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (35 d) | 40% | Picture (blocked) | **Cursor** · ⛔ blocked: mint after 006 and 007, and only when a live Flow reading leaves at least 3,000 credits after 008's expected spend | not estimated | Sun 15 Nov (in 31 d) | ⛔ blocked |
-| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (42 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 7 d late | Sun 22 Nov (in 38 d) | 🟠 behind |
+| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (42 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 7 d late | Sun 22 Nov (in 38 d) | ⛔ blocked |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (49 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 7 d late | Sun 29 Nov (in 45 d) | 🟠 behind |
 
 ## Who's on what
@@ -32,13 +32,14 @@
 
 **Cursor**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 008 Picture: mint after 006 and 007, and only when a live Flow reading leaves at least 3,000 credits after 008's expected spend
+- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 008 Picture: mint after 006 and 007, and only when a live Flow reading leaves at least 3,000 credits after 008's expected spend; 009 Picture: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (2 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
 - **008** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 and 007, and only when a live Flow reading leaves at least 3,000 credits after 008's expected spend, due Sun 8 Nov (in 24 d)): J0240 v03 plate boards KEEP (Chief PASS 15 Oct): 5 parts, 112 rows (15 Quality / 86 Fast non-emissive / 11 £0 code graphics / 0 reuse, all 15 measured); Flow expected 5,605 cr (try-1 2,360 cr), Vertex fallback £133.38; no mint. See PRICE_REVIEW_v03.md.
+- **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 31 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
 
 ## Next steps (in order)
 
@@ -173,9 +174,9 @@ Long VO (9:14.8) + Shorts VO (v02 pair) locked. Plate boards v03 KEEP (Chief PAS
 
 `███████░░░░░░░░░░░░░` **35%**
 
-Airs **Thu 26 Nov** · ready for Ben's OK by **Sun 22 Nov** · 🟠 behind
+Airs **Thu 26 Nov** · ready for Ben's OK by **Sun 22 Nov** · ⛔ blocked
 
-Long VO v01 locked (5 parts, 508 s speech); Chief KEEP all five, no pickups (desk 6101629662). Picture next after Claude's board review and credit.
+Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse. Flow expected 12,534 (tranche 1 7,354, tranche 2 5,180). No mint until after 006, 007 and 008.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 91.3
@@ -184,7 +185,7 @@ Long VO v01 locked (5 parts, 508 s speech); Chief KEEP all five, no pickups (des
 - ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 508 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101629662)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (7 d late))
-- ⬜ **Picture** — to do (with Cursor, due Sun 15 Nov (in 31 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
+- ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 31 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
 - ⬜ **Edit + master** — to do (with Grok, due Thu 19 Nov (in 35 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 19 Nov (in 35 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 38 d))
