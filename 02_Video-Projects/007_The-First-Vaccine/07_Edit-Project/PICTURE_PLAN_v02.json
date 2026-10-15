@@ -1,0 +1,139 @@
+{
+  "film": "007_The-First-Vaccine",
+  "written": "2026-10-16",
+  "task": "J0322. Boards v02 from CLAUDE_BOARDS_REVIEW_v01.md. No mint. No spend.",
+  "shot_list": "07_Edit-Project/SHOT_LIST_v01.md",
+  "readings": {
+    "flow_credits_left": 23740,
+    "flow_read_at": "2026-10-15T21:42:22Z",
+    "flow_note": "Same reading as HOS 009 PRICE_REVIEW_v04. Not re-read. Nothing spent since that note in this pass.",
+    "vertex_promo_gbp": 71.02,
+    "vertex_usable_gbp": 70.02,
+    "vertex_note": "009 v04 reading, 2026-10-15T07:30:31Z, minus the \u00a31 margin. Vertex is fallback only."
+  },
+  "rates": {
+    "flow_credits_try1": {
+      "Quality": 100,
+      "Fast": 10
+    },
+    "takes_per_keep": {
+      "Quality": 2.59,
+      "Fast": 1.96
+    },
+    "flow_credits_expected": {
+      "Quality": 259,
+      "Fast": 20
+    },
+    "vertex_gbp_per_s": {
+      "Quality": 0.16,
+      "Fast": 0.08
+    },
+    "note": "Same rates as HOS 009. Expected credits are ceil(try-1 \u00d7 takes per keep)."
+  },
+  "vo_film_total_s": 512.15,
+  "totals": {
+    "rows": 97,
+    "Quality": 24,
+    "Fast": 49,
+    "code_graphic": 3,
+    "archive": 3,
+    "reuse": 18,
+    "mints": 73,
+    "flow_try1": 2890,
+    "flow_expected": 7196,
+    "vertex_try1": 55.04,
+    "vertex_expected": 126.24
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "rows": 20,
+      "Quality": 4,
+      "Fast": 13,
+      "code_graphic": 1,
+      "archive": 0,
+      "reuse": 2,
+      "flow_try1": 530,
+      "flow_expected": 1296,
+      "vertex_try1": 11.84,
+      "vertex_expected": 26.22
+    },
+    {
+      "part": 2,
+      "rows": 22,
+      "Quality": 6,
+      "Fast": 15,
+      "code_graphic": 0,
+      "archive": 0,
+      "reuse": 1,
+      "flow_try1": 750,
+      "flow_expected": 1854,
+      "vertex_try1": 16.16,
+      "vertex_expected": 36.5
+    },
+    {
+      "part": 3,
+      "rows": 16,
+      "Quality": 3,
+      "Fast": 9,
+      "code_graphic": 0,
+      "archive": 1,
+      "reuse": 3,
+      "flow_try1": 390,
+      "flow_expected": 957,
+      "vertex_try1": 8.16,
+      "vertex_expected": 18.21
+    },
+    {
+      "part": 4,
+      "rows": 20,
+      "Quality": 3,
+      "Fast": 8,
+      "code_graphic": 1,
+      "archive": 2,
+      "reuse": 6,
+      "flow_try1": 380,
+      "flow_expected": 937,
+      "vertex_try1": 7.04,
+      "vertex_expected": 16.03
+    },
+    {
+      "part": 5,
+      "rows": 19,
+      "Quality": 8,
+      "Fast": 4,
+      "code_graphic": 1,
+      "archive": 0,
+      "reuse": 6,
+      "flow_try1": 840,
+      "flow_expected": 2152,
+      "vertex_try1": 11.84,
+      "vertex_expected": 29.28
+    }
+  ],
+  "mint_order": {
+    "order": "006 is 0 Flow. Then 007, then 008 (5605), then 009 tranche 1 (7354). Same order as 009 v04.",
+    "after_007": 16544,
+    "after_007_and_008": 10939,
+    "after_007_008_and_009_tranche_1": 3585,
+    "floor": 3000,
+    "fits_on_flow": true,
+    "vertex_fits": false
+  },
+  "status": "BOARD_V02",
+  "mint": false,
+  "generation_authorized": false,
+  "changes": [
+    "P4:08b_title_page Fast mint \u2192 \u00a30 Wellcome title page (M0005386).",
+    "P4:09_satire Fast mint \u2192 \u00a30 Gillray Cow-Pock, 1802 (LoC 94509853).",
+    "P3:09_casebook_open and P4:01_page_turns cut to reuse (two near-duplicates).",
+    "P2:12, P2:13, P3:05, P4:06 reframed: no glyph in focus. Overlays stay in the edit.",
+    "P1:07_map_shadows and P4:11_news_spreads \u2192 \u00a30 code-graphic maps. No place names.",
+    "P5:10_history_book spines turned away. Still Fast.",
+    "P5:08_body_learns Quality \u2192 \u00a30 code graphic.",
+    "P3:01c_nelmes_plate added: \u00a30 Wellcome Plate of Sarah Nelmes, 2.0 s taken from 01_sarah_nelmes.",
+    "P4:12_explorer_press cover faces away.",
+    "Jenner face lock: P2:08_jenner_window is the master still. Page turned edge-on.",
+    "P5 kite hand-off kept. Lightning never touches the kite."
+  ]
+}
