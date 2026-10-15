@@ -1,0 +1,122 @@
+{
+  "job": "J0175",
+  "by": "codex",
+  "sidechain": {
+    "threshold": 0.003,
+    "ratio": 20,
+    "attack_ms": 5,
+    "release_ms": 300
+  },
+  "segments": [
+    {
+      "segment": "bridge3",
+      "file": "/private/tmp/hos_comp_v01/segments/bridge3/hos_comp_bridge3_ducked_v02.mp4",
+      "sha256": "a7f9892547df43e153a2c35553779c44e468218639bfb8eac490756f8f5af6c1",
+      "picture_bitstream_unchanged": true,
+      "loudness": {
+        "input_i": "-15.95",
+        "input_tp": "-1.99",
+        "input_lra": "3.20",
+        "input_thresh": "-27.05",
+        "output_i": "-14.26",
+        "output_tp": "-1.00",
+        "output_lra": "3.40",
+        "output_thresh": "-25.28",
+        "normalization_type": "dynamic",
+        "target_offset": "0.26"
+      },
+      "sfx_level": {
+        "verdict": "PASS",
+        "vo_integrated": -15.7,
+        "sfx_integrated": -49.1,
+        "hits": 2,
+        "fails": [],
+        "warns": []
+      },
+      "bed": "/private/tmp/hos_comp_v01/segments/bridge3/bridge3_bed_ducked_v02.wav"
+    },
+    {
+      "segment": "bridge4",
+      "file": "/private/tmp/hos_comp_v01/segments/bridge4/hos_comp_bridge4_ducked_v02.mp4",
+      "sha256": "8acc8cd4e26aba0f3190e2bc5e31116a165d5d38d96307424632210fdd3fa929",
+      "picture_bitstream_unchanged": true,
+      "loudness": {
+        "input_i": "-15.94",
+        "input_tp": "-1.95",
+        "input_lra": "5.10",
+        "input_thresh": "-26.84",
+        "output_i": "-14.37",
+        "output_tp": "-1.00",
+        "output_lra": "4.80",
+        "output_thresh": "-25.34",
+        "normalization_type": "dynamic",
+        "target_offset": "0.37"
+      },
+      "sfx_level": {
+        "verdict": "FAIL",
+        "vo_integrated": -15.3,
+        "sfx_integrated": -70.0,
+        "hits": 0,
+        "fails": [
+          "present: no SFX hit anywhere in the stem"
+        ],
+        "warns": []
+      },
+      "bed": "/private/tmp/hos_comp_v01/segments/bridge4/bridge4_bed_ducked_v02.wav"
+    },
+    {
+      "segment": "bridge5",
+      "file": "/private/tmp/hos_comp_v01/segments/bridge5/hos_comp_bridge5_ducked_v02.mp4",
+      "sha256": "93666abc6ffbc85af4d127b513ff5f0cac05688b86c8be83c15da198a71ef895",
+      "picture_bitstream_unchanged": true,
+      "loudness": {
+        "input_i": "-16.63",
+        "input_tp": "-2.00",
+        "input_lra": "3.20",
+        "input_thresh": "-27.18",
+        "output_i": "-14.77",
+        "output_tp": "-1.00",
+        "output_lra": "2.60",
+        "output_thresh": "-25.28",
+        "normalization_type": "dynamic",
+        "target_offset": "0.77"
+      },
+      "sfx_level": {
+        "verdict": "PASS",
+        "vo_integrated": -16.3,
+        "sfx_integrated": -49.1,
+        "hits": 2,
+        "fails": [],
+        "warns": []
+      },
+      "bed": "/private/tmp/hos_comp_v01/segments/bridge5/bridge5_bed_ducked_v02.wav"
+    },
+    {
+      "segment": "closing",
+      "file": "/private/tmp/hos_comp_v01/segments/closing/hos_comp_closing_ducked_v02.mp4",
+      "sha256": "f4172e873dc7d15fe8f6adfe420273bb3b793ecabb16eb5db45b7ed6a21af505",
+      "picture_bitstream_unchanged": true,
+      "loudness": {
+        "input_i": "-16.65",
+        "input_tp": "-1.87",
+        "input_lra": "12.80",
+        "input_thresh": "-28.16",
+        "output_i": "-15.16",
+        "output_tp": "-1.00",
+        "output_lra": "6.20",
+        "output_thresh": "-26.01",
+        "normalization_type": "dynamic",
+        "target_offset": "1.16"
+      },
+      "sfx_level": {
+        "verdict": "PASS",
+        "vo_integrated": -16.1,
+        "sfx_integrated": -49.1,
+        "hits": 1,
+        "fails": [],
+        "warns": []
+      },
+      "bed": "/private/tmp/hos_comp_v01/segments/closing/closing_bed_ducked_v02.wav"
+    }
+  ]
+}

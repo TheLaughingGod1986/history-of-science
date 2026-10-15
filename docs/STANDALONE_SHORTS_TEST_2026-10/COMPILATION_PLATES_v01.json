@@ -1,0 +1,309 @@
+{
+ "version": "v01",
+ "job": "J0175",
+ "by": "cursor",
+ "date": "2026-10-12",
+ "source": "the films' own passed picture, taken from the normalised masters in /private/tmp/hos_comp_v01/film_NNN_norm.mp4 (1080p30). These films have no cut lists, and the raw clip pools mix passed and rejected takes, so the master is the only sure record of a passed shot.",
+ "rule": "Every plate is checked by frame grab for burned-in labels (the masters carry the films' own label boxes, top right). Use only a label-free window, never from the first 30 s of its film, and at least 10 s from where the same footage plays in the compilation (picture_qa repeat rule).",
+ "time_is": "master time (s) of the checked frame; the assembler takes a window around it and checks the window's first and last frame for labels",
+ "plates": [
+  {
+   "use": "intro",
+   "object": "tied arm",
+   "film": "005",
+   "t": 290,
+   "status": "picked",
+   "note": "arm on the table with the band, red and blue vessels, no label"
+  },
+  {
+   "use": "intro",
+   "object": "willow in its pot",
+   "film": "006",
+   "t": null,
+   "status": "missing",
+   "note": "needs 006's master (ETA 25 Oct)"
+  },
+  {
+   "use": "intro",
+   "object": "swan-neck flask",
+   "film": "001",
+   "t": 300,
+   "status": "picked",
+   "note": "flask alone on the bench, no label (310 s has AN ADDRESS, avoid)"
+  },
+  {
+   "use": "intro",
+   "object": "Mendeleev's cards",
+   "film": "002",
+   "t": 305.5,
+   "status": "picked, flag for Chief",
+   "note": "card grid with gaps on the table ('a table with empty gaps'), label-free 303.5-307.0 s only (303 s has PERIODIC TABLE). Several symbols on the cards are not real elements (Fh, Jat, Jlr, Fp, Gh): Chief rules. Fallback: 002 at 120 s, candlelit desk with glowing handwritten cards (clean 85.5-171 s), then Bridge 3 takes 002 at 150 s",
+   "window": [
+    303.5,
+    307.0
+   ]
+  },
+  {
+   "use": "intro",
+   "object": "glowing cardboard screen",
+   "film": "003",
+   "t": 130,
+   "status": "picked",
+   "note": "green screen glowing beside the tube, no label. Run 6: 003 uses the italic look; 1 s sheet + lower-third scan clean 129.5-133.5 s (crossfade at 134 s)",
+   "window": [
+    129.8,
+    133.5
+   ]
+  },
+  {
+   "use": "intro",
+   "object": "gold foil",
+   "film": "004",
+   "t": 250,
+   "status": "picked",
+   "note": "Rutherford beside the gold foil, no label"
+  },
+  {
+   "use": "bridge1",
+   "object": "005 last plate, cross to willow",
+   "film": "005",
+   "t": null,
+   "status": "missing",
+   "note": "005 ends on the glowing figure (480 s), which plays just before the bridge; the willow needs 006"
+  },
+  {
+   "use": "bridge2",
+   "object": "sunlit leaf, window",
+   "film": "006",
+   "t": null,
+   "status": "missing",
+   "note": "needs 006"
+  },
+  {
+   "use": "bridge2",
+   "object": "ward (001)",
+   "film": "001",
+   "t": 220,
+   "status": "picked",
+   "note": "sunlit ward with basin and beds, no label; 40 s has GERMS, avoid. Script asks for candlelit: Chief may accept sunlit, or next run finds a candlelit window"
+  },
+  {
+   "use": "bridge3",
+   "object": "Lister at the basin (001)",
+   "film": "001",
+   "t": 328,
+   "status": "picked",
+   "note": "Run 7: the 330.5-334.0 theatre window is the Explorer in the empty theatre from ~330.7 s (PROTOCOL label from 334 s), and the script keeps the Explorer out of new material, so Bridge 3 opens on Lister washing his hands at the basin for 'it could be fought' (dissolve in ends 325.4 s; 1 s sheet + 0.1 s edge sheet clean). Chief may prefer Lister's spray 319.0-320.5 s (SPRAY label from 321 s)",
+   "window": [
+    325.5,
+    330.3
+   ]
+  },
+  {
+   "use": "bridge3",
+   "object": "element cards (002)",
+   "film": "002",
+   "t": 120,
+   "status": "picked",
+   "note": "candlelit desk, glowing handwritten cards, no label (clean 85.5-171 s; avoid the chapter card at 85-93 s and the Dobereiner card fading out at 109-116 s). Run 7: 1 s sheet clean 116-130.9 s; segment uses 117.0-124.5",
+   "window": [
+    117.0,
+    125.0
+   ]
+  },
+  {
+   "use": "bridge3",
+   "object": "daylit desk, quill and paper (002)",
+   "film": "002",
+   "t": 134,
+   "status": "picked",
+   "window": [
+    131.5,
+    137.0
+   ],
+   "note": "run 7: the candlelit cards dissolve to this desk at ~131 s; clean to 138.4 s, then a piano dissolves in (0.5 s sheet)"
+  },
+  {
+   "use": "bridge4",
+   "object": "glowing vacancy (002)",
+   "film": "002",
+   "t": 231,
+   "status": "picked",
+   "note": "the glowing empty chair, no label (224-229 s has EMPTY CHAIR). The empty-grid shots 480-536 s are labelled throughout; 537.5 s on is the end card. Run 6: EMPTY CHAIR cuts off between 230.0 and 230.2 s, so the window starts 230.3 s; the chair holds to ~231.2 s, then the empty lecture hall with glowing streams",
+   "window": [
+    230.3,
+    235.0
+   ]
+  },
+  {
+   "use": "bridge4",
+   "object": "dark lab, tube and screen (003)",
+   "film": "003",
+   "t": 98,
+   "status": "picked",
+   "note": "dark cardboard screen on its stand in the lab, no label: lower third 'WHY COVER THE TUBE' ends 94.9 s, CARDBOARD starts 103 s (run 6, 1 s sheet + lower-third scan)",
+   "window": [
+    95.2,
+    101.8
+   ]
+  },
+  {
+   "use": "bridge4",
+   "object": "lit screen across the lab (003)",
+   "film": "003",
+   "t": 147,
+   "status": "picked",
+   "window": [
+    145.2,
+    149.4
+   ],
+   "note": "the cardboard screen glowing green across the lab, for 'began to glow'; no label. 151-153 s is the chapter card and 154-160 s carries the in-picture title 'Bones Without a Knife', which the scan does not see (run 6, 1 s sheet)"
+  },
+  {
+   "use": "bridge5",
+   "object": "faint glowing screen (003)",
+   "film": "003",
+   "t": 120,
+   "status": "picked",
+   "note": "hand at the screen, faint glow, no label. Run 6: clean 118-124.5 s on the 1 s sheet and lower-third scan; from 125 s an X is drawn on the slate. A small labelled anatomy poster sits soft in the top-left background (the film's own passed picture): Chief may prefer 129.8-133.5 s if it matters. Run 7: the shot dissolves in until 118.8 s, so the window starts 118.9 s",
+   "window": [
+    118.9,
+    124.5
+   ]
+  },
+  {
+   "use": "bridge5",
+   "object": "gold foil (004)",
+   "film": "004",
+   "t": 260,
+   "status": "picked",
+   "note": "sparks on the foil with two figures (260-262.7 s), then the gilded foil in its frame from ~263 s on 'a sheet of gold'; lab hall cuts in at 267 s (run 7, 1 s sheet)",
+   "window": [
+    260.0,
+    266.7
+   ]
+  },
+  {
+   "use": "bridge5",
+   "object": "atom models under glass (004)",
+   "film": "004",
+   "t": 242,
+   "status": "picked",
+   "window": [
+    240.3,
+    244.8
+   ],
+   "note": "run 7: glass atom, then the gold atom, for 'inside every atom'; a particle burst at 245 s and the 1909 date card at 246 s are left out (1 s sheet)"
+  },
+  {
+   "use": "closing",
+   "object": "004 cutaway atom, blue nucleus under glass",
+   "film": "004",
+   "t": 229.2,
+   "status": "picked",
+   "window": [
+    227.6,
+    230.9
+   ],
+   "note": "Run 8: opens on 'how we found the invisible world'. Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+  },
+  {
+   "use": "closing",
+   "object": "tied arm, red artery band",
+   "film": "005",
+   "t": 289.5,
+   "status": "picked",
+   "window": [
+    287.6,
+    291.3
+   ],
+   "note": "Run 8: 'a circle of blood'; Deep arteries label ends 286 s; holds over the willow line until 006 lands. Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+  },
+  {
+   "use": "closing",
+   "object": "swan-neck flask close up",
+   "film": "001",
+   "t": 299.3,
+   "status": "picked",
+   "window": [
+    298.0,
+    300.6
+   ],
+   "note": "Run 8: 'life in a flask'; AN ADDRESS from 308 s. Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+  },
+  {
+   "use": "closing",
+   "object": "round table, cards and chairs",
+   "film": "002",
+   "t": 163.9,
+   "status": "picked",
+   "window": [
+    162.3,
+    165.6
+   ],
+   "note": "Run 8: 'a table with empty chairs'; dissolve ends ~161.5 s, 1860 card from 170 s. Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+  },
+  {
+   "use": "closing",
+   "object": "hand at the glowing screen",
+   "film": "003",
+   "t": 165.7,
+   "status": "picked",
+   "window": [
+    163.8,
+    167.6
+   ],
+   "note": "Run 8: 'a light that sees through skin'; title card 160 s, SOFT TISSUE from ~168 s. Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+  },
+  {
+   "use": "closing",
+   "object": "glowing nucleus in its sphere",
+   "film": "004",
+   "t": 225.7,
+   "status": "picked",
+   "window": [
+    224.0,
+    227.3
+   ],
+   "note": "Run 8: 'a tiny centre inside every atom'. Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+  },
+  {
+   "use": "closing",
+   "object": "beam into the gold foil",
+   "film": "004",
+   "t": 254.3,
+   "status": "picked",
+   "window": [
+    252.0,
+    256.7
+   ],
+   "note": "Run 8: 'proved long before anyone could see them'; two figures from 257 s. Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+  },
+  {
+   "use": "closing",
+   "object": "atom in space, then tiny nucleus in the dark hall",
+   "film": "004",
+   "t": 314.1,
+   "status": "dropped (run 9)",
+   "window": [
+    310.0,
+    318.3
+   ],
+   "note": "Run 8: under the timeline; stadium from 319 s; polish_gate low-detail WARN (film's own shot). Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window. Run 9: dropped. 314.5-318.5 s (dark hall) measures mean luma 22-26, so polish_gate FAILs near-black once it is sampled there, and 310-314.4 s is the J0204 closing timeline's own blurred plate. The beam shot now runs 252.0-261.7 s through the film's own cut (~257 s) to the two scientists for 'by people who refused to trust the obvious answer' (0.5 s eye sheet clean)."
+  },
+  {
+   "use": "closing",
+   "object": "brass sphere bursting, then the orb in glass",
+   "film": "004",
+   "t": 218.7,
+   "status": "picked",
+   "window": [
+    214.6,
+    222.8
+   ],
+   "note": "Run 8: under the end card; purple atom cuts in at 223 s. Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+  }
+ ],
+ "contact_sheets": "/private/tmp/hos_comp_v01/sheets/ (sheet_NNN.jpg, one tile per 10 s; candidates.jpg), Mini scratch only",
+ "scan": "_label_scan_v01.py: box look for 002, 004, 005; italic look for 001 and 003; every look adds a lower-third caption check (run 6). The scan doesn't see chapter cards or titles inside the picture, so every window is also checked by eye on a 1 s sheet. Keep 0.3 s off each edge (0.5 s sampling). Runs 4-6, 12-13 Oct 2026"
+}
