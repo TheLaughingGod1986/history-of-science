@@ -356,3 +356,40 @@ With both, the expected cost is about **£70.69, around £5 over** (or about £6
 Next on your word: mint Part 01 (Vertex, from `01_willow_air`) and read the credit after each part, as with 005. I'll do any merges you want in the boards first.
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.
+
+
+## 13 Oct 2026 — J0140 Senebier recovery (Codex covering)
+
+Chief desk rulings 6140112141 / 6140142639 authorize a fresh zero-credit Nano Banana still and one Fast i2v attempt for P5:02. P5:03 uses the Chief-reassigned P5:11 clip. Runner `_probe_senebier_fast_v01.py` uses a fresh t3 filename and refuses another submitted attempt.
+
+Initial run stopped before Create because neither uploaded style reference was attached. Flow remained 23,690 credits (0 spent). `_flow_still_v01.py` now waits for each exact completed upload tile and verifies prompt chips. No-spend live check output:
+
+```text
+attach via library 04_sunny_window_v01.jpg: True (chips=1)
+attach via library 10_mint_jar_v01.jpg: True (chips=2)
+No-spend style-ref attachment check: 2 chips
+```
+
+Both changed Python files compile. `status_board.py --check`: `STATUS.md and kanban/index.html match PIPELINE.json`. These are tool checks only, no creative PASS.
+
+Resumed detached in tmux `j0140-senebier-fast-v02`, under the `flow-cdp-9222` writer lock. Log `/Users/benjaminoats/_desk/logs/j0140-senebier-fast-v02.log`; exit marker same stem `.done`. Read it before continuing; missing marker means still running. No duplicate or further paid retry. P4:08 t2 remains for Chief KEEP; missing paid P4:06 t2 remains for Chief decision. PR #310 records code and board, media stays outside git. Shared checkout changes were preserved; its pull was blocked by them.
+
+## 14 Oct 2026 — J0140 Acting-Chief ruling executed: P4:06 t3 Fast, P5:11/19 code graphics, review/j0140 sheets, and Part 03 v02 + Part 04 v01 + Part 05 v01 roughs (Gemini covering)
+
+Executed the 4-point Acting-Chief ruling (Claude, 14 Oct 20:50Z) on Flow (CDP 9222) and assembled all three roughs:
+
+1. **P4:06 t2 probe & t3 Fast mint (`_probe_collect_blaze_fast_v01.py`):**
+   - Fixed `harvest()` in `_mint_flow_cdp_v01.py` with top-row fallback (`y > 20`) and inspected Flow project `5c3e36ef-deef-4d70-965f-a350ca8376ab` (`f269dd3e` held `P4:10 t2`, already harvested). Confirmed `06_collect_blaze_t2` had failed server-side with no video tile in the project (Flow had refunded 50 credits: balance `23,740`).
+   - Minted and harvested one authorized Fast take `06_collect_blaze_t3.mp4` (`1280x720`, 8.0 s, 24 fps, 0 freezes, sha256 `61e303bc25bd5b415a6703d3c053f390077b471485da3faaa44ac53c48668989`, 10 credits: `23,740 -> 23,730`, logged via `ai_spend.py spend --pool flow`).
+2. **Part 05 0-credit house-style code graphics (`_build_part05_code_graphics_v01.py`) & P5:02 cover fallback:**
+   - `11_trunk_pie_cg_v01.mp4` (6.0 s, 1920x1080 @ 24 fps, 0 freezes, sha256 `60e63c5e5e1d960fa41bc8bfba18ac58f936818666a90e0e0da244cb94b98d98`, `polish_gate` std `53.74`, edge `0.041`, seams `[]`): animated willow cross-section dividing into 50% dark walnut, 42% warm wood, 6% lighter wood, and 2% pale mineral-ash sliver on cream parchment, no letters.
+   - `19_dots_crowd_cg_v01.mp4` (6.0 s, 1920x1080 @ 24 fps, 0 freezes, sha256 `1931f67210cd1436e4214aa9e0dd076b3b36621cb84b58f986fdcfbc3bd18691`, `polish_gate` std `28.64`, edge `0.1178`, seams `[]`): 10,000 jostling pale dots inside a circular walnut-and-brass specimen lens bezel, with 4 dots swelling into solid bright gold, no letters.
+   - `02_senebier_jars_cover_v01.mp4` (7.46 s, 1920x1080 @ 24 fps, 0 freezes, sha256 `f667a4556aa66fd6da0c2c9798718d3540a5036b9921210366c96ff478a22731`): 0-credit cover from KEEP `P4:04_sunny_window_t1` (`1.50–5.25 s`) + KEEP `P4:05_bubbles_macro_t1` (`3.75–7.46 s`).
+3. **Contact sheets pushed to `review/j0140` and `cursor/j0140-006-flow-mint`:**
+   - Added all 9 pending UAT contact sheets + composite (`J0140_ALL_9_REVIEW_SHEETS.jpg`) under `02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/j0140_review_sheets/`.
+4. **Rough cuts assembled (`_assemble_part03_04_05_roughs_v01.py`, 0 spend, copied to iCloud `HOS UAT`):**
+   - **Part 03 rough v02** (`hos_006_part03_rough_v02.mp4`, 94.833 s, VO 94.228 s, sha256 `ff80e9fdf802…`, 0 freezes): drops top-cropped `P3:06_leeds_brewery_nofire_crop_v01.mp4` (1.33x, vat fireboxes excluded per Chief #180 6131279209 / 6133444306) into Part 03. `picture_qa.py` flags only the board's locked `16_repair_reuse` window of `14_trees_breathe_t1.mp4` (same as v01).
+   - **Part 04 rough v01** (`hos_006_part04_rough_v01.mp4`, 91.917 s, VO 91.320 s, sha256 `fcdcce5fc5ce…`, 0 freezes): all 16 board plates on the locked v02 VO (`02_ingenhousz_jars_t1` top-cropped 1.10x per Chief #180 6131279209; `06_collect_blaze_t3` bottom-trimmed 1.60x to exclude bottom-edge seam). `picture_qa.py` flags only the board's locked `09_bubbles_again` reuse of `05_bubbles_macro_t1` and the Chief-KEEP night candle shot `11_night_jars_t1` (`mean 19.95, p95 118.0`).
+   - **Part 05 rough v01** (`hos_006_part05_rough_v01.mp4`, 142.375 s, VO 141.760 s, sha256 `b3ca1afb9cd9…`, 0 freezes): all 24 board plates on the locked v02 VO (`02` cover fallback, `03` reassigned `11_trunk_pie_t1`, `05` trimmed to 5.00–7.93 s ledger tail, `11` and `19` code graphics, `24` HOS 004 KEEP `11_gold_foil_bounce_v01.mp4`). **`picture_qa.py` verdict: PASS (0 fails).**
+5. **PR #310 conflicts resolved:** merged `main`, regenerated `STATUS.md` and `00_Brand/Channel-Setup/kanban/index.html` via `status_board.py`, and verified `check_all.sh`.
+

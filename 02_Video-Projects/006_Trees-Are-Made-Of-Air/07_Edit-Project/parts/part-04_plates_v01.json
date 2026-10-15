@@ -165,7 +165,7 @@
       "side_label": "OXYGEN (on the blaze)",
       "quality": "Quality",
       "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
-      "prompt": "Premium Animistry-class 3D cartoon. Ingenhousz's hands hold a small upside-down glass tube over the leaf jar to collect the rising bubbles; then a small candle flame lowered into the tube blazes up bright and tall. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close-up on a leaf jar on a table; only Ingenhousz's hands and cuffs in frame, no face, no full figure, no bell jar over a plant. His hands hold a small upside-down glass test tube over the leaf jar, catching the silver bubbles as they rise; then one hand lowers a small candle flame into the mouth of that tube and it blazes up bright and tall. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 7.88,
       "vo_land": [
         "He collected the bubbles and tested the gas.",
@@ -176,7 +176,8 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 89.99,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "retake_t2": "Chief 13 Oct 03:30Z: first beat was full-figure bell jar; hands + upside-down tube over the leaf jar, then candle into that tube."
     },
     {
       "id": "07_priestley_callback",
@@ -206,7 +207,7 @@
       "side_label": "NO LIGHT, NO BUBBLES",
       "quality": "Quality",
       "engine_reason": "Quality: explorer fidelity. Face and hair are UAT hard fail 4 (glasses, full hair, one Explorer); a Fast remint would cost more than the difference.",
-      "prompt": "Premium Animistry-class 3D cartoon. Same sunny room. Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He lifts a fizzing jar of leaves from the sunny sill and carries it into the shadow, where the bubbles stop; he steps back into the sunbeam where they start again, grins and sets it down. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same sunny room. Exactly ONE Explorer, on model in every frame: a young boy, messy wavy brown hair (full crown), round thin gold glasses always on his face, long teal coat, tan waistcoat, brown bow tie, satchel. Close on the jar of green leaves in water: in the sunbeam on the sill it streams silver bubbles; he carries it a step into deep shadow and the bubbles clearly stop; he steps back into the sunbeam and the bubbles start streaming again; he grins and sets it down. Daylight from out of frame; no candle, flame, lantern, lamp, glow or fire in shot; the jar does not glow. Silent. Continuous motion through the final frame.",
       "use_s": 7.18,
       "vo_land": [
         "Then came the clue that solved Priestley's puzzle.",
@@ -217,7 +218,8 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 93.38,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "retake_t2": "Chief 13 Oct 03:30Z: action off-brief (jar glow / walk-away) and glasses not reliable; shade beat made explicit, glasses every frame."
     },
     {
       "id": "09_bubbles_again",
