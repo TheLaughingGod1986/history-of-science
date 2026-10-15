@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-14",
-  "updated_by": "gemini (J0140)",
+  "updated": "2026-10-15",
+  "updated_by": "cursor (J0282)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -335,7 +335,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Script, facts, package and the long voiceover are done (locked 7 Oct, 9:14.8). Shorts voiceover (v02 pair) comes after 009 and 010; picture waits for the whole voiceover batch.",
+      "summary": "Long VO (9:14.8) + Shorts VO (v02 pair) locked. Plate boards v03 KEEP (Chief PASS 15 Oct, J0240): 112 rows, 15 Quality / 86 non-emissive Fast / 11 £0 code graphics / 0 reuse. Flow expected 5,605 cr (try-1 2,360 cr). No mint until after 006 and 007.",
       "stages": {
         "topic": {
           "status": "done"
@@ -368,16 +368,19 @@
           "note": "v02 (test B): two search-titled Shorts, 9 Oct"
         },
         "shorts_vo": {
-          "status": "todo",
+          "status": "done",
           "due": "2026-10-08",
           "owner": "Cursor",
-          "waiting": "after 010 long VO"
+          "note": "locked 12 Oct (PR #296): Short 01 v01 (22.36 s), Short 02 v02 (22.42 s); both PASS vo_check + Claude listening"
         },
         "picture": {
-          "status": "todo",
+          "status": "blocked",
           "due": "2026-11-08",
           "owner": "Cursor",
-          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 58 plates; 8 period details P1\u2013P8 to confirm first); plates start after the whole VO batch passes"
+          "since": "2026-10-15",
+          "underway": false,
+          "note": "J0240 v03 plate boards KEEP (Chief PASS 15 Oct): 5 parts, 112 rows (15 Quality / 86 Fast non-emissive / 11 £0 code graphics / 0 reuse, all 15 measured); Flow expected 5,605 cr (try-1 2,360 cr), Vertex fallback £133.38; no mint. See PRICE_REVIEW_v03.md.",
+          "waiting": "mint after 006 and 007, and only when a live Flow reading leaves at least 3,000 credits after 008's expected spend"
         },
         "edit": {
           "status": "todo",

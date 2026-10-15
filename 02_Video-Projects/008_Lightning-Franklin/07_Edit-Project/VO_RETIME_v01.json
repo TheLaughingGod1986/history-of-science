@@ -1,0 +1,6441 @@
+{
+  "film": "008_Lightning-Franklin",
+  "source": "Locked VO (VO_TAKES_KEEP.json), faster-whisper small.en word timestamps, vo_check.norm()",
+  "card_breath_s": 0.6,
+  "card_to_vo_s": 1.9,
+  "vo_film_total_s": 564.79,
+  "vo_film_total": "9:24.79",
+  "parts": [
+    {
+      "part": 1,
+      "file": "hos_008_part01_fire_from_the_sky_v01b.mp3",
+      "sha256": "70d09944dc04d1a5875644fd42496cc25ba042e6ad7b2339ca20fa2678ba5cce",
+      "duration_s": 104.81,
+      "match_rate_pct": 100.0,
+      "chapter_card": null,
+      "card_in_film_s": null,
+      "card_in_film": null,
+      "vo_film_start_s": 0.0,
+      "vo_film_start": "0:00.00",
+      "vo_film_end_s": 104.81,
+      "vo_film_end": "1:44.81",
+      "last_word_s": 104.6,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "In the summer of seventeen fifty-two, a grown man walked out into a thunderstorm and flew a kite into the clouds, on purpose.",
+          "start_s": 0.0,
+          "end_s": 8.84,
+          "film_s": 0.0,
+          "film": "0:00.00"
+        },
+        {
+          "i": 2,
+          "text": "Why would anyone do that?",
+          "start_s": 10.1,
+          "end_s": 11.36,
+          "film_s": 10.1,
+          "film": "0:10.10"
+        },
+        {
+          "i": 3,
+          "text": "And why does almost every tall building you have ever seen still carry the answer on its roof?",
+          "start_s": 11.84,
+          "end_s": 17.82,
+          "film_s": 11.84,
+          "film": "0:11.84"
+        },
+        {
+          "i": 4,
+          "text": "By the end of this film, you'll know how a kite, a key and a glass jar proved what lightning really is, and how one simple idea stopped it burning our towns down.",
+          "start_s": 19.08,
+          "end_s": 32.0,
+          "film_s": 19.08,
+          "film": "0:19.08"
+        },
+        {
+          "i": 5,
+          "text": "For thousands of years, lightning was a mystery.",
+          "start_s": 33.18,
+          "end_s": 36.26,
+          "film_s": 33.18,
+          "film": "0:33.18"
+        },
+        {
+          "i": 6,
+          "text": "It fell without warning, split trees, killed animals in the fields and set roofs alight.",
+          "start_s": 36.98,
+          "end_s": 43.56,
+          "film_s": 36.98,
+          "film": "0:36.98"
+        },
+        {
+          "i": 7,
+          "text": "Many people believed it was a punishment sent from the heavens.",
+          "start_s": 44.6,
+          "end_s": 47.78,
+          "film_s": 44.6,
+          "film": "0:44.60"
+        },
+        {
+          "i": 8,
+          "text": "Picture yourself in a town in those years, on a hot summer night.",
+          "start_s": 49.06,
+          "end_s": 53.04,
+          "film_s": 49.06,
+          "film": "0:49.06"
+        },
+        {
+          "i": 9,
+          "text": "You would see the sky flash white, hear the thunder crack right overhead, and smell the smoke as a barn went up in flames.",
+          "start_s": 53.78,
+          "end_s": 62.44,
+          "film_s": 53.78,
+          "film": "0:53.78"
+        },
+        {
+          "i": 10,
+          "text": "And you could do nothing but wait for the next strike.",
+          "start_s": 63.48,
+          "end_s": 66.46,
+          "film_s": 63.48,
+          "film": "1:03.48"
+        },
+        {
+          "i": 11,
+          "text": "The tallest buildings were hit most of all.",
+          "start_s": 67.7,
+          "end_s": 70.4,
+          "film_s": 67.7,
+          "film": "1:07.70"
+        },
+        {
+          "i": 12,
+          "text": "Church steeples were struck again and again.",
+          "start_s": 71.22,
+          "end_s": 74.06,
+          "film_s": 71.22,
+          "film": "1:11.22"
+        },
+        {
+          "i": 13,
+          "text": "And when a storm came, the bell-ringers were sent up the tower to ring the bells, because people believed the sound would drive the lightning away.",
+          "start_s": 74.44,
+          "end_s": 83.68,
+          "film_s": 74.44,
+          "film": "1:14.44"
+        },
+        {
+          "i": 14,
+          "text": "It was the worst place to stand.",
+          "start_s": 84.54,
+          "end_s": 86.6,
+          "film_s": 84.54,
+          "film": "1:24.54"
+        },
+        {
+          "i": 15,
+          "text": "One eighteenth-century count found more than a hundred bell-ringers killed by lightning in just a few decades.",
+          "start_s": 87.78,
+          "end_s": 94.7,
+          "film_s": 87.78,
+          "film": "1:27.78"
+        },
+        {
+          "i": 16,
+          "text": "So what was lightning?",
+          "start_s": 96.14,
+          "end_s": 97.48,
+          "film_s": 96.14,
+          "film": "1:36.14"
+        },
+        {
+          "i": 17,
+          "text": "A punishment?",
+          "start_s": 98.2,
+          "end_s": 98.62,
+          "film_s": 98.2,
+          "film": "1:38.20"
+        },
+        {
+          "i": 18,
+          "text": "A kind of fire?",
+          "start_s": 99.32,
+          "end_s": 100.26,
+          "film_s": 99.32,
+          "film": "1:39.32"
+        },
+        {
+          "i": 19,
+          "text": "Or something else, something you could catch and study?",
+          "start_s": 100.96,
+          "end_s": 104.6,
+          "film_s": 100.96,
+          "film": "1:40.96"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "In"
+        ],
+        [
+          0.16,
+          "the"
+        ],
+        [
+          0.28,
+          "summer"
+        ],
+        [
+          0.52,
+          "of"
+        ],
+        [
+          0.66,
+          "1752,"
+        ],
+        [
+          2.34,
+          "a"
+        ],
+        [
+          2.52,
+          "grown"
+        ],
+        [
+          2.8,
+          "man"
+        ],
+        [
+          3.26,
+          "walked"
+        ],
+        [
+          3.66,
+          "out"
+        ],
+        [
+          3.94,
+          "into"
+        ],
+        [
+          4.2,
+          "a"
+        ],
+        [
+          4.36,
+          "thunderstorm"
+        ],
+        [
+          5.08,
+          "and"
+        ],
+        [
+          5.68,
+          "flew"
+        ],
+        [
+          5.96,
+          "a"
+        ],
+        [
+          6.34,
+          "kite"
+        ],
+        [
+          6.42,
+          "into"
+        ],
+        [
+          6.68,
+          "the"
+        ],
+        [
+          6.9,
+          "clouds,"
+        ],
+        [
+          7.9,
+          "on"
+        ],
+        [
+          8.2,
+          "purpose."
+        ],
+        [
+          10.1,
+          "Why"
+        ],
+        [
+          10.28,
+          "would"
+        ],
+        [
+          10.44,
+          "anyone"
+        ],
+        [
+          10.62,
+          "do"
+        ],
+        [
+          10.98,
+          "that,"
+        ],
+        [
+          11.84,
+          "and"
+        ],
+        [
+          12.14,
+          "why"
+        ],
+        [
+          12.34,
+          "does"
+        ],
+        [
+          12.5,
+          "almost"
+        ],
+        [
+          12.8,
+          "every"
+        ],
+        [
+          13.36,
+          "tall"
+        ],
+        [
+          13.7,
+          "building"
+        ],
+        [
+          14.2,
+          "you"
+        ],
+        [
+          14.48,
+          "have"
+        ],
+        [
+          14.64,
+          "ever"
+        ],
+        [
+          15.0,
+          "seen"
+        ],
+        [
+          15.58,
+          "still"
+        ],
+        [
+          16.22,
+          "carry"
+        ],
+        [
+          16.54,
+          "the"
+        ],
+        [
+          16.76,
+          "answer"
+        ],
+        [
+          17.04,
+          "on"
+        ],
+        [
+          17.32,
+          "its"
+        ],
+        [
+          17.5,
+          "roof?"
+        ],
+        [
+          19.08,
+          "By"
+        ],
+        [
+          19.3,
+          "the"
+        ],
+        [
+          19.4,
+          "end"
+        ],
+        [
+          19.56,
+          "of"
+        ],
+        [
+          19.7,
+          "this"
+        ],
+        [
+          19.88,
+          "film,"
+        ],
+        [
+          20.66,
+          "you'll"
+        ],
+        [
+          20.98,
+          "know"
+        ],
+        [
+          21.18,
+          "how"
+        ],
+        [
+          21.46,
+          "a"
+        ],
+        [
+          21.6,
+          "kite,"
+        ],
+        [
+          22.4,
+          "a"
+        ],
+        [
+          22.56,
+          "key"
+        ],
+        [
+          22.9,
+          "and"
+        ],
+        [
+          23.46,
+          "a"
+        ],
+        [
+          23.58,
+          "glass"
+        ],
+        [
+          23.9,
+          "jar"
+        ],
+        [
+          24.42,
+          "proved"
+        ],
+        [
+          25.14,
+          "what"
+        ],
+        [
+          25.52,
+          "lightning"
+        ],
+        [
+          26.08,
+          "really"
+        ],
+        [
+          26.54,
+          "is,"
+        ],
+        [
+          27.7,
+          "and"
+        ],
+        [
+          27.94,
+          "how"
+        ],
+        [
+          28.12,
+          "one"
+        ],
+        [
+          28.48,
+          "simple"
+        ],
+        [
+          28.92,
+          "idea"
+        ],
+        [
+          29.42,
+          "stopped"
+        ],
+        [
+          30.14,
+          "it"
+        ],
+        [
+          30.38,
+          "burning"
+        ],
+        [
+          30.68,
+          "our"
+        ],
+        [
+          31.02,
+          "towns"
+        ],
+        [
+          31.4,
+          "down."
+        ],
+        [
+          33.18,
+          "For"
+        ],
+        [
+          33.38,
+          "thousands"
+        ],
+        [
+          33.9,
+          "of"
+        ],
+        [
+          34.2,
+          "years,"
+        ],
+        [
+          35.12,
+          "lightning"
+        ],
+        [
+          35.36,
+          "was"
+        ],
+        [
+          35.68,
+          "a"
+        ],
+        [
+          35.86,
+          "mystery."
+        ],
+        [
+          36.98,
+          "It"
+        ],
+        [
+          37.12,
+          "fell"
+        ],
+        [
+          37.42,
+          "without"
+        ],
+        [
+          37.86,
+          "warning,"
+        ],
+        [
+          38.86,
+          "split"
+        ],
+        [
+          39.12,
+          "trees,"
+        ],
+        [
+          40.2,
+          "killed"
+        ],
+        [
+          40.48,
+          "animals"
+        ],
+        [
+          40.84,
+          "in"
+        ],
+        [
+          41.2,
+          "the"
+        ],
+        [
+          41.32,
+          "fields,"
+        ],
+        [
+          42.18,
+          "and"
+        ],
+        [
+          42.32,
+          "set"
+        ],
+        [
+          42.56,
+          "roofs"
+        ],
+        [
+          43.04,
+          "alight."
+        ],
+        [
+          44.6,
+          "Many"
+        ],
+        [
+          44.78,
+          "people"
+        ],
+        [
+          45.16,
+          "believed"
+        ],
+        [
+          45.5,
+          "it"
+        ],
+        [
+          45.7,
+          "was"
+        ],
+        [
+          45.8,
+          "a"
+        ],
+        [
+          46.02,
+          "punishment"
+        ],
+        [
+          46.42,
+          "sent"
+        ],
+        [
+          47.12,
+          "from"
+        ],
+        [
+          47.38,
+          "the"
+        ],
+        [
+          47.54,
+          "heavens."
+        ],
+        [
+          49.06,
+          "Picture"
+        ],
+        [
+          49.14,
+          "yourself"
+        ],
+        [
+          49.46,
+          "in"
+        ],
+        [
+          49.84,
+          "a"
+        ],
+        [
+          49.98,
+          "town"
+        ],
+        [
+          50.32,
+          "in"
+        ],
+        [
+          50.54,
+          "those"
+        ],
+        [
+          50.82,
+          "years,"
+        ],
+        [
+          51.56,
+          "on"
+        ],
+        [
+          51.8,
+          "a"
+        ],
+        [
+          51.98,
+          "hot"
+        ],
+        [
+          52.26,
+          "summer"
+        ],
+        [
+          52.62,
+          "night."
+        ],
+        [
+          53.78,
+          "You"
+        ],
+        [
+          54.1,
+          "would"
+        ],
+        [
+          54.24,
+          "see"
+        ],
+        [
+          54.52,
+          "the"
+        ],
+        [
+          54.76,
+          "sky"
+        ],
+        [
+          55.14,
+          "flash"
+        ],
+        [
+          55.58,
+          "white,"
+        ],
+        [
+          56.38,
+          "hear"
+        ],
+        [
+          56.7,
+          "the"
+        ],
+        [
+          56.92,
+          "thunder"
+        ],
+        [
+          57.28,
+          "crack"
+        ],
+        [
+          57.66,
+          "right"
+        ],
+        [
+          58.06,
+          "overhead"
+        ],
+        [
+          58.68,
+          "and"
+        ],
+        [
+          59.3,
+          "smell"
+        ],
+        [
+          59.62,
+          "the"
+        ],
+        [
+          59.84,
+          "smoke"
+        ],
+        [
+          60.32,
+          "as"
+        ],
+        [
+          60.84,
+          "a"
+        ],
+        [
+          61.0,
+          "barn"
+        ],
+        [
+          61.34,
+          "went"
+        ],
+        [
+          61.64,
+          "up"
+        ],
+        [
+          61.86,
+          "in"
+        ],
+        [
+          62.04,
+          "flames."
+        ],
+        [
+          63.48,
+          "And"
+        ],
+        [
+          63.66,
+          "you"
+        ],
+        [
+          63.78,
+          "could"
+        ],
+        [
+          63.92,
+          "do"
+        ],
+        [
+          64.12,
+          "nothing"
+        ],
+        [
+          64.46,
+          "but"
+        ],
+        [
+          64.82,
+          "wait"
+        ],
+        [
+          65.14,
+          "for"
+        ],
+        [
+          65.52,
+          "the"
+        ],
+        [
+          65.66,
+          "next"
+        ],
+        [
+          65.98,
+          "strike."
+        ],
+        [
+          67.7,
+          "The"
+        ],
+        [
+          68.2,
+          "tallest"
+        ],
+        [
+          68.56,
+          "buildings"
+        ],
+        [
+          69.06,
+          "were"
+        ],
+        [
+          69.32,
+          "hit"
+        ],
+        [
+          69.52,
+          "most"
+        ],
+        [
+          69.82,
+          "of"
+        ],
+        [
+          70.02,
+          "all."
+        ],
+        [
+          71.22,
+          "Church"
+        ],
+        [
+          71.42,
+          "steeples"
+        ],
+        [
+          71.98,
+          "were"
+        ],
+        [
+          72.22,
+          "struck"
+        ],
+        [
+          72.62,
+          "again"
+        ],
+        [
+          73.28,
+          "and"
+        ],
+        [
+          73.6,
+          "again,"
+        ],
+        [
+          74.44,
+          "and"
+        ],
+        [
+          74.66,
+          "when"
+        ],
+        [
+          74.8,
+          "a"
+        ],
+        [
+          74.96,
+          "storm"
+        ],
+        [
+          75.22,
+          "came,"
+        ],
+        [
+          76.16,
+          "the"
+        ],
+        [
+          76.24,
+          "bell"
+        ],
+        [
+          76.48,
+          "ringers"
+        ],
+        [
+          76.98,
+          "were"
+        ],
+        [
+          77.14,
+          "sent"
+        ],
+        [
+          77.36,
+          "up"
+        ],
+        [
+          77.6,
+          "the"
+        ],
+        [
+          77.8,
+          "tower"
+        ],
+        [
+          78.14,
+          "to"
+        ],
+        [
+          78.42,
+          "ring"
+        ],
+        [
+          78.6,
+          "the"
+        ],
+        [
+          78.8,
+          "bells,"
+        ],
+        [
+          79.42,
+          "because"
+        ],
+        [
+          80.02,
+          "people"
+        ],
+        [
+          80.34,
+          "believed"
+        ],
+        [
+          80.78,
+          "the"
+        ],
+        [
+          81.14,
+          "sound"
+        ],
+        [
+          81.6,
+          "would"
+        ],
+        [
+          82.14,
+          "drive"
+        ],
+        [
+          82.52,
+          "the"
+        ],
+        [
+          82.84,
+          "lightning"
+        ],
+        [
+          83.22,
+          "away."
+        ],
+        [
+          84.54,
+          "It"
+        ],
+        [
+          84.74,
+          "was"
+        ],
+        [
+          84.86,
+          "the"
+        ],
+        [
+          85.08,
+          "worst"
+        ],
+        [
+          85.46,
+          "place"
+        ],
+        [
+          85.82,
+          "to"
+        ],
+        [
+          86.1,
+          "stand."
+        ],
+        [
+          87.78,
+          "One"
+        ],
+        [
+          88.1,
+          "18th"
+        ],
+        [
+          88.72,
+          "century"
+        ],
+        [
+          88.96,
+          "count"
+        ],
+        [
+          89.46,
+          "found"
+        ],
+        [
+          90.14,
+          "more"
+        ],
+        [
+          90.42,
+          "than"
+        ],
+        [
+          90.58,
+          "a"
+        ],
+        [
+          90.68,
+          "hundred"
+        ],
+        [
+          91.14,
+          "bell"
+        ],
+        [
+          91.48,
+          "ringers"
+        ],
+        [
+          91.92,
+          "killed"
+        ],
+        [
+          92.2,
+          "by"
+        ],
+        [
+          92.48,
+          "lightning"
+        ],
+        [
+          92.92,
+          "in"
+        ],
+        [
+          93.5,
+          "just"
+        ],
+        [
+          93.82,
+          "a"
+        ],
+        [
+          94.0,
+          "few"
+        ],
+        [
+          94.18,
+          "decades."
+        ],
+        [
+          96.14,
+          "So"
+        ],
+        [
+          96.44,
+          "what"
+        ],
+        [
+          96.62,
+          "was"
+        ],
+        [
+          97.02,
+          "lightning?"
+        ],
+        [
+          98.2,
+          "A"
+        ],
+        [
+          98.24,
+          "punishment?"
+        ],
+        [
+          99.32,
+          "A"
+        ],
+        [
+          99.46,
+          "kind"
+        ],
+        [
+          99.64,
+          "of"
+        ],
+        [
+          99.8,
+          "fire?"
+        ],
+        [
+          100.96,
+          "Or"
+        ],
+        [
+          101.14,
+          "something"
+        ],
+        [
+          101.48,
+          "else?"
+        ],
+        [
+          102.52,
+          "Something"
+        ],
+        [
+          102.7,
+          "you"
+        ],
+        [
+          102.96,
+          "could"
+        ],
+        [
+          103.16,
+          "catch"
+        ],
+        [
+          103.6,
+          "and"
+        ],
+        [
+          104.18,
+          "study?"
+        ]
+      ]
+    },
+    {
+      "part": 2,
+      "file": "hos_008_part02_the_sparks_in_a_jar_v01.mp3",
+      "sha256": "59daa3df240a20c098eb0a70f03133ef0e8fbf59a42abf790f8c91410720e7ed",
+      "duration_s": 90.64,
+      "match_rate_pct": 100.0,
+      "chapter_card": "The Sparks in a Jar",
+      "card_in_film_s": 105.41,
+      "card_in_film": "1:45.41",
+      "vo_film_start_s": 107.31,
+      "vo_film_start": "1:47.31",
+      "vo_film_end_s": 197.95,
+      "vo_film_end": "3:17.95",
+      "last_word_s": 90.62,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "In the seventeen-forties, electricity was a party trick.",
+          "start_s": 0.0,
+          "end_s": 3.18,
+          "film_s": 107.31,
+          "film": "1:47.31"
+        },
+        {
+          "i": 2,
+          "text": "Travelling lecturers rubbed glass tubes with silk and made sparks fly from people's fingers and hair.",
+          "start_s": 4.12,
+          "end_s": 9.92,
+          "film_s": 111.43,
+          "film": "1:51.43"
+        },
+        {
+          "i": 3,
+          "text": "Audiences paid to feel the shock.",
+          "start_s": 10.78,
+          "end_s": 12.44,
+          "film_s": 118.09,
+          "film": "1:58.09"
+        },
+        {
+          "i": 4,
+          "text": "In Philadelphia, a printer called Benjamin Franklin saw one of these shows, and could not stop thinking about it.",
+          "start_s": 13.32,
+          "end_s": 20.06,
+          "film_s": 120.63,
+          "film": "2:00.63"
+        },
+        {
+          "i": 5,
+          "text": "He was so curious that he handed his printing business to a partner, so he would have time to study electricity.",
+          "start_s": 20.8,
+          "end_s": 26.94,
+          "film_s": 128.11,
+          "film": "2:08.11"
+        },
+        {
+          "i": 6,
+          "text": "His most exciting tool was a new invention called a Leyden jar.",
+          "start_s": 27.68,
+          "end_s": 32.12,
+          "film_s": 134.99,
+          "film": "2:14.99"
+        },
+        {
+          "i": 7,
+          "text": "It was a glass jar lined with metal foil, and it could store electricity, then let it all go at once, in a bright spark with a loud crack.",
+          "start_s": 32.88,
+          "end_s": 42.28,
+          "film_s": 140.19,
+          "film": "2:20.19"
+        },
+        {
+          "i": 8,
+          "text": "And that spark reminded Franklin of something.",
+          "start_s": 43.38,
+          "end_s": 45.88,
+          "film_s": 150.69,
+          "film": "2:30.69"
+        },
+        {
+          "i": 9,
+          "text": "A flash of light.",
+          "start_s": 46.48,
+          "end_s": 47.44,
+          "film_s": 153.79,
+          "film": "2:33.79"
+        },
+        {
+          "i": 10,
+          "text": "A crack of noise.",
+          "start_s": 47.96,
+          "end_s": 49.0,
+          "film_s": 155.27,
+          "film": "2:35.27"
+        },
+        {
+          "i": 11,
+          "text": "A sharp smell in the air.",
+          "start_s": 49.5,
+          "end_s": 51.08,
+          "film_s": 156.81,
+          "film": "2:36.81"
+        },
+        {
+          "i": 12,
+          "text": "It was like a tiny thunderstorm in a jar.",
+          "start_s": 51.7,
+          "end_s": 54.18,
+          "film_s": 159.01,
+          "film": "2:39.01"
+        },
+        {
+          "i": 13,
+          "text": "So in November seventeen forty-nine, he wrote a list in his notebook.",
+          "start_s": 54.94,
+          "end_s": 59.48,
+          "film_s": 162.25,
+          "film": "2:42.25"
+        },
+        {
+          "i": 14,
+          "text": "Twelve ways a spark was just like lightning.",
+          "start_s": 60.72,
+          "end_s": 63.58,
+          "film_s": 168.03,
+          "film": "2:48.03"
+        },
+        {
+          "i": 15,
+          "text": "They both gave light of the same colour.",
+          "start_s": 64.54,
+          "end_s": 66.46,
+          "film_s": 171.85,
+          "film": "2:51.85"
+        },
+        {
+          "i": 16,
+          "text": "They both moved in crooked lines.",
+          "start_s": 67.04,
+          "end_s": 68.9,
+          "film_s": 174.35,
+          "film": "2:54.35"
+        },
+        {
+          "i": 17,
+          "text": "They both made a crack, set things on fire and could kill animals.",
+          "start_s": 69.62,
+          "end_s": 73.62,
+          "film_s": 176.93,
+          "film": "2:56.93"
+        },
+        {
+          "i": 18,
+          "text": "But a list of likenesses isn't proof.",
+          "start_s": 74.9,
+          "end_s": 77.06,
+          "film_s": 182.21,
+          "film": "3:02.21"
+        },
+        {
+          "i": 19,
+          "text": "At the bottom of the page, Franklin wrote five famous words.",
+          "start_s": 77.94,
+          "end_s": 82.22,
+          "film_s": 185.25,
+          "film": "3:05.25"
+        },
+        {
+          "i": 20,
+          "text": "Let the experiment be made.",
+          "start_s": 83.06,
+          "end_s": 85.64,
+          "film_s": 190.37,
+          "film": "3:10.37"
+        },
+        {
+          "i": 21,
+          "text": "But how do you catch a bolt of lightning, without it killing you?",
+          "start_s": 86.84,
+          "end_s": 90.62,
+          "film_s": 194.15,
+          "film": "3:14.15"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "In"
+        ],
+        [
+          0.14,
+          "the"
+        ],
+        [
+          0.24,
+          "1740s,"
+        ],
+        [
+          1.6,
+          "electricity"
+        ],
+        [
+          1.88,
+          "was"
+        ],
+        [
+          2.28,
+          "a"
+        ],
+        [
+          2.42,
+          "party"
+        ],
+        [
+          2.76,
+          "trick."
+        ],
+        [
+          4.12,
+          "Traveling"
+        ],
+        [
+          4.4,
+          "lecturers"
+        ],
+        [
+          4.86,
+          "rubbed"
+        ],
+        [
+          5.22,
+          "glass"
+        ],
+        [
+          5.58,
+          "tubes"
+        ],
+        [
+          6.12,
+          "with"
+        ],
+        [
+          6.42,
+          "silk"
+        ],
+        [
+          6.78,
+          "and"
+        ],
+        [
+          7.38,
+          "made"
+        ],
+        [
+          7.56,
+          "sparks"
+        ],
+        [
+          8.12,
+          "fly"
+        ],
+        [
+          8.42,
+          "from"
+        ],
+        [
+          8.64,
+          "people's"
+        ],
+        [
+          9.04,
+          "fingers"
+        ],
+        [
+          9.3,
+          "and"
+        ],
+        [
+          9.56,
+          "hair."
+        ],
+        [
+          10.78,
+          "Audiences"
+        ],
+        [
+          11.08,
+          "paid"
+        ],
+        [
+          11.46,
+          "to"
+        ],
+        [
+          11.74,
+          "feel"
+        ],
+        [
+          11.92,
+          "the"
+        ],
+        [
+          12.08,
+          "shock."
+        ],
+        [
+          13.32,
+          "In"
+        ],
+        [
+          13.62,
+          "Philadelphia,"
+        ],
+        [
+          14.86,
+          "a"
+        ],
+        [
+          14.92,
+          "printer"
+        ],
+        [
+          15.22,
+          "called"
+        ],
+        [
+          15.58,
+          "Benjamin"
+        ],
+        [
+          15.96,
+          "Franklin"
+        ],
+        [
+          16.42,
+          "saw"
+        ],
+        [
+          16.84,
+          "one"
+        ],
+        [
+          17.04,
+          "of"
+        ],
+        [
+          17.16,
+          "these"
+        ],
+        [
+          17.32,
+          "shows"
+        ],
+        [
+          17.62,
+          "and"
+        ],
+        [
+          18.26,
+          "could"
+        ],
+        [
+          18.4,
+          "not"
+        ],
+        [
+          18.68,
+          "stop"
+        ],
+        [
+          19.04,
+          "thinking"
+        ],
+        [
+          19.4,
+          "about"
+        ],
+        [
+          19.7,
+          "it."
+        ],
+        [
+          20.8,
+          "He"
+        ],
+        [
+          21.0,
+          "was"
+        ],
+        [
+          21.1,
+          "so"
+        ],
+        [
+          21.34,
+          "curious"
+        ],
+        [
+          21.84,
+          "that"
+        ],
+        [
+          22.4,
+          "he"
+        ],
+        [
+          22.5,
+          "handed"
+        ],
+        [
+          22.8,
+          "his"
+        ],
+        [
+          23.02,
+          "printing"
+        ],
+        [
+          23.36,
+          "business"
+        ],
+        [
+          23.7,
+          "to"
+        ],
+        [
+          23.94,
+          "a"
+        ],
+        [
+          24.06,
+          "partner"
+        ],
+        [
+          24.46,
+          "so"
+        ],
+        [
+          25.06,
+          "he"
+        ],
+        [
+          25.24,
+          "would"
+        ],
+        [
+          25.34,
+          "have"
+        ],
+        [
+          25.52,
+          "time"
+        ],
+        [
+          25.82,
+          "to"
+        ],
+        [
+          26.04,
+          "study"
+        ],
+        [
+          26.36,
+          "electricity."
+        ],
+        [
+          27.68,
+          "His"
+        ],
+        [
+          28.26,
+          "most"
+        ],
+        [
+          28.46,
+          "exciting"
+        ],
+        [
+          29.04,
+          "tool"
+        ],
+        [
+          29.44,
+          "was"
+        ],
+        [
+          29.94,
+          "a"
+        ],
+        [
+          30.06,
+          "new"
+        ],
+        [
+          30.24,
+          "invention"
+        ],
+        [
+          30.74,
+          "called"
+        ],
+        [
+          31.14,
+          "a"
+        ],
+        [
+          31.38,
+          "Leiden"
+        ],
+        [
+          31.74,
+          "jar."
+        ],
+        [
+          32.88,
+          "It"
+        ],
+        [
+          33.1,
+          "was"
+        ],
+        [
+          33.2,
+          "a"
+        ],
+        [
+          33.4,
+          "glass"
+        ],
+        [
+          33.64,
+          "jar"
+        ],
+        [
+          34.06,
+          "lined"
+        ],
+        [
+          34.4,
+          "with"
+        ],
+        [
+          34.68,
+          "metal"
+        ],
+        [
+          34.92,
+          "foil,"
+        ],
+        [
+          35.96,
+          "and"
+        ],
+        [
+          35.98,
+          "it"
+        ],
+        [
+          36.1,
+          "could"
+        ],
+        [
+          36.22,
+          "store"
+        ],
+        [
+          36.66,
+          "electricity,"
+        ],
+        [
+          37.8,
+          "then"
+        ],
+        [
+          38.06,
+          "let"
+        ],
+        [
+          38.22,
+          "it"
+        ],
+        [
+          38.36,
+          "all"
+        ],
+        [
+          38.66,
+          "go"
+        ],
+        [
+          38.9,
+          "at"
+        ],
+        [
+          39.08,
+          "once"
+        ],
+        [
+          39.52,
+          "in"
+        ],
+        [
+          40.02,
+          "a"
+        ],
+        [
+          40.2,
+          "bright"
+        ],
+        [
+          40.44,
+          "spark"
+        ],
+        [
+          40.92,
+          "with"
+        ],
+        [
+          41.26,
+          "a"
+        ],
+        [
+          41.44,
+          "loud"
+        ],
+        [
+          41.78,
+          "crack."
+        ],
+        [
+          43.38,
+          "And"
+        ],
+        [
+          43.6,
+          "that"
+        ],
+        [
+          43.78,
+          "spark"
+        ],
+        [
+          44.3,
+          "reminded"
+        ],
+        [
+          44.88,
+          "Franklin"
+        ],
+        [
+          45.28,
+          "of"
+        ],
+        [
+          45.48,
+          "something."
+        ],
+        [
+          46.48,
+          "A"
+        ],
+        [
+          46.68,
+          "flash"
+        ],
+        [
+          46.92,
+          "of"
+        ],
+        [
+          47.12,
+          "light,"
+        ],
+        [
+          47.96,
+          "a"
+        ],
+        [
+          48.12,
+          "crack"
+        ],
+        [
+          48.4,
+          "of"
+        ],
+        [
+          48.58,
+          "noise,"
+        ],
+        [
+          49.5,
+          "a"
+        ],
+        [
+          49.72,
+          "sharp"
+        ],
+        [
+          50.06,
+          "smell"
+        ],
+        [
+          50.44,
+          "in"
+        ],
+        [
+          50.64,
+          "the"
+        ],
+        [
+          50.8,
+          "air."
+        ],
+        [
+          51.7,
+          "It"
+        ],
+        [
+          51.9,
+          "was"
+        ],
+        [
+          52.02,
+          "like"
+        ],
+        [
+          52.2,
+          "a"
+        ],
+        [
+          52.38,
+          "tiny"
+        ],
+        [
+          52.78,
+          "thunderstorm"
+        ],
+        [
+          53.5,
+          "in"
+        ],
+        [
+          53.7,
+          "a"
+        ],
+        [
+          53.84,
+          "jar."
+        ],
+        [
+          54.94,
+          "So"
+        ],
+        [
+          55.5,
+          "in"
+        ],
+        [
+          55.64,
+          "November,"
+        ],
+        [
+          56.3,
+          "1749,"
+        ],
+        [
+          58.0,
+          "he"
+        ],
+        [
+          58.12,
+          "wrote"
+        ],
+        [
+          58.32,
+          "a"
+        ],
+        [
+          58.5,
+          "list"
+        ],
+        [
+          58.72,
+          "in"
+        ],
+        [
+          58.92,
+          "his"
+        ],
+        [
+          59.04,
+          "notebook."
+        ],
+        [
+          60.72,
+          "12"
+        ],
+        [
+          60.72,
+          "ways"
+        ],
+        [
+          61.08,
+          "a"
+        ],
+        [
+          61.36,
+          "spark"
+        ],
+        [
+          61.78,
+          "was"
+        ],
+        [
+          62.38,
+          "just"
+        ],
+        [
+          62.72,
+          "like"
+        ],
+        [
+          63.08,
+          "lightning."
+        ],
+        [
+          64.54,
+          "They"
+        ],
+        [
+          64.72,
+          "both"
+        ],
+        [
+          64.96,
+          "gave"
+        ],
+        [
+          65.22,
+          "light"
+        ],
+        [
+          65.56,
+          "of"
+        ],
+        [
+          65.8,
+          "the"
+        ],
+        [
+          65.92,
+          "same"
+        ],
+        [
+          66.14,
+          "color."
+        ],
+        [
+          67.04,
+          "They"
+        ],
+        [
+          67.24,
+          "both"
+        ],
+        [
+          67.44,
+          "moved"
+        ],
+        [
+          67.94,
+          "in"
+        ],
+        [
+          68.16,
+          "crooked"
+        ],
+        [
+          68.4,
+          "lines."
+        ],
+        [
+          69.62,
+          "They"
+        ],
+        [
+          69.74,
+          "both"
+        ],
+        [
+          69.98,
+          "made"
+        ],
+        [
+          70.2,
+          "a"
+        ],
+        [
+          70.38,
+          "crack,"
+        ],
+        [
+          71.14,
+          "set"
+        ],
+        [
+          71.44,
+          "things"
+        ],
+        [
+          71.7,
+          "on"
+        ],
+        [
+          71.88,
+          "fire,"
+        ],
+        [
+          72.58,
+          "and"
+        ],
+        [
+          72.76,
+          "could"
+        ],
+        [
+          72.9,
+          "kill"
+        ],
+        [
+          73.18,
+          "animals."
+        ],
+        [
+          74.9,
+          "But"
+        ],
+        [
+          75.08,
+          "a"
+        ],
+        [
+          75.24,
+          "list"
+        ],
+        [
+          75.42,
+          "of"
+        ],
+        [
+          75.64,
+          "likenesses"
+        ],
+        [
+          76.4,
+          "isn't"
+        ],
+        [
+          76.72,
+          "proof."
+        ],
+        [
+          77.94,
+          "At"
+        ],
+        [
+          78.18,
+          "the"
+        ],
+        [
+          78.3,
+          "bottom"
+        ],
+        [
+          78.52,
+          "of"
+        ],
+        [
+          78.7,
+          "the"
+        ],
+        [
+          78.82,
+          "page,"
+        ],
+        [
+          79.8,
+          "Franklin"
+        ],
+        [
+          79.96,
+          "wrote"
+        ],
+        [
+          80.44,
+          "five"
+        ],
+        [
+          80.96,
+          "famous"
+        ],
+        [
+          81.6,
+          "words."
+        ],
+        [
+          83.06,
+          "Let"
+        ],
+        [
+          83.62,
+          "the"
+        ],
+        [
+          83.96,
+          "experiment"
+        ],
+        [
+          84.58,
+          "be"
+        ],
+        [
+          85.02,
+          "made."
+        ],
+        [
+          86.84,
+          "But"
+        ],
+        [
+          87.1,
+          "how"
+        ],
+        [
+          87.34,
+          "do"
+        ],
+        [
+          87.5,
+          "you"
+        ],
+        [
+          87.66,
+          "catch"
+        ],
+        [
+          87.94,
+          "a"
+        ],
+        [
+          88.16,
+          "bolt"
+        ],
+        [
+          88.32,
+          "of"
+        ],
+        [
+          88.48,
+          "lightning"
+        ],
+        [
+          88.88,
+          "without"
+        ],
+        [
+          89.68,
+          "it"
+        ],
+        [
+          89.92,
+          "killing"
+        ],
+        [
+          90.18,
+          "you?"
+        ]
+      ]
+    },
+    {
+      "part": 3,
+      "file": "hos_008_part03_a_kite_in_the_storm_v01.mp3",
+      "sha256": "94ca02f76daa22b3a138ecd0977f9e69cff2a71ca270f62b4962a8398758c086",
+      "duration_s": 134.56,
+      "match_rate_pct": 99.7,
+      "chapter_card": "A Kite in the Storm",
+      "card_in_film_s": 198.55,
+      "card_in_film": "3:18.55",
+      "vo_film_start_s": 200.45,
+      "vo_film_start": "3:20.45",
+      "vo_film_end_s": 335.01,
+      "vo_film_end": "5:35.01",
+      "last_word_s": 134.44,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Franklin had a plan.",
+          "start_s": 0.0,
+          "end_s": 1.2,
+          "film_s": 200.45,
+          "film": "3:20.45"
+        },
+        {
+          "i": 2,
+          "text": "Points, he had found, were very good at drawing electricity out of the air.",
+          "start_s": 2.34,
+          "end_s": 6.38,
+          "film_s": 202.79,
+          "film": "3:22.79"
+        },
+        {
+          "i": 3,
+          "text": "So he proposed putting a tall iron rod, sharp at the tip, on top of a high tower.",
+          "start_s": 6.66,
+          "end_s": 12.74,
+          "film_s": 207.11,
+          "film": "3:27.11"
+        },
+        {
+          "i": 4,
+          "text": "If lightning really was electricity, the rod should pull sparks out of a passing storm cloud.",
+          "start_s": 13.36,
+          "end_s": 19.0,
+          "film_s": 213.81,
+          "film": "3:33.81"
+        },
+        {
+          "i": 5,
+          "text": "He published the idea, and it crossed the ocean.",
+          "start_s": 19.86,
+          "end_s": 22.64,
+          "film_s": 220.31,
+          "film": "3:40.31"
+        },
+        {
+          "i": 6,
+          "text": "In May seventeen fifty-two, in a garden at Marly, near Paris, French scientists put up a tall pointed rod and tried it.",
+          "start_s": 23.62,
+          "end_s": 33.34,
+          "film_s": 224.07,
+          "film": "3:44.07"
+        },
+        {
+          "i": 7,
+          "text": "As a storm cloud passed, sparks jumped from the rod.",
+          "start_s": 33.86,
+          "end_s": 37.62,
+          "film_s": 234.31,
+          "film": "3:54.31"
+        },
+        {
+          "i": 8,
+          "text": "It worked.",
+          "start_s": 38.26,
+          "end_s": 38.92,
+          "film_s": 238.71,
+          "film": "3:58.71"
+        },
+        {
+          "i": 9,
+          "text": "But Franklin didn't know yet.",
+          "start_s": 39.98,
+          "end_s": 41.66,
+          "film_s": 240.43,
+          "film": "4:00.43"
+        },
+        {
+          "i": 10,
+          "text": "News took weeks to cross the Atlantic.",
+          "start_s": 42.6,
+          "end_s": 44.48,
+          "film_s": 243.05,
+          "film": "4:03.05"
+        },
+        {
+          "i": 11,
+          "text": "And Philadelphia had no tower tall enough.",
+          "start_s": 44.48,
+          "end_s": 47.92,
+          "film_s": 244.93,
+          "film": "4:04.93"
+        },
+        {
+          "i": 12,
+          "text": "So, about a month later, he had another idea.",
+          "start_s": 48.68,
+          "end_s": 51.84,
+          "film_s": 249.13,
+          "film": "4:09.13"
+        },
+        {
+          "i": 13,
+          "text": "A kite could fly higher than any steeple.",
+          "start_s": 52.7,
+          "end_s": 55.72,
+          "film_s": 253.15,
+          "film": "4:13.15"
+        },
+        {
+          "i": 14,
+          "text": "He made one from a silk handkerchief and two crossed sticks of cedar, so it would survive the rain.",
+          "start_s": 56.68,
+          "end_s": 62.96,
+          "film_s": 257.13,
+          "film": "4:17.13"
+        },
+        {
+          "i": 15,
+          "text": "On top he fixed a sharp wire.",
+          "start_s": 63.9,
+          "end_s": 66.56,
+          "film_s": 264.35,
+          "film": "4:24.35"
+        },
+        {
+          "i": 16,
+          "text": "The string was ordinary twine, and near his hand he tied an iron key, then a ribbon of silk to hold it by.",
+          "start_s": 67.36,
+          "end_s": 75.04,
+          "film_s": 267.81,
+          "film": "4:27.81"
+        },
+        {
+          "i": 17,
+          "text": "The silk was the clever part.",
+          "start_s": 75.9,
+          "end_s": 77.94,
+          "film_s": 276.35,
+          "film": "4:36.35"
+        },
+        {
+          "i": 18,
+          "text": "Wet twine would carry electricity, but dry silk would not.",
+          "start_s": 78.84,
+          "end_s": 82.98,
+          "film_s": 279.29,
+          "film": "4:39.29"
+        },
+        {
+          "i": 19,
+          "text": "So Franklin stood inside a shed, out of the rain, and kept the ribbon dry.",
+          "start_s": 84.14,
+          "end_s": 89.34,
+          "film_s": 284.59,
+          "film": "4:44.59"
+        },
+        {
+          "i": 20,
+          "text": "He told almost no one.",
+          "start_s": 90.18,
+          "end_s": 91.82,
+          "film_s": 290.63,
+          "film": "4:50.63"
+        },
+        {
+          "i": 21,
+          "text": "He was afraid people would laugh if it failed.",
+          "start_s": 91.82,
+          "end_s": 95.08,
+          "film_s": 292.27,
+          "film": "4:52.27"
+        },
+        {
+          "i": 22,
+          "text": "Only his son William, a young man of about twenty-one, came along to help.",
+          "start_s": 96.2,
+          "end_s": 101.32,
+          "film_s": 296.65,
+          "film": "4:56.65"
+        },
+        {
+          "i": 23,
+          "text": "William ran across the field and the kite climbed into the dark clouds.",
+          "start_s": 102.72,
+          "end_s": 107.08,
+          "film_s": 303.17,
+          "film": "5:03.17"
+        },
+        {
+          "i": 24,
+          "text": "Then they waited.",
+          "start_s": 107.92,
+          "end_s": 109.34,
+          "film_s": 308.37,
+          "film": "5:08.37"
+        },
+        {
+          "i": 25,
+          "text": "Imagine standing in that doorway, the storm overhead, holding a string that runs up into the sky.",
+          "start_s": 110.7,
+          "end_s": 117.74,
+          "film_s": 311.15,
+          "film": "5:11.15"
+        },
+        {
+          "i": 26,
+          "text": "What would you feel, waiting for something to happen?",
+          "start_s": 118.78,
+          "end_s": 122.02,
+          "film_s": 319.23,
+          "film": "5:19.23"
+        },
+        {
+          "i": 27,
+          "text": "For a long time, nothing did.",
+          "start_s": 123.14,
+          "end_s": 125.78,
+          "film_s": 323.59,
+          "film": "5:23.59"
+        },
+        {
+          "i": 28,
+          "text": "Then Franklin noticed the loose threads of the twine.",
+          "start_s": 126.94,
+          "end_s": 130.28,
+          "film_s": 327.39,
+          "film": "5:27.39"
+        },
+        {
+          "i": 29,
+          "text": "They were standing up on end, and pushing away from each other.",
+          "start_s": 130.94,
+          "end_s": 134.44,
+          "film_s": 331.39,
+          "film": "5:31.39"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "Franklin"
+        ],
+        [
+          0.42,
+          "had"
+        ],
+        [
+          0.68,
+          "a"
+        ],
+        [
+          0.84,
+          "plan."
+        ],
+        [
+          2.34,
+          "Points,"
+        ],
+        [
+          2.42,
+          "he"
+        ],
+        [
+          2.62,
+          "had"
+        ],
+        [
+          2.76,
+          "found,"
+        ],
+        [
+          3.46,
+          "were"
+        ],
+        [
+          3.78,
+          "very"
+        ],
+        [
+          4.16,
+          "good"
+        ],
+        [
+          4.44,
+          "at"
+        ],
+        [
+          4.64,
+          "drawing"
+        ],
+        [
+          4.96,
+          "electricity"
+        ],
+        [
+          5.4,
+          "out"
+        ],
+        [
+          5.8,
+          "of"
+        ],
+        [
+          5.98,
+          "the"
+        ],
+        [
+          6.08,
+          "air,"
+        ],
+        [
+          6.66,
+          "so"
+        ],
+        [
+          7.04,
+          "he"
+        ],
+        [
+          7.18,
+          "proposed"
+        ],
+        [
+          7.58,
+          "putting"
+        ],
+        [
+          7.98,
+          "a"
+        ],
+        [
+          8.18,
+          "tall"
+        ],
+        [
+          8.6,
+          "iron"
+        ],
+        [
+          9.0,
+          "rod"
+        ],
+        [
+          9.44,
+          "sharp"
+        ],
+        [
+          10.12,
+          "at"
+        ],
+        [
+          10.34,
+          "the"
+        ],
+        [
+          10.5,
+          "tip"
+        ],
+        [
+          10.82,
+          "on"
+        ],
+        [
+          11.4,
+          "top"
+        ],
+        [
+          11.58,
+          "of"
+        ],
+        [
+          11.74,
+          "a"
+        ],
+        [
+          11.84,
+          "high"
+        ],
+        [
+          12.18,
+          "tower."
+        ],
+        [
+          13.36,
+          "If"
+        ],
+        [
+          13.76,
+          "lightning"
+        ],
+        [
+          14.04,
+          "really"
+        ],
+        [
+          14.38,
+          "was"
+        ],
+        [
+          14.74,
+          "electricity,"
+        ],
+        [
+          15.96,
+          "the"
+        ],
+        [
+          16.14,
+          "rod"
+        ],
+        [
+          16.34,
+          "should"
+        ],
+        [
+          16.58,
+          "pull"
+        ],
+        [
+          16.86,
+          "sparks"
+        ],
+        [
+          17.34,
+          "out"
+        ],
+        [
+          17.62,
+          "of"
+        ],
+        [
+          17.74,
+          "a"
+        ],
+        [
+          17.84,
+          "passing"
+        ],
+        [
+          18.2,
+          "storm"
+        ],
+        [
+          18.62,
+          "cloud."
+        ],
+        [
+          19.86,
+          "He"
+        ],
+        [
+          20.1,
+          "published"
+        ],
+        [
+          20.44,
+          "the"
+        ],
+        [
+          20.66,
+          "idea"
+        ],
+        [
+          21.02,
+          "and"
+        ],
+        [
+          21.54,
+          "it"
+        ],
+        [
+          21.66,
+          "crossed"
+        ],
+        [
+          21.94,
+          "the"
+        ],
+        [
+          22.24,
+          "ocean."
+        ],
+        [
+          23.62,
+          "In"
+        ],
+        [
+          23.78,
+          "May"
+        ],
+        [
+          24.1,
+          "1752,"
+        ],
+        [
+          25.88,
+          "in"
+        ],
+        [
+          26.08,
+          "a"
+        ],
+        [
+          26.2,
+          "garden"
+        ],
+        [
+          26.62,
+          "at"
+        ],
+        [
+          27.04,
+          "Mali"
+        ],
+        [
+          27.38,
+          "near"
+        ],
+        [
+          27.9,
+          "Paris,"
+        ],
+        [
+          29.18,
+          "French"
+        ],
+        [
+          29.4,
+          "scientists"
+        ],
+        [
+          30.06,
+          "put"
+        ],
+        [
+          30.42,
+          "up"
+        ],
+        [
+          30.58,
+          "a"
+        ],
+        [
+          30.7,
+          "tall"
+        ],
+        [
+          31.1,
+          "pointed"
+        ],
+        [
+          31.56,
+          "rod"
+        ],
+        [
+          31.96,
+          "and"
+        ],
+        [
+          32.48,
+          "tried"
+        ],
+        [
+          32.8,
+          "it."
+        ],
+        [
+          33.86,
+          "As"
+        ],
+        [
+          34.16,
+          "a"
+        ],
+        [
+          34.32,
+          "storm"
+        ],
+        [
+          34.66,
+          "cloud"
+        ],
+        [
+          34.9,
+          "passed,"
+        ],
+        [
+          36.26,
+          "sparks"
+        ],
+        [
+          36.42,
+          "jumped"
+        ],
+        [
+          36.88,
+          "from"
+        ],
+        [
+          37.18,
+          "the"
+        ],
+        [
+          37.34,
+          "rod."
+        ],
+        [
+          38.26,
+          "It"
+        ],
+        [
+          38.48,
+          "worked."
+        ],
+        [
+          39.98,
+          "But"
+        ],
+        [
+          40.24,
+          "Franklin"
+        ],
+        [
+          40.6,
+          "didn't"
+        ],
+        [
+          41.0,
+          "know"
+        ],
+        [
+          41.24,
+          "yet."
+        ],
+        [
+          42.6,
+          "News"
+        ],
+        [
+          42.6,
+          "took"
+        ],
+        [
+          42.9,
+          "weeks"
+        ],
+        [
+          43.34,
+          "to"
+        ],
+        [
+          43.64,
+          "cross"
+        ],
+        [
+          43.84,
+          "the"
+        ],
+        [
+          44.04,
+          "Atlantic"
+        ],
+        [
+          44.48,
+          "and"
+        ],
+        [
+          45.2,
+          "Philadelphia"
+        ],
+        [
+          45.7,
+          "had"
+        ],
+        [
+          46.46,
+          "no"
+        ],
+        [
+          46.8,
+          "tower"
+        ],
+        [
+          47.16,
+          "tall"
+        ],
+        [
+          47.5,
+          "enough."
+        ],
+        [
+          48.68,
+          "So"
+        ],
+        [
+          49.12,
+          "about"
+        ],
+        [
+          49.44,
+          "a"
+        ],
+        [
+          49.62,
+          "month"
+        ],
+        [
+          49.82,
+          "later"
+        ],
+        [
+          50.34,
+          "he"
+        ],
+        [
+          50.8,
+          "had"
+        ],
+        [
+          50.96,
+          "another"
+        ],
+        [
+          51.34,
+          "idea."
+        ],
+        [
+          52.7,
+          "A"
+        ],
+        [
+          52.84,
+          "kite"
+        ],
+        [
+          53.34,
+          "could"
+        ],
+        [
+          53.82,
+          "fly"
+        ],
+        [
+          54.12,
+          "higher"
+        ],
+        [
+          54.52,
+          "than"
+        ],
+        [
+          54.76,
+          "any"
+        ],
+        [
+          55.06,
+          "steeple."
+        ],
+        [
+          56.68,
+          "He"
+        ],
+        [
+          56.9,
+          "made"
+        ],
+        [
+          57.18,
+          "one"
+        ],
+        [
+          57.48,
+          "from"
+        ],
+        [
+          57.76,
+          "a"
+        ],
+        [
+          57.88,
+          "silk"
+        ],
+        [
+          58.16,
+          "handkerchief"
+        ],
+        [
+          58.72,
+          "and"
+        ],
+        [
+          59.28,
+          "two"
+        ],
+        [
+          59.58,
+          "crossed"
+        ],
+        [
+          60.04,
+          "sticks"
+        ],
+        [
+          60.54,
+          "of"
+        ],
+        [
+          60.82,
+          "cedar"
+        ],
+        [
+          61.28,
+          "so"
+        ],
+        [
+          61.78,
+          "it"
+        ],
+        [
+          61.9,
+          "would"
+        ],
+        [
+          62.0,
+          "survive"
+        ],
+        [
+          62.4,
+          "the"
+        ],
+        [
+          62.66,
+          "rain."
+        ],
+        [
+          63.9,
+          "On"
+        ],
+        [
+          64.16,
+          "top"
+        ],
+        [
+          64.54,
+          "he"
+        ],
+        [
+          65.12,
+          "fixed"
+        ],
+        [
+          65.46,
+          "a"
+        ],
+        [
+          65.66,
+          "sharp"
+        ],
+        [
+          66.02,
+          "wire."
+        ],
+        [
+          67.36,
+          "The"
+        ],
+        [
+          67.58,
+          "string"
+        ],
+        [
+          67.92,
+          "was"
+        ],
+        [
+          68.16,
+          "ordinary"
+        ],
+        [
+          68.64,
+          "twine"
+        ],
+        [
+          69.24,
+          "and"
+        ],
+        [
+          69.74,
+          "near"
+        ],
+        [
+          69.98,
+          "his"
+        ],
+        [
+          70.18,
+          "hand"
+        ],
+        [
+          70.68,
+          "he"
+        ],
+        [
+          71.08,
+          "tied"
+        ],
+        [
+          71.3,
+          "an"
+        ],
+        [
+          71.56,
+          "iron"
+        ],
+        [
+          71.98,
+          "key"
+        ],
+        [
+          72.4,
+          "then"
+        ],
+        [
+          73.08,
+          "a"
+        ],
+        [
+          73.24,
+          "ribbon"
+        ],
+        [
+          73.46,
+          "of"
+        ],
+        [
+          73.64,
+          "silk"
+        ],
+        [
+          74.02,
+          "to"
+        ],
+        [
+          74.32,
+          "hold"
+        ],
+        [
+          74.54,
+          "it"
+        ],
+        [
+          74.72,
+          "by."
+        ],
+        [
+          75.9,
+          "The"
+        ],
+        [
+          76.26,
+          "silk"
+        ],
+        [
+          76.64,
+          "was"
+        ],
+        [
+          76.92,
+          "the"
+        ],
+        [
+          77.1,
+          "clever"
+        ],
+        [
+          77.34,
+          "part."
+        ],
+        [
+          78.84,
+          "Wet"
+        ],
+        [
+          78.94,
+          "twine"
+        ],
+        [
+          79.54,
+          "would"
+        ],
+        [
+          79.72,
+          "carry"
+        ],
+        [
+          80.02,
+          "electricity"
+        ],
+        [
+          80.64,
+          "but"
+        ],
+        [
+          81.46,
+          "dry"
+        ],
+        [
+          81.8,
+          "silk"
+        ],
+        [
+          82.32,
+          "would"
+        ],
+        [
+          82.6,
+          "not."
+        ],
+        [
+          84.14,
+          "So"
+        ],
+        [
+          84.34,
+          "Franklin"
+        ],
+        [
+          84.68,
+          "stood"
+        ],
+        [
+          85.14,
+          "inside"
+        ],
+        [
+          85.58,
+          "a"
+        ],
+        [
+          85.78,
+          "shed"
+        ],
+        [
+          86.12,
+          "out"
+        ],
+        [
+          86.68,
+          "of"
+        ],
+        [
+          86.86,
+          "the"
+        ],
+        [
+          87.0,
+          "rain"
+        ],
+        [
+          87.34,
+          "and"
+        ],
+        [
+          87.98,
+          "kept"
+        ],
+        [
+          88.26,
+          "the"
+        ],
+        [
+          88.54,
+          "ribbon"
+        ],
+        [
+          88.84,
+          "dry."
+        ],
+        [
+          90.18,
+          "He"
+        ],
+        [
+          90.52,
+          "told"
+        ],
+        [
+          90.84,
+          "almost"
+        ],
+        [
+          91.4,
+          "no"
+        ],
+        [
+          91.82,
+          "one."
+        ],
+        [
+          92.72,
+          "He"
+        ],
+        [
+          92.96,
+          "was"
+        ],
+        [
+          93.06,
+          "afraid"
+        ],
+        [
+          93.4,
+          "people"
+        ],
+        [
+          93.7,
+          "would"
+        ],
+        [
+          93.92,
+          "laugh"
+        ],
+        [
+          94.3,
+          "if"
+        ],
+        [
+          94.54,
+          "it"
+        ],
+        [
+          94.68,
+          "failed."
+        ],
+        [
+          96.2,
+          "Only"
+        ],
+        [
+          96.5,
+          "his"
+        ],
+        [
+          96.72,
+          "son"
+        ],
+        [
+          97.0,
+          "William,"
+        ],
+        [
+          97.88,
+          "a"
+        ],
+        [
+          98.04,
+          "young"
+        ],
+        [
+          98.24,
+          "man"
+        ],
+        [
+          98.56,
+          "of"
+        ],
+        [
+          98.74,
+          "about"
+        ],
+        [
+          98.98,
+          "21,"
+        ],
+        [
+          100.12,
+          "came"
+        ],
+        [
+          100.42,
+          "along"
+        ],
+        [
+          100.68,
+          "to"
+        ],
+        [
+          100.92,
+          "help."
+        ],
+        [
+          102.72,
+          "William"
+        ],
+        [
+          102.74,
+          "ran"
+        ],
+        [
+          103.12,
+          "across"
+        ],
+        [
+          103.44,
+          "the"
+        ],
+        [
+          103.66,
+          "field"
+        ],
+        [
+          104.04,
+          "and"
+        ],
+        [
+          104.58,
+          "the"
+        ],
+        [
+          104.72,
+          "kite"
+        ],
+        [
+          105.02,
+          "climbed"
+        ],
+        [
+          105.58,
+          "into"
+        ],
+        [
+          105.92,
+          "the"
+        ],
+        [
+          106.12,
+          "dark"
+        ],
+        [
+          106.42,
+          "clouds."
+        ],
+        [
+          107.92,
+          "Then"
+        ],
+        [
+          108.32,
+          "they"
+        ],
+        [
+          108.84,
+          "waited."
+        ],
+        [
+          110.7,
+          "Imagine"
+        ],
+        [
+          111.14,
+          "standing"
+        ],
+        [
+          111.72,
+          "in"
+        ],
+        [
+          112.04,
+          "that"
+        ],
+        [
+          112.2,
+          "doorway,"
+        ],
+        [
+          113.16,
+          "the"
+        ],
+        [
+          113.34,
+          "storm"
+        ],
+        [
+          113.72,
+          "overhead"
+        ],
+        [
+          114.36,
+          "holding"
+        ],
+        [
+          115.2,
+          "a"
+        ],
+        [
+          115.46,
+          "string"
+        ],
+        [
+          115.76,
+          "that"
+        ],
+        [
+          116.02,
+          "runs"
+        ],
+        [
+          116.3,
+          "up"
+        ],
+        [
+          116.76,
+          "into"
+        ],
+        [
+          117.16,
+          "the"
+        ],
+        [
+          117.36,
+          "sky."
+        ],
+        [
+          118.78,
+          "What"
+        ],
+        [
+          119.0,
+          "would"
+        ],
+        [
+          119.16,
+          "you"
+        ],
+        [
+          119.34,
+          "feel"
+        ],
+        [
+          119.74,
+          "waiting"
+        ],
+        [
+          120.6,
+          "for"
+        ],
+        [
+          121.06,
+          "something"
+        ],
+        [
+          121.34,
+          "to"
+        ],
+        [
+          121.6,
+          "happen?"
+        ],
+        [
+          123.14,
+          "For"
+        ],
+        [
+          123.44,
+          "a"
+        ],
+        [
+          123.58,
+          "long"
+        ],
+        [
+          123.8,
+          "time"
+        ],
+        [
+          124.4,
+          "nothing"
+        ],
+        [
+          125.06,
+          "did."
+        ],
+        [
+          126.94,
+          "Then"
+        ],
+        [
+          127.32,
+          "Franklin"
+        ],
+        [
+          127.76,
+          "noticed"
+        ],
+        [
+          128.26,
+          "the"
+        ],
+        [
+          128.6,
+          "loose"
+        ],
+        [
+          128.84,
+          "threads"
+        ],
+        [
+          129.32,
+          "of"
+        ],
+        [
+          129.58,
+          "the"
+        ],
+        [
+          129.72,
+          "twine."
+        ],
+        [
+          130.94,
+          "They"
+        ],
+        [
+          131.12,
+          "were"
+        ],
+        [
+          131.22,
+          "standing"
+        ],
+        [
+          131.58,
+          "up"
+        ],
+        [
+          131.86,
+          "on"
+        ],
+        [
+          132.06,
+          "end"
+        ],
+        [
+          132.5,
+          "and"
+        ],
+        [
+          132.92,
+          "pushing"
+        ],
+        [
+          133.32,
+          "away"
+        ],
+        [
+          133.68,
+          "from"
+        ],
+        [
+          133.92,
+          "each"
+        ],
+        [
+          134.12,
+          "other."
+        ]
+      ]
+    },
+    {
+      "part": 4,
+      "file": "hos_008_part04_the_spark_from_the_key_v01.mp3",
+      "sha256": "4f2d3ddc133a9de2d718ee951d7b0f62d70d567d78701ee73642a791eeba1e01",
+      "duration_s": 94.0,
+      "match_rate_pct": 99.1,
+      "chapter_card": "The Spark From the Key",
+      "card_in_film_s": 335.61,
+      "card_in_film": "5:35.61",
+      "vo_film_start_s": 337.51,
+      "vo_film_start": "5:37.51",
+      "vo_film_end_s": 431.51,
+      "vo_film_end": "7:11.51",
+      "last_word_s": 93.68,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Slowly, Franklin brought his knuckle close to the key.",
+          "start_s": 0.0,
+          "end_s": 3.46,
+          "film_s": 337.51,
+          "film": "5:37.51"
+        },
+        {
+          "i": 2,
+          "text": "A spark jumped across, with a tiny snap.",
+          "start_s": 4.5,
+          "end_s": 7.6,
+          "film_s": 342.01,
+          "film": "5:42.01"
+        },
+        {
+          "i": 3,
+          "text": "Exactly the kind of spark he had made a thousand times in his own room.",
+          "start_s": 8.2,
+          "end_s": 12.38,
+          "film_s": 345.71,
+          "film": "5:45.71"
+        },
+        {
+          "i": 4,
+          "text": "Then he touched the key to his Leyden jar, and filled it, with electricity from the sky.",
+          "start_s": 13.46,
+          "end_s": 19.64,
+          "film_s": 350.97,
+          "film": "5:50.97"
+        },
+        {
+          "i": 5,
+          "text": "It behaved in every way like the electricity he made with glass and silk.",
+          "start_s": 20.82,
+          "end_s": 25.18,
+          "film_s": 358.33,
+          "film": "5:58.33"
+        },
+        {
+          "i": 6,
+          "text": "Lightning and the spark in the jar were the same thing.",
+          "start_s": 25.18,
+          "end_s": 29.82,
+          "film_s": 362.69,
+          "film": "6:02.69"
+        },
+        {
+          "i": 7,
+          "text": "Electricity.",
+          "start_s": 30.32,
+          "end_s": 30.86,
+          "film_s": 367.83,
+          "film": "6:07.83"
+        },
+        {
+          "i": 8,
+          "text": "And here is the part that most people get wrong.",
+          "start_s": 32.48,
+          "end_s": 34.82,
+          "film_s": 369.99,
+          "film": "6:09.99"
+        },
+        {
+          "i": 9,
+          "text": "The kite was never struck by lightning.",
+          "start_s": 35.56,
+          "end_s": 37.9,
+          "film_s": 373.07,
+          "film": "6:13.07"
+        },
+        {
+          "i": 10,
+          "text": "If it had been, Franklin would almost certainly have died.",
+          "start_s": 38.42,
+          "end_s": 41.9,
+          "film_s": 375.93,
+          "film": "6:15.93"
+        },
+        {
+          "i": 11,
+          "text": "Instead, the kite gathered a little of the storm's electric charge, which ran quietly down the wet string to the key.",
+          "start_s": 42.66,
+          "end_s": 50.28,
+          "film_s": 380.17,
+          "film": "6:20.17"
+        },
+        {
+          "i": 12,
+          "text": "It was still dangerous.",
+          "start_s": 51.2,
+          "end_s": 52.7,
+          "film_s": 388.71,
+          "film": "6:28.71"
+        },
+        {
+          "i": 13,
+          "text": "The next summer, a scientist in Russia called Georg Richmann was trying a similar experiment with a rod during a storm, and he was killed.",
+          "start_s": 53.24,
+          "end_s": 62.34,
+          "film_s": 390.75,
+          "film": "6:30.75"
+        },
+        {
+          "i": 14,
+          "text": "Franklin had been careful, and lucky.",
+          "start_s": 63.34,
+          "end_s": 65.8,
+          "film_s": 400.85,
+          "film": "6:40.85"
+        },
+        {
+          "i": 15,
+          "text": "In October, Franklin published how to do the kite experiment in his own newspaper.",
+          "start_s": 67.0,
+          "end_s": 72.14,
+          "film_s": 404.51,
+          "film": "6:44.51"
+        },
+        {
+          "i": 16,
+          "text": "His letters were read at the Royal Society in London, and the next year it gave him its highest award, the Copley Medal.",
+          "start_s": 72.96,
+          "end_s": 80.12,
+          "film_s": 410.47,
+          "film": "6:50.47"
+        },
+        {
+          "i": 17,
+          "text": "But Franklin wasn't only interested in proving an idea.",
+          "start_s": 81.08,
+          "end_s": 84.22,
+          "film_s": 418.59,
+          "film": "6:58.59"
+        },
+        {
+          "i": 18,
+          "text": "He wanted to use it.",
+          "start_s": 84.74,
+          "end_s": 86.24,
+          "film_s": 422.25,
+          "film": "7:02.25"
+        },
+        {
+          "i": 19,
+          "text": "If a pointed rod could pull electricity from the sky, could it also keep lightning away from people's homes?",
+          "start_s": 86.98,
+          "end_s": 93.68,
+          "film_s": 424.49,
+          "film": "7:04.49"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "Slowly"
+        ],
+        [
+          0.52,
+          "Franklin"
+        ],
+        [
+          1.08,
+          "brought"
+        ],
+        [
+          1.5,
+          "his"
+        ],
+        [
+          1.7,
+          "knuckle"
+        ],
+        [
+          2.12,
+          "close"
+        ],
+        [
+          2.7,
+          "to"
+        ],
+        [
+          3.04,
+          "the"
+        ],
+        [
+          3.14,
+          "key."
+        ],
+        [
+          4.5,
+          "A"
+        ],
+        [
+          4.7,
+          "spark"
+        ],
+        [
+          5.08,
+          "jumped"
+        ],
+        [
+          5.42,
+          "across"
+        ],
+        [
+          5.84,
+          "with"
+        ],
+        [
+          6.4,
+          "a"
+        ],
+        [
+          6.58,
+          "tiny"
+        ],
+        [
+          6.9,
+          "snap,"
+        ],
+        [
+          8.2,
+          "exactly"
+        ],
+        [
+          8.6,
+          "the"
+        ],
+        [
+          9.0,
+          "kind"
+        ],
+        [
+          9.18,
+          "of"
+        ],
+        [
+          9.32,
+          "spark"
+        ],
+        [
+          9.64,
+          "he"
+        ],
+        [
+          9.9,
+          "had"
+        ],
+        [
+          9.98,
+          "made"
+        ],
+        [
+          10.2,
+          "a"
+        ],
+        [
+          10.34,
+          "thousand"
+        ],
+        [
+          10.66,
+          "times"
+        ],
+        [
+          11.2,
+          "in"
+        ],
+        [
+          11.46,
+          "his"
+        ],
+        [
+          11.6,
+          "own"
+        ],
+        [
+          11.82,
+          "room."
+        ],
+        [
+          13.46,
+          "Then"
+        ],
+        [
+          13.84,
+          "he"
+        ],
+        [
+          14.1,
+          "touched"
+        ],
+        [
+          14.32,
+          "the"
+        ],
+        [
+          14.62,
+          "key"
+        ],
+        [
+          14.82,
+          "to"
+        ],
+        [
+          15.02,
+          "his"
+        ],
+        [
+          15.18,
+          "laden"
+        ],
+        [
+          15.64,
+          "jar"
+        ],
+        [
+          15.98,
+          "and"
+        ],
+        [
+          16.76,
+          "filled"
+        ],
+        [
+          17.12,
+          "it"
+        ],
+        [
+          17.54,
+          "with"
+        ],
+        [
+          18.0,
+          "electricity"
+        ],
+        [
+          18.48,
+          "from"
+        ],
+        [
+          19.04,
+          "the"
+        ],
+        [
+          19.24,
+          "sky."
+        ],
+        [
+          20.82,
+          "It"
+        ],
+        [
+          21.2,
+          "behaved"
+        ],
+        [
+          21.52,
+          "in"
+        ],
+        [
+          21.8,
+          "every"
+        ],
+        [
+          22.14,
+          "way"
+        ],
+        [
+          22.5,
+          "like"
+        ],
+        [
+          22.74,
+          "the"
+        ],
+        [
+          22.9,
+          "electricity"
+        ],
+        [
+          23.28,
+          "he"
+        ],
+        [
+          23.64,
+          "made"
+        ],
+        [
+          23.9,
+          "with"
+        ],
+        [
+          24.12,
+          "glass"
+        ],
+        [
+          24.48,
+          "and"
+        ],
+        [
+          24.76,
+          "silk,"
+        ],
+        [
+          25.18,
+          "lightning"
+        ],
+        [
+          26.14,
+          "and"
+        ],
+        [
+          26.84,
+          "the"
+        ],
+        [
+          26.94,
+          "spark"
+        ],
+        [
+          27.38,
+          "in"
+        ],
+        [
+          27.64,
+          "the"
+        ],
+        [
+          27.78,
+          "jar"
+        ],
+        [
+          28.2,
+          "were"
+        ],
+        [
+          28.68,
+          "the"
+        ],
+        [
+          28.84,
+          "same"
+        ],
+        [
+          29.14,
+          "thing,"
+        ],
+        [
+          30.32,
+          "electricity."
+        ],
+        [
+          32.48,
+          "And"
+        ],
+        [
+          32.58,
+          "here"
+        ],
+        [
+          32.8,
+          "is"
+        ],
+        [
+          32.92,
+          "the"
+        ],
+        [
+          33.08,
+          "part"
+        ],
+        [
+          33.34,
+          "that"
+        ],
+        [
+          33.52,
+          "most"
+        ],
+        [
+          33.76,
+          "people"
+        ],
+        [
+          34.04,
+          "get"
+        ],
+        [
+          34.36,
+          "wrong."
+        ],
+        [
+          35.56,
+          "The"
+        ],
+        [
+          35.68,
+          "kite"
+        ],
+        [
+          36.02,
+          "was"
+        ],
+        [
+          36.32,
+          "never"
+        ],
+        [
+          36.76,
+          "struck"
+        ],
+        [
+          37.14,
+          "by"
+        ],
+        [
+          37.46,
+          "lightning."
+        ],
+        [
+          38.42,
+          "If"
+        ],
+        [
+          38.62,
+          "it"
+        ],
+        [
+          38.72,
+          "had"
+        ],
+        [
+          38.94,
+          "been"
+        ],
+        [
+          39.34,
+          "Franklin"
+        ],
+        [
+          39.98,
+          "would"
+        ],
+        [
+          40.28,
+          "almost"
+        ],
+        [
+          40.58,
+          "certainly"
+        ],
+        [
+          41.1,
+          "have"
+        ],
+        [
+          41.34,
+          "died."
+        ],
+        [
+          42.66,
+          "Instead"
+        ],
+        [
+          43.16,
+          "the"
+        ],
+        [
+          43.68,
+          "kite"
+        ],
+        [
+          43.98,
+          "gathered"
+        ],
+        [
+          44.42,
+          "a"
+        ],
+        [
+          44.6,
+          "little"
+        ],
+        [
+          44.76,
+          "of"
+        ],
+        [
+          44.92,
+          "the"
+        ],
+        [
+          45.1,
+          "storm's"
+        ],
+        [
+          45.56,
+          "electric"
+        ],
+        [
+          45.94,
+          "charge"
+        ],
+        [
+          46.56,
+          "which"
+        ],
+        [
+          47.14,
+          "ran"
+        ],
+        [
+          47.46,
+          "quietly"
+        ],
+        [
+          48.12,
+          "down"
+        ],
+        [
+          48.56,
+          "the"
+        ],
+        [
+          48.78,
+          "wet"
+        ],
+        [
+          49.02,
+          "string"
+        ],
+        [
+          49.46,
+          "to"
+        ],
+        [
+          49.76,
+          "the"
+        ],
+        [
+          49.92,
+          "key."
+        ],
+        [
+          51.2,
+          "It"
+        ],
+        [
+          51.64,
+          "was"
+        ],
+        [
+          51.74,
+          "still"
+        ],
+        [
+          52.06,
+          "dangerous."
+        ],
+        [
+          53.24,
+          "The"
+        ],
+        [
+          53.42,
+          "next"
+        ],
+        [
+          53.66,
+          "summer"
+        ],
+        [
+          54.02,
+          "a"
+        ],
+        [
+          54.42,
+          "scientist"
+        ],
+        [
+          54.84,
+          "in"
+        ],
+        [
+          55.2,
+          "Russia"
+        ],
+        [
+          55.56,
+          "called"
+        ],
+        [
+          55.92,
+          "Georg"
+        ],
+        [
+          56.42,
+          "Rickman"
+        ],
+        [
+          57.02,
+          "was"
+        ],
+        [
+          57.5,
+          "trying"
+        ],
+        [
+          57.8,
+          "a"
+        ],
+        [
+          58.0,
+          "similar"
+        ],
+        [
+          58.34,
+          "experiment"
+        ],
+        [
+          58.92,
+          "with"
+        ],
+        [
+          59.22,
+          "a"
+        ],
+        [
+          59.36,
+          "rod"
+        ],
+        [
+          59.7,
+          "during"
+        ],
+        [
+          60.14,
+          "a"
+        ],
+        [
+          60.42,
+          "storm"
+        ],
+        [
+          60.78,
+          "and"
+        ],
+        [
+          61.48,
+          "he"
+        ],
+        [
+          61.6,
+          "was"
+        ],
+        [
+          61.76,
+          "killed."
+        ],
+        [
+          63.34,
+          "Franklin"
+        ],
+        [
+          63.56,
+          "had"
+        ],
+        [
+          63.84,
+          "been"
+        ],
+        [
+          64.02,
+          "careful"
+        ],
+        [
+          64.56,
+          "and"
+        ],
+        [
+          65.42,
+          "lucky."
+        ],
+        [
+          67.0,
+          "In"
+        ],
+        [
+          67.36,
+          "October"
+        ],
+        [
+          67.82,
+          "Franklin"
+        ],
+        [
+          68.64,
+          "published"
+        ],
+        [
+          69.22,
+          "how"
+        ],
+        [
+          69.5,
+          "to"
+        ],
+        [
+          69.68,
+          "do"
+        ],
+        [
+          69.92,
+          "the"
+        ],
+        [
+          70.18,
+          "kite"
+        ],
+        [
+          70.34,
+          "experiment"
+        ],
+        [
+          70.86,
+          "in"
+        ],
+        [
+          71.22,
+          "his"
+        ],
+        [
+          71.34,
+          "own"
+        ],
+        [
+          71.62,
+          "newspaper."
+        ],
+        [
+          72.96,
+          "His"
+        ],
+        [
+          73.16,
+          "letters"
+        ],
+        [
+          73.54,
+          "were"
+        ],
+        [
+          73.78,
+          "read"
+        ],
+        [
+          74.08,
+          "at"
+        ],
+        [
+          74.22,
+          "the"
+        ],
+        [
+          74.34,
+          "Royal"
+        ],
+        [
+          74.56,
+          "Society"
+        ],
+        [
+          75.06,
+          "in"
+        ],
+        [
+          75.44,
+          "London"
+        ],
+        [
+          75.84,
+          "and"
+        ],
+        [
+          76.42,
+          "the"
+        ],
+        [
+          76.52,
+          "next"
+        ],
+        [
+          76.82,
+          "year"
+        ],
+        [
+          77.12,
+          "it"
+        ],
+        [
+          77.28,
+          "gave"
+        ],
+        [
+          77.46,
+          "him"
+        ],
+        [
+          77.64,
+          "its"
+        ],
+        [
+          77.8,
+          "highest"
+        ],
+        [
+          78.26,
+          "award,"
+        ],
+        [
+          79.3,
+          "the"
+        ],
+        [
+          79.42,
+          "Copley"
+        ],
+        [
+          79.94,
+          "Medal."
+        ],
+        [
+          81.08,
+          "But"
+        ],
+        [
+          81.42,
+          "Franklin"
+        ],
+        [
+          81.82,
+          "wasn't"
+        ],
+        [
+          82.2,
+          "only"
+        ],
+        [
+          82.6,
+          "interested"
+        ],
+        [
+          82.92,
+          "in"
+        ],
+        [
+          83.22,
+          "proving"
+        ],
+        [
+          83.6,
+          "an"
+        ],
+        [
+          83.84,
+          "idea,"
+        ],
+        [
+          84.74,
+          "he"
+        ],
+        [
+          84.92,
+          "wanted"
+        ],
+        [
+          85.22,
+          "to"
+        ],
+        [
+          85.52,
+          "use"
+        ],
+        [
+          85.84,
+          "it."
+        ],
+        [
+          86.98,
+          "If"
+        ],
+        [
+          87.1,
+          "a"
+        ],
+        [
+          87.22,
+          "pointed"
+        ],
+        [
+          87.7,
+          "rod"
+        ],
+        [
+          88.12,
+          "could"
+        ],
+        [
+          88.44,
+          "pull"
+        ],
+        [
+          88.88,
+          "electricity"
+        ],
+        [
+          89.36,
+          "from"
+        ],
+        [
+          89.8,
+          "the"
+        ],
+        [
+          89.96,
+          "sky,"
+        ],
+        [
+          91.1,
+          "could"
+        ],
+        [
+          91.16,
+          "it"
+        ],
+        [
+          91.26,
+          "also"
+        ],
+        [
+          91.54,
+          "keep"
+        ],
+        [
+          91.84,
+          "lightning"
+        ],
+        [
+          92.22,
+          "away"
+        ],
+        [
+          92.56,
+          "from"
+        ],
+        [
+          92.84,
+          "people's"
+        ],
+        [
+          93.36,
+          "homes?"
+        ]
+      ]
+    },
+    {
+      "part": 5,
+      "file": "hos_008_part05_the_rod_on_every_roof_v01b.mp3",
+      "sha256": "e5e86140d0b7e5598eb8eeca39d0f260c2dcc9b698b36c119a8c51283c990c38",
+      "duration_s": 130.78,
+      "match_rate_pct": 100.0,
+      "chapter_card": "The Rod on Every Roof",
+      "card_in_film_s": 432.11,
+      "card_in_film": "7:12.11",
+      "vo_film_start_s": 434.01,
+      "vo_film_start": "7:14.01",
+      "vo_film_end_s": 564.79,
+      "vo_film_end": "9:24.79",
+      "last_word_s": 130.12,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "In September seventeen fifty-two, Franklin put an iron rod on top of his own house.",
+          "start_s": 0.0,
+          "end_s": 5.48,
+          "film_s": 434.01,
+          "film": "7:14.01"
+        },
+        {
+          "i": 2,
+          "text": "He ran a wire from it into the house and hung two little bells by the stairs.",
+          "start_s": 5.98,
+          "end_s": 10.3,
+          "film_s": 439.99,
+          "film": "7:19.99"
+        },
+        {
+          "i": 3,
+          "text": "Whenever a storm cloud passed overhead, the bells rang on their own.",
+          "start_s": 11.08,
+          "end_s": 15.32,
+          "film_s": 445.09,
+          "film": "7:25.09"
+        },
+        {
+          "i": 4,
+          "text": "Then he told everyone how to protect their homes.",
+          "start_s": 15.92,
+          "end_s": 18.5,
+          "film_s": 449.93,
+          "film": "7:29.93"
+        },
+        {
+          "i": 5,
+          "text": "In his popular yearly almanac, Poor Richard, he printed simple instructions.",
+          "start_s": 19.3,
+          "end_s": 24.52,
+          "film_s": 453.31,
+          "film": "7:33.31"
+        },
+        {
+          "i": 6,
+          "text": "Fix an iron rod up the outside wall, with a sharp point high above the roof, and the other end buried deep in damp ground.",
+          "start_s": 25.24,
+          "end_s": 33.32,
+          "film_s": 459.25,
+          "film": "7:39.25"
+        },
+        {
+          "i": 7,
+          "text": "Here's how it works.",
+          "start_s": 34.02,
+          "end_s": 34.9,
+          "film_s": 468.03,
+          "film": "7:48.03"
+        },
+        {
+          "i": 8,
+          "text": "Lightning is a giant spark, hotter than the surface of the Sun.",
+          "start_s": 35.84,
+          "end_s": 39.66,
+          "film_s": 469.85,
+          "film": "7:49.85"
+        },
+        {
+          "i": 9,
+          "text": "It's looking for the easiest path to the ground.",
+          "start_s": 40.3,
+          "end_s": 42.76,
+          "film_s": 474.31,
+          "film": "7:54.31"
+        },
+        {
+          "i": 10,
+          "text": "A wooden roof or a stone steeple is a terrible path, so it bursts into flame or cracks apart.",
+          "start_s": 43.46,
+          "end_s": 49.72,
+          "film_s": 477.47,
+          "film": "7:57.47"
+        },
+        {
+          "i": 11,
+          "text": "But a metal rod is an easy path.",
+          "start_s": 50.32,
+          "end_s": 52.9,
+          "film_s": 484.33,
+          "film": "8:04.33"
+        },
+        {
+          "i": 12,
+          "text": "So the lightning takes the rod, round the outside of the building, and goes harmlessly into the earth.",
+          "start_s": 53.3,
+          "end_s": 59.14,
+          "film_s": 487.31,
+          "film": "8:07.31"
+        },
+        {
+          "i": 13,
+          "text": "Franklin never patented his lightning rod.",
+          "start_s": 60.28,
+          "end_s": 62.38,
+          "film_s": 494.29,
+          "film": "8:14.29"
+        },
+        {
+          "i": 14,
+          "text": "He wanted everyone to have it.",
+          "start_s": 62.84,
+          "end_s": 64.46,
+          "film_s": 496.85,
+          "film": "8:16.85"
+        },
+        {
+          "i": 15,
+          "text": "Within a few years, rods were going up on churches, houses and ships' masts.",
+          "start_s": 64.94,
+          "end_s": 69.88,
+          "film_s": 498.95,
+          "film": "8:18.95"
+        },
+        {
+          "i": 16,
+          "text": "And one by one, church towers became safer places to stand.",
+          "start_s": 70.58,
+          "end_s": 74.6,
+          "film_s": 504.59,
+          "film": "8:24.59"
+        },
+        {
+          "i": 17,
+          "text": "Why was this so groundbreaking?",
+          "start_s": 75.56,
+          "end_s": 76.92,
+          "film_s": 509.57,
+          "film": "8:29.57"
+        },
+        {
+          "i": 18,
+          "text": "Because it was one of the very first times an idea from a laboratory reached out and protected ordinary people from one of nature's deadliest forces.",
+          "start_s": 77.58,
+          "end_s": 86.74,
+          "film_s": 511.59,
+          "film": "8:31.59"
+        },
+        {
+          "i": 19,
+          "text": "It showed that the wild things in the sky follow rules, and that once you understand the rules, you can stay safe.",
+          "start_s": 87.48,
+          "end_s": 94.32,
+          "film_s": 521.49,
+          "film": "8:41.49"
+        },
+        {
+          "i": 20,
+          "text": "So next time a storm rolls in, look up at the tallest building you can see.",
+          "start_s": 95.16,
+          "end_s": 99.22,
+          "film_s": 529.17,
+          "film": "8:49.17"
+        },
+        {
+          "i": 21,
+          "text": "There's a good chance you'll spot a thin metal rod at the very top.",
+          "start_s": 99.68,
+          "end_s": 103.38,
+          "film_s": 533.69,
+          "film": "8:53.69"
+        },
+        {
+          "i": 22,
+          "text": "Some tall towers are struck by lightning more than twenty times in a single year, and stay standing.",
+          "start_s": 104.1,
+          "end_s": 109.94,
+          "film_s": 538.11,
+          "film": "8:58.11"
+        },
+        {
+          "i": 23,
+          "text": "A kite, a key and a jar.",
+          "start_s": 110.96,
+          "end_s": 113.32,
+          "film_s": 544.97,
+          "film": "9:04.97"
+        },
+        {
+          "i": 24,
+          "text": "Together, they took lightning out of the realm of mystery, and put a little piece of it on every roof.",
+          "start_s": 114.06,
+          "end_s": 119.32,
+          "film_s": 548.07,
+          "film": "9:08.07"
+        },
+        {
+          "i": 25,
+          "text": "Long before Franklin, a young man in an English garden asked a different question about the sky.",
+          "start_s": 120.46,
+          "end_s": 126.0,
+          "film_s": 554.47,
+          "film": "9:14.47"
+        },
+        {
+          "i": 26,
+          "text": "If an apple falls to the ground, why doesn't the Moon?",
+          "start_s": 126.9,
+          "end_s": 130.12,
+          "film_s": 560.91,
+          "film": "9:20.91"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "In"
+        ],
+        [
+          0.22,
+          "September"
+        ],
+        [
+          0.66,
+          "1752,"
+        ],
+        [
+          2.68,
+          "Franklin"
+        ],
+        [
+          2.88,
+          "put"
+        ],
+        [
+          3.2,
+          "an"
+        ],
+        [
+          3.4,
+          "iron"
+        ],
+        [
+          3.66,
+          "rod"
+        ],
+        [
+          4.02,
+          "on"
+        ],
+        [
+          4.24,
+          "top"
+        ],
+        [
+          4.44,
+          "of"
+        ],
+        [
+          4.6,
+          "his"
+        ],
+        [
+          4.7,
+          "own"
+        ],
+        [
+          4.94,
+          "house."
+        ],
+        [
+          5.98,
+          "He"
+        ],
+        [
+          6.12,
+          "ran"
+        ],
+        [
+          6.28,
+          "a"
+        ],
+        [
+          6.42,
+          "wire"
+        ],
+        [
+          6.7,
+          "from"
+        ],
+        [
+          6.92,
+          "it"
+        ],
+        [
+          7.1,
+          "into"
+        ],
+        [
+          7.32,
+          "the"
+        ],
+        [
+          7.5,
+          "house"
+        ],
+        [
+          7.82,
+          "and"
+        ],
+        [
+          8.3,
+          "hung"
+        ],
+        [
+          8.46,
+          "two"
+        ],
+        [
+          8.78,
+          "little"
+        ],
+        [
+          9.1,
+          "bells"
+        ],
+        [
+          9.34,
+          "by"
+        ],
+        [
+          9.68,
+          "the"
+        ],
+        [
+          9.82,
+          "stairs."
+        ],
+        [
+          11.08,
+          "Whenever"
+        ],
+        [
+          11.38,
+          "a"
+        ],
+        [
+          11.64,
+          "storm"
+        ],
+        [
+          11.96,
+          "cloud"
+        ],
+        [
+          12.3,
+          "passed"
+        ],
+        [
+          12.7,
+          "overhead,"
+        ],
+        [
+          13.76,
+          "the"
+        ],
+        [
+          13.86,
+          "bells"
+        ],
+        [
+          14.14,
+          "rang"
+        ],
+        [
+          14.52,
+          "on"
+        ],
+        [
+          14.76,
+          "their"
+        ],
+        [
+          14.94,
+          "own."
+        ],
+        [
+          15.92,
+          "Then"
+        ],
+        [
+          16.18,
+          "he"
+        ],
+        [
+          16.46,
+          "told"
+        ],
+        [
+          16.68,
+          "everyone"
+        ],
+        [
+          17.16,
+          "how"
+        ],
+        [
+          17.42,
+          "to"
+        ],
+        [
+          17.58,
+          "protect"
+        ],
+        [
+          17.86,
+          "their"
+        ],
+        [
+          18.12,
+          "homes."
+        ],
+        [
+          19.3,
+          "In"
+        ],
+        [
+          19.42,
+          "his"
+        ],
+        [
+          19.62,
+          "popular"
+        ],
+        [
+          20.12,
+          "yearly"
+        ],
+        [
+          20.56,
+          "almanac,"
+        ],
+        [
+          21.62,
+          "Poor"
+        ],
+        [
+          21.82,
+          "Richard,"
+        ],
+        [
+          22.88,
+          "he"
+        ],
+        [
+          23.04,
+          "printed"
+        ],
+        [
+          23.38,
+          "simple"
+        ],
+        [
+          23.82,
+          "instructions."
+        ],
+        [
+          25.24,
+          "Fix"
+        ],
+        [
+          25.54,
+          "an"
+        ],
+        [
+          25.8,
+          "iron"
+        ],
+        [
+          26.08,
+          "rod"
+        ],
+        [
+          26.42,
+          "up"
+        ],
+        [
+          26.72,
+          "the"
+        ],
+        [
+          26.84,
+          "outside"
+        ],
+        [
+          27.22,
+          "wall"
+        ],
+        [
+          27.68,
+          "with"
+        ],
+        [
+          28.16,
+          "a"
+        ],
+        [
+          28.32,
+          "sharp"
+        ],
+        [
+          28.58,
+          "point"
+        ],
+        [
+          29.02,
+          "high"
+        ],
+        [
+          29.44,
+          "above"
+        ],
+        [
+          29.66,
+          "the"
+        ],
+        [
+          29.84,
+          "roof"
+        ],
+        [
+          30.16,
+          "and"
+        ],
+        [
+          30.8,
+          "the"
+        ],
+        [
+          30.9,
+          "other"
+        ],
+        [
+          31.1,
+          "end"
+        ],
+        [
+          31.48,
+          "buried"
+        ],
+        [
+          31.76,
+          "deep"
+        ],
+        [
+          32.18,
+          "in"
+        ],
+        [
+          32.44,
+          "damp"
+        ],
+        [
+          32.7,
+          "ground."
+        ],
+        [
+          34.02,
+          "Here's"
+        ],
+        [
+          34.22,
+          "how"
+        ],
+        [
+          34.32,
+          "it"
+        ],
+        [
+          34.44,
+          "works."
+        ],
+        [
+          35.84,
+          "Lightning"
+        ],
+        [
+          35.96,
+          "is"
+        ],
+        [
+          36.4,
+          "a"
+        ],
+        [
+          36.58,
+          "giant"
+        ],
+        [
+          36.96,
+          "spark"
+        ],
+        [
+          37.54,
+          "hotter"
+        ],
+        [
+          38.24,
+          "than"
+        ],
+        [
+          38.6,
+          "the"
+        ],
+        [
+          38.74,
+          "surface"
+        ],
+        [
+          38.98,
+          "of"
+        ],
+        [
+          39.24,
+          "the"
+        ],
+        [
+          39.4,
+          "sun."
+        ],
+        [
+          40.3,
+          "It's"
+        ],
+        [
+          40.58,
+          "looking"
+        ],
+        [
+          40.78,
+          "for"
+        ],
+        [
+          41.04,
+          "the"
+        ],
+        [
+          41.18,
+          "easiest"
+        ],
+        [
+          41.58,
+          "path"
+        ],
+        [
+          41.98,
+          "to"
+        ],
+        [
+          42.24,
+          "the"
+        ],
+        [
+          42.34,
+          "ground."
+        ],
+        [
+          43.46,
+          "A"
+        ],
+        [
+          43.56,
+          "wooden"
+        ],
+        [
+          43.74,
+          "roof"
+        ],
+        [
+          44.18,
+          "or"
+        ],
+        [
+          44.46,
+          "a"
+        ],
+        [
+          44.62,
+          "stone"
+        ],
+        [
+          44.96,
+          "steeple"
+        ],
+        [
+          45.64,
+          "is"
+        ],
+        [
+          46.0,
+          "a"
+        ],
+        [
+          46.16,
+          "terrible"
+        ],
+        [
+          46.54,
+          "path"
+        ],
+        [
+          47.04,
+          "so"
+        ],
+        [
+          47.56,
+          "it"
+        ],
+        [
+          47.7,
+          "bursts"
+        ],
+        [
+          48.0,
+          "into"
+        ],
+        [
+          48.32,
+          "flame"
+        ],
+        [
+          48.68,
+          "or"
+        ],
+        [
+          48.94,
+          "cracks"
+        ],
+        [
+          49.24,
+          "apart."
+        ],
+        [
+          50.32,
+          "But"
+        ],
+        [
+          50.64,
+          "a"
+        ],
+        [
+          50.78,
+          "metal"
+        ],
+        [
+          51.14,
+          "rod"
+        ],
+        [
+          51.5,
+          "is"
+        ],
+        [
+          51.98,
+          "an"
+        ],
+        [
+          52.1,
+          "easy"
+        ],
+        [
+          52.42,
+          "path,"
+        ],
+        [
+          53.3,
+          "so"
+        ],
+        [
+          53.56,
+          "the"
+        ],
+        [
+          53.7,
+          "lightning"
+        ],
+        [
+          54.02,
+          "takes"
+        ],
+        [
+          54.34,
+          "the"
+        ],
+        [
+          54.62,
+          "rod"
+        ],
+        [
+          54.94,
+          "round"
+        ],
+        [
+          55.56,
+          "the"
+        ],
+        [
+          55.72,
+          "outside"
+        ],
+        [
+          56.1,
+          "of"
+        ],
+        [
+          56.26,
+          "the"
+        ],
+        [
+          56.36,
+          "building"
+        ],
+        [
+          56.72,
+          "and"
+        ],
+        [
+          57.28,
+          "goes"
+        ],
+        [
+          57.5,
+          "harmlessly"
+        ],
+        [
+          58.14,
+          "into"
+        ],
+        [
+          58.6,
+          "the"
+        ],
+        [
+          58.8,
+          "earth."
+        ],
+        [
+          60.28,
+          "Franklin"
+        ],
+        [
+          60.44,
+          "never"
+        ],
+        [
+          60.9,
+          "patented"
+        ],
+        [
+          61.42,
+          "his"
+        ],
+        [
+          61.66,
+          "lightning"
+        ],
+        [
+          62.0,
+          "rod."
+        ],
+        [
+          62.84,
+          "He"
+        ],
+        [
+          62.94,
+          "wanted"
+        ],
+        [
+          63.22,
+          "everyone"
+        ],
+        [
+          63.58,
+          "to"
+        ],
+        [
+          63.88,
+          "have"
+        ],
+        [
+          64.06,
+          "it."
+        ],
+        [
+          64.94,
+          "Within"
+        ],
+        [
+          65.08,
+          "a"
+        ],
+        [
+          65.24,
+          "few"
+        ],
+        [
+          65.44,
+          "years,"
+        ],
+        [
+          66.34,
+          "rods"
+        ],
+        [
+          66.5,
+          "were"
+        ],
+        [
+          66.7,
+          "going"
+        ],
+        [
+          66.92,
+          "up"
+        ],
+        [
+          67.14,
+          "on"
+        ],
+        [
+          67.34,
+          "churches,"
+        ],
+        [
+          68.3,
+          "houses,"
+        ],
+        [
+          68.92,
+          "and"
+        ],
+        [
+          69.02,
+          "ships'"
+        ],
+        [
+          69.58,
+          "masts."
+        ],
+        [
+          70.58,
+          "And"
+        ],
+        [
+          70.68,
+          "one"
+        ],
+        [
+          70.9,
+          "by"
+        ],
+        [
+          71.08,
+          "one,"
+        ],
+        [
+          71.82,
+          "church"
+        ],
+        [
+          72.1,
+          "towers"
+        ],
+        [
+          72.64,
+          "became"
+        ],
+        [
+          73.06,
+          "safer"
+        ],
+        [
+          73.48,
+          "places"
+        ],
+        [
+          73.92,
+          "to"
+        ],
+        [
+          74.24,
+          "stand."
+        ],
+        [
+          75.56,
+          "Why"
+        ],
+        [
+          75.78,
+          "was"
+        ],
+        [
+          75.94,
+          "this"
+        ],
+        [
+          76.12,
+          "so"
+        ],
+        [
+          76.34,
+          "groundbreaking?"
+        ],
+        [
+          77.58,
+          "Because"
+        ],
+        [
+          78.14,
+          "it"
+        ],
+        [
+          78.3,
+          "was"
+        ],
+        [
+          78.42,
+          "one"
+        ],
+        [
+          78.56,
+          "of"
+        ],
+        [
+          78.68,
+          "the"
+        ],
+        [
+          78.8,
+          "very"
+        ],
+        [
+          79.12,
+          "first"
+        ],
+        [
+          79.38,
+          "times"
+        ],
+        [
+          79.84,
+          "an"
+        ],
+        [
+          80.1,
+          "idea"
+        ],
+        [
+          80.42,
+          "from"
+        ],
+        [
+          80.68,
+          "a"
+        ],
+        [
+          80.8,
+          "laboratory"
+        ],
+        [
+          81.38,
+          "reached"
+        ],
+        [
+          82.08,
+          "out"
+        ],
+        [
+          82.46,
+          "and"
+        ],
+        [
+          82.64,
+          "protected"
+        ],
+        [
+          83.02,
+          "ordinary"
+        ],
+        [
+          83.7,
+          "people"
+        ],
+        [
+          84.2,
+          "from"
+        ],
+        [
+          84.76,
+          "one"
+        ],
+        [
+          84.92,
+          "of"
+        ],
+        [
+          85.34,
+          "nature's"
+        ],
+        [
+          85.54,
+          "deadliest"
+        ],
+        [
+          86.04,
+          "forces."
+        ],
+        [
+          87.48,
+          "It"
+        ],
+        [
+          87.66,
+          "showed"
+        ],
+        [
+          87.96,
+          "that"
+        ],
+        [
+          88.18,
+          "the"
+        ],
+        [
+          88.32,
+          "wild"
+        ],
+        [
+          88.66,
+          "things"
+        ],
+        [
+          89.0,
+          "in"
+        ],
+        [
+          89.22,
+          "the"
+        ],
+        [
+          89.36,
+          "sky"
+        ],
+        [
+          89.7,
+          "follow"
+        ],
+        [
+          90.12,
+          "rules"
+        ],
+        [
+          90.7,
+          "and"
+        ],
+        [
+          91.28,
+          "that"
+        ],
+        [
+          91.38,
+          "once"
+        ],
+        [
+          91.58,
+          "you"
+        ],
+        [
+          91.78,
+          "understand"
+        ],
+        [
+          92.26,
+          "the"
+        ],
+        [
+          92.48,
+          "rules,"
+        ],
+        [
+          92.96,
+          "you"
+        ],
+        [
+          93.3,
+          "can"
+        ],
+        [
+          93.46,
+          "stay"
+        ],
+        [
+          93.74,
+          "safe."
+        ],
+        [
+          95.16,
+          "So"
+        ],
+        [
+          95.26,
+          "next"
+        ],
+        [
+          95.48,
+          "time"
+        ],
+        [
+          95.74,
+          "a"
+        ],
+        [
+          95.88,
+          "storm"
+        ],
+        [
+          96.14,
+          "rolls"
+        ],
+        [
+          96.46,
+          "in,"
+        ],
+        [
+          97.12,
+          "look"
+        ],
+        [
+          97.32,
+          "up"
+        ],
+        [
+          97.5,
+          "at"
+        ],
+        [
+          97.62,
+          "the"
+        ],
+        [
+          97.76,
+          "tallest"
+        ],
+        [
+          98.06,
+          "building"
+        ],
+        [
+          98.44,
+          "you"
+        ],
+        [
+          98.7,
+          "can"
+        ],
+        [
+          98.88,
+          "see."
+        ],
+        [
+          99.68,
+          "There's"
+        ],
+        [
+          99.96,
+          "a"
+        ],
+        [
+          100.06,
+          "good"
+        ],
+        [
+          100.22,
+          "chance"
+        ],
+        [
+          100.62,
+          "you'll"
+        ],
+        [
+          100.98,
+          "spot"
+        ],
+        [
+          101.2,
+          "a"
+        ],
+        [
+          101.36,
+          "thin"
+        ],
+        [
+          101.74,
+          "metal"
+        ],
+        [
+          102.12,
+          "rod"
+        ],
+        [
+          102.48,
+          "at"
+        ],
+        [
+          102.66,
+          "the"
+        ],
+        [
+          102.78,
+          "very"
+        ],
+        [
+          102.98,
+          "top."
+        ],
+        [
+          104.1,
+          "Some"
+        ],
+        [
+          104.44,
+          "tall"
+        ],
+        [
+          104.76,
+          "towers"
+        ],
+        [
+          105.18,
+          "are"
+        ],
+        [
+          105.34,
+          "struck"
+        ],
+        [
+          105.56,
+          "by"
+        ],
+        [
+          105.78,
+          "lightning"
+        ],
+        [
+          106.16,
+          "more"
+        ],
+        [
+          106.4,
+          "than"
+        ],
+        [
+          106.6,
+          "20"
+        ],
+        [
+          106.96,
+          "times"
+        ],
+        [
+          107.44,
+          "in"
+        ],
+        [
+          107.66,
+          "a"
+        ],
+        [
+          107.78,
+          "single"
+        ],
+        [
+          108.04,
+          "year"
+        ],
+        [
+          108.5,
+          "and"
+        ],
+        [
+          109.06,
+          "stay"
+        ],
+        [
+          109.34,
+          "standing."
+        ],
+        [
+          110.96,
+          "A"
+        ],
+        [
+          111.0,
+          "kite,"
+        ],
+        [
+          111.86,
+          "a"
+        ],
+        [
+          111.96,
+          "key,"
+        ],
+        [
+          112.62,
+          "and"
+        ],
+        [
+          112.8,
+          "a"
+        ],
+        [
+          112.94,
+          "jar."
+        ],
+        [
+          114.06,
+          "Together"
+        ],
+        [
+          114.36,
+          "they"
+        ],
+        [
+          114.74,
+          "took"
+        ],
+        [
+          114.96,
+          "lightning"
+        ],
+        [
+          115.38,
+          "out"
+        ],
+        [
+          115.66,
+          "of"
+        ],
+        [
+          115.86,
+          "the"
+        ],
+        [
+          115.98,
+          "realm"
+        ],
+        [
+          116.2,
+          "of"
+        ],
+        [
+          116.38,
+          "mystery"
+        ],
+        [
+          116.82,
+          "and"
+        ],
+        [
+          117.34,
+          "put"
+        ],
+        [
+          117.48,
+          "a"
+        ],
+        [
+          117.62,
+          "little"
+        ],
+        [
+          117.8,
+          "piece"
+        ],
+        [
+          118.06,
+          "of"
+        ],
+        [
+          118.24,
+          "it"
+        ],
+        [
+          118.38,
+          "on"
+        ],
+        [
+          118.54,
+          "every"
+        ],
+        [
+          118.92,
+          "roof."
+        ],
+        [
+          120.46,
+          "Long"
+        ],
+        [
+          120.64,
+          "before"
+        ],
+        [
+          121.08,
+          "Franklin,"
+        ],
+        [
+          122.04,
+          "a"
+        ],
+        [
+          122.2,
+          "young"
+        ],
+        [
+          122.42,
+          "man"
+        ],
+        [
+          122.78,
+          "in"
+        ],
+        [
+          122.96,
+          "an"
+        ],
+        [
+          123.1,
+          "English"
+        ],
+        [
+          123.4,
+          "garden"
+        ],
+        [
+          123.9,
+          "asked"
+        ],
+        [
+          124.28,
+          "a"
+        ],
+        [
+          124.46,
+          "different"
+        ],
+        [
+          124.76,
+          "question"
+        ],
+        [
+          125.1,
+          "about"
+        ],
+        [
+          125.48,
+          "the"
+        ],
+        [
+          125.68,
+          "sky."
+        ],
+        [
+          126.9,
+          "If"
+        ],
+        [
+          127.18,
+          "an"
+        ],
+        [
+          127.3,
+          "apple"
+        ],
+        [
+          127.58,
+          "falls"
+        ],
+        [
+          127.96,
+          "to"
+        ],
+        [
+          128.16,
+          "the"
+        ],
+        [
+          128.28,
+          "ground,"
+        ],
+        [
+          129.16,
+          "why"
+        ],
+        [
+          129.42,
+          "doesn't"
+        ],
+        [
+          129.66,
+          "the"
+        ],
+        [
+          129.84,
+          "moon..."
+        ]
+      ]
+    }
+  ]
+}
