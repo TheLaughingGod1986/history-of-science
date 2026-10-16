@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-15",
-  "updated_by": "cursor (J0336)",
+  "updated": "2026-10-16",
+  "updated_by": "codex (J0329)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -376,11 +376,16 @@
         "picture": {
           "status": "blocked",
           "due": "2026-11-08",
-          "owner": "Cursor",
-          "since": "2026-10-15",
+          "owner": "chief",
+          "since": "2026-10-16",
           "underway": false,
-          "note": "J0240 v03 plate boards KEEP (Chief PASS 15 Oct): 5 parts, 112 rows (15 Quality / 86 Fast non-emissive / 11 \u00a30 code graphics / 0 reuse, all 15 measured); Flow expected 5,605 cr (try-1 2,360 cr), Vertex fallback \u00a3133.38; no mint. See PRICE_REVIEW_v03.md.",
-          "waiting": "mint after 006 and 007, and only when a live Flow reading leaves at least 3,000 credits after 008's expected spend"
+          "note": "J0329: eleven no-spend v01 code graphics rendered from KEEP v03 boards, plus five alpha overlays and paper review previews. Awaiting Chief visual review; five moving-plate composites still pending. PICTURE_PLAN_v03 mint gate unchanged (5,605 cr expected). See CODE_GRAPHICS_v01_REVIEW.md.",
+          "waiting": "Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend",
+          "steps": [
+            11,
+            112
+          ],
+          "steps_unit": "board rows rendered (11 graphics awaiting review)"
         },
         "edit": {
           "status": "todo",
