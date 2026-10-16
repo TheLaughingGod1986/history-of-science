@@ -1,0 +1,4 @@
+FAIL   0:03 row 07_map_shadows code_graphic_007_p1_07_map_shadows.mp4: low detail: luma std 12.76 < 13.44 and edge density 0.0218 < 0.0259 (absolute floor)
+FAIL   0:15 row 08_body_learns code_graphic_007_p5_08_body_learns.mp4: low detail: luma std 12.43 < 13.44 and edge density 0.0243 < 0.0259 (absolute floor)
+WARN   0:09 row 11_news_spreads code_graphic_007_p4_11_news_spreads.mp4: low detail: luma std 13.01 < 18.0
+picture QA FAIL: 2 of 3 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/code_graphics_v01/picture_qa_v01/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/code_graphics_v01/picture_qa_v01/picture_qa_review.jpg

@@ -1,0 +1,416 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/private/tmp/qa_hos_009_v01/concat_v01.mp4",
+  "edge_floor": 0.0272,
+  "verdict": "FAIL",
+  "failed": [
+    {
+      "row": "09_pull_heights",
+      "cut": 0,
+      "t": 2.07,
+      "source": "code_graphic_009_p2_09_pull_heights.mp4",
+      "why": [
+        "split panel: horizontal seam at 0.741"
+      ]
+    },
+    {
+      "row": "09_pull_heights_c1",
+      "cut": 1,
+      "t": 6.21,
+      "source": "code_graphic_009_p2_09_pull_heights_c1.mp4",
+      "why": [
+        "noise: grain 8.45 over structure 3.31, 8x-downscaled std 4.76 < 13.44 and edge 0.0253 < 0.0259"
+      ]
+    },
+    {
+      "row": "08_km_a_second_c1",
+      "cut": 5,
+      "t": 24.51,
+      "source": "code_graphic_009_p3_08_km_a_second_c1.mp4",
+      "why": [
+        "noise: grain 8.05 over structure 4.28, 8x-downscaled std 5.42 < 13.44 and edge 0.0248 < 0.0259"
+      ]
+    },
+    {
+      "row": "03_sixty_earths",
+      "cut": 8,
+      "t": 43.54,
+      "source": "code_graphic_009_p4_03_sixty_earths.mp4",
+      "why": [
+        "noise: grain 8.48 over structure 3.3, 8x-downscaled std 4.66 < 13.44 and edge 0.0176 < 0.0259"
+      ]
+    },
+    {
+      "row": "04_dots_square",
+      "cut": 9,
+      "t": 48.64,
+      "source": "code_graphic_009_p4_04_dots_square.mp4",
+      "why": [
+        "noise: grain 10.24 over structure 4.61, 8x-downscaled std 5.96 < 13.44 and edge 0.0257 < 0.0259"
+      ]
+    },
+    {
+      "row": "04_dots_square_c1",
+      "cut": 10,
+      "t": 54.17,
+      "source": "code_graphic_009_p4_04_dots_square_c1.mp4",
+      "why": [
+        "noise: grain 9.67 over structure 4.43, 8x-downscaled std 5.57 < 13.44 and edge 0.0182 < 0.0259"
+      ]
+    }
+  ],
+  "warn": [
+    {
+      "row": "06_orbit_teach",
+      "cut": 2,
+      "t": 10.48,
+      "source": "code_graphic_009_p3_06_orbit_teach.mp4",
+      "why": [
+        "low detail: luma std 12.42 < 18.0"
+      ]
+    },
+    {
+      "row": "06_orbit_teach_c1",
+      "cut": 3,
+      "t": 14.88,
+      "source": "code_graphic_009_p3_06_orbit_teach_c1.mp4",
+      "why": [
+        "low detail: luma std 11.37 < 18.0",
+        "low detail: edge density 0.0268 < film p5 0.0272"
+      ]
+    },
+    {
+      "row": "08_km_a_second",
+      "cut": 4,
+      "t": 19.55,
+      "source": "code_graphic_009_p3_08_km_a_second.mp4",
+      "why": [
+        "low detail: luma std 13.16 < 18.0"
+      ]
+    },
+    {
+      "row": "01_weaker_far",
+      "cut": 6,
+      "t": 30.54,
+      "source": "code_graphic_009_p4_01_weaker_far.mp4",
+      "why": [
+        "low detail: luma std 13.9 < 18.0"
+      ]
+    },
+    {
+      "row": "01_weaker_far_c1",
+      "cut": 7,
+      "t": 37.65,
+      "source": "code_graphic_009_p4_01_weaker_far_c1.mp4",
+      "why": [
+        "low detail: luma std 12.84 < 18.0"
+      ]
+    },
+    {
+      "row": "07_station_curve",
+      "cut": 11,
+      "t": 60.26,
+      "source": "code_graphic_009_p5_07_station_curve.mp4",
+      "why": [
+        "low detail: luma std 12.81 < 18.0"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "09_pull_heights",
+      "source": "code_graphic_009_p2_09_pull_heights.mp4",
+      "t": 2.07,
+      "std": 13.38,
+      "mean": 97.38,
+      "p95": 109.0,
+      "edge": 0.0524,
+      "hf": 9.7,
+      "lf": 3.93,
+      "std8": 5.59,
+      "edge8": 0.0303,
+      "seams": [
+        {
+          "kind": "horizontal seam",
+          "at": 0.741,
+          "step": 50.0
+        }
+      ],
+      "video": true,
+      "fail": [
+        "split panel: horizontal seam at 0.741"
+      ],
+      "warn": [
+        "low detail: luma std 13.38 < 18.0"
+      ]
+    },
+    {
+      "cut": 1,
+      "row": "09_pull_heights_c1",
+      "source": "code_graphic_009_p2_09_pull_heights_c1.mp4",
+      "t": 6.21,
+      "std": 11.59,
+      "mean": 97.44,
+      "p95": 109.0,
+      "edge": 0.0397,
+      "hf": 8.45,
+      "lf": 3.31,
+      "std8": 4.76,
+      "edge8": 0.0253,
+      "seams": [],
+      "video": true,
+      "fail": [
+        "noise: grain 8.45 over structure 3.31, 8x-downscaled std 4.76 < 13.44 and edge 0.0253 < 0.0259"
+      ],
+      "warn": [
+        "low detail: luma std 11.59 < 18.0"
+      ]
+    },
+    {
+      "cut": 2,
+      "row": "06_orbit_teach",
+      "source": "code_graphic_009_p3_06_orbit_teach.mp4",
+      "t": 10.48,
+      "std": 12.42,
+      "mean": 97.95,
+      "p95": 110.0,
+      "edge": 0.0275,
+      "hf": 8.63,
+      "lf": 4.44,
+      "std8": 5.94,
+      "edge8": 0.032,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: luma std 12.42 < 18.0"
+      ]
+    },
+    {
+      "cut": 3,
+      "row": "06_orbit_teach_c1",
+      "source": "code_graphic_009_p3_06_orbit_teach_c1.mp4",
+      "t": 14.88,
+      "std": 11.37,
+      "mean": 97.66,
+      "p95": 110.0,
+      "edge": 0.0268,
+      "hf": 8.01,
+      "lf": 4.03,
+      "std8": 5.3,
+      "edge8": 0.0262,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: luma std 11.37 < 18.0",
+        "low detail: edge density 0.0268 < film p5 0.0272"
+      ]
+    },
+    {
+      "cut": 4,
+      "row": "08_km_a_second",
+      "source": "code_graphic_009_p3_08_km_a_second.mp4",
+      "t": 19.55,
+      "std": 13.16,
+      "mean": 98.02,
+      "p95": 110.0,
+      "edge": 0.0446,
+      "hf": 9.11,
+      "lf": 4.81,
+      "std8": 6.39,
+      "edge8": 0.0365,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: luma std 13.16 < 18.0"
+      ]
+    },
+    {
+      "cut": 5,
+      "row": "08_km_a_second_c1",
+      "source": "code_graphic_009_p3_08_km_a_second_c1.mp4",
+      "t": 24.51,
+      "std": 11.29,
+      "mean": 97.75,
+      "p95": 109.0,
+      "edge": 0.0424,
+      "hf": 8.05,
+      "lf": 4.28,
+      "std8": 5.42,
+      "edge8": 0.0248,
+      "seams": [],
+      "video": true,
+      "fail": [
+        "noise: grain 8.05 over structure 4.28, 8x-downscaled std 5.42 < 13.44 and edge 0.0248 < 0.0259"
+      ],
+      "warn": [
+        "low detail: luma std 11.29 < 18.0"
+      ]
+    },
+    {
+      "cut": 6,
+      "row": "01_weaker_far",
+      "source": "code_graphic_009_p4_01_weaker_far.mp4",
+      "t": 30.54,
+      "std": 13.9,
+      "mean": 98.22,
+      "p95": 109.0,
+      "edge": 0.05,
+      "hf": 9.62,
+      "lf": 4.85,
+      "std8": 6.62,
+      "edge8": 0.0425,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: luma std 13.9 < 18.0"
+      ]
+    },
+    {
+      "cut": 7,
+      "row": "01_weaker_far_c1",
+      "source": "code_graphic_009_p4_01_weaker_far_c1.mp4",
+      "t": 37.65,
+      "std": 12.84,
+      "mean": 97.92,
+      "p95": 109.0,
+      "edge": 0.0483,
+      "hf": 9.29,
+      "lf": 4.08,
+      "std8": 5.55,
+      "edge8": 0.0298,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: luma std 12.84 < 18.0"
+      ]
+    },
+    {
+      "cut": 8,
+      "row": "03_sixty_earths",
+      "source": "code_graphic_009_p4_03_sixty_earths.mp4",
+      "t": 43.54,
+      "std": 11.33,
+      "mean": 97.78,
+      "p95": 109.0,
+      "edge": 0.045,
+      "hf": 8.48,
+      "lf": 3.3,
+      "std8": 4.66,
+      "edge8": 0.0176,
+      "seams": [],
+      "video": true,
+      "fail": [
+        "noise: grain 8.48 over structure 3.3, 8x-downscaled std 4.66 < 13.44 and edge 0.0176 < 0.0259"
+      ],
+      "warn": [
+        "low detail: luma std 11.33 < 18.0"
+      ]
+    },
+    {
+      "cut": 9,
+      "row": "04_dots_square",
+      "source": "code_graphic_009_p4_04_dots_square.mp4",
+      "t": 48.64,
+      "std": 13.48,
+      "mean": 97.02,
+      "p95": 109.0,
+      "edge": 0.0859,
+      "hf": 10.24,
+      "lf": 4.61,
+      "std8": 5.96,
+      "edge8": 0.0257,
+      "seams": [],
+      "video": true,
+      "fail": [
+        "noise: grain 10.24 over structure 4.61, 8x-downscaled std 5.96 < 13.44 and edge 0.0257 < 0.0259"
+      ],
+      "warn": [
+        "low detail: luma std 13.48 < 18.0"
+      ]
+    },
+    {
+      "cut": 10,
+      "row": "04_dots_square_c1",
+      "source": "code_graphic_009_p4_04_dots_square_c1.mp4",
+      "t": 54.17,
+      "std": 12.51,
+      "mean": 96.89,
+      "p95": 109.0,
+      "edge": 0.081,
+      "hf": 9.67,
+      "lf": 4.43,
+      "std8": 5.57,
+      "edge8": 0.0182,
+      "seams": [],
+      "video": true,
+      "fail": [
+        "noise: grain 9.67 over structure 4.43, 8x-downscaled std 5.57 < 13.44 and edge 0.0182 < 0.0259"
+      ],
+      "warn": [
+        "low detail: luma std 12.51 < 18.0"
+      ]
+    },
+    {
+      "cut": 11,
+      "row": "07_station_curve",
+      "source": "code_graphic_009_p5_07_station_curve.mp4",
+      "t": 60.26,
+      "std": 12.81,
+      "mean": 97.76,
+      "p95": 110.0,
+      "edge": 0.0317,
+      "hf": 8.99,
+      "lf": 4.35,
+      "std8": 5.91,
+      "edge8": 0.0348,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: luma std 12.81 < 18.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+09_pull_heights     2.1s code_graphic_009_p2_09_pull_ FAIL split panel: horizontal seam at 0.741
+09_pull_heights_c1     6.2s code_graphic_009_p2_09_pull_ FAIL noise: grain 8.45 over structure 3.31, 8x-downscaled std 4.76 < 13.44 and edge 0.0253 < 0.0259
+06_orbit_teach    10.5s code_graphic_009_p3_06_orbit WARN low detail: luma std 12.42 < 18.0
+06_orbit_teach_c1    14.9s code_graphic_009_p3_06_orbit WARN low detail: luma std 11.37 < 18.0; low detail: edge density 0.0268 < film p5 0.0272
+08_km_a_second    19.6s code_graphic_009_p3_08_km_a_ WARN low detail: luma std 13.16 < 18.0
+08_km_a_second_c1    24.5s code_graphic_009_p3_08_km_a_ FAIL noise: grain 8.05 over structure 4.28, 8x-downscaled std 5.42 < 13.44 and edge 0.0248 < 0.0259
+01_weaker_far    30.5s code_graphic_009_p4_01_weake WARN low detail: luma std 13.9 < 18.0
+01_weaker_far_c1    37.6s code_graphic_009_p4_01_weake WARN low detail: luma std 12.84 < 18.0
+03_sixty_earths    43.5s code_graphic_009_p4_03_sixty FAIL noise: grain 8.48 over structure 3.3, 8x-downscaled std 4.66 < 13.44 and edge 0.0176 < 0.0259
+04_dots_square    48.6s code_graphic_009_p4_04_dots_ FAIL noise: grain 10.24 over structure 4.61, 8x-downscaled std 5.96 < 13.44 and edge 0.0257 < 0.0259
+04_dots_square_c1    54.2s code_graphic_009_p4_04_dots_ FAIL noise: grain 9.67 over structure 4.43, 8x-downscaled std 5.57 < 13.44 and edge 0.0182 < 0.0259
+07_station_curve    60.3s code_graphic_009_p5_07_stati WARN low detail: luma std 12.81 < 18.0
+polish gate FAIL: 6 of 12 rows failed, 6 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/polish_gate_v01.json

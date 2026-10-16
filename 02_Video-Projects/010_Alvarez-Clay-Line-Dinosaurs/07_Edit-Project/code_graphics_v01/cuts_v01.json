@@ -1,0 +1,145 @@
+[
+  {
+    "row": "P2:02_layers_build",
+    "timeline_in": 0.0,
+    "timeline_out": 8.033,
+    "source": "code_graphic_010_p2_02_layers_build.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P2:08_two_clocks",
+    "timeline_in": 8.033,
+    "timeline_out": 23.8,
+    "source": "code_graphic_010_p2_08_two_clocks.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:02_pyramid_muons",
+    "timeline_in": 23.8,
+    "timeline_out": 31.167,
+    "source": "code_graphic_010_p3_02_pyramid_muons.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:07_clock_idea",
+    "timeline_in": 31.167,
+    "timeline_out": 53.934,
+    "source": "code_graphic_010_p3_07_clock_idea.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:01_iridium_spike",
+    "timeline_in": 53.934,
+    "timeline_out": 70.967,
+    "source": "code_graphic_010_p4_01_iridium_spike.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:03_world_pins",
+    "timeline_in": 70.967,
+    "timeline_out": 87.134,
+    "source": "code_graphic_010_p4_03_world_pins.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:04_supernova_test",
+    "timeline_in": 87.134,
+    "timeline_out": 107.601,
+    "source": "code_graphic_010_p4_04_supernova_test.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:05_ten_km",
+    "timeline_in": 107.601,
+    "timeline_out": 117.368,
+    "source": "code_graphic_010_p4_05_ten_km.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:07_food_chain",
+    "timeline_in": 117.368,
+    "timeline_out": 125.035,
+    "source": "code_graphic_010_p4_07_food_chain.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:10_where_hole",
+    "timeline_in": 125.035,
+    "timeline_out": 130.002,
+    "source": "code_graphic_010_p4_10_where_hole.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:03_caribbean_hunt",
+    "timeline_in": 130.002,
+    "timeline_out": 145.969,
+    "source": "code_graphic_010_p5_03_caribbean_hunt.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:05_ring_scale",
+    "timeline_in": 145.969,
+    "timeline_out": 152.502,
+    "source": "code_graphic_010_p5_05_ring_scale.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:11_why_survive",
+    "timeline_in": 152.502,
+    "timeline_out": 166.902,
+    "source": "code_graphic_010_p5_11_why_survive.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  }
+]

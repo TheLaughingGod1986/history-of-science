@@ -1,0 +1,12 @@
+P2:14_likeness_pairs     2.5s code_graphic_008_p2_14_liken WARN low detail: luma std 17.48 < 18.0
+P2:15_likeness_fire     7.8s code_graphic_008_p2_15_liken WARN low detail: luma std 15.52 < 18.0
+P3:03_rod_cloud    13.7s code_graphic_008_p3_03_rod_c ok
+P3:04_letter_crosses    18.8s code_graphic_008_p3_04_lette WARN low detail: luma std 13.88 < 18.0
+P3:15_wet_dry    23.3s code_graphic_008_p3_15_wet_d FAIL low detail: luma std 12.76 < 13.44 and edge density 0.0103 < 0.0259 (absolute floor)
+P4:06_same_thing    29.6s code_graphic_008_p4_06_same_ FAIL low detail: luma std 9.11 < 13.44 and edge density 0.0059 < 0.0259 (absolute floor)
+P4:08_teach_charge    36.8s code_graphic_008_p4_08_teach WARN low detail: luma std 17.48 < 18.0
+P5:08_looking_path    42.0s code_graphic_008_p5_08_looki FAIL low detail: luma std 10.38 < 13.44 and edge density 0.0082 < 0.0259 (absolute floor)
+P5:09_wood_vs_metal    47.0s code_graphic_008_p5_09_wood_ WARN low detail: luma std 17.44 < 18.0
+P5:10_metal_easy    51.9s code_graphic_008_p5_10_metal FAIL low detail: luma std 11.23 < 13.44 and edge density 0.0092 < 0.0259 (absolute floor)
+P5:11_safe_path    56.9s code_graphic_008_p5_11_safe_ WARN low detail: luma std 16.7 < 18.0
+polish gate FAIL: 4 of 11 rows failed, 6 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/code_graphics_v01/polish_gate_v01.json

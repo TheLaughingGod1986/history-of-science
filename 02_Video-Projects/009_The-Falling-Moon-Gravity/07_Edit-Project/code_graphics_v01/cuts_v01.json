@@ -1,0 +1,134 @@
+[
+  {
+    "row": "09_pull_heights",
+    "timeline_in": 0.0,
+    "timeline_out": 4.14,
+    "source": "code_graphic_009_p2_09_pull_heights.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "09_pull_heights_c1",
+    "timeline_in": 4.14,
+    "timeline_out": 8.28,
+    "source": "code_graphic_009_p2_09_pull_heights_c1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "06_orbit_teach",
+    "timeline_in": 8.28,
+    "timeline_out": 12.68,
+    "source": "code_graphic_009_p3_06_orbit_teach.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "06_orbit_teach_c1",
+    "timeline_in": 12.68,
+    "timeline_out": 17.08,
+    "source": "code_graphic_009_p3_06_orbit_teach_c1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "08_km_a_second",
+    "timeline_in": 17.08,
+    "timeline_out": 22.03,
+    "source": "code_graphic_009_p3_08_km_a_second.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "08_km_a_second_c1",
+    "timeline_in": 22.03,
+    "timeline_out": 26.98,
+    "source": "code_graphic_009_p3_08_km_a_second_c1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "01_weaker_far",
+    "timeline_in": 26.98,
+    "timeline_out": 34.09,
+    "source": "code_graphic_009_p4_01_weaker_far.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "01_weaker_far_c1",
+    "timeline_in": 34.09,
+    "timeline_out": 41.2,
+    "source": "code_graphic_009_p4_01_weaker_far_c1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "03_sixty_earths",
+    "timeline_in": 41.2,
+    "timeline_out": 45.88,
+    "source": "code_graphic_009_p4_03_sixty_earths.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "04_dots_square",
+    "timeline_in": 45.88,
+    "timeline_out": 51.41,
+    "source": "code_graphic_009_p4_04_dots_square.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "04_dots_square_c1",
+    "timeline_in": 51.41,
+    "timeline_out": 56.94,
+    "source": "code_graphic_009_p4_04_dots_square_c1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "07_station_curve",
+    "timeline_in": 56.94,
+    "timeline_out": 63.58,
+    "source": "code_graphic_009_p5_07_station_curve.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  }
+]
