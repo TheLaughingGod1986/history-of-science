@@ -1,0 +1,96 @@
+{
+  "film": "020_Penicillin-Fleming-Florey",
+  "version": "v01",
+  "written": "2026-10-17",
+  "task": "J0430: HOS 020 pre-VO plate boards v01 (from penicillin_script_master_v01.md + SOURCES_v01.md). Flow-first. Mint nothing. Parked for Chief.",
+  "script": "penicillin_script_master_v01.md (93.4 PASS)",
+  "facts_pass": "SOURCES_v01.md (8 rows)",
+  "vo_status": "Awaiting Chief script sign-off and long VO recording; rows re-time automatically onto Scribe STT once VO locks.",
+  "readings": {
+    "flow_credits_left": 23740,
+    "flow_read_at": "2026-10-15T21:42:22Z",
+    "vertex_promo_gbp": 71.02,
+    "vertex_usable_gbp": 70.02
+  },
+  "totals": {
+    "rows": 25,
+    "Quality": 9,
+    "Fast": 9,
+    "code_graphic": 6,
+    "reuse": 1,
+    "flow_credits_try1": 990,
+    "flow_credits_expected": 2511,
+    "vertex_try1_gbp": 14.56,
+    "vertex_expected_gbp": 36.09,
+    "explorer": 2,
+    "teach_overlays": 15
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "title": "Part 01 \u2014 The Mould in the Turret Room",
+      "rows": 9,
+      "Quality": 3,
+      "Fast": 4,
+      "code_graphic": 2,
+      "reuse": 0,
+      "flow_credits_try1": 340,
+      "flow_credits_expected": 857,
+      "vertex_try1_gbp": 4.8,
+      "vertex_expected_gbp": 11.72
+    },
+    {
+      "part": 2,
+      "title": "Part 02 \u2014 \"That's Funny\" and the Ten-Year Shelf",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 2,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 120,
+      "flow_credits_expected": 299,
+      "vertex_try1_gbp": 2.24,
+      "vertex_expected_gbp": 5.41
+    },
+    {
+      "part": 3,
+      "title": "Part 03 \u2014 The Bedpan Factory and the Eight Mice",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 2,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 120,
+      "flow_credits_expected": 299,
+      "vertex_try1_gbp": 2.4,
+      "vertex_expected_gbp": 5.73
+    },
+    {
+      "part": 4,
+      "title": "Part 04 \u2014 The Policeman's Urine and the Mouldy Cantaloupe",
+      "rows": 4,
+      "Quality": 3,
+      "Fast": 0,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 300,
+      "flow_credits_expected": 777,
+      "vertex_try1_gbp": 3.52,
+      "vertex_expected_gbp": 9.34
+    },
+    {
+      "part": 5,
+      "title": "Part 05 \u2014 Why Penicillin Pops Bacteria Like Balloons and Fleming's Warning",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 1,
+      "flow_credits_try1": 110,
+      "flow_credits_expected": 279,
+      "vertex_try1_gbp": 1.6,
+      "vertex_expected_gbp": 3.89
+    }
+  ],
+  "mint_order": "006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020. Nothing in 020 is generation_authorized."
+}

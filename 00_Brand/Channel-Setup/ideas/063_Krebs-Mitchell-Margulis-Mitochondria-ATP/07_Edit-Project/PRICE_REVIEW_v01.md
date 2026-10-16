@@ -1,0 +1,32 @@
+# 063 price review v01 (pre-VO plate boards)
+
+Gemini, 19 Oct 2026, J0646. Boards only. **No mint. No spend. No merge.**
+Prepared from `mitochondria_script_master_v01.md` (`92.0 PASS`) and `SOURCES_v01.md` so 063's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Lightning-Bolt Proton Dam & the Ancient Bacteria Inside You | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — June 1937: Pigeon Breast Muscle, the Nature Rejection Letter & the Spinning Krebs Cycle | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — 8 July 1961: The 'Ox-Phos Wars' & Peter Mitchell's Country-Mansion Proton Dam (Chemiosmosis) — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — March 1967 & August 1994: The World's Smallest Rotary Turbine (ATP Synthase) & Lynn Margulis's Swallowed-Bacteria Proof | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — Why All Your Mitochondria Come From Your Mother — & the Mystery of Living Crystals (Viruses) | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Hans A. Krebs, William A. Johnson, Peter D. Mitchell, Jennifer Moyle, Paul D. Boyer, John E. Walker, Lynn Margulis, Dmitri Ivanovsky, Wendell M. Stanley, Alfred D. Hershey, Martha Chase), June 1937 Sheffield pigeon-muscle manometers & *Nature* rejection letter, 8 July 1961 Glynn House chemiosmotic proton dam (`180 mV` across `5 nm` = `30 MV/m`), March 1967 endosymbiosis & 18 August 1994 atomic `F1Fo-ATP synthase` rotary motor (`~100 rev/s`), and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (glass Warburg manometer flask, brass millivoltmeter & wooden rotary turbine pan, 3-object callback bench, 1937 Sheffield notebook with 8-spoke chemical wheel & manometers, wooden 8-spoke waterwheel carrying 4-carbon and 2-carbon blocks, Cornish water-jacketed reaction vessel & pH electrode strip recorder, miniature wooden hydroelectric dam & lipid-bilayer model, brass-and-wood `F1Fo-ATP synthase` camshaft & circular `mtDNA` ring, maternal 37-gene `mtDNA` ring & sectioned mitochondrion on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_krebs_1937_mitchell_1961_boyer_walker_1994_margulis_1967_respiration_chemiosmosis_chart` — 3-stage cellular respiration & chemiosmotic proton-motive force chart showing the 8-step Krebs Cycle, the `150–180 mV` proton gradient across the `5-nm` inner membrane (`~30 million V/m`), and `F1Fo-ATP synthase` spinning at `~100 rev/s` (`~30–32 ATP/glucose`) (`SCALE: a voltage of just 180 millivolts across a membrane five billionths of a metre thick creates an electric field of thirty million volts per metre — as intense as a bolt of lightning inside every cell of your body`)
+  2. `P1:06_meerman_brown_2014_bmj_10kg_fat_oxidation_to_8_4kg_exhaled_co2_mass_balance_chart` — Lavoisier (1789) & Meerman and Brown (December 2014 *BMJ* 349: g7257) human fat oxidation mass-balance chart (`10 kg` fat + `29 kg O₂` → `8.4 kg` exhaled `CO₂` [84%] + `1.6 kg H₂O` [16%]) (`SCALE: when you exercise and lose ten kilograms of body fat, your fat doesn't turn into heat or sweat — 8.4 kilograms of it leaves your body through your lungs as invisible carbon dioxide gas`)
+  3. `P2:02_krebs_johnson_aug_1937_enzymologia_eight_step_citric_acid_cycle_wheel_chart` — Krebs & Johnson (August 1937, *Enzymologia* 4: 148–156) 8-step Citric Acid Cycle diagram (`2 CO₂` + `3 NADH` + `1 FADH₂` + `1 GTP` per turn) (`SCALE: the Krebs cycle works like a waterwheel that never gets used up — a four-carbon bucket picks up a two-carbon piece of food, drops off two carbon dioxide molecules that you breathe out of your lungs, and comes right back around for the next load`)
+  4. `P3:02_mitchell_1961_moyle_1967_racker_stoeckenius_1974_chemiosmotic_proton_motive_force_chart` — Mitchell (8 July 1961, *Nature* 191: 144–148) & Racker and Stoeckenius (1974) chemiosmotic proton-motive force chart (`Δψ ~180 mV` + `ΔpH` across `5 nm` = `~30 MV/m`) (`SCALE: just as Hoover Dam holds back a lake of water so the rushing torrent can spin hydroelectric turbines, your mitochondria pump protons behind a five-nanometre membrane dam so the rushing protons can spin ATP synthase`)
+  5. `P4:02_boyer_walker_1994_atp_synthase_32_vs_2_atp_and_margulis_1967_16569bp_mtdna_chart` — Boyer & Walker (18 August 1994, *Nature* 370: 621–628) rotary ATP synthase & Margulis (March 1967, *J. Theor. Biol.* 14: 225–274) endosymbiosis chart (`~30–32 ATP` vs `2 ATP` from glycolysis; `16,569-bp` circular `mtDNA`) (`SCALE: without the ancient bacteria living inside your cells, a molecule of sugar would give you only two molecules of ATP instead of thirty-two — leaving complex animals with fifteen times too little energy to run, think, or keep a heart beating`)
+  6. `P5:01_timeline_1937_1994_and_maternal_16569bp_mitochondrial_dna_inheritance_chart` — completed 4-date timeline (1937 → 1994) + 100% maternal `16,569-bp` mitochondrial DNA inheritance diagram (`SCALE: from a rejected letter on pigeon muscle in Sheffield to a country-house lab in Cornwall and a two-billion-year bacterial partnership, three rebel scientists revealed why mitochondria truly are the powerhouse of the cell`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1937_sheffield_manometer_1961_glynn_house_ph_meter_and_1994_atp_rotor`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062 > 063 > 064 > 065. `generation_authorized` is `false` on every row.

@@ -1,0 +1,32 @@
+# 057 price review v01 (pre-VO plate boards)
+
+Gemini, 19 Oct 2026, J0615. Boards only. **No mint. No spend. No merge.**
+Prepared from `microbiome_script_master_v01.md` (`91.6 PASS`) and `SOURCES_v01.md` so 057's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — Why Your Own DNA Can't Digest an Apple Without 38 Trillion Helpers | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — 14 July 1885 & 1907: Theodor Escherich's Newborn Microbe Mystery & Élie Metchnikoff's Bulgarian Yogurt | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — 1946–1959: The Germ-Free Bubble Mice That Needed 30% More Food & Bled Without Vitamin K — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — 1977 & 1996–21 December 2006: Why 80% of Gut Microbes Hate Oxygen, Carl Woese's 16S Barcode & Jeffrey Gordon's Microbiome Revolution | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — Why Feeding Your Gut Fibre Feeds You — & How Scientists Rewound an Adult Cell Back Into an Embryo | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Theodor Escherich, Stamen Grigorov, Élie Metchnikoff, James A. Reyniers, Bengt E. Gustafsson, Carl R. Woese, Jeffrey I. Gordon, Lora V. Hooper, Ruth E. Ley, Ernest McCulloch, James Till, John Gurdon, Shinya Yamanaka), 14 July 1885 Munich newborn *E. coli* discovery & 1907 Paris Bulgarian yogurt probiotics, 1946–1959 stainless-steel germ-free isolator experiments, 28 March 2003 – 21 December 2006 *Bacteroides thetaiotaomicron* 261-enzyme & microbiome energy proof, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (apple/oats/yogurt bowl & brass microscope slide pan, 3-object callback bench, 1907 *The Prolongation of Life* book & stoneware yogurt jug, 1885 Munich agar culture tubes & clinic notebook, 1959 stainless-steel isolator porthole & Vitamin K tubes, brass feed balance & 5× caecum anatomical models, anaerobic glove-box airlock & short-chain fatty-acid models, oats/apples/beans & butyrate model on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_sender_milo_2016_and_gordon_2006_30t_human_cells_vs_38t_gut_bacteria_2m_genes_chart` — human vs gut microbiome census comparing 30 trillion human cells (20,000 human genes; 17 digestive carb enzymes) against 38 trillion bacterial cells in the colon (0.2 kg mass; >2 million microbial genes; thousands of fibre-digesting CAZymes) (`SCALE: by cell count you are less than half human — for every ten human cells in your body, roughly thirteen microscopic bacteria ride along inside your gut, carrying a hundred times more genes than your own DNA`)
+  2. `P1:06_gustafsson_1959_germ_free_vs_colonized_mouse_30pct_calories_5x_caecum_vitamin_k_chart` — germ-free isolator mouse vs conventional mouse comparison (+30% calorie requirement, 5× enlarged caecum, and 0 endogenous Vitamin K synthesis vs normal weight, fibre fermentation, and microbial Vitamin K synthesis) (`SCALE: without gut bacteria, a mouse has to eat nearly a third more food just to stay the same weight — because the calories locked inside plant fibre pass straight through its body untouched`)
+  3. `P2:02_escherich_1885_newborn_colonization_10e10_per_gram_and_metchnikoff_1907_lactic_acid_ph_chart` — Escherich (14 July 1885) newborn gut colonization reaching >10⁹–10¹⁰ bacteria/g within days of birth & Metchnikoff (1907) *Lactobacillus bulgaricus* lactic-acid fermentation (pH ~4.0–4.5) (`SCALE: inside a single gram of contents from your lower gut — a pinch no bigger than a paperclip — live more individual bacteria than there are human beings on the entire planet Earth`)
+  4. `P3:02_reyniers_1946_gustafsson_1959_gnotobiotic_4_metric_caecum_calories_vitamin_k_immune_chart` — Reyniers (1946) and Gustafsson (1948, 1959) gnotobiotic isolator 4-metric chart (5× caecum weight, +30% caloric intake, lethal Vitamin K bleeding cured in 24–48 h by gut microbes, and underdeveloped immune tissue) (`SCALE: raising a mouse without gut bacteria is like trying to run a city without power plants, recycling crews, or a fire brigade — the mouse has to eat nearly a third more food just to stay warm, and a tiny scratch can bleed uncontrollably without bacterial Vitamin K`)
+  5. `P4:02_xu_gordon_28_mar_2003_science_17_human_vs_261_bacteroides_enzymes_and_butyrate_colonocyte_chart` — Xu et al. & Gordon (28 March 2003, *Science*) and Turnbaugh, Ley & Gordon (21 December 2006, *Nature*) comparing 17 human digestive glycoside hydrolases against 261 in *Bacteroides thetaiotaomicron* converting fibre into butyrate (60–70% of colonocyte energy) (`SCALE: one single species of friendly gut bacterium carries fifteen times more fibre-digesting tools than the entire human genome — turning tough plant cell walls that would pass straight through us into the very fuel that keeps the lining of our gut alive`)
+  6. `P5:01_timeline_1885_2016_and_dietary_fibre_to_butyrate_colon_barrier_chart` — completed 4-date timeline (1885 → 2016) + dietary fibre fermentation into butyrate & immune T-cell regulation diagram (`SCALE: every meal you eat is a banquet for two — your human enzymes take the simple sugars up front, while thirty-eight trillion ancient microbial partners in the back turn indigestible plants into vitamins, fuel, and lifelong immunity`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_escherich_1885_slide_metchnikoff_1907_yogurt_jar_and_germ_free_glove_port`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059. `generation_authorized` is `false` on every row.

@@ -1,0 +1,32 @@
+# 083 price review v01 (pre-VO plate boards)
+
+Gemini, 21 Oct 2026, J0753. Boards only. **No mint. No spend. No merge.**
+Prepared from `eyes_optics_script_master_v01.md` (`91.1/100 PASS`) and `SOURCES_v01.md` so 083's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Darkened Room in Cairo, the Peeled Ox Eye & Why 4 Billion People Wear Glasses | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — 1011–1021 AD: The Myth of Eye-Beams (Extramission) & Ibn al-Haytham's Darkened Room in Cairo (Camera Obscura) | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — 1604 & 1619: Johannes Kepler's Upside-Down Retina & Christoph Scheiner's Peeled Ox Eye — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — 1801 & 1862: Thomas Young's Calliper Test (Accommodation & Astigmatism) & Herman Snellen's 20/20 Eye Chart | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — The Living Camera in Your Head — & Why Your Brain Gives You a Fever at 37 °C | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Hasan Ibn al-Haytham, Johannes Kepler, Felix Platter, Christoph Scheiner, Benjamin Franklin, Thomas Young, Franciscus Cornelis Donders, Herman Snellen, Charles Blagden, Carl Wunderlich), 1011–1021 AD Cairo 5-lamp `camera obscura` intromission proof, 1604 Prague inverted retinal ray-tracing & 1619 peeled ox-eye flame demonstration, 27 November 1800 / 1801 London living-lens `accommodation` & 1862 Utrecht `20/20` eye chart, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (*Kitāb al-Manāẓir* Arabic optics manuscript, velvet trial-lens case & brass spectacles pan, 3-object callback bench, 1021 Cairo twin-eye anatomy manuscript with brass sighting tubes & pinhole screen, cutaway wooden `camera obscura` teaching box, 1604 *Ad Vitellionem Paralipomena* & 1619 *Oculus* refraction plates with wooden rivet spectacles, brass-and-glass optical bench lens demonstrator, 1862 Utrecht mahogany trial-lens set with brass trial frames & Young's 1801 optometer bar, cutaway eye model and brass spectacles beside clinical glass thermometer on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_al_haytham_1011_kepler_1604_scheiner_1619_young_1801_and_snellen_1862_eye_optics_chart` — Kepler (1604) & Donders/Snellen (1862) human eye ray-tracing (`~58–60 dioptres` at `24 mm` axial length; `±1 mm = ∓3 dioptres`) (`SCALE: every single millimetre your eyeball grows too long throws your focus off by three dioptres — meaning a difference smaller than the thickness of a British pound coin turns a sharp street sign across the road into a blurry smudge`)
+  2. `P1:06_herman_snellen_1862_utrecht_5x5_grid_optotype_and_5_arcminute_20_20_visual_acuity_chart` — Herman Snellen (1862, Utrecht) `5×5` grid optotype & `5-arcminute` (`1 arcminute` stroke at `20 ft / 6 m`) `20/20` visual acuity chart (`SCALE: reading the 20/20 line on Snellen's eye chart from twenty feet away requires your eye to distinguish gaps of just one-sixtieth of a degree — like spotting the space between two fingers held up from the far end of a tennis court`)
+  3. `P2:02_ibn_al_haytham_1011_1021_kitab_al_manazir_five_lamp_camera_obscura_ray_crossing_chart` — Ibn al-Haytham (1011–1021 AD *Kitāb al-Manāẓir / Book of Optics*) 5-lamp `camera obscura` straight-line ray crossing chart (`SCALE: if vision worked by shooting rays out of your pupils the way Euclid and Ptolemy claimed, opening your eyes at midnight would light up a pitch-black bedroom like a pair of car headlights — and staring at the sun would never hurt your eyes`)
+  4. `P3:02_johannes_kepler_1604_and_christoph_scheiner_1619_inverted_retinal_image_and_spectacle_ray_chart` — Johannes Kepler (1604 *Ad Vitellionem Paralipomena*) & Christoph Scheiner (1619 *Oculus*) inverted retinal image & concave vs convex spectacle lens ray-tracing chart (`SCALE: a pinhole camera needs no lens, so why does your eye have one? Because a pinhole tiny enough to make a sharp image lets in almost no light — your eye's lens lets your pupil open a hundred times wider in the dark while bending every spread-out ray back to a single pinpoint on your retina`)
+  5. `P4:02_thomas_young_1801_accommodation_astigmatism_and_donders_snellen_1862_1864_refractive_acuity_chart` — Thomas Young (1801 *Phil. Trans.*) ciliary-lens `accommodation` & `astigmatism` + Franciscus Donders & Herman Snellen (1862–1864) dioptre refractive scale & `20/20` chart (`SCALE: when you look up from your phone to a sign across the street, the living lens inside your eye flattens its curve by less than half a millimetre in a third of a second — faster and smoother than the autofocus motor in a modern digital camera`)
+  6. `P5:01_timeline_1011_1864_and_eye_optics_retinal_inversion_accommodation_snellen_chart` — completed timeline (1011 → 1864) + camera obscura, inverted retina, accommodation & 20/20 spectacles (`SCALE: from five oil lamps outside a darkened room in medieval Cairo to a peeled ox eye and the big letter E on an optician's wall, scientists unlocked how two spheres of jelly let us see the universe`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1011_pinhole_brass_screen_1604_glass_eye_model_and_1862_trial_spectacle_set`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062 > 063 > 064 > 065 > 066 > 067 > 068 > 069 > 070 > 071 > 072 > 073 > 074 > 075 > 076 > 077 > 078 > 079 > 080 > 081 > 082 > 083 > 084 > 085 > 086. `generation_authorized` is `false` on every row.

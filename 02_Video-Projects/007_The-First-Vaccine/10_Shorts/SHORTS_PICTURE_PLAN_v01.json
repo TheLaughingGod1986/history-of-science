@@ -1,0 +1,200 @@
+{
+  "film": "007",
+  "folder": "007_The-First-Vaccine",
+  "version": "v01",
+  "written": "2026-10-16",
+  "task": "J0365: timed Shorts plate boards v01 from locked vo_v02 takes. 100% reuse of the long's KEEP plate boards (0 extra Flow credits). Mint nothing.",
+  "long_board_version": "v02 (J0343 PASS)",
+  "totals": {
+    "shorts_count": 2,
+    "rows": 10,
+    "new_mints": 0,
+    "reuse_long_plates": 10,
+    "flow_credits_try1": 0,
+    "flow_credits_expected": 0,
+    "vertex_try1_gbp": 0.0,
+    "vertex_expected_gbp": 0.0
+  },
+  "shorts": [
+    {
+      "id": "Short_B",
+      "stem": "hos_007_short_B_v02",
+      "youtube_title": "Who Invented the First Vaccine?",
+      "promoted_long_title": "Why Vaccines Are Named After a Cow",
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "vo_duration_s": 25.52,
+      "vo_words": 59,
+      "vo_check": "PASS",
+      "vo_sha256_mp3": "f6d87c757cda1dd8de5254a4fac88c6fcf3fbba7e7d2ea189322f91396579625",
+      "hook_caption": "THEY NEVER CAUGHT IT",
+      "yellow_word": "CAUGHT IT",
+      "frame0_change_by_1s": "Milkmaid already walking past shuttered cottage at frame 0; wooden shutter behind her swings closed by 1.0 s.",
+      "teach_overlay": {
+        "kind": "WHO",
+        "text": "Edward Jenner (1749–1823) — country doctor",
+        "t_start_s": 16.2,
+        "t_end_s": 20.0,
+        "band": "16:9 centre band (clear of 0–2 s hook and 9–14 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01_milkmaid_street",
+          "t_start_s": 0.0,
+          "t_end_s": 4.6,
+          "use_s": 4.6,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P2:03_market_walk",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "The first vaccine began with milkmaids, who never caught smallpox.",
+          "crop_9x16": "9:16 centre-left crop on milkmaid's hand on the pail and shuttered house behind; hook caption THEY NEVER CAUGHT IT at 0.0–2.0 s."
+        },
+        {
+          "id": "S02_cow_and_hand",
+          "t_start_s": 4.6,
+          "t_end_s": 10.52,
+          "use_s": 5.92,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P2:01_milking_dawn + P2:02_healed_hand",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "They caught cowpox from the cows instead, a few sore spots and nothing more.",
+          "crop_9x16": "9:16 crop on milking at dawn (4.60–7.50 s) then healed hand on pail handle (7.50–10.52 s); long title card enters at 9.0 s."
+        },
+        {
+          "id": "S03_shuttered_street",
+          "t_start_s": 10.52,
+          "t_end_s": 15.98,
+          "use_s": 5.46,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P1:05_shuttered_street",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "And farmers swore that anyone who'd had it was safe from smallpox for life.",
+          "crop_9x16": "9:16 crop on quiet village street with closed shutters; promoted long title card on screen 9.0–14.0 s."
+        },
+        {
+          "id": "S04_jenner_window",
+          "t_start_s": 15.98,
+          "t_end_s": 21.82,
+          "use_s": 5.84,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P2:08_jenner_window",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "One country doctor, Edward Jenner, took the rumour seriously, and tested it.",
+          "crop_9x16": "9:16 crop on Edward Jenner writing at his surgery window; WHO card 'Edward Jenner (1749–1823) — country doctor' at 16.2–20.0 s."
+        },
+        {
+          "id": "S05_loop_return",
+          "t_start_s": 21.82,
+          "t_end_s": 25.52,
+          "use_s": 3.7,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P2:03_market_walk (loop window)",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "He was right, and it became the first vaccine.",
+          "crop_9x16": "Returns to opening milkmaid walk plate so the final frame loops seamlessly into frame 0."
+        }
+      ]
+    },
+    {
+      "id": "Short_C",
+      "stem": "hos_007_short_C_v02",
+      "youtube_title": "How Was Smallpox Eradicated?",
+      "promoted_long_title": "Why Vaccines Are Named After a Cow",
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "vo_duration_s": 24.8,
+      "vo_words": 57,
+      "vo_check": "PASS",
+      "vo_sha256_mp3": "8e0df68d5e82625ace5e1b41ee510649acf2101df8a30802e58ada5414c680e9",
+      "hook_caption": "GONE FOR GOOD",
+      "yellow_word": "GOOD",
+      "frame0_change_by_1s": "Turning globe with small lights going out at frame 0; the last light on one continent winks out by 1.0 s.",
+      "teach_overlay": {
+        "kind": "WHEN",
+        "text": "1980 · DECLARED GONE",
+        "t_start_s": 18.6,
+        "t_end_s": 22.0,
+        "band": "16:9 centre band (clear of 0–2 s hook and 9–14 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01_globe_lights",
+          "t_start_s": 0.0,
+          "t_end_s": 2.35,
+          "use_s": 2.35,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P5:02_globe_lights",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "Smallpox is gone. Forever.",
+          "crop_9x16": "9:16 centre crop on turning globe as lights wink out; hook caption GONE FOR GOOD at 0.0–2.0 s."
+        },
+        {
+          "id": "S02_three_in_ten",
+          "t_start_s": 2.35,
+          "t_end_s": 6.45,
+          "use_s": 4.1,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P1:07b_three_in_ten",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "For centuries it killed about three in every ten people it caught.",
+          "crop_9x16": "9:16 crop on ten silhouettes / shutters as three dim."
+        },
+        {
+          "id": "S03_phipps_test_1796",
+          "t_start_s": 6.45,
+          "t_end_s": 12.35,
+          "use_s": 5.9,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P3:08_boy_garden",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "Then, in 1796, one test showed that cowpox could protect you from it.",
+          "crop_9x16": "9:16 crop on healthy boy running in the garden; promoted long title card on screen 9.0–14.0 s."
+        },
+        {
+          "id": "S04_world_campaign",
+          "t_start_s": 12.35,
+          "t_end_s": 18.5,
+          "use_s": 6.15,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P5:01_world_campaign",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "Health workers spread that idea to every country, until smallpox had nowhere left to hide.",
+          "crop_9x16": "9:16 crop on global vaccination campaign map/ports."
+        },
+        {
+          "id": "S05_declared_gone_loop",
+          "t_start_s": 18.5,
+          "t_end_s": 24.8,
+          "use_s": 6.3,
+          "route": "reuse-long-plate",
+          "source_long_plate": "P5:03_who_1980 + P5:02_globe_lights (loop window)",
+          "flow_model": null,
+          "flow_credits_expected": 0,
+          "spoken": "In 1980, it was declared gone. The first disease humans ever wiped out.",
+          "crop_9x16": "WHEN stamp '1980 · DECLARED GONE' at 18.6–22.0 s, then final 4 s returns to turning globe for loop."
+        }
+      ]
+    }
+  ]
+}

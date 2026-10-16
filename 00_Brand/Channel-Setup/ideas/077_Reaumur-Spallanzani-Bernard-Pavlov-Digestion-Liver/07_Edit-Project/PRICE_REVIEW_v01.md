@@ -1,0 +1,32 @@
+# 077 price review v01 (pre-VO plate boards)
+
+Gemini, 20 Oct 2026, J0723. Boards only. **No mint. No spend. No merge.**
+Prepared from `digestion_script_master_v01.md` (`91.4/100 PASS`) and `SOURCES_v01.md` so 077's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Pet Buzzard's Iron Tube & the Washed Liver in Paris | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — 1752 & 1780: Réaumur's Pet Buzzard, Spallanzani's Swallowed Linen Bags & the Chemical Stomach | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — 1848 – 24 March 1857: Claude Bernard's Pancreatic Fat Proof, the Overnight Washed Liver (Glycogen) & the Milieu Intérieur — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — 1897–1904: Ivan Pavlov's Digestive Pouches, Sham Feeding & How the Brain Primes the Gut | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — The Internal Ocean Inside You — & What Happens When You Cut the Bridge Between the Left and Right Brain | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (René-Antoine Ferchault de Réaumur, Lazzaro Spallanzani, Giovanni Alfonso Borelli, William Prout, Theodor Schwann, Claude Bernard, Walter Bradford Cannon, Ivan Petrovich Pavlov, Paul Broca, Wilder Penfield, Roger Sperry, Michael Gazzaniga), 1752 Paris pet-buzzard perforated iron tubes & 1780 Pavia gastric-juice experiments, 1848–24 March 1857 Paris washed-liver `glycogen` discovery & `milieu intérieur`, 1897–1904 St Petersburg cephalic `vagus-nerve` digestive reflexes, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (1752 Réaumur engraving, perforated iron tubes & 1857 *Comptes Rendus* offprint pan, 3-object callback bench, grated iron cylinders with sponges & Spallanzani's wooden tubes and linen pouches, sculpted cutaway stomach & pepsin cleavage model, 1857 Paris liver-perfusion tray with Barreswil copper tubes & white glycogen powder, sculpted liver/pancreas/duodenum villi model, 1897 St Petersburg graduated gastric-juice flasks & 1904 Nobel scroll, sculpted digestive-liver model beside two-hemisphere brain model on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_reaumur_1752_spallanzani_1780_bernard_1857_pavlov_1897_and_cannon_1926_digestion_glycogen_chart` — `9 m` digestive tract (`~30 m²` villous surface), gastric HCl/pepsin (`pH 1.5–2.0`), Bernard's pancreatic lipolysis and `~100 g` hepatic `glycogen` buffer (`5 L` blood held at `~1.0 g/L` = `5 g` glucose), and Pavlov's vagal curve (`SCALE: all five litres of blood in your body hold just five grams of dissolved glucose at any moment — a single level teaspoon of sugar — because your liver acts like a rechargeable battery that locks away a whole cup of sugar after dinner and drips it out grain by grain while you sleep`)
+  2. `P1:06_claude_bernard_1855_1857_comptes_rendus_washed_liver_glycogen_chart` — Claude Bernard (1855 & 24 March 1857 *C. R. Acad. Sci.*) portal vs hepatic vein glucose & water-washed liver `glycogen` regeneration chart (`SCALE: flushing a dead liver with cold water until its sugar hit zero and finding it full of sugar again the next morning proved the liver isn't just a filter — it is a chemical pantry that bakes and slices its own animal starch`)
+  3. `P2:02_reaumur_1752_metal_tube_sponge_and_spallanzani_1780_chemical_gastric_juice_chart` — René-Antoine de Réaumur (1752) perforated metal buzzard tubes & Lazzaro Spallanzani (1780) chemical gastric-juice chart (`SCALE: by locking meat inside an iron cage that no muscle could squeeze and watching it melt away anyway, Réaumur proved that your stomach isn't a rock crusher — it is an acid bath that unzips food molecule by molecule`)
+  4. `P3:02_bernard_1848_1857_pancreatic_fat_and_washed_liver_glycogen_cannon_1926_homeostasis_chart` — Claude Bernard (1848–1857) pancreatic fat digestion & washed-liver `glycogen` chart + Walter Cannon (1926/1929) blood-glucose `homeostasis` band (`SCALE: Claude Bernard realized that you don't really live in the dry air of your bedroom — your cells still live inside a warm, salty internal ocean, and your liver is the thermostat that keeps that ocean's fuel supply from ever running dry`)
+  5. `P4:02_pavlov_1897_1902_work_of_digestive_glands_cephalic_vagus_and_secretin_curve_chart` — Ivan Pavlov (1897/1902 *The Work of the Digestive Glands*) Pavlov-pouch & sham-feeding vagus-nerve gastric secretion curve (`SCALE: Ivan Pavlov proved that digestion starts in your head before your fork even reaches your mouth — the smell of baking bread sends a vagus-nerve telegram down from your brain so your stomach acid is already warm and waiting when the first bite arrives`)
+  6. `P5:01_timeline_1752_1926_and_digestive_refinery_homeostasis_chart` — completed timeline (1752 → 1926) + chemical digestion, hepatic glycogen & homeostasis (`SCALE: from an iron tube coughed up by a pet buzzard to a washed liver on a Paris bench and a dog's dinner bowl in St Petersburg, scientists unlocked the chemical refinery that fuels every cell in your body`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1752_reaumur_iron_tube_1857_bernard_glycogen_jar_and_1897_pavlov_gastric_flask`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062 > 063 > 064 > 065 > 066 > 067 > 068 > 069 > 070 > 071 > 072 > 073 > 074 > 075 > 076 > 077 > 078 > 079 > 080. `generation_authorized` is `false` on every row.

@@ -1,0 +1,32 @@
+# 076 price review v01 (pre-VO plate boards)
+
+Gemini, 20 Oct 2026, J0706. Boards only. **No mint. No spend. No merge.**
+Prepared from `heart_script_master_v01.md` (`90.8/100 PASS`) and `SOURCES_v01.md` so 076's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Salt-Bucket Monster in Leiden & the Wrong Resistor in Buffalo | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — 1882–1883 & Summer 1906: Sidney Ringer's London Tap-Water Mistake & Keith and Flack's Farmhouse Discovery of the SA Node | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — May 1887 & 1901–1903: Bulldog 'Jimmy', Willem Einthoven's 600-Pound String Galvanometer & the P–Q–R–S–T Wave — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — 1956 – 7 May 1958: Wilson Greatbatch's Wrong Resistor & the First Implantable Pacemaker | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — Three Million Pacemakers Beating Today — & How a Pet Buzzard, a Washed Liver & Pavlov's Dogs Unlocked Digestion | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Sidney Ringer, Sunao Tawara, Arthur Keith, Martin William Flack, Augustus Desiré Waller, Willem Einthoven, Wilson Greatbatch, William M. Chardack, René-Antoine de Réaumur, Lazzaro Spallanzani, Claude Bernard, Ivan Pavlov), 1882–1883 London tap-water frog heart & Summer 1906 Kent `SA node`, May 1887 Bulldog `'Jimmy'` & 1901–1903 Leiden `600-lb string galvanometer` (`P–Q–R–S–T`), 7 May 1958 Buffalo `1-MΩ` wrong-resistor implantable pacemaker, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (1883 smoked-drum kymograph scroll, quartz-filament holder & 1903 *Pflügers Arch.* offprint pan, 3-object callback bench, 1906 Kent rotary microtome with serial heart slides & 1907 journal, sculpted cutaway heart conduction model, 1903 Leiden water-cooled string galvanometer coils & `P–Q–R–S–T` photographic scroll, brass `Einthoven's Triangle` & quartz-thread bow model, 1958 Buffalo `2 in³` epoxy pacemaker puck with `10 kΩ` vs `1 MΩ` resistors, modern coin-sized titanium pacemaker beside 1958 epoxy puck on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_ringer_1883_einthoven_1903_keith_flack_1907_and_greatbatch_1960_cardiac_conduction_ecg_chart` — `SA node` (`60–100 bpm` = `100,000 beats/day`), `AV node` (`0.1 s` delay), Einthoven's `~1 mV` `P–Q–R–S–T` wave (`2.5 µm` quartz string in `270 kg` magnet), and Greatbatch's `1 MΩ` / `1.8 ms` pacemaker pulse (`SCALE: the electrical signal that reaches your skin from your beating heart is just one millivolt — three thousand times weaker than a single AA torch battery — yet Willem Einthoven read it by watching the shadow of a quartz thread four times thinner than a red blood cell`)
+  2. `P1:06_einthoven_1901_1903_string_galvanometer_and_p_q_r_s_t_wave_chart` — Willem Einthoven (1901–1903 *Pflügers Arch.*) string galvanometer specification & `P–Q–R–S–T` wave chart (`SCALE: Einthoven's first ECG machine weighed as much as a grand piano, took five people to run, and needed underground telephone wires to carry heartbeats a mile from the hospital — today that same P-Q-R-S-T wave sits on a smartwatch on your wrist`)
+  3. `P2:02_ringer_1883_calcium_potassium_trace_and_keith_flack_1907_sa_node_conduction_chart` — Sidney Ringer (1883 *J. Physiol.*) `Ca²⁺/K⁺/Na⁺` heart contraction trace & Keith and Flack (April 1907) `SA node` conduction map (`SCALE: your heart's natural pacemaker — the sinoatrial node discovered by Keith and Flack — is smaller than a flattened grain of rice, yet that tiny speck of tissue fires three billion electrical sparks over your lifetime without a single wire from your brain`)
+  4. `P3:02_einthoven_1903_1906_string_galvanometer_p_q_r_s_t_and_leiden_telecardiogram_chart` — Willem Einthoven (1903 & 1906) `P–Q–R–S–T` trace vs Waller's 1887 capillary curve & `1.5 km` Leiden hospital-to-lab telecardiogram (`SCALE: Augustus Waller thought the ECG was a useless party trick for his pet bulldog — yet by stretching a quartz thread thinner than a cobweb inside a 600-pound magnet, Willem Einthoven built the lifeline that reads every heart attack on Earth`)
+  5. `P4:02_greatbatch_1958_1960_blocking_oscillator_1_megaohm_pacemaker_circuit_chart` — Wilson Greatbatch & William Chardack (7 May 1958 / October 1960 *Surgery*) `1 MΩ` (brown-black-green) vs `10 kΩ` (brown-black-orange) blocking-oscillator pacemaker schematic (`SCALE: misreading a single green stripe for an orange stripe on a resistor the size of a grain of wheat increased the resistance one hundred times — turning a sound recorder into a two-cubic-inch artificial SA node that now keeps over three million human hearts beating`)
+  6. `P5:01_timeline_1882_1970_and_modern_lithium_pacemaker_smartwatch_ecg_chart` — completed timeline (1882 → 1970) + lithium-iodide implantable pacemaker & smartwatch ECG (`SCALE: from a London tap-water mistake and a 600-pound magnet in Leiden to a single wrong resistor in a Buffalo barn, scientists learned to read and restart the electrical spark of life`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1883_ringer_flask_1903_einthoven_salt_bucket_and_1958_greatbatch_resistor_puck`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062 > 063 > 064 > 065 > 066 > 067 > 068 > 069 > 070 > 071 > 072 > 073 > 074 > 075 > 076 > 077. `generation_authorized` is `false` on every row.

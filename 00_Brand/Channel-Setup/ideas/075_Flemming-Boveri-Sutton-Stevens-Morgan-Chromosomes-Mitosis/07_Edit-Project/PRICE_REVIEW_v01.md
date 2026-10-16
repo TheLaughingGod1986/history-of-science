@@ -1,0 +1,32 @@
+# 075 price review v01 (pre-VO plate boards)
+
+Gemini, 20 Oct 2026, J0706. Boards only. **No mint. No spend. No merge.**
+Prepared from `chromosomes_script_master_v01.md` (`91.9/100 PASS`) and `SOURCES_v01.md` so 075's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The White-Eyed Fly in the Banana Bottle & the 46 Threads Inside You | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — 1879–1905: Walther Flemming's Dyed Salamander Threads, Boveri & Sutton's Grasshoppers, and Nettie Stevens's X and Y Chromosomes | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — May 1910: Sceptic Thomas Hunt Morgan & the One White-Eyed Fruit Fly That Proved Him Wrong — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — 1909–January 1913: Frans Janssens's Chiasmata & 19-Year-Old Alfred Sturtevant's All-Nighter Genetic Map | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — From the Fly Room to the Human Genome Project — & Why Your Heart Beats 100,000 Times a Day All by Itself | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Walther Flemming, Edouard van Beneden, Theodor Boveri, Walter Sutton, Nettie Maria Stevens, Thomas Hunt Morgan, Frans Alfons Janssens, Alfred Henry Sturtevant, Barbara McClintock, Sidney Ringer, Willem Einthoven, Arthur Keith, Martin Flack, Wilson Greatbatch), 1879 Kiel salamander mitosis & 1905 Bryn Mawr `XX/XY` sex chromosomes, May–July 1910 Columbia Fly Room white-eyed *Drosophila*, January 1913 Sturtevant six-gene linear chromosome map, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (1882 Flemming *Zellsubstanz* lithograph, aniline dye bottle & 1910 *Science* offprint pan, 3-object callback bench, 1905 Bryn Mawr camera-lucida mealworm drawings & slides, sculpted mitotic spindle & `X/Y` chromosome models, Columbia Fly Room milk bottles with brush & sorting plate, sculpted *Drosophila* 4-pair chromosome model, January 1913 *J. Exp. Zool.* map & index cards, 23-pair human karyotype display board beside milk bottle on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_flemming_1879_sutton_1903_stevens_1905_morgan_1910_and_sturtevant_1913_chromosome_chart` — diploid mitosis (`2n = 46 → 46 + 46`) vs haploid meiosis (`2n = 46 → 4 × 23`), `XX/XY` sex chromosomes, and Sturtevant's `1913` centimorgan gene map (`SCALE: packing two metres of DNA into forty-six microscopic chromosomes inside a cell nucleus six micrometres wide is like winding forty kilometres of ultra-fine sewing thread into forty-six neat bobbins inside a walnut shell — and then splitting every bobbin in half without a single knot`)
+  2. `P1:06_morgan_22_jul_1910_science_white_eye_cross_and_sturtevant_jan_1913_six_gene_map_chart` — Thomas Hunt Morgan (22 July 1910 *Science*) `3,470` red : `782` white-eyed male F₂ cross & Alfred Sturtevant (January 1913 *J. Exp. Zool.*) 6-gene linear X-chromosome map (`SCALE: Alfred Sturtevant realized that chromosomes swap pieces at random like two beaded necklaces tangling in a drawer — so if two beads get separated ten times more often than two others, they must sit ten times farther apart along the string`)
+  3. `P2:02_flemming_1882_mitosis_sutton_1903_meiosis_and_nettie_stevens_1905_xy_karyotype_chart` — Walther Flemming (1882) salamander mitosis phases, Walter Sutton (1903) grasshopper meiosis, and Nettie Stevens (1905) `XX/XY` sex chromosome karyotype (`SCALE: mitosis is like photocopying a forty-six-volume encyclopaedia so two libraries get the exact same set — while meiosis shuffles your mother's twenty-three volumes with your father's twenty-three volumes to print a brand-new twenty-three-volume edition for every egg or sperm`)
+  4. `P3:02_morgan_22_jul_1910_science_x_linked_white_eye_punnett_and_f2_count_chart` — Thomas Hunt Morgan (22 July 1910 *Science*) X-linked white-eye Punnett square & F₂ count (`2,459` red females, `1,011` red males, `782` white males, `0` white females) (`SCALE: because a male only has one X chromosome with no backup copy on his tiny Y chromosome, a recessive mutation on the X chromosome is like flying a single-engine plane — if that one engine sputters, you see it straight away, whereas a female flies with twin X engines`)
+  5. `P4:02_janssens_1909_chiasmata_and_sturtevant_jan_1913_six_gene_linear_chromosome_map_chart` — Frans Janssens (1909 *La Cellule*) meiotic chiasmata & Alfred Sturtevant (January 1913 *J. Exp. Zool.*) additive 6-gene linear map (`0.0 → 1.0 → 30.7 → 33.7 → 57.6 cM`) (`SCALE: Alfred Sturtevant mapped invisible genes the way you could map stations on an underground train line with your eyes closed — just by counting how often a random power cut stops the train between any two stations`)
+  6. `P5:01_timeline_1879_1956_and_tjio_levan_46_human_karyotype_genome_map_chart` — completed timeline (1879 → 1956) + Tjio & Levan (1956) `46` human chromosomes & Human Genome Project linkage map (`SCALE: from aniline fabric dye on salamander gills in Germany to rotting bananas in New York milk bottles, scientists proved that our entire hereditary blueprint rides on forty-six microscopic threads`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1879_flemming_stained_slide_1910_morgan_milk_bottle_and_1913_sturtevant_map_ruler`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062 > 063 > 064 > 065 > 066 > 067 > 068 > 069 > 070 > 071 > 072 > 073 > 074 > 075 > 076 > 077. `generation_authorized` is `false` on every row.

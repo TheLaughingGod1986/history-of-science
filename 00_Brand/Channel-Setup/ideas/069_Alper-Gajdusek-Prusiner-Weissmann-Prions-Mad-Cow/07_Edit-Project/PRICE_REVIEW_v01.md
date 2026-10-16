@@ -1,0 +1,32 @@
+# 069 price review v01 (pre-VO plate boards)
+
+Gemini, 19 Oct 2026, J0676. Boards only. **No mint. No spend. No merge.**
+Prepared from `prions_script_master_v01.md` (`92.0 PASS`) and `SOURCES_v01.md` so 069's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Radiation-Proof Mystery in London & the Domino Protein Inside Your Brain | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — 5 September 1959, 19 February 1966 & May–September 1967: Kuru, Sheep Scrapie & Tikvah Alper's Radiation-Proof Heresy | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — 9 April 1982 & 19 April 1985: Stanley Prusiner's Prion Heresy & the Enemy Inside Our Own Genome — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — 2 July 1993 & 1986–1997: Charles Weissmann's Knockout Mouse & the Mad Cow (BSE) Crisis | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — Why Prions Changed How We Understand Alzheimer's & Parkinson's — & How Crushed Yeast Unlocked Enzymes | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (William J. Hadlow, D. Carleton Gajdusek, Michael P. Alpers, Tikvah Alper, John Stanley Griffith, Stanley B. Prusiner, Charles Weissmann, Adriano Aguzzi, Emil Fischer, Eduard Buchner, James B. Sumner, David C. Phillips), May 1967 London 254 nm UV scrapie survival & PrPC-to-PrPSc domino conversion, 9 April 1982 UCSF prion rod purification & 19 April 1985 normal `PRNP` gene discovery, 2 July 1993 Zurich `Prnp⁰/⁰` knockout mouse proof, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (sculpted brass alpha-helix spring & flat beta-sheet dominoes with 1967 *Nature* offprint pan, 3-object callback bench, quartz UV cuvette rack & Griffith protein-dimer notebook, dual-stage comparison microscope with scrapie and kuru histology slides, machined ultracentrifuge rotor & PrP 27–30 electron micrograph, 3D alpha-helix vs beta-sheet ribbon models, 1993 Zurich 500-day knockout mouse ledger & brain-graft model, antibody-capped prion model & brass lock-and-key enzyme plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_alper_1967_uv_survival_and_prusiner_1982_1993_prpc_to_prpsc_conversion_chart` — Alper (20 May 1967 *Nature*) 254 nm UV survival curve + Pan & Prusiner (1 December 1993 *PNAS*) `PrP^C` (`43%` α-helix, `3%` β-sheet) → `PrP^Sc` (`30%` α-helix, `43%` β-sheet) conversion (`SCALE: a prion is not a living parasite with its own genetic blueprint — it is a single misfolded crystal seed that snaps normal springy brain proteins into flat rigid sheets on contact, like one toppling domino knocking down an entire room`)
+  2. `P1:06_weissmann_2_jul_1993_cell_prnp_knockout_mouse_resistance_chart` — Büeler, Aguzzi & Weissmann (2 July 1993 *Cell*) `Prnp⁰/⁰` knockout mouse survival chart (`100%` symptom-free `>500 days` vs `~23 weeks` in wild-type mice) (`SCALE: removing the normal prion gene from a mouse is like taking all the standing dominoes off the table — you can flick a diseased prion domino into the brain, but with no normal dominoes to hit, the chain reaction stops dead`)
+  3. `P2:02_hadlow_1959_gajdusek_1966_and_alper_20_may_1967_nature_uv_target_inactivation_chart` — Hadlow (5 September 1959 *Lancet*), Gajdusek, Gibbs & Alpers (19 February 1966 *Nature*), and Alper et al. (20 May 1967 *Nature*) ionizing / 254 nm UV radiation target-size & inactivation chart (`SCALE: blasting the scrapie agent with ultraviolet light that shreds DNA and RNA is like firing cannonballs at a ghost — every virus in the dish is blown apart, while the DNA-free scrapie particle walks straight through untouched`)
+  4. `P3:02_prusiner_1982_science_oesch_1985_cell_and_pan_1993_pnas_ftir_alpha_beta_chart` — Prusiner (9 April 1982 *Science*), Oesch, Hood, Prusiner & Weissmann (19 April 1985 *Cell*), and Pan et al. (1 December 1993 *PNAS*) FTIR secondary-structure & proteinase-K resistance chart (`SCALE: normal PrPC and deadly PrPSc are built from the exact same string of amino-acid beads — the difference is like folding the exact same sheet of steel into a soft mattress spring versus hammering it into a flat crowbar that bends every spring it touches into another crowbar`)
+  5. `P4:02_bueler_aguzzi_weissmann_2_jul_1993_cell_prion_titre_and_uk_bse_epidemic_chart` — Büeler, Aguzzi & Weissmann (2 July 1993 *Cell*) brain prion-titre curve over 50 weeks alongside the 1986–2000 UK BSE epidemic curve (`>180,000` cattle) (`SCALE: a normal mouse brain is a room packed with standing PrPC dominoes where one PrPSc spark triggers a fatal avalanche in twenty-three weeks, whereas a Prnp0/0 knockout mouse brain is an empty floor where the spark simply dies out`)
+  6. `P5:01_timeline_1957_1997_and_prion_like_template_blocking_antibody_chart` — completed timeline (1957 → 1997) + therapeutic antibody capping the PrPC-to-PrPSc contact interface (`SCALE: from mountain villages in Papua New Guinea to a radiation chamber in London and knockout mice in Zurich, prions proved that biological information can hide not just in a string of DNA letters, but in the 3D fold of a single protein`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1959_kuru_slide_1982_prion_ultracentrifuge_tube_and_domino_protein_model`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062 > 063 > 064 > 065 > 066 > 067 > 068 > 069 > 070 > 071. `generation_authorized` is `false` on every row.

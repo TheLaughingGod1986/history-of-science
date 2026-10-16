@@ -1,0 +1,32 @@
+# 065 price review v01 (pre-VO plate boards)
+
+Gemini, 19 Oct 2026, J0661. Boards only. **No mint. No spend. No merge.**
+Prepared from `immune_script_master_v01.md` (`91.8 PASS`) and `SOURCES_v01.md` so 065's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Rose Thorn in a Starfish & the Genetic Slot Machine Inside Your Blood | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — December 1882 & 4 December 1890: Metchnikoff's Starfish Rose Thorn (Phagocytes) vs Behring, Kitasato & Ehrlich's Blood Antibodies | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — October 1957 & May 1958: Linus Pauling's Wrong Guess & Frank Macfarlane Burnet's Clonal Selection Twist — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — October 1976: Susumu Tonegawa's Genetic Slot Machine (V(D)J Recombination) | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — Why You Can Still Catch a Cold Twice — & How Scientists Discovered Cancer Hides Inside Our Own Genes | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Élie Metchnikoff, Emil von Behring, Shibasaburo Kitasato, Paul Ehrlich, Frank Macfarlane Burnet, Gustav J. V. Nossal, Joshua Lederberg, Susumu Tonegawa, Nobumichi Hozumi, Peyton Rous, J. Michael Bishop, Harold Varmus, Alfred Knudson, David Lane), December 1882 Messina starfish rose-thorn phagocytes & 4 December 1890 Berlin diphtheria antitoxin serum, October 1957 Melbourne Clonal Selection & May 1958 `456 single-cell` microdroplet proof, October 1976 Basel `V(D)J` somatic DNA recombination, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (1882 brass monocular microscope, rose stem with thorns, serum vial & wooden Y-shaped antibody model pan, 3-object callback bench, 1884 lithographed rose-thorn phagocyte drawing & amber antitoxin serum bottles, Paul Ehrlich's 1900 carved wooden lock-and-key receptor models, 1958 glass microdroplet oil chamber slide & brass micromanipulator pipette, wooden rack of uniquely shaped brass padlocks & matching key, 1976 DNA restriction-fragment plot & interlocking `V-D-J` wooden blocks, brass Y-shaped antibody model & mutated viral spike on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_metchnikoff_1882_behring_1890_burnet_1957_tonegawa_1976_20000_genes_vs_10b_antibodies_chart` — human genome (`~20,000` genes) vs `>10¹⁰` (`10 billion`) unique B-cell antibody locks via Tonegawa's October 1976 somatic `V(D)J` recombination (`40 V × 23 D × 6 J` + junctional diversity) (`SCALE: if every one of your twenty thousand human genes were a single book, your immune system couldn't fill a small town library — yet by cutting and shuffling sentences from just a few dozen pages like a slot machine, your white blood cells print ten billion different security passcodes`)
+  2. `P1:06_burnet_1957_nossal_lederberg_1958_clonal_selection_2000_ab_per_sec_and_memory_curve_chart` — Burnet (1957) & Nossal and Lederberg (1958) Clonal Selection & Primary vs Secondary (`100×`, `2,000 antibodies/s`) immune response curve (`SCALE: once the right B-cell meets its matching virus, it clones itself into an army of factories where each single cell fires out two thousand Y-shaped antibody missiles every single second`)
+  3. `P2:02_metchnikoff_1884_behring_kitasato_1890_ehrlich_1900_innate_phagocytes_vs_antibodies_chart` — Metchnikoff (1882–1884) cellular phagocytosis vs Behring & Kitasato (4 December 1890) and Ehrlich (1900) lock-and-key humoral antibodies chart (`SCALE: your immune system fights with two armies at once — front-line phagocyte cells that swallow any stranger on sight within minutes, and custom-built antibody missiles that lock onto one exact target with pinpoint precision`)
+  4. `P3:02_burnet_oct_1957_and_nossal_lederberg_may_1958_456_single_cell_monospecificity_chart` — Burnet (October 1957, *Aust. J. Sci.* 20: 67–69) and Nossal & Lederberg (17 May 1958, *Nature* 181: 1419–1420) `456 single-cell` microdroplet monospecificity chart (`0` double producers = one cell, one antibody) (`SCALE: instead of waiting for a burglar to show up and moulding a lock around his key, your body pre-builds a hundred million different locks before you are even born and waits to see which door the burglar tries`)
+  5. `P4:02_hozumi_tonegawa_oct_1976_pnas_germline_vs_rearranged_b_cell_vdj_combinatorial_chart` — Hozumi & Tonegawa (October 1976, *PNAS* 73: 3628–3632) embryonic germline DNA vs rearranged adult B-cell `V(D)J` restriction-fragment & combinatorial diversity chart (`SCALE: with just three modularity reels — V, D, and J — plus random letters inserted at the joints, your DNA works like a combination lock where a few dozen dials can dial up ten billion different numbers`)
+  6. `P5:01_timeline_1882_1976_and_antigenic_drift_mutating_virus_coat_chart` — completed timeline (1882 → 1976) + measles stable surface antigen vs mutating influenza/rhinovirus antigenic drift diagram (`SCALE: from a Christmas rose thorn in a Sicilian starfish to a genetic slot machine in Switzerland, a century of discovery explained how twenty thousand human genes guard you against a universe of unseen invaders`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1882_starfish_slide_1890_antitoxin_vial_and_1976_vdj_blocks`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062 > 063 > 064 > 065 > 066 > 067 > 068. `generation_authorized` is `false` on every row.
