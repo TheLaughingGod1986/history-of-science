@@ -14,20 +14,20 @@ Joined file: `hos_006_full_join_v01.mp4`, 507.813 s (8:27.8), sha256 `7bf649f857
 
 NAS copy: `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v01/hos_006_full_join_v01.mp4`
 
-## picture_qa — FAIL, 6 of 91
+## picture_qa — PASS after Chief ruling (a), 16 Oct 2026 (J0331)
 
-All six are the same plate coming back later in the film on the stretch it already used. Each part passed on its own, because the repeat is in another part.
+The first run (J0312) FAILed 6 of 91. All six were the same plate coming back later in the film on the stretch it already used. Each part passed on its own, because the repeat is in another part. The plates are 6–8 s with the first stretch at offset 0, so a legal second stretch would need a longer plate.
 
-- 5:12 `07_priestley_callback` (`11_candle_tall_t1.mp4`) same stretch as 3:57
-- 6:55 `09_helmont_willow` (`06_garden_years_t2.mp4`) same stretch as 1:33
-- 7:00 `10_air_threads` (`01_willow_air_t1.mp4`) same stretch as 0:02
-- 7:11 `12_scales_barely` (`12_pointer_short_t1.mp4`) same stretch as 1:57
-- 7:16 `13_water_in_tree` (`05_pure_water_t1.mp4`) same stretch as 1:26
-- 8:04 `21_three_objects` (`03_pot_jar_leaf_t1.mp4`) same stretch as 0:11
+Chief ruling (a) (16 Oct, HOS #180): reuse waived, no mint, no full_join_v02. Recorded in `picture_qa_reviewed_ok_v01.json` (`kinds: ["reuse"]`). Re-run on the same master (`sha256 7bf649f8…`, NAS `full_join_v01/hos_006_full_join_v01.mp4`): **PASS, 0 of 91 fail.** The six callbacks are listed under "Passed on Claude's ruling" in `PICTURE_QA.md`. Log: `picture_qa_v02.txt`. The original FAIL log stays in `picture_qa_v01.txt`.
 
-Five WARNs (low detail), including the Part 02 pounds graphic that J0290 already reported as a WARN. Sheet: `picture_qa_review.jpg`.
+- 5:12 `07_priestley_callback` (`11_candle_tall_t1.mp4`) same stretch as 3:57 — waived
+- 6:55 `09_helmont_willow` (`06_garden_years_t2.mp4`) same stretch as 1:33 — waived
+- 7:00 `10_air_threads` (`01_willow_air_t1.mp4`) same stretch as 0:02 — waived
+- 7:11 `12_scales_barely` (`12_pointer_short_t1.mp4`) same stretch as 1:57 — waived
+- 7:16 `13_water_in_tree` (`05_pure_water_t1.mp4`) same stretch as 1:26 — waived
+- 8:04 `21_three_objects` (`03_pot_jar_leaf_t1.mp4`) same stretch as 0:11 — waived
 
-This is not a film PASS. Chief decides whether those six callbacks get a new stretch or a reviewed-ok.
+Five WARNs (low detail), unchanged, including the Part 02 pounds graphic that J0290 already reported as a WARN. Sheet: `picture_qa_review.jpg`.
 
 ## polish_gate — PASS
 
@@ -43,4 +43,4 @@ No new take. The VO is the locked v02 already accepted on the parts. Regeneratin
 
 ## Not a film PASS
 
-Parked for Chief. The six cross-part reuse FAILs and the one vo_check word are the open items. Teach rows for Codex are in `TEACH_OVERLAYS_v01.md`. No bed.
+Parked for Chief final OK and squash-merge of #335 (J0331). picture_qa now PASSes on ruling (a). The vo_check "fool"/"fall" word was already waived. No bed. No full_join_v02 and no mint. Teach rows for Codex are in `TEACH_OVERLAYS_v01.md`; J0332 waits on that merge.

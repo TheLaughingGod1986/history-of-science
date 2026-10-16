@@ -1,6 +1,6 @@
 {
-  "verdict": "FAIL",
-  "video": "/private/tmp/j0312-join/hos_006_full_join_v01.mp4",
+  "verdict": "PASS",
+  "video": "/private/tmp/j0331-join/hos_006_full_join_v01.mp4",
   "rules": {
     "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
     "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
@@ -11,86 +11,7 @@
     "same_stretch": 10.0,
     "pixels": "scripts/polish_gate.py"
   },
-  "failed": [
-    {
-      "cut": 57,
-      "row": "07_priestley_callback",
-      "source": "11_candle_tall_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 311.81,
-      "at": "5:12",
-      "fail": [
-        "reuse: same stretch as 3:57 (give it a new stretch, or a new render)"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 75,
-      "row": "09_helmont_willow",
-      "source": "06_garden_years_t2.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 414.67,
-      "at": "6:55",
-      "fail": [
-        "reuse: same stretch as 1:33 (give it a new stretch, or a new render)"
-      ],
-      "warn": [],
-      "offset": 4.0
-    },
-    {
-      "cut": 76,
-      "row": "10_air_threads",
-      "source": "01_willow_air_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 419.88,
-      "at": "7:00",
-      "fail": [
-        "reuse: same stretch as 0:02 (give it a new stretch, or a new render)"
-      ],
-      "warn": [],
-      "offset": 0.5
-    },
-    {
-      "cut": 78,
-      "row": "12_scales_barely",
-      "source": "12_pointer_short_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 431.08,
-      "at": "7:11",
-      "fail": [
-        "reuse: same stretch as 1:57 (give it a new stretch, or a new render)"
-      ],
-      "warn": [],
-      "offset": 1.0
-    },
-    {
-      "cut": 79,
-      "row": "13_water_in_tree",
-      "source": "05_pure_water_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 436.38,
-      "at": "7:16",
-      "fail": [
-        "reuse: same stretch as 1:26 (give it a new stretch, or a new render)"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 87,
-      "row": "21_three_objects",
-      "source": "03_pot_jar_leaf_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 483.6,
-      "at": "8:04",
-      "fail": [
-        "reuse: same stretch as 0:11 (give it a new stretch, or a new render)"
-      ],
-      "warn": [],
-      "offset": 2.3
-    }
-  ],
+  "failed": [],
   "warn": [
     {
       "cut": 13,
@@ -801,11 +722,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 311.81,
       "at": "5:12",
-      "fail": [
-        "reuse: same stretch as 3:57 (give it a new stretch, or a new render)"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 3:57 (give it a new stretch, or a new render)"
+        ]
+      }
     },
     {
       "cut": 58,
@@ -1003,11 +928,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 414.67,
       "at": "6:55",
-      "fail": [
-        "reuse: same stretch as 1:33 (give it a new stretch, or a new render)"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 4.0
+      "offset": 4.0,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 1:33 (give it a new stretch, or a new render)"
+        ]
+      }
     },
     {
       "cut": 76,
@@ -1016,11 +945,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 419.88,
       "at": "7:00",
-      "fail": [
-        "reuse: same stretch as 0:02 (give it a new stretch, or a new render)"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.5
+      "offset": 0.5,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 0:02 (give it a new stretch, or a new render)"
+        ]
+      }
     },
     {
       "cut": 77,
@@ -1040,11 +973,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 431.08,
       "at": "7:11",
-      "fail": [
-        "reuse: same stretch as 1:57 (give it a new stretch, or a new render)"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 1.0
+      "offset": 1.0,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 1:57 (give it a new stretch, or a new render)"
+        ]
+      }
     },
     {
       "cut": 79,
@@ -1053,11 +990,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 436.38,
       "at": "7:16",
-      "fail": [
-        "reuse: same stretch as 1:26 (give it a new stretch, or a new render)"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 1:26 (give it a new stretch, or a new render)"
+        ]
+      }
     },
     {
       "cut": 80,
@@ -1143,11 +1084,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 483.6,
       "at": "8:04",
-      "fail": [
-        "reuse: same stretch as 0:11 (give it a new stretch, or a new render)"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 2.3
+      "offset": 2.3,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 0:11 (give it a new stretch, or a new render)"
+        ]
+      }
     },
     {
       "cut": 88,
