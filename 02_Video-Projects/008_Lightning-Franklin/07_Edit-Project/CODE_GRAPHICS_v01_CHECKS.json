@@ -63,6 +63,10 @@
     "row": "P5:11_safe_path",
     "decode": "ok",
     "format": "ok",
-    "alpha": "not applicable"
+    "alpha": "not applicable",
+    "label": "SAFE PATH DOWN",
+    "label_words": 3,
+    "rendered_at": "2026-10-16T02:06+01:00",
+    "frames": 210
   }
 ]

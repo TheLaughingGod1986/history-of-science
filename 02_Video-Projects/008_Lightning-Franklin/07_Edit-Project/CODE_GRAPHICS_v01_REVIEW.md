@@ -2,6 +2,8 @@
 
 16 October 2026 · builder: codex · no creative PASS or final OK issued.
 
+**FIX, 16 Oct ~02:06 London (Cursor covering).** P5:11 only. Label is now **SAFE PATH DOWN** (3 words). Re-rendered `code_graphic_008_p5_11_safe_path.mp4` (210 frames, 1920×1080, 30 fps, no audio). The other ten MP4s and five alpha MOVs are the 00:37 renders, hashes unchanged. Frame at 2.5 s shows the new label. NAS mirror was not retried.
+
 Eleven silent 1920×1080, 30 fps MP4s follow the v03 board's `use_s` and film/part VO placements. Five additional ProRes 4444 MOVs contain straight alpha. Full-frame rows have a cream/gold/blue ink drawing on brown period paper, Didot italic labels, and drawn mechanisms. The builder uses the existing Pillow/ffmpeg house approach, with no API calls, generated imagery or paid dependencies. No VO or source board was changed.
 
 ## Files and reproduction
@@ -37,7 +39,7 @@ No local picture KEEP record exists for 008 yet. In particular P4:06 is only its
 Chief should review each graphic against its VO in motion, not only the contact sheet. Outstanding judgment points:
 
 - The Atlantic contour is a schematic ink coastline, not a verified historical 1752 map. Its geographical fidelity needs review or a sourced geometry revision before acceptance.
-- P5:11 retains the exact approved seven-word label “A SAFE PATH TO THE GROUND”; this conflicts with the four-word house limit. Chief decides shortening or an explicit exception. No wording exception was assumed by the worker.
+- P5:11 label is SAFE PATH DOWN (3 words), set by Chief on 16 Oct and re-rendered. The old seven-word line is gone.
 - Tick times and graphic events follow the boards; exact spoken-word alignment remains an assembly review against the locked audio. The builder does not replace the part VO or retime speech.
 - Five rows still require moving plates; plate alignment, composite readability and final UAT cannot be judged from these standalone alpha files.
 

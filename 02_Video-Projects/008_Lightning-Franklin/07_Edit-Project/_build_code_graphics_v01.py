@@ -143,20 +143,48 @@ def writer(p,alpha):
     cmd+=['-c:v','prores_ks','-profile:v','4','-pix_fmt','yuva444p10le','-threads','2'] if alpha else ['-c:v','libx264','-crf','18','-preset','fast','-pix_fmt','yuv420p','-threads','2']
     return subprocess.Popen(cmd+[str(p)],stdin=subprocess.PIPE)
 
+def lock_label(keyid, spec):
+    """Chief FIX, 16 Oct 2026: P5:11 is three words. A longer label must not render."""
+    if not keyid.startswith('P5:11'):
+        return spec
+    spec=dict(spec)
+    spec['label']='SAFE PATH DOWN'
+    spec['animation']=spec['animation'].replace('A SAFE PATH TO THE GROUND','SAFE PATH DOWN')
+    words=spec['label'].split()
+    if len(words)>4:
+        raise SystemExit(f'P5:11 label has {len(words)} words: {spec["label"]}')
+    return spec
+
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);ap.add_argument('--stills-only',action='store_true');args=ap.parse_args();args.out.mkdir(parents=True,exist_ok=True)
+    ap=argparse.ArgumentParser()
+    ap.add_argument('--out',type=Path,required=True)
+    ap.add_argument('--stills-only',action='store_true')
+    ap.add_argument('--only',default='',help='render just this row prefix, e.g. P5:11')
+    ap.add_argument('--replace',action='store_true',help='with --only, replace that row’s existing files')
+    args=ap.parse_args();args.out.mkdir(parents=True,exist_ok=True)
+    if args.replace and not args.only:
+        raise SystemExit('--replace requires --only')
     specs=json.loads((ROOT/'PICTURE_PLAN_v03.json').read_text())['code_graphics'];bg=paper();records=[];thumbs=[]
     for part in range(2,6):
         boardpath=ROOT/f'parts/part-{part:02}_plates_v03.json';board=json.loads(boardpath.read_text())
         for row in board['plates']:
             keyid=f"P{part}:{row['id']}"
             if keyid not in specs:continue
-            spec=specs[keyid];name=row['id'].split('_',1)[1];duration=row['use_s'];frames=math.ceil(duration*FPS);overlay=spec['layout_mode']=='moving_plate_overlay'
-            preview=args.out/spec['file'];alpha=preview.with_suffix('.mov');mid=min(2.7,duration*.75)
-            still=Image.alpha_composite(bg,graphic(name,mid,duration,spec['label'])).convert('RGB');still.save(preview.with_suffix('.jpg'));thumbs.append((keyid,still.copy()))
+            spec=lock_label(keyid, specs[keyid]);name=row['id'].split('_',1)[1];duration=row['use_s'];frames=math.ceil(duration*FPS);overlay=spec['layout_mode']=='moving_plate_overlay'
+            preview=args.out/spec['file'];alpha=preview.with_suffix('.mov');jpg=preview.with_suffix('.jpg');mid=min(2.7,duration*.75)
+            selected=not args.only or keyid.startswith(args.only)
+            if not selected:
+                if not jpg.exists():
+                    raise SystemExit(f'--only needs the existing still {jpg.name}')
+                thumbs.append((keyid, Image.open(jpg).convert('RGB')));continue
+            still=Image.alpha_composite(bg,graphic(name,mid,duration,spec['label'])).convert('RGB');still.save(jpg);thumbs.append((keyid,still.copy()))
             record=dict(row=keyid,film_start_s=row['t_s'],part_start_s=round(row['t_s']-board['vo_film_start_s'],3),use_s=duration,encoded_s=frames/FPS,vo_land=row['vo_land'],vo_file=board['vo_file'],vo_sha256=board['vo_sha256'],spec=spec,preview=preview.name,alpha=alpha.name if overlay else None,composite_pending=overlay,board_sha256=digest(boardpath))
             if not args.stills_only:
-                if preview.exists() or (overlay and alpha.exists()):raise RuntimeError(f'Refusing overwrite: {preview}')
+                if preview.exists() or (overlay and alpha.exists()):
+                    if not args.replace:
+                        raise RuntimeError(f'Refusing overwrite: {preview}')
+                    preview.unlink(missing_ok=True)
+                    if overlay:alpha.unlink(missing_ok=True)
                 proc=writer(preview,False);aproc=writer(alpha,True) if overlay else None
                 for frame in range(frames):
                     layer=graphic(name,frame/FPS,duration,spec['label'])
@@ -166,8 +194,20 @@ def main():
                     if p:p.stdin.close();assert p.wait()==0
                 probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-of','json',str(preview)]));v=probe['streams'][0]
                 assert (v['width'],v['height'],v['r_frame_rate'],int(v['nb_frames']))==(W,H,'30/1',frames)
+                assert not any(s.get('codec_type')=='audio' for s in probe['streams'])
                 record['technical_check']='1920x1080 / 30fps / expected frame count / no audio verified'
-            records.append(record);print(keyid,'rendered' if not args.stills_only else 'still',flush=True)
+                record['label_words']=len(spec['label'].split())
+            records.append(record);print(keyid, spec['label'], 'rendered' if not args.stills_only else 'still', flush=True)
+    if args.only:
+        manifest_path=args.out/'MANIFEST.json'
+        existing=json.loads(manifest_path.read_text()) if manifest_path.exists() else []
+        by={r['row']:r for r in records}
+        merged=[]
+        seen=set()
+        for old in existing:
+            merged.append(by.get(old['row'], old));seen.add(old['row'])
+        merged.extend(r for r in records if r['row'] not in seen)
+        records=merged
     sheet=Image.new('RGB',(1440,math.ceil(len(thumbs)/3)*310),(45,33,23));d=ImageDraw.Draw(sheet)
     for i,(label,img) in enumerate(thumbs):
         x=(i%3)*480;y=(i//3)*310;sheet.paste(img.resize((480,270)),(x,y));d.text((x+12,y+278),label,fill='white',font=ImageFont.truetype(FONT,22,index=1))
