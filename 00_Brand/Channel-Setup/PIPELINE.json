@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-16",
-  "updated_by": "cursor (J0343)",
+  "updated_by": "codex (J0308)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -160,7 +160,10 @@
         },
         "scheduled": {
           "status": "done",
-          "note": "Thu 15 Oct 18:00; pin + Related at 18:05"
+          "note": "Long GHZDsiH7L7A confirmed Public 16 Oct. J0308 Dalton v02 -sa2t7dAtCk Private + 16 Nov 11:30 UK/UTC; custom frame-0 cover and Related to 004 saved. Buffer held until public.",
+          "owner": "codex",
+          "since": "2026-10-16",
+          "underway": false
         }
       }
     },
