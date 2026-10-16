@@ -58,10 +58,10 @@
     "row": "s06_It",
     "timeline_in": 15.277,
     "timeline_out": 18.103,
-    "source": "08_knots_valve_t4.mp4",
+    "source": "11_two_fingers_t3.mp4",
     "upscale": 1.0,
     "framing": {
-      "offset": 4.6
+      "offset": 4.0
     },
     "video": true
   },

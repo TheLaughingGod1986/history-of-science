@@ -554,3 +554,21 @@ Claude accepted the Short (splice, 1.58 s loop) with one fix (desk PR #180 comme
 - **Phone copy:** iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v02/` (sha matches).
 
 **STOP: Ben's final OK** on both back-catalogue Shorts, covers and titles (Claude sends the package). Nothing uploaded or scheduled.
+
+## J0416 s05_dalton_v02 seam & reuse fix — Gemini, 17 Oct 2026
+
+- **What:** Fixed `polish_gate` horizontal seams on `s02_Hydrogen` (0:07, WHO card shade feathered with cosine ramp) and `s04_Why` (0:12, `02_atomic_theory_v01` shifted to `in_s=0.80` to clear early desk-edge seam while keeping the 4.0 s paper close-up out, plus feathered title shade), and fixed `picture_qa` reuse FAIL on `s06_hydrogen` (0:20, swapped repeated `05_fixed_amounts_v01` to unused Part 02 plate `20_what_is_order_v01` at `in_s=0.40, crop_x=500`). £0 spend, existing Part 02 plates only.
+- **File:** `10_Shorts/hos_004_s05_dalton_v02.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v02.mp4`), **24.533 s**, 64 words, sha256 `e7f5a6347c5f391c54ce0cadca896f508dce2fe3c6e1f267298267dd26ac3601`.
+- **Record & QA:** `10_Shorts/SHORT_s05_dalton_v02.json`, `10_Shorts/qa_s05_dalton_v02/polish_gate_s05_dalton_v02.json`, `10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s05_dalton_v02.mp4  dur=24.53s  audio=-22.1dB  motion=10.24  dhash=86db1e1e0e060e19   (--air-date 2026-11-10)
+PASS  hos_004_s05_dalton_v02.mp4  0:24.53  mean -22.1 dB  peak -3.8 dB  157 wpm
+   first minute: title_question 11.3s
+freezedetect: 0 events []
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/polish_gate_s05_dalton_v02.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+

@@ -24,6 +24,7 @@ if VENV_PY.exists() and Path(sys.executable) != VENV_PY:
 
 import argparse  # noqa: E402
 import json  # noqa: E402
+import math  # noqa: E402
 import shutil  # noqa: E402
 
 from PIL import Image, ImageDraw, ImageFont  # noqa: E402
@@ -32,16 +33,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _build_shorts_v03 as b  # noqa: E402
 
 HERE, PROJ = b.HERE, b.PROJ
+ALT_PROJ = Path("/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates")
+MEDIA_PROJ = PROJ if (PROJ / "04_Generated-Clips/part04").exists() else ALT_PROJ
 SID = "s05_valves"
 VER = "v01"
-JOB = "J0254"
+JOB = "J0416"
 WORK = HERE / f"_work_{SID}_{VER}"
-RAW_VO = PROJ / "02_Voiceover/part04_the_tied_arm_v01_raw.mp3"
-RAW_ALIGN = PROJ / "02_Voiceover/part04_the_tied_arm_v01_raw_align.json"
+RAW_VO = MEDIA_PROJ / "02_Voiceover/part04_the_tied_arm_v01_raw.mp3"
+RAW_ALIGN = MEDIA_PROJ / "02_Voiceover/part04_the_tied_arm_v01_raw_align.json"
 FIRST, LAST, BEFORE_LAST = "Now", "easily.", "through"
 WIN = (46.0, 69.9)
 MAX_PAUSE = 0.6
-BED = PROJ / "05_Music/hos005-part04-temp_score_bed_v01.mp3"
+BED = MEDIA_PROJ / "05_Music/hos005-part04-temp_score_bed_v01.mp3"
 HOOK = "DOORS IN **VEINS**"
 CARD = ("FABRICIUS", "Padua, c. 1600")
 CARD_IN, CARD_OUT, CARD_FADE = 5.5, 8.95, 0.35
@@ -51,7 +54,7 @@ SCRIPT_TXT = WORK / f"{SID}.txt"
 
 
 def P4(name: str) -> Path:
-    return b.CLIPS / f"part04/raw/v01/{name}.mp4"
+    return MEDIA_PROJ / f"04_Generated-Clips/part04/raw/v01/{name}.mp4"
 
 
 # (index of the word the plate lands on, plate, in-point s, crop x on 1920×1080); "loop" = last 4 s.
@@ -60,7 +63,7 @@ BEATS = [(0, P4("13_one_way_t3"), 0.3, 656),             # Now the little doors.
          (13, P4("08_knots_valve_t4"), 0.1, 656),        # Each one is a valve, the flaps Fabricius found.
          (22, P4("09_push_stops_t3"), 0.3, 800),         # Harvey presses a finger on a vein
          (30, P4("09_push_stops_t3"), 3.4, 800),         # and pushes the blood towards the hand.
-         (36, P4("08_knots_valve_t4"), 4.6, 656),        # It stops dead at the next valve.
+         (36, P4("11_two_fingers_t3"), 4.0, 656),        # It stops dead at the next valve. (Unused Part 04 KEEP take.)
          (43, P4("10_slides_heart_t3"), 0.5, 1100),      # He pushes it the other way,
          ("loop", P4("13_one_way_t3"), 0.3, 656)]        # towards the heart, and it slides through easily.
 
@@ -122,8 +125,13 @@ def render_card(path: Path, alpha: float = 1.0) -> dict:
     shade = Image.new("RGBA", (b.W, b.H), (0, 0, 0, 0))
     sd = ImageDraw.Draw(shade)
     top = y1 - size1 - 30
-    for yy in range(top, BAND_TOP + BAND_H):
-        a = int(140 * min(1.0, (yy - top) / 120))
+    bot = BAND_TOP + BAND_H + 80
+    feather_in, feather_out = 120, 120
+    for yy in range(top, bot):
+        ramp_in = min(1.0, (yy - top) / feather_in)
+        ramp_out = min(1.0, (bot - yy) / feather_out)
+        w = 0.5 * (1.0 - math.cos(math.pi * min(ramp_in, ramp_out)))
+        a = int(140 * w)
         sd.line([(0, yy), (b.W, yy)], fill=(0, 0, 0, a))
     img = Image.alpha_composite(img, shade)
     d = ImageDraw.Draw(img)
@@ -160,7 +168,7 @@ def build(air_date: str) -> dict:
         out = WORK / f"seg_{k:02d}.mp4"
         b.seg(src, out, ins, d, x)
         segs.append(out)
-        plan.append({"t0": t, "t1": round(end, 3), "plate": src.relative_to(PROJ).as_posix(), "in_s": ins,
+        plan.append({"t0": t, "t1": round(end, 3), "plate": src.relative_to(MEDIA_PROJ).as_posix(), "in_s": ins,
                      "crop_x": x, "lands_on": w if w in (0, "loop") else words[w][0]})
     (WORK / "pic.txt").write_text("".join(f"file '{s.name}'\n" for s in segs))
     pic = WORK / "picture.mp4"
@@ -188,8 +196,9 @@ def build(air_date: str) -> dict:
     title_png = WORK / "cap_title.png"
     b.render(title_png, b.TITLE, 62, 250, index=2, stroke=4)
     shade = Image.new("RGBA", (b.W, b.H), (0, 0, 0, 0))
-    for yy in range(560):
-        a = int(150 * (1 - yy / 560) ** 1.5)
+    for yy in range(620):
+        w = 0.5 * (1.0 + math.cos(math.pi * yy / 620))
+        a = int(150 * w)
         ImageDraw.Draw(shade).line([(0, yy), (b.W, yy)], fill=(0, 0, 0, a))
     Image.alpha_composite(shade, Image.open(title_png)).save(title_png)
     overlays.append((title_png, b.TITLE_IN, b.TITLE_OUT, "title", b.TITLE))
@@ -222,7 +231,7 @@ def build(air_date: str) -> dict:
     (WORK / "timeline.json").write_text(json.dumps({"plan": plan, "overlays": timeline}, indent=2) + "\n")
     return {"id": SID, "job": JOB, "test": "B (search-titled)", "air_date_draft": air_date,
             "file": mp4.relative_to(PROJ).as_posix(), "sha256": b.sha256(mp4), "duration_s": round(b.probe(mp4), 3),
-            "vo_source": RAW_VO.relative_to(PROJ).as_posix(), "vo_window_raw_s": list(WIN),
+            "vo_source": RAW_VO.relative_to(MEDIA_PROJ).as_posix(), "vo_window_raw_s": list(WIN),
             "vo_s": round(vo_s, 3), "words": len(words), "max_pause_s": MAX_PAUSE,
             "bed": BED.name, "bed_gain_db": round(bed_gain, 2), "hook": HOOK.replace("**", ""),
             "hook_layer": hook_meta, "who_card": card_meta, "title_on_screen": b.TITLE,
@@ -272,8 +281,10 @@ def main() -> None:
     rec["stills"] = stills
     if not ns.no_icloud:
         b.ICLOUD.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(mp4, b.ICLOUD / mp4.name)
-        rec["icloud"] = str(b.ICLOUD / mp4.name)
+        dst = b.ICLOUD / mp4.name
+        dst.unlink(missing_ok=True)
+        shutil.copy2(mp4, dst)
+        rec["icloud"] = str(dst)
     (HERE / f"SHORT_{SID}_{VER}.json").write_text(json.dumps(rec, indent=2) + "\n")
     print(f"BUILT {SID} {rec['duration_s']} s {rec['words']} words sha {rec['sha256'][:12]} "
           f"captions {rec['caption_check']}")

@@ -1,9 +1,9 @@
 s01_0     1.1s 13_one_way_t3.mp4            ok
-s02_Along     4.0s 06_veins_swell_t1.mp4        WARN low detail: edge density 0.0313 < film p5 0.0582
-s03_Each     7.8s 08_knots_valve_t4.mp4        FAIL split panel: horizontal seam at 0.656
+s02_Along     4.0s 06_veins_swell_t1.mp4        WARN low detail: edge density 0.0313 < film p5 0.0425
+s03_Each     7.8s 08_knots_valve_t4.mp4        ok
 s04_Harvey    11.5s 09_push_stops_t3.mp4         ok
 s05_pushes    14.1s 09_push_stops_t3.mp4         ok
-s06_It    16.7s 08_knots_valve_t4.mp4        ok
+s06_It    16.7s 11_two_fingers_t3.mp4        ok
 s07_He    18.9s 10_slides_heart_t3.mp4       ok
 s08_loop    21.7s loop_end_13_one_way_t3.mp4   ok
-polish gate FAIL: 1 of 8 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v01/polish_gate_s05_valves_v01.json
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v01/polish_gate_s05_valves_v01.json

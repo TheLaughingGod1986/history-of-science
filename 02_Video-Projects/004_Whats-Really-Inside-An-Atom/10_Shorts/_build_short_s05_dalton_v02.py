@@ -28,6 +28,7 @@ if VENV_PY.exists() and Path(sys.executable) != VENV_PY:
 import argparse  # noqa: E402
 import hashlib  # noqa: E402
 import json  # noqa: E402
+import math  # noqa: E402
 import re  # noqa: E402
 import shutil  # noqa: E402
 import subprocess  # noqa: E402
@@ -84,9 +85,9 @@ BEATS = [
     (0, P2("01_dalton_schoolroom_v01"), 0.40, 656),   # Every element… Dalton at the balance, frame 0.
     (17, P2("05_fixed_amounts_v01"), 0.40, 656),      # Hydrogen / Oxygen. Replaces 03_weights_line. No letters.
     (24, P2("07_water_always_v01"), 2.00, 656),       # Gold is heavier still. Gold sphere, not the wood ball.
-    (28, P2("02_atomic_theory_v01"), 0.20, 656),      # Why believe him? Early frames only (papers stay out).
+    (28, P2("02_atomic_theory_v01"), 0.80, 656),      # Why believe him? 0.80–3.49 s clears desk-edge seam and keeps papers out.
     (34, P2("04_gold_heavier_v01"), 0.15, 656),       # same fixed amounts. No letters.
-    (47, P2("05_fixed_amounts_v01"), 4.30, 656),      # Water … tiny pieces. Later frames of 05, still no letters.
+    (47, P2("20_what_is_order_v01"), 0.40, 500),      # Water … tiny pieces. Unused Part 02 plate (0.40–3.82 s, crop 500), no letters/gutter.
     ("loop", P2("01_dalton_schoolroom_v01"), 0.40, 656),
 ]
 
@@ -277,8 +278,13 @@ def render_card(path: Path) -> dict:
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sd = ImageDraw.Draw(shade)
     top = y1 - size1 - 30
-    for yy in range(top, BAND_TOP + BAND_H):
-        a = int(140 * min(1.0, (yy - top) / 120))
+    bot = BAND_TOP + BAND_H + 80
+    feather_in, feather_out = 120, 120
+    for yy in range(top, bot):
+        ramp_in = min(1.0, (yy - top) / feather_in)
+        ramp_out = min(1.0, (bot - yy) / feather_out)
+        w = 0.5 * (1.0 - math.cos(math.pi * min(ramp_in, ramp_out)))
+        a = int(140 * w)
         sd.line([(0, yy), (W, yy)], fill=(0, 0, 0, a))
     img = Image.alpha_composite(img, shade)
     d = ImageDraw.Draw(img)
@@ -348,8 +354,9 @@ def build(air_date: str) -> dict:
     title_png = WORK / "cap_title.png"
     render(title_png, TITLE, 62, 250, index=2, stroke=4)
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    for yy in range(560):
-        a = int(150 * (1 - yy / 560) ** 1.5)
+    for yy in range(620):
+        w = 0.5 * (1.0 + math.cos(math.pi * yy / 620))
+        a = int(150 * w)
         ImageDraw.Draw(shade).line([(0, yy), (W, yy)], fill=(0, 0, 0, a))
     Image.alpha_composite(shade, Image.open(title_png)).save(title_png)
     overlays.append((title_png, TITLE_IN, TITLE_OUT, "title", TITLE))
@@ -380,7 +387,7 @@ def build(air_date: str) -> dict:
     timeline = [{"role": r, "text": t, "t0": round(a, 3), "t1": round(c, 3)} for _, a, c, r, t in overlays]
     timeline.append({"role": "who", "text": " · ".join(CARD), "t0": CARD_IN, "t1": CARD_OUT})
     (WORK / "timeline.json").write_text(json.dumps({"plan": plan, "overlays": timeline}, indent=2) + "\n")
-    return {"id": SID, "job": "J0306", "fixes": "J0298 v01", "test": "B (search-titled)", "air_date_draft": air_date,
+    return {"id": SID, "job": "J0416", "fixes": "J0306 v02 (feathered shades + unused P2 plate on s06)", "test": "B (search-titled)", "air_date_draft": air_date,
             "file": mp4.relative_to(PROJ).as_posix(), "sha256": sha256(mp4), "duration_s": round(probe(mp4), 3),
             "vo_source": RAW_VO.relative_to(PROJ).as_posix(), "vo_take_indices": TAKE,
             "dropped": "however you make it.",
@@ -446,8 +453,10 @@ def main() -> None:
     rec["stills"] = stills
     if not ns.no_icloud:
         ICLOUD.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(mp4, ICLOUD / mp4.name)
-        rec["icloud"] = str(ICLOUD / mp4.name)
+        dst = ICLOUD / mp4.name
+        dst.unlink(missing_ok=True)
+        shutil.copy2(mp4, dst)
+        rec["icloud"] = str(dst)
     rec["autocomplete_check"] = {
         "date": "2026-10-15",
         "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
@@ -463,10 +472,11 @@ def main() -> None:
     rec["who_card_note"] = "card is the long's own label JOHN DALTON · Manchester, 1808, on screen 2.2–6.7 s, just after the hook, because this lift does not speak the name. Clear of the 0–2 s hook and the 9–14 s title, so 'Why believe him?' already has a face and a name."
     rec["plate_audit"] = {
         "replaced": "03_weights_line_v01 (Hp/Hg/Op tiles) is not in v02",
-        "05_fixed_amounts": "2 fps centre crop of all 8 s: wooden molecule models, no letters. Opening stretch for Hydrogen / Oxygen; a later stretch (in 4.3 s) for Water and tiny pieces.",
+        "05_fixed_amounts": "2 fps centre crop of all 8 s: wooden molecule models, no letters. Opening stretch for Hydrogen / Oxygen.",
         "07_water_always": "gold sphere for 'Gold is heavier still'. Background chalkboard is a line schematic with no readable words (checked a zoom at 2.2 s and the 2 fps sheet).",
-        "02_atomic_theory": "only 0.2 s through about 3 s, brass stands and wood balls. The later paper close-up is not used.",
+        "02_atomic_theory": "0.80 s through 3.49 s, brass stands and wood balls (clears the early desk-edge seam and keeps the later paper close-up out).",
         "04_gold_heavier": "no letters. Wood balls on the 'same fixed amounts' line only. The gold line uses 07, so the soft wood-grain note is cleared.",
+        "20_what_is_order": "0.40 s through 3.82 s (crop_x 500), glowing brass-and-glass apparatus on the oak table for 'Water is always the same mix… tiny pieces with fixed weights.' No letters, no Explorer, replaces second appearance of 05_fixed_amounts.",
         "06_water_ratio": "rejected: the shelves read 1808.",
         "08_ruler_of_weights": "rejected: the ruler carries numerals.",
         "01_dalton_schoolroom": "frame 0 and the loop. Wall charts are illegible line diagrams, the same plate v01 already used and Chief did not fail.",

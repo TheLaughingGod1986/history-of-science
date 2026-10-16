@@ -854,3 +854,22 @@ PASS  hos_005_s05_valves_v01.mp4  0:23.70  mean -23.8 dB  peak -3.9 dB  144 wpm
 Gate run with `--air-date 2026-11-29` (gate only). Caption check 19 changes, ratio 1.0. Freezedetect 0 events.
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## J0416 s05_valves_v01 seam & reuse fix — Gemini, 17 Oct 2026
+
+- **What:** Fixed `polish_gate` horizontal seam on `s03_Each` (0:08, FABRICIUS WHO card shade feathered with cosine ramp, plus feathered title shade) and fixed `picture_qa` reuse FAIL on `s06_It` (0:17, swapped repeated `08_knots_valve_t4` to unused Part 04 KEEP plate `11_two_fingers_t3` at `in_s=4.0, crop_x=656`). £0 spend, existing Part 04 KEEP plates only.
+- **File:** `10_Shorts/hos_005_s05_valves_v01.mp4` (untracked local + iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v01.mp4`), **23.70 s**, 57 words, sha256 `a4e7e6416f4f6c9857da73496cc2c3b61d50f7ab4f8b4fbb226fdb46d3f1920f`.
+- **Record & QA:** `10_Shorts/SHORT_s05_valves_v01.json`, `10_Shorts/qa_s05_valves_v01/polish_gate_s05_valves_v01.json`, `10_Shorts/qa_s05_valves_v01/picture_qa_s05_valves_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_005_s05_valves_v01.mp4  dur=23.7s  audio=-23.8dB  motion=12.76  dhash=fe1f96eb9c6028aa   (--air-date 2026-11-29)
+PASS  hos_005_s05_valves_v01.mp4  0:23.70  mean -23.8 dB  peak -3.9 dB  144 wpm
+   warn  pace 144 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+   warn  replace at ~0:07.92: script 'valve the flaps fabricius found harvey presses' / heard 'valve the flaps fabriceus found harvey presses' — sounds alike (likely the transcriber); listen
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v01/polish_gate_s05_valves_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v01/picture_qa_s05_valves_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v01/picture_qa_s05_valves_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+

@@ -39,7 +39,7 @@
     "source": "02_atomic_theory_v01.mp4",
     "upscale": 1.0,
     "framing": {
-      "offset": 0.2
+      "offset": 0.8
     },
     "video": true
   },
@@ -58,10 +58,10 @@
     "row": "s06_hydrogen",
     "timeline_in": 17.892,
     "timeline_out": 21.312,
-    "source": "05_fixed_amounts_v01.mp4",
+    "source": "20_what_is_order_v01.mp4",
     "upscale": 1.0,
     "framing": {
-      "offset": 4.3
+      "offset": 0.4
     },
     "video": true
   },

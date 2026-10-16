@@ -1,4 +1,2 @@
-FAIL   0:07 row s02_Hydrogen 05_fixed_amounts_v01.mp4: split panel: horizontal seam at 0.656
-FAIL   0:12 row s04_Why 02_atomic_theory_v01.mp4: split panel: horizontal seam at 0.767
-FAIL   0:20 row s06_hydrogen 05_fixed_amounts_v01.mp4: reuse: same stretch as 0:07 (give it a new stretch, or a new render)
-picture QA FAIL: 3 of 7 cuts fail, 0 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/picture_qa_review.jpg
+WARN   0:07 row s02_Hydrogen 05_fixed_amounts_v01.mp4: low detail: edge density 0.0296 < film p5 0.0341
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/picture_qa_review.jpg

@@ -1,10 +1,10 @@
 {
   "id": "s05_valves",
-  "job": "J0254",
+  "job": "J0416",
   "test": "B (search-titled)",
   "air_date_draft": "2026-11-29",
   "file": "10_Shorts/hos_005_s05_valves_v01.mp4",
-  "sha256": "bea80a80838c2c72afa02dc409a978ecc7467749566484929c733aee8e7814cd",
+  "sha256": "a4e7e6416f4f6c9857da73496cc2c3b61d50f7ab4f8b4fbb226fdb46d3f1920f",
   "duration_s": 23.7,
   "vo_source": "02_Voiceover/part04_the_tied_arm_v01_raw.mp3",
   "vo_window_raw_s": [
@@ -87,8 +87,8 @@
     {
       "t0": 15.277,
       "t1": 18.103,
-      "plate": "04_Generated-Clips/part04/raw/v01/08_knots_valve_t4.mp4",
-      "in_s": 4.6,
+      "plate": "04_Generated-Clips/part04/raw/v01/11_two_fingers_t3.mp4",
+      "in_s": 4.0,
       "crop_x": 656,
       "lands_on": "It"
     },
@@ -130,25 +130,5 @@
     "10_Shorts/_work_s05_valves_v01/hos_005_s05_valves_v01_t011.5.jpg",
     "10_Shorts/_work_s05_valves_v01/hos_005_s05_valves_v01_t022.7.jpg"
   ],
-  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v01.mp4",
-  "autocomplete_check": {
-    "date": "2026-10-15",
-    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
-    "hits": [
-      "why do veins have valves",
-      "what are valves in veins",
-      "how do valves in veins work",
-      "valves in veins"
-    ],
-    "no_hits": [
-      "what do valves in veins do (only 'done'/'does' variants)",
-      "who discovered valves in veins (only '... of heart')"
-    ],
-    "note": "'Why Do Veins Have Valves?' is an exact hit; the lifted VO answers it: each valve stops blood pushed towards the hand and lets it slide through towards the heart. Alt: 'How Do Valves in Veins Work?'. Chief's call."
-  },
-  "air_date_draft_note": "2026-11-29 used for the gate only (clear of 005 A 30 Oct, s04 31 Oct, B 8 Nov, C 15 Nov); slot is Chief's call",
-  "who_card_note": "card 5.5-8.95 s over 08_knots_valve_t4 (Fabricius's vein drawing, no figure on screen) while 'Each one is a valve, the flaps Fabricius found.' is spoken; the name lands at ~8.5 s, so the card leads the name by ~3 s to stay clear of the 9-14 s title. Line two from the long's Part 02 VO ('Around sixteen hundred, in Padua') and label FABRICIUS \u00b7 PADUA",
-  "vo_note": "Stretch from part04_the_tied_arm_v01_raw (46.5-69.5 s). The long's Part 04 v02/v03 fix replaced only the 'artery throbs' sentence (part 13.5-18 s), so this stretch is the long's own take. vo_check warn 'fabriceus' is the transcriber.",
-  "plates_keep_source": "07_Edit-Project/_desk/part04_report_2026-10-02.md KEEP table",
-  "overlap_note": "No overlap with s01 (sum), s02 (tied arm swelling), s03 (capillaries), s04 (Galen stove): this is the valve push test."
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v01.mp4"
 }

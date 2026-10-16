@@ -1,11 +1,11 @@
 {
   "id": "s05_dalton",
-  "job": "J0306",
-  "fixes": "J0298 v01",
+  "job": "J0416",
+  "fixes": "J0306 v02 (feathered shades + unused P2 plate on s06)",
   "test": "B (search-titled)",
   "air_date_draft": "2026-11-10",
   "file": "10_Shorts/hos_004_s05_dalton_v02.mp4",
-  "sha256": "9c33636797e06a66bbffa29976028702565fc1e89c2d2473f44d65982c458634",
+  "sha256": "e7f5a6347c5f391c54ce0cadca896f508dce2fe3c6e1f267298267dd26ac3601",
   "duration_s": 24.533,
   "vo_source": "02_Voiceover/05_Master/hos_004_part02_vo_v01.mp3",
   "vo_take_indices": [
@@ -138,7 +138,7 @@
       "t0": 10.929,
       "t1": 13.618,
       "plate": "04_Generated-Clips/part02/raw/v01/02_atomic_theory_v01.mp4",
-      "in_s": 0.2,
+      "in_s": 0.8,
       "crop_x": 656,
       "lands_on": "Why"
     },
@@ -153,9 +153,9 @@
     {
       "t0": 17.892,
       "t1": 21.312,
-      "plate": "04_Generated-Clips/part02/raw/v01/05_fixed_amounts_v01.mp4",
-      "in_s": 4.3,
-      "crop_x": 656,
+      "plate": "04_Generated-Clips/part02/raw/v01/20_what_is_order_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 500,
       "lands_on": "hydrogen"
     },
     {
@@ -204,10 +204,11 @@
   "who_card_note": "card is the long's own label JOHN DALTON \u00b7 Manchester, 1808, on screen 2.2\u20136.7 s, just after the hook, because this lift does not speak the name. Clear of the 0\u20132 s hook and the 9\u201314 s title, so 'Why believe him?' already has a face and a name.",
   "plate_audit": {
     "replaced": "03_weights_line_v01 (Hp/Hg/Op tiles) is not in v02",
-    "05_fixed_amounts": "2 fps centre crop of all 8 s: wooden molecule models, no letters. Opening stretch for Hydrogen / Oxygen; a later stretch (in 4.3 s) for Water and tiny pieces.",
+    "05_fixed_amounts": "2 fps centre crop of all 8 s: wooden molecule models, no letters. Opening stretch for Hydrogen / Oxygen.",
     "07_water_always": "gold sphere for 'Gold is heavier still'. Background chalkboard is a line schematic with no readable words (checked a zoom at 2.2 s and the 2 fps sheet).",
-    "02_atomic_theory": "only 0.2 s through about 3 s, brass stands and wood balls. The later paper close-up is not used.",
+    "02_atomic_theory": "0.80 s through 3.49 s, brass stands and wood balls (clears the early desk-edge seam and keeps the later paper close-up out).",
     "04_gold_heavier": "no letters. Wood balls on the 'same fixed amounts' line only. The gold line uses 07, so the soft wood-grain note is cleared.",
+    "20_what_is_order": "0.40 s through 3.82 s (crop_x 500), glowing brass-and-glass apparatus on the oak table for 'Water is always the same mix\u2026 tiny pieces with fixed weights.' No letters, no Explorer, replaces second appearance of 05_fixed_amounts.",
     "06_water_ratio": "rejected: the shelves read 1808.",
     "08_ruler_of_weights": "rejected: the ruler carries numerals.",
     "01_dalton_schoolroom": "frame 0 and the loop. Wall charts are illegible line diagrams, the same plate v01 already used and Chief did not fail.",
