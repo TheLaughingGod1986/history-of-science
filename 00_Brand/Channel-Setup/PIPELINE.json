@@ -452,7 +452,7 @@
           "status": "blocked",
           "due": "2026-11-15",
           "owner": "Cursor",
-          "note": "J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.",
+          "note": "J0336 v04 plate boards KEEP (Chief PASS 15 Oct) + J0380 v05 Teach/Polish overlay sync (cfebdab3): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse; 16 teach_overlay specs); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v05.md.",
           "since": "2026-10-15",
           "underway": false,
           "waiting": "mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal"
@@ -480,7 +480,7 @@
       "title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
       "air": "2026-12-03",
       "ready_by": "2026-11-29",
-      "summary": "Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293). Picture next after Claude's board review and credit.",
+      "summary": "Long VO v01 locked (5 parts, 500 s); Chief KEEP all five, no pickups (desk 6101773293). Thirteen £0 code graphics PASS (J0348). Plate boards v03 + Shorts plate boards v01 (007–010) + 013 v02 & 011 v01 pre-VO boards prepared in J0380; parked for Chief price pass. No mint.",
       "stages": {
         "topic": {
           "status": "done"
@@ -518,10 +518,18 @@
           "waiting": "after 010 long VO"
         },
         "picture": {
-          "status": "todo",
+          "status": "blocked",
           "due": "2026-11-22",
-          "owner": "Cursor",
-          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes"
+          "owner": "chief",
+          "since": "2026-10-16",
+          "underway": false,
+          "steps": [
+            13,
+            73
+          ],
+          "steps_unit": "board rows rendered (13 £0 code graphics PASS J0348)",
+          "note": "J0380 v03 plate boards prepared (73 rows: 47 Quality / 11 Fast / 13 £0 code graphics PASS J0348 / 1 edit-hold / 1 reuse; Flow expected 12,393, try-1 4,810) + Shorts boards v01 (007–010, 0 Flow) + 013 pre-VO boards v02 (55 rows, Flow expected 8,289) + 011 pre-VO boards v01 (34 rows, Flow expected 5,599). No mint. See PRICE_REVIEW_v03.md.",
+          "waiting": "Chief price pass on J0380 boards; mint after 006 (0 Flow), 007, 008, 009 and the ~12 Nov AI Ultra renewal"
         },
         "edit": {
           "status": "todo",

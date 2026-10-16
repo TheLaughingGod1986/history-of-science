@@ -1,0 +1,96 @@
+{
+  "film": "011_Surgery-Before-Anaesthesia",
+  "version": "v01",
+  "written": "2026-10-16",
+  "task": "J0380: HOS 011 pre-VO plate boards v01 (from surgery_script_master_v02.md + CLAUDE_QUOTE_CHECK_v01.md + cfebdab3 markers). Flow-first. Mint nothing. Parked for Chief.",
+  "script": "surgery_script_master_v02.md (locked for Chief after Claude quote check + cfebdab3 Teach/Polish markers)",
+  "facts_pass": "SOURCES_v01.md + CLAUDE_QUOTE_CHECK_v01.md",
+  "vo_status": "Awaiting Chief script sign-off and long VO recording; rows re-time automatically onto Scribe STT once VO locks.",
+  "readings": {
+    "flow_credits_left": 23740,
+    "flow_read_at": "2026-10-15T21:42:22Z",
+    "vertex_promo_gbp": 71.02,
+    "vertex_usable_gbp": 70.02
+  },
+  "totals": {
+    "rows": 34,
+    "Quality": 21,
+    "Fast": 8,
+    "code_graphic": 4,
+    "reuse": 1,
+    "flow_credits_try1": 2180,
+    "flow_credits_expected": 5599,
+    "vertex_try1_gbp": 26.88,
+    "vertex_expected_gbp": 69.31,
+    "explorer": 2,
+    "teach_overlays": 20
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "title": "Part 01 \u2014 The Fastest Knife",
+      "rows": 8,
+      "Quality": 5,
+      "Fast": 2,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 520,
+      "flow_credits_expected": 1335,
+      "vertex_try1_gbp": 5.76,
+      "vertex_expected_gbp": 14.82
+    },
+    {
+      "part": 2,
+      "title": "Part 02 \u2014 A Gas That Made People Laugh",
+      "rows": 7,
+      "Quality": 4,
+      "Fast": 2,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 420,
+      "flow_credits_expected": 1076,
+      "vertex_try1_gbp": 5.44,
+      "vertex_expected_gbp": 13.92
+    },
+    {
+      "part": 3,
+      "title": "Part 03 \u2014 This Is No Humbug",
+      "rows": 7,
+      "Quality": 6,
+      "Fast": 1,
+      "code_graphic": 0,
+      "reuse": 0,
+      "flow_credits_try1": 610,
+      "flow_credits_expected": 1574,
+      "vertex_try1_gbp": 7.2,
+      "vertex_expected_gbp": 18.86
+    },
+    {
+      "part": 4,
+      "title": "Part 04 \u2014 The Fight Over Who Was First",
+      "rows": 4,
+      "Quality": 2,
+      "Fast": 2,
+      "code_graphic": 0,
+      "reuse": 0,
+      "flow_credits_try1": 220,
+      "flow_credits_expected": 558,
+      "vertex_try1_gbp": 3.2,
+      "vertex_expected_gbp": 7.97
+    },
+    {
+      "part": 5,
+      "title": "Part 05 \u2014 Across the Ocean",
+      "rows": 8,
+      "Quality": 4,
+      "Fast": 1,
+      "code_graphic": 2,
+      "reuse": 1,
+      "flow_credits_try1": 410,
+      "flow_credits_expected": 1056,
+      "vertex_try1_gbp": 5.28,
+      "vertex_expected_gbp": 13.74
+    }
+  ],
+  "mint_order": "006 > 007 > 008 > 009 > 010 > 011. Nothing in 011 is generation_authorized."
+}
