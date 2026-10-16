@@ -408,12 +408,14 @@ Executed the 4-point Acting-Chief ruling (Claude, 14 Oct 20:50Z) on Flow (CDP 92
 - **VO (0 spend):** `02_Voiceover/part05_carbon_from_the_sky_v01_raw.mp3` claim-first lift (word indices `70..113` + `125..142`, dropping the `"We now know that"` lead-in and `"So here is what van Helmont's willow was really made of."` bridge): *"A leaf takes in carbon dioxide through tiny pores. It draws up water through its roots. Then, with the energy of sunlight, it joins them together into sugar, and lets the spare oxygen go. That sugar becomes everything else: leaves, roots, bark and wood. About half of dry wood is carbon, and every bit of that carbon came out of the air."* 62 words, pauses capped at 0.45 s, `atempo=1.02`, 24.977 s VO + 0.55 s tail = 25.533 s total.
 - **Picture & bed (0 spend):** Chief-KEPT plates `P5:06_leaf_in_t1` (frame 0 and 3.2 s loop), `P2:05_pure_water_t1`, `P5:07_sugar_oxygen_t1`, `P4:05_bubbles_macro_t1`, `P5:08_sugar_wood_t1`, `P5:14_built_from_sky_t1`, `P1:01_willow_air_t1`. Own-synthesis warm harmonic pad (`hos006_s04_synth_pad_v01.wav`) at −20 dB under VO. Hook **AIR TO WOOD** (WOOD in yellow). Person/date card **DE SAUSSURE · Geneva, 1804** at 18.5–22.1 s (3.6 s, lower third of 16:9 centre band, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.33–25.45 s.
 - **Title draft:** *How Does Photosynthesis Work?* (signed-out GB YouTube autocomplete exact hit, 16 Oct 2026; alts *How Do Leaves Make Food for the Plant?*, *What Is Wood Made Of?*).
-- **File:** `10_Shorts/hos_006_s04_photosynthesis_v01.mp4`, 25.533 s, sha256 `f298fc6a7e4163f3cda3c2cfcd46d52a23d526dfbcd1d5f6f247558e29c6e2e0`; phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s04_photosynthesis_v01.mp4`.
+- **File:** `10_Shorts/hos_006_s04_photosynthesis_v01.mp4`, 25.533 s, sha256 `1198f5671f2960e2bfe49755578f90eb07c5c4ff6124a665bb0d056b1799b524` (J0399: feathered bottom of WHO card shade so alpha ramps smoothly to 0 instead of dropping 140 → 0 at `BAND_TOP + BAND_H`); phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s04_photosynthesis_v01.mp4`.
 
 ```
 PASS  hos_006_s04_photosynthesis_v01.mp4  dur=25.53s  audio=-23.9dB  motion=10.73  dhash=202051d11e804ea6
    sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s04_photosynthesis_v01_open_sheet.jpg
 PASS  hos_006_s04_photosynthesis_v01.mp4  0:25.53  mean -23.9 dB  peak -4.0 dB  146 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/polish_gate_s04_photosynthesis_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/picture_qa_s04_photosynthesis_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/picture_qa_s04_photosynthesis_v01/picture_qa_review.jpg
 ```
 
 Gate run with `--air-date 2026-11-19` (gate only). Caption check: 18 changes, ratio 1.0. Freezedetect: 0 events.

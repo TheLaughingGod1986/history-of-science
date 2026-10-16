@@ -319,8 +319,13 @@ def render_card(path: Path) -> dict:
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sd = ImageDraw.Draw(shade)
     top = y1 - size1 - 30
-    for yy in range(top, BAND_TOP + BAND_H):
-        a = int(140 * min(1.0, (yy - top) / 120))
+    bot = BAND_TOP + BAND_H + 80
+    feather_in, feather_out = 120, 120
+    for yy in range(top, bot):
+        ramp_in = min(1.0, (yy - top) / feather_in)
+        ramp_out = min(1.0, (bot - yy) / feather_out)
+        w = 0.5 * (1.0 - math.cos(math.pi * min(ramp_in, ramp_out)))
+        a = int(140 * w)
         sd.line([(0, yy), (W, yy)], fill=(0, 0, 0, a))
     img = Image.alpha_composite(img, shade)
     d = ImageDraw.Draw(img)
@@ -499,8 +504,10 @@ def main() -> None:
     rec["stills"] = stills
     if not ns.no_icloud:
         ICLOUD.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(mp4, ICLOUD / mp4.name)
-        rec["icloud"] = str(ICLOUD / mp4.name)
+        dst = ICLOUD / mp4.name
+        dst.unlink(missing_ok=True)
+        shutil.copy2(mp4, dst)
+        rec["icloud"] = str(dst)
     rec["autocomplete_check"] = {
         "date": "2026-10-16",
         "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",

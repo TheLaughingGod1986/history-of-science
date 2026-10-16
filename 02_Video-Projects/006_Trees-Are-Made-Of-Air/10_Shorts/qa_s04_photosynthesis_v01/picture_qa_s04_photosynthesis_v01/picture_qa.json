@@ -1,6 +1,6 @@
 {
-  "verdict": "FAIL",
-  "video": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s04_photosynthesis_v01.mp4",
+  "verdict": "PASS",
+  "video": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s04_photosynthesis_v01.mp4",
   "rules": {
     "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
     "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
@@ -11,21 +11,7 @@
     "same_stretch": 10.0,
     "pixels": "scripts/polish_gate.py"
   },
-  "failed": [
-    {
-      "cut": 6,
-      "row": "s07_About",
-      "source": "01_willow_air_t1.mp4",
-      "title": "Flow Veo 3.1 plate 01_willow_air_t1.mp4",
-      "t": 20.41,
-      "at": "0:20",
-      "fail": [
-        "split panel: horizontal seam at 0.656"
-      ],
-      "warn": [],
-      "offset": 0.5
-    }
-  ],
+  "failed": [],
   "warn": [
     {
       "cut": 2,
@@ -117,9 +103,7 @@
       "title": "Flow Veo 3.1 plate 01_willow_air_t1.mp4",
       "t": 20.41,
       "at": "0:20",
-      "fail": [
-        "split panel: horizontal seam at 0.656"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 0.5
     },

@@ -4,6 +4,6 @@ s03_Then,     8.1s 07_sugar_oxygen_t1.mp4       WARN low detail: edge density 0.
 s04_and    11.4s 05_bubbles_macro_t1.mp4      ok
 s05_That    13.8s 08_sugar_wood_t1.mp4         ok
 s06_leaves,    16.8s 14_built_from_sky_t1.mp4     ok
-s07_About    20.4s 01_willow_air_t1.mp4         FAIL split panel: horizontal seam at 0.656
+s07_About    20.4s 01_willow_air_t1.mp4         ok
 s08_loop    23.9s loop_end_06_leaf_in_t1.mp4   ok
-polish gate FAIL: 1 of 8 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/polish_gate_s04_photosynthesis_v01.json
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/polish_gate_s04_photosynthesis_v01.json
