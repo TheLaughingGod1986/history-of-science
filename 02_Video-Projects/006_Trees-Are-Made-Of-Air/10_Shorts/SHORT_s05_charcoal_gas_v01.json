@@ -1,0 +1,205 @@
+{
+  "id": "s05_charcoal_gas",
+  "job": "J0390",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-26",
+  "file": "10_Shorts/hos_006_s05_charcoal_gas_v01.mp4",
+  "sha256": "06fbeceda494be07be4b4b5b5084b5a27c6bff4d1ce8973c11b3d05972d48c4c",
+  "duration_s": 26.133,
+  "vo_source": "02_Voiceover/part02_five_years_and_two_ounces_v01_raw.mp3",
+  "vo_take_indices": [
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304
+  ],
+  "dropped": [],
+  "route": "contiguous lift: Van Helmont also burned sixty-two pounds of charcoal \u2026 He never put the two together.",
+  "vo_s": 25.558,
+  "words": 62,
+  "max_pause_s": 0.4,
+  "atempo": 1.03,
+  "bed": "hos006_s05_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -23.5,
+  "hook": "WOOD TO GAS",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 79.2
+  },
+  "who_card": {
+    "name": "VAN HELMONT",
+    "line2": "Near Brussels, early 1600s",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Willow Tree That Was Made of Air",
+  "youtube_title_draft": "Who Discovered Carbon Dioxide?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.947,
+      "plate": "04_Generated-Clips/part02/raw/v01/18_charcoal_hearth_t1.mp4",
+      "in_s": 0.25,
+      "crop_x": 420,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.947,
+      "t1": 7.248,
+      "plate": "04_Generated-Clips/part02/raw/v01/19_ash_mound_t1.mp4",
+      "in_s": 0.15,
+      "crop_x": 520,
+      "lands_on": "and"
+    },
+    {
+      "t0": 7.248,
+      "t1": 12.562,
+      "plate": "04_Generated-Clips/part02/raw/v01/20_shimmer_coals_t1.mp4",
+      "in_s": 0.25,
+      "crop_x": 260,
+      "lands_on": "The"
+    },
+    {
+      "t0": 12.562,
+      "t1": 15.928,
+      "plate": "04_Generated-Clips/part02/raw/v01/stretches_v03/15_desk_candle_t1_above_desk_v03.mp4",
+      "in_s": 0.2,
+      "crop_x": 656,
+      "lands_on": "He"
+    },
+    {
+      "t0": 15.928,
+      "t1": 19.63,
+      "plate": "04_Generated-Clips/part05/raw/v01/06_leaf_in_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "We"
+    },
+    {
+      "t0": 19.63,
+      "t1": 23.108,
+      "plate": "04_Generated-Clips/part02/raw/v01/06_garden_years_t2.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "He"
+    },
+    {
+      "t0": 23.108,
+      "t1": 26.108,
+      "plate": "04_Generated-Clips/part02/raw/v01/18_charcoal_hearth_t1.mp4",
+      "in_s": 0.25,
+      "crop_x": 420,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 20,
+  "caption_check": {
+    "ok": true,
+    "changes": 20,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_006_s05_charcoal_gas_v01.mp4  dur=26.13s  audio=-23.8dB  motion=10.72  dhash=98c06b227e7bfdf0\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s05_charcoal_gas_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_006_s05_charcoal_gas_v01.mp4  0:26.13  mean -23.8 dB  peak -4.4 dB  145 wpm"
+  },
+  "freezedetect_starts": [],
+  "stills": [
+    "10_Shorts/_work_s05_charcoal_gas_v01/hos_006_s05_charcoal_gas_v01_t000.0.jpg",
+    "10_Shorts/_work_s05_charcoal_gas_v01/hos_006_s05_charcoal_gas_v01_t003.8.jpg",
+    "10_Shorts/_work_s05_charcoal_gas_v01/hos_006_s05_charcoal_gas_v01_t011.5.jpg",
+    "10_Shorts/_work_s05_charcoal_gas_v01/hos_006_s05_charcoal_gas_v01_t025.1.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s05_charcoal_gas_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-16",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "who discovered carbon dioxide",
+      "how is carbon dioxide formed",
+      "where does carbon dioxide come from",
+      "what happens when wood burns",
+      "what is charcoal made of",
+      "why does wood turn to ashes"
+    ],
+    "note": "'Who Discovered Carbon Dioxide?' and 'What Happens When Wood Burns?' are exact signed-out GB YouTube autocomplete hits. The lifted VO opens on van Helmont burning 62 pounds of charcoal down to 1 pound of ash, naming the vanished 61 pounds 'gas' \u2014 the carbon dioxide that his willow tree was actually built from. Chief's call."
+  },
+  "air_date_draft_note": "2026-11-26 used for the gate only (clear of 006 long 5 Nov, Short A 6 Nov, Short B 17 Nov, s04 19 Nov); slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 01 VO and label VAN HELMONT \u00b7 Near Brussels, early 1600s, on screen 2.15\u20135.75 s (3.6 s) right after 'Van Helmont' is spoken. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the 23.2\u201326.2 s CTA.",
+  "overlap_note": "No overlap with 006 Short A (200 lb soil / 169 lb willow), Short B (Priestley's mint & candle), Short C (Ingenhousz's sunny/shady window jars), or Short s04 (Part 05 leaf-to-sugar-to-wood synthesis): this is the Part 02 62 lb charcoal \u2192 1 lb ash & coining of 'gas' (carbon dioxide)."
+}

@@ -419,3 +419,22 @@ PASS  hos_006_s04_photosynthesis_v01.mp4  0:25.53  mean -23.9 dB  peak -4.0 dB  
 Gate run with `--air-date 2026-11-19` (gate only). Caption check: 18 changes, ratio 1.0. Freezedetect: 0 events.
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## 16 Oct 2026 — Short `s05_charcoal_gas_v01` (Test B, second search-titled lift from Part 02, OWB J0390)
+
+- **Selection:** HOS 004 and 005 each have 2 search-titled Shorts (`s04` and `s05`); HOS 006 had 1 search-titled Short (`s04_photosynthesis_v01`), so `s05_charcoal_gas_v01` completes 006's pair of Test B search-titled Shorts.
+- **VO (0 spend):** `02_Voiceover/part02_five_years_and_two_ounces_v01_raw.mp3` contiguous lift (word indices `243..304`): *"Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind. The rest had vanished into the air, as a wild, invisible spirit. He gave it a new name: gas. We now know that gas was mostly carbon dioxide. He had discovered the very thing his tree was made of. He never put the two together."* 62 words, pauses capped at 0.40 s, `atempo=1.03`, 25.581 s VO + 0.55 s tail = 26.133 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P2:18_charcoal_hearth_t1` (frame 0 and 3.0 s loop), `P2:19_ash_mound_t1` (`0.15–3.45 s` < `4.0 s` trim), `P2:20_shimmer_coals_t1`, `P2:stretches_v03/15_desk_candle_t1_above_desk_v03`, `P5:06_leaf_in_t1`, `P2:06_garden_years_t2`. Own-synthesis warm harmonic pad (`hos006_s05_synth_pad_v01.wav`) at −20 dB under VO. Hook **WOOD TO GAS** (GAS in yellow). Person/date card **VAN HELMONT · Near Brussels, early 1600s** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 23.13–26.05 s.
+- **Title draft:** *Who Discovered Carbon Dioxide?* (signed-out GB YouTube autocomplete exact hit, 16 Oct 2026; alts *What Happens When Wood Burns?*, *Why Does Wood Turn to Ashes?*).
+- **File:** `10_Shorts/hos_006_s05_charcoal_gas_v01.mp4`, 26.133 s, sha256 `06fbeceda4944be5f75101e99166033b419ab0d7becc9d27328209f8961aa9b6`; phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s05_charcoal_gas_v01.mp4`.
+
+```
+PASS  hos_006_s05_charcoal_gas_v01.mp4  dur=26.13s  audio=-23.8dB  motion=10.72  dhash=98c06b227e7bfdf0
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s05_charcoal_gas_v01_open_sheet.jpg
+PASS  hos_006_s05_charcoal_gas_v01.mp4  0:26.13  mean -23.8 dB  peak -4.4 dB  145 wpm
+```
+
+Gate run with `--air-date 2026-11-26` (gate only). Caption check: 20 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
