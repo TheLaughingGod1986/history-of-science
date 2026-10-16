@@ -1,0 +1,1 @@
+picture QA PASS: 0 of 1 cuts fail, 0 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/picture_qa_part01_v01/PICTURE_QA.md
