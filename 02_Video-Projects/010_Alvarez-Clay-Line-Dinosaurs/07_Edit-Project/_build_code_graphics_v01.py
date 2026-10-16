@@ -245,13 +245,29 @@ def grazer(d, x, y, a):
 
 
 def hunter(d, x, y, a):
+    """Side-view theropod facing the plant-eater: long tail, two legs, open jaw."""
     c = col(CREAM, a)
-    d.ellipse((x - 36, y - 150, x + 36, y - 40), outline=c, width=5)
-    d.ellipse((x - 22, y - 196, x + 22, y - 150), outline=c, width=5)
-    d.line((x - 18, y - 40, x - 28, y + 36), fill=c, width=5)
-    d.line((x + 16, y - 40, x + 26, y + 36), fill=c, width=5)
-    d.line((x - 30, y - 120, x - 70, y - 90), fill=c, width=4)
-    d.line((x + 54, y - 70, x + 96, y - 110), fill=c, width=4)
+    # tail trails to the right, away from the jaw
+    d.line((x + 28, y - 82, x + 176, y - 40), fill=c, width=8)
+    d.line((x + 164, y - 44, x + 196, y - 56), fill=c, width=5)
+    # torso, horizontal, not an upright body
+    d.ellipse((x - 52, y - 122, x + 58, y - 50), outline=c, width=6)
+    # two hind legs and feet
+    d.line((x - 6, y - 56, x - 24, y + 30), fill=c, width=7)
+    d.line((x + 26, y - 54, x + 6, y + 32), fill=c, width=7)
+    d.line((x - 24, y + 30, x + 4, y + 34), fill=c, width=6)
+    d.line((x + 6, y + 32, x + 36, y + 26), fill=c, width=6)
+    # tiny forelimb, kept short so it cannot read as an arm
+    d.line((x - 30, y - 84, x - 54, y - 62), fill=c, width=5)
+    # neck into a long skull facing left
+    d.line((x - 38, y - 104, x - 74, y - 136), fill=c, width=7)
+    skull = [(x - 72, y - 156), (x - 158, y - 136), (x - 160, y - 120), (x - 78, y - 112)]
+    d.line(skull + [skull[0]], fill=c, width=6)
+    # lower jaw, slightly open, with three teeth
+    d.line((x - 80, y - 116, x - 150, y - 98), fill=c, width=5)
+    for tx in (-136, -122, -108):
+        d.line((x + tx, y - 122, x + tx + 3, y - 110), fill=c, width=3)
+    d.ellipse((x - 100, y - 146, x - 88, y - 134), fill=c)
 
 
 def bird(d, x, y, a):
@@ -619,11 +635,21 @@ def main():
         print(rec["id"], rec["near_black"], rec["min_sample_mean_luma"], rec["labels"], flush=True)
         if rec["near_black"] != "PASS":
             raise SystemExit(f"near-black FAIL {rec['id']}")
-    if not args.only:
-        sheet(args.out, rows)
-        (args.out / "CODE_GRAPHICS_v01.json").write_text(json.dumps(rows, indent=2) + "\n")
-        files = sorted(p for p in args.out.iterdir() if p.suffix in {".jpg", ".json", ".py"})
-        (args.out / "SHA256SUMS.txt").write_text("".join(f"{digest(p)}  {p.name}\n" for p in files))
+    manifest = args.out / "CODE_GRAPHICS_v01.json"
+    if args.only:
+        if not manifest.exists():
+            raise SystemExit("missing CODE_GRAPHICS_v01.json")
+        existing = json.loads(manifest.read_text())
+        by_id = {r["id"]: r for r in existing}
+        for rec in rows:
+            if rec["id"] not in by_id:
+                raise SystemExit(f"unknown row {rec['id']}")
+            by_id[rec["id"]] = rec
+        rows = [by_id[r["id"]] for r in existing]
+    sheet(args.out, rows)
+    manifest.write_text(json.dumps(rows, indent=2) + "\n")
+    files = sorted(p for p in args.out.iterdir() if p.suffix in {".jpg", ".json", ".py"})
+    (args.out / "SHA256SUMS.txt").write_text("".join(f"{digest(p)}  {p.name}\n" for p in files))
     fails = [r["id"] for r in rows if r["near_black"] != "PASS"]
     if fails:
         raise SystemExit(f"FAIL {fails}")
