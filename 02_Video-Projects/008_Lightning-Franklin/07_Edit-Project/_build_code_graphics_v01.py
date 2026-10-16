@@ -83,11 +83,33 @@ def graphic(name,t,duration,label):
                 oval(d,(x-3,y-3,x+3,y+3),GOLD,4)
         if t>=3.1:oval(d,(1350,525,1370,545),GOLD,6)
     elif name=='wet_dry':
+        cloud(d,710,240,t)
+        for rx in range(740,1180,55):
+            for ry in (320,420,520):
+                path(d,[(rx,ry),(rx-12,ry+32)],ease(t,.15,.75),BLUE,3)
+        path(d,[(640,300),(640,740)],ease(t,0,.8),(161,131,94,255),6)
+        for yy in range(340,720,36):
+            path(d,[(622,yy),(658,yy+16)],ease(t,.1,.8),(161,131,94,255),3)
         path(d,[(960,300),(960,590)],ease(t,0,.8),CREAM,9);key(d,960,625)
+        for yy in range(320,580,28):
+            oval(d,(944,yy-6,976,yy+6),BLUE,3)
         path(d,[(960,780),(1010,820),(940,920),(880,860),(960,780),(1040,865)],ease(t,0,.8),BLUE,10)
         dots(d,[(960,300),(960,600),(960,755)],t,1,5.3)
         if t>2.8:path(d,[(895,780),(1025,780)],ease(t,2.8,3.1),GOLD,8)
-    elif name=='same_thing':path(d,[(960,300),(960,960)],ease(t,.3,.7),GOLD,5)
+    elif name=='same_thing':
+        for seg_y in range(320,880,48):
+            path(d,[(960,seg_y),(960,seg_y+28)],ease(t,.2,.7),GOLD,5)
+        oval(d,(360,520,610,565),GOLD,8);path(d,[(360,540),(360,790),(610,790),(610,540)],p,CREAM,6);oval(d,(360,765,610,810),GOLD,7)
+        path(d,[(485,540),(485,410)],p,GOLD,8);oval(d,(465,375,505,415),GOLD,6)
+        for yy in range(600,760,28):
+            path(d,[(380,yy),(590,yy)],p,(161,131,94,255),3)
+        cloud(d,1180,410,t)
+        roof(d,1420,780,0.75,p)
+        spark=[(0,0),(55,48),(15,98),(75,150),(35,205)]
+        path(d,[(485+a,415+b) for a,b in spark],ease(t,.5,1.2),BLUE,8)
+        path(d,[(1380+a,430+b) for a,b in spark],ease(t,.8,1.5),BLUE,8)
+        for r_ring in (45,85,125):
+            oval(d,(960-r_ring,580-r_ring,960+r_ring,580+r_ring),GOLD,4)
     elif name=='teach_charge':
         cloud(d,380,280,t)
         kite=[(720,450),(815,535),(720,620),(650,535),(720,450)]
@@ -96,8 +118,17 @@ def graphic(name,t,duration,label):
         path(d,[(720,620),(1140,830)],p);key(d,1140,850)
         dots(d,[(720,620),(930,725),(1140,830)],t,1.2,7.1)
     elif name=='looking_path':
-        for pts,delay in [([(960,310),(920,410),(1010,475),(955,570),(1000,660),(960,780)],0), ([(920,410),(790,480),(820,560),(730,650)],.45), ([(1010,475),(1140,530),(1100,630),(1220,735)],.8)]:
-            path(d,pts,ease(t,.3+delay,2.8),GOLD,7)
+        cloud(d,710,250,t)
+        roof(d,520,780,0.85,p);tower(d,p);roof(d,1380,790,0.8,p)
+        for pts,delay in [
+            ([(960,290),(920,410),(1010,475),(955,570),(1000,660),(900,300)],0),
+            ([(920,410),(790,480),(820,560),(730,650),(640,720)],.35),
+            ([(1010,475),(1140,530),(1100,630),(1220,735),(1310,790)],.55),
+            ([(790,480),(660,540),(580,630),(520,715)],.7),
+            ([(1140,530),(1280,580),(1350,660)],.85),
+        ]:
+            path(d,pts,ease(t,.2+delay,2.4),GOLD,8)
+            path(d,pts,ease(t,.3+delay,2.6),CREAM,4)
     elif name=='wood_vs_metal':
         roof(d,490,600,1.2,p);tower(d,p)
         for a in range(0,360,50):
@@ -106,9 +137,16 @@ def graphic(name,t,duration,label):
             path(d,pts,ease(t,1.8,6.8),GOLD,6)
         path(d,[(490,300),(460,370),(510,440),(490,530)],ease(t,1.2,1.8),BLUE,7)
     elif name=='metal_easy':
-        path(d,[(850,330),(800,330),(800,890),(850,890)],ease(t,.25,.6),CREAM,4)
-        path(d,[(960,300),(960,920)],ease(t,.4,2.8),GOLD,10)
-        if t>.4: path(d,[(960,300),(960,300+620*ease(t,.4,2.8))],color=CREAM,width=3)
+        roof(d,540,620,0.9,p);tower(d,p)
+        path(d,[(640,330),(520,330),(520,890),(640,890),(640,330)],ease(t,.15,.6),CREAM,5)
+        for yy in range(360,880,32):
+            path(d,[(530,yy),(580,yy+14),(630,yy-6)],ease(t,.2,.7),(161,131,94,255),3)
+        path(d,[(1180,280),(1180,920)],ease(t,.25,1.6),GOLD,12)
+        for yy in range(320,900,64):
+            oval(d,(1156,yy-12,1204,yy+12),CREAM,4)
+        if t>.3:
+            path(d,[(1180,280),(1180,280+640*ease(t,.3,2.4))],color=CREAM,width=5)
+            dots(d,[(1180,280),(1180,600),(1180,920)],t,.4,2.9)
     elif name=='safe_path':
         tower(d,ease(t,0,1.3));path(d,[(580,890),(1320,890)],p,GOLD,3)
         conductor=[(900,250),(900,290),(1070,550),(1085,890),(1085,995)]
@@ -127,9 +165,9 @@ def graphic(name,t,duration,label):
     return im
 
 def paper():
-    rng=np.random.default_rng(8329);y,x=np.mgrid[:H,:W];v=((x-W/2)/(W/2))**2+((y-H/2)/(H/2))**2
+    rng=np.random.default_rng(8329);y,x=np.mgrid[:H,:W];v=np.clip(((x-W/2)/(W/2))**2+((y-H/2)/(H/2))**2,0,1.4)
     a=np.zeros((H,W,3));noise=rng.normal(0,1.2,(H,W))
-    for c,base in enumerate((100,73,49)):a[:,:,c]=base-12*v+noise
+    for c,base in enumerate((136,100,66)):a[:,:,c]=base-42*v+noise
     return Image.fromarray(np.uint8(np.clip(a,0,255))).convert('RGBA')
 
 def digest(p):
@@ -160,10 +198,8 @@ def main():
     ap.add_argument('--out',type=Path,required=True)
     ap.add_argument('--stills-only',action='store_true')
     ap.add_argument('--only',default='',help='render just this row prefix, e.g. P5:11')
-    ap.add_argument('--replace',action='store_true',help='with --only, replace that row’s existing files')
+    ap.add_argument('--replace',action='store_true',help='replace existing files')
     args=ap.parse_args();args.out.mkdir(parents=True,exist_ok=True)
-    if args.replace and not args.only:
-        raise SystemExit('--replace requires --only')
     specs=json.loads((ROOT/'PICTURE_PLAN_v03.json').read_text())['code_graphics'];bg=paper();records=[];thumbs=[]
     for part in range(2,6):
         boardpath=ROOT/f'parts/part-{part:02}_plates_v03.json';board=json.loads(boardpath.read_text())

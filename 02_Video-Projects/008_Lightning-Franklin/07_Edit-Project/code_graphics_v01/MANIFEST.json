@@ -32,7 +32,8 @@
     "alpha": null,
     "composite_pending": false,
     "board_sha256": "9a75ce3d353309d7db9787432e494f8912077c787d1c0d077ea12a161801a2ea",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 5
   },
   {
     "row": "P2:15_likeness_fire",
@@ -65,7 +66,8 @@
     "alpha": "code_graphic_008_p2_15_likeness_fire.mov",
     "composite_pending": true,
     "board_sha256": "9a75ce3d353309d7db9787432e494f8912077c787d1c0d077ea12a161801a2ea",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 5
   },
   {
     "row": "P3:03_rod_cloud",
@@ -99,7 +101,8 @@
     "alpha": null,
     "composite_pending": false,
     "board_sha256": "8abc6a923ed11e9cbcfcf48ec23e5058bcafd99fbc569f4c5e19c39e40de3984",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 4
   },
   {
     "row": "P3:04_letter_crosses",
@@ -132,7 +135,8 @@
     "alpha": "code_graphic_008_p3_04_letter_crosses.mov",
     "composite_pending": true,
     "board_sha256": "8abc6a923ed11e9cbcfcf48ec23e5058bcafd99fbc569f4c5e19c39e40de3984",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 3
   },
   {
     "row": "P3:15_wet_dry",
@@ -166,7 +170,8 @@
     "alpha": null,
     "composite_pending": false,
     "board_sha256": "8abc6a923ed11e9cbcfcf48ec23e5058bcafd99fbc569f4c5e19c39e40de3984",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 5
   },
   {
     "row": "P4:06_same_thing",
@@ -202,7 +207,8 @@
     "alpha": "code_graphic_008_p4_06_same_thing.mov",
     "composite_pending": true,
     "board_sha256": "2cc5285c234cf606abd38da219df07fd486ec55e0b1fd551bbd00cbc137cfc9f",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 1
   },
   {
     "row": "P4:08_teach_charge",
@@ -237,7 +243,8 @@
     "alpha": null,
     "composite_pending": false,
     "board_sha256": "2cc5285c234cf606abd38da219df07fd486ec55e0b1fd551bbd00cbc137cfc9f",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 4
   },
   {
     "row": "P5:08_looking_path",
@@ -270,7 +277,8 @@
     "alpha": "code_graphic_008_p5_08_looking_path.mov",
     "composite_pending": true,
     "board_sha256": "1d05e8251b6a388403bc2b48da3eb71c0427d31217638730bf8af60239ae89f2",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 3
   },
   {
     "row": "P5:09_wood_vs_metal",
@@ -303,7 +311,8 @@
     "alpha": null,
     "composite_pending": false,
     "board_sha256": "1d05e8251b6a388403bc2b48da3eb71c0427d31217638730bf8af60239ae89f2",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 4
   },
   {
     "row": "P5:10_metal_easy",
@@ -335,7 +344,8 @@
     "alpha": "code_graphic_008_p5_10_metal_easy.mov",
     "composite_pending": true,
     "board_sha256": "1d05e8251b6a388403bc2b48da3eb71c0427d31217638730bf8af60239ae89f2",
-    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified"
+    "technical_check": "1920x1080 / 30fps / expected frame count / no audio verified",
+    "label_words": 2
   },
   {
     "row": "P5:11_safe_path",

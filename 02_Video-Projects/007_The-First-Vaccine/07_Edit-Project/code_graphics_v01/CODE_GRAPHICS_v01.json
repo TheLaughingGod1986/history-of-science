@@ -12,12 +12,12 @@
     "layout": "full_frame_period_paper",
     "background": "moving period paper",
     "lettering": "none in the map renders",
-    "min_sample_mean_luma": 101.83,
-    "min_sample_p95": 114.0,
+    "min_sample_mean_luma": 90.3,
+    "min_sample_p95": 119.0,
     "near_black": "PASS",
     "still": "code_graphic_007_p1_07_map_shadows.jpg",
-    "sha256": "091ad6da7a808f060fe1e1d4ba511dceb016af17f7fb8088a23fe08e1933ec80",
-    "bytes": 1688355,
+    "sha256": "f76ecd7dcefd8ff030fffa9a1e86a520ab63812ef2e5fb3f28eabc6fe7cc9a15",
+    "bytes": 1789816,
     "audio": "none"
   },
   {
@@ -33,12 +33,12 @@
     "layout": "full_frame_period_paper",
     "background": "moving period paper",
     "lettering": "none in the map renders",
-    "min_sample_mean_luma": 105.51,
-    "min_sample_p95": 127.0,
+    "min_sample_mean_luma": 99.28,
+    "min_sample_p95": 164.0,
     "near_black": "PASS",
     "still": "code_graphic_007_p4_11_news_spreads.jpg",
-    "sha256": "a48f4eaa326ad3219b556567a1aa8fe3e6eeb3640e2edb7316797cf8422e9d77",
-    "bytes": 2329217,
+    "sha256": "cfaa31da7bc6e7e2330c695f1bd894540ad6a0b43e206796b8aa13ec0921e44c",
+    "bytes": 2202810,
     "audio": "none"
   },
   {
@@ -54,12 +54,12 @@
     "layout": "full_frame_period_paper",
     "background": "moving period paper",
     "lettering": "THE BODY LEARNS",
-    "min_sample_mean_luma": 101.92,
-    "min_sample_p95": 114.0,
+    "min_sample_mean_luma": 90.24,
+    "min_sample_p95": 119.0,
     "near_black": "PASS",
     "still": "code_graphic_007_p5_08_body_learns.jpg",
-    "sha256": "cac1b07c445f52305f21758488d072c357d09a6886686cf87e864cd293a05fbf",
-    "bytes": 1761932,
+    "sha256": "30e62faa07c6cefc525f73d300b42bdd2d7a02a7d0479efe684e5b6619d308d1",
+    "bytes": 2968199,
     "audio": "none"
   }
 ]

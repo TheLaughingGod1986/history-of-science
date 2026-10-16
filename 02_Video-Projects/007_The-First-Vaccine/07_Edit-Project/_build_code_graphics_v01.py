@@ -11,10 +11,10 @@ from PIL import Image, ImageDraw, ImageFont
 
 W, H, FPS = 1920, 1080, 30
 FONT = "/System/Library/Fonts/Supplemental/Didot.ttc"
-INK = (62, 34, 16, 255)
+INK = (36, 18, 8, 255)
 CREAM = (255, 244, 218, 255)
-WASH = (176, 132, 86, 255)
-SHADOW = (92, 84, 76, 255)
+WASH = (214, 174, 120, 255)
+SHADOW = (68, 52, 40, 255)
 
 def _chaikin(pts, iters=1):
     for _ in range(iters):
@@ -98,11 +98,11 @@ def ink(a=1.0):
 
 
 def wash(a=1.0):
-    return (WASH[0], WASH[1], WASH[2], int(150 * max(0, min(1, a))))
+    return (WASH[0], WASH[1], WASH[2], int(195 * max(0, min(1, a))))
 
 
 def shadow(a=1.0):
-    return (SHADOW[0], SHADOW[1], SHADOW[2], int(88 * max(0, min(1, a))))
+    return (SHADOW[0], SHADOW[1], SHADOW[2], int(125 * max(0, min(1, a))))
 
 
 def close(pts):
@@ -141,10 +141,21 @@ def stroke(draw, pts, p, fill, width):
             return
 
 
-def land(draw, pts, p, width=5):
-    if p > 0.92:
-        draw.polygon(pts, fill=wash(min(1.0, (p - 0.92) / 0.08)))
+def _inset_pts(pts, scale=0.91):
+    cx = sum(p[0] for p in pts) / len(pts)
+    cy = sum(p[1] for p in pts) / len(pts)
+    return [(cx + (p[0] - cx) * scale, cy + (p[1] - cy) * scale) for p in pts]
+
+
+def land(draw, pts, p, width=6):
+    if p > 0.65:
+        draw.polygon(pts, fill=wash(min(1.0, (p - 0.65) / 0.35)))
     stroke(draw, close(pts), p, ink(min(1.0, p * 1.4)), width)
+    if p > 0.4:
+        inner = _inset_pts(pts, 0.90)
+        stroke(draw, close(inner), min(1.0, (p - 0.4) / 0.6), ink(0.65), 3)
+        inner2 = _inset_pts(pts, 0.80)
+        stroke(draw, close(inner2), min(1.0, (p - 0.55) / 0.45), ink(0.42), 2)
 
 
 def town(draw, xy, a):
@@ -152,9 +163,9 @@ def town(draw, xy, a):
         return
     x, y = xy
     c = ink(a)
-    r = 7
-    draw.ellipse((x - r, y - r, x + r, y + r), outline=c, width=3)
-    draw.ellipse((x - 2, y - 2, x + 2, y + 2), fill=c)
+    r = 9
+    draw.ellipse((x - r, y - r, x + r, y + r), fill=CREAM[:3] + (int(220 * a),), outline=c, width=3)
+    draw.ellipse((x - 3, y - 3, x + 3, y + 3), fill=c)
 
 
 def drift(a, b, t, phase):
@@ -168,7 +179,7 @@ def shadows(draw, t, a):
     for i, (p, q) in enumerate(SHADOW_PAIRS):
         x, y = drift(TOWNS[p], TOWNS[q], t, i * 1.3)
         rx, ry = 78 + 10 * math.sin(t * 0.4 + i), 36 + 6 * math.cos(t * 0.5 + i)
-        draw.ellipse((x - rx, y - ry, x + rx, y + ry), fill=shadow(a))
+        draw.ellipse((x - rx, y - ry, x + rx, y + ry), fill=shadow(a), outline=ink(0.55 * a), width=2)
 
 
 def coast(draw, t, already=False):
@@ -178,16 +189,21 @@ def coast(draw, t, already=False):
         bp = prog(t, 0.05, 1.45)
         ip = prog(t, 0.55, 1.7)
         ep = prog(t, 0.85, 2.15)
-    land(draw, BRITAIN, bp, width=6)
-    land(draw, IRELAND, ip, width=5)
-    land(draw, EUROPE, ep, width=6)
-    # Short wave marks in the channel only, so the gap reads as water.
-    sea = 1.0 if already else prog(t, 1.9, 2.5)
+    land(draw, BRITAIN, bp, width=7)
+    land(draw, IRELAND, ip, width=6)
+    land(draw, EUROPE, ep, width=7)
+    # Period wave marks across the sea so the frame reads as rich period engraving.
+    sea = 1.0 if already else prog(t, 1.1, 2.3)
     if sea > 0:
-        c = ink(0.28 * sea)
-        for y0 in (560, 640, 720):
-            stroke(draw, [(860, y0), (910, y0 - 14), (960, y0 + 6), (1005, y0 - 8)], sea, c, 2)
-    ta = 1.0 if already else prog(t, 1.7, 2.3)
+        c = ink(0.48 * sea)
+        wave_rows = [
+            (120, 180), (140, 260), (920, 180), (1040, 260), (1180, 340), (960, 420),
+            (860, 560), (860, 640), (850, 720), (620, 820), (340, 740), (140, 660),
+            (180, 880), (480, 920), (760, 880), (1520, 440), (1340, 380),
+        ]
+        for x0, y0 in wave_rows:
+            stroke(draw, [(x0, y0), (x0 + 48, y0 - 14), (x0 + 96, y0 + 6), (x0 + 144, y0 - 10)], sea, c, 3)
+    ta = 1.0 if already else prog(t, 1.5, 2.2)
     for key in TOWNS:
         town(draw, TOWNS[key], ta)
     return bp
@@ -256,7 +272,7 @@ def travel(draw, kind, pts, start, t):
 
 def draw_map_shadows(d, t, dur):
     coast(d, t, already=False)
-    shadows(d, t, prog(t, 2.4, 3.3))
+    shadows(d, t, prog(t, 2.0, 2.9))
 
 
 def draw_news(d, t, dur):
@@ -278,29 +294,50 @@ def blob(cx, cy, rx, ry, wobble, phase):
     return _chaikin(raw, 2)
 
 
+def _hatch_blob(d, pts, cx, cy, p, fill_c):
+    for s in (0.86, 0.72, 0.56, 0.40):
+        ring = [(cx + (pt[0] - cx) * s, cy + (pt[1] - cy) * s) for pt in pts]
+        stroke(d, close(ring), p, fill_c, 3)
+    step = max(1, len(pts) // 24)
+    for pt in pts[::step]:
+        x0 = cx + (pt[0] - cx) * 0.65
+        y0 = cy + (pt[1] - cy) * 0.65
+        d.line((x0, y0, pt[0], pt[1]), fill=fill_c, width=3)
+
+
 def draw_body(d, t, dur):
     pulse = 1 + 0.02 * math.sin(t * 1.7)
-    ax, ay = 720, 460
-    a_pts = blob(ax, ay, 190 * pulse, 230 * pulse, 0.10, 0.6)
+    ax, ay = 700, 460
+    a_pts = blob(ax, ay, 210 * pulse, 250 * pulse, 0.10, 0.6)
     grow = prog(t, 0.15, 1.35)
-    if grow > 0.9:
-        d.polygon(a_pts, fill=wash(min(1, (grow - 0.9) / 0.1)))
-    stroke(d, close(a_pts), grow, ink(), 6)
+    if grow > 0.5:
+        d.polygon(a_pts, fill=wash(min(1, (grow - 0.5) / 0.5)))
+    stroke(d, close(a_pts), grow, ink(), 7)
+    if grow > 0.6:
+        _hatch_blob(d, a_pts, ax, ay, min(1.0, (grow - 0.6) / 0.4), ink(0.75))
 
     meet = prog(t, 1.05, 2.3)
     morph = prog(t, 2.2, 3.9)
-    bx = 1320 - 280 * meet
+    bx = 1320 - 240 * meet
     by = 460 + 8 * math.sin(t * 1.4)
-    start = blob(bx, by, 150 * pulse, 180 * pulse, 0.02, 2.4)
-    target = blob(1080, 460, 190 * pulse, 230 * pulse, 0.10, 0.6)
+    start = blob(bx, by, 175 * pulse, 210 * pulse, 0.02, 2.4)
+    target = blob(1120, 460, 210 * pulse, 250 * pulse, 0.10, 0.6)
     b_pts = [
         (p[0] + (q[0] - p[0]) * morph, p[1] + (q[1] - p[1]) * morph)
         for p, q in zip(start, target)
     ]
     ba = prog(t, 0.95, 1.35)
-    if morph > 0.55:
-        d.polygon(b_pts, fill=wash(min(1, (morph - 0.55) / 0.35)))
-    stroke(d, close(b_pts), ba, ink(ba), 6)
+    if ba > 0.5:
+        d.polygon(b_pts, fill=wash(min(1, (ba - 0.5) / 0.5)))
+    stroke(d, close(b_pts), ba, ink(ba), 7)
+    if ba > 0.6:
+        cx_b = sum(pt[0] for pt in b_pts) / len(b_pts)
+        cy_b = sum(pt[1] for pt in b_pts) / len(b_pts)
+        _hatch_blob(d, b_pts, cx_b, cy_b, min(1.0, (ba - 0.6) / 0.4), ink(0.75 * ba))
+    # Period radiating field arcs around the two forms
+    for rad in (340, 410, 480):
+        d.arc((540 - rad, 460 - int(rad * 0.75), 540 + rad, 460 + int(rad * 0.75)), 130, 230, fill=ink(0.45 * grow), width=3)
+        d.arc((1260 - rad, 460 - int(rad * 0.75), 1260 + rad, 460 + int(rad * 0.75)), -50, 50, fill=ink(0.45 * ba), width=3)
 
 
 def label_alpha(t, dur):
@@ -324,15 +361,22 @@ def make_paper():
     small = rng.random((H // 4 + 8, W // 4 + 8)).astype(np.float32)
     paper = np.repeat(np.repeat(small, 4, 0), 4, 1)[:H, :W]
     fine = rng.random((H, W)).astype(np.float32)
-    return paper * 0.85 + fine * 0.15
+    tex = paper * 0.85 + fine * 0.15
+    yy, xx = np.mgrid[:H, :W]
+    nx = (xx - W / 2.0) / (W / 2.0)
+    ny = (yy - H / 2.0) / (H / 2.0)
+    vig = np.clip(nx * nx * 0.85 + ny * ny * 0.95, 0.0, 1.4).astype(np.float32)
+    return tex, vig
 
 
-def paper_frame(paper, k):
+def paper_frame(paper_vig, k):
+    tex, vig = paper_vig
     shift = (k // 2) % 48
-    rolled = np.roll(np.roll(paper, shift, 1), shift // 3, 0)
-    r = 118 + rolled * 40
-    g = 80 + rolled * 28
-    b = 46 + rolled * 16
+    rolled = np.roll(np.roll(tex, shift, 1), shift // 3, 0)
+    shade = 1.0 - 0.46 * vig
+    r = (146 * shade + rolled * 24)
+    g = (104 * shade + rolled * 18)
+    b = (64 * shade + rolled * 12)
     rgb = np.stack([r, g, b], axis=-1).clip(0, 255).astype(np.uint8)
     return Image.fromarray(rgb, "RGB")
 

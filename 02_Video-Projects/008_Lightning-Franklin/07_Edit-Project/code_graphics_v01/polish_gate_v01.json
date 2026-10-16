@@ -36,99 +36,17 @@
     }
   },
   "video": "/private/tmp/qa_hos_008_v01/concat_v01.mp4",
-  "edge_floor": 0.0071,
-  "verdict": "FAIL",
-  "failed": [
-    {
-      "row": "P3:15_wet_dry",
-      "cut": 4,
-      "t": 23.32,
-      "source": "code_graphic_008_p3_15_wet_dry.mp4",
-      "why": [
-        "low detail: luma std 12.76 < 13.44 and edge density 0.0103 < 0.0259 (absolute floor)"
-      ]
-    },
-    {
-      "row": "P4:06_same_thing",
-      "cut": 5,
-      "t": 29.62,
-      "source": "code_graphic_008_p4_06_same_thing.mp4",
-      "why": [
-        "low detail: luma std 9.11 < 13.44 and edge density 0.0059 < 0.0259 (absolute floor)"
-      ]
-    },
-    {
-      "row": "P5:08_looking_path",
-      "cut": 7,
-      "t": 41.95,
-      "source": "code_graphic_008_p5_08_looking_path.mp4",
-      "why": [
-        "low detail: luma std 10.38 < 13.44 and edge density 0.0082 < 0.0259 (absolute floor)"
-      ]
-    },
-    {
-      "row": "P5:10_metal_easy",
-      "cut": 9,
-      "t": 51.9,
-      "source": "code_graphic_008_p5_10_metal_easy.mp4",
-      "why": [
-        "low detail: luma std 11.23 < 13.44 and edge density 0.0092 < 0.0259 (absolute floor)"
-      ]
-    }
-  ],
+  "edge_floor": 0.0162,
+  "verdict": "PASS",
+  "failed": [],
   "warn": [
-    {
-      "row": "P2:14_likeness_pairs",
-      "cut": 0,
-      "t": 2.55,
-      "source": "code_graphic_008_p2_14_likeness_pairs.mp4",
-      "why": [
-        "low detail: luma std 17.48 < 18.0"
-      ]
-    },
-    {
-      "row": "P2:15_likeness_fire",
-      "cut": 1,
-      "t": 7.75,
-      "source": "code_graphic_008_p2_15_likeness_fire.mp4",
-      "why": [
-        "low detail: luma std 15.52 < 18.0"
-      ]
-    },
     {
       "row": "P3:04_letter_crosses",
       "cut": 3,
       "t": 18.78,
       "source": "code_graphic_008_p3_04_letter_crosses.mp4",
       "why": [
-        "low detail: luma std 13.88 < 18.0"
-      ]
-    },
-    {
-      "row": "P4:08_teach_charge",
-      "cut": 6,
-      "t": 36.82,
-      "source": "code_graphic_008_p4_08_teach_charge.mp4",
-      "why": [
-        "low detail: luma std 17.48 < 18.0"
-      ]
-    },
-    {
-      "row": "P5:09_wood_vs_metal",
-      "cut": 8,
-      "t": 46.97,
-      "source": "code_graphic_008_p5_09_wood_vs_metal.mp4",
-      "why": [
-        "low detail: luma std 17.44 < 18.0"
-      ]
-    },
-    {
-      "row": "P5:11_safe_path",
-      "cut": 10,
-      "t": 56.9,
-      "source": "code_graphic_008_p5_11_safe_path.mp4",
-      "why": [
-        "low detail: luma std 16.7 < 18.0"
+        "low detail: edge density 0.0135 < film p5 0.0162"
       ]
     }
   ],
@@ -139,54 +57,50 @@
       "row": "P2:14_likeness_pairs",
       "source": "code_graphic_008_p2_14_likeness_pairs.mp4",
       "t": 2.55,
-      "std": 17.48,
-      "mean": 72.12,
-      "p95": 77.0,
-      "edge": 0.0233,
-      "hf": 8.87,
-      "lf": 10.05,
-      "std8": 11.54,
-      "edge8": 0.0699,
+      "std": 22.94,
+      "mean": 80.78,
+      "p95": 105.0,
+      "edge": 0.0231,
+      "hf": 7.92,
+      "lf": 19.08,
+      "std8": 19.67,
+      "edge8": 0.0652,
       "seams": [],
       "video": true,
       "fail": [],
-      "warn": [
-        "low detail: luma std 17.48 < 18.0"
-      ]
+      "warn": []
     },
     {
       "cut": 1,
       "row": "P2:15_likeness_fire",
       "source": "code_graphic_008_p2_15_likeness_fire.mp4",
       "t": 7.75,
-      "std": 15.52,
-      "mean": 71.88,
-      "p95": 77.0,
-      "edge": 0.0287,
-      "hf": 8.85,
-      "lf": 8.84,
-      "std8": 10.03,
-      "edge8": 0.0569,
+      "std": 21.58,
+      "mean": 80.52,
+      "p95": 105.0,
+      "edge": 0.0282,
+      "hf": 7.7,
+      "lf": 18.53,
+      "std8": 18.91,
+      "edge8": 0.0516,
       "seams": [],
       "video": true,
       "fail": [],
-      "warn": [
-        "low detail: luma std 15.52 < 18.0"
-      ]
+      "warn": []
     },
     {
       "cut": 2,
       "row": "P3:03_rod_cloud",
       "source": "code_graphic_008_p3_03_rod_cloud.mp4",
       "t": 13.65,
-      "std": 19.05,
-      "mean": 72.4,
-      "p95": 77.0,
-      "edge": 0.0283,
-      "hf": 10.32,
-      "lf": 10.24,
-      "std8": 12.01,
-      "edge8": 0.0917,
+      "std": 24.06,
+      "mean": 80.97,
+      "p95": 105.0,
+      "edge": 0.0275,
+      "hf": 8.96,
+      "lf": 19.54,
+      "std8": 20.23,
+      "edge8": 0.0838,
       "seams": [],
       "video": true,
       "fail": [],
@@ -197,19 +111,19 @@
       "row": "P3:04_letter_crosses",
       "source": "code_graphic_008_p3_04_letter_crosses.mp4",
       "t": 18.78,
-      "std": 13.88,
-      "mean": 71.09,
-      "p95": 77.0,
-      "edge": 0.0138,
-      "hf": 7.06,
-      "lf": 7.86,
-      "std8": 9.02,
-      "edge8": 0.048,
+      "std": 20.73,
+      "mean": 79.9,
+      "p95": 104.0,
+      "edge": 0.0135,
+      "hf": 6.38,
+      "lf": 17.96,
+      "std8": 18.34,
+      "edge8": 0.0456,
       "seams": [],
       "video": true,
       "fail": [],
       "warn": [
-        "low detail: luma std 13.88 < 18.0"
+        "low detail: edge density 0.0135 < film p5 0.0162"
       ]
     },
     {
@@ -217,149 +131,126 @@
       "row": "P3:15_wet_dry",
       "source": "code_graphic_008_p3_15_wet_dry.mp4",
       "t": 23.32,
-      "std": 12.76,
-      "mean": 70.99,
-      "p95": 77.0,
-      "edge": 0.0103,
-      "hf": 5.39,
-      "lf": 8.23,
-      "std8": 9.09,
-      "edge8": 0.0339,
+      "std": 21.66,
+      "mean": 80.29,
+      "p95": 104.0,
+      "edge": 0.0188,
+      "hf": 6.55,
+      "lf": 18.85,
+      "std8": 19.29,
+      "edge8": 0.0499,
       "seams": [],
       "video": true,
-      "fail": [
-        "low detail: luma std 12.76 < 13.44 and edge density 0.0103 < 0.0259 (absolute floor)"
-      ],
-      "warn": [
-        "low detail: luma std 12.76 < 18.0"
-      ]
+      "fail": [],
+      "warn": []
     },
     {
       "cut": 5,
       "row": "P4:06_same_thing",
       "source": "code_graphic_008_p4_06_same_thing.mp4",
       "t": 29.62,
-      "std": 9.11,
-      "mean": 70.36,
-      "p95": 77.0,
-      "edge": 0.0059,
-      "hf": 4.3,
-      "lf": 6.23,
-      "std8": 6.56,
-      "edge8": 0.0112,
+      "std": 23.05,
+      "mean": 80.88,
+      "p95": 105.0,
+      "edge": 0.0271,
+      "hf": 7.86,
+      "lf": 19.38,
+      "std8": 19.89,
+      "edge8": 0.0721,
       "seams": [],
       "video": true,
-      "fail": [
-        "low detail: luma std 9.11 < 13.44 and edge density 0.0059 < 0.0259 (absolute floor)"
-      ],
-      "warn": [
-        "low detail: luma std 9.11 < 18.0",
-        "low detail: edge density 0.0059 < film p5 0.0071"
-      ]
+      "fail": [],
+      "warn": []
     },
     {
       "cut": 6,
       "row": "P4:08_teach_charge",
       "source": "code_graphic_008_p4_08_teach_charge.mp4",
       "t": 36.82,
-      "std": 17.48,
-      "mean": 72.02,
-      "p95": 77.0,
-      "edge": 0.0221,
-      "hf": 9.27,
-      "lf": 9.61,
-      "std8": 11.07,
-      "edge8": 0.077,
+      "std": 22.97,
+      "mean": 80.69,
+      "p95": 105.0,
+      "edge": 0.0218,
+      "hf": 8.28,
+      "lf": 18.94,
+      "std8": 19.49,
+      "edge8": 0.0721,
       "seams": [],
       "video": true,
       "fail": [],
-      "warn": [
-        "low detail: luma std 17.48 < 18.0"
-      ]
+      "warn": []
     },
     {
       "cut": 7,
       "row": "P5:08_looking_path",
       "source": "code_graphic_008_p5_08_looking_path.mp4",
       "t": 41.95,
-      "std": 10.38,
-      "mean": 70.55,
-      "p95": 77.0,
-      "edge": 0.0082,
-      "hf": 4.84,
-      "lf": 6.73,
-      "std8": 7.37,
-      "edge8": 0.025,
+      "std": 25.12,
+      "mean": 81.48,
+      "p95": 105.0,
+      "edge": 0.0349,
+      "hf": 9.37,
+      "lf": 20.3,
+      "std8": 21.05,
+      "edge8": 0.1043,
       "seams": [],
       "video": true,
-      "fail": [
-        "low detail: luma std 10.38 < 13.44 and edge density 0.0082 < 0.0259 (absolute floor)"
-      ],
-      "warn": [
-        "low detail: luma std 10.38 < 18.0"
-      ]
+      "fail": [],
+      "warn": []
     },
     {
       "cut": 8,
       "row": "P5:09_wood_vs_metal",
       "source": "code_graphic_008_p5_09_wood_vs_metal.mp4",
       "t": 46.97,
-      "std": 17.44,
-      "mean": 72.12,
-      "p95": 77.0,
-      "edge": 0.027,
-      "hf": 9.37,
-      "lf": 9.73,
-      "std8": 11.22,
-      "edge8": 0.0852,
+      "std": 22.9,
+      "mean": 80.7,
+      "p95": 105.0,
+      "edge": 0.0262,
+      "hf": 8.08,
+      "lf": 19.16,
+      "std8": 19.7,
+      "edge8": 0.075,
       "seams": [],
       "video": true,
       "fail": [],
-      "warn": [
-        "low detail: luma std 17.44 < 18.0"
-      ]
+      "warn": []
     },
     {
       "cut": 9,
       "row": "P5:10_metal_easy",
       "source": "code_graphic_008_p5_10_metal_easy.mp4",
       "t": 51.9,
-      "std": 11.23,
-      "mean": 70.64,
-      "p95": 77.0,
-      "edge": 0.0092,
-      "hf": 5.61,
-      "lf": 7.04,
-      "std8": 7.57,
-      "edge8": 0.0248,
+      "std": 24.78,
+      "mean": 81.28,
+      "p95": 105.0,
+      "edge": 0.0335,
+      "hf": 9.1,
+      "lf": 20.42,
+      "std8": 21.03,
+      "edge8": 0.0837,
       "seams": [],
       "video": true,
-      "fail": [
-        "low detail: luma std 11.23 < 13.44 and edge density 0.0092 < 0.0259 (absolute floor)"
-      ],
-      "warn": [
-        "low detail: luma std 11.23 < 18.0"
-      ]
+      "fail": [],
+      "warn": []
     },
     {
       "cut": 10,
       "row": "P5:11_safe_path",
       "source": "code_graphic_008_p5_11_safe_path.mp4",
       "t": 56.9,
-      "std": 16.7,
-      "mean": 71.89,
-      "p95": 77.0,
-      "edge": 0.0256,
-      "hf": 8.76,
-      "lf": 9.79,
-      "std8": 11.12,
-      "edge8": 0.0628,
+      "std": 22.41,
+      "mean": 80.49,
+      "p95": 105.0,
+      "edge": 0.0248,
+      "hf": 7.45,
+      "lf": 19.2,
+      "std8": 19.66,
+      "edge8": 0.055,
       "seams": [],
       "video": true,
       "fail": [],
-      "warn": [
-        "low detail: luma std 16.7 < 18.0"
-      ]
+      "warn": []
     }
   ]
 }

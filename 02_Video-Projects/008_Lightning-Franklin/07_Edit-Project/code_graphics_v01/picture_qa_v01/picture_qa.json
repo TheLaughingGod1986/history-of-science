@@ -1,5 +1,5 @@
 {
-  "verdict": "FAIL",
+  "verdict": "PASS",
   "video": "/private/tmp/qa_hos_008_v01/concat_v01.mp4",
   "rules": {
     "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
@@ -11,87 +11,8 @@
     "same_stretch": 10.0,
     "pixels": "scripts/polish_gate.py"
   },
-  "failed": [
-    {
-      "cut": 4,
-      "row": "P3:15_wet_dry",
-      "source": "code_graphic_008_p3_15_wet_dry.mp4",
-      "title": "own code graphic P3:15_wet_dry",
-      "t": 23.32,
-      "at": "0:23",
-      "fail": [
-        "low detail: luma std 12.76 < 13.44 and edge density 0.0103 < 0.0259 (absolute floor)"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 5,
-      "row": "P4:06_same_thing",
-      "source": "code_graphic_008_p4_06_same_thing.mp4",
-      "title": "own code graphic P4:06_same_thing",
-      "t": 29.62,
-      "at": "0:30",
-      "fail": [
-        "low detail: luma std 9.11 < 13.44 and edge density 0.0059 < 0.0259 (absolute floor)"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 7,
-      "row": "P5:08_looking_path",
-      "source": "code_graphic_008_p5_08_looking_path.mp4",
-      "title": "own code graphic P5:08_looking_path",
-      "t": 41.95,
-      "at": "0:42",
-      "fail": [
-        "low detail: luma std 10.38 < 13.44 and edge density 0.0082 < 0.0259 (absolute floor)"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 9,
-      "row": "P5:10_metal_easy",
-      "source": "code_graphic_008_p5_10_metal_easy.mp4",
-      "title": "own code graphic P5:10_metal_easy",
-      "t": 51.9,
-      "at": "0:52",
-      "fail": [
-        "low detail: luma std 11.23 < 13.44 and edge density 0.0092 < 0.0259 (absolute floor)"
-      ],
-      "warn": [],
-      "offset": 0.0
-    }
-  ],
+  "failed": [],
   "warn": [
-    {
-      "cut": 0,
-      "row": "P2:14_likeness_pairs",
-      "source": "code_graphic_008_p2_14_likeness_pairs.mp4",
-      "title": "own code graphic P2:14_likeness_pairs",
-      "t": 2.55,
-      "at": "0:03",
-      "fail": [],
-      "warn": [
-        "low detail: luma std 17.48 < 18.0"
-      ],
-      "offset": 0.0
-    },
-    {
-      "cut": 1,
-      "row": "P2:15_likeness_fire",
-      "source": "code_graphic_008_p2_15_likeness_fire.mp4",
-      "title": "own code graphic P2:15_likeness_fire",
-      "t": 7.75,
-      "at": "0:08",
-      "fail": [],
-      "warn": [
-        "low detail: luma std 15.52 < 18.0"
-      ],
-      "offset": 0.0
-    },
     {
       "cut": 3,
       "row": "P3:04_letter_crosses",
@@ -101,46 +22,7 @@
       "at": "0:19",
       "fail": [],
       "warn": [
-        "low detail: luma std 13.88 < 18.0"
-      ],
-      "offset": 0.0
-    },
-    {
-      "cut": 6,
-      "row": "P4:08_teach_charge",
-      "source": "code_graphic_008_p4_08_teach_charge.mp4",
-      "title": "own code graphic P4:08_teach_charge",
-      "t": 36.82,
-      "at": "0:37",
-      "fail": [],
-      "warn": [
-        "low detail: luma std 17.48 < 18.0"
-      ],
-      "offset": 0.0
-    },
-    {
-      "cut": 8,
-      "row": "P5:09_wood_vs_metal",
-      "source": "code_graphic_008_p5_09_wood_vs_metal.mp4",
-      "title": "own code graphic P5:09_wood_vs_metal",
-      "t": 46.97,
-      "at": "0:47",
-      "fail": [],
-      "warn": [
-        "low detail: luma std 17.44 < 18.0"
-      ],
-      "offset": 0.0
-    },
-    {
-      "cut": 10,
-      "row": "P5:11_safe_path",
-      "source": "code_graphic_008_p5_11_safe_path.mp4",
-      "title": "own code graphic P5:11_safe_path",
-      "t": 56.9,
-      "at": "0:57",
-      "fail": [],
-      "warn": [
-        "low detail: luma std 16.7 < 18.0"
+        "low detail: edge density 0.0135 < film p5 0.0162"
       ],
       "offset": 0.0
     }
@@ -154,9 +36,7 @@
       "t": 2.55,
       "at": "0:03",
       "fail": [],
-      "warn": [
-        "low detail: luma std 17.48 < 18.0"
-      ],
+      "warn": [],
       "offset": 0.0
     },
     {
@@ -167,9 +47,7 @@
       "t": 7.75,
       "at": "0:08",
       "fail": [],
-      "warn": [
-        "low detail: luma std 15.52 < 18.0"
-      ],
+      "warn": [],
       "offset": 0.0
     },
     {
@@ -192,7 +70,7 @@
       "at": "0:19",
       "fail": [],
       "warn": [
-        "low detail: luma std 13.88 < 18.0"
+        "low detail: edge density 0.0135 < film p5 0.0162"
       ],
       "offset": 0.0
     },
@@ -203,9 +81,7 @@
       "title": "own code graphic P3:15_wet_dry",
       "t": 23.32,
       "at": "0:23",
-      "fail": [
-        "low detail: luma std 12.76 < 13.44 and edge density 0.0103 < 0.0259 (absolute floor)"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 0.0
     },
@@ -216,9 +92,7 @@
       "title": "own code graphic P4:06_same_thing",
       "t": 29.62,
       "at": "0:30",
-      "fail": [
-        "low detail: luma std 9.11 < 13.44 and edge density 0.0059 < 0.0259 (absolute floor)"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 0.0
     },
@@ -230,9 +104,7 @@
       "t": 36.82,
       "at": "0:37",
       "fail": [],
-      "warn": [
-        "low detail: luma std 17.48 < 18.0"
-      ],
+      "warn": [],
       "offset": 0.0
     },
     {
@@ -242,9 +114,7 @@
       "title": "own code graphic P5:08_looking_path",
       "t": 41.95,
       "at": "0:42",
-      "fail": [
-        "low detail: luma std 10.38 < 13.44 and edge density 0.0082 < 0.0259 (absolute floor)"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 0.0
     },
@@ -256,9 +126,7 @@
       "t": 46.97,
       "at": "0:47",
       "fail": [],
-      "warn": [
-        "low detail: luma std 17.44 < 18.0"
-      ],
+      "warn": [],
       "offset": 0.0
     },
     {
@@ -268,9 +136,7 @@
       "title": "own code graphic P5:10_metal_easy",
       "t": 51.9,
       "at": "0:52",
-      "fail": [
-        "low detail: luma std 11.23 < 13.44 and edge density 0.0092 < 0.0259 (absolute floor)"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 0.0
     },
@@ -282,14 +148,12 @@
       "t": 56.9,
       "at": "0:57",
       "fail": [],
-      "warn": [
-        "low detail: luma std 16.7 < 18.0"
-      ],
+      "warn": [],
       "offset": 0.0
     }
   ],
   "polish": {
-    "edge_floor": 0.0071,
+    "edge_floor": 0.0162,
     "low_detail_floor": {
       "std": 13.44,
       "edge": 0.0259,

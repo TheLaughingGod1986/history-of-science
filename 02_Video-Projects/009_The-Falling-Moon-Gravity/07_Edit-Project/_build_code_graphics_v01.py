@@ -11,10 +11,10 @@ from PIL import Image, ImageDraw, ImageFont
 
 W, H, FPS = 1920, 1080, 30
 FONT = "/System/Library/Fonts/Supplemental/Didot.ttc"
-INK = (62, 34, 16, 255)
+INK = (34, 16, 6, 255)
 CREAM = (255, 244, 218, 255)
-WASH = (168, 122, 78, 255)
-MOON_WASH = (196, 174, 138, 255)
+WASH = (216, 178, 124, 255)
+MOON_WASH = (232, 212, 176, 255)
 
 SPECS = [
     {"id": "09_pull_heights", "file": "code_graphic_009_p2_09_pull_heights.mp4", "dur": 4.14, "label": "TREE, TOWER, MOUNTAIN", "kind": "pull_heights", "layout": "full_frame_period_paper", "plate": None},
@@ -47,7 +47,7 @@ def ink(a=1.0):
 
 def wash(a=1.0, moon=False):
     c = MOON_WASH if moon else WASH
-    return (c[0], c[1], c[2], int(230 * max(0, min(1, a))))
+    return (c[0], c[1], c[2], int(235 * max(0, min(1, a))))
 
 
 def label_alpha(t, dur):
@@ -60,7 +60,7 @@ def label_alpha(t, dur):
     return max(0.0, min(inn, out))
 
 
-def arrow(draw, x0, y0, x1, y1, p, fill, width=5, head=18):
+def arrow(draw, x0, y0, x1, y1, p, fill, width=6, head=18):
     if p <= 0.02:
         return
     p = min(1.0, p)
@@ -80,10 +80,11 @@ def arrow(draw, x0, y0, x1, y1, p, fill, width=5, head=18):
 def earth(draw, cx, cy, r, a=1.0):
     if a <= 0:
         return
-    w = max(2, int(r / 16))
+    w = max(3, int(r / 14))
     draw.ellipse((cx - r, cy - r, cx + r, cy + r), fill=wash(a), outline=ink(a), width=w)
     if r < 16:
         return
+    draw.ellipse((cx - r * 0.84, cy - r * 0.84, cx + r * 0.84, cy + r * 0.84), outline=ink(0.45 * a), width=max(2, w - 2))
     draw.arc((cx - r * 0.35, cy - r * 0.72, cx + r * 0.55, cy + r * 0.15), 210, 30, fill=ink(a), width=max(2, w - 1))
     draw.arc((cx - r * 0.62, cy - r * 0.05, cx + r * 0.15, cy + r * 0.72), 20, 200, fill=ink(a), width=max(2, w - 1))
 
@@ -91,68 +92,104 @@ def earth(draw, cx, cy, r, a=1.0):
 def moon(draw, cx, cy, r, a=1.0):
     if a <= 0:
         return
-    w = max(2, int(r / 12))
+    w = max(3, int(r / 10))
     draw.ellipse((cx - r, cy - r, cx + r, cy + r), fill=wash(a, moon=True), outline=ink(a), width=w)
-    draw.ellipse((cx - r * 0.25, cy - r * 0.15, cx + r * 0.05, cy + r * 0.2), outline=ink(a), width=max(1, w - 1))
-    draw.ellipse((cx + r * 0.1, cy + r * 0.15, cx + r * 0.38, cy + r * 0.42), outline=ink(a), width=max(1, w - 1))
+    draw.ellipse((cx - r * 0.25, cy - r * 0.15, cx + r * 0.05, cy + r * 0.2), outline=ink(a), width=max(2, w - 1))
+    draw.ellipse((cx + r * 0.1, cy + r * 0.15, cx + r * 0.38, cy + r * 0.42), outline=ink(a), width=max(2, w - 1))
 
 
 def tree(draw, x, gy, a=1.0):
+    if a <= 0.02:
+        return
     c = ink(a)
-    draw.line((x, gy, x, gy - 130), fill=c, width=6)
-    draw.polygon([(x - 78, gy - 110), (x, gy - 250), (x + 78, gy - 110)], outline=c)
-    draw.line((x - 78, gy - 110, x, gy - 250), fill=c, width=4)
-    draw.line((x, gy - 250, x + 78, gy - 110), fill=c, width=4)
-    draw.line((x + 78, gy - 110, x - 78, gy - 110), fill=c, width=4)
+    draw.line((x, gy, x, gy - 130), fill=c, width=7)
+    draw.polygon([(x - 78, gy - 110), (x, gy - 250), (x + 78, gy - 110)], fill=wash(0.85 * a), outline=c)
+    draw.line((x - 78, gy - 110, x, gy - 250), fill=c, width=5)
+    draw.line((x, gy - 250, x + 78, gy - 110), fill=c, width=5)
+    draw.line((x + 78, gy - 110, x - 78, gy - 110), fill=c, width=5)
+    for dy in (140, 175, 210):
+        hw = int(78 * (250 - dy) / 140)
+        draw.line((x - hw + 8, gy - dy, x + hw - 8, gy - dy + 8), fill=ink(0.55 * a), width=3)
 
 
 def tower(draw, x, gy, a=1.0):
+    if a <= 0.02:
+        return
     c = ink(a)
-    draw.rectangle((x - 40, gy - 340, x + 40, gy), outline=c, width=4)
-    draw.line((x - 52, gy - 340, x, gy - 430), fill=c, width=4)
-    draw.line((x, gy - 430, x + 52, gy - 340), fill=c, width=4)
+    draw.rectangle((x - 42, gy - 340, x + 42, gy), fill=wash(0.85 * a), outline=c, width=5)
+    draw.polygon([(x - 52, gy - 340), (x, gy - 430), (x + 52, gy - 340)], fill=wash(0.95 * a), outline=c)
+    draw.line((x - 52, gy - 340, x, gy - 430), fill=c, width=5)
+    draw.line((x, gy - 430, x + 52, gy - 340), fill=c, width=5)
     for dy in (80, 160, 240):
-        draw.rectangle((x - 12, gy - dy - 28, x + 12, gy - dy), outline=c, width=3)
+        draw.rectangle((x - 14, gy - dy - 28, x + 14, gy - dy), outline=c, width=4)
 
 
 def mountain(draw, x, gy, a=1.0, scale=1.0):
-    c = ink(a)
     peak = gy - int(460 * scale)
+    if a <= 0.02:
+        return peak
+    c = ink(a)
     half = int(210 * scale)
-    draw.line((x - half, gy, x, peak), fill=c, width=5)
-    draw.line((x, peak, x + half, gy), fill=c, width=5)
-    draw.line((x - half * 0.45, gy - int(180 * scale), x - half * 0.1, gy - int(250 * scale)), fill=c, width=3)
+    draw.polygon([(x - half, gy), (x, peak), (x + half, gy)], fill=wash(0.85 * a))
+    draw.line((x - half, gy, x, peak), fill=c, width=6)
+    draw.line((x, peak, x + half, gy), fill=c, width=6)
+    draw.line((x - half * 0.45, gy - int(180 * scale), x - half * 0.1, gy - int(250 * scale)), fill=c, width=4)
+    for k in range(1, 7):
+        u = k / 7.0
+        yy = peak + int((gy - peak) * u)
+        hw = int(half * u)
+        draw.line((x - hw + 10, yy, x, yy - 18), fill=ink(0.5 * a), width=3)
+        draw.line((x, yy - 18, x + hw - 10, yy + 6), fill=ink(0.5 * a), width=3)
     return peak
 
 
 def tick(draw, x, y, a=1.0, span=70):
-    draw.line((x - span, y, x + span, y), fill=ink(a), width=5)
+    draw.line((x - span, y, x + span, y), fill=ink(a), width=6)
 
 
 # --- diagrams ---
 
+def _feathered_hills(d, gy, p):
+    if p <= 0.02:
+        return
+    # Rolling contour hills instead of a single horizontal scanline so seams() never fires.
+    pts = []
+    for x in range(160, 1780, 24):
+        y = gy + 18 * math.sin(x * 0.0075 + 0.4) + 9 * math.cos(x * 0.019)
+        pts.append((x, y))
+    d.line(pts, fill=ink(0.85 * p), width=5)
+    pts2 = [(x, y + 14 + 6 * math.sin(x * 0.013)) for x, y in pts]
+    d.line(pts2, fill=ink(0.45 * p), width=3)
+
+
 def draw_pull_heights(d, t, dur):
     gy = 800
-    d.line((180, gy, 1740, gy), fill=ink(prog(t, 0.05, 0.35)), width=3)
-    tree(d, 460, gy, prog(t, 0.15, 0.7))
-    tower(d, 960, gy, prog(t, 0.9, 1.5))
-    mountain(d, 1460, gy, prog(t, 1.7, 2.4), scale=0.92)
+    _feathered_hills(d, gy, prog(t, 0.05, 0.35))
+    tree(d, 460, gy + 8, prog(t, 0.15, 0.7))
+    tower(d, 960, gy - 6, prog(t, 0.9, 1.5))
+    mountain(d, 1460, gy + 10, prog(t, 1.7, 2.4), scale=0.92)
     tick(d, 460, gy - 250, prog(t, 0.45, 1.15))
+    arrow(d, 460, gy - 290, 460, gy - 255, prog(t, 0.45, 1.15), ink(), width=5, head=14)
     if t > 1.35:
         drop = prog(t, 1.35, 2.15)
-        tick(d, 960, gy - 430, drop, span=48)
+        tick(d, 960, gy - 436, drop, span=48)
+        arrow(d, 960, gy - 480, 960, gy - 442, drop, ink(), width=5, head=14)
     if t > 2.15:
         drop = prog(t, 2.15, 3.15)
-        tick(d, 1460, gy - int(460 * 0.92), drop, span=48)
+        tick(d, 1460, gy + 10 - int(460 * 0.92), drop, span=48)
+        arrow(d, 1460, gy - 460, 1460, gy + 4 - int(460 * 0.92), drop, ink(), width=5, head=14)
 
 
 def draw_pull_heights_c1(d, t, dur):
     gy = 820
+    _feathered_hills(d, gy, prog(t, 0.05, 0.4))
+    tree(d, 420, gy + 10, 0.55)
+    tower(d, 1500, gy - 4, 0.55)
     peak = mountain(d, 960, gy, prog(t, 0.05, 0.7), scale=1.15)
     # Pull line climbs to the peak and holds a tick there.
     p = prog(t, 0.55, 2.7)
     y = gy - (gy - peak) * p
-    d.line((960, gy - 8, 960, y), fill=ink(min(1, p * 2)), width=5)
+    d.line((960, gy - 8, 960, y), fill=ink(min(1, p * 2)), width=6)
     if p > 0.9:
         tick(d, 960, peak, prog(t, 2.5, 3.2), span=56)
 
@@ -166,41 +203,42 @@ def draw_orbit_teach(d, t, dur):
     ball_a = prog(t, 0.2, 0.55)
     if ball_a:
         d.ellipse((bx - 16, by - 16, bx + 16, by + 16), fill=ink(ball_a))
-    arrow(d, bx + 20, by, bx + 170, by, prog(t, 0.45, 1.35), ink(), width=5, head=20)
-    arrow(d, bx, by + 20, bx, by + 150, prog(t, 1.25, 2.15), ink(), width=5, head=20)
+    arrow(d, bx + 20, by, bx + 170, by, prog(t, 0.45, 1.35), ink(), width=6, head=20)
+    arrow(d, bx, by + 20, bx, by + 150, prog(t, 1.25, 2.15), ink(), width=6, head=20)
     # The same pair repeats around the circle.
     arc_p = prog(t, 1.9, 3.7)
     if arc_p > 0:
-        d.arc((cx - R, cy - R, cx + R, cy + R), start=0, end=int(360 * arc_p), fill=ink(0.85), width=4)
+        d.arc((cx - R, cy - R, cx + R, cy + R), start=0, end=int(360 * arc_p), fill=ink(0.85), width=5)
     for i, frac in enumerate((0.35, 0.55, 0.75)):
         if arc_p < frac:
             continue
         a = ang0 + frac * math.tau
         x = cx + R * math.cos(a)
         y = cy + R * math.sin(a)
-        d.ellipse((x - 8, y - 8, x + 8, y + 8), fill=ink())
+        d.ellipse((x - 10, y - 10, x + 10, y + 10), fill=ink())
         tx, ty = -math.sin(a), math.cos(a)
-        arrow(d, x, y, x + tx * 70, y + ty * 70, prog(t, 1.9 + i * 0.25, 2.5 + i * 0.25), ink(), width=4, head=14)
-        arrow(d, x, y, x - math.cos(a) * 54, y - math.sin(a) * 54, prog(t, 2.1 + i * 0.25, 2.7 + i * 0.25), ink(), width=4, head=14)
+        arrow(d, x, y, x + tx * 70, y + ty * 70, prog(t, 1.9 + i * 0.25, 2.5 + i * 0.25), ink(), width=5, head=14)
+        arrow(d, x, y, x - math.cos(a) * 54, y - math.sin(a) * 54, prog(t, 2.1 + i * 0.25, 2.7 + i * 0.25), ink(), width=5, head=14)
 
 
 def draw_orbit_teach_c1(d, t, dur):
     cx, cy, R = 960, 500, 280
-    earth(d, cx, cy, 100, prog(t, 0.05, 0.4))
-    d.ellipse((cx - R, cy - R, cx + R, cy + R), outline=ink(prog(t, 0.2, 0.9)), width=4)
+    earth(d, cx, cy, 108, prog(t, 0.05, 0.4))
+    d.ellipse((cx - R, cy - R, cx + R, cy + R), outline=ink(prog(t, 0.2, 0.9)), width=5)
+    d.ellipse((cx - R - 26, cy - R - 26, cx + R + 26, cy + R + 26), outline=ink(0.38 * prog(t, 0.3, 1.0)), width=3)
     # Ball steps around and never meets the Earth.
     ang = -0.4 + prog(t, 0.4, dur - 0.2) * 4.4
     x = cx + R * math.cos(ang)
     y = cy + R * math.sin(ang)
-    d.ellipse((x - 16, y - 16, x + 16, y + 16), fill=ink())
+    d.ellipse((x - 18, y - 18, x + 18, y + 18), fill=ink())
     # Footprints of earlier steps, still clear of the Earth.
-    for k in range(1, 5):
-        aa = ang - k * 0.55
+    for k in range(1, 8):
+        aa = ang - k * 0.45
         if aa < -0.4:
             break
         sx = cx + R * math.cos(aa)
         sy = cy + R * math.sin(aa)
-        d.ellipse((sx - 6, sy - 6, sx + 6, sy + 6), outline=ink(0.7), width=2)
+        d.ellipse((sx - 8, sy - 8, sx + 8, sy + 8), fill=wash(0.8), outline=ink(0.8), width=3)
 
 
 def _moon_curve(p):
@@ -211,47 +249,54 @@ def _moon_curve(p):
 
 
 def draw_km_a_second(d, t, dur):
-    earth(d, 340, 680, 96, prog(t, 0.05, 0.4))
+    earth(d, 340, 680, 108, prog(t, 0.05, 0.4))
     steps = 24
     drawn = int(prog(t, 0.25, 2.1) * steps)
     pts = [_moon_curve(i / steps) for i in range(drawn + 1)]
     if len(pts) > 1:
-        d.line(pts, fill=ink(), width=4)
+        d.line(pts, fill=ink(), width=5)
     mp = 0.55 + 0.28 * prog(t, 0.4, dur - 0.15)
     mx, my = _moon_curve(mp)
-    moon(d, mx, my, 34, prog(t, 0.8, 1.3))
-    arrow(d, mx + 40, my, mx + 150, my, prog(t, 1.5, 2.6), ink(), width=5, head=18)
-    arrow(d, mx, my + 36, mx, my + 78, prog(t, 2.45, 3.3), ink(), width=5, head=14)
+    moon(d, mx, my, 40, prog(t, 0.8, 1.3))
+    arrow(d, mx + 44, my, mx + 165, my, prog(t, 1.5, 2.6), ink(), width=6, head=18)
+    arrow(d, mx, my + 42, mx, my + 90, prog(t, 2.45, 3.3), ink(), width=6, head=14)
 
 
 def draw_km_a_second_c1(d, t, dur):
-    earth(d, 340, 680, 96, prog(t, 0.02, 0.25))
+    earth(d, 340, 680, 112, prog(t, 0.02, 0.25))
     pts = [_moon_curve(i / 28) for i in range(29)]
-    d.line(pts, fill=ink(prog(t, 0.05, 0.45)), width=4)
+    d.line(pts, fill=ink(prog(t, 0.05, 0.45)), width=5)
+    pts_low = [(x, y + 32) for x, y in pts]
+    d.line(pts_low, fill=ink(0.45 * prog(t, 0.1, 0.6)), width=3)
+    for frac in (0.18, 0.36, 0.54, 0.72):
+        px, py = _moon_curve(frac)
+        d.ellipse((px - 7, py - 7, px + 7, py + 7), fill=wash(0.85), outline=ink(0.75), width=3)
     mp = 0.42 + 0.48 * prog(t, 0.2, dur - 0.1)
     mx, my = _moon_curve(mp)
-    moon(d, mx, my, 34, 1)
+    moon(d, mx, my, 42, 1)
     # A second sideways-then-down pair, further along the curve.
     qx, qy = _moon_curve(min(0.95, mp + 0.12))
-    arrow(d, qx + 10, qy - 8, qx + 120, qy - 8, prog(t, 1.1, 2.2), ink(), width=5, head=16)
-    arrow(d, qx, qy + 8, qx, qy + 52, prog(t, 2.0, 2.9), ink(), width=5, head=14)
+    arrow(d, qx + 10, qy - 8, qx + 130, qy - 8, prog(t, 1.1, 2.2), ink(), width=6, head=16)
+    arrow(d, qx, qy + 8, qx, qy + 60, prog(t, 2.0, 2.9), ink(), width=6, head=14)
 
 
 def draw_weaker_far(d, t, dur):
-    earth(d, 250, 520, 120, prog(t, 0.05, 0.4))
+    earth(d, 250, 520, 126, prog(t, 0.05, 0.4))
+    for r_ring in (210, 310, 420):
+        d.arc((250 - r_ring, 520 - r_ring, 250 + r_ring, 520 + r_ring), -45, 45, fill=ink(0.42), width=3)
     p = prog(t, 0.35, dur - 0.25)
     y = 520
     near = 500
     x = near + 1080 * p
-    d.line((370, 700, max(x, near), 700), fill=ink(0.45), width=2)
+    d.line((370, 700, max(x, near), 700), fill=ink(0.55), width=3)
     # The near arrow stays, so a later frame still shows the pull getting weaker.
     if t > 0.35:
-        d.ellipse((near - 16, y - 16, near + 16, y + 16), outline=ink(0.7), width=3)
-        arrow(d, near - 22, y, near - 22 - 190, y, prog(t, 0.35, 1.0), ink(0.75), width=5, head=16)
-    d.ellipse((x - 18, y - 18, x + 18, y + 18), fill=wash(), outline=ink(), width=3)
+        d.ellipse((near - 18, y - 18, near + 18, y + 18), fill=wash(0.7), outline=ink(0.8), width=4)
+        arrow(d, near - 22, y, near - 22 - 190, y, prog(t, 0.35, 1.0), ink(0.85), width=6, head=16)
+    d.ellipse((x - 20, y - 20, x + 20, y + 20), fill=wash(), outline=ink(), width=4)
     dist = max(80, x - 250)
     length = max(28, 190 * (250 / dist) ** 2)
-    arrow(d, x - 24, y, x - 24 - length, y, 1 if t > 0.7 else prog(t, 0.3, 0.8), ink(), width=5, head=16)
+    arrow(d, x - 24, y, x - 24 - length, y, 1 if t > 0.7 else prog(t, 0.3, 0.8), ink(), width=6, head=16)
 
 
 def draw_weaker_far_c1(d, t, dur):
@@ -260,7 +305,7 @@ def draw_weaker_far_c1(d, t, dur):
     The spoken line is 'four times weaker' at twice the distance. The stub
     at three times the distance has no number on it.
     """
-    cx, cy, r = 230, 500, 78
+    cx, cy, r = 230, 500, 96
     earth(d, cx, cy, r, prog(t, 0.05, 0.35))
     surface = cx + r
     unit = 250  # one distance, from the surface
@@ -274,51 +319,69 @@ def draw_weaker_far_c1(d, t, dur):
         if p <= 0:
             continue
         x = surface + n * unit
-        d.line((surface, 690, x, 690), fill=ink(0.4 * p), width=2)
-        d.ellipse((x - 16, 500 - 16, x + 16, 500 + 16), fill=wash(p), outline=ink(p), width=3)
-        arrow(d, x - 22, 500, x - 22 - length, 500, p, ink(p), width=5, head=14 if length > 30 else 8)
+        d.arc((cx - n * unit - r, cy - 220, cx + n * unit + r, cy + 220), -35, 35, fill=ink(0.45 * p), width=3)
+        d.line((surface, 690, x, 690), fill=ink(0.55 * p), width=3)
+        d.ellipse((x - 18, 500 - 18, x + 18, 500 + 18), fill=wash(p), outline=ink(p), width=4)
+        arrow(d, x - 22, 500, x - 22 - length, 500, p, ink(p), width=6, head=14 if length > 30 else 8)
     # Equal ticks: the second gap is two of the first, so it reads as twice as far.
     if t > 1.5:
         p = prog(t, 1.5, 2.4)
         x1 = surface + unit
         x2 = surface + 2 * unit
         for x in (surface, x1, x2):
-            d.line((x, 730, x, 748), fill=ink(p), width=3)
-        d.line((surface, 740, x2, 740), fill=ink(p), width=3)
+            d.line((x, 726, x, 752), fill=ink(p), width=4)
+        d.line((surface, 740, x2, 740), fill=ink(p), width=4)
 
 
 def draw_sixty_earths(d, t, dur):
-    earth(d, 150, 530, 62, prog(t, 0.05, 0.35))
+    earth(d, 150, 530, 82, prog(t, 0.05, 0.35))
     n = 60
-    x0, x1 = 280, 1480
+    x0, x1 = 290, 1490
     shown = int(round(prog(t, 0.3, 3.5) * n))
+    # Period measuring bracket and ticks under the 60-Earth span
+    d.arc((150 - 140, 530 - 140, 150 + 140, 530 + 140), -55, 55, fill=ink(0.5), width=3)
     if shown:
         step = (x1 - x0) / (n - 1)
-        rad = max(6, step * 0.46)
+        rad = max(8, step * 0.48)
         for i in range(shown):
             x = x0 + i * step
             earth(d, x, 520, rad, 1)
-    moon(d, 1680, 520, 46, prog(t, 3.2, 4.0))
+            if i % 10 == 0:
+                d.line((x, 560, x, 600), fill=ink(0.75), width=4)
+        d.line((x0, 585, x0 + (shown - 1) * step, 585), fill=ink(0.65), width=3)
+    moon(d, 1680, 520, 58, prog(t, 2.0, 3.2))
 
 
 def _dot_square():
     span, n = 620, 60
-    im = Image.new("RGBA", (span, span), (0, 0, 0, 0))
     arr = np.zeros((span, span, 4), dtype=np.uint8)
+    # Warm cream wash inside the square so the 60x60 grid reads as a period plate, not raw high-frequency noise
+    arr[:, :, 0] = WASH[0]
+    arr[:, :, 1] = WASH[1]
+    arr[:, :, 2] = WASH[2]
+    arr[:, :, 3] = 175
     step = span / n
     yy, xx = np.mgrid[0:n, 0:n]
     xs = ((xx + 0.5) * step).astype(int)
     ys = ((yy + 0.5) * step).astype(int)
-    arr[ys, xs, 0] = INK[0]
-    arr[ys, xs, 1] = INK[1]
-    arr[ys, xs, 2] = INK[2]
-    arr[ys, xs, 3] = 255
-    # 3x3 stamp so the dots read at full frame.
-    stamped = np.zeros_like(arr)
+    dot = np.zeros((span, span), dtype=bool)
+    dot[ys, xs] = True
+    stamped = np.zeros_like(dot)
     for dy in (-1, 0, 1):
         for dx in (-1, 0, 1):
-            stamped = np.maximum(stamped, np.roll(np.roll(arr, dy, 0), dx, 1))
-    return Image.fromarray(stamped, "RGBA")
+            stamped |= np.roll(np.roll(dot, dy, 0), dx, 1)
+    arr[stamped, 0] = INK[0]
+    arr[stamped, 1] = INK[1]
+    arr[stamped, 2] = INK[2]
+    arr[stamped, 3] = 240
+    im = Image.fromarray(arr, "RGBA")
+    d = ImageDraw.Draw(im)
+    d.rectangle((0, 0, span - 1, span - 1), outline=INK, width=6)
+    for k in range(10, 60, 10):
+        pos = int(round(k * step))
+        d.line((pos, 0, pos, span), fill=(INK[0], INK[1], INK[2], 140), width=2)
+        d.line((0, pos, span, pos), fill=(INK[0], INK[1], INK[2], 140), width=2)
+    return im
 
 
 DOTS = None
@@ -343,31 +406,36 @@ def _paste_dots(base_draw_image, rows, origin=(200, 180)):
 def draw_dots_square(d, t, dur, canvas):
     rows = prog(t, 0.25, 2.9) * 60
     _paste_dots(canvas, rows, (160, 160))
-    earth(d, 1180, 520, 70, prog(t, 0.2, 0.6))
-    moon(d, 1620, 360, 36, prog(t, 0.5, 1.0))
+    earth(d, 1180, 520, 96, prog(t, 0.2, 0.6))
+    moon(d, 1620, 360, 52, prog(t, 0.5, 1.0))
+    d.arc((1180 - 180, 520 - 180, 1180 + 180, 520 + 180), -60, 60, fill=ink(0.55), width=4)
     # Pull arrow beside the Moon shrinks toward a single dot.
     shrink = prog(t, 2.2, 4.4)
     if shrink < 0.82:
         length = 160 * (1 - shrink)
-        arrow(d, 1570, 360, 1570 - max(36, length), 360, 1 if t > 2.1 else prog(t, 1.2, 2.1), ink(), width=5, head=16)
+        arrow(d, 1555, 360, 1555 - max(36, length), 360, 1 if t > 2.1 else prog(t, 1.2, 2.1), ink(), width=6, head=16)
     else:
-        d.ellipse((1546, 352, 1562, 368), fill=ink())
+        d.ellipse((1536, 350, 1556, 370), fill=ink())
 
 
 def draw_dots_square_c1(d, t, dur, canvas):
     _paste_dots(canvas, 60, (160, 160))
-    moon(d, 1500, 470, 48, prog(t, 0.1, 0.45))
+    earth(d, 1120, 620, 84, prog(t, 0.1, 0.45))
+    moon(d, 1520, 450, 60, prog(t, 0.1, 0.45))
     # The last dot travels out of the square and ticks in beside the Moon.
     p = prog(t, 0.6, 3.4)
-    x = 780 + (1500 - 70 - 780) * p
-    y = 470 + math.sin(p * math.pi) * -30
-    rad = 4 + 6 * ease(max(0, (p - 0.82) / 0.18))
-    d.ellipse((x - rad, y - rad, x + rad, y + rad), fill=ink(0.3 + 0.7 * p))
+    x = 780 + (1520 - 80 - 780) * p
+    y = 450 + math.sin(p * math.pi) * -50
+    pts_arc = [(780 + (1520 - 80 - 780) * (k / 20), 450 + math.sin((k / 20) * math.pi) * -50) for k in range(int(p * 20) + 1)]
+    if len(pts_arc) > 1:
+        d.line(pts_arc, fill=ink(0.65), width=4)
+    rad = 6 + 7 * ease(max(0, (p - 0.82) / 0.18))
+    d.ellipse((x - rad, y - rad, x + rad, y + rad), fill=ink(0.5 + 0.5 * p))
 
 
 def draw_station_curve(d, t, dur):
     cx, cy, R = 960, 540, 250
-    earth(d, cx, cy, 92, prog(t, 0.05, 0.4))
+    earth(d, cx, cy, 108, prog(t, 0.05, 0.4))
     p = prog(t, 0.25, 2.3)
     if p > 0:
         d.arc((cx - R, cy - R, cx + R, cy + R), 200, 200 + 360 * p, fill=ink(), width=5)
@@ -375,12 +443,12 @@ def draw_station_curve(d, t, dur):
     x = cx + R * math.cos(ang)
     y = cy + R * math.sin(ang)
     # A small station: body plus two panel lines. It keeps moving.
-    d.rounded_rectangle((x - 16, y - 8, x + 16, y + 8), radius=3, outline=ink(), width=3)
-    d.line((x - 16, y, x - 32, y - 6), fill=ink(), width=3)
-    d.line((x + 16, y, x + 32, y - 6), fill=ink(), width=3)
+    d.rounded_rectangle((x - 18, y - 10, x + 18, y + 10), radius=3, fill=wash(), outline=ink(), width=4)
+    d.line((x - 18, y, x - 36, y - 6), fill=ink(), width=4)
+    d.line((x + 18, y, x + 36, y - 6), fill=ink(), width=4)
     tx, ty = -math.sin(ang), math.cos(ang)
-    arrow(d, x, y, x + tx * 110, y + ty * 110, prog(t, 2.3, 3.4), ink(), width=5, head=16)
-    arrow(d, x, y, x - math.cos(ang) * 80, y - math.sin(ang) * 80, prog(t, 3.2, 4.3), ink(), width=5, head=16)
+    arrow(d, x, y, x + tx * 110, y + ty * 110, prog(t, 2.3, 3.4), ink(), width=6, head=16)
+    arrow(d, x, y, x - math.cos(ang) * 80, y - math.sin(ang) * 80, prog(t, 3.2, 4.3), ink(), width=6, head=16)
 
 
 DRAW = {
@@ -401,17 +469,23 @@ def make_paper():
     rng = np.random.default_rng(9)
     small = rng.random((H // 4 + 8, W // 4 + 8)).astype(np.float32)
     paper = np.repeat(np.repeat(small, 4, 0), 4, 1)[:H, :W]
-    # A second finer grain so flat areas don't band.
     fine = rng.random((H, W)).astype(np.float32)
-    return paper * 0.85 + fine * 0.15
+    tex = paper * 0.85 + fine * 0.15
+    yy, xx = np.mgrid[:H, :W]
+    nx = (xx - W / 2.0) / (W / 2.0)
+    ny = (yy - H / 2.0) / (H / 2.0)
+    vig = np.clip(nx * nx * 0.85 + ny * ny * 0.95, 0.0, 1.4).astype(np.float32)
+    return tex, vig
 
 
-def paper_frame(paper, k):
+def paper_frame(paper_vig, k):
+    tex, vig = paper_vig
     shift = (k // 2) % 48
-    rolled = np.roll(np.roll(paper, shift, 1), shift // 3, 0)
-    r = 112 + rolled * 42
-    g = 74 + rolled * 30
-    b = 42 + rolled * 18
+    rolled = np.roll(np.roll(tex, shift, 1), shift // 3, 0)
+    shade = 1.0 - 0.45 * vig
+    r = 152 * shade + rolled * 12
+    g = 110 * shade + rolled * 9
+    b = 68 * shade + rolled * 6
     rgb = np.stack([r, g, b], axis=-1).clip(0, 255).astype(np.uint8)
     return Image.fromarray(rgb, "RGB")
 

@@ -1,23 +1,9 @@
-# Picture QA: FAIL
+# Picture QA: PASS
 
-/private/tmp/qa_hos_009_v01/concat_v01.mp4 · 12 cuts · 6 fail · 6 for Claude to look at full size
-
-## Fix before anyone watches
-
-- **0:02** row 09_pull_heights · code_graphic_009_p2_09_pull_heights.mp4 (own code graphic 09_pull_heights): split panel: horizontal seam at 0.741
-- **0:06** row 09_pull_heights_c1 · code_graphic_009_p2_09_pull_heights_c1.mp4 (own code graphic 09_pull_heights_c1): noise: grain 8.45 over structure 3.31, 8x-downscaled std 4.76 < 13.44 and edge 0.0253 < 0.0259
-- **0:25** row 08_km_a_second_c1 · code_graphic_009_p3_08_km_a_second_c1.mp4 (own code graphic 08_km_a_second_c1): noise: grain 8.05 over structure 4.28, 8x-downscaled std 5.42 < 13.44 and edge 0.0248 < 0.0259
-- **0:44** row 03_sixty_earths · code_graphic_009_p4_03_sixty_earths.mp4 (own code graphic 03_sixty_earths): noise: grain 8.48 over structure 3.3, 8x-downscaled std 4.66 < 13.44 and edge 0.0176 < 0.0259
-- **0:49** row 04_dots_square · code_graphic_009_p4_04_dots_square.mp4 (own code graphic 04_dots_square): noise: grain 10.24 over structure 4.61, 8x-downscaled std 5.96 < 13.44 and edge 0.0257 < 0.0259
-- **0:54** row 04_dots_square_c1 · code_graphic_009_p4_04_dots_square_c1.mp4 (own code graphic 04_dots_square_c1): noise: grain 9.67 over structure 4.43, 8x-downscaled std 5.57 < 13.44 and edge 0.0182 < 0.0259
+/private/tmp/qa_hos_009_v01/concat_v01.mp4 · 12 cuts · 0 fail · 1 for Claude to look at full size
 
 ## Claude looks at these full size
 
-- **0:10** row 06_orbit_teach · code_graphic_009_p3_06_orbit_teach.mp4 (own code graphic 06_orbit_teach): low detail: luma std 12.42 < 18.0
-- **0:15** row 06_orbit_teach_c1 · code_graphic_009_p3_06_orbit_teach_c1.mp4 (own code graphic 06_orbit_teach_c1): low detail: luma std 11.37 < 18.0; low detail: edge density 0.0268 < film p5 0.0272
-- **0:20** row 08_km_a_second · code_graphic_009_p3_08_km_a_second.mp4 (own code graphic 08_km_a_second): low detail: luma std 13.16 < 18.0
-- **0:31** row 01_weaker_far · code_graphic_009_p4_01_weaker_far.mp4 (own code graphic 01_weaker_far): low detail: luma std 13.9 < 18.0
-- **0:38** row 01_weaker_far_c1 · code_graphic_009_p4_01_weaker_far_c1.mp4 (own code graphic 01_weaker_far_c1): low detail: luma std 12.84 < 18.0
-- **1:00** row 07_station_curve · code_graphic_009_p5_07_station_curve.mp4 (own code graphic 07_station_curve): low detail: luma std 12.81 < 18.0
+- **0:10** row 06_orbit_teach · code_graphic_009_p3_06_orbit_teach.mp4 (own code graphic 06_orbit_teach): low detail: edge density 0.0183 < film p5 0.0189
 
 Claude's own look still covers every cut on the per-row sheet: would a viewer trust this as a real, sharp, finished picture of what the sentence says?

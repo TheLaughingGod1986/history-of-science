@@ -107,14 +107,14 @@ def navy():
     y, x = np.mgrid[:H, :W]
     nx = (x - W / 2) / (W / 2)
     ny = (y - H / 2) / (H / 2)
-    v = np.clip(nx * nx + ny * ny, 0, 1)
+    v = np.clip(nx * nx * 0.9 + ny * ny * 1.0, 0, 1.35)
     rng = np.random.default_rng(1010)
-    noise = rng.normal(0, 1.5, (H, W))
+    noise = rng.normal(0, 1.4, (H, W))
     img = np.zeros((H, W, 3), np.float32)
-    base = np.array([36, 54, 82], np.float32)
-    lift = np.array([22, 26, 30], np.float32)
+    base = np.array([22, 36, 58], np.float32)
+    lift = np.array([58, 64, 70], np.float32)
     for c in range(3):
-        img[:, :, c] = base[c] + lift[c] * (1 - v) + noise
+        img[:, :, c] = base[c] + lift[c] * (1 - 0.72 * v) + noise
     return Image.fromarray(np.uint8(np.clip(img, 0, 255)), "RGB")
 
 
@@ -227,31 +227,34 @@ def rock(d, cx, cy, r, t, a=1.0):
 
 def fern(d, x, y, a):
     c = col(CREAM, a)
-    d.line((x, y, x, y - 240), fill=c, width=6)
-    for i, yy in enumerate(range(y - 36, y - 230, -32)):
-        s = 28 + i * 8
-        d.line((x, yy, x - s, yy - 18), fill=c, width=4)
-        d.line((x, yy, x + s, yy - 18), fill=c, width=4)
+    d.ellipse((x - 110, y - 260, x + 110, y + 20), fill=col(TAN, 0.38 * a), outline=col(GOLD, 0.65 * a), width=3)
+    d.line((x, y, x, y - 240), fill=c, width=7)
+    for i, yy in enumerate(range(y - 36, y - 230, -28)):
+        s = 32 + i * 9
+        d.line((x, yy, x - s, yy - 18), fill=c, width=5)
+        d.line((x, yy, x + s, yy - 18), fill=c, width=5)
 
 
 def grazer(d, x, y, a):
     c = col(CREAM, a)
-    d.ellipse((x - 70, y - 70, x + 70, y - 10), outline=c, width=5)
-    d.ellipse((x + 48, y - 110, x + 96, y - 62), outline=c, width=5)
-    d.line((x + 70, y - 78, x + 40, y - 40), fill=c, width=5)
+    d.ellipse((x - 130, y - 160, x + 130, y + 60), fill=col(TAN, 0.38 * a), outline=col(GOLD, 0.65 * a), width=3)
+    d.ellipse((x - 70, y - 70, x + 70, y - 10), fill=col(PALE, 0.55 * a), outline=c, width=6)
+    d.ellipse((x + 48, y - 110, x + 96, y - 62), fill=col(PALE, 0.55 * a), outline=c, width=6)
+    d.line((x + 70, y - 78, x + 40, y - 40), fill=c, width=6)
     for lx in (-48, -16, 16, 46):
-        d.line((x + lx, y - 16, x + lx - 6, y + 36), fill=c, width=5)
-    d.line((x - 60, y - 36, x - 110, y - 20), fill=c, width=4)
+        d.line((x + lx, y - 16, x + lx - 6, y + 36), fill=c, width=6)
+    d.line((x - 60, y - 36, x - 110, y - 20), fill=c, width=5)
 
 
 def hunter(d, x, y, a):
     """Side-view theropod facing the plant-eater: long tail, two legs, open jaw."""
     c = col(CREAM, a)
+    d.ellipse((x - 175, y - 180, x + 205, y + 60), fill=col(TAN, 0.38 * a), outline=col(GOLD, 0.65 * a), width=3)
     # tail trails to the right, away from the jaw
     d.line((x + 28, y - 82, x + 176, y - 40), fill=c, width=8)
     d.line((x + 164, y - 44, x + 196, y - 56), fill=c, width=5)
     # torso, horizontal, not an upright body
-    d.ellipse((x - 52, y - 122, x + 58, y - 50), outline=c, width=6)
+    d.ellipse((x - 52, y - 122, x + 58, y - 50), fill=col(PALE, 0.55 * a), outline=c, width=6)
     # two hind legs and feet
     d.line((x - 6, y - 56, x - 24, y + 30), fill=c, width=7)
     d.line((x + 26, y - 54, x + 6, y + 32), fill=c, width=7)
@@ -262,6 +265,7 @@ def hunter(d, x, y, a):
     # neck into a long skull facing left
     d.line((x - 38, y - 104, x - 74, y - 136), fill=c, width=7)
     skull = [(x - 72, y - 156), (x - 158, y - 136), (x - 160, y - 120), (x - 78, y - 112)]
+    d.polygon(skull, fill=col(PALE, 0.55 * a))
     d.line(skull + [skull[0]], fill=c, width=6)
     # lower jaw, slightly open, with three teeth
     d.line((x - 80, y - 116, x - 150, y - 98), fill=c, width=5)
@@ -271,34 +275,50 @@ def hunter(d, x, y, a):
 
 
 def bird(d, x, y, a):
+    if a <= 0.02:
+        return
     c = col(CREAM, a)
-    d.ellipse((x - 36, y - 24, x + 40, y + 16), outline=c, width=5)
-    d.polygon([(x + 36, y - 6), (x + 70, y - 14), (x + 36, y + 8)], outline=c)
-    d.arc((x - 20, y - 46, x + 50, y + 10), 200, 20, fill=c, width=5)
-    d.line((x - 30, y, x - 62, y - 16), fill=c, width=4)
-    d.ellipse((x + 18, y - 16, x + 28, y - 6), fill=c)
+    d.ellipse((x - 110, y - 95, x + 110, y + 85), fill=col(TAN, 0.42 * a), outline=col(GOLD, 0.75 * a), width=4)
+    d.ellipse((x - 42, y - 28, x + 46, y + 20), fill=col(PALE, 0.65 * a), outline=c, width=6)
+    d.polygon([(x + 42, y - 6), (x + 78, y - 16), (x + 42, y + 10)], fill=col(GOLD, 0.85 * a), outline=c)
+    d.arc((x - 24, y - 52, x + 56, y + 12), 200, 20, fill=c, width=6)
+    d.line((x - 36, y, x - 72, y - 18), fill=c, width=5)
+    d.ellipse((x + 20, y - 18, x + 30, y - 8), fill=c)
 
 
 def seed(d, x, y, a):
+    if a <= 0.02:
+        return
     c = col(CREAM, a)
-    d.ellipse((x - 28, y - 48, x + 28, y + 48), outline=c, width=5)
-    d.line((x, y - 48, x + 8, y - 78), fill=c, width=4)
+    d.ellipse((x - 110, y - 105, x + 110, y + 85), fill=col(TAN, 0.42 * a), outline=col(GOLD, 0.75 * a), width=4)
+    d.ellipse((x - 34, y - 54, x + 34, y + 54), fill=col(GOLD, 0.65 * a), outline=c, width=6)
+    d.line((x, y - 54, x + 10, y - 84), fill=c, width=5)
+    for dy in (-24, 0, 24):
+        d.arc((x - 26, y + dy - 12, x + 26, y + dy + 12), 20, 160, fill=c, width=3)
 
 
 def nest(d, x, y, a):
+    if a <= 0.02:
+        return
     c = col(CREAM, a)
-    d.line((x - 120, y, x + 120, y), fill=c, width=4)
-    d.arc((x - 54, y - 36, x + 54, y + 28), 200, 340, fill=c, width=5)
-    d.arc((x - 70, y - 18, x - 10, y + 20), 210, 20, fill=col(GOLD, a), width=3)
-    d.arc((x + 8, y - 16, x + 68, y + 22), 200, 10, fill=col(GOLD, a), width=3)
+    d.ellipse((x - 125, y - 95, x + 125, y + 85), fill=col(TAN, 0.42 * a), outline=col(GOLD, 0.75 * a), width=4)
+    d.line((x - 110, y + 10, x + 110, y + 10), fill=c, width=5)
+    d.polygon([(x - 68, y + 10), (x - 48, y - 34), (x + 48, y - 34), (x + 68, y + 10)], fill=col(CLAY, 0.75 * a), outline=c)
+    d.arc((x - 64, y - 42, x + 64, y + 32), 190, 350, fill=c, width=6)
+    d.ellipse((x - 28, y - 22, x - 4, y - 2), fill=col(WHITE, 0.9 * a), outline=c, width=3)
+    d.ellipse((x + 4, y - 22, x + 28, y - 2), fill=col(WHITE, 0.9 * a), outline=c, width=3)
 
 
 def tube(d, x, y, a):
+    if a <= 0.02:
+        return
     c = col(CREAM, a)
-    d.rounded_rectangle((x - 36, y, x + 36, y + 210), radius=18, outline=c, width=6)
-    d.rectangle((x - 28, y + 90, x + 28, y + 190), fill=col(GOLD, 0.55 * a))
-    d.line((x - 28, y - 30, x - 28, y + 16), fill=c, width=6)
-    d.line((x + 28, y - 30, x + 28, y + 16), fill=c, width=6)
+    d.rounded_rectangle((x - 44, y, x + 44, y + 220), radius=20, fill=col(TAN, 0.35 * a), outline=c, width=6)
+    d.rectangle((x - 34, y + 85, x + 34, y + 198), fill=col(GOLD, 0.75 * a))
+    for yy in range(y + 40, y + 190, 30):
+        d.line((x - 28, yy, x + 10, yy), fill=c, width=3)
+    d.line((x - 34, y - 30, x - 34, y + 16), fill=c, width=6)
+    d.line((x + 34, y - 30, x + 34, y + 16), fill=c, width=6)
 
 
 SOUTH = chaikin([
@@ -337,25 +357,26 @@ def paint(bg, kind, t, dur):
             drip = (t * 0.45) % 1
             d.ellipse((1294, 560 + drip * 120, 1306, 572 + drip * 120), fill=col(GOLD, 0.9))
     elif kind == "pyramid":
-        apex, bl, br = (960, 180), (560, 900), (1360, 900)
+        apex, bl, br = (960, 180), (520, 900), (1400, 900)
         p = prog(t, 0.2, 1.6)
-        d.line([apex, bl, br, apex], fill=col(CREAM, p), width=6)
-        for i in range(1, 8):
-            yy = apex[1] + (br[1] - apex[1]) * (i / 8) 
+        d.polygon([apex, bl, br], fill=col(TAN, 0.45 * p))
+        d.line([apex, bl, br, apex], fill=col(CREAM, p), width=7)
+        for i in range(1, 9):
+            yy = apex[1] + (br[1] - apex[1]) * (i / 9)
             tt = (yy - apex[1]) / (bl[1] - apex[1])
             left = apex[0] + (bl[0] - apex[0]) * tt
             right = apex[0] + (br[0] - apex[0]) * tt
             if p > i / 10:
-                d.line((left, yy, right, yy), fill=col(PALE, 0.7 * p), width=3)
-        if t > 1.1:
-            for i in range(8):
-                phase = (t * 0.28 + i / 8) % 1
+                d.line((left, yy, right, yy), fill=col(CREAM, 0.78 * p), width=4)
+        if t > 0.8:
+            for i in range(12):
+                phase = (t * 0.28 + i / 12) % 1
                 yy = apex[1] + 40 + phase * (bl[1] - apex[1] - 60)
                 tt = (yy - apex[1]) / (bl[1] - apex[1])
                 left = apex[0] + (bl[0] - apex[0]) * tt
                 right = apex[0] + (br[0] - apex[0]) * tt
                 xx = left + 30 + (right - left - 60) * ((i * 0.17) % 1)
-                d.line((xx, yy - 20, xx + 4, yy + 64), fill=col(BLUE, 0.95), width=5)
+                d.line((xx, yy - 24, xx + 4, yy + 68), fill=col(BLUE, 0.95), width=6)
     elif kind == "clay":
         for x, dense in ((430, True), (1130, False)):
             d.rounded_rectangle((x, 240, x + 340, 900), radius=18, outline=col(CREAM, 1), width=6)
@@ -398,35 +419,57 @@ def paint(bg, kind, t, dur):
         cliff_mark(d, cx, cy + 8, prog(t, 6.0, 7.6))
         pin(d, *world_pt(*PINS["nz"]), prog(t, 10.0, 11.6))
     elif kind == "supernova":
-        cx, cy, flare = 520, 360, prog(t, 1.5, 3.2) * (1 - prog(t, 4.0, 6.5))
-        r = 28 + flare * 70
-        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=col(GOLD, 0.85))
-        for i in range(8):
-            ang = i * math.pi / 4 + t * 0.15
-            d.line((cx, cy, cx + math.cos(ang) * (r + 40 + flare * 50), cy + math.sin(ang) * (r + 40)), fill=col(CREAM, 0.8), width=4)
-        line_p = prog(t, 5.5, 11.0)
+        cx, cy = 540, 420
+        flare = 0.55 + 0.45 * prog(t, 0.4, 2.5)
+        r = 46 + flare * 54
+        for ring_r in (130, 195, 265, 340):
+            d.ellipse((cx - ring_r, cy - ring_r, cx + ring_r, cy + ring_r), outline=col(GOLD, 0.65 * flare), width=4)
+        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=col(GOLD, 0.92), outline=col(CREAM, 1), width=5)
+        for i in range(16):
+            ang = i * math.pi / 8 + t * 0.15
+            len_r = (r + 95 + flare * 60) if i % 2 == 0 else (r + 55 + flare * 35)
+            d.line((cx, cy, cx + math.cos(ang) * len_r, cy + math.sin(ang) * len_r), fill=col(CREAM, 0.88), width=5)
+        # Clay stratum and test vials on the right
+        d.rounded_rectangle((1120, 260, 1640, 860), radius=24, fill=col(CLAY, 0.42), outline=col(CREAM, 0.85), width=5)
+        for yy in range(320, 820, 64):
+            d.line((1150, yy, 1610, yy + 14 * math.sin(yy)), fill=col(PALE, 0.55), width=3)
+        line_p = prog(t, 1.8, 7.5)
         if line_p > 0:
-            x2 = cx + (1380 - cx) * line_p
-            y2 = cy + (640 - cy) * line_p
-            steps = 18
-            for i in range(int(steps * line_p)):
+            steps = 22
+            for i in range(int(steps * line_p) + 1):
                 u = i / steps
-                d.ellipse((cx + (1380 - cx) * u - 4, cy + (640 - cy) * u - 4,
-                           cx + (1380 - cx) * u + 4, cy + (640 - cy) * u + 4), fill=col(CREAM, 0.9))
-        if t > 8:
-            tube(d, 1380, 560, prog(t, 8.0, 11.5))
-        if t > 12.5:
-            cross = prog(t, 12.5, 15.5)
-            s = 70 * cross
+                px = cx + (1380 - cx) * u
+                py = cy + (560 - cy) * u
+                d.ellipse((px - 6, py - 6, px + 6, py + 6), fill=col(CREAM, 0.95))
+        tube(d, 1300, 480, prog(t, 2.2, 5.5))
+        tube(d, 1470, 480, prog(t, 3.0, 6.5))
+        if t > 8.5:
+            cross = prog(t, 8.5, 11.5)
+            s = 86 * cross
             d.line((cx - s, cy - s, cx + s, cy + s), fill=col(CREAM, cross), width=10)
             d.line((cx + s, cy - s, cx - s, cy + s), fill=col(CREAM, cross), width=10)
     elif kind == "tenkm":
         skyline(d, 1180, 860, prog(t, 0.3, 1.6), t)
         rock(d, 520, 420, 300, t, prog(t, 0.2, 1.2))
     elif kind == "food":
-        fern(d, 480, 780, prog(t, 0.3, 1.4) * (1 - 0.65 * prog(t, 2.4, 3.6)))
-        grazer(d, 960, 760, prog(t, 2.6, 3.8) * (1 - 0.6 * prog(t, 4.6, 5.8)))
-        hunter(d, 1420, 760, prog(t, 4.8, 6.0) * (1 - 0.45 * prog(t, 6.4, 7.4)))
+        # Rolling ground hills and sun-blocking dust cloud above
+        pts_ground = [(x, 810 + 16 * math.sin(x * 0.008)) for x in range(140, 1780, 32)]
+        d.line(pts_ground, fill=col(CREAM, 0.85), width=5)
+        for cy_ash in (210, 270):
+            pts_ash = [(x, cy_ash + 18 * math.sin(x * 0.011 + t)) for x in range(180, 1740, 36)]
+            d.line(pts_ash, fill=col(PALE, 0.65), width=4)
+        fern_a = prog(t, 0.15, 1.0) * (1 - 0.25 * prog(t, 2.4, 3.6))
+        grazer_a = prog(t, 0.9, 1.9) * (1 - 0.25 * prog(t, 4.6, 5.8))
+        hunter_a = prog(t, 1.8, 2.9) * (1 - 0.25 * prog(t, 6.0, 7.2))
+        fern(d, 460, 780, fern_a)
+        grazer(d, 940, 760, grazer_a)
+        hunter(d, 1440, 760, hunter_a)
+        if t > 1.2:
+            d.line((600, 680, 780, 680), fill=col(GOLD, 0.85), width=6)
+            d.line((755, 662, 780, 680, 755, 698), fill=col(GOLD, 0.85), width=6)
+        if t > 2.2:
+            d.line((1100, 680, 1245, 680), fill=col(GOLD, 0.85), width=6)
+            d.line((1220, 662, 1245, 680, 1220, 698), fill=col(GOLD, 0.85), width=6)
     elif kind == "hole":
         draw_world(d, alpha=prog(t, 0.15, 1.1))
         qx, qy = world_pt(-38, 22)
@@ -453,12 +496,21 @@ def paint(bg, kind, t, dur):
         elif rp > 0:
             d.arc(box, start=0, end=max(2, int(359 * rp)), fill=col(GOLD, 1), width=10)
     elif kind == "survive":
-        bird(d, 480, 560, prog(t, 0.6, 2.0))
-        seed(d, 960, 560, prog(t, 4.2, 5.6))
-        nest(d, 1420, 640, prog(t, 7.8, 9.2))
-        arc_p = prog(t, 10.2, 12.6)
+        # Protective earth stratum and shelter arches so at mid-shot (7.2s) all three survivors & shelter read clearly
+        for i, y0 in enumerate((760, 830, 900)):
+            pts_s = [(x, y0 + 14 * math.sin(x * 0.009 + i)) for x in range(160, 1760, 32)]
+            d.line(pts_s, fill=col(PALE, 0.65), width=4)
+        bird(d, 480, 560, prog(t, 0.4, 1.6))
+        seed(d, 960, 560, prog(t, 1.6, 2.8))
+        nest(d, 1420, 600, prog(t, 2.8, 4.2))
+        arc_p = prog(t, 3.8, 6.4)
         if arc_p > 0:
-            d.arc((360, 300, 1560, 860), start=200, end=int(200 + 140 * arc_p), fill=col(GOLD, 0.8), width=6)
+            d.arc((280, 260, 1640, 880), start=195, end=int(195 + 150 * arc_p), fill=col(GOLD, 0.92), width=8)
+            d.arc((320, 300, 1600, 860), start=198, end=int(198 + 144 * arc_p), fill=col(CREAM, 0.75), width=5)
+        for i in range(14):
+            ax = 240 + i * 108
+            ay = 140 + ((t * 45 + i * 37) % 140)
+            d.line((ax, ay, ax - 14, ay + 28), fill=col(PALE, 0.7), width=4)
     else:
         raise ValueError(kind)
     im = Image.alpha_composite(im, ov)
@@ -624,7 +676,8 @@ def main():
     args.out.mkdir(parents=True, exist_ok=True)
     specs = load_specs()
     if args.only:
-        specs = [s for s in specs if args.only in s["id"] or args.only in s["kind"]]
+        toks = [x.strip() for x in args.only.split(",") if x.strip()]
+        specs = [s for s in specs if any(tok in s["id"] or tok in s["kind"] for tok in toks)]
         if not specs:
             raise SystemExit(f"no match for {args.only}")
     bg = navy()
