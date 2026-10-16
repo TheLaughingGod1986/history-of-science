@@ -25,3 +25,5 @@ ALL CHECKS PASS
 Dry-run returned `ok=true`, `dryRun=true`; live result returned Private + the intended publishAt. Full tool outputs and before/after owner API snapshots are beside this note. Studio evidence records the persisted Related, cover URL, AI and audience radio settings.
 
 Next: Chief merges this records PR; normal post-public routine can mirror to Buffer. No re-upload, no metadata approval request, no further scheduling needed.
+
+NAS staging attempt: the mounted share stalled at destination-directory creation (before rsync). Detached session `j0308-stage` was interrupted; `/private/tmp/j0308-stage.log` records KeyboardInterrupt at mkdir. No copy was verified and no NAS file was deleted. Local and iCloud UAT master retained; manifest continues to name the verified local master.
