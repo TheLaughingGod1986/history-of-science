@@ -1,0 +1,312 @@
+[
+  {
+    "id": "P2:02_layers_build",
+    "file": "code_graphic_010_p2_02_layers_build.mp4",
+    "use_s": 8.02,
+    "encoded_frames": 241,
+    "encoded_s": 8.033,
+    "film_start_s": 96.32,
+    "vo_land": [
+      "The cliffs there are made of limestone, laid down layer by layer on an ancient sea floor over millions of years."
+    ],
+    "shows": "Own code graphic: pale layers of an ancient sea floor settle one on another. Matte ink on a lifted navy field. No words.",
+    "labels": [],
+    "board": "part-02_plates_v02.json",
+    "min_sample_mean_luma": 61.27,
+    "min_sample_p95": 75.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p2_02_layers_build.jpg",
+    "spend": "\u00a30",
+    "sha256": "7ed8394d7301c121b2c81dc96713e231ce402c316375f03e22ba165c32b4a4c6",
+    "bytes": 889615,
+    "probed_nb_frames": 241
+  },
+  {
+    "id": "P2:08_two_clocks",
+    "file": "code_graphic_010_p2_08_two_clocks.mp4",
+    "use_s": 15.74,
+    "encoded_frames": 473,
+    "encoded_s": 15.767,
+    "film_start_s": 151.62,
+    "vo_land": [
+      "A few years would mean a sudden disaster. Thousands of years would mean a slow decline. If he could time the clay, he could tell the difference. But how do you put a clock on a layer of mud that's sixty-six million years old?"
+    ],
+    "shows": "Own code graphic: two hourglasses side by side, one emptying quickly, one barely dripping. Matte ink, no digits.",
+    "labels": [],
+    "board": "part-02_plates_v02.json",
+    "min_sample_mean_luma": 65.3,
+    "min_sample_p95": 77.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p2_08_two_clocks.jpg",
+    "spend": "\u00a30",
+    "sha256": "c6d85b24396419457d20cbd351033030d678a331305e09b67b9c751f5b701784",
+    "bytes": 849910,
+    "probed_nb_frames": 473
+  },
+  {
+    "id": "P3:02_pyramid_muons",
+    "file": "code_graphic_010_p3_02_pyramid_muons.mp4",
+    "use_s": 7.36,
+    "encoded_frames": 221,
+    "encoded_s": 7.367,
+    "film_start_s": 184.5,
+    "vo_land": [
+      "hidden rooms inside an Egyptian pyramid, and now he had an idea for a clock. Every day, a"
+    ],
+    "shows": "Own code graphic: a cutaway of a pyramid. Faint particle tracks pass through the stone. No hidden chamber is revealed. No words.",
+    "labels": [],
+    "board": "part-03_plates_v02.json",
+    "min_sample_mean_luma": 61.27,
+    "min_sample_p95": 75.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p3_02_pyramid_muons.jpg",
+    "spend": "\u00a30",
+    "sha256": "d43ae5865d97dcb66fdbb1490d0062748c726498b8307cd08ed992a1ac47c70c",
+    "bytes": 529803,
+    "probed_nb_frames": 221
+  },
+  {
+    "id": "P3:07_clock_idea",
+    "file": "code_graphic_010_p3_07_clock_idea.mp4",
+    "use_s": 22.74,
+    "encoded_frames": 683,
+    "encoded_s": 22.767,
+    "film_start_s": 221.5,
+    "vo_land": [
+      "So here was the clock. If the clay formed slowly over thousands of years, it would have collected lots of space dust and lots of iridium. If it formed quickly in a few years, there would be almost none. They needed to measure iridium in tiny amounts, a few parts in a billion. So they asked two chemists at Berkeley,"
+    ],
+    "shows": "Own code graphic: two clay bands. One is thick with glitter, for a slow layer. One is almost bare, for a fast layer. Matte ink, no digits.",
+    "labels": [],
+    "board": "part-03_plates_v02.json",
+    "min_sample_mean_luma": 65.21,
+    "min_sample_p95": 82.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p3_07_clock_idea.jpg",
+    "spend": "\u00a30",
+    "sha256": "1616cafdf7400bb199710b0ec0a5d6798726b92233245b9d76af29748012c4c4",
+    "bytes": 1451698,
+    "probed_nb_frames": 683
+  },
+  {
+    "id": "P4:01_iridium_spike",
+    "file": "code_graphic_010_p4_01_iridium_spike.mp4",
+    "use_s": 17.02,
+    "encoded_frames": 511,
+    "encoded_s": 17.033,
+    "film_start_s": 257.46,
+    "vo_land": [
+      "In the Gubbio clay, there was about 30 times more iridium than in the rock around it, far too much for a slow, gentle rain of space dust. At first, they wondered whether it was a strange local accident, so they tested the same boundary in a completely different place, a"
+    ],
+    "shows": "Own code graphic: a hand-drawn line stays low through the rock layers, then jumps in one sharp spike at the clay. No digits (the thirty-times note is an overlay).",
+    "labels": [
+      {
+        "text": "THE IRIDIUM SPIKE",
+        "words": 3
+      },
+      {
+        "text": "ABOUT 30 TIMES",
+        "words": 3
+      }
+    ],
+    "board": "part-04_plates_v02.json",
+    "min_sample_mean_luma": 69.17,
+    "min_sample_p95": 93.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p4_01_iridium_spike.jpg",
+    "spend": "\u00a30",
+    "sha256": "f9b504cf26e927d988a55aea58b4b2173660c2188b0ca94561e2c85479c2fd84",
+    "bytes": 1142457,
+    "probed_nb_frames": 511
+  },
+  {
+    "id": "P4:03_world_pins",
+    "file": "code_graphic_010_p4_03_world_pins.mp4",
+    "use_s": 16.14,
+    "encoded_frames": 485,
+    "encoded_s": 16.167,
+    "film_start_s": 283.46,
+    "vo_land": [
+      "all around the world. Something had sprinkled iridium over the whole planet all at once. Luis Alvarez worked through the possibilities one by one. What could spread a rare metal over the whole world? First, he wondered about an"
+    ],
+    "shows": "Own code graphic: a painted world map. A pin drops on Italy, then a white cliff, then New Zealand. Matte pins, no glow, no place names.",
+    "labels": [
+      {
+        "text": "ALL AROUND THE WORLD",
+        "words": 4
+      }
+    ],
+    "board": "part-04_plates_v02.json",
+    "min_sample_mean_luma": 61.27,
+    "min_sample_p95": 75.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p4_03_world_pins.jpg",
+    "spend": "\u00a30",
+    "sha256": "bb220b6e6874c93f1baf31fe0a1ff48841e56fffc7c2604feabfb30add6b0a79",
+    "bytes": 1030656,
+    "probed_nb_frames": 485
+  },
+  {
+    "id": "P4:04_supernova_test",
+    "file": "code_graphic_010_p4_04_supernova_test.mp4",
+    "use_s": 20.44,
+    "encoded_frames": 614,
+    "encoded_s": 20.467,
+    "film_start_s": 299.6,
+    "vo_land": [
+      "exploding star nearby. A supernova should leave behind a rare kind of plutonium, so they tested the clay for it. For a few exciting days, it looked as if they'd found it, but when they checked again, it wasn't there. The supernova idea was wrong. In the end, only one idea fitted every clue."
+    ],
+    "shows": "Own code graphic: a far star flares, a dotted line runs to a test tube, then a plain cross fades in. Matte ink. The supernova idea fails. No words.",
+    "labels": [],
+    "board": "part-04_plates_v02.json",
+    "min_sample_mean_luma": 61.47,
+    "min_sample_p95": 75.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p4_04_supernova_test.jpg",
+    "spend": "\u00a30",
+    "sha256": "90e4ec4687ce4e1d4bff6a507dbee5875a21258b40f9d46c3d17528169243d58",
+    "bytes": 1497880,
+    "probed_nb_frames": 614
+  },
+  {
+    "id": "P4:05_ten_km",
+    "file": "code_graphic_010_p4_05_ten_km.mp4",
+    "use_s": 9.74,
+    "encoded_frames": 293,
+    "encoded_s": 9.767,
+    "film_start_s": 320.04,
+    "vo_land": [
+      "A giant asteroid about 10 kilometers across had struck the Earth. An asteroid that size would hit with unimaginable force. It would"
+    ],
+    "shows": "Own code graphic: a rock beside a city skyline, for scale only. The rock hangs far out in space and does not move toward the Earth. No impact. No digits.",
+    "labels": [],
+    "board": "part-04_plates_v02.json",
+    "min_sample_mean_luma": 61.27,
+    "min_sample_p95": 75.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p4_05_ten_km.jpg",
+    "spend": "\u00a30",
+    "sha256": "8c50206c9dcccff276778a0ec4dce563a9a923dea3304722f323c2108731f2d5",
+    "bytes": 899637,
+    "probed_nb_frames": 293
+  },
+  {
+    "id": "P4:07_food_chain",
+    "file": "code_graphic_010_p4_07_food_chain.mp4",
+    "use_s": 7.66,
+    "encoded_frames": 230,
+    "encoded_s": 7.667,
+    "film_start_s": 339.1,
+    "vo_land": [
+      "Plants would stop growing, and without plants, the animals that ate them, and the animals that ate those animals would starve."
+    ],
+    "shows": "Own code graphic: a fern fades, then a plant-eater icon, then a meat-eater icon. Icons only, gently dimming. No animals in distress, no words.",
+    "labels": [],
+    "board": "part-04_plates_v02.json",
+    "min_sample_mean_luma": 61.27,
+    "min_sample_p95": 75.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p4_07_food_chain.jpg",
+    "spend": "\u00a30",
+    "sha256": "5ce286e6bdf798dab82ee7a058ba4e7b0ca4b56fc859553d65c90554bf07ba60",
+    "bytes": 395980,
+    "probed_nb_frames": 230
+  },
+  {
+    "id": "P4:10_where_hole",
+    "file": "code_graphic_010_p4_10_where_hole.mp4",
+    "use_s": 4.94,
+    "encoded_frames": 149,
+    "encoded_s": 4.967,
+    "film_start_s": 356.84,
+    "vo_land": [
+      "because if an asteroid that big had really hit the Earth, where was the hole?"
+    ],
+    "shows": "Own code graphic: the same painted world map, with a large question mark over the oceans. No place names.",
+    "labels": [],
+    "board": "part-04_plates_v02.json",
+    "min_sample_mean_luma": 61.27,
+    "min_sample_p95": 75.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p4_10_where_hole.jpg",
+    "spend": "\u00a30",
+    "sha256": "8c86250c794cec92e1f676addc746721cd13ded22e66b5fde956882bf5b9caaa",
+    "bytes": 499799,
+    "probed_nb_frames": 149
+  },
+  {
+    "id": "P5:03_caribbean_hunt",
+    "file": "code_graphic_010_p5_03_caribbean_hunt.mp4",
+    "use_s": 15.96,
+    "encoded_frames": 479,
+    "encoded_s": 15.967,
+    "film_start_s": 385.2,
+    "vo_land": [
+      "towards the Caribbean. Could the crater be somewhere nearby? Then in the early 1990s, researchers pieced together the answer. Buried under the Yucatan Peninsula in Mexico, hidden beneath newer rock was an"
+    ],
+    "shows": "Own code graphic: the map narrows on the Caribbean. A soft search circle. No place names.",
+    "labels": [
+      {
+        "text": "EARLY 1990s",
+        "words": 2
+      }
+    ],
+    "board": "part-05_plates_v02.json",
+    "min_sample_mean_luma": 69.15,
+    "min_sample_p95": 117.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p5_03_caribbean_hunt.jpg",
+    "spend": "\u00a30",
+    "sha256": "6813b68c2b68c4c410d3c581a525d2bc6c1fd63a3148c307aa0d1fc9b84e1ce9",
+    "bytes": 2328437,
+    "probed_nb_frames": 479
+  },
+  {
+    "id": "P5:05_ring_scale",
+    "file": "code_graphic_010_p5_05_ring_scale.mp4",
+    "use_s": 6.52,
+    "encoded_frames": 196,
+    "encoded_s": 6.533,
+    "film_start_s": 406.36,
+    "vo_land": [
+      "It's called Chicxulub, and when its rocks were dated, they were 66 million years old,"
+    ],
+    "shows": "Own code graphic: the same ring laid over an outline of southern England, for size. No digits on the art (the width is an overlay).",
+    "labels": [
+      {
+        "text": "ABOUT 180 KM WIDE",
+        "words": 4
+      }
+    ],
+    "board": "part-05_plates_v02.json",
+    "min_sample_mean_luma": 61.27,
+    "min_sample_p95": 75.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p5_05_ring_scale.jpg",
+    "spend": "\u00a30",
+    "sha256": "8f5cd5cf153f8b26cb5cd9667f3c869be05d50d2bb4b0da8bd7ca80acff27723",
+    "bytes": 485704,
+    "probed_nb_frames": 196
+  },
+  {
+    "id": "P5:11_why_survive",
+    "file": "code_graphic_010_p5_11_why_survive.mp4",
+    "use_s": 14.4,
+    "encoded_frames": 432,
+    "encoded_s": 14.4,
+    "film_start_s": 473.92,
+    "vo_land": [
+      "Why did they survive when the giants didn't? That's still a mystery scientists are working on. Being small, eating seeds that could last through the dark, and nesting on the ground may all have helped."
+    ],
+    "shows": "Own code graphic: three icons build in turn, a small bird, a seed, a ground nest. The reason is still open. No dinosaurs in distress, no words.",
+    "labels": [],
+    "board": "part-05_plates_v02.json",
+    "min_sample_mean_luma": 61.27,
+    "min_sample_p95": 75.0,
+    "near_black": "PASS",
+    "still": "code_graphic_010_p5_11_why_survive.jpg",
+    "spend": "\u00a30",
+    "sha256": "262034f3da33457115ab8243e48f6c026acd967316654511305701898f3d7e74",
+    "bytes": 779261,
+    "probed_nb_frames": 432
+  }
+]
