@@ -19,7 +19,7 @@
 
 ## Next
 
-- **Edit & polish (`J0266`):** zero-spend `picture_qa` / `polish_gate` fixes on Part 03 rough v02 (`16_repair_reuse` offset) and Part 04 rough v01 (`09_bubbles_again` offset + `11_night_jars` shadow lift), then fine cut (side labels, WHO/WHEN/DATA/FACT teach cards, timeline, music bed, house SFX) and thumbnails.
+- **Full join v01 (J0312, 15 Oct):** the five QA-passed roughs are joined (`hos_006_full_join_v01.mp4`, stream copy, VO already in each part). No music bed yet (none on disk; credit hold until 30 Oct, Chief's OK before a new bed). Teach overlay list for Codex: `07_Edit-Project/_desk/006/full_join_v01/TEACH_OVERLAYS_v01.md`. Parked for Chief. Not a film PASS.
 
 ## Parts
 

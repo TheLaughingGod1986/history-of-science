@@ -1,0 +1,12 @@
+FAIL   5:12 row 07_priestley_callback 11_candle_tall_t1.mp4: reuse: same stretch as 3:57 (give it a new stretch, or a new render)
+FAIL   6:55 row 09_helmont_willow 06_garden_years_t2.mp4: reuse: same stretch as 1:33 (give it a new stretch, or a new render)
+FAIL   7:00 row 10_air_threads 01_willow_air_t1.mp4: reuse: same stretch as 0:02 (give it a new stretch, or a new render)
+FAIL   7:11 row 12_scales_barely 12_pointer_short_t1.mp4: reuse: same stretch as 1:57 (give it a new stretch, or a new render)
+FAIL   7:16 row 13_water_in_tree 05_pure_water_t1.mp4: reuse: same stretch as 1:26 (give it a new stretch, or a new render)
+FAIL   8:04 row 21_three_objects 03_pot_jar_leaf_t1.mp4: reuse: same stretch as 0:11 (give it a new stretch, or a new render)
+WARN   1:10 row 02_balance_200 code_graphic_p2_02_pounds_v03.mp4: low detail: edge density 0.0125 < film p5 0.0226
+WARN   2:03 row 13_tree_vs_pinch 13_tree_vs_pinch_t1.mp4: low detail: edge density 0.0216 < film p5 0.0226
+WARN   2:53 row 22_shimmer_willow 22_shimmer_willow_moving_v03.mp4: low detail: edge density 0.0162 < film p5 0.0226
+WARN   3:01 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0222 < film p5 0.0226
+WARN   5:34 row 11_night_jars 11_night_jars_t1.mp4: low detail: edge density 0.011 < film p5 0.0226
+picture QA FAIL: 6 of 91 cuts fail, 5 to look at -> /private/tmp/j0312-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/full_join_v01/PICTURE_QA.md, /private/tmp/j0312-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/full_join_v01/picture_qa_review.jpg

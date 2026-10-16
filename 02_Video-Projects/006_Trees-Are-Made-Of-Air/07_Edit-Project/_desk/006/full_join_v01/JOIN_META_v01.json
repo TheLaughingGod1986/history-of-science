@@ -1,0 +1,51 @@
+{
+  "file": "/private/tmp/j0312-join/hos_006_full_join_v01.mp4",
+  "sha256": "7bf649f857acc6a66b88347dd5351fb183c73a491f268e7543e14efc5155cde6",
+  "duration_s": 507.813333,
+  "parts_sum_s": 507.792007,
+  "cuts": 91,
+  "bed": null,
+  "bed_note": "No 05_Music bed exists. Credit hold until 30 Oct: no new bed without the Chief's OK. VO is the audio already in each passed rough.",
+  "parts": [
+    {
+      "part": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part01_rough_v01/hos_006_part01_rough_v01.mp4",
+      "sha256": "69974f305a34226543967627e2725a7bb0917bdd3b16a3ba4f839758473d32b1",
+      "duration_s": 61.667,
+      "offset_s": 0.0,
+      "cuts": 12
+    },
+    {
+      "part": 2,
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part02_rough_v03/hos_006_part02_rough_v03.mp4",
+      "sha256": "7ef9c117b29508a709b99c04ccb648455a57b6bc2e181e43ccdb49247ae1ddc4",
+      "duration_s": 116.999674,
+      "offset_s": 61.667,
+      "cuts": 21
+    },
+    {
+      "part": 3,
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part03_rough_v03/hos_006_part03_rough_v03.mp4",
+      "sha256": "1067c0661b8e504d90771b7bc76868062888cebd740b810097f51580d7f360ae",
+      "duration_s": 94.833333,
+      "offset_s": 178.666674,
+      "cuts": 18
+    },
+    {
+      "part": 4,
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part04_rough_v02/hos_006_part04_rough_v02.mp4",
+      "sha256": "e639e9bbe2b65599031c4e7e91aadc18eeadd38e75c53eecfc7419dd8f486910",
+      "duration_s": 91.917,
+      "offset_s": 273.500007,
+      "cuts": 16
+    },
+    {
+      "part": 5,
+      "file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part05_rough_v01/hos_006_part05_rough_v01.mp4",
+      "sha256": "b3ca1afb9cd93a34c4085730f1ab27de73b9a2a5ab647f421c27a305345226f6",
+      "duration_s": 142.375,
+      "offset_s": 365.417007,
+      "cuts": 24
+    }
+  ]
+}
