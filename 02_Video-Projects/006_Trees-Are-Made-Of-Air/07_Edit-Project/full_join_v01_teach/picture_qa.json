@@ -1,6 +1,6 @@
 {
-  "verdict": "FAIL",
-  "video": "/private/tmp/j0351-lay/hos_006_full_join_v01_teach.mp4",
+  "verdict": "PASS",
+  "video": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v01_teach/hos_006_full_join_v01_teach.mp4",
   "rules": {
     "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
     "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
@@ -11,20 +11,8 @@
     "same_stretch": 10.0,
     "pixels": "scripts/polish_gate.py"
   },
-  "failed": [
-    {
-      "cut": 5,
-      "row": "06_aristotle",
-      "source": "06_aristotle_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 27.67,
-      "at": "0:28",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
+  "failed": [],
+  "warn": [
     {
       "cut": 8,
       "row": "09_vilvoorde",
@@ -32,105 +20,18 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 42.25,
       "at": "0:42",
-      "fail": [
-        "split panel: horizontal seam at 0.465"
+      "fail": [],
+      "warn": [
+        "low detail: luma std 12.49 < 18.0"
       ],
-      "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      }
     },
-    {
-      "cut": 9,
-      "row": "10_van_helmont_sack",
-      "source": "10_van_helmont_sack_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 47.96,
-      "at": "0:48",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 19,
-      "row": "09_weights_169",
-      "source": "09_weights_169_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 103.29,
-      "at": "1:43",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 20,
-      "row": "10_fallen_leaves",
-      "source": "10_fallen_leaves_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 107.46,
-      "at": "1:47",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 34,
-      "row": "02_hales_branch",
-      "source": "02_hales_branch_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 186.96,
-      "at": "3:07",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 38,
-      "row": "06_leeds_brewery",
-      "source": "06_leeds_brewery_nofire_crop_v01.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 208.04,
-      "at": "3:28",
-      "fail": [
-        "split panel: horizontal seam at 0.465"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 39,
-      "row": "07_priestley",
-      "source": "07_priestley_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 213.38,
-      "at": "3:33",
-      "fail": [
-        "split panel: horizontal seam at 0.731"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 53,
-      "row": "03_plunge_leaf",
-      "source": "03_plunge_leaf_t1.mp4",
-      "title": "Veo 3.1 clip, Chief KEEP",
-      "t": 289.56,
-      "at": "4:50",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
-      "warn": [],
-      "offset": 0.0
-    }
-  ],
-  "warn": [
     {
       "cut": 13,
       "row": "02_balance_200",
@@ -182,6 +83,25 @@
         "low detail: edge density 0.022 < film p5 0.0227"
       ],
       "offset": 0.0
+    },
+    {
+      "cut": 38,
+      "row": "06_leeds_brewery",
+      "source": "06_leeds_brewery_nofire_crop_v01.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 208.04,
+      "at": "3:28",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 13.55 < 18.0"
+      ],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      }
     },
     {
       "cut": 51,
@@ -273,11 +193,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 27.67,
       "at": "0:28",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
     },
     {
       "cut": 6,
@@ -308,11 +232,17 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 42.25,
       "at": "0:42",
-      "fail": [
-        "split panel: horizontal seam at 0.465"
+      "fail": [],
+      "warn": [
+        "low detail: luma std 12.49 < 18.0"
       ],
-      "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      }
     },
     {
       "cut": 9,
@@ -321,11 +251,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 47.96,
       "at": "0:48",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
     },
     {
       "cut": 10,
@@ -435,11 +369,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 103.29,
       "at": "1:43",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
     },
     {
       "cut": 20,
@@ -448,11 +386,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 107.46,
       "at": "1:47",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
     },
     {
       "cut": 21,
@@ -610,11 +552,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 186.96,
       "at": "3:07",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
     },
     {
       "cut": 35,
@@ -656,11 +602,17 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 208.04,
       "at": "3:28",
-      "fail": [
-        "split panel: horizontal seam at 0.465"
+      "fail": [],
+      "warn": [
+        "low detail: luma std 13.55 < 18.0"
       ],
-      "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      }
     },
     {
       "cut": 39,
@@ -669,11 +621,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 213.38,
       "at": "3:33",
-      "fail": [
-        "split panel: horizontal seam at 0.731"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.731"
+        ]
+      }
     },
     {
       "cut": 40,
@@ -827,11 +783,15 @@
       "title": "Veo 3.1 clip, Chief KEEP",
       "t": 289.56,
       "at": "4:50",
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 0.0
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
     },
     {
       "cut": 54,

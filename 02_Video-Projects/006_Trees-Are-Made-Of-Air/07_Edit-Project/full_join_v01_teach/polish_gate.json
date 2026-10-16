@@ -35,93 +35,20 @@
       ]
     }
   },
-  "video": "/private/tmp/j0351-lay/hos_006_full_join_v01_teach.mp4",
+  "video": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v01_teach/hos_006_full_join_v01_teach.mp4",
   "edge_floor": 0.0227,
-  "verdict": "FAIL",
-  "failed": [
-    {
-      "row": "06_aristotle",
-      "cut": 5,
-      "t": 27.67,
-      "source": "06_aristotle_t1.mp4",
-      "why": [
-        "split panel: horizontal seam at 0.73"
-      ]
-    },
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
     {
       "row": "09_vilvoorde",
       "cut": 8,
       "t": 42.25,
       "source": "09_vilvoorde_flowfast_t1.mp4",
       "why": [
-        "split panel: horizontal seam at 0.465"
+        "low detail: luma std 12.49 < 18.0"
       ]
     },
-    {
-      "row": "10_van_helmont_sack",
-      "cut": 9,
-      "t": 47.96,
-      "source": "10_van_helmont_sack_t1.mp4",
-      "why": [
-        "split panel: horizontal seam at 0.73"
-      ]
-    },
-    {
-      "row": "09_weights_169",
-      "cut": 19,
-      "t": 103.29,
-      "source": "09_weights_169_t1.mp4",
-      "why": [
-        "split panel: horizontal seam at 0.73"
-      ]
-    },
-    {
-      "row": "10_fallen_leaves",
-      "cut": 20,
-      "t": 107.46,
-      "source": "10_fallen_leaves_t1.mp4",
-      "why": [
-        "split panel: horizontal seam at 0.73"
-      ]
-    },
-    {
-      "row": "02_hales_branch",
-      "cut": 34,
-      "t": 186.96,
-      "source": "02_hales_branch_t1.mp4",
-      "why": [
-        "split panel: horizontal seam at 0.73"
-      ]
-    },
-    {
-      "row": "06_leeds_brewery",
-      "cut": 38,
-      "t": 208.04,
-      "source": "06_leeds_brewery_nofire_crop_v01.mp4",
-      "why": [
-        "split panel: horizontal seam at 0.465"
-      ]
-    },
-    {
-      "row": "07_priestley",
-      "cut": 39,
-      "t": 213.38,
-      "source": "07_priestley_t1.mp4",
-      "why": [
-        "split panel: horizontal seam at 0.731"
-      ]
-    },
-    {
-      "row": "03_plunge_leaf",
-      "cut": 53,
-      "t": 289.56,
-      "source": "03_plunge_leaf_t1.mp4",
-      "why": [
-        "split panel: horizontal seam at 0.73"
-      ]
-    }
-  ],
-  "warn": [
     {
       "row": "02_balance_200",
       "cut": 13,
@@ -159,6 +86,15 @@
       ]
     },
     {
+      "row": "06_leeds_brewery",
+      "cut": 38,
+      "t": 208.04,
+      "source": "06_leeds_brewery_nofire_crop_v01.mp4",
+      "why": [
+        "low detail: luma std 13.55 < 18.0"
+      ]
+    },
+    {
       "row": "01_villa",
       "cut": 51,
       "t": 276.5,
@@ -177,7 +113,98 @@
       ]
     }
   ],
-  "reviewed_ok": [],
+  "reviewed_ok": [
+    {
+      "row": "06_aristotle",
+      "cut": 5,
+      "t": 27.67,
+      "source": "06_aristotle_t1.mp4",
+      "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+      "why": [
+        "split panel: horizontal seam at 0.73"
+      ]
+    },
+    {
+      "row": "09_vilvoorde",
+      "cut": 8,
+      "t": 42.25,
+      "source": "09_vilvoorde_flowfast_t1.mp4",
+      "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+      "why": [
+        "split panel: horizontal seam at 0.465"
+      ]
+    },
+    {
+      "row": "10_van_helmont_sack",
+      "cut": 9,
+      "t": 47.96,
+      "source": "10_van_helmont_sack_t1.mp4",
+      "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+      "why": [
+        "split panel: horizontal seam at 0.73"
+      ]
+    },
+    {
+      "row": "09_weights_169",
+      "cut": 19,
+      "t": 103.29,
+      "source": "09_weights_169_t1.mp4",
+      "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+      "why": [
+        "split panel: horizontal seam at 0.73"
+      ]
+    },
+    {
+      "row": "10_fallen_leaves",
+      "cut": 20,
+      "t": 107.46,
+      "source": "10_fallen_leaves_t1.mp4",
+      "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+      "why": [
+        "split panel: horizontal seam at 0.73"
+      ]
+    },
+    {
+      "row": "02_hales_branch",
+      "cut": 34,
+      "t": 186.96,
+      "source": "02_hales_branch_t1.mp4",
+      "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+      "why": [
+        "split panel: horizontal seam at 0.73"
+      ]
+    },
+    {
+      "row": "06_leeds_brewery",
+      "cut": 38,
+      "t": 208.04,
+      "source": "06_leeds_brewery_nofire_crop_v01.mp4",
+      "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+      "why": [
+        "split panel: horizontal seam at 0.465"
+      ]
+    },
+    {
+      "row": "07_priestley",
+      "cut": 39,
+      "t": 213.38,
+      "source": "07_priestley_t1.mp4",
+      "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+      "why": [
+        "split panel: horizontal seam at 0.731"
+      ]
+    },
+    {
+      "row": "03_plunge_leaf",
+      "cut": 53,
+      "t": 289.56,
+      "source": "03_plunge_leaf_t1.mp4",
+      "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+      "why": [
+        "split panel: horizontal seam at 0.73"
+      ]
+    }
+  ],
   "rows": [
     {
       "cut": 0,
@@ -290,9 +317,13 @@
         }
       ],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "why": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      },
+      "fail": [],
       "warn": []
     },
     {
@@ -352,9 +383,13 @@
         }
       ],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.465"
-      ],
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "why": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      },
+      "fail": [],
       "warn": [
         "low detail: luma std 12.49 < 18.0"
       ]
@@ -380,9 +415,13 @@
         }
       ],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "why": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      },
+      "fail": [],
       "warn": []
     },
     {
@@ -570,9 +609,13 @@
         }
       ],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "why": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      },
+      "fail": [],
       "warn": []
     },
     {
@@ -596,9 +639,13 @@
         }
       ],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "why": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      },
+      "fail": [],
       "warn": []
     },
     {
@@ -862,9 +909,13 @@
         }
       ],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "why": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      },
+      "fail": [],
       "warn": []
     },
     {
@@ -942,9 +993,13 @@
         }
       ],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.465"
-      ],
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "why": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      },
+      "fail": [],
       "warn": [
         "low detail: luma std 13.55 < 18.0"
       ]
@@ -970,9 +1025,13 @@
         }
       ],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.731"
-      ],
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "why": [
+          "split panel: horizontal seam at 0.731"
+        ]
+      },
+      "fail": [],
       "warn": []
     },
     {
@@ -1232,9 +1291,13 @@
         }
       ],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.73"
-      ],
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "why": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      },
+      "fail": [],
       "warn": []
     },
     {

@@ -1,0 +1,2 @@
+WARN   0:08 row 02_balance_200 code_graphic_p2_02_pounds_v03.mp4: low detail: edge density 0.0125 < film p5 0.0162
+picture QA PASS: 0 of 21 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part02_rough_v03/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part02_rough_v03/picture_qa_review.jpg
