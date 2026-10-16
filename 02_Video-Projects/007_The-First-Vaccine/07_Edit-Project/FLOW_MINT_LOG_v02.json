@@ -1,0 +1,67 @@
+{
+  "job": "J0352",
+  "film": "007",
+  "engine": "flow-cdp-9222",
+  "cap": 7550,
+  "buffer": 3000,
+  "takes": {
+    "01_cow_meadow": {
+      "plate": "01_cow_meadow",
+      "part": "01",
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/refs/v02_flow_stills/01_cow_meadow_t1.png",
+      "start_frame_sha256": "5632b0d4557a22c973598df75e2e798c3de5e012a99dc08383ac6abc3263e113",
+      "credits_before": 23740,
+      "status": "RECOVERED_AWAITING_CHIEF_REVIEW",
+      "submitted_at": "2026-10-16T04:52:53+00:00",
+      "recovered_by": "codex",
+      "artifacts": [
+        {
+          "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/01_cow_meadow_t1.mp4",
+          "sha256": "68ed97d9534b6e2cf44380aa1bf45b01f1464c9b615619aaced0d44ecebbdf46"
+        },
+        {
+          "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/01_cow_meadow_t1_silent.mp4",
+          "sha256": "91a222ea37f0c6e91552ef5bb9ae5685c2d5bb4881f6fd026d2d72e4561a08ef"
+        }
+      ]
+    }
+  },
+  "balance_reads": [
+    {
+      "at": "2026-10-16T04:46:16+00:00",
+      "credits": 23740,
+      "when": "batch-start"
+    },
+    {
+      "at": "2026-10-16T04:48:18+00:00",
+      "credits": 23740,
+      "when": "batch-start"
+    },
+    {
+      "at": "2026-10-16T04:52:10+00:00",
+      "credits": 23740,
+      "when": "batch-start"
+    },
+    {
+      "at": "2026-10-16T05:09:18Z",
+      "credits": 23640,
+      "when": "codex recovery live account menu"
+    }
+  ],
+  "updated": "2026-10-16T04:52:53+00:00",
+  "master_still": {
+    "path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/refs/v02_flow_stills/08_jenner_window_t1.png",
+    "sha256": "aa7f98b68a86727dbfb53d3ead6db8cd5532cb572ab2c5b2981e154c708b07e4",
+    "at": "2026-10-16T04:52:10+00:00",
+    "credits": 23740
+  },
+  "master_still_rejected": {
+    "path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/still_fails/08_jenner_window_t1_fail_page_faceup.png",
+    "why": "0-credit retake: page face-up with a ruled ledger, not edge-on"
+  },
+  "chief_review": "Pending Jenner master KEEP/FIX",
+  "new_spend_this_run": 0
+}
