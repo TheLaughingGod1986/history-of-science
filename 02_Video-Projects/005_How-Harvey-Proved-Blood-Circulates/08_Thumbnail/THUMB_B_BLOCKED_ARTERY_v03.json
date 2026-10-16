@@ -1,0 +1,99 @@
+{
+  "film": "005",
+  "video": "wwcjcFfC-5M",
+  "job": "J0407",
+  "replaces": "hos_005_thumb_B_it_goes_round_v02.jpg (pre-11-Oct 'IT GOES ROUND', vague pronoun + repeats 'Circulates')",
+  "variant": "B v03",
+  "maker": "gemini",
+  "hook": "THE BLOCKED ARTERY",
+  "punch": "BLOCKED",
+  "jpg": "Selected/hos_005_thumb_B_blocked_artery_v03.jpg",
+  "sha256": "81588344580d86988b62934e925c407dddc59fffcf5252daf537c17c2b05f5eb",
+  "bytes": 253442,
+  "plates": [
+    "Selected/hos_005_thumb_A_one_tight_band_v02.jpg (005 painted 16:9 key-art plate: glowing red artery stopped at linen band + Explorer lower-left + original gold scroll flourishes)"
+  ],
+  "method": "existing_005_plate_only_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    560,
+    0,
+    1200,
+    692
+  ],
+  "explorer": {
+    "source": "hos_005_thumb_A_one_tight_band_v02.jpg",
+    "box": [
+      88,
+      344,
+      318,
+      720
+    ],
+    "height_px": 376,
+    "height_frac": 0.522
+  },
+  "lettering": [
+    {
+      "word": "THE",
+      "kind": "cream",
+      "size": 72,
+      "box": [
+        210,
+        73,
+        366,
+        137
+      ]
+    },
+    {
+      "word": "BLOCKED",
+      "kind": "gold",
+      "size": 92,
+      "box": [
+        68,
+        143,
+        507,
+        227
+      ]
+    },
+    {
+      "word": "ARTERY",
+      "kind": "cream",
+      "size": 92,
+      "box": [
+        93,
+        233,
+        483,
+        313
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      60,
+      24,
+      468,
+      59
+    ],
+    "bottom_scroll_box": [
+      154,
+      328,
+      438,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'THE BLOCKED ARTERY' (3 words, punch word 'BLOCKED' in gold) names the glowing red artery stopped at the linen band (De Motu Cordis ch. 11, FACT_NOTES_v01 row 26) and adds to the video title ('The Tied Arm That Proved Your Blood Circulates') without repeating any content word from it.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=68..507, y=73..313, framed by original painted gold scroll flourishes at y=24..356) sits completely left of the hero arm (x=560..1200), above the Explorer's hair (y=344), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and side-by-side strip: 'THE BLOCKED ARTERY', the glowing red artery stopped at the linen band, and the Explorer's face/glasses (52.2% height) all read at a glance at 168x94."
+  },
+  "previews": [
+    "Selected/hos_005_thumb_B_blocked_artery_v03_preview.jpg",
+    "Selected/hos_005_thumb_B_blocked_artery_v03_style_sheet.jpg",
+    "Selected/hos_005_thumb_A_vs_B_blocked_artery_v03_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v03 candidate for 005 (wwcjcFfC-5M, built from existing 005 plate only, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}
