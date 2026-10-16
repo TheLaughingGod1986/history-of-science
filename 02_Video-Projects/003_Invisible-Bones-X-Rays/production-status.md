@@ -114,3 +114,24 @@ PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
 ```
 
 Screenshots on the Mini under `~/.local/share/cursor-mac-mini-hos-worker/artifacts/DESK_2026-10-01_tc/` (`VERIFY_<film>_01_details_top.png`, `<film>_tc_commit_04_filled.png`), and on the desk (PR #180). Altered content was not touched in this session (Yes since the 30 Sep sweep; by eye, the Data API omits it).
+
+
+## 16 Oct 2026 — Short `s04_unknown_x_v01` (Test B, first search-titled lift from Part 02, OWB J0406)
+
+- **Selection:** HOS 004, 005, and 006 each have 2 built search-titled Shorts (`s04` and `s05`); HOS 007+ do not yet have full-part picture. Among locked HOS longs with existing VO and picture, 003 had 0 built Test B search-titled Shorts (only its original 3 punch Shorts S1–S3), so `s04_unknown_x_v01` starts 003's pair of Test B search-titled Shorts.
+- **VO (0 spend):** `02_Voiceover/05_Master/hos_003_part02_vo_v01_draft.wav` claim-first lift (word indices `105..118` + `130..184`, skipping question `119..129` so duration stays inside 22–27 s and 55–65 words): *"He calls it X — for unknown. An unknown ray that writes on cardboard. He does not rush the newspapers. He locks the door and tests. Block the path with a book — the glow weakens or shifts. With a hand — soft flesh and denser bone leave different marks. With metal — the shadow hardens. Move the object, move the shadow. The glow changes. Pattern, not ghost story."* 65 words, pauses capped at 0.25 s, `atempo=1.03`, 25.944 s VO + 0.55 s tail = 26.500 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P2:07_names_it_x_v01` (`4.90 s` X-chalking window on frame 0 and 3.0 s loop), `P2:11_detector_hold_v01`, `P2:10_test_hand_metal_v01`, `P2:09_test_book_v01`, `P3:02_hand_enters_path_v03`, `P3:05_ring_darker_v05`, `P2:05_glow_blooms_v02`. Own-synthesis warm harmonic pad (`hos003_s04_synth_pad_v01.wav`, D-dorian voicing) at −20 dB under VO. Hook **NAMED IT X** (X in yellow). Person/date card **WILHELM RÖNTGEN · Würzburg, 1895** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover X-rays?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 23.49–26.41 s.
+- **Title draft:** *What Are X-Rays?* (signed-out GB YouTube autocomplete exact hit, 16 Oct 2026; alts *How Do X-Rays Work?*, *Who Discovered X-Rays?*).
+- **File:** `10_Shorts/hos_003_s04_unknown_x_v01.mp4`, 26.500 s, sha256 `3b50feaf513e30e685885ca5980edaae0beab4bafa04c23dbcb88cefe9804546`; phone copy iCloud `HOS UAT/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s04_unknown_x_v01.mp4`.
+
+```
+PASS  hos_003_s04_unknown_x_v01.mp4  dur=26.5s  audio=-22.8dB  motion=20.2  dhash=64c0640c2c284000
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_003_s04_unknown_x_v01_open_sheet.jpg
+PASS  hos_003_s04_unknown_x_v01.mp4  0:26.50  mean -22.8 dB  peak -3.8 dB  147 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s04_unknown_x_v01/polish_gate_s04_unknown_x_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s04_unknown_x_v01/picture_qa_s04_unknown_x_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s04_unknown_x_v01/picture_qa_s04_unknown_x_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-11-28` (gate only). Caption check: 21 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
