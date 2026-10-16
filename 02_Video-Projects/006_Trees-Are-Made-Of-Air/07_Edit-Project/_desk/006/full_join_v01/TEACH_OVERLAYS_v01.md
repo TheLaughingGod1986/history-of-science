@@ -49,7 +49,7 @@ Lower third. Name on line one. Years and role on line two. On screen 3–4 s whi
 
 | Film time | Row | Card | FACT_NOTES |
 |---|---|---|---|
-| 0:25 | P1 `06_aristotle` | Aristotle — role "taught plants' food" | Born–died years are **not** in FACT_NOTES (it says 4th c. BC only). Do not print years until a facts row adds them. |
+| 0:25 | P1 `06_aristotle` | Aristotle — role "plants eat soil" | Born–died years are **not** in FACT_NOTES (it says 4th c. BC only). Do not print years until a facts row adds them. |
 | 0:45 | P1 `10_van_helmont_sack` | Jan Baptist van Helmont (1580–1644) — physician and chemist | Yes |
 | 3:04 | P3 `02_hales_branch` | Stephen Hales (1677–1761) — country parson | Yes. The existing label is the 1727 WHEN stamp; the WHO card is the name and years, then the timeline marker, not both at once. |
 | 3:30 | P3 `07_priestley` | Joseph Priestley — role "Leeds minister" | Born–died years are **not** in FACT_NOTES. Do not print years until a facts row adds them. |

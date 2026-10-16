@@ -235,7 +235,7 @@
       "fps": 24,
       "width": 1920,
       "height": 1080,
-      "label": "taught plants' food",
+      "label": "plants eat soil",
       "name": "Aristotle",
       "years": null,
       "label_words": 3,
@@ -243,11 +243,11 @@
       "layout": "lower_third_over_plate",
       "lay": "",
       "background": "moving full_join_v01 excerpt",
-      "min_sample_mean_luma": 84.08,
+      "min_sample_mean_luma": 84.03,
       "min_sample_p95": 174.0,
       "near_black": "PASS",
-      "sha256": "e8994d9f0f13404008a56143114708ba7f94dbf016c3ffb4ee8aedd60d47adca",
-      "bytes": 4108565,
+      "sha256": "b2d1dd9eeb947bfa4193f9e5c52127efa83eb6ae0860d395e8289e30f3fa328a",
+      "bytes": 4105339,
       "words_ok": true
     },
     {
