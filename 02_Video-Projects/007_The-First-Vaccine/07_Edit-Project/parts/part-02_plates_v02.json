@@ -5,7 +5,7 @@
   "title": "The Milkmaids' Secret",
   "status": "BOARD_V02",
   "mint": false,
-  "house": "STUDIO_PLAYBOOK.md \u00a75. v02 by Cursor, 16 Oct 2026, J0322, from CLAUDE_BOARDS_REVIEW_v01.md. Flow-first. Vertex is fallback only. generation_authorized is false on every row. No mint.",
+  "house": "STUDIO_PLAYBOOK.md \u00a75. v02 by Cursor, 16 Oct 2026, J0322, from CLAUDE_BOARDS_REVIEW_v01.md. J0341 drops P3:01c_nelmes_plate and returns 2.0 s to 01_sarah_nelmes. Flow-first. Vertex is fallback only. generation_authorized is false on every row. No mint.",
   "script": "01_Script/vaccine_script_master_v01.md",
   "vo_file": "02_Voiceover/part02_the_milkmaids_secret_v01.mp3",
   "vo_sha256": "a4c4ad87d73b9ffca9dfc9e7530cfc10f1d4a68f27c612054be4669a9a9ae21e",

@@ -1,7 +1,7 @@
 {
   "film": "007_The-First-Vaccine",
   "written": "2026-10-16",
-  "task": "J0322. Boards v02 from CLAUDE_BOARDS_REVIEW_v01.md. No mint. No spend.",
+  "task": "J0322 boards v02, then J0341 drops P3:01c_nelmes_plate. No mint. No spend.",
   "shot_list": "07_Edit-Project/SHOT_LIST_v01.md",
   "readings": {
     "flow_credits_left": 23740,
@@ -32,11 +32,11 @@
   },
   "vo_film_total_s": 512.15,
   "totals": {
-    "rows": 97,
+    "rows": 96,
     "Quality": 24,
     "Fast": 49,
     "code_graphic": 3,
-    "archive": 3,
+    "archive": 2,
     "reuse": 18,
     "mints": 73,
     "flow_try1": 2890,
@@ -73,11 +73,11 @@
     },
     {
       "part": 3,
-      "rows": 16,
+      "rows": 15,
       "Quality": 3,
       "Fast": 9,
       "code_graphic": 0,
-      "archive": 1,
+      "archive": 0,
       "reuse": 3,
       "flow_try1": 390,
       "flow_expected": 957,
@@ -131,7 +131,7 @@
     "P1:07_map_shadows and P4:11_news_spreads \u2192 \u00a30 code-graphic maps. No place names.",
     "P5:10_history_book spines turned away. Still Fast.",
     "P5:08_body_learns Quality \u2192 \u00a30 code graphic.",
-    "P3:01c_nelmes_plate added: \u00a30 Wellcome Plate of Sarah Nelmes, 2.0 s taken from 01_sarah_nelmes.",
+    "P3:01c_nelmes_plate dropped (J0341, Chief J0322). 2.0 s returned to 01_sarah_nelmes. Sores stay off screen.",
     "P4:12_explorer_press cover faces away.",
     "Jenner face lock: P2:08_jenner_window is the master still. Page turned edge-on.",
     "P5 kite hand-off kept. Lightning never touches the kite."

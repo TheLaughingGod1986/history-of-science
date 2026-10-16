@@ -5,7 +5,7 @@
   "title": "The Speckled Monster (cold open, no chapter card)",
   "status": "BOARD_V02",
   "mint": false,
-  "house": "STUDIO_PLAYBOOK.md \u00a75. v02 by Cursor, 16 Oct 2026, J0322, from CLAUDE_BOARDS_REVIEW_v01.md. Flow-first. Vertex is fallback only. generation_authorized is false on every row. No mint.",
+  "house": "STUDIO_PLAYBOOK.md \u00a75. v02 by Cursor, 16 Oct 2026, J0322, from CLAUDE_BOARDS_REVIEW_v01.md. J0341 drops P3:01c_nelmes_plate and returns 2.0 s to 01_sarah_nelmes. Flow-first. Vertex is fallback only. generation_authorized is false on every row. No mint.",
   "script": "01_Script/vaccine_script_master_v01.md",
   "vo_file": "02_Voiceover/part01_the_speckled_monster_v03.mp3",
   "vo_sha256": "3881da7b96b4efaadde58287c4151b31c1dd39d337af4fd5dae0c6925ab5fb83",

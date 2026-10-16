@@ -4,8 +4,9 @@
 Applies CLAUDE_BOARDS_REVIEW_v01.md (J0315, a4474f9):
   §1 Flow-first price table in the HOS 009 format; Vertex is fallback only.
   §2 The ten lettering-risk plates become real scans, reframes, reuses or £0 code graphics.
-  §3 The cheap notes: Plate I cutaway, body-learns as a code graphic, spines turned away,
+  §3 The cheap notes: body-learns as a code graphic, spines turned away,
      Explorer cover turned away, Jenner face lock, kite hand-off kept.
+     J0341 drops the Plate I cutaway (Chief, J0322): sores stay off screen.
 
 Reads parts/part-0N_plates_v01.json. Writes v02 beside them, plus PICTURE_PLAN_v02.json
 and PRICE_REVIEW_v02.md.
@@ -45,12 +46,6 @@ NO_GLYPH = (
 
 def money(n: float) -> float:
     return round(n + 1e-9, 2)
-
-
-def fmt_t(t: float) -> str:
-    m = int(t // 60)
-    s = t - 60 * m
-    return f"{m}:{s:05.2f}"
 
 
 def blank_prices() -> dict:
@@ -156,16 +151,6 @@ GILLRAY = {
     "credit": "James Gillray, The Cow-Pock, 12 June 1802. Library of Congress 94509853. Public domain.",
     "treatment": "The real print, not a pastiche. A hand brings the sheet into frame (object motion), not a Ken Burns push.",
 }
-
-PLATE_I = {
-    "work": "Plate from Edward Jenner, An Inquiry..., 1798: the hand of Sarah Nelmes",
-    "url": "https://wellcomecollection.org/works/scwhgw5a",
-    "catalogue": "Wellcome Collection M0009446, illustration from the 1798 Inquiry",
-    "licence": "Public Domain Mark",
-    "credit": "The hand of Sarah Nelmes, from Jenner, An Inquiry into the Causes and Effects of the Variolae Vaccinae, 1798. Wellcome Collection M0009446. Public Domain Mark.",
-    "treatment": "£0 cutaway after the generated study plate. Hand turns the page. Chief flag: the print shows cowpox pustules, and this film's forbidden list rejects sores. Claude asked for the real plate. It costs nothing, so dropping it does not change the mint total.",
-}
-
 
 def apply(part_no: int, plates: list) -> list:
     out = []
@@ -353,27 +338,6 @@ def apply(part_no: int, plates: list) -> list:
             )
             p["face_lock"] = "Master still. Later Jenner plates start from the first KEEP of this plate."
         out.append(p)
-        if key == (3, "01_sarah_nelmes"):
-            cut = deepcopy(p)
-            # Split 2.00 s off Sarah's generated plate. The part length does not change.
-            p["use_s"] = money(p["use_s"] - 2.0)
-            cut["id"] = "01c_nelmes_plate"
-            cut["t_s"] = money(p["t_s"] + p["use_s"])
-            cut["t"] = fmt_t(cut["t_s"])
-            cut["use_s"] = 2.0
-            cut["added"] = True
-            cut["explorer"] = False
-            cut["side_label"] = "SARAH NELMES"
-            cut["v01_quality"] = None
-            cut["v01_route"] = None
-            cut.pop("prompt", None)
-            cut.pop("face_lock", None)
-            as_archive(
-                cut, PLATE_I,
-                "J0315 §3: £0 cutaway of the real 1798 Plate (Sarah Nelmes' hand) after the generated study shot.",
-            )
-            cut["vo_land"] = p.get("vo_land")
-            out.append(cut)
     return out
 
 
@@ -428,6 +392,7 @@ def main() -> None:
         }
         part_out["house"] = (
             "STUDIO_PLAYBOOK.md §5. v02 by Cursor, 16 Oct 2026, J0322, from CLAUDE_BOARDS_REVIEW_v01.md. "
+            "J0341 drops P3:01c_nelmes_plate and returns 2.0 s to 01_sarah_nelmes. "
             "Flow-first. Vertex is fallback only. generation_authorized is false on every row. No mint."
         )
         (PARTS / f"part-0{n}_plates_v02.json").write_text(json.dumps(part_out, indent=2) + "\n")
@@ -454,7 +419,7 @@ def main() -> None:
     plan = {
         "film": "007_The-First-Vaccine",
         "written": "2026-10-16",
-        "task": "J0322. Boards v02 from CLAUDE_BOARDS_REVIEW_v01.md. No mint. No spend.",
+        "task": "J0322 boards v02, then J0341 drops P3:01c_nelmes_plate. No mint. No spend.",
         "shot_list": "07_Edit-Project/SHOT_LIST_v01.md",
         "readings": {
             "flow_credits_left": FLOW_LEFT,
@@ -494,7 +459,7 @@ def main() -> None:
             "P1:07_map_shadows and P4:11_news_spreads → £0 code-graphic maps. No place names.",
             "P5:10_history_book spines turned away. Still Fast.",
             "P5:08_body_learns Quality → £0 code graphic.",
-            "P3:01c_nelmes_plate added: £0 Wellcome Plate of Sarah Nelmes, 2.0 s taken from 01_sarah_nelmes.",
+            "P3:01c_nelmes_plate dropped (J0341, Chief J0322). 2.0 s returned to 01_sarah_nelmes. Sores stay off screen.",
             "P4:12_explorer_press cover faces away.",
             "Jenner face lock: P2:08_jenner_window is the master still. Page turned edge-on.",
             "P5 kite hand-off kept. Lightning never touches the kite.",
@@ -517,8 +482,8 @@ def render_review(film: dict, per_part: list, after_007: int, after_008: int, af
     fit = "fits" if after_009 >= FLOW_FLOOR else "does not fit"
     return f"""# 007 price review v02
 
-Cursor, 16 Oct 2026, J0322. Boards only. **No mint. No spend. No merge.**
-Applies `CLAUDE_BOARDS_REVIEW_v01.md` (J0315, a4474f9). Parked for the Chief's price pass.
+Cursor, 16 Oct 2026, J0341. Boards only. **No mint. No spend. No merge.**
+Applies the Chief's J0322 price PASS: drop the Nelmes plate, keep the Ken Burns lock.
 
 ## Readings
 
@@ -539,7 +504,7 @@ Vertex, if it were the route: Quality £{V_Q:.2f}/s, Fast £{V_F:.2f}/s, clip le
 ## Totals
 
 v01 was 96 rows, 25 Quality / 55 Fast / 16 reuse, priced as Vertex (£58.24 try-1, £139.01 expected).
-v02 is Flow-first. Six Fast mints and one Quality mint come off. One £0 archive cutaway is added. The VO timing is unchanged: the cutaway takes 2.0 s from `01_sarah_nelmes`.
+v02 is Flow-first. Six Fast mints and one Quality mint come off. The £0 Nelmes cutaway is dropped (Chief, J0322). The 2.0 s returns to `01_sarah_nelmes`. Flow expected totals are unchanged.
 
 | | rows | Quality | Fast | code | archive | reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -568,7 +533,7 @@ All on Vertex: DOES NOT FIT (£{film['vertex_expected']:.2f} expected vs £{VERT
 5. **Both parchment maps are £0 code graphics** (`P1:07_map_shadows`, `P4:11_news_spreads`). No place names in the render. Their old reuse rows stay reuse, still £0.
 6. **`P5:10_history_book`** stays Fast. Spines face away.
 7. **`P5:08_body_learns`** is a £0 code graphic (THE BODY LEARNS). That is the one Quality mint saved.
-8. **`P3:01c_nelmes_plate`** is a £0 cutaway of the real 1798 plate of Sarah Nelmes' hand (Wellcome M0009446), 2.0 s taken from the generated study shot.
+8. **`P3:01c_nelmes_plate` is dropped.** The 1798 plate shows cowpox pustules, and this film forbids sores. The 2.0 s returns to `01_sarah_nelmes`. The mint total does not change.
 9. **`P4:12_explorer_press`** stays Quality. The book is seen from the back. The title lives on the real scan.
 10. **Face lock.** `P2:08_jenner_window` is the master still, and its page is edge-on. Later readable Jenner faces start from the first KEEP of that plate.
 11. **Kite hand-off kept** (`11b_storm_builds`, `12_kite_storm`). The flash never touches the kite.
@@ -579,10 +544,10 @@ All on Vertex: DOES NOT FIT (£{film['vertex_expected']:.2f} expected vs £{VERT
 
 No mint in this pass. Vertex does not fit. Flow {fit} in the order above: after 007, 008 and 009 tranche 1 the reading would show **{after_009}** left.
 
-Two things are not a price question:
+Chief's conditions, applied:
 
-- **Plate I shows cowpox pustules.** The film's forbidden list rejects sores. Claude asked for the real plate as a £0 cutaway. Dropping `01c_nelmes_plate` does not change the mint total; the 2.0 s goes back onto `01_sarah_nelmes`.
-- **Archive stills and the motion lock.** The lock forbids a Ken Burns push. The boards ask for a hand turning the page instead. If that is not enough, the price pass can waive one slow push on the title page and the Gillray print.
+- **Plate I dropped.** The print shows cowpox pustules. The film forbids sores, so `01c_nelmes_plate` is gone. The 2.0 s is back on `01_sarah_nelmes`. The mint total does not change.
+- **Archive motion.** A hand-turn on the 1798 Inquiry title page and on Gillray's Cow-Pock is enough. The Ken Burns lock stands. No waive.
 
 The code graphics (`P1:07`, `P4:11`, `P5:08`) are a `chart` job after this pass. They are not minted.
 """
