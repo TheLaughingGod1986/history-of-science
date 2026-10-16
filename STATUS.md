@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Fri 16 Oct 2026**, updated by cursor (J0343). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Fri 16 Oct 2026**, updated by codex (J0308). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -33,6 +33,9 @@
 - ▶️ Underway: nothing right now
 - ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 007 Picture: J0344 builds the three £0 code graphics. No mint until after 006 and a live Flow read leaves at least 3,000.; 009 Picture: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
+
+**codex**
+- ▶️ Underway: nothing right now
 
 **chief**
 - ▶️ Underway: nothing right now
@@ -88,7 +91,7 @@ Finished and scheduled: long `GHZDsiH7L7A` airs Thu 15 Oct 18:00 (Premiere off).
 - ✅ **Edit + master** — done: master v02
 - 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (3 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
 - ✅ **Ben's final OK** — done: long OK'd before upload (29 Sep); thumb C is the Chief's call now
-- ✅ **Scheduled** — done: Thu 15 Oct 18:00; pin + Related at 18:05
+- ✅ **Scheduled** — done: Long GHZDsiH7L7A confirmed Public 16 Oct. J0308 Dalton v02 -sa2t7dAtCk Private + 16 Nov 11:30 UK/UTC; custom frame-0 cover and Related to 004 saved. Buffer held until public.
 
 ### 005 · The Tied Arm That Proved Your Blood Circulates
 

@@ -37,3 +37,5 @@ One row per Short. Fill stayed-to-watch and average view duration from Studio at
 | — (Draft) | `KIWJRl0dzjw` | One Tight Band Proved Your Blood Goes Round (duplicate) | 005 | | | | | Wizard-retry copy of `mTY67qet7cM`, 3 Oct. Schedule cleared. Keep as draft. Do not delete. |
 
 Live scrape: `02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/Schedule/evidence_2026-09-30_shorts/LIVE_SHORTS_LIST.json`
+
+| 16 Nov 2026 11:30 UK/UTC | `-sa2t7dAtCk` | What Is Dalton's Atomic Theory? | 004 `GHZDsiH7L7A` | Dalton schoolroom / EACH ATOM | | | | Scheduled by codex J0308 under Chief approval; Private + publishAt; v02 sha 9c33636797e0; API custom thumbnail set; Buffer held until public |

@@ -63,6 +63,27 @@
       "durationSeconds": 25,
       "cover": "THE carbolic SPRAY",
       "note": "Uploaded 30 Sep; scheduled Tue 20 Oct 11:30 UK. Related long save still needs retry."
+    },
+    {
+      "id": "-sa2t7dAtCk",
+      "title": "What Is Dalton's Atomic Theory?",
+      "airDate": "2026-11-16T11:30:00Z",
+      "promotes": "004",
+      "promotesVideoId": "GHZDsiH7L7A",
+      "relatedVideoId": "GHZDsiH7L7A",
+      "tags": [
+        "dalton atomic theory",
+        "what is dalton's atomic theory",
+        "john dalton",
+        "atomic theory",
+        "history of the atom",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 24.533,
+      "cover": "EACH ATOM",
+      "note": "J0308 Chief authorization. Buffer held until public."
     }
   ]
 }
