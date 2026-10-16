@@ -69,4 +69,6 @@ The share is mounted (`192.168.1.119:/volume1/data` on `/Volumes/data`). Existin
 
 Local media is intact at `02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/code_graphics_v01/` in the History of Science checkout (untracked; mp4/mov are gitignored). A safety copy, not a NAS mirror, is at `~/_desk/j0329-code-graphics-v01/`.
 
+Second probe, 16 Oct ~01:50 London (Cursor covering, no mkdir): `listdir` of `.../History Of Science/02_Video-Projects` did not return within 8 seconds. Local `shasum -a 256 -c SHA256SUMS.txt` is OK (11 mp4, 5 alpha mov, contact sheet, manifest, checks). PR #338 is MERGEABLE. No copy was started.
+
 Parked for Chief: review the eleven graphics (holds in "Composite and review holds" above). The mint gate is unchanged. No files were deleted.
