@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""HOS 006: Part 03 rough v02 (with P3:06 dropped in) + Part 04 rough v01 + Part 05 rough v01 (J0140).
+"""HOS 006: Part 03 rough v03 + Part 04 rough v02 (J0266) and Part 05 rough v01 (J0140).
+
+J0266, no spend. Part 03 row 16 and Part 04 row 09 are non-overlapping tails of an 8 s
+parent. picture_qa treats any second in-point within 10 s on the same file name as the
+same stretch, so each tail is its own file and the parent offset is recorded on the cut.
+Part 04 row 11 gets a shadow lift: polish_gate fails mean luma under 28, and the brief's
+21 would still fail. Part 05 is unchanged and is only re-gated.
 
 No spend. VO-first assembly matching _assemble_part03_rough_v01.py:
 - Every plate sits at its board time (parts/part-0N_plates_v01.json, t_s from vo_film_start_s)
@@ -10,6 +16,7 @@ No spend. VO-first assembly matching _assemble_part03_rough_v01.py:
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import os
@@ -52,6 +59,23 @@ def probe_dur(p: Path) -> float:
         .decode()
         .strip()
     )
+
+
+def materialise_stretch(parent: Path, parent_offset: float, need_s: float) -> Path:
+    """Write a frame-accurate tail of parent. Not a mint: ffmpeg trim of a KEEP clip."""
+    out = parent.parent / "stretches" / f"{parent.stem}_from{parent_offset:.3f}.mp4"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    if out.exists() and probe_dur(out) + 1e-3 >= need_s:
+        return out
+    run([
+        "ffmpeg", "-y", "-i", str(parent), "-ss", f"{parent_offset:.3f}", "-t", f"{need_s + 0.08:.3f}",
+        "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-pix_fmt", "yuv420p",
+        "-r", str(FPS), str(out),
+    ])
+    got = probe_dur(out)
+    if got + 1e-3 < need_s:
+        raise SystemExit(f"{out.name} is {got:.3f}s, need {need_s:.3f}s (parent {parent.name} at {parent_offset:.3f})")
+    return out
 
 
 def contact_sheet(video: Path, cuts: list[dict], out_dir: Path, path: Path) -> None:
@@ -97,10 +121,11 @@ def part03_specs() -> dict[str, dict]:
     }
     specs["16_repair_reuse"] = {
         "src": p3 / "14_trees_breathe_t1.mp4",
-        "start": 3.0,
+        "start": 0.0,
+        "parent_offset": 4.160,
         "vf": f"scale={W}:{H},fps={FPS}",
         "upscale": 1.0,
-        "disp": "REUSE window 3.00-6.84 s of 14_trees_breathe (board reuse_of P3:14_trees_breathe)",
+        "disp": "REUSE non-overlapping tail 4.160-7.993 s of 14_trees_breathe_t1 (row 14 uses 0-2.708 s). Own stretch file: an 8 s parent cannot clear picture_qa's 10 s same-stretch rule on one file name (J0266)",
     }
     return specs
 
@@ -150,9 +175,9 @@ def part04_specs() -> dict[str, dict]:
             "disp": "Flow Quality t2 (Chief ruling #180 6137551906; PENDING_UAT on review/j0140)",
         },
         "09_bubbles_again": {
-            "src": p4 / "05_bubbles_macro_t1.mp4", "start": 4.2,
+            "src": p4 / "05_bubbles_macro_t1.mp4", "start": 0.0, "parent_offset": 4.500,
             "vf": f"scale={W}:{H},fps={FPS}", "upscale": 1.5,
-            "disp": "REUSE window 4.20-7.62 s of P4:05_bubbles_macro (board reuse_of)",
+            "disp": "REUSE non-overlapping tail 4.500-7.917 s of 05_bubbles_macro_t1 (row 05 uses 0-4.125 s). Own stretch file so picture_qa does not call it the same 10 s stretch (J0266)",
         },
         "10_only_green": {
             "src": p4 / "10_only_green_t2.mp4", "start": 0.0,
@@ -161,8 +186,9 @@ def part04_specs() -> dict[str, dict]:
         },
         "11_night_jars": {
             "src": p4 / "11_night_jars_t1.mp4", "start": 0.0,
-            "vf": f"scale={W}:{H},fps={FPS}", "upscale": 1.5,
-            "disp": "KEEP Flow t1 (Chief, desk #180 6137551906)",
+            "vf": "curves=all='0/0.08 0.12/0.22 0.35/0.42 1/1'," + f"scale={W}:{H},fps={FPS}",
+            "upscale": 1.5,
+            "disp": "KEEP Flow t1 (Chief, desk #180 6137551906) plus a shadow lift. The 4 s dip measured mean luma 16-18; polish_gate fails under 28, so the brief's 21 would still fail (J0266)",
         },
         "12_shutters_open": {
             "src": p4 / "12_shutters_open_t1.mp4", "start": 0.0,
@@ -348,6 +374,13 @@ def assemble_part(part_num: int, ver: str, specs: dict[str, dict], reviewed_ok: 
         sp = specs[p["id"]]
         src = sp["src"]
         start = float(sp["start"])
+        parent_offset = sp.get("parent_offset")
+        framing: dict = {"offset": start}
+        if parent_offset is not None:
+            parent = src
+            src = materialise_stretch(parent, float(parent_offset), n / FPS)
+            start = 0.0
+            framing = {"offset": 0.0, "parent": parent.name, "parent_offset": float(parent_offset)}
         assert start + n / FPS <= probe_dur(src) + 1e-3, f"Part {pstr} {p['id']}: window runs past clip"
         run(["ffmpeg", "-y", "-ss", f"{start:.3f}", "-i", str(src), "-an", "-vf", sp["vf"], "-frames:v", str(n), *X264, str(seg)])
         row = {
@@ -361,7 +394,7 @@ def assemble_part(part_num: int, ver: str, specs: dict[str, dict], reviewed_ok: 
             "source": src.name,
             "source_path": str(src),
             "source_sha256": sha(src),
-            "framing": {"offset": start},
+            "framing": framing,
             "disposition": sp["disp"],
         }
         segs.append(seg)
@@ -405,9 +438,9 @@ def assemble_part(part_num: int, ver: str, specs: dict[str, dict], reviewed_ok: 
         "film": board["film"],
         "part": part_num,
         "kind": f"rough_{ver}",
-        "job": "J0140",
-        "authority": "Chief J0139/J0140 rulings (#180 6133713891, 6137551906, 6140112141, 6140142639, 14 Oct 20:50Z)",
-        "applied_by": "gemini",
+        "job": "J0266" if part_num in (3, 4) and ver in ("v03", "v02") else "J0140",
+        "authority": "Chief J0139/J0140 rulings (#180 6133713891, 6137551906, 6140112141, 6140142639, 14 Oct 20:50Z); J0266 reuse tails + night-jars lift",
+        "applied_by": "cursor",
         "no_new_mints": True,
         "spend": "none (assembly only)",
         "assemble_method": "VO-first: board t_s/use_s per plate, hard cuts, 24 fps 1080p, VO padded to part end",
@@ -471,17 +504,19 @@ def assemble_part(part_num: int, ver: str, specs: dict[str, dict], reviewed_ok: 
 
 
 def main() -> None:
-    print("Assembling Part 03 rough v02 (with P3:06 dropped in) ...", flush=True)
-    r3 = assemble_part(3, "v02", part03_specs())
-    print("  ->", json.dumps(r3), flush=True)
-
-    print("Assembling Part 04 rough v01 ...", flush=True)
-    r4 = assemble_part(4, "v01", part04_specs())
-    print("  ->", json.dumps(r4), flush=True)
-
-    print("Assembling Part 05 rough v01 ...", flush=True)
-    r5 = assemble_part(5, "v01", part05_specs())
-    print("  ->", json.dumps(r5), flush=True)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--only", default="3,4", help="comma-separated part numbers to assemble")
+    args = ap.parse_args()
+    want = {int(x) for x in args.only.split(",") if x.strip()}
+    if 3 in want:
+        print("Assembling Part 03 rough v03 (distinct tail on row 16) ...", flush=True)
+        print("  ->", json.dumps(assemble_part(3, "v03", part03_specs())), flush=True)
+    if 4 in want:
+        print("Assembling Part 04 rough v02 (distinct tail on row 09, night-jars lift) ...", flush=True)
+        print("  ->", json.dumps(assemble_part(4, "v02", part04_specs())), flush=True)
+    if 5 in want:
+        print("Assembling Part 05 rough v01 ...", flush=True)
+        print("  ->", json.dumps(assemble_part(5, "v01", part05_specs())), flush=True)
 
 
 if __name__ == "__main__":
