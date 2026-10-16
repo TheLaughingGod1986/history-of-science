@@ -51,7 +51,7 @@ And at those parties, something odd kept happening. People would fall over, bang
 
 In a small town in Georgia, a young doctor called Crawford Long noticed. In March eighteen forty-two, a patient called James Venable needed a lump removed from his neck. Long gave him ether on a towel, and cut. Venable felt nothing.
 
-[VISUAL MUST: 2:58 — a quiet country surgery: Long holds a folded towel near James Venable's face; Venable's head tips gently back; a WHEN marker drops onto a timeline that slides in along the bottom of the frame · WHEN: Georgia, 1842 · DATA: a timeline that builds as each date is said: 1800 · 1842]
+[VISUAL MUST: 2:58 — a quiet country surgery: Long holds a folded towel near James Venable's face; Venable's head tips gently back; a WHEN marker drops onto a timeline that slides in along the bottom of the frame · WHEN: Georgia, 1842 · DATA: a timeline that builds as each date is said: 1800 · 1842 · SCALE: 42 years from Davy's laughing gas (1800) to Long's ether operation (1842)]
 
 It worked. But Long didn't tell the wider world. He didn't publish what he'd done for another seven years.
 
@@ -113,7 +113,7 @@ Meanwhile, across the ocean, the fastest surgeon in London was about to try it f
 [CHAPTER CARD: Across the Ocean · 6:30 · ~1.5 s]
 [VISUAL MUST: 6:33 — London, University College Hospital, 21 December 1846: Robert Liston (readable face, fifties, tall, broad-shouldered, dark frock coat) stands by a sleeping patient; he holds up a pocket watch, then slowly puts it away in his waistcoat · WHEN: London, December 1846 (timeline marker) · LABEL: NO NEED TO RUSH]
 [VISUAL MUST: 7:00 — Edinburgh, November 1847: a dinner table at night; three doctors sniff from small glasses, then topple from their chairs to the floor; an older man smiles at them from the door · WHO: James Young Simpson (1811–1870) — Edinburgh doctor · WHEN: Edinburgh, 1847 (timeline marker)]
-[VISUAL MUST: 7:20 — Buckingham Palace, April 1853: a calm doctor, John Snow (readable face, about forty, clean-shaven, dark hair), drips liquid onto a folded handkerchief beside a royal bed, seen from a respectful distance · WHO: John Snow (1813–1858) — London doctor · WHEN: 1853 · DATA: the timeline completes: 1800 · 1842 · 1844 · 1846 · 1847 · 1853]
+[VISUAL MUST: 7:20 — Buckingham Palace, April 1853: a calm doctor, John Snow (readable face, about forty, clean-shaven, dark hair), drips liquid onto a folded handkerchief beside a royal bed, seen from a respectful distance · WHO: John Snow (1813–1858) — London doctor · WHEN: 1853 · DATA: the timeline completes: 1800 · 1842 · 1844 · 1846 · 1847 · 1853 · SCALE: 53 years from Davy's Bristol lab (1800) to Buckingham Palace (1853)]
 [VISUAL MUST: 7:40 — a modern operating room: an anaesthetist watches a monitor of steady heartbeat and breathing lines beside a sleeping patient · DATA: a counter that runs up to 100,000, with one tiny dot · SCALE: one in a stadium crowd · LABEL: 1 IN 100,000]
 [VISUAL MUST: 8:05 — a sunlit Victorian hospital ward; a patient sleeps peacefully after an operation; on the bedside table a glass of water trembles very slightly · LABEL: BUT DAYS LATER…]
 [TEACH: Ether reached London in December 1846, and chloroform followed in 1847. When Queen Victoria used chloroform in 1853, ordinary people stopped fearing it. Today, anaesthesia is very safe.]

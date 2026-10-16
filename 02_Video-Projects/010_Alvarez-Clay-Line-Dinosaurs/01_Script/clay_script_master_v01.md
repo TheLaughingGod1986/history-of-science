@@ -6,7 +6,7 @@ What killed the dinosaurs? The answer was hidden in a line of rock as thin as a 
 
 In a quiet gorge in Italy, you can put your finger on it. Below it, the world of the dinosaurs. Above it, they're gone.
 
-[VISUAL MUST: 0:00 — a sunlit limestone cliff in a narrow Italian gorge; the camera pushes in on a thin dark band of clay between pale layers of rock; a fingertip rests on it (ANSWER IMAGE by 0:04) · LABEL: THE CLAY LINE]
+[VISUAL MUST: 0:00 — a sunlit limestone cliff in a narrow Italian gorge; the camera pushes in on a thin dark band of clay between pale layers of rock; a fingertip rests on it (ANSWER IMAGE by 0:04) · DATA: 1 cm K–Pg boundary clay band between limestone layers · SCALE: one centimetre thick — as thin as a pencil · LABEL: THE CLAY LINE]
 
 So what happened in that thin layer of clay? And how could a few grams of it tell us what killed the dinosaurs?
 
@@ -20,7 +20,7 @@ For more than a hundred and sixty million years, dinosaurs walked the Earth. The
 
 For a long time, nobody knew why. Some scientists said the climate slowly changed. Some said volcanoes. Others said disease, or that mammals ate their eggs. There were dozens of ideas, and almost no way to test them.
 
-[VISUAL MUST: 0:40 — a painted museum hall: a great dinosaur skeleton, with question marks drifting around it like dust · LABEL: WHAT HAPPENED?]
+[VISUAL MUST: 0:40 — a painted museum hall: a great dinosaur skeleton, with question marks drifting around it like dust · WHEN: 230–66 million years ago · WHEN: 66 million years ago (timeline marker) · FACT: Three-quarters of species vanished · LABEL: WHAT HAPPENED?]
 
 Picture yourself standing in that gorge, with your hand on the rock. Below your fingers, the last days of the dinosaurs. Above, a world without them. What would you look for, to find out what happened in between?
 
@@ -33,10 +33,10 @@ In the nineteen-seventies, a young American geologist started looking very close
 ## PART 02: The Gorge at Gubbio (1:20–2:55)
 
 [CHAPTER CARD: The Gorge at Gubbio · 1:20 · ~1.5 s]
-[VISUAL MUST: 1:23 — Gubbio, Italy, 1970s: Walter Alvarez (readable face, late thirties, clean-shaven, fair hair, dark-rimmed glasses, short-sleeved field shirt, field bag over his shoulder) taps the cliff with a geologist's hammer · LABEL: WALTER ALVAREZ · GUBBIO]
+[VISUAL MUST: 1:23 — Gubbio, Italy, 1970s: Walter Alvarez (readable face, late thirties, clean-shaven, fair hair, dark-rimmed glasses, short-sleeved field shirt, field bag over his shoulder) taps the cliff with a geologist's hammer · WHO: Walter Alvarez (born 1940) — American geologist · WHEN: Gubbio, Italy, 1970s (timeline marker) · LABEL: WALTER ALVAREZ · GUBBIO]
 [VISUAL MUST: 1:45 — a magnifying lens over the pale limestone below the clay: it's crowded with tiny round fossil shells, each the size of a grain of sand · LABEL: TINY SHELLS]
 [VISUAL MUST: 2:05 — the same lens moves above the clay line: the rock is almost empty, just a few very small shells · LABEL: ALMOST NONE]
-[VISUAL MUST: 2:25 — Walter carefully wraps a small piece of the rock, with its thin clay band, in cloth and puts it in his bag · LABEL: A PIECE TO TAKE HOME]
+[VISUAL MUST: 2:25 — Walter carefully wraps a small piece of the rock, with its thin clay band, in cloth and puts it in his bag · DATA: inked two-clock comparison contrasting slow sea-floor clay deposition (thousands of years) with a sudden catastrophe (a few years) · SCALE: one centimetre of clay: thousands of years or one moment · LABEL: A PIECE TO TAKE HOME]
 [EXPLORER ACTS: once. In the gorge the Explorer peers through a hand lens at the rock below the clay, raises his eyebrows at all the tiny shells, moves the lens above the line, finds nothing, and looks back at the camera, puzzled]
 [TEACH: Below the clay, the rock is full of tiny fossil shells. Above it, almost all of them are gone. Something wiped them out at the same moment the dinosaurs died.]
 
@@ -57,10 +57,10 @@ He took a piece back home, to California. And he showed it to his father.
 ## PART 03: A Clock Made of Stardust (2:55–4:40)
 
 [CHAPTER CARD: A Clock Made of Stardust · 2:55 · ~1.5 s]
-[VISUAL MUST: 2:58 — Berkeley, California: Luis Alvarez (readable face, late sixties, white hair, glasses, cardigan) turns the rock sample over in his hands at a desk in Berkeley, his son beside him · LABEL: LUIS ALVAREZ · BERKELEY]
+[VISUAL MUST: 2:58 — Berkeley, California: Luis Alvarez (readable face, late sixties, white hair, glasses, cardigan) turns the rock sample over in his hands at a desk in Berkeley, his son beside him · WHO: Luis Alvarez (1911–1988) — Berkeley physicist · WHEN: Berkeley, late 1970s (timeline marker) · FACT: X-rayed an Egyptian pyramid · LABEL: LUIS ALVAREZ · BERKELEY]
 [VISUAL MUST: 3:20 — a calm teach scene: a soft, steady rain of glittering space dust falls on the Earth from all directions · LABEL: A STEADY RAIN FROM SPACE]
 [VISUAL MUST: 3:40 — a cutaway Earth forming: molten iron sinks to the centre, carrying silvery iridium with it; the crust above is left almost bare · LABEL: IRIDIUM SANK TO THE CORE]
-[VISUAL MUST: 4:00 — a laboratory at Berkeley, late 1970s: Frank Asaro and Helen Michel (readable faces, lab coats) load tiny powdered samples into a measuring machine · LABEL: FRANK ASARO · HELEN MICHEL]
+[VISUAL MUST: 4:00 — a laboratory at Berkeley, late 1970s: Frank Asaro and Helen Michel (readable faces, lab coats) load tiny powdered samples into a measuring machine · WHO: Frank Asaro (1927–2014) — nuclear chemist · WHO: Helen Michel (born 1932) — nuclear chemist · LABEL: FRANK ASARO · HELEN MICHEL]
 [TEACH: Iridium is very rare in the Earth's crust, because most of it sank to the core. But it's much more common in meteorites, so space dust adds a little to the sea floor every year.]
 
 Walter's father was Luis Alvarez, a physicist who had won a Nobel Prize. He loved a puzzle. He had once used tiny particles from space to search for hidden rooms inside an Egyptian pyramid. And now he had an idea for a clock.
@@ -78,10 +78,10 @@ They expected a small number. What came back was not small at all.
 ## PART 04: Too Much Iridium (4:40–6:20)
 
 [CHAPTER CARD: Too Much Iridium · 4:40 · ~1.5 s]
-[VISUAL MUST: 4:43 — a hand-drawn graph on a lab notebook page: a flat low line through the rock layers, then a tall sharp spike exactly at the clay · LABEL: THE IRIDIUM SPIKE]
-[VISUAL MUST: 5:05 — a map of the world: a pin in Gubbio, then a second pin at a white sea cliff in Denmark, then a third in New Zealand; each glows with the same spike · LABEL: ALL AROUND THE WORLD]
-[VISUAL MUST: 5:30 — a slow, calm scene with no fire shown: a dark grey veil of dust spreads high across the sky and dims the Sun over a quiet prehistoric forest · LABEL: DUST AROUND THE WORLD]
-[VISUAL MUST: 5:55 — the journal Science, 6 June 1980, lies open on a desk; its title reads EXTRATERRESTRIAL CAUSE FOR THE CRETACEOUS-TERTIARY EXTINCTION · LABEL: SCIENCE · 1980]
+[VISUAL MUST: 4:43 — a hand-drawn graph on a lab notebook page: a flat low line through the rock layers, then a tall sharp spike exactly at the clay · DATA: hand-drawn lab notebook graph showing a 30× iridium spike in the Gubbio clay layer · SCALE: 30 times the iridium in the rock above and below · LABEL: THE IRIDIUM SPIKE]
+[VISUAL MUST: 5:05 — a map of the world: a pin in Gubbio, then a second pin at a white sea cliff in Denmark, then a third in New Zealand; each glows with the same spike · WHEN: Stevns Klint, Denmark · FACT: No supernova plutonium found · LABEL: ALL AROUND THE WORLD]
+[VISUAL MUST: 5:30 — a slow, calm scene with no fire shown: a dark grey veil of dust spreads high across the sky and dims the Sun over a quiet prehistoric forest · DATA: 10 km asteroid scale comparison against a city skyline and Mount Everest · SCALE: ten kilometres across — wider than Mount Everest is tall · LABEL: DUST AROUND THE WORLD]
+[VISUAL MUST: 5:55 — the journal Science, 6 June 1980, lies open on a desk; its title reads EXTRATERRESTRIAL CAUSE FOR THE CRETACEOUS-TERTIARY EXTINCTION · WHEN: 6 June 1980 (timeline marker) · DATA: animated timeline that builds as each date is said (66 Ma · 1970s Gubbio · Late 1970s Berkeley · June 1980 Science · Early 1990s Chicxulub) · SCALE: ten years from the 1980 Science paper to the buried crater · LABEL: SCIENCE · 1980]
 [TEACH: The clay held far more iridium than space dust alone could explain. The team proposed that a huge asteroid had hit the Earth and spread iridium-rich dust around the world.]
 
 In the Gubbio clay, there was about thirty times more iridium than in the rock around it. Far too much for a slow, gentle rain of space dust.
@@ -106,10 +106,10 @@ Because if an asteroid that big had really hit the Earth, where was the hole?
 
 [CHAPTER CARD: The Crater and the Birds · 6:20 · ~1.5 s]
 [VISUAL MUST: 6:23 — a microscope view of a grain of quartz criss-crossed with fine straight cracks; then a tiny glass bead from Haiti beside a coin for scale · LABEL: SHOCKED QUARTZ · GLASS BEADS]
-[VISUAL MUST: 6:40 — a gravity map of Mexico's Yucatán Peninsula: a huge buried ring appears in glowing colours beneath the coastline · LABEL: CHICXULUB CRATER]
-[VISUAL MUST: 6:55 — a scale teach card: the crater's ring laid over a map of southern England for size, about 180 km across · LABEL: ABOUT 180 KM WIDE]
+[VISUAL MUST: 6:40 — a gravity map of Mexico's Yucatán Peninsula: a huge buried ring appears in glowing colours beneath the coastline · WHEN: Early 1990s, Yucatán (timeline marker) · LABEL: CHICXULUB CRATER]
+[VISUAL MUST: 6:55 — a scale teach card: the crater's ring laid over a map of southern England for size, about 180 km across · DATA: Chicxulub crater ring (~180 km wide) laid over southern England for scale · SCALE: 180 kilometres wide — stretching across southern England · LABEL: ABOUT 180 KM WIDE]
 [VISUAL MUST: 7:10 — the Gubbio clay line again, close up; a gentle glow shows the iridium inside it · LABEL: THE SAME MOMENT]
-[VISUAL MUST: 7:35 — a garden in the morning; a robin hops along a fence and turns its head to camera; a faint outline of a small feathered dinosaur skeleton fades in over it, then out · LABEL: STILL HERE]
+[VISUAL MUST: 7:35 — a garden in the morning; a robin hops along a fence and turns its head to camera; a faint outline of a small feathered dinosaur skeleton fades in over it, then out · FACT: Birds are living dinosaurs · LABEL: STILL HERE]
 [EXPLORER ACTS: once. In the garden the Explorer crouches, holds out a few crumbs, and a robin hops closer; he looks from the bird to the sky, and smiles]
 [TEACH: The Chicxulub crater in Mexico, about 180 kilometres wide and 66 million years old, is the impact site. Birds are the dinosaurs that survived.]
 
