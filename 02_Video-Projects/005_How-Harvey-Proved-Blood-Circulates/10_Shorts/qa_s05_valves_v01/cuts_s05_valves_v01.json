@@ -1,0 +1,90 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 2.29,
+    "source": "13_one_way_t3.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.3
+    },
+    "video": true
+  },
+  {
+    "row": "s02_Along",
+    "timeline_in": 2.29,
+    "timeline_out": 5.698,
+    "source": "06_veins_swell_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 4.0
+    },
+    "video": true
+  },
+  {
+    "row": "s03_Each",
+    "timeline_in": 5.698,
+    "timeline_out": 9.97,
+    "source": "08_knots_valve_t4.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.1
+    },
+    "video": true
+  },
+  {
+    "row": "s04_Harvey",
+    "timeline_in": 9.97,
+    "timeline_out": 12.987,
+    "source": "09_push_stops_t3.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.3
+    },
+    "video": true
+  },
+  {
+    "row": "s05_pushes",
+    "timeline_in": 12.987,
+    "timeline_out": 15.277,
+    "source": "09_push_stops_t3.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 3.4
+    },
+    "video": true
+  },
+  {
+    "row": "s06_It",
+    "timeline_in": 15.277,
+    "timeline_out": 18.103,
+    "source": "08_knots_valve_t4.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 4.6
+    },
+    "video": true
+  },
+  {
+    "row": "s07_He",
+    "timeline_in": 18.103,
+    "timeline_out": 19.69,
+    "source": "10_slides_heart_t3.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s08_loop",
+    "timeline_in": 19.69,
+    "timeline_out": 23.69,
+    "source": "loop_end_13_one_way_t3.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.3
+    },
+    "video": true
+  }
+]

@@ -1,0 +1,3 @@
+FAIL   0:15 row s05_Thomson 05_magnet_bends_v01.mp4: reuse: same stretch as 0:01 (give it a new stretch, or a new render)
+WARN   0:22 row s07_Light 07_light_doesnt_v01.mp4: low detail: edge density 0.0353 < film p5 0.0388
+picture QA FAIL: 1 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s04_cathode_rays_v01/picture_qa_s04_cathode_rays_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s04_cathode_rays_v01/picture_qa_s04_cathode_rays_v01/picture_qa_review.jpg

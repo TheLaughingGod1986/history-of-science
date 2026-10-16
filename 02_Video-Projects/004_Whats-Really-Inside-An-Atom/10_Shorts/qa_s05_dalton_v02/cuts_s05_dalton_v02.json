@@ -1,0 +1,79 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 4.769,
+    "source": "01_dalton_schoolroom_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s02_Hydrogen",
+    "timeline_in": 4.769,
+    "timeline_out": 8.358,
+    "source": "05_fixed_amounts_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s03_Gold",
+    "timeline_in": 8.358,
+    "timeline_out": 10.929,
+    "source": "07_water_always_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 2.0
+    },
+    "video": true
+  },
+  {
+    "row": "s04_Why",
+    "timeline_in": 10.929,
+    "timeline_out": 13.618,
+    "source": "02_atomic_theory_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.2
+    },
+    "video": true
+  },
+  {
+    "row": "s05_combine",
+    "timeline_in": 13.618,
+    "timeline_out": 17.892,
+    "source": "04_gold_heavier_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.15
+    },
+    "video": true
+  },
+  {
+    "row": "s06_hydrogen",
+    "timeline_in": 17.892,
+    "timeline_out": 21.312,
+    "source": "05_fixed_amounts_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 4.3
+    },
+    "video": true
+  },
+  {
+    "row": "s07_loop",
+    "timeline_in": 21.312,
+    "timeline_out": 24.512,
+    "source": "loop_end_01_dalton_schoolroom_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  }
+]

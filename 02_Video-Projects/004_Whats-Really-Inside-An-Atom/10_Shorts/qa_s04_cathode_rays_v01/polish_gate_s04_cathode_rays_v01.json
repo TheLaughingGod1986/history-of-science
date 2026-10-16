@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s04_cathode_rays_v01.mp4",
+  "edge_floor": 0.0388,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s07_Light",
+      "cut": 6,
+      "t": 21.53,
+      "source": "07_light_doesnt_v01.mp4",
+      "why": [
+        "low detail: edge density 0.0353 < film p5 0.0388"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "05_magnet_bends_v01.mp4",
+      "t": 1.18,
+      "std": 57.13,
+      "mean": 83.72,
+      "p95": 210.0,
+      "edge": 0.0815,
+      "hf": 14.28,
+      "lf": 48.35,
+      "std8": 51.86,
+      "edge8": 0.3523,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_run",
+      "source": "03_beam_shoots_v01.mp4",
+      "t": 4.14,
+      "std": 66.42,
+      "mean": 112.69,
+      "p95": 246.0,
+      "edge": 0.0602,
+      "hf": 7.09,
+      "lf": 62.43,
+      "std8": 64.28,
+      "edge8": 0.4332,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_Scientists",
+      "source": "02_tube_glow_v01.mp4",
+      "t": 7.42,
+      "std": 46.71,
+      "mean": 102.83,
+      "p95": 174.0,
+      "edge": 0.0454,
+      "hf": 7.36,
+      "lf": 41.47,
+      "std8": 43.87,
+      "edge8": 0.3608,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_But",
+      "source": "04_cathode_rays_question_v01.mp4",
+      "t": 10.82,
+      "std": 52.61,
+      "mean": 90.63,
+      "p95": 198.0,
+      "edge": 0.1449,
+      "hf": 12.11,
+      "lf": 43.78,
+      "std8": 47.27,
+      "edge8": 0.5439,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_Thomson",
+      "source": "05_magnet_bends_v01.mp4",
+      "t": 14.7,
+      "std": 50.92,
+      "mean": 80.82,
+      "p95": 186.0,
+      "edge": 0.0509,
+      "hf": 7.96,
+      "lf": 46.67,
+      "std8": 48.55,
+      "edge8": 0.2937,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_He",
+      "source": "06_plates_bend_v01.mp4",
+      "t": 18.61,
+      "std": 67.91,
+      "mean": 119.13,
+      "p95": 244.0,
+      "edge": 0.0889,
+      "hf": 8.98,
+      "lf": 63.68,
+      "std8": 65.52,
+      "edge8": 0.453,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_Light",
+      "source": "07_light_doesnt_v01.mp4",
+      "t": 21.53,
+      "std": 56.78,
+      "mean": 87.88,
+      "p95": 213.0,
+      "edge": 0.0353,
+      "hf": 6.84,
+      "lf": 52.96,
+      "std8": 54.84,
+      "edge8": 0.3414,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0353 < film p5 0.0388"
+      ]
+    },
+    {
+      "cut": 7,
+      "row": "s08_loop",
+      "source": "loop_end_05_magnet_bends_v01.mp4",
+      "t": 24.08,
+      "std": 48.78,
+      "mean": 77.77,
+      "p95": 175.0,
+      "edge": 0.0544,
+      "hf": 7.42,
+      "lf": 44.4,
+      "std8": 46.38,
+      "edge8": 0.2889,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}
