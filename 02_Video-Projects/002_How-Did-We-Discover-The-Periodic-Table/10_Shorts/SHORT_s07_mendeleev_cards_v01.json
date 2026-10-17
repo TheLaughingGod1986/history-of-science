@@ -1,0 +1,168 @@
+{
+  "id": "s07_mendeleev_cards",
+  "job": "J0456",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-06",
+  "file": "10_Shorts/hos_002_s07_mendeleev_cards_v01.mp4",
+  "sha256": "8e215ede0a5a7dbe52a07228f04d1464d03842d8c15712bc878c3bfe99889eea",
+  "duration_s": 25.233,
+  "vo_source": "02_Voiceover/part04_empty_chairs_v01.wav",
+  "vo_span_windows_s": [
+    [
+      0.0,
+      7.12
+    ],
+    [
+      14.7,
+      22.8
+    ],
+    [
+      23.3,
+      28.05
+    ],
+    [
+      34.0,
+      41.08
+    ]
+  ],
+  "route": "claim-first lift: 1869. A Russian chemist named Dmitri Mendeleev sits at a desk covered in cards. \u2026 a seating chart for the building blocks of matter. (0.00\u20137.12 s, 14.70\u201322.80 s, 23.30\u201328.05 s, 34.00\u201341.08 s from Part 04)",
+  "vo_s": 24.812,
+  "words": 61,
+  "max_pause_s": 0.2,
+  "atempo": 1.02,
+  "bed": "hos002_s07_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -22.1,
+  "hook": "63 CARDS",
+  "hook_layer": {
+    "font_size": 237,
+    "cap_px": 169,
+    "cap_pct": 8.8,
+    "lines": 2,
+    "block_pct": [
+      39.8,
+      60.2
+    ],
+    "widest_pct": 80.4
+  },
+  "who_card": {
+    "name": "DMITRI MENDELEEV",
+    "line2": "St Petersburg, 1869",
+    "line1_px": 66,
+    "line1_pct_of_band": 10.9,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover the Periodic Table?",
+  "youtube_title_draft": "Who Invented the Periodic Table?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.932,
+      "plate": "04_Generated-Clips/part04/raw/v06_fast/02b_cards_sixty_three_v06.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.932,
+      "t1": 8.694,
+      "plate": "04_Generated-Clips/part04/raw/v06_fast/_desk_harvest/desk_try_prior_3.mp4",
+      "in_s": 0.6,
+      "crop_x": 200,
+      "lands_on": "sits"
+    },
+    {
+      "t0": 8.694,
+      "t1": 10.751,
+      "plate": "04_Generated-Clips/part04/raw/v06_fast/_desk_harvest/desk_try_prior_2.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "He"
+    },
+    {
+      "t0": 10.751,
+      "t1": 14.041,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast/04_sort_atomic_weight_v01.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "how"
+    },
+    {
+      "t0": 14.041,
+      "t1": 18.257,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast/05_columns_families_v01.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "Cousins"
+    },
+    {
+      "t0": 18.257,
+      "t1": 22.232,
+      "plate": "04_Generated-Clips/part04/raw/v25_quality/08_prediction_navigation_v25_try1.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "That"
+    },
+    {
+      "t0": 22.232,
+      "t1": 25.232,
+      "plate": "04_Generated-Clips/part04/raw/v06_fast/02b_cards_sixty_three_v06.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_002_s07_mendeleev_cards_v01.mp4  dur=25.23s  audio=-23.1dB  motion=14.49  dhash=cafcbc3cd88d35ff\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s07_mendeleev_cards_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_002_s07_mendeleev_cards_v01.mp4  0:25.23  mean -23.1 dB  peak -3.7 dB  145 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s07_mendeleev_cards_v01/polish_gate_s07_mendeleev_cards_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s07_mendeleev_cards_v01/picture_qa_s07_mendeleev_cards_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s07_mendeleev_cards_v01/picture_qa_s07_mendeleev_cards_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s07_mendeleev_cards_v01/hos_002_s07_mendeleev_cards_v01_t000.0.jpg",
+    "10_Shorts/_work_s07_mendeleev_cards_v01/hos_002_s07_mendeleev_cards_v01_t003.8.jpg",
+    "10_Shorts/_work_s07_mendeleev_cards_v01/hos_002_s07_mendeleev_cards_v01_t011.5.jpg",
+    "10_Shorts/_work_s07_mendeleev_cards_v01/hos_002_s07_mendeleev_cards_v01_t024.2.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s07_mendeleev_cards_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-17",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "who invented the periodic table",
+      "who made the periodic table",
+      "who created the periodic table",
+      "how did mendeleev arranged the periodic table",
+      "how many elements did mendeleev have",
+      "history of periodic table mendeleev"
+    ],
+    "note": "'who invented the periodic table', 'who made the periodic table', and 'how many elements did mendeleev have' are exact signed-out GB YouTube autocomplete hits. The lifted VO opens on Dmitri Mendeleev in 1869 at a desk covered in 63 element cards, lining them up by atomic weight relative to hydrogen so cousins fall into columns \u2014 the start of the periodic table. Completes 002's pair of Test B search-titled Shorts alongside s06_atomic_weights_v01. Chief's call."
+  },
+  "air_date_draft_note": "2026-12-06 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 04 VO and label DMITRI MENDELEEV \u00b7 St Petersburg, 1869, on screen 2.15\u20135.75 s (3.6 s) right after the 0\u20132 s hook. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No overlap with 002 S1\u2013S5 (which began at P04 + 42.00 s on leaving seats empty), s06_atomic_weights (Part 03 Cannizzaro / Karlsruhe 1860), Newlands octaves (Part 02), or the Oct 2 four-elements Short (Part 01): this lifts the opening 0\u201341 s of Part 04 (1869 / Dmitri Mendeleev / 63 element cards / columns of cousins), which had never been used in any 002 Short."
+}

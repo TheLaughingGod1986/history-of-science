@@ -166,3 +166,25 @@ Gate run with `--air-date 2026-12-03` (gate only). Caption check: 19 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+
+## 17 Oct 2026 — Short `s07_mendeleev_cards_v01` (Test B, second search-titled lift from Part 04, OWB J0456)
+
+- **Selection:** Completes HOS 002's pair of Test B search-titled Shorts alongside `s06_atomic_weights_v01` (HOS 003, 004, 005, and 006 each have 2 built Test B search-titled Shorts; 002 had 1).
+- **VO (0 spend):** `02_Voiceover/part04_empty_chairs_v01.wav` claim-first lift (`0.00–7.12 s`, `14.70–22.80 s`, `23.30–28.05 s`, `34.00–41.08 s` from Part 04, zero overlap with S1–S5 which began at P04 + 42.00 s, `s06_atomic_weights`, Newlands, or the Part 01 four-elements Short): *"1869. A Russian chemist named Dmitri Mendeleev sits at a desk covered in cards. About 63 are known. He lines them up by atomic weight, how heavy each atom is compared with hydrogen. Cousins fall into columns. Soft, reactive metals together. That grid of columns is the start of the periodic table, a seating chart for the building blocks of matter."* 61 words, pauses capped at 0.20 s, `atempo=1.02`, 24.812 s VO + 0.42 s tail = 25.233 s total.
+- **Picture & bed (0 spend):** Part 04 clean takes `02b_cards_sixty_three_v06` (`0.60 s` shuffling-cards window on frame 0 and 3.0 s loop), `desk_try_prior_3` (`crop_x=200`), `desk_try_prior_2`, `04_sort_atomic_weight_v01`, `05_columns_families_v01`, `08_prediction_navigation_v25_try1`. Own-synthesis warm harmonic pad (`hos002_s07_synth_pad_v01.wav`, F-lydian/Dm9 voicing) at −20 dB under VO. Hook **63 CARDS** (CARDS in yellow). Person/date card **DMITRI MENDELEEV · St Petersburg, 1869** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover the Periodic Table?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.23–25.15 s.
+- **Title draft:** *Who Invented the Periodic Table?* (signed-out GB YouTube autocomplete exact hit `who invented the periodic table` / `who made the periodic table` / `how many elements did mendeleev have`, 17 Oct 2026; alts *Who Made the Periodic Table?*, *Who Created the Periodic Table?*, *How Many Elements Did Mendeleev Have?*).
+- **File:** `10_Shorts/hos_002_s07_mendeleev_cards_v01.mp4`, 25.233 s, sha256 `8e215ede0a5a7dbe52a07228f04d1464d03842d8c15712bc878c3bfe99889eea`; phone copy iCloud `HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s07_mendeleev_cards_v01.mp4`.
+
+```
+PASS  hos_002_s07_mendeleev_cards_v01.mp4  dur=25.23s  audio=-23.1dB  motion=14.49  dhash=cafcbc3cd88d35ff
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s07_mendeleev_cards_v01_open_sheet.jpg
+PASS  hos_002_s07_mendeleev_cards_v01.mp4  0:25.23  mean -23.1 dB  peak -3.7 dB  145 wpm
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s07_mendeleev_cards_v01/polish_gate_s07_mendeleev_cards_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s07_mendeleev_cards_v01/picture_qa_s07_mendeleev_cards_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s07_mendeleev_cards_v01/picture_qa_s07_mendeleev_cards_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-06` (gate only). Caption check: 19 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+
