@@ -1,0 +1,2 @@
+WARN   0:10 row s04_A 08_bullet_break_map_v07.mp4: low detail: edge density 0.0211 < film p5 0.0249
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s05_first_xray_v01/picture_qa_s05_first_xray_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s05_first_xray_v01/picture_qa_s05_first_xray_v01/picture_qa_review.jpg
