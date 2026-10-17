@@ -144,3 +144,25 @@ freezedetect (n=0.003, d=0.8): 0 events · caption-change check 19/19
 ```
 
 Frame-0 dHash: 29 bits from the 004 Short (1 Nov), 36/27/26 from 005 A/B/C; nearest in the library 27 (`29bpGAI0wb8`).
+
+
+## 17 Oct 2026 — Short `s06_atomic_weights_v01` (Test B, first search-titled lift from Part 03, OWB J0441)
+
+- **Selection:** HOS 003, 004, 005, and 006 each have 2 built Test B search-titled Shorts (`s04` and `s05`); HOS 007+ do not yet have full-part picture. Among locked HOS longs with existing VO and picture, 002 had 0 built Test B search-titled Shorts (only its Sep 10 punch Shorts S1–S5 and the Oct 2 four-elements Short before Test B), so `s06_atomic_weights_v01` starts 002's pair of Test B search-titled Shorts.
+- **VO (0 spend):** `02_Voiceover/part03_ruler_for_atoms_v01.wav` claim-first lift (`8.52–12.96 s`, `16.30–22.76 s`, `26.92–30.96 s`, `35.50–50.70 s` from Part 03, zero overlap with S1–S5, Newlands, or the Part 01 four-elements Short): *"Stanislao Cannizzaro wins with a method, not poetry. Derive atomic weights you can repeat. Put the same number on the same element everywhere. Cards stop floating and sit on a line of mass. Properties pulse in waves, reactive, calm, reactive again. If mass is a coordinate, families can become columns. A hole in a column is not failure. It is a prediction."* 62 words, pauses capped at 0.18 s, `atempo=1.06`, 25.282 s VO + 0.42 s tail = 25.733 s total.
+- **Picture & bed (0 spend):** Part 03 v09 KEEP plates `06_cards_snap_line_v02` (`0.60 s` swirling-cards-to-mass-line window on frame 0 and 3.0 s loop), `11_fix_weights_v02`, `02_hall_argument_v02`, `04_zoo_gets_ruler_v02`, `08_property_waves_v08`, `09_empty_chair_claim_v04`. Own-synthesis warm harmonic pad (`hos002_s06_synth_pad_v01.wav`, C-lydian/Gmaj7 voicing) at −20 dB under VO. Hook **ATOMIC WEIGHT** (WEIGHT in yellow). Person/date card **STANISLAO CANNIZZARO · Karlsruhe, 1860** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover the Periodic Table?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.70–25.62 s.
+- **Title draft:** *How Is the Periodic Table Arranged?* (signed-out GB YouTube autocomplete exact hit `how is the periodic table arranged` / `how is atomic mass measured`, 17 Oct 2026; alts *How Is Atomic Mass Measured?*, *How Did Chemists Measure Atomic Mass?*, *Who Arranged the Periodic Table of Elements?*).
+- **File:** `10_Shorts/hos_002_s06_atomic_weights_v01.mp4`, 25.733 s, sha256 `fb24bbdc5c12db87570bf408b6359e86d30c070518523b7a808f255840b7a55e`; phone copy iCloud `HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s06_atomic_weights_v01.mp4`.
+
+```
+PASS  hos_002_s06_atomic_weights_v01.mp4  dur=25.73s  audio=-24.2dB  motion=38.29  dhash=4d408e4b8f0f0f07
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s06_atomic_weights_v01_open_sheet.jpg
+PASS  hos_002_s06_atomic_weights_v01.mp4  0:25.73  mean -24.2 dB  peak -4.2 dB  145 wpm
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/polish_gate_s06_atomic_weights_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/picture_qa_s06_atomic_weights_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/picture_qa_s06_atomic_weights_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-03` (gate only). Caption check: 19 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
