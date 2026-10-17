@@ -589,3 +589,21 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-R
 ```
 
 **STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+## J0502 s06_moseley_atomic_number_v01 (Test B search-titled Short, Part 05 lift) — Gemini, 18 Oct 2026
+
+- **What:** Built search-titled Test B Short `s06_moseley_atomic_number_v01` from `004` Part 05 existing VO (`02_Voiceover/05_Master/hos_004_part05_vo_v01.mp3`, claim-first lift of indices 53–63, 69–85, 96–113, 141–158: *"Moseley splits the X-rays with a crystal and measures their wavelength. Element by element, the X-rays step up in perfectly even jumps, like the rungs of a ladder. Count the rungs and you get a whole number for every element: the positive charge in its nucleus. The broken rule fixes itself. Mendeleev's instinct was right all along. He was just using the wrong ruler."*), existing Part 05/04 KEEP plates (`07_crystal_split_v01`, `09_one_rung_each_v01`, `05_xrays_from_metal_v01`, `04_electrons_fire_v01`, `14_nucleus_electrons_v01`, `02_train_in_tube_v01`, `03_targets_swap_v01`, and `07_crystal_split_v01` loop), and Part 05 score bed (`hos004-part05-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *What Is Atomic Number?* (exact signed-out GB YouTube autocomplete hit; alternatives *How Did Henry Moseley Discover Atomic Number?* / *Why Is the Periodic Table Ordered by Atomic Number?*).
+- **On screen:** Frame-0 hook `COUNT THE **RUNGS**` (9.01% cap, centred), WHO card `HENRY MOSELEY · Manchester, 1913` (`2.2–5.8 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *What's Really Inside an Atom?* (`9.0–14.0 s`), captions throughout (`21/21` changes), `3.0 s` loop back to `07_crystal_split_v01`.
+- **File:** `10_Shorts/hos_004_s06_moseley_atomic_number_v01.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s06_moseley_atomic_number_v01.mp4`), **26.367 s**, 64 words, 150 wpm, sha256 `849264ff34b65f17c142bb341157be7f7dcbbbe1512927c44332a17f5dfbc462`.
+- **Record & QA:** `10_Shorts/SHORT_s06_moseley_atomic_number_v01.json`, `10_Shorts/_build_short_s06_moseley_atomic_number_v01.py`, `10_Shorts/qa_s06_moseley_atomic_number_v01/polish_gate_s06_moseley_atomic_number_v01.json`, `10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s06_moseley_atomic_number_v01.mp4  dur=26.37s  audio=-24.3dB  motion=16.26  dhash=44aca5e9c2222737   (--air-date 2026-12-15)
+PASS  hos_004_s06_moseley_atomic_number_v01.mp4  0:26.37  mean -24.3 dB  peak -4.5 dB  150 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/polish_gate_s06_moseley_atomic_number_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
