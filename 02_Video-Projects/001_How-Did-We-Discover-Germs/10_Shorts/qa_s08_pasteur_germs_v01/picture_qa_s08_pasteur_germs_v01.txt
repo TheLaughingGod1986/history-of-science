@@ -1,0 +1,2 @@
+WARN   0:07 row s03_Then 09_sceptics_watch_v02.mp4: low detail: edge density 0.0511 < film p5 0.0523
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s08_pasteur_germs_v01/picture_qa_s08_pasteur_germs_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s08_pasteur_germs_v01/picture_qa_s08_pasteur_germs_v01/picture_qa_review.jpg

@@ -123,3 +123,24 @@ Gate run with `--air-date 2026-12-08` (gate only). Caption check: 20 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+
+## 17 Oct 2026 — Short `s08_pasteur_germs_v01` (Test B, second search-titled lift from Part 04, OWB J0487)
+
+- **Selection:** HOS 001 had 1 built Test B search-titled Short (`s07_semmelweis_hands_v01`), whereas HOS 002, 003, 004, 005, and 006 each have 2 built Test B search-titled Shorts.
+- **VO (0 spend):** `02_Voiceover/part04_proof_in_a_flask_v01.wav` lift (`0.00–2.95 s`, `22.90–43.65 s`, `68.40–72.80 s` from Part 04, zero overlap with `s04_flask` which used `3.09–22.72 s` on `"He won with a flask shaped like a question mark... and life blooms into cloudiness"`, or `s01_shadow`, `s02_pond`, `s03_vector`, `s05_soap`, `s06_carbolic_spray`, `s07_semmelweis_hands`): *"Louis Pasteur did not win with poetry. Watch it: clear, clear, still clear. Then one breach, and the broth becomes a storm you can see without a lens. If life simply appears from nothing, the old story holds. If life arrives as passengers from the outside, then disease can be a passenger too. You do not need faith. You need a result that returns."* 64 words, pauses capped at 0.20 s, `atempo=1.02`, 23.754 s VO + 0.42 s tail = 24.20 s total.
+- **Picture & bed (0 spend):** Part 04 clean takes `07_bloom_cloud_v13` (`0.60 s` swan-neck flask on table on frame 0 and 3.0 s loop, `crop_x=656`), `05_tip_the_trap_v20` (`crop_x=580`), `09_sceptics_watch_v02` (`crop_x=656`), `10_an_address_v21` (`crop_x=656`), `03_dust_in_the_curve_v23` (`crop_x=520`), `08_passengers_v23` (`crop_x=520`), `11_result_returns_v03` (`crop_x=656`). Own-synthesis warm harmonic pad (`hos001_s08_synth_pad_v01.wav`, Eb-lydian/Cm9 voicing) at −21.7 dB under VO. Hook **STILL CLEAR** (CLEAR in yellow). Person/date card **LOUIS PASTEUR · Swan-neck flask, 1860s** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover Germs?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 21.17–24.12 s.
+- **Title draft:** *How Did Louis Pasteur Prove Germ Theory?* (signed-out GB YouTube autocomplete exact hits `louis pasteur germ theory` / `louis pasteur experiment` / `louis pasteur swan neck flask experiment` / `spontaneous generation louis pasteur`, 17 Oct 2026; alts *How Pasteur's Swan-Neck Flask Proved Germs*, *How Louis Pasteur Disproved Spontaneous Generation*, *The Flask That Proved Germs Come From Outside*).
+- **File:** `10_Shorts/hos_001_s08_pasteur_germs_v01.mp4`, 24.20 s, sha256 `221d79a7395ff46be5ccbb25c2d7095f45897dedb7a9784666ff7d35e996d819`; phone copy iCloud `HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s08_pasteur_germs_v01.mp4`.
+
+```
+PASS  hos_001_s08_pasteur_germs_v01.mp4  dur=24.2s  audio=-22.8dB  motion=13.74  dhash=e5ec6c26291616e7
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s08_pasteur_germs_v01_open_sheet.jpg
+PASS  hos_001_s08_pasteur_germs_v01.mp4  0:24.20  mean -22.8 dB  peak -4.1 dB  159 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s08_pasteur_germs_v01/polish_gate_s08_pasteur_germs_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s08_pasteur_germs_v01/picture_qa_s08_pasteur_germs_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s08_pasteur_germs_v01/picture_qa_s08_pasteur_germs_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-10` (gate only). Caption check: 19 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
