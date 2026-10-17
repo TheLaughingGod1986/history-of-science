@@ -1,0 +1,581 @@
+{
+  "film": "008_Lightning-Franklin",
+  "written": "2026-10-16",
+  "task": "J0397 plate boards v04 (Teach/Polish edit-overlay sync onto Chief-PASSed v03). No mint. No spend.",
+  "shot_list": "07_Edit-Project/SHOT_LIST_v01.md",
+  "readings": {
+    "flow_credits_left": 52,
+    "flow_note": "AI Ultra refill not landed at 15:47Z 12 Oct",
+    "vertex_free_trial_gbp": 4.93,
+    "vertex_margin_gbp": 0.1,
+    "vertex_usable_gbp": 4.83,
+    "vertex_note": "HOS 006 (J0107/J0160) goes first on the Vertex trial; trial ends 11 Nov"
+  },
+  "rates": {
+    "flow_credits_per_take": {
+      "Quality": 100,
+      "Fast": 10
+    },
+    "vertex_usd_per_s": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "usd_per_still": 0.039,
+    "gbp_per_usd_planning": 0.8,
+    "takes_per_keep_005": {
+      "Quality": 2.59,
+      "Fast": 1.96
+    },
+    "stills_per_plate_005": 2.28
+  },
+  "vo_film_total_s": 564.79,
+  "totals": {
+    "rows": 112,
+    "mints": 101,
+    "added": 12,
+    "Quality": 15,
+    "Fast": 86,
+    "code_graphic": 11,
+    "reuse": 0,
+    "flow_credits_try1": 2360,
+    "flow_credits_expected": 5605,
+    "vertex_try1_gbp": 59.2,
+    "vertex_expected_gbp": 133.38,
+    "teach_overlays": 17
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "rows": 22,
+      "mints": 22,
+      "added": 4,
+      "Quality": 3,
+      "Fast": 19,
+      "code_graphic": 0,
+      "reuse": 0,
+      "flow_credits_try1": 490,
+      "flow_credits_expected": 1157,
+      "vertex_try1_gbp": 12.64,
+      "vertex_expected_gbp": 28.36
+    },
+    {
+      "part": 2,
+      "rows": 19,
+      "mints": 17,
+      "added": 1,
+      "Quality": 2,
+      "Fast": 15,
+      "code_graphic": 2,
+      "reuse": 0,
+      "flow_credits_try1": 350,
+      "flow_credits_expected": 818,
+      "vertex_try1_gbp": 8.96,
+      "vertex_expected_gbp": 19.8
+    },
+    {
+      "part": 3,
+      "rows": 28,
+      "mints": 25,
+      "added": 3,
+      "Quality": 2,
+      "Fast": 23,
+      "code_graphic": 3,
+      "reuse": 0,
+      "flow_credits_try1": 430,
+      "flow_credits_expected": 978,
+      "vertex_try1_gbp": 13.76,
+      "vertex_expected_gbp": 30.17
+    },
+    {
+      "part": 4,
+      "rows": 18,
+      "mints": 16,
+      "added": 1,
+      "Quality": 4,
+      "Fast": 12,
+      "code_graphic": 2,
+      "reuse": 0,
+      "flow_credits_try1": 520,
+      "flow_credits_expected": 1276,
+      "vertex_try1_gbp": 10.24,
+      "vertex_expected_gbp": 23.85
+    },
+    {
+      "part": 5,
+      "rows": 25,
+      "mints": 21,
+      "added": 3,
+      "Quality": 4,
+      "Fast": 17,
+      "code_graphic": 4,
+      "reuse": 0,
+      "flow_credits_try1": 570,
+      "flow_credits_expected": 1376,
+      "vertex_try1_gbp": 13.6,
+      "vertex_expected_gbp": 31.2
+    }
+  ],
+  "all_on_flow_credits_expected": 5605,
+  "all_on_vertex_gbp_expected": 133.38,
+  "fits_now": {
+    "flow": null,
+    "vertex": null
+  },
+  "price_pass_questions": [
+    "Chief review of v03 boards: 15 Quality heroes (with P5:07_giant_spark swapped in for P3:25_fibres_rise), 86 non-emissive Fast plates, 11 \u00a30 per-row code graphics, 0 unverified reuses.",
+    "Minting waits for 006 and 007 completion per Chief 14 Oct ruling (Flow-only expected: 5,605 credits; try-1: 2,360 credits)."
+  ],
+  "status": "BOARD_V04_PARKED_FOR_CHIEF",
+  "mint": false,
+  "readings_as_of": "2026-10-12; historical planning inputs, not live spend authority",
+  "hero_candidates": {
+    "P1:01_kite_open": "Long title opening",
+    "P1:13_ring_the_bells": "Short B cover",
+    "P1:17_globe_spark": "Bench electricity proof and later callback",
+    "P2:08_jar_spark": "Leyden jar discharge proof",
+    "P2:13_explorer_jar": "Explorer hero beat",
+    "P3:06_marly_spark": "First physical lightning proof",
+    "P3:19_kite_climb": "Short A cover",
+    "P4:02_knuckle_spark": "Kite experiment proof",
+    "P4:04_fill_the_jar": "Stored lightning proof",
+    "P4:05_jar_spark_field": "Stored-charge discharge proof",
+    "P4:09_charge_string": "Core charge mechanism",
+    "P5:07_giant_spark": "Giant spark / hotter than the Sun scale hero (swapped for P3:25_fibres_rise)",
+    "P5:14_safe_towers": "Lightning rod protection proof",
+    "P5:16_explorer_rooftop": "Explorer hero beat",
+    "P5:19_skyline_strike": "Short C cover / modern title payoff"
+  },
+  "changes": {
+    "v02_to_v03_emissive_fast_rewritten": 40,
+    "v02_to_v03_hero_swap": {
+      "promoted_to_quality": "P5:07_giant_spark",
+      "dropped_to_fast": "P3:25_fibres_rise"
+    },
+    "v02_to_v03_cards_to_code_graphics": 11,
+    "v02_to_v03_measured_reuses_to_fast_mints": 15
+  },
+  "estimate_scope": "v03 Flow/Vertex estimate with all Fast prompts non-emissive, 11 flat-card/diagram rows priced at \u00a30 / 0 cr as own code graphics, and all 15 v02 reuse rows measured against 8 s source clips and priced as Fast mints. No spend authorization.",
+  "code_graphics": {
+    "P2:14_likeness_pairs": {
+      "file": "code_graphic_008_p2_14_likeness_pairs.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS cream-on-brown period-paper inked diagram, white/sepia Didot italic",
+      "layout_mode": "full_frame_period_paper",
+      "background_plate": null,
+      "label": "SAME COLOUR \u00b7 CROOKED LINES",
+      "elements": [
+        "Left panel inked on warm period paper: brass Leyden jar ring and crooked blue-ink spark trace",
+        "Right panel inked on warm period paper: storm cloud and matching crooked lightning trace"
+      ],
+      "animation": "Divider line inks in over 0.4 s; left crooked spark path draws itself at 0.6 s; right crooked bolt path draws in matching geometry at 2.2 s; Didot italic label fades in at 0.5 s and out before cut.",
+      "tick_ink_s": [
+        0.6,
+        2.2
+      ]
+    },
+    "P2:15_likeness_fire": {
+      "file": "code_graphic_008_p2_15_likeness_fire.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS inked explainer diagram composited over moving Set D workshop plate (avoids back-to-back full-frame cards)",
+      "layout_mode": "moving_plate_overlay",
+      "background_plate": "P2:12_notebook_list (moving tail window, softly graded)",
+      "label": "CRACK \u00b7 FIRE \u00b7 SHOCK",
+      "elements": [
+        "Inked notebook comparison callout over moving bench plate: bench spark igniting spirit wick vs sky bolt igniting roof timber"
+      ],
+      "animation": "Cream-on-brown inked comparison inset draws over the moving workshop plate at 0.35 s; left and right ignition icons ink in at 0.7 s and 2.3 s; fades out at 4.8 s.",
+      "tick_ink_s": [
+        0.7,
+        2.3
+      ]
+    },
+    "P3:03_rod_cloud": {
+      "file": "code_graphic_008_p3_03_rod_cloud.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS cream-on-brown period-paper inked mechanism diagram, Didot italic",
+      "layout_mode": "full_frame_period_paper",
+      "background_plate": null,
+      "label": "DRAWING CHARGE FROM CLOUD",
+      "elements": [
+        "Inked stone tower elevation with sentry-box and pointed iron rod rising toward passing storm cloud",
+        "Animated dotted charge lines curving down from cloud base into the sharp rod tip"
+      ],
+      "animation": "Tower and pointed rod ink in over 0.0\u20131.2 s; storm cloud contour drifts across top; dotted charge stream lines animate continuously from cloud into rod tip from 1.5 s to 6.5 s.",
+      "tick_ink_s": [
+        0.5,
+        1.5
+      ]
+    },
+    "P3:04_letter_crosses": {
+      "file": "code_graphic_008_p3_04_letter_crosses.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS inked Atlantic route line composited over moving Set E print-shop/sea plate (avoids back-to-back full-frame cards)",
+      "layout_mode": "moving_plate_overlay",
+      "background_plate": "P3:07_slow_news (moving Atlantic swell plate, softly graded)",
+      "label": "PHILADELPHIA TO PARIS",
+      "elements": [
+        "Inked 1752 North Atlantic coastline contour and dotted ship track from Philadelphia to Paris over moving ocean swells"
+      ],
+      "animation": "Coastline silhouette and Philadelphia origin marker ink in at 0.3 s; dotted vessel track draws eastward across the moving Atlantic swells to Paris over 0.6\u20133.4 s.",
+      "tick_ink_s": [
+        0.3,
+        3.1
+      ]
+    },
+    "P3:15_wet_dry": {
+      "file": "code_graphic_008_p3_15_wet_dry.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS cream-on-brown period-paper inked mechanism diagram, Didot italic",
+      "layout_mode": "full_frame_period_paper",
+      "background_plate": null,
+      "label": "WET TWINE \u00b7 DRY SILK",
+      "elements": [
+        "Inked vertical wet hemp twine carrying animated charge dashes down to the iron key",
+        "Dry silk ribbon tied below the key where charge dashes halt at the insulator knot"
+      ],
+      "animation": "Twine, iron key and silk ribbon ink in by 0.8 s; animated charge dashes flow down the wet twine into the key (1.0\u20133.0 s) and stop cleanly at the dry silk boundary (3.0\u20135.3 s).",
+      "tick_ink_s": [
+        0.5,
+        2.8
+      ]
+    },
+    "P4:06_same_thing": {
+      "file": "code_graphic_008_p4_06_same_thing.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS inked brass-and-cream split comparison frame over moving KEEP plates, Didot italic",
+      "layout_mode": "moving_plate_overlay",
+      "background_plate": "Left: P2:08_jar_spark KEEP \u00b7 Right: P4:02_knuckle_spark KEEP",
+      "label": "ELECTRICITY",
+      "elements": [
+        "Left moving pane: Leyden jar spark in back room (P2:08_jar_spark)",
+        "Right moving pane: iron key spark in rainy shed (P4:02_knuckle_spark)",
+        "Inked period divider line and Didot italic header ELECTRICITY"
+      ],
+      "animation": "Inked vertical rule draws down the centre at 0.3 s framing both moving KEEP plates side by side; Didot italic label ELECTRICITY inks in at 1.2 s and fades out at 5.0 s while both plates stay in continuous motion.",
+      "tick_ink_s": [
+        0.3,
+        1.2
+      ]
+    },
+    "P4:08_teach_charge": {
+      "file": "code_graphic_008_p4_08_teach_charge.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS cream-on-brown period-paper inked mechanism diagram, Didot italic",
+      "layout_mode": "full_frame_period_paper",
+      "background_plate": null,
+      "label": "NO BOLT, JUST CHARGE",
+      "elements": [
+        "Inked storm cloud high at top of period sheet, silk kite flying well below in rain",
+        "Gentle dotted charge lines draining quietly down the wet string to the shed key without any bolt"
+      ],
+      "animation": "Cloud, kite and shed silhouette ink in over 0.0\u20131.2 s; soft dotted charge lines flow steadily down the string from 1.2 s to 7.1 s; label NO BOLT, JUST CHARGE inks in at 0.6 s and fades out at 4.4 s.",
+      "tick_ink_s": [
+        0.6,
+        1.8
+      ]
+    },
+    "P5:08_looking_path": {
+      "file": "code_graphic_008_p5_08_looking_path.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS inked stepped-leader diagram composited over moving storm-rooftop plate (alternates with P5:09 full-frame card)",
+      "layout_mode": "moving_plate_overlay",
+      "background_plate": "P1:16_question_sky (moving storm-clouds-over-roofs plate, graded)",
+      "label": "EASIEST PATH DOWN",
+      "elements": [
+        "Branching ink leader lines feeling downward from cloud base toward town roof peaks over moving storm plate"
+      ],
+      "animation": "Forked ink leader paths draw downward step by step from 0.3 s to 2.8 s over the moving rooftop plate, testing paths toward the highest gable.",
+      "tick_ink_s": [
+        0.3,
+        1.4
+      ]
+    },
+    "P5:09_wood_vs_metal": {
+      "file": "code_graphic_008_p5_09_wood_vs_metal.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS cream-on-brown period-paper inked cross-section diagram, Didot italic",
+      "layout_mode": "full_frame_period_paper",
+      "background_plate": null,
+      "label": "WOOD AND STONE RESIST",
+      "elements": [
+        "Inked cross-section of timber roof rafters and stone steeple masonry with jagged fracture lines where current is blocked"
+      ],
+      "animation": "Timber roof and stone steeple outlines ink in over 0.0\u20131.2 s; blocked current path marks resistance points at 1.8 s and radial crack lines draw outward across the masonry through 6.8 s.",
+      "tick_ink_s": [
+        0.5,
+        1.8
+      ]
+    },
+    "P5:10_metal_easy": {
+      "file": "code_graphic_008_p5_10_metal_easy.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS inked conductor diagram composited over moving Set H brick-wall rod plate (alternates between P5:09 and P5:11 full-frame cards)",
+      "layout_mode": "moving_plate_overlay",
+      "background_plate": "P5:06_rod_fitting (moving exterior wall rod plate, graded)",
+      "label": "METAL CONDUCTS",
+      "elements": [
+        "Smooth gold-and-white inked current line running unimpeded down the iron rod on the moving brick wall plate"
+      ],
+      "animation": "Inked callout bracket marks the iron rod at 0.25 s; a smooth continuous current trace glides straight down the rod from top to bottom over 0.4\u20132.8 s.",
+      "tick_ink_s": [
+        0.25
+      ]
+    },
+    "P5:11_safe_path": {
+      "file": "code_graphic_008_p5_11_safe_path.mp4",
+      "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
+      "style": "HOS cream-on-brown period-paper architectural cutaway diagram, Didot italic",
+      "layout_mode": "full_frame_period_paper",
+      "background_plate": null,
+      "label": "SAFE PATH DOWN",
+      "elements": [
+        "Cutaway elevation of church steeple fitted with pointed iron rod, exterior down-conductor wire, and deep earth stake",
+        "Animated current line travelling from rod tip down the outside wall into the ground while interior timber spire stays untouched"
+      ],
+      "animation": "Steeple cutaway and exterior iron rod ink in over 0.0\u20131.3 s; current line traces from rod tip down the outer wall into the earth stake (1.5\u20136.5 s); label SAFE PATH DOWN inks in at 0.6 s and fades out at 4.4 s.",
+      "tick_ink_s": [
+        0.6,
+        1.5,
+        3.5
+      ]
+    }
+  },
+  "reuse_measurements": {
+    "P1:01_kite_open_c1": {
+      "source_row": "P1:01_kite_open",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 5.92,
+      "unused_raw_s": 2.08,
+      "unused_usable_s": 1.98,
+      "required_use_s": 5.92,
+      "shortfall_raw_s": 3.84,
+      "shortfall_usable_s": 3.94,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P1:01_kite_open uses 5.92 s of an 8.00 s clip (7.90 s usable), leaving 2.08 s raw (1.98 s usable) < 5.92 s needed (short by 3.84 s raw / 3.94 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P1:03_table_three_c1": {
+      "source_row": "P1:03_table_three",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 4.92,
+      "unused_raw_s": 3.08,
+      "unused_usable_s": 2.98,
+      "required_use_s": 4.92,
+      "shortfall_raw_s": 1.84,
+      "shortfall_usable_s": 1.94,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P1:03_table_three uses 4.92 s of an 8.00 s clip (7.90 s usable), leaving 3.08 s raw (2.98 s usable) < 4.92 s needed (short by 1.84 s raw / 1.94 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P1:13_ring_the_bells_c1": {
+      "source_row": "P1:13_ring_the_bells",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 5.05,
+      "unused_raw_s": 2.95,
+      "unused_usable_s": 2.85,
+      "required_use_s": 5.05,
+      "shortfall_raw_s": 2.1,
+      "shortfall_usable_s": 2.2,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P1:13_ring_the_bells uses 5.05 s of an 8.00 s clip (7.90 s usable), leaving 2.95 s raw (2.85 s usable) < 5.05 s needed (short by 2.10 s raw / 2.20 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P1:15_bell_count_c1": {
+      "source_row": "P1:15_bell_count",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 4.18,
+      "unused_raw_s": 3.82,
+      "unused_usable_s": 3.72,
+      "required_use_s": 4.18,
+      "shortfall_raw_s": 0.36,
+      "shortfall_usable_s": 0.46,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P1:15_bell_count uses 4.18 s of an 8.00 s clip (7.90 s usable), leaving 3.82 s raw (3.72 s usable) < 4.18 s needed (short by 0.36 s raw / 0.46 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P2:17_page_bottom_c1": {
+      "source_row": "P2:17_page_bottom",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 4.45,
+      "unused_raw_s": 3.55,
+      "unused_usable_s": 3.45,
+      "required_use_s": 4.45,
+      "shortfall_raw_s": 0.9,
+      "shortfall_usable_s": 1.0,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P2:17_page_bottom uses 4.45 s of an 8.00 s clip (7.90 s usable), leaving 3.55 s raw (3.45 s usable) < 4.45 s needed (short by 0.90 s raw / 1.00 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P3:05_marly_garden_c1": {
+      "source_row": "P3:05_marly_garden",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 5.12,
+      "unused_raw_s": 2.88,
+      "unused_usable_s": 2.78,
+      "required_use_s": 5.12,
+      "shortfall_raw_s": 2.24,
+      "shortfall_usable_s": 2.34,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P3:05_marly_garden uses 5.12 s of an 8.00 s clip (7.90 s usable), leaving 2.88 s raw (2.78 s usable) < 5.12 s needed (short by 2.24 s raw / 2.34 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P3:07_slow_news": {
+      "source_row": "P3:04_letter_crosses",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 3.76,
+      "unused_raw_s": 4.24,
+      "unused_usable_s": 4.14,
+      "required_use_s": 4.5,
+      "shortfall_raw_s": 0.26,
+      "shortfall_usable_s": 0.36,
+      "source_became_code_graphic": true,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P3:04_letter_crosses uses 3.76 s of an 8.00 s clip (7.90 s usable), leaving 4.24 s raw (4.14 s usable) < 4.50 s needed (short by 0.26 s raw / 0.36 s usable); P3:04_letter_crosses is also a code graphic in v03. Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P3:13_key_ribbon_c1": {
+      "source_row": "P3:13_key_ribbon",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 4.27,
+      "unused_raw_s": 3.73,
+      "unused_usable_s": 3.63,
+      "required_use_s": 4.27,
+      "shortfall_raw_s": 0.54,
+      "shortfall_usable_s": 0.64,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P3:13_key_ribbon uses 4.27 s of an 8.00 s clip (7.90 s usable), leaving 3.73 s raw (3.63 s usable) < 4.27 s needed (short by 0.54 s raw / 0.64 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P3:21_doorway_pov_c1": {
+      "source_row": "P3:21_doorway_pov",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 4.04,
+      "unused_raw_s": 3.96,
+      "unused_usable_s": 3.86,
+      "required_use_s": 4.04,
+      "shortfall_raw_s": 0.08,
+      "shortfall_usable_s": 0.18,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P3:21_doorway_pov uses 4.04 s of an 8.00 s clip (7.90 s usable), leaving 3.96 s raw (3.86 s usable) < 4.04 s needed (short by 0.08 s raw / 0.18 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P4:03_room_memory": {
+      "source_row": "P1:17_globe_spark",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 4.45,
+      "unused_raw_s": 3.55,
+      "unused_usable_s": 3.45,
+      "required_use_s": 5.26,
+      "shortfall_raw_s": 1.71,
+      "shortfall_usable_s": 1.81,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P1:17_globe_spark uses 4.45 s of an 8.00 s clip (7.90 s usable), leaving 3.55 s raw (3.45 s usable) < 5.26 s needed (short by 1.71 s raw / 1.81 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P4:09_charge_string_c1": {
+      "source_row": "P4:09_charge_string",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 5.29,
+      "unused_raw_s": 2.71,
+      "unused_usable_s": 2.61,
+      "required_use_s": 5.29,
+      "shortfall_raw_s": 2.58,
+      "shortfall_usable_s": 2.68,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P4:09_charge_string uses 5.29 s of an 8.00 s clip (7.90 s usable), leaving 2.71 s raw (2.61 s usable) < 5.29 s needed (short by 2.58 s raw / 2.68 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P5:06_rod_fitting_c1": {
+      "source_row": "P5:06_rod_fitting",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 4.39,
+      "unused_raw_s": 3.61,
+      "unused_usable_s": 3.51,
+      "required_use_s": 4.39,
+      "shortfall_raw_s": 0.78,
+      "shortfall_usable_s": 0.88,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P5:06_rod_fitting uses 4.39 s of an 8.00 s clip (7.90 s usable), leaving 3.61 s raw (3.51 s usable) < 4.39 s needed (short by 0.78 s raw / 0.88 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P5:15_why_card_c1": {
+      "source_row": "P5:15_why_card",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 5.96,
+      "unused_raw_s": 2.04,
+      "unused_usable_s": 1.94,
+      "required_use_s": 5.96,
+      "shortfall_raw_s": 3.92,
+      "shortfall_usable_s": 4.02,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P5:15_why_card uses 5.96 s of an 8.00 s clip (7.90 s usable), leaving 2.04 s raw (1.94 s usable) < 5.96 s needed (short by 3.92 s raw / 4.02 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P5:20_table_three_again": {
+      "source_row": "P1:03_table_three",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 4.92,
+      "unused_raw_s": 3.08,
+      "unused_usable_s": 2.98,
+      "required_use_s": 3.1,
+      "shortfall_raw_s": 0.02,
+      "shortfall_usable_s": 0.12,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P1:03_table_three uses 4.92 s of an 8.00 s clip (7.90 s usable), leaving 3.08 s raw (2.98 s usable) < 3.10 s needed (short by 0.02 s raw / 0.12 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    },
+    "P5:22_newton_handoff_c1": {
+      "source_row": "P5:22_newton_handoff",
+      "source_clip_raw_s": 8.0,
+      "source_clip_usable_s": 7.9,
+      "source_used_s": 5.46,
+      "unused_raw_s": 2.54,
+      "unused_usable_s": 2.44,
+      "required_use_s": 5.46,
+      "shortfall_raw_s": 2.92,
+      "shortfall_usable_s": 3.02,
+      "source_became_code_graphic": false,
+      "distinct_window_feasible": false,
+      "resolution": "priced_fast_mint",
+      "note": "Source P5:22_newton_handoff uses 5.46 s of an 8.00 s clip (7.90 s usable), leaving 2.54 s raw (2.44 s usable) < 5.46 s needed (short by 2.92 s raw / 3.02 s usable). Converted to priced Fast mint (no loop, freeze-pad or frame replay)."
+    }
+  },
+  "version": "v04",
+  "from": "part-0N_plates_v03.json via _build_plate_boards_v04.py",
+  "teach_on_screen_gate": {
+    "DATA_and_SCALE": 5,
+    "WHO": 4,
+    "WHEN_and_TIMELINE": 9,
+    "FACT": 4,
+    "total_overlay_rows": 17,
+    "back_to_back_full_frame_graphics": 0,
+    "note": "All 17 edit overlays ride locked VO lines and are sourced in 01_Script/FACT_NOTES_v01.md. Adjacent code graphics alternate full_frame_period_paper with moving_plate_overlay so two full-frame graphics never run back to back. Zero new mints, zero Flow credit change."
+  }
+}

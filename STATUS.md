@@ -14,7 +14,7 @@
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (27 d) | 40% | Picture (blocked) | **Cursor** · ⛔ blocked: J0344 builds the three £0 code graphics. No mint until after 006 and a live Flow read leaves at least 3,000. | not estimated | Sun 8 Nov (in 23 d) | ⛔ blocked |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (34 d) | 43% | Picture (blocked) | **chief** · ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend | 11/112 board rows rendered (11 graphics awaiting review) | Sun 15 Nov (in 30 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (41 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 8 d late | Sun 22 Nov (in 37 d) | ⛔ blocked |
-| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (48 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 8 d late | Sun 29 Nov (in 44 d) | 🟠 behind |
+| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (48 d) | 41% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 8 d late | Sun 29 Nov (in 44 d) | ⛔ blocked |
 
 ## Who's on what
 
@@ -36,14 +36,15 @@
 
 **chief**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 008 Picture: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend
+- ⏸ Waiting: 008 Picture: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend; 010 Picture: Chief price pass on J0380 boards; mint after 006 (0 Flow), 007, 008, 009 and the ~12 Nov AI Ultra renewal
 
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (3 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
 - **007** · ⛔ **Picture** — blocked (0%, with Cursor since Fri 16 Oct, ⛔ blocked: J0344 builds the three £0 code graphics. No mint until after 006 and a live Flow read leaves at least 3,000., due Sun 1 Nov (in 16 d)): BOARD_V02 on main (16 Oct, J0343): 96 rows after dropping P3:01c_nelmes_plate (2.0 s back on 01_sarah_nelmes; use 5.14 s). 73 Flow mints = 24 Quality + 49 Fast, 3 code graphics, 2 public-domain archive plates, 18 reuses. Flow expected 7,196 unchanged against the 23,740 reading (15 Oct 21:42Z). After 007 + 008 (5,605) + 009 tranche 1 (7,354) the same reading shows 3,585 left, above the 3,000 floor. Vertex fallback £126.24 expected does not fit in £70.02 usable. generation_authorized false. Ken Burns lock stands. No mint.
 - **008** · ⛔ **Picture** — blocked (10%, 11/112 board rows rendered (11 graphics awaiting review), with chief since Fri 16 Oct, ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend, due Sun 8 Nov (in 23 d)): J0329: eleven no-spend v01 code graphics rendered from KEEP v03 boards, plus five alpha overlays and paper review previews. Awaiting Chief visual review; five moving-plate composites still pending. PICTURE_PLAN_v03 mint gate unchanged (5,605 cr expected). See CODE_GRAPHICS_v01_REVIEW.md.
-- **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 30 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
+- **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 30 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct) + J0380 v05 Teach/Polish overlay sync (cfebdab3): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse; 16 teach_overlay specs); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v05.md.
+- **010** · ⛔ **Picture** — blocked (18%, 13/73 board rows rendered (13 £0 code graphics PASS J0348), with chief since Fri 16 Oct, ⛔ blocked: Chief price pass on J0380 boards; mint after 006 (0 Flow), 007, 008, 009 and the ~12 Nov AI Ultra renewal, due Sun 22 Nov (in 37 d)): J0380 v03 plate boards prepared (73 rows: 47 Quality / 11 Fast / 13 £0 code graphics PASS J0348 / 1 edit-hold / 1 reuse; Flow expected 12,393, try-1 4,810) + Shorts boards v01 (007–010, 0 Flow) + 013 pre-VO boards v02 (55 rows, Flow expected 8,289) + 011 pre-VO boards v01 (34 rows, Flow expected 5,599). No mint. See PRICE_REVIEW_v03.md.
 
 ## Next steps (in order)
 
@@ -189,7 +190,7 @@ Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief P
 - ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 508 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101629662)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (8 d late))
-- ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 30 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
+- ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 30 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct) + J0380 v05 Teach/Polish overlay sync (cfebdab3): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse; 16 teach_overlay specs); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v05.md.
 - ⬜ **Edit + master** — to do (with Grok, due Thu 19 Nov (in 34 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 19 Nov (in 34 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 37 d))
@@ -197,11 +198,11 @@ Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief P
 
 ### 010 · What Killed the Dinosaurs Was Hidden in a Line of Clay
 
-`███████░░░░░░░░░░░░░` **35%**
+`████████░░░░░░░░░░░░` **41%**
 
-Airs **Thu 3 Dec** · ready for Ben's OK by **Sun 29 Nov** · 🟠 behind
+Airs **Thu 3 Dec** · ready for Ben's OK by **Sun 29 Nov** · ⛔ blocked
 
-Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293). Picture next after Claude's board review and credit.
+Long VO v01 locked (5 parts, 500 s); Chief KEEP all five, no pickups (desk 6101773293). Thirteen £0 code graphics PASS (J0348). Plate boards v03 + Shorts plate boards v01 (007–010) + 013 v02 & 011 v01 pre-VO boards prepared in J0380; parked for Chief price pass. No mint.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.1
@@ -210,7 +211,7 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 - ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 500 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101773293)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (8 d late))
-- ⬜ **Picture** — to do (with Cursor, due Sun 22 Nov (in 37 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
+- ⛔ **Picture** — blocked (18%, 13/73 board rows rendered (13 £0 code graphics PASS J0348), with chief since Fri 16 Oct, ⛔ blocked: Chief price pass on J0380 boards; mint after 006 (0 Flow), 007, 008, 009 and the ~12 Nov AI Ultra renewal, due Sun 22 Nov (in 37 d)): J0380 v03 plate boards prepared (73 rows: 47 Quality / 11 Fast / 13 £0 code graphics PASS J0348 / 1 edit-hold / 1 reuse; Flow expected 12,393, try-1 4,810) + Shorts boards v01 (007–010, 0 Flow) + 013 pre-VO boards v02 (55 rows, Flow expected 8,289) + 011 pre-VO boards v01 (34 rows, Flow expected 5,599). No mint. See PRICE_REVIEW_v03.md.
 - ⬜ **Edit + master** — to do (with Grok, due Thu 26 Nov (in 41 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 26 Nov (in 41 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 29 Nov (in 44 d))

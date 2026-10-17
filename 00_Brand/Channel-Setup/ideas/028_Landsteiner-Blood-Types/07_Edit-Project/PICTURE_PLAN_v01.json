@@ -1,0 +1,98 @@
+{
+  "film": "028_Landsteiner-Blood-Types",
+  "version": "v01",
+  "date": "2026-10-17",
+  "owner": "gemini (J0463)",
+  "status": "PRE_VO_BOARDS_V01_NO_MINT",
+  "generation_authorized": false,
+  "script": "00_Brand/Channel-Setup/ideas/028_Landsteiner-Blood-Types/landsteiner_script_master_v01.md",
+  "sources": "00_Brand/Channel-Setup/ideas/028_Landsteiner-Blood-Types/SOURCES_v01.md",
+  "credit_snapshot": {
+    "flow_Balance": 23740,
+    "flow_floor": 0,
+    "flow_read_at": "2026-10-15T21:42:22Z",
+    "vertex_promo_gbp": 71.02,
+    "vertex_usable_gbp": 70.02
+  },
+  "totals": {
+    "rows": 25,
+    "Quality": 12,
+    "Fast": 6,
+    "code_graphic": 6,
+    "reuse": 1,
+    "flow_credits_try1": 1260,
+    "flow_credits_expected": 3228,
+    "vertex_try1_gbp": 16.64,
+    "vertex_expected_gbp": 42.59,
+    "explorer": 2,
+    "teach_overlays": 13
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "title": "Part 01 \u2014 The Six Vials in Vienna That Saved a Hundred Million Lives",
+      "rows": 9,
+      "Quality": 4,
+      "Fast": 3,
+      "code_graphic": 2,
+      "reuse": 0,
+      "flow_credits_try1": 430,
+      "flow_credits_expected": 1096,
+      "vertex_try1_gbp": 5.28,
+      "vertex_expected_gbp": 13.27
+    },
+    {
+      "part": 2,
+      "title": "Part 02 \u2014 Sheep's Blood, the 150-Year Ban, and the Clumping Mystery",
+      "rows": 4,
+      "Quality": 2,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 210,
+      "flow_credits_expected": 538,
+      "vertex_try1_gbp": 3.04,
+      "vertex_expected_gbp": 7.79
+    },
+    {
+      "part": 3,
+      "title": "Part 03 \u2014 Six Scientists' Blood in a 6 \u00d7 6 Grid",
+      "rows": 4,
+      "Quality": 2,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 210,
+      "flow_credits_expected": 538,
+      "vertex_try1_gbp": 3.04,
+      "vertex_expected_gbp": 7.79
+    },
+    {
+      "part": 4,
+      "title": "Part 04 \u2014 The 6-Minute Clot Trap and the 0.2% Pinch of Salt \u2014 Midpoint Twist",
+      "rows": 4,
+      "Quality": 3,
+      "Fast": 0,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 300,
+      "flow_credits_expected": 777,
+      "vertex_try1_gbp": 3.52,
+      "vertex_expected_gbp": 9.34
+    },
+    {
+      "part": 5,
+      "title": "Part 05 \u2014 The Plus and Minus (Rh) and 118 Million Donations a Year",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 1,
+      "flow_credits_try1": 110,
+      "flow_credits_expected": 279,
+      "vertex_try1_gbp": 1.76,
+      "vertex_expected_gbp": 4.4
+    }
+  ],
+  "mint_order": "006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028. Nothing in 028 is generation_authorized."
+}
