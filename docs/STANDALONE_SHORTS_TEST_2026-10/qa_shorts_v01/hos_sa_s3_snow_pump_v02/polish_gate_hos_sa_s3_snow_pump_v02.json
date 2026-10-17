@@ -1,0 +1,243 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v02.mp4",
+  "edge_floor": 0.0447,
+  "verdict": "FAIL",
+  "failed": [
+    {
+      "row": "s01_05_handle_off_v03",
+      "cut": 0,
+      "t": 2.33,
+      "source": "05_handle_off_v03.jpg",
+      "why": [
+        "split panel: horizontal seam at 0.852, horizontal seam at 0.863, horizontal seam at 0.867, horizontal seam at 0.883, horizontal seam at 0.919, horizontal seam at 0.946"
+      ]
+    },
+    {
+      "row": "s05_05_handle_off_v03",
+      "cut": 4,
+      "t": 19.98,
+      "source": "end_card_loop_05_handle_off_v03.jpg",
+      "why": [
+        "split panel: horizontal seam at 0.82, horizontal seam at 0.837, horizontal seam at 0.85, horizontal seam at 0.865, horizontal seam at 0.867, horizontal seam at 0.878, horizontal seam at 0.9, horizontal seam at 0.928"
+      ]
+    }
+  ],
+  "warn": [
+    {
+      "row": "s02_02_soho_1854_v01",
+      "cut": 1,
+      "t": 7.85,
+      "source": "02_soho_1854_v01.jpg",
+      "why": [
+        "low detail: edge density 0.0366 < film p5 0.0447"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_05_handle_off_v03",
+      "source": "05_handle_off_v03.jpg",
+      "t": 2.33,
+      "std": 53.48,
+      "mean": 127.97,
+      "p95": 230.0,
+      "edge": 0.1358,
+      "hf": 19.28,
+      "lf": 41.64,
+      "std8": 44.83,
+      "edge8": 0.3426,
+      "seams": [
+        {
+          "kind": "horizontal seam",
+          "at": 0.852,
+          "step": 36.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.863,
+          "step": 46.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.867,
+          "step": 41.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.883,
+          "step": 33.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.919,
+          "step": 23.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.946,
+          "step": 21.0
+        }
+      ],
+      "video": true,
+      "fail": [
+        "split panel: horizontal seam at 0.852, horizontal seam at 0.863, horizontal seam at 0.867, horizontal seam at 0.883, horizontal seam at 0.919, horizontal seam at 0.946"
+      ],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_02_soho_1854_v01",
+      "source": "02_soho_1854_v01.jpg",
+      "t": 7.85,
+      "std": 59.72,
+      "mean": 102.68,
+      "p95": 205.0,
+      "edge": 0.0366,
+      "hf": 7.27,
+      "lf": 57.55,
+      "std8": 58.45,
+      "edge8": 0.1692,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0366 < film p5 0.0447"
+      ]
+    },
+    {
+      "cut": 2,
+      "row": "s03_03_snow_tracking_v01",
+      "source": "03_snow_tracking_v01.jpg",
+      "t": 12.88,
+      "std": 51.73,
+      "mean": 103.83,
+      "p95": 179.0,
+      "edge": 0.1052,
+      "hf": 11.35,
+      "lf": 46.55,
+      "std8": 48.38,
+      "edge8": 0.3669,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_04_map_bars_v01",
+      "source": "04_map_bars_v01.jpg",
+      "t": 16.27,
+      "std": 55.78,
+      "mean": 82.58,
+      "p95": 189.0,
+      "edge": 0.1136,
+      "hf": 11.66,
+      "lf": 52.28,
+      "std8": 53.08,
+      "edge8": 0.1981,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_05_handle_off_v03",
+      "source": "end_card_loop_05_handle_off_v03.jpg",
+      "t": 19.98,
+      "std": 47.47,
+      "mean": 131.63,
+      "p95": 226.0,
+      "edge": 0.0772,
+      "hf": 9.52,
+      "lf": 43.73,
+      "std8": 44.78,
+      "edge8": 0.2004,
+      "seams": [
+        {
+          "kind": "horizontal seam",
+          "at": 0.82,
+          "step": 37.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.837,
+          "step": 23.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.85,
+          "step": 38.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.865,
+          "step": 26.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.867,
+          "step": 22.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.878,
+          "step": 36.5
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.9,
+          "step": 27.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.928,
+          "step": 23.0
+        }
+      ],
+      "video": true,
+      "fail": [
+        "split panel: horizontal seam at 0.82, horizontal seam at 0.837, horizontal seam at 0.85, horizontal seam at 0.865, horizontal seam at 0.867, horizontal seam at 0.878, horizontal seam at 0.9, horizontal seam at 0.928"
+      ],
+      "warn": []
+    }
+  ]
+}
