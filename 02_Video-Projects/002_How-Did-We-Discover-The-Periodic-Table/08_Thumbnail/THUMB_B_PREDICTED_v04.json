@@ -1,0 +1,99 @@
+{
+  "film": "002",
+  "video": "AL_-qlWko_g",
+  "job": "J0442",
+  "replaces": "hos_002_thumb_B_predicted_v03.jpg (Sep 27 pre-lock 'HE PREDICTED THIS': no Explorer, flat Arial Black sans, upper-left blur patch, vague pronouns)",
+  "variant": "B v04 (gallium-prediction variant; pairs with A live and/or J0374 B v02 THE MISSING ELEMENT)",
+  "maker": "gemini",
+  "hook": "PREDICTED BEFORE FOUND",
+  "punch": "PREDICTED",
+  "jpg": "Selected/hos_002_thumb_B_predicted_v04.jpg",
+  "sha256": "0790678bbb391a0abf209a916d784e2b277289efa1ef7ea842ea0a258346c207",
+  "bytes": 286623,
+  "plates": [
+    "Selected/hos_002_thumb_A_gallium_live_v02.png (NAS 002 painted 16:9 key-art plate: giant liquid-gallium arch & droplet on right two-thirds + Explorer lower-left + original gold scroll flourishes)"
+  ],
+  "method": "existing_002_plate_only_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    560,
+    22,
+    1248,
+    704
+  ],
+  "explorer": {
+    "source": "hos_002_thumb_A_gallium_live_v02.png",
+    "box": [
+      42,
+      300,
+      256,
+      720
+    ],
+    "height_px": 420,
+    "height_frac": 0.583
+  },
+  "lettering": [
+    {
+      "word": "PREDICTED",
+      "kind": "gold",
+      "size": 80,
+      "box": [
+        70,
+        72,
+        525,
+        145
+      ]
+    },
+    {
+      "word": "BEFORE",
+      "kind": "cream",
+      "size": 78,
+      "box": [
+        142,
+        141,
+        455,
+        211
+      ]
+    },
+    {
+      "word": "FOUND",
+      "kind": "cream",
+      "size": 94,
+      "box": [
+        130,
+        207,
+        467,
+        292
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      113,
+      28,
+      485,
+      63
+    ],
+    "bottom_scroll_box": [
+      197,
+      311,
+      467,
+      359
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'PREDICTED BEFORE FOUND' (3 words, punch word 'PREDICTED' in gold) names Mendeleev's 1869 prediction of eka-aluminium before gallium was discovered in 1875 (THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 'He predicted a metal before it was found'), shares zero words with the video title ('How Did We Discover the Periodic Table?') or J0374's 'THE MISSING ELEMENT', and replaces v03's vague pronouns ('HE PREDICTED THIS').",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=70..525, y=72..292, framed by original painted gold scroll flourishes at y=28..359) sits completely left of the hero gallium arch (x=560..1248), above the Explorer's hair (y=300) and bottom flourish (y=311), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel strip: 'PREDICTED BEFORE FOUND', the giant silvery liquid-gallium arch and droplet (688x682 px), and the Explorer's face/glasses (58.3% height) all read at a glance at 168x94."
+  },
+  "previews": [
+    "Selected/hos_002_thumb_B_predicted_v04_preview.jpg",
+    "Selected/hos_002_thumb_B_predicted_v04_style_sheet.jpg",
+    "Selected/hos_002_thumb_TC_3way_predicted_v04_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v04 candidate for 002 (AL_-qlWko_g, built from existing 002 plate only, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}
