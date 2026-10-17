@@ -1,5 +1,5 @@
 {
-  "verdict": "FAIL",
+  "verdict": "PASS",
   "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v02.mp4",
   "rules": {
     "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
@@ -11,34 +11,7 @@
     "same_stretch": 10.0,
     "pixels": "scripts/polish_gate.py"
   },
-  "failed": [
-    {
-      "cut": 0,
-      "row": "s01_05_handle_off_v03",
-      "source": "05_handle_off_v03.jpg",
-      "title": "HOS standalone Short s3_snow_pump 3D cartoon plate 05_handle_off_v03.jpg",
-      "t": 2.33,
-      "at": "0:02",
-      "fail": [
-        "split panel: horizontal seam at 0.852, horizontal seam at 0.863, horizontal seam at 0.867, horizontal seam at 0.883, horizontal seam at 0.919, horizontal seam at 0.946"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
-    {
-      "cut": 4,
-      "row": "s05_05_handle_off_v03",
-      "source": "end_card_loop_05_handle_off_v03.jpg",
-      "title": "HOS standalone Short s3_snow_pump 3D cartoon plate 05_handle_off_v03.jpg",
-      "t": 19.98,
-      "at": "0:20",
-      "fail": [
-        "split panel: horizontal seam at 0.82, horizontal seam at 0.837, horizontal seam at 0.85, horizontal seam at 0.865, horizontal seam at 0.867, horizontal seam at 0.878, horizontal seam at 0.9, horizontal seam at 0.928"
-      ],
-      "warn": [],
-      "offset": 17.82
-    }
-  ],
+  "failed": [],
   "warn": [
     {
       "cut": 1,
@@ -49,7 +22,7 @@
       "at": "0:08",
       "fail": [],
       "warn": [
-        "low detail: edge density 0.0366 < film p5 0.0447"
+        "low detail: edge density 0.0366 < film p5 0.0374"
       ],
       "offset": 4.66
     }
@@ -62,9 +35,7 @@
       "title": "HOS standalone Short s3_snow_pump 3D cartoon plate 05_handle_off_v03.jpg",
       "t": 2.33,
       "at": "0:02",
-      "fail": [
-        "split panel: horizontal seam at 0.852, horizontal seam at 0.863, horizontal seam at 0.867, horizontal seam at 0.883, horizontal seam at 0.919, horizontal seam at 0.946"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 0.0
     },
@@ -77,7 +48,7 @@
       "at": "0:08",
       "fail": [],
       "warn": [
-        "low detail: edge density 0.0366 < film p5 0.0447"
+        "low detail: edge density 0.0366 < film p5 0.0374"
       ],
       "offset": 4.66
     },
@@ -110,15 +81,13 @@
       "title": "HOS standalone Short s3_snow_pump 3D cartoon plate 05_handle_off_v03.jpg",
       "t": 19.98,
       "at": "0:20",
-      "fail": [
-        "split panel: horizontal seam at 0.82, horizontal seam at 0.837, horizontal seam at 0.85, horizontal seam at 0.865, horizontal seam at 0.867, horizontal seam at 0.878, horizontal seam at 0.9, horizontal seam at 0.928"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 17.82
     }
   ],
   "polish": {
-    "edge_floor": 0.0447,
+    "edge_floor": 0.0374,
     "low_detail_floor": {
       "std": 13.44,
       "edge": 0.0259,

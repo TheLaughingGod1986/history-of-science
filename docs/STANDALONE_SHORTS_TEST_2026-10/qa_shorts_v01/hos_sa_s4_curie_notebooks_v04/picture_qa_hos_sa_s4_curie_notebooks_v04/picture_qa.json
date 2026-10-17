@@ -1,5 +1,5 @@
 {
-  "verdict": "FAIL",
+  "verdict": "PASS",
   "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v04.mp4",
   "rules": {
     "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
@@ -11,20 +11,8 @@
     "same_stretch": 10.0,
     "pixels": "scripts/polish_gate.py"
   },
-  "failed": [
-    {
-      "cut": 0,
-      "row": "s01_01_lead_box_v01",
-      "source": "01_lead_box_v01.jpg",
-      "title": "HOS standalone Short s4_curie_notebooks 3D cartoon plate 01_lead_box_v01.jpg",
-      "t": 1.65,
-      "at": "0:02",
-      "fail": [
-        "split panel: horizontal seam at 0.824, horizontal seam at 0.861, horizontal gutter at 0.256"
-      ],
-      "warn": [],
-      "offset": 0.0
-    },
+  "failed": [],
+  "warn": [
     {
       "cut": 4,
       "row": "s05_05_paris_archive_v02",
@@ -32,27 +20,13 @@
       "title": "HOS standalone Short s4_curie_notebooks 3D cartoon plate 05_paris_archive_v02.jpg",
       "t": 17.1,
       "at": "0:17",
-      "fail": [
-        "split panel: horizontal seam at 0.833"
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0144 < film p5 0.0162"
       ],
-      "warn": [],
       "offset": 14.16
-    },
-    {
-      "cut": 5,
-      "row": "s06_01_lead_box_v01",
-      "source": "end_card_loop_01_lead_box_v01.jpg",
-      "title": "HOS standalone Short s4_curie_notebooks 3D cartoon plate 01_lead_box_v01.jpg",
-      "t": 21.34,
-      "at": "0:21",
-      "fail": [
-        "split panel: horizontal seam at 0.185, horizontal seam at 0.187, horizontal seam at 0.809, horizontal seam at 0.844, horizontal seam at 0.846, horizontal gutter at 0.235"
-      ],
-      "warn": [],
-      "offset": 20.04
     }
   ],
-  "warn": [],
   "rows": [
     {
       "cut": 0,
@@ -61,9 +35,7 @@
       "title": "HOS standalone Short s4_curie_notebooks 3D cartoon plate 01_lead_box_v01.jpg",
       "t": 1.65,
       "at": "0:02",
-      "fail": [
-        "split panel: horizontal seam at 0.824, horizontal seam at 0.861, horizontal gutter at 0.256"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 0.0
     },
@@ -107,10 +79,10 @@
       "title": "HOS standalone Short s4_curie_notebooks 3D cartoon plate 05_paris_archive_v02.jpg",
       "t": 17.1,
       "at": "0:17",
-      "fail": [
-        "split panel: horizontal seam at 0.833"
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0144 < film p5 0.0162"
       ],
-      "warn": [],
       "offset": 14.16
     },
     {
@@ -120,15 +92,13 @@
       "title": "HOS standalone Short s4_curie_notebooks 3D cartoon plate 01_lead_box_v01.jpg",
       "t": 21.34,
       "at": "0:21",
-      "fail": [
-        "split panel: horizontal seam at 0.185, horizontal seam at 0.187, horizontal seam at 0.809, horizontal seam at 0.844, horizontal seam at 0.846, horizontal gutter at 0.235"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 20.04
     }
   ],
   "polish": {
-    "edge_floor": 0.0166,
+    "edge_floor": 0.0162,
     "low_detail_floor": {
       "std": 13.44,
       "edge": 0.0259,

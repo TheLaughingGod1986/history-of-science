@@ -1,5 +1,5 @@
 {
-  "verdict": "FAIL",
+  "verdict": "PASS",
   "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s1_herschel_infrared_v01.mp4",
   "rules": {
     "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
@@ -11,21 +11,7 @@
     "same_stretch": 10.0,
     "pixels": "scripts/polish_gate.py"
   },
-  "failed": [
-    {
-      "cut": 0,
-      "row": "s01_01_beyond_red_v01",
-      "source": "01_beyond_red_v01.jpg",
-      "title": "HOS standalone Short s1_herschel_infrared 3D cartoon plate 01_beyond_red_v01.jpg",
-      "t": 2.48,
-      "at": "0:02",
-      "fail": [
-        "split panel: horizontal gutter at 0.133"
-      ],
-      "warn": [],
-      "offset": 0.0
-    }
-  ],
+  "failed": [],
   "warn": [
     {
       "cut": 4,
@@ -49,9 +35,7 @@
       "title": "HOS standalone Short s1_herschel_infrared 3D cartoon plate 01_beyond_red_v01.jpg",
       "t": 2.48,
       "at": "0:02",
-      "fail": [
-        "split panel: horizontal gutter at 0.133"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 0.0
     },

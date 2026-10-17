@@ -36,38 +36,20 @@
     }
   },
   "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v04.mp4",
-  "edge_floor": 0.0166,
-  "verdict": "FAIL",
-  "failed": [
-    {
-      "row": "s01_01_lead_box_v01",
-      "cut": 0,
-      "t": 1.65,
-      "source": "01_lead_box_v01.jpg",
-      "why": [
-        "split panel: horizontal seam at 0.824, horizontal seam at 0.861, horizontal gutter at 0.256"
-      ]
-    },
+  "edge_floor": 0.0162,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
     {
       "row": "s05_05_paris_archive_v02",
       "cut": 4,
       "t": 17.1,
       "source": "05_paris_archive_v02.jpg",
       "why": [
-        "split panel: horizontal seam at 0.833"
-      ]
-    },
-    {
-      "row": "s06_01_lead_box_v01",
-      "cut": 5,
-      "t": 21.34,
-      "source": "end_card_loop_01_lead_box_v01.jpg",
-      "why": [
-        "split panel: horizontal seam at 0.185, horizontal seam at 0.187, horizontal seam at 0.809, horizontal seam at 0.844, horizontal seam at 0.846, horizontal gutter at 0.235"
+        "low detail: edge density 0.0144 < film p5 0.0162"
       ]
     }
   ],
-  "warn": [],
   "reviewed_ok": [],
   "rows": [
     {
@@ -75,34 +57,17 @@
       "row": "s01_01_lead_box_v01",
       "source": "01_lead_box_v01.jpg",
       "t": 1.65,
-      "std": 42.61,
-      "mean": 44.07,
-      "p95": 119.0,
-      "edge": 0.0436,
-      "hf": 10.9,
-      "lf": 34.83,
-      "std8": 37.67,
-      "edge8": 0.2506,
-      "seams": [
-        {
-          "kind": "horizontal seam",
-          "at": 0.824,
-          "step": 15.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.861,
-          "step": 14.0
-        },
-        {
-          "kind": "horizontal gutter",
-          "at": 0.256
-        }
-      ],
+      "std": 42.08,
+      "mean": 44.83,
+      "p95": 122.0,
+      "edge": 0.0406,
+      "hf": 10.76,
+      "lf": 34.46,
+      "std8": 37.22,
+      "edge8": 0.2396,
+      "seams": [],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.824, horizontal seam at 0.861, horizontal gutter at 0.256"
-      ],
+      "fail": [],
       "warn": []
     },
     {
@@ -149,11 +114,11 @@
       "std": 51.28,
       "mean": 83.22,
       "p95": 167.0,
-      "edge": 0.0379,
+      "edge": 0.0381,
       "hf": 7.04,
       "lf": 47.96,
       "std8": 49.27,
-      "edge8": 0.2434,
+      "edge8": 0.2433,
       "seams": [],
       "video": true,
       "fail": [],
@@ -164,27 +129,19 @@
       "row": "s05_05_paris_archive_v02",
       "source": "05_paris_archive_v02.jpg",
       "t": 17.1,
-      "std": 34.29,
-      "mean": 47.19,
-      "p95": 111.0,
-      "edge": 0.015,
-      "hf": 6.44,
-      "lf": 30.97,
-      "std8": 32.06,
-      "edge8": 0.145,
-      "seams": [
-        {
-          "kind": "horizontal seam",
-          "at": 0.833,
-          "step": 13.0
-        }
-      ],
+      "std": 36.05,
+      "mean": 54.14,
+      "p95": 114.0,
+      "edge": 0.0144,
+      "hf": 6.37,
+      "lf": 33.01,
+      "std8": 34.1,
+      "edge8": 0.1375,
+      "seams": [],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.833"
-      ],
+      "fail": [],
       "warn": [
-        "low detail: edge density 0.015 < film p5 0.0166"
+        "low detail: edge density 0.0144 < film p5 0.0162"
       ]
     },
     {
@@ -192,49 +149,17 @@
       "row": "s06_01_lead_box_v01",
       "source": "end_card_loop_01_lead_box_v01.jpg",
       "t": 21.34,
-      "std": 36.74,
-      "mean": 42.61,
+      "std": 35.84,
+      "mean": 41.75,
       "p95": 111.0,
-      "edge": 0.0256,
-      "hf": 7.15,
-      "lf": 32.61,
-      "std8": 34.33,
-      "edge8": 0.1998,
-      "seams": [
-        {
-          "kind": "horizontal seam",
-          "at": 0.185,
-          "step": 26.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.187,
-          "step": 23.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.809,
-          "step": 15.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.844,
-          "step": 19.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.846,
-          "step": 21.0
-        },
-        {
-          "kind": "horizontal gutter",
-          "at": 0.235
-        }
-      ],
+      "edge": 0.0219,
+      "hf": 6.9,
+      "lf": 31.88,
+      "std8": 33.56,
+      "edge8": 0.1878,
+      "seams": [],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.185, horizontal seam at 0.187, horizontal seam at 0.809, horizontal seam at 0.844, horizontal seam at 0.846, horizontal gutter at 0.235"
-      ],
+      "fail": [],
       "warn": []
     }
   ]

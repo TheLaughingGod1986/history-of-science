@@ -37,18 +37,8 @@
   },
   "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s1_herschel_infrared_v01.mp4",
   "edge_floor": 0.0115,
-  "verdict": "FAIL",
-  "failed": [
-    {
-      "row": "s01_01_beyond_red_v01",
-      "cut": 0,
-      "t": 2.48,
-      "source": "01_beyond_red_v01.jpg",
-      "why": [
-        "split panel: horizontal gutter at 0.133"
-      ]
-    }
-  ],
+  "verdict": "PASS",
+  "failed": [],
   "warn": [
     {
       "row": "s05_01_beyond_red_v01",
@@ -67,24 +57,17 @@
       "row": "s01_01_beyond_red_v01",
       "source": "01_beyond_red_v01.jpg",
       "t": 2.48,
-      "std": 55.83,
-      "mean": 60.86,
+      "std": 56.26,
+      "mean": 67.67,
       "p95": 210.0,
-      "edge": 0.0422,
-      "hf": 14.11,
-      "lf": 47.14,
-      "std8": 50.8,
-      "edge8": 0.2345,
-      "seams": [
-        {
-          "kind": "horizontal gutter",
-          "at": 0.133
-        }
-      ],
+      "edge": 0.0482,
+      "hf": 14.64,
+      "lf": 48.21,
+      "std8": 51.3,
+      "edge8": 0.2168,
+      "seams": [],
       "video": true,
-      "fail": [
-        "split panel: horizontal gutter at 0.133"
-      ],
+      "fail": [],
       "warn": []
     },
     {

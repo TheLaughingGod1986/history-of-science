@@ -4,7 +4,7 @@
   "shorts": {
     "s1_herschel_infrared": {
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s1_herschel_infrared_v01.mp4",
-      "sha256": "af0b78f64e60c62c34385d3bf50c074aa0c32ed5f1ebedca19a75d1138295e97",
+      "sha256": "e00f20b39383da192187e080b1307cd1e61b9f4fe68c3052c0f0fe66e3372f1c",
       "air_date": "2026-10-19",
       "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01.png",
       "stems": {
@@ -30,7 +30,7 @@
     },
     "s3_snow_pump": {
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v02.mp4",
-      "sha256": "1bd61d35e30299f8d85efec843f60a0c5876667014cd53a0e25d6599f2722a51",
+      "sha256": "634abd5ef8a0d031c0926b049e612efc56e41c22cdd96a17e3cf76ba2508ec1b",
       "air_date": "2026-10-26",
       "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01.png",
       "stems": {
@@ -43,7 +43,7 @@
     },
     "s4_curie_notebooks": {
       "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v04.mp4",
-      "sha256": "0e873be1b9dc331ad4fa01d129401946c27347c0045ad98d92b6bf4664640911",
+      "sha256": "13a3bf5e07cb65014f5aa607c0a0e47be02753e82f4e7fb96f7830456d6fd3eb",
       "air_date": "2026-10-28",
       "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01.png",
       "stems": {

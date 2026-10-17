@@ -53,12 +53,19 @@ COLUMN_TIGHT = {"z": (1.45, 1.60), "c": (0.545, 0.30)}
 # S7 v02 (Chief, HOS #180 6134869893): 01 holds through "The air was spent", so its second half carries on from
 # where the opening push ends (≈1.05, centred) as one slow push, with no tick on that join (same plate).
 JAR_HOLD = {"z": (1.05, 1.30), "c": (0.5, 0.5)}
+# J0433 seam/gutter fixes (£0, existing plates): zoom/crop and gentle vertical shelf-edge feathering.
+S1_OPEN = {"z": (1.58, 1.28), "c": (0.5, 0.58)}
+S3_PUMP_OPEN = {"z": (1.52, 1.22), "c": (0.5, 0.41)}
+S3_PUMP_END = {"z": (1.19, 1.26), "c": (0.5, 0.41)}
+S4_BOX_OPEN = {"z": (1.42, 1.12), "c": (0.5, 0.5), "feather_seams": [0.197, 0.798, 0.832]}
+S4_ARCHIVE = {"z": (1.20, 1.27), "c": (0.5, 0.42)}
+S4_BOX_LOOP = {"z": (1.06, 1.13), "c": (0.5, 0.5), "feather_seams": [0.197, 0.798, 0.832]}
 
 # beats: (word index the plate lands on, plate file[, move]). The "loop" beat starts LOOP_S before the end.
 SHORTS = [
     {"id": "s1_herschel_infrared", "air_date": "2026-10-19", "hook": "HOTTER IN THE **DARK**",
      "vo": "hos_sa_s1_herschel_infrared_vo_v01", "trim": True,
-     "beats": [(0, "s1/01_beyond_red_v01.jpg"), (10, "s1/02_prism_window_v01.jpg"),
+     "beats": [(0, "s1/01_beyond_red_v01.jpg", S1_OPEN), (10, "s1/02_prism_window_v01.jpg"),
                (17, "s1/03_thermometers_colours_v01.jpg"), (28, "s1/04_past_the_red_v01.jpg"),
                ("loop", "s1/01_beyond_red_v01.jpg")]},
     {"id": "s2_brand_phosphorus", "air_date": "2026-10-21", "hook": "BOILING URINE FOR **GOLD**",
@@ -68,14 +75,14 @@ SHORTS = [
                (30, "s2/05_first_glow_v02.jpg"), ("loop", "s2/01_glowing_flask_v01.jpg")]},
     {"id": "s3_snow_pump", "air_date": "2026-10-26", "hook": "THE KILLER **PUMP**",
      "vo": "hos_sa_s3_snow_pump_vo_v02", "trim": False,
-     "ver": "v02", "beats": [(0, "s3/05_handle_off_v03.jpg"), (10, "s3/02_soho_1854_v01.jpg"),
+     "ver": "v02", "beats": [(0, "s3/05_handle_off_v03.jpg", S3_PUMP_OPEN), (10, "s3/02_soho_1854_v01.jpg"),
                (23, "s3/03_snow_tracking_v01.jpg"), (31, "s3/04_map_bars_v01.jpg"),
-               (39, "s3/05_handle_off_v03.jpg")]},
+               (39, "s3/05_handle_off_v03.jpg", S3_PUMP_END)]},
     {"id": "s4_curie_notebooks", "air_date": "2026-10-28", "hook": "STILL **RADIOACTIVE**",
      "vo": "hos_sa_s4_curie_notebooks_vo_v01", "trim": True, "ver": "v02",
-     "beats": [(0, "s4/01_lead_box_v01.jpg"), (6, "s4/02_shed_lab_v01.jpg"), (18, "s4/03_glowing_vials_v01.jpg"),
-               (23, "s4/04_bare_hands_v01.jpg"), (32, "s4/05_paris_archive_v02.jpg"),
-               ("loop", "s4/01_lead_box_v01.jpg")]},
+     "beats": [(0, "s4/01_lead_box_v01.jpg", S4_BOX_OPEN), (6, "s4/02_shed_lab_v01.jpg"), (18, "s4/03_glowing_vials_v01.jpg"),
+               (23, "s4/04_bare_hands_v01.jpg"), (32, "s4/05_paris_archive_v02.jpg", S4_ARCHIVE),
+               ("loop", "s4/01_lead_box_v01.jpg", S4_BOX_LOOP)]},
     {"id": "s5_penzias_pigeons", "air_date": "2026-11-02", "hook": "BLAMED THE **PIGEONS**",
      "vo": "hos_sa_s5_penzias_pigeons_vo_v01", "trim": True, "whoosh_db": -18.0,
      "beats": [(0, "s5/01_pigeons_horn_v01.jpg"), (12, "s5/02_receiver_needle_v01.jpg"),
@@ -238,19 +245,44 @@ def render_hook(path: Path, text: str) -> dict:
             "block_pct": [round(100 * top / H, 1), round(100 * (top + block) / H, 1)]}
 
 
+def feather_plate(src: Path, dst: Path, seam_ys: list[float]) -> Path:
+    """Gentle vertical feather across full-width shelf/table seam lines + subtle horizontal shadow gradient."""
+    import numpy as np
+    im = Image.open(src).convert("RGB")
+    w, h = im.size
+    arr = np.array(im, dtype=np.float32)
+    yy = np.linspace(0.0, 1.0, h)[:, None, None]
+    xx = np.linspace(-1.0, 1.0, w)[None, :, None]
+    k = 35
+    p = k // 2
+    pad = np.pad(arr, ((p, p), (0, 0), (0, 0)), mode="edge")
+    cs = np.pad(pad.cumsum(axis=0), ((1, 0), (0, 0), (0, 0)))
+    blur_y = (cs[k:] - cs[:-k]) / k
+    dist = np.minimum.reduce([np.abs(yy - y0) for y0 in seam_ys])
+    mask = np.clip(1.0 - dist / 0.03, 0.0, 1.0)
+    out = arr * (1.0 - mask) + blur_y * mask
+    out = np.clip(out + 7.0 * (xx ** 2), 0, 255).astype(np.uint8)
+    Image.fromarray(out).save(dst, quality=95)
+    return dst
+
+
 def seg(src: Path, dst: Path, dur: float, k: int, first: bool, move: dict | None = None,
         open_z: float = 1.40) -> None:
     """Smooth push on a still: zoompan over a 4× upscale (sub-pixel steps, no wobble)."""
+    if move and move.get("feather_seams"):
+        src = feather_plate(src, dst.parent / f"feathered_{src.name}", move["feather_seams"])
     n = max(2, round(dur * FPS))
     x, y = "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
     if move:
-        z0, z1 = move["z"]
-        z = f"{z0}+{z1 - z0:.4f}*on/{n}"
         cx, cy = move.get("c", (0.5, 0.5))
         x = f"max(0,min(iw-iw/zoom,{cx}*iw-iw/zoom/2))"
         y = "0" if move.get("top") else f"max(0,min(ih-ih/zoom,{cy}*ih-ih/zoom/2))"
-    elif first:
-        z = f"{open_z:.2f}-{open_z - 1.10:.2f}*min(on/{FPS * 1.0:.0f},1)-0.06*max(0,on-{FPS})/{n}"
+    if first:
+        z0, z1 = move["z"] if (move and "z" in move) else (open_z, 1.10)
+        z = f"{z0:.2f}-{z0 - z1:.2f}*min(on/{FPS * 1.0:.0f},1)-0.06*max(0,on-{FPS})/{n}"
+    elif move:
+        z0, z1 = move["z"]
+        z = f"{z0}+{z1 - z0:.4f}*on/{n}"
     elif k % 2:
         z = f"1.0+0.07*on/{n}"
     else:
