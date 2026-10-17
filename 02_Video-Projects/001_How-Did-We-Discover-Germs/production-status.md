@@ -101,3 +101,25 @@ Screenshots on the Mini under `~/.local/share/cursor-mac-mini-hos-worker/artifac
 ## J0181 listing verification — 14 Oct 2026, Codex
 
 Flask description already matches the approved real-line-break text. Germs end screen already contains Periodic Table, the discovery playlist and Subscribe; saved window reads 5:58:13–6:04:13. No YouTube changes made. Evidence: `00_Brand/Channel-Setup/audits/live_fixes/evidence_J0181_2026-10-14/REPORT.md`. Package lint exited 0; channel audit output: `37 videos, 0 errors.` Chief reviews the existing six-second timing and separate scheduled-Short Related follow-ups.
+
+
+## 17 Oct 2026 — Short `s07_semmelweis_hands_v01` (Test B, first search-titled lift from Part 03, OWB J0472)
+
+- **Selection:** HOS 001 had 0 built Test B search-titled Shorts (`SHORT_*.json`), whereas HOS 002, 003, 004, 005, and 006 each have 2 built Test B search-titled Shorts.
+- **VO (0 spend):** `02_Voiceover/part03_childbirth_ward_v01.wav` lift (`4.20–17.05 s`, `17.78–20.50 s`, `23.72–24.82 s`, `26.05–38.85 s` from Part 03, zero overlap with `s03_vector` which began at P03 + 43.32 s on `"It said: you are the vector"`, or `s01_shadow`, `s02_pond`, `s04_flask`, `s05_soap`, `s06_carbolic_spray`): *"If sickness rides on smell, the cure is perfume and ventilation. If it rides on living seeds, the cure is stopping those seeds on hands, on instruments, on breath. Suddenly the enemy has an address. A hitchhiker. Ignaz Semmelweis watched wards where doctors went from autopsy to childbirth without washing. Death rates screamed. Hand washing cut them. Colleagues mocked him anyway."* 61 words, pauses capped at 0.20 s, `atempo=1.07`, 24.747 s VO + 0.42 s tail = 25.167 s total.
+- **Picture & bed (0 spend):** Part 03 clean takes `05_wash_works_v03` (`0.60 s` soapy hands scrubbing under brass tap on frame 0 and 3.0 s loop, `crop_x=480`), `02_perfume_windows_v02`, `03_bedside_hands_v04`, `08_prestige_hands_v01`, `10_flask_in_the_room_v03`, `04_autopsy_to_ward_v14` (`crop_x=380`, Semmelweis centred), `07_mocked_v12` (`crop_x=220`). Own-synthesis warm harmonic pad (`hos001_s07_synth_pad_v01.wav`, C-dorian/Gm9 voicing) at −20 dB under VO. Hook **WASH HANDS** (HANDS in yellow). Person/date card **IGNAZ SEMMELWEIS · Childbirth ward, 1840s** at 14.40–18.00 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover Germs?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.17–25.09 s.
+- **Title draft:** *Who Discovered That Washing Hands Saves Lives?* (signed-out GB YouTube autocomplete exact hits `doctor who discovered washing hands` / `ignaz semmelweis hand washing` / `semmelweis hand washing`, 17 Oct 2026; alts *The Doctor Who Discovered Washing Hands*, *Why Did Doctors Mock Ignaz Semmelweis?*, *How Semmelweis Proved Handwashing Cut Deaths*).
+- **File:** `10_Shorts/hos_001_s07_semmelweis_hands_v01.mp4`, 25.167 s, sha256 `ec69d9145e95da4c62f8527f7fc8b630c5592ca9e8b82775f7848efca9c0a875`; phone copy iCloud `HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s07_semmelweis_hands_v01.mp4`.
+
+```
+PASS  hos_001_s07_semmelweis_hands_v01.mp4  dur=25.17s  audio=-23.2dB  motion=16.8  dhash=22189feb40e0e850
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s07_semmelweis_hands_v01_open_sheet.jpg
+PASS  hos_001_s07_semmelweis_hands_v01.mp4  0:25.17  mean -23.2 dB  peak -3.8 dB  145 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s07_semmelweis_hands_v01/polish_gate_s07_semmelweis_hands_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s07_semmelweis_hands_v01/picture_qa_s07_semmelweis_hands_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s07_semmelweis_hands_v01/picture_qa_s07_semmelweis_hands_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-08` (gate only). Caption check: 20 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
