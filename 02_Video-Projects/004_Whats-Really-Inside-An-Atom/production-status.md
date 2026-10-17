@@ -572,3 +572,20 @@ picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-R
 
 **STOP:** parked for Chief review, title and slot. Nothing uploaded.
 
+## J0465 s04_cathode_rays_v01 reuse fix — Gemini, 17 Oct 2026
+
+- **What:** Fixed `picture_qa` 1/8 reuse FAIL on `s05_Thomson` (12.747–16.647 s, swapped repeated `05_magnet_bends_v01` to unused Part 03 plate `08_measures_bend_v01` at `in_s=0.8, crop_x=640`: Thomson at the cathode-ray tube as the glowing blue beam bends, scale card cropped out on the right) and cosine-feathered the WHO card and title shades (`BAND_TOP+BAND_H` 0.656 seam check). £0 spend, existing Part 03 plates only, no upload.
+- **File:** `10_Shorts/hos_004_s04_cathode_rays_v01.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s04_cathode_rays_v01.mp4`), **25.7 s**, 61 words, sha256 `027dc6f11efaa0084e88307c3b476bdf56afe255c33de31946ca40d086084508`.
+- **Record & QA:** `10_Shorts/SHORT_s04_cathode_rays_v01.json`, `10_Shorts/qa_s04_cathode_rays_v01/polish_gate_s04_cathode_rays_v01.json`, `10_Shorts/qa_s04_cathode_rays_v01/picture_qa_s04_cathode_rays_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s04_cathode_rays_v01.mp4  dur=25.7s  audio=-23.6dB  motion=16.87  dhash=80c06c1c90a69819   (--air-date 2026-10-27)
+PASS  hos_004_s04_cathode_rays_v01.mp4  0:25.70  mean -23.6 dB  peak -3.8 dB  142 wpm
+   first minute: title_question 9.08s
+   warn  pace 142 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s04_cathode_rays_v01/polish_gate_s04_cathode_rays_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s04_cathode_rays_v01/picture_qa_s04_cathode_rays_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s04_cathode_rays_v01/picture_qa_s04_cathode_rays_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.

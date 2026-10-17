@@ -4,7 +4,7 @@
   "test": "B (search-titled)",
   "air_date_draft": "2026-10-27",
   "file": "10_Shorts/hos_004_s04_cathode_rays_v01.mp4",
-  "sha256": "5a7b3c42a5f83895897034659fa3fe796ff79a678563412c8cef82b322a806bc",
+  "sha256": "027dc6f11efaa0084e88307c3b476bdf56afe255c33de31946ca40d086084508",
   "duration_s": 25.7,
   "vo_source": "02_Voiceover/05_Master/hos_004_part03_vo_v01.mp3",
   "vo_window_raw_s": [
@@ -80,9 +80,9 @@
     {
       "t0": 12.747,
       "t1": 16.647,
-      "plate": "04_Generated-Clips/part03/raw/v01/05_magnet_bends_v01.mp4",
-      "in_s": 3.0,
-      "crop_x": 580,
+      "plate": "04_Generated-Clips/part03/raw/v01/08_measures_bend_v01.mp4",
+      "in_s": 0.8,
+      "crop_x": 640,
       "lands_on": "Thomson"
     },
     {
@@ -145,5 +145,5 @@
     "note": "Both 'What Are Cathode Rays?' and 'How Did Thomson Discover Electrons?' are signed-out GB YouTube autocomplete hits. The lifted VO explicitly asks 'Scientists called them cathode rays. But what were they made of? Light, or stuff?' and answers with Thomson's magnet and charged-plate deflections ('Tiny charged particles do.')."
   },
   "air_date_draft_note": "2026-10-27 used for the gate only (clear of 004 gold-halves 16 Oct and 004 gold-foil 1 Nov); slot is Chief's call",
-  "who_card_note": "card sits over 05_magnet_bends_v01 (glass tube + horseshoe magnet, no figure on screen) at 14.2\u201317.6 s while 'Thomson brings a magnet close. The beam bends.' is spoken; clear of 0\u20132 s hook and 9\u201314 s title; long's own label text"
+  "who_card_note": "card sits over 08_measures_bend_v01 (in_s 0.8, crop_x 640: Thomson at the cathode-ray tube as the glowing beam bends, scale card cropped out on the right, lower-third card below his face and the bent arc) at 14.1\u201317.5 s while 'Thomson brings a magnet close. The beam bends.' is spoken; clear of 0\u20132 s hook and 9\u201314 s title; long's own label text"
 }

@@ -24,6 +24,7 @@ if VENV_PY.exists() and Path(sys.executable) != VENV_PY:
 import argparse  # noqa: E402
 import hashlib  # noqa: E402
 import json  # noqa: E402
+import math  # noqa: E402
 import re  # noqa: E402
 import shutil  # noqa: E402
 import subprocess  # noqa: E402
@@ -79,7 +80,7 @@ BEATS = [
     (8, P3("03_beam_shoots_v01"), 0.5, 656),           # run electricity through it, and a beam shoots…
     (22, P3("02_tube_glow_v01"), 1.5, 656),            # Scientists called them cathode rays.
     (27, P3("04_cathode_rays_question_v01"), 0.5, 656),  # But what were they made of? Light, or stuff?
-    (36, P3("05_magnet_bends_v01"), 3.0, 580),         # Thomson brings a magnet close. The beam bends.
+    (36, P3("08_measures_bend_v01"), 0.8, 640),         # Thomson brings a magnet close. The beam bends.
     (44, P3("06_plates_bend_v01"), 1.5, 656),          # He tries two charged metal plates. It bends again.
     (53, P3("07_light_doesnt_v01"), 0.5, 656),         # Light doesn't do that.
     ("loop", P3("05_magnet_bends_v01"), 0.5, 580),     # Tiny charged particles do.
@@ -269,8 +270,13 @@ def render_card(path: Path) -> dict:
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sd = ImageDraw.Draw(shade)
     top = y1 - size1 - 30
-    for yy in range(top, BAND_TOP + BAND_H):
-        a = int(140 * min(1.0, (yy - top) / 120))
+    bot = BAND_TOP + BAND_H + 80
+    feather_in, feather_out = 120, 120
+    for yy in range(top, bot):
+        ramp_in = min(1.0, (yy - top) / feather_in)
+        ramp_out = min(1.0, (bot - yy) / feather_out)
+        w = 0.5 * (1.0 - math.cos(math.pi * min(ramp_in, ramp_out)))
+        a = int(140 * w)
         sd.line([(0, yy), (W, yy)], fill=(0, 0, 0, a))
     img = Image.alpha_composite(img, shade)
     d = ImageDraw.Draw(img)
@@ -335,8 +341,9 @@ def build(air_date: str) -> dict:
     title_png = WORK / "cap_title.png"
     render(title_png, TITLE, 62, 250, index=2, stroke=4)
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    for yy in range(560):
-        a = int(150 * (1 - yy / 560) ** 1.5)
+    for yy in range(620):
+        w = 0.5 * (1.0 + math.cos(math.pi * yy / 620))
+        a = int(150 * w)
         ImageDraw.Draw(shade).line([(0, yy), (W, yy)], fill=(0, 0, 0, a))
     Image.alpha_composite(shade, Image.open(title_png)).save(title_png)
     overlays.append((title_png, TITLE_IN, TITLE_OUT, "title", TITLE))
@@ -431,8 +438,10 @@ def main() -> None:
     rec["stills"] = stills
     if not ns.no_icloud:
         ICLOUD.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(mp4, ICLOUD / mp4.name)
-        rec["icloud"] = str(ICLOUD / mp4.name)
+        dst = ICLOUD / mp4.name
+        dst.unlink(missing_ok=True)
+        shutil.copy2(mp4, dst)
+        rec["icloud"] = str(dst)
     rec["autocomplete_check"] = {
         "date": "2026-10-15",
         "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
@@ -446,7 +455,7 @@ def main() -> None:
         "note": "Both 'What Are Cathode Rays?' and 'How Did Thomson Discover Electrons?' are signed-out GB YouTube autocomplete hits. The lifted VO explicitly asks 'Scientists called them cathode rays. But what were they made of? Light, or stuff?' and answers with Thomson's magnet and charged-plate deflections ('Tiny charged particles do.').",
     }
     rec["air_date_draft_note"] = "2026-10-27 used for the gate only (clear of 004 gold-halves 16 Oct and 004 gold-foil 1 Nov); slot is Chief's call"
-    rec["who_card_note"] = "card sits over 05_magnet_bends_v01 (glass tube + horseshoe magnet, no figure on screen) at 14.2–17.6 s while 'Thomson brings a magnet close. The beam bends.' is spoken; clear of 0–2 s hook and 9–14 s title; long's own label text"
+    rec["who_card_note"] = "card sits over 08_measures_bend_v01 (in_s 0.8, crop_x 640: Thomson at the cathode-ray tube as the glowing beam bends, scale card cropped out on the right, lower-third card below his face and the bent arc) at 14.1–17.5 s while 'Thomson brings a magnet close. The beam bends.' is spoken; clear of 0–2 s hook and 9–14 s title; long's own label text"
     (HERE / f"SHORT_{SID}_{VER}.json").write_text(json.dumps(rec, indent=2) + "\n")
     print(f"BUILT {SID} {rec['duration_s']} s {rec['words']} words sha {rec['sha256'][:12]} "
           f"captions {rec['caption_check']}")

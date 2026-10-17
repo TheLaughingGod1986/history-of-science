@@ -2,7 +2,7 @@ s01_0     1.2s 05_magnet_bends_v01.mp4      ok
 s02_run     4.1s 03_beam_shoots_v01.mp4       ok
 s03_Scientists     7.4s 02_tube_glow_v01.mp4         ok
 s04_But    10.8s 04_cathode_rays_question_v01 ok
-s05_Thomson    14.7s 05_magnet_bends_v01.mp4      ok
+s05_Thomson    14.7s 08_measures_bend_v01.mp4     ok
 s06_He    18.6s 06_plates_bend_v01.mp4       ok
 s07_Light    21.5s 07_light_doesnt_v01.mp4      WARN low detail: edge density 0.0353 < film p5 0.0388
 s08_loop    24.1s loop_end_05_magnet_bends_v01 ok

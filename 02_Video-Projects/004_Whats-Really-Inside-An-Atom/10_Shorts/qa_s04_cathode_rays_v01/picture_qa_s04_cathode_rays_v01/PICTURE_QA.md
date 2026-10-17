@@ -1,10 +1,6 @@
-# Picture QA: FAIL
+# Picture QA: PASS
 
-02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s04_cathode_rays_v01.mp4 · 8 cuts · 1 fail · 1 for Claude to look at full size
-
-## Fix before anyone watches
-
-- **0:15** row s05_Thomson · 05_magnet_bends_v01.mp4 (Flow Veo 3.1 plate 05_magnet_bends_v01.mp4): reuse: same stretch as 0:01 (give it a new stretch, or a new render)
+02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s04_cathode_rays_v01.mp4 · 8 cuts · 0 fail · 1 for Claude to look at full size
 
 ## Claude looks at these full size
 

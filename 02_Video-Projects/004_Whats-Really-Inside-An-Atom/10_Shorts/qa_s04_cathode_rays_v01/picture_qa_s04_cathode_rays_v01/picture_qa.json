@@ -1,5 +1,5 @@
 {
-  "verdict": "FAIL",
+  "verdict": "PASS",
   "video": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s04_cathode_rays_v01.mp4",
   "rules": {
     "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
@@ -11,21 +11,7 @@
     "same_stretch": 10.0,
     "pixels": "scripts/polish_gate.py"
   },
-  "failed": [
-    {
-      "cut": 4,
-      "row": "s05_Thomson",
-      "source": "05_magnet_bends_v01.mp4",
-      "title": "Flow Veo 3.1 plate 05_magnet_bends_v01.mp4",
-      "t": 14.7,
-      "at": "0:15",
-      "fail": [
-        "reuse: same stretch as 0:01 (give it a new stretch, or a new render)"
-      ],
-      "warn": [],
-      "offset": 3.0
-    }
-  ],
+  "failed": [],
   "warn": [
     {
       "cut": 6,
@@ -89,15 +75,13 @@
     {
       "cut": 4,
       "row": "s05_Thomson",
-      "source": "05_magnet_bends_v01.mp4",
-      "title": "Flow Veo 3.1 plate 05_magnet_bends_v01.mp4",
+      "source": "08_measures_bend_v01.mp4",
+      "title": "Flow Veo 3.1 plate 08_measures_bend_v01.mp4",
       "t": 14.7,
       "at": "0:15",
-      "fail": [
-        "reuse: same stretch as 0:01 (give it a new stretch, or a new render)"
-      ],
+      "fail": [],
       "warn": [],
-      "offset": 3.0
+      "offset": 0.8
     },
     {
       "cut": 5,
