@@ -144,3 +144,21 @@ Gate run with `--air-date 2026-12-10` (gate only). Caption check: 19 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+
+## 18 Oct 2026 — Thumbnail B `v04` `BOILED CLEAR BROTH` (`1.055x` swan-neck flask hero push-in, OWB J0549)
+
+- **Selection:** HOS `001` (`_C92tIJCk8A`, *How Did We Discover Germs?*) is live on YouTube with no armed Test & Compare in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; `005` got `B v05` hero push-in in `J0518` and `002` got `B v07` hero push-in in `J0534`).
+- **Build (`£0` spend, existing `001` key-art plate only):** Built `Selected/hos_001_thumb_B_boiled_clear_broth_v04.jpg` (`1280×720`, `263,113` bytes, sha256 `d171f796e9499502f1a0787339e50ee64b5b74701dc9cc39402258a10ed6b114`) via `08_Thumbnail/_compose_hos_001_thumb_B_boiled_clear_broth_v04.py` and `08_Thumbnail/THUMB_B_BOILED_CLEAR_BROTH_v04.json` from `Selected/hos_001_tc_thumb_v02.jpg` with a `1.055×` push-in + glass/broth specular clarity boost on the right-hand swan-neck flask, golden broth bulb & U-bend dust trap (`heroBox = [584, 14, 1134, 692]`), Explorer in lower-left at `54.4%` frame height (`392 px`, `box = [88, 328, 316, 720]`), and Georgia Bold upper-left 3-word hook **`BOILED CLEAR BROTH`** (`CLEAR` in gold `#E49C20`, framed by the original painted gold scroll flourishes at `y=20..356`).
+- **Scores (`THUMB_B_BOILED_CLEAR_BROTH_v04.json`):**
+  - **HOOK: PASS** — `BOILED CLEAR BROTH` (3 words, punch word `CLEAR` in gold) names the concrete discovery substance (`BROTH`) and visible sterile proof (`BOILED CLEAR`) shown inside Pasteur's giant curved-neck flask on the right (`001` script Part 04: *"Boil broth. Keep the swan neck intact... The liquid stays clear. Watch it again in your mind: clear… clear… still clear"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover Germs?*), `J0391` (`THE SWAN NECK`), `J0457` (`TRAPPED IN GLASS`), or `J0503` (`DROP OF WATER`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=97..473`, `y=69..308`, framed by `001`'s original painted gold scroll flourishes at `y=20..356`) sits completely left of the pushed-in hero swan-neck flask (`x=584..1134`), above the Explorer's hair (`y=328`) and bottom flourish (`y=318`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_001_thumb_B_boiled_clear_broth_v04_preview.jpg`), style sheet (`Selected/hos_001_thumb_B_boiled_clear_broth_v04_style_sheet.jpg`), and 4-panel strip (`Selected/hos_001_thumb_TC_4way_boiled_clear_broth_v04_phone_168.jpg`).
+
+```
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_boiled_clear_broth_v04_preview.jpg
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_boiled_clear_broth_v04_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001_How-Did-We-Discover-Germs)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
