@@ -188,3 +188,19 @@ Gate run with `--air-date 2026-12-06` (gate only). Caption check: 19 changes, ra
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
 
+## 18 Oct 2026 — Thumbnail B `v07` `METAL TURNS LIQUID` (`1.032x` gallium hero push-in, OWB J0534)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no armed Test & Compare yet (`004` has an armed test, never touched).
+- **Build (`£0` spend, existing `002` key-art plate only):** Built `Selected/hos_002_thumb_B_metal_turns_liquid_v07.jpg` (`1280×720`, `285,919` bytes, sha256 `ddcb6b0fcc5c7bfb4c958043a736886ecb9ca130efe50bf9519ea64f17038dda`) via `08_Thumbnail/_compose_hos_002_thumb_B_metal_turns_liquid_v07.py` and `08_Thumbnail/THUMB_B_METAL_TURNS_LIQUID_v07.json` from `Selected/hos_002_thumb_A_gallium_live_v02.png` with a `1.032×` push-in on the right-hand silvery liquid-gallium arch & falling droplet (`heroBox = [548, 19, 1274, 702]`), Explorer in lower-left at `58.3%` frame height (`420 px`, `box = [42, 300, 256, 720]`), and Georgia Bold upper-left 3-word hook **`METAL TURNS LIQUID`** (`LIQUID` in gold `#F0AC28`, framed by the original painted gold scroll flourishes at `y=28..359`).
+- **Scores (`THUMB_B_METAL_TURNS_LIQUID_v07.json`):**
+  - **HOOK: PASS** — `METAL TURNS LIQUID` (3 words, punch word `LIQUID` in gold) names the concrete discovery object (`METAL`) and visible physical transformation (`TURNS LIQUID`) shown by the giant silvery melting gallium arch and droplet on the right (`002` script Part 05: *"1875. Gallium. Soft, strange, almost liquid in a warm room"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), or `J0488` (`EMPTY ON PURPOSE`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=116..481`, `y=67..292`, framed by original painted gold scroll flourishes at `y=28..359`) sits completely left of the pushed-in hero gallium arch (`x=548..1274`), above the Explorer's hair (`y=300`) and bottom flourish (`y=311`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_metal_turns_liquid_v07_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_metal_turns_liquid_v07_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_metal_turns_liquid_v07_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_metal_turns_liquid_v07_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_metal_turns_liquid_v07_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
