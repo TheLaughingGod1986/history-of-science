@@ -184,3 +184,19 @@ Gate run with `--air-date 2026-12-30` (gate only). Caption check: 21 changes, ra
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
 
+## 18 Oct 2026 — Thumbnail B `v05` `TINY LIVING CELLS` (`1.155x` pond-water droplet hero push-in, OWB J0594)
+
+- **Selection:** HOS `001` (`_C92tIJCk8A`, *How Did We Discover Germs?*) is live on YouTube with no armed Test & Compare in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `001` was updated in `J0549`, `005` in `J0564`, and `002` in `J0579`, making `001` next in rotation).
+- **Build (`£0` spend, existing `001` plates only):** Built `Selected/hos_001_thumb_B_tiny_living_cells_v05.jpg` (`1280×720`, `232,126` bytes, sha256 `6e6220c091deb9bbb9e6ef60760de1ea06e1fb5a18cdff05112be58aaff58714`) via `08_Thumbnail/_compose_hos_001_thumb_B_tiny_living_cells_v05.py` and `08_Thumbnail/THUMB_B_TINY_LIVING_CELLS_v05.json` from `04_Generated-Clips/part02/refs/03_drop_of_water_v01.jpg` and `08_Thumbnail/Selected/hos_001_tc_thumb_v02.jpg` with a `1.155×` combined hero push-in + microbe/specular clarity boost on the right-hand glowing pond-water sphere teeming with faceless rods, spiked spheres & golden spirals (`heroBox = [592, 104, 1022, 534]`, `430×430 px`, `+34%` larger area than `v03`'s `372×372 px`; `slideBox = [420, 468, 1223, 650]`), Explorer in lower-left at `54.4%` frame height (`392 px`, `box = [88, 328, 316, 720]`), and Georgia Bold upper-left 3-word hook **`TINY LIVING CELLS`** (`CELLS` in gold `#E49C20`, framed by the original painted gold scroll flourishes at `y=20..356`).
+- **Scores (`THUMB_B_TINY_LIVING_CELLS_v05.json`):**
+  - **HOOK: PASS** — `TINY LIVING CELLS` (3 words, punch word `CELLS` in gold) names the concrete microorganisms visible inside Leeuwenhoek's glowing pond-water bead on the microscope slide (`001` script Part 01 & Part 02: *"Tiny living things... spinning cells, life with no face and no name on the hospital chart... a civilisation of cells dancing in a bead of liquid"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover Germs?*), `J0391` (`THE SWAN NECK`), `J0457` (`TRAPPED IN GLASS`), `J0503` (`DROP OF WATER`), or `J0549` (`BOILED CLEAR BROTH`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=114..456`, `y=71..306`, framed by `001`'s original painted gold scroll flourishes at `y=20..356`) sits completely left of the pushed-in glowing pond-water sphere (`x=592..1022`), above the Explorer's hair (`y=328`) and bottom flourish (`y=318`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_001_thumb_B_tiny_living_cells_v05_preview.jpg`), style sheet (`Selected/hos_001_thumb_B_tiny_living_cells_v05_style_sheet.jpg`), and 4-panel strip (`Selected/hos_001_thumb_TC_4way_tiny_living_cells_v05_phone_168.jpg`).
+
+```
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_tiny_living_cells_v05_preview.jpg
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_tiny_living_cells_v05_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001_How-Did-We-Discover-Germs)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
