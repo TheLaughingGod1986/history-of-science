@@ -873,3 +873,20 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Har
 
 **STOP:** parked for Chief review, title and slot. Nothing uploaded.
 
+## J0517 s06_blood_pressure_cuff_v01 (Test B search-titled Short, Part 05 lift) — Gemini, 18 Oct 2026
+
+- **What:** Built search-titled Test B Short `s06_blood_pressure_cuff_v01` from `005` Part 05 existing VO (`02_Voiceover/part05_the_vessels_he_never_saw_v01_raw.mp3`, claim-first lift of indices 107–126 and 178–220: *"Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins. And the next time a nurse wraps a cuff round your arm, think of Harvey. A blood pressure cuff is his band. It squeezes until the blood stops getting in, then lets go, and listens for the moment it starts to flow again."*), existing Part 05/04 KEEP plates (`08_your_blood_t2`, `16_proved_last_link_t4`, `07_capillaries_loop_t2`, `10_one_vein_t1`, `13_cuff_t1`, `04_stopped_loosen_t5`, `14_cuff_release_t4`, `07_in_out_doors_t2`, and `08_your_blood_t2` loop), and Part 05 score bed (`hos005-part05-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *How Does a Blood Pressure Cuff Work?* (exact signed-out GB YouTube autocomplete hit; alternatives *How Does Blood Circulate in the Body?* / *How Does Blood Flow Through the Body?*).
+- **On screen:** Frame-0 hook `HIS BAND **TODAY**` (9.01% cap, centred), WHO card `WILLIAM HARVEY · London, 1628` (`14.2–17.8 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *The Tied Arm That Proved Your Blood Circulates* (`9.0–14.0 s`), captions throughout (`19/19` changes), `3.0 s` loop back to `08_your_blood_t2`.
+- **File:** `10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4` (untracked local + iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4`), **24.233 s**, 63 words, 156 wpm, sha256 `b9bc921502c311e2bba585868dff48746eaefdf44380f5a5f8464f946e5b8bf3`.
+- **Record & QA:** `10_Shorts/SHORT_s06_blood_pressure_cuff_v01.json`, `10_Shorts/_build_short_s06_blood_pressure_cuff_v01.py`, `10_Shorts/qa_s06_blood_pressure_cuff_v01/polish_gate_s06_blood_pressure_cuff_v01.json`, `10_Shorts/qa_s06_blood_pressure_cuff_v01/picture_qa_s06_blood_pressure_cuff_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_005_s06_blood_pressure_cuff_v01.mp4  dur=24.23s  audio=-23.2dB  motion=16.3  dhash=17962f692f0f06ab   (--air-date 2026-12-20)
+PASS  hos_005_s06_blood_pressure_cuff_v01.mp4  0:24.23  mean -23.2 dB  peak -4.7 dB  156 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v01/polish_gate_s06_blood_pressure_cuff_v01.json
+picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v01/picture_qa_s06_blood_pressure_cuff_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v01/picture_qa_s06_blood_pressure_cuff_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
