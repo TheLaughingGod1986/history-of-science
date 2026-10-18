@@ -890,3 +890,21 @@ picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Har
 ```
 
 **STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+## 18 Oct 2026 — Thumbnail B `v06` `STOPPED RED PULSE` (`1.08x` hero push-in, OWB J0564)
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; `002` got `B v07` in `J0534` and `001` got `B v04` in `J0549`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_stopped_red_pulse_v06.jpg` (`1280×720`, `253,882` bytes, sha256 `1501646eb3b6d37259dd7738d226f8c1c482d75423023d4549378ffb1be0d174`) via `08_Thumbnail/_compose_hos_005_thumb_B_stopped_red_pulse_v06.py` and `08_Thumbnail/THUMB_B_STOPPED_RED_PULSE_v06.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.08×` push-in + clarity boost on the right-hand tied arm, glowing stopped red arterial pulse above the linen knot, and branching blue forearm veins (`heroBox = [560, 0, 1236, 704]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`STOPPED RED PULSE`** (`STOPPED` in gold `#E49C20`, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_STOPPED_RED_PULSE_v06.json`):**
+  - **HOOK: PASS** — `STOPPED RED PULSE` (3 words, punch word `STOPPED` in gold) names the concrete visible arterial proof above the tight linen band on the upper arm (`De Motu Cordis` ch. 2–3 & 11, `FACT_NOTES_v01` rows 21 & 26; `005` script Part 03–04: *"Each squeeze pushes blood out into the arteries, and that push is the pulse... Above it, the artery throbs. Why? The tight band has stopped the blood getting in"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), or `J0518` (`TRAPPED UNDER SKIN`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=108..468`, `y=70..316`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=560..1236`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_stopped_red_pulse_v06_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_stopped_red_pulse_v06_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_stopped_red_pulse_v06_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_stopped_red_pulse_v06_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_stopped_red_pulse_v06_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
