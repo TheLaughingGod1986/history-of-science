@@ -1,0 +1,157 @@
+{
+ "pulled": "2026-10-18",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how memories form",
+  "hippocampus patient hm"
+ ],
+ "autocomplete": {
+  "how memories form": [
+   "how memories form and how we lose them",
+   "how memory formed in brain",
+   "how format memory card",
+   "how format memory card android",
+   "how format memory card using cmd",
+   "how memories shape our reality",
+   "how to memory format",
+   "how we form memories"
+  ],
+  "hippocampus patient hm": [
+   "hippocampus and amygdala memory",
+   "hippocampus memory",
+   "hippocampus"
+  ]
+ },
+ "sharedTitleWords": [
+  "how memories",
+  "how we",
+  "make memories",
+  "memories are"
+ ],
+ "neighbours": [
+  {
+   "id": "KkaXNvzE4pk",
+   "title": "What happens when you remove the hippocampus? - Sam Kean",
+   "channel": "TED-Ed",
+   "views": "5,107,013 views",
+   "age": "12 yr ago",
+   "length": "5:26",
+   "tier": 1,
+   "viewCount": 5107013,
+   "foundBy": "how memories form",
+   "onTopic": true
+  },
+  {
+   "id": "yOgAbKJGrTA",
+   "title": "How memories form and how we lose them - Catharine Young",
+   "channel": "TED-Ed",
+   "views": "3,244,554 views",
+   "age": "11 yr ago",
+   "length": "4:20",
+   "tier": 1,
+   "viewCount": 3244554,
+   "foundBy": "how memories form",
+   "onTopic": true
+  },
+  {
+   "id": "D-2p86FvqF4",
+   "title": "Are all of your memories real? - Daniel L. Schacter",
+   "channel": "TED-Ed",
+   "views": "2,207,549 views",
+   "age": "6 yr ago",
+   "length": "5:18",
+   "tier": 1,
+   "viewCount": 2207549,
+   "foundBy": "how memories form",
+   "onTopic": true
+  },
+  {
+   "id": "bSycdIx-C48",
+   "title": "How We Make Memories: Crash Course Psychology #13",
+   "channel": "CrashCourse",
+   "views": "4,517,652 views",
+   "age": "12 yr ago",
+   "length": "9:55",
+   "tier": 2,
+   "viewCount": 4517652,
+   "foundBy": "how memories form",
+   "onTopic": true
+  },
+  {
+   "id": "PqtggjVAi8M",
+   "title": "How Are Memories Stored Inside Your Brain?",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "3,399,719 views",
+   "age": "4 mo ago",
+   "length": "13:56",
+   "tier": 2,
+   "viewCount": 3399719,
+   "foundBy": "how memories form",
+   "onTopic": true
+  },
+  {
+   "id": "Pq0aQAG0A3o",
+   "title": "How Do You Make Memories?",
+   "channel": "SciShow",
+   "views": "458,464 views",
+   "age": "10 yr ago",
+   "length": "4:44",
+   "tier": 2,
+   "viewCount": 458464,
+   "foundBy": "khan academy how memories form",
+   "onTopic": true
+  },
+  {
+   "id": "RyrI5I2E0xw",
+   "title": "How memories shape your reality | Aleena Garner | TEDxNewEngland",
+   "channel": "TEDx Talks",
+   "views": "29,577 views",
+   "age": "1 yr ago",
+   "length": "14:19",
+   "tier": 1,
+   "viewCount": 29577,
+   "foundBy": "how memories form ted",
+   "onTopic": true
+  },
+  {
+   "id": "D-aPGXXIYZc",
+   "title": "Building Memories in the Brain | Chris Baldassano | TEDxCarnegieLake",
+   "channel": "TEDx Talks",
+   "views": "7,401 views",
+   "age": "8 yr ago",
+   "length": "11:24",
+   "tier": 1,
+   "viewCount": 7401,
+   "foundBy": "ted-ed how memories form",
+   "onTopic": true
+  },
+  {
+   "id": "ZcFeLakFrYo",
+   "title": "How Memories Are Made",
+   "channel": "TED",
+   "views": "5,738 views",
+   "age": "3 yr ago",
+   "length": "6:03",
+   "tier": 1,
+   "viewCount": 5738,
+   "foundBy": "how memories form",
+   "onTopic": true
+  },
+  {
+   "id": "ORCo16QJANg",
+   "title": "How memories are produced | James McGaugh | TEDxUCIrvine",
+   "channel": "TEDx Talks",
+   "views": "4,287 views",
+   "age": "11 yr ago",
+   "length": "17:50",
+   "tier": 1,
+   "viewCount": 4287,
+   "foundBy": "how memories form ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}
