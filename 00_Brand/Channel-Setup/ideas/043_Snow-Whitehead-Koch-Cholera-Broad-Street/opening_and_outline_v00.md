@@ -11,7 +11,7 @@ Length target: 7–9 min, about 1,200–1,300 spoken words.
 
 ## PART 01: Six Hundred Deaths on One London Street and the Missing Iron Handle (0:00–1:25). No chapter card.
 
-Why could you turn on your kitchen tap today and drink a glass of clear water without a second thought — whereas in September eighteen fifty-four, a single street water pump in central London killed more than six hundred people inside ten days? And how did one quiet doctor with an ink pen and a street map prove the killer was hiding in the water when every medical authority insisted it was floating in the air?
+Why can you turn on your kitchen tap today and drink a glass of clear water without fear? In September eighteen fifty-four, why did a single street water pump in central London kill more than six hundred people inside ten days — and how did one quiet doctor with an ink pen and a street map prove the killer was hiding in the water when every medical authority insisted it was floating in the air?
 
 [VISUAL MUST: 0:00 — on the cobblestone corner of Broad Street and Cambridge Street in Soho, London, on the morning of 8 September 1854, a workman unbolts and removes the heavy iron handle from the Broad Street public water pump while 41-year-old physician John Snow and Reverend Henry Whitehead hold an inked street map covered in black mortality bars (ANSWER IMAGE by 0:03, TITLE QUESTION by 0:07) · WHEN: Soho, London, 8 September 1854 · LABEL: THE PUMP HANDLE THAT SAVED LONDON]
 
