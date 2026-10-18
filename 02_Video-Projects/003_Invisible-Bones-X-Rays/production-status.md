@@ -157,3 +157,23 @@ Gate run with `--air-date 2026-12-01` (gate only). Caption check: 17 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+
+## 18 Oct 2026 — Short `s06_how_xrays_work_v01` (Test B, third search-titled lift from Part 05, OWB J0548)
+
+- **Selection:** HOS 004, 005, and 006 each have 3 built search-titled Shorts (`s04`, `s05`, `s06`); HOS 003 had only 2 built search-titled Shorts (`s04_unknown_x_v01`, `s05_first_xray_v01`), making 003 the next locked HOS long with the fewest built search-titled Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/05_Master/hos_003_part05_vo_v02_draft.wav` claim-first lift (`3.42–24.88 s` + `33.30–38.02 s`, zero overlap with S1–S5): *"They are light with more punch than the colours your eyes catch, a band of the electromagnetic spectrum past ultraviolet. Higher energy, shorter wavelength. They slip through soft tissue more than bone and metal. A detector, cardboard once, sensors now, turns that difference into a picture of density. That map lets doctors see inside a living body without a knife."* 60 words, pauses capped at 0.25 s, `atempo=1.02`, 23.962 s VO + 0.55 s tail = 24.533 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P3:11_hold_beam_v02` (`1.50 s` violet-beam-to-green-cardboard window on frame 0 and 3.0 s loop), `P1:03_cathode_tube_hero_v02`, `P1:02_wurzburg_lab_establishing_v03`, `P3:09_wonder_v02`, `P3:04_bones_hold_v03`, `P1:09_why_chase_invisible_v01` (`crop_x=420`), `P3:08_medicine_question_v02`. Own-synthesis warm harmonic pad (`hos003_s06_synth_pad_v01.wav`, E-minor/Cmaj7 voicing, distinct from `s04` D-dorian and `s05` A-aeolian) at −20 dB under VO. Hook **SOFT VS BONE** (BONE in yellow). Person/date card **WILHELM RÖNTGEN · Würzburg, 1895** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover X-rays?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 21.53–24.45 s.
+- **Title draft:** *How Do X-Rays Work?* (signed-out GB YouTube autocomplete exact hit `how do x rays work`, 18 Oct 2026; alts *How Do X-Rays Produce Images?*, *How X-Rays See Through Your Skin*).
+- **File:** `10_Shorts/hos_003_s06_how_xrays_work_v01.mp4`, 24.533 s, sha256 `6a0f0fd171a850b3ece3da36544b87801d31163eaaf32fa8af6289a6deefbd98`; phone copy iCloud `HOS UAT/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s06_how_xrays_work_v01.mp4`.
+
+```
+PASS  hos_003_s06_how_xrays_work_v01.mp4  dur=24.53s  audio=-23.3dB  motion=32.44  dhash=86c6cf93443ffe80
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_003_s06_how_xrays_work_v01_open_sheet.jpg
+PASS  hos_003_s06_how_xrays_work_v01.mp4  0:24.53  mean -23.3 dB  peak -4.3 dB  147 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s06_how_xrays_work_v01/polish_gate_s06_how_xrays_work_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s06_how_xrays_work_v01/picture_qa_s06_how_xrays_work_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s06_how_xrays_work_v01/picture_qa_s06_how_xrays_work_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-25` (gate only). Caption check: 18 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.

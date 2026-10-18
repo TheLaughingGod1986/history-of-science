@@ -1,0 +1,168 @@
+{
+  "id": "s06_how_xrays_work",
+  "job": "J0548",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-25",
+  "file": "10_Shorts/hos_003_s06_how_xrays_work_v01.mp4",
+  "sha256": "6a0f0fd171a850b3ece3da36544b87801d31163eaaf32fa8af6289a6deefbd98",
+  "duration_s": 24.533,
+  "vo_source": "02_Voiceover/05_Master/hos_003_part05_vo_v02_draft.wav",
+  "vo_span_windows_s": [
+    [
+      3.42,
+      24.88
+    ],
+    [
+      33.3,
+      38.02
+    ]
+  ],
+  "route": "claim-first lift: They are light with more punch than the colours your eyes catch \u2026 That map lets doctors see inside a living body without a knife. (Part 05 3.42\u201324.88 s + 33.30\u201338.02 s)",
+  "vo_s": 23.962,
+  "words": 60,
+  "max_pause_s": 0.25,
+  "atempo": 1.02,
+  "bed": "hos003_s06_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -22.4,
+  "hook": "SOFT VS BONE",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 67.1
+  },
+  "who_card": {
+    "name": "WILHELM R\u00d6NTGEN",
+    "line2": "W\u00fcrzburg, 1895",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover X-rays?",
+  "youtube_title_draft": "How Do X-Rays Work?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.461,
+      "plate": "04_Generated-Clips/part03/11_hold_beam_v02.mp4",
+      "in_s": 1.5,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.461,
+      "t1": 7.359,
+      "plate": "04_Generated-Clips/03_cathode_tube_hero_v02.mp4",
+      "in_s": 1.8,
+      "crop_x": 120,
+      "lands_on": "a"
+    },
+    {
+      "t0": 7.359,
+      "t1": 9.807,
+      "plate": "04_Generated-Clips/02_wurzburg_lab_establishing_v03.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "Higher"
+    },
+    {
+      "t0": 9.807,
+      "t1": 12.892,
+      "plate": "04_Generated-Clips/part03/09_wonder_v02.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "They"
+    },
+    {
+      "t0": 12.892,
+      "t1": 16.3,
+      "plate": "04_Generated-Clips/part03/04_bones_hold_v03.mp4",
+      "in_s": 0.4,
+      "crop_x": 960,
+      "lands_on": "A"
+    },
+    {
+      "t0": 16.3,
+      "t1": 19.261,
+      "plate": "04_Generated-Clips/09_why_chase_invisible_v01.mp4",
+      "in_s": 0.3,
+      "crop_x": 420,
+      "lands_on": "turns"
+    },
+    {
+      "t0": 19.261,
+      "t1": 21.512,
+      "plate": "04_Generated-Clips/part03/08_medicine_question_v02.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "That"
+    },
+    {
+      "t0": 21.512,
+      "t1": 24.512,
+      "plate": "04_Generated-Clips/part03/11_hold_beam_v02.mp4",
+      "in_s": 1.5,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 18,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_003_s06_how_xrays_work_v01.mp4  dur=24.53s  audio=-23.3dB  motion=32.44  dhash=86c6cf93443ffe80\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_003_s06_how_xrays_work_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_003_s06_how_xrays_work_v01.mp4  0:24.53  mean -23.3 dB  peak -4.3 dB  147 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s06_how_xrays_work_v01/polish_gate_s06_how_xrays_work_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s06_how_xrays_work_v01/picture_qa_s06_how_xrays_work_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s06_how_xrays_work_v01/picture_qa_s06_how_xrays_work_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s06_how_xrays_work_v01/hos_003_s06_how_xrays_work_v01_t000.0.jpg",
+    "10_Shorts/_work_s06_how_xrays_work_v01/hos_003_s06_how_xrays_work_v01_t003.8.jpg",
+    "10_Shorts/_work_s06_how_xrays_work_v01/hos_003_s06_how_xrays_work_v01_t011.5.jpg",
+    "10_Shorts/_work_s06_how_xrays_work_v01/hos_003_s06_how_xrays_work_v01_t023.5.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s06_how_xrays_work_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-18",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "how do x rays work",
+      "how do x rays work simple",
+      "how do x rays produce images",
+      "how do x rays work physics",
+      "how x rays see through your skin",
+      "electromagnetic spectrum x rays"
+    ],
+    "note": "'how do x rays work', 'how do x rays work simple', 'how do x rays produce images', and 'how x rays see through your skin' are exact signed-out GB YouTube autocomplete hits. The lifted VO opens claim-first on the physical mechanism ('They are light with more punch than the colours your eyes catch, a band of the electromagnetic spectrum past ultraviolet. Higher energy, shorter wavelength. They slip through soft tissue more than bone and metal.') and how a detector turns that density difference into a picture inside the living body without a knife. Chief's call."
+  },
+  "air_date_draft_note": "2026-12-25 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 01 VO and Part 05 card WILHELM R\u00d6NTGEN \u00b7 W\u00fcrzburg, 1895, on screen 2.15\u20135.75 s (3.6 s) right after the 0\u20132 s hook. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No overlap with 003 S1 (Part 02 cardboard glow accident 22.5\u201341.5 s), S2 (Part 03 soft tissue vs bone density), S3 (Part 04 13.8\u201337.0 s why her hand / ring density), S4 (Part 02 46.3\u201381.5 s naming it X and testing book/hand/metal), or S5 (Part 04 7.40\u201311.96 s and 38.76\u201368.96 s first X-ray picture and medical spread): this lifts Part 05 3.42\u201324.88 s and 33.30\u201338.02 s."
+}
