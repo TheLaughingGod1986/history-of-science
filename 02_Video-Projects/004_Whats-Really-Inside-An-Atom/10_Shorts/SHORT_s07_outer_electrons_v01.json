@@ -1,0 +1,229 @@
+{
+  "id": "s07_outer_electrons",
+  "job": "J0593",
+  "test": "B (search-titled)",
+  "air_date_draft": "2027-01-02",
+  "file": "10_Shorts/hos_004_s07_outer_electrons_v01.mp4",
+  "sha256": "b103251e736c3f515ef8e85b9c37b760821649c73fdeea3bb0f30bb357c93b27",
+  "duration_s": 25.333,
+  "vo_source": "02_Voiceover/05_Master/hos_004_part05_vo_v01.mp3",
+  "vo_take_indices": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328
+  ],
+  "dropped": [
+    "Why do the columns repeat?",
+    "Two years later, in nineteen fifteen, Moseley was killed in the First World War at Gallipoli. He was twenty-seven. Many scientists believe he would have won a Nobel Prize. So this is what's really inside an atom. First it was an idea. Then Dalton gave each kind a weight. Thomson found a piece inside it. Rutherford found its tiny centre. And Moseley counted it."
+  ],
+  "route": "claim-first lift: The charge in the nucleus decides how many electrons an atom holds \u2026 and that number is the order of the periodic table. (201\u2013248, 313\u2013328 from Part 05)",
+  "vo_s": 24.758,
+  "words": 64,
+  "max_pause_s": 0.25,
+  "atempo": 1.04,
+  "bed": "hos004-full-sect2_score_bed_v02.mp3",
+  "bed_gain_db": -26.8,
+  "hook": "OUTER SHELL",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 2,
+    "block_pct": [
+      39.5,
+      60.4
+    ],
+    "widest_pct": 84.6
+  },
+  "who_card": {
+    "name": "HENRY MOSELEY",
+    "line2": "Atomic number, 1913",
+    "line1_px": 69,
+    "line1_pct_of_band": 11.3,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.2,
+    "out_s": 5.8,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "What's Really Inside an Atom?",
+  "youtube_title_draft": "Why Do Elements in the Same Group Have Similar Properties?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 4.678,
+      "plate": "04_Generated-Clips/part05/raw/v01/20_charge_electrons_v01.mp4",
+      "in_s": 1.8,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 4.678,
+      "t1": 7.537,
+      "plate": "04_Generated-Clips/part03/raw/v01/14_electrons_named_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "and"
+    },
+    {
+      "t0": 7.537,
+      "t1": 10.832,
+      "plate": "04_Generated-Clips/part03/raw/v01/15_positive_balance_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Elements"
+    },
+    {
+      "t0": 10.832,
+      "t1": 12.64,
+      "plate": "04_Generated-Clips/part02/raw/v01/13_gaps_left_v01.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "end"
+    },
+    {
+      "t0": 12.64,
+      "t1": 15.832,
+      "plate": "04_Generated-Clips/part03/raw/v01/10_two_thousand_lighter_v01.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "That's"
+    },
+    {
+      "t0": 15.832,
+      "t1": 18.918,
+      "plate": "04_Generated-Clips/part05/raw/v01/19_columns_why_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "and"
+    },
+    {
+      "t0": 18.918,
+      "t1": 22.308,
+      "plate": "04_Generated-Clips/part04/raw/v01/14_nucleus_electrons_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Every"
+    },
+    {
+      "t0": 22.308,
+      "t1": 25.308,
+      "plate": "04_Generated-Clips/part05/raw/v01/20_charge_electrons_v01.mp4",
+      "in_s": 1.8,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 20,
+  "caption_check": {
+    "ok": true,
+    "changes": 20,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_004_s07_outer_electrons_v01.mp4  dur=25.33s  audio=-24.1dB  motion=26.26  dhash=170f33296db24e06\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s07_outer_electrons_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_004_s07_outer_electrons_v01.mp4  0:25.33  mean -24.1 dB  peak -4.9 dB  152 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/polish_gate_s07_outer_electrons_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s07_outer_electrons_v01/hos_004_s07_outer_electrons_v01_t000.0.jpg",
+    "10_Shorts/_work_s07_outer_electrons_v01/hos_004_s07_outer_electrons_v01_t003.8.jpg",
+    "10_Shorts/_work_s07_outer_electrons_v01/hos_004_s07_outer_electrons_v01_t011.5.jpg",
+    "10_Shorts/_work_s07_outer_electrons_v01/hos_004_s07_outer_electrons_v01_t024.3.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s07_outer_electrons_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-18",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "why do elements in the same group have similar properties",
+      "why do elements in the same group have similar physical and chemical properties",
+      "groups in the periodic table",
+      "groups in the periodic table gcse",
+      "outer electrons",
+      "valence electrons periodic table",
+      "how electrons are arranged in an atom"
+    ],
+    "note": "'why do elements in the same group have similar properties', 'groups in the periodic table', 'valence electrons periodic table', and 'how electrons are arranged in an atom' are exact signed-out GB YouTube autocomplete hits. Title draft 'Why Do Elements in the Same Group Have Similar Properties?' (with 'How Outer Electrons Shape the Periodic Table' and 'Why Elements in the Same Column React Alike' as alternatives) is answered directly by the lifted Part 05 VO: the positive charge in the nucleus fixes how many electrons an atom holds, and elements with the same outer electrons land in the same column \u2014 explaining why soft alkali metals fizz together and why chlorine and iodine react alike. Fourth search-titled Short on HOS 004 (first of Round 4 after 001..006 reached 3 each). Chief's call."
+  },
+  "air_date_draft_note": "2027-01-02 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 05 setting HENRY MOSELEY \u00b7 Atomic number, 1913, on screen 2.2\u20135.8 s (3.6 s) right after 'The charge in the nucleus decides how many electrons an atom holds'. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "Zero overlap with 004 s01_how_small (Part 01), s02_every_eighth / s05_dalton (Part 02), s04_cathode_rays (Part 03), backcat_gold_foil (Part 04), or s06_moseley_atomic_number (Part 05 indices 53..158): this lifts indices 201..248 and 313..328 of Part 05 (outer electrons and why periodic table columns repeat), which had never been used in any 004 Short."
+}

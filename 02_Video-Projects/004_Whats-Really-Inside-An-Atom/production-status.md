@@ -607,3 +607,23 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-R
 ```
 
 **STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+## J0593 s07_outer_electrons_v01 (Test B search-titled Short, Part 05 lift) — Gemini, 18 Oct 2026
+
+- **Selection:** HOS 001, 002, 003, 004, 005, and 006 each have 3 built search-titled Test B Shorts (and 007+ do not have minted picture yet); per the tie-break rule (`004, 005, then the next locked`), `004` starts Round 4 (`s07_outer_electrons_v01`).
+- **What:** Built search-titled Test B Short `s07_outer_electrons_v01` from `004` Part 05 existing VO (`02_Voiceover/05_Master/hos_004_part05_vo_v01.mp3`, claim-first lift of indices 201–248 and 313–328, zero overlap with `s06_moseley_atomic_number_v01` indices 53–158 or with `s01`–`s05` / `backcat_gold_foil`: *"The charge in the nucleus decides how many electrons an atom holds, and the outer electrons decide how it behaves. Elements with the same kind of outer electrons end up in the same column. That's why the soft metals fizz together, and why chlorine and iodine react alike. Every element has its own number, and that number is the order of the periodic table."*), existing clean KEEP plates (`20_charge_electrons_v01` from `1.80 s`, `14_electrons_named_v01`, `15_positive_balance_v01`, `13_gaps_left_v01`, `10_two_thousand_lighter_v01`, `19_columns_why_v01`, `14_nucleus_electrons_v01`, and `20_charge_electrons_v01` loop), and Section 2 score bed (`hos004-full-sect2_score_bed_v02.mp3`). £0 spend, no upload.
+- **Title draft:** *Why Do Elements in the Same Group Have Similar Properties?* (exact signed-out GB YouTube autocomplete hit; alternatives *How Outer Electrons Shape the Periodic Table* / *Why Elements in the Same Column React Alike* / *What Do Outer Electrons Do in an Atom?*).
+- **On screen:** Frame-0 hook `OUTER **SHELL**` (9.01% cap, centred), WHO card `HENRY MOSELEY · Atomic number, 1913` (`2.2–5.8 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *What's Really Inside an Atom?* (`9.0–14.0 s`), captions throughout (`20/20` changes, ratio `1.0`), `3.0 s` loop back to `20_charge_electrons_v01`.
+- **File:** `10_Shorts/hos_004_s07_outer_electrons_v01.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s07_outer_electrons_v01.mp4`), **25.333 s**, 64 words, 152 wpm, sha256 `b103251e736c3f515ef8e85b9c37b760821649c73fdeea3bb0f30bb357c93b27`.
+- **Record & QA:** `10_Shorts/SHORT_s07_outer_electrons_v01.json`, `10_Shorts/_build_short_s07_outer_electrons_v01.py`, `10_Shorts/qa_s07_outer_electrons_v01/polish_gate_s07_outer_electrons_v01.json`, `10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s07_outer_electrons_v01.mp4  dur=25.33s  audio=-24.1dB  motion=26.26  dhash=170f33296db24e06   (--air-date 2027-01-02)
+PASS  hos_004_s07_outer_electrons_v01.mp4  0:25.33  mean -24.1 dB  peak -4.9 dB  152 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/polish_gate_s07_outer_electrons_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
