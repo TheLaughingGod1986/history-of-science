@@ -440,3 +440,23 @@ Gate run with `--air-date 2026-11-26` (gate only). Caption check: 20 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+## 18 Oct 2026 — Short `s06_ingenhousz_oxygen_v01` (Test B, third search-titled lift from Part 04, OWB J0533)
+
+- **Selection:** HOS 004 and 005 each have 3 search-titled Shorts (`s04`, `s05`, `s06`); HOS 006 had 2 search-titled Shorts (`s04_photosynthesis_v01`, `s05_charcoal_gas_v01`), making 006 the locked HOS long with the fewest built Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part04_bubbles_in_the_sunlight_v01_raw.mp3` claim-first lift (word indices `50..81` + `105..134`, dropping the `"It was the gas Priestley had found in seventeen seventy-four, which we now call oxygen. Then came the clue that solved Priestley's puzzle."` bridge): *"Tiny silver bubbles appear on the green leaf and rise to the top. He collected the bubbles and tested the gas. A candle flame burned brighter in it than in ordinary air. Move the jar into the shade, and the bubbles stop. Move it back into the sun, and they start again. Only the green parts made bubbles. Roots and flowers didn't."* 62 words, pauses capped at 0.28 s, `atempo=1.05`, 24.756 s VO + 0.55 s tail = 25.333 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P4:05_bubbles_macro_t1` (frame 0 and 3.0 s loop), `P4:03_plunge_leaf_t1`, `P4:06_collect_blaze_t3` (with Chief's bottom-6% seam trim `scale=2048:1152,crop=1920:1080:64:0`), `P3:11_candle_tall_t1`, `P3:18_dark_window_t1`, `P4:12_shutters_open_t1`, `P4:10_only_green_t2`. Own-synthesis warm harmonic pad (`hos006_s06_synth_pad_v01.wav`) at −20 dB under VO. Hook **LEAF IN SUN** (SUN in yellow). Person/date card **JAN INGENHOUSZ · Near London, 1779** at 4.6–8.2 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.33–25.25 s.
+- **Title draft:** *How Do Plants Make Oxygen?* (signed-out GB YouTube autocomplete exact hit, 18 Oct 2026; alts *How Do Plants Produce Oxygen?*, *Where Does Oxygen Come From?*, *Who Discovered Photosynthesis?*).
+- **File:** `10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4`, 25.333 s, sha256 `3daf38e7f3f5becb5e63c838fba6dfdf1d662ef3f6782cd55961d8b992cd11ae`; phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4`.
+
+```
+PASS  hos_006_s06_ingenhousz_oxygen_v01.mp4  dur=25.33s  audio=-24.8dB  motion=15.38  dhash=9296173351587f6c
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s06_ingenhousz_oxygen_v01_open_sheet.jpg
+PASS  hos_006_s06_ingenhousz_oxygen_v01.mp4  0:25.33  mean -24.8 dB  peak -4.9 dB  147 wpm
+polish gate PASS: 0 of 8 rows failed, 0 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s06_ingenhousz_oxygen_v01/polish_gate_s06_ingenhousz_oxygen_v01.json
+picture QA PASS: 0 of 8 cuts fail, 0 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s06_ingenhousz_oxygen_v01/picture_qa_s06_ingenhousz_oxygen_v01/PICTURE_QA.md
+```
+
+Gate run with `--air-date 2026-12-22` (gate only). Caption check: 19 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
