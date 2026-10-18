@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s08_periodic_table_work_v01.mp4",
+  "edge_floor": 0.0465,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s03_a",
+      "cut": 2,
+      "t": 8.59,
+      "source": "10_zoo_became_city_v01_try4.mp4",
+      "why": [
+        "low detail: edge density 0.0463 < film p5 0.0465"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "01b_empty_seats_waiting_v01_try1.mp4",
+      "t": 1.83,
+      "std": 50.4,
+      "mean": 119.69,
+      "p95": 209.0,
+      "edge": 0.0848,
+      "hf": 14.3,
+      "lf": 40.53,
+      "std8": 44.21,
+      "edge8": 0.4365,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_Noble",
+      "source": "02_guests_as_work_v01_try3.mp4",
+      "t": 5.53,
+      "std": 68.93,
+      "mean": 124.15,
+      "p95": 222.0,
+      "edge": 0.0469,
+      "hf": 8.38,
+      "lf": 65.34,
+      "std8": 66.94,
+      "edge8": 0.2422,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_a",
+      "source": "10_zoo_became_city_v01_try4.mp4",
+      "t": 8.59,
+      "std": 43.97,
+      "mean": 125.06,
+      "p95": 177.0,
+      "edge": 0.0463,
+      "hf": 8.14,
+      "lf": 40.16,
+      "std8": 41.63,
+      "edge8": 0.266,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0463 < film p5 0.0465"
+      ]
+    },
+    {
+      "cut": 3,
+      "row": "s04_The",
+      "source": "11b_late_for_dinner_v01_try2.mp4",
+      "t": 11.32,
+      "std": 69.81,
+      "mean": 149.23,
+      "p95": 234.0,
+      "edge": 0.0783,
+      "hf": 11.19,
+      "lf": 63.97,
+      "std8": 66.51,
+      "edge8": 0.3259,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_Then",
+      "source": "08b_weight_vs_identity_v01_try1.mp4",
+      "t": 15.01,
+      "std": 57.25,
+      "mean": 163.44,
+      "p95": 215.0,
+      "edge": 0.0508,
+      "hf": 5.56,
+      "lf": 51.73,
+      "std8": 54.95,
+      "edge8": 0.3429,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_Mass",
+      "source": "10_rock_not_fire_v01.mp4",
+      "t": 18.12,
+      "std": 51.07,
+      "mean": 94.32,
+      "p95": 184.0,
+      "edge": 0.0982,
+      "hf": 10.34,
+      "lf": 43.49,
+      "std8": 46.62,
+      "edge8": 0.4865,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_The",
+      "source": "08_property_waves_v08.mp4",
+      "t": 20.7,
+      "std": 46.39,
+      "mean": 144.65,
+      "p95": 217.0,
+      "edge": 0.0615,
+      "hf": 8.92,
+      "lf": 41.73,
+      "std8": 43.68,
+      "edge8": 0.2953,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_loop",
+      "source": "loop_end_01b_empty_seats_waiting_v01_try1.mp4",
+      "t": 23.83,
+      "std": 47.93,
+      "mean": 124.53,
+      "p95": 191.0,
+      "edge": 0.0618,
+      "hf": 8.45,
+      "lf": 41.69,
+      "std8": 44.29,
+      "edge8": 0.3852,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

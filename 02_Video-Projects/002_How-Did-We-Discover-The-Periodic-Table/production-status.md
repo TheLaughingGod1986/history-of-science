@@ -204,3 +204,24 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002
 ```
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 18 Oct 2026 — Short `s08_periodic_table_work_v01` (Test B, third search-titled lift from Part 05, OWB J0563)
+
+- **Selection:** HOS 003, 004, 005, and 006 each have 3 built search-titled Shorts (`s04`, `s05`, `s06`); HOS 002 had only 2 built search-titled Shorts (`s06_atomic_weights_v01`, `s07_mendeleev_cards_v01`), making 002 the next locked HOS long with the fewest built search-titled Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part05_the_guests_arrive_v01.wav` claim-first lift (`42.30–63.65 s` + `74.00–83.48 s`, zero overlap with S1–S5, `s06_atomic_weights`, `s07_mendeleev_cards`, Newlands octaves, or the Oct 2 four-elements Short): *"But the table is not finished. It never was, in 1869. Noble gases crash the party, colourless, almost aloof, a whole family nobody had a column for. The map stretches. A new street appears. Then a sharper ruler. Atomic number. X-ray fingerprints. Mass was the first coordinate. The deeper coordinate is how many protons sit in the nucleus. A photon can read the difference."* 64 words, pauses capped at 0.18 s, `atempo=1.06`, 24.910 s VO + 0.42 s tail = 25.333 s total.
+- **Picture & bed (0 spend):** Part 05, Part 01, and Part 03 KEEP plates `P5:01b_empty_seats_waiting_v01_try1` (`0.60 s` glowing wooden periodic pigeonhole window on frame 0 and 3.0 s loop), `P5:02_guests_as_work_v01_try3`, `P5:10_zoo_became_city_v01_try4`, `P5:11b_late_for_dinner_v01_try2`, `P5:08b_weight_vs_identity_v01_try1` (`crop_x=1200`), `P1:10_rock_not_fire_v01`, `P3:08_property_waves_v08`. Own-synthesis warm harmonic pad (`hos002_s08_synth_pad_v01.wav`, G-lydian/Em9 voicing, distinct from `s06` C-lydian and `s07` F-lydian) at −20 dB under VO. Hook **NOBLE GASES** (GASES in yellow). Person/date card **DMITRI MENDELEEV · First table, 1869** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover the Periodic Table?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.33–25.25 s.
+- **Title draft:** *How Does the Periodic Table Work?* (signed-out GB YouTube autocomplete exact hit `how does the periodic table work`, 18 Oct 2026; alts *How Is the Periodic Table Arranged?*, *Noble Gases and the Periodic Table*).
+- **File:** `10_Shorts/hos_002_s08_periodic_table_work_v01.mp4`, 25.333 s, sha256 `daf22bb6b9c687d39413702f0f4e7be96975cfd4550d71715884b38fcb6e75d4`; phone copy iCloud `HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s08_periodic_table_work_v01.mp4`.
+
+```
+PASS  hos_002_s08_periodic_table_work_v01.mp4  dur=25.33s  audio=-23.4dB  motion=38.55  dhash=8c8c0c0c1c0c848c
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s08_periodic_table_work_v01_open_sheet.jpg
+PASS  hos_002_s08_periodic_table_work_v01.mp4  0:25.33  mean -23.4 dB  peak -3.9 dB  154 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/polish_gate_s08_periodic_table_work_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/picture_qa_s08_periodic_table_work_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/picture_qa_s08_periodic_table_work_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-28` (gate only). Caption check: 21 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
