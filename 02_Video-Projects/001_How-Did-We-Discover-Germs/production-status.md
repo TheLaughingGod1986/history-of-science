@@ -162,3 +162,25 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+
+## 18 Oct 2026 — Short `s09_lister_antiseptic_v01` (Test B, third search-titled lift from Part 05, OWB J0578)
+
+- **Selection:** HOS 002, 003, 004, 005, and 006 each have 3 built search-titled Shorts; HOS 001 had only 2 built search-titled Shorts (`s07_semmelweis_hands_v01`, `s08_pasteur_germs_v01`), making 001 the next locked HOS long with the fewest built search-titled Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part05_clean_hands_v01.wav` claim-first lift (`0.00–27.82 s` from Part 05, zero overlap with `s05_soap` which used `27.94–45.68 s`, `s06_carbolic_spray` which recorded separate Shorts VO, or `s01_shadow`, `s02_pond`, `s03_vector`, `s04_flask`, `s07_semmelweis_hands`, `s08_pasteur_germs`): *"Joseph Lister took the new idea into the bloodiest room in medicine. If microbes seed wounds, then kill them on contact. Spray. Scrub. Sterilise what you can. Suddenly successful operations stop ending in fever and ruin. Prevention becomes a craft. Not a prayer. Not a perfume. A protocol. What would you feel as a patient, watching a surgeon wash as if the enemy were real?"* 65 words, pauses capped at 0.20 s, `atempo=1.10`, 22.147 s VO + 0.42 s tail = 22.60 s total.
+- **Picture & bed (0 spend):** Part 05, Part 01, and Part 03 clean takes `03_protocol_v01b` (`0.60 s` Joseph Lister washing hands at stone basin on frame 0 and 3.0 s loop, `crop_x=480`), `05_doctor_hands_instruments_from_v08` (`crop_x=580`), `06_soap_hands_v01` (`crop_x=560`), `05_theatre_wins_v01d` (`crop_x=620`), `08_last_light_v01d` (`crop_x=656`), `05_wash_works_v03` (`crop_x=480`), `06_soap_hands_v02d` (`crop_x=560`). Own-synthesis warm harmonic pad (`hos001_s09_synth_pad_v01.wav`, A-dorian/Fmaj9 voicing, distinct from `s07` C-dorian and `s08` Eb-lydian) at −20 dB under VO. Hook **CLEAN CRAFT** (CLEAN in yellow). Person/date card **JOSEPH LISTER · Antiseptic surgery, 1860s** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover Germs?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 19.57–22.52 s.
+- **Title draft:** *How Joseph Lister Invented Antiseptic Surgery* (signed-out GB YouTube autocomplete exact hits `joseph lister antiseptic surgery` / `joseph lister gcse history` / `antiseptic surgery` / `father of antiseptic surgery`, 18 Oct 2026; alts *How Did Joseph Lister Stop Surgery Infections?*, *Why Joseph Lister Started Antiseptic Surgery*, *The Surgeon Who Proved Clean Hands Save Lives*).
+- **File:** `10_Shorts/hos_001_s09_lister_antiseptic_v01.mp4`, 22.60 s, sha256 `e86a3a31adb7fb6e46fea9954959d837e8fe825fa49d62e286ce10de0bbbbfe3`; phone copy iCloud `HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s09_lister_antiseptic_v01.mp4`.
+
+```
+PASS  hos_001_s09_lister_antiseptic_v01.mp4  dur=22.6s  audio=-22.8dB  motion=37.22  dhash=2723a62b08481808
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s09_lister_antiseptic_v01_open_sheet.jpg
+PASS  hos_001_s09_lister_antiseptic_v01.mp4  0:22.60  mean -22.8 dB  peak -3.7 dB  173 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s09_lister_antiseptic_v01/polish_gate_s09_lister_antiseptic_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s09_lister_antiseptic_v01/picture_qa_s09_lister_antiseptic_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s09_lister_antiseptic_v01/picture_qa_s09_lister_antiseptic_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-30` (gate only). Caption check: 21 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+

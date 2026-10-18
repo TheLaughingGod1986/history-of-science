@@ -1,0 +1,163 @@
+{
+  "id": "s09_lister_antiseptic",
+  "job": "J0578",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-30",
+  "file": "10_Shorts/hos_001_s09_lister_antiseptic_v01.mp4",
+  "sha256": "e86a3a31adb7fb6e46fea9954959d837e8fe825fa49d62e286ce10de0bbbbfe3",
+  "duration_s": 22.6,
+  "vo_source": "02_Voiceover/part05_clean_hands_v01.wav",
+  "vo_span_windows_s": [
+    [
+      0.0,
+      27.82
+    ]
+  ],
+  "route": "claim-first lift: Joseph Lister took the new idea into the bloodiest room in medicine. If microbes seed wounds, then kill them on contact. \u2026 watching a surgeon wash as if the enemy were real? (0.00\u201327.82 s from Part 05)",
+  "vo_s": 22.147,
+  "words": 65,
+  "max_pause_s": 0.2,
+  "atempo": 1.1,
+  "bed": "hos001_s09_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -21.8,
+  "hook": "CLEAN CRAFT",
+  "hook_layer": {
+    "font_size": 237,
+    "cap_px": 169,
+    "cap_pct": 8.8,
+    "lines": 2,
+    "block_pct": [
+      39.8,
+      60.2
+    ],
+    "widest_pct": 80.4
+  },
+  "who_card": {
+    "name": "JOSEPH LISTER",
+    "line2": "Antiseptic surgery, 1860s",
+    "line1_px": 66,
+    "line1_pct_of_band": 10.9,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover Germs?",
+  "youtube_title_draft": "How Joseph Lister Invented Antiseptic Surgery",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.561,
+      "plate": "04_Generated-Clips/part05/raw/v01_fast_probe/03_protocol_v01b.mp4",
+      "in_s": 0.6,
+      "crop_x": 480,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.561,
+      "t1": 7.724,
+      "plate": "04_Generated-Clips/part01/raw/v09_splice/05_doctor_hands_instruments_from_v08.mp4",
+      "in_s": 0.6,
+      "crop_x": 580,
+      "lands_on": "If"
+    },
+    {
+      "t0": 7.724,
+      "t1": 9.957,
+      "plate": "04_Generated-Clips/part05/raw/v01_fast_probe/06_soap_hands_v01.mp4",
+      "in_s": 0.6,
+      "crop_x": 560,
+      "lands_on": "Scrub."
+    },
+    {
+      "t0": 9.957,
+      "t1": 13.296,
+      "plate": "04_Generated-Clips/part05/raw/v01_fast_probe/05_theatre_wins_v01d.mp4",
+      "in_s": 0.6,
+      "crop_x": 620,
+      "lands_on": "Suddenly"
+    },
+    {
+      "t0": 13.296,
+      "t1": 15.055,
+      "plate": "04_Generated-Clips/part05/raw/v01_fast_probe/08_last_light_v01d.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "Prevention"
+    },
+    {
+      "t0": 15.055,
+      "t1": 17.882,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/05_wash_works_v03.mp4",
+      "in_s": 0.6,
+      "crop_x": 480,
+      "lands_on": "Not"
+    },
+    {
+      "t0": 17.882,
+      "t1": 19.567,
+      "plate": "04_Generated-Clips/part05/raw/v01_fast_probe/06_soap_hands_v02d.mp4",
+      "in_s": 0.6,
+      "crop_x": 560,
+      "lands_on": "What"
+    },
+    {
+      "t0": 19.567,
+      "t1": 22.567,
+      "plate": "04_Generated-Clips/part05/raw/v01_fast_probe/03_protocol_v01b.mp4",
+      "in_s": 0.6,
+      "crop_x": 480,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 21,
+  "caption_check": {
+    "ok": true,
+    "changes": 21,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_001_s09_lister_antiseptic_v01.mp4  dur=22.6s  audio=-22.8dB  motion=37.22  dhash=2723a62b08481808\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s09_lister_antiseptic_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_001_s09_lister_antiseptic_v01.mp4  0:22.60  mean -22.8 dB  peak -3.7 dB  173 wpm\n   first minute: title_question 18.08s\n   warn  replace at ~0:08.98: script 'contact spray scrub sterilise what you can' / heard 'contact spray scrub sterilize what you can' \u2014 sounds alike (likely the transcriber); listen"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s09_lister_antiseptic_v01/polish_gate_s09_lister_antiseptic_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s09_lister_antiseptic_v01/picture_qa_s09_lister_antiseptic_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s09_lister_antiseptic_v01/picture_qa_s09_lister_antiseptic_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s09_lister_antiseptic_v01/hos_001_s09_lister_antiseptic_v01_t000.0.jpg",
+    "10_Shorts/_work_s09_lister_antiseptic_v01/hos_001_s09_lister_antiseptic_v01_t003.8.jpg",
+    "10_Shorts/_work_s09_lister_antiseptic_v01/hos_001_s09_lister_antiseptic_v01_t011.5.jpg",
+    "10_Shorts/_work_s09_lister_antiseptic_v01/hos_001_s09_lister_antiseptic_v01_t021.6.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s09_lister_antiseptic_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-18",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "joseph lister antiseptic surgery",
+      "joseph lister gcse history",
+      "antiseptic surgery",
+      "father of antiseptic surgery",
+      "joseph lister"
+    ],
+    "note": "'joseph lister antiseptic surgery', 'joseph lister gcse history', 'antiseptic surgery', and 'father of antiseptic surgery' are exact signed-out GB YouTube autocomplete hits. The lifted VO opens on Joseph Lister taking germ theory into the operating theatre \u2014 spraying, scrubbing, and sterilising instruments on contact so operations stopped ending in fever and ruin and prevention became a craft and protocol. Third search-titled Short on HOS 001 (matching 002, 003, 004, 005, and 006 which each have 3). Chief's call."
+  },
+  "air_date_draft_note": "2026-12-30 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 05 VO and script JOSEPH LISTER \u00b7 Antiseptic surgery, 1860s, on screen 2.15\u20135.75 s (3.6 s) right after 'Joseph Lister took the new idea into the bloodiest room in medicine.' Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "Zero overlap with 001 s05_soap (which lifted 27.94\u201345.68 s of Part 05: 'And you live inside that victory every time soap meets your hands... what else is still invisible to us?'), s06_carbolic_spray (separate Shorts VO), s01_shadow (Part 01), s02_pond (Part 02), s03_vector / s07_semmelweis_hands (Part 03), or s04_flask / s08_pasteur_germs (Part 04): this lifts 0.00\u201327.82 s of Part 05, which had never been used in any 001 Short."
+}
