@@ -225,3 +225,22 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did
 Gate run with `--air-date 2026-12-28` (gate only). Caption check: 21 changes, ratio 1.0. Freezedetect: 0 events.
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+
+## 18 Oct 2026 — Thumbnail B `v08` `ONE GLOWING GAP` (`1.29x` empty-slot hero push-in, OWB J0579)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002 -> 001 -> 005` rotation, `002` got `B v07` in `J0534`, `001` got `B v04` in `J0549`, and `005` got `B v06` in `J0564`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` plates only):** Built `Selected/hos_002_thumb_B_one_glowing_gap_v08.jpg` (`1280×720`, `202,587` bytes, sha256 `418d8e8b15e93fcc3ae6fd981482eb31177f62bcb2023849450f7c0b48b51cf2`) via `08_Thumbnail/_compose_hos_002_thumb_B_one_glowing_gap_v08.py` and `08_Thumbnail/THUMB_B_ONE_GLOWING_GAP_v08.json` from `_stills_v05/hos_002_empty_slot_hero_v01.jpg` with a `1.29×` push-in + clarity boost on the right-hand glowing golden gap inside Mendeleev's wooden periodic-table cabinet (`heroBox = [613, 214, 1009, 559]`, `396×345 px`, `+39%` over `v05`), Explorer cutout from `Selected/hos_002_thumb_A_gallium_live_v02.png` in lower-left at `54.0%` frame height (`389 px`, `box = [0, 331, 256, 720]`), and Georgia Bold upper-left 3-word hook **`ONE GLOWING GAP`** (`GAP` in gold `#E49C20`, framed by gold scroll flourishes at `y=17..305`).
+- **Scores (`THUMB_B_ONE_GLOWING_GAP_v08.json`):**
+  - **HOOK: PASS** — `ONE GLOWING GAP` (3 words, punch word `GAP` in gold) names the concrete visual hero on the right two-thirds (the single glowing golden vacancy inside Mendeleev's wooden periodic-table cabinet; `002` script Intro & Part 04–05: *"why the gaps were the cleverest part... left gaps for undiscovered elements... Hold on the last glowing vacancy"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), or `J0534` (`METAL TURNS LIQUID`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=89..515`, `y=44..282`, framed by top/bottom gold scroll flourishes at `y=17..305`) sits completely left of the pushed-in glowing hero gap (`x=613..1009`), above the Explorer's hair (`y=331`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_one_glowing_gap_v08_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_one_glowing_gap_v08_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_one_glowing_gap_v08_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_one_glowing_gap_v08_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_one_glowing_gap_v08_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
