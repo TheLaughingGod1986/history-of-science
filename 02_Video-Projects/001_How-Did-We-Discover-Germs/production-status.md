@@ -240,3 +240,22 @@ Gate run with `--air-date 2027-01-06` (gate only). Caption check: 21 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+
+## 19 Oct 2026 — Thumbnail B `v07` `UNSEEN POND MICROBES` (`1.175x` pond-water droplet hero push-in, OWB J0685)
+
+- **Selection:** HOS `001` (`_C92tIJCk8A`, *How Did We Discover Germs?*) is live on YouTube with no armed Test & Compare in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `001` got `B v06` in `J0640`, `005` got `B v08` in `J0655`, and `002` got `B v10` in `J0670`, making `001` next in rotation).
+- **Build (`£0` spend, existing `001` plates only):** Built `Selected/hos_001_thumb_B_unseen_pond_microbes_v07.jpg` (`1280×720`, `235,369` bytes, sha256 `cf3bbefadf0c61e5c386a5919a71ad10c35d59cfd6a629fd94c2dc839265d731`) via `08_Thumbnail/_compose_hos_001_thumb_B_unseen_pond_microbes_v07.py` and `08_Thumbnail/THUMB_B_UNSEEN_POND_MICROBES_v07.json` from `04_Generated-Clips/part02/refs/03_drop_of_water_v01.jpg` and `08_Thumbnail/Selected/hos_001_tc_thumb_v02.jpg` with a `1.175×` combined hero push-in + microbe/slide-rim clarity boost on the right-hand glowing pond-water sphere teeming with faceless rods, spiked spheres & golden spirals (`heroBox = [588, 96, 1026, 534]`, `438×438 px`, `+39%` larger area than `v03`'s `372×372 px`; `slideBox = [420, 468, 1223, 650]`), Explorer in lower-left at `54.4%` frame height (`392 px`, `box = [88, 328, 316, 720]`), and Georgia Bold upper-left 3-word hook **`UNSEEN POND MICROBES`** (`MICROBES` in gold `#E49C20`, framed by the original painted gold scroll flourishes at `y=20..356`).
+- **Scores (`THUMB_B_UNSEEN_POND_MICROBES_v07.json`):**
+  - **HOOK: PASS** — `UNSEEN POND MICROBES` (3 words, punch word `MICROBES` in gold) names the concrete microorganisms visible inside Leeuwenhoek's glowing pond-water bead on the microscope slide (`001` script Part 01 & Part 02: *"microbes drifting unseen... A drop of pond water is not empty. It is a bustling kingdom — darting shapes, spinning cells... People could watch microbes dance"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover Germs?*), Live A (*WHAT PROVED GERMS WERE REAL?*), `J0391` (`THE SWAN NECK`), `J0457` (`TRAPPED IN GLASS`), `J0503` (`DROP OF WATER`), `J0549` (`BOILED CLEAR BROTH`), `J0594` (`TINY LIVING CELLS`), or `J0640` (`STERILE LIQUID FLASK`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=78..492`, `y=80..298`, framed by `001`'s original painted gold scroll flourishes at `y=20..356`) sits completely left of the pushed-in glowing pond-water sphere (`x=588..1026`), above the Explorer's hair (`y=328`) and bottom flourish (`y=318`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_001_thumb_B_unseen_pond_microbes_v07_preview.jpg`), style sheet (`Selected/hos_001_thumb_B_unseen_pond_microbes_v07_style_sheet.jpg`), and 4-panel strip (`Selected/hos_001_thumb_TC_4way_unseen_pond_microbes_v07_phone_168.jpg`).
+
+```
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_unseen_pond_microbes_v07_preview.jpg
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_unseen_pond_microbes_v07_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001_How-Did-We-Discover-Germs)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
