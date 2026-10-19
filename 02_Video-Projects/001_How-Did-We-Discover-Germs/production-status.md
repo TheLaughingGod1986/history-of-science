@@ -218,3 +218,25 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001
 ```
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 19 Oct 2026 — Short `s10_miasma_microscope_v01` (Test B, fourth search-titled lift from Part 02, OWB J0669)
+
+- **Selection:** HOS 002, 003, 004, 005, and 006 each have 4 built search-titled Shorts; HOS 001 had only 3 built search-titled Shorts (`s07_semmelweis_hands_v01`, `s08_pasteur_germs_v01`, `s09_lister_antiseptic_v01`), making 001 the next locked HOS long with the fewest built search-titled Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `06_Sound-Effects/v08_part02_fx/_vo_from_v07.wav` (Part 02 clean VO) claim-first lift (`23.35–45.20 s` and `54.35–60.60 s`, zero overlap with `s02_pond` which lifted `0.00–20.50 s`, `s01_shadow`, `s03_vector`, `s04_flask`, `s05_soap`, `s06_carbolic_spray`, `s07_semmelweis_hands`, `s08_pasteur_germs`, or `s09_lister_antiseptic`): *"Suddenly the world has a second population living under your nose — a civilisation of cells dancing in a bead of liquid. But seeing is not the same as blaming. People could watch microbes dance and still insist disease came from foul smells, angry gods, or imbalance. The microscope showed a tiny world. The story said: clean the air. Burn herbs. Open windows. Chase the stench."* 65 words, pauses capped at 0.20 s, `atempo=1.05`, 24.357 s VO + 0.42 s tail = 24.80 s total.
+- **Picture & bed (0 spend):** Part 02, Part 01, and Part 03 clean takes `04_plunge_into_drop_from_v01_cut` (`3.20 s` inside the glowing pond-water bead teeming with faceless rods and spiked spheres on frame 0 and 3.0 s loop, `crop_x=656`), `08_drop_hits_slide_v06` (`crop_x=620`), `08_scope_focus_v05` (`crop_x=420`), `beat_v01` (`crop_x=780`), `aisle_walk_t2` (`crop_x=656`), `08_ward_vs_lens_v04` (`crop_x=880`), `02_perfume_windows_v02` (`crop_x=480`). Own-synthesis warm harmonic pad (`hos001_s10_synth_pad_v01.wav`, D-dorian/Gmaj9 voicing, distinct from `s07` C-dorian, `s08` Eb-lydian, and `s09` A-dorian) at −20 dB under VO. Hook **TINY WORLD** (TINY in yellow). Person/date card **VAN LEEUWENHOEK · First microbes seen, 1674** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover Germs?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 21.78–24.72 s.
+- **Title draft:** *What Is the Miasma Theory of Disease?* (signed-out GB YouTube autocomplete exact hits `miasma theory of disease` / `miasma theory vs germ theory` / `what is miasma` / `how did we discover bacteria under microscope` / `leeuwenhoek microscope`, 19 Oct 2026; alts *How Did We First See Bacteria Under a Microscope?*, *Who First Discovered Bacteria Under a Microscope?*, *Miasma Theory vs Germ Theory: Why Doctors Blamed Bad Air*).
+- **File:** `10_Shorts/hos_001_s10_miasma_microscope_v01.mp4`, 24.80 s, sha256 `a4d4f4b1e01600c1abc88f009dad87c523707777d5ddb4c6c42bd636010eaa24`; phone copy iCloud `HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s10_miasma_microscope_v01.mp4`.
+
+```
+PASS  hos_001_s10_miasma_microscope_v01.mp4  dur=24.8s  audio=-23.6dB  motion=42.09  dhash=8bc7a451470b6eac
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s10_miasma_microscope_v01_open_sheet.jpg
+PASS  hos_001_s10_miasma_microscope_v01.mp4  0:24.80  mean -23.6 dB  peak -4.0 dB  157 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s10_miasma_microscope_v01/polish_gate_s10_miasma_microscope_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s10_miasma_microscope_v01/picture_qa_s10_miasma_microscope_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s10_miasma_microscope_v01/picture_qa_s10_miasma_microscope_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2027-01-06` (gate only). Caption check: 21 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
