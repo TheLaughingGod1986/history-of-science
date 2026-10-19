@@ -926,3 +926,20 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Har
 
 **STOP:** parked for Chief review, title and slot. Nothing uploaded.
 
+## 19 Oct 2026 — Thumbnail B `v07` `SWOLLEN BLUE CORDS` (`1.095x` hero push-in + forearm blue-cord & arterial-glow boost, OWB J0609)
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v06` in `J0564`, `002` got `B v08` in `J0579`, and `001` got `B v05` in `J0594`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_swollen_blue_cords_v07.jpg` (`1280×720`, `254,484` bytes, sha256 `2acc663367d35dda77a06ea279ff15961b111886ab8c3928bd98a65256a82feb`) via `08_Thumbnail/_compose_hos_005_thumb_B_swollen_blue_cords_v07.py` and `08_Thumbnail/THUMB_B_SWOLLEN_BLUE_CORDS_v07.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.095×` push-in + targeted local clarity/contrast boost on the branching blue venous cords on the pale forearm below the tight linen knot (`x=680..980, y=420..680`) and the stopped glowing red arterial column above the band (`x=890..1120, y=0..290`, `heroBox = [556, 0, 1244, 706]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`SWOLLEN BLUE CORDS`** (`SWOLLEN` in gold `#E49C20`, `BLUE` and `CORDS` in cream, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_SWOLLEN_BLUE_CORDS_v07.json`):**
+  - **HOOK: PASS** — `SWOLLEN BLUE CORDS` (3 words, punch word `SWOLLEN` in gold) names the concrete visible venous proof below the tight linen band on the pale forearm (`De Motu Cordis` ch. 11 & 13, `FACT_NOTES_v01` rows 26–28; `005` script Part 04 line 100: *"the veins below the band swell into blue cords"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), `J0518` (`TRAPPED UNDER SKIN`), or `J0564` (`STOPPED RED PULSE`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=99..477`, `y=71..315`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=556..1244`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_swollen_blue_cords_v07_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_swollen_blue_cords_v07_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_swollen_blue_cords_v07_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_swollen_blue_cords_v07_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_swollen_blue_cords_v07_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
