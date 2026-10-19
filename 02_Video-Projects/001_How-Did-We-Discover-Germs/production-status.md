@@ -200,3 +200,21 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001
 ```
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 19 Oct 2026 — Thumbnail B `v06` `STERILE LIQUID FLASK` (`1.06x` swan-neck flask hero push-in, OWB J0640)
+
+- **Selection:** HOS `001` (`_C92tIJCk8A`, *How Did We Discover Germs?*) is live on YouTube with no armed Test & Compare in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `001` got `B v05` in `J0594`, `005` got `B v07` in `J0609`, and `002` got `B v09` in `J0624`, making `001` next in rotation).
+- **Build (`£0` spend, existing `001` key-art plate only):** Built `Selected/hos_001_thumb_B_sterile_liquid_flask_v06.jpg` (`1280×720`, `262,629` bytes, sha256 `0192354a4a58cf7815763dbb3db1997f456957c9722409bd7e194b6c867ddbee`) via `08_Thumbnail/_compose_hos_001_thumb_B_sterile_liquid_flask_v06.py` and `08_Thumbnail/THUMB_B_STERILE_LIQUID_FLASK_v06.json` from `Selected/hos_001_tc_thumb_v02.jpg` with a `1.06×` hero push-in + glass/liquid specular clarity boost on the right-hand swan-neck flask, golden sterile liquid bulb & U-bend dust trap (`heroBox = [582, 12, 1138, 694]`), Explorer in lower-left at `54.4%` frame height (`392 px`, `box = [88, 328, 316, 720]`), and Georgia Bold upper-left 3-word hook **`STERILE LIQUID FLASK`** (`FLASK` in gold `#E49C20`, framed by the original painted gold scroll flourishes at `y=20..356`).
+- **Scores (`THUMB_B_STERILE_LIQUID_FLASK_v06.json`):**
+  - **HOOK: PASS** — `STERILE LIQUID FLASK` (3 words, punch word `FLASK` in gold) names the concrete apparatus (`FLASK`) and visible unspoiled liquid (`STERILE LIQUID`) inside Pasteur's giant curved-neck flask on the right (`001` script Part 04: *"Pasteur’s swan-neck flask experiments showed broth stays sterile when microbes cannot reach it... The liquid stays clear... Inside that clear liquid sits a paradox the old world hated"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover Germs?*), `J0391` (`THE SWAN NECK`), `J0457` (`TRAPPED IN GLASS`), `J0503` (`DROP OF WATER`), `J0549` (`BOILED CLEAR BROTH`), or `J0594` (`TINY LIVING CELLS`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=103..467`, `y=63..315`, framed by `001`'s original painted gold scroll flourishes at `y=20..356`) sits completely left of the pushed-in hero swan-neck flask (`x=582..1138`), above the Explorer's hair (`y=328`) and bottom flourish (`y=318`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_001_thumb_B_sterile_liquid_flask_v06_preview.jpg`), style sheet (`Selected/hos_001_thumb_B_sterile_liquid_flask_v06_style_sheet.jpg`), and 4-panel strip (`Selected/hos_001_thumb_TC_4way_sterile_liquid_flask_v06_phone_168.jpg`).
+
+```
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_sterile_liquid_flask_v06_preview.jpg
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_sterile_liquid_flask_v06_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001_How-Did-We-Discover-Germs)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
