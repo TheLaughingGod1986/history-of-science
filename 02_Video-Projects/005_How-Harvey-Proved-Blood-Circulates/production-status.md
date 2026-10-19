@@ -943,3 +943,20 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+## 19 Oct 2026 — Thumbnail B `v08` `PINCHED LINEN KNOT` (`1.095x` hero push-in + linen-knot, forearm blue-cord & arterial-glow boost, OWB J0655)
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v07` in `J0609`, `002` got `B v09` in `J0624`, and `001` got `B v06` in `J0640`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_pinched_linen_knot_v08.jpg` (`1280×720`, `253,876` bytes, sha256 `812dde2ede8f1628c1ab8f675ab0c01b8d2d84bcb082d30ea50e4548d5622539`) via `08_Thumbnail/_compose_hos_005_thumb_B_pinched_linen_knot_v08.py` and `08_Thumbnail/THUMB_B_PINCHED_LINEN_KNOT_v08.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.095×` push-in + targeted local clarity/contrast boost on the tight linen knot and strip pinching the upper arm (`x=835..1240, y=260..420`), the branching blue venous cords on the pale forearm below the knot (`x=680..980, y=420..680`), and the stopped glowing red arterial column above the band (`x=890..1120, y=0..290`, `heroBox = [556, 0, 1244, 706]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`PINCHED LINEN KNOT`** (`PINCHED` in gold `#E49C20`, `LINEN` and `KNOT` in cream, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_PINCHED_LINEN_KNOT_v08.json`):**
+  - **HOOK: PASS** — `PINCHED LINEN KNOT` (3 words, punch word `PINCHED` in gold) names the concrete visible experimental instrument pinching the upper arm on the plate (the tight linen strip and knot pinching superficial veins shut below while stopping arterial blood above, `De Motu Cordis` ch. 11 & 13, `FACT_NOTES_v01` rows 26–28; `005` script Part 04 lines 101 & 110: *"The most famous one needs nothing but a strip of linen... the veins near the skin are pinched shut, so blood piles up below it"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), `J0518` (`TRAPPED UNDER SKIN`), `J0564` (`STOPPED RED PULSE`), or `J0609` (`SWOLLEN BLUE CORDS`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=116..461`, `y=72..314`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=556..1244`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_pinched_linen_knot_v08_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_pinched_linen_knot_v08_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_pinched_linen_knot_v08_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_pinched_linen_knot_v08_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_pinched_linen_knot_v08_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
