@@ -244,3 +244,20 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+
+## 19 Oct 2026 — Thumbnail B `v09` `SOFT MELTING GALLIUM` (`1.036x` gallium hero push-in, OWB J0624)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002` → `001` → `005` rotation, `002` got `B v08` in `J0579`, `001` got `B v05` in `J0594`, and `005` got `B v07` in `J0609`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` key-art plate only):** Built `Selected/hos_002_thumb_B_soft_melting_gallium_v09.jpg` (`1280×720`, `290,572` bytes, sha256 `320dabe6fef92cf92954f6e519008dc940182726ba72add4e1b63af4d5bf6148`) via `08_Thumbnail/_compose_hos_002_thumb_B_soft_melting_gallium_v09.py` and `08_Thumbnail/THUMB_B_SOFT_MELTING_GALLIUM_v09.json` from `Selected/hos_002_thumb_A_gallium_live_v02.png` with a `1.036×` push-in + metallic specular & droplet clarity boost on the right-hand silvery liquid-gallium arch & falling droplet (`heroBox = [544, 16, 1276, 705]`), Explorer in lower-left at `58.3%` frame height (`420 px`, `box = [42, 300, 256, 720]`), and Georgia Bold upper-left 3-word hook **`SOFT MELTING GALLIUM`** (`GALLIUM` in gold `#E49C20`, framed by the original painted gold scroll flourishes at `y=28..359`).
+- **Scores (`THUMB_B_SOFT_MELTING_GALLIUM_v09.json`):**
+  - **HOOK: PASS** — `SOFT MELTING GALLIUM` (3 words, punch word `GALLIUM` in gold) names the concrete discovery element (`GALLIUM`) and visible physical state (`SOFT MELTING`) shown by the giant silvery melting gallium arch and falling droplet on the right (`002` script Part 05: *"1875. Gallium. Soft, strange, almost liquid in a warm room"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), `J0534` (`METAL TURNS LIQUID`), or `J0579` (`ONE GLOWING GAP`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=92..504`, `y=75..284`, framed by original painted gold scroll flourishes at `y=28..359`) sits completely left of the pushed-in hero gallium arch (`x=544..1276`), above the Explorer's hair (`y=300`) and bottom flourish (`y=311`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_soft_melting_gallium_v09_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_soft_melting_gallium_v09_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_soft_melting_gallium_v09_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_soft_melting_gallium_v09_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_soft_melting_gallium_v09_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
