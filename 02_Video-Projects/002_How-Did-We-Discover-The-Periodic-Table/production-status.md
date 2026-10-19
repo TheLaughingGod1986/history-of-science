@@ -283,3 +283,20 @@ Gate run with `--air-date 2027-01-04` (gate only). Caption check: 19 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+
+## 19 Oct 2026 — Thumbnail B `v10` `SKIPPED ATOMIC SEAT` (`1.31x` empty-slot hero push-in, OWB J0670)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002` → `001` → `005` rotation, `002` got `B v09` in `J0624`, `001` got `B v06` in `J0640`, and `005` got `B v08` in `J0655`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` plates only):** Built `Selected/hos_002_thumb_B_skipped_atomic_seat_v10.jpg` (`1280×720`, `205,409` bytes, sha256 `0d123e27d18e46f5e9a0f0b5cb674ad574318cda036b285c8ee4362cb6bfc941`) via `08_Thumbnail/_compose_hos_002_thumb_B_skipped_atomic_seat_v10.py` and `08_Thumbnail/THUMB_B_SKIPPED_ATOMIC_SEAT_v10.json` from `_stills_v05/hos_002_empty_slot_hero_v01.jpg` with a `1.31×` push-in + golden-rim & cream-tile clarity boost on the right-hand glowing skipped seat inside Mendeleev's wooden periodic-table cabinet (`heroBox = [607, 210, 1010, 560]`, `403×350 px`), Explorer cutout from `Selected/hos_002_thumb_A_gallium_live_v02.png` in lower-left at `54.0%` frame height (`389 px`, `box = [0, 331, 256, 720]`), and Georgia Bold upper-left 3-word hook **`SKIPPED ATOMIC SEAT`** (`SKIPPED` in gold `#E49C20`, `ATOMIC` and `SEAT` in cream, framed by gold scroll flourishes at `y=17..293`).
+- **Scores (`THUMB_B_SKIPPED_ATOMIC_SEAT_v10.json`):**
+  - **HOOK: PASS** — `SKIPPED ATOMIC SEAT` (3 words, punch word `SKIPPED` in gold) names the concrete visual hero on the right two-thirds (the open, skipped element seat in Mendeleev's atomic-weight column on the wooden periodic-table cabinet; `002` script Part 04: *"Sixty-three names. Cards on a desk. Increase the atomic weight. Watch cousins fall into columns... Then he does the thing that looks like cheating. He skips a seat"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), `J0534` (`METAL TURNS LIQUID`), `J0579` (`ONE GLOWING GAP`), or `J0624` (`SOFT MELTING GALLIUM`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=106..493`, `y=44..271`, framed by top/bottom gold scroll flourishes at `y=17..293`) sits completely left of the pushed-in glowing hero slot (`x=607..1010`), above the Explorer's hair (`y=331`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_skipped_atomic_seat_v10_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_skipped_atomic_seat_v10_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_skipped_atomic_seat_v10_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_skipped_atomic_seat_v10_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_skipped_atomic_seat_v10_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
