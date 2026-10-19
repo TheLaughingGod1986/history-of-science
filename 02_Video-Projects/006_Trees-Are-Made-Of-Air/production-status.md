@@ -460,3 +460,23 @@ Gate run with `--air-date 2026-12-22` (gate only). Caption check: 19 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+## 19 Oct 2026 — Short `s07_priestley_mint_v01` (Test B, fourth search-titled lift from Part 03, OWB J0623)
+
+- **Selection:** HOS 004 and 005 each have 4 search-titled Shorts (`s04`–`s07`); HOS 006 had 3 search-titled Shorts (`s04_photosynthesis_v01`, `s05_charcoal_gas_v01`, `s06_ingenhousz_oxygen_v01`), making 006 the locked HOS long with the fewest built Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part03_the_air_that_mint_repaired_v01_raw.mp3` claim-first lift (word indices `85..108`, `120..146`, `187..193`, `210..213`): *"If you burn a candle inside a sealed glass jar, the flame soon dies, and the air left behind won't let another candle burn. He slipped a sprig of mint into a jar of that injured air, and waited. Ten days later, he lowered in another candle. It burned perfectly well. Something had to be putting it back. Plants repair the air."* 62 words, pauses capped at 0.30 s, `atempo=1.02`, 23.184 s VO + 0.55 s tail = 23.767 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P3:11_candle_tall_t1` (frame 0 and 3.0 s loop), `P3:08_candles_out_t1`, `P3:07_priestley_t1`, `P3:10_mint_jar_t1`, `P4:06_collect_blaze_t3` (with Chief's bottom-6% seam trim), `P3:15_quill_vegetable_t1`, `P3:14_trees_breathe_t1`. Own-synthesis warm harmonic pad (`hos006_s07_synth_pad_v01.wav`) at −23.3 dB under VO. Hook **MINT IN GLASS** (GLASS in yellow). Person/date card **JOSEPH PRIESTLEY · Leeds, 1771** at 4.8–8.4 s (3.6 s, lower third of 16:9 centre band, cosine-feathered shade, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout (17/17 changes); CTA `watch the full film →` at 20.73–23.68 s.
+- **Title draft:** *How Do Plants Clean the Air?* (signed-out GB YouTube autocomplete exact hit, 19 Oct 2026; alts *Why Do We Need Plants?*, *What Was Joseph Priestley's Bell Jar Experiment?*).
+- **File:** `10_Shorts/hos_006_s07_priestley_mint_v01.mp4`, 23.767 s, sha256 `253b56176b878c153a7198e650f51c848dd8bba5b4d164248cabdcef6f70ce44`; phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s07_priestley_mint_v01.mp4`.
+
+```
+PASS  hos_006_s07_priestley_mint_v01.mp4  dur=23.77s  audio=-23.8dB  motion=12.03  dhash=2f2f6e7e3d2dccfc
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s07_priestley_mint_v01_open_sheet.jpg
+PASS  hos_006_s07_priestley_mint_v01.mp4  0:23.77  mean -23.8 dB  peak -4.1 dB  157 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/polish_gate_s07_priestley_mint_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/picture_qa_s07_priestley_mint_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/picture_qa_s07_priestley_mint_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-29` (gate only). Caption check: 17 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
