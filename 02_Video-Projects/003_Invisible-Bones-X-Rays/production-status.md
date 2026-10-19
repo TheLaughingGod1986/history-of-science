@@ -177,3 +177,25 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisib
 Gate run with `--air-date 2026-12-25` (gate only). Caption check: 18 changes, ratio 1.0. Freezedetect: 0 events.
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+
+## 19 Oct 2026 — Short `s07_xray_tube_v01` (Test B, fourth search-titled lift from Part 01, OWB J0639)
+
+- **Selection:** HOS 001, 004, 005, and 006 each have 4 built search-titled Shorts (`s06`–`s09` on 001; `s04`–`s07` on 004, 005, 006); HOS 003 had only 3 built search-titled Shorts (`s04_unknown_x_v01`, `s05_first_xray_v01`, `s06_how_xrays_work_v01`), making 003 the next locked HOS long with the fewest built search-titled Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/05_Master/hos_003_part01_vo_v02_draft.wav` claim-first lift (`48.38–70.00 s` + `101.96–104.70 s`, zero overlap with S1–S6): *"A cathode-ray tube is a sealed glass bottle with almost no air left. Push electricity through it and you get invisible rays. In 1895, people believed those rays lived only inside the glass. Cathode rays that hit the wall of the tube and went no further. The room is dark on purpose. Tonight, the map will not stay inside the tube."* 62 words, pauses capped at 0.35 s, `atempo=1.00`, 23.363 s VO + 0.65 s tail = 24.000 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P1:10_accident_coming_v01` (`0.20 s` glowing glass cathode-ray tube window on frame 0 and 3.0 s loop, `crop_x=260`), `P1:04_electricity_inside_tube_v03`, `P1:03_cathode_tube_hero_v02`, `P1:05_rays_stop_at_glass_v05`, `P2:02_tube_covered_v01`, `P2:08_locks_the_door_v02`. Own-synthesis warm harmonic pad (`hos003_s07_synth_pad_v01.wav`, B-dorian/Bm9 voicing, distinct from `s04` D-dorian, `s05` A-aeolian, and `s06` E-minor/Cmaj7) at −20 dB under VO. Hook **EMPTY GLASS** (GLASS in yellow). Person/date card **WILHELM RÖNTGEN · Würzburg, 1895** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover X-rays?* at 9.0–14.0 s; word captions throughout (17/17 changes); CTA `watch the full film →` at 21.00–23.92 s.
+- **Title draft:** *How Are X-Rays Made?* (signed-out GB YouTube autocomplete exact hit `how are x rays made`, 19 Oct 2026; alts *How Are X-Rays Produced?*, *How Does an X-Ray Tube Work?*, *Who Discovered X-Rays?*).
+- **File:** `10_Shorts/hos_003_s07_xray_tube_v01.mp4`, 24.000 s, sha256 `5ecd15678eb015d1157bf9ca8867961775c1d7e2a898fb89d0c19d76d85a6213`; phone copy iCloud `HOS UAT/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s07_xray_tube_v01.mp4`.
+
+```
+PASS  hos_003_s07_xray_tube_v01.mp4  dur=24.0s  audio=-23.7dB  motion=57.95  dhash=5951575616565f06
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_003_s07_xray_tube_v01_open_sheet.jpg
+PASS  hos_003_s07_xray_tube_v01.mp4  0:24.00  mean -23.7 dB  peak -5.0 dB  155 wpm
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s07_xray_tube_v01/polish_gate_s07_xray_tube_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s07_xray_tube_v01/picture_qa_s07_xray_tube_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s07_xray_tube_v01/picture_qa_s07_xray_tube_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-30` (gate only). Caption check: 17 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
