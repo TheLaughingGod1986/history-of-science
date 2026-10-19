@@ -1,0 +1,251 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how immune system antibodies t cells b cells work",
+  "paul ehrlich susumu tonegawa"
+ ],
+ "autocomplete": {
+  "how immune system antibodies t cells b cells work": [
+   "immune system b cells and t cells",
+   "immunity mediated by b cells and antibodies",
+   "immunology b cells and t cells"
+  ],
+  "paul ehrlich susumu tonegawa": [
+   "paul ehrlich",
+   "paul ehrlich population bomb"
+  ]
+ },
+ "sharedTitleWords": [
+  "immune system",
+  "the immune",
+  "your immune",
+  "system part",
+  "part crash",
+  "crash course",
+  "course anatomy",
+  "anatomy physiology"
+ ],
+ "neighbours": [
+  {
+   "id": "PSRJfaAYkW4",
+   "title": "How does your immune system work? - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "5,195,629 views",
+   "age": "8 yr ago",
+   "length": "5:23",
+   "tier": 1,
+   "viewCount": 5195629,
+   "foundBy": "how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "rb7TVW77ZCs",
+   "title": "How do vaccines work? - Kelwalin Dhanasarnsombut",
+   "channel": "TED-Ed",
+   "views": "3,543,971 views",
+   "age": "11 yr ago",
+   "length": "4:36",
+   "tier": 1,
+   "viewCount": 3543971,
+   "foundBy": "ted-ed how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "7H0qAqXR-fw",
+   "title": "Can You Actually Boost Your Immune System? Here’s the Truth | Body Stuff with Dr. Jen Gunter",
+   "channel": "TED",
+   "views": "738,545 views",
+   "age": "5 yr ago",
+   "length": "5:07",
+   "tier": 1,
+   "viewCount": 738545,
+   "foundBy": "ted-ed how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "xw2mn40BVo0",
+   "title": "The infamous overpopulation bet: Simon vs. Ehrlich - Soraya Field Fiorio",
+   "channel": "TED-Ed",
+   "views": "623,913 views",
+   "age": "5 yr ago",
+   "length": "4:48",
+   "tier": 1,
+   "viewCount": 623913,
+   "foundBy": "ted-ed paul ehrlich susumu tonegawa",
+   "onTopic": true
+  },
+  {
+   "id": "dvJSK4viVMs",
+   "title": "Paul Tudor Jones II: Why we need to rethink capitalism",
+   "channel": "TED",
+   "views": "321,350 views",
+   "age": "11 yr ago",
+   "length": "9:56",
+   "tier": 1,
+   "viewCount": 321350,
+   "foundBy": "paul ehrlich susumu tonegawa ted",
+   "onTopic": true
+  },
+  {
+   "id": "rZRsqin3lwY",
+   "title": "CAR T-cell therapy: Reprogramming the immune system to treat cancer | Rob Weinkove | TEDxTauranga",
+   "channel": "TEDx Talks",
+   "views": "200,494 views",
+   "age": "7 yr ago",
+   "length": "18:33",
+   "tier": 1,
+   "viewCount": 200494,
+   "foundBy": "how immune system antibodies t cells b cells work ted",
+   "onTopic": true
+  },
+  {
+   "id": "zQGOcOUBi6s",
+   "title": "The Immune System Explained I – Bacteria Infection",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "54,641,975 views",
+   "age": "12 yr ago",
+   "length": "7:49",
+   "tier": 2,
+   "viewCount": 54641975,
+   "foundBy": "ted-ed how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "lXfEK8G8CUI",
+   "title": "How The Immune System ACTUALLY Works – IMMUNE",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "26,148,629 views",
+   "age": "5 yr ago",
+   "length": "10:48",
+   "tier": 2,
+   "viewCount": 26148629,
+   "foundBy": "how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "GIJK3dwCWCw",
+   "title": "Immune System, Part 1: Crash Course Anatomy & Physiology #45",
+   "channel": "CrashCourse",
+   "views": "7,129,552 views",
+   "age": "10 yr ago",
+   "length": "9:13",
+   "tier": 2,
+   "viewCount": 7129552,
+   "foundBy": "khan academy how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "2DFN4IBZ3rI",
+   "title": "Immune System, Part 2: Crash Course Anatomy & Physiology #46",
+   "channel": "CrashCourse",
+   "views": "4,278,022 views",
+   "age": "10 yr ago",
+   "length": "9:44",
+   "tier": 2,
+   "viewCount": 4278022,
+   "foundBy": "how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "rd2cf5hValM",
+   "title": "Immune System, Part 3: Crash Course Anatomy & Physiology #47",
+   "channel": "CrashCourse",
+   "views": "3,261,554 views",
+   "age": "10 yr ago",
+   "length": "9:37",
+   "tier": 2,
+   "viewCount": 3261554,
+   "foundBy": "how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "rp7T4IItbtM",
+   "title": "Types of immune responses: Innate and adaptive, humoral vs. cell-mediated | NCLEX-RN | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "2,087,104 views",
+   "age": "16 yr ago",
+   "length": "8:07",
+   "tier": 2,
+   "viewCount": 2087104,
+   "foundBy": "khan academy how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "Z36dUduOk1Y",
+   "title": "B lymphocytes (B cells) | Immune system physiology | NCLEX-RN | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,673,559 views",
+   "age": "16 yr ago",
+   "length": "14:13",
+   "tier": 2,
+   "viewCount": 1673559,
+   "foundBy": "how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "uwMYpTYsNZM",
+   "title": "Helper T cells | Immune system physiology | NCLEX-RN | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,409,307 views",
+   "age": "16 yr ago",
+   "length": "20:34",
+   "tier": 2,
+   "viewCount": 1409307,
+   "foundBy": "khan academy how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "xaz5ftvZCyI",
+   "title": "Review of B cells, CD4+ T cells and CD8+ T cells | NCLEX-RN | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,295,677 views",
+   "age": "16 yr ago",
+   "length": "11:07",
+   "tier": 2,
+   "viewCount": 1295677,
+   "foundBy": "how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "k1oCiR9Y2zQ",
+   "title": "GCSE Biology - Immune System & Defences | Types of White Blood Cell (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "152,272 views",
+   "age": "1 yr ago",
+   "length": "4:58",
+   "tier": 2,
+   "viewCount": 152272,
+   "foundBy": "how immune system antibodies t cells b cells work",
+   "onTopic": true
+  },
+  {
+   "id": "YAnrDOgmmhc",
+   "title": "The Apathy Paradox | Paul Heller | TEDxSt Georges Cologne Youth",
+   "channel": "TEDx Talks",
+   "views": "1,272 views",
+   "age": "1 yr ago",
+   "length": "8:11",
+   "tier": 1,
+   "viewCount": 1272,
+   "foundBy": "paul ehrlich susumu tonegawa ted",
+   "onTopic": true
+  },
+  {
+   "id": "UHxJI8XuzDg",
+   "title": "The future needn't be tense | Paul Sudnik | TEDxHM",
+   "channel": "TEDx Talks",
+   "views": "505 views",
+   "age": "8 mo ago",
+   "length": "11:33",
+   "tier": 1,
+   "viewCount": 505,
+   "foundBy": "paul ehrlich susumu tonegawa ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 11,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

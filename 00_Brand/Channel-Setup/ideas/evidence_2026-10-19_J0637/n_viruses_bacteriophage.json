@@ -1,0 +1,300 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "virus bacteriophage how viruses work",
+  "wendell stanley alfred hershey"
+ ],
+ "autocomplete": {
+  "virus bacteriophage how viruses work": [
+   "how virus infect host cell",
+   "what is a virus how do viruses work"
+  ],
+  "wendell stanley alfred hershey": [
+   "wendell stanley"
+  ]
+ },
+ "sharedTitleWords": [],
+ "neighbours": [
+  {
+   "id": "oqGuJhOeMek",
+   "title": "Cell vs. virus: A battle for health - Shannon Stiles",
+   "channel": "TED-Ed",
+   "views": "13,211,319 views",
+   "age": "12 yr ago",
+   "length": "3:59",
+   "tier": 1,
+   "viewCount": 13211319,
+   "foundBy": "virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "yqUFy-t4MlQ",
+   "title": "How we conquered the deadly smallpox virus - Simona Zompi",
+   "channel": "TED-Ed",
+   "views": "9,156,136 views",
+   "age": "12 yr ago",
+   "length": "4:34",
+   "tier": 1,
+   "viewCount": 9156136,
+   "foundBy": "ted-ed virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "PSRJfaAYkW4",
+   "title": "How does your immune system work? - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "5,195,629 views",
+   "age": "8 yr ago",
+   "length": "5:23",
+   "tier": 1,
+   "viewCount": 5195629,
+   "foundBy": "ted-ed virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "xjcsrU-ZmgY",
+   "title": "How do viruses jump from animals to humans? - Ben Longdon",
+   "channel": "TED-Ed",
+   "views": "1,632,042 views",
+   "age": "7 yr ago",
+   "length": "5:05",
+   "tier": 1,
+   "viewCount": 1632042,
+   "foundBy": "ted-ed virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "WJ-XXQCcXik",
+   "title": "What happens if an engineered virus escapes the lab?",
+   "channel": "TED-Ed",
+   "views": "1,571,592 views",
+   "age": "3 yr ago",
+   "length": "5:42",
+   "tier": 1,
+   "viewCount": 1571592,
+   "foundBy": "ted-ed virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "e2vfBo-pG8I",
+   "title": "3 ways to end a virus",
+   "channel": "TED-Ed",
+   "views": "483,468 views",
+   "age": "3 yr ago",
+   "length": "6:10",
+   "tier": 1,
+   "viewCount": 483468,
+   "foundBy": "ted-ed virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "tFfYh9THuGo",
+   "title": "How a long-forgotten virus could help us solve the antibiotics crisis | Alexander Belcredi",
+   "channel": "TED",
+   "views": "331,227 views",
+   "age": "7 yr ago",
+   "length": "11:14",
+   "tier": 1,
+   "viewCount": 331227,
+   "foundBy": "virus bacteriophage how viruses work ted",
+   "onTopic": true
+  },
+  {
+   "id": "Z2Y0GMCFWq0",
+   "title": "Could this technology end all viruses?",
+   "channel": "TED-Ed",
+   "views": "323,470 views",
+   "age": "3 yr ago",
+   "length": "5:46",
+   "tier": 1,
+   "viewCount": 323470,
+   "foundBy": "ted-ed virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "9jRkACywckE",
+   "title": "Stanley McChrystal: The military case for sharing knowledge",
+   "channel": "TED",
+   "views": "112,659 views",
+   "age": "12 yr ago",
+   "length": "6:45",
+   "tier": 1,
+   "viewCount": 112659,
+   "foundBy": "wendell stanley alfred hershey ted",
+   "onTopic": true
+  },
+  {
+   "id": "YI3tsmFsrOg",
+   "title": "The Deadliest Being on Planet Earth – The Bacteriophage",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "35,249,834 views",
+   "age": "8 yr ago",
+   "length": "7:09",
+   "tier": 2,
+   "viewCount": 35249834,
+   "foundBy": "virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "1-NxodiGPCU",
+   "title": "This Virus Shouldn't Exist (But it Does)",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "23,921,460 views",
+   "age": "5 yr ago",
+   "length": "9:34",
+   "tier": 2,
+   "viewCount": 23921460,
+   "foundBy": "ted-ed virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "SbvAaDN1bpE",
+   "title": "Why Scientists Are Puzzled By This Virus",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "5,659,683 views",
+   "age": "2 yr ago",
+   "length": "10:44",
+   "tier": 2,
+   "viewCount": 5659683,
+   "foundBy": "virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "8FqlTslU22s",
+   "title": "Viruses (Updated)",
+   "channel": "Amoeba Sisters",
+   "views": "4,974,781 views",
+   "age": "8 yr ago",
+   "length": "6:49",
+   "tier": 2,
+   "viewCount": 4974781,
+   "foundBy": "virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "V7wlYQ2_Q8o",
+   "title": "This Is the Deadliest Virus on Earth",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "2,578,431 views",
+   "age": "1 yr ago",
+   "length": "0:53",
+   "tier": 2,
+   "viewCount": 2578431,
+   "foundBy": "virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "0h5Jd7sgQWY",
+   "title": "Viruses",
+   "channel": "Khan Academy",
+   "views": "1,169,883 views",
+   "age": "17 yr ago",
+   "length": "23:17",
+   "tier": 2,
+   "viewCount": 1169883,
+   "foundBy": "khan academy virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "xSbMX0MFJCY",
+   "title": "Viruses & Vaccines: How Do Vaccines Work?: Crash Course Biology 39",
+   "channel": "CrashCourse",
+   "views": "188,646 views",
+   "age": "2 yr ago",
+   "length": "12:49",
+   "tier": 2,
+   "viewCount": 188646,
+   "foundBy": "virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "Qulwy6ow-Wc",
+   "title": "Virus Life Cycle | Health | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "180,174 views",
+   "age": "6 yr ago",
+   "length": "3:22",
+   "tier": 2,
+   "viewCount": 180174,
+   "foundBy": "virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "bNsSaxCsIIg",
+   "title": "Hershey and Chase conclusively show DNA genetic material",
+   "channel": "Khan Academy",
+   "views": "125,718 views",
+   "age": "10 yr ago",
+   "length": "8:48",
+   "tier": 2,
+   "viewCount": 125718,
+   "foundBy": "khan academy wendell stanley alfred hershey",
+   "onTopic": true
+  },
+  {
+   "id": "EuJQmHCcyMc",
+   "title": "Lytic and lysogenic cycles | Viruses | High school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "41,085 views",
+   "age": "2 yr ago",
+   "length": "3:54",
+   "tier": 2,
+   "viewCount": 41085,
+   "foundBy": "khan academy virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "Za7OxszhSzE",
+   "title": "A-Level Biology - Viruses | Structure of Viruses (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "20,587 views",
+   "age": "11 mo ago",
+   "length": "4:45",
+   "tier": 2,
+   "viewCount": 20587,
+   "foundBy": "virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "sjH6m5VuR6I",
+   "title": "TEDxTbilisi - Revaz Adamia - Applied Aspects of Bacteriophages",
+   "channel": "TEDx Talks",
+   "views": "19,594 views",
+   "age": "14 yr ago",
+   "length": "11:12",
+   "tier": 1,
+   "viewCount": 19594,
+   "foundBy": "virus bacteriophage how viruses work ted",
+   "onTopic": true
+  },
+  {
+   "id": "otHDPu2H3rY",
+   "title": "Virus structure and replication | Viruses | High school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "13,592 views",
+   "age": "2 yr ago",
+   "length": "4:50",
+   "tier": 2,
+   "viewCount": 13592,
+   "foundBy": "khan academy virus bacteriophage how viruses work",
+   "onTopic": true
+  },
+  {
+   "id": "OyfbKOLNlWg",
+   "title": "Bacteriophages: The Silent Cure to Antimicrobial Resistance | Dr. Steven Theriault | TEDxWinnipeg",
+   "channel": "TEDx Talks",
+   "views": "7,860 views",
+   "age": "2 yr ago",
+   "length": "12:20",
+   "tier": 1,
+   "viewCount": 7860,
+   "foundBy": "virus bacteriophage how viruses work ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 11,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}
