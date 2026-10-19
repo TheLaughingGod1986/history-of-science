@@ -261,3 +261,25 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002
 ```
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 19 Oct 2026 — Short `s09_dobereiner_triads_v01` (Test B, fourth search-titled lift from Part 02, OWB J0654)
+
+- **Selection:** HOS 003, 004, 005, and 006 each have 4 built search-titled Shorts (`s04`, `s05`, `s06`, `s07`); HOS 002 had only 3 built search-titled Shorts (`s06_atomic_weights_v01`, `s07_mendeleev_cards_v01`, `s08_periodic_table_work_v01`), making 002 the next locked HOS long with the fewest built search-titled Shorts (007+ do not have full-part minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part02_first_patterns_v01.wav` claim-first lift (`16.40–32.95 s`, `39.58–43.00 s`, `72.70–78.80 s`, `81.65–83.84 s`, zero overlap with S1–S5, `s06_atomic_weights`, `s07_mendeleev_cards`, `s08_periodic_table_work`, Newlands octaves, or the Oct 2 four-elements Short): *"Johann Döbereiner noticed triads. Three elements that behave like cousins. Lithium, sodium, potassium. Chlorine, bromine, iodine. The middle one often sat between the other two in mass, as if nature had a favourite spacing. Then the list grew again, and the rhymes ran out. Until atomic masses were trusted, every arrangement was a guess with nice handwriting. It was a shared measuring stick."* 63 words, pauses capped at 0.18 s, `atempo=1.06`, 24.013 s VO + 0.42 s tail = 24.433 s total.
+- **Picture & bed (0 spend):** Part 01, Part 03, and Part 05 KEEP plates `P1:11_chemists_more_names_v01` (`0.60 s` element cards & mineral ores on wooden bench window on frame 0 and 3.0 s loop), `P1:06_alchemist_accidents_v01`, `P5:01_chapter_guests_arrive_v01_try1`, `P3:07_light_to_heavy_v02`, `P3:10_city_plan_lots_v09`, `P3:12_pattern_risks_public_v02`. Own-synthesis warm harmonic pad (`hos002_s09_synth_pad_v01.wav`, A-lydian/F#m9 voicing, distinct from `s06` C-lydian, `s07` F-lydian, and `s08` G-lydian) at −20 dB under VO. Hook **THREE TRIADS** (TRIADS in yellow). Person/date card **JOHANN DÖBEREINER · Law of Triads, 1829** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover the Periodic Table?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 21.43–24.35 s.
+- **Title draft:** *What Is Döbereiner's Law of Triads?* (signed-out GB YouTube autocomplete exact hit `what is dobereiner's law of triads` / `johann dobereiner periodic table` / `periodic table dobereiner triads`, 19 Oct 2026; alts *What Are Döbereiner's Triads?*, *Johann Döbereiner and the Periodic Table*, *Why Did Döbereiner's Triads Work?*).
+- **File:** `10_Shorts/hos_002_s09_dobereiner_triads_v01.mp4`, 24.433 s, sha256 `f04c73a572b6ca8474fa8090eb60542c8353907320deaa8df8d3e445f6435e78`; phone copy iCloud `HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s09_dobereiner_triads_v01.mp4`.
+
+```
+PASS  hos_002_s09_dobereiner_triads_v01.mp4  dur=24.43s  audio=-22.0dB  motion=37.53  dhash=2b203534b76302e1
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s09_dobereiner_triads_v01_open_sheet.jpg
+PASS  hos_002_s09_dobereiner_triads_v01.mp4  0:24.43  mean -22.0 dB  peak -4.0 dB  157 wpm
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s09_dobereiner_triads_v01/polish_gate_s09_dobereiner_triads_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s09_dobereiner_triads_v01/picture_qa_s09_dobereiner_triads_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s09_dobereiner_triads_v01/picture_qa_s09_dobereiner_triads_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2027-01-04` (gate only). Caption check: 19 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
