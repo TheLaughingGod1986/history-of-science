@@ -908,3 +908,21 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+## J0608 s07_heart_pulse_v01 (Test B search-titled Short, Part 03 lift) — Gemini, 19 Oct 2026
+
+- **What:** Built search-titled Test B Short `s07_heart_pulse_v01` (4th search-titled Short on `005`, second in Round 4 after `004 s07`) from `005` Part 03 existing VO (`02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01_raw.mp3`, claim-first lift of indices 49–78, 200–219, and 228–241: *"The heart isn't a stove. It's a muscle, and it squeezes. Each squeeze pushes blood out into the arteries, and that push is the pulse you feel in your wrist. The heart pumps it out through the arteries, and it comes back through the veins, round and round. It circulates. Your heart pumps all of your blood round your body in about a minute."*), existing Part 03/01/05 KEEP plates (`03_stove_to_muscle_t1`, `02_slow_hearts_t2`, `04_squeeze_pulse_t1`, `01_pulse_wrist_t1`, `08_your_blood_t2`, `12_glowing_loop_t2`, `13_one_minute_t3`, and `03_stove_to_muscle_t1` loop), and Part 03 score bed (`hos005-part03-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *How Does the Heart Pump Blood?* (exact signed-out GB YouTube autocomplete hit; alternatives *What Causes a Pulse?* / *How Fast Does Blood Flow Through the Body?*).
+- **On screen:** Frame-0 hook `YOUR **PULSE**` (9.01% cap, 2 lines, centred), WHO card `WILLIAM HARVEY · London, 1628` (`2.2–5.8 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *The Tied Arm That Proved Your Blood Circulates* (`9.0–14.0 s`), captions throughout (`18/18` changes), `3.0 s` loop back to `03_stove_to_muscle_t1`.
+- **File:** `10_Shorts/hos_005_s07_heart_pulse_v01.mp4` (untracked local + iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s07_heart_pulse_v01.mp4`), **25.533 s**, 64 words, 150 wpm, sha256 `a6513555187fe143d9a87039da2f3f0796fd21576c38764308bf5477e0df306d`.
+- **Record & QA:** `10_Shorts/SHORT_s07_heart_pulse_v01.json`, `10_Shorts/_build_short_s07_heart_pulse_v01.py`, `10_Shorts/qa_s07_heart_pulse_v01/polish_gate_s07_heart_pulse_v01.json`, `10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_005_s07_heart_pulse_v01.mp4  dur=25.53s  audio=-24.0dB  motion=17.29  dhash=e04d0e2b63272159   (--air-date 2027-01-05)
+PASS  hos_005_s07_heart_pulse_v01.mp4  0:25.53  mean -24.0 dB  peak -5.1 dB  150 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/polish_gate_s07_heart_pulse_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
