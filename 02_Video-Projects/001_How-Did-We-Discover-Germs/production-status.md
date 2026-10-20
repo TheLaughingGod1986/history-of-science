@@ -259,3 +259,19 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
 
+## 20 Oct 2026 — Thumbnail B `v08` `CURVED DUST BEND` (`1.07x` swan-neck flask & S-bend dust trap hero push-in, OWB J0746)
+
+- **Selection:** HOS `001` (`_C92tIJCk8A`, *How Did We Discover Germs?*) is live on YouTube with no armed Test & Compare in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `001` got `B v07` in `J0685`, `005` got `B v09` in `J0700`, and `002` got `B v11` in `J0731`, making `001` next in rotation).
+- **Build (`£0` spend, existing `001` key-art plate only):** Built `Selected/hos_001_thumb_B_curved_dust_bend_v08.jpg` (`1280×720`, `270,187` bytes, sha256 `924ed4d5ddc78d8d2d2128f685f54e2b341f06c840457599d5916d1a2f882638`) via `08_Thumbnail/_compose_hos_001_thumb_B_curved_dust_bend_v08.py` and `08_Thumbnail/THUMB_B_CURVED_DUST_BEND_v08.json` from `Selected/hos_001_tc_thumb_v02.jpg` (via local un-pushed-in `hos_001_thumb_B_swan_neck_v01.jpg`) with a `1.07×` hero push-in + glass/liquid & S-bend specular clarity boost on the right-hand swan-neck flask, golden sterile liquid bulb & curved U-bend dust trap (`heroBox = [580, 10, 1138, 696]`), Explorer in lower-left at `54.4%` frame height (`392 px`, `box = [88, 328, 316, 720]`), and Georgia Bold upper-left 3-word hook **`CURVED DUST BEND`** (`BEND` in gold `#E49C20`, framed by the original painted gold scroll flourishes at `y=20..356`).
+- **Scores (`THUMB_B_CURVED_DUST_BEND_v08.json`):**
+  - **HOOK: PASS** — `CURVED DUST BEND` (3 words, punch word `BEND` in gold) names the concrete curved S-bend / U-bend dust trap on Pasteur's giant swan-neck flask on the right where airborne dust settles while the boiled liquid stays clear (`001` script Part 04: *"Pasteur-style swan-neck flask — clear broth, curved glass neck, dust settling at the bend while the liquid stays bright... Air can drift — but dust and microbes settle in the curve... Hitchhikers are caught at the bend"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover Germs?*), Live A (*WHAT PROVED GERMS WERE REAL?*), `J0391` (`THE SWAN NECK`), `J0457` (`TRAPPED IN GLASS`), `J0503` (`DROP OF WATER`), `J0549` (`BOILED CLEAR BROTH`), `J0594` (`TINY LIVING CELLS`), `J0640` (`STERILE LIQUID FLASK`), or `J0685` (`UNSEEN POND MICROBES`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=97..473`, `y=68..308`, framed by `001`'s original painted gold scroll flourishes at `y=20..356`) sits completely left of the pushed-in hero swan-neck flask (`x=580..1138`), above the Explorer's hair (`y=328`) and bottom flourish (`y=318`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_001_thumb_B_curved_dust_bend_v08_preview.jpg`), style sheet (`Selected/hos_001_thumb_B_curved_dust_bend_v08_style_sheet.jpg`), and 4-panel strip (`Selected/hos_001_thumb_TC_4way_curved_dust_bend_v08_phone_168.jpg`).
+
+```
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_curved_dust_bend_v08_preview.jpg
+02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_curved_dust_bend_v08_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001_How-Did-We-Discover-Germs)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
