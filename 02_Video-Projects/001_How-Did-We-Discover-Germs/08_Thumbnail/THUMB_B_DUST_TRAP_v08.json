@@ -1,0 +1,36 @@
+{
+  "job": "J0716",
+  "film": "HOS:001",
+  "video": "_C92tIJCk8A",
+  "maker": "codex",
+  "hook": "DUST TRAP",
+  "status": "candidate; parked for Chief review",
+  "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/08_Thumbnail/Selected/hos_001_thumb_B_sterile_liquid_flask_v06.jpg",
+  "source_sha256": "0192354a4a58cf7815763dbb3db1997f456957c9722409bd7e194b6c867ddbee",
+  "file": "/Users/benjaminoats/_desk/handoff/J0716/hos_001_thumb_B_dust_trap_v08.jpg",
+  "sha256": "f8bb9fcb24d6a9ab7d85d6dd13c8393d37bc0f58da41474a918b1a741841bf83",
+  "bytes": 338576,
+  "size": [
+    1280,
+    720
+  ],
+  "lettering_boxes": [
+    [
+      111,
+      65,
+      459,
+      176
+    ],
+    [
+      108,
+      187,
+      462,
+      294
+    ]
+  ],
+  "spend": 0,
+  "studio_changed": false,
+  "method": "Existing v06 painted flask art, same house compositor and serif lettering; no hero changes",
+  "claim_basis": "01_Script/part04_proof_in_a_flask_v01.md: dust and microbes settle in the curve",
+  "test_eligibility": "No 001 test in shared ledger at 2026-10-20; live Studio must be rechecked before arming"
+}
