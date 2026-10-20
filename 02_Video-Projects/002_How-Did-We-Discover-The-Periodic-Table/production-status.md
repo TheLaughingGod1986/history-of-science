@@ -300,3 +300,22 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002
 ```
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 20 Oct 2026 — Thumbnail B `v11` `WARM SILVERY DROP` (`1.05x` gallium droplet & liquid-arch hero push-in, OWB J0731)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002` → `005` → `001` rotation, `002` got `B v10` in `J0670`, `005` got `B v09` in `J0700`, and `001` got `B v08` in `J0716`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` key-art plate only):** Built `Selected/hos_002_thumb_B_warm_silvery_drop_v11.jpg` (`1280×720`, `276,147` bytes, sha256 `e862a8baf9efc673e55d88adfde230c01e5ea464c66407d4b7333c90991bff71`) via `08_Thumbnail/_compose_hos_002_thumb_B_warm_silvery_drop_v11.py` and `08_Thumbnail/THUMB_B_WARM_SILVERY_DROP_v11.json` from `00_Brand/Channel-Setup/style/long/002_how_did_we_discover_the_periodic_table.jpg` (`Selected/hos_002_thumb_A_gallium_live_v02.png`) with a `1.05×` push-in + silvery droplet & liquid-arch specular clarity boost on the right-hand silvery liquid-gallium arch & falling droplet (`heroBox = [540, 14, 1276, 706]`), Explorer in lower-left at `58.3%` frame height (`420 px`, `box = [42, 300, 256, 720]`), and Georgia Bold upper-left 3-word hook **`WARM SILVERY DROP`** (`SILVERY` in gold `#E49C20`, `WARM` and `DROP` in cream, framed by the original painted gold scroll flourishes at `y=28..359`).
+- **Scores (`THUMB_B_WARM_SILVERY_DROP_v11.json`):**
+  - **HOOK: PASS** — `WARM SILVERY DROP` (3 words, punch word `SILVERY` in gold) names the concrete visible silvery falling droplet and room-temperature melting state shown by the giant liquid-gallium arch and suspended droplet on the right two-thirds (`002` script Part 05: *"gallium (1875) cool and silvery... 1875. Gallium. Soft, strange, almost liquid in a warm room"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), `J0534` (`METAL TURNS LIQUID`), `J0579` (`ONE GLOWING GAP`), `J0624` (`SOFT MELTING GALLIUM`), or `J0670` (`SKIPPED ATOMIC SEAT`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=106..489`, `y=70..290`, framed by original painted gold scroll flourishes at `y=28..359`) sits completely left of the pushed-in hero gallium arch and droplet (`x=540..1276`), above the Explorer's hair (`y=300`) and bottom flourish (`y=311`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_warm_silvery_drop_v11_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_warm_silvery_drop_v11_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_warm_silvery_drop_v11_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_warm_silvery_drop_v11_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_warm_silvery_drop_v11_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
