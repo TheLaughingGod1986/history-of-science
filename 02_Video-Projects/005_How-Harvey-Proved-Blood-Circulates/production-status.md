@@ -960,3 +960,21 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+## 20 Oct 2026 — Thumbnail B `v09` `PALE COLD HAND` (`1.10x` hero push-in + pale-hand, forearm blue-cord, linen-knot & arterial-glow boost, OWB J0700)
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v08` in `J0655`, `002` got `B v10` in `J0670`, and `001` got `B v07` in `J0685`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_pale_cold_hand_v09.jpg` (`1280×720`, `250,069` bytes, sha256 `5b239b28ec1e2ad8218b22d7a639af34ff566802fdd261d0a48947f3e18ebefc`) via `08_Thumbnail/_compose_hos_005_thumb_B_pale_cold_hand_v09.py` and `08_Thumbnail/THUMB_B_PALE_COLD_HAND_v09.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.10×` push-in + targeted local clarity/contrast boost on the pale, cool foreground open hand below the band (`x=250..760, y=445..700`), the branching blue venous cords on the pale forearm (`x=660..980, y=410..680`), the tight linen knot (`x=835..1235, y=265..415`), and the stopped glowing red arterial column above the band (`x=890..1120, y=0..290`, `heroBox = [554, 0, 1246, 708]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`PALE COLD HAND`** (`COLD` in gold `#E49C20`, `PALE` and `HAND` in cream, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_PALE_COLD_HAND_v09.json`):**
+  - **HOOK: PASS** — `PALE COLD HAND` (3 words, punch word `COLD` in gold) names the concrete visible anatomical symptom below the tight linen band on the plate (the pale, cool open hand below the tight ligature while the artery throbs red above it, `De Motu Cordis` ch. 11, `FACT_NOTES_v01` row 26; `005` script Part 04 lines 99 & 112: *"the hand below turns pale and cool; above the band the artery throbs... Below the band, the hand goes pale and cold"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), `J0518` (`TRAPPED UNDER SKIN`), `J0564` (`STOPPED RED PULSE`), `J0609` (`SWOLLEN BLUE CORDS`), or `J0655` (`PINCHED LINEN KNOT`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=146..429`, `y=67..318`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=554..1246`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_pale_cold_hand_v09_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_pale_cold_hand_v09_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_pale_cold_hand_v09_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_pale_cold_hand_v09_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_pale_cold_hand_v09_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
