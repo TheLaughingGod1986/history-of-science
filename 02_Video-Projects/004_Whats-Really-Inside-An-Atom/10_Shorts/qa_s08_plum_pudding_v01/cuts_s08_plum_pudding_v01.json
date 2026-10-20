@@ -1,0 +1,90 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 3.364,
+    "source": "13_atom_cracks_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.2
+    },
+    "video": true
+  },
+  {
+    "row": "s02_Thomson",
+    "timeline_in": 3.364,
+    "timeline_out": 6.608,
+    "source": "14_electrons_named_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s03_electrons.",
+    "timeline_in": 6.608,
+    "timeline_out": 9.124,
+    "source": "10_two_thousand_lighter_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s04_charge,",
+    "timeline_in": 9.124,
+    "timeline_out": 11.881,
+    "source": "15_positive_balance_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s05_out.",
+    "timeline_in": 11.881,
+    "timeline_out": 15.51,
+    "source": "16_plum_pudding_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s06_his",
+    "timeline_in": 15.51,
+    "timeline_out": 19.632,
+    "source": "17_raisins_settle_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s07_through",
+    "timeline_in": 19.632,
+    "timeline_out": 22.02,
+    "source": "19_lovely_and_wrong_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.2
+    },
+    "video": true
+  },
+  {
+    "row": "s08_loop",
+    "timeline_in": 22.02,
+    "timeline_out": 25.02,
+    "source": "loop_end_13_atom_cracks_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.2
+    },
+    "video": true
+  }
+]

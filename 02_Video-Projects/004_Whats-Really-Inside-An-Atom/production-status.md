@@ -627,3 +627,22 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-R
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+## J0699 s08_plum_pudding_v01 (Test B search-titled Short, Part 03 lift) — Gemini, 20 Oct 2026
+
+- **Selection:** HOS 001, 002, 003, 004, 005, and 006 each have 4 built search-titled Test B Shorts on `main` (and 007+ do not have minted picture yet); per the tie-break rule (`004, 005, then the next locked`), `004` starts Round 5 (`s08_plum_pudding_v01`).
+- **What:** Built search-titled Test B Short `s08_plum_pudding_v01` from `004` Part 03 existing VO (`02_Voiceover/05_Master/hos_004_part03_vo_v01.mp3`, claim-first contiguous lift of indices 139–202 / `59.60–88.98 s`, zero overlap with `s04_cathode_rays_v01` indices 11–70 / `5.3–31.6 s` or with `s01`–`s03`, `s05_dalton`, `backcat_gold_foil`, `s06_moseley_atomic_number`, or `s07_outer_electrons`: *"Every atom carries these tiny negative particles. Thomson called them corpuscles. Today we call them electrons. But atoms have no overall charge, so something positive must balance them out. A few years later, in nineteen-oh-four, Thomson made his guess: a soft ball of positive stuff with electrons dotted through it, like raisins in a pudding. It was a lovely idea. It was also wrong."*), existing clean Part 03 KEEP plates (`13_atom_cracks_v01` from `1.20 s`, `14_electrons_named_v01`, `10_two_thousand_lighter_v01`, `15_positive_balance_v01`, `16_plum_pudding_v01`, `17_raisins_settle_v01`, `19_lovely_and_wrong_v01`, and `13_atom_cracks_v01` loop), and Part 03 score bed (`hos004-part03-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *What Is the Plum Pudding Model of the Atom?* (exact signed-out GB YouTube autocomplete hit; alternatives *What Was Thomson's Plum Pudding Model?* / *Why Did Thomson Propose the Plum Pudding Model?*).
+- **On screen:** Frame-0 hook `PLUM **MODEL**` (9.01% cap, centred), WHO card `J.J. THOMSON · Plum pudding model, 1904` (`2.3–5.9 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *What's Really Inside an Atom?* (`9.0–14.0 s`), captions throughout (`19/19` changes, ratio `1.0`), `3.0 s` loop back to `13_atom_cracks_v01`.
+- **File:** `10_Shorts/hos_004_s08_plum_pudding_v01.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s08_plum_pudding_v01.mp4`), **25.033 s**, 64 words, 158 wpm, sha256 `5ddd8c32f45c7d0c41cf8b62479b73d5e5f238742a9d22f580778671713b722f`.
+- **Record & QA:** `10_Shorts/SHORT_s08_plum_pudding_v01.json`, `10_Shorts/_build_short_s08_plum_pudding_v01.py`, `10_Shorts/qa_s08_plum_pudding_v01/polish_gate_s08_plum_pudding_v01.json`, `10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s08_plum_pudding_v01.mp4  dur=25.03s  audio=-22.9dB  motion=22.32  dhash=004e844c468486a4   (--air-date 2027-01-08)
+PASS  hos_004_s08_plum_pudding_v01.mp4  0:25.03  mean -22.9 dB  peak -3.8 dB  158 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/polish_gate_s08_plum_pudding_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+

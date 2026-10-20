@@ -1,0 +1,2 @@
+WARN   0:11 row s04_charge, 15_positive_balance_v01.mp4: low detail: edge density 0.0344 < film p5 0.0352
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/picture_qa_review.jpg
