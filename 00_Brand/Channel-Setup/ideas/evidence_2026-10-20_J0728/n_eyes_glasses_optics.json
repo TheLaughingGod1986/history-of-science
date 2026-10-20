@@ -1,0 +1,183 @@
+{
+ "pulled": "2026-10-20",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how do glasses work",
+  "how the eye works"
+ ],
+ "autocomplete": {
+  "how do glasses work": [
+   "how do glasses work",
+   "how do lenses work",
+   "how do lenses work on a camera",
+   "how do spectacles work",
+   "how do frames work in animation",
+   "how do lenses work physics",
+   "how do frames work in fighting games",
+   "how do meta glasses work",
+   "how do colorblind glasses work",
+   "how do 3d glasses work"
+  ],
+  "how the eye works": [
+   "how the eye works",
+   "how the eye works animation",
+   "how the eye works psychology",
+   "how the eye works dr binocs",
+   "how the eye works gcse",
+   "how the eye works with the brain",
+   "how the eye works ks3",
+   "how the eye works rods and cones",
+   "how the eye works ted ed",
+   "how the eye works ap psychology"
+  ]
+ },
+ "sharedTitleWords": [
+  "how do",
+  "the eye",
+  "your glasses",
+  "need glasses",
+  "gcse biology",
+  "biology how",
+  "how the",
+  "eye works",
+  "works part"
+ ],
+ "neighbours": [
+  {
+   "id": "ISZLTJH5lYg",
+   "title": "How do vitamins work? - Ginnie Trinh Nguyen",
+   "channel": "TED-Ed",
+   "views": "6,848,237 views",
+   "age": "12 yr ago",
+   "length": "4:44",
+   "tier": 1,
+   "viewCount": 6848237,
+   "foundBy": "ted-ed how do glasses work",
+   "onTopic": true
+  },
+  {
+   "id": "XPDVmBg5DeE",
+   "title": "How does laser eye surgery work? - Dan Reinstein",
+   "channel": "TED-Ed",
+   "views": "6,827,723 views",
+   "age": "6 yr ago",
+   "length": "5:37",
+   "tier": 1,
+   "viewCount": 6827723,
+   "foundBy": "ted-ed how do glasses work",
+   "onTopic": true
+  },
+  {
+   "id": "FN3MFhYPWWo",
+   "title": "How do your kidneys work? - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "3,114,409 views",
+   "age": "11 yr ago",
+   "length": "3:55",
+   "tier": 1,
+   "viewCount": 3114409,
+   "foundBy": "ted-ed how do glasses work",
+   "onTopic": true
+  },
+  {
+   "id": "ypF037wlYZg",
+   "title": "How do glasses help us see? - Andrew Bastawrous and Clare Gilbert",
+   "channel": "TED-Ed",
+   "views": "2,409,104 views",
+   "age": "10 yr ago",
+   "length": "4:24",
+   "tier": 1,
+   "viewCount": 2409104,
+   "foundBy": "how do glasses work",
+   "onTopic": true
+  },
+  {
+   "id": "gElClXpg4J0",
+   "title": "The Next Computer? Your Glasses | Shahram Izadi | TED",
+   "channel": "TED",
+   "views": "542,076 views",
+   "age": "1 yr ago",
+   "length": "16:07",
+   "tier": 1,
+   "viewCount": 542076,
+   "foundBy": "how do glasses work ted",
+   "onTopic": true
+  },
+  {
+   "id": "G1KGUP2iKbE",
+   "title": "The story behind your glasses - Eva Timothy",
+   "channel": "TED-Ed",
+   "views": "137,159 views",
+   "age": "14 yr ago",
+   "length": "4:17",
+   "tier": 1,
+   "viewCount": 137159,
+   "foundBy": "ted-ed how do glasses work",
+   "onTopic": true
+  },
+  {
+   "id": "vbCobKbLJls",
+   "title": "Screens are NOT the reason kids need glasses 👀",
+   "channel": "MinuteEarth",
+   "views": "6,704,508 views",
+   "age": "4 yr ago",
+   "length": "2:27",
+   "tier": 2,
+   "viewCount": 6704508,
+   "foundBy": "ted-ed how do glasses work",
+   "onTopic": true
+  },
+  {
+   "id": "9SGAicn9rXY",
+   "title": "GCSE Biology - How the Eye Works (Part 1) - Structure of the Eye & Iris Reflex",
+   "channel": "Cognito",
+   "views": "687,088 views",
+   "age": "6 yr ago",
+   "length": "5:09",
+   "tier": 2,
+   "viewCount": 687088,
+   "foundBy": "how the eye works",
+   "onTopic": true
+  },
+  {
+   "id": "-BqvOucCTYg",
+   "title": "GCSE Biology - How the Eye Works (Part 2) - Accommodation",
+   "channel": "Cognito",
+   "views": "479,551 views",
+   "age": "6 yr ago",
+   "length": "6:35",
+   "tier": 2,
+   "viewCount": 479551,
+   "foundBy": "how the eye works",
+   "onTopic": true
+  },
+  {
+   "id": "GDmz2j0hF2U",
+   "title": "Do I Need Glasses?",
+   "channel": "SciShow Kids",
+   "views": "181,775 views",
+   "age": "7 yr ago",
+   "length": "4:36",
+   "tier": 2,
+   "viewCount": 181775,
+   "foundBy": "how do glasses work",
+   "onTopic": true
+  },
+  {
+   "id": "0O3NdG0uWM4",
+   "title": "GCSE Physics - How Lenses Work - Convex & Concave Lenses | Real & Virtual Images (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "118,322 views",
+   "age": "1 yr ago",
+   "length": "6:37",
+   "tier": 2,
+   "viewCount": 118322,
+   "foundBy": "khan academy how do glasses work",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}
