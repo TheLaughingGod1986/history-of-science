@@ -977,4 +977,23 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+## J0730 s08_capillaries_v01 (Test B search-titled Short, Part 05 lift) — Gemini, 20 Oct 2026
+
+- **What:** Built search-titled Test B Short `s08_capillaries_v01` (5th search-titled Short on `005`, second in Round 5 after `004 s08`) from `005` Part 05 existing VO (`02_Voiceover/part05_the_vessels_he_never_saw_v01_raw.mp3`, claim-first lift of indices 7–17, 53–70, and 75–106: *"How did the blood get from the arteries into the veins? In Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope. A net of tiny vessels, finer than hairs, carrying blood from the smallest arteries into the smallest veins. We call them capillaries, from the Latin word for hair. The circle was closed."*), existing Part 05 KEEP plates (`01_loop_gap_t5`, `04_malpighi_slide_t1`, `02_tiny_gaps_t1`, `06_eyepiece_mesh_t1`, `07_capillaries_loop_t2`, `16_proved_last_link_t4`, and `01_loop_gap_t5` loop), and Part 05 score bed (`hos005-part05-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *What Are Capillaries?* (exact signed-out GB YouTube autocomplete hit; alternatives *How Do Capillaries Work?* / *What Do Capillaries Do?*).
+- **On screen:** Frame-0 hook `FINER THAN **HAIRS**` (9.01% cap, 3 lines, centred), WHO card `MARCELLO MALPIGHI · Bologna, 1661` (`4.6–8.1 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *The Tied Arm That Proved Your Blood Circulates* (`9.0–14.0 s`), captions throughout (`20/20` changes), `3.0 s` loop back to `01_loop_gap_t5`.
+- **File:** `10_Shorts/hos_005_s08_capillaries_v01.mp4` (untracked local + iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s08_capillaries_v01.mp4`), **25.167 s**, 61 words, 145 wpm, sha256 `64f746e6572110751e4369e112573f38e12b71cb38c8df4e4979bf36de79b0b1`.
+- **Record & QA:** `10_Shorts/SHORT_s08_capillaries_v01.json`, `10_Shorts/_build_short_s08_capillaries_v01.py`, `10_Shorts/qa_s08_capillaries_v01/polish_gate_s08_capillaries_v01.json`, `10_Shorts/qa_s08_capillaries_v01/picture_qa_s08_capillaries_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_005_s08_capillaries_v01.mp4  dur=25.17s  audio=-23.8dB  motion=13.81  dhash=17160faa2f0f1717   (--air-date 2027-01-12)
+PASS  hos_005_s08_capillaries_v01.mp4  0:25.17  mean -23.8 dB  peak -4.7 dB  145 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s08_capillaries_v01/polish_gate_s08_capillaries_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s08_capillaries_v01/picture_qa_s08_capillaries_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s08_capillaries_v01/picture_qa_s08_capillaries_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+
 
