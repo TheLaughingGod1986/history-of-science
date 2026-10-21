@@ -166,7 +166,11 @@ def still_prompt(still, plate: dict) -> str:
     if plate["id"] == MASTER:
         core += (" The paper on the desk is turned edge-on, a thin edge only."
                  " No page face, no lines, no writing. The quill does not draw a glyph.")
-    if "no faces readable" in core.lower() or "faces not readable" in core.lower():
+    if (
+        "no faces readable" in core.lower()
+        or "faces not readable" in core.lower()
+        or (("cot" in core.lower() or "bed" in core.lower()) and ("child" in core.lower() or "boy" in core.lower()))
+    ):
         core += (" Every person is seen from behind with their head turned completely away from camera;"
                  " only the back of the head and blanket/shoulders are visible, no face or profile shown.")
     return still.still_prompt(
