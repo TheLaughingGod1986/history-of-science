@@ -1565,6 +1565,50 @@
       "credits_ui_drop": 100,
       "account": "benoats@googlemail.com",
       "at": "2026-10-21T22:08:14+00:00"
+    },
+    "11b_storm_builds": {
+      "plate": "11b_storm_builds",
+      "part": "05",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/refs/v02_flow_stills/11b_storm_builds_t1.png",
+      "start_frame_sha256": "fe7dbd5e8af3d25491a0c33106bb4bdffbb13459f6f322b4b4d0bf731e575f39",
+      "credits_before": 21010,
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T22:09:03+00:00",
+      "project_url": "https://flow.google.com/project/2faa6a04-396e-41fe-87b0-aef5433fd60b",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/raw/v01/11b_storm_builds_t1.mp4",
+      "sha256": "9e39292b3931034a84c8f09a9c1b0341f16fb47bb09217e43fece13c0f6a82b0",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/uat/11b_storm_builds_t1_sheet.jpg",
+      "credits_after": 21000,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T22:11:23+00:00"
+    },
+    "12_kite_storm": {
+      "plate": "12_kite_storm",
+      "part": "05",
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/refs/v02_flow_stills/12_kite_storm_t1.png",
+      "start_frame_sha256": "945face33174a907f15925ef37691726a568ce9bb67aefcca08042a327a71227",
+      "credits_before": 21000,
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T22:12:20+00:00",
+      "project_url": "https://flow.google.com/project/07dea415-1f55-4d52-ac0e-09181c9dcd58",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/raw/v01/12_kite_storm_t1.mp4",
+      "sha256": "5f4b18886ecf6e2e0664e45c2be6037b9afe85f0afc8950b99475c6be9de47c7",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/uat/12_kite_storm_t1_sheet.jpg",
+      "credits_after": 20900,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T22:14:47+00:00"
     }
   },
   "balance_reads": [
@@ -2002,9 +2046,24 @@
       "at": "2026-10-21T22:08:14+00:00",
       "credits": 21010,
       "after": "13_explorer_meadow"
+    },
+    {
+      "at": "2026-10-21T22:11:23+00:00",
+      "credits": 21000,
+      "after": "11b_storm_builds"
+    },
+    {
+      "at": "2026-10-21T22:14:47+00:00",
+      "credits": 20900,
+      "after": "12_kite_storm"
+    },
+    {
+      "at": "2026-10-21T22:14:47+00:00",
+      "credits": 20900,
+      "when": "batch-end-p05"
     }
   ],
-  "updated": "2026-10-21T22:08:14+00:00",
+  "updated": "2026-10-21T22:14:47+00:00",
   "master_still": {
     "path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/refs/v02_flow_stills/08_jenner_window_t1.png",
     "sha256": "aa7f98b68a86727dbfb53d3ead6db8cd5532cb572ab2c5b2981e154c708b07e4",

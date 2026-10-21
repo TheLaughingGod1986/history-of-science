@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-16",
-  "updated_by": "cursor (J0343)",
+  "updated": "2026-10-21",
+  "updated_by": "gemini (J0352)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -104,9 +104,9 @@
     },
     {
       "pool": "Flow (picture)",
-      "left": "23,730 (read 14 Oct 23:06 London after J0140 P4:06 t3 Fast 10 cr; 006 Flow minting complete)",
-      "rule": "Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0: never buy credits, top up or spill into billing. No spend until the Chief's price pass (J0139)",
-      "checked": "14 Oct"
+      "left": "20,900 (read 21 Oct 23:14 London after J0352 P5:12_kite_storm Quality 100 cr; all 73/73 Flow rows of 007 minted for 2,890 cr)",
+      "rule": "Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0 (3,000 buffer on 007): never buy credits, top up or spill into billing.",
+      "checked": "21 Oct"
     }
   ],
   "films": [
@@ -275,7 +275,7 @@
       "title": "Why Vaccines Are Named After a Cow",
       "air": "2026-11-12",
       "ready_by": "2026-11-08",
-      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done. Picture boards v02 are on main (J0343): Nelmes plate dropped, 2.0 s back on 01_sarah_nelmes. Nothing minted.",
+      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done. All 73/73 Flow rows of boards v02 are minted on Flow (J0352, 2,890 cr vs 7,550 cap; live Flow 20,900; 3 code graphics + 2 archive + 18 reuse = 96 rows). Contact sheets for Parts 01–05 are posted on desk #180 awaiting Chief STYLE/MOTION KEEP/FIX, then part roughs.",
       "stages": {
         "topic": {
           "status": "done"
@@ -304,13 +304,17 @@
           "note": "B v02 25.5 s + C v02 24.8 s locked 12 Oct; Chief KEEP both (desk 6096257381, VO_LOCK_CHIEF_PASS_20261012.json)"
         },
         "picture": {
-          "status": "blocked",
+          "status": "doing",
           "due": "2026-11-01",
-          "note": "BOARD_V02 on main (16 Oct, J0343): 96 rows after dropping P3:01c_nelmes_plate (2.0 s back on 01_sarah_nelmes; use 5.14 s). 73 Flow mints = 24 Quality + 49 Fast, 3 code graphics, 2 public-domain archive plates, 18 reuses. Flow expected 7,196 unchanged against the 23,740 reading (15 Oct 21:42Z). After 007 + 008 (5,605) + 009 tranche 1 (7,354) the same reading shows 3,585 left, above the 3,000 floor. Vertex fallback £126.24 expected does not fit in £70.02 usable. generation_authorized false. Ken Burns lock stands. No mint.",
-          "steps_unit": "plates",
-          "owner": "Cursor",
-          "since": "2026-10-16",
-          "waiting": "J0344 builds the three £0 code graphics. No mint until after 006 and a live Flow read leaves at least 3,000.",
+          "note": "BOARD_V02 all 73/73 Flow rows minted on Flow (J0352, 21 Oct: P1 17/17 = 530 cr, P2 21/21 = 750 cr, P3 12/12 = 390 cr, P4 11/11 = 380 cr, P5 12/12 = 840 cr; total 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 £0 code graphics on main (`7808f751`); 2 archive + 18 reuse (£0). Contact sheets for Parts 01–05 on desk #180 awaiting Chief STYLE/MOTION KEEP/FIX.",
+          "steps": [
+            73,
+            73
+          ],
+          "steps_unit": "Flow plates",
+          "owner": "Grok",
+          "since": "2026-10-21",
+          "waiting": "Chief STYLE/MOTION KEEP/FIX on Parts 01–05 contact sheets (desk #180, J0352), then part roughs",
           "underway": false
         },
         "edit": {
