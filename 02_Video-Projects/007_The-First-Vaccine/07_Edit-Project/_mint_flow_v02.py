@@ -187,7 +187,7 @@ def still_prompt(still, plate: dict) -> str:
     core = sanitize_person_names(" ".join(plate["prompt"].split()))
     if plate.get("explorer"):
         core = core.replace("No Explorer.", "") + " " + mint006.EXPLORER
-    elif any(w in core.lower() for w in ("child", "children", "boy", "sons", "son", "phipps")):
+    elif any(w in core.lower() for w in ("child", "children", "boy", "sons", "son", "phipps", "families", "family", "playground")):
         # Flow's external start-frame upload filter rejects images with children.
         # Keep the adult hero / setting in the opening start frame; Veo 3.1 animates the full prompt.
         for src, dst in (
@@ -199,7 +199,10 @@ def still_prompt(still, plate: dict) -> str:
             ("in a small bed by a window, a little warm, a cool cloth on his forehead",
              "in a wooden bed by a window resting under a blanket with head turned away from camera"),
             ("A smiling child", "An adult patient seen from behind over the shoulder"),
-            ("children run, swing and climb", "distant figures seen from behind"),
+            ("A sunny modern playground: children run, swing and climb", "A sunny modern park path: distant adult figures walk"),
+            ("children run, swing and climb", "distant adult figures seen from behind"),
+            ("poor families queue", "adult villagers queue"),
+            ("families come out", "adult villagers come out"),
         ):
             core = core.replace(src, dst)
         core += (" No children or young boys in the opening still frame;"
