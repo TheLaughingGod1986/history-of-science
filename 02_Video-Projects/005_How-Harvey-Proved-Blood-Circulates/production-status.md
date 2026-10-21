@@ -997,3 +997,20 @@ picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Har
 
 
 
+## J0761 long thumbnail B v10 (`SQUEEZED CLOTH STRIP`) — Gemini, 21 Oct 2026
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v09` in `J0700`, `002` got `B v11` in `J0731`, and `001` got `B v08` in `J0746`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_squeezed_cloth_strip_v10.jpg` (`1280×720`, `256,205` bytes, sha256 `2ef47700d84219aecdc91a02b28acce5e94540226a3eceb2c3bd40494714c88a`) via `08_Thumbnail/_compose_hos_005_thumb_B_squeezed_cloth_strip_v10.py` and `08_Thumbnail/THUMB_B_SQUEEZED_CLOTH_STRIP_v10.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.11×` push-in + targeted local weave/fold relief boost on the squeezed cloth strip and knot around the upper arm (`x=825..1245, y=255..425`), the stopped glowing red arterial column directly above the strip (`x=885..1125, y=0..290`), and the branching blue venous cords and pale foreground hand below it (`heroBox = [550, 0, 1252, 710]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`SQUEEZED CLOTH STRIP`** (`STRIP` in gold `#E49C20`, `SQUEEZED` and `CLOTH` in cream, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_SQUEEZED_CLOTH_STRIP_v10.json`):**
+  - **HOOK: PASS** — `SQUEEZED CLOTH STRIP` (3 words, punch word `STRIP` in gold) names the concrete visible ligature instrument wrapped around the upper arm on the plate (the strip of woven cloth/linen squeezing the upper arm to stop arterial inflow and pinch the superficial veins shut, `De Motu Cordis` ch. 11, `FACT_NOTES_v01` rows 26–27; `005` script Part 04 lines 110 & 114 and Part 05 line 158: *"The most famous one needs nothing but a strip of linen... the veins near the skin are still squeezed shut... It squeezes until the blood stops getting in"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), Variant B v02 (`IT GOES ROUND`), Variant C v04 (`TIE IT TIGHT`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), `J0518` (`TRAPPED UNDER SKIN`), `J0564` (`STOPPED RED PULSE`), `J0609` (`SWOLLEN BLUE CORDS`), `J0655` (`PINCHED LINEN KNOT`), or `J0700` (`PALE COLD HAND`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=110..467`, `y=68..318`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=550..1252`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_squeezed_cloth_strip_v10_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
