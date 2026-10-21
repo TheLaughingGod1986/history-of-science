@@ -1,0 +1,32 @@
+# 059 price review v01 (pre-VO plate boards)
+
+Gemini, 19 Oct 2026, J0631. Boards only. **No mint. No spend. No merge.**
+Prepared from `telomeres_script_master_v01.md` (`92.4 PASS`) and `SOURCES_v01.md` so 059's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Shoelace Caps Counting Down Inside Your DNA | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — 17 January 1912 – December 1961: Alexis Carrel's 34-Year 'Immortal' Chicken Heart Myth & Leonard Hayflick's 50-Division Limit | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — 1938, 1971 & 1978–1982: Alexey Olovnikov's Moscow Subway Train & Elizabeth Blackburn and Jack Szostak's TTGGGG Shoelace Caps — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — Christmas Day, 25 December 1984: Carol Greider & Elizabeth Blackburn Discover Telomerase & the Double-Edged Sword of Immortality | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — Why Turning Telomerase On Everywhere Isn't an Instant Fountain of Youth — & How Hormones Control Your Body | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Alexis Carrel, Leonard Hayflick, Paul S. Moorhead, Hermann J. Muller, Barbara McClintock, Alexey M. Olovnikov, Elizabeth H. Blackburn, Jack W. Szostak, Carol W. Greider, George Oliver, Edward Schäfer, William Bayliss, Ernest Starling), 17 January 1912 Rockefeller chicken-heart culture & December 1961 Wistar 50-division Hayflick Limit, 1971 Moscow subway end-replication insight & 1978–1982 *Tetrahymena*/yeast telomere conservation, Christmas Day 25 December 1984 UC Berkeley telomerase discovery, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (brass shoelace aglets, Carrel glass flask, chromosome model & 50-click tally counter pan, 3-object callback bench, 1961 square glass culture bottles, cryo-canister & karyotype print, 1912 Carrel D-flask & hand-centrifuge, 1978 *Tetrahymena* Erlenmeyer flask & yeast agar plates, 1971 Russian notebook railway-track DNA sketch & wooden primer-gap model, 1984 Berkeley vertical gel electrophoresis rig & RNA-template wooden model, chromosome model with brass shoelace-cap tips & sand hourglass on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_hayflick_1961_and_blackburn_greider_1984_telomere_15kb_to_4kb_50_divisions_chart` — human telomere attrition & Hayflick limit chart showing ~10,000–15,000 bp of TTAGGG repeats at birth losing ~50–200 bp/division across ~50 doublings down to ~4,000 bp vs telomerase extension (`SCALE: each of your forty-six chromosomes starts life with a protective DNA fuse about ten thousand letters long — and every time a cell divides, up to two hundred letters burn off the tip until after fifty divisions the fuse runs out`)
+  2. `P1:06_olovnikov_1971_watson_1972_lagging_strand_end_replication_subway_track_chart` — Olovnikov (1971) & Watson (1972) end-replication problem diagram comparing leading-strand continuous synthesis against lagging-strand terminal RNA primer gap (`SCALE: the enzyme that copies your DNA is like a painter backing down a wooden hallway who can paint every floorboard except the final board he is standing on — so every copy of the hallway comes out one board shorter`)
+  3. `P2:02_hayflick_moorhead_dec_1961_phase_i_ii_iii_50_doublings_and_male_female_mix_chart` — Hayflick & Moorhead (December 1961, *Exp. Cell Res.*) Phase I/II/III ~50 ± 10 population doubling curve, 40-doubling male + 10-doubling female mixed-dish proof, and liquid-nitrogen memory (`SCALE: even if you freeze a human cell in liquid nitrogen at minus one hundred and ninety-six degrees for ten years after twenty divisions, the moment you thaw it out it remembers its exact count and divides only thirty more times`)
+  4. `P3:02_olovnikov_1971_blackburn_gall_1978_szostak_1982_tetrahymena_ttgggg_yeast_human_ttaggg_chart` — Blackburn & Gall (March 1978), Szostak & Blackburn (May 1982), and Moyzis et al. (1988) *Tetrahymena* `TTGGGG` to yeast and human `TTAGGG` telomere conservation chart (`SCALE: the six-letter shoelace cap at the tip of your DNA is so ancient that when Blackburn and Szostak stitched telomeres from pond scum onto chromosomes inside baker's yeast, the yeast recognised the code across a billion years of evolution`)
+  5. `P4:02_greider_blackburn_1985_1989_telomerase_rna_template_and_85_90pct_cancer_firewall_chart` — Greider & Blackburn (Dec 1985 *Cell* & 1989 *Nature*) and Kim, Shay & Wright (23 Dec 1994 *Science*) telomerase RNA-template (`TERC + TERT`) mechanism and ~50-division anti-cancer firewall (~85–90% cancer reactivation) (`SCALE: telomerase is a molecular sewing machine that carries its own six-letter thread pattern inside its pocket — keeping stem cells and newborn babies young, while our normal body cells lock the machine away so rogue cells cannot divide into cancer`)
+  6. `P5:01_timeline_1912_2009_and_aging_vs_cancer_telomere_tradeoff_chart` — completed 4-date timeline (1912 → 2009) + telomere attrition vs anti-cancer firewall trade-off diagram (`SCALE: from a thirty-four-year chicken-heart myth in New York to an X-ray film developed on Christmas night in California, scientists discovered that the tips of your chromosomes count every single division of your life`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_carrel_1912_flask_hayflick_1961_culture_bottle_and_greider_1984_gel_plate`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062. `generation_authorized` is `false` on every row.

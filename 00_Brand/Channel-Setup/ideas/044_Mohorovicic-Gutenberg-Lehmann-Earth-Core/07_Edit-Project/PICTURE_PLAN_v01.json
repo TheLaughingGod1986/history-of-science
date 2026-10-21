@@ -1,0 +1,98 @@
+{
+  "film": "044_Mohorovicic-Gutenberg-Lehmann-Earth-Core",
+  "version": "v01",
+  "date": "2026-10-18",
+  "owner": "gemini (J0555)",
+  "status": "PRE_VO_BOARDS_V01_NO_MINT",
+  "generation_authorized": false,
+  "script": "00_Brand/Channel-Setup/ideas/044_Mohorovicic-Gutenberg-Lehmann-Earth-Core/earth_core_script_master_v01.md",
+  "sources": "00_Brand/Channel-Setup/ideas/044_Mohorovicic-Gutenberg-Lehmann-Earth-Core/SOURCES_v01.md",
+  "credit_snapshot": {
+    "flow_balance": 23740,
+    "flow_floor": 0,
+    "flow_read_at": "2026-10-15T21:42:22Z",
+    "vertex_promo_gbp": 71.02,
+    "vertex_usable_gbp": 70.02
+  },
+  "totals": {
+    "rows": 25,
+    "Quality": 10,
+    "Fast": 8,
+    "code_graphic": 6,
+    "reuse": 1,
+    "flow_credits_try1": 1080,
+    "flow_credits_expected": 2750,
+    "vertex_try1_gbp": 15.2,
+    "vertex_expected_gbp": 37.96,
+    "explorer": 2,
+    "teach_overlays": 12
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "title": "Part 01 \u2014 Six Thousand Kilometres Beneath Your Feet and the Cardboard Cards in Copenhagen",
+      "rows": 9,
+      "Quality": 5,
+      "Fast": 2,
+      "code_graphic": 2,
+      "reuse": 0,
+      "flow_credits_try1": 520,
+      "flow_credits_expected": 1335,
+      "vertex_try1_gbp": 5.76,
+      "vertex_expected_gbp": 14.82
+    },
+    {
+      "part": 2,
+      "title": "Part 02 \u2014 Two Kinds of Earthquake Waves & Andrija Mohorovi\u010di\u0107's 8 October 1909 Zagreb Discovery",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 2,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 120,
+      "flow_credits_expected": 299,
+      "vertex_try1_gbp": 2.4,
+      "vertex_expected_gbp": 5.73
+    },
+    {
+      "part": 3,
+      "title": "Part 03 \u2014 Beno Gutenberg's 1914 Shadow Zone at 2,890 Kilometres \u2014 Midpoint Twist",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 2,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 120,
+      "flow_credits_expected": 299,
+      "vertex_try1_gbp": 2.4,
+      "vertex_expected_gbp": 5.73
+    },
+    {
+      "part": 4,
+      "title": "Part 04 \u2014 17 June 1929 to 1936: Inge Lehmann's Oatmeal-Box Cards & the Paper Titled 'P''",
+      "rows": 4,
+      "Quality": 2,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 210,
+      "flow_credits_expected": 538,
+      "vertex_try1_gbp": 2.88,
+      "vertex_expected_gbp": 7.28
+    },
+    {
+      "part": 5,
+      "title": "Part 05 \u2014 Why the Inner Core Is Solid, How It Powers Earth's Magnetic Shield & Why Coffee Keeps You Awake",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 1,
+      "flow_credits_try1": 110,
+      "flow_credits_expected": 279,
+      "vertex_try1_gbp": 1.76,
+      "vertex_expected_gbp": 4.4
+    }
+  ],
+  "mint_order": "006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044. Nothing in 044 is generation_authorized."
+}

@@ -1,0 +1,32 @@
+# 074 price review v01 (pre-VO plate boards)
+
+Gemini, 20 Oct 2026, J0706. Boards only. **No mint. No spend. No merge.**
+Prepared from `lungs_script_master_v01.md` (`91.0/100 PASS`) and `SOURCES_v01.md` so 074's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Tennis-Court Sponge in Your Chest & the Copenhagen Bubble Showdown | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — October 1667, 1904 & 1910: Hooke and Lower's Scarlet Blood, Christian Bohr's Curve & the Kroghs' 'Seven Little Devils' | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — 1937 – 13 February 1960: Max Perutz's 22-Year X-Ray Quest & the Molecular Lung (Haemoglobin) — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — 1929, 1957 & May 1959: Kurt von Neergaard, John Clements & Mary Ellen Avery's Discovery of Pulmonary Surfactant | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — Saving Premature Babies Around the World — & How One White-Eyed Fruit Fly Mapped Our Chromosomes | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Robert Hooke, Richard Lower, Christian Bohr, August Krogh, Marie Krogh, Max Perutz, John C. Kendrew, Kurt von Neergaard, John A. Clements, Mary Ellen Avery, Jere Mead, Walther Flemming, Nettie Stevens, Thomas Hunt Morgan, Alfred Sturtevant), 24 October 1667 Royal Society bellows lung & 1910 Copenhagen `'Seven Little Devils'` microtonometer, 13 February 1960 Cambridge `3D haemoglobin` X-ray structure, May 1959 Boston `pulmonary surfactant` balance trough, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (1669 Lower *Tractatus de Corde*, capillary glass microtonometer & 1910 *Skand. Arch.* offprint pan, 3-object callback bench, seven 1910 *Skand. Arch.* papers beside microtonometer & gas burettes, sculpted alveolar sac & capillary mesh model, ruby haemoglobin crystals with X-ray diffraction film & balsa-wood contour slices, sculpted 4-subunit haemoglobin tetramer model, 1959 Langmuir-Wilhelmy surface film balance trough, surfactant vial beside alveolar & haemoglobin models on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_hooke_1667_bohr_1904_krogh_1910_avery_1959_and_perutz_1960_lung_diffusion_surfactant_chart` — `300 million` alveoli (`~70–100 m²`, `0.5 µm` barrier), Krogh's passive O₂ diffusion, Bohr/Perutz sigmoidal haemoglobin curve, and Avery's `<5 dyn/cm` surfactant (`SCALE: your two lungs fold the surface area of an entire singles tennis court inside your ribcage — and every red blood cell races across that court in three-quarters of a second, snapping up oxygen through a wall fifty times thinner than tissue paper`)
+  2. `P1:06_august_and_marie_krogh_1910_skand_arch_microtonometer_seven_little_devils_diffusion_chart` — August & Marie Krogh (1910 *Skand. Arch. Physiol.* `'Seven Little Devils'`) microtonometer alveolar vs arterial PO₂ table (`SCALE: measuring the oxygen pressure of a single microscopic air bubble inside a hair-thin glass tube proved that your lungs don't need a single pump to push oxygen into your blood — oxygen flows downhill by itself like crowd-surfers pouring through an open stadium gate`)
+  3. `P2:02_bohr_1904_co2_shift_and_krogh_1910_seven_little_devils_alveolar_diffusion_chart` — Christian Bohr et al. (1904) CO₂ Bohr Effect & August/Marie Krogh (1910) passive alveolar diffusion curve (`SCALE: August and Marie Krogh proved that your lungs don't need an energy-burning oxygen pump because evolution folded a tennis court of membrane fifty times thinner than tissue paper inside your chest — letting oxygen pour into your blood by pure physical diffusion`)
+  4. `P3:02_perutz_13_feb_1960_nature_haemoglobin_t_to_r_switch_and_sigmoidal_o2_curve_chart` — Max Perutz et al. (13 February 1960 *Nature*) 4-subunit haemoglobin `T → R` switch (`0.04 nm` Fe²⁺ shift, `15°` subunit rotation) & sigmoidal O₂ curve (`SCALE: when the first oxygen molecule lands on haemoglobin, it tugs an iron atom by less than half the width of a single hydrogen atom — yet that tiny lever pull twists the entire ten-thousand-atom protein by fifteen degrees and throws open the doors for the next three oxygens`)
+  5. `P4:02_neergaard_1929_hysteresis_and_avery_mead_may_1959_surfactant_surface_tension_chart` — Kurt von Neergaard (1929) air/saline lung hysteresis & Mary Ellen Avery and Jere Mead (May 1959 *AMA J. Dis. Child.*) `<5 dyn/cm` normal vs `30.4 dyn/cm` premature RDS surface-tension table (`SCALE: without Mary Ellen Avery's phospholipid surfactant soap, inflating a newborn baby's wet microscopic lung bubbles on every breath is like trying to blow up three hundred million wet party balloons whose walls are glued together with superglue`)
+  6. `P5:01_timeline_1667_1980_and_surfactant_neonatal_survival_chart` — completed timeline (1667 → 1980) + exogenous pulmonary surfactant therapy (`SCALE: from fireplace bellows in seventeenth-century London to a microscopic gas bubble in Copenhagen, an X-ray beam in Cambridge, and a soap trough in Boston, scientists unlocked the tennis-court sponge that keeps us breathing`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1667_hooke_bellows_1910_krogh_microtonometer_and_1960_perutz_haemoglobin_model`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062 > 063 > 064 > 065 > 066 > 067 > 068 > 069 > 070 > 071 > 072 > 073 > 074 > 075 > 076 > 077. `generation_authorized` is `false` on every row.

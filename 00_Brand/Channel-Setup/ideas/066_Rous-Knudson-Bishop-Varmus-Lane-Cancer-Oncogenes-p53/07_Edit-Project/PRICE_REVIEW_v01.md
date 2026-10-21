@@ -1,0 +1,32 @@
+# 066 price review v01 (pre-VO plate boards)
+
+Gemini, 19 Oct 2026, J0661. Boards only. **No mint. No spend. No merge.**
+Prepared from `cancer_script_master_v01.md` (`90.8 PASS`) and `SOURCES_v01.md` so 066's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Chicken Virus in New York & the Stuck Gas Pedal Inside Your Own DNA | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — 21 January 1911 & 11 March 1976: Peyton Rous's 55-Year Wait & Bishop and Varmus's Proto-Oncogene Shock | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — April 1971 & 16 October 1986: Alfred Knudson's 'Two-Hit' Equation & the Discovery of Tumour Suppressor Brakes — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — May 1979, 14 April 1989 & 8 October 2015: p53 ('The Guardian of the Genome') & Why Giant Elephants Almost Never Get Cancer (Peto's Paradox) | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — How Precision Cancer Drugs Lock the Stuck Pedal — & How One Single Egg Cell Knows Where to Build Your Head and Hands | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Peyton Rous, Alfred G. Knudson Jr., J. Michael Bishop, Harold E. Varmus, Dominique Stehelin, Peter K. Vogt, Robert A. Weinberg, Thaddeus P. Dryja, David P. Lane, Arnold J. Levine, Lloyd J. Old, Bert Vogelstein, Richard Peto, Hans Driesch, Hilde Mangold, Hans Spemann, Edward B. Lewis, Walter J. Gehring), 21 January 1911 New York Rous Sarcoma Virus filtration, 11 March 1976 UCSF `c-src` proto-oncogene discovery, April 1971 Houston `Two-Hit` retinoblastoma graph & 16 October 1986 `RB1` cloning, May 1979–2015 `p53` & elephant `40 TP53 alleles` discovery, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (1911 Berkefeld porcelain filter candle, two-hit graph & brass pedal-and-brake model pan, 3-object callback bench, 1976 `c-src` hybridization plot & 1982 sequencing gel strip, normal vs wedged brass accelerator pedals, 1986 chromosome 13 `RB1` Southern blot & twin braided brake cables, paired wooden chromosome 13 models with brass `RB1` clasps, sculpted 4-part `p53` DNA clamp beside 40 miniature shields, precision `imatinib` brass key slotted into `BCR-ABL` kinase model on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_rous_1911_knudson_1971_bishop_varmus_1976_lane_vogelstein_p53_accelerator_vs_brakes_chart` — dominant proto-oncogene accelerator (`1 hit`: `c-src` / `HRAS` codon 12 `G→T`) vs recessive Two-Hit tumour-suppressor brakes (`2 hits`: `RB1` & `TP53` mutated in `>50%` of cancers) (`SCALE: turning a healthy cell into a tumour is like a runaway car — it takes a stuck gas pedal in a single growth gene plus cutting both independent emergency brake cables`)
+  2. `P1:06_peto_1977_abegglen_schiffman_maley_lynch_2015_elephant_40_tp53_alleles_chart` — Peto's Paradox (1977) & Abegglen/Schiffman/Maley/Lynch (8 October 2015 *JAMA*): humans (`2 TP53 alleles`, `~11–25%` cancer mortality) vs elephants (`100×` more cells, `20 copies / 40 alleles of TP53`, `<4.8%` cancer mortality) (`SCALE: an elephant has a hundred times more cells than you do, yet because every elephant cell carries forty copies of the p53 brake gene instead of two, elephants almost never get cancer`)
+  3. `P2:02_stehelin_varmus_bishop_vogt_11_mar_1976_nature_c_src_hybridization_and_hras_chart` — Stehelin, Varmus, Bishop & Vogt (11 March 1976, *Nature* 260: 170–173) `c-src` vertebrate DNA hybridization curve + Weinberg/Barbacid (1982) human `HRAS` single-letter mutation (`SCALE: Peyton Rous's virus didn't bring an alien poison into the cell — like a car thief who hot-wires your own ignition, it stole a normal growth gene that every healthy cell uses to heal wounds and welded the gas pedal to the floor`)
+  4. `P3:02_knudson_apr_1971_pnas_48_case_retinoblastoma_one_hit_vs_two_hit_survival_curve_chart` — Knudson (April 1971, *PNAS* 68: 820–823) `48-case` retinoblastoma semi-log curve comparing hereditary bilateral (`1-hit` linear exponential) vs sporadic unilateral (`2-hit` curve) (`SCALE: having two copies of every tumour-suppressor gene is like flying on an airliner with twin backup hydraulic brakes — if random chance cuts one cable in a million cells, the backup cable still stops the plane, unless lightning strikes the exact same cell twice`)
+  5. `P4:02_vogelstein_1989_science_tp53_and_schiffman_lynch_2015_jama_elephant_apoptosis_chart` — Vogelstein (14 April 1989 *Science*) `TP53` two-hit inactivation & Schiffman/Lynch (8 October 2015 *JAMA*) elephant lymphocyte radiation apoptosis (`>2×` human rate) (`SCALE: instead of repairing borderline DNA damage and risking a typo, an elephant cell with forty p53 guardians hits the self-destruct button the instant its DNA is scratched`)
+  6. `P5:01_timeline_1911_2015_and_imatinib_gleevec_locking_bcr_abl_pocket_chart` — completed 4-date timeline (1911 → 2015) + Brian Druker's May 2001 `imatinib` (`Gleevec`) precision molecular key locking `BCR-ABL` (`SCALE: from a Long Island chicken in 1911 to forty guardian genes inside an elephant, a century of detective work revealed that cancer is the shadow of the very genes that built us`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1911_berkefeld_filter_1971_two_hit_chart_and_p53_tetramer_model`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062 > 063 > 064 > 065 > 066 > 067 > 068. `generation_authorized` is `false` on every row.

@@ -1,0 +1,98 @@
+{
+  "film": "035_Banting-Best-Collip-Insulin",
+  "version": "v01",
+  "date": "2026-10-18",
+  "owner": "gemini (J0509)",
+  "status": "PRE_VO_BOARDS_V01_NO_MINT",
+  "generation_authorized": false,
+  "script": "00_Brand/Channel-Setup/ideas/035_Banting-Best-Collip-Insulin/insulin_script_master_v01.md",
+  "sources": "00_Brand/Channel-Setup/ideas/035_Banting-Best-Collip-Insulin/SOURCES_v01.md",
+  "credit_snapshot": {
+    "flow_balance": 23740,
+    "flow_floor": 0,
+    "flow_read_at": "2026-10-15T21:42:22Z",
+    "vertex_promo_gbp": 71.02,
+    "vertex_usable_gbp": 70.02
+  },
+  "totals": {
+    "rows": 25,
+    "Quality": 12,
+    "Fast": 6,
+    "code_graphic": 6,
+    "reuse": 1,
+    "flow_credits_try1": 1260,
+    "flow_credits_expected": 3228,
+    "vertex_try1_gbp": 16.48,
+    "vertex_expected_gbp": 42.08,
+    "explorer": 2,
+    "teach_overlays": 12
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "title": "Part 01 \u2014 The 2:00 a.m. Note in Ontario and the Hospital Ward in Toronto",
+      "rows": 9,
+      "Quality": 5,
+      "Fast": 2,
+      "code_graphic": 2,
+      "reuse": 0,
+      "flow_credits_try1": 520,
+      "flow_credits_expected": 1335,
+      "vertex_try1_gbp": 5.76,
+      "vertex_expected_gbp": 14.82
+    },
+    {
+      "part": 2,
+      "title": "Part 02 \u2014 Starving in a Sea of Sugar & the 2:00 a.m. Notebook",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 2,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 120,
+      "flow_credits_expected": 299,
+      "vertex_try1_gbp": 2.4,
+      "vertex_expected_gbp": 5.73
+    },
+    {
+      "part": 3,
+      "title": "Part 03 \u2014 The Coin Flip, the Rooftop Lab & Dog #408",
+      "rows": 4,
+      "Quality": 2,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 210,
+      "flow_credits_expected": 538,
+      "vertex_try1_gbp": 3.04,
+      "vertex_expected_gbp": 7.79
+    },
+    {
+      "part": 4,
+      "title": "Part 04 \u2014 The Failed First Shot, the Alcohol Secret & the $1 Patent \u2014 Midpoint Twist",
+      "rows": 4,
+      "Quality": 3,
+      "Fast": 0,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 300,
+      "flow_credits_expected": 777,
+      "vertex_try1_gbp": 3.52,
+      "vertex_expected_gbp": 9.34
+    },
+    {
+      "part": 5,
+      "title": "Part 05 \u2014 Why Sugar Doesn't Cause Type 1 Diabetes & the Two Oranges That Cured Scurvy",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 1,
+      "flow_credits_try1": 110,
+      "flow_credits_expected": 279,
+      "vertex_try1_gbp": 1.76,
+      "vertex_expected_gbp": 4.4
+    }
+  ],
+  "mint_order": "006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035. Nothing in 035 is generation_authorized."
+}

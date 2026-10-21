@@ -1,0 +1,32 @@
+# 061 price review v01 (pre-VO plate boards)
+
+Gemini, 19 Oct 2026, J0631. Boards only. **No mint. No spend. No merge.**
+Prepared from `circadian_script_master_v01.md` (`91.9 PASS`) and `SOURCES_v01.md` so 061's full plate board rows, non-emissive Fast prompts, £0 code graphics, and Teach-on-Screen overlays are ready to re-time the moment long VO locks. Parked for Chief.
+
+## Totals (base 25-row board before VO continuation splits)
+
+| Part | Title | Rows | Quality | Fast | £0 code | £0 reuse | Flow try-1 | Flow expected | Vertex try-1 | Vertex expected |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | Part 01 — The Plant in the Dark Cupboard & the 24-Hour Hourglass Inside Your Cells | 9 | 5 | 2 | 2 | 0 | 520 | 1335 | £5.76 | £14.82 |
+| Part 02 | Part 02 — 1729 – 1962: De Mairan's Dark Cupboard, Franz Halberg's 'Circadian' Rhythm & Jürgen Aschoff's Underground Bunker | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 03 | Part 03 — September 1971: Seymour Benzer & Ronald Konopka's Mutant Fruit Flies (The Period Gene) — Midpoint Twist | 4 | 1 | 2 | 1 | 0 | 120 | 299 | £2.40 | £5.73 |
+| Part 04 | Part 04 — 1984–1994 & 2002: Hall, Rosbash & Young Crack the PER/TIM Molecular Hourglass (2017 Nobel Prize) & How Blue Light Resets Your Brain (Melanopsin) | 4 | 2 | 1 | 1 | 0 | 210 | 538 | £2.88 | £7.28 |
+| Part 05 | Part 05 — Why Jet Lag Happens When Your Organ Clocks Split Apart — & How Your Muscles Turn Food Into Motion | 4 | 1 | 1 | 1 | 1 | 110 | 279 | £1.76 | £4.40 |
+| **Film** | | **25** | **10** | **8** | **6** | **1** | **1080** | **2750** | **£15.20** | **£37.96** |
+
+## Route breakdown
+
+- **Quality (10 rows):** readable faces (Jean-Jacques d'Ortous de Mairan, Jürgen Aschoff, Franz Halberg, Michel Siffre, Seymour Benzer, Ronald J. Konopka, Jeffrey C. Hall, Michael Rosbash, Michael W. Young, David M. Berson, Albert Szent-Györgyi, Hugh Huxley, Andrew Huxley), 1729 Paris dark-cupboard *Mimosa* experiment & June–September 1962 Andechs bunker / Scarasson alpine cave isolation, September 1971 Caltech *Drosophila* `Period` mutant discovery, 1984–1994 `PER/TIM` feedback hourglass & 2002 `480-nm` blue-light melanopsin retinal cells, and the 2 Explorer beats.
+- **Fast (8 rows, non-emissive):** daylight prop and laboratory shots (open brass pocket watch, sand hourglass, potted *Mimosa* & glass *Drosophila* vial pan, 3-object callback bench, 1962 Bavarian strip-chart recorder & thermometer, 1729 carved oak cupboard with potted *Mimosa* & quill notebook, 1971 X-chromosome band map & plotted actogram strips, brass grandfather-clock pendulum nut & wooden DNA helix model, painted anatomical eye/retina model & sky-blue glass filter, two brass world-time clocks & brain/liver model on museum plinth). Zero candles, flames, sparks, or glowing elements on Fast.
+- **£0 code graphics (6 rows):**
+  1. `P1:04_de_mairan_1729_aschoff_1962_konopka_benzer_1971_24h11m_and_period_mutants_chart` — wild-type 24-hour rhythm, human free-running bunker period (`24 h 11 min`), and Konopka & Benzer's September 1971 single-gene `Period` mutants (`perS` 19 h, `perL` 28 h, `per0` arrhythmic) (`SCALE: without morning sunlight to reset your eyes, the natural clock inside a human body runs about twenty-four hours and eleven minutes long — drifting eleven minutes later every single day like a pocket watch that runs slightly slow`)
+  2. `P1:06_hall_rosbash_young_1990_1994_per_tim_ttfl_molecular_hourglass_oscillation_chart` — Hardin, Hall & Rosbash (1990 *Nature*) and Vosshall, Price, Sehgal & Young (1994 *Science*) 24-hour `PER/TIM` transcription-translation negative feedback loop curve (`SCALE: every cell in your body tells time like an old sand hourglass — spending twelve hours trickling PER and TIM protein grains into a pile until at midnight the pile tips over, shuts off the tap, and takes twelve hours to drain away`)
+  3. `P2:02_aschoff_1962_siffre_1962_czeisler_1999_human_free_running_24h11m_actogram_chart` — Aschoff (15 June 1962 *Science*), Siffre (1962 Scarasson cave log), and Czeisler et al. (25 June 1999 *Science*) human free-running actogram & body-temperature rhythm chart (`24.18 h = 24 h 11 min`) (`SCALE: when Michel Siffre climbed out of his pitch-black alpine cave on the fourteenth of September nineteen sixty-two after fifty-eight days without a watch, his internal body clock had drifted so steadily that he thought it was still the twentieth of August`)
+  4. `P3:02_konopka_benzer_sep_1971_pnas_drosophila_per_s_19h_per_l_28h_per_0_x_chromosome_chart` — Konopka & Benzer (September 1971, *PNAS*) *Drosophila* eclosion & locomotor activity rhythm chart mapping `perS` (19 h), `perL` (28 h), and `per0` to the X-chromosome `Period` locus (`SCALE: changing a single genetic letter inside the Period gene was like turning the regulating screw on the back of a grandfather clock — speeding a fly's entire day up to nineteen hours or slowing it down to twenty-eight`)
+  5. `P4:02_hall_rosbash_young_1990_1994_per_tim_dbt_and_berson_2002_480nm_melanopsin_scn_chart` — Hall, Rosbash & Young (1984–1994) `PER/TIM/DBT` nuclear negative feedback loop and Berson, Dunn & Takao (8 February 2002 *Science*) `~480-nm` blue-light melanopsin `ipRGC` signaling to the 20,000-neuron SCN (`SCALE: staring at a bright blue phone screen at midnight hits your retina with four-hundred-and-eighty-nanometre sky-blue light — fooling the twenty thousand clock neurons at the base of your brain into thinking dawn has just broken`)
+  6. `P5:01_timeline_1729_2017_and_scn_vs_liver_gut_jet_lag_desynchrony_chart` — completed 4-date timeline (1729 → 2017) + brain SCN vs liver/gut peripheral clock jet-lag resynchronization diagram (`SCALE: from a sensitive houseplant locked in a dark Paris cupboard to a twenty-four-hour protein hourglass inside every cell, three centuries of science revealed how living things keep time with the turning Earth`)
+- **£0 verified reuse (1 row):** `P5:04_table_three_callback` uses the 2.40 s unused moving tail `[5.50s..7.90s]` of `P1:07_table_three_props_1729_mimosa_pot_1962_bunker_strip_chart_and_1971_caltech_fly_tubes`.
+
+## Mint order
+
+006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046 > 047 > 048 > 049 > 050 > 051 > 052 > 053 > 054 > 055 > 056 > 057 > 058 > 059 > 060 > 061 > 062. `generation_authorized` is `false` on every row.

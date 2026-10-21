@@ -1,0 +1,98 @@
+{
+  "film": "046_Berger-Kleitman-Aserinsky-Sleep-REM",
+  "version": "v01",
+  "date": "2026-10-18",
+  "owner": "gemini (J0555)",
+  "status": "PRE_VO_BOARDS_V01_NO_MINT",
+  "generation_authorized": false,
+  "script": "00_Brand/Channel-Setup/ideas/046_Berger-Kleitman-Aserinsky-Sleep-REM/sleep_script_master_v01.md",
+  "sources": "00_Brand/Channel-Setup/ideas/046_Berger-Kleitman-Aserinsky-Sleep-REM/SOURCES_v01.md",
+  "credit_snapshot": {
+    "flow_balance": 23740,
+    "flow_floor": 0,
+    "flow_read_at": "2026-10-15T21:42:22Z",
+    "vertex_promo_gbp": 71.02,
+    "vertex_usable_gbp": 70.02
+  },
+  "totals": {
+    "rows": 25,
+    "Quality": 10,
+    "Fast": 8,
+    "code_graphic": 6,
+    "reuse": 1,
+    "flow_credits_try1": 1080,
+    "flow_credits_expected": 2750,
+    "vertex_try1_gbp": 15.2,
+    "vertex_expected_gbp": 37.96,
+    "explorer": 2,
+    "teach_overlays": 12
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "title": "Part 01 \u2014 The Rusty Polygraph, the Eight-Year-Old Boy, and the Nighttime Dishwasher in Your Skull",
+      "rows": 9,
+      "Quality": 5,
+      "Fast": 2,
+      "code_graphic": 2,
+      "reuse": 0,
+      "flow_credits_try1": 520,
+      "flow_credits_expected": 1335,
+      "vertex_try1_gbp": 5.76,
+      "vertex_expected_gbp": 14.82
+    },
+    {
+      "part": 2,
+      "title": "Part 02 \u2014 6 July 1924 & June 1938: Hans Berger's Brainwaves & Nathaniel Kleitman's 32 Days in Mammoth Cave",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 2,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 120,
+      "flow_credits_expected": 299,
+      "vertex_try1_gbp": 2.4,
+      "vertex_expected_gbp": 5.73
+    },
+    {
+      "part": 3,
+      "title": "Part 03 \u2014 1952 to 4 September 1953: Eugene Aserinsky Wires Up His 8-Year-Old Son Armond & Discovers REM Dreaming Sleep \u2014 Midpoint Twist",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 2,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 120,
+      "flow_credits_expected": 299,
+      "vertex_try1_gbp": 2.4,
+      "vertex_expected_gbp": 5.73
+    },
+    {
+      "part": 4,
+      "title": "Part 04 \u2014 18 October 2013: Maiken Nedergaard Discovers the Brain's Nighttime Dishwasher (The Glymphatic System)",
+      "rows": 4,
+      "Quality": 2,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 0,
+      "flow_credits_try1": 210,
+      "flow_credits_expected": 538,
+      "vertex_try1_gbp": 2.88,
+      "vertex_expected_gbp": 7.28
+    },
+    {
+      "part": 5,
+      "title": "Part 05 \u2014 Why Every Hour of Sleep Counts & How a Frozen Gas Cylinder Created Teflon and Bulletproof Kevlar",
+      "rows": 4,
+      "Quality": 1,
+      "Fast": 1,
+      "code_graphic": 1,
+      "reuse": 1,
+      "flow_credits_try1": 110,
+      "flow_credits_expected": 279,
+      "vertex_try1_gbp": 1.76,
+      "vertex_expected_gbp": 4.4
+    }
+  ],
+  "mint_order": "006 > 007 > 008 > 009 > 010 > 011 > 012 > 013 > 014 > 015 > 016 > 017 > 018 > 019 > 020 > 021 > 022 > 023 > 024 > 025 > 026 > 027 > 028 > 029 > 030 > 031 > 032 > 033 > 034 > 035 > 036 > 037 > 038 > 039 > 040 > 041 > 042 > 043 > 044 > 045 > 046. Nothing in 046 is generation_authorized."
+}
