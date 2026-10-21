@@ -553,6 +553,106 @@
       "credits_ui_drop": 10,
       "account": "benoats@googlemail.com",
       "at": "2026-10-21T17:46:57+00:00"
+    },
+    "06_jesty_family": {
+      "plate": "06_jesty_family",
+      "part": "02",
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/refs/v02_flow_stills/06_jesty_family_t1.png",
+      "start_frame_sha256": "b55f8f1371bdb211c9a6ef2e2d8faa126faa5ae27a80e5ae8ee4c3d91447b64e",
+      "credits_before": 23000,
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T18:08:58+00:00",
+      "project_url": "https://flow.google.com/project/d5986130-42c5-49e4-ae61-1ab7f2c7ddaa",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/raw/v01/06_jesty_family_t1.mp4",
+      "sha256": "3581d3d667c03034dda59fd3834c66b43a28bde082a1e0ae45f9f547457ab3ab",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/uat/06_jesty_family_t1_sheet.jpg",
+      "credits_after": 22900,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T18:11:13+00:00"
+    },
+    "06b_jesty_hands": {
+      "plate": "06b_jesty_hands",
+      "part": "02",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/refs/v02_flow_stills/06b_jesty_hands_t1.png",
+      "start_frame_sha256": "889ddc53cc45179e802c84368f3c94c476759bed51b35bd43c3f0690aba2f8d1",
+      "credits_before": 22900,
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T18:12:10+00:00",
+      "project_url": "https://flow.google.com/project/07ffe61f-679b-487e-ab9a-2e5a69ea2550",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/raw/v01/06b_jesty_hands_t1.mp4",
+      "sha256": "ce8acfcd801dcba04aa7a3432e1ddfc7d385e5b361b19f0ce2cbfa428c2e2250",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/uat/06b_jesty_hands_t1_sheet.jpg",
+      "credits_after": 22890,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T18:14:13+00:00"
+    },
+    "07_jesty_table": {
+      "plate": "07_jesty_table",
+      "part": "02",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/refs/v02_flow_stills/07_jesty_table_t1.png",
+      "start_frame_sha256": "79eedf5e64da3ca0eafaf7491f744f1b6b9478e2c54f92da73a9b2c3f69349ed",
+      "credits_before": 22890,
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T18:15:11+00:00",
+      "project_url": "https://flow.google.com/project/362bb562-4fe5-4a6c-84e6-76272df9bf5d",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/raw/v01/07_jesty_table_t1.mp4",
+      "sha256": "acf052226f1dbe7cfd1875f8e6e9cb80823843473418fc7fe4e8d8adbc11f4ef",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/uat/07_jesty_table_t1_sheet.jpg",
+      "credits_after": 22880,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T18:17:15+00:00"
+    },
+    "08a_berkeley": {
+      "plate": "08a_berkeley",
+      "part": "02",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/refs/v02_flow_stills/08a_berkeley_t1.png",
+      "start_frame_sha256": "46aaeafbdf1466f494fea62e89d277fb6461642387f404cb14e658b6dc1c4f25",
+      "credits_before": 22880,
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T18:18:04+00:00",
+      "project_url": "https://flow.google.com/project/59efb122-91df-4b05-b9a4-2ee3c2e491e8",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/raw/v01/08a_berkeley_t1.mp4",
+      "sha256": "f2e93da1ed219a1fe764038ad732e99f9cf7b46a3ede0beeaad8252ce3b6fa2d",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/uat/08a_berkeley_t1_sheet.jpg",
+      "credits_after": 22870,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T18:20:14+00:00"
+    },
+    "08_jenner_window": {
+      "plate": "08_jenner_window",
+      "part": "02",
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/refs/v02_flow_stills/08_jenner_window_t1.png",
+      "start_frame_sha256": "aa7f98b68a86727dbfb53d3ead6db8cd5532cb572ab2c5b2981e154c708b07e4",
+      "credits_before": 22870,
+      "status": "SUBMITTING",
+      "submitted_at": "2026-10-21T18:20:14+00:00"
     }
   },
   "balance_reads": [
@@ -715,14 +815,44 @@
       "at": "2026-10-21T17:46:57+00:00",
       "credits": 23000,
       "after": "05_village_b"
+    },
+    {
+      "at": "2026-10-21T18:07:36+00:00",
+      "credits": 23000,
+      "when": "batch-start"
+    },
+    {
+      "at": "2026-10-21T18:08:01+00:00",
+      "credits": 23000,
+      "when": "batch-start"
+    },
+    {
+      "at": "2026-10-21T18:11:13+00:00",
+      "credits": 22900,
+      "after": "06_jesty_family"
+    },
+    {
+      "at": "2026-10-21T18:14:13+00:00",
+      "credits": 22890,
+      "after": "06b_jesty_hands"
+    },
+    {
+      "at": "2026-10-21T18:17:15+00:00",
+      "credits": 22880,
+      "after": "07_jesty_table"
+    },
+    {
+      "at": "2026-10-21T18:20:14+00:00",
+      "credits": 22870,
+      "after": "08a_berkeley"
     }
   ],
-  "updated": "2026-10-21T17:47:54+00:00",
+  "updated": "2026-10-21T18:20:14+00:00",
   "master_still": {
     "path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/refs/v02_flow_stills/08_jenner_window_t1.png",
     "sha256": "aa7f98b68a86727dbfb53d3ead6db8cd5532cb572ab2c5b2981e154c708b07e4",
-    "at": "2026-10-21T17:21:47+00:00",
-    "credits": 23260
+    "at": "2026-10-21T18:08:01+00:00",
+    "credits": 23000
   },
   "master_still_rejected": {
     "path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/still_fails/08_jenner_window_t1_fail_page_faceup.png",

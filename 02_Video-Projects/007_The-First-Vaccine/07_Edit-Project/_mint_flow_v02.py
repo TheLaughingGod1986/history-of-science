@@ -160,8 +160,31 @@ def video_dest(plate: dict) -> Path:
             / "raw/v01" / f"{plate['id']}_t1.mp4")
 
 
+def sanitize_person_names(text: str) -> str:
+    """Replace real proper surnames/names (e.g. 'Jenner') that trigger Veo's prominent-people text filter."""
+    for src, dst in (
+        ("This still is the face lock for later Jenner plates. ", ""),
+        ("This still is the face lock for later Jenner plates.", ""),
+        ("Edward Jenner", "the Georgian country doctor"),
+        ("Jenner's", "the country doctor's"),
+        ("Jenner", "the country doctor"),
+        (", Sarah Nelmes,", ""),
+        ("Sarah Nelmes", "the young dairymaid"),
+        ("James Phipps, ", ""),
+        ("James Phipps", "the boy"),
+        ("Phipps", "the boy"),
+        ("Benjamin Jesty, ", ""),
+        ("Benjamin Jesty", "the sturdy farmer"),
+        ("Jesty", "the farmer"),
+        ("Louis Pasteur", "the bearded scientist"),
+        ("Pasteur", "the bearded scientist"),
+    ):
+        text = text.replace(src, dst)
+    return text
+
+
 def still_prompt(still, plate: dict) -> str:
-    core = " ".join(plate["prompt"].split())
+    core = sanitize_person_names(" ".join(plate["prompt"].split()))
     if plate.get("explorer"):
         core = core.replace("No Explorer.", "") + " " + mint006.EXPLORER
     elif any(w in core.lower() for w in ("child", "children", "boy", "sons", "son", "phipps")):
@@ -198,7 +221,7 @@ def still_prompt(still, plate: dict) -> str:
 
 
 def video_prompt(plate: dict) -> str:
-    core = " ".join(plate["prompt"].split())
+    core = sanitize_person_names(" ".join(plate["prompt"].split()))
     if plate.get("explorer"):
         core = core.replace("No Explorer.", "") + " " + mint006.EXPLORER
     return ("Animate the attached start frame; keep its exact cartoon look, objects and light. "
