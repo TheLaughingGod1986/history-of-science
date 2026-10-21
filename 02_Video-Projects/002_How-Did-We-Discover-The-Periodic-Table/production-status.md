@@ -319,3 +319,21 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+
+## 21 Oct 2026 — Thumbnail B `v12` `VACANT CARD SLOT` (`1.33x` periodic-table cabinet & vacant-slot hero push-in, OWB J0777)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002` → `001` → `005` rotation, `002` got `B v11` in `J0731`, `001` got `B v08` in `J0746`, and `005` got `B v10` in `J0761`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` plates only):** Built `Selected/hos_002_thumb_B_vacant_card_slot_v12.jpg` (`1280×720`, `202,090` bytes, sha256 `937ca5171e179a08f09ef1e34d2138553577b18230102264a30302b6e3a853a2`) via `08_Thumbnail/_compose_hos_002_thumb_B_vacant_card_slot_v12.py` and `08_Thumbnail/THUMB_B_VACANT_CARD_SLOT_v12.json` from `_stills_v05/hos_002_empty_slot_hero_v01.jpg` with a `1.33×` push-in + golden-rim & cream-card clarity boost on the right-hand glowing vacant card slot inside Mendeleev's wooden periodic-table cabinet (`heroBox = [605, 208, 1014, 563]`, `409×355 px`), Explorer cutout from `00_Brand/Channel-Setup/style/long/002_how_did_we_discover_the_periodic_table.jpg` in lower-left at `54.0%` frame height (`389 px`, `box = [0, 331, 256, 720]`), and Georgia Bold upper-left 3-word hook **`VACANT CARD SLOT`** (`VACANT` in gold `#E49C20`, `CARD` and `SLOT` in cream, framed by gold scroll flourishes at `y=17..297`).
+- **Scores (`THUMB_B_VACANT_CARD_SLOT_v12.json`):**
+  - **HOOK: PASS** — `VACANT CARD SLOT` (3 words, punch word `VACANT` in gold) names the concrete visual hero on the right two-thirds (the glowing vacant element-card slot inside the column of cream cards on Mendeleev's wooden periodic-table cabinet; `002` script Part 04: *"Each card is one chemical element... walk toward a vacant chair with an address"* and VISUAL MUST: *"cream cards of known elements sorted by atomic weight; families drop into columns; two-three glowing empty seats / vacant card slots for eka-elements"*, plus `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), `J0534` (`METAL TURNS LIQUID`), `J0579` (`ONE GLOWING GAP`), `J0624` (`SOFT MELTING GALLIUM`), `J0670` (`SKIPPED ATOMIC SEAT`), or `J0731` (`WARM SILVERY DROP`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=104..497`, `y=44..275`, framed by top/bottom gold scroll flourishes at `y=17..297`) sits completely left of the pushed-in glowing hero slot (`x=605..1014`), above the Explorer's hair (`y=331`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_vacant_card_slot_v12_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_vacant_card_slot_v12_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_vacant_card_slot_v12_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_vacant_card_slot_v12_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_vacant_card_slot_v12_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
