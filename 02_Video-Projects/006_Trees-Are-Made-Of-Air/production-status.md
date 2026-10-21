@@ -480,3 +480,25 @@ Gate run with `--air-date 2026-12-29` (gate only). Caption check: 17 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+## 21 Oct 2026 — Short `s08_willow_pot_v01` (Test B, fifth search-titled lift from Part 02, OWB J0760)
+
+- **Selection:** HOS 004 and 005 each have 5 search-titled Shorts (`s04`–`s08`); HOS 006 had 4 search-titled Shorts (`s04_photosynthesis_v01`, `s05_charcoal_gas_v01`, `s06_ingenhousz_oxygen_v01`, `s07_priestley_mint_v01`), making 006 the locked HOS long with the fewest built Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part02_five_years_and_two_ounces_v01_raw.mp3` claim-first lift (word indices `6..20`, `34..43`, `106..117`, `168..194`): *"He took a big clay pot and filled it with two hundred pounds of soil, Then he planted a young willow that weighed five pounds. Then, after five years, he pulled the tree out and weighed it. A hundred and sixty-four pounds of new tree, and only two ounces of soil gone. The tree had not eaten the soil. So why had it grown?"* 64 words, pauses capped at 0.30 s, `atempo=1.02`, 23.874 s VO + 0.55 s tail = 24.433 s total. Zero VO overlap with `s05_charcoal_gas_v01` (words `243..304`).
+- **Picture & bed (0 spend):** Chief-KEPT plates `P1:11_shoot_in_pot_t1` (frame 0 and 3.0 s loop), `P1:10_van_helmont_sack_t1`, `P2:03_willow_shoot_scale_t1`, `P2:04_lid_rain_t1`, `P2:08_haul_tree_t1_trim_0to4p8`, `P2:13_tree_vs_pinch_t1`, `P2:12_pointer_short_t1`, `P1:02_balance_trunk_t1`. Own-synthesis warm harmonic pad (`hos006_s08_synth_pad_v01.wav`) at −23.0 dB under VO. Hook **TREE IN POT** (POT in yellow). Person/date card **VAN HELMONT · Vilvoorde, 1600s** at 2.4–6.0 s (3.6 s, lower third of 16:9 centre band, cosine-feathered shade, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout (16/16 changes); CTA `watch the full film →` at 21.43–24.35 s.
+- **Title draft:** *Do Plants Eat Soil?* (signed-out GB YouTube autocomplete exact hit, 21 Oct 2026; alts *Where Do Trees Get Their Mass?*, *What Was Van Helmont's Willow Tree Experiment?*).
+- **File:** `10_Shorts/hos_006_s08_willow_pot_v01.mp4`, 24.433 s, sha256 `8bce695efab2a54fa3c04a11c13c487b38c04589fc28d3a64f4f58a0f7a73441`; phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s08_willow_pot_v01.mp4`.
+
+```
+PASS  hos_006_s08_willow_pot_v01.mp4  dur=24.43s  audio=-23.5dB  motion=10.37  dhash=fdffd68d9f3fbc9f
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s08_willow_pot_v01_open_sheet.jpg
+PASS  hos_006_s08_willow_pot_v01.mp4  0:24.43  mean -23.5 dB  peak -4.6 dB  160 wpm
+   first minute: title_question 22.6s
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s08_willow_pot_v01/polish_gate_s08_willow_pot_v01.json
+picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s08_willow_pot_v01/picture_qa_s08_willow_pot_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s08_willow_pot_v01/picture_qa_s08_willow_pot_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2027-01-05` (gate only). Caption check: 16 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+
