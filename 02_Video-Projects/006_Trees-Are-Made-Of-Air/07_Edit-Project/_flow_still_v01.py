@@ -100,7 +100,7 @@ def select_image_16x9(page) -> str:
 
 def canonical_src(src: str) -> str:
     """Flow may resize old gallery URLs; a new size is not a new image."""
-    return re.sub(r"=s\d+[^?]*", "=s0", src)
+    return re.sub(r"(?<!Signature)=s\d+[^?&]*", "=s0", src)
 
 
 def assert_unique_still(dest: Path, refs_root: Path) -> str:
@@ -134,7 +134,7 @@ def _fetch_new_landscape(page, dest: Path, before: set[str]) -> bool:
         if canonical_src(url) in old_sources:
             continue
         try:
-            resp = page.request.get(re.sub(r"=s\d+", "=s0", url), timeout=60_000)
+            resp = page.request.get(re.sub(r"(?<!Signature)=s\d+", "=s0", url), timeout=60_000)
             if not resp.ok or len(resp.body()) < 40_000:
                 continue
             im = Image.open(io.BytesIO(resp.body())).convert("RGB")
