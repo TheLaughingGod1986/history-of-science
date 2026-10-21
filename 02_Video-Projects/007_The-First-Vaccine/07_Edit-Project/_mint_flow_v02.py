@@ -194,8 +194,10 @@ def still_prompt(still, plate: dict) -> str:
             ("and two young sons ", ""),
             ("two young sons ", ""),
             ("a boy of about eight", "an adult figure seen from behind"),
-            ("The boy", "The figure seen from behind"),
-            ("the boy", "the distant figure seen from behind"),
+            ("The boy", "The adult figure seen from behind"),
+            ("the boy", "the distant adult figure seen from behind"),
+            ("in a small bed by a window, a little warm, a cool cloth on his forehead",
+             "in a wooden bed by a window resting under a blanket with head turned away from camera"),
             ("A smiling child", "An adult patient seen from behind over the shoulder"),
             ("children run, swing and climb", "distant figures seen from behind"),
         ):
