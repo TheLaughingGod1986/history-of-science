@@ -9,7 +9,8 @@ One row per Short. Fill stayed-to-watch and average view duration from Studio at
 | 6 Sep 2026 | `H1y0DXFVmw8` | Germs don't cast a shadow | 001 | germs moving through a ward | | | 78 | Public |
 | 6 Sep 2026 | `iqToagXnjX0` | Microbes in a drop of pond water | 001 | microscope and lamp | | | 110 | Public · best so far |
 | 6 Sep 2026 | `8_Edn_HCi1s` | Germs hitch a ride on you | 001 | ward, doctor in foreground | | | 26 | Public |
-| 6 Sep 2026 | `93fPUG-hW0A` | Invisible life is still everywhere | 001 | tap and basin | | | 6 | Public · abstract title |
+| 6 Sep 2026 | `93fPUG-hW0A` | Invisible life is still everywhere | 001 | tap and basin | | | 6 | **Private 10 Oct** (silent master v03, -70 LUFS). Public → private, OK'd by Ben 10 Oct 21:10 (relayed by Chief), done by cursor (J0120). Never delete. |
+| 13 Oct 2026 (sched) | `qOZgess30h0` | Invisible life is still everywhere | 001 | tap and basin | | | | Audio-fixed copy of `93fPUG-hW0A` (v04_audiofix, sha 9625602b, -14.7 LUFS). New upload → scheduled 13 Oct 11:30 London, OK'd by Ben 10 Oct 21:10 (relayed by Chief), done by cursor (J0120). |
 | 6 Sep 2026 | `sILtQxgYQk8` | A flask that proved germs come from outside | 001 | still flask | | | 24 | Public |
 | 18 Sep 2026 | `uU12JA5rMWg` | The periodic table's empty chairs | 002 | | | | 25 | Public |
 | 19 Sep 2026 | `nFQRWmpulTQ` | He predicted a metal before it was found | 002 | | | | 32 | Public |
