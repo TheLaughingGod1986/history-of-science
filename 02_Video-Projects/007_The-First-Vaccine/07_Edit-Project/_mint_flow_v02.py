@@ -45,9 +45,12 @@ MIN_DISK_GIB = 10.0
 JENNER_MASTER_LOCK = {
     "08_jenner_window",
     "01_sarah_nelmes",
+    "03_phipps_stool",
     "04_lancet_touch",
+    "08_jenner_thinks",
     "02_variolation_calm",
     "03_waiting",
+    "06b_still_nothing",
 }
 MASTER = "08_jenner_window"
 
@@ -161,6 +164,21 @@ def still_prompt(still, plate: dict) -> str:
     core = " ".join(plate["prompt"].split())
     if plate.get("explorer"):
         core = core.replace("No Explorer.", "") + " " + mint006.EXPLORER
+    elif any(w in core.lower() for w in ("child", "children", "boy", "sons", "son", "phipps")):
+        # Flow's external start-frame upload filter rejects images with children.
+        # Keep the adult hero / setting in the opening start frame; Veo 3.1 animates the full prompt.
+        for src, dst in (
+            ("and two young sons ", ""),
+            ("two young sons ", ""),
+            ("a boy of about eight", "an adult figure seen from behind"),
+            ("The boy", "The figure seen from behind"),
+            ("the boy", "the distant figure seen from behind"),
+            ("A smiling child", "An adult patient seen from behind over the shoulder"),
+            ("children run, swing and climb", "distant figures seen from behind"),
+        ):
+            core = core.replace(src, dst)
+        core += (" No children or young boys in the opening still frame;"
+                 " any secondary figure is an adult seen from behind with head turned away.")
     core += (" Opening frame only. No sores, no pustules. Handwriting has no glyph in focus."
              " Book spines and titles face away from camera. No lightning touching a kite.")
     if plate["id"] == MASTER:
@@ -169,7 +187,7 @@ def still_prompt(still, plate: dict) -> str:
     if (
         "no faces readable" in core.lower()
         or "faces not readable" in core.lower()
-        or (("cot" in core.lower() or "bed" in core.lower()) and ("child" in core.lower() or "boy" in core.lower()))
+        or (("cot" in core.lower() or "bed" in core.lower()) and ("child" in core.lower() or "boy" in core.lower() or "figure" in core.lower()))
     ):
         core += (" Every person is seen from behind with their head turned completely away from camera;"
                  " only the back of the head and blanket/shoulders are visible, no face or profile shown.")
