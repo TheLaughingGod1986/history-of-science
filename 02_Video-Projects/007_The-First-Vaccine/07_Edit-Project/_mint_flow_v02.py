@@ -166,6 +166,9 @@ def still_prompt(still, plate: dict) -> str:
     if plate["id"] == MASTER:
         core += (" The paper on the desk is turned edge-on, a thin edge only."
                  " No page face, no lines, no writing. The quill does not draw a glyph.")
+    if "no faces readable" in core.lower() or "faces not readable" in core.lower():
+        core += (" Every person is seen from behind with their head turned completely away from camera;"
+                 " only the back of the head and blanket/shoulders are visible, no face or profile shown.")
     return still.still_prompt(
         "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm daylight.",
         core,
@@ -409,7 +412,13 @@ def main() -> int:
                     harvest_project_mp4(page, flow, proj, dest, wait_s=180)
                     credits = finalize_video(page, plate, dest, prev, int(prev.get("credits_before") or credits), log)
                     continue
-                raise SystemExit(f"STOP {plate['id']} already SUBMITTING without project_url — inspect before retake")
+                credits_now, _ = mint006.read_account(page)
+                if credits_now is not None and credits_now == prev.get("credits_before"):
+                    print(f"CLEAR un-submitted {plate['id']} (credits unchanged={credits_now})", flush=True)
+                    log["takes"].pop(plate["id"], None)
+                    save_log(log)
+                else:
+                    raise SystemExit(f"STOP {plate['id']} already SUBMITTING without project_url — inspect before retake")
             cost = TRY1[plate["quality"]]
             credits, account = mint006.read_account(page)
             if credits is None:

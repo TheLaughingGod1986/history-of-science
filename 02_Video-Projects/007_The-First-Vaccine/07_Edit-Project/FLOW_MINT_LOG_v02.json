@@ -299,8 +299,84 @@
       "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/refs/v02_flow_stills/10c_doors_close_t1.png",
       "start_frame_sha256": "130eddc91882b66381d6823f313f72949a5a300017f3579ced287e5819eec8e8",
       "credits_before": 23300,
-      "status": "SUBMITTING",
-      "submitted_at": "2026-10-21T16:58:00+00:00"
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T16:58:00+00:00",
+      "project_url": "https://flow.google.com/project/c2dacfb0-301e-4d71-8cbb-c4612e134ec0",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/raw/v01/10c_doors_close_t1.mp4",
+      "sha256": "1de3a85c6d4fe83a3fc58407b1d14033f499557c48e19e56a0e5a45d04d680fb",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/uat/10c_doors_close_t1_sheet.jpg",
+      "credits_after": 23290,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T17:00:03+00:00"
+    },
+    "11_mother_window": {
+      "plate": "11_mother_window",
+      "part": "01",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/refs/v02_flow_stills/11_mother_window_t1.png",
+      "start_frame_sha256": "2fa2f0416967116a802d2dfa81e3df5472f5a7196a5f2c1201998f5652336259",
+      "credits_before": 23290,
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T17:01:00+00:00",
+      "project_url": "https://flow.google.com/project/e7951c7a-52d1-495a-a615-d680fc85aa7d",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/raw/v01/11_mother_window_t1.mp4",
+      "sha256": "89b0ffbba705f127167ec718f4cc639e5cb0aa0c239537a9065b754e35997223",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/uat/11_mother_window_t1_sheet.jpg",
+      "credits_after": 23280,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T17:03:18+00:00"
+    },
+    "11b_child_cot": {
+      "plate": "11b_child_cot",
+      "part": "01",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/refs/v02_flow_stills/11b_child_cot_t1.png",
+      "start_frame_sha256": "170fa5d44cbfc8c32bba0923fdfb43ee92817f325805e74babc13b73abae2cf1",
+      "credits_before": 23280,
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T17:12:06+00:00",
+      "project_url": "https://flow.google.com/project/40b740de-78c1-41b0-9643-13b821a4c076",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/raw/v01/11b_child_cot_t1.mp4",
+      "sha256": "2505b0ca1f21833a4acc08b31d126f24551ac17640b412958dfef969e41506dc",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/uat/11b_child_cot_t1_sheet.jpg",
+      "credits_after": 23270,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T17:14:24+00:00"
+    },
+    "12_farm_gate": {
+      "plate": "12_farm_gate",
+      "part": "01",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/refs/v02_flow_stills/12_farm_gate_t1.png",
+      "start_frame_sha256": "5d1a2385da81dbd11e7daecb968ef5dc1c3e97a67669b0a92ca196ee876d0d28",
+      "credits_before": 23270,
+      "status": "PENDING_UAT",
+      "submitted_at": "2026-10-21T17:15:21+00:00",
+      "project_url": "https://flow.google.com/project/4adbc3a8-aa6d-4e90-9d3c-e250b4eb23bf",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/raw/v01/12_farm_gate_t1.mp4",
+      "sha256": "40ea435b989eb339f28a55cf0d59326a09b2f24e16fc243afc556b20388dfe2a",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/uat/12_farm_gate_t1_sheet.jpg",
+      "credits_after": 23260,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-21T17:17:18+00:00"
     }
   },
   "balance_reads": [
@@ -388,14 +464,44 @@
       "at": "2026-10-21T16:58:00+00:00",
       "credits": 23300,
       "when": "batch-start"
+    },
+    {
+      "at": "2026-10-21T17:00:03+00:00",
+      "credits": 23290,
+      "after": "10c_doors_close"
+    },
+    {
+      "at": "2026-10-21T17:03:18+00:00",
+      "credits": 23280,
+      "after": "11_mother_window"
+    },
+    {
+      "at": "2026-10-21T17:11:09+00:00",
+      "credits": 23280,
+      "when": "batch-start"
+    },
+    {
+      "at": "2026-10-21T17:14:24+00:00",
+      "credits": 23270,
+      "after": "11b_child_cot"
+    },
+    {
+      "at": "2026-10-21T17:17:18+00:00",
+      "credits": 23260,
+      "after": "12_farm_gate"
+    },
+    {
+      "at": "2026-10-21T17:17:18+00:00",
+      "credits": 23260,
+      "when": "batch-end-p01"
     }
   ],
-  "updated": "2026-10-21T16:58:00+00:00",
+  "updated": "2026-10-21T17:17:18+00:00",
   "master_still": {
     "path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/refs/v02_flow_stills/08_jenner_window_t1.png",
     "sha256": "aa7f98b68a86727dbfb53d3ead6db8cd5532cb572ab2c5b2981e154c708b07e4",
-    "at": "2026-10-21T16:58:00+00:00",
-    "credits": 23300
+    "at": "2026-10-21T17:11:09+00:00",
+    "credits": 23280
   },
   "master_still_rejected": {
     "path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/still_fails/08_jenner_window_t1_fail_page_faceup.png",
