@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-16",
-  "updated_by": "cursor (J0343)",
+  "updated_by": "codex (J0352 recovery)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -275,7 +275,7 @@
       "title": "Why Vaccines Are Named After a Cow",
       "air": "2026-11-12",
       "ready_by": "2026-11-08",
-      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done. Picture boards v02 are on main (J0343): Nelmes plate dropped, 2.0 s back on 01_sarah_nelmes. Nothing minted.",
+      "summary": "J0352: recovered cow Quality clip; Jenner master awaits Chief KEEP/FIX. No new spend by Codex.",
       "stages": {
         "topic": {
           "status": "done"
@@ -306,12 +306,16 @@
         "picture": {
           "status": "blocked",
           "due": "2026-11-01",
-          "note": "BOARD_V02 on main (16 Oct, J0343): 96 rows after dropping P3:01c_nelmes_plate (2.0 s back on 01_sarah_nelmes; use 5.14 s). 73 Flow mints = 24 Quality + 49 Fast, 3 code graphics, 2 public-domain archive plates, 18 reuses. Flow expected 7,196 unchanged against the 23,740 reading (15 Oct 21:42Z). After 007 + 008 (5,605) + 009 tranche 1 (7,354) the same reading shows 3,585 left, above the 3,000 floor. Vertex fallback £126.24 expected does not fit in £70.02 usable. generation_authorized false. Ken Burns lock stands. No mint.",
-          "steps_unit": "plates",
-          "owner": "Cursor",
+          "note": "J0352: 1/73 Flow clips recovered, not KEEP; 100 credits already logged by Cursor; live 23,640. No duplicate generation. See FLOW_MINT_LOG_v02.json and j0352_review/REVIEW.md.",
+          "steps_unit": "Flow clips recovered (not KEEP)",
+          "owner": "chief",
           "since": "2026-10-16",
-          "waiting": "J0344 builds the three £0 code graphics. No mint until after 006 and a live Flow read leaves at least 3,000.",
-          "underway": false
+          "waiting": "Chief KEEP/FIX on Jenner master before later readable Jenner faces; review recovered cow clip.",
+          "underway": false,
+          "steps": [
+            1,
+            73
+          ]
         },
         "edit": {
           "status": "todo",

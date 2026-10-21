@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Fri 16 Oct 2026**, updated by cursor (J0343). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Fri 16 Oct 2026**, updated by codex (J0352 recovery). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -11,7 +11,7 @@
 | **004** What's Really Inside an Atom? | Thu 15 Oct (-1 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟠 behind |
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (13 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (20 d) | 75% | Edit + master (to do) | **Grok** · queued | starts later; due in 13 d | Sun 1 Nov (in 16 d) | 🟢 on track |
-| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (27 d) | 40% | Picture (blocked) | **Cursor** · ⛔ blocked: J0344 builds the three £0 code graphics. No mint until after 006 and a live Flow read leaves at least 3,000. | not estimated | Sun 8 Nov (in 23 d) | ⛔ blocked |
+| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (27 d) | 40% | Picture (blocked) | **chief** · ⛔ blocked: Chief KEEP/FIX on Jenner master before later readable Jenner faces; review recovered cow clip. | 1/73 Flow clips recovered (not KEEP) | Sun 8 Nov (in 23 d) | ⛔ blocked |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (34 d) | 43% | Picture (blocked) | **chief** · ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend | 11/112 board rows rendered (11 graphics awaiting review) | Sun 15 Nov (in 30 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (41 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 8 d late | Sun 22 Nov (in 37 d) | ⛔ blocked |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (48 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 8 d late | Sun 29 Nov (in 44 d) | 🟠 behind |
@@ -31,17 +31,17 @@
 
 **Cursor**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 007 Picture: J0344 builds the three £0 code graphics. No mint until after 006 and a live Flow read leaves at least 3,000.; 009 Picture: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal
+- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 009 Picture: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
 **chief**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 008 Picture: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend
+- ⏸ Waiting: 007 Picture: Chief KEEP/FIX on Jenner master before later readable Jenner faces; review recovered cow clip.; 008 Picture: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend
 
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (3 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **007** · ⛔ **Picture** — blocked (0%, with Cursor since Fri 16 Oct, ⛔ blocked: J0344 builds the three £0 code graphics. No mint until after 006 and a live Flow read leaves at least 3,000., due Sun 1 Nov (in 16 d)): BOARD_V02 on main (16 Oct, J0343): 96 rows after dropping P3:01c_nelmes_plate (2.0 s back on 01_sarah_nelmes; use 5.14 s). 73 Flow mints = 24 Quality + 49 Fast, 3 code graphics, 2 public-domain archive plates, 18 reuses. Flow expected 7,196 unchanged against the 23,740 reading (15 Oct 21:42Z). After 007 + 008 (5,605) + 009 tranche 1 (7,354) the same reading shows 3,585 left, above the 3,000 floor. Vertex fallback £126.24 expected does not fit in £70.02 usable. generation_authorized false. Ken Burns lock stands. No mint.
+- **007** · ⛔ **Picture** — blocked (1%, 1/73 Flow clips recovered (not KEEP), with chief since Fri 16 Oct, ⛔ blocked: Chief KEEP/FIX on Jenner master before later readable Jenner faces; review recovered cow clip., due Sun 1 Nov (in 16 d)): J0352: 1/73 Flow clips recovered, not KEEP; 100 credits already logged by Cursor; live 23,640. No duplicate generation. See FLOW_MINT_LOG_v02.json and j0352_review/REVIEW.md.
 - **008** · ⛔ **Picture** — blocked (10%, 11/112 board rows rendered (11 graphics awaiting review), with chief since Fri 16 Oct, ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend, due Sun 8 Nov (in 23 d)): J0329: eleven no-spend v01 code graphics rendered from KEEP v03 boards, plus five alpha overlays and paper review previews. Awaiting Chief visual review; five moving-plate composites still pending. PICTURE_PLAN_v03 mint gate unchanged (5,605 cr expected). See CODE_GRAPHICS_v01_REVIEW.md.
 - **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 30 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
 
@@ -138,7 +138,7 @@ Voice and all 5 picture parts (92 rows + roughs) are KEEP on main (Chief KEEP sw
 
 Airs **Thu 12 Nov** · ready for Ben's OK by **Sun 8 Nov** · ⛔ blocked
 
-Script, facts, long voiceover and both Shorts' voiceover (v02) are done. Picture boards v02 are on main (J0343): Nelmes plate dropped, 2.0 s back on 01_sarah_nelmes. Nothing minted.
+J0352: recovered cow Quality clip; Jenner master awaits Chief KEEP/FIX. No new spend by Codex.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.3
@@ -147,7 +147,7 @@ Script, facts, long voiceover and both Shorts' voiceover (v02) are done. Picture
 - ✅ **Voiceover (long)** — done: about 8.4 min; Part 01 v03 with the shut-up-house pickup
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ✅ **Shorts voiceover** — done: B v02 25.5 s + C v02 24.8 s locked 12 Oct; Chief KEEP both (desk 6096257381, VO_LOCK_CHIEF_PASS_20261012.json)
-- ⛔ **Picture** — blocked (0%, with Cursor since Fri 16 Oct, ⛔ blocked: J0344 builds the three £0 code graphics. No mint until after 006 and a live Flow read leaves at least 3,000., due Sun 1 Nov (in 16 d)): BOARD_V02 on main (16 Oct, J0343): 96 rows after dropping P3:01c_nelmes_plate (2.0 s back on 01_sarah_nelmes; use 5.14 s). 73 Flow mints = 24 Quality + 49 Fast, 3 code graphics, 2 public-domain archive plates, 18 reuses. Flow expected 7,196 unchanged against the 23,740 reading (15 Oct 21:42Z). After 007 + 008 (5,605) + 009 tranche 1 (7,354) the same reading shows 3,585 left, above the 3,000 floor. Vertex fallback £126.24 expected does not fit in £70.02 usable. generation_authorized false. Ken Burns lock stands. No mint.
+- ⛔ **Picture** — blocked (1%, 1/73 Flow clips recovered (not KEEP), with chief since Fri 16 Oct, ⛔ blocked: Chief KEEP/FIX on Jenner master before later readable Jenner faces; review recovered cow clip., due Sun 1 Nov (in 16 d)): J0352: 1/73 Flow clips recovered, not KEEP; 100 credits already logged by Cursor; live 23,640. No duplicate generation. See FLOW_MINT_LOG_v02.json and j0352_review/REVIEW.md.
 - ⬜ **Edit + master** — to do (with Grok, due Thu 5 Nov (in 20 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 5 Nov (in 20 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 8 Nov (in 23 d))
