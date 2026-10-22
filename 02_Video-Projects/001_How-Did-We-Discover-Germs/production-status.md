@@ -275,3 +275,23 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/001
 ```
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 22 Oct 2026 — Thumbnail-only Test & Compare armed (`T009`, A live vs B `v02` `INVISIBLE LIFE?`, OWB J0288)
+
+- **Authority:** Chief KEEP on J0279 (`fbcbc6f` on `cursor/j0279-germs-thumb-b`) + J0288 brief (`df9c2144c`). Desktop Studio over CDP (`:9460`), `@HistoryOfScienceYT` (`UCXp7HkBIl1LgaznXuZHJyRg`) verified on a fresh tab (`/json/new`).
+- **Prior test state (captured before arming):** Title+thumbnail test (`1 Oct 2026 23:25 – 16 Oct 2026 00:04`) had ended: *"Test finished. Not enough impressions to declare a winner."* Variant A (*How Did We Discover Germs?*) and Variant B (*What proved germs were real?*) both showed `—` watch-time share, with A marked *"Now visible to all viewers"*. Reach tab snapshot (`3 Sep – Now`): 35 impressions, 8.6% CTR, 7 views, 5 unique viewers.
+- **Armed test (`T009` in `orbit-with-ben/05_Analytics/tests/THUMB_LEDGER.json`, `readBack: 2026-11-05`):**
+  - Mode: **Thumbnail only** (2 variants).
+  - **A (control):** current live thumbnail (`HOW DID WE DISCOVER GERMS?`).
+  - **B:** `08_Thumbnail/j0279/germs_B_invisible_life_v02.jpg` (`INVISIBLE LIFE?`, 1280×720, 267,906 bytes, sha256 `46b9e18d02affb51bf2c33b362562d732811a162447e44bdfd33957adaedbc61`, from `fbcbc6f`).
+  - Set test + Save; reloaded `https://studio.youtube.com/video/_C92tIJCk8A/edit` and reopened `View test report`: confirmed **`Thumbnail only · A/B test report · Test running…`** (`Estimated time remaining: 13 days 23 hours…`), both variants with title *How Did We Discover Germs?*.
+  - Title (*How Did We Discover Germs?*), Visibility (*Public*), and Audience (*No, it's not 'Made for Kids'*) unchanged.
+  - Evidence: `11_Upload-Package/evidence_2026-10-22_J0288/RESULT.md` and `ASSET.json`; local screenshots in `/Users/benjaminoats/_desk/J0288/artifacts/`.
+
+```
+PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+
+43 videos, 0 errors.
+```
