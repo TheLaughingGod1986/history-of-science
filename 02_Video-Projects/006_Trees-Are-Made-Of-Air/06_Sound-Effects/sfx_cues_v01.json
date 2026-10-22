@@ -1,0 +1,134 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "cut_seconds": 507.833333,
+  "kit": "kit_v01 (own synthesis via scripts/sfx_kit.py)",
+  "gain_db": {
+    "tick": -1.5,
+    "whoosh_card": -8.0,
+    "whoosh_pass": -9.0,
+    "rumble": -3.5
+  },
+  "cues": [
+    {
+      "kind": "tick",
+      "start": 25.0,
+      "why": "teach overlay: who_aristotle"
+    },
+    {
+      "kind": "tick",
+      "start": 39.75,
+      "why": "teach overlay: timeline_d1"
+    },
+    {
+      "kind": "tick",
+      "start": 45.0,
+      "why": "teach overlay: who_helmont"
+    },
+    {
+      "kind": "whoosh_card",
+      "start": 61.517,
+      "why": "chapter card: Five Years and Two Ounces"
+    },
+    {
+      "kind": "tick",
+      "start": 67.425,
+      "why": "code graphic: DATA counter: 0 -> 200 pounds of dried soil"
+    },
+    {
+      "kind": "tick",
+      "start": 106.833,
+      "why": "teach overlay: num_169"
+    },
+    {
+      "kind": "tick",
+      "start": 110.75,
+      "why": "teach overlay: fact_leaves"
+    },
+    {
+      "kind": "tick",
+      "start": 166.667,
+      "why": "teach overlay: fact_gas"
+    },
+    {
+      "kind": "whoosh_card",
+      "start": 178.517,
+      "why": "chapter card: The Air That Mint Repaired"
+    },
+    {
+      "kind": "tick",
+      "start": 183.708,
+      "why": "teach overlay: timeline_d2"
+    },
+    {
+      "kind": "tick",
+      "start": 186.917,
+      "why": "teach overlay: who_hales"
+    },
+    {
+      "kind": "tick",
+      "start": 205.792,
+      "why": "teach overlay: timeline_d3"
+    },
+    {
+      "kind": "tick",
+      "start": 210.292,
+      "why": "teach overlay: who_priestley"
+    },
+    {
+      "kind": "whoosh_card",
+      "start": 273.35,
+      "why": "chapter card: Bubbles in the Sunlight"
+    },
+    {
+      "kind": "tick",
+      "start": 276.292,
+      "why": "teach overlay: timeline_d4"
+    },
+    {
+      "kind": "tick",
+      "start": 280.0,
+      "why": "teach overlay: who_ingenhousz"
+    },
+    {
+      "kind": "tick",
+      "start": 283.583,
+      "why": "teach overlay: num_500"
+    },
+    {
+      "kind": "whoosh_card",
+      "start": 365.267,
+      "why": "chapter card: Carbon From the Sky"
+    },
+    {
+      "kind": "tick",
+      "start": 369.917,
+      "why": "teach overlay: timeline_d5"
+    },
+    {
+      "kind": "tick",
+      "start": 373.208,
+      "why": "teach overlay: who_senebier"
+    },
+    {
+      "kind": "tick",
+      "start": 377.375,
+      "why": "teach overlay: who_saussure"
+    },
+    {
+      "kind": "tick",
+      "start": 380.208,
+      "why": "teach overlay: timeline_d6"
+    },
+    {
+      "kind": "tick",
+      "start": 423.675,
+      "why": "code graphic: DATA pie chart: 50% Carbon (from air)"
+    },
+    {
+      "kind": "tick",
+      "start": 470.758,
+      "why": "code graphic: DATA specimen lens: CO2: 4 in 10,000"
+    }
+  ],
+  "spend": "none"
+}
