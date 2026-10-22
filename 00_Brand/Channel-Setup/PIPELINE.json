@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-22",
-  "updated_by": "gemini (J0827)",
+  "updated_by": "codex (J0830)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -77,16 +77,16 @@
     }
   ],
   "next_steps": [
-    "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold — C has no OK. J0106 makes v07b (52/53 at about 2×, file only, due Tue 13 Oct); the Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
+    "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold \u2014 C has no OK. J0106 makes v07b (52/53 at about 2\u00d7, file only, due Tue 13 Oct); the Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
     "005: the 2 Oct thumbnail/Test & Compare/end-screen settings went on a stray private copy; manifest now points at the scheduled long wwcjcFfC-5M (#262). Check and re-arm them on wwcjcFfC-5M before Thu 29 Oct (queue J0101).",
-    "006 Part 03: all 16 Vertex first takes minted 10 Oct (J0107, about £11.86) and KEPT by the Chief (desk #180, 10 Oct 23:38). Next: Part 03 rough v01 on the Mini (J0137, no spend), with the P3:06 Flow slot held.",
-    "Shorts test B (Ben: yes, 9 Oct): two search-titled Shorts per film from 007, v02 scripts for 007–010 (titles autocomplete-checked). Shorts voiceover records the v02 pair.",
-    "Voice queue (ElevenLabs 18,653 until 30 Oct): 007 Shorts B + C (J0109), then 009 long (opening to the Chief J0108/J0110, VO J0111), then 010 long (J0112, J0113), then the 008–010 Shorts. Each job checks the balance first; no music beds without the Chief's OK.",
+    "006 Part 03: all 16 Vertex first takes minted 10 Oct (J0107, about \u00a311.86) and KEPT by the Chief (desk #180, 10 Oct 23:38). Next: Part 03 rough v01 on the Mini (J0137, no spend), with the P3:06 Flow slot held.",
+    "Shorts test B (Ben: yes, 9 Oct): two search-titled Shorts per film from 007, v02 scripts for 007\u2013010 (titles autocomplete-checked). Shorts voiceover records the v02 pair.",
+    "Voice queue (ElevenLabs 18,653 until 30 Oct): 007 Shorts B + C (J0109), then 009 long (opening to the Chief J0108/J0110, VO J0111), then 010 long (J0112, J0113), then the 008\u2013010 Shorts. Each job checks the balance first; no music beds without the Chief's OK.",
     "Four a month on each channel (Ben, 9 Oct): the channel short of 4 gets work and credits first.",
-    "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04–05 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
-    "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04–05), then 007, on Flow rates; the Chief passes before any mint (J0139).",
+    "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04\u201305 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
+    "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04\u201305), then 007, on Flow rates; the Chief passes before any mint (J0139).",
     "007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.",
-    "008 edit: narration runs 9:14.8, over the 7–9 min window; the §4 pause trim on the assembled film has to bring it in.",
+    "008 edit: narration runs 9:14.8, over the 7\u20139 min window; the \u00a74 pause trim on the assembled film has to bring it in.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment)."
   ],
   "credits": [
@@ -98,8 +98,8 @@
     },
     {
       "pool": "Vertex free trial (picture)",
-      "left": "about £4.25 projected after 006 Part 03 (16 takes about £11.86; last console reading £16.11 at 10 Oct 22:03Z, console lags)",
-      "rule": "free trial, use it before it ends 10 Nov; spend down to £0, no £5 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 is done (J0107). Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben.",
+      "left": "about \u00a34.25 projected after 006 Part 03 (16 takes about \u00a311.86; last console reading \u00a316.11 at 10 Oct 22:03Z, console lags)",
+      "rule": "free trial, use it before it ends 10 Nov; spend down to \u00a30, no \u00a35 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 is done (J0107). Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben.",
       "checked": "10 Oct"
     },
     {
@@ -242,7 +242,7 @@
         },
         "shorts_vo": {
           "status": "done",
-          "note": "A v02 · B v03b · C v01 locked"
+          "note": "A v02 \u00b7 B v03b \u00b7 C v01 locked"
         },
         "picture": {
           "status": "done",
@@ -275,7 +275,7 @@
       "title": "Why Vaccines Are Named After a Cow",
       "air": "2026-11-12",
       "ready_by": "2026-11-08",
-      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done. All 73/73 Flow rows of boards v02 are KEEP (Chief J0352, HOS PR #351 merged) and Part roughs v01 are Chief PASS (J0820). Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s, 97 cuts, sha256 `7cfd6a59`) is assembled on the locked VO with both £0 J0827 repeat-shot fixes (`P1:09c_case_again` 1.88x lancet crop; `P5:06c/06d` split into unused `04_health_workers` tail + 1.38x front-row crop), passing polish_gate + picture_qa (0 failed, 0 freezes); parked for Chief review.",
+      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done. All 73/73 Flow rows of boards v02 are KEEP (Chief J0352, HOS PR #351 merged) and Part roughs v01 are Chief PASS (J0820). Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s, 97 cuts, sha256 `7cfd6a59`) is assembled on the locked VO with both \u00a30 J0827 repeat-shot fixes (`P1:09c_case_again` 1.88x lancet crop; `P5:06c/06d` split into unused `04_health_workers` tail + 1.38x front-row crop), passing polish_gate + picture_qa (0 failed, 0 freezes); parked for Chief review.",
       "stages": {
         "topic": {
           "status": "done"
@@ -306,7 +306,7 @@
         "picture": {
           "status": "done",
           "due": "2026-11-01",
-          "note": "BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 £0 code graphics on main (`7808f751`); 2 archive + 18 reuse (£0).",
+          "note": "BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 \u00a30 code graphics on main (`7808f751`); 2 archive + 18 reuse (\u00a30).",
           "steps": [
             73,
             73
@@ -317,16 +317,17 @@
         "edit": {
           "status": "doing",
           "due": "2026-11-05",
-          "note": "Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled on locked VO across Parts 01–05 (J0827, 22 Oct, £0) with both £0 repeat-shot fixes (`P1:09c_case_again` 1.88x lancet crop; `P5:06c/06d` unused `04_health_workers` tail + 1.38x clapping front-row push-in). PASS polish_gate (0 failed, 5 WARNs) + picture_qa (0 failed, 5 WARNs), 0 freezes. Parked for Chief review.",
+          "note": "J0830: Chief-authorised \u00a30 synthesized chapter score + house SFX; preserve approved join picture, master and gates.",
           "steps": [
-            5,
+            0,
             5
           ],
-          "steps_unit": "parts joined",
-          "owner": "Grok",
+          "steps_unit": "master steps",
+          "owner": "codex",
           "since": "2026-10-22",
-          "waiting": "Chief review of full_join_v01 + REVIEW_v01.md (J0827)",
-          "underway": false
+          "waiting": "",
+          "underway": true,
+          "left": "about 90 minutes"
         },
         "thumbnails": {
           "status": "todo",
@@ -347,7 +348,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Long VO (9:14.8) + Shorts VO (v02 pair) locked. Plate boards v03 KEEP (Chief PASS 15 Oct, J0240): 112 rows, 15 Quality / 86 non-emissive Fast / 11 £0 code graphics / 0 reuse. Flow expected 5,605 cr (try-1 2,360 cr). No mint until after 006 and 007.",
+      "summary": "Long VO (9:14.8) + Shorts VO (v02 pair) locked. Plate boards v03 KEEP (Chief PASS 15 Oct, J0240): 112 rows, 15 Quality / 86 non-emissive Fast / 11 \u00a30 code graphics / 0 reuse. Flow expected 5,605 cr (try-1 2,360 cr). No mint until after 006 and 007.",
       "stages": {
         "topic": {
           "status": "done"
@@ -422,7 +423,7 @@
       "title": "Why Doesn't the Moon Fall to Earth?",
       "air": "2026-11-26",
       "ready_by": "2026-11-22",
-      "summary": "Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse. Flow expected 12,534 (tranche 1 7,354, tranche 2 5,180). No mint until after 006, 007 and 008.",
+      "summary": "Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse. Flow expected 12,534 (tranche 1 7,354, tranche 2 5,180). No mint until after 006, 007 and 008.",
       "stages": {
         "topic": {
           "status": "done"
@@ -463,7 +464,7 @@
           "status": "blocked",
           "due": "2026-11-15",
           "owner": "Cursor",
-          "note": "J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.",
+          "note": "J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.",
           "since": "2026-10-15",
           "underway": false,
           "waiting": "mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal"
@@ -532,7 +533,7 @@
           "status": "todo",
           "due": "2026-11-22",
           "owner": "Cursor",
-          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes"
+          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; 8 period details P1\u2013P8 to confirm first); plates start after the whole VO batch passes"
         },
         "edit": {
           "status": "todo",
