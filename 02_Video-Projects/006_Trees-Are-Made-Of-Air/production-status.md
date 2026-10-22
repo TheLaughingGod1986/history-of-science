@@ -501,4 +501,21 @@ Gate run with `--air-date 2027-01-05` (gate only). Caption check: 16 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+## 22 Oct 2026 — Long `full_join_v02_teach` (21 £0 fixes from `REVIEW_v01.md` applied, OWB J0809)
+
+- **Master:** `07_Edit-Project/full_join_v02_teach/hos_006_full_join_v02_teach.mp4` (`507.833 s`, `12,188` frames @ 24 fps, sha256 `09c1364b1954ba4a69a287586d036b6610e9cd7c05ab97b255f2b2ac8b3824f0`). Also copied to iCloud `HOS UAT/hos_006_full_join_v02_teach.mp4` and NAS `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/hos_006_full_join_v02_teach.mp4`.
+- **Fixes applied (£0, zero mints, no music bed):**
+  1. **Part 02 sync drift (`+5.46 s`):** inserted already-minted `06_garden_years_t1.mp4` (`0.00–5.46 s`, `131` frames) after `#18` (`06_garden_years_t2.mp4`), restoring `#19`–`#32` to exact alignment with `VO_RETIME_v02.json` and returning `#33` (`22_shimmer_willow`) from `10.83 s` back to `5.38 s` (`2:53.29–2:58.67`).
+  2. **House-style & low-detail replacements (`#14`, `#20`, `#24`, `#33`, `#62`):** replaced flat UI card in `#14` with top-cropped `02_balance_200_t1` + house Didot lower-third counter (`0 → 200 pounds of dried soil`); cropped `#20` (`09_weights_169_t1` `1920×788`) to hide bottom-right Veo `"169"` numerals and quill; trimmed/cropped bare tabletop pan in `#24` (`13_tree_vs_pinch_t1`); removed flat UI filler card from `#33` (`22_shimmer_willow`); replaced daytime/silhouette opening of `#62` (`11_night_jars`) with moonlit jar (`4.50–8.00 s`) + moonlit plant window (`18_dark_window_t1`).
+  3. **Part 05 DATA code-graphic labels (`#78`, `#86`):** re-rendered `11_trunk_pie_cg_v01.mp4` (`50% Carbon (from air)` / `44% Oxygen · 6% Hydrogen`) and `19_dots_crowd_cg_v01.mp4` (`4 in 10,000 · Carbon Dioxide`) in house Didot italic.
+  4. **Overlay re-timing (`LAY_TIMES_v02.json`):** aligned all 21 teach overlays to exact frame boundaries (`REVIEW_v02.md`), sequencing `timeline_d2` before `who_hales` in `#35`, separating `ch_bubbles` and `timeline_d4` with `1.21 s` of moving `01_villa_t1` in `#52`, and moving `num_500` into `#53`.
+
+```
+polish gate PASS: 0 of 91 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/polish_gate.json
+picture QA PASS: 0 of 91 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/picture_qa_review.jpg
+Script score: 93.7/100 · PASS (Decision: PASS — VO / Gemini Veo allowed)
+```
+
+**STOP:** parked for Chief: `full_join_v02_teach` review & final OK. Nothing uploaded or scheduled.
+
 

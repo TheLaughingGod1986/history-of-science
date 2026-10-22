@@ -22,7 +22,13 @@ import subprocess
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
+
+DIDOT = "/System/Library/Fonts/Supplemental/Didot.ttc"
+
+
+def didot_font(size: int, index: int = 1) -> ImageFont.FreeTypeFont:
+    return ImageFont.truetype(DIDOT, size=size, index=index)
 
 FILM = "006_Trees-Are-Made-Of-Air"
 MEDIA = Path(
@@ -187,6 +193,35 @@ def build_trunk_pie(tmp_dir: Path, out_mp4: Path) -> None:
                     fill=(54, 36, 22), width=4,
                 )
 
+        # House Didot italic labels so wedges read with sound off (REVIEW_v01 §1.A & §4)
+        lbl_p = max(0.0, min(1.0, (t - 0.55) / 0.50))
+        if lbl_p > 0.01:
+            a_lbl = int(round(255 * (lbl_p * lbl_p * (3.0 - 2.0 * lbl_p))))
+            ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+            od = ImageDraw.Draw(ov)
+            f_main = didot_font(44, 1)
+            f_sub = didot_font(34, 1)
+            ink = (54, 36, 22, a_lbl)
+            gold_line = (152, 114, 68, a_lbl)
+
+            # Right callout: 50% Carbon (from air)
+            rx0, ry0 = cx + base_r * 0.72, cy - 40
+            rx1, ry1 = 1410, cy - 85
+            od.line([(rx0, ry0), (rx1, ry1), (1830, ry1)], fill=gold_line, width=3)
+            od.ellipse([rx0 - 6, ry0 - 6, rx0 + 6, ry0 + 6], fill=ink)
+            od.text((1420, ry1 - 56), "50% Carbon", font=f_main, fill=ink)
+            od.text((1420, ry1 + 10), "(from air)", font=f_sub, fill=(92, 62, 40, a_lbl))
+
+            # Left callout: 44% Oxygen · 6% Hydrogen
+            lx0, ly0 = cx - base_r * 0.72, cy + 45
+            lx1, ly1 = 510, cy + 80
+            od.line([(lx0, ly0), (lx1, ly1), (86, ly1)], fill=gold_line, width=3)
+            od.ellipse([lx0 - 6, ly0 - 6, lx0 + 6, ly0 + 6], fill=ink)
+            od.text((90, ly1 - 56), "44% Oxygen", font=f_main, fill=ink)
+            od.text((90, ly1 + 10), "6% Hydrogen", font=f_sub, fill=(92, 62, 40, a_lbl))
+
+            img = Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
+
         img.save(fdir / f"f_{f:04d}.png")
 
     encode_frames(fdir, out_mp4)
@@ -275,6 +310,31 @@ def build_dots_crowd(tmp_dir: Path, out_mp4: Path) -> None:
                     outline=(68, 44, 14),
                     width=3,
                 )
+
+        # House Didot italic label: 4 in 10,000 · Carbon Dioxide (REVIEW_v01 §1.A & §4)
+        lbl_p = max(0.0, min(1.0, (t - 0.55) / 0.50))
+        if lbl_p > 0.01:
+            a_lbl = int(round(255 * (lbl_p * lbl_p * (3.0 - 2.0 * lbl_p))))
+            ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+            od = ImageDraw.Draw(ov)
+            f_lbl = didot_font(44, 1)
+            txt = "4 in 10,000 · Carbon Dioxide"
+            bb = od.textbbox((0, 0), txt, font=f_lbl)
+            tw = bb[2] - bb[0]
+            pad_x, pad_y = 48, 20
+            bx0 = int((W - tw) / 2 - pad_x)
+            bx1 = int((W + tw) / 2 + pad_x)
+            by0 = 888
+            by1 = 978
+            od.rounded_rectangle(
+                [bx0, by0, bx1, by1],
+                radius=12,
+                fill=(61, 41, 28, int(a_lbl * 0.94)),
+                outline=(196, 154, 78, a_lbl),
+                width=3,
+            )
+            od.text(((W - tw) / 2, by0 + pad_y - 2), txt, font=f_lbl, fill=(244, 235, 216, a_lbl))
+            img = Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
 
         img.save(fdir / f"f_{f:04d}.png")
 
