@@ -295,3 +295,25 @@ PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
 
 43 videos, 0 errors.
 ```
+
+
+## 22 Oct 2026 — Short `s11_curved_flask_v01` (Test B, fifth search-titled lift from Part 04, OWB J0825)
+
+- **Selection:** HOS 004, 005, and 006 each have 5 built search-titled Shorts (`s04`–`s08`). HOS 001, 002, and 003 each had 4. 001 is the lowest locked long with the fewest, so this is its fifth (`s07`–`s10` already built). 007+ have no minted picture yet.
+- **VO (0 spend):** `02_Voiceover/part04_proof_in_a_flask_v01.wav` claim-first lift (`43.68–67.84 s` and `73.08–77.92 s`, zero overlap with `s04_flask` at `3.09–22.72 s` and `s08_pasteur_germs` at `0.00–2.95 s`, `22.90–43.65 s`, `68.40–72.80 s`): *"Could a curved tube of glass change surgery? Vaccines? Public health? Inside that liquid sits a paradox the old world hated: emptiness that stays empty until contact. A flask can change a civilisation, because it turns an invisible claim into a demo you can repeat on Tuesday. Germs were not a metaphor. They were biology with an address."* 58 words, pauses capped at 0.20 s, `atempo=1.12`, 21.937 s VO + 0.43 s tail = 22.367 s total.
+- **Picture & bed (0 spend):** Part 04 clean takes not used by `s08`: `01_question_mark_flask_v17` (in `1.60 s`, frame 0 and the 3.0 s loop, `crop_x=640`), `09_sceptics_watch_v17` (`crop_x=420`), `05_tip_the_trap_v17` (`crop_x=600`), `04_still_clear_v21` (`crop_x=640`), `08_passengers_v20` (`crop_x=380`), `11_result_returns_v01` (`crop_x=560`). Own-synthesis warm harmonic pad (`hos001_s11_synth_pad_v01.wav`, F-major voicing, distinct from `s07`–`s10`) at −21.6 dB under VO. Hook **CURVED GLASS** (GLASS in yellow). Person card **LOUIS PASTEUR · Swan-neck flask, 1860s** at 2.15–5.75 s; the long's exact title *How Did We Discover Germs?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` on the last 3.0 s.
+- **Title draft:** *What Is the Pasteur Swan Neck Flask Experiment?* (signed-out GB YouTube autocomplete exact hits `pasteur swan neck flask experiment` / `louis pasteur swan neck flask experiment` / `pasteur flask experiment` / `pasteur swan necked flask experiment`, 22 Oct 2026; alts *Louis Pasteur Swan Neck Flask Experiment*, *How Did a Curved Flask Change Surgery?*).
+- **File:** `10_Shorts/hos_001_s11_curved_flask_v01.mp4`, 22.367 s, sha256 `92bda59586ea1315e08f0ff26b954331f146e54382a82fd56cde3e4210cecf31`; phone copy iCloud `HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v01.mp4`. One picture_qa / polish look-at, not a fail: `08_passengers_v20` at 0:13, low detail (edge density 0.0302).
+
+```
+PASS  hos_001_s11_curved_flask_v01.mp4  dur=22.37s  audio=-22.6dB  motion=10.29  dhash=a18d868b13391c1c
+PASS  hos_001_s11_curved_flask_v01.mp4  0:22.37  mean -22.6 dB  peak -4.2 dB  156 wpm
+   warn  replace at ~0:12.90: script 'civilisation' / heard 'civilization' — transcriber, sounds alike
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v01/polish_gate_s11_curved_flask_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v01/picture_qa_s11_curved_flask_v01/PICTURE_QA.md
+```
+
+Gate run with `--air-date 2027-01-20` (gate only). Caption check: 16 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
