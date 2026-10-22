@@ -1,0 +1,21 @@
+01_cow_meadow     2.1s 01_cow_meadow_t1.mp4         ok
+02_doctor_case     7.9s 02_doctor_case_t1.mp4        ok
+03_table_three    15.3s 03_table_three_t1.mp4        WARN low detail: edge density 0.0154 < film p5 0.0284
+03b_globe_tease    21.1s 03_globe_lights_t1.mp4       ok
+04_church_dusk    26.2s 04_church_dusk_t1.mp4        ok
+07_map_shadows    32.2s code_graphic_007_p1_07_map_s ok
+07b_three_in_ten    37.1s 07b_three_in_ten_t1.mp4      ok
+07c_scarred    41.6s 07c_scarred_t1.mp4           ok
+05_quiet_lane    46.0s 05_quiet_lane_t1.mp4         ok
+06_shuttered_house    50.0s 06_shuttered_house_t1.mp4    ok
+08_bell_tower    54.0s 08_bell_tower_t1.mp4         ok
+09_churchyard    57.5s 09_churchyard_t1.mp4         ok
+09b_counted    61.4s 09b_counted_t1.mp4           ok
+09c_case_again    65.5s 02_doctor_case_t1.mp4        ok
+10_variolation    70.9s 10_variolation_t1.mp4        ok
+10b_milder    77.1s 10b_milder_t1.mp4            ok
+10c_doors_close    83.2s 10c_doors_close_t1.mp4       ok
+11_mother_window    89.6s 11_mother_window_t1.mp4      ok (reviewed_ok: split panel: vertical seam at 0.536, vertical seam at 0.578, vertical seam at 0.601)
+11b_child_cot    94.7s 11b_child_cot_t1.mp4         ok
+12_farm_gate    98.7s 12_farm_gate_t1.mp4          ok
+polish gate PASS: 0 of 20 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part01_rough_v01/polish_gate.json
