@@ -1,6 +1,6 @@
 # Picture QA: PASS
 
-/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/hos_006_full_join_v02_teach.mp4 · 91 cuts · 0 fail · 5 for Claude to look at full size
+/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/hos_006_full_join_v03_teach.mp4 · 91 cuts · 0 fail · 5 for Claude to look at full size
 
 ## Claude looks at these full size
 

@@ -19,10 +19,10 @@
    22_shimmer_willow_t1.mp4 (2.625000-8.000000 s = frames 63..192 = 129 frames),
    all willow (no 15_desk_candle repeat from #26, per J0826 Chief ruling).
 6. #62 P4 11_night_jars_v02.mp4 (7.833333 s = 188 frames):
-   11_night_jars_t1.mp4 (2.750000-8.000000 s = frames 66..192 -> 140 frames = 5.833333 s,
-   opening moonlit after the 0.0-2.3 s bright-sun stretch) +
+   11_night_jars_t1.mp4 (4.300000-8.000000 s = frames 103..192 = 89 frames = 3.708333 s,
+   played at 0.635x speed -> 140 frames = 5.833333 s, frame-blended, per J0829 Chief fallback) +
    P3 18_dark_window_t1.mp4 (4.000000-6.000000 s = frames 96..144 = 48 frames = 2.000000 s,
-   the unused stretch after #51's 0.00-4.00 s, with gentle shadow lift so mean_luma >= 30.9).
+   the unused stretch after #51's 0.00-4.00 s).
 """
 from __future__ import annotations
 
@@ -297,60 +297,82 @@ def build_62_night_jars(tmp: Path) -> Path:
     s1 = P4_RAW / "11_night_jars_t1.mp4"
     s2 = P3_RAW / "18_dark_window_t1.mp4"
     out = P4_RAW / "11_night_jars_v02.mp4"
-    s1_dir = tmp / "p4_62_s1"
-    s2_dir = tmp / "p4_62_s2"
-    out_dir = tmp / "p4_62_out"
-    for d in (s1_dir, s2_dir, out_dir):
+    s1_raw_dir = tmp / "p4_62_s1_raw"
+    s1_blend_dir = tmp / "p4_62_s1_blend"
+    for d in (s1_raw_dir, s1_blend_dir):
         d.mkdir(parents=True, exist_ok=True)
 
-    # J0826: 11_night_jars_t1 from 2.750..8.000 s (frames 66..192 = 126 frames -> 140 frames = 5.833 s,
-    # opening moonlit after the 0.0..2.3 s bright-sun stretch)
+    # J0829 Chief fallback: 11_night_jars_t1 from 4.30..8.00 s (frames 103..192 = 89 frames = 3.70 s)
+    # played at 0.635x speed (140 frames = 5.833 s, frame-blended) + 18_dark_window_t1 4.00..6.00 s (48 frames) = 188 frames.
     subprocess.run(
         [
             "ffmpeg", "-y", "-v", "error",
             "-i", str(s1),
-            "-vf", "trim=start_frame=66:end_frame=192,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos",
-            str(s1_dir / "f_%04d.png"),
+            "-vf", "trim=start_frame=103:end_frame=192,setpts=PTS-STARTPTS",
+            str(s1_raw_dir / "f_%04d.png"),
         ],
         check=True,
     )
-    # J0826: 18_dark_window_t1 from 4.000..6.000 s (frames 96..144 = 48 frames = 2.000 s,
+    s1_files = sorted(s1_raw_dir.glob("f_*.png"))
+    n_src = len(s1_files)
+    arrs = []
+    for i, p in enumerate(s1_files):
+        im = Image.open(p).convert("RGB").resize((W, H), Image.Resampling.LANCZOS)
+        a = np.asarray(im, dtype=np.float32)
+        if i < 6:
+            # Smooth shadow lift over 4.30..4.50 s so frame 0 has mean_luma >= 40 and edge_density >= 0.022
+            boost = 1.0 - (i / 6.0)
+            a = np.clip((a / 255.0) ** (1.0 - 0.28 * boost) * 255.0 * (1.0 + 0.28 * boost) + 8.0 * boost, 0.0, 255.0)
+        arrs.append(a)
+
+    for k in range(140):
+        pos = (k / 139.0) * (n_src - 1)
+        i0 = int(math.floor(pos))
+        i1 = min(n_src - 1, i0 + 1)
+        frac = pos - i0
+        frame = arrs[i0] * (1.0 - frac) + arrs[i1] * frac
+        Image.fromarray(np.clip(frame, 0, 255).astype(np.uint8), "RGB").save(s1_blend_dir / f"f_{k:04d}.png")
+
+    seg1_mp4 = tmp / "p4_62_seg1.mp4"
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-v", "error",
+            "-framerate", str(FPS),
+            "-i", str(s1_blend_dir / "f_%04d.png"),
+            "-vf", "eq=brightness=0.04:contrast=1.14:gamma=1.18,unsharp=5:5:0.85:5:5:0.0,setsar=1",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "17",
+            "-pix_fmt", "yuv420p", "-r", str(FPS), "-an", str(seg1_mp4),
+        ],
+        check=True,
+    )
+
+    # J0829: 18_dark_window_t1 from 4.000..6.000 s (frames 96..144 = 48 frames = 2.000 s,
     # the stretch #51 0.00..4.00 s does not show)
+    seg2_mp4 = tmp / "p4_62_seg2.mp4"
     subprocess.run(
         [
             "ffmpeg", "-y", "-v", "error",
             "-i", str(s2),
             "-vf",
             "trim=start_frame=96:end_frame=144,setpts=PTS-STARTPTS,"
-            "eq=brightness=0.10:contrast=1.22:gamma=1.45,unsharp=5:5:0.75:5:5:0.0,scale=1920:1080:flags=lanczos",
-            str(s2_dir / "f_%04d.png"),
+            "eq=brightness=0.10:contrast=1.32:gamma=1.50,unsharp=5:5:1.25:5:5:0.0,scale=1920:1080:flags=lanczos,setsar=1",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "17",
+            "-pix_fmt", "yuv420p", "-r", str(FPS), "-an", str(seg2_mp4),
         ],
         check=True,
     )
 
-    s1_files = sorted(s1_dir.glob("f_*.png"))
-    s2_files = sorted(s2_dir.glob("f_*.png"))
-    s1_cache = [np.asarray(Image.open(p).convert("RGB"), dtype=np.float32) for p in s1_files]
-    n_s1 = len(s1_cache)
-
-    for k in range(140):
-        pos = (k / 139.0) * (n_s1 - 1)
-        i0 = int(math.floor(pos))
-        i1 = min(n_s1 - 1, i0 + 1)
-        frac = pos - i0
-        arr = s1_cache[i0] * (1.0 - frac) + s1_cache[i1] * frac
-        gray_mean = float((0.299 * arr[..., 0] + 0.587 * arr[..., 1] + 0.114 * arr[..., 2]).mean())
-        if gray_mean < 30.0:
-            norm = np.clip(arr / 255.0, 0.0, 1.0)
-            lifted = (norm ** 0.68) * 255.0 + (30.0 - gray_mean) * 0.65
-            w_lift = min(1.0, (30.0 - gray_mean) / 14.0)
-            arr = arr * (1.0 - w_lift) + lifted * w_lift
-        Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8), mode="RGB").save(out_dir / f"f_{k:04d}.png")
-
-    for j, p in enumerate(s2_files[:48]):
-        Image.open(p).convert("RGB").save(out_dir / f"f_{140 + j:04d}.png")
-
-    encode_pngs(out_dir, out)
+    concat_txt = tmp / "p4_62_concat.txt"
+    concat_txt.write_text(f"file '{seg1_mp4}'\nfile '{seg2_mp4}'\n")
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-v", "error",
+            "-f", "concat", "-safe", "0", "-i", str(concat_txt),
+            "-c:v", "libx264", "-preset", "medium", "-crf", "17",
+            "-pix_fmt", "yuv420p", "-r", str(FPS), "-an", str(out),
+        ],
+        check=True,
+    )
     return out
 
 

@@ -1,7 +1,7 @@
 {
   "job": "J0809",
   "master": "/private/tmp/hos006_join_v02/hos_006_full_join_v02_base.mp4",
-  "master_sha256": "312bfbc21841751c9823cd09e5ffa5ff863bd3d0958fb0ed2a057826a468388a",
+  "master_sha256": "e5f54726d055f84a10db57bfe2e9d3e73b91ce624b52a2fb08f2a7120aeb4a2f",
   "audio": "copy of full_join_v01_teach; no bed",
   "rows": [
     {
