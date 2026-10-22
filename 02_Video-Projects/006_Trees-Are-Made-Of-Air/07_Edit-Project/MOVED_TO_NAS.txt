@@ -1,0 +1,5 @@
+Moved to NAS on 2026-10-21 by Gemini (J0795, Ben approved): rsync -a + SHA-256 verified before local removal.
+Local: /Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck
+NAS path: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-006/_precheck
+Manifest: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-006/MANIFEST__precheck.sha256 (336 files, 3789215042 bytes)
+

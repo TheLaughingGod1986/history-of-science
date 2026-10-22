@@ -70,7 +70,7 @@ CREDIT_LOG = EDIT / "VERTEX_CREDIT_LOG_v01.json"
 # Free Trial on the console before any 006 Vertex spend (2 Oct 12:28 UK, before boards).
 CREDIT_BASE_GBP = 65.73
 GBP_PER_USD = 0.80  # conservative; list prices are in USD, the credit is in GBP
-FLOOR_GBP = 5.0  # Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): usable = remaining − £5 lag floor; never onto paid billing
+FLOOR_GBP = 0.10  # Ben, 12 Oct 2026 14:46: floors to 0, but billing account 0124D1-E6EFD6-40F6DA is a Paid account (could bill the card), so stop at £0.10
 STYLE = (
     "History of Science locked look: premium Animistry-class 3D cartoon, finished "
     "materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. "

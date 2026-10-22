@@ -29,7 +29,7 @@ EDIT = Path(__file__).resolve().parent
 EVID = EDIT / "_evidence"
 LOG = EDIT / "VERTEX_CREDIT_LOG_v01.json"
 URL = "https://console.cloud.google.com/billing/0124D1-E6EFD6-40F6DA/credits/all?project=gen-lang-client-0538779324"
-FLOOR_GBP = 5.0  # Claude #180: usable = remaining − spend_since − £5; never onto paid billing
+FLOOR_GBP = 0.10  # Ben, 12 Oct 2026 14:46: floors to 0, but billing account 0124D1-E6EFD6-40F6DA is a Paid account (could bill the card), so stop at £0.10
 GBP_PER_USD = 0.80  # PICTURE_PLAN_v01.json rates.gbp_per_usd_planning
 
 
@@ -94,10 +94,13 @@ def main() -> int:
     for i, ln in enumerate(rows):
         if ln.strip() == "Free Trial":
             window = " ".join(rows[i:i + 8])
-            if "Available" in window:
+            # Active credit reads "Available" or, near its end date, "Expiring in N days" (12 Oct 2026: the trial
+            # ends 11 Nov). Anything else (Expired, Used) is not spendable.
+            act = re.search(r"Available|Expiring in \d+ days?", window)
+            if act and not re.search(r"\bExpired\b|\bUsed\b", window.split("Free Trial")[1][:60] if "Free Trial" in window else ""):
                 m = re.search(r"£([\d,]+\.\d\d)", window)
                 if m:
-                    remaining, status = float(m.group(1).replace(",", "")), "Available"
+                    remaining, status = float(m.group(1).replace(",", "")), act.group(0)
                     break
     if remaining is None:
         print(f"STOP: could not read the Free Trial row (screenshot {shot})")
