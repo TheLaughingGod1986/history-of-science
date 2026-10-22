@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Voice and all 5 picture parts (92 rows + roughs) are KEEP on main (Chief KEEP sweep 15 Oct, Flow 23,730). Next: edit + polish (J0266 Part 03/04 rough QA fixes, then fine cut and thumbnails).",
+      "summary": "Master v01 with original \u00a30 HOS score and house SFX built; machine gates pass, awaiting Chief listening review (J0835). Ben watch due 1 Nov.",
       "stages": {
         "topic": {
           "status": "done"
@@ -249,22 +249,23 @@
           "note": "All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180)."
         },
         "edit": {
-          "status": "doing",
+          "status": "blocked",
           "due": "2026-10-29",
-          "note": "J0835: Chief authorized \u00a30 synthesized HOS score + house SFX; source picture locked; no spend",
+          "note": "J0835 master v01: -14 LUFS/-1.5 dBTP; picture unchanged; music/SFX/picture/polish/episode gates pass; NAS SHA verified. Parked for Chief; not an approved film stage.",
           "jobs": [
             "J0835"
           ],
-          "owner": "codex",
-          "since": "2026-10-22T19:18",
-          "underway": true,
+          "owner": "claude",
+          "since": "2026-10-22T19:24",
+          "underway": false,
           "steps": [
-            0,
+            5,
             5
           ],
           "steps_unit": "master steps",
-          "left": "about 1 hour",
-          "eta": "2026-10-22T20:20"
+          "left": "Chief listening review",
+          "eta": "",
+          "waiting": "Chief review: musical fit, tempo WARN, final PASS and Ben watch"
         },
         "thumbnails": {
           "status": "todo",

@@ -10,7 +10,7 @@
 |---|---|---:|---|---|---|---|---|
 | **004** What's Really Inside an Atom? | Thu 15 Oct (-7 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟠 behind |
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (7 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
-| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (14 d) | 75% | Edit + master (in progress) | **codex** · ▶️ underway | 0/5 master steps · about 1 hour left · ETA Thu 22 Oct (today) | Sun 1 Nov (in 10 d) | 🟢 on track |
+| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (14 d) | 85% | Edit + master (blocked) | **claude** · ⛔ blocked: Chief review: musical fit, tempo WARN, final PASS and Ben watch | 5/5 master steps · Chief listening review left | Sun 1 Nov (in 10 d) | ⛔ blocked |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (21 d) | 85% | Edit + master (in progress) | **Grok** · ⏸ waiting: Chief review of full_join_v01 + REVIEW_v01.md (J0827) | 5/5 parts joined | Sun 8 Nov (in 17 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (28 d) | 43% | Picture (blocked) | **chief** · ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend | 11/112 board rows rendered (11 graphics awaiting review) | Sun 15 Nov (in 24 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (35 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 14 d late | Sun 22 Nov (in 31 d) | ⛔ blocked |
@@ -35,8 +35,9 @@
 - ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 009 Picture: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
-**codex**
-- ▶️ Underway: 006 Edit + master, since Thu 22 Oct 19:18 (0/5 master steps · about 1 hour left · ETA Thu 22 Oct (today))
+**claude**
+- ▶️ Underway: nothing right now
+- ⏸ Waiting: 006 Edit + master: Chief review: musical fit, tempo WARN, final PASS and Ben watch
 
 **chief**
 - ▶️ Underway: nothing right now
@@ -45,7 +46,7 @@
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (9 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **006** · 🔄 **Edit + master** — in progress (0%, 0/5 master steps · about 1 hour left · ETA Thu 22 Oct (today), with codex since Thu 22 Oct 19:18, ▶️ underway, due Thu 29 Oct (in 7 d)): J0835: Chief authorized £0 synthesized HOS score + house SFX; source picture locked; no spend
+- **006** · ⛔ **Edit + master** — blocked (100%, 5/5 master steps · Chief listening review left, with claude since Thu 22 Oct 19:24, ⛔ blocked: Chief review: musical fit, tempo WARN, final PASS and Ben watch, due Thu 29 Oct (in 7 d)): J0835 master v01: -14 LUFS/-1.5 dBTP; picture unchanged; music/SFX/picture/polish/episode gates pass; NAS SHA verified. Parked for Chief; not an approved film stage.
 - **007** · 🔄 **Edit + master** — in progress (100%, 5/5 parts joined, with Grok since Thu 22 Oct, ⏸ waiting: Chief review of full_join_v01 + REVIEW_v01.md (J0827), due Thu 5 Nov (in 14 d)): Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled on locked VO across Parts 01–05 (J0827, 22 Oct, £0) with both £0 repeat-shot fixes (`P1:09c_case_again` 1.88x lancet crop; `P5:06c/06d` unused `04_health_workers` tail + 1.38x clapping front-row push-in). PASS polish_gate (0 failed, 5 WARNs) + picture_qa (0 failed, 5 WARNs), 0 freezes. Parked for Chief review.
 - **008** · ⛔ **Picture** — blocked (10%, 11/112 board rows rendered (11 graphics awaiting review), with chief since Fri 16 Oct, ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend, due Sun 8 Nov (in 17 d)): J0329: eleven no-spend v01 code graphics rendered from KEEP v03 boards, plus five alpha overlays and paper review previews. Awaiting Chief visual review; five moving-plate composites still pending. PICTURE_PLAN_v03 mint gate unchanged (5,605 cr expected). See CODE_GRAPHICS_v01_REVIEW.md.
 - **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 24 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
@@ -118,11 +119,11 @@ Finished and scheduled. Long `wwcjcFfC-5M` airs Thu 29 Oct 18:00; Shorts A (30 O
 
 ### 006 · The Willow Tree That Was Made of Air
 
-`███████████████░░░░░` **75%**
+`█████████████████░░░` **85%**
 
-Airs **Thu 5 Nov** · ready for Ben's OK by **Sun 1 Nov** · 🟢 on track
+Airs **Thu 5 Nov** · ready for Ben's OK by **Sun 1 Nov** · ⛔ blocked
 
-Voice and all 5 picture parts (92 rows + roughs) are KEEP on main (Chief KEEP sweep 15 Oct, Flow 23,730). Next: edit + polish (J0266 Part 03/04 rough QA fixes, then fine cut and thumbnails).
+Master v01 with original £0 HOS score and house SFX built; machine gates pass, awaiting Chief listening review (J0835). Ben watch due 1 Nov.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v02, 93.7
@@ -132,7 +133,7 @@ Voice and all 5 picture parts (92 rows + roughs) are KEEP on main (Chief KEEP sw
 - ✅ **Shorts scripts** — done
 - ✅ **Shorts voiceover** — done: A v02 · B v03b · C v01 locked
 - ✅ **Picture** — done: All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180).
-- 🔄 **Edit + master** — in progress (0%, 0/5 master steps · about 1 hour left · ETA Thu 22 Oct (today), with codex since Thu 22 Oct 19:18, ▶️ underway, due Thu 29 Oct (in 7 d)): J0835: Chief authorized £0 synthesized HOS score + house SFX; source picture locked; no spend
+- ⛔ **Edit + master** — blocked (100%, 5/5 master steps · Chief listening review left, with claude since Thu 22 Oct 19:24, ⛔ blocked: Chief review: musical fit, tempo WARN, final PASS and Ben watch, due Thu 29 Oct (in 7 d)): J0835 master v01: -14 LUFS/-1.5 dBTP; picture unchanged; music/SFX/picture/polish/episode gates pass; NAS SHA verified. Parked for Chief; not an approved film stage.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 29 Oct (in 7 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 1 Nov (in 10 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 2 Nov (in 11 d))

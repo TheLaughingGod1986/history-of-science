@@ -28,11 +28,9 @@ WORDS_JSON = VO_DIR / "words.json"
 OV_JSON = OV_PACK / "overlays_v01.json"
 
 SR = 48000
-LAST_WORD = 514.260
-HOLD = 2.000
 FADE = 1.000
-TOTAL = 507.833333  # matches 6-part rough total (517.26s)
-BPM = 66.0  # 0.800s per beat (exact 16 x 50ms hops -> 75.0 BPM)
+TOTAL = 507.833333  # frame-exact duration of source HOS 006 v03
+BPM = 66.0  # gentle period harp, below Chief's 75 BPM ceiling
 
 CHAPTER_CARDS = [(61.666667,"Five Years and Two Ounces","explain"),(178.666667,"The Air That Mint Repaired","awe"),(273.5,"Bubbles in the Sunlight","explain"),(365.416667,"Carbon From the Sky","awe")]
 WHOOSH_PASSES=[]
@@ -118,7 +116,7 @@ def main() -> int:
     MUSIC_DIR.mkdir(parents=True, exist_ok=True)
     SFX_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 1. Prepare normalized VO stem (517.26s, -14 LUFS)
+    # 1. Prepare source VO stem without retiming (normalization only)
     vo_wav = WORK / "stem_vo_v01.wav"
     af_vo = f"apad=whole_dur={TOTAL:.3f},loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=out:st={TOTAL-1.0:.3f}:d=1.0"
     sp.run(
@@ -183,7 +181,7 @@ def main() -> int:
     (MUSIC_DIR / "trees006_score_bed_v01_plan.json").write_text(json.dumps(plan_data, indent=2) + "\n")
     (MUSIC_DIR / "BED_BRIEF_v01.md").write_text("# HOS 006 own synthesized score (J0835, £0)\n\n"+prompt_txt+"\n\nChief authorization: J0835 history, Claude acting Chief 22 Oct 17:52Z. Fit awaits Chief listening review.\n")
 
-    # 3. Synthesize house SFX kit and build 029 SFX stem
+    # 3. Synthesize house SFX kit and build HOS 006 SFX stem
     sfx_kit.make(KIT_DIR, "hos", 11)
     whoosh_wav = read_wav(KIT_DIR / "sfx_hos_whoosh_soft_v01.wav")
     whoosh_len = len(whoosh_wav) / SR

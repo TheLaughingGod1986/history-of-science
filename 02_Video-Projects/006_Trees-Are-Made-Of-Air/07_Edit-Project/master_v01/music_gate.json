@@ -1,0 +1,18 @@
+{
+  "verdict": "PASS",
+  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/05_Music/trees006_score_bed_v01.mp3",
+  "seconds": 507.8,
+  "bpm": 171.4,
+  "brief_pace": "Pace: 60-72 BPM",
+  "fail": [],
+  "warn": [
+    "pace: measured about 171.4 BPM against the brief's 60-72; Claude listens"
+  ],
+  "waived": [],
+  "matches": [],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  }
+}
