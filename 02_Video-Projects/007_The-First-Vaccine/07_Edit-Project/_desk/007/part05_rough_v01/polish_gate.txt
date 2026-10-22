@@ -7,7 +7,8 @@
 03_globe_lights    33.5s 03_globe_lights_t1.mp4       ok
 06_assembly_1980    38.3s 06_assembly_1980_t1.mp4      ok
 06b_churchyard_again    43.5s 09_churchyard_t1.mp4         ok
-06c_assembly_again    49.1s 06_assembly_1980_t1.mp4      ok
+06c_assembly_again    47.6s 04_health_workers_t1.mp4     ok
+06d_assembly_front_row    51.1s 06_assembly_1980_t1.mp4      ok
 08_body_learns    55.6s code_graphic_007_p5_08_body_ ok
 07_childs_arm    61.8s 07_childs_arm_t1.mp4         ok
 07b_kit_again    67.4s 05_kit_opens_t1.mp4          ok
@@ -17,4 +18,4 @@
 13_explorer_meadow    90.0s 13_explorer_meadow_t1.mp4    ok
 11b_storm_builds    95.8s 11b_storm_builds_t1.mp4      ok
 12_kite_storm   100.7s 12_kite_storm_t1.mp4         ok
-polish gate PASS: 0 of 19 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/polish_gate.json
+polish gate PASS: 0 of 20 rows failed, 1 to look at -> /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/polish_gate.json

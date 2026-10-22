@@ -14,7 +14,7 @@
   "failed": [],
   "warn": [
     {
-      "cut": 14,
+      "cut": 15,
       "row": "10_history_book",
       "source": "10_history_book_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
@@ -130,22 +130,39 @@
     {
       "cut": 9,
       "row": "06c_assembly_again",
-      "source": "06_assembly_1980_t1.mp4",
+      "source": "04_health_workers_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
-      "t": 49.06,
-      "at": "0:49",
+      "t": 47.6,
+      "at": "0:48",
       "fail": [],
       "warn": [],
-      "offset": 0.86,
+      "offset": 3.833,
       "reviewed_ok": {
-        "note": "Board v02 reuse_of P5:06_assembly_1980 (0.86-7.90 s): 8 s Veo plate too short for a 10 s offset; reuse waived per Chief 16 Oct rule; \u00a30 no mint.",
+        "note": "J0827 Fix 1a: 06c_assembly_again (45.54-49.67 s) uses strictly unused back half (3.833-7.958 s, 0.00 s overlap with 04_health_workers 0.000-3.833 s) at 1.18x framing; 8 s Veo plate reuse waived per Chief J0827 brief.",
+        "passed": [
+          "reuse: same stretch as 0:26 (give it a new stretch, or a new render)"
+        ]
+      }
+    },
+    {
+      "cut": 10,
+      "row": "06d_assembly_front_row",
+      "source": "06_assembly_1980_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 51.12,
+      "at": "0:51",
+      "fail": [],
+      "warn": [],
+      "offset": 5.083,
+      "reviewed_ok": {
+        "note": "Board v02 reuse_of P5:06_assembly_1980: J0827 Fix 1b trims to tail 5.083-8.000 s (2.917 s) with 1.38x push-in crop on clapping front row; 8 s Veo plate reuse waived per Chief J0827 brief.",
         "passed": [
           "reuse: same stretch as 0:38 (give it a new stretch, or a new render)"
         ]
       }
     },
     {
-      "cut": 10,
+      "cut": 11,
       "row": "08_body_learns",
       "source": "code_graphic_007_p5_08_body_learns.mp4",
       "title": "HOS house period-paper code graphic (\u00a30)",
@@ -156,7 +173,7 @@
       "offset": 0.0
     },
     {
-      "cut": 11,
+      "cut": 12,
       "row": "07_childs_arm",
       "source": "07_childs_arm_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
@@ -167,7 +184,7 @@
       "offset": 0.0
     },
     {
-      "cut": 12,
+      "cut": 13,
       "row": "07b_kit_again",
       "source": "05_kit_opens_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
@@ -184,7 +201,7 @@
       }
     },
     {
-      "cut": 13,
+      "cut": 14,
       "row": "07c_playground",
       "source": "07c_playground_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
@@ -195,7 +212,7 @@
       "offset": 0.0
     },
     {
-      "cut": 14,
+      "cut": 15,
       "row": "10_history_book",
       "source": "10_history_book_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
@@ -208,7 +225,7 @@
       "offset": 0.0
     },
     {
-      "cut": 15,
+      "cut": 16,
       "row": "11_table_three_again",
       "source": "03_table_three_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
@@ -219,7 +236,7 @@
       "offset": 2.18
     },
     {
-      "cut": 16,
+      "cut": 17,
       "row": "13_explorer_meadow",
       "source": "13_explorer_meadow_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
@@ -230,7 +247,7 @@
       "offset": 0.0
     },
     {
-      "cut": 17,
+      "cut": 18,
       "row": "11b_storm_builds",
       "source": "11b_storm_builds_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
@@ -241,7 +258,7 @@
       "offset": 0.0
     },
     {
-      "cut": 18,
+      "cut": 19,
       "row": "12_kite_storm",
       "source": "12_kite_storm_t1.mp4",
       "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",

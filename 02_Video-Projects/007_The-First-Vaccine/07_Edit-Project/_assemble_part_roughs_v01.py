@@ -30,16 +30,16 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-sys.path.insert(0, "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project")
+EDIT_DIR = Path(__file__).resolve().parent
+FILM_DIR = EDIT_DIR.parent
+HOS_ROOT = FILM_DIR.parent.parent
+OWB_ROOT = Path("/Users/benjaminoats/YouTube/orbit-with-ben")
+sys.path.insert(0, str(EDIT_DIR))
 import _build_code_graphics_v01 as cg_mod
 
 W, H, FPS = 1920, 1080, 24
 FONT = "/System/Library/Fonts/Supplemental/Didot.ttc"
 
-HOS_ROOT = Path("/Users/benjaminoats/YouTube/History Of Science")
-OWB_ROOT = Path("/Users/benjaminoats/YouTube/orbit-with-ben")
-FILM_DIR = HOS_ROOT / "02_Video-Projects/007_The-First-Vaccine"
-EDIT_DIR = FILM_DIR / "07_Edit-Project"
 MEDIA_DIR = Path("/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine")
 ARCHIVE_SRC_DIR = Path("/private/tmp/hos007_archive")
 PRECHECK_ROOT = MEDIA_DIR / "07_Edit-Project/_precheck"
@@ -469,6 +469,27 @@ def resolve_plate_source(
             src = special_assets[pid]
             return src, 0.0, 1.0, f"scale={W}:{H}:flags=lanczos,fps={FPS}", f"Dedicated £0 code graphic reuse render of {ro}"
         src = MEDIA_DIR / f"04_Generated-Clips/part{rp_no:02d}/raw/v01/{rpid}_t1.mp4"
+        if part_no == 1 and pid == "09c_case_again":
+            # J0827 Fix 2: tight 1.88x crop on the silver lancet in crimson velvet over the 3D push-in window 1.20-5.53 s
+            start = 1.20
+            upscale = 1.88
+            vf = f"scale=3610:2030:flags=lanczos,crop={W}:{H}:220:670,fps={FPS}"
+            disp = "REUSE window 1.20-5.53 s of P1:02_doctor_case with tight 1.88x crop on lancet in velvet (J0827 £0 fix)"
+            return src, start, upscale, vf, disp
+        if part_no == 5 and pid == "06c_assembly_again":
+            # J0827 Fix 1a (45.54-49.67 s = 4.125 s): strictly unused tail 3.833-7.958 s of P5:04_health_workers at 1.18x framing
+            start = 3.833
+            upscale = 1.18
+            vf = f"scale=2266:1274:flags=lanczos,crop={W}:{H}:173:97,fps={FPS}"
+            disp = "REUSE strictly unused tail 3.833-7.958 s of P5:04_health_workers (0.00 s overlap, 1.18x framing, J0827 £0 fix)"
+            return src, start, upscale, vf, disp
+        if part_no == 5 and pid == "06d_assembly_front_row":
+            # J0827 Fix 1b (49.67-52.58 s = 2.917 s): tail 5.083-8.000 s of P5:06_assembly_1980 with 1.38x push-in crop on clapping front row
+            start = 5.083
+            upscale = 1.38
+            vf = f"scale=2650:1490:flags=lanczos,crop={W}:{H}:320:260,fps={FPS}"
+            disp = "REUSE tail 5.083-8.000 s of P5:06_assembly_1980 with 1.38x push-in crop on clapping front row (J0827 £0 fix)"
+            return src, start, upscale, vf, disp
         if plate.get("clip_in_s") is not None:
             start = float(plate["clip_in_s"])
         elif part_no == 3 and pid == "09_casebook_open":
@@ -509,6 +530,8 @@ def assemble_part(part_no: int, special_assets: dict[str, Path], noise: np.ndarr
     board_path = EDIT_DIR / "parts" / f"part-{pstr}_plates_v02.json"
     board = json.loads(board_path.read_text())
     vo_path = FILM_DIR / board["vo_file"]
+    if not vo_path.exists():
+        vo_path = Path("/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine") / board["vo_file"]
     assert sha256_file(vo_path) == board["vo_sha256"], f"Part {pstr} VO sha mismatch"
 
     slug = f"part{pstr}_rough_v01"
@@ -524,7 +547,28 @@ def assemble_part(part_no: int, special_assets: dict[str, Path], noise: np.ndarr
 
     t0 = float(board["vo_film_start_s"])
     end = float(board["part_end_film_s"])
-    plates = board["plates"]
+    raw_plates = board["plates"]
+    plates = []
+    for p in raw_plates:
+        if part_no == 5 and p["id"] == "06c_assembly_again":
+            # J0827 Fix 1: split 06c_assembly_again (455.13-462.17 s = 7.0417 s) at the 49.67 s VO sentence break:
+            # 1) 06c_assembly_again (455.13-459.25 s = 4.125 s = 99 frames): strictly unused back half (3.833-7.958 s) of P5:04_health_workers
+            # 2) 06d_assembly_front_row (459.25-462.17 s = 2.917 s = 70 frames): tail (5.083-8.000 s) of P5:06_assembly_1980 with 1.38x push-in crop on clapping front row
+            p_a = dict(p)
+            p_a["id"] = "06c_assembly_again"
+            p_a["t_s"] = 455.13
+            p_a["use_s"] = 4.125
+            p_a["quality"] = "reuse"
+            p_a["reuse_of"] = "P5:04_health_workers"
+            p_b = dict(p)
+            p_b["id"] = "06d_assembly_front_row"
+            p_b["t_s"] = 459.255
+            p_b["use_s"] = 2.917
+            p_b["quality"] = "reuse"
+            p_b["reuse_of"] = "P5:06_assembly_1980"
+            plates.extend([p_a, p_b])
+        else:
+            plates.append(p)
     overlays = PART_OVERLAYS.get(part_no, [])
 
     cuts = []
@@ -681,7 +725,7 @@ def assemble_part(part_no: int, special_assets: dict[str, Path], noise: np.ndarr
         },
         "02_doctor_case_t1.mp4": {
             "kinds": ["reuse"],
-            "note": "Board v02 reuse_of P1:02_doctor_case (3.56-7.90 s): 8 s Veo plate too short for a 10 s offset; reuse waived per Chief 16 Oct rule; £0 no mint.",
+            "note": "Board v02 reuse_of P1:02_doctor_case: J0827 Fix 2 reframes 09c_case_again to tight 1.88x crop on silver lancet in crimson velvet (1.20-5.53 s); 8 s Veo plate reuse waived per Chief ruling.",
         },
         "03_phipps_stool_t1.mp4": {
             "kinds": ["reuse"],
@@ -691,9 +735,13 @@ def assemble_part(part_no: int, special_assets: dict[str, Path], noise: np.ndarr
             "kinds": ["reuse"],
             "note": "Board v02 reuse_of P3:05_quill_writes (2.00-4.88 s on P4:01 and 4.14-7.90 s on P4:07b): 8 s Veo plate too short for a 10 s offset; reuse waived per Chief 16 Oct rule; £0 no mint.",
         },
+        "04_health_workers_t1.mp4": {
+            "kinds": ["reuse"],
+            "note": "J0827 Fix 1a: 06c_assembly_again (45.54-49.67 s) uses strictly unused back half (3.833-7.958 s, 0.00 s overlap with 04_health_workers 0.000-3.833 s) at 1.18x framing; 8 s Veo plate reuse waived per Chief J0827 brief.",
+        },
         "06_assembly_1980_t1.mp4": {
             "kinds": ["reuse"],
-            "note": "Board v02 reuse_of P5:06_assembly_1980 (0.86-7.90 s): 8 s Veo plate too short for a 10 s offset; reuse waived per Chief 16 Oct rule; £0 no mint.",
+            "note": "Board v02 reuse_of P5:06_assembly_1980: J0827 Fix 1b trims to tail 5.083-8.000 s (2.917 s) with 1.38x push-in crop on clapping front row; 8 s Veo plate reuse waived per Chief J0827 brief.",
         },
         "05_kit_opens_t1.mp4": {
             "kinds": ["reuse"],
@@ -802,11 +850,26 @@ def main() -> None:
 
     parts_to_run = [int(x) for x in sys.argv[1:]] if len(sys.argv) > 1 else [1, 2, 3, 4, 5]
     results = []
-    for pno in parts_to_run:
-        print(f"=== Assembling Part {pno:02d} rough v01 ===", flush=True)
-        res = assemble_part(pno, special_assets, noise)
-        print("  ->", json.dumps(res), flush=True)
-        results.append(res)
+    for pno in [1, 2, 3, 4, 5]:
+        if pno in parts_to_run:
+            print(f"=== Assembling Part {pno:02d} rough v01 ===", flush=True)
+            res = assemble_part(pno, special_assets, noise)
+            print("  ->", json.dumps(res), flush=True)
+            results.append(res)
+        else:
+            pstr = f"{pno:02d}"
+            meta = json.loads((DESK_ROOT / f"part{pstr}_rough_v01/ROUGH_META_part{pstr}_v01.json").read_text())
+            results.append({
+                "part": pno,
+                "slug": f"part{pstr}_rough_v01",
+                "frames": meta["frames"],
+                "rough_duration_s": meta["rough_duration_s"],
+                "vo_duration_s": meta["vo_duration_s"],
+                "sha256": meta["sha256"],
+                "freeze_events": len(meta["freeze_events"]),
+                "polish_gate_rc": meta["polish_gate_rc"],
+                "picture_qa_rc": meta["picture_qa_rc"],
+            })
 
     summary_path = DESK_ROOT / "PART_ROUGHS_v01_SUMMARY.json"
     summary_path.write_text(json.dumps(results, indent=2) + "\n")

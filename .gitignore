@@ -119,5 +119,6 @@ node_modules/
 !00_Brand/Channel-Setup/style/shorts/*.jpg
 !00_Brand/Channel-Setup/style/shorts/*.png
 
-# HOS 007 part roughs v01 contact & QA review sheets (J0820)
+# HOS 007 part roughs v01 + full_join_v01 contact & QA review sheets (J0820, J0827)
 !02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part*_rough_v01/*.jpg
+!02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/full_join_v01/*.jpg

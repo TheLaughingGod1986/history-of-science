@@ -169,18 +169,35 @@
     "row": "06c_assembly_again",
     "film_t": 455.13,
     "timeline_in": 45.5417,
+    "timeline_out": 49.6667,
+    "frames": 99,
+    "upscale": 1.18,
+    "side_label": null,
+    "overlays": [],
+    "source": "04_health_workers_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/raw/v01/04_health_workers_t1.mp4",
+    "source_sha256": "ee6bdf6afb943fc1a6dc3e87d0114732563d908263ab1254c45412093106f478",
+    "framing": {
+      "offset": 3.833
+    },
+    "disposition": "REUSE strictly unused tail 3.833-7.958 s of P5:04_health_workers (0.00 s overlap, 1.18x framing, J0827 \u00a30 fix)"
+  },
+  {
+    "row": "06d_assembly_front_row",
+    "film_t": 459.25,
+    "timeline_in": 49.6667,
     "timeline_out": 52.5833,
-    "frames": 169,
-    "upscale": 1.0,
+    "frames": 70,
+    "upscale": 1.38,
     "side_label": null,
     "overlays": [],
     "source": "06_assembly_1980_t1.mp4",
     "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/raw/v01/06_assembly_1980_t1.mp4",
     "source_sha256": "6fe98dee1ed0e82abc8bec7305e0f7dfb311202862c2ca9dfe0e511d5a0bbf9d",
     "framing": {
-      "offset": 0.86
+      "offset": 5.083
     },
-    "disposition": "REUSE window 0.86-7.90 s of P5:06_assembly_1980"
+    "disposition": "REUSE tail 5.083-8.000 s of P5:06_assembly_1980 with 1.38x push-in crop on clapping front row (J0827 \u00a30 fix)"
   },
   {
     "row": "08_body_learns",

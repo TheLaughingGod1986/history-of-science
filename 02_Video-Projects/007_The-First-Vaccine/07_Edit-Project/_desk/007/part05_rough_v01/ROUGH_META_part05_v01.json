@@ -16,10 +16,10 @@
   "picture_s": 103.167,
   "frames": 2476,
   "rough_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part05_rough_v01/hos_007_part05_rough_v01.mp4",
-  "sha256": "664d167611533f5119de1234157022f9397ef45bfd70e5ceece6d2d1aa966c2c",
-  "size_mb": 108.53,
+  "sha256": "14206aeb1be19af42f4149e95b068a00d5f0c1cfd17cc216c3c0bbfea1f438de",
+  "size_mb": 111.02,
   "proxy_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part05_rough_v01/hos_007_part05_rough_v01_uat_proxy.mp4",
-  "proxy_sha256": "16467913bc47f70b5f6186f63e0a1a822b2ee900e97d20ecf4f4a42c303a33f8",
+  "proxy_sha256": "328bed8d697a475e43acc40917f412ee0a9e30cf0065ecab4b8b5cb7a800d3b7",
   "contact_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part05_rough_v01/hos_007_part05_rough_v01_contact_sheet.jpg",
   "overlays_applied": [
     {
@@ -84,9 +84,9 @@
   ],
   "freeze_events": [],
   "polish_gate_rc": 0,
-  "polish_gate_stdout": "01_pasteur_1881     4.0s 01_pasteur_1881_t1.mp4       ok\n02_cow_again    11.4s 01_cow_meadow_t1.mp4         ok\n09_meadow_golden    17.8s 09_meadow_golden_t1.mp4      ok\n02b_news_again    22.1s code_graphic_007_p5_02b_news ok\n04_health_workers    25.7s 04_health_workers_t1.mp4     ok\n05_kit_opens    29.6s 05_kit_opens_t1.mp4          ok\n03_globe_lights    33.5s 03_globe_lights_t1.mp4       ok\n06_assembly_1980    38.3s 06_assembly_1980_t1.mp4      ok\n06b_churchyard_again    43.5s 09_churchyard_t1.mp4         ok\n06c_assembly_again    49.1s 06_assembly_1980_t1.mp4      ok\n08_body_learns    55.6s code_graphic_007_p5_08_body_ ok\n07_childs_arm    61.8s 07_childs_arm_t1.mp4         ok\n07b_kit_again    67.4s 05_kit_opens_t1.mp4          ok\n07c_playground    73.2s 07c_playground_t1.mp4        ok\n10_history_book    78.6s 10_history_book_t1.mp4       WARN low detail: edge density 0.0245 < film p5 0.0258\n11_table_three_again    83.8s 03_table_three_t1.mp4        ok\n13_explorer_meadow    90.0s 13_explorer_meadow_t1.mp4    ok\n11b_storm_builds    95.8s 11b_storm_builds_t1.mp4      ok\n12_kite_storm   100.7s 12_kite_storm_t1.mp4         ok\npolish gate PASS: 0 of 19 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/polish_gate.json",
+  "polish_gate_stdout": "01_pasteur_1881     4.0s 01_pasteur_1881_t1.mp4       ok\n02_cow_again    11.4s 01_cow_meadow_t1.mp4         ok\n09_meadow_golden    17.8s 09_meadow_golden_t1.mp4      ok\n02b_news_again    22.1s code_graphic_007_p5_02b_news ok\n04_health_workers    25.7s 04_health_workers_t1.mp4     ok\n05_kit_opens    29.6s 05_kit_opens_t1.mp4          ok\n03_globe_lights    33.5s 03_globe_lights_t1.mp4       ok\n06_assembly_1980    38.3s 06_assembly_1980_t1.mp4      ok\n06b_churchyard_again    43.5s 09_churchyard_t1.mp4         ok\n06c_assembly_again    47.6s 04_health_workers_t1.mp4     ok\n06d_assembly_front_row    51.1s 06_assembly_1980_t1.mp4      ok\n08_body_learns    55.6s code_graphic_007_p5_08_body_ ok\n07_childs_arm    61.8s 07_childs_arm_t1.mp4         ok\n07b_kit_again    67.4s 05_kit_opens_t1.mp4          ok\n07c_playground    73.2s 07c_playground_t1.mp4        ok\n10_history_book    78.6s 10_history_book_t1.mp4       WARN low detail: edge density 0.0245 < film p5 0.0258\n11_table_three_again    83.8s 03_table_three_t1.mp4        ok\n13_explorer_meadow    90.0s 13_explorer_meadow_t1.mp4    ok\n11b_storm_builds    95.8s 11b_storm_builds_t1.mp4      ok\n12_kite_storm   100.7s 12_kite_storm_t1.mp4         ok\npolish gate PASS: 0 of 20 rows failed, 1 to look at -> /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/polish_gate.json",
   "picture_qa_rc": 0,
-  "picture_qa_stdout": "WARN   1:19 row 10_history_book 10_history_book_t1.mp4: low detail: edge density 0.0245 < film p5 0.0258\npicture QA PASS: 0 of 19 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/picture_qa_review.jpg",
+  "picture_qa_stdout": "WARN   1:19 row 10_history_book 10_history_book_t1.mp4: low detail: edge density 0.0245 < film p5 0.0258\npicture QA PASS: 0 of 20 cuts fail, 1 to look at -> /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/PICTURE_QA.md, /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/picture_qa_review.jpg",
   "segments": [
     {
       "row": "01_pasteur_1881",
@@ -258,18 +258,35 @@
       "row": "06c_assembly_again",
       "film_t": 455.13,
       "timeline_in": 45.5417,
+      "timeline_out": 49.6667,
+      "frames": 99,
+      "upscale": 1.18,
+      "side_label": null,
+      "overlays": [],
+      "source": "04_health_workers_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/raw/v01/04_health_workers_t1.mp4",
+      "source_sha256": "ee6bdf6afb943fc1a6dc3e87d0114732563d908263ab1254c45412093106f478",
+      "framing": {
+        "offset": 3.833
+      },
+      "disposition": "REUSE strictly unused tail 3.833-7.958 s of P5:04_health_workers (0.00 s overlap, 1.18x framing, J0827 \u00a30 fix)"
+    },
+    {
+      "row": "06d_assembly_front_row",
+      "film_t": 459.25,
+      "timeline_in": 49.6667,
       "timeline_out": 52.5833,
-      "frames": 169,
-      "upscale": 1.0,
+      "frames": 70,
+      "upscale": 1.38,
       "side_label": null,
       "overlays": [],
       "source": "06_assembly_1980_t1.mp4",
       "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part05/raw/v01/06_assembly_1980_t1.mp4",
       "source_sha256": "6fe98dee1ed0e82abc8bec7305e0f7dfb311202862c2ca9dfe0e511d5a0bbf9d",
       "framing": {
-        "offset": 0.86
+        "offset": 5.083
       },
-      "disposition": "REUSE window 0.86-7.90 s of P5:06_assembly_1980"
+      "disposition": "REUSE tail 5.083-8.000 s of P5:06_assembly_1980 with 1.38x push-in crop on clapping front row (J0827 \u00a30 fix)"
     },
     {
       "row": "08_body_learns",

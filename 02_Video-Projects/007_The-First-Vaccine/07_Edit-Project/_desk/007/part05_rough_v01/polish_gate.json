@@ -42,7 +42,7 @@
   "warn": [
     {
       "row": "10_history_book",
-      "cut": 14,
+      "cut": 15,
       "t": 78.6,
       "source": "10_history_book_t1.mp4",
       "why": [
@@ -217,16 +217,16 @@
     {
       "cut": 9,
       "row": "06c_assembly_again",
-      "source": "06_assembly_1980_t1.mp4",
-      "t": 49.06,
-      "std": 41.59,
-      "mean": 96.11,
-      "p95": 180.0,
-      "edge": 0.0831,
-      "hf": 8.54,
-      "lf": 35.97,
-      "std8": 38.12,
-      "edge8": 0.3365,
+      "source": "04_health_workers_t1.mp4",
+      "t": 47.6,
+      "std": 50.79,
+      "mean": 111.23,
+      "p95": 208.0,
+      "edge": 0.1292,
+      "hf": 9.5,
+      "lf": 45.04,
+      "std8": 47.17,
+      "edge8": 0.438,
       "seams": [],
       "video": true,
       "fail": [],
@@ -234,6 +234,24 @@
     },
     {
       "cut": 10,
+      "row": "06d_assembly_front_row",
+      "source": "06_assembly_1980_t1.mp4",
+      "t": 51.12,
+      "std": 38.02,
+      "mean": 95.25,
+      "p95": 171.0,
+      "edge": 0.0696,
+      "hf": 6.89,
+      "lf": 32.08,
+      "std8": 34.51,
+      "edge8": 0.3663,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 11,
       "row": "08_body_learns",
       "source": "code_graphic_007_p5_08_body_learns.mp4",
       "t": 55.62,
@@ -251,7 +269,7 @@
       "warn": []
     },
     {
-      "cut": 11,
+      "cut": 12,
       "row": "07_childs_arm",
       "source": "07_childs_arm_t1.mp4",
       "t": 61.75,
@@ -269,7 +287,7 @@
       "warn": []
     },
     {
-      "cut": 12,
+      "cut": 13,
       "row": "07b_kit_again",
       "source": "05_kit_opens_t1.mp4",
       "t": 67.44,
@@ -287,7 +305,7 @@
       "warn": []
     },
     {
-      "cut": 13,
+      "cut": 14,
       "row": "07c_playground",
       "source": "07c_playground_t1.mp4",
       "t": 73.17,
@@ -305,7 +323,7 @@
       "warn": []
     },
     {
-      "cut": 14,
+      "cut": 15,
       "row": "10_history_book",
       "source": "10_history_book_t1.mp4",
       "t": 78.6,
@@ -325,7 +343,7 @@
       ]
     },
     {
-      "cut": 15,
+      "cut": 16,
       "row": "11_table_three_again",
       "source": "03_table_three_t1.mp4",
       "t": 83.77,
@@ -343,7 +361,7 @@
       "warn": []
     },
     {
-      "cut": 16,
+      "cut": 17,
       "row": "13_explorer_meadow",
       "source": "13_explorer_meadow_t1.mp4",
       "t": 90.0,
@@ -361,7 +379,7 @@
       "warn": []
     },
     {
-      "cut": 17,
+      "cut": 18,
       "row": "11b_storm_builds",
       "source": "11b_storm_builds_t1.mp4",
       "t": 95.75,
@@ -379,7 +397,7 @@
       "warn": []
     },
     {
-      "cut": 18,
+      "cut": 19,
       "row": "12_kite_storm",
       "source": "12_kite_storm_t1.mp4",
       "t": 100.65,

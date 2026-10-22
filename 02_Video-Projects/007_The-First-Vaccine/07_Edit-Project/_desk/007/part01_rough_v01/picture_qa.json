@@ -182,9 +182,9 @@
       "at": "1:06",
       "fail": [],
       "warn": [],
-      "offset": 3.56,
+      "offset": 1.2,
       "reviewed_ok": {
-        "note": "Board v02 reuse_of P1:02_doctor_case (3.56-7.90 s): 8 s Veo plate too short for a 10 s offset; reuse waived per Chief 16 Oct rule; \u00a30 no mint.",
+        "note": "Board v02 reuse_of P1:02_doctor_case: J0827 Fix 2 reframes 09c_case_again to tight 1.88x crop on silver lancet in crimson velvet (1.20-5.53 s); 8 s Veo plate reuse waived per Chief ruling.",
         "passed": [
           "reuse: same stretch as 0:08 (give it a new stretch, or a new render)"
         ]

@@ -236,16 +236,16 @@
     "timeline_in": 63.375,
     "timeline_out": 67.7083,
     "frames": 104,
-    "upscale": 1.0,
+    "upscale": 1.88,
     "side_label": null,
     "overlays": [],
     "source": "02_doctor_case_t1.mp4",
     "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/raw/v01/02_doctor_case_t1.mp4",
     "source_sha256": "fb74f2389e28a414d4d01b74b9cc9f90dc1dd615ce1a0057936cf2f3480ceb07",
     "framing": {
-      "offset": 3.56
+      "offset": 1.2
     },
-    "disposition": "REUSE window 3.56-7.90 s of P1:02_doctor_case"
+    "disposition": "REUSE window 1.20-5.53 s of P1:02_doctor_case with tight 1.88x crop on lancet in velvet (J0827 \u00a30 fix)"
   },
   {
     "row": "10_variolation",

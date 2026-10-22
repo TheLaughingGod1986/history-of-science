@@ -16,10 +16,10 @@
   "picture_s": 100.833,
   "frames": 2420,
   "rough_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part01_rough_v01/hos_007_part01_rough_v01.mp4",
-  "sha256": "8db6614811860b38a9f09d8ce60ffd12dd14753d16682cc89288862ccf7414be",
-  "size_mb": 105.99,
+  "sha256": "61a5c039c96aa1b222aae686d391e2d949ffc53685d86561b8343bbce7288c6d",
+  "size_mb": 106.1,
   "proxy_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part01_rough_v01/hos_007_part01_rough_v01_uat_proxy.mp4",
-  "proxy_sha256": "9ccd5123bc90d583c652a92eb534161d43865bfbdc8def2e90688751d8851bf5",
+  "proxy_sha256": "21d21e804729e56823f4b53618eacbf029af0f61aaaa166e1a58416848b40b7e",
   "contact_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part01_rough_v01/hos_007_part01_rough_v01_contact_sheet.jpg",
   "overlays_applied": [
     {
@@ -69,9 +69,9 @@
   ],
   "freeze_events": [],
   "polish_gate_rc": 0,
-  "polish_gate_stdout": "01_cow_meadow     2.1s 01_cow_meadow_t1.mp4         ok\n02_doctor_case     7.9s 02_doctor_case_t1.mp4        ok\n03_table_three    15.3s 03_table_three_t1.mp4        WARN low detail: edge density 0.0154 < film p5 0.0284\n03b_globe_tease    21.1s 03_globe_lights_t1.mp4       ok\n04_church_dusk    26.2s 04_church_dusk_t1.mp4        ok\n07_map_shadows    32.2s code_graphic_007_p1_07_map_s ok\n07b_three_in_ten    37.1s 07b_three_in_ten_t1.mp4      ok\n07c_scarred    41.6s 07c_scarred_t1.mp4           ok\n05_quiet_lane    46.0s 05_quiet_lane_t1.mp4         ok\n06_shuttered_house    50.0s 06_shuttered_house_t1.mp4    ok\n08_bell_tower    54.0s 08_bell_tower_t1.mp4         ok\n09_churchyard    57.5s 09_churchyard_t1.mp4         ok\n09b_counted    61.4s 09b_counted_t1.mp4           ok\n09c_case_again    65.5s 02_doctor_case_t1.mp4        ok\n10_variolation    70.9s 10_variolation_t1.mp4        ok\n10b_milder    77.1s 10b_milder_t1.mp4            ok\n10c_doors_close    83.2s 10c_doors_close_t1.mp4       ok\n11_mother_window    89.6s 11_mother_window_t1.mp4      ok (reviewed_ok: split panel: vertical seam at 0.536, vertical seam at 0.578, vertical seam at 0.601)\n11b_child_cot    94.7s 11b_child_cot_t1.mp4         ok\n12_farm_gate    98.7s 12_farm_gate_t1.mp4          ok\npolish gate PASS: 0 of 20 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part01_rough_v01/polish_gate.json",
+  "polish_gate_stdout": "01_cow_meadow     2.1s 01_cow_meadow_t1.mp4         ok\n02_doctor_case     7.9s 02_doctor_case_t1.mp4        ok\n03_table_three    15.3s 03_table_three_t1.mp4        WARN low detail: edge density 0.0154 < film p5 0.0284\n03b_globe_tease    21.1s 03_globe_lights_t1.mp4       ok\n04_church_dusk    26.2s 04_church_dusk_t1.mp4        ok\n07_map_shadows    32.2s code_graphic_007_p1_07_map_s ok\n07b_three_in_ten    37.1s 07b_three_in_ten_t1.mp4      ok\n07c_scarred    41.6s 07c_scarred_t1.mp4           ok\n05_quiet_lane    46.0s 05_quiet_lane_t1.mp4         ok\n06_shuttered_house    50.0s 06_shuttered_house_t1.mp4    ok\n08_bell_tower    54.0s 08_bell_tower_t1.mp4         ok\n09_churchyard    57.5s 09_churchyard_t1.mp4         ok\n09b_counted    61.4s 09b_counted_t1.mp4           ok\n09c_case_again    65.5s 02_doctor_case_t1.mp4        ok\n10_variolation    70.9s 10_variolation_t1.mp4        ok\n10b_milder    77.1s 10b_milder_t1.mp4            ok\n10c_doors_close    83.2s 10c_doors_close_t1.mp4       ok\n11_mother_window    89.6s 11_mother_window_t1.mp4      ok (reviewed_ok: split panel: vertical seam at 0.536, vertical seam at 0.578, vertical seam at 0.601)\n11b_child_cot    94.7s 11b_child_cot_t1.mp4         ok\n12_farm_gate    98.7s 12_farm_gate_t1.mp4          ok\npolish gate PASS: 0 of 20 rows failed, 1 to look at -> /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part01_rough_v01/polish_gate.json",
   "picture_qa_rc": 0,
-  "picture_qa_stdout": "WARN   0:15 row 03_table_three 03_table_three_t1.mp4: low detail: edge density 0.0154 < film p5 0.0284\npicture QA PASS: 0 of 20 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part01_rough_v01/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part01_rough_v01/picture_qa_review.jpg",
+  "picture_qa_stdout": "WARN   0:15 row 03_table_three 03_table_three_t1.mp4: low detail: edge density 0.0154 < film p5 0.0284\npicture QA PASS: 0 of 20 cuts fail, 1 to look at -> /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part01_rough_v01/PICTURE_QA.md, /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part01_rough_v01/picture_qa_review.jpg",
   "segments": [
     {
       "row": "01_cow_meadow",
@@ -310,16 +310,16 @@
       "timeline_in": 63.375,
       "timeline_out": 67.7083,
       "frames": 104,
-      "upscale": 1.0,
+      "upscale": 1.88,
       "side_label": null,
       "overlays": [],
       "source": "02_doctor_case_t1.mp4",
       "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/raw/v01/02_doctor_case_t1.mp4",
       "source_sha256": "fb74f2389e28a414d4d01b74b9cc9f90dc1dd615ce1a0057936cf2f3480ceb07",
       "framing": {
-        "offset": 3.56
+        "offset": 1.2
       },
-      "disposition": "REUSE window 3.56-7.90 s of P1:02_doctor_case"
+      "disposition": "REUSE window 1.20-5.53 s of P1:02_doctor_case with tight 1.88x crop on lancet in velvet (J0827 \u00a30 fix)"
     },
     {
       "row": "10_variolation",

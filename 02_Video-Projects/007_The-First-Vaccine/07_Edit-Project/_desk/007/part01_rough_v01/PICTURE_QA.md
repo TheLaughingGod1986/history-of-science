@@ -8,7 +8,7 @@
 
 ## Passed on Claude's ruling
 
-- **1:06** row 09c_case_again · 02_doctor_case_t1.mp4 (Flow Veo 3.1 clip, Chief KEEP (J0352)): Board v02 reuse_of P1:02_doctor_case (3.56-7.90 s): 8 s Veo plate too short for a 10 s offset; reuse waived per Chief 16 Oct rule; £0 no mint.
+- **1:06** row 09c_case_again · 02_doctor_case_t1.mp4 (Flow Veo 3.1 clip, Chief KEEP (J0352)): Board v02 reuse_of P1:02_doctor_case: J0827 Fix 2 reframes 09c_case_again to tight 1.88x crop on silver lancet in crimson velvet (1.20-5.53 s); 8 s Veo plate reuse waived per Chief ruling.
 - **1:30** row 11_mother_window · 11_mother_window_t1.mp4 (Flow Veo 3.1 clip, Chief KEEP (J0352)): Georgian cottage window mullion in 3D cartoon plate 11_mother_window_t1.mp4 (Chief KEEP J0352), not a split-panel seam.
 
 Claude's own look still covers every cut on the per-row sheet: would a viewer trust this as a real, sharp, finished picture of what the sentence says?
