@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-21",
-  "updated_by": "gemini (J0352)",
+  "updated": "2026-10-22",
+  "updated_by": "gemini (J0827)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -275,7 +275,7 @@
       "title": "Why Vaccines Are Named After a Cow",
       "air": "2026-11-12",
       "ready_by": "2026-11-08",
-      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done. All 73/73 Flow rows of boards v02 are minted on Flow (J0352, 2,890 cr vs 7,550 cap; live Flow 20,900; 3 code graphics + 2 archive + 18 reuse = 96 rows). Contact sheets for Parts 01–05 are posted on desk #180 awaiting Chief STYLE/MOTION KEEP/FIX, then part roughs.",
+      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done. All 73/73 Flow rows of boards v02 are KEEP (Chief J0352, HOS PR #351 merged) and Part roughs v01 are Chief PASS (J0820). Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s, 97 cuts, sha256 `7cfd6a59`) is assembled on the locked VO with both £0 J0827 repeat-shot fixes (`P1:09c_case_again` 1.88x lancet crop; `P5:06c/06d` split into unused `04_health_workers` tail + 1.38x front-row crop), passing polish_gate + picture_qa (0 failed, 0 freezes); parked for Chief review.",
       "stages": {
         "topic": {
           "status": "done"
@@ -304,22 +304,29 @@
           "note": "B v02 25.5 s + C v02 24.8 s locked 12 Oct; Chief KEEP both (desk 6096257381, VO_LOCK_CHIEF_PASS_20261012.json)"
         },
         "picture": {
-          "status": "doing",
+          "status": "done",
           "due": "2026-11-01",
-          "note": "BOARD_V02 all 73/73 Flow rows minted on Flow (J0352, 21 Oct: P1 17/17 = 530 cr, P2 21/21 = 750 cr, P3 12/12 = 390 cr, P4 11/11 = 380 cr, P5 12/12 = 840 cr; total 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 £0 code graphics on main (`7808f751`); 2 archive + 18 reuse (£0). Contact sheets for Parts 01–05 on desk #180 awaiting Chief STYLE/MOTION KEEP/FIX.",
+          "note": "BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 £0 code graphics on main (`7808f751`); 2 archive + 18 reuse (£0).",
           "steps": [
             73,
             73
           ],
           "steps_unit": "Flow plates",
-          "owner": "Grok",
-          "since": "2026-10-21",
-          "waiting": "Chief STYLE/MOTION KEEP/FIX on Parts 01–05 contact sheets (desk #180, J0352), then part roughs",
-          "underway": false
+          "owner": "Grok"
         },
         "edit": {
-          "status": "todo",
-          "due": "2026-11-05"
+          "status": "doing",
+          "due": "2026-11-05",
+          "note": "Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled on locked VO across Parts 01–05 (J0827, 22 Oct, £0) with both £0 repeat-shot fixes (`P1:09c_case_again` 1.88x lancet crop; `P5:06c/06d` unused `04_health_workers` tail + 1.38x clapping front-row push-in). PASS polish_gate (0 failed, 5 WARNs) + picture_qa (0 failed, 5 WARNs), 0 freezes. Parked for Chief review.",
+          "steps": [
+            5,
+            5
+          ],
+          "steps_unit": "parts joined",
+          "owner": "Grok",
+          "since": "2026-10-22",
+          "waiting": "Chief review of full_join_v01 + REVIEW_v01.md (J0827)",
+          "underway": false
         },
         "thumbnails": {
           "status": "todo",

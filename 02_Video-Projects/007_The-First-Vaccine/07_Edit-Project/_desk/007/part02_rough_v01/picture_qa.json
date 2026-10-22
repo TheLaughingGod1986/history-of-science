@@ -1,0 +1,322 @@
+{
+  "verdict": "PASS",
+  "video": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part02_rough_v01/hos_007_part02_rough_v01.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 1,
+      "row": "02_healed_hand",
+      "source": "02_healed_hand_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 10.65,
+      "at": "0:11",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0309 < film p5 0.0312"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 2,
+      "row": "02b_well_again",
+      "source": "02b_well_again_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 16.77,
+      "at": "0:17",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0233 < film p5 0.0312"
+      ],
+      "offset": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "01_milking_dawn",
+      "source": "01_milking_dawn_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 3.62,
+      "at": "0:04",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 1,
+      "row": "02_healed_hand",
+      "source": "02_healed_hand_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 10.65,
+      "at": "0:11",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0309 < film p5 0.0312"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 2,
+      "row": "02b_well_again",
+      "source": "02b_well_again_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 16.77,
+      "at": "0:17",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0233 < film p5 0.0312"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 3,
+      "row": "04_village_a",
+      "source": "04_village_a_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 21.75,
+      "at": "0:22",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 4,
+      "row": "02c_laughs",
+      "source": "02c_laughs_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 26.62,
+      "at": "0:27",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 5,
+      "row": "03a_cap_and_pail",
+      "source": "03a_cap_and_pail_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 32.38,
+      "at": "0:32",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 6,
+      "row": "03_market_walk",
+      "source": "03_market_walk_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 38.6,
+      "at": "0:39",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 7,
+      "row": "05_village_b",
+      "source": "05_village_b_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 44.23,
+      "at": "0:44",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 8,
+      "row": "05b_gate_again",
+      "source": "12_farm_gate_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 48.29,
+      "at": "0:48",
+      "fail": [],
+      "warn": [],
+      "offset": 4.84
+    },
+    {
+      "cut": 9,
+      "row": "06_jesty_family",
+      "source": "06_jesty_family_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 52.21,
+      "at": "0:52",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 10,
+      "row": "06b_jesty_hands",
+      "source": "06b_jesty_hands_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 57.75,
+      "at": "0:58",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 11,
+      "row": "07_jesty_table",
+      "source": "07_jesty_table_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 64.4,
+      "at": "1:04",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 12,
+      "row": "08a_berkeley",
+      "source": "08a_berkeley_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 70.4,
+      "at": "1:10",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 13,
+      "row": "08_jenner_window",
+      "source": "08_jenner_window_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 76.48,
+      "at": "1:16",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 14,
+      "row": "09_cuckoo",
+      "source": "09_cuckoo_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 81.35,
+      "at": "1:21",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 15,
+      "row": "10_balloon",
+      "source": "10_balloon_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 86.02,
+      "at": "1:26",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 16,
+      "row": "10b_pail_on_desk",
+      "source": "10b_pail_on_desk_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 91.88,
+      "at": "1:32",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 17,
+      "row": "11_young_jenner",
+      "source": "11_young_jenner_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 98.15,
+      "at": "1:38",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 18,
+      "row": "12_hunter_letter",
+      "source": "12_hunter_letter_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 105.52,
+      "at": "1:46",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 19,
+      "row": "12b_try_it",
+      "source": "12b_try_it_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 112.83,
+      "at": "1:53",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 20,
+      "row": "13_casebook",
+      "source": "13_casebook_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 120.25,
+      "at": "2:00",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 21,
+      "row": "14_explorer_stool",
+      "source": "14_explorer_stool_t1.mp4",
+      "title": "Flow Veo 3.1 clip, Chief KEEP (J0352)",
+      "t": 126.79,
+      "at": "2:07",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0312,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}
