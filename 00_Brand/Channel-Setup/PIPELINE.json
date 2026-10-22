@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-22",
-  "updated_by": "gemini (J0835)",
+  "updated_by": "claude (acting Chief)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Master v01 with original \u00a30 HOS score and house SFX built; machine gates pass, awaiting Chief listening review (J0835). Ben watch due 1 Nov.",
+      "summary": "Master v01 passed the Chief (22 Oct) and is merged; copy to HOS UAT for Ben's watch (J0857), thumbnails next (J0858). Ben watch due 1 Nov.",
       "stages": {
         "topic": {
           "status": "done"
@@ -249,13 +249,12 @@
           "note": "All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180)."
         },
         "edit": {
-          "status": "blocked",
+          "status": "done",
           "due": "2026-10-29",
-          "note": "J0835 master v01: -14 LUFS/-1.5 dBTP; picture unchanged; music (66.7 BPM, 0 pace WARN) / SFX (24 hits) / picture / polish / episode gates pass; NAS SHA verified. Parked for Chief; not an approved film stage.",
+          "note": "master v01 Chief PASS 22 Oct (J0835): \u00a30 score + 24 SFX, -14.0 LUFS/-1.5 dBTP, HOS #356 merged 1946ac4d",
           "jobs": [
             "J0835"
           ],
-          "owner": "claude",
           "since": "2026-10-22T20:07",
           "underway": false,
           "steps": [
@@ -269,7 +268,9 @@
         },
         "thumbnails": {
           "status": "todo",
-          "due": "2026-10-29"
+          "due": "2026-10-29",
+          "owner": "Mac mini",
+          "note": "concepts + Flow price for the Chief (J0858), due 29 Oct"
         },
         "ben_ok": {
           "status": "todo",
