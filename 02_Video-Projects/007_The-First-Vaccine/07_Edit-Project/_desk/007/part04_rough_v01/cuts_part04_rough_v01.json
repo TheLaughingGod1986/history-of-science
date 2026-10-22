@@ -1,0 +1,365 @@
+[
+  {
+    "row": "01_page_turns",
+    "film_t": 314.93,
+    "timeline_in": 0.0,
+    "timeline_out": 2.875,
+    "frames": 69,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [
+      "p4_ch",
+      "p4_when_july1"
+    ],
+    "source": "05_quill_writes_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/05_quill_writes_t1.mp4",
+    "source_sha256": "b3d3ed334f9fddb2d582d0a882c9b21c0564063565c1558cdc33cf3b4dbc8cc3",
+    "framing": {
+      "offset": 2.0
+    },
+    "disposition": "REUSE window 2.00-4.88 s of P3:05_quill_writes"
+  },
+  {
+    "row": "02_variolation_calm",
+    "film_t": 317.81,
+    "timeline_in": 2.875,
+    "timeline_out": 9.0,
+    "frames": 147,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [],
+    "source": "02_variolation_calm_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/02_variolation_calm_t1.mp4",
+    "source_sha256": "8fa75e361f2faabb202178c81a8900b5147c6532c3f559171ea05677c54acda4",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Quality t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "03_waiting",
+    "film_t": 323.93,
+    "timeline_in": 9.0,
+    "timeline_out": 14.125,
+    "frames": 123,
+    "upscale": 1.0,
+    "side_label": "WAITING (on the word, +3.6 s)",
+    "overlays": [
+      "p4_waiting"
+    ],
+    "source": "03_waiting_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/03_waiting_t1.mp4",
+    "source_sha256": "ae0ee687b0ae58f044a69ac188888fd8190f39c433c15626e5b53a0c7a333aec",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Quality t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "04_day_one",
+    "film_t": 329.07,
+    "timeline_in": 14.125,
+    "timeline_out": 16.7083,
+    "frames": 62,
+    "upscale": 1.5,
+    "side_label": null,
+    "overlays": [
+      "p4_day_one"
+    ],
+    "source": "04_day_one_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/04_day_one_t1.mp4",
+    "source_sha256": "9fa49d7db50775c296f0f19f4dbd10db970acedade79f147ca06040a05445117",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "05_days_pass",
+    "film_t": 331.63,
+    "timeline_in": 16.7083,
+    "timeline_out": 19.9583,
+    "frames": 78,
+    "upscale": 1.5,
+    "side_label": null,
+    "overlays": [
+      "p4_one_week"
+    ],
+    "source": "05_days_pass_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/05_days_pass_t1.mp4",
+    "source_sha256": "5b93799c73c567a75c9c51aafa8c6e7da52f57dbcfd2f99f2b5d6be22156c0ef",
+    "framing": {
+      "offset": 4.5
+    },
+    "disposition": "KEEP Flow Fast t1 trimmed to clean back half 4.50-7.76 s per J0820 brief"
+  },
+  {
+    "row": "06_line_underlined",
+    "film_t": 334.89,
+    "timeline_in": 19.9583,
+    "timeline_out": 23.5417,
+    "frames": 86,
+    "upscale": 1.5,
+    "side_label": null,
+    "overlays": [
+      "p4_no_disease"
+    ],
+    "source": "06_line_underlined_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/06_line_underlined_t1.mp4",
+    "source_sha256": "819038ef60b7cffb90f821c8d1321b9611749b6590210f83e39a0534da62a661",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "06b_still_nothing",
+    "film_t": 338.49,
+    "timeline_in": 23.5417,
+    "timeline_out": 28.7917,
+    "frames": 126,
+    "upscale": 1.5,
+    "side_label": null,
+    "overlays": [],
+    "source": "06b_still_nothing_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/06b_still_nothing_t1.mp4",
+    "source_sha256": "43d559983f4ab96280da6f98700948acfb59042d980bc4ff580079a012ae7bbd",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "07_jesty_again",
+    "film_t": 343.73,
+    "timeline_in": 28.7917,
+    "timeline_out": 35.5417,
+    "frames": 162,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [
+      "p4_22_years"
+    ],
+    "source": "06_jesty_family_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/raw/v01/06_jesty_family_t1.mp4",
+    "source_sha256": "3581d3d667c03034dda59fd3834c66b43a28bde082a1e0ae45f9f547457ab3ab",
+    "framing": {
+      "offset": 1.14
+    },
+    "disposition": "REUSE window 1.14-7.90 s of P2:06_jesty_family"
+  },
+  {
+    "row": "07b_quill_again",
+    "film_t": 350.49,
+    "timeline_in": 35.5417,
+    "timeline_out": 39.3333,
+    "frames": 91,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [],
+    "source": "05_quill_writes_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/05_quill_writes_t1.mp4",
+    "source_sha256": "b3d3ed334f9fddb2d582d0a882c9b21c0564063565c1558cdc33cf3b4dbc8cc3",
+    "framing": {
+      "offset": 4.14
+    },
+    "disposition": "REUSE window 4.14-7.90 s of P3:05_quill_writes"
+  },
+  {
+    "row": "07c_cases_again",
+    "film_t": 354.25,
+    "timeline_in": 39.3333,
+    "timeline_out": 45.0,
+    "frames": 136,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [],
+    "source": "13_casebook_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/raw/v01/13_casebook_t1.mp4",
+    "source_sha256": "e990851701f671f8301ddc56d73b28e01c5361980fc948a43c14148ed1a760e5",
+    "framing": {
+      "offset": 2.22
+    },
+    "disposition": "REUSE window 2.22-7.90 s of P2:13_casebook"
+  },
+  {
+    "row": "08_soho_press",
+    "film_t": 359.93,
+    "timeline_in": 45.0,
+    "timeline_out": 50.3333,
+    "frames": 128,
+    "upscale": 1.5,
+    "side_label": null,
+    "overlays": [
+      "p4_soho_1798"
+    ],
+    "source": "08_soho_press_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/08_soho_press_t1.mp4",
+    "source_sha256": "a2a52c7bca50e06934816ba2fc5ef5534e98c553422231b5694de1dd3fa6caba",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "08b_title_page",
+    "film_t": 365.27,
+    "timeline_in": 50.3333,
+    "timeline_out": 55.0833,
+    "frames": 114,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [
+      "p4_inquiry_credit"
+    ],
+    "source": "archive_007_p4_08b_title_page_v01.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/special_assets_v01/archive_007_p4_08b_title_page_v01.mp4",
+    "source_sha256": "ebae8a345f8e09282b934b7f725abd868727c84ed017bba0f5da26ca54e38086",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "Public domain archive scan (\u00a30, archive_007_p4_08b_title_page_v01.mp4)"
+  },
+  {
+    "row": "08c_cow_again",
+    "film_t": 370.01,
+    "timeline_in": 55.0833,
+    "timeline_out": 58.375,
+    "frames": 79,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [],
+    "source": "01_cow_meadow_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part01/raw/v01/01_cow_meadow_t1.mp4",
+    "source_sha256": "91a222ea37f0c6e91552ef5bb9ae5685c2d5bb4881f6fd026d2d72e4561a08ef",
+    "framing": {
+      "offset": 4.6
+    },
+    "disposition": "REUSE window 4.60-7.90 s of P1:01_cow_meadow"
+  },
+  {
+    "row": "12_explorer_press",
+    "film_t": 373.31,
+    "timeline_in": 58.375,
+    "timeline_out": 64.8333,
+    "frames": 155,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [],
+    "source": "12_explorer_press_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/12_explorer_press_t1.mp4",
+    "source_sha256": "a6710a3fd176c3dbd3b47092fdcd0c89968f724313eb6f470856f72105e23281",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Quality t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "08d_doctors_scoff",
+    "film_t": 379.75,
+    "timeline_in": 64.8333,
+    "timeline_out": 69.0,
+    "frames": 100,
+    "upscale": 1.5,
+    "side_label": null,
+    "overlays": [],
+    "source": "08d_doctors_scoff_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/08d_doctors_scoff_t1.mp4",
+    "source_sha256": "0ae815e8c2c93527329c5a78de4baadb4ecdef65155f9975a62d98d183c648e5",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "09_satire",
+    "film_t": 383.95,
+    "timeline_in": 69.0,
+    "timeline_out": 73.4583,
+    "frames": 107,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [
+      "p4_gillray_credit"
+    ],
+    "source": "archive_007_p4_09_satire_v01.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/special_assets_v01/archive_007_p4_09_satire_v01.mp4",
+    "source_sha256": "8c2b26f8a2da277e177de1d0cd53585e4dc2df16b99d058193d1c9284e1ee83f",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "Public domain archive scan (\u00a30, archive_007_p4_09_satire_v01.mp4)"
+  },
+  {
+    "row": "09b_boy_well",
+    "film_t": 388.39,
+    "timeline_in": 73.4583,
+    "timeline_out": 76.6667,
+    "frames": 77,
+    "upscale": 1.0,
+    "side_label": null,
+    "overlays": [],
+    "source": "07_playing_garden_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/07_playing_garden_t1.mp4",
+    "source_sha256": "b0f0c380b6fbc9c69e6d37a62a22767c4e2cb9f7653a363edb5043071b7af1ce",
+    "framing": {
+      "offset": 4.68
+    },
+    "disposition": "REUSE window 4.68-7.90 s of P3:07_playing_garden"
+  },
+  {
+    "row": "10a_packets",
+    "film_t": 391.61,
+    "timeline_in": 76.6667,
+    "timeline_out": 80.1667,
+    "frames": 84,
+    "upscale": 1.5,
+    "side_label": null,
+    "overlays": [],
+    "source": "10a_packets_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/10a_packets_t1.mp4",
+    "source_sha256": "8a148ebdb3d4ccae7d639e1c6b641520698d5a4c46cdeccc6e26cb456771d04a",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "10_garden_hut",
+    "film_t": 395.09,
+    "timeline_in": 80.1667,
+    "timeline_out": 86.3333,
+    "frames": 148,
+    "upscale": 1.5,
+    "side_label": null,
+    "overlays": [
+      "p4_temple"
+    ],
+    "source": "10_garden_hut_t1.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part04/raw/v01/10_garden_hut_t1.mp4",
+    "source_sha256": "a253ebf9bd9844a37869d1b08730d8c90f5633deffc84f2296169d3deeeaddd8",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+  },
+  {
+    "row": "11_news_spreads",
+    "film_t": 401.27,
+    "timeline_in": 86.3333,
+    "timeline_out": 92.75,
+    "frames": 154,
+    "upscale": 1.0,
+    "side_label": "THE NEWS SPREADS",
+    "overlays": [
+      "p4_news_spreads"
+    ],
+    "source": "code_graphic_007_p4_11_news_spreads.mp4",
+    "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/special_assets_v01/code_graphic_007_p4_11_news_spreads.mp4",
+    "source_sha256": "64ea9c3455eac35c8e55df0fbe33d338c4a13a7fdfb815e5a9807f990d41c1cf",
+    "framing": {
+      "offset": 0.0
+    },
+    "disposition": "Code graphic v01 (\u00a30, code_graphic_007_p4_11_news_spreads.mp4)"
+  }
+]
