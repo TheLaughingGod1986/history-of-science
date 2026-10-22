@@ -1,0 +1,200 @@
+{
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.154,
+      "plate": "04_Generated-Clips/part02/raw/v01/05_heart_stove_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.154,
+      "t1": 7.027,
+      "plate": "04_Generated-Clips/part02/raw/v01/03_eat_to_liver_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "You"
+    },
+    {
+      "t0": 7.027,
+      "t1": 9.43,
+      "plate": "04_Generated-Clips/part02/raw/v01/03_eat_to_liver_t1.mp4",
+      "in_s": 4.2,
+      "crop_x": 656,
+      "lands_on": "liver"
+    },
+    {
+      "t0": 9.43,
+      "t1": 13.434,
+      "plate": "04_Generated-Clips/part02/raw/v01/04_veins_soak_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "Your"
+    },
+    {
+      "t0": 13.434,
+      "t1": 16.474,
+      "plate": "04_Generated-Clips/part02/raw/v01/04_veins_soak_t1.mp4",
+      "in_s": 4.3,
+      "crop_x": 656,
+      "lands_on": "and"
+    },
+    {
+      "t0": 16.474,
+      "t1": 20.335,
+      "plate": "04_Generated-Clips/part02/raw/v01/06_septum_holes_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "The"
+    },
+    {
+      "t0": 20.335,
+      "t1": 24.335,
+      "plate": "04_Generated-Clips/part02/raw/v01/05_heart_stove_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "overlays": [
+    {
+      "role": "hook",
+      "text": "NOT A PUMP",
+      "t0": 0.0,
+      "t1": 2.0
+    },
+    {
+      "role": "vo",
+      "text": "Here is what Galen",
+      "t0": 0.06,
+      "t1": 1.553
+    },
+    {
+      "role": "vo",
+      "text": "taught.",
+      "t0": 1.553,
+      "t1": 2.304
+    },
+    {
+      "role": "vo",
+      "text": "You eat.",
+      "t0": 2.304,
+      "t1": 3.692
+    },
+    {
+      "role": "vo",
+      "text": "Your food turns",
+      "t0": 3.692,
+      "t1": 5.052
+    },
+    {
+      "role": "vo",
+      "text": "into a milky",
+      "t0": 5.052,
+      "t1": 5.897
+    },
+    {
+      "role": "vo",
+      "text": "juice, and your",
+      "t0": 5.897,
+      "t1": 7.177
+    },
+    {
+      "role": "vo",
+      "text": "liver turns that juice",
+      "t0": 7.177,
+      "t1": 8.636
+    },
+    {
+      "role": "vo",
+      "text": "into blood.",
+      "t0": 8.636,
+      "t1": 9.58
+    },
+    {
+      "role": "vo",
+      "text": "Your veins",
+      "t0": 9.58,
+      "t1": 10.897
+    },
+    {
+      "role": "vo",
+      "text": "carry the blood out to",
+      "t0": 10.897,
+      "t1": 12.097
+    },
+    {
+      "role": "vo",
+      "text": "every part of you,",
+      "t0": 12.097,
+      "t1": 13.584
+    },
+    {
+      "role": "vo",
+      "text": "and your flesh soaks it",
+      "t0": 13.584,
+      "t1": 15.031
+    },
+    {
+      "role": "vo",
+      "text": "up as nourishment.",
+      "t0": 15.031,
+      "t1": 16.624
+    },
+    {
+      "role": "vo",
+      "text": "The heart wasn't",
+      "t0": 16.624,
+      "t1": 18.165
+    },
+    {
+      "role": "vo",
+      "text": "a pump at all.",
+      "t0": 18.165,
+      "t1": 19.592
+    },
+    {
+      "role": "vo",
+      "text": "It was a warm",
+      "t0": 19.592,
+      "t1": 20.725
+    },
+    {
+      "role": "vo",
+      "text": "stove, and its",
+      "t0": 20.725,
+      "t1": 22.065
+    },
+    {
+      "role": "vo",
+      "text": "job was to heat the",
+      "t0": 22.065,
+      "t1": 23.178
+    },
+    {
+      "role": "vo",
+      "text": "blood.",
+      "t0": 23.178,
+      "t1": 23.975
+    },
+    {
+      "role": "title",
+      "text": "The Tied Arm That Proved Your Blood Circulates",
+      "t0": 9.0,
+      "t1": 14.0
+    },
+    {
+      "role": "cta",
+      "text": "watch the full film \u2192",
+      "t0": 20.335,
+      "t1": 24.255
+    },
+    {
+      "role": "who",
+      "text": "GALEN \u00b7 Rome, c. AD 170",
+      "t0": 2.2,
+      "t1": 5.6
+    }
+  ]
+}

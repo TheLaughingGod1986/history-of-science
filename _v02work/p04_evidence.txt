@@ -1,0 +1,24 @@
+v01 c7de24b10684390e543d088ffe56fb182224e75b27cd7f3a8a6c7cedc05ca087 128.24 freeze 0
+v02 cc113090599ada3145b996ec73537b9c922c2b263906bafc2b9a9353fc050e51 130.017 freeze 0 vo 02_Voiceover/part04_the_tied_arm_v02.mp3 64300dcbb691
+01_college_demo          part_t0 0.0 -> 0.0  same plate
+02_linen_tie             part_t0 5.567 -> 5.567  same plate
+03_hand_pale             part_t0 13.467 -> 13.467  CHANGED sha256,use_s
+04_stopped_loosen        part_t0 19.533 -> 21.3  CHANGED sha256
+05_arteries_veins_shut   part_t0 25.933 -> 27.7  CHANGED sha256
+06_veins_swell           part_t0 33.833 -> 35.6  CHANGED use_s
+07_in_out_doors          part_t0 41.067 -> 42.867  same plate
+08_knots_valve           part_t0 47.967 -> 49.767  same plate
+09_push_stops            part_t0 55.867 -> 57.667  CHANGED use_s
+10_slides_heart          part_t0 63.733 -> 65.5  CHANGED use_s
+11_two_fingers           part_t0 68.733 -> 70.533  CHANGED use_s
+12_stays_fills           part_t0 72.7 -> 74.467  CHANGED use_s
+13_one_way               part_t0 80.067 -> 81.867  CHANGED use_s
+14_steering_home         part_t0 86.3 -> 88.067  CHANGED use_s
+15_your_hand_glow        part_t0 92.267 -> 94.067  same plate
+16_press_book            part_t0 100.167 -> 101.967  same plate
+17_whispers              part_t0 108.067 -> 109.867  same plate
+18_aubrey                part_t0 115.967 -> 117.767  same plate
+19_gap_open              part_t0 122.267 -> 124.067  same plate
+v01 LUFS I / LRA / TP ('-18.8', '4.8', '-2.3')
+v02 LUFS I / LRA / TP ('-20.2', '4.8', '-2.3')
+sheet /Users/benjaminoats/YouTube/hos-005-blood/_v02work/ev/p04v02_arm_sheet.jpg

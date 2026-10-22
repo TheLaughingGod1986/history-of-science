@@ -1,0 +1,30 @@
+Moved to NAS on 2026-10-21 by Gemini (J0795, Ben approved): rsync -a + SHA-256 verified before local removal.
+Local: /Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/07_Edit-Project/_join_full_work
+NAS path: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/_join_full_work
+Manifest: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/MANIFEST__join_full_work.sha256 (118 files, 1365045283 bytes)
+
+Moved to NAS on 2026-10-21 by Gemini (J0795, Ben approved): rsync -a + SHA-256 verified before local removal.
+Local: /Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/07_Edit-Project/_part04_rough_v02_work
+NAS path: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/_part04_rough_v02_work
+Manifest: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/MANIFEST__part04_rough_v02_work.sha256 (30 files, 258716195 bytes)
+
+Moved to NAS on 2026-10-21 by Gemini (J0795, Ben approved): rsync -a + SHA-256 verified before local removal.
+Local: /Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/07_Edit-Project/_part04_rough_v01_work
+NAS path: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/_part04_rough_v01_work
+Manifest: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/MANIFEST__part04_rough_v01_work.sha256 (30 files, 250858545 bytes)
+
+Moved to NAS on 2026-10-21 by Gemini (J0795, Ben approved): rsync -a + SHA-256 verified before local removal.
+Local: /Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/07_Edit-Project/_part02_rough_v01_work
+NAS path: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/_part02_rough_v01_work
+Manifest: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/MANIFEST__part02_rough_v01_work.sha256 (25 files, 232749293 bytes)
+
+Moved to NAS on 2026-10-21 by Gemini (J0795, Ben approved): rsync -a + SHA-256 verified before local removal.
+Local: /Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/07_Edit-Project/_part02_rough_v02_work
+NAS path: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/_part02_rough_v02_work
+Manifest: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/MANIFEST__part02_rough_v02_work.sha256 (25 files, 228848355 bytes)
+
+Moved to NAS on 2026-10-21 by Gemini (J0795, Ben approved): rsync -a + SHA-256 verified before local removal.
+Local: /Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/07_Edit-Project/_part05_rough_v01_work
+NAS path: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/_part05_rough_v01_work
+Manifest: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/MANIFEST__part05_rough_v01_work.sha256 (26 files, 216783564 bytes)
+

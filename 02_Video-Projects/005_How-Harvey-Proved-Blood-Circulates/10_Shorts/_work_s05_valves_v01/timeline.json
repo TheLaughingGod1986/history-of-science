@@ -1,0 +1,208 @@
+{
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.29,
+      "plate": "04_Generated-Clips/part04/raw/v01/13_one_way_t3.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.29,
+      "t1": 5.698,
+      "plate": "04_Generated-Clips/part04/raw/v01/06_veins_swell_t1.mp4",
+      "in_s": 4.0,
+      "crop_x": 750,
+      "lands_on": "Along"
+    },
+    {
+      "t0": 5.698,
+      "t1": 9.97,
+      "plate": "04_Generated-Clips/part04/raw/v01/08_knots_valve_t4.mp4",
+      "in_s": 0.1,
+      "crop_x": 656,
+      "lands_on": "Each"
+    },
+    {
+      "t0": 9.97,
+      "t1": 12.987,
+      "plate": "04_Generated-Clips/part04/raw/v01/09_push_stops_t3.mp4",
+      "in_s": 0.3,
+      "crop_x": 800,
+      "lands_on": "Harvey"
+    },
+    {
+      "t0": 12.987,
+      "t1": 15.277,
+      "plate": "04_Generated-Clips/part04/raw/v01/09_push_stops_t3.mp4",
+      "in_s": 3.4,
+      "crop_x": 800,
+      "lands_on": "pushes"
+    },
+    {
+      "t0": 15.277,
+      "t1": 18.103,
+      "plate": "04_Generated-Clips/part04/raw/v01/08_knots_valve_t4.mp4",
+      "in_s": 4.6,
+      "crop_x": 656,
+      "lands_on": "It"
+    },
+    {
+      "t0": 18.103,
+      "t1": 19.69,
+      "plate": "04_Generated-Clips/part04/raw/v01/10_slides_heart_t3.mp4",
+      "in_s": 0.5,
+      "crop_x": 1100,
+      "lands_on": "He"
+    },
+    {
+      "t0": 19.69,
+      "t1": 23.69,
+      "plate": "04_Generated-Clips/part04/raw/v01/13_one_way_t3.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "overlays": [
+    {
+      "role": "hook",
+      "text": "DOORS IN VEINS",
+      "t0": 0.0,
+      "t1": 2.0
+    },
+    {
+      "role": "vo",
+      "text": "Now the little",
+      "t0": 0.06,
+      "t1": 1.347
+    },
+    {
+      "role": "vo",
+      "text": "doors.",
+      "t0": 1.347,
+      "t1": 2.44
+    },
+    {
+      "role": "vo",
+      "text": "Along the swollen",
+      "t0": 2.44,
+      "t1": 3.507
+    },
+    {
+      "role": "vo",
+      "text": "veins you can see small",
+      "t0": 3.507,
+      "t1": 5.027
+    },
+    {
+      "role": "vo",
+      "text": "knots.",
+      "t0": 5.027,
+      "t1": 5.848
+    },
+    {
+      "role": "vo",
+      "text": "Each one is a",
+      "t0": 5.848,
+      "t1": 6.8
+    },
+    {
+      "role": "vo",
+      "text": "valve, the",
+      "t0": 6.8,
+      "t1": 7.933
+    },
+    {
+      "role": "vo",
+      "text": "flaps Fabricius",
+      "t0": 7.933,
+      "t1": 9.333
+    },
+    {
+      "role": "vo",
+      "text": "found.",
+      "t0": 9.333,
+      "t1": 10.12
+    },
+    {
+      "role": "vo",
+      "text": "Harvey presses a",
+      "t0": 10.12,
+      "t1": 11.617
+    },
+    {
+      "role": "vo",
+      "text": "finger on a vein and",
+      "t0": 11.617,
+      "t1": 13.137
+    },
+    {
+      "role": "vo",
+      "text": "pushes the blood towards the",
+      "t0": 13.137,
+      "t1": 14.712
+    },
+    {
+      "role": "vo",
+      "text": "hand.",
+      "t0": 14.712,
+      "t1": 15.427
+    },
+    {
+      "role": "vo",
+      "text": "It stops dead at",
+      "t0": 15.427,
+      "t1": 16.94
+    },
+    {
+      "role": "vo",
+      "text": "the next valve.",
+      "t0": 16.94,
+      "t1": 18.253
+    },
+    {
+      "role": "vo",
+      "text": "He pushes it the other",
+      "t0": 18.253,
+      "t1": 19.56
+    },
+    {
+      "role": "vo",
+      "text": "way, towards the",
+      "t0": 19.56,
+      "t1": 20.453
+    },
+    {
+      "role": "vo",
+      "text": "heart, and it",
+      "t0": 20.453,
+      "t1": 21.56
+    },
+    {
+      "role": "vo",
+      "text": "slides through easily.",
+      "t0": 21.56,
+      "t1": 23.33
+    },
+    {
+      "role": "title",
+      "text": "The Tied Arm That Proved Your Blood Circulates",
+      "t0": 9.0,
+      "t1": 14.0
+    },
+    {
+      "role": "cta",
+      "text": "watch the full film \u2192",
+      "t0": 19.69,
+      "t1": 23.61
+    },
+    {
+      "role": "who",
+      "text": "FABRICIUS \u00b7 Padua, c. 1600",
+      "t0": 5.5,
+      "t1": 8.95
+    }
+  ]
+}

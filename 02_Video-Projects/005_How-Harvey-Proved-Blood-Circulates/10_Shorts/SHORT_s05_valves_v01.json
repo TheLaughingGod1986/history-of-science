@@ -1,0 +1,154 @@
+{
+  "id": "s05_valves",
+  "job": "J0254",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-29",
+  "file": "10_Shorts/hos_005_s05_valves_v01.mp4",
+  "sha256": "bea80a80838c2c72afa02dc409a978ecc7467749566484929c733aee8e7814cd",
+  "duration_s": 23.7,
+  "vo_source": "02_Voiceover/part04_the_tied_arm_v01_raw.mp3",
+  "vo_window_raw_s": [
+    46.0,
+    69.9
+  ],
+  "vo_s": 23.14,
+  "words": 57,
+  "max_pause_s": 0.6,
+  "bed": "hos005-part04-temp_score_bed_v01.mp3",
+  "bed_gain_db": -21.6,
+  "hook": "DOORS IN VEINS",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 86.6
+  },
+  "who_card": {
+    "name": "FABRICIUS",
+    "line2": "Padua, c. 1600",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 5.5,
+    "out_s": 8.95,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "youtube_title_draft": "Why Do Veins Have Valves?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.29,
+      "plate": "04_Generated-Clips/part04/raw/v01/13_one_way_t3.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.29,
+      "t1": 5.698,
+      "plate": "04_Generated-Clips/part04/raw/v01/06_veins_swell_t1.mp4",
+      "in_s": 4.0,
+      "crop_x": 750,
+      "lands_on": "Along"
+    },
+    {
+      "t0": 5.698,
+      "t1": 9.97,
+      "plate": "04_Generated-Clips/part04/raw/v01/08_knots_valve_t4.mp4",
+      "in_s": 0.1,
+      "crop_x": 656,
+      "lands_on": "Each"
+    },
+    {
+      "t0": 9.97,
+      "t1": 12.987,
+      "plate": "04_Generated-Clips/part04/raw/v01/09_push_stops_t3.mp4",
+      "in_s": 0.3,
+      "crop_x": 800,
+      "lands_on": "Harvey"
+    },
+    {
+      "t0": 12.987,
+      "t1": 15.277,
+      "plate": "04_Generated-Clips/part04/raw/v01/09_push_stops_t3.mp4",
+      "in_s": 3.4,
+      "crop_x": 800,
+      "lands_on": "pushes"
+    },
+    {
+      "t0": 15.277,
+      "t1": 18.103,
+      "plate": "04_Generated-Clips/part04/raw/v01/08_knots_valve_t4.mp4",
+      "in_s": 4.6,
+      "crop_x": 656,
+      "lands_on": "It"
+    },
+    {
+      "t0": 18.103,
+      "t1": 19.69,
+      "plate": "04_Generated-Clips/part04/raw/v01/10_slides_heart_t3.mp4",
+      "in_s": 0.5,
+      "crop_x": 1100,
+      "lands_on": "He"
+    },
+    {
+      "t0": 19.69,
+      "t1": 23.69,
+      "plate": "04_Generated-Clips/part04/raw/v01/13_one_way_t3.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_005_s05_valves_v01.mp4  dur=23.7s  audio=-23.8dB  motion=12.76  dhash=fe1f96eb9c6028aa\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s05_valves_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_005_s05_valves_v01.mp4  0:23.70  mean -23.8 dB  peak -3.9 dB  144 wpm\n   warn  pace 144 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed\n   warn  replace at ~0:07.92: script 'valve the flaps fabricius found harvey presses' / heard 'valve the flaps fabriceus found harvey presses' \u2014 sounds alike (likely the transcriber); listen"
+  },
+  "freezedetect_starts": [],
+  "stills": [
+    "10_Shorts/_work_s05_valves_v01/hos_005_s05_valves_v01_t000.0.jpg",
+    "10_Shorts/_work_s05_valves_v01/hos_005_s05_valves_v01_t003.5.jpg",
+    "10_Shorts/_work_s05_valves_v01/hos_005_s05_valves_v01_t011.5.jpg",
+    "10_Shorts/_work_s05_valves_v01/hos_005_s05_valves_v01_t022.7.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-15",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "why do veins have valves",
+      "what are valves in veins",
+      "how do valves in veins work",
+      "valves in veins"
+    ],
+    "no_hits": [
+      "what do valves in veins do (only 'done'/'does' variants)",
+      "who discovered valves in veins (only '... of heart')"
+    ],
+    "note": "'Why Do Veins Have Valves?' is an exact hit; the lifted VO answers it: each valve stops blood pushed towards the hand and lets it slide through towards the heart. Alt: 'How Do Valves in Veins Work?'. Chief's call."
+  },
+  "air_date_draft_note": "2026-11-29 used for the gate only (clear of 005 A 30 Oct, s04 31 Oct, B 8 Nov, C 15 Nov); slot is Chief's call",
+  "who_card_note": "card 5.5-8.95 s over 08_knots_valve_t4 (Fabricius's vein drawing, no figure on screen) while 'Each one is a valve, the flaps Fabricius found.' is spoken; the name lands at ~8.5 s, so the card leads the name by ~3 s to stay clear of the 9-14 s title. Line two from the long's Part 02 VO ('Around sixteen hundred, in Padua') and label FABRICIUS \u00b7 PADUA",
+  "vo_note": "Stretch from part04_the_tied_arm_v01_raw (46.5-69.5 s). The long's Part 04 v02/v03 fix replaced only the 'artery throbs' sentence (part 13.5-18 s), so this stretch is the long's own take. vo_check warn 'fabriceus' is the transcriber.",
+  "plates_keep_source": "07_Edit-Project/_desk/part04_report_2026-10-02.md KEEP table",
+  "overlap_note": "No overlap with s01 (sum), s02 (tied arm swelling), s03 (capillaries), s04 (Galen stove): this is the valve push test."
+}

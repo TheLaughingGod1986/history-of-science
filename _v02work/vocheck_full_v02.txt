@@ -1,0 +1,10 @@
+PASS  hos_005_full_join_v02.mp4  8:48.30  mean -21.8 dB  peak -2.1 dB  143 wpm
+   first minute: title_question 49.6s  promise 15.94s
+   warn  silence 22.42s at 8:25.86 (part join?)
+   warn  pace 143 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+   warn  replace at ~2:07.42: script 'old professor called fabricius fabricius had found something' / heard 'old professor called fabrizius fabrizius had found something' — sounds alike (likely the transcriber); listen
+   warn  replace at ~2:20.20: script 'vein need doors fabricius thought they slowed' / heard 'vein need doors fabrizius thought they slowed' — sounds alike (likely the transcriber); listen
+   warn  replace at ~4:02.70: script 'of your blood round your body in' / heard 'of your blood around your body in' — sounds alike (likely the transcriber); listen
+   warn  replace at ~5:08.14: script 'valve the flaps fabricius found harvey presses' / heard 'valve the flaps fabriceus found harvey presses' — sounds alike (likely the transcriber); listen
+   warn  replace at ~5:37.00: script 'towards the heart fabricius thought they slowed' / heard 'towards the heart fabriceus thought they slowed' — sounds alike (likely the transcriber); listen
+   warn  replace at ~7:36.18: script 'wraps a cuff round your arm think' / heard 'wraps a cuff around your arm think' — sounds alike (likely the transcriber); listen

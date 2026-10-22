@@ -1,0 +1,5 @@
+Moved to NAS on 2026-10-21 by Gemini (J0795, Ben approved): rsync -a + SHA-256 verified before local removal.
+Local: /Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/_rejected_pass1
+NAS path: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/_rejected_pass1
+Manifest: /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/MANIFEST__rejected_pass1.sha256 (13 files, 213163873 bytes)
+
