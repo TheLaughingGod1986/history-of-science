@@ -1,0 +1,30 @@
+{
+  "cues": [
+    {
+      "start": 29.2083,
+      "kind": "tick",
+      "why": "07_map_shadows"
+    },
+    {
+      "start": 293.3747,
+      "kind": "tick",
+      "why": "08c_map_again"
+    },
+    {
+      "start": 395.5413,
+      "kind": "tick",
+      "why": "11_news_spreads"
+    },
+    {
+      "start": 422.4997,
+      "kind": "tick",
+      "why": "02b_news_again"
+    },
+    {
+      "start": 454.5413,
+      "kind": "tick",
+      "why": "08_body_learns"
+    }
+  ],
+  "source": "Own house HOS kit, no spend"
+}

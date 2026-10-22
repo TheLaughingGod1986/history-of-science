@@ -1,0 +1,10 @@
+{
+  "verdict": "PASS",
+  "vo_integrated": -16.1,
+  "sfx_integrated": -39.9,
+  "hits": 5,
+  "fails": [],
+  "warns": [
+    "present: 5 hits in 8.4 min (fewer than 1 a minute)"
+  ]
+}

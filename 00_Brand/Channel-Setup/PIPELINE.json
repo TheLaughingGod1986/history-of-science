@@ -317,17 +317,17 @@
         "edit": {
           "status": "doing",
           "due": "2026-11-05",
-          "note": "J0830: Chief-authorised \u00a30 synthesized chapter score + house SFX; preserve approved join picture, master and gates.",
+          "note": "J0830: original \u00a30 chamber score + house SFX level PASS (0 fails). Master mixed and video stream copied from approved join, master and separate stems SHA-verified on NAS /Volumes/data/mac-mini-archive/hos-007-vaccine/master_v01_J0830. Gates running detached; next worker reads CHECK_RESULTS then writes REVIEW, PR and parks for Chief.",
           "steps": [
-            0,
+            3,
             5
           ],
           "steps_unit": "master steps",
           "owner": "codex",
           "since": "2026-10-22",
-          "waiting": "",
+          "waiting": "tmux j0830-master-retry: gates running; no approval implied",
           "underway": true,
-          "left": "about 90 minutes"
+          "left": "detached QA running; next worker reads done file"
         },
         "thumbnails": {
           "status": "todo",
