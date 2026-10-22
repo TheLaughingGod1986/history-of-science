@@ -31,6 +31,11 @@
     },
     {
       "kind": "tick",
+      "start": 67.425,
+      "why": "code graphic: DATA counter: 0 -> 200 pounds of dried soil"
+    },
+    {
+      "kind": "tick",
       "start": 106.833,
       "why": "teach overlay: num_169"
     },
@@ -113,6 +118,16 @@
       "kind": "tick",
       "start": 380.208,
       "why": "teach overlay: timeline_d6"
+    },
+    {
+      "kind": "tick",
+      "start": 423.675,
+      "why": "code graphic: DATA pie chart: 50% Carbon (from air)"
+    },
+    {
+      "kind": "tick",
+      "start": 470.758,
+      "why": "code graphic: DATA specimen lens: CO2: 4 in 10,000"
     }
   ],
   "spend": "none"

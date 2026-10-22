@@ -30,12 +30,16 @@ OV_JSON = OV_PACK / "overlays_v01.json"
 SR = 48000
 FADE = 1.000
 TOTAL = 507.833333  # frame-exact duration of source HOS 006 v03
-BPM = 66.0  # gentle period harp, below Chief's 75 BPM ceiling
+BPM = 66.666667  # gentle period harp (0.900 s beat = 18 x 50 ms hops), below Chief's 75 BPM ceiling
 
 CHAPTER_CARDS = [(61.666667,"Five Years and Two Ounces","explain"),(178.666667,"The Air That Mint Repaired","awe"),(273.5,"Bubbles in the Sunlight","explain"),(365.416667,"Carbon From the Sky","awe")]
 WHOOSH_PASSES=[]
 RUMBLES=[]
-CODE_TICKS=[]
+CODE_TICKS=[
+    (67.425, "DATA counter: 0 -> 200 pounds of dried soil"),
+    (423.675, "DATA pie chart: 50% Carbon (from air)"),
+    (470.758, "DATA specimen lens: CO2: 4 in 10,000"),
+]
 
 GAIN_DB = {"tick": -1.5, "whoosh_card": -8.0, "whoosh_pass": -9.0, "rumble": -3.5}
 
@@ -98,7 +102,7 @@ def synthesize_raw_score(total_s: float) -> np.ndarray:
     for k in range(int(total_s/beat)):
         at=k*beat; i=int(at*SR); j=min(n,i+int(.85*SR));t=np.arange(j-i,dtype=np.float32)/SR
         chord=chords[int(at//12)%len(chords)];f=midi_hz(chord[[0,1,3,2,1,2][k%6]]+12)
-        amp=.018+.06*explain(at)
+        amp=.042+.058*explain(at)
         tone=amp*np.minimum(t/.015,1)*np.exp(-t/.25)*(np.sin(2*np.pi*f*t)+.16*np.sin(4*np.pi*f*t))
         out[i:j,0]+=tone*.7;out[i:j,1]+=tone*.6
     t=np.arange(n,dtype=np.float32)/SR

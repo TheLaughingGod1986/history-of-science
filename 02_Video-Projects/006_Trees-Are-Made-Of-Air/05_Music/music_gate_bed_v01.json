@@ -2,7 +2,7 @@
   "verdict": "PASS",
   "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/05_Music/trees006_score_bed_v01.mp3",
   "seconds": 507.8,
-  "bpm": 171.4,
+  "bpm": 66.7,
   "brief_pace": "Pace: 60-72 BPM",
   "fail": [],
   "warn": [
@@ -18,8 +18,7 @@
     "reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.wav to compare (OSError); download it or pass --others",
     "reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
     "reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
-    "reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
-    "pace: measured about 171.4 BPM against the brief's 60-72; Claude listens"
+    "reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others"
   ],
   "waived": [],
   "matches": [],

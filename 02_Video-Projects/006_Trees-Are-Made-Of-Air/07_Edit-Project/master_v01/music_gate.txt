@@ -1,2 +1,1 @@
-WARN pace: measured about 171.4 BPM against the brief's 60-72; Claude listens
-music gate PASS: trees006_score_bed_v01.mp3, 507.8 s, about 171.4 BPM, brief Pace: 60-72 BPM
+music gate PASS: trees006_score_bed_v01.mp3, 507.8 s, about 66.7 BPM, brief Pace: 60-72 BPM

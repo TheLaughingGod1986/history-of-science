@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-22",
-  "updated_by": "codex (J0835)",
+  "updated_by": "gemini (J0835)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -251,12 +251,12 @@
         "edit": {
           "status": "blocked",
           "due": "2026-10-29",
-          "note": "J0835 master v01: -14 LUFS/-1.5 dBTP; picture unchanged; music/SFX/picture/polish/episode gates pass; NAS SHA verified. Parked for Chief; not an approved film stage.",
+          "note": "J0835 master v01: -14 LUFS/-1.5 dBTP; picture unchanged; music (66.7 BPM, 0 pace WARN) / SFX (24 hits) / picture / polish / episode gates pass; NAS SHA verified. Parked for Chief; not an approved film stage.",
           "jobs": [
             "J0835"
           ],
           "owner": "claude",
-          "since": "2026-10-22T19:24",
+          "since": "2026-10-22T20:07",
           "underway": false,
           "steps": [
             5,
@@ -265,7 +265,7 @@
           "steps_unit": "master steps",
           "left": "Chief listening review",
           "eta": "",
-          "waiting": "Chief review: musical fit, tempo WARN, final PASS and Ben watch"
+          "waiting": "Chief review: musical fit, final PASS and Ben watch"
         },
         "thumbnails": {
           "status": "todo",

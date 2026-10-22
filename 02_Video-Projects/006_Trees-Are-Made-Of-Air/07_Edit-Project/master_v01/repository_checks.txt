@@ -9,7 +9,7 @@ STATUS.md and kanban/index.html match PIPELINE.json
 == ElevenLabs guard tests
 ...........
 ----------------------------------------------------------------------
-Ran 11 tests in 0.093s
+Ran 11 tests in 0.107s
 
 OK
 -- ElevenLabs guard tests: PASS
@@ -17,7 +17,7 @@ OK
 == vo_check word tests
 .....
 ----------------------------------------------------------------------
-Ran 5 tests in 0.025s
+Ran 5 tests in 0.003s
 
 OK
 -- vo_check word tests: PASS
@@ -29,11 +29,12 @@ Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
 
  RUN  v4.1.10 /private/tmp/J0835-hos-wt/07_Content-Ops
 
+ ✓ tests/hos-contract.test.ts (20 tests) 13ms
 
  Test Files  1 passed (1)
       Tests  20 passed (20)
-   Start at  19:18:22
-   Duration  1.30s (transform 166ms, setup 0ms, import 1.15s, tests 21ms, environment 0ms)
+   Start at  20:08:49
+   Duration  1.01s (transform 52ms, setup 0ms, import 871ms, tests 13ms, environment 0ms)
 
 -- contract tests: PASS
 
