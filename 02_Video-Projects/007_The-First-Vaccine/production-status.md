@@ -19,3 +19,28 @@
 - No Vertex/Veo/Flow minting on this film.
 - No spending.
 - Do not merge or touch desk PR #180 from this scaffold PR.
+
+
+## 22 Oct 2026 — J0830 candidate master (Codex)
+
+# HOS 007 master v01 — worker evidence for Chief (J0830)
+
+Original £0 warm chamber score at 60 BPM and HOS house ink ticks added under the locked VO. Approved join picture copied as a video stream with no edits. Chief authority: OWB #99 comment 6347492456, 22 Oct 2026. No spend, publishing or approval action.
+
+Master: `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v01_J0830/hos_007_master_v01.mp4`
+
+SHA-256: `e1880dd10bd627f0b36250eb688c6e3df8acd4f96fa7c46c740a834f96a31d83`. Duration 505.147 s. Separate VO, bed, SFX and mixed audio are SHA-verified in the same NAS folder; see MASTER_META_v01.json.
+
+Measured encoded master: **−14.0 LUFS, −2.0 dBTP**.
+
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -39.9 LUFS, 5 hits
+WARN present: 5 hits in 8.4 min (fewer than 1 a minute)
+music gate PASS: vaccine_score_bed_v01.mp3, 505.1 s, about None BPM, brief Pace: 58-64 BPM
+polish gate PASS: 0 of 97 rows failed, 5 to look at
+picture QA PASS: 0 of 97 cuts fail, 5 to look at
+Episode gate Decision: PASS; script 92.3/100
+```
+
+Full actual outputs: `07_Edit-Project/master_v01_pack/REVIEW_master_v01.md`. Chief audio fit and final review pending. No approved edit stage claimed.
