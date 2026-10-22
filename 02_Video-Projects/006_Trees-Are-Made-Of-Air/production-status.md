@@ -518,4 +518,22 @@ Script score: 93.7/100 · PASS (Decision: PASS — VO / Gemini Veo allowed)
 
 **STOP:** parked for Chief: `full_join_v02_teach` review & final OK. Nothing uploaded or scheduled.
 
+## 22 Oct 2026 — Long `full_join_v03_teach` (3 £0 Chief FIX items from J0809 applied, OWB J0826)
+
+- **Master:** `07_Edit-Project/full_join_v02_teach/hos_006_full_join_v03_teach.mp4` (and `hos_006_full_join_v02_teach.mp4`, `507.833 s`, `12,188` frames @ 24 fps, sha256 `9a8efcefd7a82f2c2128882e00e17ae0aa2d749891dc762a1f6addf80969f140`). Copied to iCloud `HOS UAT/hos_006_full_join_v03_teach.mp4` (and `hos_006_full_join_v02_teach.mp4`) and NAS `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/`.
+- **Fixes applied (£0, zero mints, no music bed, `REVIEW_v03.md`):**
+  1. **#33 (`22_shimmer_willow_v02`, `2:53.29–2:58.67`):** replaced `15_desk_candle_t1_above_desk_v03` tail repeat with unused window `2.625–8.000 s` (frames `63..192` = `129` frames) of `22_shimmer_willow_t1.mp4`, so `#33` stays 100% willow (`edge_density 0.1612`, `0` fail/warn).
+  2. **#62 (`11_night_jars_v02`, `5:30.46–5:38.29`):** replaced overlapping `18_dark_window_t1` `0.67–5.00 s` with `11_night_jars_t1.mp4` `2.75–8.00 s` (`140` frames, opening moonlit after the `0.0–2.3 s` bright-sun stretch) + `18_dark_window_t1.mp4` `4.00–6.00 s` (`48` frames, the stretch `#51` `0.00–4.00 s` does not show), keeping `#62` at `188` frames (`edge_density 0.0350`, `min_mean_luma 32.9 >= 28.0`, `0` fail/warn).
+  3. **#86 (`19_dots_crowd_cg_v01`, `7:50.46–7:54.46`):** shortened 5-word label `"4 in 10,000 · Carbon Dioxide"` to 4-word `"CO2: 4 in 10,000"` in house Didot italic.
+  4. **`REVIEW_v02.md` §4 note:** corrected `#26` (`15_desk_candle` at `2:18`) note to record that `15_desk_candle_t1_above_desk_v03.mp4` is our own crop, not a Veo Chief-KEEP plate.
+
+```
+polish gate PASS: 0 of 91 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/polish_gate.json
+picture QA PASS: 0 of 91 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/picture_qa_review.jpg
+Script score: 93.7/100 · PASS (Decision: PASS — VO / Gemini Veo allowed)
+```
+
+**STOP:** parked for Chief: `full_join_v03_teach` (`REVIEW_v03.md`) review & merge of PR #352. Nothing uploaded or scheduled.
+
+
 

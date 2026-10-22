@@ -540,9 +540,9 @@
     "framing": {
       "offset": 0.0
     },
-    "disposition": "KEEP 22_shimmer_willow_t1 (5.17-8.00s) + 15_desk_candle_t1_above_desk_v03 (0-2.54s) (J0809)",
+    "disposition": "KEEP 22_shimmer_willow_t1 (2.625-8.000s = 129f, all willow, no 15_desk_candle repeat) (J0826)",
     "part": 2,
-    "source_sha256": "58bdbce14472d7a7f3a9da92d9abe786e0baff8eb471328c746d34c7c67964b2"
+    "source_sha256": "d318244121999faf78b53cea3162191282c2f1e848cd3c0cffa57b831633deff"
   },
   {
     "row": "01_soil_to_sky",
@@ -1030,15 +1030,15 @@
     "timeline_in": 330.4583333333333,
     "timeline_out": 338.2916666666667,
     "frames": 188,
-    "upscale": 1.5,
+    "upscale": 1.0,
     "side_label": "AT NIGHT, LIKE US",
     "source": "11_night_jars_v02.mp4",
     "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/11_night_jars_v02.mp4",
-    "source_sha256": "d6c71497f7970213c65ba08b4eec54985a996dc799b5755d6990a4a8f2587e06",
+    "source_sha256": "607633ddc874807b6fc2a974d1a4ae1ea317b977c43d310480f7d77e69dc6492",
     "framing": {
       "offset": 0.0
     },
-    "disposition": "KEEP 11_night_jars_t1 (4.50-8.00s) + 18_dark_window_t1 moonlit window (J0809)",
+    "disposition": "KEEP 11_night_jars_t1 (2.75-8.00s -> 140f, opens moonlit) + 18_dark_window_t1 (4.00-6.00s = 48f, unused by #51) (J0826)",
     "part": 4
   },
   {
@@ -1442,7 +1442,7 @@
     "side_label": "4 IN 10,000",
     "source": "19_dots_crowd_cg_v01.mp4",
     "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/19_dots_crowd_cg_v01.mp4",
-    "source_sha256": "d1b8f25f8344d57b4f72b16267ecfb02d9bb9f858a3dc3812a39fa256de817b1",
+    "source_sha256": "a75baed0b9f0745b474dbc4c17555715dea0b04a5edc2ba54dcb2d32e752616d",
     "framing": {
       "offset": 0.0
     },

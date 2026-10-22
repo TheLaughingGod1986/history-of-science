@@ -26,7 +26,7 @@ MEDIA = Path(
 )
 V01_DIR = PROJ / "07_Edit-Project/_desk/006/full_join_v01"
 V01_TEACH_DIR = PROJ / "07_Edit-Project/full_join_v01_teach"
-V02_DIR = PROJ / "07_Edit-Project/full_join_v02_teach"
+V02_DIR = Path(__file__).resolve().parent
 FPS = 24
 
 
@@ -91,7 +91,7 @@ def main() -> None:
             row["framing"] = {"offset": 0.0}
             row["disposition"] = "KEEP 13_tree_vs_pinch_t1 cropped 1628x916 + bare-table trim (J0809)"
         elif cut_num == 33:
-            # #33 P2 22_shimmer_willow: shortened from 260f (10.833s) back to 129f (5.375s)
+            # #33 P2 22_shimmer_willow: shortened from 260f (10.833s) back to 129f (5.375s), all willow (2.625-8.000s)
             sp = p2_raw / "22_shimmer_willow_v02.mp4"
             row["source"] = sp.name
             row["source_path"] = str(sp)
@@ -99,17 +99,17 @@ def main() -> None:
             row["frames"] = 129
             row["upscale"] = 1.0
             row["framing"] = {"offset": 0.0}
-            row["disposition"] = "KEEP 22_shimmer_willow_t1 (5.17-8.00s) + 15_desk_candle_t1_above_desk_v03 (0-2.54s) (J0809)"
+            row["disposition"] = "KEEP 22_shimmer_willow_t1 (2.625-8.000s = 129f, all willow, no 15_desk_candle repeat) (J0826)"
         elif cut_num == 62:
-            # #62 P4 11_night_jars: moonlit night jar (4.5-8.0s) + moonlit plant window (4.333s)
+            # #62 P4 11_night_jars: moonlit night jar (2.75-8.00s -> 140f) + 18_dark_window_t1 (4.00-6.00s = 48f)
             sp = p4_raw / "11_night_jars_v02.mp4"
             row["source"] = sp.name
             row["source_path"] = str(sp)
             row["source_sha256"] = sha256_file(sp)
             row["frames"] = 188
-            row["upscale"] = 1.5
+            row["upscale"] = 1.0
             row["framing"] = {"offset": 0.0}
-            row["disposition"] = "KEEP 11_night_jars_t1 (4.50-8.00s) + 18_dark_window_t1 moonlit window (J0809)"
+            row["disposition"] = "KEEP 11_night_jars_t1 (2.75-8.00s -> 140f, opens moonlit) + 18_dark_window_t1 (4.00-6.00s = 48f, unused by #51) (J0826)"
         elif cut_num in (78, 86):
             sp = Path(row["source_path"])
             row["source_sha256"] = sha256_file(sp)

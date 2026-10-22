@@ -25,7 +25,7 @@ FONT = "/System/Library/Fonts/Supplemental/Didot.ttc"
 
 REPO = Path("/Users/benjaminoats/YouTube/History Of Science")
 PROJ = REPO / "02_Video-Projects/006_Trees-Are-Made-Of-Air"
-V02_DIR = PROJ / "07_Edit-Project/full_join_v02_teach"
+V02_DIR = Path(__file__).resolve().parent
 TMP_DIR = Path("/private/tmp/hos006_join_v02")
 BASE_JOIN = TMP_DIR / "hos_006_full_join_v02_base.mp4"
 OV_OUT_DIR = TMP_DIR / "overlays_v02"

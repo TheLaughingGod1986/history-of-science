@@ -16,12 +16,13 @@
    across the bare tabletop pan so both the willow trunk and the silver spoon of soil read
    sharply and midpoint edge_density > 0.040.
 5. #33 P2 22_shimmer_willow_v02.mp4 (5.375 s = 129 frames):
-   22_shimmer_willow_t1.mp4 (5.333333-8.000000 s = 64 frames) +
-   15_desk_candle_t1_above_desk_v03.mp4 (0.000000-2.708333 s = 65 frames).
+   22_shimmer_willow_t1.mp4 (2.625000-8.000000 s = frames 63..192 = 129 frames),
+   all willow (no 15_desk_candle repeat from #26, per J0826 Chief ruling).
 6. #62 P4 11_night_jars_v02.mp4 (7.833333 s = 188 frames):
-   11_night_jars_t1.mp4 (4.500000-8.000000 s = 84 frames, moonlit night jar) +
-   P3 18_dark_window_t1.mp4 (4.333333 s = 104 frames, moonlit plant by dark window with
-   gentle shadow lift so mean_luma >= 32 and midpoint edge_density >= 0.035).
+   11_night_jars_t1.mp4 (2.750000-8.000000 s = frames 66..192 -> 140 frames = 5.833333 s,
+   opening moonlit after the 0.0-2.3 s bright-sun stretch) +
+   P3 18_dark_window_t1.mp4 (4.000000-6.000000 s = frames 96..144 = 48 frames = 2.000000 s,
+   the unused stretch after #51's 0.00-4.00 s, with gentle shadow lift so mean_luma >= 30.9).
 """
 from __future__ import annotations
 
@@ -276,22 +277,13 @@ def build_24_tree_vs_pinch(tmp: Path) -> Path:
 
 def build_33_shimmer_willow(tmp: Path) -> Path:
     s1 = P2_RAW / "22_shimmer_willow_t1.mp4"
-    s2 = P2_RAW / "stretches_v03/15_desk_candle_t1_above_desk_v03.mp4"
     out = P2_RAW / "22_shimmer_willow_v02.mp4"
-    if out.exists() and out.stat().st_size > 100000:
-        return out
-    # 68 frames from 22_shimmer_willow_t1 (frames 124..192) +
-    # 61 frames from 15_desk_candle_t1_above_desk_v03 (frames 0..61 with gentle unsharp) = 129 frames (5.375 s)
+    # J0826: 129 frames (5.375 s) all willow from 22_shimmer_willow_t1 frames 63..192 (2.625..8.000 s)
     subprocess.run(
         [
             "ffmpeg", "-y", "-v", "error",
             "-i", str(s1),
-            "-i", str(s2),
-            "-filter_complex",
-            "[0:v]trim=start_frame=124:end_frame=192,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,setsar=1[v0];"
-            "[1:v]trim=start_frame=0:end_frame=61,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,unsharp=5:5:0.75:5:5:0.0,setsar=1[v1];"
-            "[v0][v1]concat=n=2:v=1:a=0[v]",
-            "-map", "[v]",
+            "-vf", "trim=start_frame=63:end_frame=192,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,setsar=1",
             "-c:v", "libx264", "-preset", "medium", "-crf", "17",
             "-pix_fmt", "yuv420p", "-r", str(FPS),
             "-an", str(out),
@@ -305,25 +297,60 @@ def build_62_night_jars(tmp: Path) -> Path:
     s1 = P4_RAW / "11_night_jars_t1.mp4"
     s2 = P3_RAW / "18_dark_window_t1.mp4"
     out = P4_RAW / "11_night_jars_v02.mp4"
-    if out.exists() and out.stat().st_size > 100000:
-        return out
+    s1_dir = tmp / "p4_62_s1"
+    s2_dir = tmp / "p4_62_s2"
+    out_dir = tmp / "p4_62_out"
+    for d in (s1_dir, s2_dir, out_dir):
+        d.mkdir(parents=True, exist_ok=True)
+
+    # J0826: 11_night_jars_t1 from 2.750..8.000 s (frames 66..192 = 126 frames -> 140 frames = 5.833 s,
+    # opening moonlit after the 0.0..2.3 s bright-sun stretch)
     subprocess.run(
         [
             "ffmpeg", "-y", "-v", "error",
             "-i", str(s1),
-            "-i", str(s2),
-            "-filter_complex",
-            "[0:v]trim=start_frame=108:end_frame=192,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,setsar=1[v0];"
-            "[1:v]trim=start_frame=16:end_frame=120,setpts=PTS-STARTPTS,"
-            "eq=brightness=0.10:contrast=1.22:gamma=1.45,unsharp=5:5:0.75:5:5:0.0,scale=1920:1080:flags=lanczos,setsar=1[v1];"
-            "[v0][v1]concat=n=2:v=1:a=0[v]",
-            "-map", "[v]",
-            "-c:v", "libx264", "-preset", "medium", "-crf", "17",
-            "-pix_fmt", "yuv420p", "-r", str(FPS),
-            "-an", str(out),
+            "-vf", "trim=start_frame=66:end_frame=192,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos",
+            str(s1_dir / "f_%04d.png"),
         ],
         check=True,
     )
+    # J0826: 18_dark_window_t1 from 4.000..6.000 s (frames 96..144 = 48 frames = 2.000 s,
+    # the stretch #51 0.00..4.00 s does not show)
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-v", "error",
+            "-i", str(s2),
+            "-vf",
+            "trim=start_frame=96:end_frame=144,setpts=PTS-STARTPTS,"
+            "eq=brightness=0.10:contrast=1.22:gamma=1.45,unsharp=5:5:0.75:5:5:0.0,scale=1920:1080:flags=lanczos",
+            str(s2_dir / "f_%04d.png"),
+        ],
+        check=True,
+    )
+
+    s1_files = sorted(s1_dir.glob("f_*.png"))
+    s2_files = sorted(s2_dir.glob("f_*.png"))
+    s1_cache = [np.asarray(Image.open(p).convert("RGB"), dtype=np.float32) for p in s1_files]
+    n_s1 = len(s1_cache)
+
+    for k in range(140):
+        pos = (k / 139.0) * (n_s1 - 1)
+        i0 = int(math.floor(pos))
+        i1 = min(n_s1 - 1, i0 + 1)
+        frac = pos - i0
+        arr = s1_cache[i0] * (1.0 - frac) + s1_cache[i1] * frac
+        gray_mean = float((0.299 * arr[..., 0] + 0.587 * arr[..., 1] + 0.114 * arr[..., 2]).mean())
+        if gray_mean < 30.0:
+            norm = np.clip(arr / 255.0, 0.0, 1.0)
+            lifted = (norm ** 0.68) * 255.0 + (30.0 - gray_mean) * 0.65
+            w_lift = min(1.0, (30.0 - gray_mean) / 14.0)
+            arr = arr * (1.0 - w_lift) + lifted * w_lift
+        Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8), mode="RGB").save(out_dir / f"f_{k:04d}.png")
+
+    for j, p in enumerate(s2_files[:48]):
+        Image.open(p).convert("RGB").save(out_dir / f"f_{140 + j:04d}.png")
+
+    encode_pngs(out_dir, out)
     return out
 
 

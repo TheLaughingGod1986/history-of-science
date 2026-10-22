@@ -311,14 +311,14 @@ def build_dots_crowd(tmp_dir: Path, out_mp4: Path) -> None:
                     width=3,
                 )
 
-        # House Didot italic label: 4 in 10,000 · Carbon Dioxide (REVIEW_v01 §1.A & §4)
+        # House Didot italic label: CO2: 4 in 10,000 (<=4 words, J0826 Chief ruling)
         lbl_p = max(0.0, min(1.0, (t - 0.55) / 0.50))
         if lbl_p > 0.01:
             a_lbl = int(round(255 * (lbl_p * lbl_p * (3.0 - 2.0 * lbl_p))))
             ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
             od = ImageDraw.Draw(ov)
             f_lbl = didot_font(44, 1)
-            txt = "4 in 10,000 · Carbon Dioxide"
+            txt = "CO2: 4 in 10,000"
             bb = od.textbbox((0, 0), txt, font=f_lbl)
             tw = bb[2] - bb[0]
             pad_x, pad_y = 48, 20
