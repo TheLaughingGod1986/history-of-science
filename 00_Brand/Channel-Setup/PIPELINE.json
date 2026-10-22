@@ -544,7 +544,7 @@
           "status": "todo",
           "due": "2026-11-22",
           "owner": "Cursor",
-          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; 8 period details P1\u2013P8 to confirm first); plates start after the whole VO batch passes"
+          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; period details P1\u2013P8 all confirmed (J0860, 22 Oct; sources in FACT_NOTES_v01)); plates start after the whole VO batch passes"
         },
         "edit": {
           "status": "todo",

@@ -215,7 +215,7 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 - ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 500 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101773293)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (14 d late))
-- ⬜ **Picture** — to do (with Cursor, due Sun 22 Nov (in 31 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; 8 period details P1–P8 to confirm first); plates start after the whole VO batch passes
+- ⬜ **Picture** — to do (with Cursor, due Sun 22 Nov (in 31 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; period details P1–P8 all confirmed (J0860, 22 Oct; sources in FACT_NOTES_v01)); plates start after the whole VO batch passes
 - ⬜ **Edit + master** — to do (with Grok, due Thu 26 Nov (in 35 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 26 Nov (in 35 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 29 Nov (in 38 d))
