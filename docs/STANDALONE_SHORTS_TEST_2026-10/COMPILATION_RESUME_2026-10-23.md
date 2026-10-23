@@ -22,3 +22,18 @@ At handoff both sessions exist, both logs are empty, and both exit files are abs
 Next: read exit files/logs. On success run SFX level and polish gates on both segments, inspect closing card and listen to the hit, record output SHA-256. Then measure 006 trim; select/check its willow/leaf plates; complete intro/Bridges 1–2 and closing willow replacement; build whole-cut render stage, chapters and complete gates. Existing assembler has prep/plan/segment commands only, no whole-film render stage. Deliverable still needs Chief review J0176. No final approval is implied by progress.
 
 Validation: Python compilation and git diff --check succeeded for the path-only code change. No media gate result claimed.
+
+## Follow-up — 23 Oct, second worker run
+
+Both replacement render exit files now contain 0. No tmux render sessions remain. Render logs report Bridge 4 14.29 s (integrated -15.94 LUFS, peak -1.99 dBTP) and closing 37.09 s (-16.66 LUFS, peak -1.96 dBTP). These measurements are render output, not approval or complete gate evidence.
+
+Started detached validation, **not another render**:
+- session `J0175-gates-20261023`
+- runner `/Users/benjaminoats/_desk/logs/J0175-gates-20261023.py`
+- log `/Users/benjaminoats/_desk/logs/J0175-gates-20261023.log`
+- completion `/Users/benjaminoats/_desk/logs/J0175-gates-20261023.done`
+- individual exit codes `/Users/benjaminoats/_desk/logs/J0175-gates-20261023-results.json`
+
+The runner checks SFX levels and polish for each segment and saves reports alongside the NAS outputs as `sfx_level_20261023.json` and `polish_20261023.json`. Read individual tool exit codes and reports even if the runner exits 0; it deliberately checks both segments after a failure. Missing completion file means check the session before starting any duplicate validation. Mini free space is about 10 GiB; all media scratch remains on NAS. No local scratch move, media deletion, credit spend or publishing.
+
+Progress stays 4/6. Next worker: collect validation evidence, inspect/listen to the segments, then continue the remaining assembly work listed above. Full compilation and protected approval remain outstanding.
