@@ -11,7 +11,7 @@
 | Picture | **All 73/73 Flow rows minted (J0352 KEEP, 21 Oct 2026; HOS PR #351 merged):** P1 17/17 (530 cr) · P2 21/21 (750 cr) · P3 12/12 (390 cr) · P4 11/11 (380 cr) · P5 12/12 (840 cr) = **2,890 cr** vs 7,550 cap. Face lock `P2:08_jenner_window` KEEP applied to all later readable Jenner faces. 3 £0 code graphics (`7808f751`), 2 archive + 18 reuse (£0). |
 | Edit | **Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled (J0827, 22 Oct 2026, £0)** across Parts 01–05 (Chief PASS J0820) on locked VO with house Didot teaching cards and both £0 repeat-shot fixes (`P1:09c_case_again` 1.88× lancet crop; `P5:06c/06d` split into strictly unused `04_health_workers` back half `3.833–7.958 s` + `06_assembly_1980` tail `5.083–8.000 s` 1.38× front-row push-in). Parts: P1 `61a5c039` (100.83 s, 20 cuts) · P2 `6ab2fb1f` (129.62 s, 22 cuts) · P3 `62a14a08` (78.75 s, 15 cuts) · P4 `e6a005cd` (92.75 s, 20 cuts) · P5 `14206aeb` (103.17 s, 20 cuts). Full join PASS `polish_gate.py` (`0 of 97 rows failed, 5 to look at`) and `picture_qa.py` (`0 of 97 cuts fail, 5 to look at`), 0 freeze events (`>= 0.8 s`). UAT proxy (`5ea31960`) in `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_full_join_v01/`. Parked for Chief review (`REVIEW_v01.md`). |
 | Air | proposed **Thu 12 Nov 2026 18:00 UK = 18:00 UTC** (GMT); privacy private; madeForKids false; proposals only |
-| Shorts | 3 planned outlines: lead Fri 13 Nov "Vaccines are named after a cow."; Sun/Tue placeholders |
+| Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); Related → 007 long once uploaded |
 | Backup | Neighbour gate PASSED — Lightning backup not needed |
 
 ## STOP
@@ -40,4 +40,25 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/007_The-Fir
 Gate run with `--air-date 2027-01-24` (gate only). Caption check: 20 changes, ratio 1.0, 19/19 handovers verified single-caption. Freezedetect: 0 events.
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## 23 Oct 2026 — Short `s04_smallpox_test_v01` packaged & uploaded Private (`-I_GHK-GcFs`, Fri 13 Nov 11:30 London, OWB J0873)
+
+- **Authority:** Chief PASS on `J0865` (`hos_007_s04_smallpox_test_v01.mp4`, `26.133 s`, sha256 `3daff43d04bcebf538cd4c405a8eeb723a7329f425bec536d876cb7c69d696af`, HOS `994d5a7b`) and Chief-created `J0873`. `£0` spend.
+- **Upload & schedule:** Packaged in `10_Shorts/11_Upload-Package/s04_smallpox_test/PACKAGE_MANIFEST.json` (`SHORTS_RELEASE.json` PASS) and uploaded Private via `npm run youtube:package` as **`-I_GHK-GcFs`** (`https://youtu.be/-I_GHK-GcFs`) for the first free HOS weekday Short slot on or after Fri 13 Nov: **Fri 13 Nov 2026 at 11:30 London (`2026-11-13T11:30:00Z`, GMT)** (after the 007 long airs Thu 12 Nov 18:00 London).
+- **API readback (`API_READBACK_-I_GHK-GcFs.json`):** `privacyStatus=private`, `publishAt=2026-11-13T11:30:00Z`, `uploadStatus=processed`, `madeForKids=false`, `selfDeclaredMadeForKids=false`, `defaultLanguage=en-GB`, `defaultAudioLanguage=en-GB`, `categoryId=27`, `hasCustomThumbnail=true`, 6 tags.
+- **Studio readback (`STUDIO_READBACK_-I_GHK-GcFs.json`, CDP `:9460`):** `No, it's not Made for Kids` checked (`true`), Altered content `Yes` checked (`true`); `Related video` → to be set to the 007 long once it is uploaded, before the Short goes public on Fri 13 Nov 11:30Z.
+- **Records:** Registered in `SHORTS_UPLOAD_INDEX.json`, `SHORTS_RELEASE.json`, `00_Brand/Channel-Setup/audits/SHORTS_LOG.md`, `00_Brand/Channel-Setup/audits/shorts_open_library/library.json` (`status=scheduled`), and `00_Brand/Channel-Setup/social/UPLOADS.json` (Buffer held until public; ready for `buffer-mirror.ts register --channel hos` once OWB PR #260 merges and 007 long has an id).
+
+```text
+PASS  hos_007_s04_smallpox_test_v01.mp4  dur=26.13s  audio=-24.1dB  motion=18.05  dhash=86e766dfda1e867f
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s04_smallpox_test_v01_open_sheet.jpg
+PASS  02_Video-Projects/007_The-First-Vaccine/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+PASS  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORTS_RELEASE.json
+   warn  [related] What Was the Edward Jenner Experiment?: Related video not set yet (set it to the 007 long once that long is public)
+PASS  Short -I_GHK-GcFs  private 2026-11-13 11:30 UK  What Was the Edward Jenner Experiment?
+45 videos, 0 errors.
+ALL CHECKS PASS
+```
+
 
