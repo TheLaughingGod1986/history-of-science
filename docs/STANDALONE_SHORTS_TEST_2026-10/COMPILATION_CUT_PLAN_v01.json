@@ -1,0 +1,209 @@
+{
+ "version": "v01",
+ "job": "J0175",
+ "generated": "2026-10-23T09:52:33",
+ "total_s": 2958.09,
+ "total_hms": "49:18",
+ "in_45_60": true,
+ "note": "Normalised masters and rendered segments concatenated in exact running order.",
+ "segments": [
+  {
+   "start": 0.0,
+   "start_hms": "0:00",
+   "kind": "vo",
+   "name": "intro",
+   "length": 52.53,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/vo_compilation_v01/hos_comp_intro_vo_v01.wav",
+   "length_from": "vo take + breath",
+   "picture": "six plates (arm, willow, flask, cards, screen, foil) from the films' passed clips"
+  },
+  {
+   "start": 52.53,
+   "start_hms": "0:53",
+   "kind": "card",
+   "name": "code_graphic_comp_card_01",
+   "length": 3.0,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/graphics_v01/code_graphic_comp_card_01.mp4",
+   "length_from": "plan ~3 s",
+   "title": "The Hidden Circle"
+  },
+  {
+   "start": 55.53,
+   "start_hms": "0:56",
+   "kind": "film",
+   "name": "005",
+   "length": 489.2,
+   "src": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_005_norm.mp4",
+   "length_from": "prep_report",
+   "keep_to": 489.2
+  },
+  {
+   "start": 544.73,
+   "start_hms": "9:05",
+   "kind": "vo",
+   "name": "bridge1",
+   "length": 17.97,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/vo_compilation_v01/hos_comp_bridge1_vo_v01.wav",
+   "length_from": "vo take + breath",
+   "graphic": "code_graphic_comp_timeline_b1"
+  },
+  {
+   "start": 562.7,
+   "start_hms": "9:23",
+   "kind": "card",
+   "name": "code_graphic_comp_card_02",
+   "length": 3.0,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/graphics_v01/code_graphic_comp_card_02.mp4",
+   "length_from": "plan ~3 s",
+   "title": "Built From Air"
+  },
+  {
+   "start": 565.7,
+   "start_hms": "9:26",
+   "kind": "film",
+   "name": "006",
+   "length": 493.567,
+   "src": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4",
+   "length_from": "prep_report",
+   "keep_to": 493.55
+  },
+  {
+   "start": 1059.267,
+   "start_hms": "17:39",
+   "kind": "vo",
+   "name": "bridge2",
+   "length": 17.89,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/vo_compilation_v01/hos_comp_bridge2_vo_v01.wav",
+   "length_from": "vo take + breath"
+  },
+  {
+   "start": 1077.157,
+   "start_hms": "17:57",
+   "kind": "card",
+   "name": "code_graphic_comp_card_03",
+   "length": 3.0,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/graphics_v01/code_graphic_comp_card_03.mp4",
+   "length_from": "plan ~3 s",
+   "title": "The Invisible Enemy"
+  },
+  {
+   "start": 1080.157,
+   "start_hms": "18:00",
+   "kind": "film",
+   "name": "001",
+   "length": 359.367,
+   "src": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4",
+   "length_from": "prep_report",
+   "keep_to": 359.35
+  },
+  {
+   "start": 1439.523,
+   "start_hms": "24:00",
+   "kind": "vo",
+   "name": "bridge3",
+   "length": 14.69,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/vo_compilation_v01/hos_comp_bridge3_vo_v01.wav",
+   "length_from": "vo take + breath",
+   "graphic": "code_graphic_comp_timeline_b3"
+  },
+  {
+   "start": 1454.213,
+   "start_hms": "24:14",
+   "kind": "card",
+   "name": "code_graphic_comp_card_04",
+   "length": 3.0,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/graphics_v01/code_graphic_comp_card_04.mp4",
+   "length_from": "plan ~3 s",
+   "title": "The Empty Chairs"
+  },
+  {
+   "start": 1457.213,
+   "start_hms": "24:17",
+   "kind": "film",
+   "name": "002",
+   "length": 530.167,
+   "src": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4",
+   "length_from": "prep_report",
+   "keep_to": 530.15
+  },
+  {
+   "start": 1987.38,
+   "start_hms": "33:07",
+   "kind": "vo",
+   "name": "bridge4",
+   "length": 14.29,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/vo_compilation_v01/hos_comp_bridge4_vo_v01.wav",
+   "length_from": "vo take + breath"
+  },
+  {
+   "start": 2001.67,
+   "start_hms": "33:22",
+   "kind": "card",
+   "name": "code_graphic_comp_card_05",
+   "length": 3.0,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/graphics_v01/code_graphic_comp_card_05.mp4",
+   "length_from": "plan ~3 s",
+   "title": "A Light Through Skin"
+  },
+  {
+   "start": 2004.67,
+   "start_hms": "33:25",
+   "kind": "film",
+   "name": "003",
+   "length": 406.2,
+   "src": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4",
+   "length_from": "prep_report",
+   "keep_to": 406.2
+  },
+  {
+   "start": 2410.87,
+   "start_hms": "40:11",
+   "kind": "vo",
+   "name": "bridge5",
+   "length": 15.73,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/vo_compilation_v01/hos_comp_bridge5_vo_v01.wav",
+   "length_from": "vo take + breath",
+   "graphic": "code_graphic_comp_timeline_b5"
+  },
+  {
+   "start": 2426.6,
+   "start_hms": "40:27",
+   "kind": "card",
+   "name": "code_graphic_comp_card_06",
+   "length": 3.0,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/graphics_v01/code_graphic_comp_card_06.mp4",
+   "length_from": "plan ~3 s",
+   "title": "Inside the Atom"
+  },
+  {
+   "start": 2429.6,
+   "start_hms": "40:30",
+   "kind": "film",
+   "name": "004",
+   "length": 491.4,
+   "src": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4",
+   "length_from": "prep_report",
+   "keep_to": 491.4
+  },
+  {
+   "start": 2921.0,
+   "start_hms": "48:41",
+   "kind": "vo",
+   "name": "closing",
+   "length": 37.09,
+   "src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/vo_compilation_v01/hos_comp_closing_vo_v01.wav",
+   "length_from": "vo take + breath",
+   "graphic": "code_graphic_comp_timeline_close"
+  }
+ ],
+ "chapters_draft": [
+  "0:00 Six discoveries, one question",
+  "0:53 The Hidden Circle",
+  "9:23 Built From Air",
+  "17:57 The Invisible Enemy",
+  "24:14 The Empty Chairs",
+  "33:22 A Light Through Skin",
+  "40:27 Inside the Atom"
+ ],
+ "missing": []
+}
