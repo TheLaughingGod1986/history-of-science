@@ -741,3 +741,40 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006
 ```
 
 - **STOP:** Parked for Chief (`parked for Chief: HOS 006 master v04 review (all 11 Ben changes applied at 0 Flow credits, all gates PASS)`). Nothing uploaded or scheduled.
+
+## 23 Oct 2026 — J0886: HOS 006 master v05 (all 4 Ben second-round v04 changes + v03 bubble checks resolved at 0 Flow credits, all gates PASS, Gemini covering)
+
+- **Master MP4:** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/hos_006_master_v05.mp4` (`531.833 s`, `12,764` frames @ 24 fps, `1920×1080` H.264 + AAC 48 kHz stereo at `-14.0 LUFS` / `-1.4 dBTP`, sha256 `4f9dd1cace14b3a1e4c535e3721759549ea9288348f42934210593659061fbf7`, video stream sha256 `21acad54d53a8e1c2bf0f3b2c7dc27876d80c42c9b46cef4eaf666950c8192a0`).
+- **Phone MP4 (`<120 MB`):** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/hos_006_master_v05_PHONE.mp4` (`109.85 MB`, `115,187,909` B, sha256 `f8ce8783751c618d829daedf7baf1c3959f9ac4188669b6c6807df023bce2da6`).
+- **UAT & NAS copies (SHA-256 verified identical):**
+  - iCloud HOS UAT: `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v05.mp4`, `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v05_PHONE.mp4`, and `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/hos_006_master_v05.mp4` (+ `hos_006_master_v05_PHONE.mp4`, `hos_006_master_v05_ben_check_sheet.jpg`, `hos_006_master_v05_contact_sheet.jpg`).
+  - NAS archive: `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/09_Final-Export/master_v05/` (`hos_006_master_v05.mp4`, `hos_006_master_v05_PHONE.mp4`, `hos_006_master_v05_ben_check_sheet.jpg`, `hos_006_master_v05_contact_sheet.jpg`).
+- **Spend:** `£0.00` cash, **`0` Flow credits** (`4` replacement 16:9 stills minted on Flow `Nano Banana 2.1` on AI Ultra at `0 cr/still`, Flow balance unchanged at `20,730` credits, logged in `07_Edit-Project/master_v05/FLOW_STILLS_LOG_v05.json`).
+- **All 4 Ben v04 change items + v03 bubble checks resolved and visually verified on full-size 1920×1080 check frames (`07_Edit-Project/master_v05/hos_006_master_v05_ben_check_sheet.jpg`):**
+  1. **`0:07` (`#02 P1 02_balance_trunk_v05.mp4`, `0:04.29–0:07.38`, frame `00_07_scales_tree.png`):** *"Scales the tree is not on them"* — Replaced with a Flow `Nano Banana 2.1` 16:9 plate + smooth push-in showing the entire young willow tree (root ball, woody trunk, and weeping green canopy) resting directly **on** the left brass scale pan, weighing it down low while the right pan holding a small pinch of dry brown soil is lifted high.
+  2. **`1:26` (`#17 P2 05_pure_water_v05.mp4`, `1:23.62–1:28.62`, frame `01_26_tree_in_pot.png`) & `7:16` callback (`#80 P5 13_water_in_tree_v05.mp4`, `7:13.83–7:18.92`, frame `07_16_callback_tree_in_pot.png`):** *"Tree not in the pot"* — Replaced with a Flow `Nano Banana 2.1` 16:9 plate + animated water stream where the willow tree trunk grows **directly up out of the soil inside the terracotta pot** through the central hole of the perforated tin-plated iron lid while van Helmont pours pure water from a copper pitcher into the hole (`#80` uses a closer framing of the same action so `picture_qa.py` has 0 duplicate reuse).
+  3. **`4:28` (`#50 P3 17_notebook_tick_v05.mp4`, `4:25.29–4:29.50`, frame `04_28_priestley_body.png`):** *"No body for the hand"* — Replaced with a Flow `Nano Banana 2.1` 16:9 plate + smooth push-in showing Joseph Priestley in full upper-body 18th-century 3D cartoon house style (head, powdered wig, shoulders, dark coat, cuffs, and both arms naturally connected to his body) seated at his sunlit oak laboratory desk holding a feather quill pen over his open notebook (which has only a simple tick and X mark, zero letters or numbers).
+  4. **`5:29` (`#61 P4 10_only_green_v05.mp4`, `5:25.88–5:30.46`, frame `05_29_only_green_bubbles.png`) plus v03 bubble checks at `4:54` (`#55 P4 04_sunny_window_v05.mp4`, `4:51.83–4:56.38`, frame `04_54_sunny_window_bubbles.png`) and `5:17 / 5:21` (`#59 P4 08_explorer_shade_v05.mp4`, `5:15.25–5:22.46`, frames `05_17_explorer_jar_bubbles.png` & `05_21_explorer_carries_jar.png`):** *"Bubbles rising out the water into the air"* —
+     - At `5:29`, three open water-filled glass jars sit on the sunlit windowsill (woody twig in left jar with 0 bubbles, red flower in middle jar with 0 bubbles, green leafy sprig in right jar with oxygen bubbles rising strictly underwater below the water meniscus at `y >= 615`, `n_motes=0`, zero bubbles in the air).
+     - At `4:54`, bubbles are rendered in 1920×1080 source space strictly inside the submerged water columns (`y_top >= 470` / `435`) before the camera push-in (`n_motes=0`, zero bubbles above the meniscus or outside the jars).
+     - At `5:17–5:21`, the first half (`05_17_explorer_jar_bubbles.png`) uses `08_explorer_shade_t1.png` with bubbles strictly underwater inside the corked jar while the Explorer inspects it in the sun, crossfading over 8 frames into the clean second half of `t1` (`05_21_explorer_carries_jar.png`) where she carries the corked jar into the shade with zero bubbles in the air.
+
+### Machine checks (pasted outputs)
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -34.0 LUFS, 31 hits
+music gate PASS: trees006_score_bed_v01.mp3, 531.8 s, about 66.7 BPM, brief Pace: 60-72 BPM
+WARN   2:18 row 15_desk_candle 15_desk_candle_t1_above_desk_v03.mp4: low detail: edge density 0.027 < film p5 0.0272
+WARN   3:01 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0219 < film p5 0.0272
+WARN   5:24 row 09_bubbles_again 05_bubbles_macro_t1_from4.500.mp4: low detail: edge density 0.0244 < film p5 0.0272
+WARN   6:32 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0247 < film p5 0.0272
+WARN   8:17 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0237 < film p5 0.0272
+picture QA PASS: 0 of 96 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/picture_qa_review.jpg
+polish gate PASS: 0 of 96 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/polish_gate.json
+**Decision:** PASS — VO / Gemini Veo allowed
+Script score: **93.7/100** · PASS
+Integrated loudness: I: -14.0 LUFS, LRA: 3.3 LU, True peak: -1.4 dBFS
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006_Trees-Are-Made-Of-Air)
+```
+
+- **STOP:** Parked for Chief (`parked for Chief: HOS 006 master v05 review (all 4 Ben v04 changes + v03 bubble checks resolved at 0 Flow credits, check sheet verified, _PHONE.mp4 in HOS UAT, all gates PASS)`). Nothing uploaded or scheduled.

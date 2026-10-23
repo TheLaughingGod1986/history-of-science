@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Master v04 built for J0882 (`hos_006_master_v04.mp4`, 531.8 s / 96 cuts, sha256 `65aa7e1c`, -14.0 LUFS / -1.4 dBTP, 0 Flow credits): all 11 of Ben's 23 Oct feedback items fixed (0:09 middle pot, 0:49 soil sack on scale, 1:14 whole 5-lb willow on scale, imperial+metric weights on all weight cards, 1:22 perforated lid + rain, 3:15 period glassware + sprig, 4:54/5:21 bubbles inside jars, 5:57 non-rotating plant push-in, 6:07 Geneva 1782 WHEN/WHERE card + Part 05 overlays, 8:28 closing card for 007 + 20 s moving end-screen tail), all gates PASS, copied to `HOS UAT/006_Trees_master_v04.mp4` and NAS, parked for Chief. Thumbnails A + B also parked for Chief (J0869).",
+      "summary": "Master v05 built for J0886 (`hos_006_master_v05.mp4`, 531.8 s / 96 cuts, sha256 `4f9dd1ca`, -14.0 LUFS / -1.4 dBTP, 0 Flow credits) + `<120 MB` phone copy (`hos_006_master_v05_PHONE.mp4`, 109.85 MB, sha256 `f8ce8783`): all 4 of Ben's second-round v04 changes (0:07 whole willow tree on left scale pan, 1:26 & 7:16 willow tree growing inside terracotta pot through perforated lid, 4:28 Priestley full upper body writing with quill, 5:29 bubbles strictly underwater inside right green-leaf jar) + v03 bubble checks at 4:54 and 5:21 resolved and verified on full-size 1920x1080 check sheet (`hos_006_master_v05_ben_check_sheet.jpg`), all gates PASS, copied to `HOS UAT/006_Trees_master_v05.mp4`, `006_Trees_master_v05_PHONE.mp4`, and NAS, parked for Chief. Thumbnails A + B also parked for Chief (J0869).",
       "stages": {
         "topic": {
           "status": "done"
@@ -252,22 +252,23 @@
           "status": "doing",
           "due": "2026-10-28",
           "owner": "Chief",
-          "note": "master v04 built at 0 Flow credits (J0882, 531.8 s / 96 cuts, sha256 `65aa7e1c`, -14.0 LUFS / -1.4 dBTP): all 11 Ben feedback items fixed, `picture_qa` 0/96 fail, `polish_gate` 0/96 fail, `music_gate` PASS, `sfx_kit level` PASS, copied to `HOS UAT/006_Trees_master_v04.mp4` and NAS; parked for Chief",
+          "note": "master v05 built at 0 Flow credits (J0886, 531.8 s / 96 cuts, sha256 `4f9dd1ca`, -14.0 LUFS / -1.4 dBTP) + 109.85 MB `_PHONE.mp4`: all 4 Ben v04 changes + v03 4:54/5:21 bubble checks resolved and verified on 1920x1080 check sheet, `picture_qa` 0/96 fail, `polish_gate` 0/96 fail, `music_gate` PASS, `sfx_kit level` PASS, copied to `HOS UAT/006_Trees_master_v05.mp4` + `_PHONE.mp4` and NAS; parked for Chief",
           "jobs": [
             "J0835",
             "J0857",
-            "J0882"
+            "J0882",
+            "J0886"
           ],
-          "since": "2026-10-23T12:44",
+          "since": "2026-10-23T15:08",
           "underway": false,
           "steps": [
             6,
             6
           ],
-          "steps_unit": "v04 steps",
+          "steps_unit": "v05 steps",
           "left": "in Chief review before Ben's rewatch",
           "eta": "",
-          "waiting": "Chief: HOS 006 master v04 review (J0882)"
+          "waiting": "Chief: HOS 006 master v05 review (J0886)"
         },
         "thumbnails": {
           "status": "doing",
