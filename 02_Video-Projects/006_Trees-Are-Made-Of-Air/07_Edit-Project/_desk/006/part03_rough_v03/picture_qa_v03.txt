@@ -1,0 +1,2 @@
+WARN   0:03 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0222 < film p5 0.0268
+picture QA PASS: 0 of 18 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part03_rough_v03/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part03_rough_v03/picture_qa_review.jpg

@@ -1,0 +1,161 @@
+{
+ "pulled": "2026-10-16",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "dna structure",
+  "rosalind franklin",
+  "double helix"
+ ],
+ "autocomplete": {
+  "dna structure": [
+   "dna structure",
+   "dna structure and function",
+   "dna structure and replication",
+   "dna structure model",
+   "dna structure animation",
+   "dna structure drawing",
+   "dna structure amoeba sisters",
+   "dna structure class 12",
+   "dna structure model project",
+   "dna structure diagram"
+  ],
+  "rosalind franklin": [
+   "rosalind franklin",
+   "rosalind franklin dna",
+   "rosalind franklin biography",
+   "rosalind franklin medical school",
+   "rosalind franklin documentary",
+   "rosalind franklin story in hindi",
+   "rosalind franklin information",
+   "rosalind franklin university",
+   "rosalind franklin x ray diffraction",
+   "rosalind franklin costume"
+  ],
+  "double helix": [
+   "double helix",
+   "double helix kiss",
+   "double helix ep 10",
+   "double helix ep 11",
+   "double helix bts",
+   "double helix bl series ep 1 eng sub",
+   "double helix bl series",
+   "double helix ep 12",
+   "double helix ep 1",
+   "double helix structure of dna"
+  ]
+ },
+ "sharedTitleWords": [
+  "of dna",
+  "structure of",
+  "rosalind franklin",
+  "dna structure",
+  "structure and",
+  "molecular structure",
+  "macromolecules biology",
+  "biology khan",
+  "khan academy",
+  "of the"
+ ],
+ "neighbours": [
+  {
+   "id": "BIP0lYrdirI",
+   "title": "Rosalind Franklin: DNA's unsung hero - Cláudio L. Guerra",
+   "channel": "TED-Ed",
+   "views": "1,940,058 views",
+   "age": "10 yr ago",
+   "length": "4:10",
+   "tier": 1,
+   "viewCount": 1940058,
+   "foundBy": "ted-ed dna structure",
+   "onTopic": true
+  },
+  {
+   "id": "8kK2zwjRV0M",
+   "title": "DNA Structure and Replication: Crash Course Biology #10",
+   "channel": "CrashCourse",
+   "views": "10,659,599 views",
+   "age": "14 yr ago",
+   "length": "12:35",
+   "tier": 2,
+   "viewCount": 10659599,
+   "foundBy": "dna structure",
+   "onTopic": true
+  },
+  {
+   "id": "T6_wKPAbf2k",
+   "title": "GCSE Biology - What is DNA? (Structure and Function of DNA)",
+   "channel": "Cognito",
+   "views": "896,736 views",
+   "age": "6 yr ago",
+   "length": "6:33",
+   "tier": 2,
+   "viewCount": 896736,
+   "foundBy": "dna structure",
+   "onTopic": true
+  },
+  {
+   "id": "L677-Fl0joY",
+   "title": "Molecular structure of DNA | Macromolecules | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "481,750 views",
+   "age": "11 yr ago",
+   "length": "13:00",
+   "tier": 2,
+   "viewCount": 481750,
+   "foundBy": "khan academy dna structure",
+   "onTopic": true
+  },
+  {
+   "id": "JiME-W58KpU",
+   "title": "Rosalind Franklin: Great Minds",
+   "channel": "SciShow",
+   "views": "381,772 views",
+   "age": "13 yr ago",
+   "length": "3:46",
+   "tier": 2,
+   "viewCount": 381772,
+   "foundBy": "rosalind franklin",
+   "onTopic": true
+  },
+  {
+   "id": "jUUJSOM1ihU",
+   "title": "Molecular structure of RNA | Macromolecules | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "191,328 views",
+   "age": "11 yr ago",
+   "length": "11:29",
+   "tier": 2,
+   "viewCount": 191328,
+   "foundBy": "khan academy double helix",
+   "onTopic": true
+  },
+  {
+   "id": "hCUce36Ganc",
+   "title": "The discovery of the double helix structure of DNA",
+   "channel": "Khan Academy",
+   "views": "87,950 views",
+   "age": "10 yr ago",
+   "length": "8:56",
+   "tier": 2,
+   "viewCount": 87950,
+   "foundBy": "khan academy dna structure",
+   "onTopic": true
+  },
+  {
+   "id": "pZpHdlORAGw",
+   "title": "The Dark Side of the Double Helix: Andrew Hessel at TEDx Marin 2012",
+   "channel": "TEDx Talks",
+   "views": "50,051 views",
+   "age": "13 yr ago",
+   "length": "19:05",
+   "tier": 1,
+   "viewCount": 50051,
+   "foundBy": "ted-ed double helix",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 2,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

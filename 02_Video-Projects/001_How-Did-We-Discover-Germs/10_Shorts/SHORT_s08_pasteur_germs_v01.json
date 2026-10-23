@@ -1,0 +1,172 @@
+{
+  "id": "s08_pasteur_germs",
+  "job": "J0487",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-10",
+  "file": "10_Shorts/hos_001_s08_pasteur_germs_v01.mp4",
+  "sha256": "221d79a7395ff46be5ccbb25c2d7095f45897dedb7a9784666ff7d35e996d819",
+  "duration_s": 24.2,
+  "vo_source": "02_Voiceover/part04_proof_in_a_flask_v01.wav",
+  "vo_span_windows_s": [
+    [
+      0.0,
+      2.95
+    ],
+    [
+      22.9,
+      43.65
+    ],
+    [
+      68.4,
+      72.8
+    ]
+  ],
+  "route": "claim-first lift: Louis Pasteur did not win with poetry. Watch it: clear, clear, still clear. \u2026 You do not need faith. You need a result that returns. (0.00\u20132.95 s, 22.90\u201343.65 s, 68.40\u201372.80 s from Part 04)",
+  "vo_s": 23.754,
+  "words": 64,
+  "max_pause_s": 0.2,
+  "atempo": 1.02,
+  "bed": "hos001_s08_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -21.7,
+  "hook": "STILL CLEAR",
+  "hook_layer": {
+    "font_size": 237,
+    "cap_px": 169,
+    "cap_pct": 8.8,
+    "lines": 2,
+    "block_pct": [
+      39.8,
+      60.2
+    ],
+    "widest_pct": 80.0
+  },
+  "who_card": {
+    "name": "LOUIS PASTEUR",
+    "line2": "Swan-neck flask, 1860s",
+    "line1_px": 66,
+    "line1_pct_of_band": 10.9,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover Germs?",
+  "youtube_title_draft": "How Did Louis Pasteur Prove Germ Theory?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.964,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/07_bloom_cloud_v13.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.964,
+      "t1": 6.004,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/05_tip_the_trap_v20.mp4",
+      "in_s": 0.6,
+      "crop_x": 580,
+      "lands_on": "Watch"
+    },
+    {
+      "t0": 6.004,
+      "t1": 8.538,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/09_sceptics_watch_v02.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "Then"
+    },
+    {
+      "t0": 8.538,
+      "t1": 11.015,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/10_an_address_v21.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "storm"
+    },
+    {
+      "t0": 11.015,
+      "t1": 14.569,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/03_dust_in_the_curve_v23.mp4",
+      "in_s": 0.6,
+      "crop_x": 520,
+      "lands_on": "If"
+    },
+    {
+      "t0": 14.569,
+      "t1": 17.65,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/08_passengers_v23.mp4",
+      "in_s": 0.6,
+      "crop_x": 520,
+      "lands_on": "If"
+    },
+    {
+      "t0": 17.65,
+      "t1": 21.174,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/11_result_returns_v03.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "then"
+    },
+    {
+      "t0": 21.174,
+      "t1": 24.174,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/07_bloom_cloud_v13.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_001_s08_pasteur_germs_v01.mp4  dur=24.2s  audio=-22.8dB  motion=13.74  dhash=e5ec6c26291616e7\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s08_pasteur_germs_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_001_s08_pasteur_germs_v01.mp4  0:24.20  mean -22.8 dB  peak -4.1 dB  159 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s08_pasteur_germs_v01/polish_gate_s08_pasteur_germs_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s08_pasteur_germs_v01/picture_qa_s08_pasteur_germs_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s08_pasteur_germs_v01/picture_qa_s08_pasteur_germs_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s08_pasteur_germs_v01/hos_001_s08_pasteur_germs_v01_t000.0.jpg",
+    "10_Shorts/_work_s08_pasteur_germs_v01/hos_001_s08_pasteur_germs_v01_t003.8.jpg",
+    "10_Shorts/_work_s08_pasteur_germs_v01/hos_001_s08_pasteur_germs_v01_t011.5.jpg",
+    "10_Shorts/_work_s08_pasteur_germs_v01/hos_001_s08_pasteur_germs_v01_t023.2.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s08_pasteur_germs_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-17",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "louis pasteur germ theory",
+      "louis pasteur experiment",
+      "louis pasteur swan neck flask experiment",
+      "spontaneous generation louis pasteur",
+      "spontaneous generation experiment",
+      "who discovered germs"
+    ],
+    "note": "'louis pasteur germ theory', 'louis pasteur experiment', 'louis pasteur swan neck flask experiment', and 'spontaneous generation louis pasteur' are exact signed-out GB YouTube autocomplete hits. The lifted VO shows how Louis Pasteur's clear broth stayed sterile until a breach turned it into a cloudy storm, refuting spontaneous generation ('appears from nothing') and proving microbes and disease arrive as passengers from the outside in a repeatable experiment. Second of HOS 001's two Test B search-titled Shorts. Chief's call."
+  },
+  "air_date_draft_note": "2026-12-10 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 04 VO and script LOUIS PASTEUR \u00b7 Swan-neck flask, 1860s, on screen 2.15\u20135.75 s (3.6 s) right after 'Louis Pasteur did not win with poetry.' Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No overlap with 001 s04_flask (which used 3.09\u201322.72 s of Part 04: 'He won with a flask shaped like a question mark... and life blooms into cloudiness'), s01_shadow (Part 01), s02_pond (Part 02), s03_vector / s07_semmelweis_hands (Part 03), or s05_soap / s06_carbolic_spray (Part 05): this lifts 0.00\u20132.95 s, 22.90\u201343.65 s, and 68.40\u201372.80 s of Part 04, and uses only Part 04 plates 04\u201311 (none of 01\u201303 from s04_flask)."
+}

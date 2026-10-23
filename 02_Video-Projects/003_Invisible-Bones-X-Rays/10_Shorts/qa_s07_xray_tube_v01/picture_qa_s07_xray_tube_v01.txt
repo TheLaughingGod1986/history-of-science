@@ -1,0 +1,2 @@
+WARN   0:16 row s04_Cathode 05_rays_stop_at_glass_v05.mp4: low detail: edge density 0.0101 < film p5 0.0174
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s07_xray_tube_v01/picture_qa_s07_xray_tube_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s07_xray_tube_v01/picture_qa_s07_xray_tube_v01/picture_qa_review.jpg

@@ -1,0 +1,184 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s05_charcoal_gas_v01.mp4",
+  "edge_floor": 0.0309,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s03_The",
+      "cut": 2,
+      "t": 9.9,
+      "source": "20_shimmer_coals_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0285 < film p5 0.0309"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "18_charcoal_hearth_t1.mp4",
+      "t": 1.97,
+      "std": 62.25,
+      "mean": 98.23,
+      "p95": 233.0,
+      "edge": 0.105,
+      "hf": 15.18,
+      "lf": 55.35,
+      "std8": 57.8,
+      "edge8": 0.3197,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_and",
+      "source": "19_ash_mound_t1.mp4",
+      "t": 5.6,
+      "std": 42.13,
+      "mean": 70.7,
+      "p95": 151.0,
+      "edge": 0.1225,
+      "hf": 10.24,
+      "lf": 37.96,
+      "std8": 39.21,
+      "edge8": 0.2666,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_The",
+      "source": "20_shimmer_coals_t1.mp4",
+      "t": 9.9,
+      "std": 33.52,
+      "mean": 55.64,
+      "p95": 119.0,
+      "edge": 0.0285,
+      "hf": 8.62,
+      "lf": 28.85,
+      "std8": 30.6,
+      "edge8": 0.1346,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0285 < film p5 0.0309"
+      ]
+    },
+    {
+      "cut": 3,
+      "row": "s04_He",
+      "source": "15_desk_candle_t1_above_desk_v03.mp4",
+      "t": 14.25,
+      "std": 39.04,
+      "mean": 52.45,
+      "p95": 140.0,
+      "edge": 0.0364,
+      "hf": 7.34,
+      "lf": 35.06,
+      "std8": 36.6,
+      "edge8": 0.1993,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_We",
+      "source": "06_leaf_in_t1.mp4",
+      "t": 17.78,
+      "std": 52.85,
+      "mean": 122.73,
+      "p95": 209.0,
+      "edge": 0.1172,
+      "hf": 12.51,
+      "lf": 47.49,
+      "std8": 48.29,
+      "edge8": 0.3543,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_He",
+      "source": "06_garden_years_t2.mp4",
+      "t": 21.37,
+      "std": 43.33,
+      "mean": 88.4,
+      "p95": 181.0,
+      "edge": 0.178,
+      "hf": 15.51,
+      "lf": 32.63,
+      "std8": 35.7,
+      "edge8": 0.4213,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_loop",
+      "source": "loop_end_18_charcoal_hearth_t1.mp4",
+      "t": 24.61,
+      "std": 55.53,
+      "mean": 90.81,
+      "p95": 221.0,
+      "edge": 0.0733,
+      "hf": 9.74,
+      "lf": 51.82,
+      "std8": 53.3,
+      "edge8": 0.2364,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

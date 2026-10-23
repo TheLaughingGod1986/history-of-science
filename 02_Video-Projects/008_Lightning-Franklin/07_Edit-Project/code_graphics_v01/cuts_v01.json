@@ -1,0 +1,123 @@
+[
+  {
+    "row": "P2:14_likeness_pairs",
+    "timeline_in": 0.0,
+    "timeline_out": 5.1,
+    "source": "code_graphic_008_p2_14_likeness_pairs.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P2:15_likeness_fire",
+    "timeline_in": 5.1,
+    "timeline_out": 10.4,
+    "source": "code_graphic_008_p2_15_likeness_fire.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:03_rod_cloud",
+    "timeline_in": 10.4,
+    "timeline_out": 16.9,
+    "source": "code_graphic_008_p3_03_rod_cloud.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:04_letter_crosses",
+    "timeline_in": 16.9,
+    "timeline_out": 20.667,
+    "source": "code_graphic_008_p3_04_letter_crosses.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:15_wet_dry",
+    "timeline_in": 20.667,
+    "timeline_out": 25.967,
+    "source": "code_graphic_008_p3_15_wet_dry.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:06_same_thing",
+    "timeline_in": 25.967,
+    "timeline_out": 33.267,
+    "source": "code_graphic_008_p4_06_same_thing.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:08_teach_charge",
+    "timeline_in": 33.267,
+    "timeline_out": 40.367,
+    "source": "code_graphic_008_p4_08_teach_charge.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:08_looking_path",
+    "timeline_in": 40.367,
+    "timeline_out": 43.533,
+    "source": "code_graphic_008_p5_08_looking_path.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:09_wood_vs_metal",
+    "timeline_in": 43.533,
+    "timeline_out": 50.4,
+    "source": "code_graphic_008_p5_09_wood_vs_metal.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:10_metal_easy",
+    "timeline_in": 50.4,
+    "timeline_out": 53.4,
+    "source": "code_graphic_008_p5_10_metal_easy.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:11_safe_path",
+    "timeline_in": 53.4,
+    "timeline_out": 60.4,
+    "source": "code_graphic_008_p5_11_safe_path.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  }
+]

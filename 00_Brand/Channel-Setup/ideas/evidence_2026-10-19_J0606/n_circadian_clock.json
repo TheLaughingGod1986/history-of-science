@@ -1,0 +1,297 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "circadian rhythm body clock",
+  "biological clock sleep"
+ ],
+ "autocomplete": {
+  "circadian rhythm body clock": [
+   "circadian rhythm biological clock",
+   "body clock circadian rhythm"
+  ],
+  "biological clock sleep": [
+   "biological clock sleep",
+   "body clock sleep"
+  ]
+ },
+ "sharedTitleWords": [
+  "of sleep",
+  "sleep sleeping",
+  "sleeping with",
+  "with science",
+  "science a",
+  "a ted",
+  "ted series"
+ ],
+ "neighbours": [
+  {
+   "id": "5MuIMqhT8DM",
+   "title": "Sleep Is Your Superpower | Matt Walker | TED",
+   "channel": "TED",
+   "views": "17,491,225 views",
+   "age": "7 yr ago",
+   "length": "19:19",
+   "tier": 1,
+   "viewCount": 17491225,
+   "foundBy": "circadian rhythm body clock ted",
+   "onTopic": true
+  },
+  {
+   "id": "dqONk48l5vY",
+   "title": "What would happen if you didn’t sleep? - Claudia Aguirre",
+   "channel": "TED-Ed",
+   "views": "15,013,001 views",
+   "age": "10 yr ago",
+   "length": "4:35",
+   "tier": 1,
+   "viewCount": 15013001,
+   "foundBy": "ted-ed biological clock sleep",
+   "onTopic": true
+  },
+  {
+   "id": "gedoSfZvBgE",
+   "title": "The benefits of a good night's sleep - Shai Marcu",
+   "channel": "TED-Ed",
+   "views": "7,466,063 views",
+   "age": "11 yr ago",
+   "length": "5:45",
+   "tier": 1,
+   "viewCount": 7466063,
+   "foundBy": "ted-ed biological clock sleep",
+   "onTopic": true
+  },
+  {
+   "id": "fQUeDdaVoWo",
+   "title": "Do You Really Need 8 Hours of Sleep Every Night? | Body Stuff with Dr. Jen Gunter | TED",
+   "channel": "TED",
+   "views": "4,579,748 views",
+   "age": "3 yr ago",
+   "length": "3:54",
+   "tier": 1,
+   "viewCount": 4579748,
+   "foundBy": "ted-ed biological clock sleep",
+   "onTopic": true
+  },
+  {
+   "id": "t0kACis_dJE",
+   "title": "6 tips for better sleep | Sleeping with Science, a TED series",
+   "channel": "TED",
+   "views": "2,831,715 views",
+   "age": "6 yr ago",
+   "length": "5:29",
+   "tier": 1,
+   "viewCount": 2831715,
+   "foundBy": "ted-ed biological clock sleep",
+   "onTopic": true
+  },
+  {
+   "id": "Amkg1cdDCpM",
+   "title": "Can you change your sleep schedule?",
+   "channel": "TED-Ed",
+   "views": "2,679,973 views",
+   "age": "3 yr ago",
+   "length": "4:38",
+   "tier": 1,
+   "viewCount": 2679973,
+   "foundBy": "circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "WJhCa12UTsg",
+   "title": "What lack of sleep does to the teenage brain - Wendy Troxel",
+   "channel": "TED-Ed",
+   "views": "2,030,243 views",
+   "age": "11 mo ago",
+   "length": "6:45",
+   "tier": 1,
+   "viewCount": 2030243,
+   "foundBy": "ted-ed circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "Y8ZXOfWUbms",
+   "title": "How does your body know what time it is? - Marco A. Sotomayor",
+   "channel": "TED-Ed",
+   "views": "1,045,178 views",
+   "age": "9 yr ago",
+   "length": "5:09",
+   "tier": 1,
+   "viewCount": 1045178,
+   "foundBy": "ted-ed circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "eM2VWspRpfk",
+   "title": "A walk through the stages of sleep | Sleeping with Science, a TED series",
+   "channel": "TED",
+   "views": "908,506 views",
+   "age": "6 yr ago",
+   "length": "4:48",
+   "tier": 1,
+   "viewCount": 908506,
+   "foundBy": "ted-ed biological clock sleep",
+   "onTopic": true
+  },
+  {
+   "id": "erBJuxVR7IE",
+   "title": "Health lies in healthy circadian habits | Satchin Panda | TEDxBeaconStreet",
+   "channel": "TEDx Talks",
+   "views": "506,362 views",
+   "age": "8 yr ago",
+   "length": "16:17",
+   "tier": 1,
+   "viewCount": 506362,
+   "foundBy": "biological clock sleep ted",
+   "onTopic": true
+  },
+  {
+   "id": "fciGNBN0nKM",
+   "title": "How optimizing circadian rhythms can increase healthy years | Satchin Panda | TEDxBoston",
+   "channel": "TEDx Talks",
+   "views": "229,315 views",
+   "age": "4 yr ago",
+   "length": "13:12",
+   "tier": 1,
+   "viewCount": 229315,
+   "foundBy": "circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "SrBYSinpEtU",
+   "title": "Pay attention to your body's master clock  | Emily Manoogian | TEDxSanDiegoSalon",
+   "channel": "TEDx Talks",
+   "views": "187,196 views",
+   "age": "7 yr ago",
+   "length": "15:07",
+   "tier": 1,
+   "viewCount": 187196,
+   "foundBy": "ted-ed circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "ocqn3wYTCRM",
+   "title": "The clock in our genes and in every cell of your body | Joseph Takahashi | TEDxSMU 2013",
+   "channel": "TEDx Talks",
+   "views": "117,348 views",
+   "age": "12 yr ago",
+   "length": "20:09",
+   "tier": 1,
+   "viewCount": 117348,
+   "foundBy": "ted-ed circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "2JMuljrVrSI",
+   "title": "Why Daylight Is the Secret to Great Sleep | Christine Blume | TED",
+   "channel": "TED",
+   "views": "109,603 views",
+   "age": "1 yr ago",
+   "length": "10:03",
+   "tier": 1,
+   "viewCount": 109603,
+   "foundBy": "ted-ed biological clock sleep",
+   "onTopic": true
+  },
+  {
+   "id": "UbQ0RxQu2gM",
+   "title": "Circadian Rhythm and Your Brain's Clock",
+   "channel": "SciShow",
+   "views": "1,147,761 views",
+   "age": "12 yr ago",
+   "length": "4:10",
+   "tier": 2,
+   "viewCount": 1147761,
+   "foundBy": "circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "nzUds0TIQMY",
+   "title": "Why circadian clocks? Martha Merrow at TEDxVienna",
+   "channel": "TEDx Talks",
+   "views": "38,698 views",
+   "age": "12 yr ago",
+   "length": "18:02",
+   "tier": 1,
+   "viewCount": 38698,
+   "foundBy": "ted-ed circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "rCQ5eu5Mh2A",
+   "title": "Listen to your body's master clock | Emily Manoogian | TEDxSanDiegoSalon",
+   "channel": "TEDx Talks",
+   "views": "11,662 views",
+   "age": "4 yr ago",
+   "length": "8:12",
+   "tier": 1,
+   "viewCount": 11662,
+   "foundBy": "ted-ed circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "pbrHIC6BxWw",
+   "title": "Body Clocks, Sleep and Society | Tony Fernando | TEDxAuckland",
+   "channel": "TEDx Talks",
+   "views": "5,600 views",
+   "age": "5 yr ago",
+   "length": "11:05",
+   "tier": 1,
+   "viewCount": 5600,
+   "foundBy": "biological clock sleep ted",
+   "onTopic": true
+  },
+  {
+   "id": "OHSvAKNvq58",
+   "title": "The circadian rhythm and health | Satchin Panda | TEDxBoston",
+   "channel": "TEDx Talks",
+   "views": "5,081 views",
+   "age": "7 mo ago",
+   "length": "17:54",
+   "tier": 1,
+   "viewCount": 5081,
+   "foundBy": "ted-ed circadian rhythm body clock",
+   "onTopic": true
+  },
+  {
+   "id": "r6x9Dc73ja4",
+   "title": "Circadian Medicine - Will Change the World | Tami Martino | TEDxGuelphU",
+   "channel": "TEDx Talks",
+   "views": "1,741 views",
+   "age": "7 yr ago",
+   "length": "13:41",
+   "tier": 1,
+   "viewCount": 1741,
+   "foundBy": "circadian rhythm body clock ted",
+   "onTopic": true
+  },
+  {
+   "id": "mSAqiQZvqFQ",
+   "title": "How the fruit fly helped to understand your biological clock | Jaga Giebułtowicz | TEDxSGH",
+   "channel": "TEDx Talks",
+   "views": "972 views",
+   "age": "8 yr ago",
+   "length": "16:04",
+   "tier": 1,
+   "viewCount": 972,
+   "foundBy": "circadian rhythm body clock ted",
+   "onTopic": true
+  },
+  {
+   "id": "o5pRCl9fQUo",
+   "title": "Recalibrating Your Circadian Rhythm with Light | Amanda Gerald | TEDxErasmusUniversityCollege",
+   "channel": "TEDx Talks",
+   "views": "727 views",
+   "age": "3 yr ago",
+   "length": "17:06",
+   "tier": 1,
+   "viewCount": 727,
+   "foundBy": "ted-ed circadian rhythm body clock",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 9,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

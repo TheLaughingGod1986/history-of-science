@@ -1,0 +1,156 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "what are prions mad cow disease",
+  "stanley prusiner"
+ ],
+ "autocomplete": {
+  "what are prions mad cow disease": [
+   "what causes mad cow disease",
+   "what is mad cow disease",
+   "mad cow disease prions"
+  ],
+  "stanley prusiner": [
+   "stanley prusiner",
+   "stanley b. prusiner"
+  ]
+ },
+ "sharedTitleWords": [
+  "prion disease",
+  "disease before",
+  "before it",
+  "it s",
+  "s too",
+  "too late",
+  "sonia vallabh",
+  "mad cow",
+  "cow disease"
+ ],
+ "neighbours": [
+  {
+   "id": "04PmEJaYKd0",
+   "title": "My Quest to Cure Prion Disease — Before It’s Too Late | Sonia Vallabh | TED",
+   "channel": "TED",
+   "views": "1,117,788 views",
+   "age": "2 yr ago",
+   "length": "18:07",
+   "tier": 1,
+   "viewCount": 1117788,
+   "foundBy": "ted-ed what are prions mad cow disease",
+   "onTopic": true
+  },
+  {
+   "id": "Rnln3C-Las4",
+   "title": "The diseases that changed humanity forever - Dan Kwartler",
+   "channel": "TED-Ed",
+   "views": "1,017,986 views",
+   "age": "2 yr ago",
+   "length": "5:44",
+   "tier": 1,
+   "viewCount": 1017986,
+   "foundBy": "ted-ed what are prions mad cow disease",
+   "onTopic": true
+  },
+  {
+   "id": "N9LC-3ZKiok",
+   "title": "How a few scientists transformed the way we think about disease - Tien Nguyen",
+   "channel": "TED-Ed",
+   "views": "836,709 views",
+   "age": "10 yr ago",
+   "length": "4:39",
+   "tier": 1,
+   "viewCount": 836709,
+   "foundBy": "ted-ed stanley prusiner",
+   "onTopic": true
+  },
+  {
+   "id": "d2daVaZZHYE",
+   "title": "The Disease You Will Never Survive",
+   "channel": "MinuteEarth",
+   "views": "1,527,181 views",
+   "age": "3 yr ago",
+   "length": "4:14",
+   "tier": 2,
+   "viewCount": 1527181,
+   "foundBy": "what are prions mad cow disease",
+   "onTopic": true
+  },
+  {
+   "id": "Pxojz6grwcU",
+   "title": "What Actually Caused Mad Cow Disease",
+   "channel": "SciShow",
+   "views": "1,114,430 views",
+   "age": "9 yr ago",
+   "length": "4:32",
+   "tier": 2,
+   "viewCount": 1114430,
+   "foundBy": "what are prions mad cow disease",
+   "onTopic": true
+  },
+  {
+   "id": "tJ2gOTxOSys",
+   "title": "Mad Cow Disease Mostly Infects Teenagers",
+   "channel": "SciShow",
+   "views": "318,611 views",
+   "age": "1 yr ago",
+   "length": "12:47",
+   "tier": 2,
+   "viewCount": 318611,
+   "foundBy": "what are prions mad cow disease",
+   "onTopic": true
+  },
+  {
+   "id": "eFrh78x76qU",
+   "title": "Prions - Amoeba Sisters #Shorts",
+   "channel": "Amoeba Sisters",
+   "views": "177,129 views",
+   "age": "4 yr ago",
+   "length": "1:00",
+   "tier": 2,
+   "viewCount": 177129,
+   "foundBy": "what are prions mad cow disease ted",
+   "onTopic": true
+  },
+  {
+   "id": "otNea-jNmXU",
+   "title": "Sonia Vallabh is on a mission to create a CURE for prion disease — before it’s too late #TEDTalks",
+   "channel": "TED",
+   "views": "53,375 views",
+   "age": "1 yr ago",
+   "length": "1:20",
+   "tier": 1,
+   "viewCount": 53375,
+   "foundBy": "what are prions mad cow disease ted",
+   "onTopic": true
+  },
+  {
+   "id": "5qWBAxf-my0",
+   "title": "What if we could hear disease? | Dr. Hossein Zargartalebi | TEDxChicago",
+   "channel": "TEDx Talks",
+   "views": "14,674 views",
+   "age": "10 mo ago",
+   "length": "13:13",
+   "tier": 1,
+   "viewCount": 14674,
+   "foundBy": "stanley prusiner ted",
+   "onTopic": true
+  },
+  {
+   "id": "jW_hqvSJz40",
+   "title": "Nobody is coming to save you | Stanley Henry | TEDxVUW",
+   "channel": "TEDx Talks",
+   "views": "220 views",
+   "age": "5 mo ago",
+   "length": "16:45",
+   "tier": 1,
+   "viewCount": 220,
+   "foundBy": "stanley prusiner ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

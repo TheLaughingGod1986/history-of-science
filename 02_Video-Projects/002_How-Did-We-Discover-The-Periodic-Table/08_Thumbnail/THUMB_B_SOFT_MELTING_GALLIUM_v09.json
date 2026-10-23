@@ -1,0 +1,98 @@
+{
+  "film": "002",
+  "video": "AL_-qlWko_g",
+  "job": "J0624",
+  "variant": "B v09 (1.036x gallium hero push-in + concrete named-element hook; pairs with B v08 'ONE GLOWING GAP' and B v07 'METAL TURNS LIQUID')",
+  "maker": "gemini",
+  "hook": "SOFT MELTING GALLIUM",
+  "punch": "GALLIUM",
+  "jpg": "Selected/hos_002_thumb_B_soft_melting_gallium_v09.jpg",
+  "sha256": "320dabe6fef92cf92954f6e519008dc940182726ba72add4e1b63af4d5bf6148",
+  "bytes": 290572,
+  "plates": [
+    "Selected/hos_002_thumb_A_gallium_live_v02.png (NAS 002 painted 16:9 key-art plate: giant liquid-gallium arch & droplet on right two-thirds with 1.036x hero push-in + Explorer lower-left + original gold scroll flourishes)"
+  ],
+  "method": "existing_002_plate_only_1.036x_hero_push_in_and_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    544,
+    16,
+    1276,
+    705
+  ],
+  "explorer": {
+    "source": "hos_002_thumb_A_gallium_live_v02.png",
+    "box": [
+      42,
+      300,
+      256,
+      720
+    ],
+    "height_px": 420,
+    "height_frac": 0.583
+  },
+  "lettering": [
+    {
+      "word": "SOFT",
+      "kind": "cream",
+      "size": 98,
+      "box": [
+        164,
+        75,
+        433,
+        163
+      ]
+    },
+    {
+      "word": "MELTING",
+      "kind": "cream",
+      "size": 78,
+      "box": [
+        106,
+        151,
+        490,
+        221
+      ]
+    },
+    {
+      "word": "GALLIUM",
+      "kind": "gold",
+      "size": 82,
+      "box": [
+        92,
+        209,
+        504,
+        284
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      113,
+      28,
+      485,
+      63
+    ],
+    "bottom_scroll_box": [
+      197,
+      311,
+      467,
+      359
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'SOFT MELTING GALLIUM' (3 words, punch word 'GALLIUM' in gold) names the concrete discovery element ('GALLIUM') and visible physical state ('SOFT MELTING') shown by the giant silvery melting gallium arch and falling droplet on the right two-thirds (002 script Part 05: '1875. Gallium. Soft, strange, almost liquid in a warm room' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover the Periodic Table?'), J0374 ('THE MISSING ELEMENT'), J0442 ('PREDICTED BEFORE FOUND'), J0488 ('EMPTY ON PURPOSE'), J0534 ('METAL TURNS LIQUID'), or J0579 ('ONE GLOWING GAP'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=92..504, y=75..284, framed by original painted gold scroll flourishes at y=28..359) sits completely left of the pushed-in hero gallium arch (x=544..1276), above the Explorer's hair (y=300) and bottom flourish (y=311), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel strip: the 1.036x hero push-in and metallic specular clarity boost make the giant silvery liquid-gallium arch and falling droplet bold and unmistakable at 168x94 while keeping 'SOFT MELTING GALLIUM' and the Explorer's face/glasses (58.3% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_002_thumb_B_soft_melting_gallium_v09_preview.jpg",
+    "Selected/hos_002_thumb_B_soft_melting_gallium_v09_style_sheet.jpg",
+    "Selected/hos_002_thumb_TC_4way_soft_melting_gallium_v09_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v09 candidate for 002 (AL_-qlWko_g, built from existing 002 plate only with 1.036x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

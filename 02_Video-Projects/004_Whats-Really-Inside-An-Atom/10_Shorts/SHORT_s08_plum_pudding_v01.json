@@ -1,0 +1,227 @@
+{
+  "id": "s08_plum_pudding",
+  "job": "J0699",
+  "test": "B (search-titled)",
+  "air_date_draft": "2027-01-08",
+  "file": "10_Shorts/hos_004_s08_plum_pudding_v01.mp4",
+  "sha256": "5ddd8c32f45c97fb32e96429360d194cf07cc158c6ac5eb78aee609f7a377e4d",
+  "duration_s": 25.033,
+  "vo_source": "02_Voiceover/05_Master/hos_004_part03_vo_v01.mp3",
+  "vo_take_indices": [
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202
+  ],
+  "dropped": [],
+  "route": "claim-first contiguous lift: Every atom carries these tiny negative particles. \u2026 It was a lovely idea. It was also wrong. (139\u2013202 from Part 03)",
+  "vo_s": 24.47,
+  "words": 64,
+  "max_pause_s": 0.22,
+  "atempo": 1.04,
+  "bed": "hos004-part03-temp_score_bed_v01.mp3",
+  "bed_gain_db": -23.3,
+  "hook": "PLUM MODEL",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 2,
+    "block_pct": [
+      39.5,
+      60.4
+    ],
+    "widest_pct": 90.4
+  },
+  "who_card": {
+    "name": "J.J. THOMSON",
+    "line2": "Plum pudding model, 1904",
+    "line1_px": 69,
+    "line1_pct_of_band": 11.3,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.3,
+    "out_s": 5.9,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "What's Really Inside an Atom?",
+  "youtube_title_draft": "What Is the Plum Pudding Model of the Atom?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.364,
+      "plate": "04_Generated-Clips/part03/raw/v01/13_atom_cracks_v01.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.364,
+      "t1": 6.608,
+      "plate": "04_Generated-Clips/part03/raw/v01/14_electrons_named_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Thomson"
+    },
+    {
+      "t0": 6.608,
+      "t1": 9.124,
+      "plate": "04_Generated-Clips/part03/raw/v01/10_two_thousand_lighter_v01.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "electrons."
+    },
+    {
+      "t0": 9.124,
+      "t1": 11.881,
+      "plate": "04_Generated-Clips/part03/raw/v01/15_positive_balance_v01.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "charge,"
+    },
+    {
+      "t0": 11.881,
+      "t1": 15.51,
+      "plate": "04_Generated-Clips/part03/raw/v01/16_plum_pudding_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "out."
+    },
+    {
+      "t0": 15.51,
+      "t1": 19.632,
+      "plate": "04_Generated-Clips/part03/raw/v01/17_raisins_settle_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "his"
+    },
+    {
+      "t0": 19.632,
+      "t1": 22.02,
+      "plate": "04_Generated-Clips/part03/raw/v01/19_lovely_and_wrong_v01.mp4",
+      "in_s": 0.2,
+      "crop_x": 656,
+      "lands_on": "through"
+    },
+    {
+      "t0": 22.02,
+      "t1": 25.02,
+      "plate": "04_Generated-Clips/part03/raw/v01/13_atom_cracks_v01.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 20,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_004_s08_plum_pudding_v01.mp4  dur=25.03s  audio=-22.9dB  motion=22.32  dhash=004e844c468486a4\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s08_plum_pudding_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_004_s08_plum_pudding_v01.mp4  0:25.03  mean -22.9 dB  peak -3.8 dB  158 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/polish_gate_s08_plum_pudding_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s08_plum_pudding_v01/hos_004_s08_plum_pudding_v01_t000.0.jpg",
+    "10_Shorts/_work_s08_plum_pudding_v01/hos_004_s08_plum_pudding_v01_t003.8.jpg",
+    "10_Shorts/_work_s08_plum_pudding_v01/hos_004_s08_plum_pudding_v01_t011.5.jpg",
+    "10_Shorts/_work_s08_plum_pudding_v01/hos_004_s08_plum_pudding_v01_t024.0.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s08_plum_pudding_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-20",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "what is the plum pudding model",
+      "plum pudding model",
+      "plum pudding model gcse",
+      "plum pudding model gcse chemistry",
+      "plum pudding model vs nuclear model",
+      "plum pudding model gcse physics",
+      "thomson plum pudding model",
+      "jj thomson plum pudding model"
+    ],
+    "note": "'what is the plum pudding model', 'plum pudding model', 'plum pudding model gcse', 'plum pudding model vs nuclear model', and 'jj thomson plum pudding model' are exact signed-out GB YouTube autocomplete hits. Title draft 'What Is the Plum Pudding Model of the Atom?' (with 'What Was Thomson's Plum Pudding Model?' and 'Why Did Thomson Propose the Plum Pudding Model?' as alternatives) is answered directly by the lifted Part 03 VO: every atom carries tiny negative particles (corpuscles/electrons), and since atoms have no overall charge, in 1904 J.J. Thomson proposed a soft ball of positive stuff with electrons dotted through it like raisins in a pudding. Fifth search-titled Short on HOS 004 (first of Round 5 after 001..006 reached 4 each). Chief's call."
+  },
+  "air_date_draft_note": "2027-01-08 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 03 setting J.J. THOMSON \u00b7 Plum pudding model, 1904, on screen 2.3\u20135.9 s (3.6 s) right while 'Thomson called them corpuscles. Today we call them electrons.' is spoken. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "Zero overlap with 004 s01_how_small (Part 01), s02_every_eighth / s05_dalton (Part 02), s04_cathode_rays (Part 03 indices 11..70 / 5.3\u201331.6 s), backcat_gold_foil (Part 04), s06_moseley_atomic_number (Part 05 indices 53..158), or s07_outer_electrons (Part 05 indices 201..248, 313..328): this lifts contiguous indices 139..202 of Part 03 (electrons named + 1904 plum pudding model), which had never been used in any 004 Short."
+}

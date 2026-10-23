@@ -1,0 +1,228 @@
+{
+  "id": "s07_priestley_mint",
+  "job": "J0623",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-29",
+  "file": "10_Shorts/hos_006_s07_priestley_mint_v01.mp4",
+  "sha256": "253b56176b878c153a7198e650f51c848dd8bba5b4d164248cabdcef6f70ce44",
+  "duration_s": 23.767,
+  "vo_source": "02_Voiceover/part03_the_air_that_mint_repaired_v01_raw.mp3",
+  "vo_take_indices": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    210,
+    211,
+    212,
+    213
+  ],
+  "dropped": [
+    "Priestley called that air injured. So, on the seventeenth of August,",
+    "Then he tried air that mice had made stale with their breathing. In the jar where mint had grown, a mouse lived perfectly well. Why does that matter? Because every fire and every animal on Earth uses the air up.",
+    "Priestley wrote that the damage animals do to the air is repaired by \"the vegetable creation.\""
+  ],
+  "route": "claim-first lift: If you burn a candle inside a sealed glass jar, the flame soon dies, and the air left behind won't let another candle burn. He slipped a sprig of mint into a jar of that injured air, and waited. Ten days later, he lowered in another candle. It burned perfectly well. Something had to be putting it back. Plants repair the air. (85\u2013108, 120\u2013146, 187\u2013193, 210\u2013213 from Part 03)",
+  "vo_s": 23.184,
+  "words": 62,
+  "max_pause_s": 0.3,
+  "atempo": 1.02,
+  "bed": "hos006_s07_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -23.3,
+  "hook": "MINT IN GLASS",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 80.0
+  },
+  "who_card": {
+    "name": "JOSEPH PRIESTLEY",
+    "line2": "Leeds, 1771",
+    "line1_px": 69,
+    "line1_pct_of_band": 11.3,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 4.8,
+    "out_s": 8.4,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Willow Tree That Was Made of Air",
+  "youtube_title_draft": "How Do Plants Clean the Air?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.233,
+      "plate": "04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+      "in_s": 2.0,
+      "crop_x": 560,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.233,
+      "t1": 5.652,
+      "plate": "04_Generated-Clips/part03/raw/v01/08_candles_out_t1.mp4",
+      "in_s": 5.4,
+      "crop_x": 460,
+      "lands_on": "flame"
+    },
+    {
+      "t0": 5.652,
+      "t1": 8.403,
+      "plate": "04_Generated-Clips/part03/raw/v01/07_priestley_t1.mp4",
+      "in_s": 2.2,
+      "crop_x": 656,
+      "lands_on": "behind"
+    },
+    {
+      "t0": 8.403,
+      "t1": 13.036,
+      "plate": "04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 590,
+      "lands_on": "He"
+    },
+    {
+      "t0": 13.036,
+      "t1": 16.683,
+      "plate": "04_Generated-Clips/part04/raw/v01/06_collect_blaze_t3.mp4",
+      "in_s": 3.6,
+      "crop_x": 656,
+      "lands_on": "Ten"
+    },
+    {
+      "t0": 16.683,
+      "t1": 18.806,
+      "plate": "04_Generated-Clips/part03/raw/v01/15_quill_vegetable_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "It"
+    },
+    {
+      "t0": 18.806,
+      "t1": 20.734,
+      "plate": "04_Generated-Clips/part03/raw/v01/14_trees_breathe_t1.mp4",
+      "in_s": 3.2,
+      "crop_x": 656,
+      "lands_on": "Something"
+    },
+    {
+      "t0": 20.734,
+      "t1": 23.734,
+      "plate": "04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+      "in_s": 2.0,
+      "crop_x": 560,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 17,
+  "caption_check": {
+    "ok": true,
+    "changes": 17,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_006_s07_priestley_mint_v01.mp4  dur=23.77s  audio=-23.8dB  motion=12.03  dhash=2f2f6e7e3d2dccfc\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s07_priestley_mint_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_006_s07_priestley_mint_v01.mp4  0:23.77  mean -23.8 dB  peak -4.1 dB  157 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/polish_gate_s07_priestley_mint_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/picture_qa_s07_priestley_mint_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/picture_qa_s07_priestley_mint_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s07_priestley_mint_v01/hos_006_s07_priestley_mint_v01_t000.0.jpg",
+    "10_Shorts/_work_s07_priestley_mint_v01/hos_006_s07_priestley_mint_v01_t005.5.jpg",
+    "10_Shorts/_work_s07_priestley_mint_v01/hos_006_s07_priestley_mint_v01_t011.0.jpg",
+    "10_Shorts/_work_s07_priestley_mint_v01/hos_006_s07_priestley_mint_v01_t017.5.jpg",
+    "10_Shorts/_work_s07_priestley_mint_v01/hos_006_s07_priestley_mint_v01_t022.8.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s07_priestley_mint_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-19",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "how do plants clean the air",
+      "do plants clean the air",
+      "how do plants purify air",
+      "why do we need plants",
+      "joseph priestley bell jar experiment",
+      "joseph priestley experiment"
+    ],
+    "note": "'how do plants clean the air', 'do plants clean the air', 'why do we need plants', and 'joseph priestley bell jar experiment' are exact signed-out GB YouTube autocomplete hits. Title draft 'How Do Plants Clean the Air?' (with 'Why Do We Need Plants?' and 'What Was Joseph Priestley's Bell Jar Experiment?' as exact-autocomplete alternatives) is answered directly by the lifted Part 03 VO: Joseph Priestley's 1771 sealed glass jar experiment showing a candle flame dying in injured air, a sprig of mint restoring the air so another candle burns ten days later, and plants repairing the air. Chief's call."
+  },
+  "air_date_draft_note": "2026-12-29 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card JOSEPH PRIESTLEY \u00b7 Leeds, 1771 on screen 4.8\u20138.4 s (3.6 s) right as 'and the air left behind won't let another candle burn.' lands on Priestley's portrait plate. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No VO overlap with 006 s04_photosynthesis (Part 05 de Saussure / leaf pores to sugar to wood), s05_charcoal_gas (Part 02 van Helmont 62 lb charcoal \u2192 1 lb ash), or s06_ingenhousz_oxygen (Part 04 Jan Ingenhousz underwater leaf bubbles in sunlight): this is the first built Short lifted from 006 Part 03 (Joseph Priestley's 1771 sealed glass jar, candle, and sprig of mint experiment showing that plants repair the air)."
+}

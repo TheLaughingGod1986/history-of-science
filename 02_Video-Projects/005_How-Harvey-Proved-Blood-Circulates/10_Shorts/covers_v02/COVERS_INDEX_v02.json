@@ -67,6 +67,31 @@
         45.1
       ],
       "preview": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s03_never_saw_cover_v02_preview.jpg"
+    },
+    "s04_galen_stove": {
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s04_galen_stove_cover_v02.jpg",
+      "sha256": "d12fdf6a44072aee6b0a7b0504cecc631e87fce523aaa75e12514bcff66336c6",
+      "title": "Is the Heart a Pump?",
+      "words": [
+        "IS THE",
+        "HEART A",
+        "PUMP?"
+      ],
+      "scene": "hos_005_s04_scene_v02.png",
+      "scene_source": "04_Generated-Clips/part02/raw/v01/05_heart_stove_t1.mp4 @ 0.3 s",
+      "letters": "hos_005_s04_letters_v02.jpg",
+      "stack_width_pct": 84.6,
+      "stack_x_pct": [
+        7.7,
+        92.3
+      ],
+      "stack_y_pct": [
+        4.5,
+        45.5
+      ],
+      "job": "J0230",
+      "preview": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s04_galen_stove_cover_v02_preview.jpg",
+      "style_sheet": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_shorts_covers_v02_s04_style_sheet.jpg"
     }
   },
   "style_sheet": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_shorts_covers_v02_style_sheet.jpg"

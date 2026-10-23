@@ -1,0 +1,24 @@
+{
+  "long_id": null,
+  "long_url": null,
+  "long_title": "Why Vaccines Are Named After a Cow",
+  "channel": "@HistoryOfScienceYT",
+  "affiliate": null,
+  "note": "Do not social-mirror until each Short is public on YouTube and its promoted long has an id. Set Related -> 007 long once it has an id, before the Short goes public.",
+  "shorts": [
+    {
+      "id": "s04_smallpox_test",
+      "file": "10_Shorts/hos_007_s04_smallpox_test_v01.mp4",
+      "title": "What Was the Edward Jenner Experiment?",
+      "schedule_iso": "2026-11-13T11:30:00Z",
+      "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/@HistoryOfScienceYT\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed.",
+      "video_id": "-I_GHK-GcFs",
+      "youtube_video_id": "-I_GHK-GcFs",
+      "url": "https://youtu.be/-I_GHK-GcFs",
+      "related": null,
+      "visibility": "private",
+      "published_now": false,
+      "go": null
+    }
+  ]
+}

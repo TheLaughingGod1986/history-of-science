@@ -5,7 +5,7 @@
   "title": "Bubbles in the Sunlight",
   "status": "BOARD_V01",
   "mint": false,
-  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v02 (VO_RETIME_v02.json) · priced (Claude desk task 5951184558, 2 Oct 2026)",
+  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v02 (VO_RETIME_v02.json) \u00b7 priced (Claude desk task 5951184558, 2 Oct 2026)",
   "script": "01_Script/trees_script_master_v02.md",
   "vo_file": "02_Voiceover/part04_bubbles_in_the_sunlight_v02.mp3",
   "vo_sha256": "64dea1c0dd63d3fdbbccedef86ee6d8bcf91911f3ca02f4e9665883f32e32ed2",
@@ -60,7 +60,7 @@
       "t_s": 279.78,
       "t": "4:39.78",
       "explorer": false,
-      "side_label": "A VILLA NEAR LONDON · 1779",
+      "side_label": "A VILLA NEAR LONDON \u00b7 1779",
       "quality": "Fast",
       "engine_reason": "Fast: held establishing shot, slow push, no readable faces, nothing emissive.",
       "prompt": "Premium Animistry-class 3D cartoon. Summer 1779: a Georgian country house with tall windows in green fields; glass jars of water and leaves crowd every windowsill and glint in the sun. Held wide shot, slow push. No people. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
@@ -74,7 +74,11 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 77.81,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "01_villa_t1.mp4",
+      "kept_sha256": "a05dadf636ed97cbbd937004072b67ff9af3ded5df578d5c198d3387fe0c3b17",
+      "uat_note": "KEEP Vertex t1 (Chief, desk #180 6131279209)"
     },
     {
       "id": "02_ingenhousz_jars",
@@ -94,7 +98,11 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 81.2,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "02_ingenhousz_jars_t1.mp4",
+      "kept_sha256": "204e44b293db8587b483aef791113327768b60d84d3385d510fb3a62ee4e6e38",
+      "uat_note": "KEEP Vertex t1, top ceiling light cropped out per Chief note (#180 6131279209)"
     },
     {
       "id": "03_plunge_leaf",
@@ -114,7 +122,11 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 82.21,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "03_plunge_leaf_t1.mp4",
+      "kept_sha256": "609a0da61f0d83cc3f68f6d6f233b938b657e585a0cccf8fe0b8dbc83989dadd",
+      "uat_note": "KEEP Vertex t1 (Chief, desk #180 6131279209)"
     },
     {
       "id": "04_sunny_window",
@@ -135,7 +147,11 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 83.22,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "04_sunny_window_t1.mp4",
+      "kept_sha256": "33612a9b8c551ed07744dd78a6ce5f33b63c71966bac11b983dce8deb226acf8",
+      "uat_note": "KEEP Vertex t1 (Chief, desk #180 6131279209)"
     },
     {
       "id": "05_bubbles_macro",
@@ -155,7 +171,11 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 86.61,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "05_bubbles_macro_t1.mp4",
+      "kept_sha256": "0596f3b0287f79d36177a1e0c835c8184e001995c7ef0473e903568638851704",
+      "uat_note": "KEEP Flow t1 (Chief, desk #180 6137551906)"
     },
     {
       "id": "06_collect_blaze",
@@ -165,7 +185,7 @@
       "side_label": "OXYGEN (on the blaze)",
       "quality": "Quality",
       "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
-      "prompt": "Premium Animistry-class 3D cartoon. Ingenhousz's hands hold a small upside-down glass tube over the leaf jar to collect the rising bubbles; then a small candle flame lowered into the tube blazes up bright and tall. Silent. Continuous motion through the final frame. No Explorer.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close-up on a leaf jar on a table; only Ingenhousz's hands and cuffs in frame, no face, no full figure, no bell jar over a plant. His hands hold a small upside-down glass test tube over the leaf jar, catching the silver bubbles as they rise; then one hand lowers a small candle flame into the mouth of that tube and it blazes up bright and tall. Silent. Continuous motion through the final frame. No Explorer.",
       "use_s": 7.88,
       "vo_land": [
         "He collected the bubbles and tested the gas.",
@@ -176,7 +196,12 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 89.99,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "retake_t2": "Chief 13 Oct 03:30Z: first beat was full-figure bell jar; hands + upside-down tube over the leaf jar, then candle into that tube.",
+      "uat_disposition": "KEEP",
+      "kept_source": "06_collect_blaze_t3.mp4",
+      "kept_sha256": "69e790e4e14c530f98f07986c35d294e89b6c2d0905d3e513e611d3e4531dd41",
+      "uat_note": "KEEP (Flow Fast t3, bottom 6% trimmed to exclude frame-edge seam (Acting-Chief ruling 14 Oct 20:50Z item 1; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
     },
     {
       "id": "07_priestley_callback",
@@ -196,7 +221,11 @@
       "route": "reuse",
       "clip_s": 0,
       "cost_try1_gbp": 0.0,
-      "cost_expected_gbp": 0.0
+      "cost_expected_gbp": 0.0,
+      "uat_disposition": "REUSE",
+      "kept_source": "11_candle_tall_t1.mp4",
+      "kept_sha256": "3fe88ccf83a1eb65bbf59ee8bf75b605f72e03dc7204c6b6cef84a6ffbd06d28",
+      "uat_note": "REUSE window 0.00-6.90 s of P3:11_candle_tall (board reuse_of)"
     },
     {
       "id": "08_explorer_shade",
@@ -206,7 +235,7 @@
       "side_label": "NO LIGHT, NO BUBBLES",
       "quality": "Quality",
       "engine_reason": "Quality: explorer fidelity. Face and hair are UAT hard fail 4 (glasses, full hair, one Explorer); a Fast remint would cost more than the difference.",
-      "prompt": "Premium Animistry-class 3D cartoon. Same sunny room. Exactly ONE Explorer, on model: a young boy, messy wavy brown hair (full crown), round thin gold glasses, long teal coat, tan waistcoat, brown bow tie, satchel. He acts, then leaves. He lifts a fizzing jar of leaves from the sunny sill and carries it into the shadow, where the bubbles stop; he steps back into the sunbeam where they start again, grins and sets it down. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same sunny room. Exactly ONE Explorer, on model in every frame: a young boy, messy wavy brown hair (full crown), round thin gold glasses always on his face, long teal coat, tan waistcoat, brown bow tie, satchel. Close on the jar of green leaves in water: in the sunbeam on the sill it streams silver bubbles; he carries it a step into deep shadow and the bubbles clearly stop; he steps back into the sunbeam and the bubbles start streaming again; he grins and sets it down. Daylight from out of frame; no candle, flame, lantern, lamp, glow or fire in shot; the jar does not glow. Silent. Continuous motion through the final frame.",
       "use_s": 7.18,
       "vo_land": [
         "Then came the clue that solved Priestley's puzzle.",
@@ -217,7 +246,12 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 93.38,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "retake_t2": "Chief 13 Oct 03:30Z: action off-brief (jar glow / walk-away) and glasses not reliable; shade beat made explicit, glasses every frame.",
+      "uat_disposition": "KEEP",
+      "kept_source": "08_explorer_shade_t2.mp4",
+      "kept_sha256": "692c536419f09d0369730dd47b4e071253abbf5f6f16feb78cc525f8b356419f",
+      "uat_note": "KEEP (Flow Quality t2 (Chief ruling #180 6137551906; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
     },
     {
       "id": "09_bubbles_again",
@@ -237,7 +271,11 @@
       "route": "reuse",
       "clip_s": 0,
       "cost_try1_gbp": 0.0,
-      "cost_expected_gbp": 0.0
+      "cost_expected_gbp": 0.0,
+      "uat_disposition": "REUSE",
+      "kept_source": "05_bubbles_macro_t1.mp4",
+      "kept_sha256": "0596f3b0287f79d36177a1e0c835c8184e001995c7ef0473e903568638851704",
+      "uat_note": "REUSE window 4.20-7.62 s of P4:05_bubbles_macro (board reuse_of)"
     },
     {
       "id": "10_only_green",
@@ -258,7 +296,11 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 94.39,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "10_only_green_t2.mp4",
+      "kept_sha256": "cfd7a02a6d3f203e9528feef1bcfe1fc9f0e7a5a482a83f791de77daec55334d",
+      "uat_note": "KEEP Flow t2 (Chief, desk #180 6136917197)"
     },
     {
       "id": "11_night_jars",
@@ -278,7 +320,11 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 97.78,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "11_night_jars_t1.mp4",
+      "kept_sha256": "3461e7512bc3bf61018f42c32cb47dbc55ecf80fd8134a48541f80c9a3e28588",
+      "uat_note": "KEEP Flow t1 (Chief, desk #180 6137551906)"
     },
     {
       "id": "12_shutters_open",
@@ -300,7 +346,11 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 98.79,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "12_shutters_open_t1.mp4",
+      "kept_sha256": "fc339534bf90405afa369213590f9f9e674eedb7ac11b1f57b7569fbc7885a94",
+      "uat_note": "KEEP Flow t1 (Chief, desk #180 6137551906)"
     },
     {
       "id": "13_sun_canopy",
@@ -321,7 +371,11 @@
       "cost_try1_gbp": 0.32,
       "cost_expected_gbp": 0.7,
       "cum_expected_gbp": 99.49,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "13_sun_canopy_t1.mp4",
+      "kept_sha256": "43500d427cb1667ce98d00b6e1a499e833b71bb5e91897b510eb3f9c127d45fb",
+      "uat_note": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
     },
     {
       "id": "14_leaf_glow",
@@ -342,7 +396,11 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 102.87,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "14_leaf_glow_t1.mp4",
+      "kept_sha256": "43b24863448a6860acf0a7ae798af23d734a906da261e8bb4aacd95bb05eaf52",
+      "uat_note": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
     },
     {
       "id": "15_leaf_turns_sun",
@@ -362,7 +420,11 @@
       "cost_try1_gbp": 0.32,
       "cost_expected_gbp": 0.7,
       "cum_expected_gbp": 103.57,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "15_leaf_turns_sun_t1.mp4",
+      "kept_sha256": "c69d74e82e593507617d728567009110ea7cfff7d9e5a465f3854f03586ac7ae",
+      "uat_note": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
     },
     {
       "id": "16_pores_question",
@@ -384,7 +446,18 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 104.9,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "16_pores_question_t1.mp4",
+      "kept_sha256": "968dcaca90963cd6cda723cf19545c7b1f195553587ecd200b1c887c857269f1",
+      "uat_note": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
     }
-  ]
+  ],
+  "uat_applied": {
+    "status": "KEEP",
+    "authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)",
+    "date": "2026-10-15",
+    "rough_meta": "07_Edit-Project/_desk/006/part04_rough_v01/ROUGH_META_part04_v01.json",
+    "rough_sha256": "fcdcce5fc5cef0d5e95e6438ba83f50cc02667622b57f2d1146bf3677685c85b"
+  }
 }

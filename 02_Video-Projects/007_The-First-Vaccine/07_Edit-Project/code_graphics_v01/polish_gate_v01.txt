@@ -1,0 +1,4 @@
+07_map_shadows     3.0s code_graphic_007_p1_07_map_s WARN low detail: edge density 0.0444 < film p5 0.0448
+11_news_spreads     9.2s code_graphic_007_p4_11_news_ ok
+08_body_learns    15.4s code_graphic_007_p5_08_body_ ok
+polish gate PASS: 0 of 3 rows failed, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/code_graphics_v01/polish_gate_v01.json

@@ -1,0 +1,15 @@
+{
+  "status": "not_posted_missing_BUFFER_HOS_API_KEY",
+  "orgId": "6431f03385378b838b780157",
+  "videoId": "5n7xFQRBUvI",
+  "dueAt": "2026-10-31T11:30:00Z",
+  "mediaPath": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v01.mp4",
+  "sha256": "c4971738d14c64fc347f054fa4c12dbe1c03d08622ebbab8c3bb3e0ba83fea4f",
+  "alt": "A cutaway figure whose heart sits on a glowing wood stove, captioned NOT A PUMP.",
+  "captions": {
+    "facebook": "Galen taught that the heart's job was to heat the blood, not to pump it.\nWhat did you think the heart did, before anyone told you?\nFull film: https://www.youtube.com/watch?v=wwcjcFfC-5M",
+    "instagram": "Galen taught that the heart's job was to heat the blood, not to pump it.\nWhat did you think the heart did, before anyone told you?\nFull film on YouTube, link in bio",
+    "tiktok": "Galen taught that the heart's job was to heat the blood, not to pump it.\nWhat did you think the heart did, before anyone told you?\nFull film on YouTube, link in bio"
+  },
+  "guard": "HOS Buffer org only; connected HOS destinations only; uniqueness and destination guards before posting. Never use Orbit key."
+}

@@ -1,0 +1,100 @@
+{
+  "film": "001",
+  "video": "_C92tIJCk8A",
+  "job": "J0457",
+  "replaces": "hos_001_thumb_A_animistry_flask_v01.jpg title-repeating text ('HOW DID WE DISCOVER GERMS?'); pairs with A live and J0391 B v01 ('THE SWAN NECK') for 3-way Test & Compare",
+  "variant": "B v02 (ward glowing-microbe flask variant; pairs with A live and/or J0391 B v01 THE SWAN NECK)",
+  "maker": "gemini",
+  "hook": "TRAPPED IN GLASS",
+  "punch": "TRAPPED",
+  "jpg": "Selected/hos_001_thumb_B_trapped_in_glass_v02.jpg",
+  "sha256": "d8c00999797857d0c2934d57c7339b929c32499540b720c6b59f95c69fbfda55",
+  "bytes": 315912,
+  "plates": [
+    "Selected/hos_001_thumb_A_animistry_flask_v01.png (NAS 001 painted 16:9 key-art plate: giant glowing swan-neck flask with faceless microbes on right two-thirds + Explorer lower-left + original gold scroll flourishes)",
+    "Selected/hos_001_tc_thumb_v02.jpg (NAS 001 companion key-art plate: symmetric center gold scroll ornament reference)"
+  ],
+  "method": "existing_001_plate_only_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    583,
+    20,
+    1279,
+    719
+  ],
+  "explorer": {
+    "source": "hos_001_thumb_A_animistry_flask_v01.png",
+    "box": [
+      82,
+      366,
+      308,
+      720
+    ],
+    "height_px": 354,
+    "height_frac": 0.492
+  },
+  "lettering": [
+    {
+      "word": "TRAPPED",
+      "kind": "gold",
+      "size": 96,
+      "box": [
+        57,
+        89,
+        519,
+        172
+      ]
+    },
+    {
+      "word": "IN",
+      "kind": "cream",
+      "size": 74,
+      "box": [
+        240,
+        166,
+        335,
+        231
+      ]
+    },
+    {
+      "word": "GLASS",
+      "kind": "cream",
+      "size": 112,
+      "box": [
+        101,
+        225,
+        475,
+        327
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      88,
+      20,
+      496,
+      60
+    ],
+    "bottom_scroll_box": [
+      140,
+      355,
+      445,
+      390
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'TRAPPED IN GLASS' (3 words, punch word 'TRAPPED' in gold) names Pasteur's curved-glass flask trap holding airborne dust and microbes (001 script Part 04 'a flask that trapped the truth'), shares zero words with the video title ('How Did We Discover Germs?') or J0391's 'THE SWAN NECK', and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=57..519, y=89..327, framed by original painted gold scroll flourishes at y=20..390) sits completely left of the glowing swan-neck flask in the upper half (x>=583), above the Explorer's hair (y=366) and bottom flourish (y=355), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 3-way T&C comparison strip: 'TRAPPED IN GLASS', the giant glowing swan-neck flask with faceless microbes, and the Explorer's face/glasses (49.2% height) all read at a glance at 168x94."
+  },
+  "previews": [
+    "Selected/hos_001_thumb_B_trapped_in_glass_v02_preview.jpg",
+    "Selected/hos_001_thumb_B_trapped_in_glass_v02_style_sheet.jpg",
+    "Selected/hos_001_thumb_TC_3way_trapped_in_glass_v02_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v02 candidate for 001 (_C92tIJCk8A, built from existing 001 plates only, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

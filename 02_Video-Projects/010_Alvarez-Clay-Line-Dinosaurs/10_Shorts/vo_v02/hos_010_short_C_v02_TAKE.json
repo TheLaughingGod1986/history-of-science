@@ -1,0 +1,58 @@
+{
+  "stem": "hos_010_short_C_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0159"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 325,
+      "duration_s": 22.56
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 325,
+  "words": 57,
+  "duration_s": 22.56,
+  "loudness": {
+    "lufs_integrated": -20.0,
+    "mean_volume_db": -23.2,
+    "max_volume_db": -4.2
+  },
+  "sha256_mp3": "20432ecd645b28e9fdc051578a284cb2845bd09f3040170b192089b256055b87",
+  "scribe": {
+    "transcript": "Not all the dinosaurs died. When the asteroid struck sixty-six million years ago, a few small feathered ones survived. Their descendants are all around you now: the pigeon on the pavement, the robin in the garden, the gull at the seaside. Every bird you have ever seen is a living dinosaur. Look up. They never really left",
+    "script_words": 58,
+    "scribe_words": 58,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 200800,
+      "limit": 209536,
+      "remaining": 8736
+    },
+    "after": {
+      "used": 200800,
+      "limit": 209536,
+      "remaining": 8736
+    },
+    "counter_delta": 0
+  },
+  "text": "Not all the dinosaurs died. When the asteroid struck, sixty-six million years ago, a few small, feathered ones survived. Their descendants are all around you now. The pigeon on the pavement. The robin in the garden. The gull at the seaside. Every bird you have ever seen is a living dinosaur. Look up. They never really left.",
+  "made_at": "2026-10-12T19:56:36+0100"
+}

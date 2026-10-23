@@ -1,0 +1,235 @@
+{
+  "id": "s06_blood_pressure_cuff",
+  "job": "J0517",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-20",
+  "file": "10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4",
+  "sha256": "b9bc921502c311e2bba585868dff48746eaefdf44380f5a5f8464f946e5b8bf3",
+  "duration_s": 24.233,
+  "vo_source": "02_Voiceover/part05_the_vessels_he_never_saw_v01_raw.mp3",
+  "vo_take_indices": [
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220
+  ],
+  "dropped": [
+    "So why was this so groundbreaking? Because once you know the blood goes round, you know that anything put into one vein reaches the whole body. Within ten years of Harvey's death, doctors in England and France were trying the first blood transfusions. That makes no sense unless your blood circulates."
+  ],
+  "route": "claim-first lift: Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins. And the next time a nurse wraps a cuff round your arm, think of Harvey. \u2026 listens for the moment it starts to flow again. (107\u2013126, 178\u2013220 from Part 05)",
+  "vo_s": 23.667,
+  "words": 63,
+  "max_pause_s": 0.45,
+  "atempo": 1.0,
+  "bed": "hos005-part05-temp_score_bed_v01.mp3",
+  "bed_gain_db": -22.3,
+  "hook": "HIS BAND TODAY",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 85.9
+  },
+  "who_card": {
+    "name": "WILLIAM HARVEY",
+    "line2": "London, 1628",
+    "line1_px": 69,
+    "line1_pct_of_band": 11.3,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 14.2,
+    "out_s": 17.8,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "youtube_title_draft": "How Does a Blood Pressure Cuff Work?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.458,
+      "plate": "04_Generated-Clips/part05/raw/v01/08_your_blood_t2.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.458,
+      "t1": 4.454,
+      "plate": "04_Generated-Clips/part05/raw/v01/16_proved_last_link_t4.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "runs"
+    },
+    {
+      "t0": 4.454,
+      "t1": 6.381,
+      "plate": "04_Generated-Clips/part05/raw/v01/07_capillaries_loop_t2.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": "crosses"
+    },
+    {
+      "t0": 6.381,
+      "t1": 8.794,
+      "plate": "04_Generated-Clips/part05/raw/v01/10_one_vein_t1.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "comes"
+    },
+    {
+      "t0": 8.794,
+      "t1": 12.254,
+      "plate": "04_Generated-Clips/part05/raw/v01/13_cuff_t1.mp4",
+      "in_s": 1.0,
+      "crop_x": 420,
+      "lands_on": "And"
+    },
+    {
+      "t0": 12.254,
+      "t1": 16.321,
+      "plate": "04_Generated-Clips/part04/raw/v01/04_stopped_loosen_t5.mp4",
+      "in_s": 1.2,
+      "crop_x": 560,
+      "lands_on": "think"
+    },
+    {
+      "t0": 16.321,
+      "t1": 19.542,
+      "plate": "04_Generated-Clips/part05/raw/v01/14_cuff_release_t4.mp4",
+      "in_s": 0.8,
+      "crop_x": 420,
+      "lands_on": "It"
+    },
+    {
+      "t0": 19.542,
+      "t1": 21.217,
+      "plate": "04_Generated-Clips/part04/raw/v01/07_in_out_doors_t2.mp4",
+      "in_s": 1.5,
+      "crop_x": 620,
+      "lands_on": "then"
+    },
+    {
+      "t0": 21.217,
+      "t1": 24.217,
+      "plate": "04_Generated-Clips/part05/raw/v01/08_your_blood_t2.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_005_s06_blood_pressure_cuff_v01.mp4  dur=24.23s  audio=-23.2dB  motion=16.3  dhash=17962f692f0f06ab\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s06_blood_pressure_cuff_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_005_s06_blood_pressure_cuff_v01.mp4  0:24.23  mean -23.2 dB  peak -4.7 dB  156 wpm\n   warn  replace at ~0:11.20: script 'wraps a cuff round your arm think' / heard 'wraps a cuff around your arm think' \u2014 sounds alike (likely the transcriber); listen"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v01/polish_gate_s06_blood_pressure_cuff_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v01/picture_qa_s06_blood_pressure_cuff_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v01/picture_qa_s06_blood_pressure_cuff_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s06_blood_pressure_cuff_v01/hos_005_s06_blood_pressure_cuff_v01_t000.0.jpg",
+    "10_Shorts/_work_s06_blood_pressure_cuff_v01/hos_005_s06_blood_pressure_cuff_v01_t005.0.jpg",
+    "10_Shorts/_work_s06_blood_pressure_cuff_v01/hos_005_s06_blood_pressure_cuff_v01_t011.5.jpg",
+    "10_Shorts/_work_s06_blood_pressure_cuff_v01/hos_005_s06_blood_pressure_cuff_v01_t015.8.jpg",
+    "10_Shorts/_work_s06_blood_pressure_cuff_v01/hos_005_s06_blood_pressure_cuff_v01_t023.2.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-18",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "how does a blood pressure cuff work",
+      "how does blood pressure cuff work",
+      "how do blood pressure cuffs work",
+      "how does blood circulate in the body",
+      "how does blood flow through the body",
+      "who discovered blood circulation"
+    ],
+    "note": "'how does a blood pressure cuff work', 'how does blood pressure cuff work', 'how do blood pressure cuffs work', 'how does blood circulate in the body', and 'how does blood flow through the body' are exact signed-out GB YouTube autocomplete hits. Title draft 'How Does a Blood Pressure Cuff Work?' (with 'How Does Blood Circulate in the Body?' and 'How Does Blood Flow Through the Body?' as exact-autocomplete alternatives) is answered directly by the lifted Part 05 VO: blood leaves the heart through the arteries, crosses the capillaries, and returns through the veins \u2014 and a modern blood pressure cuff is William Harvey's 1628 arm band, squeezing until arterial blood stops getting in and listening for the moment it flows again. Chief's call."
+  },
+  "air_date_draft_note": "2026-12-20 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card WILLIAM HARVEY \u00b7 London, 1628 on screen 14.2\u201317.8 s (3.6 s) right as 'A blood pressure cuff is his band. It squeezes\u2026' is spoken. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No VO overlap with 005 s01_the_sum (Part 03), s02_the_tied_arm (Part 04 dedicated Short VO), s03_never_saw (Part 05 first half dedicated Short VO), s04_galen_stove (Part 02), or s05_valves (Part 04 middle): this is the first Test B Short lifted from 005 Part 05 (closing the circulation loop and how a blood pressure cuff works as Harvey's band)."
+}

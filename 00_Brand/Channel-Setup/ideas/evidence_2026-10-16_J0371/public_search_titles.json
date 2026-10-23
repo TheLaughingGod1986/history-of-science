@@ -1,0 +1,353 @@
+{
+ "pulled": "2026-10-16",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "How a Slice of Cork Revealed Every Cell in Your Body": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "2gtrkxtsQ2k",
+     "title": "How Robert Hooke Discovered The Cell",
+     "channel": "Oxford Brookes Health & Life Sciences",
+     "views": "147,720 views",
+     "age": "10 yr ago",
+     "length": "2:35"
+    },
+    {
+     "id": "zEndfQ-0li8",
+     "title": "How Robert Hooke Discovered the Cell",
+     "channel": "History in a Minute",
+     "views": "417 views",
+     "age": "2 mo ago",
+     "length": "3:11"
+    },
+    {
+     "id": "g2pu8s3-Qek",
+     "title": "Cork Cells Under the Microscope",
+     "channel": "Sci Files",
+     "views": "32,732 views",
+     "age": "9 yr ago",
+     "length": "1:31"
+    },
+    {
+     "id": "X_tYrnv_o6A",
+     "title": "Your Body's Molecular Machines",
+     "channel": "Veritasium",
+     "views": "5,042,350 views",
+     "age": "8 yr ago",
+     "length": "6:21"
+    },
+    {
+     "id": "t3g26p9Mh_k",
+     "title": "How Cells Become Specialized [Featuring Stem Cells]",
+     "channel": "Amoeba Sisters",
+     "views": "1,376,464 views",
+     "age": "9 yr ago",
+     "length": "6:51"
+    },
+    {
+     "id": "9euW5iCjKDo",
+     "title": "Your Textbooks Are Wrong, This Is What Cells Actually Look Like",
+     "channel": "Seeker",
+     "views": "2,932,819 views",
+     "age": "6 yr ago",
+     "length": "8:10"
+    },
+    {
+     "id": "8vo59AKzU4Q",
+     "title": "HUMAN CELL - The Dr. Binocs Show | Best Learning Videos For Kids | Peekaboo Kidz",
+     "channel": "Peekaboo Kidz",
+     "views": "3,301,903 views",
+     "age": "8 yr ago",
+     "length": "3:38"
+    },
+    {
+     "id": "0GX24jmsNIc",
+     "title": "This Is What All Life Is Made Of | Cell | BBC Earth Science",
+     "channel": "BBC Earth Science",
+     "views": "536,232 views",
+     "age": "2 yr ago",
+     "length": "25:54"
+    }
+   ]
+  },
+  "Why Newton Erased the Man Who Discovered Cells": {
+   "suggest": [
+    "name the scientist who discovered cell"
+   ],
+   "search": [
+    {
+     "id": "4OpBylwH9DU",
+     "title": "The wacky history of cell theory - Lauren Royal-Woods",
+     "channel": "TED-Ed",
+     "views": "8,353,529 views",
+     "age": "14 yr ago",
+     "length": "6:12"
+    },
+    {
+     "id": "Jl_-6dy3cKw",
+     "title": "\"The Man Who Discovered Cells… and Was Nearly Erased from History\" #hiddenscience #history",
+     "channel": "Unfolding Science",
+     "views": "12 views",
+     "age": "2 yr ago",
+     "length": "0:55"
+    },
+    {
+     "id": "h85_U9OJFQ0",
+     "title": "The Discovery of Cells",
+     "channel": "Interactive Biology",
+     "views": "147,023 views",
+     "age": "15 yr ago",
+     "length": "15:00"
+    },
+    {
+     "id": "zEndfQ-0li8",
+     "title": "How Robert Hooke Discovered the Cell",
+     "channel": "History in a Minute",
+     "views": "417 views",
+     "age": "2 mo ago",
+     "length": "3:11"
+    },
+    {
+     "id": "W4iB7VFAGLE",
+     "title": "The Discovery of Cells by Robert Hooke",
+     "channel": "Universe Notion",
+     "views": "260 views",
+     "age": "1 yr ago",
+     "length": "1:40"
+    },
+    {
+     "id": "-Pk8bDfWRvE",
+     "title": "The War of Two Geniuses: Robert Hooke vs Isaac Newton",
+     "channel": "zLibrary by BookBoard ",
+     "views": "51 views",
+     "age": "2 mo ago",
+     "length": "5:10"
+    },
+    {
+     "id": "SlUiRe1Rt-g",
+     "title": "Study This! Robert Hooke and the First Microscope | Encyclopaedia Britannica",
+     "channel": "Encyclopaedia Britannica",
+     "views": "48,338 views",
+     "age": "5 yr ago",
+     "length": "1:37"
+    },
+    {
+     "id": "SAKsV2uo16Y",
+     "title": "The Man Who Saw Cells First 🔬 | Robert Hooke’s Real Story",
+     "channel": "Scidonix",
+     "views": "382 views",
+     "age": "1 yr ago",
+     "length": "3:38"
+    }
+   ]
+  },
+  "Cells: The Slice of Cork That Changed Biology": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "4OpBylwH9DU",
+     "title": "The wacky history of cell theory - Lauren Royal-Woods",
+     "channel": "TED-Ed",
+     "views": "8,353,529 views",
+     "age": "14 yr ago",
+     "length": "6:12"
+    },
+    {
+     "id": "g9B3gBhcwqM",
+     "title": "This cell just changed biology",
+     "channel": "Grist",
+     "views": "1,572,358 views",
+     "age": "3 mo ago",
+     "length": "17:00"
+    },
+    {
+     "id": "dscY_2QQbKU",
+     "title": "Cell Theory",
+     "channel": "Biology Asaan",
+     "views": "372,987 views",
+     "age": "17 yr ago",
+     "length": "3:33"
+    },
+    {
+     "id": "pPpepKp4QiI",
+     "title": "Robert Hook coined the word Cell | BBC",
+     "channel": "Frankie",
+     "views": "715 views",
+     "age": "3 yr ago",
+     "length": "1:09"
+    },
+    {
+     "id": "AZiP4NsRGv0",
+     "title": "Robert Hooke and the Discovery of the Cell | How Cell Biology Began #CellBiology #Biology #APBiology",
+     "channel": "NucleoRise Biology",
+     "views": "186 views",
+     "age": "1 mo ago",
+     "length": "5:05"
+    },
+    {
+     "id": "g2pu8s3-Qek",
+     "title": "Cork Cells Under the Microscope",
+     "channel": "Sci Files",
+     "views": "32,732 views",
+     "age": "9 yr ago",
+     "length": "1:31"
+    },
+    {
+     "id": "JiRY8XMS5Fo",
+     "title": "The Discovery of the Cell: How Robert Hooke Changed Biology Forever",
+     "channel": "The SciTech Lab",
+     "views": "55 views",
+     "age": "3 mo ago",
+     "length": "2:11"
+    },
+    {
+     "id": "FF-L20eegZc",
+     "title": "Learn Biology: Cells—Discovery of Cells",
+     "channel": "MahaloBiology",
+     "views": "4,746 views",
+     "age": "15 yr ago",
+     "length": "1:30"
+    }
+   ]
+  },
+  "How a Stolen X-Ray Solved the Secret of DNA": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "BIP0lYrdirI",
+     "title": "Rosalind Franklin: DNA's unsung hero - Cláudio L. Guerra",
+     "channel": "TED-Ed",
+     "views": "1,940,058 views",
+     "age": "10 yr ago",
+     "length": "4:10"
+    },
+    {
+     "id": "GbZ_lUY8iWs",
+     "title": "The Greatest Controversy in Science",
+     "channel": "Newsthink",
+     "views": "72,644 views",
+     "age": "3 yr ago",
+     "length": "8:17"
+    },
+    {
+     "id": "ZPg3tXOOstY",
+     "title": "Ancient Aliens: Secret DNA Code Encrypted in Ancient Artifacts (Season 16) | History",
+     "channel": "HISTORY",
+     "views": "57,096 views",
+     "age": "2 yr ago",
+     "length": "3:56"
+    },
+    {
+     "id": "mCgjUr4-rF8",
+     "title": "She Discovered DNA’s Secret — And Was Erased from the Nobel Prize",
+     "channel": "They Never Got Credit",
+     "views": "229 views",
+     "age": "11 mo ago",
+     "length": "6:20"
+    },
+    {
+     "id": "6xcoJZh5kMk",
+     "title": "The Woman Who Solved DNA — And Had It Stolen From Her",
+     "channel": "Heard Through Time",
+     "views": "8 views",
+     "age": "13 days ago",
+     "length": "20:42"
+    },
+    {
+     "id": "t2vhw6X_A24",
+     "title": "One DNA Result Cracked Open a 100-Year-Old Secret",
+     "channel": "DNAngels Org",
+     "views": "22,432 views",
+     "age": "4 mo ago",
+     "length": "10:45"
+    },
+    {
+     "id": "M3FnCmSmVVs",
+     "title": "How X-rays Were Discovered",
+     "channel": "Rational Thinker",
+     "views": "68,754 views",
+     "age": "6 mo ago",
+     "length": "17:10"
+    },
+    {
+     "id": "KtwvdN40YA8",
+     "title": "DNA Exposed the Truth After 13 Years of Lies",
+     "channel": "Cold Case Narrator and Crime Narrator ",
+     "views": "510,325 views",
+     "age": "4 mo ago",
+     "length": "33:33"
+    }
+   ]
+  },
+  "How a Mouldy Cantaloupe Saved 200 Million Lives": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "GWS3Zm5jQ7w",
+     "title": "Penicillin Origin: The Cantaloupe That Saved 200 Million Lives",
+     "channel": "Wake love history",
+     "views": "31 views",
+     "age": "7 mo ago",
+     "length": "4:06"
+    },
+    {
+     "id": "W_5JfMpbNdY",
+     "title": "The Moldy Cantaloupe That Saved Millions of Lives",
+     "channel": "Bogdan Everything",
+     "views": "18 views",
+     "age": "9 days ago",
+     "length": "2:32"
+    },
+    {
+     "id": "DwSpHP8I0Gw",
+     "title": "The 1943 Penicillin Shortage — How a Peoria Lab Worker's Moldy Cantaloupe Saved Millions of Soldiers",
+     "channel": "FORGOTTEN TECH",
+     "views": "12 views",
+     "age": "1 mo ago",
+     "length": "18:38"
+    },
+    {
+     "id": "rDb-8k2_Fl0",
+     "title": "How They Used A Rotten Melon To Save 200 Million Lives",
+     "channel": "anyone.11",
+     "views": "2 views",
+     "age": "1 day ago",
+     "length": "2:16"
+    },
+    {
+     "id": "wrT5AcRLpYQ",
+     "title": "A mouldy cantaloupe saved WWII soldiers 🍈",
+     "channel": "Alpharbet",
+     "views": "2 views",
+     "age": "4 days ago",
+     "length": "0:44"
+    },
+    {
+     "id": "Q59Np4lOd54",
+     "title": "The Dirty Dish That Saved 200 Million Lives: Penicillin's Accidental Invention",
+     "channel": "History and Inventions",
+     "views": "1 view",
+     "age": "2 days ago",
+     "length": "3:01"
+    },
+    {
+     "id": "7jIuUtQCLRI",
+     "title": "A Messy Lab Accident Saved 200 Million Lives",
+     "channel": "Arthur Lee's Adventures",
+     "views": "22 views",
+     "age": "7 mo ago",
+     "length": "12:11"
+    },
+    {
+     "id": "7cWwY-3ZJf0",
+     "title": "The History of Penicillin – The Mold That Saved 200 Million Lives",
+     "channel": "Hidden Lore History",
+     "views": "7 views",
+     "age": "2 mo ago",
+     "length": "10:14"
+    }
+   ]
+  }
+ }
+}

@@ -8,8 +8,11 @@
   "tagsFile": "Tags/trees_long_tags_v01.txt",
   "chaptersFile": null,
   "pinnedCommentFile": null,
-  "thumbnail": null,
-  "thumbnailAbc": [],
+  "thumbnail": "../08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01.jpg",
+  "thumbnailAbc": [
+    "../08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01.jpg",
+    "../08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01.jpg"
+  ],
   "titleAbc": [
     "The Willow Tree That Was Made of Air",
     "Where Does a Tree's Weight Come From?"
