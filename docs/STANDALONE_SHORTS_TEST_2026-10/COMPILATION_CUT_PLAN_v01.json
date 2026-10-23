@@ -1,9 +1,9 @@
 {
  "version": "v01",
  "job": "J0175",
- "generated": "2026-10-23T08:26:52",
- "total_s": 2993.4,
- "total_hms": "49:53",
+ "generated": "2026-10-23T09:52:33",
+ "total_s": 2958.09,
+ "total_hms": "49:18",
  "in_45_60": true,
  "note": "Normalised masters and rendered segments concatenated in exact running order.",
  "segments": [
@@ -91,14 +91,14 @@
    "start_hms": "18:00",
    "kind": "film",
    "name": "001",
-   "length": 364.638,
+   "length": 359.367,
    "src": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4",
    "length_from": "prep_report",
-   "keep_to": null
+   "keep_to": 359.35
   },
   {
-   "start": 1444.795,
-   "start_hms": "24:05",
+   "start": 1439.523,
+   "start_hms": "24:00",
    "kind": "vo",
    "name": "bridge3",
    "length": 14.69,
@@ -107,8 +107,8 @@
    "graphic": "code_graphic_comp_timeline_b3"
   },
   {
-   "start": 1459.485,
-   "start_hms": "24:19",
+   "start": 1454.213,
+   "start_hms": "24:14",
    "kind": "card",
    "name": "code_graphic_comp_card_04",
    "length": 3.0,
@@ -117,18 +117,18 @@
    "title": "The Empty Chairs"
   },
   {
-   "start": 1462.485,
-   "start_hms": "24:22",
+   "start": 1457.213,
+   "start_hms": "24:17",
    "kind": "film",
    "name": "002",
-   "length": 540.7,
+   "length": 530.167,
    "src": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4",
    "length_from": "prep_report",
-   "keep_to": null
+   "keep_to": 530.15
   },
   {
-   "start": 2003.185,
-   "start_hms": "33:23",
+   "start": 1987.38,
+   "start_hms": "33:07",
    "kind": "vo",
    "name": "bridge4",
    "length": 14.29,
@@ -136,8 +136,8 @@
    "length_from": "vo take + breath"
   },
   {
-   "start": 2017.475,
-   "start_hms": "33:37",
+   "start": 2001.67,
+   "start_hms": "33:22",
    "kind": "card",
    "name": "code_graphic_comp_card_05",
    "length": 3.0,
@@ -146,18 +146,18 @@
    "title": "A Light Through Skin"
   },
   {
-   "start": 2020.475,
-   "start_hms": "33:40",
+   "start": 2004.67,
+   "start_hms": "33:25",
    "kind": "film",
    "name": "003",
-   "length": 425.7,
+   "length": 406.2,
    "src": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4",
    "length_from": "prep_report",
-   "keep_to": null
+   "keep_to": 406.2
   },
   {
-   "start": 2446.175,
-   "start_hms": "40:46",
+   "start": 2410.87,
+   "start_hms": "40:11",
    "kind": "vo",
    "name": "bridge5",
    "length": 15.73,
@@ -166,8 +166,8 @@
    "graphic": "code_graphic_comp_timeline_b5"
   },
   {
-   "start": 2461.905,
-   "start_hms": "41:02",
+   "start": 2426.6,
+   "start_hms": "40:27",
    "kind": "card",
    "name": "code_graphic_comp_card_06",
    "length": 3.0,
@@ -176,8 +176,8 @@
    "title": "Inside the Atom"
   },
   {
-   "start": 2464.905,
-   "start_hms": "41:05",
+   "start": 2429.6,
+   "start_hms": "40:30",
    "kind": "film",
    "name": "004",
    "length": 491.4,
@@ -186,8 +186,8 @@
    "keep_to": 491.4
   },
   {
-   "start": 2956.305,
-   "start_hms": "49:16",
+   "start": 2921.0,
+   "start_hms": "48:41",
    "kind": "vo",
    "name": "closing",
    "length": 37.09,
@@ -201,9 +201,9 @@
   "0:53 The Hidden Circle",
   "9:23 Built From Air",
   "17:57 The Invisible Enemy",
-  "24:19 The Empty Chairs",
-  "33:37 A Light Through Skin",
-  "41:02 Inside the Atom"
+  "24:14 The Empty Chairs",
+  "33:22 A Light Through Skin",
+  "40:27 Inside the Atom"
  ],
  "missing": []
 }

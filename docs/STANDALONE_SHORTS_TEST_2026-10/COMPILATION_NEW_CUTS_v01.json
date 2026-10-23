@@ -287,8 +287,8 @@
  },
  {
   "row": "bridge3_01",
-  "timeline_in": 1444.838,
-  "timeline_out": 1449.138,
+  "timeline_in": 1439.567,
+  "timeline_out": 1443.867,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4@325.50",
   "framing": {
    "offset": 325.5,
@@ -298,8 +298,8 @@
  },
  {
   "row": "bridge3_02",
-  "timeline_in": 1448.638,
-  "timeline_out": 1453.138,
+  "timeline_in": 1443.367,
+  "timeline_out": 1447.867,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@117.00",
   "framing": {
    "offset": 117.0,
@@ -309,8 +309,8 @@
  },
  {
   "row": "bridge3_03",
-  "timeline_in": 1452.638,
-  "timeline_out": 1456.638,
+  "timeline_in": 1447.367,
+  "timeline_out": 1451.367,
   "source": "code_graphic_comp_timeline_b3.mp4",
   "framing": {
    "offset": 0.0,
@@ -320,8 +320,8 @@
  },
  {
   "row": "bridge3_04",
-  "timeline_in": 1456.138,
-  "timeline_out": 1459.528,
+  "timeline_in": 1450.867,
+  "timeline_out": 1454.257,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@135.00",
   "framing": {
    "offset": 135.0,
@@ -331,8 +331,8 @@
  },
  {
   "row": "code_graphic_comp_card_04",
-  "timeline_in": 1459.538,
-  "timeline_out": 1462.538,
+  "timeline_in": 1454.267,
+  "timeline_out": 1457.267,
   "source": "code_graphic_comp_card_04.mp4",
   "upscale": 1.0,
   "framing": {
@@ -342,8 +342,8 @@
  },
  {
   "row": "bridge4_01",
-  "timeline_in": 2003.238,
-  "timeline_out": 2007.938,
+  "timeline_in": 1987.433,
+  "timeline_out": 1992.133,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@230.30",
   "framing": {
    "offset": 230.3,
@@ -353,8 +353,8 @@
  },
  {
   "row": "bridge4_02",
-  "timeline_in": 2007.438,
-  "timeline_out": 2014.038,
+  "timeline_in": 1991.633,
+  "timeline_out": 1998.233,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4@95.20",
   "framing": {
    "offset": 95.2,
@@ -364,8 +364,8 @@
  },
  {
   "row": "bridge4_03",
-  "timeline_in": 2013.538,
-  "timeline_out": 2017.528,
+  "timeline_in": 1997.733,
+  "timeline_out": 2001.723,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4@145.20",
   "framing": {
    "offset": 145.2,
@@ -375,8 +375,8 @@
  },
  {
   "row": "code_graphic_comp_card_05",
-  "timeline_in": 2017.538,
-  "timeline_out": 2020.538,
+  "timeline_in": 2001.733,
+  "timeline_out": 2004.733,
   "source": "code_graphic_comp_card_05.mp4",
   "upscale": 1.0,
   "framing": {
@@ -386,8 +386,8 @@
  },
  {
   "row": "bridge5_01",
-  "timeline_in": 2446.238,
-  "timeline_out": 2451.838,
+  "timeline_in": 2410.933,
+  "timeline_out": 2416.533,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4@118.90",
   "framing": {
    "offset": 118.9,
@@ -397,8 +397,8 @@
  },
  {
   "row": "bridge5_02",
-  "timeline_in": 2451.338,
-  "timeline_out": 2456.538,
+  "timeline_in": 2416.033,
+  "timeline_out": 2421.233,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@240.30",
   "framing": {
    "offset": 240.3,
@@ -408,8 +408,8 @@
  },
  {
   "row": "bridge5_03",
-  "timeline_in": 2456.038,
-  "timeline_out": 2460.038,
+  "timeline_in": 2420.733,
+  "timeline_out": 2424.733,
   "source": "code_graphic_comp_timeline_b5.mp4",
   "framing": {
    "offset": 0.0,
@@ -419,8 +419,8 @@
  },
  {
   "row": "bridge5_04",
-  "timeline_in": 2459.538,
-  "timeline_out": 2461.968,
+  "timeline_in": 2424.233,
+  "timeline_out": 2426.663,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@263.50",
   "framing": {
    "offset": 263.5,
@@ -430,8 +430,8 @@
  },
  {
   "row": "code_graphic_comp_card_06",
-  "timeline_in": 2461.972,
-  "timeline_out": 2464.972,
+  "timeline_in": 2426.667,
+  "timeline_out": 2429.667,
   "source": "code_graphic_comp_card_06.mp4",
   "upscale": 1.0,
   "framing": {
@@ -441,8 +441,8 @@
  },
  {
   "row": "closing_01",
-  "timeline_in": 2956.372,
-  "timeline_out": 2959.672,
+  "timeline_in": 2921.067,
+  "timeline_out": 2924.367,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@227.60",
   "framing": {
    "offset": 227.6,
@@ -452,8 +452,8 @@
  },
  {
   "row": "closing_02",
-  "timeline_in": 2959.172,
-  "timeline_out": 2961.122,
+  "timeline_in": 2923.867,
+  "timeline_out": 2925.817,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_005_norm.mp4@287.60",
   "framing": {
    "offset": 287.6,
@@ -463,8 +463,8 @@
  },
  {
   "row": "closing_03",
-  "timeline_in": 2960.622,
-  "timeline_out": 2962.872,
+  "timeline_in": 2925.317,
+  "timeline_out": 2927.567,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4@413.20",
   "framing": {
    "offset": 413.2,
@@ -474,8 +474,8 @@
  },
  {
   "row": "closing_04",
-  "timeline_in": 2962.372,
-  "timeline_out": 2964.972,
+  "timeline_in": 2927.067,
+  "timeline_out": 2929.667,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4@298.00",
   "framing": {
    "offset": 298.0,
@@ -485,8 +485,8 @@
  },
  {
   "row": "closing_05",
-  "timeline_in": 2964.472,
-  "timeline_out": 2967.772,
+  "timeline_in": 2929.167,
+  "timeline_out": 2932.467,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@162.30",
   "framing": {
    "offset": 162.3,
@@ -496,8 +496,8 @@
  },
  {
   "row": "closing_06",
-  "timeline_in": 2967.272,
-  "timeline_out": 2971.072,
+  "timeline_in": 2931.967,
+  "timeline_out": 2935.767,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4@163.80",
   "framing": {
    "offset": 163.8,
@@ -507,8 +507,8 @@
  },
  {
   "row": "closing_07",
-  "timeline_in": 2970.572,
-  "timeline_out": 2973.872,
+  "timeline_in": 2935.267,
+  "timeline_out": 2938.567,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@224.00",
   "framing": {
    "offset": 224.0,
@@ -518,8 +518,8 @@
  },
  {
   "row": "closing_08",
-  "timeline_in": 2973.372,
-  "timeline_out": 2983.072,
+  "timeline_in": 2938.067,
+  "timeline_out": 2947.767,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@252.00",
   "framing": {
    "offset": 252.0,
@@ -529,8 +529,8 @@
  },
  {
   "row": "closing_09",
-  "timeline_in": 2982.572,
-  "timeline_out": 2986.572,
+  "timeline_in": 2947.267,
+  "timeline_out": 2951.267,
   "source": "code_graphic_comp_timeline_close.mp4",
   "framing": {
    "offset": 0.0,
@@ -540,8 +540,8 @@
  },
  {
   "row": "closing_10",
-  "timeline_in": 2986.072,
-  "timeline_out": 2993.462,
+  "timeline_in": 2950.767,
+  "timeline_out": 2958.157,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@214.60",
   "framing": {
    "offset": 214.6,
@@ -551,8 +551,8 @@
  },
  {
   "row": "code_graphic_comp_closing_end_card",
-  "timeline_in": 2987.462,
-  "timeline_out": 2990.962,
+  "timeline_in": 2952.157,
+  "timeline_out": 2955.657,
   "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/closing/code_graphic_comp_closing_end_card.png",
   "framing": {
    "fit": "own cream Didot card and navy wash; plate frozen for card 3.5 s, then resumes; 0.5 s alpha fades"
