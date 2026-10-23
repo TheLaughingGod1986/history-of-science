@@ -39,3 +39,23 @@ The runner checks SFX levels and polish for each segment and saves reports along
 Progress stays 4/6. Next worker: collect validation evidence, inspect/listen to the segments, then continue the remaining assembly work listed above. Full compilation and protected approval remain outstanding.
 
 Validation handoff correction: the first validation runner completed, but all tool exits were 1 because the sandbox refused report writes on the NAS. It did not establish gate results. Re-launched validation with reports written to the writable desk logs directory instead (media inputs remain NAS-only): session `J0175-gates-local-20261023`, log `~/_desk/logs/J0175-gates-local-20261023.log`, completion `~/_desk/logs/J0175-gates-local-20261023.done`. Reports are `~/_desk/logs/J0175-<bridge4|closing>-<sfx|polish>-20261023.json`; individual tool exits remain in `J0175-gates-20261023-results.json`. This supersedes the first validation handoff. No duplicate render was started.
+
+## Follow-up — closing failure triage (Codex, 23 Oct 04:xx UTC)
+
+Progress remains 4/6. Collected the completed gate results; no duplicate render or validation was started. Both render exit files are 0. Exact tool output from `~/_desk/logs/J0175-gates-local-20261023.log`:
+
+```text
+SFX level PASS: VO -15.3 LUFS, SFX -49.1 LUFS, 1 hits
+polish gate PASS: 0 of 3 rows failed, 1 to look at
+SFX level PASS: VO -16.1 LUFS, SFX -49.1 LUFS, 1 hits
+code_graphic_comp_closing_end_card    32.8s ... FAIL push jitter: 2.635 px off trend, 0 reversals
+polish gate FAIL: 1 of 10 rows failed, 1 to look at
+```
+
+The first pair belongs to Bridge 4; the second pair belongs to closing. These are automated tool results, not a Chief stage PASS. Full reports remain in `~/_desk/logs/J0175-{bridge4,closing}-{sfx,polish}-20261023.json`.
+
+Diagnosis: the assembler adds a fixed-position PNG with alpha fades over moving atom footage. The overlay cut has no `framing.offset`; `orbit-with-ben/scripts/polish_gate.py` lines 160 and 173 therefore classify it as a still and phase-correlate the centre of the final composite. That centre contains the moving atom rather than the text. This suggests an overlay-classification limitation, not proof that the rendered lettering jitters. No gate, cut metadata, reviewed override or no-jitter option was changed to clear the failure. HOS AGENTS.md Definition of done requires a separate approved PR if a check is wrong.
+
+Extracted and inspected the rendered frame at 32.84 s: `~/_desk/logs/J0175-closing-card-20261023.jpg`. The two intended lines appear, but cream lettering crosses the bright atom and loses contrast; the card needs a layout/plate revision keeping text off the hero. A single frame does not establish motion or audio quality. No full visual/audio review or final approval claimed.
+
+Parked for Chief: decide/authorize the separate overlay-aware gate correction under the HOS contract, then resume the closing layout revision and full unchanged gates. Remaining assembly work is unchanged: measure 006 trim, choose 006 plates, finish intro/bridges 1–2, implement the whole-cut render and chapters, and run full QA before J0176. No spend, publishing, media movement or NAS deletion.
