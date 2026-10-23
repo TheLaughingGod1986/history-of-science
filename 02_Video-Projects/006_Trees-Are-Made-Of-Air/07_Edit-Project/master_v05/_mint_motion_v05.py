@@ -40,6 +40,8 @@ def main():
    try:
     info=flow.generate_clip(page,entry['prompt'],dest,model=model,start_frame=still,timeout_s=600,reuse_project=False,attempts=1) or {}
     entry['info']=info
+    if not dest.exists() and info.get('needs_gallery_harvest'):
+     helper.harvest(page,flow,info['project_url'],dest,wait_s=360)
     if not dest.exists():raise RuntimeError('No downloaded clip; recover existing generation before any new take')
     import orbit_gemini_veo as veo
     veo.strip_audio(dest)

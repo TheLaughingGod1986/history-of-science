@@ -1,0 +1,34 @@
+{
+  "job": "J0886",
+  "cap_credits": 400,
+  "takes": {
+    "02_balance_trunk_v05": {
+      "cost_reserved": 10,
+      "credits_before": 20830,
+      "model": "Veo 3.1 - Fast",
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. The balance beam gently rocks by a tiny amount while willow leaves flutter naturally. The entire willow and its compact root ball remain firmly supported INSIDE the LEFT brass weighing pan at every frame. Roots never float or leave the pan. Soil stays settled in the right pan. Static camera, no morphing, no falling soil.",
+      "start_frame": "/private/tmp/j0886-hos-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/stills/02_balance_trunk_v05.png",
+      "start_frame_sha256": "233eb1bf5233731aff168ef7a93dfa12c62a335b84b886ce738a87413e10be73",
+      "submitted_at": "2026-10-23T14:38:01+00:00",
+      "status": "STOP_RECOVER_EXISTING_GENERATION",
+      "info": {
+        "seconds": 109.4,
+        "bytes": 0,
+        "model": "Veo 3.1 - Fast",
+        "engine": "flow-ui-veo",
+        "orbit_ref": null,
+        "start_frame": "/private/tmp/j0886-hos-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/stills/02_balance_trunk_v05.png",
+        "orbit_attached": true,
+        "identity_lock": false,
+        "scenery_only": false,
+        "media_id": "gallery-pending:0",
+        "url": "https://flow.google.com/project/8f1b2c08-1f0d-4452-acdc-76a9ad26426d",
+        "context_closed": false,
+        "needs_gallery_harvest": true,
+        "project_url": "https://flow.google.com/project/8f1b2c08-1f0d-4452-acdc-76a9ad26426d"
+      },
+      "error": "No downloaded clip; recover existing generation before any new take"
+    }
+  },
+  "balance_reads": []
+}

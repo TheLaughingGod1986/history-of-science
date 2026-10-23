@@ -252,7 +252,7 @@
           "status": "doing",
           "due": "2026-10-26",
           "owner": "codex",
-          "note": "J0886 steps 1\u20132 complete: eight baseline frames inspected; four fresh start frames minted/inspected at zero credits. Motion running detached; no v05 master or film approval yet.",
+          "note": "J0886 2/5: four zero-credit stills inspected. First Fast motion submitted; helper returned gallery-pending and batch stopped before other takes. Recovery URL and evidence in MOTION_STOP_J0886.md; do not resubmit.",
           "jobs": [
             "J0835",
             "J0857",
@@ -260,15 +260,15 @@
             "J0886"
           ],
           "since": "2026-10-23T15:31",
-          "underway": true,
+          "underway": false,
           "steps": [
             2,
             5
           ],
           "steps_unit": "v05 steps",
-          "left": "background motion, then master rebuild, gates and Chief review",
+          "left": "recover first motion take, generate remaining three, rebuild and gate v05",
           "eta": "",
-          "waiting": "Detached tmux j0886-motion; next worker checks completion file before touching Flow"
+          "waiting": "J0886: recover already submitted Flow take from project; detached batch exited 1, no live tmux"
         },
         "thumbnails": {
           "status": "doing",

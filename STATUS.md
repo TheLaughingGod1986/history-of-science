@@ -10,7 +10,7 @@
 |---|---|---:|---|---|---|---|---|
 | **004** What's Really Inside an Atom? | Thu 15 Oct (-8 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟠 behind |
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (6 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
-| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (13 d) | 84% | Edit + master (in progress) | **codex** · ▶️ underway | 2/5 v05 steps · background motion, then master rebuild, gates and Chief review left | Sun 1 Nov (in 9 d) | 🟢 on track |
+| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (13 d) | 84% | Edit + master (in progress) | **codex** · ⏸ waiting: J0886: recover already submitted Flow take from project; detached batch exited 1, no live tmux | 2/5 v05 steps · recover first motion take, generate remaining three, rebuild and gate v05 left | Sun 1 Nov (in 9 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (20 d) | 85% | Thumbnails (to do) | **Grok** · queued | starts later; due in 13 d | Sun 8 Nov (in 16 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (27 d) | 43% | Picture (blocked) | **chief** · ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend | 11/112 board rows rendered (11 graphics awaiting review) | Sun 15 Nov (in 23 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (34 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 15 d late | Sun 22 Nov (in 30 d) | ⛔ blocked |
@@ -35,7 +35,8 @@
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
 **codex**
-- ▶️ Underway: 006 Edit + master, since Fri 23 Oct 15:31 (2/5 v05 steps · background motion, then master rebuild, gates and Chief review left)
+- ▶️ Underway: nothing right now
+- ⏸ Waiting: 006 Edit + master: J0886: recover already submitted Flow take from project; detached batch exited 1, no live tmux
 
 **Chief**
 - ▶️ Underway: nothing right now
@@ -48,7 +49,7 @@
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (10 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **006** · 🔄 **Edit + master** — in progress (40%, 2/5 v05 steps · background motion, then master rebuild, gates and Chief review left, with codex since Fri 23 Oct 15:31, ▶️ underway, due Mon 26 Oct (in 3 d)): J0886 steps 1–2 complete: eight baseline frames inspected; four fresh start frames minted/inspected at zero credits. Motion running detached; no v05 master or film approval yet.
+- **006** · 🔄 **Edit + master** — in progress (40%, 2/5 v05 steps · recover first motion take, generate remaining three, rebuild and gate v05 left, with codex since Fri 23 Oct 15:31, ⏸ waiting: J0886: recover already submitted Flow take from project; detached batch exited 1, no live tmux, due Mon 26 Oct (in 3 d)): J0886 2/5: four zero-credit stills inspected. First Fast motion submitted; helper returned gallery-pending and batch stopped before other takes. Recovery URL and evidence in MOTION_STOP_J0886.md; do not resubmit.
 - **006** · 🔄 **Thumbnails** — in progress (100%, 2/2 thumb steps · in Chief review before Ben's 1 Nov watch left, with Chief since Fri 23 Oct 03:35, ⏸ waiting: Chief: HOS 006 thumbnails A + B review before Ben's 1 Nov watch (J0869), due Thu 29 Oct (in 6 d)): Step 2 done at 0 Flow credits (J0869): A (`WOOD / FROM / SKY?`, sha256 `904d2f58`) + B (`DO PLANTS / EAT / SOIL?`, blank scale/weights, sha256 `ee5f2605`) minted on Nano Banana 2, lettered via cover builder, `thumb_preview.py long` + `style_sheet.py long` PASS, staged in `11_Upload-Package/PACKAGE_MANIFEST.json` and `HOS UAT/006_Trees-Are-Made-Of-Air/08_Thumbnail/`; parked for Chief
 - **008** · ⛔ **Picture** — blocked (10%, 11/112 board rows rendered (11 graphics awaiting review), with chief since Fri 16 Oct, ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend, due Sun 8 Nov (in 16 d)): J0329: eleven no-spend v01 code graphics rendered from KEEP v03 boards, plus five alpha overlays and paper review previews. Awaiting Chief visual review; five moving-plate composites still pending. PICTURE_PLAN_v03 mint gate unchanged (5,605 cr expected). See CODE_GRAPHICS_v01_REVIEW.md.
 - **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 23 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
@@ -135,7 +136,7 @@ J0886 v05 underway: Ben requested four further picture fixes at 0:07, 1:26, 4:28
 - ✅ **Shorts scripts** — done
 - ✅ **Shorts voiceover** — done: A v02 · B v03b · C v01 locked
 - ✅ **Picture** — done: All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180).
-- 🔄 **Edit + master** — in progress (40%, 2/5 v05 steps · background motion, then master rebuild, gates and Chief review left, with codex since Fri 23 Oct 15:31, ▶️ underway, due Mon 26 Oct (in 3 d)): J0886 steps 1–2 complete: eight baseline frames inspected; four fresh start frames minted/inspected at zero credits. Motion running detached; no v05 master or film approval yet.
+- 🔄 **Edit + master** — in progress (40%, 2/5 v05 steps · recover first motion take, generate remaining three, rebuild and gate v05 left, with codex since Fri 23 Oct 15:31, ⏸ waiting: J0886: recover already submitted Flow take from project; detached batch exited 1, no live tmux, due Mon 26 Oct (in 3 d)): J0886 2/5: four zero-credit stills inspected. First Fast motion submitted; helper returned gallery-pending and batch stopped before other takes. Recovery URL and evidence in MOTION_STOP_J0886.md; do not resubmit.
 - 🔄 **Thumbnails** — in progress (100%, 2/2 thumb steps · in Chief review before Ben's 1 Nov watch left, with Chief since Fri 23 Oct 03:35, ⏸ waiting: Chief: HOS 006 thumbnails A + B review before Ben's 1 Nov watch (J0869), due Thu 29 Oct (in 6 d)): Step 2 done at 0 Flow credits (J0869): A (`WOOD / FROM / SKY?`, sha256 `904d2f58`) + B (`DO PLANTS / EAT / SOIL?`, blank scale/weights, sha256 `ee5f2605`) minted on Nano Banana 2, lettered via cover builder, `thumb_preview.py long` + `style_sheet.py long` PASS, staged in `11_Upload-Package/PACKAGE_MANIFEST.json` and `HOS UAT/006_Trees-Are-Made-Of-Air/08_Thumbnail/`; parked for Chief
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 1 Nov (in 9 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 2 Nov (in 10 d))

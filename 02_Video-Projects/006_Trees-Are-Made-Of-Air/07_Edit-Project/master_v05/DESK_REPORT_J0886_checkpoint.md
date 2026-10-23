@@ -1,3 +1,5 @@
+**SUPERSEDED MOTION STATUS:** Batch exited 1 after the first submission returned gallery-pending. No live tmux. Recover existing project; see MOTION_STOP_J0886.md. Queue remains open at 2/5.
+
 Codex covering — J0886 / HOS:006: **2 of 5 steps complete; background motion batch started, job released for continuation. No v05 film PASS or final OK.**
 
 Inspected eight full-size before frames, mapped the four replacement windows, and minted four new Flow Nano Banana start frames at **0 credits**, balance unchanged **20,830**. `BEFORE_CHECK_SHEET_J0886.jpg`, `START_FRAME_REVIEW_v05.jpg`, `STILL_REVIEW_v05.md` and corrected `FLOW_STILLS_LOG_v05.json` carry the evidence.
