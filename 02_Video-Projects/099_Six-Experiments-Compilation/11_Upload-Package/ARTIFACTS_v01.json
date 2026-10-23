@@ -1,10 +1,14 @@
 {
   "thumbnail_files": {
-    "compilation_thumb_v01.jpg": "66383ac9e1fe7d771664e1c60fb4e25cf5ba45c7f41e8b6b05c95b80adcfb907",
-    "PHONE_v01.jpg": "cbca7362216b095a552aef083347f51ff3722723aaa63d47d4959cc1348ae375",
-    "STYLE_v01.jpg": "6035bac39d26255a47eae89f0b734df375e0d3ad0359d9c249694bad23dd03af"
+    "compilation_thumb_v01.jpg": "f239c89b8c8b53d318d8d936beb78fcd377f203f484d33c78b98c4f63ac96d80",
+    "PHONE_v01.jpg": "cbf58c5bc71475458c3a54a4f81ee1f60bff630fe2c0872f4b56ca46b0de74e7",
+    "STYLE_v01.jpg": "186a90d710069d2f90318d45d469bc53a613d17d58aca9d5763846e87eaf0c65"
   },
   "master_verified_sha256": "8282ffa8eb09e3a7cf1420562d70e14a428a0ae0489b3fdeccf5e4aeffe98490",
   "master_verified": "2026-10-23",
+  "youtube_id": "uAomPaOBrM8",
+  "privacy_status": "private",
+  "publish_at": "2026-12-10T18:00:00.000Z",
+  "aborted_stub_youtube_id": "Hmw4iMDfWFE",
   "spend_gbp": 0
 }

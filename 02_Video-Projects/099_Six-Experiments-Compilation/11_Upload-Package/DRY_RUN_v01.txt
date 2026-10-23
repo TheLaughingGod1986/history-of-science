@@ -1,3 +1,7 @@
+
+> content-ops@0.1.0 youtube:package
+> tsx --env-file=.env scripts/youtube-package-upload.ts --package ../02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package --video /Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/hos_compilation_full_v02.mp4 --dry-run
+
 {
   "ok": true,
   "dryRun": true,
@@ -5,11 +9,11 @@
   "upload": {
     "published": false,
     "scheduledOnPlatform": true,
-    "scheduledFor": "2026-11-08T18:00:00.000Z",
+    "scheduledFor": "2026-12-10T18:00:00.000Z",
     "platformPostId": null,
     "platformUrl": null,
-    "message": "Dry-run complete. Would upload now with publishAt=2026-11-08T18:00:00.000Z.",
-    "responseSummary": "{\"title\":\"How Did Experiments Explain Blood, Germs and Atoms?\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-11-08T18:00:00.000Z\",\"madeForKids\":false,\"contentFormat\":\"longform\",\"connectionId\":\"cmuo9e8ms0008t0ovc3aduuru\"}"
+    "message": "Dry-run complete. Would upload now with publishAt=2026-12-10T18:00:00.000Z.",
+    "responseSummary": "{\"title\":\"How Did Experiments Explain Blood, Germs and Atoms?\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-12-10T18:00:00.000Z\",\"madeForKids\":false,\"contentFormat\":\"longform\",\"connectionId\":\"cmuo9e8ms0008t0ovc3aduuru\"}"
   },
   "package": {
     "title": "How Did Experiments Explain Blood, Germs and Atoms?",
@@ -17,13 +21,14 @@
     "privacy": "private",
     "tagCount": 7,
     "hasPinnedComment": false,
-    "thumbnailPath": "/private/tmp/j0878-hos-wt/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/compilation_thumb_v01.jpg",
-    "scheduledAt": "2026-11-08T18:00:00.000Z",
+    "thumbnailPath": "/Users/benjaminoats/_desk/worktrees/j0878-comp-pkg/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/compilation_thumb_v01.jpg",
+    "scheduledAt": "2026-12-10T18:00:00.000Z",
     "sources": {
-      "manifest": "/private/tmp/j0878-hos-wt/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/PACKAGE_MANIFEST.json",
-      "descriptionFile": "/private/tmp/j0878-hos-wt/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/DESCRIPTION_DRAFT_v01.txt",
+      "manifest": "/Users/benjaminoats/_desk/worktrees/j0878-comp-pkg/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/PACKAGE_MANIFEST.json",
+      "descriptionFile": "/Users/benjaminoats/_desk/worktrees/j0878-comp-pkg/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/DESCRIPTION_DRAFT_v01.txt",
+      "chaptersFile": "/Users/benjaminoats/_desk/worktrees/j0878-comp-pkg/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/CHAPTERS_v02.txt",
       "video": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/hos_compilation_full_v02.mp4",
-      "thumbnail": "/private/tmp/j0878-hos-wt/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/compilation_thumb_v01.jpg"
+      "thumbnail": "/Users/benjaminoats/_desk/worktrees/j0878-comp-pkg/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/compilation_thumb_v01.jpg"
     }
   },
   "postUpload": {
@@ -96,4 +101,3 @@
     "summary": "Package resolved; upload not run yet."
   }
 }
-Wrote /private/tmp/j0878-hos-wt/02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/PACKAGE_UPLOAD_RESULT_2026-10-23T09-23-22-218Z.json
