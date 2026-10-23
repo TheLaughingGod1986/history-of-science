@@ -47,8 +47,7 @@ FILMS = [
     {"film": "005", "card": "The Hidden Circle", "keep_to": 489.20,
      "master": Path("/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/hos_005_master_v01.mp4"),
      "inv_len": 526.53},
-    {"film": "006", "card": "Built From Air", "keep_to": None, "master": NAS / "006_Trees-Are-Made-Of-Air/09_Final-Export/master_v01/hos_006_master_v01.mp4", "inv_len": 508.0,
-     "missing": "006 hand-off trim point still needs measurement before final assembly"},
+    {"film": "006", "card": "Built From Air", "keep_to": 493.55, "master": NAS / "006_Trees-Are-Made-Of-Air/09_Final-Export/master_v01/hos_006_master_v01.mp4", "inv_len": 508.0},
     {"film": "001", "card": "The Invisible Enemy", "keep_to": None,
      "master": NAS / "001_How-Did-We-Discover-Germs/09_Final-Export/hos_001_germs_full_v02.mp4",
      "inv_len": 364.55},
@@ -86,6 +85,12 @@ TICK = HOS / "docs/STANDALONE_SHORTS_TEST_2026-10/sfx_kit_v01/sfx_hos_tick_ink_v
 TICK_GAIN_DB = -14.0
 GFX = "gfx"  # a shot ("gfx", 0, length) is the segment's J0204 timeline, played from its start
 SEGMENT_SHOTS = {
+    # Bridge 1: 005 closed circulation loop (P5:08), J0204 timeline_b1 (3.5 s, 1628 Harvey),
+    # then 006 forest canopy (P5:14), potted willow sapling (P1:12), and hauling the pot by the balance (P2:08).
+    "bridge1": [("005", 434.8, 438.6), (GFX, 0.0, 3.5), ("006", 439.2, 443.4), ("006", 56.2, 60.7), ("006", 102.2, 106.4)],
+    # Bridge 2: 006 sunlit leaf close-up (P5:06), shutters opening to window (P4:12),
+    # 001 microscopic germs (141.8-146.5 s), and doctors at the ward basin (217.5-222.5 s).
+    "bridge2": [("006", 394.2, 399.2), ("006", 338.5, 343.3), ("001", 141.8, 146.5), ("001", 217.5, 222.5)],
     # 003 uses the italic look plus lower-third captions; both windows checked on a 1 s sheet:
     # dark screen 95.2-101.8 s (CARDBOARD from 103 s), lit screen 145.2-149.4 s (card at 151 s).
     # 002 EMPTY CHAIR cuts off between 230.0 and 230.2 s; the scan samples at 0.5 s, so edges keep 0.3 s.

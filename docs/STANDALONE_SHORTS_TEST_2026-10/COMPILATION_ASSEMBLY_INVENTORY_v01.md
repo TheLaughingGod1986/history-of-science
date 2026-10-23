@@ -24,7 +24,7 @@ Times are master time. Each cut sits in a measured VO pause (`silencedetect`, �
 | Film | Keep | Cut at | Dropped | Evidence |
 |---|---|---|---|---|
 | 005 | 0:00 → 8:09.20 | 489.20 s | "Thirteen years later, a Dutch cloth merchant… That is where the story of germs begins." plus the end card and hold (8:09.2 → 8:46.5, 37.3 s) | caption 134 ends 8:08.533 "before anyone saw the last link."; pause 488.69–489.25 s |
-| 006 | TBD | TBD | "…a young student fired tiny particles at gold" hand-off, end card and hold | needs 006's master |
+| 006 | 0:00 → 8:13.55 | 493.55 s | "Every one of those carbon atoms is billions of years old… gold beaten thinner than paper." hand-off, end card and hold (8:13.55 → 8:28.00, 14.45 s) | word "air." ends 492.94 s; pause 493.13–493.76 s (`silencedetect`, -28 dB, 0.3 s); cut #89 `22_pulled_down` ends 493.583 s |
 | 004 | 0:00 → 8:11.40 | 491.40 s | "But the nucleus had one more secret… That's the next story." plus end card and hold (8:11.4 → 8:44.7, 33.3 s). The Closing replaces it. | caption 88 ends 8:10.818 "It's a count."; pause 491.06–491.68 s |
 | 001, 002, 003 | whole master | none | none (generic end lines stay, per plan risk 2) | |
 
