@@ -26,7 +26,9 @@ Times are master time. Each cut sits in a measured VO pause (`silencedetect`, �
 | 005 | 0:00 → 8:09.20 | 489.20 s | "Thirteen years later, a Dutch cloth merchant… That is where the story of germs begins." plus the end card and hold (8:09.2 → 8:46.5, 37.3 s) | caption 134 ends 8:08.533 "before anyone saw the last link."; pause 488.69–489.25 s |
 | 006 | 0:00 → 8:13.55 | 493.55 s | "Every one of those carbon atoms is billions of years old… gold beaten thinner than paper." hand-off, end card and hold (8:13.55 → 8:28.00, 14.45 s) | word "air." ends 492.94 s; pause 493.13–493.76 s (`silencedetect`, -28 dB, 0.3 s); cut #89 `22_pulled_down` ends 493.583 s |
 | 004 | 0:00 → 8:11.40 | 491.40 s | "But the nucleus had one more secret… That's the next story." plus end card and hold (8:11.4 → 8:44.7, 33.3 s). The Closing replaces it. | caption 88 ends 8:10.818 "It's a count."; pause 491.06–491.68 s |
-| 001, 002, 003 | whole master | none | none (generic end lines stay, per plan risk 2) | |
+| 001 | 0:00 → 5:59.35 | 359.35 s | Brown house end card (`History of Science / DISCOVERY. WONDER. PROOF.`) and silent hold (5:59.35 → 6:04.55, 5.20 s) | word "us?" ends 358.80 s; silence 359.03–364.54 s (`silencedetect`, -28 dB); `end_card_dissolve_start` in `HOS_001_GERMS_FULL_V02_SHIP.json` is 359.405 s |
+| 002 | 0:00 → 8:50.15 | 530.15 s | Spoken stage direction ("Hold on the last glowing vacancy, soft return."), hand-off ("The next element is already late for dinner.") and brown end card (`card_in` 537.13 s) (8:50.15 → 9:00.63, 10.48 s) | word "in?" ends 529.50 s; silence 529.53–530.35 s (`silencedetect`, -28 dB, 0.82 s) |
+| 003 | 0:00 → 6:46.20 | 406.20 s | Clipped fragment ("But every new eye…", 406.66–408.25 s) and 18.0 s frozen Studio end-screen hold (`p05_hold_seg.mp4`, 408.25 → 425.71 s, 19.51 s total) | word "lesson." ends 405.50 s; silence 405.48–406.86 s (`silencedetect`, -28 dB, 1.38 s) |
 
 Each trimmed film gets 0.6 s of picture and bed past the cut point's last word, then the 0.5–1.5 s crossfade into its bridge (edit lock: never clip a line).
 
