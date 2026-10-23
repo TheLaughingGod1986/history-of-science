@@ -45,10 +45,10 @@ TRIM_FADE = 0.25  # audio fade on a trimmed tail; the cut sits in a measured VO 
 # Order by proof year (Chief, J0173). keep_to = None keeps the whole master.
 FILMS = [
     {"film": "005", "card": "The Hidden Circle", "keep_to": 489.20,
-     "master": Path.home() / "YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/09_Final-Export/hos_005_master_v01.mp4",
+     "master": Path("/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-005/hos_005_master_v01.mp4"),
      "inv_len": 526.53},
-    {"film": "006", "card": "Built From Air", "keep_to": None, "master": None, "inv_len": 500.0,
-     "missing": "006 master not finished (picture ETA 25 Oct); trim point TBD"},
+    {"film": "006", "card": "Built From Air", "keep_to": None, "master": NAS / "006_Trees-Are-Made-Of-Air/09_Final-Export/master_v01/hos_006_master_v01.mp4", "inv_len": 508.0,
+     "missing": "006 hand-off trim point still needs measurement before final assembly"},
     {"film": "001", "card": "The Invisible Enemy", "keep_to": None,
      "master": NAS / "001_How-Did-We-Discover-Germs/09_Final-Export/hos_001_germs_full_v02.mp4",
      "inv_len": 364.55},
@@ -59,7 +59,7 @@ FILMS = [
      "master": NAS / "003_Invisible-Bones-X-Rays/09_Final-Export/hos_003_full_polish_v01.mp4",
      "inv_len": 425.71},
     {"film": "004", "card": "Inside the Atom", "keep_to": 491.40,
-     "master": HOS / "02_Video-Projects/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_full_v02.mp4",
+     "master": Path("/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-21/HOS-004/hos_004_full_v02.mp4"),
      "inv_len": 524.70},
 ]
 # Segment that follows each film (the closing follows 004).
