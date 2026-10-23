@@ -1,6 +1,6 @@
 {
   "film": "007_The-First-Vaccine",
-  "cut_seconds": 505.147,
+  "cut_seconds": 531.083333,
   "kit": "kit_v01 (own HOS synthesis via scripts/sfx_kit.py, seed 830)",
   "gain_db": {
     "tick": -1.5,
@@ -221,6 +221,11 @@
       "start": 454.541,
       "kind": "tick",
       "why": "code graphic: 08_body_learns (THE BODY LEARNS)"
+    },
+    {
+      "start": 507.18,
+      "kind": "tick",
+      "why": "closing card: Why Did Franklin Fly a Kite in a Storm? (Thu 19 Nov)"
     }
   ],
   "source": "Own house HOS kit, no spend"
