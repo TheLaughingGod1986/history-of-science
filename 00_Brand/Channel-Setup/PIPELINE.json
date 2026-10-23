@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Master v01 passed the Chief (22 Oct) and is merged; copy to HOS UAT for Ben's watch (J0857), thumbnails next (J0858). Ben watch due 1 Nov.",
+      "summary": "Master v01 passed the Chief (22 Oct), merged, and copied to iCloud `HOS UAT/006_Trees_master_v01.mp4` for Ben's watch (J0857). Thumbnail Step 1 concepts + Flow price table parked for Chief (J0858). Ben watch due 1 Nov.",
       "stages": {
         "topic": {
           "status": "done"
@@ -251,9 +251,10 @@
         "edit": {
           "status": "done",
           "due": "2026-10-29",
-          "note": "master v01 Chief PASS 22 Oct (J0835): \u00a30 score + 24 SFX, -14.0 LUFS/-1.5 dBTP, HOS #356 merged 1946ac4d",
+          "note": "master v01 Chief PASS 22 Oct (J0835): \u00a30 score + 24 SFX, -14.0 LUFS/-1.5 dBTP, HOS #356 merged 1946ac4d; in HOS UAT (J0857)",
           "jobs": [
-            "J0835"
+            "J0835",
+            "J0857"
           ],
           "since": "2026-10-22T20:07",
           "underway": false,
@@ -262,15 +263,28 @@
             5
           ],
           "steps_unit": "master steps",
-          "left": "Chief listening review",
+          "left": "in Ben's watch",
           "eta": "",
-          "waiting": "Chief review: musical fit, final PASS and Ben watch"
+          "waiting": "Ben watch (due 1 Nov)"
         },
         "thumbnails": {
-          "status": "todo",
+          "status": "doing",
           "due": "2026-10-29",
-          "owner": "Mac mini",
-          "note": "concepts + Flow price for the Chief (J0858), due 29 Oct"
+          "owner": "Chief",
+          "since": "2026-10-23T03:02",
+          "underway": false,
+          "steps": [
+            1,
+            2
+          ],
+          "steps_unit": "thumb steps",
+          "left": "Step 2: mint + cover-builder lettering + gates after Chief pick",
+          "eta": "",
+          "waiting": "Chief: 006 thumbnail price + concept pick (J0858)",
+          "jobs": [
+            "J0858"
+          ],
+          "note": "Step 1 done (J0858): 3 concepts (WOOD FROM SKY?, DO PLANTS EAT SOIL?, GROWN ON WATER?) + Flow price (0 cr Nano Banana 2 / 20-60 cr Fast reserve, 20,830 cr live) in 08_Thumbnail/THUMB_BRIEF_v01.md; parked for Chief"
         },
         "ben_ok": {
           "status": "todo",
