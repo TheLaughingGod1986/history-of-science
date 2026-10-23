@@ -5,6 +5,9 @@
   "episode": 0,
   "loudness": {
     "integrated_lufs": -14.0,
-    "true_peak_dbtp": -2.0
-  }
+    "true_peak_dbtp": -1.4
+  },
+  "sfx_level": 0,
+  "sfx_hits": 43,
+  "bed_bpm": 60.0
 }

@@ -317,3 +317,25 @@ Gate run with `--air-date 2027-01-20` (gate only). Caption check: 16 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+
+## 23 Oct 2026 — Short `s11_curved_flask_v02` (Chief FIX on J0825 `v01`: exclusive `gte(t,s)*lt(t,e)` caption handovers, OWB J0854)
+
+- **Fix (`£0` spend):** Updated `_build_short_s11_curved_flask_v01.py` lines 479 & 482 and `_build_short_s11_curved_flask_v02.py` to use `enable='gte(t,s)*lt(t,e)'` instead of inclusive `between(t,s,e)`, eliminating one-frame double captions at word-caption handovers. Kept accepted 7-shot picture plan and title `'What Is the Pasteur Swan Neck Flask Experiment?'`.
+- **Handover check (10 sampled / 16 total boundaries):** `max_active_vo_captions_any_frame = 1`; all 10 sampled handover frame pairs (`f38->f39 @ 1.296s`, `f84->f85 @ 2.809s`, `f113->f114 @ 3.799s`, `f139->f140 @ 4.655s`, `f184->f185 @ 6.138s`, `f229->f230 @ 7.662s`, `f276->f277 @ 9.204s`, `f319->f320 @ 10.645s`, `f342->f343 @ 11.404s`, `f385->f386 @ 12.844s`) verified 1 caption each (`one_caption_each: true`, contact sheet `10_Shorts/_work_s11_curved_flask_v02/hos_001_s11_curved_flask_v02_handovers_10.jpg`).
+- **File:** `10_Shorts/hos_001_s11_curved_flask_v02.mp4`, 22.367 s, sha256 `f60e1c53ab0c7e9ac69728ec03c409be08203a01f3cf33fd6c043d5cf9f02882`; phone copy iCloud `HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v02.mp4`.
+
+```
+PASS  hos_001_s11_curved_flask_v02.mp4  dur=22.37s  audio=-22.6dB  motion=10.29  dhash=a18d868b13391c1c
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s11_curved_flask_v02_open_sheet.jpg
+PASS  hos_001_s11_curved_flask_v02.mp4  0:22.37  mean -22.6 dB  peak -4.2 dB  156 wpm
+   first minute: title_question 0.0s
+   warn  replace at ~0:12.90: script 'can change a civilisation because it turns' / heard 'can change a civilization because it turns' — sounds alike (likely the transcriber); listen
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v02/polish_gate_s11_curved_flask_v02.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v02/picture_qa_s11_curved_flask_v02/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v02/picture_qa_s11_curved_flask_v02/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2027-01-20` (gate only). Caption check: 16 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS. Nothing uploaded.
+
+

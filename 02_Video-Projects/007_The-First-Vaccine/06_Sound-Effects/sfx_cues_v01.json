@@ -1,29 +1,226 @@
 {
+  "film": "007_The-First-Vaccine",
+  "cut_seconds": 505.147,
+  "kit": "kit_v01 (own HOS synthesis via scripts/sfx_kit.py, seed 830)",
+  "gain_db": {
+    "tick": -1.5,
+    "whoosh_card": -8.0
+  },
   "cues": [
     {
-      "start": 29.2083,
+      "start": 11.8,
       "kind": "tick",
-      "why": "07_map_shadows"
+      "why": "teach label: A PAIL \u00b7 A LANCET \u00b7 A BOOK"
     },
     {
-      "start": 293.3747,
+      "start": 23.45,
       "kind": "tick",
-      "why": "08c_map_again"
+      "why": "date/place stamp: 1700s \u00b7 Smallpox"
     },
     {
-      "start": 395.5413,
+      "start": 29.4,
       "kind": "tick",
-      "why": "11_news_spreads"
+      "why": "teach label: THE SPECKLED MONSTER"
     },
     {
-      "start": 422.4997,
+      "start": 35.3,
       "kind": "tick",
-      "why": "02b_news_again"
+      "why": "data pill: 3 in 10 died"
     },
     {
-      "start": 454.5413,
+      "start": 76.2,
       "kind": "tick",
-      "why": "08_body_learns"
+      "why": "teach label: VARIOLATION"
+    },
+    {
+      "start": 100.683,
+      "kind": "whoosh_card",
+      "why": "chapter card: The Milkmaids' Secret"
+    },
+    {
+      "start": 102.933,
+      "kind": "tick",
+      "why": "teach label: COWPOX"
+    },
+    {
+      "start": 112.933,
+      "kind": "tick",
+      "why": "teach label: A MILD ILLNESS"
+    },
+    {
+      "start": 136.533,
+      "kind": "tick",
+      "why": "teach label: \"WE NEVER CATCH IT\""
+    },
+    {
+      "start": 150.833,
+      "kind": "tick",
+      "why": "WHO card: Benjamin Jesty (1736\u20131816 \u00b7 Dorset farmer)"
+    },
+    {
+      "start": 155.633,
+      "kind": "tick",
+      "why": "date/place stamp: Dorset, 1774"
+    },
+    {
+      "start": 168.933,
+      "kind": "tick",
+      "why": "date/place stamp: Berkeley, Gloucestershire"
+    },
+    {
+      "start": 173.983,
+      "kind": "tick",
+      "why": "WHO card: Edward Jenner (1749\u20131823 \u00b7 Country doctor)"
+    },
+    {
+      "start": 203.033,
+      "kind": "tick",
+      "why": "WHO card: John Hunter (1728\u20131793 \u00b7 London surgeon)"
+    },
+    {
+      "start": 210.233,
+      "kind": "tick",
+      "why": "teach label: \"Why not try the experiment?\""
+    },
+    {
+      "start": 230.308,
+      "kind": "whoosh_card",
+      "why": "chapter card: A Pail, a Lancet and a Boy"
+    },
+    {
+      "start": 235.008,
+      "kind": "tick",
+      "why": "WHO card: Sarah Nelmes (May 1796 \u00b7 Dairymaid)"
+    },
+    {
+      "start": 243.258,
+      "kind": "tick",
+      "why": "teach label: BLOSSOM \u00b7 THE COW"
+    },
+    {
+      "start": 252.308,
+      "kind": "tick",
+      "why": "date/place stamp: 14 May 1796"
+    },
+    {
+      "start": 258.558,
+      "kind": "tick",
+      "why": "WHO card: James Phipps (Age about 8)"
+    },
+    {
+      "start": 262.758,
+      "kind": "tick",
+      "why": "teach label: 14 MAY 1796"
+    },
+    {
+      "start": 273.358,
+      "kind": "tick",
+      "why": "teach label: A MILD FEVER, THEN WELL"
+    },
+    {
+      "start": 293.375,
+      "kind": "tick",
+      "why": "code graphic: 08c_map_again (smallpox shadow spread)"
+    },
+    {
+      "start": 309.058,
+      "kind": "whoosh_card",
+      "why": "chapter card: The Test"
+    },
+    {
+      "start": 310.588,
+      "kind": "tick",
+      "why": "date/place stamp: 1 July 1796"
+    },
+    {
+      "start": 321.008,
+      "kind": "tick",
+      "why": "teach label: WAITING"
+    },
+    {
+      "start": 323.408,
+      "kind": "tick",
+      "why": "date/place stamp: One day \u00b7 Three days"
+    },
+    {
+      "start": 326.058,
+      "kind": "tick",
+      "why": "date/place stamp: One week"
+    },
+    {
+      "start": 329.408,
+      "kind": "tick",
+      "why": "teach label: NO DISEASE FOLLOWED"
+    },
+    {
+      "start": 341.308,
+      "kind": "tick",
+      "why": "data pill: 22 years earlier"
+    },
+    {
+      "start": 355.708,
+      "kind": "tick",
+      "why": "date/place stamp: Soho, London \u00b7 1798"
+    },
+    {
+      "start": 390.708,
+      "kind": "tick",
+      "why": "teach label: THE TEMPLE OF VACCINIA"
+    },
+    {
+      "start": 396.408,
+      "kind": "tick",
+      "why": "teach label: THE NEWS SPREADS"
+    },
+    {
+      "start": 401.808,
+      "kind": "whoosh_card",
+      "why": "chapter card: The Word That Saved Millions"
+    },
+    {
+      "start": 403.658,
+      "kind": "tick",
+      "why": "WHO card: Louis Pasteur (1822\u20131895 \u00b7 London, 1881)"
+    },
+    {
+      "start": 407.308,
+      "kind": "tick",
+      "why": "teach label: VACCINE"
+    },
+    {
+      "start": 417.258,
+      "kind": "tick",
+      "why": "teach label: VACCA \u2192 VACCINE"
+    },
+    {
+      "start": 422.5,
+      "kind": "tick",
+      "why": "code graphic: 02b_news_again (world inoculation routes)"
+    },
+    {
+      "start": 433.808,
+      "kind": "tick",
+      "why": "teach label: THE LAST CASES"
+    },
+    {
+      "start": 437.358,
+      "kind": "tick",
+      "why": "date/place stamp: 8 May 1980"
+    },
+    {
+      "start": 440.508,
+      "kind": "tick",
+      "why": "teach label: SMALLPOX IS GONE"
+    },
+    {
+      "start": 444.058,
+      "kind": "tick",
+      "why": "data pill: 300 million deaths"
+    },
+    {
+      "start": 454.541,
+      "kind": "tick",
+      "why": "code graphic: 08_body_learns (THE BODY LEARNS)"
     }
   ],
   "source": "Own house HOS kit, no spend"

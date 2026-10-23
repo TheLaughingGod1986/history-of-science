@@ -3,4 +3,4 @@ WARN   4:26 row 05_quill_writes 05_quill_writes_t1.mp4: low detail: edge density
 WARN   4:51 row 08b_uneasy_hand 08b_uneasy_hand_t1.mp4: low detail: edge density 0.0223 < film p5 0.0224
 WARN   5:11 row 01_page_turns 05_quill_writes_t1.mp4: low detail: edge density 0.0152 < film p5 0.0224
 WARN   5:47 row 07b_quill_again 05_quill_writes_t1.mp4: low detail: edge density 0.0183 < film p5 0.0224
-picture QA PASS: 0 of 97 cuts fail, 5 to look at -> /private/tmp/codex-j0830-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v01_pack/PICTURE_QA.md, /private/tmp/codex-j0830-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v01_pack/picture_qa_review.jpg
+picture QA PASS: 0 of 97 cuts fail, 5 to look at -> /private/tmp/j0856-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v01_pack/PICTURE_QA.md, /private/tmp/j0856-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v01_pack/picture_qa_review.jpg

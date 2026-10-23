@@ -1,10 +1,30 @@
 {
   "verdict": "PASS",
   "vo_integrated": -16.1,
-  "sfx_integrated": -39.9,
-  "hits": 5,
+  "sfx_integrated": -35.0,
+  "hits": 43,
   "fails": [],
-  "warns": [
-    "present: 5 hits in 8.4 min (fewer than 1 a minute)"
-  ]
+  "warns": [],
+  "bed_integrated": -34.4,
+  "bed_vs_vo": {
+    "vo_integrated_lufs": -16.1,
+    "bed_integrated_lufs": -34.4,
+    "speech_bed_mean_lufs": -35.21,
+    "pause_bed_mean_lufs": -33.68,
+    "pause_rise_over_speech_db": 1.53,
+    "speech_diff_under_vo_db": {
+      "mean": 18.12,
+      "p10": 13.1,
+      "p50": 18.6,
+      "p90": 21.4,
+      "min": 11.2,
+      "breaches_under_10lu": 0
+    },
+    "onset_check_60bpm": {
+      "measured_bpm": 60.0,
+      "lag_hops_50ms": 20,
+      "autocorr_ratio_ac20_ac0": 0.8926,
+      "threshold_ac0": 0.1
+    }
+  }
 }

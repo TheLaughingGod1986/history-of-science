@@ -1,6 +1,6 @@
 # Picture QA: PASS
 
-/private/tmp/j0830-audio-master-v01/hos_007_master_v01.mp4 · 97 cuts · 0 fail · 5 for Claude to look at full size
+/private/tmp/j0856-audio-master-v02/hos_007_master_v02.mp4 · 97 cuts · 0 fail · 5 for Claude to look at full size
 
 ## Claude looks at these full size
 

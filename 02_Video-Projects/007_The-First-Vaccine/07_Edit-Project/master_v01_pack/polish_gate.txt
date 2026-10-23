@@ -95,4 +95,4 @@
 13_explorer_meadow   492.0s 13_explorer_meadow_t1.mp4    ok
 11b_storm_builds   497.7s 11b_storm_builds_t1.mp4      ok
 12_kite_storm   502.6s 12_kite_storm_t1.mp4         ok
-polish gate PASS: 0 of 97 rows failed, 5 to look at -> /private/tmp/codex-j0830-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v01_pack/polish_gate.json
+polish gate PASS: 0 of 97 rows failed, 5 to look at -> /private/tmp/j0856-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v01_pack/polish_gate.json

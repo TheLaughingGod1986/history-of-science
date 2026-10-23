@@ -1,0 +1,24 @@
+
+> content-ops@0.1.0 gate:episode
+> tsx scripts/gate-episode.ts --project /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air
+
+# Episode gate — 006_Trees-Are-Made-Of-Air
+
+**Decision:** PASS — VO / Gemini Veo allowed
+
+| Check | Status | Detail |
+|---|---|---|
+| project_dir | OK | Project: /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air |
+| prebuild_vidiq | OK | Pre-build vidIQ audit present and looks signed off. |
+| script_file | OK | Script: 01_Script/trees_script_master_v02.md |
+| script_review | OK | Script reviewer PASS 93.7/90 (need ≥90). |
+| explorer_acts | OK | [EXPLORER ACTS] beats 3 (need ≥1). |
+| visual_must | OK | [VISUAL MUST] count 49 (need ≥4). |
+| teach | OK | [TEACH] count 5 (need ≥4). |
+| chapters | OK | [CHAPTER CARD] count 4 (aim 4–6 film acts). |
+| production_checklist | OK | Checklist present: 11_Upload-Package/PRODUCTION_CHECKLIST_V2.md |
+
+Script score: **93.7/100** · PASS
+
+Cold open: The wood of a tree is built mostly out of thin air. So where does a tree's weight really come from? By the end of this film, you'll know how a willow in a pot, a sprig of mint and a sunny window crack…
+

@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-22",
-  "updated_by": "codex (J0830 review handoff)",
+  "updated_by": "claude (acting Chief)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Voice and all 5 picture parts (92 rows + roughs) are KEEP on main (Chief KEEP sweep 15 Oct, Flow 23,730). Next: edit + polish (J0266 Part 03/04 rough QA fixes, then fine cut and thumbnails).",
+      "summary": "Master v01 passed the Chief (22 Oct) and is merged; copy to HOS UAT for Ben's watch (J0857), thumbnails next (J0858). Ben watch due 1 Nov.",
       "stages": {
         "topic": {
           "status": "done"
@@ -249,16 +249,28 @@
           "note": "All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180)."
         },
         "edit": {
-          "status": "todo",
+          "status": "done",
           "due": "2026-10-29",
-          "note": "J0266 queued (Part 03/04 rough QA fixes, 0 spend), then fine cut + master",
+          "note": "master v01 Chief PASS 22 Oct (J0835): \u00a30 score + 24 SFX, -14.0 LUFS/-1.5 dBTP, HOS #356 merged 1946ac4d",
           "jobs": [
-            "J0266"
-          ]
+            "J0835"
+          ],
+          "since": "2026-10-22T20:07",
+          "underway": false,
+          "steps": [
+            5,
+            5
+          ],
+          "steps_unit": "master steps",
+          "left": "Chief listening review",
+          "eta": "",
+          "waiting": "Chief review: musical fit, final PASS and Ben watch"
         },
         "thumbnails": {
           "status": "todo",
-          "due": "2026-10-29"
+          "due": "2026-10-29",
+          "owner": "Mac mini",
+          "note": "concepts + Flow price for the Chief (J0858), due 29 Oct"
         },
         "ben_ok": {
           "status": "todo",
@@ -317,7 +329,7 @@
         "edit": {
           "status": "doing",
           "due": "2026-11-05",
-          "note": "J0830 candidate master v01, \u00a30 original chamber score + house ticks. SFX/music/picture/polish/episode gates PASS; -14.0 LUFS, -2.0 dBTP. NAS master and stems SHA-verified. Five inherited low-detail warnings and sparse SFX warning. Worker complete; no approved stage until Chief review.",
+          "note": "J0856 candidate master v02 (`hos_007_master_v02.mp4`, sha256 `e55f680d`, £0): 60.0 BPM original chamber score (`ac20/ac0=0.8926`, bed 18.1 dB under VO in speech with 0 breaches, +1.53 dB rise in pauses) + 43 house SFX cues (39 ink ticks across all WHO cards, date/place stamps, data pills, teach labels & code graphics + 4 chapter whooshes; 0 WARNs). -14.0 LUFS / -1.4 dBTP; all gates PASS. Parked for Chief review on HOS PR #355.",
           "steps": [
             5,
             5
@@ -325,7 +337,7 @@
           "steps_unit": "worker master steps",
           "owner": "Claude",
           "since": "2026-10-22",
-          "waiting": "Chief audio fit and final master review; HOS PR #355",
+          "waiting": "Chief audio fit and final master v02 review; HOS PR #355",
           "underway": false,
           "left": "Chief review"
         },
@@ -533,7 +545,7 @@
           "status": "todo",
           "due": "2026-11-22",
           "owner": "Cursor",
-          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; 8 period details P1\u2013P8 to confirm first); plates start after the whole VO batch passes"
+          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; period details P1\u2013P8 all confirmed (J0860, 22 Oct; sources in FACT_NOTES_v01)); plates start after the whole VO batch passes"
         },
         "edit": {
           "status": "todo",

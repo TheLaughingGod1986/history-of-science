@@ -1,6 +1,6 @@
 
 > content-ops@0.1.0 gate:episode
-> tsx scripts/gate-episode.ts --project /private/tmp/codex-j0830-wt/02_Video-Projects/007_The-First-Vaccine
+> tsx scripts/gate-episode.ts --project /private/tmp/j0856-hos-wt/02_Video-Projects/007_The-First-Vaccine
 
 # Episode gate — 007_The-First-Vaccine
 
@@ -8,7 +8,7 @@
 
 | Check | Status | Detail |
 |---|---|---|
-| project_dir | OK | Project: /private/tmp/codex-j0830-wt/02_Video-Projects/007_The-First-Vaccine |
+| project_dir | OK | Project: /private/tmp/j0856-hos-wt/02_Video-Projects/007_The-First-Vaccine |
 | prebuild_vidiq | OK | Pre-build vidIQ audit present and looks signed off. |
 | script_file | OK | Script: 01_Script/vaccine_script_master_v01.md |
 | script_review | OK | Script reviewer PASS 92.3/90 (need ≥90). |

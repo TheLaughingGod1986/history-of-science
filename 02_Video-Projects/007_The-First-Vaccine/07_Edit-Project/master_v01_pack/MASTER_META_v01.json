@@ -1,30 +1,53 @@
 {
-  "job": "J0830",
+  "job": "J0856",
+  "supersedes_job": "J0830",
   "approved_join_sha256": "7cfd6a594b23fc6fc0e57309b69067584f03f29fe23d5e72af745e36f56682ff",
   "picture": "video stream copy, no picture edits",
   "duration_s": 505.147,
   "files": [
     {
-      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v01_J0830/hos_007_master_v01.mp4",
-      "sha256": "e1880dd10bd627f0b36250eb688c6e3df8acd4f96fa7c46c740a834f96a31d83"
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v02_J0856/hos_007_master_v02.mp4",
+      "sha256": "e55f680db246e12620a7827599415e6d9f513d614563bd213c0b2a42f9c69c97"
     },
     {
-      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v01_J0830/stem_vo_v01.wav",
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v02_J0856/stem_vo_v01.wav",
       "sha256": "2f531d306166dadfbf5187abb4e12c8aecc5b1485e870878de0fd9ccb350b759"
     },
     {
-      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v01_J0830/vaccine_score_bed_v01.mp3",
-      "sha256": "f72726c5ac1499f52259e98f7284ca71ccfdd2b2f53c8db92d2a67825b2af0e2"
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v02_J0856/vaccine_score_bed_v01.mp3",
+      "sha256": "e93423a9aebf9605f618bf24c858b8c4767e73d230ce54c0d51091d67e6d4259"
     },
     {
-      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v01_J0830/stem_sfx_v01.wav",
-      "sha256": "129864558e39d9552991d8e59b85eb12d7ca73ef16255c28a44c627ea6bf0524"
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v02_J0856/stem_sfx_v01.wav",
+      "sha256": "5d3f276f50f5ee5a07f052d4aaca9d62e84ef1f2b569da498da977dc2d83f717"
     },
     {
-      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v01_J0830/audio_master_v01.m4a",
-      "sha256": "7fcbac4c07580a5aa0cdba4bd8f17c6094d45e7b632f91d4afa6f28a0d8db3fa"
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v02_J0856/audio_master_v02.m4a",
+      "sha256": "d26f4bd39020da23bd672867fa7f6b96d1a1a405638930330495f1b0a8a0f5f6"
     }
   ],
+  "bed_vs_vo": {
+    "vo_integrated_lufs": -16.1,
+    "bed_integrated_lufs": -34.4,
+    "speech_bed_mean_lufs": -35.21,
+    "pause_bed_mean_lufs": -33.68,
+    "pause_rise_over_speech_db": 1.53,
+    "speech_diff_under_vo_db": {
+      "mean": 18.12,
+      "p10": 13.1,
+      "p50": 18.6,
+      "p90": 21.4,
+      "min": 11.2,
+      "breaches_under_10lu": 0
+    },
+    "onset_check_60bpm": {
+      "measured_bpm": 60.0,
+      "lag_hops_50ms": 20,
+      "autocorr_ratio_ac20_ac0": 0.8926,
+      "threshold_ac0": 0.1
+    }
+  },
+  "sfx_hits": 43,
   "spend": "\u00a30",
   "approval": "pending Chief"
 }

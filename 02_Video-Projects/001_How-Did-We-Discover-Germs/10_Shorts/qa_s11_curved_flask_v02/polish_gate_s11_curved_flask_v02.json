@@ -1,0 +1,184 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v02.mp4",
+  "edge_floor": 0.0427,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s05_A",
+      "cut": 4,
+      "t": 12.96,
+      "source": "08_passengers_v20.mp4",
+      "why": [
+        "low detail: edge density 0.0301 < film p5 0.0427"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "01_question_mark_flask_v17.mp4",
+      "t": 1.34,
+      "std": 54.45,
+      "mean": 61.43,
+      "p95": 195.0,
+      "edge": 0.0894,
+      "hf": 14.0,
+      "lf": 46.1,
+      "std8": 49.35,
+      "edge8": 0.3189,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_Vaccines?",
+      "source": "09_sceptics_watch_v17.mp4",
+      "t": 4.43,
+      "std": 48.87,
+      "mean": 95.11,
+      "p95": 193.0,
+      "edge": 0.0727,
+      "hf": 10.09,
+      "lf": 43.27,
+      "std8": 45.48,
+      "edge8": 0.4281,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_paradox",
+      "source": "05_tip_the_trap_v17.mp4",
+      "t": 7.17,
+      "std": 58.1,
+      "mean": 102.95,
+      "p95": 216.0,
+      "edge": 0.0729,
+      "hf": 8.87,
+      "lf": 54.33,
+      "std8": 56.02,
+      "edge8": 0.3319,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_emptiness",
+      "source": "04_still_clear_v21.mp4",
+      "t": 9.73,
+      "std": 55.17,
+      "mean": 104.91,
+      "p95": 216.0,
+      "edge": 0.072,
+      "hf": 9.69,
+      "lf": 51.15,
+      "std8": 52.79,
+      "edge8": 0.3039,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_A",
+      "source": "08_passengers_v20.mp4",
+      "t": 12.96,
+      "std": 41.71,
+      "mean": 66.43,
+      "p95": 144.0,
+      "edge": 0.0301,
+      "hf": 8.12,
+      "lf": 39.04,
+      "std8": 39.76,
+      "edge8": 0.1249,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0301 < film p5 0.0427"
+      ]
+    },
+    {
+      "cut": 5,
+      "row": "s06_invisible",
+      "source": "11_result_returns_v01.mp4",
+      "t": 16.99,
+      "std": 48.41,
+      "mean": 94.88,
+      "p95": 199.0,
+      "edge": 0.0838,
+      "hf": 9.13,
+      "lf": 43.7,
+      "std8": 45.44,
+      "edge8": 0.3117,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_loop",
+      "source": "loop_end_01_question_mark_flask_v17.mp4",
+      "t": 20.86,
+      "std": 45.97,
+      "mean": 55.59,
+      "p95": 151.0,
+      "edge": 0.0761,
+      "hf": 9.58,
+      "lf": 41.1,
+      "std8": 42.94,
+      "edge8": 0.2708,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

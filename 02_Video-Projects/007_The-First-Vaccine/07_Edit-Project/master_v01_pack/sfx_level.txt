@@ -1,2 +1,1 @@
-SFX level PASS: VO -16.1 LUFS, SFX -39.9 LUFS, 5 hits
-WARN present: 5 hits in 8.4 min (fewer than 1 a minute)
+SFX level PASS: VO -16.1 LUFS, SFX -35.0 LUFS, 43 hits
