@@ -631,3 +631,150 @@ frame=12188 fps=493 q=-0.0 Lsize=N/A time=00:08:28.00 bitrate=N/A speed=20.6x el
 - Picture/polish use the unchanged `full_join_v02_teach/picture_qa_reviewed_ok_v02_teach.json` already used for v03: prior Chief reuse rulings and teach-card-edge seam rulings. No new waiver. First raw run without those rulings is preserved as `picture_qa_without_prior_rulings.txt`.
 - Five existing low-detail WARNs remain at 2:18, 3:01, 5:24, 6:32 and 8:17. Review sheet remains in the local master pack (`picture_qa_review.jpg`); see v03 review for Chief's earlier inspection.
 - No upload, scheduling or YouTube state change. £0 spend. Next: Chief listens/reviews, decides final PASS and Ben watch; Ben final check remains due 1 Nov.
+
+## 23 Oct 2026 — J0858 Step 1: Long thumbnail concepts + Flow credit price pass (Gemini covering)
+
+- **Brief & machine spec:** `08_Thumbnail/THUMB_BRIEF_v01.md` and `08_Thumbnail/THUMB_CONCEPTS_J0858_v01.json` (due **29 Oct 2026**, before Ben's final OK on **1 Nov 2026**).
+- **Master in HOS UAT (`J0857` done):** `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v01.mp4` (`509,759,758` bytes, sha256 `bcafbf4e04ce72f230569f9c4050b9d43b6a364374c4d7e14360c4b62c8e67ee`).
+- **Three concepts from 006's hook (`0:00` willow in air & `0:04` / Part 02 van Helmont's scales), house HOS 16:9 look (Flow key art, Explorer ~50% lower left, cover-builder `Georgia Bold` cream + 1 gold punch word + gold scroll flourishes in upper-left band, positive-question framing per `LEARNINGS.md` rule #1, 0 words repeated from Title A or B):**
+  1. **Concept A (Primary — Answer Image, `0:00` & Part 05 `7:22`):** **`WOOD / FROM / SKY?`** (3 words, gold punch **`SKY?`**; alt if paired only with Title B: **`GROWN / FROM / AIR?`**). Right 2/3: thriving willow in a terracotta pot on a sunlit oak bench beside an arched window; luminous golden-teal ribbons of sky/air stream in through the window into the leaves and condense into glowing solid wood rings inside a clean cutaway of the trunk. Lower left: Explorer (~50% height) looking up in wonder.
+  2. **Concept B (Test & Compare B — Van Helmont's Brass Scales, `0:04` & Part 02 `2:06–2:19`):** **`DO PLANTS / EAT / SOIL?`** (4 words, gold punch **`SOIL?`**; matches GB YouTube autocomplete hit; alt 3-word: **`FED BY / SOIL?`**). Right 2/3: giant 17th-century polished brass balance scale on an oak lab table — lower-right pan pulled down heavy by the uprooted 169-pound willow tree (trunk, roots, green canopy) while the raised middle-right pan holds the clay pot of dried dark furnace soil (`200 lb less ~2 oz`), beam tilted sharply toward the tree, blank pans/weights. Lower left: Explorer (~50% height) leaning in beside the balance.
+  3. **Concept C (Alternate / 3-way T&C — Van Helmont's Five-Year Sealed Pot, Part 01 `0:56` & Part 02 `1:32–2:35`):** **`GROWN / ON / WATER?`** (3 words, gold punch **`WATER?`**; alt 3-word: **`ONLY / RAIN / WATER?`**). Right 2/3: close-up of van Helmont's earthen clay pot sealed with its perforated tin-plated iron lid (keeping dust out while silver water droplets pour from a tilted glass vessel through the holes), with a thick willow trunk bursting up through the lid's collar. Lower left: Explorer (~50% height) pointing at the perforated lid.
+- **Flow credit price table (live Flow balance read `2026-10-23T01:57Z` on CDP `:9222`: `20,830` credits; `0` spent in Step 1):**
+  - **Option 1 (Default — Flow Image `Nano Banana 2` 16:9 stills):** **0 Flow credits** (`2–6` stills at `0 cr/still`) + **0 credits** cover-builder lettering = **0 Flow credits / £0.00** (`20,830` cr remaining).
+  - **Option 2 (Fast / 10-cr tier reserve — A/B pair):** **20 Flow credits** Try-1 (`2 × 10 cr`) / **40 Flow credits** Expected (`4 × 10 cr`, 2 takes each) = **£0.00** (`20,810` Try-1 / `20,790` Expected remaining).
+  - **Option 3 (Fast / 10-cr tier reserve — all 3 concepts A/B/C):** **30 Flow credits** Try-1 (`3 × 10 cr`) / **60 Flow credits** Expected (`6 × 10 cr`, 2 takes each) = **£0.00** (`20,800` Try-1 / `20,770` Expected remaining).
+  - **Headroom check:** After HOS 006 thumbnails (`0–60` cr expected) + HOS 008 (`5,605` cr expected) + HOS 009 Tranche 1 (`7,354` cr expected), expected Flow balance is **`7,811–7,871` credits**, clearing the `3,000` credit floor by **`+4,811 to +4,871` credits**.
+- **STOP:** Parked for Chief (`parked for Chief: 006 thumbnail price + concept pick`). Step 2 after Chief pass: mint on Flow, apply cover-builder lettering, run `thumb_preview.py long` and `style_sheet.py long`, and stage A/B pair for Test & Compare.
+
+## 23 Oct 2026 — J0869 Step 2: Mint A + B key-art plates (0 Flow credits), compose cover lettering, run thumb_preview + style_sheet, stage Test & Compare (Gemini covering)
+
+- **Authority:** Chief pick on `J0858` (OWB `#99` comment `6355648154`):
+  - **Primary A:** **`WOOD / FROM / SKY?`** (gold punch **`SKY?`**, willow by the sunlit arched window with golden-teal air ribbons condensing into glowing wood rings inside the trunk cutaway).
+  - **Test & Compare B:** **`DO PLANTS / EAT / SOIL?`** (gold punch **`SOIL?`**, van Helmont's 17th-century brass balance scale with the uprooted willow pan weighed down low and the dried soil pot lifted high, free of written numbers).
+  - **Concept C:** Dropped.
+  - **Price lock:** **Option 1 (`0` Flow credits, `£0.00` cash)** — Flow Image `Nano Banana 2` 16:9 stills on AI Ultra + `£0` deterministic cover-builder lettering.
+- **Step 2.1 — Flow Image (`Nano Banana 2.1 crop_16_9 x1`) mint output (`08_Thumbnail/_mint_hos_006_thumbs_flow_v01.py`, logged in `08_Thumbnail/FLOW_MINT_LOG_J0869_v01.json`):**
+  ```text
+  GATE account=benoats@googlemail.com credits_start=20830 url=https://flow.google.com/project/9b867f83-cb93-4f3f-8f7b-31c2e3e9f415
+
+  === Concept A (hos_006_thumb_A_wood_from_sky_plate01) credits_before=20830 ===
+    pill before='Video · 720p · 8s crop_16_9 x1'
+    image-mode pill='🍌 Nano Banana 2.1 crop_16_9 x1'
+    style refs attached=3 chips=3
+    clicked send role='Start generation'
+    still ok 1376x768 -> hos_006_thumb_A_wood_from_sky_plate01.png
+    credits_after=20830 used=0 elapsed=78.5s
+
+  === Concept B (hos_006_thumb_B_do_plants_eat_soil_plate01) credits_before=20830 ===
+    pill before='🍌 Nano Banana 2.1 crop_16_9 x1'
+    style refs attached=3 chips=3
+    clicked send role='Start generation'
+    still ok 1376x768 -> hos_006_thumb_B_do_plants_eat_soil_plate01.png
+    credits_after=20830 used=0 elapsed=53.0s
+
+  ALL STILLS MINTED AT 0 FLOW CREDITS
+  ```
+- **Step 2.2 — Cover-builder lettering & gate checks (`08_Thumbnail/_compose_hos_006_thumbs_v01.py`, `thumb_preview.py long`, `style_sheet.py long`):**
+  ```text
+  A composed -> hos_006_thumb_A_wood_from_sky_v01.jpg: box=[95, 36, 369, 278] orn_bot=297 clear_hero=True clear_exp=True clear_badge=True
+  B composed -> hos_006_thumb_B_do_plants_eat_soil_v01.jpg: box=[70, 30, 431, 256] orn_bot=277 clear_hero=True clear_exp=True clear_badge=True
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01_preview.jpg
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01_preview.jpg
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01_style_sheet.jpg  (1 new vs 4 live long references)
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01_style_sheet.jpg  (1 new vs 4 live long references)
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumbs_AB_v01_style_sheet.jpg  (2 new vs 4 live long references)
+  DONE THUMBS_INDEX_v01.json
+  ```
+- **Staged files & SHA-256 (`08_Thumbnail/THUMBS_INDEX_v01.json`, `11_Upload-Package/PACKAGE_MANIFEST.json`, and copied to `HOS UAT/006_Trees-Are-Made-Of-Air/08_Thumbnail/`):**
+  - **Primary A (`WOOD / FROM / SKY?`):** `08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01.jpg` (`278,441` B, `sha256: 904d2f58be22be993fb36e9c86997d00e239649e9f4b576ccebe4703c83dd0f0`)
+  - **Test & Compare B (`DO PLANTS / EAT / SOIL?`):** `08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01.jpg` (`279,043` B, `sha256: ee5f2605520a0155f146d26700d41c99d47b45596457f84d9692415fe15360c4`)
+  - **Gate previews:** `Selected/hos_006_thumb_A_wood_from_sky_v01_preview.jpg`, `Selected/hos_006_thumb_B_do_plants_eat_soil_v01_preview.jpg`, `Selected/hos_006_thumb_A_wood_from_sky_v01_style_sheet.jpg`, `Selected/hos_006_thumb_B_do_plants_eat_soil_v01_style_sheet.jpg`, `Selected/hos_006_thumbs_AB_v01_style_sheet.jpg`, and `Selected/hos_006_thumbs_AB_v01_phone_168.jpg`.
+- **Self-check scores (`THUMBNAIL_AND_TITLE_RULES.md` §2.B.3):**
+  - **HOOK:** **PASS** on A (`WOOD FROM SKY?`) and B (`DO PLANTS EAT SOIL?`). Both are 3–4 word positive questions (`LEARNINGS.md` Rule #1) naming the concrete physical things, with zero word overlap against Title A (*The Willow Tree That Was Made of Air*) or Title B (*Where Does a Tree's Weight Come From?*).
+  - **BAND:** **PASS** on A (`[95, 36, 369, 278]`, scroll bottom `y=297` above Explorer hair `y=323`, left of hero `x=440`) and B (`[70, 30, 431, 256]`, scroll bottom `y=277` above Explorer hair `y=295`, left of scale `x=485`). Both keep the bottom-right duration badge zone clear, and Plate B has zero written numbers on the scale or weights.
+  - **PHONE (`168×94`):** **PASS** on both `thumb_preview.py long` sheets and `hos_006_thumbs_AB_v01_phone_168.jpg`.
+- **STOP:** Parked for Chief (`parked for Chief: HOS 006 thumbnails A + B review before Ben's 1 Nov watch`). No upload or Studio changes.
+
+## 23 Oct 2026 — J0882: HOS 006 master v04 (all 11 Ben changes applied at 0 Flow credits, all gates PASS, Gemini covering)
+
+- **Master:** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v04/hos_006_master_v04.mp4` (`531.833 s`, `12,764` frames @ 24 fps, `1920×1080` H.264 + AAC 48 kHz stereo at `-14.0 LUFS` / `-1.4 dBTP`, sha256 `65aa7e1c6fa4c72bd1565212c62f5e3f2052b41a9c8056af7eeed518cae88faf`).
+- **UAT & NAS copies (SHA-256 verified identical `65aa7e1c6fa4c72bd1565212c62f5e3f2052b41a9c8056af7eeed518cae88faf`):**
+  - iCloud HOS UAT: `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v04.mp4` and `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/hos_006_master_v04.mp4` (+ `hos_006_master_v04_contact_sheet.jpg`, `teach_laid_sheet_v04.jpg`).
+  - NAS archive: `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/09_Final-Export/master_v04/hos_006_master_v04.mp4` (+ `hos_006_master_v04_contact_sheet.jpg`, `teach_laid_sheet_v04.jpg`, `picture_qa_review.jpg`, `PICTURE_QA.md`, `SHA256_v04.json`).
+- **Spend:** `£0.00` cash, **`0` Flow credits** (`7` replacement 16:9 plates minted on Flow `Nano Banana 2.1` on AI Ultra at `0 cr/still`, Flow balance unchanged at `20,830` credits, logged in `07_Edit-Project/master_v04/FLOW_STILLS_LOG_v04.json`).
+- **All 11 Ben change items resolved (`07_Edit-Project/master_v04/`):**
+  1. **0:09 (`#03 03_pot_jar_leaf_v04.mp4`, `0:07.33–0:14.83` & `#88 21_three_objects_v04.mp4`, `8:01.00–8:06.12`):** Replaced both three-container plates with Flow `Nano Banana 2` 16:9 stills + smooth push-in showing the middle mint seedling growing out of dark soil inside a terracotta pot sitting on the oak table under the glass bell jar.
+  2. **0:49 (`#10 10_van_helmont_sack_v04.mp4`, `0:44.75–0:51.17`):** Replaced vanishing-bag plate with Flow `Nano Banana 2` 16:9 still + smooth push-in where the burlap sack of dried soil sits steadily on the left brass pan of van Helmont's balance scale for the full shot.
+  3. **1:14 (`#15 03_willow_shoot_scale_v04.mp4`, `1:12.92–1:17.21`):** Replaced branch-only shot with Flow `Nano Banana 2` 16:9 still + smooth push-in showing the whole 5-pound young willow tree (roots, root ball, trunk, and leafy branches) on the brass balance pan, paired with `5 lb (about 2.3 kg) / young willow tree · starting weight`.
+  4. **Imperial + metric weights everywhere weights are mentioned (checked against `01_Script/FACT_NOTES_v01.md`, VO unchanged):**
+     - `#14` (`1:07.08–1:12.92`, `02_balance_200_house_v04.mp4`): `200 lb (about 91 kg)` / `of dried soil · starting weight`
+     - `#15` (`1:13.08–1:17.08`, `wt_5lb`): `5 lb (about 2.3 kg)` / `young willow tree · starting weight`
+     - `#20` (`1:46.83–1:50.50`, `num_169`): `169 lb (about 77 kg)` / `after five years · weight of a grown man`
+     - `#23` (`2:01.33–2:05.25`, `wt_2oz`): `200 lb (about 91 kg)` / `less about 2 oz (about 57 g) of soil`
+     - `#24` (`2:05.58–2:09.50`, `wt_164lb`): `164 lb (about 74 kg) of new tree` / `only 2 oz (about 57 g) of soil gone`
+     - `#29` (`2:33.83–2:37.75`, `wt_62lb`): `62 lb (about 28 kg) of charcoal` / `burned by van Helmont`
+     - `#30` (`2:38.04–2:41.38`, `wt_1lb`): `1 lb (about 0.45 kg) of ash` / `left behind · the rest became gas`
+  5. **1:22 (`#16 04_lid_rain_v04.mp4`, `1:17.21–1:23.58`):** Replaced strange plate with clean Flow `Nano Banana 2` 16:9 still + gentle rain animation showing van Helmont's terracotta pot fitted with its perforated tin-plated iron lid around the willow trunk as rainwater droplets fall onto the lid.
+  6. **3:15 (`#35 02_hales_branch_v04.mp4`, `3:03.71–3:10.21` & `#36 03_water_level_v04.mp4`, `3:10.21–3:15.42`):** Replaced both off test-tube/branch plates with Flow `Nano Banana 2` 16:9 plates showing period-correct 18th-century clear glass vessels holding a leafy branch/sprig upright in water on Stephen Hales's oak workbench.
+  7. **4:54 (`#55 04_sunny_window_v04.mp4`, `4:51.83–4:56.38`) & 5:21 (`#59 08_explorer_shade_v04.mp4`, `5:15.38–5:22.58`):** Fixed bubbles leaving the jars: `#55` uses a new Flow `Nano Banana 2` 16:9 still with animated oxygen bubbles rising strictly from the submerged leaves inside the water-filled jars; `#59` joins the clean underwater-bubble halves of `08_explorer_shade` `t2` + `t1` with an 8-frame crossfade so all bubbles stay inside the glass vessel.
+  8. **5:57 (`#66 15_leaf_turns_sun_v04.mp4`, `5:55.17–5:58.08`):** Replaced rotating plant clip with a smooth push-in on `15_leaf_turns_sun_t1.png` (`0` rotation, `0` jitter reversals).
+  9. **6:07 (`#68 when_geneva_1782`, `6:07.00–6:09.83`):** Added the house WHEN/WHERE lower-third card `Geneva, 1782 / Lake Geneva · Republic of Geneva` over `01_geneva_lake`, plus restored Part 05 overlays (`timeline_d5` `Geneva, 1782`, `who_senebier` `Jean Senebier 1742–1809 · Genevan pastor`, `who_saussure` `Nicolas-Théodore de Saussure 1767–1845 · Genevan chemist`, `timeline_d6` `Geneva, 1804`) and cropped `#91` (`24_gold_foil_crop_v04.mp4`) to remove the background `ATOMOS` ceiling sign.
+  10. **8:28 (`#92..#96`, `8:27.83–8:51.83`, `+24.00 s` / `576` frames):** Added `#92` (`8:27.83–8:31.83`, `4.00 s`) moving golden-hour willow plate with the house closing card naming next week's film (*Why Vaccines Are Named After a Cow*, Thursday 12 November, `@HistoryOfScienceYT`), followed by `20.00 s` (`#93..#96`, `4 × 5.00 s`) of moving willow/garden plates for the YouTube Studio end screen, with full-runtime score bed (`531.833 s`) and house SFX stem (`31` cues).
+
+### Machine checks (pasted outputs)
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -34.0 LUFS, 31 hits
+music gate PASS: trees006_score_bed_v01.mp3, 531.8 s, about 66.7 BPM, brief Pace: 60-72 BPM
+WARN   2:18 row 15_desk_candle 15_desk_candle_t1_above_desk_v03.mp4: low detail: edge density 0.0271 < film p5 0.0272
+WARN   3:01 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0219 < film p5 0.0272
+WARN   5:24 row 09_bubbles_again 05_bubbles_macro_t1_from4.500.mp4: low detail: edge density 0.0245 < film p5 0.0272
+WARN   6:32 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0248 < film p5 0.0272
+WARN   8:17 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0238 < film p5 0.0272
+picture QA PASS: 0 of 96 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v04/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v04/picture_qa_review.jpg
+polish gate PASS: 0 of 96 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v04/polish_gate.json
+**Decision:** PASS — VO / Gemini Veo allowed
+Script score: **93.7/100** · PASS
+Integrated loudness: I: -14.0 LUFS, LRA: 3.3 LU, True peak: -1.4 dBFS
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006_Trees-Are-Made-Of-Air)
+```
+
+- **STOP:** Parked for Chief (`parked for Chief: HOS 006 master v04 review (all 11 Ben changes applied at 0 Flow credits, all gates PASS)`). Nothing uploaded or scheduled.
+
+## 23 Oct 2026 — J0886: HOS 006 master v05 (all 4 Ben second-round v04 changes + v03 bubble checks resolved at 0 Flow credits, all gates PASS, Gemini covering)
+
+- **Master MP4:** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/hos_006_master_v05.mp4` (`531.833 s`, `12,764` frames @ 24 fps, `1920×1080` H.264 + AAC 48 kHz stereo at `-14.0 LUFS` / `-1.4 dBTP`, sha256 `4f9dd1cace14b3a1e4c535e3721759549ea9288348f42934210593659061fbf7`, video stream sha256 `21acad54d53a8e1c2bf0f3b2c7dc27876d80c42c9b46cef4eaf666950c8192a0`).
+- **Phone MP4 (`<120 MB`):** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/hos_006_master_v05_PHONE.mp4` (`109.85 MB`, `115,187,909` B, sha256 `f8ce8783751c618d829daedf7baf1c3959f9ac4188669b6c6807df023bce2da6`).
+- **UAT & NAS copies (SHA-256 verified identical):**
+  - iCloud HOS UAT: `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v05.mp4`, `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v05_PHONE.mp4`, and `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/hos_006_master_v05.mp4` (+ `hos_006_master_v05_PHONE.mp4`, `hos_006_master_v05_ben_check_sheet.jpg`, `hos_006_master_v05_contact_sheet.jpg`).
+  - NAS archive: `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/09_Final-Export/master_v05/` (`hos_006_master_v05.mp4`, `hos_006_master_v05_PHONE.mp4`, `hos_006_master_v05_ben_check_sheet.jpg`, `hos_006_master_v05_contact_sheet.jpg`).
+- **Spend:** `£0.00` cash, **`0` Flow credits** (`4` replacement 16:9 stills minted on Flow `Nano Banana 2.1` on AI Ultra at `0 cr/still`, Flow balance unchanged at `20,730` credits, logged in `07_Edit-Project/master_v05/FLOW_STILLS_LOG_v05.json`).
+- **All 4 Ben v04 change items + v03 bubble checks resolved and visually verified on full-size 1920×1080 check frames (`07_Edit-Project/master_v05/hos_006_master_v05_ben_check_sheet.jpg`):**
+  1. **`0:07` (`#02 P1 02_balance_trunk_v05.mp4`, `0:04.29–0:07.38`, frame `00_07_scales_tree.png`):** *"Scales the tree is not on them"* — Replaced with a Flow `Nano Banana 2.1` 16:9 plate + smooth push-in showing the entire young willow tree (root ball, woody trunk, and weeping green canopy) resting directly **on** the left brass scale pan, weighing it down low while the right pan holding a small pinch of dry brown soil is lifted high.
+  2. **`1:26` (`#17 P2 05_pure_water_v05.mp4`, `1:23.62–1:28.62`, frame `01_26_tree_in_pot.png`) & `7:16` callback (`#80 P5 13_water_in_tree_v05.mp4`, `7:13.83–7:18.92`, frame `07_16_callback_tree_in_pot.png`):** *"Tree not in the pot"* — Replaced with a Flow `Nano Banana 2.1` 16:9 plate + animated water stream where the willow tree trunk grows **directly up out of the soil inside the terracotta pot** through the central hole of the perforated tin-plated iron lid while van Helmont pours pure water from a copper pitcher into the hole (`#80` uses a closer framing of the same action so `picture_qa.py` has 0 duplicate reuse).
+  3. **`4:28` (`#50 P3 17_notebook_tick_v05.mp4`, `4:25.29–4:29.50`, frame `04_28_priestley_body.png`):** *"No body for the hand"* — Replaced with a Flow `Nano Banana 2.1` 16:9 plate + smooth push-in showing Joseph Priestley in full upper-body 18th-century 3D cartoon house style (head, powdered wig, shoulders, dark coat, cuffs, and both arms naturally connected to his body) seated at his sunlit oak laboratory desk holding a feather quill pen over his open notebook (which has only a simple tick and X mark, zero letters or numbers).
+  4. **`5:29` (`#61 P4 10_only_green_v05.mp4`, `5:25.88–5:30.46`, frame `05_29_only_green_bubbles.png`) plus v03 bubble checks at `4:54` (`#55 P4 04_sunny_window_v05.mp4`, `4:51.83–4:56.38`, frame `04_54_sunny_window_bubbles.png`) and `5:17 / 5:21` (`#59 P4 08_explorer_shade_v05.mp4`, `5:15.25–5:22.46`, frames `05_17_explorer_jar_bubbles.png` & `05_21_explorer_carries_jar.png`):** *"Bubbles rising out the water into the air"* —
+     - At `5:29`, three open water-filled glass jars sit on the sunlit windowsill (woody twig in left jar with 0 bubbles, red flower in middle jar with 0 bubbles, green leafy sprig in right jar with oxygen bubbles rising strictly underwater below the water meniscus at `y >= 615`, `n_motes=0`, zero bubbles in the air).
+     - At `4:54`, bubbles are rendered in 1920×1080 source space strictly inside the submerged water columns (`y_top >= 470` / `435`) before the camera push-in (`n_motes=0`, zero bubbles above the meniscus or outside the jars).
+     - At `5:17–5:21`, the first half (`05_17_explorer_jar_bubbles.png`) uses `08_explorer_shade_t1.png` with bubbles strictly underwater inside the corked jar while the Explorer inspects it in the sun, crossfading over 8 frames into the clean second half of `t1` (`05_21_explorer_carries_jar.png`) where she carries the corked jar into the shade with zero bubbles in the air.
+
+### Machine checks (pasted outputs)
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -34.0 LUFS, 31 hits
+music gate PASS: trees006_score_bed_v01.mp3, 531.8 s, about 66.7 BPM, brief Pace: 60-72 BPM
+WARN   2:18 row 15_desk_candle 15_desk_candle_t1_above_desk_v03.mp4: low detail: edge density 0.027 < film p5 0.0272
+WARN   3:01 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0219 < film p5 0.0272
+WARN   5:24 row 09_bubbles_again 05_bubbles_macro_t1_from4.500.mp4: low detail: edge density 0.0244 < film p5 0.0272
+WARN   6:32 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0247 < film p5 0.0272
+WARN   8:17 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0237 < film p5 0.0272
+picture QA PASS: 0 of 96 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/picture_qa_review.jpg
+polish gate PASS: 0 of 96 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/polish_gate.json
+**Decision:** PASS — VO / Gemini Veo allowed
+Script score: **93.7/100** · PASS
+Integrated loudness: I: -14.0 LUFS, LRA: 3.3 LU, True peak: -1.4 dBFS
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006_Trees-Are-Made-Of-Air)
+```
+
+- **STOP:** Parked for Chief (`parked for Chief: HOS 006 master v05 review (all 4 Ben v04 changes + v03 bubble checks resolved at 0 Flow credits, check sheet verified, _PHONE.mp4 in HOS UAT, all gates PASS)`). Nothing uploaded or scheduled.

@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-22",
-  "updated_by": "claude (acting Chief)",
+  "updated": "2026-10-23",
+  "updated_by": "gemini",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Master v01 passed the Chief (22 Oct) and is merged; copy to HOS UAT for Ben's watch (J0857), thumbnails next (J0858). Ben watch due 1 Nov.",
+      "summary": "Master v05 built for J0886 (`hos_006_master_v05.mp4`, 531.8 s / 96 cuts, sha256 `4f9dd1ca`, -14.0 LUFS / -1.4 dBTP, 0 Flow credits) + `<120 MB` phone copy (`hos_006_master_v05_PHONE.mp4`, 109.85 MB, sha256 `f8ce8783`): all 4 of Ben's second-round v04 changes (0:07 whole willow tree on left scale pan, 1:26 & 7:16 willow tree growing inside terracotta pot through perforated lid, 4:28 Priestley full upper body writing with quill, 5:29 bubbles strictly underwater inside right green-leaf jar) + v03 bubble checks at 4:54 and 5:21 resolved and verified on full-size 1920x1080 check sheet (`hos_006_master_v05_ben_check_sheet.jpg`), all gates PASS, copied to `HOS UAT/006_Trees_master_v05.mp4`, `006_Trees_master_v05_PHONE.mp4`, and NAS, parked for Chief. Thumbnails A + B also parked for Chief (J0869).",
       "stages": {
         "topic": {
           "status": "done"
@@ -249,28 +249,46 @@
           "note": "All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180)."
         },
         "edit": {
-          "status": "done",
-          "due": "2026-10-29",
-          "note": "master v01 Chief PASS 22 Oct (J0835): \u00a30 score + 24 SFX, -14.0 LUFS/-1.5 dBTP, HOS #356 merged 1946ac4d",
+          "status": "doing",
+          "due": "2026-10-28",
+          "owner": "Chief",
+          "note": "master v05 built at 0 Flow credits (J0886, 531.8 s / 96 cuts, sha256 `4f9dd1ca`, -14.0 LUFS / -1.4 dBTP) + 109.85 MB `_PHONE.mp4`: all 4 Ben v04 changes + v03 4:54/5:21 bubble checks resolved and verified on 1920x1080 check sheet, `picture_qa` 0/96 fail, `polish_gate` 0/96 fail, `music_gate` PASS, `sfx_kit level` PASS, copied to `HOS UAT/006_Trees_master_v05.mp4` + `_PHONE.mp4` and NAS; parked for Chief",
           "jobs": [
-            "J0835"
+            "J0835",
+            "J0857",
+            "J0882",
+            "J0886"
           ],
-          "since": "2026-10-22T20:07",
+          "since": "2026-10-23T15:08",
           "underway": false,
           "steps": [
-            5,
-            5
+            6,
+            6
           ],
-          "steps_unit": "master steps",
-          "left": "Chief listening review",
+          "steps_unit": "v05 steps",
+          "left": "in Chief review before Ben's rewatch",
           "eta": "",
-          "waiting": "Chief review: musical fit, final PASS and Ben watch"
+          "waiting": "Chief: HOS 006 master v05 review (J0886)"
         },
         "thumbnails": {
-          "status": "todo",
+          "status": "doing",
           "due": "2026-10-29",
-          "owner": "Mac mini",
-          "note": "concepts + Flow price for the Chief (J0858), due 29 Oct"
+          "owner": "Chief",
+          "since": "2026-10-23T03:35",
+          "underway": false,
+          "steps": [
+            2,
+            2
+          ],
+          "steps_unit": "thumb steps",
+          "left": "in Chief review before Ben's 1 Nov watch",
+          "eta": "",
+          "waiting": "Chief: HOS 006 thumbnails A + B review before Ben's 1 Nov watch (J0869)",
+          "jobs": [
+            "J0858",
+            "J0869"
+          ],
+          "note": "Step 2 done at 0 Flow credits (J0869): A (`WOOD / FROM / SKY?`, sha256 `904d2f58`) + B (`DO PLANTS / EAT / SOIL?`, blank scale/weights, sha256 `ee5f2605`) minted on Nano Banana 2, lettered via cover builder, `thumb_preview.py long` + `style_sheet.py long` PASS, staged in `11_Upload-Package/PACKAGE_MANIFEST.json` and `HOS UAT/006_Trees-Are-Made-Of-Air/08_Thumbnail/`; parked for Chief"
         },
         "ben_ok": {
           "status": "todo",
@@ -287,7 +305,7 @@
       "title": "Why Vaccines Are Named After a Cow",
       "air": "2026-11-12",
       "ready_by": "2026-11-08",
-      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done. All 73/73 Flow rows of boards v02 are KEEP (Chief J0352, HOS PR #351 merged) and Part roughs v01 are Chief PASS (J0820). Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s, 97 cuts, sha256 `7cfd6a59`) is assembled on the locked VO with both \u00a30 J0827 repeat-shot fixes (`P1:09c_case_again` 1.88x lancet crop; `P5:06c/06d` split into unused `04_health_workers` tail + 1.38x front-row crop), passing polish_gate + picture_qa (0 failed, 0 freezes); parked for Chief review.",
+      "summary": "Master v02 (`hos_007_master_v02.mp4`, 505.1 s, sha256 `e55f680d`, -14.0 LUFS / -1.4 dBTP) passed the Chief (J0856, 23 Oct; HOS PR #355 `30f9033e`) and is copied to iCloud `HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4` for Ben's watch (J0867). Ben watch due 8 Nov.",
       "stages": {
         "topic": {
           "status": "done"
@@ -327,19 +345,22 @@
           "owner": "Grok"
         },
         "edit": {
-          "status": "doing",
+          "status": "done",
           "due": "2026-11-05",
-          "note": "J0856 candidate master v02 (`hos_007_master_v02.mp4`, sha256 `e55f680d`, £0): 60.0 BPM original chamber score (`ac20/ac0=0.8926`, bed 18.1 dB under VO in speech with 0 breaches, +1.53 dB rise in pauses) + 43 house SFX cues (39 ink ticks across all WHO cards, date/place stamps, data pills, teach labels & code graphics + 4 chapter whooshes; 0 WARNs). -14.0 LUFS / -1.4 dBTP; all gates PASS. Parked for Chief review on HOS PR #355.",
+          "note": "master v02 Chief PASS 23 Oct (J0856, HOS PR #355 `30f9033e`): \u00a30 60.0 BPM score + 43 house SFX, 505.1 s, -14.0 LUFS / -1.4 dBTP, sha256 `e55f680d`; copied to `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4` (sha256 `e55f680d` verified, J0867) for Ben's watch",
+          "jobs": [
+            "J0856",
+            "J0867"
+          ],
           "steps": [
             5,
             5
           ],
-          "steps_unit": "worker master steps",
-          "owner": "Claude",
+          "steps_unit": "parts joined",
+          "owner": "Grok",
           "since": "2026-10-22",
-          "waiting": "Chief audio fit and final master v02 review; HOS PR #355",
-          "underway": false,
-          "left": "Chief review"
+          "waiting": "Ben watch (HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4) + HOS PR #355 merge",
+          "underway": false
         },
         "thumbnails": {
           "status": "todo",
