@@ -18,3 +18,20 @@ Check completion files and live sessions before any retry. Missing completion me
 Repository validation: Python compilation, `git diff --check`, and HOS `check_all.sh` completed successfully (`ALL CHECKS PASS`); log `~/_desk/logs/J0175-willow-0530-checks.log`.
 
 Progress remains 4/6. Next: collect this segment’s QA evidence; measure 006 hand-off trim; select distinct willow/leaf windows for intro and Bridges 1–2; render remaining segments; implement whole-cut assembly, normalize, write chapters, and run full gates before Chief review J0176. Full remaining work exceeds one worker run. No spend, upload, scheduling, merge or protected decision.
+
+## Follow-up validation and normalization checkpoint
+
+Codex checked both completion files: render exit 0, QA exit 0. Unchanged gate output:
+
+```text
+polish gate PASS: 0 of 11 rows failed, 1 to look at
+SFX level PASS: VO -16.1 LUFS, SFX -49.1 LUFS, 1 hits
+```
+
+The warning is closing_09, the existing timeline (edge density 0.0266 versus film p5 0.0270). This remains for Chief's visual review. The extracted end-card frame was inspected at full size: cream Didot lettering is readable over the feathered navy wash. Listening and a moving transition review are still required; these tool results are not final approval.
+
+Closing output SHA-256: `d6f847c2e728d2002be969f8f8c9c268136bff613cbc30edfa89bf3bd586ca3a`.
+
+Next prerequisite started detached: normalize all six masters to 1080p30 with measured two-pass loudness using the existing assembler. Session `J0175-prep-0540`; runner, log and completion file `~/_desk/logs/J0175-prep-0540{.sh,.log,.done}`. Scratch is exclusively `/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540`. The runner verifies the NAS mount before writing. No concurrent render existed when started. Check completion and `prep_report.json` before retrying; never duplicate a live session.
+
+006 is provisionally normalized in full; its final trim still needs measurement before whole-cut assembly. Intro/Bridge 1/Bridge 2 windows, their renders, whole-cut assembly, chapter timestamps and full gates remain. Progress remains 4/6 while this prerequisite runs.
