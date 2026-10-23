@@ -189,15 +189,28 @@ def cmd_segment(args) -> int:
         start, end = L - END_CARD_HOLD, L - END_CARD_HOLD + 3.5
         from PIL import Image, ImageDraw, ImageFont
         card = Image.new("RGBA", (1920, 1080))
+        # A feathered navy wash gives the cream type a stable contrast over the plate.
         pen = ImageDraw.Draw(card)
-        for text, size, y in [("History of Science", 84, 800), ("More discovery stories", 64, 905)]:
+        for y in range(680, 1080):
+            alpha = int(210 * min(1.0, (y - 680) / 120))
+            pen.line((0, y, 1920, y), fill=(24, 34, 49, alpha))
+        pen.line((700, 775, 1220, 775), fill=(213, 179, 113, 255), width=3)
+        for text, size, y in [("History of Science", 92, 850), ("More discovery stories", 60, 950)]:
             font = ImageFont.truetype("/System/Library/Fonts/Supplemental/Didot.ttc", size, index=1)
             pen.text((960, y), text, font=font, fill=(255,244,218,255), anchor="mm")
         overlay = out_dir / "code_graphic_comp_closing_end_card.png"
         card.save(overlay)
         cmd += ["-loop", "1", "-i", str(overlay)]
         fc.append(f"[{n+3}:v]format=rgba,fade=t=in:st={start}:d=0.5:alpha=1,fade=t=out:st={end-.5}:d=0.5:alpha=1[card]")
-        fc.append(f"{prev}[card]overlay=shortest=1,trim=duration={L:.3f},setpts=PTS-STARTPTS,fade=t=out:st={L-1.5}:d=1.5,format=yuv420p[vout]")
+        # Chief 23 Oct: freeze the underlying composite for exactly the card's
+        # 3.5 s window, then resume from that frame. The PNG and plate are both
+        # stationary during the gate's still-row sample; no gate exception.
+        fc.append(f"{prev}split=3[before][freeze][after]")
+        fc.append(f"[before]trim=end={start:.3f},setpts=PTS-STARTPTS[precard]")
+        fc.append(f"[freeze]trim=start={start:.3f},setpts=PTS-STARTPTS,trim=end_frame=1,tpad=stop_mode=clone:stop_duration=3.5,trim=duration=3.5[held]")
+        fc.append(f"[after]trim=start={start:.3f},setpts=PTS-STARTPTS[postcode]")
+        fc.append("[precard][held][postcode]concat=n=3:v=1:a=0[cardplate]")
+        fc.append(f"[cardplate][card]overlay=shortest=1,trim=duration={L:.3f},setpts=PTS-STARTPTS,fade=t=out:st={L-1.5}:d=1.5,format=yuv420p[vout]")
     else:
         fc.append(f"{prev}trim=duration={L:.3f},setpts=PTS-STARTPTS,format=yuv420p[vout]")
     fc.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,"
@@ -242,10 +255,10 @@ def cmd_segment(args) -> int:
     if name == "closing":
         cuts.append({"row": "code_graphic_comp_closing_end_card", "timeline_in": round(L-6,3),
                      "timeline_out": round(L-2.5,3), "source": str(overlay),
-                     "framing": {"fit": "own Didot italic overlay over moving atom; 0.5 s alpha fades"}})
+                     "framing": {"fit": "own cream Didot card and navy wash; plate frozen for card 3.5 s, then resumes; 0.5 s alpha fades"}})
     (out_dir / "cuts.json").write_text(json.dumps(cuts, indent=1))
     rec = {"segment": name, "length": round(L, 3), "draft": bool(args.draft), "mp4": str(mp4),
-           "closing_card": {"text": ["History of Science", "More discovery stories"], "start": L-6, "end": L-2.5, "animation": "0.5 s fade in/out over moving picture"} if name == "closing" else None,
+           "closing_card": {"text": ["History of Science", "More discovery stories"], "start": L-6, "end": L-2.5, "animation": "0.5 s fade in/out; plate held 3.5 s during card, then resumes"} if name == "closing" else None,
            "graphic": str(graphic) if graphic else (TIMELINE_ROWS.get(name, "") + " missing" if name in TIMELINE_ROWS else None),
            "ticks": ticks, "tick": str(TICK), "tick_gain_db": TICK_GAIN_DB,
            "shots": shots, "vo": str(vo), "bed": str(BED), "bed_in": BED_IN[name],
