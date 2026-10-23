@@ -1,0 +1,7 @@
+
+> content-ops@0.1.0 lint:package
+> tsx scripts/package-lint.ts --film 099
+
+FAIL  02_Video-Projects/099_Six-Experiments-Compilation/11_Upload-Package/PACKAGE_MANIFEST.json
+   FAIL  [schedule.slot] schedule is Sun 2026-11-08 18:00 UK; longs go out Thu 18:00 UK
+   warn  [captions] no captionsFile (captions from the script)

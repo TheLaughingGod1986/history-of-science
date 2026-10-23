@@ -1,0 +1,67 @@
+{
+  "format": "longform",
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "neighbours": {
+    "phrases": [
+      "blood",
+      "heart"
+    ],
+    "checked": "2026-10-02",
+    "videos": [
+      {
+        "id": "Ab9OZsDECZw",
+        "channel": "TED-Ed",
+        "title": "How blood pressure works - Wilfred Manzano",
+        "views": 17959080
+      },
+      {
+        "id": "xfZhb6lmxjk",
+        "channel": "TED-Ed",
+        "title": "Why do blood types matter? - Natalie S. Hodge",
+        "views": 6734275
+      },
+      {
+        "id": "ruM4Xxhx32U",
+        "channel": "TED-Ed",
+        "title": "How the heart actually pumps blood - Edmond Hui",
+        "views": 4459222
+      },
+      {
+        "id": "qcZKbjYyOfE",
+        "channel": "TED-Ed",
+        "title": "What happens if you're injected with the wrong blood type? - Bill Schutt",
+        "views": 1419073
+      },
+      {
+        "id": "_vZ0lefPg_0",
+        "channel": "Amoeba Sisters",
+        "title": "Circulatory System and Pathway of Blood Through the Heart",
+        "views": 7390037
+      }
+    ]
+  },
+  "video": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/hos_compilation_full_v02.mp4",
+  "title": "How Did Experiments Explain Blood, Germs and Atoms?",
+  "titleAbc": [
+    "How Did Experiments Explain Blood, Germs and Atoms?"
+  ],
+  "descriptionFile": "DESCRIPTION_DRAFT_v01.txt",
+  "tags": [
+    "blood",
+    "germs",
+    "atoms",
+    "periodic table",
+    "X-rays",
+    "photosynthesis",
+    "history of science"
+  ],
+  "thumbnail": "compilation_thumb_v01.jpg",
+  "schedule": "2026-11-08T18:00:00.000Z",
+  "note": "DRAFT J0878. Not upload-ready: four source-film Sources lines unavailable in existing descriptions; Sunday slot conflicts with release contract. 099 is a local compilation package container, not a newly commissioned film. Chief authorization: OWB #99 comment 6361644928. No Buffer."
+}
