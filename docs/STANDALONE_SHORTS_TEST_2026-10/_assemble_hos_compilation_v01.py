@@ -85,6 +85,14 @@ TICK = HOS / "docs/STANDALONE_SHORTS_TEST_2026-10/sfx_kit_v01/sfx_hos_tick_ink_v
 TICK_GAIN_DB = -14.0
 GFX = "gfx"  # a shot ("gfx", 0, length) is the segment's J0204 timeline, played from its start
 SEGMENT_SHOTS = {
+    # Intro: 14 label-free windows across all 6 masters, matching the 4 blood/air/germs/atoms lines,
+    # the 6 proof objects (arm, willow, flask, table, screen, foil), and the 1628-to-1911 thesis.
+    "intro": [
+        ("005", 234.3, 239.0), ("006", 487.0, 492.0), ("001", 128.0, 133.0), ("004", 192.0, 197.0),
+        ("005", 302.6, 306.1), ("006", 146.5, 149.3), ("001", 282.0, 285.0), ("002", 96.0, 99.0),
+        ("003", 129.8, 132.8), ("004", 287.0, 291.3), ("002", 148.0, 152.7), ("005", 363.4, 367.9),
+        ("004", 173.5, 178.5), ("005", 183.5, 189.1),
+    ],
     # Bridge 1: 005 closed circulation loop (P5:08), J0204 timeline_b1 (3.5 s, 1628 Harvey),
     # then 006 forest canopy (P5:14), potted willow sapling (P1:12), and hauling the pot by the balance (P2:08).
     "bridge1": [("005", 434.8, 438.6), (GFX, 0.0, 3.5), ("006", 439.2, 443.4), ("006", 56.2, 60.7), ("006", 102.2, 106.4)],
@@ -184,7 +192,13 @@ def cmd_segment(args) -> int:
     # Original masters are a safe fallback when macOS has purged old prep scratch.
     fc = [f"[{i}:v]scale=1920:1080,setsar=1,fps=30,settb=AVTB,setpts=PTS-STARTPTS[p{i}]" for i in range(n)]
     prev = "[p0]"
-    if name == "bridge4":
+    if name == "intro":
+        # Motivated pen-taps on the first proof ("with a band round an arm") and the 1628 book ("printed in 1628").
+        ticks = [round(starts[4] + SHOT_XFADE / 2, 3), round(starts[11] + SHOT_XFADE / 2, 3)]
+    elif name == "bridge2":
+        # Motivated pen-tap on the microscope germ reveal ("Something alive, far too small to see").
+        ticks = [round(starts[2] + SHOT_XFADE / 2, 3)]
+    elif name == "bridge4":
         # The screen lights up at the final shot; one pen-tap marks that reveal.
         ticks = [round(starts[2] + SHOT_XFADE / 2, 3)]
     for i in range(1, n):
@@ -252,14 +266,14 @@ def cmd_segment(args) -> int:
     for i, ((film, a, b), s) in enumerate(zip(shots, starts)):
         d = b - a
         if film == GFX:
-            src, framing = graphic.name, {"offset": 0.0, "fit": "J0204 code graphic, own render (Chief PASS 13 Oct)"}
+            src, framing, up = graphic.name, {"offset": 0.0, "fit": "J0204 code graphic, own render (Chief PASS 13 Oct)"}, 1.0
         else:
-            src, framing = f"{input_sources[i]}@{a:.2f}", {"offset": a, "fit": "full 16:9 from the film's passed master"}
+            src, framing, up = f"{input_sources[i]}@{a:.2f}", {"offset": a, "fit": "full 16:9 from the film's passed master"}, (1.5 if film == "001" else 1.0)
         cuts.append({"row": f"{name}_{i + 1:02d}", "timeline_in": round(s, 3),
-                     "timeline_out": round(min(s + d, L), 3), "source": src, "framing": framing})
+                     "timeline_out": round(min(s + d, L), 3), "source": src, "upscale": up, "framing": framing})
     if name == "closing":
         cuts.append({"row": "code_graphic_comp_closing_end_card", "timeline_in": round(L-6,3),
-                     "timeline_out": round(L-2.5,3), "source": str(overlay),
+                     "timeline_out": round(L-2.5,3), "source": str(overlay), "upscale": 1.0,
                      "framing": {"fit": "own cream Didot card and navy wash; plate frozen for card 3.5 s, then resumes; 0.5 s alpha fades"}})
     (out_dir / "cuts.json").write_text(json.dumps(cuts, indent=1))
     rec = {"segment": name, "length": round(L, 3), "draft": bool(args.draft), "mp4": str(mp4),
@@ -385,9 +399,10 @@ def cmd_plan(args) -> int:
                      "length": round(length, 3), "src": src, "length_from": source_of_length, **extra})
         t += length
 
-    add("vo", "intro", VO_LEN["intro"] + BREATH, str(VO_DIR / "hos_comp_intro_vo_v01.wav"), "vo take + breath",
+    add("vo", "intro", seg_len("intro"), str(VO_DIR / "hos_comp_intro_vo_v01.wav"), "vo take + breath",
         picture="six plates (arm, willow, flask, cards, screen, foil) from the films' passed clips")
-    missing.append("intro plates: pick one passed clip per object (willow needs 006)")
+    if "intro" not in SEGMENT_SHOTS:
+        missing.append("intro plates: pick one passed clip per object (willow needs 006)")
     chapters = [("0:00", "Six discoveries, one question")]
     for i, spec in enumerate(FILMS, 1):
         card_row = f"code_graphic_comp_card_{i:02d}"
@@ -412,13 +427,12 @@ def cmd_plan(args) -> int:
             extra["graphic"] = row
             if not (GRAPHICS_DIR / f"{row}.mp4").exists():
                 missing.append(f"{row}: J0204")
-        tail = BREATH + (END_CARD_HOLD if nxt == "closing" else 0.0)
-        add("vo", nxt, VO_LEN[nxt] + tail, str(VO_DIR / f"hos_comp_{nxt}_vo_v01.wav"), "vo take + breath", **extra)
-        if nxt != "closing":
+        add("vo", nxt, seg_len(nxt), str(VO_DIR / f"hos_comp_{nxt}_vo_v01.wav"), "vo take + breath", **extra)
+        if nxt not in SEGMENT_SHOTS:
             missing.append(f"{nxt} plates: pick from the neighbouring films' passed clips")
     plan = {"version": "v01", "job": "J0175", "generated": time.strftime("%Y-%m-%dT%H:%M:%S"),
             "total_s": round(t, 2), "total_hms": fmt(t), "in_45_60": 2700 <= t <= 3600,
-            "note": "Crossfades (0.5-1.5 s) overlap segments, so the final runtime is a few seconds under this sum.",
+            "note": "Normalised masters and rendered segments concatenated in exact running order.",
             "segments": segs, "chapters_draft": [f"{a} {b}" for a, b in chapters], "missing": missing}
     out = Path(args.out) if args.out else scratch / "cut_plan_v01.json"
     out.write_text(json.dumps(plan, indent=1))
@@ -426,6 +440,165 @@ def cmd_plan(args) -> int:
     print("chapters draft:\n  " + "\n  ".join(plan["chapters_draft"]))
     print(f"missing ({len(missing)}):\n  " + "\n  ".join(missing))
     print(f"wrote {out}")
+    return 0
+
+
+def render_card(idx: int, spec: dict, scratch: Path) -> Path:
+    name = f"card_{idx:02d}"
+    row = f"code_graphic_comp_card_{idx:02d}"
+    card_src = GRAPHICS_DIR / f"{row}.mp4"
+    out_dir = scratch / "segments" / name
+    if not out_dir.is_dir():
+        out_dir.mkdir(parents=True, exist_ok=True)
+    mp4 = out_dir / f"hos_comp_{name}_v01.mp4"
+    L = CARD_LEN
+    bed_in = 250.0 + idx * 15.0
+    fc = [
+        "[0:v]scale=1920:1080,setsar=1,fps=30,settb=AVTB,setpts=PTS-STARTPTS,format=yuv420p[vout]",
+        f"aevalsrc=1e-6:s=48000:c=stereo:d={L:.3f},asplit=2[vo][vostem]",
+        f"[1:a]aresample=48000,aformat=channel_layouts=stereo,loudnorm=I={BED_I}:TP=-6:LRA=11,"
+        f"atrim=duration={L:.3f},afade=t=in:d=0.4,afade=t=out:st={L - 0.6:.3f}:d=0.6,asplit=2[bed][bedstem]",
+        f"[2:a]aresample=48000,aformat=channel_layouts=stereo,volume={TICK_GAIN_DB}dB,"
+        f"adelay=200:all=1,apad=whole_dur={L:.3f},atrim=duration={L:.3f},asplit=2[sfx][sfxstem]",
+        "[vo][bed][sfx]amix=inputs=3:normalize=0:duration=first,alimiter=limit=0.89:level=false[mix]",
+    ]
+    cap = ["-t", f"{L:.3f}"]
+    cmd = [
+        "ffmpeg", "-hide_banner", "-y",
+        "-i", str(card_src),
+        "-ss", f"{bed_in:.3f}", "-t", f"{L + 1:.3f}", "-i", str(BED),
+        "-i", str(TICK),
+        "-filter_complex", ";".join(fc),
+        "-map", "[vout]", "-map", "[mix]", *cap, "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-r", "30",
+        "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-movflags", "+faststart", str(mp4),
+        "-map", "[vostem]", *cap, "-c:a", "pcm_s24le", str(out_dir / f"{name}_vo_stem.wav"),
+        "-map", "[bedstem]", *cap, "-c:a", "pcm_s24le", str(out_dir / f"{name}_bed_stem.wav"),
+        "-map", "[sfxstem]", *cap, "-c:a", "pcm_s24le", str(out_dir / f"{name}_sfx_stem.wav"),
+    ]
+    r = run(cmd)
+    if r.returncode != 0:
+        raise RuntimeError(f"{name} encode failed: {r.stderr[-1500:]}")
+    cuts = [{"row": row, "timeline_in": 0.0, "timeline_out": L, "source": card_src.name, "upscale": 1.0,
+             "framing": {"offset": 0.0, "fit": f"J0204 chapter card ({spec['card']})"}}]
+    (out_dir / "cuts.json").write_text(json.dumps(cuts, indent=1))
+    return mp4
+
+
+def cmd_assemble(args) -> int:
+    scratch = Path(args.scratch)
+    pieces = []
+    new_seg_dirs = []
+
+    def add_seg(seg_name: str, label: str):
+        d = scratch / "segments" / seg_name
+        mp4 = d / f"hos_comp_{seg_name}_v01.mp4"
+        if not mp4.exists():
+            raise FileNotFoundError(f"missing rendered segment: {mp4}")
+        pieces.append({"kind": "segment", "name": seg_name, "label": label, "mp4": mp4, "dir": d})
+        new_seg_dirs.append((seg_name, d))
+
+    add_seg("intro", "Six discoveries, one question")
+    for idx, spec in enumerate(FILMS, 1):
+        card_name = f"card_{idx:02d}"
+        card_mp4 = scratch / "segments" / card_name / f"hos_comp_{card_name}_v01.mp4"
+        if not card_mp4.exists():
+            print(f"rendering {card_name} ({spec['card']})...", flush=True)
+            render_card(idx, spec, scratch)
+        add_seg(card_name, spec["card"])
+        film_mp4 = scratch / f"film_{spec['film']}_norm.mp4"
+        if not film_mp4.exists():
+            raise FileNotFoundError(f"missing normalised film master: {film_mp4}")
+        pieces.append({"kind": "film", "name": spec["film"], "label": spec["card"], "mp4": film_mp4, "dir": None})
+        nxt = AFTER[spec["film"]]
+        add_seg(nxt, nxt)
+
+    # Measure exact durations and build timeline + cuts + chapters
+    t = 0.0
+    chapters = [("0:00", "Six discoveries, one question")]
+    all_new_cuts = []
+    pool_entries = []
+    seen_sources = set()
+    timeline = []
+    for p in pieces:
+        pr = probe(p["mp4"])
+        dur = float(pr["format"]["duration"])
+        if p["name"].startswith("card_"):
+            chapters.append((fmt(t), p["label"]))
+        timeline.append({"start": round(t, 3), "start_hms": fmt(t), "duration": round(dur, 3),
+                         "kind": p["kind"], "name": p["name"], "label": p["label"], "mp4": str(p["mp4"])})
+        if p["dir"] is not None:
+            seg_cuts = json.loads((p["dir"] / "cuts.json").read_text())
+            for c in seg_cuts:
+                c_copy = dict(c)
+                c_copy["timeline_in"] = round(t + c["timeline_in"], 3)
+                c_copy["timeline_out"] = round(t + c["timeline_out"], 3)
+                if "upscale" not in c_copy:
+                    c_copy["upscale"] = 1.5 if "film_001_norm" in c["source"] else 1.0
+                all_new_cuts.append(c_copy)
+                src = c_copy["source"]
+                if src not in seen_sources:
+                    seen_sources.add(src)
+                    pool_entries.append({"id": Path(src).stem.split("~")[0], "source": src,
+                                         "title": f"HOS approved master plate ({c_copy['row']})"})
+        t += dur
+
+    concat_txt = scratch / "concat_list_v01.txt"
+    concat_txt.write_text("".join(f"file '{p['mp4']}'\n" for p in pieces))
+    out_mp4 = Path(args.out) if args.out else scratch / "hos_compilation_full_v01.mp4"
+    print(f"concatenating {len(pieces)} pieces ({fmt(t)}, {t:.2f} s) -> {out_mp4} ...", flush=True)
+    cmd = [
+        "ffmpeg", "-hide_banner", "-y",
+        "-f", "concat", "-safe", "0", "-i", str(concat_txt),
+        "-c:v", "copy",
+        "-af", "alimiter=limit=0.84:level=false,aresample=48000,aformat=channel_layouts=stereo",
+        "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-ac", "2",
+        "-movflags", "+faststart", str(out_mp4),
+    ]
+    r = run(cmd)
+    if r.returncode != 0:
+        print(r.stderr[-2000:])
+        return 1
+
+    # Concatenate new-material stems for whole-compilation new-material SFX & bed level check
+    for stem_kind in ("vo", "bed", "sfx"):
+        stem_list = scratch / f"concat_new_{stem_kind}_list.txt"
+        stem_list.write_text("".join(f"file '{d / f'{seg}_{stem_kind}_stem.wav'}'\n" for seg, d in new_seg_dirs))
+        stem_out = scratch / f"hos_comp_new_{stem_kind}_stem.wav"
+        stem_cmd = ["ffmpeg", "-hide_banner", "-y", "-f", "concat", "-safe", "0", "-i", str(stem_list)]
+        if stem_kind == "vo":
+            # 1 LSB dither avoids ffmpeg ebur128 float32 -0.0 ring-buffer NaN on exact-zero card stems
+            stem_cmd += ["-af", "aeval=val(0)+1e-6:c=same"]
+        stem_cmd += ["-c:a", "pcm_s24le", str(stem_out)]
+        r_stem = run(stem_cmd)
+        if r_stem.returncode != 0:
+            print(r_stem.stderr[-1500:])
+            return 1
+
+    (scratch / "cuts_new_v01.json").write_text(json.dumps(all_new_cuts, indent=1))
+    (scratch / "pool_v01.json").write_text(json.dumps({"items": pool_entries}, indent=1))
+    chapters_lines = [f"{ts} {title}" for ts, title in chapters]
+    (scratch / "chapters_v01.txt").write_text("\n".join(chapters_lines) + "\n")
+    lo = measure(out_mp4, None)
+    out_pr = probe(out_mp4)
+    out_dur = float(out_pr["format"]["duration"])
+    rep = {
+        "version": "v01",
+        "job": "J0175",
+        "generated": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "mp4": str(out_mp4),
+        "sha256": sha256(out_mp4),
+        "duration_s": round(out_dur, 3),
+        "duration_hms": fmt(out_dur),
+        "in_45_60": 2700 <= out_dur <= 3600,
+        "loudness": lo,
+        "probe": out_pr,
+        "chapters": chapters_lines,
+        "timeline": timeline,
+        "new_cuts_count": len(all_new_cuts),
+    }
+    (scratch / "assembly_report_v01.json").write_text(json.dumps(rep, indent=1))
+    print(f"assembled: {out_mp4} ({rep['duration_hms']}, {out_dur:.2f} s), I={lo['input_i']} TP={lo['input_tp']}")
+    print("chapters:\n  " + "\n  ".join(chapters_lines))
     return 0
 
 
@@ -445,6 +618,10 @@ def main() -> int:
     p.add_argument("--draft", action="store_true", help="render without a missing timeline graphic")
     p.add_argument("--scratch", default=str(SCRATCH))
     p.set_defaults(fn=cmd_segment)
+    p = sub.add_parser("assemble")
+    p.add_argument("--scratch", default=str(SCRATCH))
+    p.add_argument("--out")
+    p.set_defaults(fn=cmd_assemble)
     args = ap.parse_args()
     return args.fn(args)
 

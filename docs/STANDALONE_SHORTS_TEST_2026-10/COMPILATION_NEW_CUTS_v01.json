@@ -1,0 +1,562 @@
+[
+ {
+  "row": "intro_01",
+  "timeline_in": 0.0,
+  "timeline_out": 4.7,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_005_norm.mp4@234.30",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 234.3,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_02",
+  "timeline_in": 4.2,
+  "timeline_out": 9.2,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4@487.00",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 487.0,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_03",
+  "timeline_in": 8.7,
+  "timeline_out": 13.7,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4@128.00",
+  "upscale": 1.5,
+  "framing": {
+   "offset": 128.0,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_04",
+  "timeline_in": 13.2,
+  "timeline_out": 18.2,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@192.00",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 192.0,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_05",
+  "timeline_in": 17.7,
+  "timeline_out": 21.2,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_005_norm.mp4@302.60",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 302.6,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_06",
+  "timeline_in": 20.7,
+  "timeline_out": 23.5,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4@146.50",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 146.5,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_07",
+  "timeline_in": 23.0,
+  "timeline_out": 26.0,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4@282.00",
+  "upscale": 1.5,
+  "framing": {
+   "offset": 282.0,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_08",
+  "timeline_in": 25.5,
+  "timeline_out": 28.5,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@96.00",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 96.0,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_09",
+  "timeline_in": 28.0,
+  "timeline_out": 31.0,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4@129.80",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 129.8,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_10",
+  "timeline_in": 30.5,
+  "timeline_out": 34.8,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@287.00",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 287.0,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_11",
+  "timeline_in": 34.3,
+  "timeline_out": 39.0,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@148.00",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 148.0,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_12",
+  "timeline_in": 38.5,
+  "timeline_out": 43.0,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_005_norm.mp4@363.40",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 363.4,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_13",
+  "timeline_in": 42.5,
+  "timeline_out": 47.5,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@173.50",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 173.5,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "intro_14",
+  "timeline_in": 47.0,
+  "timeline_out": 52.53,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_005_norm.mp4@183.50",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 183.5,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "code_graphic_comp_card_01",
+  "timeline_in": 52.533,
+  "timeline_out": 55.533,
+  "source": "code_graphic_comp_card_01.mp4",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 chapter card (The Hidden Circle)"
+  }
+ },
+ {
+  "row": "bridge1_01",
+  "timeline_in": 544.733,
+  "timeline_out": 548.533,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_005_norm.mp4@434.80",
+  "framing": {
+   "offset": 434.8,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge1_02",
+  "timeline_in": 548.033,
+  "timeline_out": 551.533,
+  "source": "code_graphic_comp_timeline_b1.mp4",
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 code graphic, own render (Chief PASS 13 Oct)"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge1_03",
+  "timeline_in": 551.033,
+  "timeline_out": 555.233,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4@439.20",
+  "framing": {
+   "offset": 439.2,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge1_04",
+  "timeline_in": 554.733,
+  "timeline_out": 559.233,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4@56.20",
+  "framing": {
+   "offset": 56.2,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge1_05",
+  "timeline_in": 558.733,
+  "timeline_out": 562.703,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4@102.20",
+  "framing": {
+   "offset": 102.2,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "code_graphic_comp_card_02",
+  "timeline_in": 562.733,
+  "timeline_out": 565.733,
+  "source": "code_graphic_comp_card_02.mp4",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 chapter card (Built From Air)"
+  }
+ },
+ {
+  "row": "bridge2_01",
+  "timeline_in": 1059.3,
+  "timeline_out": 1064.3,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4@394.20",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 394.2,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "bridge2_02",
+  "timeline_in": 1063.8,
+  "timeline_out": 1068.6,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4@338.50",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 338.5,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "bridge2_03",
+  "timeline_in": 1068.1,
+  "timeline_out": 1072.8,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4@141.80",
+  "upscale": 1.5,
+  "framing": {
+   "offset": 141.8,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "bridge2_04",
+  "timeline_in": 1072.3,
+  "timeline_out": 1077.19,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4@217.50",
+  "upscale": 1.5,
+  "framing": {
+   "offset": 217.5,
+   "fit": "full 16:9 from the film's passed master"
+  }
+ },
+ {
+  "row": "code_graphic_comp_card_03",
+  "timeline_in": 1077.2,
+  "timeline_out": 1080.2,
+  "source": "code_graphic_comp_card_03.mp4",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 chapter card (The Invisible Enemy)"
+  }
+ },
+ {
+  "row": "bridge3_01",
+  "timeline_in": 1444.838,
+  "timeline_out": 1449.138,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4@325.50",
+  "framing": {
+   "offset": 325.5,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.5
+ },
+ {
+  "row": "bridge3_02",
+  "timeline_in": 1448.638,
+  "timeline_out": 1453.138,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@117.00",
+  "framing": {
+   "offset": 117.0,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge3_03",
+  "timeline_in": 1452.638,
+  "timeline_out": 1456.638,
+  "source": "code_graphic_comp_timeline_b3.mp4",
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 code graphic, own render (Chief PASS 13 Oct)"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge3_04",
+  "timeline_in": 1456.138,
+  "timeline_out": 1459.528,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@135.00",
+  "framing": {
+   "offset": 135.0,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "code_graphic_comp_card_04",
+  "timeline_in": 1459.538,
+  "timeline_out": 1462.538,
+  "source": "code_graphic_comp_card_04.mp4",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 chapter card (The Empty Chairs)"
+  }
+ },
+ {
+  "row": "bridge4_01",
+  "timeline_in": 2003.238,
+  "timeline_out": 2007.938,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@230.30",
+  "framing": {
+   "offset": 230.3,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge4_02",
+  "timeline_in": 2007.438,
+  "timeline_out": 2014.038,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4@95.20",
+  "framing": {
+   "offset": 95.2,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge4_03",
+  "timeline_in": 2013.538,
+  "timeline_out": 2017.528,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4@145.20",
+  "framing": {
+   "offset": 145.2,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "code_graphic_comp_card_05",
+  "timeline_in": 2017.538,
+  "timeline_out": 2020.538,
+  "source": "code_graphic_comp_card_05.mp4",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 chapter card (A Light Through Skin)"
+  }
+ },
+ {
+  "row": "bridge5_01",
+  "timeline_in": 2446.238,
+  "timeline_out": 2451.838,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4@118.90",
+  "framing": {
+   "offset": 118.9,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge5_02",
+  "timeline_in": 2451.338,
+  "timeline_out": 2456.538,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@240.30",
+  "framing": {
+   "offset": 240.3,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge5_03",
+  "timeline_in": 2456.038,
+  "timeline_out": 2460.038,
+  "source": "code_graphic_comp_timeline_b5.mp4",
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 code graphic, own render (Chief PASS 13 Oct)"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "bridge5_04",
+  "timeline_in": 2459.538,
+  "timeline_out": 2461.968,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@263.50",
+  "framing": {
+   "offset": 263.5,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "code_graphic_comp_card_06",
+  "timeline_in": 2461.972,
+  "timeline_out": 2464.972,
+  "source": "code_graphic_comp_card_06.mp4",
+  "upscale": 1.0,
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 chapter card (Inside the Atom)"
+  }
+ },
+ {
+  "row": "closing_01",
+  "timeline_in": 2956.372,
+  "timeline_out": 2959.672,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@227.60",
+  "framing": {
+   "offset": 227.6,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "closing_02",
+  "timeline_in": 2959.172,
+  "timeline_out": 2961.122,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_005_norm.mp4@287.60",
+  "framing": {
+   "offset": 287.6,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "closing_03",
+  "timeline_in": 2960.622,
+  "timeline_out": 2962.872,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4@413.20",
+  "framing": {
+   "offset": 413.2,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "closing_04",
+  "timeline_in": 2962.372,
+  "timeline_out": 2964.972,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4@298.00",
+  "framing": {
+   "offset": 298.0,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.5
+ },
+ {
+  "row": "closing_05",
+  "timeline_in": 2964.472,
+  "timeline_out": 2967.772,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4@162.30",
+  "framing": {
+   "offset": 162.3,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "closing_06",
+  "timeline_in": 2967.272,
+  "timeline_out": 2971.072,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4@163.80",
+  "framing": {
+   "offset": 163.8,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "closing_07",
+  "timeline_in": 2970.572,
+  "timeline_out": 2973.872,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@224.00",
+  "framing": {
+   "offset": 224.0,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "closing_08",
+  "timeline_in": 2973.372,
+  "timeline_out": 2983.072,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@252.00",
+  "framing": {
+   "offset": 252.0,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "closing_09",
+  "timeline_in": 2982.572,
+  "timeline_out": 2986.572,
+  "source": "code_graphic_comp_timeline_close.mp4",
+  "framing": {
+   "offset": 0.0,
+   "fit": "J0204 code graphic, own render (Chief PASS 13 Oct)"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "closing_10",
+  "timeline_in": 2986.072,
+  "timeline_out": 2993.462,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4@214.60",
+  "framing": {
+   "offset": 214.6,
+   "fit": "full 16:9 from the film's passed master"
+  },
+  "upscale": 1.0
+ },
+ {
+  "row": "code_graphic_comp_closing_end_card",
+  "timeline_in": 2987.462,
+  "timeline_out": 2990.962,
+  "source": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/closing/code_graphic_comp_closing_end_card.png",
+  "framing": {
+   "fit": "own cream Didot card and navy wash; plate frozen for card 3.5 s, then resumes; 0.5 s alpha fades"
+  },
+  "upscale": 1.0
+ }
+]
