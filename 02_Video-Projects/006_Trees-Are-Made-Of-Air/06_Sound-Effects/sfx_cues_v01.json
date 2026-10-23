@@ -1,6 +1,6 @@
 {
   "film": "006_Trees-Are-Made-Of-Air",
-  "cut_seconds": 507.833333,
+  "cut_seconds": 531.833333,
   "kit": "kit_v01 (own synthesis via scripts/sfx_kit.py)",
   "gain_db": {
     "tick": -1.5,
@@ -32,7 +32,12 @@
     {
       "kind": "tick",
       "start": 67.425,
-      "why": "code graphic: DATA counter: 0 -> 200 pounds of dried soil"
+      "why": "code graphic: DATA counter: 0 -> 200 lb (about 91 kg) of dried soil"
+    },
+    {
+      "kind": "tick",
+      "start": 73.083,
+      "why": "teach overlay: wt_5lb"
     },
     {
       "kind": "tick",
@@ -41,8 +46,28 @@
     },
     {
       "kind": "tick",
-      "start": 110.75,
+      "start": 110.833,
       "why": "teach overlay: fact_leaves"
+    },
+    {
+      "kind": "tick",
+      "start": 121.333,
+      "why": "teach overlay: wt_2oz"
+    },
+    {
+      "kind": "tick",
+      "start": 125.583,
+      "why": "teach overlay: wt_164lb"
+    },
+    {
+      "kind": "tick",
+      "start": 153.833,
+      "why": "teach overlay: wt_62lb"
+    },
+    {
+      "kind": "tick",
+      "start": 158.042,
+      "why": "teach overlay: wt_1lb"
     },
     {
       "kind": "tick",
@@ -101,6 +126,11 @@
     },
     {
       "kind": "tick",
+      "start": 367.0,
+      "why": "teach overlay: when_geneva_1782"
+    },
+    {
+      "kind": "tick",
       "start": 369.917,
       "why": "teach overlay: timeline_d5"
     },
@@ -128,6 +158,11 @@
       "kind": "tick",
       "start": 470.758,
       "why": "code graphic: DATA specimen lens: CO2: 4 in 10,000"
+    },
+    {
+      "kind": "tick",
+      "start": 507.917,
+      "why": "teach overlay: closing_next_film"
     }
   ],
   "spend": "none"

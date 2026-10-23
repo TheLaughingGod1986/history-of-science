@@ -1,8 +1,8 @@
 {
   "film": "006_Trees-Are-Made-Of-Air",
   "bed": "trees006_score_bed_v01.mp3",
-  "duration_s": 507.833333,
-  "source": "own synthesis (_build_trees006_audio_v01.py), \u00a30 spend, no ElevenLabs credit",
+  "duration_s": 531.833333,
+  "source": "own synthesis (_build_master_v04.py), \u00a30 spend, no ElevenLabs credit",
   "prompt": "Warm period chamber score for HOS 006 The Willow Tree That Was Made of Air. Original G major / E minor / C / D harmony, soft viol-like harmonic drones in wonder (0-61.67,178.67-273.5,365.42-end), gentle harp at 66 BPM in experiment/explain (61.67-178.67,273.5-365.42), 3 s mood crossfades at chapter cards. Pace: 60-72 BPM. NOT Betelgeuse, jupiter-music, saturn-rings, sun-brighter, venus, light-speed, mars-robot, nearest-star, earth-spin, or any earlier HOS bed. No modern synth pulse, drums or arpeggio above 75 BPM.",
   "chapters": [
     {
@@ -30,6 +30,6 @@
       "mood": "awe"
     }
   ],
-  "integrated_lufs": -32.9,
-  "sha256": "af53ad0f81ff5acd16becc4f535aa5f6fab87231c14ca84ba763656ae32983f9"
+  "integrated_lufs": -32.7,
+  "sha256": "4ca1cf2df83b8cdba0bc9d709f1947b1f47f30612113a63d3dd940102c9d46e6"
 }
