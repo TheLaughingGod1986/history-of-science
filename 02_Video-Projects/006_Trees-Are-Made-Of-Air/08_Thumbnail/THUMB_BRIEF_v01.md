@@ -77,5 +77,12 @@
    - Confirm preferred lettering on Concept A (`WOOD FROM SKY?` vs `GROWN FROM AIR?`) and Concept B (`DO PLANTS EAT SOIL?` vs `FED BY SOIL?`).
 2. **Flow price pass:**
    - Approve **Option 1 (`0 cr` Nano Banana 2 16:9 stills on Flow)** with **Option 2/3 (`20–60 cr` Flow Fast / paid-still reserve)** authorized as fallback if needed.
-3. **Step 2 execution (immediately after Chief pass):**
-   - Mint the approved key-art plates on Flow (`CDP :9222`), apply deterministic house `Georgia Bold` cream/gold lettering + flourishes via the cover builder, run `thumb_preview.py long` (`168×94`) and `style_sheet.py long`, and stage the A/B pair in `08_Thumbnail/Selected/` and `11_Upload-Package/PACKAGE_MANIFEST.json` for Ben's 1 Nov check-in.
+3. **Step 2 execution (`J0869`, 23 Oct 2026 — DONE at 0 Flow credits):**
+   - Chief pick on `J0858` (OWB `#99` comment `6355648154`): **Concept A (`WOOD / FROM / SKY?`)** primary + **Concept B (`DO PLANTS / EAT / SOIL?`)** Test & Compare second; Concept C dropped; **Option 1 (`0` Flow credits, Nano Banana 2 16:9 stills + £0 cover-builder lettering)**.
+   - Minted key-art plates on Flow (`CDP :9222`, `🍌 Nano Banana 2.1 crop_16_9 x1`, 3 style ref chips attached, `20,830 -> 20,830` credits, `0` Flow credits spent, `£0.00` cash):
+     - `_assets_v01/hos_006_thumb_A_wood_from_sky_plate01.jpg` (`sha256: 7e7a9877b4234ba00489818f4cdfb8e4ae14edb3f91bc6b3e55769dff66785b8`)
+     - `_assets_v01/hos_006_thumb_B_do_plants_eat_soil_plate01.jpg` (`sha256: 9ea89834cdbea312e848be8d9a65e1ac5a21cdc89816816cbfd96a6e9e1ece46`, blank pans/weights with zero written numbers)
+   - Composed deterministic house `Georgia Bold` cream + gold punch lettering and gold scroll flourishes via `_compose_hos_006_thumbs_v01.py`, ran `thumb_preview.py long` and `style_sheet.py long`, and staged the A/B pair in `08_Thumbnail/Selected/`, `08_Thumbnail/THUMBS_INDEX_v01.json`, `11_Upload-Package/PACKAGE_MANIFEST.json`, and `HOS UAT/006_Trees-Are-Made-Of-Air/08_Thumbnail/` for Chief review before Ben's 1 Nov watch:
+     - **Primary A (`WOOD / FROM / SKY?`):** `Selected/hos_006_thumb_A_wood_from_sky_v01.jpg` (`278,441` bytes, `sha256: 904d2f58be22be993fb36e9c86997d00e239649e9f4b576ccebe4703c83dd0f0`)
+     - **Test & Compare B (`DO PLANTS / EAT / SOIL?`):** `Selected/hos_006_thumb_B_do_plants_eat_soil_v01.jpg` (`279,043` bytes, `sha256: ee5f2605520a0155f146d26700d41c99d47b45596457f84d9692415fe15360c4`)
+     - **Previews & style sheets:** `Selected/hos_006_thumb_A_wood_from_sky_v01_preview.jpg`, `Selected/hos_006_thumb_B_do_plants_eat_soil_v01_preview.jpg`, `Selected/hos_006_thumb_A_wood_from_sky_v01_style_sheet.jpg`, `Selected/hos_006_thumb_B_do_plants_eat_soil_v01_style_sheet.jpg`, `Selected/hos_006_thumbs_AB_v01_style_sheet.jpg`, and `Selected/hos_006_thumbs_AB_v01_phone_168.jpg`.

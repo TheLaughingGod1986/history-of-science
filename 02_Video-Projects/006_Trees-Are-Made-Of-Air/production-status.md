@@ -646,3 +646,52 @@ frame=12188 fps=493 q=-0.0 Lsize=N/A time=00:08:28.00 bitrate=N/A speed=20.6x el
   - **Option 3 (Fast / 10-cr tier reserve — all 3 concepts A/B/C):** **30 Flow credits** Try-1 (`3 × 10 cr`) / **60 Flow credits** Expected (`6 × 10 cr`, 2 takes each) = **£0.00** (`20,800` Try-1 / `20,770` Expected remaining).
   - **Headroom check:** After HOS 006 thumbnails (`0–60` cr expected) + HOS 008 (`5,605` cr expected) + HOS 009 Tranche 1 (`7,354` cr expected), expected Flow balance is **`7,811–7,871` credits**, clearing the `3,000` credit floor by **`+4,811 to +4,871` credits**.
 - **STOP:** Parked for Chief (`parked for Chief: 006 thumbnail price + concept pick`). Step 2 after Chief pass: mint on Flow, apply cover-builder lettering, run `thumb_preview.py long` and `style_sheet.py long`, and stage A/B pair for Test & Compare.
+
+## 23 Oct 2026 — J0869 Step 2: Mint A + B key-art plates (0 Flow credits), compose cover lettering, run thumb_preview + style_sheet, stage Test & Compare (Gemini covering)
+
+- **Authority:** Chief pick on `J0858` (OWB `#99` comment `6355648154`):
+  - **Primary A:** **`WOOD / FROM / SKY?`** (gold punch **`SKY?`**, willow by the sunlit arched window with golden-teal air ribbons condensing into glowing wood rings inside the trunk cutaway).
+  - **Test & Compare B:** **`DO PLANTS / EAT / SOIL?`** (gold punch **`SOIL?`**, van Helmont's 17th-century brass balance scale with the uprooted willow pan weighed down low and the dried soil pot lifted high, free of written numbers).
+  - **Concept C:** Dropped.
+  - **Price lock:** **Option 1 (`0` Flow credits, `£0.00` cash)** — Flow Image `Nano Banana 2` 16:9 stills on AI Ultra + `£0` deterministic cover-builder lettering.
+- **Step 2.1 — Flow Image (`Nano Banana 2.1 crop_16_9 x1`) mint output (`08_Thumbnail/_mint_hos_006_thumbs_flow_v01.py`, logged in `08_Thumbnail/FLOW_MINT_LOG_J0869_v01.json`):**
+  ```text
+  GATE account=benoats@googlemail.com credits_start=20830 url=https://flow.google.com/project/9b867f83-cb93-4f3f-8f7b-31c2e3e9f415
+
+  === Concept A (hos_006_thumb_A_wood_from_sky_plate01) credits_before=20830 ===
+    pill before='Video · 720p · 8s crop_16_9 x1'
+    image-mode pill='🍌 Nano Banana 2.1 crop_16_9 x1'
+    style refs attached=3 chips=3
+    clicked send role='Start generation'
+    still ok 1376x768 -> hos_006_thumb_A_wood_from_sky_plate01.png
+    credits_after=20830 used=0 elapsed=78.5s
+
+  === Concept B (hos_006_thumb_B_do_plants_eat_soil_plate01) credits_before=20830 ===
+    pill before='🍌 Nano Banana 2.1 crop_16_9 x1'
+    style refs attached=3 chips=3
+    clicked send role='Start generation'
+    still ok 1376x768 -> hos_006_thumb_B_do_plants_eat_soil_plate01.png
+    credits_after=20830 used=0 elapsed=53.0s
+
+  ALL STILLS MINTED AT 0 FLOW CREDITS
+  ```
+- **Step 2.2 — Cover-builder lettering & gate checks (`08_Thumbnail/_compose_hos_006_thumbs_v01.py`, `thumb_preview.py long`, `style_sheet.py long`):**
+  ```text
+  A composed -> hos_006_thumb_A_wood_from_sky_v01.jpg: box=[95, 36, 369, 278] orn_bot=297 clear_hero=True clear_exp=True clear_badge=True
+  B composed -> hos_006_thumb_B_do_plants_eat_soil_v01.jpg: box=[70, 30, 431, 256] orn_bot=277 clear_hero=True clear_exp=True clear_badge=True
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01_preview.jpg
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01_preview.jpg
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01_style_sheet.jpg  (1 new vs 4 live long references)
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01_style_sheet.jpg  (1 new vs 4 live long references)
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumbs_AB_v01_style_sheet.jpg  (2 new vs 4 live long references)
+  DONE THUMBS_INDEX_v01.json
+  ```
+- **Staged files & SHA-256 (`08_Thumbnail/THUMBS_INDEX_v01.json`, `11_Upload-Package/PACKAGE_MANIFEST.json`, and copied to `HOS UAT/006_Trees-Are-Made-Of-Air/08_Thumbnail/`):**
+  - **Primary A (`WOOD / FROM / SKY?`):** `08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01.jpg` (`278,441` B, `sha256: 904d2f58be22be993fb36e9c86997d00e239649e9f4b576ccebe4703c83dd0f0`)
+  - **Test & Compare B (`DO PLANTS / EAT / SOIL?`):** `08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01.jpg` (`279,043` B, `sha256: ee5f2605520a0155f146d26700d41c99d47b45596457f84d9692415fe15360c4`)
+  - **Gate previews:** `Selected/hos_006_thumb_A_wood_from_sky_v01_preview.jpg`, `Selected/hos_006_thumb_B_do_plants_eat_soil_v01_preview.jpg`, `Selected/hos_006_thumb_A_wood_from_sky_v01_style_sheet.jpg`, `Selected/hos_006_thumb_B_do_plants_eat_soil_v01_style_sheet.jpg`, `Selected/hos_006_thumbs_AB_v01_style_sheet.jpg`, and `Selected/hos_006_thumbs_AB_v01_phone_168.jpg`.
+- **Self-check scores (`THUMBNAIL_AND_TITLE_RULES.md` §2.B.3):**
+  - **HOOK:** **PASS** on A (`WOOD FROM SKY?`) and B (`DO PLANTS EAT SOIL?`). Both are 3–4 word positive questions (`LEARNINGS.md` Rule #1) naming the concrete physical things, with zero word overlap against Title A (*The Willow Tree That Was Made of Air*) or Title B (*Where Does a Tree's Weight Come From?*).
+  - **BAND:** **PASS** on A (`[95, 36, 369, 278]`, scroll bottom `y=297` above Explorer hair `y=323`, left of hero `x=440`) and B (`[70, 30, 431, 256]`, scroll bottom `y=277` above Explorer hair `y=295`, left of scale `x=485`). Both keep the bottom-right duration badge zone clear, and Plate B has zero written numbers on the scale or weights.
+  - **PHONE (`168×94`):** **PASS** on both `thumb_preview.py long` sheets and `hos_006_thumbs_AB_v01_phone_168.jpg`.
+- **STOP:** Parked for Chief (`parked for Chief: HOS 006 thumbnails A + B review before Ben's 1 Nov watch`). No upload or Studio changes.

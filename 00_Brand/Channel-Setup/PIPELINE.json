@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Master v01 passed the Chief (22 Oct), merged, and copied to iCloud `HOS UAT/006_Trees_master_v01.mp4` for Ben's watch (J0857). Thumbnail Step 1 concepts + Flow price table parked for Chief (J0858). Ben watch due 1 Nov.",
+      "summary": "Master v01 passed the Chief (22 Oct), merged, and copied to iCloud `HOS UAT/006_Trees_master_v01.mp4` for Ben's watch (J0857). Thumbnails A (`WOOD / FROM / SKY?`) + B (`DO PLANTS / EAT / SOIL?`) minted at 0 Flow credits, lettered, gated (`thumb_preview` + `style_sheet` PASS), staged for Test & Compare, and parked for Chief (J0869). Ben watch due 1 Nov.",
       "stages": {
         "topic": {
           "status": "done"
@@ -271,20 +271,21 @@
           "status": "doing",
           "due": "2026-10-29",
           "owner": "Chief",
-          "since": "2026-10-23T03:02",
+          "since": "2026-10-23T03:35",
           "underway": false,
           "steps": [
-            1,
+            2,
             2
           ],
           "steps_unit": "thumb steps",
-          "left": "Step 2: mint + cover-builder lettering + gates after Chief pick",
+          "left": "in Chief review before Ben's 1 Nov watch",
           "eta": "",
-          "waiting": "Chief: 006 thumbnail price + concept pick (J0858)",
+          "waiting": "Chief: HOS 006 thumbnails A + B review before Ben's 1 Nov watch (J0869)",
           "jobs": [
-            "J0858"
+            "J0858",
+            "J0869"
           ],
-          "note": "Step 1 done (J0858): 3 concepts (WOOD FROM SKY?, DO PLANTS EAT SOIL?, GROWN ON WATER?) + Flow price (0 cr Nano Banana 2 / 20-60 cr Fast reserve, 20,830 cr live) in 08_Thumbnail/THUMB_BRIEF_v01.md; parked for Chief"
+          "note": "Step 2 done at 0 Flow credits (J0869): A (`WOOD / FROM / SKY?`, sha256 `904d2f58`) + B (`DO PLANTS / EAT / SOIL?`, blank scale/weights, sha256 `ee5f2605`) minted on Nano Banana 2, lettered via cover builder, `thumb_preview.py long` + `style_sheet.py long` PASS, staged in `11_Upload-Package/PACKAGE_MANIFEST.json` and `HOS UAT/006_Trees-Are-Made-Of-Air/08_Thumbnail/`; parked for Chief"
         },
         "ben_ok": {
           "status": "todo",
