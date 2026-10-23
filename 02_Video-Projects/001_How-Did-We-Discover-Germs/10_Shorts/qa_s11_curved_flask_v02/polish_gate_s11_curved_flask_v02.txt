@@ -1,0 +1,8 @@
+s01_0     1.3s 01_question_mark_flask_v17.m ok
+s02_Vaccines?     4.4s 09_sceptics_watch_v17.mp4    ok
+s03_paradox     7.2s 05_tip_the_trap_v17.mp4      ok
+s04_emptiness     9.7s 04_still_clear_v21.mp4       ok
+s05_A    13.0s 08_passengers_v20.mp4        WARN low detail: edge density 0.0301 < film p5 0.0427
+s06_invisible    17.0s 11_result_returns_v01.mp4    ok
+s07_loop    20.9s loop_end_01_question_mark_fl ok
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v02/polish_gate_s11_curved_flask_v02.json
