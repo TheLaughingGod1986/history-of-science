@@ -19,3 +19,25 @@
 - No Vertex/Veo/Flow minting on this film.
 - No spending.
 - Do not merge or touch desk PR #180 from this scaffold PR.
+
+## 23 Oct 2026 — Short `s04_smallpox_test_v01` (Test B, first search-titled lift from Part 04, OWB J0865)
+
+- **Selection:** HOS 004, 005, 006, and 001 each have 5 built search-titled Shorts (`s04`–`s08` / `s07`–`s11`); HOS 002 and 003 each have 4. HOS 007 now has VO locked + all 73/73 Flow plates KEEP (J0352) + master v02 Chief PASS (J0867) and had 0 built search-titled Shorts, making 007 the locked HOS long with the fewest built Shorts.
+- **VO (0 spend):** `02_Voiceover/part04_the_test_v01b.mp3` contiguous 62-word lift (words `0..61`, zero overlap with 007 Short B in Part 02 and Short C in Part 05): *"On the first of July, Jenner did the test. He gave James a standard variolation, the old treatment that used real smallpox matter, which would normally cause at least a mild illness. Then he waited. One day. Three days. A week. Nothing happened. In Jenner's words, no disease followed. Months later, he tried again. Still nothing. The cowpox had protected the boy."* 62 words, pauses capped at 0.14 s, `atempo=1.08`, 25.779 s VO + 0.35 s tail = 26.133 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P3:03b_lancet_case_t1` (in `2.00 s`, frame 0 and the 3.0 s loop, `crop_x=640`), `P4:02_variolation_calm_t1` (`crop_x=1050`), `P3:06_mild_fever_t1` (`crop_x=640`), `P3:05b_week_passes_t1` (`crop_x=640`), `P3:07_playing_garden_t1` (`crop_x=640`), `P2:13_casebook_t1` (`crop_x=640`), `P4:05_days_pass_t1` (in `4.50 s`, `crop_x=640`). Own-synthesis warm harmonic pad (`hos007_s04_synth_pad_v01.wav`, D-major voicing, 0 credits) at −23.7 dB under VO. Hook **THE FIRST TEST** (TEST in yellow). Person/date card **EDWARD JENNER · 1 July 1796 · Berkeley** at 2.20–5.80 s (3.6 s, lower third of 16:9 centre band, 0.35 s fade in/out); the long's exact title *Why Vaccines Are Named After a Cow* at 9.0–14.0 s; word captions throughout with exclusive `gte(t,s)*lt(t,e)` handovers (20 captions, 19/19 handovers verified single-caption); CTA `watch the full film →` on the last 3.0 s.
+- **Title draft:** *What Was the Edward Jenner Experiment?* (signed-out GB YouTube autocomplete exact hits `edward jenner experiment` / `how was the first vaccine made` / `edward jenner smallpox vaccine story` / `edward jenner cowpox vaccine` / `how did jenner test work`, 23 Oct 2026; alts *How Was the First Vaccine Made?*, *How Did Edward Jenner Test the First Vaccine?*).
+- **File:** `10_Shorts/hos_007_s04_smallpox_test_v01.mp4`, 26.133 s, sha256 `3daff43d04bcebf538cd4c405a8eeb723a7329f425bec536d876cb7c69d696af`; phone copy iCloud `HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v01.mp4`. One picture_qa / polish look-at, not a fail: `06_mild_fever_t1` at 0:08, low detail (edge density 0.0171 < film p5 0.0218).
+
+```
+PASS  hos_007_s04_smallpox_test_v01.mp4  dur=26.13s  audio=-24.1dB  motion=18.05  dhash=86e766dfda1e867f
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s04_smallpox_test_v01_open_sheet.jpg
+PASS  hos_007_s04_smallpox_test_v01.mp4  0:26.13  mean -24.1 dB  peak -4.9 dB  142 wpm
+   warn  pace 142 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s04_smallpox_test_v01/polish_gate_s04_smallpox_test_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s04_smallpox_test_v01/picture_qa_s04_smallpox_test_v01/PICTURE_QA.md, 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s04_smallpox_test_v01/picture_qa_s04_smallpox_test_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2027-01-24` (gate only). Caption check: 20 changes, ratio 1.0, 19/19 handovers verified single-caption. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
