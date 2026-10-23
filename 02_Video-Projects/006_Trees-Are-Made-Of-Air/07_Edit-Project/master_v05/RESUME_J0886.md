@@ -42,3 +42,9 @@ No upload, scheduling, metadata changes, or final approval is authorized by this
 ## Disk handling
 
 Mini initially had 10 GiB available. Older HOS006 test-render scratch `/private/tmp/hos006_s08_test` was copied to `/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/J0886/hos006_s08_test`, SHA-256 verified for all 14 files, then only its local copy removed. NAS AppleDouble `._` sidecars were excluded from manifest comparison; originals were verified unchanged. `MOVED_TO_NAS_hos006_s08_test.txt` and `j0886_archive_manifest.json` remain in `/private/tmp`. No NAS deletions. Archive log `~/_desk/logs/j0886-archive-retry.log`, completion code 0. The first attempt stopped safely on extra sidecars, before any deletion. Free space is still below 20 GB; avoid large local scratch. Current and previous master scratch retained.
+
+## 23 Oct recovery run (Codex)
+
+Recovered the existing scale-pan generation from its recorded Flow project without submitting a second take. Saved silent 8.0 s clip `clips/02_balance_trunk_v05.mp4`, SHA-256 `1240a36d895d3de41d2ac73f3e4024831ef645f25d96b514208621d198e05aa8`; zero freeze events at 0.8 s threshold. Six-frame contact sheet inspected: root ball remains inside the left pan across the sampled frames. Full-size/intervening-frame review still required before acceptance. Live balance after recovery: 20,820 Flow credits (first take used 10).
+
+Remaining three takes started detached in tmux `j0886-motion-resume`. Log `/Users/benjaminoats/_desk/logs/j0886-motion-resume.log`; completion `/Users/benjaminoats/_desk/logs/j0886-motion-resume.done`. Missing completion with live tmux means leave running. No duplicate submissions. Old `j0886-motion.done` is the previous failed run, not this run. Queue remains 2/5: step 3 requires all motion inspection plus rebuild. No master v05, gates, phone or final acceptance yet.
