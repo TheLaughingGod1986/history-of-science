@@ -100,13 +100,13 @@ SEGMENT_SHOTS = {
     # arrives ~263 s, on "a sheet of gold". 003's hand-at-screen shot dissolves in until 118.8 s.
     "bridge5": [("003", 118.9, 124.5), ("004", 240.3, 245.5), (GFX, 0.0, 4.0), ("004", 263.5, 266.7)],
     # Closing: one plate per spoken object, none reusing an intro or bridge window. The willow
-    # ("a tree made of air", ~4-6 s) needs 006, so the arm holds over it until then. 005 "Deep
+    # ("a tree made of air", VO 4.62–5.84 s + 0.25 s lead) uses 006 413.2–415.45 s. 005 "Deep
     # arteries" label ends 286 s; 002 1860 date card from 170 s; 003 SOFT TISSUE from ~168 s;
     # The beam runs on through the film's own cut (~257 s) to the two scientists for "by people who
     # refused to trust the obvious answer" (clean to 262.7 s). The timeline lands on "So what is still
     # invisible" (VO 25.75 s). Plate 25's dark hall (314.5-318.5 s) is near-black, and its atom in space
     # is the timeline's own blurred plate, so neither is cut in. The orb sits under the end card.
-    "closing": [("004", 227.6, 230.9), ("005", 287.6, 291.3), ("001", 298.0, 300.6),
+    "closing": [("004", 227.6, 230.9), ("005", 287.6, 289.55), ("006", 413.2, 415.45), ("001", 298.0, 300.6),
                 ("002", 162.3, 165.6), ("003", 163.8, 167.6), ("004", 224.0, 227.3),
                 ("004", 252.0, 261.7), (GFX, 0.0, 4.0), ("004", 214.6, 222.8)],
 }

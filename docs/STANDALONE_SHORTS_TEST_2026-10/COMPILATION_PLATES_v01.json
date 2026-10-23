@@ -302,6 +302,18 @@
     222.8
    ],
    "note": "Run 8: under the end card; purple atom cuts in at 223 s. Scanner clean + 1 s and 0.5 s eye sheets; no window reuses an intro or bridge window."
+  },
+  {
+   "use": "closing",
+   "object": "willow in pot through winter into spring",
+   "film": "006",
+   "t": 414.3,
+   "window": [
+    413.2,
+    415.45
+   ],
+   "status": "picked",
+   "note": "Codex 23 Oct: sampled every 0.5 s plus edges; no label or Explorer; from approved master row P5:09. Starts at closing 4.25 s, overlaps arm/flask by 0.5 s; tree line 4.87\u20136.09 s including VO lead. Moving seasonal willow replaces temporary arm hold; full segment QA pending."
   }
  ],
  "contact_sheets": "/private/tmp/hos_comp_v01/sheets/ (sheet_NNN.jpg, one tile per 10 s; candidates.jpg), Mini scratch only",
