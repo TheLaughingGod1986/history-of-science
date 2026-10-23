@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "note": "HOS upload registry. J0283: Buffer is not posted at upload. Post only after the Short is public, and the post points at the full film.",
+  "videos": {
+    "c2q7w0pgcn8": {
+      "kind": "short",
+      "standalone": true,
+      "standaloneTest": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s1_herschel_infrared_v01.mp4",
+      "sha256": "af0b78f64e60c62c34385d3bf50c074aa0c32ed5f1ebedca19a75d1138295e97",
+      "packageDir": "docs/STANDALONE_SHORTS_TEST_2026-10/11_Upload-Package/s1",
+      "thumb": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01.png",
+      "long": "frP_YrNShsU",
+      "publishAt": "2026-10-19T10:30:00Z",
+      "registeredAt": "2026-10-15T11:37:23Z",
+      "buffer": "held until public, then the full film",
+      "social": {
+        "hook": "Herschel's thermometer grew warmer past the red end.",
+        "question": "Would you have trusted the thermometer over your eyes?",
+        "alt": "A prism and thermometers, cover text HEAT beyond RED."
+      }
+    },
+    "oKqmnJNGiHg": {
+      "kind": "short",
+      "standalone": true,
+      "standaloneTest": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s2_brand_phosphorus_v01.mp4",
+      "sha256": "66462ea906155fb15269a8c471e2fbc3021dd76132d442219295f553ad49eebb",
+      "packageDir": "docs/STANDALONE_SHORTS_TEST_2026-10/11_Upload-Package/s2",
+      "thumb": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01.png",
+      "long": "AL_-qlWko_g",
+      "publishAt": "2026-10-21T10:30:00Z",
+      "registeredAt": "2026-10-15T11:37:23Z",
+      "buffer": "held until public, then the full film",
+      "social": {
+        "hook": "He boiled urine for gold and found a glow instead.",
+        "question": "Guess what the glow turned out to be?",
+        "alt": "A glowing flask, cover text GLOW not GOLD."
+      }
+    },
+    "OnJ8MFu0Mi0": {
+      "kind": "short",
+      "standalone": true,
+      "standaloneTest": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v02.mp4",
+      "sha256": "1bd61d35e30299f8d85efec843f60a0c5876667014cd53a0e25d6599f2722a51",
+      "packageDir": "docs/STANDALONE_SHORTS_TEST_2026-10/11_Upload-Package/s3",
+      "thumb": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01.png",
+      "long": "_C92tIJCk8A",
+      "publishAt": "2026-10-26T11:30:00Z",
+      "registeredAt": "2026-10-15T11:37:23Z",
+      "buffer": "held until public, then the full film",
+      "social": {
+        "hook": "Snow pulled the handle off one Soho water pump.",
+        "question": "Would you have blamed the air or the pump?",
+        "alt": "A street pump, cover text REMOVE the HANDLE."
+      }
+    },
+    "vEg_tLIm0Co": {
+      "kind": "short",
+      "standalone": true,
+      "standaloneTest": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v04.mp4",
+      "sha256": "0e873be1b9dc331ad4fa01d129401946c27347c0045ad98d92b6bf4664640911",
+      "packageDir": "docs/STANDALONE_SHORTS_TEST_2026-10/11_Upload-Package/s4",
+      "thumb": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01.png",
+      "long": "GHZDsiH7L7A",
+      "publishAt": "2026-10-28T11:30:00Z",
+      "registeredAt": "2026-10-15T11:37:23Z",
+      "buffer": "held until public, then the full film",
+      "social": {
+        "hook": "Curie's notebooks are still kept in lead-lined boxes.",
+        "question": "Guess how long those notebooks stay radioactive?",
+        "alt": "A lead box of papers, cover text BOOKS behind LEAD."
+      }
+    },
+    "LCZRHUyTiq0": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s04_cathode_rays_v01.mp4",
+      "sha256": "5a7b3c42a5f83895897034659fa3fe796ff79a678563412c8cef82b322a806bc",
+      "packageDir": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/11_Upload-Package/s04_cathode_rays",
+      "long": "GHZDsiH7L7A",
+      "publishAt": "2026-10-23T10:30:00Z",
+      "registeredAt": "2026-10-15T11:37:23Z",
+      "buffer": "held until public, then the full film",
+      "social": {
+        "hook": "Thomson's magnet bent a beam that light would not.",
+        "question": "Guess what the beam was made of?",
+        "alt": "A glass tube and a horseshoe magnet bending a glowing beam."
+      }
+    },
+    "PlihWC5uA2E": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v01.mp4",
+      "sha256": "bea80a80838c2c72afa02dc409a978ecc7467749566484929c733aee8e7814cd",
+      "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s05_valves",
+      "long": "wwcjcFfC-5M",
+      "publishAt": "2026-11-02T11:30:00Z",
+      "registeredAt": "2026-10-15T11:37:23Z",
+      "buffer": "held until public, then the full film",
+      "social": {
+        "hook": "The flaps in a vein let blood move only one way.",
+        "question": "Guess which way the blood is allowed to go?",
+        "alt": "A vein drawing with one-way flaps, the valves Fabricius found."
+      }
+    },
+    "1-BZaFIMwYU": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v02.mp4",
+      "sha256": "f60e1c53ab0c7e9ac69728ec03c409be08203a01f3cf33fd6c043d5cf9f02882",
+      "packageDir": "02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/11_Upload-Package/s11_curved_flask",
+      "thumb": "02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_work_s11_curved_flask_v02/hos_001_s11_curved_flask_v02_t000.0.jpg",
+      "long": "_C92tIJCk8A",
+      "publishAt": "2026-10-27T11:30:00Z",
+      "registeredAt": "2026-10-23T01:18:00Z",
+      "buffer": "held until public, then the full film",
+      "social": {
+        "hook": "Pasteur's curved glass flask kept boiled broth clear until dust touched the liquid.",
+        "question": "What did the swan-neck flask experiment prove?",
+        "alt": "A glowing swan-neck glass flask of clear broth in Pasteur's 1860s laboratory; hook caption CURVED GLASS."
+      }
+    }
+  }
+}

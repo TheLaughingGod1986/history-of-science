@@ -339,3 +339,23 @@ Gate run with `--air-date 2027-01-20` (gate only). Caption check: 16 changes, ra
 **STOP:** parked for Chief: Short PASS. Nothing uploaded.
 
 
+## 23 Oct 2026 — Short `s11_curved_flask_v02` packaged & uploaded Private (`1-BZaFIMwYU`, Tue 27 Oct 11:30 London, OWB J0866)
+
+- **Authority:** Chief PASS on `J0854` (`hos_001_s11_curved_flask_v02.mp4`, `22.367 s`, sha256 `f60e1c53ab0c7e9ac69728ec03c409be08203a01f3cf33fd6c043d5cf9f02882`) and Chief-created `J0866`. `£0` spend.
+- **Upload & schedule:** Packaged in `10_Shorts/11_Upload-Package/s11_curved_flask/PACKAGE_MANIFEST.json` (`SHORTS_RELEASE.json` PASS) and uploaded Private via `npm run youtube:package` as **`1-BZaFIMwYU`** (`https://youtu.be/1-BZaFIMwYU`) for the next free HOS weekday Short slot: **Tue 27 Oct 2026 at 11:30 London (`2026-10-27T11:30:00Z`, GMT)**.
+- **API readback (`API_READBACK_1-BZaFIMwYU.json`):** `privacyStatus=private`, `publishAt=2026-10-27T11:30:00Z`, `uploadStatus=processed`, `madeForKids=false`, `selfDeclaredMadeForKids=false`, `defaultLanguage=en-GB`, `defaultAudioLanguage=en-GB`, `categoryId=27`, `hasCustomThumbnail=true`, 6 tags.
+- **Studio finish & readback (`STUDIO_READBACK_1-BZaFIMwYU.json`, CDP `:9460`):** Set `Related video` → `_C92tIJCk8A` (*How Did We Discover Germs?*) and verified after fresh reload (`relatedSet: true`, `No, it's not Made for Kids` checked, Altered content `Yes` checked).
+- **Records:** Registered in `SHORTS_UPLOAD_INDEX.json`, `SHORTS_RELEASE.json`, `00_Brand/Channel-Setup/audits/SHORTS_LOG.md`, `00_Brand/Channel-Setup/audits/shorts_open_library/library.json` (`status=scheduled`), and `00_Brand/Channel-Setup/social/UPLOADS.json` (Buffer held until public; ready for `buffer-mirror.ts register --channel hos` once OWB PR #260 merges).
+
+```text
+PASS  hos_001_s11_curved_flask_v02.mp4  dur=22.37s  audio=-22.6dB  motion=10.29  dhash=a18d868b13391c1c
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s11_curved_flask_v02_open_sheet.jpg
+SKIP  02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+PASS  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORTS_RELEASE.json
+PASS  Short 1-BZaFIMwYU  private 2026-10-27 11:30 UK  What Is the Pasteur Swan Neck Flask Experiment?
+44 videos, 0 errors.
+ALL CHECKS PASS
+```
+
+
+

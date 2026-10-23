@@ -28,6 +28,7 @@ One row per Short. Fill stayed-to-watch and average view duration from Studio at
 | 3 Nov 2026 11:30 UK | `Pp5LmjsduI4` | The Four Elements Were Wrong | 002 `AL_-qlWko_g` | | | | | Scheduled · not kids |
 | 8 Nov 2026 11:30 UK | `mTY67qet7cM` | One Tight Band Proved Your Blood Goes Round | 005 `wwcjcFfC-5M` | | | | | Scheduled · v03 ("Below the band, the pulse stopped.") KEEP by Claude 3 Oct on Ben's delegation · not kids · en-GB · Related → `wwcjcFfC-5M` on 29 Oct 18:05 |
 | 15 Nov 2026 11:30 UK | `x_3L_IdYgEc` | The Blood Vessels Finer Than a Hair | 005 | | | | | Scheduled · Related → 005 `wwcjcFfC-5M` on 29 Oct 18:05 |
+| 27 Oct 2026 11:30 UK | `1-BZaFIMwYU` | What Is the Pasteur Swan Neck Flask Experiment? | 001 `_C92tIJCk8A` | curved swan-neck flask / CURVED GLASS | | | | Scheduled · J0866 (Chief PASS J0854 v02, sha `f60e1c53`) · Private + `publishAt` `2026-10-27T11:30:00Z` · en-GB · Altered YES · not kids · Related → `_C92tIJCk8A` set & verified in Studio (`STUDIO_READBACK_1-BZaFIMwYU.json`) · Buffer held until public |
 | — (Private) | `kzDiVk4603s` | He predicted a metal before it was found | 002 | | | | | Private copy of public `nFQRWmpulTQ`. Do not delete. |
 | — (Draft) | `K0TQHg4XCHY` | The Four Elements Were Wrong (duplicate) | 002 | | | | | Upload-retry copy of `Pp5LmjsduI4`, 1 Oct. Keep as draft. Do not delete. |
 | — (Draft) | `JI2ewIT1KSM` | The Four Elements Were Wrong (duplicate) | 002 | | | | | Upload-retry copy of `Pp5LmjsduI4`, 1 Oct. Keep as draft. Do not delete. |
