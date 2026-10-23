@@ -1,0 +1,37 @@
+{
+  "film": "007_The-First-Vaccine",
+  "bed": "vaccine_score_bed_v01.mp3",
+  "prompt": "HOS 007 First Vaccine: warm restrained chamber strings and wooden harp, original G major / E minor harmony. Part 1 awe, part 2 explain, part 3 uneasy discovery, part 4 explain, part 5 warm resolution + closing card & 20 s end screen with 1.5 s fade. Three-second timbral transitions at part boundaries. Pace: 58-64 BPM. NOT Betelgeuse cosmic pads, Saturn, Sun, Venus, Light Speed or any earlier HOS bed; no modern synth lead, drums, menace or fast arpeggio.",
+  "duration_s": 531.083333,
+  "bpm": 60.0,
+  "integrated_lufs": -34.1,
+  "source": "Original numpy synthesis, J0830/J0856/J0887, \u00a30",
+  "sha256": "9f00cadd51c042ba9351d1b2171687b9dd2d416343fe919aa77cd15000dc1d50",
+  "chapters": [
+    [
+      0.0,
+      100.833,
+      "awe"
+    ],
+    [
+      100.833,
+      230.458,
+      "explain"
+    ],
+    [
+      230.458,
+      309.208,
+      "awe"
+    ],
+    [
+      309.208,
+      401.958,
+      "explain"
+    ],
+    [
+      401.958,
+      531.0833333333334,
+      "awe"
+    ]
+  ]
+}
