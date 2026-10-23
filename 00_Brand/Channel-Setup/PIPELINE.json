@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-22",
-  "updated_by": "claude (acting Chief)",
+  "updated": "2026-10-23",
+  "updated_by": "gemini",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -287,7 +287,7 @@
       "title": "Why Vaccines Are Named After a Cow",
       "air": "2026-11-12",
       "ready_by": "2026-11-08",
-      "summary": "Script, facts, long voiceover and both Shorts' voiceover (v02) are done. All 73/73 Flow rows of boards v02 are KEEP (Chief J0352, HOS PR #351 merged) and Part roughs v01 are Chief PASS (J0820). Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s, 97 cuts, sha256 `7cfd6a59`) is assembled on the locked VO with both \u00a30 J0827 repeat-shot fixes (`P1:09c_case_again` 1.88x lancet crop; `P5:06c/06d` split into unused `04_health_workers` tail + 1.38x front-row crop), passing polish_gate + picture_qa (0 failed, 0 freezes); parked for Chief review.",
+      "summary": "Master v02 (`hos_007_master_v02.mp4`, 505.1 s, sha256 `e55f680d`, -14.0 LUFS / -1.4 dBTP) passed the Chief (J0856, 23 Oct; HOS PR #355 `30f9033e`) and is copied to iCloud `HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4` for Ben's watch (J0867). Ben watch due 8 Nov.",
       "stages": {
         "topic": {
           "status": "done"
@@ -327,9 +327,13 @@
           "owner": "Grok"
         },
         "edit": {
-          "status": "doing",
+          "status": "done",
           "due": "2026-11-05",
-          "note": "Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled on locked VO across Parts 01\u201305 (J0827, 22 Oct, \u00a30) with both \u00a30 repeat-shot fixes (`P1:09c_case_again` 1.88x lancet crop; `P5:06c/06d` unused `04_health_workers` tail + 1.38x clapping front-row push-in). PASS polish_gate (0 failed, 5 WARNs) + picture_qa (0 failed, 5 WARNs), 0 freezes. Parked for Chief review.",
+          "note": "master v02 Chief PASS 23 Oct (J0856, HOS PR #355 `30f9033e`): \u00a30 60.0 BPM score + 43 house SFX, 505.1 s, -14.0 LUFS / -1.4 dBTP, sha256 `e55f680d`; copied to `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4` (sha256 `e55f680d` verified, J0867) for Ben's watch",
+          "jobs": [
+            "J0856",
+            "J0867"
+          ],
           "steps": [
             5,
             5
@@ -337,7 +341,7 @@
           "steps_unit": "parts joined",
           "owner": "Grok",
           "since": "2026-10-22",
-          "waiting": "Chief review of full_join_v01 + REVIEW_v01.md (J0827)",
+          "waiting": "Ben watch (HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4) + HOS PR #355 merge",
           "underway": false
         },
         "thumbnails": {
