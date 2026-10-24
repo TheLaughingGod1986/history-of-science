@@ -1,0 +1,111 @@
+[
+  {
+    "film": "004_Whats-Really-Inside-An-Atom",
+    "unique_search_shorts": 5,
+    "shorts": {
+      "s04_cathode_rays": {
+        "record": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/SHORT_s04_cathode_rays_v01.json",
+        "job": "J0233",
+        "file": "10_Shorts/hos_004_s04_cathode_rays_v01.mp4"
+      },
+      "s05_dalton": {
+        "record": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/SHORT_s05_dalton_v02.json",
+        "job": "J0416",
+        "file": "10_Shorts/hos_004_s05_dalton_v02.mp4"
+      },
+      "s06_moseley_atomic_number": {
+        "record": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/SHORT_s06_moseley_atomic_number_v01.json",
+        "job": "J0502",
+        "file": "10_Shorts/hos_004_s06_moseley_atomic_number_v01.mp4"
+      },
+      "s07_outer_electrons": {
+        "record": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/SHORT_s07_outer_electrons_v01.json",
+        "job": "J0593",
+        "file": "10_Shorts/hos_004_s07_outer_electrons_v01.mp4"
+      },
+      "s08_plum_pudding": {
+        "record": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/SHORT_s08_plum_pudding_v01.json",
+        "job": "J0699",
+        "file": "10_Shorts/hos_004_s08_plum_pudding_v01.mp4"
+      }
+    }
+  },
+  {
+    "film": "005_How-Harvey-Proved-Blood-Circulates",
+    "unique_search_shorts": 5,
+    "shorts": {
+      "s04_galen_stove": {
+        "record": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s04_galen_stove_v01.json",
+        "job": "J0151",
+        "file": "10_Shorts/hos_005_s04_galen_stove_v01.mp4"
+      },
+      "s05_valves": {
+        "record": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s05_valves_v01.json",
+        "job": "J0416",
+        "file": "10_Shorts/hos_005_s05_valves_v01.mp4"
+      },
+      "s06_blood_pressure_cuff": {
+        "record": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s06_blood_pressure_cuff_v01.json",
+        "job": "J0517",
+        "file": "10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4"
+      },
+      "s07_heart_pulse": {
+        "record": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s07_heart_pulse_v01.json",
+        "job": "J0608",
+        "file": "10_Shorts/hos_005_s07_heart_pulse_v01.mp4"
+      },
+      "s08_capillaries": {
+        "record": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s08_capillaries_v01.json",
+        "job": "J0730",
+        "file": "10_Shorts/hos_005_s08_capillaries_v01.mp4"
+      }
+    }
+  },
+  {
+    "film": "006_Trees-Are-Made-Of-Air",
+    "unique_search_shorts": 5,
+    "shorts": {
+      "s04_photosynthesis": {
+        "record": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s04_photosynthesis_v01.json",
+        "job": "J0373",
+        "file": "10_Shorts/hos_006_s04_photosynthesis_v01.mp4"
+      },
+      "s05_charcoal_gas": {
+        "record": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s05_charcoal_gas_v01.json",
+        "job": "J0390",
+        "file": "10_Shorts/hos_006_s05_charcoal_gas_v01.mp4"
+      },
+      "s06_ingenhousz_oxygen": {
+        "record": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s06_ingenhousz_oxygen_v01.json",
+        "job": "J0533",
+        "file": "10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4"
+      },
+      "s07_priestley_mint": {
+        "record": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s07_priestley_mint_v01.json",
+        "job": "J0623",
+        "file": "10_Shorts/hos_006_s07_priestley_mint_v01.mp4"
+      },
+      "s08_willow_pot": {
+        "record": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s08_willow_pot_v01.json",
+        "job": "J0760",
+        "file": "10_Shorts/hos_006_s08_willow_pot_v01.mp4"
+      }
+    }
+  },
+  {
+    "film": "007_The-First-Vaccine",
+    "unique_search_shorts": 2,
+    "shorts": {
+      "s04_smallpox_test": {
+        "record": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s04_smallpox_test_v01.json",
+        "job": "J0865",
+        "file": "10_Shorts/hos_007_s04_smallpox_test_v01.mp4"
+      },
+      "s05_vacca_jesty": {
+        "record": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v02.json",
+        "job": "J0906",
+        "file": "10_Shorts/hos_007_s05_vacca_jesty_v02.mp4"
+      }
+    }
+  }
+]
