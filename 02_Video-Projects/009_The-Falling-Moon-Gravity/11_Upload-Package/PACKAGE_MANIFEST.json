@@ -25,14 +25,14 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Planning scaffold only (4 Oct 2026). Description, tags and schedule are DRAFTS for Claude rewrite after FACT_NOTES audit (desk claim 5982314076); nothing uploaded. Titles and neighbours are PROPOSALS for Claude review. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 5 education ≥1M, TED-Ed yes). Script on PR #208 / branch claude/hos-repo-access-qdfmrk (may not be on main yet). No VO until Claude FACT_NOTES + script PASS. Proposed air Thu 26 Nov 2026 18:00 UK = 18:00 UTC (GMT).",
+  "note": "Planning scaffold (4 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Gravity-apparatus search terms ('theory of gravity', 'how Newton proved gravity', 'Cavendish torsion balance', from breakout neighbour eyZEqSPeMwg 1.14M in 6.8h) woven into description lines 1-2 and tags. Record v02 search-titled Shorts VO ('What Would Happen If the Moon Stopped Moving?' / 'Why Doesn\\'t the Moon Crash Into the Earth?', 'How Did Newton Discover Gravity?'), and alternate every J0383-verified parchment teach graphic in 0:00-0:30 and 1:00-2:00 with a moving 3D plate. Long VO locked (v01 KEEP), v04 boards KEEP. Proposed air Thu 26 Nov 2026 18:00 UK = 18:00 UTC (GMT). Nothing changed on YouTube now.",
   "neighbours": {
     "phrases": [
       "gravity",
       "moon",
       "newton"
     ],
-    "checked": "2026-10-04",
+    "checked": "2026-10-24",
     "videos": [
       {
         "id": "D89ngRr4uZg",
@@ -59,12 +59,18 @@
         "views": 15476982
       },
       {
+        "id": "eyZEqSPeMwg",
+        "channel": "Veritasium",
+        "title": "No device could prove our theory of gravity wrong... until now",
+        "views": 1144787
+      },
+      {
         "id": "7gf6YpdvtE0",
         "channel": "CrashCourse",
         "title": "Newtonian Gravity: Crash Course Physics #8",
         "views": 1387363
       }
     ],
-    "note": "Reuse from evidence_2026-10-04_neighbours.json. Gate PASS: 5 education ≥1M; TED-Ed yes. Prefer TED-Ed Newton/gravity, Veritasium gravity, Crash Course Newtonian Gravity over weak moon-phase / gecko off-topic neighbours for packaging."
+    "note": "Reuse from evidence_2026-10-04_neighbours.json + 24 Oct J0899 update (eyZEqSPeMwg 1.14M in 6.8h). Gate PASS: 6 education >=1M; TED-Ed yes. Gravity-apparatus search terms ('theory of gravity', 'how Newton proved gravity', 'Cavendish torsion balance') woven into description lines 1-2 and tags (no channel names)."
   }
 }

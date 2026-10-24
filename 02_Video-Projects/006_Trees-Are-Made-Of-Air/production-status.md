@@ -778,3 +778,12 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006
 ```
 
 - **STOP:** Parked for Chief (`parked for Chief: HOS 006 master v05 review (all 4 Ben v04 changes + v03 bubble checks resolved at 0 Flow credits, check sheet verified, _PHONE.mp4 in HOS UAT, all gates PASS)`). Nothing uploaded or scheduled.
+
+## 24 Oct 2026 — J0909 (`J0899` Change 1): 2-way Thumbnail T&C launch plan + positive-question Shorts & 12–15 s Short cut test plan (Gemini covering)
+
+- **Authority:** Chief PASS on `J0899` (`02_Video-Projects/_analytics/HOS_2026-10-24.md` §4 #1) and queue job `J0909`. `£0` spend, no live YouTube changes.
+- **Applied to `11_Upload-Package/PACKAGE_MANIFEST.json` and `11_Upload-Package/LAUNCH_PLAN.md`:**
+  1. **2-way Thumbnail Test & Compare on launch:** Armed `Selected/hos_006_thumb_A_wood_from_sky_v01.jpg` (**`WOOD / FROM / SKY?`**) vs `Selected/hos_006_thumb_B_do_plants_eat_soil_v01.jpg` (**`DO PLANTS / EAT / SOIL?`**, minted at `0` Flow credits in `J0869`) in `PACKAGE_MANIFEST.json` (`thumbnail` + `thumbnailAbc`) and `LAUNCH_PLAN.md`, alongside Title T&C (*The Willow Tree That Was Made of Air* vs *Where Does a Tree's Weight Come From?*) and `relatedVideoId: "GHZDsiH7L7A"` (004 Atom end screen).
+  2. **Positive question titles on all 5 QA-passed Shorts (`s04`–`s08`):** Recorded in `LAUNCH_PLAN.md` (`s04` *How Does Photosynthesis Work?*, `s05` *Who Discovered Carbon Dioxide?*, `s06` *How Do Plants Make Oxygen?*, `s07` *How Do Plants Clean the Air?*, `s08` *Do Plants Eat Soil?*).
+  3. **12–15 s Short cut test (`LEARNINGS.md` #4):** Documented in `LAUNCH_PLAN.md` and `PACKAGE_MANIFEST.json` to run on one `006` Short alongside its `25 s` cut.
+- **Package lint (`npm run lint:package -- --film 006`):** `PASS  02_Video-Projects/006_Trees-Are-Made-Of-Air/11_Upload-Package/PACKAGE_MANIFEST.json`.

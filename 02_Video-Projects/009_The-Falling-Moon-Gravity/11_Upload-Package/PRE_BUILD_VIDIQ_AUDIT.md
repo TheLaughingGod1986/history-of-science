@@ -33,11 +33,12 @@ Signed by Claude, 4 Oct 2026 (see §7).
 | why doesn't the moon fall to earth | **yes** | NASA Night Sky Network ~2.2M; BYJU'S ~1.0M; mostly short explainers | main title | yes |
 | the moon is falling | soft | Unowned story-led wording | T&C title | yes |
 | newton gravity moon | weak suggest | Crash Course Newtonian Gravity ~1.4M; TED-Ed Newton laws | description, tags | yes |
-| newton apple | soft | Folklore-heavy; keep as garnish not hero | tags only | soft |
-| gravity / moon / newton (neighbour phrases) | n/a | TED-Ed three-body ~9.9M · Veritasium gravity ~15.5M · TED-Ed Newton laws ~2.9M · Crash Course ~1.4M | title, description opening, tags | yes |
+| theory of gravity / how newton proved gravity / cavendish torsion balance (`J0899`/`J0909`) | breakout neighbour (`eyZEqSPeMwg` 1.14M in 6.8h, 23 Oct) | High gravity-apparatus search velocity | description lines 1–2, tags | yes |
+| newton apple | soft | Folklore-heavy; keep as garnish not hero | script anecdote only | soft |
+| gravity / moon / newton (neighbour phrases) | n/a | TED-Ed three-body ~9.9M · Veritasium gravity ~15.5M & `eyZEqSPeMwg` 1.14M · TED-Ed Newton laws ~2.9M · Crash Course ~1.4M | title, description opening, tags | yes |
 
-**Decision:** *Moon* and *fall* lead the title; *gravity*, *Moon* and *Newton* go in the description's first line; *Principia* / Halley / orbit in tags.
-**Description first 100 characters must include:** *gravity*, *moon*, *Newton* (`Descriptions/moon_long_description_v01.txt`, line 1).
+**Decision:** *Moon* and *fall* lead the title; *gravity*, *Moon*, *Newton* and the breakout gravity-apparatus terms (*theory of gravity*, *how Newton proved gravity*, *Cavendish torsion balance*) go in the description's first two lines and the tags.
+**Description first 100 characters must include:** *gravity*, *moon*, *Newton*, *theory of gravity* (`Descriptions/moon_long_description_v01.txt`, line 1).
 
 ## 3. Title ABC
 

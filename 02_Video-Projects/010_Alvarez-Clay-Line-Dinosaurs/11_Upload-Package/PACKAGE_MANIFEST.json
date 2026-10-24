@@ -12,7 +12,7 @@
   "thumbnailAbc": [],
   "titleAbc": [
     "What Killed the Dinosaurs Was Hidden in a Line of Clay",
-    "The Line of Clay That Ended the Dinosaurs"
+    "How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs"
   ],
   "schedule": "2026-12-03T18:00:00.000Z",
   "playlistId": null,
@@ -25,7 +25,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Scaffold only (4 Oct 2026 write lane). Script on main via #208 (review 92.1 PASS). FACT_NOTES + HARD_CHECKS this PR (desk #180 claim 5982333546). Titles/schedule DRAFT for Claude rewrite; nothing uploaded. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 10 education \u22651M). No VO yet \u2014 waits Claude. No picture mint. Proposed air Thu 3 Dec 2026 18:00 UK = 18:00 UTC (GMT).",
+  "note": "Scaffold (4 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Arm 2-way Title Test & Compare on launch ('What Killed the Dinosaurs Was Hidden in a Line of Clay' vs 'How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs'); record/keep v02 Shorts VO with positive question titles ('What Killed the Dinosaurs?', 'Are Birds Really Dinosaurs?') and payoffs held past 15 s (>=70% runtime, after the 9-14 s long-title banner); pair '300\\u00d7 TOO MUCH' cover text with sfx_kit.py rumble_low on the Part 04 crater reveal. Long VO + P1-P8 period details (J0860) locked. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 10 education >=1M). Proposed air Thu 3 Dec 2026 18:00 UK = 18:00 UTC (GMT). Nothing changed on YouTube now.",
   "neighbours": {
     "phrases": [
       "dinosaurs",

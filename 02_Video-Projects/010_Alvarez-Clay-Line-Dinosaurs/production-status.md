@@ -24,3 +24,12 @@ The long VO is locked (Chief KEEP, desk #180 comment 6101773293). Plate boards a
 - No Vertex/Veo/Flow minting on this film.
 - No ElevenLabs VO until Claude confirms sourced FACT_NOTES + HARD_CHECKS.
 - Do not merge or close desk PR #180 from this work.
+
+## 24 Oct 2026 — J0909 (`J0899` Change 5): 2-way Title T&C launch plan, Shorts positive-question title + payoff-past-15s lock & `300× TOO MUCH` / `rumble_low` notes (Gemini covering)
+
+- **Authority:** Chief PASS on `J0899` (`02_Video-Projects/_analytics/HOS_2026-10-24.md` §4 #5) and queue job `J0909`. `£0` spend, no live YouTube changes.
+- **Applied to `11_Upload-Package/` and `10_Shorts/SHORTS_SCRIPTS_v02.md`:**
+  1. **2-way Title Test & Compare on launch (`PACKAGE_MANIFEST.json` `titleAbc`, `LAUNCH_PLAN.md`, `PRE_BUILD_VIDIQ_AUDIT.md`):** Armed Variant A *What Killed the Dinosaurs Was Hidden in a Line of Clay* vs Variant B *How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs* (`64` chars, shares neighbour phrase `dinosaurs`).
+  2. **Shorts positive-question titles + payoffs held past `15 s` (`10_Shorts/SHORTS_SCRIPTS_v02.md`, `LAUNCH_PLAN.md`, `PACKAGE_MANIFEST.json`):** Locked positive question titles on Short A (*What Killed the Dinosaurs?*, `24.16 s`) and Short C (*Are Birds Really Dinosaurs?*, `23.51 s`) with payoffs explicitly held past `15 s` (`15.0–23.8 s` on Short A and `15.1–23.2 s` on Short C, clear of the `9.0–14.0 s` promoted-long title banner).
+  3. **Thumbnail cover text & Part 04 SFX note (`LAUNCH_PLAN.md`, `PRE_BUILD_VIDIQ_AUDIT.md`, `PACKAGE_MANIFEST.json`):** Documented pairing **`300× TOO MUCH`** cover text with `sfx_kit.py` `rumble_low` on the Part 04 crater reveal.
+- **Package lint (`npm run lint:package -- --film 010`):** `PASS  02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/PACKAGE_MANIFEST.json`.

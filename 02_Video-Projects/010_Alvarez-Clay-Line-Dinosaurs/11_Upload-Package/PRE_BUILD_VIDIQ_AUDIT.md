@@ -41,11 +41,12 @@ Filled 4 Oct 2026 by write lane from public signals: `evidence_2026-10-04_public
 
 | | Title | vidIQ score | Rules check | Keep? |
 |---|-------|------:|-------|-------|
-| A | What Killed the Dinosaurs Was Hidden in a Line of Clay | waived | Pass: familiar question + unexpected answer (*line of clay*), one real object, unowned clay angle, ~58 chars | **Main (proposed)** |
-| B | The Line of Clay That Ended the Dinosaurs | waived | Pass: object-first, clay owned, 42 chars | **Test & Compare (proposed)** |
-| C | How an Asteroid Killed the Dinosaurs | waived | Fails differentiation — already owned by giants | **Reject** |
+| A | What Killed the Dinosaurs Was Hidden in a Line of Clay | waived | Pass: familiar question + unexpected answer (*line of clay*), one real object, unowned clay angle, ~54 chars | **Main (proposed)** |
+| B | How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs | waived | Pass (`J0899`/`J0909` Chief PASS): positive-question/how framing + concrete 1-cm clay object + dinosaur mystery, 64 chars (`<= 70`) | **Test & Compare (launch B)** |
+| C | The Line of Clay That Ended the Dinosaurs | waived | Pass: object-first, clay owned, 42 chars | **Reserve C** |
+| Reject | How an Asteroid Killed the Dinosaurs | waived | Fails differentiation — already owned by giants | **Reject** |
 
-**Locked title:** proposed, not locked. Claude reviews; Ben's final OK covers the package.
+**Locked title:** 2-way Title Test & Compare armed for launch (`J0899`/`J0909` Chief PASS): A (*What Killed the Dinosaurs Was Hidden in a Line of Clay*) vs B (*How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs*); pair `300× TOO MUCH` cover text with `sfx_kit.py` `rumble_low` on the Part 04 crater reveal. Ben's final OK covers the package.
 
 ## 3b. Script reviewer
 

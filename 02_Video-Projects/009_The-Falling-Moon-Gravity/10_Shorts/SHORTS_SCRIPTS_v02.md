@@ -20,7 +20,7 @@ Word counts are spoken words. At 150–155 wpm, 57–63 words run about 23–25 
 
 ## Short A — the Moon is falling (lead, the Friday after the long airs, 11:30 UK)
 
-**YouTube title (test B, search-worded, autocomplete-checked 9 Oct):** *Why Doesn't the Moon Crash Into the Earth?*
+**YouTube title (test B, search-worded, autocomplete-checked 9 Oct; `J0899`/`J0909` positive-question variants):** *What Would Happen If the Moon Stopped Moving?* (alt: *Why Doesn't the Moon Crash Into the Earth?*)
 
 
 - **Frame 0:** the full Moon already sliding along its curve, a glowing line showing each small drop (long Part 01 plate `moon_falling`).

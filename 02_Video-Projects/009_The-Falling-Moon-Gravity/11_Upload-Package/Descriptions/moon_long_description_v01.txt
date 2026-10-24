@@ -1,5 +1,5 @@
-Why doesn't the Moon fall to Earth? Newton showed that gravity makes the Moon fall — and miss — every second.
-An apple, an imaginary cannon on a mountain, and one careful sum: the same pull that drops an apple holds the Moon in the sky.
+Why doesn't the Moon fall to Earth? Isaac Newton's theory of gravity showed that the Moon is falling — and missing — every second.
+From an apple and a cannon on a mountain to how Newton proved gravity across sixty Earth-radii (long before the Cavendish torsion balance weighed the Earth in a lab), one pull holds the Moon in the sky.
 
 In sixteen sixty-five a plague closed Cambridge and a young Isaac Newton went home to Woolsthorpe. There he asked how far the Earth's pull reaches — and whether it could reach the Moon.
 
@@ -10,4 +10,4 @@ In this film:
 • Halley, the Principia (1687), and the fish book that emptied the Royal Society's purse
 • Halley's comet on Christmas night 1758, and astronauts falling with the ISS
 
-DRAFT v01 (write lane, 4 Oct 2026): chapters and sources locked after Claude FACT_NOTES audit and VO timings.
+DRAFT v01 (write lane, 4 Oct 2026; updated 24 Oct 2026 in J0899/J0909 with gravity-apparatus search terms in lines 1–2): chapters and sources locked after Claude FACT_NOTES audit and VO timings.

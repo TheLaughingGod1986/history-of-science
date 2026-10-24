@@ -142,3 +142,9 @@ About **58 plates**: roughly 35 Quality, 20 Fast and 2 reuses, including the 3 E
 - **B** (bell-ringers): frame 0 = `ring_the_bells` (Part 01 08). Change by 1 s = the flash whites out the tower. 14–20 s = `safe_path`.
 - **C** (the rod): frame 0 = `skyline_strike` (Part 05 08). Change by 1 s = the bolt runs down the rod and the tower stays calm.
 - R3: none of these openings repeats an opening background from the last 10 Shorts (checked against `SHORTS_LOG.md` on 4 Oct; re-check with `gate_shorts_open.py` at export).
+
+## J0899 / J0909 Assembly, Trim & End-Screen Locks (Chief PASS, 24 Oct 2026)
+
+1. **Composite 5 moving-plate alpha overlays (`J0329`):** Once `J0329` (`07_Edit-Project/CODE_GRAPHICS_v01_REVIEW.md`) passes Chief review, composite all 5 moving-plate alpha MOV overlays (`code_graphics_v01/*.mov`) directly over their moving 3D cartoon plates rather than using the provisional parchment preview MP4s.
+2. **Trim inter-sentence pauses in `0:15–0:45` and `1:00–2:30`:** Tighten inter-sentence VO pauses across `0:15–0:45` (Part 01 stakes & church steeples) and `1:00–2:30` (Part 01→Part 02 transition and early Leyden-jar setup) to prevent the early retention slope seen on `004` (`GHZDsiH7L7A`, `51%→30%`) and `002` (`AL_-qlWko_g`, `45%→23%`), while keeping `0.5–0.8 s` breath before part cards.
+3. **End screen & next-watch links:** Link **004 Atom (`GHZDsiH7L7A`, *What's Really Inside an Atom?*)** and **002 Periodic Table (`AL_-qlWko_g`, *How Mendeleev Predicted Elements That Didn't Exist*)** on the Studio end screen (`PACKAGE_MANIFEST.json` `relatedVideoId: "GHZDsiH7L7A"`, `LAUNCH_PLAN.md`, and `Descriptions/lightning_long_description_v01.txt`).

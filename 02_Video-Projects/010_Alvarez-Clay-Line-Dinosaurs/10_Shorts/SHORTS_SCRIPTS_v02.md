@@ -8,7 +8,13 @@ Rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STUDIO_P
 
 Every Short: 22–27 s; the named thing at frame 0, already moving; the first words are the claim; a visible change by 1 s; a 2–4 word hook caption on frame 0 (yellow on the hook word); the Explorer never at frame 0; captions throughout; the promoted long's **exact live title** on screen at 9–14 s, never spoken; the last 4 s return to the opening picture so it loops; `gate_shorts_open.py check` PASS; Studio Related → the 010 long; no `/go/`, no pinned comment.
 
-**Promoted long (title on screen at 9–14 s):** *What Killed the Dinosaurs Was Hidden in a Line of Clay* (proposed; re-read the live title before export).
+**Promoted long (title on screen at 9–14 s):** *What Killed the Dinosaurs Was Hidden in a Line of Clay* (proposed; 2-way Title T&C on launch with *How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs* per `J0899`/`J0909`; re-read the live title before export).
+
+**`J0899` / `J0909` Shorts title + payoff-past-15s lock (Chief PASS, 24 Oct 2026):**
+- **Positive question titles (`LEARNINGS.md` #1):** Keep positive question titles naming the concrete subject on both `v02` Shorts: Short A ***What Killed the Dinosaurs?*** and Short C ***Are Birds Really Dinosaurs?***.
+- **Payoff withheld past `15 s` (`≥70%` runtime, clear of the `9.0–14.0 s` promoted-long title banner, `LEARNINGS.md` #2):** Neither Short answers its title question during the `9.0–14.0 s` banner window (matching `oKqmnJNGiHg`'s flat `82.1%` plateau across `10.12–20.70 s` and `c2q7w0pgcn8`'s `107.3%` YTA avg viewed):
+  - **Short A (`vo_v02/hos_010_short_A_v02`, `24.16 s`):** `6–14 s` sets up the missing fossil shells above the clay line while the `9–14 s` banner runs; the iridium/impact payoff (*"packed with a rare metal from space. Something huge had hit the Earth."*) lands at **`15.0–23.8 s` (`62%–98%` runtime)**.
+  - **Short C (`vo_v02/hos_010_short_C_v02`, `23.51 s`):** `7–14 s` lists everyday birds (pigeon, robin, gull) while the `9–14 s` banner runs; the identity payoff (*"Every bird you have ever seen is a living dinosaur. Look up. They never really left."*) lands at **`15.1–23.2 s` (`64%–99%` runtime)**.
 
 **Repeat check (4 Oct 2026):** `SHORTS_LOG.md` and the live Shorts list (16 public) have no HOS Short about dinosaurs, asteroids, iridium, Alvarez or birds. The two below don't repeat each other.
 

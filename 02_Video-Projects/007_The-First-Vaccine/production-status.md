@@ -83,5 +83,15 @@ Gate run with `--air-date 2027-01-26` (gate only). Caption check: 18 changes, ra
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+## 24 Oct 2026 — J0909 (`J0899` Change 2): 2-way Thumbnail T&C launch plan, neighbour search terms in description/tags & 12–15 s Short cut test plan (Gemini covering)
+
+- **Authority:** Chief PASS on `J0899` (`02_Video-Projects/_analytics/HOS_2026-10-24.md` §4 #2) and queue job `J0909`. `£0` spend, no live YouTube changes.
+- **Applied to `11_Upload-Package/` and `08_Thumbnail/README.md`:**
+  1. **2-way Thumbnail Test & Compare plan on launch (`LAUNCH_PLAN.md`, `08_Thumbnail/README.md`, `PACKAGE_MANIFEST.json`):** Documented Variant A (**`THE MILKMAID'S / SECRET`**) vs Variant B (**`IMMUNE`**) for launch T&C alongside Title T&C (*Why Vaccines Are Named After a Cow* vs *How Was the First Vaccine Made?*) and `relatedVideoId: "_C92tIJCk8A"` (001 Germs end screen).
+  2. **Neighbour search terms woven into description lines 1–2 and tags (`Descriptions/vaccine_long_description_v01.txt`, `Tags/vaccine_long_tags_v01.txt`):** Wove `"Edward Jenner cowpox vaccine"`, `"deadly smallpox virus"`, and `"why can't every shot be a pill"` into lines 1–2 of `vaccine_long_description_v01.txt` and added `edward jenner cowpox vaccine` + `deadly smallpox virus` to `vaccine_long_tags_v01.txt` (8 tags total, 0 channel names).
+  3. **Second 12–15 s Short cut test (`LEARNINGS.md` #4) & payoff timing (`≥70%` runtime):** Documented in `LAUNCH_PLAN.md` and `PACKAGE_MANIFEST.json`.
+- **Package lint (`npm run lint:package -- --film 007`):** `PASS  02_Video-Projects/007_The-First-Vaccine/11_Upload-Package/PACKAGE_MANIFEST.json` & `PASS  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORTS_RELEASE.json`.
+
+
 
 

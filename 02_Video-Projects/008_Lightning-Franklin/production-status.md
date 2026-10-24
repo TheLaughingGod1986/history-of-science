@@ -40,3 +40,11 @@ ALL CHECKS PASS
 Full decode, 1080p/30fps and native alpha checks succeeded for all eleven rows. Review includes the seven-word P5:11 label against the four-word rule and schematic Atlantic geometry. No Flow/Vertex/ElevenLabs spend, YouTube changes or deletion.
 
 NAS mirror pending: detached session `j0329-mirror-v2` is blocked in filesystem mkdir. No verified NAS copy yet; all local outputs retained. Resume from its log and exit marker listed in the review note.
+
+## 24 October 2026 — J0909 (`J0899` Change 3): Pause-trim notes (`0:15–0:45` & `1:00–2:30`), 5 moving-plate overlay composite note & end-screen/description links to `GHZDsiH7L7A` + `AL_-qlWko_g` (Gemini covering)
+
+- **Authority:** Chief PASS on `J0899` (`02_Video-Projects/_analytics/HOS_2026-10-24.md` §4 #3) and queue job `J0909`. `£0` spend, no live YouTube changes.
+- **Applied to `11_Upload-Package/` and `07_Edit-Project/SHOT_LIST_v01.md`:**
+  1. **Inter-sentence pause-trim notes (`0:15–0:45` and `1:00–2:30`) + 5 moving-plate alpha overlays (`J0329`):** Recorded in `07_Edit-Project/SHOT_LIST_v01.md`, `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`, `11_Upload-Package/LAUNCH_PLAN.md`, and `11_Upload-Package/PACKAGE_MANIFEST.json` (`note`) to address `004`'s `51%→30%` and `002`'s `45%→23%` early retention drops and composite the 5 `J0329` alpha overlays once `J0329` passes.
+  2. **Links to `004` (`GHZDsiH7L7A`) + `002` (`AL_-qlWko_g`):** Set `"relatedVideoId": "GHZDsiH7L7A"` in `PACKAGE_MANIFEST.json`, added `Watch next:` links (`https://youtu.be/GHZDsiH7L7A` and `https://youtu.be/AL_-qlWko_g`) in `Descriptions/lightning_long_description_v01.txt`, and documented the end-screen pairing (`GHZDsiH7L7A` + `AL_-qlWko_g` + Subscribe) in `LAUNCH_PLAN.md`.
+- **Package lint (`npm run lint:package -- --film 008`):** `PASS  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFEST.json`.

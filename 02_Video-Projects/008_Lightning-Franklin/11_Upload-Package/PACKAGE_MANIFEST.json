@@ -16,7 +16,7 @@
   ],
   "schedule": "2026-11-19T18:00:00.000Z",
   "playlistId": null,
-  "relatedVideoId": null,
+  "relatedVideoId": "GHZDsiH7L7A",
   "privacy": "private",
   "madeForKids": false,
   "alteredContent": true,
@@ -25,7 +25,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Planning scaffold only (4 Oct 2026). Description, tags and schedule are DRAFTS for Claude rewrite with the 008 script (contract fix Claude 5982161988); nothing uploaded. Titles and neighbours are PROPOSALS for Claude review. Neighbours auto-written by neighbours.py 2026-10-04 (gate PASS, 6 education ≥1M). No VO/script yet — FACT_NOTES first. Proposed air Thu 19 Nov 2026 18:00 UK = 18:00 UTC (GMT).",
+  "note": "Planning scaffold (4 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Composite the 5 moving-plate alpha overlays from J0329 (07_Edit-Project/code_graphics_v01) once J0329 passes; trim inter-sentence pauses in 0:15-0:45 and 1:00-2:30 (addressing 004's 51%->30% and 002's 45%->23% early retention drops); link 004 Atom (GHZDsiH7L7A) + 002 Periodic Table (AL_-qlWko_g) on the end screen and in next-watch links. Neighbours auto-written by neighbours.py 2026-10-04 (gate PASS, 6 education >=1M). Proposed air Thu 19 Nov 2026 18:00 UK = 18:00 UTC (GMT), normal publish. Nothing changed on YouTube now.",
   "neighbours": {
     "phrases": [
       "lightning",

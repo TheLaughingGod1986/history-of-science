@@ -19,7 +19,7 @@
   ],
   "schedule": "2026-11-05T18:00:00.000Z",
   "playlistId": null,
-  "relatedVideoId": null,
+  "relatedVideoId": "GHZDsiH7L7A",
   "privacy": "private",
   "madeForKids": false,
   "alteredContent": true,
@@ -28,7 +28,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Draft at script v02 (2 Oct 2026). Title, T&C title, description v01 (chapter times are word-count estimates, re-time from the VO), tags v01 and schedule are PROPOSALS for Claude's review and Ben's final OK; nothing is uploaded or scheduled. Proposed air Thu 5 Nov 2026 18:00 UK = 18:00 UTC, normal publish.",
+  "note": "Draft at script v02 (2 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Arm 2-way Thumbnail Test & Compare on launch (Primary A: hos_006_thumb_A_wood_from_sky_v01.jpg 'WOOD / FROM / SKY?' vs Test & Compare B: hos_006_thumb_B_do_plants_eat_soil_v01.jpg 'DO PLANTS / EAT / SOIL?', minted at 0 Flow credits in J0869) alongside Title T&C ('The Willow Tree That Was Made of Air' vs 'Where Does a Tree\\'s Weight Come From?'). End screen links to 004 Atom (GHZDsiH7L7A) + Subscribe. Keep positive question titles on all 5 QA-passed Shorts (s04-s08) and run the Chief-approved 12-15 s Short cut test (LEARNINGS.md #4) on one 006 Short alongside its 25 s cut. Nothing uploaded or scheduled on YouTube yet; proposed air Thu 5 Nov 2026 18:00 UK = 18:00 UTC, normal publish.",
   "neighbours": {
     "phrases": [
       "tree",

@@ -16,7 +16,7 @@
   ],
   "schedule": "2026-11-12T18:00:00.000Z",
   "playlistId": null,
-  "relatedVideoId": null,
+  "relatedVideoId": "_C92tIJCk8A",
   "privacy": "private",
   "madeForKids": false,
   "alteredContent": true,
@@ -25,7 +25,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Planning scaffold only (3 Oct 2026). Titles, schedule and neighbours are PROPOSALS for Claude's review on PR #180; nothing uploaded or scheduled. Proposed air Thu 12 Nov 2026 18:00 UK = 18:00 UTC (GMT). No Vertex/Veo minting — 006 Trees keeps picture priority. Neighbours auto-written by neighbours.py 2026-10-03 (gate PASS, 7 education videos ≥1M).",
+  "note": "Planning scaffold (3 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Arm 2-way Thumbnail Test & Compare on launch ('THE MILKMAID\\'S / SECRET' vs 'IMMUNE', built at 0 Flow credits on Nano Banana 2 + cover-builder lettering before upload) alongside Title T&C ('Why Vaccines Are Named After a Cow' vs 'How Was the First Vaccine Made?'). Neighbour terms ('deadly smallpox virus', 'Edward Jenner cowpox vaccine', 'why can\\'t every shot be a pill') woven into description lines 1-2 and tags. Run the second 12-15 s Short cut test (LEARNINGS.md #4) on 007 while keeping payoffs at >=70% runtime (matching oKqmnJNGiHg's flat 82.1% plateau). End screen links to 001 Germs (_C92tIJCk8A) + Subscribe. Proposed air Thu 12 Nov 2026 18:00 UK = 18:00 UTC (GMT), normal publish. Nothing changed on YouTube now.",
   "neighbours": {
     "phrases": [
       "vaccine",

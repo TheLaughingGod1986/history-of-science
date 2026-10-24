@@ -89,10 +89,11 @@ cd 07_Content-Ops && npm run review:script -- --file ../02_Video-Projects/008_Li
 |---|---|---|
 | 0–0:05 | Curiosity spike | the kite in the storm, spark from the key (answer image) |
 | ~0:15 | Stakes | steeples on fire; "what would you…" the burning barn |
+| 0:15–0:45 & 1:00–2:30 | Early retention trim (`J0899`/`J0909`) | trim inter-sentence VO pauses in `0:15–0:45` and `1:00–2:30` (addresses `004` `GHZDsiH7L7A` `51%→30%` and `002` `AL_-qlWko_g` `45%→23%` drops); composite 5 moving-plate alpha overlays from `J0329` |
 | ~0:30 | Journey clear | a kite, a key, a jar |
 | Chapter starts | Re-hook | each act ends on a question (how do you catch lightning without it killing you? could it protect homes?) |
 | Mid | Teach while the story moves | the Leyden jar (02), the sentry-box and Marly (03), charge not a bolt (04), the safe path to ground (05) |
-| Final chapter | Payoff + bigger question | the rod on the tallest building you can see; hand-off to 009 (the falling Moon) |
+| Final chapter | Payoff + bigger question + end screen | the rod on the tallest building you can see; hand-off to 009 (the falling Moon); end screen & description link to `004` (`GHZDsiH7L7A`) + `002` (`AL_-qlWko_g`) |
 
 ## 7. Sign-off (block production until checked)
 
