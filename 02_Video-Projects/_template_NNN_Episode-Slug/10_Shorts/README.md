@@ -8,3 +8,4 @@ Rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STUDIO_P
 - Ship gate on every export: `python3 00_Brand/Channel-Setup/tools/gate_shorts_open.py check <mp4> --air-date YYYY-MM-DD`.
 - Never before this film's long is public. One Short a day at most. Studio Related → this long. Zero `/go/`, no pinned comment.
 - Log stayed-to-watch at 48 h in `00_Brand/Channel-Setup/audits/SHORTS_LOG.md`.
+- **60% stayed-to-watch (Ben, 24 Oct 2026; `.cursor/rules/hos-build-shorts.mdc` → *60% stayed-to-watch*).** Fill in: frame-0 source and zoom (moving; a still pushed ≤1.10 fails): ___; first word ≤0.15 s: ___; surprise word ≤1.5 s: ___; first cut ≤3.0 s: ___; no meta-promise, logo or intro (y/n): ___; last word → loop ≤1.5 s: ___; last line runs into line 1 (y/n): ___.
